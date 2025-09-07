@@ -20,7 +20,7 @@ fi
 
 # Get the base name without extension for creating subdirectory
 BASE_NAME=$(basename "$INPUT_FILE" .md)
-OUTPUT_DIR="${BASE_NAME}"
+OUTPUT_DIR="../data/sections"
 
 # Create output directory
 mkdir -p "$OUTPUT_DIR"
@@ -70,7 +70,7 @@ while IFS= read -r line; do
         echo "$line" > "$current_file"
         
         # Add link to the new original file
-        echo "## [$title](./$OUTPUT_DIR/${safe_title}.md)" >> "$temp_original"
+        echo "## [$title](./data/sections/${safe_title}.md)" >> "$temp_original"
         echo "" >> "$temp_original"
         
     else
