@@ -18,11 +18,14 @@
 export GOOGLE_OAUTH_TOKEN="$(cat token.txt)"
 ```
 
-## Run the Script
+## Run the Scripts
 
 ```shell
 chmod +x download_doc.sh
-chmod +x clean_markdown.sh 
+chmod +x clean_markdown.sh
+chmod +x split_by_h1.sh
+
 ./download_doc.sh https://docs.google.com/document/d/1BAfsC2IshoZsX5ulN1dW2ywa9ePYn45DmyGQeAanw10 $GOOGLE_OAUTH_TOKEN rosenberg.md
 ./clean_markdown.sh rosenberg.md
+./split_by_h1.sh rosenberg.md
 ```
