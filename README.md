@@ -8,15 +8,15 @@ A tool for downloading, cleaning, and organizing Google Docs documents into stru
 Rosenberg/
 ├── README.md                 # This file
 ├── scripts/                  # All executable scripts
-│   ├── setup.sh             # Interactive setup for OAuth token
+│   ├── setup.sh              # Interactive setup for OAuth token
 │   ├── process_document.sh   # Main workflow script
 │   ├── download_doc.sh       # Download Google Docs as markdown
 │   ├── clean_markdown.sh     # Clean downloaded markdown
 │   ├── split_by_h1.sh        # Split document by H1 sections
-│   └── token.txt            # OAuth token (created by setup)
+│   └── token.txt             # OAuth token (created by setup)
 ├── data/                     # Processed documents
-│   ├── rosenberg.md         # Main processed document
-│   └── sections/            # Individual document sections
+│   ├── rosenberg.md          # Main processed document
+│   └── sections/             # Individual document sections
 └── docs/                     # Project documentation
 ```
 
