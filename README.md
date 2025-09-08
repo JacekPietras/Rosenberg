@@ -10,8 +10,7 @@ Rosenberg/
 ├── scripts/                  # All executable scripts
 │   ├── setup.sh              # Interactive setup for OAuth token
 │   ├── process_document.sh   # Main workflow script
-│   ├── extract_original.sh   # Extract original language content
-│   ├── extract_english.sh    # Extract English content
+│   ├── extract_languages.sh  # Extract original and English content
 │   ├── download_doc.sh       # Download Google Docs as markdown
 │   ├── clean_markdown.sh     # Clean downloaded markdown
 │   ├── split_by_h1.sh        # Split document by H1 sections
@@ -54,23 +53,20 @@ This will:
 
 ### 3. Extract Language-Specific Content (Optional)
 
-If your documents contain bilingual tables (original language in left column, English in right column), you can extract content by language:
+If your documents contain bilingual tables (original language in left column, English in right column), you can extract both languages simultaneously:
 
-**Extract original language content:**
 ```bash
-./scripts/extract_original.sh
+./scripts/extract_languages.sh
 ```
 
-**Extract English content:**
+Or process a specific file:
 ```bash
-./scripts/extract_english.sh
+./scripts/extract_languages.sh filename.md
 ```
 
-Or process specific files:
-```bash
-./scripts/extract_original.sh filename.md
-./scripts/extract_english.sh filename.md
-```
+This creates two sets of files:
+- `data/original/` - Original language content only
+- `data/english/` - English content only
 
 ## Manual Setup (Alternative)
 
