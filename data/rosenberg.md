@@ -2,7 +2,7 @@
 
 ## [Documents](./sections/documents.md)
 
-## [Bidermann 1751\]](./sections/bidermann_1751.md)
+## [Bidermann \[1751\]](./sections/bidermann_1751.md)
 
 ## [Bauer \[1872\]](./sections/bauer_1872.md)
 
