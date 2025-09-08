@@ -72,43 +72,6 @@ Ein Arnold v. Rosenberg der junge, geſesſen zu Vorberg, iſt uns a. 1394 erſt
 
 Vor Abt Pater zu Schönau geschah die Vereinigung, nach welcher dem Caplan jener Pfründe eine ewige Gült von zwanzig Pfund Heller, „als sie zu Heidelberg genge und gebe sind“, erkauft werden solle. Dazu werden an die gestiftete Seelenmesse gesetzt 12 Malter ewiger Korngilt von des Klosters Hof zu Edingen und zwei Häuser zu Heidelberg, das eine gelegen am Berge, das andere in der Mantelgasse im Brückenried, dazu ½ Morgen Wingert in Leimheimer Mark und zwei Stückel Weingarten zu Handschuchsheim am Bruckenried, endlich drei Morgen Weingarten in Rohrbacher Gemarkung am Pleckhard und in Bergheimer Gemarkung am Geißberg und in Handschuchsheimer im Lobenfelder gelegen. Von letztern soll Pfarrer Hartlieb sein Leben lang die Nutzung haben. Die Stiftung wurde 1379 vom Abt zu Schönau, der Äbtissin und dem Pfarrer Hartlieb besiegelt und nach dem Tode der Carisina 1388 vom Wormser Bischof Eckhard von Ders bestätigt. Die Nachfolgerin Carisina's dürfte jene Äbtissin Agnes Ulnerin von Dyhpurg (Dieburg bei Darmstadt) gewesen sein, deren Grabstein im Stift ihren Todestag als den Tag nach St. Barbara (5. Dec.) des Jahres 1403*) überliefert hat. Noch zählte nach ihr das Kloster unter seinen Wohlthätern 1410 Elisabeth von Weyler, genannt Krensin, eine Klosterfrau, und 1420 die Wittwe Elisabeth von Erlickheim, geborne von Rosenberg auf.
 
-## **Joanniten order**
-
-Eberhard von Rosenber (not sure which one) is mentioned as prior of German branch of Joanniten Order. But dates in old books are not coherent. There are several options
-
-- 1356
-- 1360 \- 1368
-- 1368 \- 1382
-- 1386 \- 1389
-
-Konrad von Brunsberg (Conrad von Braunsberg) have documents as Großprior of joanniteorder in 1366 (wiki), [1367](https://www.regesta-imperii.de/id/bd1758cf-725a-4f0a-b01e-0acbeaac066c), 1368, 1371, 1373, [1386](http://www.landesarchiv-bw.de/plink/?f=4-1752346), 1377, [1379](https://suche.staatsarchiv.djiktzh.ch/detail.aspx?id=346953), 1382, 1384, 1385, 1386, 1390.
-Started to be Großprior probably around 1361/1362
-[wiki](https://de.wikipedia.org/wiki/Herrschaft_Heitersheim) Research finds:
-Predecessor: Hugo von Werdenberg-Sargans (Großprior 1357–1361)
-Successor: Friedrich Graf von Zollern (Großprior 1392–1398)
-Date of Death: 11 December 1390
-
-Which shows that **Eberhard von Rosenberg was not** Großprior of joanniteorder.
-
-Verzeichniß der Großprioren des Johanitter-Ritter-Ordens in Deutschland:
-
-## **Museum**
-
-The two memorial stones of Jörg and Osanna of Rosenberg were originally located on the outer wall of the Boxberg Castle in the Main-Tauber-Kreis, on the side of the gate. The surrounding inscription, which began on the man's stone and interswitched to the stone of the woman, explains that the Rosenberg couple had the stones set to commemorate the completion of their castle.
-
-The dligen Rosenbergs wear daytime clothes. Jörg Rosenberg wears a cap, a knee-short skirt and shoes, Osanna Rosenberg dress and hood. Both are equipped with objects to point out their cooperation in the construction of the castle: he shoulders a axe, carries a bottle and food in two pots set in each other in the net, plus a handle basket filled with bread for the workers. Both hold a rosary in their hands. In formal terms, the memorial stones with the chest relief and the circulating inscription follow the type of ancient gravestones.
-
-around 1493
-Karlsruhe, Badisches Landesmuseum (castle), exhibition *of late Middle Ages*
-
-## **Seals**
-
-
-
-## **Linkownia**
-
-[http://www.welt-der-wappen.de/](http://www.welt-der-wappen.de/) herby
-
 ## **Name variations**
 
 Eberhard - Everard, Everhard, Eberhardi, Ebirhardus, eebhrt, rebhart, Ebhart, Eberhardus, Ebhrhard, Eberharten, Ebirbard, Ebirhardo, Ebirhardz, Ebirhart, Ebyrhard, Eberhardt, erberhart, Eberharten, Ebirharten, Eberhardum, Ebert, Eberh
@@ -125,33 +88,4 @@ Erligheim - Erlikeim, Erlekeim, Erleheim, Erlekeim, Erleckein
 Senant - Synant
 lauda - ludin, luden, Lueden, Lawdaw, Lawden
 Uissigheim - Ussinkeim
-
-## **Vogt zu Lauda**
-
-**1353 Sept. 10**
-Heinrich Durckel
-Zeitschrift für die Geschichte des Oberrheins. 26. 1874
-
-**1360 Juni 19**
-Kunz Mertin von Mergentheim
-Staatsarchiv Ludwigsburg JL 425 Bd 20 Qu. 158
-
-**1360 Juni 19**
-Dinkel/Dinkil
-Staatsarchiv Ludwigsburg B 249 U 66
-
-**1374 November 23**
-Bechtold von Gimpern
-Generallandesarchiv Karlsruhe 43 Nr. 996
-
-**1374 November. 23**
-Knechte Berchtolt von Güntbür
-Zeitschrift für die Geschichte des Oberrheins. 24. 1872
-
-**1440 Mai 27**
-Cunz Rüde
-Staatsarchiv Wertheim F-US 9 Nr. 87
-
-**1442 Mai 30**
-Konz Rüdt von Bödigheim
-Generallandesarchiv Karlsruhe 43 Nr. 547
+Niedeck - Nydeck

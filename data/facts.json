@@ -1,583 +1,140 @@
 [
   {
-    "person_id": "Eberhard_von_Rosenberg_Vogt_zu_Duern_1328",
-    "name": "Eberhard von Rosenberg",
-    "titles": [
-      "Vogt zu Dürn"
-    ],
-    "locations": [
-      "Uissigheim",
-      "Dienstadt",
-      "Brehmen",
-      "Sindolsheim",
-      "Eulschirbenmühle",
-      "Lauda",
-      "Nagelsberg"
-    ],
-    "relationships": {},
-    "events": [
-      {
-        "type": "property_transaction",
-        "date": "1328-03-26",
-        "location": null,
-        "details": "Mit seinen Söhnen Eberhard und Engelhard verkauft Gülten und Gefälle aus Gütern in Uissigheim, Dienstadt, Brehmen, Sindolsheim und der Eulschirbenmühle an Kloster Bronnbach."
-      },
-      {
-        "type": "treaty",
-        "date": "1329-11-24",
-        "location": "Nagelsberg",
-        "details": "Schließt mit Graf Kraft von Hohenlohe einen Burgfrieden in Nagelsberg."
-      },
-      {
-        "type": "fief_investiture",
-        "date": "1330-04-24",
-        "location": "Nagelsberg",
-        "details": "Bestätigt, seinen Teil an der Burg Nagelsberg von Comburg zu Lehen empfangen zu haben."
-      },
-      {
-        "type": "financial_administration",
-        "date": "1331-12-14",
-        "location": "Aschaffenburg (Vogteien Bischofsheim, Külsheim, Amorbach, Dürn, Buchen)",
-        "details": "Rechnungs- und Steuerangelegenheiten im Auftrag Heylmanns, Sängers zu Aschaffenburg."
-      },
-      {
-        "type": "military_action",
-        "date": "1333-06-30",
-        "location": "Lauda",
-        "details": "Nimmt Lauda ein; berichtet dem Erzbischof Baldewin."
-      },
-      {
-        "type": "service_record",
-        "date": "1334-07-09",
-        "location": null,
-        "details": "Ausgabenrechnung (computus) in Diensten des Provisors Balduin (Mainz)."
-      },
-      {
-        "type": "imperial_grant",
-        "date": "1337-06-02",
-        "location": "Frankfurt am Main",
-        "details": "Kaiser Ludwig gewährt 200 Pfund Heller auf Pfandschaft der Reichsleute in mehreren Dörfern (u. a. Rohenkeim, Bodenkeim, Aicheltzheim, Burchain)."
-      }
-    ],
-    "source": "data/original/documents.md: 1328 März 26 (StA Wertheim R-US), 1329 Nov 24 (Hohenlohe-ZA GL 5 U 428), 1330 Apr 24 (GA 5 U 714), 1331 Dez 14 (RIplus EB Mainz 1,2 n. 3177), 1333 Juni 30 (Otto RggEbMz Nr. 3309), 1334 Juli 9, 1337 Juni 2 (Acta imperii inedita)"
+    "source": "Staatsarchiv Wertheim R-US 1327 Mai 4",
+    "date": "1327-05-04",
+    "facts": [
+      "Alheit von Niedeck (Nydeck) is widow of Konrad von Rosenberg",
+      "Konrad von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg the Elder is mentioned",
+      "Rosenbergs hold a mill at Rosenberg",
+      "Donation was made to Bronnbach Abbey"
+    ]
   },
   {
-    "person_id": "Eberhard_von_Rosenberg_Muehlenverkauf_1327",
-    "name": "Eberhard von Rosenberg",
-    "titles": [],
-    "locations": [
-      "Rosenberg",
-      "Sindolsheim",
-      "Kirnau"
-    ],
-    "relationships": {
-      "spouse": "Irmtraut (Irmendrut)"
-    },
-    "events": [
-      {
-        "type": "property_sale",
-        "date": "1327-05-25",
-        "location": "bei Burg Rosenberg / an der Kirnau",
-        "details": "Verkauft mit Ehefrau Irmtraut auf Wiederkauf die Hohe Mühle nahe Burg Rosenberg und eine weitere Mühle an Kloster Schöntal; Bürgen u. a. Arnold von Rosenberg."
-      },
-      {
-        "type": "property_sale",
-        "date": "1327-06-05",
-        "location": "Sindolsheim",
-        "details": "Verkauft dem Kloster Bronnbach zwei Höfe zu Sindolsheim um 70 Pfund Heller."
-      }
-    ],
-    "source": "data/original/documents.md: 1327 Mai 25 (StAL B 503 I U 756), 1327 Juni 5"
+    "source": "Staatsarchiv Ludwigsburg B 503 I U 756",
+    "date": "1327-05-29",
+    "facts": [
+      "Eberhard von Rosenberg and spouse Irmtraut (Irmendrut) sold (on repurchase) the Hohe Mühle near Burg Rosenberg and an additional mill to Schöntal Abbey",
+      "Arnold von Rosenberg acted as a surety",
+      "Mills located near Rosenberg and on the Kirnau stream"
+    ]
   },
   {
-    "person_id": "Konrad_von_Rosenberg_Ritter_verstorben_vor_1327",
-    "name": "Konrad von Rosenberg",
-    "titles": [
-      "Ritter"
-    ],
-    "locations": [
-      "Rosenberg"
-    ],
-    "relationships": {
-      "spouse": "Alheit von Niedeck"
-    },
-    "events": [
-      {
-        "type": "death",
-        "date": "vor 1327",
-        "location": null,
-        "details": "Als verstorben erwähnt; seine Witwe Alheit bestätigt Stiftung einer Gült von einer Mühle zu Rosenberg an Kloster Bronnbach."
-      }
-    ],
-    "source": "data/original/documents.md: 1327 Mai 4 (StA Wertheim R-US)"
+    "source": "Staatsarchiv Wertheim R-US 1328 März 26",
+    "date": "1328-03-26",
+    "facts": [
+      "Eberhard von Rosenberg is Vogt zu Dürn",
+      "Sons Eberhard and Engelhard von Rosenberg are identified",
+      "Rosenbergs owned assets yielding rents/dues in Uissigheim, Dienstadt, Brehmen, Sindolsheim, and Eulschirbenmühle",
+      "These incomes sold to Bronnbach Abbey"
+    ]
   },
   {
-    "person_id": "Alheit_von_Niedeck_Witwe_des_Konrad_1327",
-    "name": "Alheit von Niedeck",
-    "titles": [],
-    "locations": [
-      "Rosenberg"
-    ],
-    "relationships": {
-      "spouse": "Konrad von Rosenberg"
-    },
-    "events": [
-      {
-        "type": "donation",
-        "date": "1327-05-04",
-        "location": "Rosenberg",
-        "details": "Bestätigt nach Willen ihres Mannes die Stiftung von 3½ Pfund Heller Gült von einer Mühle zu Rosenberg an Kloster Bronnbach."
-      }
-    ],
-    "source": "data/original/documents.md: 1327 Mai 4 (StA Wertheim R-US)"
+    "source": "Hohenlohe-Zentralarchiv Neuenstein GL 5 U 428",
+    "date": "1329-11-24",
+    "facts": [
+      "Burgfrieden at Nagelsberg between Count Kraft von Hohenlohe and Eberhard von Rosenberg (Vogt zu Dürn)"
+    ]
   },
   {
-    "person_id": "Eberhard_von_Rosenberg_Sohn_des_Eberhard_1300",
-    "name": "Eberhard von Rosenberg",
-    "titles": [],
-    "locations": [
-      "Uissigheim"
-    ],
-    "relationships": {
-      "father": "Eberhard von Rosenberg (Ritter, † vor 1300)"
-    },
-    "events": [
-      {
-        "type": "property_sale",
-        "date": "1300-05-17",
-        "location": "Uissigheim",
-        "details": "Verkauft mit Bruder Konrad eine Hube in Uissigheim an die Abtei Bronnbach."
-      }
-    ],
-    "source": "data/original/documents.md: 1300 Mai 17 (StA Wertheim R-US)"
+    "source": "GA 5 U 714",
+    "date": "1330-04-24",
+    "facts": [
+      "Eberhard von Rosenberg held a share of Nagelsberg Castle as a fief from Comburg"
+    ]
   },
   {
-    "person_id": "Konrad_von_Rosenberg_Sohn_des_Eberhard_1300",
-    "name": "Konrad von Rosenberg",
-    "titles": [],
-    "locations": [
-      "Uissigheim"
-    ],
-    "relationships": {
-      "father": "Eberhard von Rosenberg (Ritter, † vor 1300)"
-    },
-    "events": [
-      {
-        "type": "property_sale",
-        "date": "1300-05-17",
-        "location": "Uissigheim",
-        "details": "Verkauft mit Bruder Eberhard eine Hube in Uissigheim an die Abtei Bronnbach."
-      }
-    ],
-    "source": "data/original/documents.md: 1300 Mai 17 (StA Wertheim R-US)"
+    "source": "RIplus Regg. EB Mainz 1,2 n. 3177",
+    "date": "1331-12-14",
+    "facts": [
+      "Eberhard von Rosenberg is Vogt zu Dürn",
+      "Involved in Mainz fiscal administration affecting Bischofsheim, Külsheim, Amorbach, Dürn, Buchen"
+    ]
   },
   {
-    "person_id": "Engelhard_von_Rosenberg_Sohn_des_Vogts_1328",
-    "name": "Engelhard von Rosenberg",
-    "titles": [
-      "Ritter"
-    ],
-    "locations": [
-      "Uissigheim",
-      "Sindolsheim",
-      "Dienstadt"
-    ],
-    "relationships": {
-      "father": "Eberhard von Rosenberg (Vogt zu Dürn)"
-    },
-    "events": [
-      {
-        "type": "property_transaction",
-        "date": "1328-03-26",
-        "location": null,
-        "details": "Als Sohn und Mitverkäufer bei der Veräußerung von Gülten aus Rosenbergischen Gütern an Kloster Bronnbach."
-      },
-      {
-        "type": "witness",
-        "date": "1342-04-06",
-        "location": "Uissigheim/Bischofsheim/Hochhausen",
-        "details": "Als Ritter unter den Sieglern einer letztwilligen Verfügung der Alheit von Uissigheim."
-      }
-    ],
-    "source": "data/original/documents.md: 1328 März 26; 1342 April 6"
+    "source": "Otto, RggEbMz Nr. 3309",
+    "date": "1333-06-30",
+    "facts": [
+      "Eberhard von Rosenberg (Vogt zu Dürn) seized Lauda",
+      "Political-military actions connected to Archbishop Balduin"
+    ]
   },
   {
-    "person_id": "Eberhard_von_Rosenberg_Sohn_des_Vogts_1328",
-    "name": "Eberhard von Rosenberg",
-    "titles": [],
-    "locations": [
-      "Uissigheim",
-      "Sindolsheim"
-    ],
-    "relationships": {
-      "father": "Eberhard von Rosenberg (Vogt zu Dürn)"
-    },
-    "events": [
-      {
-        "type": "property_transaction",
-        "date": "1328-03-26",
-        "location": null,
-        "details": "Als Sohn und Mitverkäufer bei der Veräußerung von Gülten an Kloster Bronnbach."
-      }
-    ],
-    "source": "data/original/documents.md: 1328 März 26"
+    "source": "Computus expensarum Eberhardi de Rosenberg",
+    "date": "1334-07-09",
+    "facts": [
+      "Eberhard von Rosenberg served the Mainz provisor Balduin (travel expenses documented)"
+    ]
   },
   {
-    "person_id": "Hermann_von_Rosenberg_Sohn_des_Eberhard_1343",
-    "name": "Hermann von Rosenberg",
-    "titles": [],
-    "locations": [
-      "Mauer"
-    ],
-    "relationships": {
-      "father": "Eberhard von Rosenberg"
-    },
-    "events": [
-      {
-        "type": "fealty",
-        "date": "1343-09-11",
-        "location": null,
-        "details": "Verschreibt sich Ruprecht d. Ä. und Ruprecht d. J. mit seinem Hause Mauer."
-      }
-    ],
-    "source": "data/original/documents.md: 1343 September 11 (Regesten Pfalzgrafen)"
+    "source": "Acta imperii inedita. 2",
+    "date": "1337-06-02",
+    "facts": [
+      "Emperor Ludwig granted Eberhard von Rosenberg 200 lb heller as pledge income on Reich subjects in several villages"
+    ]
   },
   {
-    "person_id": "Eberhard_von_Rosenberg_Vogt_zu_Nagelsberg_1341",
-    "name": "Eberhard von Rosenberg",
-    "titles": [
-      "Vogt zu Nagelsberg"
-    ],
-    "locations": [
-      "Simmringen (Sumeringen)",
-      "Niedernhall"
-    ],
-    "relationships": {
-      "spouse": "Wiela (Wyela)"
-    },
-    "events": [
-      {
-        "type": "property_sale",
-        "date": "1341-04-30",
-        "location": "Simmringen",
-        "details": "Verkauft mit Ehefrau Wiela eine Getreidegült von 6 Malter Roggen aus Eigengut zu Simmringen an Konrad Vilman, Schultheiß zu Niedernhall."
-      }
-    ],
-    "source": "data/original/documents.md: 1341 Apr. 30 (StAL B 503 I U 772; JL 425 Bd 21 Qu. 84)"
+    "source": "Staatsarchiv Wertheim R-US 1300 Mai 17",
+    "date": "1300-05-17",
+    "facts": [
+      "Eberhard and Konrad are sons of the late Ritter Eberhard von Rosenberg",
+      "They sold a hufe at Uissigheim to Bronnbach Abbey"
+    ]
   },
   {
-    "person_id": "Eberhardus_de_Rosenberg_armiger_junior_1341",
-    "name": "Eberhard von Rosenberg",
-    "titles": [
-      "armiger (junger Edelknecht)"
-    ],
-    "locations": [
-      "Kirchheim"
-    ],
-    "relationships": {
-      "spouse": "Wyclo (Wyelo/Wyela)"
-    },
-    "events": [
-      {
-        "type": "property_sale",
-        "date": "1341-05-12",
-        "location": "Kirchheim",
-        "details": "Verkauft mit Ehefrau Wyclo dem Kloster in Coeliporta Güter und Einkünfte in Kirchheim für 105 lb Hall."
-      }
-    ],
-    "source": "data/original/documents.md: 1341 Mai 12 (Regesta sive rerum Boicarum)"
+    "source": "Regesta sive rerum Boicarum 1341 Mai 12",
+    "date": "1341-05-12",
+    "facts": [
+      "Eberhard von Rosenberg is styled armiger junior (young esquire)",
+      "Spouse named Wiela/Wyclo",
+      "Sold goods in Kirchheim to Coeliporta monastery"
+    ]
   },
   {
-    "person_id": "Kunigunde_von_Lissberg_Ehefrau_des_Eberhard_1342",
-    "name": "Kunigunde von Lißberg",
-    "titles": [],
-    "locations": [
-      "Würzburg",
-      "Prachtaue (Bracht)",
-      "Lißberg"
-    ],
-    "relationships": {
-      "spouse": "Eberhard von Rosenberg"
-    },
-    "events": [
-      {
-        "type": "inheritance_judgment",
-        "date": "1342-10-27",
-        "location": "Würzburg",
-        "details": "Kaiser Ludwig urteilt über ihr väterliches Erbe (Festen Lißberg und Bracht u. a.); Übertragung an ihre Söhne von Hirschhorn."
-      }
-    ],
-    "source": "data/original/documents.md: 1342 Okt 27 (HStAD C 1 A, 16; RIplus URH 5 n. 466)"
+    "source": "Staatsarchiv Ludwigsburg B 503 I U 772; JL 425 Bd 21 Qu. 84",
+    "date": "1341-04-30",
+    "facts": [
+      "Eberhard von Rosenberg is Vogt zu Nagelsberg",
+      "Spouse Wiela (Wyela)",
+      "Sold a grain rent from Simmringen to Konrad Vilman, Schultheiß of Niedernhall"
+    ]
   },
   {
-    "person_id": "Konrad_von_Rosenberg_Hofmeister_1438",
-    "name": "Konrad von Rosenberg",
-    "titles": [
-      "Hofmeister (Pfalz)"
-    ],
-    "locations": [
-      "Ladenburg",
-      "Heilbronn"
-    ],
-    "relationships": {},
-    "events": [
-      {
-        "type": "judicial_role",
-        "date": "1438-09-03",
-        "location": "Ladenburg",
-        "details": "Siegelnder Rat/Hofmeister in pfälzischem Schiedsspruch im Streit Heilbronn vs. Neipperg; weitere pfälzische Räte genannt."
-      }
-    ],
-    "source": "data/original/documents.md: 1438 Sept. 3 (Heilbronn-Prozess)"
+    "source": "RIplus URH 5 n. 466 / HStAD C 1 A, 16",
+    "date": "1342-10-27",
+    "facts": [
+      "Kunigunde von Lissberg is spouse of Eberhard von Rosenberg",
+      "Her paternal inheritance includes Lissberg and Bracht; transferred to her sons of Hirschhorn"
+    ]
   },
   {
-    "person_id": "Hans_von_Rosenberg_Vogt_zu_Frankenbach_1466",
-    "name": "Hans von Rosenberg",
-    "titles": [
-      "Junker",
-      "Vogt zu Frankenbach"
-    ],
-    "locations": [
-      "Frankenbach",
-      "Heilbronn"
-    ],
-    "relationships": {},
-    "events": [
-      {
-        "type": "arbitration",
-        "date": "1466-02-17",
-        "location": "Frankenbach/Heilbronn",
-        "details": "Siegelnder Vogt bei Entscheidung über den Wickmarshof zu Frankenbach."
-      }
-    ],
-    "source": "data/original/documents.md: 1466 (montag vor Mathias)"
+    "source": "Regesten der Pfalzgrafen am Rhein 1214–1508: Karlsr. Coph. 525ª,4",
+    "date": "1343-09-11",
+    "facts": [
+      "Hermann, son of Eberhard von Rosenberg, did fealty with house at Mauer"
+    ]
   },
   {
-    "person_id": "Joerg_von_Rosenberg_Ritter_Boxberg_1479_1480",
-    "name": "Jörg von Rosenberg",
-    "titles": [
-      "Ritter"
-    ],
-    "locations": [
-      "Boxberg"
-    ],
-    "relationships": {},
-    "events": [
-      {
-        "type": "market_privilege",
-        "date": "1479",
-        "location": "Boxberg",
-        "details": "Gemeinsam mit Michel, Arnold und Friedrich von Rosenberg verleiht der Stadt Boxberg einen samstags abzuhaltenden Wochenmarkt."
-      },
-      {
-        "type": "construction_inscription",
-        "date": "1480",
-        "location": "Boxberg Burg",
-        "details": "Inschrift berichtet über Grundsteinlegung und Baufortschritt an der Burg Boxberg."
-      }
-    ],
-    "source": "data/original/kreis_mosbach_1898.md: 1479 Markt; Inschrift 1480 (Zeilen 55–56); data/original/documents.md: 1708"
+    "source": "43 No. 1213",
+    "date": "1479",
+    "facts": [
+      "Michael, Jörg, Arnold, and Friedrich von Rosenberg granted Boxberg a Saturday weekly market",
+      "Their subjects at Hohenstadt, Schillingstadt, Uiffingen, etc., were directed to attend"
+    ]
   },
   {
-    "person_id": "Michael_von_Rosenberg_Boxberg_1479_1561",
-    "name": "Michael von Rosenberg",
-    "titles": [],
-    "locations": [
-      "Boxberg"
-    ],
-    "relationships": {},
-    "events": [
-      {
-        "type": "market_privilege",
-        "date": "1479",
-        "location": "Boxberg",
-        "details": "Verleiht mit Jörg, Arnold und Friedrich der Stadt Boxberg einen Wochenmarkt."
-      },
-      {
-        "type": "cession",
-        "date": "1561-07-24",
-        "location": "Boxberg",
-        "details": "Tritt nach Vergleich mit Kurfürst Friedrich II. von der Pfalz seinen Anteil an Schloss und Stadt Boxberg ab."
-      }
-    ],
-    "source": "data/original/documents.md: 1708; 1857–1864; 1885 (Konsens der Agnaten auf Vertrag vom 24. Juli 1561)"
+    "source": "43 No. 1235",
+    "date": "1480-01-03",
+    "facts": [
+      "Family agreement among Michael, Jörg, Arnold, Friedrich von Rosenberg regarding Boxberg possessions"
+    ]
   },
   {
-    "person_id": "Arnold_von_Rosenberg_Boxberg_1479",
-    "name": "Arnold von Rosenberg",
-    "titles": [],
-    "locations": [
-      "Boxberg"
-    ],
-    "relationships": {
-      "spouse": "Margarethe von Dottenheim"
-    },
-    "events": [
-      {
-        "type": "market_privilege",
-        "date": "1479",
-        "location": "Boxberg",
-        "details": "Mitverleiher des Wochenmarkts für Boxberg."
-      },
-      {
-        "type": "marriage_contract_claim",
-        "date": null,
-        "location": "Boxberg",
-        "details": "Beweist Ansprüche seiner Ehefrau Margarethe von Dottenheim aus Ehevertrag (Rieneck) auf seine Güter und Lehen zu Boxberg."
-      }
-    ],
-    "source": "data/original/documents.md: 1708; 1759"
-  },
-  {
-    "person_id": "Friedrich_von_Rosenberg_Boxberg_1479",
-    "name": "Friedrich von Rosenberg",
-    "titles": [],
-    "locations": [
-      "Boxberg"
-    ],
-    "relationships": {},
-    "events": [
-      {
-        "type": "market_privilege",
-        "date": "1479",
-        "location": "Boxberg",
-        "details": "Mitverleiher des Wochenmarkts für Boxberg."
-      },
-      {
-        "type": "family_settlement",
-        "date": null,
-        "location": "Boxberg",
-        "details": "Überlässt sein Hab und Gut den Vettern Jörg Hansen und Eberhart von Rosenberg."
-      }
-    ],
-    "source": "data/original/documents.md: 1708; 1766"
-  },
-  {
-    "person_id": "Eberhard_X_aelterer_von_Rosenberg_Boxberg_verkauf_Dainbach",
-    "name": "Eberhard von Rosenberg der Ältere",
-    "titles": [
-      "Ritter"
-    ],
-    "locations": [
-      "Boxberg",
-      "Dainbach"
-    ],
-    "relationships": {},
-    "events": [
-      {
-        "type": "property_sale",
-        "date": null,
-        "location": "Dainbach",
-        "details": "Verkauft Zinse, Gülten und Güter zu Dainbach an Kt Jost von Venningen und das Deutschordenshaus Mergentheim."
-      }
-    ],
-    "source": "data/original/documents.md: 1617 (StAL JL 425 Bd 3 Qu. 197)"
-  },
-  {
-    "person_id": "Eberhard_von_Rosenberg_Boxberg_verkauf_Apfelbach",
-    "name": "Eberhard von Rosenberg",
-    "titles": [],
-    "locations": [
-      "Boxberg",
-      "Apfelbach"
-    ],
-    "relationships": {},
-    "events": [
-      {
-        "type": "property_sale",
-        "date": null,
-        "location": "Apfelbach",
-        "details": "Verkauft Heinrich Hotz Einkünfte aus einem Gut in der Gemarkung Apfelbach um 26 Gulden."
-      }
-    ],
-    "source": "data/original/documents.md: 1610 (StAL B 249 U 226)"
-  },
-  {
-    "person_id": "Eberhard_von_Rosenberg_Vogt_zu_Wallduern_1327",
-    "name": "Eberhard von Rosenberg",
-    "titles": [
-      "erzstiftischer Vogt zu Walldürn"
-    ],
-    "locations": [
-      "Walldürn"
-    ],
-    "relationships": {},
-    "events": [
-      {
-        "type": "surety",
-        "date": "1327-05-25",
-        "location": null,
-        "details": "Als Bürge benannt in Mainzer Schuldverschreibung des Erzbischofs Mathias."
-      }
-    ],
-    "source": "data/original/documents.md: 1327 Mai 25 (VOGT Regesten 1,1 Nr. 2808)"
-  },
-  {
-    "person_id": "Eberhard_von_Rosenberg_genannt_von_Zimmern_1340",
-    "name": "Eberhard von Rosenberg genannt von Zimmern",
-    "titles": [],
-    "locations": [
-      "Wulfingsloch",
-      "Hochhausen"
-    ],
-    "relationships": {},
-    "events": [
-      {
-        "type": "exchange",
-        "date": "1340-01-02",
-        "location": "Hochhausen",
-        "details": "Tauscht den von Wertheim zu Lehen gehenden Zehnten zu Wulfingsloch gegen einen Weinberg zu Hochhausen mit Zustimmung des Grafen Rudolf von Wertheim."
-      }
-    ],
-    "source": "data/original/documents.md: 1340 Januar 2 (StA Wertheim R-US)"
-  },
-  {
-    "person_id": "Eberhard_von_Rosenberg_1519_Ehe_Cunegunda_von_Leiningen",
-    "name": "Eberhard von Rosenberg",
-    "titles": [
-      "zu Schippf, Boxberg und Hohenstadt"
-    ],
-    "locations": [
-      "Schippf",
-      "Boxberg",
-      "Hohenstadt",
-      "Stuttgart"
-    ],
-    "relationships": {
-      "spouse": "Cunegunda von Leiningen"
-    },
-    "events": [
-      {
-        "type": "marriage",
-        "date": null,
-        "location": null,
-        "details": "Vermählt mit Cunegunda von Leiningen, Tochter des Herrn Adam von Leiningen und der Margaretha von Leiningen."
-      },
-      {
-        "type": "death",
-        "date": "1519",
-        "location": "Stuttgart",
-        "details": "Gestorben 1519 und in Stuttgart begraben."
-      }
-    ],
-    "source": "data/original/bidermann_1751.md: TABVLA CCCCIV.B (Eberhard, †1519; Ehe mit Cunegunda von Leiningen)"
-  },
-  {
-    "person_id": "Albrecht_von_Rosenberg_Boxberg_1561_Abtretung",
-    "name": "Albrecht von Rosenberg",
-    "titles": [],
-    "locations": [
-      "Boxberg"
-    ],
-    "relationships": {},
-    "events": [
-      {
-        "type": "cession",
-        "date": "1561",
-        "location": "Boxberg",
-        "details": "Tritt gegen Zahlung von 27.000 Gulden alle Rechte und Ansprüche an Boxberg und Zubehör an Kurfürst Friedrich II. von der Pfalz ab."
-      }
-    ],
-    "source": "data/original/documents.md: 1878 (43 No. 1244)"
+    "source": "43 No. 1244 / 1245",
+    "date": "1561-07-24",
+    "facts": [
+      "Albrecht von Rosenberg ceded all rights to Boxberg to Elector Friedrich II for 27,000 gulden",
+      "Agnatic consent by multiple Rosenberg kin recorded"
+    ]
   }
 ]
