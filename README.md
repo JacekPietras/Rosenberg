@@ -18,7 +18,7 @@ Rosenberg/
 ├── data/                     # Processed documents
 │   ├── rosenberg.md          # Main processed document
 │   ├── sections/             # Individual document sections (bilingual)
-│   └── original/            # Original language content only
+│   └── original/             # Original language content only
 └── docs/                     # Project documentation
 ```
 

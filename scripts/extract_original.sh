@@ -51,7 +51,9 @@ process_file() {
                 left_column="${BASH_REMATCH[1]}"
                 # Trim leading and trailing whitespace
                 left_column=$(echo "$left_column" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+                # Add the content as a separate paragraph
                 echo "$left_column" >> "$temp_file"
+                echo "" >> "$temp_file"  # Add blank line for paragraph separation
             fi
             
         # Check for table separator line (| :---- | :---- |)
