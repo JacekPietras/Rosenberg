@@ -117,19 +117,13 @@ Removes image references and base64 data from downloaded markdown files.
 - Removes `![](image[N])` references
 - Removes `[image[N]]: <data:...>` definitions
 
-### `extract_original.sh`
-Extracts original language content from bilingual markdown files.
+### `extract_languages.sh`
+Extracts both original and English content from bilingual markdown files.
 - Processes files in `data/sections/` directory
-- Extracts left column content from tables (original language)
-- Preserves all non-table content
-- Creates original-only files in `data/original/` directory
-
-### `extract_english.sh`
-Extracts English content from bilingual markdown files.
-- Processes files in `data/sections/` directory
-- Extracts right column content from tables (English)
-- Preserves all non-table content
-- Creates English-only files in `data/english/` directory
+- Extracts left column content from tables (original language) → `data/original/`
+- Extracts right column content from tables (English) → `data/english/`
+- Preserves all non-table content in both output versions
+- Processes both languages simultaneously for efficiency
 
 ### `split_by_h1.sh`
 Splits a markdown document by H1 headings into separate files.
