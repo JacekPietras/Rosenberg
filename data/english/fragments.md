@@ -2,11 +2,11 @@
 
 ## **Arnold von Uissigheim**
 
-Arnold III von Uissigheim also blessed Arnold and King Armleder (executed 14 November 1336\) was a medieval German highwayman, bandit, and renegade knight of the Uissigheim family, of the village Uissigheim of the same name. He was the leader of the "Armleder" massacres against Jewish communities throughout the Alsace in 1336\.  
+Arnold III von Uissigheim also blessed Arnold and King Armleder (executed 14 November 1336) was a medieval German highwayman, bandit, and renegade knight of the Uissigheim family, of the village Uissigheim of the same name. He was the leader of the "Armleder" massacres against Jewish communities throughout the Alsace in 1336.  
 Arnold became a wanted man in 1332 on the charge of highway robbery in the Wertheim territorium. He then commenced a wave of populist banditry and massacres against the Jewish population of the Alsace. Arnold and 47 of his band were taken captive in 1336, and Arnold tried and sentenced to death by the Zentgericht court.
 
 "In 1334, Jews were killed in the town of Röttingen, AUB, Bischofsheim and many other towns and villages. Author and instigator of this persecution was a certain Knight of Uissinkeim. Affiliated Jews prompted the Mr Gottfried von Hohenlohe by a gift of 400 pounds Heller, to catch the Knight. He was picked up and taken to Röttingen. There, he repeatedly filed the confession to the Dean and was permitted to receive the sacraments. He was eventually led to the city of Kitzingen and there beheaded. The body brought in his village of Uissigheim and buried them in the Church. There he became known by countless miracles." According to the (now lost) inscription to the tombstone, Knight Arnold was beheaded with his own sword, what to look at is as a special benefit, as well as the burial in consecrated ground. The legend claims the Knight was murdered by Jews, was only added at a later time."  
-[\[more on wikipedia\]](https://de.wikipedia.org/wiki/Arnold_III._von_Uissigheim)
+[[more on wikipedia]](https://de.wikipedia.org/wiki/Arnold_III._von_Uissigheim)
 
 Heraldy of Uissigheim stadt is heart, but family have gooses and the later rosenberg version with switched colors
 
@@ -17,7 +17,7 @@ Today, only a few remains of the once large complex are encountered. Clearly vis
 The outer weir can still be clearly seen. In the southwest a tower with surrounding clamping walls was rebuilt. From him runs the ditch, which at the same time served as a kennel, around the inner castle. It still sets itself apart from the surrounding forest floor today and reveals the dimensions that he and thus the outer border of the castle area once had. To the east are the remains of two defensive towers, most of which were cut out of the natural rock. They can still be viewed today and walk through the old rises.  
 Despite their poor preservation, the overgrown and completely disappeared Boxberg Castle houses numerous small things and details that are difficult to recognize and assign. 
 
-The first castle dates from the 11th. century. The second complex was built on the foundations of the first around 1480 and was destroyed in 1523\. The third castle was from 1547 to 1857\. It was then completely broken off. Today there are only a few remnants left.
+The first castle dates from the 11th. century. The second complex was built on the foundations of the first around 1480 and was destroyed in 1523. The third castle was from 1547 to 1857. It was then completely broken off. Today there are only a few remnants left.
 
 On the 23rd On 1 January 1470, Mainz, Würzburg and the Electoral Palatinate joined forces to form an alliance against the Rosenbergers. With a force of 200 footknechtes and 300 horsemen, they took action against Boxberg Castle with a crew of 120 men armed with rifles. The accusation of the robber baron gave rise, but the territorial interests also played a major role. In 1486, he moved against the Würzburg Bishop Rudolf II of Scherenberg in Fehde, whom he considered to be the main responsible of the distress. 
 
@@ -40,16 +40,16 @@ Mainz? / Truchseß von Baldersheim ?
 
 Grave slab in the church on the west wall, for the most part covered by a church pew and heavily painted over. Sandstone, approximately 220x100 cm, script 6 cm. The central panel shows in low relief the Uissigheim shield with helmet and crest. From the left inscription band, the upper two-thirds of all letters are missing.
 
-Gamans (see No. 92\) records: † In the year of the Lord 1332 died Eberhardus de Ussenken of good memory, who was called 'der anneberc', on the day before the Kalends of January. Severus, in a second, independent record of the wording, writes: eberhardus und de ranneberg.
+Gamans (see No. 92) records: † In the year of the Lord 1332 died Eberhardus de Ussenken of good memory, who was called 'der anneberc', on the day before the Kalends of January. Severus, in a second, independent record of the wording, writes: eberhardus und de ranneberg.
 
 In 1332 died Eberhard von Uissigheim of blessed memory, who was called von Ranneberg.
 
-According to Werr, he is verifiable in Bronnbach charters from 1323 together with Knight Arnold (No. 109?), \[and in\] 1328 and 1330 alone, always with the addendum "von Ranneberg," by which the now-vanished Randenburg castle near Alzenau is probably to be understood¹.
+According to Werr, he is verifiable in Bronnbach charters from 1323 together with Knight Arnold (No. 109?), [and in] 1328 and 1330 alone, always with the addendum "von Ranneberg," by which the now-vanished Randenburg castle near Alzenau is probably to be understood¹.
 
 
 ## **Grave of Eberhard**
 
-Tombstone (west side) of Eberhard von Rosenberg († 1387), featuring a free-standing figure (see nos. 1 and 2\) of the knight in full armor. His feet rest on a slanted slab, positioned as in example 1\. The inscription reads: ✿ *In the year of our Lord 1387, on the next Sunday after Pentecost, died Lord Eberhard von Rosenberg.* \[3 June 1387 (Julian) \= 11 June 1387 (Gregorian)\] \[for them it would be 15 june, because it's 50 days after Easter (pentecost)\] In terms of technique and style, it is related to example 1, and once again topped by a heraldic shield that does not belong to it. The Gothic minuscule script on this stone is particularly well carved. Only, the sculptor made the mistake of placing two r’s in a row in the knight’s first name.
+Tombstone (west side) of Eberhard von Rosenberg († 1387), featuring a free-standing figure (see nos. 1 and 2) of the knight in full armor. His feet rest on a slanted slab, positioned as in example 1. The inscription reads: ✿ *In the year of our Lord 1387, on the next Sunday after Pentecost, died Lord Eberhard von Rosenberg.* [3 June 1387 (Julian) \= 11 June 1387 (Gregorian)] [for them it would be 15 june, because it's 50 days after Easter (pentecost)] In terms of technique and style, it is related to example 1, and once again topped by a heraldic shield that does not belong to it. The Gothic minuscule script on this stone is particularly well carved. Only, the sculptor made the mistake of placing two r’s in a row in the knight’s first name.
 
 
 [Hofmann, “Die romanische Kirche in Boxberg-Wölchingen” (Neues Archiv f. d. Geschichte d. Stadt Heidelberg, Bd. 8, 1910, pp. 111–145)](https://play.google.com/books/reader?id=8SPTAAAAMAAJ&pg=GBS.PA132&hl=en):  
@@ -60,20 +60,20 @@ Beneath the church there is a crypt, into which one descends via a spiral stairc
 
 
 
-Tombstone in the church on the south wall. Yellow sandstone 222x102 cm, script 9–11 cm. Above the slab is a non-original rectangular attachment with the Cronberg coat of arms. The inscription begins at the bottom left. The coats of arms signify Rosenberg on the left, Dörzbach(?) on the right. ✠ In the year of the Lord 1387, on the next Sunday after St. Vitus' Day, died Lord Eberhard von Rosenberg Date: June 16 – The inscription is the oldest tomb inscription in the German language in our district; only the founding inscription No. 5 is older. – In 1381, Eberhard, with his brother Arnold and two Rosenbergs from another line, bought the castle and town of Boxberg from the indebted Order of St. John; each received a quarter of the lordship. The brothers transferred their half as a fief to the Count Palatine on the same day. After Arnold had acquired a part of Schüpf, he sold his quarter to his brother in 1387\. In the same year, Eberhard died a violent death; through concessions in tithing disputes, his sons Arnold (No. 144\) and Eberhard (No. 145\) obtained a church burial from the Bishop of Würzburg. His wife was Else von Erligheim.
+Tombstone in the church on the south wall. Yellow sandstone 222x102 cm, script 9–11 cm. Above the slab is a non-original rectangular attachment with the Cronberg coat of arms. The inscription begins at the bottom left. The coats of arms signify Rosenberg on the left, Dörzbach(?) on the right. ✠ In the year of the Lord 1387, on the next Sunday after St. Vitus' Day, died Lord Eberhard von Rosenberg Date: June 16 – The inscription is the oldest tomb inscription in the German language in our district; only the founding inscription No. 5 is older. – In 1381, Eberhard, with his brother Arnold and two Rosenbergs from another line, bought the castle and town of Boxberg from the indebted Order of St. John; each received a quarter of the lordship. The brothers transferred their half as a fief to the Count Palatine on the same day. After Arnold had acquired a part of Schüpf, he sold his quarter to his brother in 1387. In the same year, Eberhard died a violent death; through concessions in tithing disputes, his sons Arnold (No. 144) and Eberhard (No. 145) obtained a church burial from the Bishop of Würzburg. His wife was Else von Erligheim.
 
 (Bibliography: Acta p. 58 – Andreae p. 15 – Alt p. 180 – Schönhuth: Bocksberg p. 34; Burgen I p. 51 – Stocker: Boxberg p. 49; Schüpfergrund p. 162 – Bauer: Rosenberg p. 192 – Berberich p. 415 – Kdm. IV, 2 p. 242 – Hofmann: Wölchingen p. 155.)
 
 
 
-A young Arnold von Rosenberg, residing in Vorberg, is first encountered by us in 1394 as a sealer of a document; Reg. b. XI, 3\. In 1395, Arnold von R. the younger and Eberhard von Rosenberg, brothers, sons of the late Lord Eberhard von R., sold a meadow in Kuprich- hausen to the Martine. The recurrence of the name Arnold already makes it probable that we have members of the same family branch before us here. We therefore also believe that the father Eberhard was that C. von R., knight, who in a document from 1385 is called "Vogt zu Lauda," but already died on June 15, 1388, as is recorded in the Necrology Annual 1861: *Eberhardus de R. miles* (Eberhard von R., knight). His tombstone will probably be in Wölchingen, which Schönnhuth probably inaccurately describes with the inscription: *A. D. 1387, on the next Sunday after Vity (June 15), Lord Ettard von Rosenberg died.* — According to a handwritten note, the maternal coat of arms seems to be that of the Lords von Thüngen; cf. 1856, p. 34\.
+A young Arnold von Rosenberg, residing in Vorberg, is first encountered by us in 1394 as a sealer of a document; Reg. b. XI, 3. In 1395, Arnold von R. the younger and Eberhard von Rosenberg, brothers, sons of the late Lord Eberhard von R., sold a meadow in Kuprich- hausen to the Martine. The recurrence of the name Arnold already makes it probable that we have members of the same family branch before us here. We therefore also believe that the father Eberhard was that C. von R., knight, who in a document from 1385 is called "Vogt zu Lauda," but already died on June 15, 1388, as is recorded in the Necrology Annual 1861: *Eberhardus de R. miles* (Eberhard von R., knight). His tombstone will probably be in Wölchingen, which Schönnhuth probably inaccurately describes with the inscription: *A. D. 1387, on the next Sunday after Vity (June 15), Lord Ettard von Rosenberg died.* — According to a handwritten note, the maternal coat of arms seems to be that of the Lords von Thüngen; cf. 1856, p. 34.
 
 
 ## 
 
 ## **About Schönau monastery**
 
-Before Abbot Pater of Schönau, the unification took place, according to which the chaplain of that prebend was to be bought an eternal due of twenty pounds of Heller, "as is customary and valid in Heidelberg." For this, 12 Malter¹ of perpetual grain rent from the monastery's estate at Edingen are endowed to the requiem mass, as well as two houses in Heidelberg, one situated on the hill, the other in the Mantelgasse in the Brückenried district, plus ½ Morgen² of vineyard in the Leimheim district and two small plots of vineyard at Handschuchsheim in the Bruckenried district, and finally three Morgen of vineyard in the Rohrbach district at Pleckhard and in the Bergheim district at Geißberg and located in Handschuchsheim's Lobenfeld. Of the latter, Pastor Hartlieb is to have the use for his entire life. The foundation was sealed in 1379 by the Abbot of Schönau, the abbess, and Pastor Hartlieb, and confirmed after the death of Carisina in 1388 by the Bishop of Worms, Eckhard von Ders. Carisina's successor was likely that Abbess Agnes Ulnerin von Dyhpurg (Dieburg near Darmstadt), whose tombstone in the convent has recorded her day of death as the day after St. Barbara's Day (Dec. 5th) of the year 1403\. After her, the monastery still counted among its benefactors in 1410 Elisabeth von Weyler, called Krensin, a nun, and in 1420 the widow Elisabeth von Erligheim, born von Rosenberg.
+Before Abbot Pater of Schönau, the unification took place, according to which the chaplain of that prebend was to be bought an eternal due of twenty pounds of Heller, "as is customary and valid in Heidelberg." For this, 12 Malter¹ of perpetual grain rent from the monastery's estate at Edingen are endowed to the requiem mass, as well as two houses in Heidelberg, one situated on the hill, the other in the Mantelgasse in the Brückenried district, plus ½ Morgen² of vineyard in the Leimheim district and two small plots of vineyard at Handschuchsheim in the Bruckenried district, and finally three Morgen of vineyard in the Rohrbach district at Pleckhard and in the Bergheim district at Geißberg and located in Handschuchsheim's Lobenfeld. Of the latter, Pastor Hartlieb is to have the use for his entire life. The foundation was sealed in 1379 by the Abbot of Schönau, the abbess, and Pastor Hartlieb, and confirmed after the death of Carisina in 1388 by the Bishop of Worms, Eckhard von Ders. Carisina's successor was likely that Abbess Agnes Ulnerin von Dyhpurg (Dieburg near Darmstadt), whose tombstone in the convent has recorded her day of death as the day after St. Barbara's Day (Dec. 5th) of the year 1403. After her, the monastery still counted among its benefactors in 1410 Elisabeth von Weyler, called Krensin, a nun, and in 1420 the widow Elisabeth von Erligheim, born von Rosenberg.
 
 
 ## 
@@ -87,7 +87,7 @@ Eberhard von Rosenber (not sure which one) is mentioned as prior of German branc
 - 1368 \- 1382  
 - 1386 \- 1389
 
-Konrad von Brunsberg (Conrad von Braunsberg) have documents as Großprior of joanniteorder in 1366 (wiki), [1367](https://www.regesta-imperii.de/id/bd1758cf-725a-4f0a-b01e-0acbeaac066c), 1368, 1371, 1373, [1386](http://www.landesarchiv-bw.de/plink/?f=4-1752346), 1377, [1379](https://suche.staatsarchiv.djiktzh.ch/detail.aspx?id=346953), 1382, 1384, 1385, 1386, 1390\.  
+Konrad von Brunsberg (Conrad von Braunsberg) have documents as Großprior of joanniteorder in 1366 (wiki), [1367](https://www.regesta-imperii.de/id/bd1758cf-725a-4f0a-b01e-0acbeaac066c), 1368, 1371, 1373, [1386](http://www.landesarchiv-bw.de/plink/?f=4-1752346), 1377, [1379](https://suche.staatsarchiv.djiktzh.ch/detail.aspx?id=346953), 1382, 1384, 1385, 1386, 1390.  
 Started to be Großprior probably around 1361/1362  
 [wiki](https://de.wikipedia.org/wiki/Herrschaft_Heitersheim) Research finds:  
 Predecessor: Hugo von Werdenberg-Sargans (Großprior 1357–1361)  
@@ -121,7 +121,7 @@ Eberhard \- Everard, Everhard, Eberhardi, Ebirhardus, eebhrt, rebhart, Ebhart, E
 Wyclo \- Wyela, Wyle, Wiclo, Wiela, Wiele  
 Engelhard \- Engelhart, Engelhardus  
 Konrad \- Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat  
-Kunz \- Cunz, Kunz, Konz, Conz, Concz, Cuntz, Cuncze, Guntz (are shortened versions of Konrad, but not used as it\! \[1401 March 5\])  
+Kunz \- Cunz, Kunz, Konz, Conz, Concz, Cuntz, Cuncze, Guntz (are shortened versions of Konrad, but not used as it\! [1401 March 5])  
 Eckhard \- Ege, Ekkehart, Eckhart, Ekhart, Ekkehard, Eckehardus, Ekkard  
 Mönch \- Münch, Munch \- it derives from "Monk"  
 Arnold \- Arnolt  
@@ -134,7 +134,7 @@ Uissigheim \- Ussinkeim
 
 **1353 Sept. 10**  
 Heinrich Durckel  
-Zeitschrift für die Geschichte des Oberrheins. 26\. 1874
+Zeitschrift für die Geschichte des Oberrheins. 26. 1874
 
 **1360 Juni 19**  
 Kunz Mertin von Mergentheim  
@@ -150,7 +150,7 @@ Generallandesarchiv Karlsruhe 43 Nr. 996
 
 **1374 November. 23**  
 Knechte Berchtolt von Güntbür  
-Zeitschrift für die Geschichte des Oberrheins. 24\. 1872
+Zeitschrift für die Geschichte des Oberrheins. 24. 1872
 
 **1440 Mai 27**  
 Cunz Rüde  

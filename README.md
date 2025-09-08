@@ -11,6 +11,7 @@ Rosenberg/
 │   ├── setup.sh              # Interactive setup for OAuth token
 │   ├── process_document.sh   # Main workflow script
 │   ├── extract_languages.sh  # Extract original and English content
+│   ├── clean_special_chars.sh # Clean unnecessary special characters
 │   ├── download_doc.sh       # Download Google Docs as markdown
 │   ├── clean_markdown.sh     # Clean downloaded markdown
 │   ├── split_by_h1.sh        # Split document by H1 sections
@@ -19,7 +20,7 @@ Rosenberg/
 │   ├── rosenberg.md          # Main processed document
 │   ├── sections/             # Individual document sections (bilingual)
 │   ├── original/             # Original language content only
-│   └── english/             # English content only
+│   └── english/              # English content only
 └── docs/                     # Project documentation
 ```
 
@@ -67,6 +68,20 @@ Or process a specific file:
 This creates two sets of files:
 - `data/original/` - Original language content only
 - `data/english/` - English content only
+
+### 4. Clean Special Characters (Optional)
+
+To improve readability by removing unnecessary escape characters and special formatting:
+
+```bash
+./scripts/clean_special_chars.sh
+```
+
+Or clean specific directories:
+```bash
+./scripts/clean_special_chars.sh data/original
+./scripts/clean_special_chars.sh data/english
+```
 
 ## Manual Setup (Alternative)
 
@@ -124,6 +139,14 @@ Extracts both original and English content from bilingual markdown files.
 - Extracts right column content from tables (English) → `data/english/`
 - Preserves all non-table content in both output versions
 - Processes both languages simultaneously for efficiency
+
+### `clean_special_chars.sh`
+Cleans specific problematic escape sequences from markdown files.
+- Fixes escaped sentence endings (`\. ` → `. `)
+- Removes escaped punctuation (`\*` → `*`, `\)` → `)`, `\(` → `(`)
+- Fixes escaped brackets (`\[` → `[`, `\]` → `]`)
+- Targets only the most common problematic patterns
+- Precise and focused approach to improve readability
 
 ### `split_by_h1.sh`
 Splits a markdown document by H1 headings into separate files.
