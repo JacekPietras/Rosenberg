@@ -1,0 +1,7 @@
+### **1528 October 9**
+
+Quellen: 43 No. 421
+
+Bürgermeister und Rat der Reichsstadt Rothenburg ob der Tauber vidimieren auf Ansuchen des Deutsch-Ordens-Komturs zu Mergentheim, Wolfgang von Bibra, eine Urkunde von 1516 April 7 über die Streitigkeiten des Hauses Mergentheim mit den Gebrüdern von Rosenberg.
+
+

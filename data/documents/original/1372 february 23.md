@@ -1,0 +1,7 @@
+### **1372 February 23**
+
+Quellen: StAWü, Stift Neumünster Würzburg Urkunden 571
+
+Die Aussteller verkaufen den Empfängern für ihre Chorschüler einen jährlichen Zins von ihrem Haus und Feldäckern in der Gemarkung Unterleinach, übertragen den Käufern ihr Eigentumsrecht an den Gütern und erhalten diese von ihnen zu Erbrecht zurück. Ein Rückkauf von Zins und Gütern ist in den folgenden drei Jahren, gerechnet ab dem vergangenen 22. Februar, möglich. Aussteller: Heinrich Kelberbach und seine Ehefrau Gerhus, gesessen zu Unterleinach Empfänger: Dekan und Kapitel des Stifts Neumünster (erwähnt Rosenberg, Heinrich, Unterleinach)
+
+

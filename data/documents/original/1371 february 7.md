@@ -1,0 +1,7 @@
+### **1371 February 7**
+
+Quellen: BayHStA, County Ortenburg Certificates 213
+
+H. Albrecht von Bayern quittiert dem LG. Johans zu dem Lewthemberg, Pfleger des Landes Niederbayern, die zu Strawbing vor Rat und Ständen erfolgte Abrechnung über seine Amtszeit, und zwar über das beim Amtsantritt am Gottleichnamstag von seinem Vetter H. Ruprecht d. Ä. laut Abrechnung des Viztums Ekker und des Landschreibers, Hr. Raben, übernommene Bargeld und über die Einnahmen aus Gericht und Maut zu Scherding in den Jahren 1368 bis 1371 sowie alle anderen Landeseinkünfte, zusammen 5 721 Pfund 6 Schilling 8 Regensburger Pfennig und 2 891 Pfund Wiener Pfennig, und hält dazu noch folgende Schulden an den LG. fest: 1 377 Pfund 7 Schilling 10 Regensburger Pfennig vom Pfleggeld für 2 1/2 Jahre bis zum Abrechnungstag am Sonntag vor Pauli Bekehrung (19. Januar), 181 Pfund 3 Schilling 14 Regensburger Pfennig für die Zehrung in Strawbing vom vorgenannten Sonntag bis Mittwoch vor Lichtmeß (29. Januar), 74 1/2 Pfund 8 Regensburger Pfennig und 200 Schock großer Prager Pfennig für die Zehrung in Chambe, 200 Pfund Regensburger Pfennig für Stephan den Altman; dies alles ergibt eine Summe von 2 033 Pfund 7 Schilling 2 Regensburger Pfennig, zu denen noch 500 fl für des Herzogs Roß, zahlbar zu Georgi (24. April) an Chunrad von Rosenberg, Viztum in Amberg, kommen und 100 fl, die Ott dem Stainer für eine Reise nach Ungarn und für 2 Pferde gegeben wurden; ferner bleiben noch offen gewisse Leistungen auf des H. Gebot an LG. Vlrich [zu Leuchtenberg], an den Hofmeister Daniel, an den Ramsp
+
+

@@ -1,0 +1,13 @@
+### **1342 Oktober 27**
+
+Quellen: HStAD, C 1 A, 16  
+Kopialbuch des Ritters Hans V. v. Hirschhorn, mit Abschriften von 240 Urkunden (davon 24 Kaiser- und Königsurkunden aus dem 14. und 15. Jahrhundert) zu Besitz- und Nutzungsrechten sowie Rechtstiteln der Herrschaft bis 1415, mit Nachträgen bis 1503
+
+Kaiser Ludwig IV. der Bayer urteilt, dass Kunigunde von Lißberg, die Ehefrau des Eberhard von Rosenberg und Mutter des verstorbenen Engelhards von Hirschhorn und des Hans von Hirschhorn die Feste Prachtaue mit Zubehör, die als väterliches Erbteil an sie gekommen ist aufgeben und an Engelhard, Hans und Hermann von Hirschhorn übergeben soll.
+
+
+Quellen: RIplus URH 5 n. 466
+
+Ks. Ludwig bekundet: Als er zu Würzburg zu Gericht gesessen ist, ist vor ihm mit Fürsprech erschienen Frau Kunigunde von Lißberg, Ehefrau des Eberhard von Rosenberg (das fur uns kam mit fursprechen, da wir zu gerichte saßen zu Wirczburg [...]). Mit Gesamturteil der anwesenden Herren und Ritter sind ihr die Festen Lißberg und [Burg] Bracht (Brachtaw) mit allem Zubehör samt anderem Erbe ihres Vaters zugesprochen worden (und behub rechte und redelichen, als hern und riter mit gesammeter hant urteil erteilten), mit der Maßgabe, daß ihr Bruder Hermann dieses Erbe ohne ihren Willen nicht veräußern oder beschweren darf. Daraufhin hat sie diese Erbschaft nach entsprechendem Urteil ihren Söhnen Engelhard, Hans und Hermann [von Hirschhorn] mit allen Rechten übertragen (darnach gab sie dieselben erbeschafft willicklich und unbezwunglich vor uns uff rechte und redelichen, als erteilt wart [...] also, das dieselben ire sune damit thun mogen genczlich und gar, was sie wißen, das yn nucze und gut ist).
+
+

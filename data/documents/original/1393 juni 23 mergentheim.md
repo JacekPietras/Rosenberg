@@ -1,0 +1,7 @@
+### **1393 Juni 23, Mergentheim**
+
+Quellen: RIplus Regg. Pfalzgrafen 1 n. 5486 / Karlsr. Copb. 466,103
+
+Ruprecht bestätigt das von Eberhard von Rosenberg seiner gemahlin Else von Erlekeim verschriebene wittum mit zu Bocksberg gehörigen gütern.
+
+

@@ -1,0 +1,11 @@
+### **1388 April 6, Amberg**
+
+Quellen: Generallandesarchiv Karlsruhe D Nr. 421, Verweisung
+
+König Wenzel bestätigt dem Konrad von Rosenberg und dessen Vettern das Gericht und andere Rechte in ihrer Stadt Boxberg.
+
+Zeitschrift für die Geschichte des Oberrheins. 24. 1872
+
+König Wenzel thut dem Conrad von Rosenberg, Viztum zu Heidelberg, seiner getreuen Dienste willen, und dessen Vettern, „die mit im uf der vesten zu Bocksperg gemeiner seint“, die Gnade, daß Leute oder Juden, die in die Stadt Boxberg ziehen und dort wohnhaft werden, aller Freiheiten, Gnaden und Rechte theilhaftig werden sollen, wie sie der Stadt zustehen; auch bestätigt er ihnen das Gericht zu Boxberg und alle Gnaden und Rechte, wie die von Alters hergekommen sind. Geb. zu Amberg 1388 des montages nach sand Ambrosii tage unserr reiche des behemischen in dem 25. und des romischen in dem 12. jaren. Perg. Or. mit beschädigtem Majestätssiegel. Per dominum Lampertum Bambergensem episcopum Wlachnico de Weytenmule.
+
+

@@ -1,0 +1,8 @@
+### **1436 January 28**
+
+Quellen: GA 5 U 363  
+[http://www.landesarchiv-bw.de/plink/?f=3-187924](http://www.landesarchiv-bw.de/plink/?f=3-187924)
+
+Samstag nach St. Paul; Bischof Johann von Würzburg belehnt Conrad von Rosenberg zu Bartenstein gesessen mit dem halben Dorf Riedbach (Zoll); Siegel des Bischofs und des Domstifts; fehlen.
+
+

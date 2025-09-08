@@ -1,0 +1,7 @@
+### **1362 May 14, Neumarkt**
+
+Quellen: Regesten der Pfalzgrafen am Rhein 1214 \- 1508
+
+Ruprecht gebietet allen seinen unterthanen in Bayern für seinen vetter Meinhard von Tirol, den befehlen Conrads von Rosenberg vitztums zu Amberg oder in dessen verhinderung dem landschreiber gehorsam zu sein. Karlsr. Coph. 463,61 (durchstrichen).
+
+

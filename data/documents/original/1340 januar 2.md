@@ -1,0 +1,7 @@
+### **1340 Januar 2**
+
+Quellen: Staatsarchiv Wertheim R-US 1340 Januar 2a
+
+Graf Rudolf von Wertheim erteilt seine Zustimmung dazu, dass Eberhard von Rosenberg, gen. von Zimmern, an Abt und Konvent des Klosters zu Bronnbach (Brunnbach) seinen Zehenten zu "Wulfingsloch", der von dem Grafen von Wertheim zu Lehen geht, gegen einen Weinberg zu Hochhausen vertauscht. Auf der Rückseite: "Hochhausen. Permutatio vinearum, quas monasterium pro decima in Wolfingsloch dedit Eberhardo de Rosenberg cum consensu Rudolfi comitis de Wertheim, qui decimam hanc in feudum dederat dicto Rosenberg, de anno 1340".
+
+
