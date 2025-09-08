@@ -10,13 +10,15 @@ Rosenberg/
 ├── scripts/                  # All executable scripts
 │   ├── setup.sh              # Interactive setup for OAuth token
 │   ├── process_document.sh   # Main workflow script
+│   ├── extract_original.sh   # Extract original language content
 │   ├── download_doc.sh       # Download Google Docs as markdown
 │   ├── clean_markdown.sh     # Clean downloaded markdown
 │   ├── split_by_h1.sh        # Split document by H1 sections
 │   └── token.txt             # OAuth token (created by setup)
 ├── data/                     # Processed documents
 │   ├── rosenberg.md          # Main processed document
-│   └── sections/             # Individual document sections
+│   ├── sections/             # Individual document sections (bilingual)
+│   └── original/            # Original language content only
 └── docs/                     # Project documentation
 ```
 
@@ -47,6 +49,19 @@ This will:
 2. Clean up image references and formatting
 3. Split the document by H1 headings into separate files
 4. Create a main document with links to all sections
+
+### 3. Extract Original Language Content (Optional)
+
+If your documents contain bilingual tables (original language in left column, translations in right column), you can extract only the original content:
+
+```bash
+./scripts/extract_original.sh
+```
+
+Or process a specific file:
+```bash
+./scripts/extract_original.sh filename.md
+```
 
 ## Manual Setup (Alternative)
 
@@ -96,6 +111,13 @@ Downloads a Google Doc as markdown using the Google Drive API.
 Removes image references and base64 data from downloaded markdown files.
 - Removes `![](image[N])` references
 - Removes `[image[N]]: <data:...>` definitions
+
+### `extract_original.sh`
+Extracts original language content from bilingual markdown files.
+- Processes files in `data/sections/` directory
+- Extracts left column content from tables (original language)
+- Preserves all non-table content
+- Creates original-only files in `data/original/` directory
 
 ### `split_by_h1.sh`
 Splits a markdown document by H1 headings into separate files.
