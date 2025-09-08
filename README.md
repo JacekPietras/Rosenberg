@@ -11,6 +11,7 @@ Rosenberg/
 │   ├── setup.sh              # Interactive setup for OAuth token
 │   ├── process_document.sh   # Main workflow script
 │   ├── extract_original.sh   # Extract original language content
+│   ├── extract_english.sh    # Extract English content
 │   ├── download_doc.sh       # Download Google Docs as markdown
 │   ├── clean_markdown.sh     # Clean downloaded markdown
 │   ├── split_by_h1.sh        # Split document by H1 sections
@@ -18,7 +19,8 @@ Rosenberg/
 ├── data/                     # Processed documents
 │   ├── rosenberg.md          # Main processed document
 │   ├── sections/             # Individual document sections (bilingual)
-│   └── original/             # Original language content only
+│   ├── original/             # Original language content only
+│   └── english/             # English content only
 └── docs/                     # Project documentation
 ```
 
@@ -50,17 +52,24 @@ This will:
 3. Split the document by H1 headings into separate files
 4. Create a main document with links to all sections
 
-### 3. Extract Original Language Content (Optional)
+### 3. Extract Language-Specific Content (Optional)
 
-If your documents contain bilingual tables (original language in left column, translations in right column), you can extract only the original content:
+If your documents contain bilingual tables (original language in left column, English in right column), you can extract content by language:
 
+**Extract original language content:**
 ```bash
 ./scripts/extract_original.sh
 ```
 
-Or process a specific file:
+**Extract English content:**
+```bash
+./scripts/extract_english.sh
+```
+
+Or process specific files:
 ```bash
 ./scripts/extract_original.sh filename.md
+./scripts/extract_english.sh filename.md
 ```
 
 ## Manual Setup (Alternative)
@@ -118,6 +127,13 @@ Extracts original language content from bilingual markdown files.
 - Extracts left column content from tables (original language)
 - Preserves all non-table content
 - Creates original-only files in `data/original/` directory
+
+### `extract_english.sh`
+Extracts English content from bilingual markdown files.
+- Processes files in `data/sections/` directory
+- Extracts right column content from tables (English)
+- Preserves all non-table content
+- Creates English-only files in `data/english/` directory
 
 ### `split_by_h1.sh`
 Splits a markdown document by H1 headings into separate files.
