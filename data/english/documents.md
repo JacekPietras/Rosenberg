@@ -139,7 +139,7 @@ Acta imperii inedita. 2
 Ludwig adds 300 pounds of Heller to his pledge to Eberhard von Rosenberg on named villages. Frankfurt, June 2, 1337. We, Ludwig, by God's grace Roman Emperor, at all times increaser of the Empire, grant openly in this letter that we have become indebted to the steadfast man Eberhard von Rosenberg, our dear faithful one, and shall owe him 300 pounds of Haller for his service that he has rendered us and still shall render; and we assign to him and his heirs these Heller [to be drawn] from our and the Empire's people of the villages of Rohenkeim, Bodenkeim, Aicheltzheim, Burchain, and from all our other own people who are resident there and who belong to the same reeve's office, in addition to other money that we have formerly assigned and granted him thereon, with the stipulation that the aforementioned Eberhard and his heirs shall have, take, and enjoy the usufruct of the above-named people in the same way as we had formerly granted and pledged to him, for as long until we or our successors in the Empire shall redeem and release them from it, for that which they formerly held and for the three hundred pounds of Heller. And in witness thereof we give this letter, sealed with our imperial seal, which is given at Frankfurt on the Monday after Ascension Day, in the year after Christ's birth thirteen hundred, thereafter in the seven and thirtieth year [1337], in the twenty-third year of our reign and in the tenth of the emperorship.
 
 
-### **1139 mai 7**
+### **1339 mai 7**
 
 Monumenta Boica. 40 \= Collectio nova 13, Monumenta Episcopatus Wirziburgensis
 

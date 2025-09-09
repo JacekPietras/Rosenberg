@@ -1,12 +1,11 @@
 [
   {
-    "source": "Monumenta Boica. 40 = Collectio nova 13, Monumenta Episcopatus Wirziburgensis",
-    "date": "1139-05-07",
+    "source": "Staatsarchiv Wertheim R-US 1300 Mai 17",
+    "date": "1300-05-17",
     "facts": [
-      "Eberhard von Rosenberg is titled Ritter",
-      "Eberhard von Rosenberg is Vogt zu Dürn",
-      "Eberhard von Rosenberg served as arbitrator/counselor in disputes between parties",
-      "Count Rudolf of Wertheim served as common superior arbitrator"
+      "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Ritter, deceased)",
+      "Konrad von Rosenberg is son of Eberhard von Rosenberg (Ritter, deceased)",
+      "Sale of a hufe at Uissigheim to Bronnbach Abbey"
     ]
   },
   {
@@ -18,11 +17,32 @@
     ]
   },
   {
+    "source": "Staatsarchiv Wertheim R-US 1327 Mai 4",
+    "date": "1327-05-04",
+    "facts": [
+      "Alheit von Niedeck (Nydeck) is widow of Konrad von Rosenberg",
+      "Konrad von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg the Elder is mentioned",
+      "Rosenbergs hold a mill at Rosenberg",
+      "Donation to Bronnbach Abbey from the mill's rent"
+    ]
+  },
+  {
     "source": "VOGT, Regesten, Bd. 1,1, Nr. 2808, S. 552",
     "date": "1327-05-25",
     "facts": [
       "Eberhard von Rosenberg is titled erzbischöflicher Vogt zu Walldürn",
       "Eberhard von Rosenberg served as surety for Archbishop Mathias of Mainz's debt of 300 marks"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Ludwigsburg B 503 I U 756",
+    "date": "1327-05-29",
+    "facts": [
+      "Eberhard von Rosenberg is spouse of Irmtraut (Irmendrut)",
+      "Eberhard von Rosenberg and spouse Irmtraut (Irmendrut) sold the Hohe Mühle near Burg Rosenberg to Schöntal Abbey",
+      "Eberhard and Irmtraut sold an additional mill on the Kirnau to Schöntal Abbey",
+      "Arnold von Rosenberg acted as surety"
     ]
   },
   {
@@ -33,10 +53,47 @@
     ]
   },
   {
+    "source": "Staatsarchiv Wertheim R-US 1328 März 26",
+    "date": "1328-03-26",
+    "facts": [
+      "Eberhard von Rosenberg is Vogt zu Dürn",
+      "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Engelhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Rents/dues from Uissigheim transferred to Bronnbach Abbey",
+      "Rents/dues from Dienstadt transferred to Bronnbach Abbey",
+      "Rents/dues from Brehmen transferred to Bronnbach Abbey",
+      "Rents/dues from Sindolsheim transferred to Bronnbach Abbey",
+      "Rents/dues from Eulschirbenmühle transferred to Bronnbach Abbey"
+    ]
+  },
+  {
+    "source": "Hohenlohe-Zentralarchiv Neuenstein GL 5 U 428",
+    "date": "1329-11-24",
+    "facts": [
+      "Burgfrieden at Nagelsberg between Kraft von Hohenlohe and Eberhard von Rosenberg",
+      "Eberhard von Rosenberg is Vogt zu Dürn"
+    ]
+  },
+  {
     "source": "Hohenlohe-Zentralarchiv Neuenstein We 10 Bü 1873",
     "date": "1330",
     "facts": [
       "Bishop Wolfram of Würzburg issued a command to Eberhard von Rosenberg"
+    ]
+  },
+  {
+    "source": "GA 5 U 714",
+    "date": "1330-04-24",
+    "facts": [
+      "Eberhard von Rosenberg held a share of Nagelsberg Castle as a fief from Comburg"
+    ]
+  },
+  {
+    "source": "RIplus Regg. EB Mainz 1,2 n. 3177",
+    "date": "1331-12-14",
+    "facts": [
+      "Eberhard von Rosenberg is Vogt zu Dürn",
+      "Involved in Mainz fiscal administration affecting Bischofsheim, Külsheim, Amorbach, Dürn, Buchen"
     ]
   },
   {
@@ -47,12 +104,63 @@
     ]
   },
   {
+    "source": "Otto, RggEbMz Nr. 3309",
+    "date": "1333-06-30",
+    "facts": [
+      "Eberhard von Rosenberg is Vogt zu Dürn",
+      "Eberhard von Rosenberg seized Lauda",
+      "Eberhard von Rosenberg attempted to take Werbach (intervened by Hanau and Hohenlohe citing Baldwin's letter)"
+    ]
+  },
+  {
+    "source": "Computus expensarum Eberhardi de Rosenberg militis in negotiis Balduini provisoris ecclesiae Moguntinae apud Amoeneberg, Geissmar, et Fritzlar",
+    "date": "1334-07-09",
+    "facts": [
+      "Eberhard von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg served Balduin (Mainz provisor) at Amöneberg, Geismar, and Fritzlar"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Ludwigsburg B 342 U 485",
+    "date": "1335-05-02",
+    "facts": [
+      "Eberhard von Rosenberg is named as a sealing witness on the sale of Scheuerberg and Neckarsulm by Engelhard von Weinsberg to Archbishop Balduin and the Mainz chapter"
+    ]
+  },
+  {
+    "source": "Acta imperii inedita. 2",
+    "date": "1337-06-02",
+    "facts": [
+      "Emperor Ludwig granted Eberhard von Rosenberg pledge income",
+      "Pledge set on Reich subjects at Rohenkeim, Bodenkeim, Aicheltzheim, Burchain and others"
+    ]
+  },
+  {
+    "source": "Monumenta Boica. 40 = Collectio nova 13, Monumenta Episcopatus Wirziburgensis",
+    "date": "1339-05-07",
+    "facts": [
+      "Eberhard von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg is Vogt zu Dürn",
+      "Eberhard von Rosenberg served as arbitrator/counselor in disputes between parties",
+      "Count Rudolf of Wertheim served as common superior arbitrator"
+    ]
+  },
+  {
     "source": "Hessisches Urkundenbuch. 2,2, Abth. 2",
     "date": "1339-10-15",
     "facts": [
       "Konrad von Bickenbach and Eberhard von Rosenberg served as counselors for Archbishop Heinrich III of Mainz",
       "Eberhard von Rosenberg acknowledged the agreement under the seals of Erkenger von Sauwelsheim and Eberhard Rüdt",
       "Eberhard von Rosenberg did not have his own seal at this time"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Wertheim R-US 1340 Januar 2a",
+    "date": "1340-01-02",
+    "facts": [
+      "Eberhard von Rosenberg genannt von Zimmern held the tithe at Wulfingsloch as a Wertheim fief",
+      "Eberhard von Rosenberg genannt von Zimmern exchanged the Wulfingsloch tithe for a vineyard at Hochhausen",
+      "Exchange made with consent of Count Rudolf of Wertheim"
     ]
   },
   {
@@ -66,11 +174,106 @@
     ]
   },
   {
+    "source": "Regesta sive rerum Boicarum Continuatio 3",
+    "date": "1341-02-02",
+    "facts": [
+      "Eberhard von Rosenberg is titled Edelknecht",
+      "Konrad von Rosenberg is titled Edelknecht",
+      "Eberhard von Rosenberg is brother of Konrad von Rosenberg",
+      "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Konrad von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Engelhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Hermann von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Eberhard and Konrad received royal subjects from their father Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Engelhard and Hermann received royal subjects from their father Eberhard von Rosenberg (Vogt zu Dürn)"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Ludwigsburg B 503 I U 772; JL 425 Bd 21 Qu. 84",
+    "date": "1341-04-30",
+    "facts": [
+      "Eberhard von Rosenberg is Vogt zu Nagelsberg",
+      "Eberhard von Rosenberg is spouse of Wiela (Wyela)",
+      "Sale of grain rent from Simmringen to Konrad Vilman (Schultheiß of Niedernhall)"
+    ]
+  },
+  {
+    "source": "Regesta sive rerum Boicarum 1341 Mai 12",
+    "date": "1341-05-12",
+    "facts": [
+      "Eberhard von Rosenberg is styled armiger junior",
+      "Eberhard von Rosenberg is spouse of Wiela (Wyclo)",
+      "Sale of goods in Kirchheim to Coeliporta monastery"
+    ]
+  },
+  {
+    "source": "Schunk, Johann Peter: Codex diplomaticus exhibens chartas historiam medii aevi illustrantes",
+    "date": "1342-02-15",
+    "facts": [
+      "Eberhard von Rosenberg is Vogt zu Dürn",
+      "Eberhard von Rosenberg participated in account audit at Aschaffenburg with Conrad Rüde and others"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Wertheim R-US 1342 April 6",
+    "date": "1342-04-06",
+    "facts": [
+      "Engelhard von Rosenberg is titled Ritter",
+      "Engelhard von Rosenberg witnessed Alheit of Uissigheim’s testament"
+    ]
+  },
+  {
+    "source": "Regesta sive rerum Boicarum Continuatio 3; OTTO, Regesten, Bd. 1,2, Nr. 4871; SCRIBA, Regesten 1 Abt., Nr. 1001",
+    "date": "1342-09-03",
+    "facts": [
+      "Eberhard von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg is Vogt zu Dürn",
+      "Eberhard von Rosenberg attended meeting at Bensheim with Duke Rupert’s envoys"
+    ]
+  },
+  {
+    "source": "HStAD C 1 A, 16; RIplus URH 5 n. 466",
+    "date": "1342-10-27",
+    "facts": [
+      "Kunigunde von Lissberg is spouse of Eberhard von Rosenberg",
+      "Kunigunde von Lissberg is mother of Engelhard von Hirschhorn",
+      "Kunigunde von Lissberg is mother of Hans von Hirschhorn",
+      "Kunigunde von Lissberg is mother of Hermann von Hirschhorn",
+      "Kunigunde von Lissberg transferred her paternal inheritance (Lissberg and Bracht) to her sons of Hirschhorn"
+    ]
+  },
+  {
     "source": "Hohenlohe-Zentralarchiv Neuenstein GA 15 Nr. 977",
     "date": "1342-11-07",
     "facts": [
       "Eberhard von Rosenberg acknowledged settlement of disputes between Engelhard von Weinsberg and Weiprecht von Düren in Schefflenz",
       "Eberhard von Rosenberg sealed the agreement"
+    ]
+  },
+  {
+    "source": "STAAM, monastery Kastl Certificates 109",
+    "date": "1343-02-21",
+    "facts": [
+      "Konrad der Lengenvelder von Rosenberg is spouse of Jeute",
+      "Konrad der Lengenvelder von Rosenberg sold his farm at Pfeffershoven to Abbot Herman of Kastl",
+      "Friedrich der Franch von Rosenberg is uncle of Konrad der Lengenvelder von Rosenberg",
+      "Rüdger der Smid of Pfaffenhofen is cousin of Konrad der Lengenvelder von Rosenberg"
+    ]
+  },
+  {
+    "source": "StAAM, Principality of Upper Palatinate, Ensdorf Monastery Certificates 96",
+    "date": "1343-04-30",
+    "facts": [
+      "Friedrich der Vogt von Rosenberg acted as surety",
+      "Sale of the Obernhof farm near Ursensollen and two appurtenant fiefs"
+    ]
+  },
+  {
+    "source": "Regesten der Pfalzgrafen am Rhein 1214–1508: Karlsr. Coph. 525ª,4",
+    "date": "1343-09-11",
+    "facts": [
+      "Hermann von Rosenberg is son of Eberhard von Rosenberg",
+      "Fealty with house at Mauer"
     ]
   },
   {
@@ -81,12 +284,56 @@
     ]
   },
   {
+    "source": "OTTO, Regesten, Bd. 1,2, Nr. 5052, S. 454",
+    "date": "1343-11-15",
+    "facts": [
+      "Eberhard von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg attended Aschaffenburg accounting session as a witness"
+    ]
+  },
+  {
+    "source": "OTTO, Regesten, Bd. 1,2, Nr. 5064, S. 456–457",
+    "date": "1343-12-04",
+    "facts": [
+      "Eberhard von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg attended Bensheim meeting as part of Mainz delegation"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Ludwigsburg B 503 I U 540",
+    "date": "1346-03-20",
+    "facts": [
+      "Agnes von Rosenberg is widow of Dieter Rüdt’s brother (context: Rüdt family)",
+      "Agnes von Rosenberg inherited goods from her mother",
+      "Gülten from goods at Unterkessach assigned to six daughters of Konrad Daniel of Würzburg (nuns at Billigheim) for life; reversion to Billigheim Abbey"
+    ]
+  },
+  {
+    "source": "Schunk, Johann Peter: Codex diplomaticus exhibens chartas historiam medii aevi illustrantes",
+    "date": "1347-02-23",
+    "facts": [
+      "Eberhard von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg served as Provisor for Archbishop Heinrich III (Mainz)",
+      "Eberhard von Rosenberg participated in Erenfels toll chest inventory"
+    ]
+  },
+  {
     "source": "Schunk, Johann Peter: Codex diplomaticus exhibens chartas historiam medii aevi illustrantes",
     "date": "1347-03-29",
     "facts": [
       "Eberhard von Rosenberg is titled Ritter",
       "Eberhard von Rosenberg served as guardian (Vormunder) of the Archbishopric of Mainz",
       "Eberhard von Rosenberg participated in assigning 50 gulden debt to Virnheim village"
+    ]
+  },
+  {
+    "source": "Graf Rudolf zu Wertheim et al., mediation record",
+    "date": "1347-04-13",
+    "facts": [
+      "Eberhard von Rosenberg is Vogt zu Dürn",
+      "Eberhard von Rosenberg genannt von Zimmern is mentioned",
+      "Eberhard and Konrad are sons of Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Hans von Rosenberg is mentioned in context of mediation with Kraft von Hohenlohe"
     ]
   },
   {
@@ -125,253 +372,6 @@
     ]
   },
   {
-    "source": "Staatsarchiv Wertheim R-US 1327 Mai 4",
-    "date": "1327-05-04",
-    "facts": [
-      "Alheit von Niedeck (Nydeck) is widow of Konrad von Rosenberg",
-      "Konrad von Rosenberg is titled Ritter",
-      "Eberhard von Rosenberg the Elder is mentioned",
-      "Rosenbergs hold a mill at Rosenberg",
-      "Donation to Bronnbach Abbey from the mill's rent"
-    ]
-  },
-  {
-    "source": "Staatsarchiv Ludwigsburg B 503 I U 756",
-    "date": "1327-05-29",
-    "facts": [
-      "Eberhard von Rosenberg is spouse of Irmtraut (Irmendrut)",
-      "Eberhard von Rosenberg and spouse Irmtraut (Irmendrut) sold the Hohe Mühle near Burg Rosenberg to Schöntal Abbey",
-      "Eberhard and Irmtraut sold an additional mill on the Kirnau to Schöntal Abbey",
-      "Arnold von Rosenberg acted as surety"
-    ]
-  },
-  {
-    "source": "Staatsarchiv Wertheim R-US 1328 März 26",
-    "date": "1328-03-26",
-    "facts": [
-      "Eberhard von Rosenberg is Vogt zu Dürn",
-      "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
-      "Engelhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
-      "Rents/dues from Uissigheim transferred to Bronnbach Abbey",
-      "Rents/dues from Dienstadt transferred to Bronnbach Abbey",
-      "Rents/dues from Brehmen transferred to Bronnbach Abbey",
-      "Rents/dues from Sindolsheim transferred to Bronnbach Abbey",
-      "Rents/dues from Eulschirbenmühle transferred to Bronnbach Abbey"
-    ]
-  },
-  {
-    "source": "Hohenlohe-Zentralarchiv Neuenstein GL 5 U 428",
-    "date": "1329-11-24",
-    "facts": [
-      "Burgfrieden at Nagelsberg between Kraft von Hohenlohe and Eberhard von Rosenberg",
-      "Eberhard von Rosenberg is Vogt zu Dürn"
-    ]
-  },
-  {
-    "source": "GA 5 U 714",
-    "date": "1330-04-24",
-    "facts": [
-      "Eberhard von Rosenberg held a share of Nagelsberg Castle as a fief from Comburg"
-    ]
-  },
-  {
-    "source": "RIplus Regg. EB Mainz 1,2 n. 3177",
-    "date": "1331-12-14",
-    "facts": [
-      "Eberhard von Rosenberg is Vogt zu Dürn",
-      "Involved in Mainz fiscal administration affecting Bischofsheim, Külsheim, Amorbach, Dürn, Buchen"
-    ]
-  },
-  {
-    "source": "Otto, RggEbMz Nr. 3309",
-    "date": "1333-06-30",
-    "facts": [
-      "Eberhard von Rosenberg is Vogt zu Dürn",
-      "Eberhard von Rosenberg seized Lauda",
-      "Eberhard von Rosenberg attempted to take Werbach (intervened by Hanau and Hohenlohe citing Baldwin's letter)"
-    ]
-  },
-  {
-    "source": "Computus expensarum Eberhardi de Rosenberg militis in negotiis Balduini provisoris ecclesiae Moguntinae apud Amoeneberg, Geissmar, et Fritzlar",
-    "date": "1334-07-09",
-    "facts": [
-      "Eberhard von Rosenberg is titled Ritter",
-      "Eberhard von Rosenberg served Balduin (Mainz provisor) at Amöneberg, Geismar, and Fritzlar"
-    ]
-  },
-  {
-    "source": "Acta imperii inedita. 2",
-    "date": "1337-06-02",
-    "facts": [
-      "Emperor Ludwig granted Eberhard von Rosenberg pledge income",
-      "Pledge set on Reich subjects at Rohenkeim, Bodenkeim, Aicheltzheim, Burchain and others"
-    ]
-  },
-  {
-    "source": "Staatsarchiv Wertheim R-US 1300 Mai 17",
-    "date": "1300-05-17",
-    "facts": [
-      "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Ritter, deceased)",
-      "Konrad von Rosenberg is son of Eberhard von Rosenberg (Ritter, deceased)",
-      "Sale of a hufe at Uissigheim to Bronnbach Abbey"
-    ]
-  },
-  {
-    "source": "Regesta sive rerum Boicarum 1341 Mai 12",
-    "date": "1341-05-12",
-    "facts": [
-      "Eberhard von Rosenberg is styled armiger junior",
-      "Eberhard von Rosenberg is spouse of Wiela (Wyclo)",
-      "Sale of goods in Kirchheim to Coeliporta monastery"
-    ]
-  },
-  {
-    "source": "Staatsarchiv Ludwigsburg B 342 U 485",
-    "date": "1335-05-02",
-    "facts": [
-      "Eberhard von Rosenberg is named as a sealing witness on the sale of Scheuerberg and Neckarsulm by Engelhard von Weinsberg to Archbishop Balduin and the Mainz chapter"
-    ]
-  },
-  {
-    "source": "Staatsarchiv Ludwigsburg B 503 I U 772; JL 425 Bd 21 Qu. 84",
-    "date": "1341-04-30",
-    "facts": [
-      "Eberhard von Rosenberg is Vogt zu Nagelsberg",
-      "Eberhard von Rosenberg is spouse of Wiela (Wyela)",
-      "Sale of grain rent from Simmringen to Konrad Vilman (Schultheiß of Niedernhall)"
-    ]
-  },
-  {
-    "source": "Staatsarchiv Wertheim R-US 1340 Januar 2a",
-    "date": "1340-01-02",
-    "facts": [
-      "Eberhard von Rosenberg genannt von Zimmern held the tithe at Wulfingsloch as a Wertheim fief",
-      "Eberhard von Rosenberg genannt von Zimmern exchanged the Wulfingsloch tithe for a vineyard at Hochhausen",
-      "Exchange made with consent of Count Rudolf of Wertheim"
-    ]
-  },
-  {
-    "source": "Regesta sive rerum Boicarum Continuatio 3",
-    "date": "1341-02-02",
-    "facts": [
-      "Eberhard von Rosenberg is titled Edelknecht",
-      "Konrad von Rosenberg is titled Edelknecht",
-      "Eberhard von Rosenberg is brother of Konrad von Rosenberg",
-      "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
-      "Konrad von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
-      "Engelhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
-      "Hermann von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
-      "Eberhard and Konrad received royal subjects from their father Eberhard von Rosenberg (Vogt zu Dürn)",
-      "Engelhard and Hermann received royal subjects from their father Eberhard von Rosenberg (Vogt zu Dürn)"
-    ]
-  },
-  {
-    "source": "Schunk, Johann Peter: Codex diplomaticus exhibens chartas historiam medii aevi illustrantes",
-    "date": "1342-02-15",
-    "facts": [
-      "Eberhard von Rosenberg is Vogt zu Dürn",
-      "Eberhard von Rosenberg participated in account audit at Aschaffenburg with Conrad Rüde and others"
-    ]
-  },
-  {
-    "source": "Staatsarchiv Wertheim R-US 1342 April 6",
-    "date": "1342-04-06",
-    "facts": [
-      "Engelhard von Rosenberg is titled Ritter",
-      "Engelhard von Rosenberg witnessed Alheit of Uissigheim’s testament"
-    ]
-  },
-  {
-    "source": "HStAD C 1 A, 16; RIplus URH 5 n. 466",
-    "date": "1342-10-27",
-    "facts": [
-      "Kunigunde von Lissberg is spouse of Eberhard von Rosenberg",
-      "Kunigunde von Lissberg is mother of Engelhard von Hirschhorn",
-      "Kunigunde von Lissberg is mother of Hans von Hirschhorn",
-      "Kunigunde von Lissberg is mother of Hermann von Hirschhorn",
-      "Kunigunde von Lissberg transferred her paternal inheritance (Lissberg and Bracht) to her sons of Hirschhorn"
-    ]
-  },
-  {
-    "source": "Regesten der Pfalzgrafen am Rhein 1214–1508: Karlsr. Coph. 525ª,4",
-    "date": "1343-09-11",
-    "facts": [
-      "Hermann von Rosenberg is son of Eberhard von Rosenberg",
-      "Fealty with house at Mauer"
-    ]
-  },
-  {
-    "source": "Regesta sive rerum Boicarum Continuatio 3; OTTO, Regesten, Bd. 1,2, Nr. 4871; SCRIBA, Regesten 1 Abt., Nr. 1001",
-    "date": "1342-09-03",
-    "facts": [
-      "Eberhard von Rosenberg is titled Ritter",
-      "Eberhard von Rosenberg is Vogt zu Dürn",
-      "Eberhard von Rosenberg attended meeting at Bensheim with Duke Rupert’s envoys"
-    ]
-  },
-  {
-    "source": "STAAM, monastery Kastl Certificates 109",
-    "date": "1343-02-21",
-    "facts": [
-      "Konrad der Lengenvelder von Rosenberg is spouse of Jeute",
-      "Konrad der Lengenvelder von Rosenberg sold his farm at Pfeffershoven to Abbot Herman of Kastl",
-      "Friedrich der Franch von Rosenberg is uncle of Konrad der Lengenvelder von Rosenberg",
-      "Rüdger der Smid of Pfaffenhofen is cousin of Konrad der Lengenvelder von Rosenberg"
-    ]
-  },
-  {
-    "source": "StAAM, Principality of Upper Palatinate, Ensdorf Monastery Certificates 96",
-    "date": "1343-04-30",
-    "facts": [
-      "Friedrich der Vogt von Rosenberg acted as surety",
-      "Sale of the Obernhof farm near Ursensollen and two appurtenant fiefs"
-    ]
-  },
-  {
-    "source": "OTTO, Regesten, Bd. 1,2, Nr. 5052, S. 454",
-    "date": "1343-11-15",
-    "facts": [
-      "Eberhard von Rosenberg is titled Ritter",
-      "Eberhard von Rosenberg attended Aschaffenburg accounting session as a witness"
-    ]
-  },
-  {
-    "source": "OTTO, Regesten, Bd. 1,2, Nr. 5064, S. 456–457",
-    "date": "1343-12-04",
-    "facts": [
-      "Eberhard von Rosenberg is titled Ritter",
-      "Eberhard von Rosenberg attended Bensheim meeting as part of Mainz delegation"
-    ]
-  },
-  {
-    "source": "Staatsarchiv Ludwigsburg B 503 I U 540",
-    "date": "1346-03-20",
-    "facts": [
-      "Agnes von Rosenberg is widow of Dieter Rüdt’s brother (context: Rüdt family)",
-      "Agnes von Rosenberg inherited goods from her mother",
-      "Gülten from goods at Unterkessach assigned to six daughters of Konrad Daniel of Würzburg (nuns at Billigheim) for life; reversion to Billigheim Abbey"
-    ]
-  },
-  {
-    "source": "Schunk, Johann Peter: Codex diplomaticus exhibens chartas historiam medii aevi illustrantes",
-    "date": "1347-02-23",
-    "facts": [
-      "Eberhard von Rosenberg is titled Ritter",
-      "Eberhard von Rosenberg served as Provisor for Archbishop Heinrich III (Mainz)",
-      "Eberhard von Rosenberg participated in Erenfels toll chest inventory"
-    ]
-  },
-  {
-    "source": "Graf Rudolf zu Wertheim et al., mediation record",
-    "date": "1347-04-13",
-    "facts": [
-      "Eberhard von Rosenberg is Vogt zu Dürn",
-      "Eberhard von Rosenberg genannt von Zimmern is mentioned",
-      "Eberhard and Konrad are sons of Eberhard von Rosenberg (Vogt zu Dürn)",
-      "Hans von Rosenberg is mentioned in context of mediation with Kraft von Hohenlohe"
-    ]
-  },
-  {
     "source": "43 No. 1213",
     "date": "1479",
     "facts": [
@@ -400,4 +400,3 @@
     ]
   }
 ]
-
