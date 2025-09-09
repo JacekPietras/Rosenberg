@@ -14,6 +14,7 @@
     "source": "Staatsarchiv Ludwigsburg B 503 I U 756",
     "date": "1327-05-29",
     "facts": [
+      "Eberhard von Rosenberg is spouse of Irmtraut (Irmendrut)",
       "Eberhard von Rosenberg and spouse Irmtraut (Irmendrut) sold the Hohe Mühle near Burg Rosenberg to Schöntal Abbey",
       "Eberhard and Irmtraut sold an additional mill on the Kirnau to Schöntal Abbey",
       "Arnold von Rosenberg acted as surety"
@@ -26,14 +27,19 @@
       "Eberhard von Rosenberg is Vogt zu Dürn",
       "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
       "Engelhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
-      "Rents/dues from Uissigheim, Dienstadt, Brehmen, Sindolsheim, Eulschirbenmühle transferred to Bronnbach Abbey"
+      "Rents/dues from Uissigheim transferred to Bronnbach Abbey",
+      "Rents/dues from Dienstadt transferred to Bronnbach Abbey",
+      "Rents/dues from Brehmen transferred to Bronnbach Abbey",
+      "Rents/dues from Sindolsheim transferred to Bronnbach Abbey",
+      "Rents/dues from Eulschirbenmühle transferred to Bronnbach Abbey"
     ]
   },
   {
     "source": "Hohenlohe-Zentralarchiv Neuenstein GL 5 U 428",
     "date": "1329-11-24",
     "facts": [
-      "Burgfrieden at Nagelsberg between Kraft von Hohenlohe and Eberhard von Rosenberg (Vogt zu Dürn)"
+      "Burgfrieden at Nagelsberg between Kraft von Hohenlohe and Eberhard von Rosenberg",
+      "Eberhard von Rosenberg is Vogt zu Dürn"
     ]
   },
   {
@@ -55,21 +61,25 @@
     "source": "Otto, RggEbMz Nr. 3309",
     "date": "1333-06-30",
     "facts": [
-      "Eberhard von Rosenberg (Vogt zu Dürn) seized Lauda"
+      "Eberhard von Rosenberg is Vogt zu Dürn",
+      "Eberhard von Rosenberg seized Lauda",
+      "Eberhard von Rosenberg attempted to take Werbach (intervened by Hanau and Hohenlohe citing Baldwin's letter)"
     ]
   },
   {
-    "source": "Computus expensarum Eberhardi de Rosenberg",
+    "source": "Computus expensarum Eberhardi de Rosenberg militis in negotiis Balduini provisoris ecclesiae Moguntinae apud Amoeneberg, Geissmar, et Fritzlar",
     "date": "1334-07-09",
     "facts": [
-      "Eberhard von Rosenberg served Balduin (Mainz provisor)"
+      "Eberhard von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg served Balduin (Mainz provisor) at Amöneberg, Geismar, and Fritzlar"
     ]
   },
   {
     "source": "Acta imperii inedita. 2",
     "date": "1337-06-02",
     "facts": [
-      "Emperor Ludwig granted Eberhard von Rosenberg 200 lb heller as pledge income"
+      "Emperor Ludwig granted Eberhard von Rosenberg 200 lb heller as pledge income",
+      "Pledge set on Reich subjects at Rohenkeim, Bodenkeim, Aicheltzheim, Burchain and others"
     ]
   },
   {
@@ -91,6 +101,13 @@
     ]
   },
   {
+    "source": "Staatsarchiv Ludwigsburg B 342 U 485",
+    "date": "1335-05-02",
+    "facts": [
+      "Eberhard von Rosenberg is named as a sealing witness on the sale of Scheuerberg and Neckarsulm by Engelhard von Weinsberg to Archbishop Balduin and the Mainz chapter"
+    ]
+  },
+  {
     "source": "Staatsarchiv Ludwigsburg B 503 I U 772; JL 425 Bd 21 Qu. 84",
     "date": "1341-04-30",
     "facts": [
@@ -100,11 +117,54 @@
     ]
   },
   {
-    "source": "RIplus URH 5 n. 466 / HStAD C 1 A, 16",
+    "source": "Staatsarchiv Wertheim R-US 1340 Januar 2a",
+    "date": "1340-01-02",
+    "facts": [
+      "Eberhard von Rosenberg genannt von Zimmern held the tithe at Wulfingsloch as a Wertheim fief",
+      "Eberhard von Rosenberg genannt von Zimmern exchanged the Wulfingsloch tithe for a vineyard at Hochhausen",
+      "Exchange made with consent of Count Rudolf of Wertheim"
+    ]
+  },
+  {
+    "source": "Regesta sive rerum Boicarum Continuatio 3",
+    "date": "1341-02-02",
+    "facts": [
+      "Eberhard von Rosenberg is titled Edelknecht",
+      "Konrad von Rosenberg is titled Edelknecht",
+      "Eberhard von Rosenberg is brother of Konrad von Rosenberg",
+      "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Konrad von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Engelhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Hermann von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Eberhard and Konrad received royal subjects from their father Eberhard von Rosenberg (Vogt zu Dürn)",
+      "Engelhard and Hermann received royal subjects from their father Eberhard von Rosenberg (Vogt zu Dürn)"
+    ]
+  },
+  {
+    "source": "Schunk, Johann Peter: Codex diplomaticus exhibens chartas historiam medii aevi illustrantes",
+    "date": "1342-02-15",
+    "facts": [
+      "Eberhard von Rosenberg is Vogt zu Dürn",
+      "Eberhard von Rosenberg participated in account audit at Aschaffenburg with Conrad Rüde and others"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Wertheim R-US 1342 April 6",
+    "date": "1342-04-06",
+    "facts": [
+      "Engelhard von Rosenberg is titled Ritter",
+      "Engelhard von Rosenberg witnessed Alheit of Uissigheim’s testament"
+    ]
+  },
+  {
+    "source": "HStAD C 1 A, 16; RIplus URH 5 n. 466",
     "date": "1342-10-27",
     "facts": [
       "Kunigunde von Lissberg is spouse of Eberhard von Rosenberg",
-      "Her paternal inheritance includes Lissberg and Bracht; transferred to her sons of Hirschhorn"
+      "Kunigunde von Lissberg is mother of Engelhard von Hirschhorn",
+      "Kunigunde von Lissberg is mother of Hans von Hirschhorn",
+      "Kunigunde von Lissberg is mother of Hermann von Hirschhorn",
+      "Kunigunde von Lissberg transferred her paternal inheritance (Lissberg and Bracht) to her sons of Hirschhorn"
     ]
   },
   {
