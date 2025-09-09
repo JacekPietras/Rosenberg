@@ -71,21 +71,3 @@ Ein Arnold v. Rosenberg der junge, geſesſen zu Vorberg, iſt uns a. 1394 erſt
 ## **About Schönau monastery**
 
 Vor Abt Pater zu Schönau geschah die Vereinigung, nach welcher dem Caplan jener Pfründe eine ewige Gült von zwanzig Pfund Heller, „als sie zu Heidelberg genge und gebe sind“, erkauft werden solle. Dazu werden an die gestiftete Seelenmesse gesetzt 12 Malter ewiger Korngilt von des Klosters Hof zu Edingen und zwei Häuser zu Heidelberg, das eine gelegen am Berge, das andere in der Mantelgasse im Brückenried, dazu ½ Morgen Wingert in Leimheimer Mark und zwei Stückel Weingarten zu Handschuchsheim am Bruckenried, endlich drei Morgen Weingarten in Rohrbacher Gemarkung am Pleckhard und in Bergheimer Gemarkung am Geißberg und in Handschuchsheimer im Lobenfelder gelegen. Von letztern soll Pfarrer Hartlieb sein Leben lang die Nutzung haben. Die Stiftung wurde 1379 vom Abt zu Schönau, der Äbtissin und dem Pfarrer Hartlieb besiegelt und nach dem Tode der Carisina 1388 vom Wormser Bischof Eckhard von Ders bestätigt. Die Nachfolgerin Carisina's dürfte jene Äbtissin Agnes Ulnerin von Dyhpurg (Dieburg bei Darmstadt) gewesen sein, deren Grabstein im Stift ihren Todestag als den Tag nach St. Barbara (5. Dec.) des Jahres 1403*) überliefert hat. Noch zählte nach ihr das Kloster unter seinen Wohlthätern 1410 Elisabeth von Weyler, genannt Krensin, eine Klosterfrau, und 1420 die Wittwe Elisabeth von Erlickheim, geborne von Rosenberg auf.
-
-## **Name variations**
-
-Eberhard - Everard, Everhard, Eberhardi, Ebirhardus, eebhrt, rebhart, Ebhart, Eberhardus, Ebhrhard, Eberharten, Ebirbard, Ebirhardo, Ebirhardz, Ebirhart, Ebyrhard, Eberhardt, erberhart, Eberharten, Ebirharten, Eberhardum, Ebert, Eberh
-Wyclo - Wyela, Wyle, Wiclo, Wiela, Wiele
-Engelhard - Engelhart, Engelhardus
-Konrad - Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat
-Kunz - Cunz, Kunz, Konz, Conz, Concz, Cuntz, Cuncze, Guntz (are shortened versions of Konrad, but not used as it\! [1401 March 5])
-Irmtraut - Irmendrut
-Eckhard - Ege, Ekkehart, Eckhart, Ekhart, Ekkehard, Eckehardus, Ekkard
-Mönch - Münch, Munch (it derives from "Monk")
-Arnold - Arnolt
-Elisabeth - Elspeth, Elsbet, Else, Els, Eilse, Elsbeth
-Erligheim - Erlikeim, Erlekeim, Erleheim, Erlekeim, Erleckein
-Senant - Synant
-lauda - ludin, luden, Lueden, Lawdaw, Lawden
-Uissigheim - Ussinkeim
-Niedeck - Nydeck
