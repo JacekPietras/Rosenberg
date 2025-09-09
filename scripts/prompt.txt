@@ -66,8 +66,21 @@ Format:
 - **Explicit relationships**: Never use "sons of" - always "X is son of Y"
 - **No interpretation**: Extract only what is explicitly stated
 - **Simplicity**: Keep the information as concise as possible. Skip irrelevant details like the price of an asset.
-- **Skip not relevant**: Do not extract facts about people not related to von Rosenberg or locations important to them
+- **Skip irrelevant**: Do not extract facts about people not related to von Rosenberg or locations important to them
 - verify JSON structure after update
+
+### **Relevance Filtering (CRITICAL):**
+- **ONLY extract facts about:**
+  - von Rosenberg family members (any branch)
+  - von Uissigheim family members (Rosenberg ancestors)
+  - People who interact directly with above families (as spouses, witnesses, transaction partners)
+  - Properties/locations important to these families (Boxberg, Wölchingen, Uissigheim, etc.)
+
+- **SKIP these irrelevant details:**
+  - Financial amounts, prices, measurements
+  - Titles/offices of unrelated people
+  - Administrative details not involving the target families
+  - Third-party transactions where target families are not direct participants
 
 ### **Critical Notes:**
 - Look for name variations and epithets that distinguish family members
