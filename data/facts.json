@@ -5,7 +5,7 @@
     "facts": [
       "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Ritter, deceased)",
       "Konrad von Rosenberg is son of Eberhard von Rosenberg (Ritter, deceased)",
-      "Eberhard and Konrad von Rosenberg sold a hufe at Uissigheim to Bronnbach Abbey for 27 pfund heller",
+      "Eberhard and Konrad von Rosenberg sold a hufe at Uissigheim to Bronnbach Abbey",
       "Uissigheim hufe yielded 6 malter corn and 2 malter wheat annually",
       "Konrad von Uissigheim sealed the transaction"
     ]
@@ -50,7 +50,7 @@
     "date": "1327-05-04",
     "facts": [
       "Alheit von Niedeck (Nydeck) is widow of Konrad von Rosenberg (Ritter)",
-      "Alheit von Niedeck donated 3.5 pfund heller annual rent from a mill at Rosenberg to Bronnbach Abbey",
+      "Alheit von Niedeck donated annual rent from a mill at Rosenberg to Bronnbach Abbey",
       "Eberhard von Rosenberg the Elder is Alheit's Buhle (intimate companion)",
       "Eberhard von Rosenberg the Elder sealed the donation"
     ]
@@ -60,7 +60,7 @@
     "date": "1327-05-25",
     "facts": [
       "Eberhard von Rosenberg is titled erzbischöflicher Vogt zu Walldürn",
-      "Eberhard von Rosenberg served as surety for Archbishop Mathias of Mainz's debt of 300 marks"
+      "Eberhard von Rosenberg served as surety for Archbishop Mathias of Mainz"
     ]
   },
   {
@@ -77,7 +77,7 @@
     "source": "Eberhard von Rosenberg verkauft dem Kloster Bronnbach zwei Höfe zu Sindolsheim um 70 Pfd. Häller",
     "date": "1327-06-05",
     "facts": [
-      "Eberhard von Rosenberg sold two farms at Sindolsheim to Bronnbach Abbey for 70 pfund heller"
+      "Eberhard von Rosenberg sold two farms at Sindolsheim to Bronnbach Abbey"
     ]
   },
   {
@@ -161,7 +161,7 @@
     "facts": [
       "Eberhard von Rosenberg is titled Ritter",
       "Eberhard von Rosenberg served as guardian (Vormünder) of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Nicolas vom Steine, Johan von Randeck, and Johan von Beldersheim",
-      "Eberhard von Rosenberg participated in sale of Viernheim village to Johann (Schultheiß of Weinheim) for 1,200 pfund heller on repurchase terms"
+      "Eberhard von Rosenberg participated in sale of Viernheim village to Johann (Schultheiß of Weinheim)"
     ]
   },
   {
@@ -179,7 +179,7 @@
       "Eberhard von Rosenberg is titled Ritter",
       "Eberhard von Rosenberg is Vogt zu Dürn",
       "Eberhard von Rosenberg served as arbitrator/counselor in disputes between parties",
-      "Count Rudolf of Wertheim served as common superior arbitrator"
+      ""
     ]
   },
   {
@@ -273,11 +273,7 @@
     "source": "HStAD C 1 A, 16; RIplus URH 5 n. 466",
     "date": "1342-10-27",
     "facts": [
-      "Kunigunde von Lissberg is spouse of Eberhard von Rosenberg",
-      "Kunigunde von Lissberg is mother of Engelhard von Hirschhorn",
-      "Kunigunde von Lissberg is mother of Hans von Hirschhorn",
-      "Kunigunde von Lissberg is mother of Hermann von Hirschhorn",
-      "Kunigunde von Lissberg transferred her paternal inheritance (Lissberg and Bracht) to her sons of Hirschhorn"
+      "Kunigunde von Lissberg is spouse of Eberhard von Rosenberg"
     ]
   },
   {
@@ -342,8 +338,7 @@
     "date": "1346-03-20",
     "facts": [
       "Agnes von Rosenberg is widow of Dieter Rüdt’s brother (context: Rüdt family)",
-      "Agnes von Rosenberg inherited goods from her mother",
-      "Gülten from goods at Unterkessach assigned to six daughters of Konrad Daniel of Würzburg (nuns at Billigheim) for life; reversion to Billigheim Abbey"
+      "Agnes von Rosenberg inherited goods from her mother"
     ]
   },
   {
@@ -361,7 +356,7 @@
     "facts": [
       "Eberhard von Rosenberg is titled Ritter",
       "Eberhard von Rosenberg served as guardian (Vormunder) of the Archbishopric of Mainz",
-      "Eberhard von Rosenberg participated in assigning 50 gulden debt to Virnheim village"
+      "Eberhard von Rosenberg participated in assigning debt to Virnheim village"
     ]
   },
   {
@@ -380,7 +375,7 @@
     "facts": [
       "Eberhard von Rosenberg is titled Ritter",
       "Eberhard von Rosenberg served as guardian (Vormünder) of the Archbishopric of Mainz",
-      "Eberhard von Rosenberg participated in sale of villages Trösel and Löhrbach to Anselm von Heimbach for 842 pfund 6 schilling 8 heller"
+      "Eberhard von Rosenberg participated in sale of villages Trösel and Löhrbach to Anselm von Heimbach"
     ]
   },
   {
@@ -406,7 +401,7 @@
     "source": "Regesta sive rerum Boicarum autographa ad annum usque MCCC. 8 = Continuatio 4",
     "date": "1349-09-15",
     "facts": [
-      "Eberhard von Rosenberg permitted the Archbishopric of Mainz to redeem Nagelsberg Castle for 400 pfund heller"
+      "Eberhard von Rosenberg permitted the Archbishopric of Mainz to redeem Nagelsberg Castle"
     ]
   },
   {
@@ -435,10 +430,10 @@
     "source": "43 No. 1244 / 1245",
     "date": "1561-07-24",
     "facts": [
-      "Albrecht von Rosenberg ceded all rights to Boxberg to Elector Friedrich II for 27,000 gulden",
+      "Albrecht von Rosenberg ceded all rights to Boxberg to Elector Friedrich II",
       "Agnatic consent by multiple Rosenberg kin recorded for Boxberg sale",
       "Boxberg lordship ended for Rosenberg family in 1561",
-      "27,000 gulden represents significant value of Boxberg holdings"
+      ""
     ]
   }
 ]
