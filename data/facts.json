@@ -13,7 +13,28 @@
     "date": "1323-03-17",
     "facts": [
       "Eberhard von Rosenberg is mentioned as a sealer/witness",
-      "Eberhard von Uissigheim (called von Rannenberg) and spouse Elsebet renounced rights to Breitenau farm in favor of Bronnbach Abbey"
+      "Eberhard von Uissigheim (called von Rannenberg) and spouse Elsebet renounced rights to Breitenau farm in favor of Bronnbach Abbey",
+      "Eberhard von Uissigheim is called von Rannenberg (possible connection to Rosenberg family branch)"
+    ]
+  },
+  {
+    "source": "RIplus Regg. EB Mainz 1,1 n. 2009",
+    "date": "1318-04-24",
+    "facts": [
+      "Arnold von Uissigheim is titled Ritter",
+      "Arnold von Uissigheim held Mainz fiefs at Hildbrandzellen",
+      "Arnold von Uissigheim exchanged his Hildbrandzellen fiefs with Bronnbach Abbey for a hufe in Uissigheim village territory",
+      "Arnold von Uissigheim received the Uissigheim hufe as a Mainz fief"
+    ]
+  },
+  {
+    "source": "Generallandesarchiv Karlsruhe 43 Nr. 1210",
+    "date": "1321-05-01",
+    "facts": [
+      "Graf Berthold von Henneberg is Johanniter-Prior and Komtur zu Boxberg",
+      "Johanniter Order possessed goods at Boxberg by 1321",
+      "Boxberg served as a Johanniter commandery under Henneberg leadership",
+      "Wertheim family had feudal rights over Johanniter goods at Boxberg (renounced in favor of Henneberg)"
     ]
   },
   {
@@ -128,6 +149,15 @@
     ]
   },
   {
+    "source": "STAWÜ, MIB 4 fol. 126; OTTO, Regesten, Bd. 1,2, Nr. 5512, S. 545",
+    "date": "1346-10-25",
+    "facts": [
+      "Eberhard von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg served as guardian (Vormünder) of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Nicolas vom Steine, Johan von Randeck, and Johan von Beldersheim",
+      "Eberhard von Rosenberg participated in sale of Viernheim village to Johann (Schultheiß of Weinheim) for 1,200 pfund heller on repurchase terms"
+    ]
+  },
+  {
     "source": "Acta imperii inedita. 2",
     "date": "1337-06-02",
     "facts": [
@@ -219,7 +249,8 @@
     "date": "1342-04-06",
     "facts": [
       "Engelhard von Rosenberg is titled Ritter",
-      "Engelhard von Rosenberg witnessed Alheit of Uissigheim’s testament"
+      "Engelhard von Rosenberg witnessed Alheit of Uissigheim’s testament",
+      "Alheit of Uissigheim made a testament (family connection to Rosenbergs as witnesses)"
     ]
   },
   {
@@ -381,14 +412,16 @@
       "Jörg von Rosenberg is brother of Arnold von Rosenberg",
       "Jörg von Rosenberg is brother of Friedrich von Rosenberg",
       "Arnold von Rosenberg is brother of Friedrich von Rosenberg",
-      "Granted Boxberg a Saturday weekly market"
+      "Michael, Jörg, Arnold, Friedrich von Rosenberg granted Boxberg a Saturday weekly market",
+      "Rosenberg brothers held lordship over Boxberg by 1479"
     ]
   },
   {
     "source": "43 No. 1235",
     "date": "1480-01-03",
     "facts": [
-      "Family agreement among Michael, Jörg, Arnold, Friedrich von Rosenberg regarding Boxberg possessions"
+      "Family agreement among Michael, Jörg, Arnold, Friedrich von Rosenberg regarding Boxberg possessions",
+      "Rosenberg brothers divided Boxberg holdings among themselves in formal agreement"
     ]
   },
   {
@@ -396,7 +429,9 @@
     "date": "1561-07-24",
     "facts": [
       "Albrecht von Rosenberg ceded all rights to Boxberg to Elector Friedrich II for 27,000 gulden",
-      "Agnatic consent by multiple Rosenberg kin recorded"
+      "Agnatic consent by multiple Rosenberg kin recorded for Boxberg sale",
+      "Boxberg lordship ended for Rosenberg family in 1561",
+      "27,000 gulden represents significant value of Boxberg holdings"
     ]
   }
 ]
