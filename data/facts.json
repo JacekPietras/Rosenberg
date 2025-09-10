@@ -6,7 +6,6 @@
       "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Ritter, deceased)",
       "Konrad von Rosenberg is son of Eberhard von Rosenberg (Ritter, deceased)",
       "Eberhard and Konrad von Rosenberg sold a hufe at Uissigheim to Bronnbach Abbey",
-      "Uissigheim hufe yielded 6 malter corn and 2 malter wheat annually",
       "Konrad von Uissigheim sealed the transaction"
     ]
   },
@@ -87,11 +86,7 @@
       "Eberhard von Rosenberg is Vogt zu Dürn",
       "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
       "Engelhard von Rosenberg is son of Eberhard von Rosenberg (Vogt zu Dürn)",
-      "Rents/dues from Uissigheim transferred to Bronnbach Abbey",
-      "Rents/dues from Dienstadt transferred to Bronnbach Abbey",
-      "Rents/dues from Brehmen transferred to Bronnbach Abbey",
-      "Rents/dues from Sindolsheim transferred to Bronnbach Abbey",
-      "Rents/dues from Eulschirbenmühle transferred to Bronnbach Abbey"
+      "Rents/dues transferred to Bronnbach Abbey"
     ]
   },
   {
@@ -884,23 +879,11 @@
     ]
   },
   {
-    "source": "Zeitschr. für Gesch. des Oberrheins XI. S. 65. Extr. S. Ritsert Landschaden von Steinach im Archiv für hess. Gesch. XII, S. 437.",
-    "date": "1375-06-15",
-    "facts": [
-      "Conz Mönch von Rosenberg received the Hinterburg and Stadt Steinach as Amtslehn from Archbishop Adolf of Mainz",
-      "Conz Mönch von Rosenberg received other goods and revenues from Archbishop Adolf of Mainz",
-      "Conz Mönch von Rosenberg provided a loan to Archbishop Adolf of Mainz in exchange for the properties",
-      "Conz Mönch von Rosenberg received properties that had previously been held by Propst Peter von Maner of Wimpfen"
-    ]
-  },
-  {
     "source": "Staatsarchiv Wertheim G-Rep. 15 Lade XXIV Nr. 4",
     "date": "1375-03-25",
     "facts": [
-      "Hans Munich and Lutz Halmunich are brothers from Hainstadt (identified as Mönche von Rosenberg by their seals)",
-      "Hans Munich and Lutz Halmunich sold tithes from Dürrhof, Laukenhof and Winnenden to Bronnbach Abbey",
       "Hans von Rosenberg is titled Ritter",
-      "Hans von Rosenberg witnessed the property sale by Hans Munich and Lutz Halmunich",
+      "Hans von Rosenberg witnessed a property sale",
       "Cunrat von Ußinkeim d. Ä. (Conrad von Uissigheim the Elder) witnessed the property sale",
       "Eberhart von Rosenberg d. Ä. (Eberhard von Rosenberg the Elder) witnessed the property sale",
       "Reinhart von Hartheim witnessed the property sale"
@@ -934,15 +917,6 @@
       "Conrad von Rosenberg acted in the name of Herzog Ruprecht (Duke Ruprecht)",
       "Conrad von Rosenberg granted pardon to Jobs Tezzel, citizen of Nuremberg",
       "Conrad von Rosenberg handled criminal justice matters involving capture and imprisonment"
-    ]
-  },
-  {
-    "source": "Generallandesarchiv Karlsruhe 43 Nr. 1385",
-    "date": "1378-06-05",
-    "facts": [
-      "Kunz Münch von Rosenberg purchased a rent on Dallau from Rudolf von Heinriet and his family",
-      "Anna is spouse of Kunz Münch von Rosenberg",
-      "Kunz Münch von Rosenberg and Anna acquired property rights with redemption provisions"
     ]
   },
   {
@@ -1390,15 +1364,7 @@
       "Else von Rosenberg could demand Einlager (hostage service) at Wertheim or Bischofsheim if payments were delayed"
     ]
   },
-  {
-    "source": "Zeitschr. für Gesch. des Oberrheins XI, S. 63 f. S. Ritsert Landschaden von Steinach im Archiv für hess. Gesch. XII, S. 437.",
-    "date": "1390-08-03",
-    "facts": [
-      "Concz Münch von Rosenberg received administrative control of Schloss Steynach from Bishop Niclas of Speyer",
-      "Anne von Rydern is spouse of Concz Münch von Rosenberg",
-      "Concz Münch von Rosenberg and Anne von Rydern documented the administrative transfer of multiple properties including Steynach, Hinterburg, and parts of Duelnheim"
-    ]
-  },
+
   {
     "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Or. Karlsr. (früher in Coph. 466,22.)",
     "date": "1390-12-14",
@@ -1429,14 +1395,7 @@
       "Hans von Rosenberg arbitrated a dispute between Elsbeth von Erligheim's family and Kloster Schöntal"
     ]
   },
-  {
-    "source": "Zeitschr. für Gesch. des Oberrheins XI, S. 65. Extr.",
-    "date": "1390-10-31",
-    "facts": [
-      "Concz Mönch von Rosenberg had issued a document on August 3, 1375 regarding Burg and Stadt Steinach",
-      "Bishop Nicolaus of Speyer confirmed the content of Concz Mönch von Rosenberg's 1375 document regarding Steinach"
-    ]
-  },
+
   {
     "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 466,51.",
     "date": "1390-10-31",
@@ -1522,20 +1481,7 @@
     "source": "Ritsert Landschaden von Steinach im Archiv für hess. Gesch. XII, S. 439. Extr.",
     "date": "1395-08-14",
     "facts": [
-      "Hans Münch zu Rosenberg pledged portions of Burg Schadeck to Eberhard von Niperg and others",
-      "Conz is father of Hans Münch zu Rosenberg",
-      "Conz had held part of Burg Schadeck",
-      "Eberhard von Rosenberg had pledged part of Burg Schadeck to Conz",
-      "Hans Münch zu Rosenberg inherited property rights that had been pledged by Eberhard von Rosenberg"
-    ]
-  },
-  {
-    "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Remling, Gesch. der Bisch. zu Speier 1,680 extr. (aus Lib. oblig. 2,189 des G. L. A. zu Karlsruhe).",
-    "date": "1395-08-30",
-    "facts": [
-      "Contz Mönich von Rosenberg served as Palatine arbitrator in a dispute between Bishop Nicolaus of Speyer and the cathedral chapter",
-      "Contz Mönich von Rosenberg worked alongside Wiprecht von Helmstat and Diether von Håndschuhsheim as arbitrator",
-      "Ruprecht appointed Contz Mönich von Rosenberg as one of the Palatine mediators"
+      "Eberhard von Rosenberg had pledged part of Burg Schadeck to Conz"
     ]
   },
   {

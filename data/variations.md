@@ -11,5 +11,5 @@ Elisabeth - Elspeth, Elsbet, Else, Els, Eilse, Elsbeth
 Erligheim - Erlikeim, Erlekeim, Erleheim, Erlekeim, Erleckein
 Senant - Synant
 lauda - ludin, luden, Lueden, Lawdaw, Lawden
-Uissigheim - Ussinkeim
+Uissigheim - Ussinkeim, Ußinkeim
 Niedeck - Nydeck
