@@ -10,21 +10,6 @@
     ]
   },
   {
-    "source": "Staatsarchiv Wertheim R-US 1323 März 17",
-    "date": "1323-03-17",
-    "facts": [
-      "Eberhard von Rosenberg sealed the transaction as witness",
-      "Arnold von Uissigheim is titled Ritter",
-      "Arnold von Uissigheim is spouse of Richtze",
-      "Heinrich von Uissigheim is son of Arnold von Uissigheim (Ritter)",
-      "Arnold von Uissigheim (younger) is son of Arnold von Uissigheim (Ritter)",
-      "Heinrich von Uissigheim is brother of Arnold von Uissigheim (younger)",
-      "Eberhard von Uissigheim is called von Rannenberg (shows name evolution to Rosenberg)",
-      "Eberhard von Uissigheim (von Rannenberg) is spouse of Elsebet",
-      "Uissigheim family renounced rights to Breitenau farm in favor of Bronnbach Abbey"
-    ]
-  },
-  {
     "source": "RIplus Regg. EB Mainz 1,1 n. 2009",
     "date": "1318-04-24",
     "facts": [
@@ -42,6 +27,21 @@
       "Johanniter Order possessed goods at Boxberg by 1321",
       "Boxberg served as a Johanniter commandery under Henneberg leadership",
       "Wertheim family had feudal rights over Johanniter goods at Boxberg (renounced in favor of Henneberg)"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Wertheim R-US 1323 März 17",
+    "date": "1323-03-17",
+    "facts": [
+      "Eberhard von Rosenberg sealed the transaction as witness",
+      "Arnold von Uissigheim is titled Ritter",
+      "Arnold von Uissigheim is spouse of Richtze",
+      "Heinrich von Uissigheim is son of Arnold von Uissigheim (Ritter)",
+      "Arnold von Uissigheim (younger) is son of Arnold von Uissigheim (Ritter)",
+      "Heinrich von Uissigheim is brother of Arnold von Uissigheim (younger)",
+      "Eberhard von Uissigheim is called von Rannenberg (shows name evolution to Rosenberg)",
+      "Eberhard von Uissigheim (von Rannenberg) is spouse of Elsebet",
+      "Uissigheim family renounced rights to Breitenau farm in favor of Bronnbach Abbey"
     ]
   },
   {
@@ -148,15 +148,6 @@
     "date": "1335-05-02",
     "facts": [
       "Eberhard von Rosenberg is named as a sealing witness on the sale of Scheuerberg and Neckarsulm by Engelhard von Weinsberg to Archbishop Balduin and the Mainz chapter"
-    ]
-  },
-  {
-    "source": "STAWÜ, MIB 4 fol. 126; OTTO, Regesten, Bd. 1,2, Nr. 5512, S. 545",
-    "date": "1346-10-25",
-    "facts": [
-      "Eberhard von Rosenberg is titled Ritter",
-      "Eberhard von Rosenberg served as guardian (Vormünder) of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Nicolas vom Steine, Johan von Randeck, and Johan von Beldersheim",
-      "Eberhard von Rosenberg participated in sale of Viernheim village to Johann (Schultheiß of Weinheim)"
     ]
   },
   {
@@ -337,6 +328,15 @@
     ]
   },
   {
+    "source": "STAWÜ, MIB 4 fol. 126; OTTO, Regesten, Bd. 1,2, Nr. 5512, S. 545",
+    "date": "1346-10-25",
+    "facts": [
+      "Eberhard von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg served as guardian (Vormünder) of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Nicolas vom Steine, Johan von Randeck, and Johan von Beldersheim",
+      "Eberhard von Rosenberg participated in sale of Viernheim village to Johann (Schultheiß of Weinheim)"
+    ]
+  },
+  {
     "source": "Schunk, Johann Peter: Codex diplomaticus exhibens chartas historiam medii aevi illustrantes",
     "date": "1347-02-23",
     "facts": [
@@ -400,38 +400,6 @@
     ]
   },
   {
-    "source": "43 No. 1213",
-    "date": "1479",
-    "facts": [
-      "Michael von Rosenberg is brother of Jörg von Rosenberg",
-      "Michael von Rosenberg is brother of Arnold von Rosenberg",
-      "Michael von Rosenberg is brother of Friedrich von Rosenberg",
-      "Jörg von Rosenberg is brother of Arnold von Rosenberg",
-      "Jörg von Rosenberg is brother of Friedrich von Rosenberg",
-      "Arnold von Rosenberg is brother of Friedrich von Rosenberg",
-      "Michael, Jörg, Arnold, Friedrich von Rosenberg granted Boxberg a Saturday weekly market",
-      "Rosenberg brothers held lordship over Boxberg by 1479"
-    ]
-  },
-  {
-    "source": "43 No. 1235",
-    "date": "1480-01-03",
-    "facts": [
-      "Family agreement among Michael, Jörg, Arnold, Friedrich von Rosenberg regarding Boxberg possessions",
-      "Rosenberg brothers divided Boxberg holdings among themselves in formal agreement"
-    ]
-  },
-  {
-    "source": "43 No. 1244 / 1245",
-    "date": "1561-07-24",
-    "facts": [
-      "Albrecht von Rosenberg ceded all rights to Boxberg to Elector Friedrich II",
-      "Agnatic consent by multiple Rosenberg kin recorded for Boxberg sale",
-      "Boxberg lordship ended for Rosenberg family in 1561",
-      ""
-    ]
-  },
-  {
     "source": "OTTO, Regesten, Bd. 1,2, Nr. 5849, S. 611",
     "date": "1350-06-18",
     "facts": [
@@ -485,6 +453,13 @@
     ]
   },
   {
+    "source": "Blue Q No. 13",
+    "date": "1356-01-19",
+    "facts": [
+      "Ulrich von Rosenberg witnessed Emperor Charles IV's confirmation of privileges for the house at Pillenreut in the Nuremberg forest"
+    ]
+  },
+  {
     "source": "Staatsarchiv Ludwigsburg B 250 U 70",
     "date": "1356-04-09",
     "facts": [
@@ -511,23 +486,6 @@
     ]
   },
   {
-    "source": "Blue Q No. 13",
-    "date": "1356-01-19",
-    "facts": [
-      "Ulrich von Rosenberg witnessed Emperor Charles IV's confirmation of privileges for the house at Pillenreut in the Nuremberg forest"
-    ]
-  },
-  {
-    "source": "Staatsarchiv Wertheim G-Rep. 10a Lade III-IV A Nr. 6",
-    "date": "1357-02-03",
-    "facts": [
-      "Margarete von Tungen was spouse of Eberhard von Rosenberg (deceased)",
-      "Eberhard von Rosenberg had received Uffingen village as a pledge from Graf Eberhart zu Wertheim",
-      "Margarete von Tungen had received Uffingen village as a pledge from Graf Eberhart zu Wertheim",
-      "Graf Eberhart zu Wertheim provided Dertingen and Waldbüttelbrunn as substitute properties for Uffingen"
-    ]
-  },
-  {
     "source": "Staatsarchiv Wertheim G-Rep. 5 Lade XI U Nr. 1",
     "date": "1357-01-31",
     "facts": [
@@ -538,6 +496,16 @@
       "Margareth von Thüngen sold people and rights at Schweigern to Graf Eberhart zu Wertheim and Gräfin Katherine",
       "Eberhard von Rosenberg retained church seats and Mannlehen at Schweigern",
       "Margareth von Thüngen retained church seats and Mannlehen at Schweigern"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Wertheim G-Rep. 10a Lade III-IV A Nr. 6",
+    "date": "1357-02-03",
+    "facts": [
+      "Margarete von Tungen was spouse of Eberhard von Rosenberg (deceased)",
+      "Eberhard von Rosenberg had received Uffingen village as a pledge from Graf Eberhart zu Wertheim",
+      "Margarete von Tungen had received Uffingen village as a pledge from Graf Eberhart zu Wertheim",
+      "Graf Eberhart zu Wertheim provided Dertingen and Waldbüttelbrunn as substitute properties for Uffingen"
     ]
   },
   {
@@ -568,13 +536,6 @@
     ]
   },
   {
-    "source": "Staatsarchiv Wertheim K-LRA 50 U 4",
-    "date": "1360-11-24",
-    "facts": [
-      "Eberhart von Rosenberg held property adjacent to the Bischofswinden forest"
-    ]
-  },
-  {
     "source": "Simon Grafen von Erbach Urkkb, Nr. 70; Simon, Gustav: Die Geschichte der Dynasten und Grafen zu Erbach und ihres Lande",
     "date": "1360-10-26",
     "facts": [
@@ -585,6 +546,13 @@
       "Hans von Rosenberg participated in deciding church patronage disputes over Bickenbach and Habitzheim",
       "Senant von Rosenbach participated in deciding church patronage disputes over Bickenbach and Habitzheim",
       "The arbitration involved church patronage rights at Mumelingen"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Wertheim K-LRA 50 U 4",
+    "date": "1360-11-24",
+    "facts": [
+      "Eberhart von Rosenberg held property adjacent to the Bischofswinden forest"
     ]
   },
   {
@@ -615,6 +583,17 @@
     ]
   },
   {
+    "source": "Aven. Urb. V. 6, 463, n. 412 mit Taxe 20; Aven. Urb. V. 4, 76 mit Taxe 18",
+    "date": "1363-03-03",
+    "facts": [
+      "Eberhard von Rosenberg is titled Kleriker of Würzburg Diocese",
+      "Eberhard von Rosenberg took possession of the parish church of Kocherthürn without priestly ordination",
+      "Pope Urban V cleansed Eberhard von Rosenberg of canonical irregularity regarding Kocherthürn church",
+      "Eberhard von Rosenberg was installed as parish priest of Kocherthürn church",
+      "Äbte of Sinsheim and Amorbach were commissioned to install Eberhard von Rosenberg at Kocherthürn"
+    ]
+  },
+  {
     "source": "Regesta sive rerum Boicarum autographa ad annum usque MCCC; RIplus Regg. EB Mainz 2.1 n. 1624",
     "date": "1363-04-14",
     "facts": [
@@ -631,17 +610,6 @@
     ]
   },
   {
-    "source": "Aven. Urb. V. 6, 463, n. 412 mit Taxe 20; Aven. Urb. V. 4, 76 mit Taxe 18",
-    "date": "1363-03-03",
-    "facts": [
-      "Eberhard von Rosenberg is titled Kleriker of Würzburg Diocese",
-      "Eberhard von Rosenberg took possession of the parish church of Kocherthürn without priestly ordination",
-      "Pope Urban V cleansed Eberhard von Rosenberg of canonical irregularity regarding Kocherthürn church",
-      "Eberhard von Rosenberg was installed as parish priest of Kocherthürn church",
-      "Äbte of Sinsheim and Amorbach were commissioned to install Eberhard von Rosenberg at Kocherthürn"
-    ]
-  },
-  {
     "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508. Karlsr. Coph. 464,33v",
     "date": "1363-10-12",
     "facts": [
@@ -652,32 +620,11 @@
     ]
   },
   {
-    "source": "Staatsarchiv Ludwigsburg B 503 I U 969",
-    "date": "1364-12-02",
-    "facts": [
-      "Elisabeth von Rosenberg is spouse of Konrad von Wittstadt gen. Wolper",
-      "Elisabeth von Rosenberg sold tithes at Oberwittstatt with her husband",
-      "Hans von Rosenberg is titled Ritter",
-      "Hans von Rosenberg served as surety for Elisabeth von Rosenberg's property sale",
-      "Hans von Rosenberg sealed the property transaction"
-    ]
-  },
-  {
     "source": "43 No. 5122",
     "date": "1364-02-12",
     "facts": [
       "Margarethe von Thüngen is widow of Eberhard von Rosenberg",
       "Margarethe von Thüngen purchased tithes at Schweigern from Hans von Klepsau and Elsbeth von Klepsau"
-    ]
-  },
-  {
-    "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1321; Hohenlohisches Urkundenbuch, Band III, 268,18",
-    "date": "1364-05-20",
-    "facts": [
-      "Bertold von Zwingenberg is Schwager (brother-in-law) of Eberhard von Rosenberg",
-      "Bertold von Zwingenberg is spouse of Eberhard von Rosenberg's sister",
-      "Eberhard von Rosenberg sealed Bertold von Zwingenberg's pledge to return to Lichteneck castle",
-      "Eberhard von Rosenberg served as surety for Bertold von Zwingenberg"
     ]
   },
   {
@@ -695,6 +642,27 @@
     ]
   },
   {
+    "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1321; Hohenlohisches Urkundenbuch, Band III, 268,18",
+    "date": "1364-05-20",
+    "facts": [
+      "Bertold von Zwingenberg is Schwager (brother-in-law) of Eberhard von Rosenberg",
+      "Bertold von Zwingenberg is spouse of Eberhard von Rosenberg's sister",
+      "Eberhard von Rosenberg sealed Bertold von Zwingenberg's pledge to return to Lichteneck castle",
+      "Eberhard von Rosenberg served as surety for Bertold von Zwingenberg"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Ludwigsburg B 503 I U 969",
+    "date": "1364-12-02",
+    "facts": [
+      "Elisabeth von Rosenberg is spouse of Konrad von Wittstadt gen. Wolper",
+      "Elisabeth von Rosenberg sold tithes at Oberwittstatt with her husband",
+      "Hans von Rosenberg is titled Ritter",
+      "Hans von Rosenberg served as surety for Elisabeth von Rosenberg's property sale",
+      "Hans von Rosenberg sealed the property transaction"
+    ]
+  },
+  {
     "source": "RIplus Regg. EB Mainz 2,1 n. 1917",
     "date": "1365-02-22",
     "facts": [
@@ -709,16 +677,6 @@
     ]
   },
   {
-    "source": "STAAM, monastery Kastl Certificates 177",
-    "date": "1367-07-26",
-    "facts": [
-      "Conrad von Rosenberg is titled Vitzthum zu Amberg",
-      "Conrad von Rosenberg issued legal judgment from the Landschranne zu Amberg",
-      "Conrad von Rosenberg adjudicated monastery rights regarding tithes at Hüllach",
-      "Conrad von Rosenberg used the Landgericht seal for official documents"
-    ]
-  },
-  {
     "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 464,104r.",
     "date": "1367-06-04",
     "facts": [
@@ -726,6 +684,16 @@
       "Conrad von Rosenberg worked with Heinrich (Landschreiber zu Amberg) in legal proceedings",
       "Conrad von Rosenberg successfully claimed goods at fortress Smydemulen through legal judgment",
       "Conrad von Rosenberg participated in proceedings at the Pfalzgraf's Landschranne zu Lyngenfelt"
+    ]
+  },
+  {
+    "source": "STAAM, monastery Kastl Certificates 177",
+    "date": "1367-07-26",
+    "facts": [
+      "Conrad von Rosenberg is titled Vitzthum zu Amberg",
+      "Conrad von Rosenberg issued legal judgment from the Landschranne zu Amberg",
+      "Conrad von Rosenberg adjudicated monastery rights regarding tithes at Hüllach",
+      "Conrad von Rosenberg used the Landgericht seal for official documents"
     ]
   },
   {
@@ -809,16 +777,6 @@
     ]
   },
   {
-    "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 464,156v. — Gegenbrief d. d. juli 24. Or. Karlsr. G. L. A. — Vgl. Widder I,421.",
-    "date": "1371-07-24",
-    "facts": [
-      "Conrad von Rosenberg is titled Vitzthum zu Heidelberg",
-      "Ruprecht pledged the house Minneberg to Conrad von Rosenberg",
-      "Conrad von Rosenberg received the house Minneberg which had previously been held by Ulrich Landschad",
-      "Conrad von Rosenberg participated in significant property transactions with Ruprecht"
-    ]
-  },
-  {
     "source": "BayHStA, Jesuit Order, College St. Paul Regensburg Certificates 824",
     "date": "1371-05-19",
     "facts": [
@@ -827,6 +785,16 @@
       "Konrad von Rosenberg adjudicated property rights at Hollenstein (Holenstein) bei Velburg",
       "Konrad von Rosenberg handled legal cases involving Heimsteuer (dowry/marriage portion) rights",
       "Konrad von Rosenberg sealed the court document as Vitzthum zu Amberg"
+    ]
+  },
+  {
+    "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 464,156v. — Gegenbrief d. d. juli 24. Or. Karlsr. G. L. A. — Vgl. Widder I,421.",
+    "date": "1371-07-24",
+    "facts": [
+      "Conrad von Rosenberg is titled Vitzthum zu Heidelberg",
+      "Ruprecht pledged the house Minneberg to Conrad von Rosenberg",
+      "Conrad von Rosenberg received the house Minneberg which had previously been held by Ulrich Landschad",
+      "Conrad von Rosenberg participated in significant property transactions with Ruprecht"
     ]
   },
   {
@@ -955,29 +923,24 @@
     ]
   },
   {
-    "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 532ᵇ,140ᵛ. Stuttg. Pf. Coph. 34ʳ.",
-    "date": "1381-12-07",
+    "source": "Monumenta Zollerana. 5",
+    "date": "1381-03-28",
     "facts": [
-      "Eberhard von Rosenberg transferred his quarter share of the fortress Rosenberg to the Pfalzgraf as a fief",
-      "Eberhard von Rosenberg held a quarter share of the Veste Rosenberg with forecourt",
-      "Eberhard von Rosenberg appeared at the Palatine court in Heidelberg for the property transfer"
+      "von Rosenberg family is described as den edeln von Rosenberg (the nobles von Rosenberg)",
+      "von Rosenberg family was in dispute with Herzog Albrecht von Österreich",
+      "von Rosenberg family disputes with Duke Albrecht involved the city of Esserdingen",
+      "von Rosenberg family disputes with Duke Albrecht involved prisoners and other matters",
+      "Burggraf Friedrich von Nürnberg was chosen as mediator for von Rosenberg family disputes",
+      "Landgraf Johannes vom Leuchtenberg was chosen as mediator for von Rosenberg family disputes",
+      "Herzog Albrecht von Österreich sought arbitration to resolve conflicts with von Rosenberg family"
     ]
   },
   {
-    "source": "Generallandesarchiv Karlsruhe 43 Nr. 1201",
-    "date": "1381-07-26",
+    "source": "STAAM, Kloster Kastl Urkunden 225",
+    "date": "1381-05-08",
     "facts": [
-      "Konrad von Rosenberg is titled Ritter",
-      "Konrad von Rosenberg purchased Burg and Stadt Boxberg from the Johanniter Order",
-      "Eberhard von Rosenberg is titled Ritter",
-      "Eberhard von Rosenberg purchased Burg and Stadt Boxberg from the Johanniter Order",
-      "Konrad von Rosenberg is titled Edelknecht",
-      "Arnold von Rosenberg is titled Edelknecht",
-      "Arnold von Rosenberg purchased Burg and Stadt Boxberg from the Johanniter Order",
-      "Engelhard von Rosenberg received rents from properties at Boxberg",
-      "Four von Rosenberg family members jointly purchased Boxberg from the Johanniter Order",
-      "The von Rosenberg purchasers committed to continue paying rents to Würzburg Domstift and Engelhard von Rosenberg",
-      "Dietrich Gyer (Ritter) served as surety for the Rosenberg family's Boxberg purchase"
+      "Friderich Vogt von Rosenberg sold 2 Huben at Ekkersuelt to Erhard den Loehleyn as free property",
+      "Friderich Vogt von Rosenberg's property sale was validated by the Landgericht at Sultzbach"
     ]
   },
   {
@@ -1045,24 +1008,54 @@
     ]
   },
   {
-    "source": "Monumenta Zollerana. 5",
-    "date": "1381-03-28",
+    "source": "Generallandesarchiv Karlsruhe 43 Nr. 1201",
+    "date": "1381-07-26",
     "facts": [
-      "von Rosenberg family is described as den edeln von Rosenberg (the nobles von Rosenberg)",
-      "von Rosenberg family was in dispute with Herzog Albrecht von Österreich",
-      "von Rosenberg family disputes with Duke Albrecht involved the city of Esserdingen",
-      "von Rosenberg family disputes with Duke Albrecht involved prisoners and other matters",
-      "Burggraf Friedrich von Nürnberg was chosen as mediator for von Rosenberg family disputes",
-      "Landgraf Johannes vom Leuchtenberg was chosen as mediator for von Rosenberg family disputes",
-      "Herzog Albrecht von Österreich sought arbitration to resolve conflicts with von Rosenberg family"
+      "Konrad von Rosenberg is titled Ritter",
+      "Konrad von Rosenberg purchased Burg and Stadt Boxberg from the Johanniter Order",
+      "Eberhard von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg purchased Burg and Stadt Boxberg from the Johanniter Order",
+      "Konrad von Rosenberg is titled Edelknecht",
+      "Arnold von Rosenberg is titled Edelknecht",
+      "Arnold von Rosenberg purchased Burg and Stadt Boxberg from the Johanniter Order",
+      "Engelhard von Rosenberg received rents from properties at Boxberg",
+      "Four von Rosenberg family members jointly purchased Boxberg from the Johanniter Order",
+      "The von Rosenberg purchasers committed to continue paying rents to Würzburg Domstift and Engelhard von Rosenberg",
+      "Dietrich Gyer (Ritter) served as surety for the Rosenberg family's Boxberg purchase"
     ]
   },
   {
-    "source": "STAAM, Kloster Kastl Urkunden 225",
-    "date": "1381-05-08",
+    "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 532ᵇ,140ᵛ. Stuttg. Pf. Coph. 34ʳ.",
+    "date": "1381-12-07",
     "facts": [
-      "Friderich Vogt von Rosenberg sold 2 Huben at Ekkersuelt to Erhard den Loehleyn as free property",
-      "Friderich Vogt von Rosenberg's property sale was validated by the Landgericht at Sultzbach"
+      "Eberhard von Rosenberg transferred his quarter share of the fortress Rosenberg to the Pfalzgraf as a fief",
+      "Eberhard von Rosenberg held a quarter share of the Veste Rosenberg with forecourt",
+      "Eberhard von Rosenberg appeared at the Palatine court in Heidelberg for the property transfer"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Ludwigsburg JL 425 Bd 2 Qu. 203",
+    "date": "1382-01-09",
+    "facts": [
+      "Eberhard Schenk von Roßberg is titled Ritter",
+      "Eberhard Schenk von Roßberg provided sworn testimony about the failed Mergentheim arbitration",
+      "Kunz d.J. von Uissigheim provided sworn testimony about the failed Mergentheim arbitration",
+      "Eberhard Schenk von Roßberg witnessed the failed arbitration between DM Konrad Rüdt and Mertin von Mergentheim",
+      "Kunz d.J. von Uissigheim witnessed the failed arbitration between DM Konrad Rüdt and Mertin von Mergentheim"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Wertheim R-US 1382 Februar 15",
+    "date": "1382-02-15",
+    "facts": [
+      "Eberhard von Rosenberg, gen. der Alte sold tithes, goods, and rents at Wagenbuch, Höhefeld, and Lindelbach to Kloster Bronnbach",
+      "Anna is spouse of Eberhard von Rosenberg, gen. der Alte",
+      "Eberhard von Rosenberg, gen. der Alte sealed the property sale document",
+      "Anna sealed the property sale document",
+      "Knebel von Huesen served as surety for Eberhard von Rosenberg's property sale",
+      "Fritz Stetenberg served as surety for Eberhard von Rosenberg's property sale",
+      "Peter Stetenberg is brother of Fritz Stetenberg",
+      "Peter Stetenberg served as surety for Eberhard von Rosenberg's property sale"
     ]
   },
   {
@@ -1081,28 +1074,12 @@
     ]
   },
   {
-    "source": "Staatsarchiv Wertheim R-US 1382 Februar 15",
-    "date": "1382-02-15",
+    "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 532b,7; 465,40 (woselbst inseriert). Stuttg. Pf. Coph. 40v. Acta Pal. 1,365.",
+    "date": "1382-05-20",
     "facts": [
-      "Eberhard von Rosenberg, gen. der Alte sold tithes, goods, and rents at Wagenbuch, Höhefeld, and Lindelbach to Kloster Bronnbach",
-      "Anna is spouse of Eberhard von Rosenberg, gen. der Alte",
-      "Eberhard von Rosenberg, gen. der Alte sealed the property sale document",
-      "Anna sealed the property sale document",
-      "Knebel von Huesen served as surety for Eberhard von Rosenberg's property sale",
-      "Fritz Stetenberg served as surety for Eberhard von Rosenberg's property sale",
-      "Peter Stetenberg is brother of Fritz Stetenberg",
-      "Peter Stetenberg served as surety for Eberhard von Rosenberg's property sale"
-    ]
-  },
-  {
-    "source": "Staatsarchiv Ludwigsburg JL 425 Bd 2 Qu. 203",
-    "date": "1382-01-09",
-    "facts": [
-      "Eberhard Schenk von Roßberg is titled Ritter",
-      "Eberhard Schenk von Roßberg provided sworn testimony about the failed Mergentheim arbitration",
-      "Kunz d.J. von Uissigheim provided sworn testimony about the failed Mergentheim arbitration",
-      "Eberhard Schenk von Roßberg witnessed the failed arbitration between DM Konrad Rüdt and Mertin von Mergentheim",
-      "Kunz d.J. von Uissigheim witnessed the failed arbitration between DM Konrad Rüdt and Mertin von Mergentheim"
+      "Conrad von Rosenberg served as co-sealer for Johann Graf von Wertheim's sale of half of Lewenstein lordship to the Pfalzgraf",
+      "Conrad von Rosenberg sealed the document alongside Heinrich Graf von Spanheim and Eberhard von Hartheim",
+      "Conrad von Rosenberg participated in a major property transaction involving the Pfalzgraf and regional nobility"
     ]
   },
   {
@@ -1114,15 +1091,6 @@
       "Eberhard Schenk von Rosseberg sealed the arbitration agreement resolving disputes over Mergentheim citizens",
       "Eberhard Schenk von Rosseberg participated in arbitrating disputes involving the Teutonic Order and Hohenlohe family",
       "Eberhard Schenk von Rosseberg worked alongside Graf Gottfried zu Rieneck and Graf Johannes zu Wertheim as arbitrator"
-    ]
-  },
-  {
-    "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 532b,7; 465,40 (woselbst inseriert). Stuttg. Pf. Coph. 40v. Acta Pal. 1,365.",
-    "date": "1382-05-20",
-    "facts": [
-      "Conrad von Rosenberg served as co-sealer for Johann Graf von Wertheim's sale of half of Lewenstein lordship to the Pfalzgraf",
-      "Conrad von Rosenberg sealed the document alongside Heinrich Graf von Spanheim and Eberhard von Hartheim",
-      "Conrad von Rosenberg participated in a major property transaction involving the Pfalzgraf and regional nobility"
     ]
   },
   {
@@ -1154,12 +1122,27 @@
     ]
   },
   {
-    "source": "Hohenlohe-Zentralarchiv Neuenstein GA 15 Nr. 1581",
-    "date": "1385-04-25",
+    "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bd 1",
+    "date": "1385",
     "facts": [
-      "Konrad von Rosenberg served as sealer for the Weinsberg brothers' debt agreement with Fürderer von Waldeck",
-      "Konrad von Rosenberg sealed the document alongside Eberhard Schenk zu Erbach, Vitztum Eberhard von Neipperg, and Albrecht von Hirschhorn",
-      "Konrad von Rosenberg participated in guaranteeing a major financial transaction involving castle properties at Guttenberg and Steinsfeld"
+      "Eberhard von Rosenberg arbitrated disputes between Eberhard d.Ä. von Rosenberg and Hans Pfahl",
+      "Eberhard d.Ä. von Rosenberg was in dispute with Hans Pfahl over rents from a farm at Rosenberg",
+      "Eberhard von Rosenberg resolved property disputes involving rents from a Hof zu Rosenberg"
+    ]
+  },
+  {
+    "source": "Der Schüpfergrund und ſeine Beſitzer.",
+    "date": "1385",
+    "facts": [
+      "Hans von Rosenberg sold Veste Urhausen with his wife and brother",
+      "Anna von Kronenberg is spouse of Hans von Rosenberg",
+      "Götz is brother of Hans von Rosenberg",
+      "Götz participated in the sale of Veste Urhausen",
+      "Eberhard von Rosenberg is titled Ritter",
+      "Eberhard von Rosenberg is titled Vogt zu Lauda",
+      "Eberhard von Rosenberg served as surety for the sale of Veste Urhausen",
+      "Conz von Rosenberg is resident at Boxberg",
+      "Conz von Rosenberg served as surety for the sale of Veste Urhausen"
     ]
   },
   {
@@ -1185,37 +1168,12 @@
     ]
   },
   {
-    "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bd 1",
-    "date": "1385",
+    "source": "Hohenlohe-Zentralarchiv Neuenstein GA 15 Nr. 1581",
+    "date": "1385-04-25",
     "facts": [
-      "Eberhard von Rosenberg arbitrated disputes between Eberhard d.Ä. von Rosenberg and Hans Pfahl",
-      "Eberhard d.Ä. von Rosenberg was in dispute with Hans Pfahl over rents from a farm at Rosenberg",
-      "Eberhard von Rosenberg resolved property disputes involving rents from a Hof zu Rosenberg"
-    ]
-  },
-  {
-    "source": "Der Schüpfergrund und ſeine Beſitzer.",
-    "date": "1385",
-    "facts": [
-      "Hans von Rosenberg sold Veste Urhausen with his wife and brother",
-      "Anna von Kronenberg is spouse of Hans von Rosenberg",
-      "Götz is brother of Hans von Rosenberg",
-      "Götz participated in the sale of Veste Urhausen",
-      "Eberhard von Rosenberg is titled Ritter",
-      "Eberhard von Rosenberg is titled Vogt zu Lauda",
-      "Eberhard von Rosenberg served as surety for the sale of Veste Urhausen",
-      "Conz von Rosenberg is resident at Boxberg",
-      "Conz von Rosenberg served as surety for the sale of Veste Urhausen"
-    ]
-  },
-  {
-    "source": "Monumenta Boica. 44 = Collectio nova 17, Monumenta Episcopatus Wirziburgensis",
-    "date": "1386-12-21",
-    "facts": [
-      "von Rosenberg family held Boxberg and had obligations regarding annual rents to Würzburg Cathedral",
-      "von Rosenberg family or their heirs needed to provide documents regarding obligations at Boxberg",
-      "von Rosenberg family had annual obligations of rents from the house and town of Boxberg",
-      "Johanniter Order needed to obtain proper documentation from von Rosenberg family regarding Boxberg rents"
+      "Konrad von Rosenberg served as sealer for the Weinsberg brothers' debt agreement with Fürderer von Waldeck",
+      "Konrad von Rosenberg sealed the document alongside Eberhard Schenk zu Erbach, Vitztum Eberhard von Neipperg, and Albrecht von Hirschhorn",
+      "Konrad von Rosenberg participated in guaranteeing a major financial transaction involving castle properties at Guttenberg and Steinsfeld"
     ]
   },
   {
@@ -1229,14 +1187,13 @@
     ]
   },
   {
-    "source": "RIplus Regg. Pfalzgrafen 1 n. 4741: Karlsr. Copb. 465,101 (in die innoc.)",
-    "date": "1387-12-28",
+    "source": "Monumenta Boica. 44 = Collectio nova 17, Monumenta Episcopatus Wirziburgensis",
+    "date": "1386-12-21",
     "facts": [
-      "Else von Erlekeim is widow of Eberhard von Rosenberg",
-      "Else von Erlekeim received half of Boxberg and other feudal goods on behalf of her minor sons",
-      "Eberhard von Rosenberg had minor sons with Else von Erlekeim",
-      "Ruprecht granted fiefs to Else von Erlekeim as guardian of her minor sons",
-      "Eberhard von Rosenberg was deceased by 1387"
+      "von Rosenberg family held Boxberg and had obligations regarding annual rents to Würzburg Cathedral",
+      "von Rosenberg family or their heirs needed to provide documents regarding obligations at Boxberg",
+      "von Rosenberg family had annual obligations of rents from the house and town of Boxberg",
+      "Johanniter Order needed to obtain proper documentation from von Rosenberg family regarding Boxberg rents"
     ]
   },
   {
@@ -1246,17 +1203,6 @@
       "Anna von Rosenberg is spouse of Cuntz von Hardheim",
       "Anna von Rosenberg sold interest and rents at Bütthard to Bronnbach monastery with her husband",
       "Cuntz von Hardheim is spouse of Anna von Rosenberg"
-    ]
-  },
-  {
-    "source": "Generallandesarchiv Karlsruhe 43 Nr. 5662",
-    "date": "1387-06-22",
-    "facts": [
-      "Eberhard von Rosenberg died under church ban (Kirchenbann)",
-      "Eberhard von Rosenberg was killed by his enemies",
-      "Eberhard von Rosenberg's heirs came to agreement with Bishop Gerhard of Würzburg about disputed tithes at Wölchingen",
-      "Bishop Gerhard of Würzburg permitted church burial of Eberhard von Rosenberg after settlement with his heirs",
-      "Eberhard von Rosenberg had been in dispute with the Bishop of Würzburg over tithes at Wölchingen"
     ]
   },
   {
@@ -1292,6 +1238,17 @@
     ]
   },
   {
+    "source": "Generallandesarchiv Karlsruhe 43 Nr. 5662",
+    "date": "1387-06-22",
+    "facts": [
+      "Eberhard von Rosenberg died under church ban (Kirchenbann)",
+      "Eberhard von Rosenberg was killed by his enemies",
+      "Eberhard von Rosenberg's heirs came to agreement with Bishop Gerhard of Würzburg about disputed tithes at Wölchingen",
+      "Bishop Gerhard of Würzburg permitted church burial of Eberhard von Rosenberg after settlement with his heirs",
+      "Eberhard von Rosenberg had been in dispute with the Bishop of Würzburg over tithes at Wölchingen"
+    ]
+  },
+  {
     "source": "Hennebergisches Urkundenbuch. 3, Die Urkunden des gemeinschaftlichen Hennebergischen Archivs",
     "date": "1387-09-23",
     "facts": [
@@ -1301,6 +1258,17 @@
       "Engelhart von Rosenberg joined a tournament society of 137 counts, lords, knights, and squires",
       "Arnolt von Rosenberg joined a tournament society of 137 counts, lords, knights, and squires",
       "Five von Rosenberg family members participated in the Schweinfurt tournament society"
+    ]
+  },
+  {
+    "source": "RIplus Regg. Pfalzgrafen 1 n. 4741: Karlsr. Copb. 465,101 (in die innoc.)",
+    "date": "1387-12-28",
+    "facts": [
+      "Else von Erlekeim is widow of Eberhard von Rosenberg",
+      "Else von Erlekeim received half of Boxberg and other feudal goods on behalf of her minor sons",
+      "Eberhard von Rosenberg had minor sons with Else von Erlekeim",
+      "Ruprecht granted fiefs to Else von Erlekeim as guardian of her minor sons",
+      "Eberhard von Rosenberg was deceased by 1387"
     ]
   },
   {
@@ -1327,17 +1295,6 @@
     ]
   },
   {
-    "source": "Staatsarchiv Wertheim G-Rep. 100 U 1389 Febr. 21",
-    "date": "1389-02-21",
-    "facts": [
-      "Engelhard von Rosenberg conducted financial transactions regarding serfs at Hardheim",
-      "Anne Ruchs is spouse of Engelhard von Rosenberg",
-      "Eberhard is son of Engelhard von Rosenberg and Anne Ruchs",
-      "Engelhard von Rosenberg held serfs at Hardheim",
-      "Engelhard von Rosenberg, Anne Ruchs, and their son Eberhard participated in property transactions with Eberhard von Hardheim"
-    ]
-  },
-  {
     "source": "StA Wü, MIB 11 fol. 203",
     "date": "1389-01-18",
     "facts": [
@@ -1354,6 +1311,17 @@
     ]
   },
   {
+    "source": "Staatsarchiv Wertheim G-Rep. 100 U 1389 Febr. 21",
+    "date": "1389-02-21",
+    "facts": [
+      "Engelhard von Rosenberg conducted financial transactions regarding serfs at Hardheim",
+      "Anne Ruchs is spouse of Engelhard von Rosenberg",
+      "Eberhard is son of Engelhard von Rosenberg and Anne Ruchs",
+      "Engelhard von Rosenberg held serfs at Hardheim",
+      "Engelhard von Rosenberg, Anne Ruchs, and their son Eberhard participated in property transactions with Eberhard von Hardheim"
+    ]
+  },
+  {
     "source": "StA Wü, MIB 11 fol. 202 [01]",
     "date": "1389-03-28",
     "facts": [
@@ -1362,26 +1330,6 @@
       "Archbishop Adolf of Mainz owed Else von Rosenberg money in Frankfurter currency",
       "Else von Rosenberg had financial arrangements with multiple noble sureties including Ditter Rüdt and Egen Seman",
       "Else von Rosenberg could demand Einlager (hostage service) at Wertheim or Bischofsheim if payments were delayed"
-    ]
-  },
-
-  {
-    "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Or. Karlsr. (früher in Coph. 466,22.)",
-    "date": "1390-12-14",
-    "facts": [
-      "Cunrad von Rosenberg was involved in agreements regarding the Pfalzgraf's debt",
-      "Cunrad von Rosenberg participated in financial negotiations involving Jewish creditors",
-      "Cunrad von Rosenberg worked with Johann von Venningen and Hanemann von Sickingen in debt arrangements"
-    ]
-  },
-  {
-    "source": "Generallandesarchiv Karlsruhe 43 Nr. 1191",
-    "date": "1390-06-05",
-    "facts": [
-      "Engelhard von Rosenberg renounced claims against the Johanniter Order regarding the Boxberg purchase",
-      "Eberhard is son of Engelhard von Rosenberg",
-      "Eberhard renounced claims against the Johanniter Order regarding the Boxberg purchase",
-      "Engelhard von Rosenberg and his son Eberhard renounced claims regarding a Burggut at the Hof zu Gräfingen"
     ]
   },
   {
@@ -1395,7 +1343,16 @@
       "Hans von Rosenberg arbitrated a dispute between Elsbeth von Erligheim's family and Kloster Schöntal"
     ]
   },
-
+  {
+    "source": "Generallandesarchiv Karlsruhe 43 Nr. 1191",
+    "date": "1390-06-05",
+    "facts": [
+      "Engelhard von Rosenberg renounced claims against the Johanniter Order regarding the Boxberg purchase",
+      "Eberhard is son of Engelhard von Rosenberg",
+      "Eberhard renounced claims against the Johanniter Order regarding the Boxberg purchase",
+      "Engelhard von Rosenberg and his son Eberhard renounced claims regarding a Burggut at the Hof zu Gräfingen"
+    ]
+  },
   {
     "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 466,51.",
     "date": "1390-10-31",
@@ -1404,6 +1361,15 @@
       "Conrad von Rosenberg received the Veste Maner as a fief from Ruprecht",
       "Conrad von Rosenberg's fief of Veste Maner included the right of female succession (weiblichen Lehenfolge)",
       "Ruprecht granted Conrad von Rosenberg feudal rights with special inheritance provisions"
+    ]
+  },
+  {
+    "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Or. Karlsr. (früher in Coph. 466,22.)",
+    "date": "1390-12-14",
+    "facts": [
+      "Cunrad von Rosenberg was involved in agreements regarding the Pfalzgraf's debt",
+      "Cunrad von Rosenberg participated in financial negotiations involving Jewish creditors",
+      "Cunrad von Rosenberg worked with Johann von Venningen and Hanemann von Sickingen in debt arrangements"
     ]
   },
   {
@@ -1433,6 +1399,15 @@
       "Conrad von Rosenberg is titled Vitztum zu Heidelberg",
       "Conrad von Rosenberg witnessed the sale of wine tithes at Winzingen and Gymeltingen to Stift Neustadt",
       "Conrad von Rosenberg served as witness alongside Bishop Nicolaus of Speyer, Gerhard von Katzenelnbogen, Heinrich Graf von Spanheim, and Hans vom Hirschhorn"
+    ]
+  },
+  {
+    "source": "Staatsarchiv Ludwigsburg B 186 U 493",
+    "date": "1393-05-05",
+    "facts": [
+      "Eberhard von Rosenberg served as Schirmer (protector/guarantor) in a major legal judgment involving Hall citizens' properties",
+      "Eberhard von Rosenberg was listed among high-ranking nobles guaranteeing enforcement of a Landgericht judgment",
+      "Eberhard von Rosenberg served alongside counts, lords, and other prominent nobles as guarantor for legal proceedings"
     ]
   },
   {
@@ -1469,12 +1444,15 @@
     ]
   },
   {
-    "source": "Staatsarchiv Ludwigsburg B 186 U 493",
-    "date": "1393-05-05",
+    "source": "RIplus Regg. Count Palatine 1 n. 5588, Karlsr. Copb. 466,127v.",
+    "date": "1395-01-27",
     "facts": [
-      "Eberhard von Rosenberg served as Schirmer (protector/guarantor) in a major legal judgment involving Hall citizens' properties",
-      "Eberhard von Rosenberg was listed among high-ranking nobles guaranteeing enforcement of a Landgericht judgment",
-      "Eberhard von Rosenberg served alongside counts, lords, and other prominent nobles as guarantor for legal proceedings"
+      "Arnold von Rosenberg is son of Eberhard von Rosenberg",
+      "Eberhard von Rosenberg is son of Eberhard von Rosenberg",
+      "Eilse von Erlikeim is mother of Arnold and Eberhard von Rosenberg",
+      "Eilse von Erlikeim is widow of Eberhard von Rosenberg",
+      "Arnold and Eberhard von Rosenberg established a Wittum (widow's dower) for their mother Eilse von Erlikeim",
+      "Ruprecht granted permission for the widow's dower arrangement on a quarter of Boxberg"
     ]
   },
   {
@@ -1495,18 +1473,6 @@
     ]
   },
   {
-    "source": "RIplus Regg. Count Palatine 1 n. 5588, Karlsr. Copb. 466,127v.",
-    "date": "1395-01-27",
-    "facts": [
-      "Arnold von Rosenberg is son of Eberhard von Rosenberg",
-      "Eberhard von Rosenberg is son of Eberhard von Rosenberg",
-      "Eilse von Erlikeim is mother of Arnold and Eberhard von Rosenberg",
-      "Eilse von Erlikeim is widow of Eberhard von Rosenberg",
-      "Arnold and Eberhard von Rosenberg established a Wittum (widow's dower) for their mother Eilse von Erlikeim",
-      "Ruprecht granted permission for the widow's dower arrangement on a quarter of Boxberg"
-    ]
-  },
-  {
     "source": "D Nr. 436",
     "date": "1397-04-29",
     "facts": [
@@ -1516,16 +1482,6 @@
       "Arnold and Eberhard von Rosenberg held the village of Schweigern",
       "Arnold and Eberhard von Rosenberg received the right to establish Schultheißen and Schöffen in Schweigern",
       "Arnold and Eberhard von Rosenberg received the right to hold a Halsgericht (high court) with capital punishment in Schweigern"
-    ]
-  },
-  {
-    "source": "Generallandesarchiv Karlsruhe 43 Nr. 4113",
-    "date": "1398-04-11",
-    "facts": [
-      "Engelhard von Rosenberg d. Ä. is titled Edelknecht",
-      "Engelhard von Rosenberg d. Ä. had royal subjects (Königsleute) pledged to him by the Empire",
-      "Engelhard von Rosenberg d. Ä. transferred the royal subjects to Pfalzgraf Ruprecht",
-      "Pfalzgraf Ruprecht redeemed the royal subjects from Engelhard von Rosenberg d. Ä. for the same sum they were originally pledged"
     ]
   },
   {
@@ -1539,6 +1495,16 @@
     ]
   },
   {
+    "source": "Generallandesarchiv Karlsruhe 43 Nr. 4113",
+    "date": "1398-04-11",
+    "facts": [
+      "Engelhard von Rosenberg d. Ä. is titled Edelknecht",
+      "Engelhard von Rosenberg d. Ä. had royal subjects (Königsleute) pledged to him by the Empire",
+      "Engelhard von Rosenberg d. Ä. transferred the royal subjects to Pfalzgraf Ruprecht",
+      "Pfalzgraf Ruprecht redeemed the royal subjects from Engelhard von Rosenberg d. Ä. for the same sum they were originally pledged"
+    ]
+  },
+  {
     "source": "Monumenta Zollerana. 6, Urkunden der Fränkischen Linie",
     "date": "1399-05-01",
     "facts": [
@@ -1546,6 +1512,37 @@
       "Eberhard von Rosenberg served as arbitrator in a dispute between Conrad von Hartheim and Gotze von Hedekeim",
       "Engelhard and Eberhard von Rosenberg worked together with Heintze Knebel von Bretzekeim as co-arbitrators",
       "Engelhard and Eberhard von Rosenberg resolved a dispute involving a horse loan in the service of the Burggraf of Nuremberg"
+    ]
+  },
+  {
+    "source": "43 No. 1213",
+    "date": "1479",
+    "facts": [
+      "Michael von Rosenberg is brother of Jörg von Rosenberg",
+      "Michael von Rosenberg is brother of Arnold von Rosenberg",
+      "Michael von Rosenberg is brother of Friedrich von Rosenberg",
+      "Jörg von Rosenberg is brother of Arnold von Rosenberg",
+      "Jörg von Rosenberg is brother of Friedrich von Rosenberg",
+      "Arnold von Rosenberg is brother of Friedrich von Rosenberg",
+      "Michael, Jörg, Arnold, Friedrich von Rosenberg granted Boxberg a Saturday weekly market",
+      "Rosenberg brothers held lordship over Boxberg by 1479"
+    ]
+  },
+  {
+    "source": "43 No. 1235",
+    "date": "1480-01-03",
+    "facts": [
+      "Family agreement among Michael, Jörg, Arnold, Friedrich von Rosenberg regarding Boxberg possessions",
+      "Rosenberg brothers divided Boxberg holdings among themselves in formal agreement"
+    ]
+  },
+  {
+    "source": "43 No. 1244 / 1245",
+    "date": "1561-07-24",
+    "facts": [
+      "Albrecht von Rosenberg ceded all rights to Boxberg to Elector Friedrich II",
+      "Agnatic consent by multiple Rosenberg kin recorded for Boxberg sale",
+      "Boxberg lordship ended for Rosenberg family in 1561"
     ]
   }
 ]
