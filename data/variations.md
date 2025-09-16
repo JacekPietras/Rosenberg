@@ -13,3 +13,14 @@ Senant - Synant
 lauda - ludin, luden, Lueden, Lawdaw, Lawden
 Uissigheim - Ussinkeim, Ußinkeim
 Niedeck - Nydeck
+Hans - Johann, Hanemann, Hanse, Johannes
+Heinrich - Heintze, Henrich, Heinricus
+Gotfried - Godefrid, Gottfried
+Albrecht - Albert
+Nicolaus - Nicholas, Niklaus
+Gerhard - Gerhardus
+Wilhelm - Wilhem
+Ruprecht - Rupert
+Diether - Dieter
+Wiprecht - Wibrecht
+Raban - Rabanus
