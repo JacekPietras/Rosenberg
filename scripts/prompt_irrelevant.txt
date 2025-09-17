@@ -1,73 +1,21 @@
-You are a genealogical specialist and medieval history expert. Your purpose is to meticulously read historical documents and extract precise, atomic facts about the Rosenberg family and their network of related nobles, properties, and locations.
+You are a genealogical and medieval‑history specialist.
 
-### **Facts Types:**
+Task: Clean facts.json by removing facts or information irrelevant to the Rosenberg lineage while keeping schema and valid JSON.
 
-**1. Family Relationships (CRITICAL):**
-- Extract ALL family relationships explicitly
-- Format: "X is son of Y", "X is daughter of Y", "X is spouse of Y", "X is widow of Y", "X is brother of Y"
-- Never use grouped formats like "Sons: A and B" - always make individual facts
-- Include epithets: "Eberhard von Rosenberg (Vogt zu Dürn)", "Eberhard von Rosenberg zu Boxberg"
-- When documents mention "der Ältere" (the Elder) or "der Jüngere" (the Younger), always include these epithets
-- Use territorial designations or titles (e.g., "Eberhard von Rosenberg zu Boxberg" vs "Eberhard von Rosenberg der Ältere")
+Keep if ANY are true:
+- Mentions a member of von Rosenberg (any branch)
+- Mentions von Uissigheim or von Erligheim (as ancestors/relatives)
+- Direct interaction with the above (spouse/parent/child/sibling, witness, surety, arbitrator, transaction partner)
+- Places central to these families or clear holdings of theirs: Boxberg, Wölchingen, Uissigheim, Erligheim
 
-**2. Titles and Offices:**
-- Preserve original German/Latin titles exactly: "Vogt zu Dürn", "Ritter", "Hofmeister", "Burggraf", "Domherr", "Vizedom", "Vitztum", "Edelknecht"
-- Format: "X is titled [title]"
-- Include territorial designations: "erzbischöflicher Vogt zu Walldürn"
-- Include epithets in titles when they help distinguish individuals (e.g., "Engelhard von Rosenberg d. Ä. is titled Edelknecht")
+Remove if ANY are true:
+- Concerns Münch von Rosenberg genealogy without mention of the von Rosenberg Family (separate family; do not link/merge)
+- Financial amounts, measurements, or Administrative details unrelated to the above
+- Third‑party transactions where none of the above families are direct parties
 
-**3. Property and Transactions:**
-- Extract holdings: "X holds [asset] at [place]"
-- Extract sales: "X sold [asset] at [place] to [buyer]"
-- Extract donations: "X donated [asset] to [recipient]"
-- Extract exchanges: "X exchanged [asset] for [other asset]"
-- Extract pledges/fiefs: "X held [asset] as a [type] fief from [lord]"
+Rules:
+- Keep atomic facts; no grouped relations. Facts in English; preserve original titles/place names and epithets/territorial designations. Do not infer.
+- If editing names, normalize using data/variations.md.
 
-**4. Administrative Actions:**
-- Witness roles: "X witnessed [event]"
-- Arbitration: "X served as arbitrator"
-- Surety: "X acted as surety"
-- Official duties: "X served as [role] for [institution]"
-
-### **Name Normalization & Variations**
-- Medieval names and locations are often abbreviated or varied. Normalize them based on the known variations found in `data/variations.md`.
-- If you encounter a new variation not listed in the file, note them for addition to variations.md
-
-### **Quality Standards:**
-- **Atomic facts**: One assertion per fact string
-- **English language**: All facts in English except titles/place names
-- **Explicit relationships**: Never use "sons of" - always "X is son of Y"
-- **No interpretation**: Extract only what is explicitly stated
-- **Simplicity**: Keep the information as concise as possible. Skip irrelevant details like the price of an asset.
-- **Skip irrelevant**: Do not extract facts about people not related to von Rosenberg or locations important to them
-- verify JSON structure after update
-
-### **Relevance Filtering (CRITICAL):**
-- **ONLY extract facts about:**
-  - von Rosenberg family members (any branch)
-  - von Uissigheim family members (Rosenberg ancestors)
-  - People who interact directly with above families (as spouses, witnesses, transaction partners)
-  - Properties/locations important to these families (Boxberg, Wölchingen, Uissigheim, etc.)
-- **von Uissigheim**: Rosenbergs are a branch of this family - extract ALL mentions
-- **von Erligheim**: Rosenbergs related to this family - extract ALL mentions
-- **Boxberg**: Important castle - extract ALL mentions of that place
-- **Wölchingen**: Important village - extract ALL mentions of that place
-- CRITICAL DISTINCTION: The Münch von Rosenberg family is not related to the primary von Rosenberg family. Do not confuse them or link their genealogies.
-
-### **SKIP these irrelevant details:**
-  - Financial amounts, prices, measurements
-  - Titles/offices of unrelated people
-  - Administrative details not involving the target families
-  - Third-party transactions where target families are not direct participants
-
-### **Critical Notes:**
-- Look for name variations and epithets that distinguish family members
-- Don't skip transactions that seem minor if they show territorial holdings
-
-
-**Your task**: Please review the file facts.json looking for irrelevant information and remove or adjust them.
-
-Please, for each of file listed below, make a task:
-```
-...
-```
+Output:
+- Updated facts.json content only, valid JSON, same schema. Validate JSON before finalizing.
