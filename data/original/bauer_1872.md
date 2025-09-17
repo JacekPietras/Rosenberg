@@ -341,7 +341,3 @@ Doch erlöste ihn der Tod aus allen Nöthen und zwar ist er, wie sein Denkmal in
 1571/72 Acta die von Georg Christof und Stefan Rüdt v. Collenberg, Gebrüder, an die Rosenbergischen Allodialerben geforderten und wirklich abgetragenen 1200 fl. betreffend von wegen ihrer Mutter Ruffina, ex post Albrechts v. Rosenberg, Ritters, Hausfrau.
 
 Allodialerben waren 4 Geschwister v. Lagen, worunter 3 Schwestern ihre Ansprüche den Familien v. Stetten u. s. w. zubrachten; von Limburg erhielt Eberhard v. Stetten das heimgefallene Lehen zu Sachsenflur; die Hohenloheschen Lehen empfingen die Eigenthumserben zusammen, sammt der von den Herrn v. Dottenheim erkauften Hälfte von Schüpf, ein Kunteslehen. Dagegen succedirten in der alt-Rosenbergischen Hälfte von Schüpf und Zubehörden, in den pfälzischen Lehen (Epplingen, Sachsenflur und Dainbach zum Theil) und im Hohenloheschen Theil von Edelsingen sammt Kirchätzen 1563 wie auch in den Würzburgischen Lehen die Agnaten, theils Hans Eucharius v. Rosenberg zu Rosenberg, theils die Vettern zu Haldenbergstetten.
-
-
-## 
-
