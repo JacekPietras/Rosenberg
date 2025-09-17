@@ -91,7 +91,7 @@ flowchart TD
 
 %% -- Connections --
 
-%% Parent-to-child connections (20 links total, indices 0-19)
+%% Parent-to-child connections
     p1_eberhard_v --- p2_eberhard_r & p2_conrad_i & p2_jutta & p2_fritz_family & p2_kraft_albert
     p1_arnold_1260 --- p2_arnold_u
     p1_konrad_1300 --- p2_konrad_j_family
@@ -102,7 +102,7 @@ flowchart TD
     p2_konrad_j_family --- p3_arnold_t & p3_juta_1311 & p3_guta
     p2_arnold_a_family --- p3_arnold_j_family & p3_heinrich & p3_erkinger & p3_eberhard_rann
 
-%% Children to Lineage connections (12 links total, indices 20-31)
+%% Children to Lineage connections
     p3_eberhard_2 & p3_konrad_1305 --- line_aeltere
     p3_eberhard_1305 & p3_juta_1305 & p3_arnold_1305 --- line_juengere
     p3_arnold_t & p3_juta_1311 & p3_guta --- uissigheim_1
@@ -111,7 +111,5 @@ flowchart TD
 %% -- Styling --
     classDef noborder stroke:none,fill:transparent
     class line_aeltere,line_juengere,uissigheim_1,uissigheim_2 noborder
-
-%%  Make the 12 lineage connection lines invisible**
     linkStyle 20,21,22,23,24,25,26,27,28,29,30,31 stroke-width:0px
 ```
