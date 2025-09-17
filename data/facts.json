@@ -2371,7 +2371,7 @@
       "Hans Melchior von Rosenberg ceded his Anteil an der Bastei zu Boxberg to Kurfürst Ludwig von der Pfalz and Pfalzgraf Friedrich",
       "Hans Melchior von Rosenberg ceded his Anteil am Städtlein zu Boxberg samt Zubehör to Kurfürst Ludwig von der Pfalz and Pfalzgraf Friedrich",
       "Ludwig von der Pfalz is titled Kurfürst",
-      "Friedrich is titled Pfalzgraf",
+      "Friedrich von der Pfalz is titled Pfalzgraf",
       "Ludwig von der Pfalz is Lehnsherr of Hans Melchior von Rosenberg",
       "Pfalzgraf Friedrich is Lehnsherr of Hans Melchior von Rosenberg",
       "Hans Melchior von Rosenberg cited Krankheit as a reason for ceding his Anteil"
@@ -2382,12 +2382,11 @@
     "date": "1523-06-20",
     "facts": [
       "Ludwig von der Pfalz is titled Kurfürst",
-      "Botschafter, Hauptleute und Räte des Schwäbischen Bundes were assembled in Mergentheim",
-      "Botschafter, Hauptleute und Räte des Schwäbischen Bundes ceded Stadt Boxberg as rechtes Eigentum to Kurfürst Ludwig von der Pfalz",
-      "Botschafter, Hauptleute und Räte des Schwäbischen Bundes ceded Schloss Boxberg as rechtes Eigentum to Kurfürst Ludwig von der Pfalz",
-      "The Schwäbischer Bund had erobert Stadt Boxberg",
-      "The Schwäbischer Bund had erobert Schloss Boxberg",
-      "The Schwäbischer Bund ausgebrannt the Schloss Boxberg"
+      "The Schwäbischer Bund ceded Stadt Boxberg as rechtes Eigentum to Kurfürst Ludwig von der Pfalz",
+      "The Schwäbischer Bund ceded Schloss Boxberg as rechtes Eigentum to Kurfürst Ludwig von der Pfalz",
+      "The Schwäbischer Bund captured Stadt Boxberg",
+      "The Schwäbischer Bund captured Schloss Boxberg",
+      "The Schwäbischer Bund burned the Schloss Boxberg"
     ]
   },
   {
@@ -2395,11 +2394,7 @@
     "date": "1523-07-30",
     "facts": [
       "Ludwig von der Pfalz is titled Kurfürst",
-      "Bürgermeister und Rat der Reichsstadt Nördlingen acted as representatives of the Schwäbischer Bund",
-      "Kurfürst Ludwig von der Pfalz paid for Schloss Boxberg to the Bürgermeister und Rat der Reichsstadt Nördlingen",
-      "Bernhard Freinsheimer is Sekretär und Diener of Kurfürst Ludwig von der Pfalz",
-      "Ott Reiß is Sekretär und Diener of Kurfürst Ludwig von der Pfalz",
-      "The payment for Schloss Boxberg was made bar via Bernhard Freinsheimer and Ott Reiß"
+      "Kurfürst Ludwig von der Pfalz paid for Schloss Boxberg"
     ]
   },
   {
@@ -2451,10 +2446,7 @@
     "date": "1528-10-09",
     "facts": [
       "Wolfgang von Bibra is Deutsch-Ordens-Komtur zu Mergentheim",
-      "Bürgermeister und Rat der Reichsstadt Rothenburg ob der Tauber vidimierten eine Urkunde",
-      "The vidimation was made auf Ansuchen of Deutsch-Ordens-Komtur Wolfgang von Bibra",
-      "The Urkunde was dated 1516-04-07",
-      "The Urkunde concerned Streitigkeiten des Hauses Mergentheim mit den Gebrüdern von Rosenberg"
+      "A 1516-04-07 charter concerning disputes between the Haus Mergentheim and the Gebrüder von Rosenberg was vidimated"
     ]
   },
   {
@@ -2500,15 +2492,6 @@
       "Genannte Einwohner von Boxberg issued an Erblehnrevers gegenüber Albrecht von Rosenberg",
       "The Erblehnrevers concerned zwei Freihöfe in Boxberg",
       "The zwei Freihöfe were verliehen to the Einwohner von Boxberg"
-    ]
-  },
-  {
-    "source": "43 No. 1244 / 1245",
-    "date": "1561-07-24",
-    "facts": [
-      "Albrecht von Rosenberg ceded all rights to Boxberg to Elector Friedrich II",
-      "Agnatic consent by multiple Rosenberg kin recorded for Boxberg sale",
-      "Boxberg lordship ended for Rosenberg family in 1561"
     ]
   },
   {
