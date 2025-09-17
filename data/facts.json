@@ -1705,15 +1705,14 @@
     "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 2776",
     "date": "1403-01-01",
     "facts": [
-      "Eberhard von Rosenberg resided at Jagstberg",
-      "Eberhard von Rosenberg had a Schuldsumme"
+      "Eberhard von Rosenberg resided at Jagstberg"
     ]
   },
   {
     "source": "Generallandesarchiv Karlsruhe 69 von Helmstatt U 786",
     "date": "1404-09-17",
     "facts": [
-      "Anna von Rosenberg is spouse of Reinhard d. J.",
+      "Anna von Rosenberg is spouse of Reinhard von Helmstatt d. J.",
       "Anna von Rosenberg is commemorated in the Jahrzeit endowed by Wiprecht von Helmstatt d. Ä. and Anna von Neipperg"
     ]
   },
@@ -1822,8 +1821,9 @@
     "date": "1415-04-28",
     "facts": [
       "Elisabeth von Rosenberg is spouse of Kunz von Rosenberg",
-      "Kunz von Rosenberg sold his Viertel at Boxberg to Arnold von Rosenberg and his spouse Christine",
-      "Elisabeth von Rosenberg sold her Viertel at Boxberg to Arnold von Rosenberg and his spouse Christine",
+      "Christine von Handschuhsheim is spouse of Arnold von Rosenberg",
+      "Kunz von Rosenberg sold his Viertel at Boxberg to Arnold von Rosenberg",
+      "Elisabeth von Rosenberg sold her Viertel at Boxberg to Arnold von Rosenberg",
       "Kurfürst Ludwig von der Pfalz, as Lehensherr, consented to the sale of the Viertel at Boxberg",
       "The Viertel at Boxberg was held zu Lehen from Kurpfalz",
       "Kunz von Rosenberg had previously purchased the Viertel at Boxberg from the Johanniter"
@@ -1837,9 +1837,9 @@
       "Kunz von Rosenberg d. Ä. resided at Minnenberg",
       "Anna von Sickingen is spouse of Kunz von Rosenberg d. Ä.",
       "Christine von Handschuhsheim is spouse of Arnold von Rosenberg",
-      "Kunz von Rosenberg d. Ä. sold his Viertel at Boxberg to Arnold von Rosenberg and his spouse Christine von Handschuhsheim",
-      "Anna von Sickingen sold her Viertel at Boxberg to Arnold von Rosenberg and his spouse Christine von Handschuhsheim",
-      "Anna Marschall sold her Viertel at Boxberg to Arnold von Rosenberg and his spouse Christine von Handschuhsheim",
+      "Kunz von Rosenberg d. Ä. sold his Viertel at Boxberg to Arnold von Rosenberg",
+      "Anna von Sickingen sold her Viertel at Boxberg to Arnold von Rosenberg",
+      "Anna Marschall sold her Viertel at Boxberg to Arnold von Rosenberg",
       "Kunz von Rosenberg d. Ä. had previously purchased the Viertel at Boxberg from the Johanniter"
     ]
   },
@@ -1857,7 +1857,10 @@
     "facts": [
       "Arnold von Rosenberg resided at Boxberg",
       "Christine von Handschuhsheim is spouse of Arnold von Rosenberg",
-      "Arnold von Rosenberg and Christine von Handschuhsheim sold their Güter at Hochhausen, Werbach, Niklashausen and Höhefeld to the Carthause Grünau",
+      "Arnold von Rosenberg sold Güter at Hochhausen to the Carthause Grünau",
+      "Arnold von Rosenberg sold Güter at Werbach to the Carthause Grünau",
+      "Arnold von Rosenberg sold Güter at Niklashausen to the Carthause Grünau",
+      "Arnold von Rosenberg sold Güter at Höhefeld to the Carthause Grünau",
       "Hans von Rosenberg d. Ä. was Bürge for the sale to the Carthause Grünau",
       "Ulrich von Rosenberg is titled Amtmann zu Krautheim",
       "Ulrich von Rosenberg was Bürge for the sale to the Carthause Grünau",
@@ -1911,8 +1914,7 @@
       "Anna von Rosenberg sold one third of the großen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, and the Deutscher Orden",
       "Eberhard von Angelloch sold a Hof at Kirchhausen with all rights and incomes to Eberhard von Seinsheim, Deutschmeister, and the Deutscher Orden",
       "Anna von Rosenberg sold a Hof at Kirchhausen with all rights and incomes to Eberhard von Seinsheim, Deutschmeister, and the Deutscher Orden",
-      "Eberhard von Seinsheim is Deutschmeister (Meister des Deutschen Ordens in deutschen und welschen Landen)",
-      "The Bürgen for the sale were to render their Dienst in Waldhilsbach"
+      "Eberhard von Seinsheim is Deutschmeister (Meister des Deutschen Ordens in deutschen und welschen Landen)"
     ]
   },
   {
@@ -2000,8 +2002,10 @@
     "date": "1436-10-05",
     "facts": [
       "Christine von Handschuhsheim is spouse of Arnold von Rosenberg",
-      "Arnold von Rosenberg sold a quarter share of Boxberg to his sons Ulrich von Rosenberg and Jörg von Rosenberg",
-      "Christine von Handschuhsheim sold a quarter share of Boxberg to her sons Ulrich von Rosenberg and Jörg von Rosenberg",
+      "Arnold von Rosenberg sold a quarter share of Boxberg to his son Ulrich von Rosenberg",
+      "Arnold von Rosenberg sold a quarter share of Boxberg to his son Jörg von Rosenberg",
+      "Christine von Handschuhsheim sold a quarter share of Boxberg to her son Ulrich von Rosenberg",
+      "Christine von Handschuhsheim sold a quarter share of Boxberg to her son Jörg von Rosenberg",
       "Ulrich von Rosenberg is son of Arnold von Rosenberg",
       "Ulrich von Rosenberg is son of Christine von Handschuhsheim",
       "Jörg von Rosenberg is son of Arnold von Rosenberg",
@@ -2074,8 +2078,13 @@
     "date": "1446-06-05",
     "facts": [
       "Eberhard von Rosenberg d. Ä. is titled Ritter",
-      "Eberhard von Rosenberg d. Ä. sold Zinse, Gülten und Güter at Dainbach to Jost von Venningen",
-      "Eberhard von Rosenberg d. Ä. sold Zinse, Gülten und Güter at Dainbach to the Deutschordenshaus Mergentheim",
+      "Eberhard von Rosenberg d. Ä. sold Zinse at Dainbach to Jost von Venningen",
+      "Eberhard von Rosenberg d. Ä. sold Gülten at Dainbach to Jost von Venningen",
+      "Eberhard von Rosenberg d. Ä. sold Güter at Dainbach to Jost von Venningen",
+      "Eberhard von Rosenberg d. Ä. sold Zinse at Dainbach to the Deutschordenshaus Mergentheim",
+
+      "Eberhard von Rosenberg d. Ä. sold Gülten at Dainbach to the Deutschordenshaus Mergentheim",
+      "Eberhard von Rosenberg d. Ä. sold Güter at Dainbach to the Deutschordenshaus Mergentheim",
       "Jost von Venningen is Komtur zu Mergentheim"
     ]
   },
@@ -2086,7 +2095,9 @@
       "Thomas von Rosenberg mediated the exchange at Schloss Boxberg between Eberhard von Rosenberg d. Ä. and the brothers Ulrich von Rosenberg and Jörg von Rosenberg",
       "Eberhard von Rosenberg d. Ä. exchanged his Stall in the rear part of Schloss Boxberg near the well above the tower for a Stall and a Backhaus in the front part of Schloss Boxberg",
       "Ulrich von Rosenberg is brother of Jörg von Rosenberg",
-      "Ulrich von Rosenberg and Jörg von Rosenberg gave an Aufgeld as part of the exchange"
+      "Jörg von Rosenberg is brother of Ulrich von Rosenberg",
+      "Ulrich von Rosenberg gave an Aufgeld as part of the exchange",
+      "Jörg von Rosenberg gave an Aufgeld as part of the exchange"
     ]
   }
 ]
