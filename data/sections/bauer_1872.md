@@ -99,8 +99,131 @@
 | Kunz scheint wirklich nur Töchter gehabt zu haben und seine Linie verschwindet mit ihm. Ob er 1433 als Gauerbe zu Maienfels Mitstifter der Kapelle daselbst geworden ist? (O.A.-Beschr. v. Weinsberg S. 291\) wissen wir nicht. Da er nicht "von Bartenstein" heißt, und Konrad VI. in einer entfernteren Gegend sein Wesen hatte, so möchten wir den Maienfelser Conrad am liebsten für den wenig bekannten Kunz VII. halten. | Kunz indeed seems to have only had daughters, and his line disappears with him. Whether he became a co-founder of the chapel at Maienfels as "Gauerbe" in 1433 (see Oberamt-Description of Weinsberg, p. 291\) remains unknown. Since he is not referred to as "von Bartenstein" and Conrad VI operated in a more distant region, we would prefer to consider the Maienfels Conrad as the lesser-known Kunz VII. |
 | Uebrig ist jetzt noch die Frage, wo wir die beiden Stammväter dieser Konradischen Linien im Stammbaum einfügen sollen? Alles zusammengenommen passen wohl die Zeiten und andere Verhältnisse am besten, wenn wir Hrn. Conrad den Bizthum in Amberg für den Sohn Arnolds halten, den länger lebenden Heidelberger Bizthum aber für den Sohn Eberhards I.; die sämtlichen Generationen passen so zu den parallelen Generationen der andern Linien. In dieser Weise entwerfen wir nun einen Stammbaum, welcher bloß die urkundlich beglaubigten Personen ausführt, namentlich aber die vielen Namen unberücksichtigt läßt, welche Biedermann aus den Turnierbüchern geschöpft hat. Daß uns ein und der andere wirklich lebende Mann nicht auch in Urkunden vorgekommen sein mag, wollen wir nicht bestreiten; mögen sie Andere noch einreihen. Wir sind befriedigt, wenn nur einmal eine brauchbare Grundlage für weitere genealogische Forschungen gewonnen ist, woran es doch bisher noch ganz fehlte. | The remaining question now is where to place the two progenitors of these Conrad lines in the family tree? Considering everything, the times and other circumstances seem to fit best if we consider Lord Conrad of the Amberg bishopric to be the son of Arnold, and the longer-living Heidelberg bishopric Conrad to be the son of Eberhard I; this arrangement aligns all the generations with the parallel generations of the other lines. In this manner, we will now draft a family tree that includes only the documented individuals, leaving out the many names that Biedermann derived from the tournament books. We do not deny that some actual individuals may not have appeared in the records; others may still incorporate them. We are satisfied if a solid foundation for further genealogical research is established, something that has been lacking until now. |
 
+```mermaid
+flowchart TD
+%% -- Node Definitions --
 
-**Page 208**
+%% Generation 1
+    aplo_1278["Aplo<br>† 1278"]
+    hans_1271["Hans<br>1271-90"]
+
+%% Generation 2
+    eberhard_va["Eberhard von Rosenberg<br>† 1313.<br>genannt von Uffigheim"]
+    eckard_1312["Eckard von Rosenberg<br>- 1312"]
+
+%% Generation 3
+    konrad_u["Konrad von Uffigheim<br>u. s. w."]
+    conrad_1["Conrad I.<br>1315. 1321 †"]
+    arnold_1317["Arnold I.<br>h. Pfählin.<br> 1317"]
+
+%% Generation 4
+    eberhard_1["Eberhard I<br>Ritter,<br>1321-54.<br>Vogt zu Dürn; hat Nagelsberg."]
+    wibert_1321["Wipert 1321<br>?<br>Ritter Diether 1343."]
+    eberhard_2["Eberhard II.<br>zu Zimmern<br>1341-<br>h. Wyclo - "]
+    conrad_2["Konrad II.<br>Ritter<br>1341-†1390<br>Vizdum in Amberg<br>h. Marschallin."]
+    hans_1["Hans I.<br>Ritter<br>zu Neideck u. Uchausen<br>1341-"]
+
+%% Generation 5
+    eberhard_3["Eberhard III., E.K.<br>1341-1407.<br>h. Anna Landschadin."]
+    konrad_3["Konrad III.<br>Vizthum in Heidelberg<br>1341-1406."]
+    hermann_1341["Hermann<br>1341.<br>Domherr."]
+    engelhard_1["Engelhard I.<br>1341. 1356."]
+    eberhard_4["1359.<br>Eberhard IV.<br>Ritter<br>Vogt zu Lauda<br>† 1388."]
+    arnold_2["?<br>Arnold II<br>sen. z. Schüpf<br>1409.<br>h. Elsbet - "]
+    michel["?<br>Michel<br>1378<br>bis<br>1412."]
+    conrad_3_alt["Conrad III. †1427.<br>z. Boxberg 1385-1415.<br>zu Röttingen 1420.<br>zu Reigelsberg 1423."]
+    anna["Anna<br>h. Johann<br>Prahl<br>1368<br>Wittwe."]
+    hans_2["Hans II. 1381."]
+    gotz["Götz."]
+
+%% Generation 6
+    ulrich_1["Ulrich I.<br>1407-18."]
+    hans_3["Hans III<br>Ritter<br>h. 1) Elsbet, Marschallin<br>von Pappenheim.<br>2) Selende Langmantel."]
+    kunz_5["Kunz V.<br>zu Bartenstein<br>1420-38."]
+    michael_q["? Michael."]
+    engelhard_2["Engelhard II.<br>1387-<br>1411."]
+    eberhard_5["Eberhard V.<br>† 1437.<br>h. von Handschuchsheim."]
+    arnold_3["Arnold III. 1395.<br>zu Boxberg<br>† 1407.<br>h. Christine von<br>Handschuchsheim."]
+    eberhard_6["Eberhard VI.<br>zu Jagstberg<br>1409-14.<br>zu Boxberg<br>† 1449."]
+    erasmus_1["Erasmus I.<br>† 1450."]
+    konrad_6["Konrad VI.<br>Ritter,<br>zu Gneszheim,<br>erwirbt Niederstetten<br>u. die 5 Dörfer<br>- 1458."]
+    kunz_7["Kunz VII.<br>des Hans Sohn.<br>(Ganerbe zu<br>Maienfels 1433?)"]
+    thomas["Thomas<br>1415<br>bis<br>1458.<br>Ritter."]
+    hans_4["Hans IV.<br>jun. 1415.<br>(?1445-56<br>senior.)"]
+
+%% Generation 7
+    anselm_1454["Anselm<br>† 1454."]
+    kunigunde["Kunigunde."]
+    kunz_8["Kunz VIII.<br>zu Boxberg und Schüpf<br>1450 †"]
+    ulrich_2["Ulrich II.<br>zu Boxberg und Schüpf<br>- 1463."]
+    eberhard_7["Eberhard VII.<br>zu Boxberg und Schüpf<br>1443 †"]
+    georg_1["Georg I.<br>1458 †<br>h. von Kronenberg."]
+    erasmus_2["Erasmus II."]
+    friedrich["Friedrich."]
+    niederstetten_lineage["u. s. w.<br>zu Niederstetten und<br>Waldmannshofen."]
+    konrad_9["Konrad IX."]
+    hans_5["Hans V.<br>1445-56<br>jun."]
+    eberhard_8["Eberhard VIII.<br>1452."]
+
+%% Generation 8
+    michael_f["Michael."]
+    jorg_2["Jörg II."]
+    arnold_4["Arnold IV."]
+    linie_note["u. s. w.<br>Linie zu Boxberg und Schüpf."]
+    hans_6["Hans VI. 1491.<br>† 1525."]
+    georg["Georg<br>geistlich."]
+
+%% Generation 9
+    christoffel["Christoffel."]
+
+%% Generation 10
+    hans_eucharius["Hans Eucharius<br>1536-1572.<br>zu Rosenberg."]
+
+%% -- Direct Family Relationships --
+    aplo_1278 --- eberhard_va
+    hans_1271 --- eckard_1312
+    eberhard_va --- konrad_u
+    eckard_1312 --- conrad_1 & arnold_1317
+    conrad_1 --- eberhard_1 & wibert_1321
+    eberhard_1 --- eberhard_3 & konrad_3 & hermann_1341 & engelhard_1
+    eberhard_3 --- ulrich_1
+    ulrich_1 -.-> michael_q
+    engelhard_1 --- engelhard_2 & eberhard_5
+    konrad_3 --- hans_3 & kunz_5
+    ulrich_1 --- anselm_1454
+    anselm_1454 --- kunigunde
+    eberhard_5 --- kunz_8 & ulrich_2 & eberhard_7 & georg_1
+    georg_1 --- michael_f & jorg_2 & arnold_4
+
+%% -- Arnold lineage Relationships --
+    arnold_1317 --- eberhard_2 & conrad_2 & hans_1
+    eberhard_2 --- eberhard_4
+    eberhard_2 -.-> arnold_2 & michel
+    conrad_2 -.-> arnold_2 & michel
+    conrad_2 --- conrad_3_alt
+    hans_1 --- anna & hans_2 & gotz
+    hans_2 --- kunz_7
+    gotz --- thomas & hans_4
+    eberhard_4 --- arnold_3 & eberhard_6
+    eberhard_4 -.-> erasmus_1
+    conrad_3_alt -.-> erasmus_1
+    conrad_3_alt --- konrad_6
+    konrad_6 --- erasmus_2 & friedrich & konrad_9
+    kunz_7 -.-> eberhard_8
+    kunz_7 --- hans_5
+    hans_5 --- hans_6 & georg
+    hans_6 --- christoffel
+    christoffel --- hans_eucharius
+
+%% -- Connections for Lineage Notes (to be hidden) --
+    michael_f & jorg_2 & arnold_4 --- linie_note
+    erasmus_2 & friedrich & konrad_9 --- niederstetten_lineage
+
+%% -- Styling --
+    classDef noborder stroke:none,fill:transparent
+    class linie_note,niederstetten_lineage noborder
+    linkStyle 55,56,57,58,59,60 stroke-width:0px
+```
 
 | Keinen Platz wußten wir in diesen Stamm bäumen anzuweisen etlichen geistlichen Herrn; Hans v. R. war Domherr zu Würzburg 1346; Reg. b. VIII, 81\. 1424 ist Eberhardus de R. cantor ecclesiae moguntinae; Gud. C. D. III, 585\. Möglicherweise bürgerlichen Geschlechts könnte sein 1452, Hermannus Rosenberg, deceratorum doctor, scholasticus ecclesiae St. Mariae ad gradus mogunt., archiepiscopi mog. vicarius generalis in spiritualibus; Gud. C. D. IV, 34\. | We could not find a place in these family trees for several ecclesiastical members of the Rosenberg family: Hans von Rosenberg was a canon in Würzburg in 1346; Reg. b. VIII, 81\. In 1424, Eberhardus de Rosenberg was the cantor of the church in Mainz; Gud. C. D. III, 585\. Possibly of non-noble origin might be Hermannus Rosenberg in 1452, doctor decretorum, scholasticus of the church of St. Mary at the steps in Mainz, vicar general in spiritualibus of the Archbishop of Mainz; Gud. C. D. IV, 34\. |
 | :---- | :---- |
@@ -176,6 +299,4 @@
 | 1574—98. Acta der Rosenbergischen Allodialerben betreffend 5060 fl., welche auf dem Bergwert und der Münze zu Joachimsthal gestanden. Welche Forderungen gemacht wurden, zeigen z. B.  | 1574—98: Records of the Rosenberg allodial heirs concerning 5060 florins, which were secured by the Bergwert (mine) and the mint in Joachimsthal. The types of claims that were made are shown, for example, by the following: |
 | 1571/72 Acta die von Georg Christof und Stefan Rüdt v. Collenberg, Gebrüder, an die Rosenbergischen Allodialerben geforderten und wirklich abgetragenen 1200 fl. betreffend von wegen ihrer Mutter Ruffina, ex post Albrechts v. Rosenberg, Ritters, Hausfrau. | 1571/72: Records concerning the 1200 florins demanded by Georg Christof and Stefan Rüdt von Collenberg, brothers, from the Rosenberg allodial heirs and actually paid, due to their mother Ruffina, the late wife of Knight Albrecht von Rosenberg. |
 | Allodialerben waren 4 Geschwister v. Lagen, worunter 3 Schwestern ihre Ansprüche den Familien v. Stetten u. s. w. zubrachten; von Limburg erhielt Eberhard v. Stetten das heimgefallene Lehen zu Sachsenflur; die Hohenloheschen Lehen empfingen die Eigenthumserben zusammen, sammt der von den Herrn v. Dottenheim erkauften Hälfte von Schüpf, ein Kunteslehen. Dagegen succedirten in der alt-Rosenbergischen Hälfte von Schüpf und Zubehörden, in den pfälzischen Lehen (Epplingen, Sachsenflur und Dainbach zum Theil) und im Hohenloheschen Theil von Edelsingen sammt Kirchätzen 1563 wie auch in den Würzburgischen Lehen die Agnaten, theils Hans Eucharius v. Rosenberg zu Rosenberg, theils die Vettern zu Haldenbergstetten. | The allodial heirs were four siblings of the von Lagen family, among whom three sisters transferred their claims to the families of von Stetten and others; Eberhard von Stetten received the reverted fief in Sachsenflur from Limburg. The property heirs collectively received the Hohenlohe fiefs, along with the half of Schüpf purchased from the von Dottenheim family, a fief of Kuntes. In contrast, the agnates succeeded to the old Rosenberg half of Schüpf and its appurtenances, in the Palatinate fiefs (parts of Epplingen, Sachsenflur, and Dainbach), and in the Hohenlohe part of Edelsingen along with the church patronage from 1563, as well as in the Würzburg fiefs, namely Hans Eucharius von Rosenberg of Rosenberg, as well as the cousins in Haldenbergstetten. |
-
-## 
 
