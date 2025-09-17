@@ -87,3 +87,70 @@ It must be admitted that some of these considerations are somewhat uncertain. Ho
 
 An attempt was made to expand or at least to specify some details of the state of knowledge on the early history of the Rosenbergs since H. Bauer.  1. The thesis, assumed by H. Bauer and substantiated by W. Möller, of an identity between the Uissigheimers and the Rosenbergs is confirmed.  2. A distinction must be made between the high noble family of Uissigheim, which died out in the mid-13th century, and the lower nobles of the same name. The latter become tangible in 1260 and probably originally belonged to the ministerialage of the free or high nobles.  3. Who the descendants of the brothers Eberhard and Arnold were remains hypothetical, as does the progeny of some other Uissigheimers belonging to this generation.  4. In the second half of the 13th century, four to five family branches can be expected, whose genealogical connection is partly unclear.  5. With Eberhard Rufus and the children of Arnold von Uissigheim, it was possible to extend the Rosenberg family tree backwards by one generation.  6. With them begins the division of the Uissigheimers into two main branches, one of which continued the old name, while the other took up that of Rosenberg Castle.  7. The background of this acquisition is the decline of the free nobles of Dürn.  8. The family tree created by W. Möller, which was based on the distinction between an "older (Eberhardian)" main line and an "Arnoldian" one, can possibly be corrected to the effect that there were two main lines \- an older one descending from Eberhard Rufus, and a younger one that split with Eberhard III (II) and Arnold I, but inherited from the former. All subsequent Lords of Rosenberg descend from it.  9. A prerequisite for belonging to the top group of the Franconian lower nobility, and thus also for having extraordinary financial means, was service to the powerful. The biography of Eberhard III (II) serves as an illustration of this.  10. Based on the name and the property situation, the Mönch family, who were not a side branch of the Uissigheim-Rosenbergs, are to be considered the former owners of the castle and village. The change of ownership is to be dated to the years before 1285.  11. The castle and village were acquired as allodial property. Their conversion into a fief is connected with the purchase of the Boxberg commandery in 1381.
 
+```mermaid
+flowchart TD
+%% -- Node Definitions --
+
+%% Generation 1
+    p1_eberhard_v["<b>Eberhard vicedominus</b><br>Ritter<br>1260, 1285"]
+    p1_arnold_1260["<b>Arnold</b><br>1260"]
+    p1_friedericus["<b>Friedericus Stahel</b><br>1285"]
+    p1_konrad_1300["<b>Konrad</b><br>Ritter<br>1300, 1305, 1304"]
+    p1_eberhard_t["<b>Eberhard titubans</b><br>1285"]
+
+%% Generation 2
+    p2_eberhard_r["<b>Eberhard Rufus</b><br>Ritter<br>1285<br>†1305"]
+    p2_conrad_i["<b>Conrad iuvenis</b>"]
+    p2_jutta["<b>Jutta</b><br>1322"]
+    p2_fritz_family["<b>Fritz</b><br>1322, 1334<br>⚭ <b>Petrissa</b><br>1324"]
+    p2_kraft_albert["<b>Kraft Albert</b><br>1222, 1329"]
+    p2_arnold_u["<b>Arnold</b><br>von Uissigheim<br>†1305"]
+    p2_konrad_j_family["<b>Konrad d. junge</b><br>Ritter<br>1311, 1322<br>⚭ <b>Alheit</b><br>von Aschhausen<br>1311, 1342"]
+    p2_arnold_a_family["<b>Arnold d. Ältere</b><br>1328, 1331<br>⚭ <b>Richza</b><br>1332"]
+
+%% Generation 3
+    p3_eberhard_2["<b>Eberhard II</b><br>1305<br>†1314"]
+    p3_konrad_1305["<b>Konrad</b><br>1305"]
+    p3_eberhard_1305["<b>Eberhard</b><br>1305"]
+    p3_juta_1305["<b>Juta</b><br>1305"]
+    p3_arnold_1305["<b>Arnold</b><br>1305"]
+    p3_arnold_t["<b>Arnold</b><br>von Talheim<br>1311, 1327"]
+    p3_juta_1311["<b>Juta</b><br>1311"]
+    p3_guta["<b>Guta</b><br>1311"]
+    p3_arnold_j_family["<b>Arnold d. J.</b><br>»König Armleder«<br>1318<br>†1336<br>⚭ <b>Alhus</b><br>1327"]
+    p3_heinrich["<b>Heinrich</b><br>1323, 1332"]
+    p3_erkinger["<b>Erkinger</b><br>1332, 1342"]
+    p3_eberhard_rann["<b>Eberhard</b><br>von Rannenberg<br>1323, 1327, 1328"]
+
+%% Lineage Descriptions
+    line_aeltere["<b>Ältere oder Eberhardische<br>Hauptlinie der Rosenberger</b><br>~"]
+    line_juengere["<b>Jüngere oder Arnoldische<br>Hauptlinie der Rosenberger</b><br>|"]
+    uissigheim_1["<b>Uissigheim</b><br>|"]
+    uissigheim_2["<b>Uissigheim</b><br>|"]
+
+%% -- Connections --
+
+%% Parent-to-child connections (20 links total, indices 0-19)
+    p1_eberhard_v --- p2_eberhard_r & p2_conrad_i & p2_jutta & p2_fritz_family & p2_kraft_albert
+    p1_arnold_1260 --- p2_arnold_u
+    p1_konrad_1300 --- p2_konrad_j_family
+    p1_eberhard_t --- p2_arnold_a_family
+
+    p2_eberhard_r --- p3_eberhard_2 & p3_konrad_1305
+    p2_arnold_u --- p3_eberhard_1305 & p3_juta_1305 & p3_arnold_1305
+    p2_konrad_j_family --- p3_arnold_t & p3_juta_1311 & p3_guta
+    p2_arnold_a_family --- p3_arnold_j_family & p3_heinrich & p3_erkinger & p3_eberhard_rann
+
+%% Children to Lineage connections (12 links total, indices 20-31)
+    p3_eberhard_2 & p3_konrad_1305 --- line_aeltere
+    p3_eberhard_1305 & p3_juta_1305 & p3_arnold_1305 --- line_juengere
+    p3_arnold_t & p3_juta_1311 & p3_guta --- uissigheim_1
+    p3_arnold_j_family & p3_heinrich & p3_erkinger & p3_eberhard_rann --- uissigheim_2
+
+%% -- Styling --
+    classDef noborder stroke:none,fill:transparent
+    class line_aeltere,line_juengere,uissigheim_1,uissigheim_2 noborder
+
+%%  Make the 12 lineage connection lines invisible**
+    linkStyle 20,21,22,23,24,25,26,27,28,29,30,31 stroke-width:0px
+```

@@ -64,7 +64,7 @@ flowchart TD
     p2_conrad_i["<b>Conrad iuvenis</b>"]
     p2_jutta["<b>Jutta</b><br>1322"]
     p2_fritz_family["<b>Fritz</b><br>1322, 1334<br>⚭ <b>Petrissa</b><br>1324"]
-    p2_kraft_albert["<b>Kraft Albert</b><br>1322, 1329"]
+    p2_kraft_albert["<b>Kraft Albert</b><br>1222, 1329"]
     p2_arnold_u["<b>Arnold</b><br>von Uissigheim<br>†1305"]
     p2_konrad_j_family["<b>Konrad d. junge</b><br>Ritter<br>1311, 1322<br>⚭ <b>Alheit</b><br>von Aschhausen<br>1311, 1342"]
     p2_arnold_a_family["<b>Arnold d. Ältere</b><br>1328, 1331<br>⚭ <b>Richza</b><br>1332"]
@@ -89,38 +89,29 @@ flowchart TD
     uissigheim_1["<b>Uissigheim</b><br>|"]
     uissigheim_2["<b>Uissigheim</b><br>|"]
 
-%% Invisible routing nodes
-    children_eberhard_v
-    children_konrad_j
-    children_arnold_a
-    children_eberhard_r
-    children_arnold_u
-
 %% -- Connections --
 
-%% Parent to Children
-    p1_eberhard_v --- children_eberhard_v
-    children_eberhard_v --- p2_eberhard_r & p2_conrad_i & p2_jutta & p2_fritz_family & p2_kraft_albert
-
+%% Parent-to-child connections (20 links total, indices 0-19)
+    p1_eberhard_v --- p2_eberhard_r & p2_conrad_i & p2_jutta & p2_fritz_family & p2_kraft_albert
     p1_arnold_1260 --- p2_arnold_u
     p1_konrad_1300 --- p2_konrad_j_family
     p1_eberhard_t --- p2_arnold_a_family
 
-    p2_eberhard_r --- children_eberhard_r --- p3_eberhard_2 & p3_konrad_1305
-    p2_arnold_u --- children_arnold_u --- p3_eberhard_1305 & p3_juta_1305 & p3_arnold_1305
-    p2_konrad_j_family --- children_konrad_j --- p3_arnold_t & p3_juta_1311 & p3_guta
-    p2_arnold_a_family --- children_arnold_a --- p3_arnold_j_family & p3_heinrich & p3_erkinger & p3_eberhard_rann
+    p2_eberhard_r --- p3_eberhard_2 & p3_konrad_1305
+    p2_arnold_u --- p3_eberhard_1305 & p3_juta_1305 & p3_arnold_1305
+    p2_konrad_j_family --- p3_arnold_t & p3_juta_1311 & p3_guta
+    p2_arnold_a_family --- p3_arnold_j_family & p3_heinrich & p3_erkinger & p3_eberhard_rann
 
-%% Children to Lineage -- **FIXED: Direct connections from children to lineage**
+%% Children to Lineage connections (12 links total, indices 20-31)
     p3_eberhard_2 & p3_konrad_1305 --- line_aeltere
     p3_eberhard_1305 & p3_juta_1305 & p3_arnold_1305 --- line_juengere
     p3_arnold_t & p3_juta_1311 & p3_guta --- uissigheim_1
     p3_arnold_j_family & p3_heinrich & p3_erkinger & p3_eberhard_rann --- uissigheim_2
 
 %% -- Styling --
-    classDef invis fill:transparent,stroke:transparent
-    class children_eberhard_v,children_konrad_j,children_arnold_a,children_eberhard_r,children_arnold_u invis
-
     classDef noborder stroke:none,fill:transparent
     class line_aeltere,line_juengere,uissigheim_1,uissigheim_2 noborder
+
+%%  Make the 12 lineage connection lines invisible**
+    linkStyle 20,21,22,23,24,25,26,27,28,29,30,31 stroke-width:0px
 ```
