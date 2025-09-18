@@ -6,22 +6,24 @@ A tool for downloading, cleaning, and organizing Google Docs documents into stru
 
 ```
 Rosenberg/
-├── README.md                 # This file
-├── scripts/                  # All executable scripts
-│   ├── setup.sh              # Interactive setup for OAuth token
-│   ├── process_document.sh   # Main workflow script
-│   ├── extract_languages.sh  # Extract original and English content
+├── README.md                  # This file
+├── scripts/                   # All executable scripts
+│   ├── setup.sh               # Interactive setup for OAuth token
+│   ├── process_document.sh    # Main workflow script
+│   ├── extract_languages.sh   # Extract original and English content
 │   ├── clean_special_chars.sh # Clean unnecessary special characters
-│   ├── download_doc.sh       # Download Google Docs as markdown
-│   ├── clean_markdown.sh     # Clean downloaded markdown
-│   ├── split_by_h1.sh        # Split document by H1 sections
-│   └── token.txt             # OAuth token (created by setup)
-├── data/                     # Processed documents
-│   ├── rosenberg.md          # Main processed document
-│   ├── sections/             # Individual document sections (bilingual)
-│   ├── original/             # Original language content only
-│   └── english/              # English content only
-└── docs/                     # Project documentation
+│   ├── download_doc.sh        # Download Google Docs as markdown
+│   ├── clean_markdown.sh      # Clean downloaded markdown
+│   ├── split_by_h1.sh         # Split document by H1 sections
+│   └── token.txt              # OAuth token (created by setup)
+└── data/                      # Processed documents
+    ├── sections/              # Sources in bilingual form (books and documents)
+    ├── original/              # Source books in original language only
+    ├── english/               # Source books in English only
+    ├── documents/original/    # Source documents in original language only
+    ├── diagrams/              # Genealogical diagrams
+    ├── variations.md          # List of name variations and epithets
+    └── facts.json             # Extracted facts in JSON format
 ```
 
 ## Quick Start
