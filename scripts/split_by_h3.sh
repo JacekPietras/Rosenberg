@@ -50,9 +50,14 @@ make_safe_filename() {
   title="${title//\(/}"; title="${title//\)/}"
   title="${title//\./}"     # remove dots to keep names simple
   title="$(echo "$title" | sed 's/^[[:space:]]*//; s/[[:space:]]*$//')"
+
+  # Handle date ranges like "23/26" - convert to space-separated format
+  # This preserves the range information: "1360 October 23/26" -> "1360 october 23 26"
+  title="$(echo "$title" | sed 's|/| |g')"
+
   # Keep alnum and spaces -> underscores, lowercase
   local safe
-  safe="$(echo "$title" | sed 's/[^a-zA-Z0-9 ]//g' | sed 's/[[:space:]]\+/_/g' | tr '[:upper:]' '[:lower:]')"
+  safe="$(echo "$title" | sed 's/[^a-zA-Z0-9 ]//g' | sed 's/[[:space:]]\+/ /g' | tr '[:upper:]' '[:lower:]')"
   if [[ -z "$safe" ]]; then
     section_count=$((section_count + 1))
     safe="section_${section_count}"

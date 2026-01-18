@@ -38,14 +38,15 @@ convert_to_iso() {
     
     # Remove location suffix (e.g., " heidelberg", " ehrenfels") and duplicate suffix (e.g., "_2", "_3")
     local rest=$(echo "$filename" | sed "s/^$year *//" | sed 's/_[0-9]*$//' | sed 's/ [a-z]*$//')
-    
+
     if [ -z "$rest" ]; then
         # Year only
         echo "$year"
     else
         # Extract month and day
         local month_name=$(echo "$rest" | awk '{print $1}')
-        local day=$(echo "$rest" | awk '{print $2}')
+        # For date ranges like "october 23 26", take the last day number
+        local day=$(echo "$rest" | awk '{for(i=2;i<=NF;i++) if($i ~ /^[0-9]+$/) last=$i} END {print last}')
         
         if [ -n "$month_name" ] && [ -n "$day" ]; then
             local month_num=$(month_to_number "$month_name")
