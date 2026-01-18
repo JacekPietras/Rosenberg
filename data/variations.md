@@ -24,3 +24,4 @@ Ruprecht - Rupert
 Diether - Dieter
 Wiprecht - Wibrecht
 Raban - Rabanus
+Wenceslaus - Wenzel

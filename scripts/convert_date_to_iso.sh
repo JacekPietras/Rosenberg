@@ -45,8 +45,8 @@ convert_to_iso() {
     else
         # Extract month and day
         local month_name=$(echo "$rest" | awk '{print $1}')
-        # For date ranges like "october 23 26", take the last day number
-        local day=$(echo "$rest" | awk '{for(i=2;i<=NF;i++) if($i ~ /^[0-9]+$/) last=$i} END {print last}')
+        # For date ranges, take the first day number (start of range)
+        local day=$(echo "$rest" | awk '{for(i=2;i<=NF;i++) if($i ~ /^[0-9]+$/) {print $i; exit}}')
         
         if [ -n "$month_name" ] && [ -n "$day" ]; then
             local month_num=$(month_to_number "$month_name")
