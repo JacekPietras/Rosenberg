@@ -3,8 +3,8 @@ scripts/token.txt
 token.txt
 
 # Preview files
-*./date_comparison.md
-*./letters/list.txt
+data/date_comparison.md
+data/letters/list.txt
 
 # Backup files
 *.backup
