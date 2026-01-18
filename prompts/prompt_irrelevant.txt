@@ -1,6 +1,6 @@
 You are a genealogical and medieval‑history specialist.
 
-Task: Clean facts.json by removing facts or information irrelevant to the Rosenberg lineage while keeping schema and valid JSON.
+Task: Clean Updated entry in facts.json by removing information irrelevant to the Rosenberg lineage.
 
 Keep if ANY are true:
 - Mentions a member of von Rosenberg (any branch)
@@ -18,4 +18,4 @@ Rules:
 - If editing names, normalize using data/variations.md.
 
 Output:
-- Updated facts.json content only, valid JSON, same schema. Validate JSON before finalizing.
+- Updated facts.json content only
