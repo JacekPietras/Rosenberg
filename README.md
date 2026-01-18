@@ -27,7 +27,7 @@ Rosenberg/
     │   ├── sections/          # Bilingual versions
     │   ├── original/          # German-only versions
     │   └── english/           # English-only versions
-    ├── documents/original/    # Individual historical letters
+    ├── letters/original/      # Individual historical letters
     ├── diagrams/              # Genealogical diagrams
     ├── variations.md          # List of name variations and epithets
     └── facts.json             # Extracted facts in JSON format

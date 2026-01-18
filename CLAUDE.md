@@ -69,7 +69,7 @@ data/
 │   ├── sections/      # Bilingual versions
 │   ├── original/      # German-only versions
 │   └── english/       # English-only versions
-├── documents/original/# Individual historical charters (by date)
+├── letters/original/  # Individual historical letters (by date)
 ├── diagrams/          # Genealogical tree diagrams
 ├── variations.md      # Name variations and epithets index
 └── facts.json         # Structured genealogical database
@@ -83,8 +83,8 @@ Each entry contains:
 
 **Critical**: facts.json MUST be kept sorted by date chronologically. Always run `sort_facts_by_date.py` after manual edits.
 
-### Document Naming Convention
-Historical charters in `data/documents/original/` use format:
+### Letter Naming Convention
+Historical letters in `data/letters/original/` use format:
 - `YYYY month day [location].md` (e.g., "1327 may 4.md", "1349 september 2 ehrenfels.md")
 - Duplicates append `_2`, `_3` etc.
 
