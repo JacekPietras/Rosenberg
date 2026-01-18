@@ -22,9 +22,6 @@ Rosenberg/
 │   ├── diagrams/                # Genealogical diagrams extracted from books
 │   ├── variations.md            # List of name variations and epithets
 │   └── facts.json               # Extracted facts in JSON format
-├── prompts/                     # AI prompt templates
-│   ├── prompt.txt               # Main genealogical extraction prompt
-│   └── prompt_irrelevant.txt    # Cleanup irrelevant content prompt
 ├── reports/                     # Generated comparison reports
 │   ├── dates_in_both.md         # Dates in both facts and letters
 │   ├── dates_only_in_facts.md   # Dates only in facts.json
@@ -215,15 +212,3 @@ Converts letter filename dates to ISO 8601 format (YYYY-MM-DD or YYYY).
 - For date ranges (e.g., "october 23 26"), uses the **last** day number (26)
 - Supports multiple month name formats (German, English, abbreviations)
 - Used by `compare_dates.sh` and `print_letter_dates.sh`
-
-## AI Prompt Templates
-
-### `prompts/prompt.txt`
-AI prompt template for extracting genealogical facts from historical documents.
-- Used for processing letters in `data/letters/`
-- Defines extraction rules for family relationships, titles, offices, properties, and events
-- Ensures consistent fact format and atomic relationship extraction
-- Preserves original German/Latin terms and territorial designations
-
-### `prompts/prompt_irrelevant.txt`
-AI prompt template for cleaning up irrelevant content from historical documents.

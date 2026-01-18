@@ -108,9 +108,6 @@ See `WORKFLOW_USAGE.md` for detailed documentation.
 ```
 Rosenberg/
 ├── scripts/           # Processing and workflow scripts
-├── prompts/           # AI prompt templates for fact extraction
-│   ├── prompt.txt             # Main genealogical extraction prompt
-│   └── prompt_irrelevant.txt  # Alternative prompt template
 ├── reports/           # Data validation reports (dates_in_both, dates_only_in_facts, dates_only_in_letters)
 └── data/              # Historical source data
     ├── books/             # Source books from knowledge base
@@ -171,22 +168,6 @@ The `extract_languages.sh` script:
 2. Extracts left column only for German version
 3. Extracts right column only for English version
 4. Processes both languages simultaneously for efficiency
-
-## AI Prompt Templates
-
-The `prompts/` directory contains prompt templates for extracting genealogical facts from historical documents:
-
-### `prompts/prompt.txt`
-Main AI prompt for processing historical letters in `data/letters/`:
-- Defines extraction rules for family relationships (son/daughter/spouse/sibling)
-- Specifies format for titles and offices (Ritter, Vogt, Edelknecht, etc.)
-- Handles property transactions and feudal relationships
-- Preserves original German/Latin terms and territorial designations
-- Ensures atomic fact extraction (one relationship per fact)
-- Includes epithets and territorial designations for disambiguation
-
-### `prompts/prompt_irrelevant.txt`
-Alternative prompt template for specialized use cases
 
 ## Data Integrity Guidelines
 
