@@ -1,5 +1,5 @@
 ---
-name: genealogy-fact-extractor
+name: fact-extractor
 description: Extracts genealogical facts from historical documents about the von Rosenberg family and appends them to data/facts.json
 model: inherit
 color: blue

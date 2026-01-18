@@ -1,5 +1,5 @@
 ---
-name: fact-verifier
+name: fact-syntax-verifier
 description: Verifies JSON structure of facts.json, sorts entries chronologically, and checks for quality issues
 model: haiku
 color: green
