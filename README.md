@@ -37,7 +37,7 @@ Rosenberg/
     │   ├── sections/            # Bilingual versions
     │   ├── original/            # German-only versions
     │   └── english/             # English-only versions
-    ├── letters/original/        # Individual historical letters
+    ├── letters/                 # Individual historical letters
     ├── diagrams/                # Genealogical diagrams
     ├── variations.md            # List of name variations and epithets
     ├── facts.json               # Extracted facts in JSON format
@@ -181,7 +181,7 @@ Splits a markdown document by H1 headings into separate files.
 ### `split_by_h3.sh`
 Splits a markdown document by H3 (###) headings into separate files.
 - Default input: `data/books/original/letters.md`
-- Default output: `data/letters/original/`
+- Default output: `data/letters/`
 - Creates individual files for each H3 section (typically individual letters)
 - Does NOT modify the original file; only creates section files
 - Useful for splitting a compiled document of letters into individual dated files
@@ -196,7 +196,7 @@ Python utility to sort the facts.json database chronologically.
 
 ### `compare_dates.sh`
 Generates a comprehensive comparison report between dates in `facts.json` and letter files.
-- Compares dates from `data/facts.json` with dates from `data/letters/original/` filenames
+- Compares dates from `data/facts.json` with dates from `data/letters/` filenames
 - Extracts and compares document sources (Quellen) from both facts and letters
 - Creates `data/date_comparison.md` with three sections:
   - **Dates in Both**: Shows matching dates with facts source, letter filename, and letter source side-by-side
@@ -209,7 +209,7 @@ Generates a comprehensive comparison report between dates in `facts.json` and le
 
 ### `prompts/prompt.txt`
 AI prompt template for extracting genealogical facts from historical documents.
-- Used for processing letters in `data/letters/original/`
+- Used for processing letters in `data/letters/`
 - Defines extraction rules for family relationships, titles, offices, properties, and events
 - Ensures consistent fact format and atomic relationship extraction
 - Preserves original German/Latin terms and territorial designations

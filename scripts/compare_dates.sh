@@ -53,7 +53,7 @@ echo "Generating comparison document..."
 cat > "$OUTPUT_FILE" << 'EOF'
 # Date Comparison: Facts vs Letters
 
-This document compares dates from `data/facts.json` (facts dates) with dates extracted from letter filenames in `data/letters/original/` (letter dates).
+This document compares dates from `data/facts.json` (facts dates) with dates extracted from letter filenames in `data/letters//` (letter dates).
 
 EOF
 

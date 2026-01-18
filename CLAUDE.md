@@ -74,7 +74,7 @@ Rosenberg/
     │   ├── sections/      # Bilingual versions
     │   ├── original/      # German-only versions
     │   └── english/       # English-only versions
-    ├── letters/original/  # Individual historical letters (by date)
+    ├── letters/           # Individual historical letters (by date)
     ├── diagrams/          # Genealogical tree diagrams
     ├── variations.md      # Name variations and epithets index
     └── facts.json         # Structured genealogical database
@@ -89,7 +89,7 @@ Each entry contains:
 **Critical**: facts.json MUST be kept sorted by date chronologically. Always run `sort_facts_by_date.py` after manual edits.
 
 ### Letter Naming Convention
-Historical letters in `data/letters/original/` use format:
+Historical letters in `data/letters/` use format:
 - `YYYY month day [location].md` (e.g., "1327 may 4.md", "1349 september 2 ehrenfels.md")
 - Duplicates append `_2`, `_3` etc.
 
@@ -134,7 +134,7 @@ The `extract_languages.sh` script:
 The `prompts/` directory contains prompt templates for extracting genealogical facts from historical documents:
 
 ### `prompts/prompt.txt`
-Main AI prompt for processing historical letters in `data/letters/original/`:
+Main AI prompt for processing historical letters in `data/letters/`:
 - Defines extraction rules for family relationships (son/daughter/spouse/sibling)
 - Specifies format for titles and offices (Ritter, Vogt, Edelknecht, etc.)
 - Handles property transactions and feudal relationships

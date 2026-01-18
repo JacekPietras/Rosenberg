@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Print all dates from letter filenames in data/letters/original with their sources
+# Print all dates from letter filenames in data/letters/ with their sources
 # Format: YYYY-MM-DD | filename | source
 
 # Get the script directory and project root
@@ -8,7 +8,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 # Path to letters directory
-LETTERS_DIR="$PROJECT_ROOT/data/letters/original"
+LETTERS_DIR="$PROJECT_ROOT/data/letters/"
 
 # Path to conversion script
 CONVERT_SCRIPT="$SCRIPT_DIR/convert_date_to_iso.sh"

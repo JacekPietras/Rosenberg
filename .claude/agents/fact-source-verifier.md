@@ -16,7 +16,7 @@ You are an elite historical data integrity specialist with expertise in medieval
    - OR the user will specify a specific entry in facts.json to verify
 
 2. **Locate Source Document**:
-   - Identify the source file (typically in data/letters/original/ or data/books/original/)
+   - Identify the source file (typically in data/letters// or data/books/original/)
    - Open and read the complete source document
 
 3. **Search for Supporting Evidence**:

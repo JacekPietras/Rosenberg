@@ -3,7 +3,7 @@
 # Script to split a markdown file by H3 (###) titles into separate files
 # Defaults follow project structure in README.md
 # - Input default: ../data/books/original/letters.md
-# - Output default: ../data/letters/original/
+# - Output default: ../data/letters/
 # The script does NOT modify the original file; it only creates section files.
 
 set -euo pipefail
@@ -11,14 +11,14 @@ set -euo pipefail
 # Usage
 if [[ ${1-} == "-h" || ${1-} == "--help" ]]; then
   echo "Usage: $0 [input_markdown] [output_dir]"
-  echo "Defaults: input=../data/books/original/letters.md output=../data/letters/original"
+  echo "Defaults: input=../data/books/original/letters.md output=../data/letters"
   exit 0
 fi
 
 # Resolve paths relative to this script's directory
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 DEFAULT_INPUT="${SCRIPT_DIR}/../data/books/original/letters.md"
-DEFAULT_OUTPUT="${SCRIPT_DIR}/../data/letters/original"
+DEFAULT_OUTPUT="${SCRIPT_DIR}/../data/letters"
 
 INPUT_FILE="${1:-$DEFAULT_INPUT}"
 OUTPUT_DIR="${2:-$DEFAULT_OUTPUT}"
