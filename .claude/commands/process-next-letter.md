@@ -20,7 +20,7 @@ Then follow these steps:
 
 2. **Launch fact-extractor agent** with the Task tool:
    - subagent_type: "fact-extractor"
-   - prompt: "Extract genealogical facts from the letter at [PATH] following the guidelines in prompts/prompt.txt. Append results to data/facts.json."
+   - prompt: "Extract genealogical facts from the letter at [PATH]. Append results to data/facts.json."
 
 3. **Launch fact-syntax-verifier agent** with the Task tool:
    - subagent_type: "fact-syntax-verifier"
