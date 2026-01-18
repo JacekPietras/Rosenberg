@@ -20,22 +20,33 @@ Then follow these steps:
 
 2. **Launch fact-extractor agent** with the Task tool:
    - subagent_type: "fact-extractor"
-   - prompt: "Extract genealogical facts from the letter at [PATH]. Append results to data/facts.json."
+   - prompt: "Extract genealogical facts from the letter at [PATH]. Create a temporary JSON file with the extracted facts."
+   - The agent will create `/tmp/facts_extract_[FILENAME].json` and report the path
 
-3. **Launch data verification agent**:
-   - fact-source-verifier: Verify facts against source document
-   - fact-irrelevant-verifier: Filter non-genealogical content
+3. **Launch data verification agents** (IMPORTANT: specify the temp file path):
+   - fact-source-verifier:
+     - prompt: "Verify the facts in /tmp/facts_extract_[FILENAME].json against their source document"
+   - fact-irrelevant-verifier:
+     - prompt: "Clean /tmp/facts_extract_[FILENAME].json by removing facts irrelevant to the Rosenberg lineage"
+   - These agents will read and update the temp file before merging
 
-4. **Launch fact-syntax-verifier agent** with the Task tool:
+4. **Merge temporary facts into facts.json**:
+   ```bash
+   python3 scripts/merge_facts.py /tmp/facts_extract_[FILENAME].json
+   ```
+   - Replace [FILENAME] with the base name from step 1 (e.g., "1327 may 4")
+   - This merges the temp file, sorts chronologically, and validates structure
+
+5. **Launch fact-syntax-verifier agent** with the Task tool:
     - subagent_type: "fact-syntax-verifier"
     - prompt: "Verify the JSON structure, chronological sorting, and quality of data/facts.json after the recent update."
 
-5. **After agents complete successfully**, remove the letter from report:
+6. **After agents complete successfully**, remove the letter from report:
    ```bash
    ./scripts/remove_letter_from_report.sh "[FILENAME]"
    ```
 
-6. **Report results** to user:
+7. **Report results** to user:
    - Number of facts extracted
    - Validation status
    - Remaining letters count

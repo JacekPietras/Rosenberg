@@ -60,6 +60,12 @@ python3 scripts/sort_facts_by_date.py
 ```
 Sorts `data/facts.json` chronologically to prevent AI hallucinations when processing genealogical data.
 
+### Merge New Facts
+```bash
+python3 scripts/merge_facts.py <temp_facts_file>
+```
+Merges a temporary JSON file containing new facts into `data/facts.json`, then automatically sorts chronologically. Used by the fact-extractor agent to append facts without reading the entire database.
+
 ### Validate Data Integrity
 ```bash
 ./scripts/facts_verify_json.sh    # Validate JSON structure and chronological order
