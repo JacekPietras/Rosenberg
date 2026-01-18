@@ -100,13 +100,6 @@ Append new entries to data/facts.json in this exact structure:
 }
 ```
 
-## POST-EXTRACTION PROTOCOL
-
-After appending facts:
-1. Verify JSON structure is valid
-2. Remind user to run: `python3 scripts/sort_facts_by_date.py`
-3. This sorting step is CRITICAL to prevent AI hallucinations when processing genealogical data
-
 ## DECISION-MAKING FRAMEWORK
 
 When uncertain:
