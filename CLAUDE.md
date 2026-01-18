@@ -60,6 +60,48 @@ python3 scripts/sort_facts_by_date.py
 ```
 Sorts `data/facts.json` chronologically to prevent AI hallucinations when processing genealogical data.
 
+### Validate Data Integrity
+```bash
+./scripts/facts_verify_json.sh    # Validate JSON structure and chronological order
+./scripts/compare_dates.sh         # Generate comparison reports in reports/
+```
+Cross-references dates between facts.json and letter files to identify unprocessed documents and inconsistencies.
+
+### Automated Letter Processing Workflow
+
+**Slash Command:**
+```
+/process-next-letter
+```
+Runs the automated workflow for extracting and validating facts from the next unprocessed letter.
+
+**Direct Script:**
+```bash
+./scripts/process_next_letter.sh
+```
+
+**How it works:**
+1. Checks if `reports/dates_only_in_letters.md` exists (runs `compare_dates.sh` if not)
+2. Identifies the next unprocessed letter from the report
+3. Displays letter information for Claude Code agent processing
+4. After agents complete, removes processed letter from report
+
+**Helper Scripts:**
+```bash
+./scripts/get_next_letter.sh              # Get info about next letter
+./scripts/remove_letter_from_report.sh    # Remove processed letter from report
+```
+
+**Claude Code Agent Flow:**
+When `/process-next-letter` is invoked, Claude Code should:
+1. Run `process_next_letter.sh` to get letter details
+2. Launch `fact-extractor` agent with the letter file
+3. Launch `fact-syntax-verifier` agent to validate updates
+4. Call `remove_letter_from_report.sh` after successful completion
+5. Report progress to user
+
+See `WORKFLOW_USAGE.md` for detailed documentation.
+
 ## Data Architecture
 
 ### Project Structure
@@ -69,6 +111,7 @@ Rosenberg/
 ├── prompts/           # AI prompt templates for fact extraction
 │   ├── prompt.txt             # Main genealogical extraction prompt
 │   └── prompt_irrelevant.txt  # Alternative prompt template
+├── reports/           # Data validation reports (dates_in_both, dates_only_in_facts, dates_only_in_letters)
 └── data/              # Historical source data
     ├── books/             # Source books from knowledge base
     │   ├── sections/      # Bilingual versions
@@ -166,6 +209,12 @@ Alternative prompt template for specialized use cases
 2. **Clean** (`clean_markdown.sh`): Removes image references and base64 data
 3. **Split** (`split_by_h1.sh`): Creates section files, updates main doc with links
 4. **Extract** (`extract_languages.sh`): Separates bilingual tables
+
+### Data Validation Tools
+- `compare_dates.sh`: Cross-references dates, generates reports in `reports/`
+- `facts_verify_json.sh`: Validates JSON syntax and chronological ordering
+- `convert_date_to_iso.sh`: Handles various date formats including ranges
+- Helper scripts: `print_fact_dates.sh`, `print_letter_dates.sh`, `extract_letter_source.sh`
 
 ### Error Handling
 Scripts use `set -e` for fail-fast behavior. Check:
