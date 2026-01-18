@@ -23,10 +23,11 @@ Rosenberg/
 │   ├── split_by_h1.sh         # Split document by H1 sections
 │   └── token.txt              # OAuth token (created by setup)
 └── data/                      # Processed documents
-    ├── sections/              # Sources in bilingual form (books and documents)
-    ├── original/              # Source books in original language only
-    ├── english/               # Source books in English only
-    ├── documents/original/    # Source documents in original language only
+    ├── books/                 # Source books from knowledge base
+    │   ├── sections/          # Bilingual versions
+    │   ├── original/          # German-only versions
+    │   └── english/           # English-only versions
+    ├── documents/original/    # Individual historical letters
     ├── diagrams/              # Genealogical diagrams
     ├── variations.md          # List of name variations and epithets
     └── facts.json             # Extracted facts in JSON format
@@ -75,8 +76,8 @@ Or process a specific file:
 ```
 
 This creates two sets of files:
-- `data/original/` - Original language content only
-- `data/english/` - English content only
+- `data/books/original/` - Original language content only
+- `data/books/english/` - English content only
 
 ### 4. Clean Special Characters (Optional)
 
@@ -88,8 +89,8 @@ To improve readability by removing unnecessary escape characters and special for
 
 Or clean specific directories:
 ```bash
-./scripts/clean_special_chars.sh data/original
-./scripts/clean_special_chars.sh data/english
+./scripts/clean_special_chars.sh data/books/original
+./scripts/clean_special_chars.sh data/books/english
 ```
 
 ## Manual Setup (Alternative)
@@ -117,7 +118,7 @@ This token provides readonly access to the Google Docs knowledge base where hist
 After processing, you'll find:
 
 - **`data/[document-name].md`** - Main document with links to sections
-- **`data/sections/`** - Directory containing individual section files
+- **`data/books/sections/`** - Directory containing individual section files
 - **`data/[document-name].md.backup`** - Backup of the original downloaded file
 
 ## Script Details
@@ -146,9 +147,9 @@ Removes image references and base64 data from downloaded markdown files.
 
 ### `extract_languages.sh`
 Extracts both original and English content from bilingual markdown files.
-- Processes files in `data/sections/` directory
-- Extracts left column content from tables (original language) → `data/original/`
-- Extracts right column content from tables (English) → `data/english/`
+- Processes files in `data/books/sections/` directory
+- Extracts left column content from tables (original language) → `data/books/original/`
+- Extracts right column content from tables (English) → `data/books/english/`
 - Preserves all non-table content in both output versions
 - Processes both languages simultaneously for efficiency
 

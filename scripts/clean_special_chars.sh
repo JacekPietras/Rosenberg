@@ -6,9 +6,9 @@
 # Usage: ./clean_special_chars.sh [directory_path]
 #
 # Examples:
-# ./clean_special_chars.sh data/original    # Clean all .md files in data/original/
-# ./clean_special_chars.sh data/english     # Clean all .md files in data/english/
-# ./clean_special_chars.sh                  # Clean all .md files in data/original/ and data/english/
+# ./clean_special_chars.sh data/books/original    # Clean all .md files in data/books/original/
+# ./clean_special_chars.sh data/books/english     # Clean all .md files in data/books/english/
+# ./clean_special_chars.sh                        # Clean all .md files in data/books/original/ and data/books/english/
 
 set -e
 
@@ -73,9 +73,9 @@ elif [ "$#" -eq 0 ]; then
     # Process both default directories
     echo "🧹 Cleaning special characters from markdown files..."
     echo ""
-    
-    original_dir="$PROJECT_ROOT/data/original"
-    english_dir="$PROJECT_ROOT/data/english"
+
+    original_dir="$PROJECT_ROOT/data/books/original"
+    english_dir="$PROJECT_ROOT/data/books/english"
     
     if [ -d "$original_dir" ]; then
         echo "Processing original files:"
@@ -93,9 +93,9 @@ else
     echo "Usage: $0 [directory_path]"
     echo ""
     echo "Examples:"
-    echo "  $0 data/original    # Clean all .md files in data/original/"
-    echo "  $0 data/english     # Clean all .md files in data/english/"
-    echo "  $0                  # Clean all .md files in both directories"
+    echo "  $0 data/books/original    # Clean all .md files in data/books/original/"
+    echo "  $0 data/books/english     # Clean all .md files in data/books/english/"
+    echo "  $0                        # Clean all .md files in both directories"
     exit 1
 fi
 

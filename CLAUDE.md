@@ -30,16 +30,16 @@ provides readonly access to the source documents.
 ./scripts/process_document.sh <GOOGLE_DOC_URL> [OUTPUT_NAME]
 ```
 Main workflow: syncs document from the Google Docs knowledge base, cleans markdown, splits by
-H1 sections into `data/sections/`. Use this to pull updated source documents from the cloud
+H1 sections into `data/books/sections/`. Use this to pull updated source documents from the cloud
 repository into the local working directory.
 
 ### Extract Language-Specific Content
 ```bash
 ./scripts/extract_languages.sh [filename.md]
 ```
-Processes bilingual tables in `data/sections/`:
-- Left column (original German) → `data/original/`
-- Right column (English) → `data/english/`
+Processes bilingual tables in `data/books/sections/`:
+- Left column (original German) → `data/books/original/`
+- Right column (English) → `data/books/english/`
 
 ### Clean Special Characters
 ```bash
@@ -65,9 +65,10 @@ Sorts `data/facts.json` chronologically to prevent AI hallucinations when proces
 ### Directory Structure
 ```
 data/
-├── sections/          # Bilingual source documents (books and charters)
-├── original/          # German-only versions of source books
-├── english/           # English-only versions of source books
+├── books/             # Source books from knowledge base
+│   ├── sections/      # Bilingual versions
+│   ├── original/      # German-only versions
+│   └── english/       # English-only versions
 ├── documents/original/# Individual historical charters (by date)
 ├── diagrams/          # Genealogical tree diagrams
 ├── variations.md      # Name variations and epithets index
@@ -113,7 +114,7 @@ Facts capture various relationship types:
 
 ## Working with Bilingual Documents
 
-Source books in `data/sections/` use two-column markdown tables:
+Source books in `data/books/sections/` use two-column markdown tables:
 - Left column: Original German text
 - Right column: English translation
 

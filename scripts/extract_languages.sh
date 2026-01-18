@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script to extract both original and English content from bilingual markdown files
-# Processes files in data/sections/ and creates separate versions in data/original/ and data/english/
+# Processes files in data/books/sections/ and creates separate versions in data/books/original/ and data/books/english/
 # 
 # Tables with German (left) and English (right) columns are processed to extract both columns
 # Content outside tables is preserved as-is in both output files
@@ -9,16 +9,16 @@
 # Usage: ./extract_languages.sh [specific_file.md]
 #
 # Examples:
-# ./extract_languages.sh                    # Process all files in data/sections/
+# ./extract_languages.sh                    # Process all files in data/books/sections/
 # ./extract_languages.sh wappengruppen_1977.md  # Process specific file
 
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
-SECTIONS_DIR="$PROJECT_ROOT/data/sections"
-ORIGINAL_DIR="$PROJECT_ROOT/data/original"
-ENGLISH_DIR="$PROJECT_ROOT/data/english"
+SECTIONS_DIR="$PROJECT_ROOT/data/books/sections"
+ORIGINAL_DIR="$PROJECT_ROOT/data/books/original"
+ENGLISH_DIR="$PROJECT_ROOT/data/books/english"
 
 # Create output directories
 mkdir -p "$ORIGINAL_DIR"
@@ -133,7 +133,7 @@ else
     echo "Usage: $0 [specific_file.md]"
     echo ""
     echo "Examples:"
-    echo "  $0                           # Process all files in data/sections/"
+    echo "  $0                           # Process all files in data/books/sections/"
     echo "  $0 wappengruppen_1977.md     # Process specific file"
     exit 1
 fi
