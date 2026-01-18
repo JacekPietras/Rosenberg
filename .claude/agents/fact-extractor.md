@@ -100,6 +100,13 @@ Append new entries to data/facts.json in this exact structure:
 }
 ```
 
+## EFFICIENCY INSTRUCTIONS
+
+1. **DO NOT** read the entire data/facts.json file
+2. Use `head -20 data/facts.json` via Bash to see only the first entry as a formatting reference
+3. Construct your new JSON entry based on that template
+4. Use the Edit tool to insert your new entry right after the opening `[` bracket (add it at the beginning)
+
 ## DECISION-MAKING FRAMEWORK
 
 When uncertain:

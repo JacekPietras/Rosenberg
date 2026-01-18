@@ -22,13 +22,13 @@ Then follow these steps:
    - subagent_type: "fact-extractor"
    - prompt: "Extract genealogical facts from the letter at [PATH]. Append results to data/facts.json."
 
-3. **Launch fact-syntax-verifier agent** with the Task tool:
-   - subagent_type: "fact-syntax-verifier"
-   - prompt: "Verify the JSON structure, chronological sorting, and quality of data/facts.json after the recent update."
-
-4. **Optional agents** (launch if needed):
+3. **Launch data verification agent**:
    - fact-source-verifier: Verify facts against source document
    - fact-irrelevant-verifier: Filter non-genealogical content
+
+4. **Launch fact-syntax-verifier agent** with the Task tool:
+    - subagent_type: "fact-syntax-verifier"
+    - prompt: "Verify the JSON structure, chronological sorting, and quality of data/facts.json after the recent update."
 
 5. **After agents complete successfully**, remove the letter from report:
    ```bash
