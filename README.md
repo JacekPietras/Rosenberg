@@ -1,6 +1,12 @@
 # Rosenberg Document Processor
 
-A tool for downloading, cleaning, and organizing Google Docs documents into structured markdown files.
+A tool for syncing historical research documents from Google Docs (the primary knowledge base) and
+processing them into structured markdown files for local analysis.
+
+**Source Repository**: Historical documents about the von Rosenberg family are maintained in Google
+Docs, which serves as the authoritative cloud-based knowledge base where sources are created,
+edited, and updated. This tool provides OAuth integration to pull those documents into a local
+working directory.
 
 ## Project Structure
 
@@ -37,19 +43,20 @@ Run the interactive setup script:
 ```
 
 This will guide you through:
-- Getting an OAuth 2.0 token from Google
+- Getting an OAuth 2.0 token from Google to access the Google Docs knowledge base
 - Saving it securely to `scripts/token.txt`
+- Enabling readonly access to historical source documents maintained in Google Docs
 
 ### 2. Process a Document
 
-Use the main processing script:
+Use the main processing script to sync a document from the Google Docs knowledge base:
 
 ```bash
 ./scripts/process_document.sh https://docs.google.com/document/d/1BAfsC2IshoZsX5ulN1dW2ywa9ePYn45DmyGQeAanw10 rosenberg
 ```
 
 This will:
-1. Download the Google Doc as markdown
+1. Download the document from Google Docs (the source repository) as markdown
 2. Clean up image references and formatting
 3. Split the document by H1 headings into separate files
 4. Create a main document with links to all sections
@@ -87,14 +94,14 @@ Or clean specific directories:
 
 ## Manual Setup (Alternative)
 
-If you prefer to set up the OAuth token manually:
+If you prefer to set up the OAuth token manually to access the Google Docs knowledge base:
 
 ### Get OAuth 2.0 Token
 
 1. Go to the [Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground)
 2. In the "Select & authorize APIs" section, find **"Drive API v3"**
 3. Expand it and select: `https://www.googleapis.com/auth/drive.readonly`
-4. Click **"Authorize APIs"** and sign in with your Google account
+4. Click **"Authorize APIs"** and sign in with your Google account (the one with access to the historical documents)
 5. Click **"Exchange authorization code for tokens"**
 6. Copy the **"Access token"** value (starts with `ya29.a0...`)
 7. Save it to `scripts/token.txt`:
@@ -102,6 +109,8 @@ If you prefer to set up the OAuth token manually:
    echo "your_token_here" > scripts/token.txt
    chmod 600 scripts/token.txt
    ```
+
+This token provides readonly access to the Google Docs knowledge base where historical source documents are maintained.
 
 ## Output Files
 
@@ -124,10 +133,11 @@ Main workflow script that orchestrates the entire process:
 - Provides status updates and error handling
 
 ### `download_doc.sh`
-Downloads a Google Doc as markdown using the Google Drive API.
+Downloads a document from the Google Docs knowledge base as markdown using the Google Drive API.
+- Accesses the cloud-based repository where historical sources are maintained
 - Supports both document IDs and full URLs
 - Automatically detects output format based on file extension
-- Requires valid OAuth token
+- Requires valid OAuth token for readonly access
 
 ### `clean_markdown.sh`
 Removes image references and base64 data from downloaded markdown files.

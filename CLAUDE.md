@@ -4,7 +4,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A historical research tool for processing, organizing, and analyzing medieval German genealogical documents about the von Rosenberg family (13th-16th centuries). The system downloads Google Docs, converts them to markdown, extracts bilingual content (German/English), and maintains a structured JSON database of historical facts with dates, sources, and relationships.
+A historical research tool for processing, organizing, and analyzing medieval German genealogical
+documents about the von Rosenberg family (13th-16th centuries).
+
+**Primary Knowledge Base**: Historical sources are maintained in Google Docs, which serves as the
+authoritative repository where research documents are created, edited, and updated. The OAuth
+integration provides read access to this cloud-based knowledge base.
+
+The system downloads documents from Google Docs, converts them to markdown, extracts bilingual
+content (German/English), and maintains a structured JSON database of historical facts with dates,
+sources, and relationships in the local repository.
 
 ## Core Workflow Commands
 
@@ -12,13 +21,17 @@ A historical research tool for processing, organizing, and analyzing medieval Ge
 ```bash
 ./scripts/setup.sh
 ```
-Interactive script that guides through OAuth 2.0 token configuration. Token saved to `scripts/token.txt`.
+Interactive script that guides through OAuth 2.0 token configuration to access the Google Docs
+knowledge base where historical sources are maintained. Token saved to `scripts/token.txt` and
+provides readonly access to the source documents.
 
 ### Process Google Documents
 ```bash
 ./scripts/process_document.sh <GOOGLE_DOC_URL> [OUTPUT_NAME]
 ```
-Main workflow: downloads document, cleans markdown, splits by H1 sections into `data/sections/`.
+Main workflow: syncs document from the Google Docs knowledge base, cleans markdown, splits by
+H1 sections into `data/sections/`. Use this to pull updated source documents from the cloud
+repository into the local working directory.
 
 ### Extract Language-Specific Content
 ```bash
@@ -92,7 +105,7 @@ Facts capture various relationship types:
 ### Common German Terms
 - **Ritter**: Knight
 - **Edelknecht**: Squire/nobleman
-- **Vogt**: Bailiff/administrator
+- **Vogt**: Bailiff
 - **Gülten/Zinse**: Rents/dues
 - **Mannlehen**: Male fief
 - **Burggut**: Castle property
@@ -122,6 +135,7 @@ The `extract_languages.sh` script:
 
 ### OAuth Token Security
 - Token stored in `scripts/token.txt` (gitignored)
+- Provides readonly access to Google Docs knowledge base where historical sources are maintained
 - Tokens expire; re-run `setup.sh` if API calls fail
 - Uses Google Drive API v3 with readonly scope
 
