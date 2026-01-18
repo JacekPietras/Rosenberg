@@ -32,9 +32,9 @@ echo "Collecting dates from facts.json..."
 echo "Collecting dates from letter filenames..."
 "$SCRIPT_DIR/print_letter_dates.sh" > "$LETTER_DATA"
 
-# Extract just the dates (first field before |) and sort them
-cut -d'|' -f1 "$FACTS_DATA" | sed 's/ *$//' | sort > "$FACTS_DATES"
-cut -d'|' -f1 "$LETTER_DATA" | sed 's/ *$//' | sort > "$LETTER_DATES"
+# Extract just the dates (first field before |), sort them, and remove duplicates
+cut -d'|' -f1 "$FACTS_DATA" | sed 's/ *$//' | sort | uniq > "$FACTS_DATES"
+cut -d'|' -f1 "$LETTER_DATA" | sed 's/ *$//' | sort | uniq > "$LETTER_DATES"
 
 # Combine and sort all unique dates
 cat "$FACTS_DATES" "$LETTER_DATES" | sort -u > "$ALL_DATES"
