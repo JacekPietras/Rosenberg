@@ -129,11 +129,12 @@ cat >> "$OUTPUT_ONLY_LETTERS" << EOF
 EOF
 
 comm -13 "$FACTS_DATES" "$LETTER_DATES" | while read -r date; do
-    # Find the letter filename(s) and source(s)
-    letter_info=$(grep "^$date |" "$LETTER_DATA")
-    letter_filenames=$(echo "$letter_info" | cut -d'|' -f2 | sed 's/^ *//;s/ *$//' | paste -sd ", " -)
-    letter_sources=$(echo "$letter_info" | cut -d'|' -f3- | sed 's/^ *//' | paste -sd " / " -)
-    echo "- **\`$date\`** - File: \`$letter_filenames.md\` - Source: $letter_sources" >> "$OUTPUT_ONLY_LETTERS"
+    # Find the letter filename(s) and source(s) - output each on separate line
+    grep "^$date |" "$LETTER_DATA" | while IFS='|' read -r date_field filename_field source_field; do
+        filename=$(echo "$filename_field" | sed 's/^ *//;s/ *$//')
+        source=$(echo "$source_field" | sed 's/^ *//')
+        echo "- **\`$date\`** - File: \`$filename.md\` - Source: $source" >> "$OUTPUT_ONLY_LETTERS"
+    done
 done
 
 cat >> "$OUTPUT_ONLY_LETTERS" << EOF
