@@ -7,6 +7,7 @@
       "Glob()",
       "Grep(**)",
       "Bash:*",
+      "Bash(python3:*)",
       "Bash(tree:*)",
       "Bash(ls:*)",
       "Bash(xargs:*)",
@@ -37,7 +38,8 @@
       "Task(fact-irrelevant-verifier:*)",
       "Bash(./scripts/process_next_letter.sh:*)",
       "Bash(./scripts/process_next_letter.sh:*)",
-      "Bash(python3:*)"
+      "Bash(./scripts/facts_verify_json.sh:*)",
+      "Bash(./scripts/remove_letter_from_report.sh:*)"
     ],
     "deny": [
       "Bash(rm -rf /)"
