@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Print all dates from letter filenames in data/letters/original
-# Format: original_filename [YYYY-MM-DD]
+# Print all dates from letter filenames in data/letters/original with their sources
+# Format: YYYY-MM-DD | source
 
 # Get the script directory and project root
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -12,6 +12,9 @@ LETTERS_DIR="$PROJECT_ROOT/data/letters/original"
 
 # Path to conversion script
 CONVERT_SCRIPT="$SCRIPT_DIR/convert_date_to_iso.sh"
+
+# Path to source extraction script
+EXTRACT_SOURCE_SCRIPT="$SCRIPT_DIR/extract_letter_source.sh"
 
 # Check if directory exists
 if [ ! -d "$LETTERS_DIR" ]; then
@@ -25,23 +28,35 @@ if [ ! -f "$CONVERT_SCRIPT" ]; then
     exit 1
 fi
 
-# Make sure conversion script is executable
-chmod +x "$CONVERT_SCRIPT"
+# Check if source extraction script exists
+if [ ! -f "$EXTRACT_SOURCE_SCRIPT" ]; then
+    echo "Error: $EXTRACT_SOURCE_SCRIPT not found"
+    exit 1
+fi
 
-# List all .md files, extract filenames, and convert to ISO format
+# Make sure scripts are executable
+chmod +x "$CONVERT_SCRIPT"
+chmod +x "$EXTRACT_SOURCE_SCRIPT"
+
+# List all .md files, extract filenames, convert to ISO format, and get sources
 find "$LETTERS_DIR" -name "*.md" -type f | \
-    sed 's|.*/||' | \
-    sed 's|\.md$||' | \
-    grep -v '^list$' | \
+    grep -v '/list\.md$' | \
     sort | \
-    while IFS= read -r filename; do
+    while IFS= read -r filepath; do
+        filename=$(basename "$filepath" .md)
+
         # Convert to ISO format using the conversion script
         iso_date=$("$CONVERT_SCRIPT" "$filename")
 
+        # Extract source from the letter file
+        source=$("$EXTRACT_SOURCE_SCRIPT" "$filepath")
+
         if [ -n "$iso_date" ]; then
-            echo "$filename [$iso_date]"
-        else
-            echo "$filename"
+            if [ -n "$source" ]; then
+                echo "$iso_date | $source"
+            else
+                echo "$iso_date | [No source found]"
+            fi
         fi
     done
 

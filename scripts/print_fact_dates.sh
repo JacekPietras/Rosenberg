@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Print all dates from data/facts.json (just the date values)
+# Print all dates from data/facts.json with their sources
+# Format: date | source
 
 # Get the script directory and project root
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -15,6 +16,6 @@ if [ ! -f "$FACTS_FILE" ]; then
     exit 1
 fi
 
-# Extract and print just the date values using jq
-jq -r '.[].date' "$FACTS_FILE"
+# Extract and print date and source using jq
+jq -r '.[] | "\(.date) | \(.source)"' "$FACTS_FILE"
 

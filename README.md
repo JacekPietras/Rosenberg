@@ -174,7 +174,7 @@ Splits a markdown document by H1 headings into separate files.
 
 ### `split_by_h3.sh`
 Splits a markdown document by H3 (###) headings into separate files.
-- Default input: `data/books/original/documents.md`
+- Default input: `data/books/original/letters.md`
 - Default output: `data/letters/original/`
 - Creates individual files for each H3 section (typically individual letters)
 - Does NOT modify the original file; only creates section files
