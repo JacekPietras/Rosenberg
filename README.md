@@ -21,7 +21,12 @@ Rosenberg/
 │   ├── download_doc.sh        # Download Google Docs as markdown
 │   ├── clean_markdown.sh      # Clean downloaded markdown
 │   ├── split_by_h1.sh         # Split document by H1 sections
+│   ├── split_by_h3.sh         # Split document by H3 sections
+│   ├── sort_facts_by_date.py  # Sort facts.json chronologically
 │   └── token.txt              # OAuth token (created by setup)
+├── prompts/                   # AI prompt templates
+│   ├── prompt.txt             # Main genealogical extraction prompt
+│   └── prompt_irrelevant.txt  # Cleanup irrelevant content prompt
 └── data/                      # Processed documents
     ├── books/                 # Source books from knowledge base
     │   ├── sections/          # Bilingual versions
@@ -166,3 +171,31 @@ Splits a markdown document by H1 headings into separate files.
 - Creates individual files for each H1 section
 - Updates main document with links to sections
 - Creates backup of original file
+
+### `split_by_h3.sh`
+Splits a markdown document by H3 (###) headings into separate files.
+- Default input: `data/books/original/documents.md`
+- Default output: `data/letters/original/`
+- Creates individual files for each H3 section (typically individual letters)
+- Does NOT modify the original file; only creates section files
+- Useful for splitting a compiled document of letters into individual dated files
+
+### `sort_facts_by_date.py`
+Python utility to sort the facts.json database chronologically.
+- Reads `data/facts.json` and sorts all entries by date
+- Ensures chronological order to prevent AI hallucinations
+- Uses ISO 8601 date format (YYYY-MM-DD or YYYY)
+- Should be run after manual edits to facts.json
+- No external dependencies (uses standard library only)
+
+## AI Prompt Templates
+
+### `prompts/prompt.txt`
+AI prompt template for extracting genealogical facts from historical documents.
+- Used for processing letters in `data/letters/original/`
+- Defines extraction rules for family relationships, titles, offices, properties, and events
+- Ensures consistent fact format and atomic relationship extraction
+- Preserves original German/Latin terms and territorial designations
+
+### `prompts/prompt_irrelevant.txt`
+AI prompt template for cleaning up irrelevant content from historical documents.

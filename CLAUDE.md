@@ -62,17 +62,22 @@ Sorts `data/facts.json` chronologically to prevent AI hallucinations when proces
 
 ## Data Architecture
 
-### Directory Structure
+### Project Structure
 ```
-data/
-├── books/             # Source books from knowledge base
-│   ├── sections/      # Bilingual versions
-│   ├── original/      # German-only versions
-│   └── english/       # English-only versions
-├── letters/original/  # Individual historical letters (by date)
-├── diagrams/          # Genealogical tree diagrams
-├── variations.md      # Name variations and epithets index
-└── facts.json         # Structured genealogical database
+Rosenberg/
+├── scripts/           # Processing and workflow scripts
+├── prompts/           # AI prompt templates for fact extraction
+│   ├── prompt.txt             # Main genealogical extraction prompt
+│   └── prompt_irrelevant.txt  # Alternative prompt template
+└── data/              # Historical source data
+    ├── books/             # Source books from knowledge base
+    │   ├── sections/      # Bilingual versions
+    │   ├── original/      # German-only versions
+    │   └── english/       # English-only versions
+    ├── letters/original/  # Individual historical letters (by date)
+    ├── diagrams/          # Genealogical tree diagrams
+    ├── variations.md      # Name variations and epithets index
+    └── facts.json         # Structured genealogical database
 ```
 
 ### facts.json Schema
@@ -123,6 +128,22 @@ The `extract_languages.sh` script:
 2. Extracts left column only for German version
 3. Extracts right column only for English version
 4. Processes both languages simultaneously for efficiency
+
+## AI Prompt Templates
+
+The `prompts/` directory contains prompt templates for extracting genealogical facts from historical documents:
+
+### `prompts/prompt.txt`
+Main AI prompt for processing historical letters in `data/letters/original/`:
+- Defines extraction rules for family relationships (son/daughter/spouse/sibling)
+- Specifies format for titles and offices (Ritter, Vogt, Edelknecht, etc.)
+- Handles property transactions and feudal relationships
+- Preserves original German/Latin terms and territorial designations
+- Ensures atomic fact extraction (one relationship per fact)
+- Includes epithets and territorial designations for disambiguation
+
+### `prompts/prompt_irrelevant.txt`
+Alternative prompt template for specialized use cases
 
 ## Data Integrity Guidelines
 
