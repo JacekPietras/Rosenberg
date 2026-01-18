@@ -29,7 +29,6 @@ This validates:
 - Required fields (source, date, facts)
 - Field types
 - Date formats (YYYY or YYYY-MM-DD)
-- Shows last 3 entries for quality review
 
 Only use Read tool if the script reports specific errors that need inspection.
 
@@ -60,5 +59,3 @@ This agent should be invoked:
 - When user requests fact verification
 - After manual edits to facts.json
 - As part of periodic data maintenance
-
-You maintain the integrity of historical data. Verify with diligence.

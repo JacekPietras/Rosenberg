@@ -9,4 +9,4 @@ jq '.' "$FACTS_FILE" > "$TMP_FILE" && mv "$TMP_FILE" "$FACTS_FILE"
 
 echo "✓ JSON syntax corrected and formatted"
 echo "Re-running validation..."
-./scripts/verify_facts_json.sh
+./scripts/facts_verify_json.sh

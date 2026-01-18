@@ -36,8 +36,4 @@ else
     exit 1
 fi
 
-echo "Getting last 3 entries for quality review..."
-jq '.[-3:]' "$FACTS_FILE"
-
-echo ""
-echo "All validation checks passed!"
+echo "✓ All validation checks passed!"
