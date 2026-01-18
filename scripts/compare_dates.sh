@@ -26,7 +26,7 @@ echo "Collecting dates from facts.json..."
 echo "Collecting dates from letter filenames..."
 "$SCRIPT_DIR/print_letter_dates.sh" > "$LETTER_DATA"
 
-# Extract just the dates (before the |) and sort them
+# Extract just the dates (first field before |) and sort them
 cut -d'|' -f1 "$FACTS_DATA" | sed 's/ *$//' | sort > "$FACTS_DATES"
 cut -d'|' -f1 "$LETTER_DATA" | sed 's/ *$//' | sort > "$LETTER_DATES"
 
@@ -76,8 +76,6 @@ cat >> "$OUTPUT_FILE" << 'EOF'
 
 These dates appear in both `facts.json` and as letter filenames:
 
-| Date | Facts Source | Letter Source |
-|------|--------------|---------------|
 EOF
 
 comm -12 "$FACTS_DATES" "$LETTER_DATES" | while read -r date; do
@@ -85,9 +83,14 @@ comm -12 "$FACTS_DATES" "$LETTER_DATES" | while read -r date; do
     fact_source=$(grep "^$date |" "$FACTS_DATA" | head -1 | cut -d'|' -f2- | sed 's/^ *//')
 
     # Find the letter source(s)
-    letter_sources=$(grep "^$date |" "$LETTER_DATA" | cut -d'|' -f2- | sed 's/^ *//' | paste -sd " / " -)
+    letter_info=$(grep "^$date |" "$LETTER_DATA")
+    letter_sources=$(echo "$letter_info" | cut -d'|' -f3- | sed 's/^ *//' | paste -sd " / " -)
 
-    echo "| \`$date\` | $fact_source | $letter_sources |" >> "$OUTPUT_FILE"
+    echo "### Date: \`$date\`" >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+    echo "- **Facts Source:** $fact_source" >> "$OUTPUT_FILE"
+    echo "- **Letter Source:** $letter_sources" >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
 done
 
 # Add dates only in facts
@@ -97,13 +100,11 @@ cat >> "$OUTPUT_FILE" << 'EOF'
 
 These dates appear in `facts.json` but have no corresponding letter file:
 
-| Date | Source |
-|------|--------|
 EOF
 
 comm -23 "$FACTS_DATES" "$LETTER_DATES" | while read -r date; do
     fact_source=$(grep "^$date |" "$FACTS_DATA" | head -1 | cut -d'|' -f2- | sed 's/^ *//')
-    echo "| \`$date\` | $fact_source |" >> "$OUTPUT_FILE"
+    echo "- **\`$date\`** - $fact_source" >> "$OUTPUT_FILE"
 done
 
 # Add dates only in letters
@@ -113,23 +114,15 @@ cat >> "$OUTPUT_FILE" << 'EOF'
 
 These dates have letter files but no corresponding entries in `facts.json`:
 
-| Date | Source |
-|------|--------|
 EOF
 
 comm -13 "$FACTS_DATES" "$LETTER_DATES" | while read -r date; do
-    # Find the letter source(s)
-    letter_sources=$(grep "^$date |" "$LETTER_DATA" | cut -d'|' -f2- | sed 's/^ *//' | paste -sd " / " -)
-    echo "| \`$date\` | $letter_sources |" >> "$OUTPUT_FILE"
+    # Find the letter filename(s) and source(s)
+    letter_info=$(grep "^$date |" "$LETTER_DATA")
+    letter_filenames=$(echo "$letter_info" | cut -d'|' -f2 | sed 's/^ *//;s/ *$//' | paste -sd ", " -)
+    letter_sources=$(echo "$letter_info" | cut -d'|' -f3- | sed 's/^ *//' | paste -sd " / " -)
+    echo "- **\`$date\`** - File: \`$letter_filenames.md\` - Source: $letter_sources" >> "$OUTPUT_FILE"
 done
 
 # Add footer
 cat >> "$OUTPUT_FILE" << EOF
-
----
-
-*Generated on $(date '+%Y-%m-%d %H:%M:%S')*
-EOF
-
-echo "Comparison document generated: $OUTPUT_FILE"
-

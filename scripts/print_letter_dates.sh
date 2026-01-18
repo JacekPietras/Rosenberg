@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Print all dates from letter filenames in data/letters/original with their sources
-# Format: YYYY-MM-DD | source
+# Format: YYYY-MM-DD | filename | source
 
 # Get the script directory and project root
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -53,9 +53,9 @@ find "$LETTERS_DIR" -name "*.md" -type f | \
 
         if [ -n "$iso_date" ]; then
             if [ -n "$source" ]; then
-                echo "$iso_date | $source"
+                echo "$iso_date | $filename | $source"
             else
-                echo "$iso_date | [No source found]"
+                echo "$iso_date | $filename | [No source found]"
             fi
         fi
     done

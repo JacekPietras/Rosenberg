@@ -2,6 +2,10 @@
 scripts/token.txt
 token.txt
 
+# Preview files
+data/date_comparison.md
+data/letters/original/list.txt
+
 # Backup files
 *.backup
 *.bak

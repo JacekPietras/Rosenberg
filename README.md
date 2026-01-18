@@ -12,30 +12,36 @@ working directory.
 
 ```
 Rosenberg/
-├── README.md                  # This file
-├── scripts/                   # All executable scripts
-│   ├── setup.sh               # Interactive setup for OAuth token
-│   ├── process_document.sh    # Main workflow script
-│   ├── extract_languages.sh   # Extract original and English content
-│   ├── clean_special_chars.sh # Clean unnecessary special characters
-│   ├── download_doc.sh        # Download Google Docs as markdown
-│   ├── clean_markdown.sh      # Clean downloaded markdown
-│   ├── split_by_h1.sh         # Split document by H1 sections
-│   ├── split_by_h3.sh         # Split document by H3 sections
-│   ├── sort_facts_by_date.py  # Sort facts.json chronologically
-│   └── token.txt              # OAuth token (created by setup)
-├── prompts/                   # AI prompt templates
-│   ├── prompt.txt             # Main genealogical extraction prompt
-│   └── prompt_irrelevant.txt  # Cleanup irrelevant content prompt
-└── data/                      # Processed documents
-    ├── books/                 # Source books from knowledge base
-    │   ├── sections/          # Bilingual versions
-    │   ├── original/          # German-only versions
-    │   └── english/           # English-only versions
-    ├── letters/original/      # Individual historical letters
-    ├── diagrams/              # Genealogical diagrams
-    ├── variations.md          # List of name variations and epithets
-    └── facts.json             # Extracted facts in JSON format
+├── README.md                    # This file
+├── scripts/                     # All executable scripts
+│   ├── setup.sh                 # Interactive setup for OAuth token
+│   ├── process_document.sh      # Main workflow script
+│   ├── extract_languages.sh     # Extract original and English content
+│   ├── clean_special_chars.sh   # Clean unnecessary special characters
+│   ├── download_doc.sh          # Download Google Docs as markdown
+│   ├── clean_markdown.sh        # Clean downloaded markdown
+│   ├── split_by_h1.sh           # Split document by H1 sections
+│   ├── split_by_h3.sh           # Split document by H3 sections
+│   ├── sort_facts_by_date.py    # Sort facts.json chronologically
+│   ├── compare_dates.sh         # Compare dates between facts and letters
+│   ├── print_fact_dates.sh      # Extract dates from facts.json
+│   ├── print_letter_dates.sh    # Extract dates from letter filenames
+│   ├── convert_date_to_iso.sh   # Convert letter dates to ISO format
+│   ├── extract_letter_source.sh # Extract Quellen from letter files
+│   └── token.txt                # OAuth token (created by setup)
+├── prompts/                     # AI prompt templates
+│   ├── prompt.txt               # Main genealogical extraction prompt
+│   └── prompt_irrelevant.txt    # Cleanup irrelevant content prompt
+└── data/                        # Processed documents
+    ├── books/                   # Source books from knowledge base
+    │   ├── sections/            # Bilingual versions
+    │   ├── original/            # German-only versions
+    │   └── english/             # English-only versions
+    ├── letters/original/        # Individual historical letters
+    ├── diagrams/                # Genealogical diagrams
+    ├── variations.md            # List of name variations and epithets
+    ├── facts.json               # Extracted facts in JSON format
+    └── date_comparison.md       # Comparison report (generated)
 ```
 
 ## Quick Start
@@ -187,6 +193,17 @@ Python utility to sort the facts.json database chronologically.
 - Uses ISO 8601 date format (YYYY-MM-DD or YYYY)
 - Should be run after manual edits to facts.json
 - No external dependencies (uses standard library only)
+
+### `compare_dates.sh`
+Generates a comprehensive comparison report between dates in `facts.json` and letter files.
+- Compares dates from `data/facts.json` with dates from `data/letters/original/` filenames
+- Extracts and compares document sources (Quellen) from both facts and letters
+- Creates `data/date_comparison.md` with three sections:
+  - **Dates in Both**: Shows matching dates with facts source, letter filename, and letter source side-by-side
+  - **Dates Only in Facts**: Lists dates in facts.json without corresponding letter files
+  - **Dates Only in Letters**: Lists letter files not yet processed into facts.json
+- Helps identify discrepancies, missing letters, and unprocessed documents
+- Uses `print_fact_dates.sh`, `print_letter_dates.sh`, and `convert_date_to_iso.sh` helper scripts
 
 ## AI Prompt Templates
 
