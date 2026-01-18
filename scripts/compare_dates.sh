@@ -1,14 +1,20 @@
 #!/bin/bash
 
 # Compare dates from facts.json and letter filenames
-# Generates a comparison document showing which dates exist in both, only in facts, or only in letters
+# Generates 3 separate files showing which dates exist in both, only in facts, or only in letters
 
 # Get the script directory and project root
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
-# Output file
-OUTPUT_FILE="$PROJECT_ROOT/data/date_comparison.md"
+# Create reports directory if it doesn't exist
+REPORTS_DIR="$PROJECT_ROOT/reports"
+mkdir -p "$REPORTS_DIR"
+
+# Output files
+OUTPUT_BOTH="$REPORTS_DIR/dates_in_both.md"
+OUTPUT_ONLY_FACTS="$REPORTS_DIR/dates_only_in_facts.md"
+OUTPUT_ONLY_LETTERS="$REPORTS_DIR/dates_only_in_letters.md"
 
 # Temporary files
 FACTS_DATA=$(mktemp)
@@ -47,34 +53,18 @@ ONLY_FACTS=$(comm -23 "$FACTS_DATES" "$LETTER_DATES" | wc -l | tr -d ' ')
 # Find dates only in letters
 ONLY_LETTERS=$(comm -13 "$FACTS_DATES" "$LETTER_DATES" | wc -l | tr -d ' ')
 
-echo "Generating comparison document..."
+echo "Generating comparison files..."
 
-# Generate the markdown document
-cat > "$OUTPUT_FILE" << 'EOF'
-# Date Comparison: Facts vs Letters
+# ===== FILE 1: Dates in Both =====
+cat > "$OUTPUT_BOTH" << 'EOF'
+# Dates in Both Facts and Letters
 
-This document compares dates from `data/facts.json` (facts dates) with dates extracted from letter filenames in `data/letters//` (letter dates).
-
-EOF
-
-# Add statistics
-cat >> "$OUTPUT_FILE" << EOF
-## Statistics
-
-- **Total facts entries**: $TOTAL_FACTS
-- **Total letter files**: $TOTAL_LETTERS
-- **Total unique dates**: $TOTAL_UNIQUE
-- **Dates in both**: $IN_BOTH
-- **Dates only in facts**: $ONLY_FACTS
-- **Dates only in letters**: $ONLY_LETTERS
+These dates appear in both `data/facts.json` and as letter filenames.
 
 EOF
 
-# Add dates in both
-cat >> "$OUTPUT_FILE" << 'EOF'
-## Dates in Both Facts and Letters
-
-These dates appear in both `facts.json` and as letter filenames:
+cat >> "$OUTPUT_BOTH" << EOF
+**Total**: $IN_BOTH dates
 
 EOF
 
@@ -86,33 +76,55 @@ comm -12 "$FACTS_DATES" "$LETTER_DATES" | while read -r date; do
     letter_info=$(grep "^$date |" "$LETTER_DATA")
     letter_sources=$(echo "$letter_info" | cut -d'|' -f3- | sed 's/^ *//' | paste -sd " / " -)
 
-    echo "### Date: \`$date\`" >> "$OUTPUT_FILE"
-    echo "" >> "$OUTPUT_FILE"
-    echo "- **Facts Source:** $fact_source" >> "$OUTPUT_FILE"
-    echo "- **Letter Source:** $letter_sources" >> "$OUTPUT_FILE"
-    echo "" >> "$OUTPUT_FILE"
+    echo "### Date: \`$date\`" >> "$OUTPUT_BOTH"
+    echo "" >> "$OUTPUT_BOTH"
+    echo "- **Facts Source:** $fact_source" >> "$OUTPUT_BOTH"
+    echo "- **Letter Source:** $letter_sources" >> "$OUTPUT_BOTH"
+    echo "" >> "$OUTPUT_BOTH"
 done
 
-# Add dates only in facts
-cat >> "$OUTPUT_FILE" << 'EOF'
+cat >> "$OUTPUT_BOTH" << EOF
 
-## Dates Only in Facts
+---
 
-These dates appear in `facts.json` but have no corresponding letter file:
+*Generated on $(date '+%Y-%m-%d %H:%M:%S')*
+EOF
+
+# ===== FILE 2: Dates Only in Facts =====
+cat > "$OUTPUT_ONLY_FACTS" << 'EOF'
+# Dates Only in Facts
+
+These dates appear in `data/facts.json` but have no corresponding letter file.
+
+EOF
+
+cat >> "$OUTPUT_ONLY_FACTS" << EOF
+**Total**: $ONLY_FACTS dates
 
 EOF
 
 comm -23 "$FACTS_DATES" "$LETTER_DATES" | while read -r date; do
     fact_source=$(grep "^$date |" "$FACTS_DATA" | head -1 | cut -d'|' -f2- | sed 's/^ *//')
-    echo "- **\`$date\`** - $fact_source" >> "$OUTPUT_FILE"
+    echo "- **\`$date\`** - $fact_source" >> "$OUTPUT_ONLY_FACTS"
 done
 
-# Add dates only in letters
-cat >> "$OUTPUT_FILE" << 'EOF'
+cat >> "$OUTPUT_ONLY_FACTS" << EOF
 
-## Dates Only in Letters
+---
 
-These dates have letter files but no corresponding entries in `facts.json`:
+*Generated on $(date '+%Y-%m-%d %H:%M:%S')*
+EOF
+
+# ===== FILE 3: Dates Only in Letters =====
+cat > "$OUTPUT_ONLY_LETTERS" << 'EOF'
+# Dates Only in Letters
+
+These dates have letter files but no corresponding entries in `data/facts.json`.
+
+EOF
+
+cat >> "$OUTPUT_ONLY_LETTERS" << EOF
+**Total**: $ONLY_LETTERS dates
 
 EOF
 
@@ -121,8 +133,18 @@ comm -13 "$FACTS_DATES" "$LETTER_DATES" | while read -r date; do
     letter_info=$(grep "^$date |" "$LETTER_DATA")
     letter_filenames=$(echo "$letter_info" | cut -d'|' -f2 | sed 's/^ *//;s/ *$//' | paste -sd ", " -)
     letter_sources=$(echo "$letter_info" | cut -d'|' -f3- | sed 's/^ *//' | paste -sd " / " -)
-    echo "- **\`$date\`** - File: \`$letter_filenames.md\` - Source: $letter_sources" >> "$OUTPUT_FILE"
+    echo "- **\`$date\`** - File: \`$letter_filenames.md\` - Source: $letter_sources" >> "$OUTPUT_ONLY_LETTERS"
 done
 
-# Add footer
-cat >> "$OUTPUT_FILE" << EOF
+cat >> "$OUTPUT_ONLY_LETTERS" << EOF
+
+---
+
+*Generated on $(date '+%Y-%m-%d %H:%M:%S')*
+EOF
+
+echo ""
+echo "✅ Done. Generated 3 comparison files:"
+echo "   - $OUTPUT_BOTH ($IN_BOTH dates)"
+echo "   - $OUTPUT_ONLY_FACTS ($ONLY_FACTS dates)"
+echo "   - $OUTPUT_ONLY_LETTERS ($ONLY_LETTERS dates)"

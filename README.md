@@ -13,35 +13,38 @@ working directory.
 ```
 Rosenberg/
 ├── README.md                    # This file
-├── scripts/                     # All executable scripts
-│   ├── setup.sh                 # Interactive setup for OAuth token
-│   ├── process_document.sh      # Main workflow script
-│   ├── extract_languages.sh     # Extract original and English content
-│   ├── clean_special_chars.sh   # Clean unnecessary special characters
-│   ├── download_doc.sh          # Download Google Docs as markdown
-│   ├── clean_markdown.sh        # Clean downloaded markdown
-│   ├── split_by_h1.sh           # Split document by H1 sections
-│   ├── split_by_h3.sh           # Split document by H3 sections
-│   ├── sort_facts_by_date.py    # Sort facts.json chronologically
-│   ├── compare_dates.sh         # Compare dates between facts and letters
-│   ├── print_fact_dates.sh      # Extract dates from facts.json
-│   ├── print_letter_dates.sh    # Extract dates from letter filenames
-│   ├── convert_date_to_iso.sh   # Convert letter dates to ISO format
-│   ├── extract_letter_source.sh # Extract Quellen from letter files
-│   └── token.txt                # OAuth token (created by setup)
+├── data/                        # Processed documents
+│   ├── books/                   # Source books from knowledge base
+│   │   ├── sections/            # Bilingual versions
+│   │   ├── original/            # German-only versions
+│   │   └── english/             # English-only versions
+│   ├── letters/                 # Individual historical letters extracted from books/original/letters.md
+│   ├── diagrams/                # Genealogical diagrams extracted from books
+│   ├── variations.md            # List of name variations and epithets
+│   └── facts.json               # Extracted facts in JSON format
 ├── prompts/                     # AI prompt templates
 │   ├── prompt.txt               # Main genealogical extraction prompt
 │   └── prompt_irrelevant.txt    # Cleanup irrelevant content prompt
-└── data/                        # Processed documents
-    ├── books/                   # Source books from knowledge base
-    │   ├── sections/            # Bilingual versions
-    │   ├── original/            # German-only versions
-    │   └── english/             # English-only versions
-    ├── letters/                 # Individual historical letters
-    ├── diagrams/                # Genealogical diagrams
-    ├── variations.md            # List of name variations and epithets
-    ├── facts.json               # Extracted facts in JSON format
-    └── date_comparison.md       # Comparison report (generated)
+├── reports/                     # Generated comparison reports
+│   ├── dates_in_both.md         # Dates in both facts and letters
+│   ├── dates_only_in_facts.md   # Dates only in facts.json
+│   └── dates_only_in_letters.md # Dates only in letter files
+└── scripts/                     # All executable scripts
+    ├── setup.sh                 # Interactive setup for OAuth token
+    ├── process_document.sh      # Main workflow script
+    ├── extract_languages.sh     # Extract original and English content
+    ├── clean_special_chars.sh   # Clean unnecessary special characters
+    ├── download_doc.sh          # Download Google Docs as markdown
+    ├── clean_markdown.sh        # Clean downloaded markdown
+    ├── split_by_h1.sh           # Split document by H1 sections
+    ├── split_by_h3.sh           # Split letters by H3 sections (handles date ranges)
+    ├── sort_facts_by_date.py    # Sort facts.json chronologically
+    ├── compare_dates.sh         # Generate 3 comparison files
+    ├── print_fact_dates.sh      # Extract dates from facts.json
+    ├── print_letter_dates.sh    # Extract dates from letter filenames
+    ├── convert_date_to_iso.sh   # Convert letter dates to ISO (handles ranges)
+    ├── extract_letter_source.sh # Extract Quellen from letter files
+    └── token.txt                # OAuth token (created by setup)
 ```
 
 ## Quick Start
@@ -184,6 +187,7 @@ Splits a markdown document by H3 (###) headings into separate files.
 - Default output: `data/letters/`
 - Creates individual files for each H3 section (typically individual letters)
 - Does NOT modify the original file; only creates section files
+- Handles date ranges (e.g., "October 23/26") by converting to space-separated format
 - Useful for splitting a compiled document of letters into individual dated files
 
 ### `sort_facts_by_date.py`
@@ -195,15 +199,22 @@ Python utility to sort the facts.json database chronologically.
 - No external dependencies (uses standard library only)
 
 ### `compare_dates.sh`
-Generates a comprehensive comparison report between dates in `facts.json` and letter files.
+Generates three separate comparison files between dates in `facts.json` and letter files.
 - Compares dates from `data/facts.json` with dates from `data/letters/` filenames
 - Extracts and compares document sources (Quellen) from both facts and letters
-- Creates `data/date_comparison.md` with three sections:
-  - **Dates in Both**: Shows matching dates with facts source, letter filename, and letter source side-by-side
-  - **Dates Only in Facts**: Lists dates in facts.json without corresponding letter files
-  - **Dates Only in Letters**: Lists letter files not yet processed into facts.json
+- Creates 3 separate markdown files:
+  - **`dates_in_both.md`**: Shows matching dates with facts source and letter source side-by-side
+  - **`dates_only_in_facts.md`**: Lists dates in facts.json without corresponding letter files
+  - **`dates_only_in_letters.md`**: Lists letter files not yet processed into facts.json
 - Helps identify discrepancies, missing letters, and unprocessed documents
 - Uses `print_fact_dates.sh`, `print_letter_dates.sh`, and `convert_date_to_iso.sh` helper scripts
+
+### `convert_date_to_iso.sh`
+Converts letter filename dates to ISO 8601 format (YYYY-MM-DD or YYYY).
+- Handles various date formats: "1327 may 4", "1330", "1360 october 23 26"
+- For date ranges (e.g., "october 23 26"), uses the **last** day number (26)
+- Supports multiple month name formats (German, English, abbreviations)
+- Used by `compare_dates.sh` and `print_letter_dates.sh`
 
 ## AI Prompt Templates
 
