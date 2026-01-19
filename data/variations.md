@@ -20,7 +20,7 @@ Albrecht - Albert
 Nicolaus - Nicholas, Niklaus
 Gerhard - Gerhardus
 Wilhelm - Wilhem
-Ruprecht - Rupert
+Ruprecht - Rupert, Rupertus
 Diether - Dieter
 Wiprecht - Wibrecht
 Raban - Rabanus
