@@ -24,6 +24,8 @@ Then follow these steps:
    - The agent will create `/tmp/facts_extract_[FILENAME].json` and report the path
 
 3. **Launch data verification agents** (IMPORTANT: specify the temp file path):
+   - fact-name-normalizer:
+     - prompt: "Normalize medieval name and location variations in /tmp/facts_extract_[FILENAME].json using data/variations.md as reference"
    - fact-source-verifier:
      - prompt: "Verify the facts in /tmp/facts_extract_[FILENAME].json against their source document"
    - fact-irrelevant-verifier:

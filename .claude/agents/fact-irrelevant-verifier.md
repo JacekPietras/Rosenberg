@@ -48,12 +48,10 @@ Remove facts if ANY are true:
 1. **Atomic facts only**: No grouped relations
 2. **Language**: Facts in English; preserve original titles/place names and epithets/territorial designations
 3. **Do not infer**: Only include explicitly stated information
-4. **Name normalization**: If editing names, normalize using data/variations.md
 
 ## WORKFLOW
 
 1. Read the specified JSON file (user will provide the path)
-2. Read data/variations.md for name normalization reference
 3. Apply keep/remove criteria to each fact in the file
 4. Remove irrelevant facts from the file
 5. Normalize names if needed
