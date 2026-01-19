@@ -31,7 +31,7 @@ Februar:
    5. Agathe v. m. Plen.
    6. Dorothee v. m. Plen.
    7. (Richardi regis 3.)
-   9. Apollonie v. m. III.
+   9. Apollonie v. m. III. (Saturday in 1387)
   10. Scholastice v. III.
   14. Valentini m. III.
   16. Juliane v. m. III.
@@ -105,7 +105,7 @@ Juni:
   13. Onofrii cf. III.
   14. (Basilii ep. 4a.)
   15. Viti, Modesti et Crescentie m. III.
-  16. (Justine m. 4a.)
+  16. (Justine m. 4a.) (Sunday in 1387)
   18. Marci et Marcelliani m. III.
   19. Gervasii et Prothasii m. III.(Festum sanguinis 4a.)
   20. (Deodati ep. 4a.)
@@ -170,7 +170,7 @@ August:
   19. (Magni m. 4a.) (Sebaldi cf. 4c.)
   20. Bernhardi abb. Plen.
   22. 8a assumtionis Marie. Plen. Timothei et Symphoriani m. Comm.
-  23. Vigilia.
+  23. Vigilia. (Friday in 1387)
   24. Bartholomei apost. Du.
   25. (Ludovici regis 1. 3.)
   27. Gebhardi ep. Du. Rufi m. Comm.
