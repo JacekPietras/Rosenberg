@@ -41,6 +41,7 @@
       "Bash(./scripts/facts_verify_json.sh:*)",
       "Bash(./scripts/remove_letter_from_report.sh:*)",
       "Bash(./scripts/compare_dates.sh:*)",
+      "Bash(./scripts/process_document.sh:*)",
       "Bash(./scripts/process_document.sh:*)"
     ],
     "deny": [
