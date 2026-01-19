@@ -8,14 +8,15 @@ set -e
 # Example: ./scripts/process_document.sh "1327 may 4.md"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-LETTERS_DIR="data/letters"
+SEARCH_DIRS=("data/letters" "data/books/sections" "data/books/original" "data/books/english")
 
 if [ $# -eq 0 ]; then
     echo "Usage: $0 <filename>"
     echo ""
     echo "Example:"
     echo "  $0 \"1327 may 4.md\""
-    echo "  $0 \"1349 september 2 ehrenfels.md\""
+    echo "  $0 \"bauer_1872.md\""
+    echo "  $0 \"1349 september 2 ehrenfels\""
     echo ""
     exit 1
 fi
@@ -27,21 +28,34 @@ if [[ ! "$FILENAME" =~ \.md$ ]]; then
     FILENAME="${FILENAME}.md"
 fi
 
-# Construct full path
-LETTER_PATH="$LETTERS_DIR/$FILENAME"
-
 echo "========================================"
-echo "Letter Fact Extraction Workflow"
+echo "Document Fact Extraction Workflow"
 echo "========================================"
 echo ""
 
-# Verify the letter file exists
-if [ ! -f "$LETTER_PATH" ]; then
-    echo "ERROR: Letter file not found: $LETTER_PATH"
+# Search for the file in multiple directories
+DOCUMENT_PATH=""
+for dir in "${SEARCH_DIRS[@]}"; do
+    if [ -f "$dir/$FILENAME" ]; then
+        DOCUMENT_PATH="$dir/$FILENAME"
+        break
+    fi
+done
+
+# Verify the document file exists
+if [ -z "$DOCUMENT_PATH" ]; then
+    echo "ERROR: Document file not found: $FILENAME"
+    echo ""
+    echo "Searched in:"
+    for dir in "${SEARCH_DIRS[@]}"; do
+        echo "  - $dir/"
+    done
     echo ""
     echo "Looking for similar files..."
-    # Try to find similar filenames
-    find "$LETTERS_DIR" -type f -name "*${FILENAME%.md}*" | head -5
+    # Try to find similar filenames across all search directories
+    for dir in "${SEARCH_DIRS[@]}"; do
+        find "$dir" -type f -name "*${FILENAME%.md}*" 2>/dev/null | head -3
+    done
     exit 1
 fi
 
@@ -54,19 +68,19 @@ if [ -z "$DATE" ]; then
     DATE="unknown"
 fi
 
-# Extract source from letter file
-SOURCE=$("$SCRIPT_DIR/extract_letter_source.sh" "$LETTER_PATH")
+# Extract source from document file
+SOURCE=$("$SCRIPT_DIR/extract_letter_source.sh" "$DOCUMENT_PATH")
 
 if [ -z "$SOURCE" ]; then
-    echo "WARNING: Could not extract source from letter file"
+    echo "WARNING: Could not extract source from document file"
     SOURCE="(source not found in file)"
 fi
 
 echo "----------------------------------------"
-echo "Letter to process:"
+echo "Document to process:"
 echo "  Date: $DATE"
 echo "  File: $FILENAME"
-echo "  Path: $LETTER_PATH"
+echo "  Path: $DOCUMENT_PATH"
 echo "  Source: $SOURCE"
 echo "----------------------------------------"
 echo ""
@@ -79,7 +93,7 @@ echo ""
 echo "This is where Claude Code should:"
 echo ""
 echo "1. Launch fact-extractor agent"
-echo "   - Input: $LETTER_PATH"
+echo "   - Input: $DOCUMENT_PATH"
 echo "   - Output: /tmp/facts_extract_${FILENAME%.md}.json (temp file)"
 echo ""
 echo "2. Optionally: fact-source-verifier agent"

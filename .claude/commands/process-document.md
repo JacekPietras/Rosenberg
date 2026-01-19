@@ -1,4 +1,4 @@
-# Process Letter
+# Process Document
 
 Extract genealogical facts from a specific document file.
 
@@ -44,9 +44,17 @@ Then follow these steps:
     - These agents will read and update the temp file before merging
 
 4. **Download current facts for that date**:
-    - use script print_facts_by_date.sh with the date from step 1
-    - merge those facts into the temp file
-    - review for duplicates or conflicts
+    - use script `print_facts_by_date.sh` with the date from step 1
+    - **Manual merging by agent**: Read both the existing facts (from print_facts_by_date.sh) and the newly extracted facts (in temp file)
+    - **Decision-making**: The agent should decide individually based on the situation:
+      - If facts are from the same document: Merge them, removing duplicates and combining complementary information
+      - If facts differ (same date, different documents): Keep both sets separately with their respective sources
+      - If facts are identical: Keep only one version
+    - **Manual review by Claude**: Carefully examine for:
+      - Duplicate facts (same information, slightly different wording)
+      - Conflicting information (same event, different details)
+      - Complementary facts (same event, additional context)
+    - Update the temp file with the merged result
 
 5. **Remove current facts with that date**:
     - use script remove_facts_by_date.sh with the date from step 1
@@ -63,6 +71,10 @@ Then follow these steps:
    - prompt: "Verify the JSON structure, chronological sorting, and quality of data/facts.json after the recent update."
 
 8. **Report results** to user:
+   - Number of facts from existing database for this date
+   - Number of newly extracted facts
+   - Merging decision made (duplicates removed, conflicts resolved, etc.)
+   - Final count of facts after merge
    - Validation status
    - Any errors or warnings
 
@@ -71,3 +83,15 @@ Then follow these steps:
 - The .md extension is optional and will be added automatically if not provided
 - If the file doesn't exist, the script will suggest similar filenames
 - Facts are automatically merged and sorted chronologically
+- This command is designed for reprocessing documents, allowing you to update existing facts
+- Always review existing facts before removal to avoid data loss
+
+## Conflict Resolution Guidelines
+
+When merging facts manually in step 4:
+
+1. **Same document, same information**: Remove duplicate, keep one version
+2. **Same document, complementary information**: Merge into single fact entry or keep as separate atomic facts
+3. **Different documents, same event**: Keep both with their respective sources (don't merge across documents)
+4. **Conflicting information**: Keep both facts and note the discrepancy in your report to the user
+5. **Uncertain cases**: Ask the user for guidance using AskUserQuestion tool

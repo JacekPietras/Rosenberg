@@ -106,44 +106,51 @@ When `/process-next-letter` is invoked, Claude Code should:
 4. Call `remove_letter_from_report.sh` after successful completion
 5. Report progress to user
 
-### Process Specific Letter
+### Process Specific Document
 
 **Slash Command:**
 ```
-/process-letter <filename>
+/process-document <filename>
 ```
-Extracts facts from a specific letter file by filename.
+Extracts facts from a specific document file by filename. Designed for reprocessing documents with existing facts.
 
 **Direct Script:**
-_scripts
+```bash
 ./scripts/process_document.sh <filename>
 ```
 
 **Usage Examples:**
-_scripts
-./scripts/process_docume_.sh "1327 may 4.md"
+```bash
+./scripts/process_document.sh "1327 may 4.md"
+./scripts/process_document.sh "bauer 5.md"
 ./scripts/process_document.sh "1349 september 2 ehrenfels"
 ```
 
 **How it works:**
-1. Accepts a letter filename as parameter (relative to `data/letters/`)
+1. Accepts a document filename as parameter (relative to `data/letters/`)
 2. The .md extension is optional and will be added automatically
 3. Extracts date and source information from the file
-4. Displays letter information for Claude Code agent processing
+4. Displays document information for Claude Code agent processing
 5. Does NOT modify the dates_only_in_letters.md report (use this for reprocessing)
 
 **When to use:**
-- Reprocess a letter that was previously extracted
-- Extract facts from a specific letter regardless of report status
+- Reprocess a document that was previously extracted
+- Extract facts from a specific document regardless of report status
+- Update existing facts for a date with improved extraction
 - Manual fact extraction workflow outside of the automated queue
 
 **Claude Code Agent Flow:**
 When `/process-document <filename>` is invoked, Claude Code should:
-1. Run `process_document.sh <filename>` to get letter details
-2. Launch `fact-extractor` agent with the letter file
-3. Launch `fact-syntax-verifier` agent to validate updates
-4. Report progress to user
-5. Do NOT remove from report (this is for manual/reprocessing use)
+1. Run `process_document.sh <filename>` to get document details
+2. Launch `fact-extractor` agent with the document file
+3. Launch `fact-source-verifier` and `fact-irrelevant-verifier` agents
+4. Retrieve existing facts for the date using `print_facts_by_date.sh`
+5. Manually merge existing and new facts (removing duplicates, resolving conflicts)
+6. Remove old facts using `remove_facts_by_date.sh`
+7. Merge updated facts using `merge_facts.py`
+8. Launch `fact-syntax-verifier` agent to validate updates
+9. Report progress to user (including merge decisions and conflict resolutions)
+10. Do NOT remove from report (this is for manual/reprocessing use)
 
 ## Data Architecture
 
