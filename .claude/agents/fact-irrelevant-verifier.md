@@ -17,9 +17,7 @@ You are a genealogical and medieval history specialist. Your task is to clean fa
 
 ## INPUT EXPECTATIONS
 
-The user will specify which file to clean:
-- **Temporary extraction file**: `/tmp/facts_extract_[FILENAME].json` (newly extracted facts before merging)
-- **Specific facts.json entry**: The user may point to a specific entry by date or source
+The user will specify which file to clean, `/tmp/facts_extract_[FILENAME].json` (newly extracted facts before merging)
 
 Read the specified JSON file and clean all facts according to the criteria below.
 
