@@ -106,7 +106,44 @@ When `/process-next-letter` is invoked, Claude Code should:
 4. Call `remove_letter_from_report.sh` after successful completion
 5. Report progress to user
 
-See `WORKFLOW_USAGE.md` for detailed documentation.
+### Process Specific Letter
+
+**Slash Command:**
+```
+/process-letter <filename>
+```
+Extracts facts from a specific letter file by filename.
+
+**Direct Script:**
+_scripts
+./scripts/process_document.sh <filename>
+```
+
+**Usage Examples:**
+_scripts
+./scripts/process_docume_.sh "1327 may 4.md"
+./scripts/process_document.sh "1349 september 2 ehrenfels"
+```
+
+**How it works:**
+1. Accepts a letter filename as parameter (relative to `data/letters/`)
+2. The .md extension is optional and will be added automatically
+3. Extracts date and source information from the file
+4. Displays letter information for Claude Code agent processing
+5. Does NOT modify the dates_only_in_letters.md report (use this for reprocessing)
+
+**When to use:**
+- Reprocess a letter that was previously extracted
+- Extract facts from a specific letter regardless of report status
+- Manual fact extraction workflow outside of the automated queue
+
+**Claude Code Agent Flow:**
+When `/process-document <filename>` is invoked, Claude Code should:
+1. Run `process_document.sh <filename>` to get letter details
+2. Launch `fact-extractor` agent with the letter file
+3. Launch `fact-syntax-verifier` agent to validate updates
+4. Report progress to user
+5. Do NOT remove from report (this is for manual/reprocessing use)
 
 ## Data Architecture
 

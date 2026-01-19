@@ -39,6 +39,8 @@ Rosenberg/
     ├── compare_dates.sh         # Generate 3 comparison files
     ├── print_fact_dates.sh      # Extract dates from facts.json
     ├── print_letter_dates.sh    # Extract dates from letter filenames
+    ├── print_facts_by_date.sh   # Print facts matching a specific date
+    ├── remove_facts_by_date.sh  # Remove facts matching a specific date
     ├── convert_date_to_iso.sh   # Convert letter dates to ISO (handles ranges)
     ├── extract_letter_source.sh # Extract Quellen from letter files
     └── token.txt                # OAuth token (created by setup)
@@ -212,3 +214,19 @@ Converts letter filename dates to ISO 8601 format (YYYY-MM-DD or YYYY).
 - For date ranges (e.g., "october 23 26"), uses the **last** day number (26)
 - Supports multiple month name formats (German, English, abbreviations)
 - Used by `compare_dates.sh` and `print_letter_dates.sh`
+
+### `print_facts_by_date.sh`
+Prints facts from facts.json that match a specific date.
+- Usage: `./scripts/print_facts_by_date.sh YYYY-MM-DD` or `./scripts/print_facts_by_date.sh YYYY`
+- Returns JSON array of all facts matching the specified date
+- Example: `./scripts/print_facts_by_date.sh 1327-05-04`
+- Example: `./scripts/print_facts_by_date.sh 1327`
+
+### `remove_facts_by_date.sh`
+Removes facts from facts.json that match a specific date.
+- Usage: `./scripts/remove_facts_by_date.sh YYYY-MM-DD` or `./scripts/remove_facts_by_date.sh YYYY`
+- Creates automatic backup before removal (with timestamp)
+- Shows facts to be removed before deletion
+- Reports count of removed facts
+- Example: `./scripts/remove_facts_by_date.sh 1327-05-04`
+- Example: `./scripts/remove_facts_by_date.sh 1327`
