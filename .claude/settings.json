@@ -39,6 +39,7 @@
       "Bash(./scripts/process_next_letter.sh:*)",
       "Bash(./scripts/process_next_letter.sh:*)",
       "Bash(./scripts/facts_verify_json.sh:*)",
+      "Bash(./scripts/print_facts_by_date.sh:*)",
       "Bash(./scripts/remove_letter_from_report.sh:*)",
       "Bash(./scripts/compare_dates.sh:*)",
       "Bash(./scripts/process_document.sh:*)",
