@@ -46,7 +46,7 @@ Then follow these steps:
     - These agents will read and update the temp file before merging
 
 4. **Download current facts for that date**:
-    - use script `print_facts_by_date.sh` with the date from step 1
+    - use script `print_facts_by_date.sh` with the dates from /tmp/facts_extract_[FILENAME].json
     - **Manual merging by agent**: Read both the existing facts (from print_facts_by_date.sh) and the newly extracted facts (in temp file)
     - **Decision-making**: The agent should decide individually based on the situation:
       - If facts are from the same document: Merge them, removing duplicates and combining complementary information

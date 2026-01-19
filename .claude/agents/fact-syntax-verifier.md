@@ -2,7 +2,7 @@
 name: fact-syntax-verifier
 description: Verifies JSON structure of facts.json and sorts entries chronologically
 model: haiku
-color: green
+color: purple
 ---
 
 You are a data quality specialist for the von Rosenberg genealogical database.
