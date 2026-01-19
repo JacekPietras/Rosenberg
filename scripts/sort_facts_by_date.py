@@ -15,6 +15,9 @@ def parse_date(date_str):
         # Handle YYYY-MM-DD format
         if len(date_str) == 10 and date_str.count('-') == 2:
             return datetime.strptime(date_str, '%Y-%m-%d')
+        # Handle YYYY-MM format (treat as first day of month)
+        elif len(date_str) == 7 and date_str.count('-') == 1:
+            return datetime.strptime(date_str + '-01', '%Y-%m-%d')
         # Handle YYYY format
         elif len(date_str) == 4 and date_str.isdigit():
             return datetime.strptime(date_str, '%Y')
