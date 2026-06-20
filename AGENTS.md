@@ -1,7 +1,3 @@
-# CLAUDE.md
-
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## Project Overview
 
 A historical research tool for processing, organizing, and analyzing medieval German genealogical
@@ -198,15 +194,6 @@ Facts capture various relationship types:
 - Transactions: "X sold property to Y", "X served as surety for Y"
 - Offices: "X is Vogt zu [location]", "X is Komtur"
 
-### Common German Terms
-- **Ritter**: Knight
-- **Edelknecht**: Squire/nobleman
-- **Vogt**: Bailiff
-- **Gülten/Zinse**: Rents/dues
-- **Mannlehen**: Male fief
-- **Burggut**: Castle property
-- **Zehnten**: Tithe
-
 ## Working with Bilingual Documents
 
 Source books in `data/books/sections/` use two-column markdown tables:
@@ -252,7 +239,3 @@ Scripts use `set -e` for fail-fast behavior. Check:
 - OAuth token validity
 - File permissions (scripts must be executable)
 - Directory existence before file operations
-
-## Python Requirements
-
-The project uses Python 3 for the facts sorting utility. No external dependencies required (uses only standard library: `json`, `datetime`, `sys`, `os`).
