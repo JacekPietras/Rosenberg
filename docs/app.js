@@ -320,7 +320,7 @@ async function renderActive() {
   }
 }
 
-async function loadAll({ announce = false } = {}) {
+async function loadAll() {
   const files = await getRepositoryFiles();
   const paths = files.map((file) => typeof file === 'string' ? file : file.path);
   const snapshot = JSON.stringify(files);
@@ -332,13 +332,12 @@ async function loadAll({ announce = false } = {}) {
   if (state.active !== 'letters' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
   savePreferences();
   renderTabs(); await renderActive();
-  if (announce) $('#status').textContent = 'Data refreshed.';
 }
 
 async function refreshIfChanged() {
   try {
     const files = await getRepositoryFiles();
-    if (JSON.stringify(files) !== state.snapshot) await loadAll({ announce: true });
+    if (JSON.stringify(files) !== state.snapshot) await loadAll();
   } catch (error) {
     // A temporary network failure should not interrupt the next refresh attempt.
     console.warn('Could not check for data updates:', error);
