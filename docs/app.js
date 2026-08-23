@@ -22,6 +22,11 @@ async function getJson(path) {
 }
 
 async function getRepositoryFiles() {
+  if (!location.hostname.endsWith('github.io')) {
+    const response = await fetch('/api/files');
+    if (!response.ok) throw new Error(`Local file list: ${response.status}`);
+    return response.json();
+  }
   const parts = location.pathname.split('/').filter(Boolean);
   const owner = location.hostname.split('.')[0];
   const repository = parts[0];
