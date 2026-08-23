@@ -1,13 +1,14 @@
 {
-  "date": "1342 September 3, Bensheim",
+  "date": "1342-09-03",
+  "place": "bensheim",
   "entries": [
     {
-      "sources": "Regesta sive rerum Boicarum autographa ad annum usque MCCC. 7 \\= Continuatio 3",
+      "source": "Regesta sive rerum Boicarum autographa ad annum usque MCCC. 7 \\= Continuatio 3",
       "german": "Ebirhardus de Rosenberg miles et advocatus in Durne testatur se una cum Heinrico Bavaro notario domini Moguntini et aliis amicis ejus in die placiti ex parte domini Moguntini cum Ruperto duce Bawariae in Bensheim 30 solidos hallenses expendisse per Jacobum cellerarium in Starkenberg solvendos. D. Benzheim feria tertia post diem decollationis Joh. Baptistae. *Ego EBIRHARDUS de Rofenberg miles, Advocatus in Durne, recognofco publice in hiis fcriptis, quod ego una cum HEINRICO Bawar. Notario Domini mei Moguntini & aliis amicis ejusdem mei Domini, feria tercia poft diem decollacionis beati Johannis baptifte, cum diem placiti ex parte dicti Domini Moguntini cum amicis illuftris Principis Domini RUPERTI Ducis Bawa-rie in Bensheim tenuimus, triginta folidos hall. expendimus, quam pecuniam JACOBUS Cellerarius in Starkenberg pro nobis folvere tenetur. Datum Bensheim feria tercia predicta. Anno Domini MCCCXLII.*",
       "english": "Eberhard von Rosenberg, knight and advocate in Dürn, testifies that he, together with Heinrich Bavar, notary of the lord of Mainz, and his other friends, on the day of the hearing on behalf of the lord of Mainz with Rupert, duke of Bavaria, in Bensheim, had spent 30 Hallenses shillings, to be paid by Jacob, the cellarer in Starkenberg. Given at Bensheim on the Tuesday after the day of the beheading of John the Baptist."
     },
     {
-      "sources": "OTTO, Regesten, Bd. 1,2, Nr. 4871, S. 420.\nSCRIBA, Regesten, 1. Abt., Nr. 1001, S. 92.",
+      "source": "OTTO, Regesten, Bd. 1,2, Nr. 4871, S. 420.\nSCRIBA, Regesten, 1. Abt., Nr. 1001, S. 92.",
       "german": "Der Ritter Eberhard von Rosenberg, Vogt in Dürn, weist den Keller Jakob zu Starkenburg (Starkenberg) an, die Kosten zu bezahlen, die bei der Zusammenkunft mit den bayerischen Gesandten des Pfalzgrafen Ruprecht I. in Bensheim angefallen sind.",
       "english": "The knight Eberhard von Rosenberg, vogt in Dürn, instructs the cellar Jakob zu Starkenburg (Starkenberg) to pay the costs incurred during the meeting with the Bavarian envoys of Count Palatine Rupert I in Bensheim."
     }
