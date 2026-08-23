@@ -5,7 +5,7 @@ set -e
 # This script coordinates the entire process:
 # 1. Check/generate report
 # 2. Get next letter info
-# 3. Trigger Claude Code to run extraction/validation agents
+# 3. Trigger LLM to run extraction/validation agents
 # 4. Remove processed letter from report
 #
 # Usage: ./scripts/process_next_letter.sh
@@ -69,10 +69,10 @@ fi
 
 # Step 3: Trigger agent workflow
 echo "=========================================="
-echo "CLAUDE CODE WORKFLOW TRIGGER"
+echo "LLM WORKFLOW TRIGGER"
 echo "=========================================="
 echo ""
-echo "This is where Claude Code should:"
+echo "This is where LLM should:"
 echo ""
 echo "1. Launch fact-extractor agent"
 echo "   - Input: $PATH"
@@ -97,8 +97,8 @@ echo "   - Verify: data/facts.json structure and sorting after merge"
 echo ""
 echo "=========================================="
 echo ""
-echo "If you are running this script directly (not through Claude Code),"
-echo "the workflow is paused here. Claude Code will handle the agent"
+echo "If you are running this script directly (not through LLM),"
+echo "the workflow is paused here. LLM will handle the agent"
 echo "orchestration and then complete the workflow."
 echo ""
 echo "After agents complete successfully, run:"
@@ -107,11 +107,11 @@ echo ""
 echo "To manually complete the workflow."
 echo ""
 
-# Note: When run by Claude Code, the agents will be invoked here
+# Note: When run by LLM, the agents will be invoked here
 # and the script will continue to the cleanup step
 
 # Step 4: Cleanup (only reached if agents succeeded)
-# This will be called separately or by Claude Code after agents complete
+# This will be called separately or by LLM after agents complete
 # "$SCRIPT_DIR/remove_letter_from_report.sh" "$FILENAME"
 
 exit 0

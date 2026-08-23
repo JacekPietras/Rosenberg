@@ -1,23 +1,12 @@
 # Rosenberg Research Process Architecture
 
 ## Overview
-The Rosenberg research process is a comprehensive system for transforming historical German genealogical documents into structured facts. It leverages Google Docs as the primary knowledge base, automates document processing workflows, and maintains a structured JSON database of historical relationships.
+The Rosenberg research process is a comprehensive system for transforming historical German genealogical documents into structured facts. It maintains a structured JSON database of historical relationships extracted from letters. The letters themselves are synced from Google Docs (the primary knowledge base) by a separate pipeline — see [`sync_from_google/architecture.md`](../sync_from_google/architecture.md) for that.
 
 ## System Components
 
-### Google Docs Integration
-- **setup.sh**: Interactive OAuth 2.0 token configuration for Google Docs access
-- **download_doc.sh**: Downloads documents from Google Docs knowledge base using Drive API
-- **token.txt**: OAuth token file (created by setup.sh)
-
 ### Document Processing Pipeline
-- **process_document.sh**: Main workflow orchestrating download, clean, split operations
-- **clean_markdown.sh**: Removes image references and base64 data from markdown
-- **split_by_h1.sh**: Splits documents by H1 headings into section files
-- **split_by_h3.sh**: Splits letters by H3 headings into individual dated files
-
-### Language Extraction
-- **extract_languages.sh**: Extracts bilingual content (German/English) from documents
+- **process_document.sh**: Extracts facts from a specific letter/document file
 
 ### Data Management
 - **facts_verify_json.sh**: Validates JSON structure and chronological ordering
@@ -32,9 +21,6 @@ The Rosenberg research process is a comprehensive system for transforming histor
 - **print_letter_dates.sh**: Extracts dates from letter filenames
 - **convert_date_to_iso.sh**: Converts letter dates to ISO format
 
-### Special Character Cleaning
-- **clean_special_chars.sh**: Removes escaped punctuation and special formatting
-
 ### Automated Workflows
 - **process_next_letter.sh**: Automates processing of next unprocessed letter
 - **get_next_letter.sh**: Gets information about next letter to process
@@ -43,22 +29,27 @@ The Rosenberg research process is a comprehensive system for transforming histor
 ## Data Flow Architecture
 
 ### Source to Fact Pipeline
-```
-Google Docs Source → download_doc.sh → clean_markdown.sh → split_by_h1.sh
-                     ↓
-              data/books/sections/
-                     ↓
-              extract_languages.sh
-                     ↓
-              data/books/original/ ← split_by_h3.sh
-                     ↓
-              data/letters/
-                     ↓
-              fact-extractor agent → data/facts.json
-                     ↓
-              sort_facts_by_date.py
-                     ↓
-              compare_dates.sh → reports/
+`data/letters/` is populated by the sync pipeline documented in
+[`sync_from_google/architecture.md`](../sync_from_google/architecture.md). From there:
+
+```mermaid
+flowchart TD
+    A[data/letters/] --> B[fact-extractor agent]
+    B --> C[data/facts.json]
+
+    C --> D[sort_facts_by_date.py]
+    D --> E[Updated facts.json]
+
+    E --> F[compare_dates.sh]
+    F --> G[reports/]
+
+    style A fill:#fff3e0
+    style B fill:#fce4ec
+    style C fill:#e8f5e9
+    style D fill:#e8f5e9
+    style E fill:#e8f5e9
+    style F fill:#e8f5e9
+    style G fill:#e8f5e9
 ```
 
 ### Key Data Structures
@@ -104,12 +95,6 @@ Google Docs Source → download_doc.sh → clean_markdown.sh → split_by_h1.sh
 
 ## Security & Data Integrity
 
-### OAuth Security
-- Token stored in `scripts/token.txt` (gitignored)
-- Provides readonly access to Google Docs knowledge base
-- Tokens expire; re-run `setup.sh` if API calls fail
-- Uses Google Drive API v3 with readonly scope
-
 ### Data Validation
 - All dates in facts.json must be sortable (YYYY or YYYY-MM-DD)
 - Every fact entry requires valid source reference
@@ -118,18 +103,6 @@ Google Docs Source → download_doc.sh → clean_markdown.sh → split_by_h1.sh
 - No hallucinations: never infer facts not explicitly stated in sources
 
 ## Script Implementation Details
-
-### Error Handling
-- Scripts use `set -e` for fail-fast behavior
-- Check OAuth token validity
-- Check file permissions (scripts must be executable)
-- Check directory existence before file operations
-
-### Document Processing Pipeline
-1. **Download** (`download_doc.sh`): Fetches via Drive API, saves as markdown
-2. **Clean** (`clean_markdown.sh`): Removes image references and base64 data
-3. **Split** (`split_by_h1.sh`): Creates section files, updates main doc with links
-4. **Extract** (`extract_languages.sh`): Separates bilingual tables
 
 ### Data Validation Tools
 - `compare_dates.sh`: Cross-references dates, generates reports in `reports/`

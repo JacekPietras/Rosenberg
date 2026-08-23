@@ -26,15 +26,18 @@ Rosenberg/
 │   ├── dates_in_both.md         # Dates in both facts and letters
 │   ├── dates_only_in_facts.md   # Dates only in facts.json
 │   └── dates_only_in_letters.md # Dates only in letter files
-└── scripts/                     # All executable scripts
-    ├── setup.sh                 # Interactive setup for OAuth token
+├── sync_from_google/            # Scripts + architecture for syncing docs from Google Docs
+│   ├── architecture.md          # Description of the download/sync pipeline
+│   ├── setup.sh                 # Interactive setup for OAuth token
+│   ├── download_doc.sh          # Download Google Docs as markdown
+│   ├── clean_markdown.sh        # Clean downloaded markdown
+│   ├── split_by_h1.sh           # Split document by H1 sections
+│   ├── extract_languages.sh     # Extract original and English content
+│   ├── clean_special_chars.sh   # Clean unnecessary special characters
+│   ├── split_by_h3.sh           # Split letters by H3 sections (handles date ranges)
+│   └── token.txt                # OAuth token (created by setup)
+└── scripts/                     # Fact-extraction workflow scripts
     ├── process_document.sh      # Main workflow script
-    ├── extract_languages.sh     # Extract original and English content
-    ├── clean_special_chars.sh   # Clean unnecessary special characters
-    ├── download_doc.sh          # Download Google Docs as markdown
-    ├── clean_markdown.sh        # Clean downloaded markdown
-    ├── split_by_h1.sh           # Split document by H1 sections
-    ├── split_by_h3.sh           # Split letters by H3 sections (handles date ranges)
     ├── sort_facts_by_date.py    # Sort facts.json chronologically
     ├── compare_dates.sh         # Generate 3 comparison files
     ├── print_fact_dates.sh      # Extract dates from facts.json
@@ -42,8 +45,7 @@ Rosenberg/
     ├── print_facts_by_date.sh   # Print facts matching a specific date
     ├── remove_facts_by_date.sh  # Remove facts matching a specific date
     ├── convert_date_to_iso.sh   # Convert letter dates to ISO (handles ranges)
-    ├── extract_letter_source.sh # Extract Quellen from letter files
-    └── token.txt                # OAuth token (created by setup)
+    └── extract_letter_source.sh # Extract Quellen from letter files
 ```
 
 ## Quick Start
@@ -53,12 +55,12 @@ Rosenberg/
 Run the interactive setup script:
 
 ```bash
-./scripts/setup.sh
+./sync_from_google/setup.sh
 ```
 
 This will guide you through:
 - Getting an OAuth 2.0 token from Google to access the Google Docs knowledge base
-- Saving it securely to `scripts/token.txt`
+- Saving it securely to `sync_from_google/token.txt`
 - Enabling readonly access to historical source documents maintained in Google Docs
 
 ### 2. Process a Document
@@ -80,12 +82,12 @@ This will:
 If your documents contain bilingual tables (original language in left column, English in right column), you can extract both languages simultaneously:
 
 ```bash
-./scripts/extract_languages.sh
+./sync_from_google/extract_languages.sh
 ```
 
 Or process a specific file:
 ```bash
-./scripts/extract_languages.sh filename.md
+./sync_from_google/extract_languages.sh filename.md
 ```
 
 This creates two sets of files:
@@ -97,13 +99,13 @@ This creates two sets of files:
 To improve readability by removing unnecessary escape characters and special formatting:
 
 ```bash
-./scripts/clean_special_chars.sh
+./sync_from_google/clean_special_chars.sh
 ```
 
 Or clean specific directories:
 ```bash
-./scripts/clean_special_chars.sh data/books/original
-./scripts/clean_special_chars.sh data/books/english
+./sync_from_google/clean_special_chars.sh data/books/original
+./sync_from_google/clean_special_chars.sh data/books/english
 ```
 
 ## Manual Setup (Alternative)
@@ -118,10 +120,10 @@ If you prefer to set up the OAuth token manually to access the Google Docs knowl
 4. Click **"Authorize APIs"** and sign in with your Google account (the one with access to the historical documents)
 5. Click **"Exchange authorization code for tokens"**
 6. Copy the **"Access token"** value (starts with `ya29.a0...`)
-7. Save it to `scripts/token.txt`:
+7. Save it to `sync_from_google/token.txt`:
    ```bash
-   echo "your_token_here" > scripts/token.txt
-   chmod 600 scripts/token.txt
+   echo "your_token_here" > sync_from_google/token.txt
+   chmod 600 sync_from_google/token.txt
    ```
 
 This token provides readonly access to the Google Docs knowledge base where historical source documents are maintained.

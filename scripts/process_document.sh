@@ -87,10 +87,10 @@ echo ""
 
 # Step 2: Trigger agent workflow
 echo "=========================================="
-echo "CLAUDE CODE WORKFLOW TRIGGER"
+echo "LLM WORKFLOW TRIGGER"
 echo "=========================================="
 echo ""
-echo "This is where Claude Code should:"
+echo "This is where LLM should:"
 echo ""
 echo "1. Launch fact-extractor agent"
 echo "   - Input: $DOCUMENT_PATH"
