@@ -47,17 +47,17 @@ function renderTabs() {
 
 function languageMarkup(entry) {
   const languages = state.language === 'both' ? ['german', 'english'] : [state.language];
-  return `<div class="text-grid ${languages.length === 1 ? 'single' : ''}">${languages.map((language) => `<div class="language"><p class="language-label">${language}</p><p class="text">${markdownLinks(entry[language] || '—')}</p></div>`).join('')}</div>`;
+  return `<div class="text-grid ${languages.length === 1 ? 'single' : ''}">${languages.map((language) => `<div class="language"><p class="text">${markdownLinks(entry[language] || '—')}</p></div>`).join('')}</div>`;
 }
 
 function renderDocument(doc, path) {
   const entries = (doc.entries || []).map((entry) => `<article class="entry">${entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${languageMarkup(entry)}${entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
-  return `<article class="document"><div class="document-heading"><h2>${escapeHtml(documentTitle(doc, path))}</h2><small>${doc.date ? escapeHtml(doc.date) : `${doc.entries?.length || 0} entries`}</small></div>${entries}</article>`;
+  return `<article class="document"><div class="document-heading"><h2>${escapeHtml(documentTitle(doc, path))}</h2>${doc.date ? `<small>${escapeHtml(doc.date)}</small>` : ''}</div>${entries}</article>`;
 }
 
 async function renderActive() {
   const paths = state.active === 'letters' ? state.manifest.letters : [state.active];
-  $('#status').textContent = state.active === 'letters' ? `${paths.length} letters` : `${paths.length ? state.documents.get(paths[0])?.entries?.length || 0 : 0} entries`;
+  $('#status').textContent = '';
   $('#content').innerHTML = paths.map((path) => renderDocument(state.documents.get(path), path)).join('');
 }
 
