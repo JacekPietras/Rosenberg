@@ -46,7 +46,8 @@ Rosenberg/
     ├── remove_facts_by_date.sh  # Remove facts matching a specific date
     ├── convert_date_to_iso.sh   # Convert letter dates to ISO (handles ranges)
     ├── extract_letter_source.sh # Extract Quellen from letter files
-    └── parse_letters.py          # Convert letter markdown files to JSON
+    ├── parse_letters.py          # Convert letter markdown files to JSON
+    └── add_english_translations.py # Add English text to letter JSON files
 ```
 
 ## Quick Start
@@ -235,6 +236,20 @@ Converts letter filename dates to ISO 8601 format (YYYY-MM-DD or YYYY).
 - For date ranges (e.g., "october 23 26"), uses the **last** day number (26)
 - Supports multiple month name formats (German, English, abbreviations)
 - Used by `compare_dates.sh` and `print_letter_dates.sh`
+
+### `add_english_translations.py`
+Matches sections in `data/books/english/letters.md` to the German letter JSON
+files by normalized date and source, then adds an `english` field to each
+matching entry:
+
+```bash
+python3 scripts/add_english_translations.py
+```
+
+Use `--dry-run` to validate all matches without changing files. Four historical
+sections have translated descriptions where the German entry has no matching
+archive source; these are matched to their date's sole entry and reported as
+warnings.
 
 ### `print_facts_by_date.sh`
 Prints facts from facts.json that match a specific date.
