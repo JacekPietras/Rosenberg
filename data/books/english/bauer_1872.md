@@ -464,6 +464,3 @@ However, death freed him from all his troubles, as his monument in the Schüpf c
 
 The allodial heirs were four siblings of the von Lagen family, among whom three sisters transferred their claims to the families of von Stetten and others; Eberhard von Stetten received the reverted fief in Sachsenflur from Limburg. The property heirs collectively received the Hohenlohe fiefs, along with the half of Schüpf purchased from the von Dottenheim family, a fief of Kuntes. In contrast, the agnates succeeded to the old Rosenberg half of Schüpf and its appurtenances, in the Palatinate fiefs (parts of Epplingen, Sachsenflur, and Dainbach), and in the Hohenlohe part of Edelsingen along with the church patronage from 1563, as well as in the Würzburg fiefs, namely Hans Eucharius von Rosenberg of Rosenberg, as well as the cousins in Haldenbergstetten.
 
-
-## 
-
