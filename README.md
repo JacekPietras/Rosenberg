@@ -6,9 +6,9 @@ This repository contains digitized historical sources about the von Rosenberg fa
 
 ```text
 data/
-├── books/       # Structured source books
-├── letters/     # Letters and documents
-├── calendar.md  # Liturgical calendar and dated annotations
+├── books/        # Structured source books
+├── letters/      # Letters and documents
+├── calendar.md   # Liturgical calendar and dated annotations
 └── variations.md # Historical name and place-name variants
 ```
 
