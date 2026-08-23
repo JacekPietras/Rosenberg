@@ -47,7 +47,8 @@ Rosenberg/
     ├── convert_date_to_iso.sh   # Convert letter dates to ISO (handles ranges)
     ├── extract_letter_source.sh # Extract Quellen from letter files
     ├── parse_letters.py          # Convert letter markdown files to JSON
-    └── add_english_translations.py # Add English text to letter JSON files
+    ├── add_english_translations.py # Add English text to letter JSON files
+    └── parse_books.py             # Combine German and English books into JSON
 ```
 
 ## Quick Start
@@ -250,6 +251,18 @@ Use `--dry-run` to validate all matches without changing files. Four historical
 sections have translated descriptions where the German entry has no matching
 archive source; these are matched to their date's sole entry and reported as
 warnings.
+
+### `parse_books.py`
+Combines matching files from `data/books/german/` and `data/books/english/`
+into one JSON file per book under `data/books/json/`:
+
+```bash
+python3 scripts/parse_books.py
+```
+
+The H1 heading becomes `book`; each H2 section becomes an entry with `title`,
+`german`, and `english` fields. The script validates that book and section
+titles match before writing output.
 
 ### `print_facts_by_date.sh`
 Prints facts from facts.json that match a specific date.
