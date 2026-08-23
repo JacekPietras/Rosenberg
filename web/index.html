@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rosenberg Research Data</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">Rosenberg Research Data</p>
+      <h1>Historical sources</h1>
+    </div>
+    <div class="controls" aria-label="Display options">
+      <button id="choose-folder" class="folder-button" type="button">Choose data folder</button>
+      <input id="folder-input" type="file" webkitdirectory multiple hidden>
+      <span class="control-label">Language</span>
+      <label><input type="radio" name="language" value="english" checked> English</label>
+      <label><input type="radio" name="language" value="german"> German</label>
+      <label><input type="radio" name="language" value="both"> Both</label>
+    </div>
+  </header>
+
+  <main>
+    <nav class="tabs" aria-label="Books and letters">
+      <div id="tabs"></div>
+    </nav>
+    <p id="status" class="status" role="status">Loading…</p>
+    <section id="content" aria-live="polite"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

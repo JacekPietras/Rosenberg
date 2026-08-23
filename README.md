@@ -64,3 +64,11 @@ Letter JSON documents have a document-level `date` and an `entries` array. Each 
 The editing workflow is deliberately direct: read the relevant JSON and source text, update the translation or facts in place, preserve source citations and date precision, then inspect the diff. A fact must be directly stated or unambiguously expressed in the source; do not infer relationships, identities, or dates.
 
 Prioritize the von Rosenberg family and its documented network, including von Uissigheim and von Erligheim, their direct relatives, transaction partners, witnesses, offices, and relevant properties. Preserve German and Latin titles where they carry historical meaning, and use full names and epithets when needed to distinguish individuals. Exclude unrelated administrative detail and do not conflate Münch von Rosenberg with von Rosenberg.
+
+## Browser viewer
+
+The `web/` directory contains a GitHub Pages browser viewer for the JSON dataset. It discovers books and letters directly from the repository tree, has tabs for each book plus a Letters tab, and can show English, German, or both texts side by side. Publish the repository with GitHub Pages and open `/web/` to use it.
+
+The viewer loads the JSON files once when the page opens. New or removed JSON documents are discovered automatically through GitHub.
+
+Publish the repository with GitHub Pages to use the viewer without running anything locally; open `/web/` on the published site. If you open `web/index.html` directly from disk, click `Choose data folder` and select the repository's `data` folder; browsers do not allow a `file://` page to fetch repository files automatically.
