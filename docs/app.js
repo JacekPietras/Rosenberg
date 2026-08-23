@@ -8,28 +8,53 @@ function loadPreferences() {
       active: typeof preferences.active === 'string' ? preferences.active : null,
       letter: typeof preferences.letter === 'string' ? preferences.letter : null,
       language: VALID_LANGUAGES.has(preferences.language) ? preferences.language : 'english',
+      darkMode: preferences.darkMode !== false,
     };
   } catch {
-    return { active: null, letter: null, language: 'english' };
+    return { active: null, letter: null, language: 'english', darkMode: true };
   }
 }
 
 function savePreferences() {
   try {
-    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, letter: state.letter, language: state.language }));
+    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, letter: state.letter, language: state.language, darkMode: state.darkMode }));
   } catch {
     // Preferences are optional; rendering should continue if storage is unavailable.
   }
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, letter: preferences.letter, language: preferences.language, documents: new Map(), snapshot: '', yearHighlightCleanup: null };
+const state = { manifest: null, active: preferences.active, letter: preferences.letter, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), snapshot: '', yearHighlightCleanup: null, lastRenderedLettersYear: null };
 const $ = (selector) => document.querySelector(selector);
 const REFRESH_INTERVAL = 30000;
 
+function applyTheme() {
+  document.documentElement.dataset.theme = state.darkMode ? 'dark' : 'light';
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', state.darkMode ? '#0d0f11' : '#f5f7fa');
+  const themeToggle = $('#theme-toggle');
+  if (themeToggle) {
+    themeToggle.setAttribute('aria-pressed', String(state.darkMode));
+    themeToggle.setAttribute('aria-label', state.darkMode ? 'Switch to light mode' : 'Switch to dark mode');
+    themeToggle.setAttribute('title', state.darkMode ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+}
+
+function updateLanguageControl() {
+  const languageToggle = $('#language-toggle');
+  if (!languageToggle) return;
+  const label = state.language === 'both' ? 'Both languages' : state.language === 'english' ? 'English' : 'German';
+  languageToggle.setAttribute('aria-label', `Language: ${label}`);
+  languageToggle.setAttribute('title', `Language: ${label}. Click to change`);
+}
+
 if (location.hash.startsWith('#year-')) history.replaceState(null, '', `${location.pathname}${location.search}`);
 
-mermaid.initialize({ startOnLoad: false });
+function applyMermaidTheme() {
+  mermaid.initialize({ startOnLoad: false, theme: state.darkMode ? 'dark' : 'default', themeVariables: state.darkMode ? { background: '#11161c', primaryColor: '#1a1e23', primaryTextColor: '#e8edf2', primaryBorderColor: '#526274', lineColor: '#8eb7ff', secondaryColor: '#15181c', tertiaryColor: '#1b2c47' } : {} });
+}
+
+applyTheme();
+applyMermaidTheme();
 
 function escapeHtml(value = '') {
   return String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
@@ -256,6 +281,11 @@ function restoreLetter(paths) {
 
 async function renderActive() {
   const paths = state.active === 'letters' ? state.manifest.letters : [state.active];
+  const selectedYear = documentYear(state.documents.get(state.letter));
+  const shouldRestoreLetter = state.active === 'letters'
+    && selectedYear
+    && state.lastRenderedLettersYear !== null
+    && selectedYear !== state.lastRenderedLettersYear;
   $('#status').textContent = '';
   state.yearHighlightCleanup?.();
   state.yearHighlightCleanup = null;
@@ -267,8 +297,9 @@ async function renderActive() {
   const diagrams = $('#content').querySelectorAll('.mermaid');
   if (diagrams.length) await mermaid.run({ nodes: diagrams });
   if (state.active === 'letters') {
-    restoreLetter(paths);
+    if (shouldRestoreLetter) restoreLetter(paths);
     setupYearHighlight(paths);
+    state.lastRenderedLettersYear = documentYear(state.documents.get(state.letter));
   }
 }
 
@@ -297,9 +328,22 @@ async function refreshIfChanged() {
   }
 }
 
-document.querySelectorAll('input[name="language"]').forEach((input) => {
-  input.checked = input.value === state.language;
-  input.addEventListener('change', (event) => { state.language = event.target.value; savePreferences(); renderActive(); });
+const languageToggle = $('#language-toggle');
+const languages = ['english', 'german', 'both'];
+updateLanguageControl();
+languageToggle.addEventListener('click', () => {
+  state.language = languages[(languages.indexOf(state.language) + 1) % languages.length];
+  updateLanguageControl();
+  savePreferences();
+  renderActive();
+});
+const themeToggle = $('#theme-toggle');
+themeToggle.addEventListener('click', () => {
+  state.darkMode = !state.darkMode;
+  applyTheme();
+  applyMermaidTheme();
+  savePreferences();
+  renderActive();
 });
 loadAll().catch((error) => {
   $('#status').textContent = `Could not load data: ${error.message}`;

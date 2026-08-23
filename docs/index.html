@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>von Rosenberg sources</title>
+  <meta name="theme-color" content="#0d0f11">
+  <title>Rosenberg sources</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div>
-      <h1>von Rosenberg sources</h1>
+      <h1>Rosenberg sources</h1>
     </div>
     <div class="controls" aria-label="Display options">
-      <label><input type="radio" name="language" value="english" checked> English</label>
-      <label><input type="radio" name="language" value="german"> German</label>
-      <label><input type="radio" name="language" value="both"> Both</label>
+      <button id="language-toggle" class="language-toggle" type="button" aria-label="Language: English" title="Language: English">文</button>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode" aria-pressed="true"></button>
     </div>
   </header>
 
