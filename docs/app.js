@@ -132,6 +132,13 @@ function diagramMarkup(value = '') {
   return source ? `<div class="diagram mermaid">${escapeHtml(source)}</div>` : '';
 }
 
+function imageMarkup(value = '') {
+  const fileName = String(value).trim();
+  if (!fileName || fileName.includes('/') || fileName.includes('\\') || !/\.(?:svg|png|jpe?g|gif|webp)$/i.test(fileName)) return '';
+  const source = `../data/images/${encodeURIComponent(fileName)}`;
+  return `<figure class="entry-image"><img src="${source}" alt="${escapeHtml(fileName)}" loading="lazy"></figure>`;
+}
+
 async function getJson(path) {
   const parts = location.pathname.split('/').filter(Boolean);
   const owner = location.hostname.split('.')[0];
@@ -216,7 +223,7 @@ function languageMarkup(entry) {
 }
 
 function renderDocument(doc, path, index) {
-  const entries = (doc.entries || []).map((entry) => `<article class="entry">${entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${languageMarkup(entry)}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
+  const entries = (doc.entries || []).map((entry) => `<article class="entry">${entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
   const title = documentTitle(doc, path);
   const date = doc.date && formatDate(doc.date) !== title ? `<small>${escapeHtml(formatDate(doc.date))}</small>` : '';
   const url = doc.url ? urlMarkup(doc.url) : '';

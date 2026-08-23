@@ -112,6 +112,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .source-list > li:first-child, .facts > li:first-child { margin-top: 0; }
 .diagram { margin: 1.25rem 0; padding: 1rem; overflow-x: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; }
 .diagram svg { display: block; max-width: none; height: auto; margin: 0 auto; }
+.entry-image { margin: 1.25rem 0; text-align: center; }
+.entry-image img { display: block; max-width: 100%; height: auto; max-height: 32rem; margin: 0 auto; }
 :root[data-theme="light"] .diagram { background: #f2f5f8; }
 
 @media (max-width: 700px) {
