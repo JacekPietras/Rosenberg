@@ -8,9 +8,33 @@ This repository contains digitized historical sources about the von Rosenberg fa
 data/
 ├── books/       # Structured source books
 ├── letters/     # One JSON file per dated letter or document
+├── calendar.md  # Liturgical calendar and dated annotations
 └── variations.md # Historical name and place-name variants
 .claude/         # Agent instructions and optional prompts
 ```
+
+## Book JSON
+
+Each file in `data/books/` represents one source book and has this shape:
+
+```json
+{
+  "book": "Bauer [1872]",
+  "entries": [
+    {
+      "title": "Section or source title",
+      "german": "Original German text",
+      "english": "English translation"
+    }
+  ]
+}
+```
+
+`book` identifies the source, and `entries` preserves the source as a sequence of text segments. Each entry has a `title`, the original `german` text, and its `english` translation. Some entries also have an optional `diagram` field containing a source diagram or structured illustration data. Book entries do not use the letter document-level `date` or require a `facts` array.
+
+## Calendar
+
+[`data/calendar.md`](data/calendar.md) is a standalone Markdown/plain-text liturgical calendar. It is organized by month and day and preserves feast names, liturgical classifications, vigils, octave references, and occasional dated annotations. It is not part of the book or letter JSON schema.
 
 ## Letter JSON
 
