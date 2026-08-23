@@ -4,7 +4,13 @@
     {
       "source": "Staatsarchiv Wertheim R-US 1300 Mai 17",
       "german": "Eberhard und Konrad, Söhne und andere benannte Verwandte des weiland Ritters Eberhard von Rosenberg (Rosinberg) verkaufen an die Abtei Bronnbach eine Hube in Uissigheim (Vssinkeim) mit einem jährlichen Ertrag von 6 Malter Korn und 2 Malter Weizen um 27 Pfund Heller und stellen Bürgen für diesen Verkauf. Siegler: Konrad von Uissigheim",
-      "english": "Eberhard and Konrad, sons and other named relatives of the deceased knight Eberhard von Rosenberg (Rosinberg), sell to the Bronnbach Abbey a Hube in Uissigheim (Vssinkeim) with an annual yield of 6 malters of grain and 2 malters of wheat for 27 pounds of Heller and provide guarantors for this sale. Siegler: Konrad von Uissigheim"
+      "english": "Eberhard and Konrad, sons and other named relatives of the deceased knight Eberhard von Rosenberg (Rosinberg), sell to the Bronnbach Abbey a Hube in Uissigheim (Vssinkeim) with an annual yield of 6 malters of grain and 2 malters of wheat for 27 pounds of Heller and provide guarantors for this sale. Siegler: Konrad von Uissigheim",
+      "facts": [
+        "Eberhard von Rosenberg is son of Eberhard von Rosenberg (Ritter, deceased)",
+        "Konrad von Rosenberg is son of Eberhard von Rosenberg (Ritter, deceased)",
+        "Eberhard and Konrad von Rosenberg sold a hufe at Uissigheim to Bronnbach Abbey",
+        "Konrad von Uissigheim sealed the transaction"
+      ]
     }
   ]
 }

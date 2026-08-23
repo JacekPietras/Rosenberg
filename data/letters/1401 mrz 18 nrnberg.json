@@ -5,7 +5,11 @@
     {
       "source": "Regg. Pfalzgrafen 2 n. 669",
       "german": "Verleiht als pfalzgraf Conrad von Rosenberg, sohn Conrads von Rosenberg, {vitztums} (zu Amberg) ein viertel an dem schlosse zu Boxberg.",
-      "english": "As Count Palatine, Konrad von Rosenberg, son of Konrad von Rosenberg, grants {vitztums} (in Amberg) a quarter of the castle in Boxberg."
+      "english": "As Count Palatine, Konrad von Rosenberg, son of Konrad von Rosenberg, grants {vitztums} (in Amberg) a quarter of the castle in Boxberg.",
+      "facts": [
+        "Konrad von Rosenberg is son of Konrad von Rosenberg",
+        "The Pfalzgraf granted Konrad von Rosenberg a quarter share of Schloss Boxberg"
+      ]
     }
   ]
 }

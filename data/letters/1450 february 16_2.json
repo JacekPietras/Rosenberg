@@ -4,7 +4,14 @@
     {
       "source": "43 No. 1233",
       "german": "Eberhard von Rosenberg gibt seinem Vetter Ulrich von Rosenberg den Teil zu Boxberg, den sein Vater Eberhard von Rosenberg von Ulrich und Jörg von Rosenberg um 3.000 Gulden als Pfandschaft erhalten hatte, um dieselbe Summe wieder zu lösen.",
-      "english": "Eberhard von Rosenberg gives his cousin Ulrich von Rosenberg the part of Boxberg, which his father Eberhard von Rosenberg of Ulrich and Jörg von Rosenberg had received a 3,000 guilder as pledge in order to solve the same sum."
+      "english": "Eberhard von Rosenberg gives his cousin Ulrich von Rosenberg the part of Boxberg, which his father Eberhard von Rosenberg of Ulrich and Jörg von Rosenberg had received a 3,000 guilder as pledge in order to solve the same sum.",
+      "facts": [
+        "Eberhard von Rosenberg is cousin of Ulrich von Rosenberg",
+        "Eberhard von Rosenberg is son of Eberhard von Rosenberg",
+        "Eberhard von Rosenberg transferred a share at Boxberg to Ulrich von Rosenberg to redeem a Pfandschaft",
+        "Eberhard von Rosenberg held a share at Boxberg as a Pfandschaft from Ulrich von Rosenberg",
+        "Eberhard von Rosenberg held a share at Boxberg as a Pfandschaft from Jörg von Rosenberg"
+      ]
     }
   ]
 }

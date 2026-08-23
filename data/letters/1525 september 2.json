@@ -4,7 +4,12 @@
     {
       "source": "43 No. 1195",
       "german": "Kurfürst Ludwig V. von der Pfalz schlichtet einen Streit zwischen Jörg von Rosenberg und der Bürgerschaft zu Boxberg wegen des Holzes genannt die Klingen.",
-      "english": "Elector Ludwig V of the Palatinate sets up a dispute between Jörg von Rosenberg and the citizenship to Boxberg because of the wood called the blades."
+      "english": "Elector Ludwig V of the Palatinate sets up a dispute between Jörg von Rosenberg and the citizenship to Boxberg because of the wood called the blades.",
+      "facts": [
+        "Ludwig V. von der Pfalz is titled Kurfürst",
+        "Kurfürst Ludwig V. von der Pfalz settled a dispute between Jörg von Rosenberg and the Bürgerschaft zu Boxberg",
+        "The dispute concerned the Holz called die Klingen"
+      ]
     }
   ]
 }

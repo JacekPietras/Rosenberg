@@ -4,7 +4,15 @@
     {
       "source": "43 No. 1241",
       "german": "Botschafter, Hauptleute und Räte des Schwäbischen Bundes, derzeit in Mergentheim versammelt, treten dem Kurfürsten Ludwig von der Pfalz Stadt und Schloss Boxberg, die sie erobert und das Schloss ausgebrannt haben, gegen Bezahlung von 5.000 Gulden als rechtes Eigentum ab.",
-      "english": "Ambassadors, captains and councils of the Swabian League, currently gathered in Mergentheim, step down from Elector Ludwig of the Palatinate City and Castle Boxberg, which have conquered them and burned out the castle, for 5,000 guilders as the right property."
+      "english": "Ambassadors, captains and councils of the Swabian League, currently gathered in Mergentheim, step down from Elector Ludwig of the Palatinate City and Castle Boxberg, which have conquered them and burned out the castle, for 5,000 guilders as the right property.",
+      "facts": [
+        "Ludwig von der Pfalz is titled Kurfürst",
+        "The Schwäbischer Bund ceded Stadt Boxberg as rechtes Eigentum to Kurfürst Ludwig von der Pfalz",
+        "The Schwäbischer Bund ceded Schloss Boxberg as rechtes Eigentum to Kurfürst Ludwig von der Pfalz",
+        "The Schwäbischer Bund captured Stadt Boxberg",
+        "The Schwäbischer Bund captured Schloss Boxberg",
+        "The Schwäbischer Bund burned the Schloss Boxberg"
+      ]
     }
   ]
 }

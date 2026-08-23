@@ -4,7 +4,13 @@
     {
       "source": "43 No. 1202",
       "german": "Friedrich von Rosenberg übergibt seinen Vettern Jörg Hansen und Eberhart von Rosenberg zu Boxberg all sein Hab und Gut.",
-      "english": "Friedrich von Rosenberg hands over all his belongings to his cousin Jörg Hansen and Eberhart from Rosenberg to Boxberg."
+      "english": "Friedrich von Rosenberg hands over all his belongings to his cousin Jörg Hansen and Eberhart from Rosenberg to Boxberg.",
+      "facts": [
+        "Friedrich von Rosenberg transferred all his Hab und Gut to Jörg Hansen and Eberhard von Rosenberg",
+        "Jörg Hansen is cousin of Friedrich von Rosenberg",
+        "Eberhard von Rosenberg is cousin of Friedrich von Rosenberg",
+        "Eberhard von Rosenberg is styled zu Boxberg"
+      ]
     }
   ]
 }

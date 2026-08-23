@@ -4,7 +4,13 @@
     {
       "source": "StAAM, Fürstentum Obere Pfalz, Kloster Ensdorf Urkunden 182",
       "german": "A: Konrad von Rosenberg, Viztum zu Amberg E: Abt des Klosters Ensdorf Gerichtsbrief mit der Erlaubnis, auf dem Rosenhof zu Theuern wegen des dem Kloster zustehenden jährlichen Zinses zu pfänden.",
-      "english": "A: Konrad von Rosenberg, Vicar of Amberg E: Abbot of Ensdorf Monastery Court letter granting permission to seize the Rosenhof in Theuern for the annual interest due to the monastery."
+      "english": "A: Konrad von Rosenberg, Vicar of Amberg E: Abbot of Ensdorf Monastery Court letter granting permission to seize the Rosenhof in Theuern for the annual interest due to the monastery.",
+      "facts": [
+        "Konrad von Rosenberg is titled Vitzthum zu Amberg",
+        "Konrad von Rosenberg issued a Gerichtsbrief (court letter) to the Abt des Klosters Ensdorf",
+        "Konrad von Rosenberg authorized property seizure at the Rosenhof zu Theuern for unpaid monastery rents",
+        "Konrad von Rosenberg handled judicial matters involving debt collection and property seizure"
+      ]
     }
   ]
 }

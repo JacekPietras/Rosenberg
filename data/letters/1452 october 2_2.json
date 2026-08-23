@@ -4,7 +4,17 @@
     {
       "source": "43 No. 1234",
       "german": "Eberhard von Rosenberg verkauft seinem Vetter und nächsten Lehnserben Ulrich von Rosenberg sein Viertel an Boxberg und bittet den Pfalzgrafen Friedrich, denselben damit zu belehnen;Thomas und Jörg von Rosenberg konsentieren und bürgen.",
-      "english": "Eberhard von Rosenberg sells his district to Boxberg to his cousin and next yeast seventh Ulrich von Rosenberg and asks Count Palatine Frederick to sorrow;Thomas and Jörg von Rosenberg approve and guarantee."
+      "english": "Eberhard von Rosenberg sells his district to Boxberg to his cousin and next yeast seventh Ulrich von Rosenberg and asks Count Palatine Frederick to sorrow;Thomas and Jörg von Rosenberg approve and guarantee.",
+      "facts": [
+        "Eberhard von Rosenberg is cousin of Ulrich von Rosenberg",
+        "Ulrich von Rosenberg is Lehnserbe of Eberhard von Rosenberg",
+        "Eberhard von Rosenberg sold his quarter at Boxberg to Ulrich von Rosenberg",
+        "Eberhard von Rosenberg petitioned Pfalzgraf Friedrich to enfeoff Ulrich von Rosenberg with the quarter at Boxberg",
+        "Thomas von Rosenberg consented to the enfeoffment of Ulrich von Rosenberg with the quarter at Boxberg",
+        "Jörg von Rosenberg consented to the enfeoffment of Ulrich von Rosenberg with the quarter at Boxberg",
+        "Thomas von Rosenberg acted as surety for the enfeoffment",
+        "Jörg von Rosenberg acted as surety for the enfeoffment"
+      ]
     }
   ]
 }

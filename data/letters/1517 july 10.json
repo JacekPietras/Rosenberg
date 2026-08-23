@@ -4,7 +4,16 @@
     {
       "source": "43 No. 1219",
       "german": "Die Markgrafen Kasimir und Georg von Brandenburg erteilen ihrem Rat Georg von Rosenberg für die Stadt Boxberg, das Dorf Schweigern und den Seehof bei Boxberg einen Schutz- und Schirmbrief.",
-      "english": "The Margraves Kasimir and Georg von Brandenburg give their council, Georg von Rosenberg, for the town of Boxberg, the village of Schweigern and the Seehof near Boxberg."
+      "english": "The Margraves Kasimir and Georg von Brandenburg give their council, Georg von Rosenberg, for the town of Boxberg, the village of Schweigern and the Seehof near Boxberg.",
+      "facts": [
+        "Kasimir von Brandenburg is titled Markgraf",
+        "Georg von Brandenburg is titled Markgraf",
+        "Georg von Rosenberg is Rat of Kasimir von Brandenburg",
+        "Georg von Rosenberg is Rat of Georg von Brandenburg",
+        "Kasimir von Brandenburg and Georg von Brandenburg issued a Schutz- und Schirmbrief to Georg von Rosenberg for Stadt Boxberg",
+        "Kasimir von Brandenburg and Georg von Brandenburg issued a Schutz- und Schirmbrief to Georg von Rosenberg for Dorf Schweigern",
+        "Kasimir von Brandenburg and Georg von Brandenburg issued a Schutz- und Schirmbrief to Georg von Rosenberg for Seehof bei Boxberg"
+      ]
     }
   ]
 }

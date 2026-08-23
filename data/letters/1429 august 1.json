@@ -4,7 +4,14 @@
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 5127",
       "german": "Anna von Rosenberg, Ehefrau Hans von Rosenbergs, verkauft an Eberhard von Hardheim alle Gülten und Zinse, die sie bis dato in Königheim, Eiersheim, Rinderfeld und Schweinberg hatte.",
-      "english": "Anna von Rosenberg, wife of Hans von Rosenberg, sold to Eberhard von Hardheim all the rents and interest that she had previously had in Königheim, Eiersheim, Rinderfeld and Schweinberg."
+      "english": "Anna von Rosenberg, wife of Hans von Rosenberg, sold to Eberhard von Hardheim all the rents and interest that she had previously had in Königheim, Eiersheim, Rinderfeld and Schweinberg.",
+      "facts": [
+        "Anna von Rosenberg is spouse of Hans von Rosenberg",
+        "Anna von Rosenberg sold Gülten und Zinse at Königheim to Eberhard von Hardheim",
+        "Anna von Rosenberg sold Gülten und Zinse at Eiersheim to Eberhard von Hardheim",
+        "Anna von Rosenberg sold Gülten und Zinse at Rinderfeld to Eberhard von Hardheim",
+        "Anna von Rosenberg sold Gülten und Zinse at Schweinberg to Eberhard von Hardheim"
+      ]
     }
   ]
 }

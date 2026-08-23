@@ -4,7 +4,21 @@
     {
       "source": "43 No. 1230",
       "german": "Arnold von Rosenberg und seine Ehefrau Christine von Handschuhsheim verkaufen ihr Viertel an Boxberg, das sie von dem Ritter Konrad von Rosenberg gekauft hatten, um 6.500 Gulden an ihre Söhne Ulrich und Jörg von Rosenberg.",
-      "english": "Arnold von Rosenberg and his wife Christine von Handschuhsheim sell their district to Boxberg, which they had bought from the knight Konrad von Rosenberg, at 6,500 guilders to their sons Ulrich and Jörg von Rosenberg."
+      "english": "Arnold von Rosenberg and his wife Christine von Handschuhsheim sell their district to Boxberg, which they had bought from the knight Konrad von Rosenberg, at 6,500 guilders to their sons Ulrich and Jörg von Rosenberg.",
+      "facts": [
+        "Christine von Handschuhsheim is spouse of Arnold von Rosenberg",
+        "Arnold von Rosenberg sold a quarter share of Boxberg to his son Ulrich von Rosenberg",
+        "Arnold von Rosenberg sold a quarter share of Boxberg to his son Jörg von Rosenberg",
+        "Christine von Handschuhsheim sold a quarter share of Boxberg to her son Ulrich von Rosenberg",
+        "Christine von Handschuhsheim sold a quarter share of Boxberg to her son Jörg von Rosenberg",
+        "Ulrich von Rosenberg is son of Arnold von Rosenberg",
+        "Ulrich von Rosenberg is son of Christine von Handschuhsheim",
+        "Jörg von Rosenberg is son of Arnold von Rosenberg",
+        "Jörg von Rosenberg is son of Christine von Handschuhsheim",
+        "Konrad von Rosenberg is titled Ritter",
+        "Arnold von Rosenberg had previously purchased a quarter share of Boxberg from Konrad von Rosenberg, Ritter",
+        "Christine von Handschuhsheim had previously purchased a quarter share of Boxberg from Konrad von Rosenberg, Ritter"
+      ]
     }
   ]
 }

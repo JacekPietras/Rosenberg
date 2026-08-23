@@ -4,7 +4,13 @@
     {
       "source": "43 No. 1239",
       "german": "Arnold von Rosenberg beweist seine Ehefrau Margarethe von Dottenheim wegen ihrer aus dem seinerzeit von Graf Philipp von Rieneck zustande gebrachten Ehevertrag herrührenden Ansprüche auf seine Güter und Lehen zu Boxberg.",
-      "english": "Arnold von Rosenberg proves his wife Margarethe von Dottenheim because of their marriage contract, which was concluded by Count Philipp von Rieneck, which was made up of his estates and fiefs in Boxberg."
+      "english": "Arnold von Rosenberg proves his wife Margarethe von Dottenheim because of their marriage contract, which was concluded by Count Philipp von Rieneck, which was made up of his estates and fiefs in Boxberg.",
+      "facts": [
+        "Arnold von Rosenberg is spouse of Margarethe von Dottenheim",
+        "Margarethe von Dottenheim had Ansprüche from an Ehevertrag arranged by Graf Philipp von Rieneck",
+        "Arnold von Rosenberg acknowledged his Ehefrau's Ansprüche on his Güter und Lehen zu Boxberg",
+        "Philipp von Rieneck is titled Graf"
+      ]
     }
   ]
 }

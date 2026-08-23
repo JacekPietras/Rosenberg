@@ -4,7 +4,17 @@
     {
       "source": "43 No. 1240",
       "german": "Hans Melchior von Rosenberg tritt mit Rücksicht auf seine Krankheit und aus anderen Gründen seinen Antheil an Boxberg, Bastei und Städtlein samt Zubehör, an seine Lehnsherren, die Kurfürst Ludwig von der Pfalz und Pfalzgraf Friedrich ab.",
-      "english": "Hans Melchior von Rosenberg, reject his Antheil, with respect for his illness and for other reasons, including accessories, to his lords, the Elector Ludwig von derPfalz and Count Palatine Frederick."
+      "english": "Hans Melchior von Rosenberg, reject his Antheil, with respect for his illness and for other reasons, including accessories, to his lords, the Elector Ludwig von derPfalz and Count Palatine Frederick.",
+      "facts": [
+        "Hans Melchior von Rosenberg ceded his Anteil an Boxberg to Kurfürst Ludwig von der Pfalz and Pfalzgraf Friedrich",
+        "Hans Melchior von Rosenberg ceded his Anteil an der Bastei zu Boxberg to Kurfürst Ludwig von der Pfalz and Pfalzgraf Friedrich",
+        "Hans Melchior von Rosenberg ceded his Anteil am Städtlein zu Boxberg samt Zubehör to Kurfürst Ludwig von der Pfalz and Pfalzgraf Friedrich",
+        "Ludwig von der Pfalz is titled Kurfürst",
+        "Friedrich von der Pfalz is titled Pfalzgraf",
+        "Ludwig von der Pfalz is Lehnsherr of Hans Melchior von Rosenberg",
+        "Pfalzgraf Friedrich is Lehnsherr of Hans Melchior von Rosenberg",
+        "Hans Melchior von Rosenberg cited Krankheit as a reason for ceding his Anteil"
+      ]
     }
   ]
 }

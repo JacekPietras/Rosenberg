@@ -4,7 +4,17 @@
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 3 Qu. 197",
       "german": "Verkauf einiger Zinse, Gülten und Güter zu Dainbach an Kt Jost von Venningen und das DOH Mgh durch Eberhard [X.] d.Ä. von Rosenberg, Ritte",
-      "english": "Sale of some interest, rents and goods in Dainbach to Kt Jost von Venningen and the DOH Mgh by Eberhard [X.] the Elder von Rosenberg, Ritte"
+      "english": "Sale of some interest, rents and goods in Dainbach to Kt Jost von Venningen and the DOH Mgh by Eberhard [X.] the Elder von Rosenberg, Ritte",
+      "facts": [
+        "Eberhard von Rosenberg d. Ä. is titled Ritter",
+        "Eberhard von Rosenberg d. Ä. sold Zinse at Dainbach to Jost von Venningen",
+        "Eberhard von Rosenberg d. Ä. sold Gülten at Dainbach to Jost von Venningen",
+        "Eberhard von Rosenberg d. Ä. sold Güter at Dainbach to Jost von Venningen",
+        "Eberhard von Rosenberg d. Ä. sold Zinse at Dainbach to the Deutschordenshaus Mergentheim",
+        "Eberhard von Rosenberg d. Ä. sold Gülten at Dainbach to the Deutschordenshaus Mergentheim",
+        "Eberhard von Rosenberg d. Ä. sold Güter at Dainbach to the Deutschordenshaus Mergentheim",
+        "Jost von Venningen is Komtur zu Mergentheim"
+      ]
     }
   ]
 }

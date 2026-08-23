@@ -4,7 +4,15 @@
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 1227",
       "german": "Eberhart von Rosenberg leiht von seinem Bruder Arnold von Rosenberg 415 Gulden für die Dauer eines Jahres unter Leistungsbürgschaft seiner Vettern Arnold d. Ä. und Hans von Rosenberg.",
-      "english": "Eberhart von Rosenberg lends 415 guilders by his brother Arnold von Rosenberg for the duration of one year under the performance guarantee of his cousins Arnold d. Elder and Hans von Rosenberg."
+      "english": "Eberhart von Rosenberg lends 415 guilders by his brother Arnold von Rosenberg for the duration of one year under the performance guarantee of his cousins Arnold d. Elder and Hans von Rosenberg.",
+      "facts": [
+        "Eberhard von Rosenberg is brother of Arnold von Rosenberg",
+        "Eberhard von Rosenberg borrowed money from Arnold von Rosenberg",
+        "Arnold von Rosenberg d. Ä. is cousin of Eberhard von Rosenberg",
+        "Hans von Rosenberg is cousin of Eberhard von Rosenberg",
+        "Arnold von Rosenberg d. Ä. acted as surety for Eberhard von Rosenberg",
+        "Hans von Rosenberg acted as surety for Eberhard von Rosenberg"
+      ]
     }
   ]
 }

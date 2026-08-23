@@ -4,7 +4,18 @@
     {
       "source": "43 No. 1211",
       "german": "Eberhard von Rosenberg bittet den Pfalzgrafen Friedrich, seinen Vetter Ulrich von Rosenberg, dem er sein Viertel an Schloss und Stadt Boxberg, das pfälzisches Mannlehen ist, verkauft hat, damit zu belehnen; seine Vettern und Lehnserben Thomas und Jörg von Rosenberg schließen sich dieser Bite an.",
-      "english": "Eberhard von Rosenberg asks Count Palatine Frederick, his cousin Ulrich von Rosenberg, to whom he has sold his district to Castle and City Boxberg, which is a Palatinate Manlehen, to sorrow; his cousins and eies Thomas and Jörg von Rosenberg join this bite."
+      "english": "Eberhard von Rosenberg asks Count Palatine Frederick, his cousin Ulrich von Rosenberg, to whom he has sold his district to Castle and City Boxberg, which is a Palatinate Manlehen, to sorrow; his cousins and eies Thomas and Jörg von Rosenberg join this bite.",
+      "facts": [
+        "Eberhard von Rosenberg is cousin of Ulrich von Rosenberg",
+        "Thomas von Rosenberg is cousin of Eberhard von Rosenberg",
+        "Jörg von Rosenberg is cousin of Eberhard von Rosenberg",
+        "Thomas von Rosenberg is Lehnserbe of Eberhard von Rosenberg",
+        "Jörg von Rosenberg is Lehnserbe of Eberhard von Rosenberg",
+        "Eberhard von Rosenberg sold his quarter at Schloss Boxberg and Stadt Boxberg to Ulrich von Rosenberg",
+        "Eberhard von Rosenberg petitioned Pfalzgraf Friedrich to enfeoff Ulrich von Rosenberg with the quarter at Schloss Boxberg and Stadt Boxberg (pfälzisches Mannlehen)",
+        "Thomas von Rosenberg joined the petition to enfeoff Ulrich von Rosenberg with the quarter at Schloss Boxberg and Stadt Boxberg",
+        "Jörg von Rosenberg joined the petition to enfeoff Ulrich von Rosenberg with the quarter at Schloss Boxberg and Stadt Boxberg"
+      ]
     }
   ]
 }

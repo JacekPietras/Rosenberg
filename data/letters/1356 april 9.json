@@ -4,7 +4,18 @@
     {
       "source": "Staatsarchiv Ludwigsburg B 250 U 70",
       "german": "Die Brüder Engelhart und Konrad von Rosenberg, beide Ritter, beurkunden, daß sie aus Freundschaft zu ihrem Schwager (swager) Philipp von Bickenbach (Pykkenbach), Komtur des Deutschen Hauses zu Mergentheim, alle ihre Eigenleute in der Stadt Mergentheim den Brüdern des genannten Hauses übergeben haben. Siegler: Engelhart von Rosenberg; Konrad von Rosenberg",
-      "english": "The brothers Engelhart and Konrad von Rosenberg, both knights, certify that, out of friendship for their brother-in-law Philipp von Bickenbach (Pykkenbach), Commander of the German House of Mergentheim, they have entrusted all their property in the town of Mergentheim to the brothers of the aforementioned house. Seal: Engelhart von Rosenberg; Konrad von Rosenberg"
+      "english": "The brothers Engelhart and Konrad von Rosenberg, both knights, certify that, out of friendship for their brother-in-law Philipp von Bickenbach (Pykkenbach), Commander of the German House of Mergentheim, they have entrusted all their property in the town of Mergentheim to the brothers of the aforementioned house. Seal: Engelhart von Rosenberg; Konrad von Rosenberg",
+      "facts": [
+        "Engelhard von Rosenberg is titled Ritter",
+        "Konrad von Rosenberg is titled Ritter",
+        "Engelhard von Rosenberg is brother of Konrad von Rosenberg",
+        "Philipp von Bickenbach is Schwager (brother-in-law) of Engelhard von Rosenberg",
+        "Philipp von Bickenbach is Schwager (brother-in-law) of Konrad von Rosenberg",
+        "Philipp von Bickenbach is titled Komtur des Deutschen Hauses zu Mergentheim",
+        "Engelhart and Konrad von Rosenberg transferred their serfs in Mergentheim to the German House",
+        "Engelhard von Rosenberg sealed the transaction",
+        "Konrad von Rosenberg sealed the transaction"
+      ]
     }
   ]
 }

@@ -4,7 +4,13 @@
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 1100",
       "german": "Arnold und Eberhard von Rosenberg, Brüder, vertauschen an Raban und Konz Mertin, zu Messelhausen gesessen, 4 1/2 Morgen Wiesen zu Beckstein gegen eine Wiese zu Kupprichhausen.",
-      "english": "Arnold and Eberhard von Rosenberg, brothers, exchanged 4 1/2 acres of meadows in Beckstein for a meadow in Kupprichhausen to Raban and Konz Mertin, residing in Messelhausen."
+      "english": "Arnold and Eberhard von Rosenberg, brothers, exchanged 4 1/2 acres of meadows in Beckstein for a meadow in Kupprichhausen to Raban and Konz Mertin, residing in Messelhausen.",
+      "facts": [
+        "Arnold von Rosenberg is brother of Eberhard von Rosenberg",
+        "Eberhard von Rosenberg is brother of Arnold von Rosenberg",
+        "Arnold and Eberhard von Rosenberg exchanged meadows at Beckstein for a meadow at Kupprichhausen",
+        "Arnold and Eberhard von Rosenberg conducted property transactions with Raban and Konz Mertin of Messelhausen"
+      ]
     }
   ]
 }

@@ -4,7 +4,18 @@
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 3 Qu. 138",
       "german": "Verkauf des Anteils am großen und kleinen Zehnten und eines Guts zu Kirchhausen an DM Eberhard von Seinsheim durch Eberhard von Angelloch, Ritter, und seine Ehefrau Anna von Rosenberg,",
-      "english": "Sale of the share of the large and small tithes and an estate in Kirchhausen to DM Eberhard von Seinsheim by Eberhard von Angelloch, knight, and his wife Anna von Rosenberg,"
+      "english": "Sale of the share of the large and small tithes and an estate in Kirchhausen to DM Eberhard von Seinsheim by Eberhard von Angelloch, knight, and his wife Anna von Rosenberg,",
+      "facts": [
+        "Anna von Rosenberg is spouse of Eberhard von Angelloch",
+        "Eberhard von Angelloch is titled Ritter",
+        "Eberhard von Angelloch sold a share of the großen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
+        "Anna von Rosenberg sold a share of the großen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
+        "Eberhard von Angelloch sold a share of the kleinen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
+        "Anna von Rosenberg sold a share of the kleinen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
+        "Eberhard von Angelloch sold a Gut at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
+        "Anna von Rosenberg sold a Gut at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
+        "Eberhard von Seinsheim is Deutschmeister (Meister des Deutschen Ordens in deutschen und welschen Landen)"
+      ]
     }
   ]
 }
