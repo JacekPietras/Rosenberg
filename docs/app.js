@@ -10,7 +10,8 @@ function markdownLinks(value = '') {
 }
 
 async function getJson(path) {
-  const response = await fetch(`../${path}?v=${Date.now()}`, { cache: 'no-store' });
+  const dataPath = location.pathname.includes('/docs/') ? `../${path}` : path;
+  const response = await fetch(`${dataPath}?v=${Date.now()}`, { cache: 'no-store' });
   if (!response.ok) throw new Error(`${path}: ${response.status}`);
   return response.json();
 }
