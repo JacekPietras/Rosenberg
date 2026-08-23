@@ -2,9 +2,16 @@
   "date": "1390-06-05",
   "entries": [
     {
-      "source": "Generallandesarchiv Karlsruhe 43 Nr. 1191\n[http://www.landesarchiv-bw.de/plink/?f=4-1725531](http://www.landesarchiv-bw.de/plink/?f=4-1725531)",
+      "source": "Generallandesarchiv Karlsruhe 43 Nr. 1191",
+      "url": "http://www.landesarchiv-bw.de/plink/?f=4-1725531",
       "german": "Engelhard von Rosenberg und sein Sohn Eberhard verzichten auf ihre Ansprüche gegenüber den Johanniter wegen des Kaufs zu Boxberg und eines Burgguts auf dem Hof zu Gräfingen.",
-      "english": "Engelhard von Rosenberg and his son Eberhard renounce their claims against the Knights of St. John because of the purchase of Boxberg and a castle estate on the farm in Gräfingen."
+      "english": "Engelhard von Rosenberg and his son Eberhard renounce their claims against the Knights of St. John because of the purchase of Boxberg and a castle estate on the farm in Gräfingen.",
+      "facts": [
+        "Engelhard von Rosenberg renounced claims against the Johanniter Order regarding the Boxberg purchase",
+        "Eberhard is son of Engelhard von Rosenberg",
+        "Eberhard renounced claims against the Johanniter Order regarding the Boxberg purchase",
+        "Engelhard von Rosenberg and his son Eberhard renounced claims regarding a Burggut at the Hof zu Gräfingen"
+      ]
     }
   ]
 }

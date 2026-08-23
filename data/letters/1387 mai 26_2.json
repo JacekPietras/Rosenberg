@@ -2,9 +2,24 @@
   "date": "1387-05-26",
   "entries": [
     {
-      "source": "Generallandesarchiv Karlsruhe 43 Nr. 1225\n[http://www.landesarchiv-bw.de/plink/?f=4-1723544](http://www.landesarchiv-bw.de/plink/?f=4-1723544)\n[http://www.landesarchiv-bw.de/plink/?f=4-1723545](http://www.landesarchiv-bw.de/plink/?f=4-1723545)",
+      "source": "Generallandesarchiv Karlsruhe 43 Nr. 1225",
+      "url": [
+        "http://www.landesarchiv-bw.de/plink/?f=4-1723544",
+        "http://www.landesarchiv-bw.de/plink/?f=4-1723545"
+      ],
       "german": "Arnold von Rosenberg, Edelknecht, und seine Ehefrau Else, verkaufen ihren Anteil an Boxberg mit Genehmigung des Pfalzgrafen Ruprecht d. Ä. als Lehnsherrn um 6.000 Gulden an ihren Bruder und Schwager Eberhard von Rosenberg.\u000b\u000bder 2 Aussteller, des Konrad von Rosenberg, Vicedom zu Heidelberg, sowie des Kunz und des Hans von Rosenberg",
-      "english": "Arnold von Rosenberg, nobleman, and his wife Else, sell their share of Boxberg to their brother and brother-in-law Eberhard von Rosenberg for 6,000 guilders with the permission of Count Palatine Rupert the Elder as feudal lord.\u000b\u000bthe 2 exhibitors, Konrad von Rosenberg, Vicedom of Heidelberg, as well as Kunz and Hans von Rosenberg"
+      "english": "Arnold von Rosenberg, nobleman, and his wife Else, sell their share of Boxberg to their brother and brother-in-law Eberhard von Rosenberg for 6,000 guilders with the permission of Count Palatine Rupert the Elder as feudal lord.\u000b\u000bthe 2 exhibitors, Konrad von Rosenberg, Vicedom of Heidelberg, as well as Kunz and Hans von Rosenberg",
+      "facts": [
+        "Arnold von Rosenberg is titled Edelknecht",
+        "Else is spouse of Arnold von Rosenberg",
+        "Arnold von Rosenberg and Else sold their share of Boxberg to Eberhard von Rosenberg",
+        "Eberhard von Rosenberg is brother and brother-in-law (Bruder und Schwager) to Arnold and Else",
+        "Konrad von Rosenberg is titled Vicedom zu Heidelberg",
+        "Konrad von Rosenberg served as sealer for the Boxberg sale",
+        "Kunz von Rosenberg served as sealer for the Boxberg sale",
+        "Hans von Rosenberg served as sealer for the Boxberg sale",
+        "Pfalzgraf Ruprecht d. Ä. gave permission for the sale as feudal lord"
+      ]
     }
   ]
 }

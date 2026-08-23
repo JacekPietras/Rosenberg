@@ -2,9 +2,18 @@
   "date": "1397-04-29",
   "entries": [
     {
-      "source": "D Nr. 436\n[http://www.landesarchiv-bw.de/plink/?f=4-3933614](http://www.landesarchiv-bw.de/plink/?f=4-3933614)",
+      "source": "D Nr. 436",
+      "url": "http://www.landesarchiv-bw.de/plink/?f=4-3933614",
       "german": "König Wenzel gestattet den Brüdern Arnold und Eberhard von Rosenberg, in ihrem Dorf Schweigern Schultheißen und Schöffen, ein Halsgericht sowie Stock und Galgen zu haben und dort zu richten, wie es an Gerichten Gewohnheit ist",
-      "english": "King Wenceslas allows the brothers Arnold and Eberhard von Rosenberg to have mayors and jurors in their village Schweigern, a court of law as well as stocks and gallows, and to judge there as is customary in courts"
+      "english": "King Wenceslas allows the brothers Arnold and Eberhard von Rosenberg to have mayors and jurors in their village Schweigern, a court of law as well as stocks and gallows, and to judge there as is customary in courts",
+      "facts": [
+        "Arnold von Rosenberg is brother of Eberhard von Rosenberg",
+        "Eberhard von Rosenberg is brother of Arnold von Rosenberg",
+        "Arnold and Eberhard von Rosenberg received royal judicial privileges from King Wenzel",
+        "Arnold and Eberhard von Rosenberg held the village of Schweigern",
+        "Arnold and Eberhard von Rosenberg received the right to establish Schultheißen and Schöffen in Schweigern",
+        "Arnold and Eberhard von Rosenberg received the right to hold a Halsgericht (high court) with capital punishment in Schweigern"
+      ]
     }
   ]
 }
