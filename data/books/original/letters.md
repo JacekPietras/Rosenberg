@@ -1,7 +1,3 @@
-# Documents
-
-## **Documents**
-
 ### **1299 Febuary**
 
 Quellen: 43 Nr. 5290
