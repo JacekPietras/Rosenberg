@@ -104,7 +104,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .text p:last-child { margin-bottom: 0; }
 .text strong { color: var(--ink); font-weight: 650; }
 
-.source-list { margin: 1rem 0 0; padding: .85rem 1rem .85rem 2rem; color: var(--text); background: var(--surface-soft); border: 1px solid var(--line); border-radius: 7px; font-size: .9rem; }
+.source-list { margin: 1rem 0 0; padding: .15rem 0 .15rem 1.25rem; color: var(--text); font-size: .9rem; }
 .facts { margin: 1rem 0 0; padding: .85rem 1rem .85rem 2rem; color: var(--text); background: var(--accent-soft); border: 1px solid #2d466a; border-radius: 7px; font-size: .9rem; }
 .source-list ul { margin: .25rem 0; padding-left: 1.25rem; }
 .source-list li, .facts li { margin: .3rem 0; padding-left: .15rem; }

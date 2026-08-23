@@ -228,14 +228,34 @@ function languageMarkup(entry) {
   return `<div class="text-grid ${languages.length === 1 ? 'single' : ''}">${languages.map((language) => `<div class="language"><div class="text">${markdownMarkup(entry[language])}</div></div>`).join('')}</div>`;
 }
 
+function renderEntry(entry, { title = true } = {}) {
+  return `<article class="entry">${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`;
+}
+
+function bookSections(entries) {
+  return entries.reduce((sections, entry) => {
+    if (entry.title || !sections.length) sections.push({ title: entry.title || '', entries: [] });
+    sections[sections.length - 1].entries.push(entry);
+    return sections;
+  }, []);
+}
+
 function renderDocument(doc, path, index) {
-  const entries = (doc.entries || []).map((entry) => `<article class="entry">${entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
+  const entries = doc.entries || [];
   const title = documentTitle(doc, path);
   const date = doc.date && formatDate(doc.date) !== title ? `<small>${escapeHtml(formatDate(doc.date))}</small>` : '';
   const url = doc.url ? urlMarkup(doc.url) : '';
   const year = documentYear(doc);
   const anchor = year ? ` id="year-${year}-${index}"` : '';
-  return `<article class="document"${anchor}><div class="document-heading"><div><h2>${escapeHtml(title)}</h2>${url}</div>${date}</div>${entries}</article>`;
+  if (path.startsWith('data/books/')) {
+    return bookSections(entries).map((section, sectionIndex) => {
+      const sectionTitle = section.title || (sectionIndex === 0 ? title : 'Untitled section');
+      const sectionContent = section.entries.map((entry) => renderEntry(entry, { title: false })).join('');
+      return `<article class="document book-document"><div class="document-heading"><div><h2>${markdownLinks(sectionTitle)}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
+    }).join('');
+  }
+  const content = entries.map((entry) => renderEntry(entry)).join('');
+  return `<article class="document"${anchor}><div class="document-heading"><div><h2>${escapeHtml(title)}</h2>${url}</div>${date}</div>${content}</article>`;
 }
 
 function renderYearSidebar(paths) {
