@@ -134,8 +134,9 @@ function diagramMarkup(value = '') {
 
 function imageMarkup(value = '') {
   const fileName = String(value).trim();
-  if (!fileName || fileName.includes('/') || fileName.includes('\\') || !/\.(?:svg|png|jpe?g|gif|webp)$/i.test(fileName)) return '';
-  const source = `../data/images/${encodeURIComponent(fileName)}`;
+  const parts = fileName.split('/');
+  if (!fileName || fileName.includes('\\') || parts.some((part) => !part || part === '.' || part === '..') || !/\.(?:svg|png|jpe?g|gif|webp)$/i.test(fileName)) return '';
+  const source = `../data/images/${parts.map((part) => encodeURIComponent(part)).join('/')}`;
   return `<figure class="entry-image"><img src="${source}" alt="${escapeHtml(fileName)}" loading="lazy"></figure>`;
 }
 
@@ -218,8 +219,13 @@ function renderTabs() {
 }
 
 function languageMarkup(entry) {
-  const languages = state.language === 'both' ? ['german', 'english'] : [state.language];
-  return `<div class="text-grid ${languages.length === 1 ? 'single' : ''}">${languages.map((language) => `<div class="language"><div class="text">${markdownMarkup(entry[language] || '—')}</div></div>`).join('')}</div>`;
+  const available = ['german', 'english'].filter((language) => String(entry[language] || '').trim());
+  if (!available.length) return '';
+
+  const languages = state.language === 'both'
+    ? available
+    : available.includes(state.language) ? [state.language] : [available[0]];
+  return `<div class="text-grid ${languages.length === 1 ? 'single' : ''}">${languages.map((language) => `<div class="language"><div class="text">${markdownMarkup(entry[language])}</div></div>`).join('')}</div>`;
 }
 
 function renderDocument(doc, path, index) {
