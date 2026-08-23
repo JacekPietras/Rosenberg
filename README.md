@@ -73,4 +73,4 @@ The viewer loads the JSON files once when the page opens. New or removed JSON do
 
 Publish the repository with GitHub Pages to use the viewer without running anything locally. The published site will be at the repository root URL.
 
-For local testing, run `python3 serve.py` from the repository root and open `http://localhost:8000/docs/`. The local server only provides the JSON file listing; it has no dependencies and does not modify the data.
+For local testing, run `python3 docs/serve.py` from the repository root and open `http://localhost:8000/docs/`. The local server only provides the JSON file listing; it has no dependencies and does not modify the data.
