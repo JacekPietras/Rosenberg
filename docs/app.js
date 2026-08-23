@@ -6,25 +6,28 @@ function loadPreferences() {
     const preferences = JSON.parse(localStorage.getItem(PREFERENCES_KEY) || '{}');
     return {
       active: typeof preferences.active === 'string' ? preferences.active : null,
+      letter: typeof preferences.letter === 'string' ? preferences.letter : null,
       language: VALID_LANGUAGES.has(preferences.language) ? preferences.language : 'english',
     };
   } catch {
-    return { active: null, language: 'english' };
+    return { active: null, letter: null, language: 'english' };
   }
 }
 
 function savePreferences() {
   try {
-    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, language: state.language }));
+    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, letter: state.letter, language: state.language }));
   } catch {
     // Preferences are optional; rendering should continue if storage is unavailable.
   }
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, language: preferences.language, documents: new Map(), snapshot: '', yearHighlightCleanup: null };
+const state = { manifest: null, active: preferences.active, letter: preferences.letter, language: preferences.language, documents: new Map(), snapshot: '', yearHighlightCleanup: null };
 const $ = (selector) => document.querySelector(selector);
 const REFRESH_INTERVAL = 30000;
+
+if (location.hash.startsWith('#year-')) history.replaceState(null, '', `${location.pathname}${location.search}`);
 
 mermaid.initialize({ startOnLoad: false });
 
@@ -194,7 +197,7 @@ function renderYearSidebar(paths) {
 
   const links = years.map((year) => {
     const index = paths.findIndex((path) => documentYear(state.documents.get(path)) === year);
-    return `<a href="#year-${year}-${index}">${year}</a>`;
+    return `<a href="#" data-path="${escapeHtml(paths[index])}">${year}</a>`;
   }).join('');
   return `<aside class="year-sidebar" aria-label="Letters by year"><nav>${links}</nav></aside>`;
 }
@@ -204,18 +207,29 @@ function setupYearHighlight(paths) {
   state.yearHighlightCleanup = null;
   const links = [...document.querySelectorAll('.year-sidebar a')];
   const targets = paths
-    .map((path, index) => document.querySelector(`#year-${documentYear(state.documents.get(path))}-${index}`))
-    .filter(Boolean);
+    .map((path, index) => ({ path, element: document.querySelector(`#year-${documentYear(state.documents.get(path))}-${index}`) }))
+    .filter(({ element }) => element);
   if (!links.length || !targets.length) return;
   let selectedLink = null;
+
+  links.forEach((link) => link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const target = targets.find((item) => item.path === link.dataset.path);
+    if (!target) return;
+    state.letter = target.path;
+    savePreferences();
+    window.scrollTo(0, target.element.getBoundingClientRect().top + window.scrollY - 104);
+  }));
 
   const update = () => {
     const marker = window.scrollY + 160;
     let current = targets[0];
     targets.forEach((target) => {
-      if (target.getBoundingClientRect().top + window.scrollY <= marker) current = target;
+      if (target.element.getBoundingClientRect().top + window.scrollY <= marker) current = target;
     });
-    const year = current.id.match(/^year-(\d{4})-/)?.[1];
+    state.letter = current.path;
+    savePreferences();
+    const year = current.element.id.match(/^year-(\d{4})-/)?.[1];
     links.forEach((link) => {
       const active = link.textContent === year;
       link.classList.toggle('active', active);
@@ -233,6 +247,13 @@ function setupYearHighlight(paths) {
   update();
 }
 
+function restoreLetter(paths) {
+  const index = paths.indexOf(state.letter);
+  if (index < 0) return;
+  const target = document.querySelector(`#year-${documentYear(state.documents.get(state.letter))}-${index}`);
+  if (target) window.scrollTo(0, target.getBoundingClientRect().top + window.scrollY - 104);
+}
+
 async function renderActive() {
   const paths = state.active === 'letters' ? state.manifest.letters : [state.active];
   $('#status').textContent = '';
@@ -240,12 +261,15 @@ async function renderActive() {
   state.yearHighlightCleanup = null;
   if (state.active === 'letters') {
     $('#content').innerHTML = `<div class="letters-layout">${renderYearSidebar(paths)}<div class="letters-list">${paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('')}</div></div>`;
-    setupYearHighlight(paths);
   } else {
     $('#content').innerHTML = paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('');
   }
   const diagrams = $('#content').querySelectorAll('.mermaid');
   if (diagrams.length) await mermaid.run({ nodes: diagrams });
+  if (state.active === 'letters') {
+    restoreLetter(paths);
+    setupYearHighlight(paths);
+  }
 }
 
 async function loadAll({ announce = false } = {}) {
@@ -257,7 +281,7 @@ async function loadAll({ announce = false } = {}) {
   const letterPaths = paths.filter((path) => path.startsWith('data/letters/'));
   const manifest = { books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })), letters: letterPaths };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
-  if (!paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
+  if (state.active !== 'letters' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
   savePreferences();
   renderTabs(); await renderActive();
   if (announce) $('#status').textContent = 'Data refreshed.';
