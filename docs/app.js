@@ -10,7 +10,12 @@ function markdownLinks(value = '') {
 }
 
 async function getJson(path) {
-  const dataPath = location.pathname.includes('/docs/') ? `../${path}` : path;
+  const parts = location.pathname.split('/').filter(Boolean);
+  const owner = location.hostname.split('.')[0];
+  const repository = parts[0];
+  const dataPath = location.hostname.endsWith('github.io')
+    ? `https://raw.githubusercontent.com/${owner}/${repository}/main/${path}`
+    : `../${path}`;
   const response = await fetch(`${dataPath}?v=${Date.now()}`, { cache: 'no-store' });
   if (!response.ok) throw new Error(`${path}: ${response.status}`);
   return response.json();
