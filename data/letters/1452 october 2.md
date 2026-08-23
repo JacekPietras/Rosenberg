@@ -1,7 +1,0 @@
-### **1452 October 2**
-
-Quellen: 43 No. 1211
-
-Eberhard von Rosenberg bittet den Pfalzgrafen Friedrich, seinen Vetter Ulrich von Rosenberg, dem er sein Viertel an Schloss und Stadt Boxberg, das pfälzisches Mannlehen ist, verkauft hat, damit zu belehnen; seine Vettern und Lehnserben Thomas und Jörg von Rosenberg schließen sich dieser Bite an.
-
-

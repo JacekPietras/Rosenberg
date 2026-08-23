@@ -1,7 +1,0 @@
-### **1406 September 4**
-
-Quellen: Staatsarchiv Wertheim F-US 9 Nr. 48
-
-Erbbestandsbrief des Arnold von Rosenberg d.J. zu Boxberg und seiner Gemahlin Christina von Handschuhsheim für Cuntz Pfister und Cuntz Fuchs zu Eiersheim über Wiesen, Gülten und Zinsen ober Massenbach. Siegel: 1) Arnold von Rosenberg, 2) Eberhard von Rosenberg (Bruder), 3, Reinhard von Uessigheim (Vetter, fehlt), 4) Cunz von Rosenberg (Vetter)
-
-

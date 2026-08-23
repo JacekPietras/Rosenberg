@@ -45,7 +45,8 @@ Rosenberg/
     ├── print_facts_by_date.sh   # Print facts matching a specific date
     ├── remove_facts_by_date.sh  # Remove facts matching a specific date
     ├── convert_date_to_iso.sh   # Convert letter dates to ISO (handles ranges)
-    └── extract_letter_source.sh # Extract Quellen from letter files
+    ├── extract_letter_source.sh # Extract Quellen from letter files
+    └── parse_letters.py          # Convert letter markdown files to JSON
 ```
 
 ## Quick Start
@@ -209,6 +210,24 @@ Generates three separate comparison files between dates in `facts.json` and lett
   - **`dates_only_in_letters.md`**: Lists letter files not yet processed into facts.json
 - Helps identify discrepancies, missing letters, and unprocessed documents
 - Uses `print_fact_dates.sh`, `print_letter_dates.sh`, and `convert_date_to_iso.sh` helper scripts
+
+### `parse_letters.py`
+Converts each Markdown file in `data/letters/` into a same-named JSON file in
+`data/letters_json/`:
+
+```bash
+python3 scripts/parse_letters.py
+```
+
+Each JSON file contains the heading date and an ordered `entries` array. Every
+entry contains one `sources` string and its `german` text; repeated `Quellen:`
+blocks remain separate. English translations can be added later alongside the
+`german` field without changing the parser’s data model. To inspect one file
+without writing output:
+
+```bash
+python3 scripts/parse_letters.py --file "data/letters/1409 april 14.md"
+```
 
 ### `convert_date_to_iso.sh`
 Converts letter filename dates to ISO 8601 format (YYYY-MM-DD or YYYY).

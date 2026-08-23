@@ -1,7 +1,0 @@
-### **1343 February 21**
-
-Quellen: STAAM, monastery Kastl Certificates 109
-
-Chunrad der Lengenvelder von Rosenberg verkauft mit Willen seiner Hausfrau Jeute seinen Hof zu Pfeffershoven(1) an Abt Herman zu Chastel um 145 Pfund h zu freiem Eigen. Bürgen mit Leistungspflicht zu Sultzbach oder Chastel: H. Rüdger der Smid von Pfaffenhoven, Vetter des Ausstellers; H. Heinrich der Truchsezz von Holnstain; Fridrich der Franch von Rosenberg, Oheim des Ausstellers; Wernher der Kegelhaimer; Hartung der Swepferman von Pfaffenhoven. Ms.: die Bürgen.
-
-

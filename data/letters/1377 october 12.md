@@ -1,7 +1,0 @@
-### **1377 October 12**
-
-Quellen: StAAM, Fürstentum Obere Pfalz, Kloster Ensdorf Urkunden 177
-
-A: Konrad von Rosenberg, Viztum zu Amberg E: Herr Ulrich der Perkhauser, Siechenmeister zu Ensdorf Gerichtsbrief mit der Bestätigung, daß dem Kloster die Zinsen aus dem Rosenhof zu Theuern zustehen sollen.
-
-

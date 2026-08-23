@@ -1,7 +1,0 @@
-### **1369 Oktober 5**
-
-Quellen: Regesten der Pfalzgrafen am Rhein 1214 \- 1508: Karlsr. Coph. 464,135.
-
-Ruprecht schuldet Hannes und Eberhard den Closenern von Arnsdorf 920 regensburger pfennige und setzt in einer zweiten urkunde zu bürgen: Conrad von Rosenberg, vitztum zu Amberg, Friedrich den Auwer von Brennenberg, Ulrich den Puschbeck von Calmunz und Ulrich den schenken von Richnecke.
-
-

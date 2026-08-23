@@ -1,7 +1,0 @@
-### **1406 February 1**
-
-Quellen: Jesuitenorden, Kolleg St. Paul Regensburg Urkunden, BayHStA, Jesuitenorden, Kolleg St. Paul Regensburg Urkunden 883
-
-Konrad der Schmied zu Rosenberg verkauft Konrad dem Schmied, Sohn des Ulrich von Herberstorff, sein Erbrecht auf der Schmiedstatt zu Rosenberg und auf einem Acker, von welchem eine Ewiggült an die Kirche in Rosenberg und ein Fastnachtshuhn an Friedrich dem Kemnater geleistet wird. S: Friedrich der Kemnater
-
-

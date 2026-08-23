@@ -1,7 +1,0 @@
-### **1401 March 5, Nürnberg**
-
-Quellen: Regesta chronologico-diplomatica Ruperti regis Romanorum
-
-König Rupertus erlaubt dem Concz von Rosenberg, (Conrads von Rosenberg, Ritter sel. etwan Vicztums von Amberg Sohn) und Conrad von Rosenberg (gleichfalls eines Conrads von Rosenberg Sohn) in ihrem Dorfe zu Sweyern „vnd in sinem begriffe“ Schultheiss und Schöffen zu setzen und ein Halsgericht, Stock und Galgen daselbst zu haben. C.
-
-

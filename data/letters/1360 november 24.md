@@ -1,7 +1,0 @@
-### **1360 November 24**
-
-Quellen: Staatsarchiv Wertheim K-LRA 50 U 4
-
-Bernger und Heintze, Gebrüder von Eubigheim (Ubenkein), Edelknechte, verkaufen dem Spital zu Bischofsheim und seinen Vormündern und Pflegern ihren Wald gen. Bischofswinden zwischen Herman Seman und Eberhart von Rosenberg um 213 Pfund guter Währung. Als Bürgen haben sie Herman Seman und Albreht Steinman von Heckfeld (Hetfelt), Edelknechte, eingesetzt. Aussteller: Bernger von Eubigheim (Ubenkein), Edelknecht; Heintze von Eubigheim (Ubenkein), Edelknecht Empfänger: Spital zu Bischofsheim und dessen Vormünder und Pfleger Siegler: Bernger von Eubigheim (Ubenkein), Edelknecht; Heintze von Eubigheim (Ubenkein), Edelknecht; Herman Seman, Edelknecht; Albreht Steinman von Heckfeld (Hetfelt), Edelknecht
-
-

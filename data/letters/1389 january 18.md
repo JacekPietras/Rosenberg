@@ -1,7 +1,0 @@
-### **1389 January 18**
-
-Quellen: StA Wü, MIB 11 fol. 203
-
-Der Ritter Thame Knebel und seine Ehefrau Kunigunde und Else von Erligheim, Witwe des Eberhard von Rosenberg, bestätigen, dass Erzbischof Adolf von Mainz sich mit ihnen bezüglich ihres Teils der Pfandschaft am erzbischöflichen Schloss Bensheim geeinigt hat.  L(ite)ra ex p(ar)te Heinrici de Erlekeim milit(is) cone(n) p(ar)tis sive in Bensheim \- Erleckheim Bensheim [a] Der Ritter Thame Knebel, Schultheiß in Oppenheim (Opemheim), seine Ehefrau Kunigunde (Kunnegunt, Kunnigund) und Else von Erligheim (Erleckeim), Witwe des Eberhard (Ebirhard) von Rosenberg, bestätigen, dass Erzbischof Adolf von Mainz (Mencze), Erzkanzler des Heiligen Römischen (romischen) Reiches in Deutschen (dutschen) Landen, sich mit ihnen gütlich bezüglich ihres Teils der Pfandschaft am erzbischöflichen Schloss (sloße) Bensheim geeinigt hat. Ihr verstorbener Vetter, der Ritter Heinrich von Erligheim, hatte es vom Erzbischof für 4.000 Gulden zu Pfand genommen. Davon gebühren ihnen Erbanteile und Gülten in Höhe von 1.000 Gulden. Dieses Geld hat ihnen der Erzbischof ausgezahlt. Hiermit sagen sie den Mainzer und auch die Gemeinde Bensheim aller Forderungen im Rahmen der Pfandschaft los. Thame und Else kündigen auch im Namen ihrer Erben ihre Siegel an. Kunigunde bittet den Ritter Peter von Bechtolsheim (Bechtolssheim) genannt Burggrave, Frau Else ihren Schwager Arnold von Rosenberg, ihre Siegel zur Bekräftigung an die Urkunde zu hängen, was diese zusagen. \- Der geben ist nesten dages nach sente Anthonij tage 1389
-
-

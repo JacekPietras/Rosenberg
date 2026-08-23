@@ -1,7 +1,0 @@
-### **1512 November 16**
-
-Quellen: 43 No. 1239
-
-Arnold von Rosenberg beweist seine Ehefrau Margarethe von Dottenheim wegen ihrer aus dem seinerzeit von Graf Philipp von Rieneck zustande gebrachten Ehevertrag herrührenden Ansprüche auf seine Güter und Lehen zu Boxberg.
-
-

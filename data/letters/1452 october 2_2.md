@@ -1,7 +1,0 @@
-### **1452 October 2**
-
-Quellen: 43 No. 1234
-
-Eberhard von Rosenberg verkauft seinem Vetter und nächsten Lehnserben Ulrich von Rosenberg sein Viertel an Boxberg und bittet den Pfalzgrafen Friedrich, denselben damit zu belehnen;Thomas und Jörg von Rosenberg konsentieren und bürgen.
-
-
