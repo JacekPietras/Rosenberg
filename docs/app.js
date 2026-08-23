@@ -66,31 +66,8 @@ async function loadAll() {
   renderTabs(); await renderActive();
 }
 
-async function loadLocalFolder(files) {
-  const documents = new Map();
-  for (const file of files) {
-    if (!file.name.endsWith('.json')) continue;
-    const relative = file.webkitRelativePath.replace(/^.*?\/(books|letters)\//, 'data/$1/');
-    if (!relative.startsWith('data/books/') && !relative.startsWith('data/letters/')) continue;
-    documents.set(relative, JSON.parse(await file.text()));
-  }
-  const books = [...documents.keys()].filter((path) => path.startsWith('data/books/')).sort();
-  const letters = [...documents.keys()].filter((path) => path.startsWith('data/letters/')).sort();
-  state.manifest = { books: books.map((path) => ({ path, label: documents.get(path).book || path })), letters };
-  state.documents = documents; state.active ||= books[0] || 'letters';
-  renderTabs(); await renderActive();
-  $('#status').textContent = `${books.length} books · ${letters.length} letters loaded locally`;
-  $('#status').classList.remove('error');
-}
-
 document.querySelectorAll('input[name="language"]').forEach((input) => input.addEventListener('change', (event) => { state.language = event.target.value; renderActive(); }));
-$('#choose-folder').addEventListener('click', () => $('#folder-input').click());
-$('#folder-input').addEventListener('change', (event) => loadLocalFolder(event.target.files).catch((error) => {
-  $('#status').textContent = `Could not read folder: ${error.message}`;
-  $('#status').classList.add('error');
-}));
 loadAll().catch((error) => {
   $('#status').textContent = `Could not load data: ${error.message}`;
   $('#status').classList.add('error');
-  $('#choose-folder').classList.add('visible');
 });

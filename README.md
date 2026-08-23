@@ -71,4 +71,4 @@ The `docs/` directory contains a GitHub Pages browser viewer for the JSON datase
 
 The viewer loads the JSON files once when the page opens. New or removed JSON documents are discovered automatically through GitHub.
 
-Publish the repository with GitHub Pages to use the viewer without running anything locally. The published site will be at the repository root URL. If you open `docs/index.html` directly from disk, click `Choose data folder` and select the repository's `data` folder; browsers do not allow a `file://` page to fetch repository files automatically.
+Publish the repository with GitHub Pages to use the viewer without running anything locally. The published site will be at the repository root URL.
