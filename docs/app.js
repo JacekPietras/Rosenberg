@@ -8,16 +8,17 @@ function loadPreferences() {
       active: typeof preferences.active === 'string' ? preferences.active : null,
       letter: typeof preferences.letter === 'string' ? preferences.letter : null,
       language: VALID_LANGUAGES.has(preferences.language) ? preferences.language : 'english',
+      showFacts: preferences.showFacts !== false,
       darkMode: preferences.darkMode !== false,
     };
   } catch {
-    return { active: null, letter: null, language: 'english', darkMode: true };
+    return { active: null, letter: null, language: 'english', showFacts: true, darkMode: true };
   }
 }
 
 function savePreferences() {
   try {
-    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, letter: state.letter, language: state.language, darkMode: state.darkMode }));
+    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, letter: state.letter, language: state.language, showFacts: state.showFacts, darkMode: state.darkMode }));
   } catch {
     // Preferences are optional; rendering should continue if storage is unavailable.
   }
@@ -45,6 +46,15 @@ function updateLanguageControl() {
   const label = state.language === 'both' ? 'Both languages' : state.language === 'english' ? 'English' : 'German';
   languageToggle.setAttribute('aria-label', `Language: ${label}`);
   languageToggle.setAttribute('title', `Language: ${label}. Click to change`);
+}
+
+function updateFactsControl() {
+  const factsToggle = $('#facts-toggle');
+  if (!factsToggle) return;
+  const label = state.showFacts ? 'Hide facts' : 'Show facts';
+  factsToggle.setAttribute('aria-label', label);
+  factsToggle.setAttribute('title', label);
+  factsToggle.setAttribute('aria-pressed', String(state.showFacts));
 }
 
 if (location.hash.startsWith('#year-')) history.replaceState(null, '', `${location.pathname}${location.search}`);
@@ -206,7 +216,7 @@ function languageMarkup(entry) {
 }
 
 function renderDocument(doc, path, index) {
-  const entries = (doc.entries || []).map((entry) => `<article class="entry">${entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${languageMarkup(entry)}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
+  const entries = (doc.entries || []).map((entry) => `<article class="entry">${entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${languageMarkup(entry)}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
   const title = documentTitle(doc, path);
   const date = doc.date && formatDate(doc.date) !== title ? `<small>${escapeHtml(formatDate(doc.date))}</small>` : '';
   const url = doc.url ? urlMarkup(doc.url) : '';
@@ -331,9 +341,17 @@ async function refreshIfChanged() {
 const languageToggle = $('#language-toggle');
 const languages = ['english', 'german', 'both'];
 updateLanguageControl();
+updateFactsControl();
 languageToggle.addEventListener('click', () => {
   state.language = languages[(languages.indexOf(state.language) + 1) % languages.length];
   updateLanguageControl();
+  savePreferences();
+  renderActive();
+});
+const factsToggle = $('#facts-toggle');
+factsToggle.addEventListener('click', () => {
+  state.showFacts = !state.showFacts;
+  updateFactsControl();
   savePreferences();
   renderActive();
 });
