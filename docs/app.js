@@ -1,12 +1,97 @@
-const state = { manifest: null, active: null, language: 'english', documents: new Map() };
+const PREFERENCES_KEY = 'rosenberg-viewer-preferences';
+const VALID_LANGUAGES = new Set(['english', 'german', 'both']);
+
+function loadPreferences() {
+  try {
+    const preferences = JSON.parse(localStorage.getItem(PREFERENCES_KEY) || '{}');
+    return {
+      active: typeof preferences.active === 'string' ? preferences.active : null,
+      language: VALID_LANGUAGES.has(preferences.language) ? preferences.language : 'english',
+    };
+  } catch {
+    return { active: null, language: 'english' };
+  }
+}
+
+function savePreferences() {
+  try {
+    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, language: state.language }));
+  } catch {
+    // Preferences are optional; rendering should continue if storage is unavailable.
+  }
+}
+
+const preferences = loadPreferences();
+const state = { manifest: null, active: preferences.active, language: preferences.language, documents: new Map(), snapshot: '', yearHighlightCleanup: null };
 const $ = (selector) => document.querySelector(selector);
+const REFRESH_INTERVAL = 30000;
+
+mermaid.initialize({ startOnLoad: false });
 
 function escapeHtml(value = '') {
   return String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 }
 
+function inlineMarkup(value = '') {
+  return escapeHtml(value)
+    .replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+}
+
+function markdownMarkup(value = '') {
+  const lines = String(value).split('\n');
+  const output = [];
+  let listDepth = 0;
+  let lastIndent = -1;
+  let itemOpen = false;
+
+  const closeLists = () => {
+    if (itemOpen) { output.push('</li>'); itemOpen = false; }
+    while (listDepth > 0) { output.push('</ul>'); listDepth -= 1; }
+    lastIndent = -1;
+  };
+
+  lines.forEach((line) => {
+    const match = line.match(/^(\s*)[*+-]\s+(.+)$/);
+    if (!match) {
+      closeLists();
+      if (line.trim()) output.push(`<p>${inlineMarkup(line.trim())}</p>`);
+      return;
+    }
+
+    const indent = match[1].replace(/\t/g, '  ').length;
+    if (!listDepth) {
+      output.push('<ul class="source-list">');
+      listDepth = 1;
+    } else if (indent > lastIndent) {
+      output.push('<ul>');
+      listDepth += 1;
+    } else if (indent === lastIndent) {
+      if (itemOpen) output.push('</li>');
+    } else {
+      if (itemOpen) output.push('</li>');
+      while (listDepth > 1 && indent < lastIndent) {
+        output.push('</ul></li>');
+        listDepth -= 1;
+        lastIndent = Math.max(0, lastIndent - 2);
+      }
+    }
+    output.push(`<li>${inlineMarkup(match[2])}`);
+    itemOpen = true;
+    lastIndent = indent;
+  });
+
+  closeLists();
+  return output.join('');
+}
+
 function markdownLinks(value = '') {
-  return escapeHtml(value).replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>');
+  return inlineMarkup(value);
+}
+
+function diagramMarkup(value = '') {
+  const source = String(value).replace(/^\s*```mermaid\s*\n?/, '').replace(/\n?\s*```\s*$/, '').trim();
+  return source ? `<div class="diagram mermaid">${escapeHtml(source)}</div>` : '';
 }
 
 async function getJson(path) {
@@ -23,7 +108,7 @@ async function getJson(path) {
 
 async function getRepositoryFiles() {
   if (!location.hostname.endsWith('github.io')) {
-    const response = await fetch('/api/files');
+    const response = await fetch(`/api/files?v=${Date.now()}`, { cache: 'no-store' });
     if (!response.ok) throw new Error(`Local file list: ${response.status}`);
     return response.json();
   }
@@ -34,45 +119,167 @@ async function getRepositoryFiles() {
   const response = await fetch(`https://api.github.com/repos/${owner}/${repository}/git/trees/HEAD?recursive=1`);
   if (!response.ok) throw new Error(`GitHub repository tree: ${response.status}`);
   const tree = await response.json();
-  return tree.tree.filter((item) => item.type === 'blob' && /^data\/(books|letters)\/.*\.json$/.test(item.path)).map((item) => item.path).sort();
+  return tree.tree
+    .filter((item) => item.type === 'blob' && /^data\/(books|letters)\/.*\.json$/.test(item.path))
+    .map((item) => ({ path: item.path, version: item.sha }))
+    .sort((left, right) => left.path.localeCompare(right.path));
 }
 
-function documentTitle(doc, path) { return doc.book || doc.date || path.split('/').pop().replace(/\.json$/, ''); }
+function formatDate(date) {
+  const range = String(date || '').split('/');
+  if (range.length === 2) {
+    const start = formatDate(range[0]);
+    const end = formatDate(range[1]);
+    return start !== range[0] && end !== range[1] ? `${start} – ${end}` : date;
+  }
+
+  const match = String(date || '').match(/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$/);
+  if (!match) return date;
+
+  const [, year, month, day] = match;
+  if (!month) return year;
+  const value = new Date(Date.UTC(Number(year), Number(month) - 1, day ? Number(day) : 1));
+  const monthName = new Intl.DateTimeFormat('en-US', { month: 'long', timeZone: 'UTC' }).format(value);
+  return day ? `${year}, ${monthName} ${Number(day)}` : `${year}, ${monthName}`;
+}
+
+function documentTitle(doc, path) { return doc.book || formatDate(doc.date) || path.split('/').pop().replace(/\.json$/, ''); }
+
+function documentYear(doc) {
+  const match = String(doc?.date || '').match(/^(\d{4})/);
+  return match ? match[1] : null;
+}
+
+function urlLabel(value) {
+  try {
+    const hostname = new URL(value).hostname.replace(/^www\./i, '');
+    return hostname.split('.').slice(-2).join('.');
+  } catch {
+    return value;
+  }
+}
+
+function urlMarkup(value) {
+  const links = (Array.isArray(value) ? value : [value])
+    .filter((url) => /^https?:\/\//i.test(String(url || '')))
+    .map((url) => `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(urlLabel(url))}</a>`);
+  return links.length ? `<p class="document-url">${links.join(' · ')}</p>` : '';
+}
 
 function renderTabs() {
   const tabs = [...state.manifest.books, { path: 'letters', label: 'Letters' }];
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
-  document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; renderTabs(); renderActive(); }));
+  document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; savePreferences(); renderTabs(); renderActive(); }));
 }
 
 function languageMarkup(entry) {
   const languages = state.language === 'both' ? ['german', 'english'] : [state.language];
-  return `<div class="text-grid ${languages.length === 1 ? 'single' : ''}">${languages.map((language) => `<div class="language"><p class="text">${markdownLinks(entry[language] || '—')}</p></div>`).join('')}</div>`;
+  return `<div class="text-grid ${languages.length === 1 ? 'single' : ''}">${languages.map((language) => `<div class="language"><div class="text">${markdownMarkup(entry[language] || '—')}</div></div>`).join('')}</div>`;
 }
 
-function renderDocument(doc, path) {
-  const entries = (doc.entries || []).map((entry) => `<article class="entry">${entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${languageMarkup(entry)}${entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
-  return `<article class="document"><div class="document-heading"><h2>${escapeHtml(documentTitle(doc, path))}</h2>${doc.date ? `<small>${escapeHtml(doc.date)}</small>` : ''}</div>${entries}</article>`;
+function renderDocument(doc, path, index) {
+  const entries = (doc.entries || []).map((entry) => `<article class="entry">${entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${languageMarkup(entry)}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
+  const title = documentTitle(doc, path);
+  const date = doc.date && formatDate(doc.date) !== title ? `<small>${escapeHtml(formatDate(doc.date))}</small>` : '';
+  const url = doc.url ? urlMarkup(doc.url) : '';
+  const year = documentYear(doc);
+  const anchor = year ? ` id="year-${year}-${index}"` : '';
+  return `<article class="document"${anchor}><div class="document-heading"><div><h2>${escapeHtml(title)}</h2>${url}</div>${date}</div>${entries}</article>`;
+}
+
+function renderYearSidebar(paths) {
+  const years = [...new Set(paths.map((path) => documentYear(state.documents.get(path))).filter(Boolean))]
+    .sort((left, right) => Number(left) - Number(right));
+  if (!years.length) return '';
+
+  const links = years.map((year) => {
+    const index = paths.findIndex((path) => documentYear(state.documents.get(path)) === year);
+    return `<a href="#year-${year}-${index}">${year}</a>`;
+  }).join('');
+  return `<aside class="year-sidebar" aria-label="Letters by year"><nav>${links}</nav></aside>`;
+}
+
+function setupYearHighlight(paths) {
+  state.yearHighlightCleanup?.();
+  state.yearHighlightCleanup = null;
+  const links = [...document.querySelectorAll('.year-sidebar a')];
+  const targets = paths
+    .map((path, index) => document.querySelector(`#year-${documentYear(state.documents.get(path))}-${index}`))
+    .filter(Boolean);
+  if (!links.length || !targets.length) return;
+  let selectedLink = null;
+
+  const update = () => {
+    const marker = window.scrollY + 160;
+    let current = targets[0];
+    targets.forEach((target) => {
+      if (target.getBoundingClientRect().top + window.scrollY <= marker) current = target;
+    });
+    const year = current.id.match(/^year-(\d{4})-/)?.[1];
+    links.forEach((link) => {
+      const active = link.textContent === year;
+      link.classList.toggle('active', active);
+      if (active) link.setAttribute('aria-current', 'true');
+      else link.removeAttribute('aria-current');
+      if (active && link !== selectedLink) {
+        link.scrollIntoView({ block: 'nearest' });
+        selectedLink = link;
+      }
+    });
+  };
+
+  window.addEventListener('scroll', update, { passive: true });
+  state.yearHighlightCleanup = () => window.removeEventListener('scroll', update);
+  update();
 }
 
 async function renderActive() {
   const paths = state.active === 'letters' ? state.manifest.letters : [state.active];
   $('#status').textContent = '';
-  $('#content').innerHTML = paths.map((path) => renderDocument(state.documents.get(path), path)).join('');
+  state.yearHighlightCleanup?.();
+  state.yearHighlightCleanup = null;
+  if (state.active === 'letters') {
+    $('#content').innerHTML = `<div class="letters-layout">${renderYearSidebar(paths)}<div class="letters-list">${paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('')}</div></div>`;
+    setupYearHighlight(paths);
+  } else {
+    $('#content').innerHTML = paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('');
+  }
+  const diagrams = $('#content').querySelectorAll('.mermaid');
+  if (diagrams.length) await mermaid.run({ nodes: diagrams });
 }
 
-async function loadAll() {
-  const paths = await getRepositoryFiles();
+async function loadAll({ announce = false } = {}) {
+  const files = await getRepositoryFiles();
+  const paths = files.map((file) => typeof file === 'string' ? file : file.path);
+  const snapshot = JSON.stringify(files);
   const documents = new Map(await Promise.all(paths.map(async (path) => [path, await getJson(path)])));
   const bookPaths = paths.filter((path) => path.startsWith('data/books/'));
   const letterPaths = paths.filter((path) => path.startsWith('data/letters/'));
   const manifest = { books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })), letters: letterPaths };
-  state.manifest = manifest; state.documents = documents; state.active ||= manifest.books[0]?.path || 'letters';
+  state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
+  if (!paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
+  savePreferences();
   renderTabs(); await renderActive();
+  if (announce) $('#status').textContent = 'Data refreshed.';
 }
 
-document.querySelectorAll('input[name="language"]').forEach((input) => input.addEventListener('change', (event) => { state.language = event.target.value; renderActive(); }));
+async function refreshIfChanged() {
+  try {
+    const files = await getRepositoryFiles();
+    if (JSON.stringify(files) !== state.snapshot) await loadAll({ announce: true });
+  } catch (error) {
+    // A temporary network failure should not interrupt the next refresh attempt.
+    console.warn('Could not check for data updates:', error);
+  }
+}
+
+document.querySelectorAll('input[name="language"]').forEach((input) => {
+  input.checked = input.value === state.language;
+  input.addEventListener('change', (event) => { state.language = event.target.value; savePreferences(); renderActive(); });
+});
 loadAll().catch((error) => {
   $('#status').textContent = `Could not load data: ${error.message}`;
   $('#status').classList.add('error');
 });
+
+setInterval(refreshIfChanged, REFRESH_INTERVAL);

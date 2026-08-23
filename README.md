@@ -69,7 +69,7 @@ Prioritize the von Rosenberg family and its documented network, including von Ui
 
 The `docs/` directory contains a GitHub Pages (https://jacekpietras.github.io/Rosenberg/) browser viewer for the JSON dataset. It discovers books and letters directly from the repository tree, has tabs for each book plus a Letters tab, and can show English, German, or both texts side by side. Publish the repository with GitHub Pages using `/docs` as the source.
 
-The viewer loads the JSON files once when the page opens. New or removed JSON documents are discovered automatically through GitHub.
+The viewer checks for changed or new JSON documents every 30 seconds and refreshes the displayed data automatically. New or removed JSON documents are discovered automatically through GitHub.
 
 Publish the repository with GitHub Pages to use the viewer without running anything locally. The published site will be at the repository root URL.
 
