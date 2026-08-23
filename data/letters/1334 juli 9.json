@@ -3,7 +3,11 @@
   "entries": [
     {
       "german": "Computus expensarum Eberhardi de Rosenberg militis in negotiis Balduini provisoris ecclesiae Moguntinae apud Amoeneberg, Geissmar, et Fritzlar. Act. Sabbato ante Margarethae.",
-      "english": "An account of the expenses of the knight Eberhard von Rosenberg on the business of Baldwin, the provisor of the Church of Mainz, at Amöneburg, Geismar, and Fritzlar. Done on the Saturday before [the feast of Saint] Margaret."
+      "english": "An account of the expenses of the knight Eberhard von Rosenberg on the business of Baldwin, the provisor of the Church of Mainz, at Amöneburg, Geismar, and Fritzlar. Done on the Saturday before [the feast of Saint] Margaret.",
+      "facts": [
+        "Eberhard von Rosenberg is titled Ritter",
+        "Eberhard von Rosenberg served Balduin (Mainz provisor) at Amöneberg, Geismar, and Fritzlar"
+      ]
     }
   ]
 }

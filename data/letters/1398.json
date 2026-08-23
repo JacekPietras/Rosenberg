@@ -4,7 +4,13 @@
     {
       "source": "Regesten der Pfalzgrafen am Rhein 1214 \\- 1508",
       "german": "Hans von Rosenberg, ritter: burg und dorf Mure und ein haus zu Heidelberg, gelegen an Albrechts von Erlekeim haus.",
-      "english": "Hans von Rosenberg, knight: Mure castle and village and a house in Heidelberg, situated next to Albrecht von Erlekeim's house."
+      "english": "Hans von Rosenberg, knight: Mure castle and village and a house in Heidelberg, situated next to Albrecht von Erlekeim's house.",
+      "facts": [
+        "Hans von Rosenberg is titled Ritter",
+        "Hans von Rosenberg held Burg and Dorf Mure",
+        "Hans von Rosenberg owned a house in Heidelberg",
+        "Hans von Rosenberg's house in Heidelberg was located adjacent to Albrecht von Erligheim's house"
+      ]
     }
   ]
 }
