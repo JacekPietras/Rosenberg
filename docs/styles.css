@@ -134,6 +134,13 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .entry-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.25rem 0; }
 .entry-image { flex: 1 1 12rem; max-width: 100%; margin: 0; text-align: center; }
 .entry-image img { display: block; max-width: 100%; height: auto; max-height: 32rem; margin: 0 auto; }
+.image-link { display: block; cursor: zoom-in; }
+.image-lightbox { width: min(96vw, 1400px); max-width: none; height: min(94vh, 1100px); max-height: none; padding: 3rem 1rem 1rem; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.image-lightbox::backdrop { background: rgb(0 0 0 / .82); }
+.image-lightbox img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.image-lightbox-close { position: absolute; top: .65rem; right: .75rem; width: 2rem; height: 2rem; padding: 0; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 50%; cursor: pointer; font-size: 1.4rem; line-height: 1; }
+.image-lightbox-close:hover { color: var(--accent); border-color: var(--accent); }
+.image-lightbox-close:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .annotated-image { position: relative; display: inline-block; max-width: 100%; overflow: visible; }
 .annotated-image > a { display: block; }
 .seal-marker { position: absolute; z-index: 1; display: block; width: var(--seal-diameter, 0px); height: var(--seal-diameter, 0px); border: 2px solid #d9485f; border-radius: 50%; transform: translate(-50%, -50%); pointer-events: none; }

@@ -7,8 +7,8 @@
         "http://www.landesarchiv-bw.de/plink/?f=4-1723544",
         "http://www.landesarchiv-bw.de/plink/?f=4-1723545"
       ],
-      "german": "Arnold von Rosenberg, Edelknecht, und seine Ehefrau Else, verkaufen ihren Anteil an Boxberg mit Genehmigung des Pfalzgrafen Ruprecht d. Ä. als Lehnsherrn um 6.000 Gulden an ihren Bruder und Schwager Eberhard von Rosenberg.\u000b\u000bder 2 Aussteller, des Konrad von Rosenberg, Vicedom zu Heidelberg, sowie des Kunz und des Hans von Rosenberg",
-      "english": "Arnold von Rosenberg, nobleman, and his wife Else, sell their share of Boxberg to their brother and brother-in-law Eberhard von Rosenberg for 6,000 guilders with the permission of Count Palatine Rupert the Elder as feudal lord.\u000b\u000bthe 2 exhibitors, Konrad von Rosenberg, Vicedom of Heidelberg, as well as Kunz and Hans von Rosenberg",
+      "german": "Arnold von Rosenberg, Edelknecht, und seine Ehefrau Else, verkaufen ihren Anteil an Boxberg mit Genehmigung des Pfalzgrafen Ruprecht d. Ä. als Lehnsherrn um 6.000 Gulden an ihren Bruder und Schwager Eberhard von Rosenberg.\n\nder 2 Aussteller, des Konrad von Rosenberg, Vicedom zu Heidelberg, sowie des Kunz und des Hans von Rosenberg",
+      "english": "Arnold von Rosenberg, nobleman, and his wife Else, sell their share of Boxberg to their brother and brother-in-law Eberhard von Rosenberg for 6,000 guilders with the permission of Count Palatine Rupert the Elder as feudal lord.\n\nthe 2 exhibitors, Konrad von Rosenberg, Vicedom of Heidelberg, as well as Kunz and Hans von Rosenberg",
       "facts": [
         "Arnold von Rosenberg is titled Edelknecht",
         "Else is spouse of Arnold von Rosenberg",
@@ -19,6 +19,13 @@
         "Kunz von Rosenberg served as sealer for the Boxberg sale",
         "Hans von Rosenberg served as sealer for the Boxberg sale",
         "Pfalzgraf Ruprecht d. Ä. gave permission for the sale as feudal lord"
+      ],
+      "seals": [
+        { "person": "Konrad? (Eberhard, Arnold, Konrad, Kunz, Hans)", "position": "0.5,0.5", "size": 0.15 },
+        { "person": "Konrad (Eberhard, Arnold, Kunz, Hans)", "position": "0.5,0.5", "size": 0.15 },
+        { "person": "Eberhard (or Arnold)", "position": "0.5,0.5", "size": 0.15 },
+        { "person": "Kunz, Hans? (Eberhard, Arnold, Konrad)", "position": "0.5,0.5", "size": 0.15 },
+        { "person": "Konrad? (Eberhard, Arnold, Kunz, Hans)", "position": "0.5,0.5", "size": 0.15 }
       ],
       "img": [
         "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723544%2F04_0001723544_0001_4-1723544-1.jpg",

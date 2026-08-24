@@ -227,7 +227,8 @@ function imageMarkup(value = '', seals = []) {
     }
     const annotations = sealAnnotationMarkup(seals, imageIndex);
     const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="lazy">`;
-    const annotatedImage = annotations ? `<span class="annotated-image"><a href="${escapeHtml(source)}" target="_blank" rel="noreferrer">${image}</a>${annotations}</span>` : `<a href="${escapeHtml(source)}" target="_blank" rel="noreferrer">${image}</a>`;
+    const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}">${image}</a>`;
+    const annotatedImage = annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
     return `<figure class="entry-image">${annotatedImage}</figure>`;
   }).filter(Boolean).join('');
   return images ? `<div class="entry-images">${images}</div>` : '';
@@ -251,6 +252,27 @@ function setupSealAnnotations() {
     window.removeEventListener('resize', update);
   };
   update();
+}
+
+function setupImageLightbox() {
+  const lightbox = $('#image-lightbox');
+  const lightboxImage = $('#image-lightbox-image');
+  const closeButton = $('#image-lightbox-close');
+  if (!lightbox || !lightboxImage || !closeButton) return;
+  $('#content').addEventListener('click', (event) => {
+    const link = event.target.closest('.image-link');
+    if (!link) return;
+    event.preventDefault();
+    const image = link.querySelector('img');
+    lightboxImage.src = image?.currentSrc || link.dataset.imageSrc;
+    lightboxImage.alt = image?.alt || '';
+    lightbox.showModal();
+  });
+  closeButton.addEventListener('click', () => lightbox.close());
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) lightbox.close();
+  });
+  lightbox.addEventListener('close', () => { lightboxImage.removeAttribute('src'); });
 }
 
 async function getJson(path) {
@@ -648,6 +670,8 @@ themeToggle.addEventListener('click', () => {
   savePreferences();
   renderActive();
 });
+
+setupImageLightbox();
 
 async function getText(path) {
   const parts = location.pathname.split('/').filter(Boolean);
