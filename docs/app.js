@@ -131,19 +131,28 @@ function markdownLinks(value = '') {
   return inlineMarkup(value);
 }
 
-function letterPathForSource(source) {
+function letterForSource(source) {
   if (!state.manifest?.letters || !source) return null;
   const sources = [source, ...source.split(/\s*;\s*/)].filter((value, index, values) => value && values.indexOf(value) === index);
-  return sources.reduce((match, citation) => match || state.manifest.letters.find((path) =>
-    (state.documents.get(path)?.entries || []).some((entry) => entry.source === citation)
-  ), null);
+  return sources.reduce((match, citation) => match || state.manifest.letters.reduce((found, path) => {
+    if (found) return found;
+    const entry = (state.documents.get(path)?.entries || []).find((item) => item.source === citation);
+    return entry ? { path, entry } : null;
+  }, null), null);
 }
 
 function sealSourceMarkup(source) {
-  const path = letterPathForSource(source);
-  if (!path) return markdownLinks(source);
-  const params = new URLSearchParams({ tab: 'letters', letter: path });
+  const match = letterForSource(source);
+  if (!match) return markdownLinks(source);
+  const params = new URLSearchParams({ tab: 'letters', letter: match.path });
   return `<a href="?${params.toString()}">${markdownLinks(source)}</a>`;
+}
+
+function sealLetterUrlMarkup(source) {
+  const match = letterForSource(source);
+  if (!match) return '';
+  const url = match.entry.url || state.documents.get(match.path)?.url;
+  return url ? urlMarkup(url) : '';
 }
 
 function diagramMarkup(value = '') {
@@ -288,7 +297,8 @@ function renderDocument(doc, path, index) {
       const titleMarkup = entry.title ? `<h3>${markdownLinks(entry.title)}</h3>` : '';
       const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
       const sourceMarkup = entry.source ? `<p class="source">${sealSourceMarkup(entry.source)}</p>` : '';
-      return `<article class="entry seal-entry"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}</div><div class="seal-entry-media">${imageMarkup(entry.img)}</div></article>`;
+      const urlMarkupForLetter = entry.source ? sealLetterUrlMarkup(entry.source) : '';
+      return `<article class="entry seal-entry"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img)}</div></article>`;
     }).join('');
     return `<article class="document seals-document"><div class="document-heading"><h2>${escapeHtml(title)}</h2></div>${sealContent}</article>`;
   }
