@@ -37,8 +37,13 @@ def image_urls() -> list[str]:
         document = json.loads(path.read_text(encoding="utf-8"))
         for entry in document.get("entries", []):
             values = entry.get("img", [])
-            values = [values] if isinstance(values, str) else values
-            urls.update(value for value in values if isinstance(value, str) and value.startswith(("http://", "https://")))
+            values = [values] if isinstance(values, (str, dict)) else values
+            urls.update(
+                image_url
+                for value in values
+                for image_url in [value.get("src") if isinstance(value, dict) else value]
+                if isinstance(image_url, str) and image_url.startswith(("http://", "https://"))
+            )
     return sorted(urls)
 
 

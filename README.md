@@ -45,20 +45,25 @@ data/
       "german": "Original text",
       "english": "English translation",
       "facts": ["An explicit, atomic historical fact"],
-      "img": ["https://.../first-page.jpg", "https://.../second-page.jpg"],
-      "seals": [
+      "img": [
         {
-          "person": "Eberhard von Rosenberg",
-          "position": "0.3,0.8",
-          "size": 0.05
-        }
+          "src": "https://.../first-page.jpg",
+          "seals": [
+            {
+              "person": "Eberhard von Rosenberg",
+              "position": "0.3,0.8",
+              "size": 0.05
+            }
+          ]
+        },
+        { "src": "https://.../second-page.jpg", "seals": [] }
       ]
     }
   ]
 }
 ```
 
-The optional `seals` array annotates seals on the first image in a letter entry. `position` is the comma-separated normalized center (`x,y`, both from 0 to 1), and `size` is the seal diameter as a fraction of the image height. The viewer draws a circle and the person’s name beside it. Use an empty array when a letter has no recorded seal annotations, or omit the field until annotations are available.
+Each `img` item is an image node with a `src` URL and an optional `seals` array for annotations on that image. `position` is the comma-separated normalized center (`x,y`, both from 0 to 1), and `size` is the seal diameter as a fraction of the image height. The viewer draws a circle and the person’s name beside it. Use an empty array when an image has no recorded seal annotations, or omit the field until annotations are available.
 
 ## Working with the data
 
@@ -105,7 +110,7 @@ python3 scripts/download_landesarchiv.py \
   'https://www.landesarchiv-bw.de/plink/?f=4-1723539'
 ```
 
-No local image files are created in the default `links` mode. The `img` array contains direct `bild.php` URLs hosted by Landesarchiv Baden-Württemberg. To download the files into `data/images/letters/` and store their local names instead, use:
+No local image files are created in the default `links` mode. The `img` nodes contain direct `bild.php` URLs hosted by Landesarchiv Baden-Württemberg. To download the files into `data/images/letters/` and store their local names instead, use:
 
 ```text
 python3 scripts/download_landesarchiv.py \

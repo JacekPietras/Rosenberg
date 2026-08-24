@@ -194,8 +194,8 @@ function diagramMarkup(value = '') {
   return source ? `<div class="diagram mermaid">${escapeHtml(source)}</div>` : '';
 }
 
-function sealAnnotationMarkup(seals = [], imageIndex) {
-  if (imageIndex !== 0 || !Array.isArray(seals)) return '';
+function sealAnnotationMarkup(seals = []) {
+  if (!Array.isArray(seals)) return '';
   return seals.map((seal) => {
     const x = Number(seal?.position?.split?.(',')?.[0]);
     const y = Number(seal?.position?.split?.(',')?.[1]);
@@ -217,12 +217,16 @@ function localImageName(fileName) {
   }
 }
 
-function imageMarkup(value = '', seals = []) {
-  const fileNames = Array.isArray(value) ? value : [value];
+function imageMarkup(value = '', legacySeals = []) {
+  const imageNodes = Array.isArray(value) ? value : [value];
   const pathParts = location.pathname.split('/').filter(Boolean);
   const repository = pathParts[0];
   const owner = location.hostname.split('.')[0];
-  const images = fileNames.map((file, imageIndex) => {
+  const images = imageNodes.map((node, imageIndex) => {
+    const file = typeof node === 'object' && node !== null ? node.src : node;
+    const seals = typeof node === 'object' && node !== null
+      ? node.seals
+      : imageIndex === 0 ? legacySeals : [];
     const fileName = String(file || '').trim();
     if (!fileName) return '';
     let source;
@@ -244,7 +248,7 @@ function imageMarkup(value = '', seals = []) {
         ? `https://raw.githubusercontent.com/${owner}/${repository}/main/data/images/${encodedPath}`
         : `../data/images/${encodedPath}`;
     }
-    const annotations = sealAnnotationMarkup(seals, imageIndex);
+    const annotations = sealAnnotationMarkup(seals);
     const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
     const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="lazy"${fallbackAttribute}>`;
     const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}">${image}</a>`;

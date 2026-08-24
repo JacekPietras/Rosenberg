@@ -22,9 +22,17 @@
         "Eberhard von Rosenberg sealed the charter",
         "Konrad von Rosenberg sealed the charter"
       ],
-      "seals": [{ "person": "Eberhard zu Jagstberg (Jackßberg), brother of Arnold zu Boxberg. or Konrad zu Boxberg, cousin of Arnold zu Boxberg", "position": "0.5,0.5", "size": 0.15 }],
       "img": [
-        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000736702%2F02_0000736702_0003_2-736702-3.jpg"
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000736702%2F02_0000736702_0003_2-736702-3.jpg",
+          "seals": [
+            {
+              "person": "Eberhard zu Jagstberg (Jackßberg), brother of Arnold zu Boxberg. or Konrad zu Boxberg, cousin of Arnold zu Boxberg",
+              "position": "0.5,0.5",
+              "size": 0.15
+            }
+          ]
+        }
       ]
     }
   ]

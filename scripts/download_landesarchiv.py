@@ -150,8 +150,20 @@ def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = 
             urls = [urls] if isinstance(urls, str) else urls
             if any(re.search(r"[?&]f=" + re.escape(aid) + r"(?:$|&)", str(url)) for url in urls):
                 existing = entry.get("img", [])
-                existing = [existing] if isinstance(existing, str) else existing
-                entry["img"] = list(image_paths) if replace_images else list(dict.fromkeys(existing + image_paths))
+                existing = [existing] if isinstance(existing, (str, dict)) else existing
+                existing = [
+                    value if isinstance(value, dict) else {"src": value, "seals": []}
+                    for value in existing
+                ]
+                if replace_images:
+                    entry["img"] = [{"src": value, "seals": []} for value in image_paths]
+                else:
+                    known = {value.get("src") for value in existing}
+                    entry["img"] = existing + [
+                        {"src": value, "seals": []}
+                        for value in image_paths
+                        if value not in known
+                    ]
                 matches.append((path, document))
     if not matches:
         raise ValueError(f"No letter JSON entry found for AID {aid}")
