@@ -163,15 +163,16 @@ function diagramMarkup(value = '') {
 function imageMarkup(value = '') {
   const fileNames = Array.isArray(value) ? value : [value];
   const pathParts = location.pathname.split('/').filter(Boolean);
-  const repositoryPrefix = pathParts[0] ? `/${pathParts[0]}` : '';
-  const dataImagesRoot = location.hostname.endsWith('github.io')
-    ? `${repositoryPrefix}/data/images`
-    : '../data/images';
+  const repository = pathParts[0];
+  const owner = location.hostname.split('.')[0];
   const images = fileNames.map((file) => {
     const fileName = String(file || '').trim();
     const parts = fileName.split('/');
     if (!fileName || fileName.includes('\\') || parts.some((part) => !part || part === '.' || part === '..') || !/\.(?:svg|png|jpe?g|gif|webp)$/i.test(fileName)) return '';
-    const source = `${dataImagesRoot}/${parts.map((part) => encodeURIComponent(part)).join('/')}`;
+    const encodedPath = parts.map((part) => encodeURIComponent(part)).join('/');
+    const source = location.hostname.endsWith('github.io')
+      ? `https://raw.githubusercontent.com/${owner}/${repository}/main/data/images/${encodedPath}`
+      : `../data/images/${encodedPath}`;
     return `<figure class="entry-image"><img src="${source}" alt="${escapeHtml(fileName)}" loading="lazy"></figure>`;
   }).filter(Boolean).join('');
   return images ? `<div class="entry-images">${images}</div>` : '';
