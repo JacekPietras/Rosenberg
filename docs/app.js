@@ -32,7 +32,7 @@ function savePreferences() {
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, place: preferences.place, letter: preferences.letter, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), places: [], placePattern: null, snapshot: '', yearHighlightCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, letter: preferences.letter, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), places: [], placePattern: null, snapshot: '', yearHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const $ = (selector) => document.querySelector(selector);
 const REFRESH_INTERVAL = 30000;
 
@@ -194,22 +194,63 @@ function diagramMarkup(value = '') {
   return source ? `<div class="diagram mermaid">${escapeHtml(source)}</div>` : '';
 }
 
-function imageMarkup(value = '') {
+function sealAnnotationMarkup(seals = [], imageIndex) {
+  if (imageIndex !== 0 || !Array.isArray(seals)) return '';
+  return seals.map((seal) => {
+    const x = Number(seal?.position?.split?.(',')?.[0]);
+    const y = Number(seal?.position?.split?.(',')?.[1]);
+    const size = Number(seal?.size);
+    if (!Number.isFinite(x) || !Number.isFinite(y) || !Number.isFinite(size) || x < 0 || x > 1 || y < 0 || y > 1 || size <= 0 || !String(seal?.person || '').trim()) return '';
+    const person = escapeHtml(seal.person);
+    return `<span class="seal-marker" data-size="${size}" style="left:${x * 100}%;top:${y * 100}%" role="img" aria-label="Seal of ${person}" title="${person}"><span class="seal-marker-label">${person}</span></span>`;
+  }).join('');
+}
+
+function imageMarkup(value = '', seals = []) {
   const fileNames = Array.isArray(value) ? value : [value];
   const pathParts = location.pathname.split('/').filter(Boolean);
   const repository = pathParts[0];
   const owner = location.hostname.split('.')[0];
-  const images = fileNames.map((file) => {
+  const images = fileNames.map((file, imageIndex) => {
     const fileName = String(file || '').trim();
-    const parts = fileName.split('/');
-    if (!fileName || fileName.includes('\\') || parts.some((part) => !part || part === '.' || part === '..') || !/\.(?:svg|png|jpe?g|gif|webp)$/i.test(fileName)) return '';
-    const encodedPath = parts.map((part) => encodeURIComponent(part)).join('/');
-    const source = location.hostname.endsWith('github.io')
-      ? `https://raw.githubusercontent.com/${owner}/${repository}/main/data/images/${encodedPath}`
-      : `../data/images/${encodedPath}`;
-    return `<figure class="entry-image"><img src="${source}" alt="${escapeHtml(fileName)}" loading="lazy"></figure>`;
+    if (!fileName) return '';
+    let source;
+    if (/^https?:\/\//i.test(fileName)) {
+      source = fileName;
+    } else {
+      const parts = fileName.split('/');
+      if (fileName.includes('\\') || parts.some((part) => !part || part === '.' || part === '..') || !/\.(?:svg|png|jpe?g|gif|webp)$/i.test(fileName)) return '';
+      const encodedPath = parts.map((part) => encodeURIComponent(part)).join('/');
+      source = location.hostname.endsWith('github.io')
+        ? `https://raw.githubusercontent.com/${owner}/${repository}/main/data/images/${encodedPath}`
+        : `../data/images/${encodedPath}`;
+    }
+    const annotations = sealAnnotationMarkup(seals, imageIndex);
+    const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="lazy">`;
+    const annotatedImage = annotations ? `<span class="annotated-image"><a href="${escapeHtml(source)}" target="_blank" rel="noreferrer">${image}</a>${annotations}</span>` : `<a href="${escapeHtml(source)}" target="_blank" rel="noreferrer">${image}</a>`;
+    return `<figure class="entry-image">${annotatedImage}</figure>`;
   }).filter(Boolean).join('');
   return images ? `<div class="entry-images">${images}</div>` : '';
+}
+
+function setupSealAnnotations() {
+  state.sealMarkerCleanup?.();
+  state.sealMarkerCleanup = null;
+  const images = [...document.querySelectorAll('.annotated-image img')];
+  if (!images.length) return;
+  const update = () => images.forEach((image) => {
+    const height = image.clientHeight;
+    image.closest('.annotated-image')?.querySelectorAll('.seal-marker').forEach((marker) => {
+      marker.style.setProperty('--seal-diameter', `${height * Number(marker.dataset.size)}px`);
+    });
+  });
+  images.forEach((image) => image.addEventListener('load', update));
+  window.addEventListener('resize', update, { passive: true });
+  state.sealMarkerCleanup = () => {
+    images.forEach((image) => image.removeEventListener('load', update));
+    window.removeEventListener('resize', update);
+  };
+  update();
 }
 
 async function getJson(path) {
@@ -405,7 +446,7 @@ function languageMarkup(entry) {
 function renderEntry(entry, { title = true, date = true, source = true, path = '', index = null } = {}) {
   const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
   const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
-  return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`;
+  return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, entry.seals) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`;
 }
 
 function bookSections(entries) {
@@ -516,6 +557,8 @@ function scrollToEntryHash() {
 }
 
 async function renderActive() {
+  state.sealMarkerCleanup?.();
+  state.sealMarkerCleanup = null;
   if (state.place) {
     $('#content').innerHTML = renderPlacePage();
     setupPlaceNavigation();
@@ -534,6 +577,7 @@ async function renderActive() {
   } else {
     $('#content').innerHTML = paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('');
   }
+  setupSealAnnotations();
   const diagrams = $('#content').querySelectorAll('.mermaid');
   if (diagrams.length) await mermaid.run({ nodes: diagrams });
   if (state.active === 'letters') {

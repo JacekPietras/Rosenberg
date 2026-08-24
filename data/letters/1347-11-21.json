@@ -4,7 +4,7 @@
   "entries": [
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Oe 1 Bü 5043",
-    "url": "https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?id_titlaufn=9110005",
+      "url": "https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?id_titlaufn=9110005",
       "german": "1347, November 21. Mittwoch nach Elsbeth \\- Kaiser Karl IV. verleiht Kraft von Hohenlohe die Reichsgebühren, die Eberhard von Rosenberg, Vogt zu Durne, inne hatte",
       "english": "1347, November 21, Wednesday after Elsbeth \\- Emperor Charles IV grants Kraft von Hohenlohe the imperial fees held by Eberhard von Rosenberg, Vogt of Durne"
     },
@@ -12,13 +12,21 @@
       "source": "GA 5 U 70",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-187041",
       "german": "Kaiser Karl IV. bestätigt Graf Kraft von Hohenlohe die leibeigenen Leute auf dem Ohrnwald, die er von Eberhard von Rosenberg erworben hat.",
-      "english": "Emperor Charles IV confirms to Count Kraft of Hohenlohe the serfs in the Ohrnwald, which he had acquired from Eberhard von Rosenberg."
+      "english": "Emperor Charles IV confirms to Count Kraft of Hohenlohe the serfs in the Ohrnwald, which he had acquired from Eberhard von Rosenberg.",
+      "img": [
+        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000187041%2F03_0000187041_0001_3-187041-1.jpg",
+        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000187041%2F03_0000187041_0002_3-187041-2.jpg"
+      ]
     },
     {
       "source": "GA 5 U 1254",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-188977",
       "german": "Kraft von Hohenlohe und Eberhard von Rosenberg (Original und Abschrift).",
-      "english": "Kraft von Hohenlohe and Eberhard von Rosenberg (original and copy)."
+      "english": "Kraft von Hohenlohe and Eberhard von Rosenberg (original and copy).",
+      "img": [
+        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000188977%2F03_0000188977_0003_3-188977-3.jpg",
+        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000188977%2F03_0000188977_0004_3-188977-4.jpg"
+      ]
     },
     {
       "source": "Zapf, Georg Wilhelm: Versuche und Bemerkungen zur Erläuterung der Hohenlohischen ältern und neuern Geschichte. 1",

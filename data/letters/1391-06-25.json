@@ -3,14 +3,17 @@
   "entries": [
     {
       "source": "Staatsarchiv Wertheim G-Rep. 2a Rosenberg B 1",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=7-198228",
-    "url": "https://www.landesarchiv-bw.de/plink/?f=7-197571",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=7-197571",
       "german": "Lehenrevers Eberhardts von Rosenberg an H. Graf Johann ausgestellt über das Mannlehen den halbtheil des Zehnten zu Hohenstadt (Hohenstatt) klein und groß, den bisher Marquard von Hohenstadt (Hohenstatt) von der Herrschaft zu Wertheim zu Lehen getragen.",
       "english": "Lehenrevers Eberhard von Rosenberg issued to H. Graf Johann over the male fief the half part of the tithes in Hohenstadt (Hohenstatt) small and large, which until now Marquard von Hohenstadt (Hohenstatt) had borne as a fief from the lordship of Wertheim.",
       "facts": [
         "Eberhard von Rosenberg received a Mannlehen (man's fief) from Graf Johann",
         "Eberhard von Rosenberg received half of the tithes at Hohenstadt klein and groß as a fief",
         "Eberhard von Rosenberg's fief at Hohenstadt had previously been held by Marquard von Hohenstadt from the lordship of Wertheim"
+      ],
+      "img": [
+        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000197571%2F07_0000197571_0001_7-197571-1.jpg",
+        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000197571%2F07_0000197571_0002_7-197571-2.jpg"
       ]
     }
   ]

@@ -44,11 +44,21 @@ data/
       "url": "http://...",
       "german": "Original text",
       "english": "English translation",
-      "facts": ["An explicit, atomic historical fact"]
+      "facts": ["An explicit, atomic historical fact"],
+      "img": ["https://.../first-page.jpg", "https://.../second-page.jpg"],
+      "seals": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "position": "0.3,0.8",
+          "size": 0.05
+        }
+      ]
     }
   ]
 }
 ```
+
+The optional `seals` array annotates seals on the first image in a letter entry. `position` is the comma-separated normalized center (`x,y`, both from 0 to 1), and `size` is the seal diameter as a fraction of the image height. The viewer draws a circle and the person’s name beside it. Use an empty array when a letter has no recorded seal annotations, or omit the field until annotations are available.
 
 ## Working with the data
 
@@ -77,3 +87,14 @@ The viewer checks for changed or new JSON documents every 30 seconds and refresh
 Publish the repository with GitHub Pages to use the viewer without running anything locally. The published site will be at the repository root URL.
 
 For local testing, run `python3 docs/serve.py` from the repository root and open `http://localhost:8000/docs/`. The local server only provides the JSON file listing; it has no dependencies and does not modify the data.
+
+## Downloading Landesarchiv images
+
+Use the dependency-free linker with a Landesarchiv permalink. It follows the catalogue page, discovers all digitized pages, and stores direct inline image URLs in the matching letter JSON entry:
+
+```text
+python3 scripts/download_landesarchiv.py \
+  'https://www.landesarchiv-bw.de/plink/?f=4-1723539'
+```
+
+No local image files are created. The `img` array contains direct `bild.php` URLs hosted by Landesarchiv Baden-Württemberg. Records without an available digitization produce an error. Check the archive's usage terms and retain the source signature when reusing displayed images.
