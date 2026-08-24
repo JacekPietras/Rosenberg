@@ -2,4 +2,4 @@ Röttingen
 Uissigheim, Uissigheim, Ußinkeim
 Lauda, ludin, luden, Lueden, Lawdaw, Lawden
 Wölchingen, Wolchingen
-Boxberg
+Boxberg // some are missing for sure

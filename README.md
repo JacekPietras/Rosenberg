@@ -11,7 +11,8 @@ data/
 ├── letters/      # Letters and documents
 ├── seals.json    # Seal catalogue
 ├── calendar.md   # Liturgical calendar and dated annotations
-└── variations.md # Historical name and place-name variants
+├── names.md      # Historical name variants
+└── places.md     # Historical place-name variants
 ```
 
 ## Book JSON
@@ -53,7 +54,7 @@ data/
 
 To update a document, edit its JSON directly and preserve valid JSON, the existing source text, and the translation. Extract facts only from the document itself. Keep facts concise, atomic, explicit, and in English, while preserving historically meaningful German titles, names, and place names.
 
-Use `data/variations.md` when a spelling needs to be recognized or normalized. Do not merge people merely because their names are similar. In particular, do not conflate Münch von Rosenberg with the primary von Rosenberg family.
+Use `data/names.md` and `data/places.md` when a spelling needs to be recognized or normalized. Do not merge people merely because their names are similar. In particular, do not conflate Münch von Rosenberg with the primary von Rosenberg family.
 
 Before committing, validate the edited JSON with any available JSON-aware editor or validator and review the diff manually.
 
