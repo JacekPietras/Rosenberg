@@ -90,6 +90,14 @@ For local testing, run `python3 docs/serve.py` from the repository root and open
 
 ## Downloading Landesarchiv images
 
+For faster local viewing, download every remote image referenced by the letter JSON files that is not already in the local cache:
+
+```text
+python3 scripts/download_missing_letter_images.py
+```
+
+Cached files are stored in `data/images/letters/`, which is ignored by Git. The viewer uses a cached file locally when available and falls back to the original URL, so the published GitHub Pages site continues to work without the cache.
+
 Use the dependency-free linker with a Landesarchiv permalink. It follows the catalogue page, discovers all digitized pages, and stores direct inline image URLs in the matching letter JSON entry:
 
 ```text
@@ -97,4 +105,12 @@ python3 scripts/download_landesarchiv.py \
   'https://www.landesarchiv-bw.de/plink/?f=4-1723539'
 ```
 
-No local image files are created. The `img` array contains direct `bild.php` URLs hosted by Landesarchiv Baden-Württemberg. Records without an available digitization produce an error. Check the archive's usage terms and retain the source signature when reusing displayed images.
+No local image files are created in the default `links` mode. The `img` array contains direct `bild.php` URLs hosted by Landesarchiv Baden-Württemberg. To download the files into `data/images/letters/` and store their local names instead, use:
+
+```text
+python3 scripts/download_landesarchiv.py \
+  --mode download \
+  'https://www.landesarchiv-bw.de/plink/?f=4-1723539'
+```
+
+Use `--image-dir SUBDIRECTORY` to choose another subdirectory under `data/images/`. Records without an available digitization produce an error. Check the archive's usage terms and retain the source signature when reusing displayed images.

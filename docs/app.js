@@ -206,6 +206,17 @@ function sealAnnotationMarkup(seals = [], imageIndex) {
   }).join('');
 }
 
+function localImageName(fileName) {
+  if (!/^https?:\/\//i.test(fileName)) return fileName;
+  try {
+    const url = new URL(fileName);
+    const original = url.searchParams.get('originalBilddatei');
+    return (original || url.pathname).split('/').filter(Boolean).pop() || '';
+  } catch {
+    return '';
+  }
+}
+
 function imageMarkup(value = '', seals = []) {
   const fileNames = Array.isArray(value) ? value : [value];
   const pathParts = location.pathname.split('/').filter(Boolean);
@@ -215,8 +226,16 @@ function imageMarkup(value = '', seals = []) {
     const fileName = String(file || '').trim();
     if (!fileName) return '';
     let source;
+    let fallback = '';
     if (/^https?:\/\//i.test(fileName)) {
-      source = fileName;
+      fallback = fileName;
+      const localName = localImageName(fileName);
+      const isImage = /\.(?:svg|png|jpe?g|gif|webp)$/i.test(localName);
+      if (!isImage) return '';
+      const encodedPath = ['letters', localName].map((part) => encodeURIComponent(part)).join('/');
+      source = location.hostname.endsWith('github.io')
+        ? `https://raw.githubusercontent.com/${owner}/${repository}/main/data/images/${encodedPath}`
+        : `../data/images/${encodedPath}`;
     } else {
       const parts = fileName.split('/');
       if (fileName.includes('\\') || parts.some((part) => !part || part === '.' || part === '..') || !/\.(?:svg|png|jpe?g|gif|webp)$/i.test(fileName)) return '';
@@ -226,8 +245,9 @@ function imageMarkup(value = '', seals = []) {
         : `../data/images/${encodedPath}`;
     }
     const annotations = sealAnnotationMarkup(seals, imageIndex);
-    const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="lazy">`;
-    const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}">${image}</a>`;
+    const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
+    const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="lazy"${fallbackAttribute}>`;
+    const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}">${image}</a>`;
     const annotatedImage = annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
     return `<figure class="entry-image">${annotatedImage}</figure>`;
   }).filter(Boolean).join('');
@@ -254,25 +274,65 @@ function setupSealAnnotations() {
   update();
 }
 
+document.addEventListener('error', (event) => {
+  const image = event.target;
+  if (!(image instanceof HTMLImageElement)) return;
+  const fallback = image.dataset.fallbackSrc;
+  if (!fallback || image.src === fallback) return;
+  image.removeAttribute('data-fallback-src');
+  image.src = fallback;
+}, true);
+
 function setupImageLightbox() {
   const lightbox = $('#image-lightbox');
   const lightboxImage = $('#image-lightbox-image');
+  const lightboxStage = $('#image-lightbox-stage');
+  const lightboxAnnotations = $('#image-lightbox-annotations');
   const closeButton = $('#image-lightbox-close');
-  if (!lightbox || !lightboxImage || !closeButton) return;
+  if (!lightbox || !lightboxImage || !lightboxStage || !lightboxAnnotations || !closeButton) return;
+  let sourceMarkers = [];
+  const updateLightboxAnnotations = () => {
+    if (!lightboxImage.naturalWidth || !lightboxImage.naturalHeight) return;
+    const stageWidth = lightboxStage.clientWidth;
+    const stageHeight = lightboxStage.clientHeight;
+    const scale = Math.min(stageWidth / lightboxImage.naturalWidth, stageHeight / lightboxImage.naturalHeight);
+    const imageWidth = lightboxImage.naturalWidth * scale;
+    const imageHeight = lightboxImage.naturalHeight * scale;
+    lightboxAnnotations.style.left = `${(stageWidth - imageWidth) / 2}px`;
+    lightboxAnnotations.style.top = `${(stageHeight - imageHeight) / 2}px`;
+    lightboxAnnotations.style.width = `${imageWidth}px`;
+    lightboxAnnotations.style.height = `${imageHeight}px`;
+    lightboxAnnotations.querySelectorAll('.seal-marker').forEach((marker) => {
+      marker.style.setProperty('--seal-diameter', `${imageHeight * Number(marker.dataset.size)}px`);
+    });
+  };
   $('#content').addEventListener('click', (event) => {
     const link = event.target.closest('.image-link');
     if (!link) return;
     event.preventDefault();
     const image = link.querySelector('img');
+    sourceMarkers = [...link.closest('.annotated-image')?.querySelectorAll('.seal-marker') || []];
+    lightboxAnnotations.innerHTML = sourceMarkers.map((marker) => marker.outerHTML).join('');
+    lightboxImage.onerror = () => {
+      const fallback = link.dataset.imageFallback;
+      if (fallback && lightboxImage.src !== fallback) lightboxImage.src = fallback;
+    };
     lightboxImage.src = image?.currentSrc || link.dataset.imageSrc;
     lightboxImage.alt = image?.alt || '';
+    lightboxImage.addEventListener('load', updateLightboxAnnotations, { once: true });
     lightbox.showModal();
+    updateLightboxAnnotations();
   });
+  window.addEventListener('resize', updateLightboxAnnotations, { passive: true });
   closeButton.addEventListener('click', () => lightbox.close());
   lightbox.addEventListener('click', (event) => {
     if (event.target === lightbox) lightbox.close();
   });
-  lightbox.addEventListener('close', () => { lightboxImage.removeAttribute('src'); });
+  lightbox.addEventListener('close', () => {
+    lightboxImage.removeAttribute('src');
+    lightboxAnnotations.replaceChildren();
+    sourceMarkers = [];
+  });
 }
 
 async function getJson(path) {

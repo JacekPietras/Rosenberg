@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Link digitized pages from a Landesarchiv Baden-Württemberg permalink.
+"""Link or download digitized pages from a Landesarchiv permalink.
 
 The archive's /plink/ URL is a catalogue permalink.  This script follows it to
 the legacy viewer, discovers the page filenames and stores direct inline image
-URLs from the viewer's own image endpoint.
+URLs from the viewer's own image endpoint.  By default only those URLs are
+stored; use ``--mode download`` to also save the image files locally.
 """
 
 from __future__ import annotations
@@ -14,7 +15,7 @@ import json
 import re
 import sys
 from pathlib import Path
-from urllib.parse import urlencode, urljoin
+from urllib.parse import unquote, urlencode, urljoin, urlsplit
 from urllib.request import Request, build_opener
 
 
@@ -22,14 +23,19 @@ USER_AGENT = "Rosenberg research downloader/1.0"
 REQUEST_TIMEOUT = 60
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 LETTER_DIR = REPOSITORY_ROOT / "data" / "letters"
+IMAGE_DIR = REPOSITORY_ROOT / "data" / "images"
 PLINK_RE = re.compile(r"/plink/\?(?:[^#]*&)?f=([^&#]+)", re.I)
 ID_RE = re.compile(r"title=\"Id:\s*(\d+).*?AID:\s*([^\"\s]+)", re.I | re.S)
 HIDDEN_RE = re.compile(
     r'<input\s+[^>]*name=["\']([^"\']+)["\'][^>]*value=["\']([^"\']*)["\']',
     re.I,
 )
+IMAGE_SELECT_RE = re.compile(
+    r'<select\s+[^>]*name=["\']originalBilddatei["\'][^>]*>(.*?)</select>',
+    re.I | re.S,
+)
 OPTION_RE = re.compile(
-    r'<option\s+[^>]*value=["\']([^"\']+)["\'][^>]*>\s*Bild\s*\d+', re.I
+    r'<option\s+[^>]*value=["\']([^"\']+)["\'][^>]*>', re.I
 )
 SCOPE_RE = re.compile(r"scopeid_besta=(\d+)", re.I)
 
@@ -80,7 +86,8 @@ def discover_viewer(opener, permalink: str) -> tuple[str, dict[str, str], list[s
     fields = dict(HIDDEN_RE.findall(viewer_html))
     fields.setdefault("id", record_id)
     fields.setdefault("aid", aid)
-    page_names = list(dict.fromkeys(OPTION_RE.findall(viewer_html)))
+    image_select = IMAGE_SELECT_RE.search(viewer_html)
+    page_names = list(dict.fromkeys(OPTION_RE.findall(image_select.group(1)))) if image_select else []
     if not page_names and fields.get("bilddatei"):
         page_names = [fields["bilddatei"]]
     if not page_names:
@@ -116,7 +123,25 @@ def image_urls(viewer_url: str, fields: dict[str, str], page_names: list[str], s
     return urls
 
 
-def update_letter_json(aid: str, image_paths: list[str]) -> list[Path]:
+def download_images(opener, image_paths: list[str], page_names: list[str], image_dir: Path) -> list[str]:
+    image_dir.mkdir(parents=True, exist_ok=True)
+    stored_paths = []
+    for image_url, page_name in zip(image_paths, page_names):
+        filename = Path(unquote(urlsplit(image_url).query.split("originalBilddatei=", 1)[-1])).name
+        if not filename:
+            filename = Path(page_name).name
+        target = image_dir / filename
+        request = Request(image_url, headers={"User-Agent": USER_AGENT})
+        with opener.open(request, timeout=REQUEST_TIMEOUT) as response:
+            contents = response.read()
+        if not contents:
+            raise ValueError(f"The archive returned an empty image for {page_name}")
+        target.write_bytes(contents)
+        stored_paths.append(target.relative_to(IMAGE_DIR).as_posix())
+    return stored_paths
+
+
+def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = False) -> list[Path]:
     matches = []
     for path in sorted(LETTER_DIR.glob("*.json")):
         document = json.loads(path.read_text(encoding="utf-8"))
@@ -126,7 +151,7 @@ def update_letter_json(aid: str, image_paths: list[str]) -> list[Path]:
             if any(re.search(r"[?&]f=" + re.escape(aid) + r"(?:$|&)", str(url)) for url in urls):
                 existing = entry.get("img", [])
                 existing = [existing] if isinstance(existing, str) else existing
-                entry["img"] = list(dict.fromkeys(existing + image_paths))
+                entry["img"] = list(image_paths) if replace_images else list(dict.fromkeys(existing + image_paths))
                 matches.append((path, document))
     if not matches:
         raise ValueError(f"No letter JSON entry found for AID {aid}")
@@ -140,13 +165,30 @@ def update_letter_json(aid: str, image_paths: list[str]) -> list[Path]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("url", help="Landesarchiv URL, for example https://www.landesarchiv-bw.de/plink/?f=4-1723539")
+    parser.add_argument(
+        "--mode",
+        choices=("links", "download"),
+        default="links",
+        help="store direct archive URLs (default) or download files into data/images/",
+    )
+    parser.add_argument(
+        "--image-dir",
+        default="letters",
+        help="subdirectory of data/images/ used with --mode download (default: letters)",
+    )
     args = parser.parse_args()
+
+    image_dir = (IMAGE_DIR / args.image_dir).resolve()
+    if IMAGE_DIR not in image_dir.parents:
+        parser.error("--image-dir must stay inside data/images/")
 
     opener = build_opener()
     try:
         viewer_url, fields, page_names, scope_id = discover_viewer(opener, args.url)
         image_paths = image_urls(viewer_url, fields, page_names, scope_id)
-        letter_paths = update_letter_json(fields["aid"], image_paths)
+        if args.mode == "download":
+            image_paths = download_images(opener, image_paths, page_names, image_dir)
+        letter_paths = update_letter_json(fields["aid"], image_paths, replace_images=args.mode == "download")
         for letter_path in letter_paths:
             print(f"Updated letter JSON: {letter_path}")
     except Exception as error:
