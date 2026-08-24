@@ -8,6 +8,7 @@ This repository contains digitized historical sources about the von Rosenberg fa
 data/
 ├── books/        # Structured source books
 ├── letters/      # Letters and documents
+├── seals.json    # Seal catalogue
 ├── calendar.md   # Liturgical calendar and dated annotations
 └── variations.md # Historical name and place-name variants
 ```
@@ -67,7 +68,7 @@ Prioritize the von Rosenberg family and its documented network, including von Ui
 
 ## Browser viewer
 
-The `docs/` directory contains a GitHub Pages (https://jacekpietras.github.io/Rosenberg/) browser viewer for the JSON dataset. It discovers books and letters directly from the repository tree, has tabs for each book plus a Letters tab, and can show English, German, or both texts side by side. Publish the repository with GitHub Pages using `/docs` as the source.
+The `docs/` directory contains a GitHub Pages (https://jacekpietras.github.io/Rosenberg/) browser viewer for the JSON dataset. It discovers books, seals, and letters directly from the repository tree, has tabs for each collection plus a Letters tab, and can show English, German, or both texts side by side. Publish the repository with GitHub Pages using `/docs` as the source.
 
 The viewer checks for changed or new JSON documents every 30 seconds and refreshes the displayed data automatically. New or removed JSON documents are discovered automatically through GitHub.
 

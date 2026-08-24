@@ -133,11 +133,15 @@ function diagramMarkup(value = '') {
 }
 
 function imageMarkup(value = '') {
-  const fileName = String(value).trim();
-  const parts = fileName.split('/');
-  if (!fileName || fileName.includes('\\') || parts.some((part) => !part || part === '.' || part === '..') || !/\.(?:svg|png|jpe?g|gif|webp)$/i.test(fileName)) return '';
-  const source = `../data/images/${parts.map((part) => encodeURIComponent(part)).join('/')}`;
-  return `<figure class="entry-image"><img src="${source}" alt="${escapeHtml(fileName)}" loading="lazy"></figure>`;
+  const fileNames = Array.isArray(value) ? value : [value];
+  const images = fileNames.map((file) => {
+    const fileName = String(file || '').trim();
+    const parts = fileName.split('/');
+    if (!fileName || fileName.includes('\\') || parts.some((part) => !part || part === '.' || part === '..') || !/\.(?:svg|png|jpe?g|gif|webp)$/i.test(fileName)) return '';
+    const source = `../data/images/${parts.map((part) => encodeURIComponent(part)).join('/')}`;
+    return `<figure class="entry-image"><img src="${source}" alt="${escapeHtml(fileName)}" loading="lazy"></figure>`;
+  }).filter(Boolean).join('');
+  return images ? `<div class="entry-images">${images}</div>` : '';
 }
 
 async function getJson(path) {
@@ -166,7 +170,7 @@ async function getRepositoryFiles() {
   if (!response.ok) throw new Error(`GitHub repository tree: ${response.status}`);
   const tree = await response.json();
   return tree.tree
-    .filter((item) => item.type === 'blob' && /^data\/(books|letters)\/.*\.json$/.test(item.path))
+    .filter((item) => item.type === 'blob' && (/^data\/(books|letters)\/.*\.json$/.test(item.path) || item.path === 'data/seals.json'))
     .map((item) => ({ path: item.path, version: item.sha }))
     .sort((left, right) => left.path.localeCompare(right.path));
 }
@@ -196,6 +200,11 @@ function documentYear(doc) {
   return match ? match[1] : null;
 }
 
+function sealSortYear(entry) {
+  const years = String(entry?.date || '').match(/\d{4}/g);
+  return years?.length ? Math.min(...years.map(Number)) : Infinity;
+}
+
 function urlLabel(value) {
   try {
     const hostname = new URL(value).hostname.replace(/^www\./i, '');
@@ -213,7 +222,7 @@ function urlMarkup(value) {
 }
 
 function renderTabs() {
-  const tabs = [...state.manifest.books, { path: 'letters', label: 'Letters' }];
+  const tabs = [...state.manifest.books, { path: 'letters', label: 'Letters' }, ...(state.manifest.seals ? [{ path: 'data/seals.json', label: 'Seals' }] : [])];
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
   document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; savePreferences(); renderTabs(); renderActive(); }));
 }
@@ -228,8 +237,9 @@ function languageMarkup(entry) {
   return `<div class="text-grid ${languages.length === 1 ? 'single' : ''}">${languages.map((language) => `<div class="language"><div class="text">${markdownMarkup(entry[language])}</div></div>`).join('')}</div>`;
 }
 
-function renderEntry(entry, { title = true } = {}) {
-  return `<article class="entry">${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`;
+function renderEntry(entry, { title = true, date = true, source = true } = {}) {
+  const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
+  return `<article class="entry">${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`;
 }
 
 function bookSections(entries) {
@@ -253,6 +263,15 @@ function renderDocument(doc, path, index) {
       const sectionContent = section.entries.map((entry) => renderEntry(entry, { title: false })).join('');
       return `<article class="document book-document"><div class="document-heading"><div><h2>${markdownLinks(sectionTitle)}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
     }).join('');
+  }
+  if (path === 'data/seals.json') {
+    const sealContent = entries.map((entry, index) => ({ entry, index })).sort((left, right) => sealSortYear(left.entry) - sealSortYear(right.entry) || left.index - right.index).map(({ entry }) => {
+      const titleMarkup = entry.title ? `<h3>${markdownLinks(entry.title)}</h3>` : '';
+      const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
+      const sourceMarkup = entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : '';
+      return `<article class="entry seal-entry"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}</div><div class="seal-entry-media">${imageMarkup(entry.img)}</div></article>`;
+    }).join('');
+    return `<article class="document seals-document"><div class="document-heading"><h2>${escapeHtml(title)}</h2></div>${sealContent}</article>`;
   }
   const content = entries.map((entry) => renderEntry(entry)).join('');
   return `<article class="document"${anchor}><div class="document-heading"><div><h2>${escapeHtml(title)}</h2>${url}</div>${date}</div>${content}</article>`;
@@ -353,9 +372,13 @@ async function loadAll() {
   const documents = new Map(await Promise.all(paths.map(async (path) => [path, await getJson(path)])));
   const bookPaths = paths.filter((path) => path.startsWith('data/books/'));
   const letterPaths = paths.filter((path) => path.startsWith('data/letters/'));
-  const manifest = { books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })), letters: letterPaths };
+  const manifest = {
+    books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
+    seals: paths.includes('data/seals.json'),
+    letters: letterPaths,
+  };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
-  if (state.active !== 'letters' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
+  if (state.active !== 'letters' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || (manifest.seals ? 'data/seals.json' : 'letters');
   savePreferences();
   renderTabs(); await renderActive();
 }

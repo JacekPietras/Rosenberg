@@ -8,14 +8,18 @@ ROOT = Path(__file__).resolve().parent.parent
 class ViewerHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path.split("?", 1)[0] == "/api/files":
-            paths = sorted([
+            paths = [
                 {
                     "path": str(path.relative_to(ROOT)).replace("\\", "/"),
                     "version": path.stat().st_mtime_ns,
                 }
                 for folder in (ROOT / "data" / "books", ROOT / "data" / "letters")
                 for path in folder.glob("*.json")
-            ], key=lambda item: item["path"])
+            ]
+            seals_path = ROOT / "data" / "seals.json"
+            if seals_path.is_file():
+                paths.append({"path": "data/seals.json", "version": seals_path.stat().st_mtime_ns})
+            paths.sort(key=lambda item: item["path"])
             payload = json.dumps(paths).encode("utf-8")
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")

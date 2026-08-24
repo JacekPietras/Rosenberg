@@ -87,6 +87,13 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .document { scroll-margin-top: 5.5rem; margin: 1.5rem 0; padding: clamp(1.1rem, 2.5vw, 1.75rem); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
 .document:first-child { margin-top: 1.5rem; }
 .document-heading { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; margin-bottom: 1.5rem; }
+.seal-entry { display: grid; grid-template-columns: minmax(12rem, 1fr) minmax(0, 2fr); gap: 1rem 2rem; align-items: center; padding: 1rem 0; }
+.seal-entry:first-of-type { padding-top: 0; }
+.seal-entry-meta h3 { margin: 0 0 .35rem; color: var(--ink); font-size: 1rem; }
+.seal-entry-meta small { color: var(--muted); }
+.seal-entry-media .entry-images { margin: 0; }
+.seal-entry-media .entry-image { flex: 0 1 auto; }
+.seal-entry-media .entry-image img { width: auto; height: 20rem; max-width: 100%; object-fit: contain; }
 .document-heading h2 { margin: 0 0 .25rem; color: var(--ink); font-size: 1.25rem; font-weight: 650; letter-spacing: -.02em; }
 .document-heading small { color: var(--muted); font-size: .78rem; white-space: nowrap; }
 .document-url { margin: .45rem 0 0; overflow-wrap: anywhere; font-size: .78rem; }
@@ -94,6 +101,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .entry { padding: .9rem 0; }
 .entry:first-of-type { padding-top: 0; }
 .entry-title, .source { margin: 0 0 .55rem; color: var(--muted); font-size: .78rem; font-weight: 650; letter-spacing: .02em; }
+.entry-date { margin: -.3rem 0 .55rem; color: var(--faint); font-size: .76rem; }
 .source a { color: inherit; }
 .text-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 4vw, 3rem); }
 .text-grid.single { grid-template-columns: 1fr; }
@@ -112,7 +120,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .source-list > li:first-child, .facts > li:first-child { margin-top: 0; }
 .diagram { margin: 1.25rem 0; padding: 1rem; overflow-x: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; }
 .diagram svg { display: block; max-width: none; height: auto; margin: 0 auto; }
-.entry-image { margin: 1.25rem 0; text-align: center; }
+.entry-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.25rem 0; }
+.entry-image { flex: 1 1 12rem; max-width: 100%; margin: 0; text-align: center; }
 .entry-image img { display: block; max-width: 100%; height: auto; max-height: 32rem; margin: 0 auto; }
 :root[data-theme="light"] .diagram { background: #f2f5f8; }
 
@@ -126,6 +135,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
   .year-sidebar nav { display: flex; max-width: 100%; max-height: none; overflow-x: auto; }
   .year-sidebar a { min-width: 3.2rem; white-space: nowrap; }
   .document-heading { align-items: flex-start; }
+  .seal-entry { display: block; }
+  .seal-entry-media { margin-top: 1rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
