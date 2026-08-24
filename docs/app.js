@@ -198,7 +198,7 @@ async function getRepositoryFiles() {
   if (!response.ok) throw new Error(`GitHub repository tree: ${response.status}`);
   const tree = await response.json();
   return tree.tree
-    .filter((item) => item.type === 'blob' && (/^data\/(books|letters)\/.*\.json$/.test(item.path) || item.path === 'data/seals.json'))
+    .filter((item) => item.type === 'blob' && (/^data\/(books|letters)\/.*\.json$/.test(item.path) || item.path === 'data/fragments.json' || item.path === 'data/seals.json'))
     .map((item) => ({ path: item.path, version: item.sha }))
     .sort((left, right) => left.path.localeCompare(right.path));
 }
@@ -228,6 +228,11 @@ function documentYear(doc) {
   return match ? match[1] : null;
 }
 
+function bookSortYear(doc, path) {
+  const match = String(doc?.book || path || '').match(/\d{4}/);
+  return match ? Number(match[0]) : -Infinity;
+}
+
 function sealSortYear(entry) {
   const years = String(entry?.date || '').match(/\d{4}/g);
   return years?.length ? Math.min(...years.map(Number)) : Infinity;
@@ -250,7 +255,7 @@ function urlMarkup(value) {
 }
 
 function renderTabs() {
-  const tabs = [...state.manifest.books, { path: 'letters', label: 'Letters' }, ...(state.manifest.seals ? [{ path: 'data/seals.json', label: 'Seals' }] : [])];
+  const tabs = [...state.manifest.books, ...(state.manifest.fragments ? [{ path: 'data/fragments.json', label: 'Fragments' }] : []), { path: 'letters', label: 'Letters' }, ...(state.manifest.seals ? [{ path: 'data/seals.json', label: 'Seals' }] : [])];
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
   document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; savePreferences(); renderTabs(); renderActive(); }));
 }
@@ -285,7 +290,7 @@ function renderDocument(doc, path, index) {
   const url = doc.url ? urlMarkup(doc.url) : '';
   const year = documentYear(doc);
   const anchor = year ? ` id="year-${year}-${index}"` : '';
-  if (path.startsWith('data/books/')) {
+  if (path.startsWith('data/books/') || path === 'data/fragments.json') {
     return bookSections(entries).map((section, sectionIndex) => {
       const sectionTitle = section.title || (sectionIndex === 0 ? title : 'Untitled section');
       const sectionContent = section.entries.map((entry) => renderEntry(entry, { title: false })).join('');
@@ -398,10 +403,13 @@ async function loadAll() {
   const paths = files.map((file) => typeof file === 'string' ? file : file.path);
   const snapshot = JSON.stringify(files);
   const documents = new Map(await Promise.all(paths.map(async (path) => [path, await getJson(path)])));
-  const bookPaths = paths.filter((path) => path.startsWith('data/books/'));
+  const bookPaths = paths
+    .filter((path) => path.startsWith('data/books/'))
+    .sort((left, right) => bookSortYear(documents.get(right), right) - bookSortYear(documents.get(left), left) || left.localeCompare(right));
   const letterPaths = paths.filter((path) => path.startsWith('data/letters/'));
   const manifest = {
     books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
+    fragments: paths.includes('data/fragments.json'),
     seals: paths.includes('data/seals.json'),
     letters: letterPaths,
   };
