@@ -2,7 +2,7 @@
   "date": "1387-05-26",
   "entries": [
     {
-      "source": "Generallandesarchiv Karlsruhe 43 Nr. 1225",
+      "source": "Generallandesarchiv Karlsruhe 43 Nr. 1225 / Generallandesarchiv Karlsruhe 43 Nr. 1226",
       "url": [
         "http://www.landesarchiv-bw.de/plink/?f=4-1723544",
         "http://www.landesarchiv-bw.de/plink/?f=4-1723545"
@@ -25,46 +25,57 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723544%2F04_0001723544_0001_4-1723544-1.jpg",
           "seals": [
             {
-              "person": "Konrad? (Eberhard, Arnold, Konrad, Kunz, Hans)",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "person": "Else",
+              "position": "0.3748,0.8215",
+              "size": 0.11900000000000002
             },
             {
-              "person": "Konrad (Eberhard, Arnold, Kunz, Hans)",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "person": "Arnold",
+              "position": "0.2772,0.8001",
+              "size": 0.12000000000000002
             },
             {
-              "person": "Eberhard (or Arnold)",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "person": "Konrad",
+              "position": "0.4974,0.8535",
+              "size": 0.12400000000000004
             },
             {
-              "person": "Kunz, Hans? (Eberhard, Arnold, Konrad)",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "person": "Kunz",
+              "position": "0.6313,0.8143",
+              "size": 0.12200000000000004
             },
             {
-              "person": "Konrad? (Eberhard, Arnold, Kunz, Hans)",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "person": "Hans",
+              "position": "0.7496,0.8132",
+              "size": 0.12000000000000002
             }
           ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723544%2F04_0001723544_0002_4-1723544-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723544%2F04_0001723544_0002_4-1723544-2.jpg",
+          "deleted": "true"
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723544%2F04_0001723544_0003_4-1723544-3.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723544%2F04_0001723544_0003_4-1723544-3.jpg",
+          "deleted": "true"
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723545%2F04_0001723545_0001_4-1723545-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723545%2F04_0001723545_0001_4-1723545-1.jpg",
+          "seals": [
+            {
+              "person": "Eberhard",
+              "position": "0.2482,0.7966",
+              "size": 0.12400000000000003
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723545%2F04_0001723545_0002_4-1723545-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723545%2F04_0001723545_0002_4-1723545-2.jpg",
+          "deleted": "true"
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723545%2F04_0001723545_0003_4-1723545-3.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723545%2F04_0001723545_0003_4-1723545-3.jpg",
+          "deleted": "true"
         }
       ]
     }

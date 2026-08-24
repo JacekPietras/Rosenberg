@@ -19,10 +19,14 @@
           "seals": [
             {
               "person": "Eberhard Elder",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "position": "0.2708,0.7918",
+              "size": 0.10999999999999996
             }
           ]
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5249&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005249%2Ftitlaufn_0001868960%2F02_0001868960_0004_2-1868960-4.jpg",
+          "deleted": "true"
         }
       ]
     }

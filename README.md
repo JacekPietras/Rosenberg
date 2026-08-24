@@ -50,7 +50,7 @@ data/
           "src": "https://.../first-page.jpg",
           "seals": [
             {
-              "person": "Eberhard von Rosenberg",
+              "person": "Eberhard",
               "position": "0.3,0.8",
               "size": 0.05
             }

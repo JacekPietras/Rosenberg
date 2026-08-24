@@ -146,6 +146,10 @@ def download_images(opener, image_paths: list[str], page_names: list[str], image
     return stored_paths
 
 
+def image_matches_aid(image_path: str, aid: str) -> bool:
+    return re.search(rf"(?:^|[_-]){re.escape(aid)}(?:[-_.]|$)", image_path) is not None
+
+
 def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = True) -> list[Path]:
     matches = []
     for path in sorted(LETTER_DIR.glob("*.json")):
@@ -162,10 +166,15 @@ def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = 
                 ]
                 if replace_images:
                     old_by_src = {value.get("src"): value for value in existing}
-                    entry["img"] = [
+                    retained = [
+                        value for value in existing
+                        if not image_matches_aid(str(value.get("src", "")), aid)
+                    ]
+                    replacements = [
                         old_by_src.get(value, {"src": value, "seals": []})
                         for value in image_paths
                     ]
+                    entry["img"] = retained + replacements
                 else:
                     known = {value.get("src") for value in existing}
                     entry["img"] = existing + [

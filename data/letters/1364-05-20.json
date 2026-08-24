@@ -17,11 +17,15 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190271%2F03_0000190271_0001_3-190271-1.jpg",
           "seals": [
             {
-              "person": "Eberhard von Rosenberg",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "person": "Eberhard",
+              "position": "0.4372,0.8001",
+              "size": 0.17300000000000001
             }
           ]
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190271%2F03_0000190271_0002_3-190271-2.jpg",
+          "deleted": "true"
         }
       ]
     }

@@ -15,15 +15,14 @@
           "seals": [
             {
               "person": "Eberhard zu Jagstberg",
-              "position": "0.5,0.5",
-              "size": 0.15
-            },
-            {
-              "person": "Eberhard zu Jagstberg",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "position": "0.3760,0.4541",
+              "size": 0.12099999999999997
             }
           ]
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000194341%2F03_0000194341_0002_3-194341-2.jpg",
+          "deleted": "true"
         }
       ]
     }

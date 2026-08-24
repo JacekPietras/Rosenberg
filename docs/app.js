@@ -358,6 +358,11 @@ function setupImageLightbox() {
     window.clearTimeout(saveTimer);
     saveTimer = window.setTimeout(saveDocument, 100);
   };
+  const closeLightbox = async () => {
+    window.clearTimeout(saveTimer);
+    if (editingContext && !await saveDocument()) return;
+    lightbox.close();
+  };
   const imagePoint = (event) => {
     const rect = lightboxAnnotations.getBoundingClientRect();
     return { x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)), y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)) };
@@ -411,7 +416,7 @@ function setupImageLightbox() {
     updateLightboxAnnotations();
   });
   window.addEventListener('resize', updateLightboxAnnotations, { passive: true });
-  closeButton.addEventListener('click', () => lightbox.close());
+  closeButton.addEventListener('click', closeLightbox);
   lightboxAnnotations.addEventListener('pointerdown', (event) => {
     if (!editingContext) return;
     const marker = event.target.closest('.seal-marker');
@@ -488,7 +493,7 @@ function setupImageLightbox() {
     queueSave();
   });
   lightbox.addEventListener('click', (event) => {
-    if (event.target === lightbox) lightbox.close();
+    if (event.target === lightbox) closeLightbox();
   });
   lightbox.addEventListener('close', () => {
     lightboxImage.removeAttribute('src');

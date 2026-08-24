@@ -19,17 +19,30 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723547%2F04_0001723547_0001_4-1723547-1.jpg",
           "seals": [
             {
-              "person": "Eberhard, Arnold, Arnold Elder, Hans",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "person": "Eberhard",
+              "position": "0.2520,0.8860",
+              "size": 0.11400000000000003
+            },
+            {
+              "person": "Arnold+Hans",
+              "position": "0.4798,0.8201",
+              "size": 0.13000000000000003
             }
           ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723547%2F04_0001723547_0002_4-1723547-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723547%2F04_0001723547_0002_4-1723547-2.jpg",
+          "deleted": "true"
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723547%2F04_0001723547_0003_4-1723547-3.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723547%2F04_0001723547_0003_4-1723547-3.jpg",
+          "seals": [
+            {
+              "person": "Eberhard",
+              "position": "0.7093,0.8942",
+              "size": 0.10900000000000003
+            }
+          ]
         }
       ]
     }

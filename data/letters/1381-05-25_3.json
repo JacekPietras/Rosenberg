@@ -11,21 +11,29 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723540%2F04_0001723540_0001_4-1723540-1.jpg",
           "seals": [
             {
-              "person": "Eberhard knight",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "person": "Eberhard",
+              "position": "0.1966,0.7503",
+              "size": 0.13399999999999998
             },
             {
-              "person": "Arnold nobleman",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "person": "Arnold",
+              "position": "0.3730,0.7526",
+              "size": 0.11899999999999997
             },
             {
               "person": "Konrad",
-              "position": "0.5,0.5",
-              "size": 0.15
+              "position": "0.5898,0.7716",
+              "size": 0.13499999999999998
             }
           ]
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723540%2F04_0001723540_0002_4-1723540-2.jpg",
+          "deleted": "true"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723540%2F04_0001723540_0003_4-1723540-3.jpg",
+          "deleted": "true"
         }
       ]
     }
