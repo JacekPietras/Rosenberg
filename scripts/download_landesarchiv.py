@@ -35,7 +35,9 @@ IMAGE_SELECT_RE = re.compile(
     re.I | re.S,
 )
 OPTION_RE = re.compile(
-    r'<option\s+[^>]*value=["\']([^"\']+)["\'][^>]*>', re.I
+    r'<option\s+[^>]*value=["\']([^"\']+)["\'][^>]*>\s*'
+    r'(recto|verso|Bild\s*\d+)\s*</option>',
+    re.I,
 )
 SCOPE_RE = re.compile(r"scopeid_besta=(\d+)", re.I)
 
@@ -87,7 +89,10 @@ def discover_viewer(opener, permalink: str) -> tuple[str, dict[str, str], list[s
     fields.setdefault("id", record_id)
     fields.setdefault("aid", aid)
     image_select = IMAGE_SELECT_RE.search(viewer_html)
-    page_names = list(dict.fromkeys(OPTION_RE.findall(image_select.group(1)))) if image_select else []
+    options = OPTION_RE.findall(image_select.group(1)) if image_select else []
+    recto_verso = [value for value, label in options if label.casefold() in {"recto", "verso"}]
+    selected_options = recto_verso or [value for value, _ in options]
+    page_names = list(dict.fromkeys(selected_options))
     if not page_names and fields.get("bilddatei"):
         page_names = [fields["bilddatei"]]
     if not page_names:
@@ -141,7 +146,7 @@ def download_images(opener, image_paths: list[str], page_names: list[str], image
     return stored_paths
 
 
-def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = False) -> list[Path]:
+def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = True) -> list[Path]:
     matches = []
     for path in sorted(LETTER_DIR.glob("*.json")):
         document = json.loads(path.read_text(encoding="utf-8"))
@@ -156,7 +161,11 @@ def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = 
                     for value in existing
                 ]
                 if replace_images:
-                    entry["img"] = [{"src": value, "seals": []} for value in image_paths]
+                    old_by_src = {value.get("src"): value for value in existing}
+                    entry["img"] = [
+                        old_by_src.get(value, {"src": value, "seals": []})
+                        for value in image_paths
+                    ]
                 else:
                     known = {value.get("src") for value in existing}
                     entry["img"] = existing + [
@@ -200,7 +209,7 @@ def main() -> int:
         image_paths = image_urls(viewer_url, fields, page_names, scope_id)
         if args.mode == "download":
             image_paths = download_images(opener, image_paths, page_names, image_dir)
-        letter_paths = update_letter_json(fields["aid"], image_paths, replace_images=args.mode == "download")
+        letter_paths = update_letter_json(fields["aid"], image_paths, replace_images=True)
         for letter_path in letter_paths:
             print(f"Updated letter JSON: {letter_path}")
     except Exception as error:
