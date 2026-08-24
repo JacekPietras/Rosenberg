@@ -12,32 +12,36 @@ function loadPreferences() {
     const preferences = JSON.parse(localStorage.getItem(PREFERENCES_KEY) || '{}');
     return {
       active: typeof preferences.active === 'string' ? preferences.active : null,
+      place: typeof preferences.place === 'string' ? preferences.place : null,
       letter: typeof preferences.letter === 'string' ? preferences.letter : null,
       language: normalizeDisplayMode(preferences.language),
       showFacts: preferences.showFacts !== false,
       darkMode: preferences.darkMode !== false,
     };
   } catch {
-    return { active: null, letter: null, language: 'english', showFacts: true, darkMode: true };
+    return { active: null, place: null, letter: null, language: 'english', showFacts: true, darkMode: true };
   }
 }
 
 function savePreferences() {
   try {
-    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, letter: state.letter, language: state.language, showFacts: state.showFacts, darkMode: state.darkMode }));
+    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, place: state.place, letter: state.letter, language: state.language, showFacts: state.showFacts, darkMode: state.darkMode }));
   } catch {
     // Preferences are optional; rendering should continue if storage is unavailable.
   }
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, letter: preferences.letter, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), snapshot: '', yearHighlightCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, letter: preferences.letter, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), places: [], placePattern: null, snapshot: '', yearHighlightCleanup: null, lastRenderedLettersYear: null };
 const $ = (selector) => document.querySelector(selector);
 const REFRESH_INTERVAL = 30000;
 
 const navigation = new URLSearchParams(location.search);
+if (navigation.get('document') || navigation.get('tab') || navigation.get('letter')) state.place = null;
 if (navigation.get('tab') === 'letters') state.active = 'letters';
+if (navigation.get('document')) state.active = navigation.get('document');
 if (navigation.get('letter')) state.letter = navigation.get('letter');
+if (navigation.get('place')) state.place = navigation.get('place');
 
 function applyTheme() {
   document.documentElement.dataset.theme = state.darkMode ? 'dark' : 'light';
@@ -80,10 +84,34 @@ function escapeHtml(value = '') {
   return String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 }
 
+function placeMarkup(value = '') {
+  if (!state.placePattern) return value;
+  return String(value).replace(state.placePattern, (match) => {
+    const place = state.places.find((item) => item.names.some((name) => name.toLocaleLowerCase() === match.toLocaleLowerCase()));
+    if (!place) return match;
+    const query = encodeURIComponent(place.name);
+    return `<a class="place-link" href="?place=${query}">${match}</a>`;
+  });
+}
+
 function inlineMarkup(value = '') {
-  return escapeHtml(value)
-    .replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>')
-    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  const tokens = [];
+  const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
+  let text = escapeHtml(value).replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => token(`<a href="${url}" target="_blank" rel="noreferrer">${placeMarkup(label)}</a>`));
+  text = placeMarkup(text).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  return text.replace(/\u0000(\d+)\u0000/g, (_, index) => tokens[Number(index)]);
+}
+
+function parsePlaces(markdown) {
+  return String(markdown).split('\n').map((line) => line.replace(/\/\/.*$/, '').trim()).filter(Boolean).map((line) => {
+    const names = line.split(',').map((name) => name.trim()).filter(Boolean);
+    return { name: names[0], names: [...new Set(names)] };
+  });
+}
+
+function buildPlacePattern(places) {
+  const names = [...new Set(places.flatMap((place) => place.names))].sort((left, right) => right.length - left.length).map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  return names.length ? new RegExp(`(?<![\\p{L}\\p{N}])(?:${names.join('|')})(?![\\p{L}\\p{N}])`, 'giu') : null;
 }
 
 function markdownMarkup(value = '') {
@@ -266,10 +294,100 @@ function urlMarkup(value) {
   return links.length ? `<p class="document-url">${links.join(' · ')}</p>` : '';
 }
 
+function placeForName(name) {
+  return state.places.find((place) => place.names.some((candidate) => candidate.toLocaleLowerCase() === String(name).toLocaleLowerCase()));
+}
+
+function placeMentions(place) {
+  const pattern = buildPlacePattern([place]);
+  const mentions = [];
+  state.documents.forEach((doc, path) => (doc.entries || []).forEach((entry, index) => {
+    const fields = ['title', 'source', 'german', 'latin', 'english', 'facts'];
+    const documentPlace = String(doc.place || '');
+    if (documentPlace.match(pattern) || fields.some((field) => (Array.isArray(entry[field]) ? entry[field].join('\n') : String(entry[field] || '')).match(pattern))) {
+      mentions.push({ doc, path, entry, index });
+    }
+  }));
+  return mentions;
+}
+
+function placeExcerpt(value, place) {
+  const text = String(value || '').replace(/\s+/g, ' ').trim();
+  if (!text) return '';
+  const pattern = buildPlacePattern([place]);
+  const sentences = text.split(/(?<=[.!?。！？])\s+/).filter((sentence) => { pattern.lastIndex = 0; return pattern.test(sentence); });
+  let excerpt = sentences.slice(0, 2).join(' ');
+  if (!excerpt) excerpt = text;
+  let source = excerpt;
+  pattern.lastIndex = 0;
+  let match = pattern.exec(source);
+  if (!match) {
+    source = text;
+    pattern.lastIndex = 0;
+    match = pattern.exec(source);
+  }
+  if (match && source.length > 420) {
+    const limit = 360;
+    const maxStart = Math.max(0, source.length - limit);
+    let start = Math.min(Math.max(0, match.index - 170), maxStart);
+    if (match.index + match[0].length > start + limit) start = Math.min(match.index, maxStart);
+    excerpt = `${start ? '…' : ''}${source.slice(start, start + limit)}${start + limit < source.length ? '…' : ''}`;
+  }
+  return inlineMarkup(excerpt);
+}
+
+function placeLanguageMarkup(entry, place) {
+  const available = ['english', 'german', 'latin'].filter((language) => String(entry[language] || '').trim());
+  if (!available.length) return '';
+  const original = ['german', 'latin'].find((language) => available.includes(language));
+  const languages = state.language === 'original'
+    ? ['english', original].filter(Boolean).filter((language) => available.includes(language))
+    : ['english'].filter((language) => available.includes(language));
+  const displayedLanguages = languages.length ? languages : available.slice(0, 1);
+  return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text"><p>${placeExcerpt(entry[language], place)}</p></div></div>`).join('')}</div>`;
+}
+
+function entryAnchor(path, index) {
+  return `entry-${path.replace(/[^a-z0-9]+/gi, '-')}-${index}`;
+}
+
+function documentNavigationUrl(path, index) {
+  const params = new URLSearchParams();
+  if (path.startsWith('data/letters/')) {
+    params.set('tab', 'letters');
+    params.set('letter', path);
+  } else {
+    params.set('document', path);
+  }
+  return `?${params.toString()}#${entryAnchor(path, index)}`;
+}
+
+function renderPlacePage() {
+  const place = placeForName(state.place) || state.places.find((item) => item.name.toLocaleLowerCase() === String(state.place || '').toLocaleLowerCase());
+  if (!place) return `<article class="document"><h2>Place not found</h2><p class="status">No place named “${escapeHtml(state.place || '')}” is listed in data/places.md.</p></article>`;
+  const mentions = placeMentions(place);
+  const heading = `<article class="document place-document-heading"><div class="document-heading"><div><h2>${escapeHtml(place.name)}</h2><p class="place-variants">${place.names.map(escapeHtml).join(' · ')}</p></div><small>${mentions.length} mention${mentions.length === 1 ? '' : 's'}</small></div></article>`;
+  const content = mentions.map(({ doc, path, entry, index }) => `<article class="document place-mention" role="link" tabindex="0" data-document-href="${escapeHtml(documentNavigationUrl(path, index))}"><p class="entry-title">${markdownLinks(entry.title || documentTitle(doc, path))}</p>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.german || entry.latin || entry.english ? placeLanguageMarkup(entry, place) : ''}${doc.place && !entry.german && !entry.latin && !entry.english ? `<p class="place-record">Document place: ${inlineMarkup(doc.place)}</p>` : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
+  return `${heading}${content || '<article class="document"><p class="status">No mentions found.</p></article>'}`;
+}
+
+function setupPlaceNavigation() {
+  document.querySelectorAll('.place-mention[data-document-href]').forEach((frame) => {
+    const navigate = () => { window.location.href = frame.dataset.documentHref; };
+    frame.addEventListener('click', (event) => {
+      if (event.target.closest('a.place-link')) return;
+      navigate();
+    });
+    frame.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); navigate(); }
+    });
+  });
+}
+
 function renderTabs() {
   const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, ...(state.manifest.seals ? [{ path: 'data/seals.json', label: 'Seals' }] : [])];
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
-  document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; savePreferences(); renderTabs(); renderActive(); }));
+  document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; state.place = null; savePreferences(); renderTabs(); renderActive(); }));
 }
 
 function languageMarkup(entry) {
@@ -284,9 +402,10 @@ function languageMarkup(entry) {
   return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text">${markdownMarkup(entry[language])}</div></div>`).join('')}</div>`;
 }
 
-function renderEntry(entry, { title = true, date = true, source = true } = {}) {
+function renderEntry(entry, { title = true, date = true, source = true, path = '', index = null } = {}) {
   const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
-  return `<article class="entry">${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`;
+  const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
+  return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`;
 }
 
 function bookSections(entries) {
@@ -307,7 +426,7 @@ function renderDocument(doc, path, index) {
   if (path.startsWith('data/books/') || path === 'data/notes.json') {
     return bookSections(entries).map((section, sectionIndex) => {
       const sectionTitle = section.title || (sectionIndex === 0 ? title : 'Untitled section');
-      const sectionContent = section.entries.map((entry) => renderEntry(entry, { title: false })).join('');
+      const sectionContent = section.entries.map((entry) => renderEntry(entry, { title: false, path, index: entries.indexOf(entry) })).join('');
       return `<article class="document book-document"><div class="document-heading"><div><h2>${markdownLinks(sectionTitle)}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
     }).join('');
   }
@@ -317,12 +436,12 @@ function renderDocument(doc, path, index) {
       const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
       const sourceMarkup = entry.source ? `<p class="source">${sealSourceMarkup(entry.source)}</p>` : '';
       const urlMarkupForLetter = entry.source ? sealLetterUrlMarkup(entry.source) : '';
-      return `<article class="entry seal-entry"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img)}</div></article>`;
+      return `<article class="entry seal-entry" id="${entryAnchor(path, index)}"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img)}</div></article>`;
     }).join('');
-    return `<article class="document seals-document"><div class="document-heading"><h2>${escapeHtml(title)}</h2></div>${sealContent}</article>`;
+    return `<article class="document seals-document"><div class="document-heading"><h2>${inlineMarkup(title)}</h2></div>${sealContent}</article>`;
   }
-  const content = entries.map((entry) => renderEntry(entry)).join('');
-  return `<article class="document"${anchor}><div class="document-heading"><div><h2>${escapeHtml(title)}</h2>${url}</div>${date}</div>${content}</article>`;
+  const content = entries.map((entry, entryIndex) => renderEntry(entry, { path, index: entryIndex })).join('');
+  return `<article class="document"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${date}</div>${content}</article>`;
 }
 
 function renderYearSidebar(paths) {
@@ -389,7 +508,19 @@ function restoreLetter(paths) {
   if (target) window.scrollTo(0, target.getBoundingClientRect().top + window.scrollY - 104);
 }
 
+function scrollToEntryHash() {
+  const hash = decodeURIComponent(location.hash.slice(1));
+  if (!hash) return;
+  const target = document.getElementById(hash);
+  if (target) target.scrollIntoView({ block: 'start' });
+}
+
 async function renderActive() {
+  if (state.place) {
+    $('#content').innerHTML = renderPlacePage();
+    setupPlaceNavigation();
+    return;
+  }
   const paths = state.active === 'letters' ? state.manifest.letters : [state.active];
   const selectedYear = documentYear(state.documents.get(state.letter));
   const shouldRestoreLetter = state.active === 'letters'
@@ -410,13 +541,19 @@ async function renderActive() {
     setupYearHighlight(paths);
     state.lastRenderedLettersYear = documentYear(state.documents.get(state.letter));
   }
+  scrollToEntryHash();
 }
 
 async function loadAll() {
   const files = await getRepositoryFiles();
   const paths = files.map((file) => typeof file === 'string' ? file : file.path);
   const snapshot = JSON.stringify(files);
-  const documents = new Map(await Promise.all(paths.map(async (path) => [path, await getJson(path)])));
+  const [placesText, documents] = await Promise.all([
+    getText('data/places.md'),
+    new Map(await Promise.all(paths.map(async (path) => [path, await getJson(path)]))),
+  ]);
+  state.places = parsePlaces(placesText);
+  state.placePattern = buildPlacePattern(state.places);
   const bookPaths = paths
     .filter((path) => path.startsWith('data/books/'))
     .sort((left, right) => bookSortYear(documents.get(right), right) - bookSortYear(documents.get(left), left) || left.localeCompare(right));
@@ -467,6 +604,18 @@ themeToggle.addEventListener('click', () => {
   savePreferences();
   renderActive();
 });
+
+async function getText(path) {
+  const parts = location.pathname.split('/').filter(Boolean);
+  const owner = location.hostname.split('.')[0];
+  const repository = parts[0];
+  const dataPath = location.hostname.endsWith('github.io')
+    ? `https://raw.githubusercontent.com/${owner}/${repository}/main/${path}`
+    : `../${path}`;
+  const response = await fetch(`${dataPath}?v=${Date.now()}`, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`${path}: ${response.status}`);
+  return response.text();
+}
 loadAll().catch((error) => {
   $('#status').textContent = `Could not load data: ${error.message}`;
   $('#status').classList.add('error');
