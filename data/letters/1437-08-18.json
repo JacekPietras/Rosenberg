@@ -16,7 +16,9 @@
         "Jost von Venningen is Komtur zu Mergentheim"
       ],
       "img": [
-        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1164&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001164%2Ftitlaufn_0005270322%2F02_0005270322_0001_2-5270322-1.jpg"
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1164&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001164%2Ftitlaufn_0005270322%2F02_0005270322_0001_2-5270322-1.jpg"
+        }
       ]
     }
   ]

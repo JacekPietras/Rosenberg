@@ -13,7 +13,9 @@
         "Graf Eberhart zu Wertheim provided Dertingen and Waldbüttelbrunn as substitute properties for Uffingen"
       ],
       "img": [
-        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=657&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000657%2Ftitlaufn_0000165757%2F07_0000165757_0001_7-165757-1.jpg"
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=657&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000657%2Ftitlaufn_0000165757%2F07_0000165757_0001_7-165757-1.jpg"
+        }
       ]
     }
   ]

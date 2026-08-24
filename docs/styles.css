@@ -140,6 +140,11 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .image-lightbox-stage { position: relative; width: 100%; height: 100%; min-height: 0; }
 .image-lightbox-stage > img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .image-lightbox-annotations { position: absolute; pointer-events: none; }
+.image-lightbox-editor { position: absolute; z-index: 3; top: .65rem; left: 1rem; display: flex; flex-wrap: wrap; align-items: center; gap: .45rem .65rem; color: var(--muted); font-size: .76rem; }
+.image-lightbox-editor button { padding: .3rem .55rem; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.image-lightbox-editor button:hover { border-color: var(--accent); color: var(--accent); }
+.image-lightbox-editor-help { max-width: 28rem; }
+.image-lightbox-save-status { color: var(--accent); }
 .image-lightbox-close { position: absolute; top: .65rem; right: .75rem; display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; padding: 0; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 50%; cursor: pointer; font-size: 1.4rem; line-height: 1; }
 .image-lightbox-close-icon { position: relative; display: block; width: .75rem; height: .75rem; }
 .image-lightbox-close-icon::before, .image-lightbox-close-icon::after { position: absolute; top: 50%; left: 50%; width: .85rem; height: 2px; border-radius: 1px; background: currentColor; content: ''; transform: translate(-50%, -50%) rotate(45deg); }
@@ -149,6 +154,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .annotated-image { position: relative; display: inline-block; max-width: 100%; overflow: visible; }
 .annotated-image > a { display: block; }
 .seal-marker { position: absolute; z-index: 1; display: block; width: var(--seal-diameter, 0px); height: var(--seal-diameter, 0px); border: 2px solid #d9485f; border-radius: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+.image-lightbox.is-editable .image-lightbox-annotations { pointer-events: auto; }
+.image-lightbox.is-editable .seal-marker { pointer-events: auto; cursor: move; }
+.image-lightbox.is-editable .seal-marker.selected { border-color: #ffd166; box-shadow: 0 0 0 2px color-mix(in srgb, #ffd166 35%, transparent); }
 .seal-marker-label { position: absolute; left: calc(100% + .45rem); top: 50%; display: block; padding: .1rem .35rem; color: #fff; background: color-mix(in srgb, #9d263b 88%, transparent); border-radius: 3px; font-size: .72rem; line-height: 1.25; white-space: nowrap; transform: translateY(-50%); }
 :root[data-theme="light"] .seal-marker-label { color: #fff; }
 :root[data-theme="light"] .diagram { background: #f2f5f8; }

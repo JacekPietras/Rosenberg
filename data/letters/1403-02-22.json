@@ -18,7 +18,9 @@
         "Eberhard von Rosenberg sealed the charter as Verkäufer"
       ],
       "img": [
-        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=689&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000689%2Ftitlaufn_0000166301%2F07_0000166301_0001_7-166301-1.jpg"
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=689&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000689%2Ftitlaufn_0000166301%2F07_0000166301_0001_7-166301-1.jpg"
+        }
       ]
     }
   ]

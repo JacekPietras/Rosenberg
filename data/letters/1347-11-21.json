@@ -14,8 +14,12 @@
       "german": "Kaiser Karl IV. bestätigt Graf Kraft von Hohenlohe die leibeigenen Leute auf dem Ohrnwald, die er von Eberhard von Rosenberg erworben hat.",
       "english": "Emperor Charles IV confirms to Count Kraft of Hohenlohe the serfs in the Ohrnwald, which he had acquired from Eberhard von Rosenberg.",
       "img": [
-        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000187041%2F03_0000187041_0001_3-187041-1.jpg",
-        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000187041%2F03_0000187041_0002_3-187041-2.jpg"
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000187041%2F03_0000187041_0001_3-187041-1.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000187041%2F03_0000187041_0002_3-187041-2.jpg"
+        }
       ]
     },
     {
@@ -24,8 +28,12 @@
       "german": "Kraft von Hohenlohe und Eberhard von Rosenberg (Original und Abschrift).",
       "english": "Kraft von Hohenlohe and Eberhard von Rosenberg (original and copy).",
       "img": [
-        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000188977%2F03_0000188977_0003_3-188977-3.jpg",
-        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000188977%2F03_0000188977_0004_3-188977-4.jpg"
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000188977%2F03_0000188977_0003_3-188977-3.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000188977%2F03_0000188977_0004_3-188977-4.jpg"
+        }
       ]
     },
     {

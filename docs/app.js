@@ -217,7 +217,7 @@ function localImageName(fileName) {
   }
 }
 
-function imageMarkup(value = '', legacySeals = []) {
+function imageMarkup(value = '', legacySeals = [], context = {}) {
   const imageNodes = Array.isArray(value) ? value : [value];
   const pathParts = location.pathname.split('/').filter(Boolean);
   const repository = pathParts[0];
@@ -251,7 +251,10 @@ function imageMarkup(value = '', legacySeals = []) {
     const annotations = sealAnnotationMarkup(seals);
     const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
     const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="lazy"${fallbackAttribute}>`;
-    const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}">${image}</a>`;
+    const editAttributes = context.path && context.index !== null && context.index !== undefined
+      ? ` data-document-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${imageIndex}"`
+      : '';
+    const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${editAttributes}>${image}</a>`;
     const annotatedImage = annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
     return `<figure class="entry-image">${annotatedImage}</figure>`;
   }).filter(Boolean).join('');
@@ -293,8 +296,74 @@ function setupImageLightbox() {
   const lightboxStage = $('#image-lightbox-stage');
   const lightboxAnnotations = $('#image-lightbox-annotations');
   const closeButton = $('#image-lightbox-close');
+  const editor = $('#image-lightbox-editor');
+  const addSealButton = $('#image-lightbox-add-seal');
+  const removeImageButton = $('#image-lightbox-remove-image');
+  const removeSealButton = $('#image-lightbox-remove-seal');
+  const saveStatus = $('#image-lightbox-save-status');
   if (!lightbox || !lightboxImage || !lightboxStage || !lightboxAnnotations || !closeButton) return;
-  let sourceMarkers = [];
+  const editable = !location.hostname.endsWith('github.io');
+  let editingContext = null;
+  let selectedIndex = null;
+  let saveTimer = null;
+  let drag = null;
+  if (editor) editor.hidden = !editable;
+
+  const currentSeals = () => editingContext?.node?.seals || [];
+  const updateEditorControls = () => {
+    const selected = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
+    if (removeSealButton) removeSealButton.hidden = !selected;
+  };
+  const renderLightboxSeals = () => {
+    const seals = currentSeals();
+    lightboxAnnotations.innerHTML = sealAnnotationMarkup(seals).replace(/class="seal-marker"/g, (match, offset, string) => {
+      const before = string.slice(0, offset);
+      const index = (before.match(/seal-marker/g) || []).length;
+      return `${match} data-seal-index="${index}"${index === selectedIndex ? ' data-selected="true"' : ''}`;
+    });
+    lightboxAnnotations.querySelectorAll('.seal-marker').forEach((marker) => {
+      if (Number(marker.dataset.sealIndex) === selectedIndex) marker.classList.add('selected');
+    });
+    updateLightboxAnnotations();
+    updateEditorControls();
+  };
+  const setSaveStatus = (message, error = false) => {
+    if (!saveStatus) return;
+    saveStatus.textContent = message;
+    saveStatus.classList.toggle('error', error);
+  };
+  const saveDocument = async () => {
+    if (!editingContext) return;
+    const entry = state.documents.get(editingContext.path)?.entries?.[Number(editingContext.entryIndex)];
+    if (entry) {
+      const images = Array.isArray(entry.img) ? entry.img : [entry.img];
+      images.forEach((image) => {
+        if (image && typeof image === 'object' && Array.isArray(image.seals) && image.seals.length === 0) delete image.seals;
+      });
+      if (Array.isArray(entry.seals) && entry.seals.length === 0) delete entry.seals;
+    }
+    setSaveStatus('Saving…');
+    try {
+      const response = await fetch('/api/save-document', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path: editingContext.path, document: state.documents.get(editingContext.path) }) });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || `Save failed (${response.status})`);
+      setSaveStatus('Saved');
+      state.snapshot = '';
+      window.setTimeout(() => { if (saveStatus?.textContent === 'Saved') saveStatus.textContent = ''; }, 1600);
+      return true;
+    } catch (error) {
+      setSaveStatus(error.message, true);
+      return false;
+    }
+  };
+  const queueSave = () => {
+    window.clearTimeout(saveTimer);
+    saveTimer = window.setTimeout(saveDocument, 250);
+  };
+  const imagePoint = (event) => {
+    const rect = lightboxAnnotations.getBoundingClientRect();
+    return { x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)), y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)) };
+  };
   const updateLightboxAnnotations = () => {
     if (!lightboxImage.naturalWidth || !lightboxImage.naturalHeight) return;
     const stageWidth = lightboxStage.clientWidth;
@@ -315,8 +384,24 @@ function setupImageLightbox() {
     if (!link) return;
     event.preventDefault();
     const image = link.querySelector('img');
-    sourceMarkers = [...link.closest('.annotated-image')?.querySelectorAll('.seal-marker') || []];
-    lightboxAnnotations.innerHTML = sourceMarkers.map((marker) => marker.outerHTML).join('');
+    const path = link.dataset.documentPath;
+    const entryIndex = Number(link.dataset.entryIndex);
+    const imageIndex = Number(link.dataset.imageIndex);
+    const entry = path ? state.documents.get(path)?.entries?.[entryIndex] : null;
+    let node = entry && (Array.isArray(entry.img) ? entry.img[imageIndex] : entry.img);
+    if (node && typeof node !== 'object') {
+      if (entry && !Array.isArray(entry.img)) {
+        entry.img = { src: node };
+        if (Array.isArray(entry.seals) && entry.seals.length) entry.img.seals = entry.seals;
+        delete entry.seals;
+      } else if (entry) entry.img[imageIndex] = { src: node };
+      node = entry && (Array.isArray(entry.img) ? entry.img[imageIndex] : entry.img);
+    }
+    editingContext = editable && entry && node && typeof node === 'object' ? { path, node, entryIndex, imageIndex } : null;
+    if (editingContext && !Array.isArray(node.seals)) node.seals = [];
+    selectedIndex = null;
+    lightbox.classList.toggle('is-editable', Boolean(editingContext));
+    renderLightboxSeals();
     lightboxImage.onerror = () => {
       const fallback = link.dataset.imageFallback;
       if (fallback && lightboxImage.src !== fallback) lightboxImage.src = fallback;
@@ -329,13 +414,83 @@ function setupImageLightbox() {
   });
   window.addEventListener('resize', updateLightboxAnnotations, { passive: true });
   closeButton.addEventListener('click', () => lightbox.close());
+  lightboxAnnotations.addEventListener('pointerdown', (event) => {
+    if (!editingContext) return;
+    const marker = event.target.closest('.seal-marker');
+    if (!marker) return;
+    selectedIndex = Number(marker.dataset.sealIndex);
+    const point = imagePoint(event);
+    drag = { index: selectedIndex, offsetX: currentSeals()[selectedIndex].position.split(',')[0] - point.x, offsetY: currentSeals()[selectedIndex].position.split(',')[1] - point.y };
+    renderLightboxSeals();
+    marker.setPointerCapture?.(event.pointerId);
+    event.preventDefault();
+  });
+  lightboxAnnotations.addEventListener('pointermove', (event) => {
+    if (!drag) return;
+    const point = imagePoint(event);
+    const seal = currentSeals()[drag.index];
+    seal.position = `${Math.max(0, Math.min(1, point.x + Number(drag.offsetX))).toFixed(4)},${Math.max(0, Math.min(1, point.y + Number(drag.offsetY))).toFixed(4)}`;
+    renderLightboxSeals();
+  });
+  lightboxAnnotations.addEventListener('pointerup', () => { if (drag) queueSave(); drag = null; });
+  lightboxAnnotations.addEventListener('click', (event) => {
+    const marker = event.target.closest('.seal-marker');
+    if (marker && editingContext) { selectedIndex = Number(marker.dataset.sealIndex); renderLightboxSeals(); }
+  });
+  lightboxAnnotations.addEventListener('wheel', (event) => {
+    if (!editingContext) return;
+    const marker = event.target.closest('.seal-marker');
+    if (!marker) return;
+    const index = Number(marker.dataset.sealIndex);
+    const seal = currentSeals()[index];
+    if (!seal) return;
+    seal.size = Math.max(0.01, Math.min(0.5, Number(seal.size) + (event.deltaY < 0 ? 0.005 : -0.005)));
+    selectedIndex = index;
+    renderLightboxSeals();
+    queueSave();
+    event.preventDefault();
+  }, { passive: false });
+  addSealButton?.addEventListener('click', () => {
+    if (!editingContext) return;
+    const person = window.prompt('Person shown by this seal:');
+    if (!person?.trim()) return;
+    editingContext.node.seals.push({ person: person.trim(), position: '0.5,0.5', size: 0.08 });
+    selectedIndex = editingContext.node.seals.length - 1;
+    renderLightboxSeals();
+    queueSave();
+  });
+  removeImageButton?.addEventListener('click', async () => {
+    if (!editingContext || !window.confirm('Remove this image from the document?')) return;
+    const entry = state.documents.get(editingContext.path)?.entries?.[Number(editingContext.entryIndex)];
+    if (!entry) return;
+    if (Array.isArray(entry.img)) {
+      entry.img.splice(Number(editingContext.imageIndex), 1);
+    } else {
+      delete entry.img;
+      delete entry.seals;
+    }
+    if (!await saveDocument()) return;
+    lightbox.close();
+    await renderActive();
+  });
+  removeSealButton?.addEventListener('click', () => {
+    if (selectedIndex === null) return;
+    currentSeals().splice(selectedIndex, 1);
+    selectedIndex = null;
+    renderLightboxSeals();
+    queueSave();
+  });
   lightbox.addEventListener('click', (event) => {
     if (event.target === lightbox) lightbox.close();
   });
   lightbox.addEventListener('close', () => {
     lightboxImage.removeAttribute('src');
     lightboxAnnotations.replaceChildren();
-    sourceMarkers = [];
+    editingContext = null;
+    selectedIndex = null;
+    drag = null;
+    lightbox.classList.remove('is-editable');
+    setSaveStatus('');
   });
 }
 
@@ -532,7 +687,7 @@ function languageMarkup(entry) {
 function renderEntry(entry, { title = true, date = true, source = true, path = '', index = null } = {}) {
   const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
   const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
-  return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, entry.seals) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`;
+  return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, entry.seals, { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`;
 }
 
 function bookSections(entries) {
@@ -563,7 +718,7 @@ function renderDocument(doc, path, index) {
       const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
       const sourceMarkup = entry.source ? `<p class="source">${sealSourceMarkup(entry.source)}</p>` : '';
       const urlMarkupForLetter = entry.source ? sealLetterUrlMarkup(entry.source) : '';
-      return `<article class="entry seal-entry" id="${entryAnchor(path, index)}"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img)}</div></article>`;
+      return `<article class="entry seal-entry" id="${entryAnchor(path, index)}"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img, entry.seals, { path, index })}</div></article>`;
     }).join('');
     return `<article class="document seals-document"><div class="document-heading"><h2>${inlineMarkup(title)}</h2></div>${sealContent}</article>`;
   }

@@ -91,7 +91,7 @@ The viewer checks for changed or new JSON documents every 30 seconds and refresh
 
 Publish the repository with GitHub Pages to use the viewer without running anything locally. The published site will be at the repository root URL.
 
-For local testing, run `python3 docs/serve.py` from the repository root and open `http://localhost:8000/docs/`. The local server only provides the JSON file listing; it has no dependencies and does not modify the data.
+For local testing, run `python3 docs/serve.py` from the repository root and open `http://localhost:8000/docs/`. The local server has no dependencies, provides the JSON file listing, and enables seal-annotation editing and image-reference removal from the image lightbox. On GitHub Pages the viewer remains read-only. Removing an image removes its JSON reference; it does not delete the underlying cached file.
 
 ## Downloading Landesarchiv images
 
