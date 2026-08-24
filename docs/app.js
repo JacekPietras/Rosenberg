@@ -223,6 +223,7 @@ function imageMarkup(value = '', legacySeals = [], context = {}) {
   const repository = pathParts[0];
   const owner = location.hostname.split('.')[0];
   const images = imageNodes.map((node, imageIndex) => {
+    if (node && typeof node === 'object' && node.deleted === 'true') return '';
     const file = typeof node === 'object' && node !== null ? node.src : node;
     const seals = typeof node === 'object' && node !== null
       ? node.seals
@@ -252,7 +253,7 @@ function imageMarkup(value = '', legacySeals = [], context = {}) {
     const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
     const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="lazy"${fallbackAttribute}>`;
     const editAttributes = context.path && context.index !== null && context.index !== undefined
-      ? ` data-document-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${imageIndex}"`
+      ? ` data-document-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${context.imageIndex ?? imageIndex}"`
       : '';
     const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${editAttributes}>${image}</a>`;
     const annotatedImage = annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
@@ -316,9 +317,9 @@ function setupImageLightbox() {
   };
   const renderLightboxSeals = () => {
     const seals = currentSeals();
-    lightboxAnnotations.innerHTML = sealAnnotationMarkup(seals).replace(/class="seal-marker"/g, (match, offset, string) => {
-      const before = string.slice(0, offset);
-      const index = (before.match(/seal-marker/g) || []).length;
+    let sealIndex = 0;
+    lightboxAnnotations.innerHTML = sealAnnotationMarkup(seals).replace(/class="seal-marker"/g, (match) => {
+      const index = sealIndex++;
       return `${match} data-seal-index="${index}"${index === selectedIndex ? ' data-selected="true"' : ''}`;
     });
     lightboxAnnotations.querySelectorAll('.seal-marker').forEach((marker) => {
@@ -342,14 +343,11 @@ function setupImageLightbox() {
       });
       if (Array.isArray(entry.seals) && entry.seals.length === 0) delete entry.seals;
     }
-    setSaveStatus('Saving…');
     try {
       const response = await fetch('/api/save-document', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path: editingContext.path, document: state.documents.get(editingContext.path) }) });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || `Save failed (${response.status})`);
-      setSaveStatus('Saved');
       state.snapshot = '';
-      window.setTimeout(() => { if (saveStatus?.textContent === 'Saved') saveStatus.textContent = ''; }, 1600);
       return true;
     } catch (error) {
       setSaveStatus(error.message, true);
@@ -358,7 +356,7 @@ function setupImageLightbox() {
   };
   const queueSave = () => {
     window.clearTimeout(saveTimer);
-    saveTimer = window.setTimeout(saveDocument, 250);
+    saveTimer = window.setTimeout(saveDocument, 100);
   };
   const imagePoint = (event) => {
     const rect = lightboxAnnotations.getBoundingClientRect();
@@ -421,7 +419,8 @@ function setupImageLightbox() {
     selectedIndex = Number(marker.dataset.sealIndex);
     const point = imagePoint(event);
     drag = { index: selectedIndex, offsetX: currentSeals()[selectedIndex].position.split(',')[0] - point.x, offsetY: currentSeals()[selectedIndex].position.split(',')[1] - point.y };
-    renderLightboxSeals();
+    lightboxAnnotations.querySelectorAll('.seal-marker').forEach((item) => item.classList.toggle('selected', item === marker));
+    updateEditorControls();
     marker.setPointerCapture?.(event.pointerId);
     event.preventDefault();
   });
@@ -429,8 +428,14 @@ function setupImageLightbox() {
     if (!drag) return;
     const point = imagePoint(event);
     const seal = currentSeals()[drag.index];
-    seal.position = `${Math.max(0, Math.min(1, point.x + Number(drag.offsetX))).toFixed(4)},${Math.max(0, Math.min(1, point.y + Number(drag.offsetY))).toFixed(4)}`;
-    renderLightboxSeals();
+    const x = Math.max(0, Math.min(1, point.x + Number(drag.offsetX)));
+    const y = Math.max(0, Math.min(1, point.y + Number(drag.offsetY)));
+    seal.position = `${x.toFixed(4)},${y.toFixed(4)}`;
+    const marker = lightboxAnnotations.querySelector(`.seal-marker[data-seal-index="${drag.index}"]`);
+    if (marker) {
+      marker.style.left = `${x * 100}%`;
+      marker.style.top = `${y * 100}%`;
+    }
   });
   lightboxAnnotations.addEventListener('pointerup', () => { if (drag) queueSave(); drag = null; });
   lightboxAnnotations.addEventListener('click', (event) => {
@@ -444,7 +449,7 @@ function setupImageLightbox() {
     const index = Number(marker.dataset.sealIndex);
     const seal = currentSeals()[index];
     if (!seal) return;
-    seal.size = Math.max(0.01, Math.min(0.5, Number(seal.size) + (event.deltaY < 0 ? 0.005 : -0.005)));
+    seal.size = Math.max(0.01, Math.min(0.5, Number(seal.size) + (event.deltaY < 0 ? 0.001 : -0.001)));
     selectedIndex = index;
     renderLightboxSeals();
     queueSave();
@@ -464,10 +469,12 @@ function setupImageLightbox() {
     const entry = state.documents.get(editingContext.path)?.entries?.[Number(editingContext.entryIndex)];
     if (!entry) return;
     if (Array.isArray(entry.img)) {
-      entry.img.splice(Number(editingContext.imageIndex), 1);
+      const image = entry.img[Number(editingContext.imageIndex)];
+      if (image && typeof image === 'object') image.deleted = 'true';
+      else entry.img[Number(editingContext.imageIndex)] = { src: image, deleted: 'true' };
     } else {
-      delete entry.img;
-      delete entry.seals;
+      if (entry.img && typeof entry.img === 'object') entry.img.deleted = 'true';
+      else entry.img = { src: entry.img, deleted: 'true' };
     }
     if (!await saveDocument()) return;
     lightbox.close();
@@ -558,6 +565,37 @@ function bookSortYear(doc, path) {
 function sealSortYear(entry) {
   const years = String(entry?.date || '').match(/\d{4}/g);
   return years?.length ? Math.min(...years.map(Number)) : Infinity;
+}
+
+function letterSealEntries() {
+  const sealEntries = [];
+  state.manifest.letters.forEach((path) => {
+    const document = state.documents.get(path);
+    (document?.entries || []).forEach((entry, entryIndex) => {
+      const imageNodes = Array.isArray(entry.img) ? entry.img : [entry.img];
+      imageNodes.forEach((node, imageIndex) => {
+        if (node && typeof node === 'object' && node.deleted === 'true') return;
+        const seals = node && typeof node === 'object'
+          ? node.seals
+          : imageIndex === 0 ? entry.seals : [];
+        if (!Array.isArray(seals) || !seals.length || !node) return;
+        const people = seals.map((seal) => String(seal?.person || '').trim()).filter(Boolean);
+        if (!people.length) return;
+        sealEntries.push({
+          title: people.join(', '),
+          source: entry.source,
+          date: entry.date || document.date,
+          url: entry.url || document.url,
+          img: [node],
+          seals,
+          sourcePath: path,
+          sourceIndex: entryIndex,
+          sourceImageIndex: imageIndex,
+        });
+      });
+    });
+  });
+  return sealEntries;
 }
 
 function urlLabel(value) {
@@ -713,12 +751,19 @@ function renderDocument(doc, path, index) {
     }).join('');
   }
   if (path === 'data/seals.json') {
-    const sealContent = entries.map((entry, index) => ({ entry, index })).sort((left, right) => sealSortYear(left.entry) - sealSortYear(right.entry) || left.index - right.index).map(({ entry }) => {
+    const catalogEntries = entries.map((entry, index) => ({ entry, path, index }));
+    const letterEntries = letterSealEntries().map((entry) => ({ entry, path: entry.sourcePath, index: entry.sourceIndex }));
+    const sealContent = [...catalogEntries, ...letterEntries].sort((left, right) => sealSortYear(left.entry) - sealSortYear(right.entry) || left.index - right.index).map(({ entry, path: sourcePath, index: sourceIndex }) => {
       const titleMarkup = entry.title ? `<h3>${markdownLinks(entry.title)}</h3>` : '';
       const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
       const sourceMarkup = entry.source ? `<p class="source">${sealSourceMarkup(entry.source)}</p>` : '';
-      const urlMarkupForLetter = entry.source ? sealLetterUrlMarkup(entry.source) : '';
-      return `<article class="entry seal-entry" id="${entryAnchor(path, index)}"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img, entry.seals, { path, index })}</div></article>`;
+      const urlMarkupForLetter = entry.source
+        ? sealLetterUrlMarkup(entry.source) || urlMarkup(entry.url)
+        : urlMarkup(entry.url);
+      const imageContext = entry.sourcePath
+        ? { path: sourcePath, index: sourceIndex, imageIndex: entry.sourceImageIndex }
+        : { path, index: sourceIndex };
+      return `<article class="entry seal-entry"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img, entry.seals, imageContext)}</div></article>`;
     }).join('');
     return `<article class="document seals-document"><div class="document-heading"><h2>${inlineMarkup(title)}</h2></div>${sealContent}</article>`;
   }

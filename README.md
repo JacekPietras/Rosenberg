@@ -63,7 +63,7 @@ data/
 }
 ```
 
-Each `img` item is an image node with a `src` URL and an optional `seals` array for annotations on that image. `position` is the comma-separated normalized center (`x,y`, both from 0 to 1), and `size` is the seal diameter as a fraction of the image height. The viewer draws a circle and the person’s name beside it. Use an empty array when an image has no recorded seal annotations, or omit the field until annotations are available.
+Each `img` item is an image node with a `src` URL and an optional `seals` array for annotations on that image. Removed images remain in the JSON with `"deleted": "true"`; the viewer hides them and image import treats their `src` as already known. `position` is the comma-separated normalized center (`x,y`, both from 0 to 1), and `size` is the seal diameter as a fraction of the image height. The viewer draws a circle and the person’s name beside it. Use an empty array when an image has no recorded seal annotations, or omit the field until annotations are available.
 
 ## Working with the data
 
@@ -91,7 +91,7 @@ The viewer checks for changed or new JSON documents every 30 seconds and refresh
 
 Publish the repository with GitHub Pages to use the viewer without running anything locally. The published site will be at the repository root URL.
 
-For local testing, run `python3 docs/serve.py` from the repository root and open `http://localhost:8000/docs/`. The local server has no dependencies, provides the JSON file listing, and enables seal-annotation editing and image-reference removal from the image lightbox. On GitHub Pages the viewer remains read-only. Removing an image removes its JSON reference; it does not delete the underlying cached file.
+For local testing, run `python3 docs/serve.py` from the repository root and open `http://localhost:8000/docs/`. The local server has no dependencies, provides the JSON file listing, and enables seal-annotation editing and soft image removal from the image lightbox. On GitHub Pages the viewer remains read-only. Removing an image marks its JSON node as deleted; it does not delete the underlying cached file.
 
 ## Downloading Landesarchiv images
 
