@@ -29,6 +29,10 @@ const state = { manifest: null, active: preferences.active, letter: preferences.
 const $ = (selector) => document.querySelector(selector);
 const REFRESH_INTERVAL = 30000;
 
+const navigation = new URLSearchParams(location.search);
+if (navigation.get('tab') === 'letters') state.active = 'letters';
+if (navigation.get('letter')) state.letter = navigation.get('letter');
+
 function applyTheme() {
   document.documentElement.dataset.theme = state.darkMode ? 'dark' : 'light';
   document.querySelector('meta[name="theme-color"]')?.setAttribute('content', state.darkMode ? '#0d0f11' : '#f5f7fa');
@@ -125,6 +129,21 @@ function markdownMarkup(value = '') {
 
 function markdownLinks(value = '') {
   return inlineMarkup(value);
+}
+
+function letterPathForSource(source) {
+  if (!state.manifest?.letters || !source) return null;
+  const sources = [source, ...source.split(/\s*;\s*/)].filter((value, index, values) => value && values.indexOf(value) === index);
+  return sources.reduce((match, citation) => match || state.manifest.letters.find((path) =>
+    (state.documents.get(path)?.entries || []).some((entry) => entry.source === citation)
+  ), null);
+}
+
+function sealSourceMarkup(source) {
+  const path = letterPathForSource(source);
+  if (!path) return markdownLinks(source);
+  const params = new URLSearchParams({ tab: 'letters', letter: path });
+  return `<a href="?${params.toString()}">${markdownLinks(source)}</a>`;
 }
 
 function diagramMarkup(value = '') {
@@ -268,7 +287,7 @@ function renderDocument(doc, path, index) {
     const sealContent = entries.map((entry, index) => ({ entry, index })).sort((left, right) => sealSortYear(left.entry) - sealSortYear(right.entry) || left.index - right.index).map(({ entry }) => {
       const titleMarkup = entry.title ? `<h3>${markdownLinks(entry.title)}</h3>` : '';
       const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
-      const sourceMarkup = entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : '';
+      const sourceMarkup = entry.source ? `<p class="source">${sealSourceMarkup(entry.source)}</p>` : '';
       return `<article class="entry seal-entry"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}</div><div class="seal-entry-media">${imageMarkup(entry.img)}</div></article>`;
     }).join('');
     return `<article class="document seals-document"><div class="document-heading"><h2>${escapeHtml(title)}</h2></div>${sealContent}</article>`;
@@ -346,8 +365,7 @@ async function renderActive() {
   const selectedYear = documentYear(state.documents.get(state.letter));
   const shouldRestoreLetter = state.active === 'letters'
     && selectedYear
-    && state.lastRenderedLettersYear !== null
-    && selectedYear !== state.lastRenderedLettersYear;
+    && (state.lastRenderedLettersYear === null || selectedYear !== state.lastRenderedLettersYear);
   $('#status').textContent = '';
   state.yearHighlightCleanup?.();
   state.yearHighlightCleanup = null;
