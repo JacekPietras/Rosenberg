@@ -69,7 +69,7 @@ Prioritize the von Rosenberg family and its documented network, including von Ui
 
 ## Browser viewer
 
-The `docs/` directory contains a GitHub Pages (https://jacekpietras.github.io/Rosenberg/) browser viewer for the JSON dataset. It discovers books, notes, seals, and letters directly from the repository tree, has a separate tab for each collection, and can show English, German, or both texts side by side. Publish the repository with GitHub Pages using `/docs` as the source.
+The `docs/` directory contains a GitHub Pages (https://jacekpietras.github.io/Rosenberg/) browser viewer for the JSON dataset. It discovers books, notes, seals, and letters directly from the repository tree, has a separate tab for each collection, and can show English alone or English alongside the original text. Original text is read from each entry's `german` or `latin` field. Publish the repository with GitHub Pages using `/docs` as the source.
 
 The viewer checks for changed or new JSON documents every 30 seconds and refreshes the displayed data automatically. New or removed JSON documents are discovered automatically through GitHub.
 

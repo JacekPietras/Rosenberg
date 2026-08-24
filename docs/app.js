@@ -1,5 +1,11 @@
 const PREFERENCES_KEY = 'rosenberg-viewer-preferences';
-const VALID_LANGUAGES = new Set(['english', 'german', 'both']);
+const VALID_DISPLAY_MODES = new Set(['english', 'original']);
+
+function normalizeDisplayMode(value) {
+  if (VALID_DISPLAY_MODES.has(value)) return value;
+  // Migrate preferences from the previous three-state control.
+  return value === 'both' || value === 'german' || value === 'latin' ? 'original' : 'english';
+}
 
 function loadPreferences() {
   try {
@@ -7,7 +13,7 @@ function loadPreferences() {
     return {
       active: typeof preferences.active === 'string' ? preferences.active : null,
       letter: typeof preferences.letter === 'string' ? preferences.letter : null,
-      language: VALID_LANGUAGES.has(preferences.language) ? preferences.language : 'english',
+      language: normalizeDisplayMode(preferences.language),
       showFacts: preferences.showFacts !== false,
       darkMode: preferences.darkMode !== false,
     };
@@ -47,7 +53,7 @@ function applyTheme() {
 function updateLanguageControl() {
   const languageToggle = $('#language-toggle');
   if (!languageToggle) return;
-  const label = state.language === 'both' ? 'Both languages' : state.language === 'english' ? 'English' : 'German';
+  const label = state.language === 'original' ? 'English with original text' : 'English only';
   languageToggle.setAttribute('aria-label', `Language: ${label}`);
   languageToggle.setAttribute('title', `Language: ${label}. Click to change`);
 }
@@ -267,18 +273,20 @@ function renderTabs() {
 }
 
 function languageMarkup(entry) {
-  const available = ['german', 'english'].filter((language) => String(entry[language] || '').trim());
+  const available = ['english', 'german', 'latin'].filter((language) => String(entry[language] || '').trim());
   if (!available.length) return '';
 
-  const languages = state.language === 'both'
-    ? available
-    : available.includes(state.language) ? [state.language] : [available[0]];
-  return `<div class="text-grid ${languages.length === 1 ? 'single' : ''}">${languages.map((language) => `<div class="language"><div class="text">${markdownMarkup(entry[language])}</div></div>`).join('')}</div>`;
+  const original = ['german', 'latin'].find((language) => available.includes(language));
+  const languages = state.language === 'original'
+    ? ['english', original].filter(Boolean).filter((language) => available.includes(language))
+    : ['english'].filter((language) => available.includes(language));
+  const displayedLanguages = languages.length ? languages : available.slice(0, 1);
+  return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text">${markdownMarkup(entry[language])}</div></div>`).join('')}</div>`;
 }
 
 function renderEntry(entry, { title = true, date = true, source = true } = {}) {
   const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
-  return `<article class="entry">${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`;
+  return `<article class="entry">${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>` : ''}</article>`;
 }
 
 function bookSections(entries) {
@@ -436,11 +444,10 @@ async function refreshIfChanged() {
 }
 
 const languageToggle = $('#language-toggle');
-const languages = ['english', 'german', 'both'];
 updateLanguageControl();
 updateFactsControl();
 languageToggle.addEventListener('click', () => {
-  state.language = languages[(languages.indexOf(state.language) + 1) % languages.length];
+  state.language = state.language === 'english' ? 'original' : 'english';
   updateLanguageControl();
   savePreferences();
   renderActive();
