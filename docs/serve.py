@@ -16,9 +16,9 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 for folder in (ROOT / "data" / "books", ROOT / "data" / "letters")
                 for path in folder.glob("*.json")
             ]
-            fragments_path = ROOT / "data" / "fragments.json"
-            if fragments_path.is_file():
-                paths.append({"path": "data/fragments.json", "version": fragments_path.stat().st_mtime_ns})
+            notes_path = ROOT / "data" / "notes.json"
+            if notes_path.is_file():
+                paths.append({"path": "data/notes.json", "version": notes_path.stat().st_mtime_ns})
             seals_path = ROOT / "data" / "seals.json"
             if seals_path.is_file():
                 paths.append({"path": "data/seals.json", "version": seals_path.stat().st_mtime_ns})

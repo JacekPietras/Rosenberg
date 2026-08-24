@@ -204,7 +204,7 @@ async function getRepositoryFiles() {
   if (!response.ok) throw new Error(`GitHub repository tree: ${response.status}`);
   const tree = await response.json();
   return tree.tree
-    .filter((item) => item.type === 'blob' && (/^data\/(books|letters)\/.*\.json$/.test(item.path) || item.path === 'data/fragments.json' || item.path === 'data/seals.json'))
+    .filter((item) => item.type === 'blob' && (/^data\/(books|letters)\/.*\.json$/.test(item.path) || item.path === 'data/notes.json' || item.path === 'data/seals.json'))
     .map((item) => ({ path: item.path, version: item.sha }))
     .sort((left, right) => left.path.localeCompare(right.path));
 }
@@ -261,7 +261,7 @@ function urlMarkup(value) {
 }
 
 function renderTabs() {
-  const tabs = [...state.manifest.books, ...(state.manifest.fragments ? [{ path: 'data/fragments.json', label: 'Fragments' }] : []), { path: 'letters', label: 'Letters' }, ...(state.manifest.seals ? [{ path: 'data/seals.json', label: 'Seals' }] : [])];
+  const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, ...(state.manifest.seals ? [{ path: 'data/seals.json', label: 'Seals' }] : [])];
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
   document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; savePreferences(); renderTabs(); renderActive(); }));
 }
@@ -296,7 +296,7 @@ function renderDocument(doc, path, index) {
   const url = doc.url ? urlMarkup(doc.url) : '';
   const year = documentYear(doc);
   const anchor = year ? ` id="year-${year}-${index}"` : '';
-  if (path.startsWith('data/books/') || path === 'data/fragments.json') {
+  if (path.startsWith('data/books/') || path === 'data/notes.json') {
     return bookSections(entries).map((section, sectionIndex) => {
       const sectionTitle = section.title || (sectionIndex === 0 ? title : 'Untitled section');
       const sectionContent = section.entries.map((entry) => renderEntry(entry, { title: false })).join('');
@@ -415,7 +415,7 @@ async function loadAll() {
   const letterPaths = paths.filter((path) => path.startsWith('data/letters/'));
   const manifest = {
     books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
-    fragments: paths.includes('data/fragments.json'),
+    notes: paths.includes('data/notes.json'),
     seals: paths.includes('data/seals.json'),
     letters: letterPaths,
   };
