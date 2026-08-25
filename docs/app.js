@@ -236,8 +236,8 @@ function markdownMarkup(value = '') {
 }
 
 function markdownLinks(value = '') {
-  const values = Array.isArray(value) ? value : [value];
-  return values.map((item) => inlineMarkup(item)).join('<br>');
+  if (!Array.isArray(value)) return inlineMarkup(value);
+  return value.map((item) => `<span class="source-line">${inlineMarkup(item)}</span>`).join('');
 }
 
 function letterForSource(source) {

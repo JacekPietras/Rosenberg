@@ -124,6 +124,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .entry-title, .source { margin: 0 0 .55rem; color: var(--muted); font-size: .78rem; font-weight: 650; letter-spacing: .02em; }
 .entry-date { margin: -.3rem 0 .55rem; color: var(--faint); font-size: .76rem; }
 .source a { color: inherit; }
+.source-line { display: block; }
 .text-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 4vw, 3rem); }
 .text-grid.single { grid-template-columns: 1fr; }
 .language { min-width: 0; }
