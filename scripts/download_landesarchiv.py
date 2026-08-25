@@ -183,7 +183,7 @@ def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = 
                     for value in existing
                 ]
                 if replace_images:
-                    incoming_names = {Path(value).name for value in image_paths}
+                    incoming_names = {image_filename(value) for value in image_paths}
                     old_by_name = {
                         image_filename(value): value
                         for value in existing
@@ -196,7 +196,7 @@ def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = 
                     ]
                     replacements = []
                     for value in image_paths:
-                        replacement = dict(old_by_name.get(Path(value).name, {}))
+                        replacement = dict(old_by_name.get(image_filename(value), {}))
                         replacement["src"] = value
                         replacements.append(replacement)
                     entry["img"] = retained + replacements
