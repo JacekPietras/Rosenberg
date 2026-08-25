@@ -103,7 +103,7 @@ function linkedMarkup(value = '') {
     const query = encodeURIComponent(place.name);
     return token(`<a class="place-link" href="?place=${query}">${match}</a>`);
   });
-  return text.replace(/\u0000(\d+)\u0000/g, (_, index) => tokens[Number(index)]);
+  return text.replace(/\u0000(\d+)\u0000/g, (match, index) => tokens[Number(index)] ?? match);
 }
 
 function inlineMarkup(value = '') {
@@ -111,7 +111,7 @@ function inlineMarkup(value = '') {
   const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
   let text = escapeHtml(value).replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => token(`<a href="${url}" target="_blank" rel="noreferrer">${linkedMarkup(label)}</a>`));
   text = linkedMarkup(text).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-  return text.replace(/\u0000(\d+)\u0000/g, (_, index) => tokens[Number(index)]);
+  return text.replace(/\u0000(\d+)\u0000/g, (match, index) => tokens[Number(index)] ?? match);
 }
 
 function parsePlaces(markdown) {
