@@ -17,10 +17,48 @@
       ],
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723836%2F04_0001723836_0001_4-1723836-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723836%2F04_0001723836_0001_4-1723836-1.jpg",
+          "seals": [
+            {
+              "person": "Else",
+              "position": "0.2445,0.7924",
+              "size": 0.08
+            },
+            {
+              "person": "Kunz",
+              "position": "0.1849,0.8110",
+              "size": 0.08
+            },
+            {
+              "person": "Kunz d.A.",
+              "position": "0.3092,0.7737",
+              "size": 0.08
+            },
+            {
+              "person": "Thomas",
+              "position": "0.3901,0.7609",
+              "size": 0.08
+            },
+            {
+              "person": "Hans",
+              "position": "0.4966,0.7830",
+              "size": 0.08
+            },
+            {
+              "person": "Ulrich",
+              "position": "0.6337,0.7889",
+              "size": 0.08
+            },
+            {
+              "person": "Reinhard von Uissigheim",
+              "position": "0.7589,0.7889",
+              "size": 0.08
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723836%2F04_0001723836_0002_4-1723836-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723836%2F04_0001723836_0002_4-1723836-2.jpg",
+          "deleted": "true"
         }
       ]
     }

@@ -18,7 +18,44 @@
       ],
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723837%2F04_0001723837_0001_4-1723837-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723837%2F04_0001723837_0001_4-1723837-1.jpg",
+          "seals": [
+            {
+              "person": "Kunz d.A.",
+              "position": "0.2720,0.7935",
+              "size": 0.08
+            },
+            {
+              "person": "Thomas",
+              "position": "0.5934,0.7444",
+              "size": 0.08
+            },
+            {
+              "person": "Hans",
+              "position": "0.4161,0.7646",
+              "size": 0.08
+            },
+            {
+              "person": "Reinhard von Uissigheim",
+              "position": "0.6450,0.7289",
+              "size": 0.08
+            },
+            {
+              "person": "Ulrich",
+              "position": "0.6772,0.7456",
+              "size": 0.08
+            },
+            {
+              "person": "Kunz",
+              "position": "0.3806,0.7432",
+              "size": 0.08
+            },
+            {
+              "person": "?",
+              "position": "0.5521,0.7313",
+              "size": 0.08
+            }
+          ]
         },
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723837%2F04_0001723837_0002_4-1723837-2.jpg",
