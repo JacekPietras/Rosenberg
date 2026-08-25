@@ -359,7 +359,7 @@ function setupSealAnnotations() {
       const y = Number(crop.dataset.sealY);
       const size = Number(crop.dataset.sealSize);
       if (![x, y, size].every(Number.isFinite) || size <= 0 || !crop.clientWidth || !crop.clientHeight) return;
-      const cropSize = image.naturalHeight * Math.max(size * 1.8, 0.06);
+      const cropSize = image.naturalHeight * Math.max(size, 0.035);
       const scale = crop.clientHeight / cropSize;
       const width = image.naturalWidth * scale;
       const height = image.naturalHeight * scale;
