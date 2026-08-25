@@ -3,6 +3,7 @@
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg B 289 U 2",
+      "url": "http://www.landesarchiv-bw.de/plink/?f=2-2356607",
       "german": "Brief von Engelhard von Rosenberg, Ritter, wie derselbe 100 Gulden von Gottfried von Hanau, Landkomtur der Ballei Franken, empfangen, dagegen sich als einen getreuen Burgmann an das Haus Mergentheim sich und sein Gut zu Sailach (Selhech) verspricht",
       "english": "Letter from Engelhard von Rosenberg, knight, about how he received 100 guilders from Gottfried von Hanau, Landkomtur of the Bailiwick of Franconia, in return for which he promised himself and his estate at Sailach (Selhech) as a loyal castle guard to the House of Mergentheim",
       "facts": [
@@ -11,6 +12,22 @@
         "Engelhard von Rosenberg committed himself as Burgmann to Mergentheim",
         "Engelhard von Rosenberg pledged his property at Sailach (Selhech) to Mergentheim",
         "Gottfried von Hanau is titled Landkomtur der Ballei Franken"
+      ],
+      "img": [
+        {
+          "src": "letters/02_0002356607_0001_2-2356607-1.jpg",
+          "seals": [
+            {
+              "person": "Engelhard",
+              "position": "0.4008,0.7467",
+              "size": 0.12200000000000003
+            }
+          ]
+        },
+        {
+          "src": "letters/02_0002356607_0002_2-2356607-2.jpg",
+          "deleted": "true"
+        }
       ]
     }
   ]
