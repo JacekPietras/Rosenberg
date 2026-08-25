@@ -98,7 +98,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .seal-entry-media .entry-image { flex: 0 1 auto; }
 .seal-entry-media .entry-image img { width: auto; height: 20rem; max-width: 100%; object-fit: contain; }
 .seal-entry-media .seal-crop { position: relative; display: block; width: 20rem; max-width: 100%; height: 20rem; box-sizing: border-box; overflow: hidden; background: var(--paper); }
-.seal-entry-media .seal-crop img { width: 100%; height: 100%; object-fit: cover; }
+.seal-entry-media .seal-crop img { position: absolute; max-width: none; max-height: none; object-fit: initial; }
 .document-heading h2 { margin: 0 0 .25rem; color: var(--ink); font-size: 1.25rem; font-weight: 650; letter-spacing: -.02em; }
 .document-heading small { color: var(--muted); font-size: .78rem; white-space: nowrap; }
 .document-url { margin: .45rem 0 0; overflow-wrap: anywhere; font-size: .78rem; }

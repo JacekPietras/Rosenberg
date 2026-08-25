@@ -331,7 +331,7 @@ function imageMarkup(value = '', legacySeals = [], context = {}) {
       : '';
     const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${editAttributes}>${image}</a>`;
     const annotatedImage = context.crop
-      ? `<span class="seal-crop"><a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${editAttributes}><img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="eager" style="transform:scale(${Math.min(8, Math.max(1, 1 / (context.crop.size * 1.5)))});transform-origin:${context.crop.x * 100}% ${context.crop.y * 100}%"${fallbackAttribute}></a></span>`
+      ? `<span class="seal-crop" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}">${imageLink}</span>`
       : annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
     return `<figure class="entry-image">${annotatedImage}</figure>`;
   }).filter(Boolean).join('');
@@ -342,7 +342,7 @@ function setupSealAnnotations() {
   state.sealMarkerCleanup?.();
   state.sealMarkerCleanup = null;
   const annotatedImages = [...document.querySelectorAll('.annotated-image img')];
-  const cropImages = [];
+  const cropImages = [...document.querySelectorAll('.seal-crop img')];
   if (!annotatedImages.length && !cropImages.length) return;
   const update = () => {
     annotatedImages.forEach((image) => {
@@ -372,10 +372,14 @@ function setupSealAnnotations() {
   annotatedImages.forEach((image) => image.addEventListener('load', update));
   cropImages.forEach((image) => image.addEventListener('load', update));
   window.addEventListener('resize', update, { passive: true });
+  const cropBoxes = [...new Set(cropImages.map((image) => image.closest('.seal-crop')).filter(Boolean))];
+  const resizeObserver = cropBoxes.length && 'ResizeObserver' in window ? new ResizeObserver(update) : null;
+  cropBoxes.forEach((box) => resizeObserver?.observe(box));
   state.sealMarkerCleanup = () => {
     annotatedImages.forEach((image) => image.removeEventListener('load', update));
     cropImages.forEach((image) => image.removeEventListener('load', update));
     window.removeEventListener('resize', update);
+    resizeObserver?.disconnect();
   };
   update();
 }
