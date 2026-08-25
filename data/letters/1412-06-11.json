@@ -3,6 +3,7 @@
   "entries": [
     {
       "source": "Staatsarchiv Wertheim K-LRA 50 U 37",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=7-172976",
       "german": "Engelhart von Rosenberg der Ältere und Anne von Bebenburg, Frau des verst. Eberhart von Rosenberg, sowie sein Sohn Cuncze verkaufen an Hans Fuger (?) und Hans Greyn, Bürger (?) zu Bischofsheim näher beschriebene (Abgabepflichtige, Anstößer, Flurnamen gen.) Zinsen zu Bischofsheim (Bischofsheyn) und Werbachhausen (Werpachhusen) um 10 Gulden. Aussteller: Engelhart von Rosenberg ,der Ältere; Anne von Bebenburg, Frau des verstorbenen Eberhart von Rosenberg; Cuncze, Sohn des Engelhart von Rosenberg, dem Älteren Empfänger: Hans Fuger (?); Hans Greyn, Bürger (?) zu Bischofsheim Siegler:Engelhart von Rosenberg, der Ältere; Anne von Bebenburg, Frau des verstorbenen Eberhart von Rosenberg; Cuncze, Sohn von Engelhart von Rosenberg dem Älteren",
       "english": "Engelhart von Rosenberg the Elder and Anne von Bebenburg, wife of the deceased Eberhart von Rosenberg, as well as his son Cuncze, sell to Hans Fuger (?) and Hans Greyn, citizens (?) of Bischofsheim, the more detailed (taxable persons, tenants, field names specified) interest in Bischofsheim (Bischofsheyn) and Werbachhausen (Werpachhusen) for 10 guilders. Issuer: Engelhart von Rosenberg the Elder; Anne von Bebenburg, wife of the late Eberhart von Rosenberg; Cuncze, son of Engelhart von Rosenberg the Elder Recipient: Hans Fuger (?); Hans Greyn, citizens (?) of Bischofsheim Sealer: Engelhart von Rosenberg the Elder; Anne von Bebenburg, wife of the late Eberhart von Rosenberg; Cuncze, son of Engelhart von Rosenberg the Elder",
       "facts": [
@@ -14,6 +15,22 @@
         "Engelhard von Rosenberg d. Ä. sealed the charter",
         "Anne von Bebenburg sealed the charter",
         "Kunz von Rosenberg sealed the charter"
+      ],
+      "img": [
+        {
+          "src": "letters/07_0000172976_0001_7-172976-1.jpg",
+          "seals": [
+            {
+              "person": "Engelhart",
+              "position": "0.3477,0.6716",
+              "size": 0.06899999999999999
+            }
+          ]
+        },
+        {
+          "src": "letters/07_0000172976_0002_7-172976-2.jpg",
+          "deleted": "true"
+        }
       ]
     }
   ]
