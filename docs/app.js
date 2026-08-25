@@ -249,14 +249,16 @@ function imageMarkup(value = '', legacySeals = [], context = {}) {
         ? `https://raw.githubusercontent.com/${owner}/${repository}/main/data/images/${encodedPath}`
         : `../data/images/${encodedPath}`;
     }
-    const annotations = sealAnnotationMarkup(seals);
+    const annotations = context.crop ? '' : sealAnnotationMarkup(seals);
     const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
-    const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="lazy"${fallbackAttribute}>`;
+    const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="${context.crop || context.sealScreen ? 'eager' : 'lazy'}"${fallbackAttribute}>`;
     const editAttributes = context.path && context.index !== null && context.index !== undefined
       ? ` data-document-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${context.imageIndex ?? imageIndex}"`
       : '';
     const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${editAttributes}>${image}</a>`;
-    const annotatedImage = annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
+    const annotatedImage = context.crop
+      ? `<span class="seal-crop" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}">${imageLink}</span>`
+      : annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
     return `<figure class="entry-image">${annotatedImage}</figure>`;
   }).filter(Boolean).join('');
   return images ? `<div class="entry-images">${images}</div>` : '';
@@ -265,18 +267,38 @@ function imageMarkup(value = '', legacySeals = [], context = {}) {
 function setupSealAnnotations() {
   state.sealMarkerCleanup?.();
   state.sealMarkerCleanup = null;
-  const images = [...document.querySelectorAll('.annotated-image img')];
-  if (!images.length) return;
-  const update = () => images.forEach((image) => {
-    const height = image.clientHeight;
-    image.closest('.annotated-image')?.querySelectorAll('.seal-marker').forEach((marker) => {
-      marker.style.setProperty('--seal-diameter', `${height * Number(marker.dataset.size)}px`);
+  const annotatedImages = [...document.querySelectorAll('.annotated-image img')];
+  const cropImages = [...document.querySelectorAll('.seal-crop img')];
+  if (!annotatedImages.length && !cropImages.length) return;
+  const update = () => {
+    annotatedImages.forEach((image) => {
+      const height = image.clientHeight;
+      image.closest('.annotated-image')?.querySelectorAll('.seal-marker').forEach((marker) => {
+        marker.style.setProperty('--seal-diameter', `${height * Number(marker.dataset.size)}px`);
+      });
     });
-  });
-  images.forEach((image) => image.addEventListener('load', update));
+    cropImages.forEach((image) => {
+      if (!image.naturalWidth || !image.naturalHeight) return;
+      const crop = image.closest('.seal-crop');
+      if (!crop) return;
+      const x = Number(crop.dataset.sealX);
+      const y = Number(crop.dataset.sealY);
+      const size = Number(crop.dataset.sealSize);
+      if (![x, y, size].every(Number.isFinite) || size <= 0) return;
+      const cropSize = image.naturalHeight * Math.max(size * 2.5, 0.08);
+      const scale = crop.clientHeight / cropSize;
+      const width = image.naturalWidth * scale;
+      const height = image.naturalHeight * scale;
+      image.style.width = `${width}px`;
+      image.style.height = `${height}px`;
+      image.style.left = `${crop.clientWidth / 2 - x * width}px`;
+      image.style.top = `${crop.clientHeight / 2 - y * height}px`;
+    });
+  };
+  [...annotatedImages, ...cropImages].forEach((image) => image.addEventListener('load', update));
   window.addEventListener('resize', update, { passive: true });
   state.sealMarkerCleanup = () => {
-    images.forEach((image) => image.removeEventListener('load', update));
+    [...annotatedImages, ...cropImages].forEach((image) => image.removeEventListener('load', update));
     window.removeEventListener('resize', update);
   };
   update();
@@ -584,18 +606,23 @@ function letterSealEntries() {
           ? node.seals
           : imageIndex === 0 ? entry.seals : [];
         if (!Array.isArray(seals) || !seals.length || !node) return;
-        const people = seals.map((seal) => String(seal?.person || '').trim()).filter(Boolean);
-        if (!people.length) return;
-        sealEntries.push({
-          title: people.join(', '),
+        seals.forEach((seal) => {
+          const person = String(seal?.person || '').trim();
+          const position = String(seal?.position || '').split(',').map(Number);
+          const size = Number(seal?.size);
+          if (!person || position.length !== 2 || !position.every(Number.isFinite) || !Number.isFinite(size) || size <= 0) return;
+          sealEntries.push({
+          title: person,
           source: entry.source,
           date: entry.date || document.date,
           url: entry.url || document.url,
           img: [node],
           seals,
+          crop: { x: position[0], y: position[1], size },
           sourcePath: path,
           sourceIndex: entryIndex,
           sourceImageIndex: imageIndex,
+          });
         });
       });
     });
@@ -766,8 +793,8 @@ function renderDocument(doc, path, index) {
         ? sealLetterUrlMarkup(entry.source) || urlMarkup(entry.url)
         : urlMarkup(entry.url);
       const imageContext = entry.sourcePath
-        ? { path: sourcePath, index: sourceIndex, imageIndex: entry.sourceImageIndex }
-        : { path, index: sourceIndex };
+        ? { path: sourcePath, index: sourceIndex, imageIndex: entry.sourceImageIndex, crop: entry.crop, sealScreen: true }
+        : { path, index: sourceIndex, sealScreen: true };
       return `<article class="entry seal-entry"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img, entry.seals, imageContext)}</div></article>`;
     }).join('');
     return `<article class="document seals-document"><div class="document-heading"><h2>${inlineMarkup(title)}</h2></div>${sealContent}</article>`;
