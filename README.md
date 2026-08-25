@@ -110,12 +110,16 @@ python3 scripts/download_landesarchiv.py \
   'https://www.landesarchiv-bw.de/plink/?f=4-1723539'
 ```
 
-No local image files are created in the default `links` mode. The `img` nodes contain direct `bild.php` URLs hosted by Landesarchiv Baden-Württemberg. To download the files into `data/images/letters/` and store their local names instead, use:
+No local image files are created in the default `links` mode. The `img` nodes contain direct `bild.php` URLs hosted by Landesarchiv Baden-Württemberg. To download the files into `data/images/letters/` while retaining those public archive URLs in JSON, use:
 
 ```text
 python3 scripts/download_landesarchiv.py \
   --mode download \
   'https://www.landesarchiv-bw.de/plink/?f=4-1723539'
 ```
+
+Download mode caches the files locally but keeps the direct archive URLs in the
+JSON, so the published viewer continues to work when the gitignored cache is
+absent.
 
 Use `--image-dir SUBDIRECTORY` to choose another subdirectory under `data/images/`. Records without an available digitization produce an error. Check the archive's usage terms and retain the source signature when reusing displayed images.

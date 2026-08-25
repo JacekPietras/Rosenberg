@@ -15,7 +15,7 @@ import json
 import re
 import sys
 from pathlib import Path
-from urllib.parse import unquote, urlencode, urljoin, urlsplit
+from urllib.parse import parse_qs, unquote, urlencode, urljoin, urlsplit
 from urllib.request import Request, build_opener
 
 
@@ -141,6 +141,9 @@ def download_images(opener, image_paths: list[str], page_names: list[str], image
         if not filename:
             filename = Path(page_name).name
         target = image_dir / filename
+        if target.exists() and target.stat().st_size:
+            stored_paths.append(target.relative_to(IMAGE_DIR).as_posix())
+            continue
         request = Request(image_url, headers={"User-Agent": USER_AGENT})
         with opener.open(request, timeout=REQUEST_TIMEOUT) as response:
             contents = response.read()
@@ -155,6 +158,16 @@ def image_matches_aid(image_path: str, aid: str) -> bool:
     return re.search(rf"(?:^|[_-]){re.escape(aid)}(?:[-_.]|$)", image_path) is not None
 
 
+def image_filename(image: object) -> str:
+    """Return the archive filename represented by an image node or path."""
+    src = image.get("src") if isinstance(image, dict) else image
+    if not isinstance(src, str):
+        return ""
+    parts = urlsplit(src)
+    original = parse_qs(parts.query).get("originalBilddatei", [""])[0]
+    return Path(unquote(original or parts.path)).name
+
+
 def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = True) -> list[Path]:
     matches = []
     for path in sorted(LETTER_DIR.glob("*.json")):
@@ -166,27 +179,44 @@ def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = 
                 existing = entry.get("img", [])
                 existing = [existing] if isinstance(existing, (str, dict)) else existing
                 existing = [
-                    value if isinstance(value, dict) else {"src": value, "seals": []}
+                    value if isinstance(value, dict) else {"src": value}
                     for value in existing
                 ]
                 if replace_images:
-                    old_by_src = {value.get("src"): value for value in existing}
+                    incoming_names = {Path(value).name for value in image_paths}
+                    old_by_name = {
+                        image_filename(value): value
+                        for value in existing
+                        if image_filename(value)
+                    }
                     retained = [
                         value for value in existing
                         if not image_matches_aid(str(value.get("src", "")), aid)
+                        and image_filename(value) not in incoming_names
                     ]
-                    replacements = [
-                        old_by_src.get(value, {"src": value, "seals": []})
-                        for value in image_paths
-                    ]
+                    replacements = []
+                    for value in image_paths:
+                        replacement = dict(old_by_name.get(Path(value).name, {}))
+                        replacement["src"] = value
+                        replacements.append(replacement)
                     entry["img"] = retained + replacements
                 else:
                     known = {value.get("src") for value in existing}
                     entry["img"] = existing + [
-                        {"src": value, "seals": []}
+                        {"src": value}
                         for value in image_paths
                         if value not in known
                     ]
+                for image in entry.get("img", []):
+                    if isinstance(image, dict) and image.get("seals") == []:
+                        del image["seals"]
+                legacy_seals = entry.get("seals")
+                if isinstance(legacy_seals, list) and legacy_seals:
+                    for image in entry.get("img", []):
+                        if isinstance(image, dict) and image.get("deleted") != "true":
+                            image.setdefault("seals", legacy_seals)
+                            del entry["seals"]
+                            break
                 matches.append((path, document))
     if not matches:
         raise ValueError(f"No letter JSON entry found for AID {aid}")
@@ -222,7 +252,10 @@ def main() -> int:
         viewer_url, fields, page_names, scope_id = discover_viewer(opener, args.url)
         image_paths = image_urls(viewer_url, fields, page_names, scope_id)
         if args.mode == "download":
-            image_paths = download_images(opener, image_paths, page_names, image_dir)
+            # Cache the files locally, but keep the archive URLs in JSON.
+            # The cache is gitignored and is therefore unavailable on GitHub
+            # Pages; the viewer can use these URLs as its public fallback.
+            download_images(opener, image_paths, page_names, image_dir)
         letter_paths = update_letter_json(fields["aid"], image_paths, replace_images=True)
         for letter_path in letter_paths:
             print(f"Updated letter JSON: {letter_path}")

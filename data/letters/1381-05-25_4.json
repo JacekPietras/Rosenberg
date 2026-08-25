@@ -6,7 +6,33 @@
       "url": "http://www.landesarchiv-bw.de/plink/?f=4-1723541",
       "german": "Konrad von Rosenberg, Ritter, Vicedom zu Heidelberg, öffnet den Pfalzgrafen Ruprecht d. Ä., Ruprecht d. J. und Ruprecht dem Jüngsten sein Viertel an Burg und Stadt Boxberg, die von der Pfalz zu Lehen rührt. des Ausstellers und seines Schwagers Hans von Hirschhorn",
       "english": "Conrad von Rosenberg, Knight, Vicedom of Heidelberg, opens his quarter of the castle and town of Boxberg, which is a fief of the Palatinate, to the Counts Palatine Rupert the Elder, Rupert the Younger, and Rupert the Younger. of the exhibitor and his brother-in-law Hans von Hirschhorn",
-      "seals": [{ "person": "Konrad knight", "position": "0.5,0.5", "size": 0.15 }]
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723541%2F04_0001723541_0001_4-1723541-1.jpg",
+          "seals": [
+            {
+              "person": "Konrad",
+              "position": "0.3447,0.8047",
+              "size": 0.10400000000000002
+            }
+          ]
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723541%2F04_0001723541_0002_4-1723541-2.jpg",
+          "deleted": "true"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723541%2F04_0001723541_0003_4-1723541-3.jpg",
+          "deleted": "true"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723541%2F04_0001723541_0004_4-1723541-4.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723541%2F04_0001723541_0005_4-1723541-5.jpg",
+          "deleted": "true"
+        }
+      ]
     }
   ]
 }
