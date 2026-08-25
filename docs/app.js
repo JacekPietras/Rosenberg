@@ -249,15 +249,15 @@ function imageMarkup(value = '', legacySeals = [], context = {}) {
         ? `https://raw.githubusercontent.com/${owner}/${repository}/main/data/images/${encodedPath}`
         : `../data/images/${encodedPath}`;
     }
-    const annotations = context.crop ? '' : sealAnnotationMarkup(seals);
+    const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals);
     const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
-    const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="${context.crop || context.sealScreen ? 'eager' : 'lazy'}"${fallbackAttribute}>`;
+    const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="${context.sealScreen ? 'eager' : 'lazy'}"${fallbackAttribute}>`;
     const editAttributes = context.path && context.index !== null && context.index !== undefined
       ? ` data-document-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${context.imageIndex ?? imageIndex}"`
       : '';
     const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${editAttributes}>${image}</a>`;
     const annotatedImage = context.crop
-      ? `<span class="seal-crop" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}">${imageLink}</span>`
+      ? `<span class="seal-crop"><a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${editAttributes}><img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="eager" style="transform:scale(${Math.min(8, Math.max(1, 1 / (context.crop.size * 1.5)))});transform-origin:${context.crop.x * 100}% ${context.crop.y * 100}%"${fallbackAttribute}></a></span>`
       : annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
     return `<figure class="entry-image">${annotatedImage}</figure>`;
   }).filter(Boolean).join('');
@@ -268,7 +268,7 @@ function setupSealAnnotations() {
   state.sealMarkerCleanup?.();
   state.sealMarkerCleanup = null;
   const annotatedImages = [...document.querySelectorAll('.annotated-image img')];
-  const cropImages = [...document.querySelectorAll('.seal-crop img')];
+  const cropImages = [];
   if (!annotatedImages.length && !cropImages.length) return;
   const update = () => {
     annotatedImages.forEach((image) => {
@@ -284,8 +284,8 @@ function setupSealAnnotations() {
       const x = Number(crop.dataset.sealX);
       const y = Number(crop.dataset.sealY);
       const size = Number(crop.dataset.sealSize);
-      if (![x, y, size].every(Number.isFinite) || size <= 0) return;
-      const cropSize = image.naturalHeight * Math.max(size * 2.5, 0.08);
+      if (![x, y, size].every(Number.isFinite) || size <= 0 || !crop.clientWidth || !crop.clientHeight) return;
+      const cropSize = image.naturalHeight * Math.max(size * 1.8, 0.06);
       const scale = crop.clientHeight / cropSize;
       const width = image.naturalWidth * scale;
       const height = image.naturalHeight * scale;
@@ -295,10 +295,12 @@ function setupSealAnnotations() {
       image.style.top = `${crop.clientHeight / 2 - y * height}px`;
     });
   };
-  [...annotatedImages, ...cropImages].forEach((image) => image.addEventListener('load', update));
+  annotatedImages.forEach((image) => image.addEventListener('load', update));
+  cropImages.forEach((image) => image.addEventListener('load', update));
   window.addEventListener('resize', update, { passive: true });
   state.sealMarkerCleanup = () => {
-    [...annotatedImages, ...cropImages].forEach((image) => image.removeEventListener('load', update));
+    annotatedImages.forEach((image) => image.removeEventListener('load', update));
+    cropImages.forEach((image) => image.removeEventListener('load', update));
     window.removeEventListener('resize', update);
   };
   update();
