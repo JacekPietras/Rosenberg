@@ -78,6 +78,11 @@ def discover_viewer(opener, permalink: str) -> tuple[str, dict[str, str], list[s
     if not zoom_match:
         raise ValueError(f"Record {aid} has no image viewer link")
     zoom_path = html.unescape(zoom_match.group(0))
+    # Some catalogue records link to the thumbnail-selection page instead of
+    # the image viewer.  The thumbnail page does not contain the form fields
+    # needed to construct the direct image URLs, but it uses the same
+    # ``bestand`` and ``id`` parameters as zoom.php.
+    zoom_path = re.sub(r"/thumbnails\.php(?=\?)", "/zoom.php", zoom_path, flags=re.I)
     if not zoom_path.startswith("../"):
         zoom_path = "../" + zoom_path
     zoom_url = urljoin(landing_url, zoom_path)

@@ -957,7 +957,8 @@ function renderDocument(doc, path, index) {
     return `<article class="document seals-document"><div class="document-heading"><h2>${inlineMarkup(title)}</h2></div>${sealContent}</article>`;
   }
   const content = entries.map((entry, entryIndex) => renderEntry(entry, { path, index: entryIndex })).join('');
-  return `<article class="document"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${date}</div>${content}</article>`;
+  const important = entries.some((entry) => entry.important === true) ? ' important' : '';
+  return `<article class="document${important}"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${date}</div>${content}</article>`;
 }
 
 function renderYearSidebar(paths) {
