@@ -13,35 +13,37 @@ function loadPreferences() {
     return {
       active: typeof preferences.active === 'string' ? preferences.active : null,
       place: typeof preferences.place === 'string' ? preferences.place : null,
+      person: typeof preferences.person === 'string' ? preferences.person : null,
       letter: typeof preferences.letter === 'string' ? preferences.letter : null,
       language: normalizeDisplayMode(preferences.language),
       showFacts: preferences.showFacts !== false,
       darkMode: preferences.darkMode !== false,
     };
   } catch {
-    return { active: null, place: null, letter: null, language: 'english', showFacts: true, darkMode: true };
+    return { active: null, place: null, person: null, letter: null, language: 'english', showFacts: true, darkMode: true };
   }
 }
 
 function savePreferences() {
   try {
-    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, place: state.place, letter: state.letter, language: state.language, showFacts: state.showFacts, darkMode: state.darkMode }));
+    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, place: state.place, person: state.person, letter: state.letter, language: state.language, showFacts: state.showFacts, darkMode: state.darkMode }));
   } catch {
     // Preferences are optional; rendering should continue if storage is unavailable.
   }
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, place: preferences.place, letter: preferences.letter, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), places: [], placePattern: null, snapshot: '', yearHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const $ = (selector) => document.querySelector(selector);
 const REFRESH_INTERVAL = 30000;
 
 const navigation = new URLSearchParams(location.search);
-if (navigation.get('document') || navigation.get('tab') || navigation.get('letter')) state.place = null;
+if (navigation.get('document') || navigation.get('tab') || navigation.get('letter')) { state.place = null; state.person = null; }
 if (navigation.get('tab') === 'letters') state.active = 'letters';
 if (navigation.get('document')) state.active = navigation.get('document');
 if (navigation.get('letter')) state.letter = navigation.get('letter');
-if (navigation.get('place')) state.place = navigation.get('place');
+if (navigation.get('place')) { state.place = navigation.get('place'); state.person = null; }
+if (navigation.get('person')) { state.person = navigation.get('person'); state.place = null; }
 
 function applyTheme() {
   document.documentElement.dataset.theme = state.darkMode ? 'dark' : 'light';
@@ -84,21 +86,31 @@ function escapeHtml(value = '') {
   return String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 }
 
-function placeMarkup(value = '') {
-  if (!state.placePattern) return value;
-  return String(value).replace(state.placePattern, (match) => {
+function linkedMarkup(value = '') {
+  const tokens = [];
+  const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
+  let text = String(value);
+  if (state.personPattern) text = text.replace(state.personPattern, (match) => {
+    const normalizedMatch = match.replace(/\s*\([^)]*\)(?=\s(?:von|v\.|de|of)\s)/giu, '');
+    const person = state.persons.find((item) => item.names.some((name) => name.toLocaleLowerCase() === match.toLocaleLowerCase() || name.toLocaleLowerCase() === normalizedMatch.toLocaleLowerCase()));
+    if (!person) return match;
+    const query = encodeURIComponent(person.name);
+    return token(`<a class="person-link" href="?person=${query}">${match}</a>`);
+  });
+  if (state.placePattern) text = text.replace(state.placePattern, (match) => {
     const place = state.places.find((item) => item.names.some((name) => name.toLocaleLowerCase() === match.toLocaleLowerCase()));
     if (!place) return match;
     const query = encodeURIComponent(place.name);
-    return `<a class="place-link" href="?place=${query}">${match}</a>`;
+    return token(`<a class="place-link" href="?place=${query}">${match}</a>`);
   });
+  return text.replace(/\u0000(\d+)\u0000/g, (_, index) => tokens[Number(index)]);
 }
 
 function inlineMarkup(value = '') {
   const tokens = [];
   const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
-  let text = escapeHtml(value).replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => token(`<a href="${url}" target="_blank" rel="noreferrer">${placeMarkup(label)}</a>`));
-  text = placeMarkup(text).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  let text = escapeHtml(value).replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => token(`<a href="${url}" target="_blank" rel="noreferrer">${linkedMarkup(label)}</a>`));
+  text = linkedMarkup(text).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   return text.replace(/\u0000(\d+)\u0000/g, (_, index) => tokens[Number(index)]);
 }
 
@@ -111,6 +123,47 @@ function parsePlaces(markdown) {
 
 function buildPlacePattern(places) {
   const names = [...new Set(places.flatMap((place) => place.names))].sort((left, right) => right.length - left.length).map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  return names.length ? new RegExp(`(?<![\\p{L}\\p{N}])(?:${names.join('|')})(?![\\p{L}\\p{N}])`, 'giu') : null;
+}
+
+function parsePeople(markdown, namesMarkdown, places) {
+  const namesByCanonical = new Map(String(namesMarkdown).split('\n').map((line) => line.replace(/\/\/.*$/, '').trim()).filter(Boolean).map((line) => {
+    const names = line.split(',').map((name) => name.trim()).filter(Boolean);
+    return [names[0].toLocaleLowerCase(), [...new Set(names)]];
+  }));
+  const allNameVariants = [...new Set([...namesByCanonical.values()].flat())].sort((left, right) => right.length - left.length);
+  return String(markdown).split('\n').map((line) => line.replace(/\/\/.*$/, '').trim()).filter(Boolean).map((line) => {
+    const separatorMatch = [...line.matchAll(/ (?:von|v\.|de|of) /gi)].pop();
+    const name = separatorMatch ? line.slice(0, separatorMatch.index) : line;
+    const placeName = separatorMatch ? line.slice(separatorMatch.index + separatorMatch[0].length) : '';
+    const baseName = allNameVariants.find((candidate) => name.toLocaleLowerCase() === candidate.toLocaleLowerCase() || name.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `));
+    const nameAddition = baseName ? name.slice(baseName.length) : '';
+    const nameVariants = (namesByCanonical.get(baseName?.toLocaleLowerCase()) || [baseName || name]).map((nameVariant) => `${nameVariant}${nameAddition}`);
+    const place = places.find((item) => item.names.some((candidate) => placeName.toLocaleLowerCase() === candidate.toLocaleLowerCase() || placeName.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `)));
+    const placeBase = place?.names.find((candidate) => placeName.toLocaleLowerCase() === candidate.toLocaleLowerCase() || placeName.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `));
+    const fallbackPlaceBase = allNameVariants.find((candidate) => placeName.toLocaleLowerCase() === candidate.toLocaleLowerCase() || placeName.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `));
+    const placeAddition = (placeBase || fallbackPlaceBase) ? placeName.slice((placeBase || fallbackPlaceBase).length) : '';
+    const placeAdditions = /^ d\. ?Ä\.$/i.test(placeAddition)
+      ? [' d. Ä.', ' d.Ä.']
+      : /^, (?:Knight|Ritter)$/i.test(placeAddition)
+        ? [', Knight', ', Ritter']
+        : placeAddition
+          ? [placeAddition]
+          : ['', ' d. Ä.', ' d.Ä.', ', Knight', ', Ritter', ' the Elder', ' der Ältere'];
+    const placeVariants = place ? place.names.flatMap((placeVariant) => placeAdditions.map((addition) => `${placeVariant}${addition}`)) : (namesByCanonical.get((fallbackPlaceBase || placeName).toLocaleLowerCase()) || [fallbackPlaceBase || placeName]).flatMap((placeVariant) => placeAdditions.map((addition) => `${placeVariant}${addition}`));
+    const names = [...new Set(nameVariants.flatMap((nameVariant) => placeVariants.flatMap((placeVariant) => ['von', 'v.', 'de', 'of'].map((connector) => `${nameVariant} ${connector} ${placeVariant}`))))];
+    return { name: line, names };
+  });
+}
+
+function buildPersonPattern(people) {
+  const names = [...new Set(people.flatMap((person) => person.names))].sort((left, right) => right.length - left.length).map((name) => {
+    const connector = name.match(/\s(?:von|v\.|de|of)\s/i);
+    if (!connector) return name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const left = name.slice(0, connector.index).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const right = name.slice(connector.index).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return `${left}(?:\\s\\([^)]*\\))?${right}`;
+  });
   return names.length ? new RegExp(`(?<![\\p{L}\\p{N}])(?:${names.join('|')})(?![\\p{L}\\p{N}])`, 'giu') : null;
 }
 
@@ -738,10 +791,84 @@ function setupPlaceNavigation() {
   });
 }
 
+function personForName(name) {
+  return state.persons.find((person) => person.names.some((candidate) => candidate.toLocaleLowerCase() === String(name).toLocaleLowerCase()));
+}
+
+function personMentions(person) {
+  const pattern = buildPersonPattern([person]);
+  const mentions = [];
+  state.documents.forEach((doc, path) => (doc.entries || []).forEach((entry, index) => {
+    const fields = ['title', 'source', 'german', 'latin', 'english', 'facts'];
+    if (fields.some((field) => (Array.isArray(entry[field]) ? entry[field].join('\n') : String(entry[field] || '')).match(pattern))) {
+      mentions.push({ doc, path, entry, index });
+    }
+  }));
+  return mentions;
+}
+
+function personExcerpt(value, person) {
+  const text = String(value || '').replace(/\s+/g, ' ').trim();
+  if (!text) return '';
+  const pattern = buildPersonPattern([person]);
+  const sentences = text.split(/(?<=[.!?。！？])\s+/).filter((sentence) => { pattern.lastIndex = 0; return pattern.test(sentence); });
+  let excerpt = sentences.slice(0, 2).join(' ');
+  if (!excerpt) excerpt = text;
+  let source = excerpt;
+  pattern.lastIndex = 0;
+  let match = pattern.exec(source);
+  if (!match) {
+    source = text;
+    pattern.lastIndex = 0;
+    match = pattern.exec(source);
+  }
+  if (match && source.length > 420) {
+    const limit = 360;
+    const maxStart = Math.max(0, source.length - limit);
+    let start = Math.min(Math.max(0, match.index - 170), maxStart);
+    if (match.index + match[0].length > start + limit) start = Math.min(match.index, maxStart);
+    excerpt = `${start ? '…' : ''}${source.slice(start, start + limit)}${start + limit < source.length ? '…' : ''}`;
+  }
+  return inlineMarkup(excerpt);
+}
+
+function personLanguageMarkup(entry, person) {
+  const available = ['english', 'german', 'latin'].filter((language) => String(entry[language] || '').trim());
+  if (!available.length) return '';
+  const original = ['german', 'latin'].find((language) => available.includes(language));
+  const languages = state.language === 'original'
+    ? ['english', original].filter(Boolean).filter((language) => available.includes(language))
+    : ['english'].filter((language) => available.includes(language));
+  const displayedLanguages = languages.length ? languages : available.slice(0, 1);
+  return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text"><p>${personExcerpt(entry[language], person)}</p></div></div>`).join('')}</div>`;
+}
+
+function renderPersonPage() {
+  const person = personForName(state.person) || state.persons.find((item) => item.name.toLocaleLowerCase() === String(state.person || '').toLocaleLowerCase());
+  if (!person) return `<article class="document"><h2>Person not found</h2><p class="status">No person named “${escapeHtml(state.person || '')}” is listed in data/people.md.</p></article>`;
+  const mentions = personMentions(person);
+  const heading = `<article class="document person-document-heading"><div class="document-heading"><div><h2>${escapeHtml(person.name)}</h2><p class="person-variants">${person.names.map(escapeHtml).join(' · ')}</p></div><small>${mentions.length} mention${mentions.length === 1 ? '' : 's'}</small></div></article>`;
+  const content = mentions.map(({ doc, path, entry, index }) => `<article class="document person-mention" role="link" tabindex="0" data-document-href="${escapeHtml(documentNavigationUrl(path, index))}"><p class="entry-title">${markdownLinks(entry.title || documentTitle(doc, path))}</p>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.german || entry.latin || entry.english ? personLanguageMarkup(entry, person) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
+  return `${heading}${content || '<article class="document"><p class="status">No mentions found.</p></article>'}`;
+}
+
+function setupPersonNavigation() {
+  document.querySelectorAll('.person-mention[data-document-href]').forEach((frame) => {
+    const navigate = () => { window.location.href = frame.dataset.documentHref; };
+    frame.addEventListener('click', (event) => {
+      if (event.target.closest('a.place-link, a.person-link')) return;
+      navigate();
+    });
+    frame.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); navigate(); }
+    });
+  });
+}
+
 function renderTabs() {
   const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, ...(state.manifest.seals ? [{ path: 'data/seals.json', label: 'Seals' }] : [])];
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
-  document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; state.place = null; savePreferences(); renderTabs(); renderActive(); }));
+  document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; state.place = null; state.person = null; savePreferences(); renderTabs(); renderActive(); }));
 }
 
 function languageMarkup(entry) {
@@ -879,6 +1006,11 @@ function scrollToEntryHash() {
 async function renderActive() {
   state.sealMarkerCleanup?.();
   state.sealMarkerCleanup = null;
+  if (state.person) {
+    $('#content').innerHTML = renderPersonPage();
+    setupPersonNavigation();
+    return;
+  }
   if (state.place) {
     $('#content').innerHTML = renderPlacePage();
     setupPlaceNavigation();
@@ -912,11 +1044,16 @@ async function loadAll() {
   const files = await getRepositoryFiles();
   const paths = files.map((file) => typeof file === 'string' ? file : file.path);
   const snapshot = JSON.stringify(files);
-  const [placesText, documents] = await Promise.all([
+  const [placesText, peopleText, namesText, documents] = await Promise.all([
     getText('data/places.md'),
+    getText('data/people.md'),
+    getText('data/names.md'),
     new Map(await Promise.all(paths.map(async (path) => [path, await getJson(path)]))),
   ]);
   state.places = parsePlaces(placesText);
+  state.people = parsePeople(peopleText, namesText, state.places);
+  state.persons = state.people;
+  state.personPattern = buildPersonPattern(state.persons);
   state.placePattern = buildPlacePattern(state.places);
   const bookPaths = paths
     .filter((path) => path.startsWith('data/books/'))
