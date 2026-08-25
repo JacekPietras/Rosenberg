@@ -1,8 +1,7 @@
-Röttingen
 Uissigheim, Uissigheim, Ußinkeim
 Lauda, ludin, luden, Lueden, Lawdaw, Lawden
 Wölchingen, Wolchingen, Wolching
-Boxberg, Boxsberg, Bocksberg // some are missing for sure
+Boxberg, Boxsberg, Bocksberg
 Rosenberg, Roßenberg, Rösenberg
 Jagstberg
 Angeltürn, Angertal

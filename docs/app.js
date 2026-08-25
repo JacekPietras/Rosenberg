@@ -90,9 +90,9 @@ function linkedMarkup(value = '') {
   const tokens = [];
   const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
   let text = String(value);
-  if (state.personPattern) text = text.replace(state.personPattern, (match) => {
+  for (const { pattern, people } of state.personPattern || []) text = text.replace(pattern, (match) => {
     const normalizedMatch = match.replace(/\s*\([^)]*\)(?=\s(?:von|v\.|de|of)\s)/giu, '');
-    const person = state.persons.find((item) => item.names.some((name) => name.toLocaleLowerCase() === match.toLocaleLowerCase() || name.toLocaleLowerCase() === normalizedMatch.toLocaleLowerCase()));
+    const person = people.find((item) => item.names.some((name) => name.toLocaleLowerCase() === match.toLocaleLowerCase() || name.toLocaleLowerCase() === normalizedMatch.toLocaleLowerCase()));
     if (!person) return match;
     const query = encodeURIComponent(person.name);
     return token(`<a class="person-link" href="?person=${query}">${match}</a>`);
@@ -138,7 +138,12 @@ function parsePeople(markdown, namesMarkdown, places) {
     const placeName = separatorMatch ? line.slice(separatorMatch.index + separatorMatch[0].length) : '';
     const baseName = allNameVariants.find((candidate) => name.toLocaleLowerCase() === candidate.toLocaleLowerCase() || name.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `));
     const nameAddition = baseName ? name.slice(baseName.length) : '';
-    const nameVariants = (namesByCanonical.get(baseName?.toLocaleLowerCase()) || [baseName || name]).map((nameVariant) => `${nameVariant}${nameAddition}`);
+    const nameAdditions = /^ d\. ?Ä\.$/i.test(nameAddition)
+      ? [' d. Ä.', ' d.Ä.']
+      : nameAddition
+        ? [nameAddition]
+        : ['', ' d. Ä.', ' d.Ä.', ' the Elder', ' der Ältere'];
+    const nameVariants = (namesByCanonical.get(baseName?.toLocaleLowerCase()) || [baseName || name]).flatMap((nameVariant) => nameAdditions.map((addition) => `${nameVariant}${addition}`));
     const place = places.find((item) => item.names.some((candidate) => placeName.toLocaleLowerCase() === candidate.toLocaleLowerCase() || placeName.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `)));
     const placeBase = place?.names.find((candidate) => placeName.toLocaleLowerCase() === candidate.toLocaleLowerCase() || placeName.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `));
     const fallbackPlaceBase = allNameVariants.find((candidate) => placeName.toLocaleLowerCase() === candidate.toLocaleLowerCase() || placeName.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `));
@@ -157,14 +162,30 @@ function parsePeople(markdown, namesMarkdown, places) {
 }
 
 function buildPersonPattern(people) {
-  const names = [...new Set(people.flatMap((person) => person.names))].sort((left, right) => right.length - left.length).map((name) => {
-    const connector = name.match(/\s(?:von|v\.|de|of)\s/i);
-    if (!connector) return name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const left = name.slice(0, connector.index).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const right = name.slice(connector.index).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    return `${left}(?:\\s\\([^)]*\\))?${right}`;
+  const expressions = people.flatMap((person) => [...new Set(person.names)].sort((left, right) => right.length - left.length).map((name) => {
+      const connector = name.match(/\s(?:von|v\.|de|of)\s/i);
+      if (!connector) return { expression: name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), person };
+      const left = name.slice(0, connector.index).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const right = name.slice(connector.index).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      return { expression: `${left}(?:\\s\\([^)]*\\))?${right}`, person };
+    }));
+  const chunks = [];
+  let chunk = [];
+  let length = 0;
+  expressions.forEach((item) => {
+    if (chunk.length && length + item.expression.length > 12000) {
+      chunks.push(chunk);
+      chunk = [];
+      length = 0;
+    }
+    chunk.push(item);
+    length += item.expression.length;
   });
-  return names.length ? new RegExp(`(?<![\\p{L}\\p{N}])(?:${names.join('|')})(?![\\p{L}\\p{N}])`, 'giu') : null;
+  if (chunk.length) chunks.push(chunk);
+  return chunks.map((items) => ({
+    pattern: new RegExp(`(?<![\\p{L}\\p{N}])(?:${items.map((item) => item.expression).join('|')})(?![\\p{L}\\p{N}])`, 'giu'),
+    people: [...new Set(items.map((item) => item.person))],
+  }));
 }
 
 function markdownMarkup(value = '') {
@@ -796,11 +817,11 @@ function personForName(name) {
 }
 
 function personMentions(person) {
-  const pattern = buildPersonPattern([person]);
+  const patterns = buildPersonPattern([person]);
   const mentions = [];
   state.documents.forEach((doc, path) => (doc.entries || []).forEach((entry, index) => {
     const fields = ['title', 'source', 'german', 'latin', 'english', 'facts'];
-    if (fields.some((field) => (Array.isArray(entry[field]) ? entry[field].join('\n') : String(entry[field] || '')).match(pattern))) {
+    if (fields.some((field) => patterns.some(({ pattern }) => (Array.isArray(entry[field]) ? entry[field].join('\n') : String(entry[field] || '')).match(pattern)))) {
       mentions.push({ doc, path, entry, index });
     }
   }));
@@ -810,7 +831,7 @@ function personMentions(person) {
 function personExcerpt(value, person) {
   const text = String(value || '').replace(/\s+/g, ' ').trim();
   if (!text) return '';
-  const pattern = buildPersonPattern([person]);
+  const pattern = buildPersonPattern([person])[0].pattern;
   const sentences = text.split(/(?<=[.!?。！？])\s+/).filter((sentence) => { pattern.lastIndex = 0; return pattern.test(sentence); });
   let excerpt = sentences.slice(0, 2).join(' ');
   if (!excerpt) excerpt = text;
@@ -845,7 +866,7 @@ function personLanguageMarkup(entry, person) {
 
 function renderPersonPage() {
   const person = personForName(state.person) || state.persons.find((item) => item.name.toLocaleLowerCase() === String(state.person || '').toLocaleLowerCase());
-  if (!person) return `<article class="document"><h2>Person not found</h2><p class="status">No person named “${escapeHtml(state.person || '')}” is listed in data/people.md.</p></article>`;
+  if (!person) return `<article class="document"><h2>Person not found</h2><p class="status">No person matching “${escapeHtml(state.person || '')}” is generated from data/names.md and data/places.md.</p></article>`;
   const mentions = personMentions(person);
   const heading = `<article class="document person-document-heading"><div class="document-heading"><div><h2>${escapeHtml(person.name)}</h2><p class="person-variants">${person.names.map(escapeHtml).join(' · ')}</p></div><small>${mentions.length} mention${mentions.length === 1 ? '' : 's'}</small></div></article>`;
   const content = mentions.map(({ doc, path, entry, index }) => `<article class="document person-mention" role="link" tabindex="0" data-document-href="${escapeHtml(documentNavigationUrl(path, index))}"><p class="entry-title">${markdownLinks(entry.title || documentTitle(doc, path))}</p>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.german || entry.latin || entry.english ? personLanguageMarkup(entry, person) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
