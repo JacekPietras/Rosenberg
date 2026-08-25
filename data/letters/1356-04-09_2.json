@@ -16,17 +16,11 @@
       "img": [
         {
           "src": "letters/02_0002356607_0001_2-2356607-1.jpg",
-          "seals": [
-            {
-              "person": "Engelhard",
-              "position": "0.4008,0.7467",
-              "size": 0.12200000000000003
-            }
-          ]
+          "seals": []
         },
         {
           "src": "letters/02_0002356607_0002_2-2356607-2.jpg",
-          "deleted": "true"
+          "seals": []
         }
       ]
     }

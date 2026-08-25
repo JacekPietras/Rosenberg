@@ -2,9 +2,13 @@
   "date": "1387-06-22",
   "entries": [
     {
-      "source": "Generallandesarchiv Karlsruhe 43 Nr. 5662\n[[Transcription attempt]]",
-      "url": "https://docs.google.com/document/d/1iwJ7AhATIllo7fa1wDLRI_FbO_cjC7iRJED--KkkggI/edit",
-      "german": "Bischof Gerhard von Würzburg gestattet das kirchliche Begräbnis des im Kirchenbann verstorbenen Eberhard von Rosenberg, nachdem dessen Erben sich mit dem Bischof über ihre Ansprüche bezüglich des strittigen Zehnten in Wölchingen verständigt haben.\n\nthe Bishop of Würzburg permitted the church burial of Eberhard von Rosenberg, who had been killed by his enemies, after his heirs had come to an agreement with the bishop about their claims to the disputed tithes at Wölchingen.",
+      "source": "Generallandesarchiv Karlsruhe 43 Nr. 5662",
+      "important": true,
+      "url": [
+        "https://docs.google.com/document/d/1iwJ7AhATIllo7fa1wDLRI_FbO_cjC7iRJED--KkkggI/edit",
+        "http://www.landesarchiv-bw.de/plink/?f=4-1804880"
+      ],
+      "german": "Bischof Gerhard von Würzburg gestattet das kirchliche Begräbnis des im Kirchenbann verstorbenen Eberhard von Rosenberg, nachdem dessen Erben sich mit dem Bischof über ihre Ansprüche bezüglich des strittigen Zehnten in Wölchingen verständigt haben.\n\nDer Bischof von Würzburg erlaubte die kirchliche Beisetzung von Eberhard von Rosenberg, der von seinen Feinden getötet worden war, nachdem seine Erben mit dem Bischof eine Einigung über ihre Ansprüche auf die umstrittenen Zehnten in Wölchingen erzielt hatten.",
       "english": "Bishop Gerhard of Würzburg allows the church burial of Eberhard von Rosenberg, who died under excommunication, after his heirs have reached an agreement with the bishop about their claims regarding the disputed tithe in Wölchingen.\n\nthe Bishop of Würzburg permitted the church burial of Eberhard von Rosenberg, who had been killed by his enemies, after his heirs had come to an agreement with the bishop about their claims to the disputed tithes at Wölchingen.",
       "facts": [
         "Eberhard von Rosenberg died under church ban (Kirchenbann)",
