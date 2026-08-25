@@ -236,15 +236,18 @@ function markdownMarkup(value = '') {
 }
 
 function markdownLinks(value = '') {
-  return inlineMarkup(value);
+  const values = Array.isArray(value) ? value : [value];
+  return values.map((item) => inlineMarkup(item)).join('<br>');
 }
 
 function letterForSource(source) {
   if (!state.manifest?.letters || !source) return null;
-  const sources = [source, ...source.split(/\s*;\s*/)].filter((value, index, values) => value && values.indexOf(value) === index);
+  const sourceValues = Array.isArray(source) ? source : [source];
+  const sources = sourceValues.flatMap((value) => [value, ...String(value).split(/\s*;\s*/)])
+    .filter((value, index, values) => value && values.indexOf(value) === index);
   return sources.reduce((match, citation) => match || state.manifest.letters.reduce((found, path) => {
     if (found) return found;
-    const entry = (state.documents.get(path)?.entries || []).find((item) => item.source === citation);
+    const entry = (state.documents.get(path)?.entries || []).find((item) => Array.isArray(item.source) ? item.source.includes(citation) : item.source === citation);
     return entry ? { path, entry } : null;
   }, null), null);
 }
