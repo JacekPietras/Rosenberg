@@ -18,6 +18,62 @@
         "Four von Rosenberg family members jointly purchased Boxberg from the Johanniter Order",
         "The von Rosenberg purchasers committed to continue paying rents to Würzburg Domstift and Engelhard von Rosenberg",
         "Dietrich Gyer (Ritter) served as surety for the Rosenberg family's Boxberg purchase"
+      ],
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723543%2F04_0001723543_0001_4-1723543-1.jpg",
+          "seals": [
+            {
+              "person": "Konrad",
+              "position": "0.0906,0.8377",
+              "size": 0.09700000000000002
+            },
+            {
+              "person": "Eberhard",
+              "position": "0.1747,0.8684",
+              "size": 0.08700000000000001
+            },
+            {
+              "person": "Arnold",
+              "position": "0.3319,0.8931",
+              "size": 0.08
+            },
+            {
+              "person": "Konrad",
+              "position": "0.2512,0.8965",
+              "size": 0.09100000000000001
+            }
+          ]
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723543%2F04_0001723543_0002_4-1723543-2.jpg",
+          "seals": [
+            {
+              "person": "Konrad",
+              "position": "0.0956,0.8669",
+              "size": 0.08
+            },
+            {
+              "person": "Eberhard",
+              "position": "0.1712,0.8706",
+              "size": 0.08
+            },
+            {
+              "person": "Konrad",
+              "position": "0.2544,0.8856",
+              "size": 0.08
+            },
+            {
+              "person": "Arnold",
+              "position": "0.3193,0.8900",
+              "size": 0.082
+            }
+          ]
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723543%2F04_0001723543_0003_4-1723543-3.jpg",
+          "deleted": "true"
+        }
       ]
     }
   ]
