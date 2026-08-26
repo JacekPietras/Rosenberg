@@ -23,9 +23,12 @@
           "seals": [
             {
               "person": "Engelhard",
-              "position": "0.2237,0.7610",
-              "size": 0.149,
-              "type": "swans"
+              "position": "0.2241,0.7622",
+              "size": 0.147,
+              "type": "swans",
+              "wideningRotation": -50,
+              "width": 0.13,
+              "rotation": -12
             }
           ]
         },
@@ -34,9 +37,12 @@
           "seals": [
             {
               "person": "Konrad",
-              "position": "0.2842,0.7575",
+              "position": "0.2837,0.7594",
               "size": 0.13400000000000004,
-              "type": "swans"
+              "type": "swans",
+              "width": 0.32,
+              "wideningRotation": 25,
+              "rotation": 18
             }
           ]
         }
