@@ -326,6 +326,11 @@ function localImageName(fileName) {
   }
 }
 
+function imageRootForPath(path) {
+  const match = String(path || '').match(/^data\/(books|letters|notes)\//);
+  return match ? `data/${match[1]}` : 'data';
+}
+
 function imageMarkup(value = '', legacySeals = [], context = {}) {
   const imageNodes = Array.isArray(value) ? value : [value];
   const pathParts = location.pathname.split('/').filter(Boolean);
@@ -344,17 +349,19 @@ function imageMarkup(value = '', legacySeals = [], context = {}) {
       const localName = localImageName(fileName);
       const isImage = /\.(?:svg|png|jpe?g|gif|webp)$/i.test(localName);
       if (!isImage) return '';
-      const encodedPath = ['letters', localName].map((part) => encodeURIComponent(part)).join('/');
+      const imagePath = `${imageRootForPath(context.path)}/img/${localName}`;
+      const encodedPath = imagePath.split('/').map((part) => encodeURIComponent(part)).join('/');
       source = location.hostname.endsWith('github.io')
-        ? `https://raw.githubusercontent.com/${owner}/${repository}/main/data/images/${encodedPath}`
-        : `../data/images/${encodedPath}`;
+        ? `https://raw.githubusercontent.com/${owner}/${repository}/main/${encodedPath}`
+        : `../${encodedPath}`;
     } else {
       const parts = fileName.split('/');
       if (fileName.includes('\\') || parts.some((part) => !part || part === '.' || part === '..') || !/\.(?:svg|png|jpe?g|gif|webp)$/i.test(fileName)) return '';
-      const encodedPath = parts.map((part) => encodeURIComponent(part)).join('/');
+      const imagePath = `${imageRootForPath(context.path)}/${fileName}`;
+      const encodedPath = imagePath.split('/').map((part) => encodeURIComponent(part)).join('/');
       source = location.hostname.endsWith('github.io')
-        ? `https://raw.githubusercontent.com/${owner}/${repository}/main/data/images/${encodedPath}`
-        : `../data/images/${encodedPath}`;
+        ? `https://raw.githubusercontent.com/${owner}/${repository}/main/${encodedPath}`
+        : `../${encodedPath}`;
     }
     const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals);
     const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';

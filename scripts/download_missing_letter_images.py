@@ -16,7 +16,7 @@ from urllib.request import Request, build_opener
 
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 LETTER_DIR = REPOSITORY_ROOT / "data" / "letters"
-IMAGE_DIR = REPOSITORY_ROOT / "data" / "images" / "letters"
+IMAGE_DIR = REPOSITORY_ROOT / "data" / "letters" / "img"
 REQUEST_TIMEOUT = 60
 USER_AGENT = "Rosenberg research image cache/1.0"
 IMAGE_SUFFIXES = {".gif", ".jpeg", ".jpg", ".png", ".svg", ".webp"}

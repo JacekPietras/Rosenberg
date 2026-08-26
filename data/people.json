@@ -2,11 +2,17 @@
   {
     "id": "Eberhard_von_Rosenberg",
     "name": "Eberhard von Rosenberg",
-    "titles": [],
-    "wife": null,
-    "children": [],
+    "titles": [
+      "Vogt zu Lauda",
+      "Ritter"
+    ],
+    "wife": "Elisabeth_von_Erligheim",
+    "children": [
+      "Konrad_von_Rosenberg",
+      "Arnold_von_Rosenberg"
+    ],
     "born": null,
-    "died": null
+    "died": "1387"
   },
   {
     "id": "Arnold_von_Rosenberg",
@@ -30,17 +36,17 @@
     "id": "Elisabeth_von_Erligheim",
     "name": "Elisabeth von Erligheim",
     "titles": [],
-    "wife": null,
-    "children": [],
     "born": null,
-    "died": null
+    "died": "1420+"
   },
   {
     "id": "Engelhard_von_Rosenberg",
     "name": "Engelhard von Rosenberg",
     "titles": [],
     "wife": null,
-    "children": [],
+    "children": [
+      "Eberhard_von_Rosenberg"
+    ],
     "born": null,
     "died": null
   }

@@ -23,7 +23,7 @@ USER_AGENT = "Rosenberg research downloader/1.0"
 REQUEST_TIMEOUT = 60
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 LETTER_DIR = REPOSITORY_ROOT / "data" / "letters"
-IMAGE_DIR = REPOSITORY_ROOT / "data" / "images"
+IMAGE_DIR = REPOSITORY_ROOT / "data" / "letters"
 PLINK_RE = re.compile(r"/plink/\?(?:[^#]*&)?f=([^&#]+)", re.I)
 ID_RE = re.compile(r"title=\"Id:\s*(\d+).*?AID:\s*([^\"\s]+)", re.I | re.S)
 HIDDEN_RE = re.compile(
@@ -227,18 +227,18 @@ def main() -> int:
         "--mode",
         choices=("links", "download"),
         default="links",
-        help="store direct archive URLs (default) or download files into data/images/",
+        help="store direct archive URLs (default) or download files into data/letters/",
     )
     parser.add_argument(
         "--image-dir",
-        default="letters",
-        help="subdirectory of data/images/ used with --mode download (default: letters)",
+        default="img",
+        help="subdirectory of data/letters/ used with --mode download (default: img)",
     )
     args = parser.parse_args()
 
     image_dir = (IMAGE_DIR / args.image_dir).resolve()
     if IMAGE_DIR not in image_dir.parents:
-        parser.error("--image-dir must stay inside data/images/")
+        parser.error("--image-dir must stay inside data/letters/")
 
     opener = build_opener()
     try:
