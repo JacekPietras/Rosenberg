@@ -118,8 +118,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .seal-entry-meta small { color: var(--muted); }
 .seal-entry-media .entry-images { margin: 0; }
 .seal-entry-media .entry-image { flex: 0 1 auto; }
-.seal-entry-media .entry-image img { width: auto; height: 20rem; max-width: 100%; object-fit: contain; border-radius: 50%; }
-.seal-entry-media .seal-crop { position: relative; display: block; width: 20rem; max-width: 100%; height: 20rem; box-sizing: border-box; overflow: hidden; border-radius: 50%; background: var(--surface-soft); }
+.seal-entry-media .entry-image img { width: auto; height: 14rem; max-width: 100%; object-fit: contain; border-radius: 50%; }
+.seal-entry-media .seal-crop { position: relative; display: block; width: 14rem; max-width: 100%; height: 14rem; box-sizing: border-box; overflow: hidden; border-radius: 50%; background: var(--surface-soft); }
 .seal-entry-media .seal-crop img { position: absolute; max-width: none; max-height: none; object-fit: initial; border-radius: 0; }
 .place-link { color: #f0a35b; text-decoration: underline; text-decoration-color: color-mix(in srgb, #f0a35b 55%, transparent); text-underline-offset: .14em; }
 .text .place-link, .source .place-link, .entry-title .place-link { color: #f0a35b; }
