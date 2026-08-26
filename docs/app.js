@@ -426,7 +426,6 @@ function setupImageLightbox() {
   const editable = !location.hostname.endsWith('github.io');
   let editingContext = null;
   let selectedIndex = null;
-  let saveTimer = null;
   let drag = null;
   let magnifierPoint = null;
   const SEAL_SIZE_STEP = 0.002;
@@ -503,7 +502,6 @@ function setupImageLightbox() {
     const seal = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
     if (!seal) return;
     seal.person = sealPreviewName.value;
-    queueSave();
   });
   const updateEditorControls = () => {
     const selected = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
@@ -526,14 +524,12 @@ function setupImageLightbox() {
     if (!seal) return;
     seal[property] = Number(value);
     renderLightboxSeals();
-    queueSave();
   };
   const resizeSeal = (index, amount) => {
     const seal = currentSeals()[index];
     if (!seal) return;
     seal.size = Math.max(0.01, Math.min(0.5, Number(seal.size) + amount));
     renderLightboxSeals();
-    queueSave();
   };
   const renderLightboxSeals = () => {
     const seals = currentSeals();
@@ -574,14 +570,12 @@ function setupImageLightbox() {
       return false;
     }
   };
-  const queueSave = () => {
-    window.clearTimeout(saveTimer);
-    saveTimer = window.setTimeout(saveDocument, 100);
-  };
-  const closeLightbox = async () => {
-    window.clearTimeout(saveTimer);
-    if (editingContext && !await saveDocument()) return;
+  const closeLightbox = () => {
     lightbox.close();
+  };
+  const saveAndCloseLightbox = async () => {
+    if (editingContext && !await saveDocument()) return;
+    closeLightbox();
   };
   const imagePoint = (event) => {
     const rect = lightboxAnnotations.getBoundingClientRect();
@@ -639,7 +633,7 @@ function setupImageLightbox() {
   });
   window.addEventListener('resize', updateLightboxAnnotations, { passive: true });
   window.addEventListener('resize', updateSealPreview, { passive: true });
-  closeButton.addEventListener('click', closeLightbox);
+  closeButton.addEventListener('click', saveAndCloseLightbox);
   sealWidthControl?.addEventListener('input', () => updateSelectedModifier('width', sealWidthControl.value));
   sealWideningRotationControl?.addEventListener('input', () => updateSelectedModifier('wideningRotation', sealWideningRotationControl.value));
   sealRotationControl?.addEventListener('input', () => updateSelectedModifier('rotation', sealRotationControl.value));
@@ -669,8 +663,8 @@ function setupImageLightbox() {
     }
     updateSealPreview();
   });
-  lightboxAnnotations.addEventListener('pointerup', () => { if (drag) queueSave(); drag = null; });
-  lightboxStage.addEventListener('click', (event) => {
+  lightboxAnnotations.addEventListener('pointerup', () => { drag = null; });
+  lightboxStage.addEventListener('click', async (event) => {
     if (!editingContext) return;
     const marker = event.target.closest?.('.seal-marker');
     if (marker) {
@@ -679,11 +673,9 @@ function setupImageLightbox() {
       renderLightboxSeals();
       return;
     }
-    if (selectedIndex !== null) {
-      selectedIndex = null;
-      renderLightboxSeals();
-      queueSave();
-    }
+    selectedIndex = null;
+    renderLightboxSeals();
+    await saveDocument();
   });
   lightboxStage.addEventListener('pointermove', (event) => {
     if (!editingContext || selectedIndex !== null) return;
@@ -735,7 +727,6 @@ function setupImageLightbox() {
     editingContext.node.seals.push({ person: person.trim(), position: '0.5,0.5', size: 0.08, width: 0, wideningRotation: 0, rotation: 0 });
     selectedIndex = editingContext.node.seals.length - 1;
     renderLightboxSeals();
-    queueSave();
   });
   removeImageButton?.addEventListener('click', async () => {
     if (!editingContext || !window.confirm('Remove this image from the document?')) return;
@@ -758,7 +749,6 @@ function setupImageLightbox() {
     currentSeals().splice(selectedIndex, 1);
     selectedIndex = null;
     renderLightboxSeals();
-    queueSave();
   });
   lightbox.addEventListener('click', (event) => {
     if (event.target === lightbox) closeLightbox();

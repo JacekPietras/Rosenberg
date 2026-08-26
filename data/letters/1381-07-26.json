@@ -36,7 +36,8 @@
             {
               "person": "Arnold",
               "position": "0.3319,0.8931",
-              "size": 0.072
+              "size": 0.072,
+              "rotation": -47
             },
             {
               "person": "Konrad",
@@ -65,11 +66,11 @@
             },
             {
               "person": "Arnold",
-              "position": "0.3175,0.8894",
-              "size": 0.072,
-              "wideningRotation": 37,
-              "rotation": -47,
-              "width": 0.26
+              "position": "0.3175,0.8919",
+              "size": 0.07399999999999998,
+              "wideningRotation": 19,
+              "rotation": -44,
+              "width": 0.28
             }
           ]
         },
