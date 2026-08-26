@@ -20,15 +20,21 @@
           "seals": [
             {
               "person": "Eberhard",
-              "position": "0.2520,0.8860",
-              "size": 0.11400000000000003,
-              "type": "full"
+              "position": "0.2532,0.8829",
+              "size": 0.10800000000000001,
+              "type": "full",
+              "width": 0.17,
+              "wideningRotation": -23,
+              "rotation": -27
             },
             {
-              "person": "Arnold+Hans",
-              "position": "0.4798,0.8201",
-              "size": 0.13000000000000003,
-              "type": "full"
+              "person": "Arnold/Hans",
+              "position": "0.4567,0.8157",
+              "size": 0.07799999999999999,
+              "type": "full",
+              "width": 0.33,
+              "wideningRotation": 52,
+              "rotation": 24
             }
           ]
         },

@@ -30,16 +30,21 @@
               "wideningRotation": -35
             },
             {
-              "person": "Thomas?",
-              "position": "0.5929,0.7444",
-              "size": 0.08,
-              "type": "full"
+              "person": "Thomas",
+              "position": "0.5959,0.7444",
+              "size": 0.06399999999999999,
+              "type": "full",
+              "width": 0.16,
+              "wideningRotation": 31
             },
             {
-              "person": "Hans?",
-              "position": "0.4161,0.7646",
-              "size": 0.08,
-              "type": "full"
+              "person": "Hans",
+              "position": "0.4176,0.7682",
+              "size": 0.06599999999999999,
+              "type": "full",
+              "width": 0.36,
+              "wideningRotation": 19,
+              "rotation": -12
             },
             {
               "person": "Reinhard von Uissigheim?",

@@ -199,7 +199,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .annotated-image { position: relative; display: inline-block; max-width: 100%; overflow: visible; }
 .annotated-image > a { display: block; }
 .seal-marker { position: absolute; z-index: 1; display: block; width: var(--seal-diameter, 0px); height: var(--seal-diameter, 0px); transform: translate(-50%, -50%); pointer-events: none; }
-.seal-marker::before { position: absolute; inset: 0; border: 2px solid #d9485f; border-radius: 50%; content: ''; transform: rotate(var(--seal-rotation, 0deg)) rotate(calc(-1 * var(--seal-widening-rotation, 0deg))) scaleX(calc(1 + var(--seal-width, 0))) rotate(var(--seal-widening-rotation, 0deg)); pointer-events: none; }
+.seal-marker::before { position: absolute; inset: 0; border: 2px solid #d9485f; border-radius: 50%; content: ''; pointer-events: none; }
 .image-lightbox.is-editable .image-lightbox-annotations { pointer-events: auto; }
 .image-lightbox.is-editable .seal-marker { pointer-events: auto; cursor: move; }
 .image-lightbox.is-editable .seal-marker.selected::before { border-color: #ffd166; }

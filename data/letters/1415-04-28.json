@@ -45,15 +45,21 @@
             },
             {
               "person": "Thomas",
-              "position": "0.3901,0.7609",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.3905,0.7540",
+              "size": 0.06399999999999999,
+              "type": "full",
+              "width": 0.4,
+              "wideningRotation": -17,
+              "rotation": 15
             },
             {
               "person": "Hans",
-              "position": "0.4966,0.7830",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.4952,0.7799",
+              "size": 0.072,
+              "type": "full",
+              "width": 0.5,
+              "wideningRotation": 139,
+              "rotation": -9
             },
             {
               "person": "Ulrich",

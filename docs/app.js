@@ -38,6 +38,17 @@ function savePreferences() {
 
 const preferences = loadPreferences();
 const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
+
+function clearScreenCaches() {
+  state.letter = null;
+  state.letterLabels = [];
+  state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
+  state.sealNames = [];
+  state.sealType = null;
+  state.lastRenderedLettersYear = null;
+}
+
 const $ = (selector) => document.querySelector(selector);
 const REFRESH_INTERVAL = 30000;
 
@@ -48,6 +59,8 @@ if (navigation.get('document')) state.active = navigation.get('document');
 if (navigation.get('letter')) state.letter = navigation.get('letter');
 if (navigation.get('place')) { state.place = navigation.get('place'); state.person = null; }
 if (navigation.get('person')) { state.person = navigation.get('person'); state.place = null; }
+const requestedScreen = navigation.get('tab') || navigation.get('document');
+if (requestedScreen && requestedScreen !== preferences.active) clearScreenCaches();
 
 function applyTheme() {
   document.documentElement.dataset.theme = state.darkMode ? 'dark' : 'light';
@@ -1205,7 +1218,16 @@ function renderPersonPage() {
 function renderTabs() {
   const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, { path: 'seals', label: 'Seals' }];
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
-  document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; state.place = null; state.person = null; savePreferences(); renderTabs(); renderActive(); }));
+  document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => {
+    const nextActive = button.dataset.path;
+    if (nextActive !== state.active) clearScreenCaches();
+    state.active = nextActive;
+    state.place = null;
+    state.person = null;
+    savePreferences();
+    renderTabs();
+    renderActive();
+  }));
 }
 
 function languageMarkup(entry) {
@@ -1249,8 +1271,6 @@ function renderDocument(doc, path, index) {
   const dimmed = ['hessen', 'schenk', 'mönch'].includes(label.toLocaleLowerCase()) ? ' dimmed' : '';
   return `<article class="document${important}${dimmed}"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
 }
-
-const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
 
 function letterLabelForPath(path) {
   return String(state.documents.get(path)?.label || '').trim().toLocaleLowerCase();

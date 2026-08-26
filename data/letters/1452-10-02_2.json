@@ -22,14 +22,27 @@
           "seals": [
             {
               "person": "Jörg",
-              "position": "0.7302,0.7230",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.7297,0.7249",
+              "size": 0.076,
+              "type": "full",
+              "rotation": 15,
+              "width": 0.08,
+              "wideningRotation": 133
             },
             {
               "person": "Thomas",
               "position": "0.5133,0.7123",
               "size": 0.088,
+              "type": "full",
+              "rotation": 18
+            },
+            {
+              "person": "Eberhard",
+              "position": "0.2575,0.7389",
+              "size": 0.09000000000000001,
+              "width": 0.07,
+              "wideningRotation": -2,
+              "rotation": 36,
               "type": "full"
             }
           ]
