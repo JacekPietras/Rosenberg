@@ -24,7 +24,12 @@ data/
       "title": "Section or source title",
       "german": "Original German text",
       "english": "English translation",
-      "facts": ["An explicit, atomic historical fact"],
+      "facts": [
+        {
+          "date": "1399-02-01",
+          "text": "An explicit, atomic historical fact"
+        }
+      ],
       "diagram": "Optional diagram data"
     }
   ]
@@ -73,6 +78,8 @@ Each seal may have one `type`: `contrepalle`, `swans`, `helm`, or `full`. It can
 ## Working with the data
 
 To update a document, edit its JSON directly and preserve valid JSON, the existing source text, and the translation. Extract facts only from the document itself. Keep facts concise, atomic, explicit, and in English, while preserving historically meaningful German titles, names, and place names.
+
+Book facts are objects with a `date` and `text` field. The `date` must use ISO precision (`YYYY`, `YYYY-MM`, or `YYYY-MM-DD`) supported by the source; never invent missing date components. Letter facts remain strings as shown in the Letter JSON format above.
 
 Use `data/names.md` and `data/places.md` when a spelling needs to be recognized or normalized. Do not merge people merely because their names are similar. In particular, do not conflate Münch von Rosenberg with the primary von Rosenberg family.
 

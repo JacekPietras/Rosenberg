@@ -39,6 +39,16 @@ function savePreferences() {
 const preferences = loadPreferences();
 const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
+const MISSING_LETTER_LABEL = 'missing';
+
+function hasSource(source) {
+  if (Array.isArray(source)) return source.some(hasSource);
+  return typeof source === 'string' ? source.trim().length > 0 : source !== null && source !== undefined;
+}
+
+function letterHasMissingSourceOrUrl(path) {
+  return (state.documents.get(path)?.entries || []).some((entry) => !hasSource(entry.source) || !hasSource(entry.url));
+}
 
 function clearScreenCaches() {
   state.letter = null;
@@ -1281,8 +1291,9 @@ function visibleLetterPaths(paths) {
   const hidden = new Set(state.hiddenLetterLabels || []);
   return paths.filter((path) => {
     const label = letterLabelForPath(path);
-    if (hidden.has(label)) return false;
-    return !selected.size || selected.has(label);
+    const missing = selected.has(MISSING_LETTER_LABEL) && letterHasMissingSourceOrUrl(path);
+    if (hidden.has(label) && !missing) return false;
+    return !selected.size || selected.has(label) || missing;
   });
 }
 
@@ -1298,6 +1309,8 @@ function renderYearSidebar(paths, labelPaths = paths) {
     const label = String(state.documents.get(path)?.label || '').trim();
     if (label && !labels.has(label.toLocaleLowerCase())) labels.set(label.toLocaleLowerCase(), { label, path });
   });
+  const missingPath = labelPaths.find((path) => letterHasMissingSourceOrUrl(path));
+  if (missingPath && !labels.has(MISSING_LETTER_LABEL)) labels.set(MISSING_LETTER_LABEL, { label: MISSING_LETTER_LABEL, path: missingPath });
   const labelLinks = [...labels.values()]
     .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
     .map(({ label, path }) => {
@@ -1352,7 +1365,7 @@ function setupYearHighlight(paths) {
     links.forEach((link) => {
       const active = link.dataset.sidebarType === 'year'
         ? link.textContent === year
-        : link.dataset.label === currentLabel;
+        : link.dataset.label === currentLabel || (link.dataset.label === MISSING_LETTER_LABEL && letterHasMissingSourceOrUrl(current.path));
       link.classList.toggle('active', active);
       if (active) link.setAttribute('aria-current', 'true');
       else link.removeAttribute('aria-current');
@@ -1457,6 +1470,7 @@ async function loadAll() {
     letters: letterPaths,
   };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
+  if (!letterPaths.some((path) => letterHasMissingSourceOrUrl(path))) state.letterLabels = state.letterLabels.filter((label) => label !== MISSING_LETTER_LABEL);
   if (!Array.isArray(state.hiddenLetterLabels)) state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
   state.sealNames = [...new Set(state.sealNames.map(normalizeSealFilter).filter(Boolean))];
   if (state.active !== 'letters' && state.active !== 'seals' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
