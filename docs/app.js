@@ -1470,7 +1470,7 @@ async function loadAll() {
   const snapshot = JSON.stringify(files);
   const [placesText, peopleText, namesText, documents] = await Promise.all([
     getText('data/places.md'),
-    getText('data/people.md'),
+    getText('data/people.json'),
     getText('data/names.md'),
     new Map(await Promise.all(paths.map(async (path) => [path, await getJson(path)]))),
   ]);
