@@ -24,17 +24,20 @@
             {
               "person": "Arnolf von Uissigheim",
               "position": "0.2586,0.6530",
-              "size": 0.11899999999999997
+              "size": 0.11899999999999997,
+              "type": "helm"
             },
             {
               "person": "Eberhard von Uissigheim",
               "position": "0.3963,0.6590",
-              "size": 0.10899999999999996
+              "size": 0.10899999999999996,
+              "type": "swans"
             },
             {
               "person": "Eberhard",
               "position": "0.6022,0.6578",
-              "size": 0.09199999999999994
+              "size": 0.09199999999999994,
+              "type": "helm"
             }
           ]
         },

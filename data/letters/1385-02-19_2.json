@@ -19,8 +19,9 @@
           "seals": [
             {
               "person": "Eberhard Elder",
-              "position": "0.2720,0.7946",
-              "size": 0.10899999999999996
+              "position": "0.2716,0.7946",
+              "size": 0.10899999999999996,
+              "type": "helm"
             }
           ]
         },

@@ -24,17 +24,20 @@
             {
               "person": "Eberhard",
               "position": "0.2310,0.6744",
-              "size": 0.08
+              "size": 0.08,
+              "type": "full"
             },
             {
               "person": "?",
               "position": "0.6520,0.6981",
-              "size": 0.08
+              "size": 0.08,
+              "type": "full"
             },
             {
               "person": "?",
               "position": "0.4298,0.6934",
-              "size": 0.08
+              "size": 0.08,
+              "type": "full"
             }
           ]
         },

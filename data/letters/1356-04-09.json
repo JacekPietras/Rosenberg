@@ -24,7 +24,8 @@
             {
               "person": "Engelhard",
               "position": "0.2237,0.7610",
-              "size": 0.149
+              "size": 0.149,
+              "type": "swans"
             }
           ]
         },
@@ -34,7 +35,8 @@
             {
               "person": "Konrad",
               "position": "0.2842,0.7575",
-              "size": 0.13400000000000004
+              "size": 0.13400000000000004,
+              "type": "swans"
             }
           ]
         }

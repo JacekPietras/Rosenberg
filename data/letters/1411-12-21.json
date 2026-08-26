@@ -19,12 +19,8 @@
             {
               "person": "Engelhard",
               "position": "0.4037,0.7230",
-              "size": 0.15400000000000005
-            },
-            {
-              "person": "Else von Bebenburg",
-              "position": "0.5385,0.8156",
-              "size": 0.15200000000000005
+              "size": 0.15400000000000005,
+              "type": "swans"
             }
           ]
         },

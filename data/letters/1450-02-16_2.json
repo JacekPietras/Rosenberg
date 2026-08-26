@@ -20,12 +20,14 @@
             {
               "person": "Eberhard",
               "position": "0.3523,0.8736",
-              "size": 0.101
+              "size": 0.101,
+              "type": "full"
             },
             {
               "person": "Thomas",
               "position": "0.4989,0.8737",
-              "size": 0.102
+              "size": 0.102,
+              "type": "helm"
             }
           ]
         },

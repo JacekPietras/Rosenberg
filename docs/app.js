@@ -18,25 +18,26 @@ function loadPreferences() {
       letterLabels: Array.isArray(preferences.letterLabels) ? preferences.letterLabels : [],
       hiddenLetterLabels: Array.isArray(preferences.hiddenLetterLabels) ? preferences.hiddenLetterLabels : null,
       sealNames: Array.isArray(preferences.sealNames) ? preferences.sealNames : [],
+      sealType: ['contrepalle', 'swans', 'helm', 'full', 'unknown'].includes(preferences.sealType) ? preferences.sealType : null,
       language: normalizeDisplayMode(preferences.language),
       showFacts: preferences.showFacts !== false,
       darkMode: preferences.darkMode !== false,
     };
   } catch {
-    return { active: null, place: null, person: null, letter: null, letterLabels: [], hiddenLetterLabels: null, sealNames: [], language: 'english', showFacts: true, darkMode: true };
+    return { active: null, place: null, person: null, letter: null, letterLabels: [], hiddenLetterLabels: null, sealNames: [], sealType: null, language: 'english', showFacts: true, darkMode: true };
   }
 }
 
 function savePreferences() {
   try {
-    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, place: state.place, person: state.person, letter: state.letter, letterLabels: state.letterLabels, hiddenLetterLabels: state.hiddenLetterLabels, sealNames: state.sealNames, language: state.language, showFacts: state.showFacts, darkMode: state.darkMode }));
+    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, place: state.place, person: state.person, letter: state.letter, letterLabels: state.letterLabels, hiddenLetterLabels: state.hiddenLetterLabels, sealNames: state.sealNames, sealType: state.sealType, language: state.language, showFacts: state.showFacts, darkMode: state.darkMode }));
   } catch {
     // Preferences are optional; rendering should continue if storage is unavailable.
   }
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const $ = (selector) => document.querySelector(selector);
 const REFRESH_INTERVAL = 30000;
 
@@ -418,9 +419,11 @@ function setupImageLightbox() {
   const addSealButton = $('#image-lightbox-add-seal');
   const removeImageButton = $('#image-lightbox-remove-image');
   const removeSealButton = $('#image-lightbox-remove-seal');
+  const selectedSealControls = $('#image-lightbox-seal-selected-controls');
   const sealWidthControl = $('#image-lightbox-seal-width');
   const sealWideningRotationControl = $('#image-lightbox-seal-widening-rotation');
   const sealRotationControl = $('#image-lightbox-seal-rotation');
+  const sealTypeControls = [...document.querySelectorAll('input[name="image-lightbox-seal-type"]')];
   const saveStatus = $('#image-lightbox-save-status');
   if (!lightbox || !lightboxImage || !lightboxStage || !lightboxAnnotations || !closeButton) return;
   const editable = !location.hostname.endsWith('github.io');
@@ -505,6 +508,7 @@ function setupImageLightbox() {
   });
   const updateEditorControls = () => {
     const selected = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
+    if (selectedSealControls) selectedSealControls.hidden = !selected;
     if (removeSealButton) removeSealButton.hidden = !selected;
     if (sealWidthControl) {
       sealWidthControl.disabled = !selected;
@@ -518,6 +522,10 @@ function setupImageLightbox() {
       sealWideningRotationControl.disabled = !selected;
       sealWideningRotationControl.value = String(Number(selected?.wideningRotation) || 0);
     }
+    sealTypeControls.forEach((control) => {
+      control.disabled = !selected;
+      control.checked = Boolean(selected && sealTypeForSeal(selected) === control.value);
+    });
   };
   const updateSelectedModifier = (property, value) => {
     const seal = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
@@ -616,7 +624,9 @@ function setupImageLightbox() {
       node = entry && (Array.isArray(entry.img) ? entry.img[imageIndex] : entry.img);
     }
     editingContext = editable && entry && node && typeof node === 'object' ? { path, node, entryIndex, imageIndex } : null;
-    if (editingContext && !Array.isArray(node.seals)) node.seals = [];
+    if (editingContext) {
+      if (!Array.isArray(node.seals)) node.seals = [];
+    }
     selectedIndex = null;
     lightbox.classList.toggle('is-editable', Boolean(editingContext));
     renderLightboxSeals();
@@ -637,6 +647,12 @@ function setupImageLightbox() {
   sealWidthControl?.addEventListener('input', () => updateSelectedModifier('width', sealWidthControl.value));
   sealWideningRotationControl?.addEventListener('input', () => updateSelectedModifier('wideningRotation', sealWideningRotationControl.value));
   sealRotationControl?.addEventListener('input', () => updateSelectedModifier('rotation', sealRotationControl.value));
+  sealTypeControls.forEach((control) => {
+    control.addEventListener('change', () => {
+      const seal = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
+      if (seal && control.checked) seal.type = control.value;
+    });
+  });
   lightboxAnnotations.addEventListener('pointerdown', (event) => {
     if (!editingContext) return;
     const marker = event.target.closest('.seal-marker');
@@ -724,7 +740,7 @@ function setupImageLightbox() {
     if (!editingContext) return;
     const person = window.prompt('Person shown by this seal:');
     if (!person?.trim()) return;
-    editingContext.node.seals.push({ person: person.trim(), position: '0.5,0.5', size: 0.08, width: 0, wideningRotation: 0, rotation: 0 });
+    editingContext.node.seals.push({ person: person.trim(), position: '0.5,0.5', size: 0.08, width: 0, wideningRotation: 0, rotation: 0, type: 'full' });
     selectedIndex = editingContext.node.seals.length - 1;
     renderLightboxSeals();
   });
@@ -833,6 +849,13 @@ function sealSortYear(entry) {
   return years?.length ? Math.min(...years.map(Number)) : Infinity;
 }
 
+const SEAL_TYPES = new Set(['contrepalle', 'swans', 'helm', 'full']);
+
+function sealTypeForSeal(seal) {
+  if (SEAL_TYPES.has(seal?.type)) return seal.type;
+  return null;
+}
+
 function letterSealEntries() {
   const sealEntries = [];
   state.manifest.letters.forEach((path) => {
@@ -862,12 +885,36 @@ function letterSealEntries() {
             sourcePath: path,
             sourceIndex: entryIndex,
             sourceImageIndex: imageIndex,
+            type: sealTypeForSeal(seal),
           });
         });
       });
     });
   });
   return sealEntries;
+}
+
+const sealTypeFilters = [
+  ['contrepalle', 'contrepalle'],
+  ['swans', 'swans'],
+  ['helm', 'helm'],
+  ['full', 'full'],
+  ['unknown', 'unknown'],
+];
+
+function sealMatchesType(entry, selected) {
+  return !selected || (selected === 'unknown' ? !entry.type : entry.type === selected);
+}
+
+function sealTypeYearSpan(entries, type) {
+  const years = entries
+    .filter((entry) => entry.type === type)
+    .flatMap((entry) => String(entry.date || '').match(/\d{4}/g) || [])
+    .map(Number);
+  if (!years.length) return '';
+  const first = Math.min(...years);
+  const last = Math.max(...years);
+  return first === last ? String(first) : `${first}-${last}`;
 }
 
 function normalizeSealFilter(value) {
@@ -919,13 +966,22 @@ function renderSealSidebar(entries) {
       return `<a href="#" class="${state.sealNames.includes(key) ? 'selected' : ''}" data-seal-name="${escapeHtml(key)}">${escapeHtml(label)}</a>`;
     })
     .join('');
-  return links ? `<aside class="seal-sidebar" aria-label="Seals by name"><nav>${links}</nav></aside>` : '';
+  const hasUnknownTypes = entries.some((entry) => !entry.type);
+  const typeLinks = sealTypeFilters.filter(([type]) => type !== 'unknown' || hasUnknownTypes).map(([type, label]) => {
+    const detail = type === 'unknown'
+      ? `(${entries.filter((entry) => !entry.type).length})`
+      : sealTypeYearSpan(entries, type);
+    return `<a href="#" class="${state.sealType === type ? 'selected' : ''}" data-seal-type="${type}"><span>${label}</span>${detail ? `<small>${detail}</small>` : ''}</a>`;
+  }).join('');
+  const nameSidebar = links ? `<aside class="seal-sidebar seal-name-sidebar" aria-label="Seals by name"><nav>${links}</nav></aside>` : '';
+  const typeSidebar = typeLinks ? `<aside class="seal-sidebar seal-type-sidebar" aria-label="Seals by type"><nav>${typeLinks}</nav></aside>` : '';
+  return `${nameSidebar}${typeSidebar}`;
 }
 
 function renderSealsPage() {
   const allEntries = letterSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
   const selected = new Set(state.sealNames);
-  const entries = selected.size ? allEntries.filter((entry) => sealMatchesSelected(entry.title, selected)) : allEntries;
+  const entries = allEntries.filter((entry) => (!selected.size || sealMatchesSelected(entry.title, selected)) && sealMatchesType(entry, state.sealType));
   const content = entries.map((entry, index) => {
     const titleMarkup = entry.title ? `<h3>${escapeHtml(entry.title)}</h3>` : '';
     const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
@@ -935,7 +991,7 @@ function renderSealsPage() {
     return `<article class="entry seal-entry" id="seal-${index}"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img, entry.seals, imageContext)}</div></article>`;
   }).join('');
   if (!allEntries.length) return '<article class="document"><h2>Seals</h2><p class="status">No named seals are recorded in the letter images.</p></article>';
-  if (!entries.length) return `<div class="seals-layout">${renderSealSidebar(allEntries)}<article class="document seals-document"><p class="status">No seals match the selected names.</p></article></div>`;
+  if (!entries.length) return `<div class="seals-layout">${renderSealSidebar(allEntries)}<article class="document seals-document"><p class="status">No seals match the selected filters.</p></article></div>`;
   return `<div class="seals-layout">${renderSealSidebar(allEntries)}<article class="document seals-document">${content}</article></div>`;
 }
 
@@ -943,14 +999,19 @@ function setupSealHighlight(entries) {
   state.sealHighlightCleanup?.();
   state.sealHighlightCleanup = null;
   const links = [...document.querySelectorAll('.seal-sidebar a')];
+  const nameLinks = links.filter((link) => link.dataset.sealName);
   const targets = entries.map((_, index) => document.querySelector(`#seal-${index}`)).filter(Boolean);
   if (!links.length || !targets.length) return;
   links.forEach((link) => link.addEventListener('click', (event) => {
     event.preventDefault();
-    const name = link.dataset.sealName;
-    const index = state.sealNames.indexOf(name);
-    if (index >= 0) state.sealNames.splice(index, 1);
-    else state.sealNames.push(name);
+    if (link.dataset.sealType) {
+      state.sealType = state.sealType === link.dataset.sealType ? null : link.dataset.sealType;
+    } else {
+      const name = link.dataset.sealName;
+      const index = state.sealNames.indexOf(name);
+      if (index >= 0) state.sealNames.splice(index, 1);
+      else state.sealNames.push(name);
+    }
     savePreferences();
     renderActive();
   }));
@@ -962,7 +1023,7 @@ function setupSealHighlight(entries) {
     });
     const currentTitle = entries[current]?.title?.trim() || '';
     const name = currentTitle.includes('?') ? 'unknown' : currentTitle.toLocaleLowerCase();
-    links.forEach((link) => {
+    nameLinks.forEach((link) => {
       const active = link.dataset.sealName === name;
       link.classList.toggle('active', active);
       if (active) link.setAttribute('aria-current', 'true');
@@ -1301,7 +1362,7 @@ async function renderActive() {
     $('#content').innerHTML = renderSealsPage();
     const allEntries = letterSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
     const selectedNames = new Set(state.sealNames);
-    const entries = selectedNames.size ? allEntries.filter((entry) => sealMatchesSelected(entry.title, selectedNames)) : allEntries;
+    const entries = allEntries.filter((entry) => (!selectedNames.size || sealMatchesSelected(entry.title, selectedNames)) && sealMatchesType(entry, state.sealType));
     setupSealHighlight(entries);
     setupSealAnnotations();
     return;

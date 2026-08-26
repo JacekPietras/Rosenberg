@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0d0f11">
   <link rel="icon" type="image/svg+xml" href="assets/von-rosenberg.svg">
   <title>Rosenberg sources</title>
-  <link rel="stylesheet" href="styles.css?v=34">
+  <link rel="stylesheet" href="styles.css?v=36">
 </head>
 <body>
   <header class="site-header">
@@ -37,9 +37,18 @@
       <button id="image-lightbox-add-seal" type="button">Add seal</button>
       <button id="image-lightbox-remove-image" type="button">Remove image</button>
       <button id="image-lightbox-remove-seal" type="button" hidden>Remove selected</button>
-      <label>Width <input id="image-lightbox-seal-width" type="range" min="0" max="1" step="0.01" value="0" disabled></label>
-      <label>Widening rotation <input id="image-lightbox-seal-widening-rotation" type="range" min="-180" max="180" step="1" value="0" disabled></label>
-      <label>Rotation <input id="image-lightbox-seal-rotation" type="range" min="-180" max="180" step="1" value="0" disabled></label>
+      <span id="image-lightbox-seal-selected-controls" hidden>
+        <label>Width <input id="image-lightbox-seal-width" type="range" min="0" max="1" step="0.01" value="0" disabled></label>
+        <label>Widening rotation <input id="image-lightbox-seal-widening-rotation" type="range" min="-180" max="180" step="1" value="0" disabled></label>
+        <label>Rotation <input id="image-lightbox-seal-rotation" type="range" min="-180" max="180" step="1" value="0" disabled></label>
+        <fieldset class="image-lightbox-seal-type" aria-label="Seal type">
+          <legend>Type</legend>
+          <label><input name="image-lightbox-seal-type" value="contrepalle" type="radio" disabled> contrepalle</label>
+          <label><input name="image-lightbox-seal-type" value="swans" type="radio" disabled> swans</label>
+          <label><input name="image-lightbox-seal-type" value="helm" type="radio" disabled> helm</label>
+          <label><input name="image-lightbox-seal-type" value="full" type="radio" disabled> full</label>
+        </fieldset>
+      </span>
       <span id="image-lightbox-save-status" role="status"></span>
     </div>
     <div id="image-lightbox-stage" class="image-lightbox-stage">
@@ -53,6 +62,6 @@
   </dialog>
 
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
-  <script src="app.js?v=35"></script>
+  <script src="app.js?v=36"></script>
 </body>
 </html>

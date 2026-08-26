@@ -24,17 +24,20 @@
             {
               "person": "Friedrich",
               "position": "0.4791,0.7693",
-              "size": 0.088
+              "size": 0.088,
+              "type": "full"
             },
             {
               "person": "Arnold",
               "position": "0.2753,0.7479",
-              "size": 0.08
+              "size": 0.08,
+              "type": "full"
             },
             {
               "person": "Michael",
               "position": "0.6814,0.7740",
-              "size": 0.085
+              "size": 0.085,
+              "type": "full"
             }
           ]
         },

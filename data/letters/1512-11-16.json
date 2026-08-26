@@ -19,17 +19,20 @@
             {
               "person": "Arnold?",
               "position": "0.1495,0.9140",
-              "size": 0.08
+              "size": 0.08,
+              "type": "full"
             },
             {
               "person": "Arnold?",
               "position": "0.2390,0.9228",
-              "size": 0.04399999999999997
+              "size": 0.04399999999999997,
+              "type": "full"
             },
             {
               "person": "Arnold?",
               "position": "0.3184,0.8820",
-              "size": 0.08
+              "size": 0.08,
+              "type": "full"
             }
           ]
         },

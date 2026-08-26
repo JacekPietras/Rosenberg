@@ -52,7 +52,8 @@ data/
             {
               "person": "Eberhard",
               "position": "0.3,0.8",
-              "size": 0.05
+              "size": 0.05,
+              "type": "full"
             }
           ]
         },
@@ -66,6 +67,8 @@ data/
 The optional letter-level `label` is displayed as a red badge in the upper-right of the letter heading. The special label `"important"` gives the letter a reddish background; `"Hessen"`, `"Schenk"`, and `"Mönch"` give it a dimmed background.
 
 Each `img` item is an image node with a `src` URL and an optional `seals` array for annotations on that image. Removed images remain in the JSON with `"deleted": "true"`; the viewer hides them and image import treats their `src` as already known. `position` is the comma-separated normalized center (`x,y`, both from 0 to 1), and `size` is the seal diameter as a fraction of the image height. Optional `width` is a normalized widening modifier from `0` (unchanged) to `1` (maximum widening), `wideningRotation` sets the direction of that widening, and optional `rotation` applies the seal’s second, final rotation. The crop window remains circular and unchanged. The viewer draws the seal and the person’s name beside it. Use an empty array when an image has no recorded seal annotations, or omit the field until annotations are available.
+
+Each seal may have one `type`: `contrepalle`, `swans`, `helm`, or `full`. It can be edited with the local lightbox editor, and the Seals tab can filter by one type at a time. The Seals tab’s `unknown` filter shows seals whose type is not filled; `unknown` is not an editable type.
 
 ## Working with the data
 

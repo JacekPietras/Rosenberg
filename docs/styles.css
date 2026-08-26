@@ -106,11 +106,13 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .document.dimmed .letter-label { background: #68727d; }
 .document-url { margin: .45rem 0 0; overflow-wrap: anywhere; font-size: .78rem; }
 .document-url a, .text a { color: var(--accent); }
-.seals-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(5.5rem, 7rem); gap: .85rem; align-items: start; }
+.seals-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(5.5rem, 7rem) minmax(5.5rem, 7rem); gap: .85rem; align-items: start; }
 .seals-document { grid-column: 1; grid-row: 1; }
 .seal-sidebar { position: sticky; top: 5.5rem; grid-column: 2; grid-row: 1; padding: 1.1rem 0; font-size: .82rem; }
+.seal-type-sidebar { grid-column: 3; }
 .seal-sidebar nav { display: grid; gap: .2rem; max-height: calc(100vh - 8rem); overflow-y: auto; }
 .seal-sidebar a { display: block; padding: .28rem .35rem; color: var(--faint); border-radius: 5px; text-align: center; text-decoration: none; transition: color .15s ease, background .15s ease; }
+.seal-sidebar a small { display: block; margin-top: .1rem; color: var(--muted); font-size: .68rem; }
 .seal-sidebar a:hover, .seal-sidebar a:focus, .seal-sidebar a.selected { color: var(--accent); background: var(--accent-soft); }
 .seal-entry { display: grid; grid-template-columns: minmax(12rem, 1fr) minmax(0, 2fr); gap: 1rem 2rem; align-items: center; padding: 1rem 0; }
 .seal-entry:first-of-type { padding-top: 0; }
@@ -174,6 +176,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .image-lightbox-editor button { padding: .3rem .55rem; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
 .image-lightbox-editor label { display: inline-flex; align-items: center; gap: .3rem; padding: .25rem .4rem; background: var(--surface-raised); border: 1px solid var(--line); border-radius: 4px; }
 .image-lightbox-editor input[type="range"] { width: 5rem; }
+.image-lightbox-seal-type { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .3rem .55rem; margin: 0; padding: .2rem .4rem .3rem; background: var(--surface-raised); border: 1px solid var(--line); border-radius: 4px; }
+.image-lightbox-seal-type legend { padding: 0 .2rem; color: var(--faint); font-size: .68rem; }
+.image-lightbox-seal-type label { padding: 0; background: none; border: 0; }
 .image-lightbox-editor button:hover { border-color: var(--accent); color: var(--accent); }
 .image-lightbox-save-status { color: var(--accent); }
 .image-lightbox-seal-preview { position: absolute; z-index: 2; right: 1rem; bottom: 1rem; display: block; pointer-events: none; }

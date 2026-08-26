@@ -26,18 +26,21 @@
             {
               "person": "Konrad",
               "position": "0.0906,0.8377",
-              "size": 0.097
+              "size": 0.097,
+              "type": "swans"
             },
             {
               "person": "Eberhard",
               "position": "0.1754,0.8664",
-              "size": 0.08099999999999999
+              "size": 0.08099999999999999,
+              "type": "helm"
             },
             {
               "person": "Arnold",
               "position": "0.3319,0.8931",
               "size": 0.072,
-              "rotation": -47
+              "rotation": -47,
+              "type": "swans"
             },
             {
               "person": "Konrad",
@@ -52,12 +55,14 @@
             {
               "person": "Konrad",
               "position": "0.0956,0.8669",
-              "size": 0.08
+              "size": 0.08,
+              "type": "swans"
             },
             {
               "person": "Eberhard",
               "position": "0.1712,0.8699",
-              "size": 0.072
+              "size": 0.072,
+              "type": "helm"
             },
             {
               "person": "Konrad",
@@ -70,7 +75,8 @@
               "size": 0.07399999999999998,
               "wideningRotation": 19,
               "rotation": -44,
-              "width": 0.28
+              "width": 0.28,
+              "type": "swans"
             }
           ]
         },
