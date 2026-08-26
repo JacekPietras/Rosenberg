@@ -12,7 +12,7 @@ data/
 ├── calendar.md   # Liturgical calendar and dated annotations
 ├── people.json   # People and relationships
 ├── names.md      # Historical name variants
-└── places.md     # Historical place-name variants
+└── places.json   # Historical place-name variants and coordinates
 ```
 
 ## Book JSON
@@ -122,7 +122,25 @@ Use underscores in IDs instead of spaces, and preserve distinguishing titles or
 territorial designations in both `name` and `titles` when they identify a
 particular historical person.
 
-Use `data/names.md` and `data/places.md` when a spelling needs to be recognized or normalized. Do not merge people merely because their names are similar. In particular, do not conflate Münch von Rosenberg with the primary von Rosenberg family.
+Use `data/names.md` and `data/places.json` when a spelling needs to be recognized or normalized. Do not merge people merely because their names are similar. In particular, do not conflate Münch von Rosenberg with the primary von Rosenberg family.
+
+`data/places.json` is an array of place objects. Each object has a `variations`
+array whose first item is the canonical name and whose remaining items are
+recognized spelling variants, plus `lat` and `lon` GPS coordinates in decimal
+degrees (WGS84):
+
+```json
+[
+  {
+    "variations": ["Uissigheim", "Ussigheim", "Ußinkeim"],
+    "lat": 49.679167,
+    "lon": 9.5725
+  }
+]
+```
+
+The viewer derives its existing canonical `name` and variant `names` values
+from `variations`, so the name-matching behavior remains unchanged.
 
 Before committing, validate the edited JSON with any available JSON-aware editor or validator and review the diff manually.
 

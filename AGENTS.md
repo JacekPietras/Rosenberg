@@ -70,7 +70,7 @@ Remove a fact if it is only about unrelated nobility or clergy, unrelated admini
 
 ## Names and normalization
 
-Consult `data/names.md` for personal names and `data/places.md` for place names before normalizing them. Use the first form in a variation entry as the standard only when the correspondence is clear. Match spelling variants case-insensitively but preserve the standard form’s case.
+Consult `data/names.md` for personal names and `data/places.json` for place names before normalizing them. Use the first form in a variation entry as the standard only when the correspondence is clear. Match spelling variants case-insensitively but preserve the standard form’s case.
 
 Normalize clear variants such as `Conradus` to `Konrad`, `Arnolt` to `Arnold`, `Engelhart` to `Engelhard`, `Ussinkeim` to `Uissigheim`, and `Erlikeim` to `Erligheim`. Preserve the meaning of Latin or German context such as `dictus`, `von`, `miles`, and `armiger`. `Kunz`/`Cunz` are shortened forms of Konrad but must remain `Kunz` when used; do not expand them automatically.
 

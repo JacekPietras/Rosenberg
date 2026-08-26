@@ -147,10 +147,12 @@ function inlineMarkup(value = '', linkEntities = true) {
   return text.replace(/\u0000(\d+)\u0000/g, (match, index) => tokens[Number(index)] ?? match);
 }
 
-function parsePlaces(markdown) {
-  return String(markdown).split('\n').map((line) => line.replace(/\/\/.*$/, '').trim()).filter(Boolean).map((line) => {
-    const names = line.split(',').map((name) => name.trim()).filter(Boolean);
-    return { name: names[0], names: [...new Set(names)] };
+function parsePlaces(json) {
+  const places = JSON.parse(json);
+  if (!Array.isArray(places)) throw new Error('data/places.json must contain an array');
+  return places.map((place) => {
+    const variations = Array.isArray(place.variations) ? place.variations.filter((name) => typeof name === 'string' && name.trim()) : [];
+    return { ...place, name: variations[0], names: [...new Set(variations)] };
   });
 }
 
@@ -1306,7 +1308,7 @@ function renderPlacePage() {
   const place = placeForName(state.place) || state.places.find((item) => item.name.toLocaleLowerCase() === String(state.place || '').toLocaleLowerCase());
   return renderEntityMentionsPage(place, place ? placeMentions(place) : [], {
     kind: 'place',
-    notFoundMessage: `No place named “${escapeHtml(state.place || '')}” is listed in data/places.md.`,
+    notFoundMessage: `No place named “${escapeHtml(state.place || '')}” is listed in data/places.json.`,
     languageMarkup: (entry) => entityLanguageMarkup(entry, buildPlacePattern([place])),
     extraMarkup: (doc, entry) => doc.place && !entry.german && !entry.latin && !entry.english ? `<p class="place-record">Document place: ${inlineMarkup(doc.place)}</p>` : '',
   });
@@ -1345,7 +1347,7 @@ function renderPersonPage() {
   const person = personForName(state.person) || state.persons.find((item) => item.name.toLocaleLowerCase() === String(state.person || '').toLocaleLowerCase());
   return renderEntityMentionsPage(person, person ? personMentions(person) : [], {
     kind: 'person',
-    notFoundMessage: `No person matching “${escapeHtml(state.person || '')}” is generated from data/names.md and data/places.md.`,
+    notFoundMessage: `No person matching “${escapeHtml(state.person || '')}” is generated from data/names.md and data/places.json.`,
     languageMarkup: (entry) => entityLanguageMarkup(entry, buildPersonPattern([person])[0].pattern),
   });
 }
@@ -1355,7 +1357,10 @@ function renderTabs() {
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
   document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => {
     const nextActive = button.dataset.path;
-    if (nextActive !== state.active) clearScreenCaches();
+    if (nextActive !== state.active) {
+      clearScreenCaches();
+    }
+    history.replaceState(null, '', `${location.pathname}${location.hash}`);
     state.active = nextActive;
     state.place = null;
     state.person = null;
@@ -1582,7 +1587,7 @@ async function loadAll() {
   const paths = files.map((file) => typeof file === 'string' ? file : file.path);
   const snapshot = JSON.stringify(files);
   const [placesText, peopleText, namesText, documents] = await Promise.all([
-    getText('data/places.md'),
+    getText('data/places.json'),
     getText('data/people.json'),
     getText('data/names.md'),
     new Map(await Promise.all(paths.map(async (path) => [path, await getJson(path)]))),
