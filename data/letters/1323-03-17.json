@@ -24,21 +24,25 @@
             {
               "person": "Arnolf von Uissigheim",
               "position": "0.2586,0.6530",
-              "size": 0.11899999999999997,
-              "type": "helm"
+              "size": 0.11499999999999996,
+              "type": "helm",
+              "rotation": 21,
+              "width": 0.08,
+              "wideningRotation": -110
             },
             {
               "person": "Eberhard von Uissigheim",
-              "position": "0.3963,0.6590",
-              "size": 0.09499999999999995,
+              "position": "0.3957,0.6609",
+              "size": 0.08899999999999994,
               "type": "swans",
               "rotation": 9
             },
             {
               "person": "Eberhard",
-              "position": "0.6022,0.6578",
-              "size": 0.09199999999999994,
-              "type": "helm"
+              "position": "0.6046,0.6572",
+              "size": 0.07999999999999993,
+              "type": "helm",
+              "rotation": 9
             }
           ]
         },

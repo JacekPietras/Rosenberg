@@ -48,8 +48,11 @@
             },
             {
               "person": "Konrad",
-              "position": "0.2512,0.8965",
-              "size": 0.091
+              "position": "0.2481,0.8983",
+              "size": 0.08099999999999999,
+              "width": 0.9,
+              "wideningRotation": 40,
+              "rotation": -24
             }
           ]
         },

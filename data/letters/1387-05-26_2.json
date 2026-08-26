@@ -38,9 +38,12 @@
             },
             {
               "person": "Konrad",
-              "position": "0.4974,0.8535",
-              "size": 0.10000000000000002,
-              "type": "full"
+              "position": "0.5010,0.8541",
+              "size": 0.11600000000000002,
+              "type": "full",
+              "width": 0.21,
+              "wideningRotation": -23,
+              "rotation": -12
             },
             {
               "person": "Kunz",
