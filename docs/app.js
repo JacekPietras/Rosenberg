@@ -576,7 +576,6 @@ function setupImageLightbox() {
         const result = await response.json();
         if (!response.ok) throw new Error(result.error || `Save failed (${response.status})`);
         state.snapshot = '';
-        setSaveStatus('Saved');
         return true;
       } catch (error) {
         setSaveStatus(error.message, true);

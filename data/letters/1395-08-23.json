@@ -18,9 +18,11 @@
           "seals": [
             {
               "person": "Arnold/Eberhard",
-              "position": "0.3293,0.8464",
-              "size": 0.11599999999999996,
-              "type": "full"
+              "position": "0.3247,0.8470",
+              "size": 0.11399999999999996,
+              "type": "full",
+              "width": 0.15,
+              "wideningRotation": -80
             }
           ]
         },

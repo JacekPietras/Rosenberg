@@ -18,15 +18,20 @@
           "seals": [
             {
               "person": "Engelhard",
-              "position": "0.2853,0.6697",
-              "size": 0.104,
-              "type": "swans"
+              "position": "0.2847,0.6678",
+              "size": 0.09599999999999999,
+              "type": "swans",
+              "width": 0.22,
+              "wideningRotation": -20,
+              "rotation": -12
             },
             {
               "person": "Eberhard",
-              "position": "0.5710,0.6566",
-              "size": 0.104,
-              "type": "swans"
+              "position": "0.5698,0.6591",
+              "size": 0.08199999999999998,
+              "type": "swans",
+              "width": 0.2,
+              "wideningRotation": 82
             }
           ]
         },

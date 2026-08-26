@@ -44,18 +44,20 @@
             },
             {
               "person": "Kunz",
-              "position": "0.6313,0.8143",
-              "size": 0.12200000000000004,
-              "type": "helm"
+              "position": "0.6308,0.8205",
+              "size": 0.094,
+              "type": "helm",
+              "width": 0.17,
+              "wideningRotation": -62
             },
             {
               "person": "Hans",
-              "position": "0.7491,0.8141",
-              "size": 0.107,
+              "position": "0.7500,0.8147",
+              "size": 0.09699999999999998,
               "type": "swans",
               "rotation": -27,
-              "width": 0.08,
-              "wideningRotation": -44
+              "width": 0,
+              "wideningRotation": -101
             }
           ]
         },
@@ -72,9 +74,12 @@
           "seals": [
             {
               "person": "Eberhard",
-              "position": "0.2482,0.7966",
-              "size": 0.12400000000000003,
-              "type": "helm"
+              "position": "0.2464,0.7948",
+              "size": 0.11600000000000002,
+              "type": "helm",
+              "rotation": -42,
+              "width": 0.04,
+              "wideningRotation": -38
             }
           ]
         },

@@ -18,9 +18,10 @@
           "seals": [
             {
               "person": "Eberhard",
-              "position": "0.4372,0.8001",
-              "size": 0.162,
-              "type": "helm"
+              "position": "0.4368,0.8020",
+              "size": 0.148,
+              "type": "helm",
+              "rotation": -12
             }
           ]
         },
