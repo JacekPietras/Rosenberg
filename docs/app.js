@@ -351,14 +351,7 @@ function setupSealAnnotations() {
       const y = Number(crop.dataset.sealY);
       const size = Number(crop.dataset.sealSize);
       if (![x, y, size].every(Number.isFinite) || size <= 0 || !crop.clientWidth || !crop.clientHeight) return;
-      const cropSize = image.naturalHeight * Math.max(size, 0.035);
-      const scale = crop.clientHeight / cropSize;
-      const width = image.naturalWidth * scale;
-      const height = image.naturalHeight * scale;
-      image.style.width = `${width}px`;
-      image.style.height = `${height}px`;
-      image.style.left = `${crop.clientWidth / 2 - x * width}px`;
-      image.style.top = `${crop.clientHeight / 2 - y * height}px`;
+      positionSealCrop(image, crop, x, y, size);
     });
   };
   annotatedImages.forEach((image) => image.addEventListener('load', update));
@@ -380,6 +373,17 @@ function setupSealAnnotations() {
   update();
 }
 
+function positionSealCrop(image, crop, x, y, size) {
+  const cropSize = image.naturalHeight * Math.max(size, 0.035);
+  const scale = crop.clientHeight / cropSize;
+  const width = image.naturalWidth * scale;
+  const height = image.naturalHeight * scale;
+  image.style.width = `${width}px`;
+  image.style.height = `${height}px`;
+  image.style.left = `${crop.clientWidth / 2 - x * width}px`;
+  image.style.top = `${crop.clientHeight / 2 - y * height}px`;
+}
+
 document.addEventListener('error', (event) => {
   const image = event.target;
   if (!(image instanceof HTMLImageElement)) return;
@@ -394,6 +398,10 @@ function setupImageLightbox() {
   const lightboxImage = $('#image-lightbox-image');
   const lightboxStage = $('#image-lightbox-stage');
   const lightboxAnnotations = $('#image-lightbox-annotations');
+  const sealPreview = $('#image-lightbox-seal-preview');
+  const sealPreviewCrop = sealPreview?.querySelector('.seal-crop');
+  const sealPreviewImage = sealPreview?.querySelector('img');
+  const sealPreviewName = sealPreview?.querySelector('.image-lightbox-seal-preview-name');
   const closeButton = $('#image-lightbox-close');
   const editor = $('#image-lightbox-editor');
   const addSealButton = $('#image-lightbox-add-seal');
@@ -410,6 +418,30 @@ function setupImageLightbox() {
   if (editor) editor.hidden = !editable;
 
   const currentSeals = () => editingContext?.node?.seals || [];
+  const updateSealPreview = () => {
+    const seal = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
+    if (!sealPreview || !sealPreviewCrop || !sealPreviewImage || !seal) {
+      if (sealPreview) sealPreview.hidden = true;
+      return;
+    }
+    const [x, y] = String(seal.position || '').split(',').map(Number);
+    const size = Number(seal.size);
+    if (![x, y, size].every(Number.isFinite) || size <= 0) {
+      sealPreview.hidden = true;
+      return;
+    }
+    sealPreview.hidden = false;
+    sealPreviewCrop.dataset.sealX = x;
+    sealPreviewCrop.dataset.sealY = y;
+    sealPreviewCrop.dataset.sealSize = size;
+    sealPreviewName.textContent = seal.person || '';
+    if (sealPreviewImage.src !== lightboxImage.src) sealPreviewImage.src = lightboxImage.src;
+    if (sealPreviewImage.naturalWidth && sealPreviewImage.naturalHeight) {
+      positionSealCrop(sealPreviewImage, sealPreviewCrop, x, y, size);
+      sealPreviewCrop.classList.remove('is-loading');
+    }
+  };
+  sealPreviewImage?.addEventListener('load', updateSealPreview);
   const updateEditorControls = () => {
     const selected = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
     if (removeSealButton) removeSealButton.hidden = !selected;
@@ -432,6 +464,7 @@ function setupImageLightbox() {
       if (Number(marker.dataset.sealIndex) === selectedIndex) marker.classList.add('selected');
     });
     updateLightboxAnnotations();
+    updateSealPreview();
     updateEditorControls();
   };
   const setSaveStatus = (message, error = false) => {
@@ -515,10 +548,12 @@ function setupImageLightbox() {
     lightboxImage.src = image?.currentSrc || link.dataset.imageSrc;
     lightboxImage.alt = image?.alt || '';
     lightboxImage.addEventListener('load', updateLightboxAnnotations, { once: true });
+    lightboxImage.addEventListener('load', updateSealPreview, { once: true });
     lightbox.showModal();
     updateLightboxAnnotations();
   });
   window.addEventListener('resize', updateLightboxAnnotations, { passive: true });
+  window.addEventListener('resize', updateSealPreview, { passive: true });
   closeButton.addEventListener('click', closeLightbox);
   lightboxAnnotations.addEventListener('pointerdown', (event) => {
     if (!editingContext) return;
@@ -611,6 +646,8 @@ function setupImageLightbox() {
   lightbox.addEventListener('close', () => {
     lightboxImage.removeAttribute('src');
     lightboxAnnotations.replaceChildren();
+    if (sealPreview) sealPreview.hidden = true;
+    sealPreviewImage?.removeAttribute('src');
     editingContext = null;
     selectedIndex = null;
     drag = null;
