@@ -418,7 +418,6 @@ function setupImageLightbox() {
     const seal = currentSeals()[index];
     if (!seal) return;
     seal.size = Math.max(0.01, Math.min(0.5, Number(seal.size) + amount));
-    selectedIndex = index;
     renderLightboxSeals();
     queueSave();
   };
@@ -569,6 +568,7 @@ function setupImageLightbox() {
     const marker = event.target.closest('.seal-marker');
     if (!marker) return;
     const index = Number(marker.dataset.sealIndex);
+    if (index !== selectedIndex) return;
     // deltaMode differs between mouse wheels, trackpads, and browsers. Use
     // the direction only so one gesture has predictable precision everywhere.
     resizeSeal(index, event.deltaY < 0 ? SEAL_SIZE_STEP : -SEAL_SIZE_STEP);
