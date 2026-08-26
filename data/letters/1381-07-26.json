@@ -25,9 +25,12 @@
           "seals": [
             {
               "person": "Konrad",
-              "position": "0.0906,0.8377",
-              "size": 0.097,
-              "type": "swans"
+              "position": "0.0894,0.8359",
+              "size": 0.07699999999999999,
+              "type": "swans",
+              "width": 0.28,
+              "wideningRotation": -17,
+              "rotation": -27
             },
             {
               "person": "Eberhard",

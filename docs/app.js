@@ -431,6 +431,7 @@ function setupImageLightbox() {
   let selectedIndex = null;
   let drag = null;
   let magnifierPoint = null;
+  let saveQueue = Promise.resolve();
   const SEAL_SIZE_STEP = 0.002;
   const MAGNIFIER_SIZE = 0.12;
   const MAGNIFIER_SIZE_STEP = 0.01;
@@ -558,25 +559,32 @@ function setupImageLightbox() {
     saveStatus.textContent = message;
     saveStatus.classList.toggle('error', error);
   };
-  const saveDocument = async () => {
-    if (!editingContext) return;
-    const entry = state.documents.get(editingContext.path)?.entries?.[Number(editingContext.entryIndex)];
-    if (entry) {
-      const images = Array.isArray(entry.img) ? entry.img : [entry.img];
-      images.forEach((image) => {
-        if (image && typeof image === 'object' && Array.isArray(image.seals) && image.seals.length === 0) delete image.seals;
-      });
-    }
-    try {
-      const response = await fetch('/api/save-document', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path: editingContext.path, document: state.documents.get(editingContext.path) }) });
-      const result = await response.json();
-      if (!response.ok) throw new Error(result.error || `Save failed (${response.status})`);
-      state.snapshot = '';
-      return true;
-    } catch (error) {
-      setSaveStatus(error.message, true);
-      return false;
-    }
+  const saveDocument = () => {
+    if (!editingContext) return Promise.resolve(true);
+    const operation = saveQueue.then(async () => {
+      const context = editingContext;
+      const entry = state.documents.get(context.path)?.entries?.[Number(context.entryIndex)];
+      if (entry) {
+        const images = Array.isArray(entry.img) ? entry.img : [entry.img];
+        images.forEach((image) => {
+          if (image && typeof image === 'object' && Array.isArray(image.seals) && image.seals.length === 0) delete image.seals;
+        });
+      }
+      try {
+        setSaveStatus('Saving…');
+        const response = await fetch('/api/save-document', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path: context.path, document: state.documents.get(context.path) }) });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error || `Save failed (${response.status})`);
+        state.snapshot = '';
+        setSaveStatus('Saved');
+        return true;
+      } catch (error) {
+        setSaveStatus(error.message, true);
+        return false;
+      }
+    });
+    saveQueue = operation.catch(() => {});
+    return operation;
   };
   const closeLightbox = () => {
     lightbox.close();
@@ -767,7 +775,11 @@ function setupImageLightbox() {
     renderLightboxSeals();
   });
   lightbox.addEventListener('click', (event) => {
-    if (event.target === lightbox) closeLightbox();
+    if (event.target === lightbox) saveAndCloseLightbox();
+  });
+  lightbox.addEventListener('cancel', (event) => {
+    event.preventDefault();
+    saveAndCloseLightbox();
   });
   lightbox.addEventListener('close', () => {
     lightboxImage.removeAttribute('src');

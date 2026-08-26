@@ -29,9 +29,12 @@
           "seals": [
             {
               "person": "Arnold",
-              "position": "0.2772,0.8001",
-              "size": 0.112,
-              "type": "helm"
+              "position": "0.2767,0.8013",
+              "size": 0.106,
+              "type": "helm",
+              "rotation": 21,
+              "width": 0.08,
+              "wideningRotation": -146
             },
             {
               "person": "Konrad",
