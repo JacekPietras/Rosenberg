@@ -117,7 +117,8 @@ function escapeHtml(value = '') {
   return String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 }
 
-function linkedMarkup(value = '') {
+function linkedMarkup(value = '', linkEntities = true) {
+  if (!linkEntities) return String(value);
   const tokens = [];
   const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
   let text = String(value);
@@ -137,11 +138,11 @@ function linkedMarkup(value = '') {
   return text.replace(/\u0000(\d+)\u0000/g, (match, index) => tokens[Number(index)] ?? match);
 }
 
-function inlineMarkup(value = '') {
+function inlineMarkup(value = '', linkEntities = true) {
   const tokens = [];
   const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
-  let text = escapeHtml(value).replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => token(`<a href="${url}" target="_blank" rel="noreferrer">${linkedMarkup(label)}</a>`));
-  text = linkedMarkup(text).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  let text = escapeHtml(value).replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => token(`<a href="${url}" target="_blank" rel="noreferrer">${linkedMarkup(label, linkEntities)}</a>`));
+  text = linkedMarkup(text, linkEntities).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   return text.replace(/\u0000(\d+)\u0000/g, (match, index) => tokens[Number(index)] ?? match);
 }
 
@@ -163,7 +164,17 @@ function parsePeople(markdown, namesMarkdown, places) {
     return [names[0].toLocaleLowerCase(), [...new Set(names)]];
   }));
   const allNameVariants = [...new Set([...namesByCanonical.values()].flat())].sort((left, right) => right.length - left.length);
-  return String(markdown).split('\n').map((line) => line.replace(/\/\/.*$/, '').trim()).filter(Boolean).map((line) => {
+  let peopleLines;
+  try {
+    const parsed = JSON.parse(markdown);
+    peopleLines = Array.isArray(parsed)
+      ? parsed.map((person) => typeof person === 'string' ? person : person?.name).filter(Boolean)
+      : null;
+  } catch {
+    peopleLines = null;
+  }
+  if (!peopleLines) peopleLines = String(markdown).split('\n');
+  return peopleLines.map((line) => String(line).replace(/\/\/.*$/, '').trim()).filter(Boolean).map((line) => {
     const separatorMatch = [...line.matchAll(/ (?:von|v\.|de|of) /gi)].pop();
     const name = separatorMatch ? line.slice(0, separatorMatch.index) : line;
     const placeName = separatorMatch ? line.slice(separatorMatch.index + separatorMatch[0].length) : '';
@@ -219,7 +230,7 @@ function buildPersonPattern(people) {
   }));
 }
 
-function markdownMarkup(value = '') {
+function markdownMarkup(value = '', linkEntities = true) {
   const lines = String(value).split('\n');
   const output = [];
   let listDepth = 0;
@@ -236,7 +247,7 @@ function markdownMarkup(value = '') {
     const match = line.match(/^(\s*)[*+-]\s+(.+)$/);
     if (!match) {
       closeLists();
-      if (line.trim()) output.push(`<p>${inlineMarkup(line.trim())}</p>`);
+      if (line.trim()) output.push(`<p>${inlineMarkup(line.trim(), linkEntities)}</p>`);
       return;
     }
 
@@ -257,7 +268,7 @@ function markdownMarkup(value = '') {
         lastIndent = Math.max(0, lastIndent - 2);
       }
     }
-    output.push(`<li>${inlineMarkup(match[2])}`);
+    output.push(`<li>${inlineMarkup(match[2], linkEntities)}`);
     itemOpen = true;
     lastIndent = indent;
   });
@@ -1130,7 +1141,7 @@ function displayedLanguagesFor(entry) {
   return languages.length ? languages : available.slice(0, 1);
 }
 
-function entityExcerpt(value, pattern) {
+function entityExcerpt(value, pattern, linkEntities = true) {
   const text = String(value || '').replace(/\s+/g, ' ').trim();
   if (!text) return '';
   const sentences = text.split(/(?<=[.!?。！？])\s+/).filter((sentence) => { pattern.lastIndex = 0; return pattern.test(sentence); });
@@ -1151,13 +1162,13 @@ function entityExcerpt(value, pattern) {
     if (match.index + match[0].length > start + limit) start = Math.min(match.index, maxStart);
     excerpt = `${start ? '…' : ''}${source.slice(start, start + limit)}${start + limit < source.length ? '…' : ''}`;
   }
-  return inlineMarkup(excerpt);
+  return inlineMarkup(excerpt, linkEntities);
 }
 
 function entityLanguageMarkup(entry, pattern) {
   const displayedLanguages = displayedLanguagesFor(entry);
   if (!displayedLanguages.length) return '';
-  return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text"><p>${entityExcerpt(entry[language], pattern)}</p></div></div>`).join('')}</div>`;
+  return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text"><p>${entityExcerpt(entry[language], pattern, language === 'english')}</p></div></div>`).join('')}</div>`;
 }
 
 function entryAnchor(path, index) {
@@ -1248,7 +1259,7 @@ function renderTabs() {
 function languageMarkup(entry) {
   const displayedLanguages = displayedLanguagesFor(entry);
   if (!displayedLanguages.length) return '';
-  return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text">${markdownMarkup(entry[language])}</div></div>`).join('')}</div>`;
+  return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text">${markdownMarkup(entry[language], language === 'english')}</div></div>`).join('')}</div>`;
 }
 
 function renderEntry(entry, { title = true, date = true, source = true, path = '', index = null } = {}) {

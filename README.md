@@ -10,6 +10,7 @@ data/
 ├── notes.json     # Research notes displayed as a book-style collection
 ├── letters/      # Letters and documents
 ├── calendar.md   # Liturgical calendar and dated annotations
+├── people.md     # People and relationships (JSON)
 ├── names.md      # Historical name variants
 └── places.md     # Historical place-name variants
 ```
@@ -80,6 +81,46 @@ Each seal may have one `type`: `contrepalle`, `swans`, `helm`, or `full`. It can
 To update a document, edit its JSON directly and preserve valid JSON, the existing source text, and the translation. Extract facts only from the document itself. Keep facts concise, atomic, explicit, and in English, while preserving historically meaningful German titles, names, and place names.
 
 Book facts are objects with a `date` and `text` field. The `date` must use ISO precision (`YYYY`, `YYYY-MM`, or `YYYY-MM-DD`) supported by the source; never invent missing date components. Letter facts remain strings as shown in the Letter JSON format above.
+
+`data/people.md` is a JSON array. Each person has a unique `id`; relationship
+fields refer to other people by ID. Unknown dates and relationships are `null`
+or empty arrays. Dates use ISO precision (`YYYY`, `YYYY-MM`, or `YYYY-MM-DD`).
+
+```json
+[
+  {
+    "id": "Example_person",
+    "name": "Example person",
+    "titles": ["Vogt zu Lauda", "Ritter"],
+    "wife": "Example_spouse",
+    "children": ["Example_child"],
+    "born": "1300",
+    "died": "1360-04"
+  },
+  {
+    "id": "Example_spouse",
+    "name": "Example spouse",
+    "titles": [],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "Example_child",
+    "name": "Example child",
+    "titles": [],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  }
+]
+```
+
+Use underscores in IDs instead of spaces, and preserve distinguishing titles or
+territorial designations in both `name` and `titles` when they identify a
+particular historical person.
 
 Use `data/names.md` and `data/places.md` when a spelling needs to be recognized or normalized. Do not merge people merely because their names are similar. In particular, do not conflate Münch von Rosenberg with the primary von Rosenberg family.
 
