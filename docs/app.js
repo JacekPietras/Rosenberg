@@ -37,7 +37,7 @@ function savePreferences() {
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, navigationLetter: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
 const MISSING_LETTER_LABEL = 'missing';
 
@@ -51,7 +51,7 @@ function letterHasMissingSourceOrUrl(path) {
 }
 
 function clearScreenCaches() {
-  state.letter = null;
+  state.letter = state.navigationLetter;
   state.letterLabels = [];
   state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
   state.sealNames = [];
@@ -66,7 +66,10 @@ const navigation = new URLSearchParams(location.search);
 if (navigation.get('document') || navigation.get('tab') || navigation.get('letter')) { state.place = null; state.person = null; }
 if (navigation.get('tab') === 'letters') state.active = 'letters';
 if (navigation.get('document')) state.active = navigation.get('document');
-if (navigation.get('letter')) state.letter = navigation.get('letter');
+if (navigation.get('letter')) {
+  state.letter = navigation.get('letter');
+  state.navigationLetter = state.letter;
+}
 if (navigation.get('place')) { state.place = navigation.get('place'); state.person = null; }
 if (navigation.get('person')) { state.person = navigation.get('person'); state.place = null; }
 const requestedScreen = navigation.get('tab') || navigation.get('document');
@@ -275,8 +278,9 @@ function letterForSource(source) {
     .filter((value, index, values) => value && values.indexOf(value) === index);
   return sources.reduce((match, citation) => match || state.manifest.letters.reduce((found, path) => {
     if (found) return found;
-    const entry = (state.documents.get(path)?.entries || []).find((item) => Array.isArray(item.source) ? item.source.includes(citation) : item.source === citation);
-    return entry ? { path, entry } : null;
+    const entries = state.documents.get(path)?.entries || [];
+    const entryIndex = entries.findIndex((item) => Array.isArray(item.source) ? item.source.includes(citation) : item.source === citation);
+    return entryIndex >= 0 ? { path, entry: entries[entryIndex], entryIndex } : null;
   }, null), null);
 }
 
@@ -984,7 +988,8 @@ function sealSourceMarkup(source) {
   const match = letterForSource(source);
   if (!match) return markdownLinks(source);
   const params = new URLSearchParams({ tab: 'letters', letter: match.path });
-  return `<a href="?${params.toString()}">${markdownLinks(source)}</a>`;
+  const hash = `#${entryAnchor(match.path, match.entryIndex)}`;
+  return `<a href="?${params.toString()}${hash}">${markdownLinks(source)}</a>`;
 }
 
 function sealLetterUrlMarkup(source) {
@@ -1290,6 +1295,7 @@ function visibleLetterPaths(paths) {
   const selected = new Set(state.letterLabels);
   const hidden = new Set(state.hiddenLetterLabels || []);
   return paths.filter((path) => {
+    if (path === state.navigationLetter) return true;
     const label = letterLabelForPath(path);
     const missing = selected.has(MISSING_LETTER_LABEL) && letterHasMissingSourceOrUrl(path);
     if (hidden.has(label) && !missing) return false;
