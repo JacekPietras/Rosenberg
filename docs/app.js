@@ -414,27 +414,49 @@ function setupImageLightbox() {
   let selectedIndex = null;
   let saveTimer = null;
   let drag = null;
+  let magnifierPoint = null;
   const SEAL_SIZE_STEP = 0.002;
+  const MAGNIFIER_SIZE = 0.12;
   if (editor) editor.hidden = !editable;
 
   const currentSeals = () => editingContext?.node?.seals || [];
   const updateSealPreview = () => {
     const seal = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
-    if (!sealPreview || !sealPreviewCrop || !sealPreviewImage || !seal) {
-      if (sealPreview) sealPreview.hidden = true;
-      return;
-    }
-    const [x, y] = String(seal.position || '').split(',').map(Number);
-    const size = Number(seal.size);
-    if (![x, y, size].every(Number.isFinite) || size <= 0) {
+    if (!sealPreview || !sealPreviewCrop || !sealPreviewImage) return;
+    let x;
+    let y;
+    let size;
+    if (seal) {
+      [x, y] = String(seal.position || '').split(',').map(Number);
+      size = Number(seal.size);
+      sealPreview.classList.remove('is-magnifier');
+      sealPreview.classList.add('is-seal-preview');
+      sealPreviewName.hidden = false;
+      sealPreviewName.value = seal.person || '';
+    } else if (magnifierPoint) {
+      ({ x, y } = magnifierPoint);
+      size = MAGNIFIER_SIZE;
+      sealPreview.classList.add('is-magnifier');
+      sealPreview.classList.remove('is-seal-preview');
+      sealPreviewName.hidden = true;
+    } else {
       sealPreview.hidden = true;
       return;
     }
+    if (![x, y, size].every(Number.isFinite) || size <= 0) {
+      if (sealPreview) sealPreview.hidden = true;
+      return;
+    }
     sealPreview.hidden = false;
+    if (seal) {
+      const imageRect = lightboxAnnotations.getBoundingClientRect();
+      const lightboxRect = lightbox.getBoundingClientRect();
+      sealPreview.style.left = `${imageRect.left + x * imageRect.width - lightboxRect.left}px`;
+      sealPreview.style.top = `${imageRect.top + y * imageRect.height - lightboxRect.top}px`;
+    }
     sealPreviewCrop.dataset.sealX = x;
     sealPreviewCrop.dataset.sealY = y;
     sealPreviewCrop.dataset.sealSize = size;
-    sealPreviewName.textContent = seal.person || '';
     if (sealPreviewImage.src !== lightboxImage.src) sealPreviewImage.src = lightboxImage.src;
     if (sealPreviewImage.naturalWidth && sealPreviewImage.naturalHeight) {
       positionSealCrop(sealPreviewImage, sealPreviewCrop, x, y, size);
@@ -442,6 +464,12 @@ function setupImageLightbox() {
     }
   };
   sealPreviewImage?.addEventListener('load', updateSealPreview);
+  sealPreviewName?.addEventListener('input', () => {
+    const seal = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
+    if (!seal) return;
+    seal.person = sealPreviewName.value;
+    queueSave();
+  });
   const updateEditorControls = () => {
     const selected = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
     if (removeSealButton) removeSealButton.hidden = !selected;
@@ -579,12 +607,14 @@ function setupImageLightbox() {
       marker.style.left = `${x * 100}%`;
       marker.style.top = `${y * 100}%`;
     }
+    updateSealPreview();
   });
   lightboxAnnotations.addEventListener('pointerup', () => { if (drag) queueSave(); drag = null; });
   lightboxStage.addEventListener('click', (event) => {
     if (!editingContext) return;
     const marker = event.target.closest?.('.seal-marker');
     if (marker) {
+      magnifierPoint = null;
       selectedIndex = Number(marker.dataset.sealIndex);
       renderLightboxSeals();
       return;
@@ -594,6 +624,28 @@ function setupImageLightbox() {
       renderLightboxSeals();
       queueSave();
     }
+  });
+  lightboxStage.addEventListener('pointermove', (event) => {
+    if (!editingContext || selectedIndex !== null) return;
+    const rect = lightboxAnnotations.getBoundingClientRect();
+    if (!rect.width || !rect.height || event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) {
+      magnifierPoint = null;
+      updateSealPreview();
+      return;
+    }
+    magnifierPoint = {
+      x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)),
+      y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)),
+    };
+    updateSealPreview();
+    const lightboxRect = lightbox.getBoundingClientRect();
+    sealPreview.style.left = `${event.clientX - lightboxRect.left}px`;
+    sealPreview.style.top = `${event.clientY - lightboxRect.top}px`;
+  });
+  lightboxStage.addEventListener('pointerleave', () => {
+    if (selectedIndex !== null) return;
+    magnifierPoint = null;
+    updateSealPreview();
   });
   lightbox.addEventListener('wheel', (event) => {
     // A modal should own the wheel while it is open; otherwise the page can
@@ -647,6 +699,7 @@ function setupImageLightbox() {
     lightboxImage.removeAttribute('src');
     lightboxAnnotations.replaceChildren();
     if (sealPreview) sealPreview.hidden = true;
+    magnifierPoint = null;
     sealPreviewImage?.removeAttribute('src');
     editingContext = null;
     selectedIndex = null;
