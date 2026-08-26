@@ -52,7 +52,10 @@
               "person": "Hans",
               "position": "0.7491,0.8141",
               "size": 0.107,
-              "type": "swans"
+              "type": "swans",
+              "rotation": -27,
+              "width": 0.08,
+              "wideningRotation": -44
             }
           ]
         },

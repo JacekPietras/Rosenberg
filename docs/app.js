@@ -697,9 +697,18 @@ function setupImageLightbox() {
       renderLightboxSeals();
       return;
     }
+    const deselectedIndex = selectedIndex;
     selectedIndex = null;
     renderLightboxSeals();
-    await saveDocument();
+    const savingMarker = deselectedIndex === null
+      ? null
+      : lightboxAnnotations.querySelector(`.seal-marker[data-seal-index="${deselectedIndex}"]`);
+    savingMarker?.classList.add('saving');
+    try {
+      await saveDocument();
+    } finally {
+      savingMarker?.classList.remove('saving');
+    }
   });
   lightboxStage.addEventListener('pointermove', (event) => {
     if (!editingContext || selectedIndex !== null) return;
@@ -1437,8 +1446,10 @@ async function loadAll() {
 }
 
 async function refreshIfChanged() {
+  if ($('#image-lightbox')?.open) return;
   try {
     const files = await getRepositoryFiles();
+    if ($('#image-lightbox')?.open) return;
     if (JSON.stringify(files) !== state.snapshot) await loadAll();
   } catch (error) {
     // A temporary network failure should not interrupt the next refresh attempt.
