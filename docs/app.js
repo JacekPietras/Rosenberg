@@ -811,8 +811,12 @@ function urlMarkup(value) {
   return links.length ? `<p class="document-url">${links.join(' · ')}</p>` : '';
 }
 
+function findEntityByName(entities, name) {
+  return entities.find((entity) => entity.names.some((candidate) => candidate.toLocaleLowerCase() === String(name).toLocaleLowerCase()));
+}
+
 function placeForName(name) {
-  return state.places.find((place) => place.names.some((candidate) => candidate.toLocaleLowerCase() === String(name).toLocaleLowerCase()));
+  return findEntityByName(state.places, name);
 }
 
 function placeMentions(place) {
@@ -828,10 +832,19 @@ function placeMentions(place) {
   return mentions;
 }
 
-function placeExcerpt(value, place) {
+function displayedLanguagesFor(entry) {
+  const available = ['english', 'german', 'latin'].filter((language) => String(entry[language] || '').trim());
+  if (!available.length) return [];
+  const original = ['german', 'latin'].find((language) => available.includes(language));
+  const languages = state.language === 'original'
+    ? ['english', original].filter(Boolean).filter((language) => available.includes(language))
+    : ['english'].filter((language) => available.includes(language));
+  return languages.length ? languages : available.slice(0, 1);
+}
+
+function entityExcerpt(value, pattern) {
   const text = String(value || '').replace(/\s+/g, ' ').trim();
   if (!text) return '';
-  const pattern = buildPlacePattern([place]);
   const sentences = text.split(/(?<=[.!?。！？])\s+/).filter((sentence) => { pattern.lastIndex = 0; return pattern.test(sentence); });
   let excerpt = sentences.slice(0, 2).join(' ');
   if (!excerpt) excerpt = text;
@@ -853,15 +866,10 @@ function placeExcerpt(value, place) {
   return inlineMarkup(excerpt);
 }
 
-function placeLanguageMarkup(entry, place) {
-  const available = ['english', 'german', 'latin'].filter((language) => String(entry[language] || '').trim());
-  if (!available.length) return '';
-  const original = ['german', 'latin'].find((language) => available.includes(language));
-  const languages = state.language === 'original'
-    ? ['english', original].filter(Boolean).filter((language) => available.includes(language))
-    : ['english'].filter((language) => available.includes(language));
-  const displayedLanguages = languages.length ? languages : available.slice(0, 1);
-  return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text"><p>${placeExcerpt(entry[language], place)}</p></div></div>`).join('')}</div>`;
+function entityLanguageMarkup(entry, pattern) {
+  const displayedLanguages = displayedLanguagesFor(entry);
+  if (!displayedLanguages.length) return '';
+  return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text"><p>${entityExcerpt(entry[language], pattern)}</p></div></div>`).join('')}</div>`;
 }
 
 function entryAnchor(path, index) {
@@ -879,20 +887,28 @@ function documentNavigationUrl(path, index) {
   return `?${params.toString()}#${entryAnchor(path, index)}`;
 }
 
-function renderPlacePage() {
-  const place = placeForName(state.place) || state.places.find((item) => item.name.toLocaleLowerCase() === String(state.place || '').toLocaleLowerCase());
-  if (!place) return `<article class="document"><h2>Place not found</h2><p class="status">No place named “${escapeHtml(state.place || '')}” is listed in data/places.md.</p></article>`;
-  const mentions = placeMentions(place);
-  const heading = `<article class="document place-document-heading"><div class="document-heading"><div><h2>${escapeHtml(place.name)}</h2><p class="place-variants">${place.names.map(escapeHtml).join(' · ')}</p></div><small>${mentions.length} mention${mentions.length === 1 ? '' : 's'}</small></div></article>`;
-  const content = mentions.map(({ doc, path, entry, index }) => `<article class="document place-mention" role="link" tabindex="0" data-document-href="${escapeHtml(documentNavigationUrl(path, index))}"><p class="entry-title">${markdownLinks(entry.title || documentTitle(doc, path))}</p>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.german || entry.latin || entry.english ? placeLanguageMarkup(entry, place) : ''}${doc.place && !entry.german && !entry.latin && !entry.english ? `<p class="place-record">Document place: ${inlineMarkup(doc.place)}</p>` : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
+function renderEntityMentionsPage(entity, mentions, { kind, notFoundMessage, languageMarkup, extraMarkup } = {}) {
+  if (!entity) return `<article class="document"><h2>${kind === 'place' ? 'Place' : 'Person'} not found</h2><p class="status">${notFoundMessage}</p></article>`;
+  const heading = `<article class="document ${kind}-document-heading"><div class="document-heading"><div><h2>${escapeHtml(entity.name)}</h2><p class="${kind}-variants">${entity.names.map(escapeHtml).join(' · ')}</p></div><small>${mentions.length} mention${mentions.length === 1 ? '' : 's'}</small></div></article>`;
+  const content = mentions.map(({ doc, path, entry, index }) => `<article class="document ${kind}-mention" role="link" tabindex="0" data-document-href="${escapeHtml(documentNavigationUrl(path, index))}"><p class="entry-title">${markdownLinks(entry.title || documentTitle(doc, path))}</p>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${extraMarkup ? extraMarkup(doc, entry) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
   return `${heading}${content || '<article class="document"><p class="status">No mentions found.</p></article>'}`;
 }
 
-function setupPlaceNavigation() {
-  document.querySelectorAll('.place-mention[data-document-href]').forEach((frame) => {
+function renderPlacePage() {
+  const place = placeForName(state.place) || state.places.find((item) => item.name.toLocaleLowerCase() === String(state.place || '').toLocaleLowerCase());
+  return renderEntityMentionsPage(place, place ? placeMentions(place) : [], {
+    kind: 'place',
+    notFoundMessage: `No place named “${escapeHtml(state.place || '')}” is listed in data/places.md.`,
+    languageMarkup: (entry) => entityLanguageMarkup(entry, buildPlacePattern([place])),
+    extraMarkup: (doc, entry) => doc.place && !entry.german && !entry.latin && !entry.english ? `<p class="place-record">Document place: ${inlineMarkup(doc.place)}</p>` : '',
+  });
+}
+
+function setupMentionNavigation(mentionClass, excludeSelector) {
+  document.querySelectorAll(`.${mentionClass}[data-document-href]`).forEach((frame) => {
     const navigate = () => { window.location.href = frame.dataset.documentHref; };
     frame.addEventListener('click', (event) => {
-      if (event.target.closest('a.place-link')) return;
+      if (event.target.closest(excludeSelector)) return;
       navigate();
     });
     frame.addEventListener('keydown', (event) => {
@@ -902,7 +918,7 @@ function setupPlaceNavigation() {
 }
 
 function personForName(name) {
-  return state.persons.find((person) => person.names.some((candidate) => candidate.toLocaleLowerCase() === String(name).toLocaleLowerCase()));
+  return findEntityByName(state.persons, name);
 }
 
 function personMentions(person) {
@@ -917,61 +933,12 @@ function personMentions(person) {
   return mentions;
 }
 
-function personExcerpt(value, person) {
-  const text = String(value || '').replace(/\s+/g, ' ').trim();
-  if (!text) return '';
-  const pattern = buildPersonPattern([person])[0].pattern;
-  const sentences = text.split(/(?<=[.!?。！？])\s+/).filter((sentence) => { pattern.lastIndex = 0; return pattern.test(sentence); });
-  let excerpt = sentences.slice(0, 2).join(' ');
-  if (!excerpt) excerpt = text;
-  let source = excerpt;
-  pattern.lastIndex = 0;
-  let match = pattern.exec(source);
-  if (!match) {
-    source = text;
-    pattern.lastIndex = 0;
-    match = pattern.exec(source);
-  }
-  if (match && source.length > 420) {
-    const limit = 360;
-    const maxStart = Math.max(0, source.length - limit);
-    let start = Math.min(Math.max(0, match.index - 170), maxStart);
-    if (match.index + match[0].length > start + limit) start = Math.min(match.index, maxStart);
-    excerpt = `${start ? '…' : ''}${source.slice(start, start + limit)}${start + limit < source.length ? '…' : ''}`;
-  }
-  return inlineMarkup(excerpt);
-}
-
-function personLanguageMarkup(entry, person) {
-  const available = ['english', 'german', 'latin'].filter((language) => String(entry[language] || '').trim());
-  if (!available.length) return '';
-  const original = ['german', 'latin'].find((language) => available.includes(language));
-  const languages = state.language === 'original'
-    ? ['english', original].filter(Boolean).filter((language) => available.includes(language))
-    : ['english'].filter((language) => available.includes(language));
-  const displayedLanguages = languages.length ? languages : available.slice(0, 1);
-  return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text"><p>${personExcerpt(entry[language], person)}</p></div></div>`).join('')}</div>`;
-}
-
 function renderPersonPage() {
   const person = personForName(state.person) || state.persons.find((item) => item.name.toLocaleLowerCase() === String(state.person || '').toLocaleLowerCase());
-  if (!person) return `<article class="document"><h2>Person not found</h2><p class="status">No person matching “${escapeHtml(state.person || '')}” is generated from data/names.md and data/places.md.</p></article>`;
-  const mentions = personMentions(person);
-  const heading = `<article class="document person-document-heading"><div class="document-heading"><div><h2>${escapeHtml(person.name)}</h2><p class="person-variants">${person.names.map(escapeHtml).join(' · ')}</p></div><small>${mentions.length} mention${mentions.length === 1 ? '' : 's'}</small></div></article>`;
-  const content = mentions.map(({ doc, path, entry, index }) => `<article class="document person-mention" role="link" tabindex="0" data-document-href="${escapeHtml(documentNavigationUrl(path, index))}"><p class="entry-title">${markdownLinks(entry.title || documentTitle(doc, path))}</p>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.german || entry.latin || entry.english ? personLanguageMarkup(entry, person) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
-  return `${heading}${content || '<article class="document"><p class="status">No mentions found.</p></article>'}`;
-}
-
-function setupPersonNavigation() {
-  document.querySelectorAll('.person-mention[data-document-href]').forEach((frame) => {
-    const navigate = () => { window.location.href = frame.dataset.documentHref; };
-    frame.addEventListener('click', (event) => {
-      if (event.target.closest('a.place-link, a.person-link')) return;
-      navigate();
-    });
-    frame.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); navigate(); }
-    });
+  return renderEntityMentionsPage(person, person ? personMentions(person) : [], {
+    kind: 'person',
+    notFoundMessage: `No person matching “${escapeHtml(state.person || '')}” is generated from data/names.md and data/places.md.`,
+    languageMarkup: (entry) => entityLanguageMarkup(entry, buildPersonPattern([person])[0].pattern),
   });
 }
 
@@ -982,14 +949,8 @@ function renderTabs() {
 }
 
 function languageMarkup(entry) {
-  const available = ['english', 'german', 'latin'].filter((language) => String(entry[language] || '').trim());
-  if (!available.length) return '';
-
-  const original = ['german', 'latin'].find((language) => available.includes(language));
-  const languages = state.language === 'original'
-    ? ['english', original].filter(Boolean).filter((language) => available.includes(language))
-    : ['english'].filter((language) => available.includes(language));
-  const displayedLanguages = languages.length ? languages : available.slice(0, 1);
+  const displayedLanguages = displayedLanguagesFor(entry);
+  if (!displayedLanguages.length) return '';
   return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text">${markdownMarkup(entry[language])}</div></div>`).join('')}</div>`;
 }
 
@@ -1146,12 +1107,12 @@ async function renderActive() {
   state.sealMarkerCleanup = null;
   if (state.person) {
     $('#content').innerHTML = renderPersonPage();
-    setupPersonNavigation();
+    setupMentionNavigation('person-mention', 'a.place-link, a.person-link');
     return;
   }
   if (state.place) {
     $('#content').innerHTML = renderPlacePage();
-    setupPlaceNavigation();
+    setupMentionNavigation('place-mention', 'a.place-link');
     return;
   }
   state.sealHighlightCleanup?.();
