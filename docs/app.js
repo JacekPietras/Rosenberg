@@ -321,7 +321,7 @@ function imageMarkup(value = '', legacySeals = [], context = {}) {
       : '';
     const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${editAttributes}>${image}</a>`;
     const annotatedImage = context.crop
-      ? `<span class="seal-crop" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}">${imageLink}</span>`
+      ? `<span class="seal-crop is-loading" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}">${imageLink}</span>`
       : annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
     return `<figure class="entry-image">${annotatedImage}</figure>`;
   }).filter(Boolean).join('');
@@ -334,6 +334,7 @@ function setupSealAnnotations() {
   const annotatedImages = [...document.querySelectorAll('.annotated-image img')];
   const cropImages = [...document.querySelectorAll('.seal-crop img')];
   if (!annotatedImages.length && !cropImages.length) return;
+  const cropReveals = new Map();
   const update = () => {
     annotatedImages.forEach((image) => {
       const height = image.clientHeight;
@@ -360,11 +361,19 @@ function setupSealAnnotations() {
     });
   };
   annotatedImages.forEach((image) => image.addEventListener('load', update));
-  cropImages.forEach((image) => image.addEventListener('load', update));
+  cropImages.forEach((image) => {
+    const reveal = () => {
+      update();
+      image.closest('.seal-crop')?.classList.remove('is-loading');
+    };
+    cropReveals.set(image, reveal);
+    image.addEventListener('load', reveal);
+    if (image.complete && image.naturalWidth && image.naturalHeight) reveal();
+  });
   window.addEventListener('resize', update, { passive: true });
   state.sealMarkerCleanup = () => {
     annotatedImages.forEach((image) => image.removeEventListener('load', update));
-    cropImages.forEach((image) => image.removeEventListener('load', update));
+    cropImages.forEach((image) => image.removeEventListener('load', cropReveals.get(image)));
     window.removeEventListener('resize', update);
   };
   update();
