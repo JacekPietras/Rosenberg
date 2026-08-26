@@ -547,9 +547,19 @@ function setupImageLightbox() {
     }
   });
   lightboxAnnotations.addEventListener('pointerup', () => { if (drag) queueSave(); drag = null; });
-  lightboxAnnotations.addEventListener('click', (event) => {
-    const marker = event.target.closest('.seal-marker');
-    if (marker && editingContext) { selectedIndex = Number(marker.dataset.sealIndex); renderLightboxSeals(); }
+  lightboxStage.addEventListener('click', (event) => {
+    if (!editingContext) return;
+    const marker = event.target.closest?.('.seal-marker');
+    if (marker) {
+      selectedIndex = Number(marker.dataset.sealIndex);
+      renderLightboxSeals();
+      return;
+    }
+    if (selectedIndex !== null) {
+      selectedIndex = null;
+      renderLightboxSeals();
+      queueSave();
+    }
   });
   lightbox.addEventListener('wheel', (event) => {
     // A modal should own the wheel while it is open; otherwise the page can
