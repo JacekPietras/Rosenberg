@@ -170,6 +170,15 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .source-list > li:first-child, .facts > li:first-child { margin-top: 0; }
 .diagram { margin: 1.25rem 0; padding: 1rem; overflow-x: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; }
 .diagram svg { display: block; max-width: none; height: auto; margin: 0 auto; }
+.people-tree { margin: 1.25rem 0; padding: 1rem; overflow-x: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; }
+.people-tree svg { display: block; min-width: 100%; height: auto; }
+.people-tree-node rect { fill: var(--surface-raised); stroke: var(--accent); stroke-width: 1.5; }
+.people-tree-node text { fill: var(--ink); font-size: 14px; }
+.people-tree-node .people-tree-name { font-size: 16px; font-weight: 650; }
+.people-tree-node .people-tree-detail { fill: var(--muted); font-size: 12px; }
+.people-tree-parent { stroke: var(--accent); stroke-width: 1.5; }
+.people-tree-spouse { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.people-tree-edge-label { fill: var(--muted); font-size: 11px; text-anchor: middle; }
 .entry-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.25rem 0; }
 .entry-image { flex: 1 1 12rem; max-width: 100%; margin: 0; text-align: center; }
 .entry-image img { display: block; max-width: 100%; height: auto; max-height: 32rem; margin: 0 auto; }
@@ -214,6 +223,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .seal-marker-label { position: absolute; top: calc(100% + .45rem); left: 50%; display: block; padding: .05rem .2rem; color: #fff; background: color-mix(in srgb, #9d263b 88%, transparent); border-radius: 3px; font-size: .5rem; line-height: 1.25; pointer-events: none; white-space: nowrap; transform: translateX(-50%); }
 :root[data-theme="light"] .seal-marker-label { color: #fff; }
 :root[data-theme="light"] .diagram { background: #f2f5f8; }
+:root[data-theme="light"] .people-tree { background: #f2f5f8; }
 :root[data-theme="light"] .document.important { background: #fff1f1; border-color: #e5b8b8; }
 :root[data-theme="light"] .label-sidebar a.selected[data-label="important"] { color: #b42332; background: #fff1f1; }
 
