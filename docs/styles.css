@@ -193,10 +193,11 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .image-lightbox-close:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .annotated-image { position: relative; display: inline-block; max-width: 100%; overflow: visible; }
 .annotated-image > a { display: block; }
-.seal-marker { position: absolute; z-index: 1; display: block; width: var(--seal-diameter, 0px); height: var(--seal-diameter, 0px); border: 2px solid #d9485f; border-radius: 50%; transform: translate(-50%, -50%) rotate(var(--seal-rotation, 0deg)) rotate(calc(-1 * var(--seal-widening-rotation, 0deg))) scaleX(calc(1 + var(--seal-width, 0))) rotate(var(--seal-widening-rotation, 0deg)); pointer-events: none; }
+.seal-marker { position: absolute; z-index: 1; display: block; width: var(--seal-diameter, 0px); height: var(--seal-diameter, 0px); transform: translate(-50%, -50%); pointer-events: none; }
+.seal-marker::before { position: absolute; inset: 0; border: 2px solid #d9485f; border-radius: 50%; content: ''; transform: rotate(var(--seal-rotation, 0deg)) rotate(calc(-1 * var(--seal-widening-rotation, 0deg))) scaleX(calc(1 + var(--seal-width, 0))) rotate(var(--seal-widening-rotation, 0deg)); pointer-events: none; }
 .image-lightbox.is-editable .image-lightbox-annotations { pointer-events: auto; }
 .image-lightbox.is-editable .seal-marker { pointer-events: auto; cursor: move; }
-.image-lightbox.is-editable .seal-marker.selected { border-color: #ffd166; }
+.image-lightbox.is-editable .seal-marker.selected::before { border-color: #ffd166; }
 .seal-marker-label { position: absolute; top: calc(100% + .45rem); left: 50%; display: block; padding: .05rem .2rem; color: #fff; background: color-mix(in srgb, #9d263b 88%, transparent); border-radius: 3px; font-size: .5rem; line-height: 1.25; pointer-events: none; white-space: nowrap; transform: translateX(-50%); }
 :root[data-theme="light"] .seal-marker-label { color: #fff; }
 :root[data-theme="light"] .diagram { background: #f2f5f8; }
