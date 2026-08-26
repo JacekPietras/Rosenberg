@@ -79,6 +79,7 @@ function updateFactsControl() {
 if (location.hash.startsWith('#year-')) history.replaceState(null, '', `${location.pathname}${location.search}`);
 
 function applyMermaidTheme() {
+  if (typeof mermaid === 'undefined') return;
   mermaid.initialize({ startOnLoad: false, theme: state.darkMode ? 'dark' : 'default', themeVariables: state.darkMode ? { background: '#11161c', primaryColor: '#1a1e23', primaryTextColor: '#e8edf2', primaryBorderColor: '#526274', lineColor: '#8eb7ff', secondaryColor: '#15181c', tertiaryColor: '#1b2c47' } : {} });
 }
 
@@ -405,12 +406,21 @@ function setupImageLightbox() {
   let selectedIndex = null;
   let saveTimer = null;
   let drag = null;
+  const SEAL_SIZE_STEP = 0.002;
   if (editor) editor.hidden = !editable;
 
   const currentSeals = () => editingContext?.node?.seals || [];
   const updateEditorControls = () => {
     const selected = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
     if (removeSealButton) removeSealButton.hidden = !selected;
+  };
+  const resizeSeal = (index, amount) => {
+    const seal = currentSeals()[index];
+    if (!seal) return;
+    seal.size = Math.max(0.01, Math.min(0.5, Number(seal.size) + amount));
+    selectedIndex = index;
+    renderLightboxSeals();
+    queueSave();
   };
   const renderLightboxSeals = () => {
     const seals = currentSeals();
@@ -541,18 +551,17 @@ function setupImageLightbox() {
     const marker = event.target.closest('.seal-marker');
     if (marker && editingContext) { selectedIndex = Number(marker.dataset.sealIndex); renderLightboxSeals(); }
   });
-  lightboxAnnotations.addEventListener('wheel', (event) => {
+  lightbox.addEventListener('wheel', (event) => {
+    // A modal should own the wheel while it is open; otherwise the page can
+    // scroll underneath it. The marker, when present, is the resize target.
+    event.preventDefault();
     if (!editingContext) return;
     const marker = event.target.closest('.seal-marker');
     if (!marker) return;
     const index = Number(marker.dataset.sealIndex);
-    const seal = currentSeals()[index];
-    if (!seal) return;
-    seal.size = Math.max(0.01, Math.min(0.5, Number(seal.size) + (event.deltaY < 0 ? 0.001 : -0.001)));
-    selectedIndex = index;
-    renderLightboxSeals();
-    queueSave();
-    event.preventDefault();
+    // deltaMode differs between mouse wheels, trackpads, and browsers. Use
+    // the direction only so one gesture has predictable precision everywhere.
+    resizeSeal(index, event.deltaY < 0 ? SEAL_SIZE_STEP : -SEAL_SIZE_STEP);
   }, { passive: false });
   addSealButton?.addEventListener('click', () => {
     if (!editingContext) return;
@@ -1152,7 +1161,7 @@ async function renderActive() {
   }
   setupSealAnnotations();
   const diagrams = $('#content').querySelectorAll('.mermaid');
-  if (diagrams.length) await mermaid.run({ nodes: diagrams });
+  if (diagrams.length && typeof mermaid !== 'undefined') await mermaid.run({ nodes: diagrams });
   if (state.active === 'letters') {
     if (shouldRestoreLetter) restoreLetter(paths);
     setupYearHighlight(paths);
