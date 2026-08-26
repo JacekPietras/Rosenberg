@@ -756,8 +756,8 @@ function renderSealsPage() {
     return `<article class="entry seal-entry" id="seal-${index}"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img, entry.seals, imageContext)}</div></article>`;
   }).join('');
   if (!allEntries.length) return '<article class="document"><h2>Seals</h2><p class="status">No named seals are recorded in the letter images.</p></article>';
-  if (!entries.length) return `<div class="seals-layout">${renderSealSidebar(allEntries)}<article class="document seals-document"><div class="document-heading"><h2>Seals</h2></div><p class="status">No seals match the selected names.</p></article></div>`;
-  return `<div class="seals-layout">${renderSealSidebar(allEntries)}<article class="document seals-document"><div class="document-heading"><h2>Seals</h2><small>${entries.length} annotation${entries.length === 1 ? '' : 's'}</small></div>${content}</article></div>`;
+  if (!entries.length) return `<div class="seals-layout">${renderSealSidebar(allEntries)}<article class="document seals-document"><p class="status">No seals match the selected names.</p></article></div>`;
+  return `<div class="seals-layout">${renderSealSidebar(allEntries)}<article class="document seals-document">${content}</article></div>`;
 }
 
 function setupSealHighlight(entries) {
