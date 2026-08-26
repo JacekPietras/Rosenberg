@@ -417,9 +417,16 @@ function setupImageLightbox() {
   let magnifierPoint = null;
   const SEAL_SIZE_STEP = 0.002;
   const MAGNIFIER_SIZE = 0.12;
+  const MAGNIFIER_SIZE_STEP = 0.01;
+  let magnifierSize = MAGNIFIER_SIZE;
   if (editor) editor.hidden = !editable;
 
   const currentSeals = () => editingContext?.node?.seals || [];
+  const magnifierMaximumSize = () => {
+    const imageHeight = lightboxAnnotations.clientHeight;
+    const previewHeight = sealPreviewCrop?.clientHeight;
+    return imageHeight && previewHeight ? Math.max(0.03, Math.min(0.5, previewHeight / imageHeight)) : MAGNIFIER_SIZE;
+  };
   const updateSealPreview = () => {
     const seal = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
     if (!sealPreview || !sealPreviewCrop || !sealPreviewImage) return;
@@ -435,10 +442,15 @@ function setupImageLightbox() {
       sealPreviewName.value = seal.person || '';
     } else if (magnifierPoint) {
       ({ x, y } = magnifierPoint);
-      size = MAGNIFIER_SIZE;
+      magnifierSize = Math.min(magnifierMaximumSize(), Math.max(0.03, magnifierSize));
+      size = magnifierSize;
       sealPreview.classList.add('is-magnifier');
       sealPreview.classList.remove('is-seal-preview');
       sealPreviewName.hidden = true;
+      if (magnifierSize >= magnifierMaximumSize() - 0.0001) {
+        sealPreview.hidden = true;
+        return;
+      }
     } else {
       sealPreview.hidden = true;
       return;
@@ -633,10 +645,12 @@ function setupImageLightbox() {
       updateSealPreview();
       return;
     }
+    const wasInactive = !magnifierPoint;
     magnifierPoint = {
       x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)),
       y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)),
     };
+    if (wasInactive) magnifierSize = magnifierMaximumSize();
     updateSealPreview();
     const lightboxRect = lightbox.getBoundingClientRect();
     sealPreview.style.left = `${event.clientX - lightboxRect.left}px`;
@@ -652,6 +666,12 @@ function setupImageLightbox() {
     // scroll underneath it. The marker, when present, is the resize target.
     event.preventDefault();
     if (!editingContext) return;
+    if (selectedIndex === null && magnifierPoint) {
+      const maximum = magnifierMaximumSize();
+      magnifierSize = Math.max(0.03, Math.min(maximum, magnifierSize + (event.deltaY < 0 ? -MAGNIFIER_SIZE_STEP : MAGNIFIER_SIZE_STEP)));
+      updateSealPreview();
+      return;
+    }
     const marker = event.target.closest('.seal-marker');
     if (!marker) return;
     const index = Number(marker.dataset.sealIndex);
