@@ -21,14 +21,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723837%2F04_0001723837_0001_4-1723837-1.jpg",
           "seals": [
             {
-              "person": "Kunz Elder?",
-              "position": "0.2720,0.7935",
-              "size": 0.08,
-              "type": "swans"
+              "person": "Kunz Elder",
+              "position": "0.2725,0.7948",
+              "size": 0.06799999999999999,
+              "type": "swans",
+              "rotation": 0,
+              "width": 0.13,
+              "wideningRotation": -35
             },
             {
               "person": "Thomas?",
-              "position": "0.5934,0.7444",
+              "position": "0.5929,0.7444",
               "size": 0.08,
               "type": "full"
             },
@@ -60,7 +63,10 @@
               "person": "?",
               "position": "0.5505,0.7306",
               "size": 0.05799999999999998,
-              "type": "swans"
+              "type": "swans",
+              "width": 0.22,
+              "wideningRotation": -38,
+              "rotation": 6
             }
           ]
         },

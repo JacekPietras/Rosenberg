@@ -20,7 +20,9 @@
               "person": "Engelhard",
               "position": "0.4037,0.7230",
               "size": 0.15400000000000005,
-              "type": "swans"
+              "type": "swans",
+              "width": 0.13,
+              "rotation": -15
             }
           ]
         },

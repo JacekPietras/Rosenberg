@@ -36,9 +36,12 @@
             },
             {
               "person": "Kunz Elder",
-              "position": "0.3092,0.7737",
-              "size": 0.08,
-              "type": "swans"
+              "position": "0.3097,0.7731",
+              "size": 0.06599999999999999,
+              "type": "swans",
+              "width": 0.56,
+              "wideningRotation": -29,
+              "rotation": 6
             },
             {
               "person": "Thomas",
