@@ -29,9 +29,6 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             notes_path = ROOT / "data" / "notes.json"
             if notes_path.is_file():
                 paths.append({"path": "data/notes.json", "version": notes_path.stat().st_mtime_ns})
-            seals_path = ROOT / "data" / "seals.json"
-            if seals_path.is_file():
-                paths.append({"path": "data/seals.json", "version": seals_path.stat().st_mtime_ns})
             paths.sort(key=lambda item: item["path"])
             payload = json.dumps(paths).encode("utf-8")
             self.send_response(200)

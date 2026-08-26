@@ -210,13 +210,6 @@ def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = 
                 for image in entry.get("img", []):
                     if isinstance(image, dict) and image.get("seals") == []:
                         del image["seals"]
-                legacy_seals = entry.get("seals")
-                if isinstance(legacy_seals, list) and legacy_seals:
-                    for image in entry.get("img", []):
-                        if isinstance(image, dict) and image.get("deleted") != "true":
-                            image.setdefault("seals", legacy_seals)
-                            del entry["seals"]
-                            break
                 matches.append((path, document))
     if not matches:
         raise ValueError(f"No letter JSON entry found for AID {aid}")

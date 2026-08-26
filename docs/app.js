@@ -252,20 +252,6 @@ function letterForSource(source) {
   }, null), null);
 }
 
-function sealSourceMarkup(source) {
-  const match = letterForSource(source);
-  if (!match) return markdownLinks(source);
-  const params = new URLSearchParams({ tab: 'letters', letter: match.path });
-  return `<a href="?${params.toString()}">${markdownLinks(source)}</a>`;
-}
-
-function sealLetterUrlMarkup(source) {
-  const match = letterForSource(source);
-  if (!match) return '';
-  const url = match.entry.url || state.documents.get(match.path)?.url;
-  return url ? urlMarkup(url) : '';
-}
-
 function diagramMarkup(value = '') {
   const source = String(value).replace(/^\s*```mermaid\s*\n?/, '').replace(/\n?\s*```\s*$/, '').trim();
   return source ? `<div class="diagram mermaid">${escapeHtml(source)}</div>` : '';
@@ -294,7 +280,7 @@ function localImageName(fileName) {
   }
 }
 
-function imageMarkup(value = '', legacySeals = [], context = {}) {
+function imageMarkup(value = '', context = {}) {
   const imageNodes = Array.isArray(value) ? value : [value];
   const pathParts = location.pathname.split('/').filter(Boolean);
   const repository = pathParts[0];
@@ -302,9 +288,7 @@ function imageMarkup(value = '', legacySeals = [], context = {}) {
   const images = imageNodes.map((node, imageIndex) => {
     if (node && typeof node === 'object' && node.deleted === 'true') return '';
     const file = typeof node === 'object' && node !== null ? node.src : node;
-    const seals = typeof node === 'object' && node !== null
-      ? node.seals
-      : imageIndex === 0 ? legacySeals : [];
+    const seals = typeof node === 'object' && node !== null ? node.seals : [];
     const fileName = String(file || '').trim();
     if (!fileName) return '';
     let source;
@@ -326,16 +310,14 @@ function imageMarkup(value = '', legacySeals = [], context = {}) {
         ? `https://raw.githubusercontent.com/${owner}/${repository}/main/data/images/${encodedPath}`
         : `../data/images/${encodedPath}`;
     }
-    const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals);
+    const annotations = sealAnnotationMarkup(seals);
     const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
-    const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="${context.sealScreen ? 'eager' : 'lazy'}"${fallbackAttribute}>`;
+    const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="lazy"${fallbackAttribute}>`;
     const editAttributes = context.path && context.index !== null && context.index !== undefined
       ? ` data-document-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${context.imageIndex ?? imageIndex}"`
       : '';
     const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${editAttributes}>${image}</a>`;
-    const annotatedImage = context.crop
-      ? `<span class="seal-crop" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}">${imageLink}</span>`
-      : annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
+    const annotatedImage = annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
     return `<figure class="entry-image">${annotatedImage}</figure>`;
   }).filter(Boolean).join('');
   return images ? `<div class="entry-images">${images}</div>` : '';
@@ -345,8 +327,7 @@ function setupSealAnnotations() {
   state.sealMarkerCleanup?.();
   state.sealMarkerCleanup = null;
   const annotatedImages = [...document.querySelectorAll('.annotated-image img')];
-  const cropImages = [...document.querySelectorAll('.seal-crop img')];
-  if (!annotatedImages.length && !cropImages.length) return;
+  if (!annotatedImages.length) return;
   const update = () => {
     annotatedImages.forEach((image) => {
       const height = image.clientHeight;
@@ -354,35 +335,12 @@ function setupSealAnnotations() {
         marker.style.setProperty('--seal-diameter', `${height * Number(marker.dataset.size)}px`);
       });
     });
-    cropImages.forEach((image) => {
-      if (!image.naturalWidth || !image.naturalHeight) return;
-      const crop = image.closest('.seal-crop');
-      if (!crop) return;
-      const x = Number(crop.dataset.sealX);
-      const y = Number(crop.dataset.sealY);
-      const size = Number(crop.dataset.sealSize);
-      if (![x, y, size].every(Number.isFinite) || size <= 0 || !crop.clientWidth || !crop.clientHeight) return;
-      const cropSize = image.naturalHeight * Math.max(size, 0.035);
-      const scale = crop.clientHeight / cropSize;
-      const width = image.naturalWidth * scale;
-      const height = image.naturalHeight * scale;
-      image.style.width = `${width}px`;
-      image.style.height = `${height}px`;
-      image.style.left = `${crop.clientWidth / 2 - x * width}px`;
-      image.style.top = `${crop.clientHeight / 2 - y * height}px`;
-    });
   };
   annotatedImages.forEach((image) => image.addEventListener('load', update));
-  cropImages.forEach((image) => image.addEventListener('load', update));
   window.addEventListener('resize', update, { passive: true });
-  const cropBoxes = [...new Set(cropImages.map((image) => image.closest('.seal-crop')).filter(Boolean))];
-  const resizeObserver = cropBoxes.length && 'ResizeObserver' in window ? new ResizeObserver(update) : null;
-  cropBoxes.forEach((box) => resizeObserver?.observe(box));
   state.sealMarkerCleanup = () => {
     annotatedImages.forEach((image) => image.removeEventListener('load', update));
-    cropImages.forEach((image) => image.removeEventListener('load', update));
     window.removeEventListener('resize', update);
-    resizeObserver?.disconnect();
   };
   update();
 }
@@ -446,7 +404,6 @@ function setupImageLightbox() {
       images.forEach((image) => {
         if (image && typeof image === 'object' && Array.isArray(image.seals) && image.seals.length === 0) delete image.seals;
       });
-      if (Array.isArray(entry.seals) && entry.seals.length === 0) delete entry.seals;
     }
     try {
       const response = await fetch('/api/save-document', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path: editingContext.path, document: state.documents.get(editingContext.path) }) });
@@ -500,8 +457,6 @@ function setupImageLightbox() {
     if (node && typeof node !== 'object') {
       if (entry && !Array.isArray(entry.img)) {
         entry.img = { src: node };
-        if (Array.isArray(entry.seals) && entry.seals.length) entry.img.seals = entry.seals;
-        delete entry.seals;
       } else if (entry) entry.img[imageIndex] = { src: node };
       node = entry && (Array.isArray(entry.img) ? entry.img[imageIndex] : entry.img);
     }
@@ -637,7 +592,7 @@ async function getRepositoryFiles() {
   if (!response.ok) throw new Error(`GitHub repository tree: ${response.status}`);
   const tree = await response.json();
   return tree.tree
-    .filter((item) => item.type === 'blob' && (/^data\/(books|letters)\/.*\.json$/.test(item.path) || item.path === 'data/notes.json' || item.path === 'data/seals.json'))
+    .filter((item) => item.type === 'blob' && (/^data\/(books|letters)\/.*\.json$/.test(item.path) || item.path === 'data/notes.json'))
     .map((item) => ({ path: item.path, version: item.sha }))
     .sort((left, right) => left.path.localeCompare(right.path));
 }
@@ -670,47 +625,6 @@ function documentYear(doc) {
 function bookSortYear(doc, path) {
   const match = String(doc?.book || path || '').match(/\d{4}/);
   return match ? Number(match[0]) : -Infinity;
-}
-
-function sealSortYear(entry) {
-  const years = String(entry?.date || '').match(/\d{4}/g);
-  return years?.length ? Math.min(...years.map(Number)) : Infinity;
-}
-
-function letterSealEntries() {
-  const sealEntries = [];
-  state.manifest.letters.forEach((path) => {
-    const document = state.documents.get(path);
-    (document?.entries || []).forEach((entry, entryIndex) => {
-      const imageNodes = Array.isArray(entry.img) ? entry.img : [entry.img];
-      imageNodes.forEach((node, imageIndex) => {
-        if (node && typeof node === 'object' && node.deleted === 'true') return;
-        const seals = node && typeof node === 'object'
-          ? node.seals
-          : imageIndex === 0 ? entry.seals : [];
-        if (!Array.isArray(seals) || !seals.length || !node) return;
-        seals.forEach((seal) => {
-          const person = String(seal?.person || '').trim();
-          const position = String(seal?.position || '').split(',').map(Number);
-          const size = Number(seal?.size);
-          if (!person || position.length !== 2 || !position.every(Number.isFinite) || !Number.isFinite(size) || size <= 0) return;
-          sealEntries.push({
-          title: person,
-          source: entry.source,
-          date: entry.date || document.date,
-          url: entry.url || document.url,
-          img: [node],
-          seals,
-          crop: { x: position[0], y: position[1], size },
-          sourcePath: path,
-          sourceIndex: entryIndex,
-          sourceImageIndex: imageIndex,
-          });
-        });
-      });
-    });
-  });
-  return sealEntries;
 }
 
 function urlLabel(value) {
@@ -894,7 +808,7 @@ function setupPersonNavigation() {
 }
 
 function renderTabs() {
-  const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, ...(state.manifest.seals ? [{ path: 'data/seals.json', label: 'Seals' }] : [])];
+  const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }];
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
   document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; state.place = null; state.person = null; savePreferences(); renderTabs(); renderActive(); }));
 }
@@ -914,7 +828,7 @@ function languageMarkup(entry) {
 function renderEntry(entry, { title = true, date = true, source = true, path = '', index = null } = {}) {
   const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
   const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
-  return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, entry.seals, { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`;
+  return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`;
 }
 
 function bookSections(entries) {
@@ -940,23 +854,6 @@ function renderDocument(doc, path, index) {
       const sectionContent = section.entries.map((entry) => renderEntry(entry, { title: false, path, index: entries.indexOf(entry) })).join('');
       return `<article class="document book-document"><div class="document-heading"><div><h2>${markdownLinks(sectionTitle)}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
     }).join('');
-  }
-  if (path === 'data/seals.json') {
-    const catalogEntries = entries.map((entry, index) => ({ entry, path, index }));
-    const letterEntries = letterSealEntries().map((entry) => ({ entry, path: entry.sourcePath, index: entry.sourceIndex }));
-    const sealContent = [...catalogEntries, ...letterEntries].sort((left, right) => sealSortYear(left.entry) - sealSortYear(right.entry) || left.index - right.index).map(({ entry, path: sourcePath, index: sourceIndex }) => {
-      const titleMarkup = entry.title ? `<h3>${markdownLinks(entry.title)}</h3>` : '';
-      const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
-      const sourceMarkup = entry.source ? `<p class="source">${sealSourceMarkup(entry.source)}</p>` : '';
-      const urlMarkupForLetter = entry.source
-        ? sealLetterUrlMarkup(entry.source) || urlMarkup(entry.url)
-        : urlMarkup(entry.url);
-      const imageContext = entry.sourcePath
-        ? { path: sourcePath, index: sourceIndex, imageIndex: entry.sourceImageIndex, crop: entry.crop, sealScreen: true }
-        : { path, index: sourceIndex, sealScreen: true };
-      return `<article class="entry seal-entry"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img, entry.seals, imageContext)}</div></article>`;
-    }).join('');
-    return `<article class="document seals-document"><div class="document-heading"><h2>${inlineMarkup(title)}</h2></div>${sealContent}</article>`;
   }
   const content = entries.map((entry, entryIndex) => renderEntry(entry, { path, index: entryIndex })).join('');
   const important = label.toLocaleLowerCase() === 'important' ? ' important' : '';
@@ -1094,11 +991,10 @@ async function loadAll() {
   const manifest = {
     books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
     notes: paths.includes('data/notes.json'),
-    seals: paths.includes('data/seals.json'),
     letters: letterPaths,
   };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
-  if (state.active !== 'letters' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || (manifest.seals ? 'data/seals.json' : 'letters');
+  if (state.active !== 'letters' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
   savePreferences();
   renderTabs(); await renderActive();
 }
