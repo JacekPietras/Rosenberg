@@ -929,6 +929,8 @@ function renderDocument(doc, path, index) {
   const entries = doc.entries || [];
   const title = documentTitle(doc, path);
   const date = doc.date && formatDate(doc.date) !== title ? `<small>${escapeHtml(formatDate(doc.date))}</small>` : '';
+  const label = String(doc.label || '').trim();
+  const headingAside = label || date ? `<div class="document-heading-aside">${label ? `<span class="letter-label">${escapeHtml(label)}</span>` : ''}${date}</div>` : '';
   const url = doc.url ? urlMarkup(doc.url) : '';
   const year = documentYear(doc);
   const anchor = year ? ` id="year-${year}-${index}"` : '';
@@ -957,8 +959,9 @@ function renderDocument(doc, path, index) {
     return `<article class="document seals-document"><div class="document-heading"><h2>${inlineMarkup(title)}</h2></div>${sealContent}</article>`;
   }
   const content = entries.map((entry, entryIndex) => renderEntry(entry, { path, index: entryIndex })).join('');
-  const important = entries.some((entry) => entry.important === true) ? ' important' : '';
-  return `<article class="document${important}"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${date}</div>${content}</article>`;
+  const important = label.toLocaleLowerCase() === 'important' ? ' important' : '';
+  const dimmed = ['hessen', 'schenk', 'mönch'].includes(label.toLocaleLowerCase()) ? ' dimmed' : '';
+  return `<article class="document${important}${dimmed}"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
 }
 
 function renderYearSidebar(paths) {

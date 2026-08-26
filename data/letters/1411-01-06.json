@@ -1,0 +1,25 @@
+{
+  "date": "1411-01-06",
+  "label": "Hessen",
+  "entries": [
+    {
+      "source": "HStAM, Urk. 56, 757",
+      "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2891199&executionId=eTnbxwOl5s",
+      "german": "Hermann [II. von Altenburg], Abt von Hersfeld, bekundet, dass Berthold von Borsch (Borsa) mit seiner Zustimmung näher genannte Besitzungen in Oberlengsfeld (Obernlengisfelt) [Ortsteil der Gem. Schenklengsfeld, Lkr. Hersfeld-Rotenburg] und Lengsfeld (Lengisfelden) [heute Schenklengsfeld, Lkr. Hersfeld-Rotenburg] an Hermann Rosenberg und dessen Ehefrau Adelheid (Alheide) für 20 Gulden auf Wiederkauf verkauft hat. Es folgen Regelungen zum Wiederkauf der Besitzungen. Siegelankündigung des Abts Hermann und [Bertholds von Borsch (?)]. Nennung weiterer Personen und Orte.",
+      "english": "Hermann [II von Altenburg], Abbot of Hersfeld, acknowledges that Berthold von Borsch (Borsa), with his consent, sold specified properties in Oberlengsfeld (Obernlengisfelt) [a district of the municipality of Schenklengsfeld, Hersfeld-Rotenburg district] and Lengsfeld (Lengisfelden) [today Schenklengsfeld, Hersfeld-Rotenburg district] to Hermann von Rosenberg and his wife Adelheid (Alheide) for 20 guilders with the right of repurchase. Regulations concerning the repurchase of the properties follow. The seals of Abbot Hermann and [Berthold von Borsch (?)] are announced. Other people and places are mentioned.",
+      "facts": [
+        "Hermann von Rosenberg acquired specified properties in Oberlengsfeld and Lengsfeld with his wife Adelheid from Berthold von Borsch, subject to repurchase",
+        "Adelheid was spouse of Hermann von Rosenberg",
+        "Hermann II von Altenburg, Abbot of Hersfeld, consented to Berthold von Borsch's sale of the properties to Hermann von Rosenberg and Adelheid"
+      ],
+      "img": [
+        {
+          "src": "https://digitalisate-he.arcinsys.de/hstam/urk._56/757/hstam_urk._56_nr_757_r.jpg"
+        },
+        {
+          "src": "https://digitalisate-he.arcinsys.de/hstam/urk._56/757/hstam_urk._56_nr_757_v.jpg"
+        }
+      ]
+    }
+  ]
+}

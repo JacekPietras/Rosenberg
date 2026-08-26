@@ -37,6 +37,7 @@ data/
 ```json
 {
   "date": "1399-02-01",
+  "label": "Schenk",
   "place": "Boxberg",
   "entries": [
     {
@@ -62,6 +63,8 @@ data/
   ]
 }
 ```
+
+The optional letter-level `label` is displayed as a red badge in the upper-right of the letter heading. The special label `"important"` gives the letter a reddish background; `"Hessen"`, `"Schenk"`, and `"Mönch"` give it a dimmed background.
 
 Each `img` item is an image node with a `src` URL and an optional `seals` array for annotations on that image. Removed images remain in the JSON with `"deleted": "true"`; the viewer hides them and image import treats their `src` as already known. `position` is the comma-separated normalized center (`x,y`, both from 0 to 1), and `size` is the seal diameter as a fraction of the image height. The viewer draws a circle and the person’s name beside it. Use an empty array when an image has no recorded seal annotations, or omit the field until annotations are available.
 
