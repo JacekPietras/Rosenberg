@@ -7,7 +7,7 @@ This repository contains digitized historical sources about the von Rosenberg fa
 ```text
 data/
 ├── books/        # Structured source books
-├── notes.json     # Research notes displayed as a book-style collection
+├── notes/         # Research notes displayed as a book-style collection
 ├── letters/      # Letters and documents
 ├── calendar.md   # Liturgical calendar and dated annotations
 ├── people.md     # People and relationships (JSON)

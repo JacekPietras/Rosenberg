@@ -867,7 +867,7 @@ async function getRepositoryFiles() {
   if (!response.ok) throw new Error(`GitHub repository tree: ${response.status}`);
   const tree = await response.json();
   return tree.tree
-    .filter((item) => item.type === 'blob' && (/^data\/(books|letters)\/.*\.json$/.test(item.path) || item.path === 'data/notes.json'))
+    .filter((item) => item.type === 'blob' && /^data\/(books|letters|notes)\/.*\.json$/.test(item.path))
     .map((item) => ({ path: item.path, version: item.sha }))
     .sort((left, right) => left.path.localeCompare(right.path));
 }
@@ -1188,7 +1188,7 @@ function documentNavigationUrl(path, index) {
 
 function renderEntityMentionsPage(entity, mentions, { kind, notFoundMessage, languageMarkup, extraMarkup } = {}) {
   if (!entity) return `<article class="document"><h2>${kind === 'place' ? 'Place' : 'Person'} not found</h2><p class="status">${notFoundMessage}</p></article>`;
-  const heading = `<article class="document ${kind}-document-heading"><div class="document-heading"><div><h2>${escapeHtml(entity.name)}</h2><p class="${kind}-variants">${entity.names.map(escapeHtml).join(' · ')}</p></div><small>${mentions.length} mention${mentions.length === 1 ? '' : 's'}</small></div></article>`;
+  const heading = `<article class="document ${kind}-document-heading"><div class="document-heading"><div><h2>${escapeHtml(entity.name)}</h2></div><small>${mentions.length} mention${mentions.length === 1 ? '' : 's'}</small></div></article>`;
   const content = mentions.map(({ doc, path, entry, index }) => `<article class="document ${kind}-mention" role="link" tabindex="0" data-document-href="${escapeHtml(documentNavigationUrl(path, index))}"><p class="entry-title">${markdownLinks(entry.title || documentTitle(doc, path))}</p>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${extraMarkup ? extraMarkup(doc, entry) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
   return `${heading}${content || '<article class="document"><p class="status">No mentions found.</p></article>'}`;
 }
@@ -1242,7 +1242,7 @@ function renderPersonPage() {
 }
 
 function renderTabs() {
-  const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, { path: 'seals', label: 'Seals' }];
+  const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, { path: 'seals', label: 'Seals' }];
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
   document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => {
     const nextActive = button.dataset.path;
@@ -1285,7 +1285,7 @@ function renderDocument(doc, path, index) {
   const url = doc.url ? urlMarkup(doc.url) : '';
   const year = documentYear(doc);
   const anchor = year ? ` id="year-${year}-${index}"` : '';
-  if (path.startsWith('data/books/') || path === 'data/notes.json') {
+  if (path.startsWith('data/books/') || path.startsWith('data/notes/')) {
     return bookSections(entries).map((section, sectionIndex) => {
       const sectionTitle = section.title || (sectionIndex === 0 ? title : 'Untitled section');
       const sectionContent = section.entries.map((entry) => renderEntry(entry, { title: false, path, index: entries.indexOf(entry) })).join('');
@@ -1413,6 +1413,8 @@ function scrollToEntryHash() {
 }
 
 async function renderActive() {
+  $('#status').textContent = '';
+  $('#status').classList.remove('error');
   state.sealMarkerCleanup?.();
   state.sealMarkerCleanup = null;
   if (state.person) {
@@ -1483,7 +1485,7 @@ async function loadAll() {
   const letterPaths = paths.filter((path) => path.startsWith('data/letters/'));
   const manifest = {
     books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
-    notes: paths.includes('data/notes.json'),
+    notes: paths.includes('data/notes/notes.json'),
     letters: letterPaths,
   };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;

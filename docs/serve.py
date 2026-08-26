@@ -23,12 +23,9 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                     "path": str(path.relative_to(ROOT)).replace("\\", "/"),
                     "version": path.stat().st_mtime_ns,
                 }
-                for folder in (ROOT / "data" / "books", ROOT / "data" / "letters")
+                for folder in (ROOT / "data" / "books", ROOT / "data" / "letters", ROOT / "data" / "notes")
                 for path in folder.glob("*.json")
             ]
-            notes_path = ROOT / "data" / "notes.json"
-            if notes_path.is_file():
-                paths.append({"path": "data/notes.json", "version": notes_path.stat().st_mtime_ns})
             paths.sort(key=lambda item: item["path"])
             payload = json.dumps(paths).encode("utf-8")
             self.send_response(200)
