@@ -15,25 +15,28 @@ function loadPreferences() {
       place: typeof preferences.place === 'string' ? preferences.place : null,
       person: typeof preferences.person === 'string' ? preferences.person : null,
       letter: typeof preferences.letter === 'string' ? preferences.letter : null,
+      letterLabels: Array.isArray(preferences.letterLabels) ? preferences.letterLabels : [],
+      hiddenLetterLabels: Array.isArray(preferences.hiddenLetterLabels) ? preferences.hiddenLetterLabels : null,
+      sealNames: Array.isArray(preferences.sealNames) ? preferences.sealNames : [],
       language: normalizeDisplayMode(preferences.language),
       showFacts: preferences.showFacts !== false,
       darkMode: preferences.darkMode !== false,
     };
   } catch {
-    return { active: null, place: null, person: null, letter: null, language: 'english', showFacts: true, darkMode: true };
+    return { active: null, place: null, person: null, letter: null, letterLabels: [], hiddenLetterLabels: null, sealNames: [], language: 'english', showFacts: true, darkMode: true };
   }
 }
 
 function savePreferences() {
   try {
-    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, place: state.place, person: state.person, letter: state.letter, language: state.language, showFacts: state.showFacts, darkMode: state.darkMode }));
+    localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ active: state.active, place: state.place, person: state.person, letter: state.letter, letterLabels: state.letterLabels, hiddenLetterLabels: state.hiddenLetterLabels, sealNames: state.sealNames, language: state.language, showFacts: state.showFacts, darkMode: state.darkMode }));
   } catch {
     // Preferences are optional; rendering should continue if storage is unavailable.
   }
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const $ = (selector) => document.querySelector(selector);
 const REFRESH_INTERVAL = 30000;
 
@@ -688,6 +691,26 @@ function letterSealEntries() {
   return sealEntries;
 }
 
+function normalizeSealFilter(value) {
+  const label = String(value || '').trim();
+  return label.includes('?') ? 'unknown' : label.toLocaleLowerCase();
+}
+
+function sealMatchesSelected(title, selected) {
+  const label = String(title || '').trim();
+  const normalized = label.toLocaleLowerCase();
+  if (selected.has('unknown') && label.includes('?')) return true;
+  return [...selected].some((key) => {
+    if (key === 'unknown') return false;
+    if (normalized === key) return true;
+    if (key.includes(' ')) return false;
+    const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const namePattern = new RegExp(`(?:^|[+\\/\\s])${escaped}\\??(?=$|[+\\/\\s])`, 'iu');
+    const vonPattern = new RegExp(`(?:^|[+\\/\\s])${escaped}\\??\\s+von(?:\\s|$)`, 'iu');
+    return namePattern.test(label) && !vonPattern.test(label);
+  });
+}
+
 function sealSourceMarkup(source) {
   const match = letterForSource(source);
   if (!match) return markdownLinks(source);
@@ -706,18 +729,24 @@ function renderSealSidebar(entries) {
   const labels = new Map();
   entries.forEach((entry, index) => {
     const label = String(entry.title || '').trim();
-    const key = label.toLocaleLowerCase();
+    if (/[+/]/.test(label) || /\szu\s/i.test(label) || /\s(?:elder|knight|nobleman)$/i.test(label)) return;
+    const key = label.includes('?') ? 'unknown' : label.toLocaleLowerCase();
     if (label && !labels.has(key)) labels.set(key, { label, index });
   });
   const links = [...labels.values()]
-    .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
-    .map(({ label, index }) => `<a href="#" data-seal-index="${index}">${escapeHtml(label)}</a>`)
+    .map((item) => item.label.includes('?') ? { ...item, label: 'unknown', key: 'unknown' } : { ...item, key: item.label.toLocaleLowerCase() })
+    .sort((left, right) => left.key === 'unknown' ? -1 : right.key === 'unknown' ? 1 : left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
+    .map(({ label, key }) => {
+      return `<a href="#" class="${state.sealNames.includes(key) ? 'selected' : ''}" data-seal-name="${escapeHtml(key)}">${escapeHtml(label)}</a>`;
+    })
     .join('');
-  return links ? `<aside class="seal-sidebar" aria-label="Seals by name"><h3>Names</h3><nav>${links}</nav></aside>` : '';
+  return links ? `<aside class="seal-sidebar" aria-label="Seals by name"><nav>${links}</nav></aside>` : '';
 }
 
 function renderSealsPage() {
-  const entries = letterSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
+  const allEntries = letterSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
+  const selected = new Set(state.sealNames);
+  const entries = selected.size ? allEntries.filter((entry) => sealMatchesSelected(entry.title, selected)) : allEntries;
   const content = entries.map((entry, index) => {
     const titleMarkup = entry.title ? `<h3>${escapeHtml(entry.title)}</h3>` : '';
     const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
@@ -726,8 +755,9 @@ function renderSealsPage() {
     const imageContext = { path: entry.sourcePath, index: entry.sourceIndex, imageIndex: entry.sourceImageIndex, crop: entry.crop, sealScreen: true };
     return `<article class="entry seal-entry" id="seal-${index}"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img, entry.seals, imageContext)}</div></article>`;
   }).join('');
-  if (!entries.length) return '<article class="document"><h2>Seals</h2><p class="status">No named seals are recorded in the letter images.</p></article>';
-  return `<div class="seals-layout">${renderSealSidebar(entries)}<article class="document seals-document"><div class="document-heading"><h2>Seals</h2><small>${entries.length} annotation${entries.length === 1 ? '' : 's'}</small></div>${content}</article></div>`;
+  if (!allEntries.length) return '<article class="document"><h2>Seals</h2><p class="status">No named seals are recorded in the letter images.</p></article>';
+  if (!entries.length) return `<div class="seals-layout">${renderSealSidebar(allEntries)}<article class="document seals-document"><div class="document-heading"><h2>Seals</h2></div><p class="status">No seals match the selected names.</p></article></div>`;
+  return `<div class="seals-layout">${renderSealSidebar(allEntries)}<article class="document seals-document"><div class="document-heading"><h2>Seals</h2><small>${entries.length} annotation${entries.length === 1 ? '' : 's'}</small></div>${content}</article></div>`;
 }
 
 function setupSealHighlight(entries) {
@@ -738,8 +768,12 @@ function setupSealHighlight(entries) {
   if (!links.length || !targets.length) return;
   links.forEach((link) => link.addEventListener('click', (event) => {
     event.preventDefault();
-    const target = targets[Number(link.dataset.sealIndex)];
-    if (target) window.scrollTo(0, target.getBoundingClientRect().top + window.scrollY - 104);
+    const name = link.dataset.sealName;
+    const index = state.sealNames.indexOf(name);
+    if (index >= 0) state.sealNames.splice(index, 1);
+    else state.sealNames.push(name);
+    savePreferences();
+    renderActive();
   }));
   const update = () => {
     const marker = window.scrollY + 160;
@@ -747,9 +781,10 @@ function setupSealHighlight(entries) {
     targets.forEach((target, index) => {
       if (target.getBoundingClientRect().top + window.scrollY <= marker) current = index;
     });
-    const name = entries[current]?.title?.trim().toLocaleLowerCase();
+    const currentTitle = entries[current]?.title?.trim() || '';
+    const name = currentTitle.includes('?') ? 'unknown' : currentTitle.toLocaleLowerCase();
     links.forEach((link) => {
-      const active = entries[Number(link.dataset.sealIndex)]?.title?.trim().toLocaleLowerCase() === name;
+      const active = link.dataset.sealName === name;
       link.classList.toggle('active', active);
       if (active) link.setAttribute('aria-current', 'true');
       else link.removeAttribute('aria-current');
@@ -994,7 +1029,23 @@ function renderDocument(doc, path, index) {
   return `<article class="document${important}${dimmed}"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
 }
 
-function renderYearSidebar(paths) {
+const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
+
+function letterLabelForPath(path) {
+  return String(state.documents.get(path)?.label || '').trim().toLocaleLowerCase();
+}
+
+function visibleLetterPaths(paths) {
+  const selected = new Set(state.letterLabels);
+  const hidden = new Set(state.hiddenLetterLabels || []);
+  return paths.filter((path) => {
+    const label = letterLabelForPath(path);
+    if (hidden.has(label)) return false;
+    return !selected.size || selected.has(label);
+  });
+}
+
+function renderYearSidebar(paths, labelPaths = paths) {
   const years = [...new Set(paths.map((path) => documentYear(state.documents.get(path))).filter(Boolean))]
     .sort((left, right) => Number(left) - Number(right));
   const yearLinks = years.map((year) => {
@@ -1002,16 +1053,20 @@ function renderYearSidebar(paths) {
     return `<a href="#" data-sidebar-type="year" data-path="${escapeHtml(paths[index])}">${year}</a>`;
   }).join('');
   const labels = new Map();
-  paths.forEach((path) => {
+  labelPaths.forEach((path) => {
     const label = String(state.documents.get(path)?.label || '').trim();
     if (label && !labels.has(label.toLocaleLowerCase())) labels.set(label.toLocaleLowerCase(), { label, path });
   });
   const labelLinks = [...labels.values()]
     .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
-    .map(({ label, path }) => `<a href="#" data-sidebar-type="label" data-label="${escapeHtml(label.toLocaleLowerCase())}" data-path="${escapeHtml(path)}">${escapeHtml(label)}</a>`)
+    .map(({ label, path }) => {
+      const key = label.toLocaleLowerCase();
+      const selected = GREY_LETTER_LABELS.has(key) ? state.hiddenLetterLabels.includes(key) : state.letterLabels.includes(key);
+      return `<a href="#" class="${selected ? 'selected' : ''}" data-sidebar-type="label" data-label="${escapeHtml(key)}" data-path="${escapeHtml(path)}">${escapeHtml(label)}</a>`;
+    })
     .join('');
   if (!yearLinks && !labelLinks) return '';
-  return `${yearLinks ? `<aside class="year-sidebar" aria-label="Letters by year"><nav>${yearLinks}</nav></aside>` : ''}${labelLinks ? `<aside class="label-sidebar" aria-label="Letters by label"><h3>Labels</h3><nav>${labelLinks}</nav></aside>` : ''}`;
+  return `${yearLinks ? `<aside class="year-sidebar" aria-label="Letters by year"><nav>${yearLinks}</nav></aside>` : ''}${labelLinks ? `<aside class="label-sidebar" aria-label="Letters by label"><nav>${labelLinks}</nav></aside>` : ''}`;
 }
 
 function setupYearHighlight(paths) {
@@ -1026,6 +1081,16 @@ function setupYearHighlight(paths) {
 
   links.forEach((link) => link.addEventListener('click', (event) => {
     event.preventDefault();
+    if (link.dataset.sidebarType === 'label') {
+      const label = link.dataset.label;
+      const values = GREY_LETTER_LABELS.has(label) ? state.hiddenLetterLabels : state.letterLabels;
+      const index = values.indexOf(label);
+      if (index >= 0) values.splice(index, 1);
+      else values.push(label);
+      savePreferences();
+      renderActive();
+      return;
+    }
     const target = targets.find((item) => item.path === link.dataset.path);
     if (!target) return;
     state.letter = target.path;
@@ -1094,12 +1159,15 @@ async function renderActive() {
   if (state.active === 'seals') {
     $('#status').textContent = '';
     $('#content').innerHTML = renderSealsPage();
-    const entries = letterSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
+    const allEntries = letterSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
+    const selectedNames = new Set(state.sealNames);
+    const entries = selectedNames.size ? allEntries.filter((entry) => sealMatchesSelected(entry.title, selectedNames)) : allEntries;
     setupSealHighlight(entries);
     setupSealAnnotations();
     return;
   }
-  const paths = state.active === 'letters' ? state.manifest.letters : [state.active];
+  const allLetterPaths = state.manifest.letters;
+  const paths = state.active === 'letters' ? visibleLetterPaths(allLetterPaths) : [state.active];
   const selectedYear = documentYear(state.documents.get(state.letter));
   const shouldRestoreLetter = state.active === 'letters'
     && selectedYear
@@ -1108,7 +1176,7 @@ async function renderActive() {
   state.yearHighlightCleanup?.();
   state.yearHighlightCleanup = null;
   if (state.active === 'letters') {
-    $('#content').innerHTML = `<div class="letters-layout">${renderYearSidebar(paths)}<div class="letters-list">${paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('')}</div></div>`;
+    $('#content').innerHTML = `<div class="letters-layout">${renderYearSidebar(paths, allLetterPaths)}<div class="letters-list">${paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('')}</div></div>`;
   } else {
     $('#content').innerHTML = paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('');
   }
@@ -1148,6 +1216,8 @@ async function loadAll() {
     letters: letterPaths,
   };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
+  if (!Array.isArray(state.hiddenLetterLabels)) state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
+  state.sealNames = [...new Set(state.sealNames.map(normalizeSealFilter).filter(Boolean))];
   if (state.active !== 'letters' && state.active !== 'seals' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
   savePreferences();
   renderTabs(); await renderActive();
