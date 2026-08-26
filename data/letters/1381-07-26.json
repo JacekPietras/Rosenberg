@@ -65,8 +65,11 @@
             },
             {
               "person": "Arnold",
-              "position": "0.3193,0.8900",
-              "size": 0.082
+              "position": "0.3187,0.8894",
+              "size": 0.072,
+              "wideningRotation": 25,
+              "rotation": 0,
+              "width": 0.16
             }
           ]
         },

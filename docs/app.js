@@ -267,9 +267,12 @@ function sealAnnotationMarkup(seals = []) {
     const x = Number(seal?.position?.split?.(',')?.[0]);
     const y = Number(seal?.position?.split?.(',')?.[1]);
     const size = Number(seal?.size);
+    const width = Number.isFinite(Number(seal?.width)) ? Math.max(0, Math.min(1, Number(seal.width))) : 0;
+    const wideningRotation = Number.isFinite(Number(seal?.wideningRotation)) ? Number(seal.wideningRotation) : 0;
+    const rotation = Number.isFinite(Number(seal?.rotation)) ? Number(seal.rotation) : 0;
     if (!Number.isFinite(x) || !Number.isFinite(y) || !Number.isFinite(size) || x < 0 || x > 1 || y < 0 || y > 1 || size <= 0 || !String(seal?.person || '').trim()) return '';
     const person = escapeHtml(seal.person);
-    return `<span class="seal-marker" data-size="${size}" style="left:${x * 100}%;top:${y * 100}%" role="img" aria-label="Seal of ${person}" title="${person}"><span class="seal-marker-label">${person}</span></span>`;
+    return `<span class="seal-marker" data-size="${size}" data-width="${width}" data-widening-rotation="${wideningRotation}" data-rotation="${rotation}" style="left:${x * 100}%;top:${y * 100}%" role="img" aria-label="Seal of ${person}" title="${person}"><span class="seal-marker-label">${person}</span></span>`;
   }).join('');
 }
 
@@ -322,7 +325,7 @@ function imageMarkup(value = '', legacySeals = [], context = {}) {
       : '';
     const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${editAttributes}>${image}</a>`;
     const annotatedImage = context.crop
-      ? `<span class="seal-crop is-loading" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}">${imageLink}</span>`
+      ? `<span class="seal-crop is-loading" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}" data-seal-width="${context.crop.width ?? 0}" data-seal-widening-rotation="${context.crop.wideningRotation || 0}" data-seal-rotation="${context.crop.rotation || 0}">${imageLink}</span>`
       : annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
     return `<figure class="entry-image">${annotatedImage}</figure>`;
   }).filter(Boolean).join('');
@@ -341,6 +344,9 @@ function setupSealAnnotations() {
       const height = image.clientHeight;
       image.closest('.annotated-image')?.querySelectorAll('.seal-marker').forEach((marker) => {
         marker.style.setProperty('--seal-diameter', `${height * Number(marker.dataset.size)}px`);
+        marker.style.setProperty('--seal-width', Number(marker.dataset.width) || 0);
+        marker.style.setProperty('--seal-widening-rotation', `${Number(marker.dataset.wideningRotation) || 0}deg`);
+        marker.style.setProperty('--seal-rotation', `${Number(marker.dataset.rotation) || 0}deg`);
       });
     });
     cropImages.forEach((image) => {
@@ -350,8 +356,11 @@ function setupSealAnnotations() {
       const x = Number(crop.dataset.sealX);
       const y = Number(crop.dataset.sealY);
       const size = Number(crop.dataset.sealSize);
-      if (![x, y, size].every(Number.isFinite) || size <= 0 || !crop.clientWidth || !crop.clientHeight) return;
-      positionSealCrop(image, crop, x, y, size);
+      const width = Number(crop.dataset.sealWidth) || 0;
+      const wideningRotation = Number(crop.dataset.sealWideningRotation) || 0;
+      const rotation = Number(crop.dataset.sealRotation) || 0;
+      if (![x, y, size, width, wideningRotation, rotation].every(Number.isFinite) || size <= 0 || !crop.clientWidth || !crop.clientHeight) return;
+      positionSealCrop(image, crop, x, y, size, width, wideningRotation, rotation);
     });
   };
   annotatedImages.forEach((image) => image.addEventListener('load', update));
@@ -373,15 +382,17 @@ function setupSealAnnotations() {
   update();
 }
 
-function positionSealCrop(image, crop, x, y, size) {
+function positionSealCrop(image, crop, x, y, size, sealWidth = 0, wideningRotation = 0, rotation = 0) {
   const cropSize = image.naturalHeight * Math.max(size, 0.035);
   const scale = crop.clientHeight / cropSize;
-  const width = image.naturalWidth * scale;
+  const imageWidth = image.naturalWidth * scale;
   const height = image.naturalHeight * scale;
-  image.style.width = `${width}px`;
+  image.style.width = `${imageWidth}px`;
   image.style.height = `${height}px`;
-  image.style.left = `${crop.clientWidth / 2 - x * width}px`;
+  image.style.left = `${crop.clientWidth / 2 - x * imageWidth}px`;
   image.style.top = `${crop.clientHeight / 2 - y * height}px`;
+  image.style.transformOrigin = `${x * imageWidth}px ${y * height}px`;
+  image.style.transform = `rotate(${rotation}deg) rotate(${-wideningRotation}deg) scaleX(${1 + sealWidth}) rotate(${wideningRotation}deg)`;
 }
 
 document.addEventListener('error', (event) => {
@@ -407,6 +418,9 @@ function setupImageLightbox() {
   const addSealButton = $('#image-lightbox-add-seal');
   const removeImageButton = $('#image-lightbox-remove-image');
   const removeSealButton = $('#image-lightbox-remove-seal');
+  const sealWidthControl = $('#image-lightbox-seal-width');
+  const sealWideningRotationControl = $('#image-lightbox-seal-widening-rotation');
+  const sealRotationControl = $('#image-lightbox-seal-rotation');
   const saveStatus = $('#image-lightbox-save-status');
   if (!lightbox || !lightboxImage || !lightboxStage || !lightboxAnnotations || !closeButton) return;
   const editable = !location.hostname.endsWith('github.io');
@@ -433,9 +447,15 @@ function setupImageLightbox() {
     let x;
     let y;
     let size;
+    let width = 0;
+    let wideningRotation = 0;
+    let rotation = 0;
     if (seal) {
       [x, y] = String(seal.position || '').split(',').map(Number);
       size = Number(seal.size);
+      width = Number(seal.width) || 0;
+      wideningRotation = Number(seal.wideningRotation) || 0;
+      rotation = Number(seal.rotation) || 0;
       sealPreview.classList.remove('is-magnifier');
       sealPreview.classList.add('is-seal-preview');
       sealPreviewName.hidden = false;
@@ -469,9 +489,12 @@ function setupImageLightbox() {
     sealPreviewCrop.dataset.sealX = x;
     sealPreviewCrop.dataset.sealY = y;
     sealPreviewCrop.dataset.sealSize = size;
+    sealPreviewCrop.dataset.sealWidth = width;
+    sealPreviewCrop.dataset.sealWideningRotation = wideningRotation;
+    sealPreviewCrop.dataset.sealRotation = rotation;
     if (sealPreviewImage.src !== lightboxImage.src) sealPreviewImage.src = lightboxImage.src;
     if (sealPreviewImage.naturalWidth && sealPreviewImage.naturalHeight) {
-      positionSealCrop(sealPreviewImage, sealPreviewCrop, x, y, size);
+      positionSealCrop(sealPreviewImage, sealPreviewCrop, x, y, size, width, wideningRotation, rotation);
       sealPreviewCrop.classList.remove('is-loading');
     }
   };
@@ -485,6 +508,25 @@ function setupImageLightbox() {
   const updateEditorControls = () => {
     const selected = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
     if (removeSealButton) removeSealButton.hidden = !selected;
+    if (sealWidthControl) {
+      sealWidthControl.disabled = !selected;
+      sealWidthControl.value = String(Number(selected?.width) || 0);
+    }
+    if (sealRotationControl) {
+      sealRotationControl.disabled = !selected;
+      sealRotationControl.value = String(Number(selected?.rotation) || 0);
+    }
+    if (sealWideningRotationControl) {
+      sealWideningRotationControl.disabled = !selected;
+      sealWideningRotationControl.value = String(Number(selected?.wideningRotation) || 0);
+    }
+  };
+  const updateSelectedModifier = (property, value) => {
+    const seal = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
+    if (!seal) return;
+    seal[property] = Number(value);
+    renderLightboxSeals();
+    queueSave();
   };
   const resizeSeal = (index, amount) => {
     const seal = currentSeals()[index];
@@ -558,6 +600,9 @@ function setupImageLightbox() {
     lightboxAnnotations.style.height = `${imageHeight}px`;
     lightboxAnnotations.querySelectorAll('.seal-marker').forEach((marker) => {
       marker.style.setProperty('--seal-diameter', `${imageHeight * Number(marker.dataset.size)}px`);
+      marker.style.setProperty('--seal-width', Number(marker.dataset.width) || 0);
+      marker.style.setProperty('--seal-widening-rotation', `${Number(marker.dataset.wideningRotation) || 0}deg`);
+      marker.style.setProperty('--seal-rotation', `${Number(marker.dataset.rotation) || 0}deg`);
     });
   };
   $('#content').addEventListener('click', (event) => {
@@ -595,6 +640,9 @@ function setupImageLightbox() {
   window.addEventListener('resize', updateLightboxAnnotations, { passive: true });
   window.addEventListener('resize', updateSealPreview, { passive: true });
   closeButton.addEventListener('click', closeLightbox);
+  sealWidthControl?.addEventListener('input', () => updateSelectedModifier('width', sealWidthControl.value));
+  sealWideningRotationControl?.addEventListener('input', () => updateSelectedModifier('wideningRotation', sealWideningRotationControl.value));
+  sealRotationControl?.addEventListener('input', () => updateSelectedModifier('rotation', sealRotationControl.value));
   lightboxAnnotations.addEventListener('pointerdown', (event) => {
     if (!editingContext) return;
     const marker = event.target.closest('.seal-marker');
@@ -684,7 +732,7 @@ function setupImageLightbox() {
     if (!editingContext) return;
     const person = window.prompt('Person shown by this seal:');
     if (!person?.trim()) return;
-    editingContext.node.seals.push({ person: person.trim(), position: '0.5,0.5', size: 0.08 });
+    editingContext.node.seals.push({ person: person.trim(), position: '0.5,0.5', size: 0.08, width: 0, wideningRotation: 0, rotation: 0 });
     selectedIndex = editingContext.node.seals.length - 1;
     renderLightboxSeals();
     queueSave();
@@ -809,6 +857,9 @@ function letterSealEntries() {
           const person = String(seal?.person || '').trim();
           const position = String(seal?.position || '').split(',').map(Number);
           const size = Number(seal?.size);
+          const width = Number(seal?.width) || 0;
+          const wideningRotation = Number(seal?.wideningRotation) || 0;
+          const rotation = Number(seal?.rotation) || 0;
           if (!person || position.length !== 2 || !position.every(Number.isFinite) || !Number.isFinite(size) || size <= 0) return;
           sealEntries.push({
             title: person,
@@ -817,7 +868,7 @@ function letterSealEntries() {
             url: entry.url || document.url,
             img: [node],
             seals,
-            crop: { x: position[0], y: position[1], size },
+            crop: { x: position[0], y: position[1], size, width, wideningRotation, rotation },
             sourcePath: path,
             sourceIndex: entryIndex,
             sourceImageIndex: imageIndex,
