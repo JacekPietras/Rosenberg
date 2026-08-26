@@ -80,12 +80,18 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .status:empty { display: none; }
 .status.error { color: var(--danger); }
 
-.letters-layout { display: grid; grid-template-columns: minmax(0, 1fr) 2.5rem; gap: .5rem; align-items: start; }
+.letters-layout { display: grid; grid-template-columns: minmax(0, 1fr) 2.5rem minmax(5.5rem, 7rem); gap: .5rem .85rem; align-items: start; }
 .year-sidebar { position: sticky; top: 5.5rem; grid-column: 2; grid-row: 1; padding: 1.1rem 0; font-size: .82rem; }
 .year-sidebar nav { display: grid; gap: .2rem; max-height: calc(100vh - 8rem); overflow-y: auto; }
 .year-sidebar a { display: block; padding: .28rem .2rem; color: var(--faint); border-radius: 5px; text-align: center; text-decoration: none; transition: color .15s ease, background .15s ease; }
 .year-sidebar a:hover, .year-sidebar a:focus { color: var(--accent); background: var(--surface-raised); }
 .year-sidebar a.active { color: var(--accent); background: var(--accent-soft); }
+.label-sidebar { position: sticky; top: 5.5rem; grid-column: 3; grid-row: 1; padding: 1.1rem 0; font-size: .82rem; }
+.label-sidebar h3 { margin: 0 0 .35rem; color: var(--faint); font-size: .64rem; font-weight: 750; letter-spacing: .1em; text-align: center; text-transform: uppercase; }
+.label-sidebar nav { display: grid; gap: .2rem; max-height: calc(100vh - 8rem); overflow-y: auto; }
+.label-sidebar a { display: block; padding: .28rem .35rem; color: var(--faint); border-radius: 5px; text-align: center; text-decoration: none; transition: color .15s ease, background .15s ease; }
+.label-sidebar a:hover, .label-sidebar a:focus { color: var(--accent); background: var(--surface-raised); }
+.label-sidebar a.active { color: var(--accent); background: var(--accent-soft); }
 
 .document { scroll-margin-top: 5.5rem; margin: 1.5rem 0; padding: clamp(1.1rem, 2.5vw, 1.75rem); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
 .document.important { background: #2b1b1e; border-color: #63343b; }
@@ -99,6 +105,22 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .document.dimmed .letter-label { background: #68727d; }
 .document-url { margin: .45rem 0 0; overflow-wrap: anywhere; font-size: .78rem; }
 .document-url a, .text a { color: var(--accent); }
+.seals-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(5.5rem, 7rem); gap: .85rem; align-items: start; }
+.seals-document { grid-column: 1; grid-row: 1; }
+.seal-sidebar { position: sticky; top: 5.5rem; grid-column: 2; grid-row: 1; padding: 1.1rem 0; font-size: .82rem; }
+.seal-sidebar h3 { margin: 0 0 .35rem; color: var(--faint); font-size: .64rem; font-weight: 750; letter-spacing: .1em; text-align: center; text-transform: uppercase; }
+.seal-sidebar nav { display: grid; gap: .2rem; max-height: calc(100vh - 8rem); overflow-y: auto; }
+.seal-sidebar a { display: block; padding: .28rem .35rem; color: var(--faint); border-radius: 5px; text-align: center; text-decoration: none; transition: color .15s ease, background .15s ease; }
+.seal-sidebar a:hover, .seal-sidebar a:focus, .seal-sidebar a.active { color: var(--accent); background: var(--accent-soft); }
+.seal-entry { display: grid; grid-template-columns: minmax(12rem, 1fr) minmax(0, 2fr); gap: 1rem 2rem; align-items: center; padding: 1rem 0; }
+.seal-entry:first-of-type { padding-top: 0; }
+.seal-entry-meta h3 { margin: 0 0 .35rem; color: var(--ink); font-size: 1rem; }
+.seal-entry-meta small { color: var(--muted); }
+.seal-entry-media .entry-images { margin: 0; }
+.seal-entry-media .entry-image { flex: 0 1 auto; }
+.seal-entry-media .entry-image img { width: auto; height: 20rem; max-width: 100%; object-fit: contain; border-radius: 50%; }
+.seal-entry-media .seal-crop { position: relative; display: block; width: 20rem; max-width: 100%; height: 20rem; box-sizing: border-box; overflow: hidden; border-radius: 50%; background: var(--surface-soft); }
+.seal-entry-media .seal-crop img { position: absolute; max-width: none; max-height: none; object-fit: initial; border-radius: 0; }
 .place-link { color: #f0a35b; text-decoration: underline; text-decoration-color: color-mix(in srgb, #f0a35b 55%, transparent); text-underline-offset: .14em; }
 .text .place-link, .source .place-link, .entry-title .place-link { color: #f0a35b; }
 .place-link:hover, .place-link:focus { color: #ffc078; }
@@ -174,9 +196,20 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
   main { padding-top: 1rem; }
   .text-grid { grid-template-columns: 1fr; gap: 1rem; }
   .letters-layout { display: block; }
-  .year-sidebar { position: sticky; top: 4.6rem; z-index: 5; padding: .55rem 0; background: color-mix(in srgb, var(--bg) 92%, transparent); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
+  .seals-layout { display: block; }
+  .year-sidebar { position: sticky; top: 4.6rem; z-index: 5; display: flex; gap: 1rem; padding: .55rem 0; background: color-mix(in srgb, var(--bg) 92%, transparent); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
   .year-sidebar nav { display: flex; max-width: 100%; max-height: none; overflow-x: auto; }
   .year-sidebar a { min-width: 3.2rem; white-space: nowrap; }
+  .label-sidebar { position: sticky; top: 4.6rem; z-index: 5; padding: .55rem 0; background: color-mix(in srgb, var(--bg) 92%, transparent); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
+  .label-sidebar h3 { margin: 0 .35rem .2rem; text-align: left; }
+  .label-sidebar nav { display: flex; max-width: 100%; max-height: none; overflow-x: auto; }
+  .label-sidebar a { min-width: 3.2rem; white-space: nowrap; }
+  .seal-sidebar { position: sticky; top: 4.6rem; z-index: 5; display: flex; gap: 1rem; padding: .55rem 0; background: color-mix(in srgb, var(--bg) 92%, transparent); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
+  .seal-sidebar h3 { margin: 0 .35rem .2rem; text-align: left; }
+  .seal-sidebar nav { display: flex; max-width: 100%; max-height: none; overflow-x: auto; }
+  .seal-sidebar a { min-width: 3.2rem; white-space: nowrap; }
+  .seal-entry { display: block; }
+  .seal-entry-media { margin-top: 1rem; }
   .document-heading { align-items: flex-start; }
 }
 

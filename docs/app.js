@@ -33,7 +33,7 @@ function savePreferences() {
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const $ = (selector) => document.querySelector(selector);
 const REFRESH_INTERVAL = 30000;
 
@@ -280,7 +280,7 @@ function localImageName(fileName) {
   }
 }
 
-function imageMarkup(value = '', context = {}) {
+function imageMarkup(value = '', legacySeals = [], context = {}) {
   const imageNodes = Array.isArray(value) ? value : [value];
   const pathParts = location.pathname.split('/').filter(Boolean);
   const repository = pathParts[0];
@@ -288,7 +288,7 @@ function imageMarkup(value = '', context = {}) {
   const images = imageNodes.map((node, imageIndex) => {
     if (node && typeof node === 'object' && node.deleted === 'true') return '';
     const file = typeof node === 'object' && node !== null ? node.src : node;
-    const seals = typeof node === 'object' && node !== null ? node.seals : [];
+    const seals = typeof node === 'object' && node !== null ? node.seals : imageIndex === 0 ? legacySeals : [];
     const fileName = String(file || '').trim();
     if (!fileName) return '';
     let source;
@@ -310,14 +310,16 @@ function imageMarkup(value = '', context = {}) {
         ? `https://raw.githubusercontent.com/${owner}/${repository}/main/data/images/${encodedPath}`
         : `../data/images/${encodedPath}`;
     }
-    const annotations = sealAnnotationMarkup(seals);
+    const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals);
     const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
     const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(fileName)}" loading="lazy"${fallbackAttribute}>`;
     const editAttributes = context.path && context.index !== null && context.index !== undefined
       ? ` data-document-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${context.imageIndex ?? imageIndex}"`
       : '';
     const imageLink = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${editAttributes}>${image}</a>`;
-    const annotatedImage = annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
+    const annotatedImage = context.crop
+      ? `<span class="seal-crop" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}">${imageLink}</span>`
+      : annotations ? `<span class="annotated-image">${imageLink}${annotations}</span>` : imageLink;
     return `<figure class="entry-image">${annotatedImage}</figure>`;
   }).filter(Boolean).join('');
   return images ? `<div class="entry-images">${images}</div>` : '';
@@ -327,7 +329,8 @@ function setupSealAnnotations() {
   state.sealMarkerCleanup?.();
   state.sealMarkerCleanup = null;
   const annotatedImages = [...document.querySelectorAll('.annotated-image img')];
-  if (!annotatedImages.length) return;
+  const cropImages = [...document.querySelectorAll('.seal-crop img')];
+  if (!annotatedImages.length && !cropImages.length) return;
   const update = () => {
     annotatedImages.forEach((image) => {
       const height = image.clientHeight;
@@ -335,11 +338,30 @@ function setupSealAnnotations() {
         marker.style.setProperty('--seal-diameter', `${height * Number(marker.dataset.size)}px`);
       });
     });
+    cropImages.forEach((image) => {
+      if (!image.naturalWidth || !image.naturalHeight) return;
+      const crop = image.closest('.seal-crop');
+      if (!crop) return;
+      const x = Number(crop.dataset.sealX);
+      const y = Number(crop.dataset.sealY);
+      const size = Number(crop.dataset.sealSize);
+      if (![x, y, size].every(Number.isFinite) || size <= 0 || !crop.clientWidth || !crop.clientHeight) return;
+      const cropSize = image.naturalHeight * Math.max(size, 0.035);
+      const scale = crop.clientHeight / cropSize;
+      const width = image.naturalWidth * scale;
+      const height = image.naturalHeight * scale;
+      image.style.width = `${width}px`;
+      image.style.height = `${height}px`;
+      image.style.left = `${crop.clientWidth / 2 - x * width}px`;
+      image.style.top = `${crop.clientHeight / 2 - y * height}px`;
+    });
   };
   annotatedImages.forEach((image) => image.addEventListener('load', update));
+  cropImages.forEach((image) => image.addEventListener('load', update));
   window.addEventListener('resize', update, { passive: true });
   state.sealMarkerCleanup = () => {
     annotatedImages.forEach((image) => image.removeEventListener('load', update));
+    cropImages.forEach((image) => image.removeEventListener('load', update));
     window.removeEventListener('resize', update);
   };
   update();
@@ -627,6 +649,117 @@ function bookSortYear(doc, path) {
   return match ? Number(match[0]) : -Infinity;
 }
 
+function sealSortYear(entry) {
+  const years = String(entry?.date || '').match(/\d{4}/g);
+  return years?.length ? Math.min(...years.map(Number)) : Infinity;
+}
+
+function letterSealEntries() {
+  const sealEntries = [];
+  state.manifest.letters.forEach((path) => {
+    const document = state.documents.get(path);
+    (document?.entries || []).forEach((entry, entryIndex) => {
+      const imageNodes = Array.isArray(entry.img) ? entry.img : [entry.img];
+      imageNodes.forEach((node, imageIndex) => {
+        if (node && typeof node === 'object' && node.deleted === 'true') return;
+        const seals = node && typeof node === 'object' ? node.seals : imageIndex === 0 ? entry.seals : [];
+        if (!Array.isArray(seals) || !seals.length || !node) return;
+        seals.forEach((seal) => {
+          const person = String(seal?.person || '').trim();
+          const position = String(seal?.position || '').split(',').map(Number);
+          const size = Number(seal?.size);
+          if (!person || position.length !== 2 || !position.every(Number.isFinite) || !Number.isFinite(size) || size <= 0) return;
+          sealEntries.push({
+            title: person,
+            source: entry.source,
+            date: entry.date || document.date,
+            url: entry.url || document.url,
+            img: [node],
+            seals,
+            crop: { x: position[0], y: position[1], size },
+            sourcePath: path,
+            sourceIndex: entryIndex,
+            sourceImageIndex: imageIndex,
+          });
+        });
+      });
+    });
+  });
+  return sealEntries;
+}
+
+function sealSourceMarkup(source) {
+  const match = letterForSource(source);
+  if (!match) return markdownLinks(source);
+  const params = new URLSearchParams({ tab: 'letters', letter: match.path });
+  return `<a href="?${params.toString()}">${markdownLinks(source)}</a>`;
+}
+
+function sealLetterUrlMarkup(source) {
+  const match = letterForSource(source);
+  if (!match) return '';
+  const url = match.entry.url || state.documents.get(match.path)?.url;
+  return url ? urlMarkup(url) : '';
+}
+
+function renderSealSidebar(entries) {
+  const labels = new Map();
+  entries.forEach((entry, index) => {
+    const label = String(entry.title || '').trim();
+    const key = label.toLocaleLowerCase();
+    if (label && !labels.has(key)) labels.set(key, { label, index });
+  });
+  const links = [...labels.values()]
+    .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
+    .map(({ label, index }) => `<a href="#" data-seal-index="${index}">${escapeHtml(label)}</a>`)
+    .join('');
+  return links ? `<aside class="seal-sidebar" aria-label="Seals by name"><h3>Names</h3><nav>${links}</nav></aside>` : '';
+}
+
+function renderSealsPage() {
+  const entries = letterSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
+  const content = entries.map((entry, index) => {
+    const titleMarkup = entry.title ? `<h3>${escapeHtml(entry.title)}</h3>` : '';
+    const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
+    const sourceMarkup = entry.source ? `<p class="source">${sealSourceMarkup(entry.source)}</p>` : '';
+    const urlMarkupForLetter = entry.source ? sealLetterUrlMarkup(entry.source) || urlMarkup(entry.url) : urlMarkup(entry.url);
+    const imageContext = { path: entry.sourcePath, index: entry.sourceIndex, imageIndex: entry.sourceImageIndex, crop: entry.crop, sealScreen: true };
+    return `<article class="entry seal-entry" id="seal-${index}"><div class="seal-entry-meta">${titleMarkup}${dateMarkup}${sourceMarkup}${urlMarkupForLetter}</div><div class="seal-entry-media">${imageMarkup(entry.img, entry.seals, imageContext)}</div></article>`;
+  }).join('');
+  if (!entries.length) return '<article class="document"><h2>Seals</h2><p class="status">No named seals are recorded in the letter images.</p></article>';
+  return `<div class="seals-layout">${renderSealSidebar(entries)}<article class="document seals-document"><div class="document-heading"><h2>Seals</h2><small>${entries.length} annotation${entries.length === 1 ? '' : 's'}</small></div>${content}</article></div>`;
+}
+
+function setupSealHighlight(entries) {
+  state.sealHighlightCleanup?.();
+  state.sealHighlightCleanup = null;
+  const links = [...document.querySelectorAll('.seal-sidebar a')];
+  const targets = entries.map((_, index) => document.querySelector(`#seal-${index}`)).filter(Boolean);
+  if (!links.length || !targets.length) return;
+  links.forEach((link) => link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const target = targets[Number(link.dataset.sealIndex)];
+    if (target) window.scrollTo(0, target.getBoundingClientRect().top + window.scrollY - 104);
+  }));
+  const update = () => {
+    const marker = window.scrollY + 160;
+    let current = 0;
+    targets.forEach((target, index) => {
+      if (target.getBoundingClientRect().top + window.scrollY <= marker) current = index;
+    });
+    const name = entries[current]?.title?.trim().toLocaleLowerCase();
+    links.forEach((link) => {
+      const active = entries[Number(link.dataset.sealIndex)]?.title?.trim().toLocaleLowerCase() === name;
+      link.classList.toggle('active', active);
+      if (active) link.setAttribute('aria-current', 'true');
+      else link.removeAttribute('aria-current');
+    });
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  state.sealHighlightCleanup = () => window.removeEventListener('scroll', update);
+  update();
+}
+
 function urlLabel(value) {
   try {
     const hostname = new URL(value).hostname.replace(/^www\./i, '');
@@ -808,7 +941,7 @@ function setupPersonNavigation() {
 }
 
 function renderTabs() {
-  const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }];
+  const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, { path: 'seals', label: 'Seals' }];
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
   document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => { state.active = button.dataset.path; state.place = null; state.person = null; savePreferences(); renderTabs(); renderActive(); }));
 }
@@ -828,7 +961,7 @@ function languageMarkup(entry) {
 function renderEntry(entry, { title = true, date = true, source = true, path = '', index = null } = {}) {
   const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
   const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
-  return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`;
+  return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`;
 }
 
 function bookSections(entries) {
@@ -864,19 +997,27 @@ function renderDocument(doc, path, index) {
 function renderYearSidebar(paths) {
   const years = [...new Set(paths.map((path) => documentYear(state.documents.get(path))).filter(Boolean))]
     .sort((left, right) => Number(left) - Number(right));
-  if (!years.length) return '';
-
-  const links = years.map((year) => {
+  const yearLinks = years.map((year) => {
     const index = paths.findIndex((path) => documentYear(state.documents.get(path)) === year);
-    return `<a href="#" data-path="${escapeHtml(paths[index])}">${year}</a>`;
+    return `<a href="#" data-sidebar-type="year" data-path="${escapeHtml(paths[index])}">${year}</a>`;
   }).join('');
-  return `<aside class="year-sidebar" aria-label="Letters by year"><nav>${links}</nav></aside>`;
+  const labels = new Map();
+  paths.forEach((path) => {
+    const label = String(state.documents.get(path)?.label || '').trim();
+    if (label && !labels.has(label.toLocaleLowerCase())) labels.set(label.toLocaleLowerCase(), { label, path });
+  });
+  const labelLinks = [...labels.values()]
+    .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
+    .map(({ label, path }) => `<a href="#" data-sidebar-type="label" data-label="${escapeHtml(label.toLocaleLowerCase())}" data-path="${escapeHtml(path)}">${escapeHtml(label)}</a>`)
+    .join('');
+  if (!yearLinks && !labelLinks) return '';
+  return `${yearLinks ? `<aside class="year-sidebar" aria-label="Letters by year"><nav>${yearLinks}</nav></aside>` : ''}${labelLinks ? `<aside class="label-sidebar" aria-label="Letters by label"><h3>Labels</h3><nav>${labelLinks}</nav></aside>` : ''}`;
 }
 
 function setupYearHighlight(paths) {
   state.yearHighlightCleanup?.();
   state.yearHighlightCleanup = null;
-  const links = [...document.querySelectorAll('.year-sidebar a')];
+  const links = [...document.querySelectorAll('.year-sidebar a, .label-sidebar a')];
   const targets = paths
     .map((path, index) => ({ path, element: document.querySelector(`#year-${documentYear(state.documents.get(path))}-${index}`) }))
     .filter(({ element }) => element);
@@ -901,8 +1042,11 @@ function setupYearHighlight(paths) {
     state.letter = current.path;
     savePreferences();
     const year = current.element.id.match(/^year-(\d{4})-/)?.[1];
+    const currentLabel = String(state.documents.get(current.path)?.label || '').trim().toLocaleLowerCase();
     links.forEach((link) => {
-      const active = link.textContent === year;
+      const active = link.dataset.sidebarType === 'year'
+        ? link.textContent === year
+        : link.dataset.label === currentLabel;
       link.classList.toggle('active', active);
       if (active) link.setAttribute('aria-current', 'true');
       else link.removeAttribute('aria-current');
@@ -943,6 +1087,16 @@ async function renderActive() {
   if (state.place) {
     $('#content').innerHTML = renderPlacePage();
     setupPlaceNavigation();
+    return;
+  }
+  state.sealHighlightCleanup?.();
+  state.sealHighlightCleanup = null;
+  if (state.active === 'seals') {
+    $('#status').textContent = '';
+    $('#content').innerHTML = renderSealsPage();
+    const entries = letterSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
+    setupSealHighlight(entries);
+    setupSealAnnotations();
     return;
   }
   const paths = state.active === 'letters' ? state.manifest.letters : [state.active];
@@ -994,7 +1148,7 @@ async function loadAll() {
     letters: letterPaths,
   };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
-  if (state.active !== 'letters' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
+  if (state.active !== 'letters' && state.active !== 'seals' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
   savePreferences();
   renderTabs(); await renderActive();
 }
