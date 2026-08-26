@@ -105,6 +105,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .document-heading small { color: var(--muted); font-size: .78rem; white-space: nowrap; }
 .document-heading-aside { display: flex; flex-direction: column; align-items: flex-end; gap: .35rem; }
 .letter-label { padding: .2rem .5rem; color: #fff; background: #b42332; border-radius: 4px; font-size: .68rem; font-weight: 750; letter-spacing: .08em; line-height: 1.2; text-transform: uppercase; white-space: nowrap; }
+.document.dimmed .letter-label { background: #68727d; }
 .document-url { margin: .45rem 0 0; overflow-wrap: anywhere; font-size: .78rem; }
 .document-url a, .text a { color: var(--accent); }
 .place-link { color: #f0a35b; text-decoration: underline; text-decoration-color: color-mix(in srgb, #f0a35b 55%, transparent); text-underline-offset: .14em; }
