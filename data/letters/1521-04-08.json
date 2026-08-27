@@ -22,15 +22,19 @@
           "seals": [
             {
               "person": "Melchior",
-              "position": "0.4674,0.8215",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.4643,0.8209",
+              "size": 0.059999999999999984,
+              "type": "full",
+              "width": 0.07,
+              "wideningRotation": 67
             },
             {
               "person": "Hans",
-              "position": "0.3451,0.7918",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.3427,0.7918",
+              "size": 0.06199999999999997,
+              "type": "full",
+              "width": 0.12,
+              "wideningRotation": 52
             }
           ]
         },

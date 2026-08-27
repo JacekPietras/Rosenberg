@@ -37,7 +37,7 @@ function savePreferences() {
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], personRecords: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], personRecords: [], persons: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
 const MISSING_LETTER_LABEL = 'missing';
 let leafletMap = null;
@@ -426,48 +426,202 @@ function peopleTreeMarkup(people = []) {
   return `<div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Family tree">${edges.join('')}${nodes}</svg></div>`;
 }
 
-// Historical map: "Das Heilige Römische Reich um 1400" by Ziegelbrenner (Wikimedia Commons,
-// CC BY-SA 3.0). It is not georeferenced to the Mercator projection OpenStreetMap tiles use, so
-// draping it as a translucent layer over the live map made it drift out of alignment while
-// panning/zooming. Instead it's shown as its own canvas (Leaflet CRS.Simple, plain image pixels)
-// and place markers are projected onto its pixel space via a linear calibration measured against
-// the source image's native 3715x3966 resolution, using Stuttgart and Würzburg as reference points.
-const HRR_MAP_IMAGE = 'assets/hrr-1400.jpg';
+// Historical maps: shown as their own canvas (Leaflet CRS.Simple, plain image pixels), never
+// draped as a translucent layer over the live OSM map — an earlier attempt at that drifted out of
+// alignment while panning/zooming, since these hand-drawn maps aren't Mercator-georeferenced.
+//
+// Each map gets its own calibration, keyed by place.calibrated_x_<id>/calibrated_y_<id> (set by
+// dragging a marker in that map's mode). A single global affine formula (one px-per-degree scale
+// for the whole map) forced a trade-off on the 1400 map: fitting it to the towns nearest the real
+// content (Stuttgart/Würzburg) drifted up to ~390px near the map's edges, while fitting it evenly
+// cost those towns ~20-30px each — these maps are hand-drawn, not projected, so no single affine
+// formula fits one everywhere. hrrBuildWarp fits a thin-plate spline instead once a map has 3+
+// calibrated points: it passes exactly through every one and interpolates smoothly between them,
+// so local and distant accuracy are no longer in tension. With fewer points it falls back to a
+// plain affine fit (2 points) or a rough guess seeded from the 1400 map's original calibration,
+// scaled to the new image's pixel size (0-1 points, e.g. a map nobody has calibrated yet) — just
+// enough to place markers somewhere sane to start dragging from.
 const HRR_MAP_NATIVE_WIDTH = 3715;
 const HRR_MAP_NATIVE_HEIGHT = 3966;
-const HRR_MAP_CALIBRATION = { x0: 1245, y0: 2180, lon0: 9.1829, lat0: 48.7758, pxPerDegreeLon: 217.9, pxPerDegreeLat: -294.4 };
+const HRR_MAP_CALIBRATION_SEED = { x0: 1637.1, y0: 1961.6, lon0: 11.3322, lat0: 49.4340, pxPerDegreeLon: 182.0, pxPerDegreeLat: -302.9 };
+const HRR_1400_CREDIT_HTML = 'Historical base map: <a href="https://commons.wikimedia.org/wiki/File:HRR_1400.png" target="_blank" rel="noreferrer">Das Heilige Römische Reich um 1400</a> by Ziegelbrenner, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons. Place positions are approximate.';
+const HRR_1378_CREDIT_HTML = 'Historical base map: "Germany at the death of Emperor Charles IV, 1378," revised by Karl Wolf, from H.F. Helmolt\'s <a href="https://pl.wikipedia.org/wiki/Plik:Germany_1378_map.jpg" target="_blank" rel="noreferrer">History of the World</a>, Vol. VII (Dodd Mead, 1902). Public domain in the United States. Place positions are approximate.';
+const HRR_MAPS = [
+  { id: '1378', label: '1378', image: 'assets/Germany_1378_map.jpg', width: 3215, height: 2514, credit: HRR_1378_CREDIT_HTML },
+  { id: '1400', label: '1400', image: 'assets/Germany_1400_map.jpg', width: HRR_MAP_NATIVE_WIDTH, height: HRR_MAP_NATIVE_HEIGHT, credit: HRR_1400_CREDIT_HTML },
+];
+const HRR_MAPS_BY_ID = new Map(HRR_MAPS.map((map) => [map.id, map]));
 
-function hrrPixelForLatLon(lat, lon) {
-  const { x0, y0, lon0, lat0, pxPerDegreeLon, pxPerDegreeLat } = HRR_MAP_CALIBRATION;
-  return { x: x0 + (lon - lon0) * pxPerDegreeLon, y: y0 + (lat - lat0) * pxPerDegreeLat };
+function hrrCalibrationKeys(mapDef) {
+  return { x: `calibrated_x_${mapDef.id}`, y: `calibrated_y_${mapDef.id}` };
 }
 
-function hrrLatLonForPixel(x, y) {
-  const { x0, y0, lon0, lat0, pxPerDegreeLon, pxPerDegreeLat } = HRR_MAP_CALIBRATION;
-  return { lat: lat0 + (y - y0) / pxPerDegreeLat, lon: lon0 + (x - x0) / pxPerDegreeLon };
+// Rough starting guess for a map with fewer than 2 calibrated points: assumes it covers roughly
+// the same real-world extent as the original 1400-map calibration, uniformly rescaled to this
+// map's own pixel dimensions. Just enough to place markers somewhere sane to drag into place.
+function hrrGuessPixelForLatLon(lat, lon, mapDef) {
+  const scaleX = mapDef.width / HRR_MAP_NATIVE_WIDTH;
+  const scaleY = mapDef.height / HRR_MAP_NATIVE_HEIGHT;
+  const { x0, y0, lon0, lat0, pxPerDegreeLon, pxPerDegreeLat } = HRR_MAP_CALIBRATION_SEED;
+  return { x: (x0 + (lon - lon0) * pxPerDegreeLon) * scaleX, y: (y0 + (lat - lat0) * pxPerDegreeLat) * scaleY };
 }
 
-// Editing (dragging calibration markers, saving to data/places.json) only works against the
-// local dev server (docs/serve.py) that /api/save-document writes through; the published
-// GitHub Pages viewer is read-only and has nowhere to persist a drag to.
+// Only used to carry the viewport across a live<->historical mode switch (see renderMapLayer):
+// an approximation is fine there since it's just "stay looking at roughly the same area", not a
+// marker placement. There's no inverse of the TPS/2-point warps (only ever fit lat/lon -> pixel).
+function hrrGuessLatLonForPixel(x, y, mapDef) {
+  const scaleX = mapDef.width / HRR_MAP_NATIVE_WIDTH;
+  const scaleY = mapDef.height / HRR_MAP_NATIVE_HEIGHT;
+  const { x0, y0, lon0, lat0, pxPerDegreeLon, pxPerDegreeLat } = HRR_MAP_CALIBRATION_SEED;
+  return { lat: lat0 + (y / scaleY - y0) / pxPerDegreeLat, lon: lon0 + (x / scaleX - x0) / pxPerDegreeLon };
+}
+
+// Ordinary least-squares line y = intercept + slope*x (exact fit when there are only 2 points).
+function hrrLinearFit(xs, ys) {
+  const n = xs.length;
+  const meanX = xs.reduce((a, b) => a + b, 0) / n;
+  const meanY = ys.reduce((a, b) => a + b, 0) / n;
+  let num = 0, den = 0;
+  for (let i = 0; i < n; i++) { num += (xs[i] - meanX) * (ys[i] - meanY); den += (xs[i] - meanX) ** 2; }
+  const slope = den === 0 ? 0 : num / den;
+  return { slope, intercept: meanY - slope * meanX };
+}
+
+// Solves the (n+3)x(n+3) linear system via Gaussian elimination with partial pivoting.
+function hrrSolveLinearSystem(matrix, rhs) {
+  const n = rhs.length;
+  const rows = matrix.map((row, i) => [...row, rhs[i]]);
+  for (let col = 0; col < n; col++) {
+    let pivot = col;
+    for (let r = col + 1; r < n; r++) if (Math.abs(rows[r][col]) > Math.abs(rows[pivot][col])) pivot = r;
+    [rows[col], rows[pivot]] = [rows[pivot], rows[col]];
+    const pivotValue = rows[col][col];
+    for (let r = 0; r < n; r++) {
+      if (r === col) continue;
+      const factor = rows[r][col] / pivotValue;
+      for (let c = col; c <= n; c++) rows[r][c] -= factor * rows[col][c];
+    }
+  }
+  return rows.map((row, i) => row[n] / row[i]);
+}
+
+// Thin-plate-spline kernel: U(r) = r^2*ln(r), the unique radial basis that minimizes bending
+// energy for a 2D interpolating surface. Fits values (scalars) at 2D control points exactly.
+function hrrFitTps(points, values) {
+  const n = points.length;
+  const size = n + 3;
+  const matrix = Array.from({ length: size }, () => new Array(size).fill(0));
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      const r = Math.hypot(points[i].x - points[j].x, points[i].y - points[j].y);
+      matrix[i][j] = r <= 1e-9 ? 0 : r * r * Math.log(r);
+    }
+    matrix[i][n] = 1; matrix[i][n + 1] = points[i].x; matrix[i][n + 2] = points[i].y;
+    matrix[n][i] = 1; matrix[n + 1][i] = points[i].x; matrix[n + 2][i] = points[i].y;
+  }
+  const solution = hrrSolveLinearSystem(matrix, [...values, 0, 0, 0]);
+  const weights = solution.slice(0, n);
+  const [a0, a1, a2] = solution.slice(n);
+  return (x, y) => {
+    let sum = a0 + a1 * x + a2 * y;
+    for (let i = 0; i < n; i++) {
+      const r = Math.hypot(x - points[i].x, y - points[i].y);
+      if (r > 1e-9) sum += weights[i] * r * r * Math.log(r);
+    }
+    return sum;
+  };
+}
+
+// Builds the lat/lon -> image-pixel warp for one historical map, from every place with a saved
+// calibration point for that map. See the fallback chain explained above HRR_MAPS.
+function hrrBuildWarp(places, mapDef) {
+  const { x: keyX, y: keyY } = hrrCalibrationKeys(mapDef);
+  const controls = places
+    .filter((place) => Number.isFinite(place[keyX]) && Number.isFinite(place[keyY]))
+    .map((place) => ({ lat: place.lat, lon: place.lon, x: place[keyX], y: place[keyY] }));
+  if (controls.length >= 3) {
+    const realCoords = controls.map((control) => ({ x: control.lon, y: control.lat }));
+    const pixelX = hrrFitTps(realCoords, controls.map((control) => control.x));
+    const pixelY = hrrFitTps(realCoords, controls.map((control) => control.y));
+    return { pixelForLatLon: (lat, lon) => ({ x: pixelX(lon, lat), y: pixelY(lon, lat) }) };
+  }
+  if (controls.length === 2) {
+    const fitX = hrrLinearFit(controls.map((control) => control.lon), controls.map((control) => control.x));
+    const fitY = hrrLinearFit(controls.map((control) => control.lat), controls.map((control) => control.y));
+    return { pixelForLatLon: (lat, lon) => ({ x: fitX.intercept + fitX.slope * lon, y: fitY.intercept + fitY.slope * lat }) };
+  }
+  return { pixelForLatLon: (lat, lon) => hrrGuessPixelForLatLon(lat, lon, mapDef) };
+}
+
+// Solves the 2x2 linear system [[a,b],[c,d]] * [x,y]^T = [e,f]^T.
+function hrrSolve2x2(a, b, c, d, e, f) {
+  const det = a * d - b * c;
+  if (Math.abs(det) < 1e-9) return null;
+  return { x: (e * d - b * f) / det, y: (a * f - e * c) / det };
+}
+
+// Inverts `pixelForLatLon` at (targetX, targetY) via Newton's method with a numeric Jacobian,
+// starting from the rough scaled-seed guess and refining. This makes the inverse consistent with
+// THIS SPECIFIC forward warp by construction — an earlier version fit a separate reverse TPS
+// (from the same control points, but independently), which only approximately agreed with the
+// forward warp and compounded error on every live<->historical round trip, drifting the viewport
+// out on repeated mode switches. Newton's method against the actual forward function can't drift:
+// inverting then re-applying the same forward warp returns (approximately) the original point.
+function hrrInvertPixelForLatLon(pixelForLatLon, targetX, targetY, mapDef) {
+  const seed = hrrGuessLatLonForPixel(targetX, targetY, mapDef);
+  let lat = seed.lat, lon = seed.lon;
+  const eps = 0.02;
+  for (let iter = 0; iter < 25; iter++) {
+    const p = pixelForLatLon(lat, lon);
+    const rx = p.x - targetX, ry = p.y - targetY;
+    if (Math.abs(rx) < 0.05 && Math.abs(ry) < 0.05) break;
+    const pLat = pixelForLatLon(lat + eps, lon);
+    const pLon = pixelForLatLon(lat, lon + eps);
+    const delta = hrrSolve2x2((pLat.x - p.x) / eps, (pLon.x - p.x) / eps, (pLat.y - p.y) / eps, (pLon.y - p.y) / eps, -rx, -ry);
+    if (!delta) break;
+    lat += delta.x; lon += delta.y;
+  }
+  return { lat, lon };
+}
+
+// Inverse of hrrBuildWarp (image pixel -> lat/lon) — only used to carry the viewport across a
+// mode switch (see hrrViewCornersToLatLon below), where this is fine since it's just "stay
+// looking at roughly the same area", not a marker placement.
+function hrrBuildInverseWarp(places, mapDef) {
+  const warp = hrrBuildWarp(places, mapDef);
+  return { latLonForPixel: (x, y) => hrrInvertPixelForLatLon(warp.pixelForLatLon, x, y, mapDef) };
+}
+
+// Editing (dragging calibration points, saving to docs/assets/calibration-cities.json) only
+// works against the local dev server (docs/serve.py) that /api/save-document writes through; the
+// published GitHub Pages viewer is read-only and has nowhere to persist a drag to. Real places
+// (data/places.json, the actual letter/genealogy content) are never draggable — only the
+// dedicated calibration-city reference points are, and only when BOTH flags below are true.
+// MAP_CALIBRATION_EDITABLE also gates whether the reference points are shown at all: they're a
+// working aid for calibrating the map, not something a regular viewer needs to see, so leave it
+// false to hide them entirely; flip it to true to show them and re-open dragging for editing.
 const MAP_EDITABLE = !location.hostname.endsWith('github.io');
-let placesSaveQueue = Promise.resolve();
+const MAP_CALIBRATION_EDITABLE = false;
+let calibrationCitiesSaveQueue = Promise.resolve();
 
-function placesForSave() {
-  return state.places.map((place) => {
-    const raw = { variations: place.variations, lat: place.lat, lon: place.lon };
-    if (Number.isFinite(place.corrected_lat)) raw.corrected_lat = place.corrected_lat;
-    if (Number.isFinite(place.corrected_lon)) raw.corrected_lon = place.corrected_lon;
+function calibrationCitiesForSave() {
+  return state.calibrationCities.map((city) => {
+    const raw = { variations: city.variations, lat: city.lat, lon: city.lon };
+    for (const mapDef of HRR_MAPS) {
+      const { x: keyX, y: keyY } = hrrCalibrationKeys(mapDef);
+      if (Number.isFinite(city[keyX])) raw[keyX] = city[keyX];
+      if (Number.isFinite(city[keyY])) raw[keyY] = city[keyY];
+    }
     return raw;
   });
 }
 
-function savePlaces() {
-  const operation = placesSaveQueue.then(async () => {
+function saveCalibrationCities() {
+  const operation = calibrationCitiesSaveQueue.then(async () => {
     const status = $('#map-save-status');
     try {
       if (status) { status.textContent = 'Saving…'; status.classList.remove('error'); }
-      const response = await fetch('/api/save-document', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path: 'data/places.json', document: placesForSave() }) });
+      const response = await fetch('/api/save-document', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path: 'docs/assets/calibration-cities.json', document: calibrationCitiesForSave() }) });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || `Save failed (${response.status})`);
       if (status) status.textContent = 'Saved calibration point.';
@@ -475,40 +629,86 @@ function savePlaces() {
       if (status) { status.textContent = error.message; status.classList.add('error'); }
     }
   });
-  placesSaveQueue = operation.catch(() => {});
+  calibrationCitiesSaveQueue = operation.catch(() => {});
   return operation;
 }
 
 function renderMapPage() {
-  const toggleLabel = mapMode === 'live' ? 'Show 1400 map' : 'Show current map';
-  return `<div class="map-wrap"><div id="map-container" class="map-container" role="application" aria-label="Map of places"></div><button id="map-layer-toggle" class="map-layer-toggle" type="button" aria-pressed="${mapMode === 'historical'}">${toggleLabel}</button><span id="map-save-status" class="map-save-status status" aria-live="polite"></span></div><p id="map-credit" class="map-credit">${mapMode === 'historical' ? HRR_MAP_CREDIT_HTML : ''}</p>`;
+  const buttons = [{ id: 'live', label: 'Current' }, ...HRR_MAPS.map((map) => ({ id: map.id, label: map.label }))]
+    .map(({ id, label }) => `<button type="button" class="map-mode-button" data-map-mode="${id}" aria-pressed="${mapMode === id}">${escapeHtml(label)}</button>`)
+    .join('');
+  const credit = HRR_MAPS_BY_ID.get(mapMode)?.credit || '';
+  return `<div class="map-wrap"><div id="map-container" class="map-container" role="application" aria-label="Map of places"></div><div id="map-mode-switch" class="map-mode-switch" role="group" aria-label="Map version">${buttons}</div><span id="map-save-status" class="map-save-status status" aria-live="polite"></span></div><p id="map-credit" class="map-credit">${credit}</p>`;
 }
 
-function renderMapLayer(container, places) {
-  if (leafletMap) { leafletMap.remove(); leafletMap = null; }
+// None of the modes (live lat/lon, or any historical map's own image-pixel CRS.Simple space)
+// share a coordinate system with each other, so "same zoom level" isn't a portable number between
+// any pair of them. Instead we carry the *viewport bounds* across a mode switch by routing them
+// through real-world lat/lon as a common intermediate — out of the previous mode via its inverse
+// warp (identity if it was already "live"), back into the new mode via its forward warp (also
+// identity for "live") — and let fitBounds pick the equivalent zoom in the new mode. This works
+// for every mode pair uniformly, including switching directly between two historical maps.
+function hrrViewCornersToLatLon(mode, bounds, calibrationCities) {
+  const corners = [bounds.getSouthWest(), bounds.getNorthEast(), bounds.getNorthWest(), bounds.getSouthEast()];
+  if (mode === 'live') return corners.map(({ lat, lng }) => ({ lat, lon: lng }));
+  const mapDef = HRR_MAPS_BY_ID.get(mode);
+  const inverse = hrrBuildInverseWarp(calibrationCities, mapDef);
+  return corners.map(({ lat, lng }) => inverse.latLonForPixel(lng, mapDef.height - lat));
+}
 
-  if (mapMode === 'historical') {
-    const bounds = [[0, 0], [HRR_MAP_NATIVE_HEIGHT, HRR_MAP_NATIVE_WIDTH]];
+function hrrLatLonCornersToView(corners, mode, calibrationCities) {
+  if (mode === 'live') {
+    const lats = corners.map((p) => p.lat), lons = corners.map((p) => p.lon);
+    return [[Math.min(...lats), Math.min(...lons)], [Math.max(...lats), Math.max(...lons)]];
+  }
+  const mapDef = HRR_MAPS_BY_ID.get(mode);
+  const warp = hrrBuildWarp(calibrationCities, mapDef);
+  const pixels = corners.map(({ lat, lon }) => warp.pixelForLatLon(lat, lon));
+  const xs = pixels.map((p) => p.x), ys = pixels.map((p) => p.y);
+  return [[mapDef.height - Math.max(...ys), Math.min(...xs)], [mapDef.height - Math.min(...ys), Math.max(...xs)]];
+}
+
+// Small circular "point" marker (not the usual pin) for calibration reference cities, so they
+// read as reference data rather than genealogy content. Uses a real L.marker (not L.circleMarker)
+// specifically so Leaflet's built-in drag support is available when MAP_CALIBRATION_EDITABLE
+// flips on — Leaflet's Path-based circle markers can't be made draggable.
+const HRR_CALIBRATION_POINT_ICON = L.divIcon({ className: 'calibration-point-icon', iconSize: [10, 10] });
+
+function renderMapLayer(container, places, calibrationCities, previousView) {
+  if (leafletMap) { leafletMap.remove(); leafletMap = null; }
+  const carriedCorners = previousView ? hrrViewCornersToLatLon(previousView.mode, previousView.bounds, calibrationCities) : null;
+
+  const mapDef = HRR_MAPS_BY_ID.get(mapMode);
+  if (mapDef) {
+    const bounds = [[0, 0], [mapDef.height, mapDef.width]];
     leafletMap = L.map(container, { crs: L.CRS.Simple, scrollWheelZoom: true, minZoom: -10, maxZoom: 10, zoomSnap: 0 });
-    L.imageOverlay(HRR_MAP_IMAGE, bounds).addTo(leafletMap);
+    L.imageOverlay(mapDef.image, bounds).addTo(leafletMap);
     leafletMap.setMaxBounds(L.latLngBounds(bounds).pad(0.5));
-    const markers = places.map((place) => {
-      const { x, y } = hrrPixelForLatLon(place.lat, place.lon);
-      const marker = L.marker([HRR_MAP_NATIVE_HEIGHT - y, x], { draggable: MAP_EDITABLE }).addTo(leafletMap);
+    const warp = hrrBuildWarp(calibrationCities, mapDef);
+    places.forEach((place) => {
+      const { x, y } = warp.pixelForLatLon(place.lat, place.lon);
+      const marker = L.marker([mapDef.height - y, x]).addTo(leafletMap);
       const query = encodeURIComponent(place.name);
       marker.bindPopup(`<a class="place-link" href="?place=${query}">${escapeHtml(place.name)}</a>`);
-      if (MAP_EDITABLE) {
-        marker.on('dragend', () => {
-          const { lat, lng } = marker.getLatLng();
-          const corrected = hrrLatLonForPixel(lng, HRR_MAP_NATIVE_HEIGHT - lat);
-          place.corrected_lat = corrected.lat;
-          place.corrected_lon = corrected.lon;
-          savePlaces();
-        });
-      }
-      return marker;
     });
-    leafletMap.fitBounds(bounds);
+    if (MAP_CALIBRATION_EDITABLE) {
+      const { x: keyX, y: keyY } = hrrCalibrationKeys(mapDef);
+      const pointsEditable = MAP_EDITABLE && MAP_CALIBRATION_EDITABLE;
+      calibrationCities.forEach((city) => {
+        const { x, y } = warp.pixelForLatLon(city.lat, city.lon);
+        const marker = L.marker([mapDef.height - y, x], { icon: HRR_CALIBRATION_POINT_ICON, draggable: pointsEditable }).addTo(leafletMap);
+        marker.bindPopup(escapeHtml(city.name));
+        if (pointsEditable) {
+          marker.on('dragend', () => {
+            const { lat, lng } = marker.getLatLng();
+            city[keyX] = lng;
+            city[keyY] = mapDef.height - lat;
+            saveCalibrationCities();
+          });
+        }
+      });
+    }
+    leafletMap.fitBounds(carriedCorners ? hrrLatLonCornersToView(carriedCorners, mapMode, calibrationCities) : bounds);
     return;
   }
 
@@ -523,25 +723,26 @@ function renderMapLayer(container, places) {
     marker.bindPopup(`<a class="place-link" href="?place=${query}">${escapeHtml(place.name)}</a>`);
     return marker;
   });
-  leafletMap.fitBounds(L.featureGroup(markers).getBounds(), { padding: [40, 40] });
+  leafletMap.fitBounds(carriedCorners ? hrrLatLonCornersToView(carriedCorners, 'live', calibrationCities) : L.featureGroup(markers).getBounds(), carriedCorners ? undefined : { padding: [40, 40] });
 }
-
-const HRR_MAP_CREDIT_HTML = 'Historical base map: <a href="https://commons.wikimedia.org/wiki/File:HRR_1400.png" target="_blank" rel="noreferrer">Das Heilige Römische Reich um 1400</a> by Ziegelbrenner, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons. Place positions are approximate.';
 
 function setupMap() {
   const container = $('#map-container');
   const places = state.places.filter((place) => Number.isFinite(place.lat) && Number.isFinite(place.lon));
-  const layerToggle = $('#map-layer-toggle');
-  layerToggle?.addEventListener('click', () => {
-    mapMode = mapMode === 'live' ? 'historical' : 'live';
-    layerToggle.textContent = mapMode === 'live' ? 'Show 1400 map' : 'Show current map';
-    layerToggle.setAttribute('aria-pressed', String(mapMode === 'historical'));
+  const calibrationCities = state.calibrationCities.filter((city) => Number.isFinite(city.lat) && Number.isFinite(city.lon));
+  const modeSwitch = $('#map-mode-switch');
+  modeSwitch?.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-map-mode]');
+    if (!button || button.dataset.mapMode === mapMode) return;
+    const previousView = leafletMap ? { mode: mapMode, bounds: leafletMap.getBounds() } : null;
+    mapMode = button.dataset.mapMode;
+    modeSwitch.querySelectorAll('[data-map-mode]').forEach((other) => other.setAttribute('aria-pressed', String(other.dataset.mapMode === mapMode)));
     const credit = $('#map-credit');
-    if (credit) credit.innerHTML = mapMode === 'historical' ? HRR_MAP_CREDIT_HTML : '';
-    if (container && places.length) renderMapLayer(container, places);
+    if (credit) credit.innerHTML = HRR_MAPS_BY_ID.get(mapMode)?.credit || '';
+    if (container && places.length) renderMapLayer(container, places, calibrationCities, previousView);
   });
   if (!container || typeof L === 'undefined' || !places.length) return;
-  renderMapLayer(container, places);
+  renderMapLayer(container, places, calibrationCities);
 }
 
 function sealAnnotationMarkup(seals = []) {
@@ -721,7 +922,7 @@ function setupImageLightbox() {
   let drag = null;
   let magnifierPoint = null;
   let saveQueue = Promise.resolve();
-  const SEAL_SIZE_STEP = 0.002;
+  const SEAL_SIZE_STEP = 0.0005;
   const MAGNIFIER_SIZE = 0.12;
   const MAGNIFIER_SIZE_STEP = 0.01;
   let magnifierSize = MAGNIFIER_SIZE;
@@ -1818,13 +2019,15 @@ async function loadAll() {
   const files = await getRepositoryFiles();
   const paths = files.map((file) => typeof file === 'string' ? file : file.path);
   const snapshot = JSON.stringify(files);
-  const [placesText, peopleText, namesText, documents] = await Promise.all([
+  const [placesText, calibrationCitiesText, peopleText, namesText, documents] = await Promise.all([
     getText('data/places.json'),
+    getText('docs/assets/calibration-cities.json'),
     getText('data/people.json'),
     getText('data/names.md'),
     new Map(await Promise.all(paths.map(async (path) => [path, await getJson(path)]))),
   ]);
   state.places = parsePlaces(placesText);
+  state.calibrationCities = parsePlaces(calibrationCitiesText);
   state.personRecords = JSON.parse(peopleText);
   state.people = parsePeople(peopleText, namesText, state.places);
   state.persons = state.people;

@@ -192,9 +192,12 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .map-wrap { position: relative; margin: 1.5rem 0; }
 .map-container { height: 70vh; min-height: 22rem; margin: 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #dce6e0; }
 .map-container .leaflet-popup-content a.place-link { color: #3267b1; font-weight: 650; }
-.map-layer-toggle { position: absolute; top: .6rem; right: .6rem; z-index: 1000; padding: .4rem .7rem; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 7px; font-size: .78rem; cursor: pointer; }
-.map-layer-toggle:hover { border-color: var(--accent); color: var(--accent); }
-.map-layer-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.calibration-point-icon { width: 10px; height: 10px; border-radius: 50%; background: #d1495b; border: 2px solid #fff; box-shadow: 0 0 0 1px rgb(0 0 0 / .35); }
+.map-mode-switch { position: absolute; top: .6rem; right: .6rem; z-index: 1000; display: flex; gap: 1px; padding: 2px; background: var(--surface); border: 1px solid var(--line); border-radius: 7px; }
+.map-mode-button { padding: .4rem .7rem; color: var(--muted); background: transparent; border: 0; border-radius: 5px; font-size: .78rem; cursor: pointer; }
+.map-mode-button:hover { color: var(--accent); }
+.map-mode-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.map-mode-button[aria-pressed="true"] { color: var(--ink); background: var(--surface-raised); font-weight: 650; }
 .map-save-status { position: absolute; top: 2.9rem; right: .6rem; z-index: 1000; padding: .3rem .6rem; background: var(--surface); border: 1px solid var(--line); border-radius: 7px; }
 .map-credit { margin: 1rem 0 1.5rem; color: var(--faint); font-size: .72rem; }
 .map-credit a { color: var(--muted); }

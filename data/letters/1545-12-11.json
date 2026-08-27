@@ -25,9 +25,12 @@
           "seals": [
             {
               "person": "Michael",
-              "position": "0.3596,0.9113",
-              "size": 0.06999999999999999,
-              "type": "full"
+              "position": "0.3580,0.9106",
+              "size": 0.061999999999999986,
+              "type": "full",
+              "width": 0.08,
+              "wideningRotation": -25,
+              "rotation": -6
             }
           ]
         },

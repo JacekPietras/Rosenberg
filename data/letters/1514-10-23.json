@@ -26,9 +26,12 @@
           "seals": [
             {
               "person": "?",
-              "position": "0.4001,0.8120",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.3997,0.8238",
+              "size": 0.04599999999999997,
+              "type": "full",
+              "width": 0.08,
+              "wideningRotation": 32,
+              "rotation": 9
             },
             {
               "person": "?",
@@ -38,8 +41,8 @@
             },
             {
               "person": "?",
-              "position": "0.4983,0.8347",
-              "size": 0.074,
+              "position": "0.4987,0.8384",
+              "size": 0.04049999999999997,
               "type": "full"
             },
             {

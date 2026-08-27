@@ -46,7 +46,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             relative_path = payload["path"]
             document = payload["document"]
             target = (ROOT / relative_path).resolve()
-            allowed = target.is_relative_to(ROOT / "data") and target.suffix == ".json"
+            allowed = (target.is_relative_to(ROOT / "data") or target.is_relative_to(ROOT / "docs" / "assets")) and target.suffix == ".json"
             if not allowed or Path(relative_path).as_posix() != relative_path:
                 raise ValueError("Invalid document path")
             is_entries_document = isinstance(document, dict) and isinstance(document.get("entries"), list)

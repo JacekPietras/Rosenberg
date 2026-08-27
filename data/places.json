@@ -1,41 +1,76 @@
 [
   {
-    "variations": ["Uissigheim", "Ussigheim", "Ußinkeim"],
+    "variations": [
+      "Uissigheim",
+      "Ussigheim",
+      "Ußinkeim"
+    ],
     "lat": 49.6793443,
     "lon": 9.5735718
   },
   {
-    "variations": ["Lauda", "ludin", "luden", "Lueden", "Lawdaw", "Lawden"],
+    "variations": [
+      "Lauda",
+      "ludin",
+      "luden",
+      "Lueden",
+      "Lawdaw",
+      "Lawden"
+    ],
     "lat": 49.5704139,
     "lon": 9.7028414
   },
   {
-    "variations": ["Wölchingen", "Wolchingen", "Wolching"],
+    "variations": [
+      "Wölchingen",
+      "Wolchingen",
+      "Wolching"
+    ],
     "lat": 49.4848212,
     "lon": 9.6315974
   },
   {
-    "variations": ["Boxberg", "Boxsberg", "Bocksberg"],
+    "variations": [
+      "Boxberg",
+      "Boxsberg",
+      "Bocksberg"
+    ],
     "lat": 49.4792833,
     "lon": 9.6415872
   },
   {
-    "variations": ["Rosenberg", "Roßenberg", "Rösenberg"],
+    "variations": [
+      "Rosenberg",
+      "Roßenberg",
+      "Rösenberg"
+    ],
     "lat": 49.4562999,
     "lon": 9.4731434
   },
   {
-    "variations": ["Jagstberg"],
+    "variations": [
+      "Jagstberg"
+    ],
     "lat": 49.3366134,
     "lon": 9.7947915
   },
   {
-    "variations": ["Angeltürn", "Angertal"],
+    "variations": [
+      "Angeltürn",
+      "Angertal"
+    ],
     "lat": 49.4877312,
     "lon": 9.5978372
   },
   {
-    "variations": ["Erligheim", "Erlikeim", "Erlekeim", "Erleheim", "Erlekeim", "Erleckein"],
+    "variations": [
+      "Erligheim",
+      "Erlikeim",
+      "Erlekeim",
+      "Erleheim",
+      "Erlekeim",
+      "Erleckein"
+    ],
     "lat": 49.018333,
     "lon": 9.099444
   }
