@@ -19,9 +19,12 @@
           "seals": [
             {
               "person": "Anna",
-              "position": "0.4454,0.8677",
-              "size": 0.12600000000000003,
-              "type": "contrepalle"
+              "position": "0.4434,0.8653",
+              "size": 0.10600000000000001,
+              "type": "contrepalle",
+              "width": 0.09,
+              "wideningRotation": 7,
+              "rotation": 48
             }
           ]
         },

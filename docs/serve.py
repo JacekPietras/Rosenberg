@@ -49,7 +49,8 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             allowed = target.is_relative_to(ROOT / "data") and target.suffix == ".json"
             if not allowed or Path(relative_path).as_posix() != relative_path:
                 raise ValueError("Invalid document path")
-            if not isinstance(document, dict) or not isinstance(document.get("entries"), list):
+            is_entries_document = isinstance(document, dict) and isinstance(document.get("entries"), list)
+            if not isinstance(document, list) and not is_entries_document:
                 raise ValueError("Invalid document")
             target.parent.mkdir(parents=True, exist_ok=True)
             with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=target.parent, delete=False) as handle:

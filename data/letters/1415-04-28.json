@@ -21,9 +21,12 @@
           "seals": [
             {
               "person": "Else",
-              "position": "0.2445,0.7924",
-              "size": 0.08,
-              "type": "contrepalle"
+              "position": "0.2445,0.7902",
+              "size": 0.06999999999999999,
+              "type": "contrepalle",
+              "width": 0.28,
+              "wideningRotation": -31,
+              "rotation": 12
             },
             {
               "person": "Kunz",

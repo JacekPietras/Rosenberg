@@ -17,9 +17,10 @@
           "seals": [
             {
               "person": "Jörg",
-              "position": "0.3321,0.9009",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.3329,0.8996",
+              "size": 0.059999999999999984,
+              "type": "full",
+              "rotation": -39
             }
           ]
         },

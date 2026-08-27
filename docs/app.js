@@ -41,8 +41,7 @@ const state = { manifest: null, active: preferences.active, place: preferences.p
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
 const MISSING_LETTER_LABEL = 'missing';
 let leafletMap = null;
-let hrrImageLayer = null;
-let hrrLayerVisible = true;
+let mapMode = 'live';
 
 function hasSource(source) {
   if (Array.isArray(source)) return source.some(hasSource);
@@ -69,6 +68,7 @@ const REFRESH_INTERVAL = 30000;
 const navigation = new URLSearchParams(location.search);
 if (navigation.get('document') || navigation.get('tab') || navigation.get('letter')) { state.place = null; state.person = null; }
 if (navigation.get('tab') === 'letters') state.active = 'letters';
+if (navigation.get('tab') === 'books') state.active = 'books';
 if (navigation.get('tab') === 'tree') state.active = 'tree';
 if (navigation.get('tab') === 'map') state.active = 'map';
 if (navigation.get('document')) state.active = navigation.get('document');
@@ -426,48 +426,97 @@ function peopleTreeMarkup(people = []) {
   return `<div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Family tree">${edges.join('')}${nodes}</svg></div>`;
 }
 
-// Historical overlay: "Das Heilige Römische Reich um 1400" by Ziegelbrenner (Wikimedia Commons,
-// CC BY-SA 3.0), georeferenced onto the real OpenStreetMap base layer below. Calibration was
-// measured against the source image's native 3715x3966 resolution using Stuttgart and Würzburg
-// as reference points; hrrImageBounds() extrapolates the image's corner lat/lon from that.
+// Historical map: "Das Heilige Römische Reich um 1400" by Ziegelbrenner (Wikimedia Commons,
+// CC BY-SA 3.0). It is not georeferenced to the Mercator projection OpenStreetMap tiles use, so
+// draping it as a translucent layer over the live map made it drift out of alignment while
+// panning/zooming. Instead it's shown as its own canvas (Leaflet CRS.Simple, plain image pixels)
+// and place markers are projected onto its pixel space via a linear calibration measured against
+// the source image's native 3715x3966 resolution, using Stuttgart and Würzburg as reference points.
 const HRR_MAP_IMAGE = 'assets/hrr-1400.jpg';
 const HRR_MAP_NATIVE_WIDTH = 3715;
 const HRR_MAP_NATIVE_HEIGHT = 3966;
 const HRR_MAP_CALIBRATION = { x0: 1245, y0: 2180, lon0: 9.1829, lat0: 48.7758, pxPerDegreeLon: 217.9, pxPerDegreeLat: -294.4 };
 
-function hrrImageBounds() {
+function hrrPixelForLatLon(lat, lon) {
   const { x0, y0, lon0, lat0, pxPerDegreeLon, pxPerDegreeLat } = HRR_MAP_CALIBRATION;
-  const lonAt = (x) => lon0 + (x - x0) / pxPerDegreeLon;
-  const latAt = (y) => lat0 + (y - y0) / pxPerDegreeLat;
-  return [[latAt(HRR_MAP_NATIVE_HEIGHT), lonAt(0)], [latAt(0), lonAt(HRR_MAP_NATIVE_WIDTH)]];
+  return { x: x0 + (lon - lon0) * pxPerDegreeLon, y: y0 + (lat - lat0) * pxPerDegreeLat };
+}
+
+function hrrLatLonForPixel(x, y) {
+  const { x0, y0, lon0, lat0, pxPerDegreeLon, pxPerDegreeLat } = HRR_MAP_CALIBRATION;
+  return { lat: lat0 + (y - y0) / pxPerDegreeLat, lon: lon0 + (x - x0) / pxPerDegreeLon };
+}
+
+// Editing (dragging calibration markers, saving to data/places.json) only works against the
+// local dev server (docs/serve.py) that /api/save-document writes through; the published
+// GitHub Pages viewer is read-only and has nowhere to persist a drag to.
+const MAP_EDITABLE = !location.hostname.endsWith('github.io');
+let placesSaveQueue = Promise.resolve();
+
+function placesForSave() {
+  return state.places.map((place) => {
+    const raw = { variations: place.variations, lat: place.lat, lon: place.lon };
+    if (Number.isFinite(place.corrected_lat)) raw.corrected_lat = place.corrected_lat;
+    if (Number.isFinite(place.corrected_lon)) raw.corrected_lon = place.corrected_lon;
+    return raw;
+  });
+}
+
+function savePlaces() {
+  const operation = placesSaveQueue.then(async () => {
+    const status = $('#map-save-status');
+    try {
+      if (status) { status.textContent = 'Saving…'; status.classList.remove('error'); }
+      const response = await fetch('/api/save-document', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path: 'data/places.json', document: placesForSave() }) });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || `Save failed (${response.status})`);
+      if (status) status.textContent = 'Saved calibration point.';
+    } catch (error) {
+      if (status) { status.textContent = error.message; status.classList.add('error'); }
+    }
+  });
+  placesSaveQueue = operation.catch(() => {});
+  return operation;
 }
 
 function renderMapPage() {
-  const toggleLabel = hrrLayerVisible ? 'Hide historical map' : 'Show historical map';
-  return `<div class="map-wrap"><div id="map-container" class="map-container" role="application" aria-label="Map of places"></div><button id="map-layer-toggle" class="map-layer-toggle" type="button" aria-pressed="${!hrrLayerVisible}">${toggleLabel}</button></div><p class="map-credit">Base map: <a href="https://commons.wikimedia.org/wiki/File:HRR_1400.png" target="_blank" rel="noreferrer">Das Heilige Römische Reich um 1400</a> by Ziegelbrenner, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons. Place positions are approximate.</p>`;
+  const toggleLabel = mapMode === 'live' ? 'Show 1400 map' : 'Show current map';
+  return `<div class="map-wrap"><div id="map-container" class="map-container" role="application" aria-label="Map of places"></div><button id="map-layer-toggle" class="map-layer-toggle" type="button" aria-pressed="${mapMode === 'historical'}">${toggleLabel}</button><span id="map-save-status" class="map-save-status status" aria-live="polite"></span></div><p id="map-credit" class="map-credit">${mapMode === 'historical' ? HRR_MAP_CREDIT_HTML : ''}</p>`;
 }
 
-function setupMap() {
+function renderMapLayer(container, places) {
   if (leafletMap) { leafletMap.remove(); leafletMap = null; }
-  const container = $('#map-container');
-  if (!container || typeof L === 'undefined') return;
-  const places = state.places.filter((place) => Number.isFinite(place.lat) && Number.isFinite(place.lon));
-  if (!places.length) return;
+
+  if (mapMode === 'historical') {
+    const bounds = [[0, 0], [HRR_MAP_NATIVE_HEIGHT, HRR_MAP_NATIVE_WIDTH]];
+    leafletMap = L.map(container, { crs: L.CRS.Simple, scrollWheelZoom: true, minZoom: -10, maxZoom: 10, zoomSnap: 0 });
+    L.imageOverlay(HRR_MAP_IMAGE, bounds).addTo(leafletMap);
+    leafletMap.setMaxBounds(L.latLngBounds(bounds).pad(0.5));
+    const markers = places.map((place) => {
+      const { x, y } = hrrPixelForLatLon(place.lat, place.lon);
+      const marker = L.marker([HRR_MAP_NATIVE_HEIGHT - y, x], { draggable: MAP_EDITABLE }).addTo(leafletMap);
+      const query = encodeURIComponent(place.name);
+      marker.bindPopup(`<a class="place-link" href="?place=${query}">${escapeHtml(place.name)}</a>`);
+      if (MAP_EDITABLE) {
+        marker.on('dragend', () => {
+          const { lat, lng } = marker.getLatLng();
+          const corrected = hrrLatLonForPixel(lng, HRR_MAP_NATIVE_HEIGHT - lat);
+          place.corrected_lat = corrected.lat;
+          place.corrected_lon = corrected.lon;
+          savePlaces();
+        });
+      }
+      return marker;
+    });
+    leafletMap.fitBounds(bounds);
+    return;
+  }
+
   leafletMap = L.map(container, { scrollWheelZoom: true });
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors',
     maxZoom: 18,
   }).addTo(leafletMap);
-  hrrImageLayer = L.imageOverlay(HRR_MAP_IMAGE, hrrImageBounds());
-  if (hrrLayerVisible) hrrImageLayer.addTo(leafletMap);
-  const layerToggle = $('#map-layer-toggle');
-  layerToggle?.addEventListener('click', () => {
-    hrrLayerVisible = !hrrLayerVisible;
-    if (hrrLayerVisible) hrrImageLayer.addTo(leafletMap);
-    else leafletMap.removeLayer(hrrImageLayer);
-    layerToggle.textContent = hrrLayerVisible ? 'Hide historical map' : 'Show historical map';
-    layerToggle.setAttribute('aria-pressed', String(!hrrLayerVisible));
-  });
   const markers = places.map((place) => {
     const marker = L.marker([place.lat, place.lon]).addTo(leafletMap);
     const query = encodeURIComponent(place.name);
@@ -475,6 +524,24 @@ function setupMap() {
     return marker;
   });
   leafletMap.fitBounds(L.featureGroup(markers).getBounds(), { padding: [40, 40] });
+}
+
+const HRR_MAP_CREDIT_HTML = 'Historical base map: <a href="https://commons.wikimedia.org/wiki/File:HRR_1400.png" target="_blank" rel="noreferrer">Das Heilige Römische Reich um 1400</a> by Ziegelbrenner, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons. Place positions are approximate.';
+
+function setupMap() {
+  const container = $('#map-container');
+  const places = state.places.filter((place) => Number.isFinite(place.lat) && Number.isFinite(place.lon));
+  const layerToggle = $('#map-layer-toggle');
+  layerToggle?.addEventListener('click', () => {
+    mapMode = mapMode === 'live' ? 'historical' : 'live';
+    layerToggle.textContent = mapMode === 'live' ? 'Show 1400 map' : 'Show current map';
+    layerToggle.setAttribute('aria-pressed', String(mapMode === 'historical'));
+    const credit = $('#map-credit');
+    if (credit) credit.innerHTML = mapMode === 'historical' ? HRR_MAP_CREDIT_HTML : '';
+    if (container && places.length) renderMapLayer(container, places);
+  });
+  if (!container || typeof L === 'undefined' || !places.length) return;
+  renderMapLayer(container, places);
 }
 
 function sealAnnotationMarkup(seals = []) {
@@ -818,6 +885,33 @@ function setupImageLightbox() {
     const rect = lightboxAnnotations.getBoundingClientRect();
     return { x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)), y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)) };
   };
+  const startSealDrag = (event, index, target) => {
+    const seal = currentSeals()[index];
+    if (!seal) return;
+    selectedIndex = index;
+    const point = imagePoint(event);
+    const [sealX, sealY] = String(seal.position || '').split(',').map(Number);
+    drag = { index, pointerId: event.pointerId, offsetX: sealX - point.x, offsetY: sealY - point.y };
+    lightboxAnnotations.querySelectorAll('.seal-marker').forEach((item) => item.classList.toggle('selected', Number(item.dataset.sealIndex) === index));
+    updateEditorControls();
+    target.setPointerCapture?.(event.pointerId);
+    event.preventDefault();
+  };
+  const moveSealDrag = (event) => {
+    if (!drag || (drag.pointerId !== undefined && event.pointerId !== drag.pointerId)) return;
+    const point = imagePoint(event);
+    const seal = currentSeals()[drag.index];
+    if (!seal) return;
+    const x = Math.max(0, Math.min(1, point.x + Number(drag.offsetX)));
+    const y = Math.max(0, Math.min(1, point.y + Number(drag.offsetY)));
+    seal.position = `${x.toFixed(4)},${y.toFixed(4)}`;
+    const marker = lightboxAnnotations.querySelector(`.seal-marker[data-seal-index="${drag.index}"]`);
+    if (marker) {
+      marker.style.left = `${x * 100}%`;
+      marker.style.top = `${y * 100}%`;
+    }
+    updateSealPreview();
+  };
   const updateLightboxAnnotations = () => {
     if (!lightboxImage.naturalWidth || !lightboxImage.naturalHeight) return;
     const stageWidth = lightboxStage.clientWidth;
@@ -886,29 +980,18 @@ function setupImageLightbox() {
     if (!editingContext) return;
     const marker = event.target.closest('.seal-marker');
     if (!marker) return;
-    selectedIndex = Number(marker.dataset.sealIndex);
-    const point = imagePoint(event);
-    drag = { index: selectedIndex, offsetX: currentSeals()[selectedIndex].position.split(',')[0] - point.x, offsetY: currentSeals()[selectedIndex].position.split(',')[1] - point.y };
-    lightboxAnnotations.querySelectorAll('.seal-marker').forEach((item) => item.classList.toggle('selected', item === marker));
-    updateEditorControls();
-    marker.setPointerCapture?.(event.pointerId);
-    event.preventDefault();
+    startSealDrag(event, Number(marker.dataset.sealIndex), marker);
   });
-  lightboxAnnotations.addEventListener('pointermove', (event) => {
-    if (!drag) return;
-    const point = imagePoint(event);
-    const seal = currentSeals()[drag.index];
-    const x = Math.max(0, Math.min(1, point.x + Number(drag.offsetX)));
-    const y = Math.max(0, Math.min(1, point.y + Number(drag.offsetY)));
-    seal.position = `${x.toFixed(4)},${y.toFixed(4)}`;
-    const marker = lightboxAnnotations.querySelector(`.seal-marker[data-seal-index="${drag.index}"]`);
-    if (marker) {
-      marker.style.left = `${x * 100}%`;
-      marker.style.top = `${y * 100}%`;
-    }
-    updateSealPreview();
-  });
+  lightboxAnnotations.addEventListener('pointermove', moveSealDrag);
   lightboxAnnotations.addEventListener('pointerup', () => { drag = null; });
+  lightboxAnnotations.addEventListener('pointercancel', () => { drag = null; });
+  sealPreview?.addEventListener('pointerdown', (event) => {
+    if (!editingContext || selectedIndex === null || !sealPreview.classList.contains('is-seal-preview') || !event.target.closest('.seal-crop')) return;
+    startSealDrag(event, selectedIndex, sealPreview);
+  });
+  sealPreview?.addEventListener('pointermove', moveSealDrag);
+  sealPreview?.addEventListener('pointerup', () => { drag = null; });
+  sealPreview?.addEventListener('pointercancel', () => { drag = null; });
   lightboxStage.addEventListener('click', async (event) => {
     if (!editingContext) return;
     const marker = event.target.closest?.('.seal-marker');
@@ -967,8 +1050,9 @@ function setupImageLightbox() {
       return;
     }
     const marker = event.target.closest('.seal-marker');
-    if (!marker) return;
-    const index = Number(marker.dataset.sealIndex);
+    const previewCrop = event.target.closest('.image-lightbox-seal-preview .seal-crop');
+    const index = marker ? Number(marker.dataset.sealIndex) : previewCrop && sealPreview.classList.contains('is-seal-preview') ? selectedIndex : null;
+    if (index === null) return;
     if (index !== selectedIndex) return;
     // deltaMode differs between mouse wheels, trackpads, and browsers. Use
     // the direction only so one gesture has predictable precision everywhere.
@@ -1475,10 +1559,17 @@ function renderPersonPage() {
 }
 
 function renderTabs() {
-  const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, { path: 'seals', label: 'Seals' }, { path: 'map', label: 'Map' }, { path: 'tree', label: 'Tree' }];
-  $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
-  document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => {
-    const nextActive = button.dataset.path;
+  const tabs = [{ path: 'books', label: 'Books' }, ...(state.manifest.notes ? [{ path: 'data/notes/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, { path: 'seals', label: 'Seals' }, { path: 'map', label: 'Map' }, { path: 'tree', label: 'Tree' }];
+  const bookIsActive = state.active === 'books' || state.manifest.books.some((book) => book.path === state.active);
+  $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${(tab.path === 'books' ? bookIsActive : state.active === tab.path) ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
+  $('#book-tabs').innerHTML = bookIsActive
+    ? state.manifest.books.map((book) => `<button class="subtab ${state.active === book.path ? 'active' : ''}" data-path="${escapeHtml(book.path)}">${escapeHtml(book.label)}</button>`).join('')
+    : '';
+  document.querySelectorAll('.tab, .subtab').forEach((button) => button.addEventListener('click', () => {
+    const requestedPath = button.dataset.path;
+    const nextActive = requestedPath === 'books'
+      ? (state.manifest.books.some((book) => book.path === state.active) ? state.active : state.manifest.books[0]?.path || 'letters')
+      : requestedPath;
     if (nextActive !== state.active) {
       clearScreenCaches();
     }
@@ -1489,7 +1580,7 @@ function renderTabs() {
     const nextUrl = new URL(location.href);
     nextUrl.search = '';
     nextUrl.hash = '';
-    if (['letters', 'seals', 'map', 'tree'].includes(nextActive)) nextUrl.searchParams.set('tab', nextActive);
+    if (requestedPath === 'books' || ['letters', 'seals', 'map', 'tree'].includes(nextActive)) nextUrl.searchParams.set('tab', requestedPath === 'books' ? 'books' : nextActive);
     else nextUrl.searchParams.set('document', nextActive);
     history.replaceState(null, '', `${nextUrl.pathname}${nextUrl.search}`);
     state.active = nextActive;
@@ -1752,6 +1843,7 @@ async function loadAll() {
   if (!letterPaths.some((path) => letterHasMissingSourceOrUrl(path))) state.letterLabels = state.letterLabels.filter((label) => label !== MISSING_LETTER_LABEL);
   if (!Array.isArray(state.hiddenLetterLabels)) state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
   state.sealNames = [...new Set(state.sealNames.map(normalizeSealFilter).filter(Boolean))];
+  if (state.active === 'books') state.active = manifest.books[0]?.path || 'letters';
   if (state.active !== 'letters' && state.active !== 'seals' && state.active !== 'tree' && state.active !== 'map' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
   savePreferences();
   renderTabs(); await renderActive();

@@ -18,15 +18,18 @@
           "seals": [
             {
               "person": "Friedrich?",
-              "position": "0.3460,0.9152",
-              "size": 0.05699999999999998,
-              "type": "full"
+              "position": "0.3455,0.9133",
+              "size": 0.038999999999999965,
+              "type": "full",
+              "rotation": -36
             },
             {
               "person": "Friedrich?",
-              "position": "0.4021,0.9199",
-              "size": 0.05199999999999998,
-              "type": "full"
+              "position": "0.4016,0.9174",
+              "size": 0.04199999999999997,
+              "type": "full",
+              "width": 0.06,
+              "rotation": 3
             }
           ]
         },

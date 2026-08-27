@@ -18,21 +18,23 @@
           "seals": [
             {
               "person": "Arnold?",
-              "position": "0.1495,0.9140",
-              "size": 0.08,
+              "position": "0.1509,0.9215",
+              "size": 0.04400000000000001,
+              "type": "full",
+              "rotation": -6
+            },
+            {
+              "person": "Arnold?",
+              "position": "0.2397,0.9240",
+              "size": 0.04199999999999997,
               "type": "full"
             },
             {
               "person": "Arnold?",
-              "position": "0.2390,0.9228",
-              "size": 0.04399999999999997,
-              "type": "full"
-            },
-            {
-              "person": "Arnold?",
-              "position": "0.3184,0.8820",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.3265,0.8956",
+              "size": 0.04799999999999997,
+              "type": "full",
+              "rotation": -9
             }
           ]
         },
