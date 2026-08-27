@@ -40,6 +40,7 @@ const preferences = loadPreferences();
 const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], personRecords: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
 const MISSING_LETTER_LABEL = 'missing';
+let leafletMap = null;
 
 function hasSource(source) {
   if (Array.isArray(source)) return source.some(hasSource);
@@ -67,6 +68,7 @@ const navigation = new URLSearchParams(location.search);
 if (navigation.get('document') || navigation.get('tab') || navigation.get('letter')) { state.place = null; state.person = null; }
 if (navigation.get('tab') === 'letters') state.active = 'letters';
 if (navigation.get('tab') === 'tree') state.active = 'tree';
+if (navigation.get('tab') === 'map') state.active = 'map';
 if (navigation.get('document')) state.active = navigation.get('document');
 if (navigation.get('letter')) {
   state.letter = navigation.get('letter');
@@ -420,6 +422,30 @@ function peopleTreeMarkup(people = []) {
     return `<g class="people-tree-node"><rect x="${position.x}" y="${position.y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${position.x + nodeWidth / 2}" y="${position.y + 25}" text-anchor="middle">${text}</text></g>`;
   }).join('');
   return `<div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Family tree">${edges.join('')}${nodes}</svg></div>`;
+}
+
+function renderMapPage() {
+  return '<div id="map-container" class="map-container" role="application" aria-label="Map of places"></div>';
+}
+
+function setupMap() {
+  if (leafletMap) { leafletMap.remove(); leafletMap = null; }
+  const container = $('#map-container');
+  if (!container || typeof L === 'undefined') return;
+  const places = state.places.filter((place) => Number.isFinite(place.lat) && Number.isFinite(place.lon));
+  if (!places.length) return;
+  leafletMap = L.map(container, { scrollWheelZoom: true });
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors',
+    maxZoom: 18,
+  }).addTo(leafletMap);
+  const markers = places.map((place) => {
+    const marker = L.marker([place.lat, place.lon]).addTo(leafletMap);
+    const query = encodeURIComponent(place.name);
+    marker.bindPopup(`<a class="place-link" href="?place=${query}">${escapeHtml(place.name)}</a>`);
+    return marker;
+  });
+  leafletMap.fitBounds(L.featureGroup(markers).getBounds(), { padding: [24, 24] });
 }
 
 function sealAnnotationMarkup(seals = []) {
@@ -1420,7 +1446,7 @@ function renderPersonPage() {
 }
 
 function renderTabs() {
-  const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, { path: 'seals', label: 'Seals' }, { path: 'tree', label: 'Tree' }];
+  const tabs = [...state.manifest.books, ...(state.manifest.notes ? [{ path: 'data/notes/notes.json', label: 'Notes' }] : []), { path: 'letters', label: 'Letters' }, { path: 'seals', label: 'Seals' }, { path: 'map', label: 'Map' }, { path: 'tree', label: 'Tree' }];
   $('#tabs').innerHTML = tabs.map((tab) => `<button class="tab ${state.active === tab.path ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
   document.querySelectorAll('.tab').forEach((button) => button.addEventListener('click', () => {
     const nextActive = button.dataset.path;
@@ -1431,7 +1457,7 @@ function renderTabs() {
       state.letterSource = null;
       state.navigationLetterSource = null;
     }
-    history.replaceState(null, '', `${location.pathname}${location.hash}`);
+    history.replaceState(null, '', `${location.pathname}${location.search}`);
     state.active = nextActive;
     state.place = null;
     state.person = null;
@@ -1606,6 +1632,7 @@ async function renderActive() {
   $('#status').classList.remove('error');
   state.sealMarkerCleanup?.();
   state.sealMarkerCleanup = null;
+  if (leafletMap && state.active !== 'map') { leafletMap.remove(); leafletMap = null; }
   if (state.person) {
     $('#content').innerHTML = renderPersonPage();
     setupMentionNavigation('person-mention', 'a.place-link, a.person-link');
@@ -1630,6 +1657,11 @@ async function renderActive() {
   }
   if (state.active === 'tree') {
     $('#content').innerHTML = peopleTreeMarkup(state.personRecords);
+    return;
+  }
+  if (state.active === 'map') {
+    $('#content').innerHTML = renderMapPage();
+    setupMap();
     return;
   }
   const allLetterPaths = state.manifest.letters;
@@ -1686,7 +1718,7 @@ async function loadAll() {
   if (!letterPaths.some((path) => letterHasMissingSourceOrUrl(path))) state.letterLabels = state.letterLabels.filter((label) => label !== MISSING_LETTER_LABEL);
   if (!Array.isArray(state.hiddenLetterLabels)) state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
   state.sealNames = [...new Set(state.sealNames.map(normalizeSealFilter).filter(Boolean))];
-  if (state.active !== 'letters' && state.active !== 'seals' && state.active !== 'tree' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
+  if (state.active !== 'letters' && state.active !== 'seals' && state.active !== 'tree' && state.active !== 'map' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
   savePreferences();
   renderTabs(); await renderActive();
 }

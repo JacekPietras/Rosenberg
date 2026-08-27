@@ -186,6 +186,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .people-tree-parent { stroke: var(--accent); stroke-width: 1.5; }
 .people-tree-spouse { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 5 4; }
 .people-tree-edge-label { fill: var(--muted); font-size: 11px; text-anchor: middle; }
+.map-container { height: 70vh; min-height: 22rem; margin: 1.5rem 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+.map-container .leaflet-popup-content a.place-link { color: #3267b1; font-weight: 650; }
 .entry-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.25rem 0; }
 .entry-image { flex: 1 1 12rem; max-width: 100%; margin: 0; text-align: center; }
 .entry-image img { display: block; max-width: 100%; height: auto; max-height: 32rem; margin: 0 auto; }
