@@ -41,6 +41,8 @@ const state = { manifest: null, active: preferences.active, place: preferences.p
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
 const MISSING_LETTER_LABEL = 'missing';
 let leafletMap = null;
+let hrrImageLayer = null;
+let hrrLayerVisible = true;
 
 function hasSource(source) {
   if (Array.isArray(source)) return source.some(hasSource);
@@ -424,8 +426,25 @@ function peopleTreeMarkup(people = []) {
   return `<div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Family tree">${edges.join('')}${nodes}</svg></div>`;
 }
 
+// Historical overlay: "Das Heilige Römische Reich um 1400" by Ziegelbrenner (Wikimedia Commons,
+// CC BY-SA 3.0), georeferenced onto the real OpenStreetMap base layer below. Calibration was
+// measured against the source image's native 3715x3966 resolution using Stuttgart and Würzburg
+// as reference points; hrrImageBounds() extrapolates the image's corner lat/lon from that.
+const HRR_MAP_IMAGE = 'assets/hrr-1400.jpg';
+const HRR_MAP_NATIVE_WIDTH = 3715;
+const HRR_MAP_NATIVE_HEIGHT = 3966;
+const HRR_MAP_CALIBRATION = { x0: 1245, y0: 2180, lon0: 9.1829, lat0: 48.7758, pxPerDegreeLon: 217.9, pxPerDegreeLat: -294.4 };
+
+function hrrImageBounds() {
+  const { x0, y0, lon0, lat0, pxPerDegreeLon, pxPerDegreeLat } = HRR_MAP_CALIBRATION;
+  const lonAt = (x) => lon0 + (x - x0) / pxPerDegreeLon;
+  const latAt = (y) => lat0 + (y - y0) / pxPerDegreeLat;
+  return [[latAt(HRR_MAP_NATIVE_HEIGHT), lonAt(0)], [latAt(0), lonAt(HRR_MAP_NATIVE_WIDTH)]];
+}
+
 function renderMapPage() {
-  return '<div id="map-container" class="map-container" role="application" aria-label="Map of places"></div>';
+  const toggleLabel = hrrLayerVisible ? 'Hide historical map' : 'Show historical map';
+  return `<div class="map-wrap"><div id="map-container" class="map-container" role="application" aria-label="Map of places"></div><button id="map-layer-toggle" class="map-layer-toggle" type="button" aria-pressed="${!hrrLayerVisible}">${toggleLabel}</button></div><p class="map-credit">Base map: <a href="https://commons.wikimedia.org/wiki/File:HRR_1400.png" target="_blank" rel="noreferrer">Das Heilige Römische Reich um 1400</a> by Ziegelbrenner, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons. Place positions are approximate.</p>`;
 }
 
 function setupMap() {
@@ -439,13 +458,23 @@ function setupMap() {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors',
     maxZoom: 18,
   }).addTo(leafletMap);
+  hrrImageLayer = L.imageOverlay(HRR_MAP_IMAGE, hrrImageBounds());
+  if (hrrLayerVisible) hrrImageLayer.addTo(leafletMap);
+  const layerToggle = $('#map-layer-toggle');
+  layerToggle?.addEventListener('click', () => {
+    hrrLayerVisible = !hrrLayerVisible;
+    if (hrrLayerVisible) hrrImageLayer.addTo(leafletMap);
+    else leafletMap.removeLayer(hrrImageLayer);
+    layerToggle.textContent = hrrLayerVisible ? 'Hide historical map' : 'Show historical map';
+    layerToggle.setAttribute('aria-pressed', String(!hrrLayerVisible));
+  });
   const markers = places.map((place) => {
     const marker = L.marker([place.lat, place.lon]).addTo(leafletMap);
     const query = encodeURIComponent(place.name);
     marker.bindPopup(`<a class="place-link" href="?place=${query}">${escapeHtml(place.name)}</a>`);
     return marker;
   });
-  leafletMap.fitBounds(L.featureGroup(markers).getBounds(), { padding: [24, 24] });
+  leafletMap.fitBounds(L.featureGroup(markers).getBounds(), { padding: [40, 40] });
 }
 
 function sealAnnotationMarkup(seals = []) {
@@ -1457,7 +1486,12 @@ function renderTabs() {
       state.letterSource = null;
       state.navigationLetterSource = null;
     }
-    history.replaceState(null, '', `${location.pathname}${location.search}`);
+    const nextUrl = new URL(location.href);
+    nextUrl.search = '';
+    nextUrl.hash = '';
+    if (['letters', 'seals', 'map', 'tree'].includes(nextActive)) nextUrl.searchParams.set('tab', nextActive);
+    else nextUrl.searchParams.set('document', nextActive);
+    history.replaceState(null, '', `${nextUrl.pathname}${nextUrl.search}`);
     state.active = nextActive;
     state.place = null;
     state.person = null;
