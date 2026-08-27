@@ -147,6 +147,13 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .person-mention { border-top: 1px solid var(--line); cursor: pointer; transition: border-color .15s ease, box-shadow .15s ease; }
 .person-mention:hover { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent-soft); }
 .person-mention:first-of-type { border-top: 0; }
+.entity-facts { margin: 1.5rem 0 2rem; }
+.entity-facts h3, .entity-section-title { margin: 0 0 .7rem; color: var(--ink); font-size: 1rem; font-weight: 650; }
+.entity-facts .facts { margin-top: 0; padding-left: 1rem; list-style: none; }
+.entity-facts .facts li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: .25rem .75rem; align-items: baseline; padding: 0; }
+.entity-fact-date { display: block; margin-bottom: .1rem; color: var(--muted); font-size: .78rem; }
+.entity-fact-text { display: block; min-width: 0; }
+.entity-section-title { margin-top: 2rem; }
 .entry { padding: .9rem 0; }
 .entry:first-of-type { padding-top: 0; }
 .entry-title, .source { margin: 0 0 .55rem; color: var(--muted); font-size: .78rem; font-weight: 650; letter-spacing: .02em; }
@@ -246,6 +253,11 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
   .seal-entry { display: block; }
   .seal-entry-media { margin-top: 1rem; }
   .document-heading { align-items: flex-start; }
+}
+
+@media (max-width: 500px) {
+  .entity-facts .facts li { grid-template-columns: 1fr; gap: .1rem; }
+  .entity-fact-date { margin-bottom: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1297,11 +1297,60 @@ function documentNavigationUrl(path, index) {
   return `?${params.toString()}#${entryAnchor(path, index)}`;
 }
 
+function factDate(fact, doc, entry) {
+  if (fact && typeof fact === 'object' && fact.date) return fact.date;
+  return entry.date || doc.date || '';
+}
+
+function factText(fact) {
+  return fact && typeof fact === 'object' ? fact.text : fact;
+}
+
+function dateSortValue(date) {
+  const match = String(date || '').match(/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?/);
+  if (!match) return Infinity;
+  return Number(`${match[1]}${match[2] || '01'}${match[3] || '01'}`);
+}
+
+function entityFactRecords(mentions) {
+  return mentions.flatMap(({ doc, path, entry, index }, mentionIndex) => (Array.isArray(entry.facts) ? entry.facts : [])
+    .map((fact, factIndex) => ({ date: factDate(fact, doc, entry), text: factText(fact), doc, path, entry, index, mentionIndex, factIndex }))
+    .filter((fact) => String(fact.text || '').trim())
+  ).sort((left, right) => dateSortValue(left.date) - dateSortValue(right.date)
+    || left.mentionIndex - right.mentionIndex
+    || left.factIndex - right.factIndex);
+}
+
+function entityMentionDate({ doc, entry }) {
+  if (entry.date || doc.date) return entry.date || doc.date;
+  const dates = (Array.isArray(entry.facts) ? entry.facts : [])
+    .map((fact) => factDate(fact, doc, entry))
+    .filter(Boolean);
+  return dates.sort((left, right) => dateSortValue(left) - dateSortValue(right))[0] || '';
+}
+
+function renderEntityFacts(mentions) {
+  const facts = entityFactRecords(mentions);
+  if (!facts.length) return '';
+  const items = facts.map((fact, factIndex) => {
+    const showDate = factIndex === 0 || fact.date !== facts[factIndex - 1].date;
+    const date = showDate && fact.date
+      ? `<time class="entity-fact-date" datetime="${escapeHtml(fact.date)}">${escapeHtml(formatDate(fact.date))}</time>`
+      : showDate ? '<span class="entity-fact-date">Undated</span>' : '<span class="entity-fact-date" aria-hidden="true"></span>';
+    return `<li>${date}<span class="entity-fact-text">${inlineMarkup(fact.text)}</span></li>`;
+  }).join('');
+  return `<section class="entity-facts"><h3>Facts</h3><ul class="facts">${items}</ul></section>`;
+}
+
 function renderEntityMentionsPage(entity, mentions, { kind, notFoundMessage, languageMarkup, extraMarkup } = {}) {
   if (!entity) return `<article class="document"><h2>${kind === 'place' ? 'Place' : 'Person'} not found</h2><p class="status">${notFoundMessage}</p></article>`;
   const heading = `<article class="document ${kind}-document-heading"><div class="document-heading"><div><h2>${escapeHtml(entity.name)}</h2></div><small>${mentions.length} mention${mentions.length === 1 ? '' : 's'}</small></div></article>`;
-  const content = mentions.map(({ doc, path, entry, index }) => `<article class="document ${kind}-mention" role="link" tabindex="0" data-document-href="${escapeHtml(documentNavigationUrl(path, index))}"><p class="entry-title">${markdownLinks(entry.title || documentTitle(doc, path))}</p>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${extraMarkup ? extraMarkup(doc, entry) : ''}${state.showFacts && entry.facts?.length ? `<ul class="facts">${entry.facts.map((fact) => `<li>${inlineMarkup(fact)}</li>`).join('')}</ul>` : ''}</article>`).join('');
-  return `${heading}${content || '<article class="document"><p class="status">No mentions found.</p></article>'}`;
+  const sortedMentions = [...mentions].sort((left, right) => dateSortValue(entityMentionDate(left)) - dateSortValue(entityMentionDate(right)) || left.index - right.index);
+  const content = sortedMentions.map(({ doc, path, entry, index }) => {
+    const date = entityMentionDate({ doc, entry });
+    return `<article class="document ${kind}-mention" role="link" tabindex="0" data-document-href="${escapeHtml(documentNavigationUrl(path, index))}"><p class="entry-title">${markdownLinks(entry.title || documentTitle(doc, path))}</p>${date ? `<p class="entry-date">${escapeHtml(formatDate(date))}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${extraMarkup ? extraMarkup(doc, entry) : ''}</article>`;
+  }).join('');
+  return `${heading}${renderEntityFacts(mentions)}${content ? `<h3 class="entity-section-title">Direct quotations</h3>${content}` : '<article class="document"><p class="status">No mentions found.</p></article>'}`;
 }
 
 function renderPlacePage() {
