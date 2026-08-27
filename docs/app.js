@@ -41,7 +41,7 @@ const state = { manifest: null, active: preferences.active, place: preferences.p
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
 const MISSING_LETTER_LABEL = 'missing';
 let leafletMap = null;
-let mapMode = 'live';
+let mapMode = '1378';
 
 function hasSource(source) {
   if (Array.isArray(source)) return source.some(hasSource);

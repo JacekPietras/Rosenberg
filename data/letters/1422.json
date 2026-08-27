@@ -22,15 +22,18 @@
             {
               "person": "Reinhard von Uissigheim",
               "position": "0.4593,0.7941",
-              "size": 0.097,
+              "size": 0.0935,
               "type": "full",
               "rotation": 15
             },
             {
               "person": "Kunz",
-              "position": "0.2936,0.7883",
-              "size": 0.11900000000000004,
-              "type": "full"
+              "position": "0.2917,0.7871",
+              "size": 0.10250000000000001,
+              "type": "full",
+              "width": 0.17,
+              "wideningRotation": -38,
+              "rotation": 15
             }
           ]
         },

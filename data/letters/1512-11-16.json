@@ -18,10 +18,12 @@
           "seals": [
             {
               "person": "Arnold?",
-              "position": "0.1509,0.9215",
+              "position": "0.1509,0.9209",
               "size": 0.04400000000000001,
               "type": "full",
-              "rotation": -6
+              "rotation": -6,
+              "width": 0.05,
+              "wideningRotation": 90
             },
             {
               "person": "Arnold?",

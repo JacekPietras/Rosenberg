@@ -56,7 +56,7 @@
               "rotation": 6
             },
             {
-              "person": "Ulrich?",
+              "person": "Ulrich",
               "position": "0.6782,0.7449",
               "size": 0.06599999999999999,
               "type": "helm",
@@ -65,10 +65,13 @@
               "wideningRotation": 86
             },
             {
-              "person": "Kunz?",
-              "position": "0.3806,0.7432",
-              "size": 0.08,
-              "type": "full"
+              "person": "Kunz",
+              "position": "0.3781,0.7439",
+              "size": 0.073,
+              "type": "full",
+              "width": 0.34,
+              "wideningRotation": 25,
+              "rotation": -12
             },
             {
               "person": "?",

@@ -1,0 +1,460 @@
+[
+  {
+    "variations": [
+      "Würzburg"
+    ],
+    "lat": 49.7913,
+    "lon": 9.9534,
+    "calibrated_x_1378": 1293.2024564222834,
+    "calibrated_y_1378": 1327.0114853395037,
+    "calibrated_x_1400": 1411.6242641742338,
+    "calibrated_y_1400": 1882.5761421751085
+  },
+  {
+    "variations": [
+      "Stuttgart"
+    ],
+    "lat": 48.7758,
+    "lon": 9.1829,
+    "calibrated_x_1378": 1162.721266769902,
+    "calibrated_y_1378": 1565.2201906294365,
+    "calibrated_x_1400": 1245.5630824711745,
+    "calibrated_y_1400": 2179.576941149132
+  },
+  {
+    "variations": [
+      "Mainz"
+    ],
+    "lat": 49.9929,
+    "lon": 8.2473,
+    "calibrated_x_1378": 1041.5421982662915,
+    "calibrated_y_1378": 1271.416066325927,
+    "calibrated_x_1400": 1084.079172498803,
+    "calibrated_y_1400": 1807.6962401900892
+  },
+  {
+    "variations": [
+      "Brüssel",
+      "Brussel",
+      "Brussels",
+      "Bruxelles"
+    ],
+    "lat": 50.8503,
+    "lon": 4.3517,
+    "calibrated_x_1378": 480.6542503129137,
+    "calibrated_y_1378": 1015.3731035628559,
+    "calibrated_x_1400": 350.9912750569124,
+    "calibrated_y_1400": 1498.5379665691917
+  },
+  {
+    "variations": [
+      "Danzig",
+      "Gdańsk"
+    ],
+    "lat": 54.352,
+    "lon": 18.6466,
+    "calibrated_x_1378": 2519.3350613581074,
+    "calibrated_y_1378": 223.4328154441605,
+    "calibrated_x_1400": 2918.664329561413,
+    "calibrated_y_1400": 462.7285091467593
+  },
+  {
+    "variations": [
+      "Wien",
+      "Vienna"
+    ],
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "calibrated_x_1378": 2285.7064753621835,
+    "calibrated_y_1378": 1696.4252841774953,
+    "calibrated_x_1400": 2631.519022844329,
+    "calibrated_y_1400": 2327.6297205668993
+  },
+  {
+    "variations": [
+      "Rimini"
+    ],
+    "lat": 44.0678,
+    "lon": 12.5695,
+    "calibrated_x_1400": 1821.0004990908576,
+    "calibrated_y_1400": 3571.396257174416
+  },
+  {
+    "variations": [
+      "Reims"
+    ],
+    "lat": 49.2583,
+    "lon": 4.0317,
+    "calibrated_x_1378": 388.7655054611514,
+    "calibrated_y_1378": 1392.0685323881808
+  },
+  {
+    "variations": [
+      "Milan",
+      "Milano"
+    ],
+    "lat": 45.4642,
+    "lon": 9.19,
+    "calibrated_x_1378": 1140.4300334824998,
+    "calibrated_y_1378": 2357.650060177114,
+    "calibrated_x_1400": 1125.046725516106,
+    "calibrated_y_1400": 3181.930425423133
+  },
+  {
+    "variations": [
+      "Padua",
+      "Padova"
+    ],
+    "lat": 45.4064,
+    "lon": 11.8768,
+    "calibrated_x_1378": 1590.1413270251674,
+    "calibrated_y_1378": 2381.0284425859613,
+    "calibrated_x_1400": 1679.9226307306326,
+    "calibrated_y_1400": 3215.0450146267444
+  },
+  {
+    "variations": [
+      "Prague",
+      "Praha"
+    ],
+    "lat": 50.0755,
+    "lon": 14.4378,
+    "calibrated_x_1378": 1956.9404754813215,
+    "calibrated_y_1378": 1256.8192593642007,
+    "calibrated_x_1400": 2205.1742129817835,
+    "calibrated_y_1400": 1789.665301649332
+  },
+  {
+    "variations": [
+      "Lubeck",
+      "Lübeck"
+    ],
+    "lat": 53.8655,
+    "lon": 10.6866,
+    "calibrated_x_1378": 1420.740039042628,
+    "calibrated_y_1378": 359.20407100002467,
+    "calibrated_x_1400": 1564.734413465538,
+    "calibrated_y_1400": 656.173310625697
+  },
+  {
+    "variations": [
+      "Berlin"
+    ],
+    "lat": 52.52,
+    "lon": 13.405,
+    "calibrated_x_1378": 1806.4065927519891,
+    "calibrated_y_1378": 687.1415729807825,
+    "calibrated_x_1400": 2005.9025883731827,
+    "calibrated_y_1400": 1045.1730499744094
+  },
+  {
+    "variations": [
+      "Munster",
+      "Münster"
+    ],
+    "lat": 51.9607,
+    "lon": 7.6261,
+    "calibrated_x_1378": 979.246329644475,
+    "calibrated_y_1378": 797.1866284476614,
+    "calibrated_x_1400": 987.9169516784472,
+    "calibrated_y_1400": 1202.5872507318695
+  },
+  {
+    "variations": [
+      "Bremen"
+    ],
+    "lat": 53.0793,
+    "lon": 8.8017,
+    "calibrated_x_1378": 1160.7129771737962,
+    "calibrated_y_1378": 540.6840922451568,
+    "calibrated_x_1400": 1223.799725304524,
+    "calibrated_y_1400": 874.3736305628458
+  },
+  {
+    "variations": [
+      "Cracow",
+      "Kraków"
+    ],
+    "lat": 50.0647,
+    "lon": 19.945,
+    "calibrated_x_1378": 2796.317405580079,
+    "calibrated_y_1378": 1207.4150625314348,
+    "calibrated_x_1400": 3275.0599656646314,
+    "calibrated_y_1400": 1715.1051069146515
+  },
+  {
+    "variations": [
+      "Warsaw",
+      "Warszawa"
+    ],
+    "lat": 52.2297,
+    "lon": 21.0122,
+    "calibrated_x_1378": 2895.0676326505213,
+    "calibrated_y_1378": 685.9047563240761,
+    "calibrated_x_1400": 3409.4824175537947,
+    "calibrated_y_1400": 1042.7182842090751
+  },
+  {
+    "variations": [
+      "Nuremberg",
+      "Nürnberg"
+    ],
+    "lat": 49.4521,
+    "lon": 11.0767,
+    "calibrated_x_1378": 1470.1166728066903,
+    "calibrated_y_1378": 1415.835570974358
+  },
+  {
+    "variations": [
+      "Heidelberg"
+    ],
+    "lat": 49.3988,
+    "lon": 8.6724,
+    "calibrated_x_1378": 1109.1525792548182,
+    "calibrated_y_1378": 1408.3617703106538
+  },
+  {
+    "variations": [
+      "Bamberg"
+    ],
+    "lat": 49.8988,
+    "lon": 10.9028,
+    "calibrated_x_1378": 1429.4838373492717,
+    "calibrated_y_1378": 1309.363348811304
+  },
+  {
+    "variations": [
+      "Ingolstadt"
+    ],
+    "lat": 48.7665,
+    "lon": 11.4257,
+    "calibrated_x_1378": 1518.4929322804394,
+    "calibrated_y_1378": 1578.7672899018735,
+    "calibrated_x_1400": 1665.9561701404193,
+    "calibrated_y_1400": 2211.2300655797253
+  },
+  {
+    "variations": [
+      "Ulm"
+    ],
+    "lat": 48.4011,
+    "lon": 9.9876,
+    "calibrated_x_1378": 1295.722997678854,
+    "calibrated_y_1378": 1658.2968947196205
+  },
+  {
+    "variations": [
+      "Landshut"
+    ],
+    "lat": 48.5372,
+    "lon": 12.1522,
+    "calibrated_x_1378": 1632.08532889507,
+    "calibrated_y_1378": 1632.8900687757332,
+    "calibrated_x_1400": 1797.9144742828246,
+    "calibrated_y_1400": 2251.898598356026
+  },
+  {
+    "variations": [
+      "Innsbruck"
+    ],
+    "lat": 47.2692,
+    "lon": 11.4041,
+    "calibrated_x_1378": 1511.7595705942413,
+    "calibrated_y_1378": 1934.2058595747287,
+    "calibrated_x_1400": 1641.8111702831177,
+    "calibrated_y_1400": 2656.157139137525
+  },
+  {
+    "variations": [
+      "Konstanz",
+      "Constance"
+    ],
+    "lat": 47.6603,
+    "lon": 9.1758,
+    "calibrated_x_1378": 1163.0697185241495,
+    "calibrated_y_1378": 1833.7607462808169,
+    "calibrated_x_1400": 1226.827191256123,
+    "calibrated_y_1400": 2527.503964845167
+  },
+  {
+    "variations": [
+      "Straßburg",
+      "Strasbourg"
+    ],
+    "lat": 48.5734,
+    "lon": 7.7521,
+    "calibrated_x_1378": 943.1897987076056,
+    "calibrated_y_1378": 1595.1793278331268
+  },
+  {
+    "variations": [
+      "Meiningen"
+    ],
+    "lat": 50.5697,
+    "lon": 10.4166,
+    "calibrated_x_1378": 1371.035827134428,
+    "calibrated_y_1378": 1142.1752713254277
+  },
+  {
+    "variations": [
+      "München",
+      "Munich"
+    ],
+    "lat": 48.1351,
+    "lon": 11.582,
+    "calibrated_x_1378": 1535.8106190226042,
+    "calibrated_y_1378": 1727.1639178743048
+  },
+  {
+    "variations": [
+      "Bologna"
+    ],
+    "lat": 44.4949,
+    "lon": 11.3426,
+    "calibrated_x_1400": 1567.060443444505,
+    "calibrated_y_1400": 3466.3536704661287
+  },
+  {
+    "variations": [
+      "Trier"
+    ],
+    "lat": 49.7596,
+    "lon": 6.6441,
+    "calibrated_x_1378": 795.3407608011188,
+    "calibrated_y_1378": 1317.0002612324465
+  },
+  {
+    "variations": [
+      "Koblenz"
+    ],
+    "lat": 50.3569,
+    "lon": 7.589,
+    "calibrated_x_1378": 944.3956962696639,
+    "calibrated_y_1378": 1175.913801457031,
+    "calibrated_x_1400": 957.2209043673284,
+    "calibrated_y_1400": 1689.8673006770368
+  },
+  {
+    "variations": [
+      "Breda"
+    ],
+    "lat": 51.5719,
+    "lon": 4.7683,
+    "calibrated_x_1378": 555.5874560141312,
+    "calibrated_y_1378": 850.7680435992615,
+    "calibrated_x_1400": 450.25525252878697,
+    "calibrated_y_1400": 1278.2843199141107
+  },
+  {
+    "variations": [
+      "Dresden"
+    ],
+    "lat": 51.0504,
+    "lon": 13.7373,
+    "calibrated_x_1400": 2077.887415601932,
+    "calibrated_y_1400": 1506.1334846024483
+  },
+  {
+    "variations": [
+      "Breslau",
+      "Wrocław"
+    ],
+    "lat": 51.1079,
+    "lon": 17.0385,
+    "calibrated_x_1378": 2343.1464620929496,
+    "calibrated_y_1378": 1001.1256614374533,
+    "calibrated_x_1400": 2696.5284615617657,
+    "calibrated_y_1400": 1446.1693981636045
+  },
+  {
+    "variations": [
+      "Turin",
+      "Torino"
+    ],
+    "lat": 45.0703,
+    "lon": 7.6869,
+    "calibrated_x_1400": 849.1159857282735,
+    "calibrated_y_1400": 3279.6807244581523
+  },
+  {
+    "variations": [
+      "Utrecht"
+    ],
+    "lat": 52.0907,
+    "lon": 5.1214,
+    "calibrated_x_1378": 632.5353132403446,
+    "calibrated_y_1378": 741.7379540334578,
+    "calibrated_x_1400": 533.1778676956395,
+    "calibrated_y_1400": 1129.1703456426285
+  },
+  {
+    "variations": [
+      "Groningen"
+    ],
+    "lat": 53.2194,
+    "lon": 6.5665,
+    "calibrated_x_1378": 849.4915821188744,
+    "calibrated_y_1378": 495.7985601460048
+  },
+  {
+    "variations": [
+      "Darmstadt"
+    ],
+    "lat": 49.8728,
+    "lon": 8.6512,
+    "calibrated_x_1378": 1098.1633189514628,
+    "calibrated_y_1378": 1305.1547451806853,
+    "calibrated_x_1400": 1142.6257290566425,
+    "calibrated_y_1400": 1837.7458137228923
+  },
+  {
+    "variations": [
+      "Rothenburg",
+      "Rothenburg ob der Tauber"
+    ],
+    "lat": 49.3779,
+    "lon": 10.1866,
+    "calibrated_x_1378": 1328.9993062582116,
+    "calibrated_y_1378": 1428.7892614540067
+  },
+  {
+    "variations": [
+      "Heilbronn"
+    ],
+    "lat": 49.1427,
+    "lon": 9.2109,
+    "calibrated_x_1378": 1174.9792617439014,
+    "calibrated_y_1378": 1477.977122851817
+  },
+  {
+    "variations": [
+      "Wertheim"
+    ],
+    "lat": 49.7597,
+    "lon": 9.5106,
+    "calibrated_x_1378": 1223.8598746735927,
+    "calibrated_y_1378": 1336.2567394360533
+  },
+  {
+    "variations": [
+      "Aschaffenburg"
+    ],
+    "lat": 49.9769,
+    "lon": 9.1508,
+    "calibrated_x_1378": 1175.3854685407834,
+    "calibrated_y_1378": 1280.6997693908581,
+    "calibrated_x_1400": 1253.593198078683,
+    "calibrated_y_1400": 1834.368005228635
+  },
+  {
+    "variations": [
+      "Coburg"
+    ],
+    "lat": 50.2578,
+    "lon": 10.9636,
+    "calibrated_x_1378": 1458.5974903088572,
+    "calibrated_y_1378": 1225.042814781777,
+    "calibrated_x_1400": 1599.9071856056466,
+    "calibrated_y_1400": 1743.0895961120682
+  }
+]

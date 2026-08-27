@@ -35,9 +35,10 @@
             },
             {
               "person": "?",
-              "position": "0.4505,0.8369",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.4519,0.8350",
+              "size": 0.04699999999999997,
+              "type": "full",
+              "rotation": -15
             },
             {
               "person": "?",
@@ -47,21 +48,26 @@
             },
             {
               "person": "?",
-              "position": "0.5949,0.8144",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.5949,0.8206",
+              "size": 0.04349999999999997,
+              "type": "full",
+              "rotation": -15
             },
             {
               "person": "?",
-              "position": "0.6352,0.8571",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.6356,0.8546",
+              "size": 0.04649999999999997,
+              "type": "full",
+              "rotation": 3
             },
             {
               "person": "?",
-              "position": "0.6730,0.8238",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.6712,0.8300",
+              "size": 0.04699999999999997,
+              "type": "full",
+              "width": 0.18,
+              "wideningRotation": 58,
+              "rotation": 6
             }
           ]
         },

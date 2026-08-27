@@ -66,9 +66,12 @@
             },
             {
               "person": "Ulrich",
-              "position": "0.6337,0.7889",
-              "size": 0.08,
-              "type": "helm"
+              "position": "0.6332,0.7877",
+              "size": 0.0715,
+              "type": "helm",
+              "width": 0.18,
+              "wideningRotation": -31,
+              "rotation": 12
             },
             {
               "person": "Reinhard von Uissigheim",
