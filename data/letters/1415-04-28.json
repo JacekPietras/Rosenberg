@@ -69,9 +69,12 @@
             },
             {
               "person": "Reinhard von Uissigheim",
-              "position": "0.7589,0.7889",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.7598,0.7877",
+              "size": 0.06599999999999999,
+              "type": "full",
+              "width": 0.32,
+              "wideningRotation": -38,
+              "rotation": -9
             }
           ]
         },

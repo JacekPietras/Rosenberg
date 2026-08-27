@@ -25,21 +25,30 @@
           "seals": [
             {
               "person": "Michael",
-              "position": "0.2256,0.7586",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.2286,0.7604",
+              "size": 0.06799999999999999,
+              "type": "full",
+              "width": 0.38,
+              "wideningRotation": -44,
+              "rotation": 12
             },
             {
               "person": "Arnold",
-              "position": "0.4101,0.7800",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.4071,0.7812",
+              "size": 0.059999999999999984,
+              "type": "full",
+              "width": 0.04,
+              "wideningRotation": -46,
+              "rotation": 6
             },
             {
               "person": "Friedrich",
-              "position": "0.5934,0.7598",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.5922,0.7617",
+              "size": 0.05799999999999998,
+              "type": "full",
+              "rotation": 6,
+              "width": 0.05,
+              "wideningRotation": -47
             }
           ]
         },
