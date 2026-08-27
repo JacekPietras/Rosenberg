@@ -24,7 +24,7 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723543%2F04_0001723543_0001_4-1723543-1.jpg",
           "seals": [
             {
-              "person": "Konrad",
+              "person": "Konrad knight",
               "position": "0.0894,0.8359",
               "size": 0.07699999999999999,
               "type": "swans",
@@ -33,21 +33,21 @@
               "rotation": -27
             },
             {
-              "person": "Eberhard",
-              "position": "0.1754,0.8664",
+              "person": "Eberhard knight",
+              "position": "0.1748,0.8677",
               "size": 0.07899999999999999,
               "type": "helm",
               "rotation": -54
             },
             {
-              "person": "Arnold",
+              "person": "Arnold nobleman",
               "position": "0.3319,0.8931",
               "size": 0.072,
               "rotation": -47,
               "type": "swans"
             },
             {
-              "person": "Konrad",
+              "person": "Konrad nobleman",
               "position": "0.2481,0.8983",
               "size": 0.08099999999999999,
               "width": 0.9,
@@ -60,7 +60,7 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723543%2F04_0001723543_0002_4-1723543-2.jpg",
           "seals": [
             {
-              "person": "Konrad",
+              "person": "Konrad knight",
               "position": "0.0937,0.8644",
               "size": 0.06999999999999999,
               "type": "swans",
@@ -69,19 +69,19 @@
               "wideningRotation": -20
             },
             {
-              "person": "Eberhard",
+              "person": "Eberhard knight",
               "position": "0.1712,0.8668",
               "size": 0.076,
               "type": "helm",
               "rotation": -45
             },
             {
-              "person": "Konrad",
+              "person": "Konrad nobleman",
               "position": "0.2544,0.8856",
               "size": 0.08
             },
             {
-              "person": "Arnold",
+              "person": "Arnold nobleman",
               "position": "0.3163,0.8906",
               "size": 0.07399999999999998,
               "wideningRotation": 28,

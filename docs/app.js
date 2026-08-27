@@ -37,7 +37,7 @@ function savePreferences() {
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, navigationLetter: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], personRecords: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], personRecords: [], persons: [], places: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
 const MISSING_LETTER_LABEL = 'missing';
 
@@ -52,6 +52,7 @@ function letterHasMissingSourceOrUrl(path) {
 
 function clearScreenCaches() {
   state.letter = state.navigationLetter;
+  state.letterSource = state.navigationLetterSource;
   state.letterLabels = [];
   state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
   state.sealNames = [];
@@ -70,6 +71,10 @@ if (navigation.get('document')) state.active = navigation.get('document');
 if (navigation.get('letter')) {
   state.letter = navigation.get('letter');
   state.navigationLetter = state.letter;
+}
+if (navigation.get('source')) {
+  state.letterSource = navigation.get('source');
+  state.navigationLetterSource = state.letterSource;
 }
 if (navigation.get('place')) { state.place = navigation.get('place'); state.person = null; }
 if (navigation.get('person')) { state.person = navigation.get('person'); state.place = null; }
@@ -296,6 +301,19 @@ function letterForSource(source) {
     const entryIndex = entries.findIndex((item) => Array.isArray(item.source) ? item.source.includes(citation) : item.source === citation);
     return entryIndex >= 0 ? { path, entry: entries[entryIndex], entryIndex } : null;
   }, null), null);
+}
+
+function sourceCitations(source) {
+  const values = Array.isArray(source) ? source : [source];
+  return values.flatMap((value) => String(value || '').split(/\s*;\s*/)).map((value) => value.trim()).filter(Boolean);
+}
+
+function entryHasSource(entry, source) {
+  return sourceCitations(entry?.source).includes(String(source || '').trim());
+}
+
+function letterHasSource(path, source) {
+  return (state.documents.get(path)?.entries || []).some((entry) => entryHasSource(entry, source));
 }
 
 function diagramMarkup(value = '') {
@@ -1109,7 +1127,7 @@ function sealMatchesSelected(title, selected) {
 function sealSourceMarkup(source) {
   const match = letterForSource(source);
   if (!match) return markdownLinks(source);
-  const params = new URLSearchParams({ tab: 'letters', letter: match.path });
+  const params = new URLSearchParams({ tab: 'letters', letter: match.path, source: sourceCitations(source)[0] });
   const hash = `#${entryAnchor(match.path, match.entryIndex)}`;
   return `<a href="?${params.toString()}${hash}">${markdownLinks(source)}</a>`;
 }
@@ -1409,6 +1427,10 @@ function renderTabs() {
     if (nextActive !== state.active) {
       clearScreenCaches();
     }
+    if (nextActive !== 'letters') {
+      state.letterSource = null;
+      state.navigationLetterSource = null;
+    }
     history.replaceState(null, '', `${location.pathname}${location.hash}`);
     state.active = nextActive;
     state.place = null;
@@ -1440,7 +1462,10 @@ function bookSections(entries) {
 }
 
 function renderDocument(doc, path, index) {
-  const entries = doc.entries || [];
+  const allEntries = doc.entries || [];
+  const entries = state.active === 'letters' && state.letterSource
+    ? allEntries.filter((entry) => entryHasSource(entry, state.letterSource))
+    : allEntries;
   const title = documentTitle(doc, path);
   const date = doc.date && formatDate(doc.date) !== title ? `<small>${escapeHtml(formatDate(doc.date))}</small>` : '';
   const label = String(doc.label || '').trim();
@@ -1455,7 +1480,7 @@ function renderDocument(doc, path, index) {
       return `<article class="document book-document"><div class="document-heading"><div><h2>${markdownLinks(sectionTitle)}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
     }).join('');
   }
-  const content = entries.map((entry, entryIndex) => renderEntry(entry, { path, index: entryIndex })).join('');
+  const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry) })).join('');
   const important = label.toLocaleLowerCase() === 'important' ? ' important' : '';
   const dimmed = ['hessen', 'schenk', 'mönch'].includes(label.toLocaleLowerCase()) ? ' dimmed' : '';
   return `<article class="document${important}${dimmed}"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
@@ -1469,6 +1494,7 @@ function visibleLetterPaths(paths) {
   const selected = new Set(state.letterLabels);
   const hidden = new Set(state.hiddenLetterLabels || []);
   return paths.filter((path) => {
+    if (state.letterSource && !letterHasSource(path, state.letterSource)) return false;
     if (path === state.navigationLetter) return true;
     const label = letterLabelForPath(path);
     const missing = selected.has(MISSING_LETTER_LABEL) && letterHasMissingSourceOrUrl(path);
@@ -1616,7 +1642,7 @@ async function renderActive() {
   state.yearHighlightCleanup?.();
   state.yearHighlightCleanup = null;
   if (state.active === 'letters') {
-    $('#content').innerHTML = `<div class="letters-layout">${renderYearSidebar(paths, allLetterPaths)}<div class="letters-list">${paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('')}</div></div>`;
+    $('#content').innerHTML = `<div class="letters-layout">${renderYearSidebar(paths, state.letterSource ? paths : allLetterPaths)}<div class="letters-list">${paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('')}</div></div>`;
   } else {
     $('#content').innerHTML = paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('');
   }
