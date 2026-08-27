@@ -125,9 +125,9 @@ particular historical person.
 Use `data/names.md` and `data/places.json` when a spelling needs to be recognized or normalized. Do not merge people merely because their names are similar. In particular, do not conflate Münch von Rosenberg with the primary von Rosenberg family.
 
 `data/places.json` is an array of place objects. Each object has a `variations`
-array whose first item is the canonical name and whose remaining items are
-recognized spelling variants, plus `lat` and `lon` GPS coordinates in decimal
-degrees (WGS84):
+array whose first item is the canonical English name and whose remaining items
+are recognized historical spelling variants, plus `lat` and `lon` GPS
+coordinates in decimal degrees (WGS84):
 
 ```json
 [
@@ -139,8 +139,9 @@ degrees (WGS84):
 ]
 ```
 
-The viewer derives its existing canonical `name` and variant `names` values
-from `variations`, so the name-matching behavior remains unchanged.
+The viewer uses only the first item as the canonical `name` for English
+highlighting; historical variants remain available as data but are not
+expanded at runtime.
 
 Before committing, validate the edited JSON with any available JSON-aware editor or validator and review the diff manually.
 

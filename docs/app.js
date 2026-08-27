@@ -133,14 +133,13 @@ function linkedMarkup(value = '', linkEntities = true) {
   const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
   let text = String(value);
   for (const { pattern, people } of state.personPattern || []) text = text.replace(pattern, (match) => {
-    const normalizedMatch = match.replace(/\s*\([^)]*\)(?=\s(?:von|v\.|de|of)\s)/giu, '');
-    const person = people.find((item) => item.names.some((name) => name.toLocaleLowerCase() === match.toLocaleLowerCase() || name.toLocaleLowerCase() === normalizedMatch.toLocaleLowerCase()));
+    const person = people.find((item) => item.name.toLocaleLowerCase() === match.toLocaleLowerCase());
     if (!person) return match;
     const query = encodeURIComponent(person.name);
     return token(`<a class="person-link" href="?person=${query}">${match}</a>`);
   });
   if (state.placePattern) text = text.replace(state.placePattern, (match) => {
-    const place = state.places.find((item) => item.names.some((name) => name.toLocaleLowerCase() === match.toLocaleLowerCase()));
+    const place = state.places.find((item) => item.name.toLocaleLowerCase() === match.toLocaleLowerCase());
     if (!place) return match;
     const query = encodeURIComponent(place.name);
     return token(`<a class="place-link" href="?place=${query}">${match}</a>`);
@@ -161,85 +160,31 @@ function parsePlaces(json) {
   if (!Array.isArray(places)) throw new Error('data/places.json must contain an array');
   return places.map((place) => {
     const variations = Array.isArray(place.variations) ? place.variations.filter((name) => typeof name === 'string' && name.trim()) : [];
-    return { ...place, name: variations[0], names: [...new Set(variations)] };
+    return { ...place, name: variations[0] };
   });
 }
 
 function buildPlacePattern(places) {
-  const names = [...new Set(places.flatMap((place) => place.names))].sort((left, right) => right.length - left.length).map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const names = [...new Set(places.map((place) => place.name).filter(Boolean))].sort((left, right) => right.length - left.length).map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
   return names.length ? new RegExp(`(?<![\\p{L}\\p{N}])(?:${names.join('|')})(?![\\p{L}\\p{N}])`, 'giu') : null;
 }
 
-function parsePeople(markdown, namesMarkdown, places) {
-  const namesByCanonical = new Map(String(namesMarkdown).split('\n').map((line) => line.replace(/\/\/.*$/, '').trim()).filter(Boolean).map((line) => {
-    const names = line.split(',').map((name) => name.trim()).filter(Boolean);
-    return [names[0].toLocaleLowerCase(), [...new Set(names)]];
-  }));
-  const allNameVariants = [...new Set([...namesByCanonical.values()].flat())].sort((left, right) => right.length - left.length);
-  let peopleLines;
-  try {
-    const parsed = JSON.parse(markdown);
-    peopleLines = Array.isArray(parsed)
-      ? parsed.map((person) => typeof person === 'string' ? person : person?.name).filter(Boolean)
-      : null;
-  } catch {
-    peopleLines = null;
-  }
-  if (!peopleLines) peopleLines = String(markdown).split('\n');
-  return peopleLines.map((line) => String(line).replace(/\/\/.*$/, '').trim()).filter(Boolean).map((line) => {
-    const separatorMatch = [...line.matchAll(/ (?:von|v\.|de|of) /gi)].pop();
-    const name = separatorMatch ? line.slice(0, separatorMatch.index) : line;
-    const placeName = separatorMatch ? line.slice(separatorMatch.index + separatorMatch[0].length) : '';
-    const baseName = allNameVariants.find((candidate) => name.toLocaleLowerCase() === candidate.toLocaleLowerCase() || name.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `));
-    const nameAddition = baseName ? name.slice(baseName.length) : '';
-    const nameAdditions = /^ d\. ?Ä\.$/i.test(nameAddition)
-      ? [' d. Ä.', ' d.Ä.']
-      : nameAddition
-        ? [nameAddition]
-        : ['', ' d. Ä.', ' d.Ä.', ' the Elder', ' der Ältere'];
-    const nameVariants = (namesByCanonical.get(baseName?.toLocaleLowerCase()) || [baseName || name]).flatMap((nameVariant) => nameAdditions.map((addition) => `${nameVariant}${addition}`));
-    const place = places.find((item) => item.names.some((candidate) => placeName.toLocaleLowerCase() === candidate.toLocaleLowerCase() || placeName.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `)));
-    const placeBase = place?.names.find((candidate) => placeName.toLocaleLowerCase() === candidate.toLocaleLowerCase() || placeName.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `));
-    const fallbackPlaceBase = allNameVariants.find((candidate) => placeName.toLocaleLowerCase() === candidate.toLocaleLowerCase() || placeName.toLocaleLowerCase().startsWith(`${candidate.toLocaleLowerCase()} `));
-    const placeAddition = (placeBase || fallbackPlaceBase) ? placeName.slice((placeBase || fallbackPlaceBase).length) : '';
-    const placeAdditions = /^ d\. ?Ä\.$/i.test(placeAddition)
-      ? [' d. Ä.', ' d.Ä.']
-      : /^, (?:Knight|Ritter)$/i.test(placeAddition)
-        ? [', Knight', ', Ritter']
-        : placeAddition
-          ? [placeAddition]
-          : ['', ' d. Ä.', ' d.Ä.', ', Knight', ', Ritter', ' the Elder', ' der Ältere'];
-    const placeVariants = place ? place.names.flatMap((placeVariant) => placeAdditions.map((addition) => `${placeVariant}${addition}`)) : (namesByCanonical.get((fallbackPlaceBase || placeName).toLocaleLowerCase()) || [fallbackPlaceBase || placeName]).flatMap((placeVariant) => placeAdditions.map((addition) => `${placeVariant}${addition}`));
-    const names = [...new Set(nameVariants.flatMap((nameVariant) => placeVariants.flatMap((placeVariant) => ['von', 'v.', 'de', 'of'].map((connector) => `${nameVariant} ${connector} ${placeVariant}`))))];
-    return { name: line, names };
-  });
+function parsePeople(json) {
+  const people = JSON.parse(json);
+  if (!Array.isArray(people)) throw new Error('data/people.json must contain an array');
+  return people.filter((person) => person && typeof person.name === 'string' && person.name.trim());
 }
 
 function buildPersonPattern(people) {
-  const expressions = people.flatMap((person) => [...new Set(person.names)].sort((left, right) => right.length - left.length).map((name) => {
-      const connector = name.match(/\s(?:von|v\.|de|of)\s/i);
-      if (!connector) return { expression: name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), person };
-      const left = name.slice(0, connector.index).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const right = name.slice(connector.index).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      return { expression: `${left}(?:\\s\\([^)]*\\))?${right}`, person };
-    }));
-  const chunks = [];
-  let chunk = [];
-  let length = 0;
-  expressions.forEach((item) => {
-    if (chunk.length && length + item.expression.length > 12000) {
-      chunks.push(chunk);
-      chunk = [];
-      length = 0;
-    }
-    chunk.push(item);
-    length += item.expression.length;
-  });
-  if (chunk.length) chunks.push(chunk);
-  return chunks.map((items) => ({
-    pattern: new RegExp(`(?<![\\p{L}\\p{N}])(?:${items.map((item) => item.expression).join('|')})(?![\\p{L}\\p{N}])`, 'giu'),
-    people: [...new Set(items.map((item) => item.person))],
-  }));
+  const names = people.map((person) => person.name)
+    .sort((left, right) => right.length - left.length)
+    .map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  return names.length
+    ? [{
+      pattern: new RegExp(`(?<![\\p{L}\\p{N}])(?:${names.join('|')})(?![\\p{L}\\p{N}])`, 'giu'),
+      people,
+    }]
+    : [];
 }
 
 function markdownMarkup(value = '', linkEntities = true) {
@@ -1580,7 +1525,7 @@ function urlMarkup(value) {
 }
 
 function findEntityByName(entities, name) {
-  return entities.find((entity) => entity.names.some((candidate) => candidate.toLocaleLowerCase() === String(name).toLocaleLowerCase()));
+  return entities.find((entity) => entity.name.toLocaleLowerCase() === String(name).toLocaleLowerCase());
 }
 
 function placeForName(name) {
@@ -2019,17 +1964,16 @@ async function loadAll() {
   const files = await getRepositoryFiles();
   const paths = files.map((file) => typeof file === 'string' ? file : file.path);
   const snapshot = JSON.stringify(files);
-  const [placesText, calibrationCitiesText, peopleText, namesText, documents] = await Promise.all([
+  const [placesText, calibrationCitiesText, peopleText, documents] = await Promise.all([
     getText('data/places.json'),
     getText('docs/assets/calibration-cities.json'),
     getText('data/people.json'),
-    getText('data/names.md'),
     new Map(await Promise.all(paths.map(async (path) => [path, await getJson(path)]))),
   ]);
   state.places = parsePlaces(placesText);
   state.calibrationCities = parsePlaces(calibrationCitiesText);
   state.personRecords = JSON.parse(peopleText);
-  state.people = parsePeople(peopleText, namesText, state.places);
+  state.people = parsePeople(peopleText);
   state.persons = state.people;
   state.personPattern = buildPersonPattern(state.persons);
   state.placePattern = buildPlacePattern(state.places);
