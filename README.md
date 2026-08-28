@@ -127,7 +127,8 @@ Use `data/names.md` and `data/places.json` when a spelling needs to be recognize
 `data/places.json` is an array of place objects. Each object has a `variations`
 array whose first item is the canonical English name and whose remaining items
 are recognized historical spelling variants, plus `lat` and `lon` GPS
-coordinates in decimal degrees (WGS84):
+coordinates in decimal degrees (WGS84). An optional medieval place `category`
+may be `castle`, `church`, or `city`; omit it when the type is uncertain:
 
 ```json
 [

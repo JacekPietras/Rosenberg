@@ -193,6 +193,13 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .map-container { height: 70vh; min-height: 22rem; margin: 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #dce6e0; }
 .map-container .leaflet-popup-content a.place-link { color: #3267b1; font-weight: 650; }
 .calibration-point-icon { width: 10px; height: 10px; border-radius: 50%; background: #d1495b; border: 2px solid #fff; box-shadow: 0 0 0 1px rgb(0 0 0 / .35); }
+.place-marker-icon { background: transparent; border: 0; }
+.place-marker-icon svg { display: block; width: 28px; height: 34px; overflow: visible; filter: drop-shadow(0 1px 1px rgb(0 0 0 / .45)); }
+.place-marker-shadow { fill: var(--place-marker-color, #65727d); stroke: #fff; stroke-width: 1.5; }
+.place-marker-glyph { fill: #fff; transform: translate(3px, 3px) scale(.57); transform-origin: 14px 14px; }
+.place-marker-icon-castle { --place-marker-color: #9a6538; }
+.place-marker-icon-church { --place-marker-color: #76589c; }
+.place-marker-icon-city { --place-marker-color: #3267b1; }
 .map-mode-switch { position: absolute; top: .6rem; right: .6rem; z-index: 1000; display: flex; gap: 1px; padding: 2px; background: var(--surface); border: 1px solid var(--line); border-radius: 7px; }
 .map-mode-button { padding: .4rem .7rem; color: var(--muted); background: transparent; border: 0; border-radius: 5px; font-size: .78rem; cursor: pointer; }
 .map-mode-button:hover { color: var(--accent); }

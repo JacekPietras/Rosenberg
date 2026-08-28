@@ -37,7 +37,7 @@ function savePreferences() {
 }
 
 const preferences = loadPreferences();
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], personRecords: [], persons: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, darkMode: preferences.darkMode, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
 const MISSING_LETTER_LABEL = 'missing';
 let leafletMap = null;
@@ -619,6 +619,30 @@ function hrrLatLonCornersToView(corners, mode, calibrationCities) {
 // flips on — Leaflet's Path-based circle markers can't be made draggable.
 const HRR_CALIBRATION_POINT_ICON = L.divIcon({ className: 'calibration-point-icon', iconSize: [10, 10] });
 
+const PLACE_MARKER_ICONS = {
+  castle: '<path d="M4 27V11h4V7h4v4h4V7h4v4h4v16H4Zm4-4h3v-5H8v5Zm5 0h3v-5h-3v5Zm5 0h3v-5h-3v5ZM3 29h22v2H3v-2Z"/><path d="M13 2h2v5h-2V2Zm-3 2h8v2h-8V4Z"/>',
+  church: '<path d="M13 2h2v5h-2V2Zm-3 2h8v2h-8V4Zm-2 7h12l-2 3v15H8V14l-2-3h2Zm2 5v8h3v-8h-3Zm6 0v8h2v-8h-2Z"/><path d="M4 29h16v2H4v-2Z"/>',
+  city: '<path d="M4 6h7v5h9v20H4V6Zm3 3v4h2V9H7Zm0 8v3h2v-3H7Zm0 7v3h2v-3H7Zm5-10v3h5v-3h-5Zm0 7v3h5v-3h-5Zm0 7v3h5v-3h-5Z"/>'
+};
+
+function placeMarkerIcon(place) {
+  const category = typeof place.category === 'string' ? place.category.toLocaleLowerCase() : '';
+  const path = PLACE_MARKER_ICONS[category];
+  if (!path) return undefined;
+  return L.divIcon({
+    className: `place-marker-icon place-marker-icon-${category}`,
+    html: `<svg viewBox="0 0 28 34" aria-hidden="true"><path class="place-marker-shadow" d="M14 33C14 33 3 21 3 13a11 11 0 1 1 22 0c0 8-11 20-11 20Z"/><g class="place-marker-glyph">${path}</g></svg>`,
+    iconSize: [28, 34],
+    iconAnchor: [14, 33],
+    popupAnchor: [0, -33],
+  });
+}
+
+function placeMarkerOptions(place) {
+  const icon = placeMarkerIcon(place);
+  return icon ? { icon } : {};
+}
+
 function renderMapLayer(container, places, calibrationCities, previousView) {
   if (leafletMap) { leafletMap.remove(); leafletMap = null; }
   const carriedCorners = previousView ? hrrViewCornersToLatLon(previousView.mode, previousView.bounds, calibrationCities) : null;
@@ -632,7 +656,7 @@ function renderMapLayer(container, places, calibrationCities, previousView) {
     const warp = hrrBuildWarp(calibrationCities, mapDef);
     places.forEach((place) => {
       const { x, y } = warp.pixelForLatLon(place.lat, place.lon);
-      const marker = L.marker([mapDef.height - y, x]).addTo(leafletMap);
+      const marker = L.marker([mapDef.height - y, x], placeMarkerOptions(place)).addTo(leafletMap);
       const query = encodeURIComponent(place.name);
       marker.bindPopup(`<a class="place-link" href="?place=${query}">${escapeHtml(place.name)}</a>`);
     });
@@ -663,7 +687,7 @@ function renderMapLayer(container, places, calibrationCities, previousView) {
     maxZoom: 18,
   }).addTo(leafletMap);
   const markers = places.map((place) => {
-    const marker = L.marker([place.lat, place.lon]).addTo(leafletMap);
+    const marker = L.marker([place.lat, place.lon], placeMarkerOptions(place)).addTo(leafletMap);
     const query = encodeURIComponent(place.name);
     marker.bindPopup(`<a class="place-link" href="?place=${query}">${escapeHtml(place.name)}</a>`);
     return marker;
@@ -1680,7 +1704,7 @@ function setupMentionNavigation(mentionClass, excludeSelector) {
 }
 
 function personForName(name) {
-  return findEntityByName(state.persons, name);
+  return findEntityByName(state.people, name);
 }
 
 function personMentions(person) {
@@ -1696,7 +1720,7 @@ function personMentions(person) {
 }
 
 function renderPersonPage() {
-  const person = personForName(state.person) || state.persons.find((item) => item.name.toLocaleLowerCase() === String(state.person || '').toLocaleLowerCase());
+  const person = personForName(state.person) || state.people.find((item) => item.name.toLocaleLowerCase() === String(state.person || '').toLocaleLowerCase());
   return renderEntityMentionsPage(person, person ? personMentions(person) : [], {
     kind: 'person',
     notFoundMessage: `No person matching “${escapeHtml(state.person || '')}” is generated from data/names.md and data/places.json.`,
@@ -1974,8 +1998,7 @@ async function loadAll() {
   state.calibrationCities = parsePlaces(calibrationCitiesText);
   state.personRecords = JSON.parse(peopleText);
   state.people = parsePeople(peopleText);
-  state.persons = state.people;
-  state.personPattern = buildPersonPattern(state.persons);
+  state.personPattern = buildPersonPattern(state.people);
   state.placePattern = buildPlacePattern(state.places);
   const bookPaths = paths
     .filter((path) => path.startsWith('data/books/'))
