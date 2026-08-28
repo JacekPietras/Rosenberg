@@ -650,7 +650,7 @@ function renderMapLayer(container, places, calibrationCities, previousView) {
   const mapDef = HRR_MAPS_BY_ID.get(mapMode);
   if (mapDef) {
     const bounds = [[0, 0], [mapDef.height, mapDef.width]];
-    leafletMap = L.map(container, { crs: L.CRS.Simple, scrollWheelZoom: true, minZoom: -10, maxZoom: 10, zoomSnap: 0 });
+    leafletMap = L.map(container, { crs: L.CRS.Simple, scrollWheelZoom: true, minZoom: -10, maxZoom: 10, zoomSnap: 1 });
     L.imageOverlay(mapDef.image, bounds).addTo(leafletMap);
     leafletMap.setMaxBounds(L.latLngBounds(bounds).pad(0.5));
     const warp = hrrBuildWarp(calibrationCities, mapDef);
