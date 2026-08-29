@@ -64,5 +64,8 @@ class ViewerHandler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
+    # Serve from the repository root so both `python3 docs/serve.py` and
+    # `cd docs && python3 serve.py` expose the advertised /docs/ URL.
+    os.chdir(ROOT)
     print("Rosenberg viewer: http://localhost:8000/docs/")
     ThreadingHTTPServer(("localhost", 8000), ViewerHandler).serve_forever()
