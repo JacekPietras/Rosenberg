@@ -1,4 +1,4 @@
-import { startApplication } from './app/bootstrap.js?v=56';
+import { startApplication } from './app/bootstrap.js?v=58';
 
 Promise.resolve().then(() => startApplication()).catch((error) => {
   const status = document.querySelector('#status');

@@ -81,21 +81,27 @@ export function setupImageLightbox({ state, repository, rerender }) {
 
   if ($('#image-lightbox-editor')) $('#image-lightbox-editor').hidden = !editable;
   $('#content')?.addEventListener('click', (event) => {
-    const link = event.target.closest('.image-link'); if (!link) return; event.preventDefault();
+    const link = event.target?.closest?.('.image-link'); if (!link) return; event.preventDefault();
     const path = link.dataset.documentPath; const entryIndex = Number(link.dataset.entryIndex); const imageIndex = Number(link.dataset.imageIndex); const entry = path ? state.documents.get(path)?.entries?.[entryIndex] : null;
     let node = entry && (Array.isArray(entry.img) ? entry.img[imageIndex] : entry.img);
     if (node && typeof node !== 'object' && entry) { node = { src: node }; if (Array.isArray(entry.img)) entry.img[imageIndex] = node; else entry.img = node; }
     context = editable && entry && node && typeof node === 'object' ? { path, node, entryIndex, imageIndex } : null; if (context && !Array.isArray(node.seals)) node.seals = [];
     selectedIndex = null; lightbox.classList.toggle('is-editable', Boolean(context)); render();
     image.onerror = () => { const fallback = link.dataset.imageFallback; if (fallback && image.src !== fallback) image.src = fallback; };
-    image.src = link.querySelector('img')?.currentSrc || link.dataset.imageSrc; image.alt = link.querySelector('img')?.alt || ''; image.onload = () => { updateGeometry(); updatePreview(); }; lightbox.showModal(); updateGeometry();
+    image.src = link.querySelector('img')?.currentSrc || link.dataset.imageSrc; image.alt = link.querySelector('img')?.alt || ''; image.onload = () => { updateGeometry(); updatePreview(); };
+    if (typeof lightbox.showModal === 'function') {
+      if (!lightbox.open) lightbox.showModal();
+    } else {
+      lightbox.setAttribute('open', '');
+    }
+    updateGeometry();
   });
   window.addEventListener('resize', () => { updateGeometry(); updatePreview(); }, { passive: true });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
   [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => $(selector)?.addEventListener('input', (event) => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) { seal[key] = Number(event.target.value); render(); } }));
   document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => input.addEventListener('change', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal && input.checked) seal.type = input.value; }));
-  annotations.addEventListener('pointerdown', (event) => { const marker = event.target.closest('.seal-marker'); if (context && marker) startDrag(event, Number(marker.dataset.sealIndex), marker); }); annotations.addEventListener('pointermove', moveDrag); annotations.addEventListener('pointerup', () => { drag = null; }); annotations.addEventListener('pointercancel', () => { drag = null; });
+  annotations.addEventListener('pointerdown', (event) => { const marker = event.target.closest('.seal-marker'); if (context && marker) startDrag(event, Number(marker.dataset.sealIndex), annotations); }); annotations.addEventListener('pointermove', moveDrag); annotations.addEventListener('pointerup', () => { drag = null; }); annotations.addEventListener('pointercancel', () => { drag = null; });
   preview?.addEventListener('pointerdown', (event) => { if (context && selectedIndex !== null && preview.classList.contains('is-seal-preview') && event.target.closest('.seal-crop')) startDrag(event, selectedIndex, preview); }); preview?.addEventListener('pointermove', moveDrag); preview?.addEventListener('pointerup', () => { drag = null; }); preview?.addEventListener('pointercancel', () => { drag = null; });
   stage.addEventListener('click', async (event) => { if (!context) return; const marker = event.target.closest?.('.seal-marker'); if (marker) { magnifierPoint = null; selectedIndex = Number(marker.dataset.sealIndex); render(); return; } const old = selectedIndex; selectedIndex = null; render(); if (old !== null) await save(); });
   stage.addEventListener('pointermove', (event) => { if (!context || selectedIndex !== null) return; const rect = annotations.getBoundingClientRect(); if (!rect.width || event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) { magnifierPoint = null; updatePreview(); return; } magnifierPoint = point(event); updatePreview(); const box = lightbox.getBoundingClientRect(); if (preview) { preview.style.left = `${event.clientX - box.left}px`; preview.style.top = `${event.clientY - box.top}px`; } });
@@ -114,6 +120,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     else entry.img = { src: entry.img, deleted: 'true' };
     if (await save()) { lightbox.close(); await rerender?.(); }
   });
-  lightbox.addEventListener('click', (event) => { if (event.target === lightbox) close(); }); lightbox.addEventListener('cancel', (event) => { event.preventDefault(); close(); });
+  lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
+  lightbox.addEventListener('cancel', (event) => { event.preventDefault(); close(); });
   lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (preview) preview.hidden = true; context = null; selectedIndex = null; drag = null; magnifierPoint = null; lightbox.classList.remove('is-editable'); setStatus(''); });
 }
