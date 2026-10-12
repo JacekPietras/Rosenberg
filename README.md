@@ -37,11 +37,12 @@ The viewer is published at
 <https://jacekpietras.github.io/Rosenberg/>. For local testing, run:
 
 ```text
-python3 docs/serve.py
+./server
 ```
 
-Then open <http://localhost:8000/docs/>. The local viewer supports seal
-annotation editing and soft image removal; GitHub Pages is read-only.
+The command opens <http://localhost:8000/docs/> in your browser. The local
+viewer supports seal annotation editing and soft image removal; GitHub Pages
+is read-only.
 
 ## Landesarchiv images
 

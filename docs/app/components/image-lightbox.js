@@ -23,8 +23,16 @@ export function setupImageLightbox({ state, repository, rerender }) {
   let selectedIndex = null;
   let drag = null;
   let magnifierPoint = null;
+  const MAGNIFIER_SIZE = 0.12;
+  const MAGNIFIER_SIZE_STEP = 0.01;
+  let magnifierSize = MAGNIFIER_SIZE;
   let saveQueue = Promise.resolve();
   const currentSeals = () => context?.node?.seals || [];
+  const magnifierMaximumSize = () => {
+    const imageHeight = annotations.clientHeight;
+    const previewHeight = previewCrop?.clientHeight;
+    return imageHeight && previewHeight ? Math.max(0.03, Math.min(0.5, previewHeight / imageHeight)) : MAGNIFIER_SIZE;
+  };
   const setStatus = (message, error = false) => { if (saveStatus) { saveStatus.textContent = message; saveStatus.classList.toggle('error', error); } };
   const point = (event) => { const rect = annotations.getBoundingClientRect(); return { x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)), y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)) }; };
   const updateGeometry = () => {
@@ -44,8 +52,9 @@ export function setupImageLightbox({ state, repository, rerender }) {
     if (!preview || !previewCrop || !previewImage) return;
     const seal = selectedIndex === null ? null : currentSeals()[selectedIndex];
     const coords = seal ? String(seal.position || '').split(',').map(Number) : magnifierPoint ? [magnifierPoint.x, magnifierPoint.y] : [];
-    const [x, y] = coords; const size = seal ? Number(seal.size) : 0.12;
+    const [x, y] = coords; const size = seal ? Number(seal.size) : magnifierSize;
     if (!coords.length || ![x, y, size].every(Number.isFinite) || size <= 0) { preview.hidden = true; return; }
+    if (!seal && magnifierSize >= magnifierMaximumSize() - 0.0001) { preview.hidden = true; return; }
     preview.hidden = false; preview.classList.toggle('is-seal-preview', Boolean(seal)); preview.classList.toggle('is-magnifier', !seal);
     if (previewName) { previewName.hidden = !seal; previewName.value = seal?.person || ''; }
     if (seal) { const a = annotations.getBoundingClientRect(); const b = lightbox.getBoundingClientRect(); preview.style.left = `${a.left + x * a.width - b.left}px`; preview.style.top = `${a.top + y * a.height - b.top}px`; }
@@ -106,7 +115,22 @@ export function setupImageLightbox({ state, repository, rerender }) {
   stage.addEventListener('click', async (event) => { if (!context) return; const marker = event.target.closest?.('.seal-marker'); if (marker) { magnifierPoint = null; selectedIndex = Number(marker.dataset.sealIndex); render(); return; } const old = selectedIndex; selectedIndex = null; render(); if (old !== null) await save(); });
   stage.addEventListener('pointermove', (event) => { if (!context || selectedIndex !== null) return; const rect = annotations.getBoundingClientRect(); if (!rect.width || event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) { magnifierPoint = null; updatePreview(); return; } magnifierPoint = point(event); updatePreview(); const box = lightbox.getBoundingClientRect(); if (preview) { preview.style.left = `${event.clientX - box.left}px`; preview.style.top = `${event.clientY - box.top}px`; } });
   stage.addEventListener('pointerleave', () => { if (selectedIndex === null) { magnifierPoint = null; updatePreview(); } });
-  lightbox.addEventListener('wheel', (event) => { event.preventDefault(); if (!context) return; const marker = event.target.closest('.seal-marker'); const index = marker ? Number(marker.dataset.sealIndex) : selectedIndex; const seal = index === null ? null : currentSeals()[index]; if (seal && index === selectedIndex) { seal.size = Math.max(0.01, Math.min(0.5, Number(seal.size) + (event.deltaY < 0 ? 0.0005 : -0.0005))); render(); } }, { passive: false });
+  lightbox.addEventListener('wheel', (event) => {
+    event.preventDefault();
+    if (!context) return;
+    if (selectedIndex === null && magnifierPoint) {
+      magnifierSize = Math.max(0.03, Math.min(magnifierMaximumSize(), magnifierSize + (event.deltaY < 0 ? -MAGNIFIER_SIZE_STEP : MAGNIFIER_SIZE_STEP)));
+      updatePreview();
+      return;
+    }
+    const marker = event.target.closest('.seal-marker');
+    const index = marker ? Number(marker.dataset.sealIndex) : selectedIndex;
+    const seal = index === null ? null : currentSeals()[index];
+    if (seal && index === selectedIndex) {
+      seal.size = Math.max(0.01, Math.min(0.5, Number(seal.size) + (event.deltaY < 0 ? 0.0005 : -0.0005)));
+      render();
+    }
+  }, { passive: false });
   $('#image-lightbox-add-seal')?.addEventListener('click', () => { if (!context) return; const person = window.prompt('Person shown by this seal:'); if (!person?.trim()) return; currentSeals().push({ person: person.trim(), position: '0.5,0.5', size: 0.08, width: 0, wideningRotation: 0, rotation: 0, type: 'full' }); selectedIndex = currentSeals().length - 1; render(); });
   $('#image-lightbox-remove-seal')?.addEventListener('click', () => { if (selectedIndex !== null) { currentSeals().splice(selectedIndex, 1); selectedIndex = null; render(); } });
   $('#image-lightbox-remove-image')?.addEventListener('click', async () => {

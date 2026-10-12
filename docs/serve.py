@@ -3,6 +3,7 @@ from pathlib import Path
 import json
 import os
 import tempfile
+import webbrowser
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -67,5 +68,8 @@ if __name__ == "__main__":
     # Serve from the repository root so both `python3 docs/serve.py` and
     # `cd docs && python3 serve.py` expose the advertised /docs/ URL.
     os.chdir(ROOT)
-    print("Rosenberg viewer: http://localhost:8000/docs/")
-    ThreadingHTTPServer(("localhost", 8000), ViewerHandler).serve_forever()
+    url = "http://localhost:8000/docs/"
+    server = ThreadingHTTPServer(("localhost", 8000), ViewerHandler)
+    print(f"Rosenberg viewer: {url}")
+    webbrowser.open(url)
+    server.serve_forever()
