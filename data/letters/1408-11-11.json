@@ -1,9 +1,13 @@
 {
   "date": "1408-11-11",
+  "label": "new",
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg B 503 I U 590",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=2-736702",
+      "url": [
+        "https://www.deutsche-digitale-bibliothek.de/item/EJZRUUNQA3UB3IKWRUKQY6VK55TQMYIJ",
+        "https://www.landesarchiv-bw.de/plink/?f=2-736702"
+      ],
       "german": "1408 Nov. 11 (sant Mertins tag) Arnold von Rosenberg d.J., gesessen zu Boxberg (Bocksberg), und seine Ehefrau Christina von Handschuhsheim (Henschenßheim) tauschen mit Abt Heinrich [V.] und dem Konvent des Klosters Schöntal gen. Güter in Erlenbach (Erelbach demm dorff under Ballenberg gelegen) und Merchingen gegen des Klosters Güter zu Buch [am Ahorn], zum See (zu dem Sewe) und zum Sachsen (zum Sahsßhen) [= Sachsenflur?]. Da die rosenbergischen Güter [von Kurpfalz] zu Lehen rühren, verpflichtet sich Arnold, den Willebrief des Lehenherrn zu diesem Tausch zu erlangen.\n\nSiegler: 1) der A., wegen Siegelkarenz zugleich für Christina von Handschuhsheim, sowie die Edelknechte 2) Eberhard von Rosenberg zu Jagstberg (Jackßberg), Bruder des A., und 3) Konrad von Rosenberg zu Boxberg, Vetter des A. Ausf. Perg., besch., auf Leinwand aufgezogen - 3 Sg., 1. und 3. besch., 2. abg., Presselrest anh. - Rv.: Littera Arnoldi de Rösenberg super bona in Erlbach et Merchingen Bem.: Den Willebrief König Ruprechts vom 2. März 1408 s. in HStAS H 51 Nr. 1140.",
       "english": "1408 Nov. 11 (St. Martin's Day) Arnold von Rosenberg the Younger, resident of Boxberg, and his wife Christina von Handschuhsheim exchanged goods in Erlenbach (Erelbach, a village below Ballenberg) and Merchingen with Abbot Heinrich [V] and the convent of the Schöntal Monastery for the monastery's goods in Buch [on the Ahorn], See (on the Sewe), and Sachsen (on the Sahsßhen) [= Sachsenflur?]. Since the Rosenberg goods [of the Electorate of the Palatinate] were fiefs, Arnold undertook to obtain the fief's consent to this exchange.\n\nSealers: 1) of A., due to a seal ban, also for Christina von Handschuhsheim, as well as the noblemen 2) Eberhard von Rosenberg zu Jagstberg, brother of A., and 3) Konrad von Rosenberg zu Boxberg, cousin of A. Execution: Perg., damaged, mounted on canvas - 3 seals, 1st and 3rd damaged, 2nd removed, press residue attached -  Rev.: A letter from Arnold de Rosenberg concerning the goods in Erlbach and Merchingen Note: For King Ruprecht's will of March 2, 1408, see HStAS H 51 No. 1140.",
       "facts": [
@@ -37,6 +41,24 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000736702%2F02_0000736702_0004_2-736702-4.jpg",
           "deleted": "true"
+        }
+      ]
+    },
+    {
+      "source": "Staatsarchiv Wertheim R-US 1408 November 11",
+      "url": [
+        "https://www.deutsche-digitale-bibliothek.de/item/NHJGXJ54ETJGGOISH2IADQ2VOP3N5KU3",
+        "https://www.landesarchiv-bw.de/plink/?f=7-234679"
+      ],
+      "german": "Hans Munch und Eberhard, Brüder, von Rosenberg zu Heinstadt (Heinstat), Edelknechte, verkaufen an das Kloster Bronnbach (Brunnebach) ihren eigenen Hof zu Uissigheim (Ussigkein) mit allen Rechten und Zugehörungen, ausgenommen die armen Leute, um 134 Gulden. Siegler: Hans Munch von Rosenberg zu Hainstadt, Edelknecht; Eberhard Munch von Rosenberg zu Heinstadt, sein Bruder, Edelknecht; Bernger der Alte; Gotze der Junge; Bernger der Junge von Allitzheim. Auf der Rückseite: „Ussigkheym“.",
+      "english": "Hans Munch and Eberhard, brothers of Rosenberg zu Heinstadt and noble squires, sell their own farm at Uissigheim to Bronnbach Abbey with its rights and appurtenances, except for the villeins, for 134 guilders. Sealers: Hans Munch von Rosenberg zu Hainstadt; his brother Eberhard Munch von Rosenberg zu Heinstadt; Bernger the Elder; Gotze the Younger; and Bernger the Younger of Allitzheim. The reverse bears the note “Ussigkheym”.",
+      "facts": [],
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234679%2F07_0000234679_0001_7-234679-1.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234679%2F07_0000234679_0002_7-234679-2.jpg"
         }
       ]
     }

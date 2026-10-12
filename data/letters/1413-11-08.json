@@ -1,0 +1,29 @@
+{
+  "date": "1413-11-08",
+  "label": "new",
+  "entries": [
+    {
+      "source": "Reichsstadt Nürnberg, Kirchen, Urkunden (St. Sebald, St. Lorenz, Moritzkapelle, Ottmarskapelle, Marienkapelle) 8",
+      "url": [
+        "https://www.deutsche-digitale-bibliothek.de/item/VEIJLUM3IDTFJLKOCC6DL6H6G44E5EDP",
+        "https://www.gda.bayern.de/show/797b5df2-c25d-4eba-9e31-87891bb670b9/1"
+      ],
+      "german": "Der Nürnberger Schultheiß, Ritter Hans von Rosemberg, vidimiert für Cunrad Haller das Testament der Katrein, Tochter Ulrichs und Katrein Hallers und Witwe des Ritters Erckinger Zollner. Das Testament war am 27. September 1411 errichtet worden. Zeugen der Vidimierung: Weygell Graser und Cunrad Paumgartner. Siegler: das Gerichtssiegel von Nürnberg. Datiert auf den Mittwoch vor Martinstag 1413 (8. November 1413).",
+      "english": "Hans von Rosemberg, knight and chief magistrate of Nuremberg, authenticates for Cunrad Haller a copy of the testament of Katrein, daughter of Ulrich and Katrein Haller and widow of the knight Erckinger Zollner. The testament had been made on 27 September 1411. Witnesses to the authentication: Weygell Graser and Cunrad Paumgartner. Sealer: the court seal of Nuremberg. Dated Wednesday before Martinmas 1413 (8 November 1413).",
+      "facts": [
+        "Hans von Rosemberg was Nuremberg’s chief magistrate and authenticated Katrein Haller’s testament in 1413."
+      ],
+      "img": [
+        {
+          "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/d4932952-b4af-46ac-b775-7d1c8d14daa5/full/full/0/default.jpg"
+        },
+        {
+          "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/853ef3cc-fe52-4b27-8cd2-0b3416706a29/full/full/0/default.jpg"
+        },
+        {
+          "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/17fbb954-05f0-4814-8397-4146e12b405d/full/full/0/default.jpg"
+        }
+      ]
+    }
+  ]
+}

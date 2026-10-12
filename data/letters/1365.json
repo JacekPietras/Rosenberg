@@ -1,0 +1,40 @@
+{
+  "date": "1365",
+  "label": "new",
+  "entries": [
+    {
+      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1322",
+      "url": [
+        "https://www.landesarchiv-bw.de/plink/?f=3-190272",
+        "https://www.deutsche-digitale-bibliothek.de/item/WA766UW3H7EBBXWQ5NBMWZCV5CF4PR7O"
+      ],
+      "german": "Bertold von Zwingenberg verpflichtet sich, wieder im Schloß Lichteneck bei Ingelfingen sich zu stellen; Siegel: Bertold von Zwingenberg und Eberhard von Rosenberg (Duplikat).",
+      "english": "Bertold von Zwingenberg undertakes to present himself again at Lichteneck Castle near Ingelfingen; seals: Bertold von Zwingenberg and Eberhard von Rosenberg (duplicate).",
+      "facts": [
+        "Eberhard von Rosenberg sealed Bertold von Zwingenberg’s undertaking to present himself again at Lichteneck Castle."
+      ],
+      "img": [
+        {
+          "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/978aec27-dbe8-42ce-b3ac-cc8114eab869/full/full/0/default.jpg",
+          "seals": [
+            {
+              "person": "Eberhard",
+              "position": "0.0991,0.5926",
+              "size": 0.13500000000000004,
+              "width": 0.16,
+              "wideningRotation": 4,
+              "rotation": -27,
+              "type": "helm"
+            }
+          ]
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190272%2F03_0000190272_0001_3-190272-1.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190272%2F03_0000190272_0002_3-190272-2.jpg"
+        }
+      ]
+    }
+  ]
+}
