@@ -23,6 +23,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   let selectedIndex = null;
   let drag = null;
   let magnifierPoint = null;
+  let magnifierDismissed = false;
   const MAGNIFIER_SIZE = 0.12;
   const MAGNIFIER_SIZE_STEP = 0.01;
   let magnifierSize = MAGNIFIER_SIZE;
@@ -53,7 +54,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const seal = selectedIndex === null ? null : currentSeals()[selectedIndex];
     const coords = seal ? String(seal.position || '').split(',').map(Number) : magnifierPoint ? [magnifierPoint.x, magnifierPoint.y] : [];
     const [x, y] = coords; const size = seal ? Number(seal.size) : magnifierSize;
-    if (!coords.length || ![x, y, size].every(Number.isFinite) || size <= 0) { preview.hidden = true; return; }
+    if (!coords.length || ![x, y, size].every(Number.isFinite) || size <= 0 || (!seal && magnifierDismissed)) { preview.hidden = true; return; }
     if (!seal && magnifierSize >= magnifierMaximumSize() - 0.0001) { preview.hidden = true; return; }
     preview.hidden = false; preview.classList.toggle('is-seal-preview', Boolean(seal)); preview.classList.toggle('is-magnifier', !seal);
     if (previewName) { previewName.hidden = !seal; previewName.value = seal?.person || ''; }
@@ -85,7 +86,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     }); saveQueue = operation.catch(() => {}); return operation;
   };
   const close = async () => { if (context && !await save()) return; lightbox.close(); };
-  const startDrag = (event, index, target) => { const seal = currentSeals()[index]; if (!seal) return; selectedIndex = index; const p = point(event); const [x, y] = String(seal.position || '').split(',').map(Number); drag = { index, pointerId: event.pointerId, offsetX: x - p.x, offsetY: y - p.y }; render(); target.setPointerCapture?.(event.pointerId); event.preventDefault(); };
+  const startDrag = (event, index, target) => { const seal = currentSeals()[index]; if (!seal) return; const [x, y] = String(seal.position || '').split(',').map(Number); magnifierPoint = { x, y }; magnifierDismissed = false; selectedIndex = index; const p = point(event); drag = { index, pointerId: event.pointerId, offsetX: x - p.x, offsetY: y - p.y }; render(); target.setPointerCapture?.(event.pointerId); event.preventDefault(); };
   const moveDrag = (event) => { if (!drag || event.pointerId !== drag.pointerId) return; const seal = currentSeals()[drag.index]; if (!seal) return; const p = point(event); seal.position = `${Math.max(0, Math.min(1, p.x + drag.offsetX)).toFixed(4)},${Math.max(0, Math.min(1, p.y + drag.offsetY)).toFixed(4)}`; render(); };
 
   if ($('#image-lightbox-editor')) $('#image-lightbox-editor').hidden = !editable;
@@ -110,15 +111,16 @@ export function setupImageLightbox({ state, repository, rerender }) {
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
   [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => $(selector)?.addEventListener('input', (event) => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) { seal[key] = Number(event.target.value); render(); } }));
   document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => input.addEventListener('change', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal && input.checked) seal.type = input.value; }));
-  annotations.addEventListener('pointerdown', (event) => { const marker = event.target.closest('.seal-marker'); if (context && marker) startDrag(event, Number(marker.dataset.sealIndex), annotations); }); annotations.addEventListener('pointermove', moveDrag); annotations.addEventListener('pointerup', () => { drag = null; }); annotations.addEventListener('pointercancel', () => { drag = null; });
+  annotations.addEventListener('pointerdown', (event) => { const marker = event.target.closest('.seal-marker'); if (context && marker) startDrag(event, Number(marker.dataset.sealIndex), marker); }); annotations.addEventListener('pointermove', moveDrag); annotations.addEventListener('pointerup', () => { drag = null; }); annotations.addEventListener('pointercancel', () => { drag = null; });
   preview?.addEventListener('pointerdown', (event) => { if (context && selectedIndex !== null && preview.classList.contains('is-seal-preview') && event.target.closest('.seal-crop')) startDrag(event, selectedIndex, preview); }); preview?.addEventListener('pointermove', moveDrag); preview?.addEventListener('pointerup', () => { drag = null; }); preview?.addEventListener('pointercancel', () => { drag = null; });
-  stage.addEventListener('click', async (event) => { if (!context) return; const marker = event.target.closest?.('.seal-marker'); if (marker) { magnifierPoint = null; selectedIndex = Number(marker.dataset.sealIndex); render(); return; } const old = selectedIndex; selectedIndex = null; render(); if (old !== null) await save(); });
-  stage.addEventListener('pointermove', (event) => { if (!context || selectedIndex !== null) return; const rect = annotations.getBoundingClientRect(); if (!rect.width || event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) { magnifierPoint = null; updatePreview(); return; } magnifierPoint = point(event); updatePreview(); const box = lightbox.getBoundingClientRect(); if (preview) { preview.style.left = `${event.clientX - box.left}px`; preview.style.top = `${event.clientY - box.top}px`; } });
+  stage.addEventListener('click', async (event) => { if (!context) return; const marker = event.target.closest?.('.seal-marker'); if (marker) { const seal = currentSeals()[Number(marker.dataset.sealIndex)]; if (seal) { const [x, y] = String(seal.position || '').split(',').map(Number); magnifierPoint = { x, y }; } magnifierDismissed = false; selectedIndex = Number(marker.dataset.sealIndex); render(); return; } const old = selectedIndex; selectedIndex = null; magnifierDismissed = true; render(); if (old !== null) await save(); });
+  stage.addEventListener('pointermove', (event) => { if (!context || selectedIndex !== null) return; const rect = annotations.getBoundingClientRect(); if (!rect.width || event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) { magnifierPoint = null; magnifierDismissed = false; updatePreview(); return; } magnifierPoint = point(event); magnifierDismissed = false; updatePreview(); const box = lightbox.getBoundingClientRect(); if (preview) { preview.style.left = `${event.clientX - box.left}px`; preview.style.top = `${event.clientY - box.top}px`; } });
   stage.addEventListener('pointerleave', () => { if (selectedIndex === null) { magnifierPoint = null; updatePreview(); } });
   lightbox.addEventListener('wheel', (event) => {
     event.preventDefault();
     if (!context) return;
     if (selectedIndex === null && magnifierPoint) {
+      magnifierDismissed = false;
       magnifierSize = Math.max(0.03, Math.min(magnifierMaximumSize(), magnifierSize + (event.deltaY < 0 ? -MAGNIFIER_SIZE_STEP : MAGNIFIER_SIZE_STEP)));
       updatePreview();
       return;
@@ -146,5 +148,5 @@ export function setupImageLightbox({ state, repository, rerender }) {
   });
   lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
   lightbox.addEventListener('cancel', (event) => { event.preventDefault(); close(); });
-  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (preview) preview.hidden = true; context = null; selectedIndex = null; drag = null; magnifierPoint = null; lightbox.classList.remove('is-editable'); setStatus(''); });
+  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (preview) preview.hidden = true; context = null; selectedIndex = null; drag = null; magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
 }

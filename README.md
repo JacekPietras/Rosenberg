@@ -41,8 +41,9 @@ The viewer is published at
 ```
 
 The command opens <http://localhost:8000/docs/> in your browser. The local
-viewer supports seal annotation editing and soft image removal; GitHub Pages
-is read-only.
+viewer supports seal annotation editing and soft image removal, and its header
+has a local-only button to restart the server and reload the viewer; GitHub
+Pages is read-only.
 
 ## Landesarchiv images
 

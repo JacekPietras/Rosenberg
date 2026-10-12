@@ -2,10 +2,18 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import json
 import os
+import subprocess
+import sys
 import tempfile
+import threading
+import time
 import webbrowser
 
 ROOT = Path(__file__).resolve().parent.parent
+HEARTBEAT_TIMEOUT = 5
+last_heartbeat = [0.0]
+page_seen = threading.Event()
+stop_watcher = threading.Event()
 
 
 class ViewerHandler(SimpleHTTPRequestHandler):
@@ -18,6 +26,13 @@ class ViewerHandler(SimpleHTTPRequestHandler):
         self.wfile.write(payload)
 
     def do_GET(self):
+        if self.path.split("?", 1)[0] in ("/docs/", "/docs/index.html"):
+            last_heartbeat[0] = time.monotonic()
+            page_seen.set()
+        if self.path.split("?", 1)[0] == "/api/local-server":
+            self.send_response(204)
+            self.end_headers()
+            return
         if self.path.split("?", 1)[0] == "/api/files":
             paths = [
                 {
@@ -38,6 +53,34 @@ class ViewerHandler(SimpleHTTPRequestHandler):
         super().do_GET()
 
     def do_POST(self):
+        if self.path.split("?", 1)[0] == "/api/heartbeat":
+            last_heartbeat[0] = time.monotonic()
+            page_seen.set()
+            self.send_response(204)
+            self.end_headers()
+            return
+        if self.path.split("?", 1)[0] == "/api/restart-server":
+            self.send_response(202)
+            self.send_header("Content-Length", "0")
+            self.end_headers()
+
+            def restart_server():
+                environment = os.environ.copy()
+                environment["ROSENBERG_SERVER_PORT"] = str(server.server_port)
+                environment["ROSENBERG_NO_OPEN"] = "1"
+                subprocess.Popen(
+                    [sys.executable, str(Path(__file__).resolve())],
+                    cwd=ROOT,
+                    env=environment,
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                    start_new_session=True,
+                )
+                server.shutdown()
+                server.server_close()
+
+            threading.Thread(target=restart_server, daemon=False).start()
+            return
         if self.path.split("?", 1)[0] != "/api/save-document":
             self.send_error(404)
             return
@@ -68,8 +111,27 @@ if __name__ == "__main__":
     # Serve from the repository root so both `python3 docs/serve.py` and
     # `cd docs && python3 serve.py` expose the advertised /docs/ URL.
     os.chdir(ROOT)
-    url = "http://localhost:8000/docs/"
-    server = ThreadingHTTPServer(("localhost", 8000), ViewerHandler)
+    port = int(os.environ.get("ROSENBERG_SERVER_PORT", "8000"))
+    url = f"http://localhost:{port}/docs/"
+    for attempt in range(50):
+        try:
+            server = ThreadingHTTPServer(("localhost", port), ViewerHandler)
+            break
+        except OSError as error:
+            if attempt == 49:
+                raise
+            threading.Event().wait(0.1)
     print(f"Rosenberg viewer: {url}")
-    webbrowser.open(url)
+    if not os.environ.get("ROSENBERG_NO_OPEN"):
+        webbrowser.open(url)
+
+    def watch_heartbeat():
+        while not stop_watcher.wait(0.25):
+            if page_seen.is_set() and time.monotonic() - last_heartbeat[0] >= HEARTBEAT_TIMEOUT:
+                server.shutdown()
+                return
+
+    threading.Thread(target=watch_heartbeat, daemon=True).start()
     server.serve_forever()
+    stop_watcher.set()
+    server.server_close()
