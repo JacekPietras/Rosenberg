@@ -3,7 +3,10 @@
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 5127",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=4-1790839",
+      "url": [
+        "https://www.landesarchiv-bw.de/plink/?f=4-1790839",
+        "https://www.deutsche-digitale-bibliothek.de/item/PP2R7P4AIBWOGWDDLQP5WUEKNT3CYDDQ"
+      ],
       "german": "Anna von Rosenberg, Ehefrau Hans von Rosenbergs, verkauft an Eberhard von Hardheim alle Gülten und Zinse, die sie bis dato in Königheim, Eiersheim, Rinderfeld und Schweinberg hatte.",
       "english": "Anna von Rosenberg, wife of Hans von Rosenberg, sold to Eberhard von Hardheim all the rents and interest that she had previously had in Königheim, Eiersheim, Rinderfeld and Schweinberg.",
       "facts": [

@@ -3,14 +3,18 @@
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg B 249 U 226",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=2-1866150",
+      "url": [
+        "https://www.landesarchiv-bw.de/plink/?f=2-1866150",
+        "https://www.deutsche-digitale-bibliothek.de/item/2GSWC6IBVXL4J5FPETE52F3BZRBFWBBR"
+      ],
       "german": "Eberhard von Rosenberg zu Boxberg (Boxberck) beurkundet, daß er Heinrich Hotz zu Apfelbach (Appfelbach) genannte Einkünfte von einem Gut in der Gemarkung Apfelbach, das früher einmal Seibott Butz inne gehabt hatte, um 26 Gulden verkauft hat. Eberhard von Rosenberg zu Boxberg",
       "english": "Eberhard von Rosenberg zu Boxberg documented that he sold the income of an estate in the Apfelbach district, formerly owned by Seibott Butz, to Heinrich Hotz zu Apfelbach for 26 guilders. Eberhard von Rosenberg zu Boxberg",
       "facts": [
         "Eberhard von Rosenberg resided at Boxberg",
         "Eberhard von Rosenberg sold Einkünfte from a Gut in the Gemarkung Apfelbach to Heinrich Hotz",
         "Heinrich Hotz resided at Apfelbach",
-        "Seibott Butz previously held the Gut at Apfelbach"
+        "Seibott Butz previously held the Gut at Apfelbach",
+        "Eberhard von Rosenberg zu Boxberg sealed the charter."
       ],
       "img": [
         {

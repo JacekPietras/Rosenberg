@@ -10,7 +10,10 @@
     },
     {
       "source": "GA 5 U 70",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=3-187041",
+      "url": [
+        "https://www.landesarchiv-bw.de/plink/?f=3-187041",
+        "https://www.deutsche-digitale-bibliothek.de/item/FC7WAPEM5OWIHWPUEWDEQQCWKZBQCSI4"
+      ],
       "german": "Kaiser Karl IV. bestätigt Graf Kraft von Hohenlohe die leibeigenen Leute auf dem Ohrnwald, die er von Eberhard von Rosenberg erworben hat.",
       "english": "Emperor Charles IV confirms to Count Kraft of Hohenlohe the serfs in the Ohrnwald, which he had acquired from Eberhard von Rosenberg.",
       "img": [
@@ -25,7 +28,10 @@
     },
     {
       "source": "GA 5 U 1254",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=3-188977",
+      "url": [
+        "https://www.landesarchiv-bw.de/plink/?f=3-188977",
+        "https://www.deutsche-digitale-bibliothek.de/item/JGE6TBY4QUBMC7HX7OPTVFANLWLYIOGS"
+      ],
       "german": "Kraft von Hohenlohe und Eberhard von Rosenberg (Original und Abschrift).",
       "english": "Kraft von Hohenlohe and Eberhard von Rosenberg (original and copy).",
       "img": [
