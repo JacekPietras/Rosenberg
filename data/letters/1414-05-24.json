@@ -1,6 +1,6 @@
 {
   "date": "1414-05-24",
-  "label": "new",
+  "label": "Rosemberg",
   "entries": [
     {
       "source": "Reichsstadt Nürnberg, Landalmosenamt, Urkunden 37",
@@ -21,7 +21,8 @@
           "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/b64e047f-423b-4a67-8e0f-a1abd5877e3d/full/full/0/default.jpg"
         },
         {
-          "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/f3b16218-6a73-44c9-af51-9516cf9ac438/full/full/0/default.jpg"
+          "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/f3b16218-6a73-44c9-af51-9516cf9ac438/full/full/0/default.jpg",
+          "deleted": "true"
         },
         {
           "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/b60f81f9-ad66-4db9-83ce-957c52dba0db/full/full/0/default.jpg"

@@ -15,7 +15,18 @@
       ],
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=339&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000339%2Ftitlaufn_0000148725%2F03_0000148725_0001_3-148725-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=339&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000339%2Ftitlaufn_0000148725%2F03_0000148725_0001_3-148725-1.jpg",
+          "seals": [
+            {
+              "person": "Eberhard",
+              "position": "0.2919,0.8406",
+              "size": 0.10100000000000002,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         }
       ]
     }

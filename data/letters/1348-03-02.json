@@ -16,7 +16,8 @@
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035789_00001/full/max/0/default.jpg"
         },
         {
-          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035789_00002/full/max/0/default.jpg"
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035789_00002/full/max/0/default.jpg",
+          "deleted": "true"
         }
       ]
     }
