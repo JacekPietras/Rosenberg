@@ -25,6 +25,7 @@ ehthumbs.db
 Thumbs.db
 
 # Editor files
+.venv/
 .vscode/
 .idea/
 *.swp

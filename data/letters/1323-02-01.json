@@ -1,0 +1,67 @@
+{
+  "date": "1323-02-01",
+  "entries": [
+    {
+      "source": "StiftsA U 1697; Thiel: Urkundenbuch, S. 614–616 (Nr. 298)",
+      "url": "https://www.bavarikon.de/object/bav%3AAAB-URK-00000BAV80035799?cq=&lang=de&p=1",
+      "german": "Ritter Eberhard von Rosenberg, Vogt, Schultheiß und Schöffen von (Tauber-)Bischofsheim beurkunden, dass Wignand, Sohn des Brundward von Eiersheim, seine Ehefrau Katharina und beider genannte zwei Töchter und Eidame an Dekan und Kapitel von Aschaffenburg für 24 Pfund Heller aus genannten Weinbergen und Äckern zu (Tauber-)Bischofsheim eine Gült von 2 Pfund Hellern zur Präsenz verkauften.",
+      "english": "Knight Eberhard von Rosenberg, the bailiff, the mayor, and the aldermen of (Tauber-)Bischofsheim certify that Wignand, son of Brundward von Eiersheim, his wife Katharina, their two named daughters, and sons-in-law sold to the dean and chapter of Aschaffenburg, for 24 pounds Heller, an annual rent of 2 pounds Heller from specified vineyards and fields in (Tauber-)Bischofsheim for the chapter's common fund.",
+      "facts": [
+        "Ritter Eberhard von Rosenberg participated in certifying the sale of an annual rent from vineyards and fields at (Tauber-)Bischofsheim by Wignand, son of Brundward von Eiersheim, his wife Katharina, their two daughters, and sons-in-law to the dean and chapter of Aschaffenburg."
+      ],
+      "img": [
+        {
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035799_00001/full/max/0/default.jpg",
+          "seals": [
+            {
+              "person": "Eberhard",
+              "position": "0.2633,0.7442",
+              "size": 0.15250000000000005,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 3,
+              "type": "swans"
+            }
+          ]
+        },
+        {
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035799_00002/full/max/0/default.jpg",
+          "deleted": "true"
+        },
+        {
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035799_00003/full/max/0/default.jpg",
+          "deleted": "true"
+        }
+      ]
+    },
+    {
+      "source": "StiftsA U 1688; Thiel: Urkundenbuch, S. 616–618 (Nr. 299)",
+      "url": "https://www.bavarikon.de/object/bav:AAB-URK-00000BAV80035790?cq=%22von%20Rosenberg%22&lang=en",
+      "german": "Ritter Eberhard von Rosenberg, Vogt, Schultheiß und Schöffen von (Tauber-)Bischofsheim beurkunden, dass Heinrich Wernheri und seine Ehefrau Hadewig und beider genannte Töchter und ihr Eidam, Bürger von (Tauber-)Bischofsheim, an Dekan und Kapitel von Aschaffenburg für 60 Pfund Heller aus genannten Weinbergen und Äckern daselbst eine Gült von 5 Pfund Hellern zur Präsenz verkaufen.",
+      "english": "Knight Eberhard von Rosenberg, the bailiff, the mayor, and the aldermen of (Tauber-)Bischofsheim certify that Heinrich Wernheri and his wife Hadewig, their named daughters, and their son-in-law, citizens of (Tauber-)Bischofsheim, sell to the dean and chapter of Aschaffenburg, for 60 pounds Heller, an annual rent of 5 pounds Heller from specified vineyards and fields there for the chapter's common fund.",
+      "facts": [
+        "Ritter Eberhard von Rosenberg participated in certifying the sale of an annual rent from vineyards and fields at (Tauber-)Bischofsheim by Heinrich Wernheri, his wife Hadewig, their daughters, and son-in-law to the dean and chapter of Aschaffenburg."
+      ],
+      "img": [
+        {
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035790_00001/full/max/0/default.jpg",
+          "seals": [
+            {
+              "person": "Eberhard",
+              "position": "0.2464,0.7980",
+              "size": 0.11850000000000004,
+              "width": 0.03,
+              "wideningRotation": -1,
+              "rotation": -12,
+              "type": "swans"
+            }
+          ]
+        },
+        {
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035790_00002/full/max/0/default.jpg",
+          "deleted": "true"
+        }
+      ]
+    }
+  ]
+}

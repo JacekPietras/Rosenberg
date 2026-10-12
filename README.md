@@ -63,3 +63,17 @@ python3 scripts/download_landesarchiv.py \
 Use `--mode download` to cache the files locally, or `--image-dir SUBDIRECTORY`
 to choose a subdirectory under `data/letters/`. Retain the archive source
 signature and follow its usage terms.
+
+## Bavarikon images
+
+Parse image URLs from a Bavarikon object page with:
+
+```text
+python3 scripts/parse_bavarikon.py 'https://www.bavarikon.de/object/...'
+```
+
+The script handles Bavarikon's Anubis proof-of-work check directly and uses
+only Python's standard library.
+
+Add `--download` to cache discovered images under
+`data/letters/img/bavarikon/`.
