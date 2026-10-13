@@ -10,6 +10,6 @@ export function localImageName(fileName) {
 }
 
 export function imageRootForPath(path) {
-  const match = String(path || '').match(/^data\/(books|letters|notes|armorials)\//);
+  const match = String(path || '').match(/^data\/(books|letters|notes|images)\//);
   return match ? `data/${match[1]}` : 'data';
 }

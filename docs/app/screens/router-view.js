@@ -62,11 +62,11 @@ export async function renderActiveScreen({
     setupMap();
     return;
   }
-  if (state.active === 'images') {
+  if (state.active === 'images/effigies') {
     content.innerHTML = render3dPage();
     return;
   }
-  if (state.active === 'armorials') {
+  if (state.active === 'images/armorials') {
     const path = state.manifest.armorials;
     content.innerHTML = path ? renderDocument(state.documents.get(path), path, 0) : '<p>No armorials are available.</p>';
     setupSealAnnotations();

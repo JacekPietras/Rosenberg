@@ -88,10 +88,12 @@ The Seals tab's `unknown` filter shows seals whose type is not filled;
 
 ## Armorials JSON
 
-`data/armorials/armorials.json` is an object with a `title` and an `entries`
+`data/images/armorials.json` is an object with a `title` and an `entries`
 array. Each entry may include a `title`, `date`, `source`, `url`, and `img`,
-using the same entry fields as books and notes. Store local heraldry images in
-`data/armorials/img/` and reference them by filename in `img`.
+using the same entry fields as books and notes. If an image is stored locally,
+place it directly in `data/images/` and reference its filename in `img`. The
+viewer also accepts Google Drive thumbnail URLs in `img` for images that remain
+hosted in Drive.
 
 ```json
 {
@@ -100,11 +102,17 @@ using the same entry fields as books and notes. Store local heraldry images in
     {
       "title": "Family arms",
       "source": "Source citation",
-      "img": "img/family-arms.png"
+      "img": "family-arms.png"
     }
   ]
 }
 ```
+
+## Effigies JSON
+
+`data/images/effigies.json` is an array of image or model records. Sketchfab
+records use `title`, `id`, `url`, and an optional `year`. Drive collection
+records use `type: "link"`, `title`, `url`, and an optional `preview` image URL.
 
 ## People JSON
 

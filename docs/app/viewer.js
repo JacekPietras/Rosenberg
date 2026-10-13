@@ -1343,14 +1343,16 @@ async function loadAllLegacy() {
     books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
     notes: paths.includes('data/notes/notes.json'),
     letters: letterPaths,
-    collections: documents.get('data/image_collections.json') || [],
+    armorials: paths.find((path) => path === 'data/images/armorials.json') || null,
+    collections: documents.get('data/images/effigies.json') || [],
   };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
   if (!letterPaths.some((path) => letterHasMissingSourceOrUrl(path))) state.letterLabels = state.letterLabels.filter((label) => label !== MISSING_LETTER_LABEL);
   if (!Array.isArray(state.hiddenLetterLabels)) state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
   state.sealNames = [...new Set(state.sealNames.map(normalizeSealFilter).filter(Boolean))];
   if (state.active === 'books') state.active = manifest.books[0]?.path || 'letters';
-  if (state.active !== 'letters' && state.active !== 'seals' && state.active !== 'tree' && state.active !== 'map' && state.active !== 'images' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
+  if (state.active === 'images' || state.active === 'armorials') state.active = 'images/armorials';
+  if (state.active !== 'letters' && state.active !== 'seals' && state.active !== 'tree' && state.active !== 'map' && state.active !== 'images/armorials' && state.active !== 'images/effigies' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
   savePreferences();
   renderTabs(); await renderActive();
 }
