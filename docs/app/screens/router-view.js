@@ -15,6 +15,7 @@ export async function renderActiveScreen({
   renderMapPage,
   setupMap,
   render3dPage,
+  renderArmorialsPage,
   visibleLetterPaths,
   documentYear,
   renderYearSidebar,
@@ -67,8 +68,7 @@ export async function renderActiveScreen({
     return;
   }
   if (state.active === 'images/armorials') {
-    const path = state.manifest.armorials;
-    content.innerHTML = path ? renderDocument(state.documents.get(path), path, 0) : '<p>No armorials are available.</p>';
+    content.innerHTML = renderArmorialsPage();
     setupSealAnnotations();
     return;
   }
