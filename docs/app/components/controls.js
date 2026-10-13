@@ -50,7 +50,6 @@ export function setupControls({ state, repository, updateLanguageControl, update
       savePush.title = result.changed ? 'Changes committed and pushed' : 'No changes to save';
       savePush.setAttribute('aria-label', savePush.title);
       savePush.hidden = true;
-      window.alert(result.changed ? 'Changes committed and pushed.' : 'No changes to save.');
     } catch (error) {
       savePush.title = `Could not commit and push: ${error.message}`;
       savePush.setAttribute('aria-label', savePush.title);
