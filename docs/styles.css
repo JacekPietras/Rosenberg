@@ -246,7 +246,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .armorial-card .model-info { padding-bottom: .35rem; }
 .armorial-card .entry-images { margin: 0; }
 .armorial-card .entry-image { flex: 1 1 100%; width: 100%; }
-.armorial-card .entry-image img { width: 100%; height: 15rem; max-height: none; object-fit: cover; }
+.armorial-card .entry-image img { width: 100%; height: auto; max-height: none; aspect-ratio: 16 / 10; object-fit: cover; }
 .armorial-card .armorial-source { padding-top: .5rem; }
 .armorial-card .armorial-source a { overflow-wrap: anywhere; }
 .entry-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.25rem 0; }
