@@ -1,6 +1,9 @@
 {
   "date": "1414-05-24",
-  "label": "Rosemberg",
+  "label": [
+    "Rosemberg",
+    "to review"
+  ],
   "entries": [
     {
       "source": "Reichsstadt Nürnberg, Landalmosenamt, Urkunden 37",

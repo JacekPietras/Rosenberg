@@ -16,6 +16,14 @@ export function createRepository({ location = window.location, fetchFunction = w
 
   return {
     getText,
+    async isLocalServer() {
+      try {
+        const response = await fetchFunction('/api/local-server', { cache: 'no-store' });
+        return response.ok;
+      } catch {
+        return false;
+      }
+    },
     async getJson(path) {
       return JSON.parse(await getText(path));
     },

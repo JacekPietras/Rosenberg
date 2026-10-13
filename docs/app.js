@@ -1,4 +1,4 @@
-import { startApplication } from './app/bootstrap.js?v=58';
+import { startApplication } from './app/bootstrap.js?v=59';
 
 const localRefresh = document.querySelector('#local-refresh');
 if (localRefresh) {

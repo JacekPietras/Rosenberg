@@ -3,6 +3,7 @@ import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree } from './screens/tree.js';
 import { renderActiveScreen } from './screens/router-view.js';
 import { createDocumentRenderer } from './screens/documents.js';
+import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js';
 import { createSealScreen } from './screens/seals.js';
 import { createDataLoader } from './data/loader.js';
@@ -36,7 +37,7 @@ function savePreferences() {
     darkMode: state.darkMode,
   });
 }
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const route = store?.getState?.().route || { active: 'books' };
 store?.setState(state);
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
@@ -1104,7 +1105,12 @@ function renderTabs() {
 }
 
 function letterLabelForPath(path) {
-  return String(state.documents.get(path)?.label || '').trim().toLocaleLowerCase();
+  return letterLabelsForPath(path).map((label) => label.toLocaleLowerCase());
+}
+
+function letterLabelsForPath(path) {
+  const value = state.documents.get(path)?.label;
+  return (Array.isArray(value) ? value : [value]).map((label) => String(label || '').trim()).filter(Boolean);
 }
 
 function visibleLetterPaths(paths) {
@@ -1113,10 +1119,10 @@ function visibleLetterPaths(paths) {
   return paths.filter((path) => {
     if (state.letterSource && !citationIndex.letterHasSource(path, state.letterSource)) return false;
     if (path === state.navigationLetter) return true;
-    const label = letterLabelForPath(path);
+    const labels = letterLabelForPath(path);
     const missing = selected.has(MISSING_LETTER_LABEL) && letterHasMissingSourceOrUrl(path);
-    if (hidden.has(label) && !missing) return false;
-    return !selected.size || selected.has(label) || missing;
+    if (labels.some((label) => hidden.has(label)) && !missing) return false;
+    return !selected.size || labels.some((label) => selected.has(label)) || missing;
   });
 }
 
@@ -1129,8 +1135,9 @@ function renderYearSidebar(paths, labelPaths = paths) {
   }).join('');
   const labels = new Map();
   labelPaths.forEach((path) => {
-    const label = String(state.documents.get(path)?.label || '').trim();
-    if (label && !labels.has(label.toLocaleLowerCase())) labels.set(label.toLocaleLowerCase(), { label, path });
+    letterLabelsForPath(path).forEach((label) => {
+      if (!labels.has(label.toLocaleLowerCase())) labels.set(label.toLocaleLowerCase(), { label, path });
+    });
   });
   const missingPath = labelPaths.find((path) => letterHasMissingSourceOrUrl(path));
   if (missingPath && !labels.has(MISSING_LETTER_LABEL)) labels.set(MISSING_LETTER_LABEL, { label: MISSING_LETTER_LABEL, path: missingPath });
@@ -1184,11 +1191,11 @@ function setupYearHighlight(paths) {
     state.letter = current.path;
     savePreferences();
     const year = current.element.id.match(/^year-(\d{4})-/)?.[1];
-    const currentLabel = String(state.documents.get(current.path)?.label || '').trim().toLocaleLowerCase();
+    const currentLabels = new Set(letterLabelForPath(current.path));
     links.forEach((link) => {
       const active = link.dataset.sidebarType === 'year'
         ? link.textContent === year
-        : link.dataset.label === currentLabel || (link.dataset.label === MISSING_LETTER_LABEL && letterHasMissingSourceOrUrl(current.path));
+        : currentLabels.has(link.dataset.label) || (link.dataset.label === MISSING_LETTER_LABEL && letterHasMissingSourceOrUrl(current.path));
       link.classList.toggle('active', active);
       if (active) link.setAttribute('aria-current', 'true');
       else link.removeAttribute('aria-current');
@@ -1379,6 +1386,11 @@ async function refreshIfChanged() {
 setupControls({ state, updateLanguageControl, updateFactsControl, applyTheme, applyMermaidTheme, savePreferences, rerender: renderActive });
 
 setupImageLightboxComponent({ state, repository, rerender: renderActive });
+setupLetterLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
+repository.isLocalServer().then((isLocal) => {
+  state.canEditDocuments = isLocal;
+  if (isLocal && state.manifest) renderActive();
+});
 
 async function getText(path) {
   return repository.getText(path);
