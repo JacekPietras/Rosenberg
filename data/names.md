@@ -24,3 +24,4 @@ Wiprecht, Wibrecht
 Raban, Rabanus
 Wenceslaus, Wenzel
 Rosenberg, Rosinberg, Rosemberg, Rossenberg, Roßenberg, Rosenberch, Rosemberch, Rosenburgk, Rossberg, Rosenperg, Rosenbergk
+Kraft, Krafto

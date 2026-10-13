@@ -1,0 +1,28 @@
+{
+  "date": "1287-06-13",
+  "label": ["new"],
+  "entries": [
+    {
+      "source": "Stadt- und Stiftsarchiv Aschaffenburg, StiftsA U 546; Thiel: Urkundenbuch, p. 306, no. 130 (Bavarikon and DDB catalogue descriptions)",
+      "url": [
+        "https://www.bavarikon.de/object/bav:AAB-URK-00000BAV80035260?cq=Uissigheim&lang=de",
+        "https://www.deutsche-digitale-bibliothek.de/item/RHCJZ5SKULKBQBTPZH7AQY67QPPLARKO"
+      ],
+      "german": "Graf Rudolf (I.) von Wertheim bürgt gemeinsam mit den Rittern Konrad von Uissigheim und Arnold genannt Bleiche gegenüber Dekan und Kapitel von Aschaffenburg dafür, dass die Erben seines verstorbenen Bruders Boppo (IV.) für den dem Stift verkauften Hof zu Mönchberg Gewährschaft leisten.",
+      "english": "Count Rudolf I of Wertheim, together with the knights Konrad von Uissigheim and Arnold called Bleiche, guarantees to the dean and chapter of Aschaffenburg that the heirs of his late brother Boppo IV will warrant the farm at Mönchberg that was sold to the abbey.",
+      "facts": [
+        "Konrad von Uissigheim served as a guarantor to the dean and chapter of Aschaffenburg for the warranty by the heirs of Boppo IV of the farm at Mönchberg sold to the abbey."
+      ],
+      "img": [
+        {
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035260_00001/full/max/0/default.jpg",
+          "seals": []
+        },
+        {
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035260_00002/full/max/0/default.jpg",
+          "seals": []
+        }
+      ]
+    }
+  ]
+}
