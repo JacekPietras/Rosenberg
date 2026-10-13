@@ -13,3 +13,7 @@ The linked rules are part of these instructions and should be followed when
 the relevant task requires them.
 
 There is no automated merge, sorting, queue, report, or temporary-file workflow. Add facts directly to the relevant JSON entry and review the diff.
+
+## Research skills
+
+- For archival catalog searches by person or family name, read and follow [`archive-name-research`](.agents/skills/archive-name-research/SKILL.md).

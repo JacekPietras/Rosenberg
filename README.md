@@ -31,6 +31,12 @@ verification.
 Keep edits targeted. Preserve valid JSON, source citations, source text,
 translations, existing structure, and the source's date precision.
 
+## Agent skills
+
+Codex discovers repository skills under `.agents/skills/`. The archival catalog
+research workflow is [`archive-name-research`](.agents/skills/archive-name-research/SKILL.md).
+Repository-wide instructions are in [`AGENTS.md`](AGENTS.md).
+
 ## Browser viewer
 
 The viewer is published at
