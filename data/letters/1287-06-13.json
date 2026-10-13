@@ -1,6 +1,8 @@
 {
   "date": "1287-06-13",
-  "label": ["new"],
+  "label": [
+    "new"
+  ],
   "entries": [
     {
       "source": "Stadt- und Stiftsarchiv Aschaffenburg, StiftsA U 546; Thiel: Urkundenbuch, p. 306, no. 130 (Bavarikon and DDB catalogue descriptions)",
@@ -15,12 +17,11 @@
       ],
       "img": [
         {
-          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035260_00001/full/max/0/default.jpg",
-          "seals": []
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035260_00001/full/max/0/default.jpg"
         },
         {
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035260_00002/full/max/0/default.jpg",
-          "seals": []
+          "deleted": "true"
         }
       ]
     }

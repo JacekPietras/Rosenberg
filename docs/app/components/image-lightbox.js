@@ -19,6 +19,18 @@ export function setupImageLightbox({ state, repository, rerender }) {
 
   const editable = !location.hostname.endsWith('github.io');
   const saveStatus = $('#image-lightbox-save-status');
+  const removeConfirmation = document.createElement('dialog');
+  removeConfirmation.className = 'image-remove-confirmation';
+  removeConfirmation.setAttribute('aria-labelledby', 'image-remove-confirmation-title');
+  removeConfirmation.innerHTML = '<form method="dialog"><p id="image-remove-confirmation-title">Remove this image from the document?</p><div><button value="cancel">Cancel</button><button value="confirm">Remove image</button></div></form>';
+  document.body.append(removeConfirmation);
+  const confirmImageRemoval = () => {
+    if (typeof removeConfirmation.showModal !== 'function') return Promise.resolve(window.confirm('Remove this image from the document?'));
+    return new Promise((resolve) => {
+      removeConfirmation.addEventListener('close', () => resolve(removeConfirmation.returnValue === 'confirm'), { once: true });
+      removeConfirmation.showModal();
+    });
+  };
   let context = null;
   let selectedIndex = null;
   let drag = null;
@@ -136,7 +148,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   $('#image-lightbox-add-seal')?.addEventListener('click', () => { if (!context) return; const person = window.prompt('Person shown by this seal:'); if (!person?.trim()) return; currentSeals().push({ person: person.trim(), position: '0.5,0.5', size: 0.08, width: 0, wideningRotation: 0, rotation: 0, type: 'full' }); selectedIndex = currentSeals().length - 1; render(); });
   $('#image-lightbox-remove-seal')?.addEventListener('click', () => { if (selectedIndex !== null) { currentSeals().splice(selectedIndex, 1); selectedIndex = null; render(); } });
   $('#image-lightbox-remove-image')?.addEventListener('click', async () => {
-    if (!context || !window.confirm('Remove this image from the document?')) return;
+    if (!context || !await confirmImageRemoval()) return;
     const document = state.documents.get(context.path); const entry = document?.entries?.[Number(context.entryIndex)];
     if (!entry) return;
     if (Array.isArray(entry.img)) {

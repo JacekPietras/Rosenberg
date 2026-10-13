@@ -1,7 +1,7 @@
 Eberhard, Ebirh, Everard, Everhard, Eberhardi, Ebirhardus, eebhrt, rebhart, Ebhart, Eberhardus, Ebhrhard, Eberhardts, Eberhart, Ebirbard, Ebirhardo, Ebirhardz, Ebirhart, Ebyrhard, Eberhardt, erberhart, Eberharten, Ebirharten, Eberhardum, Ebert, Eberh, Eberhards
 Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele
 Engelhard, Engelhart, Engelhardus
-Konrad, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat, Cunrad
+Konrad, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat, Cunrad, Cunreth
 Kunz, Cunz, Kunz, Konz, Conz, Concz, Cuntz, Cuncze, Guntz // are shortened versions of Konrad, but not used as it\! [1401 March 5]
 Irmtraut, Irmendrut
 Eckhard, Ege, Ekkehart, Eckhart, Ekhart, Ekkehard, Eckehardus, Ekkard
@@ -25,3 +25,4 @@ Raban, Rabanus
 Wenceslaus, Wenzel
 Rosenberg, Rosinberg, Rosemberg, Rossenberg, Roßenberg, Rosenberch, Rosemberch, Rosenburgk, Rossberg, Rosenperg, Rosenbergk
 Kraft, Krafto
+Erligheim, Erleheim

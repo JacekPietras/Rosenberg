@@ -1,6 +1,8 @@
 {
   "date": "1293-01-22",
-  "label": ["new"],
+  "label": [
+    "new"
+  ],
   "entries": [
     {
       "source": "Stadt- und Stiftsarchiv Aschaffenburg, StiftsA U 2957; Thiel: Urkundenbuch, pp. 330–332, no. 141 (Bavarikon catalogue description)",
@@ -13,12 +15,11 @@
       ],
       "img": [
         {
-          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80036367_00001/full/max/0/default.jpg",
-          "seals": []
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80036367_00001/full/max/0/default.jpg"
         },
         {
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80036367_00002/full/max/0/default.jpg",
-          "seals": []
+          "deleted": "true"
         }
       ]
     }
