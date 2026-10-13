@@ -9,7 +9,7 @@ import { createSealScreen } from './screens/seals.js';
 import { createDataLoader } from './data/loader.js';
 import { createEntityScreens } from './screens/entities.js';
 import { createTabs } from './components/tabs.js';
-import { setupControls } from './components/controls.js';
+import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js';
 import { createMapScreen } from './screens/map.js';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=61';
@@ -1383,7 +1383,7 @@ async function refreshIfChanged() {
   }
 }
 
-setupControls({ state, updateLanguageControl, updateFactsControl, applyTheme, applyMermaidTheme, savePreferences, rerender: renderActive });
+setupControls({ state, repository, updateLanguageControl, updateFactsControl, applyTheme, applyMermaidTheme, savePreferences, rerender: renderActive });
 
 setupImageLightboxComponent({ state, repository, rerender: renderActive });
 setupLetterLabelSelector({ state, repository, rerender: renderActive, escapeHtml });

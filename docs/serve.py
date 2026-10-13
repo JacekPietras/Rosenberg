@@ -33,6 +33,15 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             self.send_response(204)
             self.end_headers()
             return
+        if self.path.split("?", 1)[0] == "/api/git-status":
+            result = subprocess.run(
+                ["git", "status", "--porcelain"], cwd=ROOT, capture_output=True, text=True, check=False
+            )
+            if result.returncode:
+                self.send_json(500, {"error": result.stderr.strip() or "Could not read Git status"})
+                return
+            self.send_json(200, {"changed": bool(result.stdout.strip())})
+            return
         if self.path.split("?", 1)[0] == "/api/files":
             paths = [
                 {
@@ -58,6 +67,37 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             page_seen.set()
             self.send_response(204)
             self.end_headers()
+            return
+        if self.path.split("?", 1)[0] == "/api/save-and-push":
+            try:
+                staged = subprocess.run(
+                    ["git", "add", "-A"], cwd=ROOT, capture_output=True, text=True, check=False
+                )
+                if staged.returncode:
+                    raise RuntimeError(staged.stderr.strip() or "Could not stage changes")
+                pending = subprocess.run(
+                    ["git", "diff", "--cached", "--quiet"], cwd=ROOT, check=False
+                )
+                if pending.returncode == 0:
+                    self.send_json(200, {"ok": True, "changed": False})
+                    return
+                if pending.returncode != 1:
+                    raise RuntimeError("Could not inspect staged changes")
+                committed = subprocess.run(
+                    ["git", "commit", "-m", "save"], cwd=ROOT, capture_output=True, text=True, check=False
+                )
+                if committed.returncode:
+                    raise RuntimeError(committed.stderr.strip() or committed.stdout.strip() or "Commit failed")
+                pushed = subprocess.run(
+                    ["git", "push"], cwd=ROOT, capture_output=True, text=True, check=False
+                )
+                if pushed.returncode:
+                    raise RuntimeError(
+                        f"Commit created, but push failed: {pushed.stderr.strip() or pushed.stdout.strip()}"
+                    )
+                self.send_json(200, {"ok": True, "changed": True})
+            except (OSError, RuntimeError) as error:
+                self.send_json(500, {"error": str(error)})
             return
         if self.path.split("?", 1)[0] == "/api/restart-server":
             self.send_response(202)

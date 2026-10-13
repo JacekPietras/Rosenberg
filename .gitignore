@@ -26,6 +26,8 @@ Thumbs.db
 
 # Editor files
 .venv/
+__pycache__/
+*.py[cod]
 .vscode/
 .idea/
 *.swp

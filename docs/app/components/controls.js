@@ -1,4 +1,4 @@
-export function setupControls({ state, updateLanguageControl, updateFactsControl, applyTheme, applyMermaidTheme, savePreferences, rerender }) {
+export function setupControls({ state, repository, updateLanguageControl, updateFactsControl, applyTheme, applyMermaidTheme, savePreferences, rerender }) {
   const languageToggle = document.querySelector('#language-toggle');
   updateLanguageControl();
   updateFactsControl();
@@ -22,5 +22,41 @@ export function setupControls({ state, updateLanguageControl, updateFactsControl
     applyMermaidTheme();
     savePreferences();
     rerender();
+  });
+  const savePush = document.querySelector('#local-save-push');
+  const updateSaveVisibility = async () => {
+    if (!savePush) return;
+    try {
+      const response = await fetch('/api/git-status', { cache: 'no-store' });
+      if (!response.ok) return;
+      const status = await response.json();
+      savePush.hidden = !status.changed;
+    } catch {}
+  };
+  repository.isLocalServer().then((isLocal) => {
+    if (isLocal) {
+      updateSaveVisibility();
+      window.setInterval(updateSaveVisibility, 3000);
+    }
+  });
+  savePush?.addEventListener('click', async () => {
+    savePush.disabled = true;
+    savePush.title = 'Saving and pushing…';
+    savePush.setAttribute('aria-label', 'Saving and pushing changes');
+    try {
+      const response = await fetch('/api/save-and-push', { method: 'POST' });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || `Save failed (${response.status})`);
+      savePush.title = result.changed ? 'Changes committed and pushed' : 'No changes to save';
+      savePush.setAttribute('aria-label', savePush.title);
+      savePush.hidden = true;
+      window.alert(result.changed ? 'Changes committed and pushed.' : 'No changes to save.');
+    } catch (error) {
+      savePush.title = `Could not commit and push: ${error.message}`;
+      savePush.setAttribute('aria-label', savePush.title);
+      window.alert(savePush.title);
+    } finally {
+      savePush.disabled = false;
+    }
   });
 }
