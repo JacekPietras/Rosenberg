@@ -12,7 +12,7 @@ import { createTabs } from './components/tabs.js';
 import { setupControls } from './components/controls.js';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js';
 import { createMapScreen } from './screens/map.js';
-import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=59';
+import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=61';
 import { createMarkupRenderer } from './rendering/markup.js';
 import { createImageRenderer } from './rendering/images.js';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
