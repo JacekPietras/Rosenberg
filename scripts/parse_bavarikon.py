@@ -18,7 +18,7 @@ from urllib.request import HTTPCookieProcessor, Request, build_opener, urlopen
 
 
 ROOT = Path(__file__).resolve().parent.parent
-IMAGE_DIR = ROOT / "data" / "letters" / "img" / "bavarikon"
+IMAGE_DIR = ROOT / "data" / "letters" / "img-temp" / "bavarikon"
 USER_AGENT = "Mozilla/5.0 (compatible; RosenbergResearch/1.0)"
 TIMEOUT = 45
 
@@ -278,7 +278,7 @@ def download(urls: list[str]) -> list[Path]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("url", help="Bavarikon object page URL")
-    parser.add_argument("--download", action="store_true", help="cache discovered images under data/letters/img/bavarikon/")
+    parser.add_argument("--download", action="store_true", help="cache discovered images under data/letters/img-temp/bavarikon/")
     args = parser.parse_args()
     try:
         metadata, images, manifests = scrape(args.url)

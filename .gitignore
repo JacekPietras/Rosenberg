@@ -5,7 +5,7 @@ token.txt
 # Generated reports and list files
 reports/
 data/letters/list.txt
-data/letters/img/
+data/letters/img-temp/
 
 # Backup files
 *.backup

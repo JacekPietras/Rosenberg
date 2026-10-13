@@ -231,8 +231,8 @@ def main() -> int:
     )
     parser.add_argument(
         "--image-dir",
-        default="img",
-        help="subdirectory of data/letters/ used with --mode download (default: img)",
+        default="img-temp",
+        help="subdirectory of data/letters/ used with --mode download (default: img-temp)",
     )
     args = parser.parse_args()
 

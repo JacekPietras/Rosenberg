@@ -82,4 +82,4 @@ The script handles Bavarikon's Anubis proof-of-work check directly and uses
 only Python's standard library.
 
 Add `--download` to cache discovered images under
-`data/letters/img/bavarikon/`.
+`data/letters/img-temp/bavarikon/`.
