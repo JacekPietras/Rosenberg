@@ -1,7 +1,7 @@
 import { formatDate } from './dates.js';
 
 export function documentTitle(doc, path) {
-  return doc.book || formatDate(doc.date) || path.split('/').pop().replace(/\.json$/, '');
+  return doc.book || doc.title || formatDate(doc.date) || path.split('/').pop().replace(/\.json$/, '');
 }
 
 export function documentYear(doc) {

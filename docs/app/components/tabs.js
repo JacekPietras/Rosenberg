@@ -4,8 +4,10 @@ export function createTabs({ state, escapeHtml, clearScreenCaches, savePreferenc
       { path: 'books', label: 'Books' },
       ...(state.manifest.notes ? [{ path: 'data/notes/notes.json', label: 'Notes' }] : []),
       { path: 'letters', label: 'Letters' },
+      { path: 'armorials', label: 'Armorials' },
       { path: 'seals', label: 'Seals' },
       { path: 'map', label: 'Map' },
+      { path: 'images', label: 'Images' },
       { path: 'tree', label: 'Tree' },
     ];
     const bookIsActive = state.active === 'books' || state.manifest.books.some((book) => book.path === state.active);
@@ -28,7 +30,7 @@ export function createTabs({ state, escapeHtml, clearScreenCaches, savePreferenc
       const nextUrl = new URL(location.href);
       nextUrl.search = '';
       nextUrl.hash = '';
-      if (requestedPath === 'books' || ['letters', 'seals', 'map', 'tree'].includes(nextActive)) nextUrl.searchParams.set('tab', requestedPath === 'books' ? 'books' : nextActive);
+      if (requestedPath === 'books' || ['letters', 'armorials', 'seals', 'map', 'tree', 'images'].includes(nextActive)) nextUrl.searchParams.set('tab', requestedPath === 'books' ? 'books' : nextActive);
       else nextUrl.searchParams.set('document', nextActive);
       history.replaceState(null, '', `${nextUrl.pathname}${nextUrl.search}`);
       state.active = nextActive;

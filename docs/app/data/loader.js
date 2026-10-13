@@ -37,6 +37,8 @@ export function createDataLoader({
       books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
       notes: paths.includes('data/notes/notes.json'),
       letters: letterPaths,
+      armorials: paths.find((path) => path === 'data/armorials/armorials.json') || null,
+      collections: documents.get('data/image_collections.json') || [],
     };
     state.documents = documents;
     state.snapshot = snapshot;
@@ -44,7 +46,7 @@ export function createDataLoader({
     if (!Array.isArray(state.hiddenLetterLabels)) state.hiddenLetterLabels = [...greyLetterLabels];
     state.sealNames = [...new Set(state.sealNames.map((label) => label.includes('?') ? 'unknown' : label.toLocaleLowerCase()).filter(Boolean))];
     if (state.active === 'books') state.active = state.manifest.books[0]?.path || 'letters';
-    const reserved = ['letters', 'seals', 'tree', 'map'];
+    const reserved = ['letters', 'armorials', 'seals', 'tree', 'map', 'images'];
     if (!reserved.includes(state.active) && !paths.includes(state.active)) state.active = state.manifest.books[0]?.path || 'letters';
     savePreferences();
     renderTabs();

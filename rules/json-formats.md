@@ -86,6 +86,26 @@ Each seal may have one `type`: `contrepalle`, `swans`, `helm`, or `full`.
 The Seals tab's `unknown` filter shows seals whose type is not filled;
 `unknown` is not an editable type.
 
+## Armorials JSON
+
+`data/armorials/armorials.json` is an object with a `title` and an `entries`
+array. Each entry may include a `title`, `date`, `source`, `url`, and `img`,
+using the same entry fields as books and notes. Store local heraldry images in
+`data/armorials/img/` and reference them by filename in `img`.
+
+```json
+{
+  "title": "Armorials",
+  "entries": [
+    {
+      "title": "Family arms",
+      "source": "Source citation",
+      "img": "img/family-arms.png"
+    }
+  ]
+}
+```
+
 ## People JSON
 
 `data/people.json` is a JSON array. Each person has a unique `id`; relationship

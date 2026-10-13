@@ -233,6 +233,16 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .map-save-status { position: absolute; top: 2.9rem; right: .6rem; z-index: 1000; padding: .3rem .6rem; background: var(--surface); border: 1px solid var(--line); border-radius: 7px; }
 .map-credit { margin: 1rem 0 1.5rem; color: var(--faint); font-size: .72rem; }
 .map-credit a { color: var(--muted); }
+.models-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.model-card { display: block; overflow: hidden; color: inherit; text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.model-collection-link:hover { border-color: var(--accent); }
+.model-frame { aspect-ratio: 16 / 10; background: var(--surface-soft); }
+.model-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.model-collection-preview { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: left top; background: var(--surface-soft); }
+.model-info { padding: .85rem 1rem 1rem; }
+.model-info h2 { margin: 0 0 .3rem; color: var(--ink); font-size: 1rem; line-height: 1.35; }
+.model-info a { color: var(--muted); font-size: .85rem; }
+.model-info a:hover { color: var(--accent); }
 .entry-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.25rem 0; }
 .entry-image { flex: 1 1 12rem; max-width: 100%; margin: 0; text-align: center; }
 .entry-image img { display: block; max-width: 100%; height: auto; max-height: 32rem; margin: 0 auto; }

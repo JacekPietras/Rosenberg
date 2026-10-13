@@ -1302,6 +1302,9 @@ async function renderActive() {
     renderPeopleTree,
     renderMapPage: mapScreen.renderMapPage,
     setupMap: mapScreen.setupMap,
+    render3dPage: () => `<div class="models-grid">${(state.manifest.collections || []).map((model) => model.type === 'link'
+      ? `<a class="model-card model-collection-link" href="${escapeHtml(model.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(model.title)} collection">${model.preview ? `<img class="model-collection-preview" src="${escapeHtml(model.preview)}" alt="">` : ''}<div class="model-info"><h2>${escapeHtml(model.title)}</h2></div></a>`
+      : `<article class="model-card"><div class="model-frame"><iframe title="${escapeHtml(model.title)}" src="https://sketchfab.com/models/${encodeURIComponent(model.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div><div class="model-info"><h2>${escapeHtml(model.title)}</h2></div></article>`).join('')}</div>`,
     visibleLetterPaths,
     documentYear,
     renderYearSidebar,
@@ -1340,13 +1343,14 @@ async function loadAllLegacy() {
     books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
     notes: paths.includes('data/notes/notes.json'),
     letters: letterPaths,
+    collections: documents.get('data/image_collections.json') || [],
   };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
   if (!letterPaths.some((path) => letterHasMissingSourceOrUrl(path))) state.letterLabels = state.letterLabels.filter((label) => label !== MISSING_LETTER_LABEL);
   if (!Array.isArray(state.hiddenLetterLabels)) state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
   state.sealNames = [...new Set(state.sealNames.map(normalizeSealFilter).filter(Boolean))];
   if (state.active === 'books') state.active = manifest.books[0]?.path || 'letters';
-  if (state.active !== 'letters' && state.active !== 'seals' && state.active !== 'tree' && state.active !== 'map' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
+  if (state.active !== 'letters' && state.active !== 'seals' && state.active !== 'tree' && state.active !== 'map' && state.active !== 'images' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
   savePreferences();
   renderTabs(); await renderActive();
 }

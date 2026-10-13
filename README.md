@@ -11,6 +11,7 @@ data/
 ├── books/        # Structured source books
 ├── notes/        # Research notes
 ├── letters/      # Letters, document
+├── armorials/    # Armorial records and heraldry images
 ├── calendar.md   # Liturgical calendar and dated annotations
 ├── people.json   # People and relationships
 ├── names.md      # Historical name variants
