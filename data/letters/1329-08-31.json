@@ -1,6 +1,8 @@
 {
   "date": "1329-08-31",
-  "label": ["new"],
+  "label": [
+    "new"
+  ],
   "place": "Königheim",
   "entries": [
     {
@@ -14,15 +16,35 @@
       "img": [
         {
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035235_00001/full/max/0/default.jpg",
-          "seals": []
+          "seals": [
+            {
+              "person": "Kraft von Uissigheim",
+              "position": "0.5113,0.6717",
+              "size": 0.08850000000000001,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": -45,
+              "type": "helm"
+            }
+          ]
         },
         {
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035235_00002/full/max/0/default.jpg",
-          "seals": []
+          "deleted": "true"
         },
         {
           "src": "img/1329-krafto-von-uissigheim.png",
-          "seals": []
+          "seals": [
+            {
+              "person": "Kraft von Rosenberg",
+              "position": "0.4675,0.4067",
+              "size": 0.5,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 6,
+              "type": "full"
+            }
+          ]
         }
       ]
     }

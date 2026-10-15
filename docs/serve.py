@@ -168,6 +168,7 @@ if __name__ == "__main__":
     def watch_heartbeat():
         while not stop_watcher.wait(0.25):
             if page_seen.is_set() and time.monotonic() - last_heartbeat[0] >= HEARTBEAT_TIMEOUT:
+                print(f"No viewer heartbeat for {HEARTBEAT_TIMEOUT}s; stopping server.", flush=True)
                 server.shutdown()
                 return
 

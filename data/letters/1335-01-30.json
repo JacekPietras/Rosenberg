@@ -1,6 +1,8 @@
 {
   "date": "1335-01-30",
-  "label": ["new"],
+  "label": [
+    "new"
+  ],
   "place": "Königheim",
   "entries": [
     {
@@ -14,11 +16,21 @@
       "img": [
         {
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035257_00001/full/max/0/default.jpg",
-          "seals": []
+          "seals": [
+            {
+              "person": "Kraft von Uissigheim",
+              "position": "0.3917,0.8342",
+              "size": 0.0735,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 9,
+              "type": "swans"
+            }
+          ]
         },
         {
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035257_00002/full/max/0/default.jpg",
-          "seals": []
+          "deleted": "true"
         }
       ]
     }

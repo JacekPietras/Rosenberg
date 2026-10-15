@@ -30,7 +30,18 @@
           "deleted": "true"
         },
         {
-          "src": "img/1323-rosenberg-siegel.jpg"
+          "src": "img/1323-rosenberg-siegel.jpg",
+          "seals": [
+            {
+              "person": "Eberhard",
+              "position": "0.4694,0.4592",
+              "size": 0.5,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": -39,
+              "type": "swans"
+            }
+          ]
         }
       ]
     }

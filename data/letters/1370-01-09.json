@@ -1,6 +1,8 @@
 {
   "date": "1370-01-09",
-  "label": ["new"],
+  "label": [
+    "new"
+  ],
   "entries": [
     {
       "source": "Stadt- und Stiftsarchiv Aschaffenburg, StiftsA U 3901; Schöffler: Urkundenbuch Nr. 430 (Bavarikon catalogue description)",
@@ -13,12 +15,10 @@
       ],
       "img": [
         {
-          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80036592_00001/full/max/0/default.jpg",
-          "seals": []
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80036592_00001/full/max/0/default.jpg"
         },
         {
-          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80036592_00002/full/max/0/default.jpg",
-          "seals": []
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80036592_00002/full/max/0/default.jpg"
         }
       ]
     }
