@@ -96,33 +96,41 @@
     "lon": 9.099444
   },
   {
-    "variations": ["Schüpf"],
+    "variations": [
+      "Schüpf"
+    ],
     "category": "village",
     "lat": 49.5224165,
     "lon": 9.6774758
   },
   {
-    "variations": ["Old Castle, Schüpf", "Old Burg, Schüpf"],
+    "variations": [
+      "Schüpf",
+      "Old Castle, Schüpf",
+      "Old Burg, Schüpf"
+    ],
     "category": "castle",
     "lat": 49.522781,
     "lon": 9.6725399
   },
   {
-    "variations": ["Unterschüpf Water Castle", "Wasserschloss, Unterschüpf"],
+    "variations": [
+      "Unterschüpf",
+      "Unterschüpf Water Castle",
+      "Wasserschloss, Unterschüpf"
+    ],
     "category": "castle",
     "lat": 49.5147596,
     "lon": 9.6885356
   },
   {
-    "variations": ["Oberschüpf Castle", "Schloss, Oberschüpf"],
+    "variations": [
+      "Oberschüpf",
+      "Oberschüpf Castle",
+      "Schloss, Oberschüpf"
+    ],
     "category": "castle",
     "lat": 49.5218062,
     "lon": 9.6772055
-  },
-  {
-    "variations": ["Boxberg Castle", "Burg Boxberg"],
-    "category": "castle",
-    "lat": 49.4792833,
-    "lon": 9.6415872
   }
 ]

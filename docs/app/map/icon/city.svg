@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -491 1200 1200" width="60" height="60">
-  <g fill="#fff">
+  <g fill="#000">
     <!-- Leftmost Tower -->
     <path d="M 0 228 H 147 V 285 H 0 Z M 32 228 V 253 H 56 V 228 Z M 89 228 V 253 H 114 V 228 Z" />
     <path fill-rule="evenodd" d="M 11 298 H 136 V 709 H 11 Z M 53 388 V 368 A 20 20 0 0 1 93 368 V 388 Z" />

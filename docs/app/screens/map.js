@@ -49,10 +49,16 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
   function markerOptions(place) {
     const category = typeof place.category === 'string' ? place.category.toLocaleLowerCase() : '';
     if (!PLACE_ICONS.has(category)) return {};
-    const iconUrl = new URL(`../map/icon/${category}.svg?v=7`, import.meta.url).href;
+    const iconUrl = new URL(`../map/icon/${category}.svg?v=10`, import.meta.url).href;
     const html = `<img class="map-place-icon-image" src="${iconUrl}" alt="">`;
     const size = ['city', 'village'].includes(category) ? 60 : 30;
     return { icon: L.divIcon({ className: `map-place-icon map-place-icon-${category}`, html, iconSize: [size, size], iconAnchor: [size / 2, size], popupAnchor: [0, -size] }) };
+  }
+
+  function bindPlaceMarker(marker, place) {
+    return marker
+      .bindPopup(`<a class="place-link" href="?place=${encodeURIComponent(place.name)}">${escapeHtml(place.name)}</a>`)
+      .bindTooltip(escapeHtml(place.name), { permanent: true, direction: 'bottom', offset: [0, 0], className: 'map-place-label' });
   }
 
   function renderLayer(container, places, calibrationCities, previousView) {
@@ -69,7 +75,7 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
       const warp = hrrBuildWarp(calibrationCities, map);
       places.forEach((place) => {
         const point = warp.pixelForLatLon(place.lat, place.lon);
-        L.marker([map.height - point.y, point.x], markerOptions(place)).addTo(leafletMap).bindPopup(`<a class="place-link" href="?place=${encodeURIComponent(place.name)}">${escapeHtml(place.name)}</a>`);
+        bindPlaceMarker(L.marker([map.height - point.y, point.x], markerOptions(place)).addTo(leafletMap), place);
       });
       if (calibrationEditable) {
         const { x: keyX, y: keyY } = hrrCalibrationKeys(map);
@@ -91,7 +97,7 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
     const leafletMap = L.map(container, { scrollWheelZoom: true });
     setMap(leafletMap);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors', maxZoom: 18 }).addTo(leafletMap);
-    const markers = places.map((place) => L.marker([place.lat, place.lon], markerOptions(place)).addTo(leafletMap).bindPopup(`<a class="place-link" href="?place=${encodeURIComponent(place.name)}">${escapeHtml(place.name)}</a>`));
+    const markers = places.map((place) => bindPlaceMarker(L.marker([place.lat, place.lon], markerOptions(place)).addTo(leafletMap), place));
     leafletMap.fitBounds(carriedCorners ? latLonCornersToView(carriedCorners, 'live', calibrationCities) : L.featureGroup(markers).getBounds(), carriedCorners ? undefined : { padding: [40, 40] });
   }
 
