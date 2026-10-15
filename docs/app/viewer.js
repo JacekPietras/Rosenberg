@@ -11,7 +11,7 @@ import { createEntityScreens } from './screens/entities.js';
 import { createTabs } from './components/tabs.js';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js';
-import { createMapScreen } from './screens/map.js?v=76';
+import { createMapScreen } from './screens/map.js?v=77';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=62';
 import { createMarkupRenderer } from './rendering/markup.js';
 import { createImageRenderer } from './rendering/images.js';
@@ -460,8 +460,8 @@ function placeMarkerIcon(place) {
   const size = ['city', 'village'].includes(category) ? 60 : 30;
   return L.divIcon({
     className: `map-place-icon map-place-icon-${category}`,
-    html: `<img class="map-place-icon-image" src="${iconUrl}" alt="">`,
-    iconSize: [size, size],
+    html: `<span class="map-place-icon-art" style="width:${size}px;height:${size}px"><img class="map-place-icon-image" src="${iconUrl}" alt=""></span><span class="map-place-label">${escapeHtml(place.name)}</span>`,
+    iconSize: [size, size + 12],
     iconAnchor: [size / 2, size],
     popupAnchor: [0, -size],
   });
@@ -488,7 +488,6 @@ function renderMapLayer(container, places, calibrationCities, previousView) {
       const marker = L.marker([mapDef.height - y, x], placeMarkerOptions(place)).addTo(leafletMap);
       const query = encodeURIComponent(place.name);
       marker.bindPopup(`<a class="place-link" href="?place=${query}">${escapeHtml(place.name)}</a>`);
-      marker.bindTooltip(escapeHtml(place.name), { permanent: true, direction: 'bottom', offset: [0, 0], className: 'map-place-label' });
     });
     if (MAP_CALIBRATION_EDITABLE) {
       const { x: keyX, y: keyY } = mapCalibrationKeys(mapDef);
@@ -520,7 +519,6 @@ function renderMapLayer(container, places, calibrationCities, previousView) {
     const marker = L.marker([place.lat, place.lon], placeMarkerOptions(place)).addTo(leafletMap);
     const query = encodeURIComponent(place.name);
     marker.bindPopup(`<a class="place-link" href="?place=${query}">${escapeHtml(place.name)}</a>`);
-    marker.bindTooltip(escapeHtml(place.name), { permanent: true, direction: 'bottom', offset: [0, 0], className: 'map-place-label' });
     return marker;
   });
   leafletMap.fitBounds(carriedCorners ? hrrLatLonCornersToView(carriedCorners, 'live', calibrationCities) : L.featureGroup(markers).getBounds(), carriedCorners ? undefined : { padding: [40, 40] });
