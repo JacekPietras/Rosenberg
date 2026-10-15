@@ -89,11 +89,13 @@ The Seals tab's `unknown` filter shows seals whose type is not filled;
 ## Armorials JSON
 
 `data/images/armorials.json` is an object with a `title` and an `entries`
-array. Each entry may include a `title`, `date`, `source`, `url`, and `img`,
-using the same entry fields as books and notes. If an image is stored locally,
-place it directly in `data/images/` and reference its filename in `img`. The
-viewer also accepts Google Drive thumbnail URLs in `img` for images that remain
-hosted in Drive.
+array. Each entry may include a `title`, `date`, `source`, `url`, and `focus`,
+using the same entry fields as books and notes. `url` is the image URL or local
+filename, and optional `focus` stores the crop focus coordinates. The entry
+`title` supplies the image's accessible name.
+If an image is stored locally, place it directly in `data/images/` and
+reference its filename in `img`. The viewer also accepts Google Drive thumbnail
+URLs in `img` for images that remain hosted in Drive.
 
 ```json
 {
@@ -102,7 +104,7 @@ hosted in Drive.
     {
       "title": "Family arms",
       "source": "Source citation",
-      "img": "family-arms.png"
+      "url": "family-arms.png"
     }
   ]
 }

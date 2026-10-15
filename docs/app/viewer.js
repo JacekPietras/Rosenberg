@@ -10,11 +10,11 @@ import { createDataLoader } from './data/loader.js';
 import { createEntityScreens } from './screens/entities.js?v=79';
 import { createTabs } from './components/tabs.js';
 import { setupControls } from './components/controls.js?v=61';
-import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js';
+import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=1';
 import { createMapScreen } from './screens/map.js?v=79';
-import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=62';
+import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=63';
 import { createMarkupRenderer } from './rendering/markup.js?v=79';
-import { createImageRenderer } from './rendering/images.js';
+import { createImageRenderer } from './rendering/images.js?v=1';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
 import { createLanguageRenderer } from './rendering/languages.js';
 import { createCitationIndex } from './data/citations.js';
@@ -1306,7 +1306,7 @@ async function renderActive() {
       const path = state.manifest.armorials;
       const document = path ? state.documents.get(path) : null;
       if (!document) return '<p>No armorials are available.</p>';
-      return `<div class="models-grid armorial-grid">${(document.entries || []).map((entry, index) => `<article class="model-card armorial-card"><div class="model-info"><h2>${escapeHtml(entry.title || document.title)}</h2>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}</div>${entry.img ? imageRenderer(entry.img, [], { path, index }) : ''}</article>`).join('')}</div>`;
+      return `<div class="models-grid armorial-grid">${(document.entries || []).map((entry) => `<article class="model-card armorial-card"><div class="model-info"><h2>${escapeHtml(entry.title || document.title)}</h2>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}</div>${entry.url ? imageRenderer(entry.url, [], { title: entry.title || document.title, focus: entry.focus }) : ''}</article>`).join('')}</div>`;
     },
     visibleLetterPaths,
     documentYear,

@@ -14,6 +14,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   const previewCrop = preview?.querySelector('.seal-crop');
   const previewImage = preview?.querySelector('img');
   const previewName = preview?.querySelector('.image-lightbox-seal-preview-name');
+  const focusButton = $('#image-lightbox-focus');
   const closeButton = $('#image-lightbox-close');
   if (!lightbox || !image || !stage || !annotations || !closeButton) return;
 
@@ -34,6 +35,8 @@ export function setupImageLightbox({ state, repository, rerender }) {
   let context = null;
   let selectedIndex = null;
   let drag = null;
+  let focusDrag = null;
+  let focusMode = false;
   let magnifierPoint = null;
   let magnifierDismissed = false;
   const MAGNIFIER_SIZE = 0.12;
@@ -86,6 +89,14 @@ export function setupImageLightbox({ state, repository, rerender }) {
     let index = 0;
     annotations.innerHTML = sealAnnotationMarkup(currentSeals(), escapeHtml).replace(/class="seal-marker"/g, (match) => `${match} data-seal-index="${index}"${index++ === selectedIndex ? ' data-selected="true"' : ''}`);
     annotations.querySelectorAll('.seal-marker').forEach((marker) => marker.classList.toggle('selected', Number(marker.dataset.sealIndex) === selectedIndex));
+    const focus = context?.node?.cropFocus;
+    let box = annotations.querySelector('.image-focus-box');
+    if (focus && [focus.x, focus.y, focus.width, focus.height].every((value) => Number.isFinite(Number(value)))) {
+      if (!box) { box = document.createElement('div'); box.className = 'image-focus-box'; annotations.append(box); }
+      Object.assign(box.style, { left: `${Number(focus.x) * 100}%`, top: `${Number(focus.y) * 100}%`, width: `${Number(focus.width) * 100}%`, height: `${Number(focus.height) * 100}%` });
+    } else box?.remove();
+    focusButton?.setAttribute('aria-pressed', String(focusMode));
+    lightbox.classList.toggle('is-focus-editing', focusMode);
     updateGeometry(); updatePreview(); updateControls();
   };
   const save = () => {
@@ -97,9 +108,15 @@ export function setupImageLightbox({ state, repository, rerender }) {
       catch (error) { setStatus(error.message, true); return false; }
     }); saveQueue = operation.catch(() => {}); return operation;
   };
-  const close = async () => { if (context && !await save()) return; lightbox.close(); };
+  const close = async () => { if (context && !await save()) return; lightbox.close(); await rerender?.(); };
   const startDrag = (event, index, target) => { const seal = currentSeals()[index]; if (!seal) return; const [x, y] = String(seal.position || '').split(',').map(Number); magnifierPoint = { x, y }; magnifierDismissed = false; selectedIndex = index; const p = point(event); drag = { index, pointerId: event.pointerId, offsetX: x - p.x, offsetY: y - p.y }; render(); target.setPointerCapture?.(event.pointerId); event.preventDefault(); };
   const moveDrag = (event) => { if (!drag || event.pointerId !== drag.pointerId) return; const seal = currentSeals()[drag.index]; if (!seal) return; const p = point(event); seal.position = `${Math.max(0, Math.min(1, p.x + drag.offsetX)).toFixed(4)},${Math.max(0, Math.min(1, p.y + drag.offsetY)).toFixed(4)}`; render(); };
+  const setFocusBox = (start, end) => {
+    if (!context) return;
+    const x = Math.min(start.x, end.x), y = Math.min(start.y, end.y);
+    context.node.cropFocus = { x: Number(x.toFixed(4)), y: Number(y.toFixed(4)), width: Number(Math.abs(end.x - start.x).toFixed(4)), height: Number(Math.abs(end.y - start.y).toFixed(4)) };
+    render();
+  };
 
   if ($('#image-lightbox-editor')) $('#image-lightbox-editor').hidden = !editable;
   $('#content')?.addEventListener('click', (event) => {
@@ -108,7 +125,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     let node = entry && (Array.isArray(entry.img) ? entry.img[imageIndex] : entry.img);
     if (node && typeof node !== 'object' && entry) { node = { src: node }; if (Array.isArray(entry.img)) entry.img[imageIndex] = node; else entry.img = node; }
     context = editable && entry && node && typeof node === 'object' ? { path, node, entryIndex, imageIndex } : null; if (context && !Array.isArray(node.seals)) node.seals = [];
-    selectedIndex = null; lightbox.classList.toggle('is-editable', Boolean(context)); render();
+    selectedIndex = null; focusMode = false; lightbox.classList.toggle('is-editable', Boolean(context)); render();
     image.onerror = () => { const fallback = link.dataset.imageFallback; if (fallback && image.src !== fallback) image.src = fallback; };
     image.src = link.querySelector('img')?.currentSrc || link.dataset.imageSrc; image.alt = link.querySelector('img')?.alt || ''; image.onload = () => { updateGeometry(); updatePreview(); };
     if (typeof lightbox.showModal === 'function') {
@@ -119,11 +136,16 @@ export function setupImageLightbox({ state, repository, rerender }) {
     updateGeometry();
   });
   window.addEventListener('resize', () => { updateGeometry(); updatePreview(); }, { passive: true });
+  focusButton?.addEventListener('click', () => { focusMode = !focusMode; selectedIndex = null; render(); });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
   [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => $(selector)?.addEventListener('input', (event) => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) { seal[key] = Number(event.target.value); render(); } }));
   document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => input.addEventListener('change', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal && input.checked) seal.type = input.value; }));
   annotations.addEventListener('pointerdown', (event) => { const marker = event.target.closest('.seal-marker'); if (context && marker) startDrag(event, Number(marker.dataset.sealIndex), marker); }); annotations.addEventListener('pointermove', moveDrag); annotations.addEventListener('pointerup', () => { drag = null; }); annotations.addEventListener('pointercancel', () => { drag = null; });
+  annotations.addEventListener('pointerdown', (event) => { if (!context || !focusMode || event.target.closest('.seal-marker')) return; const p = point(event); focusDrag = { pointerId: event.pointerId, start: p }; annotations.setPointerCapture(event.pointerId); setFocusBox(p, p); event.preventDefault(); });
+  annotations.addEventListener('pointermove', (event) => { if (!focusDrag || event.pointerId !== focusDrag.pointerId) return; setFocusBox(focusDrag.start, point(event)); });
+  annotations.addEventListener('pointerup', async (event) => { if (!focusDrag || event.pointerId !== focusDrag.pointerId) return; setFocusBox(focusDrag.start, point(event)); focusDrag = null; focusMode = false; render(); await save(); });
+  annotations.addEventListener('pointercancel', () => { focusDrag = null; });
   preview?.addEventListener('pointerdown', (event) => { if (context && selectedIndex !== null && preview.classList.contains('is-seal-preview') && event.target.closest('.seal-crop')) startDrag(event, selectedIndex, preview); }); preview?.addEventListener('pointermove', moveDrag); preview?.addEventListener('pointerup', () => { drag = null; }); preview?.addEventListener('pointercancel', () => { drag = null; });
   stage.addEventListener('click', async (event) => { if (!context) return; const marker = event.target.closest?.('.seal-marker'); if (marker) { const seal = currentSeals()[Number(marker.dataset.sealIndex)]; if (seal) { const [x, y] = String(seal.position || '').split(',').map(Number); magnifierPoint = { x, y }; } magnifierDismissed = false; selectedIndex = Number(marker.dataset.sealIndex); render(); return; } const old = selectedIndex; selectedIndex = null; const rect = annotations.getBoundingClientRect(); if (event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom) { magnifierPoint = point(event); const box = lightbox.getBoundingClientRect(); if (preview) { preview.style.left = `${event.clientX - box.left}px`; preview.style.top = `${event.clientY - box.top}px`; } } else magnifierPoint = null; magnifierDismissed = true; render(); if (old !== null) await save(); });
   stage.addEventListener('pointermove', (event) => { if (selectedIndex !== null) return; const rect = annotations.getBoundingClientRect(); if (!rect.width || event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) { magnifierPoint = null; magnifierDismissed = false; updatePreview(); return; } magnifierPoint = point(event); magnifierDismissed = false; updatePreview(); const box = lightbox.getBoundingClientRect(); if (preview) { preview.style.left = `${event.clientX - box.left}px`; preview.style.top = `${event.clientY - box.top}px`; } });
@@ -160,5 +182,5 @@ export function setupImageLightbox({ state, repository, rerender }) {
   });
   lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
   lightbox.addEventListener('cancel', (event) => { event.preventDefault(); close(); });
-  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (preview) preview.hidden = true; context = null; selectedIndex = null; drag = null; magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
+  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (preview) preview.hidden = true; context = null; selectedIndex = null; drag = null; focusDrag = null; focusMode = false; magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable', 'is-focus-editing'); setStatus(''); });
 }

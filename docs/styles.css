@@ -265,15 +265,21 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .image-lightbox-stage { position: relative; width: 100%; height: 100%; min-height: 0; }
 .image-lightbox-stage > img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .image-lightbox-annotations { position: absolute; pointer-events: none; }
+.image-focus-box { position: absolute; box-sizing: border-box; border: 2px solid #ffd166; background: rgb(255 209 102 / .16); pointer-events: none; }
+.image-lightbox.is-focus-editing .image-lightbox-annotations { pointer-events: auto; cursor: crosshair; touch-action: none; }
+.image-lightbox.is-focus-editing .image-focus-box { background: rgb(255 209 102 / .08); }
 .image-lightbox-editor { position: absolute; z-index: 3; top: .65rem; left: 1rem; display: flex; flex-wrap: wrap; align-items: center; gap: .45rem .65rem; color: var(--muted); font-size: .76rem; }
 .image-lightbox-editor[hidden] { display: none; }
 .image-lightbox-editor button { padding: .3rem .55rem; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.image-lightbox-editor #image-lightbox-focus { display: inline-flex; align-items: center; gap: .35rem; }
+.image-lightbox-editor #image-lightbox-focus svg { width: .9rem; height: .9rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5; }
 .image-lightbox-editor label { display: inline-flex; align-items: center; gap: .3rem; padding: .25rem .4rem; background: var(--surface-raised); border: 1px solid var(--line); border-radius: 4px; }
 .image-lightbox-editor input[type="range"] { width: 5rem; }
 .image-lightbox-seal-type { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .3rem .55rem; margin: 0; padding: .2rem .4rem .3rem; background: var(--surface-raised); border: 1px solid var(--line); border-radius: 4px; }
 .image-lightbox-seal-type legend { padding: 0 .2rem; color: var(--faint); font-size: .68rem; }
 .image-lightbox-seal-type label { padding: 0; background: none; border: 0; }
 .image-lightbox-editor button:hover { border-color: var(--accent); color: var(--accent); }
+.image-lightbox-editor #image-lightbox-focus[aria-pressed="true"] { color: #fff; background: var(--accent); border-color: var(--accent); }
 .image-lightbox-save-status { color: var(--accent); }
 .image-lightbox-seal-preview { position: absolute; z-index: 2; right: 1rem; bottom: 1rem; display: block; pointer-events: none; }
 .image-lightbox-seal-preview[hidden] { display: none; }

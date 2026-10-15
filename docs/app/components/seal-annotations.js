@@ -16,9 +16,22 @@ export function setupSealAnnotations({ state, position = positionSealCrop } = {}
   state.sealMarkerCleanup = null;
   const annotatedImages = [...document.querySelectorAll('.annotated-image img')];
   const cropImages = [...document.querySelectorAll('.seal-crop img')];
-  if (!annotatedImages.length && !cropImages.length) return;
+  const focusedImages = [...document.querySelectorAll('img[data-focus-x]')];
+  if (!annotatedImages.length && !cropImages.length && !focusedImages.length) return;
   const cropReveals = new Map();
   const update = () => {
+    focusedImages.forEach((image) => {
+      if (!image.naturalWidth || !image.naturalHeight) return;
+      const box = image.getBoundingClientRect();
+      if (!box.width || !box.height || getComputedStyle(image).objectFit !== 'cover') return;
+      const scale = Math.max(box.width / image.naturalWidth, box.height / image.naturalHeight);
+      const renderedWidth = image.naturalWidth * scale, renderedHeight = image.naturalHeight * scale;
+      const focusX = Number(image.dataset.focusX) + Number(image.dataset.focusWidth) / 2;
+      const focusY = Number(image.dataset.focusY) + Number(image.dataset.focusHeight) / 2;
+      const positionX = renderedWidth > box.width ? (focusX * renderedWidth - box.width / 2) / (renderedWidth - box.width) : 0.5;
+      const positionY = renderedHeight > box.height ? (focusY * renderedHeight - box.height / 2) / (renderedHeight - box.height) : 0.5;
+      image.style.objectPosition = `${Math.max(0, Math.min(1, positionX)) * 100}% ${Math.max(0, Math.min(1, positionY)) * 100}%`;
+    });
     annotatedImages.forEach((image) => {
       const height = image.clientHeight;
       image.closest('.annotated-image')?.querySelectorAll('.seal-marker').forEach((marker) => {
@@ -39,6 +52,7 @@ export function setupSealAnnotations({ state, position = positionSealCrop } = {}
     });
   };
   annotatedImages.forEach((image) => image.addEventListener('load', update));
+  focusedImages.forEach((image) => image.addEventListener('load', update));
   cropImages.forEach((image) => {
     const reveal = () => { update(); image.closest('.seal-crop')?.classList.remove('is-loading'); };
     cropReveals.set(image, reveal);
@@ -48,6 +62,7 @@ export function setupSealAnnotations({ state, position = positionSealCrop } = {}
   window.addEventListener('resize', update, { passive: true });
   state.sealMarkerCleanup = () => {
     annotatedImages.forEach((image) => image.removeEventListener('load', update));
+    focusedImages.forEach((image) => image.removeEventListener('load', update));
     cropImages.forEach((image) => image.removeEventListener('load', cropReveals.get(image)));
     window.removeEventListener('resize', update);
   };
