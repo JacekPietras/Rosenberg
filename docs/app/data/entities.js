@@ -8,7 +8,7 @@ export function parsePlaces(json) {
 }
 
 export function buildPlacePattern(places) {
-  const names = [...new Set(places.map((place) => place.name).filter(Boolean))]
+  const names = [...new Set(places.flatMap((place) => Array.isArray(place.variations) ? place.variations : [place.name]).filter((name) => typeof name === 'string' && name.trim()))]
     .sort((left, right) => right.length - left.length)
     .map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
   return names.length ? new RegExp(`(?<![\\p{L}\\p{N}])(?:${names.join('|')})(?![\\p{L}\\p{N}])`, 'giu') : null;

@@ -10,7 +10,8 @@ export function createMarkupRenderer({ state }) {
       return person ? token(`<a class="person-link" href="?person=${encodeURIComponent(person.name)}">${match}</a>`) : match;
     });
     if (state.placePattern) text = text.replace(state.placePattern, (match) => {
-      const place = state.places.find((item) => item.name.toLocaleLowerCase() === match.toLocaleLowerCase());
+      const normalizedMatch = match.toLocaleLowerCase();
+      const place = state.places.find((item) => item.name.toLocaleLowerCase() === normalizedMatch || item.variations?.some((name) => name.toLocaleLowerCase() === normalizedMatch));
       return place ? token(`<a class="place-link" href="?place=${encodeURIComponent(place.name)}">${match}</a>`) : match;
     });
     return text.replace(/\u0000(\d+)\u0000/g, (match, index) => tokens[Number(index)] ?? match);

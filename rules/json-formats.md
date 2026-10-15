@@ -111,8 +111,8 @@ hosted in Drive.
 ## Effigies JSON
 
 `data/images/effigies.json` is an array of image or model records. Sketchfab
-records use `title`, `id`, `url`, and an optional `year`. Drive collection
-records use `type: "link"`, `title`, `url`, and an optional `preview` image URL.
+records use `title`, `id`, `url`, and optional `year` and `preview` image URL. Drive
+collection records use `type: "link"`, `title`, `url`, and an optional `preview` image URL.
 An optional `placeId` refers to the matching place ID in `data/places.json`.
 
 ## People JSON
@@ -167,9 +167,8 @@ when uncertain.
 ]
 ```
 
-The viewer uses only the first variation as the canonical name for English
-highlighting; historical variants remain available as data but are not
-expanded at runtime.
+The viewer uses the first variation as the canonical name for display. All
+listed variations are used when finding and linking related place content.
 
 ## Editing requirements
 
