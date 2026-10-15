@@ -207,6 +207,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .diagram svg { display: block; max-width: none; height: auto; margin: 0 auto; }
 .people-tree { margin: 1.25rem 0; padding: 1rem; overflow-x: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; }
 .people-tree svg { display: block; min-width: 100%; height: auto; }
+.people-tree-person-link { cursor: pointer; }
+.people-tree-person-link:focus-visible .people-tree-node rect { stroke-width: 3; }
 .people-tree-node rect { fill: var(--surface-raised); stroke: var(--accent); stroke-width: 1.5; }
 .people-tree-node text { fill: var(--ink); font-size: 14px; }
 .people-tree-node .people-tree-name { font-size: 16px; font-weight: 650; }
