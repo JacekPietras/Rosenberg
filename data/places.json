@@ -9,6 +9,7 @@
       "Ussekein",
       "Vssenkeym"
     ],
+    "category": "village",
     "lat": 49.6793443,
     "lon": 9.5735718
   },
@@ -68,6 +69,7 @@
     "variations": [
       "Jagstberg"
     ],
+    "category": "castle",
     "lat": 49.3366134,
     "lon": 9.7947915
   },
@@ -89,11 +91,13 @@
       "Erlekeim",
       "Erleckein"
     ],
+    "category": "village",
     "lat": 49.018333,
     "lon": 9.099444
   },
   {
     "variations": ["Schüpf"],
+    "category": "village",
     "lat": 49.5224165,
     "lon": 9.6774758
   },
