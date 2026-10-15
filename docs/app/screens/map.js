@@ -11,11 +11,7 @@ const HRR_MAPS = [
   { id: '1400', label: '1400', image: 'assets/Germany_1400_map.jpg', width: HRR_MAP_NATIVE_WIDTH, height: HRR_MAP_NATIVE_HEIGHT, credit: 'Historical base map: <a href="https://commons.wikimedia.org/wiki/File:HRR_1400.png" target="_blank" rel="noreferrer">Das Heilige Römische Reich um 1400</a> by Ziegelbrenner, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons. Place positions are approximate.' },
 ];
 
-const PLACE_MARKER_ICONS = {
-  castle: '<path d="M4 27V11h4V7h4v4h4V7h4v4h4v16H4Zm4-4h3v-5H8v5Zm5 0h3v-5h-3v5Zm5 0h3v-5h-3v5ZM3 29h22v2H3v-2Z"/><path d="M13 2h2v5h-2V2Zm-3 2h8v2h-8V4Z"/>',
-  church: '<path d="M13 2h2v5h-2V2Zm-3 2h8v2h-8V4Zm-2 7h12l-2 3v15H8V14l-2-3h2Zm2 5v8h3v-8h-3Zm6 0v8h2v-8h-2Z"/><path d="M4 29h16v2H4v-2Z"/>',
-  city: '<path d="M4 6h7v5h9v20H4V6Zm3 3v4h2V9H7Zm0 8v3h2v-3H7Zm0 7v3h2v-3H7Zm5-10v3h5v-3h-5Zm0 7v3h5v-3h-5Zm0 7v3h5v-3h-5Z"/>',
-};
+const PLACE_ICONS = new Set(['castle', 'church', 'city', 'village']);
 
 export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibrationCities }) {
   let mapMode = '1378';
@@ -52,9 +48,10 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
 
   function markerOptions(place) {
     const category = typeof place.category === 'string' ? place.category.toLocaleLowerCase() : '';
-    const glyph = PLACE_MARKER_ICONS[category];
-    if (!glyph) return {};
-    return { icon: L.divIcon({ className: `place-marker-icon place-marker-icon-${category}`, html: `<svg viewBox="0 0 28 34" aria-hidden="true"><path class="place-marker-shadow" d="M14 33C14 33 3 21 3 13a11 11 0 1 1 22 0c0 8-11 20-11 20Z"/><g class="place-marker-glyph">${glyph}</g></svg>`, iconSize: [28, 34], iconAnchor: [14, 33], popupAnchor: [0, -33] }) };
+    if (!PLACE_ICONS.has(category)) return {};
+    const iconUrl = new URL(`../map/icon/${category}.svg?v=3`, import.meta.url).href;
+    const html = `<img class="map-place-icon-image" src="${iconUrl}" alt="">`;
+    return { icon: L.divIcon({ className: `map-place-icon map-place-icon-${category}`, html, iconSize: [40, 40], iconAnchor: [20, 20], popupAnchor: [0, -20] }) };
   }
 
   function renderLayer(container, places, calibrationCities, previousView) {

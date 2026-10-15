@@ -11,7 +11,7 @@ import { createEntityScreens } from './screens/entities.js';
 import { createTabs } from './components/tabs.js';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js';
-import { createMapScreen } from './screens/map.js';
+import { createMapScreen } from './screens/map.js?v=67';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=62';
 import { createMarkupRenderer } from './rendering/markup.js';
 import { createImageRenderer } from './rendering/images.js';
@@ -451,22 +451,18 @@ function hrrLatLonCornersToView(corners, mode, calibrationCities) {
 // flips on — Leaflet's Path-based circle markers can't be made draggable.
 const HRR_CALIBRATION_POINT_ICON = L.divIcon({ className: 'calibration-point-icon', iconSize: [10, 10] });
 
-const PLACE_MARKER_ICONS = {
-  castle: '<path d="M4 27V11h4V7h4v4h4V7h4v4h4v16H4Zm4-4h3v-5H8v5Zm5 0h3v-5h-3v5Zm5 0h3v-5h-3v5ZM3 29h22v2H3v-2Z"/><path d="M13 2h2v5h-2V2Zm-3 2h8v2h-8V4Z"/>',
-  church: '<path d="M13 2h2v5h-2V2Zm-3 2h8v2h-8V4Zm-2 7h12l-2 3v15H8V14l-2-3h2Zm2 5v8h3v-8h-3Zm6 0v8h2v-8h-2Z"/><path d="M4 29h16v2H4v-2Z"/>',
-  city: '<path d="M4 6h7v5h9v20H4V6Zm3 3v4h2V9H7Zm0 8v3h2v-3H7Zm0 7v3h2v-3H7Zm5-10v3h5v-3h-5Zm0 7v3h5v-3h-5Zm0 7v3h5v-3h-5Z"/>'
-};
+const PLACE_ICONS = new Set(['castle', 'church', 'city', 'village']);
 
 function placeMarkerIcon(place) {
   const category = typeof place.category === 'string' ? place.category.toLocaleLowerCase() : '';
-  const path = PLACE_MARKER_ICONS[category];
-  if (!path) return undefined;
+  if (!PLACE_ICONS.has(category)) return undefined;
+  const iconUrl = new URL(`./map/icon/${category}.svg?v=3`, import.meta.url).href;
   return L.divIcon({
-    className: `place-marker-icon place-marker-icon-${category}`,
-    html: `<svg viewBox="0 0 28 34" aria-hidden="true"><path class="place-marker-shadow" d="M14 33C14 33 3 21 3 13a11 11 0 1 1 22 0c0 8-11 20-11 20Z"/><g class="place-marker-glyph">${path}</g></svg>`,
-    iconSize: [28, 34],
-    iconAnchor: [14, 33],
-    popupAnchor: [0, -33],
+    className: `map-place-icon map-place-icon-${category}`,
+    html: `<img class="map-place-icon-image" src="${iconUrl}" alt="">`,
+    iconSize: [40, 40],
+    iconAnchor: [20, 20],
+    popupAnchor: [0, -20],
   });
 }
 
