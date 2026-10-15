@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2675 1137" width="100%" height="100%">
+  <g fill="currentColor">
+    <!-- Left House: Continuous Roof, Chimney & Bargeboard -->
+    <path d="M 0 836 
+             H 551 
+             L 925 177 
+             L 1212 836 
+             H 1278 
+             L 958 103 
+             L 646 160 
+             V 68 
+             H 500 
+             V 187 
+             L 288 227 
+             Z" />
+
+    <!-- Left House: Facade & Window Cutout -->
+    <path fill-rule="evenodd" d="M 919 303 
+             L 582 894 
+             H 79 
+             V 1137 
+             H 824 
+             V 914 
+             H 967 
+             V 1137 
+             H 1151 
+             V 837 
+             Z 
+             M 269 965 
+             H 367 
+             V 1065 
+             H 269 
+             Z" />
+
+    <!-- Distant Center Chimney & Ridge -->
+    <path d="M 1161 198 
+             V 330 
+             H 1118 
+             L 1213 548 
+             L 1294 331 
+             H 1257 
+             V 198 
+             Z" />
+
+    <!-- Center House: Roof with Corrected Tall Chimney -->
+    <path d="M 1946 0 
+             H 1850 
+             V 122 
+             L 1455 33 
+             L 1244 618 
+             L 1276 693 
+             L 1455 200 
+             L 1678 727 
+             H 1698 
+             L 1917 363 
+             H 2119 
+             L 2021 161 
+             L 1946 142 
+             Z" />
+
+    <!-- Center House: Triangular Gable Wall -->
+    <polygon points="1459,352 1323,727 1617,727" />
+
+    <!-- Spacer Pier -->
+    <rect x="1207" y="911" width="89" height="226" />
+
+    <!-- Center House: Lower Wall with Window Cutout -->
+    <path fill-rule="evenodd" d="M 1352 784 
+             V 1137 
+             H 1721 
+             V 958 
+             L 1582 913 
+             L 1661 783 
+             Z 
+             M 1436 879 
+             H 1532 
+             V 980 
+             H 1436 
+             Z" />
+
+    <!-- Right House: Roof, Chimney & Bargeboard -->
+    <path d="M 2675 864 
+             L 2447 451 
+             L 2339 443 
+             V 324 
+             H 2214 
+             V 437 
+             L 1946 422 
+             L 1667 883 
+             L 1721 897 
+             L 1967 494 
+             L 2203 865 
+             Z" />
+
+    <!-- Right House: Facade & Doorway Notch -->
+    <path d="M 1968 599 
+             L 2173 921 
+             H 2586 
+             V 1137 
+             H 2023 
+             V 946 
+             H 1917 
+             V 1137 
+             H 1777 
+             V 912 
+             Z" />
+  </g>
+</svg>

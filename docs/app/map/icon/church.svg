@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 787 786" width="100%" height="100%">
+  <g fill="currentColor">
+    <!-- Main Nave with Gothic Windows -->
+    <path fill-rule="evenodd" d="M 0 786
+             H 490
+             V 395
+             H 106
+             L 0 536
+             Z
+             M 118 724
+             V 642
+             A 78 78 0 0 1 157 576
+             A 78 78 0 0 1 196 642
+             V 724
+             Z
+             M 294 724
+             V 642
+             A 78 78 0 0 1 333 576
+             A 78 78 0 0 1 372 642
+             V 724
+             Z" />
+             
+    <!-- Steeple and Cross with Gothic Window -->
+    <path fill-rule="evenodd" d="M 525 786
+             V 346
+             H 492
+             L 627 125
+             V 64
+             H 589
+             V 38
+             H 627
+             V 0
+             H 652
+             V 38
+             H 691
+             V 64
+             H 652
+             V 125
+             L 787 345
+             H 754
+             V 786
+             Z
+             M 603 527
+             V 446
+             A 74 74 0 0 1 640 376
+             A 74 74 0 0 1 677 446
+             V 527
+             Z" />
+  </g>
+</svg>

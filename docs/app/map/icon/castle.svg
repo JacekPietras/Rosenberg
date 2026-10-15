@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 1172" width="100%" height="100%">
+  <g fill="currentColor">
+    <!-- Parapet -->
+    <path d="M 0 190 H 526 V 0 H 443 V 66 H 378 V 0 H 295 V 66 H 231 V 0 H 148 V 66 H 83 V 0 H 0 Z" />
+
+    <!-- Tower Shaft with Windows -->
+    <path fill-rule="evenodd" d="M 48 214 H 478 V 1172 H 48 Z M 222 343 A 41 41 0 0 1 304 343 V 438 H 222 Z M 222 733 A 41 41 0 0 1 304 733 V 828 H 222 Z" />
+
+    <!-- Right Rampart & Gateway -->
+    <path d="M 502 625 H 644 V 687 H 755 V 625 H 897 V 687 H 1008 V 625 H 1150 V 1172 H 917 V 1005 A 91 91 0 0 0 735 1005 V 1172 H 502 Z" />
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 709" width="100%" height="100%">
+  <g fill="currentColor">
+    <!-- Leftmost Tower -->
+    <path d="M 0 228 H 147 V 285 H 0 Z M 32 228 V 253 H 56 V 228 Z M 89 228 V 253 H 114 V 228 Z" />
+    <path fill-rule="evenodd" d="M 11 298 H 136 V 709 H 11 Z M 53 388 V 368 A 20 20 0 0 1 93 368 V 388 Z" />
+    
+    <!-- Wall 1 -->
+    <rect x="149" y="445" width="111" height="257" />
+    
+    <!-- Second Tower -->
+    <path d="M 262 313 H 402 V 366 H 262 Z M 293 313 V 336 H 316 V 313 Z M 348 313 V 336 H 371 V 313 Z" />
+    <path fill-rule="evenodd" d="M 273 379 H 391 V 709 H 273 Z M 315 459 V 420 A 18 18 0 0 1 351 420 V 459 Z" />
+    
+    <!-- Central Wall (Beneath Church) -->
+    <rect x="404" y="445" width="262" height="257" />
+    
+    <!-- Central Church & Cross -->
+    <path fill-rule="evenodd" d="M 463 304 H 606 V 365 L 643 391 V 434 H 426 V 391 L 463 365 Z M 512 400 V 348 A 23 23 0 0 1 558 348 V 400 Z" />
+    <path d="M 524 0 H 546 V 35 H 580 V 57 H 546 V 118 L 617 292 H 452 L 524 118 V 57 H 490 V 35 H 524 Z" />
+    
+    <!-- Third Tower (Right of Church) -->
+    <path d="M 667 287 H 865 V 353 H 667 Z M 711 287 V 315 H 743 V 287 Z M 789 287 V 315 H 821 V 287 Z" />
+    <path fill-rule="evenodd" d="M 678 367 H 854 V 709 H 678 Z M 724 709 V 624 A 42 42 0 0 1 808 624 V 709 Z" />
+    
+    <!-- Wall 3 with Merlons -->
+    <rect x="866" y="445" width="182" height="257" />
+    <rect x="926" y="400" width="45" height="35" />
+    <rect x="989" y="400" width="46" height="35" />
+    
+    <!-- Rightmost Tower -->
+    <path d="M 1049 329 H 1200 L 1124.5 230 Z" />
+    <path fill-rule="evenodd" d="M 1060 343 H 1188 V 709 H 1060 Z M 1103 435 V 391 A 22 22 0 0 1 1147 391 V 435 Z" />
+  </g>
+</svg>
