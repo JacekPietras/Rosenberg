@@ -113,6 +113,7 @@ hosted in Drive.
 `data/images/effigies.json` is an array of image or model records. Sketchfab
 records use `title`, `id`, `url`, and an optional `year`. Drive collection
 records use `type: "link"`, `title`, `url`, and an optional `preview` image URL.
+An optional `placeId` refers to the matching place ID in `data/places.json`.
 
 ## People JSON
 
@@ -158,6 +159,7 @@ when uncertain.
 ```json
 [
   {
+    "id": "uissigheim",
     "variations": ["Uissigheim", "Ussigheim", "Ußinkeim"],
     "lat": 49.679167,
     "lon": 9.5725

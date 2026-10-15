@@ -11,7 +11,8 @@
     ],
     "category": "village",
     "lat": 49.6793443,
-    "lon": 9.5735718
+    "lon": 9.5735718,
+    "id": "uissigheim"
   },
   {
     "variations": [
@@ -24,7 +25,8 @@
     ],
     "category": "city",
     "lat": 49.5704139,
-    "lon": 9.7028414
+    "lon": 9.7028414,
+    "id": "lauda"
   },
   {
     "variations": [
@@ -34,7 +36,8 @@
     ],
     "category": "church",
     "lat": 49.4848212,
-    "lon": 9.6315974
+    "lon": 9.6315974,
+    "id": "wolchingen"
   },
   {
     "variations": [
@@ -44,7 +47,8 @@
     ],
     "category": "castle",
     "lat": 49.4792833,
-    "lon": 9.6415872
+    "lon": 9.6415872,
+    "id": "boxberg"
   },
   {
     "variations": [
@@ -63,7 +67,8 @@
     ],
     "category": "castle",
     "lat": 49.4562999,
-    "lon": 9.4731434
+    "lon": 9.4731434,
+    "id": "rosenberg"
   },
   {
     "variations": [
@@ -71,7 +76,8 @@
     ],
     "category": "castle",
     "lat": 49.3366134,
-    "lon": 9.7947915
+    "lon": 9.7947915,
+    "id": "jagstberg"
   },
   {
     "variations": [
@@ -80,7 +86,8 @@
     ],
     "category": "church",
     "lat": 49.4877312,
-    "lon": 9.5978372
+    "lon": 9.5978372,
+    "id": "angelturn"
   },
   {
     "variations": [
@@ -93,7 +100,8 @@
     ],
     "category": "village",
     "lat": 49.018333,
-    "lon": 9.099444
+    "lon": 9.099444,
+    "id": "erligheim"
   },
   {
     "variations": [
@@ -101,7 +109,8 @@
     ],
     "category": "village",
     "lat": 49.5224165,
-    "lon": 9.6774758
+    "lon": 9.6774758,
+    "id": "schuepf-village"
   },
   {
     "variations": [
@@ -111,7 +120,8 @@
     ],
     "category": "castle",
     "lat": 49.522781,
-    "lon": 9.6725399
+    "lon": 9.6725399,
+    "id": "schuepf-old-castle"
   },
   {
     "variations": [
@@ -121,7 +131,8 @@
     ],
     "category": "castle",
     "lat": 49.5147596,
-    "lon": 9.6885356
+    "lon": 9.6885356,
+    "id": "unterschuepf-water-castle"
   },
   {
     "variations": [
@@ -131,6 +142,28 @@
     ],
     "category": "castle",
     "lat": 49.5218062,
-    "lon": 9.6772055
+    "lon": 9.6772055,
+    "id": "oberschuepf-castle"
+  },
+  {
+    "id": "wurzburg",
+    "variations": [
+      "Würzburg",
+      "Wurzburg"
+    ],
+    "category": "city",
+    "lat": 49.79441,
+    "lon": 9.92937
+  },
+  {
+    "id": "bronnbach",
+    "variations": [
+      "Bronnbach",
+      "Bronnbach Abbey",
+      "Kloster Bronnbach"
+    ],
+    "lat": 49.7125,
+    "lon": 9.5472222,
+    "category": "church"
   }
 ]

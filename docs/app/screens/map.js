@@ -55,6 +55,13 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
     return { icon: L.divIcon({ className: `map-place-icon map-place-icon-${category}`, html, iconSize: [size, size + 12], iconAnchor: [size / 2, size], popupAnchor: [0, -size] }) };
   }
 
+  function linkPlaceOnClick(marker, place) {
+    marker.on('click', () => {
+      window.location.href = `?place=${encodeURIComponent(place.name)}`;
+    });
+    return marker;
+  }
+
   function renderLayer(container, places, calibrationCities, previousView) {
     getMap()?.remove();
     setMap(null);
@@ -69,7 +76,7 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
       const warp = hrrBuildWarp(calibrationCities, map);
       places.forEach((place) => {
         const point = warp.pixelForLatLon(place.lat, place.lon);
-        L.marker([map.height - point.y, point.x], markerOptions(place)).addTo(leafletMap).bindPopup(`<a class="place-link" href="?place=${encodeURIComponent(place.name)}">${escapeHtml(place.name)}</a>`);
+        linkPlaceOnClick(L.marker([map.height - point.y, point.x], markerOptions(place)).addTo(leafletMap), place);
       });
       if (calibrationEditable) {
         const { x: keyX, y: keyY } = hrrCalibrationKeys(map);
@@ -91,7 +98,7 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
     const leafletMap = L.map(container, { scrollWheelZoom: true });
     setMap(leafletMap);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors', maxZoom: 18 }).addTo(leafletMap);
-    const markers = places.map((place) => L.marker([place.lat, place.lon], markerOptions(place)).addTo(leafletMap).bindPopup(`<a class="place-link" href="?place=${encodeURIComponent(place.name)}">${escapeHtml(place.name)}</a>`));
+    const markers = places.map((place) => linkPlaceOnClick(L.marker([place.lat, place.lon], markerOptions(place)).addTo(leafletMap), place));
     leafletMap.fitBounds(carriedCorners ? latLonCornersToView(carriedCorners, 'live', calibrationCities) : L.featureGroup(markers).getBounds(), carriedCorners ? undefined : { padding: [40, 40] });
   }
 
