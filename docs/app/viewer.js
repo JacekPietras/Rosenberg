@@ -11,7 +11,7 @@ import { createEntityScreens } from './screens/entities.js';
 import { createTabs } from './components/tabs.js';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js';
-import { createMapScreen } from './screens/map.js?v=68';
+import { createMapScreen } from './screens/map.js?v=71';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=62';
 import { createMarkupRenderer } from './rendering/markup.js';
 import { createImageRenderer } from './rendering/images.js';
@@ -456,13 +456,14 @@ const PLACE_ICONS = new Set(['castle', 'church', 'city', 'village']);
 function placeMarkerIcon(place) {
   const category = typeof place.category === 'string' ? place.category.toLocaleLowerCase() : '';
   if (!PLACE_ICONS.has(category)) return undefined;
-  const iconUrl = new URL(`./map/icon/${category}.svg?v=4`, import.meta.url).href;
+  const iconUrl = new URL(`./map/icon/${category}.svg?v=7`, import.meta.url).href;
+  const size = ['city', 'village'].includes(category) ? 60 : 30;
   return L.divIcon({
     className: `map-place-icon map-place-icon-${category}`,
     html: `<img class="map-place-icon-image" src="${iconUrl}" alt="">`,
-    iconSize: [40, 40],
-    iconAnchor: [20, 20],
-    popupAnchor: [0, -20],
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size],
+    popupAnchor: [0, -size],
   });
 }
 

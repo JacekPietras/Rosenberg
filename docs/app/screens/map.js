@@ -49,9 +49,10 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
   function markerOptions(place) {
     const category = typeof place.category === 'string' ? place.category.toLocaleLowerCase() : '';
     if (!PLACE_ICONS.has(category)) return {};
-    const iconUrl = new URL(`../map/icon/${category}.svg?v=4`, import.meta.url).href;
+    const iconUrl = new URL(`../map/icon/${category}.svg?v=7`, import.meta.url).href;
     const html = `<img class="map-place-icon-image" src="${iconUrl}" alt="">`;
-    return { icon: L.divIcon({ className: `map-place-icon map-place-icon-${category}`, html, iconSize: [40, 40], iconAnchor: [20, 20], popupAnchor: [0, -20] }) };
+    const size = ['city', 'village'].includes(category) ? 60 : 30;
+    return { icon: L.divIcon({ className: `map-place-icon map-place-icon-${category}`, html, iconSize: [size, size], iconAnchor: [size / 2, size], popupAnchor: [0, -size] }) };
   }
 
   function renderLayer(container, places, calibrationCities, previousView) {
