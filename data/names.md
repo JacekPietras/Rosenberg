@@ -9,7 +9,6 @@ Mönch, Münch, Munch // it derives from "Monk"
 Arnold, Arnolt
 Elisabeth, Elspeth, Elsbet, Else, Els, Eilse, Elsbeth
 Senant, Synant
-Uissigheim, Ussinkeim, Ußinkeim, Uzzinchein, Ussekein, Vssenkeym
 Niedeck, Nydeck
 Hans, Johann, Hanemann, Hanse, Johannes
 Heinrich, Heintze, Henrich, Heinricus
@@ -23,6 +22,5 @@ Diether, Dieter
 Wiprecht, Wibrecht
 Raban, Rabanus
 Wenceslaus, Wenzel
-Rosenberg, Rosinberg, Rosemberg, Rossenberg, Roßenberg, Rosenberch, Rosemberch, Rosenburgk, Rossberg, Rosenperg, Rosenbergk
 Kraft, Krafto
 Erligheim, Erleheim
