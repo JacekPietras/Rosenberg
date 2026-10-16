@@ -22,15 +22,32 @@ export function setupSealAnnotations({ state, position = positionSealCrop } = {}
   const update = () => {
     focusedImages.forEach((image) => {
       if (!image.naturalWidth || !image.naturalHeight) return;
-      const box = image.getBoundingClientRect();
-      if (!box.width || !box.height || getComputedStyle(image).objectFit !== 'cover') return;
-      const scale = Math.max(box.width / image.naturalWidth, box.height / image.naturalHeight);
+      if (getComputedStyle(image).objectFit !== 'cover') return;
+      const viewport = image.closest('.image-link');
+      if (!viewport) return;
+      const box = viewport.getBoundingClientRect();
+      const boxWidth = box.width, boxHeight = box.height;
+      if (!boxWidth || !boxHeight) return;
+      const focusWidth = Number(image.dataset.focusWidth), focusHeight = Number(image.dataset.focusHeight);
+      if (!(focusWidth > 0) || !(focusHeight > 0)) return;
+      const scale = Math.min(boxWidth / (focusWidth * image.naturalWidth), boxHeight / (focusHeight * image.naturalHeight));
       const renderedWidth = image.naturalWidth * scale, renderedHeight = image.naturalHeight * scale;
-      const focusX = Number(image.dataset.focusX) + Number(image.dataset.focusWidth) / 2;
-      const focusY = Number(image.dataset.focusY) + Number(image.dataset.focusHeight) / 2;
-      const positionX = renderedWidth > box.width ? (focusX * renderedWidth - box.width / 2) / (renderedWidth - box.width) : 0.5;
-      const positionY = renderedHeight > box.height ? (focusY * renderedHeight - box.height / 2) / (renderedHeight - box.height) : 0.5;
-      image.style.objectPosition = `${Math.max(0, Math.min(1, positionX)) * 100}% ${Math.max(0, Math.min(1, positionY)) * 100}%`;
+      const focusX = Number(image.dataset.focusX) + focusWidth / 2;
+      const focusY = Number(image.dataset.focusY) + focusHeight / 2;
+      viewport.style.position = 'relative';
+      viewport.style.overflow = 'hidden';
+      image.style.position = 'absolute';
+      image.style.left = `${boxWidth / 2 - focusX * renderedWidth}px`;
+      image.style.top = `${boxHeight / 2 - focusY * renderedHeight}px`;
+      image.style.width = `${renderedWidth}px`;
+      image.style.height = `${renderedHeight}px`;
+      image.style.maxWidth = 'none';
+      image.style.maxHeight = 'none';
+      image.style.margin = '0';
+      image.style.aspectRatio = 'auto';
+      image.style.objectFit = 'initial';
+      image.style.objectPosition = 'initial';
+      image.style.transform = 'none';
     });
     annotatedImages.forEach((image) => {
       const height = image.clientHeight;

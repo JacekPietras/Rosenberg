@@ -10,7 +10,7 @@ import { createDataLoader } from './data/loader.js';
 import { createEntityScreens } from './screens/entities.js?v=79';
 import { createTabs } from './components/tabs.js';
 import { setupControls } from './components/controls.js?v=61';
-import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=1';
+import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=4';
 import { createMapScreen } from './screens/map.js?v=79';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=77';
 import { createMarkupRenderer } from './rendering/markup.js?v=79';
