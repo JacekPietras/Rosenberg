@@ -89,11 +89,12 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const selected = selectedIndex === null ? null : currentSeals()[selectedIndex];
     const controls = $('#image-lightbox-seal-selected-controls'); const remove = $('#image-lightbox-remove-seal');
     if (controls) controls.hidden = !selected; if (remove) remove.hidden = !selected;
+    const removeImage = $('#image-lightbox-remove-image'); if (removeImage) removeImage.hidden = Boolean(context?.focusProperty);
     [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => { const input = $(selector); if (input) { input.disabled = !selected; input.value = String(Number(selected?.[key]) || 0); } });
     document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => { input.disabled = !selected; input.checked = Boolean(selected && SEAL_TYPES.has(selected.type) && selected.type === input.value); });
   };
   const updateFocusOverlay = () => {
-    const focus = context?.node?.cropFocus || focusSelection;
+    const focus = (context?.focusProperty ? context.entry?.[context.focusProperty] : context?.node?.cropFocus) || focusSelection;
     const valid = focus && ['x', 'y', 'width', 'height'].every((key) => Number.isFinite(Number(focus[key])));
     focusOverlay?.classList.toggle('has-focus', Boolean(valid));
     focusOverlay?.classList.toggle('is-visible', Boolean(focusMode || valid));
@@ -133,7 +134,8 @@ export function setupImageLightbox({ state, repository, rerender }) {
     if (width < minimum) { width = minimum; x = Math.max(0, Math.min(1 - minimum, (start.x + end.x) / 2 - minimum / 2)); }
     if (height < minimum) { height = minimum; y = Math.max(0, Math.min(1 - minimum, (start.y + end.y) / 2 - minimum / 2)); }
     focusSelection = { x: Number(x.toFixed(4)), y: Number(y.toFixed(4)), width: Number(width.toFixed(4)), height: Number(height.toFixed(4)) };
-    if (context) context.node.cropFocus = focusSelection;
+    if (context?.focusProperty) context.entry[context.focusProperty] = focusSelection;
+    else if (context?.node) context.node.cropFocus = focusSelection;
     updateFocusOverlay();
   };
   const placeDefaultFocus = (point) => {
@@ -141,7 +143,8 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const x = Math.max(0, Math.min(1 - size, point.x - size / 2));
     const y = Math.max(0, Math.min(1 - size, point.y - size / 2));
     focusSelection = { x: Number(x.toFixed(4)), y: Number(y.toFixed(4)), width: size, height: size };
-    if (context) context.node.cropFocus = focusSelection;
+    if (context?.focusProperty) context.entry[context.focusProperty] = focusSelection;
+    else if (context?.node) context.node.cropFocus = focusSelection;
     updateFocusOverlay();
   };
 
@@ -150,9 +153,14 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const link = event.target?.closest?.('.image-link'); if (!link) return; event.preventDefault();
     const path = link.dataset.documentPath; const entryIndex = Number(link.dataset.entryIndex); const imageIndex = Number(link.dataset.imageIndex); const entry = path ? state.documents.get(path)?.entries?.[entryIndex] : null;
     let node = entry && (Array.isArray(entry.img) ? entry.img[imageIndex] : entry.img);
+    let focusProperty = null;
+    if (entry && !node && entry.url) focusProperty = 'focus';
     if (node && typeof node !== 'object' && entry) { node = { src: node }; if (Array.isArray(entry.img)) entry.img[imageIndex] = node; else entry.img = node; }
-    context = editable && entry && node && typeof node === 'object' ? { path, node, entryIndex, imageIndex } : null; if (context && !Array.isArray(node.seals)) node.seals = [];
-    selectedIndex = null; focusMode = false; focusSelection = context?.node?.cropFocus || null; lightbox.classList.toggle('is-editable', Boolean(context)); render();
+    context = editable && entry && focusProperty
+      ? { path, entry, entryIndex, imageIndex, focusProperty }
+      : editable && entry && node && typeof node === 'object' ? { path, node, entry, entryIndex, imageIndex } : null;
+    if (context?.node && !Array.isArray(context.node.seals)) context.node.seals = [];
+    selectedIndex = null; focusMode = false; focusSelection = context?.focusProperty ? context.entry.focus : context?.node?.cropFocus || null; lightbox.classList.toggle('is-editable', Boolean(context)); render();
     image.onerror = () => { const fallback = link.dataset.imageFallback; if (fallback && image.src !== fallback) image.src = fallback; };
     image.src = link.querySelector('img')?.currentSrc || link.dataset.imageSrc; image.alt = link.querySelector('img')?.alt || ''; image.onload = () => { updateGeometry(); updatePreview(); };
     if (typeof lightbox.showModal === 'function') {
