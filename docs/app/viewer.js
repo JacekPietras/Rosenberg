@@ -1,12 +1,12 @@
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree } from './screens/tree.js?v=80';
-import { renderActiveScreen } from './screens/router-view.js';
+import { renderActiveScreen } from './screens/router-view.js?v=1';
 import { createDocumentRenderer } from './screens/documents.js';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js';
-import { createArmorialScreen } from './screens/armorials.js?v=11';
+import { createArmorialScreen } from './screens/armorials.js?v=14';
 import { createDataLoader } from './data/loader.js?v=2';
 import { createEntityScreens } from './screens/entities.js?v=79';
 import { createTabs } from './components/tabs.js';

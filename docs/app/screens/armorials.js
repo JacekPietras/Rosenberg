@@ -14,10 +14,10 @@ export function createArmorialScreen({ state, escapeHtml, formatDate, imageMarku
     if (entries.some((entry) => !regionNames(entry).length)) filters.push({ name: 'Unknown', value: unknownRegionFilter });
     const sidebar = filters.length ? `<aside class="seal-sidebar image-tag-sidebar" aria-label="Filter images by region"><nav>${filters.map(({ name, value }) => `<a href="#" class="${selected.has(value) ? 'selected' : ''}" data-image-region="${escapeHtml(value)}">${escapeHtml(name)}</a>`).join('')}</nav></aside>` : '';
     const matchingEntries = entries.map((entry, index) => ({ entry, index })).filter(({ entry }) => {
-      if (!selected.size) return true;
-      const names = regionNames(entry);
-      if (selected.has(unknownRegionFilter) && !names.length) return true;
-      return names.some((name) => selected.has(normalize(name)));
+      const names = regionNames(entry).map(normalize);
+      return !selected.size
+        || (!names.length && selected.has(unknownRegionFilter))
+        || names.some((name) => selected.has(name));
     });
     const cards = matchingEntries.map(({ entry, index }) => {
       return `<article class="model-card armorial-card"><div class="model-info"><h2>${escapeHtml(entry.title || document.title)}</h2>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}</div>${entry.url ? imageMarkup(entry.url, [], { path, index, title: entry.title || document.title, focus: entry.focus, regions: entry.regions, showRegions: false }) : ''}</article>`;
