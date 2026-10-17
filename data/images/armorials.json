@@ -219,20 +219,6 @@
       ]
     },
     {
-      "title": "Lyncenich armorial, Brussels, KBR, ms. II 6567 [1460] p. 262",
-      "source": "https://drive.google.com/file/d/1c_8kmqRZ4u_wkzV8lt7SYVb4K_7S92sa/view",
-      "url": "https://drive.google.com/thumbnail?id=1c_8kmqRZ4u_wkzV8lt7SYVb4K_7S92sa&sz=w1600",
-      "regions": [
-        {
-          "x": 0.4209,
-          "y": 0.5492,
-          "width": 0.2515,
-          "height": 0.1969,
-          "name": "Rosenberg"
-        }
-      ]
-    },
-    {
       "title": "Sammelhandschrift - ONB Cod. 3044 [1460] fol. 173v",
       "source": "https://viewer.onb.ac.at/10036A94?page=352",
       "url": "https://api.onb.ac.at/iiif/image/v3/10036A94/uk4nGb4s3DmuAuqG/full/max/0/default.jpg",
@@ -249,6 +235,20 @@
           "y": 0.647,
           "width": 0.1579,
           "height": 0.1133,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Lyncenich armorial, Brussels, KBR, ms. II 6567 [1460] p. 262",
+      "source": "https://drive.google.com/file/d/1c_8kmqRZ4u_wkzV8lt7SYVb4K_7S92sa/view",
+      "url": "https://drive.google.com/thumbnail?id=1c_8kmqRZ4u_wkzV8lt7SYVb4K_7S92sa&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4209,
+          "y": 0.5492,
+          "width": 0.2515,
+          "height": 0.1969,
           "name": "Rosenberg"
         }
       ]
@@ -502,15 +502,43 @@
       ]
     },
     {
-      "title": "Wappen deutscher Geschlechter, überwiegend aus Südwestdeutschland - BSB Cod.icon. 312 [1500-1600] fol. 19v",
-      "source": "https://drive.google.com/file/d/1nsCFjkj6HsERDWS0Lgicp5Tkd6fvT2xX/view",
-      "url": "https://drive.google.com/thumbnail?id=1nsCFjkj6HsERDWS0Lgicp5Tkd6fvT2xX&sz=w1600",
+      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 166v",
+      "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
+      "url": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [1495-1498] fol. 166v.jpg",
       "regions": [
         {
-          "x": 0.2325,
-          "y": 0.6865,
-          "width": 0.2558,
-          "height": 0.2403,
+          "x": 0.1326,
+          "y": 0.0725,
+          "width": 0.4343,
+          "height": 0.4864,
+          "name": "Thüngen"
+        }
+      ]
+    },
+    {
+      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 168r",
+      "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
+      "url": "https://drive.google.com/thumbnail?id=1ogoonfk-hwC7O-72kWt-1Ok6bVjSbmNo&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0713,
+          "y": 0.0952,
+          "width": 0.4171,
+          "height": 0.4307,
+          "name": "Uissigheim"
+        }
+      ]
+    },
+    {
+      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 169v",
+      "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
+      "url": "https://drive.google.com/thumbnail?id=1gHYGr4IJ4jeqloG8HRsQJvG3PtzwmB_V&sz=w1600",
+      "regions": [
+        {
+          "x": 0.121,
+          "y": 0.1179,
+          "width": 0.4111,
+          "height": 0.3925,
           "name": "Rosenberg"
         }
       ]
@@ -540,6 +568,20 @@
           "width": 0.1642,
           "height": 0.283,
           "name": "Uissigheim"
+        }
+      ]
+    },
+    {
+      "title": "Wappen deutscher Geschlechter, überwiegend aus Südwestdeutschland - BSB Cod.icon. 312 [1500-1600] fol. 19v",
+      "source": "https://drive.google.com/file/d/1nsCFjkj6HsERDWS0Lgicp5Tkd6fvT2xX/view",
+      "url": "https://drive.google.com/thumbnail?id=1nsCFjkj6HsERDWS0Lgicp5Tkd6fvT2xX&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2325,
+          "y": 0.6865,
+          "width": 0.2558,
+          "height": 0.2403,
+          "name": "Rosenberg"
         }
       ]
     },
@@ -684,10 +726,10 @@
       "url": "https://drive.google.com/thumbnail?id=1YweIhi9Jr2Qfr2BQ8ZdL3E8zu4IEEO6v&sz=w1600",
       "regions": [
         {
-          "x": 0.6591,
-          "y": 0.4773,
-          "width": 0.3223,
-          "height": 0.2558,
+          "x": 0.6673,
+          "y": 0.4929,
+          "width": 0.2965,
+          "height": 0.2455,
           "name": "?"
         }
       ]
@@ -744,48 +786,6 @@
           "y": 0.4482,
           "width": 0.1507,
           "height": 0.2778,
-          "name": "Rosenberg"
-        }
-      ]
-    },
-    {
-      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 166v",
-      "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
-      "url": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [1495-1498] fol. 166v.jpg",
-      "regions": [
-        {
-          "x": 0.1326,
-          "y": 0.0725,
-          "width": 0.4343,
-          "height": 0.4864,
-          "name": "Thüngen"
-        }
-      ]
-    },
-    {
-      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 168r",
-      "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
-      "url": "https://drive.google.com/thumbnail?id=1ogoonfk-hwC7O-72kWt-1Ok6bVjSbmNo&sz=w1600",
-      "regions": [
-        {
-          "x": 0.0713,
-          "y": 0.0952,
-          "width": 0.4171,
-          "height": 0.4307,
-          "name": "Uissigheim"
-        }
-      ]
-    },
-    {
-      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 169v",
-      "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
-      "url": "https://drive.google.com/thumbnail?id=1gHYGr4IJ4jeqloG8HRsQJvG3PtzwmB_V&sz=w1600",
-      "regions": [
-        {
-          "x": 0.121,
-          "y": 0.1179,
-          "width": 0.4111,
-          "height": 0.3925,
           "name": "Rosenberg"
         }
       ]

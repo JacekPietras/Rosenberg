@@ -97,6 +97,10 @@ The Seals tab's `unknown` filter shows seals whose type is not filled;
 array. Each entry may include a `title`, `date`, `source`, and `url`, using the
 same entry fields as books and notes. `url` is the image URL or local filename.
 The entry `title` supplies the image's accessible name.
+In filenames, write dates as `[YYYY]` or `[YYYY-YYYY]` (for example, an
+armorial dated `[1370-1414]`). Format armorial names as
+`<armorial name><additional details> [<date>] <folio>`, omitting additional
+details or the folio when unavailable.
 Optional `tags` is an array of strings used to filter the Armorials view.
 Optional `regions` is an array of named rectangular image areas. Each region
 has a `name` and normalized `x`, `y`, `width`, and `height` values from 0 to 1.
