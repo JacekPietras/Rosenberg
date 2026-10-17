@@ -747,6 +747,48 @@
           "name": "Rosenberg"
         }
       ]
+    },
+    {
+      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 166v",
+      "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
+      "url": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [1495-1498] fol. 166v.jpg",
+      "regions": [
+        {
+          "x": 0.1326,
+          "y": 0.0725,
+          "width": 0.4343,
+          "height": 0.4864,
+          "name": "Thüngen"
+        }
+      ]
+    },
+    {
+      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 168r",
+      "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
+      "url": "https://drive.google.com/thumbnail?id=1ogoonfk-hwC7O-72kWt-1Ok6bVjSbmNo&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0713,
+          "y": 0.0952,
+          "width": 0.4171,
+          "height": 0.4307,
+          "name": "Uissigheim"
+        }
+      ]
+    },
+    {
+      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 169v",
+      "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
+      "url": "https://drive.google.com/thumbnail?id=1gHYGr4IJ4jeqloG8HRsQJvG3PtzwmB_V&sz=w1600",
+      "regions": [
+        {
+          "x": 0.121,
+          "y": 0.1179,
+          "width": 0.4111,
+          "height": 0.3925,
+          "name": "Rosenberg"
+        }
+      ]
     }
   ]
 }
