@@ -46,11 +46,37 @@ export function createRepository({ location = window.location, fetchFunction = w
         .sort((left, right) => left.path.localeCompare(right.path));
     },
     async saveDocument(path, document) {
-      const response = await fetchFunction('/api/save-document', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ path, document }),
-      });
+      const requestBody = JSON.stringify({ path, document });
+      const requestUrl = new URL('/api/save-document', location.href);
+      const diagnostic = {
+        path,
+        requestUrl: requestUrl.href,
+        pageUrl: location.href,
+        payloadBytes: new Blob([requestBody]).size,
+        browserOnline: navigator.onLine,
+        startedAt: new Date().toISOString(),
+      };
+      console.info('Saving document', diagnostic);
+      let response;
+      try {
+        response = await fetchFunction('/api/save-document', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: requestBody,
+        });
+      } catch (error) {
+        let probe = 'probe failed';
+        try {
+          const probeResponse = await fetchFunction(`/api/local-server?diagnostic=${Date.now()}`, { cache: 'no-store' });
+          probe = `probe returned HTTP ${probeResponse.status}`;
+        } catch (probeError) {
+          probe = `probe failed (${probeError?.name || 'Error'}: ${probeError?.message || String(probeError)})`;
+        }
+        console.error('Document save request failed before an HTTP response', { ...diagnostic, error, probe });
+        const failure = new Error(`Save request failed (${error?.name || 'Error'}: ${error?.message || String(error)}). ${probe} at ${requestUrl.origin}; browser online: ${navigator.onLine}. Check server output for a POST /api/save-document entry.`);
+        failure.cause = error;
+        throw failure;
+      }
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || `Save failed (${response.status})`);
       return result;

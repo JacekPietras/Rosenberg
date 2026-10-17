@@ -120,7 +120,11 @@ export function setupImageLightbox({ state, repository, rerender }) {
       const document = state.documents.get(context.path); const entry = document?.entries?.[Number(context.entryIndex)];
       if (entry) (Array.isArray(entry.img) ? entry.img : [entry.img]).forEach((item) => { if (item && typeof item === 'object' && Array.isArray(item.seals) && !item.seals.length) delete item.seals; });
       try { setStatus('Saving…'); await repository.saveDocument(context.path, document); state.snapshot = ''; setStatus(''); return true; }
-      catch (error) { setStatus(error.message, true); return false; }
+      catch (error) {
+        console.error(`Failed to save image annotations in ${context.path}`, error);
+        setStatus(error?.message || String(error), true);
+        return false;
+      }
     }); saveQueue = operation.catch(() => {}); return operation;
   };
   const close = async () => { if (context && !await save()) return; lightbox.close(); await rerender?.(); };

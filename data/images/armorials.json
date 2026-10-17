@@ -212,7 +212,7 @@
       ]
     },
     {
-      "title": "München, BSB, cod. icon. 311 [1500]",
+      "title": "München, BSB, cod. icon. 311 [1475-1500] fol. 82v",
       "source": "https://drive.google.com/file/d/1aOwuppKZKiY9ZtOLh-s4mbINem-lJy_B/view",
       "url": "https://drive.google.com/thumbnail?id=1aOwuppKZKiY9ZtOLh-s4mbINem-lJy_B&sz=w1600",
       "regions": [
@@ -221,20 +221,6 @@
           "y": 0.1198,
           "width": 0.4522,
           "height": 0.4061,
-          "name": "Rosenberg"
-        }
-      ]
-    },
-    {
-      "title": "Wappen deutscher Geschlechter - BSB Cod.icon. 311 [1475-1500] fol. 82v",
-      "source": "https://drive.google.com/file/d/1Xv3gu7LMC65RRYuglk530Vz8qp-rWS3a/view",
-      "url": "https://drive.google.com/thumbnail?id=1Xv3gu7LMC65RRYuglk530Vz8qp-rWS3a&sz=w1600",
-      "regions": [
-        {
-          "x": 0.5153,
-          "y": 0.1289,
-          "width": 0.4388,
-          "height": 0.3815,
           "name": "Rosenberg"
         }
       ]
@@ -459,7 +445,16 @@
     {
       "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307 [1600] fol. 642",
       "source": "https://drive.google.com/file/d/1uId_I5uRcKma7CLVIiKXE3ywxBH-WiS7/view",
-      "url": "https://drive.google.com/thumbnail?id=1uId_I5uRcKma7CLVIiKXE3ywxBH-WiS7&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1uId_I5uRcKma7CLVIiKXE3ywxBH-WiS7&sz=w1600",
+      "regions": [
+        {
+          "x": 0.6992,
+          "y": 0.0382,
+          "width": 0.2327,
+          "height": 0.2299,
+          "name": "Uissigheim"
+        }
+      ]
     },
     {
       "title": "Wappen besonders von deutschen Geschlechtern - BSB Cod.icon. 309 [1475-1560] fol. 7r",

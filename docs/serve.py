@@ -7,6 +7,7 @@ import sys
 import tempfile
 import threading
 import time
+import traceback
 import webbrowser
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -62,6 +63,12 @@ class ViewerHandler(SimpleHTTPRequestHandler):
         super().do_GET()
 
     def do_POST(self):
+        if self.path.split("?", 1)[0] == "/api/save-document":
+            print(
+                f"Received document save request from {self.client_address[0]} "
+                f"({self.headers.get('Content-Length', 'unknown')} bytes)",
+                flush=True,
+            )
         if self.path.split("?", 1)[0] == "/api/heartbeat":
             last_heartbeat[0] = time.monotonic()
             page_seen.set()
@@ -144,7 +151,12 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             os.replace(temporary, target)
             self.send_json(200, {"ok": True, "version": target.stat().st_mtime_ns})
         except (KeyError, TypeError, ValueError, json.JSONDecodeError, OSError) as error:
+            print(f"Document save failed for {locals().get('relative_path', '<unknown>')}: {error}", flush=True)
             self.send_json(400, {"error": str(error)})
+        except Exception as error:
+            print(f"Unexpected document save failure for {locals().get('relative_path', '<unknown>')}: {error}", flush=True)
+            traceback.print_exc()
+            self.send_json(500, {"error": "Unexpected server error while saving document"})
 
 
 if __name__ == "__main__":
