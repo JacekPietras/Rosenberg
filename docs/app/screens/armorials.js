@@ -1,3 +1,5 @@
+import { titleDateYear } from '../image-date-sort.js';
+
 export function createArmorialScreen({ state, escapeHtml, formatDate, imageMarkup, savePreferences, rerender }) {
   const unknownRegionFilter = '__no_region__';
   const normalize = (tag) => String(tag || '').trim().toLocaleLowerCase();
@@ -6,14 +8,19 @@ export function createArmorialScreen({ state, escapeHtml, formatDate, imageMarku
     const path = state.manifest.armorials;
     const document = path ? state.documents.get(path) : null;
     if (!document) return '<p>No armorials are available.</p>';
-    const entries = document.entries || [];
+    const entries = (document.entries || []).map((entry, index) => ({ entry, index, year: titleDateYear(entry.title) }))
+      .sort((a, b) => {
+        if (a.year === null && b.year !== null) return 1;
+        if (a.year !== null && b.year === null) return -1;
+        return (a.year ?? 0) - (b.year ?? 0) || a.index - b.index;
+      });
     const selected = new Set(state.imageRegions || []);
     const regionNames = (entry) => (Array.isArray(entry.regions) ? entry.regions : []).map((region) => String(region?.name || '').trim()).filter(Boolean);
-    const regions = [...new Set(entries.flatMap(regionNames))].sort((a, b) => a.localeCompare(b));
+    const regions = [...new Set(entries.flatMap(({ entry }) => regionNames(entry)))].sort((a, b) => a.localeCompare(b));
     const filters = regions.map((name) => ({ name, value: normalize(name) }));
-    if (entries.some((entry) => !regionNames(entry).length)) filters.push({ name: 'Unknown', value: unknownRegionFilter });
+    if (entries.some(({ entry }) => !regionNames(entry).length)) filters.push({ name: 'Unknown', value: unknownRegionFilter });
     const sidebar = filters.length ? `<aside class="seal-sidebar image-tag-sidebar" aria-label="Filter images by region"><nav>${filters.map(({ name, value }) => `<a href="#" class="${selected.has(value) ? 'selected' : ''}" data-image-region="${escapeHtml(value)}">${escapeHtml(name)}</a>`).join('')}</nav></aside>` : '';
-    const matchingEntries = entries.map((entry, index) => ({ entry, index })).filter(({ entry }) => {
+    const matchingEntries = entries.filter(({ entry }) => {
       const names = regionNames(entry).map(normalize);
       return !selected.size
         || (!names.length && selected.has(unknownRegionFilter))
