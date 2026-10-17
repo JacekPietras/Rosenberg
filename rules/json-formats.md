@@ -94,16 +94,14 @@ The Seals tab's `unknown` filter shows seals whose type is not filled;
 ## Armorials JSON
 
 `data/images/armorials.json` is an object with a `title` and an `entries`
-array. Each entry may include a `title`, `date`, `source`, `url`, and `focus`,
-using the same entry fields as books and notes. `url` is the image URL or local
-filename, and optional `focus` stores the crop focus coordinates. The entry
-`title` supplies the image's accessible name.
+array. Each entry may include a `title`, `date`, `source`, and `url`, using the
+same entry fields as books and notes. `url` is the image URL or local filename.
+The entry `title` supplies the image's accessible name.
 Optional `tags` is an array of strings used to filter the Armorials view.
 Optional `regions` is an array of named rectangular image areas. Each region
 has a `name` and normalized `x`, `y`, `width`, and `height` values from 0 to 1.
 Regions are displayed as labeled outlines and can be added or renamed in the
-local image viewer. When no separate `focus` exists, the first region supplies
-the preview focus coordinates.
+local image viewer. The first region supplies the preview framing.
 If an image is stored locally, place it directly in `data/images/` and
 reference its filename in `img`. The viewer also accepts Google Drive thumbnail
 URLs in `img` for images that remain hosted in Drive.

@@ -272,12 +272,13 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .image-lightbox-stage { position: relative; width: 100%; height: 100%; min-height: 0; }
 .image-lightbox-stage > img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .image-lightbox-annotations { position: absolute; pointer-events: none; }
-.image-lightbox-focus-overlay { position: absolute; z-index: 2; box-sizing: border-box; pointer-events: none; }
-.image-lightbox-focus-overlay.is-visible { pointer-events: auto; }
-.image-lightbox-focus-overlay.is-visible.is-editing { cursor: crosshair; touch-action: none; }
-.image-focus-box { position: absolute; box-sizing: border-box; border: 2px solid #ffd166; background: rgb(255 209 102 / .16); pointer-events: none; }
-.image-lightbox-focus-overlay:not(.has-focus) .image-focus-box { display: none; }
-.image-lightbox-focus-overlay.is-editing .image-focus-box { display: block; background: rgb(255 209 102 / .08); }
+.image-lightbox-annotations .image-lightbox-region { z-index: 2; display: block; border: 2px solid #60c4a0; background: rgb(96 196 160 / .12); }
+.image-lightbox-region-overlay { position: absolute; z-index: 2; box-sizing: border-box; pointer-events: none; }
+.image-lightbox-region-overlay.is-visible { pointer-events: auto; }
+.image-lightbox-region-overlay.is-visible.is-editing { cursor: crosshair; touch-action: none; }
+.image-lightbox-region-box { position: absolute; box-sizing: border-box; border: 2px solid #60c4a0; background: rgb(96 196 160 / .08); pointer-events: none; }
+.image-lightbox-region-overlay:not(.is-editing) .image-lightbox-region-box { display: none; }
+.image-lightbox-region-overlay.is-editing .image-lightbox-region-box { display: block; }
 .image-lightbox-editor { position: absolute; z-index: 3; top: .65rem; left: 1rem; display: flex; flex-wrap: wrap; align-items: center; gap: .45rem .65rem; color: var(--muted); font-size: .76rem; }
 .image-lightbox-editor[hidden] { display: none; }
 .image-lightbox-editor button { padding: .3rem .55rem; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
@@ -287,7 +288,6 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .image-lightbox-seal-type legend { padding: 0 .2rem; color: var(--faint); font-size: .68rem; }
 .image-lightbox-seal-type label { padding: 0; background: none; border: 0; }
 .image-lightbox-editor button:hover { border-color: var(--accent); color: var(--accent); }
-.image-lightbox-editor #image-lightbox-focus[aria-pressed="true"] { color: #fff; background: var(--accent); border-color: var(--accent); }
 .image-lightbox-save-status { color: var(--accent); }
 .image-lightbox-seal-preview { position: absolute; z-index: 2; right: 1rem; bottom: 1rem; display: block; pointer-events: none; }
 .image-lightbox-seal-preview[hidden] { display: none; }
@@ -318,7 +318,6 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .image-region { position: absolute; z-index: 1; box-sizing: border-box; border: 2px solid #60c4a0; background: rgb(96 196 160 / .12); pointer-events: none; }
 .image-region > span { position: absolute; top: 100%; left: 0; padding: .05rem .25rem; color: #fff; background: rgb(25 105 78 / .9); border-radius: 2px; font-size: .65rem; line-height: 1.3; white-space: nowrap; }
 .image-lightbox-annotations .image-region { pointer-events: auto; cursor: pointer; }
-.image-lightbox-region-box { position: absolute; box-sizing: border-box; border: 2px solid #60c4a0; background: rgb(96 196 160 / .08); pointer-events: none; }
 :root[data-theme="light"] .seal-marker-label { color: #fff; }
 :root[data-theme="light"] .diagram { background: #f2f5f8; }
 :root[data-theme="light"] .people-tree { background: #f2f5f8; }
