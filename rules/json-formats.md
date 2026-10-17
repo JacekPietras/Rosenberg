@@ -84,6 +84,8 @@ recorded annotations, or omit the field until annotations are available.
 Optional image-level `tags` is an array of strings. Optional `regions` is an
 array of named rectangles with a `name` and normalized `x`, `y`, `width`, and
 `height` values from 0 to 1. The viewer displays regions as labeled outlines.
+When no separate preview `focus` exists, a region named `Rosenberg` supplies
+the preview focus coordinates.
 
 Each seal may have one `type`: `contrepalle`, `swans`, `helm`, or `full`.
 The Seals tab's `unknown` filter shows seals whose type is not filled;
@@ -100,7 +102,8 @@ Optional `tags` is an array of strings used to filter the Armorials view.
 Optional `regions` is an array of named rectangular image areas. Each region
 has a `name` and normalized `x`, `y`, `width`, and `height` values from 0 to 1.
 Regions are displayed as labeled outlines and can be added or renamed in the
-local image viewer.
+local image viewer. When no separate `focus` exists, a region named
+`Rosenberg` supplies the preview focus coordinates.
 If an image is stored locally, place it directly in `data/images/` and
 reference its filename in `img`. The viewer also accepts Google Drive thumbnail
 URLs in `img` for images that remain hosted in Drive.

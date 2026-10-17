@@ -42,9 +42,11 @@ export function createImageRenderer({ location = window.location } = {}) {
         source = location.hostname.endsWith('github.io') ? `https://raw.githubusercontent.com/${owner}/${repository}/main/${encoded}` : `../${encoded}`;
       }
       const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals, escapeHtml);
-      const regions = context.showRegions === false ? '' : regionMarkup(node && typeof node === 'object' ? node.regions : context.regions);
+      const sourceRegions = node && typeof node === 'object' ? node.regions : context.regions;
+      const regions = context.showRegions === false ? '' : regionMarkup(sourceRegions);
       const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
-      const focus = node && typeof node === 'object' ? node.cropFocus : context.focus;
+      const focus = (node && typeof node === 'object' ? node.cropFocus : context.focus)
+        || sourceRegions?.find((region) => String(region?.name || '').trim().toLocaleLowerCase() === 'rosenberg');
       const focusAttributes = focus && [focus.x, focus.y, focus.width, focus.height].every((value) => Number.isFinite(Number(value)))
         ? ` data-focus-x="${Number(focus.x)}" data-focus-y="${Number(focus.y)}" data-focus-width="${Number(focus.width)}" data-focus-height="${Number(focus.height)}"`
         : '';
