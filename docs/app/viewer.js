@@ -6,14 +6,14 @@ import { createDocumentRenderer } from './screens/documents.js';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js';
-import { createArmorialScreen } from './screens/armorials.js';
-import { createDataLoader } from './data/loader.js';
+import { createArmorialScreen } from './screens/armorials.js?v=3';
+import { createDataLoader } from './data/loader.js?v=1';
 import { createEntityScreens } from './screens/entities.js?v=79';
 import { createTabs } from './components/tabs.js';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=4';
 import { createMapScreen } from './screens/map.js?v=79';
-import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=80';
+import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=83';
 import { createMarkupRenderer } from './rendering/markup.js?v=79';
 import { createImageRenderer } from './rendering/images.js?v=3';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
@@ -33,13 +33,13 @@ function savePreferences() {
     hiddenLetterLabels: state.hiddenLetterLabels,
     sealNames: state.sealNames,
     sealType: state.sealType,
-    imageTags: state.imageTags,
+    imageRegions: state.imageRegions,
     language: state.language,
     showFacts: state.showFacts,
     darkMode: state.darkMode,
   });
 }
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, imageTags: preferences.imageTags || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, imageRegions: preferences.imageRegions || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const route = store?.getState?.().route || { active: 'books' };
 store?.setState(state);
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);

@@ -45,7 +45,7 @@ export function createDataLoader({
     if (!letterPaths.some((path) => letterHasMissingSourceOrUrl(path))) state.letterLabels = state.letterLabels.filter((label) => label !== missingLetterLabel);
     if (!Array.isArray(state.hiddenLetterLabels)) state.hiddenLetterLabels = [...greyLetterLabels];
     state.sealNames = [...new Set(state.sealNames.map((label) => label.includes('?') ? 'unknown' : label.toLocaleLowerCase()).filter(Boolean))];
-    state.imageTags = [...new Set((state.imageTags || []).map((tag) => String(tag).trim().toLocaleLowerCase()).filter(Boolean))];
+    state.imageRegions = [...new Set((state.imageRegions || []).map((name) => String(name).trim().toLocaleLowerCase()).filter(Boolean))];
     if (state.active === 'books') state.active = state.manifest.books[0]?.path || 'letters';
     if (state.active === 'images') state.active = 'images/armorials';
     if (state.active === 'armorials') state.active = 'images/armorials';

@@ -18,7 +18,7 @@ export function loadPreferences(storage) {
       hiddenLetterLabels: Array.isArray(raw.hiddenLetterLabels) ? raw.hiddenLetterLabels : null,
       sealNames: Array.isArray(raw.sealNames) ? raw.sealNames : [],
       sealType: ['contrepalle', 'swans', 'helm', 'full', 'unknown'].includes(raw.sealType) ? raw.sealType : null,
-      imageTags: Array.isArray(raw.imageTags) ? raw.imageTags : [],
+      imageRegions: Array.isArray(raw.imageRegions) ? raw.imageRegions : [],
       language: normalizeDisplayMode(raw.language),
       showFacts: raw.showFacts !== false,
       darkMode: raw.darkMode !== false,
@@ -26,7 +26,7 @@ export function loadPreferences(storage) {
   } catch {
     return {
       active: null, place: null, person: null, letter: null,
-      letterLabels: [], hiddenLetterLabels: null, sealNames: [], sealType: null, imageTags: [],
+      letterLabels: [], hiddenLetterLabels: null, sealNames: [], sealType: null, imageRegions: [],
       language: 'english', showFacts: true, darkMode: true,
     };
   }

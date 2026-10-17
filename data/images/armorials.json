@@ -25,7 +25,7 @@
           "y": 0.4916,
           "width": 0.2792,
           "height": 0.4054,
-          "name": "Rosenberg"
+          "name": "Thüngen"
         }
       ]
     },
@@ -49,10 +49,17 @@
       "url": "https://drive.google.com/thumbnail?id=1yv0FF4jKCfhb21RtCqD-yvL0dCKTC4-7&sz=w1600",
       "regions": [
         {
-          "x": 0.057,
-          "y": 0.0648,
-          "width": 0.8122,
-          "height": 0.4242,
+          "x": 0.4398,
+          "y": 0.0609,
+          "width": 0.41,
+          "height": 0.4126,
+          "name": "Thüngen"
+        },
+        {
+          "x": 0.0551,
+          "y": 0.1237,
+          "width": 0.409,
+          "height": 0.3633,
           "name": "Rosenberg"
         }
       ]
@@ -116,27 +123,65 @@
     {
       "title": "Donaueschinger Wappenbuch, Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 496 [1430-1460] fol. 81v",
       "source": "https://digital.blb-karlsruhe.de/i3f/v20/6050102/manifest",
-      "url": "https://digital.blb-karlsruhe.de/i3f/v20/6092985/full/max/0/default.jpg"
+      "url": "https://digital.blb-karlsruhe.de/i3f/v20/6092985/full/max/0/default.jpg",
+      "regions": [
+        {
+          "x": 0.2039,
+          "y": 0.5142,
+          "width": 0.3354,
+          "height": 0.4003,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "title": "Donaueschinger Wappenbuch, Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 496 [1430-1460] fol. 83r",
       "source": "https://digital.blb-karlsruhe.de/i3f/v20/6050102/manifest",
-      "url": "https://digital.blb-karlsruhe.de/i3f/v20/6092986/full/max/0/default.jpg"
+      "url": "https://digital.blb-karlsruhe.de/i3f/v20/6092986/full/max/0/default.jpg",
+      "regions": [
+        {
+          "x": 0.0665,
+          "y": 0.0952,
+          "width": 0.3038,
+          "height": 0.4165,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Eichstätter Wappenbuch, Eichstätt, Universitätsbibliothek Eichstätt-Ingolstadt, Cod. st 704 [1474-1484] fol. 181r",
       "source": "https://drive.google.com/file/d/12hRSMmzcvubjtn05e_uAEjD6KEIxmdz4/view",
-      "url": "https://drive.google.com/thumbnail?id=12hRSMmzcvubjtn05e_uAEjD6KEIxmdz4&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=12hRSMmzcvubjtn05e_uAEjD6KEIxmdz4&sz=w1600",
+      "regions": [
+        {
+          "x": 0.5489,
+          "y": 0.4242,
+          "width": 0.1819,
+          "height": 0.2455,
+          "name": "Thüngen"
+        },
+        {
+          "x": 0.5655,
+          "y": 0.6846,
+          "width": 0.1847,
+          "height": 0.2254,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Grünenberg Armorial - GStA VIII. HA, II, 21 [1480-1490] p. 316",
       "source": "https://drive.google.com/file/d/1GYOREI-HaWpkw7EMxo6KNNCLdct4lNxF/view",
-      "url": "https://drive.google.com/thumbnail?id=1GYOREI-HaWpkw7EMxo6KNNCLdct4lNxF&sz=w1600"
-    },
-    {
-      "title": "Grünenberg Armorial, München, BSB, cgm 145 [1480]",
-      "source": "https://drive.google.com/file/d/16TR9iSOKFdKmeMfd2FXDiUhF7irDw16y/view",
-      "url": "https://drive.google.com/thumbnail?id=16TR9iSOKFdKmeMfd2FXDiUhF7irDw16y&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1GYOREI-HaWpkw7EMxo6KNNCLdct4lNxF&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2961,
+          "y": 0.1645,
+          "width": 0.2792,
+          "height": 0.3135,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Heroldsbuch des Jülichschen St. Hubertusordens, Krakow, Biblioteka Jagiellońska, Berol. Ms. Germ. Qu. 1479 [1460] 252",
@@ -170,7 +215,16 @@
     {
       "title": "Wappen deutscher Geschlechter - BSB Cod.icon. 311 [1475-1500] fol. 14v",
       "source": "https://drive.google.com/file/d/158m90zK9OosHBfuaJyb6fr1C9FkhAHRE/view",
-      "url": "https://drive.google.com/thumbnail?id=158m90zK9OosHBfuaJyb6fr1C9FkhAHRE&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=158m90zK9OosHBfuaJyb6fr1C9FkhAHRE&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0192,
+          "y": 0.4475,
+          "width": 0.4671,
+          "height": 0.5304,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "title": "Scheibler’sches armorial, München, BSB, cod. icon. 312c [1450]",
@@ -248,12 +302,30 @@
     {
       "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307 [1600] fol. 438",
       "source": "https://drive.google.com/file/d/1aQvVjfjPm14SzcmaZEW1oh_U82GYrkOU/view",
-      "url": "https://drive.google.com/thumbnail?id=1aQvVjfjPm14SzcmaZEW1oh_U82GYrkOU&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1aQvVjfjPm14SzcmaZEW1oh_U82GYrkOU&sz=w1600",
+      "regions": [
+        {
+          "x": 0.7499,
+          "y": 0.8051,
+          "width": 0.1807,
+          "height": 0.1088,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307 [1600] fol. 472",
       "source": "https://drive.google.com/file/d/1i2voVI0TmaLzW7FHt2hHbOTwE2_EM44J/view",
-      "url": "https://drive.google.com/thumbnail?id=1i2voVI0TmaLzW7FHt2hHbOTwE2_EM44J&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1i2voVI0TmaLzW7FHt2hHbOTwE2_EM44J&sz=w1600",
+      "regions": [
+        {
+          "x": 0.6637,
+          "y": 0.5084,
+          "width": 0.0659,
+          "height": 0.1082,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307 [1600] fol. 573",
@@ -273,7 +345,16 @@
     {
       "title": "Wappen besonders von deutschen Geschlechtern - BSB Cod.icon. 309 [1475-1560] fol. 15v",
       "source": "https://drive.google.com/file/d/18AsxfJO8yUTYnTHzpbQGNTdgsX_9OHme/view",
-      "url": "https://drive.google.com/thumbnail?id=18AsxfJO8yUTYnTHzpbQGNTdgsX_9OHme&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=18AsxfJO8yUTYnTHzpbQGNTdgsX_9OHme&sz=w1600",
+      "regions": [
+        {
+          "x": 0.3643,
+          "y": 0.0551,
+          "width": 0.3682,
+          "height": 0.2979,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "title": "Wappen besonders von deutschen Geschlechtern - BSB Cod.icon. 309 [1475-1560] fol. 51r",

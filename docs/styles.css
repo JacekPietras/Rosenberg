@@ -251,10 +251,10 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .armorial-card .entry-image img { width: 100%; height: auto; max-height: none; aspect-ratio: 16 / 10; object-fit: cover; }
 .armorial-card .armorial-source { padding-top: .5rem; }
 .armorial-card .armorial-source a { overflow-wrap: anywhere; }
-.image-tags-layout { display: grid; grid-template-columns: minmax(5.5rem, 7rem) minmax(0, 1fr); gap: .85rem; align-items: start; }
-.image-tag-sidebar { position: sticky; top: 5.5rem; grid-column: 1; grid-row: 1; padding: 1.1rem 0; font-size: .82rem; }
+.image-tags-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(5.5rem, 7rem); gap: .85rem; align-items: start; }
+.image-tag-sidebar { position: sticky; top: 5.5rem; grid-column: 2; grid-row: 1; padding: 1.1rem 0; font-size: .82rem; }
 .image-tag-sidebar nav { display: grid; gap: .2rem; max-height: calc(100vh - 8rem); overflow-y: auto; }
-.image-tags-layout .armorial-grid { grid-column: 2; }
+.image-tags-layout .armorial-grid { grid-column: 1; }
 .image-tags { display: flex; flex-wrap: wrap; gap: .3rem; }
 .image-tag { padding: .08rem .4rem; color: var(--muted); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 999px; font-size: .72rem; }
 .entry-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.25rem 0; }
@@ -273,6 +273,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .image-lightbox-stage > img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .image-lightbox-annotations { position: absolute; pointer-events: none; }
 .image-lightbox-annotations .image-lightbox-region { z-index: 2; display: block; border: 2px solid #60c4a0; background: rgb(96 196 160 / .12); }
+.image-lightbox-annotations .image-lightbox-region.selected { border-color: #ffd166; background: rgb(255 209 102 / .16); }
 .image-lightbox-region-overlay { position: absolute; z-index: 2; box-sizing: border-box; pointer-events: none; }
 .image-lightbox-region-overlay.is-visible { pointer-events: auto; }
 .image-lightbox-region-overlay.is-visible.is-editing { cursor: crosshair; touch-action: none; }

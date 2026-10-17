@@ -17,6 +17,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   const previewImage = preview?.querySelector('img');
   const previewName = preview?.querySelector('.image-lightbox-seal-preview-name');
   const regionButton = $('#image-lightbox-add-region');
+  const removeRegionButton = $('#image-lightbox-remove-region');
   const closeButton = $('#image-lightbox-close');
   if (!lightbox || !image || !stage || !annotations || !closeButton) return;
 
@@ -37,6 +38,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   let context = null;
   let visibleRegions = [];
   let selectedIndex = null;
+  let selectedRegionIndex = null;
   let drag = null;
   let regionDrag = null;
   let regionMode = false;
@@ -105,10 +107,11 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const regions = currentRegions().map((region, regionIndex) => {
       const x = Number(region.x), y = Number(region.y), width = Number(region.width), height = Number(region.height);
       if (!region.name || ![x, y, width, height].every(Number.isFinite)) return '';
-      return `<span class="image-region image-lightbox-region" data-region-index="${regionIndex}" style="left:${x * 100}%;top:${y * 100}%;width:${width * 100}%;height:${height * 100}%"><span>${escapeHtml(region.name)}</span></span>`;
+      return `<span class="image-region image-lightbox-region${regionIndex === selectedRegionIndex ? ' selected' : ''}" data-region-index="${regionIndex}" style="left:${x * 100}%;top:${y * 100}%;width:${width * 100}%;height:${height * 100}%"><span>${escapeHtml(region.name)}</span></span>`;
     }).join('');
     annotations.innerHTML = seals + regions;
     annotations.querySelectorAll('.seal-marker').forEach((marker) => marker.classList.toggle('selected', Number(marker.dataset.sealIndex) === selectedIndex));
+    if (removeRegionButton) removeRegionButton.hidden = !context || selectedRegionIndex === null || !currentRegions()[selectedRegionIndex];
     updateGeometry(); updateFocusOverlay(); updatePreview(); updateControls();
   };
   const save = () => {
@@ -148,7 +151,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
       ? { path, entry, entryIndex, imageIndex, entryImage: true }
       : editable && entry && node && typeof node === 'object' ? { path, node, entry, entryIndex, imageIndex } : null;
     if (context?.node && !Array.isArray(context.node.seals)) context.node.seals = [];
-    selectedIndex = null; regionMode = false; lightbox.classList.toggle('is-editable', Boolean(context)); render();
+    selectedIndex = null; selectedRegionIndex = null; regionMode = false; lightbox.classList.toggle('is-editable', Boolean(context)); render();
     image.onerror = () => { const fallback = link.dataset.imageFallback; if (fallback && image.src !== fallback) image.src = fallback; };
     image.src = link.querySelector('img')?.currentSrc || link.dataset.imageSrc; image.alt = link.querySelector('img')?.alt || ''; image.onload = () => { updateGeometry(); updatePreview(); };
     if (typeof lightbox.showModal === 'function') {
@@ -160,14 +163,13 @@ export function setupImageLightbox({ state, repository, rerender }) {
   });
   window.addEventListener('resize', () => { updateGeometry(); updatePreview(); }, { passive: true });
   regionButton?.addEventListener('click', () => { regionMode = !regionMode; ignoreFocusClick = false; selectedIndex = null; updateFocusOverlay(); });
-  $('#image-lightbox-edit-tags')?.addEventListener('click', async () => {
-    const owner = context?.node || context?.entry;
-    if (!owner) return;
-    const value = window.prompt('Image tags (comma separated):', (owner.tags || []).join(', '));
-    if (value === null) return;
-    owner.tags = [...new Set(value.split(',').map((tag) => tag.trim()).filter(Boolean))];
-    if (!owner.tags.length) delete owner.tags;
-    if (await save()) await rerender?.();
+  removeRegionButton?.addEventListener('click', async () => {
+    const regions = currentRegions();
+    if (selectedRegionIndex === null || !regions[selectedRegionIndex]) return;
+    regions.splice(selectedRegionIndex, 1);
+    selectedRegionIndex = null;
+    render();
+    await save();
   });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
@@ -211,10 +213,11 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const regions = owner?.regions || [];
     const region = regions[Number(marker.dataset.regionIndex)];
     if (!region) return;
-    const name = window.prompt('Rename image region (leave empty to remove):', region.name);
-    if (name === null) return;
-    if (name.trim()) region.name = name.trim();
-    else if (window.confirm('Remove this named region?')) regions.splice(Number(marker.dataset.regionIndex), 1);
+    selectedRegionIndex = Number(marker.dataset.regionIndex);
+    render();
+    const name = window.prompt('Rename image region (leave empty to keep the current name):', region.name);
+    if (name === null || !name.trim()) return;
+    region.name = name.trim();
     render();
     await save();
   });
@@ -252,5 +255,5 @@ export function setupImageLightbox({ state, repository, rerender }) {
   });
   lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
   lightbox.addEventListener('cancel', (event) => { event.preventDefault(); close(); });
-  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (preview) preview.hidden = true; context = null; visibleRegions = []; selectedIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
+  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (preview) preview.hidden = true; context = null; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
 }
