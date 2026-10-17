@@ -793,12 +793,30 @@
     {
       "title": "Arlberg-Botenbuch, NÖLA HS StA 0328a [1579] fol. 258v",
       "source": "https://augias.noel.gv.at/05_Sammlungen/HS/HS-StA/HS_0328/HS_0328_Nr_0270.jpg",
-      "url": "Arlberg-Botenbuch, NÖLA HS StA 0328a [1579] fol. 258v.jpg"
+      "url": "https://drive.google.com/thumbnail?id=1JyBFC_KC2WPNuPdqNmxJ1b99eSj8a74C&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2068,
+          "y": 0.5997,
+          "width": 0.0832,
+          "height": 0.1244,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Arlberg-Botenbuch, NÖLA HS StA 0328a [1579] fol. 274v",
       "source": "https://augias.noel.gv.at/05_Sammlungen/HS/HS-StA/HS_0328/HS_0328_Nr_0286.jpg",
-      "url": "Arlberg-Botenbuch, NÖLA HS StA 0328a [1579] fol. 274v.jpg"
+      "url": "https://drive.google.com/thumbnail?id=1SHsFXz_a7iyYNzETHLFY6BGxCDnY-gcV&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2073,
+          "y": 0.7655,
+          "width": 0.078,
+          "height": 0.1192,
+          "name": "Rosenberg"
+        }
+      ]
     }
   ]
 }
