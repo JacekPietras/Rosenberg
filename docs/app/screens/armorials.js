@@ -20,7 +20,11 @@ export function createArmorialScreen({ state, escapeHtml, formatDate, imageMarku
         || names.some((name) => selected.has(name));
     });
     const cards = matchingEntries.map(({ entry, index }) => {
-      return `<article class="model-card armorial-card"><div class="model-info"><h2>${escapeHtml(entry.title || document.title)}</h2>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}</div>${entry.url ? imageMarkup(entry.url, [], { path, index, title: entry.title || document.title, focus: entry.focus, regions: entry.regions, showRegions: false }) : ''}</article>`;
+      const previewRegions = selected.size
+        ? (entry.regions || []).filter((region) => selected.has(normalize(region?.name)))
+        : entry.regions;
+      const previewFocus = selected.size ? previewRegions[0] : entry.focus;
+      return `<article class="model-card armorial-card"><div class="model-info"><h2>${escapeHtml(entry.title || document.title)}</h2>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}</div>${entry.url ? imageMarkup(entry.url, [], { path, index, title: entry.title || document.title, focus: previewFocus, regions: previewRegions, showRegions: false }) : ''}</article>`;
     }).join('');
     return `<div class="image-tags-layout">${sidebar}<div class="models-grid armorial-grid">${cards || '<p class="status">No images match the selected regions.</p>'}</div></div>`;
   }
