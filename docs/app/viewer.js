@@ -15,7 +15,7 @@ import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as 
 import { createMapScreen } from './screens/map.js?v=79';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=78';
 import { createMarkupRenderer } from './rendering/markup.js?v=79';
-import { createImageRenderer } from './rendering/images.js?v=2';
+import { createImageRenderer } from './rendering/images.js?v=3';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
 import { createLanguageRenderer } from './rendering/languages.js';
 import { createCitationIndex } from './data/citations.js';

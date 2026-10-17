@@ -46,7 +46,7 @@ export function createImageRenderer({ location = window.location } = {}) {
       const regions = context.showRegions === false ? '' : regionMarkup(sourceRegions);
       const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
       const focus = (node && typeof node === 'object' ? node.cropFocus : context.focus)
-        || sourceRegions?.find((region) => String(region?.name || '').trim().toLocaleLowerCase() === 'rosenberg');
+        || sourceRegions?.[0];
       const focusAttributes = focus && [focus.x, focus.y, focus.width, focus.height].every((value) => Number.isFinite(Number(value)))
         ? ` data-focus-x="${Number(focus.x)}" data-focus-y="${Number(focus.y)}" data-focus-width="${Number(focus.width)}" data-focus-height="${Number(focus.height)}"`
         : '';
