@@ -49,18 +49,18 @@
       "url": "https://drive.google.com/thumbnail?id=1yv0FF4jKCfhb21RtCqD-yvL0dCKTC4-7&sz=w1600",
       "regions": [
         {
-          "x": 0.4398,
-          "y": 0.0609,
-          "width": 0.41,
-          "height": 0.4126,
-          "name": "Thüngen"
-        },
-        {
           "x": 0.0551,
           "y": 0.1237,
           "width": 0.409,
           "height": 0.3633,
           "name": "Rosenberg"
+        },
+        {
+          "x": 0.4398,
+          "y": 0.0609,
+          "width": 0.41,
+          "height": 0.4126,
+          "name": "Thüngen"
         }
       ]
     },
@@ -154,18 +154,18 @@
       "url": "https://drive.google.com/thumbnail?id=12hRSMmzcvubjtn05e_uAEjD6KEIxmdz4&sz=w1600",
       "regions": [
         {
-          "x": 0.5489,
-          "y": 0.4242,
-          "width": 0.1819,
-          "height": 0.2455,
-          "name": "Thüngen"
-        },
-        {
           "x": 0.5655,
           "y": 0.6846,
           "width": 0.1847,
           "height": 0.2254,
           "name": "Rosenberg"
+        },
+        {
+          "x": 0.5489,
+          "y": 0.4242,
+          "width": 0.1819,
+          "height": 0.2455,
+          "name": "Thüngen"
         }
       ]
     },
