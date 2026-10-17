@@ -251,6 +251,12 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .armorial-card .entry-image img { width: 100%; height: auto; max-height: none; aspect-ratio: 16 / 10; object-fit: cover; }
 .armorial-card .armorial-source { padding-top: .5rem; }
 .armorial-card .armorial-source a { overflow-wrap: anywhere; }
+.image-tags-layout { display: grid; grid-template-columns: minmax(5.5rem, 7rem) minmax(0, 1fr); gap: .85rem; align-items: start; }
+.image-tag-sidebar { position: sticky; top: 5.5rem; grid-column: 1; grid-row: 1; padding: 1.1rem 0; font-size: .82rem; }
+.image-tag-sidebar nav { display: grid; gap: .2rem; max-height: calc(100vh - 8rem); overflow-y: auto; }
+.image-tags-layout .armorial-grid { grid-column: 2; }
+.image-tags { display: flex; flex-wrap: wrap; gap: .3rem; }
+.image-tag { padding: .08rem .4rem; color: var(--muted); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 999px; font-size: .72rem; }
 .entry-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.25rem 0; }
 .entry-image { flex: 1 1 12rem; max-width: 100%; margin: 0; text-align: center; }
 .entry-image img { display: block; max-width: 100%; height: auto; max-height: 32rem; margin: 0 auto; }
@@ -309,6 +315,10 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .image-lightbox.is-editable .seal-marker.selected::before { border-color: #ffd166; }
 .image-lightbox.is-editable .seal-marker.saving::before { border-color: #ffd166; }
 .seal-marker-label { position: absolute; top: calc(100% + .45rem); left: 50%; display: block; padding: .05rem .2rem; color: #fff; background: color-mix(in srgb, #9d263b 88%, transparent); border-radius: 3px; font-size: .5rem; line-height: 1.25; pointer-events: none; white-space: nowrap; transform: translateX(-50%); }
+.image-region { position: absolute; z-index: 1; box-sizing: border-box; border: 2px solid #60c4a0; background: rgb(96 196 160 / .12); pointer-events: none; }
+.image-region > span { position: absolute; top: 100%; left: 0; padding: .05rem .25rem; color: #fff; background: rgb(25 105 78 / .9); border-radius: 2px; font-size: .65rem; line-height: 1.3; white-space: nowrap; }
+.image-lightbox-annotations .image-region { pointer-events: auto; cursor: pointer; }
+.image-lightbox-region-box { position: absolute; box-sizing: border-box; border: 2px solid #60c4a0; background: rgb(96 196 160 / .08); pointer-events: none; }
 :root[data-theme="light"] .seal-marker-label { color: #fff; }
 :root[data-theme="light"] .diagram { background: #f2f5f8; }
 :root[data-theme="light"] .people-tree { background: #f2f5f8; }
@@ -322,6 +332,10 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
   .text-grid { grid-template-columns: 1fr; gap: 1rem; }
   .letters-layout { display: block; }
   .seals-layout { display: block; }
+  .image-tags-layout { display: block; }
+  .image-tag-sidebar { position: sticky; top: 4.6rem; z-index: 5; display: flex; padding: .55rem 0; background: color-mix(in srgb, var(--bg) 92%, transparent); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
+  .image-tag-sidebar nav { display: flex; max-width: 100%; max-height: none; overflow-x: auto; }
+  .image-tag-sidebar a { min-width: 3.2rem; white-space: nowrap; }
   .year-sidebar { position: sticky; top: 4.6rem; z-index: 5; display: flex; gap: 1rem; padding: .55rem 0; background: color-mix(in srgb, var(--bg) 92%, transparent); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
   .year-sidebar nav { display: flex; max-width: 100%; max-height: none; overflow-x: auto; }
   .year-sidebar a { min-width: 3.2rem; white-space: nowrap; }

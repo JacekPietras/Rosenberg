@@ -81,6 +81,9 @@ modifier from `0` to `1`, `wideningRotation` sets its direction, and optional
 `rotation` applies the seal's second, final rotation. The crop window remains
 circular and unchanged. Use an empty `seals` array when an image has no
 recorded annotations, or omit the field until annotations are available.
+Optional image-level `tags` is an array of strings. Optional `regions` is an
+array of named rectangles with a `name` and normalized `x`, `y`, `width`, and
+`height` values from 0 to 1. The viewer displays regions as labeled outlines.
 
 Each seal may have one `type`: `contrepalle`, `swans`, `helm`, or `full`.
 The Seals tab's `unknown` filter shows seals whose type is not filled;
@@ -93,6 +96,11 @@ array. Each entry may include a `title`, `date`, `source`, `url`, and `focus`,
 using the same entry fields as books and notes. `url` is the image URL or local
 filename, and optional `focus` stores the crop focus coordinates. The entry
 `title` supplies the image's accessible name.
+Optional `tags` is an array of strings used to filter the Armorials view.
+Optional `regions` is an array of named rectangular image areas. Each region
+has a `name` and normalized `x`, `y`, `width`, and `height` values from 0 to 1.
+Regions are displayed as labeled outlines and can be added or renamed in the
+local image viewer.
 If an image is stored locally, place it directly in `data/images/` and
 reference its filename in `img`. The viewer also accepts Google Drive thumbnail
 URLs in `img` for images that remain hosted in Drive.

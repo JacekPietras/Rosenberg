@@ -16,6 +16,7 @@ export async function renderActiveScreen({
   setupMap,
   render3dPage,
   renderArmorialsPage,
+  setupArmorialFilters,
   visibleLetterPaths,
   documentYear,
   renderYearSidebar,
@@ -69,6 +70,7 @@ export async function renderActiveScreen({
   }
   if (state.active === 'images/armorials') {
     content.innerHTML = renderArmorialsPage();
+    setupArmorialFilters();
     setupSealAnnotations();
     return;
   }

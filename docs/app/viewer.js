@@ -6,15 +6,16 @@ import { createDocumentRenderer } from './screens/documents.js';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js';
+import { createArmorialScreen } from './screens/armorials.js';
 import { createDataLoader } from './data/loader.js';
 import { createEntityScreens } from './screens/entities.js?v=79';
 import { createTabs } from './components/tabs.js';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=4';
 import { createMapScreen } from './screens/map.js?v=79';
-import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=77';
+import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=78';
 import { createMarkupRenderer } from './rendering/markup.js?v=79';
-import { createImageRenderer } from './rendering/images.js?v=1';
+import { createImageRenderer } from './rendering/images.js?v=2';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
 import { createLanguageRenderer } from './rendering/languages.js';
 import { createCitationIndex } from './data/citations.js';
@@ -32,12 +33,13 @@ function savePreferences() {
     hiddenLetterLabels: state.hiddenLetterLabels,
     sealNames: state.sealNames,
     sealType: state.sealType,
+    imageTags: state.imageTags,
     language: state.language,
     showFacts: state.showFacts,
     darkMode: state.darkMode,
   });
 }
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, imageTags: preferences.imageTags || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
 const route = store?.getState?.().route || { active: 'books' };
 store?.setState(state);
 const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
@@ -1256,6 +1258,7 @@ const sealScreen = createSealScreen({
   savePreferences,
   rerender: renderActive,
 });
+const armorialScreen = createArmorialScreen({ state, escapeHtml, formatDate, imageMarkup: imageRenderer, savePreferences, rerender: renderActive });
 
 const entityScreens = createEntityScreens({
   state,
@@ -1302,12 +1305,8 @@ async function renderActive() {
     render3dPage: () => `<div class="models-grid">${(state.manifest.collections || []).map((model) => model.type === 'link'
       ? `<a class="model-card model-collection-link" href="${escapeHtml(model.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(model.title)} collection">${model.preview ? `<img class="model-collection-preview" src="${escapeHtml(model.preview)}" alt="" referrerpolicy="no-referrer">` : ''}<div class="model-info"><h2>${escapeHtml(model.title)}</h2></div></a>`
       : `<article class="model-card"><div class="model-frame"><iframe title="${escapeHtml(model.title)}" src="https://sketchfab.com/models/${encodeURIComponent(model.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div><div class="model-info"><h2>${escapeHtml(model.title)}</h2></div></article>`).join('')}</div>`,
-    renderArmorialsPage: () => {
-      const path = state.manifest.armorials;
-      const document = path ? state.documents.get(path) : null;
-      if (!document) return '<p>No armorials are available.</p>';
-      return `<div class="models-grid armorial-grid">${(document.entries || []).map((entry, index) => `<article class="model-card armorial-card"><div class="model-info"><h2>${escapeHtml(entry.title || document.title)}</h2>${entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : ''}</div>${entry.url ? imageRenderer(entry.url, [], { path, index, title: entry.title || document.title, focus: entry.focus }) : ''}</article>`).join('')}</div>`;
-    },
+    renderArmorialsPage: armorialScreen.renderArmorialsPage,
+    setupArmorialFilters: armorialScreen.setupArmorialFilters,
     visibleLetterPaths,
     documentYear,
     renderYearSidebar,

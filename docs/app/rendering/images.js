@@ -3,6 +3,11 @@ import { localImageName, imageRootForPath } from './image-paths.js';
 import { sealAnnotationMarkup } from './seal-markup.js';
 
 export function createImageRenderer({ location = window.location } = {}) {
+  const regionMarkup = (regions = []) => regions.map((region) => {
+    const { x, y, width, height } = region || {};
+    if (![x, y, width, height].every((value) => Number.isFinite(Number(value))) || !String(region?.name || '').trim()) return '';
+    return `<span class="image-region" style="left:${Number(x) * 100}%;top:${Number(y) * 100}%;width:${Number(width) * 100}%;height:${Number(height) * 100}%"><span>${escapeHtml(region.name)}</span></span>`;
+  }).join('');
   return function imageMarkup(value = '', legacySeals = [], context = {}) {
     const nodes = Array.isArray(value) ? value : [value];
     const parts = location.pathname.split('/').filter(Boolean);
@@ -37,6 +42,7 @@ export function createImageRenderer({ location = window.location } = {}) {
         source = location.hostname.endsWith('github.io') ? `https://raw.githubusercontent.com/${owner}/${repository}/main/${encoded}` : `../${encoded}`;
       }
       const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals, escapeHtml);
+      const regions = context.showRegions === false ? '' : regionMarkup(node && typeof node === 'object' ? node.regions : context.regions);
       const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
       const focus = node && typeof node === 'object' ? node.cropFocus : context.focus;
       const focusAttributes = focus && [focus.x, focus.y, focus.width, focus.height].every((value) => Number.isFinite(Number(value)))
@@ -45,7 +51,7 @@ export function createImageRenderer({ location = window.location } = {}) {
       const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(alt)}" loading="lazy" referrerpolicy="no-referrer"${fallbackAttribute}${focusAttributes}>`;
       const edit = context.path && context.index !== null && context.index !== undefined ? ` data-document-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${context.imageIndex ?? imageIndex}"` : '';
       const link = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${edit}>${image}</a>`;
-      const content = context.crop ? `<span class="seal-crop is-loading" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}" data-seal-width="${context.crop.width ?? 0}" data-seal-widening-rotation="${context.crop.wideningRotation || 0}" data-seal-rotation="${context.crop.rotation || 0}">${link}</span>` : annotations ? `<span class="annotated-image">${link}${annotations}</span>` : link;
+      const content = context.crop ? `<span class="seal-crop is-loading" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}" data-seal-width="${context.crop.width ?? 0}" data-seal-widening-rotation="${context.crop.wideningRotation || 0}" data-seal-rotation="${context.crop.rotation || 0}">${link}</span>` : annotations || regions ? `<span class="annotated-image">${link}${annotations}${regions}</span>` : link;
       return `<figure class="entry-image">${content}</figure>`;
     }).filter(Boolean).join('');
     return images ? `<div class="entry-images">${images}</div>` : '';
