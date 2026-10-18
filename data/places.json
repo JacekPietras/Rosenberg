@@ -281,5 +281,26 @@
     "category": "city",
     "lat": 50.108061,
     "lon": 11.607823
+  },
+  {
+    "id": "gnoetzheim-st-johannis",
+    "variations": [
+      "Gnötzheim St Johannis",
+      "St. Johannes (Gnötzheim)",
+      "Johanniskirche Gnötzheim"
+    ],
+    "category": "church",
+    "lat": 49.616619,
+    "lon": 10.182073
+  },
+  {
+    "id": "muenzesheim-st-martin",
+    "variations": [
+      "Münzesheim St Martin",
+      "Martinskirche Münzesheim"
+    ],
+    "category": "church",
+    "lat": 49.124061,
+    "lon": 8.71487
   }
 ]

@@ -1068,6 +1068,57 @@
       ]
     },
     {
+      "label": "effigy",
+      "title": "Wölchingen, Arnold von Rosenberg [1447]",
+      "year": 1447,
+      "placeId": "wolchingen",
+      "source": "https://drive.google.com/file/d/1w_MA2ROt2Qn2svVKxalupbdPIVhX9uv-/view?usp=drive_link",
+      "url": "https://drive.google.com/thumbnail?id=1w_MA2ROt2Qn2svVKxalupbdPIVhX9uv-&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2125,
+          "y": 0.0032,
+          "width": 0.1615,
+          "height": 0.1425,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "label": "effigy",
+      "title": "Wölchingen, Eberhard X von Rosenberg [1449]",
+      "year": 1449,
+      "placeId": "wolchingen",
+      "source": "https://drive.google.com/file/d/1yZxiomRBSvjHSkeyrttb-8S4uhX0fNwx/view?usp=drive_link",
+      "url": "https://drive.google.com/thumbnail?id=1yZxiomRBSvjHSkeyrttb-8S4uhX0fNwx&sz=w1600",
+      "regions": [
+        {
+          "x": 0.317,
+          "y": 0.2766,
+          "width": 0.1174,
+          "height": 0.101,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "label": "effigy",
+      "title": "Wölchingen, unidentified Rosenberg effigy [1360-1420]",
+      "date": "1360-1420",
+      "placeId": "wolchingen",
+      "source": "https://drive.google.com/file/d/1Qx6afLfd4YYzCZIc48rRwhqxxLqv6Hn5/view?usp=drive_link",
+      "url": "https://drive.google.com/thumbnail?id=1Qx6afLfd4YYzCZIc48rRwhqxxLqv6Hn5&sz=w1600",
+      "regions": [
+        {
+          "x": 0.1762,
+          "y": 0.1114,
+          "width": 0.5716,
+          "height": 0.7241,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
       "title": "Amlishagen Katharinenkirche, Anna von Wollmershausen, born von Rosenberg, memorial with both family coats of arms",
       "source": "https://drive.google.com/file/d/19mIPUPlXeljyKFUekQNmLV4xBdmz-yDk/view",
       "url": "https://drive.google.com/thumbnail?id=19mIPUPlXeljyKFUekQNmLV4xBdmz-yDk&sz=w1600",
@@ -1647,6 +1698,85 @@
       "date": "1743",
       "coverImage": "https://drive.google.com/thumbnail?id=1RgbTgt7wwCUSyujfN0Ed__Jqurl78Whq&sz=w1600",
       "placeId": "wurzburg"
+    },
+    {
+      "title": "Gnötzheim St Johannis, tomb of Konrad von Rosenberg",
+      "date": "1596",
+      "label": "effigy",
+      "source": "https://drive.google.com/file/d/1kE9oWGyZDpiEFOpsuqN50NAdN_BGlILb/view — https://commons.wikimedia.org/wiki/File:Gnoetzheim12.jpg — Photograph by PeterBraun74, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Identification: https://www.martinsheim.de/kultur-freizeit/geschichte/chronik-gnoetzheim.html. Attribution to Michel Niklas: Hans-Ulrich Hofmann, Michel Niklas. Leben und Werk eines tauberfränkischen Bildhauers, Frankenland 2 (2020), p. 99: https://journals.bibliothek.uni-wuerzburg.de/frl-nf/article/download/8953/8995/9255#page=4",
+      "url": "https://drive.google.com/thumbnail?id=1kE9oWGyZDpiEFOpsuqN50NAdN_BGlILb&sz=w1600",
+      "placeId": "gnoetzheim-st-johannis"
+    },
+    {
+      "title": "Münzesheim St Martin, grave slab of Hans Hofwart von Kirchheim with Rosenberg family arms",
+      "date": "1522",
+      "label": "effigy",
+      "source": "https://drive.google.com/file/d/1MFj3jo9-Vl96W_RoneIzLz8GoSZK2UnE/view — https://commons.wikimedia.org/wiki/File:Hans_Hofwart_v._Kirchheim.jpeg — Photograph by Wikimedia Commons user Hofwart, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). The inscription records 20 July 1522; the Rosenberg shield is at the upper right.",
+      "url": "https://drive.google.com/thumbnail?id=1MFj3jo9-Vl96W_RoneIzLz8GoSZK2UnE&sz=w1600",
+      "regions": [
+        {
+          "x": 0.53,
+          "y": 0.095,
+          "width": 0.26,
+          "height": 0.16,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Münzesheim St Martin, grave slab of Kunigunde Hofwart von Kirchheim, born von Rosenberg",
+      "date": "1545",
+      "label": "effigy",
+      "source": "https://drive.google.com/file/d/1rQxqwCxGWUKpVjQGjsMN5JjeBlpMDRTU/view — https://commons.wikimedia.org/wiki/File:Kunigunde_Hofwart_v._Kirchheim_geb._v._Rosenberg.jpeg — Photograph by Wikimedia Commons user Hofwart, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). The inscription records 1 March 1545. Historical photograph: Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe, 498-1 Nr. 7305 (1913): https://www.landesarchiv-bw.de/plink/?f=4-1084497",
+      "url": "https://drive.google.com/thumbnail?id=1rQxqwCxGWUKpVjQGjsMN5JjeBlpMDRTU&sz=w1600",
+      "regions": [
+        {
+          "x": 0.17,
+          "y": 0.35,
+          "width": 0.6,
+          "height": 0.405,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Bönnigheim Cyriakuskirche, double monument of Albrecht von Liebenstein and Margaretha, born von Rosenberg",
+      "date": "1616",
+      "label": "effigy",
+      "source": "https://drive.google.com/file/d/10iOajuAWjy26NE0RpnsQu4lnksrKYwYh/view — Otfried Kies, Begräbniskultur in Bönnigheim vom 16.-18. Jahrhundert, pp. 12–13: https://journals.wlb-stuttgart.de/index.php/zz/article/download/19265/19285/37560#page=3. Photograph by Kurt Sartorius, extracted from p. 13. The text dates the monument probably shortly after 1616; no exact creation year is established.",
+      "url": "https://drive.google.com/thumbnail?id=10iOajuAWjy26NE0RpnsQu4lnksrKYwYh&sz=w1600",
+      "regions": [
+        {
+          "x": 0.87,
+          "y": 0.15,
+          "width": 0.09,
+          "height": 0.11,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Waldmannshofen Evangelical church, grave slab of Albrecht Christoph von Rosenberg",
+      "date": "1632",
+      "label": "effigy",
+      "source": "https://drive.google.com/file/d/1DKamlZEGN-rUOg0psG4lQ12YQvvSwv7g/view — Helmut Neumaier, Superintendentur, Synodus und Konsistorium: Die Kirchenherrschaft der Reichsritter von Rosenberg, p. 204, fig. 28: https://regionalia.blb-karlsruhe.de/files/21097/BLB_Neumaier_Kirchenherrschaft_Rosenberg.pdf#page=5. Photograph reproduced from Harald Drös, Die Inschriften des ehemaligen Landkreises Mergentheim (Die Deutschen Inschriften 54), 2002, no. 471, fig. 281. Extracted from the PDF figure. The slab explicitly names the Franconian Rosenberg family; only the death year is recorded here because published sources disagree on the month.",
+      "url": "https://drive.google.com/thumbnail?id=1DKamlZEGN-rUOg0psG4lQ12YQvvSwv7g&sz=w1600",
+      "placeId": "waldmannshofen-evangelical-church",
+      "regions": [
+        {
+          "x": 0.167,
+          "y": 0.0635,
+          "width": 0.2761,
+          "height": 0.1911,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Matthias Zündt, The Abduction of Hieronymus Paumgartner by Albrecht von Rosenberg, Metropolitan Museum of Art 26.35.11",
+      "date": "1540-1550",
+      "source": "https://drive.google.com/file/d/1F4kT-9sKrnSxpGljZpuEz8xiICIw_qPt/view — https://www.metmuseum.org/art/collection/search/726150 — Matthias Zündt, The Abduction of Hieronymus Paumgartner, etching, ca. 1545; the museum API gives the date bounds 1540–1550. Harris Brisbane Dick Fund, 1926, object 26.35.11. Public domain image: https://images.metmuseum.org/CRDImages/dp/original/DP864079.jpg. The museum's earlier title explicitly names Albrecht von Rosenberg, preserved in its Commons image record: https://commons.wikimedia.org/wiki/File:Albrecht_von_Rosenberg_abducting_Hieronymus_Paumgartner_MET_DP864079.jpg",
+      "url": "https://drive.google.com/thumbnail?id=1F4kT-9sKrnSxpGljZpuEz8xiICIw_qPt&sz=w1600"
     }
   ]
 }
