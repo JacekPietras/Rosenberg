@@ -233,10 +233,17 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .map-credit { margin: 1rem 0 1.5rem; color: var(--faint); font-size: .72rem; }
 .map-credit a { color: var(--muted); }
 .models-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.model-card { display: block; overflow: hidden; color: inherit; text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.model-card { position: relative; display: block; overflow: hidden; color: inherit; text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
 .image-record-visual { position: relative; }
-.image-label { position: absolute; z-index: 2; top: .5rem; right: .5rem; padding: .12rem .4rem; border-radius: 999px; background: var(--surface); color: var(--ink); font-size: .72rem; text-transform: capitalize; }
+.image-label-controls { position: absolute; z-index: 2; top: .5rem; right: .5rem; display: flex; align-items: center; gap: .3rem; }
+.image-label { padding: .12rem .4rem; border-radius: 999px; background: var(--surface); color: var(--ink); font-size: .72rem; text-transform: capitalize; }
+.image-label-edit { display: inline-grid; width: 1.65rem; height: 1.65rem; place-items: center; padding: .25rem; color: var(--muted); background: var(--surface); border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.image-label-edit:hover, .image-label-edit:focus-visible { color: var(--accent); background: var(--surface-raised); }
+.image-label-edit svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.image-label-dialog-form > label { display: block; margin: .7rem 0 .3rem; color: var(--muted); font-size: .82rem; }
+.image-label-dialog-form > input { width: 100%; box-sizing: border-box; padding: .5rem; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 5px; }
 .model-collection-link:hover { border-color: var(--accent); }
+.model-collection-anchor { display: block; color: inherit; text-decoration: none; }
 .model-frame { aspect-ratio: 16 / 10; background: var(--surface-soft); }
 .model-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
 .model-collection-preview { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: left top; background: var(--surface-soft); }

@@ -4,9 +4,10 @@ import { renderPeopleTree } from './screens/tree.js?v=80';
 import { renderActiveScreen } from './screens/router-view.js?v=2';
 import { createDocumentRenderer } from './screens/documents.js';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
+import { setupImageLabelSelector } from './screens/image-label-selector.js';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js';
-import { createImageScreen } from './screens/images.js?v=23';
+import { createImageScreen } from './screens/images.js?v=24';
 import { createDataLoader } from './data/loader.js?v=3';
 import { createEntityScreens } from './screens/entities.js?v=79';
 import { createTabs } from './components/tabs.js?v=2';
@@ -1396,6 +1397,7 @@ setupControls({ state, repository, updateLanguageControl, updateFactsControl, ap
 
 setupImageLightboxComponent({ state, repository, rerender: renderActive });
 setupLetterLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
+setupImageLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
 repository.isLocalServer().then((isLocal) => {
   state.canEditDocuments = isLocal;
   if (isLocal && state.manifest) renderActive();

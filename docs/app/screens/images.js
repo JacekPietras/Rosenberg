@@ -37,14 +37,22 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferen
         || names.some((name) => selectedRegions.includes(name));
       return matchesLabel && matchesRegion;
     });
+    const labelMarkup = (entry, index) => {
+      const label = String(entry.label || '').trim();
+      const badge = label ? `<span class="image-label">${escapeHtml(label)}</span>` : '';
+      const editor = state.canEditDocuments
+        ? `<button class="image-label-edit" type="button" data-edit-image-label="${index}" aria-label="Edit image label" title="Edit label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg></button>`
+        : '';
+      return badge || editor ? `<span class="image-label-controls">${badge}${editor}</span>` : '';
+    };
     const cards = matchingEntries.map(({ entry, index }) => {
       const previewRegions = selectedRegions.length
         ? (entry.regions || []).filter((region) => selectedRegions.includes(normalize(region?.name)))
         : entry.regions;
       const previewFocus = selectedRegions.length ? previewRegions[0] : entry.focus;
-      const label = `<span class="image-label">${escapeHtml(entry.label || '')}</span>`;
+      const label = labelMarkup(entry, index);
       const displayTitle = [entry.title || document.title, entry.date ? `[${entry.date}]` : ''].filter(Boolean).join(' ');
-      if (entry.type === 'link' && entry.url) return `<a class="model-card model-collection-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(entry.title || 'image collection')}">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}<div class="model-info"><h2>${escapeHtml(entry.title || document.title)}</h2></div><div class="image-record-visual">${label}</div></a>`;
+      if (entry.type === 'link' && entry.url) return `<article class="model-card model-collection-link"><a class="model-collection-anchor" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(entry.title || 'image collection')}">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}<div class="model-info"><h2>${escapeHtml(entry.title || document.title)}</h2></div></a>${label}</article>`;
       if (entry.label === 'effigy') return entry.id
         ? `<article class="model-card"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual"><div class="model-frame"><iframe title="${escapeHtml(entry.title)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>${label}</div></article>`
         : `<a class="model-card model-collection-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}${label}</div></a>`;
