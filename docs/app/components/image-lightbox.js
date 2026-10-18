@@ -18,6 +18,10 @@ export function setupImageLightbox({ state, repository, rerender }) {
   const previewName = preview?.querySelector('.image-lightbox-seal-preview-name');
   const regionButton = $('#image-lightbox-add-region');
   const removeRegionButton = $('#image-lightbox-remove-region');
+  const collectionNavigation = $('#image-lightbox-collection-navigation');
+  const collectionPrevious = $('#image-lightbox-collection-previous');
+  const collectionNext = $('#image-lightbox-collection-next');
+  const collectionPosition = $('#image-lightbox-collection-position');
   const closeButton = $('#image-lightbox-close');
   if (!lightbox || !image || !stage || !annotations || !closeButton) return;
 
@@ -36,6 +40,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     });
   };
   let context = null;
+  let collectionLinks = null;
   let visibleRegions = [];
   let selectedIndex = null;
   let selectedRegionIndex = null;
@@ -49,6 +54,14 @@ export function setupImageLightbox({ state, repository, rerender }) {
   const MAGNIFIER_SIZE_STEP = 0.01;
   let magnifierSize = MAGNIFIER_SIZE;
   let saveQueue = Promise.resolve();
+  const driveFileId = (value) => {
+    try {
+      const url = new URL(String(value || ''), location.href);
+      if (url.hostname === 'drive.google.com') return url.searchParams.get('id') || '';
+      if (url.hostname.endsWith('googleusercontent.com')) return url.pathname.match(/\/d\/([^/=]+)/)?.[1] || '';
+    } catch {}
+    return '';
+  };
   const currentSeals = () => context?.node?.seals || [];
   const currentRegions = () => context?.node?.regions || context?.entry?.regions || visibleRegions;
   const magnifierMaximumSize = () => {
@@ -95,6 +108,8 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const removeImage = $('#image-lightbox-remove-image'); if (removeImage) removeImage.hidden = Boolean(context?.entryImage);
     [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => { const input = $(selector); if (input) { input.disabled = !selected; input.value = String(Number(selected?.[key]) || 0); } });
     document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => { input.disabled = !selected; input.checked = Boolean(selected && SEAL_TYPES.has(selected.type) && selected.type === input.value); });
+    if (collectionNavigation) collectionNavigation.hidden = !collectionLinks || collectionLinks.links.length < 2;
+    if (collectionPosition) collectionPosition.textContent = collectionLinks ? `${collectionLinks.index + 1} / ${collectionLinks.links.length}` : '';
   };
   const updateFocusOverlay = () => {
     regionOverlay?.classList.toggle('is-visible', regionMode);
@@ -145,8 +160,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     return { x: Number(x.toFixed(4)), y: Number(y.toFixed(4)), width: Number(width.toFixed(4)), height: Number(height.toFixed(4)) };
   };
   if ($('#image-lightbox-editor')) $('#image-lightbox-editor').hidden = !editable;
-  $('#content')?.addEventListener('click', (event) => {
-    const link = event.target?.closest?.('.image-link'); if (!link) return; event.preventDefault();
+  const openImageLink = (link) => {
     const path = link.dataset.documentPath; const entryIndex = Number(link.dataset.entryIndex); const imageIndex = Number(link.dataset.imageIndex); const entry = path ? state.documents.get(path)?.entries?.[entryIndex] : null;
     let node = entry && (Array.isArray(entry.img) ? entry.img[imageIndex] : entry.img);
     visibleRegions = node && typeof node === 'object' ? node.regions || [] : entry?.regions || [];
@@ -156,15 +170,74 @@ export function setupImageLightbox({ state, repository, rerender }) {
       : editable && entry && node && typeof node === 'object' ? { path, node, entry, entryIndex, imageIndex } : null;
     if (context?.node && !Array.isArray(context.node.seals)) context.node.seals = [];
     selectedIndex = null; selectedRegionIndex = null; regionMode = false; lightbox.classList.toggle('is-editable', Boolean(context)); render();
-    image.onerror = () => { const fallback = link.dataset.imageFallback; if (fallback && image.src !== fallback) image.src = fallback; };
-    image.src = link.querySelector('img')?.currentSrc || link.dataset.imageSrc; image.alt = link.querySelector('img')?.alt || ''; image.onload = () => { updateGeometry(); updatePreview(); };
+    const item = entry && Array.isArray(entry.img) ? entry.img[imageIndex] : null;
+    const directSource = collectionLinks?.entry === entry ? (typeof item === 'string' ? item : item?.src) : '';
+    const sources = [...new Set([directSource, link.dataset.imageSrc, link.dataset.imageFallback, link.querySelector('img')?.currentSrc].filter(Boolean))];
+    let sourceIndex = 0;
+    image.onerror = () => { sourceIndex += 1; if (sourceIndex < sources.length) image.src = sources[sourceIndex]; };
+    image.onload = () => { updateGeometry(); updatePreview(); };
+    image.alt = link.querySelector('img')?.alt || (typeof item === 'object' ? item?.name : '') || '';
+    image.src = sources[sourceIndex] || '';
     if (typeof lightbox.showModal === 'function') {
       if (!lightbox.open) lightbox.showModal();
     } else {
       lightbox.setAttribute('open', '');
     }
     updateGeometry();
+  };
+  $('#content')?.addEventListener('click', (event) => {
+    const coverButton = event.target?.closest?.('[data-open-collection-cover]');
+    if (coverButton) {
+      event.preventDefault();
+      const entryIndex = Number(coverButton.dataset.openCollectionCover);
+      const entry = state.documents.get(state.manifest.images)?.entries?.[entryIndex];
+      const links = [...coverButton.parentElement.querySelectorAll('.model-collection-cover-images .image-link')];
+      if (!entry || !links.length) return;
+      const currentCover = entry.coverImage || entry.preview;
+      const currentDriveId = driveFileId(currentCover);
+      const matchingLink = links.findIndex((link) => {
+        const child = entry.img[Number(link.dataset.imageIndex)];
+        const source = typeof child === 'string' ? child : child?.src;
+        return currentDriveId ? driveFileId(source) === currentDriveId : source === currentCover;
+      });
+      const index = matchingLink >= 0 ? matchingLink : 0;
+      collectionLinks = { entry, entryIndex, links, index };
+      openImageLink(links[index]);
+      return;
+    }
+    const link = event.target?.closest?.('.image-link'); if (!link) return; event.preventDefault();
+    collectionLinks = null;
+    openImageLink(link);
   });
+  const moveCollectionCover = async (step) => {
+    if (!collectionLinks) return;
+    const nextIndex = (collectionLinks.index + step + collectionLinks.links.length) % collectionLinks.links.length;
+    const link = collectionLinks.links[nextIndex];
+    const node = collectionLinks.entry.img?.[Number(link.dataset.imageIndex)];
+    const source = typeof node === 'string' ? node : node?.src;
+    if (!source) return;
+    if (context && !await save()) return;
+    const previousIndex = collectionLinks.index;
+    const previousCover = collectionLinks.entry.coverImage;
+    collectionLinks.index = nextIndex;
+    collectionLinks.entry.coverImage = source;
+    if (editable) try {
+      setStatus('Saving cover…');
+      await repository.saveDocument(state.manifest.images, state.documents.get(state.manifest.images));
+      state.snapshot = '';
+      setStatus('');
+    } catch (error) {
+      collectionLinks.index = previousIndex;
+      if (previousCover === undefined) delete collectionLinks.entry.coverImage;
+      else collectionLinks.entry.coverImage = previousCover;
+      console.error('Failed to save collection cover image', error);
+      setStatus(error?.message || String(error), true);
+      return;
+    }
+    openImageLink(link);
+  };
+  collectionPrevious?.addEventListener('click', () => moveCollectionCover(-1));
+  collectionNext?.addEventListener('click', () => moveCollectionCover(1));
   window.addEventListener('resize', () => { updateGeometry(); updatePreview(); }, { passive: true });
   regionButton?.addEventListener('click', () => { regionMode = !regionMode; ignoreFocusClick = false; selectedIndex = null; updateFocusOverlay(); });
   removeRegionButton?.addEventListener('click', async () => {
@@ -259,5 +332,5 @@ export function setupImageLightbox({ state, repository, rerender }) {
   });
   lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
   lightbox.addEventListener('cancel', (event) => { event.preventDefault(); close(); });
-  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (preview) preview.hidden = true; context = null; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
+  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
 }

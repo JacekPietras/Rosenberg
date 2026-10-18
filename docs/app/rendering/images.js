@@ -24,9 +24,10 @@ export function createImageRenderer({ location = window.location } = {}) {
         if (driveUrl.hostname === 'drive.google.com') {
           if (!/\.(?:svg|png|jpe?g|gif|webp)$/i.test(alt) && !context.title) return '';
           const driveFileId = driveUrl.searchParams.get('id');
-          source = driveUrl.pathname === '/thumbnail' && driveFileId
-            ? `https://lh3.googleusercontent.com/d/${encodeURIComponent(driveFileId)}=${driveUrl.searchParams.get('sz') || 'w1600'}`
-            : fileName;
+          if (driveUrl.pathname === '/thumbnail' && driveFileId) {
+            fallback = fileName;
+            source = `https://lh3.googleusercontent.com/d/${encodeURIComponent(driveFileId)}=${driveUrl.searchParams.get('sz') || 'w1600'}`;
+          } else source = fileName;
         } else {
         fallback = fileName; const localName = localImageName(fileName);
         if (!/\.(?:svg|png|jpe?g|gif|webp)$/i.test(localName)) return '';

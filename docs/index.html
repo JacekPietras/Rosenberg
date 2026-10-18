@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0d0f11">
   <link rel="icon" type="image/svg+xml" href="assets/von-rosenberg.svg">
   <title>Rosenberg sources</title>
-  <link rel="stylesheet" href="styles.css?v=109">
+  <link rel="stylesheet" href="styles.css?v=112">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
@@ -54,6 +54,11 @@
   <dialog id="image-lightbox" class="image-lightbox" aria-label="Image viewer">
     <button id="image-lightbox-close" class="image-lightbox-close" type="button" aria-label="Close image viewer" title="Close"><span class="image-lightbox-close-icon" aria-hidden="true"></span></button>
     <div id="image-lightbox-editor" class="image-lightbox-editor" hidden>
+      <span id="image-lightbox-collection-navigation" class="image-lightbox-collection-navigation" hidden aria-label="Collection cover images">
+        <button id="image-lightbox-collection-previous" type="button" aria-label="Previous collection image">‹</button>
+        <span id="image-lightbox-collection-position" aria-live="polite"></span>
+        <button id="image-lightbox-collection-next" type="button" aria-label="Next collection image">›</button>
+      </span>
       <button id="image-lightbox-add-region" type="button" aria-pressed="false" title="Draw and name an area on this image">Add named region</button>
       <button id="image-lightbox-remove-region" type="button" hidden>Remove selected region</button>
       <button id="image-lightbox-add-seal" type="button">Add seal</button>
@@ -86,6 +91,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script type="module" src="app.js?v=112"></script>
+  <script type="module" src="app.js?v=115"></script>
 </body>
 </html>
