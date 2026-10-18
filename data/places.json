@@ -113,6 +113,7 @@
   },
   {
     "variations": [
+      "Arnstein",
       "Arnstein Maria Sondheim"
     ],
     "category": "church",
@@ -130,7 +131,18 @@
     "id": "aub"
   },
   {
+    "id": "reichelsburg-aub",
     "variations": [
+      "Reichelsburg",
+      "Reichelsburg, Aub"
+    ],
+    "category": "castle",
+    "lat": 49.5465,
+    "lon": 10.0513
+  },
+  {
+    "variations": [
+      "Donzdorf",
       "Donzdorf St Martin"
     ],
     "category": "church",
@@ -140,6 +152,7 @@
   },
   {
     "variations": [
+      "Erthalschloss",
       "Erthalschloss, Elfershausen"
     ],
     "category": "castle",
@@ -149,6 +162,7 @@
   },
   {
     "variations": [
+      "Euerbach",
       "Euerbach Saints Cosmas and Damian Church"
     ],
     "category": "church",
@@ -158,6 +172,7 @@
   },
   {
     "variations": [
+      "Fulda",
       "Fulda Cathedral"
     ],
     "category": "church",
@@ -185,6 +200,7 @@
   },
   {
     "variations": [
+      "Hessenthal",
       "Hessenthal Wallfahrtskirche"
     ],
     "category": "church",
@@ -194,6 +210,7 @@
   },
   {
     "variations": [
+      "Mosbach",
       "Mosbach St Juliana"
     ],
     "category": "church",
@@ -212,6 +229,7 @@
   },
   {
     "variations": [
+      "Liebenstein",
       "Schloss Liebenstein, Neckarwestheim"
     ],
     "category": "castle",
@@ -221,6 +239,7 @@
   },
   {
     "variations": [
+      "Haltenbergstetten",
       "Schloss Haltenbergstetten, Niederstetten"
     ],
     "category": "castle",
@@ -239,6 +258,7 @@
   },
   {
     "variations": [
+      "Sindolsheim",
       "Sindolsheim Evangelical Church"
     ],
     "category": "church",
@@ -257,6 +277,7 @@
   },
   {
     "variations": [
+      "Stöckenburg",
       "Stöckenburg Martinskirche"
     ],
     "category": "church",
@@ -266,6 +287,7 @@
   },
   {
     "variations": [
+      "Unterschüpf",
       "Unterschüpf Evangelical Church"
     ],
     "category": "church",
@@ -274,7 +296,18 @@
     "id": "unterschuepf-evangelical-church"
   },
   {
+    "id": "unterschuepf-wasserschloss",
     "variations": [
+      "Unterschüpf",
+      "Wasserschloss, Unterschüpf"
+    ],
+    "category": "castle",
+    "lat": 49.5148,
+    "lon": 9.6885
+  },
+  {
+    "variations": [
+      "Wildenberg",
       "Wildenberg Castle"
     ],
     "category": "castle",
@@ -284,12 +317,53 @@
   },
   {
     "variations": [
+      "Waldmannshofen",
       "Waldmannshofen Evangelical Church"
     ],
     "category": "church",
     "lat": 49.485,
     "lon": 9.912,
     "id": "waldmannshofen-evangelical-church"
+  },
+  {
+    "id": "waldmannshofen-castle",
+    "variations": [
+      "Waldmannshofen",
+      "Schloss Waldmannshofen"
+    ],
+    "category": "castle",
+    "lat": 49.5341,
+    "lon": 10.0670
+  },
+  {
+    "id": "wehrkirche-angeltuern",
+    "variations": [
+      "Angeltürn",
+      "Wehrkirche, Angeltürn"
+    ],
+    "category": "church",
+    "lat": 49.4877,
+    "lon": 9.5978
+  },
+  {
+    "id": "burg-oberlauda",
+    "variations": [
+      "Oberlauda",
+      "Burg Oberlauda"
+    ],
+    "category": "castle",
+    "lat": 49.5645,
+    "lon": 9.6790
+  },
+  {
+    "id": "burg-schweinberg",
+    "variations": [
+      "Schweinberg",
+      "Burg Schweinberg"
+    ],
+    "category": "castle",
+    "lat": 49.6208,
+    "lon": 9.5206
   },
   {
     "id": "wirsberg",
@@ -304,6 +378,7 @@
   {
     "id": "gnoetzheim-st-johannis",
     "variations": [
+      "Gnötzheim",
       "Gnötzheim St Johannis",
       "St. Johannes (Gnötzheim)",
       "Johanniskirche Gnötzheim"
@@ -315,6 +390,7 @@
   {
     "id": "muenzesheim-st-martin",
     "variations": [
+      "Münzesheim",
       "Münzesheim St Martin",
       "Martinskirche Münzesheim"
     ],
