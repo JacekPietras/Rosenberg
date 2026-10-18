@@ -1,15 +1,15 @@
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree } from './screens/tree.js?v=80';
-import { renderActiveScreen } from './screens/router-view.js?v=1';
+import { renderActiveScreen } from './screens/router-view.js?v=2';
 import { createDocumentRenderer } from './screens/documents.js';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js';
-import { createArmorialScreen } from './screens/armorials.js?v=15';
-import { createDataLoader } from './data/loader.js?v=2';
+import { createArmorialScreen } from './screens/armorials.js?v=17';
+import { createDataLoader } from './data/loader.js?v=3';
 import { createEntityScreens } from './screens/entities.js?v=79';
-import { createTabs } from './components/tabs.js';
+import { createTabs } from './components/tabs.js?v=1';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=4';
 import { createMapScreen } from './screens/map.js?v=79';
@@ -1346,16 +1346,16 @@ async function loadAllLegacy() {
     books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
     notes: paths.includes('data/notes/notes.json'),
     letters: letterPaths,
-    armorials: paths.find((path) => path === 'data/images/armorials.json') || null,
-    collections: documents.get('data/images/effigies.json') || [],
+    images: paths.find((path) => path === 'data/images/images.json') || null,
+    collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => item.label === 'effigy'),
   };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
   if (!letterPaths.some((path) => letterHasMissingSourceOrUrl(path))) state.letterLabels = state.letterLabels.filter((label) => label !== MISSING_LETTER_LABEL);
   if (!Array.isArray(state.hiddenLetterLabels)) state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
   state.sealNames = [...new Set(state.sealNames.map(normalizeSealFilter).filter(Boolean))];
   if (state.active === 'books') state.active = manifest.books[0]?.path || 'letters';
-  if (state.active === 'images' || state.active === 'armorials') state.active = 'images/armorials';
-  if (state.active !== 'letters' && state.active !== 'seals' && state.active !== 'tree' && state.active !== 'map' && state.active !== 'images/armorials' && state.active !== 'images/effigies' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
+  if (state.active === 'images' || state.active === 'armorials' || state.active === 'images/armorials' || state.active === 'images/effigies') state.active = 'images/all';
+  if (state.active !== 'letters' && state.active !== 'seals' && state.active !== 'tree' && state.active !== 'map' && state.active !== 'images/all' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
   savePreferences();
   renderTabs(); await renderActive();
 }

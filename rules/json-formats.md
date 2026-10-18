@@ -91,17 +91,17 @@ Each seal may have one `type`: `contrepalle`, `swans`, `helm`, or `full`.
 The Seals tab's `unknown` filter shows seals whose type is not filled;
 `unknown` is not an editable type.
 
-## Armorials JSON
+## Images JSON
 
-`data/images/armorials.json` is an object with a `title` and an `entries`
-array. Each entry may include a `title`, `date`, `source`, and `url`, using the
-same entry fields as books and notes. `url` is the image URL or local filename.
+`data/images/images.json` is an object with a `title` and an `entries`
+array. Each entry has a `label` of `armorial` or `effigy`. Armorial entries may
+include a `title`, `date`, `source`, and `url`. `url` is the image URL or local filename.
 The entry `title` supplies the image's accessible name.
 In filenames, write dates as `[YYYY]` or `[YYYY-YYYY]` (for example, an
 armorial dated `[1370-1414]`). Format armorial names as
 `<armorial name><additional details> [<date>] <folio>`, omitting additional
 details or the folio when unavailable.
-Optional `tags` is an array of strings used to filter the Armorials view.
+Optional `tags` is an array of strings used to filter the Images view.
 Optional `regions` is an array of named rectangular image areas. Each region
 has a `name` and normalized `x`, `y`, `width`, and `height` values from 0 to 1.
 Regions are displayed as labeled outlines and can be added or renamed in the
@@ -112,10 +112,11 @@ URLs in `img` for images that remain hosted in Drive.
 
 ```json
 {
-  "title": "Armorials",
+  "title": "Images",
   "entries": [
     {
       "title": "Family arms",
+      "label": "armorial",
       "source": "Source citation",
       "url": "family-arms.png"
     }
@@ -123,12 +124,10 @@ URLs in `img` for images that remain hosted in Drive.
 }
 ```
 
-## Effigies JSON
-
-`data/images/effigies.json` is an array of image or model records. Sketchfab
-records use `title`, `id`, `url`, and optional `year` and `preview` image URL. Drive
-collection records use `type: "link"`, `title`, `url`, and an optional `preview` image URL.
-An optional `placeId` refers to the matching place ID in `data/places.json`.
+Effigy Sketchfab records use `title`, `id`, `url`, and optional `year` and
+`preview` image URL. Drive collection records use `type: "link"`, `title`,
+`url`, and an optional `preview` image URL. An optional `placeId` refers to
+the matching place ID in `data/places.json`.
 
 ## People JSON
 

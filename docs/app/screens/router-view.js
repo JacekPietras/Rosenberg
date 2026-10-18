@@ -64,11 +64,7 @@ export async function renderActiveScreen({
     setupMap();
     return;
   }
-  if (state.active === 'images/effigies') {
-    content.innerHTML = render3dPage();
-    return;
-  }
-  if (state.active === 'images/armorials') {
+  if (state.active === 'images/all') {
     content.innerHTML = renderArmorialsPage();
     setupArmorialFilters();
     setupSealAnnotations();

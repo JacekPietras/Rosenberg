@@ -9,10 +9,7 @@ export function createTabs({ state, escapeHtml, clearScreenCaches, savePreferenc
       { path: 'images', label: 'Images' },
       { path: 'tree', label: 'Tree' },
     ];
-    const imagePages = [
-      { path: 'images/armorials', label: 'Armorials' },
-      { path: 'images/effigies', label: 'Effigies' },
-    ];
+    const imagePages = [{ path: 'images/all', label: 'Images' }];
     const bookIsActive = state.active === 'books' || state.manifest.books.some((book) => book.path === state.active);
     const imagesAreActive = state.active.startsWith('images/');
     const tabsElement = document.querySelector('#tabs');

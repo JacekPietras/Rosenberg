@@ -37,8 +37,8 @@ export function createDataLoader({
       books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
       notes: paths.includes('data/notes/notes.json'),
       letters: letterPaths,
-      armorials: paths.find((path) => path === 'data/images/armorials.json') || null,
-      collections: documents.get('data/images/effigies.json') || [],
+      images: paths.find((path) => path === 'data/images/images.json') || null,
+      collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => item.label === 'effigy'),
     };
     state.documents = documents;
     state.snapshot = snapshot;
@@ -50,9 +50,8 @@ export function createDataLoader({
       return value === 'unknown' ? '__no_region__' : value;
     }).filter(Boolean))];
     if (state.active === 'books') state.active = state.manifest.books[0]?.path || 'letters';
-    if (state.active === 'images') state.active = 'images/armorials';
-    if (state.active === 'armorials') state.active = 'images/armorials';
-    const reserved = ['letters', 'seals', 'tree', 'map', 'images/armorials', 'images/effigies'];
+    if (state.active === 'images' || state.active === 'armorials' || state.active === 'images/armorials' || state.active === 'images/effigies') state.active = 'images/all';
+    const reserved = ['letters', 'seals', 'tree', 'map', 'images/all'];
     if (!reserved.includes(state.active) && !paths.includes(state.active)) state.active = state.manifest.books[0]?.path || 'letters';
     savePreferences();
     renderTabs();

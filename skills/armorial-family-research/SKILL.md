@@ -7,7 +7,7 @@ description: Find new armorial pages depicting a supplied family and verify them
 
 Find additional, image-verifiable armorial pages for the requested family. Unless the user specifies otherwise, prioritize c. 1300–1450.
 
-1. Read `AGENTS.md`, `README.md`, `rules/json-formats.md`, and `data/images/armorials.json`. Check relevant spellings in `data/names.md`. Compare armorial, shelfmark, folio/page, image ID, and family regions: a new page in a known armorial can still be a new find.
+1. Read `AGENTS.md`, `README.md`, `rules/json-formats.md`, and `data/images/images.json`. Check relevant spellings in `data/names.md`. Compare armorial, shelfmark, folio/page, image ID, and family regions: a new page in a known armorial can still be a new find.
 2. Search family-name variants and historic forms in digitized manuscript catalogs and library/archive collections. Treat indexes and transcriptions as leads; follow them to the scan, viewer, or IIIF manifest. Prefer primary catalog records and preserve uncertain dates and readings.
 3. Inspect the actual page image. A candidate counts only when the image is viewable and the family can be identified from its label or clearly supported heraldic evidence. Confirm folio labels from the viewer or manifest; never infer them from neighboring image numbers. Record the evidence and link both the catalog record and visual page.
 4. Report title, repository/shelfmark, date, folio, family form, working image/viewer link, evidence, and whether the page is new or already represented. State access and coverage limits; do not count text-only or inaccessible-image results as verified finds.
