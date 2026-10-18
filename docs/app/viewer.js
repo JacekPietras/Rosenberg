@@ -7,7 +7,7 @@ import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js';
-import { createImageScreen } from './screens/images.js?v=25';
+import { createImageScreen } from './screens/images.js?v=26';
 import { createDataLoader } from './data/loader.js?v=3';
 import { createEntityScreens } from './screens/entities.js?v=79';
 import { createTabs } from './components/tabs.js?v=2';
