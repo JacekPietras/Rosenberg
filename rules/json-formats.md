@@ -127,9 +127,12 @@ URLs in `img` for images that remain hosted in Drive.
 ```
 
 Effigy Sketchfab records use `title`, `id`, `url`, and optional `year` and
-`preview` image URL. Drive collection records use `type: "link"`, `title`,
-`url`, and an optional `preview` image URL. An optional `placeId` refers to
-the matching place ID in `data/places.json`.
+`preview` image URL. An effigy may also be a Drive collection record with
+`type: "link"`, a Drive folder `url`, `sketchfabUrl`, and an `img` array of
+source photographs. Use `coverImage` to select a photo from `img` and
+`regions` to mark named areas on its preview. Other Drive collection records
+use `type: "link"`, `title`, `url`, and an optional `preview` image URL. An
+optional `placeId` refers to the matching place ID in `data/places.json`.
 
 ## People JSON
 

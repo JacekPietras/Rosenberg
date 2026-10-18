@@ -176,13 +176,14 @@ export function setupImageLightbox({ state, repository, rerender }) {
     let sourceIndex = 0;
     image.onerror = () => { sourceIndex += 1; if (sourceIndex < sources.length) image.src = sources[sourceIndex]; };
     image.onload = () => { updateGeometry(); updatePreview(); };
+    image.referrerPolicy = 'no-referrer';
     image.alt = link.querySelector('img')?.alt || (typeof item === 'object' ? item?.name : '') || '';
-    image.src = sources[sourceIndex] || '';
     if (typeof lightbox.showModal === 'function') {
       if (!lightbox.open) lightbox.showModal();
     } else {
       lightbox.setAttribute('open', '');
     }
+    image.src = sources[sourceIndex] || '';
     updateGeometry();
   };
   $('#content')?.addEventListener('click', (event) => {

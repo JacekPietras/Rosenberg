@@ -63,7 +63,8 @@
           "height": 0.1736,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "heidelberg"
     },
     {
       "label": "armorial",
@@ -970,36 +971,563 @@
       "title": "Arnold von Uissigheim [1336]",
       "year": 1336,
       "id": "79f1886af0f74dc38d6281d14723abf0",
-      "url": "https://sketchfab.com/3d-models/arnold-von-uissigheim-1336-79f1886af0f74dc38d6281d14723abf0",
+      "url": "https://drive.google.com/drive/folders/1LAY_SGuDaROx-dR4WMpXzA3tyB6hMhWL?usp=drive_link",
       "placeId": "uissigheim",
-      "preview": "https://media.sketchfab.com/models/79f1886af0f74dc38d6281d14723abf0/thumbnails/21aef3c98fdb43c2a66ade0011d7709d/d266b76394dc466482e4e03eaf3d23fe.jpeg"
+      "preview": "https://drive.google.com/thumbnail?id=1NhXXRwnUVbGOklhiJYbdu1SpDEAiCp33&sz=w1200",
+      "type": "link",
+      "sketchfabUrl": "https://sketchfab.com/3d-models/arnold-von-uissigheim-1336-79f1886af0f74dc38d6281d14723abf0",
+      "img": [
+        {
+          "src": "https://drive.google.com/thumbnail?id=1NhXXRwnUVbGOklhiJYbdu1SpDEAiCp33&sz=w1600",
+          "name": "20250614_093042_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1jN5llmsDbno_rXaeprBfy8AeFG574iO6&sz=w1600",
+          "name": "20250614_093108_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1tbg9ui3efPR1pUhp6emig1-LpTlhcQ3M&sz=w1600",
+          "name": "20250614_093144_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1RlKPvMUjkI71ItpA9P-Qcgia1dE3_W9r&sz=w1600",
+          "name": "20250614_093254_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1M-OsmBy9XdZ40qU0oq3fukJZZR12t_Ka&sz=w1600",
+          "name": "20250614_093258_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1htlhOu4fNGDwwRvD1Z2ZuJraX7wnzpIj&sz=w1600",
+          "name": "20250614_093308_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=15JQGUfmyBOvNumxqdC4igH-biRG4pO8H&sz=w1600",
+          "name": "20250614_093328_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1P2q330x7PMfOuuAzJhOhFXjZe4xALaQH&sz=w1600",
+          "name": "20250614_093330_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1t6Q04kq7EoEfWpcFxxD8BxCvk16CcwxC&sz=w1600",
+          "name": "20250614_093333_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1XVkRtMAauVJBo-3ykA0IqJ8PjTyxzoc7&sz=w1600",
+          "name": "20250614_093339_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1yh6MXzVPvdKCl0lbFfsQqQJPkHgAgliL&sz=w1600",
+          "name": "20250614_093340_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1fCZ024g6lGQ9VAAB2RSE0pdipjUkDqsH&sz=w1600",
+          "name": "20250614_093350_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1qy5tvvnwoNv2f06RjktfIojsZMSsUh40&sz=w1600",
+          "name": "20250614_093354_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1hanhoy1KurQXOgXWHK_greWruMiPdo9X&sz=w1600",
+          "name": "20250614_093400_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1SKoLPxZ-0oDDCHWUG9gxZo_nDdBaiCuP&sz=w1600",
+          "name": "20250614_093404_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1UGSlCz_TQaNW1RmbDQC1IHGBO5SXtI74&sz=w1600",
+          "name": "20250614_093420_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1agiaIDGcyoc5dNA_qwixFqsB0I0OzI-t&sz=w1600",
+          "name": "20250614_093422_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1Ms362OnPx6CMPuoiRMHzfZEsoui7yTO1&sz=w1600",
+          "name": "20250614_093424_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=14E2xpFyko2GSNZflAfidvEHJekKLpx5l&sz=w1600",
+          "name": "20250614_093432_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1T0XMdubqj6Oy4bSbotXu-mJSayeppg1x&sz=w1600",
+          "name": "20250614_093434_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=12oRaOokk92k8uv_ad0Qcq0jrRjUZCpg4&sz=w1600",
+          "name": "20250614_093438_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1b0J4hB4jPqay3zDBQl6EaGmbzdJFCLSF&sz=w1600",
+          "name": "20250614_093452_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1cebqvZ9EamiFFyEOqCHbfoVHTxop4tf0&sz=w1600",
+          "name": "20250614_093457_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1EzsxZacUnXj2M7BPHR3hsb0uT-PDswe2&sz=w1600",
+          "name": "20250614_093500_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1wywPBeqGPfmygBI4OEgCJy-Jm6M5JEyy&sz=w1600",
+          "name": "20250614_093504_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1G7Nsn_XFEsISe-CDLRDVHx0p6V-j4Qlg&sz=w1600",
+          "name": "20250614_093506_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1cACqjGBO2k1blzQehr8GWKZkSoe0WoV5&sz=w1600",
+          "name": "20250614_093514_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1qveNpy7M5Cea1tiXVt6Zce2H9oDqPZP_&sz=w1600",
+          "name": "20250614_093519_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1PH0Yj-eu8A33Wy31T9mtBtAHiQsh4Hif&sz=w1600",
+          "name": "20250614_093525_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1rk6A6mt5CPTyrPz_UcP1ZaSVSUxt9WFN&sz=w1600",
+          "name": "20250614_093529_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1ZUTUtSn4ZbQvFShaGZzi24y4yF4XdWt0&sz=w1600",
+          "name": "20250614_093534_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1L4zcP0SKlt4jtfJKFJq2C-ROrVBye029&sz=w1600",
+          "name": "20250614_093538_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1UxAS1i2h2YIg_R4wPuN7KsPI3U7N22p6&sz=w1600",
+          "name": "20250614_093540_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1M1GokLtC85aFZzXMtAAQhq90i2S_3UEV&sz=w1600",
+          "name": "20250614_093544_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1S6GngW6kiAUWsfu8fnedlu48jCwewki_&sz=w1600",
+          "name": "20250614_093548_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1U7Qb25WpBuV1NS-D2E6aU5b3ywFpTtxs&sz=w1600",
+          "name": "20250614_093552_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1_NDRNPsbTKQUlvjW1l_OsjOz_Igm9wY0&sz=w1600",
+          "name": "20250614_093554_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1GYChi1edKaIhhktVYSRdA-HqnHApHUzg&sz=w1600",
+          "name": "20250614_093556_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=18KJgtDf1HrGDf-jGp0HOCJIdvmR2f8gl&sz=w1600",
+          "name": "20250614_093559_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1n37u2CaaX3V1H6llANOulL5eKqLKZMV5&sz=w1600",
+          "name": "20250614_093611_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1jp4lyDBAr2lcC4QaJX_OotdaDvF_HmIF&sz=w1600",
+          "name": "20250614_093616_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=10EKDmDPfEia3gyTDH6O-Q2Ge841PEaBC&sz=w1600",
+          "name": "20250614_093622_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1eEWZqTxbtMPZUB4CSIUcLNmbuxUMmSnI&sz=w1600",
+          "name": "20250614_093626_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=11GK11R1IDr8GQe0Q96Syp-jlc43IBslj&sz=w1600",
+          "name": "20250614_093630_Ola.jpg",
+          "regions": [
+            {
+              "x": 0.126,
+              "y": 0.0615,
+              "width": 0.3017,
+              "height": 0.4786,
+              "name": "Uissigheim"
+            }
+          ]
+        }
+      ],
+      "coverImage": "https://drive.google.com/thumbnail?id=11GK11R1IDr8GQe0Q96Syp-jlc43IBslj&sz=w1600"
     },
     {
       "label": "effigy",
       "title": "Eberhard von Uissigheim von Ranneberg [1332]",
       "year": 1332,
       "id": "d45abd0d89f24fb5b7c868a2c2c79ffd",
-      "url": "https://sketchfab.com/3d-models/eberhard-von-uissigheim-von-ranneberg-1332-d45abd0d89f24fb5b7c868a2c2c79ffd",
+      "url": "https://drive.google.com/drive/folders/1k5B_fR8HFr2qeLyVKDMz4G7OFWtixsTB?usp=drive_link",
       "placeId": "uissigheim",
-      "preview": "https://media.sketchfab.com/models/d45abd0d89f24fb5b7c868a2c2c79ffd/thumbnails/4dd8285199414c09888761d04e1a0876/e661f61665a54156bc51bf2abf8e1fb6.jpeg"
+      "preview": "https://drive.google.com/thumbnail?id=1C-cFZ9h6uUtRiUrWmhQfcGt3EY8zFIWB&sz=w1200",
+      "type": "link",
+      "sketchfabUrl": "https://sketchfab.com/3d-models/eberhard-von-uissigheim-von-ranneberg-1332-d45abd0d89f24fb5b7c868a2c2c79ffd",
+      "img": [
+        {
+          "src": "https://drive.google.com/thumbnail?id=1C-cFZ9h6uUtRiUrWmhQfcGt3EY8zFIWB&sz=w1600",
+          "name": "20250614_092718_Nikon.jpg",
+          "regions": [
+            {
+              "x": 0.2251,
+              "y": 0.0784,
+              "width": 0.5567,
+              "height": 0.7247,
+              "name": "Uissigheim"
+            }
+          ]
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1y0hCUW1nX6tG2fj7zxDDbOMM5UXxAlZ4&sz=w1600",
+          "name": "20250614_092744_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1fTICvEn7a3RMNDuBqsq50Mi2TZ3zY-8h&sz=w1600",
+          "name": "20250614_092748_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1TjSPwWi9zbNcHT2Y8ztD74e0DNpYjZ2P&sz=w1600",
+          "name": "20250614_092754_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1wovZQdLgUOlTXl9U5KOt2E4IZl2WnkHk&sz=w1600",
+          "name": "20250614_092804_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1eeE8fBHxkSOsxEf_tgfXzLb_wcT0hc-W&sz=w1600",
+          "name": "20250614_092806_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1wQDg8mmNC_IeSUmF-8f_-joYg0BXvyGT&sz=w1600",
+          "name": "20250614_092824_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1qhY2RV3rbuf_aOr_2KfTFT8GrPmJtdWN&sz=w1600",
+          "name": "20250614_092832_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1BMdcIbCNjaRiUHkJeADqFU6vWkmXnYp8&sz=w1600",
+          "name": "20250614_092837_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1RUAHOT71nddRkPmVuIqV6N6FO-mTPdEu&sz=w1600",
+          "name": "20250614_092842_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1QG2mvUOekzNgXONOBY7lx5i3O-RSvwJj&sz=w1600",
+          "name": "20250614_092845_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1a1IQ7Bj60DEO_f7KFBHoM3fRQYX6XKU3&sz=w1600",
+          "name": "20250614_092857_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1cd_2Z7hrlCAe7OHzfldcq4-JdbwugFW-&sz=w1600",
+          "name": "20250614_092902_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1oLBuE5fPyU1U2ppAqwyH9rOT4rcJjjqi&sz=w1600",
+          "name": "20250614_092906_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1T_tQSbGYS-mxNRk2u-KP65mMPDADF0S8&sz=w1600",
+          "name": "20250614_092910_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1OGsydgA7Jr34DMIKaso6ajraYWhAz2Gb&sz=w1600",
+          "name": "20250614_092913_Ola.jpg"
+        }
+      ],
+      "coverImage": "https://drive.google.com/thumbnail?id=1C-cFZ9h6uUtRiUrWmhQfcGt3EY8zFIWB&sz=w1600",
+      "regions": [
+        {
+          "x": 0.13,
+          "y": 0.06,
+          "width": 0.74,
+          "height": 0.85,
+          "name": "Uissigheim"
+        }
+      ]
     },
     {
       "label": "effigy",
       "title": "Gerhard of Schwarzburg [1400]",
       "year": 1400,
       "id": "e957b33df8814492bbbac7fd9f9bf4d2",
-      "url": "https://sketchfab.com/3d-models/gerhard-of-schwarzburg-1400-e957b33df8814492bbbac7fd9f9bf4d2",
+      "url": "https://drive.google.com/drive/folders/1K0FHpxENeM66-8HNTeyxzI_Uv3ofPla4?usp=drive_link",
       "placeId": "wurzburg",
-      "preview": "https://media.sketchfab.com/models/e957b33df8814492bbbac7fd9f9bf4d2/thumbnails/ffef400e4b1e4b179fb74775f5cad3e0/36e90125f27642df8f74664da8e2c00d.jpeg"
+      "preview": "https://drive.google.com/thumbnail?id=11ci87PsF5X6O6_EA_rD83egDu83kAMQe&sz=w1200",
+      "type": "link",
+      "sketchfabUrl": "https://sketchfab.com/3d-models/gerhard-of-schwarzburg-1400-e957b33df8814492bbbac7fd9f9bf4d2",
+      "img": [
+        {
+          "src": "https://drive.google.com/thumbnail?id=18fQ1_crI4laZXtnv3YmXz2nGiuZPkHfj&sz=w1600",
+          "name": "20250616_115013_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=13_cRET1Q3tGbQu_9aIOYnSFsrbyFGJ86&sz=w1600",
+          "name": "20250616_115014_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1D-bQzCGbhzvMigN9E8XF5esafzpXsikA&sz=w1600",
+          "name": "20250616_115016_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1hZk2PRh9cmitt1hdnmFn9d4uhsr1n2ib&sz=w1600",
+          "name": "20250616_115018_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1DvadI0qMxefKVrzkJ_DwfPXhnc7Zbtb-&sz=w1600",
+          "name": "20250616_115019_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=11ci87PsF5X6O6_EA_rD83egDu83kAMQe&sz=w1600",
+          "name": "20250616_115025_Nikon.jpg",
+          "regions": [
+            {
+              "x": 0.28,
+              "y": 0.12,
+              "width": 0.56,
+              "height": 0.88,
+              "name": "Schwarzburg"
+            }
+          ]
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1dotjiJAPZlIJO0RoEAKXJQ74lkS8gnJf&sz=w1600",
+          "name": "20250616_115031_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1WEcU-OUj2BzeHySjIIcnx7US_JtnqGiT&sz=w1600",
+          "name": "20250616_115035_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1ysefvgtJFdwORNtj4H8jDUfVeqxCMyvq&sz=w1600",
+          "name": "20250616_115036_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1YXjDaPEW6d_2n3p31MhL___TRaYm4w1K&sz=w1600",
+          "name": "20250616_115040_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1w8L25_8pEX4Gg9QKreP-CZM-97VcrLe_&sz=w1600",
+          "name": "20250616_115041_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=15F-vetUR45cSbDjvk4YY5TPfk9Kzznn9&sz=w1600",
+          "name": "20250616_115045_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1cBv9q4msY0iIDDau1Uk0Z9H60C9YCtpg&sz=w1600",
+          "name": "20250616_115048_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1tAewAC0Eqdeu_iFtKKVEJ86PXGvOd40P&sz=w1600",
+          "name": "20250616_115050_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1nFN0DKQayiYCRFxjii49Gqtbq7bgHjEu&sz=w1600",
+          "name": "20250616_115052_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1vsBO0wsSvFdu6KaW1Kc-Y9E5Yk6Y3_n5&sz=w1600",
+          "name": "20250616_115054_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1I8eHQdG6f857XZo67oYtGQPNYVaeqXn6&sz=w1600",
+          "name": "20250616_115102_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1uroIFyQc6eqNg0zjmopb5xvCk2M-yGd-&sz=w1600",
+          "name": "20250616_115105_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1h40wTdiF2udZQJDUcXfzLZewY_muEtMv&sz=w1600",
+          "name": "20250616_115106_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1NuRUP0yl8VW7pjUXMtxynHf3KOui62aq&sz=w1600",
+          "name": "20250616_115107_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1sMFRCRMlZrCTzNShcoFhSweSvVXq82O0&sz=w1600",
+          "name": "20250616_115112_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1xVrsnOWEPUlEVvtrZOIVMUmPfMDEDnUU&sz=w1600",
+          "name": "20250616_115115_Jacek.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1l8b_yXMuBqfb_uDCSC0LM62AbMyF1gA1&sz=w1600",
+          "name": "20250616_115117_Jacek.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1FurYTEZSSVm0A--NbPrKp0f1mc7Uf01I&sz=w1600",
+          "name": "20250616_115122_Jacek.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1dTEtCbluK-IFsgN9B7IbPgQcOBs0sP7B&sz=w1600",
+          "name": "20250616_115125_Jacek.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1byEt_YIhMfbosJeKc9zqaDw8uTFUjCYp&sz=w1600",
+          "name": "20250616_115132_Jacek.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=11-44UrfnXUXhxJ1v6xjia6H_St-TXa1c&sz=w1600",
+          "name": "20250616_115134_Jacek.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1-Ab7ddUuHUcTcQB_mhgyfH9_EmDa9EG-&sz=w1600",
+          "name": "20250616_115138_Jacek.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1T9dkoKeuVokI00uFGvWmdWewYOIqtY6A&sz=w1600",
+          "name": "20250616_115145_Jacek.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1GT9155Z_56b9gZI1ncYqVNowwVLDPoY1&sz=w1600",
+          "name": "20250616_115200_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=16G14T6AeeXPjIxtlf1Glvu-ElrNcchOa&sz=w1600",
+          "name": "20250616_115209_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1M3ILAWYp2S394-rUlcRG-P_VWcED3zaL&sz=w1600",
+          "name": "20250616_115212_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=15JvwfE1Q0OxnYSdntB-kJboptGske4ks&sz=w1600",
+          "name": "20250616_115218_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1cuPM8SOX0xcr3W412fJtrpGpMgsXXRja&sz=w1600",
+          "name": "20250616_115220_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1JRlA3pRYAut1yNrO6szZJcGdTf8R6Osr&sz=w1600",
+          "name": "20250616_115221_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1mLSKZoMnS9XJRwwMzW2pq7VoU2AJko0L&sz=w1600",
+          "name": "20250616_115235_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1y320LeozcYGt8kcvh_4pjDqlJvie2S_6&sz=w1600",
+          "name": "20250616_115256_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1KVWx_wDtpYNZl3h4eXhBZ4FA6VBtbk8F&sz=w1600",
+          "name": "20250616_115308_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1AqWrTH5UqOGQxOeW4tXq-bycqO-bd6VR&sz=w1600",
+          "name": "20250616_115317_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1IWiuhfwcw5KcrMcMBf3osBlipGrWQAh0&sz=w1600",
+          "name": "20250616_115353_Nikon.jpg"
+        }
+      ],
+      "coverImage": "https://drive.google.com/thumbnail?id=11ci87PsF5X6O6_EA_rD83egDu83kAMQe&sz=w1600",
+      "regions": [
+        {
+          "x": 0.28,
+          "y": 0.12,
+          "width": 0.56,
+          "height": 0.88,
+          "name": "Schwarzburg"
+        }
+      ]
     },
     {
       "label": "effigy",
       "title": "Eberhard von Rosenberg [1314]",
       "year": 1314,
       "id": "4f8035274c8e4f01ab73c71b1257d171",
-      "url": "https://sketchfab.com/3d-models/eberhard-von-rosenberg-4f8035274c8e4f01ab73c71b1257d171",
+      "url": "https://drive.google.com/drive/folders/1Aqnkw2nsRWJ5Pspl8zKEkdZq1y12XW-N?usp=sharing",
       "placeId": "bronnbach",
-      "preview": "https://media.sketchfab.com/models/4f8035274c8e4f01ab73c71b1257d171/thumbnails/7d4e92db50e0407d8c0a5fc694250d19/df80313352d54a4a850802c72388223d.jpeg"
+      "preview": "https://drive.google.com/thumbnail?id=1olhiP9hIc3neaGAw6ISJ57GUr9g5k0uP&sz=w1200",
+      "type": "link",
+      "sketchfabUrl": "https://sketchfab.com/3d-models/eberhard-von-rosenberg-4f8035274c8e4f01ab73c71b1257d171",
+      "img": [
+        {
+          "src": "https://drive.google.com/thumbnail?id=1olhiP9hIc3neaGAw6ISJ57GUr9g5k0uP&sz=w1600",
+          "name": "20250614_110617_Ola.jpg",
+          "regions": [
+            {
+              "x": 0.3109,
+              "y": 0.0699,
+              "width": 0.4144,
+              "height": 0.5952,
+              "name": "Rosenberg"
+            }
+          ]
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1e-Jm2ShkHETYGmiM2haSRZ4RJVC6WWGz&sz=w1600",
+          "name": "20250614_110622_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1qGqrLr4RTkiIzeS0RayS1CN02fpEgX5K&sz=w1600",
+          "name": "20250614_110625_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1w7D54vBJMCqnTAO1q1J-p_o5sa3dP94R&sz=w1600",
+          "name": "20250614_110628_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1Geu3dos2dzZkmINa-BpiXhhDh98UtUYb&sz=w1600",
+          "name": "20250614_110634_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1plWVeZX5kBSoDdLmC9iSVX-pnkuKx7GB&sz=w1600",
+          "name": "20250614_110637_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1nQt3vHvWfuNiIo7S5_rdX6xhur-Ox6um&sz=w1600",
+          "name": "20250614_110641_Ola.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1FGUnb3TG4wkNi0aHj0wvCJKZflKVc4ph&sz=w1600",
+          "name": "20250614_110728_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1Afb0Kfw5kl2EQfuLjvheYknTjnbPtNIQ&sz=w1600",
+          "name": "20250614_110748_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1TQROIugNxCVCfLX7LdJBT3c0tiJxgChU&sz=w1600",
+          "name": "20250614_110754_Nikon.jpg"
+        },
+        {
+          "src": "https://drive.google.com/thumbnail?id=1EZWArPXbqTiSRf9ZOXSmRIzr-j96ROO_&sz=w1600",
+          "name": "20250614_110800_Nikon.jpg"
+        }
+      ],
+      "coverImage": "https://drive.google.com/thumbnail?id=1olhiP9hIc3neaGAw6ISJ57GUr9g5k0uP&sz=w1600",
+      "regions": [
+        {
+          "x": 0.3,
+          "y": 0.08,
+          "width": 0.42,
+          "height": 0.33,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "effigy",
@@ -1432,7 +1960,23 @@
         },
         {
           "src": "https://drive.google.com/thumbnail?id=1qE99oicyk4lXaDUE41n2ROWQOEDT_A7K&sz=w1600",
-          "name": "20250615_130108_Ola.jpg"
+          "name": "20250615_130108_Ola.jpg",
+          "regions": [
+            {
+              "x": 0.2669,
+              "y": 0.0596,
+              "width": 0.1157,
+              "height": 0.0997,
+              "name": "Rosenberg"
+            },
+            {
+              "x": 0.5501,
+              "y": 0.0628,
+              "width": 0.1226,
+              "height": 0.103,
+              "name": "Thüngen"
+            }
+          ]
         }
       ]
     },
@@ -1449,7 +1993,8 @@
           "height": 0.3886,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "amlishagen"
     },
     {
       "title": "Amlishagen Katharinenkirche, memorial of Anna von Wollmershausen, born von Rosenberg, with both family coats of arms",
@@ -1464,7 +2009,8 @@
           "height": 0.8905,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "amlishagen"
     },
     {
       "title": "Amlishagen, possible Rosenberg family coat of arms on a carved memorial",
@@ -1479,7 +2025,8 @@
           "height": 0.8167,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "amlishagen"
     },
     {
       "title": "Arnstein Maria Sondheim, epitaph of Anna von Hutten, born von Rosenberg",
@@ -1502,7 +2049,8 @@
           "name": "Thüngen"
         }
       ],
-      "label": "effigy"
+      "label": "effigy",
+      "placeId": "arnstein-maria-sondheim"
     },
     {
       "title": "Arnstein Maria Sondheim, Rosenberg coat of arms on a funerary monument",
@@ -1517,19 +2065,22 @@
           "height": 0.8938,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "arnstein-maria-sondheim"
     },
     {
       "title": "Aub hospital, Truchsess arms at left, Julius Echter in the center, Rosenberg at right",
       "source": "https://drive.google.com/file/d/1vRgElPqevZgjX039Wz8HHpOyxJTEstZK/view",
       "url": "https://drive.google.com/thumbnail?id=1vRgElPqevZgjX039Wz8HHpOyxJTEstZK&sz=w1600",
-      "date": "1595-1602"
+      "date": "1595-1602",
+      "placeId": "aub"
     },
     {
       "title": "Boxberg castle attacked in 1523, later rebuilt by Albrecht von Rosenberg",
       "source": "https://drive.google.com/file/d/17WQGcMqBnySNCOY2T1k5EwQhu0JVSm7L/view",
       "url": "https://drive.google.com/thumbnail?id=17WQGcMqBnySNCOY2T1k5EwQhu0JVSm7L&sz=w1600",
-      "date": "1523"
+      "date": "1523",
+      "placeId": "boxberg-castle"
     },
     {
       "title": "Donzdorf St Martin, bronze memorial to Ulrich II von Rechberg, who died in 1496",
@@ -1545,7 +2096,8 @@
           "name": "Rosenberg"
         }
       ],
-      "label": "effigy"
+      "label": "effigy",
+      "placeId": "donzdorf-st-martin"
     },
     {
       "title": "Elfershausen Erthalschloss, arms of Georg Heinrich von Erthal and Regina Kunigunde von Rosenberg",
@@ -1560,7 +2112,8 @@
           "height": 0.3951,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "elfershausen-erthalschloss"
     },
     {
       "title": "Euerbach Church of Saints Cosmas and Damian, Ursula von Steinau, born von Rosenberg epitaph",
@@ -1575,7 +2128,8 @@
           "height": 0.4637,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "euerbach-sts-cosmas-damian"
     },
     {
       "title": "Fulda Cathedral, Adolph von Dalberg memorial with Rosenberg family coat of arms",
@@ -1590,7 +2144,8 @@
           "height": 0.4786,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "fulda-cathedral"
     },
     {
       "title": "Giebelstadt Evangelical St Oswald church, Amalia Zobel memorial with Rosenberg among the family coats of arms",
@@ -1605,7 +2160,8 @@
           "height": 0.1917,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "giebelstadt-st-oswald"
     },
     {
       "title": "Giebelstadt Evangelical St Oswald church, possible Rosenberg family memorial",
@@ -1620,13 +2176,15 @@
           "height": 0.6878,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "giebelstadt-st-oswald"
     },
     {
       "title": "Heidelberg University jubilee procession by Heinrich Kley, Eberhard von Rosenberg in Ruprecht I’s entourage, recreating 1386",
       "source": "https://drive.google.com/file/d/1pVUbFD_i_lwJHZKYFYZQHBh5dk1Go2Rs/view",
       "url": "https://drive.google.com/thumbnail?id=1pVUbFD_i_lwJHZKYFYZQHBh5dk1Go2Rs&sz=w1600",
-      "date": "1886"
+      "date": "1886",
+      "placeId": "heidelberg"
     },
     {
       "title": "Hessenthal Wallfahrtskirche, memorial panel with a skull, cross and family arms",
@@ -1649,7 +2207,8 @@
           "name": "Rosenberg"
         }
       ],
-      "label": "effigy"
+      "label": "effigy",
+      "placeId": "hessenthal-wallfahrtskirche"
     },
     {
       "title": "Hessenthal Wallfahrtskirche, Peter III Echter and Gertraud von Adolzheim memorial with Rosenberg family arms",
@@ -1671,7 +2230,8 @@
           "height": 0.1729,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "hessenthal-wallfahrtskirche"
     },
     {
       "title": "Hessenthal Wallfahrtskirche, Rosenberg family arms on the Peter III Echter and Gertraud von Adolzheim memorial",
@@ -1686,13 +2246,15 @@
           "height": 0.7591,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "hessenthal-wallfahrtskirche"
     },
     {
       "title": "Lauda Oberes Tor, dated town gate",
       "source": "https://drive.google.com/file/d/1Zn7v9QQkvwFkVzS5DPoNbt2X9keeEYse/view",
       "url": "https://drive.google.com/thumbnail?id=1Zn7v9QQkvwFkVzS5DPoNbt2X9keeEYse&sz=w1600",
-      "date": "1496"
+      "date": "1496",
+      "placeId": "lauda"
     },
     {
       "title": "Markt Giebelstadt, possible Rosenberg family coat of arms",
@@ -1707,7 +2269,8 @@
           "height": 0.8685,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "giebelstadt"
     },
     {
       "title": "Mosbach St Juliana, possible grave slab of canon Eberhard von Rosenberg, active 1363-1368",
@@ -1723,7 +2286,8 @@
           "name": "Rosenberg"
         }
       ],
-      "label": "effigy"
+      "label": "effigy",
+      "placeId": "mosbach-st-juliana"
     },
     {
       "title": "Neckarsteinach am Neckar Protestant church, Landschad memorial with Rosenberg among the family coats of arms",
@@ -1738,7 +2302,8 @@
           "height": 0.2966,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "neckarsteinach"
     },
     {
       "title": "Neckarwestheim Schloss Liebenstein, angel holding the Liebenstein family shield on the Renaissance palace",
@@ -1753,7 +2318,8 @@
           "height": 0.4378,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "liebenstein-castle"
     },
     {
       "title": "Neckarwestheim Schloss Liebenstein, arms of Albrecht von Liebenstein and Margaretha von Rosenberg",
@@ -1768,7 +2334,8 @@
           "height": 0.6878,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "liebenstein-castle"
     },
     {
       "title": "Neckarwestheim Schloss Liebenstein, Renaissance bay window with Liebenstein and Rosenberg arms",
@@ -1783,7 +2350,8 @@
           "height": 0.0661,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "liebenstein-castle"
     },
     {
       "title": "Niederstetten Schloss Haltenbergstetten, portal arms of Friedrich Zeisolf von Rosenberg and the von Kere family",
@@ -1798,7 +2366,8 @@
           "height": 0.4022,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "schloss-haltenbergstetten"
     },
     {
       "title": "Oppenheim am Rhein, stone bearing the name Rosenberger and a family coat of arms",
@@ -1813,7 +2382,8 @@
           "height": 0.8957,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "oppenheim"
     },
     {
       "title": "Rosenberg coat of arms on stone dated 1533",
@@ -1834,7 +2404,8 @@
       "title": "Sindolsheim Evangelical church, medieval wooden figure of Christ without its cross",
       "source": "https://drive.google.com/file/d/1bvMCfUzcPKv5vaOAhszZZ2U609dujKUD/view",
       "url": "https://drive.google.com/thumbnail?id=1bvMCfUzcPKv5vaOAhszZZ2U609dujKUD&sz=w1600",
-      "date": "1300-1325"
+      "date": "1300-1325",
+      "placeId": "sindolsheim-church"
     },
     {
       "title": "Speyer, seal of Prince-Bishop Philipp von Rosenberg with Speyer and Rosenberg arms",
@@ -1849,7 +2420,8 @@
           "height": 0.3316,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "speyer"
     },
     {
       "title": "Stöckenburg Martinskirche, Rosenberg donor stained glass from a Schwäbisch Hall workshop",
@@ -1864,14 +2436,16 @@
           "height": 0.2532,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "stoeckenburg-martinskirche"
     },
     {
       "title": "Unterschüpf Evangelical church, drawing of the knight Albrecht von Rosenberg’s epitaph with his wife Rufina",
       "source": "https://drive.google.com/file/d/16SGJhsg__FdEqD13S7OO0bYdEM3FQ7BJ/view",
       "url": "https://drive.google.com/thumbnail?id=16SGJhsg__FdEqD13S7OO0bYdEM3FQ7BJ&sz=w1600",
       "date": "1569-1572",
-      "label": "effigy"
+      "label": "effigy",
+      "placeId": "unterschuepf-evangelical-church"
     },
     {
       "title": "Unterschüpf Evangelical church, Rosenberg arms on the pulpit",
@@ -1886,7 +2460,8 @@
           "height": 0.6937,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "unterschuepf-evangelical-church"
     },
     {
       "title": "Wiersperg (Wirsberg), Rosenberg, Kingsperg and Kheeb family coats of arms",
@@ -1907,7 +2482,8 @@
       "title": "Wildenberg, record of Eberhard von Rosenberg as burgrave",
       "source": "https://drive.google.com/file/d/1jOeYQTJ-9vBK0HE3v0UO56pn4Alq1V8d/view",
       "url": "https://drive.google.com/thumbnail?id=1jOeYQTJ-9vBK0HE3v0UO56pn4Alq1V8d&sz=w1600",
-      "date": "1343"
+      "date": "1343",
+      "placeId": "wildenberg-castle"
     },
     {
       "type": "link",
@@ -1927,7 +2503,9 @@
           "src": "https://drive.google.com/thumbnail?id=1fG1pvs78i5LwmGrpA0ZHwIyan_AQpRPw&sz=w1600",
           "name": "C 00103_Dok01.JPG"
         }
-      ]
+      ],
+      "coverImage": "https://drive.google.com/thumbnail?id=1l7DObHTunxziPyv02CPrQbt-rTLxD41j&sz=w1600",
+      "placeId": "boxberg"
     },
     {
       "type": "link",
@@ -1972,7 +2550,8 @@
           "name": "C 06905_R 29578.jpg"
         }
       ],
-      "coverImage": "https://drive.google.com/thumbnail?id=1gA7fD4rxAVY3aVKvhS6Y8Yxq8MQIWpTb&sz=w1600"
+      "coverImage": "https://drive.google.com/thumbnail?id=1gA7fD4rxAVY3aVKvhS6Y8Yxq8MQIWpTb&sz=w1600",
+      "placeId": "schuepf-old-castle"
     },
     {
       "type": "link",
@@ -1993,7 +2572,8 @@
           "src": "https://drive.google.com/thumbnail?id=1Zn4qpyfEVz-HxQBZqqAWTbH8asdsWwUh&sz=w1600",
           "name": "Lauda Pulverturm, medieval town fortification view 3 [1350-1400].JPG"
         }
-      ]
+      ],
+      "placeId": "lauda"
     },
     {
       "type": "link",
@@ -2017,9 +2597,27 @@
         },
         {
           "src": "https://drive.google.com/thumbnail?id=1jcH4vN4xZ7_lMCAVJXxiZ13eBMvVZVp9&sz=w1600",
-          "name": "Waldmannshofen Evangelical parish church, Truchsessin von Baldersheim, born von Rosenberg and son Hans [1412].jpg"
+          "name": "Waldmannshofen Evangelical parish church, Truchsessin von Baldersheim, born von Rosenberg and son Hans [1412].jpg",
+          "regions": [
+            {
+              "x": 0.2162,
+              "y": 0.0648,
+              "width": 0.1569,
+              "height": 0.1127,
+              "name": "Rosenberg"
+            },
+            {
+              "x": 0.612,
+              "y": 0.0563,
+              "width": 0.1539,
+              "height": 0.1146,
+              "name": "Thüngen"
+            }
+          ]
         }
-      ]
+      ],
+      "coverImage": "https://drive.google.com/thumbnail?id=1jcH4vN4xZ7_lMCAVJXxiZ13eBMvVZVp9&sz=w1600",
+      "placeId": "waldmannshofen-evangelical-church"
     },
     {
       "type": "link",
@@ -2031,7 +2629,8 @@
           "src": "https://drive.google.com/thumbnail?id=1TPzpRl5dk-ADBs3VJKBTs0aK9jlbUoZv&sz=w1600",
           "name": "Wölchingen Johanniterkirche, 13th-century church shown in a lithograph after Moosbrugger [1856].png"
         }
-      ]
+      ],
+      "placeId": "wolchingen"
     },
     {
       "type": "link",
@@ -2050,13 +2649,24 @@
         },
         {
           "src": "https://drive.google.com/thumbnail?id=1RgbTgt7wwCUSyujfN0Ed__Jqurl78Whq&sz=w1600",
-          "name": "Würzburg St Burkard, Hoheneck memorial and family coats of arms [1743].jpg"
+          "name": "Würzburg St Burkard, Hoheneck memorial and family coats of arms [1743].jpg",
+          "regions": [
+            {
+              "x": 0.0829,
+              "y": 0.2448,
+              "width": 0.1503,
+              "height": 0.0991,
+              "name": "Rosenberg"
+            }
+          ]
         },
         {
           "src": "https://drive.google.com/thumbnail?id=15RGWulbjUQ26TgHRMVAUOG61KZnKmbmG&sz=w1600",
           "name": "Würzburg St Burkard, Johann Philipp von Hoheneck memorial with family coats of arms [1743].jpg"
         }
-      ]
+      ],
+      "coverImage": "https://drive.google.com/thumbnail?id=1RgbTgt7wwCUSyujfN0Ed__Jqurl78Whq&sz=w1600",
+      "placeId": "wuerzburg-st-burkard"
     }
   ]
 }

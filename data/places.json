@@ -53,68 +53,6 @@
   },
   {
     "variations": [
-      "Rosenberg",
-      "Roßenberg",
-      "Rosinberg",
-      "Rosemberg",
-      "Rossenberg",
-      "Rosenberch",
-      "Rosemberch",
-      "Rosenburgk",
-      "Rossberg",
-      "Rosenperg",
-      "Rosenbergk",
-      "Rösenberg"
-    ],
-    "category": "castle",
-    "lat": 49.4562999,
-    "lon": 9.4731434,
-    "id": "rosenberg"
-  },
-  {
-    "variations": [
-      "Jagstberg"
-    ],
-    "category": "castle",
-    "lat": 49.3366134,
-    "lon": 9.7947915,
-    "id": "jagstberg"
-  },
-  {
-    "variations": [
-      "Angeltürn",
-      "Angertal"
-    ],
-    "category": "church",
-    "lat": 49.4877312,
-    "lon": 9.5978372,
-    "id": "angelturn"
-  },
-  {
-    "variations": [
-      "Erligheim",
-      "Erlikeim",
-      "Erlekeim",
-      "Erleheim",
-      "Erlekeim",
-      "Erleckein"
-    ],
-    "category": "village",
-    "lat": 49.018333,
-    "lon": 9.099444,
-    "id": "erligheim"
-  },
-  {
-    "variations": [
-      "Schüpf"
-    ],
-    "category": "village",
-    "lat": 49.5224165,
-    "lon": 9.6774758,
-    "id": "schuepf-village"
-  },
-  {
-    "variations": [
       "Schüpf",
       "Old Castle, Schüpf",
       "Old Burg, Schüpf"
@@ -123,28 +61,6 @@
     "lat": 49.522781,
     "lon": 9.6725399,
     "id": "schuepf-old-castle"
-  },
-  {
-    "variations": [
-      "Unterschüpf",
-      "Unterschüpf Water Castle",
-      "Wasserschloss, Unterschüpf"
-    ],
-    "category": "castle",
-    "lat": 49.5147596,
-    "lon": 9.6885356,
-    "id": "unterschuepf-water-castle"
-  },
-  {
-    "variations": [
-      "Oberschüpf",
-      "Oberschüpf Castle",
-      "Schloss, Oberschüpf"
-    ],
-    "category": "castle",
-    "lat": 49.5218062,
-    "lon": 9.6772055,
-    "id": "oberschuepf-castle"
   },
   {
     "id": "wurzburg",
@@ -166,5 +82,221 @@
     "lat": 49.7125,
     "lon": 9.5472222,
     "category": "church"
+  },
+  {
+    "variations": [
+      "Amlishagen"
+    ],
+    "category": "village",
+    "lat": 49.2636,
+    "lon": 9.9625,
+    "id": "amlishagen"
+  },
+  {
+    "variations": [
+      "Arnstein Maria Sondheim"
+    ],
+    "category": "church",
+    "lat": 49.9734,
+    "lon": 9.9627,
+    "id": "arnstein-maria-sondheim"
+  },
+  {
+    "variations": [
+      "Aub"
+    ],
+    "category": "city",
+    "lat": 49.5525,
+    "lon": 10.0656,
+    "id": "aub"
+  },
+  {
+    "variations": [
+      "Boxberg Castle"
+    ],
+    "category": "castle",
+    "lat": 49.4793,
+    "lon": 9.6416,
+    "id": "boxberg-castle"
+  },
+  {
+    "variations": [
+      "Donzdorf St Martin"
+    ],
+    "category": "church",
+    "lat": 48.686,
+    "lon": 9.8108,
+    "id": "donzdorf-st-martin"
+  },
+  {
+    "variations": [
+      "Erthalschloss, Elfershausen"
+    ],
+    "category": "castle",
+    "lat": 50.1475,
+    "lon": 9.963,
+    "id": "elfershausen-erthalschloss"
+  },
+  {
+    "variations": [
+      "Euerbach Saints Cosmas and Damian Church"
+    ],
+    "category": "church",
+    "lat": 50.063,
+    "lon": 10.131,
+    "id": "euerbach-sts-cosmas-damian"
+  },
+  {
+    "variations": [
+      "Fulda Cathedral"
+    ],
+    "category": "church",
+    "lat": 50.5548,
+    "lon": 9.6773,
+    "id": "fulda-cathedral"
+  },
+  {
+    "variations": [
+      "Giebelstadt St Oswald Church"
+    ],
+    "category": "church",
+    "lat": 49.653,
+    "lon": 9.946,
+    "id": "giebelstadt-st-oswald"
+  },
+  {
+    "variations": [
+      "Giebelstadt"
+    ],
+    "category": "city",
+    "lat": 49.653,
+    "lon": 9.946,
+    "id": "giebelstadt"
+  },
+  {
+    "variations": [
+      "Heidelberg"
+    ],
+    "category": "city",
+    "lat": 49.3988,
+    "lon": 8.6724,
+    "id": "heidelberg"
+  },
+  {
+    "variations": [
+      "Hessenthal Wallfahrtskirche"
+    ],
+    "category": "church",
+    "lat": 49.929,
+    "lon": 9.284,
+    "id": "hessenthal-wallfahrtskirche"
+  },
+  {
+    "variations": [
+      "Mosbach St Juliana"
+    ],
+    "category": "church",
+    "lat": 49.353,
+    "lon": 9.148,
+    "id": "mosbach-st-juliana"
+  },
+  {
+    "variations": [
+      "Neckarsteinach"
+    ],
+    "category": "city",
+    "lat": 49.407,
+    "lon": 8.843,
+    "id": "neckarsteinach"
+  },
+  {
+    "variations": [
+      "Schloss Liebenstein, Neckarwestheim"
+    ],
+    "category": "castle",
+    "lat": 49.079,
+    "lon": 9.179,
+    "id": "liebenstein-castle"
+  },
+  {
+    "variations": [
+      "Schloss Haltenbergstetten, Niederstetten"
+    ],
+    "category": "castle",
+    "lat": 49.401,
+    "lon": 9.92,
+    "id": "schloss-haltenbergstetten"
+  },
+  {
+    "variations": [
+      "Oppenheim"
+    ],
+    "category": "city",
+    "lat": 49.854,
+    "lon": 8.36,
+    "id": "oppenheim"
+  },
+  {
+    "variations": [
+      "Sindolsheim Evangelical Church"
+    ],
+    "category": "church",
+    "lat": 49.478,
+    "lon": 9.277,
+    "id": "sindolsheim-church"
+  },
+  {
+    "variations": [
+      "Speyer"
+    ],
+    "category": "city",
+    "lat": 49.317,
+    "lon": 8.431,
+    "id": "speyer"
+  },
+  {
+    "variations": [
+      "Stöckenburg Martinskirche"
+    ],
+    "category": "church",
+    "lat": 49.0895,
+    "lon": 9.8815,
+    "id": "stoeckenburg-martinskirche"
+  },
+  {
+    "variations": [
+      "Unterschüpf Evangelical Church"
+    ],
+    "category": "church",
+    "lat": 49.516,
+    "lon": 9.692,
+    "id": "unterschuepf-evangelical-church"
+  },
+  {
+    "variations": [
+      "Wildenberg Castle"
+    ],
+    "category": "castle",
+    "lat": 49.582,
+    "lon": 9.044,
+    "id": "wildenberg-castle"
+  },
+  {
+    "variations": [
+      "Waldmannshofen Evangelical Church"
+    ],
+    "category": "church",
+    "lat": 49.485,
+    "lon": 9.912,
+    "id": "waldmannshofen-evangelical-church"
+  },
+  {
+    "variations": [
+      "Würzburg St Burkard"
+    ],
+    "category": "church",
+    "lat": 49.789,
+    "lon": 9.925,
+    "id": "wuerzburg-st-burkard"
   }
 ]

@@ -23,7 +23,7 @@ export function setupSealAnnotations({ state, position = positionSealCrop } = {}
     focusedImages.forEach((image) => {
       if (!image.naturalWidth || !image.naturalHeight) return;
       if (getComputedStyle(image).objectFit !== 'cover') return;
-      const viewport = image.closest('.image-link');
+      const viewport = image.closest('.image-link, .model-collection-preview-link');
       if (!viewport) return;
       const box = viewport.getBoundingClientRect();
       const boxWidth = box.width, boxHeight = box.height;
