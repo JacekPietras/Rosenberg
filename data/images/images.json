@@ -997,7 +997,16 @@
       "preview": "https://drive.google.com/thumbnail?id=1C-cFZ9h6uUtRiUrWmhQfcGt3EY8zFIWB&sz=w1200",
       "type": "link",
       "sketchfabUrl": "https://sketchfab.com/3d-models/eberhard-von-uissigheim-von-ranneberg-1332-d45abd0d89f24fb5b7c868a2c2c79ffd",
-      "coverImage": "https://drive.google.com/thumbnail?id=1C-cFZ9h6uUtRiUrWmhQfcGt3EY8zFIWB&sz=w1600"
+      "coverImage": "https://drive.google.com/thumbnail?id=1C-cFZ9h6uUtRiUrWmhQfcGt3EY8zFIWB&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2066,
+          "y": 0.079,
+          "width": 0.5674,
+          "height": 0.7241,
+          "name": "Uissigheim"
+        }
+      ]
     },
     {
       "label": "effigy",
@@ -1021,7 +1030,16 @@
       "preview": "https://drive.google.com/thumbnail?id=1olhiP9hIc3neaGAw6ISJ57GUr9g5k0uP&sz=w1200",
       "type": "link",
       "sketchfabUrl": "https://sketchfab.com/3d-models/eberhard-von-rosenberg-4f8035274c8e4f01ab73c71b1257d171",
-      "coverImage": "https://drive.google.com/thumbnail?id=1olhiP9hIc3neaGAw6ISJ57GUr9g5k0uP&sz=w1600"
+      "coverImage": "https://drive.google.com/thumbnail?id=1olhiP9hIc3neaGAw6ISJ57GUr9g5k0uP&sz=w1600",
+      "regions": [
+        {
+          "x": 0.3256,
+          "y": 0.0758,
+          "width": 0.3989,
+          "height": 0.5855,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "effigy",
@@ -1514,7 +1532,16 @@
       "url": "https://drive.google.com/thumbnail?id=16SGJhsg__FdEqD13S7OO0bYdEM3FQ7BJ&sz=w1600",
       "date": "1569-1572",
       "label": "effigy",
-      "placeId": "unterschuepf-evangelical-church"
+      "placeId": "unterschuepf-evangelical-church",
+      "regions": [
+        {
+          "x": 0.3505,
+          "y": 0.0667,
+          "width": 0.1589,
+          "height": 0.1561,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Unterschüpf Evangelical church, Rosenberg arms on the pulpit",
@@ -1587,7 +1614,23 @@
       "date": "1414",
       "label": "effigy",
       "coverImage": "https://drive.google.com/thumbnail?id=1jcH4vN4xZ7_lMCAVJXxiZ13eBMvVZVp9&sz=w1600",
-      "placeId": "waldmannshofen-evangelical-church"
+      "placeId": "waldmannshofen-evangelical-church",
+      "regions": [
+        {
+          "x": 0.2182,
+          "y": 0.0615,
+          "width": 0.1509,
+          "height": 0.1127,
+          "name": "Rosenberg"
+        },
+        {
+          "x": 0.613,
+          "y": 0.0609,
+          "width": 0.1559,
+          "height": 0.1075,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "type": "link",
