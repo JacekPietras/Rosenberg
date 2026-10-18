@@ -34,8 +34,10 @@ translations, existing structure, and the source's date precision.
 
 ## Agent skills
 
-Codex discovers repository skills under `.agents/skills/`. The archival catalog
-research workflow is [`archive-name-research`](.agents/skills/archive-name-research/SKILL.md).
+Project skills are documented in the repository. The archival catalog research
+workflow is [`archive-name-research`](.agents/skills/archive-name-research/SKILL.md),
+and the local Google Drive objects workflow is
+[`google-drive-objects`](skills/google-drive-objects/SKILL.md).
 Repository-wide instructions are in [`AGENTS.md`](AGENTS.md).
 
 ## Browser viewer

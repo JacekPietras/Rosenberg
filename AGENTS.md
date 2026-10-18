@@ -17,3 +17,17 @@ There is no automated merge, sorting, queue, report, or temporary-file workflow.
 ## Research skills
 
 - For archival catalog searches by person or family name, read and follow [`archive-name-research`](.agents/skills/archive-name-research/SKILL.md).
+- For uploading, reading, or making Drive URLs for images in the local objects folder, read and follow [`google-drive-objects`](skills/google-drive-objects/SKILL.md).
+
+## Images
+
+Majority of images with references to Google Drive are available under https://drive.google.com/drive/folders/1IsXSTRMEPEmAAgwtbOq_hUa6P3ge-vbU?usp=drive_link
+You are free to scan it and make direct references.
+
+To add a new image to Google Drive, run:
+
+```text
+python3 scripts/add_to_google_drive.py PATH_TO_IMAGE
+```
+
+The script moves the image into `/Users/jpietras/GoogleDrivePrivate/[Rycerskie]/Boxberg/objects`.

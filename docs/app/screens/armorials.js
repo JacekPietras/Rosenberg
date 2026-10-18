@@ -8,11 +8,16 @@ export function createArmorialScreen({ state, escapeHtml, imageMarkup, savePrefe
     const path = state.manifest.images;
     const document = path ? state.documents.get(path) : null;
     if (!document) return '<p>No armorials are available.</p>';
-    const entries = (document.entries || []).map((entry, index) => ({ entry, index, year: dateYear(entry.date ?? entry.year) }))
+    const entries = (document.entries || []).map((entry, index) => ({
+      entry,
+      index,
+      year: dateYear(entry.date ?? entry.year),
+      isDateRange: String(entry.date ?? entry.year ?? '').includes('-'),
+    }))
       .sort((a, b) => {
         if (a.year === null && b.year !== null) return 1;
         if (a.year !== null && b.year === null) return -1;
-        return (a.year ?? 0) - (b.year ?? 0) || a.index - b.index;
+        return (a.year ?? 0) - (b.year ?? 0) || Number(a.isDateRange) - Number(b.isDateRange) || a.index - b.index;
       });
     const selected = new Set(state.imageRegions || []);
     const labels = [...new Set(entries.map(({ entry }) => entry.label).filter(Boolean))];
@@ -40,8 +45,8 @@ export function createArmorialScreen({ state, escapeHtml, imageMarkup, savePrefe
       const label = `<span class="image-label">${escapeHtml(entry.label || '')}</span>`;
       const displayTitle = [entry.title || document.title, entry.date ? `[${entry.date}]` : ''].filter(Boolean).join(' ');
       if (entry.label === 'effigy') return entry.id
-        ? `<article class="model-card"><div class="image-record-visual"><div class="model-frame"><iframe title="${escapeHtml(entry.title)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>${label}</div><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div></article>`
-        : `<a class="model-card model-collection-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer"><div class="image-record-visual">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}${label}</div><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div></a>`;
+        ? `<article class="model-card"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual"><div class="model-frame"><iframe title="${escapeHtml(entry.title)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>${label}</div></article>`
+        : `<a class="model-card model-collection-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}${label}</div></a>`;
       return `<article class="model-card armorial-card"><div class="model-info"><h2>${escapeHtml(displayTitle)}</h2></div><div class="image-record-visual">${entry.url ? imageMarkup(entry.url, [], { path, index, title: displayTitle, focus: previewFocus, regions: previewRegions, showRegions: false }) : ''}${label}</div></article>`;
     }).join('');
     return `<div class="image-tags-layout">${sidebar}<div class="models-grid armorial-grid">${cards || '<p class="status">No images match the selected regions.</p>'}</div></div>`;
