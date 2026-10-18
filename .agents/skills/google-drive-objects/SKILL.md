@@ -14,7 +14,7 @@ The local synced folder is `/Users/jpietras/GoogleDrivePrivate/[Rycerskie]/Boxbe
 Upload from the project root with:
 
 ```text
-python3 scripts/add_to_google_drive.py PATH_TO_IMAGE
+python3 .agents/skills/google-drive-objects/scripts/add_to_google_drive.py PATH_TO_IMAGE
 ```
 
 It moves the file, refuses to overwrite an existing filename, waits for Drive for desktop to assign its cloud file ID, then prints only the direct thumbnail URL. To find or inspect images, list/search the folder and use the available image viewer on the local path. If sync does not provide an ID before timeout, report that the file was moved but its URL is pending.

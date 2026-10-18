@@ -24,10 +24,5 @@ There is no automated merge, sorting, queue, report, or temporary-file workflow.
 Majority of images with references to Google Drive are available under https://drive.google.com/drive/folders/1IsXSTRMEPEmAAgwtbOq_hUa6P3ge-vbU?usp=drive_link
 You are free to scan it and make direct references.
 
-To add a new image to Google Drive, run:
-
-```text
-python3 scripts/add_to_google_drive.py PATH_TO_IMAGE
-```
-
-The script moves the image into `/Users/jpietras/GoogleDrivePrivate/[Rycerskie]/Boxberg/objects`.
+To add, read, or get a URL for an image in Google Drive, follow the
+[`google-drive-objects`](.agents/skills/google-drive-objects/SKILL.md) skill.
