@@ -38,7 +38,7 @@ export function createArmorialScreen({ state, escapeHtml, imageMarkup, savePrefe
         : entry.regions;
       const previewFocus = selectedRegions.length ? previewRegions[0] : entry.focus;
       const label = `<span class="image-label">${escapeHtml(entry.label || '')}</span>`;
-      const displayTitle = [entry.title || document.title, entry.date ? `[${entry.date}]` : '', entry.folio || ''].filter(Boolean).join(' ');
+      const displayTitle = [entry.title || document.title, entry.date ? `[${entry.date}]` : ''].filter(Boolean).join(' ');
       if (entry.label === 'effigy') return entry.id
         ? `<article class="model-card"><div class="image-record-visual"><div class="model-frame"><iframe title="${escapeHtml(entry.title)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>${label}</div><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div></article>`
         : `<a class="model-card model-collection-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer"><div class="image-record-visual">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}${label}</div><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div></a>`;

@@ -98,9 +98,9 @@ array. Each entry has a `label` of `armorial` or `effigy`. Armorial entries may
 include a `title`, `date`, `folio`, `source`, and `url`. The `title` contains
 the armorial name and additional details only. Store dates as `YYYY` or
 `YYYY-YYYY`, and store the optional folio separately without a `fol.` prefix.
-The viewer displays the date in brackets after the title and then the folio
-when present. `url` is the image URL or local filename. The displayed title
-supplies the image's accessible name.
+The viewer displays the date in brackets after the title; it does not add the
+folio to the displayed title. `url` is the image URL or local filename. The
+displayed title supplies the image's accessible name.
 Optional `tags` is an array of strings used to filter the Images view.
 Optional `regions` is an array of named rectangular image areas. Each region
 has a `name` and normalized `x`, `y`, `width`, and `height` values from 0 to 1.
