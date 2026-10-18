@@ -64,7 +64,8 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferen
       const label = labelMarkup(entry, index);
       const place = state.places.find((item) => item.id === entry.placeId);
       const placeMarkup = place?.name ? `<span class="image-place-name">${escapeHtml(place.name)}</span>` : '';
-      const displayTitle = [entry.title || document.title, entry.date ? `[${entry.date}]` : ''].filter(Boolean).join(' ');
+      const displayDate = entry.date ?? entry.year;
+      const displayTitle = [entry.title || document.title, displayDate ? `[${displayDate}]` : ''].filter(Boolean).join(' ');
       if (entry.type === 'link' && entry.url) {
         const collectionImages = state.collectionImages?.[index] || [];
         const cover = entry.coverImage || entry.preview;
@@ -82,8 +83,8 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferen
         const modelLink = entry.sketchfabUrl ? `<a class="model-3d-link model-3d-overlay" href="${escapeHtml(entry.sketchfabUrl)}" target="_blank" rel="noopener noreferrer">3D</a>` : '';
         return `<article class="model-card model-collection-link"><div class="model-info"><h2><a class="model-collection-anchor" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(displayTitle)}</a></h2></div><div class="model-collection-visual">${coverMarkup}${placeMarkup}${modelLink}${coverPicker}${label}</div></article>`;
       }
-      if (imageLabels(entry).includes('effigy') && entry.id) return `<article class="model-card"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual"><div class="model-frame"><iframe title="${escapeHtml(entry.title)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>${placeMarkup}${label}</div></article>`;
-      if (imageLabels(entry).includes('effigy') && !entry.url) return `<a class="model-card model-collection-link" href="${escapeHtml(entry.url || '')}" target="_blank" rel="noopener noreferrer"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}${placeMarkup}${label}</div></a>`;
+      if (imageLabels(entry).includes('effigy') && entry.id) return `<article class="model-card"><div class="model-info"><h2>${escapeHtml(displayTitle)}</h2></div><div class="image-record-visual"><div class="model-frame"><iframe title="${escapeHtml(displayTitle)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>${placeMarkup}${label}</div></article>`;
+      if (imageLabels(entry).includes('effigy') && !entry.url) return `<a class="model-card model-collection-link" href="${escapeHtml(entry.url || '')}" target="_blank" rel="noopener noreferrer"><div class="model-info"><h2>${escapeHtml(displayTitle)}</h2></div><div class="image-record-visual">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}${placeMarkup}${label}</div></a>`;
       return `<article class="model-card armorial-card"><div class="model-info"><h2>${escapeHtml(displayTitle)}</h2></div><div class="image-record-visual">${entry.url ? imageMarkup(entry.url, [], { path, index, title: displayTitle, focus: previewFocus, regions: previewRegions, showRegions: false }) : ''}${placeMarkup}${label}</div></article>`;
     }).join('');
     return `<div class="image-tags-layout">${sidebar}<div class="models-grid armorial-grid">${cards || '<p class="status">No images match the selected regions.</p>'}</div></div>`;
