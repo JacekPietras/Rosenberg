@@ -9,7 +9,6 @@ export function createTabs({ state, escapeHtml, clearScreenCaches, savePreferenc
       { path: 'images', label: 'Images' },
       { path: 'tree', label: 'Tree' },
     ];
-    const imagePages = [{ path: 'images/all', label: 'Images' }];
     const bookIsActive = state.active === 'books' || state.manifest.books.some((book) => book.path === state.active);
     const imagesAreActive = state.active.startsWith('images/');
     const tabsElement = document.querySelector('#tabs');
@@ -17,15 +16,13 @@ export function createTabs({ state, escapeHtml, clearScreenCaches, savePreferenc
     tabsElement.innerHTML = tabs.map((tab) => `<button class="tab ${(tab.path === 'books' ? bookIsActive : tab.path === 'images' ? imagesAreActive : state.active === tab.path) ? 'active' : ''}" data-path="${escapeHtml(tab.path)}">${escapeHtml(tab.label)}</button>`).join('');
     bookTabsElement.innerHTML = bookIsActive
       ? state.manifest.books.map((book) => `<button class="subtab ${state.active === book.path ? 'active' : ''}" data-path="${escapeHtml(book.path)}">${escapeHtml(book.label)}</button>`).join('')
-      : imagesAreActive
-        ? imagePages.map((page) => `<button class="subtab ${state.active === page.path ? 'active' : ''}" data-path="${escapeHtml(page.path)}">${escapeHtml(page.label)}</button>`).join('')
       : '';
     document.querySelectorAll('.tab, .subtab').forEach((button) => button.addEventListener('click', () => {
       const requestedPath = button.dataset.path;
       const nextActive = requestedPath === 'books'
         ? (state.manifest.books.some((book) => book.path === state.active) ? state.active : state.manifest.books[0]?.path || 'letters')
         : requestedPath === 'images'
-          ? (imagesAreActive ? state.active : imagePages[0].path)
+          ? (imagesAreActive ? state.active : 'images/all')
           : requestedPath;
       if (nextActive !== state.active) clearScreenCaches();
       if (nextActive !== 'letters') {

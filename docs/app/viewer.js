@@ -9,7 +9,7 @@ import { createSealScreen } from './screens/seals.js';
 import { createArmorialScreen } from './screens/armorials.js?v=17';
 import { createDataLoader } from './data/loader.js?v=3';
 import { createEntityScreens } from './screens/entities.js?v=79';
-import { createTabs } from './components/tabs.js?v=1';
+import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=4';
 import { createMapScreen } from './screens/map.js?v=79';
