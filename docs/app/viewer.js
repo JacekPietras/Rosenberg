@@ -6,7 +6,7 @@ import { createDocumentRenderer } from './screens/documents.js';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js';
-import { createArmorialScreen } from './screens/armorials.js?v=17';
+import { createArmorialScreen } from './screens/armorials.js?v=18';
 import { createDataLoader } from './data/loader.js?v=3';
 import { createEntityScreens } from './screens/entities.js?v=79';
 import { createTabs } from './components/tabs.js?v=2';
