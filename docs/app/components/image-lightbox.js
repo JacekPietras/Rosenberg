@@ -197,8 +197,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
       const currentCover = entry.coverImage || entry.preview;
       const currentDriveId = driveFileId(currentCover);
       const matchingLink = links.findIndex((link) => {
-        const child = entry.img[Number(link.dataset.imageIndex)];
-        const source = typeof child === 'string' ? child : child?.src;
+        const source = link.dataset.imageSrc;
         return currentDriveId ? driveFileId(source) === currentDriveId : source === currentCover;
       });
       const index = matchingLink >= 0 ? matchingLink : 0;
@@ -214,8 +213,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     if (!collectionLinks) return;
     const nextIndex = (collectionLinks.index + step + collectionLinks.links.length) % collectionLinks.links.length;
     const link = collectionLinks.links[nextIndex];
-    const node = collectionLinks.entry.img?.[Number(link.dataset.imageIndex)];
-    const source = typeof node === 'string' ? node : node?.src;
+    const source = link.dataset.imageSrc;
     if (!source) return;
     if (context && !await save()) return;
     const previousIndex = collectionLinks.index;

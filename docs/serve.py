@@ -1,13 +1,17 @@
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import json
+from html.parser import HTMLParser
 import os
+import re
 import subprocess
 import sys
 import tempfile
 import threading
 import time
 import traceback
+from urllib.parse import parse_qs, urlparse
+from urllib.request import Request, urlopen
 import webbrowser
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -15,6 +19,43 @@ HEARTBEAT_TIMEOUT = 5
 last_heartbeat = [0.0]
 page_seen = threading.Event()
 stop_watcher = threading.Event()
+
+
+class DriveFolderParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.items = []
+        self.current = None
+        self.entry_depth = 0
+        self.reading_name = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "div" and attrs.get("id", "").startswith("entry-"):
+            self.current = {"id": attrs["id"][6:], "text": []}
+            self.entry_depth = 1
+        elif self.current is not None and tag == "div":
+            self.entry_depth += 1
+            if "flip-entry-title" in attrs.get("class", "").split():
+                self.reading_name = True
+
+    def handle_data(self, data):
+        if self.current is not None and self.reading_name:
+            self.current["text"].append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "div" and self.current is not None:
+            if self.reading_name:
+                self.reading_name = False
+            self.entry_depth -= 1
+        if tag == "div" and self.current is not None and self.entry_depth == 0:
+            name = " ".join("".join(self.current["text"]).split())
+            if name.lower().endswith((".jpg", ".jpeg", ".png", ".webp", ".gif", ".tif", ".tiff")):
+                self.items.append({
+                    "src": f"https://drive.google.com/thumbnail?id={self.current['id']}&sz=w1600",
+                    "name": name,
+                })
+            self.current = None
 
 
 class ViewerHandler(SimpleHTTPRequestHandler):
@@ -59,6 +100,23 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             self.send_header("Content-Length", str(len(payload)))
             self.end_headers()
             self.wfile.write(payload)
+            return
+        if self.path.split("?", 1)[0] == "/api/drive-folder":
+            folder_url = parse_qs(urlparse(self.path).query).get("url", [""])[0]
+            parsed = urlparse(folder_url)
+            if parsed.hostname != "drive.google.com" or not re.fullmatch(r"/drive/(?:u/\d+/)?folders/[^/]+/?", parsed.path):
+                self.send_json(400, {"error": "Expected a Google Drive folder URL"})
+                return
+            try:
+                folder_id = parsed.path.rstrip("/").split("/")[-1]
+                request = Request(f"https://drive.google.com/embeddedfolderview?id={folder_id}#list", headers={"User-Agent": "Mozilla/5.0"})
+                with urlopen(request, timeout=25) as response:
+                    html = response.read(20_000_000).decode("utf-8", "replace")
+                parser = DriveFolderParser()
+                parser.feed(html)
+                self.send_json(200, {"images": parser.items})
+            except Exception as error:
+                self.send_json(502, {"error": f"Could not read Drive folder: {error}"})
             return
         super().do_GET()
 

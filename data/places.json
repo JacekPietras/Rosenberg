@@ -112,15 +112,6 @@
   },
   {
     "variations": [
-      "Boxberg Castle"
-    ],
-    "category": "castle",
-    "lat": 49.4793,
-    "lon": 9.6416,
-    "id": "boxberg-castle"
-  },
-  {
-    "variations": [
       "Donzdorf St Martin"
     ],
     "category": "church",
@@ -154,15 +145,6 @@
     "lat": 50.5548,
     "lon": 9.6773,
     "id": "fulda-cathedral"
-  },
-  {
-    "variations": [
-      "Giebelstadt St Oswald Church"
-    ],
-    "category": "church",
-    "lat": 49.653,
-    "lon": 9.946,
-    "id": "giebelstadt-st-oswald"
   },
   {
     "variations": [
@@ -291,12 +273,13 @@
     "id": "waldmannshofen-evangelical-church"
   },
   {
+    "id": "wirsberg",
     "variations": [
-      "Würzburg St Burkard"
+      "Wirsberg",
+      "Wiersperg"
     ],
-    "category": "church",
-    "lat": 49.789,
-    "lon": 9.925,
-    "id": "wuerzburg-st-burkard"
+    "category": "city",
+    "lat": 50.108061,
+    "lon": 11.607823
   }
 ]
