@@ -8,7 +8,7 @@ export function createArmorialScreen({ state, escapeHtml, imageMarkup, savePrefe
     const path = state.manifest.images;
     const document = path ? state.documents.get(path) : null;
     if (!document) return '<p>No armorials are available.</p>';
-    const entries = (document.entries || []).map((entry, index) => ({ entry, index, year: dateYear(entry.date) }))
+    const entries = (document.entries || []).map((entry, index) => ({ entry, index, year: dateYear(entry.date ?? entry.year) }))
       .sort((a, b) => {
         if (a.year === null && b.year !== null) return 1;
         if (a.year !== null && b.year === null) return -1;
