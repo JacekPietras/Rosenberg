@@ -1355,18 +1355,18 @@
       "date": "1583",
       "regions": [
         {
-          "x": 0.2163,
-          "y": 0.41,
-          "width": 0.1916,
-          "height": 0.1541,
-          "name": "Thüngen"
-        },
-        {
           "x": 0.2145,
           "y": 0.818,
           "width": 0.1861,
           "height": 0.1729,
           "name": "Rosenberg"
+        },
+        {
+          "x": 0.2163,
+          "y": 0.41,
+          "width": 0.1916,
+          "height": 0.1541,
+          "name": "Thüngen"
         }
       ],
       "placeId": "hessenthal-wallfahrtskirche"
@@ -1792,10 +1792,7 @@
     {
       "title": "Niederstetten St Jakob, memorial of the children Reichart and Rofina von Rosenberg",
       "date": "1560-1561",
-      "label": [
-        "effigy",
-        "new"
-      ],
+      "label": "effigy",
       "placeId": "niederstetten-st-jakobus",
       "source": "https://drive.google.com/file/d/14cHDAFGD_NUNXok8lcXEhIR_6iI-9YOx/view — Town audio guide, station 7, photograph 5, © Trüpschuch: https://www.museum.de/audioguide/416/7/DE/0; image: https://www.museum.de/uploads/city/audioguides/3/416/5131/l/7-5.jpg. Both children are named in the guide and the photographed inscriptions. The upper inscription names Reichart and gives 1561; the main inscription names Rofina and gives 1560. The date range records the deaths commemorated. No further kinship is inferred from the guide.",
       "regions": [
