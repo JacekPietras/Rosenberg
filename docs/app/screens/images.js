@@ -1,4 +1,5 @@
 import { dateYear } from '../image-date-sort.js?v=2';
+import { imageLabels } from '../image-labels.js';
 
 export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferences, rerender }) {
   const unknownRegionFilter = '__no_region__';
@@ -28,7 +29,7 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferen
         return (a.year ?? 0) - (b.year ?? 0) || Number(a.isDateRange) - Number(b.isDateRange) || a.index - b.index;
       });
     const selected = new Set(state.imageRegions || []);
-    const labels = [...new Set(entries.map(({ entry }) => entry.label).filter(Boolean))];
+    const labels = [...new Set(entries.flatMap(({ entry }) => imageLabels(entry)))];
     const regionNames = (entry) => [...new Set([
       ...(Array.isArray(entry.regions) ? entry.regions : []),
       ...(Array.isArray(entry.img) ? entry.img.flatMap((item) => Array.isArray(item?.regions) ? item.regions : []) : []),
@@ -41,7 +42,7 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferen
     const selectedLabels = [...selected].filter((value) => value.startsWith('label:'));
     const selectedRegions = [...selected].filter((value) => !value.startsWith('label:'));
     const matchingEntries = entries.filter(({ entry }) => {
-      const matchesLabel = !selectedLabels.length || selectedLabels.includes(`label:${entry.label}`);
+      const matchesLabel = !selectedLabels.length || imageLabels(entry).some((label) => selectedLabels.includes(`label:${label}`));
       const names = regionNames(entry).map(normalize);
       const matchesRegion = !selectedRegions.length
         || (selectedRegions.includes(unknownRegionFilter) && !names.length)
@@ -49,10 +50,9 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferen
       return matchesLabel && matchesRegion;
     });
     const labelMarkup = (entry, index) => {
-      const label = String(entry.label || '').trim();
-      const badge = label ? `<span class="image-label">${escapeHtml(label)}</span>` : '';
+      const badge = imageLabels(entry).map((label) => `<span class="image-label">${escapeHtml(label)}</span>`).join('');
       const editor = state.canEditDocuments
-        ? `<button class="image-label-edit" type="button" data-edit-image-label="${index}" aria-label="Edit image label" title="Edit label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg></button>`
+        ? `<button class="image-label-edit" type="button" data-edit-image-label="${index}" aria-label="Edit image labels" title="Edit labels"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg></button>`
         : '';
       return badge || editor ? `<span class="image-label-controls">${badge}${editor}</span>` : '';
     };
@@ -82,8 +82,8 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferen
         const modelLink = entry.sketchfabUrl ? `<a class="model-3d-link model-3d-overlay" href="${escapeHtml(entry.sketchfabUrl)}" target="_blank" rel="noopener noreferrer">3D</a>` : '';
         return `<article class="model-card model-collection-link"><div class="model-info"><h2><a class="model-collection-anchor" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(entry.title || document.title)}</a></h2></div><div class="model-collection-visual">${coverMarkup}${placeMarkup}${modelLink}${coverPicker}${label}</div></article>`;
       }
-      if (entry.label === 'effigy' && entry.id) return `<article class="model-card"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual"><div class="model-frame"><iframe title="${escapeHtml(entry.title)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>${placeMarkup}${label}</div></article>`;
-      if (entry.label === 'effigy' && !entry.url) return `<a class="model-card model-collection-link" href="${escapeHtml(entry.url || '')}" target="_blank" rel="noopener noreferrer"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}${placeMarkup}${label}</div></a>`;
+      if (imageLabels(entry).includes('effigy') && entry.id) return `<article class="model-card"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual"><div class="model-frame"><iframe title="${escapeHtml(entry.title)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>${placeMarkup}${label}</div></article>`;
+      if (imageLabels(entry).includes('effigy') && !entry.url) return `<a class="model-card model-collection-link" href="${escapeHtml(entry.url || '')}" target="_blank" rel="noopener noreferrer"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}${placeMarkup}${label}</div></a>`;
       return `<article class="model-card armorial-card"><div class="model-info"><h2>${escapeHtml(displayTitle)}</h2></div><div class="image-record-visual">${entry.url ? imageMarkup(entry.url, [], { path, index, title: displayTitle, focus: previewFocus, regions: previewRegions, showRegions: false }) : ''}${placeMarkup}${label}</div></article>`;
     }).join('');
     return `<div class="image-tags-layout">${sidebar}<div class="models-grid armorial-grid">${cards || '<p class="status">No images match the selected regions.</p>'}</div></div>`;

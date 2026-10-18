@@ -1,14 +1,15 @@
 import { escapeHtml, urlMarkup } from './rendering/html.js';
+import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree } from './screens/tree.js?v=80';
 import { renderActiveScreen } from './screens/router-view.js?v=2';
 import { createDocumentRenderer } from './screens/documents.js';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
-import { setupImageLabelSelector } from './screens/image-label-selector.js';
+import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js';
-import { createImageScreen } from './screens/images.js?v=33';
-import { createDataLoader } from './data/loader.js?v=3';
+import { createImageScreen } from './screens/images.js?v=34';
+import { createDataLoader } from './data/loader.js?v=4';
 import { createEntityScreens } from './screens/entities.js?v=81';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
@@ -1348,7 +1349,7 @@ async function loadAllLegacy() {
     notes: paths.includes('data/notes/notes.json'),
     letters: letterPaths,
     images: paths.find((path) => path === 'data/images/images.json') || null,
-    collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => item.label === 'effigy'),
+    collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => imageLabels(item).includes('effigy')),
   };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
   if (!letterPaths.some((path) => letterHasMissingSourceOrUrl(path))) state.letterLabels = state.letterLabels.filter((label) => label !== MISSING_LETTER_LABEL);

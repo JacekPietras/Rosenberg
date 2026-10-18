@@ -1,3 +1,5 @@
+import { imageLabels } from '../image-labels.js';
+
 export function createDataLoader({
   repository,
   state,
@@ -38,7 +40,7 @@ export function createDataLoader({
       notes: paths.includes('data/notes/notes.json'),
       letters: letterPaths,
       images: paths.find((path) => path === 'data/images/images.json') || null,
-      collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => item.label === 'effigy'),
+      collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => imageLabels(item).includes('effigy')),
     };
     state.documents = documents;
     state.snapshot = snapshot;

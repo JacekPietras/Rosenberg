@@ -32,12 +32,14 @@
     "variations": [
       "Wölchingen",
       "Wolchingen",
-      "Wolching"
+      "Wolching",
+      "Frankendom, Wölchingen"
     ],
     "category": "church",
     "lat": 49.4848212,
     "lon": 9.6315974,
-    "id": "wolchingen"
+    "id": "wolchingen",
+    "description": "The Knights of St. John held the church and property at Wölchingen before it came to the von Rosenbergs in 1381."
   },
   {
     "variations": [
@@ -97,11 +99,13 @@
     "variations": [
       "Bronnbach",
       "Bronnbach Abbey",
-      "Kloster Bronnbach"
+      "Kloster Bronnbach",
+      "Kloster Bronnbach, Wertheim"
     ],
     "lat": 49.7125,
     "lon": 9.5472222,
-    "category": "church"
+    "category": "church",
+    "description": "Bronnbach was an important religious center and burial place for the early von Rosenbergs, and the family conducted property transactions there from 1285 through the 14th century."
   },
   {
     "variations": [
@@ -212,11 +216,12 @@
   {
     "variations": [
       "Mosbach",
-      "Mosbach St Juliana"
+      "Mosbach St Juliana",
+      "St. Juliana, Mosbach"
     ],
     "category": "church",
-    "lat": 49.353,
-    "lon": 9.148,
+    "lat": 49.3523891,
+    "lon": 9.1463321,
     "id": "mosbach-st-juliana"
   },
   {
@@ -260,11 +265,12 @@
   {
     "variations": [
       "Sindolsheim",
-      "Sindolsheim Evangelical Church"
+      "Sindolsheim Evangelical Church",
+      "Kirche, Sindolsheim"
     ],
     "category": "church",
-    "lat": 49.478,
-    "lon": 9.277,
+    "lat": 49.4871226,
+    "lon": 9.4519322,
     "id": "sindolsheim-church"
   },
   {
@@ -289,11 +295,12 @@
   {
     "variations": [
       "Unterschüpf",
-      "Unterschüpf Evangelical Church"
+      "Unterschüpf Evangelical Church",
+      "Kirche, Unterschüpf"
     ],
     "category": "church",
-    "lat": 49.516,
-    "lon": 9.692,
+    "lat": 49.5138873,
+    "lon": 9.6887933,
     "id": "unterschuepf-evangelical-church"
   },
   {
@@ -319,11 +326,12 @@
   {
     "variations": [
       "Waldmannshofen",
-      "Waldmannshofen Evangelical Church"
+      "Waldmannshofen Evangelical Church",
+      "Johanniskirche, Waldmannshofen"
     ],
     "category": "church",
-    "lat": 49.485,
-    "lon": 9.912,
+    "lat": 49.5322268,
+    "lon": 10.0674143,
     "id": "waldmannshofen-evangelical-church"
   },
   {
@@ -360,7 +368,8 @@
     "id": "burg-schweinberg",
     "variations": [
       "Schweinberg",
-      "Burg Schweinberg"
+      "Burg Schweinberg",
+      "Burg Schweinberg, Hardheim"
     ],
     "category": "castle",
     "lat": 49.6208,
@@ -398,5 +407,517 @@
     "category": "church",
     "lat": 49.124061,
     "lon": 8.71487
+  },
+  {
+    "id": "adelsheim",
+    "variations": [
+      "Adelsheim"
+    ],
+    "category": "city",
+    "lat": 49.4045499,
+    "lon": 9.3901509,
+    "description": "Von Rosenberg family members held enfeoffments in Adelsheim, including patronage rights and shares of the tithe."
+  },
+  {
+    "id": "bartenstein",
+    "variations": [
+      "Bartenstein"
+    ],
+    "category": "city",
+    "lat": 49.3559497,
+    "lon": 9.8812253,
+    "description": "The von Rosenbergs held Bartenstein as a fief and family seat; their shares there are documented from 1419 into the 1440s."
+  },
+  {
+    "id": "schloss-bartenstein",
+    "variations": [
+      "Bartenstein",
+      "Schloss, Bartenstein"
+    ],
+    "category": "castle",
+    "lat": 49.3558352,
+    "lon": 9.8778418,
+    "description": "Conrad and Kunz von Rosenberg held the fortress as a fief from Hohenlohe in the 1420s and 1430s; the family held shares until about 1440."
+  },
+  {
+    "id": "neudeck",
+    "variations": [
+      "Neudeck"
+    ],
+    "category": "castle",
+    "lat": 49.206605,
+    "lon": 9.420342,
+    "description": "Adelheid von Neudeck was married to Konrad von Rosenberg around 1327; their son was known as Hans von Neudeck."
+  },
+  {
+    "id": "jagstberg",
+    "variations": [
+      "Jagstberg"
+    ],
+    "category": "castle",
+    "lat": 49.3366134,
+    "lon": 9.7947915,
+    "description": "The von Rosenbergs held Jagstberg as a pledge from Würzburg. Eberhard von Rosenberg resided at the castle and acquired court and market rights in 1409."
+  },
+  {
+    "id": "urhausen-castle",
+    "variations": [
+      "Urhausen",
+      "Schloss, Urhausen"
+    ],
+    "category": "castle",
+    "lat": 49.358853,
+    "lon": 9.5407804,
+    "description": "Hans and Götz von Rosenberg sold this inherited fortress in 1385; Eberhard von Rosenberg, Vogt of Lauda, guaranteed the sale."
+  },
+  {
+    "id": "maienfels-castle",
+    "variations": [
+      "Maienfels",
+      "Schloss, Maienfels"
+    ],
+    "category": "castle",
+    "lat": 49.1199676,
+    "lon": 9.5126096,
+    "description": "The KMZ notes a possible von Rosenberg co-possession of Maienfels, but says this connection is uncertain."
+  },
+  {
+    "id": "roettingen",
+    "variations": [
+      "Röttingen"
+    ],
+    "category": "city",
+    "lat": 49.5097555,
+    "lon": 9.9681198,
+    "description": "Anselm von Rosenberg held the castle, town, and office of Röttingen as a pledge from 1443 to 1454."
+  },
+  {
+    "id": "roettingen-st-kilian",
+    "variations": [
+      "Röttingen",
+      "St. Kilian, Röttingen"
+    ],
+    "category": "church",
+    "lat": 49.5100606,
+    "lon": 9.9677382,
+    "description": "The KMZ gives no specific von Rosenberg connection to St. Kilian; the church is in Röttingen, where Anselm von Rosenberg held the castle, town, and office as a pledge from 1443 to 1454."
+  },
+  {
+    "id": "burg-brattenstein",
+    "variations": [
+      "Röttingen",
+      "Burg Brattenstein, Röttingen"
+    ],
+    "category": "castle",
+    "lat": 49.5087394,
+    "lon": 9.965866,
+    "description": "The KMZ gives no separate history for this castle, but records Anselm von Rosenberg holding Röttingen and its castle as a pledge from 1443 to 1454."
+  },
+  {
+    "id": "gnoetzheim-castle",
+    "variations": [
+      "Gnötzheim",
+      "Schloss, Gnötzheim"
+    ],
+    "category": "castle",
+    "lat": 49.6154951,
+    "lon": 10.1814995,
+    "description": "The castle belonged to the von Rosenbergs from 1426 to 1632. The KMZ also notes two Rosenberg tombstones in the church."
+  },
+  {
+    "id": "boffsheim",
+    "variations": [
+      "Boffsheim"
+    ],
+    "category": "village",
+    "lat": 49.4701713,
+    "lon": 9.4135756,
+    "description": "The von Rosenbergs held substantial property and tithe rights in Boffsheim, as well as patronage rights over the village church."
+  },
+  {
+    "id": "schweigern",
+    "variations": [
+      "Schweigern"
+    ],
+    "category": "village",
+    "lat": 49.4903925,
+    "lon": 9.6695919,
+    "description": "The von Rosenbergs owned the village and held tithe rights. In 1397 King Wenceslas granted Arnold and Eberhard von Rosenberg high-court jurisdiction there."
+  },
+  {
+    "id": "wallduern",
+    "variations": [
+      "Walldürn"
+    ],
+    "category": "city",
+    "lat": 49.5810849,
+    "lon": 9.3621599,
+    "description": "Eberhard I von Rosenberg served as Mainz’s bailiff (Vogt) in Walldürn from 1334; the KMZ associates this office with the family’s regional influence."
+  },
+  {
+    "id": "buch",
+    "variations": [
+      "Buch"
+    ],
+    "category": "village",
+    "lat": 49.5387097,
+    "lon": 9.5562516,
+    "description": "The von Rosenbergs held shares and rights in Buch, including a quarter of the village with advocacy and court rights in the 14th century."
+  },
+  {
+    "id": "bretzingen",
+    "variations": [
+      "Bretzingen"
+    ],
+    "category": "village",
+    "lat": 49.5793284,
+    "lon": 9.4865017,
+    "description": "Members of the von Rosenberg family held property and shares in Bretzingen from at least the late 14th century."
+  },
+  {
+    "id": "zimmern",
+    "variations": [
+      "Zimmern"
+    ],
+    "category": "village",
+    "lat": 49.5980028,
+    "lon": 9.7848601,
+    "description": "Eberhard von Rosenberg was called “von Zimmern” in 1340, and the KMZ identifies Zimmern as a possible residence of a family branch."
+  },
+  {
+    "id": "kirchheim",
+    "variations": [
+      "Kirchheim"
+    ],
+    "category": "village",
+    "lat": 49.6550659,
+    "lon": 9.8581433,
+    "description": "Before 1450, Eberhard von Rosenberg and his wife Wyclo sold property in Kirchheim; Anna von Rosenberg had a dowry assigned there around 1368."
+  },
+  {
+    "id": "burg-lauda",
+    "variations": [
+      "Lauda",
+      "Burg Lauda"
+    ],
+    "category": "castle",
+    "lat": 49.5672155,
+    "lon": 9.7023678,
+    "description": "The KMZ connects the family with Lauda through Eberhard von Rosenberg’s capture of the town in the 1330s and a later Rosenberg bailiff, but gives no separate history for this castle."
+  },
+  {
+    "id": "oberes-tor-lauda",
+    "variations": [
+      "Lauda",
+      "Oberes Tor, Lauda"
+    ],
+    "category": "castle",
+    "lat": 49.5698797,
+    "lon": 9.7003688,
+    "description": "The KMZ gives no specific Rosenberg connection to this gate; it lies in Lauda, where members of the family held office and property."
+  },
+  {
+    "id": "brunnenstrasse-33-lauda",
+    "variations": [
+      "Brunnenstraße 33, Lauda"
+    ],
+    "lat": 49.5660147,
+    "lon": 9.6787453,
+    "description": "The KMZ dates this building to the 15th century but does not specify a connection to the von Rosenbergs."
+  },
+  {
+    "id": "aub-mariae-himmelfahrt",
+    "variations": [
+      "Aub",
+      "Mariä Himmelfahrt, Aub"
+    ],
+    "category": "church",
+    "lat": 49.552428,
+    "lon": 10.0642337,
+    "description": "Aub was partly held by the von Rosenbergs, but the KMZ gives no specific family connection to this church."
+  },
+  {
+    "id": "burg-aub",
+    "variations": [
+      "Aub",
+      "Burg, Aub"
+    ],
+    "category": "castle",
+    "lat": 49.550971,
+    "lon": 10.064593,
+    "description": "The KMZ explicitly says this castle did not belong to the von Rosenbergs, though it was besieged in 1523."
+  },
+  {
+    "id": "bobstadt",
+    "variations": [
+      "Bobstadt"
+    ],
+    "category": "village",
+    "lat": 49.4665786,
+    "lon": 9.6731218,
+    "description": "In 1378 Michael von Rosenberg sold his half of the tithe in Bobstadt to the Teutonic Order."
+  },
+  {
+    "id": "nagelsberg-castle",
+    "variations": [
+      "Nagelsberg",
+      "Schloss Nagelsberg"
+    ],
+    "category": "castle",
+    "lat": 49.2928487,
+    "lon": 9.6757153,
+    "description": "Eberhard I von Rosenberg held an interest and a fief in Nagelsberg Castle in the 1330s and 1340s; he permitted its redemption by Mainz in 1349."
+  },
+  {
+    "id": "niederstetten-friedhofskapelle",
+    "variations": [
+      "Niederstetten",
+      "Friedhofskapelle, Niederstetten"
+    ],
+    "category": "church",
+    "lat": 49.4032655,
+    "lon": 9.9192052,
+    "description": "The KMZ gives no specific von Rosenberg connection to this chapel; the family acquired the lordship of Niederstetten in 1415."
+  },
+  {
+    "id": "niederstetten-st-jakobus",
+    "variations": [
+      "Niederstetten",
+      "St. Jakobus der Ältere, Niederstetten"
+    ],
+    "category": "church",
+    "lat": 49.4009573,
+    "lon": 9.9195736,
+    "description": "The KMZ notes the church’s Romanesque history but gives no specific von Rosenberg connection; the family acquired the lordship of Niederstetten in 1415."
+  },
+  {
+    "id": "burg-wildenstein",
+    "variations": [
+      "Wildenstein",
+      "Burg Ruine Wildenstein"
+    ],
+    "category": "castle",
+    "lat": 49.8284552,
+    "lon": 9.2927009,
+    "description": "The KMZ says the von Rosenbergs destroyed this castle in 1509."
+  },
+  {
+    "id": "wasserburg-dietenhofen",
+    "variations": [
+      "Dietenhofen",
+      "Wasserburg Dietenhofen"
+    ],
+    "category": "castle",
+    "lat": 49.40017,
+    "lon": 10.68901,
+    "description": "The KMZ records the water castle as belonging to Kunz von Rosenberg in 1523, when it was burned."
+  },
+  {
+    "id": "rinderfeld",
+    "variations": [
+      "Rinderfeld"
+    ],
+    "category": "village",
+    "lat": 49.419378,
+    "lon": 9.9885698,
+    "description": "Anna von Rosenberg sold tithes and rents in Rinderfeld in 1368 and 1429."
+  },
+  {
+    "id": "koenigheim",
+    "variations": [
+      "Königheim"
+    ],
+    "category": "village",
+    "lat": 49.618009,
+    "lon": 9.595606,
+    "description": "Anna von Rosenberg sold her tithes and interests in Königheim in 1429."
+  },
+  {
+    "id": "waldbuettelbrunn",
+    "variations": [
+      "Waldbüttelbrunn"
+    ],
+    "category": "village",
+    "lat": 49.7871497,
+    "lon": 9.8385754,
+    "description": "Around 1357 the village was transferred to Eberhart von Rosenberg and Margarete von Tungen as part of a pledge arrangement."
+  },
+  {
+    "id": "erlenbach",
+    "variations": [
+      "Erlenbach"
+    ],
+    "category": "village",
+    "lat": 49.173117,
+    "lon": 9.2646937,
+    "description": "In 1408 Arnold von Rosenberg the Younger exchanged his property in Erlenbach with Schöntal Monastery."
+  },
+  {
+    "id": "dertingen",
+    "variations": [
+      "Dertingen"
+    ],
+    "category": "village",
+    "lat": 49.7680278,
+    "lon": 9.6159331,
+    "description": "Around 1357 Dertingen was included in a pledge arrangement involving Eberhart von Rosenberg and Margarete von Tungen."
+  },
+  {
+    "id": "beckstein",
+    "variations": [
+      "Beckstein"
+    ],
+    "category": "village",
+    "lat": 49.5461588,
+    "lon": 9.7039479,
+    "description": "In 1395 Arnold and Eberhard von Rosenberg exchanged meadows at Beckstein for a meadow at Kupprichhausen."
+  },
+  {
+    "id": "eiersheim",
+    "variations": [
+      "Eiersheim"
+    ],
+    "category": "village",
+    "lat": 49.658375,
+    "lon": 9.586552,
+    "description": "Anna von Rosenberg included her rents and interests in Eiersheim in a sale in 1429."
+  },
+  {
+    "id": "uiffingen",
+    "variations": [
+      "Uiffingen"
+    ],
+    "category": "village",
+    "lat": 49.5021269,
+    "lon": 9.5935435,
+    "description": "Eberhart von Rosenberg sold the village in 1357; Engelhard von Rosenberg later sold serfs from Uiffingen in 1411."
+  },
+  {
+    "id": "ruegheim",
+    "variations": [
+      "Rügheim"
+    ],
+    "category": "village",
+    "lat": 50.1109281,
+    "lon": 10.5116126,
+    "description": "In 1359 Engelhard von Rosenberg received half of the tithe in Rügheim as a fief from the Bishop of Würzburg."
+  },
+  {
+    "id": "kupprichhausen",
+    "variations": [
+      "Kupprichhausen"
+    ],
+    "category": "village",
+    "lat": 49.5267268,
+    "lon": 9.6218325,
+    "description": "In 1395 the brothers Arnold and Eberhard von Rosenberg acquired a meadow at Kupprichhausen through an exchange."
+  },
+  {
+    "id": "burgruine-rosenberg-rugland",
+    "variations": [
+      "Rügland",
+      "Burgruine Rosenberg Rügland"
+    ],
+    "category": "castle",
+    "lat": 49.4029858,
+    "lon": 10.5946718,
+    "description": "Despite its name, this ruin is associated with the Vestenberg family, not the von Rosenbergs of the present study."
+  },
+  {
+    "id": "rosenberg-evangelical-church",
+    "variations": [
+      "Rosenberg",
+      "Evangelische Kirche, Rosenberg"
+    ],
+    "category": "church",
+    "lat": 49.45659,
+    "lon": 9.4732739,
+    "description": "The von Rosenbergs held patronage rights over the church at Rosenberg from around the 1270s."
+  },
+  {
+    "id": "oberschuepf-castle",
+    "variations": [
+      "Oberschüpf",
+      "Schloss, Oberschüpf"
+    ],
+    "category": "castle",
+    "lat": 49.5218062,
+    "lon": 9.6772055,
+    "description": "The von Rosenbergs acquired part of the lordship of Schüpf in the late 14th century and later controlled Oberschüpf Castle as a secondary family seat; the castle was destroyed in 1470."
+  },
+  {
+    "id": "lauda-pulverturm",
+    "variations": [
+      "Lauda",
+      "Pulverturm, Lauda"
+    ],
+    "category": "castle",
+    "lat": 49.5711859,
+    "lon": 9.7023739,
+    "description": "The KMZ gives no specific Rosenberg connection to the Pulverturm; the family held property and administrative power in Lauda."
+  },
+  {
+    "id": "gommersdorf",
+    "variations": [
+      "Gommersdorf"
+    ],
+    "category": "village",
+    "lat": 49.3686059,
+    "lon": 9.6123514,
+    "description": "The KMZ notes property associated with the Vogt of Lauda but does not identify the holder as a von Rosenberg."
+  },
+  {
+    "id": "wertheim-stiftskirche",
+    "variations": [
+      "Wertheim",
+      "Stiftskirche, Wertheim"
+    ],
+    "category": "church",
+    "lat": 49.7588307,
+    "lon": 9.5177265,
+    "description": "The KMZ flags the church for tombs but does not identify a specific von Rosenberg connection."
+  },
+  {
+    "id": "schoental-monastery",
+    "variations": [
+      "Schöntal",
+      "Schöntal Monastery"
+    ],
+    "category": "church",
+    "lat": 49.3291246,
+    "lon": 9.5054929,
+    "description": "Eberhard von Rosenberg sold two mills to Schöntal Monastery in 1327."
+  },
+  {
+    "id": "uissigheim-st-laurentius",
+    "variations": [
+      "Uissigheim",
+      "St. Laurentius + Burg, Ussigheim"
+    ],
+    "category": "church",
+    "lat": 49.6795332,
+    "lon": 9.5732476,
+    "description": "The KMZ links the site to the von Uissigheim lineage from which the von Rosenbergs branched, and notes a tomb associated with Arnold III von Uissigheim."
+  },
+  {
+    "id": "schuepf-church",
+    "variations": [
+      "Schüpf",
+      "Kirche, Schüpf"
+    ],
+    "category": "church",
+    "lat": 49.5222468,
+    "lon": 9.6808585,
+    "description": "The KMZ records Rosenberg lordship rights in Schüpf, including half of the Hohenlohe rights by 1413, but gives no separate family connection to this church."
+  },
+  {
+    "id": "kocherstetten-marienkirche",
+    "variations": [
+      "Kocherstetten St Mary",
+      "Marienkirche Kocherstetten"
+    ],
+    "category": "church",
+    "lat": 49.266586,
+    "lon": 9.761628
   }
 ]

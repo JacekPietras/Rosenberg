@@ -94,7 +94,10 @@ The Seals tab's `unknown` filter shows seals whose type is not filled;
 ## Images JSON
 
 `data/images/images.json` is an object with a `title` and an `entries`
-array. Each entry has a `label` of `armorial` or `effigy`. Armorial entries may
+array. An entry's optional `label` is a string or an array of strings, such as
+`"effigy"` or `["effigy", "new"]`. Each label is displayed separately and can be
+used to filter the Images view. Preserve the `armorial` or `effigy` label when
+adding review labels such as `new`. Armorial entries may
 include a `title`, `date`, `folio`, `source`, and `url`. The `title` contains
 the armorial name and additional details only. Store dates as `YYYY` or
 `YYYY-YYYY`, and store the optional folio separately without a `fol.` prefix.

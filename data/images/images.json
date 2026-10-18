@@ -1777,6 +1777,54 @@
       "date": "1540-1550",
       "source": "https://drive.google.com/file/d/1F4kT-9sKrnSxpGljZpuEz8xiICIw_qPt/view — https://www.metmuseum.org/art/collection/search/726150 — Matthias Zündt, The Abduction of Hieronymus Paumgartner, etching, ca. 1545; the museum API gives the date bounds 1540–1550. Harris Brisbane Dick Fund, 1926, object 26.35.11. Public domain image: https://images.metmuseum.org/CRDImages/dp/original/DP864079.jpg. The museum's earlier title explicitly names Albrecht von Rosenberg, preserved in its Commons image record: https://commons.wikimedia.org/wiki/File:Albrecht_von_Rosenberg_abducting_Hieronymus_Paumgartner_MET_DP864079.jpg",
       "url": "https://drive.google.com/thumbnail?id=1F4kT-9sKrnSxpGljZpuEz8xiICIw_qPt&sz=w1600"
+    },
+    {
+      "title": "Niederstetten St Jakob, double monument of Friedrich Zeisolf von Rosenberg and Anna, born von der Kere",
+      "date": "1576",
+      "label": [
+        "effigy",
+        "new"
+      ],
+      "placeId": "niederstetten-st-jakobus",
+      "source": "https://drive.google.com/file/d/1O_d3lUWygdW_qpLoYsVPIF-0uTUQzOwX/view — Town audio guide, station 7, photograph 4, © Trüpschuch: https://www.museum.de/audioguide/416/7/DE/0; image: https://www.museum.de/uploads/city/audioguides/3/416/5131/l/7-4.jpg. The guide identifies the double monument and dates it to 1576. The identification of Anna as born von der Kere is corroborated by the scholarly study of the Hutten family, p. 455: https://fis.uni-bamberg.de/bitstream/uniba/105/1/Dokument_1.pdf.",
+      "url": "https://drive.google.com/thumbnail?id=1O_d3lUWygdW_qpLoYsVPIF-0uTUQzOwX&sz=w1600"
+    },
+    {
+      "title": "Niederstetten St Jakob, memorial of the children Reichart and Rofina von Rosenberg",
+      "date": "1560-1561",
+      "label": [
+        "effigy",
+        "new"
+      ],
+      "placeId": "niederstetten-st-jakobus",
+      "source": "https://drive.google.com/file/d/14cHDAFGD_NUNXok8lcXEhIR_6iI-9YOx/view — Town audio guide, station 7, photograph 5, © Trüpschuch: https://www.museum.de/audioguide/416/7/DE/0; image: https://www.museum.de/uploads/city/audioguides/3/416/5131/l/7-5.jpg. Both children are named in the guide and the photographed inscriptions. The upper inscription names Reichart and gives 1561; the main inscription names Rofina and gives 1560. The date range records the deaths commemorated. No further kinship is inferred from the guide.",
+      "regions": [
+        {
+          "x": 0.0906,
+          "y": 0.1995,
+          "width": 0.2142,
+          "height": 0.147,
+          "name": "Rosenberg"
+        }
+      ],
+      "url": "https://drive.google.com/thumbnail?id=14cHDAFGD_NUNXok8lcXEhIR_6iI-9YOx&sz=w1600"
+    },
+    {
+      "title": "Kocherstetten Marienkirche, composite epitaph of Wolfgang von Stetten, Anna, born von Rosenberg, and Anna von Layen",
+      "date": "1547-1568",
+      "label": "effigy",
+      "placeId": "kocherstetten-marienkirche",
+      "source": "https://drive.google.com/file/d/1ZTYRy1Wp_rCHTLCOAx3wVgnVB9d0xNPM/view — https://commons.wikimedia.org/wiki/File:Kocherstetten_Evangelische_Marienkirche_3061.JPG — Photograph by GFreihalter, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). The source describes the Renaissance monument as made after 1568. The date range records the deaths commemorated: Wolfgang von Stetten (1547), Anna von Stetten, born von Rosenberg (1548), and Anna von Layen, born von Dienheim (1568). Their inscriptions are transcribed in Beschreibung des Oberamts Künzelsau, Kocherstetten, p. 631: https://de.wikisource.org/wiki/Beschreibung_des_Oberamts_K%C3%BCnzelsau/Kapitel_B_27.",
+      "regions": [
+        {
+          "x": 0.52,
+          "y": 0.13,
+          "width": 0.075,
+          "height": 0.15,
+          "name": "Rosenberg"
+        }
+      ],
+      "url": "https://drive.google.com/thumbnail?id=1ZTYRy1Wp_rCHTLCOAx3wVgnVB9d0xNPM&sz=w1600"
     }
   ]
 }
