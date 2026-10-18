@@ -1,13 +1,13 @@
 import { dateYear } from '../image-date-sort.js?v=2';
 
-export function createArmorialScreen({ state, escapeHtml, imageMarkup, savePreferences, rerender }) {
+export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferences, rerender }) {
   const unknownRegionFilter = '__no_region__';
   const normalize = (tag) => String(tag || '').trim().toLocaleLowerCase();
 
-  function renderArmorialsPage() {
+  function renderImagesPage() {
     const path = state.manifest.images;
     const document = path ? state.documents.get(path) : null;
-    if (!document) return '<p>No armorials are available.</p>';
+    if (!document) return '<p>No images are available.</p>';
     const entries = (document.entries || []).map((entry, index) => ({
       entry,
       index,
@@ -44,6 +44,7 @@ export function createArmorialScreen({ state, escapeHtml, imageMarkup, savePrefe
       const previewFocus = selectedRegions.length ? previewRegions[0] : entry.focus;
       const label = `<span class="image-label">${escapeHtml(entry.label || '')}</span>`;
       const displayTitle = [entry.title || document.title, entry.date ? `[${entry.date}]` : ''].filter(Boolean).join(' ');
+      if (entry.type === 'link' && entry.url) return `<a class="model-card model-collection-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(entry.title || 'image collection')}">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}<div class="model-info"><h2>${escapeHtml(entry.title || document.title)}</h2></div><div class="image-record-visual">${label}</div></a>`;
       if (entry.label === 'effigy') return entry.id
         ? `<article class="model-card"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual"><div class="model-frame"><iframe title="${escapeHtml(entry.title)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>${label}</div></article>`
         : `<a class="model-card model-collection-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer"><div class="model-info"><h2>${escapeHtml(entry.title)}</h2></div><div class="image-record-visual">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}${label}</div></a>`;
@@ -52,7 +53,7 @@ export function createArmorialScreen({ state, escapeHtml, imageMarkup, savePrefe
     return `<div class="image-tags-layout">${sidebar}<div class="models-grid armorial-grid">${cards || '<p class="status">No images match the selected regions.</p>'}</div></div>`;
   }
 
-  function setupArmorialFilters() {
+  function setupImageFilters() {
     document.querySelectorAll('a[data-image-filter]').forEach((link) => link.addEventListener('click', (event) => {
       event.preventDefault();
       const region = link.dataset.imageFilter;
@@ -65,5 +66,5 @@ export function createArmorialScreen({ state, escapeHtml, imageMarkup, savePrefe
     }));
   }
 
-  return { renderArmorialsPage, setupArmorialFilters };
+  return { renderImagesPage, setupImageFilters };
 }

@@ -15,8 +15,8 @@ export async function renderActiveScreen({
   renderMapPage,
   setupMap,
   render3dPage,
-  renderArmorialsPage,
-  setupArmorialFilters,
+  renderImagesPage,
+  setupImageFilters,
   visibleLetterPaths,
   documentYear,
   renderYearSidebar,
@@ -65,8 +65,8 @@ export async function renderActiveScreen({
     return;
   }
   if (state.active === 'images/all') {
-    content.innerHTML = renderArmorialsPage();
-    setupArmorialFilters();
+    content.innerHTML = renderImagesPage();
+    setupImageFilters();
     setupSealAnnotations();
     return;
   }
