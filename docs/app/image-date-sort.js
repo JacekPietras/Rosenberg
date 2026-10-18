@@ -1,6 +1,6 @@
-export function sortByTitleDate(items) {
+export function sortByDate(items) {
   return items
-    .map((item, index) => ({ item, index, year: titleDateYear(item.title) }))
+    .map((item, index) => ({ item, index, year: dateYear(item.date ?? item.year) }))
     .sort((a, b) => {
       if (a.year === null && b.year !== null) return 1;
       if (a.year !== null && b.year === null) return -1;
@@ -9,7 +9,7 @@ export function sortByTitleDate(items) {
     .map(({ item }) => item);
 }
 
-export function titleDateYear(title) {
-  const match = String(title || '').match(/\[(?:c\.\s*)?(\d{4})(?:-\d{4})?\]/i);
+export function dateYear(date) {
+  const match = String(date || '').match(/^(?:c\.\s*)?(\d{4})(?:-\d{4})?$/i);
   return match ? Number(match[1]) : null;
 }

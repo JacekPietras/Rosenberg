@@ -3,7 +3,8 @@
   "entries": [
     {
       "label": "armorial",
-      "title": "Gelre armorial [1370-1414]",
+      "title": "Gelre armorial",
+      "date": "1370-1414",
       "source": "https://drive.google.com/file/d/1ZBy9oJ-s5TnAkBxe12BbXOf5H8p79gmV/view?usp=drive_link",
       "url": "https://drive.google.com/thumbnail?id=1ZBy9oJ-s5TnAkBxe12BbXOf5H8p79gmV&sz=w1600",
       "regions": [
@@ -18,7 +19,8 @@
     },
     {
       "label": "armorial",
-      "title": "Bellenville armorial, Paris, BnF, ms. fr. 5230 [1375-1400]",
+      "title": "Bellenville armorial, Paris, BnF, ms. fr. 5230",
+      "date": "1375-1400",
       "source": "https://drive.google.com/file/d/16ZvYLWb8xhWp_8DSwQG96EF4jm2agXC6/view",
       "url": "https://drive.google.com/thumbnail?id=16ZvYLWb8xhWp_8DSwQG96EF4jm2agXC6&sz=w1600",
       "regions": [
@@ -33,7 +35,8 @@
     },
     {
       "label": "armorial",
-      "title": "Bruderschaft St. Christoph auf dem Arlberg, München, Bayerisches Hauptstaatsarchiv, Geheimes Hausarchiv, Bände 3 [1394-1430]",
+      "title": "Bruderschaft St. Christoph auf dem Arlberg, München, Bayerisches Hauptstaatsarchiv, Geheimes Hausarchiv, Bände 3",
+      "date": "1394-1430",
       "source": "https://drive.google.com/file/d/1MNFevgZ0pKJCHUkodEFCkg2D1hoqZvaw/view",
       "url": "https://drive.google.com/thumbnail?id=1MNFevgZ0pKJCHUkodEFCkg2D1hoqZvaw&sz=w1600",
       "regions": [
@@ -48,7 +51,8 @@
     },
     {
       "label": "armorial",
-      "title": "Wappenfries Zum Esel in der Heiliggeistkirche in Heidelberg zum Gedenken verstorbener Mitglieder [1400-1450]",
+      "title": "Wappenfries Zum Esel in der Heiliggeistkirche in Heidelberg zum Gedenken verstorbener Mitglieder",
+      "date": "1400-1450",
       "source": "https://drive.google.com/file/d/10hqTbRWTz4xWqLsZBh7BfIjyUs9T6VyF/view",
       "url": "https://drive.google.com/thumbnail?id=10hqTbRWTz4xWqLsZBh7BfIjyUs9T6VyF&sz=w1600",
       "regions": [
@@ -63,7 +67,9 @@
     },
     {
       "label": "armorial",
-      "title": "Wappenbuch - BSB Cgm 8030 [1471-1486] fol. 332v",
+      "title": "Wappenbuch - BSB Cgm 8030",
+      "date": "1471-1486",
+      "folio": "332v",
       "source": "https://drive.google.com/file/d/1HlHMWUixZPRv8bff2P9uwNFQRGc1qFOV/view",
       "url": "https://drive.google.com/thumbnail?id=1HlHMWUixZPRv8bff2P9uwNFQRGc1qFOV&sz=w1600",
       "regions": [
@@ -78,7 +84,9 @@
     },
     {
       "label": "armorial",
-      "title": "Donaueschinger Wappenbuch, Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 496 [1430-1460] fol. 81v",
+      "title": "Donaueschinger Wappenbuch, Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 496",
+      "date": "1430-1460",
+      "folio": "81v",
       "source": "https://digital.blb-karlsruhe.de/i3f/v20/6050102/manifest",
       "url": "https://digital.blb-karlsruhe.de/i3f/v20/6092985/full/max/0/default.jpg",
       "regions": [
@@ -93,7 +101,9 @@
     },
     {
       "label": "armorial",
-      "title": "Donaueschinger Wappenbuch, Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 496 [1430-1460] fol. 83r",
+      "title": "Donaueschinger Wappenbuch, Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 496",
+      "date": "1430-1460",
+      "folio": "83r",
       "source": "https://digital.blb-karlsruhe.de/i3f/v20/6050102/manifest",
       "url": "https://digital.blb-karlsruhe.de/i3f/v20/6092986/full/max/0/default.jpg",
       "regions": [
@@ -108,7 +118,8 @@
     },
     {
       "label": "armorial",
-      "title": "Armorial of Hans Haggenberg, St. Gallen, Stiftsbibliothek, Cod. Sang. 1084 [1450-1500]",
+      "title": "Armorial of Hans Haggenberg, St. Gallen, Stiftsbibliothek, Cod. Sang. 1084",
+      "date": "1450-1500",
       "source": "https://drive.google.com/file/d/1yv0FF4jKCfhb21RtCqD-yvL0dCKTC4-7/view",
       "url": "https://drive.google.com/thumbnail?id=1yv0FF4jKCfhb21RtCqD-yvL0dCKTC4-7&sz=w1600",
       "regions": [
@@ -130,7 +141,8 @@
     },
     {
       "label": "armorial",
-      "title": "Bruderschaftsbuch des jülich-bergischen Hubertusordens, München, BSB, cod. icon. 318 [1450-1500]",
+      "title": "Bruderschaftsbuch des jülich-bergischen Hubertusordens, München, BSB, cod. icon. 318",
+      "date": "1450-1500",
       "source": "https://drive.google.com/file/d/1gdqnYDK8UwpeGiBWcuynEO2PFPazyvoV/view",
       "url": "https://drive.google.com/thumbnail?id=1gdqnYDK8UwpeGiBWcuynEO2PFPazyvoV&sz=w1600",
       "regions": [
@@ -145,7 +157,8 @@
     },
     {
       "label": "armorial",
-      "title": "Scheibler’sches armorial, München, BSB, cod. icon. 312c [1450]",
+      "title": "Scheibler’sches armorial, München, BSB, cod. icon. 312c",
+      "date": "1450",
       "source": "https://drive.google.com/file/d/1RIfD1CRMcy6nFvYhlmniTvT7Un47GpLw/view",
       "url": "https://drive.google.com/thumbnail?id=1RIfD1CRMcy6nFvYhlmniTvT7Un47GpLw&sz=w1600",
       "regions": [
@@ -160,7 +173,9 @@
     },
     {
       "label": "armorial",
-      "title": "Codex Bergshammar [1450] fols. 104-105",
+      "title": "Codex Bergshammar",
+      "date": "1450",
+      "folio": "104-105",
       "source": "https://sok.riksarkivet.se/bildvisning/R0001216_00056",
       "url": "https://lbiiif.riksarkivet.se/arkis!R0001216_00056/full/max/0/default.jpg",
       "regions": [
@@ -175,7 +190,9 @@
     },
     {
       "label": "armorial",
-      "title": "Codex Bergshammar [1450] fols. 420-421",
+      "title": "Codex Bergshammar",
+      "date": "1450",
+      "folio": "420-421",
       "source": "https://drive.google.com/file/d/1Oi_DcrbDfZy4xygpD2WUMAIziFIBx-0q/view",
       "url": "https://drive.google.com/thumbnail?id=1Oi_DcrbDfZy4xygpD2WUMAIziFIBx-0q&sz=w1600",
       "regions": [
@@ -190,7 +207,8 @@
     },
     {
       "label": "armorial",
-      "title": "Ingeram Codex - Fürspang in Franken [1459]",
+      "title": "Ingeram Codex - Fürspang in Franken",
+      "date": "1459",
       "source": "https://drive.google.com/file/d/1IPDtnB0-F2e--ZN84WP-yW2j58Rmr2L9/view?usp=sharing",
       "url": "https://drive.google.com/thumbnail?id=1IPDtnB0-F2e--ZN84WP-yW2j58Rmr2L9&sz=w1600",
       "regions": [
@@ -205,7 +223,8 @@
     },
     {
       "label": "armorial",
-      "title": "Ingeram Codex - Niederen Esel vom Main [1459]",
+      "title": "Ingeram Codex - Niederen Esel vom Main",
+      "date": "1459",
       "source": "https://drive.google.com/file/d/1cJyzCTxaY3Q59yA4bFkRu9BAB9QeyBku/view?usp=drive_link",
       "url": "https://drive.google.com/thumbnail?id=1cJyzCTxaY3Q59yA4bFkRu9BAB9QeyBku&sz=w1600",
       "regions": [
@@ -220,7 +239,9 @@
     },
     {
       "label": "armorial",
-      "title": "Heroldsbuch des Jülichschen St. Hubertusordens, Krakow, Biblioteka Jagiellońska, Berol. Ms. Germ. Qu. 1479 [1460] 252",
+      "title": "Heroldsbuch des Jülichschen St. Hubertusordens, Krakow, Biblioteka Jagiellońska, Berol. Ms. Germ. Qu. 1479",
+      "date": "1460",
+      "folio": "252",
       "source": "https://drive.google.com/file/d/1DSVX58Y9Sp2r5Row0HfLxe-lZ6PFrQEI/view",
       "url": "https://drive.google.com/thumbnail?id=1DSVX58Y9Sp2r5Row0HfLxe-lZ6PFrQEI&sz=w1600",
       "regions": [
@@ -235,7 +256,9 @@
     },
     {
       "label": "armorial",
-      "title": "Sammelhandschrift - ONB Cod. 3044 [1460] fol. 173v",
+      "title": "Sammelhandschrift - ONB Cod. 3044",
+      "date": "1460",
+      "folio": "173v",
       "source": "https://viewer.onb.ac.at/10036A94?page=352",
       "url": "https://api.onb.ac.at/iiif/image/v3/10036A94/uk4nGb4s3DmuAuqG/full/max/0/default.jpg",
       "regions": [
@@ -257,7 +280,9 @@
     },
     {
       "label": "armorial",
-      "title": "Lyncenich armorial, Brussels, KBR, ms. II 6567 [1460] p. 262",
+      "title": "Lyncenich armorial, Brussels, KBR, ms. II 6567",
+      "date": "1460",
+      "folio": "262",
       "source": "https://drive.google.com/file/d/1c_8kmqRZ4u_wkzV8lt7SYVb4K_7S92sa/view",
       "url": "https://drive.google.com/thumbnail?id=1c_8kmqRZ4u_wkzV8lt7SYVb4K_7S92sa&sz=w1600",
       "regions": [
@@ -272,7 +297,9 @@
     },
     {
       "label": "armorial",
-      "title": "Chronik des Konstanzer Konzils - NKCR XVI.A.17 [1464] fol. 228v",
+      "title": "Chronik des Konstanzer Konzils - NKCR XVI.A.17",
+      "date": "1464",
+      "folio": "228v",
       "source": "https://www.manuscriptorium.com/hub/catalog/default/detail/single/manuscriptorium%7CAIPDIG-NKCR__XVI_A_17____449EM91-cs?lang=cs",
       "url": "https://imagines.manuscriptorium.com/loris/AIPDIG-NKCR__XVI_A_17____449EM91-cs/ID0230v/full/full/0/default.jpg",
       "regions": [
@@ -287,7 +314,9 @@
     },
     {
       "label": "armorial",
-      "title": "Chronik des Konstanzer Konzils - NKCR XVI.A.17 [1464] fol. 229r",
+      "title": "Chronik des Konstanzer Konzils - NKCR XVI.A.17",
+      "date": "1464",
+      "folio": "229r",
       "source": "https://drive.google.com/file/d/19Pb51nRS8wjYVqv40h5BhdDSLAuAdVT8/view",
       "url": "https://drive.google.com/thumbnail?id=19Pb51nRS8wjYVqv40h5BhdDSLAuAdVT8&sz=w1600",
       "regions": [
@@ -302,10 +331,11 @@
     },
     {
       "label": "armorial",
-      "title": "Ortenburger Wappenbuch - BSB Cod.icon. 308 u [1466-1473] 133v",
+      "title": "Ortenburger Wappenbuch - BSB Cod.icon. 308 u",
+      "date": "1466-1473",
+      "folio": "133v",
       "source": "https://drive.google.com/file/d/1f7R5ctsJQGoujbTE-hH9rN1l2643xvQY/view",
       "url": "https://drive.google.com/thumbnail?id=1f7R5ctsJQGoujbTE-hH9rN1l2643xvQY&sz=w1600",
-      "date": "1466-1473",
       "regions": [
         {
           "x": 0.0305,
@@ -318,10 +348,11 @@
     },
     {
       "label": "armorial",
-      "title": "Ortenburger Wappenbuch - BSB Cod.icon. 308 u [1466-1473] 160v",
+      "title": "Ortenburger Wappenbuch - BSB Cod.icon. 308 u",
+      "date": "1466-1473",
+      "folio": "160v",
       "source": "https://drive.google.com/file/d/1zWw2Ic5-YT3mzOwqZpu67oG7APrj5vse/view",
       "url": "https://drive.google.com/thumbnail?id=1zWw2Ic5-YT3mzOwqZpu67oG7APrj5vse&sz=w1600",
-      "date": "1466-1473",
       "regions": [
         {
           "x": 0.4859,
@@ -334,7 +365,9 @@
     },
     {
       "label": "armorial",
-      "title": "Chronicle of the Council of Constance - Cod. St. Georgen 63, Ulrich Richental’s [1470] 157v",
+      "title": "Chronicle of the Council of Constance - Cod. St. Georgen 63, Ulrich Richental’s",
+      "date": "1470",
+      "folio": "157v",
       "source": "https://i3f.vls.io/?collection=i3fblbk&id=https%3A%2F%2Fdigital.blb-karlsruhe.de%2Fi3f%2Fv20%2F1188078%2Fmanifest",
       "url": "https://digital.blb-karlsruhe.de/i3f/v20/1205164/full/full/0/default.jpg",
       "regions": [
@@ -349,7 +382,9 @@
     },
     {
       "label": "armorial",
-      "title": "Pfälzisches Wappenlehnbuch, GLAK 67 Nr. 1057 [1471] fol. 128r",
+      "title": "Pfälzisches Wappenlehnbuch, GLAK 67 Nr. 1057",
+      "date": "1471",
+      "folio": "128r",
       "source": "https://drive.google.com/file/d/1gxMMUpIDH2c-_7gnsnysNJrBjBAwtgfy/view?usp=drive_link",
       "url": "https://drive.google.com/thumbnail?id=1gxMMUpIDH2c-_7gnsnysNJrBjBAwtgfy&sz=w1600",
       "regions": [
@@ -360,12 +395,13 @@
           "height": 0.2403,
           "name": "Rosenberg"
         }
-      ],
-      "date": "1471"
+      ]
     },
     {
       "label": "armorial",
-      "title": "Eichstätter Wappenbuch, Eichstätt, Universitätsbibliothek Eichstätt-Ingolstadt, Cod. st 704 [1474-1484] fol. 181r",
+      "title": "Eichstätter Wappenbuch, Eichstätt, Universitätsbibliothek Eichstätt-Ingolstadt, Cod. st 704",
+      "date": "1474-1484",
+      "folio": "181r",
       "source": "https://drive.google.com/file/d/12hRSMmzcvubjtn05e_uAEjD6KEIxmdz4/view",
       "url": "https://drive.google.com/thumbnail?id=12hRSMmzcvubjtn05e_uAEjD6KEIxmdz4&sz=w1600",
       "regions": [
@@ -387,7 +423,9 @@
     },
     {
       "label": "armorial",
-      "title": "München, BSB, cod. icon. 311 [1475-1500] fol. 82v",
+      "title": "München, BSB, cod. icon. 311",
+      "date": "1475-1500",
+      "folio": "82v",
       "source": "https://drive.google.com/file/d/1aOwuppKZKiY9ZtOLh-s4mbINem-lJy_B/view",
       "url": "https://drive.google.com/thumbnail?id=1aOwuppKZKiY9ZtOLh-s4mbINem-lJy_B&sz=w1600",
       "regions": [
@@ -402,7 +440,9 @@
     },
     {
       "label": "armorial",
-      "title": "Wappen deutscher Geschlechter - BSB Cod.icon. 311 [1475-1500] fol. 14v",
+      "title": "Wappen deutscher Geschlechter - BSB Cod.icon. 311",
+      "date": "1475-1500",
+      "folio": "14v",
       "source": "https://drive.google.com/file/d/158m90zK9OosHBfuaJyb6fr1C9FkhAHRE/view",
       "url": "https://drive.google.com/thumbnail?id=158m90zK9OosHBfuaJyb6fr1C9FkhAHRE&sz=w1600",
       "regions": [
@@ -417,7 +457,9 @@
     },
     {
       "label": "armorial",
-      "title": "Wappen besonders von deutschen Geschlechtern - BSB Cod.icon. 309 [1475-1560] fol. 7r",
+      "title": "Wappen besonders von deutschen Geschlechtern - BSB Cod.icon. 309",
+      "date": "1475-1560",
+      "folio": "7r",
       "source": "https://drive.google.com/file/d/16PnIbEEVUej9s-q2HAjUfADaWwJiK1rq/view",
       "url": "https://drive.google.com/thumbnail?id=16PnIbEEVUej9s-q2HAjUfADaWwJiK1rq&sz=w1600",
       "regions": [
@@ -432,7 +474,9 @@
     },
     {
       "label": "armorial",
-      "title": "Wappen besonders von deutschen Geschlechtern - BSB Cod.icon. 309 [1475-1560] fol. 15v",
+      "title": "Wappen besonders von deutschen Geschlechtern - BSB Cod.icon. 309",
+      "date": "1475-1560",
+      "folio": "15v",
       "source": "https://drive.google.com/file/d/18AsxfJO8yUTYnTHzpbQGNTdgsX_9OHme/view",
       "url": "https://drive.google.com/thumbnail?id=18AsxfJO8yUTYnTHzpbQGNTdgsX_9OHme&sz=w1600",
       "regions": [
@@ -447,7 +491,9 @@
     },
     {
       "label": "armorial",
-      "title": "Wappen besonders von deutschen Geschlechtern - BSB Cod.icon. 309 [1475-1560] fol. 51r",
+      "title": "Wappen besonders von deutschen Geschlechtern - BSB Cod.icon. 309",
+      "date": "1475-1560",
+      "folio": "51r",
       "source": "https://drive.google.com/file/d/1G5LgjkYsA9ghId4uyPJsP8F_KfyZgeCx/view",
       "url": "https://drive.google.com/thumbnail?id=1G5LgjkYsA9ghId4uyPJsP8F_KfyZgeCx&sz=w1600",
       "regions": [
@@ -462,7 +508,8 @@
     },
     {
       "label": "armorial",
-      "title": "Grünenberg Armorial, München, BSB, cgm 145 [1480]",
+      "title": "Grünenberg Armorial, München, BSB, cgm 145",
+      "date": "1480",
       "source": "https://drive.google.com/file/d/1eltVsePkawk6eJAKg2xjr6Pn05zGq61O/view",
       "url": "https://drive.google.com/thumbnail?id=1eltVsePkawk6eJAKg2xjr6Pn05zGq61O&sz=w1600",
       "regions": [
@@ -477,7 +524,8 @@
     },
     {
       "label": "armorial",
-      "title": "Grünenberg Armorial, München, BSB, cgm 145 [1480]",
+      "title": "Grünenberg Armorial, München, BSB, cgm 145",
+      "date": "1480",
       "source": "https://drive.google.com/file/d/18IVb1v8CednTQPIYIZULBam0BC-3r1R7/view",
       "url": "https://drive.google.com/thumbnail?id=18IVb1v8CednTQPIYIZULBam0BC-3r1R7&sz=w1600",
       "regions": [
@@ -492,7 +540,9 @@
     },
     {
       "label": "armorial",
-      "title": "Grünenberg Armorial - GStA VIII. HA, II, 21 [1480-1490] p. 316",
+      "title": "Grünenberg Armorial - GStA VIII. HA, II, 21",
+      "date": "1480-1490",
+      "folio": "316",
       "source": "https://drive.google.com/file/d/1GYOREI-HaWpkw7EMxo6KNNCLdct4lNxF/view",
       "url": "https://drive.google.com/thumbnail?id=1GYOREI-HaWpkw7EMxo6KNNCLdct4lNxF&sz=w1600",
       "regions": [
@@ -507,7 +557,9 @@
     },
     {
       "label": "armorial",
-      "title": "Chronicle of the Council of Constance, Anton Sorg [1483] p. 271",
+      "title": "Chronicle of the Council of Constance, Anton Sorg",
+      "date": "1483",
+      "folio": "271",
       "source": "https://drive.google.com/file/d/1_o6pRpTn76WTgEHRvtwyUB2dlHd7uxaa/view",
       "url": "https://drive.google.com/thumbnail?id=1_o6pRpTn76WTgEHRvtwyUB2dlHd7uxaa&sz=w1600",
       "regions": [
@@ -522,7 +574,9 @@
     },
     {
       "label": "armorial",
-      "title": "Wernigeroder (Schaffhausensches) Wappenbuch - BSB Cod.icon. 308 n [1486-1492] fol. 131v",
+      "title": "Wernigeroder (Schaffhausensches) Wappenbuch - BSB Cod.icon. 308 n",
+      "date": "1486-1492",
+      "folio": "131v",
       "source": "https://drive.google.com/file/d/1dis3SAAsXCpTZHvTg_1QYH6xI3x8utYU/view",
       "url": "https://drive.google.com/thumbnail?id=1dis3SAAsXCpTZHvTg_1QYH6xI3x8utYU&sz=w1600",
       "regions": [
@@ -537,7 +591,9 @@
     },
     {
       "label": "armorial",
-      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 166v",
+      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545",
+      "date": "1495-1498",
+      "folio": "166v",
       "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
       "url": "https://drive.google.com/thumbnail?id=17AhDOxTYNDe5FqFijmi6f8QRKE3UdV50&sz=w1600",
       "regions": [
@@ -552,7 +608,9 @@
     },
     {
       "label": "armorial",
-      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 168r",
+      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545",
+      "date": "1495-1498",
+      "folio": "168r",
       "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
       "url": "https://drive.google.com/thumbnail?id=1ogoonfk-hwC7O-72kWt-1Ok6bVjSbmNo&sz=w1600",
       "regions": [
@@ -567,7 +625,9 @@
     },
     {
       "label": "armorial",
-      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545 [c. 1495-1498] fol. 169v",
+      "title": "Jörg Rugen’s Wappenbuch, Innsbruck, ULBT, Cod. 545",
+      "date": "1495-1498",
+      "folio": "169v",
       "source": "https://ulb-digital.uibk.ac.at/urn/urn:nbn:at:at-ubi:5-3619",
       "url": "https://drive.google.com/thumbnail?id=1gHYGr4IJ4jeqloG8HRsQJvG3PtzwmB_V&sz=w1600",
       "regions": [
@@ -582,7 +642,9 @@
     },
     {
       "label": "armorial",
-      "title": "Colmarer Wappenbuch, Bibliothèque Municipale, 1107 (064) [1500-1600] 108",
+      "title": "Colmarer Wappenbuch, Bibliothèque Municipale, 1107 (064)",
+      "date": "1500-1600",
+      "folio": "108",
       "source": "https://drive.google.com/file/d/1Fuq9hdQTiVMHrvSSHWA-x4J7lNI42laR/view?usp=drive_link",
       "url": "https://drive.google.com/thumbnail?id=1Fuq9hdQTiVMHrvSSHWA-x4J7lNI42laR&sz=w1600",
       "regions": [
@@ -597,7 +659,9 @@
     },
     {
       "label": "armorial",
-      "title": "Colmarer Wappenbuch, Bibliothèque Municipale, 1107 (064) [1500-1600] 132",
+      "title": "Colmarer Wappenbuch, Bibliothèque Municipale, 1107 (064)",
+      "date": "1500-1600",
+      "folio": "132",
       "source": "https://drive.google.com/file/d/1PXSQaZ1K9TZIKSZu3hYdHXgpUKhkPJzC/view?usp=drive_link",
       "url": "https://drive.google.com/thumbnail?id=1PXSQaZ1K9TZIKSZu3hYdHXgpUKhkPJzC&sz=w1600",
       "regions": [
@@ -612,7 +676,9 @@
     },
     {
       "label": "armorial",
-      "title": "Wappen deutscher Geschlechter, überwiegend aus Südwestdeutschland - BSB Cod.icon. 312 [1500-1600] fol. 19v",
+      "title": "Wappen deutscher Geschlechter, überwiegend aus Südwestdeutschland - BSB Cod.icon. 312",
+      "date": "1500-1600",
+      "folio": "19v",
       "source": "https://drive.google.com/file/d/1nsCFjkj6HsERDWS0Lgicp5Tkd6fvT2xX/view",
       "url": "https://drive.google.com/thumbnail?id=1nsCFjkj6HsERDWS0Lgicp5Tkd6fvT2xX&sz=w1600",
       "regions": [
@@ -627,7 +693,9 @@
     },
     {
       "label": "armorial",
-      "title": "Wappenbuch besonders deutscher Geschlechter - BSB Cod.icon. 308 [1515-1650] fol. 156r",
+      "title": "Wappenbuch besonders deutscher Geschlechter - BSB Cod.icon. 308",
+      "date": "1515-1650",
+      "folio": "156r",
       "source": "https://drive.google.com/file/d/1R54fTCs0LN710BXywnW-itQipf8IFpZG/view",
       "url": "https://drive.google.com/thumbnail?id=1R54fTCs0LN710BXywnW-itQipf8IFpZG&sz=w1600",
       "regions": [
@@ -642,7 +710,9 @@
     },
     {
       "label": "armorial",
-      "title": "Wappenbuch besonders deutscher Geschlechter - BSB Cod.icon. 308 [1515-1650] fol. 183v",
+      "title": "Wappenbuch besonders deutscher Geschlechter - BSB Cod.icon. 308",
+      "date": "1515-1650",
+      "folio": "183v",
       "source": "https://drive.google.com/file/d/1V7lfp8Ajn18qPQTv6YqnVYifHuZDrJd_/view",
       "url": "https://drive.google.com/thumbnail?id=1V7lfp8Ajn18qPQTv6YqnVYifHuZDrJd_&sz=w1600",
       "regions": [
@@ -657,7 +727,9 @@
     },
     {
       "label": "armorial",
-      "title": "Wappenbuch besonders deutscher Geschlechter - BSB Cod.icon. 308 [1515-1650] fol. 205r",
+      "title": "Wappenbuch besonders deutscher Geschlechter - BSB Cod.icon. 308",
+      "date": "1515-1650",
+      "folio": "205r",
       "source": "https://drive.google.com/file/d/1z2qaP7qZswNtduoFucWaIr1-SzfaF2Vv/view",
       "url": "https://drive.google.com/thumbnail?id=1z2qaP7qZswNtduoFucWaIr1-SzfaF2Vv&sz=w1600",
       "regions": [
@@ -672,7 +744,8 @@
     },
     {
       "label": "armorial",
-      "title": "Pfälzisches Wappenlehnbuch, GLAK 67 Nr. 1058, Bild 307 [1538]",
+      "title": "Pfälzisches Wappenlehnbuch, GLAK 67 Nr. 1058, Bild 307",
+      "date": "1538",
       "source": "https://drive.google.com/file/d/1iw16x6p5wXWKf0gzF-s_B2NQJM_GVZCN/view?usp=drive_link",
       "url": "https://drive.google.com/thumbnail?id=1iw16x6p5wXWKf0gzF-s_B2NQJM_GVZCN&sz=w1600",
       "regions": [
@@ -683,12 +756,12 @@
           "height": 0.2286,
           "name": "Rosenberg"
         }
-      ],
-      "date": "1538"
+      ]
     },
     {
       "label": "armorial",
-      "title": "Pfälzisches Wappenlehnbuch, GLAK 67 Nr. 1058, Bild 528 [1538]",
+      "title": "Pfälzisches Wappenlehnbuch, GLAK 67 Nr. 1058, Bild 528",
+      "date": "1538",
       "source": "https://drive.google.com/file/d/1NzlDKR30ZxDtkChjiwrweARW7EXNlFHK/view?usp=drive_link",
       "url": "https://drive.google.com/thumbnail?id=1NzlDKR30ZxDtkChjiwrweARW7EXNlFHK&sz=w1600",
       "regions": [
@@ -699,12 +772,13 @@
           "height": 0.193,
           "name": "Rosenberg"
         }
-      ],
-      "date": "1538"
+      ]
     },
     {
       "label": "armorial",
-      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307 [1600] fol. 153",
+      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307",
+      "date": "1600",
+      "folio": "153",
       "source": "https://drive.google.com/file/d/1OYKv6VTQdBJ77Op518zSafUeaTCXSrFy/view",
       "url": "https://drive.google.com/thumbnail?id=1OYKv6VTQdBJ77Op518zSafUeaTCXSrFy&sz=w1600",
       "regions": [
@@ -719,7 +793,9 @@
     },
     {
       "label": "armorial",
-      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307 [1600] fol. 420",
+      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307",
+      "date": "1600",
+      "folio": "420",
       "source": "https://drive.google.com/file/d/1BHmvrqsLsPqebEfHCf5aEWy8Kk4HrMDm/view",
       "url": "https://drive.google.com/thumbnail?id=1BHmvrqsLsPqebEfHCf5aEWy8Kk4HrMDm&sz=w1600",
       "regions": [
@@ -741,7 +817,9 @@
     },
     {
       "label": "armorial",
-      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307 [1600] fol. 438",
+      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307",
+      "date": "1600",
+      "folio": "438",
       "source": "https://drive.google.com/file/d/1aQvVjfjPm14SzcmaZEW1oh_U82GYrkOU/view",
       "url": "https://drive.google.com/thumbnail?id=1aQvVjfjPm14SzcmaZEW1oh_U82GYrkOU&sz=w1600",
       "regions": [
@@ -756,7 +834,9 @@
     },
     {
       "label": "armorial",
-      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307 [1600] fol. 472",
+      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307",
+      "date": "1600",
+      "folio": "472",
       "source": "https://drive.google.com/file/d/1i2voVI0TmaLzW7FHt2hHbOTwE2_EM44J/view",
       "url": "https://drive.google.com/thumbnail?id=1i2voVI0TmaLzW7FHt2hHbOTwE2_EM44J&sz=w1600",
       "regions": [
@@ -771,7 +851,9 @@
     },
     {
       "label": "armorial",
-      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307 [1600] fol. 573",
+      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307",
+      "date": "1600",
+      "folio": "573",
       "source": "https://drive.google.com/file/d/1YweIhi9Jr2Qfr2BQ8ZdL3E8zu4IEEO6v/view",
       "url": "https://drive.google.com/thumbnail?id=1YweIhi9Jr2Qfr2BQ8ZdL3E8zu4IEEO6v&sz=w1600",
       "regions": [
@@ -786,7 +868,9 @@
     },
     {
       "label": "armorial",
-      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307 [1600] fol. 642",
+      "title": "Sammlung von Wappen aus verschiedenen, besonders deutschen Ländern - BSB Cod.icon. 307",
+      "date": "1600",
+      "folio": "642",
       "source": "https://drive.google.com/file/d/1uId_I5uRcKma7CLVIiKXE3ywxBH-WiS7/view",
       "url": "https://drive.google.com/thumbnail?id=1uId_I5uRcKma7CLVIiKXE3ywxBH-WiS7&sz=w1600",
       "regions": [
@@ -801,7 +885,8 @@
     },
     {
       "label": "armorial",
-      "title": "Siebmachers Wappenbuch [1605]",
+      "title": "Siebmachers Wappenbuch",
+      "date": "1605",
       "source": "https://drive.google.com/file/d/1yIZc9pe9d3-qHgSrL9CzJhMcbmrANDSp/view?usp=drive_link",
       "url": "https://drive.google.com/thumbnail?id=1yIZc9pe9d3-qHgSrL9CzJhMcbmrANDSp&sz=w1600",
       "regions": [
@@ -816,7 +901,8 @@
     },
     {
       "label": "armorial",
-      "title": "Codex Rossianus 711 [1610]",
+      "title": "Codex Rossianus 711",
+      "date": "1610",
       "source": "https://drive.google.com/file/d/13r9lUWq6uPdSP-aGajGH27BkwR4R-PjR/view",
       "url": "https://drive.google.com/thumbnail?id=13r9lUWq6uPdSP-aGajGH27BkwR4R-PjR&sz=w1600",
       "regions": [
@@ -831,7 +917,8 @@
     },
     {
       "label": "armorial",
-      "title": "Turnierbuch Gemmingen-Hornberg [1615]",
+      "title": "Turnierbuch Gemmingen-Hornberg",
+      "date": "1615",
       "source": "https://drive.google.com/file/d/19cnKL1zUbYAfMI5tsGWolEtiLmF1an3q/view",
       "url": "https://drive.google.com/thumbnail?id=19cnKL1zUbYAfMI5tsGWolEtiLmF1an3q&sz=w1600",
       "regions": [
@@ -846,7 +933,9 @@
     },
     {
       "label": "armorial",
-      "title": "Arlberg-Botenbuch, NÖLA HS StA 0328a [1579] fol. 258v",
+      "title": "Arlberg-Botenbuch, NÖLA HS StA 0328a",
+      "date": "1579",
+      "folio": "258v",
       "source": "https://augias.noel.gv.at/05_Sammlungen/HS/HS-StA/HS_0328/HS_0328_Nr_0270.jpg",
       "url": "https://drive.google.com/thumbnail?id=1JyBFC_KC2WPNuPdqNmxJ1b99eSj8a74C&sz=w1600",
       "regions": [
@@ -861,7 +950,9 @@
     },
     {
       "label": "armorial",
-      "title": "Arlberg-Botenbuch, NÖLA HS StA 0328a [1579] fol. 274v",
+      "title": "Arlberg-Botenbuch, NÖLA HS StA 0328a",
+      "date": "1579",
+      "folio": "274v",
       "source": "https://augias.noel.gv.at/05_Sammlungen/HS/HS-StA/HS_0328/HS_0328_Nr_0286.jpg",
       "url": "https://drive.google.com/thumbnail?id=1SHsFXz_a7iyYNzETHLFY6BGxCDnY-gcV&sz=w1600",
       "regions": [

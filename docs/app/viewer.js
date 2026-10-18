@@ -6,7 +6,7 @@ import { createDocumentRenderer } from './screens/documents.js';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js';
-import { createArmorialScreen } from './screens/armorials.js?v=18';
+import { createArmorialScreen } from './screens/armorials.js?v=20';
 import { createDataLoader } from './data/loader.js?v=3';
 import { createEntityScreens } from './screens/entities.js?v=79';
 import { createTabs } from './components/tabs.js?v=2';
@@ -16,7 +16,7 @@ import { createMapScreen } from './screens/map.js?v=79';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=84';
 import { createMarkupRenderer } from './rendering/markup.js?v=79';
 import { createImageRenderer } from './rendering/images.js?v=3';
-import { sortByTitleDate } from './image-date-sort.js';
+import { sortByDate } from './image-date-sort.js?v=2';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
 import { createLanguageRenderer } from './rendering/languages.js';
 import { createCitationIndex } from './data/citations.js';
@@ -1303,7 +1303,7 @@ async function renderActive() {
     renderPeopleTree,
     renderMapPage: mapScreen.renderMapPage,
     setupMap: mapScreen.setupMap,
-    render3dPage: () => `<div class="models-grid">${sortByTitleDate(state.manifest.collections || []).map((model) => model.type === 'link'
+    render3dPage: () => `<div class="models-grid">${sortByDate(state.manifest.collections || []).map((model) => model.type === 'link'
       ? `<a class="model-card model-collection-link" href="${escapeHtml(model.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(model.title)} collection">${model.preview ? `<img class="model-collection-preview" src="${escapeHtml(model.preview)}" alt="" referrerpolicy="no-referrer">` : ''}<div class="model-info"><h2>${escapeHtml(model.title)}</h2></div></a>`
       : `<article class="model-card"><div class="model-frame"><iframe title="${escapeHtml(model.title)}" src="https://sketchfab.com/models/${encodeURIComponent(model.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div><div class="model-info"><h2>${escapeHtml(model.title)}</h2></div></article>`).join('')}</div>`,
     renderArmorialsPage: armorialScreen.renderArmorialsPage,
