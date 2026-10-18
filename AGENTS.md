@@ -17,7 +17,7 @@ There is no automated merge, sorting, queue, report, or temporary-file workflow.
 ## Research skills
 
 - For archival catalog searches by person or family name, read and follow [`archive-name-research`](.agents/skills/archive-name-research/SKILL.md).
-- For uploading, reading, or making Drive URLs for images in the local objects folder, read and follow [`google-drive-objects`](skills/google-drive-objects/SKILL.md).
+- For uploading, reading, or making Drive URLs for images in the local objects folder, read and follow [`google-drive-objects`](.agents/skills/google-drive-objects/SKILL.md).
 
 ## Images
 
