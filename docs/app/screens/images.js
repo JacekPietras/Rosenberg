@@ -1,3 +1,4 @@
+import { imageCardMarkup, imageDisplayTitle } from '../rendering/images.js?v=5';
 import { dateYear } from '../image-date-sort.js?v=2';
 import { imageLabels } from '../image-labels.js';
 
@@ -64,8 +65,7 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferen
       const label = labelMarkup(entry, index);
       const place = state.places.find((item) => item.id === entry.placeId);
       const placeMarkup = place?.name ? `<span class="image-place-name">${escapeHtml(place.name)}</span>` : '';
-      const displayDate = entry.date ?? entry.year;
-      const displayTitle = [entry.title || document.title, displayDate ? `[${displayDate}]` : ''].filter(Boolean).join(' ');
+      const displayTitle = imageDisplayTitle(entry, document.title);
       if (entry.type === 'link' && entry.url) {
         const collectionImages = state.collectionImages?.[index] || [];
         const cover = entry.coverImage || entry.preview;
@@ -73,19 +73,15 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferen
         const coverImageIndex = collectionImages.findIndex((item) => coverId && driveFileId(item?.src || item) === coverId);
         const coverImage = coverImageIndex >= 0 ? collectionImages[coverImageIndex] : null;
         const focus = coverImage?.cropFocus || coverImage?.regions?.[0] || entry.focus || entry.regions?.[0];
-        const focusAttributes = focus && [focus.x, focus.y, focus.width, focus.height].every((value) => Number.isFinite(Number(value)))
-          ? ` data-focus-x="${Number(focus.x)}" data-focus-y="${Number(focus.y)}" data-focus-width="${Number(focus.width)}" data-focus-height="${Number(focus.height)}"`
-          : '';
         const coverPicker = state.canEditDocuments
           ? `<button class="model-collection-cover-picker" type="button" data-open-collection-cover="${index}" aria-label="Edit cover for ${escapeHtml(entry.title || document.title)}" title="Edit cover"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5 5 5M4 20l4.5-1 11-11a2.12 2.12 0 0 0-3-3l-11 11L4 20Z"/></svg><span>Cover</span></button><div class="model-collection-cover-images" hidden>${collectionImages.length ? imageMarkup(collectionImages, [], { path, index, title: entry.title || document.title, showRegions: false }) : ''}</div>`
           : '';
-        const coverMarkup = cover ? `<a class="model-collection-preview-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(entry.title || 'image collection')}"><img class="model-collection-preview" src="${escapeHtml(cover)}" alt="${escapeHtml(coverImage?.name || entry.title || '')}" referrerpolicy="no-referrer"${focusAttributes}></a>` : '';
-        const modelLink = entry.sketchfabUrl ? `<a class="model-3d-link model-3d-overlay" href="${escapeHtml(entry.sketchfabUrl)}" target="_blank" rel="noopener noreferrer">3D</a>` : '';
-        return `<article class="model-card model-collection-link"><div class="model-info"><h2><a class="model-collection-anchor" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(displayTitle)}</a></h2></div><div class="model-collection-visual">${coverMarkup}${placeMarkup}${modelLink}${coverPicker}${label}</div></article>`;
+        return imageCardMarkup(entry, { focus, controls: coverPicker, label, place: placeMarkup, fallbackTitle: document.title });
       }
-      if (imageLabels(entry).includes('effigy') && entry.id) return `<article class="model-card"><div class="model-info"><h2>${escapeHtml(displayTitle)}</h2></div><div class="image-record-visual"><div class="model-frame"><iframe title="${escapeHtml(displayTitle)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>${placeMarkup}${label}</div></article>`;
-      if (imageLabels(entry).includes('effigy') && !entry.url) return `<a class="model-card model-collection-link" href="${escapeHtml(entry.url || '')}" target="_blank" rel="noopener noreferrer"><div class="model-info"><h2>${escapeHtml(displayTitle)}</h2></div><div class="image-record-visual">${entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="" referrerpolicy="no-referrer">` : ''}${placeMarkup}${label}</div></a>`;
-      return `<article class="model-card armorial-card"><div class="model-info"><h2>${escapeHtml(displayTitle)}</h2></div><div class="image-record-visual">${entry.url ? imageMarkup(entry.url, [], { path, index, title: displayTitle, focus: previewFocus, regions: previewRegions, showRegions: false }) : ''}${placeMarkup}${label}</div></article>`;
+      const media = entry.id ? undefined : entry.url
+        ? imageMarkup(entry.url, [], { path, index, title: displayTitle, focus: previewFocus, regions: previewRegions, showRegions: false })
+        : undefined;
+      return imageCardMarkup(entry, { media, label, place: placeMarkup, fallbackTitle: document.title });
     }).join('');
     return `<div class="image-tags-layout">${sidebar}<div class="models-grid armorial-grid">${cards || '<p class="status">No images match the selected regions.</p>'}</div></div>`;
   }

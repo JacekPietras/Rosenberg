@@ -60,3 +60,36 @@ export function createImageRenderer({ location = window.location } = {}) {
     return images ? `<div class="entry-images">${images}</div>` : '';
   };
 }
+
+export function imageDisplayTitle(entry, fallback = '') {
+  const date = entry.date ?? entry.year;
+  return [entry.title || fallback, date ? `[${date}]` : ''].filter(Boolean).join(' ');
+}
+
+export function imageCardMarkup(entry, { media, focus, controls = '', label = '', place = '', fallbackTitle = '' } = {}) {
+  const title = imageDisplayTitle(entry, fallbackTitle);
+  const isCollection = entry.type === 'link' && entry.url;
+  const heading = isCollection
+    ? `<a class="model-collection-anchor" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>`
+    : escapeHtml(title);
+  if (media === undefined) {
+    if (isCollection) {
+      const cover = entry.coverImage || entry.preview;
+      focus ||= entry.focus || entry.regions?.[0];
+      const focusAttributes = focus && [focus.x, focus.y, focus.width, focus.height].every((value) => Number.isFinite(Number(value)))
+        ? ` data-focus-x="${Number(focus.x)}" data-focus-y="${Number(focus.y)}" data-focus-width="${Number(focus.width)}" data-focus-height="${Number(focus.height)}"`
+        : '';
+      media = cover ? `<a class="model-collection-preview-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(title)} collection"><img class="model-collection-preview" src="${escapeHtml(cover)}" alt="${escapeHtml(title)}" referrerpolicy="no-referrer"${focusAttributes}></a>` : '';
+    } else if (entry.id) {
+      media = `<div class="model-frame"><iframe title="${escapeHtml(title)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>`;
+    } else if (entry.url) {
+      media = createImageRenderer()(entry.url, [], { title });
+    } else {
+      media = entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="${escapeHtml(title)}" referrerpolicy="no-referrer">` : '';
+    }
+  }
+  const modelLink = entry.sketchfabUrl ? `<a class="model-3d-link model-3d-overlay" href="${escapeHtml(entry.sketchfabUrl)}" target="_blank" rel="noopener noreferrer">3D</a>` : '';
+  const cardClass = isCollection ? 'model-collection-link' : entry.id ? '' : 'armorial-card';
+  const visualClass = isCollection ? 'model-collection-visual' : 'image-record-visual';
+  return `<article class="model-card ${cardClass}"><div class="model-info"><h2>${heading}</h2></div><div class="${visualClass}">${media}${place}${modelLink}${controls}${label}</div></article>`;
+}

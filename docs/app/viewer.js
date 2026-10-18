@@ -8,16 +8,16 @@ import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js';
-import { createImageScreen } from './screens/images.js?v=34';
+import { createImageScreen } from './screens/images.js?v=35';
 import { createDataLoader } from './data/loader.js?v=4';
-import { createEntityScreens } from './screens/entities.js?v=81';
+import { createEntityScreens } from './screens/entities.js?v=82';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';
 import { createMapScreen } from './screens/map.js?v=79';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=89';
 import { createMarkupRenderer } from './rendering/markup.js?v=79';
-import { createImageRenderer } from './rendering/images.js?v=4';
+import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=5';
 import { sortByDate } from './image-date-sort.js?v=2';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
 import { createLanguageRenderer } from './rendering/languages.js';
@@ -1305,12 +1305,7 @@ async function renderActive() {
     renderPeopleTree,
     renderMapPage: mapScreen.renderMapPage,
     setupMap: mapScreen.setupMap,
-    render3dPage: () => `<div class="models-grid">${sortByDate(state.manifest.collections || []).map((model) => {
-      const displayDate = model.date ?? model.year;
-      const displayTitle = [model.title, displayDate ? `[${displayDate}]` : ''].filter(Boolean).join(' ');
-      return model.type === 'link'
-      ? `<article class="model-card model-collection-link"><div class="model-info"><h2>${escapeHtml(displayTitle)}</h2></div><div class="model-collection-visual"><a class="model-collection-preview-link" href="${escapeHtml(model.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(displayTitle)} collection"><img class="model-collection-preview" src="${escapeHtml(model.preview)}" alt="" referrerpolicy="no-referrer" data-focus-x="${Number(model.regions?.[0]?.x) || 0}" data-focus-y="${Number(model.regions?.[0]?.y) || 0}" data-focus-width="${Number(model.regions?.[0]?.width) || 1}" data-focus-height="${Number(model.regions?.[0]?.height) || 1}">${(model.regions || []).map((region) => `<span class="image-region" style="left:0;top:0;width:100%;height:100%"><span>${escapeHtml(region.name || '')}</span></span>`).join('')}</a>${model.sketchfabUrl ? `<a class="model-3d-link model-3d-overlay" href="${escapeHtml(model.sketchfabUrl)}" target="_blank" rel="noopener noreferrer">3D</a>` : ''}</div></article>`
-      : `<article class="model-card"><div class="model-frame"><iframe title="${escapeHtml(displayTitle)}" src="https://sketchfab.com/models/${encodeURIComponent(model.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div><div class="model-info"><h2>${escapeHtml(displayTitle)}</h2></div></article>`; }).join('')}</div>`,
+    render3dPage: () => `<div class="models-grid">${sortByDate(state.manifest.collections || []).map((model) => imageCardMarkup(model)).join('')}</div>`,
     renderImagesPage: imageScreen.renderImagesPage,
     setupImageFilters: imageScreen.setupImageFilters,
     visibleLetterPaths,

@@ -1697,14 +1697,26 @@
       "preview": "https://drive.google.com/thumbnail?id=1qtKXMUS5I7uOTcZozrm_70JIx7ZZ6db7&sz=w1200",
       "date": "1743",
       "coverImage": "https://drive.google.com/thumbnail?id=1RgbTgt7wwCUSyujfN0Ed__Jqurl78Whq&sz=w1600",
-      "placeId": "wurzburg"
+      "placeId": "wurzburg",
+      "regions": [
+        {
+          "x": 0.0941,
+          "y": 0.2403,
+          "width": 0.1399,
+          "height": 0.1095,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
+      "type": "link",
       "title": "Gnötzheim St Johannis, tomb of Konrad von Rosenberg",
       "date": "1596",
       "label": "effigy",
-      "source": "https://drive.google.com/file/d/1kE9oWGyZDpiEFOpsuqN50NAdN_BGlILb/view — https://commons.wikimedia.org/wiki/File:Gnoetzheim12.jpg — Photograph by PeterBraun74, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Identification: https://www.martinsheim.de/kultur-freizeit/geschichte/chronik-gnoetzheim.html. Attribution to Michel Niklas: Hans-Ulrich Hofmann, Michel Niklas. Leben und Werk eines tauberfränkischen Bildhauers, Frankenland 2 (2020), p. 99: https://journals.bibliothek.uni-wuerzburg.de/frl-nf/article/download/8953/8995/9255#page=4",
-      "url": "https://drive.google.com/thumbnail?id=1kE9oWGyZDpiEFOpsuqN50NAdN_BGlILb&sz=w1600",
+      "url": "https://drive.google.com/drive/folders/12rIeHl2QxSOFtDBAjIAj5IU10Z9TInLC",
+      "preview": "https://drive.google.com/thumbnail?id=1kE9oWGyZDpiEFOpsuqN50NAdN_BGlILb&sz=w1200",
+      "coverImage": "https://lh3.googleusercontent.com/d/1kE9oWGyZDpiEFOpsuqN50NAdN_BGlILb=w1600",
+      "source": "https://drive.google.com/file/d/1kE9oWGyZDpiEFOpsuqN50NAdN_BGlILb/view — https://commons.wikimedia.org/wiki/File:Gnoetzheim12.jpg — Photograph by PeterBraun74, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Identification: https://www.martinsheim.de/kultur-freizeit/geschichte/chronik-gnoetzheim.html. Attribution to Michel Niklas: Hans-Ulrich Hofmann, Michel Niklas. Leben und Werk eines tauberfränkischen Bildhauers, Frankenland 2 (2020), p. 99: https://journals.bibliothek.uni-wuerzburg.de/frl-nf/article/download/8953/8995/9255#page=4 — https://drive.google.com/file/d/16D-R5FhtoZuIb_MsTgiPN4lVw6tOrBBn/view — Georg Lill and Friedrich Karl Weysser, Die Kunstdenkmäler des Königreichs Bayern, vol. 3, Regierungsbezirk Unterfranken und Aschaffenburg, pt. 2, Stadt und Bezirksamt Kitzingen (Munich, 1911), p. 124, Fig. 82: https://repozytorium.biblos.pk.edu.pl/resources/39264",
       "placeId": "gnoetzheim-st-johannis"
     },
     {
@@ -1834,6 +1846,22 @@
         }
       ],
       "url": "https://drive.google.com/thumbnail?id=1ZTYRy1Wp_rCHTLCOAx3wVgnVB9d0xNPM&sz=w1600"
+    },
+    {
+      "label": "effigy",
+      "title": "Marktbreit St Nikolai, Seinsheim epitaphs of Friedrich, Margarete, and Philipp",
+      "date": "1500-1514",
+      "source": "https://drive.google.com/file/d/17uPATHY8Rf9nPq6l-1Q1N1K7tVCOJiw8/view — https://commons.wikimedia.org/wiki/File:Marktbreit_St_Nikolai_Seinsheim-Epitaphien_1-3.jpg — Photograph by Andreas Praefcke, November 2011, CC BY-SA 3.0 DE. From left to right: Friedrich von Seinsheim († 1500), Margarete von Seinsheim, born Truchseß von Baldersheim († 1514), and their son Philipp von Seinsheim († 1503).",
+      "url": "https://drive.google.com/thumbnail?id=17uPATHY8Rf9nPq6l-1Q1N1K7tVCOJiw8&sz=w1600",
+      "regions": [
+        {
+          "x": 0.8874,
+          "y": 0.5382,
+          "width": 0.0571,
+          "height": 0.0887,
+          "name": "Rosenberg"
+        }
+      ]
     }
   ]
 }

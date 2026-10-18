@@ -132,13 +132,16 @@ URLs in `img` for images that remain hosted in Drive.
 For all image records, including effigies and Drive collections, keep dates
 out of `title` and store them separately in `date` as `YYYY` or `YYYY-YYYY`.
 The viewer appends the date in brackets during display. Legacy `year` fields
-are accepted as a display fallback. Effigy Sketchfab records use `title`,
-`id`, `url`, and optional `date` and `preview` image URL. An effigy may also be a Drive collection record with
-`type: "link"`, a Drive folder `url`, `sketchfabUrl`, and an `img` array of
-source photographs. Use `coverImage` to select a photo from `img` and
-`regions` to mark named areas on its preview. Other Drive collection records
-use `type: "link"`, `title`, `url`, and an optional `preview` image URL. An
-optional `placeId` refers to the matching place ID in `data/places.json`.
+are accepted as a display fallback. A Drive collection is one image entry with
+`type: "link"`, `title`, and `url` set to the Drive folder URL. The folder
+contents are the collection; keep its member image files in that Drive folder
+and do not add a separate image entry or `img` array for each member. Optional
+`preview` or `coverImage` URLs can select a folder image for the collection
+card. Add `date`, `label`, `source`, and `placeId` when they describe the
+collection. Effigy collections may also include `sketchfabUrl`. Effigy
+Sketchfab records use `title`, `id`, `url`, and optional `date` and `preview`
+image URL. An optional `placeId` refers to the matching place ID in
+`data/places.json`.
 
 ## People JSON
 

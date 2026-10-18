@@ -59,6 +59,10 @@ class DriveFolderParser(HTMLParser):
 
 
 class ViewerHandler(SimpleHTTPRequestHandler):
+    def end_headers(self):
+        self.send_header("Cache-Control", "no-store")
+        super().end_headers()
+
     def send_json(self, status, value):
         payload = json.dumps(value).encode("utf-8")
         self.send_response(status)
