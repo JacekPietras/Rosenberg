@@ -1399,14 +1399,14 @@
         "effigy"
       ],
       "placeId": "euerbach-sts-cosmas-damian",
-      "source": "https://drive.google.com/file/d/1SsKeh8D8QxA71AGsxxSvPS40NDTYvTLQ/view — https://commons.wikimedia.org/wiki/File:Euerbach_St._Cosmas_und_Damian_067.jpg — Photograph by Tilman2007, 8 August 2012, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/). The church overview identifies the armored effigy as Christoph von Steinau, son of Wolff, who died in 1574: https://de.wikipedia.org/wiki/St._Cosmas_und_Damian_(Euerbach). The monument is categorized under Rosenberg and Steinau arms.",
-      "url": "https://drive.google.com/thumbnail?id=1SsKeh8D8QxA71AGsxxSvPS40NDTYvTLQ&sz=w1600",
+      "source": "https://drive.google.com/file/d/1JDF3e51Ym06za5LjcrK3oaaMqDj8cddW/view — https://commons.wikimedia.org/wiki/File:Euerbach_St._Cosmas_und_Damian_084.jpg — Photograph by Tilman2007, 8 August 2012, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/). This photograph shows the epitaph and its heraldic reliefs, categorized under Rosenberg and Steinau arms. The church overview identifies the armored effigy as Christoph von Steinau, son of Wolff, who died in 1574: https://de.wikipedia.org/wiki/St._Cosmas_und_Damian_(Euerbach).",
+      "url": "https://drive.google.com/thumbnail?id=1JDF3e51Ym06za5LjcrK3oaaMqDj8cddW&sz=w1600",
       "regions": [
         {
-          "x": 0.6657,
-          "y": 0.0732,
-          "width": 0.2195,
-          "height": 0.1405,
+          "x": 0.0728,
+          "y": 0.1073,
+          "width": 0.1433,
+          "height": 0.1265,
           "name": "Rosenberg"
         }
       ]
@@ -1473,18 +1473,18 @@
       "date": "1500-1600",
       "regions": [
         {
-          "x": 0.4819,
-          "y": 0.3549,
-          "width": 0.3712,
-          "height": 0.217,
-          "name": "Thüngen"
-        },
-        {
           "x": 0.5372,
           "y": 0.6801,
           "width": 0.3001,
           "height": 0.1949,
           "name": "Rosenberg"
+        },
+        {
+          "x": 0.4819,
+          "y": 0.3549,
+          "width": 0.3712,
+          "height": 0.217,
+          "name": "Thüngen"
         }
       ],
       "label": "effigy",
@@ -1492,22 +1492,22 @@
     },
     {
       "title": "Hessenthal Wallfahrtskirche, Peter III Echter and Gertraud von Adolzheim memorial with Rosenberg family arms",
-      "source": "https://drive.google.com/file/d/1ww4GlgKIZkRLzxA6Ftf_IXr_G-az6ErE/view",
-      "url": "https://drive.google.com/thumbnail?id=1ww4GlgKIZkRLzxA6Ftf_IXr_G-az6ErE&sz=w1600",
+      "source": "https://drive.google.com/file/d/1tsr1YA9HhrU6PxLHWl8N6hh0DLWqixTA/view — https://commons.wikimedia.org/wiki/File:Hessenthal_(Mespelbrunn)_Wallfahrtskirche_1398.JPG — Photograph by Reinhardhauke, 30 March 2014, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). The left ancestry panel includes the labeled Rosenberg and Thüngen arms.",
+      "url": "https://drive.google.com/thumbnail?id=1tsr1YA9HhrU6PxLHWl8N6hh0DLWqixTA&sz=w1600",
       "date": "1583",
       "regions": [
         {
-          "x": 0.2145,
-          "y": 0.818,
-          "width": 0.1861,
-          "height": 0.1729,
+          "x": 0.2008,
+          "y": 0.8129,
+          "width": 0.131,
+          "height": 0.1011,
           "name": "Rosenberg"
         },
         {
-          "x": 0.2163,
-          "y": 0.41,
-          "width": 0.1916,
-          "height": 0.1541,
+          "x": 0.2039,
+          "y": 0.5488,
+          "width": 0.1403,
+          "height": 0.1004,
           "name": "Thüngen"
         }
       ],
@@ -1515,19 +1515,26 @@
     },
     {
       "title": "Hessenthal Wallfahrtskirche, Rosenberg family arms on the Peter III Echter and Gertraud von Adolzheim memorial",
-      "source": "https://drive.google.com/file/d/1_D_HPgRmQQe52aqBlNClBrDHKp8y9_4C/view",
-      "url": "https://drive.google.com/thumbnail?id=1_D_HPgRmQQe52aqBlNClBrDHKp8y9_4C&sz=w1600",
+      "source": "https://drive.google.com/file/d/1OUvp-pHwtXhByhlJELT7MF3hqaUY6Zuq/view — https://commons.wikimedia.org/wiki/File:Hessenthal,_Wallfahrtskirche,_Epithape-008.jpg — Photograph by Tilman2007, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/).",
+      "url": "https://drive.google.com/thumbnail?id=1OUvp-pHwtXhByhlJELT7MF3hqaUY6Zuq&sz=w1600",
       "date": "1583",
+      "placeId": "hessenthal-wallfahrtskirche",
       "regions": [
         {
-          "x": 0.0971,
-          "y": 0.1354,
-          "width": 0.8051,
-          "height": 0.7591,
+          "x": 0.5164,
+          "y": 0.7799,
+          "width": 0.2702,
+          "height": 0.1499,
           "name": "Rosenberg"
+        },
+        {
+          "x": 0.5191,
+          "y": 0.1204,
+          "width": 0.303,
+          "height": 0.152,
+          "name": "Thüngen"
         }
-      ],
-      "placeId": "hessenthal-wallfahrtskirche"
+      ]
     },
     {
       "title": "Lauda Oberes Tor, dated town gate",
