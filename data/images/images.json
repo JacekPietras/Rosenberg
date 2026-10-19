@@ -1337,6 +1337,13 @@
       ]
     },
     {
+      "title": "Aub, Marktplatz 12",
+      "date": "1568",
+      "source": "https://drive.google.com/file/d/11uEda4Xfoo50_KSMZKL408YBhCTm29PB/view",
+      "url": "https://drive.google.com/thumbnail?id=11uEda4Xfoo50_KSMZKL408YBhCTm29PB&sz=w1600",
+      "placeId": "aub"
+    },
+    {
       "title": "Boxberg castle attacked in 1523, later rebuilt by Albrecht von Rosenberg",
       "source": "https://drive.google.com/file/d/17WQGcMqBnySNCOY2T1k5EwQhu0JVSm7L/view",
       "url": "https://drive.google.com/thumbnail?id=17WQGcMqBnySNCOY2T1k5EwQhu0JVSm7L&sz=w1600",
@@ -1897,6 +1904,7 @@
       "title": "Münzesheim St Martin, grave slab of Kunigunde Hofwart von Kirchheim, born von Rosenberg",
       "date": "1545",
       "label": "effigy",
+      "placeId": "muenzesheim-st-martin",
       "source": "https://drive.google.com/file/d/1rQxqwCxGWUKpVjQGjsMN5JjeBlpMDRTU/view — https://commons.wikimedia.org/wiki/File:Kunigunde_Hofwart_v._Kirchheim_geb._v._Rosenberg.jpeg — Photograph by Wikimedia Commons user Hofwart, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). The inscription records 1 March 1545. Historical photograph: Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe, 498-1 Nr. 7305 (1913): https://www.landesarchiv-bw.de/plink/?f=4-1084497",
       "url": "https://drive.google.com/thumbnail?id=1rQxqwCxGWUKpVjQGjsMN5JjeBlpMDRTU&sz=w1600",
       "regions": [
@@ -1905,6 +1913,13 @@
           "y": 0.35,
           "width": 0.6,
           "height": 0.405,
+          "name": "Rosenberg"
+        },
+        {
+          "x": 0.2558,
+          "y": 0.0922,
+          "width": 0.266,
+          "height": 0.1252,
           "name": "Rosenberg"
         }
       ]
@@ -1938,6 +1953,45 @@
           "y": 0.0635,
           "width": 0.2761,
           "height": 0.1911,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Schloss Waldmannshofen",
+      "date": "1545",
+      "source": "https://drive.google.com/file/d/1ZSGeAho38Xloy8L9GDQIFuRJgyxzFK8-/view",
+      "url": "https://drive.google.com/thumbnail?id=1ZSGeAho38Xloy8L9GDQIFuRJgyxzFK8-&sz=w1600",
+      "placeId": "waldmannshofen-castle",
+      "regions": [
+        {
+          "x": 0.2919,
+          "y": 0.1658,
+          "width": 0.0933,
+          "height": 0.0687,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Schloss Waldmannshofen",
+      "date": "1545",
+      "source": "https://drive.google.com/file/d/1u5xFm1al7BGtu2WE2RIRnJrVDlw4UM9d/view — The date is partly obscured in the photograph; read as 154?, probably 1545.",
+      "url": "https://drive.google.com/thumbnail?id=1u5xFm1al7BGtu2WE2RIRnJrVDlw4UM9d&sz=w1600",
+      "placeId": "waldmannshofen-castle",
+      "regions": [
+        {
+          "x": 0.5363,
+          "y": 0.353,
+          "width": 0.0803,
+          "height": 0.0712,
+          "name": "Rosenberg"
+        },
+        {
+          "x": 0.3947,
+          "y": 0.3983,
+          "width": 0.063,
+          "height": 0.0602,
           "name": "Rosenberg"
         }
       ]
@@ -2442,15 +2496,42 @@
     },
     {
       "title": "Schloss Unterschüpf",
+      "date": "1561-1640",
       "placeId": "unterschuepf-wasserschloss",
       "source": "https://drive.google.com/file/d/12_LXGWQAYE3rwOEhLIeCYNvhHlPP4hE1/view",
-      "url": "https://drive.google.com/thumbnail?id=12_LXGWQAYE3rwOEhLIeCYNvhHlPP4hE1&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=12_LXGWQAYE3rwOEhLIeCYNvhHlPP4hE1&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2785,
+          "y": 0.2494,
+          "width": 0.2521,
+          "height": 0.4683,
+          "name": "Rosenberg"
+        },
+        {
+          "x": 0.1794,
+          "y": 0.1852,
+          "width": 0.086,
+          "height": 0.1237,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Schloss Unterschüpf",
+      "date": "1561-1640",
       "placeId": "unterschuepf-wasserschloss",
       "source": "https://drive.google.com/file/d/1TDtJg_onqrDiNEOzytkAZetsYBTM1oAm/view",
-      "url": "https://drive.google.com/thumbnail?id=1TDtJg_onqrDiNEOzytkAZetsYBTM1oAm&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1TDtJg_onqrDiNEOzytkAZetsYBTM1oAm&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2868,
+          "y": 0.1677,
+          "width": 0.4134,
+          "height": 0.5868,
+          "name": "Rosenberg"
+        }
+      ]
     }
   ]
 }
