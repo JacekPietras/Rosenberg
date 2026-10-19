@@ -2511,7 +2511,16 @@
       "date": "1418",
       "placeId": "bronnbach",
       "source": "https://drive.google.com/file/d/1vK_m-PuhK1sRjAUDrCUfVzqqPi9E4Mnk/view — Inscription: Anno Domini M CCCC x viij feria quarta post [festum] Penthecostes obiit Margretha von Rosenberg cuius anima requiescat in pace. Amen. Translation: In the year of our Lord 1418, on the Wednesday after [the feast of] Pentecost, Margretha von Rosenberg died. May her soul rest in peace. Amen.",
-      "url": "https://drive.google.com/thumbnail?id=1vK_m-PuhK1sRjAUDrCUfVzqqPi9E4Mnk&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1vK_m-PuhK1sRjAUDrCUfVzqqPi9E4Mnk&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2962,
+          "y": 0.1237,
+          "width": 0.1399,
+          "height": 0.1192,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Schloss Unterschüpf",
