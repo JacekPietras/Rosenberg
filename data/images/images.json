@@ -901,6 +901,13 @@
       ]
     },
     {
+      "title": "Würzburg, inscription commemorating the foundation of the Marienkapelle in the Jewish quarter",
+      "date": "1377",
+      "placeId": "wurzburg",
+      "source": "https://drive.google.com/file/d/1I0jNFPAwe3uecVUTqGG6z_Udu4AEcqkj/view — Translation supplied by user: Done in the year of the Lord 1377. The Lord Gerhard, Count of Schwarzburg, Bishop of Würzburg (Herbipolis), laid the first stone on the vigil of Pentecost, and is the founder of the chapel of the Blessed Virgin Mary in the Jewish quarter (platea Judeorum) in the city of Würzburg.",
+      "url": "https://drive.google.com/thumbnail?id=1I0jNFPAwe3uecVUTqGG6z_Udu4AEcqkj&sz=w1600"
+    },
+    {
       "title": "Wappentafel of the Würzburg bishopric and Franconia, part 1",
       "date": "1573",
       "label": [
@@ -1341,7 +1348,16 @@
       "date": "1568",
       "source": "https://drive.google.com/file/d/11uEda4Xfoo50_KSMZKL408YBhCTm29PB/view",
       "url": "https://drive.google.com/thumbnail?id=11uEda4Xfoo50_KSMZKL408YBhCTm29PB&sz=w1600",
-      "placeId": "aub"
+      "placeId": "aub",
+      "regions": [
+        {
+          "x": 0.5504,
+          "y": 0.0935,
+          "width": 0.1311,
+          "height": 0.097,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Boxberg castle attacked in 1523, later rebuilt by Albrecht von Rosenberg",
@@ -1451,20 +1467,23 @@
       "placeId": "giebelstadt"
     },
     {
-      "title": "Giebelstadt Evangelical St Oswald church, possible Rosenberg family memorial",
-      "source": "https://drive.google.com/file/d/1fs43Hgs4-BT-6CNJ8Vm7BlYevwTyrjbp/view",
-      "url": "https://drive.google.com/thumbnail?id=1fs43Hgs4-BT-6CNJ8Vm7BlYevwTyrjbp&sz=w1600",
-      "date": "1500-1700",
+      "type": "link",
+      "title": "Giebelstadt Evangelical St Oswald church, gravestone of Frau Martha",
+      "source": "Photographs: Georg Karl Ell, 10 July 2026, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Giebelstadt,_St._Oswald_Kirche_20260710_017.jpg; Kirchen-Galerie: https://www.kirchen-galerie.de/de/content/files/deutschland/bayern/franken/wuerzburg/giebelstadt/evkirche/i6g.jpg; earlier photograph: https://drive.google.com/file/d/1fs43Hgs4-BT-6CNJ8Vm7BlYevwTyrjbp/view. The visible inscription names “Frau Martha” and says she died 17 September 1601; her surname is not established. The 1911 inventory dates the sandstone gravestone to 1601 and identifies the upper coats of arms as Maßbach, Wolfskehl, Rosenberg, and Hutten: https://repozytorium.biblos.pk.edu.pl/resources/39266.",
+      "url": "https://drive.google.com/drive/folders/1RXBrRAbmX2AyVw8WiZhyzSlB7DQ3voJl",
+      "date": "1601",
+      "placeId": "giebelstadt",
+      "preview": "https://drive.google.com/thumbnail?id=12siBRyO0wn1XlrY_20AhwoFloLpqle6T&sz=w1200",
+      "coverImage": "https://drive.google.com/thumbnail?id=12siBRyO0wn1XlrY_20AhwoFloLpqle6T&sz=w1600",
       "regions": [
         {
-          "x": 0.0595,
-          "y": 0.1658,
-          "width": 0.8217,
-          "height": 0.6878,
+          "x": 0.3712,
+          "y": 0.8019,
+          "width": 0.0614,
+          "height": 0.1155,
           "name": "Rosenberg"
         }
-      ],
-      "placeId": "giebelstadt"
+      ]
     },
     {
       "title": "Heidelberg University jubilee procession by Heinrich Kley, Eberhard von Rosenberg in Ruprecht I’s entourage, recreating 1386",
