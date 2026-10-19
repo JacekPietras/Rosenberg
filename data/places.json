@@ -1016,5 +1016,15 @@
     "category": "church",
     "lat": 50.019696,
     "lon": 10.282289
+  },
+  {
+    "id": "essingen-st-wendelinuskapelle",
+    "variations": [
+      "Essingen St Wendelinuskapelle",
+      "St. Wendelinuskapelle Essingen (Pfalz)"
+    ],
+    "category": "church",
+    "lat": 49.235380076599,
+    "lon": 8.1630885601044
   }
 ]
