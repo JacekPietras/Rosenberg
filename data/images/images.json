@@ -2435,10 +2435,22 @@
     {
       "label": "effigy",
       "title": "Bronnbach, Margretha von Rosenberg",
-      "date": "1408",
+      "date": "1418",
       "placeId": "bronnbach",
-      "source": "https://drive.google.com/file/d/1vK_m-PuhK1sRjAUDrCUfVzqqPi9E4Mnk/view — Inscription: Anno Domini M CCCC viij feria quarta post [festum] Penthecostes obiit Margretha von Rosenberg cuius anima requiescat in pace. Amen. Translation: In the year of our Lord 1408, on the Wednesday after [the feast of] Pentecost, Margretha von Rosenberg died. May her soul rest in peace. Amen.",
+      "source": "https://drive.google.com/file/d/1vK_m-PuhK1sRjAUDrCUfVzqqPi9E4Mnk/view — Inscription: Anno Domini M CCCC x viij feria quarta post [festum] Penthecostes obiit Margretha von Rosenberg cuius anima requiescat in pace. Amen. Translation: In the year of our Lord 1418, on the Wednesday after [the feast of] Pentecost, Margretha von Rosenberg died. May her soul rest in peace. Amen.",
       "url": "https://drive.google.com/thumbnail?id=1vK_m-PuhK1sRjAUDrCUfVzqqPi9E4Mnk&sz=w1600"
+    },
+    {
+      "title": "Schloss Unterschüpf",
+      "placeId": "unterschuepf-wasserschloss",
+      "source": "https://drive.google.com/file/d/12_LXGWQAYE3rwOEhLIeCYNvhHlPP4hE1/view",
+      "url": "https://drive.google.com/thumbnail?id=12_LXGWQAYE3rwOEhLIeCYNvhHlPP4hE1&sz=w1600"
+    },
+    {
+      "title": "Schloss Unterschüpf",
+      "placeId": "unterschuepf-wasserschloss",
+      "source": "https://drive.google.com/file/d/1TDtJg_onqrDiNEOzytkAZetsYBTM1oAm/view",
+      "url": "https://drive.google.com/thumbnail?id=1TDtJg_onqrDiNEOzytkAZetsYBTM1oAm&sz=w1600"
     }
   ]
 }
