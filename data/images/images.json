@@ -1211,7 +1211,16 @@
       "source": "https://drive.google.com/file/d/1vRgElPqevZgjX039Wz8HHpOyxJTEstZK/view",
       "url": "https://drive.google.com/thumbnail?id=1vRgElPqevZgjX039Wz8HHpOyxJTEstZK&sz=w1600",
       "date": "1595-1602",
-      "placeId": "aub"
+      "placeId": "aub",
+      "regions": [
+        {
+          "x": 0.7101,
+          "y": 0.5538,
+          "width": 0.1918,
+          "height": 0.3446,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Boxberg castle attacked in 1523, later rebuilt by Albrecht von Rosenberg",
@@ -1793,10 +1802,7 @@
     {
       "title": "Niederstetten St Jakob, double monument of Friedrich Zeisolf von Rosenberg and Anna, born von der Kere",
       "date": "1576",
-      "label": [
-        "effigy",
-        "new"
-      ],
+      "label": "effigy",
       "placeId": "niederstetten-st-jakobus",
       "source": "https://drive.google.com/file/d/1O_d3lUWygdW_qpLoYsVPIF-0uTUQzOwX/view — Town audio guide, station 7, photograph 4, © Trüpschuch: https://www.museum.de/audioguide/416/7/DE/0; image: https://www.museum.de/uploads/city/audioguides/3/416/5131/l/7-4.jpg. The guide identifies the double monument and dates it to 1576. The identification of Anna as born von der Kere is corroborated by the scholarly study of the Hutten family, p. 455: https://fis.uni-bamberg.de/bitstream/uniba/105/1/Dokument_1.pdf. Close view: parish website https://www.niederstetten-evangelisch.de/geschichten-und-persoenlichkeiten/jakobskirche-1; original https://www.niederstetten-evangelisch.de/fileadmin/mediapool/gemeinden/KG_niederstetten/Kirchenbilder/zeisolf_bearbP4240397.jpg. Heraldic pillars: photograph by tanate, https://www.feierabend.de/galerien/alle-bilder-niederstetten-und-teilort-wildentierbach/; original https://img.feierabend.de/16/1456/g.1541456.5161505.3887036559.jpg.",
       "url": "https://drive.google.com/drive/folders/1kgRXvKr5p76VAKix2XMdTNaJbAQVC56s",
@@ -1859,6 +1865,274 @@
           "y": 0.5382,
           "width": 0.0571,
           "height": 0.0887,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Sugenheim St Erhard, epitaph of Philipp Ludwig von Seckendorff",
+      "date": "1666",
+      "label": "effigy",
+      "placeId": "sugenheim-st-erhard",
+      "source": "https://drive.google.com/file/d/1AKBJGBEjSE8_byi1niQWgjPMyIjHdzdv/view — https://commons.wikimedia.org/wiki/File:St._Erhard_Sugenheim_20230212_0057.jpg — Photograph by Tilman2007, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Heidi Klopp, local history series, Sugenheim municipal newsletter December 2024, printed p. 5, epitaph no. 7, identifies Philipp Ludwig (1597–1666) and the ancestral Rosenberg shield, labeled at upper right: https://sugenheim.de/attachments/article/23/Mitteilungsblatt%20Sugenheim%2012%202024.pdf. Date records the death commemorated.",
+      "url": "https://drive.google.com/thumbnail?id=1AKBJGBEjSE8_byi1niQWgjPMyIjHdzdv&sz=w1600",
+      "regions": [
+        {
+          "name": "Rosenberg",
+          "x": 0.68,
+          "y": 0.25,
+          "width": 0.13,
+          "height": 0.13
+        }
+      ]
+    },
+    {
+      "title": "Sugenheim St Erhard, epitaph of Georg Albrecht von Seckendorff",
+      "date": "1632",
+      "label": "effigy",
+      "placeId": "sugenheim-st-erhard",
+      "source": "https://drive.google.com/file/d/1XV-NYomRrBgJky609lCHqgFeeI63owG1/view — https://commons.wikimedia.org/wiki/File:St._Erhard_Sugenheim_20230212_0060.jpg — Photograph by Tilman2007, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Heidi Klopp, local history series, Sugenheim municipal newsletter December 2024, printed p. 6, epitaph no. 8, identifies Georg Albrecht (died 30 April 1632), son of Hans Georg von Seckendorff and Brigitta von Rosenberg: https://sugenheim.de/attachments/article/23/Mitteilungsblatt%20Sugenheim%2012%202024.pdf. The photograph shows the Rosenberg shield and swan crest at upper right. Date records the death commemorated.",
+      "url": "https://drive.google.com/thumbnail?id=1XV-NYomRrBgJky609lCHqgFeeI63owG1&sz=w1600",
+      "regions": [
+        {
+          "name": "Rosenberg",
+          "x": 0.55,
+          "y": 0.21,
+          "width": 0.23,
+          "height": 0.25
+        }
+      ]
+    },
+    {
+      "title": "Agenda Spirensis, title-page with the arms of Bishop Philipp von Rosenberg",
+      "date": "1512",
+      "label": "armorial",
+      "source": "https://drive.google.com/file/d/1UIAHeOQLFVXMLBA-8yT7yO29J7-_1ZV4/view — Forschungsbibliothek Gotha, Mon.typ 1512 4° 00001, VD16 A 760. Title-page woodcut shows the Franconian Rosenberg arms alongside the arms of Speyer beneath a bishop's mitre and crozier; the preface identifies Philipp as bishop. Institutional record: https://gotha.digital/item/ufb_cbu_00013392. Public Domain Mark 1.0.",
+      "url": "https://drive.google.com/thumbnail?id=1UIAHeOQLFVXMLBA-8yT7yO29J7-_1ZV4&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4082,
+          "y": 0.3556,
+          "width": 0.2689,
+          "height": 0.2008,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Neuenstadt am Kocher Lindenanlage, replica of Albrecht von Rosenberg's donor column",
+      "date": "1557",
+      "source": "https://drive.google.com/file/d/1GhaGlr1wnRvx0teESjjSEWKYvmJNJ9s3/view — Bodo Cichy, “Die Lindenanlage von Neuenstadt am Kocher, Kreis Heilbronn”, Denkmalpflege in Baden-Württemberg 3 (1974), pp. 14–17, photos and captions identifying Albrecht von Rosenberg’s column (1557): https://doi.org/10.11588/nbdpfbw.1974.3.14715. The photographed column is explicitly a restored replacement (Säulennachbildung); the shield and swan crest are visible. Photograph reproduced in the journal; photographer uncredited.",
+      "url": "https://drive.google.com/thumbnail?id=1GhaGlr1wnRvx0teESjjSEWKYvmJNJ9s3&sz=w1600",
+      "placeId": "neuenstadt-lindenanlage",
+      "regions": [
+        {
+          "x": 0.3736,
+          "y": 0.1354,
+          "width": 0.1766,
+          "height": 0.1788,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Miltenberger Wappenbuch, Rosenberg arms",
+      "date": "1486-1500",
+      "folio": "55r",
+      "label": "armorial",
+      "source": "https://drive.google.com/file/d/1SwoRSGxPtNSkO-fMs-uRpVjAkgkAKh_q/view — Miltenberger Wappenbuch, now Luxembourg, Bibliothèque nationale, MS 916, fol. 55r; the painted shield is captioned “rossenberg” and shows the Franconian counterchanged bars and swan crest. Loutsch, Archives héraldiques suisses 103 (1989), plate p. 155 and description p. 156: https://www.e-periodica.ch/digbib/view?pid=ahe-004:1989:103::161. Manuscript dating and current holding: https://bnl.public.lu/de/a-la-une/actualites/articles-actualites/2023/acquisitions-notables.html.",
+      "url": "https://drive.google.com/thumbnail?id=1SwoRSGxPtNSkO-fMs-uRpVjAkgkAKh_q&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0436,
+          "y": 0.5829,
+          "width": 0.2452,
+          "height": 0.2804,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Comburg Stiftskirche, epitaph of Georg Philipp von Berlichingen and Brigitta, born von Vellberg",
+      "date": "1592",
+      "source": "https://drive.google.com/file/d/1f7vutJqQ-uEKqeaFe_nvBC4l6bW5VYSR/view — Rainer Jooß, study of the Comburg epitaphs, pp. 3–5, identifies Georg Philipp von Berlichingen’s 1592 memorial and lists Rosenberg among its ancestral coats of arms; reproduced photograph credited to Weller: https://journals.wlb-stuttgart.de/index.php/wfr/article/download/11325/11196/21432. The shields appear in the horizontal ancestry frieze. Image reproduced in the article; photographer uncredited there.",
+      "url": "https://drive.google.com/thumbnail?id=1f7vutJqQ-uEKqeaFe_nvBC4l6bW5VYSR&sz=w1600",
+      "placeId": "comburg-stiftskirche",
+      "regions": []
+    },
+    {
+      "title": "Essingen St Quirinus, epitaph of Georg Wolff von Woellwarth and Anna, born von Fleckenstein",
+      "date": "1612-1633",
+      "label": "effigy",
+      "placeId": "essingen-st-quirinus",
+      "source": "https://drive.google.com/file/d/16jzNIUh7zTAWG-Ve_p3tYGubMJ6Hkpcm/view — https://commons.wikimedia.org/wiki/File:Essingen_2018_23.jpg — Photo by Klaus Graf, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). The photo description identifies the ancestral Rosenberg arms; they are visible on the right side of the monument. Georg Wolff died in 1612 (his contemporary funeral sermon is catalogued by Nördlingen city archive, p. 188: https://www.noerdlingen.de/fileadmin/noerdlingen/Noerdlingen_Stadt/Kultur_und_Freizeit/Archiv/Biografien_Leichenpredigten_A-Z_ca.1550ca.1920_Neu.pdf); Anna died in 1633.",
+      "url": "https://drive.google.com/thumbnail?id=16jzNIUh7zTAWG-Ve_p3tYGubMJ6Hkpcm&sz=w1600",
+      "regions": [
+        {
+          "x": 0.6408,
+          "y": 0.2986,
+          "width": 0.1503,
+          "height": 0.2254,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Meeder St Laurentius, epitaph of Hans von Sternberg and Anna, born von Rosenberg",
+      "date": "1576",
+      "label": "effigy",
+      "placeId": "meeder-st-laurentius",
+      "source": "https://drive.google.com/file/d/1MaZ-IOU-IuRZVnHWvk3rcnPZ5kEO6qdk/view — https://commons.wikimedia.org/wiki/File:Meeder-St-Laurentius-05.jpg — Photo by Störfix, CC BY-SA 3.0 DE. The parish guide identifies the memorial on the north wall of the choir as Hans von Sternberg zu Schenkenau (†1576) and his wife Anna, born von Rosenberg: https://www.coburg-evangelisch.de/files/files/Lutherwegfuehrer18102012.pdf. Rosenberg arms are visible in the pediment.",
+      "url": "https://drive.google.com/thumbnail?id=1MaZ-IOU-IuRZVnHWvk3rcnPZ5kEO6qdk&sz=w1600",
+      "regions": [
+        {
+          "x": 0.6846,
+          "y": 0.2222,
+          "width": 0.1098,
+          "height": 0.0771,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Kenzingen St Laurentius, epitaph of Wolf von Hürnheim",
+      "date": "1533",
+      "label": "effigy",
+      "placeId": "kenzingen-st-laurentius",
+      "source": "https://drive.google.com/file/d/1BpjHT-HLhdz0Y6WZZZ2QJwMEJ2UIu4ZQ/view — https://commons.wikimedia.org/wiki/File:St._Laurentius_in_Kenzingen,_H%C3%BCrnheimer_Kapelle,_Epitaph_mit_Wolf_von_H%C3%BCrnheim_mit_ge%C3%B6ffneten_Augen.jpg — Photo by Andreas Schwarzkopf, CC BY-SA 3.0. The heraldic description identifies his paternal grandmother as Uta von Rosenberg; the counterchanged Rosenberg shield is visible left of the effigy. The study reports that Wolf died in 1533 and was buried at the Kenzingen parish church, pp. 23–24: https://regionalia.blb-karlsruhe.de/files/18878/BLB_Schau-ins-Land_1975.pdf.",
+      "url": "https://drive.google.com/thumbnail?id=1BpjHT-HLhdz0Y6WZZZ2QJwMEJ2UIu4ZQ&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0736,
+          "y": 0.2377,
+          "width": 0.2512,
+          "height": 0.2688,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Bödigheim Kreuzkirche, epitaph of Johann Rüdt von Collenberg",
+      "date": "1635",
+      "label": "effigy",
+      "placeId": "boedigheim-kreuzkirche",
+      "source": "https://drive.google.com/file/d/1h55eORsqpUuGTmvMXsOyXjWZW_5wfLKd/view — https://commons.wikimedia.org/wiki/File:Epitaphe_Boppo_R%C3%BCde_Johann_R%C3%BCdt_von_Collenberg_Kreuzkirche_B%C3%B6digheim.JPG — Photo by Hector et Achilleus, CC BY-SA 4.0. The monument is identified and dated 1635 in the Baden-Württemberg inventory; its lower-left ancestral shield is identified as Rosenberg: https://digital.blb-karlsruhe.de/download/pdf/7845108.pdf.",
+      "url": "https://drive.google.com/thumbnail?id=1h55eORsqpUuGTmvMXsOyXjWZW_5wfLKd&sz=w1600",
+      "regions": [
+        {
+          "x": 0.3051,
+          "y": 0.8154,
+          "width": 0.2208,
+          "height": 0.1677,
+          "name": "Rosenberh"
+        }
+      ]
+    },
+    {
+      "title": "Kürnbach Michaelskirche, epitaph of Bernhard von Sternenfels and Maria Agatha, born von Weitershausen",
+      "date": "1598",
+      "label": "effigy",
+      "placeId": "kuernbach-michaelskirche",
+      "source": "https://drive.google.com/file/d/1XJRYh-es801Fx-OBFYLRloLAK8s8Iogc/view — https://commons.wikimedia.org/wiki/File:Kuernbach-sternenfels-grabmal.jpg — Photo by p.schmelzle, CC BY-SA 3.0. Bernhard von Sternenfels and his wife Maria Agatha are identified in the municipal guide: https://www.kuernbach.de/fileadmin/Dateien/Website/Dateien/Freizeit_Tourismus/Ortsgeschichte/ortsrundgang_prospekt_Doppelseiten-2013_web.pdf. The Kunstdenkmäler inventory identifies Rosenberg among the ancestral arms on the monument: https://digital.ub.uni-paderborn.de/download/pdf/7880384.pdf.",
+      "url": "https://drive.google.com/thumbnail?id=1XJRYh-es801Fx-OBFYLRloLAK8s8Iogc&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4722,
+          "y": 0.5214,
+          "width": 0.0636,
+          "height": 0.0589,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Maßbach St Bartholomäus, epitaph of Christoph von Maßbach and Eva, born von Rosenberg",
+      "date": "1564-1568",
+      "label": "effigy",
+      "placeId": "massbach-st-bartholomaeus",
+      "source": "https://drive.google.com/file/d/1uSJz-SNsJCzo_ZSQuKYT2AQDbyoe73bW/view — https://commons.wikimedia.org/wiki/File:Ma%C3%9Fbach_St._Bartholom%C3%A4us_005.jpg — Photo by Tilman2007, CC BY-SA 3.0. Gröber, Die Kunstdenkmäler von Unterfranken, Bezirksamt Kissingen (1914), p. 128 and fig. 100, identifies Christoph von Maßbach (†1568) and his wife Eva, born von Rosenberg (†1564); their three children kneel with them before the crucifix. The Rosenberg arms appear in the monument’s upper panel: https://archive.org/details/die-kunstdenkmaeler-von-unterfranken-kissingen-1914.",
+      "url": "https://drive.google.com/thumbnail?id=1uSJz-SNsJCzo_ZSQuKYT2AQDbyoe73bW&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4785,
+          "y": 0.1496,
+          "width": 0.1525,
+          "height": 0.1282,
+          "name": "Rosenberg"
+        },
+        {
+          "x": 0.6848,
+          "y": 0.3096,
+          "width": 0.0831,
+          "height": 0.057,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Maßbach St Bartholomäus, memorial of the children Philipp and Eva von Maßbach",
+      "date": "1556-1567",
+      "label": "effigy",
+      "placeId": "massbach-st-bartholomaeus",
+      "source": "https://drive.google.com/file/d/10QATxih3GYV6aY9Eo2q10S4pPoZq2Yla/view — https://commons.wikimedia.org/wiki/File:Ma%C3%9Fbach_St._Bartholom%C3%A4us_003.jpg — Photo by Tilman2007, CC BY-SA 3.0. Gröber, Die Kunstdenkmäler von Unterfranken, Bezirksamt Kissingen (1914), p. 128 identifies the children’s memorial and transcribes the deaths of Philipp (1556) and Eva (1567). The Rosenberg shield appears at lower left and their parents’ epitaph identifies their mother as Eva, born von Rosenberg: https://archive.org/details/die-kunstdenkmaeler-von-unterfranken-kissingen-1914.",
+      "url": "https://drive.google.com/thumbnail?id=10QATxih3GYV6aY9Eo2q10S4pPoZq2Yla&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2077,
+          "y": 0.6677,
+          "width": 0.1554,
+          "height": 0.112,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Maßbach St Bartholomäus, female grave slab with Rosenberg arms",
+      "date": "1564",
+      "label": "effigy",
+      "placeId": "massbach-st-bartholomaeus",
+      "source": "https://drive.google.com/file/d/1mnKK8Rl4qQJv2oYIcj4G8OGKSzqQdbq0/view — https://commons.wikimedia.org/wiki/File:Ma%C3%9Fbach_St._Bartholom%C3%A4us_004.jpg — Photo by Tilman2007, CC BY-SA 3.0. The inscription gives the year 1564 and the stone bears a Rosenberg shield. Its bearer is not securely identified; the monument is included for the visible family arms.",
+      "url": "https://drive.google.com/thumbnail?id=1mnKK8Rl4qQJv2oYIcj4G8OGKSzqQdbq0&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2703,
+          "y": 0.1593,
+          "width": 0.1525,
+          "height": 0.1082,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Gochsheim St Michael, epitaph of Karl Friedrich von Erthal",
+      "date": "1726",
+      "label": "effigy",
+      "placeId": "gochsheim-st-michael",
+      "source": "https://drive.google.com/file/d/1GDbDM7Ejd3MyeLT-bYWF3qlQ0MBoAIt4/view — https://commons.wikimedia.org/wiki/File:Gochsheim_St._Michael_007.jpg — Photo by Tilman2007, CC BY 3.0. The heraldic memorial names Karl Friedrich von Erthal and displays a Rosenberg ancestral shield, labeled in the carving. The name and offices carved on the monument match Karl Friedrich von Erthal (1681–1726), identified as cavalry colonel, Brandenburg-Ansbach councillor, and commandant at Königshofen: https://www.thesaurus-personarum.de/download/6/universitaetsmatrikeln/2093/leiden-studenten-aus-suedwest-und-sueddeutschland-1575-1800.pdf.",
+      "url": "https://drive.google.com/thumbnail?id=1GDbDM7Ejd3MyeLT-bYWF3qlQ0MBoAIt4&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0504,
+          "y": 0.4942,
+          "width": 0.2214,
+          "height": 0.1321,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Rosenberg Evangelical church, epitaph of Hans von Rosenberck",
+      "date": "1541",
+      "label": "effigy",
+      "placeId": "rosenberg-evangelical-church",
+      "source": "https://drive.google.com/file/d/1xBHJ2xVE89i_h1UhrWAPP4dhY5V-8oD7/view — Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe 498-1 Nr. 7184, photo of the epitaph; Rosenberg shield and date 1541 are visible. Archive record: https://www.landesarchiv-bw.de/plink/?f=4-1084375-1. Photograph is licensed CC BY 4.0; credit Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe 498-1 Nr. 7184.",
+      "url": "https://drive.google.com/thumbnail?id=1xBHJ2xVE89i_h1UhrWAPP4dhY5V-8oD7&sz=w1600",
+      "regions": [
+        {
+          "x": 0.1918,
+          "y": 0.1075,
+          "width": 0.2164,
+          "height": 0.1541,
           "name": "Rosenberg"
         }
       ]

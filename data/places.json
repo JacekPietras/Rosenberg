@@ -919,5 +919,102 @@
     "category": "church",
     "lat": 49.266586,
     "lon": 9.761628
+  },
+  {
+    "id": "sugenheim-st-erhard",
+    "variations": ["Sugenheim St Erhard", "St. Erhard Sugenheim"],
+    "category": "church",
+    "lat": 49.602076,
+    "lon": 10.434766
+  },
+  {
+    "id": "neuenstadt-lindenanlage",
+    "variations": [
+      "Neuenstadt am Kocher Lindenanlage",
+      "Lindenanlage Neuenstadt am Kocher"
+    ],
+    "category": "city",
+    "lat": 49.2374389,
+    "lon": 9.3310472
+  },
+  {
+    "id": "comburg-stiftskirche",
+    "variations": [
+      "Comburg Stiftskirche",
+      "Comburg collegiate church"
+    ],
+    "category": "church",
+    "lat": 49.1003,
+    "lon": 9.74974
+  },
+  {
+    "id": "essingen-st-quirinus",
+    "variations": [
+      "Essingen St Quirinus",
+      "Quirinuskirche Essingen"
+    ],
+    "category": "church",
+    "lat": 48.807647,
+    "lon": 10.028267
+  },
+  {
+    "id": "meeder-st-laurentius",
+    "variations": [
+      "Meeder St Laurentius",
+      "St. Laurentius Meeder"
+    ],
+    "category": "church",
+    "lat": 50.32194444,
+    "lon": 10.90555556
+  },
+  {
+    "id": "kenzingen-st-laurentius",
+    "variations": [
+      "Kenzingen St Laurentius",
+      "St. Laurentius Kenzingen"
+    ],
+    "category": "church",
+    "lat": 48.19156,
+    "lon": 7.770048
+  },
+  {
+    "id": "boedigheim-kreuzkirche",
+    "variations": [
+      "Bödigheim Kreuzkirche",
+      "Kreuzkirche Bödigheim"
+    ],
+    "category": "church",
+    "lat": 49.478584,
+    "lon": 9.315405
+  },
+  {
+    "id": "kuernbach-michaelskirche",
+    "variations": [
+      "Kürnbach St Michael",
+      "Michaelskirche Kürnbach"
+    ],
+    "category": "church",
+    "lat": 49.078301,
+    "lon": 8.845119
+  },
+  {
+    "id": "massbach-st-bartholomaeus",
+    "variations": [
+      "Maßbach St Bartholomäus",
+      "St. Bartholomäus Maßbach"
+    ],
+    "category": "church",
+    "lat": 50.18483,
+    "lon": 10.2755
+  },
+  {
+    "id": "gochsheim-st-michael",
+    "variations": [
+      "Gochsheim St Michael",
+      "St. Michael Gochsheim"
+    ],
+    "category": "church",
+    "lat": 50.019696,
+    "lon": 10.282289
   }
 ]
