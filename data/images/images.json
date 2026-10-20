@@ -1753,27 +1753,32 @@
       "placeId": "stoeckenburg-martinskirche"
     },
     {
-      "title": "Unterschüpf Evangelical church, drawing of the knight Albrecht von Rosenberg’s epitaph with his wife Rufina",
-      "source": "https://drive.google.com/file/d/16SGJhsg__FdEqD13S7OO0bYdEM3FQ7BJ/view",
-      "url": "https://drive.google.com/thumbnail?id=16SGJhsg__FdEqD13S7OO0bYdEM3FQ7BJ&sz=w1600",
-      "date": "1569-1572",
+      "type": "link",
+      "title": "Unterschüpf Evangelical church, epitaph of Albrecht von Rosenberg and his second wife Rufina, née Stiebar von Buttenheim",
+      "date": "1572",
       "label": "effigy",
+      "source": "Drawing: https://drive.google.com/file/d/16SGJhsg__FdEqD13S7OO0bYdEM3FQ7BJ/view. Photograph: MJ200506, 24 February 2024, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): https://commons.wikimedia.org/wiki/File:Evangelische_Kirche_in_Unterschüpf_038.jpg. Identification: Ernst Cucuel and Hermann Eckert, Die Inschriften des badischen Main- und Taubergrundes, DI 1 (1942; reprint 1969), no. 243, p. 101: https://digi.hadw-bw.de/view/di001/0129. Albrecht died on 17 May 1572; Rufina died on 26 August 1569.",
+      "url": "https://drive.google.com/drive/folders/1Dwbo-SiMv96t-CuYFdtINrCKev2KY7Bv",
+      "preview": "https://drive.google.com/thumbnail?id=1KQzmHcSlbPP-9PYkW9rTErH-U-nh_Iiq&sz=w1600",
+      "coverImage": "https://drive.google.com/thumbnail?id=1KQzmHcSlbPP-9PYkW9rTErH-U-nh_Iiq&sz=w1600",
       "placeId": "unterschuepf-evangelical-church",
       "regions": [
         {
-          "x": 0.3505,
-          "y": 0.0667,
-          "width": 0.1589,
-          "height": 0.1561,
+          "x": 0.4081,
+          "y": 0.0956,
+          "width": 0.1426,
+          "height": 0.1713,
           "name": "Rosenberg"
         }
       ]
     },
     {
+      "type": "link",
       "title": "Unterschüpf Evangelical church, Rosenberg arms on the pulpit",
-      "source": "https://drive.google.com/file/d/1ulKwyxqYvv_pumxobTFGgjur3nGEe0Tj/view",
-      "url": "https://drive.google.com/thumbnail?id=1ulKwyxqYvv_pumxobTFGgjur3nGEe0Tj&sz=w1600",
-      "date": "1500-1600",
+      "source": "Earlier close-up: https://drive.google.com/file/d/1ulKwyxqYvv_pumxobTFGgjur3nGEe0Tj/view. Pulpit photograph: MJ200506, 24 February 2024, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): https://commons.wikimedia.org/wiki/File:Evangelische_Kirche_in_Unterschüpf_067.jpg Dating: Kultur in Kirchen explicitly dates the stone pulpit to 1617 (\"Die steinerne Kanzel stammt ebenfalls aus dem Jahr 1617\"), citing Dehio Baden-Württemberg I (1993), p. 796: https://kulturkirchen.com/kirchen/evangelische-kirche-unterschuepf-boxberg-unterschuepf/. Helmut Neumaier, Der Reichsritter Wolf Heinrich von Ega zu Ober- und Unterschüpf, Württembergisch Franken 100 (2021), pp. 64, 66 (https://doi.org/10.53458/wfr.v100i.817), states that the stone pulpit was erected for the Reformation centenary and bears the arms of the joint local and church lords Rosenberg, Stetten, and Dienheim, with Dienheim in the central position.",
+      "url": "https://drive.google.com/drive/folders/1JlKr8oLUQEnJDWX0LaWdn5KYRCu-cK91",
+      "preview": "https://drive.google.com/thumbnail?id=1ulKwyxqYvv_pumxobTFGgjur3nGEe0Tj&sz=w1600",
+      "date": "1617",
       "regions": [
         {
           "x": 0.3324,
@@ -1783,35 +1788,42 @@
           "name": "Rosenberg"
         }
       ],
-      "placeId": "unterschuepf-evangelical-church"
+      "placeId": "unterschuepf-evangelical-church",
+      "coverImage": "https://lh3.googleusercontent.com/d/1ulKwyxqYvv_pumxobTFGgjur3nGEe0Tj=w1600"
     },
     {
-      "title": "Unterschüpf Evangelical church, epitaph relief of a bearded man with his wife and Rosenberg arms",
+      "title": "Unterschüpf Evangelical church, grave slab of Katharina von Rosenberg, née von Seinsheim, Albrecht’s first wife",
       "label": "effigy",
       "placeId": "unterschuepf-evangelical-church",
-      "source": "https://commons.wikimedia.org/wiki/File:Evangelische_Kirche_in_Unterschüpf_038.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/File:Evangelische_Kirche_in_Unterschüpf_038.jpg"
+      "source": "Photograph: MJ200506, 24 February 2024, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): https://commons.wikimedia.org/wiki/File:Evangelische_Kirche_in_Unterschüpf_042.jpg. Identification: Ernst Cucuel and Hermann Eckert, Die Inschriften des badischen Main- und Taubergrundes, DI 1 (1942; reprint 1969), no. 220, p. 93: https://digi.hadw-bw.de/view/di001/0121. Katharina died on 28 April 1550. The slab bears Seinsheim, Seckendorff and Rosenberg arms.",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Evangelische_Kirche_in_Unterschüpf_042.jpg",
+      "date": "1550",
+      "regions": [
+        {
+          "x": 0.5207,
+          "y": 0.0523,
+          "width": 0.1922,
+          "height": 0.1066,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
-      "title": "Unterschüpf Evangelical church, epitaph relief of a woman with Rosenberg arms",
+      "title": "Unterschüpf Evangelical church, epitaph of Eberhard von Rosenberg and Anna, née von Dienheim",
       "label": "effigy",
       "placeId": "unterschuepf-evangelical-church",
-      "source": "https://commons.wikimedia.org/wiki/File:Evangelische_Kirche_in_Unterschüpf_042.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/File:Evangelische_Kirche_in_Unterschüpf_042.jpg"
-    },
-    {
-      "title": "Unterschüpf Evangelical church, epitaph relief of a boy on the right with Rosenberg arms",
-      "label": "effigy",
-      "placeId": "unterschuepf-evangelical-church",
-      "source": "https://commons.wikimedia.org/wiki/File:Evangelische_Kirche_in_Unterschüpf_040.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/File:Evangelische_Kirche_in_Unterschüpf_040.jpg"
-    },
-    {
-      "title": "Unterschüpf Evangelical church, epitaph relief of a shaven man with his wife and Rosenberg arms",
-      "label": "effigy",
-      "placeId": "unterschuepf-evangelical-church",
-      "source": "https://commons.wikimedia.org/wiki/File:Evangelische_Kirche_in_Unterschüpf_036.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/File:Evangelische_Kirche_in_Unterschüpf_036.jpg"
+      "source": "Photograph: MJ200506, 24 February 2024, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): https://commons.wikimedia.org/wiki/File:Evangelische_Kirche_in_Unterschüpf_036.jpg. Identification: Ernst Cucuel and Hermann Eckert, Die Inschriften des badischen Main- und Taubergrundes, DI 1 (1942; reprint 1969), no. 239, p. 99: https://digi.hadw-bw.de/view/di001/0127. Eberhard died on 16 October 1519 and was buried in Stuttgart; Anna died on 26 November 1568. The catalogue dates their monument to 1568.",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Evangelische_Kirche_in_Unterschüpf_036.jpg",
+      "date": "1568",
+      "regions": [
+        {
+          "x": 0.5334,
+          "y": 0.0206,
+          "width": 0.081,
+          "height": 0.1967,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Wiersperg (Wirsberg), Rosenberg, Kingsperg and Kheeb family coats of arms",
