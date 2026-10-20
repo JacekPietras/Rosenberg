@@ -2608,6 +2608,26 @@
       "placeId": "boxberg",
       "source": "https://drive.google.com/file/d/1l7DObHTunxziPyv02CPrQbt-rTLxD41j/view — Description supplied by the user: Two separate figure stones, 1493, commemorating the rebuilding begun in 1480. Originally outside the chapel at Boxberg castle, above a gate; since 1856 in Karlsruhe, Landessammlungen, stone hall, museum nos. C 101 and C 102. Approximately life-sized reliefs on tomb-like slabs, made during their lifetimes. Jörg wears a knee-length coat and hat and carries an axe and rosary. Osanna carries a rosary, bottle, handled basket with bread(?) and double basket-covered bottle. The editors identify these as a building memorial. Original image filename: C 00101-C 00102_D 4988.jpg.",
       "url": "https://drive.google.com/thumbnail?id=1l7DObHTunxziPyv02CPrQbt-rTLxD41j&sz=w1600"
+    },
+    {
+      "type": "link",
+      "label": "effigy",
+      "title": "Beckstein St Kilian, monument of Martin Hund von Wenkheim and Philips Hardtman von Merlau",
+      "date": "1558",
+      "placeId": "beckstein",
+      "url": "https://drive.google.com/drive/folders/1GolVZCZuGl1lZtUJ1y1kINTLq5L9KXqQ",
+      "preview": "https://drive.google.com/thumbnail?id=1-OHlLQXyD5SWzYluCyzPyZpU2AzBAUno&sz=w1200",
+      "coverImage": "https://drive.google.com/thumbnail?id=1-OHlLQXyD5SWzYluCyzPyZpU2AzBAUno&sz=w1600",
+      "source": "https://drive.google.com/file/d/1-OHlLQXyD5SWzYluCyzPyZpU2AzBAUno/view — Front photograph supplied by the user, 205 × 425 pixels; source identified by the user as FNWeb, “Wechselvolle Geschichte der Kirche”: https://www.fnweb.de/orte/lauda-koenigshofen_artikel,-lauda-koenigshofen-wechselvolle-geschichte-der-kirche-_arid,784783.html. Article blocked automated access when checked; original photographer and higher-resolution image remain unverified. https://drive.google.com/file/d/1AdAisBak__X53VFcpOYDrjqwkbApXNh4/view — Church interior photograph by Johannes Wittekind, published by the Archdiocese of Freiburg: https://www.ebfr-glocken.de/glockensuche/glocken-kirchen/?id=1462&scene_76cf73dd=detail&tab_76cf73dd=detail (image l1050692.jpg). Monument identification: Die Deutschen Inschriften, vol. 1, no. 227, p. 95, https://digi.hadw-bw.de/view/di001/0123. The catalogue dates the monument to 1558 and also records a commemoration of Philips Hardtman von Merlau, who died on 1575-06-13; it does not establish the execution date of that commemoration. The Rosenberg connection is heraldic; the reason for Merlau's commemoration on the same monument is unknown, and the smaller knight must not be assumed to be a child.",
+      "regions": [
+        {
+          "x": 0.7561,
+          "y": 0.3576,
+          "width": 0.1317,
+          "height": 0.12,
+          "name": "Rosenberg"
+        }
+      ]
     }
   ]
 }
