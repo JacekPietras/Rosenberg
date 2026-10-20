@@ -38,6 +38,7 @@ Project skills are documented in the repository. The archival catalog research
 workflow is [`archive-name-research`](.agents/skills/archive-name-research/SKILL.md),
 and the local Google Drive objects workflow is
 [`google-drive-objects`](.agents/skills/google-drive-objects/SKILL.md).
+The place-history workflow is [`place-history`](.agents/skills/place-history/SKILL.md).
 Repository-wide instructions are in [`AGENTS.md`](AGENTS.md).
 
 ## Browser viewer

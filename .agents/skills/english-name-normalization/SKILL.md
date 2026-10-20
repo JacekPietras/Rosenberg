@@ -5,7 +5,7 @@ description: Normalize personal and place names.
 
 # English name normalization
 
-Review English translations and facts text in JSON entries and normalize clear personal-name and place-name variants. Do not edit German source text, citations, dates, or other fields unless explicitly asked.
+Review English translations and facts text in JSON entries and normalize clear personal-name and place-name variants. Do not edit German source text, Latin source text or sentences, citations, dates, or other fields unless explicitly asked. Preserve Latin sentences verbatim even when they appear inside an English section; normalize names only in English prose, not within Latin text.
 
 1. Read `../../../data/names.md`; 
 2. do not read all of `places.json`. From the project root, run `!python3 -c 'import json; from pathlib import Path; places=json.loads(Path("data/places.json").read_text(encoding="utf-8")); print("\n".join(p["variations"][0] + ": " + ", ".join(p["variations"][1:]) for p in places if len(p.get("variations", [])) > 1 and p.get("category") != "church"))'` to list places that have variations, excluding churches while including castles.
