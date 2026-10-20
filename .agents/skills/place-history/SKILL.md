@@ -5,27 +5,43 @@ description: Research and write sourced history for a place in data/places.json.
 
 # Place history
 
-Research and write a short historical description for a city, village, church, castle, or other place represented in `../../../data/places.json`. Use this skill when asked to add or revise a place's `history` field.
+Research and write a historical description for a city, village, church, castle, or other place represented in `../../../data/places.json`. Use this skill when asked to add or revise a place's `history` field.
 
 ## Research
 
 - Read `../../../rules/json-formats.md`, and the relevant place record in `../../../data/places.json` before editing. Search the canonical name and useful historical spelling variants, plus the place type and specific features.
-- Before drafting a place history, you MUST spawn at least 10 subagents to research it. Do not substitute your own searches for these assignments or begin drafting before all 10 have returned findings. Assign each spawned agent a different website, publisher, or source portal—not merely a different section or topic on the same website—and use at least 10 distinct sites or portals across multiple independent domains. Do not count Wikipedia as one of the main research sources. If the platform limits concurrent agents, spawn and run them in batches until 10 distinct agents have completed their assignments. Suitable source types to seek, matched to the place and region, include:
-  1. The municipality or local government's history pages and publications.
-  2. A regional heritage organization, historical society, or museum.
-  3. The official state or national monument inventory and heritage authority.
-  4. A regional historical database or place-history portal.
-  5. A state, municipal, or ecclesiastical archive catalog or digitized primary-source collection.
-  6. A scholarly journal or academic project focused on the region or period.
-  7. A university repository, library, or digitized scholarly book collection.
-  8. A church, diocese, monastery, or other relevant institution's own history or archive.
-  9. An archaeological service, excavation archive, or specialist architectural survey.
-  10. A distinct specialist portal, such as one for historic maps, fortifications, trade, or local material culture.
-- These are source-finding lanes, not mandatory categories: choose real, relevant sites for the place, and replace unavailable or inapplicable types with other independent sources. Wikipedia may help discover names and leads, but assign no more than one agent to it and verify its claims through other sources. Different agents may investigate overlapping historical questions, but each must search its own assigned site or portal so the research does not collapse into reading separate Wikipedia sections. Do not begin drafting until all 10 assignments have returned; if a site yields no usable evidence, record that result and give the agent a different relevant site to investigate.
-- Give each subagent the place variants, place type, 1350–1450 priority, and its assigned website or portal. Ask for concise findings with the exact claim, date or date range, direct supporting quotation or passage, source title and link or publication details, and any uncertainty. Have agents distinguish the settlement's history from that of associated structures or institutions. Synthesize the findings, compare independent accounts, and verify claims against the cited sources yourself; parallel suggestions are leads, not evidence by themselves.
 - Browse the web for place-specific evidence. Prefer local history or heritage organizations, municipal and regional historical resources, monument inventories, and scholarly publications. Use Wikipedia as an orientation and cross-checking source; do not rely on it alone when better evidence is available. Consult scientific papers or books when a disputed, specialized, or poorly documented point requires them.
 - Follow sources to the page or publication that supports each claim. Use that evidence to verify the prose, but do not include citations, source lists, or research notes in the `history` value. Do not include claims that are not supported by sources.
 - Distinguish the history of the settlement from that of its church, castle, lordship, or institution. Do not transfer dates or events between them without evidence. Treat legends and uncertain foundation dates as such, or omit them.
+
+### Required research delegation
+
+The coordinating agent MUST spawn at least 10 research subagents before drafting a place history. Run them in batches when concurrency is limited, and wait for every assignment to return. Each agent must receive a concrete research question and an allocated body of sources. Sending the same general request to 10 agents does not satisfy this requirement. Research subagents carry out only their assigned research: they do not invoke this full workflow, spawn another set of agents, or edit `places.json`.
+
+First perform brief source discovery to identify the relevant municipality, heritage authority, archives, regional scholarship, and promising publications. Then make an assignment table in the working context with an agent ID, question, primary website or collection, specific starting URLs or publication titles, and excluded sources already allocated to other agents. Choose the assignments for the actual place; the following are useful defaults:
+
+| Agent | Specific research task | Sources to allocate |
+| --- | --- | --- |
+| 1 | Establish an outline, historical names, disputed dates, and bibliography leads. | The general Wikipedia article for the place and its references. Only this agent uses Wikipedia as its starting point; its summary claims require independent verification. |
+| 2 | Find the local chronology and locally significant events, prioritizing 1350–1450. | Named municipal history pages, local museum publications, or a local historical society's website. |
+| 3 | Find scholarly interpretations of the place's medieval history, including disputed events. | Specific academic articles or regional historical journals, located through scholarly indexes or repositories. Read the papers themselves. |
+| 4 | Recover the fuller medieval narrative and details omitted from short web summaries. | Named scholarly monographs, critical local histories, or regional history books in digital libraries. Read relevant pages and record page numbers. |
+| 5 | Reconstruct ownership and lordship: sales, pledges, inheritances, divided rights, and changes of territorial control. | Archival records, charter editions, regesta, or scholarly studies specifically covering the place's owners and transactions. |
+| 6 | Date medieval monuments and distinguish their original fabric from later rebuilding. | The official monument inventory and architectural surveys for named churches, gates, walls, castles, or civic buildings. |
+| 7 | Establish legal and administrative changes: town or market rights, jurisdiction, privileges, offices, and fortification permissions. | Allocated charter records, town-law editions, or administrative histories distinct from the ownership sources. |
+| 8 | Explain the medieval settlement's economy and spatial development: markets, routes, trades, resources, expansion, and layout. | Specialist economic or settlement studies, historical atlases, or regional place-history entries. |
+| 9 | Establish the role of local religious institutions, patronage, and institutional property. | Diocesan or monastic histories, ecclesiastical archives, and scholarly parish studies. Distinguish institutional events from events affecting the settlement. |
+| 10 | Establish the current condition and what explains it: archaeological remains, surviving footprint, destruction, and rebuilding. | Archaeological reports, historical maps, conservation studies, or heritage surveys distinct from agent 6's building inventory. Keep later history limited to explaining survival or loss. |
+
+Adapt these tasks to the place type and available evidence. For example, a castle may need separate studies of building phases, siege history, and lordship; a monastery may need foundation, endowments, and institutional reform. Replace inapplicable tasks with specific unanswered questions and distinct sources. The requirement is 10 substantive research assignments, not 10 positive findings or 10 compulsory topics.
+
+Allocate sources to prevent convergence:
+
+- Prefer different websites and publishers across assignments. Distinguish independent works as well as domains: two books hosted by one library can be separate sources, while mirrors or copied summaries of one article remain one source. Do not count different Wikipedia sections as separate assignments.
+- Give each agent its allocated sources and the other agents' source exclusions. Agents should search within their assigned collection or source type using place variants and targeted questions. If an exact work is not yet identified, specify the collection, search terms, and the kind of evidence to locate.
+- An agent may follow a citation to identify an underlying source. If that source belongs to another assignment, send the lead to the coordinator for routing rather than repeating the other agent's work. The coordinator updates source ownership as new works are found; source reuse for an explicit later cross-check is allowed.
+- Require each report to identify sources actually read, with canonical URLs or bibliographic details and page numbers; provide each claim's date, supporting passage, and uncertainty. Also report inaccessible sources and searches with no useful results. A search snippet, bibliography entry, or Wikipedia citation alone does not establish a claim.
+- Before synthesis, inspect the returned source lists for duplicate pages, mirrored texts, and shared underlying authorities. Route unfinished questions to the appropriate agent or assign unused sources when reports have converged. Never treat several agents repeating the same source as independent corroboration. Verify significant claims against the cited passages and resolve conflicting dates before drafting.
 
 ## Write the description
 
