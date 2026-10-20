@@ -75,8 +75,6 @@
   },
   {
     "variations": [
-      "Schüpf",
-      "Old Castle, Schüpf",
       "Old Burg, Schüpf"
     ],
     "category": "castle",
@@ -99,8 +97,7 @@
     "variations": [
       "Bronnbach",
       "Bronnbach Abbey",
-      "Kloster Bronnbach",
-      "Kloster Bronnbach, Wertheim"
+      "Kloster Bronnbach"
     ],
     "lat": 49.7125,
     "lon": 9.5472222,
@@ -138,8 +135,7 @@
   {
     "id": "reichelsburg-aub",
     "variations": [
-      "Reichelsburg",
-      "Reichelsburg, Aub"
+      "Reichelsburg"
     ],
     "category": "castle",
     "lat": 49.5465,
@@ -147,8 +143,7 @@
   },
   {
     "variations": [
-      "Donzdorf",
-      "Donzdorf St Martin"
+      "St Martin Donzdorf"
     ],
     "category": "church",
     "lat": 48.686,
@@ -157,13 +152,12 @@
   },
   {
     "variations": [
-      "Erthalschloss",
-      "Erthalschloss, Elfershausen"
+      "Erthalschloss"
     ],
     "category": "castle",
     "lat": 50.1475,
     "lon": 9.963,
-    "id": "elfershausen-erthalschloss"
+    "id": "erthalschloss"
   },
   {
     "variations": [
@@ -205,8 +199,7 @@
   },
   {
     "variations": [
-      "Hessenthal",
-      "Hessenthal Wallfahrtskirche"
+      "Wallfahrtskirche Hessenthal"
     ],
     "category": "church",
     "lat": 49.929,
@@ -215,8 +208,6 @@
   },
   {
     "variations": [
-      "Mosbach",
-      "Mosbach St Juliana",
       "St. Juliana, Mosbach"
     ],
     "category": "church",
@@ -235,8 +226,7 @@
   },
   {
     "variations": [
-      "Liebenstein",
-      "Schloss Liebenstein, Neckarwestheim"
+      "Schloss Liebenstein"
     ],
     "category": "castle",
     "lat": 49.079,
@@ -245,8 +235,7 @@
   },
   {
     "variations": [
-      "Haltenbergstetten",
-      "Schloss Haltenbergstetten, Niederstetten"
+      "Schloss Haltenbergstetten"
     ],
     "category": "castle",
     "lat": 49.401,
@@ -264,9 +253,8 @@
   },
   {
     "variations": [
-      "Sindolsheim",
-      "Sindolsheim Evangelical Church",
-      "Kirche, Sindolsheim"
+      "Kirche, Sindolsheim",
+      "Sindolsheim Evangelical Church"
     ],
     "category": "church",
     "lat": 49.4871226,
@@ -284,8 +272,7 @@
   },
   {
     "variations": [
-      "Stöckenburg",
-      "Stöckenburg Martinskirche"
+      "Martinskirche Stöckenburg"
     ],
     "category": "church",
     "lat": 49.0895,
@@ -294,8 +281,6 @@
   },
   {
     "variations": [
-      "Unterschüpf",
-      "Unterschüpf Evangelical Church",
       "Kirche, Unterschüpf"
     ],
     "category": "church",
@@ -306,8 +291,7 @@
   {
     "id": "unterschuepf-wasserschloss",
     "variations": [
-      "Unterschüpf",
-      "Wasserschloss, Unterschüpf"
+      "Wasserschloss Unterschüpf"
     ],
     "category": "castle",
     "lat": 49.5148,
@@ -315,8 +299,7 @@
   },
   {
     "variations": [
-      "Wildenberg",
-      "Wildenberg Castle"
+      "Schloss Wildenberg"
     ],
     "category": "castle",
     "lat": 49.582,
@@ -325,8 +308,6 @@
   },
   {
     "variations": [
-      "Waldmannshofen",
-      "Waldmannshofen Evangelical Church",
       "Johanniskirche, Waldmannshofen"
     ],
     "category": "church",
@@ -337,7 +318,6 @@
   {
     "id": "waldmannshofen-castle",
     "variations": [
-      "Waldmannshofen",
       "Schloss Waldmannshofen"
     ],
     "category": "castle",
@@ -347,7 +327,6 @@
   {
     "id": "wehrkirche-angeltuern",
     "variations": [
-      "Angeltürn",
       "Wehrkirche, Angeltürn"
     ],
     "category": "church",
@@ -357,7 +336,6 @@
   {
     "id": "burg-oberlauda",
     "variations": [
-      "Oberlauda",
       "Burg Oberlauda"
     ],
     "category": "castle",
@@ -367,9 +345,7 @@
   {
     "id": "burg-schweinberg",
     "variations": [
-      "Schweinberg",
-      "Burg Schweinberg",
-      "Burg Schweinberg, Hardheim"
+      "Burg Schweinberg"
     ],
     "category": "castle",
     "lat": 49.6208,
@@ -388,9 +364,6 @@
   {
     "id": "gnoetzheim-st-johannis",
     "variations": [
-      "Gnötzheim",
-      "Gnötzheim St Johannis",
-      "St. Johannes (Gnötzheim)",
       "Johanniskirche Gnötzheim"
     ],
     "category": "church",
@@ -400,8 +373,6 @@
   {
     "id": "muenzesheim-st-martin",
     "variations": [
-      "Münzesheim",
-      "Münzesheim St Martin",
       "Martinskirche Münzesheim"
     ],
     "category": "church",
@@ -431,8 +402,7 @@
   {
     "id": "schloss-bartenstein",
     "variations": [
-      "Bartenstein",
-      "Schloss, Bartenstein"
+      "Schloss Bartenstein"
     ],
     "category": "castle",
     "lat": 49.3558352,
@@ -462,8 +432,7 @@
   {
     "id": "urhausen-castle",
     "variations": [
-      "Urhausen",
-      "Schloss, Urhausen"
+      "Schloss Urhausen"
     ],
     "category": "castle",
     "lat": 49.358853,
@@ -473,8 +442,7 @@
   {
     "id": "maienfels-castle",
     "variations": [
-      "Maienfels",
-      "Schloss, Maienfels"
+      "Schloss Maienfels"
     ],
     "category": "castle",
     "lat": 49.1199676,
@@ -494,7 +462,6 @@
   {
     "id": "roettingen-st-kilian",
     "variations": [
-      "Röttingen",
       "St. Kilian, Röttingen"
     ],
     "category": "church",
@@ -505,8 +472,7 @@
   {
     "id": "burg-brattenstein",
     "variations": [
-      "Röttingen",
-      "Burg Brattenstein, Röttingen"
+      "Burg Brattenstein"
     ],
     "category": "castle",
     "lat": 49.5087394,
@@ -516,8 +482,7 @@
   {
     "id": "gnoetzheim-castle",
     "variations": [
-      "Gnötzheim",
-      "Schloss, Gnötzheim"
+      "Schloss Gnötzheim"
     ],
     "category": "castle",
     "lat": 49.6154951,
@@ -597,7 +562,6 @@
   {
     "id": "burg-lauda",
     "variations": [
-      "Lauda",
       "Burg Lauda"
     ],
     "category": "castle",
@@ -606,29 +570,8 @@
     "description": "The KMZ connects the family with Lauda through Eberhard von Rosenberg’s capture of the town in the 1330s and a later Rosenberg bailiff, but gives no separate history for this castle."
   },
   {
-    "id": "oberes-tor-lauda",
-    "variations": [
-      "Lauda",
-      "Oberes Tor, Lauda"
-    ],
-    "category": "castle",
-    "lat": 49.5698797,
-    "lon": 9.7003688,
-    "description": "The KMZ gives no specific Rosenberg connection to this gate; it lies in Lauda, where members of the family held office and property."
-  },
-  {
-    "id": "brunnenstrasse-33-lauda",
-    "variations": [
-      "Brunnenstraße 33, Lauda"
-    ],
-    "lat": 49.5660147,
-    "lon": 9.6787453,
-    "description": "The KMZ dates this building to the 15th century but does not specify a connection to the von Rosenbergs."
-  },
-  {
     "id": "aub-mariae-himmelfahrt",
     "variations": [
-      "Aub",
       "Mariä Himmelfahrt, Aub"
     ],
     "category": "church",
@@ -639,8 +582,7 @@
   {
     "id": "burg-aub",
     "variations": [
-      "Aub",
-      "Burg, Aub"
+      "Burg Aub"
     ],
     "category": "castle",
     "lat": 49.550971,
@@ -660,7 +602,6 @@
   {
     "id": "nagelsberg-castle",
     "variations": [
-      "Nagelsberg",
       "Schloss Nagelsberg"
     ],
     "category": "castle",
@@ -671,7 +612,6 @@
   {
     "id": "niederstetten-friedhofskapelle",
     "variations": [
-      "Niederstetten",
       "Friedhofskapelle, Niederstetten"
     ],
     "category": "church",
@@ -682,7 +622,6 @@
   {
     "id": "niederstetten-st-jakobus",
     "variations": [
-      "Niederstetten",
       "St. Jakobus der Ältere, Niederstetten"
     ],
     "category": "church",
@@ -693,7 +632,7 @@
   {
     "id": "burg-wildenstein",
     "variations": [
-      "Wildenstein",
+      "Burg Wildenstein",
       "Burg Ruine Wildenstein"
     ],
     "category": "castle",
@@ -704,7 +643,6 @@
   {
     "id": "wasserburg-dietenhofen",
     "variations": [
-      "Dietenhofen",
       "Wasserburg Dietenhofen"
     ],
     "category": "castle",
@@ -826,7 +764,6 @@
   {
     "id": "rosenberg-evangelical-church",
     "variations": [
-      "Rosenberg",
       "Evangelische Kirche, Rosenberg"
     ],
     "category": "church",
@@ -837,24 +774,12 @@
   {
     "id": "oberschuepf-castle",
     "variations": [
-      "Oberschüpf",
-      "Schloss, Oberschüpf"
+      "Schloss Oberschüpf"
     ],
     "category": "castle",
     "lat": 49.5218062,
     "lon": 9.6772055,
     "description": "The von Rosenbergs acquired part of the lordship of Schüpf in the late 14th century and later controlled Oberschüpf Castle as a secondary family seat; the castle was destroyed in 1470."
-  },
-  {
-    "id": "lauda-pulverturm",
-    "variations": [
-      "Lauda",
-      "Pulverturm, Lauda"
-    ],
-    "category": "castle",
-    "lat": 49.5711859,
-    "lon": 9.7023739,
-    "description": "The KMZ gives no specific Rosenberg connection to the Pulverturm; the family held property and administrative power in Lauda."
   },
   {
     "id": "gommersdorf",
@@ -869,7 +794,6 @@
   {
     "id": "wertheim-stiftskirche",
     "variations": [
-      "Wertheim",
       "Stiftskirche, Wertheim"
     ],
     "category": "church",
@@ -880,8 +804,7 @@
   {
     "id": "schoental-monastery",
     "variations": [
-      "Schöntal",
-      "Schöntal Monastery"
+      "Schöntal"
     ],
     "category": "church",
     "lat": 49.3291246,
@@ -892,7 +815,7 @@
     "id": "uissigheim-st-laurentius",
     "variations": [
       "Uissigheim",
-      "St. Laurentius + Burg, Ussigheim"
+      "St. Laurentius, Ussigheim"
     ],
     "category": "church",
     "lat": 49.6795332,
@@ -902,7 +825,6 @@
   {
     "id": "schuepf-church",
     "variations": [
-      "Schüpf",
       "Kirche, Schüpf"
     ],
     "category": "church",
@@ -913,7 +835,6 @@
   {
     "id": "kocherstetten-marienkirche",
     "variations": [
-      "Kocherstetten St Mary",
       "Marienkirche Kocherstetten"
     ],
     "category": "church",
@@ -922,7 +843,9 @@
   },
   {
     "id": "sugenheim-st-erhard",
-    "variations": ["Sugenheim St Erhard", "St. Erhard Sugenheim"],
+    "variations": [
+      "St. Erhard, Sugenheim"
+    ],
     "category": "church",
     "lat": 49.602076,
     "lon": 10.434766
@@ -930,7 +853,6 @@
   {
     "id": "neuenstadt-lindenanlage",
     "variations": [
-      "Neuenstadt am Kocher Lindenanlage",
       "Lindenanlage Neuenstadt am Kocher"
     ],
     "category": "city",
@@ -940,8 +862,7 @@
   {
     "id": "comburg-stiftskirche",
     "variations": [
-      "Comburg Stiftskirche",
-      "Comburg collegiate church"
+      "Comburg Stiftskirche"
     ],
     "category": "church",
     "lat": 49.1003,
@@ -960,7 +881,6 @@
   {
     "id": "meeder-st-laurentius",
     "variations": [
-      "Meeder St Laurentius",
       "St. Laurentius Meeder"
     ],
     "category": "church",
@@ -970,7 +890,6 @@
   {
     "id": "kenzingen-st-laurentius",
     "variations": [
-      "Kenzingen St Laurentius",
       "St. Laurentius Kenzingen"
     ],
     "category": "church",
@@ -980,7 +899,6 @@
   {
     "id": "boedigheim-kreuzkirche",
     "variations": [
-      "Bödigheim Kreuzkirche",
       "Kreuzkirche Bödigheim"
     ],
     "category": "church",
@@ -990,7 +908,6 @@
   {
     "id": "kuernbach-michaelskirche",
     "variations": [
-      "Kürnbach St Michael",
       "Michaelskirche Kürnbach"
     ],
     "category": "church",
@@ -1000,7 +917,6 @@
   {
     "id": "massbach-st-bartholomaeus",
     "variations": [
-      "Maßbach St Bartholomäus",
       "St. Bartholomäus Maßbach"
     ],
     "category": "church",
@@ -1010,7 +926,6 @@
   {
     "id": "gochsheim-st-michael",
     "variations": [
-      "Gochsheim St Michael",
       "St. Michael Gochsheim"
     ],
     "category": "church",
@@ -1020,8 +935,7 @@
   {
     "id": "essingen-st-wendelinuskapelle",
     "variations": [
-      "Essingen St Wendelinuskapelle",
-      "St. Wendelinuskapelle Essingen (Pfalz)"
+      "St. Wendelinuskapelle Essingen"
     ],
     "category": "church",
     "lat": 49.235380076599,
