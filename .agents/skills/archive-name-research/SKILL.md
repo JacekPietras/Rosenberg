@@ -1,6 +1,6 @@
 ---
 name: archive-name-research
-description: Search an archival catalog for records connected to a supplied person's name, investigate spelling variants and result pages, and assess each candidate against the source. Use when given an archive search URL and a name or name variants.
+description: Search an archival catalog for records connected to a supplied person's name. Use when given an archive search URL and a name.
 ---
 
 # Archive name research
