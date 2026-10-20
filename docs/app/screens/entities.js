@@ -110,7 +110,9 @@ export function createEntityScreens({
       return matches;
     };
     const effigyMarkup = effigies.length ? `<section class="entity-effigies"><h3>Effigies</h3><div class="models-grid">${effigies.map((item) => imageCardMarkup(item)).join('')}</div></section>` : '';
-    return renderPage(place, mentions, 'place', pattern, (doc) => doc.place ? `<p class="place-record">Document place: ${inlineMarkup(doc.place)}</p>` : '', effigyMarkup, factMatches);
+    const historyItems = place?.history ? String(place.history).split(/\r?\n/).map((item) => item.replace(/^\s*[-*]\s+/, '').trim()).filter(Boolean) : [];
+    const historyMarkup = historyItems.length ? `<section class="entity-history"><h3>History</h3><ul>${historyItems.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></section>` : '';
+    return renderPage(place, mentions, 'place', pattern, (doc) => doc.place ? `<p class="place-record">Document place: ${inlineMarkup(doc.place)}</p>` : '', `${historyMarkup}${effigyMarkup}`, factMatches);
   }
 
   return { renderPersonPage, renderPlacePage };

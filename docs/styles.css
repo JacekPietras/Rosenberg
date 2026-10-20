@@ -175,7 +175,11 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .person-mention { border-top: 1px solid var(--line); cursor: pointer; transition: border-color .15s ease, box-shadow .15s ease; }
 .person-mention:hover { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent-soft); }
 .person-mention:first-of-type { border-top: 0; }
-.entity-facts { margin: 1.5rem 0 2rem; }
+.entity-facts, .entity-history { margin: 1.5rem 0 2rem; }
+.entity-history h3 { margin: 0 0 .7rem; color: var(--ink); font-size: 1rem; font-weight: 650; }
+.entity-history ul { margin: 0; padding-left: 1.25rem; }
+.entity-history li { padding: 0 0 .65rem .15rem; line-height: 1.55; }
+.entity-history li:last-child { padding-bottom: 0; }
 .entity-facts h3, .entity-section-title { margin: 0 0 .7rem; color: var(--ink); font-size: 1rem; font-weight: 650; }
 .entity-facts .facts { margin-top: 0; padding-left: 1rem; list-style: none; }
 .entity-facts .facts li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: .25rem .75rem; align-items: baseline; padding: 0; }
