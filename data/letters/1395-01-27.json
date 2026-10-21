@@ -14,10 +14,10 @@
       "german": "Ruprecht bewilligt Arnold und Eberhard von Rosenberg, Eberhards von Rosenberg söhnen, ein wittum für ihre mutter Eilse von Erlikeim auf einem viertel zu Boxberg.",
       "english": "Ruprecht granted Arnold and Eberhard von Rosenberg, sons of Eberhard von Rosenberg, a dowry for their mother Elisabeth von Erligheim on a quarter of Boxberg.",
       "facts": [
-        "Arnold von Rosenberg is son of Eberhard von Rosenberg",
-        "Eberhard von Rosenberg is son of Eberhard von Rosenberg",
-        "Elisabeth von Erligheim is mother of Arnold and Eberhard von Rosenberg",
-        "Elisabeth von Erligheim is widow of Eberhard von Rosenberg",
+    "Arnold von Rosenberg is son of [vogt_zu_Lauda]",
+    "Eberhard von Rosenberg is son of [vogt_zu_Lauda]",
+    "Elisabeth von Erligheim is mother of Arnold and Eberhard von Rosenberg",
+        "Elisabeth von Erligheim is widow of [vogt_zu_Lauda]",
         "Arnold and Eberhard von Rosenberg established a Wittum (widow's dower) for their mother Elisabeth von Erligheim",
         "Ruprecht granted permission for the widow's dower arrangement on a quarter of Boxberg"
       ]
