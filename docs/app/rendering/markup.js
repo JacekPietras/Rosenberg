@@ -7,7 +7,7 @@ export function createMarkupRenderer({ state }) {
     let text = String(value);
     for (const { pattern, people } of state.personPattern || []) text = text.replace(pattern, (match) => {
       const person = people.find((item) => item.name.toLocaleLowerCase() === match.toLocaleLowerCase());
-      return person ? token(`<a class="person-link" href="?person=${encodeURIComponent(person.name)}">${match}</a>`) : match;
+      return person ? token(`<a class="person-link" href="?person=${encodeURIComponent(person.id || person.name)}">${match}</a>`) : match;
     });
     if (state.placePattern) text = text.replace(state.placePattern, (match) => {
       const normalizedMatch = match.toLocaleLowerCase();

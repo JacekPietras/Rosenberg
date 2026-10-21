@@ -3,7 +3,7 @@ import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree } from './screens/tree.js?v=84';
 import { renderActiveScreen } from './screens/router-view.js?v=2';
-import { createDocumentRenderer } from './screens/documents.js';
+import { createDocumentRenderer } from './screens/documents.js?v=2';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
@@ -16,7 +16,7 @@ import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';
 import { createMapScreen } from './screens/map.js?v=79';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=89';
-import { createMarkupRenderer } from './rendering/markup.js?v=79';
+import { createMarkupRenderer } from './rendering/markup.js?v=80';
 import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=5';
 import { sortByDate } from './image-date-sort.js?v=2';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
@@ -133,7 +133,7 @@ function linkedMarkup(value = '', linkEntities = true) {
   for (const { pattern, people } of state.personPattern || []) text = text.replace(pattern, (match) => {
     const person = people.find((item) => item.name.toLocaleLowerCase() === match.toLocaleLowerCase());
     if (!person) return match;
-    const query = encodeURIComponent(person.name);
+    const query = encodeURIComponent(person.id || person.name);
     return token(`<a class="person-link" href="?person=${query}">${match}</a>`);
   });
   if (state.placePattern) text = text.replace(state.placePattern, (match) => {
@@ -1245,6 +1245,7 @@ const documentRenderer = createDocumentRenderer({
   entryHasSource: citationIndex.entryHasSource,
   documentTitle,
   documentYear,
+  getPeople: () => state.people,
 });
 
 const sealScreen = createSealScreen({

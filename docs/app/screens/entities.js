@@ -1,4 +1,5 @@
 import { imageCardMarkup } from '../rendering/images.js?v=5';
+import { factText, renderFactList } from '../rendering/facts.js?v=1';
 
 export function createEntityScreens({
   state,
@@ -39,10 +40,6 @@ export function createEntityScreens({
     return fact && typeof fact === 'object' && fact.date ? fact.date : entry.date || doc.date || '';
   }
 
-  function factText(fact) {
-    return fact && typeof fact === 'object' ? fact.text : fact;
-  }
-
   function renderFacts(mentions, factMatches = () => true) {
     const peopleById = new Map(getPeople().filter((person) => person.id).map((person) => [person.id, person]));
     const selectedPerson = peopleById.get(state.person);
@@ -57,16 +54,23 @@ export function createEntityScreens({
       })
       .sort((left, right) => dateSortValue(left.date) - dateSortValue(right.date) || left.mentionIndex - right.mentionIndex || left.factIndex - right.factIndex));
     if (!facts.length) return '';
-    const items = facts.map((fact, index) => {
-      const showDate = index === 0 || fact.date !== facts[index - 1].date;
-      const date = showDate && fact.date ? `<time class="entity-fact-date" datetime="${escapeHtml(fact.date)}">${escapeHtml(formatDate(fact.date))}</time>` : showDate ? '<span class="entity-fact-date">Undated</span>' : '<span class="entity-fact-date" aria-hidden="true"></span>';
-      const hasSpecificPersonId = /\[[^\]]+\]/.test(fact.text) && [...fact.text.matchAll(/\[([^\]]+)\]/g)].some((match) => peopleById.has(match[1]));
-      const mentionsSelectedName = selectedPerson && fact.text.toLocaleLowerCase().includes(selectedPerson.name.toLocaleLowerCase());
-      const ambiguous = mentionsSelectedName && !hasSpecificPersonId;
-      const displayText = fact.text.replace(/\[([^\]]+)\]/g, (match, id) => peopleById.get(id)?.name || match);
-      return `<li${ambiguous ? ' class="entity-fact-ambiguous"' : ''}>${date}<span class="entity-fact-text">${inlineMarkup(displayText)}</span></li>`;
-    }).join('');
-    return `<section class="entity-facts"><h3>Facts</h3><ul class="facts">${items}</ul></section>`;
+    const items = renderFactList(facts, {
+      people: [...peopleById.values()],
+      inlineMarkup,
+      textClass: 'entity-fact-text',
+      itemClass: (fact) => {
+        const hasSpecificPersonId = /\[[^\]]+\]/.test(fact.text) && [...fact.text.matchAll(/\[([^\]]+)\]/g)].some((match) => peopleById.has(match[1]));
+        const mentionsSelectedName = selectedPerson && fact.text.toLocaleLowerCase().includes(selectedPerson.name.toLocaleLowerCase());
+        return mentionsSelectedName && !hasSpecificPersonId ? ' class="entity-fact-ambiguous"' : '';
+      },
+      itemMarkup: (fact, index) => {
+        const showDate = index === 0 || fact.date !== facts[index - 1].date;
+        return showDate && fact.date
+          ? `<time class="entity-fact-date" datetime="${escapeHtml(fact.date)}">${escapeHtml(formatDate(fact.date))}</time>`
+          : showDate ? '<span class="entity-fact-date">Undated</span>' : '<span class="entity-fact-date" aria-hidden="true"></span>';
+      },
+    });
+    return `<section class="entity-facts"><h3>Facts</h3>${items}</section>`;
   }
 
   function excerpt(value, pattern, linkEntities = true) {
