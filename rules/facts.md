@@ -76,8 +76,9 @@ preserving the standard form's case.
 In facts, identify people by their normalized full name, using the given name
 followed by `von` and the normalized family name (for example, `Konrad von
 Rosenberg`), not a source spelling variant. When that same normalized name is
-used by multiple people and the fact needs to distinguish one of them, use
-that person's `people.json` ID in square brackets (for example, `[Konrad_von_Rosenberg]`).
+used by multiple people and the fact needs to distinguish one of them, replace
+the name with that person's `people.json` ID in square brackets. Use the ID
+alone, without repeating the name (for example, `[Konrad_von_Rosenberg]`).
 
 Normalize clear variants such as `Conradus` to `Konrad`, `Arnolt` to `Arnold`,
 `Engelhart` to `Engelhard`, `Ussinkeim` to `Uissigheim`, and `Erlikeim` to
