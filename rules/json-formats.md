@@ -201,7 +201,10 @@ listed variations are used when finding and linking related place content.
 ## Editing requirements
 
 Keep source, translation, and facts together in the same entry. Preserve valid
-JSON, source citations, and date precision. Consult `data/names.md` and
-`data/places.json` before normalizing names or places, and do not merge similar
-people or places without clear correspondence. Validate edited JSON and review
-the diff manually.
+JSON, source citations, and date precision. Consult `data/names.md` before
+normalizing personal names. For place-name variants, run
+`python3 scripts/list_place_variations.py` from the project root (add
+`--include-churches` when relevant). Read the matching `data/places.json`
+record before adding or changing its variations. Do not merge similar people or
+places without clear correspondence. Validate edited JSON and review the diff
+manually.

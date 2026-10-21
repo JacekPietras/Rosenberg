@@ -65,9 +65,12 @@ the primary von Rosenberg family.
 
 ## Names and normalization
 
-Consult `data/names.md` for personal names and `data/places.json` for place
-names. Use the first form in a variation entry as the standard only when the
-correspondence is clear. Match spelling variants case-insensitively while
+Consult `data/names.md` for personal names. For place-name variants, run
+`python3 scripts/list_place_variations.py` from the project root; add
+`--include-churches` when churches are relevant. Use the first form in a
+variation entry as the standard only when the correspondence is clear. Read
+the matching place record in `data/places.json` before adding or changing its
+variations. Match spelling variants case-insensitively while
 preserving the standard form's case.
 
 In facts, identify people by their normalized full name, using the given name
