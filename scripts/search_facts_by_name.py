@@ -68,6 +68,24 @@ def alias_map(groups):
     return aliases
 
 
+def person_id_name_tokens():
+    """Map normalized people IDs to the name tokens they stand for."""
+    try:
+        people = json.loads((ROOT / "data/people.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    result = {}
+    for person in people:
+        person_id = norm(person.get("id", ""))
+        if person_id:
+            result[person_id] = {
+                norm(token)
+                for token in re.findall(r"[^\W_]+", person.get("name", ""), flags=re.UNICODE)
+                if norm(token)
+            }
+    return result
+
+
 def fact_records(data_dir):
     """Yield every fact array in the data tree, including nested research JSON."""
     for path in sorted(data_dir.rglob("*.json")):
@@ -105,6 +123,7 @@ def main():
 
     groups = name_groups()
     aliases = alias_map(groups)
+    id_names = person_id_name_tokens()
     query = [norm(token) for token in re.findall(r"[^\W_]+", args.name, flags=re.UNICODE)]
     query = [token for token in query if token not in {"v", "von", "de", "van", "zu", "der", "die", "das"}]
     if not query:
@@ -116,7 +135,10 @@ def main():
     found = 0
     for path, location, fact_index, date, source, text in fact_records(args.data_dir):
         tokens = [norm(token) for token in re.findall(r"[^\W_]+", text, flags=re.UNICODE)]
-        tokens.extend(norm(identifier) for identifier in re.findall(r"\[([^]]+)\]", text))
+        identifiers = [norm(identifier) for identifier in re.findall(r"\[([^]]+)\]", text)]
+        tokens.extend(identifiers)
+        for identifier in identifiers:
+            tokens.extend(id_names.get(identifier, ()))
         if all(any(equivalent(q, token) for token in tokens) for q in query):
             found += 1
             relative_path = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
