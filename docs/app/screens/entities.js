@@ -90,8 +90,9 @@ export function createEntityScreens({
   }
 
   function renderPersonPage() {
-    const entity = findByName(getPeople(), state.person);
-    const person = entity || getPeople().find((item) => item.name.toLocaleLowerCase() === String(state.person || '').toLocaleLowerCase());
+    const people = getPeople();
+    const person = people.find((item) => item.id === state.person)
+      || findByName(people, state.person);
     const pattern = person ? buildPersonPattern([person])[0]?.pattern : /$a/;
     return renderPage(person, person ? mentionsFor(person, 'person') : [], 'person', pattern);
   }

@@ -83,11 +83,14 @@ export function renderPeopleTree(people = []) {
     person.born || person.died ? `${person.born || '?'}–${person.died || '?'}` : '',
   ].filter(Boolean);
   const edges = [];
+  const spousePairs = new Set();
   records.forEach((person) => {
     const from = positions.get(person.id);
     if (!from) return;
     const wife = positions.get(person.wife);
-    if (wife && person.id.localeCompare(person.wife) < 0) {
+    const spousePair = [person.id, person.wife].sort().join('\u0000');
+    if (wife && !spousePairs.has(spousePair)) {
+      spousePairs.add(spousePair);
       const left = from.x < wife.x ? from : wife;
       const right = from.x < wife.x ? wife : from;
       edges.push(`<line class="people-tree-spouse" x1="${left.x + nodeWidth}" y1="${left.y + nodeHeight / 2}" x2="${right.x}" y2="${right.y + nodeHeight / 2}"/><text class="people-tree-edge-label" x="${(left.x + nodeWidth + right.x) / 2}" y="${left.y + nodeHeight / 2 - 8}">wife</text>`);
@@ -100,7 +103,7 @@ export function renderPeopleTree(people = []) {
   const nodes = records.map((person) => {
     const position = positions.get(person.id);
     const text = personLines(person).map((line, index) => `<tspan class="${index ? 'people-tree-detail' : 'people-tree-name'}" x="${position.x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line)}</tspan>`).join('');
-    const href = `?person=${encodeURIComponent(person.name)}`;
+    const href = `?person=${encodeURIComponent(person.id)}`;
     return `<a class="people-tree-person-link" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${position.x}" y="${position.y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${position.x + nodeWidth / 2}" y="${position.y + 25}" text-anchor="middle">${text}</text></g></a>`;
   }).join('');
   return `<div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div>`;
