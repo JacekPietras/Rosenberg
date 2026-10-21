@@ -6,15 +6,14 @@
       "Vogt zu Lauda",
       "Ritter"
     ],
-    "wife": "Elisabeth_von_Erligheim",
+    "wife": "Elisabeth von Erligheim",
     "children": [
-      "Arnold_von_Rosenberg"
+      "Arnold von Rosenberg"
     ],
     "born": null,
     "died": "1387"
   },
   {
-    "id": "Arnold_von_Rosenberg",
     "name": "Arnold von Rosenberg",
     "titles": [],
     "wife": null,
@@ -23,7 +22,6 @@
     "died": null
   },
   {
-    "id": "Konrad_von_Rosenberg",
     "name": "Konrad von Rosenberg",
     "titles": [],
     "wife": null,
@@ -32,14 +30,12 @@
     "died": null
   },
   {
-    "id": "Elisabeth_von_Erligheim",
     "name": "Elisabeth von Erligheim",
     "titles": [],
     "born": null,
     "died": "1420+"
   },
   {
-    "id": "Engelhard_von_Rosenberg",
     "name": "Engelhard von Rosenberg",
     "titles": [],
     "wife": null,

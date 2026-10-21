@@ -1,7 +1,7 @@
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
-import { renderPeopleTree } from './screens/tree.js?v=81';
+import { renderPeopleTree } from './screens/tree.js?v=84';
 import { renderActiveScreen } from './screens/router-view.js?v=2';
 import { createDocumentRenderer } from './screens/documents.js';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
@@ -10,7 +10,7 @@ import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from 
 import { createSealScreen } from './screens/seals.js';
 import { createImageScreen } from './screens/images.js?v=35';
 import { createDataLoader } from './data/loader.js?v=4';
-import { createEntityScreens } from './screens/entities.js?v=84';
+import { createEntityScreens } from './screens/entities.js?v=85';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';

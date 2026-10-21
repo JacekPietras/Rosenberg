@@ -185,6 +185,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .entity-facts .facts li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: .25rem .75rem; align-items: baseline; padding: 0; }
 .entity-fact-date { display: block; margin-bottom: .1rem; color: var(--muted); font-size: .78rem; }
 .entity-fact-text { display: block; min-width: 0; }
+.entity-fact-ambiguous { opacity: .62; }
 .entity-section-title { margin-top: 2rem; }
 .entry { padding: .9rem 0; }
 .entry:first-of-type { padding-top: 0; }
@@ -217,7 +218,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .people-tree-node text { fill: var(--ink); font-size: 14px; }
 .people-tree-node .people-tree-name { font-size: 16px; font-weight: 650; }
 .people-tree-node .people-tree-detail { fill: var(--muted); font-size: 12px; }
-.people-tree-parent { stroke: var(--accent); stroke-width: 1.5; }
+.people-tree-parent { fill: none; stroke: var(--accent); stroke-width: 1.5; }
 .people-tree-spouse { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 5 4; }
 .people-tree-edge-label { fill: var(--muted); font-size: 11px; text-anchor: middle; }
 .map-wrap { position: relative; margin: 1.5rem 0; }

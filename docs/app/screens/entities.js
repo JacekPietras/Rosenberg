@@ -27,7 +27,9 @@ export function createEntityScreens({
     getDocuments().forEach((doc, path) => (Array.isArray(doc?.entries) ? doc.entries : []).forEach((entry, index) => {
       if (patterns.some((pattern) => pattern && fields.some((field) => {
         pattern.lastIndex = 0;
-        return pattern.test(fieldText(entry, field)) || (field === 'title' && pattern.test(String(doc.place || '')));
+        return pattern.test(fieldText(entry, field))
+          || (kind === 'person' && field === 'facts' && entity.id && fieldText(entry, field).includes(`[${entity.id}]`))
+          || (field === 'title' && pattern.test(String(doc.place || '')));
       }))) mentions.push({ doc, path, entry, index });
     }));
     return mentions;
@@ -42,15 +44,27 @@ export function createEntityScreens({
   }
 
   function renderFacts(mentions, factMatches = () => true) {
+    const peopleById = new Map(getPeople().filter((person) => person.id).map((person) => [person.id, person]));
+    const selectedPerson = peopleById.get(state.person);
     const facts = mentions.flatMap(({ doc, path, entry, index }, mentionIndex) => (Array.isArray(entry.facts) ? entry.facts : [])
       .map((fact, factIndex) => ({ date: factDate(fact, doc, entry), text: factText(fact), mentionIndex, factIndex }))
-      .filter((fact) => String(fact.text || '').trim() && factMatches(fact.text))
+      .filter((fact) => {
+        const text = String(fact.text || '');
+        const relatesToSelectedPerson = !selectedPerson
+          || text.includes(`[${selectedPerson.id}]`)
+          || text.toLocaleLowerCase().includes(selectedPerson.name.toLocaleLowerCase());
+        return text.trim() && factMatches(text) && relatesToSelectedPerson;
+      })
       .sort((left, right) => dateSortValue(left.date) - dateSortValue(right.date) || left.mentionIndex - right.mentionIndex || left.factIndex - right.factIndex));
     if (!facts.length) return '';
     const items = facts.map((fact, index) => {
       const showDate = index === 0 || fact.date !== facts[index - 1].date;
       const date = showDate && fact.date ? `<time class="entity-fact-date" datetime="${escapeHtml(fact.date)}">${escapeHtml(formatDate(fact.date))}</time>` : showDate ? '<span class="entity-fact-date">Undated</span>' : '<span class="entity-fact-date" aria-hidden="true"></span>';
-      return `<li>${date}<span class="entity-fact-text">${inlineMarkup(fact.text)}</span></li>`;
+      const hasSpecificPersonId = /\[[^\]]+\]/.test(fact.text) && [...fact.text.matchAll(/\[([^\]]+)\]/g)].some((match) => peopleById.has(match[1]));
+      const mentionsSelectedName = selectedPerson && fact.text.toLocaleLowerCase().includes(selectedPerson.name.toLocaleLowerCase());
+      const ambiguous = mentionsSelectedName && !hasSpecificPersonId;
+      const displayText = fact.text.replace(/\[([^\]]+)\]/g, (match, id) => peopleById.get(id)?.name || match);
+      return `<li${ambiguous ? ' class="entity-fact-ambiguous"' : ''}>${date}<span class="entity-fact-text">${inlineMarkup(displayText)}</span></li>`;
     }).join('');
     return `<section class="entity-facts"><h3>Facts</h3><ul class="facts">${items}</ul></section>`;
   }

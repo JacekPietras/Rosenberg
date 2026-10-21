@@ -3,7 +3,9 @@ function svgEscape(value) {
 }
 
 export function renderPeopleTree(people = []) {
-  const records = Array.isArray(people) ? people.filter((person) => person && person.id && person.name) : [];
+  const records = Array.isArray(people)
+    ? people.filter((person) => person && person.name).map((person) => ({ ...person, _treeKey: person.id || person.name }))
+    : [];
   if (!records.length) return '<div class="people-tree"><p class="status">No people found.</p></div>';
 
   const nodeWidth = 220;
@@ -11,8 +13,13 @@ export function renderPeopleTree(people = []) {
   const horizontalGap = 36;
   const verticalGap = 88;
   const padding = 28;
-  const byId = new Map(records.map((person) => [person.id, person]));
-  const groupParent = new Map(records.map((person) => [person.id, person.id]));
+  const byId = new Map();
+  records.forEach((person) => {
+    byId.set(person._treeKey, person._treeKey);
+    if (person.name) byId.set(person.name, person._treeKey);
+    if (person.id) byId.set(person.id, person._treeKey);
+  });
+  const groupParent = new Map(records.map((person) => [person._treeKey, person._treeKey]));
   const groupFor = (id) => {
     let root = groupParent.get(id);
     while (root && groupParent.get(root) !== root) root = groupParent.get(root);
@@ -25,15 +32,17 @@ export function renderPeopleTree(people = []) {
     if (leftRoot && rightRoot && leftRoot !== rightRoot) groupParent.set(rightRoot, leftRoot);
   };
   records.forEach((person) => {
-    if (byId.has(person.wife)) joinGroups(person.id, person.wife);
+    const wifeKey = byId.get(person.wife);
+    if (wifeKey) joinGroups(person._treeKey, wifeKey);
   });
 
   const groupParents = new Map();
   records.forEach((person) => {
-    const parentGroup = groupFor(person.id);
-    (Array.isArray(person.children) ? person.children : []).forEach((childId) => {
-      if (!byId.has(childId)) return;
-      const childGroup = groupFor(childId);
+    const parentGroup = groupFor(person._treeKey);
+    (Array.isArray(person.children) ? person.children : []).forEach((childRef) => {
+      const childKey = byId.get(childRef);
+      if (!childKey) return;
+      const childGroup = groupFor(childKey);
       if (parentGroup !== childGroup) {
         if (!groupParents.has(childGroup)) groupParents.set(childGroup, new Set());
         groupParents.get(childGroup).add(parentGroup);
@@ -53,15 +62,21 @@ export function renderPeopleTree(people = []) {
     groupDepths.set(group, depth);
     return depth;
   };
-  records.forEach((person) => depthForGroup(groupFor(person.id)));
-  const depths = new Map(records.map((person) => [person.id, groupDepths.get(groupFor(person.id)) || 0]));
+  records.forEach((person) => depthForGroup(groupFor(person._treeKey)));
+  const depths = new Map(records.map((person) => [person._treeKey, groupDepths.get(groupFor(person._treeKey)) || 0]));
   const layers = new Map();
   records.forEach((person) => {
-    const depth = depths.get(person.id) || 0;
+    const depth = depths.get(person._treeKey) || 0;
     if (!layers.has(depth)) layers.set(depth, []);
     layers.get(depth).push(person);
   });
-  [...layers.values()].forEach((layer) => layer.sort((left, right) => left.name.localeCompare(right.name)));
+  const groupMembers = new Map();
+  records.forEach((person) => {
+    const group = groupFor(person._treeKey);
+    if (!groupMembers.has(group)) groupMembers.set(group, []);
+    groupMembers.get(group).push(person);
+  });
+  groupMembers.forEach((members) => members.sort((left, right) => left.name.localeCompare(right.name)));
 
   const maxDepth = Math.max(...layers.keys());
   const maxLayerSize = Math.max(...[...layers.values()].map((layer) => layer.length));
@@ -69,12 +84,36 @@ export function renderPeopleTree(people = []) {
   const height = 2 * padding + (maxDepth + 1) * nodeHeight + maxDepth * verticalGap;
   const positions = new Map();
   layers.forEach((layer, depth) => {
-    const layerWidth = layer.length * nodeWidth + (layer.length - 1) * horizontalGap;
-    const startX = (width - layerWidth) / 2;
-    layer.forEach((person, index) => positions.set(person.id, {
-      x: startX + index * (nodeWidth + horizontalGap),
-      y: padding + depth * (nodeHeight + verticalGap),
-    }));
+    const groups = [...new Set(layer.map((person) => groupFor(person._treeKey)))].map((group) => {
+      const members = groupMembers.get(group) || [];
+      const parents = [...(groupParents.get(group) || [])];
+      const parentCenters = parents.flatMap((parent) => (groupMembers.get(parent) || [])
+        .map((person) => positions.get(person._treeKey)?.x + nodeWidth / 2)
+        .filter(Number.isFinite));
+      const target = parentCenters.length
+        ? parentCenters.reduce((sum, center) => sum + center, 0) / parentCenters.length
+        : null;
+      return { group, members, target, name: members[0]?.name || '' };
+    }).sort((left, right) => {
+      if (left.target !== null && right.target !== null && left.target !== right.target) return left.target - right.target;
+      if (left.target !== null && right.target === null) return -1;
+      if (left.target === null && right.target !== null) return 1;
+      return left.name.localeCompare(right.name);
+    });
+    const totalWidth = layer.length * nodeWidth + (layer.length - 1) * horizontalGap;
+    let cursor = groups.some(({ target }) => target !== null)
+      ? padding
+      : Math.max(padding, (width - totalWidth) / 2);
+    groups.forEach(({ members, target }) => {
+      const groupWidth = members.length * nodeWidth + (members.length - 1) * horizontalGap;
+      const desiredX = target === null ? cursor : target - groupWidth / 2;
+      const x = Math.max(cursor, desiredX);
+      members.forEach((person, index) => positions.set(person._treeKey, {
+        x: x + index * (nodeWidth + horizontalGap),
+        y: padding + depth * (nodeHeight + verticalGap),
+      }));
+      cursor = x + groupWidth + horizontalGap;
+    });
   });
 
   const personLines = (person) => [
@@ -85,25 +124,33 @@ export function renderPeopleTree(people = []) {
   const edges = [];
   const spousePairs = new Set();
   records.forEach((person) => {
-    const from = positions.get(person.id);
+    const from = positions.get(person._treeKey);
     if (!from) return;
-    const wife = positions.get(person.wife);
-    const spousePair = [person.id, person.wife].sort().join('\u0000');
+    const wifeKey = byId.get(person.wife);
+    const wife = positions.get(wifeKey);
+    const spousePair = [person._treeKey, wifeKey].sort().join('\u0000');
     if (wife && !spousePairs.has(spousePair)) {
       spousePairs.add(spousePair);
       const left = from.x < wife.x ? from : wife;
       const right = from.x < wife.x ? wife : from;
       edges.push(`<line class="people-tree-spouse" x1="${left.x + nodeWidth}" y1="${left.y + nodeHeight / 2}" x2="${right.x}" y2="${right.y + nodeHeight / 2}"/><text class="people-tree-edge-label" x="${(left.x + nodeWidth + right.x) / 2}" y="${left.y + nodeHeight / 2 - 8}">wife</text>`);
     }
-    (Array.isArray(person.children) ? person.children : []).forEach((childId) => {
-      const child = positions.get(childId);
-      if (child) edges.push(`<line class="people-tree-parent" x1="${from.x + nodeWidth / 2}" y1="${from.y + nodeHeight}" x2="${child.x + nodeWidth / 2}" y2="${child.y}"/>`);
+    (Array.isArray(person.children) ? person.children : []).forEach((childRef) => {
+      const child = positions.get(byId.get(childRef));
+      if (child) {
+        const startX = from.x + nodeWidth / 2;
+        const startY = from.y + nodeHeight;
+        const endX = child.x + nodeWidth / 2;
+        const endY = child.y;
+        const cornerY = (startY + endY) / 2;
+        edges.push(`<path class="people-tree-parent" fill="none" d="M${startX} ${startY} V${cornerY} H${endX} V${endY}"/>`);
+      }
     });
   });
   const nodes = records.map((person) => {
-    const position = positions.get(person.id);
+    const position = positions.get(person._treeKey);
     const text = personLines(person).map((line, index) => `<tspan class="${index ? 'people-tree-detail' : 'people-tree-name'}" x="${position.x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line)}</tspan>`).join('');
-    const href = `?person=${encodeURIComponent(person.id)}`;
+    const href = `?person=${encodeURIComponent(person.id || person.name)}`;
     return `<a class="people-tree-person-link" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${position.x}" y="${position.y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${position.x + nodeWidth / 2}" y="${position.y + 25}" text-anchor="middle">${text}</text></g></a>`;
   }).join('');
   return `<div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div>`;
