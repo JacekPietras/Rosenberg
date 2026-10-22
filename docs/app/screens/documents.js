@@ -1,4 +1,4 @@
-import { renderFactList } from '../rendering/facts.js?v=1';
+import { renderFactList } from '../rendering/facts.js?v=3';
 
 export function createDocumentRenderer({
   state,

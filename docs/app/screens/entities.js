@@ -1,5 +1,5 @@
 import { imageCardMarkup } from '../rendering/images.js?v=5';
-import { factText, renderFactList } from '../rendering/facts.js?v=1';
+import { factText, renderFactList } from '../rendering/facts.js?v=3';
 
 export function createEntityScreens({
   state,
@@ -55,7 +55,7 @@ export function createEntityScreens({
       .sort((left, right) => dateSortValue(left.date) - dateSortValue(right.date) || left.mentionIndex - right.mentionIndex || left.factIndex - right.factIndex));
     if (!facts.length) return '';
     const items = renderFactList(facts, {
-      people: [...peopleById.values()],
+      people: getPeople(),
       inlineMarkup,
       textClass: 'entity-fact-text',
       itemClass: (fact) => {

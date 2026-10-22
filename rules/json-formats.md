@@ -145,9 +145,12 @@ image URL. An optional `placeId` refers to the matching place ID in
 
 ## People JSON
 
-`data/people.json` is a JSON array. Each person has a unique `id`; relationship
-fields refer to other people by ID. Unknown dates and relationships are `null`
-or empty arrays. Dates use ISO precision (`YYYY`, `YYYY-MM`, or `YYYY-MM-DD`).
+`data/people.json` is a JSON array. A person may have an `id`; when present, it
+must be unique. Relationship fields may refer to another person by ID when
+available, or by name when that person has no ID. IDs are optional and should
+not be added solely to satisfy the format. Unknown dates and relationships are
+`null` or empty arrays. Dates use ISO precision (`YYYY`, `YYYY-MM`, or
+`YYYY-MM-DD`).
 
 ```json
 [
