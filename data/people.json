@@ -8,7 +8,8 @@
     ],
     "wife": "Elisabeth von Erligheim",
     "children": [
-      "Arnold von Rosenberg"
+      "arnold_boxberg",
+      "eberhard_jagstberg"
     ],
     "born": null,
     "died": "1387"
@@ -39,6 +40,34 @@
     "name": "Engelhard von Rosenberg",
     "titles": [],
     "wife": null,
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "arnold_boxberg",
+    "name": "Arnold von Rosenberg",
+    "titles": [
+      "der Jüngere",
+      "zu Boxberg"
+    ],
+    "wife": "Christina von Handschuhsheim",
+    "children": [
+      "Ulrich von Rosenberg",
+      "Jörg von Rosenberg"
+    ],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "eberhard_jagstberg",
+    "name": "Eberhard von Rosenberg",
+    "titles": [
+      "der Jüngere",
+      "zu Jagstberg",
+      "Edelknecht"
+    ],
+    "wife": "Margaretha",
+    "children": [],
     "born": null,
     "died": null
   }

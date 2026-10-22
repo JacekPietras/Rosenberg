@@ -7,20 +7,20 @@
       "german": "Kaufbrief des Arnold von Rosenberg zu Boxberg und seiner Frau Christine von Handschuhsheim über ihre Güter zu Hochhausen, Werbach, Niklashausen und Höhefeld, die sie der Carthause Grünau um 350 fl verkauft. Bürgen: Hans von Rosenberg der ältere, Ulrich von Rosenberg, Amtmann zu Krautheim, Eberhard von Rosenberg zu Jagstberg.\n\nSiegel 1) Arnolt von Rosenberg (verwischt), 2) Christina von Handschuhsheim (Doppelwappen, unkenntlich), 3) Eberhard von Rosenberg (vgl. U 48), 4) Helm mit Rose zwischen Schwanenhälsen",
       "english": "Purchase deed of Arnold von Rosenberg of Boxberg and his wife Christine von Handschuhsheim for their properties in Hochhausen, Werbach, Niklashausen, and Höhefeld, which they sold to the Grünau Carthusian Order for 350 florins. Guarantors: Hans von Rosenberg the Elder, Ulrich von Rosenberg, bailiff of Krautheim, Eberhard von Rosenberg of Jagstberg  \n\nSeal 1) Arnold von Rosenberg (blurred), 2) Christina von Handschuhsheim (double coat of arms, unrecognizable), 3) Eberhard von Rosenberg (cf. U 48), 4) Helmet with rose between swan necks",
       "facts": [
-        "Arnold von Rosenberg resided at Boxberg",
-        "Christine von Handschuhsheim is spouse of Arnold von Rosenberg",
-        "Arnold von Rosenberg sold Güter at Hochhausen to the Carthause Grünau",
-        "Arnold von Rosenberg sold Güter at Werbach to the Carthause Grünau",
-        "Arnold von Rosenberg sold Güter at Niklashausen to the Carthause Grünau",
-        "Arnold von Rosenberg sold Güter at Höhefeld to the Carthause Grünau",
+        "[arnold_boxberg] zu Boxberg resided at Boxberg",
+        "Christine von Handschuhsheim is spouse of [arnold_boxberg]",
+        "[arnold_boxberg] sold Güter at Hochhausen to the Carthause Grünau",
+        "[arnold_boxberg] sold Güter at Werbach to the Carthause Grünau",
+        "[arnold_boxberg] sold Güter at Niklashausen to the Carthause Grünau",
+        "[arnold_boxberg] sold Güter at Höhefeld to the Carthause Grünau",
         "Hans von Rosenberg der Ältere was Bürge for the sale to the Carthause Grünau",
         "Ulrich von Rosenberg zu Krautheim is titled Amtmann zu Krautheim",
         "Ulrich von Rosenberg zu Krautheim was Bürge for the sale to the Carthause Grünau",
-        "Eberhard von Rosenberg zu Jagstberg resided at Jagstberg",
-        "Eberhard von Rosenberg zu Jagstberg was Bürge for the sale to the Carthause Grünau",
-        "Arnold von Rosenberg sealed the charter",
+        "[eberhard_jagstberg] zu Jagstberg resided at Jagstberg",
+        "[eberhard_jagstberg] zu Jagstberg was Bürge for the sale to the Carthause Grünau",
+        "[arnold_boxberg] sealed the charter",
         "Christine von Handschuhsheim sealed the charter",
-        "Eberhard von Rosenberg zu Jagstberg sealed the charter"
+        "[eberhard_jagstberg] zu Jagstberg sealed the charter"
       ],
       "img": [
         {

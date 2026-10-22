@@ -13,10 +13,10 @@
         "Anna Marschall is mother of Kunz von Rosenberg der Ältere zu Minnenberg.",
         "Kunz von Rosenberg der Ältere zu Minnenberg resided at Minnenberg",
         "Anna von Sickingen is spouse of Kunz von Rosenberg der Ältere zu Minnenberg.",
-        "Christine von Handschuhsheim is spouse of Arnold von Rosenberg",
-        "Kunz von Rosenberg der Ältere zu Minnenberg sold his Viertel at Boxberg to Arnold von Rosenberg",
-        "Anna von Sickingen sold her Viertel at Boxberg to Arnold von Rosenberg",
-        "Anna Marschall sold her Viertel at Boxberg to Arnold von Rosenberg",
+        "Christine von Handschuhsheim is spouse of [arnold_boxberg]",
+        "Kunz von Rosenberg der Ältere zu Minnenberg sold his Viertel at Boxberg to [arnold_boxberg]",
+        "Anna von Sickingen sold her Viertel at Boxberg to [arnold_boxberg]",
+        "Anna Marschall sold her Viertel at Boxberg to [arnold_boxberg]",
         "Kunz von Rosenberg der Ältere zu Minnenberg had previously purchased the Viertel at Boxberg from the Johanniter"
       ],
       "img": [
