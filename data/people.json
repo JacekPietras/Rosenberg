@@ -21,7 +21,13 @@
       "Vogt zu Dürn"
     ],
     "born": null,
-    "died": null
+    "died": null,
+    "children": [
+      "eberhard_son_of_vogt_zu_Durn",
+      "konrad_son_of_vogt_zu_Durn",
+      "engelhard_son_of_vogt_zu_Durn",
+      "hermann_son_of_vogt_zu_Durn"
+    ]
   },
   {
     "name": "Arnold von Rosenberg",
@@ -77,6 +83,60 @@
     ],
     "wife": "Margaretha",
     "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "eberhard_son_of_vogt_zu_Durn",
+    "name": "Eberhard von Rosenberg",
+    "titles": [],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "konrad_son_of_vogt_zu_Durn",
+    "name": "Konrad von Rosenberg",
+    "titles": [],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "engelhard_son_of_vogt_zu_Durn",
+    "name": "Engelhard von Rosenberg",
+    "titles": [],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "hermann_son_of_vogt_zu_Durn",
+    "name": "Hermann von Rosenberg",
+    "titles": [],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "konrad_boxberg",
+    "name": "Konrad von Rosenberg",
+    "titles": [
+      "Ritter"
+    ],
+    "wife": "wife_of_konrad",
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "wife_of_konrad",
+    "name": "Adelheid von Hirschhorn",
+    "titles": [],
     "born": null,
     "died": null
   }
