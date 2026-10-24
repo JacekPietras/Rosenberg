@@ -2,14 +2,18 @@ function svgEscape(value) {
   return String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
 }
 
-export function renderPeopleTree(people = []) {
+function regexEscape(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+export function renderPeopleTree(people = [], documents = []) {
   const records = Array.isArray(people)
     ? people.filter((person) => person && person.name).map((person) => ({ ...person, _treeKey: person.id || person.name }))
     : [];
   if (!records.length) return '<div class="people-tree"><p class="status">No people found.</p></div>';
 
   const nodeWidth = 220;
-  const nodeHeight = 72;
+  const nodeHeight = 90;
   const horizontalGap = 36;
   const verticalGap = 88;
   const padding = 28;
@@ -141,10 +145,29 @@ export function renderPeopleTree(people = []) {
     });
   });
 
+  const documentRecords = documents instanceof Map ? [...documents.values()] : Array.isArray(documents) ? documents : [];
+  const mentionedYears = new Map(records.map((person) => {
+    const years = new Set();
+    documentRecords.forEach((document) => {
+      const year = String(document?.date || '').match(/^\d{4}/)?.[0];
+      if (!year) return;
+      const mentioned = (document.entries || []).some((entry) => (entry.facts || []).some((fact) => {
+        const text = typeof fact === 'string' ? fact : String(fact?.text || '');
+        return person.id
+          ? new RegExp(`\\[${regexEscape(person.id)}\\]`).test(text)
+          : new RegExp(`(?<![\\p{L}\\p{N}])${regexEscape(person.name)}(?![\\p{L}\\p{N}])`, 'iu').test(text);
+      }));
+      if (mentioned) years.add(year);
+    });
+    return [person._treeKey, [...years].sort()];
+  }));
   const personLines = (person) => [
     person.name,
     Array.isArray(person.titles) && person.titles.length ? person.titles.join(', ') : '',
     person.born || person.died ? `${person.born || '?'}–${person.died || '?'}` : '',
+    mentionedYears.get(person._treeKey)?.length
+      ? `mentioned: [${mentionedYears.get(person._treeKey)[0]}${mentionedYears.get(person._treeKey).length > 1 ? `-${mentionedYears.get(person._treeKey).at(-1)}` : ''}]`
+      : '',
   ].filter(Boolean);
   const edges = [];
   const spousePairs = new Set();

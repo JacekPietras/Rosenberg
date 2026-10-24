@@ -56,7 +56,7 @@ export async function renderActiveScreen({
     return;
   }
   if (state.active === 'tree') {
-    content.innerHTML = renderPeopleTree(state.personRecords);
+    content.innerHTML = renderPeopleTree(state.personRecords, state.documents);
     return;
   }
   if (state.active === 'map') {
