@@ -21,7 +21,16 @@
       "Ussenheim",
       "Uossenkeim",
       "Ussinkem",
-      "Uessikem"
+      "Uessikem",
+      "Uissigkeym",
+      "Usigtheim",
+      "Uigtheim",
+      "Ussigtheim",
+      "Ussenkeym",
+      "Ussincheim",
+      "Ussen-ken",
+      "Vssinkem",
+      "Ustheim"
     ],
     "category": "village",
     "lat": 49.6793443,
@@ -261,7 +270,11 @@
   },
   {
     "variations": [
-      "Schloss Haltenbergstetten"
+      "Schloss Haltenbergstetten",
+      "Haldemarstetten",
+      "Zaltenbergstetten",
+      "Haltermannstetten",
+      "Haltenbergsketten"
     ],
     "category": "castle",
     "lat": 49.401,
@@ -723,7 +736,8 @@
     "id": "erlenbach",
     "variations": [
       "Erlenbach",
-      "Erelbach"
+      "Erelbach",
+      "Erlebach"
     ],
     "category": "village",
     "lat": 49.173117,
