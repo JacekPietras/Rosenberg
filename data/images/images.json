@@ -2700,8 +2700,17 @@
       "title": "Schönau, [konrad_boxberg] and [wife_of_konrad]",
       "label": "effigy",
       "source": "https://drive.google.com/file/d/1dPQapelu4yCF2QzwJ5M891PxTenFpe8y/view — Die Kunstdenkmäler des Amtsbezirks Heidelberg (Die Kunstdenkmäler des Grossherzogthums Baden 8,2, Tübingen 1913), p. 639, Fig. 418, and p. 637, no. 13: https://digi.ub.uni-heidelberg.de/diglit/kdm8bd2/0664 — M. Huffschmid, Oberrheinische Zeitschrift NF VII, nos. 26, 27",
-      "description": "Gravestone no. 13 of the Schönau gravestones. Year of death is lost except its final digit 6. in the cellar stairs wall of the Herion house",
-      "url": "https://drive.google.com/thumbnail?id=1dPQapelu4yCF2QzwJ5M891PxTenFpe8y&sz=w1600"
+      "description": "Large gravestone, no. 13 of the Schönau gravestones, set into the wall of the cellar stairs of the house of Marg. Herion (as of 1913). The inscription is in fine Gothic minuscules: + Anno . . . . . . . . . vi pridie · nona' · maii · [✠] · strenu · miles · conradus · de · rosenberg · eodem anno · quarto · nos · apl' · o' · dna · adelheid d' hirszhor' cothoral' eide' dni · coradi · de roseberg. Expanded: Anno [...]vi pridie nonas maii [obiit] strenuus miles Conradus de Rosenberg. Eodem anno quarto nonas aprilis obiit domina Adelheid de Hirszhorn conthoralis eiusdem domini Conradi de Rosenberg. Translation: In the year [...]6, on the day before the Nones of May (6 May), the valiant knight Conrad von Rosenberg died. In the same year, on the fourth day before the Nones of April (2 April), Lady Adelheid von Hirschhorn, wife of the same Lord Conrad von Rosenberg, died. The ornament after maii, read here as obiit, is uncertain. In the centre of the stone is the Rosenberg helmet crest; in the corners, placed diagonally, the Rosenberg and Hirschhorn shields repeat. All are cut in powerful, clean high relief. The year of death is lost except its final digit 6, which makes it hard to determine which knight is meant (the book cites Huffschmid nos. 26, 27).",
+      "url": "https://drive.google.com/thumbnail?id=1dPQapelu4yCF2QzwJ5M891PxTenFpe8y&sz=w1600",
+      "regions": [
+        {
+          "x": 0.3778,
+          "y": 0.3407,
+          "width": 0.2585,
+          "height": 0.2532,
+          "name": "Rosenberg"
+        }
+      ]
     }
   ]
 }
