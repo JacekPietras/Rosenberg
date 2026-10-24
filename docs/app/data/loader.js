@@ -19,12 +19,14 @@ export function createDataLoader({
     const files = await repository.getRepositoryFiles();
     const paths = files.map((file) => typeof file === 'string' ? file : file.path);
     const snapshot = JSON.stringify(files);
-    const [placesText, calibrationCitiesText, peopleText, documents] = await Promise.all([
+    const [placesText, calibrationCitiesText, peopleText, particlesText, documents] = await Promise.all([
       repository.getText('data/places.json'),
       repository.getText('docs/assets/calibration-cities.json'),
       repository.getText('data/people.json'),
+      repository.getText('data/nobiliary_particles.md'),
       new Map(await Promise.all(paths.map(async (path) => [path, await repository.getJson(path)]))),
     ]);
+    state.nobiliaryParticles = particlesText.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
     state.places = parsePlaces(placesText);
     state.calibrationCities = parsePlaces(calibrationCitiesText);
     state.personRecords = JSON.parse(peopleText);
