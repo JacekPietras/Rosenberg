@@ -30,7 +30,8 @@
       "Ussincheim",
       "Ussen-ken",
       "Vssinkem",
-      "Ustheim"
+      "Ustheim",
+      "Ussigkheym"
     ],
     "category": "village",
     "lat": 49.6793443,
@@ -102,7 +103,8 @@
       "Rosperg",
       "Rosenperg",
       "Rosenbergk",
-      "Rosenburg"
+      "Rosenburg",
+      "Rosennberg"
     ],
     "category": "castle",
     "lat": 49.4562999,
@@ -133,6 +135,7 @@
     "variations": [
       "Bronnbach",
       "Bronnbach Abbey",
+      "Bronnbach Monastery",
       "Kloster Bronnbach",
       "Brunbach"
     ],
@@ -368,7 +371,7 @@
     ],
     "category": "castle",
     "lat": 49.5341,
-    "lon": 10.0670
+    "lon": 10.067
   },
   {
     "id": "wehrkirche-angeltuern",
@@ -390,7 +393,7 @@
     ],
     "category": "castle",
     "lat": 49.5645,
-    "lon": 9.6790
+    "lon": 9.679
   },
   {
     "id": "burg-schweinberg",
@@ -1011,37 +1014,57 @@
   },
   {
     "id": "dienstadt",
-    "variations": ["Dienstadt", "Distad", "Diehstat"],
+    "variations": [
+      "Dienstadt",
+      "Distad",
+      "Diehstat"
+    ],
     "lat": 49.63556,
     "lon": 9.61083
   },
   {
     "id": "eubigheim",
-    "variations": ["Eubigheim", "Úbikein", "Ubenkein"],
+    "variations": [
+      "Eubigheim",
+      "Úbikein",
+      "Ubenkein"
+    ],
     "lat": 49.5017605,
     "lon": 9.5404604
   },
   {
     "id": "euerhausen",
-    "variations": ["Euerhausen", "Vrhusen"],
+    "variations": [
+      "Euerhausen",
+      "Vrhusen"
+    ],
     "lat": 49.6117,
     "lon": 9.94889
   },
   {
     "id": "eltmann",
-    "variations": ["Eltmann", "Eltmeyn"],
+    "variations": [
+      "Eltmann",
+      "Eltmeyn"
+    ],
     "lat": 49.972771,
     "lon": 10.657967
   },
   {
     "id": "unterbalbach",
-    "variations": ["Unterbalbach", "Nydern Balbach"],
+    "variations": [
+      "Unterbalbach",
+      "Nydern Balbach"
+    ],
     "lat": 49.5275,
     "lon": 9.7472
   },
   {
     "id": "sailach",
-    "variations": ["Sailach", "Selhech"],
+    "variations": [
+      "Sailach",
+      "Selhech"
+    ],
     "lat": 49.1403056,
     "lon": 9.6423889
   },
@@ -1059,7 +1082,9 @@
   {
     "variations": [
       "Erligheim",
-      "Erleheim"
+      "Erleheim",
+      "Erlikheim",
+      "Erlickheim"
     ],
     "lat": 49.0224,
     "lon": 9.0988,
@@ -1101,5 +1126,35 @@
     "lat": 49.94293,
     "lon": 9.8568,
     "id": "thuengen"
+  },
+  {
+    "id": "dottenheim",
+    "variations": [
+      "Dottenheim",
+      "Tottenheim",
+      "Tuttenheim"
+    ],
+    "lat": 49.54885,
+    "lon": 10.51564
+  },
+  {
+    "id": "gauangelloch",
+    "variations": [
+      "Gauangelloch",
+      "Angelach",
+      "Angelloch"
+    ],
+    "lat": 49.34202,
+    "lon": 8.75587
+  },
+  {
+    "id": "handschuhsheim",
+    "variations": [
+      "Handschuhsheim",
+      "Håndschuhsheim",
+      "Handschuchsheim"
+    ],
+    "lat": 49.43069,
+    "lon": 8.68318
   }
 ]
