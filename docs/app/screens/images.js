@@ -68,7 +68,7 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferen
       const displayTitle = imageDisplayTitle(entry, document.title);
       if (entry.type === 'link' && entry.url) {
         const collectionImages = state.collectionImages?.[index] || [];
-        const cover = entry.coverImage || entry.preview;
+        const cover = entry.coverImage;
         const coverId = driveFileId(cover);
         const coverImageIndex = collectionImages.findIndex((item) => coverId && driveFileId(item?.src || item) === coverId);
         const coverImage = coverImageIndex >= 0 ? collectionImages[coverImageIndex] : null;

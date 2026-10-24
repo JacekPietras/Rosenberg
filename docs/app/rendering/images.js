@@ -74,7 +74,7 @@ export function imageCardMarkup(entry, { media, focus, controls = '', label = ''
     : escapeHtml(title);
   if (media === undefined) {
     if (isCollection) {
-      const cover = entry.coverImage || entry.preview;
+      const cover = entry.coverImage;
       focus ||= entry.focus || entry.regions?.[0];
       const focusAttributes = focus && [focus.x, focus.y, focus.width, focus.height].every((value) => Number.isFinite(Number(value)))
         ? ` data-focus-x="${Number(focus.x)}" data-focus-y="${Number(focus.y)}" data-focus-width="${Number(focus.width)}" data-focus-height="${Number(focus.height)}"`

@@ -194,7 +194,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
       const entry = state.documents.get(state.manifest.images)?.entries?.[entryIndex];
       const links = [...coverButton.parentElement.querySelectorAll('.model-collection-cover-images .image-link')];
       if (!entry || !links.length) return;
-      const currentCover = entry.coverImage || entry.preview;
+      const currentCover = entry.coverImage;
       const currentDriveId = driveFileId(currentCover);
       const matchingLink = links.findIndex((link) => {
         const source = link.dataset.imageSrc;

@@ -105,6 +105,10 @@ The viewer displays the date in brackets after the title; it does not add the
 folio to the displayed title. `url` is the image URL or local filename. The
 displayed title supplies the image's accessible name.
 Optional `tags` is an array of strings used to filter the Images view.
+`source` holds only references: URLs, or book citations with pages, figures,
+or plates. Optional `description` holds all other information: identification,
+transcriptions, translations, dating notes, photographer credits, licences, and
+caveats.
 Optional `regions` is an array of named rectangular image areas. Each region
 has a `name` and normalized `x`, `y`, `width`, and `height` values from 0 to 1.
 Regions are displayed as labeled outlines and can be added or renamed in the
@@ -136,8 +140,8 @@ are accepted as a display fallback. A Drive collection is one image entry with
 `type: "link"`, `title`, and `url` set to the Drive folder URL. The folder
 contents are the collection; keep its member image files in that Drive folder
 and do not add a separate image entry or `img` array for each member. Optional
-`preview` or `coverImage` URLs can select a folder image for the collection
-card. Add `date`, `label`, `source`, and `placeId` when they describe the
+`coverImage` selects a folder image for the collection card. Add `date`,
+`label`, `source`, and `placeId` when they describe the
 collection. Effigy collections may also include `sketchfabUrl`. Effigy
 Sketchfab records use `title`, `id`, `url`, and optional `date` and `preview`
 image URL. An optional `placeId` refers to the matching place ID in
