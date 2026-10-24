@@ -104,7 +104,8 @@
       "Rosenperg",
       "Rosenbergk",
       "Rosenburg",
-      "Rosennberg"
+      "Rosennberg",
+      "Rosenbach"
     ],
     "category": "castle",
     "lat": 49.4562999,
@@ -1156,5 +1157,15 @@
     ],
     "lat": 49.43069,
     "lon": 8.68318
+  },
+  {
+    "id": "braniewo",
+    "variations": [
+      "Braniewo",
+      "Braunsberg",
+      "Brunsberg"
+    ],
+    "lat": 54.379713,
+    "lon": 19.820056
   }
 ]

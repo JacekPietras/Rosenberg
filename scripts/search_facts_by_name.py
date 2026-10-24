@@ -125,7 +125,12 @@ def main():
     aliases = alias_map(groups)
     id_names = person_id_name_tokens()
     query = [norm(token) for token in re.findall(r"[^\W_]+", args.name, flags=re.UNICODE)]
-    query = [token for token in query if token not in {"v", "von", "de", "van", "zu", "der", "die", "das"}]
+    particles = {
+        norm(line.strip())
+        for line in (ROOT / "data/nobiliary_particles.md").read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    }
+    query = [token for token in query if token not in particles]
     if not query:
         parser.error("query must contain a name or surname")
 

@@ -87,14 +87,19 @@ export function createSealScreen({
     const label = String(title || '').trim();
     const normalized = label.toLocaleLowerCase();
     if (selected.has('unknown') && label.includes('?')) return true;
+    const particles = [...new Set(state.nobiliaryParticles || [])]
+      .sort((left, right) => right.length - left.length)
+      .map((particle) => particle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
     return [...selected].some((key) => {
       if (key === 'unknown') return false;
       if (normalized === key) return true;
       if (key.includes(' ')) return false;
       const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       const namePattern = new RegExp(`(?:^|[+\\/\\s])${escaped}\\??(?=$|[+\\/\\s])`, 'iu');
-      const vonPattern = new RegExp(`(?:^|[+\\/\\s])${escaped}\\??\\s+von(?:\\s|$)`, 'iu');
-      return namePattern.test(label) && !vonPattern.test(label);
+      const particlePattern = particles.length
+        ? new RegExp(`(?:^|[+\\/\\s])${escaped}\\??\\s+(?:${particles.join('|')})(?:\\s|$)`, 'iu')
+        : null;
+      return namePattern.test(label) && !particlePattern?.test(label);
     });
   }
 
