@@ -23,10 +23,5 @@ Wiprecht, Wibrecht
 Raban, Rabanus
 Wenceslaus, Wenzel
 Kraft, Krafto
-Erligheim, Erleheim
-Neipperg, Niperg, Nyperg
-Dienheim, Dinem
 Götz, Goetz
-Hirschhorn, Hyrzhorne
-Thüngen, Tungen
 Kunigunde, Kunnegunt, Kunnigund

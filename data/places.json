@@ -1055,5 +1055,51 @@
     "category": "city",
     "lat": 44.1194,
     "lon": 15.2314
+  },
+  {
+    "variations": [
+      "Erligheim",
+      "Erleheim"
+    ],
+    "lat": 49.0224,
+    "lon": 9.0988,
+    "id": "erligheim"
+  },
+  {
+    "variations": [
+      "Neipperg",
+      "Niperg",
+      "Nyperg"
+    ],
+    "lat": 49.1055,
+    "lon": 9.0486,
+    "id": "neipperg"
+  },
+  {
+    "variations": [
+      "Dienheim",
+      "Dinem"
+    ],
+    "lat": 49.8372,
+    "lon": 8.34972,
+    "id": "dienheim"
+  },
+  {
+    "variations": [
+      "Hirschhorn",
+      "Hyrzhorne"
+    ],
+    "lat": 49.4474,
+    "lon": 8.8967,
+    "id": "hirschhorn"
+  },
+  {
+    "variations": [
+      "Thüngen",
+      "Tungen"
+    ],
+    "lat": 49.94293,
+    "lon": 9.8568,
+    "id": "thuengen"
   }
 ]
