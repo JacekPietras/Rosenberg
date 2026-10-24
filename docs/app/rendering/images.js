@@ -2,7 +2,7 @@ import { escapeHtml } from './html.js';
 import { localImageName, imageRootForPath } from './image-paths.js';
 import { sealAnnotationMarkup } from './seal-markup.js';
 
-export function createImageRenderer({ location = window.location } = {}) {
+export function createImageRenderer({ location = window.location, personMarkup } = {}) {
   const regionMarkup = (regions = []) => regions.map((region) => {
     const { x, y, width, height } = region || {};
     if (![x, y, width, height].every((value) => Number.isFinite(Number(value))) || !String(region?.name || '').trim()) return '';
@@ -42,7 +42,7 @@ export function createImageRenderer({ location = window.location } = {}) {
         const encoded = imagePath.split('/').map((part) => encodeURIComponent(part)).join('/');
         source = location.hostname.endsWith('github.io') ? `https://raw.githubusercontent.com/${owner}/${repository}/main/${encoded}` : `../${encoded}`;
       }
-      const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals, escapeHtml);
+      const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals, escapeHtml, personMarkup);
       const sourceRegions = node && typeof node === 'object' ? node.regions : context.regions;
       const regions = context.showRegions === false ? '' : regionMarkup(sourceRegions);
       const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
@@ -66,12 +66,16 @@ export function imageDisplayTitle(entry, fallback = '') {
   return [entry.title || fallback, date ? `[${date}]` : ''].filter(Boolean).join(' ');
 }
 
-export function imageCardMarkup(entry, { media, focus, controls = '', label = '', place = '', fallbackTitle = '' } = {}) {
+export function imageCardMarkup(entry, { media, focus, controls = '', label = '', place = '', fallbackTitle = '', titleMarkup = (value) => escapeHtml(value) } = {}) {
   const title = imageDisplayTitle(entry, fallbackTitle);
+  const titleName = entry.title || fallbackTitle;
+  const date = entry.date ?? entry.year;
+  const titleContent = `<span class="model-title-name">${titleMarkup(titleName)}</span>${date ? ` [${escapeHtml(date)}]` : ''}`;
   const isCollection = entry.type === 'link' && entry.url;
-  const heading = isCollection
-    ? `<a class="model-collection-anchor" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>`
-    : escapeHtml(title);
+  // Entity links cannot be nested inside a collection link.
+  const heading = isCollection && !/<a\b/i.test(titleContent)
+    ? `<a class="model-collection-anchor" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer">${titleContent}</a>`
+    : titleContent;
   if (media === undefined) {
     if (isCollection) {
       const cover = entry.coverImage;
@@ -91,5 +95,5 @@ export function imageCardMarkup(entry, { media, focus, controls = '', label = ''
   const modelLink = entry.sketchfabUrl ? `<a class="model-3d-link model-3d-overlay" href="${escapeHtml(entry.sketchfabUrl)}" target="_blank" rel="noopener noreferrer">3D</a>` : '';
   const cardClass = isCollection ? 'model-collection-link' : entry.id ? '' : 'armorial-card';
   const visualClass = isCollection ? 'model-collection-visual' : 'image-record-visual';
-  return `<article class="model-card ${cardClass}"><div class="model-info"><h2>${heading}</h2></div><div class="${visualClass}">${media}${place}${modelLink}${controls}${label}</div></article>`;
+  return `<article class="model-card ${cardClass}"><div class="model-info"><h2 class="model-title">${heading}</h2></div><div class="${visualClass}">${media}${place}${modelLink}${controls}${label}</div></article>`;
 }

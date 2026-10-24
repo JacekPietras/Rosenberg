@@ -1,4 +1,4 @@
-import { imageCardMarkup } from '../rendering/images.js?v=5';
+import { imageCardMarkup } from '../rendering/images.js?v=6';
 import { factText, renderFactList } from '../rendering/facts.js?v=3';
 
 export function createEntityScreens({

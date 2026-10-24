@@ -14,6 +14,10 @@
   --accent: #8eb7ff;
   --accent-soft: #172238;
   --danger: #ff9a9a;
+  --place-link: #f0a35b;
+  --place-link-hover: #ffc078;
+  --person-link: #91c7ff;
+  --person-link-hover: #c4e2ff;
 }
 
 :root[data-theme="light"] {
@@ -31,6 +35,10 @@
   --accent: #3267b1;
   --accent-soft: #eaf1fb;
   --danger: #b42318;
+  --place-link: #a85d10;
+  --place-link-hover: #82470c;
+  --person-link: #1769aa;
+  --person-link-hover: #125386;
 }
 
 * { box-sizing: border-box; }
@@ -159,14 +167,10 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .seal-entry-media .seal-crop, .image-lightbox-seal-preview .seal-crop { position: relative; display: block; width: 14rem; max-width: 100%; height: 14rem; box-sizing: border-box; overflow: hidden; border-radius: 50%; background: var(--surface-soft); }
 .seal-entry-media .seal-crop.is-loading img, .image-lightbox-seal-preview .seal-crop.is-loading img { visibility: hidden; }
 .seal-entry-media .seal-crop img, .image-lightbox-seal-preview .seal-crop img { position: absolute; max-width: none; max-height: none; object-fit: initial; border-radius: 0; }
-.place-link { color: #f0a35b; text-decoration: underline; text-decoration-color: color-mix(in srgb, #f0a35b 55%, transparent); text-underline-offset: .14em; }
-.text .place-link, .source .place-link, .entry-title .place-link { color: #f0a35b; }
-.place-link:hover, .place-link:focus { color: #ffc078; }
-:root[data-theme="light"] .place-link, :root[data-theme="light"] .text .place-link, :root[data-theme="light"] .source .place-link, :root[data-theme="light"] .entry-title .place-link { color: #a85d10; text-decoration-color: color-mix(in srgb, #a85d10 55%, transparent); }
-.person-link { color: #91c7ff; text-decoration: underline; text-decoration-color: color-mix(in srgb, #91c7ff 55%, transparent); text-underline-offset: .14em; }
-.text .person-link, .source .person-link, .entry-title .person-link { color: #91c7ff; }
-.person-link:hover, .person-link:focus { color: #c4e2ff; }
-:root[data-theme="light"] .person-link, :root[data-theme="light"] .text .person-link, :root[data-theme="light"] .source .person-link, :root[data-theme="light"] .entry-title .person-link { color: #1769aa; text-decoration-color: color-mix(in srgb, #1769aa 55%, transparent); }
+.place-link { color: var(--place-link); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--place-link) 55%, transparent); text-underline-offset: .14em; }
+.place-link:hover, .place-link:focus { color: var(--place-link-hover); }
+.person-link { color: var(--person-link); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--person-link) 55%, transparent); text-underline-offset: .14em; }
+.person-link:hover, .person-link:focus { color: var(--person-link-hover); }
 .place-variants { margin: .2rem 0 0; color: var(--muted); font-size: .8rem; }
 .place-mention { border-top: 1px solid var(--line); cursor: pointer; transition: border-color .15s ease, box-shadow .15s ease; }
 .place-mention:hover { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent-soft); }
@@ -262,10 +266,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .entity-effigies .models-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
 .entity-effigies .model-collection-preview { height: 140px; }
 .model-info { padding: .85rem 1rem 1rem; }
-.model-info h2 { margin: 0 0 .3rem; color: var(--ink); font-size: 1rem; line-height: 1.35; }
-.model-info h2 .model-collection-anchor { color: var(--ink); font-size: inherit; }
-.model-info a { color: var(--muted); font-size: .85rem; }
-.model-info a:hover { color: var(--accent); }
+.model-title { margin: 0 0 .3rem; color: var(--ink); font-size: 1rem; line-height: 1.35; }
+.model-title .model-collection-anchor { display: block; color: inherit; font: inherit; text-decoration: none; }
+.model-title-name { white-space: normal; }
 .model-3d-link { display: inline-block; margin-top: .35rem; padding: .22rem .55rem; color: var(--ink) !important; background: var(--surface-raised); border: 1px solid var(--line); border-radius: 5px; font-size: .76rem !important; font-weight: 650; text-decoration: none; }
 .model-3d-link:hover, .model-3d-link:focus-visible { color: var(--accent) !important; border-color: var(--accent); }
 .model-3d-overlay { position: absolute; z-index: 3; top: 2.2rem; right: .5rem; margin: 0; }

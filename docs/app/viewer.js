@@ -8,16 +8,16 @@ import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js?v=2';
-import { createImageScreen } from './screens/images.js?v=35';
+import { createImageScreen } from './screens/images.js?v=36';
 import { createDataLoader } from './data/loader.js?v=5';
-import { createEntityScreens } from './screens/entities.js?v=87';
+import { createEntityScreens } from './screens/entities.js?v=88';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';
 import { createMapScreen } from './screens/map.js?v=79';
-import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=89';
-import { createMarkupRenderer } from './rendering/markup.js?v=80';
-import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=5';
+import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=90';
+import { createMarkupRenderer } from './rendering/markup.js?v=81';
+import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=6';
 import { sortByDate } from './image-date-sort.js?v=2';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
 import { createLanguageRenderer } from './rendering/languages.js';
@@ -133,7 +133,7 @@ function linkedMarkup(value = '', linkEntities = true) {
   for (const { pattern, people } of state.personPattern || []) text = text.replace(pattern, (match) => {
     const person = people.find((item) => item.name.toLocaleLowerCase() === match.toLocaleLowerCase());
     if (!person) return match;
-    const query = encodeURIComponent(person.id || person.name);
+    const query = encodeURIComponent(person.name);
     return token(`<a class="person-link" href="?person=${query}">${match}</a>`);
   });
   if (state.placePattern) text = text.replace(state.placePattern, (match) => {
@@ -1230,7 +1230,7 @@ function scrollToEntryHash() {
 
 const markupRenderer = createMarkupRenderer({ state });
 const citationIndex = createCitationIndex({ state });
-const imageRenderer = createImageRenderer();
+const imageRenderer = createImageRenderer({ personMarkup: markupRenderer.inlineMarkup });
 const languageRenderer = createLanguageRenderer({ state, markdownMarkup: markupRenderer.markdownMarkup });
 const documentRenderer = createDocumentRenderer({
   state,
@@ -1263,7 +1263,7 @@ const sealScreen = createSealScreen({
   savePreferences,
   rerender: renderActive,
 });
-const imageScreen = createImageScreen({ state, escapeHtml, formatDate, imageMarkup: imageRenderer, savePreferences, rerender: renderActive });
+const imageScreen = createImageScreen({ state, escapeHtml, formatDate, imageMarkup: imageRenderer, titleMarkup: markupRenderer.inlineMarkup, savePreferences, rerender: renderActive });
 
 const entityScreens = createEntityScreens({
   state,
@@ -1396,7 +1396,7 @@ async function refreshIfChanged() {
 
 setupControls({ state, repository, updateLanguageControl, updateFactsControl, applyTheme, applyMermaidTheme, savePreferences, rerender: renderActive });
 
-setupImageLightboxComponent({ state, repository, rerender: renderActive });
+setupImageLightboxComponent({ state, repository, rerender: renderActive, personMarkup: markupRenderer.inlineMarkup });
 setupLetterLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
 setupImageLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
 repository.isLocalServer().then((isLocal) => {

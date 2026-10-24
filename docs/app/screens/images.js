@@ -1,8 +1,8 @@
-import { imageCardMarkup, imageDisplayTitle } from '../rendering/images.js?v=5';
+import { imageCardMarkup, imageDisplayTitle } from '../rendering/images.js?v=6';
 import { dateYear } from '../image-date-sort.js?v=2';
 import { imageLabels } from '../image-labels.js';
 
-export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferences, rerender }) {
+export function createImageScreen({ state, escapeHtml, imageMarkup, titleMarkup = escapeHtml, savePreferences, rerender }) {
   const unknownRegionFilter = '__no_region__';
   const normalize = (tag) => String(tag || '').trim().toLocaleLowerCase();
   const driveFileId = (value) => {
@@ -76,12 +76,12 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, savePreferen
         const coverPicker = state.canEditDocuments
           ? `<button class="model-collection-cover-picker" type="button" data-open-collection-cover="${index}" aria-label="Edit cover for ${escapeHtml(entry.title || document.title)}" title="Edit cover"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5 5 5M4 20l4.5-1 11-11a2.12 2.12 0 0 0-3-3l-11 11L4 20Z"/></svg><span>Cover</span></button><div class="model-collection-cover-images" hidden>${collectionImages.length ? imageMarkup(collectionImages, [], { path, index, title: entry.title || document.title, showRegions: false }) : ''}</div>`
           : '';
-        return imageCardMarkup(entry, { focus, controls: coverPicker, label, place: placeMarkup, fallbackTitle: document.title });
+        return imageCardMarkup(entry, { focus, controls: coverPicker, label, place: placeMarkup, fallbackTitle: document.title, titleMarkup });
       }
       const media = entry.id ? undefined : entry.url
         ? imageMarkup(entry.url, [], { path, index, title: displayTitle, focus: previewFocus, regions: previewRegions, showRegions: false })
         : undefined;
-      return imageCardMarkup(entry, { media, label, place: placeMarkup, fallbackTitle: document.title });
+      return imageCardMarkup(entry, { media, label, place: placeMarkup, fallbackTitle: document.title, titleMarkup });
     }).join('');
     return `<div class="image-tags-layout">${sidebar}<div class="models-grid armorial-grid">${cards || '<p class="status">No images match the selected regions.</p>'}</div></div>`;
   }

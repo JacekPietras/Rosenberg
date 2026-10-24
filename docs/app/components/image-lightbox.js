@@ -4,7 +4,7 @@ import { positionSealCrop } from './seal-annotations.js';
 
 const SEAL_TYPES = new Set(['contrepalle', 'swans', 'helm', 'full']);
 
-export function setupImageLightbox({ state, repository, rerender }) {
+export function setupImageLightbox({ state, repository, rerender, personMarkup }) {
   const $ = (selector) => document.querySelector(selector);
   const lightbox = $('#image-lightbox');
   const image = $('#image-lightbox-image');
@@ -118,7 +118,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   };
   const render = () => {
     let index = 0;
-    const seals = sealAnnotationMarkup(currentSeals(), escapeHtml).replace(/class="seal-marker"/g, (match) => `${match} data-seal-index="${index}"${index++ === selectedIndex ? ' data-selected="true"' : ''}`);
+    const seals = sealAnnotationMarkup(currentSeals(), escapeHtml, personMarkup).replace(/class="seal-marker"/g, (match) => `${match} data-seal-index="${index}"${index++ === selectedIndex ? ' data-selected="true"' : ''}`);
     const regions = currentRegions().map((region, regionIndex) => {
       const x = Number(region.x), y = Number(region.y), width = Number(region.width), height = Number(region.height);
       if (!region.name || ![x, y, width, height].every(Number.isFinite)) return '';

@@ -5,9 +5,15 @@ export function createMarkupRenderer({ state }) {
     if (!linkEntities) return String(value);
     const tokens = []; const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
     let text = String(value);
+    const peopleById = new Map((state.people || []).filter((person) => person.id).map((person) => [person.id, person]));
+    text = text.replace(/\[([^\]]+)\]/g, (match, id) => {
+      const person = peopleById.get(id);
+      return person ? token(`<a class="person-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>`) : match;
+    });
     for (const { pattern, people } of state.personPattern || []) text = text.replace(pattern, (match) => {
       const person = people.find((item) => item.name.toLocaleLowerCase() === match.toLocaleLowerCase());
-      return person ? token(`<a class="person-link" href="?person=${encodeURIComponent(person.id || person.name)}">${match}</a>`) : match;
+      // Unqualified names use the generic name route; explicit [id] tokens above stay specific.
+      return person ? token(`<a class="person-link" href="?person=${encodeURIComponent(person.name)}">${match}</a>`) : match;
     });
     if (state.placePattern) text = text.replace(state.placePattern, (match) => {
       const normalizedMatch = match.toLocaleLowerCase();
@@ -22,6 +28,11 @@ export function createMarkupRenderer({ state }) {
     let text = escapeHtml(value).replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => token(`<a href="${url}" target="_blank" rel="noreferrer">${linkedMarkup(label, linkEntities)}</a>`));
     text = linkedMarkup(text, linkEntities).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
     return text.replace(/\u0000(\d+)\u0000/g, (match, index) => tokens[Number(index)] ?? match);
+  }
+
+  function personMarkup(value = '') {
+    const person = (state.people || []).find((item) => item.id === String(value).replace(/^\[|\]$/g, ''));
+    return person ? `<a class="person-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>` : inlineMarkup(value);
   }
 
   function markdownMarkup(value = '', linkEntities = true) {
@@ -43,6 +54,7 @@ export function createMarkupRenderer({ state }) {
   return {
     linkedMarkup,
     inlineMarkup,
+    personMarkup,
     markdownMarkup,
     markdownLinks: (value = '') => Array.isArray(value) ? value.map((item) => `<span class="source-line">${inlineMarkup(item)}</span>`).join('') : inlineMarkup(value),
     diagramMarkup: (value = '') => { const source = String(value).replace(/^\s*```mermaid\s*\n?/, '').replace(/\n?\s*```\s*$/, '').trim(); return source ? `<div class="diagram mermaid">${escapeHtml(source)}</div>` : ''; },

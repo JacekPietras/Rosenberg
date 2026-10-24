@@ -83,8 +83,17 @@ export function createSealScreen({
     return label.includes('?') ? 'unknown' : label.toLocaleLowerCase();
   }
 
+  function sealPersonLabel(value) {
+    const label = String(value || '').trim();
+    const reference = label.match(/^\[([^\]]+)\]$/);
+    if (!reference) return label;
+    const person = (state.personRecords || []).find((item) => item?.id === reference[1]);
+    if (!person?.name) return label;
+    return String(person.name).trim().split(/\s+/)[0];
+  }
+
   function sealMatchesSelected(title, selected) {
-    const label = String(title || '').trim();
+    const label = sealPersonLabel(title);
     const normalized = label.toLocaleLowerCase();
     if (selected.has('unknown') && label.includes('?')) return true;
     const particles = [...new Set(state.nobiliaryParticles || [])]
@@ -120,7 +129,7 @@ export function createSealScreen({
   function renderSealSidebar(entries) {
     const labels = new Map();
     entries.forEach((entry) => {
-      const label = String(entry.title || '').trim();
+      const label = sealPersonLabel(entry.title);
       if (/[+/]/.test(label) || /\szu\s/i.test(label) || /\s(?:elder|knight|nobleman)$/i.test(label)) return;
       const key = label.includes('?') ? 'unknown' : label.toLocaleLowerCase();
       if (label && !labels.has(key)) labels.set(key, { label });
