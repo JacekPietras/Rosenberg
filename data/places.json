@@ -1010,6 +1010,42 @@
     "lon": 8.1630885601044
   },
   {
+    "id": "dienstadt",
+    "variations": ["Dienstadt", "Distad", "Diehstat"],
+    "lat": 49.63556,
+    "lon": 9.61083
+  },
+  {
+    "id": "eubigheim",
+    "variations": ["Eubigheim", "Úbikein", "Ubenkein"],
+    "lat": 49.5017605,
+    "lon": 9.5404604
+  },
+  {
+    "id": "euerhausen",
+    "variations": ["Euerhausen", "Vrhusen"],
+    "lat": 49.6117,
+    "lon": 9.94889
+  },
+  {
+    "id": "eltmann",
+    "variations": ["Eltmann", "Eltmeyn"],
+    "lat": 49.972771,
+    "lon": 10.657967
+  },
+  {
+    "id": "unterbalbach",
+    "variations": ["Unterbalbach", "Nydern Balbach"],
+    "lat": 49.5275,
+    "lon": 9.7472
+  },
+  {
+    "id": "sailach",
+    "variations": ["Sailach", "Selhech"],
+    "lat": 49.1403056,
+    "lon": 9.6423889
+  },
+  {
     "id": "zadar",
     "variations": [
       "Zadar",
