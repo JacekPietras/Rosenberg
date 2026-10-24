@@ -361,7 +361,10 @@
   {
     "id": "waldmannshofen-castle",
     "variations": [
-      "Schloss Waldmannshofen"
+      "Schloss Waldmannshofen",
+      "Waldtmanßhouen",
+      "Waldtmannshofen",
+      "Waltmannshofen"
     ],
     "category": "castle",
     "lat": 49.5341,
@@ -370,7 +373,11 @@
   {
     "id": "wehrkirche-angeltuern",
     "variations": [
-      "Wehrkirche, Angeltürn"
+      "Wehrkirche, Angeltürn",
+      "Angerthal",
+      "Angelthor",
+      "Angeldarm",
+      "Angelthorn"
     ],
     "category": "church",
     "lat": 49.4877,
