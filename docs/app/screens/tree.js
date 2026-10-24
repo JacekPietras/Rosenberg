@@ -159,6 +159,15 @@ export function renderPeopleTree(people = [], documents = []) {
       }));
       if (mentioned) years.add(year);
     });
+    const imageEntries = documents instanceof Map ? documents.get('data/images/images.json')?.entries || [] : [];
+    imageEntries.forEach((entry) => {
+      const title = String(entry.title || '');
+      const titleMentionsPerson = person.id
+        ? new RegExp(`\\[${regexEscape(person.id)}\\]`).test(title)
+        : new RegExp(`(?<![\\p{L}\\p{N}])${regexEscape(person.name)}(?![\\p{L}\\p{N}])`, 'iu').test(title);
+      if (!titleMentionsPerson) return;
+      (String(entry.date || '').match(/\d{4}/g) || []).forEach((year) => years.add(year));
+    });
     return [person._treeKey, [...years].sort()];
   }));
   const personLines = (person) => [
