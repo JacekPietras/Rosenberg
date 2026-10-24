@@ -10,6 +10,7 @@ export function setupImageLightbox({ state, repository, rerender, personMarkup }
   const image = $('#image-lightbox-image');
   const stage = $('#image-lightbox-stage');
   const annotations = $('#image-lightbox-annotations');
+  const description = $('#image-lightbox-description');
   const regionOverlay = $('#image-lightbox-region-overlay');
   const regionBox = regionOverlay?.querySelector('.image-lightbox-region-box');
   const preview = $('#image-lightbox-seal-preview');
@@ -178,6 +179,8 @@ export function setupImageLightbox({ state, repository, rerender, personMarkup }
     image.onload = () => { updateGeometry(); updatePreview(); };
     image.referrerPolicy = 'no-referrer';
     image.alt = link.querySelector('img')?.alt || (typeof item === 'object' ? item?.name : '') || '';
+    const imageDescription = (typeof item === 'object' && item?.description) || link.dataset.imageDescription || '';
+    if (description) { description.textContent = imageDescription; description.hidden = !imageDescription; }
     if (typeof lightbox.showModal === 'function') {
       if (!lightbox.open) lightbox.showModal();
     } else {
@@ -331,5 +334,5 @@ export function setupImageLightbox({ state, repository, rerender, personMarkup }
   });
   lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
   lightbox.addEventListener('cancel', (event) => { event.preventDefault(); close(); });
-  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
+  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (description) { description.textContent = ''; description.hidden = true; } if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
 }
