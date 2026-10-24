@@ -59,9 +59,9 @@ export function createEntityScreens({
       inlineMarkup,
       textClass: 'entity-fact-text',
       itemClass: (fact) => {
-        const hasSpecificPersonId = /\[[^\]]+\]/.test(fact.text) && [...fact.text.matchAll(/\[([^\]]+)\]/g)].some((match) => peopleById.has(match[1]));
+        const hasSelectedPersonId = selectedPerson?.id && fact.text.includes(`[${selectedPerson.id}]`);
         const mentionsSelectedName = selectedPerson && fact.text.toLocaleLowerCase().includes(selectedPerson.name.toLocaleLowerCase());
-        return mentionsSelectedName && !hasSpecificPersonId ? ' class="entity-fact-ambiguous"' : '';
+        return mentionsSelectedName && !hasSelectedPersonId ? ' class="entity-fact-ambiguous"' : '';
       },
       itemMarkup: (fact, index) => {
         const showDate = index === 0 || fact.date !== facts[index - 1].date;
