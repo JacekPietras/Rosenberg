@@ -20,9 +20,15 @@ Extract all explicitly stated family relationships as separate atomic facts:
 
 Never use grouped forms such as “Sons: A and B”. Do not assume relationship
 symmetry: a statement that X is Y's brother does not automatically establish
-the reverse relationship. Use full names and include epithets such as `der
-Ältere` or `der Jüngere`, and territorial designations such as `zu Boxberg` or
-`zu Wölchingen`, whenever they distinguish individuals.
+the reverse relationship. Use full names and include German age epithets when
+they distinguish individuals. Preserve the source's distinction among `der
+Alte`, `der Ältere`, `der Junge`, and `der Jüngere`; do not translate these as
+“the old/older/elder/young/younger.” Write the epithet after the full name, as
+in `Konrad von Rosenberg der Ältere` or `Arnold von Rosenberg der Jüngere`.
+Expand abbreviations such as `d. Ä.` and `d. J.` to the corresponding full
+German epithet in facts and English translations; leave the source text as
+written. Place territorial designations such as `zu Boxberg` or `zu Wölchingen`
+after the name as well.
 
 Preserve German and Latin terminology exactly when it carries meaning. Useful
 forms include `Ritter`, `Edelknecht`, `Vogt`, `Hofmeister`, `Burggraf`,
@@ -90,8 +96,10 @@ do not expand them automatically.
 Never merge people or places solely because their names are similar. If
 identity is ambiguous, preserve the source form and flag it for review. Do not
 normalize away `der Ältere`, `der Jüngere`, `zu [place]`, titles, or other
-identifiers. Record legitimate new variants for later addition to the relevant
-names or places file rather than silently inventing a standard form.
+identifiers. Keep age epithets in German and after the full name (`<given name>
+von <surname> der Alte/der Ältere/der Junge/der Jüngere`). Record legitimate
+new variants for later addition to the relevant names or places file rather
+than silently inventing a standard form.
 
 ## Source verification
 
