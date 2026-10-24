@@ -5,6 +5,8 @@ description: Search an archival catalog for records connected to a supplied pers
 
 # Archive name research
 
+See the [archives and research portals list](../../../data/notes/archives.md) when choosing a catalog to search.
+
 Search the supplied archive catalog thoroughly for records that may concern the supplied person or family. The inputs are an archive search URL and a target name, usually with a given name and surname. Do not assume a particular archive, language, catalog platform, or record type.
 
 ## Establish the search space

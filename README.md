@@ -41,6 +41,10 @@ and the local Google Drive objects workflow is
 The place-history workflow is [`place-history`](.agents/skills/place-history/SKILL.md).
 Repository-wide instructions are in [`AGENTS.md`](AGENTS.md).
 
+## Research links
+
+Archive catalogs and related research portals are collected in [`data/notes/archives.md`](data/notes/archives.md).
+
 ## Browser viewer
 
 The viewer is published at
