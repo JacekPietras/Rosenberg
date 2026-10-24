@@ -30,17 +30,25 @@ German epithet in facts and English translations; leave the source text as
 written. Place territorial designations such as `zu Boxberg` or `zu Wölchingen`
 after the name as well.
 
-Preserve German and Latin terminology exactly when it carries meaning. Useful
-forms include `Ritter`, `Edelknecht`, `Vogt`, `Hofmeister`, `Burggraf`,
-`Domherr`, `Vizedom`, `Vitztum`, `Komtur`, `miles`, and `armiger`. Include the
-territorial or institutional scope, such as `erzbischöflicher Vogt zu Walldürn`
-or `Vogt zu Dürn`.
-In English translations and facts, preserve these source-language forms instead
-of translating personal titles as “knight,” “nobleman,” or “squire.” Keep the
-full normalized family name before the title, as in `Arnold von Uissigheim,
-Ritter`; do not split or translate a family name such as `von Uissigheim` as
-“of Uissigheim.” Keep place descriptions distinct, such as `pastor of
-Uissigheim`.
+Preserve German and Latin terminology when it carries historical meaning.
+Examples include `Ritter`, `Edelmann`, `Edel`, `Edelknecht`, `Knecht`, `Vogt`,
+`Hofmeister`, `Burggraf`, `Domherr`, `Vizedom`, `Vitztum`, `Komtur`, `miles`,
+and `armiger`.
+
+Keep these forms in facts and English translations when they function as a
+personal title or designation, and place them after the full name even if the
+German source puts them first: `Arnold von Uissigheim, Ritter`; `Eberhard von
+Rosenberg, Vogt zu Dürn`. Retain the territorial or institutional scope. In a
+list, attach the title to each person, for example, `Eberhard von Rosenberg,
+Ritter; Johann von Randecke, Ritter`.
+
+Translate the same term when it describes an office, action, or general
+occupation rather than identifying a person's title: `Eberhard served as
+bailiff of Dürn`; `Rudolf, a canon of Würzburg, renounced his inheritance`;
+`Like every knight, Eberhard had armour`. Avoid hybrids such as `bailiff zu
+Dürn` or `Canon zu Würzburg`. Keep family names intact (`von Uissigheim`, not
+“of Uissigheim”) and distinguish titles from place descriptions such as
+`pastor of Uissigheim`.
 
 For property and transactions, state the people, property, place, and parties
 involved. Relevant forms include:
