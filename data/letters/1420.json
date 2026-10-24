@@ -4,10 +4,16 @@
     {
       "source": "Rudolf Sillib, “Stift Neuburg bei Heidelberg, seine Geschichte und Urkunden (Schluß), Beilagen II: Urkunden und Regesten,” Neues Archiv für die Geschichte der Stadt Heidelberg und der rheinischen Pfalz, vol. 6 (1905), p. 30.",
       "url": "https://books.google.com/books?id=SXJBAAAAYAAJ&pg=PA30",
+      "note": "Sillib cites the manuscript source as: Cod. Heidelb. 359, 54 II, f. 98v. This old shelfmark is now Heid. Hs. 130,2, Stephan Alexander Würdtwein, Monasticon Wormatiense, vol. II. The passage appears in the section Benefactores Ecclesiae et Monasterii Neuburgensis. Heidelberg scan (viewer page 0204): https://digi.ub.uni-heidelberg.de/diglit/heidhs130_2/0204",
       "latin": "Benefactores coenobii Neuburgensis sic annotati reperiuntur: (...) 1420 Elisabetha de Erlickheim, vidua nata de Rosenberg",
       "english": "The following benefactors of Neuburg monastery are recorded: (...) In 1420, Elisabeth von Erligheim, widow, born von Rosenberg.",
       "facts": [
         "Elisabeth von Erligheim, a widow born von Rosenberg, was recorded among the benefactors of Neuburg monastery"
+      ],
+      "img": [
+        {
+          "src": "https://digi.ub.uni-heidelberg.de/diglitData/image/heidhs130_2/4/099r.jpg"
+        }
       ]
     }
   ]
