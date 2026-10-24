@@ -9,7 +9,19 @@
       "Ussekein",
       "Vssenkeym",
       "Vssinkein",
-      "Ussenkein"
+      "Ussenkein",
+      "Ussenkeim",
+      "Ussikein",
+      "Vssikein",
+      "Ussickeim",
+      "Ussichkheim",
+      "Vssinkeim",
+      "Ussinkein",
+      "Ussinheim",
+      "Ussenheim",
+      "Uossenkeim",
+      "Ussinkem",
+      "Uessikem"
     ],
     "category": "village",
     "lat": 49.6793443,
@@ -36,7 +48,12 @@
       "Wölchingen",
       "Wolchingen",
       "Wolching",
-      "Frankendom, Wölchingen"
+      "Frankendom, Wölchingen",
+      "Wolechingen",
+      "Wollechingen",
+      "Wollichingen",
+      "Wulchingen",
+      "Welchingen"
     ],
     "category": "church",
     "lat": 49.4848212,
@@ -49,7 +66,13 @@
       "Boxberg",
       "Boxsberg",
       "Boßberg",
-      "Bocksberg"
+      "Bocksberg",
+      "Bockesberg",
+      "Bocchesberg",
+      "Bokkeberc",
+      "Bocsberg",
+      "Poxberg",
+      "Poxburg"
     ],
     "category": "castle",
     "lat": 49.4792833,
@@ -520,6 +543,7 @@
       "Dürne",
       "Dorn",
       "Durne",
+      "Dorne",
       "Turne",
       "Duorne"
     ],
@@ -601,7 +625,12 @@
   {
     "id": "bobstadt",
     "variations": [
-      "Bobstadt"
+      "Bobstadt",
+      "Baxstatt",
+      "Bogesstatt",
+      "Bostadt",
+      "Babstatt",
+      "Ballstatt"
     ],
     "category": "village",
     "lat": 49.4665786,
@@ -693,7 +722,8 @@
   {
     "id": "erlenbach",
     "variations": [
-      "Erlenbach"
+      "Erlenbach",
+      "Erelbach"
     ],
     "category": "village",
     "lat": 49.173117,
