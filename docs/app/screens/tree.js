@@ -12,8 +12,41 @@ export function renderPeopleTree(people = [], documents = []) {
     : [];
   if (!records.length) return '<div class="people-tree"><p class="status">No people found.</p></div>';
 
+  const documentRecords = documents instanceof Map ? [...documents.values()] : Array.isArray(documents) ? documents : [];
+  const mentionedYears = new Map(records.map((person) => {
+    const years = new Set();
+    documentRecords.forEach((document) => {
+      const year = String(document?.date || '').match(/^\d{4}/)?.[0];
+      if (!year) return;
+      const mentioned = (document.entries || []).some((entry) => (entry.facts || []).some((fact) => {
+        const text = typeof fact === 'string' ? fact : String(fact?.text || '');
+        return person.id
+          ? new RegExp(`\\[${regexEscape(person.id)}\\]`).test(text)
+          : new RegExp(`(?<![\\p{L}\\p{N}])${regexEscape(person.name)}(?![\\p{L}\\p{N}])`, 'iu').test(text);
+      }));
+      if (mentioned) years.add(year);
+    });
+    const imageEntries = documents instanceof Map ? documents.get('data/images/images.json')?.entries || [] : [];
+    imageEntries.forEach((entry) => {
+      const title = String(entry.title || '');
+      const titleMentionsPerson = person.id
+        ? new RegExp(`\\[${regexEscape(person.id)}\\]`).test(title)
+        : new RegExp(`(?<![\\p{L}\\p{N}])${regexEscape(person.name)}(?![\\p{L}\\p{N}])`, 'iu').test(title);
+      if (!titleMentionsPerson) return;
+      (String(entry.date || '').match(/\d{4}/g) || []).forEach((year) => years.add(year));
+    });
+    return [person._treeKey, [...years].sort()];
+  }));
+  const personLines = (person) => [
+    person.name,
+    ...(Array.isArray(person.titles) ? person.titles : []),
+    person.born || person.died ? `${person.born || '?'}–${person.died || '?'}` : '',
+    mentionedYears.get(person._treeKey)?.length
+      ? `mentioned: [${mentionedYears.get(person._treeKey)[0]}${mentionedYears.get(person._treeKey).length > 1 ? `-${mentionedYears.get(person._treeKey).at(-1)}` : ''}]`
+      : '',
+  ].filter(Boolean);
+  const nodeHeightFor = (person) => Math.max(44, 25 + (personLines(person).length - 1) * 18 + 10);
   const nodeWidth = 220;
-  const nodeHeight = 90;
   const horizontalGap = 36;
   const verticalGap = 88;
   const padding = 28;
@@ -85,7 +118,14 @@ export function renderPeopleTree(people = [], documents = []) {
   const maxDepth = Math.max(...layers.keys());
   const maxLayerSize = Math.max(...[...layers.values()].map((layer) => layer.length));
   let width = Math.max(2 * padding + nodeWidth, 2 * padding + maxLayerSize * nodeWidth + (maxLayerSize - 1) * horizontalGap);
-  const height = 2 * padding + (maxDepth + 1) * nodeHeight + maxDepth * verticalGap;
+  const layerHeights = new Map([...layers].map(([depth, layer]) => [depth, Math.max(...layer.map(nodeHeightFor))]));
+  const height = 2 * padding + [...layerHeights.values()].reduce((sum, layerHeight) => sum + layerHeight, 0) + maxDepth * verticalGap;
+  const layerOffsets = new Map();
+  let layerOffset = 0;
+  [...layers.keys()].sort((left, right) => left - right).forEach((depth) => {
+    layerOffsets.set(depth, layerOffset);
+    layerOffset += layerHeights.get(depth) + verticalGap;
+  });
   const positions = new Map();
   layers.forEach((layer, depth) => {
     const groups = [...new Set(layer.map((person) => groupFor(person._treeKey)))].map((group) => {
@@ -137,7 +177,7 @@ export function renderPeopleTree(people = [], documents = []) {
       unitGroups.forEach(({ members }) => {
         members.forEach((person, index) => positions.set(person._treeKey, {
           x: groupX + index * (nodeWidth + horizontalGap),
-          y: padding + depth * (nodeHeight + verticalGap),
+          y: padding + layerOffsets.get(depth),
         }));
         groupX += members.length * nodeWidth + Math.max(0, members.length - 1) * horizontalGap + horizontalGap;
       });
@@ -150,39 +190,6 @@ export function renderPeopleTree(people = [], documents = []) {
   const rightmostNode = Math.max(...[...positions.values()].map(({ x }) => x + nodeWidth));
   width = Math.max(width, rightmostNode + padding);
 
-  const documentRecords = documents instanceof Map ? [...documents.values()] : Array.isArray(documents) ? documents : [];
-  const mentionedYears = new Map(records.map((person) => {
-    const years = new Set();
-    documentRecords.forEach((document) => {
-      const year = String(document?.date || '').match(/^\d{4}/)?.[0];
-      if (!year) return;
-      const mentioned = (document.entries || []).some((entry) => (entry.facts || []).some((fact) => {
-        const text = typeof fact === 'string' ? fact : String(fact?.text || '');
-        return person.id
-          ? new RegExp(`\\[${regexEscape(person.id)}\\]`).test(text)
-          : new RegExp(`(?<![\\p{L}\\p{N}])${regexEscape(person.name)}(?![\\p{L}\\p{N}])`, 'iu').test(text);
-      }));
-      if (mentioned) years.add(year);
-    });
-    const imageEntries = documents instanceof Map ? documents.get('data/images/images.json')?.entries || [] : [];
-    imageEntries.forEach((entry) => {
-      const title = String(entry.title || '');
-      const titleMentionsPerson = person.id
-        ? new RegExp(`\\[${regexEscape(person.id)}\\]`).test(title)
-        : new RegExp(`(?<![\\p{L}\\p{N}])${regexEscape(person.name)}(?![\\p{L}\\p{N}])`, 'iu').test(title);
-      if (!titleMentionsPerson) return;
-      (String(entry.date || '').match(/\d{4}/g) || []).forEach((year) => years.add(year));
-    });
-    return [person._treeKey, [...years].sort()];
-  }));
-  const personLines = (person) => [
-    person.name,
-    Array.isArray(person.titles) && person.titles.length ? person.titles.join(', ') : '',
-    person.born || person.died ? `${person.born || '?'}–${person.died || '?'}` : '',
-    mentionedYears.get(person._treeKey)?.length
-      ? `mentioned: [${mentionedYears.get(person._treeKey)[0]}${mentionedYears.get(person._treeKey).length > 1 ? `-${mentionedYears.get(person._treeKey).at(-1)}` : ''}]`
-      : '',
-  ].filter(Boolean);
   const edges = [];
   const spousePairs = new Set();
   records.forEach((person) => {
@@ -195,13 +202,15 @@ export function renderPeopleTree(people = [], documents = []) {
       spousePairs.add(spousePair);
       const left = from.x < wife.x ? from : wife;
       const right = from.x < wife.x ? wife : from;
-      edges.push(`<line class="people-tree-spouse" x1="${left.x + nodeWidth}" y1="${left.y + nodeHeight / 2}" x2="${right.x}" y2="${right.y + nodeHeight / 2}"/><text class="people-tree-edge-label" x="${(left.x + nodeWidth + right.x) / 2}" y="${left.y + nodeHeight / 2 - 8}">wife</text>`);
+      const edgeY = Math.min(left.y + nodeHeightFor(records.find((item) => positions.get(item._treeKey) === left)) / 2,
+        right.y + nodeHeightFor(records.find((item) => positions.get(item._treeKey) === right)) / 2);
+      edges.push(`<line class="people-tree-spouse" x1="${left.x + nodeWidth}" y1="${edgeY}" x2="${right.x}" y2="${edgeY}"/><text class="people-tree-edge-label" x="${(left.x + nodeWidth + right.x) / 2}" y="${edgeY - 8}">wife</text>`);
     }
     (Array.isArray(person.children) ? person.children : []).forEach((childRef) => {
       const child = positions.get(byId.get(childRef));
       if (child) {
         const startX = from.x + nodeWidth / 2;
-        const startY = from.y + nodeHeight;
+        const startY = from.y + nodeHeightFor(person);
         const endX = child.x + nodeWidth / 2;
         const endY = child.y;
         const cornerY = (startY + endY) / 2;
@@ -211,6 +220,7 @@ export function renderPeopleTree(people = [], documents = []) {
   });
   const nodes = records.map((person) => {
     const position = positions.get(person._treeKey);
+    const nodeHeight = nodeHeightFor(person);
     const text = personLines(person).map((line, index) => `<tspan class="${index ? 'people-tree-detail' : 'people-tree-name'}" x="${position.x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line)}</tspan>`).join('');
     const href = `?person=${encodeURIComponent(person.id || person.name)}`;
     return `<a class="people-tree-person-link" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${position.x}" y="${position.y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${position.x + nodeWidth / 2}" y="${position.y + 25}" text-anchor="middle">${text}</text></g></a>`;
