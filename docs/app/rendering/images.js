@@ -46,7 +46,8 @@ export function createImageRenderer({ location = window.location, personMarkup }
       const sourceRegions = node && typeof node === 'object' ? node.regions : context.regions;
       const regions = context.showRegions === false ? '' : regionMarkup(sourceRegions);
       const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
-      const descriptionAttribute = node && typeof node === 'object' && node.description ? ` data-image-description="${escapeHtml(node.description)}"` : '';
+      const descriptionText = node && typeof node === 'object' ? node.description : context.description;
+      const descriptionAttribute = descriptionText ? ` data-image-description="${escapeHtml(descriptionText)}"` : '';
       const focus = (node && typeof node === 'object' ? node.cropFocus : context.focus)
         || sourceRegions?.[0];
       const focusAttributes = focus && [focus.x, focus.y, focus.width, focus.height].every((value) => Number.isFinite(Number(value)))

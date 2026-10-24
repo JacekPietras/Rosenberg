@@ -303,6 +303,7 @@ export function setupImageLightbox({ state, repository, rerender, personMarkup }
   stage.addEventListener('pointermove', (event) => { if (regionDrag || selectedIndex !== null) return; const rect = annotations.getBoundingClientRect(); if (!rect.width || event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) { magnifierPoint = null; magnifierDismissed = false; updatePreview(); return; } magnifierPoint = point(event); magnifierDismissed = false; updatePreview(); const box = lightbox.getBoundingClientRect(); if (preview) { preview.style.left = `${event.clientX - box.left}px`; preview.style.top = `${event.clientY - box.top}px`; } });
   stage.addEventListener('pointerleave', () => { if (selectedIndex === null) { magnifierPoint = null; updatePreview(); } });
   lightbox.addEventListener('wheel', (event) => {
+    if (description?.contains(event.target)) return;
     event.preventDefault();
     if (selectedIndex === null && magnifierPoint) {
       magnifierDismissed = false;
