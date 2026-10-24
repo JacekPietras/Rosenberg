@@ -24,3 +24,4 @@ Raban, Rabanus
 Wenceslaus, Wenzel
 Kraft, Krafto
 Erligheim, Erleheim
+Neipperg, Niperg, Nyperg
