@@ -2,13 +2,16 @@
   "date": "1436-01-28",
   "entries": [
     {
-      "source": "GA 5 U 363",
-      "url": "http://www.landesarchiv-bw.de/plink/?f=3-187924",
+      "source": "GA 5 U 363; Lorenz Fries, Hohe Registratur, Standbuch 1012 fol. 342r (citing Liber 2 contractuum Rudolfi fol. 197)",
+      "url": [
+        "http://www.landesarchiv-bw.de/plink/?f=3-187924",
+        "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?eintrag=5614"
+      ],
       "german": "Samstag nach St. Paul; Bischof Johann von Würzburg belehnt Conrad von Rosenberg zu Bartenstein gesessen mit dem halben Dorf Riedbach (Zoll);\n\nSiegel des Bischofs und des Domstifts; fehlen.",
-      "english": "Saturday after St. Paul; Bishop Hans of Würzburg enfeoffs Konrad von Rosenberg, resident of Bartenstein, with half of the village of Riedbach;\n\nseals of the bishop and the cathedral chapter; missing.",
+      "english": "Saturday after St. Paul; Bishop Hans of Würzburg enfeoffs Konrad von Rosenberg, resident of Bartenstein, with half of the village of Riedbach and its toll;\n\nseals of the bishop and the cathedral chapter; missing.",
       "facts": [
         "Konrad von Rosenberg resided at Bartenstein",
-        "Bischof Hans von Würzburg enfeoffed Konrad von Rosenberg with half of the village of Riedbach (Zoll)"
+        "Bishop Johann von Brunn of Würzburg enfeoffed Konrad von Rosenberg with half of the village of Riedbach and its toll"
       ],
       "img": [
         {
@@ -17,6 +20,9 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000187924%2F03_0000187924_0002_3-187924-2.jpg",
           "deleted": "true"
+        },
+        {
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1012_342.jpg"
         }
       ]
     }
