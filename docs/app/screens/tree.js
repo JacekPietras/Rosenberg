@@ -210,5 +210,72 @@ export function renderPeopleTree(people = [], documents = []) {
     const href = `?person=${encodeURIComponent(person.id || person.name)}`;
     return `<a class="people-tree-person-link" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${position.x}" y="${position.y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${position.x + nodeWidth / 2}" y="${position.y + 25}" text-anchor="middle">${text}</text></g></a>`;
   }).join('');
-  return `<div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div>`;
+  return `<section class="people-tree-wrap" aria-label="Family tree viewer"><div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div></section>`;
+}
+
+export function setupPeopleTreeZoom(root = document) {
+  const wrapper = root.querySelector('.people-tree-wrap');
+  const svg = wrapper?.querySelector('.people-tree svg');
+  if (!wrapper || !svg) return;
+  const [viewWidth, viewHeight] = svg.getAttribute('viewBox').split(/\s+/).slice(2).map(Number);
+  const viewport = wrapper.querySelector('.people-tree');
+  let scale = 1;
+  const minScale = .025;
+  const maxScale = 2;
+  const applyScale = () => {
+    svg.style.width = `${viewWidth * scale}px`;
+    svg.style.height = `${viewHeight * scale}px`;
+  };
+  const fit = () => {
+    scale = Math.min(1, (viewport.clientWidth - 32) / viewWidth, (viewport.clientHeight - 32) / viewHeight);
+    scale = Math.max(minScale, scale);
+    applyScale();
+    viewport.scrollTo({ left: 0, top: 0 });
+  };
+  const zoomAt = (factor, clientX = viewport.getBoundingClientRect().left + viewport.clientWidth / 2, clientY = viewport.getBoundingClientRect().top + viewport.clientHeight / 2) => {
+    const bounds = viewport.getBoundingClientRect();
+    const x = viewport.scrollLeft + clientX - bounds.left;
+    const y = viewport.scrollTop + clientY - bounds.top;
+    const previousScale = scale;
+    const nextScale = Math.min(maxScale, Math.max(minScale, scale * factor));
+    if (nextScale === scale) return;
+    scale = nextScale;
+    applyScale();
+    viewport.scrollLeft = x * (scale / previousScale) - (clientX - bounds.left);
+    viewport.scrollTop = y * (scale / previousScale) - (clientY - bounds.top);
+  };
+  viewport.addEventListener('wheel', (event) => {
+    if (!event.ctrlKey && !event.metaKey) return;
+    event.preventDefault();
+    zoomAt(Math.exp(-event.deltaY * .01), event.clientX, event.clientY);
+  }, { passive: false });
+  let gestureStartScale = scale;
+  viewport.addEventListener('gesturestart', (event) => {
+    event.preventDefault();
+    gestureStartScale = scale;
+  }, { passive: false });
+  viewport.addEventListener('gesturechange', (event) => {
+    event.preventDefault();
+    zoomAt(gestureStartScale * event.scale / scale, event.clientX, event.clientY);
+  }, { passive: false });
+  let touchStartDistance = 0;
+  let touchStartScale = scale;
+  viewport.addEventListener('touchstart', (event) => {
+    if (event.touches.length !== 2) return;
+    touchStartDistance = Math.hypot(event.touches[0].clientX - event.touches[1].clientX, event.touches[0].clientY - event.touches[1].clientY);
+    touchStartScale = scale;
+  }, { passive: true });
+  viewport.addEventListener('touchmove', (event) => {
+    if (event.touches.length !== 2 || !touchStartDistance) return;
+    event.preventDefault();
+    const distance = Math.hypot(event.touches[0].clientX - event.touches[1].clientX, event.touches[0].clientY - event.touches[1].clientY);
+    const nextScale = Math.min(maxScale, Math.max(minScale, touchStartScale * distance / touchStartDistance));
+    const centerX = (event.touches[0].clientX + event.touches[1].clientX) / 2;
+    const centerY = (event.touches[0].clientY + event.touches[1].clientY) / 2;
+    zoomAt(nextScale / scale, centerX, centerY);
+  }, { passive: false });
+  viewport.addEventListener('touchend', (event) => {
+    if (event.touches.length < 2) touchStartDistance = 0;
+  }, { passive: true });
+  fit();
 }

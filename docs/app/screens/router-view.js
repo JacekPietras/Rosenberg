@@ -12,6 +12,7 @@ export async function renderActiveScreen({
   sealMatchesSelected,
   sealMatchesType,
   renderPeopleTree,
+  setupPeopleTreeZoom,
   renderMapPage,
   setupMap,
   render3dPage,
@@ -57,6 +58,7 @@ export async function renderActiveScreen({
   }
   if (state.active === 'tree') {
     content.innerHTML = renderPeopleTree(state.personRecords, state.documents);
+    setupPeopleTreeZoom(content);
     return;
   }
   if (state.active === 'map') {

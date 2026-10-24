@@ -214,8 +214,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .source-list > li:first-child, .facts > li:first-child { margin-top: 0; }
 .diagram { margin: 1.25rem 0; padding: 1rem; overflow-x: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; }
 .diagram svg { display: block; max-width: none; height: auto; margin: 0 auto; }
-.people-tree { margin: 1.25rem 0; padding: 1rem; overflow-x: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; }
-.people-tree svg { display: block; min-width: 100%; height: auto; }
+.people-tree-wrap { margin: 1.25rem 0; }
+.people-tree { height: min(72vh, 720px); min-height: 20rem; padding: 1rem; overflow: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; touch-action: pan-x pan-y; }
+.people-tree svg { display: block; max-width: none; }
 .people-tree-person-link { cursor: pointer; }
 .people-tree-person-link:focus-visible .people-tree-node rect { stroke-width: 3; }
 .people-tree-node rect { fill: var(--surface-raised); stroke: var(--accent); stroke-width: 1.5; }

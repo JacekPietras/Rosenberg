@@ -1,7 +1,7 @@
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
-import { renderPeopleTree } from './screens/tree.js?v=88';
+import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=89';
 import { renderActiveScreen } from './screens/router-view.js?v=2';
 import { createDocumentRenderer } from './screens/documents.js?v=3';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
@@ -1305,6 +1305,7 @@ async function renderActive() {
     sealMatchesSelected: sealScreen.sealMatchesSelected,
     sealMatchesType: sealScreen.sealMatchesType,
     renderPeopleTree,
+    setupPeopleTreeZoom,
     renderMapPage: mapScreen.renderMapPage,
     setupMap: mapScreen.setupMap,
     render3dPage: () => `<div class="models-grid">${sortByDate(state.manifest.collections || []).map((model) => imageCardMarkup(model)).join('')}</div>`,
