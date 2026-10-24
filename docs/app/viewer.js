@@ -1148,7 +1148,8 @@ function renderYearSidebar(paths, labelPaths = paths) {
     .map(({ label, path }) => {
       const key = label.toLocaleLowerCase();
       const selected = GREY_LETTER_LABELS.has(key) ? state.hiddenLetterLabels.includes(key) : state.letterLabels.includes(key);
-      return `<a href="#" class="${selected ? 'selected' : ''}" data-sidebar-type="label" data-label="${escapeHtml(key)}" data-path="${escapeHtml(path)}">${escapeHtml(label)}</a>`;
+      const displayLabel = GREY_LETTER_LABELS.has(key) ? `× ${label}` : label;
+      return `<a href="#" class="${selected ? 'selected' : ''}" data-sidebar-type="label" data-label="${escapeHtml(key)}" data-path="${escapeHtml(path)}">${escapeHtml(displayLabel)}</a>`;
     })
     .join('');
   if (!yearLinks && !labelLinks) return '';

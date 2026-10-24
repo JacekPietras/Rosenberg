@@ -93,26 +93,51 @@ export function renderPeopleTree(people = []) {
       const target = parentCenters.length
         ? parentCenters.reduce((sum, center) => sum + center, 0) / parentCenters.length
         : null;
-      return { group, members, target, name: members[0]?.name || '' };
+      return { group, members, target, parents: parents.sort(), name: members[0]?.name || '' };
     }).sort((left, right) => {
       if (left.target !== null && right.target !== null && left.target !== right.target) return left.target - right.target;
       if (left.target !== null && right.target === null) return -1;
       if (left.target === null && right.target !== null) return 1;
       return left.name.localeCompare(right.name);
     });
-    const totalWidth = layer.length * nodeWidth + (layer.length - 1) * horizontalGap;
-    let cursor = groups.some(({ target }) => target !== null)
+    // Sibling groups with the same parent set form one layout unit. Positioning
+    // each group independently pushes later siblings to the right of their
+    // parent's center, even when they share the same parent.
+    const units = [];
+    const unitByParents = new Map();
+    groups.forEach((group) => {
+      const key = group.parents.join('\u0000');
+      if (!group.parents.length) {
+        units.push({ groups: [group], target: group.target, name: group.name });
+        return;
+      }
+      if (!unitByParents.has(key)) {
+        const unit = { groups: [], target: group.target, name: group.name };
+        unitByParents.set(key, unit);
+        units.push(unit);
+      }
+      unitByParents.get(key).groups.push(group);
+    });
+    units.forEach((unit) => {
+      unit.width = unit.groups.reduce((sum, group) => sum + group.members.length * nodeWidth
+        + Math.max(0, group.members.length - 1) * horizontalGap, 0)
+        + Math.max(0, unit.groups.length - 1) * horizontalGap;
+    });
+    const totalWidth = units.reduce((sum, unit) => sum + unit.width, 0) + Math.max(0, units.length - 1) * horizontalGap;
+    let cursor = units.some(({ target }) => target !== null)
       ? padding
       : Math.max(padding, (width - totalWidth) / 2);
-    groups.forEach(({ members, target }) => {
-      const groupWidth = members.length * nodeWidth + (members.length - 1) * horizontalGap;
-      const desiredX = target === null ? cursor : target - groupWidth / 2;
-      const x = Math.max(cursor, desiredX);
-      members.forEach((person, index) => positions.set(person._treeKey, {
-        x: x + index * (nodeWidth + horizontalGap),
-        y: padding + depth * (nodeHeight + verticalGap),
-      }));
-      cursor = x + groupWidth + horizontalGap;
+    units.forEach(({ groups: unitGroups, target, width: unitWidth }) => {
+      const unitX = Math.max(cursor, target === null ? cursor : target - unitWidth / 2);
+      let groupX = unitX;
+      unitGroups.forEach(({ members }) => {
+        members.forEach((person, index) => positions.set(person._treeKey, {
+          x: groupX + index * (nodeWidth + horizontalGap),
+          y: padding + depth * (nodeHeight + verticalGap),
+        }));
+        groupX += members.length * nodeWidth + Math.max(0, members.length - 1) * horizontalGap + horizontalGap;
+      });
+      cursor = unitX + unitWidth + horizontalGap;
     });
   });
 
