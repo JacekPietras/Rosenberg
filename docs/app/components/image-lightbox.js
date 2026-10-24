@@ -11,6 +11,8 @@ export function setupImageLightbox({ state, repository, rerender, personMarkup }
   const stage = $('#image-lightbox-stage');
   const annotations = $('#image-lightbox-annotations');
   const description = $('#image-lightbox-description');
+  const descriptionText = $('#image-lightbox-description-text');
+  const descriptionClose = $('#image-lightbox-description-close');
   const regionOverlay = $('#image-lightbox-region-overlay');
   const regionBox = regionOverlay?.querySelector('.image-lightbox-region-box');
   const preview = $('#image-lightbox-seal-preview');
@@ -71,6 +73,10 @@ export function setupImageLightbox({ state, repository, rerender, personMarkup }
     return imageHeight && previewHeight ? Math.max(0.03, Math.min(0.5, previewHeight / imageHeight)) : MAGNIFIER_SIZE;
   };
   const setStatus = (message, error = false) => { if (saveStatus) { saveStatus.textContent = message; saveStatus.classList.toggle('error', error); } };
+  const updateDescriptionLayout = () => {
+    if (!description || !stage) return;
+    stage.style.height = description.hidden ? '' : `calc(100% - ${description.offsetHeight + 16}px)`;
+  };
   const point = (event) => { const rect = annotations.getBoundingClientRect(); return { x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)), y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)) }; };
   const updateGeometry = () => {
     if (!image.naturalWidth || !image.naturalHeight) return;
@@ -180,7 +186,8 @@ export function setupImageLightbox({ state, repository, rerender, personMarkup }
     image.referrerPolicy = 'no-referrer';
     image.alt = link.querySelector('img')?.alt || (typeof item === 'object' ? item?.name : '') || '';
     const imageDescription = (typeof item === 'object' && item?.description) || link.dataset.imageDescription || '';
-    if (description) { description.textContent = imageDescription; description.hidden = !imageDescription; }
+    if (descriptionText) descriptionText.textContent = imageDescription;
+    if (description) { description.hidden = !imageDescription; requestAnimationFrame(updateDescriptionLayout); }
     if (typeof lightbox.showModal === 'function') {
       if (!lightbox.open) lightbox.showModal();
     } else {
@@ -240,7 +247,7 @@ export function setupImageLightbox({ state, repository, rerender, personMarkup }
   };
   collectionPrevious?.addEventListener('click', () => moveCollectionCover(-1));
   collectionNext?.addEventListener('click', () => moveCollectionCover(1));
-  window.addEventListener('resize', () => { updateGeometry(); updatePreview(); }, { passive: true });
+  window.addEventListener('resize', () => { updateDescriptionLayout(); updateGeometry(); updatePreview(); }, { passive: true });
   regionButton?.addEventListener('click', () => { regionMode = !regionMode; ignoreFocusClick = false; selectedIndex = null; updateFocusOverlay(); });
   removeRegionButton?.addEventListener('click', async () => {
     const regions = currentRegions();
@@ -333,7 +340,8 @@ export function setupImageLightbox({ state, repository, rerender, personMarkup }
     else entry.img = { src: entry.img, deleted: 'true' };
     if (await save()) { lightbox.close(); await rerender?.(); }
   });
+  descriptionClose?.addEventListener('click', () => { if (description) { description.hidden = true; updateDescriptionLayout(); } });
   lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
   lightbox.addEventListener('cancel', (event) => { event.preventDefault(); close(); });
-  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (description) { description.textContent = ''; description.hidden = true; } if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
+  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (descriptionText) descriptionText.textContent = ''; if (description) description.hidden = true; stage.style.height = ''; if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
 }
