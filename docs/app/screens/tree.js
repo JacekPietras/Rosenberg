@@ -84,7 +84,7 @@ export function renderPeopleTree(people = [], documents = []) {
 
   const maxDepth = Math.max(...layers.keys());
   const maxLayerSize = Math.max(...[...layers.values()].map((layer) => layer.length));
-  const width = Math.max(2 * padding + nodeWidth, 2 * padding + maxLayerSize * nodeWidth + (maxLayerSize - 1) * horizontalGap);
+  let width = Math.max(2 * padding + nodeWidth, 2 * padding + maxLayerSize * nodeWidth + (maxLayerSize - 1) * horizontalGap);
   const height = 2 * padding + (maxDepth + 1) * nodeHeight + maxDepth * verticalGap;
   const positions = new Map();
   layers.forEach((layer, depth) => {
@@ -144,6 +144,11 @@ export function renderPeopleTree(people = [], documents = []) {
       cursor = unitX + unitWidth + horizontalGap;
     });
   });
+  // Layout units may extend past the width estimate when sibling groups share
+  // parents. Derive the SVG bounds from the final positions so edge cards are
+  // never clipped by the viewBox.
+  const rightmostNode = Math.max(...[...positions.values()].map(({ x }) => x + nodeWidth));
+  width = Math.max(width, rightmostNode + padding);
 
   const documentRecords = documents instanceof Map ? [...documents.values()] : Array.isArray(documents) ? documents : [];
   const mentionedYears = new Map(records.map((person) => {
