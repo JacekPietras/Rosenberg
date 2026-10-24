@@ -3,7 +3,7 @@ Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele
 Engelhard, Engelhart, Engelhardus
 Konrad, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat, Cunrad, Cunreth
 Kunz, Cunz, Kunz, Konz, Conz, Concz, Contz, Cuntz, Cuncze, Guntz // are shortened versions of Konrad, but not used as it\! [1401 March 5]
-Irmtraut, Irmendrut
+Irmtraut, Irmendrut, Jrmtrudis
 Eckhard, Ege, Ekkehart, Eckhart, Ekhart, Ekkehard, Eckehardus, Ekkard
 Mönch, Münch, Munch // it derives from "Monk"
 Arnold, Arnolt
@@ -28,3 +28,5 @@ Neipperg, Niperg, Nyperg
 Dienheim, Dinem
 Götz, Goetz
 Hirschhorn, Hyrzhorne
+Thüngen, Tungen
+Kunigunde, Kunnegunt, Kunnigund
