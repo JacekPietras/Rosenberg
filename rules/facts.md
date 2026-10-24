@@ -35,6 +35,12 @@ forms include `Ritter`, `Edelknecht`, `Vogt`, `Hofmeister`, `Burggraf`,
 `Domherr`, `Vizedom`, `Vitztum`, `Komtur`, `miles`, and `armiger`. Include the
 territorial or institutional scope, such as `erzbischöflicher Vogt zu Walldürn`
 or `Vogt zu Dürn`.
+In English translations and facts, preserve these source-language forms instead
+of translating personal titles as “knight,” “nobleman,” or “squire.” Keep the
+full normalized family name before the title, as in `Arnold von Uissigheim,
+Ritter`; do not split or translate a family name such as `von Uissigheim` as
+“of Uissigheim.” Keep place descriptions distinct, such as `pastor of
+Uissigheim`.
 
 For property and transactions, state the people, property, place, and parties
 involved. Relevant forms include:
