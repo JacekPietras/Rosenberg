@@ -11,8 +11,8 @@
       "english": "Eberhard von Rosenberg, Vogt zu Dürn, Hans, Domherr zu Würzburg, Eberhard and Engelhard, the former's sons, sold various rents and dues from their properties in Uissigheim, Dienstadt, Brehmen, Sindolsheim, and the Eulschirbenmühle to Bronnbach Monastery for 184 pounds of Heller.\n\nSeal Holders: Eberhard, Vogt zu Dürn, Issuer; Eberhard and Engelhard von Rosenberg; Erkinger von Uissigheim, Ritter; Friedrich; Eberhard called von Rannenberg in Uissigheim; Eberhard von Rosenberg; Ludwig called Mönch. Seal Description: Seal on parchment strips, those of Friedrich and Ludwig called Mönch are missing. Notes: On the reverse: \"I buy goods for Eberhard, the lawyer in Durn. (!)\". Next to it: \"Üssigheim, Aulschirben Mühl, Dienstatt, Brehmen, Sindolzheim. Purchase deed for various rents and gradients in the above-mentioned places sold by the first von Rosenberg to the Cl",
       "facts": [
         "[vogt_zu_Durn] is Vogt zu Dürn",
-        "Eberhard von Rosenberg is son of [vogt_zu_Durn] (Vogt zu Dürn)",
-        "Engelhard von Rosenberg is son of [vogt_zu_Durn] (Vogt zu Dürn)",
+        "[eberhard_son_of_vogt_zu_Durn] is son of [vogt_zu_Durn]",
+        "[engelhard_son_of_vogt_zu_Durn] is son of [vogt_zu_Durn]",
         "Rents and dues from properties in Uissigheim, Dienstad, Brehmen, Sindolsheim, and at the Eulschirbenmühle were sold to Bronnbach Abbey"
       ],
       "img": [
