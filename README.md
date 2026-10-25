@@ -29,16 +29,16 @@ Read [`rules/facts.md`](rules/facts.md) before adding, changing, reviewing, or
 removing facts. It covers extraction, relevance, normalization, and source
 verification.
 
-## Research links
-
-Archive catalogs and related research portals are collected in [`data/notes/archives.md`](data/notes/archives.md).
-
 ## Browser viewer
 
 The viewer is published at <https://jacekpietras.github.io/Rosenberg/> (read-only). 
 For local testing and modifications under <http://localhost:8000/docs/>, run `./server`
 
-## Landesarchiv images
+## Archives
+
+Archive catalogs and related research portals are collected in [`data/notes/archives.md`](data/notes/archives.md).
+
+### Landesarchiv images
 
 Download missing cached letter images with:
 
@@ -57,7 +57,7 @@ Use `--mode download` to cache the files locally, or `--image-dir SUBDIRECTORY`
 to choose a subdirectory under `data/letters/`. Retain the archive source
 signature and follow its usage terms.
 
-## Bavarikon images
+### Bavarikon images
 
 Parse image URLs from a Bavarikon object page with:
 
@@ -88,3 +88,24 @@ python3 scripts/search_facts_by_name.py Rosenberg
 python3 scripts/search_facts_by_name.py 'Eberhard von Rosenberg'
 python3 scripts/search_facts_by_name.py Boxberg
 ```
+
+## Variations
+
+### Names
+
+Straightforward personal-name spelling variations are listed in
+[`data/names.md`](data/names.md).
+
+### Places
+
+Place-name variations are recorded in [`data/places.json`](data/places.json).
+They help with place searches and with recognizing surnames formed as “von
+<place name>”. The JSON file is long and has a more complex structure, so use
+the script to list canonical place names and their recognized variations:
+
+```text
+python3 scripts/list_place_variations.py
+python3 scripts/list_place_variations.py 'Boxberg'
+```
+
+Pass a place name or spelling variation to show only matching entries. Churches are excluded by default. Include them with `--include-churches`.
