@@ -1281,6 +1281,7 @@ const entityScreens = createEntityScreens({
   documentTitle,
   documentNavigationUrl,
   displayedLanguagesFor: languageRenderer.displayedLanguagesFor,
+  imageMarkup: imageRenderer,
 });
 
 const mapScreen = createMapScreen({
