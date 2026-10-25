@@ -53,6 +53,35 @@ function placeMatchesYears(place, years, from, to) {
   return place._factYears.some(([start, end]) => start <= to && end >= from);
 }
 
+function placesMentionedForPerson(documents, places, people, personQuery, particles = []) {
+  const found = new Set();
+  const selectedPerson = people.find((person) => person.id === personQuery);
+  const personByName = people.find((person) => person.name.toLocaleLowerCase() === String(personQuery).toLocaleLowerCase());
+  if (!selectedPerson && !personByName) return found;
+  const queryTokens = (String(personQuery).match(/[\p{L}\p{N}]+/gu) || []).map(normalize)
+    .filter((token) => token && !particles.includes(token));
+  const visit = (value, inheritedMetadata = '') => {
+    if (Array.isArray(value)) { value.forEach((child) => visit(child, inheritedMetadata)); return; }
+    if (!value || typeof value !== 'object') return;
+    const metadata = `${inheritedMetadata} ${['place', 'title', 'name', 'label'].map((key) => value[key] || '').join(' ')}`;
+    for (const fact of Array.isArray(value.facts) ? value.facts : []) {
+      const text = typeof fact === 'string' ? fact : fact?.text || '';
+      const identifiers = text.match(/\[([^\]]+)\]/g) || [];
+      const directIdMatch = selectedPerson && identifiers.some((identifier) => normalize(identifier.slice(1, -1)) === normalize(selectedPerson.id));
+      const available = new Set(`${text} ${metadata}`.match(/[\p{L}\p{N}]+/gu)?.map(normalize) || []);
+      const nameMatch = queryTokens.length > 0 && queryTokens.every((token) => available.has(token));
+      if (selectedPerson ? !directIdMatch : !nameMatch) continue;
+      for (const place of places) {
+        const variants = (place.variations || [place.name]).map((name) => (String(name).match(/[\p{L}\p{N}]+/gu) || []).map(normalize)).filter((tokens) => tokens.length);
+        if (variants.some((variant) => variant.every((token) => available.has(token)))) found.add(place.name);
+      }
+    }
+    for (const [key, child] of Object.entries(value)) if (key !== 'facts' && child && typeof child === 'object') visit(child, metadata);
+  };
+  documents.forEach((document) => visit(document));
+  return found;
+}
+
 export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibrationCities }) {
   let mapMode = '1378';
   let selectedFrom = null;
@@ -105,14 +134,14 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
     return marker;
   }
 
-  function renderLayer(container, places, calibrationCities, previousView) {
+  function renderLayer(container, places, calibrationCities, previousView, fitPlaceMarkers = false) {
     getMap()?.remove();
     setMap(null);
     const carriedCorners = previousView ? viewCornersToLatLon(previousView.mode, previousView.bounds, calibrationCities) : null;
     const map = mapById.get(mapMode);
     if (map) {
       const bounds = [[0, 0], [map.height, map.width]];
-      const leafletMap = L.map(container, { crs: L.CRS.Simple, scrollWheelZoom: true, minZoom: -10, maxZoom: 10, zoomSnap: 1 });
+      const leafletMap = L.map(container, { crs: L.CRS.Simple, scrollWheelZoom: true, minZoom: -10, maxZoom: fitPlaceMarkers ? 14 : 10, zoomSnap: fitPlaceMarkers ? 0.25 : 1 });
       setMap(leafletMap);
       L.imageOverlay(map.image, bounds).addTo(leafletMap);
       leafletMap.setMaxBounds(L.latLngBounds(bounds).pad(0.5));
@@ -135,7 +164,12 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
           });
         });
       }
-      leafletMap.fitBounds(carriedCorners ? latLonCornersToView(carriedCorners, mapMode, calibrationCities) : bounds);
+      const markerBounds = fitPlaceMarkers ? L.latLngBounds(places.map((place) => {
+        const point = warp.pixelForLatLon(place.lat, place.lon);
+        return [map.height - point.y, point.x];
+      })) : null;
+      leafletMap.fitBounds(carriedCorners ? latLonCornersToView(carriedCorners, mapMode, calibrationCities) : markerBounds?.isValid() ? markerBounds.pad(0.04) : bounds, { padding: [14, 14] });
+      if (fitPlaceMarkers && !carriedCorners) leafletMap.setZoom(Math.min(leafletMap.getZoom() + 1, 14));
       return;
     }
     const leafletMap = L.map(container, { scrollWheelZoom: true });
@@ -143,7 +177,10 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors', maxZoom: 18 }).addTo(leafletMap);
     const markers = places.map((place) => linkPlaceOnClick(L.marker([place.lat, place.lon], markerOptions(place)).addTo(leafletMap), place));
     if (carriedCorners) leafletMap.fitBounds(latLonCornersToView(carriedCorners, 'live', calibrationCities));
-    else if (markers.length) leafletMap.fitBounds(L.featureGroup(markers).getBounds(), { padding: [40, 40] });
+    else if (markers.length) {
+      leafletMap.fitBounds(L.featureGroup(markers).getBounds(), { padding: fitPlaceMarkers ? [14, 14] : [40, 40] });
+      if (fitPlaceMarkers) leafletMap.setZoom(Math.min(leafletMap.getZoom() + 1, 18));
+    }
     else leafletMap.setView([49, 9], 6);
   }
 
@@ -206,5 +243,34 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
     renderLayer(container, places, calibrationCities);
   }
 
-  return { renderMapPage, setupMap };
+  function setupPersonMap(personId) {
+    const section = document.querySelector('.person-places-map');
+    const container = document.querySelector('#person-place-map');
+    if (!section || !container) return;
+    const names = placesMentionedForPerson([...state.documents.values()], state.places, state.people, personId, (state.nobiliaryParticles || []).map(normalize));
+    const matchedPlaces = state.places.filter((place) => names.has(place.name));
+    if (!matchedPlaces.length) { section.remove(); return; }
+    const places = matchedPlaces.filter((place) => Number.isFinite(place.lat) && Number.isFinite(place.lon));
+    if (!places.length) { section.remove(); return; }
+    const switcher = document.createElement('div');
+    switcher.className = 'person-map-mode-switch';
+    switcher.setAttribute('role', 'group');
+    switcher.setAttribute('aria-label', 'Map version');
+    switcher.innerHTML = [{ id: 'live', label: 'Current' }, ...HRR_MAPS.map((item) => ({ id: item.id, label: item.label }))]
+      .map(({ id, label }) => `<button type="button" class="map-mode-button" data-person-map-mode="${id}" aria-pressed="${mapMode === id}">${escapeHtml(label)}</button>`).join('');
+    container.parentElement.append(switcher);
+    const calibrationCities = state.calibrationCities.filter((city) => Number.isFinite(city.lat) && Number.isFinite(city.lon));
+    renderLayer(container, places, calibrationCities, null, true);
+    switcher.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-person-map-mode]');
+      if (!button || button.dataset.personMapMode === mapMode) return;
+      const oldMap = getMap();
+      const previousView = oldMap ? { mode: mapMode, bounds: oldMap.getBounds() } : null;
+      mapMode = button.dataset.personMapMode;
+      switcher.querySelectorAll('[data-person-map-mode]').forEach((other) => other.setAttribute('aria-pressed', String(other.dataset.personMapMode === mapMode)));
+      renderLayer(container, places, calibrationCities, previousView);
+    });
+  }
+
+  return { renderMapPage, setupMap, setupPersonMap };
 }

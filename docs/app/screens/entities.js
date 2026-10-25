@@ -148,7 +148,8 @@ export function createEntityScreens({
       const title = entry.title || documentTitle(doc, path);
       return `<article class="model-card armorial-card"><div class="model-info"><h2 class="model-title">${markdownLinks(title)}${date ? ` [${escapeHtml(date)}]` : ''}</h2></div><div class="image-record-visual">${imageMarkup(node, [seal], { path, index, imageIndex, title, sealScreen: true })}</div></article>`;
     }).join('')}</div></section>` : '';
-    return renderPage(person, mentionsFor(person, 'person'), 'person', pattern, () => '', `${imagesMarkup}${sealsMarkup}`);
+    const personPlacesMarkup = person ? '<section class="person-places-map"><div class="person-map-wrap"><div id="person-place-map" class="map-container person-place-map" role="application" aria-label="Places mentioned in this person’s facts"></div></div></section>' : '';
+    return renderPage(person, mentionsFor(person, 'person'), 'person', pattern, () => '', `${personPlacesMarkup}${imagesMarkup}${sealsMarkup}`);
   }
 
   function renderPlacePage() {

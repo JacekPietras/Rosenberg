@@ -2,7 +2,7 @@ import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=90';
-import { renderActiveScreen } from './screens/router-view.js?v=2';
+import { renderActiveScreen } from './screens/router-view.js?v=3';
 import { createDocumentRenderer } from './screens/documents.js?v=6';
 import { setupRecordLabelSelector } from './screens/record-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
@@ -14,7 +14,7 @@ import { createEntityScreens } from './screens/entities.js?v=90';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';
-import { createMapScreen } from './screens/map.js?v=80';
+import { createMapScreen } from './screens/map.js?v=82';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=94';
 import { createMarkupRenderer } from './rendering/markup.js?v=81';
 import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=8';
@@ -1300,6 +1300,7 @@ async function renderActive() {
     leafletMap,
     destroyMap: () => { leafletMap?.remove(); leafletMap = null; },
     renderPersonPage: entityScreens.renderPersonPage,
+    setupPersonMap: mapScreen.setupPersonMap,
     renderPlacePage: entityScreens.renderPlacePage,
     renderSealsPage: sealScreen.renderSealsPage,
     recordSealEntries: sealScreen.recordSealEntries,

@@ -89,7 +89,7 @@ export function imageCardMarkup(entry, { media, focus, controls = '', label = ''
     } else if (entry.id) {
       media = `<div class="model-frame"><iframe title="${escapeHtml(title)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>`;
     } else if (entry.url) {
-      media = createImageRenderer()(entry.url, [], { title });
+      media = createImageRenderer()(entry.url, [], { title, focus: focus || entry.focus, regions: entry.regions, showRegions: false });
     } else {
       media = entry.preview ? `<img class="model-collection-preview" src="${escapeHtml(entry.preview)}" alt="${escapeHtml(title)}" referrerpolicy="no-referrer">` : '';
     }

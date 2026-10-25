@@ -5,6 +5,7 @@ export async function renderActiveScreen({
   leafletMap,
   destroyMap,
   renderPersonPage,
+  setupPersonMap,
   renderPlacePage,
   renderSealsPage,
   recordSealEntries,
@@ -37,6 +38,8 @@ export async function renderActiveScreen({
   if (leafletMap && state.active !== 'map') destroyMap();
   if (state.person) {
     content.innerHTML = renderPersonPage();
+    setupSealAnnotations();
+    setupPersonMap(state.person);
     setupMentionNavigation('person-mention', 'a.place-link, a.person-link');
     return;
   }
