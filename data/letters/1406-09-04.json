@@ -8,18 +8,18 @@
         "https://www.deutsche-digitale-bibliothek.de/item/Q2NCMXGL5Q32STKL2FDF25AQKQB7C6II"
       ],
       "german": "Erbbestandsbrief des Arnold von Rosenberg d.J. zu Boxberg und seiner Gemahlin Christina von Handschuhsheim für Cuntz Pfister und Cuntz Fuchs zu Eiersheim über Wiesen, Gülten und Zinsen ober Massenbach.\n\nSiegel: 1) Arnold von Rosenberg, 2) Eberhard von Rosenberg (Bruder), 3, Reinhard von Uessigheim (Vetter, fehlt), 4) Cunz von Rosenberg (Vetter)",
-      "english": "Deed of inheritance from Arnold von Rosenberg der Jüngere of Boxberg and his wife Christina von Handschuhsheim for Kunz Pfister and Kunz Fuchs of Eiersheim regarding meadows, rents, and interest above Massenbach.\n\nSeal: 1) Arnold von Rosenberg, 2) Eberhard von Rosenberg (brother), 3) Reinhard von Uessigheim (cousin, missing), 4) Kunz von Rosenberg (cousin)",
+      "english": "Deed of inheritance from Arnold von Rosenberg der Jüngere of Boxberg and his wife Christina von Handschuhsheim for Kunz Pfister and Kunz Fuchs of Eiersheim regarding meadows, rents, and interest above Massenbach.\n\nSeal: 1) Arnold von Rosenberg, 2) Eberhard von Rosenberg (brother), 3) Reinhard von Uessigheim (kinsman, missing), 4) Kunz von Rosenberg (kinsman)",
       "facts": [
         "[arnold_boxberg] der Jüngere resided at Boxberg",
         "[arnold_boxberg] der Jüngere is spouse of Christina von Handschuhsheim",
         "[arnold_boxberg] der Jüngere and Christina von Handschuhsheim issued an Erbbestandsbrief for Kunz Pfister and Kunz Fuchs zu Eiersheim über Wiesen, Gülten und Zinsen über Massenbach",
         "[eberhard_jagstberg] is brother of [arnold_boxberg] der Jüngere.",
-        "Reinhard von Uissigheim is cousin of [arnold_boxberg] der Jüngere.",
-        "Kunz von Rosenberg is cousin of [arnold_boxberg] der Jüngere.",
+        "[reinhard_von_uissigheim_kinsman_of_arnold_boxberg] is kinsman of [arnold_boxberg] der Jüngere.",
+        "[kunz_von_rosenberg_kinsman_of_arnold_boxberg] is kinsman of [arnold_boxberg] der Jüngere.",
         "[arnold_boxberg] der Jüngere sealed the charter",
         "[eberhard_jagstberg] sealed the charter",
-        "Reinhard von Uissigheim was listed as Siegel but his seal is missing",
-        "Kunz von Rosenberg sealed the charter"
+        "[reinhard_von_uissigheim_kinsman_of_arnold_boxberg] was listed as Siegel but his seal is missing",
+        "[kunz_von_rosenberg_kinsman_of_arnold_boxberg] sealed the charter"
       ],
       "img": [
         {
