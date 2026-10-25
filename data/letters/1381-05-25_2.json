@@ -11,10 +11,10 @@
       "english": "The Counts Palatine Ruprecht der Ältere and Ruprecht der Jüngere grant the brothers Eberhard and Arnold von Rosenberg their half of Boxberg Castle, which they had granted to them as a fief and opened to them, as a rightful male fief.\n\nRuprecht der Ältere and Ruprecht der Jüngere, Counts Palatine of the Rhine, acknowledge that Eberhard von Rosenberg, a Ritter, and his brother Arnold von Rosenberg have surrendered their entitled half of Boxberg castle and town to them (the Counts Palatine) and have immediately received it back from them as a proper male fief¹, and they promise for themselves and for Count Palatine Ruprecht the Youngest, to protect and defend them in this possession against everyone. Given as in Reg. 105. Original on parchment with 2 damaged seals.",
       "facts": [
         "[vogt_zu_Lauda] is titled Ritter",
-        "[vogt_zu_Lauda] is brother of Arnold von Rosenberg",
+        "[vogt_zu_Lauda] is brother of [arnold_brother_of_vogt_zu_Lauda]",
         "[vogt_zu_Lauda] received half of Schloss and Stadt Boxberg as Mannlehen from the Pfalzgrafen",
-        "Arnold von Rosenberg received half of Schloss and Stadt Boxberg as Mannlehen from the Pfalzgrafen",
-        "[vogt_zu_Lauda] and Arnold von Rosenberg transferred their half of Boxberg to the Pfalzgrafen and received it back as fief",
+        "[arnold_brother_of_vogt_zu_Lauda] received half of Schloss and Stadt Boxberg as Mannlehen from the Pfalzgrafen",
+        "[vogt_zu_Lauda] and [arnold_brother_of_vogt_zu_Lauda] transferred their half of Boxberg to the Pfalzgrafen and received it back as fief",
         "Ruprecht der ältere (Pfalzgraf bei Rhein) granted Mannlehen to the Rosenberg brothers",
         "Ruprecht der jüngere (Pfalzgraf bei Rhein) granted Mannlehen to the Rosenberg brothers",
         "The Pfalzgrafen promised to protect the Rosenberg brothers in their possession of Boxberg"

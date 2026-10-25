@@ -11,9 +11,9 @@
       "german": "Die Brüder Eberhard, Ritter, und Arnold, genannt von Rosenberg, und des ersteren Ehefrau, Elsbeth, vertauschen mit dem Kloster Bronnbach (Brunbach) genannte Güter und Einkünfte zu Eiersheim (Yershen) gegen der von Tungen Gut zu Uissigheim (Ussenkein).",
       "english": "The brothers Eberhard, Ritter, and Arnold, called von Rosenberg, and Eberhard’s wife Elisabeth exchange specified properties and revenues in Eiersheim with Bronnbach Abbey for the von Thüngen estate at Uissigheim.",
       "facts": [
-        "[vogt_zu_Lauda] and Arnold von Rosenberg were brothers.",
-        "Elisabeth was the wife of [vogt_zu_Lauda].",
-        "[vogt_zu_Lauda], Ritter, and his brother Arnold von Rosenberg exchanged properties and revenues in Eiersheim with Bronnbach Abbey for the von Thüngen estate at Uissigheim."
+        "[vogt_zu_Lauda] and [arnold_brother_of_vogt_zu_Lauda] were brothers.",
+        "Elisabeth von Erligheim was the wife of [vogt_zu_Lauda].",
+        "[vogt_zu_Lauda], Ritter, and his brother [arnold_brother_of_vogt_zu_Lauda] exchanged properties and revenues in Eiersheim with Bronnbach Abbey for the von Thüngen estate at Uissigheim."
       ],
       "img": [
         {
