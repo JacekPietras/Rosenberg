@@ -9,9 +9,14 @@
       "facts": [
         "Engelhard von Rosenberg conducted financial transactions regarding serfs at Hardheim",
         "Anne Ruchs is spouse of Engelhard von Rosenberg",
-        "Eberhard von Rosenberg is son of Engelhard von Rosenberg and Anne Ruchs",
+        "Eberhard von Rosenberg is son of Engelhard von Rosenberg",
         "Engelhard von Rosenberg held serfs at Hardheim",
-        "Engelhard von Rosenberg, Anne Ruchs, and their son Eberhard von Rosenberg participated in property transactions with Eberhard von Hardheim"
+        "Eberhard von Rosenberg is son of Anne Ruchs",
+        "Anne Ruchs held serfs at Hardheim",
+        "Eberhard von Rosenberg held serfs at Hardheim",
+        "Engelhard von Rosenberg sold serfs at Hardheim to Eberhard von Hardheim",
+        "Anne Ruchs sold serfs at Hardheim to Eberhard von Hardheim",
+        "Eberhard von Rosenberg sold serfs at Hardheim to Eberhard von Hardheim"
       ],
       "img": [
         {
