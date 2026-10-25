@@ -1253,6 +1253,7 @@ const sealScreen = createSealScreen({
   state,
   formatDate,
   escapeHtml,
+  titleMarkup: markupRenderer.inlineMarkup,
   urlMarkup,
   markdownLinks: markupRenderer.markdownLinks,
   imageMarkup: imageRenderer,
