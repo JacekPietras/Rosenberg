@@ -137,11 +137,13 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
   function renderLayer(container, places, calibrationCities, previousView, fitPlaceMarkers = false) {
     getMap()?.remove();
     setMap(null);
-    const carriedCorners = previousView ? viewCornersToLatLon(previousView.mode, previousView.bounds, calibrationCities) : null;
+    const sameModeView = previousView?.mode === mapMode && previousView.center && Number.isFinite(previousView.zoom);
+    const carriedCorners = previousView && !sameModeView ? viewCornersToLatLon(previousView.mode, previousView.bounds, calibrationCities) : null;
     const map = mapById.get(mapMode);
     if (map) {
       const bounds = [[0, 0], [map.height, map.width]];
-      const leafletMap = L.map(container, { crs: L.CRS.Simple, scrollWheelZoom: true, minZoom: -10, maxZoom: fitPlaceMarkers ? 12 : 10, zoomSnap: fitPlaceMarkers ? 0.1 : 1 });
+      const preciseView = fitPlaceMarkers || sameModeView;
+      const leafletMap = L.map(container, { crs: L.CRS.Simple, scrollWheelZoom: true, minZoom: -10, maxZoom: preciseView ? 12 : 10, zoomSnap: preciseView ? 0.1 : 1 });
       setMap(leafletMap);
       L.imageOverlay(map.image, bounds).addTo(leafletMap);
       leafletMap.setMaxBounds(L.latLngBounds(bounds).pad(0.5));
@@ -168,14 +170,16 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
         const point = warp.pixelForLatLon(place.lat, place.lon);
         return [map.height - point.y, point.x];
       })) : null;
-      leafletMap.fitBounds(carriedCorners ? latLonCornersToView(carriedCorners, mapMode, calibrationCities) : markerBounds?.isValid() ? markerBounds.pad(0.04) : bounds, { padding: [14, 14] });
+      if (sameModeView) leafletMap.setView([previousView.center.lat, previousView.center.lng], previousView.zoom);
+      else leafletMap.fitBounds(carriedCorners ? latLonCornersToView(carriedCorners, mapMode, calibrationCities) : markerBounds?.isValid() ? markerBounds.pad(0.04) : bounds, { padding: [14, 14] });
       return;
     }
     const leafletMap = L.map(container, { scrollWheelZoom: true });
     setMap(leafletMap);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors', maxZoom: 18 }).addTo(leafletMap);
     const markers = places.map((place) => linkPlaceOnClick(L.marker([place.lat, place.lon], markerOptions(place)).addTo(leafletMap), place));
-    if (carriedCorners) leafletMap.fitBounds(latLonCornersToView(carriedCorners, 'live', calibrationCities));
+    if (sameModeView) leafletMap.setView([previousView.center.lat, previousView.center.lng], previousView.zoom);
+    else if (carriedCorners) leafletMap.fitBounds(latLonCornersToView(carriedCorners, 'live', calibrationCities));
     else if (markers.length) {
       leafletMap.fitBounds(L.featureGroup(markers).getBounds(), { padding: fitPlaceMarkers ? [14, 14] : [40, 40] });
     }
@@ -185,7 +189,7 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
   function setupMap() {
     const container = document.querySelector('#map-container');
     const records = [...state.documents.values()];
-    const placesWithDates = state.places.map((place) => ({ ...place, _factYears: factsForPlace(records, place) }));
+    const placesWithDates = state.places.filter((place) => place.showOnMap !== false).map((place) => ({ ...place, _factYears: factsForPlace(records, place) }));
     const ranges = placesWithDates.flatMap((place) => place._factYears);
     yearBounds = ranges.length ? { min: Math.min(...ranges.map(([start]) => start)), max: Math.max(...ranges.map(([, end]) => end)) } : { min: 1200, max: 1700 };
     selectedFrom ??= yearBounds.min;
@@ -211,9 +215,9 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
       yearSlider.style.setProperty('--from', `${(selectedFrom - yearBounds.min) / span * 100}%`);
       yearSlider.style.setProperty('--to', `${(selectedTo - yearBounds.min) / span * 100}%`);
       const oldMap = getMap();
-      const previousView = oldMap ? { mode: mapMode, bounds: oldMap.getBounds() } : null;
+      const previousView = oldMap ? { mode: mapMode, bounds: oldMap.getBounds(), center: oldMap.getCenter(), zoom: oldMap.getZoom() } : null;
       places = placesWithDates.filter((place) => Number.isFinite(place.lat) && Number.isFinite(place.lon) && placeMatchesYears(place, yearBounds, selectedFrom, selectedTo));
-      if (container && typeof L !== 'undefined') renderLayer(container, places, calibrationCities, previousView);
+      if (container && typeof L !== 'undefined') renderLayer(container, places, calibrationCities, previousView, !previousView);
     };
     document.querySelector('#map-year-from')?.addEventListener('input', updatePlaces);
     document.querySelector('#map-year-to')?.addEventListener('input', updatePlaces);
@@ -238,7 +242,6 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
       if (container && typeof L !== 'undefined') renderLayer(container, places, calibrationCities, previousView);
     });
     if (!container || typeof L === 'undefined' || !places.length) return;
-    renderLayer(container, places, calibrationCities);
   }
 
   function setupPersonMap(personId) {
@@ -246,7 +249,7 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
     const container = document.querySelector('#person-place-map');
     if (!section || !container) return;
     const names = placesMentionedForPerson([...state.documents.values()], state.places, state.people, personId, (state.nobiliaryParticles || []).map(normalize));
-    const matchedPlaces = state.places.filter((place) => names.has(place.name));
+    const matchedPlaces = state.places.filter((place) => place.showOnMap !== false && names.has(place.name));
     if (!matchedPlaces.length) { section.remove(); return; }
     const places = matchedPlaces.filter((place) => Number.isFinite(place.lat) && Number.isFinite(place.lon));
     if (!places.length) { section.remove(); return; }

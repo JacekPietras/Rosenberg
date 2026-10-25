@@ -190,6 +190,8 @@ array starts with the canonical English name, followed by recognized historical
 spelling variants. `lat` and `lon` are decimal-degree WGS84 coordinates. An
 optional medieval place `category` may be `castle`, `church`, or `city`; omit it
 when uncertain.
+Optional `showOnMap: false` excludes a place from all map views. Places are
+shown by default.
 
 ```json
 [

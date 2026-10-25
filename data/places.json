@@ -1177,6 +1177,7 @@
   {
     "id": "braniewo",
     "category": "city",
+    "showOnMap": false,
     "variations": [
       "Braniewo",
       "Braunsberg",
