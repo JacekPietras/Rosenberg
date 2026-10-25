@@ -41,6 +41,40 @@ test('person name pages include ID-linked effigies while ID pages distinguish na
   assert.ok(!renderPersonPage().includes(effigy.coverImage));
 });
 
+test('ID pages exclude name-only images and seals but name pages retain them', () => {
+  const name = 'Eberhard von Rosenberg';
+  const people = [{ id: 'lauda', name }, { id: 'durn', name }];
+  const state = { person: 'lauda' };
+  const entries = [
+    { title: name, coverImage: 'generic-image' },
+    { title: `${name} [durn]`, coverImage: 'other-image' },
+    { title: '[lauda]', coverImage: 'direct-image' },
+    { title: name, personId: 'lauda', coverImage: 'person-id-image' },
+  ].map((entry) => ({ ...entry, type: 'link', url: 'https://example.com/collection' }));
+  const seals = [name, `${name} [durn]`, '[lauda]'].map((person, index) => ({
+    person, position: '0.5,0.5', size: 0.1, marker: `seal-${index}`,
+  }));
+  const { renderPersonPage } = createEntityScreens({
+    state, getPeople: () => people,
+    getDocuments: () => new Map([
+      ['data/images/images.json', { entries }],
+      ['data/documents/example.json', { entries: [{ img: { src: 'seal.jpg', seals } }] }],
+    ]),
+    buildPersonPattern, escapeHtml, inlineMarkup: escapeHtml, markdownLinks: escapeHtml,
+    dateSortValue: () => 0, formatDate: String,
+    documentTitle: () => 'Document', documentNavigationUrl: () => '#',
+    displayedLanguagesFor: () => [], imageMarkup: (node, [seal]) => seal.marker,
+  });
+  const strictHtml = renderPersonPage();
+  for (const marker of ['direct-image', 'person-id-image', 'seal-2']) assert.ok(strictHtml.includes(marker), marker);
+  for (const marker of ['generic-image', 'other-image', 'seal-0', 'seal-1']) assert.ok(!strictHtml.includes(marker), marker);
+  state.person = name;
+  const nameHtml = renderPersonPage();
+  for (const marker of ['generic-image', 'other-image', 'direct-image', 'person-id-image', 'seal-0', 'seal-1', 'seal-2']) {
+    assert.ok(nameHtml.includes(marker), marker);
+  }
+});
+
 test('shared facts view formats dates, groups repeated dates, and preserves person links', () => {
   const html = renderFactsView([
     { date: '1383', text: 'Wife of [eberhard].' },

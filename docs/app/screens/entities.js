@@ -126,7 +126,7 @@ export function createEntityScreens({
     const matchesPerson = (value, personId) => {
       const text = String(value || '');
       return selectedIds.some((id) => personId === id || text.includes(`[${id}]`))
-        || text.toLocaleLowerCase().includes(person.name.toLocaleLowerCase());
+        || (!selectedId && text.toLocaleLowerCase().includes(person.name.toLocaleLowerCase()));
     };
     const imageEntries = getDocuments().get('data/images/images.json')?.entries || [];
     const relatedImages = imageEntries.filter((entry) => matchesPerson(
