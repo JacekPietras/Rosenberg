@@ -45,34 +45,34 @@ export function createEntityScreens({
   function renderFacts(mentions, factMatches = () => true) {
     const people = getPeople();
     const peopleById = new Map(people.filter((person) => person.id).map((person) => [person.id, person]));
-    const knownPersonIds = [...peopleById.keys()];
-    const selectedPerson = peopleById.get(state.person)
-      || getPeople().find((person) => person.name.toLocaleLowerCase() === String(state.person || '').toLocaleLowerCase());
-    const selectedNamePattern = selectedPerson
-      ? new RegExp(`(?<![\\p{L}\\p{N}])${selectedPerson.name.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&')}(?![\\p{L}\\p{N}])`, 'iu')
+    const selectedPersonId = peopleById.has(state.person) ? state.person : '';
+    const selectedName = selectedPersonId
+      ? peopleById.get(selectedPersonId).name
+      : String(state.person || '');
+    const selectedNamePattern = selectedName
+      ? new RegExp(`(?<![\\p{L}\\p{N}])${selectedName.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&')}(?![\\p{L}\\p{N}])`, 'iu')
       : null;
+    const selectedPersonIds = selectedPersonId
+      ? [selectedPersonId]
+      : people.filter((person) => person.id && person.name.toLocaleLowerCase() === selectedName.toLocaleLowerCase()).map((person) => person.id);
     const facts = mentions.flatMap(({ doc, entry }, mentionIndex) => (Array.isArray(entry.facts) ? entry.facts : [])
       .map((fact, factIndex) => ({ date: factDate(fact, doc, entry), text: factText(fact), mentionIndex, factIndex }))
       .filter((fact) => {
         const text = String(fact.text || '');
-        const referencedIds = knownPersonIds.filter((id) => text.includes(`[${id}]`));
-        const relatesToSelectedPerson = !selectedPerson
-          || (selectedPerson.id && text.includes(`[${selectedPerson.id}]`))
+        const relatesToSelectedPerson = !selectedName
+          || selectedPersonIds.some((id) => text.includes(`[${id}]`))
           || selectedNamePattern.test(text);
-        const isTaggedToAnotherPerson = selectedPerson?.id
-          && referencedIds.length > 0
-          && !referencedIds.includes(selectedPerson.id);
-        return text.trim() && factMatches(text) && relatesToSelectedPerson && !isTaggedToAnotherPerson;
+        return text.trim() && factMatches(text) && relatesToSelectedPerson;
       }))
       .sort((left, right) => dateSortValue(left.date) - dateSortValue(right.date) || left.mentionIndex - right.mentionIndex || left.factIndex - right.factIndex);
     if (!facts.length) return '';
     const items = renderFactsView(facts, {
-      people: getPeople(),
+      people,
       inlineMarkup,
       itemClass: (fact) => {
-        const hasSelectedPersonId = selectedPerson?.id && fact.text.includes(`[${selectedPerson.id}]`);
-        const mentionsSelectedName = selectedPerson && selectedNamePattern.test(fact.text);
-        const isGenericMatch = selectedPerson && !hasSelectedPersonId && mentionsSelectedName;
+        const isGenericMatch = selectedPersonId
+          && !fact.text.includes(`[${selectedPersonId}]`)
+          && selectedNamePattern.test(fact.text);
         return isGenericMatch ? ' class="entity-fact-ambiguous"' : '';
       },
     });
