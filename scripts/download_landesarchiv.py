@@ -22,8 +22,8 @@ from urllib.request import Request, build_opener
 USER_AGENT = "Rosenberg research downloader/1.0"
 REQUEST_TIMEOUT = 60
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
-LETTER_DIR = REPOSITORY_ROOT / "data" / "letters"
-IMAGE_DIR = REPOSITORY_ROOT / "data" / "letters"
+DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
+IMAGE_DIR = REPOSITORY_ROOT / "data" / "documents"
 PLINK_RE = re.compile(r"/plink/\?(?:[^#]*&)?f=([^&#]+)", re.I)
 ID_RE = re.compile(r"title=\"Id:\s*(\d+).*?AID:\s*([^\"\s]+)", re.I | re.S)
 HIDDEN_RE = re.compile(
@@ -168,9 +168,9 @@ def image_filename(image: object) -> str:
     return Path(unquote(original or parts.path)).name
 
 
-def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = True) -> list[Path]:
+def update_document_json(aid: str, image_paths: list[str], replace_images: bool = True) -> list[Path]:
     matches = []
-    for path in sorted(LETTER_DIR.glob("*.json")):
+    for path in sorted(DOCUMENT_DIR.glob("*.json")):
         document = json.loads(path.read_text(encoding="utf-8"))
         for entry in document.get("entries", []):
             urls = entry.get("url", [])
@@ -212,7 +212,7 @@ def update_letter_json(aid: str, image_paths: list[str], replace_images: bool = 
                         del image["seals"]
                 matches.append((path, document))
     if not matches:
-        raise ValueError(f"No letter JSON entry found for AID {aid}")
+        raise ValueError(f"No document JSON entry found for AID {aid}")
     paths = []
     for path, document in matches:
         path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -227,18 +227,18 @@ def main() -> int:
         "--mode",
         choices=("links", "download"),
         default="links",
-        help="store direct archive URLs (default) or download files into data/letters/",
+        help="store direct archive URLs (default) or download files into data/documents/",
     )
     parser.add_argument(
         "--image-dir",
         default="img-temp",
-        help="subdirectory of data/letters/ used with --mode download (default: img-temp)",
+        help="subdirectory of data/documents/ used with --mode download (default: img-temp)",
     )
     args = parser.parse_args()
 
     image_dir = (IMAGE_DIR / args.image_dir).resolve()
     if IMAGE_DIR not in image_dir.parents:
-        parser.error("--image-dir must stay inside data/letters/")
+        parser.error("--image-dir must stay inside data/documents/")
 
     opener = build_opener()
     try:
@@ -249,9 +249,9 @@ def main() -> int:
             # The cache is gitignored and is therefore unavailable on GitHub
             # Pages; the viewer can use these URLs as its public fallback.
             download_images(opener, image_paths, page_names, image_dir)
-        letter_paths = update_letter_json(fields["aid"], image_paths, replace_images=True)
-        for letter_path in letter_paths:
-            print(f"Updated letter JSON: {letter_path}")
+        document_paths = update_document_json(fields["aid"], image_paths, replace_images=True)
+        for document_path in document_paths:
+            print(f"Updated document JSON: {document_path}")
     except Exception as error:
         print(f"Error: {error}", file=sys.stderr)
         return 1

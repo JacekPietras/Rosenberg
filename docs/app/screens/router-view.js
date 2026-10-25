@@ -7,7 +7,7 @@ export async function renderActiveScreen({
   renderPersonPage,
   renderPlacePage,
   renderSealsPage,
-  letterSealEntries,
+  recordSealEntries,
   sealSortYear,
   sealMatchesSelected,
   sealMatchesType,
@@ -18,13 +18,13 @@ export async function renderActiveScreen({
   render3dPage,
   renderImagesPage,
   setupImageFilters,
-  visibleLetterPaths,
+  visibleRecordPaths,
   documentYear,
   renderYearSidebar,
   renderDocument,
   setupSealAnnotations,
   setupSealHighlight,
-  restoreLetter,
+  restoreRecord,
   setupYearHighlight,
   scrollToEntryHash,
   setupMentionNavigation,
@@ -49,7 +49,7 @@ export async function renderActiveScreen({
   state.sealHighlightCleanup = null;
   if (state.active === 'seals') {
     content.innerHTML = renderSealsPage();
-    const allEntries = letterSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
+    const allEntries = recordSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
     const selectedNames = new Set(state.sealNames);
     const entries = allEntries.filter((entry) => (!selectedNames.size || sealMatchesSelected(entry.title, selectedNames)) && sealMatchesType(entry, state.sealType));
     setupSealHighlight(entries);
@@ -72,26 +72,26 @@ export async function renderActiveScreen({
     setupSealAnnotations();
     return;
   }
-  const allLetterPaths = state.manifest.letters;
-  const paths = state.active === 'letters' ? visibleLetterPaths(allLetterPaths) : [state.active];
-  const selectedYear = documentYear(state.documents.get(state.letter));
-  const shouldRestoreLetter = state.active === 'letters'
+  const allRecordPaths = state.manifest.documents;
+  const paths = state.active === 'documents' ? visibleRecordPaths(allRecordPaths) : [state.active];
+  const selectedYear = documentYear(state.documents.get(state.record));
+  const shouldRestoreRecord = state.active === 'documents'
     && selectedYear
-    && (state.lastRenderedLettersYear === null || selectedYear !== state.lastRenderedLettersYear);
+    && (state.lastRenderedDocumentsYear === null || selectedYear !== state.lastRenderedDocumentsYear);
   state.yearHighlightCleanup?.();
   state.yearHighlightCleanup = null;
-  if (state.active === 'letters') {
-    content.innerHTML = `<div class="letters-layout">${renderYearSidebar(paths, state.letterSource ? paths : allLetterPaths)}<div class="letters-list">${paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('')}</div></div>`;
+  if (state.active === 'documents') {
+    content.innerHTML = `<div class="documents-layout">${renderYearSidebar(paths, state.recordSource ? paths : allRecordPaths)}<div class="documents-list">${paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('')}</div></div>`;
   } else {
     content.innerHTML = paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('');
   }
   setupSealAnnotations();
   const diagrams = content.querySelectorAll('.mermaid');
   if (diagrams.length && mermaid) await mermaid.run({ nodes: diagrams });
-  if (state.active === 'letters') {
-    if (shouldRestoreLetter) restoreLetter(paths);
+  if (state.active === 'documents') {
+    if (shouldRestoreRecord) restoreRecord(paths);
     setupYearHighlight(paths);
-    state.lastRenderedLettersYear = documentYear(state.documents.get(state.letter));
+    state.lastRenderedDocumentsYear = documentYear(state.documents.get(state.record));
   }
   scrollToEntryHash();
 }

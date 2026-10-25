@@ -138,7 +138,7 @@ fact unresolved and report the issue.
 After editing, verify that JSON parses, the document-level `date` and
 `entries` structure remain intact, each relevant entry retains `source`,
 `german`, `english`, and `facts`, and each `facts` array follows the applicable
-schema: letter facts are strings, while book facts are objects with `date` and
+schema: document facts are strings, while book facts are objects with `date` and
 `text`. Confirm every fact is supported, atomic, relevant, and not duplicated;
 also confirm source text, translation, citations, names, and date precision were
 not changed unintentionally.

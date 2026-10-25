@@ -3,7 +3,7 @@ export function createTabs({ state, escapeHtml, clearScreenCaches, savePreferenc
     const tabs = [
       { path: 'books', label: 'Books' },
       ...(state.manifest.notes ? [{ path: 'data/notes/notes.json', label: 'Notes' }] : []),
-      { path: 'letters', label: 'Letters' },
+      { path: 'documents', label: 'Documents' },
       { path: 'seals', label: 'Seals' },
       { path: 'map', label: 'Map' },
       { path: 'images', label: 'Images' },
@@ -21,19 +21,19 @@ export function createTabs({ state, escapeHtml, clearScreenCaches, savePreferenc
     document.querySelectorAll('.tab, .subtab').forEach((button) => button.addEventListener('click', () => {
       const requestedPath = button.dataset.path;
       const nextActive = requestedPath === 'books'
-        ? (state.manifest.books.some((book) => book.path === state.active) ? state.active : state.manifest.books[0]?.path || 'letters')
+        ? (state.manifest.books.some((book) => book.path === state.active) ? state.active : state.manifest.books[0]?.path || 'documents')
         : requestedPath === 'images'
           ? (imagesAreActive ? state.active : 'images/all')
           : requestedPath;
       if (nextActive !== state.active) clearScreenCaches();
-      if (nextActive !== 'letters') {
-        state.letterSource = null;
-        state.navigationLetterSource = null;
+      if (nextActive !== 'documents') {
+        state.recordSource = null;
+        state.navigationRecordSource = null;
       }
       const nextUrl = new URL(location.href);
       nextUrl.search = '';
       nextUrl.hash = '';
-      if (requestedPath === 'books' || ['letters', 'seals', 'map', 'tree'].includes(nextActive) || nextActive.startsWith('images/')) nextUrl.searchParams.set('tab', requestedPath === 'books' ? 'books' : nextActive);
+      if (requestedPath === 'books' || ['documents', 'seals', 'map', 'tree'].includes(nextActive) || nextActive.startsWith('images/')) nextUrl.searchParams.set('tab', requestedPath === 'books' ? 'books' : nextActive);
       else nextUrl.searchParams.set('document', nextActive);
       history.replaceState(null, '', `${nextUrl.pathname}${nextUrl.search}`);
       state.active = nextActive;

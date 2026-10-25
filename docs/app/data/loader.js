@@ -8,9 +8,9 @@ export function createDataLoader({
   buildPlacePattern,
   buildPersonPattern,
   bookSortYear,
-  letterHasMissingSourceOrUrl,
-  missingLetterLabel,
-  greyLetterLabels,
+  recordHasMissingSourceOrUrl,
+  missingRecordLabel,
+  greyRecordLabels,
   savePreferences,
   renderTabs,
   renderActive,
@@ -36,27 +36,27 @@ export function createDataLoader({
     const bookPaths = paths
       .filter((path) => path.startsWith('data/books/'))
       .sort((left, right) => bookSortYear(documents.get(right), right) - bookSortYear(documents.get(left), left) || left.localeCompare(right));
-    const letterPaths = paths.filter((path) => path.startsWith('data/letters/'));
+    const recordPaths = paths.filter((path) => path.startsWith('data/documents/'));
     state.manifest = {
       books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
       notes: paths.includes('data/notes/notes.json'),
-      letters: letterPaths,
+      documents: recordPaths,
       images: paths.find((path) => path === 'data/images/images.json') || null,
       collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => imageLabels(item).includes('effigy')),
     };
     state.documents = documents;
     state.snapshot = snapshot;
-    if (!letterPaths.some((path) => letterHasMissingSourceOrUrl(path))) state.letterLabels = state.letterLabels.filter((label) => label !== missingLetterLabel);
-    if (!Array.isArray(state.hiddenLetterLabels)) state.hiddenLetterLabels = [...greyLetterLabels];
+    if (!recordPaths.some((path) => recordHasMissingSourceOrUrl(path))) state.recordLabels = state.recordLabels.filter((label) => label !== missingRecordLabel);
+    if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = [...greyRecordLabels];
     state.sealNames = [...new Set(state.sealNames.map((label) => label.includes('?') ? 'unknown' : label.toLocaleLowerCase()).filter(Boolean))];
     state.imageRegions = [...new Set((state.imageRegions || []).map((name) => {
       const value = String(name).trim().toLocaleLowerCase();
       return value === 'unknown' ? '__no_region__' : value;
     }).filter(Boolean))];
-    if (state.active === 'books') state.active = state.manifest.books[0]?.path || 'letters';
+    if (state.active === 'books') state.active = state.manifest.books[0]?.path || 'documents';
     if (state.active === 'images' || state.active === 'armorials' || state.active === 'images/armorials' || state.active === 'images/effigies') state.active = 'images/all';
-    const reserved = ['letters', 'seals', 'tree', 'map', 'images/all'];
-    if (!reserved.includes(state.active) && !paths.includes(state.active)) state.active = state.manifest.books[0]?.path || 'letters';
+    const reserved = ['documents', 'seals', 'tree', 'map', 'images/all'];
+    if (!reserved.includes(state.active) && !paths.includes(state.active)) state.active = state.manifest.books[0]?.path || 'documents';
     savePreferences();
     renderTabs();
     await renderActive();

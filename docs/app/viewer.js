@@ -4,7 +4,7 @@ import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=90';
 import { renderActiveScreen } from './screens/router-view.js?v=2';
 import { createDocumentRenderer } from './screens/documents.js?v=6';
-import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
+import { setupRecordLabelSelector } from './screens/record-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js?v=2';
@@ -31,9 +31,9 @@ function savePreferences() {
     active: state.active,
     place: state.place,
     person: state.person,
-    letter: state.letter,
-    letterLabels: state.letterLabels,
-    hiddenLetterLabels: state.hiddenLetterLabels,
+    record: state.record,
+    recordLabels: state.recordLabels,
+    hiddenRecordLabels: state.hiddenRecordLabels,
     sealNames: state.sealNames,
     sealType: state.sealType,
     imageRegions: state.imageRegions,
@@ -42,11 +42,11 @@ function savePreferences() {
     darkMode: state.darkMode,
   });
 }
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, letter: preferences.letter, letterSource: null, navigationLetter: null, navigationLetterSource: null, letterLabels: preferences.letterLabels, hiddenLetterLabels: preferences.hiddenLetterLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, imageRegions: preferences.imageRegions || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedLettersYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, record: preferences.record, recordSource: null, navigationRecord: null, navigationRecordSource: null, recordLabels: preferences.recordLabels, hiddenRecordLabels: preferences.hiddenRecordLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, imageRegions: preferences.imageRegions || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedDocumentsYear: null };
 const route = store?.getState?.().route || { active: 'books' };
 store?.setState(state);
-const GREY_LETTER_LABELS = new Set(['hessen', 'schenk', 'mönch']);
-const MISSING_LETTER_LABEL = 'missing';
+const GREY_RECORD_LABELS = new Set(['hessen', 'schenk', 'mönch']);
+const MISSING_RECORD_LABEL = 'missing';
 let leafletMap = null;
 let mapMode = '1378';
 
@@ -55,32 +55,32 @@ function hasSource(source) {
   return typeof source === 'string' ? source.trim().length > 0 : source !== null && source !== undefined;
 }
 
-function letterHasMissingSourceOrUrl(path) {
+function recordHasMissingSourceOrUrl(path) {
   return (state.documents.get(path)?.entries || []).some((entry) => !hasSource(entry.source) || !hasSource(entry.url));
 }
 
 function clearScreenCaches() {
-  state.letter = state.navigationLetter;
-  state.letterSource = state.navigationLetterSource;
-  state.letterLabels = [];
-  state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
+  state.record = state.navigationRecord;
+  state.recordSource = state.navigationRecordSource;
+  state.recordLabels = [];
+  state.hiddenRecordLabels = [...GREY_RECORD_LABELS];
   state.sealNames = [];
   state.sealType = null;
-  state.lastRenderedLettersYear = null;
+  state.lastRenderedDocumentsYear = null;
 }
 
 const $ = (selector) => document.querySelector(selector);
 const REFRESH_INTERVAL = 30000;
 
-if (route.document || route.tab || route.letter) { state.place = null; state.person = null; }
+if (route.document || route.tab || route.record) { state.place = null; state.person = null; }
 if (route.active) state.active = route.active;
-if (route.letter) {
-  state.letter = route.letter;
-  state.navigationLetter = state.letter;
+if (route.record) {
+  state.record = route.record;
+  state.navigationRecord = state.record;
 }
 if (route.source) {
-  state.letterSource = route.source;
-  state.navigationLetterSource = state.letterSource;
+  state.recordSource = route.source;
+  state.navigationRecordSource = state.recordSource;
 }
 if (route.place) { state.place = route.place; state.person = null; }
 if (route.person) { state.person = route.person; state.place = null; }
@@ -379,7 +379,7 @@ function hrrBuildInverseWarp(places, mapDef) {
 // Editing (dragging calibration points, saving to docs/assets/calibration-cities.json) only
 // works against the local dev server (docs/serve.py) that /api/save-document writes through; the
 // published GitHub Pages viewer is read-only and has nowhere to persist a drag to. Real places
-// (data/places.json, the actual letter/genealogy content) are never draggable — only the
+// (data/places.json, the actual historical document and genealogy content) are never draggable — only the
 // dedicated calibration-city reference points are, and only when BOTH flags below are true.
 // MAP_CALIBRATION_EDITABLE also gates whether the reference points are shown at all: they're a
 // working aid for calibrating the map, not something a regular viewer needs to see, so leave it
@@ -985,9 +985,9 @@ function sealTypeForSeal(seal) {
   return null;
 }
 
-function letterSealEntries() {
+function recordSealEntries() {
   const sealEntries = [];
-  state.manifest.letters.forEach((path) => {
+  state.manifest.documents.forEach((path) => {
     const document = state.documents.get(path);
     (document?.entries || []).forEach((entry, entryIndex) => {
       const imageNodes = Array.isArray(entry.img) ? entry.img : [entry.img];
@@ -1067,15 +1067,15 @@ function sealMatchesSelected(title, selected) {
 }
 
 function sealSourceMarkup(source) {
-  const match = letterForSource(source);
+  const match = recordForSource(source);
   if (!match) return markdownLinks(source);
-  const params = new URLSearchParams({ tab: 'letters', letter: match.path, source: sourceCitations(source)[0] });
+  const params = new URLSearchParams({ tab: 'documents', record: match.path, source: sourceCitations(source)[0] });
   const hash = `#${entryAnchor(match.path, match.entryIndex)}`;
   return `<a href="?${params.toString()}${hash}">${markdownLinks(source)}</a>`;
 }
 
-function sealLetterUrlMarkup(source) {
-  const match = letterForSource(source);
+function sealRecordUrlMarkup(source) {
+  const match = recordForSource(source);
   if (!match) return '';
   const url = match.entry.url || state.documents.get(match.path)?.url;
   return url ? urlMarkup(url) : '';
@@ -1106,23 +1106,23 @@ function renderTabs() {
   tabs.render();
 }
 
-function letterLabelForPath(path) {
-  return letterLabelsForPath(path).map((label) => label.toLocaleLowerCase());
+function recordLabelForPath(path) {
+  return recordLabelsForPath(path).map((label) => label.toLocaleLowerCase());
 }
 
-function letterLabelsForPath(path) {
+function recordLabelsForPath(path) {
   const value = state.documents.get(path)?.label;
   return (Array.isArray(value) ? value : [value]).map((label) => String(label || '').trim()).filter(Boolean);
 }
 
-function visibleLetterPaths(paths) {
-  const selected = new Set(state.letterLabels);
-  const hidden = new Set(state.hiddenLetterLabels || []);
+function visibleRecordPaths(paths) {
+  const selected = new Set(state.recordLabels);
+  const hidden = new Set(state.hiddenRecordLabels || []);
   return paths.filter((path) => {
-    if (state.letterSource && !citationIndex.letterHasSource(path, state.letterSource)) return false;
-    if (path === state.navigationLetter) return true;
-    const labels = letterLabelForPath(path);
-    const missing = selected.has(MISSING_LETTER_LABEL) && letterHasMissingSourceOrUrl(path);
+    if (state.recordSource && !citationIndex.recordHasSource(path, state.recordSource)) return false;
+    if (path === state.navigationRecord) return true;
+    const labels = recordLabelForPath(path);
+    const missing = selected.has(MISSING_RECORD_LABEL) && recordHasMissingSourceOrUrl(path);
     if (labels.some((label) => hidden.has(label)) && !missing) return false;
     return !selected.size || labels.some((label) => selected.has(label)) || missing;
   });
@@ -1137,23 +1137,23 @@ function renderYearSidebar(paths, labelPaths = paths) {
   }).join('');
   const labels = new Map();
   labelPaths.forEach((path) => {
-    letterLabelsForPath(path).forEach((label) => {
+    recordLabelsForPath(path).forEach((label) => {
       if (!labels.has(label.toLocaleLowerCase())) labels.set(label.toLocaleLowerCase(), { label, path });
     });
   });
-  const missingPath = labelPaths.find((path) => letterHasMissingSourceOrUrl(path));
-  if (missingPath && !labels.has(MISSING_LETTER_LABEL)) labels.set(MISSING_LETTER_LABEL, { label: MISSING_LETTER_LABEL, path: missingPath });
+  const missingPath = labelPaths.find((path) => recordHasMissingSourceOrUrl(path));
+  if (missingPath && !labels.has(MISSING_RECORD_LABEL)) labels.set(MISSING_RECORD_LABEL, { label: MISSING_RECORD_LABEL, path: missingPath });
   const labelLinks = [...labels.values()]
     .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
     .map(({ label, path }) => {
       const key = label.toLocaleLowerCase();
-      const selected = GREY_LETTER_LABELS.has(key) ? state.hiddenLetterLabels.includes(key) : state.letterLabels.includes(key);
-      const displayLabel = GREY_LETTER_LABELS.has(key) ? `× ${label}` : label;
+      const selected = GREY_RECORD_LABELS.has(key) ? state.hiddenRecordLabels.includes(key) : state.recordLabels.includes(key);
+      const displayLabel = GREY_RECORD_LABELS.has(key) ? `× ${label}` : label;
       return `<a href="#" class="${selected ? 'selected' : ''}" data-sidebar-type="label" data-label="${escapeHtml(key)}" data-path="${escapeHtml(path)}">${escapeHtml(displayLabel)}</a>`;
     })
     .join('');
   if (!yearLinks && !labelLinks) return '';
-  return `${yearLinks ? `<aside class="year-sidebar" aria-label="Letters by year"><nav>${yearLinks}</nav></aside>` : ''}${labelLinks ? `<aside class="label-sidebar" aria-label="Letters by label"><nav>${labelLinks}</nav></aside>` : ''}`;
+  return `${yearLinks ? `<aside class="year-sidebar" aria-label="Documents by year"><nav>${yearLinks}</nav></aside>` : ''}${labelLinks ? `<aside class="label-sidebar" aria-label="Documents by label"><nav>${labelLinks}</nav></aside>` : ''}`;
 }
 
 function setupYearHighlight(paths) {
@@ -1170,7 +1170,7 @@ function setupYearHighlight(paths) {
     event.preventDefault();
     if (link.dataset.sidebarType === 'label') {
       const label = link.dataset.label;
-      const values = GREY_LETTER_LABELS.has(label) ? state.hiddenLetterLabels : state.letterLabels;
+      const values = GREY_RECORD_LABELS.has(label) ? state.hiddenRecordLabels : state.recordLabels;
       const index = values.indexOf(label);
       if (index >= 0) values.splice(index, 1);
       else values.push(label);
@@ -1180,7 +1180,7 @@ function setupYearHighlight(paths) {
     }
     const target = targets.find((item) => item.path === link.dataset.path);
     if (!target) return;
-    state.letter = target.path;
+    state.record = target.path;
     savePreferences();
     window.scrollTo(0, target.element.getBoundingClientRect().top + window.scrollY - 104);
   }));
@@ -1191,14 +1191,14 @@ function setupYearHighlight(paths) {
     targets.forEach((target) => {
       if (target.element.getBoundingClientRect().top + window.scrollY <= marker) current = target;
     });
-    state.letter = current.path;
+    state.record = current.path;
     savePreferences();
     const year = current.element.id.match(/^year-(\d{4})-/)?.[1];
-    const currentLabels = new Set(letterLabelForPath(current.path));
+    const currentLabels = new Set(recordLabelForPath(current.path));
     links.forEach((link) => {
       const active = link.dataset.sidebarType === 'year'
         ? link.textContent === year
-        : currentLabels.has(link.dataset.label) || (link.dataset.label === MISSING_LETTER_LABEL && letterHasMissingSourceOrUrl(current.path));
+        : currentLabels.has(link.dataset.label) || (link.dataset.label === MISSING_RECORD_LABEL && recordHasMissingSourceOrUrl(current.path));
       link.classList.toggle('active', active);
       if (active) link.setAttribute('aria-current', 'true');
       else link.removeAttribute('aria-current');
@@ -1214,10 +1214,10 @@ function setupYearHighlight(paths) {
   update();
 }
 
-function restoreLetter(paths) {
-  const index = paths.indexOf(state.letter);
+function restoreRecord(paths) {
+  const index = paths.indexOf(state.record);
   if (index < 0) return;
-  const target = document.querySelector(`#year-${documentYear(state.documents.get(state.letter))}-${index}`);
+  const target = document.querySelector(`#year-${documentYear(state.documents.get(state.record))}-${index}`);
   if (target) window.scrollTo(0, target.getBoundingClientRect().top + window.scrollY - 104);
 }
 
@@ -1257,7 +1257,7 @@ const sealScreen = createSealScreen({
   urlMarkup,
   markdownLinks: markupRenderer.markdownLinks,
   imageMarkup: imageRenderer,
-  letterForSource: citationIndex.letterForSource,
+  recordForSource: citationIndex.recordForSource,
   sourceCitations: citationIndex.sourceCitations,
   entryAnchor,
   getDocuments: () => state.documents,
@@ -1302,7 +1302,7 @@ async function renderActive() {
     renderPersonPage: entityScreens.renderPersonPage,
     renderPlacePage: entityScreens.renderPlacePage,
     renderSealsPage: sealScreen.renderSealsPage,
-    letterSealEntries: sealScreen.letterSealEntries,
+    recordSealEntries: sealScreen.recordSealEntries,
     sealSortYear: sealScreen.sealSortYear,
     sealMatchesSelected: sealScreen.sealMatchesSelected,
     sealMatchesType: sealScreen.sealMatchesType,
@@ -1313,13 +1313,13 @@ async function renderActive() {
     render3dPage: () => `<div class="models-grid">${sortByDate(state.manifest.collections || []).map((model) => imageCardMarkup(model)).join('')}</div>`,
     renderImagesPage: imageScreen.renderImagesPage,
     setupImageFilters: imageScreen.setupImageFilters,
-    visibleLetterPaths,
+    visibleRecordPaths,
     documentYear,
     renderYearSidebar,
     renderDocument: documentRenderer.renderDocument,
     setupSealAnnotations: () => setupImageSealAnnotations({ state }),
     setupSealHighlight: sealScreen.setupSealHighlight,
-    restoreLetter,
+    restoreRecord,
     setupYearHighlight,
     scrollToEntryHash,
     setupMentionNavigation,
@@ -1346,21 +1346,21 @@ async function loadAllLegacy() {
   const bookPaths = paths
     .filter((path) => path.startsWith('data/books/'))
     .sort((left, right) => bookSortYear(documents.get(right), right) - bookSortYear(documents.get(left), left) || left.localeCompare(right));
-  const letterPaths = paths.filter((path) => path.startsWith('data/letters/'));
+  const recordPaths = paths.filter((path) => path.startsWith('data/documents/'));
   const manifest = {
     books: bookPaths.map((path) => ({ path, label: documents.get(path)?.book || path })),
     notes: paths.includes('data/notes/notes.json'),
-    letters: letterPaths,
+    documents: recordPaths,
     images: paths.find((path) => path === 'data/images/images.json') || null,
     collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => imageLabels(item).includes('effigy')),
   };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
-  if (!letterPaths.some((path) => letterHasMissingSourceOrUrl(path))) state.letterLabels = state.letterLabels.filter((label) => label !== MISSING_LETTER_LABEL);
-  if (!Array.isArray(state.hiddenLetterLabels)) state.hiddenLetterLabels = [...GREY_LETTER_LABELS];
+  if (!recordPaths.some((path) => recordHasMissingSourceOrUrl(path))) state.recordLabels = state.recordLabels.filter((label) => label !== MISSING_RECORD_LABEL);
+  if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = [...GREY_RECORD_LABELS];
   state.sealNames = [...new Set(state.sealNames.map(normalizeSealFilter).filter(Boolean))];
-  if (state.active === 'books') state.active = manifest.books[0]?.path || 'letters';
+  if (state.active === 'books') state.active = manifest.books[0]?.path || 'documents';
   if (state.active === 'images' || state.active === 'armorials' || state.active === 'images/armorials' || state.active === 'images/effigies') state.active = 'images/all';
-  if (state.active !== 'letters' && state.active !== 'seals' && state.active !== 'tree' && state.active !== 'map' && state.active !== 'images/all' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'letters';
+  if (state.active !== 'documents' && state.active !== 'seals' && state.active !== 'tree' && state.active !== 'map' && state.active !== 'images/all' && !paths.includes(state.active)) state.active = manifest.books[0]?.path || 'documents';
   savePreferences();
   renderTabs(); await renderActive();
 }
@@ -1373,9 +1373,9 @@ const dataLoader = createDataLoader({
   buildPlacePattern,
   buildPersonPattern,
   bookSortYear,
-  letterHasMissingSourceOrUrl,
-  missingLetterLabel: MISSING_LETTER_LABEL,
-  greyLetterLabels: GREY_LETTER_LABELS,
+  recordHasMissingSourceOrUrl,
+  missingRecordLabel: MISSING_RECORD_LABEL,
+  greyRecordLabels: GREY_RECORD_LABELS,
   savePreferences,
   renderTabs,
   renderActive,
@@ -1400,7 +1400,7 @@ async function refreshIfChanged() {
 setupControls({ state, repository, updateLanguageControl, updateFactsControl, applyTheme, applyMermaidTheme, savePreferences, rerender: renderActive });
 
 setupImageLightboxComponent({ state, repository, rerender: renderActive });
-setupLetterLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
+setupRecordLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
 setupImageLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
 repository.isLocalServer().then((isLocal) => {
   state.canEditDocuments = isLocal;

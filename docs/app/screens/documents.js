@@ -37,17 +37,17 @@ export function createDocumentRenderer({
 
   function renderDocument(doc, path, index) {
     const allEntries = doc.entries || [];
-    const entries = state.active === 'letters' && state.letterSource
-      ? allEntries.filter((entry) => entryHasSource(entry, state.letterSource))
+    const entries = state.active === 'documents' && state.recordSource
+      ? allEntries.filter((entry) => entryHasSource(entry, state.recordSource))
       : allEntries;
     const title = documentTitle(doc, path);
     const date = doc.date && formatDate(doc.date) !== title ? `<small>${escapeHtml(formatDate(doc.date))}</small>` : '';
     const labels = (Array.isArray(doc.label) ? doc.label : [doc.label]).map((label) => String(label || '').trim()).filter(Boolean);
     const labelKeys = labels.map((label) => label.toLocaleLowerCase());
-    const labelEditor = state.canEditDocuments && path.startsWith('data/letters/')
-      ? `<button class="letter-label-edit" type="button" data-edit-letter-labels="${escapeHtml(path)}" aria-label="Edit letter labels" title="Edit labels"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg></button>`
+    const labelEditor = state.canEditDocuments && path.startsWith('data/documents/')
+      ? `<button class="record-label-edit" type="button" data-edit-record-labels="${escapeHtml(path)}" aria-label="Edit record labels" title="Edit labels"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg></button>`
       : '';
-    const headingAside = labels.length || date || labelEditor ? `<div class="document-heading-aside"><div class="letter-labels">${labels.map((label) => `<span class="letter-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}</div>${date}</div>` : '';
+    const headingAside = labels.length || date || labelEditor ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => `<span class="record-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}</div>${date}</div>` : '';
     const url = doc.url ? urlMarkup(doc.url) : '';
     const year = documentYear(doc);
     const anchor = year ? ` id="year-${year}-${index}"` : '';
@@ -58,7 +58,7 @@ export function createDocumentRenderer({
         return `<article class="document book-document"><div class="document-heading"><div><h2>${markdownLinks(sectionTitle)}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
       }).join('');
     }
-    const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/letters/') ? doc.date || '' : '' })).join('');
+    const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
     const important = labelKeys.includes('important') ? ' important' : '';
     const dimmed = labelKeys.some((label) => ['hessen', 'schenk', 'mönch'].includes(label)) ? ' dimmed' : '';
     return `<article class="document${important}${dimmed}"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;

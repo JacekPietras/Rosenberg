@@ -121,7 +121,7 @@ export function createEntityScreens({
     const imagesMarkup = relatedImages.length ? `<section class="entity-images"><h3 class="entity-section-title">Images</h3><div class="models-grid armorial-grid">${relatedImages.map((entry) => imageCardMarkup(entry)).join('')}</div></section>` : '';
     const sealEntries = [];
     getDocuments().forEach((doc, path) => {
-      if (!path.startsWith('data/letters/')) return;
+      if (!path.startsWith('data/documents/')) return;
       (doc?.entries || []).forEach((entry, index) => {
         const nodes = Array.isArray(entry.img) ? entry.img : [entry.img];
         nodes.forEach((node, imageIndex) => {

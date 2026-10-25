@@ -15,7 +15,7 @@ export function createSealScreen({
   urlMarkup,
   markdownLinks,
   imageMarkup,
-  letterForSource,
+  recordForSource,
   sourceCitations,
   entryAnchor,
   getDocuments,
@@ -26,9 +26,9 @@ export function createSealScreen({
     return SEAL_TYPES.has(seal?.type) ? seal.type : null;
   }
 
-  function letterSealEntries() {
+  function recordSealEntries() {
     const sealEntries = [];
-    state.manifest.letters.forEach((path) => {
+    state.manifest.documents.forEach((path) => {
       const document = getDocuments().get(path);
       (document?.entries || []).forEach((entry, entryIndex) => {
         const imageNodes = Array.isArray(entry.img) ? entry.img : [entry.img];
@@ -129,14 +129,14 @@ export function createSealScreen({
   }
 
   function sealSourceMarkup(source) {
-    const match = letterForSource(source);
+    const match = recordForSource(source);
     if (!match) return markdownLinks(source);
-    const params = new URLSearchParams({ tab: 'letters', letter: match.path, source: sourceCitations(source)[0] });
+    const params = new URLSearchParams({ tab: 'documents', record: match.path, source: sourceCitations(source)[0] });
     return `<a href="?${params.toString()}#${entryAnchor(match.path, match.entryIndex)}">${markdownLinks(source)}</a>`;
   }
 
-  function sealLetterUrlMarkup(source) {
-    const match = letterForSource(source);
+  function sealRecordUrlMarkup(source) {
+    const match = recordForSource(source);
     if (!match) return '';
     const url = match.entry.url || getDocuments().get(match.path)?.url;
     return url ? urlMarkup(url) : '';
@@ -182,18 +182,18 @@ export function createSealScreen({
 
   function renderSealsPage() {
     state.sealNames = state.sealNames.filter((value) => value.includes(':'));
-    const allEntries = letterSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
+    const allEntries = recordSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
     const selected = new Set(state.sealNames);
     const entries = allEntries.filter((entry) => (!selected.size || sealMatchesSelected(entry.title, selected)) && sealMatchesType(entry, state.sealType));
     const content = entries.map((entry, index) => {
       const title = entry.title ? `<h3>${titleMarkup(entry.title)}</h3>` : '';
       const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
       const sourceMarkup = entry.source ? `<p class="source">${sealSourceMarkup(entry.source)}</p>` : '';
-      const letterUrl = entry.source ? sealLetterUrlMarkup(entry.source) || urlMarkup(entry.url) : urlMarkup(entry.url);
+      const recordUrl = entry.source ? sealRecordUrlMarkup(entry.source) || urlMarkup(entry.url) : urlMarkup(entry.url);
       const imageContext = { path: entry.sourcePath, index: entry.sourceIndex, imageIndex: entry.sourceImageIndex, crop: entry.crop, sealScreen: true };
-      return `<article class="entry seal-entry" id="seal-${index}"><div class="seal-entry-meta">${title}${dateMarkup}${sourceMarkup}${letterUrl}</div><div class="seal-entry-media">${imageMarkup(entry.img, entry.seals, imageContext)}</div></article>`;
+      return `<article class="entry seal-entry" id="seal-${index}"><div class="seal-entry-meta">${title}${dateMarkup}${sourceMarkup}${recordUrl}</div><div class="seal-entry-media">${imageMarkup(entry.img, entry.seals, imageContext)}</div></article>`;
     }).join('');
-    if (!allEntries.length) return '<article class="document"><h2>Seals</h2><p class="status">No named seals are recorded in the letter images.</p></article>';
+    if (!allEntries.length) return '<article class="document"><h2>Seals</h2><p class="status">No named seals are recorded in the document images.</p></article>';
     if (!entries.length) return `<div class="seals-layout">${renderSealSidebar(allEntries)}<article class="document seals-document"><p class="status">No seals match the selected filters.</p></article></div>`;
     return `<div class="seals-layout">${renderSealSidebar(allEntries)}<article class="document seals-document">${content}</article></div>`;
   }
@@ -239,5 +239,5 @@ export function createSealScreen({
     update();
   }
 
-  return { letterSealEntries, sealMatchesType, sealMatchesSelected, sealSortYear, renderSealsPage, setupSealHighlight, normalizeSealFilter };
+  return { recordSealEntries, sealMatchesType, sealMatchesSelected, sealSortYear, renderSealsPage, setupSealHighlight, normalizeSealFilter };
 }

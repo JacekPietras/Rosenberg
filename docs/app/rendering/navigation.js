@@ -4,9 +4,9 @@ export function entryAnchor(path, index) {
 
 export function documentNavigationUrl(path, index) {
   const params = new URLSearchParams();
-  if (path.startsWith('data/letters/')) {
-    params.set('tab', 'letters');
-    params.set('letter', path);
+  if (path.startsWith('data/documents/')) {
+    params.set('tab', 'documents');
+    params.set('record', path);
   } else {
     params.set('document', path);
   }

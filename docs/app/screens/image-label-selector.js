@@ -8,14 +8,14 @@ export function setupImageLabelSelector({ state, repository, rerender, escapeHtm
   let dialog = document.getElementById(SELECTOR_ID);
   if (!dialog) {
     document.body.insertAdjacentHTML('beforeend', `
-      <dialog id="${SELECTOR_ID}" class="letter-label-dialog" aria-labelledby="image-label-title">
+      <dialog id="${SELECTOR_ID}" class="record-label-dialog" aria-labelledby="image-label-title">
         <form method="dialog" class="image-label-dialog-form">
           <h2 id="image-label-title">Edit image labels</h2>
-          <fieldset class="letter-label-options"><legend>Labels</legend></fieldset>
+          <fieldset class="record-label-options"><legend>Labels</legend></fieldset>
           <label for="image-label-input">Add a label</label>
           <input id="image-label-input" type="text" autocomplete="off">
-          <p class="letter-label-status" role="status" aria-live="polite"></p>
-          <div class="letter-label-dialog-actions">
+          <p class="record-label-status" role="status" aria-live="polite"></p>
+          <div class="record-label-dialog-actions">
             <button type="button" data-image-label-action="cancel">Cancel</button>
             <button type="button" data-image-label-action="save">Save</button>
           </div>
@@ -25,8 +25,8 @@ export function setupImageLabelSelector({ state, repository, rerender, escapeHtm
   }
 
   const input = dialog.querySelector('#image-label-input');
-  const fieldset = dialog.querySelector('.letter-label-options');
-  const status = dialog.querySelector('.letter-label-status');
+  const fieldset = dialog.querySelector('.record-label-options');
+  const status = dialog.querySelector('.record-label-status');
   const close = () => {
     activeIndex = null;
     dialog.close();
@@ -43,7 +43,7 @@ export function setupImageLabelSelector({ state, repository, rerender, escapeHtm
         .flatMap((item) => imageLabels(item)))]
         .sort((left, right) => left.localeCompare(right, undefined, { sensitivity: 'base' }));
       const current = new Set(imageLabels(entry));
-      fieldset.innerHTML = `<legend>Labels</legend>${labels.map((label) => `<label class="letter-label-option"><input type="checkbox" value="${escapeHtml(label)}"${current.has(label) ? ' checked' : ''}>${escapeHtml(label)}</label>`).join('')}`;
+      fieldset.innerHTML = `<legend>Labels</legend>${labels.map((label) => `<label class="record-label-option"><input type="checkbox" value="${escapeHtml(label)}"${current.has(label) ? ' checked' : ''}>${escapeHtml(label)}</label>`).join('')}`;
       input.value = '';
       status.textContent = '';
       status.classList.remove('error');

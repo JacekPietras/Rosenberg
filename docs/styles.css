@@ -106,7 +106,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .status:empty { display: none; }
 .status.error { color: var(--danger); }
 
-.letters-layout { display: grid; grid-template-columns: minmax(0, 1fr) 2.5rem minmax(5.5rem, 7rem); gap: .5rem .85rem; align-items: start; }
+.documents-layout { display: grid; grid-template-columns: minmax(0, 1fr) 2.5rem minmax(5.5rem, 7rem); gap: .5rem .85rem; align-items: start; }
 .year-sidebar { position: sticky; top: 5.5rem; grid-column: 2; grid-row: 1; padding: 1.1rem 0; font-size: .82rem; }
 .year-sidebar nav { display: grid; gap: .2rem; max-height: calc(100vh - 8rem); overflow-y: auto; }
 .year-sidebar a { display: block; padding: .28rem .2rem; color: var(--faint); border-radius: 5px; text-align: center; text-decoration: none; transition: color .15s ease, background .15s ease; }
@@ -128,25 +128,25 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .document-heading h2 { margin: 0 0 .25rem; color: var(--ink); font-size: 1.25rem; font-weight: 650; letter-spacing: -.02em; }
 .document-heading small { color: var(--muted); font-size: .78rem; white-space: nowrap; }
 .document-heading-aside { display: flex; flex-direction: column; align-items: flex-end; gap: .35rem; }
-.letter-labels { display: flex; align-items: center; justify-content: flex-end; gap: .35rem; flex-wrap: wrap; }
-.letter-label-edit { display: inline-grid; width: 1.65rem; height: 1.65rem; place-items: center; padding: .25rem; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
-.letter-label-edit:hover, .letter-label-edit:focus-visible { color: var(--accent); background: var(--surface-raised); }
-.letter-label-edit svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
-.letter-label { padding: .2rem .5rem; color: #fff; background: #b42332; border-radius: 4px; font-size: .68rem; font-weight: 750; letter-spacing: .08em; line-height: 1.2; text-transform: uppercase; white-space: nowrap; }
-.letter-label-dialog { width: min(28rem, calc(100vw - 2rem)); max-height: min(80vh, 42rem); padding: 1.35rem; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 1rem 3rem #0008; }
-.letter-label-dialog::backdrop { background: #0009; backdrop-filter: blur(3px); }
-.letter-label-dialog-form h2 { margin: 0 0 1rem; font-size: 1.2rem; }
-.letter-label-options { display: grid; gap: .45rem; max-height: 55vh; margin: 0; padding: .8rem; overflow-y: auto; border: 1px solid var(--line); border-radius: 6px; }
-.letter-label-options legend { padding: 0 .3rem; color: var(--muted); font-size: .8rem; }
-.letter-label-option { display: flex; align-items: center; gap: .55rem; padding: .3rem; cursor: pointer; }
-.letter-label-option input { accent-color: var(--accent); }
-.letter-label-status { min-height: 1.2em; margin: .65rem 0; color: var(--muted); font-size: .82rem; }
-.letter-label-status.error { color: #e57373; }
-.letter-label-dialog-actions { display: flex; justify-content: flex-end; gap: .55rem; }
-.letter-label-dialog-actions button { padding: .45rem .8rem; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 5px; cursor: pointer; }
-.letter-label-dialog-actions button:last-child { color: #fff; background: #b42332; border-color: #b42332; }
-.letter-label-dialog-actions button:disabled { opacity: .55; cursor: wait; }
-.document.dimmed .letter-label { background: #68727d; }
+.record-labels { display: flex; align-items: center; justify-content: flex-end; gap: .35rem; flex-wrap: wrap; }
+.record-label-edit { display: inline-grid; width: 1.65rem; height: 1.65rem; place-items: center; padding: .25rem; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.record-label-edit:hover, .record-label-edit:focus-visible { color: var(--accent); background: var(--surface-raised); }
+.record-label-edit svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.record-label { padding: .2rem .5rem; color: #fff; background: #b42332; border-radius: 4px; font-size: .68rem; font-weight: 750; letter-spacing: .08em; line-height: 1.2; text-transform: uppercase; white-space: nowrap; }
+.record-label-dialog { width: min(28rem, calc(100vw - 2rem)); max-height: min(80vh, 42rem); padding: 1.35rem; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 1rem 3rem #0008; }
+.record-label-dialog::backdrop { background: #0009; backdrop-filter: blur(3px); }
+.record-label-dialog-form h2 { margin: 0 0 1rem; font-size: 1.2rem; }
+.record-label-options { display: grid; gap: .45rem; max-height: 55vh; margin: 0; padding: .8rem; overflow-y: auto; border: 1px solid var(--line); border-radius: 6px; }
+.record-label-options legend { padding: 0 .3rem; color: var(--muted); font-size: .8rem; }
+.record-label-option { display: flex; align-items: center; gap: .55rem; padding: .3rem; cursor: pointer; }
+.record-label-option input { accent-color: var(--accent); }
+.record-label-status { min-height: 1.2em; margin: .65rem 0; color: var(--muted); font-size: .82rem; }
+.record-label-status.error { color: #e57373; }
+.record-label-dialog-actions { display: flex; justify-content: flex-end; gap: .55rem; }
+.record-label-dialog-actions button { padding: .45rem .8rem; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 5px; cursor: pointer; }
+.record-label-dialog-actions button:last-child { color: #fff; background: #b42332; border-color: #b42332; }
+.record-label-dialog-actions button:disabled { opacity: .55; cursor: wait; }
+.document.dimmed .record-label { background: #68727d; }
 .document-url { margin: .45rem 0 0; overflow-wrap: anywhere; font-size: .78rem; }
 .document-url a, .text a { color: var(--accent); }
 .seals-layout { display: grid; grid-template-columns: minmax(0, 1fr) repeat(2, minmax(5.5rem, 7rem)); gap: .85rem; align-items: start; }
@@ -370,7 +370,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
   .controls { margin-top: .9rem; }
   main { padding-top: 1rem; }
   .text-grid { grid-template-columns: 1fr; gap: 1rem; }
-  .letters-layout { display: block; }
+  .documents-layout { display: block; }
   .seals-layout { display: block; }
   .image-tags-layout { display: block; }
   .image-tag-sidebar { position: static; }

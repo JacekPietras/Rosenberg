@@ -51,19 +51,19 @@ test('shared facts view preserves the person screen ambiguity styling', () => {
   assert.match(html, /<li class="entity-fact-ambiguous">/);
 });
 
-test('letter facts inherit the entry or letter date while explicit fact dates take priority', () => {
+test('document facts inherit the entry or document date while explicit fact dates take priority', () => {
   const { formatDate } = { formatDate: (date) => date };
   const { renderDocument } = createDocumentRenderer({
     state: { showFacts: true }, escapeHtml, formatDate, ...options,
     getPeople: () => options.people,
-    documentTitle: () => 'Letter', documentYear: () => '1383',
+    documentTitle: () => 'Document', documentYear: () => '1383',
     entryAnchor: () => 'entry',
   });
   const doc = { date: '1383', entries: [
     { facts: ['Legacy fact.', { text: 'Another fact.' }, { date: '1382', text: 'Earlier event.' }] },
     { date: '1384', facts: [{ text: 'Entry date.' }] },
   ] };
-  const html = renderDocument(doc, 'data/letters/example.json', 0);
+  const html = renderDocument(doc, 'data/documents/example.json', 0);
   assert.match(html, /datetime="1383"/);
   assert.match(html, /datetime="1382"/);
   assert.match(html, /datetime="1384"/);

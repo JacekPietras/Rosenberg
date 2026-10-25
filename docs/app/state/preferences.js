@@ -7,15 +7,16 @@ function normalizeDisplayMode(value) {
 }
 
 export function loadPreferences(storage) {
+  const normalizePath = (path) => typeof path === 'string' ? path.replace(/^data\/letters\//, 'data/documents/').replace(/^letters$/, 'documents') : null;
   try {
     const raw = JSON.parse((storage || window.localStorage).getItem(PREFERENCES_KEY) || '{}');
     return {
-      active: typeof raw.active === 'string' ? raw.active : null,
+      active: normalizePath(raw.active),
       place: typeof raw.place === 'string' ? raw.place : null,
       person: typeof raw.person === 'string' ? raw.person : null,
-      letter: typeof raw.letter === 'string' ? raw.letter : null,
-      letterLabels: Array.isArray(raw.letterLabels) ? raw.letterLabels : [],
-      hiddenLetterLabels: Array.isArray(raw.hiddenLetterLabels) ? raw.hiddenLetterLabels : null,
+      record: normalizePath(raw.record || raw.letter),
+      recordLabels: Array.isArray(raw.recordLabels) ? raw.recordLabels : (Array.isArray(raw.letterLabels) ? raw.letterLabels : []),
+      hiddenRecordLabels: Array.isArray(raw.hiddenRecordLabels) ? raw.hiddenRecordLabels : (Array.isArray(raw.hiddenLetterLabels) ? raw.hiddenLetterLabels : null),
       sealNames: Array.isArray(raw.sealNames) ? raw.sealNames : [],
       sealType: ['contrepalle', 'swans', 'helm', 'full', 'unknown'].includes(raw.sealType) ? raw.sealType : null,
       imageRegions: Array.isArray(raw.imageRegions) ? raw.imageRegions : [],
@@ -25,8 +26,8 @@ export function loadPreferences(storage) {
     };
   } catch {
     return {
-      active: null, place: null, person: null, letter: null,
-      letterLabels: [], hiddenLetterLabels: null, sealNames: [], sealType: null, imageRegions: [],
+      active: null, place: null, person: null, record: null,
+      recordLabels: [], hiddenRecordLabels: null, sealNames: [], sealType: null, imageRegions: [],
       language: 'english', showFacts: true, darkMode: true,
     };
   }

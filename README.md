@@ -10,7 +10,7 @@ facts are kept together in `/data`.
 data/
 ├── books/        # Structured source books
 ├── notes/        # Research notes
-├── letters/      # Letters, document
+├── documents/    # Historical source documents
 ├── images/       # Armorial and effigy image collections
 ├── calendar.md   # Liturgical calendar and dated annotations
 ├── people.json   # People and relationships
@@ -23,7 +23,7 @@ rules/            # Conditional instructions for data work
 ## Rules for data work
 
 Read [`rules/json-formats.md`](rules/json-formats.md) when creating or editing
-JSON under `data/`. It describes the book, letter, people, and places formats.
+JSON under `data/`. It describes the book, document, people, and places formats.
 
 Read [`rules/facts.md`](rules/facts.md) before adding, changing, reviewing, or
 removing facts. It covers extraction, relevance, normalization, and source
@@ -40,10 +40,10 @@ Archive catalogs and related research portals are collected in [`data/notes/arch
 
 ### Landesarchiv images
 
-Download missing cached letter images with:
+Download missing cached document images with:
 
 ```text
-python3 scripts/download_missing_letter_images.py
+python3 scripts/download_missing_document_images.py
 ```
 
 To link a Landesarchiv permalink to its digitized pages:
@@ -54,7 +54,7 @@ python3 scripts/download_landesarchiv.py \
 ```
 
 Use `--mode download` to cache the files locally, or `--image-dir SUBDIRECTORY`
-to choose a subdirectory under `data/letters/`. Retain the archive source
+to choose a subdirectory under `data/documents/`. Retain the archive source
 signature and follow its usage terms.
 
 ### Bavarikon images
@@ -69,12 +69,12 @@ The script handles Bavarikon's Anubis proof-of-work check directly and uses
 only Python's standard library.
 
 Add `--download` to cache discovered images under
-`data/letters/img-temp/bavarikon/`.
+`data/documents/img-temp/bavarikon/`.
 
 ## Search facts
 
 Search every `facts` array in JSON files under `data/` by person ID, full or
-partial person name, surname, or place. This includes letters, books, images,
+partial person name, surname, or place. This includes documents, books, images,
 notes, and nested research records. Name searches recognize spelling variants
 listed in `data/names.md`. Recognized person IDs in facts display the person's
 full name followed by the ID in brackets. An ID search also includes same-name

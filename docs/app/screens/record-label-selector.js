@@ -1,4 +1,4 @@
-const SELECTOR_ID = 'letter-label-selector';
+const SELECTOR_ID = 'record-label-selector';
 
 function labelsFor(document) {
   const value = document?.label;
@@ -7,17 +7,17 @@ function labelsFor(document) {
     .filter(Boolean);
 }
 
-export function setupLetterLabelSelector({ state, repository, rerender, escapeHtml }) {
+export function setupRecordLabelSelector({ state, repository, rerender, escapeHtml }) {
   let activePath = null;
   let dialog = document.getElementById(SELECTOR_ID);
   if (!dialog) {
     document.body.insertAdjacentHTML('beforeend', `
-      <dialog id="${SELECTOR_ID}" class="letter-label-dialog" aria-labelledby="letter-label-title">
-        <form method="dialog" class="letter-label-dialog-form">
-          <h2 id="letter-label-title">Edit letter labels</h2>
-          <fieldset class="letter-label-options"><legend>Labels</legend></fieldset>
-          <p class="letter-label-status" role="status" aria-live="polite"></p>
-          <div class="letter-label-dialog-actions">
+      <dialog id="${SELECTOR_ID}" class="record-label-dialog" aria-labelledby="record-label-title">
+        <form method="dialog" class="record-label-dialog-form">
+          <h2 id="record-label-title">Edit record labels</h2>
+          <fieldset class="record-label-options"><legend>Labels</legend></fieldset>
+          <p class="record-label-status" role="status" aria-live="polite"></p>
+          <div class="record-label-dialog-actions">
             <button type="button" data-label-action="cancel">Cancel</button>
             <button type="button" data-label-action="save">Save</button>
           </div>
@@ -26,25 +26,25 @@ export function setupLetterLabelSelector({ state, repository, rerender, escapeHt
     dialog = document.getElementById(SELECTOR_ID);
   }
 
-  const fieldset = dialog.querySelector('.letter-label-options');
-  const status = dialog.querySelector('.letter-label-status');
+  const fieldset = dialog.querySelector('.record-label-options');
+  const status = dialog.querySelector('.record-label-status');
   const close = () => {
     activePath = null;
     dialog.close();
   };
 
   document.addEventListener('click', async (event) => {
-    const editButton = event.target.closest('[data-edit-letter-labels]');
+    const editButton = event.target.closest('[data-edit-record-labels]');
     if (editButton) {
-      activePath = editButton.dataset.editLetterLabels;
+      activePath = editButton.dataset.editRecordLabels;
       const current = new Set(labelsFor(state.documents.get(activePath)).map((label) => label.toLocaleLowerCase()));
       const choices = new Map();
-      state.manifest.letters.forEach((path) => labelsFor(state.documents.get(path)).forEach((label) => {
+      state.manifest.documents.forEach((path) => labelsFor(state.documents.get(path)).forEach((label) => {
         if (!choices.has(label.toLocaleLowerCase())) choices.set(label.toLocaleLowerCase(), label);
       }));
       fieldset.innerHTML = `<legend>Labels</legend>${[...choices.values()]
         .sort((left, right) => left.localeCompare(right, undefined, { sensitivity: 'base' }))
-        .map((label) => `<label class="letter-label-option"><input type="checkbox" value="${escapeHtml(label)}"${current.has(label.toLocaleLowerCase()) ? ' checked' : ''}>${escapeHtml(label)}</label>`)
+        .map((label) => `<label class="record-label-option"><input type="checkbox" value="${escapeHtml(label)}"${current.has(label.toLocaleLowerCase()) ? ' checked' : ''}>${escapeHtml(label)}</label>`)
         .join('')}`;
       status.textContent = '';
       status.classList.remove('error');

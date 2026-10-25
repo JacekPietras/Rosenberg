@@ -94,7 +94,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                     "path": str(path.relative_to(ROOT)).replace("\\", "/"),
                     "version": path.stat().st_mtime_ns,
                 }
-                for folder in (ROOT / "data" / "books", ROOT / "data" / "letters", ROOT / "data" / "notes", ROOT / "data" / "images")
+                for folder in (ROOT / "data" / "books", ROOT / "data" / "documents", ROOT / "data" / "notes", ROOT / "data" / "images")
                 for path in folder.glob("*.json")
             ]
             paths.sort(key=lambda item: item["path"])

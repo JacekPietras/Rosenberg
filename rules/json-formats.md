@@ -30,7 +30,7 @@ Book facts are objects with `date` and `text` fields. The date must use only
 the ISO precision supported by the source: `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`.
 Never invent missing date components.
 
-## Letter JSON
+## Document JSON
 
 ```json
 {
@@ -63,13 +63,13 @@ Never invent missing date components.
 }
 ```
 
-Letter facts remain strings. Letter documents have a document-level `date`
+Document facts remain strings. Documents have a document-level `date`
 and an `entries` array. Each entry retains `source`, `german`, `english`, and
 `facts`; `facts` is an array of strings.
 
-The optional letter-level `label` may be a string or an array of strings. Each
+The optional document-level `label` may be a string or an array of strings. Each
 label is displayed as a red badge. The special label `"important"` gives the
-letter a reddish background; `"Hessen"`, `"Schenk"`, and `"Mönch"` give it a
+document a reddish background; `"Hessen"`, `"Schenk"`, and `"Mönch"` give it a
 dimmed background.
 
 Each `img` item has a `src` URL and an optional `seals` array. Removed images

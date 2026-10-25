@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Download image URLs from letter JSON files when the local cache is missing.
+"""Download image URLs from document JSON files when the local cache is missing.
 
 The JSON remains unchanged: the viewer derives the cache filename from each
 image URL and falls back to that URL when the local file is unavailable.
@@ -15,8 +15,8 @@ from urllib.request import Request, build_opener
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
-LETTER_DIR = REPOSITORY_ROOT / "data" / "letters"
-IMAGE_DIR = REPOSITORY_ROOT / "data" / "letters" / "img"
+DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
+IMAGE_DIR = REPOSITORY_ROOT / "data" / "documents" / "img"
 REQUEST_TIMEOUT = 60
 USER_AGENT = "Rosenberg research image cache/1.0"
 IMAGE_SUFFIXES = {".gif", ".jpeg", ".jpg", ".png", ".svg", ".webp"}
@@ -33,7 +33,7 @@ def cache_name(image_url: str) -> str:
 
 def image_urls() -> list[str]:
     urls = set()
-    for path in sorted(LETTER_DIR.glob("*.json")):
+    for path in sorted(DOCUMENT_DIR.glob("*.json")):
         document = json.loads(path.read_text(encoding="utf-8"))
         for entry in document.get("entries", []):
             values = entry.get("img", [])
