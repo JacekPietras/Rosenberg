@@ -11,7 +11,7 @@ export function positionSealCrop(image, crop, x, y, size, sealWidth = 0, widenin
   image.style.transform = `rotate(${rotation}deg) rotate(${-wideningRotation}deg) scaleX(${1 + sealWidth}) rotate(${wideningRotation}deg)`;
 }
 
-export function setupSealAnnotations({ state, position = positionSealCrop } = {}) {
+export function setupSealAnnotations({ state = {}, position = positionSealCrop } = {}) {
   state.sealMarkerCleanup?.();
   state.sealMarkerCleanup = null;
   const annotatedImages = [...document.querySelectorAll('.annotated-image img')];

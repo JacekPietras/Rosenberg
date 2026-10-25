@@ -135,7 +135,7 @@ export function createEntityScreens({
     const sealsMarkup = sealEntries.length ? `<section class="entity-seals"><h3 class="entity-section-title">Seals</h3><div class="models-grid armorial-grid">${sealEntries.map(({ doc, path, entry, index, node, imageIndex, seal }) => {
       const date = entry.date || doc.date || '';
       const title = entry.title || documentTitle(doc, path);
-      return `<article class="model-card armorial-card"><div class="model-info"><h2 class="model-title">${markdownLinks(title)}${date ? ` [${escapeHtml(date)}]` : ''}</h2></div><div class="image-record-visual">${imageMarkup(node, [seal], { path, index, imageIndex, title })}</div></article>`;
+      return `<article class="model-card armorial-card"><div class="model-info"><h2 class="model-title">${markdownLinks(title)}${date ? ` [${escapeHtml(date)}]` : ''}</h2></div><div class="image-record-visual">${imageMarkup(node, [seal], { path, index, imageIndex, title, sealScreen: true })}</div></article>`;
     }).join('')}</div></section>` : '';
     return renderPage(person, mentionsFor(person, 'person'), 'person', pattern, () => '', `${imagesMarkup}${sealsMarkup}`);
   }
