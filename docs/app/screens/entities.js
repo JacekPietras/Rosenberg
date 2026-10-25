@@ -129,7 +129,7 @@ export function createEntityScreens({
     const relatedImages = imageEntries.filter((entry) => matchesPerson(
       [entry.title, entry.description, ...(Array.isArray(entry.facts) ? entry.facts : []).map(factText)].join(' '), entry.personId || entry.personid,
     ));
-    const imagesMarkup = relatedImages.length ? `<section class="entity-images"><h3 class="entity-section-title">Images</h3><div class="models-grid armorial-grid">${relatedImages.map((entry) => imageCardMarkup(entry)).join('')}</div></section>` : '';
+    const imagesMarkup = relatedImages.length ? `<section class="entity-images"><h3 class="entity-section-title">Images</h3><div class="models-grid armorial-grid">${relatedImages.map((entry) => imageCardMarkup(entry, { titleMarkup: inlineMarkup })).join('')}</div></section>` : '';
     const sealEntries = [];
     getDocuments().forEach((doc, path) => {
       if (!path.startsWith('data/documents/')) return;
