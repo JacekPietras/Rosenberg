@@ -16,6 +16,7 @@ export function createEntityScreens({
   documentTitle,
   documentNavigationUrl,
   displayedLanguagesFor,
+  imageMarkup,
 }) {
   const fields = ['title', 'source', 'german', 'latin', 'english', 'facts'];
 
@@ -112,7 +113,37 @@ export function createEntityScreens({
     const person = people.find((item) => item.id === state.person)
       || findByName(people, state.person);
     const pattern = person ? buildPersonPattern([person])[0]?.pattern : /$a/;
-    return renderPage(person, person ? mentionsFor(person, 'person') : [], 'person', pattern);
+    if (!person) return renderPage(person, [], 'person', pattern);
+    const selectedId = people.some((item) => item.id === state.person) ? person.id : '';
+    const matchesPerson = (value, personId) => {
+      const text = String(value || '');
+      return (selectedId && (personId === selectedId || text.includes(`[${selectedId}]`)))
+        || text.toLocaleLowerCase().includes(person.name.toLocaleLowerCase());
+    };
+    const imageEntries = getDocuments().get('data/images/images.json')?.entries || [];
+    const relatedImages = imageEntries.filter((entry) => matchesPerson(
+      [entry.title, entry.description, ...(Array.isArray(entry.facts) ? entry.facts : []).map(factText)].join(' '), entry.personId || entry.personid,
+    ));
+    const imagesMarkup = relatedImages.length ? `<section class="entity-images"><h3 class="entity-section-title">Images</h3><div class="models-grid armorial-grid">${relatedImages.map((entry) => imageCardMarkup(entry)).join('')}</div></section>` : '';
+    const sealEntries = [];
+    getDocuments().forEach((doc, path) => {
+      if (!path.startsWith('data/letters/')) return;
+      (doc?.entries || []).forEach((entry, index) => {
+        const nodes = Array.isArray(entry.img) ? entry.img : [entry.img];
+        nodes.forEach((node, imageIndex) => {
+          const seals = node && typeof node === 'object' ? node.seals : imageIndex === 0 ? entry.seals : [];
+          (Array.isArray(seals) ? seals : []).forEach((seal) => {
+            if (matchesPerson(seal?.person, '')) sealEntries.push({ doc, path, entry, index, node, imageIndex, seal });
+          });
+        });
+      });
+    });
+    const sealsMarkup = sealEntries.length ? `<section class="entity-seals"><h3 class="entity-section-title">Seals</h3><div class="models-grid armorial-grid">${sealEntries.map(({ doc, path, entry, index, node, imageIndex, seal }) => {
+      const date = entry.date || doc.date || '';
+      const title = entry.title || documentTitle(doc, path);
+      return `<article class="model-card armorial-card"><div class="model-info"><h2 class="model-title">${markdownLinks(title)}${date ? ` [${escapeHtml(date)}]` : ''}</h2></div><div class="image-record-visual">${imageMarkup(node, [seal], { path, index, imageIndex, title })}</div></article>`;
+    }).join('')}</div></section>` : '';
+    return renderPage(person, mentionsFor(person, 'person'), 'person', pattern, () => '', `${imagesMarkup}${sealsMarkup}`);
   }
 
   function renderPlacePage() {
