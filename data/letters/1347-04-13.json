@@ -9,8 +9,9 @@
       "facts": [
         "[vogt_zu_Durn] is Vogt zu Dürn.",
         "Eberhard von Rosenberg genannt von Zimmern is mentioned.",
-        "[vogt_zu_Durn] (Vogt zu Dürn) was father of Eberhard von Rosenberg and Konrad von Rosenberg.",
-        "Hans von Rosenberg is mentioned in context of mediation with Kraft von Hohenlohe."
+        "[vogt_zu_Durn] was father of [eberhard_son_of_vogt_zu_Durn]",
+        "Hans von Rosenberg is mentioned in context of mediation with Kraft von Hohenlohe.",
+        "[vogt_zu_Durn] was father of [konrad_son_of_vogt_zu_Durn]"
       ]
     }
   ]
