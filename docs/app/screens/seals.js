@@ -168,9 +168,11 @@ export function createSealScreen({
         const detail = type === 'unknown' ? `(${entries.filter((entry) => !entry.type).length})` : sealTypeYearSpan(entries, type);
         return `<a href="#" class="${state.sealType === type ? 'selected' : ''}" data-seal-type="${type}"><span>${label}</span>${detail ? `<small>${detail}</small>` : ''}</a>`;
       }).join('');
-    const nameSidebars = `${renderNames('before', 'Before von')}${renderNames('after', 'After von')}`;
+    const nameSidebar = renderNames('before', 'Before von');
+    const surnameSidebar = renderNames('after', 'After von');
     const typeSidebar = typeLinks ? `<aside class="seal-sidebar seal-type-sidebar" aria-label="Seals by type"><nav>${typeLinks}</nav></aside>` : '';
-    return `${nameSidebars}${typeSidebar}`;
+    const surnameAndType = surnameSidebar || typeSidebar ? `<div class="seal-surname-type-filters">${surnameSidebar}${typeSidebar}</div>` : '';
+    return `${nameSidebar}${surnameAndType}`;
   }
 
   function sealSortYear(entry) {
