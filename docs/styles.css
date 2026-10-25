@@ -243,8 +243,30 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .map-mode-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .map-mode-button[aria-pressed="true"] { color: var(--ink); background: var(--surface-raised); font-weight: 650; }
 .map-save-status { position: absolute; top: 2.9rem; right: .6rem; z-index: 1000; padding: .3rem .6rem; background: var(--surface); border: 1px solid var(--line); border-radius: 7px; }
+.map-year-filter { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem; margin: .75rem 0; padding: .65rem .8rem; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; font-size: .85rem; }
+.map-year-label { font-weight: 600; }
+.map-year-slider { --from: 0%; --to: 100%; position: relative; width: min(48vw, 24rem); height: 1.5rem; background: linear-gradient(to right, var(--line) var(--from), var(--accent) var(--from), var(--accent) var(--to), var(--line) var(--to)); background-position: center; background-size: 100% 4px; background-repeat: no-repeat; }
+.map-year-slider input[type="range"] { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; appearance: none; background: transparent; pointer-events: none; }
+.map-year-slider input[type="range"]::-webkit-slider-runnable-track { height: 4px; background: transparent; }
+.map-year-slider input[type="range"]::-moz-range-track { height: 4px; background: transparent; }
+.map-year-slider input[type="range"]::-webkit-slider-thumb { width: 14px; height: 14px; margin-top: -5px; appearance: none; border: 2px solid var(--surface); border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 1px var(--accent); pointer-events: auto; cursor: ew-resize; }
+.map-year-slider input[type="range"]::-moz-range-thumb { width: 10px; height: 10px; border: 2px solid var(--surface); border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 1px var(--accent); pointer-events: auto; cursor: ew-resize; }
+.map-year-filter output { min-width: 5rem; font-variant-numeric: tabular-nums; }
+.map-year-filter #map-year-to-label { text-align: right; }
+.map-credit-wrap { position: absolute; z-index: 1000; right: .65rem; bottom: .65rem; display: flex; flex-direction: column; align-items: flex-end; }
+.map-credit-toggle { display: grid; width: 1.5rem; height: 1.5rem; place-items: center; padding: .2rem; color: var(--muted); background: transparent; border: 1px solid transparent; border-radius: 50%; cursor: pointer; }
+.map-credit-toggle svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+.map-credit-toggle:hover, .map-credit-toggle:focus-visible { color: var(--ink); background: var(--surface-raised); }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); border: 0; }
 .map-credit { margin: 1rem 0 1.5rem; color: var(--faint); font-size: .72rem; }
 .map-credit a { color: var(--muted); }
+main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-height: 0; flex-direction: column; padding-bottom: .65rem; }
+#content:has(#map-container) { display: flex; min-height: 0; flex: 1; flex-direction: column; }
+.map-wrap:has(#map-container) { display: flex; min-height: 0; flex: 1; flex-direction: column; margin: .5rem 0; }
+.map-container { min-height: 0; height: auto; flex: 1; }
+.map-year-filter { flex: none; margin: .35rem 0; }
+.map-credit { flex: none; margin: .25rem 0 0; }
+.map-credit-wrap .map-credit { max-width: min(34rem, calc(100vw - 3rem)); margin: .35rem 0 0; padding: .4rem .55rem; color: var(--muted); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
 .models-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 1rem; margin: 1.5rem 0; }
 .model-card { position: relative; display: block; overflow: hidden; color: inherit; text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
 .image-record-visual { position: relative; }
@@ -371,6 +393,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
   .site-header { display: block; }
   .controls { margin-top: .9rem; }
   main { padding-top: 1rem; }
+  main:has(#map-container) { height: calc(100dvh - 9rem); padding-top: .5rem; }
   .text-grid { grid-template-columns: 1fr; gap: 1rem; }
   .documents-layout { display: block; }
   .seals-layout { display: block; }
