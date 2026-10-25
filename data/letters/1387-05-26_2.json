@@ -52,7 +52,7 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723544%2F04_0001723544_0001_4-1723544-1.jpg",
           "seals": [
             {
-              "person": "Arnold",
+              "person": "Arnold von Rosenberg",
               "position": "0.2767,0.8013",
               "size": 0.106,
               "type": "helm",
@@ -61,7 +61,7 @@
               "wideningRotation": -146
             },
             {
-              "person": "Konrad",
+              "person": "Konrad von Rosenberg",
               "position": "0.5010,0.8541",
               "size": 0.11600000000000002,
               "type": "full",
@@ -70,7 +70,7 @@
               "rotation": -12
             },
             {
-              "person": "Kunz",
+              "person": "Kunz von Rosenberg",
               "position": "0.6308,0.8205",
               "size": 0.094,
               "type": "helm",
@@ -78,7 +78,7 @@
               "wideningRotation": -62
             },
             {
-              "person": "Hans",
+              "person": "Hans von Rosenberg",
               "position": "0.7500,0.8147",
               "size": 0.09699999999999998,
               "type": "swans",

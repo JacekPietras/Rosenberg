@@ -149,10 +149,11 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .document.dimmed .letter-label { background: #68727d; }
 .document-url { margin: .45rem 0 0; overflow-wrap: anywhere; font-size: .78rem; }
 .document-url a, .text a { color: var(--accent); }
-.seals-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(5.5rem, 7rem) minmax(5.5rem, 7rem); gap: .85rem; align-items: start; }
+.seals-layout { display: grid; grid-template-columns: minmax(0, 1fr) repeat(3, minmax(5.5rem, 7rem)); gap: .85rem; align-items: start; }
 .seals-document { grid-column: 1; grid-row: 1; }
 .seal-sidebar { position: sticky; top: 5.5rem; grid-column: 2; grid-row: 1; padding: 1.1rem 0; font-size: .82rem; }
-.seal-type-sidebar { grid-column: 3; }
+.seal-after-von-sidebar { grid-column: 3; }
+.seal-type-sidebar { grid-column: 4; }
 .seal-sidebar nav { display: grid; gap: .2rem; max-height: calc(100vh - 8rem); overflow-y: auto; }
 .seal-sidebar a, .seal-sidebar button { display: block; padding: .28rem .35rem; color: var(--faint); background: transparent; border: 0; border-radius: 5px; font: inherit; text-align: center; text-decoration: none; cursor: pointer; transition: color .15s ease, background .15s ease; }
 .seal-sidebar a small { display: block; margin-top: .1rem; color: var(--muted); font-size: .68rem; }

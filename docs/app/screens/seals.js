@@ -97,20 +97,20 @@ export function createSealScreen({
     const label = sealPersonLabel(title);
     const normalized = label.toLocaleLowerCase();
     if (selected.has('unknown') && label.includes('?')) return true;
-    const particles = [...new Set(state.nobiliaryParticles || [])]
-      .sort((left, right) => right.length - left.length)
-      .map((particle) => particle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
     return [...selected].some((key) => {
       if (key === 'unknown') return false;
       if (normalized === key) return true;
       if (key.includes(' ')) return false;
       const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       const namePattern = new RegExp(`(?:^|[+\\/\\s])${escaped}\\??(?=$|[+\\/\\s])`, 'iu');
-      const particlePattern = particles.length
-        ? new RegExp(`(?:^|[+\\/\\s])${escaped}\\??\\s+(?:${particles.join('|')})(?:\\s|$)`, 'iu')
-        : null;
-      return namePattern.test(label) && !particlePattern?.test(label);
+      return namePattern.test(label);
     });
+  }
+
+  function sealNameParts(value) {
+    const label = sealPersonLabel(value);
+    const split = label.match(/^(.+?)\s+von\s+(.+)$/i);
+    return split ? { before: split[1].trim(), after: split[2].trim() } : { before: label, after: '' };
   }
 
   function sealSourceMarkup(source) {
@@ -128,18 +128,24 @@ export function createSealScreen({
   }
 
   function renderSealSidebar(entries) {
-    const labels = new Map();
+    const labels = { before: new Map(), after: new Map() };
     entries.forEach((entry) => {
-      const label = sealPersonLabel(entry.title);
-      if (/[+/]/.test(label) || /\szu\s/i.test(label) || /\s(?:elder|knight|nobleman)$/i.test(label)) return;
-      const key = label.includes('?') ? 'unknown' : label.toLocaleLowerCase();
-      if (label && !labels.has(key)) labels.set(key, { label });
+      const parts = sealNameParts(entry.title);
+      for (const part of ['before', 'after']) {
+        const label = parts[part];
+        if (!label || /[+/]/.test(label) || /\szu\s/i.test(label) || /\s(?:elder|knight|nobleman)$/i.test(label)) continue;
+        const key = label.includes('?') ? 'unknown' : label.toLocaleLowerCase();
+        if (!labels[part].has(key)) labels[part].set(key, { label });
+      }
     });
-    const links = [...labels.values()]
-      .map((item) => item.label.includes('?') ? { ...item, label: 'unknown', key: 'unknown' } : { ...item, key: item.label.toLocaleLowerCase() })
-      .sort((left, right) => left.key === 'unknown' ? -1 : right.key === 'unknown' ? 1 : left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
-      .map(({ label, key }) => `<a href="#" class="${state.sealNames.includes(key) ? 'selected' : ''}" data-seal-name="${escapeHtml(key)}">${escapeHtml(label)}</a>`)
-      .join('');
+    const renderNames = (part, heading) => {
+      const links = [...labels[part].values()]
+        .map((item) => item.label.includes('?') ? { ...item, label: 'unknown', key: 'unknown' } : { ...item, key: item.label.toLocaleLowerCase() })
+        .sort((left, right) => left.key === 'unknown' ? -1 : right.key === 'unknown' ? 1 : left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
+        .map(({ label, key }) => `<a href="#" class="${state.sealNames.includes(key) ? 'selected' : ''}" data-seal-name="${escapeHtml(key)}">${escapeHtml(label)}</a>`)
+        .join('');
+      return links ? `<aside class="seal-sidebar seal-name-sidebar${part === 'after' ? ' seal-after-von-sidebar' : ''}" aria-label="Seals ${heading.toLowerCase()}"><nav>${links}</nav></aside>` : '';
+    };
     const hasUnknownTypes = entries.some((entry) => !entry.type);
     const typeLinks = sealTypeFilters
       .filter(([type]) => type !== 'unknown' || hasUnknownTypes)
@@ -147,9 +153,9 @@ export function createSealScreen({
         const detail = type === 'unknown' ? `(${entries.filter((entry) => !entry.type).length})` : sealTypeYearSpan(entries, type);
         return `<a href="#" class="${state.sealType === type ? 'selected' : ''}" data-seal-type="${type}"><span>${label}</span>${detail ? `<small>${detail}</small>` : ''}</a>`;
       }).join('');
-    const nameSidebar = links ? `<aside class="seal-sidebar seal-name-sidebar" aria-label="Seals by name"><nav>${links}</nav></aside>` : '';
+    const nameSidebars = `${renderNames('before', 'Before von')}${renderNames('after', 'After von')}`;
     const typeSidebar = typeLinks ? `<aside class="seal-sidebar seal-type-sidebar" aria-label="Seals by type"><nav>${typeLinks}</nav></aside>` : '';
-    return `${nameSidebar}${typeSidebar}`;
+    return `${nameSidebars}${typeSidebar}`;
   }
 
   function sealSortYear(entry) {
