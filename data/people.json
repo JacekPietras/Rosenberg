@@ -155,9 +155,11 @@
     "died": null
   },
   {
-    "id": "some_arnold",
+    "id": "arnold_brother_of_vogt_zu_Lauda",
     "name": "Arnold von Rosenberg",
-    "titles": [],
+    "titles": [
+      "Edelknecht"
+    ],
     "wife": "else_wife_of_arnold",
     "children": [],
     "born": null,
