@@ -94,16 +94,31 @@ export function createSealScreen({
   }
 
   function sealMatchesSelected(title, selected) {
-    const label = sealPersonLabel(title);
-    const normalized = label.toLocaleLowerCase();
-    if (selected.has('unknown') && label.includes('?')) return true;
-    return [...selected].some((key) => {
-      if (key === 'unknown') return false;
-      if (normalized === key) return true;
-      if (key.includes(' ')) return false;
-      const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const namePattern = new RegExp(`(?:^|[+\\/\\s])${escaped}\\??(?=$|[+\\/\\s])`, 'iu');
-      return namePattern.test(label);
+    if (!selected.size) return true;
+    const parts = sealNameParts(title);
+    const selectedByPart = { before: [], after: [] };
+    selected.forEach((value) => {
+      const [part, ...rest] = value.split(':');
+      if (part === 'before' || part === 'after') selectedByPart[part].push(rest.join(':'));
+      else {
+        const legacy = value.toLocaleLowerCase();
+        const afterPattern = new RegExp(`(?:^|[+\\/\\s])${legacy.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\??(?=$|[+\\/\\s])`, 'iu');
+        selectedByPart[afterPattern.test(parts.after) ? 'after' : 'before'].push(value);
+      }
+    });
+    return ['before', 'after'].every((part) => {
+      const keys = selectedByPart[part];
+      if (!keys.length) return true;
+      const label = parts[part];
+      const normalized = label.toLocaleLowerCase();
+      return keys.some((key) => {
+        if (key === 'unknown') return label.includes('?');
+        if (normalized === key) return true;
+        if (key.includes(' ')) return false;
+        const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const namePattern = new RegExp(`(?:^|[+\\/\\s])${escaped}\\??(?=$|[+\\/\\s])`, 'iu');
+        return namePattern.test(label);
+      });
     });
   }
 
@@ -142,7 +157,7 @@ export function createSealScreen({
       const links = [...labels[part].values()]
         .map((item) => item.label.includes('?') ? { ...item, label: 'unknown', key: 'unknown' } : { ...item, key: item.label.toLocaleLowerCase() })
         .sort((left, right) => left.key === 'unknown' ? -1 : right.key === 'unknown' ? 1 : left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
-        .map(({ label, key }) => `<a href="#" class="${state.sealNames.includes(key) ? 'selected' : ''}" data-seal-name="${escapeHtml(key)}">${escapeHtml(label)}</a>`)
+        .map(({ label, key }) => `<a href="#" class="${state.sealNames.includes(`${part}:${key}`) ? 'selected' : ''}" data-seal-name="${escapeHtml(key)}" data-seal-part="${part}">${escapeHtml(label)}</a>`)
         .join('');
       return links ? `<aside class="seal-sidebar seal-name-sidebar${part === 'after' ? ' seal-after-von-sidebar' : ''}" aria-label="Seals ${heading.toLowerCase()}"><nav>${links}</nav></aside>` : '';
     };
@@ -164,6 +179,7 @@ export function createSealScreen({
   }
 
   function renderSealsPage() {
+    state.sealNames = state.sealNames.filter((value) => value.includes(':'));
     const allEntries = letterSealEntries().sort((left, right) => sealSortYear(left) - sealSortYear(right) || left.title.localeCompare(right.title));
     const selected = new Set(state.sealNames);
     const entries = allEntries.filter((entry) => (!selected.size || sealMatchesSelected(entry.title, selected)) && sealMatchesType(entry, state.sealType));
@@ -192,7 +208,8 @@ export function createSealScreen({
       if (link.dataset.sealType) {
         state.sealType = state.sealType === link.dataset.sealType ? null : link.dataset.sealType;
       } else {
-        const name = link.dataset.sealName;
+        state.sealNames = state.sealNames.filter((value) => value.includes(':'));
+        const name = `${link.dataset.sealPart}:${link.dataset.sealName}`;
         const index = state.sealNames.indexOf(name);
         if (index >= 0) state.sealNames.splice(index, 1);
         else state.sealNames.push(name);
