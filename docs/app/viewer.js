@@ -1,7 +1,7 @@
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
-import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=89';
+import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=90';
 import { renderActiveScreen } from './screens/router-view.js?v=2';
 import { createDocumentRenderer } from './screens/documents.js?v=3';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';

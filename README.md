@@ -92,15 +92,20 @@ only Python's standard library.
 Add `--download` to cache discovered images under
 `data/letters/img-temp/bavarikon/`.
 
-## Search facts by name
+## Search facts
 
-Search fact arrays throughout the JSON files under `data/` by a full name,
-given name, or surname. This includes letters, books, and nested research
-records such as notes. The search recognizes spelling variants listed in
-`data/names.md` and common variants of Rosenberg:
+Search every `facts` array in JSON files under `data/` by person ID, full or
+partial person name, surname, or place. This includes letters, books, images,
+notes, and nested research records. Name searches recognize spelling variants
+listed in `data/names.md`. Recognized person IDs in facts display the person's
+full name followed by the ID in brackets. An ID search also includes same-name
+facts without a recognized ID, marked `[not recognised]` after the name.
 
 ```text
+python3 scripts/search_facts_by_name.py vogt_zu_Lauda
 python3 scripts/search_facts_by_name.py 'Eberhardi v. Roßenberg'
 python3 scripts/search_facts_by_name.py Eberhard
 python3 scripts/search_facts_by_name.py Rosenberg
+python3 scripts/search_facts_by_name.py 'Eberhard von Rosenberg'
+python3 scripts/search_facts_by_name.py Boxberg
 ```

@@ -39,6 +39,7 @@ export function renderPeopleTree(people = [], documents = []) {
   }));
   const personLines = (person) => [
     person.name,
+    person._treeRepeated ? 'shown in multiple branches' : '',
     ...(Array.isArray(person.titles) ? person.titles : []),
     person.born || person.died ? `${person.born || '?'}–${person.died || '?'}` : '',
     mentionedYears.get(person._treeKey)?.length
@@ -73,157 +74,180 @@ export function renderPeopleTree(people = [], documents = []) {
     if (wifeKey) joinGroups(person._treeKey, wifeKey);
   });
 
-  const groupParents = new Map();
-  records.forEach((person) => {
-    const parentGroup = groupFor(person._treeKey);
-    (Array.isArray(person.children) ? person.children : []).forEach((childRef) => {
-      const childKey = byId.get(childRef);
-      if (!childKey) return;
-      const childGroup = groupFor(childKey);
-      if (parentGroup !== childGroup) {
-        if (!groupParents.has(childGroup)) groupParents.set(childGroup, new Set());
-        groupParents.get(childGroup).add(parentGroup);
-      }
-    });
-  });
-
-  const groupDepths = new Map();
-  const depthForGroup = (group, visiting = new Set()) => {
-    if (groupDepths.has(group)) return groupDepths.get(group);
-    if (visiting.has(group)) return 0;
-    visiting.add(group);
-    const parents = groupParents.get(group) || [];
-    const depth = parents.size
-      ? Math.max(...[...parents].map((parent) => depthForGroup(parent, new Set(visiting)))) + 1
-      : 0;
-    groupDepths.set(group, depth);
-    return depth;
-  };
-  records.forEach((person) => depthForGroup(groupFor(person._treeKey)));
-  const depths = new Map(records.map((person) => [person._treeKey, groupDepths.get(groupFor(person._treeKey)) || 0]));
-  const layers = new Map();
-  records.forEach((person) => {
-    const depth = depths.get(person._treeKey) || 0;
-    if (!layers.has(depth)) layers.set(depth, []);
-    layers.get(depth).push(person);
-  });
   const groupMembers = new Map();
   records.forEach((person) => {
     const group = groupFor(person._treeKey);
     if (!groupMembers.has(group)) groupMembers.set(group, []);
     groupMembers.get(group).push(person);
   });
-  groupMembers.forEach((members) => members.sort((left, right) => left.name.localeCompare(right.name)));
+  const comparePeople = (left, right) => left.name.localeCompare(right.name)
+    || left._treeKey.localeCompare(right._treeKey);
+  groupMembers.forEach((members) => members.sort(comparePeople));
+  const childrenFor = (person) => [...new Set((Array.isArray(person.children) ? person.children : [])
+    .map((reference) => byId.get(reference)).filter(Boolean))];
+  const parentGroups = new Set();
+  records.forEach((person) => childrenFor(person).forEach((key) => parentGroups.add(groupFor(key))));
 
-  const maxDepth = Math.max(...layers.keys());
-  const maxLayerSize = Math.max(...[...layers.values()].map((layer) => layer.length));
-  let width = Math.max(2 * padding + nodeWidth, 2 * padding + maxLayerSize * nodeWidth + (maxLayerSize - 1) * horizontalGap);
-  const layerHeights = new Map([...layers].map(([depth, layer]) => [depth, Math.max(...layer.map(nodeHeightFor))]));
-  const height = 2 * padding + [...layerHeights.values()].reduce((sum, layerHeight) => sum + layerHeight, 0) + maxDepth * verticalGap;
-  const layerOffsets = new Map();
-  let layerOffset = 0;
-  [...layers.keys()].sort((left, right) => left - right).forEach((depth) => {
-    layerOffsets.set(depth, layerOffset);
-    layerOffset += layerHeights.get(depth) + verticalGap;
+  // Reserve space for complete descendant branches before placing any cards.
+  // A shared descendant gets another occurrence, rather than an edge crossing
+  // another family's branch. References still open the same person record.
+  const covered = new Set();
+  const occurrences = [];
+  const makeBranch = (group, ancestors = new Set()) => {
+    covered.add(group);
+    const branch = { group, members: groupMembers.get(group).map((person) => ({ ...person })), families: [] };
+    occurrences.push(branch);
+    if (ancestors.has(group)) return branch;
+    const nextAncestors = new Set([...ancestors, group]);
+    const families = new Map();
+    branch.members.forEach((person) => {
+      const children = childrenFor(person).sort((left, right) => comparePeople(
+        recordsByKey.get(left), recordsByKey.get(right)));
+      // Parents listing the same children share one sibling bus. Different
+      // child lists keep their own space, preserving the recorded parentage.
+      const signature = JSON.stringify(children);
+      if (!families.has(signature)) families.set(signature, { parents: [], children });
+      families.get(signature).parents.push(person);
+    });
+    branch.families = [...families.values()].map((family) => ({
+      parents: family.parents,
+      children: family.children.map((key) => ({ key, branch: makeBranch(groupFor(key), nextAncestors) })),
+    }));
+    return branch;
+  };
+  const recordsByKey = new Map(records.map((person) => [person._treeKey, person]));
+  const groups = [...groupMembers.keys()].sort((left, right) => comparePeople(
+    groupMembers.get(left)[0], groupMembers.get(right)[0]));
+  const roots = groups.filter((group) => !parentGroups.has(group)).map((group) => makeBranch(group));
+  // Retain components with cyclic/inconsistent ancestry, stopping expansion
+  // at an already visited group on the current path.
+  groups.forEach((group) => {
+    if (!covered.has(group)) roots.push(makeBranch(group));
   });
-  const positions = new Map();
-  layers.forEach((layer, depth) => {
-    const groups = [...new Set(layer.map((person) => groupFor(person._treeKey)))].map((group) => {
-      const members = groupMembers.get(group) || [];
-      const parents = [...(groupParents.get(group) || [])];
-      const parentCenters = parents.flatMap((parent) => (groupMembers.get(parent) || [])
-        .map((person) => positions.get(person._treeKey)?.x + nodeWidth / 2)
-        .filter(Number.isFinite));
-      const target = parentCenters.length
-        ? parentCenters.reduce((sum, center) => sum + center, 0) / parentCenters.length
-        : null;
-      return { group, members, target, parents: parents.sort(), name: members[0]?.name || '' };
-    }).sort((left, right) => {
-      if (left.target !== null && right.target !== null && left.target !== right.target) return left.target - right.target;
-      if (left.target !== null && right.target === null) return -1;
-      if (left.target === null && right.target !== null) return 1;
-      return left.name.localeCompare(right.name);
-    });
-    // Sibling groups with the same parent set form one layout unit. Positioning
-    // each group independently pushes later siblings to the right of their
-    // parent's center, even when they share the same parent.
-    const units = [];
-    const unitByParents = new Map();
-    groups.forEach((group) => {
-      const key = group.parents.join('\u0000');
-      if (!group.parents.length) {
-        units.push({ groups: [group], target: group.target, name: group.name });
-        return;
-      }
-      if (!unitByParents.has(key)) {
-        const unit = { groups: [], target: group.target, name: group.name };
-        unitByParents.set(key, unit);
-        units.push(unit);
-      }
-      unitByParents.get(key).groups.push(group);
-    });
-    units.forEach((unit) => {
-      unit.width = unit.groups.reduce((sum, group) => sum + group.members.length * nodeWidth
-        + Math.max(0, group.members.length - 1) * horizontalGap, 0)
-        + Math.max(0, unit.groups.length - 1) * horizontalGap;
-    });
-    const totalWidth = units.reduce((sum, unit) => sum + unit.width, 0) + Math.max(0, units.length - 1) * horizontalGap;
-    let cursor = units.some(({ target }) => target !== null)
-      ? padding
-      : Math.max(padding, (width - totalWidth) / 2);
-    units.forEach(({ groups: unitGroups, target, width: unitWidth }) => {
-      const unitX = Math.max(cursor, target === null ? cursor : target - unitWidth / 2);
-      let groupX = unitX;
-      unitGroups.forEach(({ members }) => {
-        members.forEach((person, index) => positions.set(person._treeKey, {
-          x: groupX + index * (nodeWidth + horizontalGap),
-          y: padding + layerOffsets.get(depth),
-        }));
-        groupX += members.length * nodeWidth + Math.max(0, members.length - 1) * horizontalGap + horizontalGap;
-      });
-      cursor = unitX + unitWidth + horizontalGap;
-    });
-  });
-  // Layout units may extend past the width estimate when sibling groups share
-  // parents. Derive the SVG bounds from the final positions so edge cards are
-  // never clipped by the viewBox.
-  const rightmostNode = Math.max(...[...positions.values()].map(({ x }) => x + nodeWidth));
-  width = Math.max(width, rightmostNode + padding);
+  const occurrenceCounts = new Map();
+  occurrences.forEach(({ members }) => members.forEach((person) => occurrenceCounts.set(
+    person._treeKey, (occurrenceCounts.get(person._treeKey) || 0) + 1)));
+  occurrences.forEach(({ members }) => members.forEach((person) => {
+    person._treeRepeated = occurrenceCounts.get(person._treeKey) > 1;
+  }));
 
-  const edges = [];
-  const spousePairs = new Set();
-  records.forEach((person) => {
-    const from = positions.get(person._treeKey);
-    if (!from) return;
-    const wifeKey = byId.get(person.wife);
-    const wife = positions.get(wifeKey);
-    const spousePair = [person._treeKey, wifeKey].sort().join('\u0000');
-    if (wife && !spousePairs.has(spousePair)) {
-      spousePairs.add(spousePair);
-      const left = from.x < wife.x ? from : wife;
-      const right = from.x < wife.x ? wife : from;
-      const edgeY = Math.min(left.y + nodeHeightFor(records.find((item) => positions.get(item._treeKey) === left)) / 2,
-        right.y + nodeHeightFor(records.find((item) => positions.get(item._treeKey) === right)) / 2);
-      edges.push(`<line class="people-tree-spouse" x1="${left.x + nodeWidth}" y1="${edgeY}" x2="${right.x}" y2="${edgeY}"/><text class="people-tree-edge-label" x="${(left.x + nodeWidth + right.x) / 2}" y="${edgeY - 8}">wife</text>`);
+  const rowWidth = (count) => count * nodeWidth + Math.max(0, count - 1) * horizontalGap;
+  const measure = (branch) => {
+    branch.levels = 1;
+    if (!branch.families.length) {
+      branch.width = rowWidth(branch.members.length);
+      return branch.width;
     }
-    (Array.isArray(person.children) ? person.children : []).forEach((childRef) => {
-      const child = positions.get(byId.get(childRef));
-      if (child) {
-        const startX = from.x + nodeWidth / 2;
-        const startY = from.y + nodeHeightFor(person);
-        const endX = child.x + nodeWidth / 2;
-        const endY = child.y;
-        const cornerY = (startY + endY) / 2;
-        edges.push(`<path class="people-tree-parent" fill="none" d="M${startX} ${startY} V${cornerY} H${endX} V${endY}"/>`);
-      }
+    branch.families.forEach((family) => {
+      family.childrenWidth = family.children.reduce((sum, child) => sum + measure(child.branch), 0)
+        + Math.max(0, family.children.length - 1) * horizontalGap;
+      family.children.forEach((child) => { branch.levels = Math.max(branch.levels, child.branch.levels + 1); });
+      family.width = Math.max(rowWidth(family.parents.length), family.childrenWidth);
     });
+    branch.width = branch.families.reduce((sum, family) => sum + family.width, 0)
+      + Math.max(0, branch.families.length - 1) * horizontalGap;
+    return branch.width;
+  };
+  roots.forEach(measure);
+  const layerHeights = [];
+  const collectHeights = (branch, depth) => {
+    layerHeights[depth] = Math.max(layerHeights[depth] || 0, ...branch.members.map(nodeHeightFor));
+    branch.families.forEach((family) => family.children.forEach((child) => collectHeights(child.branch, depth + 1)));
+  };
+  roots.forEach((branch) => collectHeights(branch, 0));
+  const layerOffsets = [];
+  let height = padding;
+  layerHeights.forEach((layerHeight, depth) => {
+    layerOffsets[depth] = height;
+    height += layerHeight + verticalGap;
   });
-  const nodes = records.map((person) => {
-    const position = positions.get(person._treeKey);
+  // Pack disconnected families into rows so small independent trees do not
+  // make the complete diagram unnecessarily wide when fitted to the viewport.
+  roots.forEach((branch) => {
+    const lastLayer = branch.levels - 1;
+    branch.height = layerOffsets[lastLayer] + layerHeights[lastLayer] - padding;
+  });
+  const componentGap = horizontalGap * 2;
+  const targetWidth = Math.max(...roots.map((branch) => branch.width), Math.sqrt(
+    roots.reduce((area, branch) => area + (branch.width + componentGap) * (branch.height + componentGap), 0) * 1.6));
+  let rootX = padding;
+  let rootY = 0;
+  let rowHeight = 0;
+  let width = 0;
+  roots.forEach((branch) => {
+    if (rootX > padding && rootX + branch.width > padding + targetWidth) {
+      rootX = padding;
+      rootY += rowHeight + componentGap;
+      rowHeight = 0;
+    }
+    branch.x = rootX;
+    branch.y = rootY;
+    rootX += branch.width + componentGap;
+    rowHeight = Math.max(rowHeight, branch.height);
+    width = Math.max(width, branch.x + branch.width + padding);
+  });
+  height = rootY + rowHeight + 2 * padding;
+  const cards = [];
+  const edges = [];
+  const place = (branch, x, depth, offsetY) => {
+    branch.positions = new Map();
+    const y = offsetY + layerOffsets[depth];
+    const placeParents = (parents, start) => parents.forEach((person, index) => {
+      const position = { x: start + index * (nodeWidth + horizontalGap), y };
+      branch.positions.set(person._treeKey, position);
+      cards.push({ person, ...position });
+    });
+    if (!branch.families.length) placeParents(branch.members, x);
+    let familyX = x;
+    branch.families.forEach((family) => {
+      let childX = familyX + (family.width - family.childrenWidth) / 2;
+      family.children.forEach((child) => {
+        place(child.branch, childX, depth + 1, offsetY);
+        childX += child.branch.width + horizontalGap;
+      });
+      const childCenters = family.children.map((child) => child.branch.positions.get(child.key).x + nodeWidth / 2);
+      const parentWidth = rowWidth(family.parents.length);
+      const target = childCenters.length
+        ? (Math.min(...childCenters) + Math.max(...childCenters)) / 2
+        : familyX + family.width / 2;
+      const parentX = Math.max(familyX, Math.min(familyX + family.width - parentWidth, target - parentWidth / 2));
+      placeParents(family.parents, parentX);
+      if (family.children.length) {
+        const busY = y + layerHeights[depth] + verticalGap / 2;
+        const parentCenters = family.parents.map((person) => branch.positions.get(person._treeKey).x + nodeWidth / 2);
+        const centers = [...parentCenters, ...childCenters];
+        // Draw each segment once: one sibling bus, one drop per child, and
+        // one stem per recorded parent. Nothing runs through another branch.
+        const segments = [`M${Math.min(...centers)} ${busY} H${Math.max(...centers)}`];
+        family.parents.forEach((person, index) => {
+          segments.push(`M${parentCenters[index]} ${y + nodeHeightFor(person)} V${busY}`);
+        });
+        childCenters.forEach((center) => segments.push(`M${center} ${busY} V${offsetY + layerOffsets[depth + 1]}`));
+        edges.push(`<path class="people-tree-parent" fill="none" d="${segments.join(' ')}"/>`);
+      }
+      familyX += family.width + horizontalGap;
+    });
+    const spousePairs = new Set();
+    branch.members.forEach((person) => {
+      const wifeKey = byId.get(person.wife);
+      if (!wifeKey || wifeKey === person._treeKey) return;
+      const pair = [person._treeKey, wifeKey].sort().join('\u0000');
+      if (spousePairs.has(pair)) return;
+      spousePairs.add(pair);
+      const from = branch.positions.get(person._treeKey);
+      const to = branch.positions.get(wifeKey);
+      const left = from.x < to.x ? from : to;
+      const right = from.x < to.x ? to : from;
+      const edgeY = y + Math.min(...branch.members.map(nodeHeightFor)) / 2;
+      edges.push(`<line class="people-tree-spouse" x1="${left.x + nodeWidth}" y1="${edgeY}" x2="${right.x}" y2="${edgeY}"/><text class="people-tree-edge-label" x="${(left.x + nodeWidth + right.x) / 2}" y="${edgeY - 8}">wife</text>`);
+    });
+  };
+  roots.forEach((branch) => place(branch, branch.x, 0, branch.y));
+  const nodes = cards.map(({ person, x, y }) => {
     const nodeHeight = nodeHeightFor(person);
-    const text = personLines(person).map((line, index) => `<tspan class="${index ? 'people-tree-detail' : 'people-tree-name'}" x="${position.x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line)}</tspan>`).join('');
+    const text = personLines(person).map((line, index) => `<tspan class="${index ? 'people-tree-detail' : 'people-tree-name'}" x="${x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line)}</tspan>`).join('');
     const href = `?person=${encodeURIComponent(person.id || person.name)}`;
-    return `<a class="people-tree-person-link" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${position.x}" y="${position.y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${position.x + nodeWidth / 2}" y="${position.y + 25}" text-anchor="middle">${text}</text></g></a>`;
+    return `<a class="people-tree-person-link" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${x}" y="${y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${x + nodeWidth / 2}" y="${y + 25}" text-anchor="middle">${text}</text></g></a>`;
   }).join('');
   return `<section class="people-tree-wrap" aria-label="Family tree viewer"><div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div></section>`;
 }

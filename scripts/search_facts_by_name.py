@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Find facts mentioning a person name, including spelling variants.
+"""Find facts by person ID, person name, surname, or place.
 
 Examples:
     python3 scripts/search_facts_by_name.py 'Eberhardi v. Roßenberg'
     python3 scripts/search_facts_by_name.py Eberhard
     python3 scripts/search_facts_by_name.py Rosenberg
+    python3 scripts/search_facts_by_name.py vogt_zu_Lauda
+    python3 scripts/search_facts_by_name.py Boxberg
 """
 
 import argparse
@@ -105,7 +107,8 @@ def fact_records(data_dir):
                             else:
                                 text, fact_date = str(fact), date
                             if text:
-                                yield path, location, fact_index, fact_date, value.get("source") or value.get("title", ""), text
+                                metadata = " ".join(str(value.get(key, "")) for key in ("place", "title", "name", "label"))
+                                yield path, location, fact_index, fact_date, value.get("source") or value.get("title", ""), text, metadata
                     elif isinstance(child, (dict, list)):
                         yield from visit(child, location + (key,), date)
             elif isinstance(value, list):
@@ -117,13 +120,20 @@ def fact_records(data_dir):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("name", help="full name, given name, or surname")
+    parser.add_argument("name", help="person ID, full name, given name, surname, or place")
     parser.add_argument("--data-dir", type=Path, default=ROOT / "data", help=argparse.SUPPRESS)
     args = parser.parse_args()
 
     groups = name_groups()
     aliases = alias_map(groups)
     id_names = person_id_name_tokens()
+    people = json.loads((ROOT / "data/people.json").read_text(encoding="utf-8"))
+    person_by_id = {norm(person.get("id", "")): person for person in people if person.get("id")}
+    person_names = {norm(person.get("id", "")): person.get("name", "") for person in people if person.get("id") and person.get("name")}
+    query_id = norm(args.name)
+    selected_person = person_by_id.get(query_id)
+    places = json.loads((ROOT / "data/places.json").read_text(encoding="utf-8"))
+    place_variants = {norm(v) for place in places for v in place.get("variations", [])}
     query = [norm(token) for token in re.findall(r"[^\W_]+", args.name, flags=re.UNICODE)]
     particles = {
         norm(line.strip())
@@ -131,6 +141,8 @@ def main():
         if line.strip()
     }
     query = [token for token in query if token not in particles]
+    if selected_person:
+        query = [norm(token) for token in re.findall(r"[^\W_]+", selected_person.get("name", ""), flags=re.UNICODE)]
     if not query:
         parser.error("query must contain a name or surname")
 
@@ -138,18 +150,47 @@ def main():
         return q == token or token in aliases.get(q, {q})
 
     found = 0
-    for path, location, fact_index, date, source, text in fact_records(args.data_dir):
+    for path, location, fact_index, date, source, text, metadata in fact_records(args.data_dir):
         tokens = [norm(token) for token in re.findall(r"[^\W_]+", text, flags=re.UNICODE)]
         identifiers = [norm(identifier) for identifier in re.findall(r"\[([^]]+)\]", text)]
         tokens.extend(identifiers)
         for identifier in identifiers:
             tokens.extend(id_names.get(identifier, ()))
-        if all(any(equivalent(q, token) for token in tokens) for q in query):
+        metadata_tokens = [norm(token) for token in re.findall(r"[^\W_]+", metadata, flags=re.UNICODE)]
+        is_place_query = not selected_person and len(query) == 1 and query[0] in place_variants
+        if selected_person:
+            id_match = query_id in identifiers
+            name_match = all(any(equivalent(q, token) for token in tokens) for q in query)
+            matched = id_match or name_match
+            uncertain = matched and not identifiers
+        elif is_place_query:
+            matched = any(equivalent(query[0], token) for token in tokens + metadata_tokens)
+            uncertain = False
+        else:
+            matched = all(any(equivalent(q, token) for token in tokens + metadata_tokens) for q in query)
+            uncertain = False
+        if matched:
             found += 1
-            relative_path = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
-            context = "/".join(location) or "root"
-            print(f"{relative_path} | {context} | fact {fact_index}" + (f" | {date}" if date else "") + (f" | {source}" if source else ""))
-            print(f"  {text}")
+            prefix = f"[{date}] " if date else ""
+            rendered = re.sub(
+                r"\[([^]]+)\]",
+                lambda match: (
+                    f"{person_names.get(norm(match.group(1)), '')} [{match.group(1)}]"
+                    if norm(match.group(1)) in person_names
+                    else match.group(0)
+                ),
+                text,
+            )
+            if uncertain and selected_person:
+                full_name = selected_person.get("name", "")
+                rendered = re.sub(
+                    rf"(?<![\w])({re.escape(full_name)})(?![\w])",
+                    r"\1 [not recognised]",
+                    rendered,
+                    count=1,
+                    flags=re.IGNORECASE,
+                )
+            print(f"{prefix}{rendered}")
     if not found:
         print("No matching facts found.")
 
