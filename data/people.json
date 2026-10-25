@@ -27,7 +27,8 @@
       "konrad_son_of_vogt_zu_Durn",
       "engelhard_son_of_vogt_zu_Durn",
       "hermann_son_of_vogt_zu_Durn"
-    ]
+    ],
+    "wife": "irmtraut_wife_of_vogt_zu_Durn"
   },
   {
     "name": "Arnold von Rosenberg",
@@ -125,18 +126,18 @@
     "died": null
   },
   {
-    "id": "konrad_boxberg",
+    "id": "konrad_schonau",
     "name": "Konrad von Rosenberg",
     "titles": [
       "Ritter"
     ],
-    "wife": "wife_of_konrad",
+    "wife": "wife_of_konrad_schonau",
     "children": [],
     "born": null,
     "died": null
   },
   {
-    "id": "wife_of_konrad",
+    "id": "wife_of_konrad_schonau",
     "name": "Adelheid von Hirschhorn",
     "titles": [],
     "born": null,
