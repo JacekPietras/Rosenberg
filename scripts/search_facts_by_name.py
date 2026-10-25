@@ -90,7 +90,7 @@ def person_id_name_tokens():
 
 
 def fact_records(data_dir):
-    """Yield every fact array in the data tree, including nested research JSON."""
+    """Yield stored facts and runtime seal facts, including nested research JSON."""
     for path in sorted(data_dir.rglob("*.json")):
         try:
             document = json.loads(path.read_text(encoding="utf-8"))
@@ -100,6 +100,30 @@ def fact_records(data_dir):
         def visit(value, location=(), inherited_date=""):
             if isinstance(value, dict):
                 date = value.get("date") or inherited_date
+                images = value.get("img", [])
+                if isinstance(images, dict):
+                    images = [images]
+                seen_seals = set()
+                if isinstance(images, list):
+                    for image in images:
+                        if not isinstance(image, dict) or image.get("deleted") in (True, "true"):
+                            continue
+                        for seal in image.get("seals", []):
+                            if not isinstance(seal, dict):
+                                continue
+                            person = seal.get("person", "")
+                            if not isinstance(person, str):
+                                continue
+                            person = person.strip()
+                            if not person or person == "?" or person.casefold() == "unknown" or person in seen_seals:
+                                continue
+                            seen_seals.add(person)
+                            source = value.get("source") or value.get("title") or path.stem
+                            if isinstance(source, list):
+                                source = "; ".join(str(reference) for reference in source)
+                            text = f"The seal of {person} is under document {source}."
+                            metadata = " ".join(str(value.get(key, "")) for key in ("place", "title", "name", "label"))
+                            yield path, location, f"seal-{len(seen_seals)}", date, source, text, metadata
                 for key, child in value.items():
                     if key == "facts" and isinstance(child, list):
                         for fact_index, fact in enumerate(child, 1):
