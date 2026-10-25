@@ -16,9 +16,10 @@
       "english": "Arnold von Rosenberg, nobleman, and his wife Elisabeth, sell their share of Boxberg to their brother and brother-in-law Eberhard von Rosenberg for 6,000 guilders with the permission of Count Palatine Ruprecht der Ältere as feudal lord.\n\nthe 2 exhibitors, Konrad von Rosenberg, Vicedom of Heidelberg, as well as Kunz and Hans von Rosenberg",
       "facts": [
         "Arnold von Rosenberg is titled Edelknecht.",
-        "Elisabeth, wife of Arnold von Rosenberg, is named as a seller.",
-        "Arnold von Rosenberg and Elisabeth, his wife, sold their share of Boxberg to [vogt_zu_Lauda].",
-        "[vogt_zu_Lauda] is brother of Arnold von Rosenberg and brother-in-law of Elisabeth.",
+        "[else_wife_of_arnold] is wife of Arnold von Rosenberg.",
+        "[else_wife_of_arnold] was named as a seller.",
+        "Arnold von Rosenberg and [else_wife_of_arnold] sold their share of Boxberg to [vogt_zu_Lauda].",
+        "[vogt_zu_Lauda] is brother of Arnold von Rosenberg and brother-in-law of [else_wife_of_arnold].",
         "Konrad von Rosenberg is titled Vicedom zu Heidelberg.",
         "Konrad von Rosenberg served as sealer for the Boxberg sale.",
         "Kunz von Rosenberg served as sealer for the Boxberg sale.",

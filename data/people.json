@@ -108,8 +108,10 @@
     "id": "engelhard_son_of_vogt_zu_Durn",
     "name": "Engelhard von Rosenberg",
     "titles": [],
-    "wife": null,
-    "children": [],
+    "wife": "anne_ruchs",
+    "children": [
+      "eberhard_son_of_engelhard_von_rosenberg"
+    ],
     "born": null,
     "died": null
   },
@@ -137,6 +139,63 @@
     "id": "wife_of_konrad",
     "name": "Adelheid von Hirschhorn",
     "titles": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "heinrich_von_Erligheim",
+    "name": "Heinrich von Erligheim",
+    "titles": [
+      "Ritter"
+    ],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "some_arnold",
+    "name": "Arnold von Rosenberg",
+    "titles": [],
+    "wife": "else_wife_of_arnold",
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "else_wife_of_arnold",
+    "name": "Else",
+    "titles": [],
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "anne_ruchs",
+    "name": "Anne Ruchs",
+    "titles": [],
+    "wife": null,
+    "children": [
+      "eberhard_son_of_engelhard_von_rosenberg"
+    ],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "eberhard_son_of_engelhard_von_rosenberg",
+    "name": "Eberhard von Rosenberg",
+    "titles": [],
+    "wife": "anne_von_bebenburg",
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "anne_von_bebenburg",
+    "name": "Anne von Bebenburg",
+    "titles": [],
+    "wife": null,
+    "children": [],
     "born": null,
     "died": null
   }

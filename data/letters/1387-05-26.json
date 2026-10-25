@@ -9,8 +9,8 @@
       "facts": [
         "Arnold von Rosenberg is titled Edelknecht.",
         "Arnold von Rosenberg sold his share of Boxberg to his brother [vogt_zu_Lauda].",
-        "Elisabeth, wife of Arnold von Rosenberg, was identified as a seller.",
-        "Elisabeth, wife of Arnold von Rosenberg, participated in the sale of Arnold von Rosenberg's share of Boxberg.",
+        "[else_wife_of_arnold] is wife of Arnold von Rosenberg.",
+        "[else_wife_of_arnold] participated in the sale of Arnold von Rosenberg's share of Boxberg.",
         "[vogt_zu_Lauda] is brother of Arnold von Rosenberg.",
         "[vogt_zu_Lauda] purchased Arnold von Rosenberg's share of Boxberg.",
         "Konrad von Rosenberg is titled Vitztum zu Heidelberg.",
