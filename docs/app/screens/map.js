@@ -141,7 +141,7 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
     const map = mapById.get(mapMode);
     if (map) {
       const bounds = [[0, 0], [map.height, map.width]];
-      const leafletMap = L.map(container, { crs: L.CRS.Simple, scrollWheelZoom: true, minZoom: -10, maxZoom: fitPlaceMarkers ? 14 : 10, zoomSnap: fitPlaceMarkers ? 0.25 : 1 });
+      const leafletMap = L.map(container, { crs: L.CRS.Simple, scrollWheelZoom: true, minZoom: -10, maxZoom: fitPlaceMarkers ? 12 : 10, zoomSnap: fitPlaceMarkers ? 0.1 : 1 });
       setMap(leafletMap);
       L.imageOverlay(map.image, bounds).addTo(leafletMap);
       leafletMap.setMaxBounds(L.latLngBounds(bounds).pad(0.5));
@@ -169,7 +169,6 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
         return [map.height - point.y, point.x];
       })) : null;
       leafletMap.fitBounds(carriedCorners ? latLonCornersToView(carriedCorners, mapMode, calibrationCities) : markerBounds?.isValid() ? markerBounds.pad(0.04) : bounds, { padding: [14, 14] });
-      if (fitPlaceMarkers && !carriedCorners) leafletMap.setZoom(Math.min(leafletMap.getZoom() + 1, 14));
       return;
     }
     const leafletMap = L.map(container, { scrollWheelZoom: true });
@@ -179,7 +178,6 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
     if (carriedCorners) leafletMap.fitBounds(latLonCornersToView(carriedCorners, 'live', calibrationCities));
     else if (markers.length) {
       leafletMap.fitBounds(L.featureGroup(markers).getBounds(), { padding: fitPlaceMarkers ? [14, 14] : [40, 40] });
-      if (fitPlaceMarkers) leafletMap.setZoom(Math.min(leafletMap.getZoom() + 1, 18));
     }
     else leafletMap.setView([49, 9], 6);
   }
