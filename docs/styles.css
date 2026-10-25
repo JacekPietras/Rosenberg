@@ -229,7 +229,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .people-tree-parent { fill: none; stroke: var(--accent); stroke-width: 1.5; }
 .people-tree-spouse { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 5 4; }
 .people-tree-edge-label { fill: var(--muted); font-size: 11px; text-anchor: middle; }
-.map-wrap { position: relative; margin: 1.5rem 0; }
+.map-wrap { position: relative; isolation: isolate; z-index: 0; margin: 1.5rem 0; }
 .map-container { height: 70vh; min-height: 22rem; margin: 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #dce6e0; }
 .map-container .leaflet-popup-content a.place-link { color: #3267b1; font-weight: 650; }
 .calibration-point-icon { width: 10px; height: 10px; border-radius: 50%; background: #d1495b; border: 2px solid #fff; box-shadow: 0 0 0 1px rgb(0 0 0 / .35); }
@@ -268,7 +268,7 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .map-credit { flex: none; margin: .25rem 0 0; }
 .map-credit-wrap .map-credit { max-width: min(34rem, calc(100vw - 3rem)); margin: .35rem 0 0; padding: .4rem .55rem; color: var(--muted); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
 .person-places-map { margin: 1rem 0 1.5rem; }
-.person-map-wrap { position: relative; }
+.person-map-wrap { position: relative; isolation: isolate; z-index: 0; }
 .person-place-map { position: relative; height: min(38vh, 26rem); min-height: 18rem; flex: none; }
 .person-map-mode-switch { position: absolute; top: .6rem; right: .6rem; z-index: 1000; display: flex; gap: 1px; padding: 2px; background: var(--surface); border: 1px solid var(--line); border-radius: 7px; }
 .models-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 1rem; margin: 1.5rem 0; }

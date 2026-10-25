@@ -120,9 +120,12 @@ export function createEntityScreens({
     const pattern = person ? buildPersonPattern([person])[0]?.pattern : /$a/;
     if (!person) return renderPage(person, [], 'person', pattern);
     const selectedId = people.some((item) => item.id === state.person) ? person.id : '';
+    const selectedIds = selectedId ? [selectedId] : people
+      .filter((item) => item.id && item.name.toLocaleLowerCase() === person.name.toLocaleLowerCase())
+      .map((item) => item.id);
     const matchesPerson = (value, personId) => {
       const text = String(value || '');
-      return (selectedId && (personId === selectedId || text.includes(`[${selectedId}]`)))
+      return selectedIds.some((id) => personId === id || text.includes(`[${id}]`))
         || text.toLocaleLowerCase().includes(person.name.toLocaleLowerCase());
     };
     const imageEntries = getDocuments().get('data/images/images.json')?.entries || [];
@@ -136,17 +139,23 @@ export function createEntityScreens({
       (doc?.entries || []).forEach((entry, index) => {
         const nodes = Array.isArray(entry.img) ? entry.img : [entry.img];
         nodes.forEach((node, imageIndex) => {
+          if (!node || (typeof node === 'object' && node.deleted === 'true')) return;
           const seals = node && typeof node === 'object' ? node.seals : imageIndex === 0 ? entry.seals : [];
           (Array.isArray(seals) ? seals : []).forEach((seal) => {
-            if (matchesPerson(seal?.person, '')) sealEntries.push({ doc, path, entry, index, node, imageIndex, seal });
+            if (!matchesPerson(seal?.person, '')) return;
+            const position = String(seal.position || '').split(',').map(Number);
+            const size = Number(seal.size);
+            if (position.length !== 2 || !position.every(Number.isFinite) || !Number.isFinite(size) || size <= 0) return;
+            const crop = { x: position[0], y: position[1], size, width: Number(seal.width) || 0, wideningRotation: Number(seal.wideningRotation) || 0, rotation: Number(seal.rotation) || 0 };
+            sealEntries.push({ doc, path, entry, index, node, imageIndex, seal, crop });
           });
         });
       });
     });
-    const sealsMarkup = sealEntries.length ? `<section class="entity-seals"><h3 class="entity-section-title">Seals</h3><div class="models-grid armorial-grid">${sealEntries.map(({ doc, path, entry, index, node, imageIndex, seal }) => {
+    const sealsMarkup = sealEntries.length ? `<section class="entity-seals"><h3 class="entity-section-title">Seals</h3><div class="models-grid armorial-grid">${sealEntries.map(({ doc, path, entry, index, node, imageIndex, seal, crop }) => {
       const date = entry.date || doc.date || '';
       const title = entry.title || documentTitle(doc, path);
-      return `<article class="model-card armorial-card"><div class="model-info"><h2 class="model-title">${markdownLinks(title)}${date ? ` [${escapeHtml(date)}]` : ''}</h2></div><div class="image-record-visual">${imageMarkup(node, [seal], { path, index, imageIndex, title, sealScreen: true })}</div></article>`;
+      return `<article class="model-card"><div class="model-info"><h2 class="model-title">${markdownLinks(title)}${date ? ` [${escapeHtml(date)}]` : ''}</h2></div><div class="image-record-visual seal-entry-media">${imageMarkup(node, [seal], { path, index, imageIndex, title, crop, sealScreen: true })}</div></article>`;
     }).join('')}</div></section>` : '';
     const personPlacesMarkup = person ? '<section class="person-places-map"><div class="person-map-wrap"><div id="person-place-map" class="map-container person-place-map" role="application" aria-label="Places mentioned in this person’s facts"></div></div></section>' : '';
     return renderPage(person, mentionsFor(person, 'person'), 'person', pattern, () => '', `${personPlacesMarkup}${imagesMarkup}${sealsMarkup}`);

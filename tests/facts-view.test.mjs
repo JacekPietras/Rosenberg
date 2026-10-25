@@ -15,8 +15,31 @@ async function moduleUrl(path) {
 }
 const { renderFactsView } = await import(await moduleUrl(new URL('../docs/app/components/facts_view.js', import.meta.url)));
 const { createDocumentRenderer } = await import(await moduleUrl(new URL('../docs/app/screens/documents.js', import.meta.url)));
+const { createEntityScreens } = await import(await moduleUrl(new URL('../docs/app/screens/entities.js', import.meta.url)));
+const { buildPersonPattern } = await import(await moduleUrl(new URL('../docs/app/data/entities.js', import.meta.url)));
 const { escapeHtml } = await import(await moduleUrl(new URL('../docs/app/rendering/html.js', import.meta.url)));
 const options = { people: [{ id: 'eberhard', name: 'Eberhard' }], inlineMarkup: escapeHtml };
+
+test('person name pages include ID-linked effigies while ID pages distinguish namesakes', async () => {
+  const people = JSON.parse(await readFile(new URL('../data/people.json', import.meta.url), 'utf8'));
+  const images = JSON.parse(await readFile(new URL('../data/images/images.json', import.meta.url), 'utf8'));
+  const effigy = images.entries.find((entry) => entry.title === '[vogt_zu_Lauda]');
+  const state = {};
+  const { renderPersonPage } = createEntityScreens({
+    state, getPeople: () => people,
+    getDocuments: () => new Map([['data/images/images.json', { entries: [effigy] }]]),
+    buildPersonPattern, escapeHtml, inlineMarkup: escapeHtml, markdownLinks: escapeHtml,
+    dateSortValue: () => 0, formatDate: String,
+    documentTitle: () => 'Images', documentNavigationUrl: () => '#',
+    displayedLanguagesFor: () => [], imageMarkup: () => '',
+  });
+  for (const person of ['Eberhard von Rosenberg', 'eberhard von rosenberg', 'vogt_zu_Lauda']) {
+    state.person = person;
+    assert.ok(renderPersonPage().includes(effigy.coverImage), person);
+  }
+  state.person = 'vogt_zu_Durn';
+  assert.ok(!renderPersonPage().includes(effigy.coverImage));
+});
 
 test('shared facts view formats dates, groups repeated dates, and preserves person links', () => {
   const html = renderFactsView([
