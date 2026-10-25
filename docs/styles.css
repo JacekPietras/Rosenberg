@@ -186,10 +186,11 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .entity-history li { padding: 0 0 .65rem .15rem; line-height: 1.55; }
 .entity-history li:last-child { padding-bottom: 0; }
 .entity-facts h3, .entity-section-title { margin: 0 0 .7rem; color: var(--ink); font-size: 1rem; font-weight: 650; }
-.entity-facts .facts { margin-top: 0; padding-left: 1rem; list-style: none; }
-.entity-facts .facts li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: .25rem .75rem; align-items: baseline; padding: 0; }
-.entity-fact-date { display: block; margin-bottom: .1rem; color: var(--muted); font-size: .78rem; }
-.entity-fact-text { display: block; min-width: 0; }
+.entity-facts .facts { margin-top: 0; }
+.facts.facts-view { padding-left: 1rem; list-style: none; }
+.facts.facts-view li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: .25rem .75rem; align-items: baseline; padding: 0; }
+.fact-date { display: block; margin-bottom: .1rem; color: var(--muted); font-size: .78rem; }
+.fact-text { display: block; min-width: 0; }
 .entity-fact-ambiguous { opacity: .62; }
 .entity-section-title { margin-top: 2rem; }
 .entry { padding: .9rem 0; }
@@ -390,8 +391,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 }
 
 @media (max-width: 500px) {
-  .entity-facts .facts li { grid-template-columns: 1fr; gap: .1rem; }
-  .entity-fact-date { margin-bottom: 0; }
+  .facts.facts-view li { grid-template-columns: 1fr; gap: .1rem; }
+  .fact-date { margin-bottom: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

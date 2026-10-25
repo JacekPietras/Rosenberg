@@ -3,21 +3,21 @@ import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=90';
 import { renderActiveScreen } from './screens/router-view.js?v=2';
-import { createDocumentRenderer } from './screens/documents.js?v=3';
+import { createDocumentRenderer } from './screens/documents.js?v=6';
 import { setupLetterLabelSelector } from './screens/letter-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=79';
 import { createSealScreen } from './screens/seals.js?v=2';
 import { createImageScreen } from './screens/images.js?v=36';
 import { createDataLoader } from './data/loader.js?v=5';
-import { createEntityScreens } from './screens/entities.js?v=88';
+import { createEntityScreens } from './screens/entities.js?v=90';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';
 import { createMapScreen } from './screens/map.js?v=79';
-import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=93';
+import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=94';
 import { createMarkupRenderer } from './rendering/markup.js?v=81';
-import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=7';
+import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=8';
 import { sortByDate } from './image-date-sort.js?v=2';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
 import { createLanguageRenderer } from './rendering/languages.js';
@@ -1230,7 +1230,7 @@ function scrollToEntryHash() {
 
 const markupRenderer = createMarkupRenderer({ state });
 const citationIndex = createCitationIndex({ state });
-const imageRenderer = createImageRenderer({ personMarkup: markupRenderer.inlineMarkup });
+const imageRenderer = createImageRenderer();
 const languageRenderer = createLanguageRenderer({ state, markdownMarkup: markupRenderer.markdownMarkup });
 const documentRenderer = createDocumentRenderer({
   state,
@@ -1399,7 +1399,7 @@ async function refreshIfChanged() {
 
 setupControls({ state, repository, updateLanguageControl, updateFactsControl, applyTheme, applyMermaidTheme, savePreferences, rerender: renderActive });
 
-setupImageLightboxComponent({ state, repository, rerender: renderActive, personMarkup: markupRenderer.inlineMarkup });
+setupImageLightboxComponent({ state, repository, rerender: renderActive });
 setupLetterLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
 setupImageLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
 repository.isLocalServer().then((isLocal) => {

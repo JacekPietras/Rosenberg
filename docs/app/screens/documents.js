@@ -1,4 +1,4 @@
-import { renderFactList } from '../rendering/facts.js?v=3';
+import { renderFactsView } from '../components/facts_view.js?v=2';
 
 export function createDocumentRenderer({
   state,
@@ -16,10 +16,15 @@ export function createDocumentRenderer({
   documentYear,
   getPeople,
 }) {
-  function renderEntry(entry, { title = true, date = true, source = true, path = '', index = null } = {}) {
+  function renderEntry(entry, { title = true, date = true, source = true, path = '', index = null, documentDate = '' } = {}) {
     const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
     const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
-    return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${state.showFacts && entry.facts?.length ? renderFactList(entry.facts, { people: getPeople(), inlineMarkup }) : ''}</article>`;
+    const facts = state.showFacts && entry.facts?.length ? renderFactsView(entry.facts, {
+      people: getPeople(),
+      inlineMarkup,
+      defaultDate: entry.date || documentDate,
+    }) : '';
+    return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}</article>`;
   }
 
   function bookSections(entries) {
@@ -53,7 +58,7 @@ export function createDocumentRenderer({
         return `<article class="document book-document"><div class="document-heading"><div><h2>${markdownLinks(sectionTitle)}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
       }).join('');
     }
-    const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry) })).join('');
+    const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/letters/') ? doc.date || '' : '' })).join('');
     const important = labelKeys.includes('important') ? ' important' : '';
     const dimmed = labelKeys.some((label) => ['hessen', 'schenk', 'mönch'].includes(label)) ? ' dimmed' : '';
     return `<article class="document${important}${dimmed}"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;

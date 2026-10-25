@@ -1,4 +1,4 @@
-export function sealAnnotationMarkup(seals = [], escapeHtml, personMarkup = (value) => escapeHtml(value)) {
+export function sealAnnotationMarkup(seals = [], escapeHtml) {
   return seals.map((seal) => {
     const x = Number(seal?.position?.split?.(',')?.[0]);
     const y = Number(seal?.position?.split?.(',')?.[1]);
@@ -7,8 +7,7 @@ export function sealAnnotationMarkup(seals = [], escapeHtml, personMarkup = (val
     const wideningRotation = Number.isFinite(Number(seal?.wideningRotation)) ? Number(seal.wideningRotation) : 0;
     const rotation = Number.isFinite(Number(seal?.rotation)) ? Number(seal.rotation) : 0;
     if (!Number.isFinite(x) || !Number.isFinite(y) || !Number.isFinite(size) || x < 0 || x > 1 || y < 0 || y > 1 || size <= 0 || !String(seal?.person || '').trim()) return '';
-    const person = personMarkup(seal.person);
     const personText = escapeHtml(String(seal.person).replace(/^\[|\]$/g, ''));
-    return `<span class="seal-marker" data-size="${size}" data-width="${width}" data-widening-rotation="${wideningRotation}" data-rotation="${rotation}" style="left:${x * 100}%;top:${y * 100}%" role="img" aria-label="Seal of ${personText}" title="${personText}"><span class="seal-marker-label">${person}</span></span>`;
+    return `<span class="seal-marker" data-size="${size}" data-width="${width}" data-widening-rotation="${wideningRotation}" data-rotation="${rotation}" style="left:${x * 100}%;top:${y * 100}%" role="img" aria-label="Seal of ${personText}" title="${personText}"><span class="seal-marker-label">${personText}</span></span>`;
   }).join('');
 }

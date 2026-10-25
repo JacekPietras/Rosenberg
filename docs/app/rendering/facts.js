@@ -30,8 +30,3 @@ export function renderFactText(fact, { people = [], inlineMarkup }) {
   const rendered = inlineMarkup(text, false);
   return rendered.replace(/\u0001FACTPERSON(\d+)\u0002/g, (match, index) => links[Number(index)] ?? match);
 }
-
-export function renderFactList(facts, { people = [], inlineMarkup, itemMarkup = () => '', itemClass = () => '', textClass = '' }) {
-  const classAttribute = textClass ? ` class="${textClass}"` : '';
-  return `<ul class="facts">${facts.map((fact, index) => `<li${itemClass(fact, index)}>${itemMarkup(fact, index)}<span${classAttribute}>${renderFactText(fact, { people, inlineMarkup })}</span></li>`).join('')}</ul>`;
-}

@@ -1,5 +1,6 @@
 import { imageCardMarkup } from '../rendering/images.js?v=6';
-import { factText, renderFactList } from '../rendering/facts.js?v=3';
+import { factText } from '../rendering/facts.js?v=4';
+import { renderFactsView } from '../components/facts_view.js?v=2';
 
 export function createEntityScreens({
   state,
@@ -55,20 +56,13 @@ export function createEntityScreens({
       })
       .sort((left, right) => dateSortValue(left.date) - dateSortValue(right.date) || left.mentionIndex - right.mentionIndex || left.factIndex - right.factIndex));
     if (!facts.length) return '';
-    const items = renderFactList(facts, {
+    const items = renderFactsView(facts, {
       people: getPeople(),
       inlineMarkup,
-      textClass: 'entity-fact-text',
       itemClass: (fact) => {
         const hasSelectedPersonId = selectedPerson?.id && fact.text.includes(`[${selectedPerson.id}]`);
         const mentionsSelectedName = selectedPerson && fact.text.toLocaleLowerCase().includes(selectedPerson.name.toLocaleLowerCase());
         return mentionsSelectedName && !hasSelectedPersonId ? ' class="entity-fact-ambiguous"' : '';
-      },
-      itemMarkup: (fact, index) => {
-        const showDate = index === 0 || fact.date !== facts[index - 1].date;
-        return showDate && fact.date
-          ? `<time class="entity-fact-date" datetime="${escapeHtml(fact.date)}">${escapeHtml(formatDate(fact.date))}</time>`
-          : showDate ? '<span class="entity-fact-date">Undated</span>' : '<span class="entity-fact-date" aria-hidden="true"></span>';
       },
     });
     return `<section class="entity-facts"><h3>Facts</h3>${items}</section>`;
