@@ -15,6 +15,7 @@ import json
 import re
 import unicodedata
 from pathlib import Path
+from place_names import resolve_place_names
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,7 +37,7 @@ def name_groups():
             groups.append({norm(name) for name in names if norm(name)})
     # Place variations can also appear in personal names, e.g. "de Rosinberg".
     try:
-        places = json.loads((ROOT / "data/places.json").read_text(encoding="utf-8"))
+        places = resolve_place_names(json.loads((ROOT / "data/places.json").read_text(encoding="utf-8")))
     except (OSError, json.JSONDecodeError):
         places = []
     for place in places:
@@ -160,7 +161,7 @@ def main():
     selected_person = person_by_id.get(query_id)
     if args.direct and not selected_person:
         parser.error("--direct requires a known person ID from data/people.json")
-    places = json.loads((ROOT / "data/places.json").read_text(encoding="utf-8"))
+    places = resolve_place_names(json.loads((ROOT / "data/places.json").read_text(encoding="utf-8")))
     place_variants = {norm(v) for place in places for v in place.get("variations", [])}
     query = [norm(token) for token in re.findall(r"[^\W_]+", args.name, flags=re.UNICODE)]
     particles = {

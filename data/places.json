@@ -90,6 +90,7 @@
     "id": "boxberg"
   },
   {
+    "id": "rosenberg-town",
     "variations": [
       "Rosenberg",
       "Rosinberg",
@@ -107,19 +108,41 @@
       "Rosennberg",
       "Rosenbach"
     ],
-    "category": "castle",
-    "lat": 49.4562999,
-    "lon": 9.4731434,
-    "id": "rosenberg"
+    "category": "city",
+    "lat": 49.4571,
+    "lon": 9.4738,
+    "description": "Rosenberg had town status in 1387: Thomas Steinmetz dates the elevation of the castle settlement to a town to before 1378. Its present village status must not be projected back to 1387. Historical status: https://www.ebidat.de/cgi-bin/ebidat.pl?id=5773 . Settlement coordinates: https://mapcarta.com/25456984 ."
   },
   {
     "variations": [
-      "Old Burg, Schüpf"
+      "Burg"
+    ],
+    "category": "castle",
+    "lat": 49.4562999,
+    "lon": 9.4731434,
+    "id": "rosenberg",
+    "parent": "rosenberg-town"
+  },
+  {
+    "id": "oberschuepf",
+    "variations": [
+      "Oberschüpf",
+      "Schüpf"
+    ],
+    "category": "village",
+    "lat": 49.52295,
+    "lon": 9.67761,
+    "description": "Oberschüpf, also called Schüpf, was a village in 1387. The municipal history describes its medieval village lordship, divided between Dottenheim and Rosenberg from 1388. Historical status: https://www.boxberg.de/stadt-boxberg/die-stadtteile . Settlement coordinates: https://mapcarta.com/de/18063860 ."
+  },
+  {
+    "variations": [
+      "Old Burg"
     ],
     "category": "castle",
     "lat": 49.522781,
     "lon": 9.6725399,
-    "id": "schuepf-old-castle"
+    "id": "schuepf-old-castle",
+    "parent": "oberschuepf"
   },
   {
     "id": "wurzburg",
@@ -168,10 +191,11 @@
     "variations": [
       "Aub"
     ],
-    "category": "city",
+    "category": "village",
     "lat": 49.5525,
     "lon": 10.0656,
-    "id": "aub"
+    "id": "aub",
+    "description": "In 1387 Aub was a market settlement, represented as village in the city/village schema. Town rights were granted on 6 January 1404. Source: https://www.stadt-aub.de/stadtportrait/ ."
   },
   {
     "id": "reichelsburg-aub",
@@ -180,10 +204,12 @@
     ],
     "category": "castle",
     "lat": 49.5465,
-    "lon": 10.0513
+    "lon": 10.0513,
+    "parent": "aub"
   },
   {
     "variations": [
+      "Donzdorf",
       "St Martin Donzdorf"
     ],
     "category": "church",
@@ -224,10 +250,11 @@
     "variations": [
       "Giebelstadt"
     ],
-    "category": "city",
+    "category": "village",
     "lat": 49.653,
     "lon": 9.946,
-    "id": "giebelstadt"
+    "id": "giebelstadt",
+    "description": "Giebelstadt was a village in 1387 under the Geyer and Zobel families. It received market rights in 1851. Source: https://giebelstadt.de/Eigene_Dateien/download/gie_kultur_deutsch_schrift.pdf , pp. 6-7."
   },
   {
     "variations": [
@@ -240,6 +267,7 @@
   },
   {
     "variations": [
+      "Hessenthal",
       "Wallfahrtskirche Hessenthal"
     ],
     "category": "church",
@@ -249,6 +277,7 @@
   },
   {
     "variations": [
+      "Mosbach",
       "St. Juliana, Mosbach"
     ],
     "category": "church",
@@ -267,6 +296,7 @@
   },
   {
     "variations": [
+      "Liebenstein",
       "Schloss Liebenstein"
     ],
     "category": "castle",
@@ -276,16 +306,13 @@
   },
   {
     "variations": [
-      "Schloss Haltenbergstetten",
-      "Haldemarstetten",
-      "Zaltenbergstetten",
-      "Haltermannstetten",
-      "Haltenbergsketten"
+      "Schloss Haltenbergstetten"
     ],
     "category": "castle",
     "lat": 49.401,
     "lon": 9.92,
-    "id": "schloss-haltenbergstetten"
+    "id": "schloss-haltenbergstetten",
+    "parent": "niederstetten"
   },
   {
     "variations": [
@@ -298,6 +325,7 @@
   },
   {
     "variations": [
+      "Sindolsheim",
       "Kirche, Sindolsheim",
       "Sindolsheim Evangelical Church",
       "Sindelsheim",
@@ -319,6 +347,7 @@
   },
   {
     "variations": [
+      "Stöckenburg",
       "Martinskirche Stöckenburg"
     ],
     "category": "church",
@@ -327,25 +356,38 @@
     "id": "stoeckenburg-martinskirche"
   },
   {
+    "id": "unterschuepf",
     "variations": [
-      "Kirche, Unterschüpf"
+      "Unterschüpf"
+    ],
+    "category": "village",
+    "lat": 49.5145,
+    "lon": 9.68873,
+    "description": "Unterschüpf is separately recorded as Nidernschippfe in 1324. It was a village in 1387; market rights were granted only in 1562. Historical status: https://www.boxberg.de/stadt-boxberg/die-stadtteile . Settlement coordinates: https://onlinestreet.de/orte/boxberg-baden-wuerttemberg/karte/Untersch%C3%BCpf ."
+  },
+  {
+    "variations": [
+      "Kirche"
     ],
     "category": "church",
     "lat": 49.5138873,
     "lon": 9.6887933,
-    "id": "unterschuepf-evangelical-church"
+    "id": "unterschuepf-evangelical-church",
+    "parent": "unterschuepf"
   },
   {
     "id": "unterschuepf-wasserschloss",
     "variations": [
-      "Wasserschloss Unterschüpf"
+      "Wasserschloss"
     ],
     "category": "castle",
     "lat": 49.5148,
-    "lon": 9.6885
+    "lon": 9.6885,
+    "parent": "unterschuepf"
   },
   {
     "variations": [
+      "Wildenberg",
       "Schloss Wildenberg"
     ],
     "category": "castle",
@@ -354,29 +396,42 @@
     "id": "wildenberg-castle"
   },
   {
+    "id": "waldmannshofen",
     "variations": [
-      "Johanniskirche, Waldmannshofen"
-    ],
-    "category": "church",
-    "lat": 49.5322268,
-    "lon": 10.0674143,
-    "id": "waldmannshofen-evangelical-church"
-  },
-  {
-    "id": "waldmannshofen-castle",
-    "variations": [
-      "Schloss Waldmannshofen",
+      "Waldmannshofen",
       "Waldtmanßhouen",
       "Waldtmannshofen",
       "Waltmannshofen"
     ],
+    "category": "village",
+    "lat": 49.53266,
+    "lon": 10.0671,
+    "description": "Waldmannshofen was a village by 1387: the local charter chronology describes houses and property in the village in records dated 1347, 1370, 1374, and 1379"
+  },
+  {
+    "variations": [
+      "Johanniskirche"
+    ],
+    "category": "church",
+    "lat": 49.5322268,
+    "lon": 10.0674143,
+    "id": "waldmannshofen-evangelical-church",
+    "parent": "waldmannshofen"
+  },
+  {
+    "id": "waldmannshofen-castle",
+    "variations": [
+      "Schloss"
+    ],
     "category": "castle",
     "lat": 49.5341,
-    "lon": 10.067
+    "lon": 10.067,
+    "parent": "waldmannshofen"
   },
   {
     "id": "wehrkirche-angeltuern",
     "variations": [
+      "Angeltürn",
       "Wehrkirche, Angeltürn",
       "Angerthal",
       "Angelthor",
@@ -394,11 +449,13 @@
     ],
     "category": "castle",
     "lat": 49.5645,
-    "lon": 9.679
+    "lon": 9.679,
+    "parent": "lauda"
   },
   {
     "id": "burg-schweinberg",
     "variations": [
+      "Schweinberg",
       "Burg Schweinberg"
     ],
     "category": "castle",
@@ -411,22 +468,35 @@
       "Wirsberg",
       "Wiersperg"
     ],
-    "category": "city",
+    "category": "village",
     "lat": 50.108061,
-    "lon": 11.607823
+    "lon": 11.607823,
+    "description": "In 1387 Wirsberg was a market settlement, represented as village in the city/village schema. The municipal history documents it as a Markt by the end of the 13th century. Source: https://www.wirsberg.de/buergerservice-rathaus/chronik/ortsgeschichte ."
+  },
+  {
+    "id": "gnoetzheim",
+    "variations": [
+      "Gnötzheim"
+    ],
+    "category": "village",
+    "lat": 49.6169427,
+    "lon": 10.1831528,
+    "description": "In 1387 Gnötzheim was a village with market rights, granted in 1352; market rights do not establish city status. Historical status: https://www.martinsheim.de/kultur-freizeit/geschichte/chronik-gnoetzheim.html . Settlement coordinates: https://www.freecountrymaps.com/map/towns/germany/284249395/ ."
   },
   {
     "id": "gnoetzheim-st-johannis",
     "variations": [
-      "Johanniskirche Gnötzheim"
+      "Johanniskirche"
     ],
     "category": "church",
     "lat": 49.616619,
-    "lon": 10.182073
+    "lon": 10.182073,
+    "parent": "gnoetzheim"
   },
   {
     "id": "muenzesheim-st-martin",
     "variations": [
+      "Münzesheim",
       "Martinskirche Münzesheim"
     ],
     "category": "church",
@@ -448,14 +518,15 @@
     "variations": [
       "Bartenstein"
     ],
-    "category": "city",
     "lat": 49.3559497,
     "lon": 9.8812253,
-    "description": "The von Rosenbergs held Bartenstein as a fief and family seat; their shares there are documented from 1419 into the 1440s."
+    "description": "The von Rosenbergs held Bartenstein as a fief and family seat; their shares there are documented from 1419 into the 1440s. No separate city or village is established here for 1387: LEO-BW describes Bartenstein as the castle and associated buildings before 1688, with settlement development only in the early 18th century and first mention as a town in 1806. Its medieval settlement category is therefore unset and this settlement marker is hidden. Source: https://www.leo-bw.de/detail-gis/-/Detail/details/ORT/labw_ortslexikon/3259/Bartenstein .",
+    "showOnMap": false
   },
   {
     "id": "schloss-bartenstein",
     "variations": [
+      "Bartenstein",
       "Schloss Bartenstein"
     ],
     "category": "castle",
@@ -486,6 +557,7 @@
   {
     "id": "urhausen-castle",
     "variations": [
+      "Urhausen",
       "Schloss Urhausen"
     ],
     "category": "castle",
@@ -496,6 +568,7 @@
   {
     "id": "maienfels-castle",
     "variations": [
+      "Maienfels",
       "Schloss Maienfels"
     ],
     "category": "castle",
@@ -516,12 +589,13 @@
   {
     "id": "roettingen-st-kilian",
     "variations": [
-      "St. Kilian, Röttingen"
+      "St. Kilian"
     ],
     "category": "church",
     "lat": 49.5100606,
     "lon": 9.9677382,
-    "description": "The KMZ gives no specific von Rosenberg connection to St. Kilian; the church is in Röttingen, where Anselm von Rosenberg held the castle, town, and office as a pledge from 1443 to 1454."
+    "description": "The KMZ gives no specific von Rosenberg connection to St. Kilian; the church is in Röttingen, where Anselm von Rosenberg held the castle, town, and office as a pledge from 1443 to 1454.",
+    "parent": "roettingen"
   },
   {
     "id": "burg-brattenstein",
@@ -531,17 +605,19 @@
     "category": "castle",
     "lat": 49.5087394,
     "lon": 9.965866,
-    "description": "The KMZ gives no separate history for this castle, but records Anselm von Rosenberg holding Röttingen and its castle as a pledge from 1443 to 1454."
+    "description": "The KMZ gives no separate history for this castle, but records Anselm von Rosenberg holding Röttingen and its castle as a pledge from 1443 to 1454.",
+    "parent": "roettingen"
   },
   {
     "id": "gnoetzheim-castle",
     "variations": [
-      "Schloss Gnötzheim"
+      "Schloss"
     ],
     "category": "castle",
     "lat": 49.6154951,
     "lon": 10.1814995,
-    "description": "The castle belonged to the von Rosenbergs from 1426 to 1632. The KMZ also notes two Rosenberg tombstones in the church."
+    "description": "The castle belonged to the von Rosenbergs from 1426 to 1632. The KMZ also notes two Rosenberg tombstones in the church.",
+    "parent": "gnoetzheim"
   },
   {
     "id": "boffsheim",
@@ -623,32 +699,35 @@
   {
     "id": "burg-lauda",
     "variations": [
-      "Burg Lauda"
+      "Burg"
     ],
     "category": "castle",
     "lat": 49.5672155,
     "lon": 9.7023678,
-    "description": "The KMZ connects the family with Lauda through Eberhard von Rosenberg’s capture of the town in the 1330s and a later Rosenberg bailiff, but gives no separate history for this castle."
+    "description": "The KMZ connects the family with Lauda through Eberhard von Rosenberg’s capture of the town in the 1330s and a later Rosenberg bailiff, but gives no separate history for this castle.",
+    "parent": "lauda"
   },
   {
     "id": "aub-mariae-himmelfahrt",
     "variations": [
-      "Mariä Himmelfahrt, Aub"
+      "Mariä Himmelfahrt"
     ],
     "category": "church",
     "lat": 49.552428,
     "lon": 10.0642337,
-    "description": "Aub was partly held by the von Rosenbergs, but the KMZ gives no specific family connection to this church."
+    "description": "Aub was partly held by the von Rosenbergs, but the KMZ gives no specific family connection to this church.",
+    "parent": "aub"
   },
   {
     "id": "burg-aub",
     "variations": [
-      "Burg Aub"
+      "Burg"
     ],
     "category": "castle",
     "lat": 49.550971,
     "lon": 10.064593,
-    "description": "The KMZ explicitly says this castle did not belong to the von Rosenbergs, though it was besieged in 1523."
+    "description": "The KMZ explicitly says this castle did not belong to the von Rosenbergs, though it was besieged in 1523.",
+    "parent": "aub"
   },
   {
     "id": "bobstadt",
@@ -668,6 +747,7 @@
   {
     "id": "nagelsberg-castle",
     "variations": [
+      "Nagelsberg",
       "Schloss Nagelsberg"
     ],
     "category": "castle",
@@ -676,28 +756,46 @@
     "description": "Eberhard I von Rosenberg held an interest and a fief in Nagelsberg Castle in the 1330s and 1340s; he permitted its redemption by Mainz in 1349."
   },
   {
+    "id": "niederstetten",
+    "variations": [
+      "Niederstetten",
+      "Haltenbergstetten",
+      "Haldemarstetten",
+      "Zaltenbergstetten",
+      "Haltermannstetten",
+      "Haltenbergsketten"
+    ],
+    "category": "city",
+    "lat": 49.4,
+    "lon": 9.91944,
+    "description": "Niederstetten was a city by 1387: in 1367 Charles IV renewed the privileges associated with Haltenbergstetten and extended them to the settlement below the castle. The settlement was also known as Haltenbergstetten. Historical status and name: https://www.niederstetten.de/stadtinfo-wirtschaft/geschichte . Settlement coordinates: https://www.geonames.org/2862831/niederstetten.html ."
+  },
+  {
     "id": "niederstetten-friedhofskapelle",
     "variations": [
-      "Friedhofskapelle, Niederstetten"
+      "Friedhofskapelle"
     ],
     "category": "church",
     "lat": 49.4032655,
     "lon": 9.9192052,
-    "description": "The KMZ gives no specific von Rosenberg connection to this chapel; the family acquired the lordship of Niederstetten in 1415."
+    "description": "The KMZ gives no specific von Rosenberg connection to this chapel; the family acquired the lordship of Niederstetten in 1415.",
+    "parent": "niederstetten"
   },
   {
     "id": "niederstetten-st-jakobus",
     "variations": [
-      "St. Jakobus der Ältere, Niederstetten"
+      "St. Jakobus der Ältere"
     ],
     "category": "church",
     "lat": 49.4009573,
     "lon": 9.9195736,
-    "description": "The KMZ notes the church’s Romanesque history but gives no specific von Rosenberg connection; the family acquired the lordship of Niederstetten in 1415."
+    "description": "The KMZ notes the church’s Romanesque history but gives no specific von Rosenberg connection; the family acquired the lordship of Niederstetten in 1415.",
+    "parent": "niederstetten"
   },
   {
     "id": "burg-wildenstein",
     "variations": [
+      "Wildenstein",
       "Burg Wildenstein",
       "Burg Ruine Wildenstein"
     ],
@@ -709,6 +807,7 @@
   {
     "id": "wasserburg-dietenhofen",
     "variations": [
+      "Dietenhofen",
       "Wasserburg Dietenhofen"
     ],
     "category": "castle",
@@ -835,22 +934,24 @@
   {
     "id": "rosenberg-evangelical-church",
     "variations": [
-      "Evangelische Kirche, Rosenberg"
+      "Evangelische Kirche"
     ],
     "category": "church",
     "lat": 49.45659,
     "lon": 9.4732739,
-    "description": "The von Rosenbergs held patronage rights over the church at Rosenberg from around the 1270s."
+    "description": "The von Rosenbergs held patronage rights over the church at Rosenberg from around the 1270s.",
+    "parent": "rosenberg-town"
   },
   {
     "id": "oberschuepf-castle",
     "variations": [
-      "Schloss Oberschüpf"
+      "Schloss"
     ],
     "category": "castle",
     "lat": 49.5218062,
     "lon": 9.6772055,
-    "description": "The von Rosenbergs acquired part of the lordship of Schüpf in the late 14th century and later controlled Oberschüpf Castle as a secondary family seat; the castle was destroyed in 1470."
+    "description": "The von Rosenbergs acquired part of the lordship of Schüpf in the late 14th century and later controlled Oberschüpf Castle as a secondary family seat; the castle was destroyed in 1470.",
+    "parent": "oberschuepf"
   },
   {
     "id": "gommersdorf",
@@ -865,6 +966,7 @@
   {
     "id": "wertheim-stiftskirche",
     "variations": [
+      "Wertheim",
       "Stiftskirche, Wertheim"
     ],
     "category": "church",
@@ -887,27 +989,29 @@
   {
     "id": "uissigheim-st-laurentius",
     "variations": [
-      "Uissigheim",
-      "St. Laurentius, Ussigheim"
+      "St. Laurentius"
     ],
     "category": "church",
     "lat": 49.6795332,
     "lon": 9.5732476,
-    "description": "The KMZ links the site to the von Uissigheim lineage from which the von Rosenbergs branched, and notes a tomb associated with Arnold III von Uissigheim."
+    "description": "The KMZ links the site to the von Uissigheim lineage from which the von Rosenbergs branched, and notes a tomb associated with Arnold III von Uissigheim.",
+    "parent": "uissigheim"
   },
   {
     "id": "schuepf-church",
     "variations": [
-      "Kirche, Schüpf"
+      "Kirche"
     ],
     "category": "church",
     "lat": 49.5222468,
     "lon": 9.6808585,
-    "description": "The KMZ records Rosenberg lordship rights in Schüpf, including half of the Hohenlohe rights by 1413, but gives no separate family connection to this church."
+    "description": "The KMZ records Rosenberg lordship rights in Schüpf, including half of the Hohenlohe rights by 1413, but gives no separate family connection to this church.",
+    "parent": "oberschuepf"
   },
   {
     "id": "kocherstetten-marienkirche",
     "variations": [
+      "Kocherstetten",
       "Marienkirche Kocherstetten",
       "Rocherstetten"
     ],
@@ -918,6 +1022,7 @@
   {
     "id": "sugenheim-st-erhard",
     "variations": [
+      "Sugenheim",
       "St. Erhard, Sugenheim"
     ],
     "category": "church",
@@ -936,6 +1041,7 @@
   {
     "id": "comburg-stiftskirche",
     "variations": [
+      "Comburg",
       "Comburg Stiftskirche"
     ],
     "category": "church",
@@ -945,6 +1051,7 @@
   {
     "id": "essingen-st-quirinus",
     "variations": [
+      "Essingen",
       "Essingen St Quirinus",
       "Quirinuskirche Essingen"
     ],
@@ -955,6 +1062,7 @@
   {
     "id": "meeder-st-laurentius",
     "variations": [
+      "Meeder",
       "St. Laurentius Meeder"
     ],
     "category": "church",
@@ -964,6 +1072,7 @@
   {
     "id": "kenzingen-st-laurentius",
     "variations": [
+      "Kenzingen",
       "St. Laurentius Kenzingen"
     ],
     "category": "church",
@@ -973,6 +1082,7 @@
   {
     "id": "boedigheim-kreuzkirche",
     "variations": [
+      "Bödigheim",
       "Kreuzkirche Bödigheim"
     ],
     "category": "church",
@@ -982,6 +1092,7 @@
   {
     "id": "kuernbach-michaelskirche",
     "variations": [
+      "Kürnbach",
       "Michaelskirche Kürnbach"
     ],
     "category": "church",
@@ -991,6 +1102,7 @@
   {
     "id": "massbach-st-bartholomaeus",
     "variations": [
+      "Maßbach",
       "St. Bartholomäus Maßbach"
     ],
     "category": "church",
@@ -1000,6 +1112,7 @@
   {
     "id": "gochsheim-st-michael",
     "variations": [
+      "Gochsheim",
       "St. Michael Gochsheim"
     ],
     "category": "church",
@@ -1009,6 +1122,7 @@
   {
     "id": "essingen-st-wendelinuskapelle",
     "variations": [
+      "Essingen",
       "St. Wendelinuskapelle Essingen"
     ],
     "category": "church",
@@ -1190,9 +1304,9 @@
     "id": "schonau",
     "category": "church",
     "variations": [
+      "Schönau",
       "Schönau Abbey",
-      "Schönau Monastery",
-      "Schönau"
+      "Schönau Monastery"
     ],
     "lat": 49.4359,
     "lon": 8.8094

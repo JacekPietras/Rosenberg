@@ -4,6 +4,7 @@
 import argparse
 import json
 from pathlib import Path
+from place_names import resolve_place_names
 
 
 def main():
@@ -26,7 +27,7 @@ def main():
     )
     args = parser.parse_args()
 
-    places = json.loads(args.places_file.read_text(encoding="utf-8"))
+    places = resolve_place_names(json.loads(args.places_file.read_text(encoding="utf-8")))
     for place in places:
         variations = place.get("variations", [])
         if len(variations) < 2:

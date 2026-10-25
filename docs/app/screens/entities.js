@@ -1,6 +1,7 @@
 import { imageCardMarkup } from '../rendering/images.js?v=6';
 import { factText } from '../rendering/facts.js?v=4';
 import { renderFactsView } from '../components/facts_view.js?v=2';
+import { findPlaceByName } from '../data/entities.js?v=87';
 
 export function createEntityScreens({
   state,
@@ -162,8 +163,8 @@ export function createEntityScreens({
   }
 
   function renderPlacePage() {
-    const entity = findByName(getPlaces(), state.place);
-    const place = entity || getPlaces().find((item) => item.name.toLocaleLowerCase() === String(state.place || '').toLocaleLowerCase());
+    const place = getPlaces().find((place) => place.id === String(state.place || ''))
+      || findPlaceByName(getPlaces(), state.place);
     const pattern = place ? buildPlacePattern([place]) : /$a/;
     const mentions = place ? mentionsFor(place, 'place') : [];
     const effigies = place ? (state.manifest?.collections || []).filter((item) => item.placeId === place.id) : [];

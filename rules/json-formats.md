@@ -188,8 +188,9 @@ particular historical person.
 `data/places.json` is an array of place objects. Each object's `variations`
 array starts with the canonical English name, followed by recognized historical
 spelling variants. `lat` and `lon` are decimal-degree WGS84 coordinates. An
-optional medieval place `category` may be `castle`, `church`, or `city`; omit it
-when uncertain.
+optional medieval place `category` may be `castle`, `church`, `city`, or
+`village`; omit it when uncertain. Settlement categories describe status in
+1387, not present-day municipal status.
 Optional `showOnMap: false` excludes a place from all map views. Places are
 shown by default.
 
@@ -206,6 +207,131 @@ shown by default.
 
 The viewer uses the first variation as the canonical name for display. All
 listed variations are used when finding and linking related place content.
+
+### Settlement parents
+
+A church or castle's optional `parent` contains the ID of its city or village
+record. Reuse the correct settlement record. The referenced record must
+exist, have category `city` or `village`, and have no parent of its own.
+Establish the relationship from evidence or an explicit user identification,
+not from similar names, shared coordinates, or a substring match. For example,
+`burg-oberlauda` has `parent: "lauda"` while retaining the name `Burg Oberlauda`.
+
+If the settlement is missing, research whether it was a city or village in
+1387 before creating its record. Prefer municipal histories, official regional
+gazetteers, and charter evidence. Distinguish town rights from market rights;
+market rights alone do not establish city status. Record the supporting
+evidence and source references with the settlement, and use settlement
+coordinates rather than copying the building's coordinates without evidence.
+If its identity or status cannot be established, leave it unresolved rather
+than inventing a settlement or category.
+For the current city/village schema, represent a documented market settlement
+without town rights as `village` and explain its market status in the sourced
+description. Do not invent a medieval village when the evidence describes
+only a castle and its associated buildings. Bartenstein is such a case:
+its settlement category is unset and its settlement marker is hidden, while
+the castle has no settlement parent. Preserve both existing IDs:
+`bartenstein` remains an unclassified, hidden record for existing ID URLs,
+and `schloss-bartenstein` is the visible castle with variations
+`["Bartenstein", "Schloss Bartenstein"]`. Bare historical mentions must
+still match the castle in links and person maps. Check structured ID usages
+before merging, removing, or reassigning any place record.
+
+Once the settlement exists, reference it from the relevant buildings and
+remove bare settlement names from those buildings' variations. For example,
+create `niederstetten` as a `city` based on its privileges before 1387, then
+use it as the parent of `niederstetten-friedhofskapelle` and
+`niederstetten-st-jakobus`. The churches store their local building names;
+the bare name `Niederstetten` belongs to the settlement. A settlement shared
+by a church and castle must have one shared parent record: for example,
+`waldmannshofen` is the village parent of both its church and castle. Move
+bare historical settlement spellings to that parent as well.
+
+### Names, combinations, and links
+
+Use only `variations` to store recognized names, including local, full,
+older, and punctuated forms. Do not add separate `aliases`, `nameFormat`, or
+`mapLabel` fields. When a parent exists, omit redundant settlement names:
+`uissigheim-st-laurentius` stores just `["St. Laurentius"]` with
+`parent: "uissigheim"`. Do not store generated combinations or duplicate
+building names for the parent's historical spellings. Existing explicit full
+names such as `St. Kilian, Röttingen` remain supported by the loader, but
+simplify redundant stored forms to `St. Kilian`. Similarly, store `Schloss`
+with `parent: "waldmannshofen"`; its display name must be exactly
+`Schloss Waldmannshofen`, never `Schloss Waldmannshofen Waldmannshofen`.
+
+The loader matches the linked parent's listed spellings within each full
+variation, case-insensitively at letter/digit boundaries, trying longer
+spellings first. It removes that matched spelling, trims surrounding commas
+and whitespace, and combines the remaining building name with only the first
+parent variation (the settlement's canonical name) in both orders, separated
+by a space. Other parent spellings may identify a settlement already present
+in a stored building name, but must not generate additional combinations.
+Preserve explicitly stored full building names, including historical forms,
+and deduplicate the expanded names. If the first stored variation already
+contains a parent spelling, it remains the canonical display name. Otherwise,
+append the first parent variation to form the canonical name. For example,
+`St. Laurentius` becomes `St. Laurentius Uissigheim`. Distinctive local names
+remain recognized too. Generic building names (`Abbey`, `Monastery`, `Burg`,
+`Schloss`, `Wasserschloss`, `Old Burg`, `Kirche`, `Evangelische Kirche`,
+`Johanniskirche`, and `Friedhofskapelle`) are combined
+with the parent but must not match on their own, which would incorrectly
+link unrelated buildings or include them in fact and map searches.
+Two building variations produce four unpunctuated combinations, regardless
+of how many settlement variations exist. The settlement's other variations remain available for settlement
+links and searches.
+
+Also recognize a comma between the building and settlement, in either order,
+without adding those combinations to the stored JSON. For example,
+`Friedhofskapelle Niederstetten`, `Friedhofskapelle, Niederstetten`, and
+`Niederstetten, Friedhofskapelle` must link to the same chapel as one phrase.
+Allow variable whitespace around the comma and preserve the source text.
+These punctuated forms must also work in old place URLs and mention searches.
+
+If a variation contains no parent spelling at those boundaries, treat it as
+a local building name and combine it with the canonical parent in both
+orders, also retaining the local name. Do not strip a substring from a word:
+`Lauda` does not match inside `Oberlauda`. Standalone names such as
+`Reichelsburg` remain valid too.
+`burg-oberlauda` intentionally resolves to `Burg Oberlauda Lauda`: Oberlauda
+is part of the building's local name and Lauda is its confirmed parent.
+
+Historical settlement spellings belong on the settlement. For example,
+`Haldemarstetten`, `Zaltenbergstetten`, `Haltermannstetten`, and
+`Haltenbergsketten` belong to `niederstetten`, not to the castle's local
+variations. Keep the distinct proper building name `Schloss Haltenbergstetten`.
+
+Use the same expanded variations for book/document hyperlinks, place-page
+mentions, fact and person-map matching, and the Python place-listing and
+fact-search tools. Match longer full names before shorter settlement names.
+Place links use IDs when present so distinct places can share a display name.
+Bare settlement names must resolve to the settlement rather than its church
+or castle. Prefer a unique matching city/village. If the other matches have
+no category, prefer the sole classified record, as for the Bartenstein castle
+and retained unclassified record. Otherwise leave an ambiguous name unlinked
+instead of selecting the first record. This matters for the two
+different Essingen sites. Explicit ID URLs still select the requested record.
+Place pages must also accept canonical names and all recognized variations
+to preserve existing full-name URLs.
+
+Map labels use the canonical name. For a building without a parent, put the
+short settlement name first in `variations`, such as `Essingen`, and retain
+the full building names as later variations. Apply this rule to both the
+person-screen map and the main map, including all map modes. Resolve labels
+from the stored canonical name; do not guess settlement names by splitting
+building names at runtime. When a missing settlement is established, migrate
+to the explicit parent relationship above.
+
+During a migration, preserve existing place IDs, building coordinates,
+categories, descriptions, source references, source text, and translations.
+Retain distinctive building spellings in `variations`, simplifying redundant
+settlement text; move bare settlement names to the parent where appropriate.
+Verify that composed names contain the settlement only once, generic building
+words do not create standalone matches, and shared settlements have one
+parent for all their buildings. Verify valid JSON, unique
+IDs, valid parent references, old name/ID URLs, both name orders using only the
+first parent variation, and both map views. Keep browser and Python expansion behavior
+consistent, and review the diff for unrelated changes.
 
 ## Editing requirements
 

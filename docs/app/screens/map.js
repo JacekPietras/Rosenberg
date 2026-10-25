@@ -18,26 +18,6 @@ function normalize(value) {
     .normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase().replace(/[^a-z0-9]+/g, '');
 }
 
-function mapPlaceLabel(place, places) {
-  if (!['church', 'castle'].includes(place.category?.toLocaleLowerCase())) return place.name;
-  const settlementName = (name) => {
-    if (name.includes(',')) return name.slice(name.lastIndexOf(',') + 1).trim();
-    const prefix = /^(?:(?:Old\s+)?Burg(?:\s+Ruine)?|Burgruine(?:\s+Rosenberg)?|Schloss|Wasserschloss|Wasserburg|Kirche|Evangelische Kirche|Wehrkirche|Wallfahrtskirche|Stiftskirche|Friedhofskapelle|Johanniskirche|Martinskirche|Marienkirche|Michaelskirche|Quirinuskirche|Kreuzkirche|St\.?\s+\S+)\s+(.+)$/i;
-    const prefixed = name.match(prefix);
-    if (prefixed) return prefixed[1];
-    const suffixed = name.match(/^(.+?)\s+(?:St\.?\s+.+|Cathedral|Abbey|Monastery|Evangelical Church|Saints .+ Church|Stiftskirche)$/i);
-    return suffixed?.[1] || name;
-  };
-  // Some records start with the town name and put the building name later.
-  const fullName = [place.name, ...(place.variations || [])]
-    .find((name) => settlementName(name) !== name) || place.name;
-  const settlement = settlementName(fullName);
-  const hasSettlement = places.some((other) => other !== place
-    && ['city', 'village'].includes(other.category?.toLocaleLowerCase())
-    && [other.name, ...(other.variations || [])].some((name) => normalize(name) === normalize(settlement)));
-  return hasSettlement ? fullName : settlement;
-}
-
 function yearRange(value) {
   const years = String(value || '').match(/\d{4}/g)?.map(Number) || [];
   return years.length ? [Math.min(...years), Math.max(...years)] : null;
@@ -143,13 +123,13 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
     if (!PLACE_ICONS.has(category)) return {};
     const iconUrl = new URL(`../map/icon/${category}.svg?v=10`, import.meta.url).href;
     const size = ['city', 'village'].includes(category) ? 60 : 30;
-    const html = `<span class="map-place-icon-art" style="width:${size}px;height:${size}px"><img class="map-place-icon-image" src="${iconUrl}" alt=""></span><span class="map-place-label">${escapeHtml(mapPlaceLabel(place, state.places))}</span>`;
+    const html = `<span class="map-place-icon-art" style="width:${size}px;height:${size}px"><img class="map-place-icon-image" src="${iconUrl}" alt=""></span><span class="map-place-label">${escapeHtml(place.name)}</span>`;
     return { icon: L.divIcon({ className: `map-place-icon map-place-icon-${category}`, html, iconSize: [size, size + 12], iconAnchor: [size / 2, size], popupAnchor: [0, -size] }) };
   }
 
   function linkPlaceOnClick(marker, place) {
     marker.on('click', () => {
-      window.location.href = `?place=${encodeURIComponent(place.name)}`;
+      window.location.href = `?place=${encodeURIComponent(place.id || place.name)}`;
     });
     return marker;
   }
@@ -192,6 +172,9 @@ export function createMapScreen({ state, escapeHtml, getMap, setMap, saveCalibra
       })) : null;
       if (sameModeView) leafletMap.setView([previousView.center.lat, previousView.center.lng], previousView.zoom);
       else leafletMap.fitBounds(carriedCorners ? latLonCornersToView(carriedCorners, mapMode, calibrationCities) : markerBounds?.isValid() ? markerBounds.pad(0.04) : bounds, { padding: [14, 14] });
+      // Fractional zoom is only for positioning the view; wheel gestures should
+      // use the same whole-level steps before and after switching maps.
+      leafletMap.options.zoomSnap = 1;
       return;
     }
     const leafletMap = L.map(container, { scrollWheelZoom: true });
