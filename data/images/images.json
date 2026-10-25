@@ -1081,6 +1081,9 @@
           "height": 0.4521,
           "name": "Uissigheim"
         }
+      ],
+      "facts": [
+        "Arnold von Uissigheim died in 1336."
       ]
     },
     {
@@ -1101,6 +1104,9 @@
           "height": 0.7241,
           "name": "Uissigheim"
         }
+      ],
+      "facts": [
+        "Eberhard von Uissigheim von Ranneberg died in 1332."
       ]
     },
     {
@@ -1132,6 +1138,9 @@
           "height": 0.5855,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Eberhard von Rosenberg died in 1314."
       ]
     },
     {
@@ -1174,6 +1183,9 @@
           "height": 0.1425,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Arnold von Rosenberg zu Boxberg died in 1447."
       ]
     },
     {
@@ -1191,6 +1203,9 @@
           "height": 0.101,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Eberhard von Rosenberg zu Jagstberg died in 1449."
       ]
     },
     {
@@ -1208,6 +1223,9 @@
           "height": 0.7241,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "An unidentified member of the von Rosenberg family died between 1360 and 1420."
       ]
     },
     {
@@ -1299,7 +1317,10 @@
         }
       ],
       "label": "effigy",
-      "placeId": "arnstein-maria-sondheim"
+      "placeId": "arnstein-maria-sondheim",
+      "facts": [
+        "Anna von Hutten, born von Rosenberg, died in 1528."
+      ]
     },
     {
       "title": "Arnstein Maria Sondheim, epitaph of Konrad von Hutten",
@@ -1395,11 +1416,14 @@
       ]
     },
     {
-      "title": "Boxberg castle attacked in 1523, later rebuilt by Albrecht von Rosenberg",
+      "title": "Boxberg castle attacked in 1523",
       "source": "https://drive.google.com/file/d/17WQGcMqBnySNCOY2T1k5EwQhu0JVSm7L/view",
       "url": "https://drive.google.com/thumbnail?id=17WQGcMqBnySNCOY2T1k5EwQhu0JVSm7L&sz=w1600",
       "date": "1523",
-      "placeId": "boxberg"
+      "placeId": "boxberg",
+      "facts": [
+        "Boxberg Castle was attacked in 1523."
+      ]
     },
     {
       "title": "Donzdorf St Martin, bronze memorial to Ulrich II von Rechberg, who died in 1496",
@@ -1448,7 +1472,10 @@
           "name": "Rosenberg"
         }
       ],
-      "placeId": "euerbach-sts-cosmas-damian"
+      "placeId": "euerbach-sts-cosmas-damian",
+      "facts": [
+        "Ursula von Steinau was born von Rosenberg; the epitaph dates to 1547–1560."
+      ]
     },
     {
       "title": "Euerbach St Cosmas and Damian, epitaph of Christoph von Steinau",
@@ -1638,7 +1665,10 @@
         }
       ],
       "label": "effigy",
-      "placeId": "mosbach-st-juliana"
+      "placeId": "mosbach-st-juliana",
+      "facts": [
+        "A grave slab possibly commemorates canon Eberhard von Rosenberg, active from 1363 to 1368."
+      ]
     },
     {
       "title": "Neckarsteinach am Neckar Protestant church, Landschad memorial with Rosenberg among the family coats of arms",
@@ -1686,7 +1716,10 @@
           "name": "Rosenberg"
         }
       ],
-      "placeId": "liebenstein-castle"
+      "placeId": "liebenstein-castle",
+      "facts": [
+        "Albrecht von Liebenstein and Margaretha von Rosenberg are commemorated together."
+      ]
     },
     {
       "title": "Neckarwestheim Schloss Liebenstein, Renaissance bay window with Liebenstein and Rosenberg arms",
@@ -1718,7 +1751,10 @@
           "name": "Rosenberg"
         }
       ],
-      "placeId": "schloss-haltenbergstetten"
+      "placeId": "schloss-haltenbergstetten",
+      "facts": [
+        "The portal arms identify Friedrich Zeisolf von Rosenberg and the von Kere family."
+      ]
     },
     {
       "title": "Oppenheim am Rhein, stone bearing the name Rosenberger and a family coat of arms",
@@ -1772,7 +1808,10 @@
           "name": "Rosenberg"
         }
       ],
-      "placeId": "speyer"
+      "placeId": "speyer",
+      "facts": [
+        "Philipp von Rosenberg was Prince-Bishop of Speyer."
+      ]
     },
     {
       "title": "Stöckenburg Martinskirche, Rosenberg donor stained glass from a Schwäbisch Hall workshop",
@@ -1808,6 +1847,11 @@
           "height": 0.1713,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Albrecht von Rosenberg died on 17 May 1572.",
+        "Rufina von Rosenberg, née Stiebar von Buttenheim, was Albrecht von Rosenberg's second wife.",
+        "Rufina died on 26 August 1569."
       ]
     },
     {
@@ -1845,6 +1889,10 @@
           "height": 0.1066,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Katharina von Rosenberg, née von Seinsheim, was Albrecht von Rosenberg's first wife.",
+        "Katharina died on 28 April 1550."
       ]
     },
     {
@@ -1863,6 +1911,11 @@
           "height": 0.1967,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Eberhard von Rosenberg died on 16 October 1519 and was buried in Stuttgart.",
+        "Anna von Rosenberg, née von Dienheim, was Eberhard von Rosenberg’s wife.",
+        "Anna von Rosenberg, née von Dienheim, died on 26 November 1568."
       ]
     },
     {
@@ -1886,7 +1939,10 @@
       "source": "https://drive.google.com/file/d/1jOeYQTJ-9vBK0HE3v0UO56pn4Alq1V8d/view",
       "url": "https://drive.google.com/thumbnail?id=1jOeYQTJ-9vBK0HE3v0UO56pn4Alq1V8d&sz=w1600",
       "date": "1343",
-      "placeId": "wildenberg-castle"
+      "placeId": "wildenberg-castle",
+      "facts": [
+        "Eberhard von Rosenberg was recorded as burgrave of Wildenberg in 1343."
+      ]
     },
     {
       "type": "link",
@@ -1977,6 +2033,9 @@
           "height": 0.0512,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Konrad von Rosenberg died"
       ]
     },
     {
@@ -2019,6 +2078,9 @@
           "height": 0.1252,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Kunigunde Hofwart von Kirchheim, born von Rosenberg, died on 1 March 1545."
       ]
     },
     {
@@ -2054,6 +2116,9 @@
           "height": 0.1911,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Albrecht Christoph von Rosenberg died in 1632."
       ]
     },
     {
@@ -2101,7 +2166,10 @@
       "date": "1540-1550",
       "source": "https://drive.google.com/file/d/1F4kT-9sKrnSxpGljZpuEz8xiICIw_qPt/view — https://www.metmuseum.org/art/collection/search/726150 — Matthias Zündt, The Abduction of Hieronymus Paumgartner, etching, Harris Brisbane Dick Fund, 1926, object 26.35.11 — Image: https://images.metmuseum.org/CRDImages/dp/original/DP864079.jpg — Commons image record: https://commons.wikimedia.org/wiki/File:Albrecht_von_Rosenberg_abducting_Hieronymus_Paumgartner_MET_DP864079.jpg",
       "description": "Etching, ca. 1545; the museum API gives the date bounds 1540–1550. Public domain image. The museum's earlier title explicitly names Albrecht von Rosenberg, preserved in its Commons image record.",
-      "url": "https://drive.google.com/thumbnail?id=1F4kT-9sKrnSxpGljZpuEz8xiICIw_qPt&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1F4kT-9sKrnSxpGljZpuEz8xiICIw_qPt&sz=w1600",
+      "facts": [
+        "An etching by Matthias Zündt, made circa 1545, depicts Albrecht von Rosenberg abducting Hieronymus Paumgartner."
+      ]
     },
     {
       "title": "Niederstetten St Jakob, double monument of Friedrich Zeisolf von Rosenberg and Anna, born von der Kere",
@@ -2121,6 +2189,9 @@
           "height": 0.0972,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Friedrich Zeisolf von Rosenberg died in 1576."
       ]
     },
     {
@@ -2139,7 +2210,11 @@
           "name": "Rosenberg"
         }
       ],
-      "url": "https://drive.google.com/thumbnail?id=14cHDAFGD_NUNXok8lcXEhIR_6iI-9YOx&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=14cHDAFGD_NUNXok8lcXEhIR_6iI-9YOx&sz=w1600",
+      "facts": [
+        "Reichart von Rosenberg died in 1561.",
+        "Rofina von Rosenberg died in 1560."
+      ]
     },
     {
       "title": "Kocherstetten Marienkirche, composite epitaph of Wolfgang von Stetten, Anna, born von Rosenberg, and Anna von Layen",
@@ -2157,7 +2232,10 @@
           "name": "Rosenberg"
         }
       ],
-      "url": "https://drive.google.com/thumbnail?id=1ZTYRy1Wp_rCHTLCOAx3wVgnVB9d0xNPM&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1ZTYRy1Wp_rCHTLCOAx3wVgnVB9d0xNPM&sz=w1600",
+      "facts": [
+        "Anna von Stetten, born von Rosenberg, died in 1548."
+      ]
     },
     {
       "label": "effigy",
@@ -2238,6 +2316,10 @@
           "height": 0.1982,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Georg Albrecht von Seckendorff was the son of Hans Georg von Seckendorff and Brigitta von Rosenberg.",
+        "Georg Albrecht von Seckendorff died on 30 April 1632."
       ]
     },
     {
@@ -2292,6 +2374,9 @@
           "height": 0.1788,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Albrecht von Rosenberg's donor column dates to 1557."
       ]
     },
     {
@@ -2363,6 +2448,10 @@
           "height": 0.0771,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Hans von Sternberg zu Schenkenau died in 1576.",
+        "Anna von Sternberg, born von Rosenberg, was his wife."
       ]
     },
     {
@@ -2381,6 +2470,10 @@
           "height": 0.2688,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Wolf von Hürnheim died in 1533 and was buried at Kenzingen parish church.",
+        "Uta von Rosenberg was Wolf von Hürnheim's paternal grandmother."
       ]
     },
     {
@@ -2442,6 +2535,10 @@
           "height": 0.057,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Christoph von Maßbach died in 1568.",
+        "Eva von Maßbach, born von Rosenberg, was his wife and died in 1564."
       ]
     },
     {
@@ -2460,6 +2557,11 @@
           "height": 0.112,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Philipp von Maßbach died in 1556.",
+        "Eva von Maßbach died in 1567.",
+        "Their mother was Eva von Maßbach, born von Rosenberg."
       ]
     },
     {
@@ -2562,7 +2664,11 @@
       "placeId": "sugenheim-st-erhard",
       "source": "https://drive.google.com/file/d/1S5jI-fO4QMpDZLmrFEBhocd9h1IvttmD/view — Heidi Klopp, Sugenheim municipal newsletter, January 2025, printed p. 11, epitaph no. 22: https://sugenheim.de/attachments/article/23/MB_Sugenheim_1-25_.pdf",
       "description": "Klopp identifies Johannes Ludovicus as a child of Hans Georg von Seckendorff and Brigitta von Rosenberg and records his death dates as 16 May–6 September 1596. Photograph credited to Heinrich Klopp; no open reuse license stated.",
-      "url": "https://drive.google.com/thumbnail?id=1S5jI-fO4QMpDZLmrFEBhocd9h1IvttmD&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1S5jI-fO4QMpDZLmrFEBhocd9h1IvttmD&sz=w1600",
+      "facts": [
+        "Johannes Ludovicus von Seckendorff was a child of Hans Georg von Seckendorff and Brigitta von Rosenberg.",
+        "Johannes Ludovicus von Seckendorff died between 16 May and 6 September 1596."
+      ]
     },
     {
       "title": "Rüxner’s Thurnierbuch, Michel von Rosenberg",
@@ -2612,11 +2718,11 @@
     },
     {
       "label": "effigy",
-      "title": "Bronnbach, Margretha von Rosenberg",
+      "title": "Bronnbach, Margaretha von Rosenberg",
       "date": "1418",
       "placeId": "bronnbach",
       "source": "https://drive.google.com/file/d/1vK_m-PuhK1sRjAUDrCUfVzqqPi9E4Mnk/view",
-      "description": "Inscription: Anno Domini M CCCC x viij feria quarta post [festum] Penthecostes obiit Margretha von Rosenberg cuius anima requiescat in pace. Amen. Translation: In the year of our Lord 1418, on the Wednesday after [the feast of] Pentecost, Margretha von Rosenberg died. May her soul rest in peace. Amen.",
+      "description": "Inscription: Anno Domini M CCCC x viij feria quarta post [festum] Penthecostes obiit Margaretha von Rosenberg cuius anima requiescat in pace. Amen. Translation: In the year of our Lord 1418, on the Wednesday after [the feast of] Pentecost, Margaretha von Rosenberg died. May her soul rest in peace. Amen.",
       "url": "https://drive.google.com/thumbnail?id=1vK_m-PuhK1sRjAUDrCUfVzqqPi9E4Mnk&sz=w1600",
       "regions": [
         {
@@ -2626,6 +2732,9 @@
           "height": 0.1192,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "Margaretha von Rosenberg died in 1418, on the Wednesday after Pentecost."
       ]
     },
     {
@@ -2674,7 +2783,10 @@
       "placeId": "boxberg",
       "source": "https://drive.google.com/file/d/1l7DObHTunxziPyv02CPrQbt-rTLxD41j/view",
       "description": "Description supplied by the user: Two separate figure stones, 1493, commemorating the rebuilding begun in 1480. Originally outside the chapel at Boxberg castle, above a gate; since 1856 in Karlsruhe, Landessammlungen, stone hall, museum nos. C 101 and C 102. Approximately life-sized reliefs on tomb-like slabs, made during their lifetimes. Jörg wears a knee-length coat and hat and carries an axe and rosary. Osanna carries a rosary, bottle, handled basket with bread(?) and double basket-covered bottle. The editors identify these as a building memorial. Original image filename: C 00101-C 00102_D 4988.jpg.",
-      "url": "https://drive.google.com/thumbnail?id=1l7DObHTunxziPyv02CPrQbt-rTLxD41j&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1l7DObHTunxziPyv02CPrQbt-rTLxD41j&sz=w1600",
+      "facts": [
+        "Jörg von Rosenberg and Osanna von Rosenberg, née von Eycholtzheim, are commemorated on building memorials made in 1493. The rebuilding of Boxberg Castle commemorated by the memorials began in 1480."
+      ]
     },
     {
       "type": "link",
@@ -2711,6 +2823,10 @@
           "height": 0.2532,
           "name": "Rosenberg"
         }
+      ],
+      "facts": [
+        "[konrad_boxberg] died on 6 May in a year ending in 6; the decade and century are illegible.",
+        "[wife_of_konrad] was the wife of Konrad von Rosenberg and died on 2 April in the same year ending in 6."
       ]
     }
   ]
