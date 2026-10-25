@@ -80,8 +80,11 @@ listed in `data/names.md`. Recognized person IDs in facts display the person's
 full name followed by the ID in brackets. An ID search also includes same-name
 facts without a recognized ID, marked `[not recognised]` after the name.
 
+Use `--direct` with a person ID to return only facts containing `[that_id]`, skipping name-only matches.
+
 ```text
 python3 scripts/search_facts_by_name.py vogt_zu_Lauda
+python3 scripts/search_facts_by_name.py vogt_zu_Lauda --direct
 python3 scripts/search_facts_by_name.py 'Eberhardi v. Roßenberg'
 python3 scripts/search_facts_by_name.py Eberhard
 python3 scripts/search_facts_by_name.py Rosenberg

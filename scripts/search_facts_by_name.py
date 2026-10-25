@@ -6,6 +6,7 @@ Examples:
     python3 scripts/search_facts_by_name.py Eberhard
     python3 scripts/search_facts_by_name.py Rosenberg
     python3 scripts/search_facts_by_name.py vogt_zu_Lauda
+    python3 scripts/search_facts_by_name.py vogt_zu_Lauda --direct
     python3 scripts/search_facts_by_name.py Boxberg
 """
 
@@ -121,6 +122,7 @@ def fact_records(data_dir):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("name", help="person ID, full name, given name, surname, or place")
+    parser.add_argument("--direct", action="store_true", help="return only facts containing the supplied person ID (requires a known person ID)")
     parser.add_argument("--data-dir", type=Path, default=ROOT / "data", help=argparse.SUPPRESS)
     args = parser.parse_args()
 
@@ -132,6 +134,8 @@ def main():
     person_names = {norm(person.get("id", "")): person.get("name", "") for person in people if person.get("id") and person.get("name")}
     query_id = norm(args.name)
     selected_person = person_by_id.get(query_id)
+    if args.direct and not selected_person:
+        parser.error("--direct requires a known person ID from data/people.json")
     places = json.loads((ROOT / "data/places.json").read_text(encoding="utf-8"))
     place_variants = {norm(v) for place in places for v in place.get("variations", [])}
     query = [norm(token) for token in re.findall(r"[^\W_]+", args.name, flags=re.UNICODE)]
@@ -161,7 +165,7 @@ def main():
         if selected_person:
             id_match = query_id in identifiers
             name_match = all(any(equivalent(q, token) for token in tokens) for q in query)
-            matched = id_match or name_match
+            matched = id_match if args.direct else id_match or name_match
             uncertain = matched and not identifiers
         elif is_place_query:
             matched = any(equivalent(query[0], token) for token in tokens + metadata_tokens)
