@@ -5,7 +5,12 @@
       "source": "D No. 436, referral",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3933614",
       "german": "König Wenzel gestattet den Brüdern Arnold und Eberhard von Rosenberg in ihrem Dorf Schweigern ein Halsgericht, Stock und Galgen zu haben.",
-      "english": "King Wencesnzel allows the brothers Arnold and Eberhard von Rosenberg to have a neck dish, stick and gallows in their village Schweigern."
+      "english": "King Wencesnzel allows the brothers Arnold and Eberhard von Rosenberg to have a neck dish, stick and gallows in their village Schweigern.",
+      "facts": [
+        "[arnold_boxberg] is brother of [eberhard_jagstberg]",
+        "[eberhard_jagstberg] is brother of [arnold_boxberg]",
+        "King Wenceslas allowed [arnold_boxberg] and [eberhard_jagstberg] to have a Halsgericht, Stock und Galgen in Schweigern"
+      ]
     }
   ]
 }
