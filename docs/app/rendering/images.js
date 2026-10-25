@@ -2,7 +2,7 @@ import { escapeHtml } from './html.js';
 import { localImageName, imageRootForPath } from './image-paths.js';
 import { sealAnnotationMarkup } from './seal-markup.js';
 
-export function createImageRenderer({ location = window.location } = {}) {
+export function createImageRenderer({ location = window.location, state } = {}) {
   const regionMarkup = (regions = []) => regions.map((region) => {
     const { x, y, width, height } = region || {};
     if (![x, y, width, height].every((value) => Number.isFinite(Number(value))) || !String(region?.name || '').trim()) return '';
@@ -42,7 +42,7 @@ export function createImageRenderer({ location = window.location } = {}) {
         const encoded = imagePath.split('/').map((part) => encodeURIComponent(part)).join('/');
         source = location.hostname.endsWith('github.io') ? `https://raw.githubusercontent.com/${owner}/${repository}/main/${encoded}` : `../${encoded}`;
       }
-      const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals, escapeHtml);
+      const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals, escapeHtml, state?.personRecords);
       const sourceRegions = node && typeof node === 'object' ? node.regions : context.regions;
       const regions = context.showRegions === false ? '' : regionMarkup(sourceRegions);
       const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';

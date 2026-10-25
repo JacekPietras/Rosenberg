@@ -379,11 +379,13 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .annotated-image > a { display: block; }
 .seal-marker { position: absolute; z-index: 1; display: block; width: var(--seal-diameter, 0px); height: var(--seal-diameter, 0px); transform: translate(-50%, -50%); pointer-events: none; }
 .seal-marker::before { position: absolute; inset: 0; border: 2px solid #d9485f; border-radius: 50%; content: ''; pointer-events: none; }
+.seal-marker[data-person-reference]::before { border-color: #3aaf72; }
 .image-lightbox.is-editable .image-lightbox-annotations { pointer-events: auto; }
 .image-lightbox.is-editable .seal-marker { pointer-events: auto; cursor: move; }
 .image-lightbox.is-editable .seal-marker.selected::before { border-color: #ffd166; }
 .image-lightbox.is-editable .seal-marker.saving::before { border-color: #ffd166; }
 .seal-marker-label { position: absolute; top: calc(100% + .45rem); left: 50%; display: block; padding: .05rem .2rem; color: #fff; background: color-mix(in srgb, #9d263b 88%, transparent); border-radius: 3px; font-size: .5rem; line-height: 1.25; pointer-events: none; white-space: nowrap; transform: translateX(-50%); }
+.seal-marker[data-person-reference] .seal-marker-label { background: color-mix(in srgb, #247348 88%, transparent); }
 .image-region { position: absolute; z-index: 1; box-sizing: border-box; border: 2px solid #60c4a0; background: rgb(96 196 160 / .12); pointer-events: none; }
 .image-region > span { position: absolute; top: 100%; left: 0; padding: .05rem .25rem; color: #fff; background: rgb(25 105 78 / .9); border-radius: 2px; font-size: .65rem; line-height: 1.3; white-space: nowrap; }
 .image-lightbox-annotations .image-region { pointer-events: auto; cursor: pointer; }

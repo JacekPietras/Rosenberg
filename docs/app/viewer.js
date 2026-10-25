@@ -1230,7 +1230,7 @@ function scrollToEntryHash() {
 
 const markupRenderer = createMarkupRenderer({ state });
 const citationIndex = createCitationIndex({ state });
-const imageRenderer = createImageRenderer();
+const imageRenderer = createImageRenderer({ state });
 const languageRenderer = createLanguageRenderer({ state, markdownMarkup: markupRenderer.markdownMarkup });
 const documentRenderer = createDocumentRenderer({
   state,
