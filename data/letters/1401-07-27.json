@@ -5,14 +5,14 @@
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 1227",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723547",
       "german": "Eberhart von Rosenberg leiht von seinem Bruder Arnold von Rosenberg 415 Gulden für die Dauer eines Jahres unter Leistungsbürgschaft seiner Vettern Arnold d. Ä. und Hans von Rosenberg.",
-      "english": "Eberhard von Rosenberg lends 415 guilders by his brother Arnold von Rosenberg for the duration of one year under the performance guarantee of his cousins Arnold der Ältere and Hans von Rosenberg.",
+      "english": "Eberhard von Rosenberg borrows 415 guilders from his brother Arnold von Rosenberg for the duration of one year under the performance guarantee of his kinsmen Arnold der Ältere and Hans von Rosenberg.",
       "facts": [
         "[eberhard_jagstberg] is brother of [arnold_boxberg]",
         "[eberhard_jagstberg] borrowed money from [arnold_boxberg]",
-        "Arnold von Rosenberg der Ältere is cousin of [eberhard_jagstberg]",
-        "Hans von Rosenberg is cousin of [eberhard_jagstberg]",
-        "Arnold von Rosenberg der Ältere acted as surety for [eberhard_jagstberg]",
-        "Hans von Rosenberg acted as surety for [eberhard_jagstberg]"
+        "[arnold_der_altere_kinsman_of_eberhard_jagstberg] der Ältere is kinsman of [eberhard_jagstberg]",
+        "[hans_von_rosenberg_kinsman_of_eberhard_jagstberg] is kinsman of [eberhard_jagstberg]",
+        "[arnold_der_altere_kinsman_of_eberhard_jagstberg] der Ältere acted as surety for [eberhard_jagstberg]",
+        "[hans_von_rosenberg_kinsman_of_eberhard_jagstberg] acted as surety for [eberhard_jagstberg]"
       ],
       "img": [
         {
