@@ -201,5 +201,120 @@
     "children": [],
     "born": null,
     "died": null
+  },
+  {
+    "id": "irmtraut_wife_of_vogt_zu_Durn",
+    "name": "Irmtraut",
+    "titles": [],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "alheit_von_neudeck",
+    "name": "Alheit von Neudeck",
+    "titles": [],
+    "wife": null,
+    "children": [
+      "hans_von_neudeck"
+    ],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "konrad_husband_of_alheit_von_neudeck",
+    "name": "Konrad von Rosenberg",
+    "titles": [
+      "Ritter"
+    ],
+    "wife": "alheit_von_neudeck",
+    "children": [
+      "hans_von_neudeck"
+    ],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "hans_von_neudeck",
+    "name": "Hans von Neudeck",
+    "titles": [
+      "Edelknecht"
+    ],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "arnold_der_altere_kinsman_of_eberhard_jagstberg",
+    "name": "Arnold von Rosenberg der Ältere",
+    "titles": [
+      "der Ältere"
+    ],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "hans_von_rosenberg_kinsman_of_eberhard_jagstberg",
+    "name": "Hans von Rosenberg",
+    "titles": [],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "reinhard_von_uissigheim_kinsman_of_arnold_boxberg",
+    "name": "Reinhard von Uissigheim",
+    "titles": [],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "kunz_von_rosenberg_kinsman_of_arnold_boxberg",
+    "name": "Kunz von Rosenberg",
+    "titles": [],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "konrad_ritter_kinsman_of_vogt_zu_Lauda",
+    "name": "Konrad von Rosenberg",
+    "titles": [
+      "Ritter"
+    ],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "arnold_armiger_kinsman_of_vogt_zu_Lauda",
+    "name": "Arnold von Rosenberg",
+    "titles": [
+      "armiger"
+    ],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
+  },
+  {
+    "id": "konrad_armiger_kinsman_of_vogt_zu_Lauda",
+    "name": "Konrad von Rosenberg",
+    "titles": [
+      "armiger"
+    ],
+    "wife": null,
+    "children": [],
+    "born": null,
+    "died": null
   }
 ]
