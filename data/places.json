@@ -1185,5 +1185,16 @@
     ],
     "lat": 54.379713,
     "lon": 19.820056
+  },
+  {
+    "id": "schonau",
+    "category": "church",
+    "variations": [
+      "Schönau Abbey",
+      "Schönau Monastery",
+      "Schönau"
+    ],
+    "lat": 49.4359,
+    "lon": 8.8094
   }
 ]
