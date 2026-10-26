@@ -1,6 +1,6 @@
 import { imageCardMarkup } from '../rendering/images.js?v=6';
-import { factText } from '../rendering/facts.js?v=4';
-import { renderFactsView } from '../components/facts_view.js?v=2';
+import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rendering/facts.js?v=5';
+import { renderFactsView } from '../components/facts_view.js?v=3';
 import { findPlaceByName } from '../data/entities.js?v=87';
 
 export function createEntityScreens({
@@ -23,59 +23,40 @@ export function createEntityScreens({
   const fields = ['title', 'source', 'german', 'latin', 'english', 'facts'];
 
   const findByName = (entities, name) => entities.find((entity) => entity.name.toLocaleLowerCase() === String(name).toLocaleLowerCase());
-  const fieldText = (entry, field) => Array.isArray(entry[field]) ? entry[field].join('\n') : String(entry[field] || '');
+  const fieldText = (entry, field) => Array.isArray(entry[field]) ? entry[field].map((value) => field === 'facts' ? factText(value, getPeople()) : String(value)).join('\n') : String(entry[field] || '');
 
   function mentionsFor(entity, kind) {
     const patterns = kind === 'person' ? buildPersonPattern([entity]).map(({ pattern }) => pattern) : [buildPlacePattern([entity])];
     const mentions = [];
     getDocuments().forEach((doc, path) => (Array.isArray(doc?.entries) ? doc.entries : []).forEach((entry, index) => {
-      if (patterns.some((pattern) => pattern && fields.some((field) => {
+      const factMatch = kind === 'person' && (entry.facts || []).some((fact) => factPersonMatch(fact, state.person || entity.id || entity.name, getPeople()));
+      if (factMatch || patterns.some((pattern) => pattern && fields.some((field) => {
+        if (kind === 'person' && field === 'facts') return false;
         pattern.lastIndex = 0;
         return pattern.test(fieldText(entry, field))
-          || (kind === 'person' && field === 'facts' && entity.id && fieldText(entry, field).includes(`[${entity.id}]`))
           || (field === 'title' && pattern.test(String(doc.place || '')));
       }))) mentions.push({ doc, path, entry, index });
     }));
     return mentions;
   }
 
-  function factDate(fact, doc, entry) {
-    return fact && typeof fact === 'object' && fact.date ? fact.date : entry.date || doc.date || '';
-  }
-
   function renderFacts(mentions, factMatches = () => true) {
     const people = getPeople();
-    const peopleById = new Map(people.filter((person) => person.id).map((person) => [person.id, person]));
-    const selectedPersonId = peopleById.has(state.person) ? state.person : '';
-    const selectedName = selectedPersonId
-      ? peopleById.get(selectedPersonId).name
-      : String(state.person || '');
-    const selectedNamePattern = selectedName
-      ? new RegExp(`(?<![\\p{L}\\p{N}])${selectedName.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&')}(?![\\p{L}\\p{N}])`, 'iu')
-      : null;
-    const selectedPersonIds = selectedPersonId
-      ? [selectedPersonId]
-      : people.filter((person) => person.id && person.name.toLocaleLowerCase() === selectedName.toLocaleLowerCase()).map((person) => person.id);
-    const facts = mentions.flatMap(({ doc, entry }, mentionIndex) => (Array.isArray(entry.facts) ? entry.facts : [])
-      .map((fact, factIndex) => ({ date: factDate(fact, doc, entry), text: factText(fact), mentionIndex, factIndex }))
-      .filter((fact) => {
-        const text = String(fact.text || '');
-        const relatesToSelectedPerson = !selectedName
-          || selectedPersonIds.some((id) => text.includes(`[${id}]`))
-          || selectedNamePattern.test(text);
-        return text.trim() && factMatches(text) && relatesToSelectedPerson;
+    const personQuery = state.person || '';
+    const facts = mentions.flatMap(({ doc, path, entry }, mentionIndex) => (Array.isArray(entry.facts) ? entry.facts : [])
+      .map((fact, factIndex) => ({
+        ...(fact && typeof fact === 'object' ? fact : { text: fact }),
+        date: sourceFactDate(fact, doc, entry, path),
+        mentionIndex, factIndex,
+        personMatch: personQuery ? factPersonMatch(fact, personQuery, people) : 'direct',
       }))
+      .filter((fact) => factText(fact, people).trim() && factMatches(factText(fact, people)) && fact.personMatch))
       .sort((left, right) => dateSortValue(left.date) - dateSortValue(right.date) || left.mentionIndex - right.mentionIndex || left.factIndex - right.factIndex);
     if (!facts.length) return '';
     const items = renderFactsView(facts, {
       people,
       inlineMarkup,
-      itemClass: (fact) => {
-        const isGenericMatch = selectedPersonId
-          && !fact.text.includes(`[${selectedPersonId}]`)
-          && selectedNamePattern.test(fact.text);
-        return isGenericMatch ? ' class="entity-fact-ambiguous"' : '';
-      },
+      itemClass: (fact) => fact.personMatch === 'ambiguous' ? ' class="entity-fact-ambiguous"' : '',
     });
     return `<section class="entity-facts"><h3>Facts</h3>${items}</section>`;
   }
@@ -116,8 +97,12 @@ export function createEntityScreens({
 
   function renderPersonPage() {
     const people = getPeople();
-    const person = people.find((item) => item.id === state.person)
+    let person = people.find((item) => item.id === state.person)
       || findByName(people, state.person);
+    if (!person) {
+      const hasUnresolvedName = [...getDocuments().values()].some((doc) => (doc.entries || []).some((entry) => (entry.facts || []).some((fact) => isTypedFact(fact) && [fact.person, fact.of].some((value) => typeof value === 'string' && value.toLocaleLowerCase() === String(state.person).toLocaleLowerCase() && !people.some((item) => item.id === value)))));
+      if (hasUnresolvedName) person = { name: String(state.person) };
+    }
     const pattern = person ? buildPersonPattern([person])[0]?.pattern : /$a/;
     if (!person) return renderPage(person, [], 'person', pattern);
     const selectedId = people.some((item) => item.id === state.person) ? person.id : '';
@@ -131,8 +116,8 @@ export function createEntityScreens({
     };
     const imageEntries = getDocuments().get('data/images/images.json')?.entries || [];
     const relatedImages = imageEntries.filter((entry) => matchesPerson(
-      [entry.title, entry.description, ...(Array.isArray(entry.facts) ? entry.facts : []).map(factText)].join(' '), entry.personId || entry.personid,
-    ));
+      [entry.title, entry.description, ...(Array.isArray(entry.facts) ? entry.facts : []).filter((fact) => !isTypedFact(fact)).map((fact) => factText(fact, people))].join(' '), entry.personId || entry.personid,
+    ) || (entry.facts || []).some((fact) => isTypedFact(fact) && factPersonMatch(fact, state.person, people) === 'direct'));
     const imagesMarkup = relatedImages.length ? `<section class="entity-images"><h3 class="entity-section-title">Images</h3><div class="models-grid armorial-grid">${relatedImages.map((entry) => imageCardMarkup(entry, { titleMarkup: inlineMarkup })).join('')}</div></section>` : '';
     const sealEntries = [];
     getDocuments().forEach((doc, path) => {

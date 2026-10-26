@@ -140,3 +140,106 @@ test('a book publication date is not used as a fact date', () => {
   assert.match(html, /Undated/);
   assert.doesNotMatch(html, /datetime="1872"/);
 });
+
+const { factText, factPersonMatch, sourceFactDate } = await import(await moduleUrl(new URL('../docs/app/rendering/facts.js', import.meta.url)));
+
+test('typed relationship facts render all supported relations with ID links and title lists', () => {
+  const people = [{ id: 'arnold', name: 'Arnold von Rosenberg' }, { id: 'eberhard', name: 'Eberhard von Rosenberg' }];
+  for (const [type, phrase] of [['parent', 'is parent of'], ['sibling', 'is sibling of'], ['spouse', 'is spouse of'], ['kin', 'is kin of']]) {
+    const fact = { type, person: 'arnold', personTitle: ['der Ältere', 'Ritter'], of: 'eberhard', ofTitle: ['der Jüngere'], ...(type === 'kin' ? { term: 'Vetter' } : {}) };
+    const html = renderFactsView([fact], { ...options, people });
+    assert.match(html, /href="\?person=arnold">Arnold von Rosenberg<\/a>, der Ältere, Ritter/);
+    assert.match(html, /href="\?person=eberhard">Eberhard von Rosenberg<\/a>, der Jüngere/);
+    assert.ok(html.includes(phrase));
+    assert.equal(factText(fact, people), `Arnold von Rosenberg, der Ältere, Ritter ${phrase} Eberhard von Rosenberg, der Jüngere${type === 'kin' ? ' (Vetter)' : ''}.`);
+  }
+});
+
+test('typed title facts generate readable assertions and unknown names link to name routes', () => {
+  const fact = { type: 'title', person: 'Unknown von Rosenberg', personTitle: ['der Jüngere', 'Ritter'] };
+  const html = renderFactsView([fact], options);
+  assert.match(html, /href="\?person=Unknown%20von%20Rosenberg">Unknown von Rosenberg<\/a> is designated der Jüngere, Ritter\./);
+  assert.equal(factText(fact), 'Unknown von Rosenberg is designated der Jüngere, Ritter.');
+  const noTitles = renderFactsView([{ type: 'spouse', person: 'A', of: 'B' }], options);
+  assert.doesNotMatch(noTitles, /undefined|null|<\/a>,/);
+});
+
+test('typed names, title lists, and kinship terms are escaped without interpreting markup', () => {
+  const html = renderFactsView([{ type: 'kin', person: '<img src=x>', personTitle: ['<script>'], of: 'B & C', term: '<b>Vetter</b>' }], options);
+  assert.match(html, /&lt;img src=x&gt;/);
+  assert.match(html, /&lt;script&gt;/);
+  assert.match(html, /B &amp; C/);
+  assert.match(html, /&lt;b&gt;Vetter&lt;\/b&gt;/);
+  assert.doesNotMatch(html, /<img|<script|<b>/);
+});
+
+test('explicit null dates suppress inherited dates and date grouping restarts correctly', () => {
+  const fact = { type: 'title', person: 'A', personTitle: ['Ritter'] };
+  const html = renderFactsView([fact, { ...fact, date: null }, fact], { ...options, defaultDate: '1395' });
+  assert.equal((html.match(/datetime="1395"/g) || []).length, 2);
+  assert.equal((html.match(/>Undated</g) || []).length, 1);
+  assert.equal(sourceFactDate({ date: null }, { date: '1395' }, {}, 'data/documents/a.json'), '');
+  for (const path of ['data/books/a.json', 'data/notes/a.json']) {
+    assert.equal(sourceFactDate(fact, { date: '1872' }, { date: '1871' }, path), '');
+    assert.equal(sourceFactDate({ ...fact, date: '1395' }, { date: '1872' }, {}, path), '1395');
+  }
+});
+
+test('typed participant matching preserves exact ID identity and ambiguous name discovery', () => {
+  const people = [{ id: 'lauda', name: 'Eberhard' }, { id: 'durn', name: 'Eberhard' }];
+  assert.equal(factPersonMatch({ type: 'spouse', person: 'X', of: 'lauda' }, 'lauda', people), 'direct');
+  assert.equal(factPersonMatch({ type: 'title', person: 'durn' }, 'lauda', people), '');
+  assert.equal(factPersonMatch({ type: 'title', person: 'Eberhard' }, 'lauda', people), 'ambiguous');
+  assert.equal(factPersonMatch({ type: 'title', person: 'LAUDA' }, 'lauda', people), '');
+  assert.equal(factPersonMatch({ type: 'title', person: 'durn' }, 'Eberhard', people), 'direct');
+});
+
+function typedPersonScreen(state, people, documents) {
+  return createEntityScreens({
+    state, getPeople: () => people, getDocuments: () => new Map(documents),
+    buildPersonPattern, escapeHtml, inlineMarkup: escapeHtml, markdownLinks: escapeHtml,
+    dateSortValue: (date) => Number.parseInt(date, 10) || 0, formatDate: String,
+    documentTitle: () => 'Source document', documentNavigationUrl: (path, index) => `?record=${path}&entry=${index}`,
+    displayedLanguagesFor: () => [], imageMarkup: () => '',
+  }).renderPersonPage();
+}
+
+test('person pages include typed facts on either side and retain source links without merging homonyms', () => {
+  const people = [{ id: 'lauda', name: 'Eberhard' }, { id: 'durn', name: 'Eberhard' }];
+  const documents = [['data/documents/a.json', { date: '1395', entries: [{ source: 'Charter A', facts: [
+    { type: 'spouse', person: 'Else', of: 'lauda', personTitle: ['direct marker'] },
+    { type: 'title', person: 'Eberhard', personTitle: ['unresolved marker'] },
+    { type: 'title', person: 'durn', personTitle: ['other identity marker'] },
+  ] }] }]];
+  const html = typedPersonScreen({ person: 'lauda' }, people, documents);
+  assert.match(html, /direct marker/);
+  assert.match(html, /unresolved marker/);
+  assert.doesNotMatch(html, /other identity marker/);
+  assert.match(html, /class="entity-fact-ambiguous"/);
+  assert.match(html, /data-document-href="\?record=data\/documents\/a.json&amp;entry=0"/);
+  assert.match(html, /Charter A/);
+  assert.match(html, /datetime="1395"/);
+});
+
+test('aggregated person facts never inherit book or note dates and retain explicit event dates', () => {
+  const people = [{ id: 'arnold', name: 'Arnold' }];
+  const documents = ['books', 'notes'].map((kind) => [`data/${kind}/a.json`, { date: '1872', entries: [{ date: '1871', facts: [
+    { type: 'title', person: 'arnold', personTitle: ['Undated designation'] },
+    { type: 'title', person: 'arnold', personTitle: ['Dated designation'], date: '1395' },
+    { type: 'title', person: 'arnold', personTitle: ['Unknown date designation'], date: null },
+  ] }] }]);
+  const html = typedPersonScreen({ person: 'arnold' }, people, documents);
+  assert.match(html, /Undated designation/);
+  assert.match(html, /datetime="1395"/);
+  assert.doesNotMatch(html, /datetime="187[12]"/);
+  assert.match(html, />Undated</);
+});
+
+test('unregistered typed names have working generic person pages', () => {
+  const html = typedPersonScreen({ person: 'Unknown Arnold' }, [], [['data/documents/a.json', { date: '1395', entries: [{ facts: [
+    { type: 'title', person: 'Unknown Arnold', personTitle: ['Ritter'] },
+  ] }] }]]);
+  assert.match(html, /<h2>Unknown Arnold<\/h2>/);
+  assert.match(html, /is designated Ritter/);
+  assert.doesNotMatch(html, /Person not found/);
+});

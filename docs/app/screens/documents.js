@@ -1,4 +1,4 @@
-import { renderFactsView } from '../components/facts_view.js?v=2';
+import { renderFactsView } from '../components/facts_view.js?v=3';
 
 export function createDocumentRenderer({
   state,
@@ -22,7 +22,7 @@ export function createDocumentRenderer({
     const facts = state.showFacts && entry.facts?.length ? renderFactsView(entry.facts, {
       people: getPeople(),
       inlineMarkup,
-      defaultDate: entry.date || documentDate,
+      defaultDate: /^data\/(?:books|notes)\//.test(path) ? '' : Object.hasOwn(entry, 'date') ? entry.date : documentDate,
     }) : '';
     return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}</article>`;
   }
