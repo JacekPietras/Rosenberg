@@ -9,7 +9,13 @@
       "english": "Erasmus von Rosenberg issues a Revers to Count Palatine Friedrich I, acting as guardian for his underage cousin Count Palatine Philipp, concerning the quarter of the castle and outer bailey at Rosenberg that Eberhard von Rosenberg der Ältere had previously held from the Palatinate as a Mannlehen.",
       "facts": [
         "Erasmus von Rosenberg issued a Revers concerning the quarter of the castle and outer bailey at Rosenberg.",
-        "Eberhard von Rosenberg der Ältere held the quarter of the castle and outer bailey at Rosenberg as a Mannlehen from the Palatinate."
+        "Eberhard von Rosenberg der Ältere held the quarter of the castle and outer bailey at Rosenberg as a Mannlehen from the Palatinate.",
+        {
+          "type": "kin",
+          "person": "Erasmus von Rosenberg",
+          "of": "Philipp von der Pfalz",
+          "term": "Vetter"
+        }
       ],
       "img": [
         {

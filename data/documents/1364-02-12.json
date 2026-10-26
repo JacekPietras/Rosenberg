@@ -9,8 +9,9 @@
       "facts": [
         {
           "type": "spouse",
-          "person": "Margarethe von Thüngen",
-          "of": "Eberhard von Rosenberg"
+          "person": "Margaretha von Thüngen",
+          "of": "Eberhard von Rosenberg",
+          "ofTitle": ["verstorben"]
         },
         "Margarethe von Thüngen purchased tithes at Schweigern from Hans von Klepsau and Elisabeth von Klepsau"
       ],

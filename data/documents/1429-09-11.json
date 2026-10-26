@@ -14,7 +14,12 @@
         "Eberhard von Hardheim sold Gülten und Zinse at Eiersheim to Pfalzgraf Otto von Mosbach",
         "Eberhard von Hardheim sold Gülten und Zinse at Schweinberg to Pfalzgraf Otto von Mosbach",
         "Eberhard von Hardheim sold Gülten und Zinse at Rinderfeld to Pfalzgraf Otto von Mosbach",
-        "Eberhard von Hardheim had previously purchased these Gülten und Zinse from Anna von Rosenberg, spouse of Hans von Rosenberg"
+        "Eberhard von Hardheim had previously purchased these Gülten und Zinse from Anna von Rosenberg, spouse of Hans von Rosenberg",
+        {
+          "type": "spouse",
+          "person": "Anna von Rosenberg",
+          "of": "Hans von Rosenberg"
+        }
       ],
       "img": [
         {

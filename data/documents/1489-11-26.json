@@ -7,7 +7,30 @@
       "german": "Ankündigung des Stefan von Adelsheim an seine Vettern und Schwäger Anselm von Eicholzheim, Veit von Mosbach, Michel von Rosenberg und Zeisolf von Adelsheim, in seiner sowie Eberhards und Tristans von Adelsheim Fehdesache gegen Gewährung von Geleit vor dem Bamberger Landgericht rechtlichen Austrag zu suchen.",
       "english": "Stefan von Adelsheim informed his cousins and brothers-in-law Anselm von Eicholzheim, Veit von Mosbach, Michel von Rosenberg, and Zeisolf von Adelsheim that he would seek a legal resolution in his feud, and that of Eberhard and Tristan von Adelsheim, before the Bamberg regional court if safe conduct were granted.",
       "facts": [
-        "Michel von Rosenberg is identified as a cousin and brother-in-law of Stefan von Adelsheim.",
+        {
+          "type": "kin",
+          "person": "Anselm von Eicholzheim",
+          "of": "Stefan von Adelsheim",
+          "term": "Vetter und Schwager"
+        },
+        {
+          "type": "kin",
+          "person": "Veit von Mosbach",
+          "of": "Stefan von Adelsheim",
+          "term": "Vetter und Schwager"
+        },
+        {
+          "type": "kin",
+          "person": "Michel von Rosenberg",
+          "of": "Stefan von Adelsheim",
+          "term": "Vetter und Schwager"
+        },
+        {
+          "type": "kin",
+          "person": "Zeisolf von Adelsheim",
+          "of": "Stefan von Adelsheim",
+          "term": "Vetter und Schwager"
+        },
         "Stefan von Adelsheim addressed Michel von Rosenberg regarding the feud involving Stefan, Eberhard, and Tristan von Adelsheim."
       ]
     }

@@ -9,9 +9,11 @@
       "facts": [
         {
           "type": "spouse",
-          "person": "Margarete von Thüngen",
-          "of": "Eberhard von Rosenberg"
+          "person": "Margaretha von Thüngen",
+          "of": "Eberhard von Rosenberg",
+          "ofTitle": ["verstorben"]
         },
+        "Eberhard von Rosenberg was deceased by 1357-02-03.",
         "Eberhard von Rosenberg had received Uffingen village as a pledge from Graf Eberhard zu Wertheim",
         "Margarete von Thüngen had received Uffingen village as a pledge from Graf Eberhard zu Wertheim",
         "Graf Eberhard zu Wertheim provided Dertingen and Waldbüttelbrunn as substitute properties for Uffingen"
