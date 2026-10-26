@@ -10,35 +10,63 @@ only information explicitly stated or unambiguously expressed in the source;
 never infer, interpret, or extrapolate. The German source is authoritative when
 it differs from the English translation. Facts must be concise, atomic,
 explicit, and written in English, except for historically meaningful German or
-Latin names, titles, places, and epithets. Make one assertion per fact string.
+Latin names, titles, places, and epithets. Make one assertion per fact. Keep
+facts in the source entry; use the typed formats in `rules/json-formats.md`
+for supported relationships and titles. Legacy strings and `{date, text}`
+objects remain supported during migration; other relevant facts may remain
+prose.
 
-Extract all explicitly stated family relationships as separate atomic facts:
+Extract each explicitly stated family relationship as a separate typed fact:
 
-- `X is son/daughter of Y`
-- `X is spouse/widow(er) of Y`
-- `X is brother/sister of Y`
+- `parent`: `person` is a parent of `of`. Reverse the participants when the
+  source says that someone is a child, son, or daughter of someone else.
+- `sibling`: `person` is a sibling of `of`.
+- `spouse`: `person` is a spouse of `of`, including a widow or widower.
+- `kin`: explicit kinship not represented more precisely above; preserve the
+  source's kinship term in `term` without guessing its degree.
 
-Never use grouped forms such as “Sons: A and B”. Do not assume relationship
-symmetry: a statement that X is Y's brother does not automatically establish
-the reverse relationship. Use full names and include German age epithets when
-they distinguish individuals. Preserve the source's distinction among `der
-Alte`, `der Ältere`, `der Junge`, and `der Jüngere`; do not translate these as
-“the old/older/elder/young/younger.” Write the epithet after the full name, as
-in `Konrad von Rosenberg der Ältere` or `Arnold von Rosenberg der Jüngere`.
-Expand abbreviations such as `d. Ä.` and `d. J.` to the corresponding full
-German epithet in facts and English translations; leave the source text as
-written. Place territorial designations such as `zu Boxberg` or `zu Wölchingen`
-after the name as well.
+Never use grouped forms such as “Sons: A and B”. Do not infer relationships
+from proximity, transactions, or shared names. Store a relationship once;
+reverse navigation of parentage and symmetric navigation of spouse/sibling
+edges are graph operations, not additional extracted source statements. Do
+not infer parents from siblings, a second parent from a spouse, full
+siblinghood from one shared parent, or sibling transitivity. Widowhood does
+not supply an exact death or marriage date.
+
+Use `person` and `of` as flat strings containing a known person ID or a
+normalized full name. Use optional `personTitle` and `ofTitle` arrays for
+source-stated designations, including age epithets and territorial scope.
+Omit absent titles; do not fill them from `people.json` or another source.
+A `title` fact uses `person` and a non-empty `personTitle` array, without `of`.
+A designation already recorded on a relationship fact need not be duplicated
+as a separate title fact at the same date.
+
+Preserve the source's distinction among `der Alte`, `der Ältere`, `der Junge`,
+and `der Jüngere`; do not translate them as “the old/older/elder/young/younger.”
+Expand abbreviations such as `d. Ä.` and `d. J.` in facts and English
+translations; leave the source text as written. In typed facts, keep each
+expanded epithet or territorial designation in the corresponding title array.
+In prose facts and translations, put it after the full name, as in
+`Konrad von Rosenberg der Ältere` or `Arnold von Rosenberg zu Boxberg`.
+
+Titles are dated attestations, not permanent identity properties. `der
+Jüngere` can later become `der Ältere`, and `Edelknecht` can precede `Ritter`.
+A first `Ritter` attestation does not date a knighting, and omission of a title
+does not prove its absence. Do not infer uninterrupted title use or identity
+from matching designations. Record a fact-level historical date when it
+differs from the enclosing document date; typed book/note facts always need
+an explicit date. `date: null` records a genuinely unknown date and prevents
+inheritance. Never substitute a book's publication date for historical time.
 
 Preserve German and Latin terminology when it carries historical meaning.
 Examples include `Ritter`, `Edelmann`, `Edel`, `Edelknecht`, `Knecht`, `Vogt`,
 `Hofmeister`, `Burggraf`, `Domherr`, `Vizedom`, `Vitztum`, `Komtur`, `miles`,
 and `armiger`.
 
-Keep these forms in facts and English translations when they function as a
-personal title or designation, and place them after the full name even if the
-German source puts them first: `Arnold von Uissigheim, Ritter`; `Eberhard von
-Rosenberg, Vogt zu Dürn`. Retain the territorial or institutional scope. In a
+Keep these forms in typed title arrays when they function as personal titles
+or designations. In prose facts and English translations, place them after
+the full name even if the German source puts them first: `Arnold von
+Uissigheim, Ritter`; `Eberhard von Rosenberg, Vogt zu Dürn`. Retain the territorial or institutional scope. In a
 list, attach the title to each person, for example, `Eberhard von Rosenberg,
 Ritter; Johann von Randecke, Ritter`.
 
@@ -93,13 +121,19 @@ the matching place record in `data/places.json` before adding or changing its
 variations. Match spelling variants case-insensitively while
 preserving the standard form's case.
 
-In facts, identify people by their normalized full name, using the given name
-followed by `von` and the normalized family name (for example, `Konrad von
-Rosenberg`), not a source spelling variant. When that same normalized name is
-used by multiple people and the fact needs to distinguish one of them, use that
-person's `people.json` ID in square brackets if the record has an ID. If no ID
-is present or identity remains ambiguous, preserve available source distinctions
-and flag the ambiguity; do not require or invent an ID.
+Use normalized full names, with the given name followed by `von` and the
+normalized family name (for example, `Konrad von Rosenberg`), rather than
+source spelling variants when the correspondence is clear. In typed facts,
+`person` and `of` accept either that name or an exact, case-sensitive existing
+`people.json` ID. Write the ID directly in the field, without square brackets
+or separate ID fields. In legacy prose, retain bracketed IDs for identified
+people when needed to distinguish namesakes.
+
+Only use an ID when the evidence identifies that person. An unresolved name
+is not automatically linked to a registry record or the same name in another
+entry. Preserve source distinctions in title arrays and flag remaining
+ambiguity; do not require or invent IDs or titles merely to make a graph
+complete. Do not merge people because they share a name, title, or location.
 
 Normalize clear variants such as `Conradus` to `Konrad`, `Arnolt` to `Arnold`,
 `Engelhart` to `Engelhard`, `Ussinkeim` to `Uissigheim`, and `Erlikeim` to
@@ -110,8 +144,9 @@ do not expand them automatically.
 Never merge people or places solely because their names are similar. If
 identity is ambiguous, preserve the source form and flag it for review. Do not
 normalize away `der Ältere`, `der Jüngere`, `zu [place]`, titles, or other
-identifiers. Keep age epithets in German and after the full name (`<given name>
-von <surname> der Alte/der Ältere/der Junge/der Jüngere`). Record legitimate
+identifiers. Keep age epithets in German, in title arrays for typed facts or
+after the full name in prose (`<given name> von <surname> der
+Alte/der Ältere/der Junge/der Jüngere`). Record legitimate
 new variants for later addition to the relevant names or places file rather
 than silently inventing a standard form.
 
@@ -138,7 +173,11 @@ fact unresolved and report the issue.
 After editing, verify that JSON parses, the document-level `date` and
 `entries` structure remain intact, each relevant entry retains `source`,
 `german`, `english`, and `facts`, and each `facts` array follows the applicable
-schema: document facts are strings, while book facts are objects with `date` and
-`text`. Confirm every fact is supported, atomic, relevant, and not duplicated;
-also confirm source text, translation, citations, names, and date precision were
-not changed unintentionally.
+schema in `rules/json-formats.md`, including typed objects and supported legacy
+forms. Confirm every fact is supported, atomic, relevant, and not duplicated;
+also confirm source text, translation, citations, names, and date precision
+were not changed unintentionally. Run `python3 scripts/validate_facts.py`
+on edited files, adding `--strict-migration` for migrated books/notes. The
+validator checks syntax and references, not source support, identity, or graph
+consistency. Verification quotes and statuses belong in the review response;
+do not add redundant evidence or assessment fields to stored typed facts.

@@ -4,6 +4,101 @@ Read this file when creating or editing JSON under `data/`. Preserve each
 document's source text, English translation, extracted facts, citations, and
 existing structure. Edit JSON directly; do not use a separate facts database.
 
+## Facts JSON
+
+Keep every fact in its existing source entry's `facts` array, alongside the
+original text, translation, and citations. Arrays may contain typed objects,
+legacy strings, and legacy `{date, text}` objects during migration. Use typed
+objects for supported relationships and title attestations; other relevant
+facts may remain prose. A typed object has no duplicate `text`, `id`,
+`evidence`, or `assessment` field. Its source is the containing entry.
+
+The supported typed facts are:
+
+| `type` | Required fields, in addition to `type` | Optional fields | Meaning |
+| --- | --- | --- | --- |
+| `parent` | `person`, `of` | `personTitle`, `ofTitle`, `date` | `person` is a parent of `of`. |
+| `sibling` | `person`, `of` | `personTitle`, `ofTitle`, `date` | `person` is a sibling of `of`. |
+| `spouse` | `person`, `of` | `personTitle`, `ofTitle`, `date` | `person` is a spouse of `of`, including widowhood. |
+| `kin` | `person`, `of`, `term` | `personTitle`, `ofTitle`, `date` | Source-stated kinship without a more specific supported type. |
+| `title` | `person`, `personTitle` | `date` | Source-stated designation of `person`. |
+
+Reject other types and fields. In particular, do not add `father`, `mother`,
+`child`, `son`, `daughter`, `brother`, `sister`, `wife`, or `widow` types. Convert
+“A is B's child” to `parent` with B in `person` and A in `of`. Do not add a
+reverse fact. `kin.term` is a non-empty string preserving the source kinship
+term, such as `Vetter`, without guessing its precise modern meaning.
+
+`person` and `of` are non-empty strings: either a known `people.json` ID or a
+normalized full name. Resolve an exact, case-sensitive ID match first;
+otherwise treat the value as a name, without selecting a namesake's record.
+Write IDs directly in these fields, without square brackets or separate
+`personId`/`ofId` fields. Do not use nested person objects. IDs must be unique
+and must not collide with full names. Preserve existing IDs; do not require
+or invent one when identity is unresolved.
+
+`personTitle` and `ofTitle`, when present, are non-empty arrays of unique,
+non-empty strings. Put each designation in its own item, for example
+`["der Jüngere", "Ritter", "zu Boxberg"]`; keep `Vogt zu Lauda` as one complete
+item. Omit an absent title field instead of writing `null`, an empty array,
+or a scalar string. Only record designations stated by this source. A `title`
+fact requires `personTitle` and has no `of` or `ofTitle` fields.
+
+Illustrative facts, not historical additions:
+
+```json
+[
+  {
+    "type": "parent",
+    "person": "Example parent",
+    "personTitle": ["Ritter"],
+    "of": "Example child",
+    "date": "1399"
+  },
+  {
+    "type": "title",
+    "person": "Example child",
+    "personTitle": ["der Jüngere", "zu Boxberg"],
+    "date": "1399-02-01"
+  }
+]
+```
+
+### Fact dates
+
+Fact-level dates are valid calendar dates using only the source's precision:
+`YYYY`, `YYYY-MM`, or `YYYY-MM-DD`. Never invent missing components. Use an
+explicit `date: null` only for a genuinely unknown historical date; it
+suppresses inheritance and the validator warns that review is required.
+
+In documents, an explicit fact date overrides the entry/document date.
+Without it, inherit the nearest enclosing historical date, normally the
+entry's date or the document-level date. An explicitly unknown enclosing date
+also suppresses fallback. Preserve existing inherited document intervals
+(`YYYY-YYYY`, ISO endpoints separated by `/` or `--`) as intervals; do not
+reduce them to a single day. A typed fact with neither a historical date to
+inherit nor its own date must supply its date or explicit `null`.
+
+In books and notes, typed facts require their own `date` field, even if an
+entry has a date. Never inherit a publication year. During migration, legacy
+strings and text objects remain readable without inventing dates; new or
+migrated book/note prose facts use `{date, text}`. Strict migration validation
+requires an explicit `date` on every book/note fact object and rejects bare
+strings there. Dates record the historical event or attestation, not when
+extraction occurred. A relationship attestation date is not its start date.
+
+Validate facts from the repository root:
+
+```text
+python3 scripts/validate_facts.py
+python3 scripts/validate_facts.py --strict-migration data/books data/notes
+```
+
+The validator checks syntax, fields, dates, and registry references and reports
+source locations. It does not verify historical support or identity, build
+the graph, or detect ancestry cycles. An unmatched ID-like string is a review
+warning, not a resolved person. Review source evidence and data diffs as well.
+
 ## Book JSON
 
 ```json
@@ -26,9 +121,10 @@ existing structure. Edit JSON directly; do not use a separate facts database.
 }
 ```
 
-Book facts are objects with `date` and `text` fields. The date must use only
-the ISO precision supported by the source: `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`.
-Never invent missing date components.
+Book facts follow the shared Facts JSON rules above. Prose facts use
+`{date, text}`; supported relationship and title facts use typed objects with
+an explicit historical `date`. Existing string facts remain supported during
+migration.
 
 ## Document JSON
 
@@ -63,9 +159,10 @@ Never invent missing date components.
 }
 ```
 
-Document facts remain strings. Documents have a document-level `date`
-and an `entries` array. Each entry retains `source`, `german`, `english`, and
-`facts`; `facts` is an array of strings.
+Documents have a document-level `date` and an `entries` array. Each entry
+retains `source`, `german`, `english`, and `facts`. Its `facts` array follows
+the shared Facts JSON rules above: typed facts and legacy prose may coexist,
+and facts normally inherit the document date unless overridden.
 
 The optional document-level `label` may be a string or an array of strings. Each
 label is displayed as a red badge. The special label `"important"` gives the
