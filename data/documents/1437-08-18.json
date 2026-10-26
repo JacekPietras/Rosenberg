@@ -13,7 +13,13 @@
         "Yttel Faut von Ryneck interceded for the release of Jörg Otte from custody",
         "Jörg Balbach swore Urfehde against Jost von Venningen, Komtur zu Mergentheim",
         "Jörg Otte swore Urfehde against Jost von Venningen, Komtur zu Mergentheim",
-        "Jost von Venningen is Komtur zu Mergentheim"
+        {
+          "type": "title",
+          "person": "Jost von Venningen",
+          "personTitle": [
+            "Komtur zu Mergentheim"
+          ]
+        }
       ],
       "img": [
         {

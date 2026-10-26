@@ -7,16 +7,42 @@
       "german": "Arnold von Rosenberg und seine Ehefrau Christine von Handschuhsheim verkaufen ihr Viertel an Boxberg, das sie von dem Ritter Konrad von Rosenberg gekauft hatten, um 6.500 Gulden an ihre Söhne Ulrich und Jörg von Rosenberg.",
       "english": "Arnold von Rosenberg and his wife Christine von Handschuhsheim sell their district to Boxberg, which they had bought from Konrad von Rosenberg, Ritter, at 6,500 guilders to their sons Ulrich and Jörg von Rosenberg.",
       "facts": [
-        "Christine von Handschuhsheim is spouse of [arnold_boxberg]",
+        {
+          "type": "spouse",
+          "person": "Christine von Handschuhsheim",
+          "of": "arnold_boxberg"
+        },
         "[arnold_boxberg] sold a quarter share of Boxberg to his son Ulrich von Rosenberg",
         "[arnold_boxberg] sold a quarter share of Boxberg to his son Jörg von Rosenberg",
         "Christine von Handschuhsheim sold a quarter share of Boxberg to her son Ulrich von Rosenberg",
         "Christine von Handschuhsheim sold a quarter share of Boxberg to her son Jörg von Rosenberg",
-        "Ulrich von Rosenberg is son of [arnold_boxberg]",
-        "Ulrich von Rosenberg is son of Christine von Handschuhsheim",
-        "Jörg von Rosenberg is son of [arnold_boxberg]",
-        "Jörg von Rosenberg is son of Christine von Handschuhsheim",
-        "Konrad von Rosenberg is titled Ritter",
+        {
+          "type": "parent",
+          "person": "arnold_boxberg",
+          "of": "Ulrich von Rosenberg"
+        },
+        {
+          "type": "parent",
+          "person": "Christine von Handschuhsheim",
+          "of": "Ulrich von Rosenberg"
+        },
+        {
+          "type": "parent",
+          "person": "arnold_boxberg",
+          "of": "Jörg von Rosenberg"
+        },
+        {
+          "type": "parent",
+          "person": "Christine von Handschuhsheim",
+          "of": "Jörg von Rosenberg"
+        },
+        {
+          "type": "title",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
         "[arnold_boxberg] had previously purchased a quarter share of Boxberg from Konrad von Rosenberg, Ritter",
         "Christine von Handschuhsheim had previously purchased a quarter share of Boxberg from Konrad von Rosenberg, Ritter"
       ],

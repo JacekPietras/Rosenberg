@@ -10,8 +10,11 @@
       "german": "Arnold und Eberhard von Rosenberg, Brüder, vertauschen an Raban und Konz Mertin, zu Messelhausen gesessen, 4 1/2 Morgen Wiesen zu Beckstein gegen eine Wiese zu Kupprichhausen.",
       "english": "Arnold and Eberhard von Rosenberg, brothers, exchanged 4 1/2 acres of meadows in Beckstein for a meadow in Kupprichhausen to Raban and Kunz Mertin, residing in Messelhausen.",
       "facts": [
-        "[arnold_boxberg] is brother of [eberhard_jagstberg]",
-        "[eberhard_jagstberg] is brother of [arnold_boxberg]",
+        {
+          "type": "sibling",
+          "person": "arnold_boxberg",
+          "of": "eberhard_jagstberg"
+        },
         "[arnold_boxberg] and [eberhard_jagstberg] exchanged meadows at Beckstein for a meadow at Kupprichhausen",
         "[arnold_boxberg] and [eberhard_jagstberg] conducted property transactions with Raban Mertin and Kunz Mertin of Messelhausen"
       ],

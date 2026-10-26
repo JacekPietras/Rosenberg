@@ -15,13 +15,44 @@
       "german": "Arnold von Rosenberg, Edelknecht, und seine Ehefrau Else, verkaufen ihren Anteil an Boxberg mit Genehmigung des Pfalzgrafen Ruprecht d. Ä. als Lehnsherrn um 6.000 Gulden an ihren Bruder und Schwager Eberhard von Rosenberg.\n\nder 2 Aussteller, des Konrad von Rosenberg, Vicedom zu Heidelberg, sowie des Kunz und des Hans von Rosenberg",
       "english": "Arnold von Rosenberg, nobleman, and his wife Elisabeth, sell their share of Boxberg to their brother and brother-in-law Eberhard von Rosenberg for 6,000 guilders with the permission of Count Palatine Ruprecht der Ältere as feudal lord.\n\nthe 2 exhibitors, Konrad von Rosenberg, Vicedom of Heidelberg, as well as Kunz and Hans von Rosenberg",
       "facts": [
-        "[arnold_brother_of_vogt_zu_Lauda] is titled Edelknecht.",
-        "[else_wife_of_arnold] is wife of [arnold_brother_of_vogt_zu_Lauda].",
+        {
+          "type": "title",
+          "person": "arnold_brother_of_vogt_zu_Lauda",
+          "personTitle": [
+            "Edelknecht"
+          ]
+        },
+        {
+          "type": "spouse",
+          "person": "else_wife_of_arnold",
+          "of": "arnold_brother_of_vogt_zu_Lauda",
+          "ofTitle": [
+            "Edelknecht"
+          ]
+        },
         "[else_wife_of_arnold] was named as a seller.",
         "[arnold_brother_of_vogt_zu_Lauda] and [else_wife_of_arnold] sold their share of Boxberg to [vogt_zu_Lauda].",
-        "[vogt_zu_Lauda] is brother of [arnold_brother_of_vogt_zu_Lauda].",
-        "[vogt_zu_Lauda] is brother-in-law of [else_wife_of_arnold].",
-        "Konrad von Rosenberg is titled Vicedom zu Heidelberg.",
+        {
+          "type": "sibling",
+          "person": "vogt_zu_Lauda",
+          "of": "arnold_brother_of_vogt_zu_Lauda",
+          "ofTitle": [
+            "Edelknecht"
+          ]
+        },
+        {
+          "type": "kin",
+          "person": "vogt_zu_Lauda",
+          "of": "else_wife_of_arnold",
+          "term": "Schwager"
+        },
+        {
+          "type": "title",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vicedom zu Heidelberg"
+          ]
+        },
         "Konrad von Rosenberg served as sealer for the Boxberg sale.",
         "Kunz von Rosenberg served as sealer for the Boxberg sale.",
         "Hans von Rosenberg served as sealer for the Boxberg sale.",

@@ -8,7 +8,13 @@
       "german": "Erzbischof P[eter] gestattet dem Ritter Arnold von Uissigheim (uessink-) seine Mainzer Lehengüter zu Hildbrandzellen (Hiltwarisselden)1 an das Kloster Bronnbach (Brune-). ord. Cist. gegen eine Hufe in der Gemarkung des Dorfes Uissigheim zu vertauschen, die er von Mainz zu Lehen nimmt.",
       "english": "Archbishop Peter allowed Arnold von Uissigheim, Ritter, to exchange his Mainz fiefdoms at Hildbrandzellen to the Bronnbach Monastery ord. Cist. for a Hufe in the district of the village of Uissigheim, which he took as a fief from Mainz.",
       "facts": [
-        "Arnold von Uissigheim is titled Ritter",
+        {
+          "type": "title",
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
         "Arnold von Uissigheim held Mainz fiefs at Hildbrandzellen",
         "Arnold von Uissigheim exchanged Hildbrandzellen fiefs for a hufe in Uissigheim territory with Bronnbach Abbey",
         "Exchange approved by Archbishop Peter of Mainz"

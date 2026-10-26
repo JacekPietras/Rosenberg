@@ -11,9 +11,27 @@
         "Friedrich von Rosenberg is cousin of the sons of Arnold von Rosenberg",
         "Jörg von Rosenberg is cousin of the sons of Arnold von Rosenberg",
         "Hans von Rosenberg is cousin of the sons of Arnold von Rosenberg",
-        "Sigmund von Thüngen is titled Ritter",
-        "Jörg Truchsess von Baldersheim is titled Ritter",
-        "Ludwig von der Pfalz is titled Kurfürst",
+        {
+          "type": "title",
+          "person": "Sigmund von Thüngen",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "title",
+          "person": "Jörg Truchsess von Baldersheim",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "title",
+          "person": "Ludwig von der Pfalz",
+          "personTitle": [
+            "Kurfürst"
+          ]
+        },
         "Sigmund von Thüngen acted as verordneter Obmann of Kurfürst Ludwig von der Pfalz",
         "Jörg Truchsess von Baldersheim acted as verordneter Obmann of Kurfürst Ludwig von der Pfalz",
         "Sigmund von Thüngen and Jörg Truchsess von Baldersheim settled by Austrag a dispute between the sons of Arnold von Rosenberg and Friedrich von Rosenberg regarding Anteil an Bastei und Stadt Boxberg",

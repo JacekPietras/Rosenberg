@@ -7,11 +7,31 @@
       "german": "mittelst welcher Graf Rudolf zu Wertheim, Gottfried von Bruneck und Ludwig von Hohenloch eine Sühne vermitteln zwischen dem Edeln Mann Kraft von Hohenloch, ihrem l. Oheim und Retter, einerseits, und den vesten erbern Mannen, herrn Eberhard von Rosenberg, Vogt zu Dürn, Eberhard von Rosenberg von Zimmern genannt, Eberhard und Conrad des vorgenannten Vogts Söhnen und Hans von Rosenberg andererseits.",
       "english": "by means of which Count Rudolf of Wertheim, Gotfried of Bruneck and Ludwig of Hohenloch mediate a reconciliation between the nobleman Kraft of Hohenloch, their 1st uncle and savior, on the one hand, and the staunch hereditary men, Lord Eberhard von Rosenberg, Vogt of Dürn, Eberhard von Rosenberg, called von Zimmern, Eberhard and Konrad, the aforementioned Vogt's sons, and Hans von Rosenberg on the other hand.",
       "facts": [
-        "[vogt_zu_Durn] is Vogt zu Dürn.",
+        {
+          "type": "title",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ]
+        },
         "Eberhard von Rosenberg genannt von Zimmern is mentioned.",
-        "[vogt_zu_Durn] was father of [eberhard_son_of_vogt_zu_Durn]",
+        {
+          "type": "parent",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "of": "eberhard_son_of_vogt_zu_Durn"
+        },
         "Hans von Rosenberg is mentioned in context of mediation with Kraft von Hohenlohe.",
-        "[vogt_zu_Durn] was father of [konrad_son_of_vogt_zu_Durn]"
+        {
+          "type": "parent",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "of": "konrad_son_of_vogt_zu_Durn"
+        }
       ]
     }
   ]

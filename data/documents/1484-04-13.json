@@ -11,7 +11,11 @@
       "german": "Jörg von Hardheim und seine Frau Walpurga von Rosenberg verkaufen an Claus Frosch und seine Frau Katherina ihr Drittel am großen und kleinen Zehnten zu Wolferstetten, das sie zu einem Drittel von Walpurgas Vater bzw. Schweher Reinhard von Hardheim ererbt haben. Das übrige Drittel ist Lehen des Bischofs von Würzburg. Mit Bewilligung des Lehenherrn verkaufen sie ihr freieigenes Drittel um 100 rheinische Gulden Frankfurter Währung vorbehaltlich des Wiederkaufs. Siegler: die Aussteller sowie Eberhard von Hardheim zugleich für seine Brüder Wolf und Jörg. Datiert 13. April 1484.",
       "english": "Jörg von Hardheim and his wife Walpurga von Rosenberg sell to Claus Frosch and his wife Katherina their third of the great and small tithes at Wolferstetten, which they inherited in part from Walpurga’s father or father-in-law Reinhard von Hardheim. The remaining two thirds are a fief of the Bishop of Würzburg. With the lord’s consent, they sell their allodial third subject to a right of repurchase. Sealed by the issuers and by Eberhard von Hardheim for himself and his brothers Wolf and Jörg. Dated 13 April 1484.",
       "facts": [
-        "Walpurga von Rosenberg was the wife of Jörg von Hardheim.",
+        {
+          "type": "spouse",
+          "person": "Walpurga von Rosenberg",
+          "of": "Jörg von Hardheim"
+        },
         "Jörg von Hardheim and Walpurga von Rosenberg sold their third of the great and small tithes at Wolferstetten to Claus Frosch and Katherina."
       ],
       "img": [

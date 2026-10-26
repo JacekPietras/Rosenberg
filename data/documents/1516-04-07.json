@@ -7,9 +7,27 @@
       "german": "Batt Horneck von Hornberg, Amtmann zu Darmstadt, und Georg von Rosenberg, Vogt zu Heidelberg, machen einen Vergleich zwischen der Deutsch-Ordens-Kommende Mergentheim (Komtur Johann Nothaft) und den Brüdern von Rosenberg wegen Streitigkeiten über die Markscheidung zu Boxberg, Wölchingen und Bobstadt sowie über den Wald genannt die Hesbach und andere nachbarliche Streitpunkte.",
       "english": "Batt Horneck von Hornberg, Amtmann zu Darmstadt, and Georg von Rosenberg, Vogt zu Heidelberg, make a comparison between the Teuture Order Mergentheim (Komtur Hans Nothaft) and the Rosenberg brothers about the marrow division to Boxberg, Wölchingen and Bobstadt, as well as over the Wald called the Hesbach and other neighbouring points of dispute.",
       "facts": [
-        "Georg von Rosenberg is titled Vogt zu Heidelberg",
-        "Batt Horneck von Hornberg is titled Amtmann zu Darmstadt",
-        "Hans Nothaft is Komtur of the Deutsch-Ordens-Kommende Mergentheim",
+        {
+          "type": "title",
+          "person": "Georg von Rosenberg",
+          "personTitle": [
+            "Vogt zu Heidelberg"
+          ]
+        },
+        {
+          "type": "title",
+          "person": "Batt Horneck von Hornberg",
+          "personTitle": [
+            "Amtmann zu Darmstadt"
+          ]
+        },
+        {
+          "type": "title",
+          "person": "Hans Nothaft",
+          "personTitle": [
+            "Komtur der Deutsch-Ordens-Kommende Mergentheim"
+          ]
+        },
         "Georg von Rosenberg and Batt Horneck von Hornberg made a Vergleich between the Deutsch-Ordens-Kommende Mergentheim and the Brüder von Rosenberg",
         "The Vergleich addressed Markscheidung zu Boxberg",
         "The Vergleich addressed Markscheidung zu Wölchingen",

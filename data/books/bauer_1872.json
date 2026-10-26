@@ -104,8 +104,10 @@
       "english": "All things considered, however, we find it more likely that Eberhard von Rosenberg with his wife Wyclo, who resided in Zimmern, is the son of Arnold and the father of Eberhard IV, Ritter und Vogt zu Lauda, who died in 1388; see below. In contrast to this Eberhard IV, Eberhard III, der Edelknecht, who, for example, guaranteed a bond for Mainz in 1363, Reg. b. IX, 81, is certainly der Ältere, and thus he is undoubtedly the \"Junker\" Eberhard von Rosenberg der Ältere, who, for example, witnessed documents of the Teutonic Order in 1380 and 1385. In 1383, Eberhard von Rosenberg der Ältere relinquished to Anna Landschabin, his lawful wife, all his possessions in Breigzheim near Hardheim, including court rights and other properties; likewise, all his properties in Sindolsheim in the Zorn, for 1200 florins, which she had proven to him. The bearer of this was Kunz Mönch, bailiff at Steinsberg. He reappears in 1407, on the Tuesday after Palm Sunday. Bishop Hans of Würzburg enfeoffed, at the request of Eberhard von Rosenberg der Ältere, his son Ulrich with the following fiefs, which had been called back: Eberhard von Rosenberg's share in Boffsheim, a portion of the tithe in Meckmühl, ½ of the tithe in Brunacker, his share and holdings in Breigzheim, his share in the small tithe in Rosenberg, and the small tithe and his holdings in Burtheim With that, we lose his trail. The son Ulrich received the aforementioned fiefs in 1407, 1412, and again in 1418 (in 1412 also a share of the tithe in Zimmern and his share in Higelsdorf?). We also find this Ulrich von Rosenberg in 1408 and 1411 in the Reg. b. XII, 17 and 89, as a seal bearer in 1411 and as an assistant to the burgraves against Rothenburg before 1408. In 1421 and 1423, Anselm von Rosenberg—Ulrich's son, who probably also had an (older) brother named Michel—received the fiefs. Michel, Ulrich's son, also once received his share in Boxberg from the Palatinate; unfortunately, we do not know the exact year.",
       "facts": [
         {
-          "date": "1421",
-          "text": "Anselm von Rosenberg was son of Ulrich von Rosenberg."
+          "type": "parent",
+          "person": "Ulrich von Rosenberg",
+          "of": "Anselm von Rosenberg",
+          "date": "1421"
         }
       ]
     },

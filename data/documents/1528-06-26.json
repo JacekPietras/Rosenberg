@@ -7,7 +7,13 @@
       "german": "Die Stadtgemeinde Boxberg übergibt unter gewissen Vorbehalten dem Kurfürsten Ludwig V. von der Pfalz ihren Stadtgraben.",
       "english": "The municipality of Boxberg hands over its moat to Elector Ludwig V of the Palatinate, with certain reservations.",
       "facts": [
-        "Ludwig V. von der Pfalz is titled Kurfürst",
+        {
+          "type": "title",
+          "person": "Ludwig V. von der Pfalz",
+          "personTitle": [
+            "Kurfürst"
+          ]
+        },
         "Die Stadtgemeinde Boxberg transferred ihren Stadtgraben to Kurfürst Ludwig V. von der Pfalz",
         "The transfer of the Stadtgraben was made unter gewissen Vorbehalten"
       ],

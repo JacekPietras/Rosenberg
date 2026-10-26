@@ -11,16 +11,40 @@
         "Kunz von Rosenberg zu Waldmannshofen gave agnatischen Konsens to the Vertrag über die Abtretung Boxbergs vom 24. Juli 1561",
         "Hans Casimir von Rosenberg zu Rosenberg gave agnatischen Konsens to the Vertrag über die Abtretung Boxbergs vom 24. Juli 1561",
         "Zeisolf von Rosenberg zu Haldenbergstetten gave agnatischen Konsens to the Vertrag über die Abtretung Boxbergs vom 24. Juli 1561",
-        "Anna von Rosenberg geb. Krantz von Geispitzheim is widow of Balthasar von Rosenberg",
+        {
+          "type": "spouse",
+          "person": "Anna von Rosenberg geb. Krantz von Geispitzheim",
+          "of": "Balthasar von Rosenberg"
+        },
         "Anna von Rosenberg geb. Krantz von Geispitzheim gave agnatischen Konsens to the Vertrag über die Abtretung Boxbergs vom 24. Juli 1561",
         "Wilhelm Krantz von Geispitzheim is Vormund of Friedrich von Rosenberg",
         "Wilhelm Krantz von Geispitzheim is Vormund of Hans Christoph von Rosenberg",
         "Wolf von Weingarten is Vormund of Friedrich von Rosenberg",
         "Wolf von Weingarten is Vormund of Hans Christoph von Rosenberg",
-        "Friedrich von Rosenberg is son of Balthasar von Rosenberg",
-        "Hans Christoph von Rosenberg is son of Balthasar von Rosenberg",
-        "Philipp Soldan is Vogt von Rieneck zu Urspringen",
-        "Albrecht von Adelsheim is mainzischer Amtmann zu Krautheim",
+        {
+          "type": "parent",
+          "person": "Balthasar von Rosenberg",
+          "of": "Friedrich von Rosenberg"
+        },
+        {
+          "type": "parent",
+          "person": "Balthasar von Rosenberg",
+          "of": "Hans Christoph von Rosenberg"
+        },
+        {
+          "type": "title",
+          "person": "Philipp Soldan",
+          "personTitle": [
+            "Vogt von Rieneck zu Urspringen"
+          ]
+        },
+        {
+          "type": "title",
+          "person": "Albrecht von Adelsheim",
+          "personTitle": [
+            "mainzischer Amtmann zu Krautheim"
+          ]
+        },
         "Hans von Finsterlohr is Zeuge und Mitsiegler",
         "Philipp Soldan is Zeuge und Mitsiegler",
         "Albrecht von Adelsheim is Zeuge und Mitsiegler"

@@ -9,11 +9,34 @@
       "facts": [
         "Eberhard Schenk von Rosenberg is titled Ritter",
         "Eberhard Schenk von Rosenberg served as surety for Archbishop Gerlach's debt to Hans von Salza",
-        "Hans von Rosenberg is titled Ritter",
+        {
+          "type": "title",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
         "Hans von Rosenberg served as surety for Archbishop Gerlach's debt to Hans von Salza",
         "Eberhard von Rosenberg served as surety for Archbishop Gerlach's debt to Hans von Salza",
-        "Eberhard von Rosenberg is titled Edelknecht",
-        "Eberhard Rüdt is brother of Konrad Rüdt",
+        {
+          "type": "title",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ]
+        },
+        {
+          "type": "sibling",
+          "person": "Eberhard Rüdt",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Konrad Rüdt",
+          "ofTitle": [
+            "Ritter",
+            "Burggraf zu Wildenberg"
+          ]
+        },
         "Eberhard Schenk von Rosenberg sealed the surety agreement",
         "Hans von Rosenberg sealed the surety agreement",
         "Eberhard von Rosenberg sealed the surety agreement"

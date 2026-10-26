@@ -7,8 +7,21 @@
       "german": "Ruprecht schuldet Conrad von Rosenberg, vitztum zu Heidelberg, und seiner frau Margarethe von Hirschhorn von Ruprecht I her 810 gulden, wofür derselbe Minneberg von Contze Monich, vogt zu Steinsberg, gelöst, 1000 gulden, welche der pfalzgraf des von Rosenberg tochter verschrieben, und 1000 gulden für sich, zusammen 2810 gulden, wofür ihm Minneberg als pfand bleibt.",
       "english": "Ruprecht owes Konrad von Rosenberg, Vitztum zu Heidelberg, and his wife Margarethe von Hirschhorn 810 guilders from Ruprecht I, for which the same Minneberg von Kunz Mönch, bailiff zu Steinsberg, was redeemed, 1000 guilders, which the Count Palatine gave to Rosenberg's daughter, and 1000 guilders for himself, altogether 2810 guilders, for which Minneberg remains as collateral.",
       "facts": [
-        "Konrad von Rosenberg is titled Vitztum zu Heidelberg",
-        "Margarethe von Hirschhorn is spouse of Konrad von Rosenberg",
+        {
+          "type": "title",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitztum zu Heidelberg"
+          ]
+        },
+        {
+          "type": "spouse",
+          "person": "Margarethe von Hirschhorn",
+          "of": "Konrad von Rosenberg",
+          "ofTitle": [
+            "Vitztum zu Heidelberg"
+          ]
+        },
         "Konrad von Rosenberg had a daughter who was promised money by the Pfalzgraf",
         "Konrad von Rosenberg was creditor of Ruprecht for multiple debts",
         "Konrad von Rosenberg held Minneberg as security for debts owed by Ruprecht"

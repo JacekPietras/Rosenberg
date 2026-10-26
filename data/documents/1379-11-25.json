@@ -9,7 +9,13 @@
       "german": "Erzbischof Adolf von Mainz bekundet, daß er den Juden Abraham von Jagstberg (Jasberg), und Gottschalk, gesessen zu Mergentheim, wegen einer auf 4000 Gulden stehenden Urk., die er von ihnen gelöst hatte, einen Betrag von 2000 Gulden schuldig geworden sei. Er verspricht, diese Summe bis zum 22. Februar (Cathedra Petri) zurückzahlen, andernfalls einen wöchentlichen Zins von zwei alten Hellern pro Gulden entrichten zu wollen. Als Bürgen hat er Ritter Hans v. Rosenberg, den Miltenberger Keller Nikolaus, den [Wall-]Dürner Amtmann Markward, den [Tauber-]Bischofsheimer Amtmann Egen Seman und den Külsheimer Amtmann Eberhard v. Grumbach eingesetzt, die nötigenfalls in Mergentheim Einlager halten sollen.",
       "english": "Archbishop Adolf of Mainz acknowledges that he has become indebted to the Jews Abraham von Jagstberg and Gottschalk, residing in Mergentheim, because of a document valued at 4,000 guilders that he had redeemed from them. He promises to repay this sum by February 22 (Cathedra Petri), otherwise undertaking to pay weekly interest of two old hellers per guilder. He has appointed Hans von Rosenberg, Ritter, the Keller of Miltenberg Nikolaus, the Dürn official Markward, the [Tauber-]Bischofsheim official Egen Seman, and the Külsheim official Eberhard von Grumbach as sureties, who are to hold Einlager in Mergentheim if necessary.",
       "facts": [
-        "Hans von Rosenberg is titled Ritter",
+        {
+          "type": "title",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
         "Hans von Rosenberg served as a surety for Archbishop Adolf of Mainz's debt to Abraham von Jagstberg and Gottschalk of Mergentheim",
         "Hans von Rosenberg was required to hold Einlager in Mergentheim if necessary"
       ]

@@ -7,8 +7,21 @@
       "german": "Verkauf des Anteils am großen und kleinen Zehnten und eines Guts zu Kirchhausen an DM Eberhard von Seinsheim durch Eberhard von Angelloch, Ritter, und seine Ehefrau Anna von Rosenberg,",
       "english": "Sale of the share of the large and small tithes and an estate in Kirchhausen to DM Eberhard von Seinsheim by Eberhard von Gauangelloch, Ritter, and his wife Anna von Rosenberg,",
       "facts": [
-        "Anna von Rosenberg is spouse of Eberhard von Gauangelloch",
-        "Eberhard von Gauangelloch is titled Ritter",
+        {
+          "type": "spouse",
+          "person": "Anna von Rosenberg",
+          "of": "Eberhard von Gauangelloch",
+          "ofTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "title",
+          "person": "Eberhard von Gauangelloch",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
         "Eberhard von Gauangelloch sold a share of the großen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
         "Anna von Rosenberg sold a share of the großen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
         "Eberhard von Gauangelloch sold a share of the kleinen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",

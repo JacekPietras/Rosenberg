@@ -11,11 +11,41 @@
       "english": "Deed of inheritance from Arnold von Rosenberg der Jüngere of Boxberg and his wife Christina von Handschuhsheim for Kunz Pfister and Kunz Fuchs of Eiersheim regarding meadows, rents, and interest above Massenbach.\n\nSeal: 1) Arnold von Rosenberg, 2) Eberhard von Rosenberg (brother), 3) Reinhard von Uessigheim (kinsman, missing), 4) Kunz von Rosenberg (kinsman)",
       "facts": [
         "[arnold_boxberg] der Jüngere resided at Boxberg",
-        "[arnold_boxberg] der Jüngere is spouse of Christina von Handschuhsheim",
+        {
+          "type": "spouse",
+          "person": "arnold_boxberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "of": "Christina von Handschuhsheim"
+        },
         "[arnold_boxberg] der Jüngere and Christina von Handschuhsheim issued an Erbbestandsbrief for Kunz Pfister and Kunz Fuchs zu Eiersheim über Wiesen, Gülten und Zinsen über Massenbach",
-        "[eberhard_jagstberg] is brother of [arnold_boxberg] der Jüngere.",
-        "[reinhard_von_uissigheim_kinsman_of_arnold_boxberg] is kinsman of [arnold_boxberg] der Jüngere.",
-        "[kunz_von_rosenberg_kinsman_of_arnold_boxberg] is kinsman of [arnold_boxberg] der Jüngere.",
+        {
+          "type": "sibling",
+          "person": "eberhard_jagstberg",
+          "of": "arnold_boxberg",
+          "ofTitle": [
+            "der Jüngere"
+          ]
+        },
+        {
+          "type": "kin",
+          "person": "reinhard_von_uissigheim_kinsman_of_arnold_boxberg",
+          "of": "arnold_boxberg",
+          "ofTitle": [
+            "der Jüngere"
+          ],
+          "term": "Vetter"
+        },
+        {
+          "type": "kin",
+          "person": "kunz_von_rosenberg_kinsman_of_arnold_boxberg",
+          "of": "arnold_boxberg",
+          "ofTitle": [
+            "der Jüngere"
+          ],
+          "term": "Vetter"
+        },
         "[arnold_boxberg] der Jüngere sealed the charter",
         "[eberhard_jagstberg] sealed the charter",
         "[reinhard_von_uissigheim_kinsman_of_arnold_boxberg] was listed as Siegel but his seal is missing",

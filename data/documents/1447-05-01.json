@@ -12,8 +12,11 @@
       "facts": [
         "Thomas von Rosenberg mediated the exchange at Schloss Boxberg between Eberhard von Rosenberg der Ältere and the brothers Ulrich von Rosenberg and Jörg von Rosenberg",
         "Eberhard von Rosenberg der Ältere exchanged his Stall in the rear part of Schloss Boxberg near the well above the tower for a Stall and a Backhaus in the front part of Schloss Boxberg",
-        "Ulrich von Rosenberg is brother of Jörg von Rosenberg",
-        "Jörg von Rosenberg is brother of Ulrich von Rosenberg",
+        {
+          "type": "sibling",
+          "person": "Ulrich von Rosenberg",
+          "of": "Jörg von Rosenberg"
+        },
         "Ulrich von Rosenberg gave an Aufgeld as part of the exchange",
         "Jörg von Rosenberg gave an Aufgeld as part of the exchange"
       ],

@@ -9,7 +9,13 @@
       ],
       "german": "Eberhard von Rosenberg, Ritter, und Arnold von Rosenberg, Edelknecht, öffnen den drei Pfalzgrafen Ruprecht ihre Hälfte an Burg und Stadt Boxberg die von der Pfalz zu Lehen geht.\n\nder zwei Aussteller, des Konrad von Rosenberg und des Albrecht von Venningen\n\nZeitschrift für die Geschichte des Oberrheins. 24. 1872\n\nEberhart von Rosenberg, Ritter, und Arnold von Rosenberg, Edelknecht, bekennen, daß sie um sonderliche Gnade, die ihnen die Pfalzgrafen Ruprecht der ältere, Ruprecht der jüngere und Ruprecht der jüngste gethan haben, diesen ihren gnädigen herrn Boxberg, Burg und Stadt, soweit es ihnen zusteht, nämlich den halben Theil, der auch von jenen zu Lehen rühret, geöffnet haben, so daß immer „welcher dann zu zyten der eldeste under yn ist“ von dieser Oeffnung Gebrauch machen und sich darin gegen jeden Feind festsetzen solle. Ausgenommen sind: der Bischof von Wirzburg, der Graf von Wertheim und die Vettern der Aussteller „die mit uns den helm furent.“ Geb. zu Heidelberg off sant Urbans tag 1381.  Perg. Or. mit 4 Siegeln: des Ausstellers, des Conrad von Rosenberg und des Albrecht von Venigen. — Vom selben Tag ist eine beinahe gleich lautende Urkunde vorhanden, die Conrad von Rosenberg, Ritter, Viztum zu Heidelberg ausstellt. Da sind ausgenommen, neben dem Bischof von Wirzburg, des Ausstellers Schwäger vom Hirzhorn. Diese Urkunde ist besiegelt vom Aussteller und seinem Schwager Hans vom Hirzhorn.",
       "facts": [
-        "[vogt_zu_Lauda] is titled Ritter.",
+        {
+          "type": "title",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
         "[vogt_zu_Lauda] and [arnold_brother_of_vogt_zu_Lauda] opened their half of Boxberg castle and town to the Pfalzgrafen Ruprecht der Ältere, Ruprecht der Jüngere, and Ruprecht der Jüngste.",
         "Whichever of the three Pfalzgrafen Ruprecht was eldest at the time could use the opening granted by [vogt_zu_Lauda] and [arnold_brother_of_vogt_zu_Lauda] to establish himself in Boxberg castle and town against any enemy except those expressly exempted.",
         "The Bishop of Würzburg was exempted from the opening of Boxberg granted by [vogt_zu_Lauda] and [arnold_brother_of_vogt_zu_Lauda].",

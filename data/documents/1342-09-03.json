@@ -11,8 +11,14 @@
       "latin": "Ebirhardus de Rosenberg miles et advocatus in Durne testatur se una cum Heinrico Bavaro notario domini Moguntini et aliis amicis ejus in die placiti ex parte domini Moguntini cum Ruperto duce Bawariae in Bensheim 30 solidos hallenses expendisse per Jacobum cellerarium in Starkenberg solvendos. D. Benzheim feria tertia post diem decollationis Joh. Baptistae. *Ego EBIRHARDUS de Rofenberg miles, Advocatus in Durne, recognofco publice in hiis fcriptis, quod ego una cum HEINRICO Bawar. Notario Domini mei Moguntini & aliis amicis ejusdem mei Domini, feria tercia poft diem decollacionis beati Johannis baptifte, cum diem placiti ex parte dicti Domini Moguntini cum amicis illuftris Principis Domini RUPERTI Ducis Bawa-rie in Bensheim tenuimus, triginta folidos hall. expendimus, quam pecuniam JACOBUS Cellerarius in Starkenberg pro nobis folvere tenetur. Datum Bensheim feria tercia predicta. Anno Domini MCCCXLII.*",
       "english": "Eberhard von Rosenberg, Ritter, Vogt zu Dürn, testifies that he, together with Heinrich Bavar, notary of the lord of Mainz, and his other friends, on the day of the hearing on behalf of the lord of Mainz with Ruprecht, duke of Bavaria, in Bensheim, had spent 30 Hallenses shillings, to be paid by Jacob, the cellarer in Starkenberg. Given at Bensheim on the Tuesday after the day of the beheading of John the Baptist.",
       "facts": [
-        "[vogt_zu_Durn] is titled Ritter",
-        "[vogt_zu_Durn] is titled Vogt zu Dürn",
+        {
+          "type": "title",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ]
+        },
         "[vogt_zu_Durn] spent money at a meeting with friends of Count Palatine Ruprecht in Bensheim",
         "Jakob, cellarer at Starkenburg, was to repay [vogt_zu_Durn] for the meeting expenses"
       ]
@@ -24,8 +30,14 @@
       "abstract": "The knight Eberhard von Rosenberg, Vogt zu Dürn, instructs the cellar Jakob zu Starkenburg (Starkenberg) to pay the costs incurred during the meeting with the Bavarian envoys of Count Palatine Rupert I in Bensheim.",
       "english": "Eberhard von Rosenberg, Ritter, Vogt zu Dürn, states that on the date of the document he spent 30 Heller shillings at a meeting in Bensheim with friends of Count Palatine Ruprecht, together with Heinrich Bavarus, notary of the Archbishop of Mainz, and other friends of the archbishop. Jakob, the cellarer in Starkenburg, is to pay the expense. Given at Bensheim on the Tuesday after the beheading of John the Baptist.",
       "facts": [
-        "[vogt_zu_Durn] is titled Ritter",
-        "[vogt_zu_Durn] is titled Vogt zu Dürn",
+        {
+          "type": "title",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ]
+        },
         "[vogt_zu_Durn] spent money at a meeting with friends of Count Palatine Ruprecht in Bensheim",
         "Jakob, cellarer at Starkenburg, was to repay [vogt_zu_Durn] for the meeting expenses"
       ]

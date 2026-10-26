@@ -8,10 +8,22 @@
       "english": "Engelhard von Rosenberg and Anne Ruchs, his wife and Eberhard, their son, certify: the serfs they have in Hardheim, for whom Eberhard von Hardheim has lent them 120 florins, have been bought from them for 42 pound hellers in addition to the above sum.",
       "facts": [
         "Engelhard von Rosenberg conducted financial transactions regarding serfs at Hardheim",
-        "Anne Ruchs is spouse of Engelhard von Rosenberg",
-        "Eberhard von Rosenberg is son of Engelhard von Rosenberg",
+        {
+          "type": "spouse",
+          "person": "Anne Ruchs",
+          "of": "Engelhard von Rosenberg"
+        },
+        {
+          "type": "parent",
+          "person": "Engelhard von Rosenberg",
+          "of": "Eberhard von Rosenberg"
+        },
         "Engelhard von Rosenberg held serfs at Hardheim",
-        "Eberhard von Rosenberg is son of Anne Ruchs",
+        {
+          "type": "parent",
+          "person": "Anne Ruchs",
+          "of": "Eberhard von Rosenberg"
+        },
         "Anne Ruchs held serfs at Hardheim",
         "Eberhard von Rosenberg held serfs at Hardheim",
         "Engelhard von Rosenberg sold serfs at Hardheim to Eberhard von Hardheim",

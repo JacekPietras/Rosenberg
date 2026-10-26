@@ -11,8 +11,28 @@
       "german": "Graf Eberhard von Wertheim verleiht den Zehnten zu Großrinderfeld, der von der Grafschaft zu Lehen rührt und von der Edelfrau Anna, Tochter des Ritters Johannes von Rosenberg und Witwe des Ritters Johannes Phal von Grünsfeld, an die Kartause Grünau verkauft worden war. Datiert 28. März 1368.",
       "english": "Count Eberhard von Wertheim grants the tithe at Großrinderfeld, a fief of the county, which Edelfrau Anna, daughter of Hans von Rosenberg, Ritter, and widow of Johannes Phal von Grünsfeld, Ritter, had sold to Grünau Charterhouse. Dated 28 March 1368.",
       "facts": [
-        "Anna von Rosenberg was the daughter of Hans von Rosenberg.",
-        "Anna von Rosenberg was the widow of Hans Phal von Grünsfeld.",
+        {
+          "type": "parent",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Anna von Rosenberg",
+          "ofTitle": [
+            "Edelfrau"
+          ]
+        },
+        {
+          "type": "spouse",
+          "person": "Anna von Rosenberg",
+          "personTitle": [
+            "Edelfrau"
+          ],
+          "of": "Hans Phal von Grünsfeld",
+          "ofTitle": [
+            "Ritter"
+          ]
+        },
         "Anna von Rosenberg sold the tithe at Großrinderfeld to Grünau Charterhouse."
       ],
       "img": [

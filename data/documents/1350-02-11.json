@@ -7,14 +7,52 @@
       "german": "Beweisbrief des Ritters Erhart von Rosenberg, Vogt zu Wildenberg, über 60 Mark Silber auf dem Bauhof (\"Buhoffe\") zu Rosenberg für Elisabeth, Tochter des Burkhard von Seckendorff und Ehefrau des Konrad von Rosenberg, des Sohnes des Ausstellers, zur Morgengabe. - Siegler: der Aussteller und seine drei Söhne Enhelhart von Rosenberg, Hans von Rosenberg (als Affix, s.u.) und Konrad von Rosenberg.\n\nMit Affix nach 1350 Februar 11 des Hans von Rosenberg, Domherr in Würzburg. - Sieger: der Aussteller Hans von Rosenberg.",
       "english": "Letter of proof by Erhart von Rosenberg, Ritter, Vogt zu Wildenberg, concerning 60 marks of silver secured on the Bauhof (\"Buhoffe\") at Rosenberg for Elisabeth, daughter of Burkhard von Seckendorff and wife of Konrad von Rosenberg, the issuer's son, as her morning gift. Seals: the issuer and his three sons Enhelhart von Rosenberg, Hans von Rosenberg (as an attachment, see below), and Konrad von Rosenberg.\n\nWith an attachment added after 11 February 1350 from Hans von Rosenberg, canon in Würzburg. - Sealer: the issuer Hans von Rosenberg.",
       "facts": [
-        "Erhart von Rosenberg is titled Ritter.",
-        "Erhart von Rosenberg is Vogt zu Wildenberg.",
-        "Konrad von Rosenberg is son of Erhart von Rosenberg.",
-        "Konrad von Rosenberg is spouse of Elisabeth von Seckendorff.",
-        "Elisabeth von Seckendorff is daughter of Burkhard von Seckendorff.",
+        {
+          "type": "title",
+          "person": "Erhart von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Wildenberg"
+          ]
+        },
+        {
+          "type": "parent",
+          "person": "Erhart von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Wildenberg"
+          ],
+          "of": "Konrad von Rosenberg"
+        },
+        {
+          "type": "spouse",
+          "person": "Konrad von Rosenberg",
+          "of": "Elisabeth von Seckendorff"
+        },
+        {
+          "type": "parent",
+          "person": "Burkhard von Seckendorff",
+          "of": "Elisabeth von Seckendorff"
+        },
         "Erhart von Rosenberg issued a Beweisbrief concerning 60 marks of silver on the Bauhof at Rosenberg for Elisabeth von Seckendorff as her Morgengabe.",
-        "Enhelhart von Rosenberg is son of Erhart von Rosenberg.",
-        "Hans von Rosenberg is son of Erhart von Rosenberg.",
+        {
+          "type": "parent",
+          "person": "Erhart von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Wildenberg"
+          ],
+          "of": "Enhelhart von Rosenberg"
+        },
+        {
+          "type": "parent",
+          "person": "Erhart von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Wildenberg"
+          ],
+          "of": "Hans von Rosenberg"
+        },
         "Hans von Rosenberg is a Domherr in Würzburg."
       ]
     }

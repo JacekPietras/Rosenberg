@@ -7,10 +7,27 @@
       "german": "Eberhart von Rosenberg leiht von seinem Bruder Arnold von Rosenberg 415 Gulden für die Dauer eines Jahres unter Leistungsbürgschaft seiner Vettern Arnold d. Ä. und Hans von Rosenberg.",
       "english": "Eberhard von Rosenberg borrows 415 guilders from his brother Arnold von Rosenberg for the duration of one year under the performance guarantee of his kinsmen Arnold der Ältere and Hans von Rosenberg.",
       "facts": [
-        "[eberhard_jagstberg] is brother of [arnold_boxberg]",
+        {
+          "type": "sibling",
+          "person": "eberhard_jagstberg",
+          "of": "arnold_boxberg"
+        },
         "[eberhard_jagstberg] borrowed money from [arnold_boxberg]",
-        "[arnold_der_altere_kinsman_of_eberhard_jagstberg] der Ältere is kinsman of [eberhard_jagstberg]",
-        "[hans_von_rosenberg_kinsman_of_eberhard_jagstberg] is kinsman of [eberhard_jagstberg]",
+        {
+          "type": "kin",
+          "person": "arnold_der_altere_kinsman_of_eberhard_jagstberg",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "of": "eberhard_jagstberg",
+          "term": "Vetter"
+        },
+        {
+          "type": "kin",
+          "person": "hans_von_rosenberg_kinsman_of_eberhard_jagstberg",
+          "of": "eberhard_jagstberg",
+          "term": "Vetter"
+        },
         "[arnold_der_altere_kinsman_of_eberhard_jagstberg] der Ältere acted as surety for [eberhard_jagstberg]",
         "[hans_von_rosenberg_kinsman_of_eberhard_jagstberg] acted as surety for [eberhard_jagstberg]"
       ],

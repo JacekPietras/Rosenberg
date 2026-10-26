@@ -7,7 +7,13 @@
       "german": "Hans von Rosenberg, ritter: burg und dorf Mure und ein haus zu Heidelberg, gelegen an Albrechts von Erlekeim haus.",
       "english": "Hans von Rosenberg, Ritter: Mure castle and village and a house in Heidelberg, situated next to Albrecht von Erligheim's house.",
       "facts": [
-        "Hans von Rosenberg is titled Ritter",
+        {
+          "type": "title",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
         "Hans von Rosenberg held Burg and Dorf Mure",
         "Hans von Rosenberg owned a house in Heidelberg",
         "Hans von Rosenberg's house in Heidelberg was located adjacent to Albrecht von Erligheim's house"

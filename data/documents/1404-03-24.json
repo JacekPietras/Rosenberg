@@ -11,7 +11,11 @@
       "german": "Eberhard Geyer und seine Ehefrau Guda von Hutten verkaufen an Arnold von Rosenberg d. Ä. und Arnold von Rosenberg d. J. ihren Teil des kleinen Zehnten zu Schweigern.",
       "english": "Eberhard Geyer and his wife Guda von Hutten sell their share of the small tithe in Schweigern to Arnold von Rosenberg der Ältere and Arnold von Rosenberg der Jüngere.",
       "facts": [
-        "Guda von Hutten was the wife of Eberhard Geyer.",
+        {
+          "type": "spouse",
+          "person": "Guda von Hutten",
+          "of": "Eberhard Geyer"
+        },
         "Arnold von Rosenberg der Ältere and [arnold_boxberg] acquired a share of the small tithe in Schweigern from Eberhard Geyer and Guda von Hutten."
       ],
       "img": [

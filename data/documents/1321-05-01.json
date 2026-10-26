@@ -7,7 +7,15 @@
       "german": "Graf Rudolf von Wertheim und Rudolf von Wertheim, Domherr zu Würzburg, Gebrüder, verzichten aus Liebe zu ihrem Oheim Graf Berthold von Henneberg, Johanniter-Prior und Komtur zu Boxberg, auf alle ihre Lehnsrechte an den vom Johanniter-Orden besessenen Gütern.\n\nSiegel des Grafen von Wertheim stark beschädigt, das des Domherrn Rudolf fehlt",
       "english": "Count Rudolf of Wertheim and Rudolf von Wertheim, Canon zu Würzburg, brothers, renounce all their feudal rights to the properties owned by the Order of St. John out of love for their uncle Count Berthold of Henneberg, Prior of the Order of St. John and Commander of Boxberg.\n\nSeal of Count of Wertheim badly damaged, that of Canon Rudolf missing",
       "facts": [
-        "Graf Berthold von Henneberg is Johanniter-Prior and Komtur zu Boxberg",
+        {
+          "type": "title",
+          "person": "Berthold von Henneberg",
+          "personTitle": [
+            "Graf",
+            "Johanniter-Prior",
+            "Komtur zu Boxberg"
+          ]
+        },
         "Johanniter Order possessed goods at Boxberg by 1321",
         "Boxberg served as a Johanniter commandery under Henneberg leadership",
         "Wertheim family had feudal rights over Johanniter goods at Boxberg (renounced in favor of Henneberg)"

@@ -11,7 +11,11 @@
         "Ulrich von Rosenberg died after the 1424 debt fell due.",
         "Bishop Johann von Brunn agreed to pay Gute, widow of Ulrich von Rosenberg, and her son Anselm von Rosenberg 4,000 florins by 22 February 1427.",
         "Bishop Johann von Brunn agreed to deliver Schloss Brassoldshaim and its appurtenances and revenues to Gute, widow of Ulrich von Rosenberg, and Anselm von Rosenberg if he did not pay the 4,000 florins.",
-        "Gute was the wife of Ulrich von Rosenberg.",
+        {
+          "type": "spouse",
+          "person": "Gute",
+          "of": "Ulrich von Rosenberg"
+        },
         "Anselm von Rosenberg was the son of Ulrich von Rosenberg and Gute."
       ],
       "img": [

@@ -11,7 +11,13 @@
       "english": "Erasmus von Enheim of Eubigheim and his wife Klara, née Fuchs von Schweinshaupten, certify that they have sold their wine, grain, hay, and house tithes at Markelsheim on the Tauber, as well as their house and farmstead there, to Prior Kilian and the convent of the Augustinian monastery at Rebdorf in the diocese of Eichstätt for 3,200 Rhenish guilders in Franconian currency. They hand over to the buyers a list of the properties belonging to the tithes and a document certifying that they hold the properties as freehold, having previously held them in fief from Albrecht von Bibra, provost of Würzburg and Neumünster. They also hand over a document stating that whoever is appointed to the farm is not to be a subject of the Teutonic Order. The guarantors are to serve at Ansbach, Herrieden, or Rothenburg. They are Sigmund von Thüngen, Ritter and official at Karlburg; Jörg Truchseß von Baldersheim, Ritter and official at Lauda; Leonhard von Rosenberg, official at Uffenheim; and Wolfhard von Enheim of Forndorf, official at Feuchtwangen.",
       "facts": [
         "Leonhard von Rosenberg served as a guarantor for the sale by Erasmus von Enheim and his wife Klara to the Augustinian monastery at Rebdorf.",
-        "Leonhard von Rosenberg was Amtmann zu Uffenheim."
+        {
+          "type": "title",
+          "person": "Leonhard von Rosenberg",
+          "personTitle": [
+            "Amtmann zu Uffenheim"
+          ]
+        }
       ]
     }
   ]

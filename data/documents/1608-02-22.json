@@ -8,7 +8,11 @@
       "english": "Albrecht Christoph von und zu Rosenberg of Waldmannshofen, Gnötzheim, and Schüpf; Eberhard von Elttershouen of Ipsheim, margravial councillor and Amtmann at Hoheneck; and Georg Friedrich von Seckhendorff of Langenfeld, acting as guardians of the sons of the late Hans Georg von Seckhendorff, acknowledge a debt to Lorenz von Münster of Breitenlohe and promise annual interest until redemption. Guarantor: Georg Sigmund von Rosenberg of Waldmannshofen, Haldenbergstetten, Gnötzheim, and Schüpf, brother of Albrecht Christoph.",
       "facts": [
         "Albrecht Christoph von und zu Rosenberg acted as a guardian of the sons of the late Hans Georg von Seckhendorff.",
-        "Georg Sigmund von Rosenberg was brother of Albrecht Christoph von und zu Rosenberg.",
+        {
+          "type": "sibling",
+          "person": "Georg Sigmund von Rosenberg",
+          "of": "Albrecht Christoph von und zu Rosenberg"
+        },
         "Georg Sigmund von Rosenberg guaranteed the debt acknowledged by the guardians to Lorenz von Münster."
       ]
     }

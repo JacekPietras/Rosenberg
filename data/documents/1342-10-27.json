@@ -8,7 +8,11 @@
       "german": "Kaiser Ludwig IV. der Bayer urteilt, dass Kunigunde von Lißberg, die Ehefrau des Eberhard von Rosenberg und Mutter des verstorbenen Engelhards von Hirschhorn und des Hans von Hirschhorn die Feste Prachtaue mit Zubehör, die als väterliches Erbteil an sie gekommen ist aufgeben und an Engelhard, Hans und Hermann von Hirschhorn übergeben soll.",
       "english": "Emperor Ludwig IV the Bavarian judges that Kunigunde von Lißberg, the wife of Eberhard von Rosenberg and mother of the deceased Engelhard von Hirschhorn and Hans von Hirschhorn, should give up the Prachtaue fortress with its accessories, which came to her as a paternal inheritance, and hand it over to Engelhard, Hans and Hermann von Hirschhorn.",
       "facts": [
-        "Kunigunde von Lissberg is spouse of Eberhard von Rosenberg"
+        {
+          "type": "spouse",
+          "person": "Kunigunde von Lissberg",
+          "of": "Eberhard von Rosenberg"
+        }
       ],
       "img": [
         {

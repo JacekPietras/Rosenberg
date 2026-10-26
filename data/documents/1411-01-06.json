@@ -9,7 +9,11 @@
       "english": "Hermann [II von Altenburg], Abbot of Hersfeld, acknowledges that Berthold von Borsch, with his consent, sold specified properties in Oberlengsfeld [a district of the municipality of Schenklengsfeld, Hersfeld-Rotenburg district] and Lengsfeld [today Schenklengsfeld, Hersfeld-Rotenburg district] to Hermann von Rosenberg and his wife Adelheid for 20 guilders with the right of repurchase. Regulations concerning the repurchase of the properties follow. The seals of Abbot Hermann and [Berthold von Borsch (?)] are announced. Other people and places are mentioned.",
       "facts": [
         "Hermann Rosenberg acquired specified properties in Oberlengsfeld and Lengsfeld with his wife Adelheid from Berthold von Borsch, subject to repurchase.",
-        "Adelheid was the wife of Hermann Rosenberg.",
+        {
+          "type": "spouse",
+          "person": "Adelheid",
+          "of": "Hermann Rosenberg"
+        },
         "Hermann II von Altenburg, Abbot of Hersfeld, consented to Berthold von Borsch’s sale of the properties to Hermann Rosenberg and his wife Adelheid."
       ],
       "img": [

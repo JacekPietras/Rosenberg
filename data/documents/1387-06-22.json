@@ -17,15 +17,74 @@
         "[vogt_zu_Lauda]'s heirs agreed to pursue the tithe case before the Bishop of Würzburg by the next feast of Saint Martin and submit to Church judgment",
         "Bishop Gerhard of Würzburg permitted church burial of [vogt_zu_Lauda] after receiving his heirs' undertakings and Engelhard's promises",
         "[vogt_zu_Lauda] was in dispute with the Bishop of Würzburg over tithes at Wölchingen",
-        "Engelhard von Rosenberg was the paternal uncle of [vogt_zu_Lauda]",
+        {
+          "type": "kin",
+          "person": "Engelhard von Rosenberg",
+          "of": "vogt_zu_Lauda",
+          "ofTitle": [
+            "Ritter"
+          ],
+          "term": "patruo"
+        },
         "[vogt_zu_Lauda] had a wife",
         "[vogt_zu_Lauda] had sons",
-        "[konrad_ritter_kinsman_of_vogt_zu_Lauda] was titled Ritter.",
-        "[konrad_ritter_kinsman_of_vogt_zu_Lauda] was a kinsman of [vogt_zu_Lauda].",
-        "[arnold_armiger_kinsman_of_vogt_zu_Lauda] was titled armiger.",
-        "[arnold_armiger_kinsman_of_vogt_zu_Lauda] was a kinsman of [vogt_zu_Lauda].",
-        "[konrad_armiger_kinsman_of_vogt_zu_Lauda] was titled armiger.",
-        "[konrad_armiger_kinsman_of_vogt_zu_Lauda] was a kinsman of [vogt_zu_Lauda]."
+        {
+          "type": "title",
+          "person": "konrad_ritter_kinsman_of_vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "kin",
+          "person": "konrad_ritter_kinsman_of_vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "vogt_zu_Lauda",
+          "ofTitle": [
+            "Ritter"
+          ],
+          "term": "consanguineos"
+        },
+        {
+          "type": "title",
+          "person": "arnold_armiger_kinsman_of_vogt_zu_Lauda",
+          "personTitle": [
+            "armiger"
+          ]
+        },
+        {
+          "type": "kin",
+          "person": "arnold_armiger_kinsman_of_vogt_zu_Lauda",
+          "personTitle": [
+            "armiger"
+          ],
+          "of": "vogt_zu_Lauda",
+          "ofTitle": [
+            "Ritter"
+          ],
+          "term": "consanguineos"
+        },
+        {
+          "type": "title",
+          "person": "konrad_armiger_kinsman_of_vogt_zu_Lauda",
+          "personTitle": [
+            "armiger"
+          ]
+        },
+        {
+          "type": "kin",
+          "person": "konrad_armiger_kinsman_of_vogt_zu_Lauda",
+          "personTitle": [
+            "armiger"
+          ],
+          "of": "vogt_zu_Lauda",
+          "ofTitle": [
+            "Ritter"
+          ],
+          "term": "consanguineos"
+        }
       ],
       "img": [
         {

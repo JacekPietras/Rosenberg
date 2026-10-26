@@ -11,7 +11,11 @@
       "english": "The Lords Eitel Mertin of Dörzbach, Heinrich Sämann of Eubigheim, Hans von Rosenberg at Rosenberg, Hans von Bolzhausen of Röttingen, and Rüdiger von Sugenheim of Ingelfingen hereby certify: In the legal dispute between Mrs. Elisabeth von Erligheim, widow of Eberhard von Rosenberg, her children and heirs, on the one hand, and Schöntal Abbey, on the other, the courts ruled that the monastery had to pay the opposing party half of the annual rent of 3 lb, which it had previously paid to the Knights Hospitaller of Krautheim in the parish there, but not hay.\n\nSiegler: the A.  Execution Perg., 5 Sg., 2nd damaged, 1st and 3rd-5th cancelled, Pressel attached. - Rev.: Littera de compositione monete census in Boxperg, added: ratione curie in Gummersdorff etc.; -\n\n---\n\nMessrs. Eitel Mertin of Dörzbach, Heinrich Sämann of Eubigheim, Hans von Rosenberg at Rosenberg, Hans von Bolzhausen of Röttingen, and Rüdiger von Sugenheim of Ingelfingen hereby certify: In the legal dispute between Mrs. Elisabeth von Erligheim, widow of Eberhard von Rosenberg, her children and heirs on the one hand, and Schöntal Abbey on the other, the A. ruled that the monastery had to pay the opposing party half of the annual rent of 3 lb, which it formerly had to pay to the Knights Hospitaller in Krautheim to the parish there, but not hay.\n\nSiegler: the A. Execution Perg., 5 Sg., 2nd documented, 1st and 3rd-5th rejected, Pressel attached. - Rev.: Littera de compositione monete census in Boxperg, added: ratione curie in Gummersdorff etc.; - ...",
       "facts": [
         "Hans von Rosenberg zu Rosenberg served as arbitrator in a legal dispute involving Elisabeth von Erligheim",
-        "Elisabeth von Erligheim is widow of [vogt_zu_Lauda]",
+        {
+          "type": "spouse",
+          "person": "Elisabeth von Erligheim",
+          "of": "vogt_zu_Lauda"
+        },
         "[vogt_zu_Lauda] was deceased by 1390",
         "Elisabeth von Erligheim had children and heirs with [vogt_zu_Lauda]",
         "Hans von Rosenberg arbitrated a dispute between Elisabeth von Erligheim's family and Schöntal Abbey"

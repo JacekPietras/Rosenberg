@@ -8,7 +8,11 @@
       "german": "König Ruprecht gestattet den Brüdern Arnold und Eberhard von Rosenberg in ihrem Dorf Schweigern ein Halsgericht, Stock und Galgen zu haben.",
       "english": "King Ruprecht allows the brothers Arnold and Eberhard von Rosenberg to have a neck court, stocks and gallows in their village of Schweigern.",
       "facts": [
-        "[arnold_boxberg] was brother of [eberhard_jagstberg].",
+        {
+          "type": "sibling",
+          "person": "arnold_boxberg",
+          "of": "eberhard_jagstberg"
+        },
         "King Ruprecht permitted [arnold_boxberg] and [eberhard_jagstberg] to have a Halsgericht, Stock und Galgen in Schweigern."
       ]
     },
@@ -17,7 +21,11 @@
       "german": "König Ruprecht erlaubt den Gebrüdern Arnolt und Eberhard von Rosenberg, in ihrem Dorfe „Sweyern vnd in sinem begriffe“ Schultheiss und Schöffen, ein Halsgericht, Stock und Galgen künftig daselbst zu haben, C.",
       "english": "King Ruprecht permits the brothers Arnold and Eberhard von Rosenberg to henceforth have a reeve and aldermen, a high court of justice, stocks, and gallows in their village \"Schweigern and in its jurisdiction,\" C.",
       "facts": [
-        "[arnold_boxberg] is brother of [eberhard_jagstberg]",
+        {
+          "type": "sibling",
+          "person": "arnold_boxberg",
+          "of": "eberhard_jagstberg"
+        },
         "King Ruprecht permitted [arnold_boxberg] to have Schultheiss und Schöffen at Schweigern",
         "King Ruprecht permitted [arnold_boxberg] to have Halsgericht, Stock und Galgen at Schweigern",
         "King Ruprecht permitted [eberhard_jagstberg] to have Schultheiss und Schöffen at Schweigern",

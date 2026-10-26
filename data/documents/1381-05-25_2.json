@@ -10,8 +10,21 @@
       "german": "Die Pfalzgrafen Ruprecht d. Ä. und Ruprecht d. J. verleihen den Brüdern Eberhard und Arnold von Rosenberg ihre Hälfte am Schloss Boxberg, die diese ihnen zu Lehen aufgetragen und geöffnet haben, zu rechtem Mannlehen.\n\nRuprecht der ältere und Ruprecht der jüngere, Pfalzgrafen bei Rhein, bekennen, daß Eberhard, Ritter und Arnold, Gebrüder von Rosenberg die ihnen zustehende Hälfte an Schloß und Stadt Boxberg ihnen (den Pfalzgrafen) aufgegeben und von ihnen sofort wieder zu rechtem Mannslehen empfangen haben und versprechen für sich und Pfalzgraf Ruprecht den jüngsten, sie in diesem Besiß zu schützen und zu schirmen gegen jedermann. Geben wie Reg. 105. Perg. Or. mit 2 beschädigten Siegeln.",
       "english": "The Counts Palatine Ruprecht der Ältere and Ruprecht der Jüngere grant the brothers Eberhard and Arnold von Rosenberg their half of Boxberg Castle, which they had granted to them as a fief and opened to them, as a rightful male fief.\n\nRuprecht der Ältere and Ruprecht der Jüngere, Counts Palatine of the Rhine, acknowledge that Eberhard von Rosenberg, a Ritter, and his brother Arnold von Rosenberg have surrendered their entitled half of Boxberg castle and town to them (the Counts Palatine) and have immediately received it back from them as a proper male fief¹, and they promise for themselves and for Count Palatine Ruprecht the Youngest, to protect and defend them in this possession against everyone. Given as in Reg. 105. Original on parchment with 2 damaged seals.",
       "facts": [
-        "[vogt_zu_Lauda] is titled Ritter",
-        "[vogt_zu_Lauda] is brother of [arnold_brother_of_vogt_zu_Lauda]",
+        {
+          "type": "title",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "sibling",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "arnold_brother_of_vogt_zu_Lauda"
+        },
         "[vogt_zu_Lauda] received half of Schloss and Stadt Boxberg as Mannlehen from the Pfalzgrafen",
         "[arnold_brother_of_vogt_zu_Lauda] received half of Schloss and Stadt Boxberg as Mannlehen from the Pfalzgrafen",
         "[vogt_zu_Lauda] and [arnold_brother_of_vogt_zu_Lauda] transferred their half of Boxberg to the Pfalzgrafen and received it back as fief",

@@ -9,23 +9,60 @@
       "english": "Wilhelm von Rechberg zu Hohenrechberg, Ritter, Hofmeister, Wiprecht von Helmstadt der Ältere, Ritter, and Hans von Rotenhan, and Eberhard Rüdt (von Collenberg), Burggraf zu Miltenberg, declare that they have concluded a marriage agreement between Ulrich von Rosenberg, son of Arnold, and Anna von Kronberg, daughter of the late Walther, with the stipulation that the marriage should take place after Anna reaches the age of 15. Frank der Jüngere von Kronberg is to give his brother's daughter 3,000 guilders in Frankfurt currency from her paternal inheritance, which Ulrich is to repay with the same amount. Anne is to retain her right to the 2,000 guilders assigned to Margerethe von Hirschhorn, Anna's mother, in Heppenheim, and to the 2,400 guilders that accrued to her from her brothers, Hans and Philipp von Hirschhorn, from their paternal and maternal inheritances.",
       "facts": [
         "A marriage contract (Eheberedung) was concluded between Ulrich von Rosenberg and Anna von Kronberg",
-        "Ulrich von Rosenberg is son of [arnold_boxberg]",
+        {
+          "type": "parent",
+          "person": "arnold_boxberg",
+          "of": "Ulrich von Rosenberg"
+        },
         "Anna von Kronberg is daughter of Walther von Kronberg (deceased)",
         "The Beilager shall take place after Anna von Kronberg reaches age 15",
-        "Wilhelm von Rechberg zu Hohenrechberg is titled Hofmeister",
-        "Wilhelm von Rechberg zu Hohenrechberg is titled Ritter",
+        {
+          "type": "title",
+          "person": "Wilhelm von Rechberg",
+          "personTitle": [
+            "zu Hohenrechberg",
+            "Hofmeister",
+            "Ritter"
+          ]
+        },
         "Wilhelm von Rechberg zu Hohenrechberg attested the marriage contract between Ulrich von Rosenberg and Anna von Kronberg",
-        "Wiprecht der Ältere von Helmstadt is titled Ritter",
+        {
+          "type": "title",
+          "person": "Wiprecht von Helmstadt",
+          "personTitle": [
+            "der Ältere",
+            "Ritter"
+          ]
+        },
         "Wiprecht der Ältere von Helmstadt attested the marriage contract between Ulrich von Rosenberg and Anna von Kronberg",
         "Hans von Rotenhan attested the marriage contract between Ulrich von Rosenberg and Anna von Kronberg",
         "Eberhard Rüdt von Collenberg is Burggraf zu Miltenberg",
         "Eberhard Rüdt von Collenberg attested the marriage contract between Ulrich von Rosenberg and Anna von Kronberg",
-        "Frank der Jüngere von Kronberg is brother of Walther von Kronberg",
+        {
+          "type": "sibling",
+          "person": "Frank von Kronberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "of": "Walther von Kronberg"
+        },
         "Frank der Jüngere von Kronberg is paternal uncle of Anna von Kronberg",
-        "Margerethe von Hirschhorn is mother of Anna von Kronberg",
-        "Hans von Hirschhorn is brother of Margerethe von Hirschhorn",
+        {
+          "type": "parent",
+          "person": "Margerethe von Hirschhorn",
+          "of": "Anna von Kronberg"
+        },
+        {
+          "type": "sibling",
+          "person": "Hans von Hirschhorn",
+          "of": "Margerethe von Hirschhorn"
+        },
         "Hans von Hirschhorn is maternal uncle of Anna von Kronberg",
-        "Philipp von Hirschhorn is brother of Margerethe von Hirschhorn",
+        {
+          "type": "sibling",
+          "person": "Philipp von Hirschhorn",
+          "of": "Margerethe von Hirschhorn"
+        },
         "Philipp von Hirschhorn is maternal uncle of Anna von Kronberg"
       ]
     }

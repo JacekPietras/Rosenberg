@@ -10,7 +10,14 @@
         "Engelhard von Rosenberg der Ältere sold rents at Bischofsheim and Werbachhausen to Hans Fuger (?) and Hans Greyn, Bürger (?) zu Bischofsheim.",
         "Anne von Bebenburg sold rents at Bischofsheim and Werbachhausen to Hans Fuger (?) and Hans Greyn, Bürger (?) zu Bischofsheim.",
         "Kunz von Rosenberg sold rents at Bischofsheim and Werbachhausen to Hans Fuger (?) and Hans Greyn, Bürger (?) zu Bischofsheim.",
-        "Kunz von Rosenberg is son of Engelhard von Rosenberg der Ältere",
+        {
+          "type": "parent",
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "of": "Kunz von Rosenberg"
+        },
         "Anne von Bebenburg was the wife of the deceased Eberhard von Rosenberg.",
         "Engelhard von Rosenberg der Ältere sealed the charter.",
         "Anne von Bebenburg sealed the charter.",

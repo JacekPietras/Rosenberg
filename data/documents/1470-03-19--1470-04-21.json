@@ -8,7 +8,13 @@
       "facts": [
         "Pfalzgraf Friedrich declared feud to Jörg von Rosenberg",
         "Die Stadt Heilbronn declared feud to Junker Jörg von Rosenberg",
-        "Jörg von Rosenberg is titled Junker",
+        {
+          "type": "title",
+          "person": "Jörg von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
+        },
         "Boxberg was captured during Pfalzgraf Friedrich's campaign against the Rosenberger",
         "Jörg von Rosenberg held a share at Schüpf",
         "Michel von Rosenberg held the largest share at Schüpf",

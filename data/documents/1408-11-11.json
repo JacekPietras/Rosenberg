@@ -12,16 +12,63 @@
       "english": "1408 Nov. 11 (St. Martin's Day) Arnold von Rosenberg der Jüngere, resident of Boxberg, and his wife Christina von Handschuhsheim exchanged goods in Erlenbach, a village below Ballenberg and Merchingen with Abbot Heinrich [V] and the convent of Schöntal Abbey for the Abbey's properties in Buch [on the Ahorn], See, and Sachsen (on the Sahsßhen) [= Sachsenflur?]. Since the Rosenberg goods [of the Electorate of the Palatinate] were fiefs, Arnold undertook to obtain the fief's consent to this exchange.\n\nSealers: 1) of A., due to a seal ban, also for Christina von Handschuhsheim, as well as the Edelknechte 2) Eberhard von Rosenberg zu Jagstberg, brother of A., and 3) Konrad von Rosenberg zu Boxberg, cousin of A. Execution: Perg., damaged, mounted on canvas - 3 seals, 1st and 3rd damaged, 2nd removed, press residue attached -  Rev.: A letter from Arnold de Rosenberg concerning the goods in Erlbach and Merchingen Note: For King Ruprecht's will of March 2, 1408, see HStAS H 51 No. 1140.",
       "facts": [
         "[arnold_boxberg] der Jüngere zu Boxberg resided at Boxberg",
-        "[arnold_boxberg] der Jüngere zu Boxberg is spouse of Christina von Handschuhsheim",
+        {
+          "type": "spouse",
+          "person": "arnold_boxberg",
+          "personTitle": [
+            "der Jüngere",
+            "zu Boxberg"
+          ],
+          "of": "Christina von Handschuhsheim"
+        },
         "[arnold_boxberg] der Jüngere zu Boxberg exchanged Güter in Erlenbach and Merchingen with Abt Heinrich V. and the Konvent of Schöntal Abbey for the Abbey's properties at Buch am Ahorn, zum See and zum Sachsen",
         "The Rosenberg Güter involved in the exchange were held zu Lehen from Kurpfalz",
         "[arnold_boxberg] der Jüngere zu Boxberg undertook to obtain a Willebrief from the Lehenherr (Kurpfalz) for the exchange",
         "[eberhard_jagstberg] zu Jagstberg resided at Jagstberg",
-        "[eberhard_jagstberg] zu Jagstberg is brother of [arnold_boxberg] der Jüngere zu Boxberg.",
-        "[eberhard_jagstberg] zu Jagstberg is titled Edelknecht",
+        {
+          "type": "sibling",
+          "person": "eberhard_jagstberg",
+          "personTitle": [
+            "zu Jagstberg",
+            "Edelknecht"
+          ],
+          "of": "arnold_boxberg",
+          "ofTitle": [
+            "der Jüngere",
+            "zu Boxberg"
+          ]
+        },
+        {
+          "type": "title",
+          "person": "eberhard_jagstberg",
+          "personTitle": [
+            "zu Jagstberg",
+            "Edelknecht"
+          ]
+        },
         "Konrad von Rosenberg zu Boxberg resided at Boxberg",
-        "Konrad von Rosenberg zu Boxberg is cousin of [arnold_boxberg].",
-        "Konrad von Rosenberg zu Boxberg is titled Edelknecht",
+        {
+          "type": "kin",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Boxberg",
+            "Edelknecht"
+          ],
+          "of": "arnold_boxberg",
+          "ofTitle": [
+            "der Jüngere",
+            "zu Boxberg"
+          ],
+          "term": "Vetter"
+        },
+        {
+          "type": "title",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Boxberg",
+            "Edelknecht"
+          ]
+        },
         "[arnold_boxberg] der Jüngere zu Boxberg sealed the charter (also for Christina von Handschuhsheim due to Siegelkarenz)",
         "[eberhard_jagstberg] zu Jagstberg sealed the charter",
         "Konrad von Rosenberg zu Boxberg sealed the charter"

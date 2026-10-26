@@ -7,7 +7,11 @@
       "german": "Hans von Klepsau und seine Ehefrau Elsbeth verkaufen an Margarethe von Thüngen, Witwe Eberhard von Rosenbergs, ihren Teil des Zehnten zu Schweigern um 463 Pfund Heller.",
       "english": "Hans von Klepsau and his wife Elisabeth sell their part of the tithe to Schweigern by 463 pounds Heller to Margarethe von Thüngen, widow Eberhard von Rosenbergs.",
       "facts": [
-        "Margarethe von Thüngen is widow of Eberhard von Rosenberg",
+        {
+          "type": "spouse",
+          "person": "Margarethe von Thüngen",
+          "of": "Eberhard von Rosenberg"
+        },
         "Margarethe von Thüngen purchased tithes at Schweigern from Hans von Klepsau and Elisabeth von Klepsau"
       ],
       "img": [

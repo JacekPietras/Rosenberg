@@ -14,7 +14,13 @@
         "Eberhard von Rosenberg der Ältere sold Zinse at Dainbach to the Deutschordenshaus Mergentheim",
         "Eberhard von Rosenberg der Ältere sold Gülten at Dainbach to the Deutschordenshaus Mergentheim",
         "Eberhard von Rosenberg der Ältere sold Güter at Dainbach to the Deutschordenshaus Mergentheim",
-        "Jost von Venningen is Komtur zu Mergentheim"
+        {
+          "type": "title",
+          "person": "Jost von Venningen",
+          "personTitle": [
+            "Komtur zu Mergentheim"
+          ]
+        }
       ]
     }
   ]

@@ -10,7 +10,11 @@
         "Konrad von Rosenberg witnessed Margarethe von Erbach's transfer of debt letters to the Pfalzgraf",
         "Konrad von Rosenberg witnessed property transactions involving Neckarau, Reinhausen, and Videnheim",
         "Konrad von Rosenberg served as witness alongside Konrad von Erbach der Ältere., Hans von Hirschhorn, and Eberhard von Neipperg",
-        "Margarethe von Erbach is widow of Engelhard von Hirschhorn"
+        {
+          "type": "spouse",
+          "person": "Margarethe von Erbach",
+          "of": "Engelhard von Hirschhorn"
+        }
       ]
     }
   ]

@@ -9,7 +9,12 @@
       "facts": [
         "Ritter Contz von Rosenberg pledged his quarter share of Schloss Schadeck, together with the forest and rent at Amorbach, to Contz Landschade von Steinach.",
         "Konrad von Rosenberg, Ritter, held a third of Schloss Schadeck.",
-        "Konrad von Rosenberg was described as the Vetter (kinsman) of Contz von Rosenberg."
+        {
+          "type": "kin",
+          "person": "Konrad von Rosenberg",
+          "of": "Contz von Rosenberg",
+          "term": "Vetter"
+        }
       ]
     }
   ]

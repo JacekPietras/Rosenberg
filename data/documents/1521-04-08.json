@@ -10,8 +10,20 @@
         "Hans Melchior von Rosenberg ceded his Anteil an Boxberg to Kurfürst Ludwig von der Pfalz and Friedrich von der Pfalz",
         "Hans Melchior von Rosenberg ceded his Anteil an der Bastei zu Boxberg to Kurfürst Ludwig von der Pfalz and Friedrich von der Pfalz",
         "Hans Melchior von Rosenberg ceded his Anteil am Städtlein zu Boxberg samt Zubehör to Kurfürst Ludwig von der Pfalz and Friedrich von der Pfalz",
-        "Ludwig von der Pfalz is titled Kurfürst",
-        "Friedrich von der Pfalz is titled Pfalzgraf",
+        {
+          "type": "title",
+          "person": "Ludwig von der Pfalz",
+          "personTitle": [
+            "Kurfürst"
+          ]
+        },
+        {
+          "type": "title",
+          "person": "Friedrich von der Pfalz",
+          "personTitle": [
+            "Pfalzgraf"
+          ]
+        },
         "Ludwig von der Pfalz is Lehnsherr of Hans Melchior von Rosenberg",
         "Friedrich von der Pfalz is Lehnsherr of Hans Melchior von Rosenberg",
         "Hans Melchior von Rosenberg cited Krankheit as a reason for ceding his Anteil"
