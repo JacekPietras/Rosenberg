@@ -55,8 +55,8 @@ A first `Ritter` attestation does not date a knighting, and omission of a title
 does not prove its absence. Do not infer uninterrupted title use or identity
 from matching designations. Record a fact-level historical date when it
 differs from the enclosing document date; typed book/note facts always need
-an explicit date. `date: null` records a genuinely unknown date and prevents
-inheritance. Never substitute a book's publication date for historical time.
+an explicit valid date. Do not use `null`; omit unnecessary optional fields.
+Never substitute a book's publication date for historical time.
 
 Preserve German and Latin terminology when it carries historical meaning.
 Examples include `Ritter`, `Edelmann`, `Edel`, `Edelknecht`, `Knecht`, `Vogt`,

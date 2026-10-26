@@ -127,9 +127,9 @@ class Validator:
 
     def check_date(self, value, location, inherited=False):
         if value is MISSING:
-            self.report(location, 'missing historical date; supply date or explicit null')
+            self.report(location, 'missing historical date; supply a valid historical date')
         elif value is None:
-            self.report(location, 'historical date is explicitly unknown; review required', 'warning')
+            self.report(location, 'null dates are not supported; omit unnecessary date fields or supply a valid historical date')
         else:
             try:
                 (inherited_date_bounds if inherited else date_bounds)(value)

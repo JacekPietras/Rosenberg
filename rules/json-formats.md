@@ -68,16 +68,15 @@ Illustrative facts, not historical additions:
 
 Fact-level dates are valid calendar dates using only the source's precision:
 `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`. Never invent missing components. Use an
-explicit `date: null` only for a genuinely unknown historical date; it
-suppresses inheritance and the validator warns that review is required.
+valid date when a date field is required. Null values are not accepted;
+omit unnecessary optional fields instead of filling them with `null`.
 
 In documents, an explicit fact date overrides the entry/document date.
 Without it, inherit the nearest enclosing historical date, normally the
-entry's date or the document-level date. An explicitly unknown enclosing date
-also suppresses fallback. Preserve existing inherited document intervals
+entry's date or the document-level date. Preserve existing inherited document intervals
 (`YYYY-YYYY`, ISO endpoints separated by `/` or `--`) as intervals; do not
 reduce them to a single day. A typed fact with neither a historical date to
-inherit nor its own date must supply its date or explicit `null`.
+inherit nor its own date must supply a valid historical date.
 
 In books and notes, typed facts require their own `date` field, even if an
 entry has a date. Never inherit a publication year. During migration, legacy

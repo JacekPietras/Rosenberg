@@ -87,11 +87,14 @@ class FactValidatorTests(unittest.TestCase):
         self.assertFalse(self.errors(self.check(self.document(self.parent(date='1395'), date='bad metadata'))))
         self.assertFalse(self.errors(self.check({'date': '1395-1396', 'entries': [{'facts': ['Legacy']}]})))
 
-    def test_unknown_dates_warn_and_suppress_inheritance(self):
-        validator = self.check(self.document(self.parent(date=None)), 'notes/test.json')
-        self.assertFalse(self.errors(validator))
-        self.assertEqual(1, len(validator.diagnostics))
-        self.assertEqual('warning', validator.diagnostics[0].severity)
+    def test_null_dates_rejected_and_optional_dates_omitted(self):
+        for relative in ('documents/test.json', 'books/test.json', 'notes/test.json'):
+            for item in (self.parent(date=None), {'text': 'Example fact', 'date': None}):
+                with self.subTest(relative=relative, item=item):
+                    self.assertTrue(self.errors(self.check(self.document(item), relative)))
+        self.assertTrue(self.errors(self.check(self.document(self.parent(), date=None))))
+        self.assertFalse(self.errors(self.check(self.document(self.parent()))))
+        self.assertFalse(self.errors(self.check(self.document({'text': 'Example fact'}))))
 
     def test_legacy_default_and_strict_migration(self):
         value = self.document('Old text', {'text': 'Other text', 'date': '1395'})
