@@ -18,7 +18,14 @@
             "Ritter"
           ]
         },
-        "Richtze, wife of Arnold von Uissigheim, was named in the transaction",
+        {
+          "type": "spouse",
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Richtze"
+        },
         {
           "type": "parent",
           "person": "Arnold von Uissigheim",
@@ -53,7 +60,12 @@
           ]
         },
         "Eberhard von Uissigheim, called von Rannenberg, was an issuer of the transaction",
-        "Elisabeth, wife of Eberhard von Uissigheim called von Rannenberg, was named in the transaction",
+        {
+          "type": "spouse",
+          "person": "Eberhard von Uissigheim",
+          "personTitle": "von Rannenberg",
+          "of": "Elisabeth"
+        },
         "Uissigheim family renounced rights to Breitenau farm in favor of Bronnbach Abbey"
       ],
       "img": [

@@ -8,7 +8,16 @@
       "english": "Bishop Johann von Brunn still owed Gute and her son Anselm von Rosenberg a further 500 florins, which he added to the 4,000 florins secured on Brassoldshaim.\n\nContext from the immediately preceding entry (no. 1747): Gute was the widow of Ulrich von Rosenberg, and Anselm von Rosenberg was her son. The 4,000 florins mentioned there were secured by the pledge of Brassoldshaim.",
       "facts": [
         "Bishop Johann von Brunn added 500 florins to the 4,000 florins owed to Gute, widow of Ulrich von Rosenberg, and her son Anselm von Rosenberg, secured on Brassoldshaim.",
-        "Anselm von Rosenberg was the son of Gute and Ulrich von Rosenberg."
+        {
+          "type": "spouse",
+          "person": "Gute",
+          "of": "Ulrich von Rosenberg"
+        },
+        {
+          "type": "parent",
+          "person": "Gute",
+          "of": "Anselm von Rosenberg"
+        }
       ],
       "img": [
         {

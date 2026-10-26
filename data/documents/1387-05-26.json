@@ -14,7 +14,7 @@
             "Edelknecht"
           ]
         },
-        "[arnold_brother_of_vogt_zu_Lauda] sold his share of Boxberg to his brother [vogt_zu_Lauda].",
+        "[arnold_brother_of_vogt_zu_Lauda] sold his share of Boxberg to [vogt_zu_Lauda].",
         {
           "type": "spouse",
           "person": "else_wife_of_arnold",

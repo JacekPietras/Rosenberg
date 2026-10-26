@@ -8,7 +8,7 @@
       "english": "Bishop Johann von Brunn owed Ulrich von Rosenberg and Gute, his wife, 3,500 florins, which he undertook to repay with surety on the Feast of St Peter's Chair in 1424. This did not happen, and shortly afterward Ulrich von Rosenberg died. Bishop Johann then reached an agreement with Gute, his widow, and their son Anselm von Rosenberg: 4,000 florins were to be paid to them on the Feast of St Peter's Chair in 1427; otherwise Schloss Brassoldshaim, with its appurtenances and revenues, was to be handed over to them for use.",
       "facts": [
         "Bishop Johann von Brunn owed Ulrich von Rosenberg and his wife Gute 3,500 florins, payable on 22 February 1424.",
-        "Ulrich von Rosenberg died after the 1424 debt fell due.",
+        "Ulrich von Rosenberg died shortly after 22 February 1424.",
         "Bishop Johann von Brunn agreed to pay Gute, widow of Ulrich von Rosenberg, and her son Anselm von Rosenberg 4,000 florins by 22 February 1427.",
         "Bishop Johann von Brunn agreed to deliver Schloss Brassoldshaim and its appurtenances and revenues to Gute, widow of Ulrich von Rosenberg, and Anselm von Rosenberg if he did not pay the 4,000 florins.",
         {
@@ -16,7 +16,11 @@
           "person": "Gute",
           "of": "Ulrich von Rosenberg"
         },
-        "Anselm von Rosenberg was the son of Ulrich von Rosenberg and Gute."
+        {
+          "type": "parent",
+          "person": "Gute",
+          "of": "Anselm von Rosenberg"
+        }
       ],
       "img": [
         {

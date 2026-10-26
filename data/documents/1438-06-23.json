@@ -14,7 +14,11 @@
           "person": "arnold_boxberg",
           "of": "Ulrich von Rosenberg"
         },
-        "Anna von Kronberg is daughter of Walther von Kronberg (deceased)",
+        {
+          "type": "parent",
+          "person": "Walther von Kronberg",
+          "of": "Anna von Kronberg"
+        },
         "The Beilager shall take place after Anna von Kronberg reaches age 15",
         {
           "type": "title",
@@ -46,7 +50,15 @@
           ],
           "of": "Walther von Kronberg"
         },
-        "Frank der Jüngere von Kronberg is paternal uncle of Anna von Kronberg",
+        {
+          "type": "kin",
+          "person": "Frank von Kronberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "of": "Anna von Kronberg",
+          "term": "Bruderstochter"
+        },
         {
           "type": "parent",
           "person": "Margerethe von Hirschhorn",
@@ -57,13 +69,11 @@
           "person": "Hans von Hirschhorn",
           "of": "Margerethe von Hirschhorn"
         },
-        "Hans von Hirschhorn is maternal uncle of Anna von Kronberg",
         {
           "type": "sibling",
           "person": "Philipp von Hirschhorn",
           "of": "Margerethe von Hirschhorn"
-        },
-        "Philipp von Hirschhorn is maternal uncle of Anna von Kronberg"
+        }
       ]
     }
   ]

@@ -12,10 +12,7 @@
           "person": "Christine von Handschuhsheim",
           "of": "arnold_boxberg"
         },
-        "[arnold_boxberg] sold a quarter share of Boxberg to his son Ulrich von Rosenberg",
-        "[arnold_boxberg] sold a quarter share of Boxberg to his son Jörg von Rosenberg",
-        "Christine von Handschuhsheim sold a quarter share of Boxberg to her son Ulrich von Rosenberg",
-        "Christine von Handschuhsheim sold a quarter share of Boxberg to her son Jörg von Rosenberg",
+        "Arnold von Rosenberg and Christine von Handschuhsheim sold their quarter share of Boxberg to Ulrich and Jörg von Rosenberg for 6,500 florins.",
         {
           "type": "parent",
           "person": "arnold_boxberg",

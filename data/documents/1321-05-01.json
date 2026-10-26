@@ -16,6 +16,41 @@
             "Komtur zu Boxberg"
           ]
         },
+        {
+          "type": "sibling",
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf"
+          ],
+          "of": "Rudolf von Wertheim",
+          "ofTitle": [
+            "Domherr zu Würzburg"
+          ]
+        },
+        {
+          "type": "kin",
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf"
+          ],
+          "of": "Berthold von Henneberg",
+          "ofTitle": [
+            "Graf"
+          ],
+          "term": "Oheim"
+        },
+        {
+          "type": "kin",
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Domherr zu Würzburg"
+          ],
+          "of": "Berthold von Henneberg",
+          "ofTitle": [
+            "Graf"
+          ],
+          "term": "Oheim"
+        },
         "Johanniter Order possessed goods at Boxberg by 1321",
         "Boxberg served as a Johanniter commandery under Henneberg leadership",
         "Wertheim family had feudal rights over Johanniter goods at Boxberg (renounced in favor of Henneberg)"
