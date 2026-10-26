@@ -8,8 +8,7 @@
         "https://www.landesarchiv-bw.de/plink/?f=7-234240",
         "https://www.deutsche-digitale-bibliothek.de/item/JSJC6X2XCSHTWEQTSCPRJBSSQ6WBMU6E"
       ],
-      "german": "Eberhard der Ältere und sein Bruder von Rosenberg (Rosinberg), Söhne Eberhards gen. der Rote, Eberhard der Jüngere und sein Bruder Arnold, Söhne Arnolds von Uissigheim (Vssinkein), verkaufen an die Abtei Bronnbach ihre benannten Güter in Steinbach bei Wenkheim mit der Gerichtsbarkeit daselbst um 184 Pfund Heller.",
-      "english": "Eberhard der Ältere and his brother von Rosenberg, sons of Eberhard called the Red, and Eberhard der Jüngere and his brother Arnold, sons of Arnold von Uissigheim, sell their specified properties in Steinbach near Wenkheim, together with the jurisdiction there, to Bronnbach Abbey for 184 pounds of Heller.",
+      "summary": "Eberhard der Ältere und sein Bruder von Rosenberg (Rosinberg), Söhne Eberhards gen. der Rote, Eberhard der Jüngere und sein Bruder Arnold, Söhne Arnolds von Uissigheim (Vssinkein), verkaufen an die Abtei Bronnbach ihre benannten Güter in Steinbach bei Wenkheim mit der Gerichtsbarkeit daselbst um 184 Pfund Heller.",
       "facts": [
         {
           "type": "parent",
@@ -22,8 +21,8 @@
             "der Ältere"
           ]
         },
-        "Eberhard von Rosenberg der Ältere had an unnamed brother identified in the source as von Rosenberg.",
-        "The unnamed brother of Eberhard von Rosenberg der Ältere was also a son of Eberhard von Rosenberg gen. der Rote.",
+        "Eberhard von Rosenberg der Ältere's brother is identified only as von Rosenberg.",
+        "The unnamed brother of Eberhard von Rosenberg der Ältere is also identified as a son of Eberhard called der Rote.",
         {
           "type": "parent",
           "person": "Arnold von Uissigheim",
@@ -32,7 +31,19 @@
             "der Jüngere"
           ]
         },
-        "Arnold von Uissigheim (son) was brother of Eberhard von Uissigheim der Jüngere and a son of Arnold von Uissigheim (father).",
+        {
+          "type": "sibling",
+          "person": "Arnold",
+          "of": "Eberhard von Uissigheim",
+          "ofTitle": [
+            "der Jüngere"
+          ]
+        },
+        {
+          "type": "parent",
+          "person": "Arnold von Uissigheim",
+          "of": "Arnold"
+        },
         "Eberhard von Rosenberg der Ältere, his unnamed brother, Eberhard von Uissigheim der Jüngere, and Arnold von Uissigheim (son) sold their properties and jurisdiction in Steinbach near Wenkheim to Bronnbach Abbey."
       ],
       "img": [
