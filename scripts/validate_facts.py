@@ -19,6 +19,7 @@ from datetime import date
 import json
 from pathlib import Path
 import re
+from place_names import resolve_place_names
 
 ROOT = Path(__file__).resolve().parents[1]
 RELATIONS = frozenset({'parent', 'sibling', 'spouse', 'kin'})
@@ -82,6 +83,9 @@ class Validator:
         self.counts = Counter()
         self.person_ids = set()
         self.person_names = set()
+        self.given_name_variants = {}
+        self.place_name_variants = {}
+        self.load_name_variants()
 
     def report(self, location, message, severity='error'):
         self.diagnostics.append(Diagnostic(str(location), severity, message))
@@ -96,6 +100,24 @@ class Validator:
     @staticmethod
     def nonblank(value):
         return isinstance(value, str) and bool(value.strip())
+
+    def load_name_variants(self):
+        names_path = ROOT / 'data/names.md'
+        try:
+            for line in names_path.read_text(encoding='utf-8').splitlines():
+                line = line.split('//', 1)[0]
+                forms = [form.strip() for form in line.split(',') if form.strip()]
+                if forms:
+                    for form in forms:
+                        self.given_name_variants[form.casefold()] = forms[0]
+            places = json.loads((ROOT / 'data/places.json').read_text(encoding='utf-8'))
+            for place in resolve_place_names(places):
+                variations = place.get('variations', [])
+                if variations:
+                    for form in variations:
+                        self.place_name_variants[form.casefold()] = variations[0]
+        except (OSError, UnicodeError, ValueError, KeyError) as exc:
+            self.report(names_path, f'cannot load name/place variations: {exc}')
 
     def load_people(self, path):
         people = self.read_json(path)
@@ -141,17 +163,40 @@ class Validator:
             self.report(location, 'expected a non-empty person ID or name string')
         elif value not in self.person_ids:
             if '_' in value:
-                self.report(location, f'unknown ID-like value {value!r}; treated as a name, not an identified person', 'warning')
-            # Exact registry names are allowed, including historically established
-            # multi-part names. Unregistered values must fit the normalized forms.
-            elif value not in self.person_names and not re.fullmatch(
-                r'\S+(?:\s+\S+)?(?:\s+von\s+\S+)?', value
-            ):
+                self.report(location, f'unknown person ID {value!r}; IDs must exist in people.json')
+                return
+            valid_shape = (
+                re.fullmatch(r'\S+(?:\s+\S+)?', value)
+                or re.fullmatch(r'\S+(?:\s+\S+)*\s+von\s+\S+(?:\s+\S+)*', value)
+                or value in self.person_names
+            )
+            if not valid_shape:
                 self.report(
                     location,
                     'person name must be a name, a name followed by a surname, or a name followed by "von" and a surname; '
                     'move additional designations to personTitle/ofTitle, or leave the name for manual review and verification',
                 )
+                return
+            parts = value.split()
+            given = parts[0]
+            given_canonical = self.given_name_variants.get(given.casefold())
+            if given_canonical and given != given_canonical:
+                self.report(location, f'given name {given!r} is a variation; use normalized form {given_canonical!r} from data/names.md')
+            elif not given_canonical:
+                self.report(
+                    location,
+                    f'given name {given!r} is not listed in data/names.md; review and verify the name manually, and move any title or designation to personTitle/ofTitle',
+                )
+            if 'von' in [part.casefold() for part in parts]:
+                von_index = next(index for index, part in enumerate(parts) if part.casefold() == 'von')
+                surname_parts = parts[von_index + 1:]
+            else:
+                surname_parts = parts[1:]
+            if surname_parts:
+                surname = ' '.join(surname_parts)
+                surname_canonical = self.place_name_variants.get(surname.casefold())
+                if surname_canonical and surname != surname_canonical:
+                    self.report(location, f'surname {surname!r} is a place-name variation; use normalized form {surname_canonical!r} from data/places.json')
 
     def check_titles(self, value, location):
         if not isinstance(value, list) or not value:

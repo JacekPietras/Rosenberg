@@ -25,6 +25,12 @@ Extract each explicitly stated family relationship as a separate typed fact:
 - `kin`: explicit kinship not represented more precisely above; preserve the
   source's kinship term in `term` without guessing its degree.
 
+Record each source-stated death as a separate atomic prose fact, including
+when a source identifies someone as deceased or late. State only that the
+person was deceased by the attestation date unless the source gives a more
+precise death date; never infer an exact death date from widowhood or other
+context.
+
 Never use grouped forms such as “Sons: A and B”. Do not infer relationships
 from proximity, transactions, or shared names. Store a relationship once;
 reverse navigation of parentage and symmetric navigation of spouse/sibling
