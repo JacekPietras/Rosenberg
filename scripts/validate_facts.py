@@ -139,8 +139,19 @@ class Validator:
     def check_person(self, value, location):
         if not self.nonblank(value):
             self.report(location, 'expected a non-empty person ID or name string')
-        elif value not in self.person_ids and '_' in value:
-            self.report(location, f'unknown ID-like value {value!r}; treated as a name, not an identified person', 'warning')
+        elif value not in self.person_ids:
+            if '_' in value:
+                self.report(location, f'unknown ID-like value {value!r}; treated as a name, not an identified person', 'warning')
+            # Exact registry names are allowed, including historically established
+            # multi-part names. Unregistered values must fit the normalized forms.
+            elif value not in self.person_names and not re.fullmatch(
+                r'\S+(?:\s+\S+)?(?:\s+von\s+\S+)?', value
+            ):
+                self.report(
+                    location,
+                    'person name must be a name, a name followed by a surname, or a name followed by "von" and a surname; '
+                    'move additional designations to personTitle/ofTitle, or leave the name for manual review and verification',
+                )
 
     def check_titles(self, value, location):
         if not isinstance(value, list) or not value:
