@@ -112,3 +112,17 @@ python3 scripts/list_place_variations.py 'Boxberg'
 ```
 
 Pass a place name or spelling variation to show only matching entries. Churches are excluded by default. Include them with `--include-churches`.
+
+### English name review
+
+Check English text in documents and books for personal names that use a known
+name or place variation, or a non-standard `de` connector. The checker reports
+the source location and a suggested normalized form; it does not edit files.
+
+```text
+python3 scripts/validate_english_names.py
+python3 scripts/validate_english_names.py data/documents/1397-04-29.json
+```
+
+By default, it scans `data/documents/` and `data/books/`. Pass JSON files or
+directories to check a specific selection.

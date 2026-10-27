@@ -126,8 +126,8 @@
   {
     "id": "oberschuepf",
     "variations": [
-      "Oberschüpf",
-      "Schüpf"
+      "Schüpf",
+      "Oberschüpf"
     ],
     "category": "village",
     "lat": 49.52295,
@@ -1293,9 +1293,9 @@
     "category": "city",
     "showOnMap": false,
     "variations": [
+      "Brunsberg",
       "Braniewo",
-      "Braunsberg",
-      "Brunsberg"
+      "Braunsberg"
     ],
     "lat": 54.379713,
     "lon": 19.820056

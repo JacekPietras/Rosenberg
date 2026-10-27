@@ -11,9 +11,14 @@
         {
           "type": "kin",
           "person": "Hans von Hirschhorn",
-          "personTitle": ["Ritter"],
+          "personTitle": [
+            "Ritter"
+          ],
           "of": "Konrad von Rosenberg",
-          "ofTitle": ["Ritter", "Vitztum zu Heidelberg"],
+          "ofTitle": [
+            "Ritter",
+            "Vitztum zu Heidelberg"
+          ],
           "term": "swager"
         },
         "Konrad von Rosenberg held a quarter of Boxberg castle and town as a fief from Ruprecht der Ältere, Ruprecht der Jüngere, and Ruprecht der Jüngste.",
