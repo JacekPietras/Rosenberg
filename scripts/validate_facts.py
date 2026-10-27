@@ -182,11 +182,6 @@ class Validator:
             given_canonical = self.given_name_variants.get(given.casefold())
             if given_canonical and given != given_canonical:
                 self.report(location, f'given name {given!r} is a variation; use normalized form {given_canonical!r} from data/names.md')
-            elif not given_canonical:
-                self.report(
-                    location,
-                    f'given name {given!r} is not listed in data/names.md; review and verify the name manually, and move any title or designation to personTitle/ofTitle',
-                )
             if 'von' in [part.casefold() for part in parts]:
                 von_index = next(index for index, part in enumerate(parts) if part.casefold() == 'von')
                 surname_parts = parts[von_index + 1:]

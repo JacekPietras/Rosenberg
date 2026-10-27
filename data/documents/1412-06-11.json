@@ -18,7 +18,12 @@
           ],
           "of": "Kunz von Rosenberg"
         },
-        "Anne von Bebenburg was the wife of the deceased Eberhard von Rosenberg.",
+        {
+          "type": "spouse",
+          "person": "Anne von Bebenburg",
+          "of": "Eberhard von Rosenberg"
+        },
+        "Eberhard von Rosenberg was deceased by 1412-06-11.",
         "Engelhard von Rosenberg der Ältere sealed the charter.",
         "Anne von Bebenburg sealed the charter.",
         "Kunz von Rosenberg sealed the charter."
