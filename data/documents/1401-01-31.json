@@ -10,6 +10,7 @@
         {
           "type": "parent",
           "person": "vogt_zu_Lauda",
+          "personTitle": ["verstorben"],
           "of": "eberhard_jagstberg",
           "ofTitle": [
             "der Jüngere"
@@ -27,6 +28,7 @@
           "type": "kin",
           "person": "Margaretha",
           "of": "Hans Hofwart",
+          "ofTitle": ["Domherr zu Würzburg"],
           "term": "Bruderstochter"
         },
         {
