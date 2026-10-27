@@ -110,6 +110,18 @@ class FactValidatorTests(unittest.TestCase):
         self.assertIn('#/research/0/facts/1', self.errors(validator)[0].location)
         self.assertTrue(self.errors(self.check({'facts': 'bad'})))
 
+    def test_guesses_use_fact_shapes_and_require_historical_dates(self):
+        entry = {'guesses': [self.parent(date='1395'), {'date': '1395', 'text': 'A possible event'}]}
+        validator = self.check({'book': 'Example', 'entries': [entry]}, 'books/test.json', strict=True)
+        self.assertEqual([], validator.diagnostics)
+        self.assertEqual(2, validator.counts['guesses'])
+        self.assertEqual(0, validator.counts['facts'])
+
+        entry['guesses'] = [self.parent(), {'date': '1395-02-29', 'text': 'Invalid date'}, 'Undated interpretation']
+        validator = self.check({'book': 'Example', 'entries': [entry]}, 'books/test.json', strict=True)
+        self.assertEqual(2, len(self.errors(validator)))
+        self.assertEqual(1, len([d for d in validator.diagnostics if d.severity == 'warning']))
+
     def test_registry_duplicates_collisions_and_unmatched_id_warning(self):
         validator = facts.Validator()
         validator.load_people(self.write('people.json', [

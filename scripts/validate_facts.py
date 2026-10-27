@@ -163,7 +163,7 @@ class Validator:
             self.report(location, 'expected a non-empty person ID or name string')
         elif value not in self.person_ids:
             if '_' in value:
-                self.report(location, f'unknown person ID {value!r}; IDs must exist in people.json')
+                self.report(location, f'unknown person ID {value!r}; IDs must exist in people.json', 'warning')
                 return
             valid_shape = (
                 re.fullmatch(r'\S+(?:\s+\S+)?', value)
@@ -206,20 +206,24 @@ class Validator:
             else:
                 seen.add(item)
 
-    def check_fact(self, fact, location, require_date, inherited):
-        self.counts['facts'] += 1
+    def check_fact(self, fact, location, require_date, inherited, guess=False):
+        self.counts['guesses' if guess else 'facts'] += 1
         if isinstance(fact, str):
-            self.counts['legacy'] += 1
+            if not guess:
+                self.counts['legacy'] += 1
             if not self.nonblank(fact):
                 self.report(location, 'fact text must not be empty')
-            if require_date and self.strict_migration:
+            if guess:
+                self.report(location, 'undated legacy guess requires historical date review', 'warning')
+            elif require_date and self.strict_migration:
                 self.report(location, 'books/notes facts require an object with an explicit date in strict migration mode')
             return
         if not isinstance(fact, dict):
             self.report(location, 'fact must be a string or object')
             return
         typed = 'type' in fact
-        self.counts['typed' if typed else 'legacy'] += 1
+        if not guess:
+            self.counts['typed' if typed else 'legacy'] += 1
         if typed:
             kind = fact['type']
             if not isinstance(kind, str) or kind not in TYPES:
@@ -254,6 +258,8 @@ class Validator:
                 self.report(location + '/text', 'expected non-empty legacy fact text')
         if 'date' in fact:
             self.check_date(fact['date'], location + '/date')
+        elif guess:
+            self.report(location + '/date', 'guesses require an explicit historical date')
         elif require_date and (typed or self.strict_migration):
             self.report(location + '/date', 'books/notes facts require an explicit historical date')
         elif typed:
@@ -272,12 +278,12 @@ class Validator:
                 for key in sorted(value):
                     child = value[key]
                     loc = location + '/' + key.replace('~', '~0').replace('/', '~1')
-                    if key == 'facts':
+                    if key in ('facts', 'guesses'):
                         if not isinstance(child, list):
-                            self.report(loc, 'facts must be an array')
+                            self.report(loc, f'{key} must be an array')
                         else:
                             for index, fact in enumerate(child):
-                                self.check_fact(fact, f'{loc}/{index}', require_date, current_date)
+                                self.check_fact(fact, f'{loc}/{index}', require_date, current_date, guess=key == 'guesses')
                     else:
                         visit(child, loc, current_date)
             elif isinstance(value, list):
@@ -313,7 +319,7 @@ def main(argv=None):
     errors = sum(item.severity == 'error' for item in validator.diagnostics)
     warnings = len(validator.diagnostics) - errors
     c = validator.counts
-    print(f'Checked {c["files"]} files, {c["facts"]} facts ({c["typed"]} typed, {c["legacy"]} legacy): {errors} errors, {warnings} warnings.')
+    print(f'Checked {c["files"]} files, {c["facts"]} facts ({c["typed"]} typed, {c["legacy"]} legacy), {c["guesses"]} guesses: {errors} errors, {warnings} warnings.')
     return 1 if errors else 0
 
 

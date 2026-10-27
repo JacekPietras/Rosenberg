@@ -29,12 +29,15 @@ Reject other types and fields. In particular, do not add `father`, `mother`,
 reverse fact. `kin.term` is a non-empty string preserving the source kinship
 term, such as `Vetter`, without guessing its precise modern meaning.
 
-An entry may also contain an optional `guesses` array alongside `facts`. Use
-an array of English strings for assumptions, inferences, and author
-interpretations from books or notes that are not claimed to come directly
-from a document. Each string should make its uncertainty and reasoning or
-attribution clear; include a citation when the containing entry does not
-identify the basis. Keep guesses separate from source-supported facts.
+An entry may also contain an optional `guesses` array alongside `facts` for
+assumptions, inferences, and author interpretations. Use the same object
+formats and historical dates as for facts: `{date, text}` for prose, and the
+typed relationship format for inferred family relationships. The containing
+`guesses` array identifies these as uncertain; retain reasoning and attribution
+in an accompanying dated prose guess when needed. Include a citation when the
+containing entry does not identify the basis. Never invent a date: preserve
+legacy undated strings when the historical date cannot be established, and
+flag them for review. Keep guesses separate from source-supported facts.
 
 `person` and `of` are non-empty strings: either a known `people.json` ID or a
 normalized full name. Resolve an exact, case-sensitive ID match first;

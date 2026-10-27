@@ -108,6 +108,11 @@ and cite the book, note, or other basis when it is not already identified by
 the containing entry. Do not present a guess as a document-supported fact or
 use it to resolve an identity or relationship as certain.
 
+Use the same dated object formats as facts for guesses, including typed
+relationship objects for inferred family relationships. Preserve legacy
+undated strings and flag them when no historical date can be established;
+never invent a date or use the publication year as an event date.
+
 ## Relevance and identity
 
 Keep a fact when it mentions a member of von Rosenberg, von Uissigheim, or von
