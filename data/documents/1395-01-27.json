@@ -24,6 +24,16 @@
           "type": "parent",
           "person": "vogt_zu_Lauda",
           "of": "eberhard_jagstberg"
+        },
+        {
+          "type": "parent",
+          "person": "Elisabeth von Erligheim",
+          "of": "arnold_boxberg"
+        },
+        {
+          "type": "parent",
+          "person": "Elisabeth von Erligheim",
+          "of": "eberhard_jagstberg"
         }
       ]
     }
