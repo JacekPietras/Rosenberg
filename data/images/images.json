@@ -2831,7 +2831,16 @@
       "title": "Kochsches Gräberbuch (Kochsches Wappenbuch), Basel, Universitätsbibliothek, Ms. O.I.13",
       "date": "1450-1500",
       "source": "https://www.e-manuscripta.ch/bau/content/zoom/4190097",
-      "url": "https://drive.google.com/thumbnail?id=1xWVnl36ZMr5kvyrt02gdoueAp_w5iPSV&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1xWVnl36ZMr5kvyrt02gdoueAp_w5iPSV&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0557,
+          "y": 0.5395,
+          "width": 0.4718,
+          "height": 0.4054,
+          "name": "Rosenberg"
+        }
+      ]
     }
   ]
 }
