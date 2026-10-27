@@ -19,6 +19,7 @@
           "person": "Walther von Kronberg",
           "of": "Anna von Kronberg"
         },
+        "Walther von Kronberg was deceased by 1438-06-23.",
         "The Beilager shall take place after Anna von Kronberg reaches age 15",
         {
           "type": "title",
@@ -52,11 +53,11 @@
         },
         {
           "type": "kin",
-          "person": "Frank von Kronberg",
-          "personTitle": [
+          "person": "Anna von Kronberg",
+          "of": "Frank von Kronberg",
+          "ofTitle": [
             "der Jüngere"
           ],
-          "of": "Anna von Kronberg",
           "term": "Bruderstochter"
         },
         {

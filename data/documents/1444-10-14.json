@@ -11,6 +11,15 @@
         "Konrad von Rosenberg, Ritter, held a third of Schloss Schadeck.",
         {
           "type": "kin",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Kunz Landschade von Steinach",
+          "term": "Vetter"
+        },
+        {
+          "type": "kin",
           "person": "Konrad von Rosenberg",
           "of": "Kunz von Rosenberg",
           "term": "Vetter"

@@ -9,6 +9,16 @@
       "facts": [
         {
           "type": "sibling",
+          "person": "Arnold von Rosenberg",
+          "of": "Michael von Rosenberg"
+        },
+        {
+          "type": "sibling",
+          "person": "Friedrich von Rosenberg",
+          "of": "Michael von Rosenberg"
+        },
+        {
+          "type": "sibling",
           "person": "Christine von Rosenberg",
           "of": "Michael von Rosenberg"
         },

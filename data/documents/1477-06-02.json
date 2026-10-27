@@ -17,6 +17,14 @@
           "person": "Elichin von Riedern",
           "of": "Konrad von Rosenberg"
         },
+        {
+          "type": "parent",
+          "person": "Philipp von Riedern",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "of": "Elichin von Riedern"
+        },
         "Friedrich von Rosenberg sealed the renunciation."
       ],
       "img": [

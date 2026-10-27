@@ -15,7 +15,29 @@
           "ofTitle": [
             "zu Sugenheim"
           ]
-        }
+        },
+        {
+          "type": "parent",
+          "person": "Hans Georg von Seckendorff",
+          "personTitle": [
+            "zu Sugenheim"
+          ],
+          "of": "Georg Albrecht von Seckendorff"
+        },
+        {
+          "type": "parent",
+          "person": "Hans Georg von Seckendorff",
+          "personTitle": [
+            "zu Sugenheim"
+          ],
+          "of": "Philipp Ludwig von Seckendorff"
+        },
+        {
+          "type": "parent",
+          "person": "Brigitta von Rosenberg",
+          "of": "Anna Margareta von Seckendorff"
+        },
+        "Hans Georg von Seckendorff zu Sugenheim died on 1598-12-23."
       ]
     }
   ],

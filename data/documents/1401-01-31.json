@@ -11,13 +11,17 @@
           "type": "parent",
           "person": "vogt_zu_Lauda",
           "of": "eberhard_jagstberg",
-          "ofTitle": ["der Jüngere"]
+          "ofTitle": [
+            "der Jüngere"
+          ]
         },
         {
           "type": "spouse",
           "person": "Margaretha",
           "of": "eberhard_jagstberg",
-          "ofTitle": ["der Jüngere"]
+          "ofTitle": [
+            "der Jüngere"
+          ]
         },
         {
           "type": "kin",
@@ -25,6 +29,16 @@
           "of": "Hans Hofwart",
           "term": "Bruderstochter"
         },
+        {
+          "type": "kin",
+          "person": "Hans Hofwart",
+          "of": "eberhard_jagstberg",
+          "ofTitle": [
+            "der Jüngere"
+          ],
+          "term": "Schwager"
+        },
+        "[vogt_zu_Lauda] was deceased by 1401-01-31.",
         "Hans Hofwart is titled Domherr zu Würzburg.",
         "[eberhard_jagstberg] der Jüngere pledged Schloss Jagstberg to Hans Hofwart.",
         "[eberhard_jagstberg] der Jüngere held Schloss Jagstberg as a fief from Stift Würzburg.",

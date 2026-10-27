@@ -13,14 +13,24 @@
         {
           "type": "parent",
           "person": "Eberhard von Rosenberg",
-          "personTitle": ["der Ältere", "Ritter"],
+          "personTitle": [
+            "der Ältere",
+            "Ritter",
+            "verstorben"
+          ],
           "of": "Eberhard von Rosenberg",
-          "ofTitle": ["der Jüngere"]
+          "ofTitle": [
+            "der Jüngere"
+          ]
         },
         {
           "type": "parent",
           "person": "Eberhard von Rosenberg",
-          "personTitle": ["der Ältere", "Ritter"],
+          "personTitle": [
+            "der Ältere",
+            "Ritter",
+            "verstorben"
+          ],
           "of": "Konrad von Rosenberg"
         },
         "Eberhard von Rosenberg, der Ältere, Ritter, was deceased by 1300-05-17.",
