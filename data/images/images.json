@@ -2847,7 +2847,16 @@
       "title": "Kochsches Gräberbuch (Kochsches Wappenbuch), Basel, Universitätsbibliothek, Ms. O.I.13",
       "date": "1450-1500",
       "source": "https://www.e-manuscripta.ch/bau/content/zoom/4190113",
-      "url": "https://drive.google.com/thumbnail?id=1Ru0HH012AVFVz3D1QRTFT9-WU8sgmMHd&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1Ru0HH012AVFVz3D1QRTFT9-WU8sgmMHd&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4761,
+          "y": 0.0181,
+          "width": 0.4058,
+          "height": 0.4262,
+          "name": "Thüngen"
+        }
+      ]
     }
   ]
 }
