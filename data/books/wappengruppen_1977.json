@@ -15,24 +15,56 @@
     },
     {
       "german": "Die älteste Nennung finden wir 1178 unter den Zeugen des Bischofs von Würzburg und der Grafen von Wertheim wegen der Pfarrei und des Zehnten zu Reicholzheim mit dem Brüderpaar Arnold und Konrad, Söhnen des \"Rupertus de Ussenkeim\", dazu noch Herbord von Uissigheim. Die Vornamen Arnold und Konrad, dazu vor allem noch Eberhard, treten seit 1212 auch weiterhin in der Familie auf. 1323 ist Crafto von Uissigheim Wertheimer Vogt in Schweinberg. Um die Mitte des 16. Jahrhunderts ist die Familie anscheinend erloschen.",
-      "english": "The earliest mention is found in 1178 among the witnesses of the Bishop of Würzburg and the Counts of Wertheim regarding the parish and tithe of Reicholzheim, including the brothers Arnold and Konrad, sons of \"Ruprecht von Uissigheim,\" as well as Herbord von Uissigheim. The first names Arnold and Konrad, and especially Eberhard, continue to appear in the family from 1212 onward. In 1323, Kraft von Uissigheim was the Wertheim bailiff in Schweinberg. The family seems to have become extinct by the mid-16th century."
+      "english": "The earliest mention is found in 1178 among the witnesses of the Bishop of Würzburg and the Counts of Wertheim regarding the parish and tithe of Reicholzheim, including the brothers Arnold and Konrad, sons of \"Ruprecht von Uissigheim,\" as well as Herbord von Uissigheim. The first names Arnold and Konrad, and especially Eberhard, continue to appear in the family from 1212 onward. In 1323, Kraft von Uissigheim was the Wertheim bailiff in Schweinberg. The family seems to have become extinct by the mid-16th century.",
+      "facts": [
+        {"type": "parent", "person": "Ruprecht von Uissigheim", "of": "Arnold von Uissigheim", "date": "1178"},
+        {"type": "parent", "person": "Ruprecht von Uissigheim", "of": "Konrad von Uissigheim", "date": "1178"},
+        {"type": "sibling", "person": "Arnold von Uissigheim", "of": "Konrad von Uissigheim", "date": "1178"},
+        {"date": "1178", "text": "Arnold von Uissigheim witnessed a matter of the Bishop of Würzburg and the Counts of Wertheim concerning the parish and tithe of Reicholzheim."},
+        {"date": "1178", "text": "Konrad von Uissigheim witnessed a matter of the Bishop of Würzburg and the Counts of Wertheim concerning the parish and tithe of Reicholzheim."},
+        {"date": "1178", "text": "Herbord von Uissigheim witnessed a matter of the Bishop of Würzburg and the Counts of Wertheim concerning the parish and tithe of Reicholzheim."},
+        {"type": "title", "person": "Kraft von Uissigheim", "personTitle": ["Wertheimer Vogt zu Schweinberg"], "date": "1323"}
+      ],
+      "guesses": [
+        "Wolfert suggests that the von Uissigheim family became extinct around the middle of the 16th century."
+      ]
     },
     {
       "german": "Der Schild ihres Wappens ist fünfmal gespalten und einmal geteilt von Silber und Rot; als Helmzier werden 2 Schwanenhälse gezeigt, der rechte silbern, der linke rot. In älteren Siegeln von 1286, 1329 und 1335 aber finden sich als alleiniges Bild zwei Schwanenrümpfe, 1329 als Helmsiegel, d.h. der Helm mit der Helmzier erscheint im Siegelfeld. (Abb. 39)",
-      "english": "The shield of their coat of arms is divided into five sections vertically and one horizontally in silver and red; the crest shows two swan necks, the right one in silver and the left one in red. In older seals from 1286, 1329, and 1335, however, only two swan busts are depicted, with the 1329 seal showing the helmet with the crest in the seal field. (Illustration 39)"
+      "english": "The shield of their coat of arms is divided into five sections vertically and one horizontally in silver and red; the crest shows two swan necks, the right one in silver and the left one in red. In older seals from 1286, 1329, and 1335, however, only two swan busts are depicted, with the 1329 seal showing the helmet with the crest in the seal field. (Illustration 39)",
+      "facts": [
+        {"date": "1286", "text": "A von Uissigheim seal depicted two swan torsos as its sole image."},
+        {"date": "1329", "text": "A von Uissigheim helmet seal depicted two swan torsos."},
+        {"date": "1335", "text": "A von Uissigheim seal depicted two swan torsos as its sole image."}
+      ]
     },
     {
       "title": "N 2. von Rosenberg",
       "german": "Schon H. Bauer, aber auch W. Möller sehen die von Rosenberg als Zweig der von Uissigheim an, der sich kurz vor 1300 abgespalten hat und sich in dem 12 km westlich von Boxberg liegenden Ort Rosenberg niederlässt und sich seitdem danach nennt. Auch die Vornamen Konrad, Eberhard und Arnold treten weiterhin bei ihnen auf. Sie besitzen aber auch noch im 15. Jahrhundert Wertheimer Lehen.",
-      "english": "H. Bauer and W. Möller both view the von Rosenberg family as a branch of the von Uissigheim family, which split off shortly before 1300 and settled in the village of Rosenberg, located 12 km west of Boxberg, and subsequently named themselves after it. The first names Konrad, Eberhard, and Arnold continue to appear among them. They still held Wertheim fiefs in the 15th century."
+      "english": "H. Bauer and W. Möller both view the von Rosenberg family as a branch of the von Uissigheim family, which split off shortly before 1300 and settled in the village of Rosenberg, located 12 km west of Boxberg, and subsequently named themselves after it. The first names Konrad, Eberhard, and Arnold continue to appear among them. They still held Wertheim fiefs in the 15th century.",
+      "guesses": [
+        "Wolfert reports that Bauer and Möller consider the von Rosenberg family a branch of the von Uissigheim family which separated shortly before 1300, settled at Rosenberg and took its name from that place."
+      ]
     },
     {
       "german": "Die Familie gelangt zu solchem Wohlstand, daß vier Brüder und Vettern im Jahre 1381 gemeinsam die Herrschaft Boxberg kaufen und jeder sein Viertel der Pfalz zu Lehen aufträgt. 1632 ist die Familie erloschen. Im mehrfeldrigen Wappen der Grafen und Fürsten von Löwenstein-Wertheim wird ihr Wappen weitergeführt.",
-      "english": "The family achieved such prosperity that in 1381, four brothers and cousins jointly purchased the Lordship of Boxberg, and each entrusted their quarter of it as a fief to the Palatinate. The family became extinct in 1632. Their coat of arms is continued in the multi-fielded coat of arms of the Counts and Princes of Löwenstein-Wertheim."
+      "english": "The family achieved such prosperity that in 1381, four brothers and cousins jointly purchased the Lordship of Boxberg, and each entrusted their quarter of it as a fief to the Palatinate. The family became extinct in 1632. Their coat of arms is continued in the multi-fielded coat of arms of the Counts and Princes of Löwenstein-Wertheim.",
+      "facts": [
+        {"date": "1381", "text": "Four members of the von Rosenberg family jointly purchased the lordship of Boxberg."},
+        {"date": "1381", "text": "Each of the four von Rosenberg purchasers of the lordship of Boxberg transferred his quarter to the Palatinate to hold it as a fief."},
+        {"date": "1632", "text": "The von Rosenberg family was extinct by 1632."}
+      ]
     },
     {
       "german": "Es gleicht dem der von Uissigheim, nur ist im Schild die Reihenfolge der Farben vertauscht; in der Helmzier wird zwischen die Schwanenhälse noch eine rote Rose gesetzt. Aber auch hier erscheinen in den ältesten Siegeln die beiden Schwanenrümpfe, 1323 und 1388 sogar ausdrücklich in einen Schild gesetzt, z.B. im Siegel von 1323 des Eberhard von Rosenberg, Vogt zu (Tauber-)Bischofsheim. Daneben erscheinen 1348 auch ein Helmsiegel mit den beiden Schwanenhälsen, ein weiteres von 1361 hat dagegen auch die Rose.",
-      "english": "Their coat of arms resembles that of the von Uissigheim family, but the order of the colors in the shield is reversed; in the crest, a red rose is placed between the swan necks. However, in the oldest seals, the two swan busts appear, with those from 1323 and 1388 even explicitly placed within a shield, such as in the seal of Eberhard von Rosenberg, bailiff of (Tauber-)Bischofsheim, in 1323. Additionally, a helmet seal from 1348 shows the two swan necks, while another from 1361 also includes the rose."
+      "english": "Their coat of arms resembles that of the von Uissigheim family, but the order of the colors in the shield is reversed; in the crest, a red rose is placed between the swan necks. However, in the oldest seals, the two swan busts appear, with those from 1323 and 1388 even explicitly placed within a shield, such as in the seal of Eberhard von Rosenberg, bailiff of (Tauber-)Bischofsheim, in 1323. Additionally, a helmet seal from 1348 shows the two swan necks, while another from 1361 also includes the rose.",
+      "facts": [
+        {"type": "title", "person": "Eberhard von Rosenberg", "personTitle": ["Vogt zu Tauberbischofsheim"], "date": "1323"},
+        {"date": "1323", "text": "The seal of Eberhard von Rosenberg, Vogt zu Tauberbischofsheim, depicted two swan torsos within a shield."},
+        {"date": "1388", "text": "A von Rosenberg seal depicted two swan torsos within a shield."},
+        {"date": "1348", "text": "A von Rosenberg helmet seal depicted two swan necks."},
+        {"date": "1361", "text": "A von Rosenberg helmet seal depicted a rose alongside two swan necks."}
+      ]
     },
     {
       "title": "N 3. von Schweigern (Schweigerer)",
@@ -41,7 +73,10 @@
     },
     {
       "german": "Die fränkische Familie nennt sich nach dem östlichen Nachbarort von Boxberg. Kurz nach 1200 tritt sie urkundlich in Erscheinung, seit 1220 mit Konrad von Schweigern als Bocksberger Vasall, 1243 als Würzburger Hofschultheiß. Noch früher, seit 1203, ist der Würzburger Domherr Gotfried von Schweigern bezeugt, seit 1239 als Dekan des Domkapitels, † 1248.",
-      "english": "The Franconian family named themselves after the eastern neighboring village of Boxberg. Shortly after 1200, they appear in documents, starting in 1220 with Konrad von Schweigern as a vassal of the Lords of Boxberg and in 1243 as the Würzburg Hofschultheiß (chief magistrate). Even earlier, since 1203, Gotfried von Schweigern is recorded as a canon of Würzburg Cathedral, and from 1239 as dean of the cathedral chapter, † 1248."
+      "english": "The Franconian family named themselves after the eastern neighboring village of Boxberg. Shortly after 1200, they appear in documents, starting in 1220 with Konrad von Schweigern as a vassal of the Lords of Boxberg and in 1243 as the Würzburg Hofschultheiß (chief magistrate). Even earlier, since 1203, Gotfried von Schweigern is recorded as a canon of Würzburg Cathedral, and from 1239 as dean of the cathedral chapter, † 1248.",
+      "facts": [
+        {"date": "1220", "text": "Konrad von Schweigern was a vassal of the lords of Boxberg."}
+      ]
     },
     {
       "german": "Die Bindungen an das Bistum Würzburg bleiben weiterhin erhalten; im 15. Jahrhundert sitzt eine Linie in Schwanfeld (20 km nordöstlich Würzburg). Man darf sie aber nicht mit dem dortigen ursprünglichen Ortsadel „von Schwanfeld“ durcheinander bringen. Zunächst standen die Mitglieder dieser Familie in Henneberger Diensten, dann gingen sie in den Dienst des Bischofs über. Für sie ist kein eigenes Wappen überliefert, wohl aber für die nach dem Nachbarort „von Wipfeld“ genannten Verwandten, die im roten Schild einen silbernen Schwan tragen, der deutlich genug auf Schwanfeld hinweist.",
