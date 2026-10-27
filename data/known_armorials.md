@@ -2,6 +2,10 @@
 
 Armorials containing arms of German medieval families, including works with broader geographical coverage. Dates refer to the armorial or surviving manuscript where known. Later compilations and related heraldic registers are included where they document these families. Dashes indicate information not yet located. The Gatschet entry is retained from the image catalogue as a candidate; German family content still needs verification.
 
+## Liebenstein name variants for searching
+
+Search **Liebenstein, Liebenstain, Liebensteyn, Libenstein, Liebinstein, Livenstain, Lybenstein, Lybinstein**, and the long-*s* form **Liebenſtein**; also try **von/de Liebenstein** and **Liebensteiner**. **Lebenstein** is a cautious variant. Some spellings in the list attest place names or distinct branches, so a match alone does not identify a lineage.
+
 | Name of armorial | Date | Short description of content | Transcription or long description | Online viewer or PDF | Liebenstein forms in transcription/index |
 | --- | --- | --- | --- | --- | --- |
 | Gelre armorial | c. 1390–1415 | European arms, especially Low Countries and Rhineland families. | [Redrawn armorial and index](https://www.heraldique-europeenne.org/armoriaux/gelre/index.htm); [KBR description](https://belgica.kbr.be/BELGICA/doc/SYRACUSE/16995818/wapenboek-gelre-ms-15652-56?_lg=fr-BE) | [KBR viewer](https://uurl.kbr.be/1733715) | [Clemmensen’s concordance transcribes “her jan van lievensteyn” (Gelre fol. 27v1, entry 219); normalized as Liebenstein.](https://armorial.dk/editing_armorials/EA-u15_GEL-cp-BEL.pdf) |
