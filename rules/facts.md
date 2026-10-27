@@ -98,6 +98,16 @@ Also extract relevant witnesses, arbitrators, sureties, and official duties.
 Omit prices, financial amounts, measurements, and unrelated administrative
 detail unless essential to identifying the event.
 
+## Guesses and interpretations
+
+An entry may also have a separate `guesses` array alongside `facts` for
+assumptions, inferences, and interpretations, including interpretations read
+in books or notes that are not claimed to come directly from a document. Keep
+these out of `facts`. State uncertainty and the reasoning or attribution clearly,
+and cite the book, note, or other basis when it is not already identified by
+the containing entry. Do not present a guess as a document-supported fact or
+use it to resolve an identity or relationship as certain.
+
 ## Relevance and identity
 
 Keep a fact when it mentions a member of von Rosenberg, von Uissigheim, or von
