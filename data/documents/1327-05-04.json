@@ -24,6 +24,14 @@
           "person": "alheit_von_neudeck",
           "of": "hans_von_neudeck"
         },
+        {
+          "type": "kin",
+          "person": "alheit_von_neudeck",
+          "of": "Eberhard von Uissigheim",
+          "ofTitle": ["kelner ze Brunnebach"],
+          "term": "oheim"
+        },
+        "[konrad_husband_of_alheit_von_neudeck] was deceased by 1327-05-04.",
         "[alheit_von_neudeck] donated annual rent from her share of the mill at Rosenberg to Bronnbach Abbey",
         "[alheit_von_neudeck] endowed an annual Advent service at Bronnbach for the soul of [konrad_husband_of_alheit_von_neudeck]",
         "Heinrich Müller lived at the mill at Rosenberg",
