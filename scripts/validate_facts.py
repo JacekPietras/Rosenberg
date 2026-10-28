@@ -8,8 +8,10 @@ Examples:
 
 The proposed schema is in data/notes/family-graph-plan.md. This script does
 not verify source support or historical identity and does not build a graph.
-Legacy strings and text objects remain accepted by default. Strict migration
-requires date-bearing objects for all facts in books/notes, including free text.
+Legacy strings and text objects remain accepted by default outside books.
+Book facts and guesses always require explicit historical dates. Strict
+migration also requires date-bearing objects for all facts and guesses in
+notes, including free text.
 """
 
 import argparse
@@ -206,7 +208,8 @@ class Validator:
             else:
                 seen.add(item)
 
-    def check_fact(self, fact, location, require_date, inherited, guess=False):
+    def check_fact(self, fact, location, require_date, explicit_date_required,
+                   inherited, guess=False):
         self.counts['guesses' if guess else 'facts'] += 1
         if isinstance(fact, str):
             if not guess:
@@ -214,7 +217,12 @@ class Validator:
             if not self.nonblank(fact):
                 self.report(location, 'fact text must not be empty')
             if guess:
-                self.report(location, 'undated legacy guess requires historical date review', 'warning')
+                if explicit_date_required:
+                    self.report(location, 'this source requires guesses to be objects with an explicit historical date')
+                else:
+                    self.report(location, 'undated legacy guess requires historical date review', 'warning')
+            elif explicit_date_required:
+                self.report(location, 'this source requires facts to be objects with an explicit historical date')
             elif require_date and self.strict_migration:
                 self.report(location, 'books/notes facts require an object with an explicit date in strict migration mode')
             return
@@ -260,7 +268,7 @@ class Validator:
             self.check_date(fact['date'], location + '/date')
         elif guess:
             self.report(location + '/date', 'guesses require an explicit historical date')
-        elif require_date and (typed or self.strict_migration):
+        elif explicit_date_required or (require_date and (typed or self.strict_migration)):
             self.report(location + '/date', 'books/notes facts require an explicit historical date')
         elif typed:
             self.check_date(inherited, location + '/date (inherited)', inherited=True)
@@ -270,7 +278,9 @@ class Validator:
         if document is MISSING:
             return
         self.counts['files'] += 1
-        require_date = bool({'books', 'notes'} & set(path.parts)) or (isinstance(document, dict) and 'book' in document)
+        is_book = 'books' in path.parts or (isinstance(document, dict) and 'book' in document)
+        require_date = is_book or 'notes' in path.parts
+        explicit_date_required = is_book or ('notes' in path.parts and self.strict_migration)
 
         def visit(value, location, inherited=MISSING):
             if isinstance(value, dict):
@@ -283,7 +293,11 @@ class Validator:
                             self.report(loc, f'{key} must be an array')
                         else:
                             for index, fact in enumerate(child):
-                                self.check_fact(fact, f'{loc}/{index}', require_date, current_date, guess=key == 'guesses')
+                                self.check_fact(
+                                    fact, f'{loc}/{index}', require_date,
+                                    explicit_date_required, current_date,
+                                    guess=key == 'guesses',
+                                )
                     else:
                         visit(child, loc, current_date)
             elif isinstance(value, list):
@@ -308,7 +322,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('paths', nargs='*', type=Path, help='JSON files or directories (default: repository data/)')
     parser.add_argument('--people', type=Path, default=ROOT / 'data/people.json', help='person registry JSON')
-    parser.add_argument('--strict-migration', action='store_true', help='require explicit date-bearing objects for all books/notes facts')
+    parser.add_argument('--strict-migration', action='store_true', help='also require explicit date-bearing objects for all notes facts')
     args = parser.parse_args(argv)
     validator = Validator(args.strict_migration)
     validator.load_people(args.people.resolve())

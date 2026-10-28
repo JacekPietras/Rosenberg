@@ -110,8 +110,11 @@ use it to resolve an identity or relationship as certain.
 
 Use the same dated object formats as facts for guesses, including typed
 relationship objects for inferred family relationships. Preserve legacy
-undated strings and flag them when no historical date can be established;
-never invent a date or use the publication year as an event date.
+undated strings in existing records when no historical date can be established;
+never invent a date or use the publication year as an event date. In books,
+every fact and guess must have an explicit historical date. The validator
+reports undated book items as errors until a date is established or the record
+is otherwise resolved.
 
 ## Relevance and identity
 

@@ -37,7 +37,10 @@ typed relationship format for inferred family relationships. The containing
 in an accompanying dated prose guess when needed. Include a citation when the
 containing entry does not identify the basis. Never invent a date: preserve
 legacy undated strings when the historical date cannot be established, and
-flag them for review. Keep guesses separate from source-supported facts.
+flag them for review. Book entries require an explicit historical date on
+every fact and guess; `validate_facts.py` reports an undated book item as an
+error. Do not invent a date to satisfy validation. Keep guesses separate from
+source-supported facts.
 
 `person` and `of` are non-empty strings: either a known `people.json` ID or a
 normalized full name. Resolve an exact, case-sensitive ID match first;
@@ -89,11 +92,10 @@ reduce them to a single day. A typed fact with neither a historical date to
 inherit nor its own date must supply a valid historical date.
 
 In books and notes, typed facts require their own `date` field, even if an
-entry has a date. Never inherit a publication year. During migration, legacy
-strings and text objects remain readable without inventing dates; new or
-migrated book/note prose facts use `{date, text}`. Strict migration validation
-requires an explicit `date` on every book/note fact object and rejects bare
-strings there. Dates record the historical event or attestation, not when
+entry has a date. Never inherit a publication year. Book prose facts and all
+book guesses use `{date, text}`; bare strings and objects without a date are
+validation errors. Strict migration validation applies the same requirement
+to notes. Dates record the historical event or attestation, not when
 extraction occurred. A relationship attestation date is not its start date.
 
 Validate facts from the repository root:
