@@ -155,7 +155,7 @@
       "german": "„Der Roſenbergiſche Namen iſt an verſchiedenen Orten und Ländern bekannt, und es hat verſchiedene Familien dieſes Namens gegeben, ſo in Schleſien, Böhmen, Kärnten, im Baireuthiſchen, welche ihr Geſchlecht von den römiſchen Urſinern herleiten; die ſich ohne Zweifel gratulirt haben würden, wenn ſie ſich mit unſeren fränkiſchen Roſenbergern von einem Stamm hätten deriviren und ein Recht auf die Succeſſion formiren können. Das Stammhaus unſerer Roſenberger iſt das alte Schloß Roſen⸗berg am Eingang des Odenwaldes.“ (Leutwein.)",
       "english": "“The name of Rosenberg is known in various places and lands, and there have been several families of that name, in Silesia, Bohemia, Carinthia, and the Bayreuth region, who traced their lineage to the Roman Ursini. They would doubtless have congratulated themselves had they been able to derive their descent from the same stock as our Franconian Rosenbergs and establish a right of succession. The ancestral seat of our Rosenbergs is the old castle of Rosenberg at the entrance to the Odenwald.” (Leutwein.)",
       "guesses": [
-        "The old Schloss Rosenberg may have been the ancestral seat of the Franconian von Rosenberg family; no documentary basis is given."
+        {"date": "1285", "text": "The old Schloss Rosenberg may have been the Franconian von Rosenberg family’s ancestral seat, as Leutwein states; Neumaier places their acquisition of Rosenberg before 1285."}
       ]
     },
     {
@@ -1395,7 +1395,7 @@
         {
           "type": "spouse",
           "person": "Anna von Rosenberg",
-          "of": "Eberhard von Angelloch",
+          "of": "Eberhard von Gauangelloch",
           "date": "1426"
         },
         {

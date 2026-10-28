@@ -1989,7 +1989,7 @@
       "german": "Uebrig ist jetzt noch die Frage, wo wir die beiden Stammväter dieser Konradischen Linien im Stammbaum einfügen sollen? Alles zusammengenommen passen wohl die Zeiten und andere Verhältnisse am besten, wenn wir Hrn. Conrad den Bizthum in Amberg für den Sohn Arnolds halten, den länger lebenden Heidelberger Bizthum aber für den Sohn Eberhards I.; die sämtlichen Generationen passen so zu den parallelen Generationen der andern Linien. In dieser Weise entwerfen wir nun einen Stammbaum, welcher bloß die urkundlich beglaubigten Personen ausführt, namentlich aber die vielen Namen unberücksichtigt läßt, welche Biedermann aus den Turnierbüchern geschöpft hat. Daß uns ein und der andere wirklich lebende Mann nicht auch in Urkunden vorgekommen sein mag, wollen wir nicht bestreiten; mögen sie Andere noch einreihen. Wir sind befriedigt, wenn nur einmal eine brauchbare Grundlage für weitere genealogische Forschungen gewonnen ist, woran es doch bisher noch ganz fehlte.",
       "english": "The remaining question now is where to place the two progenitors of these Konrad lines in the family tree? Considering everything, the times and other circumstances seem to fit best if we consider Lord Konrad of the Amberg bishopric to be the son of Arnold, and the longer-living Heidelberg bishopric Konrad to be the son of Eberhard I; this arrangement aligns all the generations with the parallel generations of the other lines. In this manner, we will now draft a family tree that includes only the documented individuals, leaving out the many names that Biedermann derived from the tournament books. We do not deny that some actual individuals may not have appeared in the records; others may still incorporate them. We are satisfied if a solid foundation for further genealogical research is established, something that has been lacking until now.",
       "guesses": [
-        "Bauer tentatively identifies Konrad, Vizedom in Amberg, as Arnold von Rosenberg’s son and the Vizedom in Heidelberg as Eberhard von Rosenberg’s son, based on chronology and circumstances."
+        {"date": "1370", "text": "In a 1370 attestation as Vizedom in Amberg, Konrad von Rosenberg may have been Arnold’s son; the later Vizedom in Heidelberg may have been Eberhard I’s son (Staatsarchiv Amberg, Kloster Ensdorf Urkunden 156)."}
       ]
     },
     {
@@ -2127,7 +2127,7 @@
         {
           "type": "spouse",
           "person": "Anna von Rosenberg",
-          "of": "Eberhard von Angelach",
+          "of": "Eberhard von Gauangelloch",
           "date": "1426"
         }
       ]
