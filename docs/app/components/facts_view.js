@@ -2,8 +2,10 @@ import { renderFactText, factDate } from '../rendering/facts.js?v=5';
 import { formatDate } from '../rendering/dates.js';
 import { escapeHtml } from '../rendering/html.js';
 
-export function renderFactsView(facts, { people = [], inlineMarkup, itemClass = () => '', defaultDate = '' }) {
-  return `<ul class="facts facts-view">${facts.map((fact, index) => {
+export function renderFactsView(facts, { people = [], inlineMarkup, itemClass = () => '', defaultDate = '', listClass = '' }) {
+  const classes = ['facts', 'facts-view', listClass].filter(Boolean).join(' ');
+  const label = listClass === 'guesses-view' ? ' aria-label="Guesses"' : '';
+  return `<ul class="${classes}"${label}>${facts.map((fact, index) => {
     const date = factDate(fact, defaultDate);
     const showDate = index === 0 || date !== factDate(facts[index - 1], defaultDate);
     const dateMarkup = showDate && date
