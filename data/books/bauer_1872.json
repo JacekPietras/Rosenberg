@@ -84,7 +84,7 @@
       "german": "Bedenken wir hierzu, daß die Herrn von Ussigheim ein und dasselbe Wappen führten, wie die Herrn von Rosenberg, so unterliegt es wohl keinem Zweifel: dieser Eberhard hat eine besondere Linie auf der Burg in Ussigheim begründet und die folgenden Herrn von Ussigheim gehören auch zum Rosenberger Stammbaum im weiteren Sinn.",
       "english": "Considering that the Lords of Uissigheim bore the same coat of arms as the Lords of Rosenberg, there can be little doubt: this Eberhard founded a distinct lineage at the castle in Uissigheim, and the subsequent Lords of Uissigheim also belong to the Rosenberg family tree in a broader sense.",
       "guesses": [
-        "It is possible that Eberhard von Rosenberg founded a separate line at Uissigheim and that the later von Uissigheim belonged to the wider von Rosenberg family, based on their shared arms."
+        {"date": "1288", "text": "It is possible that Eberhard von Rosenberg founded a separate line at Uissigheim and that the later von Uissigheim belonged to the wider von Rosenberg family, based on their shared arms."}
       ]
     },
     {
@@ -125,7 +125,7 @@
         }
       ],
       "guesses": [
-        "It is possible that the inheritance of Eberhard and Arnold von Uissigheim passed to von Rosenberg through an heiress, explaining the shared arms and name."
+        {"date": "1247", "text": "It is possible that the inheritance of Eberhard and Arnold von Uissigheim passed to von Rosenberg through an heiress, explaining the shared arms and name."}
       ]
     },
     {
@@ -161,7 +161,7 @@
         }
       ],
       "guesses": [
-        "It is possible that Konrad and Frizo von Uissigheim were sons of Eberhard von Rosenberg, citing the Bronnbach necrology and the later family arms."
+        {"date": "1324", "text": "It is possible that Konrad and Frizo von Uissigheim were sons of Eberhard von Rosenberg, citing the Bronnbach necrology and the later family arms."}
       ]
     },
     {
@@ -174,7 +174,7 @@
         }
       ],
       "guesses": [
-        "Konrad von Rosenberg, attested in 1315, may have been a son of Eckhard von Rosenberg."
+        {"date": "1315", "text": "Konrad von Rosenberg, attested in 1315, may have been a son of Eckhard von Rosenberg."}
       ]
     },
     {
@@ -251,8 +251,8 @@
         }
       ],
       "guesses": [
-        "Diether von Rosenberg, Ritter, attested in 1343, may have been a son or brother of Wipert von Rosenberg.",
-        "Eberhard von Rosenberg, Johanniter-Komtur zu Aichen in 1368, may have belonged to Wipert von Rosenberg’s family."
+        {"date": "1343", "text": "Diether von Rosenberg, Ritter, attested in 1343, may have been a son or brother of Wipert von Rosenberg."},
+        {"date": "1368", "text": "Eberhard von Rosenberg, Johanniter-Komtur zu Aichen in 1368, may have belonged to Wipert von Rosenberg’s family."}
       ]
     },
     {
@@ -505,7 +505,7 @@
         {"date": "1340", "text": "Eberhard von Rosenberg genannt von Zimmern transferred his tithe at Wülfingsloch to Bronnbach monastery with the consent of the count of Wertheim."}
       ],
       "guesses": [
-        "Eberhard, son of Eberhard von Rosenberg zu Dürn, may have been Eberhard von Rosenberg genannt von Zimmern or Eberhard von Rosenberg der Jüngere, Wyclo’s husband."
+        {"date": "1340", "text": "Eberhard, son of Eberhard von Rosenberg zu Dürn, may have been Eberhard von Rosenberg genannt von Zimmern or Eberhard von Rosenberg der Jüngere, Wyclo’s husband."}
       ]
     },
     {
@@ -792,7 +792,7 @@
       "german": "Wir werden also geneigt sein, diese beiden Herrn für Brüder zu halten, und diese Vermuthung wird bestätigt durch eine spätere Urkunde von 1444, wonach Ulrich v. Rosenberg jene Lehen empfing, die von seinem Ahnhern Engelhard (I.) und von seinem Vater Eberhard auf ihn gekommen. Engelhard I. hatte demnach auch einen Sohn Eberhard.",
       "english": "We are therefore inclined to consider these two men as brothers, and this assumption is confirmed by a later document from 1444, according to which Ulrich von Rosenberg received those fiefs that had passed down to him from his ancestor Engelhard (I.) and from his father Eberhard. Therefore, Engelhard I. also had a son named Eberhard.",
       "guesses": [
-        "Engelhard and Eberhard von Rosenberg may have been brothers; a 1444 fief record describes Ulrich as Eberhard’s son and Engelhard’s descendant."
+        {"date": "1444", "text": "Engelhard and Eberhard von Rosenberg may have been brothers; a 1444 fief record describes Ulrich as Eberhard’s son and Engelhard’s descendant."}
       ]
     },
     {
@@ -805,7 +805,7 @@
         }
       ],
       "guesses": [
-        "The sons of an Eberhard von Rosenberg may have been sons of Engelhard’s brother, based on a Burglehen at Hohenburg."
+        {"date": "1401", "text": "The sons of an Eberhard von Rosenberg may have been sons of Engelhard’s brother, based on a Burglehen at Hohenburg."}
       ]
     },
     {
@@ -1077,7 +1077,7 @@
         }
       ],
       "guesses": [
-        "Eberhard, Konrad, and Hans von Rosenberg may have been Arnold’s sons, based on their description as cousins of Eberhard’s sons."
+        {"date": "1321", "text": "Eberhard, Konrad, and Hans von Rosenberg may have been Arnold’s sons, based on their description as cousins of Eberhard’s sons."}
       ]
     },
     {
@@ -1167,7 +1167,7 @@
       "german": "Dieser Eberhard (II), Arnolds Sohn, kann wohl auch der Eberhard sein c. ux. Wyclo, 13.. gesessen zu Zimmern*) und begütert zu Kirchheim, s. oben; ja ich möchte fast lieber an diesen Eberhard denken, weil seine Mutter, eine geborne Pfahl von Grünsfeld, recht wohl gerade diese Besitzungen auf ihre Kinder könnte vererbt haben, wie denn auch von ihm schon 1359 Kinder lebten. Der Eberhard v. R. zu Zimmern (und Genossen) wurde 1347 an Sct. Vincenz Tag verglichen mit Herrn Kraft von Hohenlohe wegen etlicher Gelder und der Beste Zimmern, darum sie einander bekriegt haben; Fleischners Chronik.",
       "english": "This Eberhard, Arnold's son, could very well be the Eberhard referred to with his wife Wyclo, who lived in Zimmern in the 13th century and owned property in Kirchheim; see above. Indeed, I am inclined to think of this Eberhard because his mother, born a Pfahl von Grünsfeld, could quite possibly have passed these possessions on to her children, as Eberhard already had children living in 1359. Eberhard von Rosenberg of Zimmern (and associates) was reconciled with Lord Kraft von Hohenlohe on St. Vincent's Day in 1347 over certain funds and the estate of Zimmern, over which they had fought; see Fleischners Chronik.",
       "guesses": [
-        "Bauer suggests Eberhard von Rosenberg, son of Arnold, may be Eberhard von Rosenberg at Zimmern, husband of Wyclo, partly because his mother may have inherited property there."
+        {"date": "1359", "text": "Bauer suggests Eberhard von Rosenberg, son of Arnold, may be Eberhard von Rosenberg at Zimmern, husband of Wyclo, partly because his mother may have inherited property there."}
       ],
       "facts": [
         {
@@ -1343,7 +1343,7 @@
         }
       ],
       "guesses": [
-        "It is possible that the brothers Eberhard and Arnold who held Boxberg in 1381 were children of Eberhard, son of Arnold, partly because Arnold bore their grandfather’s name."
+        {"date": "1381", "text": "It is possible that the brothers Eberhard and Arnold who held Boxberg in 1381 were children of Eberhard, son of Arnold, partly because Arnold bore their grandfather’s name."}
       ]
     },
     {
@@ -1387,7 +1387,7 @@
         }
       ],
       "guesses": [
-        "The deceased father Eberhard of Arnold der Jüngere and Eberhard may have been Eberhard von Rosenberg, Ritter and Vogt zu Lauda in 1385, who died in 1388."
+        {"date": "1388", "text": "The deceased father Eberhard of Arnold der Jüngere and Eberhard may have been Eberhard von Rosenberg, Ritter and Vogt zu Lauda in 1385, who died in 1388."}
       ]
     },
     {
@@ -1522,7 +1522,7 @@
         }
       ],
       "guesses": [
-        "The two von Rosenberg men buried at Wölchingen may have been brothers, and their mother may have been Els von Erligheim; their maternal arms show a lion."
+        {"date": "1449", "text": "The two von Rosenberg men buried at Wölchingen may have been brothers, and their mother may have been Els von Erligheim; their maternal arms show a lion."}
       ]
     },
     {
@@ -1546,7 +1546,7 @@
         }
       ],
       "guesses": [
-        "Michael von Rosenberg, who sold the Bobstadt tithe in 1378, may have been another son of Eberhard and brother of Arnold."
+        {"date": "1378", "text": "Michael von Rosenberg, who sold the Bobstadt tithe in 1378, may have been another son of Eberhard and brother of Arnold."}
       ]
     },
     {
@@ -1844,7 +1844,7 @@
         }
       ],
       "guesses": [
-        "Eberhard von Rosenberg, who sold a quarter of Boxberg in 1452 with Thomas’s consent, may have belonged to Hans’s line and been his brother."
+        {"date": "1452", "text": "Eberhard von Rosenberg, who sold a quarter of Boxberg in 1452 with Thomas’s consent, may have belonged to Hans’s line and been his brother."}
       ]
     },
     {
@@ -2488,7 +2488,7 @@
         }
       ],
       "guesses": [
-        "It is possible that Friedrich von Rosenberg was a previously unknown brother of Jörg and inherited Jörg’s allodial property, while other brothers and their descendants inherited the fiefs."
+        {"date": "1494", "text": "It is possible that Friedrich von Rosenberg was a previously unknown brother of Jörg and inherited Jörg’s allodial property, while other brothers and their descendants inherited the fiefs."}
       ]
     },
     {
@@ -2673,7 +2673,7 @@
         }
       ],
       "guesses": [
-        "The unnamed monument in Wölchingen may depict Eberhard von Rosenberg and his wife von Handschuhsheim, based on the arms."
+        {"date": "1437", "text": "The unnamed monument in Wölchingen may depict Eberhard von Rosenberg and his wife von Handschuhsheim, based on the arms."}
       ]
     },
     {

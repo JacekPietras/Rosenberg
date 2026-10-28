@@ -192,7 +192,7 @@
         {"date": "1165", "text": "A tournament book claims that Wilhelm von Rosenberg and Hieronymus von Rosenberg attended a tournament at Zürich."},
         {"date": "1179", "text": "A tournament book claims that Ernst von Rosenberg attended a tournament at Köln."},
         {"date": "1235", "text": "A tournament book claims that Georg von Rosenberg attended a tournament at Würzburg."},
-        "A tournament-book genealogy says that Hans von Rosenberg had three sons, Eckhart, Eberhard and Konrad; the passage does not date the relationships."
+        {"date": "1290", "text": "A tournament-book genealogy says that Hans von Rosenberg had three sons, Eckhart, Eberhard and Konrad; the passage does not date the relationships."}
       ]
     },
     {
@@ -1190,7 +1190,7 @@
         }
       ],
       "guesses": [
-        "Arnold von Rosenberg der Jüngere and Christine von Hentschesheim made the exchange after the 1408 permission; its date is unknown."
+        {"date": "1408", "text": "Arnold von Rosenberg der Jüngere and Christine von Hentschesheim made the exchange after the 1408 permission; its date is unknown."}
       ]
     },
     {
@@ -1221,7 +1221,7 @@
         }
       ],
       "guesses": [
-        "It is possible that the mother of Eberhard von Rosenberg and his brother Eberhard was Else von Erligheim, based on their tombs’ maternal arms."
+        {"date": "1449", "text": "It is possible that the mother of Eberhard von Rosenberg and his brother Eberhard was Else von Erligheim, based on their tombs’ maternal arms."}
       ]
     },
     {
@@ -1979,7 +1979,7 @@
         }
       ],
       "guesses": [
-        "Arnold von Rosenberg may have been married to Anna von Dottenheim, daughter of Konrad von Dottenheim, and had four sons: Hans Thomas, Hans Melchior, Hans Ulrich, and Hans Kaspar; the dates of these relationships are unknown."
+        {"date": "1512", "text": "Arnold von Rosenberg may have been married to Anna von Dottenheim, daughter of Konrad von Dottenheim, and had four sons: Hans Thomas, Hans Melchior, Hans Ulrich, and Hans Kaspar; the dates of these relationships are unknown."}
       ]
     },
     {
@@ -2141,7 +2141,7 @@
         }
       ],
       "guesses": [
-        "Anna von Rosenberg may have been married first to Caspar von Stetten and then to Wolf von Stetten; the marriage dates are unknown."
+        {"date": "1548", "text": "Anna von Rosenberg may have been married first to Caspar von Stetten and then to Wolf von Stetten; the marriage dates are unknown."}
       ]
     },
     {
@@ -2338,7 +2338,7 @@
         }
       ],
       "guesses": [
-        "The tomb inscription identifies Albrecht von Rosenberg and Rufina Stieber von Büttenheim as spouses, but does not date their marriage or the inscription."
+        {"date": "1572", "text": "The tomb inscription identifies Albrecht von Rosenberg and Rufina Stieber von Büttenheim as spouses, but does not date their marriage or the inscription."}
       ]
     },
     {
@@ -2353,7 +2353,7 @@
           "date": "1576-08-13",
           "text": "Stocker later gives 13 August 1576 for Zeisolf von Rosenberg der Jüngere’s death, but first gives 1578; the date requires source verification."
         },
-        "Stocker describes Zeisolf von Rosenberg der Jüngere as the husband of Anna von der Keer, son of Zeisolf der Ältere, and father of Georg Sigmund, without a date for those relationship attestations."
+        {"date": "1576", "text": "Stocker describes Zeisolf von Rosenberg der Jüngere as the husband of Anna von der Keer, son of Zeisolf der Ältere, and father of Georg Sigmund, without a date for those relationship attestations."}
       ],
       "facts": [
         {

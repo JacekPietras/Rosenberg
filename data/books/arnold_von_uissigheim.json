@@ -128,7 +128,10 @@
         }
       ],
       "guesses": [
-        "The Würzburg Domherrnkurie called Uissigheimer Hof may have been named after Arnold von Uissigheim, canon in 1298."
+        {
+          "date": "1298",
+          "text": "The Würzburg Domherrnkurie called Uissigheimer Hof may have been named after Arnold von Uissigheim, canon in 1298."
+        }
       ]
     },
     {
@@ -232,7 +235,10 @@
         }
       ],
       "guesses": [
-        {"date": "1331-12-31", "text": "The grave monument in the church of Uissigheim likely belongs to Eberhard von Uissigheim genannt von Ranneberg, who died on this date."}
+        {
+          "date": "1331-12-31",
+          "text": "The grave monument in the church of Uissigheim likely belongs to Eberhard von Uissigheim genannt von Ranneberg, who died on this date."
+        }
       ]
     },
     {
@@ -360,7 +366,10 @@
       "german": "Das häufigste Delikt waren Überfälle auf Reisende, vor allem auf reisende Kaufleute, die man gewinnbringend ausrauben und in Geiselhaft nehmen konnte. Der jüngere Arnold von Uissigheim hatte demnach zumindest kurzzeitig Karriere als „Raubritter\" gemacht (auch wenn diese Bezeichnung erst dem 19. Jahrhundert zugehört) und somit aus der Krise und wirtschaftlichen Not des niederen Adels im Spätmittelalter eine „Tugend\" gemacht, die sicherlich nicht zum ritterlichen Tugendsystem gehörte, wohl aber nicht selten zum ritterlichen Alltag.",
       "english": "The most common crime was attacks on travelers, especially traveling merchants, who could be robbed for profit and taken hostage. Arnold von Uissigheim der Jüngere had at least a short-term career as a \"robber baron\" (even if this term only belonged to the 19th century) and thus turned the crisis and economic hardship of the lower nobility in the late Middle Ages into a \"virtue\" that was certainly not part of the knightly system of virtues, but was often part of everyday knightly life.",
       "guesses": [
-        {"date": "1332-11-24", "text": "The agreement may indicate that Arnold von Uissigheim der Jüngere’s earlier offenses were part of a brief career as a Raubritter."}
+        {
+          "date": "1332-11-24",
+          "text": "The agreement may indicate that Arnold von Uissigheim der Jüngere’s earlier offenses were part of a brief career as a Raubritter."
+        }
       ]
     },
     {
@@ -457,15 +466,24 @@
         }
       ],
       "guesses": [
-        {"date": "1332-11-24", "text": "The agreement may have imposed collective responsibility on the extended family of Arnold von Uissigheim der Jüngere."},
-        "Wiprecht and Eberhard von Rosenberg may have been sons of Eberhard von Rosenberg genannt von Uissigheim, making him the progenitor of a Rosenberg branch of the von Uissigheim family."
+        {
+          "date": "1332-11-24",
+          "text": "The agreement may have imposed collective responsibility on the extended family of Arnold von Uissigheim der Jüngere."
+        },
+        {
+          "date": "1332",
+          "text": "Wiprecht and Eberhard von Rosenberg may have been sons of Eberhard von Rosenberg genannt von Uissigheim, making him the progenitor of a Rosenberg branch of the von Uissigheim family."
+        }
       ]
     },
     {
       "german": "Auslöser des landesherrlichen Vorgehens war jedoch in erster Linie der Ritter Arnold der Jüngere von Uissigheim gewesen. Von seinem Vorleben bis zu dem Zeitpunkt, als er erstmalig „aktenkundig\" wurde, wissen wir schlichtweg nichts. Dass das Jahr seiner Geburt unbekannt bleibt, teilt er mit nahezu allen Zeitgenossen. Die Vermutung, es habe „um 1290\" gelegen, ist daher auf nichts als die Tatsache zu stützen, dass zum einen der Vater noch lebte und andererseits der Sohn 1332 bereits die Ritterwürde erlangt hatte, das heißt die Knappenjahre hinter sich gebracht und sich bereits im Kampf bewährt haben musste. Doch auch darüber, was danach geschah, bis der Exulant im Sommer des Jahres 1336 an der Spitze der „Judenschläger\" im mittleren Taubertal ins Licht der Geschichte trat, lassen sich nicht einmal Vermutungen anstellen.",
       "english": "However, the trigger for the sovereign's actions was primarily Arnold von Uissigheim der Jüngere, Ritter. We simply know nothing about his previous life up to the time when he first became “on record”. He shares with almost all of his contemporaries that the year of his birth remains unknown. The assumption that it was \"around 1290\" can therefore be based on nothing other than the fact that, on the one hand, the father was still alive and, on the other hand, the son had already achieved the knighthood in 1332, i.e. had already completed his years as a miner and had already proven himself in battle. But it is not even possible to make any assumptions about what happened afterwards until the exile came into the light of history in the summer of 1336 at the head of the “Jew thugs” in the central Taubertal.",
       "guesses": [
-        "Arnold von Uissigheim der Jüngere may have been born around 1290: his father was alive and Arnold was already a Ritter in 1332."
+        {
+          "date": "1290",
+          "text": "Arnold von Uissigheim der Jüngere may have been born around 1290: his father was alive and Arnold was already a Ritter in 1332."
+        }
       ]
     },
     {
@@ -566,7 +584,10 @@
         }
       ],
       "guesses": [
-        {"date": "1336", "text": "König Armleder’s forces may have attacked Weikersheim."}
+        {
+          "date": "1336",
+          "text": "König Armleder’s forces may have attacked Weikersheim."
+        }
       ]
     },
     {
@@ -601,13 +622,34 @@
       "german": "Das Schicksal des Anführers entzieht sich für eine Weile unseren Blicken, denn er scheint nicht unter den Gefangenen, sondern vorerst entkommen zu sein. Doch wusste schon Johannes von Winterthur zu berichten, dass die Juden durch Bestechung „böser Christen\" schließlich seinen Tod erreicht hätten. Näheres trägt der Fortsetzer der Chronik aus Erfurt bei: 400 Pfund Heller flössen an Gottfried von Hohenlohe für die Gefangennahme des Ritters Arnold. Nach seiner Festsetzung sei er nach Röttingen gebracht worden, habe dort dem Dekan mehrfach gebeichtet und daraufhin die Kommunion in beiderlei Gestalt empfangen. Schließlich jedoch sei er nach Kitzingen überstellt und dort enthauptet worden; beigesetzt worden sei er in seinem Dorf Uissigheim in der dortigen Kirche, wo danach vielfache Wunder geschehen seien.",
       "english": "The fate of the leader escapes our view for a while, because he does not seem to be among the prisoners, but has escaped for the time being. But John of Winterthur already reported that the Jews had ultimately caused his death by bribing \"bad Christians.\" The continuator of the chronicle from Erfurt provides further details: 400 pounds of heller flowed to Gotfried von Hohenlohe for the capture of Arnold von Uissigheim, Ritter. After his arrest, he was taken to Röttingen, where he confessed to the dean several times and then received communion in both forms. Ultimately, however, he was transferred to Kitzingen and beheaded there; He was buried in his village of Uissigheim in the church there, where many miracles occurred afterwards.",
       "guesses": [
-        {"date": "1336", "text": "Johannes von Winterthur reported that Jews secured the death of Arnold von Uissigheim through bribery; this is the chronicler’s account."},
-        {"date": "1336", "text": "The Erfurt chronicle continuator reported that Gottfried von Hohenlohe captured Arnold von Uissigheim, Ritter."},
-        {"date": "1336", "text": "The Erfurt chronicle continuator reported that Arnold von Uissigheim, Ritter, was taken to Röttingen after his capture."},
-        {"date": "1336", "text": "The Erfurt chronicle continuator reported that Arnold von Uissigheim, Ritter, confessed to the dean in Röttingen."},
-        {"date": "1336", "text": "The Erfurt chronicle continuator reported that Arnold von Uissigheim, Ritter, was transferred to Kitzingen."},
-        {"date": "1336", "text": "The Erfurt chronicle continuator reported that Arnold von Uissigheim, Ritter, was beheaded in Kitzingen."},
-        {"date": "1336", "text": "The Erfurt chronicle continuator reported that Arnold von Uissigheim, Ritter, was buried in the church of Uissigheim."}
+        {
+          "date": "1336",
+          "text": "Johannes von Winterthur reported that Jews secured the death of Arnold von Uissigheim through bribery; this is the chronicler’s account."
+        },
+        {
+          "date": "1336",
+          "text": "The Erfurt chronicle continuator reported that Gottfried von Hohenlohe captured Arnold von Uissigheim, Ritter."
+        },
+        {
+          "date": "1336",
+          "text": "The Erfurt chronicle continuator reported that Arnold von Uissigheim, Ritter, was taken to Röttingen after his capture."
+        },
+        {
+          "date": "1336",
+          "text": "The Erfurt chronicle continuator reported that Arnold von Uissigheim, Ritter, confessed to the dean in Röttingen."
+        },
+        {
+          "date": "1336",
+          "text": "The Erfurt chronicle continuator reported that Arnold von Uissigheim, Ritter, was transferred to Kitzingen."
+        },
+        {
+          "date": "1336",
+          "text": "The Erfurt chronicle continuator reported that Arnold von Uissigheim, Ritter, was beheaded in Kitzingen."
+        },
+        {
+          "date": "1336",
+          "text": "The Erfurt chronicle continuator reported that Arnold von Uissigheim, Ritter, was buried in the church of Uissigheim."
+        }
       ]
     },
     {
@@ -650,7 +692,10 @@
       "german": "In Kitzingen am Main ist der „König Armleder\" nach der Niederschlagung der von ihm initiierten Bewegung und seiner Gefangennahme schließlich zu Tode gekommen. Warum gerade hier? Man könnte zuerst zu der Vermutung gelangen, dass die Mainstadt zum Schluss-kapitel im Leben des Arnold von Uissigheim deshalb wurde, weil hier am 2. August 1336 das blutigste Pogrom seines Wütens gegen die städtischen Judengemeinden stattfand.",
       "english": "In Kitzingen am Main, \"King Armleder\" finally died after the movement he initiated was suppressed and he was captured. Why here? One might first assume that the Main city became the final chapter in the life of Arnold von Uissigheim because the bloodiest pogrom of his rampage against the city's Jewish communities took place here on August 2, 1336.",
       "guesses": [
-        {"date": "1336-11-14", "text": "Arnold von Uissigheim may have been executed in Kitzingen, where the pogrom took place on 2 August 1336."}
+        {
+          "date": "1336-11-14",
+          "text": "Arnold von Uissigheim may have been executed in Kitzingen, where the pogrom took place on 2 August 1336."
+        }
       ]
     },
     {
@@ -661,15 +706,24 @@
       "german": "Auch in Röttingen war die Gerichtsgewalt in Burg und Stadt an Bischof Otto von Würzburg gelangt, dessen Amt es in der Folge war. Doch geschah dies erst 1345; im Jahr 1336, am 16. Juli, hatte Kaiser Ludwig Gottfried von Hohenlohe für Röttingen und Weikersheim noch verschiedene städtische Freiheiten bestätigt. Folglich war Armleder der gut unterrichteten Chronik aus Erfurt zufolge anfangs im hohenlohischen Röttingen gefangengehalten und dann zur Aburteilung an das würzburgische Zentgericht Kitzingen überstellt worden.",
       "english": "In Röttingen too, judicial power in the castle and town had passed to Bishop Otto von Würzburg, whose office it subsequently became. But this only happened in 1345; In 1336, on July 16, Emperor Ludwig Gotfried von Hohenlohe confirmed various urban freedoms for Röttingen and Weikersheim. Consequently, according to the well-informed chronicle from Erfurt, Armleder was initially held prisoner in Röttingen in Hohenloh and then transferred to the Würzburg central court in Kitzingen for trial.",
       "guesses": [
-        {"date": "1336", "text": "Arnold von Uissigheim may have been detained first in Röttingen and then transferred to the Würzburg court in Kitzingen, as the Erfurt chronicle suggests."}
+        {
+          "date": "1336",
+          "text": "Arnold von Uissigheim may have been detained first in Röttingen and then transferred to the Würzburg court in Kitzingen, as the Erfurt chronicle suggests."
+        }
       ]
     },
     {
       "german": "Über die Kompetenz dieses Kitzinger Zentgerichts sind wir durch Aufzeichnungen aus Rothenburg für die Jahre 1343-47 unterrichtet: Uff daz geriht gen Kiezingen ledet man pfäffen, ritter und kneht, bur ger uz des richs und aller herren steten und arm lüt und Juden, als wit daz bystum zu Wirczburg ist ... Die centgreven und schöpfen sind gebaur, die umb und umb in den dorffern gesezzen sin ... Die rihter griffen auch an und vahen auch die geurteilten lut und nemen in ir lib und gut und schaezen sie ... Demnach konnten Geistliche, Ritter, Knechte, Bürger, Bauern und Juden aus Reichsund Landstädten im Bereich des Würzburger Sprengeis vorgeladen, gefangengenommen und abgeurteilt werden. Zentgrafen, das heißt Inhaber der Blutrichtgerichtsbarkeit, und Schöffen rekrutierten sich aus den Bauern der umliegenden Dörfer; in anderen Fällen war Richter gewöhnlich der zuständige Amtmann. Die Richter übten die hohe und die niedere Gerichtsbarkeit aus, erhoben Geld- und verkündeten Leibesstrafen. Durch dieses würzburgische Zentgericht in Kitzingen wurde „König Armleder\" schließlich zum Tode verurteilt und am 14. November des Jahres 1336 durch das Schwert zu Tode gebracht.",
       "english": "We are informed about the competence of this Kitzingen centrist court by records from Rothenburg for the years 1343-47: Uff daz geriht geriht in Kiezingen ledet man priests, Ritter and servants, burghers uz of the rich and all gentlemen and poor people and Jews, as wit daz bystum zu Wirczburg is ... The centgreven and scoops are built, the umb and umb in the ... The judges also attacked and judged the judges and took them in their good graces and protected them ... Accordingly, clergy, Ritter, servants, citizens, farmers and Jews from imperial and country towns in the area of the Würzburg blast area could be summoned, captured and tried. Centgraves, that is, holders of the blood court jurisdiction, and lay judges were recruited from the farmers of the surrounding villages; in other cases, the judge was usually the responsible magistrate. The judges exercised high and low jurisdiction, levied fines and handed down corporal punishments. “King Armleder” was finally sentenced to death by this Würzburg central court in Kitzingen and put to death by the sword on November 14, 1336.",
       "guesses": [
-        {"date": "1336", "text": "The Zentgericht at Kitzingen may have sentenced König Armleder to death."},
-        {"date": "1336-11-14", "text": "König Armleder may have been executed by the sword at Kitzingen."}
+        {
+          "date": "1336",
+          "text": "The Zentgericht at Kitzingen may have sentenced König Armleder to death."
+        },
+        {
+          "date": "1336-11-14",
+          "text": "König Armleder may have been executed by the sword at Kitzingen."
+        }
       ]
     },
     {
@@ -680,14 +734,20 @@
       "german": "Hilfreiche Hinweise hatten schon die schon mehrfach herangezogenen Chronisten des 14. Jahrhunderts geliefert: Der Fortsetzer der Chronik des Erfurter Petersklosters:... tandem in civitatem Kyczingen deductus ibidem decollatus est: qui in suam villam, scilicet Ussenkeym, delatu s et in ecclesia sepultus innumeris damit miraculis (endlich ist er in die Stadt Kitzingen gebracht und dort enthauptet worden; er wurde dann in sein Dorf, nämlich Uissigheim überführt und in der Kirche bestattet, wo er zahllose Wunder wirkte). Und der Geschichtsschreiber Johannes von Viktring berichtet: ... miles Arnoldus ... capitur et capite spoliatur et in natali solo sepultus iuxta oppidum Kulsheim territorii Moguntini. Tumulus eius pro fidei merito pluribus miraculis didtur coruscasse (der Ritter Arnold ... wurde gefangen, seines Hauptes beraubt und in heimatlicher Erde beim Ort Külsheim im Mainzer Territorium bestattet. Sein Grabmal soll dank seines Glaubens durch viele Wunder berühmt geworden sein).",
       "english": "The chroniclers of the 14th century, who have already been consulted several times, had already provided helpful information: The continuation of the chronicle of the Erfurt St. Peter's Monastery:... tandem in civitatem Kyczingen deductus ibidem decollatus est: qui in suam villam, scilicet Ussenkeym, delatu s et in ecclesia sepultus innumeris so miraculis (finally he is in the city Kitzingen and beheaded there; he was then transferred to his village, namely Uissigheim, and buried in the church, where he performed countless miracles). And the historian Johannes von Viktring reports: ... miles Arnoldus ... capitur et capite spoliatur et in natali solo sepultus iuxta oppidum Kulsheim territorii Moguntini. Tumulus eius pro fidei merito pluribus miraculis didtur coruscasse (miles Arnold ... was captured, robbed of his head and buried in native soil near the town of Külsheim in the Mainz territory. His tomb is said to have become famous for many miracles thanks to his faith).",
       "guesses": [
-        "The Erfurt chronicle and Johannes von Viktring reported miracles at the grave of Arnold von Uissigheim."
+        {
+          "date": "1336",
+          "text": "The Erfurt chronicle and Johannes von Viktring reported miracles at the grave of Arnold von Uissigheim."
+        }
       ]
     },
     {
       "german": "Der heute in der Kirche von Uisssigheim aufrecht stehende Grabstein war ursprünglich - wie damals noch die meisten dieser Zeit — die liegende Deckplatte eines Grabes. Angedeutet wird dies noch durch ein viereckiges Kissen, auf dem das Haupt des überlebensgroß Dargestellten ruht. Die Größe der Sandsteinplatte beträgt nunmehr 225 x 86 cm; Beschädigungen an Kopf- und Fußseite lassen erkennen, dass sie vor der Zerstörung, seit der die Füße des Ritters fehlen, noch größer war. Die strengen, ja finsteren Züge des mächtigen, von dicht gelocktem Haar umrahmten Hauptes ziehen zuerst den Blick auf sich. Es ist ein jugendliches, bartloses Antlitz über einem betont breiten Hals, auf dem die Klinge eines Schwertes aufliegt. Gehalten wird dieses von einer kleineren, auf der Umrahmung sitzenden Gestalt, deren Oberkörper und Kopf verloren sind; das zur Befestigung dienende Zapfloch ist noch erkennbar. Der Körper des Liegenden wird von einem wadenlangen weiten Gewand umhüllt, welches mit vielen Parallelfalten und offen herabhängenden Armein gegeben ist. Die Scheide zur Rechten des Mannes ist leer, wohl, um anzudeuten, dass es sein eigenes Schwert war, das ihm den Tod brachte. Seine Hände sind nicht, wie man erwarten könnte, gefaltet; vielmehr übereinandergelegt mit erkennbaren Resten von Fesseln. Den Schutz der Unterarme bilden - Armleder.",
       "english": "The tombstone standing upright today in the Uissigheim church was originally - as was the case for most of this time - the lying cover plate of a grave. This is indicated by a square cushion on which the head of the larger-than-life figure rests. The size of the sandstone slab is now 225 x 86 cm; Damage to the head and foot side shows that it was even larger before the destruction, since the knight's feet are missing. The stern, even dark features of the powerful head, framed by thickly curly hair, are what first attract the eye. It is a youthful, beardless face above a decidedly broad neck on which rests the blade of a sword. This is held by a smaller figure sitting on the frame, whose upper body and head are lost; the tap hole used for fastening is still visible. The body of the person lying down is covered by a calf-length, wide robe with many parallel folds and open, hanging arms. The scabbard to the man's right is empty, probably to indicate that it was his own sword that killed him. His hands are not folded as one might expect; rather, they were laid one on top of the other with visible remains of shackles. The protection of the forearms is formed by arm leather.",
       "guesses": [
-        {"date": "1336-11-14", "text": "The empty scabbard on Arnold von Uissigheim’s grave monument may indicate that he was executed with his own sword."}
+        {
+          "date": "1336-11-14",
+          "text": "The empty scabbard on Arnold von Uissigheim’s grave monument may indicate that he was executed with his own sword."
+        }
       ]
     },
     {
@@ -739,7 +799,10 @@
       "german": "Erklärungsversuche fallen schwer: Die Herren von Uissigheim waren in ihrer Dorfkirche möglicherweise so etwas wie Eigenkirchen-herrn, die diese als ihre Familiengrablege ansahen und folglich ihre Interpretation über das Ende des Ritters Arnold zum Tragen bringen konnten. Sie haben für ihre Sichtweise auch einen größeren finanziellen Aufwand getrieben und bald nach den Ereignissen von 1336 einen nicht unbedeutenden Künstler für den monumentalen Stein gewonnen. Die Ikonographie der Grabplatte weist bewusst darauf hin, dass das Ende nicht ehrenrührig gesehen werden sollte: Mit seinem eigenen Schwert wird der Verurteilte enthauptet (gladio subiit). Und, worauf die Chronikberichte hinweisen: er stirbt nach getaner Beichte und Buße im Frieden mit der Kirche.",
       "english": "Attempts at an explanation are difficult: The Lords of Uissigheim were possibly something like lords of their own church in their village church, who saw it as their family burial place and were therefore able to bring their interpretation of the end of Arnold von Uissigheim, Ritter to bear. They also made greater financial investments for their point of view and, soon after the events of 1336, won a not insignificant artist for the monumental stone. The iconography of the grave slab consciously points out that the end should not be seen as dishonorable: the condemned man is beheaded with his own sword (gladio subiit). And, as the chronicle reports point out: after confession and penance, he dies in peace with the church.",
       "guesses": [
-        "The lords of Uissigheim may have regarded the church there as their family burial place and exercised rights over it."
+        {
+          "date": "1336",
+          "text": "The lords of Uissigheim may have regarded the church there as their family burial place and exercised rights over it."
+        }
       ]
     },
     {
