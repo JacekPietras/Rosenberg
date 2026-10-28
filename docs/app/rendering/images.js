@@ -2,14 +2,17 @@ import { escapeHtml } from './html.js';
 import { localImageName, imageRootForPath } from './image-paths.js';
 import { sealAnnotationMarkup } from './seal-markup.js';
 
-function cachedDriveThumbnail(url, location = window.location, size = 'w480') {
-  if (location.hostname.endsWith('github.io')) return '';
+function cachedDriveThumbnail(url, location = window.location, size = 'w480', scope = 'images') {
   let id = '';
   try {
     const parsed = new URL(url);
     id = parsed.hostname === 'drive.google.com' ? parsed.searchParams.get('id') || '' : parsed.pathname.match(/\/d\/([^/=]+)/)?.[1] || '';
   } catch {}
-  return /^[\w-]+$/.test(id) ? `/api/drive-thumbnail?id=${encodeURIComponent(id)}&size=${size}` : '';
+  if (!/^[\w-]+$/.test(id)) return '';
+  if (location.hostname.endsWith('github.io')) {
+    return size === 'original' ? `https://drive.google.com/uc?export=download&id=${encodeURIComponent(id)}` : '';
+  }
+  return `/api/drive-thumbnail?id=${encodeURIComponent(id)}&size=${size}&scope=${scope}`;
 }
 
 export function createImageRenderer({ location = window.location, state } = {}) {
@@ -38,17 +41,19 @@ export function createImageRenderer({ location = window.location, state } = {}) 
             : driveUrl.pathname.match(/\/d\/([^/=]+)/)?.[1];
           if (driveFileId && (driveUrl.pathname === '/thumbnail' || driveUrl.hostname.endsWith('googleusercontent.com'))) {
             fallback = fileName;
+            const cacheScope = context.path?.startsWith('data/documents/') ? 'documents' : 'images';
+            const cacheSize = context.thumbnail ? 'w480' : 'original';
             source = context.thumbnail
-              ? cachedDriveThumbnail(fileName, location) || `https://lh3.googleusercontent.com/d/${encodeURIComponent(driveFileId)}=w480`
-              : driveUrl.hostname.endsWith('googleusercontent.com') ? fileName : `https://lh3.googleusercontent.com/d/${encodeURIComponent(driveFileId)}=${driveUrl.searchParams.get('sz') || 'w1600'}`;
+              ? cachedDriveThumbnail(fileName, location, cacheSize, cacheScope) || `https://lh3.googleusercontent.com/d/${encodeURIComponent(driveFileId)}=w480`
+              : cachedDriveThumbnail(fileName, location, cacheSize, cacheScope)
+                || (location.hostname.endsWith('github.io') ? `https://drive.google.com/uc?export=download&id=${encodeURIComponent(driveFileId)}` : fileName);
           } else source = fileName;
           if (context.thumbnail && !fallback) fallback = fileName;
         } else {
         fallback = fileName; const localName = localImageName(fileName);
         if (!/\.(?:svg|png|jpe?g|gif|webp)$/i.test(localName)) return '';
-        if (context.path?.startsWith('data/documents/')) {
-          const cachePath = `data/documents/img-temp/${localName}`;
-          cachedSource = `../${cachePath.split('/').map((part) => encodeURIComponent(part)).join('/')}`;
+        if (context.path?.startsWith('data/documents/') && !location.hostname.endsWith('github.io')) {
+          cachedSource = `/api/document-image?url=${encodeURIComponent(fileName)}`;
         }
         const imagePath = `${imageRootForPath(context.path)}/img/${localName}`;
         const encoded = imagePath.split('/').map((part) => encodeURIComponent(part)).join('/');
@@ -64,9 +69,9 @@ export function createImageRenderer({ location = window.location, state } = {}) 
       const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals, escapeHtml, state?.personRecords);
       const sourceRegions = node && typeof node === 'object' ? node.regions : context.regions;
       const regions = context.showRegions === false ? '' : regionMarkup(sourceRegions);
-      const fullSource = context.thumbnail
-        ? cachedDriveThumbnail(fileName, location, 'original') || fallback || source
-        : fallback || source;
+      const fullSource = cachedSource || (context.thumbnail
+        ? cachedDriveThumbnail(fileName, location, 'original', context.path?.startsWith('data/documents/') ? 'documents' : 'images') || fallback || source
+        : fallback || source);
       if (cachedSource) {
         source = cachedSource;
       }

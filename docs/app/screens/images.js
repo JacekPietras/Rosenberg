@@ -1,4 +1,4 @@
-import { imageCardMarkup, imageDisplayTitle } from '../rendering/images.js?v=11';
+import { imageCardMarkup, imageDisplayTitle } from '../rendering/images.js?v=14';
 import { dateYear } from '../image-date-sort.js?v=2';
 import { imageLabels } from '../image-labels.js';
 

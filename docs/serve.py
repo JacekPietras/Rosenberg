@@ -105,14 +105,60 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(payload)
             return
+        if self.path.split("?", 1)[0] == "/api/document-image":
+            image_url = parse_qs(urlparse(self.path).query).get("url", [""])[0]
+            parsed_image_url = urlparse(image_url)
+            allowed_image_hosts = {
+                "api.digitale-sammlungen.de",
+                "digi.ub.uni-heidelberg.de",
+                "digitalisate-he.arcinsys.de",
+                "digitalisate.frankfurt.de",
+                "iiif.deutsche-digitale-bibliothek.de",
+                "www.historisches-unterfranken.uni-wuerzburg.de",
+                "www2.landesarchiv-bw.de",
+            }
+            if parsed_image_url.scheme not in ("http", "https") or parsed_image_url.hostname not in allowed_image_hosts:
+                self.send_json(400, {"error": "Unsupported document image source"})
+                return
+            query = parse_qs(parsed_image_url.query)
+            original_name = query.get("originalBilddatei", [""])[0]
+            image_name = Path(original_name or parsed_image_url.path).name
+            if not image_name.lower().endswith((".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg")):
+                self.send_json(400, {"error": "Could not determine the document image filename"})
+                return
+            cache_dir = ROOT / "data" / "documents" / "img-temp"
+            cache_dir.mkdir(parents=True, exist_ok=True)
+            cached = cache_dir / image_name
+            mime_file = cache_dir / f"{image_name}.mime"
+            try:
+                if not cached.exists() or cached.stat().st_size == 0:
+                    request = Request(image_url, headers={"User-Agent": "Rosenberg research image cache/1.0"})
+                    with urlopen(request, timeout=45) as response:
+                        image = response.read(80_000_001)
+                        mime_type = response.headers.get_content_type()
+                    if len(image) > 80_000_000 or not mime_type.startswith("image/"):
+                        raise ValueError("The archive did not return a supported image")
+                    cached.write_bytes(image)
+                    mime_file.write_text(mime_type, encoding="ascii")
+                image = cached.read_bytes()
+                mime_type = mime_file.read_text(encoding="ascii") if mime_file.exists() else "image/jpeg"
+                self.send_response(200)
+                self.send_header("Content-Type", mime_type)
+                self.send_header("Content-Length", str(len(image)))
+                self.end_headers()
+                self.wfile.write(image)
+            except Exception as error:
+                self.send_json(502, {"error": f"Could not cache document image: {error}"})
+            return
         if self.path.split("?", 1)[0] == "/api/drive-thumbnail":
             query = parse_qs(urlparse(self.path).query)
             file_id = query.get("id", [""])[0]
             size = query.get("size", ["w480"])[0]
-            if not re.fullmatch(r"[A-Za-z0-9_-]+", file_id) or size not in ("w320", "w480", "original"):
+            scope = query.get("scope", ["images"])[0]
+            if not re.fullmatch(r"[A-Za-z0-9_-]+", file_id) or size not in ("w320", "w480", "original") or scope not in ("images", "documents"):
                 self.send_json(400, {"error": "Invalid Drive thumbnail request"})
                 return
-            cache_dir = ROOT / "data" / "images" / "img-temp"
+            cache_dir = ROOT / "data" / scope / "img-temp"
             cache_dir.mkdir(parents=True, exist_ok=True)
             cached = cache_dir / f"drive-{file_id}-{size}.bin"
             mime_file = cache_dir / f"drive-{file_id}-{size}.mime"
