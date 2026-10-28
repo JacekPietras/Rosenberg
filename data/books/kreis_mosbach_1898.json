@@ -25,7 +25,7 @@
         }
       ],
       "guesses": [
-        "The author suggests that Angelthürn originally belonged to the lords of Boxberg."
+        "Angelthürn may originally have belonged to the Lords of Boxberg."
       ]
     },
     {
@@ -138,15 +138,15 @@
         }
       ],
       "guesses": [
-        "The author suggests that Guota von Bocchesberg was the wife of Konrad von Boxberg, who appears in the second half of the twelfth century.",
-        {"date": "1381-05-25", "text": "The author describes the four 1381 purchasers of Boxberg as brothers, without identifying a documentary basis for their relationship."},
+        "Guota von Bocchesberg may have been the wife of Konrad von Boxberg, who appears in the second half of the twelfth century.",
+        {"date": "1381-05-25", "text": "The four purchasers of Boxberg in 1381 may have been brothers; the book gives no documentary basis for this relationship."},
         {"type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["Ritter"], "of": "Eberhard von Rosenberg", "ofTitle": ["Ritter"], "date": "1381-05-25"},
         {"type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["Ritter"], "of": "Konrad von Rosenberg", "ofTitle": ["Edelknecht"], "date": "1381-05-25"},
         {"type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["Ritter"], "of": "Arnold von Rosenberg", "ofTitle": ["Edelknecht"], "date": "1381-05-25"},
         {"type": "sibling", "person": "Eberhard von Rosenberg", "personTitle": ["Ritter"], "of": "Konrad von Rosenberg", "ofTitle": ["Edelknecht"], "date": "1381-05-25"},
         {"type": "sibling", "person": "Eberhard von Rosenberg", "personTitle": ["Ritter"], "of": "Arnold von Rosenberg", "ofTitle": ["Edelknecht"], "date": "1381-05-25"},
         {"type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["Edelknecht"], "of": "Arnold von Rosenberg", "ofTitle": ["Edelknecht"], "date": "1381-05-25"},
-        "The author regards Rosenberg in Baden as the ancestral castle of the von Rosenberg family."
+        "Rosenberg in Baden is considered the ancestral castle of the von Rosenberg family."
       ]
     },
     {
@@ -242,7 +242,7 @@
       "english": "\"In the year of our Lord 1480, on Wednesday before Mid-Lent, I, Georg von Rosenberg, Ritter, laid the first stone at Boxberg on Monday after St. Michael's Day in the 14th year. Pray to God for us. This stone was laid here by Hans [von Rosenberg] of Encholtze, born my lawful wife, and she has faithfully commanded me to complete such construction as it stands here, and it was made as a watchtower into the land.\"",
       "guesses": [
         {"date": "1480", "text": "The damaged building inscription identifies Jörg von Rosenberg’s wife as Johann, born von Encholtze, but parts of her name and the description of her role in the construction are reconstructed."},
-        {"type": "spouse", "person": "Jörg von Rosenberg", "personTitle": ["Ritter"], "of": "Johann von Encholtze", "date": "1480"}
+        {"type": "spouse", "person": "Jörg von Rosenberg", "personTitle": ["Ritter"], "of": "Hans von Encholtze", "date": "1480"}
       ]
     },
     {
@@ -315,7 +315,7 @@
         }
       ],
       "guesses": [
-        {"date": "1418", "text": "The author reports that the Bronnbach liber mortuorum records Margaretha von Rosenberg on 19 May 1418; the inscription states Wednesday after Pentecost, so the precise date requires checking."}
+        {"date": "1418", "text": "The Bronnbach liber mortuorum reportedly records Margaretha von Rosenberg on 19 May 1418; the inscription instead states Wednesday after Pentecost, so the precise date requires checking."}
       ]
     },
     {
@@ -487,10 +487,10 @@
       ],
       "guesses": [
         "Bauer proposed that Uissigheim property passed through an heiress to Eberhard von Rosenberg, who died in 1314.",
-        {"date": "1336", "text": "The author says that the identity of the knight on the damaged Uissigheim gravestone is uncertain; Gamans transcribed it as Arnold von Uissigheim, who died in 1336."},
-        {"date": "1332", "text": "The author considers the identity of Eberhard on the Uissigheim gravestone uncertain, despite Gamans’s transcription naming him genannt von Ranneberg."},
-        {"date": "1343", "text": "The Erfurt chronicle attributes anti-Jewish killings in 1343 to a Ritter von Uissigheim, and relates his capture, execution and burial at Uissigheim; the book does not securely identify him with the knight on the damaged gravestone."},
-        "The author suggests that the so-called Tempelhaus at Uissigheim is a remnant of the old castle."
+        {"date": "1336", "text": "The identity of the knight on the damaged Uissigheim gravestone is uncertain; Gamans transcribed the name as Arnold von Uissigheim, who died in 1336."},
+        {"date": "1332", "text": "The identity of Eberhard on the Uissigheim gravestone is uncertain, despite Gamans’s transcription naming him genannt von Ranneberg."},
+        {"date": "1343", "text": "The Erfurt chronicle attributes anti-Jewish killings in 1343 to a Ritter von Uissigheim and relates his capture, execution, and burial at Uissigheim. His identity with the knight on the damaged gravestone is uncertain."},
+        "The so-called Tempelhaus at Uissigheim may be a remnant of the old castle."
       ]
     },
     {
@@ -562,7 +562,7 @@
         }
       ],
       "guesses": [
-        "Bauer proposed that the lords of Boxberg founded the Wölchingen church; the author instead considers the Johanniter more likely founders, based on their property in the area and the building’s form."
+        "The Johanniter may have founded the Wölchingen church, given their property in the area and the building’s form."
       ]
     }
   ]

@@ -143,7 +143,7 @@
         }
       ],
       "guesses": [
-        {"date": "1387", "text": "Stocker suggests that Arnold von Rosenberg sold his share of Boxberg in 1387 in order to acquire Schüpf."}
+        {"date": "1387", "text": "It is possible that Arnold von Rosenberg sold his share of Boxberg in 1387 in order to acquire Schüpf."}
       ]
     },
     {
@@ -155,7 +155,7 @@
       "german": "„Der Roſenbergiſche Namen iſt an verſchiedenen Orten und Ländern bekannt, und es hat verſchiedene Familien dieſes Namens gegeben, ſo in Schleſien, Böhmen, Kärnten, im Baireuthiſchen, welche ihr Geſchlecht von den römiſchen Urſinern herleiten; die ſich ohne Zweifel gratulirt haben würden, wenn ſie ſich mit unſeren fränkiſchen Roſenbergern von einem Stamm hätten deriviren und ein Recht auf die Succeſſion formiren können. Das Stammhaus unſerer Roſenberger iſt das alte Schloß Roſen⸗berg am Eingang des Odenwaldes.“ (Leutwein.)",
       "english": "“The name of Rosenberg is known in various places and lands, and there have been several families of that name, in Silesia, Bohemia, Carinthia, and the Bayreuth region, who traced their lineage to the Roman Ursini. They would doubtless have congratulated themselves had they been able to derive their descent from the same stock as our Franconian Rosenbergs and establish a right of succession. The ancestral seat of our Rosenbergs is the old castle of Rosenberg at the entrance to the Odenwald.” (Leutwein.)",
       "guesses": [
-        "Leutwein identifies the old Schloss Rosenberg as the ancestral seat of the Franconian von Rosenberg family; the passage gives no documentary basis for this identification."
+        "The old Schloss Rosenberg may have been the ancestral seat of the Franconian von Rosenberg family; no documentary basis is given."
       ]
     },
     {
@@ -166,8 +166,8 @@
       "german": "Anno 942 iſt Heinrich von Roſenberg bei dem 2. Turnier zu Roſenberg, und Anna von Roſenberg, Rudolfs von Thüngen nachgelaſſene Wittwe, wird dabei erwähnt.",
       "english": "In 942, Heinrich von Rosenberg took part in the second tournament at Rosenberg; Anna von Rosenberg, the widow of Rudolf von Thüngen, is also mentioned there.",
       "guesses": [
-        {"date": "0942", "text": "Stocker reports a tournament-book claim that Heinrich von Rosenberg attended a tournament at Rosenberg."},
-        {"date": "0942", "text": "Stocker reports a tournament-book claim that Anna von Rosenberg, widow of Rudolf von Thüngen, was mentioned at the tournament at Rosenberg."},
+        {"date": "0942", "text": "A tournament book claims that Heinrich von Rosenberg attended a tournament at Rosenberg."},
+        {"date": "0942", "text": "A tournament book claims that Anna von Rosenberg, widow of Rudolf von Thüngen, was mentioned at the tournament at Rosenberg."},
         {"type": "spouse", "person": "Anna von Rosenberg", "of": "Rudolf von Thüngen", "date": "0942"}
       ]
     },
@@ -175,24 +175,24 @@
       "german": "996 war Richard v. R. auf dem 5. Turnier zu Braunſchweig, und Wiltraut v. R., Albans von Frundsperg Wittwe, 1019 beim 6. in Trier. — 1032. 1055. 1059 ſoll Heinrich, 1080. 1100 Ernſt, 1136. 1139. 1158 Wilhelm gelebt haben und 1165 Wilhelm und Hieronymus bei dem Turnier in Zürich geweſen ſein. 1179 iſt Ernſt bei dem Turnier zu Köln, 1235 Georg bei dem zu Würzburg geweſen. 1271. 1280. 1290 lebte Hans v. R., welcher drei Söhne hatte: Eckart, Eberhard und Konrad.",
       "english": "In 996, Richard von Rosenberg attended the fifth tournament at Brunswick, and in 1019 Wiltraut von Rosenberg, widow of Alban von Frundsberg, attended the sixth at Trier. Heinrich is said to have lived in 1032, 1055, and 1059; Ernst in 1080 and 1100; and Wilhelm in 1136, 1139, and 1158. Wilhelm and Hieronymus were said to have been at the tournament in Zurich in 1165. Ernst attended the tournament in Cologne in 1179, and Georg the one at Würzburg in 1235. Hans von Rosenberg lived in 1271, 1280, and 1290 and had three sons: Eckart, Eberhard, and Konrad.",
       "guesses": [
-        {"date": "0996", "text": "Stocker reports a tournament-book claim that Richard von Rosenberg attended a tournament at Braunschweig."},
-        {"date": "1019", "text": "Stocker reports a tournament-book claim that Wiltraut von Rosenberg, widow of Alban von Frundsperg, attended a tournament at Trier."},
+        {"date": "0996", "text": "A tournament book claims that Richard von Rosenberg attended a tournament at Braunschweig."},
+        {"date": "1019", "text": "A tournament book claims that Wiltraut von Rosenberg, widow of Alban von Frundsperg, attended a tournament at Trier."},
         {"type": "spouse", "person": "Wiltraut von Rosenberg", "of": "Alban von Frundsperg", "date": "1019"},
-        {"date": "1032", "text": "Stocker reports a tournament-book claim that Heinrich von Rosenberg was alive."},
-        {"date": "1055", "text": "Stocker reports a tournament-book claim that Heinrich von Rosenberg was alive."},
-        {"date": "1059", "text": "Stocker reports a tournament-book claim that Heinrich von Rosenberg was alive."},
-        {"date": "1080", "text": "Stocker reports a tournament-book claim that Ernst von Rosenberg was alive."},
-        {"date": "1100", "text": "Stocker reports a tournament-book claim that Ernst von Rosenberg was alive."},
-        {"date": "1136", "text": "Stocker reports a tournament-book claim that Wilhelm von Rosenberg was alive."},
-        {"date": "1139", "text": "Stocker reports a tournament-book claim that Wilhelm von Rosenberg was alive."},
-        {"date": "1158", "text": "Stocker reports a tournament-book claim that Wilhelm von Rosenberg was alive."},
-        {"date": "1271", "text": "Stocker reports a tournament-book claim that Hans von Rosenberg was alive."},
-        {"date": "1280", "text": "Stocker reports a tournament-book claim that Hans von Rosenberg was alive."},
-        {"date": "1290", "text": "Stocker reports a tournament-book claim that Hans von Rosenberg was alive."},
-        {"date": "1165", "text": "Stocker reports a tournament-book claim that Wilhelm von Rosenberg and Hieronymus von Rosenberg attended a tournament at Zürich."},
-        {"date": "1179", "text": "Stocker reports a tournament-book claim that Ernst von Rosenberg attended a tournament at Köln."},
-        {"date": "1235", "text": "Stocker reports a tournament-book claim that Georg von Rosenberg attended a tournament at Würzburg."},
-        "Stocker reports the tournament-book genealogy that Hans von Rosenberg had three sons, Eckhart, Eberhard and Konrad; the passage does not date the relationships."
+        {"date": "1032", "text": "A tournament book claims that Heinrich von Rosenberg was alive."},
+        {"date": "1055", "text": "A tournament book claims that Heinrich von Rosenberg was alive."},
+        {"date": "1059", "text": "A tournament book claims that Heinrich von Rosenberg was alive."},
+        {"date": "1080", "text": "A tournament book claims that Ernst von Rosenberg was alive."},
+        {"date": "1100", "text": "A tournament book claims that Ernst von Rosenberg was alive."},
+        {"date": "1136", "text": "A tournament book claims that Wilhelm von Rosenberg was alive."},
+        {"date": "1139", "text": "A tournament book claims that Wilhelm von Rosenberg was alive."},
+        {"date": "1158", "text": "A tournament book claims that Wilhelm von Rosenberg was alive."},
+        {"date": "1271", "text": "A tournament book claims that Hans von Rosenberg was alive."},
+        {"date": "1280", "text": "A tournament book claims that Hans von Rosenberg was alive."},
+        {"date": "1290", "text": "A tournament book claims that Hans von Rosenberg was alive."},
+        {"date": "1165", "text": "A tournament book claims that Wilhelm von Rosenberg and Hieronymus von Rosenberg attended a tournament at Zürich."},
+        {"date": "1179", "text": "A tournament book claims that Ernst von Rosenberg attended a tournament at Köln."},
+        {"date": "1235", "text": "A tournament book claims that Georg von Rosenberg attended a tournament at Würzburg."},
+        "A tournament-book genealogy says that Hans von Rosenberg had three sons, Eckhart, Eberhard and Konrad; the passage does not date the relationships."
       ]
     },
     {
@@ -1015,7 +1015,7 @@
       "guesses": [
         {
           "date": "1401",
-          "text": "Stocker reports that Württembergisch Franken questions 1401 as the date of Eberhard von Rosenberg der Junge’s obligation to his brother Arnold."
+          "text": "The date of Eberhard von Rosenberg der Jüngere’s obligation to his brother Arnold is uncertain; 1410 is suggested instead of 1401."
         },
         {
           "date": "1410",
@@ -1190,7 +1190,7 @@
         }
       ],
       "guesses": [
-        "Stocker places the exchange by Arnold von Rosenberg der Junge and Christine von Hentzesheim after the 1408 permission; the exchange date is not specified."
+        "Arnold von Rosenberg der Jüngere and Christine von Hentschesheim made the exchange after the 1408 permission; its date is unknown."
       ]
     },
     {
@@ -1221,7 +1221,7 @@
         }
       ],
       "guesses": [
-        "Stocker suggests that the mother of Eberhard von Rosenberg and his brother Eberhard was Else von Erligheim, based on their tombs’ maternal arms."
+        "It is possible that the mother of Eberhard von Rosenberg and his brother Eberhard was Else von Erligheim, based on their tombs’ maternal arms."
       ]
     },
     {
@@ -1436,7 +1436,7 @@
         },
         {
           "date": "1430",
-          "text": "Stocker reports that Hieronymus von Rosenberg was said to have been a Domherr at Mainz and Würzburg."
+          "text": "Hieronymus von Rosenberg may have been a Domherr at Mainz and Würzburg."
         }
       ]
     },
@@ -1979,7 +1979,7 @@
         }
       ],
       "guesses": [
-        "Stocker states that Arnold von Rosenberg married Anna von Dottenheim, daughter of Konrad von Dottenheim, and left four sons, Hans Thomas, Hans Melchior, Hans Ulrich and Hans Kaspar; the passage does not date those relationships."
+        "Arnold von Rosenberg may have been married to Anna von Dottenheim, daughter of Konrad von Dottenheim, and had four sons: Hans Thomas, Hans Melchior, Hans Ulrich, and Hans Kaspar; the dates of these relationships are unknown."
       ]
     },
     {
@@ -2141,7 +2141,7 @@
         }
       ],
       "guesses": [
-        "Stocker states that Anna von Rosenberg married Caspar von Stetten and subsequently Wolf von Stetten, but does not date either marriage or their relationship attestations."
+        "Anna von Rosenberg may have been married first to Caspar von Stetten and then to Wolf von Stetten; the marriage dates are unknown."
       ]
     },
     {
@@ -2174,7 +2174,7 @@
         }
       ],
       "guesses": [
-        {"date": "1555-08-17", "text": "The account calls Albrecht von Rosenberg the son of Eberhard but later calls Kunz, Eberhard’s brother, Albrecht’s father; this wording needs source verification."},
+        {"date": "1555-08-17", "text": "The account gives conflicting fathers for Albrecht von Rosenberg: Eberhard and Kunz, Eberhard’s brother."},
         {"type": "parent", "person": "Eberhard von Rosenberg", "of": "Albrecht von Rosenberg", "date": "1555-08-17"},
         {"type": "parent", "person": "Kunz von Rosenberg", "of": "Albrecht von Rosenberg", "date": "1555-08-17"}
       ]
