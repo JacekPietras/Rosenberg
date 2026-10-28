@@ -109,7 +109,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             query = parse_qs(urlparse(self.path).query)
             file_id = query.get("id", [""])[0]
             size = query.get("size", ["w480"])[0]
-            if not re.fullmatch(r"[A-Za-z0-9_-]+", file_id) or size not in ("w320", "w480"):
+            if not re.fullmatch(r"[A-Za-z0-9_-]+", file_id) or size not in ("w320", "w480", "original"):
                 self.send_json(400, {"error": "Invalid Drive thumbnail request"})
                 return
             cache_dir = ROOT / "data" / "images" / "img-temp"
@@ -118,14 +118,20 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             mime_file = cache_dir / f"drive-{file_id}-{size}.mime"
             try:
                 if not cached.exists() or cached.stat().st_size == 0:
+                    source_url = (
+                        f"https://drive.google.com/uc?export=download&id={file_id}"
+                        if size == "original"
+                        else f"https://drive.google.com/thumbnail?id={file_id}&sz={size}"
+                    )
                     request = Request(
-                        f"https://drive.google.com/thumbnail?id={file_id}&sz={size}",
+                        source_url,
                         headers={"User-Agent": "Mozilla/5.0"},
                     )
                     with urlopen(request, timeout=30) as response:
-                        image = response.read(12_000_001)
+                        max_bytes = 80_000_000 if size == "original" else 12_000_000
+                        image = response.read(max_bytes + 1)
                         mime_type = response.headers.get_content_type()
-                    if len(image) > 12_000_000 or not mime_type.startswith("image/"):
+                    if len(image) > max_bytes or not mime_type.startswith("image/"):
                         raise ValueError("Drive did not return a supported image")
                     cached.write_bytes(image)
                     mime_file.write_text(mime_type, encoding="ascii")

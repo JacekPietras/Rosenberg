@@ -1,4 +1,4 @@
-import { imageCardMarkup } from '../rendering/images.js?v=8';
+import { imageCardMarkup } from '../rendering/images.js?v=10';
 import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rendering/facts.js?v=5';
 import { renderFactsView } from '../components/facts_view.js?v=3';
 import { findPlaceByName } from '../data/entities.js?v=87';

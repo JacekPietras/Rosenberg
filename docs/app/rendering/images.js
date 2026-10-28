@@ -64,7 +64,9 @@ export function createImageRenderer({ location = window.location, state } = {}) 
       const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals, escapeHtml, state?.personRecords);
       const sourceRegions = node && typeof node === 'object' ? node.regions : context.regions;
       const regions = context.showRegions === false ? '' : regionMarkup(sourceRegions);
-      const fullSource = fallback || source;
+      const fullSource = context.thumbnail
+        ? cachedDriveThumbnail(fileName, location, 'original') || fallback || source
+        : fallback || source;
       if (cachedSource) {
         source = cachedSource;
       }
