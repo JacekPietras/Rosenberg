@@ -2888,6 +2888,42 @@
       "description": "The viewer identifies this page as fol. 6v. One shield caption appears to read ‘Die von Rosenmer’; the reading and identification are uncertain. HAAB dates the manuscript broadly to the 15th/16th century.",
       "folio": "6v",
       "url": "https://drive.google.com/thumbnail?id=19EDjE4eefdgxMuUYr8n-iszLCzlFQYGa&sz=w1600"
+    },
+    {
+      "label": "armorial",
+      "title": "Berliner Wappenbuch, Berlin, Staatsbibliothek zu Berlin, Ms. geneal. fol. 271",
+      "date": "1460",
+      "folio": "111v",
+      "source": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN859360040&view=overview-toc&PHYSID=PHYS_0226&DMDID=DMDLOG_0002 — https://content.staatsbibliothek-berlin.de/dc/859360040-0226/full/max/0/default.jpg — https://drive.google.com/file/d/1gpYvN72ZX8A8_peSJjpao4ggS6JeGZh8/view",
+      "description": "The page shows arms captioned ‘von Thüngen’. The SBB catalog dates the manuscript to 1460.",
+      "url": "https://drive.google.com/thumbnail?id=1gpYvN72ZX8A8_peSJjpao4ggS6JeGZh8&sz=w1600",
+      "regions": [
+        {
+          "x": 0.585,
+          "y": 0.29,
+          "width": 0.28,
+          "height": 0.23,
+          "name": "Thüngen"
+        }
+      ]
+    },
+    {
+      "label": "armorial",
+      "title": "Wappenbuch (sogen. Pfälzer Wappenbuch), Berlin, Staatsbibliothek zu Berlin, Hdschr. 403",
+      "date": "1450-1500",
+      "folio": "30r",
+      "source": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1783245662&view=overview-toc&PHYSID=PHYS_0063&DMDID=DMDLOG_0001 — https://content.staatsbibliothek-berlin.de/dc/1783245662-0063/full/max/0/default.jpg — https://drive.google.com/file/d/17VUl717F6_G9RQquiUU6Vm-zMsEyq13w/view",
+      "description": "Folio 30r labels the arms ‘von Rosenberg’. The SBB catalog dates the manuscript to the second half of the 15th century, approximately 1460.",
+      "url": "https://drive.google.com/thumbnail?id=17VUl717F6_G9RQquiUU6Vm-zMsEyq13w&sz=w1600",
+      "regions": [
+        {
+          "x": 0.15,
+          "y": 0.3,
+          "width": 0.41,
+          "height": 0.37,
+          "name": "Rosenberg"
+        }
+      ]
     }
   ]
 }
