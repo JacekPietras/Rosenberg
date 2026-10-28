@@ -2871,23 +2871,59 @@
       "date": "1473",
       "folio": "246",
       "source": "https://viewer.onb.ac.at/131AA946 — https://drive.google.com/file/d/1QwloaucdX2atUNKG2vrsgBpWsubIMEy0/view",
-      "url": "https://drive.google.com/thumbnail?id=1QwloaucdX2atUNKG2vrsgBpWsubIMEy0&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1QwloaucdX2atUNKG2vrsgBpWsubIMEy0&sz=w1600",
+      "regions": [
+        {
+          "x": 0.6974,
+          "y": 0.6289,
+          "width": 0.2577,
+          "height": 0.2196,
+          "name": "Rosenberg"
+        },
+        {
+          "x": 0.4729,
+          "y": 0.6839,
+          "width": 0.2411,
+          "height": 0.2688,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "label": "armorial",
       "title": "Wappenbuch, Weimar, Herzogin Anna Amalia Bibliothek, Fol. 221",
+      "date": "1400-1600",
       "source": "https://haab-digital.klassik-stiftung.de/viewer/!image/3416264665/13/ — https://drive.google.com/file/d/1SzEfz8jHA4PPHBuIcjL-mmAXJjGfCVw6/view — Handschriften in Weimar, shelfmark overview: https://archivalia.hypotheses.org/files/2022/12/pensel_signaturenuebersicht.pdf",
       "description": "The page is labeled ‘Die von Rosenberg’. HAAB and the Weimar manuscript shelfmark overview both date Fol. 221 only to the 15th/16th century; no narrower date is supported by the consulted catalog records.",
       "folio": "1r",
-      "url": "https://drive.google.com/thumbnail?id=1SzEfz8jHA4PPHBuIcjL-mmAXJjGfCVw6&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1SzEfz8jHA4PPHBuIcjL-mmAXJjGfCVw6&sz=w1600",
+      "regions": [
+        {
+          "x": 0.3065,
+          "y": 0.2693,
+          "width": 0.2252,
+          "height": 0.2219,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
       "title": "Wappenbuch, Weimar, Herzogin Anna Amalia Bibliothek, Fol. 221",
+      "date": "1400-1600",
       "source": "https://haab-digital.klassik-stiftung.de/viewer/!image/3416264665/24/ — https://drive.google.com/file/d/19EDjE4eefdgxMuUYr8n-iszLCzlFQYGa/view",
       "description": "The viewer identifies this page as fol. 6v. One shield caption appears to read ‘Die von Rosenmer’; the reading and identification are uncertain. HAAB dates the manuscript broadly to the 15th/16th century.",
       "folio": "6v",
-      "url": "https://drive.google.com/thumbnail?id=19EDjE4eefdgxMuUYr8n-iszLCzlFQYGa&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=19EDjE4eefdgxMuUYr8n-iszLCzlFQYGa&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2432,
+          "y": 0.7117,
+          "width": 0.2468,
+          "height": 0.2852,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -2917,10 +2953,10 @@
       "url": "https://drive.google.com/thumbnail?id=17VUl717F6_G9RQquiUU6Vm-zMsEyq13w&sz=w1600",
       "regions": [
         {
-          "x": 0.15,
-          "y": 0.3,
-          "width": 0.41,
-          "height": 0.37,
+          "x": 0.1229,
+          "y": 0.2451,
+          "width": 0.4423,
+          "height": 0.4452,
           "name": "Rosenberg"
         }
       ]
@@ -2932,7 +2968,16 @@
       "folio": "67r",
       "source": "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1783245662&view=overview-toc&PHYSID=PHYS_0137&DMDID=DMDLOG_0001 — https://content.staatsbibliothek-berlin.de/dc/1783245662-0137/full/max/0/default.jpg — https://drive.google.com/file/d/1JI71vtso1_mfMiKJVaffCaTvphzb2EXF/view",
       "description": "Folio 67r shows heraldic figures beneath a heading referring to Württemberg. No Rosenberg label is visible on this leaf.",
-      "url": "https://drive.google.com/thumbnail?id=1JI71vtso1_mfMiKJVaffCaTvphzb2EXF&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1JI71vtso1_mfMiKJVaffCaTvphzb2EXF&sz=w1600",
+      "regions": [
+        {
+          "x": 0.514,
+          "y": 0.1713,
+          "width": 0.4614,
+          "height": 0.493,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -2941,7 +2986,16 @@
       "folio": "69r",
       "source": "https://www.digitale-sammlungen.de/de/view/bsb00001649?page=143 — https://api.digitale-sammlungen.de/iiif/image/v3/bsb00001649_00143/full/max/0/default.jpg — https://drive.google.com/file/d/1pv-Pw2PBOiRy9gRxS53doyHIMG6NZQ2Y/view",
       "description": "The MDZ catalog dates the manuscript from the end of the 15th century to 1540.",
-      "url": "https://drive.google.com/thumbnail?id=1pv-Pw2PBOiRy9gRxS53doyHIMG6NZQ2Y&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1pv-Pw2PBOiRy9gRxS53doyHIMG6NZQ2Y&sz=w1600",
+      "regions": [
+        {
+          "x": 0.3911,
+          "y": 0.5091,
+          "width": 0.4937,
+          "height": 0.4649,
+          "name": "Thüngen"
+        }
+      ]
     }
   ]
 }
