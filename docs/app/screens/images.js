@@ -1,4 +1,4 @@
-import { imageCardMarkup, imageDisplayTitle } from '../rendering/images.js?v=7';
+import { imageCardMarkup, imageDisplayTitle } from '../rendering/images.js?v=9';
 import { dateYear } from '../image-date-sort.js?v=2';
 import { imageLabels } from '../image-labels.js';
 
@@ -79,7 +79,7 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, titleMarkup 
         return imageCardMarkup(entry, { focus, controls: coverPicker, label, place: placeMarkup, fallbackTitle: document.title, titleMarkup });
       }
       const media = entry.id ? undefined : entry.url
-        ? imageMarkup(entry.url, [], { path, index, title: displayTitle, description: entry.description, focus: previewFocus, regions: previewRegions, showRegions: false })
+        ? imageMarkup(entry.url, [], { path, index, title: displayTitle, description: entry.description, focus: previewFocus, regions: previewRegions, showRegions: false, thumbnail: true })
         : undefined;
       return imageCardMarkup(entry, { media, label, place: placeMarkup, fallbackTitle: document.title, titleMarkup });
     }).join('');

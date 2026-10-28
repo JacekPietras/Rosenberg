@@ -2,6 +2,16 @@ import { escapeHtml } from './html.js';
 import { localImageName, imageRootForPath } from './image-paths.js';
 import { sealAnnotationMarkup } from './seal-markup.js';
 
+function cachedDriveThumbnail(url, location = window.location, size = 'w480') {
+  if (location.hostname.endsWith('github.io')) return '';
+  let id = '';
+  try {
+    const parsed = new URL(url);
+    id = parsed.hostname === 'drive.google.com' ? parsed.searchParams.get('id') || '' : parsed.pathname.match(/\/d\/([^/=]+)/)?.[1] || '';
+  } catch {}
+  return /^[\w-]+$/.test(id) ? `/api/drive-thumbnail?id=${encodeURIComponent(id)}&size=${size}` : '';
+}
+
 export function createImageRenderer({ location = window.location, state } = {}) {
   const regionMarkup = (regions = []) => regions.map((region) => {
     const { x, y, width, height } = region || {};
@@ -18,19 +28,28 @@ export function createImageRenderer({ location = window.location, state } = {}) 
       const seals = typeof node === 'object' && node !== null ? node.seals : imageIndex === 0 ? legacySeals : [];
       const fileName = String(file || '').trim(); if (!fileName) return '';
       const alt = String(node && typeof node === 'object' ? node.name || context.title || fileName : context.title || fileName);
-      let source; let fallback = '';
+      let source; let fallback = ''; let cachedSource = '';
       if (/^https?:\/\//i.test(fileName)) {
         const driveUrl = new URL(fileName);
-        if (driveUrl.hostname === 'drive.google.com') {
+        if (driveUrl.hostname === 'drive.google.com' || driveUrl.hostname.endsWith('googleusercontent.com')) {
           if (!/\.(?:svg|png|jpe?g|gif|webp)$/i.test(alt) && !context.title) return '';
-          const driveFileId = driveUrl.searchParams.get('id');
-          if (driveUrl.pathname === '/thumbnail' && driveFileId) {
+          const driveFileId = driveUrl.hostname === 'drive.google.com'
+            ? driveUrl.searchParams.get('id')
+            : driveUrl.pathname.match(/\/d\/([^/=]+)/)?.[1];
+          if (driveFileId && (driveUrl.pathname === '/thumbnail' || driveUrl.hostname.endsWith('googleusercontent.com'))) {
             fallback = fileName;
-            source = `https://lh3.googleusercontent.com/d/${encodeURIComponent(driveFileId)}=${driveUrl.searchParams.get('sz') || 'w1600'}`;
+            source = context.thumbnail
+              ? cachedDriveThumbnail(fileName, location) || `https://lh3.googleusercontent.com/d/${encodeURIComponent(driveFileId)}=w480`
+              : driveUrl.hostname.endsWith('googleusercontent.com') ? fileName : `https://lh3.googleusercontent.com/d/${encodeURIComponent(driveFileId)}=${driveUrl.searchParams.get('sz') || 'w1600'}`;
           } else source = fileName;
+          if (context.thumbnail && !fallback) fallback = fileName;
         } else {
         fallback = fileName; const localName = localImageName(fileName);
         if (!/\.(?:svg|png|jpe?g|gif|webp)$/i.test(localName)) return '';
+        if (context.path?.startsWith('data/documents/')) {
+          const cachePath = `data/documents/img-temp/${localName}`;
+          cachedSource = `../${cachePath.split('/').map((part) => encodeURIComponent(part)).join('/')}`;
+        }
         const imagePath = `${imageRootForPath(context.path)}/img/${localName}`;
         const encoded = imagePath.split('/').map((part) => encodeURIComponent(part)).join('/');
         source = location.hostname.endsWith('github.io') ? `https://raw.githubusercontent.com/${owner}/${repository}/main/${encoded}` : `../${encoded}`;
@@ -45,7 +64,11 @@ export function createImageRenderer({ location = window.location, state } = {}) 
       const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals, escapeHtml, state?.personRecords);
       const sourceRegions = node && typeof node === 'object' ? node.regions : context.regions;
       const regions = context.showRegions === false ? '' : regionMarkup(sourceRegions);
-      const fallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
+      const fullSource = fallback || source;
+      if (cachedSource) {
+        source = cachedSource;
+      }
+      const finalFallbackAttribute = fallback ? ` data-fallback-src="${escapeHtml(fallback)}"` : '';
       const descriptionText = node && typeof node === 'object' ? node.description : context.description;
       const descriptionAttribute = descriptionText ? ` data-image-description="${escapeHtml(descriptionText)}"` : '';
       const focus = (node && typeof node === 'object' ? node.cropFocus : context.focus)
@@ -53,9 +76,9 @@ export function createImageRenderer({ location = window.location, state } = {}) 
       const focusAttributes = focus && [focus.x, focus.y, focus.width, focus.height].every((value) => Number.isFinite(Number(value)))
         ? ` data-focus-x="${Number(focus.x)}" data-focus-y="${Number(focus.y)}" data-focus-width="${Number(focus.width)}" data-focus-height="${Number(focus.height)}"`
         : '';
-      const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(alt)}" loading="lazy" referrerpolicy="no-referrer"${fallbackAttribute}${focusAttributes}>`;
+      const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(alt)}" loading="lazy" referrerpolicy="no-referrer"${finalFallbackAttribute}${focusAttributes}>`;
       const edit = context.path && context.index !== null && context.index !== undefined ? ` data-document-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${context.imageIndex ?? imageIndex}"` : '';
-      const link = `<a class="image-link" href="${escapeHtml(source)}" aria-label="Open image" data-image-src="${escapeHtml(source)}" data-image-fallback="${escapeHtml(fallback)}"${descriptionAttribute}${edit}>${image}</a>`;
+      const link = `<a class="image-link" href="${escapeHtml(fullSource)}" aria-label="Open image" data-image-src="${escapeHtml(fullSource)}" data-image-fallback="${escapeHtml(fallback)}"${descriptionAttribute}${edit}>${image}</a>`;
       const content = context.crop ? `<span class="seal-crop is-loading" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}" data-seal-width="${context.crop.width ?? 0}" data-seal-widening-rotation="${context.crop.wideningRotation || 0}" data-seal-rotation="${context.crop.rotation || 0}">${link}</span>` : annotations || regions ? `<span class="annotated-image">${link}${annotations}${regions}</span>` : link;
       return `<figure class="entry-image">${content}</figure>`;
     }).filter(Boolean).join('');
@@ -85,7 +108,11 @@ export function imageCardMarkup(entry, { media, focus, controls = '', label = ''
       const focusAttributes = focus && [focus.x, focus.y, focus.width, focus.height].every((value) => Number.isFinite(Number(value)))
         ? ` data-focus-x="${Number(focus.x)}" data-focus-y="${Number(focus.y)}" data-focus-width="${Number(focus.width)}" data-focus-height="${Number(focus.height)}"`
         : '';
-      media = cover ? `<a class="model-collection-preview-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(title)} collection"><img class="model-collection-preview" src="${escapeHtml(cover)}" alt="${escapeHtml(title)}" referrerpolicy="no-referrer"${focusAttributes}></a>` : '';
+      if (cover) {
+        const thumbnail = cachedDriveThumbnail(cover);
+        const fallback = /^https?:\/\//i.test(cover) ? ` data-fallback-src="${escapeHtml(cover)}"` : '';
+        media = `<a class="model-collection-preview-link" href="${escapeHtml(entry.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHtml(title)} collection"><img class="model-collection-preview" src="${escapeHtml(thumbnail || cover)}" alt="${escapeHtml(title)}" referrerpolicy="no-referrer"${thumbnail ? fallback : ''}${focusAttributes}></a>`;
+      } else media = '';
     } else if (entry.id) {
       media = `<div class="model-frame"><iframe title="${escapeHtml(title)}" src="https://sketchfab.com/models/${encodeURIComponent(entry.id)}/embed?ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen loading="lazy"></iframe></div>`;
     } else if (entry.url) {

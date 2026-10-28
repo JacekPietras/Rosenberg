@@ -105,6 +105,41 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(payload)
             return
+        if self.path.split("?", 1)[0] == "/api/drive-thumbnail":
+            query = parse_qs(urlparse(self.path).query)
+            file_id = query.get("id", [""])[0]
+            size = query.get("size", ["w480"])[0]
+            if not re.fullmatch(r"[A-Za-z0-9_-]+", file_id) or size not in ("w320", "w480"):
+                self.send_json(400, {"error": "Invalid Drive thumbnail request"})
+                return
+            cache_dir = ROOT / "data" / "images" / "img-temp"
+            cache_dir.mkdir(parents=True, exist_ok=True)
+            cached = cache_dir / f"drive-{file_id}-{size}.bin"
+            mime_file = cache_dir / f"drive-{file_id}-{size}.mime"
+            try:
+                if not cached.exists() or cached.stat().st_size == 0:
+                    request = Request(
+                        f"https://drive.google.com/thumbnail?id={file_id}&sz={size}",
+                        headers={"User-Agent": "Mozilla/5.0"},
+                    )
+                    with urlopen(request, timeout=30) as response:
+                        image = response.read(12_000_001)
+                        mime_type = response.headers.get_content_type()
+                    if len(image) > 12_000_000 or not mime_type.startswith("image/"):
+                        raise ValueError("Drive did not return a supported image")
+                    cached.write_bytes(image)
+                    mime_file.write_text(mime_type, encoding="ascii")
+                image = cached.read_bytes()
+                mime_type = mime_file.read_text(encoding="ascii") if mime_file.exists() else "image/jpeg"
+                self.send_response(200)
+                self.send_header("Content-Type", mime_type)
+                self.send_header("Content-Length", str(len(image)))
+                self.send_header("Cache-Control", "public, max-age=31536000, immutable")
+                self.end_headers()
+                self.wfile.write(image)
+            except Exception as error:
+                self.send_json(502, {"error": f"Could not cache Drive thumbnail: {error}"})
+            return
         if self.path.split("?", 1)[0] == "/api/drive-folder":
             folder_url = parse_qs(urlparse(self.path).query).get("url", [""])[0]
             parsed = urlparse(folder_url)
