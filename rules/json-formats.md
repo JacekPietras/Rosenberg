@@ -9,7 +9,7 @@ existing structure. Edit JSON directly; do not use a separate facts database.
 Keep every fact in its existing source entry's `facts` array, alongside the
 original text, translation, and citations. Arrays may contain typed objects,
 legacy strings, and legacy `{date, text}` objects during migration. Use typed
-objects for supported relationships and title attestations; other relevant
+objects for supported relationships, title attestations, and deaths; other relevant
 facts may remain prose. A typed object has no duplicate `text`, `id`,
 `evidence`, or `assessment` field. Its source is the containing entry.
 
@@ -22,6 +22,7 @@ The supported typed facts are:
 | `spouse` | `person`, `of` | `personTitle`, `ofTitle`, `date` | `person` is a spouse of `of`, including widowhood. |
 | `kin` | `person`, `of`, `term` | `personTitle`, `ofTitle`, `date` | Source-stated kinship without a more specific supported type. |
 | `title` | `person`, `personTitle` | `date` | Source-stated designation of `person`. |
+| `death` | `person`, exactly one of `diedOn` or `diedBefore` | `personTitle`, `date` | A person's death and its date or exclusive upper bound. |
 
 Reject other types and fields. In particular, do not add `father`, `mother`,
 `child`, `son`, `daughter`, `brother`, `sister`, `wife`, or `widow` types. Convert
@@ -31,8 +32,8 @@ term, such as `Vetter`, without guessing its precise modern meaning.
 
 An entry may also contain an optional `guesses` array alongside `facts` for
 assumptions, inferences, and author interpretations. Use the same object
-formats and historical dates as for facts: `{date, text}` for prose, and the
-typed relationship format for inferred family relationships. The containing
+formats and historical dates as for facts: `{date, text}` for prose, and typed
+objects for inferred family relationships and death dates. The containing
 `guesses` array identifies these as uncertain; retain reasoning and attribution
 in an accompanying dated prose guess when needed. Include a citation when the
 containing entry does not identify the basis. Never invent a date: preserve
@@ -56,6 +57,57 @@ non-empty strings. Put each designation in its own item, for example
 item. Omit an absent title field instead of writing `null`, an empty array,
 or a scalar string. Only record designations stated by this source. A `title`
 fact requires `personTitle` and has no `of` or `ofTitle` fields.
+
+### Death facts
+
+Each `death` object has exactly one of `diedOn` or `diedBefore`. Its value is
+a string containing a valid calendar date in `YYYY`, `YYYY-MM`, or
+`YYYY-MM-DD` form. `diedOn` identifies the stated day, month, or year, without
+inventing finer precision. `diedBefore` is an
+exclusive upper bound at the start of that day, month, or year: `1394` means
+before 1 January 1394. Convert “deceased by 1393” to `diedBefore` `1394` so
+the whole of 1393 remains possible. Similarly, for an inclusive day or month,
+use the start of the next day or month as the exclusive bound.
+
+For “shortly after” a dated point, use `diedBefore` two calendar months after
+that point as a standardized estimate, not a source-stated limit. When the
+target month lacks the original day, use its last day. Preserve the original
+source wording in the source text; put the estimated typed bound in `guesses`.
+Do not add a prose fact or guess explaining the calculation. Do not treat the
+estimated bound as a source-supported fact. Other approximations that cannot be expressed by
+these types remain prose. Do not create a typed death fact without a usable
+date or bound.
+
+The top-level `date` is the historical date of the claim or attestation,
+subject to the ordinary inheritance and book/note rules below. It is distinct
+from `diedOn` and `diedBefore` and never supplies either implicitly. A death date itself
+may be the historical date of a death event, but an attestation date must not
+be mistaken for an exact death date. If an entry says someone was already
+deceased, use the exclusive bound immediately after the attestation's date
+or period when known. For an inherited interval, use the exclusive bound
+immediately after its latest endpoint only when the attestation is known to
+fall within that interval. Do not use an interval as `diedOn` or `diedBefore`.
+
+Examples corresponding to death in a year and deceased by a year:
+
+```json
+[
+  {"type": "death", "person": "Eberhard von Rosenberg", "date": "1314", "diedOn": "1314"},
+  {"type": "death", "person": "vogt_zu_Lauda", "date": "1393", "diedBefore": "1394"}
+]
+```
+
+For “Ulrich von Rosenberg died shortly after 22 February 1424”, a document
+with an enclosing historical date can contain this guess:
+
+```json
+{"type": "death", "person": "Ulrich von Rosenberg", "diedBefore": "1424-04-22"}
+```
+
+The same format applies in `guesses`; the array identifies the claim as an
+inference. The standardized two-month estimate requires no explanatory prose
+guess. Retain legacy prose during migration. Store a stated cause, manner, or
+place of death as a separate prose fact or guess when relevant.
 
 Illustrative facts, not historical additions:
 
@@ -105,7 +157,9 @@ python3 scripts/validate_facts.py
 python3 scripts/validate_facts.py --strict-migration data/books data/notes
 ```
 
-The validator checks syntax, fields, dates, and registry references and reports
+The existing validator may not yet recognize the death types; update it
+before relying on it to validate newly added death objects. The validator
+checks syntax, fields, dates, and registry references and reports
 source locations. It does not verify historical support or identity, build
 the graph, or detect ancestry cycles. An unmatched ID-like string is a review
 warning, not a resolved person. Review source evidence and data diffs as well.
@@ -133,7 +187,7 @@ warning, not a resolved person. Review source evidence and data diffs as well.
 ```
 
 Book facts follow the shared Facts JSON rules above. Prose facts use
-`{date, text}`; supported relationship and title facts use typed objects with
+`{date, text}`; supported relationship, title, and death facts use typed objects with
 an explicit historical `date`. Existing string facts remain supported during
 migration.
 

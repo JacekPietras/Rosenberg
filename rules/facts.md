@@ -25,11 +25,15 @@ Extract each explicitly stated family relationship as a separate typed fact:
 - `kin`: explicit kinship not represented more precisely above; preserve the
   source's kinship term in `term` without guessing its degree.
 
-Record each source-stated death as a separate atomic prose fact, including
-when a source identifies someone as deceased or late. State only that the
-person was deceased by the attestation date unless the source gives a more
-precise death date; never infer an exact death date from widowhood or other
-context.
+Record each source-stated death, including a designation as deceased or late,
+as a separate typed death fact when a usable date can be established, using the rules in
+`rules/json-formats.md`. Distinguish the death date or bound from the date of
+the attestation. When a source identifies someone as deceased at a known
+date, record the corresponding `diedBefore` bound unless it supplies a more
+precise claim. Never
+infer an exact death date from widowhood or other context. Record a stated
+cause or manner of death separately as a prose fact; do not lose it when
+converting an existing death statement.
 
 Never use grouped forms such as “Sons: A and B”. Do not infer relationships
 from proximity, transactions, or shared names. Store a relationship once;
@@ -109,7 +113,7 @@ the containing entry. Do not present a guess as a document-supported fact or
 use it to resolve an identity or relationship as certain.
 
 Use the same dated object formats as facts for guesses, including typed
-relationship objects for inferred family relationships. Preserve legacy
+relationship and death objects for inferred relationships and death dates. Preserve legacy
 undated strings in existing records when no historical date can be established;
 never invent a date or use the publication year as an event date. In books,
 every fact and guess must have an explicit historical date. The validator
