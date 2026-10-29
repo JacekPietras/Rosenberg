@@ -15,7 +15,7 @@
           "type": "spouse",
           "person": "Agnes von Rosenberg",
           "of": "Peter von Gauangelloch",
-          "ofTitle": ["verstorben"]
+          "ofDeceased": true
         },
         "Peter von Gauangelloch was deceased by 1434-01-05.",
         "Eberhard von Gauangelloch was deceased by 1434-01-05.",
@@ -23,7 +23,7 @@
         {
           "type": "parent",
           "person": "Eberhard von Gauangelloch",
-          "personTitle": ["verstorben"],
+          "personDeceased": true,
           "of": "Diether von Gauangelloch",
           "ofTitle": [
             "der Jüngere"

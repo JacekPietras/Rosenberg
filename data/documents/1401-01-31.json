@@ -10,7 +10,7 @@
         {
           "type": "parent",
           "person": "vogt_zu_Lauda",
-          "personTitle": ["verstorben"],
+          "personDeceased": true,
           "of": "eberhard_jagstberg",
           "ofTitle": [
             "der Jüngere"

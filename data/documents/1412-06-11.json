@@ -22,7 +22,7 @@
           "type": "spouse",
           "person": "Anne von Bebenburg",
           "of": "Eberhard von Rosenberg",
-          "ofTitle": ["verstorben"]
+          "ofDeceased": true
         },
         "Eberhard von Rosenberg was deceased by 1412-06-11.",
         "Engelhard von Rosenberg der Ältere sealed the charter.",

@@ -17,7 +17,7 @@
         {
           "type": "parent",
           "person": "Walther von Kronberg",
-          "personTitle": ["verstorben"],
+          "personDeceased": true,
           "of": "Anna von Kronberg"
         },
         "Walther von Kronberg was deceased by 1438-06-23.",

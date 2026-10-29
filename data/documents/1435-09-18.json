@@ -10,7 +10,7 @@
         {
           "type": "parent",
           "person": "Eberhard von Rosenberg",
-          "personTitle": ["verstorben"],
+          "personDeceased": true,
           "of": "Ulrich von Rosenberg"
         },
         "Ulrich von Rosenberg's father, Eberhard von Rosenberg, was deceased by 1435-09-18.",

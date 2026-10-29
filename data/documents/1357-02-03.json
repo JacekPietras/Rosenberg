@@ -11,7 +11,7 @@
           "type": "spouse",
           "person": "Margaretha von Thüngen",
           "of": "Eberhard von Rosenberg",
-          "ofTitle": ["verstorben"]
+          "ofDeceased": true
         },
         "Eberhard von Rosenberg was deceased by 1357-02-03.",
         "Eberhard von Rosenberg had received Uffingen village as a pledge from Graf Eberhard zu Wertheim",

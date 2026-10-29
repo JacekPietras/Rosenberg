@@ -14,7 +14,7 @@
         {
           "type": "parent",
           "person": "Kunz von Rosenberg",
-          "personTitle": ["verstorben"],
+          "personDeceased": true,
           "of": "Hans von Rosenberg"
         },
         "Kunz von Rosenberg was deceased by 1457-11-19.",

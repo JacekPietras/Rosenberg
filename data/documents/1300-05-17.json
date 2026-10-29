@@ -15,9 +15,9 @@
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Ältere",
-            "Ritter",
-            "verstorben"
+            "Ritter"
           ],
+          "personDeceased": true,
           "of": "Eberhard von Rosenberg",
           "ofTitle": [
             "der Jüngere"
@@ -28,9 +28,9 @@
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Ältere",
-            "Ritter",
-            "verstorben"
+            "Ritter"
           ],
+          "personDeceased": true,
           "of": "Konrad von Rosenberg"
         },
         "Eberhard von Rosenberg, der Ältere, Ritter, was deceased by 1300-05-17.",

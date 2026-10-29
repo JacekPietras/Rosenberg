@@ -12,7 +12,7 @@
           "type": "spouse",
           "person": "Margaretha von Thüngen",
           "of": "Eberhard von Rosenberg",
-          "ofTitle": ["verstorben"]
+          "ofDeceased": true
         },
         "Eberhard von Rosenberg, spouse of Margaretha von Thüngen, was deceased by 1357-01-31.",
         {
