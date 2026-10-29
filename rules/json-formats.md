@@ -17,11 +17,11 @@ The supported typed facts are:
 
 | `type` | Required fields, in addition to `type` | Optional fields | Meaning |
 | --- | --- | --- | --- |
-| `parent` | `person`, `of` | `personTitle`, `ofTitle`, `date` | `person` is a parent of `of`. |
-| `sibling` | `person`, `of` | `personTitle`, `ofTitle`, `date` | `person` is a sibling of `of`. |
-| `spouse` | `person`, `of` | `personTitle`, `ofTitle`, `date` | `person` is a spouse of `of`, including widowhood. |
-| `kin` | `person`, `of`, `term` | `personTitle`, `ofTitle`, `date` | Source-stated kinship without a more specific supported type. |
-| `title` | `person`, `personTitle` | `date` | Source-stated designation of `person`. |
+| `parent` | `person`, `of` | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a parent of `of`. |
+| `sibling` | `person`, `of` | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a sibling of `of`. |
+| `spouse` | `person`, `of` | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a spouse of `of`, including widowhood. |
+| `kin` | `person`, `of`, `term` | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | Source-stated kinship without a more specific supported type. |
+| `title` | `person`, `personTitle` | `personDeceased`, `date` | Source-stated designation of `person`. |
 | `death` | `person`, exactly one of `diedOn` or `diedBefore` | `personTitle`, `date` | A person's death and its date or exclusive upper bound. |
 
 Reject other types and fields. In particular, do not add `father`, `mother`,
@@ -57,6 +57,30 @@ non-empty strings. Put each designation in its own item, for example
 item. Omit an absent title field instead of writing `null`, an empty array,
 or a scalar string. Only record designations stated by this source. A `title`
 fact requires `personTitle` and has no `of` or `ofTitle` fields.
+
+`personDeceased` and `ofDeceased` are optional boolean fields identifying the
+corresponding participant as deceased at the fact's historical date. Set a
+field to `true` only when the source states that participant was deceased,
+including when it identifies the other spouse as a widow or widower. Omit it
+otherwise; absence does not mean the person was alive. Do not use `false` or
+`null`. Use `ofDeceased` only on facts with an `of` participant. Do not put
+`verstorben` or equivalent deceased status in a title array.
+
+Facts are analyzed independently. A participant marked deceased may have
+died before the fact's attestation; a mention at that date does not imply
+that participant was alive. An unmarked mention alone also does not establish
+that the participant was alive. A separate `death` fact can record a usable
+death date or bound, but must not be required to interpret the status on a
+relationship or title fact. For example, a spouse fact can stand alone:
+
+```json
+{
+  "type": "spouse",
+  "person": "Anne von Bebenburg",
+  "of": "Eberhard von Rosenberg",
+  "ofDeceased": true
+}
+```
 
 ### Death facts
 
