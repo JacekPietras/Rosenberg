@@ -174,7 +174,7 @@ def fact_records(data_dir, people_by_id=None):
         yield from visit(document)
 
 
-def main(argv=None):
+def main(argv=None, on_match=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("name", help="person ID, full name, given name, surname, or place")
     parser.add_argument("--direct", action="store_true", help="return only facts containing the supplied person ID (requires a known person ID)")
@@ -211,6 +211,12 @@ def main(argv=None):
         tokens = [norm(token) for token in re.findall(r"[^\W_]+", name, flags=re.UNICODE)]
         return all(any(q == token or token in typed_aliases.get(q, {q}) for token in tokens) for q in query)
 
+    def emit_match(text):
+        if on_match is None:
+            print(text)
+        else:
+            on_match(text)
+
     found = 0
     for path, location, fact_index, date, source, text, metadata, typed in fact_records(args.data_dir, exact_people_by_id):
         # Typed identity comes only from exact field values, never generated text.
@@ -222,7 +228,7 @@ def main(argv=None):
                 found += 1
                 prefix = f"[{date}] " if date else ""
                 unresolved = [ref for ref in references if ref not in exact_people_by_id and matches_name(ref)]
-                print(prefix + typed_fact_text(typed, exact_people_by_id, unresolved_references=unresolved))
+                emit_match(prefix + typed_fact_text(typed, exact_people_by_id, unresolved_references=unresolved))
             continue
         search_text = typed_fact_text(typed, exact_people_by_id, include_ids=False) if typed else text
         tokens = [norm(token) for token in re.findall(r"[^\W_]+", search_text, flags=re.UNICODE)]
@@ -268,8 +274,8 @@ def main(argv=None):
                     count=1,
                     flags=re.IGNORECASE,
                 )
-            print(f"{prefix}{rendered}")
-    if not found:
+            emit_match(f"{prefix}{rendered}")
+    if not found and on_match is None:
         print("No matching facts found.")
 
 
