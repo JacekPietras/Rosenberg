@@ -185,9 +185,13 @@ structured evidence supports it. A title's place must not be counted again as an
 independent corroborating feature.
 
 Without shared event identifiers, duplicate-source detection will be incomplete.
-Deduplicate exact assertions and explicitly shared citations conservatively;
-mark uncertain source independence. Do not claim that all different books are
-independent witnesses.
+Retain every assertion and mention with its original provenance. Group known
+duplicate attestations for evidence weighting only, using their resolved
+historical dates, participant context, and event-specific citations. Identical
+typed objects at different inherited dates, or a shared book/archive citation,
+do not by themselves establish the same attestation or person. Mark uncertain
+source independence. Do not claim that all different books are independent
+witnesses.
 
 ### Scoring and decisions
 
@@ -236,6 +240,13 @@ The optional run may assign a mention differently from the facts-only run.
 Represent the two results separately rather than merely adding guessed edges
 to an unchanged graph. Never silently erase the facts-only interpretation.
 
+Alternative derivations of one edge are not alternative graph solutions. If
+competing solutions remain unresolved within a view, export only relationships
+common to those solutions; retain solution-specific edges in the read-only
+alternatives. Do not flatten mutually incompatible guesses into one graph.
+Validate each exported view separately: the union of two valid views need not
+itself be a valid genealogy.
+
 ## 8. Proposed people.json relationship format
 
 Keep the top-level people array and all existing identity/biographical fields.
@@ -280,6 +291,14 @@ certain endpoint status. A `with-guesses` derivation may have `usesGuesses: fals
 when it does not actually depend on a guess. Sources include identity support as
 well as the relationship assertion. Preserve alternative complete support sets.
 
+Define generated build metadata alongside this schema, keeping the top-level
+people array. Record which views were computed even when a view has no edges
+or both views are identical; derivation labels alone cannot establish view
+availability. Include the engine/policy version and fingerprints covering the
+source file set and contents, name/place inputs, and registry identity inputs.
+Exclude generated relationships and build metadata from the reconstruction
+input fingerprint so applying the result does not immediately invalidate it.
+
 `of` uses an exact existing ID, otherwise a unique registry name. Unresolved or
 ambiguous endpoints are not serializable as certain registry references. Keep
 their assertions and alternatives in the read-only build result; count omitted
@@ -295,6 +314,10 @@ derivations must still contain enough evidence to reconstruct and inspect the
 decision. Fingerprints detect stale pointers or edited assertions. If a source
 changes, require a rebuild rather than interpreting a stale pointer as evidence
 for a different assertion. Do not auto-relocate duplicate fingerprints.
+An assertion fingerprint alone is insufficient: inherited dates, enclosing
+citations/context, and newly added conflicting assertions can change a decision
+without changing that assertion object. Specify deterministic fingerprint
+encoding and verify the build inputs as well as individual evidence pointers.
 
 ## 9. CLI behavior and safe replacement
 
@@ -344,6 +367,11 @@ Add a pure relationship adapter, proposed as
 `docs/app/data/relationships.js`. It resolves exact IDs, permits unique names,
 builds reverse indexes, filters derivations by view, and exposes provenance.
 It must never use first-match or last-match fallback for ambiguous names.
+Use the same person-reference resolution for person-page lookup in
+`screens/entities.js` and person links in `rendering/markup.js` and `viewer.js`.
+An ambiguous name URL must show the ambiguity rather than select the first
+registry record; tree and generated relationship links use exact IDs whenever
+available. Distinct no-ID records still need separate internal rendering keys.
 
 Update the tree renderer to consume graph edges. Retain existing layout ideas
 where possible, but replace the current union of spouse-connected components:
@@ -366,9 +394,12 @@ Person pages retain source assertions and add generated relationships as a
 separate section.
 
 Align recursive file discovery in `docs/serve.py` with the published repository
-listing. Stale evidence should be visibly marked and excluded from accepted
-graph display until rebuilt. Do not implement the Python matching algorithm
-again in JavaScript; the browser consumes its result and validates references.
+listing. Load the generated build metadata and inputs needed to verify its
+fingerprints, including `data/names.md`. Use metadata to determine available
+views. Stale or unverifiable evidence should be visibly marked and excluded
+from accepted graph display until verified or rebuilt. Do not implement the
+Python matching algorithm again in JavaScript; the browser consumes its result
+and validates references.
 
 During development, support legacy relationship rendering only when the
 generated schema is absent. Once a record has generated relationships, do not
@@ -444,11 +475,18 @@ Required cases:
 - Guess-dependent identity changes remain separate from the facts-only graph.
 - Duplicate citations, dependent features, and circular family evidence cannot
   supply false independence.
+- Identical typed objects at different inherited dates remain separate
+  attestations; a shared general citation does not merge their participants.
+- Incompatible guessed solutions are not flattened into one exported view;
+  each view is validated independently of the other.
 - Parentage cycles are rejected; repeated ancestry through different branches
   is allowed.
 - Ambiguous endpoints are omitted with an explanation, not assigned to a first
-  same-name record.
-- Changed inputs prevent apply; stale evidence fingerprints are detected.
+  same-name record, including through person-page navigation.
+- Empty or identical views retain explicit availability metadata.
+- Changed inputs prevent apply; inherited-context changes, added sources, and
+  changed matching inputs invalidate stale builds even if edge assertions are
+  unchanged.
 - Applying twice yields the same file and never changes source assertions.
 
 Use the repository's existing test commands and extend them as modules land:
