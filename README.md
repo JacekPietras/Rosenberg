@@ -92,6 +92,21 @@ python3 scripts/search_facts_by_name.py 'Eberhard von Rosenberg'
 python3 scripts/search_facts_by_name.py Boxberg
 ```
 
+## Search places mentioned in a person's facts
+
+List unique canonical names from `data/places.json` mentioned in matching facts:
+
+```text
+python3 scripts/search_places_by_name.py 'Eberhard von Rosenberg'
+python3 scripts/search_places_by_name.py vogt_zu_Lauda --direct
+python3 scripts/search_places_by_name.py vogt_zu_Lauda --direct --count
+```
+
+The search uses the same person matching as the fact search, including name
+variants and the optional `--direct` ID filter. Place names appearing in a
+person's name or title are included as well. Use `--count` to show how many
+matching fact records mention each place; repeated mentions in one record count once.
+
 ## Variations
 
 ### Names
