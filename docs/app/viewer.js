@@ -1,16 +1,16 @@
-import { buildRelationshipGraph, resolvePerson, verifyFamilyGraph } from './data/relationships.js';
+import { buildRelationshipGraph, resolvePerson } from './data/relationships.js';
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=91';
-import { renderActiveScreen } from './screens/router-view.js?v=4';
+import { renderActiveScreen } from './screens/router-view.js?v=5';
 import { createDocumentRenderer } from './screens/documents.js?v=7';
 import { setupRecordLabelSelector } from './screens/record-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=87';
 import { createSealScreen } from './screens/seals.js?v=2';
 import { createImageScreen } from './screens/images.js?v=36';
-import { createDataLoader } from './data/loader.js?v=6';
+import { createDataLoader } from './data/loader.js?v=7';
 import { createEntityScreens } from './screens/entities.js?v=95';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
@@ -47,7 +47,9 @@ function savePreferences() {
 const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, record: preferences.record, recordSource: null, navigationRecord: null, navigationRecordSource: null, recordLabels: preferences.recordLabels, hiddenRecordLabels: preferences.hiddenRecordLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, imageRegions: preferences.imageRegions || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedDocumentsYear: null };
 state.familyView = preferences.familyView || 'facts';
 state.changeFamilyView = async (view) => {
+  const { canRebuild, rebuildError } = state.familyGraph;
   state.familyGraph = buildRelationshipGraph(state.personRecords, { view, verification: state.familyVerification });
+  Object.assign(state.familyGraph, { canRebuild, rebuildError });
   state.familyView = state.familyGraph.view;
   savePreferences();
   await renderActive();
@@ -1303,9 +1305,7 @@ const mapScreen = createMapScreen({
 
 async function renderActive() {
   if (state.familyGraph?.generated && (repository.revision || 0) !== state.familyRepositoryRevision) {
-    state.familyVerification = await verifyFamilyGraph(state.personRecords, state.documents, repository);
-    state.familyGraph = buildRelationshipGraph(state.personRecords, { view: state.familyView, verification: state.familyVerification });
-    state.familyRepositoryRevision = repository.revision || 0;
+    return dataLoader.loadAll();
   }
   return renderActiveScreen({
     state,
@@ -1394,7 +1394,18 @@ const dataLoader = createDataLoader({
   savePreferences,
   renderTabs,
   renderActive,
+  onFamilyRebuild: () => {
+    $('#status').textContent = 'Rebuilding family relationships…';
+    $('#status').classList.remove('error');
+  },
 });
+state.rebuildFamilyGraph = async () => {
+  try {
+    await dataLoader.rebuildFamilyGraph();
+  } finally {
+    $('#status').textContent = '';
+  }
+};
 
 async function loadAll() {
   return dataLoader.loadAll();

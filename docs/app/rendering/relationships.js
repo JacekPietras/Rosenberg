@@ -4,7 +4,10 @@ import { documentNavigationUrl } from './navigation.js';
 export function relationshipControls(graph) {
   if (!graph?.generated) return '';
   const coverage = graph.metadata?.coverage?.[graph.view];
-  return `<div class="family-graph-controls">${graph.views.length > 1 ? `<label>Evidence <select data-family-view>${graph.views.map((view) => `<option value="${view}"${view === graph.view ? ' selected' : ''}>${view === 'facts' ? 'Facts only' : 'Include guesses'}</option>`).join('')}</select></label>` : '<span>Facts only</span>'}${coverage ? `<span>${coverage.unresolvedMentions} unresolved mentions · ${coverage.omittedRelationships} relationships omitted · ${coverage.conflicts} conflicts</span>` : ''}${!graph.valid ? `<p class="status error">${escapeHtml(graph.reason)}</p>` : '<small>Inferred identities and guess-dependent relationships are marked separately.</small>'}</div>`;
+  const status = graph.rebuildError ? `Could not rebuild relationships. ${escapeHtml(graph.rebuildError)}`
+    : graph.valid ? '' : graph.canRebuild ? 'Relationships need refreshing.'
+      : 'Relationships need refreshing. <a href="http://localhost:8000/docs/?tab=tree">Open the local viewer to rebuild</a>.';
+  return `<div class="family-graph-controls">${graph.views.length > 1 ? `<label>Evidence <select data-family-view>${graph.views.map((view) => `<option value="${view}"${view === graph.view ? ' selected' : ''}>${view === 'facts' ? 'Facts only' : 'Include guesses'}</option>`).join('')}</select></label>` : '<span>Facts only</span>'}${graph.canRebuild ? '<button type="button" data-family-rebuild>Rebuild relationships</button>' : ''}${coverage ? `<span>${coverage.unresolvedMentions} unresolved mentions · ${coverage.omittedRelationships} relationships omitted · ${coverage.conflicts} conflicts</span>` : ''}<p class="status" role="status" data-family-rebuild-status>${status}</p>${graph.valid ? '<small>Inferred identities and guess-dependent relationships are marked separately.</small>' : ''}</div>`;
 }
 
 export function relationshipPanel(graph, key = null) {

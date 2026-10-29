@@ -79,7 +79,9 @@ test('inherited context, new sources, and name inputs invalidate evidence', asyn
     assert.equal(verification.valid, false, change);
     const graph = buildRelationshipGraph(data.people, { verification });
     assert.equal(graph.edges.length, 0);
-    assert.match(renderPeopleTree(data.people, data.documents, { graph }), /status error/);
+    const html = renderPeopleTree(data.people, data.documents, { graph });
+    assert.match(html, /Relationships need refreshing/);
+    assert.doesNotMatch(html, /Build input changed|Rebuild family relationships to verify/);
   }
 });
 
@@ -195,4 +197,130 @@ test('the tree mode control passes an available view explicitly to viewer state'
   selected = null;
   await changeHandler({ target: { value: 'unavailable' } });
   assert.equal(selected, null);
+});
+
+function loaderFor(data, { rebuild, local = true } = {}) {
+  const state = { recordLabels: [], sealNames: [], imageRegions: [], active: 'tree', familyView: 'with-guesses' };
+  let renders = 0, progress = 0;
+  const repository = {
+    ...data.repository,
+    isLocalServer: async () => local,
+    rebuildFamilyGraph: rebuild,
+    getRepositoryFiles: async () => [...data.files.keys()].map((path) => ({ path })),
+    getText: async (path) => path === 'data/people.json' ? JSON.stringify(data.people)
+      : path === 'data/places.json' || path === 'docs/assets/calibration-cities.json' ? '[]'
+        : data.files.get(path) || '',
+  };
+  const loader = createDataLoader({ repository, state, parsePeople, parsePlaces,
+    buildPersonPattern: () => [], buildPlacePattern: () => null,
+    bookSortYear: () => 0, recordHasMissingSourceOrUrl: () => false,
+    missingRecordLabel: 'missing', greyRecordLabels: [], savePreferences() {}, renderTabs() {},
+    onFamilyRebuild: () => { progress++; }, renderActive: async () => { renders++; } });
+  return { state, loader, counts: () => ({ renders, progress }) };
+}
+
+async function updateFixtureBuild(data) {
+  const metadata = data.people[0].familyGraph;
+  metadata.inputs[source.path] = await evidenceFingerprint(data.documents.get(source.path));
+  metadata.fingerprint = await evidenceFingerprint(metadata.inputs);
+}
+
+test('stale local evidence automatically rebuilds once and reloads the verified graph', async () => {
+  const data = await fixture();
+  data.documents.get(source.path).date = '1400';
+  let rebuilds = 0;
+  const { loader, state, counts } = loaderFor(data, { rebuild: async () => { rebuilds++; await updateFixtureBuild(data); } });
+  await Promise.all([loader.loadAll(), loader.loadAll()]);
+  assert.equal(rebuilds, 1);
+  assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
+  assert.equal(state.familyGraph.edges.length, 1);
+  assert.equal(state.familyView, 'with-guesses');
+  assert.equal(state.familyGraph.canRebuild, true);
+  assert.deepEqual(counts(), { renders: 1, progress: 1 });
+});
+
+test('rebuild failures retain hidden stale edges and a working retry action', async () => {
+  const data = await fixture();
+  data.documents.get(source.path).date = '1400';
+  let rebuilds = 0;
+  const { loader, state } = loaderFor(data, { rebuild: async () => {
+    if (++rebuilds === 1) throw new Error('Invalid source date');
+    await updateFixtureBuild(data);
+  } });
+  await loader.loadAll();
+  assert.equal(rebuilds, 1);
+  assert.equal(state.familyGraph.valid, false);
+  assert.equal(state.familyGraph.edges.length, 0);
+  const html = renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph });
+  assert.match(html, /data-family-rebuild/);
+  assert.match(html, /Invalid source date/);
+  await loader.rebuildFamilyGraph();
+  assert.equal(rebuilds, 2);
+  assert.equal(state.familyGraph.valid, true);
+});
+
+test('a second input change cannot cause an automatic rebuild loop', async () => {
+  const data = await fixture();
+  data.documents.get(source.path).date = '1400';
+  let rebuilds = 0;
+  const { loader, state } = loaderFor(data, { rebuild: async () => {
+    rebuilds++;
+    await updateFixtureBuild(data);
+    data.documents.get(source.path).date = '1401';
+  } });
+  await loader.loadAll();
+  assert.equal(rebuilds, 1);
+  assert.equal(state.familyGraph.valid, false);
+  assert.equal(state.familyGraph.canRebuild, true);
+});
+
+test('hosted pages do not POST rebuilds to a static site', async () => {
+  const data = await fixture();
+  data.documents.get(source.path).date = '1400';
+  const { loader, state } = loaderFor(data, { local: false, rebuild: async () => { assert.fail('static site cannot run Python'); } });
+  await loader.loadAll();
+  assert.equal(state.familyGraph.valid, false);
+  assert.equal(state.familyGraph.canRebuild, false);
+  assert.match(renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph }), /Open the local viewer to rebuild/);
+});
+
+test('repository coalesces concurrent rebuild requests and allows retry after failure', async () => {
+  let requests = 0, finish;
+  const repository = createRepository({ location: { hostname: 'localhost', pathname: '/docs/' },
+    fetchFunction: async (url, options) => {
+      requests++;
+      assert.equal(url, '/api/rebuild-family-tree');
+      assert.equal(options.method, 'POST');
+      return new Promise((resolve) => { finish = resolve; });
+    } });
+  const first = repository.rebuildFamilyGraph();
+  const concurrent = repository.rebuildFamilyGraph();
+  assert.equal(first, concurrent);
+  assert.equal(requests, 1);
+  finish({ ok: false, status: 422, json: async () => ({ error: 'Source validation failed' }) });
+  await assert.rejects(first, /Source validation failed/);
+  const retry = repository.rebuildFamilyGraph();
+  assert.equal(requests, 2);
+  finish({ ok: true, status: 200, json: async () => ({ ok: true }) });
+  await retry;
+  assert.equal(repository.revision, 1);
+});
+
+test('the rebuild button disables itself and reports a failed attempt with retry', async () => {
+  const data = await fixture();
+  let click, rebuilds = 0;
+  const button = { disabled: false, textContent: '', addEventListener: (type, callback) => { click = callback; } };
+  const message = { textContent: '' };
+  const graph = buildRelationshipGraph(data.people, { verification: { valid: true } });
+  graph.canRebuild = true;
+  const content = { innerHTML: '', querySelector: (selector) => selector === '[data-family-rebuild]' ? button
+    : selector === '[data-family-rebuild-status]' ? message : null };
+  const state = { active: 'tree', personRecords: data.people, documents: data.documents, familyGraph: graph,
+    rebuildFamilyGraph: async () => { rebuilds++; assert.equal(button.disabled, true); throw new Error('Try again'); } };
+  await renderActiveScreen({ state, content, status: { textContent: '', classList: { remove() {} } }, renderPeopleTree, setupPeopleTreeZoom() {} });
+  await click({ currentTarget: button });
+  assert.equal(rebuilds, 1);
+  assert.equal(button.disabled, false);
+  assert.equal(button.textContent, 'Retry rebuild');
+  assert.match(message.textContent, /Try again/);
 });

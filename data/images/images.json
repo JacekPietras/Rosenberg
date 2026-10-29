@@ -3,6 +3,34 @@
   "entries": [
     {
       "label": "armorial",
+      "title": "Lewis armorial, Philadelphia, Free Library, Lewis E 17",
+      "source": "https://archive.org/details/lewis_e_017/page/n266/mode/1up",
+      "description": "Page 266.",
+      "url": "https://drive.google.com/thumbnail?id=1UH4WN0JtN8OwsQNZ82Gibf7oaO2cGX3v&sz=w1600"
+    },
+    {
+      "label": "effigy",
+      "title": "Epitaph des Wipert von Erligheim, Abtei Neuburg bei Heidelberg",
+      "source": "https://commons.wikimedia.org/wiki/File:Epitaph_Wipert_von_Erligheim.jpg",
+      "description": "Wipert von Erligheim died in 1348. Photograph by Kumbalam, 27 December 2012; CC0.",
+      "url": "https://drive.google.com/thumbnail?id=1E8veZzpEUm70FUzk6FrEg4hSHYP_xaru&sz=w1600"
+    },
+    {
+      "label": "armorial",
+      "title": "Lewis armorial, Philadelphia, Free Library, Lewis E 17",
+      "source": "https://archive.org/details/lewis_e_017/page/n144/mode/1up",
+      "description": "Page 144.",
+      "url": "https://drive.google.com/thumbnail?id=1BlMU0VlWvqJ-YyADkKnsc7sSpK-PKeNs&sz=w1600"
+    },
+    {
+      "label": "armorial",
+      "title": "Lewis armorial, Philadelphia, Free Library, Lewis E 17",
+      "source": "https://archive.org/details/lewis_e_017/page/n76/mode/1up",
+      "description": "Page 76.",
+      "url": "https://drive.google.com/thumbnail?id=1vl0ZOUWjTne9iGxo1JNCInLioVK2XLST&sz=w1600"
+    },
+    {
+      "label": "armorial",
       "title": "Hällische Chronik, Bratislava, Univerzitná knižnica, Ms 1825",
       "date": "1494-1545",
       "source": "http://digitalna.kniznica.info/zoom/68248/view?page=38&p=separate&view=0,0,600,941",
@@ -96,6 +124,13 @@
           "width": 0.1125,
           "height": 0.1736,
           "name": "Rosenberg"
+        },
+        {
+          "x": 0.699,
+          "y": 0.3562,
+          "width": 0.0826,
+          "height": 0.1826,
+          "name": "Erligheim"
         }
       ],
       "placeId": "heidelberg"

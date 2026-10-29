@@ -15,8 +15,11 @@ export function createDataLoader({
   savePreferences,
   renderTabs,
   renderActive,
+  onFamilyRebuild = () => {},
 }) {
-  async function loadAll() {
+  let loading;
+
+  async function loadSnapshot({ autoRebuild = true } = {}) {
     const files = await repository.getRepositoryFiles();
     const paths = files.map((file) => typeof file === 'string' ? file : file.path)
       .filter((path) => /^data\/(books|documents|notes|images)\/.*\.json$/.test(path));
@@ -49,6 +52,17 @@ export function createDataLoader({
     state.documents = documents;
     state.familyVerification = await verifyFamilyGraph(state.personRecords, documents, repository, paths);
     state.familyGraph = buildRelationshipGraph(state.personRecords, { view: state.familyView, verification: state.familyVerification });
+    state.canRebuildFamilyGraph = typeof repository.rebuildFamilyGraph === 'function' && await repository.isLocalServer();
+    state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
+    if (!state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild) {
+      try {
+        onFamilyRebuild();
+        await repository.rebuildFamilyGraph();
+        return await loadSnapshot({ autoRebuild: false });
+      } catch (error) {
+        state.familyGraph.rebuildError = error.message;
+      }
+    }
     state.familyView = state.familyGraph.view;
     state.familyRepositoryRevision = repository.revision || 0;
     state.snapshot = snapshot;
@@ -68,5 +82,16 @@ export function createDataLoader({
     await renderActive();
   }
 
-  return { loadAll };
+  function loadAll(options) {
+    if (!loading) loading = loadSnapshot(options).finally(() => { loading = null; });
+    return loading;
+  }
+
+  async function rebuildFamilyGraph() {
+    onFamilyRebuild();
+    await repository.rebuildFamilyGraph();
+    await loadAll({ autoRebuild: false });
+  }
+
+  return { loadAll, rebuildFamilyGraph };
 }

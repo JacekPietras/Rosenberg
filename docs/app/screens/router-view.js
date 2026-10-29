@@ -101,6 +101,19 @@ export async function renderActiveScreen({
   scrollToEntryHash();
 
   function setupFamilyControls() {
+    content.querySelector('[data-family-rebuild]')?.addEventListener('click', async (event) => {
+      const button = event.currentTarget;
+      button.disabled = true;
+      button.textContent = 'Rebuilding…';
+      try {
+        await state.rebuildFamilyGraph?.();
+      } catch (error) {
+        const message = content.querySelector('[data-family-rebuild-status]');
+        if (message) message.textContent = `Could not rebuild relationships. ${error.message}`;
+        button.disabled = false;
+        button.textContent = 'Retry rebuild';
+      }
+    });
     content.querySelector('[data-family-view]')?.addEventListener('change', async (event) => {
       if (!state.familyGraph?.views.includes(event.target.value)) return;
       state.familyView = event.target.value;

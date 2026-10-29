@@ -15,10 +15,11 @@ from urllib.request import Request, urlopen
 import webbrowser
 
 ROOT = Path(__file__).resolve().parent.parent
-HEARTBEAT_TIMEOUT = 5
+HEARTBEAT_TIMEOUT = 20
 last_heartbeat = [0.0]
 page_seen = threading.Event()
 stop_watcher = threading.Event()
+family_rebuild_lock = threading.Lock()
 
 
 class DriveFolderParser(HTMLParser):
@@ -218,6 +219,45 @@ class ViewerHandler(SimpleHTTPRequestHandler):
         super().do_GET()
 
     def do_POST(self):
+        if self.path.split("?", 1)[0] == "/api/rebuild-family-tree":
+            try:
+                length = int(self.headers.get("Content-Length", "0"))
+                if not 0 <= length <= 8192:
+                    raise ValueError("Invalid rebuild request size")
+                payload = json.loads(self.rfile.read(length)) if length else {}
+                if not isinstance(payload, dict) or set(payload) - {"includeGuesses", "searchLimit"}:
+                    raise ValueError("Invalid rebuild options")
+                with family_rebuild_lock:
+                    people = json.loads((ROOT / "data/people.json").read_text(encoding="utf-8"))
+                    if not isinstance(people, list) or not people or not isinstance(people[0], dict):
+                        raise ValueError("Invalid person registry")
+                    metadata = people[0].get("familyGraph", {}) if people else {}
+                    if not isinstance(metadata, dict):
+                        metadata = {}
+                    configuration = metadata.get("configuration", {})
+                    if not isinstance(configuration, dict):
+                        configuration = {}
+                    include_guesses = payload.get("includeGuesses", "with-guesses" in metadata.get("views", []))
+                    search_limit = payload.get("searchLimit", configuration.get("searchLimit", 10000))
+                    if type(include_guesses) is not bool or type(search_limit) is not int or search_limit < 1:
+                        raise ValueError("Invalid rebuild options")
+                    command = [sys.executable, str(ROOT / "scripts/rebuild_family_tree.py"),
+                               "--root", str(ROOT), "--apply", "--search-limit", str(search_limit)]
+                    if include_guesses:
+                        command.append("--include-guesses")
+                    result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True,
+                                            check=False, timeout=120)
+                    if result.returncode:
+                        self.send_json(422, {"error": result.stderr.strip() or result.stdout.strip() or "Could not rebuild family relationships"})
+                        return
+                self.send_json(200, {"ok": True})
+            except (ValueError, TypeError, KeyError, IndexError) as error:
+                self.send_json(400, {"error": str(error)})
+            except subprocess.TimeoutExpired:
+                self.send_json(504, {"error": "Rebuilding family relationships took too long. Please retry."})
+            except OSError as error:
+                self.send_json(500, {"error": f"Could not rebuild family relationships: {error}"})
+            return
         if self.path.split("?", 1)[0] == "/api/save-document":
             print(
                 f"Received document save request from {self.client_address[0]} "

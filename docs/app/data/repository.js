@@ -8,6 +8,7 @@ function dataUrl(path, location = window.location) {
 }
 
 export function createRepository({ location = window.location, fetchFunction = window.fetch.bind(window) } = {}) {
+  let familyRebuild;
   async function getText(path) {
     const response = await fetchFunction(`${dataUrl(path, location)}?v=${Date.now()}`, { cache: 'no-store' });
     if (!response.ok) throw new Error(`${path}: ${response.status}`);
@@ -27,6 +28,19 @@ export function createRepository({ location = window.location, fetchFunction = w
     },
     async getJson(path) {
       return JSON.parse(await getText(path));
+    },
+    rebuildFamilyGraph() {
+      if (!familyRebuild) {
+        familyRebuild = (async () => {
+          const response = await fetchFunction('/api/rebuild-family-tree', { method: 'POST' });
+          if (response.status === 404) throw new Error('Restart the local viewer to enable rebuilding relationships.');
+          const result = await response.json();
+          if (!response.ok) throw new Error(result.error || 'Could not rebuild family relationships.');
+          this.revision += 1;
+          return result;
+        })().finally(() => { familyRebuild = null; });
+      }
+      return familyRebuild;
     },
     async getRepositoryFiles() {
       if (!location.hostname.endsWith('github.io')) {

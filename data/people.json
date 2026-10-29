@@ -496,7 +496,7 @@
         "data/documents/1621-10-28.json": "sha256:b5e04841f76708ce2b1d904b08fd293ca49f28f0672f04c7f6bc8f88ce767bdd",
         "data/documents/1626-02-22.json": "sha256:d31f3dbd676fbb2d4444060348617c6e3fc2c92aca0dcc1568767db5ad343677",
         "data/documents/1804-05-15.json": "sha256:42939ecfe82696ba10c2ccaf21b7729eed5a4437f1e393eb7caa6c3944835c20",
-        "data/images/images.json": "sha256:3a1bac7b4b6454edb717f842ae35fac5082ed304de58fe0eb48f05d2d0f8b396",
+        "data/images/images.json": "sha256:0db8d2f323fdbb814e3b57f626df930645c2a22b0e76ddd0f02ed88e2f364f3d",
         "data/names.md": "sha256:03e73c2b21e1e4d5655df8520829e6501c4d52250254b157e43aa14c613a4565",
         "data/notes/notes.json": "sha256:a33e162e8b4aca9261bbc132c2f2a4aacc82f84b40f38ae52d5777a8a8510ec4",
         "data/people.json": "sha256:0990691799147d7f31808ac2142b61007a628a90ccf9f5da76b456df23197a93",
@@ -518,7 +518,7 @@
         "scripts/search_places_by_name.py": "sha256:2034da7ef86d2016e9d546f89100e74977cd68d2db5ddbe235ff4045f2ce60ec",
         "scripts/validate_facts.py": "sha256:d953bb5739af557ce2f5f0e2cf52fa01d548a8cea77b5ad243709b6bdf139e55"
       },
-      "fingerprint": "sha256:e0bff9ac8104b0c6e28a086a6ddf371d74ed01b89eaf35ce0feda15a09ca98bf",
+      "fingerprint": "sha256:c36e57c285d79700fafaafd9de39ef2eb913c8ae79545df8b56583d0c2f346c9",
       "coverage": {
         "facts": {
           "unresolvedMentions": 1443,

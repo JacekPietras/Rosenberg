@@ -47,8 +47,13 @@ Use `--include-guesses --apply` to replace registry relationships with both
 independently built evidence views, or `--apply` for facts only. Existing
 relationships are ignored as evidence. Unresolved identities stay unresolved;
 the CLI reports omitted relationships and conflicts. The viewer exposes source
-links, identity uncertainty, and the available evidence modes. Source edits
-invalidate generated relationships until the command is rerun.
+links, identity uncertainty, and the available evidence modes. The local viewer
+automatically rebuilds relationships when source edits make them stale, then
+reloads and verifies the result. Its **Rebuild relationships** button also runs
+the same validated export, preserving the existing evidence views and search
+configuration. Restart an already running local server once after updating the
+viewer to enable this action. The published read-only site links to the local
+viewer when a rebuild is needed.
 
 The generated schema is documented in [rules/json-formats.md](rules/json-formats.md).
 Matching scores are conservative heuristics, not calibrated probabilities.
