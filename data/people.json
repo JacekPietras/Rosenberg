@@ -23,41 +23,12 @@
     "born": null,
     "died": null,
     "children": [
-      "eberhard_son_of_vogt_zu_Durn",
-      "konrad_son_of_vogt_zu_Durn",
+      "Eberhard von Rosenberg",
+      "Konrad von Rosenberg",
       "engelhard_son_of_vogt_zu_Durn",
-      "hermann_son_of_vogt_zu_Durn"
+      "Hermann von Rosenberg"
     ],
     "wife": "irmtraut_wife_of_vogt_zu_Durn"
-  },
-  {
-    "name": "Arnold von Rosenberg",
-    "titles": [],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "name": "Konrad von Rosenberg",
-    "titles": [],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "name": "Elisabeth von Erligheim",
-    "titles": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "name": "Engelhard von Rosenberg",
-    "titles": [],
-    "wife": null,
-    "born": null,
-    "died": null
   },
   {
     "id": "arnold_boxberg",
@@ -88,24 +59,6 @@
     "died": null
   },
   {
-    "id": "eberhard_son_of_vogt_zu_Durn",
-    "name": "Eberhard von Rosenberg",
-    "titles": [],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "konrad_son_of_vogt_zu_Durn",
-    "name": "Konrad von Rosenberg",
-    "titles": [],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
     "id": "engelhard_son_of_vogt_zu_Durn",
     "name": "Engelhard von Rosenberg",
     "titles": [],
@@ -117,39 +70,12 @@
     "died": null
   },
   {
-    "id": "hermann_son_of_vogt_zu_Durn",
-    "name": "Hermann von Rosenberg",
-    "titles": [],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
     "id": "konrad_schonau",
     "name": "Konrad von Rosenberg",
     "titles": [
       "Ritter"
     ],
-    "wife": "wife_of_konrad_schonau",
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "wife_of_konrad_schonau",
-    "name": "Adelheid von Hirschhorn",
-    "titles": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "heinrich_von_Erligheim",
-    "name": "Heinrich von Erligheim",
-    "titles": [
-      "Ritter"
-    ],
-    "wife": null,
+    "wife": "Adelheid von Hirschhorn",
     "children": [],
     "born": null,
     "died": null
@@ -188,16 +114,7 @@
     "id": "eberhard_son_of_engelhard_von_rosenberg",
     "name": "Eberhard von Rosenberg",
     "titles": [],
-    "wife": "anne_von_bebenburg",
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "anne_von_bebenburg",
-    "name": "Anne von Bebenburg",
-    "titles": [],
-    "wife": null,
+    "wife": "Anne von Bebenburg",
     "children": [],
     "born": null,
     "died": null
@@ -217,7 +134,7 @@
     "titles": [],
     "wife": null,
     "children": [
-      "hans_von_neudeck"
+      "Hans von Neudeck"
     ],
     "born": null,
     "died": null
@@ -230,90 +147,8 @@
     ],
     "wife": "alheit_von_neudeck",
     "children": [
-      "hans_von_neudeck"
+      "Hans von Neudeck"
     ],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "hans_von_neudeck",
-    "name": "Hans von Neudeck",
-    "titles": [
-      "Edelknecht"
-    ],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "arnold_der_altere_kinsman_of_eberhard_jagstberg",
-    "name": "Arnold von Rosenberg der Ältere",
-    "titles": [
-      "der Ältere"
-    ],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "hans_von_rosenberg_kinsman_of_eberhard_jagstberg",
-    "name": "Hans von Rosenberg",
-    "titles": [],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "reinhard_von_uissigheim_kinsman_of_arnold_boxberg",
-    "name": "Reinhard von Uissigheim",
-    "titles": [],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "kunz_von_rosenberg_kinsman_of_arnold_boxberg",
-    "name": "Kunz von Rosenberg",
-    "titles": [],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "konrad_ritter_kinsman_of_vogt_zu_Lauda",
-    "name": "Konrad von Rosenberg",
-    "titles": [
-      "Ritter"
-    ],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "arnold_armiger_kinsman_of_vogt_zu_Lauda",
-    "name": "Arnold von Rosenberg",
-    "titles": [
-      "armiger"
-    ],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  },
-  {
-    "id": "konrad_armiger_kinsman_of_vogt_zu_Lauda",
-    "name": "Konrad von Rosenberg",
-    "titles": [
-      "armiger"
-    ],
-    "wife": null,
-    "children": [],
     "born": null,
     "died": null
   }

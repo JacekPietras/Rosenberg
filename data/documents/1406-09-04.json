@@ -30,7 +30,7 @@
         },
         {
           "type": "kin",
-          "person": "reinhard_von_uissigheim_kinsman_of_arnold_boxberg",
+          "person": "Reinhard von Uissigheim",
           "of": "arnold_boxberg",
           "ofTitle": [
             "der Jüngere"
@@ -39,7 +39,7 @@
         },
         {
           "type": "kin",
-          "person": "kunz_von_rosenberg_kinsman_of_arnold_boxberg",
+          "person": "Kunz von Rosenberg",
           "of": "arnold_boxberg",
           "ofTitle": [
             "der Jüngere"
@@ -48,8 +48,8 @@
         },
         "[arnold_boxberg] der Jüngere sealed the charter",
         "[eberhard_jagstberg] sealed the charter",
-        "[reinhard_von_uissigheim_kinsman_of_arnold_boxberg] was listed as Siegel but his seal is missing",
-        "[kunz_von_rosenberg_kinsman_of_arnold_boxberg] sealed the charter"
+        "Reinhard von Uissigheim was listed as Siegel but his seal is missing",
+        "Kunz von Rosenberg sealed the charter"
       ],
       "img": [
         {

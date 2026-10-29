@@ -9,40 +9,40 @@
       "facts": [
         {
           "type": "title",
-          "person": "eberhard_son_of_vogt_zu_Durn",
+          "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ]
         },
         {
           "type": "title",
-          "person": "konrad_son_of_vogt_zu_Durn",
+          "person": "Konrad von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ]
         },
         {
           "type": "sibling",
-          "person": "eberhard_son_of_vogt_zu_Durn",
+          "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
-          "of": "konrad_son_of_vogt_zu_Durn",
+          "of": "Konrad von Rosenberg",
           "ofTitle": [
             "Edelknecht"
           ]
         },
         {
           "type": "sibling",
-          "person": "konrad_son_of_vogt_zu_Durn",
+          "person": "Konrad von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
-          "of": "hermann_son_of_vogt_zu_Durn"
+          "of": "Hermann von Rosenberg"
         },
         {
           "type": "sibling",
-          "person": "konrad_son_of_vogt_zu_Durn",
+          "person": "Konrad von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
@@ -50,15 +50,15 @@
         },
         {
           "type": "sibling",
-          "person": "eberhard_son_of_vogt_zu_Durn",
+          "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
-          "of": "hermann_son_of_vogt_zu_Durn"
+          "of": "Hermann von Rosenberg"
         },
         {
           "type": "sibling",
-          "person": "eberhard_son_of_vogt_zu_Durn",
+          "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
@@ -70,18 +70,7 @@
           "personTitle": [
             "zu Dürn"
           ],
-          "of": "eberhard_son_of_vogt_zu_Durn",
-          "ofTitle": [
-            "Edelknecht"
-          ]
-        },
-        {
-          "type": "parent",
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "zu Dürn"
-          ],
-          "of": "konrad_son_of_vogt_zu_Durn",
+          "of": "Eberhard von Rosenberg",
           "ofTitle": [
             "Edelknecht"
           ]
@@ -92,6 +81,17 @@
           "personTitle": [
             "zu Dürn"
           ],
+          "of": "Konrad von Rosenberg",
+          "ofTitle": [
+            "Edelknecht"
+          ]
+        },
+        {
+          "type": "parent",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "zu Dürn"
+          ],
           "of": "engelhard_son_of_vogt_zu_Durn"
         },
         {
@@ -100,12 +100,12 @@
           "personTitle": [
             "zu Dürn"
           ],
-          "of": "hermann_son_of_vogt_zu_Durn"
+          "of": "Hermann von Rosenberg"
         },
-        "[eberhard_son_of_vogt_zu_Durn] received royal subjects from his father [vogt_zu_Durn]",
+        "Eberhard von Rosenberg received royal subjects from his father [vogt_zu_Durn]",
         "[engelhard_son_of_vogt_zu_Durn] received royal subjects from his father [vogt_zu_Durn]",
-        "[konrad_son_of_vogt_zu_Durn] received royal subjects from his father [vogt_zu_Durn]",
-        "[hermann_son_of_vogt_zu_Durn] received royal subjects from his father [vogt_zu_Durn]"
+        "Konrad von Rosenberg received royal subjects from his father [vogt_zu_Durn]",
+        "Hermann von Rosenberg received royal subjects from his father [vogt_zu_Durn]"
       ]
     }
   ]

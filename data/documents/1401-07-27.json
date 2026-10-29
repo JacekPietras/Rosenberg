@@ -15,7 +15,7 @@
         "[eberhard_jagstberg] borrowed money from [arnold_boxberg]",
         {
           "type": "kin",
-          "person": "arnold_der_altere_kinsman_of_eberhard_jagstberg",
+          "person": "Arnold von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
@@ -24,12 +24,12 @@
         },
         {
           "type": "kin",
-          "person": "hans_von_rosenberg_kinsman_of_eberhard_jagstberg",
+          "person": "Hans von Rosenberg",
           "of": "eberhard_jagstberg",
           "term": "Vetter"
         },
-        "[arnold_der_altere_kinsman_of_eberhard_jagstberg] der Ältere acted as surety for [eberhard_jagstberg]",
-        "[hans_von_rosenberg_kinsman_of_eberhard_jagstberg] acted as surety for [eberhard_jagstberg]"
+        "Arnold von Rosenberg der Ältere acted as surety for [eberhard_jagstberg]",
+        "Hans von Rosenberg acted as surety for [eberhard_jagstberg]"
       ],
       "img": [
         {
