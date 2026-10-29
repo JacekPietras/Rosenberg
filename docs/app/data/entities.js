@@ -55,7 +55,12 @@ export function buildPlacePattern(places) {
 export function parsePeople(json) {
   const people = JSON.parse(json);
   if (!Array.isArray(people)) throw new Error('data/people.json must contain an array');
-  return people.filter((person) => person && typeof person.name === 'string' && person.name.trim());
+  if (people.some((person) => !person || typeof person.name !== 'string' || !person.name.trim())) throw new Error('Invalid person record');
+  const ids = people.filter((person) => person.id).map((person) => person.id);
+  if (new Set(ids).size !== ids.length || people.some((person) => ids.includes(person.name))) throw new Error('Duplicate person IDs or ID/name collision');
+  if (people.some((person) => person.familyGraph || Object.hasOwn(person, 'relationships'))
+    && people.some((person, index) => !Array.isArray(person.relationships) || Object.hasOwn(person, 'wife') || Object.hasOwn(person, 'children') || index > 0 && person.familyGraph)) throw new Error('Incomplete generated registry');
+  return people;
 }
 
 export function buildPersonPattern(people) {

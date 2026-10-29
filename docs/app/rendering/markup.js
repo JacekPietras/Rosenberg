@@ -1,5 +1,6 @@
 import { escapeHtml } from './html.js';
 import { findPlaceByName } from '../data/entities.js?v=87';
+import { resolvePerson } from '../data/relationships.js';
 
 export function createMarkupRenderer({ state }) {
   function linkedMarkup(value = '', linkEntities = true) {
@@ -12,9 +13,9 @@ export function createMarkupRenderer({ state }) {
       return person ? token(`<a class="person-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>`) : match;
     });
     for (const { pattern, people } of state.personPattern || []) text = text.replace(pattern, (match) => {
-      const person = people.find((item) => item.name.toLocaleLowerCase() === match.toLocaleLowerCase());
+      const { person, ambiguous } = resolvePerson(people, match);
       // Unqualified names use the generic name route; explicit [id] tokens above stay specific.
-      return person ? token(`<a class="person-link" href="?person=${encodeURIComponent(person.name)}">${match}</a>`) : match;
+      return person || ambiguous ? token(`<a class="person-link" href="?person=${encodeURIComponent(match)}">${match}</a>`) : match;
     });
     if (state.placePattern) text = text.replace(state.placePattern, (match) => {
       const place = findPlaceByName(state.places, match);

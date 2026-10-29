@@ -3,13 +3,14 @@ import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 
 // The viewer uses browser ES modules without a Node package manifest.
-const source = await readFile(new URL('../docs/app/screens/tree.js', import.meta.url), 'utf8');
-const { renderPeopleTree } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
+import { moduleUrl } from './browser-module.mjs';
+const { renderPeopleTree } = await import(await moduleUrl(new URL('../docs/app/screens/tree.js', import.meta.url)));
+const { buildRelationshipGraph } = await import(await moduleUrl(new URL('../docs/app/data/relationships.js', import.meta.url)));
 const person = (id, children = [], extra = {}) => ({ id, name: id, children, ...extra });
 const attr = (markup, name) => markup.match(new RegExp(` ${name}="([^"]*)"`))?.[1];
 
 function geometry(people) {
-  const html = renderPeopleTree(people);
+  const html = renderPeopleTree(people, [], { graph: buildRelationshipGraph(people, { verification: { valid: true } }) });
   const cards = [...html.matchAll(/<a class="people-tree-person-link"[^>]*>(.*?)<\/a>/g)].map(([markup]) => {
     const rect = markup.match(/<rect [^>]*>/)[0];
     return { id: decodeURIComponent(attr(markup, 'href').slice('?person='.length)),
@@ -126,4 +127,24 @@ test('repository family tree has no crossings, overlaps, or clipped cards', asyn
   assertPlanar(layout);
   assert.equal(new Set(layout.cards.map((card) => card.id)).size, people.length);
   assert.ok(layout.cards.length < people.length * 2, 'shared branches remain small');
+});
+
+test('generated multiple marriages preserve explicit parents and repeated ancestry', () => {
+  const derivations = [{ view: 'facts', identity: 'anchored', usesGuesses: false,
+    sources: [{ path: 'data/documents/example.json', pointer: '/entries/0/facts/0' }] }];
+  const edge = (type, of) => ({ type, of, derivations });
+  const people = [
+    { id: 'a', name: 'Parent A', familyGraph: { views: ['facts'] }, relationships: [edge('parent', 'child'), edge('spouse', 'b'), edge('spouse', 'other')] },
+    { id: 'b', name: 'Parent B', relationships: [edge('parent', 'child')] },
+    { id: 'other', name: 'Other spouse', relationships: [] },
+    { id: 'child', name: 'Child', relationships: [edge('parent', 'grandchild')] },
+    { id: 'grandchild', name: 'Grandchild', relationships: [] },
+  ];
+  const layout = geometry(people);
+  assertPlanar(layout);
+  assert.equal(layout.cards.filter((card) => card.id === 'child').length, 2);
+  assert.equal(layout.cards.filter((card) => card.id === 'grandchild').length, 2);
+  assert.equal(layout.cards.filter((card) => card.id === 'other').length, 1);
+  assert.equal(layout.paths.length, 4);
+  assert.match(layout.html, /is spouse of/);
 });

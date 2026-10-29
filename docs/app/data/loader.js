@@ -1,4 +1,5 @@
 import { imageLabels } from '../image-labels.js';
+import { buildRelationshipGraph, verifyFamilyGraph } from './relationships.js';
 
 export function createDataLoader({
   repository,
@@ -17,7 +18,8 @@ export function createDataLoader({
 }) {
   async function loadAll() {
     const files = await repository.getRepositoryFiles();
-    const paths = files.map((file) => typeof file === 'string' ? file : file.path);
+    const paths = files.map((file) => typeof file === 'string' ? file : file.path)
+      .filter((path) => /^data\/(books|documents|notes|images)\/.*\.json$/.test(path));
     const snapshot = JSON.stringify(files);
     const [placesText, calibrationCitiesText, peopleText, particlesText, documents] = await Promise.all([
       repository.getText('data/places.json'),
@@ -45,6 +47,10 @@ export function createDataLoader({
       collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => imageLabels(item).includes('effigy')),
     };
     state.documents = documents;
+    state.familyVerification = await verifyFamilyGraph(state.personRecords, documents, repository, paths);
+    state.familyGraph = buildRelationshipGraph(state.personRecords, { view: state.familyView, verification: state.familyVerification });
+    state.familyView = state.familyGraph.view;
+    state.familyRepositoryRevision = repository.revision || 0;
     state.snapshot = snapshot;
     if (!recordPaths.some((path) => recordHasMissingSourceOrUrl(path))) state.recordLabels = state.recordLabels.filter((label) => label !== missingRecordLabel);
     if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = [...greyRecordLabels];

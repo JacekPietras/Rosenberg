@@ -1,0 +1,112 @@
+"""Build independently reproducible evidence views without registry genealogy."""
+
+from collections import defaultdict
+from .constraints import cycle_nodes
+from .dates import compatible_deaths
+from .model import BuildResult, Candidate, IdentityDecision, Relationship, fingerprint
+from .names import Names
+from .policy import OFFICE_RULES, SEARCH_LIMIT
+from .resolve import resolve
+from .scoring import anchor_profiles, make_candidates
+
+RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
+
+
+def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH_LIMIT):
+    assertions = [assertion for assertion in inputs.assertions if include_guesses or assertion.source.kind == 'facts']
+    names = Names(inputs.names, inputs.places)
+    registry, profiles = anchor_profiles(assertions, inputs.people)
+    conflicts, blocked, ignored_guesses = [], set(), set()
+    for identity, observations in profiles.items():
+        factual = [mention for mention in observations if mention.assertion.source.kind == 'facts']
+        if not compatible_deaths(factual):
+            blocked.add(identity)
+            conflicts.append({'reason': 'conflicting factual death constraints', 'identities': [identity],
+                              'sources': [mention.assertion.source.export() for mention in factual]})
+        elif not compatible_deaths(observations):
+            # Conflicting guesses are alternatives requiring review, not a
+            # reason to erase the independently factual graph.
+            ignored_guesses.update(mention.assertion.source.key for mention in observations if mention.assertion.source.kind == 'guesses')
+            conflicts.append({'reason': 'incompatible guessed death alternatives', 'identities': [identity],
+                              'sources': [mention.assertion.source.export() for mention in observations]})
+    # Diagnose anchored contradictions before considering inferred assignments.
+    anchored_edges = []
+    for assertion in assertions:
+        if assertion.original['type'] not in RELATIONS:
+            continue
+        refs = [mention.reference for mention in assertion.mentions]
+        if len(refs) == 2 and all(ref in registry for ref in refs):
+            if refs[0] == refs[1]:
+                if assertion.source.kind == 'facts':
+                    blocked.add(refs[0])
+                else:
+                    ignored_guesses.add(assertion.source.key)
+                conflicts.append({'reason': 'anchored self-relationship', 'identities': refs, 'sources': [assertion.source.export()]})
+            if assertion.original['type'] == 'parent' and assertion.source.kind == 'facts':
+                anchored_edges.append(tuple(refs))
+    cyclic = cycle_nodes(anchored_edges)
+    if cyclic:
+        blocked.update(cyclic)
+        conflicts.append({'reason': 'anchored factual parentage cycle', 'identities': sorted(cyclic)})
+    usable = [assertion for assertion in assertions if assertion.source.key not in ignored_guesses
+              and not any(mention.reference in blocked for mention in assertion.mentions)]
+    # Candidates must be rebuilt after removing incompatible hypothetical
+    # constraints so rejected guesses cannot supply positive identity evidence.
+    registry, _, candidates = make_candidates(usable, inputs.people, names, rules)
+    decisions, alternatives = resolve(usable, registry, candidates, search_limit)
+    for assertion in assertions:
+        for mention in assertion.mentions:
+            if mention.handle not in decisions:
+                decisions[mention.handle] = IdentityDecision(mention, 'rejected', mention.reference if mention.reference in registry else None,
+                    'anchored' if mention.reference in registry else 'unresolved', reason='affected by contradictory anchored evidence')
+    relationships = {}
+    view = 'with-guesses' if include_guesses else 'facts'
+    for assertion in usable:
+        kind = assertion.original['type']
+        if kind not in RELATIONS:
+            continue
+        left, right = [decisions[mention.handle] for mention in assertion.mentions]
+        # Unresolved endpoints remain distinct provisional mentions in memory.
+        endpoints = [decision.identity if decision.status == 'accepted' else decision.mention.handle for decision in (left, right)]
+        if any(endpoint in blocked for endpoint in endpoints):
+            continue
+        if kind != 'parent':
+            endpoints.sort()
+        key = (kind, *endpoints, assertion.original.get('term', ''))
+        sources = {source.key: source for source in [assertion.source, *left.sources, *right.sources]}
+        methods = [decision.method for decision in (left, right)]
+        method = 'inferred' if any(value in {'inferred', 'unresolved'} for value in methods) else 'reviewed' if 'reviewed' in methods else 'anchored'
+        derivation = {'view': view, 'identity': method,
+            'usesGuesses': assertion.source.kind == 'guesses' or left.uses_guesses or right.uses_guesses,
+            'sources': [sources[source].export() for source in sorted(sources)]}
+        edge = relationships.setdefault(key, Relationship(*key))
+        if derivation not in edge.derivations:
+            edge.derivations.append(derivation)
+    edges = list(relationships.values())
+    # Never flatten inconsistent guessed graphs. Keep competing guessed edges
+    # inspectable, exporting the uncontested factual subset of this view.
+    cycles = cycle_nodes((edge.person, edge.of) for edge in edges if edge.type == 'parent')
+    if cycles:
+        conflicting = [edge for edge in edges if edge.type == 'parent' and edge.person in cycles and edge.of in cycles]
+        guessed = [edge for edge in conflicting if all(d['usesGuesses'] for d in edge.derivations)]
+        removed = guessed or conflicting
+        conflicts.append({'reason': 'incompatible parentage alternatives', 'identities': sorted(cycles)})
+        alternatives.append({'relationships': removed})
+        edges = [edge for edge in edges if edge not in removed]
+    omitted = sum(edge.person not in registry or edge.of not in registry for edge in edges)
+    diagnostics = ['Ordinary mentions do not prove life; structured living-activity assertions are unavailable.',
+                   'Source independence is incomplete without shared event IDs; duplicate features are capped.',
+                   'Prose and synthetic seal descriptions do not generate relationships.',
+                   'Scores are uncalibrated matching scores, not probabilities.']
+    provisional_groups = defaultdict(list)
+    for handle, decision in decisions.items():
+        if decision.status == 'unresolved':
+            group = '@possible-group/' + fingerprint(names.key(decision.mention.reference)).split(':')[1][:16]
+            provisional_groups[group].append(handle)
+    # These are retrieval alternatives, not identity clusters. Every unresolved
+    # node and relationship continues to use its own occurrence handle.
+    for group, handles in provisional_groups.items():
+        if len(handles) > 1:
+            for handle in handles:
+                decisions[handle].candidates.append(Candidate(group, [{'name': 'compatible unresolved occurrences; no identity merge', 'score': 0}]))
+    return BuildResult(view, decisions, edges, conflicts, diagnostics, alternatives, omitted, dict(provisional_groups), {'searchLimit': search_limit})

@@ -15,6 +15,7 @@ export function createRepository({ location = window.location, fetchFunction = w
   }
 
   return {
+    revision: 0,
     getText,
     async isLocalServer() {
       try {
@@ -41,7 +42,7 @@ export function createRepository({ location = window.location, fetchFunction = w
       if (!response.ok) throw new Error(`Repository file listing: ${response.status}`);
       const tree = await response.json();
       return tree.tree
-        .filter((item) => item.type === 'blob' && /^data\/(books|documents|notes|images)\/.*\.json$/.test(item.path))
+        .filter((item) => item.type === 'blob' && /^(?:data\/(?:books|documents|notes|images)\/.*\.json|data\/(?:people\.json|places\.json|names\.md)|scripts\/.*\.py)$/.test(item.path))
         .map((item) => ({ path: item.path, version: item.sha }))
         .sort((left, right) => left.path.localeCompare(right.path));
     },
@@ -79,6 +80,7 @@ export function createRepository({ location = window.location, fetchFunction = w
       }
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || `Save failed (${response.status})`);
+      this.revision += 1;
       return result;
     },
   };

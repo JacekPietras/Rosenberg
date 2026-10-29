@@ -343,43 +343,138 @@ image URL. An optional `placeId` refers to the matching place ID in
 
 ## People JSON
 
-`data/people.json` is a JSON array. A person may have an `id`; when present, it must be unique.
-Relationship fields may refer to another person by ID when available, or by name when that person
-has no ID. IDs are optional and should not be added solely to satisfy the format. Unknown dates and
-relationships are
-`null` or empty arrays. Dates use ISO precision (`YYYY`, `YYYY-MM`, or
-`YYYY-MM-DD`).
+`data/people.json` remains a non-empty array in registry order. A person has a
+non-empty `name` and an optional unique, case-sensitive `id`. IDs cannot collide
+with full names. Preserve existing IDs, names, titles, biographical dates, and
+unrelated fields. Dates retain ISO precision. Registry titles and dates are
+summaries, not authoritative identity evidence.
+
+### Generated relationships (schema 1)
+
+Reconstruct relationships with `python3 scripts/rebuild_family_tree.py`. The
+command is read-only unless passed `--apply`. `--include-guesses` computes two
+independent views. The engine reads typed source assertions; prose is supporting
+material and is never parsed automatically into genealogy. Existing registry
+relationships are excluded from all matching inputs.
+
+Generated records contain `relationships: []` even when no relationship can be
+exported. Remove legacy `wife` and `children` fields when applying a generated
+build; never combine them with generated relationships. A relationship is stored
+once, on its parent for `parent`, otherwise on the endpoint with the
+lexicographically smaller serialized reference. Reverse navigation is computed.
+
+Illustrative output, not historical evidence:
 
 ```json
-[
-  {
-    "id": "Example_person",
-    "name": "Example person",
-    "titles": [
-      "Vogt zu Lauda",
-      "Ritter"
-    ],
-    "wife": "Example_spouse",
-    "children": [
-      "Example_child"
-    ],
-    "born": "1300",
-    "died": "1360-04"
-  },
-  {
-    "id": "Example_spouse",
-    "name": "Example spouse",
-    "titles": [],
-    "wife": null,
-    "children": [],
-    "born": null,
-    "died": null
-  }
-]
+{
+  "id": "example_parent",
+  "name": "Example parent",
+  "relationships": [
+    {
+      "type": "parent",
+      "of": "example_child",
+      "derivations": [
+        {
+          "view": "facts",
+          "identity": "anchored",
+          "usesGuesses": false,
+          "sources": [
+            {
+              "path": "data/documents/example.json",
+              "pointer": "/entries/0/facts/0",
+              "fingerprint": "sha256:<64 lowercase hexadecimal characters>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
 ```
 
-Use underscores in IDs instead of spaces. Preserve distinguishing titles or territorial designations
-in both `name` and `titles` when they identify a particular historical person.
+Relationship fields are exactly `type`, `of`, `derivations`, and, only for `kin`,
+`term`. Types are `parent`, `spouse`, `sibling`, and `kin`. `term` is a non-empty
+source kinship term, such as `Vetter`; no precise modern relationship is inferred.
+Multiple spouses are allowed. `of` is an exact existing ID, otherwise a unique
+registry name. Shared names and unresolved mentions cannot select a namesake or
+create a permanent ID. No self-relationships, duplicate edges, or directed
+parentage cycles are accepted. Repeated ancestry through different branches is
+allowed. Marriage supplies no additional parentage, and siblings supply no
+parents or transitive sibling edges. Attestation dates are not relationship
+start dates.
+
+Every edge has one or more complete `derivations`. Each has exactly:
+
+- `view`: `facts` or `with-guesses`.
+- `identity`: `anchored` (both endpoints are exact source IDs), `reviewed`
+  (at least one endpoint uses a scoped reviewed rule), or `inferred` (at least
+  one endpoint uses contextual matching). Use the least certain endpoint status.
+- `usesGuesses`: a boolean covering assertion content and every identity,
+  competing-candidate, and negative-evidence dependency. It is always false in
+  `facts`. A `with-guesses` derivation can be independent of guesses.
+- `sources`: a non-empty array of source references, including the relationship
+  assertion and all identity dependencies. References have exactly `path`,
+  `pointer` (zero-based RFC 6901 JSON Pointer), and `fingerprint`. Pointers end
+  in `/facts/N` or `/guesses/N`. A guesses pointer requires `usesGuesses: true`.
+
+Equivalent edges retain alternative complete derivations. Different evidence
+views remain separate; do not validate their union as a single genealogy.
+Contradictory anchored evidence blocks affected conclusions and is reported by
+the CLI. Incompatible guesses remain alternatives; they cannot erase firm
+factual evidence. Unresolved endpoints and explanations remain inspectable in
+the read-only build and CLI, with omitted-edge counts in generated metadata.
+No separate facts database or persistent review queue is created.
+
+### Build metadata and evidence verification
+
+The first registry record alone contains `familyGraph`, with:
+
+- `schema: 1`, `engine: "1"`, and `policy: "1"`.
+- `configuration.searchLimit`: the positive integer bound used for joint search.
+- `views`: exactly `["facts"]` or `["facts", "with-guesses"]`, including empty
+  or identical views.
+- `inputs`: repository-relative input path to SHA-256 fingerprint, covering all
+  recursively discovered source JSON under books/documents/notes/images,
+  `data/names.md`, `data/places.json`, the identity projection of `people.json`,
+  and the engine and shared Python utilities.
+- `fingerprint`: the fingerprint of the complete `inputs` object.
+- `coverage`: counts per view for `unresolvedMentions`, `omittedRelationships`,
+  and `conflicts`.
+
+The identity projection excludes `wife`, `children`, `relationships`, and
+`familyGraph`. This makes repeated applications deterministic without
+invalidating the build as soon as it is written. All other registry values are
+fingerprinted. Source fingerprints cover complete parsed files, including
+enclosing dates, citations, text, and newly added assertions; a separate source
+file-set check detects added and removed files.
+
+Fingerprint encoding is shared by Python and JavaScript. Recursively encode
+objects as `["object", [[key, encodedValue], ...]]` with sorted keys, arrays as
+`["array", [encodedValue, ...]]`, and numbers as `["number", "<big-endian
+IEEE-754 binary64 hexadecimal>"]`. Strings, booleans, and null remain unchanged.
+Normalize negative zero to zero. Serialize this tagged value as compact ASCII JSON (non-ASCII code points use
+lowercase `\u` escapes, including UTF-16 surrogate pairs), then hash its UTF-8
+bytes with SHA-256 and prefix `sha256:`. Object key order and insignificant JSON
+whitespace do not affect a fingerprint; semantic input changes do.
+
+Before displaying accepted generated edges, the browser verifies the input set,
+input fingerprints, evidence pointers, assertion fingerprints, references, and
+graph consistency. Stale or unverifiable builds show a visible status and no
+accepted edges until rebuilt. Do not relocate an edited pointer by searching
+for another copy with the same fingerprint.
+
+`--apply` computes and validates the entire replacement before writing once.
+It verifies that source inputs and the original registry bytes have not changed
+during computation, preserves record order and unrelated values, and writes no
+timestamps. A facts-only apply removes any previous guesses-enabled view.
+
+### Legacy registry compatibility
+
+The browser accepts `wife` and `children` only when the generated schema is
+absent. Legacy references resolve exact IDs first, then unique names; ambiguous
+names never select the first or last record. Name-only registry records receive
+separate internal rendering handles. Source assertions themselves keep their
+existing schemas; generated relationship fields must not be added to them.
 
 ## Places JSON
 

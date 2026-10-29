@@ -38,6 +38,7 @@ export async function renderActiveScreen({
   if (leafletMap && state.active !== 'map') destroyMap();
   if (state.person) {
     content.innerHTML = renderPersonPage();
+    setupFamilyControls();
     setupSealAnnotations();
     setupPersonMap(state.person);
     setupMentionNavigation('person-mention', 'a.place-link, a.person-link');
@@ -60,7 +61,8 @@ export async function renderActiveScreen({
     return;
   }
   if (state.active === 'tree') {
-    content.innerHTML = renderPeopleTree(state.personRecords, state.documents);
+    content.innerHTML = renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph });
+    setupFamilyControls();
     setupPeopleTreeZoom(content);
     return;
   }
@@ -97,4 +99,12 @@ export async function renderActiveScreen({
     state.lastRenderedDocumentsYear = documentYear(state.documents.get(state.record));
   }
   scrollToEntryHash();
+
+  function setupFamilyControls() {
+    content.querySelector('[data-family-view]')?.addEventListener('change', async (event) => {
+      if (!state.familyGraph?.views.includes(event.target.value)) return;
+      state.familyView = event.target.value;
+      await state.changeFamilyView?.(state.familyView);
+    });
+  }
 }

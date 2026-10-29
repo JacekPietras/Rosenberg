@@ -434,3 +434,13 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+/* Evidence controls also appear on person pages. */
+.family-graph-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin: 1rem 0; }
+.family-graph-controls label { display: flex; align-items: center; gap: .5rem; }
+.family-graph-controls select { padding: .4rem; color: inherit; background: var(--surface); border: 1px solid #64748b; border-radius: .3rem; }
+.family-graph-controls small { flex-basis: 100%; }
+.entity-relationships { margin: 1.5rem 0; }
+.entity-relationships li { margin: .5rem 0; }
+.entity-relationships summary { cursor: pointer; }
+.relationship-uncertainty { font-size: .85em; padding: .15rem .35rem; border: 1px dashed #b48236; border-radius: .25rem; }
+.people-tree-parent[data-identity="inferred"], .people-tree-spouse[data-identity="inferred"] { stroke-dasharray: 7 4; }

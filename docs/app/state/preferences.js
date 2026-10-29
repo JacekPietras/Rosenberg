@@ -22,13 +22,14 @@ export function loadPreferences(storage) {
       imageRegions: Array.isArray(raw.imageRegions) ? raw.imageRegions : [],
       language: normalizeDisplayMode(raw.language),
       showFacts: raw.showFacts !== false,
+      familyView: raw.familyView === 'with-guesses' ? 'with-guesses' : 'facts',
       darkMode: raw.darkMode !== false,
     };
   } catch {
     return {
       active: null, place: null, person: null, record: null,
       recordLabels: [], hiddenRecordLabels: null, sealNames: [], sealType: null, imageRegions: [],
-      language: 'english', showFacts: true, darkMode: true,
+      language: 'english', showFacts: true, darkMode: true, familyView: 'facts',
     };
   }
 }

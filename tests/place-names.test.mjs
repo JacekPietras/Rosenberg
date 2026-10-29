@@ -3,16 +3,8 @@ import { readFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import test from 'node:test';
 
-async function moduleUrl(path) {
-  let source = await readFile(path, 'utf8');
-  source = source.replaceAll('import.meta.url', JSON.stringify(path.href));
-  for (const [statement, specifier] of [...source.matchAll(/from '([^']+)'/g)]) {
-    const dependency = new URL(specifier, path);
-    dependency.search = '';
-    source = source.replace(statement, `from '${await moduleUrl(dependency)}'`);
-  }
-  return `data:text/javascript;base64,${Buffer.from(source).toString('base64')}`;
-}
+import { moduleUrl } from './browser-module.mjs';
+
 const { parsePlaces, buildPlacePattern } = await import(await moduleUrl(new URL('../docs/app/data/entities.js', import.meta.url)));
 const { createMarkupRenderer } = await import(await moduleUrl(new URL('../docs/app/rendering/markup.js', import.meta.url)));
 const { createEntityScreens } = await import(await moduleUrl(new URL('../docs/app/screens/entities.js', import.meta.url)));

@@ -98,7 +98,7 @@ class FactValidatorTests(unittest.TestCase):
 
     def test_legacy_default_and_strict_migration(self):
         value = self.document('Old text', {'text': 'Other text', 'date': '1395'})
-        self.assertFalse(self.errors(self.check(value, 'books/test.json')))
+        self.assertEqual(1, len(self.errors(self.check(value, 'books/test.json'))))
         self.assertEqual(1, len(self.errors(self.check(value, 'books/test.json', strict=True))))
         self.assertFalse(self.errors(self.check(value, strict=True)))
         self.assertTrue(self.errors(self.check(self.document({'text': 'A', 'extra': 1}))))
@@ -110,6 +110,13 @@ class FactValidatorTests(unittest.TestCase):
         self.assertIn('#/research/0/facts/1', self.errors(validator)[0].location)
         self.assertTrue(self.errors(self.check({'facts': 'bad'})))
 
+    def test_generated_registry_metadata_is_not_source_facts(self):
+        validator = self.check([{'name': 'Example', 'relationships': [], 'familyGraph': {
+            'coverage': {'facts': {'unresolvedMentions': 0}},
+        }}], 'people.json')
+        self.assertFalse(validator.diagnostics)
+        self.assertEqual(0, validator.counts['facts'])
+
     def test_guesses_use_fact_shapes_and_require_historical_dates(self):
         entry = {'guesses': [self.parent(date='1395'), {'date': '1395', 'text': 'A possible event'}]}
         validator = self.check({'book': 'Example', 'entries': [entry]}, 'books/test.json', strict=True)
@@ -119,8 +126,8 @@ class FactValidatorTests(unittest.TestCase):
 
         entry['guesses'] = [self.parent(), {'date': '1395-02-29', 'text': 'Invalid date'}, 'Undated interpretation']
         validator = self.check({'book': 'Example', 'entries': [entry]}, 'books/test.json', strict=True)
-        self.assertEqual(2, len(self.errors(validator)))
-        self.assertEqual(1, len([d for d in validator.diagnostics if d.severity == 'warning']))
+        self.assertEqual(3, len(self.errors(validator)))
+        self.assertEqual(0, len([d for d in validator.diagnostics if d.severity == 'warning']))
 
     def test_registry_duplicates_collisions_and_unmatched_id_warning(self):
         validator = facts.Validator()

@@ -6,7 +6,7 @@ Examples:
     python3 scripts/validate_facts.py data/documents/1397-04-29.json
     python3 scripts/validate_facts.py --strict-migration data/books data/notes
 
-The proposed schema is in data/notes/family-graph-plan.md. This script does
+The source assertion schema is in rules/json-formats.md. This script does
 not verify source support or historical identity and does not build a graph.
 Legacy strings and text objects remain accepted by default outside books.
 Book facts and guesses always require explicit historical dates. Strict
@@ -79,8 +79,9 @@ def inherited_date_bounds(value):
 
 
 class Validator:
-    def __init__(self, strict_migration=False):
+    def __init__(self, strict_migration=False, root=ROOT):
         self.strict_migration = strict_migration
+        self.root = Path(root)
         self.diagnostics = []
         self.counts = Counter()
         self.person_ids = set()
@@ -104,7 +105,7 @@ class Validator:
         return isinstance(value, str) and bool(value.strip())
 
     def load_name_variants(self):
-        names_path = ROOT / 'data/names.md'
+        names_path = self.root / 'data/names.md'
         try:
             for line in names_path.read_text(encoding='utf-8').splitlines():
                 line = line.split('//', 1)[0]
@@ -112,7 +113,7 @@ class Validator:
                 if forms:
                     for form in forms:
                         self.given_name_variants[form.casefold()] = forms[0]
-            places = json.loads((ROOT / 'data/places.json').read_text(encoding='utf-8'))
+            places = json.loads((self.root / 'data/places.json').read_text(encoding='utf-8'))
             for place in resolve_place_names(places):
                 variations = place.get('variations', [])
                 if variations:
@@ -301,6 +302,10 @@ class Validator:
         if document is MISSING:
             return
         self.counts['files'] += 1
+        # Generated registry metadata uses evidence-view names such as facts;
+        # it is validated by family_graph.export, not as source assertions.
+        if path.name == 'people.json' and isinstance(document, list):
+            return
         is_book = 'books' in path.parts or (isinstance(document, dict) and 'book' in document)
         is_document = 'documents' in path.parts
         require_date = is_book or 'notes' in path.parts

@@ -34,6 +34,27 @@ verification.
 The viewer is published at <https://jacekpietras.github.io/Rosenberg/> (read-only). 
 For local testing and modifications under <http://localhost:8000/docs/>, run `./server`
 
+## Reconstruct the family graph
+
+Read the reconstruction without changing files:
+
+```text
+python3 scripts/rebuild_family_tree.py
+python3 scripts/rebuild_family_tree.py --include-guesses --explain vogt_zu_Lauda
+```
+
+Use `--include-guesses --apply` to replace registry relationships with both
+independently built evidence views, or `--apply` for facts only. Existing
+relationships are ignored as evidence. Unresolved identities stay unresolved;
+the CLI reports omitted relationships and conflicts. The viewer exposes source
+links, identity uncertainty, and the available evidence modes. Source edits
+invalidate generated relationships until the command is rerun.
+
+The generated schema is documented in [rules/json-formats.md](rules/json-formats.md).
+Matching scores are conservative heuristics, not calibrated probabilities.
+Structured living activity, shared historical event IDs, and precise place
+roles remain deferred; ordinary mentions do not prove that someone was alive.
+
 ## Archives
 
 Archive catalogs and related research portals are collected in [`data/notes/archives.md`](data/notes/archives.md).

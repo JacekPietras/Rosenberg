@@ -6,13 +6,532 @@
       "Vogt zu Lauda",
       "Ritter"
     ],
-    "wife": "Elisabeth von Erligheim",
-    "children": [
-      "arnold_boxberg",
-      "eberhard_jagstberg"
-    ],
     "born": null,
-    "died": "1387"
+    "died": "1387",
+    "relationships": [
+      {
+        "type": "parent",
+        "of": "arnold_boxberg",
+        "derivations": [
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1395-01-27.json",
+                "pointer": "/entries/0/facts/1",
+                "fingerprint": "sha256:95d70f237b1fe790f97a867c7695825232ff74659f804300e5ef086e0166cd66"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1395-01-27.json",
+                "pointer": "/entries/0/facts/1",
+                "fingerprint": "sha256:95d70f237b1fe790f97a867c7695825232ff74659f804300e5ef086e0166cd66"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "parent",
+        "of": "eberhard_jagstberg",
+        "derivations": [
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1401-01-31.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:9882c7970b8bebf40936f0aa62df4479429ee95fd8eba8a5c4975bc1d80c94ff"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1395-01-27.json",
+                "pointer": "/entries/0/facts/2",
+                "fingerprint": "sha256:ab598525e5b91900a09ea8c8c640f26090268fdd166109af98f3aa554662fe24"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1395-01-27.json",
+                "pointer": "/entries/0/facts/2",
+                "fingerprint": "sha256:ab598525e5b91900a09ea8c8c640f26090268fdd166109af98f3aa554662fe24"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1401-01-31.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:9882c7970b8bebf40936f0aa62df4479429ee95fd8eba8a5c4975bc1d80c94ff"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "familyGraph": {
+      "schema": 1,
+      "engine": "1",
+      "policy": "1",
+      "configuration": {
+        "searchLimit": 10000
+      },
+      "views": [
+        "facts",
+        "with-guesses"
+      ],
+      "inputs": {
+        "data/books/arnold_von_uissigheim.json": "sha256:9a526b1557b844b5b60ac4518d038b226bcc17204821bf504b5dac4b4fc609f3",
+        "data/books/bauer_1872.json": "sha256:e163cd81d764ec7ae9d9730514db722f6e91bcd34fa7f2d17f9150e8c4bb33d9",
+        "data/books/bidermann_1751.json": "sha256:83f11a698bce2d8b1973639d4d6dcb01145a0c13aa14604801f4b12574b4fe5c",
+        "data/books/freiburger_dioecesan_archiv_1896_25.json": "sha256:d14fa34c8a2e9cf363d912c9b9854c892751a1ce7a90609a41cc25c0ea32e83a",
+        "data/books/kreis_mosbach_1898.json": "sha256:ac51719d0903977bbab660852c307140978790f05108ddb4ee6482638e0b887f",
+        "data/books/neumaier_1986.json": "sha256:1e4d3f76c513c855266ec059d655d68d91f0da24afab678df65a310833f77317",
+        "data/books/wappengruppen_1977.json": "sha256:b36a70b7b1bf03e18f64c338efa454621497163f74d92691f601331f942f96b2",
+        "data/documents/1287-06-13.json": "sha256:b741fb4b3846a34f87e57b2014a944ad7fbfc1ae0f0e4cd6b5f08b7905ed5363",
+        "data/documents/1291-02-20.json": "sha256:4e4fb458cbb73f2a36696585d1be7817756157a30ae3998957dde294581520ac",
+        "data/documents/1293-01-22.json": "sha256:f4dba031412a8bec25a86c615cfc3dedf63442032b8458be8f9eef6059eb0621",
+        "data/documents/1299-02.json": "sha256:9cd4db882873ea348c9057bbf99995c754f47218052460bbcb02316ebcf839fb",
+        "data/documents/1300-05-17.json": "sha256:85dd81f6ea4d66209b13f4293d15b8237a37b2d1b447ae96a636c0138615cef6",
+        "data/documents/1305-10-25.json": "sha256:ada52c6b4b2c16691ca7610693ffe357664cacef7f16c5801c37aef0a6489025",
+        "data/documents/1314-10-11.json": "sha256:dadde16ba3d31527dfc658239dfe6012dedb38b3978723b2b000ffca7a943bde",
+        "data/documents/1316-06-29.json": "sha256:8618df938597900fa2aa3c8e51cd730b16e52fd490072dd01f2aabdf2ca94d01",
+        "data/documents/1318-04-24.json": "sha256:40745d40574bcc4c4a4ddb968b82b3971aeb43d80f20c2903f3544f500bee449",
+        "data/documents/1321-05-01.json": "sha256:ea1c9850e7bc26e2470e251f484cf2cb1df68aba08ef47677886d0505a4ecb0c",
+        "data/documents/1323-02-01.json": "sha256:7ea244d17a07cdebf6f0a324c58a4ba75a99521c105ee2f1c0136f53c9ac8c46",
+        "data/documents/1323-02-01_2.json": "sha256:a24f21e4e8e3e80393ad2e4ae181a0b2253f4796763ae2e0c22e2581c495be9c",
+        "data/documents/1323-03-17.json": "sha256:ecfcad4c9e80ce91d6facb586ba3d01540ab910ff80242a86275e50c3022621c",
+        "data/documents/1324-06-28.json": "sha256:6e3f0ecd76f3706829a2c7fee3a151246034b54c215bec2ed9fa2fac7f53d4aa",
+        "data/documents/1327-05-04.json": "sha256:86ea0bb00bb572a80e69ffc0b46ddbca3edc0a238c8164a646bbd58eaa69ddeb",
+        "data/documents/1327-05-25.json": "sha256:60d2c38ee0460265cc26ce7c48f3a19cfc6c0b3c0af126274530b96433648824",
+        "data/documents/1327-05-29.json": "sha256:4e0600486b5834b3b717448fbca162ef80e6a7eb6238548b383e64e9b37d0c8d",
+        "data/documents/1327-06-05.json": "sha256:3f59821e69d94cd5ea18e013dedf823ca504311ef65a3b259b71d81aa13d1c83",
+        "data/documents/1328-03-26.json": "sha256:74cbf1194e77be7586b9a3db32133db89e8ff93c3920498d2ee833f3a4791073",
+        "data/documents/1328-11-12_III.json": "sha256:0afadba203ae8c35ada04fa08e8ac034a4ed17154570bbd9b0868cf3432bd31a",
+        "data/documents/1329-08-31.json": "sha256:44ec3a6e508cc85d1eba95b3a755b3db11061a35d30104a4297ba05866d9227d",
+        "data/documents/1329-11-24.json": "sha256:05d56795de7cacc1e5626fe905c9799bd6fa92c25530f57b40cebac46dd16d5f",
+        "data/documents/1330-02-01.json": "sha256:3a3eb6170a3dd5a073d661aa177b9f9eb3f10990c9b6b76398faee18cfac50a2",
+        "data/documents/1330-04-24.json": "sha256:acc8f6a36b38feca88898f77d78877657f7c52b79afe8aa050ac5b3da097a538",
+        "data/documents/1330.json": "sha256:19cdd1c8ec57960ca49722a373b07a8f310c61cc1f194bac0c92b7629210e202",
+        "data/documents/1331-07-05.json": "sha256:8b1ff6aa9c18948f885f26ee3a6dd90fa9046b8889c2ac73f5164538af3d8ab9",
+        "data/documents/1331-12-14.json": "sha256:378d8354dff60564a237a229d1f807c88da4dcadf0e401342a030971d8014370",
+        "data/documents/1332-11-24.json": "sha256:b28df47364ccceb92e5699a2c691e4a5a9b2ec2242cf87a7a510f0777c261b6d",
+        "data/documents/1333-06-09.json": "sha256:bf300e1cd46446cfef0437ab644d410a5a06d90c44c890405991d2d4f6899306",
+        "data/documents/1333-06-30.json": "sha256:bb72913ef5842e3fcf03f3e3cf1003376763c8bf940aba657924fa779358f10b",
+        "data/documents/1334-07-09.json": "sha256:a216d2ddd6a41d8d4e3dbbb1f947994923236ff2182d6f03f3735d78e22119cd",
+        "data/documents/1335-01-30.json": "sha256:d07be6510f83d730df66385c7ad43e5c331906d61f249d479170db64f404228c",
+        "data/documents/1335-05-02.json": "sha256:136abc2c76b7d306f060705dde5c0c84b79928b40d0764ef6d6be3af9eab37a9",
+        "data/documents/1335-11-27.json": "sha256:69c1f3f7ca0040863760808f56b15565294fbfe66e48a0a2890b56ae6f56fbe8",
+        "data/documents/1336-08-16.json": "sha256:425197782b398a694c023718cfd2209d2bbcd02f975d0cf14b267b9cd843712b",
+        "data/documents/1337-06-02.json": "sha256:85cee0c79fbe07cb59832e7785c63f6a4ea8583d79de999a60b78e41ecccd9de",
+        "data/documents/1339-05-07.json": "sha256:ad13b96bbf53908c4bf5a95cf93a6bcb1b8f6a984bbe46daa00f63f7bde9a998",
+        "data/documents/1339-10-15.json": "sha256:05054e364954adb4ce10ed317f5bb974bf6ec01a950ad767aeb4e183677ca483",
+        "data/documents/1340-01-02.json": "sha256:18104c454a1506c1a2aeef0538982628e74ce7036591b6828cb5b08ea0bb38ff",
+        "data/documents/1340-08-29.json": "sha256:1f6d7d5033f473ce3f04c69d0c5b3f771e0f14964714f09cb79fd770b17784f1",
+        "data/documents/1341-02-02.json": "sha256:8f448c313f4fc187e32dc152b1a2da81a5b0f963b6ae061996cd273ca71a96f9",
+        "data/documents/1341-04-30.json": "sha256:03e552e535b2aa5eb239ae06c61caae628b0ffcf9dc5c2d1250b22c50ce530be",
+        "data/documents/1341-04-30_2.json": "sha256:0d36aa765b39dacfff2c9cf8d9002db87a69fb3199ad9b0958fe211efb7dbbe4",
+        "data/documents/1341-05-12.json": "sha256:59a5d0aee4fc0f0e2321086d6a54bddb73671d55915903b7443106e8cf82aafd",
+        "data/documents/1342-02-15.json": "sha256:0820134c9b66c65c4407eb6cf60cf7febe484346bd89e533eb56a8fd623dae1a",
+        "data/documents/1342-04-06.json": "sha256:087319b28915668c87064abff9382b39f77c557c331fd68dfb6561feb0196b9e",
+        "data/documents/1342-04-23.json": "sha256:f6b28208adb18728ad8e75ba57c925015532e1343aeccee4674e0a32e26f6ac4",
+        "data/documents/1342-09-03.json": "sha256:01bc4549c28e932e5436e694feb54b2968cb475a2af2e1562058130573e8e652",
+        "data/documents/1342-10-27.json": "sha256:0ff215923f7241d4837ff43622ed73d2eb94e1cc27321da0302319d37542d84f",
+        "data/documents/1342-11-07.json": "sha256:61dc269215037a022434cbb1a67a421e09c7fe71fcedbf1d0d8b4c32f777178e",
+        "data/documents/1343-02-21.json": "sha256:f3a26bc93be7172f7d868847dfa83ce864dc37ce333ab5e9a821abb8c867d24c",
+        "data/documents/1343-04-30.json": "sha256:2dabc8ee0991b30920f048ec90b94bf2061751860caa655fed7953aea9952532",
+        "data/documents/1343-09-11.json": "sha256:200662a504482b546edb6e1a1380eb4df33569b6ef6fd88fe47450c1e94a436f",
+        "data/documents/1343-09-17.json": "sha256:1ec3242718db8163015c00bf1c4b7c996a350ff012f5d2f3a323976c8aaa89dd",
+        "data/documents/1343-11-15.json": "sha256:ecd7ae59d4b566a6d91edf67edeb411b20e6c08f75942017ab7357ef21d51e2b",
+        "data/documents/1343-12-04.json": "sha256:55dd1a17cdc87fdaafb356344aaf29b459c032fbbae3920b406cc208356a6e9c",
+        "data/documents/1346-03-20.json": "sha256:4eb5c9b5bf4b4badb0f4e509f797d1f2650b50a716a4bf1dbc604d9940eaa9f1",
+        "data/documents/1346-08-31.json": "sha256:80603d429ebe406741022e72f1611218448aa527c16d038ef58d2b6204b889e8",
+        "data/documents/1346-10-25.json": "sha256:60fbf9529216c338522d547658fec7614a747fe289ac2da1223ec885bbedbe60",
+        "data/documents/1347-02-23.json": "sha256:2830a1bbed444bf4d80fa47823e9b80ae7aa722ada47bdefc958d596a8f3e450",
+        "data/documents/1347-03-29.json": "sha256:24553b75b46ce56c0d0de231e937c515c584cf305cd5133fedea6435886c64b2",
+        "data/documents/1347-04-13.json": "sha256:aa88b73b86f802d78eb1c99816bd6441c8b3e21745a78e35572225e50da1ea2c",
+        "data/documents/1347-05-27.json": "sha256:86b20b454f7b82ed2550d818d030f6b43659b4e7dbb3adf0bf74c27b2ebdae6e",
+        "data/documents/1347-06-04.json": "sha256:905561d6c3fcd7f6042f2092bac3979a945a72920dc8a1dd747d72573fdb4b34",
+        "data/documents/1347-11-21.json": "sha256:44ebd2bba416dd210a581839eba8b12c9d908c9a1718367188960c2c4a6a824c",
+        "data/documents/1348-01-07.json": "sha256:831c33dddced8838834ff4271dec856f2af8df831335a6009b286f94a0be1962",
+        "data/documents/1348-03-02.json": "sha256:e772e908c430746d15ae6867dbd60cf49402e1eec9f1478f627137f1af9c7016",
+        "data/documents/1349-09-02.json": "sha256:0fe7bacde70436477610c4ce2e1e62062d5c975caedf5815cb161a8d6a639a40",
+        "data/documents/1349-09-15.json": "sha256:73fcb1c547fc6e6be85180ccd165443717429d5082ea00e07a77e039f26fe07c",
+        "data/documents/1349-09-28.json": "sha256:7060ce020d6216247a6bede150d92f09fe028c70c0e41bf201bc280ce7ce4705",
+        "data/documents/1350-02-11.json": "sha256:f0672c8327d4a0f9516176eb31d52b31a0fdc5e9cf53e4abf26381e081278b99",
+        "data/documents/1350-06-18.json": "sha256:c750da8c33b6a4fe1308c081c72ae87c689522cccfbf6389a62327488c4417ca",
+        "data/documents/1352-01-07.json": "sha256:316858e8e5b60806ea179648c76e095801f087be788dfbbfe0e13d8ec7e1a1a4",
+        "data/documents/1353-10-31.json": "sha256:edef053ee3d3456f65da2081a191269e57926814467ce29862e4221b94487e65",
+        "data/documents/1354-01-20.json": "sha256:71057d788dfa18facae9b5baeac15dfe8002f9b1a16f5d2641f4ee272ee09a5f",
+        "data/documents/1354-11-07.json": "sha256:827341e1b6e8a7dfcbdde1be8d6226c0f6805dcaa712a5a896e1f7c1cd713488",
+        "data/documents/1355-06-10.json": "sha256:2c7064c6b818edfde4805f0050dfe534209daa748ca7f6a1bc8eb89ebdee74bf",
+        "data/documents/1355-08-24.json": "sha256:342e5a650395351f0e661b0aa7459d0cbc672aa684b108a82c8ee6773088cdeb",
+        "data/documents/1356-01-19.json": "sha256:305c06353afe62ced45500256ed9c1b21f4abdc47d441397692b597d44e6cb30",
+        "data/documents/1356-04-09.json": "sha256:0d7c74adee5ceefe8b3c0b812e482f5b6590cfcc8287bd6eb570c757946ffe57",
+        "data/documents/1356-04-09_2.json": "sha256:f8df3ec0720068ea595c1e6cc5e1c6e11a48b65c1d33277705cfc253192c6214",
+        "data/documents/1356-06-04.json": "sha256:5932f34fedfd3f172ff22ef740b38615bccaa90830553d8ae3ebd7875a09ea09",
+        "data/documents/1357-01-31.json": "sha256:4327deb4c0a9d61526315c36b5f2bf54aa99c7facf0b7082553632b65d22acd2",
+        "data/documents/1357-02-03.json": "sha256:7a494bf1b49e53c3621ad6a207ad55d25f7e321ee9bb1ac8c3ca2af299415f37",
+        "data/documents/1358-05-19.json": "sha256:2880edb00707f39b6ee01ed0b2bc890fb839c019ea4143bb6fb8b391ea63d032",
+        "data/documents/1360-08-03.json": "sha256:cfaca9b0ca9f5f28764d013ad967fd55e418687f477e60ebad88d0b08652571a",
+        "data/documents/1360-08-03_2.json": "sha256:0dfba9f207605f34930d1a8342e05adfdd22ad5ed2f39d055e53ae0b2d499e98",
+        "data/documents/1360-10-23--1360-10-26.json": "sha256:c14f3c5a22434123c87e50d271339eb6d9f64965c704005f83157ad78af6634a",
+        "data/documents/1360-11-24.json": "sha256:7a0a1600f064d44b955132e4f4d1a83015eacbe83c51a4bd9e64298150fc8011",
+        "data/documents/1361-05-24.json": "sha256:c683cd95e1b79b355df001b53d6e6a27006be05e690f6a3e00e2ea76d3a0197d",
+        "data/documents/1361-07-22.json": "sha256:44bcbf24631a1197f281634c8255e080a39ea2c4e78c74f41f36b624e981738d",
+        "data/documents/1362-05-14.json": "sha256:40a04062146f2c8c5114e825d5bfd8466af4a32b0e94807c29224a73c922c5b7",
+        "data/documents/1362-05-28.json": "sha256:6fa64bbbd4b616f0d8081899711fe4d43232a35ba516abe0a1adb80597681ad6",
+        "data/documents/1363-02-01.json": "sha256:1361dc73b60fd989b5d6f92aa27a23038bfcc1aeb4517336ec0df1bcc20f7c2c",
+        "data/documents/1363-03-03.json": "sha256:cb3b7b7c006ba31ecb7c77c30fe4eb9ef9c28286967f9d4022ac7c97281fcc80",
+        "data/documents/1363-04-14.json": "sha256:cdf128952fe653feddad31c0a01ea8cdec5ee5ab7591c8295b5cc79c75970e63",
+        "data/documents/1363-10-12.json": "sha256:dee3756a07959cded753aa4890675bd826ef310e5bf2522a424401506c9b1ff2",
+        "data/documents/1364-02-12.json": "sha256:f0571ce77773aa2c1bee32ada50fa3b89a90b89ebcd2633c67ba5626a8b217ab",
+        "data/documents/1364-03-10.json": "sha256:68c4ad9d0d1f688912a11b2e431a8f9703f176f8ee54759457305627cedf6873",
+        "data/documents/1364-05-20.json": "sha256:e8b316c333dc66ed78a605b711ce9be6f3b348102a5c3ae8a92506e67273c76b",
+        "data/documents/1364-12-02.json": "sha256:ad5d7b36b32046739a8873718aa9613b8dd0139ad687492c71644665c4dc548f",
+        "data/documents/1365-02-22.json": "sha256:e7535c5d26425c7e5fbf346d380578668fbc81bb1ccf42d803c5ab625512f4ab",
+        "data/documents/1365.json": "sha256:436bf17a5e7c6ebc6da63182a505f3eac986c15ca78ea81de179b9a716c81332",
+        "data/documents/1367-05-21.json": "sha256:bdb1f03f7cc7e844b260c7162fc3e603396a18a84d342da1e16569996a28c058",
+        "data/documents/1367-06-04.json": "sha256:a20080a525e1059e4040a903f5038090dbabdd3b8e098461ad7d76d43695bb38",
+        "data/documents/1367-07-26.json": "sha256:c5216b6822e57dc6f69fd3c92cbf9db93282e128a609d1379af4632feecc64e3",
+        "data/documents/1367-10-06.json": "sha256:53349920550dfa479006612cacea7ddb9b4031dcdef551cf423190ce67f3bfe0",
+        "data/documents/1368-02-28.json": "sha256:00ea32be8315ff075893bb54f3d3442a429df9e974320146f6cde379a3abfdb3",
+        "data/documents/1368-03-14.json": "sha256:f54abc7c1199e73c8ddd1f169b7dbe163991de484861d9960a33a80c455d75a9",
+        "data/documents/1368-03-20.json": "sha256:975c1f7b1638106fb1a2569792c67f965607c7b1cfa45219ec8c1791ff7d1049",
+        "data/documents/1368-03-28.json": "sha256:2371527e7feced2e3a5a6db394d89e06136081363e8303efcec6eebefd9a8d99",
+        "data/documents/1369-04-04.json": "sha256:e8f562ec1cec5af13500bc8412af7e9d05c6e37831c0cb0b0ed6765d0860ece6",
+        "data/documents/1369-10-05.json": "sha256:a6ca744aadbcb3357b7ec0ea2f5980bc23c50efc3c6ddfaf063fa32a4edf0135",
+        "data/documents/1369-10-05_2.json": "sha256:16b3bd788fdfb017cc2545f5f8fd799b2dec1cbcf1dae9d8f05b620aead7210d",
+        "data/documents/1370-01-09.json": "sha256:f0476955b11fa35e8398a6470865d556b73d8b5017583554a03e03651ebeec40",
+        "data/documents/1370-10-21.json": "sha256:f2d1f45eac0ecbb1e7532b5352dc44c5ba9720f49f22bc32cf546273424a1df6",
+        "data/documents/1371-02-07.json": "sha256:eecc781a316bea7adfb67c9508da651c6698e48addaa963aeba6ec7789a4fce6",
+        "data/documents/1371-05-19.json": "sha256:904e57659a1b9329f35895b26e8fcbc79402521de2b4fe435cb426f11011d167",
+        "data/documents/1371-07-24.json": "sha256:e46cbbfc241a7c5345ecc5513c9a942c1e23616aabdb59ae8aa2385276e0b72f",
+        "data/documents/1372-01-03.json": "sha256:e2ac91a7417aad7403664d5a12ad0af2b59aa42266cb0c91cfb0bc2ed8573ccf",
+        "data/documents/1372-02-23.json": "sha256:b1e206b115665b835d92072d1bb2c875f69a7bb157c8ce917d0663dbc0511e27",
+        "data/documents/1372-03-18.json": "sha256:df3154f46d54f13fa3e2839845f13828727adb91971d74844228efe8bdbe7831",
+        "data/documents/1372-05-22.json": "sha256:069ae58cc450f18643e275a832ea07fdd87b4be9dd688e016f2a88a42b4bd6e3",
+        "data/documents/1372.json": "sha256:04e436096599125e91d748685ade25254040e56ee4064babe906439931f4f284",
+        "data/documents/1373-07-08.json": "sha256:697612b2474de3105a44aa6c39a5b14152c1c5919a2f945969c28b3c21ea3cce",
+        "data/documents/1373-08-24.json": "sha256:f8a7d2adf144060e9e5a43596b5dde857e965e8572c42583b493a0f2cfe6c681",
+        "data/documents/1374-04-14.json": "sha256:e2b24794b764a015bdb0c82d748ff37b10dd21ccd279bb7a6d819195d0bc584c",
+        "data/documents/1374-07-10.json": "sha256:55b9781742376527f1e4ff347e16029893cf739f431b84020f6bf5758adb9bf8",
+        "data/documents/1375-03-25.json": "sha256:93347d465c9509608421610eb6e2915ac8828caed5befa53ad929f2202cf0169",
+        "data/documents/1375-06-15.json": "sha256:819441cb0fa68f0e206031a7557cf8cbaac9a5c6c0a435a846bdac69bc6b02dd",
+        "data/documents/1377-06-04.json": "sha256:cd2d146ed9a61c00864b8cfe79a60bad03cc54bdd3c4f5415c88af3571ea5b8b",
+        "data/documents/1377-10-12.json": "sha256:73ca6a3be97f4f09ff267621fad776cf8fa78f000414294c527d85d1b56a7a52",
+        "data/documents/1378-04-17.json": "sha256:3f0d85cff27be67aa72d416225fd33df9f9c02906b87871c10441fa034dacc01",
+        "data/documents/1378-06-05.json": "sha256:888582506d93c9e684611937962ad94c77fc27d9faaf954ddf5913c5d45d2216",
+        "data/documents/1378-11-29.json": "sha256:9501cb2a2e2efe72288113124dc1b1b8e56a415cd196feb469f8c8f4666ede06",
+        "data/documents/1379-06-08.json": "sha256:af971127394ab7220e9a71e52b1345f3aa654183eae4227bd6b60ef94be4b41d",
+        "data/documents/1379-11-25.json": "sha256:4cd0110d522fef26295e17ff7b7770b11c6a91e9a9390297339659acaaa6ee8e",
+        "data/documents/1379-12-16.json": "sha256:71709471c2be4ba1de47a4ca8eb9343e3b42563e63a69202743104a6a30c42a7",
+        "data/documents/1380-12-27.json": "sha256:c40cbdbb21cea6181ef2f801b2d7702fbb27a823b3d00bf9816061413c288fce",
+        "data/documents/1381-01-19.json": "sha256:5b6e0a23f93719125574aa89c64e0686c412c3e4c638c0b3773785820d91ecb1",
+        "data/documents/1381-03-28.json": "sha256:b412a8377d001950a026667be889fef71d0bcc8551f407e55e4ddd4bdeb5744c",
+        "data/documents/1381-05-08.json": "sha256:6c14bafa9fc89ef7f37575e1bdbd5b8ac93b47044fcd6fb51f5d47e16387ef1d",
+        "data/documents/1381-05-25.json": "sha256:48a826167672e8452e6dc6879ae14e39f8ccd69417e8ba7fa8753d4531e504e7",
+        "data/documents/1381-05-25_2.json": "sha256:18aabc2f8ee5d17bec91e2f210ef4137b43959e450cdd60e1ba971cd83df5682",
+        "data/documents/1381-05-25_3.json": "sha256:9680375ff60358ca1aaab20fb02dd9b4c66126a56b03066c880c862ba99e3c5b",
+        "data/documents/1381-05-25_4.json": "sha256:76d4aa0ea572ef37359cb9e8e8c8072f4c0194d3f1e84be8655a35f7a879564b",
+        "data/documents/1381-06-14.json": "sha256:cfe772b46ef48a991f3b14fa28815ccdc9702ffd297eff2238173dd53da27616",
+        "data/documents/1381-07-26.json": "sha256:9c0650fcf3c59e23cfb1436d697eaae771d3e937437204ce202c25602d643b34",
+        "data/documents/1381-09-15.json": "sha256:c4de2fb67a98e89d53236a36390aa829246e339e5ac230b793e5e31fadb2c3e5",
+        "data/documents/1381-12-07.json": "sha256:b3787cfcec3c57a2df845cf3b4ef09e837d66be4980d4c6722619235bdc2519d",
+        "data/documents/1382-01-09.json": "sha256:953dd51d6ea838c42da1891622b32159e6ee9a74c67d253e40661c14f89adc20",
+        "data/documents/1382-02-15.json": "sha256:b2643f3941dedf56202f2421c88f203243baff5dacfa2ed922bbead86497b6ca",
+        "data/documents/1382-02-17.json": "sha256:3f711e484dba2035fa1df44154cefdceb9075a72979486f4de2288acf1517750",
+        "data/documents/1382-03-01.json": "sha256:ab082e930146cda9a044b9403c730ee2343cf42fe3ea85cd062028f80c5951d4",
+        "data/documents/1382-05-20.json": "sha256:27150076c7e401a24ad74f28f57cbf1e85365b7052351df25fa5383d1d6e9caf",
+        "data/documents/1382-07-21.json": "sha256:d4534374ab7175356ccc4e91eaf8fda6331140dc4d85c90913bd1255a4eec60f",
+        "data/documents/1383-06-27.json": "sha256:2673137b4f74bbe6c2ad7ee51a6b9e65baffaf5441760245def36dc8e9c93436",
+        "data/documents/1383-09-19.json": "sha256:20dd3311cbacf3005ef524b6a4d1406fb45e13a2f0f0e420ce94cf4d4115d0b2",
+        "data/documents/1384-01-06.json": "sha256:11607bc71d0aebbaa08743a6df70cc6286987da663ce834c7b19b980bae40d19",
+        "data/documents/1385-02-19.json": "sha256:5951f2e6667502348f8893967510cb71482be28321b4e3df004fc4e4d1ee0ef4",
+        "data/documents/1385-02-19_2.json": "sha256:c1f4d13f09d4432cec5b819d9bc2777262f0e92155f886e45bf42f0ff6199a86",
+        "data/documents/1385-04-25.json": "sha256:731ac62235a3b5d74c0c0ed7cf7356f3de123f7c31c6aad81512d5d69b693686",
+        "data/documents/1385.json": "sha256:9d7abf370a7fa766da40c8f4129e16f1caa9ddb331e3c0d010063d43af9120e9",
+        "data/documents/1385_2.json": "sha256:b0f8479dcdc388448c632f47b95e65ff9e2191ea0d6e38d539c61d37886a949f",
+        "data/documents/1386-01-08.json": "sha256:106bbf62e05b94258333508850b25beaa53473e08394dd6a509086a94ee8df73",
+        "data/documents/1386-12-21.json": "sha256:509244da6f3c36ad28b77f3d44bff92643480d67b4b774c759b1dcbaff396daf",
+        "data/documents/1387-01-07.json": "sha256:d64061485e671a21b1a6a178d5a2ca46be746d02283f5600636e26e93a918b81",
+        "data/documents/1387-03-12.json": "sha256:a2fbe67292100287a2474a59ea087f384e3395288ac31fa4e2ed4a7810b91141",
+        "data/documents/1387-05-26.json": "sha256:7883d426408486fd5f581793f684bc2a7e16d2e6f2e41ae996c7e38ef0525c98",
+        "data/documents/1387-05-26_2.json": "sha256:82caf5724b4cbfe74c89c4608c64956307b7bc6dfae35c9d3232bced5de686f0",
+        "data/documents/1387-06-22.json": "sha256:9b257041b98c74f6b9407b89b08628b5803d082fb098e20be1f53683798aee41",
+        "data/documents/1387-06-24.json": "sha256:c5a99f685f14f61cf0f5a76ce41a08d7cc1ac3270d6c124ad333b2b8194b5f74",
+        "data/documents/1387-09-23.json": "sha256:c76607bfc0dc24ac383b4ce17e1a324c502592d40379695e3b6e2c6ae8b81f47",
+        "data/documents/1387-12-28.json": "sha256:29cc9d9f76e194c3b215d16561202ade7efc18651227ca5bc2c71da437669cbf",
+        "data/documents/1388-04-06.json": "sha256:bb07b14e6c1b5e6d99c3108aa0413f081806902a9c5ff658d1a9e02e02632a6d",
+        "data/documents/1388-06-29.json": "sha256:526d97dafa4da0edefc05e7cd1f1ef47bcd707a56d08c1b4b786d271e4cd9d54",
+        "data/documents/1389-01-18.json": "sha256:43e895713931112210d11e21dc79786dd9e67cbf7d8a3c02c6c133f4e4478795",
+        "data/documents/1389-02-21.json": "sha256:f5392d9b91ff12a37f0a6ac4322fd3606fe2bb824a28c7b28b1af40e664a96cb",
+        "data/documents/1389-03-28.json": "sha256:86a31063372236b509bd86ddbb100cb9e3450ac452b8200ccc3ff4d1b8f8e472",
+        "data/documents/1390-03-13.json": "sha256:4e4790ba6ca0c6bd43d2808a544b3eb459a97104170fde218c26cf951b2a8dee",
+        "data/documents/1390-06-05.json": "sha256:fa19f04a0ab402b80a18e2dcfe67122c7fc8f634b206e99a23471071cce34a1d",
+        "data/documents/1390-08-03.json": "sha256:ae8faa93ce112d83df6fd29ebbe6c5425372df36b038116f428020e5f93fc65f",
+        "data/documents/1390-10-31.json": "sha256:351ab051b4c192fedba1e299e4322414e5a0cac5e621549927c8bfedd2652b25",
+        "data/documents/1390-10-31_2.json": "sha256:c76fd61c6ec9b124a40658f85f7e68f5b9b861b8f5986d791e9c86972778fd7d",
+        "data/documents/1390-12-14.json": "sha256:fc63bd953a0e2f7f0e633ea76064ef7262a926f8a5255f9ee0185c630eed55b5",
+        "data/documents/1391-06-25.json": "sha256:de6bd3ba11279caff5539066d42563230e3bfee6b04ae10355a6d999b26fcae5",
+        "data/documents/1392-09-13.json": "sha256:ddcf88d75c15f778c62c94f0b5e2eafcf70784df8e3e8a25d1901156f38d6114",
+        "data/documents/1393-01-20.json": "sha256:527672032fae18dce5f1422c4c20cfd2a4c6e9e720484c4b41dc2687742074dd",
+        "data/documents/1393-03-01.json": "sha256:4843b7ef09dda9dfba786e6be03ad7e8dc455c74a794642a7b08f709282bf7f5",
+        "data/documents/1393-05-05.json": "sha256:85b3ae1bda44c182f3df19a6ceaf1aeced35dd43d2da61591a3c321132d170a9",
+        "data/documents/1393-06-23.json": "sha256:380d3307d29b1ffcf88aba28279d98242949af79ce1ecdf26a6e7c75c3c64036",
+        "data/documents/1393-06-23_2.json": "sha256:6eb81b07fb3b9201f58b565747df6a0bb229b659e2bc163adff66f8cd12eeee4",
+        "data/documents/1393-06-23_3.json": "sha256:506808a3ee685ad23bd4356756859df2b1d1be82a816972689ce2259029a8466",
+        "data/documents/1395-01-27.json": "sha256:47d2fb21be5f0fbfe352db867083ae8d80e3b5a68f93ad4fd1051620ae8e9509",
+        "data/documents/1395-08-14.json": "sha256:6a830e5685813938b1ae133fbeb73e6eafd8a5f7baead5934f2baf97ebb145e6",
+        "data/documents/1395-08-23.json": "sha256:c3dbdf48f8831b35368cc6e239242c3aac02bf5fceb8a06557f1033bf70b01b7",
+        "data/documents/1395-08-30.json": "sha256:e734035f4d253f01c4901ac69433c5d25c6d8e69e43f10901bd4ad5edeafcdd3",
+        "data/documents/1397-04-29.json": "sha256:c94078580a8476cd7f792c92919b6adef347e06642c1dbae9fb914ca6d72aeec",
+        "data/documents/1397-04-29_2.json": "sha256:fcc61dc285ea844031bc5132ee600f41c1b4ef49b17bb8169dc5ed5658db90b8",
+        "data/documents/1398-04-11.json": "sha256:a85a4b84b1435437950d90ccd32fa34ff6dea30ac8e75d60158b90f8c865e515",
+        "data/documents/1398.json": "sha256:4ddd8616c60bfb954a5a32fb0db2b55cadadbabab707d4b76901ab3a64a4c012",
+        "data/documents/1399-05-01.json": "sha256:e1eef28983a6156b136defca76a66efa3c203bf17e4a2897a0bbb8af110f79ba",
+        "data/documents/1400-12-10.json": "sha256:0db6b6235e213f33a791c8ec4000def9a49dabf80f462004ecd59e32d8a84f80",
+        "data/documents/1401-01-31.json": "sha256:11eec00a66d7f4092e69306ba155097dbf5a71da90427e9e59a25a17699892ea",
+        "data/documents/1401-02-24.json": "sha256:00cbca32384cf89b8946c202b14709f63f2440abdf3baa456a7270be53c39698",
+        "data/documents/1401-03-05.json": "sha256:575f4f3fa336ca267bce7c904089cb37bf1da1b2c6d6827b8498c3450354c4cf",
+        "data/documents/1401-03-14.json": "sha256:084a02aaa9fe08d83f2bc62eed813d12639429eed4cd3d704ed1b14b4c11fc05",
+        "data/documents/1401-03-18.json": "sha256:b16c6c1ea5b323124cff0aa1f256dce071c57ceb54fa7e90a56700e0bb7f4fb2",
+        "data/documents/1401-07-27.json": "sha256:5928227cafd74f6ea5ee1d3861dd86ba71cc7793d1d64de4ed323e334b61a8fe",
+        "data/documents/1401-08-07.json": "sha256:9c48f8542e85828cadfb00e246953d288c255bc3be4b100aa63e58a620032a10",
+        "data/documents/1401-10-03.json": "sha256:cb4815f3cb0b9603ac1af382e0788aef02517ea43f6bf451e0f2f14715cccbfb",
+        "data/documents/1402-05-09.json": "sha256:57ed1533115d19986b5f9a548866174fac31c365fc7851219ffa8faa556fd8f4",
+        "data/documents/1403-01-10.json": "sha256:be2fa1f158e156f93d4f6677bdf092332f245258010dcfc147c7ed961c0969fc",
+        "data/documents/1403-02-22.json": "sha256:8fc79c1d54c5310fdda548b8f4eddce77ae8d89b449ed58ec0c9beb64dc54a2b",
+        "data/documents/1403-03-12.json": "sha256:32edb0be1d834864599ea9e45ae8d788fdf6ba731a7b1b24e420eb093398a76d",
+        "data/documents/1403-05-30.json": "sha256:27965734745d9abe1226c437d82dc7a514d9c2ec7b4ff151df1e1a6a483d1dfe",
+        "data/documents/1403-06-16.json": "sha256:07a718ce98351245c6c1085626a3a654e81fcfb07b3f041ecea6389458d29f41",
+        "data/documents/1403.json": "sha256:6af42ec3411c69c5c08c4a51d538b1f4dd121e81ac046762f7d47b842f93c873",
+        "data/documents/1404-01-17.json": "sha256:1f6a2369258165fe0fadb2812851caf391904c55d4b1c8945679a00aafdf1d8b",
+        "data/documents/1404-03-24.json": "sha256:ab317517f169c3dc9e10cc58044496d54ec491cb685204cfd7cb639f93e9b2aa",
+        "data/documents/1404-07-28.json": "sha256:bc288b6651ffa46c775187b14fdb815852db32cc20037eba8d7a149a64f202ee",
+        "data/documents/1404-09-17.json": "sha256:996fec682137b08cf179e07b2e95d78349bdcccd2dabc1f4cf1bb6736bb54f5c",
+        "data/documents/1405-05-05.json": "sha256:e19e9876c44e8c28753eb5d0c7fda8a77c557a2d98c504e523a65098af87f880",
+        "data/documents/1406-02-01.json": "sha256:4d2f00acf1a8f217d62f4b0322458911d6ef1b8c5e5982c1d15c7d4671341dcd",
+        "data/documents/1406-09-04.json": "sha256:3958e02f56541914a860358e16d07fcffcadd8732e2a4dd97350b0a9af326f8a",
+        "data/documents/1407-07-28.json": "sha256:194fb51c28ab44119d81b074f99f791d016b65b8a36692f816c661fb82d09703",
+        "data/documents/1408-05-13.json": "sha256:f793f1fc5b32ada0fef879c7145bce4e1f727b86661bafb1f82ca0b625acac00",
+        "data/documents/1408-09-28.json": "sha256:07038ec8b8a559a8e626cdfd4dd8b1421dfc51ea7cbe0e1bdc17ae3706416572",
+        "data/documents/1408-11-11.json": "sha256:600100cb9ccea065537c1798f2127f0133aceaeddd9ba5449e595096b444ee78",
+        "data/documents/1408-11-11_2.json": "sha256:081581f16a12e602505dfef0762e022326fcb5dc3734ae19bdfde76ace3ffff7",
+        "data/documents/1408.json": "sha256:4a5a5c693a67c9920980dcda05b3e40ce067ebc3d35c2bb5b670bd6e6dc77386",
+        "data/documents/1409-01-10.json": "sha256:4657c855379b37630c3d5203c3648b29657e2d2e07b4f0b60e48d1a6d6ad40f2",
+        "data/documents/1409-04-14.json": "sha256:7e2d075eecc74e0497a301dc91c5c97e0b42aa7e2258aac0a718843b7e12695a",
+        "data/documents/1409-08-05.json": "sha256:f5fce6d69ac046d2bae87a20ffff5cdb046251f89d2e76b86a7d4b65af699050",
+        "data/documents/1411-01-06.json": "sha256:4b8e98da0539a8e72076a43172e8a82342e9919f0799b7b944faf7950d64278f",
+        "data/documents/1411-12-21.json": "sha256:8094ac3fadbcf338cfb6438f58b5a9dd46d0007d7ca3ae0a5febf52f31ebdf6a",
+        "data/documents/1412-05-31.json": "sha256:293107da41fbadfa26d1244e06281a167871176be114bd6f432668a026e266d5",
+        "data/documents/1412-06-11.json": "sha256:f224d76d90a4044661652e9b3b66c6cc832de68f0cdaee4da6ebbdd218c4f4f0",
+        "data/documents/1413-01-15.json": "sha256:37074aa8fc62a41e4084dc02c9c8ed1c09ae6f2c5bc9c65a11ef621f84387205",
+        "data/documents/1413-10-16.json": "sha256:c0714398dcfd1d966a4695f207d1e2c409da66c8445fe721aec5d1fe1e6f494a",
+        "data/documents/1413-11-08.json": "sha256:5d18f60691ac31568ad19886a4930a3b0156128472a65de2db06c29a1d02a15a",
+        "data/documents/1413-12-13.json": "sha256:8ba2a9e85658ea2603599f1ac3ee4ec5c94d922473be4feb4bb2d7598c0344bb",
+        "data/documents/1414-04-23.json": "sha256:95e307856a36c7d7fe18b9b5cab45c34f9dbe7fafc63aea1bdb471bc3c372347",
+        "data/documents/1414-05-24.json": "sha256:b47a0c8a5ccb3728ce61a934a716630a59353f8567984209874b1abdfc3803d0",
+        "data/documents/1414-07-12.json": "sha256:e6cb381e30ea17ed8d5f11e77c0d0255399e0847ca01397bd035500890b19807",
+        "data/documents/1415-01-22.json": "sha256:b66833a6212acd330f5f8daac9ad8f0c52266471415933dfcf840976d9c38bb5",
+        "data/documents/1415-04-28.json": "sha256:649b7352d5dda2c80f979adf2ddb8f7afd96ef9fd63280d801fb06d643279847",
+        "data/documents/1415-07-07.json": "sha256:4d3fbca280833c97db6c79625989752768df77282ac50ee0acc7c2ce3e1cecff",
+        "data/documents/1415-08-01.json": "sha256:23173b5692e22036ec75710b8ca04de15f69965df4904e5352c625b001cb8d26",
+        "data/documents/1417-01-14.json": "sha256:0134e5a61e885dce0274fb6681a5423a3212c30b7a1fa0b22914ec68c2c9d5d7",
+        "data/documents/1417-05-03.json": "sha256:67f65af3dd7c39071ed3dcdbab9cd3ee97dfc1af69b41b8dc8803f22bc7e9f55",
+        "data/documents/1418-06-05.json": "sha256:f82d2c01e30d0313d3681d20a66f76a511f9e24964f96f8787c69e558e306a00",
+        "data/documents/1419-04-25.json": "sha256:73b94786b17d14834d50ffd9fa2f16089a980091b5cba4d066bd30ed34405eb7",
+        "data/documents/1419-1420.json": "sha256:a11f51ed8ea558dc8411cbefa47276257aa5a8e2d8df0204cb58b9c714352943",
+        "data/documents/1420-01-03.json": "sha256:171753e80e78c5d54a74c22817fc4fc65afffe2cce75303ec18bb1115e799cd6",
+        "data/documents/1420.json": "sha256:a63cb7fa0bcb760c216987c24909507dd4db8314d5cc124499e612d0a3e2834d",
+        "data/documents/1422.json": "sha256:6a854ecc2bff2e106cc1daa0c9e01cf538dfeb6f1a7db2ce2cb843487e623a62",
+        "data/documents/1423-04-23.json": "sha256:59fa2079fe8148ed3ff3d32e7ac3315f04a61e0b2a4390676e7515fb5bdb05c8",
+        "data/documents/1423-08-13.json": "sha256:91da3c2b6081b0acea861d2edb659f6026405d2c442284002e12ab1193074e36",
+        "data/documents/1424-02-22.json": "sha256:614de60b4b3c661a7c8cf44ade60ad98c02bdcaaa787b9453fa43efe714a9ea9",
+        "data/documents/1425.json": "sha256:314c39a0471835164f01fc68fab29ca72a5a29554aa099b867adc6f9243dc6bf",
+        "data/documents/1425_2.json": "sha256:a62e22e0a24969fa1e2b245ffecad594eb69b0747c02c83e2a3e9223928350ac",
+        "data/documents/1426-06-24.json": "sha256:c7d2377ad8531459e6ab917b30ceac972d00e21b0b107810deda462d7cba314e",
+        "data/documents/1426-06-25.json": "sha256:27666305ac188768b26e95951dcf4af3368cba65781152a0521d3417d073b991",
+        "data/documents/1428-07-05.json": "sha256:b0cfcde6a1daa31199b2279794e697827711a3d1ce5fc3adaf8c58f86377838c",
+        "data/documents/1429-08-01.json": "sha256:29659f409c9a0836a9921ee260635b2e9bd19e9b08f68c291109e751c4ca6ce7",
+        "data/documents/1429-09-11.json": "sha256:556905e6d35878d05dcb2da5e85512e7a0b8a1e5143dfa620bf05e0516d48221",
+        "data/documents/1429.json": "sha256:6cb34084e1884097ce637558c988bf36c6db5f2f85d26c262aeec61b9f248ced",
+        "data/documents/1430-06-09.json": "sha256:ade847befe8fe11a5efaad60dc939dbed6d597685d1f0163788d564b59945d6f",
+        "data/documents/1431-08-06.json": "sha256:a2c920f6b0f2c674d39945fa824e0698d9a86a48739dd1a16d3f4bfc7c202443",
+        "data/documents/1433-03-14.json": "sha256:b47463bd3ec37881bcefd35444642685e490640259d9f4054686fc9c6082cc13",
+        "data/documents/1434-01-05.json": "sha256:d5bc5599061c488bcc513e31d896b2b161c23568925d3b6072bfc2ba842a7f31",
+        "data/documents/1434-10-31.json": "sha256:de788ffec0df3bb16aa5c3b6eeb47660fb72bb454a035dd9fbee3d3a757ec090",
+        "data/documents/1435-05-19.json": "sha256:1edc8140e68923dc336083f88ae1caad372796e66a395bdddd29cf2708a69d67",
+        "data/documents/1435-09-18.json": "sha256:c9e3c4d68516d1e6ff76336cc2bd5d2f90bd3f8afe5f6cd2f8d0ec72651ec14f",
+        "data/documents/1435-10-30.json": "sha256:cf4d76db4211c5a4a81b7e0915248dfb860cf687c9030eb03c363be9e449c196",
+        "data/documents/1435.json": "sha256:25574ebd4a3bb99733aa561b8b86073c29ef6aeee87850001f34346cc677d80e",
+        "data/documents/1436-01-05.json": "sha256:29e45b89bd8cfeee2287879c14761dc423f0a4ce1a0079e9cb1bd38e1088f1dd",
+        "data/documents/1436-01-28.json": "sha256:813e32bfbdb29d3fdba2fd1cba846580aa200b21bbeb302a991c38e349e3a46b",
+        "data/documents/1436-03-11.json": "sha256:94e87987e24495af1d781bbfa77968c37c8ed506fcea98bf6dcd86d45f24a325",
+        "data/documents/1436-10-05.json": "sha256:66d0a4b5543cf8c8bf58ebd3a634bd3ee1e09f2b38ba844f8022f0af1acd6f19",
+        "data/documents/1436.json": "sha256:25997c8d855fade3205c7027d15cd2ebe35a3e3613008a8b7615b73bfea32386",
+        "data/documents/1437-08-18.json": "sha256:4121b268889fb0ba9788af3a491b72b8701c2e66c207b40daae9b51782020a81",
+        "data/documents/1437-12-03.json": "sha256:521fd3e5e74300a61928d2bf55e7e29a68d1c2419910c775e0328189b43d8aac",
+        "data/documents/1438-05-28--1438-09-23.json": "sha256:493574cb93a2c344bd24e2dea65b741ec7de2f58923b3e5d7fb57e4544bbf906",
+        "data/documents/1438-06-23.json": "sha256:f718764b2cb742fc0d6db35b6dd2ea96442a919363e1ad47f14ce1dc27000fa1",
+        "data/documents/1439-05-06.json": "sha256:15da196a70386ffc6cac96930955627d52218601dd0aa92aa72c8dea2fdb6156",
+        "data/documents/1444-10-14.json": "sha256:9bc1e0f87d140d6a771edf3318858ddf70df539f053c6910ef3ca8a4258d009a",
+        "data/documents/1446-02-20.json": "sha256:c38f3b891d585c7015293948ea7b624077e833e7b06d751e86317dfb8f1c9e91",
+        "data/documents/1446-06-04.json": "sha256:831fa883f2f8158360758ee3fe3fb64c3bc6c328e0521a65674fe78c130c2d75",
+        "data/documents/1446-06-05.json": "sha256:0489ff0d1d383bfd918abb5c0b5f7f9109c7bccf2d12b27925605a02ce6eeb8a",
+        "data/documents/1446-10-25.json": "sha256:f108f59db08349d0fe03f37614eb6025910aa01b10f52623dc9b282f10e65c50",
+        "data/documents/1446.json": "sha256:5bbc6ea7bc55b2da67c59208a85696395b60c766fe417609c98235219510a185",
+        "data/documents/1447-05-01.json": "sha256:eba302da8ec7ca76b961b518c820d4e880592a2ab15846a0dd2268dac9684886",
+        "data/documents/1447.json": "sha256:3cec7432a9aed5c245223171701be6eebb0a9a0b50912fea19a09d340973bd54",
+        "data/documents/1449-08-16.json": "sha256:4c3a71404c88ec48cf39cac30233e61d35dc69ad8592b32ad393eff313b200aa",
+        "data/documents/1450-02-16.json": "sha256:9c0f4631e7a798cb71a15394f1ddb3a19f60c8454b635782684782c52750d0d3",
+        "data/documents/1450-02-16_2.json": "sha256:f34a514989a12dd1096551d80060727a2f5c48b97eed9fb66ed53eace8fb375d",
+        "data/documents/1451-02-02.json": "sha256:49f3fc8c1bc0c3211b813f820b2218cc3f6be6e662c30c6c07027eab162279d9",
+        "data/documents/1451-06-23.json": "sha256:8305ffa8b97bcb0964c39f1b1f164d9023be1a6434308d0b77bde5727802ad1c",
+        "data/documents/1452-10-02.json": "sha256:49b1d658a67e2ccaa2338443b8ee09b48f614c51c29378d841d66224a13b97dd",
+        "data/documents/1452-10-02_2.json": "sha256:e008cb03d91221ae0c0e709ae73a106af97442542e8504b441c230c4d136d6f9",
+        "data/documents/1452.json": "sha256:6161524aea37796f1df4d055ec3241de50cf530632d526ab05a9cbe5d821e33f",
+        "data/documents/1457-04-30.json": "sha256:2c841902e3d21e50cf1881f69137599c0ccc62d7426d006e6312e6f8d341778c",
+        "data/documents/1457-11-19.json": "sha256:bec4e6fe317b1dc1ddd3f315780f7be444442419a44cb3108ab682a322ece0e3",
+        "data/documents/1458-04-11.json": "sha256:ab2e0b37b8d6212f27a61602a3d3b1139f4b3b38ac1a7e3c913249ab11b9c6c1",
+        "data/documents/1460-02-08.json": "sha256:a88f856e16b4915c87a458e0e8a5f069597176737eded206e240a6d87a8ab265",
+        "data/documents/1465-08-20.json": "sha256:15ac38257cdd978948a6045ca84af82edebd8490ba18de534d5bab2a53fb4846",
+        "data/documents/1466-02-17.json": "sha256:94370d0353ceb9b02a7dd0fd93762f335e3dba3d2aaa5aa8aefe9a230b13afd3",
+        "data/documents/1466-10-25.json": "sha256:4490be9afae939a96eb0abd499646e50dc3cd0894757b6ab251bb90106a5bfd8",
+        "data/documents/1467-01-22.json": "sha256:d762f8b8ebcd11a91a01eca55ac0521ff18e40d884559589e372a34e91e3c4b7",
+        "data/documents/1470-03-19--1470-04-21.json": "sha256:2ebac46ee36444bd9984c7b9c30e95ee94bc1a35731527250a5605dac7a3ce24",
+        "data/documents/1470.json": "sha256:d294deb706ab96b8197f8d89b8fb86df750b8037755639db47b294467f88b31d",
+        "data/documents/1472-02-10.json": "sha256:1704038c82857a38c9a0f1d4de0a0883d0947380fb0377fe0ec3aec58be98383",
+        "data/documents/1473-04-09.json": "sha256:62dd98c99d1be449017ec252bbf380d8137e38eedc8c1897d4baf74659215f36",
+        "data/documents/1473-09-12.json": "sha256:c11eef21b14aa09e5731894d43164bf6e127b4ae66ccc63555a55fab506f9797",
+        "data/documents/1475-10-02.json": "sha256:c203297dbf214f93ea175a3578d9dc7c70fcb0a46bf12b225e1b6a2c44453f0c",
+        "data/documents/1476-02-21.json": "sha256:b602385187414645f74e2e6428d064ec1a5a2b6b1d85c3209c06e8d6bc6db740",
+        "data/documents/1477-06-02.json": "sha256:6e9d421475892398c328964d77ad37b1cf926415ff0d965cf977ddcfdad1139c",
+        "data/documents/1477-08-13.json": "sha256:743178adba5fbc399239c29ca5d1a93ca067a1b78b60339a4ef184ab8df4f02b",
+        "data/documents/1479-08-15.json": "sha256:66d493298de47b11f992d6371354e1325334403d3b69959c400eeff6fd8779d6",
+        "data/documents/1479.json": "sha256:1c1ca56fc55bcd714527faeebc44fc6088bc7660fb8a21a340919af6000749b0",
+        "data/documents/1480-01-03.json": "sha256:8808ab5b785ce6da7260099870c203df715d6aaba29670c66e105e6b188af3fc",
+        "data/documents/1481-07-22.json": "sha256:4c0ff0eddaaa1e8a4ac8da2495f6010a25468cd0cc54023c250514f14a9ac2b5",
+        "data/documents/1484-03-28.json": "sha256:ab8164074d327ce0381faa7d85f80efa0d3e16650cd465400e04ec0c25e27657",
+        "data/documents/1484-03-28_2.json": "sha256:9175b7d732fcee66b9e94b7d74876c836c6532dd95997a1e106989929ef0837d",
+        "data/documents/1484-04-13.json": "sha256:b3ca690b29ecf350126d011a4a7de0d282b9df15c88b7f14386c420d33685433",
+        "data/documents/1484-05-10.json": "sha256:e1602f73a309f2bc821a93a32581067e014d2c60ca5ce5f33fe13f7469ca7cb8",
+        "data/documents/1487-07-09.json": "sha256:beb6e62d6e17ece267f186addd7599dde1327fc65f591300f33cd622f8cff369",
+        "data/documents/1487-09-29.json": "sha256:f1cbc6413ba045a6ef7ca5f7f8163729f458d8d7d2dbeddef697edeac30e5941",
+        "data/documents/1487.json": "sha256:8b0b2a93d9a9c342d1c1725e43b044412fb3d93fb47cac50fdf201907a94b67a",
+        "data/documents/1489-11-26.json": "sha256:558e0daea7ba764d244fd46f27d22c7650897feef4b38f1bb1979771739d6b32",
+        "data/documents/1490.json": "sha256:9547d543d63f8a5ca723998bddeebd1594f5aff31dfcda01047af129e8643340",
+        "data/documents/1491.json": "sha256:e65f1c9eb5127343a1403485fe4e912a791650ea2275cc74a899d767c64db89e",
+        "data/documents/1492-06-19.json": "sha256:2989cbc598ddce7b91c49d241e0fbb4ecf53f60e17a6d8ecde016bf9d3538376",
+        "data/documents/1495-02-18.json": "sha256:7bcd8dcecfc5b45b81fdd4e9fbb26a739588d8d17913b42526bd84b98548de85",
+        "data/documents/1498-03-13.json": "sha256:ef065bb0952383daa9d009da5d3c7d82e1343eff5702eae3a591f20fd2301593",
+        "data/documents/1498-08-16.json": "sha256:ab9ad5e268922d37206a315a12e6776aef90de3841243dbddd88c90180db899e",
+        "data/documents/1501-02-22.json": "sha256:24963bccab296e9267b36d2f8d966920036a270d2d20f8a4c23a57ced4969d91",
+        "data/documents/1503-01-25.json": "sha256:261c9857d9acf7f7a40b705a485e176004d80881261cc26b8e71cadf72bcf5c9",
+        "data/documents/1503-08-21.json": "sha256:b3345817e4a8379055a56347ae2f68e489c44f4e3b4ec3fec22634beb49deeab",
+        "data/documents/1504-11-10.json": "sha256:c95e9396ad3ae6366de07219f5add8cd292aeb85473ea2afb209884791c18203",
+        "data/documents/1510-08-12.json": "sha256:5f25b060dae86ae377ddd3856b81ce87e5e0f06f5b7ec973299753ebadbdd45d",
+        "data/documents/1512-04-29.json": "sha256:10e048c181c1e4833ac8f0ae7d43590b044c9a476bca1416575c1f7ae2d22b6b",
+        "data/documents/1512-08-31.json": "sha256:8d52ca7bad1e5ed5be4b4b6c4e3b65f255e5cb2918696c6f0f11b7fe33e16fb3",
+        "data/documents/1512-11-16.json": "sha256:f58ad71fc259e5691fbbb5cb3056a0a783c8850d84406da5d1cbd43bf71fdfd0",
+        "data/documents/1514-10-23.json": "sha256:d0849571dbccaeb1c5f1236ed4026c507bdc84a98f6b3caa34b26b3e0b17d425",
+        "data/documents/1516-04-07.json": "sha256:d911eeba7c0eda1fe25a5c7a3cc2090d9eac60ed41450550a253210e2634dc52",
+        "data/documents/1517-07-10.json": "sha256:83e46a5db6762b5f055e946e3d974cd60235855c1bd0aa291d88bd428a7d2510",
+        "data/documents/1521-04-08.json": "sha256:1a3addbb82dcee01bc667847152740b7042e272460f93d1d0614a1883b9fdf71",
+        "data/documents/1523-06-20.json": "sha256:ee9a27f5fa1713d053bfa3fb40d584af4da5932ced9bf0dc2622eb29ff585e3e",
+        "data/documents/1523-07-30.json": "sha256:98d642b5dca0d6d5eb9592e576d706fba10cd6c836487da64b709fe1970d284c",
+        "data/documents/1525-04-09.json": "sha256:867ae7197cbb4e8cfe5214d5c10aba3e510eb07c7c7473f4b66562b5c092d49e",
+        "data/documents/1525-09-02.json": "sha256:f856ef8c17191bc2bdec0e495957972eb345d060b99a78b459605df4b3fd486c",
+        "data/documents/1526-02-08.json": "sha256:a0f634670e30845eb45c381eedb06a914c824ab0a2ddf8af8992efe1d12f7672",
+        "data/documents/1527-03-20.json": "sha256:7ce9744382bc066b307c6df82a3ace481da010bebfa88394b841069a0e062db4",
+        "data/documents/1527-03-20_2.json": "sha256:029bc5a7613c80ad92debe74ef8f8e7265bd2e39fbac1f68f26912c8964dfdf6",
+        "data/documents/1528-06-26.json": "sha256:ec2eefcce6a36318502f930c6cda5e5cb42e4fa699387ba3ef8dbb7a0671b54b",
+        "data/documents/1528-10-09.json": "sha256:0741e3aeb0280384b2cf7cc6ca43e41432ee4046e3db5b8c577e4424e66ab6d4",
+        "data/documents/1531-09-04.json": "sha256:42bc218207b83bd6d87be59737213959b4064302271e82bce51c2f5397a41ce1",
+        "data/documents/1531-11-22.json": "sha256:b507c0c1782bb38498cfcc25d6363d22f2e2381f7f7246f1be175fdf1b27d21b",
+        "data/documents/1533-03-26.json": "sha256:cde0facab7de5a3ea82c6368e84fba7597f8a8fcdbb65fea94125c14d2215791",
+        "data/documents/1545-12-11.json": "sha256:b18c90b8c60c041665ab2a8390641555a2731b5ac03ee6c48361647093e2d452",
+        "data/documents/1551-03-05.json": "sha256:3a59a5c5625c14ffbda32b7b7d1506d484c6285f186a46284aa88ea03b64b851",
+        "data/documents/1553-02-23.json": "sha256:7d0575346719050c621eaa3879760a68d12fc8d783f94e606dcade59d5b90fa8",
+        "data/documents/1561-02-27.json": "sha256:ee9deed199694d6df89a13b53aa7258883f90584e8fa12e1fa009b07c241b427",
+        "data/documents/1561-03-14.json": "sha256:164b6fb8a0a7ac85d061249fcddcf27870431dd66b4e75972fd3c87bbb9bc4b4",
+        "data/documents/1561-07-24.json": "sha256:5fb1c394a73eb0eeec6c83adbabd7db53ada39ade3ff5914ac743d89b697932f",
+        "data/documents/1561-08-25.json": "sha256:c16a9d78bdc846a406247ad58a5c2d19870350f961bc3e5ce14c6c4a08a64bcb",
+        "data/documents/1563-03-09.json": "sha256:4ad544f5431a891fb009ab177da494158ee55b6b7ff91319ca0c797f1484cd5d",
+        "data/documents/1563-04-07.json": "sha256:9c1e59498b1eb0333057fd2a6e98aa73a4038da88108c8bb2e70c8a53546cf41",
+        "data/documents/1565.json": "sha256:efa057a03372c40f7bdbc6365f1edd8138b47d52c53ff8fc2def9ad793f1ed47",
+        "data/documents/1589-01-14.json": "sha256:0c147a63fd97a726a68864f10a6ea49bd07d8d149010a87b743718c98c4d9312",
+        "data/documents/1592-02-08.json": "sha256:0088329a1738df091ac80ef233de543ccc58a5810ec90d301e5d434de0e5948c",
+        "data/documents/1599-04-30.json": "sha256:3205cd0c1e9bfaca5763a936fc0a9e3017b80058817323b0e47e6bfbe8d3bb83",
+        "data/documents/1600-03-02.json": "sha256:9f4979ed6ad5e94fda0544993bba675ee5ef7836086ee594a09e7a0877879b5c",
+        "data/documents/1605.json": "sha256:ccdd5ed454acc76718e02b851ad01a63066d81464c1f616874fa33e76738076a",
+        "data/documents/1608-02-22.json": "sha256:1d6c2b51230cc1d9420ef20cae8c1df795ed99d3de396cc3118e988d6fb291c5",
+        "data/documents/1608-09-22.json": "sha256:59e0edd3ecdfcba3d41dbc3257be949e1cab4a81d46473ce5a6a19ccfaba9222",
+        "data/documents/1609-07.json": "sha256:c873f458b72d6c5dde85027f4eb1a48963b181bb940c1e3be3cada80d3426b9a",
+        "data/documents/1621-10-28.json": "sha256:b5e04841f76708ce2b1d904b08fd293ca49f28f0672f04c7f6bc8f88ce767bdd",
+        "data/documents/1626-02-22.json": "sha256:d31f3dbd676fbb2d4444060348617c6e3fc2c92aca0dcc1568767db5ad343677",
+        "data/documents/1804-05-15.json": "sha256:42939ecfe82696ba10c2ccaf21b7729eed5a4437f1e393eb7caa6c3944835c20",
+        "data/images/images.json": "sha256:3a1bac7b4b6454edb717f842ae35fac5082ed304de58fe0eb48f05d2d0f8b396",
+        "data/names.md": "sha256:03e73c2b21e1e4d5655df8520829e6501c4d52250254b157e43aa14c613a4565",
+        "data/notes/notes.json": "sha256:a33e162e8b4aca9261bbc132c2f2a4aacc82f84b40f38ae52d5777a8a8510ec4",
+        "data/people.json": "sha256:0990691799147d7f31808ac2142b61007a628a90ccf9f5da76b456df23197a93",
+        "data/places.json": "sha256:7bfd1843f2dcc1683ffbbd41f707c2019d27d6c0a7ec3607ba4cd3552705e0fb",
+        "scripts/family_graph/__init__.py": "sha256:649f8e410779bdbf9eb2cbabebe04ec849ddd59336bb896d175723bf97bb679d",
+        "scripts/family_graph/constraints.py": "sha256:f3b1ad421f1735926a023405abd106b20f6b9a86561b62311f7930925deda097",
+        "scripts/family_graph/dates.py": "sha256:35bd355695d84ae6c7e3639c699acac40634ef7bd20b73a1faad29dc8d9f5684",
+        "scripts/family_graph/export.py": "sha256:25004cd510caeb1f2e43da339c0f0357772d350220e33bf6d9f2c3561afd2b54",
+        "scripts/family_graph/graph.py": "sha256:be2bc3100901dd98b04c7fe7adc412e32917d3c0831b92534ae7bb1a02000be4",
+        "scripts/family_graph/model.py": "sha256:e1a4b9aa348482aeb17289c6c8eb8789a0eca60b18ab02948bf4489b6fc48ce3",
+        "scripts/family_graph/names.py": "sha256:388a00a3df239db0bc2e25adc0e757f5e218ebfdb35018fe86b1ad7b8f4dd904",
+        "scripts/family_graph/policy.py": "sha256:0348810ba8c79213e240080252388ce66fb5adf9e40f564622828cf43bbac887",
+        "scripts/family_graph/resolve.py": "sha256:de3f21a0adf1b1a34f58ea755656bc22bfe4c13760b2c76033833083ff6fba8a",
+        "scripts/family_graph/scoring.py": "sha256:812d1f393a631e3880550b552d8e88d46d2959aa7ec8ac09fb739d3e4676d2c0",
+        "scripts/family_graph/sources.py": "sha256:ebd9b11a177ceb1b6beaf4d079467d534ec0369aacb43433465cd3335801803b",
+        "scripts/place_names.py": "sha256:f3f5ebba3bb0135da3397062bac5436ac9f389fc6b4bffc5b10735036c449afa",
+        "scripts/rebuild_family_tree.py": "sha256:7d430364c9ad95d98f4fd34948ceb8448a6779cb5ed8d22f7205f2b25534c374",
+        "scripts/search_facts_by_name.py": "sha256:0977c927f94b6675635ea6f459d7cb0b8922ad185cb56b1fe1ff84cd7375aed9",
+        "scripts/search_places_by_name.py": "sha256:2034da7ef86d2016e9d546f89100e74977cd68d2db5ddbe235ff4045f2ce60ec",
+        "scripts/validate_facts.py": "sha256:d953bb5739af557ce2f5f0e2cf52fa01d548a8cea77b5ad243709b6bdf139e55"
+      },
+      "fingerprint": "sha256:e0bff9ac8104b0c6e28a086a6ddf371d74ed01b89eaf35ce0feda15a09ca98bf",
+      "coverage": {
+        "facts": {
+          "unresolvedMentions": 1443,
+          "omittedRelationships": 528,
+          "conflicts": 0
+        },
+        "with-guesses": {
+          "unresolvedMentions": 1519,
+          "omittedRelationships": 557,
+          "conflicts": 0
+        }
+      }
+    }
   },
   {
     "id": "vogt_zu_Durn",
@@ -22,13 +541,86 @@
     ],
     "born": null,
     "died": null,
-    "children": [
-      "Eberhard von Rosenberg",
-      "Konrad von Rosenberg",
-      "engelhard_son_of_vogt_zu_Durn",
-      "Hermann von Rosenberg"
-    ],
-    "wife": "irmtraut_wife_of_vogt_zu_Durn"
+    "relationships": [
+      {
+        "type": "parent",
+        "of": "engelhard_son_of_vogt_zu_Durn",
+        "derivations": [
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1328-03-26.json",
+                "pointer": "/entries/0/facts/3",
+                "fingerprint": "sha256:7f99a09c9b2370956f8daa29effef6acfd51c7e42c96379f383503f76e425825"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1341-02-02.json",
+                "pointer": "/entries/0/facts/9",
+                "fingerprint": "sha256:9829d2efb1a4308886f67d07b84463460075612cee1a687c73ecbdf14e8ecc76"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1340-08-29.json",
+                "pointer": "/entries/0/facts/1",
+                "fingerprint": "sha256:e0cb08a34c67523c6f2be04bc6a87b46b43893b81d264e065ddb9d40e0e7742d"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1341-02-02.json",
+                "pointer": "/entries/0/facts/9",
+                "fingerprint": "sha256:9829d2efb1a4308886f67d07b84463460075612cee1a687c73ecbdf14e8ecc76"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1340-08-29.json",
+                "pointer": "/entries/0/facts/1",
+                "fingerprint": "sha256:e0cb08a34c67523c6f2be04bc6a87b46b43893b81d264e065ddb9d40e0e7742d"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1328-03-26.json",
+                "pointer": "/entries/0/facts/3",
+                "fingerprint": "sha256:7f99a09c9b2370956f8daa29effef6acfd51c7e42c96379f383503f76e425825"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "arnold_boxberg",
@@ -37,13 +629,208 @@
       "der Jüngere",
       "zu Boxberg"
     ],
-    "wife": "Christina von Handschuhsheim",
-    "children": [
-      "Ulrich von Rosenberg",
-      "Jörg von Rosenberg"
-    ],
     "born": null,
-    "died": null
+    "died": null,
+    "relationships": [
+      {
+        "type": "sibling",
+        "of": "eberhard_jagstberg",
+        "derivations": [
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1397-04-29_2.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:929bbb2ead39b7108527ec8a49ce60f82d193e4795095f9a3e9dc2b0099c764c"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1397-04-29.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:929bbb2ead39b7108527ec8a49ce60f82d193e4795095f9a3e9dc2b0099c764c"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1401-07-27.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:301dd9a071b4077843d5e16f960620d884cc91f06a87dd547a25b17565736316"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1406-09-04.json",
+                "pointer": "/entries/0/facts/3",
+                "fingerprint": "sha256:3a2b5a2e53bf13754dd9108de00f312b4e77dae59ead8dcae84bde5ded05b735"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1400-12-10.json",
+                "pointer": "/entries/1/facts/0",
+                "fingerprint": "sha256:929bbb2ead39b7108527ec8a49ce60f82d193e4795095f9a3e9dc2b0099c764c"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1400-12-10.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:929bbb2ead39b7108527ec8a49ce60f82d193e4795095f9a3e9dc2b0099c764c"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1408-11-11.json",
+                "pointer": "/entries/0/facts/6",
+                "fingerprint": "sha256:cd33d0e8c7d596c707646f4cd820e0ed6c4c0777eec53557437e30b75aaed74c"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1395-08-23.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:929bbb2ead39b7108527ec8a49ce60f82d193e4795095f9a3e9dc2b0099c764c"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1400-12-10.json",
+                "pointer": "/entries/1/facts/0",
+                "fingerprint": "sha256:929bbb2ead39b7108527ec8a49ce60f82d193e4795095f9a3e9dc2b0099c764c"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1401-07-27.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:301dd9a071b4077843d5e16f960620d884cc91f06a87dd547a25b17565736316"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1408-11-11.json",
+                "pointer": "/entries/0/facts/6",
+                "fingerprint": "sha256:cd33d0e8c7d596c707646f4cd820e0ed6c4c0777eec53557437e30b75aaed74c"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1395-08-23.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:929bbb2ead39b7108527ec8a49ce60f82d193e4795095f9a3e9dc2b0099c764c"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1397-04-29.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:929bbb2ead39b7108527ec8a49ce60f82d193e4795095f9a3e9dc2b0099c764c"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1400-12-10.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:929bbb2ead39b7108527ec8a49ce60f82d193e4795095f9a3e9dc2b0099c764c"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1397-04-29_2.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:929bbb2ead39b7108527ec8a49ce60f82d193e4795095f9a3e9dc2b0099c764c"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1406-09-04.json",
+                "pointer": "/entries/0/facts/3",
+                "fingerprint": "sha256:3a2b5a2e53bf13754dd9108de00f312b4e77dae59ead8dcae84bde5ded05b735"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "eberhard_jagstberg",
@@ -53,21 +840,17 @@
       "zu Jagstberg",
       "Edelknecht"
     ],
-    "wife": "Margaretha",
-    "children": [],
     "born": null,
-    "died": null
+    "died": null,
+    "relationships": []
   },
   {
     "id": "engelhard_son_of_vogt_zu_Durn",
     "name": "Engelhard von Rosenberg",
     "titles": [],
-    "wife": "anne_ruchs",
-    "children": [
-      "eberhard_son_of_engelhard_von_rosenberg"
-    ],
     "born": null,
-    "died": null
+    "died": null,
+    "relationships": []
   },
   {
     "id": "konrad_schonau",
@@ -75,10 +858,9 @@
     "titles": [
       "Ritter"
     ],
-    "wife": "Adelheid von Hirschhorn",
-    "children": [],
     "born": null,
-    "died": null
+    "died": null,
+    "relationships": []
   },
   {
     "id": "arnold_brother_of_vogt_zu_Lauda",
@@ -86,58 +868,348 @@
     "titles": [
       "Edelknecht"
     ],
-    "wife": "else_wife_of_arnold",
-    "children": [],
     "born": null,
-    "died": null
+    "died": null,
+    "relationships": [
+      {
+        "type": "sibling",
+        "of": "vogt_zu_Lauda",
+        "derivations": [
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1387-05-26.json",
+                "pointer": "/entries/0/facts/4",
+                "fingerprint": "sha256:796da86ad2a12ea0ca25261a4e8e13cb4248f0be75f7d8907ffd60708ae082b7"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1381-05-25_4.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:6c4b25441250b7ba2b5431c0ba13b193df1c0c0f8a6f568e552f5badbe663d74"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1387-05-26_2.json",
+                "pointer": "/entries/0/facts/4",
+                "fingerprint": "sha256:796da86ad2a12ea0ca25261a4e8e13cb4248f0be75f7d8907ffd60708ae082b7"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1381-09-15.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:6c4b25441250b7ba2b5431c0ba13b193df1c0c0f8a6f568e552f5badbe663d74"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1381-05-25_2.json",
+                "pointer": "/entries/0/facts/1",
+                "fingerprint": "sha256:6c4b25441250b7ba2b5431c0ba13b193df1c0c0f8a6f568e552f5badbe663d74"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1381-05-25_4.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:6c4b25441250b7ba2b5431c0ba13b193df1c0c0f8a6f568e552f5badbe663d74"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1381-05-25_2.json",
+                "pointer": "/entries/0/facts/1",
+                "fingerprint": "sha256:6c4b25441250b7ba2b5431c0ba13b193df1c0c0f8a6f568e552f5badbe663d74"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1387-05-26.json",
+                "pointer": "/entries/0/facts/4",
+                "fingerprint": "sha256:796da86ad2a12ea0ca25261a4e8e13cb4248f0be75f7d8907ffd60708ae082b7"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1387-05-26_2.json",
+                "pointer": "/entries/0/facts/4",
+                "fingerprint": "sha256:796da86ad2a12ea0ca25261a4e8e13cb4248f0be75f7d8907ffd60708ae082b7"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1381-09-15.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:6c4b25441250b7ba2b5431c0ba13b193df1c0c0f8a6f568e552f5badbe663d74"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "spouse",
+        "of": "else_wife_of_arnold",
+        "derivations": [
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1387-05-26.json",
+                "pointer": "/entries/0/facts/2",
+                "fingerprint": "sha256:c238c1d958495a3aed0998e1ce10ffd6e5b0d22441c66a5ec6b3e23fdebf2bf7"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1387-05-26_2.json",
+                "pointer": "/entries/0/facts/1",
+                "fingerprint": "sha256:c238c1d958495a3aed0998e1ce10ffd6e5b0d22441c66a5ec6b3e23fdebf2bf7"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1387-05-26_2.json",
+                "pointer": "/entries/0/facts/1",
+                "fingerprint": "sha256:c238c1d958495a3aed0998e1ce10ffd6e5b0d22441c66a5ec6b3e23fdebf2bf7"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1387-05-26.json",
+                "pointer": "/entries/0/facts/2",
+                "fingerprint": "sha256:c238c1d958495a3aed0998e1ce10ffd6e5b0d22441c66a5ec6b3e23fdebf2bf7"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "else_wife_of_arnold",
     "name": "Else",
     "titles": [],
-    "children": [],
     "born": null,
-    "died": null
+    "died": null,
+    "relationships": [
+      {
+        "type": "kin",
+        "of": "vogt_zu_Lauda",
+        "derivations": [
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1387-05-26_2.json",
+                "pointer": "/entries/0/facts/5",
+                "fingerprint": "sha256:94ab746de9bef8b71d020cf17bc4b44b6c7330106504e3e454ddabfc431ade45"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1387-05-26_2.json",
+                "pointer": "/entries/0/facts/5",
+                "fingerprint": "sha256:94ab746de9bef8b71d020cf17bc4b44b6c7330106504e3e454ddabfc431ade45"
+              }
+            ]
+          }
+        ],
+        "term": "Schwager"
+      }
+    ]
   },
   {
     "id": "anne_ruchs",
     "name": "Anne Ruchs",
     "titles": [],
-    "wife": null,
-    "children": [
-      "eberhard_son_of_engelhard_von_rosenberg"
-    ],
     "born": null,
-    "died": null
+    "died": null,
+    "relationships": []
   },
   {
     "id": "eberhard_son_of_engelhard_von_rosenberg",
     "name": "Eberhard von Rosenberg",
     "titles": [],
-    "wife": "Anne von Bebenburg",
-    "children": [],
     "born": null,
-    "died": null
+    "died": null,
+    "relationships": []
   },
   {
     "id": "irmtraut_wife_of_vogt_zu_Durn",
     "name": "Irmtraut",
     "titles": [],
-    "wife": null,
-    "children": [],
     "born": null,
-    "died": null
+    "died": null,
+    "relationships": [
+      {
+        "type": "spouse",
+        "of": "vogt_zu_Durn",
+        "derivations": [
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1314-10-11.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:e9c9db7c3fa14bfca16f4da054cc3fd59be1916657febb708e1c85e7877261a0"
+              }
+            ]
+          },
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1327-05-29.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:a89c1cbadb7f1d6829e087b0dcf1d41b33d506bead4b70620befdec3493226fb"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1327-05-29.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:a89c1cbadb7f1d6829e087b0dcf1d41b33d506bead4b70620befdec3493226fb"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1314-10-11.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:e9c9db7c3fa14bfca16f4da054cc3fd59be1916657febb708e1c85e7877261a0"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "alheit_von_neudeck",
     "name": "Alheit von Neudeck",
     "titles": [],
-    "wife": null,
-    "children": [
-      "Hans von Neudeck"
-    ],
     "born": null,
-    "died": null
+    "died": null,
+    "relationships": [
+      {
+        "type": "spouse",
+        "of": "konrad_husband_of_alheit_von_neudeck",
+        "derivations": [
+          {
+            "view": "facts",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1327-05-04.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:7751c3d637d32c6a0ddb745c9c55de3334380b0b0090648ed3665a7364142b29"
+              }
+            ]
+          },
+          {
+            "view": "with-guesses",
+            "identity": "anchored",
+            "usesGuesses": false,
+            "sources": [
+              {
+                "path": "data/documents/1327-05-04.json",
+                "pointer": "/entries/0/facts/0",
+                "fingerprint": "sha256:7751c3d637d32c6a0ddb745c9c55de3334380b0b0090648ed3665a7364142b29"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "konrad_husband_of_alheit_von_neudeck",
@@ -145,11 +1217,8 @@
     "titles": [
       "Ritter"
     ],
-    "wife": "alheit_von_neudeck",
-    "children": [
-      "Hans von Neudeck"
-    ],
     "born": null,
-    "died": null
+    "died": null,
+    "relationships": []
   }
 ]

@@ -1,22 +1,23 @@
+import { buildRelationshipGraph, resolvePerson, verifyFamilyGraph } from './data/relationships.js';
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
-import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=90';
-import { renderActiveScreen } from './screens/router-view.js?v=3';
+import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=91';
+import { renderActiveScreen } from './screens/router-view.js?v=4';
 import { createDocumentRenderer } from './screens/documents.js?v=7';
 import { setupRecordLabelSelector } from './screens/record-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=87';
 import { createSealScreen } from './screens/seals.js?v=2';
 import { createImageScreen } from './screens/images.js?v=36';
-import { createDataLoader } from './data/loader.js?v=5';
-import { createEntityScreens } from './screens/entities.js?v=94';
+import { createDataLoader } from './data/loader.js?v=6';
+import { createEntityScreens } from './screens/entities.js?v=95';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';
 import { createMapScreen } from './screens/map.js?v=85';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=94';
-import { createMarkupRenderer } from './rendering/markup.js?v=84';
+import { createMarkupRenderer } from './rendering/markup.js?v=85';
 import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=15';
 import { sortByDate } from './image-date-sort.js?v=2';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
@@ -39,10 +40,18 @@ function savePreferences() {
     imageRegions: state.imageRegions,
     language: state.language,
     showFacts: state.showFacts,
+    familyView: state.familyView,
     darkMode: state.darkMode,
   });
 }
 const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, record: preferences.record, recordSource: null, navigationRecord: null, navigationRecordSource: null, recordLabels: preferences.recordLabels, hiddenRecordLabels: preferences.hiddenRecordLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, imageRegions: preferences.imageRegions || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedDocumentsYear: null };
+state.familyView = preferences.familyView || 'facts';
+state.changeFamilyView = async (view) => {
+  state.familyGraph = buildRelationshipGraph(state.personRecords, { view, verification: state.familyVerification });
+  state.familyView = state.familyGraph.view;
+  savePreferences();
+  await renderActive();
+};
 const route = store?.getState?.().route || { active: 'books' };
 store?.setState(state);
 const GREY_RECORD_LABELS = new Set(['hessen', 'schenk', 'mönch']);
@@ -131,9 +140,9 @@ function linkedMarkup(value = '', linkEntities = true) {
   const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
   let text = String(value);
   for (const { pattern, people } of state.personPattern || []) text = text.replace(pattern, (match) => {
-    const person = people.find((item) => item.name.toLocaleLowerCase() === match.toLocaleLowerCase());
-    if (!person) return match;
-    const query = encodeURIComponent(person.name);
+    const resolution = resolvePerson(people, match);
+    if (!resolution.person && !resolution.ambiguous) return match;
+    const query = encodeURIComponent(match);
     return token(`<a class="person-link" href="?person=${query}">${match}</a>`);
   });
   if (state.placePattern) text = text.replace(state.placePattern, (match) => {
@@ -1293,6 +1302,11 @@ const mapScreen = createMapScreen({
 });
 
 async function renderActive() {
+  if (state.familyGraph?.generated && (repository.revision || 0) !== state.familyRepositoryRevision) {
+    state.familyVerification = await verifyFamilyGraph(state.personRecords, state.documents, repository);
+    state.familyGraph = buildRelationshipGraph(state.personRecords, { view: state.familyView, verification: state.familyVerification });
+    state.familyRepositoryRevision = repository.revision || 0;
+  }
   return renderActiveScreen({
     state,
     content: $('#content'),

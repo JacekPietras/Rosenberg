@@ -95,8 +95,14 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                     "version": path.stat().st_mtime_ns,
                 }
                 for folder in (ROOT / "data" / "books", ROOT / "data" / "documents", ROOT / "data" / "notes", ROOT / "data" / "images")
-                for path in folder.glob("*.json")
+                for path in folder.rglob("*.json")
             ]
+            paths.extend(
+                {"path": path.relative_to(ROOT).as_posix(), "version": path.stat().st_mtime_ns}
+                for path in [ROOT / "data/people.json", ROOT / "data/places.json", ROOT / "data/names.md",
+                             *(ROOT / "scripts").rglob("*.py")]
+                if path.is_file()
+            )
             paths.sort(key=lambda item: item["path"])
             payload = json.dumps(paths).encode("utf-8")
             self.send_response(200)

@@ -1,3 +1,6 @@
+import { buildRelationshipGraph } from '../data/relationships.js';
+import { relationshipControls, relationshipPanel } from '../rendering/relationships.js';
+
 function svgEscape(value) {
   return String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
 }
@@ -6,25 +9,34 @@ function regexEscape(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-export function renderPeopleTree(people = [], documents = []) {
-  const records = Array.isArray(people)
-    ? people.filter((person) => person && person.name).map((person) => ({ ...person, _treeKey: person.id || person.name }))
-    : [];
+export function renderPeopleTree(people = [], documents = [], { graph } = {}) {
+  graph ||= buildRelationshipGraph(Array.isArray(people) ? people : []);
+  const records = graph.records.filter((person) => person?.name).map((person) => ({ ...person,
+    children: graph.edges.filter((edge) => edge.type === 'parent' && edge.person === person._treeKey).map((edge) => edge.of),
+    wife: graph.generated ? null : person.wife }));
   if (!records.length) return '<div class="people-tree"><p class="status">No people found.</p></div>';
 
-  const documentRecords = documents instanceof Map ? [...documents.values()] : Array.isArray(documents) ? documents : [];
+  const documentRecords = documents instanceof Map ? [...documents.entries()] : Array.isArray(documents) ? documents.map((doc) => ['', doc]) : [];
   const mentionedYears = new Map(records.map((person) => {
     const years = new Set();
-    documentRecords.forEach((document) => {
-      const year = String(document?.date || '').match(/^\d{4}/)?.[0];
-      if (!year) return;
-      const mentioned = (document.entries || []).some((entry) => (entry.facts || []).some((fact) => {
-        const text = typeof fact === 'string' ? fact : String(fact?.text || '');
-        return person.id
-          ? new RegExp(`\\[${regexEscape(person.id)}\\]`).test(text)
-          : new RegExp(`(?<![\\p{L}\\p{N}])${regexEscape(person.name)}(?![\\p{L}\\p{N}])`, 'iu').test(text);
-      }));
-      if (mentioned) years.add(year);
+    documentRecords.forEach(([path, document]) => {
+      const explicit = /^data\/(books|notes)\//.test(path) || !!document?.book;
+      const visit = (value, inherited = '') => {
+        if (Array.isArray(value)) { value.forEach((child) => visit(child, inherited)); return; }
+        if (!value || typeof value !== 'object') return;
+        const date = explicit ? '' : Object.hasOwn(value, 'date') ? value.date : inherited;
+        Object.entries(value).forEach(([key, child]) => {
+          if (key === 'facts' || key === 'guesses') {
+            if (key === 'guesses' && graph.view !== 'with-guesses') return;
+            (Array.isArray(child) ? child : []).forEach((fact) => {
+              const historical = Object.hasOwn(fact || {}, 'date') ? fact.date : date;
+              const direct = fact?.type && person.id && [fact.person, fact.of].includes(person.id);
+              if (direct) (String(historical || '').match(/\d{4}/g) || []).forEach((year) => years.add(year));
+            });
+          } else visit(child, date);
+        });
+      };
+      visit(document);
     });
     const imageEntries = documents instanceof Map ? documents.get('data/images/images.json')?.entries || [] : [];
     imageEntries.forEach((entry) => {
@@ -54,7 +66,7 @@ export function renderPeopleTree(people = [], documents = []) {
   const byId = new Map();
   records.forEach((person) => {
     byId.set(person._treeKey, person._treeKey);
-    if (person.name) byId.set(person.name, person._treeKey);
+    if (records.filter((item) => item.name === person.name).length === 1) byId.set(person.name, person._treeKey);
     if (person.id) byId.set(person.id, person._treeKey);
   });
   const groupParent = new Map(records.map((person) => [person._treeKey, person._treeKey]));
@@ -92,11 +104,9 @@ export function renderPeopleTree(people = [], documents = []) {
   // A shared descendant gets another occurrence, rather than an edge crossing
   // another family's branch. References still open the same person record.
   const covered = new Set();
-  const occurrences = [];
   const makeBranch = (group, ancestors = new Set()) => {
     covered.add(group);
     const branch = { group, members: groupMembers.get(group).map((person) => ({ ...person })), families: [] };
-    occurrences.push(branch);
     if (ancestors.has(group)) return branch;
     const nextAncestors = new Set([...ancestors, group]);
     const families = new Map();
@@ -118,12 +128,31 @@ export function renderPeopleTree(people = [], documents = []) {
   const recordsByKey = new Map(records.map((person) => [person._treeKey, person]));
   const groups = [...groupMembers.keys()].sort((left, right) => comparePeople(
     groupMembers.get(left)[0], groupMembers.get(right)[0]));
-  const roots = groups.filter((group) => !parentGroups.has(group)).map((group) => makeBranch(group));
+  let roots = groups.filter((group) => !parentGroups.has(group)).map((group) => makeBranch(group));
   // Retain components with cyclic/inconsistent ancestry, stopping expansion
   // at an already visited group on the current path.
   groups.forEach((group) => {
     if (!covered.has(group)) roots.push(makeBranch(group));
   });
+  if (graph.generated) {
+    const parentEndpoints = new Set(graph.edges.filter((edge) => edge.type === 'parent').flatMap((edge) => [edge.person, edge.of]));
+    const marriages = graph.edges.filter((edge) => edge.type === 'spouse');
+    const married = new Set(marriages.flatMap((edge) => [edge.person, edge.of]));
+    roots = roots.filter((branch) => branch.members.length !== 1 || !married.has(branch.members[0]._treeKey) || parentEndpoints.has(branch.members[0]._treeKey));
+    // A marriage gets its own pair of occurrences, without children attached.
+    // Several marriages therefore cannot create a shared parental unit.
+    marriages.forEach((edge) => roots.push({
+      group: `@marriage/${edge.person}/${edge.of}`,
+      members: [{ ...recordsByKey.get(edge.person), wife: edge.of }, { ...recordsByKey.get(edge.of), wife: null }],
+      families: [],
+    }));
+  }
+  const occurrences = [];
+  const collectOccurrences = (branch) => {
+    occurrences.push(branch);
+    branch.families.forEach((family) => family.children.forEach((child) => collectOccurrences(child.branch)));
+  };
+  roots.forEach(collectOccurrences);
   const occurrenceCounts = new Map();
   occurrences.forEach(({ members }) => members.forEach((person) => occurrenceCounts.set(
     person._treeKey, (occurrenceCounts.get(person._treeKey) || 0) + 1)));
@@ -223,7 +252,8 @@ export function renderPeopleTree(people = [], documents = []) {
           segments.push(`M${parentCenters[index]} ${y + nodeHeightFor(person)} V${busY}`);
         });
         childCenters.forEach((center) => segments.push(`M${center} ${busY} V${offsetY + layerOffsets[depth + 1]}`));
-        edges.push(`<path class="people-tree-parent" fill="none" d="${segments.join(' ')}"/>`);
+        const support = graph.edges.filter((edge) => edge.type === 'parent' && family.parents.some((parent) => parent._treeKey === edge.person) && family.children.some((child) => child.key === edge.of));
+        edges.push(`<path class="people-tree-parent" data-identity="${support.some((edge) => edge.inferred) ? 'inferred' : 'anchored'}" fill="none" d="${segments.join(' ')}"/>`);
       }
       familyX += family.width + horizontalGap;
     });
@@ -239,7 +269,8 @@ export function renderPeopleTree(people = [], documents = []) {
       const left = from.x < to.x ? from : to;
       const right = from.x < to.x ? to : from;
       const edgeY = y + Math.min(...branch.members.map(nodeHeightFor)) / 2;
-      edges.push(`<line class="people-tree-spouse" x1="${left.x + nodeWidth}" y1="${edgeY}" x2="${right.x}" y2="${edgeY}"/><text class="people-tree-edge-label" x="${(left.x + nodeWidth + right.x) / 2}" y="${edgeY - 8}">wife</text>`);
+      const support = graph.edges.find((edge) => edge.type === 'spouse' && [edge.person, edge.of].includes(person._treeKey) && [edge.person, edge.of].includes(wifeKey));
+      edges.push(`<line class="people-tree-spouse" data-identity="${support?.inferred ? 'inferred' : 'anchored'}" x1="${left.x + nodeWidth}" y1="${edgeY}" x2="${right.x}" y2="${edgeY}"/><text class="people-tree-edge-label" x="${(left.x + nodeWidth + right.x) / 2}" y="${edgeY - 8}">${graph.generated ? 'spouse' : 'wife'}</text>`);
     });
   };
   roots.forEach((branch) => place(branch, branch.x, 0, branch.y));
@@ -249,7 +280,7 @@ export function renderPeopleTree(people = [], documents = []) {
     const href = `?person=${encodeURIComponent(person.id || person.name)}`;
     return `<a class="people-tree-person-link" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${x}" y="${y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${x + nodeWidth / 2}" y="${y + 25}" text-anchor="middle">${text}</text></g></a>`;
   }).join('');
-  return `<section class="people-tree-wrap" aria-label="Family tree viewer"><div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div></section>`;
+  return `${relationshipControls(graph)}<section class="people-tree-wrap" aria-label="Family tree viewer"><div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div></section>${relationshipPanel(graph)}`;
 }
 
 export function setupPeopleTreeZoom(root = document) {

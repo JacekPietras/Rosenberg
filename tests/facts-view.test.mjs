@@ -3,24 +3,17 @@ import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 
 // Load the viewer's browser ES modules without a Node package manifest.
-async function moduleUrl(path) {
-  let source = await readFile(path, 'utf8');
-  const imports = [...source.matchAll(/from '([^']+)'/g)];
-  for (const [statement, specifier] of imports) {
-    const dependency = new URL(specifier, path);
-    dependency.search = '';
-    source = source.replace(statement, `from '${await moduleUrl(dependency)}'`);
-  }
-  return `data:text/javascript;base64,${Buffer.from(source).toString('base64')}`;
-}
+import { moduleUrl } from './browser-module.mjs';
+
 const { renderFactsView } = await import(await moduleUrl(new URL('../docs/app/components/facts_view.js', import.meta.url)));
 const { createDocumentRenderer } = await import(await moduleUrl(new URL('../docs/app/screens/documents.js', import.meta.url)));
 const { createEntityScreens } = await import(await moduleUrl(new URL('../docs/app/screens/entities.js', import.meta.url)));
 const { buildPersonPattern } = await import(await moduleUrl(new URL('../docs/app/data/entities.js', import.meta.url)));
 const { escapeHtml } = await import(await moduleUrl(new URL('../docs/app/rendering/html.js', import.meta.url)));
+globalThis.window = { location: { hostname: 'example.github.io', pathname: '/Rosenberg/docs/' } };
 const options = { people: [{ id: 'eberhard', name: 'Eberhard' }], inlineMarkup: escapeHtml };
 
-test('person name pages include ID-linked effigies while ID pages distinguish namesakes', async () => {
+test('ambiguous name pages list anchors while ID pages distinguish namesake effigies', async () => {
   const people = JSON.parse(await readFile(new URL('../data/people.json', import.meta.url), 'utf8'));
   const images = JSON.parse(await readFile(new URL('../data/images/images.json', import.meta.url), 'utf8'));
   const effigy = images.entries.find((entry) => entry.title === '[vogt_zu_Lauda]');
@@ -33,15 +26,19 @@ test('person name pages include ID-linked effigies while ID pages distinguish na
     documentTitle: () => 'Images', documentNavigationUrl: () => '#',
     displayedLanguagesFor: () => [], imageMarkup: () => '',
   });
-  for (const person of ['Eberhard von Rosenberg', 'eberhard von rosenberg', 'vogt_zu_Lauda']) {
+  for (const person of ['vogt_zu_Lauda']) {
     state.person = person;
     assert.ok(renderPersonPage().includes(effigy.coverImage), person);
   }
+  state.person = 'Eberhard von Rosenberg';
+  assert.match(renderPersonPage(), /Ambiguous name/);
+  assert.match(renderPersonPage(), /person=vogt_zu_Lauda/);
+  assert.match(renderPersonPage(), /person=vogt_zu_Durn/);
   state.person = 'vogt_zu_Durn';
   assert.ok(!renderPersonPage().includes(effigy.coverImage));
 });
 
-test('ID pages exclude name-only images and seals but name pages retain them', () => {
+test('ID pages exclude name-only images and seals; ambiguous routes list choices', () => {
   const name = 'Eberhard von Rosenberg';
   const people = [{ id: 'lauda', name }, { id: 'durn', name }];
   const state = { person: 'lauda' };
@@ -70,9 +67,10 @@ test('ID pages exclude name-only images and seals but name pages retain them', (
   for (const marker of ['generic-image', 'other-image', 'seal-0', 'seal-1']) assert.ok(!strictHtml.includes(marker), marker);
   state.person = name;
   const nameHtml = renderPersonPage();
-  for (const marker of ['generic-image', 'other-image', 'direct-image', 'person-id-image', 'seal-0', 'seal-1', 'seal-2']) {
-    assert.ok(nameHtml.includes(marker), marker);
-  }
+  assert.match(nameHtml, /Ambiguous name/);
+  assert.match(nameHtml, /person=lauda/);
+  assert.match(nameHtml, /person=durn/);
+  assert.ok(!nameHtml.includes('generic-image'));
 });
 
 test('shared facts view formats dates, groups repeated dates, and preserves person links', () => {

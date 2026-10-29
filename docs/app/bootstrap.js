@@ -1,8 +1,8 @@
 import { createStore } from './state/store.js';
-import { loadPreferences, savePreferences } from './state/preferences.js?v=1';
-import { createRepository } from './data/repository.js?v=2';
+import { loadPreferences, savePreferences } from './state/preferences.js?v=2';
+import { createRepository } from './data/repository.js?v=3';
 import { parseRoute } from './state/route.js';
-import { startViewer } from './viewer.js?v=138';
+import { startViewer } from './viewer.js?v=139';
 
 /**
  * Composition root for the browser viewer.

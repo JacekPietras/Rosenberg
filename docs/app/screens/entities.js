@@ -2,6 +2,8 @@ import { imageCardMarkup } from '../rendering/images.js?v=13';
 import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rendering/facts.js?v=6';
 import { renderFactsView } from '../components/facts_view.js?v=3';
 import { findPlaceByName } from '../data/entities.js?v=87';
+import { resolvePerson } from '../data/relationships.js';
+import { relationshipControls, relationshipPanel } from '../rendering/relationships.js';
 
 export function createEntityScreens({
   state,
@@ -97,8 +99,11 @@ export function createEntityScreens({
 
   function renderPersonPage() {
     const people = getPeople();
-    let person = people.find((item) => item.id === state.person)
-      || findByName(people, state.person);
+    const resolution = resolvePerson(people, state.person);
+    if (resolution.ambiguous) {
+      return `<article class="document"><h2>${escapeHtml(state.person)}</h2><p class="status">Ambiguous name: choose an identified person.</p><ul>${resolution.matches.map((item) => `<li>${item.id ? `<a class="person-link" href="?person=${encodeURIComponent(item.id)}">${escapeHtml(item.name)} [${escapeHtml(item.id)}]</a>` : escapeHtml(item.name)}${item.titles?.length ? ` — ${escapeHtml(item.titles.join(', '))}` : ''}</li>`).join('')}</ul></article>`;
+    }
+    let person = resolution.person;
     if (!person) {
       const hasUnresolvedName = [...getDocuments().values()].some((doc) => (doc.entries || []).some((entry) => (entry.facts || []).some((fact) => isTypedFact(fact) && [fact.person, fact.of].some((value) => typeof value === 'string' && value.toLocaleLowerCase() === String(state.person).toLocaleLowerCase() && !people.some((item) => item.id === value)))));
       if (hasUnresolvedName) person = { name: String(state.person) };
@@ -144,7 +149,9 @@ export function createEntityScreens({
       return `<article class="model-card"><div class="model-info"><h2 class="model-title">${markdownLinks(title)}${date ? ` [${escapeHtml(date)}]` : ''}</h2></div><div class="image-record-visual seal-entry-media">${imageMarkup(node, [seal], { path, index, imageIndex, title, crop, sealScreen: true })}</div></article>`;
     }).join('')}</div></section>` : '';
     const personPlacesMarkup = person ? '<section class="person-places-map"><div class="person-map-wrap"><div id="person-place-map" class="map-container person-place-map" role="application" aria-label="Places mentioned in this person’s facts"></div></div></section>' : '';
-    return renderPage(person, mentionsFor(person, 'person'), 'person', pattern, () => '', `${personPlacesMarkup}${imagesMarkup}${sealsMarkup}`);
+    const graphPerson = state.familyGraph?.records[people.indexOf(person)];
+    const relationships = `${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, graphPerson?._treeKey || '__unregistered__')}`;
+    return renderPage(person, mentionsFor(person, 'person'), 'person', pattern, () => '', `${relationships}${personPlacesMarkup}${imagesMarkup}${sealsMarkup}`);
   }
 
   function renderPlacePage() {
