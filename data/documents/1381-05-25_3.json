@@ -13,7 +13,10 @@
           "type": "kin",
           "person": "Hans von Hirschhorn",
           "of": "Konrad von Rosenberg",
-          "ofTitle": ["Ritter", "Vitztum zu Heidelberg"],
+          "ofTitle": [
+            "Ritter",
+            "Vitztum zu Heidelberg"
+          ],
           "term": "Schwager"
         },
         {

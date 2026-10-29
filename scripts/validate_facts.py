@@ -25,7 +25,7 @@ from place_names import resolve_place_names
 
 ROOT = Path(__file__).resolve().parents[1]
 RELATIONS = frozenset({'parent', 'sibling', 'spouse', 'kin'})
-TYPES = RELATIONS | {'title'}
+TYPES = RELATIONS | {'title', 'death'}
 MISSING = object()
 DATE_PATTERN = re.compile(r'[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?\Z')
 
@@ -209,7 +209,7 @@ class Validator:
                 seen.add(item)
 
     def check_fact(self, fact, location, require_date, explicit_date_required,
-                   inherited, guess=False):
+                   inherited, document_source=False, guess=False):
         self.counts['guesses' if guess else 'facts'] += 1
         if isinstance(fact, str):
             if not guess:
@@ -240,10 +240,21 @@ class Validator:
             allowed = {'type', 'person', 'date', 'personTitle'}
             required = {'person'}
             if kind in RELATIONS:
-                allowed |= {'of', 'ofTitle'}
+                allowed |= {'of', 'ofTitle', 'personDeceased', 'ofDeceased'}
                 required.add('of')
-            else:
+            elif kind == 'title':
+                allowed.add('personDeceased')
                 required.add('personTitle')
+            elif kind == 'death':
+                allowed |= {'diedOn', 'diedBefore', 'circumstances'}
+                death_fields = {'diedOn', 'diedBefore'} & set(fact)
+                if len(death_fields) != 1:
+                    self.report(location, "death facts require exactly one of 'diedOn' or 'diedBefore'")
+                for field in ('diedOn', 'diedBefore'):
+                    if field in fact:
+                        self.check_date(fact[field], location + '/' + field)
+                if 'circumstances' in fact and not self.nonblank(fact['circumstances']):
+                    self.report(location + '/circumstances', 'expected a non-empty circumstances string')
             if kind == 'kin':
                 allowed.add('term')
                 required.add('term')
@@ -257,6 +268,9 @@ class Validator:
             for field in ('personTitle', 'ofTitle'):
                 if field in fact and field in allowed:
                     self.check_titles(fact[field], location + '/' + field)
+            for field in ('personDeceased', 'ofDeceased'):
+                if field in fact and (field not in allowed or fact[field] is not True):
+                    self.report(location + '/' + field, 'expected true when the source identifies this participant as deceased; otherwise omit the field')
             if kind == 'kin' and 'term' in fact and not self.nonblank(fact['term']):
                 self.report(location + '/term', 'expected a non-empty kinship term string')
         else:
@@ -265,9 +279,18 @@ class Validator:
             if not self.nonblank(fact.get('text')):
                 self.report(location + '/text', 'expected non-empty legacy fact text')
         if 'date' in fact:
+            if document_source and inherited is not MISSING and fact['date'] == inherited:
+                self.report(
+                    location + '/date',
+                    'redundant document date; omit this field to inherit the enclosing document or entry date',
+                )
             self.check_date(fact['date'], location + '/date')
-        elif guess:
+        elif guess and explicit_date_required:
             self.report(location + '/date', 'guesses require an explicit historical date')
+        elif guess and document_source and typed:
+            self.check_date(inherited, location + '/date (inherited)', inherited=True)
+        elif guess:
+            self.report(location + '/date', 'undated legacy guess requires historical date review', 'warning')
         elif explicit_date_required or (require_date and (typed or self.strict_migration)):
             self.report(location + '/date', 'books/notes facts require an explicit historical date')
         elif typed:
@@ -279,6 +302,7 @@ class Validator:
             return
         self.counts['files'] += 1
         is_book = 'books' in path.parts or (isinstance(document, dict) and 'book' in document)
+        is_document = 'documents' in path.parts
         require_date = is_book or 'notes' in path.parts
         explicit_date_required = is_book or ('notes' in path.parts and self.strict_migration)
 
@@ -296,6 +320,7 @@ class Validator:
                                 self.check_fact(
                                     fact, f'{loc}/{index}', require_date,
                                     explicit_date_required, current_date,
+                                    document_source=is_document,
                                     guess=key == 'guesses',
                                 )
                     else:

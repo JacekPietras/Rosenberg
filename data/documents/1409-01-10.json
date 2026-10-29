@@ -7,7 +7,11 @@
       "german": "Fritze Stumph von Swymburg und Kunne, seine eheliche Hausfrau, verkaufen der Gräfin Ute von Wertheim, Herzogin von Teck, für 240 fl. ihre Güter und Gefälle zu Schweinberg (Swynburg), die der verstorbene Vater Heintze Stumpff von Schweinberg (Sweymburg) von Engilhart und Ebirhart von Rosenberg gekauft hat, und die von dem Stift Würzburg zu Lehen gehen. (siehe StAWt-G Rep. 5 Lade XI S Nr. 4)",
       "english": "Fritze Stumph von Swymburg and Kunne, his wife, sold their estates and land in Schweinberg to Countess Ute von Wertheim, Duchess of Teck, for 240 florins. These lands and lands had been purchased by the deceased father, Heinrich Stumpff von Schweinberg, from Engelhard and Eberhard von Rosenberg, and which were granted as a fief by the Würzburg Abbey. (see StAWt-G Rep. 5 Lade XI S No. 4)",
       "facts": [
-        "Heinrich Stumpff von Schweinberg is deceased.",
+        {
+          "type": "death",
+          "person": "Heinrich Stumpff von Schweinberg",
+          "diedBefore": "1409-01-11"
+        },
         "Heinrich Stumpff von Schweinberg purchased Güter und Gefälle at Schweinberg from Engelhard von Rosenberg.",
         "Heinrich Stumpff von Schweinberg purchased Güter und Gefälle at Schweinberg from Eberhard von Rosenberg.",
         "The Güter und Gefälle at Schweinberg were held zu Lehen from Stift Würzburg."

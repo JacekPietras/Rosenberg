@@ -15,9 +15,15 @@
           "type": "spouse",
           "person": "Elisabeth von Bebenburg",
           "of": "Eberhard von Rosenberg",
-          "ofTitle": ["selig"]
+          "ofTitle": [
+            "selig"
+          ]
         },
-        "Eberhard von Rosenberg was deceased",
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedBefore": "1411-12-22"
+        },
         "Engelhard von Rosenberg sold Eigenleute formerly resident at Uffingen to Ulrich Wambolt, Komtur at Mergentheim, and the house of the Teutonic Order there",
         "Elisabeth von Bebenburg sold Eigenleute formerly resident at Uffingen to Ulrich Wambolt, Komtur at Mergentheim, and the house of the Teutonic Order there",
         "The Eigenleute sold by Engelhard von Rosenberg and Elisabeth von Bebenburg were Heintz Mulner, his wife Anne, and their children"

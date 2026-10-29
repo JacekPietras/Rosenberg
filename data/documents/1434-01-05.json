@@ -17,8 +17,16 @@
           "of": "Peter von Gauangelloch",
           "ofDeceased": true
         },
-        "Peter von Gauangelloch was deceased by 1434-01-05.",
-        "Eberhard von Gauangelloch was deceased by 1434-01-05.",
+        {
+          "type": "death",
+          "person": "Peter von Gauangelloch",
+          "diedBefore": "1434-01-06"
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Gauangelloch",
+          "diedBefore": "1434-01-06"
+        },
         "Agnes von Rosenberg and Diether von Gauangelloch der Jüngere sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth.",
         {
           "type": "parent",

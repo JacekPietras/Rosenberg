@@ -29,13 +29,11 @@
         {
           "type": "parent",
           "person": "Ludwig Münch von Rosenberg",
-          "personTitle": ["Ritter"],
+          "personTitle": [
+            "Ritter"
+          ],
           "of": "Hans Münch von Rosenberg",
           "date": "1359"
-        },
-        {
-          "date": "1359",
-          "text": "Arnold von Rosenberg was deceased by 1359."
         },
         {
           "date": "1383",
@@ -52,6 +50,12 @@
         {
           "date": "1438",
           "text": "Konrad Münch von Rosenberg received two parts of the village of Uissigheim."
+        },
+        {
+          "type": "death",
+          "person": "Arnold von Rosenberg",
+          "diedBefore": "1360",
+          "date": "1359"
         }
       ]
     },
@@ -73,33 +77,122 @@
       "german": "* **Heinrich** von Roſenberg, Ritter, ordentlicher Stamm Herr dieſes weitläuffig ſich ausgebreitet, aber nun wieder erloſchenen Haußes, ward als ein alter Ritter, im Turnier zu Rothenburg ob der Tauber, als König der Geſellſchafft in Nieder Francken, erwählet, und unter den Turnier Zeichen des Eſels verordnet. an. 943.\n  * **Anna** von Roſenberg. Gemahl, Herr Rudolph von Thüngen. Sie ward an. 942. als Wittwe auf Seiten der Fränckiſchen Ritterſchafft im Turnier zu Rothenburg, zur Schau - und Helm Theilung erkohren.\n  * **Heinrich** von Roſenberg, Ritter, lebte an. 942. und 966.\n    * **Reichard** von Roſenberg iſt anno 996. im Turnier zu Braunschweig von der Fränckiſchen Ritterſchafft, als ein junger Ritter zur Schau- und Helm Theilung verordnet worden.\n      * **Heinrich** von Roſenberg, war bekannt anno 1032. 1035. und 1039.\n        * **Willertraud** von Roſenberg. Gemahl, Herr Albanus von Freundsberg. Sie wurde anno 1080. als Wittwe im Augſpurgischen Turnier, von der Schwäbiſchen Ritterſchafft zur Schau- und Helm Theilung erwählet.\n        * **Ernst** von Roſenberg, Ritter, florirte anno 1080. und 1100.\n          * **Wilhelm** von Roſenberg, lebte anno 1136. 1139. und 1158.\n            * **Wilhelm** von Roſenberg, Ritter, ward an. 1165. beym zehenden Turnier in Zürch mit herrn Graf Thomas von Rhineck aufgetragen.\n            * **Hieronymus** von Roſenberg, Ritter, iſt anno 1165. beym Zürcher Turnier auf Seiten der Fränkiſchen Nobleſſe Grießwertel geweſen.\n            * **Ernst** von Roſenberg, turnierete an. 1179. zu Cölln am Rhein, und wurde da auf Seiten der Francken zum Turnier Amt beſtellet.\n              * **Georg** v. Roſenberg der Alte genannt, war an. 1235. im Turnier zu Würzburg Werber und Vorreiser.\n                * **Hanß** von Roſenberg, führete ſein edles Geſchlecht fort. Von Ihme und ſeinen Nachkommen **[Tab. CCCCII.]**\n                * **Siegemund** von Roſenberg, ward anno 1284. im Turnier zu Regenspurg von der Fränkiſchen Ritterſchafft zum Turnier Amt geſetzet.\n                * **Georg** von Roſenberg, der Junge genannt, turnierete als Ritter anno 1296. zu Schweinfurth.\n                * **Ernst** v. Roſenberg, rennete auch anno 1296 im Turnier zu Schweinfurth mit.\n              * **Engel** von Roſenberg, Ritter, rennete an. 1235. in beſagtem Turnier zu Würzburg.\n              * **Wolfgang** von Roſenberg, iſt in nur gedachtem Turnier zu Würzburg an. 1235. zur Schau- und Helm Theilung verordnet worden.",
       "english": "* **Heinrich** von Rosenberg, Ritter, regular lord of this widely spread but now extinct house, was elected as an old Ritter in the tournament at Rothenburg ob der Tauber as king of the company in Lower Franconia, and was ordained under the tournament symbol of the donkey. 943.\n  * **Anna** von Rosenberg. Husband, Lord Rudolph von Thüngen. In 942, as a widow, she was chosen to participate in the tournament at Rothenburg, where she was a member of the Franconian knighthood, and to participate in the division of the helmet and shield.\n  * **Heinrich** von Rosenberg, Ritter, lived between 942 and 966.\n    * **Reichard** von Rosenberg was appointed as a young Ritter for the show and helmet division in the tournament in Braunschweig in the year 996 by the Franconian knighthood.\n      * **Heinrich** von Rosenberg, was known in 1032, 1035 and 1039.\n        * **Willertraud** von Rosenberg. Husband, Lord Albanus von Freundsberg. In 1080, as a widow, she was chosen by the Swabian knighthood to divide the show and helmet in the Augsburg tournament.\n        * **Ernst** von Rosenberg, Ritter, flourished in 1080 and 1100.\n          * **Wilhelm** von Rosenberg, lived in 1136, 1139 and 1158.\n            * **Wilhelm** von Rosenberg, Ritter, was enlisted in 1165 at the tenth tournament in Zurich with Count Thomas von Rhineck.\n            * **Hieronymus** von Rosenberg, Ritter, was on the side of the Franconian nobles Grießwertel at the Zurich tournament in 1165.\n            * **Ernst** von Rosenberg, competed in 1179 at Cölln on the Rhine, and was appointed to the tournament office on the side of the Franks.\n              * **Georg**von Rosenberg der Alte genannt, was in 1235 a recruiter and forerunner in the tournament in Würzburg.\n                * **Hans**von Rosenberg, continued his noble family. From him and his descendants **[Tab. CCCCII.]**\n                * **Siegemund** von Rosenberg, was appointed to the tournament office by the Franconian knighthood in the tournament at Regenspurg in 1284.\n                * **Georg** von Rosenberg, der Junge genannt, competed as a Ritter in 1296 in Schweinfurth.\n                * **Ernst** von Rosenberg, also took part in the tournament in Schweinfurth in 1296.\n              * **Engel** von Rosenberg, Ritter, competed in the aforementioned tournament in Würzburg in 1235.\n              * **Wolfgang** von Rosenberg, was ordered to divide the show and helmet in the aforementioned tournament in Würzburg in 1235.",
       "guesses": [
-        {"date": "0943", "text": "Heinrich von Rosenberg, Ritter, was chosen as king of the society in Lower Franconia at a tournament at Rothenburg ob der Tauber."},
-        {"type": "spouse", "person": "Anna von Rosenberg", "of": "Rudolf von Thüngen", "date": "0942"},
-        {"date": "0942", "text": "Rudolf von Thüngen was deceased by 942."},
-        {"date": "0942", "text": "Anna von Rosenberg was chosen for an inspection and helmet division at Rothenburg in 942."},
-        {"date": "0942", "text": "Heinrich von Rosenberg, Ritter, lived in 942."},
-        {"date": "0966", "text": "Heinrich von Rosenberg, Ritter, lived in 966."},
-        {"date": "0996", "text": "Reichard von Rosenberg was appointed to an inspection and helmet division at a tournament at Braunschweig."},
-        {"date": "1032", "text": "Heinrich von Rosenberg was known in 1032."},
-        {"date": "1035", "text": "Heinrich von Rosenberg was known in 1035."},
-        {"date": "1039", "text": "Heinrich von Rosenberg was known in 1039."},
-        {"date": "1080", "text": "Willertraud von Rosenberg was chosen for an inspection and helmet division at an Augsburg tournament in 1080."},
-        {"date": "1080", "text": "Ernst von Rosenberg, Ritter, flourished in 1080."},
-        {"date": "1100", "text": "Ernst von Rosenberg, Ritter, flourished in 1100."},
-        {"date": "1136", "text": "Wilhelm von Rosenberg lived in 1136."},
-        {"date": "1139", "text": "Wilhelm von Rosenberg lived in 1139."},
-        {"date": "1158", "text": "Wilhelm von Rosenberg lived in 1158."},
-        {"type": "spouse", "person": "Willertraud von Rosenberg", "of": "Albanus von Freundsberg", "date": "1080"},
-        {"date": "1080", "text": "Albanus von Freundsberg was deceased by 1080."},
-        {"date": "1165", "text": "Wilhelm von Rosenberg, Ritter, attended a tournament at Zürich."},
-        {"date": "1165", "text": "Hieronymus von Rosenberg, Ritter, served as Grieswärtel at a tournament at Zürich."},
-        {"date": "1179", "text": "Ernst von Rosenberg participated in a tournament at Cologne."},
-        {"date": "1235", "text": "Georg von Rosenberg der Alte served as Werber and Vorreiser at a tournament at Würzburg."},
-        {"date": "1284", "text": "Siegmund von Rosenberg was appointed to a tournament office at Regensburg."},
-        {"date": "1296", "text": "Georg von Rosenberg der Junge, Ritter, participated in a tournament at Schweinfurt."},
-        {"date": "1296", "text": "Ernst von Rosenberg participated in a tournament at Schweinfurt."},
-        {"date": "1235", "text": "Engel von Rosenberg, Ritter, participated in a tournament at Würzburg."},
-        {"date": "1235", "text": "Wolfgang von Rosenberg was appointed to an inspection and helmet division at a tournament at Würzburg."}
+        {
+          "date": "0943",
+          "text": "Heinrich von Rosenberg, Ritter, was chosen as king of the society in Lower Franconia at a tournament at Rothenburg ob der Tauber."
+        },
+        {
+          "type": "spouse",
+          "person": "Anna von Rosenberg",
+          "of": "Rudolf von Thüngen",
+          "date": "0942"
+        },
+        {
+          "date": "0942",
+          "text": "Anna von Rosenberg was chosen for an inspection and helmet division at Rothenburg in 942."
+        },
+        {
+          "date": "0942",
+          "text": "Heinrich von Rosenberg, Ritter, lived in 942."
+        },
+        {
+          "date": "0966",
+          "text": "Heinrich von Rosenberg, Ritter, lived in 966."
+        },
+        {
+          "date": "0996",
+          "text": "Reichard von Rosenberg was appointed to an inspection and helmet division at a tournament at Braunschweig."
+        },
+        {
+          "date": "1032",
+          "text": "Heinrich von Rosenberg was known in 1032."
+        },
+        {
+          "date": "1035",
+          "text": "Heinrich von Rosenberg was known in 1035."
+        },
+        {
+          "date": "1039",
+          "text": "Heinrich von Rosenberg was known in 1039."
+        },
+        {
+          "date": "1080",
+          "text": "Willertraud von Rosenberg was chosen for an inspection and helmet division at an Augsburg tournament in 1080."
+        },
+        {
+          "date": "1080",
+          "text": "Ernst von Rosenberg, Ritter, flourished in 1080."
+        },
+        {
+          "date": "1100",
+          "text": "Ernst von Rosenberg, Ritter, flourished in 1100."
+        },
+        {
+          "date": "1136",
+          "text": "Wilhelm von Rosenberg lived in 1136."
+        },
+        {
+          "date": "1139",
+          "text": "Wilhelm von Rosenberg lived in 1139."
+        },
+        {
+          "date": "1158",
+          "text": "Wilhelm von Rosenberg lived in 1158."
+        },
+        {
+          "type": "spouse",
+          "person": "Willertraud von Rosenberg",
+          "of": "Albanus von Freundsberg",
+          "date": "1080"
+        },
+        {
+          "date": "1165",
+          "text": "Wilhelm von Rosenberg, Ritter, attended a tournament at Zürich."
+        },
+        {
+          "date": "1165",
+          "text": "Hieronymus von Rosenberg, Ritter, served as Grieswärtel at a tournament at Zürich."
+        },
+        {
+          "date": "1179",
+          "text": "Ernst von Rosenberg participated in a tournament at Cologne."
+        },
+        {
+          "date": "1235",
+          "text": "Georg von Rosenberg der Alte served as Werber and Vorreiser at a tournament at Würzburg."
+        },
+        {
+          "date": "1284",
+          "text": "Siegmund von Rosenberg was appointed to a tournament office at Regensburg."
+        },
+        {
+          "date": "1296",
+          "text": "Georg von Rosenberg der Junge, Ritter, participated in a tournament at Schweinfurt."
+        },
+        {
+          "date": "1296",
+          "text": "Ernst von Rosenberg participated in a tournament at Schweinfurt."
+        },
+        {
+          "date": "1235",
+          "text": "Engel von Rosenberg, Ritter, participated in a tournament at Würzburg."
+        },
+        {
+          "date": "1235",
+          "text": "Wolfgang von Rosenberg was appointed to an inspection and helmet division at a tournament at Würzburg."
+        },
+        {
+          "type": "death",
+          "person": "Rudolf von Thüngen",
+          "diedBefore": "0943",
+          "date": "0942"
+        },
+        {
+          "type": "death",
+          "person": "Albanus von Freundsberg",
+          "diedBefore": "1081",
+          "date": "1080"
+        }
       ]
     },
     {
@@ -111,9 +204,18 @@
       "german": "* **Hanß** von Roſenberg: führete ſein edles Geſchlechte fort (Tab. CCCCI.) und wird in verſchiedenen Urkunden de anno 1271. 1286. und 1290. als ein Zeuge gefunden.\n  * **Eckhard** von Rosenberg, Hansens Sohn, lebte an. 1300. und machte mit seinem Bruder Eberhard an. 1312. einen Vertrag.\n    * **Conrad** von Roſenberg\n    * **Eberhard** von Roſenberg, empfienge an. 1345. zwey Theile am Zehend zu Boffsheim, das Jus Patronatus über die Kirchen zu Burgheim, Roſenberg und Boffsheim, den groſen und kleinen Zehend zu Sindelsheim, und den vierdten Theil vom Zehend am daſig ſogenannten Mirtel Lehnlein, das Dorf Bremen mit der Voigthey und aller Gerichtsbarkeit, den vierdten Theil am Dorf Buch mit der Gerichtsbarkeit und Voigthey, und im Dorf Schweina 2. Theile am Zehend. Gemahlin, Anna von Seckendorf.\n      * **Arnold** von Roſenberg, Ritter. Gemahlin, Anna von Brandenſtein.\n        * **Hanß** v. Roſenberg, Stamm Herr der erſten Haupt Linie. Von Ihm und ſeinen Nachkommen Siehe **[Tab. CCCCIII.]**\n        * **Eberhard** v. Roſenberg, Stamm Herr der zweyten Haupt Linie. Von Ihm und ſeinen Nachkommen Siehe **[Tab. CCCCV.]**\n        * **Conrad** v. Roſenberg, Vice Dom zu Amberg, ſtarb anno 1390. und liegt im Kloſter Důckelshauſen begraben. Gemahlin, Anna von Sickingen, ſtarb anno 1417. und liegt auch in beſagtem Kloſter Důckelshauſen.\n        * **Wolff** von Roſenberg, rennete anno 1403. im Turnier zu Darmſtadt.\n        * **Margaretha** von Roſenberg. Gemahl, Herr Hanß Senior von und zu Egloffſtein und Bärenfels anno 1380. 1390.\n      * **Anna** von Roſenberg. Gemahl, Hr. Peter v. Stetten zu Rocherſtetten.\n      * **Eberhard** von Roſenberg, Voigt zu Důrn. Gemahlin, Agatha Frey-in von Weinsperg.\n        * **Sebastian** von Roſenberg, turnierete anno 1403. zu Darmſtadt.\n        * Eliſabetha v. Roſenberg. Gemahl, Herr Fritz Truchſeß von Baldersheim zu Waldmannshofen und Baldersheim.\n        * **Anna** von Roſenberg. Gemahl, Herr Hanß von Rechenberg.\n        * **Eberhard** v. Roſenberg, des hohen Johanitter Ordens Ritter und Commandeur zu den Aichen bey Weiſenburg anno 1368.\n        * **Welprecht** von Roſenberg. Gemahlin, (I) Agnes von Hutten, Hrn. Conrads von Hutten Ritters, Hochfürſtlich Würzburgiſchen Hofmeiſters, und Frauen Catharina von Hutten, einer gebornen Fůchſin von Dornheim, Tochter. (II) Suſanna von Hirſchhorn.\n        * **Rudolph** von Roſenberg, war an. 1414. mit dem Herrn Groß Meiſter des Johanitter Ordens, Herrn Grafen Hugone von Montfort auf dem Concilio zu Coſtnitz. Gemahlin, Anna von Cronberg.\n      * **Barbara** von Roſenberg. Gemahl, Herr Hanß Geyer von Giebelſtadt. Sie thate Verzicht an. 1380.\n      * **Engelhard** von Roſenberg, kauffte an. 1398. Hrn. Herolden v. Buchheim und deſſen Erben, alle ſeine Güter zu Gögletzheim ab.\n  * **Eberhard** von Rosenberg an. 1312, und war noch bekannt an. 1329. Gemahlin, Elisabetha.\n    * **Hermann** von Roſenberg: Dom Capitular Herr zu Würzburg anno 1345.\n    * **Engelhard** von Roſenberg: machte mit ſeinen herrin Brüdern anno 1342. einen Burg Frieden. Gemahlin, Barbara von Eyrthal.\n      * **Wolff** von Roſenberg, Ritter, war an. 1362. beym Turnier zu Bamberg Werber und Vorreiser, und an. 1374. bey dem zu Eſlingen im Turnier Amte. Seine Haußfrau befande ſich mit im lezten, und brachte Herrn Reinharden von Rathſamshauſen daſelbſten den dritten Danck.\n        * **Conrad** von Roſenberg, turnierete anno 1374. zu Eſlingen.\n        * **Friederich** v. Roſenberg, an. 1392. Gemahlin, Margaretha von Altorf genannt von Großsperg.\n          * **Anna** v. Roſenberg, turnierete an. 1408. zu Heilbrunn.\n          * **Georg** von Roſenberg war auch an. 1408. im Turnier zu Heilbrunn.\n          * **Magdalena** von Roſenberg. Gemahl, Herr Krafft von Lenterßheim zu NeuenMur, Trendel und Beroldsheim, Chur Brandenburgiſcher Rath, Schirmer der Land-Gerichte zu Crailſpach und Nürnberg, und Urtheiler des Land Gerichts zu Dettingen, bliebe an. 1412. den 24 Octob. in einer Schlacht wider den Herzog von Stettin.\n      * **Kilian** von Roſenberg, Ritter, ſtunde an. 1362 zu Bamberg im Turnier Amte, wo ſeine Haußfrau Nahmens Margaretha, Herrn Philippen von Riedheim, einen edlen Schwaben, den erſten Danck gegeben hat.\n        * **Hieronymus** von Roſenberg, war an. 1403. im Turnier zu Darmſtadt Mit Werber und Vorreiser.\n        * **Kilian** von Roſenberg, turnierete an. 1403. zu Darmſtadt.",
       "english": "* **Hans** von Rosenberg: continued his noble family (Tab. CCCCI.) and is found as a witness in various documents from the years 1271, 1286 and 1290.\n  * **Eckhard** von Rosenberg, Hansen's son, lived in 1300 and made a contract with his brother Eberhard in 1312.\n    * **Konrad** von Rosenberg\n    * **Eberhard** von Rosenberg, received in 1345 two parts of the tithe at Boffsheim, the patronage over the churches of Burgheim, Rosenberg, and Boffsheim, the large and small tithes of Sindelsheim, and a quarter of the tithe at the so-called Mirtel Lehnlein, the village of Bremen with the Voigthey and all jurisdiction, a quarter of the village of Buch with jurisdiction and Voigthey, and in the village of Schweina, two parts of the tithe. Wife, Anna von Seckendorf.\n      * **Arnold** von Rosenberg, Ritter. Wife, Anna von Brandenstein.\n        * **Hans** von Rosenberg, Lord of the first main line. Of him and his descendants see **[Tab. CCCCIII.]**\n        * **Eberhard**von Rosenberg, Lord of the second main line. Of him and his descendants see **[Tab. CCCCV.]**\n        * **Konrad** von Rosenberg, Vice-Cathedral of Amberg, died in 1390 and is buried in the Duckelshausen Monastery. His wife, Anna von Sickingen, died in 1417 and is also buried in the aforementioned Duckelshausen Monastery.\n        * **Wolff** von Rosenberg, ran in the tournament in Darmstadt in 1403.\n        * **Margaretha** von Rosenberg. Husband, Lord Hans Senior of Egloffstein and Bärenfels in 1380 and 1390.\n      * **Anna** von Rosenberg. Husband, Mr. Peter von Stetten of Rocherstetten.\n      * **Eberhard** von Rosenberg, Voigt of Důrn. Wife, Agatha Frey-in von Weinsperg.\n        * **Sebastian** von Rosenberg, competed in Darmstadt in 1403.\n        * Elisabeth von Rosenberg. Husband, Lord Fritz Truchsess of Baldersheim in Waldmannshofen and Baldersheim.\n        * **Anna** von Rosenberg. Husband, Lord Hans von Rechenberg.\n        * **Eberhard** von Rosenberg, Ritter and Commander of the High Order of St. John at Aichen near Weisenburg in 1368.\n        * **Welprecht** von Rosenberg. Wife, (I) Agnes von Hutten, Ritter of Lord Konrad von Hutten, Prince-in-waiting to the Princely House of Würzburg, and daughter of Catharina von Hutten, née Fuchsin von Dornheim. (II) Susanna von Hirschhorn.\n        * **Rudolph** von Rosenberg, was married in 1414 to the Grand Master of the Order of St. John, Count Hugone von Montfort, at the Council of Costnitz. His wife, Anna von Cronberg.\n      * **Barbara** von Rosenberg. Husband, Lord Hans Geyer of Giebelstadt. She renounced. 1380.\n      * **Engelhard** von Rosenberg, bought all his property in Gögletzheim from Mr. Herold von Buchheim and his heirs in 1398.\n  * **Eberhard** von Rosenberg in 1312, and was still known in 1329. Wife, Elisabetha.\n    * **Hermann** von Rosenberg: Cathedral Capitular Lord of Würzburg in 1345.\n    * **Engelhard** von Rosenberg: made a castle peace with his brothers in 1342. Wife, Barbara von Eyrthal.\n      * **Wolff** von Rosenberg, Ritter, was a recruiter and forerunner at the tournament in Bamberg in 1362, and in 1374 held the tournament office at Eslingen. His wife was also at the latter and brought the third thanks to Lord Reinhard of Rathsamshausen.\n        * **Konrad** von Rosenberg, competed in the year 1374 in Eslingen.\n        * **Frederick** von Rosenberg, born in 1392. Wife, Margaretha von Altorf called von Großsperg.\n          * **Anna** von Rosenberg, competed in 1408 at Heilbrunn.\n          * **Georg** von Rosenberg was also present in 1408 at the tournament in Heilbrunn.\n          * **Magdalena** von Rosenberg's husband, Lord Krafft of Lenterßheim at NeuenMur, Trendel, and Beroldsheim, Elector of Brandenburg, protector of the district courts of Crailsheim and Nuremberg, and judge of the district court of Dettingen, remained on October 24, 1412, in a battle against the Duke of Stettin.\n      * **Kilian** von Rosenberg, Ritter, was present in 1362 at Bamberg in the tournament office, where his wife, Margaretha, gave the first thanks to Philipp von Riedheim, a noble Swabian.\n        * **Hieronymus** von Rosenberg, was in 1403 in the tournament in Darmstadt with recruiter and forerunner.\n        * **Kilian** von Rosenberg, competed in 1403 in Darmstadt.",
       "facts": [
-        {"date": "1271", "text": "Hans von Rosenberg appeared as a witness in a document."},
-        {"date": "1286", "text": "Hans von Rosenberg appeared as a witness in a document."},
-        {"date": "1290", "text": "Hans von Rosenberg appeared as a witness in a document."},
+        {
+          "date": "1271",
+          "text": "Hans von Rosenberg appeared as a witness in a document."
+        },
+        {
+          "date": "1286",
+          "text": "Hans von Rosenberg appeared as a witness in a document."
+        },
+        {
+          "date": "1290",
+          "text": "Hans von Rosenberg appeared as a witness in a document."
+        },
         {
           "type": "parent",
           "person": "Hans von Rosenberg",
@@ -133,14 +235,6 @@
         {
           "date": "1345",
           "text": "Eberhard von Rosenberg received the patronage of the churches at Burgheim, Rosenberg and Bofsheim."
-        },
-        {
-          "date": "1390",
-          "text": "Konrad von Rosenberg, Vizedom zu Amberg, died."
-        },
-        {
-          "date": "1417",
-          "text": "Anna von Sickingen died."
         },
         {
           "date": "1403",
@@ -237,14 +331,35 @@
           "text": "Kilian von Rosenberg participated in a tournament at Darmstadt."
         },
         {
-          "date": "1412-10-24",
-          "text": "Kraft von Lentersheim zu Neuenmuhr, Trendel und Berolzheim died in a battle against the Duke of Stettin."
-        },
-        {
           "type": "title",
           "person": "Eberhard von Rosenberg",
-          "personTitle": ["Ritter des Johanniterordens", "Komtur zu den Aichen bei Weißenburg"],
+          "personTitle": [
+            "Ritter des Johanniterordens",
+            "Komtur zu den Aichen bei Weißenburg"
+          ],
           "date": "1368"
+        },
+        {
+          "type": "death",
+          "person": "Konrad von Rosenberg",
+          "diedOn": "1390",
+          "date": "1390",
+          "personTitle": [
+            "Vizedom zu Amberg"
+          ]
+        },
+        {
+          "type": "death",
+          "person": "Anna von Sickingen",
+          "diedOn": "1417",
+          "date": "1417"
+        },
+        {
+          "type": "death",
+          "person": "Kraft von Lentersheim zu Neuenmuhr, Trendel und Berolzheim",
+          "diedOn": "1412-10-24",
+          "date": "1412-10-24",
+          "circumstances": "In a battle against the Duke of Stettin"
         }
       ]
     },
@@ -280,10 +395,6 @@
           "date": "1439"
         },
         {
-          "date": "1439",
-          "text": "Hans von Rosenberg was deceased by 1439."
-        },
-        {
           "date": "1484",
           "text": "Michael von Rosenberg zu Boxberg participated in a tournament at Stuttgart."
         },
@@ -292,16 +403,37 @@
           "text": "Hans von Rosenberg received his fiefs at Würzburg."
         },
         {
-          "date": "1525",
-          "text": "Hans von Rosenberg died in the Peasants’ War."
-        },
-        {
           "date": "1570",
-          "text": "Hans Ludwig von Rosenberg died without descendants."
+          "text": "Hans Ludwig von Rosenberg left no descendants."
         },
         {
           "date": "1540-03-06",
-          "text": "Hans Erhart von Mespelbrunn zu Hohenburg died without male heirs."
+          "text": "Hans Erhart von Mespelbrunn zu Hohenburg left no male heirs."
+        },
+        {
+          "type": "death",
+          "person": "Hans von Rosenberg",
+          "diedBefore": "1440",
+          "date": "1439"
+        },
+        {
+          "type": "death",
+          "person": "Hans von Rosenberg",
+          "diedOn": "1525",
+          "date": "1525",
+          "circumstances": "During the Peasants’ War"
+        },
+        {
+          "type": "death",
+          "person": "Hans Ludwig von Rosenberg",
+          "diedOn": "1570",
+          "date": "1570"
+        },
+        {
+          "type": "death",
+          "person": "Hans Erhart von Mespelbrunn zu Hohenburg",
+          "diedOn": "1540-03-06",
+          "date": "1540-03-06"
         }
       ]
     },
@@ -362,14 +494,13 @@
           "text": "Eberhard von Rosenberg zu Schüpf, Boxberg und Hohenstadt and his brothers made the village of Hohenstadt a fief."
         },
         {
-          "date": "1519",
-          "text": "Eberhard von Rosenberg zu Schüpf, Boxberg und Hohenstadt died."
-        },
-        {
           "date": "1544",
           "text": "Albrecht von Rosenberg zu Schüpf, Boxberg und Hohenstadt captured Hieronymus Paumgärtner der Ältere on his return from the Imperial Diet at Speyer."
         },
-        {"date": "1523", "text": "The city of Nuremberg had a part in the destruction of Albrecht von Rosenberg's castle at Boxberg."},
+        {
+          "date": "1523",
+          "text": "The city of Nuremberg had a part in the destruction of Albrecht von Rosenberg's castle at Boxberg."
+        },
         {
           "date": "1557",
           "text": "Albrecht von Rosenberg zu Schüpf, Boxberg und Hohenstadt led soldiers recruited in the Franconian Circle to Hungary against the Turks."
@@ -377,10 +508,6 @@
         {
           "date": "1562-10-19",
           "text": "Albrecht von Rosenberg zu Schüpf, Boxberg und Hohenstadt arrived at Frankfurt with Duke Christoph of Württemberg."
-        },
-        {
-          "date": "1567",
-          "text": "Albrecht von Rosenberg zu Schüpf, Boxberg und Hohenstadt died."
         },
         {
           "type": "spouse",
@@ -394,16 +521,8 @@
           "date": "1530"
         },
         {
-          "date": "1552",
-          "text": "Katharina von Seinsheim died."
-        },
-        {
           "date": "1576",
-          "text": "Jakob von Rosenberg zu Schüpf, Boxberg und Hohenstadt died without male descendants."
-        },
-        {
-          "date": "1575",
-          "text": "Albrecht Christoph von Rosenberg zu Schüpf, Boxberg und Hohenstadt was deceased by 1575."
+          "text": "Jakob von Rosenberg zu Schüpf, Boxberg und Hohenstadt left no male descendants."
         },
         {
           "type": "spouse",
@@ -415,10 +534,6 @@
           ],
           "of": "Ruffina Stiebar von Buttenheim",
           "date": "1553"
-        },
-        {
-          "date": "1553",
-          "text": "Anton Rüdt von Collenberg was deceased by 1553."
         },
         {
           "type": "spouse",
@@ -437,6 +552,42 @@
             "Obrist"
           ],
           "date": "1544"
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg zu Schüpf, Boxberg und Hohenstadt",
+          "diedOn": "1519",
+          "date": "1519"
+        },
+        {
+          "type": "death",
+          "person": "Albrecht von Rosenberg zu Schüpf, Boxberg und Hohenstadt",
+          "diedOn": "1567",
+          "date": "1567"
+        },
+        {
+          "type": "death",
+          "person": "Katharina von Seinsheim",
+          "diedOn": "1552",
+          "date": "1552"
+        },
+        {
+          "type": "death",
+          "person": "Jakob von Rosenberg zu Schüpf, Boxberg und Hohenstadt",
+          "diedOn": "1576",
+          "date": "1576"
+        },
+        {
+          "type": "death",
+          "person": "Albrecht Christoph von Rosenberg zu Schüpf, Boxberg und Hohenstadt",
+          "diedBefore": "1576",
+          "date": "1575"
+        },
+        {
+          "type": "death",
+          "person": "Anton Rüdt von Collenberg",
+          "diedBefore": "1554",
+          "date": "1553"
         }
       ]
     },
@@ -451,7 +602,7 @@
       "facts": [
         {
           "date": "1439",
-          "text": "Konrad von Rosenberg zu Schüpf died unmarried."
+          "text": "Konrad von Rosenberg zu Schüpf remained unmarried."
         },
         {
           "type": "title",
@@ -465,14 +616,6 @@
         {
           "date": "1439",
           "text": "Christoph von Rosenberg zu Schüpf served in war."
-        },
-        {
-          "date": "1419",
-          "text": "Eberhard von Rosenberg died at Stuttgart."
-        },
-        {
-          "date": "1472",
-          "text": "Heinrich von Seckendorff Aberdar zu Beistingen und Kressberg died."
         },
         {
           "type": "spouse",
@@ -531,6 +674,25 @@
           ],
           "of": "Elisabeth Wolfskeel von Reichenberg",
           "date": "1430"
+        },
+        {
+          "type": "death",
+          "person": "Konrad von Rosenberg zu Schüpf",
+          "diedOn": "1439",
+          "date": "1439"
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedOn": "1419",
+          "date": "1419",
+          "circumstances": "At Stuttgart"
+        },
+        {
+          "type": "death",
+          "person": "Heinrich von Seckendorff Aberdar zu Beistingen und Kressberg",
+          "diedOn": "1472",
+          "date": "1472"
         }
       ]
     },
@@ -625,13 +787,12 @@
       "english": "* **Konrad** von und zu Rosenberg zu Gnetssheim, Ritter, continued the second main line (Tab. CCCCV.) was known in 1443 and received Gnetsheim as a hereditary fief from Emperor Friderico. Wife,**(I)**Anna von Heßberg, daughter of Lord Darii von Heßberg of Neuenhauß, and Mrs. Margarethå von Heßberg, a née Stiebarin of Buttenheim.**(II)**Margaretha Freyin von Schwarzenberg, daughter of Lord Erckinger Freyherens von Schwarzenberg in Schwarzenberg and high Landsberg, Imperial Councillor, and Mrs. Annå Freyin von Schwarzenberg, née von Bibra.\n  * **[I] Erasmus** von Rosenberg, StamLord of the line of Uttendosen. Of him and his descendants see **[Tab. CCCCVIII.]**\n  * **[I] Konrad** von Rosenberg, tribeLord of the line of Rosenberg. Of him and his descendants see **[Tab. CCCCX.]**\n  * **[I] Frederick** von Rosenberg, led thethe second main line. Of him and his descendants see **[Tab. CCCCXI. B.]**\n  * [**I] Philipp** von und zu Rosenberg, Chur PalatinateCouncilor and Marshal, came to the tournaments in Heidelberg, Ansbach, and Bamberg. His wife, Margaretha von Allendorff, daughter of Lord Christoph von Allendorff, Elector Palatine Councilor and Court Master, and his wife Cunegunda von Allendorff, née Marshal von Pappenheim.\n  * **[I] Elizabeth** von Rosenberg. Husband, Mr. MMichael Groß von und zu Trockau, died in 1487.\n  * **[II] Hans** von Rosenberg zu Gnetsheim, head of the Gnetsheim line, ran in 1479 in the tournament in Würzburg, and in 1487 in the one in Worms. Wife, Ottilia von Fleckenstein, daughter of Lord Konrad von Fleckenstein, and wife Cunegunda von Fleckenstein, a daughter née von Handschuchsheim.\n    * **Hans** von Rosenberg Hans von Rosenberg zu Gnetsheim, called der Jüngere, was known in 1498 and 1508 as wife of Elisabeth von Riedern, Lord Eberhard von Riedern, Elector Palatine Councillor and Bailiff, and then as wife of Annå von Riedern, daughter of a woman born von Sickingen.\n      * **Balthasar** von Rosenberg zu Gnetsheim, High PrincelyWürzburg councilor and bailiff of Heidingsfeld. Wife, Sibylla von Wolmarshausen, daughter of Lord Marx von Wolmarshausen of Weltingen, and Mrs. Barbara von Wolmarshausen, née von Gich, from the House of Wickenstein.\n        * **Hans** **Christoph** von Rosenberg zu Gnetsheim, died as the last of the line of Gnetsheim, without male heirs.\n        * **Hans** **Konrad** von Rosenberg Hans Konrad von Rosenberg died in his youth.\n        * **Barbara Margaretha** von Rosenberg Barbara Margaretha von Rosenberg, starb klein.\n      * **Margaretha** von Rosenberg. Husband, HHeinrich von Fleckenstein, son of Lord Jacob von Fleckenstein, who fathered with her Friederich, Ludwig, Heinrich and Anne von Fleckenstein, the last of whom married Lord Hans Georgen von Wellwarth.\n    * **Margaretha** von Rosenberg.\n  * **[II] Margaretha von Rosenberg.** Husband, Lord Hans von Egloffstein of Mühlhausen, Ritter, High Prince of Eichstadt, Steward of Vorberg.",
       "facts": [
         {
-          "date": "1487",
-          "text": "Michael Groß von Trockau died."
-        },
-        {
           "type": "title",
           "person": "Konrad von Rosenberg",
-          "personTitle": ["zu Gnetsheim", "Ritter"],
+          "personTitle": [
+            "zu Gnetsheim",
+            "Ritter"
+          ],
           "date": "1443"
         },
         {
@@ -659,6 +820,12 @@
             "der Junge"
           ],
           "date": "1508"
+        },
+        {
+          "type": "death",
+          "person": "Michael Groß von Trockau",
+          "diedOn": "1487",
+          "date": "1487"
         }
       ]
     },
@@ -688,14 +855,6 @@
           "text": "Philipp von Rosenberg was elected and confirmed as bishop of Speyer."
         },
         {
-          "date": "1513",
-          "text": "Philipp von Rosenberg died."
-        },
-        {
-          "date": "1509",
-          "text": "Margaretha von Rosenberg died."
-        },
-        {
           "date": "1481",
           "text": "Hieronymus von Rosenberg zu Uttenhofen, Ritter, participated in a tournament at Heidelberg."
         },
@@ -706,10 +865,6 @@
         {
           "date": "1486",
           "text": "Hieronymus von Rosenberg zu Uttenhofen, Ritter, participated in a tournament at Bamberg."
-        },
-        {
-          "date": "1542",
-          "text": "Anna von Rosenberg died."
         },
         {
           "type": "spouse",
@@ -736,12 +891,8 @@
           "date": "1559"
         },
         {
-          "date": "1564",
-          "text": "Eva von Rosenberg died."
-        },
-        {
           "date": "1568",
-          "text": "Margaretha von Rosenberg died as a widow."
+          "text": "Margaretha von Rosenberg was a widow."
         },
         {
           "type": "spouse",
@@ -754,36 +905,86 @@
           "date": "1568"
         },
         {
-          "date": "1503",
-          "text": "Konrad von Rosenberg, Ritter, died."
-        },
-        {
           "date": "1487",
           "text": "Konrad von Rosenberg, Ritter, attended a tournament at Worms."
         },
         {
-          "date": "1529-10-28",
-          "text": "Georg von Ebenheim genannt Wild zu Geyern und Braunau died."
+          "type": "death",
+          "person": "Philipp von Rosenberg",
+          "diedOn": "1513",
+          "date": "1513"
         },
         {
-          "date": "1561-06-28",
-          "text": "Philipp von Silberen died."
+          "type": "death",
+          "person": "Margaretha von Rosenberg",
+          "diedOn": "1509",
+          "date": "1509"
         },
         {
-          "date": "1539",
-          "text": "Hans Georg von Aschhausen zu Aschhausen und Biringen died."
+          "type": "death",
+          "person": "Anna von Rosenberg",
+          "diedOn": "1542",
+          "date": "1542"
         },
         {
-          "date": "1570",
-          "text": "Hans von Ehrenberg died."
+          "type": "death",
+          "person": "Eva von Rosenberg",
+          "diedOn": "1564",
+          "date": "1564"
         },
         {
-          "date": "1568",
-          "text": "Christoph von Mosbach zu Madenhausen died."
+          "type": "death",
+          "person": "Margaretha von Rosenberg",
+          "diedOn": "1568",
+          "date": "1568"
         },
         {
-          "date": "1543",
-          "text": "Wilhelm von Schaunberg zu Dindorf, Ritter, died."
+          "type": "death",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "diedOn": "1503",
+          "date": "1503"
+        },
+        {
+          "type": "death",
+          "person": "Georg von Ebenheim genannt Wild zu Geyern und Braunau",
+          "diedOn": "1529-10-28",
+          "date": "1529-10-28"
+        },
+        {
+          "type": "death",
+          "person": "Philipp von Silberen",
+          "diedOn": "1561-06-28",
+          "date": "1561-06-28"
+        },
+        {
+          "type": "death",
+          "person": "Hans Georg von Aschhausen zu Aschhausen und Biringen",
+          "diedOn": "1539",
+          "date": "1539"
+        },
+        {
+          "type": "death",
+          "person": "Hans von Ehrenberg",
+          "diedOn": "1570",
+          "date": "1570"
+        },
+        {
+          "type": "death",
+          "person": "Christoph von Mosbach zu Madenhausen",
+          "diedOn": "1568",
+          "date": "1568"
+        },
+        {
+          "type": "death",
+          "person": "Wilhelm von Schaunberg zu Dindorf",
+          "personTitle": [
+            "Ritter"
+          ],
+          "diedOn": "1543",
+          "date": "1543"
         }
       ]
     },
@@ -805,20 +1006,31 @@
           "text": "Leonhard von Rosenberg zu Uttenhofen arrived at Schweinfurt on behalf of Margrave Friedrich of Brandenburg during an uprising."
         },
         {
-          "date": "1536",
-          "text": "Philipp von Rosenberg zu Uttenhofen und Aub died."
+          "type": "death",
+          "person": "Philipp von Rosenberg zu Uttenhofen und Aub",
+          "diedOn": "1536",
+          "date": "1536"
         },
         {
-          "date": "1533",
-          "text": "Konrad von Rosenberg zu Uttenhofen und Gnetsheim, Ritter, died."
+          "type": "death",
+          "person": "Konrad von Rosenberg zu Uttenhofen und Gnetsheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "diedOn": "1533",
+          "date": "1533"
         },
         {
-          "date": "1531",
-          "text": "Ulrich von Hutten zu Frankenberg und Hausen died."
+          "type": "death",
+          "person": "Ulrich von Hutten zu Frankenberg und Hausen",
+          "diedOn": "1531",
+          "date": "1531"
         },
         {
-          "date": "1528",
-          "text": "Anna von Rosenberg died."
+          "type": "death",
+          "person": "Anna von Rosenberg",
+          "diedOn": "1528",
+          "date": "1528"
         }
       ]
     },
@@ -849,11 +1061,7 @@
         },
         {
           "date": "1541",
-          "text": "By 1541 Lorenz von Rosenberg had inherited a half share of the villages Neuenbrunn, Oberndorf and Streichental as a fief from the Würzburg foundation after the death of Konrad von Rosenberg zu Gnetsheim."
-        },
-        {
-          "date": "1472",
-          "text": "Ottilia von Rosenberg was deceased by 1472."
+          "text": "By 1541 Lorenz von Rosenberg had inherited a half share of the villages Neuenbrunn, Oberndorf and Streichental as a fief from the Würzburg foundation, properties formerly held by Konrad von Rosenberg zu Gnetsheim."
         },
         {
           "type": "sibling",
@@ -865,10 +1073,34 @@
           "date": "1541",
           "text": "Lorenz von Rosenberg requested that his fiefs in Neuenbrunn, Oberndorf and Streichental be granted to Wolf, Christoph, Ludwig and Zeisolf von Rosenberg."
         },
-        {"type": "kin", "person": "Lorenz von Rosenberg", "of": "Wolf von Rosenberg", "term": "Vetter", "date": "1541"},
-        {"type": "kin", "person": "Lorenz von Rosenberg", "of": "Christoph von Rosenberg", "term": "Vetter", "date": "1541"},
-        {"type": "kin", "person": "Lorenz von Rosenberg", "of": "Ludwig von Rosenberg", "term": "Vetter", "date": "1541"},
-        {"type": "kin", "person": "Lorenz von Rosenberg", "of": "Zeisolf von Rosenberg", "term": "Vetter", "date": "1541"},
+        {
+          "type": "kin",
+          "person": "Lorenz von Rosenberg",
+          "of": "Wolf von Rosenberg",
+          "term": "Vetter",
+          "date": "1541"
+        },
+        {
+          "type": "kin",
+          "person": "Lorenz von Rosenberg",
+          "of": "Christoph von Rosenberg",
+          "term": "Vetter",
+          "date": "1541"
+        },
+        {
+          "type": "kin",
+          "person": "Lorenz von Rosenberg",
+          "of": "Ludwig von Rosenberg",
+          "term": "Vetter",
+          "date": "1541"
+        },
+        {
+          "type": "kin",
+          "person": "Lorenz von Rosenberg",
+          "of": "Zeisolf von Rosenberg",
+          "term": "Vetter",
+          "date": "1541"
+        },
         {
           "type": "kin",
           "person": "Lorenz von Rosenberg",
@@ -881,40 +1113,16 @@
           "date": "1541"
         },
         {
-          "date": "1541",
-          "text": "Konrad von Rosenberg zu Gnetsheim, Ritter, was deceased by 1541."
-        },
-        {
-          "date": "1581",
-          "text": "Hans von Rosenberg died."
-        },
-        {
-          "date": "1573",
-          "text": "Lorenz von Rosenberg died."
-        },
-        {
           "type": "parent",
           "person": "Hans von Rosenberg",
           "of": "Lorenz von Rosenberg",
           "date": "1573"
         },
         {
-          "date": "1606",
-          "text": "Felicitas von Rosenberg died."
-        },
-        {
           "type": "spouse",
           "person": "Felicitas von Rosenberg",
           "of": "Wolfgang Dietrich Rüdt von Collenberg",
           "date": "1567-05-27"
-        },
-        {
-          "date": "1597",
-          "text": "Anna Rosina von Rosenberg died."
-        },
-        {
-          "date": "1586-08-28",
-          "text": "Ursula von Rosenberg died."
         },
         {
           "type": "spouse",
@@ -926,20 +1134,73 @@
           "date": "1543"
         },
         {
-          "date": "1588",
-          "text": "Wolfgang Dietrich Rüdt von Collenberg died."
+          "type": "death",
+          "person": "Ottilia von Rosenberg",
+          "diedBefore": "1473",
+          "date": "1472"
         },
         {
-          "date": "1600",
-          "text": "Hans Werner von Wolmarshausen zu Wermerichshausen, Eiselheim, Burleswagen, Stockheim und Roßstall died."
+          "type": "death",
+          "person": "Konrad von Rosenberg zu Gnetsheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "diedBefore": "1542",
+          "date": "1541"
         },
         {
-          "date": "1582-05-28",
-          "text": "Hans Wolf von Lentersheim zu Altenmuhr died."
+          "type": "death",
+          "person": "Hans von Rosenberg",
+          "diedOn": "1581",
+          "date": "1581"
         },
         {
-          "date": "1570",
-          "text": "Hans von Schaumberg zu Schwabach, Neuengereuth und Dunsdorf died."
+          "type": "death",
+          "person": "Lorenz von Rosenberg",
+          "diedOn": "1573",
+          "date": "1573"
+        },
+        {
+          "type": "death",
+          "person": "Felicitas von Rosenberg",
+          "diedOn": "1606",
+          "date": "1606"
+        },
+        {
+          "type": "death",
+          "person": "Anna Rosina von Rosenberg",
+          "diedOn": "1597",
+          "date": "1597"
+        },
+        {
+          "type": "death",
+          "person": "Ursula von Rosenberg",
+          "diedOn": "1586-08-28",
+          "date": "1586-08-28"
+        },
+        {
+          "type": "death",
+          "person": "Wolfgang Dietrich Rüdt von Collenberg",
+          "diedOn": "1588",
+          "date": "1588"
+        },
+        {
+          "type": "death",
+          "person": "Hans Werner von Wolmarshausen zu Wermerichshausen, Eiselheim, Burleswagen, Stockheim und Roßstall",
+          "diedOn": "1600",
+          "date": "1600"
+        },
+        {
+          "type": "death",
+          "person": "Hans Wolf von Lentersheim zu Altenmuhr",
+          "diedOn": "1582-05-28",
+          "date": "1582-05-28"
+        },
+        {
+          "type": "death",
+          "person": "Hans von Schaumberg zu Schwabach, Neuengereuth und Dunsdorf",
+          "diedOn": "1570",
+          "date": "1570"
         }
       ]
     },
@@ -953,10 +1214,6 @@
       "english": "* **Hans Konrad** von und zu Rosenberg, Schipff, Borberg, and Waldmannshofen, continued the Rosenberg line in the female line (Table CCCCX), but died as the last of this line without a male heir. Gemablin, Walburga Geyerin von Giebelstadt, daughter of Lord Sebastian Geyer von Giebelstadt of Reinsbrunn, High Princely Würzburgian Ambassador of Butthard, and Mrs. Regina Geyerin von Giebelstadt, a née von Berlichingen.\n  * **Hans Friedrich** von Rosenberg, died in childhood before his father.\n  * **Regina Cunegunda** von Rosenberg. Died on August 31, 1620. His husband, Lord Georg Eyrich von und zu Ehrthal, Elffershausen, Gochsheim, Leuzendorf, and Kisingen, born on August 27, 1562, married in 1586, and died on December 24, 1626, after marrying Juliana, née von Schletten, for the second time.\n  * **Felicitas** von Rosenberg.\n  * **Walburga Sophia** von Rosenberg.",
       "facts": [
         {
-          "date": "1620-08-31",
-          "text": "Regina Kunigunda von Rosenberg died."
-        },
-        {
           "date": "1562-08-27",
           "text": "Georg Eyrich von Ehrthal was born."
         },
@@ -967,8 +1224,16 @@
           "date": "1586"
         },
         {
-          "date": "1626-10-24",
-          "text": "Georg Eyrich von Ehrthal died."
+          "type": "death",
+          "person": "Regina Kunigunda von Rosenberg",
+          "diedOn": "1620-08-31",
+          "date": "1620-08-31"
+        },
+        {
+          "type": "death",
+          "person": "Georg Eyrich von Ehrthal",
+          "diedOn": "1626-10-24",
+          "date": "1626-10-24"
         }
       ]
     },
@@ -994,10 +1259,6 @@
           "text": "Friedrich von Rosenberg zu Haltenbergstetten was master builder at Trachenfels."
         },
         {
-          "date": "1495",
-          "text": "Hans von Seckendorf genannt Pfaff zu Birkenfels, Bechhofen und Vorndorf, Ritter, died."
-        },
-        {
           "type": "spouse",
           "person": "Margaretha von Rosenberg",
           "ofTitle": [
@@ -1016,16 +1277,35 @@
           "text": "Christoph von Rosenberg zu Haltenbergstetten participated in a tournament at Bamberg."
         },
         {
-          "date": "1548",
-          "text": "Anna von Rosenberg died."
-        },
-        {
-          "date": "1547",
-          "text": "Wolfgang von Stetten zu Kocherstetten died."
-        },
-        {
           "date": "1511",
-          "text": "Kaspar von Stetten zu Kocherstetten died without children."
+          "text": "Kaspar von Stetten zu Kocherstetten left no children."
+        },
+        {
+          "type": "death",
+          "person": "Hans von Seckendorf genannt Pfaff zu Birkenfels, Bechhofen und Vorndorf",
+          "personTitle": [
+            "Ritter"
+          ],
+          "diedOn": "1495",
+          "date": "1495"
+        },
+        {
+          "type": "death",
+          "person": "Anna von Rosenberg",
+          "diedOn": "1548",
+          "date": "1548"
+        },
+        {
+          "type": "death",
+          "person": "Wolfgang von Stetten zu Kocherstetten",
+          "diedOn": "1547",
+          "date": "1547"
+        },
+        {
+          "type": "death",
+          "person": "Kaspar von Stetten zu Kocherstetten",
+          "diedOn": "1511",
+          "date": "1511"
         }
       ]
     },
@@ -1056,8 +1336,15 @@
           "date": "1520",
           "text": "Zeisolf von Rosenberg zu Haltenbergstetten transferred the castle and market town of Haltenbergstetten to the foundation of Würzburg to hold them as a fief."
         },
-        {"type": "parent", "person": "Friedrich von Rosenberg", "of": "Zeisolf von Rosenberg", "ofTitle": ["zu Haltenbergstetten"], "date": "1520"},
-        {"date": "1520", "text": "Friedrich von Rosenberg was deceased by 1520."},
+        {
+          "type": "parent",
+          "person": "Friedrich von Rosenberg",
+          "of": "Zeisolf von Rosenberg",
+          "ofTitle": [
+            "zu Haltenbergstetten"
+          ],
+          "date": "1520"
+        },
         {
           "date": "1487",
           "text": "Zeisolf von Rosenberg zu Haltenbergstetten participated in a tournament at Worms."
@@ -1069,18 +1356,6 @@
         {
           "date": "1539",
           "text": "Wolfgang von Rosenberg was again at peace with the lords von Vellberg and a von Stetten."
-        },
-        {
-          "date": "1550",
-          "text": "Pankraz von Thüngen, Ritter, died."
-        },
-        {
-          "date": "1571-05-25",
-          "text": "Konrad Christoph von Vestenberg zu Breitenlohe died."
-        },
-        {
-          "date": "1529",
-          "text": "Ursula von Hutten died."
         },
         {
           "type": "spouse",
@@ -1097,14 +1372,6 @@
           "person": "Christoph von Rosenberg",
           "of": "Hans Kaspar von Rosenberg",
           "date": "1531"
-        },
-        {
-          "date": "1542",
-          "text": "Christoph von Rosenberg was deceased by 1542."
-        },
-        {
-          "date": "1542",
-          "text": "Hans Kaspar von Rosenberg was deceased by 1542."
         },
         {
           "type": "sibling",
@@ -1157,10 +1424,58 @@
           "person": "Zeisolf von Rosenberg",
           "of": "Friedrich Zeisolf von Rosenberg",
           "date": "1542"
+        },
+        {
+          "type": "death",
+          "person": "Friedrich von Rosenberg",
+          "diedBefore": "1521",
+          "date": "1520"
+        },
+        {
+          "type": "death",
+          "person": "Pankraz von Thüngen",
+          "personTitle": [
+            "Ritter"
+          ],
+          "diedOn": "1550",
+          "date": "1550"
+        },
+        {
+          "type": "death",
+          "person": "Konrad Christoph von Vestenberg zu Breitenlohe",
+          "diedOn": "1571-05-25",
+          "date": "1571-05-25"
+        },
+        {
+          "type": "death",
+          "person": "Ursula von Hutten",
+          "diedOn": "1529",
+          "date": "1529"
+        },
+        {
+          "type": "death",
+          "person": "Christoph von Rosenberg",
+          "diedBefore": "1543",
+          "date": "1542"
+        },
+        {
+          "type": "death",
+          "person": "Hans Kaspar von Rosenberg",
+          "diedBefore": "1543",
+          "date": "1542"
         }
       ],
       "guesses": [
-        {"date": "1543", "text": "Zeisolf von Rosenberg is given a death date of 1543, though the 1542 division calls him deceased."}
+        {
+          "date": "1543",
+          "text": "The source assigns 1543, though the 1542 division conflicts with that chronology."
+        },
+        {
+          "type": "death",
+          "person": "Zeisolf von Rosenberg",
+          "diedOn": "1543",
+          "date": "1543"
+        }
       ]
     },
     {
@@ -1182,14 +1497,6 @@
           "date": "1595"
         },
         {
-          "date": "1630",
-          "text": "Georg Siegmund von Rosenberg zu Haltenbergstetten died."
-        },
-        {
-          "date": "1629",
-          "text": "Adam Christoph von Rosenberg died."
-        },
-        {
           "type": "parent",
           "person": "Georg Siegmund von Rosenberg",
           "personTitle": [
@@ -1200,7 +1507,7 @@
         },
         {
           "date": "1598",
-          "text": "Konrad von Rosenberg zu Gnetsheim died without male descendants."
+          "text": "Konrad von Rosenberg zu Gnetsheim left no male descendants."
         },
         {
           "date": "1631-02-28",
@@ -1208,17 +1515,13 @@
         },
         {
           "date": "1632",
-          "text": "Albrecht Christoph von Rosenberg died without descendants."
+          "text": "Albrecht Christoph von Rosenberg left no descendants."
         },
         {
           "type": "spouse",
           "person": "Albrecht Christoph von Rosenberg",
           "of": "Margaretha Schenk von Symau",
           "date": "1582-09-15"
-        },
-        {
-          "date": "1619-05-19",
-          "text": "Margaretha Schenk von Symau died."
         },
         {
           "date": "1559",
@@ -1234,16 +1537,8 @@
           "date": "1559"
         },
         {
-          "date": "1604-03-07",
-          "text": "Gotfried von Seckendorff Aberdar zu Ober- und Unterzenn died."
-        },
-        {
           "date": "1573-01-04",
           "text": "Gotfried von Seckendorff Aberdar zu Ober- und Unterzenn was born."
-        },
-        {
-          "date": "1600",
-          "text": "Philipp Geyer von Giebelstadt zu Reinsbrunn died."
         },
         {
           "date": "1565-03-28",
@@ -1251,11 +1546,60 @@
         },
         {
           "date": "1598-12-23",
-          "text": "Hans Georg von Seckendorff Aberdar zu Markt Sugenheim, Deutenheim und Dutzenthal died at Windsheim."
+          "text": "Hans Georg von Seckendorff Aberdar zu Markt Sugenheim, Deutenheim und Dutzenthal was at Windsheim."
         },
         {
           "date": "1564-03-16",
           "text": "Margaretha Schenk von Symau was born."
+        },
+        {
+          "type": "death",
+          "person": "Georg Siegmund von Rosenberg zu Haltenbergstetten",
+          "diedOn": "1630",
+          "date": "1630"
+        },
+        {
+          "type": "death",
+          "person": "Adam Christoph von Rosenberg",
+          "diedOn": "1629",
+          "date": "1629"
+        },
+        {
+          "type": "death",
+          "person": "Konrad von Rosenberg zu Gnetsheim",
+          "diedOn": "1598",
+          "date": "1598"
+        },
+        {
+          "type": "death",
+          "person": "Albrecht Christoph von Rosenberg",
+          "diedOn": "1632",
+          "date": "1632"
+        },
+        {
+          "type": "death",
+          "person": "Margaretha Schenk von Symau",
+          "diedOn": "1619-05-19",
+          "date": "1619-05-19"
+        },
+        {
+          "type": "death",
+          "person": "Gotfried von Seckendorff Aberdar zu Ober- und Unterzenn",
+          "diedOn": "1604-03-07",
+          "date": "1604-03-07"
+        },
+        {
+          "type": "death",
+          "person": "Philipp Geyer von Giebelstadt zu Reinsbrunn",
+          "diedOn": "1600",
+          "date": "1600"
+        },
+        {
+          "type": "death",
+          "person": "Hans Georg von Seckendorff Aberdar zu Markt Sugenheim, Deutenheim und Dutzenthal",
+          "diedOn": "1598-12-23",
+          "date": "1598-12-23",
+          "circumstances": "At Windsheim"
         }
       ]
     }

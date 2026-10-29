@@ -10,16 +10,22 @@
         {
           "type": "kin",
           "person": "Eberhard von Rosenberg",
-          "personTitle": ["der Jüngere"],
+          "personTitle": [
+            "der Jüngere"
+          ],
           "of": "Ulrich von Rosenberg",
           "term": "Vetter"
         },
         {
           "type": "parent",
           "person": "Eberhard von Rosenberg",
-          "personTitle": ["der Ältere"],
+          "personTitle": [
+            "der Ältere"
+          ],
           "of": "Eberhard von Rosenberg",
-          "ofTitle": ["der Jüngere"]
+          "ofTitle": [
+            "der Jüngere"
+          ]
         },
         "Eberhard von Rosenberg der Jüngere transferred a share at Boxberg to Ulrich von Rosenberg to redeem a Pfandschaft",
         "Eberhard von Rosenberg der Ältere held a share at Boxberg as a Pfandschaft from Ulrich von Rosenberg",

@@ -18,7 +18,15 @@
           "of": "Kunz von Rosenberg",
           "personDeceased": true
         },
-        "Konrad von Rosenberg, Ritter, formerly Vizedom zu Amberg, was deceased by 1403-01-10.",
+        {
+          "type": "death",
+          "person": "Konrad von Rosenberg",
+          "diedBefore": "1403-01-11",
+          "personTitle": [
+            "Ritter",
+            "Vizedom zu Amberg"
+          ]
+        },
         "King Ruprecht permitted Kunz von Rosenberg and another Konrad von Rosenberg (whose father is not identified in the source) to have a Schultheiss, Schöffen, and court in their village of Hohenstadt near Rosenberg."
       ]
     }

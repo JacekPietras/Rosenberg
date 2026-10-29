@@ -37,7 +37,11 @@
           "person": "Brigitta von Rosenberg",
           "of": "Anna Margareta"
         },
-        "Hans Georg von Seckendorff zu Sugenheim died on 1598-12-23."
+        {
+          "type": "death",
+          "person": "Hans Georg von Seckendorff zu Sugenheim",
+          "diedOn": "1598-12-23"
+        }
       ]
     }
   ],

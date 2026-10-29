@@ -67,7 +67,11 @@
           "person": "Agatha",
           "of": "Christoph Sützel von Mergentheim"
         },
-        "Agatha was deceased by 1563-04-07."
+        {
+          "type": "death",
+          "person": "Agatha",
+          "diedBefore": "1563-04-08"
+        }
       ],
       "img": [
         {

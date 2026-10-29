@@ -237,7 +237,13 @@
       "guesses": [
         {
           "date": "1331-12-31",
-          "text": "The grave monument in the church of Uissigheim likely belongs to Eberhard von Uissigheim genannt von Ranneberg, who died on this date."
+          "text": "The grave monument in the church of Uissigheim likely belongs to Eberhard von Uissigheim genannt von Ranneberg."
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Uissigheim genannt von Ranneberg",
+          "diedOn": "1331-12-31",
+          "date": "1331-12-31"
         }
       ]
     },
@@ -756,7 +762,7 @@
       "facts": [
         {
           "date": "1336-11-14",
-          "text": "Arnold von Uissigheim der Junge, Ritter, died by the sword."
+          "text": "Manner: by the sword."
         },
         {
           "type": "title",
@@ -765,6 +771,15 @@
             "der Junge",
             "miles"
           ],
+          "date": "1336-11-14"
+        },
+        {
+          "type": "death",
+          "person": "Arnold von Uissigheim der Junge",
+          "personTitle": [
+            "Ritter"
+          ],
+          "diedOn": "1336-11-14",
           "date": "1336-11-14"
         }
       ]

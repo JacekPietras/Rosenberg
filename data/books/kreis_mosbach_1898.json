@@ -16,16 +16,21 @@
           "text": "Kraft von Boxberg made a donation at Angelthürn to the Johanniter of Wölchingen."
         },
         {
-          "date": "1572",
-          "text": "Albrecht von Rosenberg died in 1572."
-        },
-        {
           "date": "1563",
           "text": "Albrecht von Rosenberg issued a village ordinance for Angelthürn."
+        },
+        {
+          "type": "death",
+          "person": "Albrecht von Rosenberg",
+          "diedOn": "1572",
+          "date": "1572"
         }
       ],
       "guesses": [
-        {"date": "1191", "text": "Before the Johanniter’s first donation there in 1191, Angelthürn may have belonged to the Lords of Boxberg."}
+        {
+          "date": "1191",
+          "text": "Before the Johanniter’s first donation there in 1191, Angelthürn may have belonged to the Lords of Boxberg."
+        }
       ]
     },
     {
@@ -138,15 +143,90 @@
         }
       ],
       "guesses": [
-        {"date": "1100", "text": "Around 1100, the Comburg donation book records Guota von Bocchesberg as the wife of a Conrad (Württembergisches Urkundenbuch, I, no. A21); she may have been the wife of the later Konrad von Boxberg."},
-        {"date": "1381-05-25", "text": "The four purchasers of Boxberg in 1381 may have been brothers; the book gives no documentary basis for this relationship."},
-        {"type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["Ritter"], "of": "Eberhard von Rosenberg", "ofTitle": ["Ritter"], "date": "1381-05-25"},
-        {"type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["Ritter"], "of": "Konrad von Rosenberg", "ofTitle": ["Edelknecht"], "date": "1381-05-25"},
-        {"type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["Ritter"], "of": "Arnold von Rosenberg", "ofTitle": ["Edelknecht"], "date": "1381-05-25"},
-        {"type": "sibling", "person": "Eberhard von Rosenberg", "personTitle": ["Ritter"], "of": "Konrad von Rosenberg", "ofTitle": ["Edelknecht"], "date": "1381-05-25"},
-        {"type": "sibling", "person": "Eberhard von Rosenberg", "personTitle": ["Ritter"], "of": "Arnold von Rosenberg", "ofTitle": ["Edelknecht"], "date": "1381-05-25"},
-        {"type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["Edelknecht"], "of": "Arnold von Rosenberg", "ofTitle": ["Edelknecht"], "date": "1381-05-25"},
-        {"date": "1276", "text": "The von Rosenberg family was first attested in 1276; Rosenberg in Baden may have been its ancestral castle."}
+        {
+          "date": "1100",
+          "text": "Around 1100, the Comburg donation book records Guota von Bocchesberg as the wife of a Conrad (Württembergisches Urkundenbuch, I, no. A21); she may have been the wife of the later Konrad von Boxberg."
+        },
+        {
+          "date": "1381-05-25",
+          "text": "The four purchasers of Boxberg in 1381 may have been brothers; the book gives no documentary basis for this relationship."
+        },
+        {
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Eberhard von Rosenberg",
+          "ofTitle": [
+            "Ritter"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Konrad von Rosenberg",
+          "ofTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Arnold von Rosenberg",
+          "ofTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "sibling",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Konrad von Rosenberg",
+          "ofTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "sibling",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Arnold von Rosenberg",
+          "ofTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "of": "Arnold von Rosenberg",
+          "ofTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "date": "1276",
+          "text": "The von Rosenberg family was first attested in 1276; Rosenberg in Baden may have been its ancestral castle."
+        }
       ]
     },
     {
@@ -241,8 +321,19 @@
       "german": "Anno · dni m · cccc · lxxx · Jar · uf · mitwochen · vor · mittfasten · hab · ich · Jorge · von · Rosenberg · Ritter · dem · ersten · stein · zu · Boxberg · uf · montag · nach · sant · michels · tag · im · xiiij · Jar · bit · got · für · uns · bed · — hie · tegen · lo[ssen] · denselbigen · hot · Johann · [von · Rosenberg] · von · Encholtze · geborn · mein · eliche · [husfraw · geleyget ·] und · mir · soliche · bawe · getrewlich · heissen · volbringen · wie · hie · stet · und · ist · der · lug · ins · lant · danach · auß · gemacht",
       "english": "\"In the year of our Lord 1480, on Wednesday before Mid-Lent, I, Georg von Rosenberg, Ritter, laid the first stone at Boxberg on Monday after St. Michael's Day in the 14th year. Pray to God for us. This stone was laid here by Hans [von Rosenberg] of Encholtze, born my lawful wife, and she has faithfully commanded me to complete such construction as it stands here, and it was made as a watchtower into the land.\"",
       "guesses": [
-        {"date": "1480", "text": "The damaged building inscription identifies Jörg von Rosenberg’s wife as Johann, born von Encholtze, but parts of her name and the description of her role in the construction are reconstructed."},
-        {"type": "spouse", "person": "Jörg von Rosenberg", "personTitle": ["Ritter"], "of": "Hans von Encholtze", "date": "1480"}
+        {
+          "date": "1480",
+          "text": "The damaged building inscription identifies Jörg von Rosenberg’s wife as Johann, born von Encholtze, but parts of her name and the description of her role in the construction are reconstructed."
+        },
+        {
+          "type": "spouse",
+          "person": "Jörg von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Hans von Encholtze",
+          "date": "1480"
+        }
       ]
     },
     {
@@ -310,12 +401,17 @@
       "english": "Margaretha von Rosenberg † 1418. Large plate (right) with the remains of an incised female figure; to the right of the head is a (now) empty shield, and to the left is the Dottenheim coat of arms (ram). The inscription reads:year · dni · m · cccc · xviii · week · Wednesday · after · · · pentecost ✠ · margareta · de · rosenberg · to whom · aia · rest · i · peace · loveCorrectly recorded in the liber mortuorum for May 19, 1418. There is a gap between \"post\" and \"pentecoste\" in the inscription, probably because the stone was somewhat damaged there from the start.",
       "facts": [
         {
-          "date": "1418",
-          "text": "Margaretha von Rosenberg died in 1418."
+          "type": "death",
+          "person": "Margaretha von Rosenberg",
+          "diedOn": "1418",
+          "date": "1418"
         }
       ],
       "guesses": [
-        {"date": "1418", "text": "The Bronnbach liber mortuorum reportedly records Margaretha von Rosenberg on 19 May 1418; the inscription instead states Wednesday after Pentecost, so the precise date requires checking."}
+        {
+          "date": "1418",
+          "text": "The Bronnbach liber mortuorum reportedly records Margaretha von Rosenberg on 19 May 1418; the inscription instead states Wednesday after Pentecost, so the precise date requires checking."
+        }
       ]
     },
     {
@@ -333,8 +429,14 @@
         }
       ],
       "guesses": [
-        {"date": "1397", "text": "The Series Abbatum states that Konrad von Uissigheim der Ältere donated the mill at Eulschirben to Bronnbach; the book presents this account as conflicting with Kraemer’s account of 1320."},
-        {"date": "1320", "text": "Kraemer states that Eberhard von Rosenberg acquired the mill at Eulschirben by exchange for Bronnbach; the book presents this account as conflicting with the Series Abbatum’s account of 1397."}
+        {
+          "date": "1397",
+          "text": "The Series Abbatum states that Konrad von Uissigheim der Ältere donated the mill at Eulschirben to Bronnbach; the book presents this account as conflicting with Kraemer’s account of 1320."
+        },
+        {
+          "date": "1320",
+          "text": "Kraemer states that Eberhard von Rosenberg acquired the mill at Eulschirben by exchange for Bronnbach; the book presents this account as conflicting with the Series Abbatum’s account of 1397."
+        }
       ]
     },
     {
@@ -361,10 +463,6 @@
             "genannt von Uissigheim"
           ],
           "date": "1288"
-        },
-        {
-          "date": "1314",
-          "text": "Eberhard von Rosenberg died in 1314."
         },
         {
           "type": "spouse",
@@ -407,25 +505,33 @@
         {
           "type": "title",
           "person": "Friedrich von Uissigheim",
-          "personTitle": ["armiger"],
+          "personTitle": [
+            "armiger"
+          ],
           "date": "1328"
         },
         {
           "type": "title",
           "person": "Friedrich von Uissigheim",
-          "personTitle": ["armiger"],
+          "personTitle": [
+            "armiger"
+          ],
           "date": "1332"
         },
         {
           "type": "title",
           "person": "Friedrich von Uissigheim",
-          "personTitle": ["armiger"],
+          "personTitle": [
+            "armiger"
+          ],
           "date": "1336"
         },
         {
           "type": "title",
           "person": "Friedrich von Uissigheim",
-          "personTitle": ["armiger"],
+          "personTitle": [
+            "armiger"
+          ],
           "date": "1343"
         },
         {
@@ -462,7 +568,7 @@
         },
         {
           "date": "1332",
-          "text": "Eberhard von Uissigheim, genannt von Ranneberg, died in 1332, according to Gamans’s transcription of the gravestone inscription."
+          "text": "Gamans’s transcription of the gravestone inscription gives the year 1332 for Eberhard von Uissigheim, genannt von Ranneberg."
         },
         {
           "date": "1394",
@@ -483,14 +589,47 @@
         {
           "date": "1592",
           "text": "The two Hartmut von Kronberg acquired the castle and its property at Uissigheim."
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedOn": "1314",
+          "date": "1314"
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Uissigheim, genannt von Ranneberg",
+          "diedOn": "1332",
+          "date": "1332"
         }
       ],
       "guesses": [
-        {"date": "1314", "text": "By 1314, Uissigheim property may have passed through an heiress to Eberhard von Rosenberg."},
-        {"date": "1336", "text": "The identity of the knight on the damaged Uissigheim gravestone is uncertain; Gamans transcribed the name as Arnold von Uissigheim, who died in 1336."},
-        {"date": "1332", "text": "The identity of Eberhard on the Uissigheim gravestone is uncertain, despite Gamans’s transcription naming him genannt von Ranneberg."},
-        {"date": "1343", "text": "The Erfurt chronicle attributes anti-Jewish killings in 1343 to a Ritter von Uissigheim and relates his capture, execution, and burial at Uissigheim. His identity with the knight on the damaged gravestone is uncertain."},
-        {"date": "1300", "text": "LEO-BW records the former Uissigheim residential tower around 1300; the so-called Tempelhaus may be a remnant of that castle."}
+        {
+          "date": "1314",
+          "text": "By 1314, Uissigheim property may have passed through an heiress to Eberhard von Rosenberg."
+        },
+        {
+          "date": "1336",
+          "text": "The identity of the knight on the damaged Uissigheim gravestone is uncertain; Gamans transcribed the name as Arnold von Uissigheim."
+        },
+        {
+          "date": "1332",
+          "text": "The identity of Eberhard on the Uissigheim gravestone is uncertain, despite Gamans’s transcription naming him genannt von Ranneberg."
+        },
+        {
+          "date": "1343",
+          "text": "The Erfurt chronicle attributes anti-Jewish killings in 1343 to a Ritter von Uissigheim and relates his capture, execution, and burial at Uissigheim. His identity with the knight on the damaged gravestone is uncertain."
+        },
+        {
+          "date": "1300",
+          "text": "LEO-BW records the former Uissigheim residential tower around 1300; the so-called Tempelhaus may be a remnant of that castle."
+        },
+        {
+          "type": "death",
+          "person": "Arnold von Uissigheim",
+          "diedOn": "1336",
+          "date": "1336"
+        }
       ]
     },
     {
@@ -525,7 +664,9 @@
         {
           "type": "title",
           "person": "Konrad von Bvechel",
-          "personTitle": ["provisor domus in Wollechingen"],
+          "personTitle": [
+            "provisor domus in Wollechingen"
+          ],
           "date": "1249"
         },
         {
@@ -550,19 +691,36 @@
         },
         {
           "date": "1447",
-          "text": "Arnold von Rosenberg died on the Tuesday before St Matthew’s Day in 1447."
+          "text": "The inscription gives the Tuesday before St Matthew’s Day in 1447 as the date."
         },
         {
           "date": "1387",
-          "text": "Eberhard von Rosenberg died on the Sunday after St Vitus’s Day in 1387."
+          "text": "The inscription gives the Sunday after St Vitus’s Day in 1387 as the date."
         },
         {
-          "date": "1449-05-01",
-          "text": "Eberhard von Rosenberg died on St Walpurga’s Day in 1449."
+          "type": "death",
+          "person": "Arnold von Rosenberg",
+          "diedOn": "1447",
+          "date": "1447"
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedOn": "1387",
+          "date": "1387"
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedOn": "1449-05-01",
+          "date": "1449-05-01"
         }
       ],
       "guesses": [
-        {"date": "1210", "text": "The Johanniter may have founded the Wölchingen church by about 1210, based on the building’s dating and their property in the area."}
+        {
+          "date": "1210",
+          "text": "The Johanniter may have founded the Wölchingen church by about 1210, based on the building’s dating and their property in the area."
+        }
       ]
     }
   ]

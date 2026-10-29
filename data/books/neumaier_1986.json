@@ -383,10 +383,6 @@
           "date": "1300-05-17"
         },
         {
-          "date": "1300-05-17",
-          "text": "Eberhard von Rosenberg, Ritter, was deceased by 17 May 1300."
-        },
-        {
           "type": "kin",
           "person": "Arnold",
           "of": "Eberhard von Rosenberg",
@@ -467,6 +463,15 @@
         {
           "date": "1305-10-25",
           "text": "Eberhard von Rosenberg der Ältere and his brother Konrad von Rosenberg sold property at Steinbach to Bronnbach."
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "diedBefore": "1300-05-18",
+          "date": "1300-05-17"
         }
       ]
     },
@@ -481,14 +486,16 @@
           "date": "1327"
         },
         {
-          "date": "1327",
-          "text": "Konrad von Rosenberg was deceased by 1327."
+          "type": "death",
+          "person": "Konrad von Rosenberg",
+          "diedBefore": "1328",
+          "date": "1327"
         }
       ],
       "guesses": [
         {
           "date": "1314",
-          "text": "Eberhard von Rosenberg der Ältere, son of Eberhard Rufus, may be the Eberhard recorded as deceased in the Bronnbach necrology in 1314."
+          "text": "Eberhard von Rosenberg der Ältere, son of Eberhard Rufus, may be the person recorded in the Bronnbach necrology in 1314."
         },
         {
           "date": "1327",
@@ -505,6 +512,12 @@
           "person": "Konrad von Rosenberg",
           "of": "Hans von Neudeck",
           "date": "1327"
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg der Ältere",
+          "diedOn": "1314",
+          "date": "1314"
         }
       ]
     },
@@ -715,10 +728,6 @@
         },
         {
           "date": "1327",
-          "text": "Konrad von Rosenberg was deceased by 1327."
-        },
-        {
-          "date": "1327",
           "text": "Adelheid von Neudeck sold income from her share in the mill of Rosenberg to Bronnbach."
         },
         {
@@ -750,6 +759,12 @@
         {
           "date": "1327",
           "text": "Another Eberhard witnessed Adelheid von Neudeck’s sale of income from the Rosenberg mill to Bronnbach."
+        },
+        {
+          "type": "death",
+          "person": "Konrad von Rosenberg",
+          "diedBefore": "1328",
+          "date": "1327"
         }
       ],
       "guesses": [
@@ -814,7 +829,13 @@
       "guesses": [
         {
           "date": "1354",
-          "text": "Eberhard von Rosenberg, Vogt at Walldürn, may have died in 1354, when Eberhard Rüdt was appointed Vogt on Wildenberg."
+          "text": "The appointment of Eberhard Rüdt as Vogt on Wildenberg in 1354 may mark the end of Eberhard von Rosenberg’s tenure as Vogt at Walldürn."
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedOn": "1354",
+          "date": "1354"
         }
       ]
     },

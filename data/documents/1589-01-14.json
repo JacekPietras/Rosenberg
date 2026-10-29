@@ -28,8 +28,16 @@
           ],
           "of": "Anna von der Kehre"
         },
-        "Zeisolf von Rosenberg zu Knetzheim und Haltenbergstetten was deceased by 1589-01-14.",
-        "Anna von der Kehre was deceased by 1589-01-14.",
+        {
+          "type": "death",
+          "person": "Zeisolf von Rosenberg zu Knetzheim und Haltenbergstetten",
+          "diedBefore": "1589-01-15"
+        },
+        {
+          "type": "death",
+          "person": "Anna von der Kehre",
+          "diedBefore": "1589-01-15"
+        },
         "Konrad von Rosenberg zu Külzheim und Schüpf acted as a guardian in the marriage agreement for Brigitta von Rosenberg.",
         "Albrecht Christoph von und zu Rosenberg zu Waldmannshofen advised Brigitta von Rosenberg in her marriage agreement.",
         "Georg Sigmund von Rosenberg zu Haltenbergstetten advised Brigitta von Rosenberg in her marriage agreement."

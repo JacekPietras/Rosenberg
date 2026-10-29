@@ -1090,7 +1090,12 @@
         }
       ],
       "facts": [
-        "Arnold von Uissigheim died in 1336."
+        {
+          "type": "death",
+          "person": "Arnold von Uissigheim",
+          "date": "1336",
+          "diedOn": "1336"
+        }
       ]
     },
     {
@@ -1113,7 +1118,12 @@
         }
       ],
       "facts": [
-        "Eberhard von Uissigheim von Ranneberg died in 1332."
+        {
+          "type": "death",
+          "person": "Eberhard von Uissigheim genannt von Ranneberg",
+          "date": "1332",
+          "diedOn": "1332"
+        }
       ]
     },
     {
@@ -1147,7 +1157,12 @@
         }
       ],
       "facts": [
-        "Eberhard von Rosenberg died in 1314."
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "date": "1314",
+          "diedOn": "1314"
+        }
       ]
     },
     {
@@ -1192,7 +1207,15 @@
         }
       ],
       "facts": [
-        "Arnold von Rosenberg zu Boxberg died in 1447."
+        {
+          "type": "death",
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ],
+          "date": "1447",
+          "diedOn": "1447"
+        }
       ]
     },
     {
@@ -1212,7 +1235,15 @@
         }
       ],
       "facts": [
-        "Eberhard von Rosenberg zu Jagstberg died in 1449."
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "zu Jagstberg"
+          ],
+          "date": "1449",
+          "diedOn": "1449"
+        }
       ]
     },
     {
@@ -1323,7 +1354,12 @@
       "label": "effigy",
       "placeId": "arnstein-maria-sondheim",
       "facts": [
-        "Anna von Hutten, born von Rosenberg, died in 1528."
+        {
+          "type": "death",
+          "person": "Anna von Hutten, née von Rosenberg",
+          "date": "1528",
+          "diedOn": "1528"
+        }
       ]
     },
     {
@@ -1853,9 +1889,19 @@
         }
       ],
       "facts": [
-        "Albrecht von Rosenberg died on 17 May 1572.",
+        {
+          "type": "death",
+          "person": "Albrecht von Rosenberg",
+          "date": "1572-05-17",
+          "diedOn": "1572-05-17"
+        },
         "Rufina von Rosenberg, née Stiebar von Buttenheim, was Albrecht von Rosenberg's second wife.",
-        "Rufina died on 26 August 1569."
+        {
+          "type": "death",
+          "person": "Rufina von Rosenberg, née Stiebar von Buttenheim",
+          "date": "1569-08-26",
+          "diedOn": "1569-08-26"
+        }
       ]
     },
     {
@@ -1896,7 +1942,12 @@
       ],
       "facts": [
         "Katharina von Rosenberg, née von Seinsheim, was Albrecht von Rosenberg's first wife.",
-        "Katharina died on 28 April 1550."
+        {
+          "type": "death",
+          "person": "Katharina von Rosenberg, née von Seinsheim",
+          "date": "1550-04-28",
+          "diedOn": "1550-04-28"
+        }
       ]
     },
     {
@@ -1917,9 +1968,20 @@
         }
       ],
       "facts": [
-        "Eberhard von Rosenberg died on 16 October 1519 and was buried in Stuttgart.",
+        "Eberhard von Rosenberg was buried in Stuttgart.",
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "date": "1519-10-16",
+          "diedOn": "1519-10-16"
+        },
         "Anna von Rosenberg, née von Dienheim, was Eberhard von Rosenberg’s wife.",
-        "Anna von Rosenberg, née von Dienheim, died on 26 November 1568."
+        {
+          "type": "death",
+          "person": "Anna von Rosenberg, née von Dienheim",
+          "date": "1568-11-26",
+          "diedOn": "1568-11-26"
+        }
       ]
     },
     {
@@ -2084,7 +2146,12 @@
         }
       ],
       "facts": [
-        "Kunigunde Hofwart von Kirchheim, born von Rosenberg, died on 1 March 1545."
+        {
+          "type": "death",
+          "person": "Kunigunde Hofwart von Kirchheim, née von Rosenberg",
+          "date": "1545-03-01",
+          "diedOn": "1545-03-01"
+        }
       ]
     },
     {
@@ -2122,7 +2189,12 @@
         }
       ],
       "facts": [
-        "Albrecht Christoph von Rosenberg died in 1632."
+        {
+          "type": "death",
+          "person": "Albrecht Christoph von Rosenberg",
+          "date": "1632",
+          "diedOn": "1632"
+        }
       ]
     },
     {
@@ -2195,7 +2267,12 @@
         }
       ],
       "facts": [
-        "Friedrich Zeisolf von Rosenberg died in 1576."
+        {
+          "type": "death",
+          "person": "Friedrich Zeisolf von Rosenberg",
+          "date": "1576",
+          "diedOn": "1576"
+        }
       ]
     },
     {
@@ -2216,8 +2293,18 @@
       ],
       "url": "https://drive.google.com/thumbnail?id=14cHDAFGD_NUNXok8lcXEhIR_6iI-9YOx&sz=w1600",
       "facts": [
-        "Reichart von Rosenberg died in 1561.",
-        "Rofina von Rosenberg died in 1560."
+        {
+          "type": "death",
+          "person": "Reichart von Rosenberg",
+          "date": "1561",
+          "diedOn": "1561"
+        },
+        {
+          "type": "death",
+          "person": "Rofina von Rosenberg",
+          "date": "1560",
+          "diedOn": "1560"
+        }
       ]
     },
     {
@@ -2238,7 +2325,12 @@
       ],
       "url": "https://drive.google.com/thumbnail?id=1ZTYRy1Wp_rCHTLCOAx3wVgnVB9d0xNPM&sz=w1600",
       "facts": [
-        "Anna von Stetten, born von Rosenberg, died in 1548."
+        {
+          "type": "death",
+          "person": "Anna von Stetten, née von Rosenberg",
+          "date": "1548",
+          "diedOn": "1548"
+        }
       ]
     },
     {
@@ -2323,7 +2415,12 @@
       ],
       "facts": [
         "Georg Albrecht von Seckendorff was the son of Hans Georg von Seckendorff and Brigitta von Rosenberg.",
-        "Georg Albrecht von Seckendorff died on 30 April 1632."
+        {
+          "type": "death",
+          "person": "Georg Albrecht von Seckendorff",
+          "date": "1632-04-30",
+          "diedOn": "1632-04-30"
+        }
       ]
     },
     {
@@ -2453,7 +2550,15 @@
         }
       ],
       "facts": [
-        "Hans von Sternberg zu Schenkenau died in 1576.",
+        {
+          "type": "death",
+          "person": "Hans von Sternberg",
+          "personTitle": [
+            "zu Schenkenau"
+          ],
+          "date": "1576",
+          "diedOn": "1576"
+        },
         "Anna von Sternberg, born von Rosenberg, was his wife."
       ]
     },
@@ -2475,7 +2580,13 @@
         }
       ],
       "facts": [
-        "Wolf von Hürnheim died in 1533 and was buried at Kenzingen parish church.",
+        "Wolf von Hürnheim was buried at Kenzingen parish church.",
+        {
+          "type": "death",
+          "person": "Wolf von Hürnheim",
+          "date": "1533",
+          "diedOn": "1533"
+        },
         "Uta von Rosenberg was Wolf von Hürnheim's paternal grandmother."
       ]
     },
@@ -2540,8 +2651,19 @@
         }
       ],
       "facts": [
-        "Christoph von Maßbach died in 1568.",
-        "Eva von Maßbach, born von Rosenberg, was his wife and died in 1564."
+        "Eva von Maßbach, born von Rosenberg, was Christoph von Maßbach’s wife.",
+        {
+          "type": "death",
+          "person": "Christoph von Maßbach",
+          "date": "1568",
+          "diedOn": "1568"
+        },
+        {
+          "type": "death",
+          "person": "Eva von Maßbach, née von Rosenberg",
+          "date": "1564",
+          "diedOn": "1564"
+        }
       ]
     },
     {
@@ -2562,8 +2684,18 @@
         }
       ],
       "facts": [
-        "Philipp von Maßbach died in 1556.",
-        "Eva von Maßbach died in 1567.",
+        {
+          "type": "death",
+          "person": "Philipp von Maßbach",
+          "date": "1556",
+          "diedOn": "1556"
+        },
+        {
+          "type": "death",
+          "person": "Eva von Maßbach",
+          "date": "1567",
+          "diedOn": "1567"
+        },
         "Their mother was Eva von Maßbach, born von Rosenberg."
       ]
     },
@@ -2670,7 +2802,12 @@
       "url": "https://drive.google.com/thumbnail?id=1S5jI-fO4QMpDZLmrFEBhocd9h1IvttmD&sz=w1600",
       "facts": [
         "Johannes Ludovicus von Seckendorff was a child of Hans Georg von Seckendorff and Brigitta von Rosenberg.",
-        "Johannes Ludovicus von Seckendorff died between 16 May and 6 September 1596."
+        "The epitaph gives 16 May 1596 as the earliest possible date.",
+        {
+          "type": "death",
+          "person": "Hans Ludovicus von Seckendorff",
+          "diedBefore": "1596-09-07"
+        }
       ]
     },
     {
@@ -2737,7 +2874,13 @@
         }
       ],
       "facts": [
-        "Margaretha von Rosenberg died in 1418, on the Wednesday after Pentecost."
+        "The epitaph identifies the date as the Wednesday after Pentecost.",
+        {
+          "type": "death",
+          "person": "Margaretha von Rosenberg",
+          "date": "1418",
+          "diedOn": "1418"
+        }
       ]
     },
     {

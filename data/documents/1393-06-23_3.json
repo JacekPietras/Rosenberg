@@ -16,7 +16,8 @@
           "of": "vogt_zu_Lauda",
           "ofTitle": [
             "Ritter"
-          ]
+          ],
+          "ofDeceased": true
         },
         {
           "type": "title",
@@ -25,7 +26,11 @@
             "Ritter"
           ]
         },
-        "[vogt_zu_Lauda] was deceased by 1393",
+        {
+          "type": "death",
+          "person": "vogt_zu_Lauda",
+          "diedBefore": "1393-06-24"
+        },
         "Elisabeth von Erligheim established a perpetual mass at the altar of Our Lady in the parish of Wölchingen",
         "Elisabeth von Erligheim used feudal properties from Schloss Boxberg at Gommersdorf, Angeltürn, and Wölchingen for her religious endowment",
         "Kurfürst Ruprecht [II.] der Ältere Pfalzgraf bei Rhein granted permission for Elisabeth von Erligheim's religious endowment"

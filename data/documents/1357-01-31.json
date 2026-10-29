@@ -14,7 +14,6 @@
           "of": "Eberhard von Rosenberg",
           "ofDeceased": true
         },
-        "Eberhard von Rosenberg, spouse of Margaretha von Thüngen, was deceased by 1357-01-31.",
         {
           "type": "spouse",
           "person": "Katherine",
@@ -33,7 +32,12 @@
         "Eberhard von Rosenberg (issuer of the document) was to receive the purchased property as a fief from Graf Eberhard zu Wertheim and Katherine.",
         "Margaretha von Thüngen was to receive the purchased property as a fief from Graf Eberhard zu Wertheim and Katherine.",
         "Eberhard von Rosenberg (issuer of the document) and Margaretha von Thüngen agreed not to raise the Bede of the people above what the Wertheim lordship had customarily requested.",
-        "Eberhard von Rosenberg (issuer of the document) and Margaretha von Thüngen sealed the document with their pendant seals."
+        "Eberhard von Rosenberg (issuer of the document) and Margaretha von Thüngen sealed the document with their pendant seals.",
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedBefore": "1357-02-01"
+        }
       ],
       "img": [
         {

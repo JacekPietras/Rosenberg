@@ -14,9 +14,14 @@
         {
           "type": "spouse",
           "person": "Elisabeth von Erligheim",
-          "of": "vogt_zu_Lauda"
+          "of": "vogt_zu_Lauda",
+          "ofDeceased": true
         },
-        "[vogt_zu_Lauda] was deceased by 1390",
+        {
+          "type": "death",
+          "person": "vogt_zu_Lauda",
+          "diedBefore": "1390-03-14"
+        },
         "Elisabeth von Erligheim had children and heirs with [vogt_zu_Lauda]",
         "Hans von Rosenberg arbitrated a dispute between Elisabeth von Erligheim's family and Schöntal Abbey"
       ],

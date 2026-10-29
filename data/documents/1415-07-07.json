@@ -12,7 +12,9 @@
           "type": "spouse",
           "person": "Christine von Handschuhsheim",
           "of": "arnold_boxberg",
-          "ofTitle": ["zu Boxberg"]
+          "ofTitle": [
+            "zu Boxberg"
+          ]
         },
         "[arnold_boxberg] sold Güter at Hochhausen to the Carthause Grünau",
         "[arnold_boxberg] sold Güter at Werbach to the Carthause Grünau",

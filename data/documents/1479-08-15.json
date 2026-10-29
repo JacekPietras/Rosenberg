@@ -16,7 +16,11 @@
           "person": "Elisabeth Wolfskelin",
           "of": "Thomas von Rosenberg"
         },
-        "Thomas von Rosenberg was deceased by 1479-08-15.",
+        {
+          "type": "death",
+          "person": "Thomas von Rosenberg",
+          "diedBefore": "1479-08-16"
+        },
         "Eberhard Haselbaum and Hans Meffrise settled a dispute involving Elisabeth Wolfskelin over the Heiligen Gut at Buch."
       ],
       "img": [

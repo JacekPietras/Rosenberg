@@ -13,20 +13,32 @@
         {
           "type": "parent",
           "person": "Arnold von Uissigheim",
-          "personTitle": ["der Ältere", "Ritter"],
+          "personTitle": [
+            "der Ältere",
+            "Ritter"
+          ],
           "of": "Arnold von Uissigheim",
-          "ofTitle": ["der Jüngere", "Ritter"]
+          "ofTitle": [
+            "der Jüngere",
+            "Ritter"
+          ]
         },
         {
           "type": "sibling",
           "person": "Arnold von Uissigheim",
-          "personTitle": ["der Jüngere", "Ritter"],
+          "personTitle": [
+            "der Jüngere",
+            "Ritter"
+          ],
           "of": "Heinz von Uissigheim"
         },
         {
           "type": "sibling",
           "person": "Arnold von Uissigheim",
-          "personTitle": ["der Jüngere", "Ritter"],
+          "personTitle": [
+            "der Jüngere",
+            "Ritter"
+          ],
           "of": "Eberhard von Uissigheim"
         },
         {

@@ -10,7 +10,9 @@
         {
           "type": "spouse",
           "person": "Eberhard von Rosenberg",
-          "personTitle": ["Vogt zu Nagelsberg"],
+          "personTitle": [
+            "Vogt zu Nagelsberg"
+          ],
           "of": "Wyclo"
         }
       ]

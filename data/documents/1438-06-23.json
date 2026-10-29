@@ -20,7 +20,11 @@
           "personDeceased": true,
           "of": "Anna von Kronberg"
         },
-        "Walther von Kronberg was deceased by 1438-06-23.",
+        {
+          "type": "death",
+          "person": "Walther von Kronberg",
+          "diedBefore": "1438-06-24"
+        },
         "The Beilager shall take place after Anna von Kronberg reaches age 15",
         {
           "type": "title",

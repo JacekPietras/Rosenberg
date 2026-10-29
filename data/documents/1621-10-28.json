@@ -9,7 +9,11 @@
       "facts": [
         "Albrecht Christoph von und zu Rosenberg und Waldmannshofen was a guardian in the marriage agreement for Philipp Ludwig von Seckendorff and Maria Margareta von Gemmingen.",
         "Georg Sigmund von Rosenberg zu Haldenbergstetten was an adviser in the marriage agreement.",
-        "Brigitta von Rosenberg was deceased by 1621-10-28.",
+        {
+          "type": "death",
+          "person": "Brigitta von Rosenberg",
+          "diedBefore": "1621-10-29"
+        },
         "Anna Maria von Rosenberg was mentioned in connection with an inheritance in the marriage agreement.",
         {
           "type": "spouse",

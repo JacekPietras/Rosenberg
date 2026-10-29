@@ -143,7 +143,10 @@
         }
       ],
       "guesses": [
-        {"date": "1387", "text": "It is possible that Arnold von Rosenberg sold his share of Boxberg in 1387 in order to acquire Schüpf."}
+        {
+          "date": "1387",
+          "text": "It is possible that Arnold von Rosenberg sold his share of Boxberg in 1387 in order to acquire Schüpf."
+        }
       ]
     },
     {
@@ -155,7 +158,10 @@
       "german": "„Der Roſenbergiſche Namen iſt an verſchiedenen Orten und Ländern bekannt, und es hat verſchiedene Familien dieſes Namens gegeben, ſo in Schleſien, Böhmen, Kärnten, im Baireuthiſchen, welche ihr Geſchlecht von den römiſchen Urſinern herleiten; die ſich ohne Zweifel gratulirt haben würden, wenn ſie ſich mit unſeren fränkiſchen Roſenbergern von einem Stamm hätten deriviren und ein Recht auf die Succeſſion formiren können. Das Stammhaus unſerer Roſenberger iſt das alte Schloß Roſen⸗berg am Eingang des Odenwaldes.“ (Leutwein.)",
       "english": "“The name of Rosenberg is known in various places and lands, and there have been several families of that name, in Silesia, Bohemia, Carinthia, and the Bayreuth region, who traced their lineage to the Roman Ursini. They would doubtless have congratulated themselves had they been able to derive their descent from the same stock as our Franconian Rosenbergs and establish a right of succession. The ancestral seat of our Rosenbergs is the old castle of Rosenberg at the entrance to the Odenwald.” (Leutwein.)",
       "guesses": [
-        {"date": "1285", "text": "The old Schloss Rosenberg may have been the Franconian von Rosenberg family’s ancestral seat, as Leutwein states; Neumaier places their acquisition of Rosenberg before 1285."}
+        {
+          "date": "1285",
+          "text": "The old Schloss Rosenberg may have been the Franconian von Rosenberg family’s ancestral seat, as Leutwein states; Neumaier places their acquisition of Rosenberg before 1285."
+        }
       ]
     },
     {
@@ -166,33 +172,100 @@
       "german": "Anno 942 iſt Heinrich von Roſenberg bei dem 2. Turnier zu Roſenberg, und Anna von Roſenberg, Rudolfs von Thüngen nachgelaſſene Wittwe, wird dabei erwähnt.",
       "english": "In 942, Heinrich von Rosenberg took part in the second tournament at Rosenberg; Anna von Rosenberg, the widow of Rudolf von Thüngen, is also mentioned there.",
       "guesses": [
-        {"date": "0942", "text": "A tournament book claims that Heinrich von Rosenberg attended a tournament at Rosenberg."},
-        {"date": "0942", "text": "A tournament book claims that Anna von Rosenberg, widow of Rudolf von Thüngen, was mentioned at the tournament at Rosenberg."},
-        {"type": "spouse", "person": "Anna von Rosenberg", "of": "Rudolf von Thüngen", "date": "0942"}
+        {
+          "date": "0942",
+          "text": "A tournament book claims that Heinrich von Rosenberg attended a tournament at Rosenberg."
+        },
+        {
+          "date": "0942",
+          "text": "A tournament book claims that Anna von Rosenberg, widow of Rudolf von Thüngen, was mentioned at the tournament at Rosenberg."
+        },
+        {
+          "type": "spouse",
+          "person": "Anna von Rosenberg",
+          "of": "Rudolf von Thüngen",
+          "date": "0942"
+        }
       ]
     },
     {
       "german": "996 war Richard v. R. auf dem 5. Turnier zu Braunſchweig, und Wiltraut v. R., Albans von Frundsperg Wittwe, 1019 beim 6. in Trier. — 1032. 1055. 1059 ſoll Heinrich, 1080. 1100 Ernſt, 1136. 1139. 1158 Wilhelm gelebt haben und 1165 Wilhelm und Hieronymus bei dem Turnier in Zürich geweſen ſein. 1179 iſt Ernſt bei dem Turnier zu Köln, 1235 Georg bei dem zu Würzburg geweſen. 1271. 1280. 1290 lebte Hans v. R., welcher drei Söhne hatte: Eckart, Eberhard und Konrad.",
       "english": "In 996, Richard von Rosenberg attended the fifth tournament at Brunswick, and in 1019 Wiltraut von Rosenberg, widow of Alban von Frundsberg, attended the sixth at Trier. Heinrich is said to have lived in 1032, 1055, and 1059; Ernst in 1080 and 1100; and Wilhelm in 1136, 1139, and 1158. Wilhelm and Hieronymus were said to have been at the tournament in Zurich in 1165. Ernst attended the tournament in Cologne in 1179, and Georg the one at Würzburg in 1235. Hans von Rosenberg lived in 1271, 1280, and 1290 and had three sons: Eckart, Eberhard, and Konrad.",
       "guesses": [
-        {"date": "0996", "text": "A tournament book claims that Richard von Rosenberg attended a tournament at Braunschweig."},
-        {"date": "1019", "text": "A tournament book claims that Wiltraut von Rosenberg, widow of Alban von Frundsperg, attended a tournament at Trier."},
-        {"type": "spouse", "person": "Wiltraut von Rosenberg", "of": "Alban von Frundsperg", "date": "1019"},
-        {"date": "1032", "text": "A tournament book claims that Heinrich von Rosenberg was alive."},
-        {"date": "1055", "text": "A tournament book claims that Heinrich von Rosenberg was alive."},
-        {"date": "1059", "text": "A tournament book claims that Heinrich von Rosenberg was alive."},
-        {"date": "1080", "text": "A tournament book claims that Ernst von Rosenberg was alive."},
-        {"date": "1100", "text": "A tournament book claims that Ernst von Rosenberg was alive."},
-        {"date": "1136", "text": "A tournament book claims that Wilhelm von Rosenberg was alive."},
-        {"date": "1139", "text": "A tournament book claims that Wilhelm von Rosenberg was alive."},
-        {"date": "1158", "text": "A tournament book claims that Wilhelm von Rosenberg was alive."},
-        {"date": "1271", "text": "A tournament book claims that Hans von Rosenberg was alive."},
-        {"date": "1280", "text": "A tournament book claims that Hans von Rosenberg was alive."},
-        {"date": "1290", "text": "A tournament book claims that Hans von Rosenberg was alive."},
-        {"date": "1165", "text": "A tournament book claims that Wilhelm von Rosenberg and Hieronymus von Rosenberg attended a tournament at Zürich."},
-        {"date": "1179", "text": "A tournament book claims that Ernst von Rosenberg attended a tournament at Köln."},
-        {"date": "1235", "text": "A tournament book claims that Georg von Rosenberg attended a tournament at Würzburg."},
-        {"date": "1290", "text": "A tournament-book genealogy says that Hans von Rosenberg had three sons, Eckhart, Eberhard and Konrad; the passage does not date the relationships."}
+        {
+          "date": "0996",
+          "text": "A tournament book claims that Richard von Rosenberg attended a tournament at Braunschweig."
+        },
+        {
+          "date": "1019",
+          "text": "A tournament book claims that Wiltraut von Rosenberg, widow of Alban von Frundsperg, attended a tournament at Trier."
+        },
+        {
+          "type": "spouse",
+          "person": "Wiltraut von Rosenberg",
+          "of": "Alban von Frundsperg",
+          "date": "1019"
+        },
+        {
+          "date": "1032",
+          "text": "A tournament book claims that Heinrich von Rosenberg was alive."
+        },
+        {
+          "date": "1055",
+          "text": "A tournament book claims that Heinrich von Rosenberg was alive."
+        },
+        {
+          "date": "1059",
+          "text": "A tournament book claims that Heinrich von Rosenberg was alive."
+        },
+        {
+          "date": "1080",
+          "text": "A tournament book claims that Ernst von Rosenberg was alive."
+        },
+        {
+          "date": "1100",
+          "text": "A tournament book claims that Ernst von Rosenberg was alive."
+        },
+        {
+          "date": "1136",
+          "text": "A tournament book claims that Wilhelm von Rosenberg was alive."
+        },
+        {
+          "date": "1139",
+          "text": "A tournament book claims that Wilhelm von Rosenberg was alive."
+        },
+        {
+          "date": "1158",
+          "text": "A tournament book claims that Wilhelm von Rosenberg was alive."
+        },
+        {
+          "date": "1271",
+          "text": "A tournament book claims that Hans von Rosenberg was alive."
+        },
+        {
+          "date": "1280",
+          "text": "A tournament book claims that Hans von Rosenberg was alive."
+        },
+        {
+          "date": "1290",
+          "text": "A tournament book claims that Hans von Rosenberg was alive."
+        },
+        {
+          "date": "1165",
+          "text": "A tournament book claims that Wilhelm von Rosenberg and Hieronymus von Rosenberg attended a tournament at Zürich."
+        },
+        {
+          "date": "1179",
+          "text": "A tournament book claims that Ernst von Rosenberg attended a tournament at Köln."
+        },
+        {
+          "date": "1235",
+          "text": "A tournament book claims that Georg von Rosenberg attended a tournament at Würzburg."
+        },
+        {
+          "date": "1290",
+          "text": "A tournament-book genealogy says that Hans von Rosenberg had three sons, Eckhart, Eberhard and Konrad; the passage does not date the relationships."
+        }
       ]
     },
     {
@@ -218,8 +291,10 @@
           "date": "1312"
         },
         {
-          "date": "1314-10-12",
-          "text": "Eberhard von Rosenberg died."
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedOn": "1314-10-12",
+          "date": "1314-10-12"
         }
       ]
     },
@@ -372,10 +447,42 @@
           ],
           "date": "1341-02-02"
         },
-        {"type": "sibling", "person": "Eberhard von Rosenberg", "personTitle": ["Edelknecht"], "of": "Engelhard von Rosenberg", "date": "1341-02-02"},
-        {"type": "sibling", "person": "Eberhard von Rosenberg", "personTitle": ["Edelknecht"], "of": "Hermann von Rosenberg", "date": "1341-02-02"},
-        {"type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["Edelknecht"], "of": "Engelhard von Rosenberg", "date": "1341-02-02"},
-        {"type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["Edelknecht"], "of": "Hermann von Rosenberg", "date": "1341-02-02"},
+        {
+          "type": "sibling",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "of": "Engelhard von Rosenberg",
+          "date": "1341-02-02"
+        },
+        {
+          "type": "sibling",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "of": "Hermann von Rosenberg",
+          "date": "1341-02-02"
+        },
+        {
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "of": "Engelhard von Rosenberg",
+          "date": "1341-02-02"
+        },
+        {
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "of": "Hermann von Rosenberg",
+          "date": "1341-02-02"
+        },
         {
           "type": "parent",
           "person": "Eberhard von Rosenberg",
@@ -392,22 +499,30 @@
           "type": "parent",
           "person": "Eberhard von Rosenberg",
           "of": "Konrad von Rosenberg",
-          "personTitle": ["zu Dürn"],
-          "ofTitle": ["Edelknecht"],
+          "personTitle": [
+            "zu Dürn"
+          ],
+          "ofTitle": [
+            "Edelknecht"
+          ],
           "date": "1341-02-02"
         },
         {
           "type": "parent",
           "person": "Eberhard von Rosenberg",
           "of": "Engelhard von Rosenberg",
-          "personTitle": ["zu Dürn"],
+          "personTitle": [
+            "zu Dürn"
+          ],
           "date": "1341-02-02"
         },
         {
           "type": "parent",
           "person": "Eberhard von Rosenberg",
           "of": "Hermann von Rosenberg",
-          "personTitle": ["zu Dürn"],
+          "personTitle": [
+            "zu Dürn"
+          ],
           "date": "1341-02-02"
         }
       ]
@@ -679,8 +794,10 @@
           "date": "1368"
         },
         {
-          "date": "1368",
-          "text": "Johann Pahl von Grünsfeld was deceased by 1368."
+          "type": "death",
+          "person": "Hans Pahl von Grünsfeld",
+          "diedBefore": "1369",
+          "date": "1368"
         }
       ]
     },
@@ -761,8 +878,11 @@
           "text": "Konrad von Rosenberg was surety in a Weinsberg charter."
         },
         {
+          "type": "death",
+          "person": "Konrad von Rosenberg",
+          "diedOn": "1390",
           "date": "1390",
-          "text": "Konrad von Rosenberg died at Tückelhausen."
+          "circumstances": "At Tückelhausen"
         }
       ]
     },
@@ -824,9 +944,36 @@
         }
       ],
       "guesses": [
-        {"date": "1383", "text": "The printed tomb inscription at Wölchingen gives 1383 for Eberhard von Rosenberg’s death, but Stocker reports differing readings by Schönhuth and Bauer."},
-        {"date": "1387", "text": "Schönhuth reads the year of Eberhard von Rosenberg’s death in his Wölchingen tomb inscription as 1387; Stocker reports conflicting readings."},
-        {"date": "1388", "text": "Bauer gives 1388 as the year of Eberhard von Rosenberg’s death; Stocker reports conflicting readings of the Wölchingen tomb inscription."}
+        {
+          "date": "1383",
+          "text": "Stocker reports differing readings by Schönhuth and Bauer of the printed Wölchingen tomb inscription; it gives 1383."
+        },
+        {
+          "date": "1387",
+          "text": "Schönhuth reads 1387 on the Wölchingen tomb inscription; Stocker reports conflicting readings."
+        },
+        {
+          "date": "1388",
+          "text": "Bauer reads 1388 on the Wölchingen tomb inscription; Stocker reports conflicting readings."
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedOn": "1383",
+          "date": "1383"
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedOn": "1387",
+          "date": "1387"
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedOn": "1388",
+          "date": "1388"
+        }
       ]
     },
     {
@@ -885,10 +1032,6 @@
         },
         {
           "date": "1394",
-          "text": "Konrad von Rosenberg was deceased by 1394."
-        },
-        {
-          "date": "1394",
           "text": "Anna Marschalk donated grain to Tückelhausen monastery."
         },
         {
@@ -902,6 +1045,12 @@
             "der Junge",
             "zu Bonberg"
           ],
+          "date": "1394"
+        },
+        {
+          "type": "death",
+          "person": "Konrad von Rosenberg",
+          "diedBefore": "1395",
           "date": "1394"
         }
       ]
@@ -940,12 +1089,34 @@
         },
         {
           "date": "1421",
-          "text": "Siegfried Häuptlin, a citizen of Rothenburg, was deceased by 1421."
+          "text": "Siegfried Häuptlin was a citizen of Rothenburg."
         },
-        {"type": "sibling", "person": "Hans von Rosenberg", "of": "Konrad von Rosenberg", "date": "1409"},
-        {"date": "1409", "text": "Hans von Rosenberg and his brother Konrad von Rosenberg disputed the tithe at Lohr, which they claimed as an imperial fief."},
-        {"date": "1425", "text": "Hans von Rosenberg received fiefs at Niedertief and Westheim."},
-        {"date": "1449", "text": "Hans von Rosenberg was deceased by 1449."}
+        {
+          "type": "sibling",
+          "person": "Hans von Rosenberg",
+          "of": "Konrad von Rosenberg",
+          "date": "1409"
+        },
+        {
+          "date": "1409",
+          "text": "Hans von Rosenberg and his brother Konrad von Rosenberg disputed the tithe at Lohr, which they claimed as an imperial fief."
+        },
+        {
+          "date": "1425",
+          "text": "Hans von Rosenberg received fiefs at Niedertief and Westheim."
+        },
+        {
+          "type": "death",
+          "person": "Siegfried Häuptlin",
+          "diedBefore": "1422",
+          "date": "1421"
+        },
+        {
+          "type": "death",
+          "person": "Hans von Rosenberg",
+          "diedBefore": "1450",
+          "date": "1449"
+        }
       ]
     },
     {
@@ -972,11 +1143,17 @@
         },
         {
           "date": "1395",
-          "text": "Eberhard von Rosenberg, father of Arnold von Rosenberg der Junge and Eberhard von Rosenberg, was deceased by 1395."
+          "text": "Eberhard von Rosenberg was the father of Arnold von Rosenberg der Junge and Eberhard von Rosenberg."
         },
         {
           "date": "1395",
           "text": "Arnold von Rosenberg der Junge and Eberhard von Rosenberg sold a meadow at Kupprichhausen."
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedBefore": "1396",
+          "date": "1395"
         }
       ]
     },
@@ -1052,10 +1229,6 @@
           "date": "1401"
         },
         {
-          "date": "1401",
-          "text": "Eberhard von Rosenberg, husband of Katharina von Erligheim, was deceased by 1401."
-        },
-        {
           "type": "spouse",
           "person": "Anna Marschalk",
           "of": "Konrad von Rosenberg",
@@ -1063,13 +1236,24 @@
         },
         {
           "date": "1401",
-          "text": "Konrad von Rosenberg, husband of Anna Marschalk, was deceased by 1401."
+          "text": "Konrad von Rosenberg, Vizedom zu Heidelberg; Arnold von Rosenberg; Katharina von Erligheim; and Anna Marschalk endowed the altar of St. George in Boxberg castle with rents and dues."
         },
         {
           "date": "1401",
-          "text": "Konrad von Rosenberg, Vizedom zu Heidelberg; Arnold von Rosenberg; Katharina von Erligheim; and Anna Marschalk endowed the altar of St. George in Boxberg castle with rents and dues."
+          "text": "Konrad von Rosenberg, Vizedom zu Heidelberg; Arnold von Rosenberg; Katharina von Erligheim; and Anna Marschalk gave the small tithes at Angerthal and Ramsthal to the chaplain at Boxberg."
         },
-        {"date": "1401", "text": "Konrad von Rosenberg, Vizedom zu Heidelberg; Arnold von Rosenberg; Katharina von Erligheim; and Anna Marschalk gave the small tithes at Angerthal and Ramsthal to the chaplain at Boxberg."}
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedBefore": "1402",
+          "date": "1401"
+        },
+        {
+          "type": "death",
+          "person": "Konrad von Rosenberg",
+          "diedBefore": "1402",
+          "date": "1401"
+        }
       ]
     },
     {
@@ -1116,10 +1300,17 @@
           "date": "1405"
         },
         {
-          "date": "1405",
-          "text": "Eberhard von Rosenberg, father of Arnold von Rosenberg der Jüngere, was deceased by 1405."
+          "type": "sibling",
+          "person": "Hans von Rosenberg",
+          "of": "Götz von Rosenberg",
+          "date": "1405"
         },
-        {"type": "sibling", "person": "Hans von Rosenberg", "of": "Götz von Rosenberg", "date": "1405"}
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedBefore": "1406",
+          "date": "1405"
+        }
       ]
     },
     {
@@ -1142,11 +1333,13 @@
       "facts": [
         {
           "date": "1406",
-          "text": "Bishop Johann of Würzburg granted Kunz von Rosenberg der Ältere fiefs at Brehmen, Buch and Orsfeld which had belonged to the deceased Eberhard von Rosenberg."
+          "text": "Bishop Johann of Würzburg granted Kunz von Rosenberg der Ältere fiefs at Brehmen, Buch and Orsfeld which had belonged to Eberhard von Rosenberg."
         },
         {
-          "date": "1406",
-          "text": "Eberhard von Rosenberg, former holder of fiefs at Brehmen, Buch and Orsfeld, was deceased by 1406."
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedBefore": "1407",
+          "date": "1406"
         }
       ]
     },
@@ -1177,7 +1370,10 @@
           "date": "1421",
           "text": "Anselm von Rosenberg received the fiefs at Bretzingen, Bofsheim, Möckmühl, Rosenberg and Burkheim."
         },
-        {"date": "1418", "text": "Ulrich von Rosenberg received the fiefs at Bretzingen, Bofsheim, Möckmühl, Rosenberg and Burkheim."}
+        {
+          "date": "1418",
+          "text": "Ulrich von Rosenberg received the fiefs at Bretzingen, Bofsheim, Möckmühl, Rosenberg and Burkheim."
+        }
       ]
     },
     {
@@ -1190,7 +1386,10 @@
         }
       ],
       "guesses": [
-        {"date": "1408", "text": "Arnold von Rosenberg der Jüngere and Christine von Hentschesheim made the exchange after the 1408 permission; its date is unknown."}
+        {
+          "date": "1408",
+          "text": "Arnold von Rosenberg der Jüngere and Christine von Hentschesheim made the exchange after the 1408 permission; its date is unknown."
+        }
       ]
     },
     {
@@ -1217,11 +1416,20 @@
         },
         {
           "date": "1449-05-01",
-          "text": "Eberhard von Rosenberg died, according to his tomb inscription in Wölchingen."
+          "text": "Eberhard’s tomb inscription in Wölchingen is the cited source for this date."
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedOn": "1449-05-01",
+          "date": "1449-05-01"
         }
       ],
       "guesses": [
-        {"date": "1449", "text": "It is possible that the mother of Eberhard von Rosenberg and his brother Eberhard was Else von Erligheim, based on their tombs’ maternal arms."}
+        {
+          "date": "1449",
+          "text": "It is possible that the mother of Eberhard von Rosenberg and his brother Eberhard was Else von Erligheim, based on their tombs’ maternal arms."
+        }
       ]
     },
     {
@@ -1268,17 +1476,16 @@
           "date": "1415-07-02",
           "text": "Arnold von Rosenberg zu Boxberg sold Niklashausen to Grünau Abbey with Count Johann of Wertheim’s approval."
         },
-        {"date": "1415", "text": "Hans von Rosenberg der Junge and Thomas von Rosenberg were enfeoffed with the fiefs of Götz and Hans von Rosenberg."}
+        {
+          "date": "1415",
+          "text": "Hans von Rosenberg der Junge and Thomas von Rosenberg were enfeoffed with the fiefs of Götz and Hans von Rosenberg."
+        }
       ]
     },
     {
       "german": "1418, 19. Mai, ſtirbt Margaretha v. R. — 1418 kommt die Ge⸗meinde Lohr in die Acht auf Klage des Ritters Hans v. R. und ſeines Bruders Cunz v. R.",
       "english": "Margaretha von Rosenberg died on May 19, 1418. In 1418, the community of Lohr was placed under the imperial ban at the complaint of Hans von Rosenberg, Ritter and his brother Kunz von Rosenberg.",
       "facts": [
-        {
-          "date": "1418-05-19",
-          "text": "Margaretha von Rosenberg died."
-        },
         {
           "type": "sibling",
           "person": "Hans von Rosenberg",
@@ -1287,6 +1494,12 @@
             "Ritter"
           ],
           "date": "1418"
+        },
+        {
+          "type": "death",
+          "person": "Margaretha von Rosenberg",
+          "diedOn": "1418-05-19",
+          "date": "1418-05-19"
         }
       ]
     },
@@ -1399,8 +1612,10 @@
           "date": "1426"
         },
         {
-          "date": "1458-01-24",
-          "text": "Thomas von Rosenberg died."
+          "type": "death",
+          "person": "Thomas von Rosenberg",
+          "diedOn": "1458-01-24",
+          "date": "1458-01-24"
         }
       ]
     },
@@ -1444,8 +1659,14 @@
       "german": "1432 und ſchon 1421 wird Cunz (Bruder des Ritters Hans?) von Hohenlohe mit der Veſte Bartenſtein belehnt; 1423 tritt er neben Konrad v. R. in Reichelsberg als Bürge auf, und 1435 iſt Kunz v. R. zu Bartenſtein bei einem würzburgiſchen Mannengericht.",
       "english": "In 1432, and already in 1421, Kunz (a brother of the Ritter Hans?) was enfeoffed by Hohenlohe with Bartenstein fortress. In 1423 he appears alongside Konrad von Rosenberg as a surety at Reichelsberg, and in 1435 Kunz von Rosenberg of Bartenstein was present at a Würzburg court of vassals.",
       "facts": [
-        {"date": "1432", "text": "Kunz von Rosenberg received Bartenstein castle as a fief from Hohenlohe."},
-        {"date": "1435", "text": "Kunz von Rosenberg zu Bartenstein attended a Würzburg Mannengericht."}
+        {
+          "date": "1432",
+          "text": "Kunz von Rosenberg received Bartenstein castle as a fief from Hohenlohe."
+        },
+        {
+          "date": "1435",
+          "text": "Kunz von Rosenberg zu Bartenstein attended a Würzburg Mannengericht."
+        }
       ]
     },
     {
@@ -1468,7 +1689,13 @@
         },
         {
           "date": "1447",
-          "text": "Arnold von Rosenberg died, according to his tomb inscription in Wölchingen."
+          "text": "Arnold’s tomb inscription in Wölchingen is the cited source for this date."
+        },
+        {
+          "type": "death",
+          "person": "Arnold von Rosenberg",
+          "diedOn": "1447",
+          "date": "1447"
         }
       ]
     },
@@ -1494,19 +1721,51 @@
       "german": "1437 iſt Conrad v. R. Freiſchöffe, wohl derſelbe, der 1439 als Ritter, geſeſſen zu Gnetzheim, den Zehnten zu Brechtheim als würz—burgiſches Lehen empfing. 1440 verbürgt er ſich für Pfalzgraf Ludwig und empfängt die Lehen in Roſenberg, Buch, Bremen, Bofsheim u. ſ. w.",
       "english": "In 1437, Konrad von Rosenberg was a Freischöffe (lay judge of the Westphalian Vehmic courts). He was probably the same man who, as a Ritter residing at Gnötzheim, received the tithe at Brechtheim as a Würzburg fief in 1439. In 1440, he stood surety for Count Palatine Ludwig and received fiefs at Rosenberg, Buch, Bremen, Bofsheim, and elsewhere.",
       "facts": [
-        {"type": "title", "person": "Konrad von Rosenberg", "personTitle": ["Freischöffe"], "date": "1437"},
-        {"date": "1439", "text": "Konrad von Rosenberg, Ritter, zu Gnötzheim, received the tithe at Brechtheim as a Würzburg fief."},
-        {"date": "1440", "text": "Konrad von Rosenberg acted as surety for Count Palatine Ludwig."},
-        {"date": "1440", "text": "Konrad von Rosenberg received fiefs at Rosenberg, Buch, Brehmen and Bofsheim."}
+        {
+          "type": "title",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Freischöffe"
+          ],
+          "date": "1437"
+        },
+        {
+          "date": "1439",
+          "text": "Konrad von Rosenberg, Ritter, zu Gnötzheim, received the tithe at Brechtheim as a Würzburg fief."
+        },
+        {
+          "date": "1440",
+          "text": "Konrad von Rosenberg acted as surety for Count Palatine Ludwig."
+        },
+        {
+          "date": "1440",
+          "text": "Konrad von Rosenberg received fiefs at Rosenberg, Buch, Brehmen and Bofsheim."
+        }
       ]
     },
     {
       "german": "1438, 10. Mai, verſprechen Biſchof Johann von Würzburg und Itel Hilmar, Domherr, als der älteſte an ein Dechants Statt, und das Kapitel am Dom zu Würzburg die Domherren Joſeph von Grumbach, Martin Truchſeſſen und Konrad v. R. zu Bartenſtein, den ſie „dem ge⸗ſtrengen und veſten unſerem lieben getreuen und beſonderen“ Johannſen von Hirſchhorn und ſeines Bruders Philipps ſel. Kindern als Geiſeln übergeben hatten, 14 Tage nach Pfingſten für 200 fl. auszulöſen. (Archiv für heſſ. Geſchichte XI, 91.)",
       "english": "On May 10, 1438, Bishop Hans of Würzburg, Itel Hilmar, canon and senior acting in place of a dean, and the cathedral chapter of Würzburg promised to redeem for 200 florins, fourteen days after Pentecost, the canons Joseph von Grumbach, Martin Truchsess, and Konrad von Rosenberg of Bartenstein, whom they had given as hostages to “our strict and steadfast, dear and faithful friend” Hans von Hirschhorn and the children of his late brother Philipp. (Archive for Hessian History XI, 91.)",
       "facts": [
-        {"date": "1438-05-10", "text": "Konrad von Rosenberg zu Bartenstein was among the hostages given to Johann von Hirschhorn and the children of his deceased brother Philipp von Hirschhorn."},
-        {"date": "1438-05-10", "text": "Philipp von Hirschhorn was deceased by 10 May 1438."},
-        {"type": "title", "person": "Konrad von Rosenberg", "personTitle": ["Domherr", "zu Bartenstein"], "date": "1438-05-10"}
+        {
+          "date": "1438-05-10",
+          "text": "Konrad von Rosenberg zu Bartenstein was among the hostages given to Johann von Hirschhorn and the children of Johann’s brother Philipp von Hirschhorn."
+        },
+        {
+          "type": "title",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Domherr",
+            "zu Bartenstein"
+          ],
+          "date": "1438-05-10"
+        },
+        {
+          "type": "death",
+          "person": "Philipp von Hirschhorn",
+          "diedBefore": "1438-05-11",
+          "date": "1438-05-10"
+        }
       ]
     },
     {
@@ -1623,7 +1882,10 @@
       "german": "1453, 12. Juli, ergeht ein Urtheilsbrief des biſchöflichen Archi—diakonatsgerichts zu Würzburg in Sachen Eberhards v. Riedern, Ritter, gegen Thomas v. R., Ritter, ſowie mehrere Bürger und ganze Gemeinde von Sachſenflur wegen gewiſſer Zehnten. Sachſenflur mit großem und kleinem Zehnten und andern Rechten gehörte immer den Grafen von Wertheim, und Graf Georg belehnte 1445 damit den Ritter Eberhard von Riedern, ſo daß die Berechtigung zum Zehntbezug anerkannt werden mußte.",
       "english": "On July 12, 1453, the episcopal archdeacon’s court at Würzburg issued a judgment in the case brought by Eberhard von Riedern, Ritter, against Thomas von Rosenberg, Ritter, and several citizens and the whole community of Sachsenflur concerning certain tithes. Sachsenflur, with its great and small tithes and other rights, had always belonged to the Counts of Wertheim. In 1445, Count Georg enfeoffed Eberhard von Riedern, Ritter with it, so his right to collect the tithes had to be recognized.",
       "facts": [
-        {"date": "1453-07-12", "text": "A judgment of the Würzburg archdeaconry court concerned tithes in a dispute between Eberhard von Riedern, Ritter, and Thomas von Rosenberg, Ritter, and others."}
+        {
+          "date": "1453-07-12",
+          "text": "A judgment of the Würzburg archdeaconry court concerned tithes in a dispute between Eberhard von Riedern, Ritter, and Thomas von Rosenberg, Ritter, and others."
+        }
       ]
     },
     {
@@ -1806,7 +2068,10 @@
           ],
           "date": "1484"
         },
-        {"date": "1484", "text": "Hans von Rosenberg der Alte and Friedrich Hundt von Saulheim petitioned the Palatinate for justice against Heinrich Holzapfel concerning a suretyship."}
+        {
+          "date": "1484",
+          "text": "Hans von Rosenberg der Alte and Friedrich Hundt von Saulheim petitioned the Palatinate for justice against Heinrich Holzapfel concerning a suretyship."
+        }
       ]
     },
     {
@@ -1889,7 +2154,10 @@
       "german": "1496, Donnerstag nach St. Jakobstag, bekennen Martin von Adels⸗heim, Landvogt in Oberlauda, Obmann, und Ott von der Keere, Amtmann zu Neubronn, Hans von Günsrode, Schultheiß zu Aſchaffenburg, als geordnet und geſetzt von ihrem Herrn, dem Biſchof von Mainz, wegen der Gemeinde des Dorfes Königshofen, und Albrecht v. Bibra, Amt⸗mann zu Kreglingen, Peter von Finſterlohe geſetzt von wegen Georg Ritter, Michel und Arnold v. R. zu Boxberg und anderer ihrer Gan—erben, daß ſich zwiſchen obengenannten Parteien Spän und Irrungen er—eignet haben, die Were und Fiſchweith in der Bach Umpfach betreffend. Im Beiſein von Philipp von Thüngen, Vitzthum zu Aſchaffenburg, Hans von Breidt, Keller von Amorbach, Friedrich Weygand, Keller zu Biſchofs—heim, und Kunz Rumell, Schultheis, als Beiſtänder für Königshofen, und Götz von Adelsheim, Probſt zu Wimpfen, Dr. Hans Fuchs, Viktor Hofmeiſter zu Würzburg, Dr. Conrad Weygand und Hans von Holz als Beiſtänder der v. Roſenberg wird ein gütlicher Vergleich getroffen.",
       "english": "On the Thursday after St. James’s Day in 1496, Martin von Adelsheim, district bailiff at Oberlauda and presiding arbitrator; Ott von der Keere, official at Neubronn; and Hans von Günsrode, mayor of Aschaffenburg, appointed by their lord the Bishop of Mainz on behalf of the community of Königshofen; and Albrecht von Bibra, official at Creglingen, and Peter von Finsterlohe, appointed on behalf of the Ritter Georg, Michel, and Arnold von Rosenberg of Boxberg and their other co-heirs, declared that disputes had arisen between the parties over fishing rights and fishing equipment in the Umpfach stream. In the presence of Philipp von Thüngen, vicedom at Aschaffenburg; Hans von Breidt, steward at Amorbach; Friedrich Weygand, steward at Bischofsheim; Kunz Rumell, mayor and adviser for Königshofen; Götz von Adelsheim, provost at Wimpfen; Dr. Hans Fuchs; Viktor Hofmeister of Würzburg; Dr. Konrad Weygand; and Hans von Holz, advisers for the Rosenbergs, the parties reached an amicable settlement.",
       "facts": [
-        {"date": "1496", "text": "Representatives of Königshofen and of Georg von Rosenberg, Ritter, Michael von Rosenberg and Arnold von Rosenberg zu Boxberg reached a settlement concerning weirs and fishing rights in the Umpfer."}
+        {
+          "date": "1496",
+          "text": "Representatives of Königshofen and of Georg von Rosenberg, Ritter, Michael von Rosenberg and Arnold von Rosenberg zu Boxberg reached a settlement concerning weirs and fishing rights in the Umpfer."
+        }
       ]
     },
     {
@@ -1957,11 +2225,13 @@
         },
         {
           "date": "1509",
-          "text": "Georg von Rosenberg, Ritter, husband of Osanna von Eicholzheim, was deceased by 1509."
+          "text": "Arnold von Rosenberg received his Würzburg fiefs."
         },
         {
-          "date": "1509",
-          "text": "Arnold von Rosenberg received his Würzburg fiefs."
+          "type": "death",
+          "person": "Georg von Rosenberg",
+          "diedBefore": "1510",
+          "date": "1509"
         }
       ]
     },
@@ -1979,7 +2249,10 @@
         }
       ],
       "guesses": [
-        {"date": "1512", "text": "Arnold von Rosenberg may have been married to Anna von Dottenheim, daughter of Konrad von Dottenheim, and had four sons: Hans Thomas, Hans Melchior, Hans Ulrich, and Hans Kaspar; the dates of these relationships are unknown."}
+        {
+          "date": "1512",
+          "text": "Arnold von Rosenberg may have been married to Anna von Dottenheim, daughter of Konrad von Dottenheim, and had four sons: Hans Thomas, Hans Melchior, Hans Ulrich, and Hans Kaspar; the dates of these relationships are unknown."
+        }
       ]
     },
     {
@@ -1988,11 +2261,23 @@
       "facts": [
         {
           "date": "1519-10-16",
-          "text": "Eberhard von Rosenberg zu Stuttgart died, according to his tomb inscription."
+          "text": "Eberhard von Rosenberg zu Stuttgart’s tomb inscription is the cited source for this date."
         },
         {
           "date": "1568-11-26",
-          "text": "Anna von Dienheim died, according to the tomb inscription."
+          "text": "Anna von Dienheim’s tomb inscription is the cited source for this date."
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg zu Stuttgart",
+          "diedOn": "1519-10-16",
+          "date": "1519-10-16"
+        },
+        {
+          "type": "death",
+          "person": "Anna von Dienheim",
+          "diedOn": "1568-11-26",
+          "date": "1568-11-26"
         }
       ]
     },
@@ -2053,10 +2338,6 @@
       "english": "In 1524, Lady Dorothea von Rosenberg died at Nieder-Saulheim. (Maiores: Dienheim, Forstmeister—Rosenberg; Rüdt von Collenberg; Archive for Hessian History VIII, 310.) In 1525, Sibylla von Rosenberg was the wife of Joachim von Stettenberg; by 1530 she was his widow.",
       "facts": [
         {
-          "date": "1524",
-          "text": "Dorothea von Rosenberg died at Niedersaulheim."
-        },
-        {
           "type": "spouse",
           "person": "Sibylla von Rosenberg",
           "of": "Joachim von Stettenberg",
@@ -2069,8 +2350,17 @@
           "date": "1530"
         },
         {
-          "date": "1530",
-          "text": "Joachim von Stettenberg was deceased by 1530."
+          "type": "death",
+          "person": "Dorothea von Rosenberg",
+          "diedOn": "1524",
+          "date": "1524",
+          "circumstances": "At Niedersaulheim"
+        },
+        {
+          "type": "death",
+          "person": "Joachim von Stettenberg",
+          "diedBefore": "1531",
+          "date": "1530"
         }
       ]
     },
@@ -2120,28 +2410,37 @@
           "date": "1548"
         },
         {
-          "date": "1548",
-          "text": "Anna von Rosenberg died."
-        },
-        {
-          "date": "1514",
-          "text": "Caspar von Stetten died."
-        },
-        {
-          "date": "1547",
-          "text": "Wolf von Stetten died."
-        },
-        {
           "date": "1551-08-01",
           "text": "Albrecht von Rosenberg and Bronnbach Abbey settled their dispute concerning rights at Kupprichhausen."
         },
         {
           "date": "1551",
           "text": "Albrecht von Rosenberg held Kupprichhausen as a Mannlehen from Mainz."
+        },
+        {
+          "type": "death",
+          "person": "Anna von Rosenberg",
+          "diedOn": "1548",
+          "date": "1548"
+        },
+        {
+          "type": "death",
+          "person": "Caspar von Stetten",
+          "diedOn": "1514",
+          "date": "1514"
+        },
+        {
+          "type": "death",
+          "person": "Wolf von Stetten",
+          "diedOn": "1547",
+          "date": "1547"
         }
       ],
       "guesses": [
-        {"date": "1548", "text": "Anna von Rosenberg may have been married first to Caspar von Stetten and then to Wolf von Stetten; the marriage dates are unknown."}
+        {
+          "date": "1548",
+          "text": "Anna von Rosenberg may have been married first to Caspar von Stetten and then to Wolf von Stetten; the marriage dates are unknown."
+        }
       ]
     },
     {
@@ -2150,11 +2449,13 @@
       "facts": [
         {
           "date": "1553",
-          "text": "Albrecht von Rosenberg received all of Höhenstadt after Michael von Rosenberg’s death."
+          "text": "Albrecht von Rosenberg received all of Höhenstadt, including Michael von Rosenberg’s former half."
         },
         {
-          "date": "1553",
-          "text": "Michael von Rosenberg was deceased by 1553."
+          "type": "death",
+          "person": "Michael von Rosenberg",
+          "diedBefore": "1554",
+          "date": "1553"
         }
       ]
     },
@@ -2174,16 +2475,32 @@
         }
       ],
       "guesses": [
-        {"date": "1555-08-17", "text": "The account gives conflicting fathers for Albrecht von Rosenberg: Eberhard and Kunz, Eberhard’s brother."},
-        {"type": "parent", "person": "Eberhard von Rosenberg", "of": "Albrecht von Rosenberg", "date": "1555-08-17"},
-        {"type": "parent", "person": "Kunz von Rosenberg", "of": "Albrecht von Rosenberg", "date": "1555-08-17"}
+        {
+          "date": "1555-08-17",
+          "text": "The account gives conflicting fathers for Albrecht von Rosenberg: Eberhard and Kunz, Eberhard’s brother."
+        },
+        {
+          "type": "parent",
+          "person": "Eberhard von Rosenberg",
+          "of": "Albrecht von Rosenberg",
+          "date": "1555-08-17"
+        },
+        {
+          "type": "parent",
+          "person": "Kunz von Rosenberg",
+          "of": "Albrecht von Rosenberg",
+          "date": "1555-08-17"
+        }
       ]
     },
     {
       "german": "1556, 31. Febr., ſtarb die edel und tugendſam Frau Maria Cleophe, geborene v. Roſenberg, Gerhard v. Bödigheim eheliche Hausfrau geweſen (Grabſtein in der Kirche zu Binau a. N.). Ihre Mutter war eine geborene v. Adelsheim.",
       "english": "On February 31, 1556, the noble and virtuous Lady Maria Cleophe, née von Rosenberg and lawful wife of Gerhard von Bödigheim, died (tombstone in the church at Binau on the Neckar). Her mother was née von Adelsheim.",
       "guesses": [
-        {"date": "1556", "text": "Stocker records Maria Cleophe von Rosenberg’s death as 31 February 1556; the date is invalid and needs source verification."}
+        {
+          "date": "1556",
+          "text": "Stocker records Maria Cleophe von Rosenberg’s death as 31 February 1556; the date is invalid and needs source verification."
+        }
       ]
     },
     {
@@ -2226,8 +2543,14 @@
           ],
           "date": "1561-04-25"
         },
-        {"date": "1561-04-25", "text": "Albrecht von Rosenberg, Ritter, held half of the wine tithe at Oberschüpf as a Mannlehen from Ludwig Kasimir von Hohenlohe-Langenburg."},
-        {"date": "1561-04-25", "text": "Albrecht von Rosenberg had purchased half of the wine tithe at Oberschüpf from Albrecht von Bibra."}
+        {
+          "date": "1561-04-25",
+          "text": "Albrecht von Rosenberg, Ritter, held half of the wine tithe at Oberschüpf as a Mannlehen from Ludwig Kasimir von Hohenlohe-Langenburg."
+        },
+        {
+          "date": "1561-04-25",
+          "text": "Albrecht von Rosenberg had purchased half of the wine tithe at Oberschüpf from Albrecht von Bibra."
+        }
       ]
     },
     {
@@ -2274,8 +2597,14 @@
           "date": "1562",
           "text": "Albrecht von Rosenberg accompanied Duke Christoph of Württemberg to an imperial coronation at Frankfurt."
         },
-        {"date": "1563-06-28", "text": "Albrecht von Rosenberg issued an ordinance concerning compulsory labour."},
-        {"date": "1564-03-24", "text": "Albrecht von Rosenberg transferred his rents and dues at Ailringen, Mulfingen, Oberlauten, Oberbalbach, Edelfingen and Heckfeld to Hohenlohe to hold as fiefs."}
+        {
+          "date": "1563-06-28",
+          "text": "Albrecht von Rosenberg issued an ordinance concerning compulsory labour."
+        },
+        {
+          "date": "1564-03-24",
+          "text": "Albrecht von Rosenberg transferred his rents and dues at Ailringen, Mulfingen, Oberlauten, Oberbalbach, Edelfingen and Heckfeld to Hohenlohe to hold as fiefs."
+        }
       ]
     },
     {
@@ -2284,19 +2613,15 @@
       "facts": [
         {
           "date": "1569-08-26",
-          "text": "Rufina Stieber von Büttenheim died, according to the tomb inscription."
+          "text": "Rufina Stieber von Büttenheim’s tomb inscription is the cited source for this date."
         },
         {
           "date": "1572-05-17",
-          "text": "Albrecht von Rosenberg, Ritter, died, according to the tomb inscription."
+          "text": "Albrecht von Rosenberg’s tomb inscription is the cited source for this date."
         },
         {
           "date": "1575-06-13",
           "text": "Count Palatine Friedrich enfeoffed Hans Eucharius von Rosenberg with Epplingen, Dainbach, half of Sachsenflur and half of Bobstadt."
-        },
-        {
-          "date": "1576-03-03",
-          "text": "Hans Eucharius von Rosenberg was deceased by 3 March 1576."
         },
         {
           "type": "sibling",
@@ -2335,10 +2660,34 @@
         {
           "date": "1576-03-03",
           "text": "Jakob von Rosenberg zu Waldmannshofen authorized his brother Konrad von Rosenberg to receive the property and fiefs left to them by Hans Eucharius von Rosenberg."
+        },
+        {
+          "type": "death",
+          "person": "Rufina Stieber von Büttenheim",
+          "diedOn": "1569-08-26",
+          "date": "1569-08-26"
+        },
+        {
+          "type": "death",
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "diedOn": "1572-05-17",
+          "date": "1572-05-17"
+        },
+        {
+          "type": "death",
+          "person": "Hans Eucharius von Rosenberg",
+          "diedBefore": "1576-03-04",
+          "date": "1576-03-03"
         }
       ],
       "guesses": [
-        {"date": "1572", "text": "The tomb inscription identifies Albrecht von Rosenberg and Rufina Stieber von Büttenheim as spouses, but does not date their marriage or the inscription."}
+        {
+          "date": "1572",
+          "text": "The tomb inscription identifies Albrecht von Rosenberg and Rufina Stieber von Büttenheim as spouses, but does not date their marriage or the inscription."
+        }
       ]
     },
     {
@@ -2347,27 +2696,30 @@
       "guesses": [
         {
           "date": "1578",
-          "text": "Stocker first gives 1578 for Zeisolf von Rosenberg der Jüngere’s death, but later gives 13 August 1576; the date requires source verification."
+          "text": "Stocker first gives 1578, but later gives 13 August 1576; the conflicting dates require source verification."
         },
         {
           "date": "1576-08-13",
-          "text": "Stocker later gives 13 August 1576 for Zeisolf von Rosenberg der Jüngere’s death, but first gives 1578; the date requires source verification."
+          "text": "Stocker later gives 13 August 1576, after first giving 1578; the conflicting dates require source verification."
         },
-        {"date": "1576", "text": "Stocker describes Zeisolf von Rosenberg der Jüngere as the husband of Anna von der Keer, son of Zeisolf der Ältere, and father of Georg Sigmund, without a date for those relationship attestations."}
+        {
+          "date": "1576",
+          "text": "Stocker describes Zeisolf von Rosenberg der Jüngere as the husband of Anna von der Keer, son of Zeisolf der Ältere, and father of Georg Sigmund, without a date for those relationship attestations."
+        },
+        {
+          "type": "death",
+          "person": "Zeisolf von Rosenberg der Jüngere",
+          "diedOn": "1578",
+          "date": "1578"
+        },
+        {
+          "type": "death",
+          "person": "Zeisolf von Rosenberg der Jüngere",
+          "diedOn": "1576-08-13",
+          "date": "1576-08-13"
+        }
       ],
       "facts": [
-        {
-          "date": "1543",
-          "text": "Zeisolf von Rosenberg der Ältere died while serving as Amtmann zu Crailsheim."
-        },
-        {
-          "date": "1576-01-02",
-          "text": "Anna von der Keer died."
-        },
-        {
-          "date": "1587",
-          "text": "Hans Christoph von Rosenberg zu Haltenbergstetten died."
-        },
         {
           "date": "1584-11-24",
           "text": "Georg Sigmund von Rosenberg married Anna Maria von Gemmingen-Treschklingen at Haltenbergstetten."
@@ -2383,6 +2735,25 @@
           "person": "Reinhard von Gemmingen-Treschklingen",
           "of": "Anna Maria von Gemmingen-Treschklingen",
           "date": "1584-11-24"
+        },
+        {
+          "type": "death",
+          "person": "Zeisolf von Rosenberg der Ältere",
+          "diedOn": "1543",
+          "date": "1543",
+          "circumstances": "While serving as Amtmann zu Crailsheim"
+        },
+        {
+          "type": "death",
+          "person": "Anna von der Keer",
+          "diedOn": "1576-01-02",
+          "date": "1576-01-02"
+        },
+        {
+          "type": "death",
+          "person": "Hans Christoph von Rosenberg zu Haltenbergstetten",
+          "diedOn": "1587",
+          "date": "1587"
         }
       ]
     },
@@ -2397,12 +2768,8 @@
           "date": "1620-05-22"
         },
         {
-          "date": "1630-01-02",
-          "text": "Georg Sigmund von Rosenberg died."
-        },
-        {
           "date": "1632",
-          "text": "Albrecht Christoph von Rosenberg died without children while serving as Ritterhauptmann."
+          "text": "Albrecht Christoph von Rosenberg left no children and served as Ritterhauptmann."
         },
         {
           "type": "spouse",
@@ -2421,13 +2788,40 @@
         },
         {
           "date": "1577-08-14",
-          "text": "The male fief heirs and property heirs of the deceased Albrecht von Rosenberg reached an agreement concerning Mainz fiefs in the Schüpfergrund."
+          "text": "The male fief heirs and property heirs of Albrecht von Rosenberg reached an agreement concerning Mainz fiefs in the Schüpfergrund."
         },
         {
-          "type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["zu Waldmannshofen"], "of": "Philipp Jakob von Rosenberg", "date": "1577-08-14"
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Waldmannshofen"
+          ],
+          "of": "Philipp Jakob von Rosenberg",
+          "date": "1577-08-14"
         },
         {
-          "type": "sibling", "person": "Konrad von Rosenberg", "personTitle": ["zu Waldmannshofen"], "of": "Hans Christoph von Rosenberg", "ofTitle": ["zu Eisenburg"], "date": "1577-08-14"
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Waldmannshofen"
+          ],
+          "of": "Hans Christoph von Rosenberg",
+          "ofTitle": [
+            "zu Eisenburg"
+          ],
+          "date": "1577-08-14"
+        },
+        {
+          "type": "death",
+          "person": "Georg Sigmund von Rosenberg",
+          "diedOn": "1630-01-02",
+          "date": "1630-01-02"
+        },
+        {
+          "type": "death",
+          "person": "Albrecht Christoph von Rosenberg",
+          "diedOn": "1632",
+          "date": "1632"
         }
       ]
     },
@@ -2555,7 +2949,10 @@
       "german": "Auf Grund dieſer Abmachungen wurde eine Specification aller und jeder eigenthümlichen Schlöſſer, Dörfer, Zins, Gülten, ſo in den 4 Vog⸗teien zu Haldenbergſtetten, Roſenberg, Unterſchüpf und Waldmannshofen weiland Albrecht Chriſtoph v. R. ſel. Eigenthumserben beſeſſen und ge—braucht, hernach Herrn Franziskus, Biſchof zu Bamberg und Würzburg, am 22. Aug. 1640 verkauft und übergeben, ſodann annectirt, was ſeit—dem von Generalfeldmarſchall Melchior von Hatzfeld, Grafen v. Gleichen, noch dazu erkauft worden.",
       "english": "On the basis of these agreements, a detailed inventory was drawn up of all the castles, villages, rents, and revenues owned in the four bailiwicks of Haldenbergstetten, Rosenberg, Untereschüpf, and Waldmannshofen and used by the late Albrecht Christoph von Rosenberg’s allodial heirs. They were then sold and transferred to Lord Franziskus, Bishop of Bamberg and Würzburg, on August 22, 1640, along with anything else subsequently acquired by Field Marshal Melchior von Hatzfeld, Count of Gleichen.",
       "facts": [
-        {"date": "1640-08-22", "text": "The property heirs of Albrecht Christoph von Rosenberg sold and transferred their allodial holdings in the bailiwicks of Haltenbergstetten, Rosenberg, Unterschüpf and Waldmannshofen to Franz, Bishop of Bamberg and Würzburg."}
+        {
+          "date": "1640-08-22",
+          "text": "The property heirs of Albrecht Christoph von Rosenberg sold and transferred their allodial holdings in the bailiwicks of Haltenbergstetten, Rosenberg, Unterschüpf and Waldmannshofen to Franz, Bishop of Bamberg and Würzburg."
+        }
       ]
     },
     {
@@ -2574,7 +2971,10 @@
       "german": "An dem uralten Stammhaus ſind ¾ an ⅓ eigenthümlich, das Uebrige würzburgiſches und pfälziſches Lehen 6000 fl.; Pfarr- und Schulſatz bleiben ausgeſetzt; ⅔ an der Grundherrlichkeit und Schatzung 530 fl.; ⅔ an Umgeld 1800 fl.; ⅔ an Jagensgerechtigkeit und Leib⸗eigenſchaft 1000 fl.; ⅔ an Fiſchen 200 fl.; Zinſe, Gülten, Handlohe 1556 fl.; Hofraithe und Scheuer 960 fl.; an Gütern 66 Morgen Aecker 990 fl.; Waldungen 1033 M., von den Eigenthumserben Conrads und Haus Eucharius v. R. erkauft 26800 fl.; Wieſen und Gärten 2148 fl. 56 kr.; Schweizerhof mit Rechten 3454 fl. 31 kr.; ⅓ am großen und kleinen Zehnten 2702 fl. 40 kr.; Dörrhof mit Vogteilichkeit, Güter, Schäferei, Zehnten 28 257 fl. 30 kr. (Zum Hof gehören 409 M. Aecker, 13 M. Wald, 20 M. Wieſen; am großen Zehnten hat auf etlichen Be⸗zirken die Pfarrei Sindolsheim die Hälfte.) Neuhof, zu Hälfte eigen, (die andere Hälfte iſt würzburgiſches Lehen) 1701 fl. Zu Enſigheim hatte Hans Chriſtoph v. R. ſeinen Anſitz, der aber 1640 ſchon öd und eingegangen war, alſo daß keine Hofſtatt mehr vorhanden. (Vogtei auf ſolcher Markung, Mühle, Fiſcherei der halbe Zehnten 2902 fl. 30 kr. die andere Hälfte gehört der Pfarrei Sindolsheim] gehören den Eigenthums⸗erben.) Gies hatte ſonſt 12 Hofſtätten, nun öd und eingegangen, 1280 fl. (Vogtei, Fiſcherei, ⅔ am großen und kleinen Zehnten gehört den Eigens⸗erben; das andere ⅓ der Frühmeß Oſterburken); ¼ am kleinen Zehnten zu Oſterburken 80 fl. Hirſchlanden. Den ganzen Zehnten halb von den Wolfskehle, halb von den hardheimiſchen Erben erkauft, Zinſen und Gült; ein Hofgut von den hardheimiſchen Erben erkauft. Hohenſtadt ¼ am kleinen Zehnten 200 fl. Sindolsheim, Zinſen und Gülten und Fronden 606 fl. 16 kr. Altheim, Zinſen und Handlohn 167 fl. 15 kr. Neidelsbach, Vogtei, Jagd, Handlohn, Hühner 1772 fl. 40 kr. Bremen, daſelbſt ſind 7 Höfe mit allen Rechten zuſtändig 3759 fl. 12 kr. Buch vorm Ahorn, Zinsgefälle 53 fl. 40 kr. Arnoldsfelden, ein wüſter Weiler beim Buch vorm Ahorn, Zinsgefälle 24 fl. 24 kr. Unter⸗balbach, etwas Zins 1 fl. 30 kr. Mittelkinzing, Rechte und Gefälle 2200 fl. Seckach, ¼ am großen und kleinen Zehnten 2000 fl. Zu⸗ſammen 93 148 fl. 4 kr.",
       "english": "Three quarters of one third of the ancient ancestral castle are freehold; the rest is a Würzburg and Palatine fief, valued at 6,000 florins. The parish and school patronage are excluded. Two thirds of the seigneurial rights and land tax, 530 florins; two thirds of the excise duty, 1,800 florins; two thirds of the hunting rights and serfdom, 1,000 florins; two thirds of the fishing rights, 200 florins; rents, revenues, and dues, 1,556 florins; farmstead and barn, 960 florins; properties including 66 acres of arable land, 990 florins; woods covering 1,033 acres, bought from the property heirs of Konrad and Hans Eucharius von Rosenberg, 26,800 florins; meadows and gardens, 2,148 florins and 56 kreuzers; Schweizerhof with its rights, 3,454 florins and 31 kreuzers; one third of the great and small tithes, 2,702 florins and 40 kreuzers; Dörrhof, with bailiwick rights, properties, sheep farm, and tithes, 28,257 florins and 30 kreuzers. (The farm includes 409 acres of arable land, 13 acres of woodland, and 20 acres of meadow; in some districts the parish of Sindolsheim receives half of the great tithe.) Neuhof, half owned outright and half a Würzburg fief, 1,701 florins. At Ensigheim, Hans Christoph von Rosenberg had his residence, but by 1640 it was already deserted and in ruins, with no house site remaining. (The bailiwick rights over that district, mill, fishery, and half the tithe, valued at 2,902 florins and 30 kreuzers—the other half belonged to the parish of Sindolsheim—went to the allodial heirs.) Gies formerly had twelve house sites, now deserted and in ruins, 1,280 florins. (The bailiwick, fishery, and two thirds of the great and small tithes belonged to the allodial heirs; the other third belonged to the early Mass benefice at Osterburken.) One quarter of the small tithe at Osterburken, 80 florins. At Hirschlanden, the entire tithe, half bought from the Wolfskehl family and half from the Hardheim heirs, together with rents, revenues, and a farm bought from the Hardheim heirs. At Hohenstadt, one quarter of the small tithe, 200 florins. At Sindolsheim, rents, revenues, and labor dues, 606 florins and 16 kreuzers. At Altheim, rents and transfer fees, 167 florins and 15 kreuzers. At Neidelsbach, bailiwick and hunting rights, transfer fees, and hens, 1,772 florins and 40 kreuzers. At Bremen, seven farms with all rights, 3,759 florins and 12 kreuzers. At Buch vorm Ahorn, rent revenues, 53 florins and 40 kreuzers. At Arnoldsfelden, a deserted hamlet near Buch vorm Ahorn, rent revenues, 24 florins and 24 kreuzers. At Unterbalbach, some rent, 1 florin and 30 kreuzers. At Mittelkinzing, rights and revenues, 2,200 florins. At Seckach, one quarter of the great and small tithes, 2,000 florins. Total: 93,148 florins and 4 kreuzers.",
       "facts": [
-        {"date": "1640", "text": "Hans Christoph von Rosenberg had held a seat at Ensigheim which was already abandoned by 1640."}
+        {
+          "date": "1640",
+          "text": "Hans Christoph von Rosenberg had held a seat at Ensigheim which was already abandoned by 1640."
+        }
       ]
     },
     {
@@ -2654,14 +3054,20 @@
       "german": "1452 iſt Wilhelm Adel v. T. (geſt. 1483) hohenlohiſcher Vaſall und Theilhaber an Schüpf; Mittheilhaber ſind Philipp, Georg und Hans v. T., welche 1468 mit den von Roſenberg einen Burgfrieden auf⸗richteten.",
       "english": "In 1452, Wilhelm Adel von Dottenheim, who died in 1483, was a Hohenlohe vassal and co-owner of Schüpf. His fellow co-owners were Philipp, Georg, and Hans von Dottenheim, who made a castle peace with the Rosenbergs in 1468.",
       "facts": [
-        {"date": "1468", "text": "Wilhelm Adel von Dottenheim, Philipp von Dottenheim, Georg von Dottenheim and Hans von Dottenheim established a Burgfrieden at Schüpf with the von Rosenberg family."}
+        {
+          "date": "1468",
+          "text": "Wilhelm Adel von Dottenheim, Philipp von Dottenheim, Georg von Dottenheim and Hans von Dottenheim established a Burgfrieden at Schüpf with the von Rosenberg family."
+        }
       ]
     },
     {
       "german": "1469 ſtiftet Wilhelm v. T., Ritter, mit andern Ganerben die Früh⸗meß zu Sachſenflur und wird 1483 wegen des Schaftriebs in Oberſchüpf mit Albrecht von Roſenberg verglichen.",
       "english": "In 1469, Wilhelm von Dottenheim, Ritter, and other co-heirs endowed an early Mass at Sachsenflur. In 1483, he reached a settlement with Albrecht von Rosenberg concerning the right to drive sheep at Obereschüpf.",
       "guesses": [
-        {"date": "1483", "text": "Stocker names Albrecht von Rosenberg in the 1483 sheep-grazing settlement here, but identifies the participant as Arnold in the account at entry 111; the name requires verification."}
+        {
+          "date": "1483",
+          "text": "Stocker names Albrecht von Rosenberg in the 1483 sheep-grazing settlement here, but identifies the participant as Arnold in the account at entry 111; the name requires verification."
+        }
       ]
     },
     {
@@ -2730,7 +3136,13 @@
         },
         {
           "date": "1572",
-          "text": "Albrecht von Rosenberg died without children."
+          "text": "Albrecht von Rosenberg left no children."
+        },
+        {
+          "type": "death",
+          "person": "Albrecht von Rosenberg",
+          "diedOn": "1572",
+          "date": "1572"
         }
       ]
     },
@@ -2738,10 +3150,11 @@
       "german": "Michael von Roſenberg war vermählt mit Anna Rüd von Kollenberg, ſein Sohn Eberhard, geſtorben 1519, vermählt mit Anna von Dienheim, welche ſich 1527 wieder verheiratete mit Peter von Leyen. Die von Leyen hatten ihr Stammſchloß in Leybach bei Dörzbach gehabt und treten nach Humbracht (Tab. 121) im Jahre 1296 zuerſt auf. Aus erſter Ehe hatte Anna einen Sohn Albrecht, aus der zweiten einen Sohn und eine Tochter.",
       "english": "Michael von Rosenberg was married to Anna Rüd von Kollenberg. Their son Eberhard, who died in 1519, was married to Anna von Dienheim, who remarried Peter von Leyen in 1527. The von Leyens had their ancestral castle at Leybach near Dörzbach and first appear in 1296, according to Humbracht (table 121). Anna had one son from her first marriage, Albrecht, and a son and daughter from her second marriage:",
       "facts": [
-        {"type": "parent", "person": "Michael von Rosenberg", "of": "Eberhard von Rosenberg", "date": "1519"},
         {
-          "date": "1519",
-          "text": "Eberhard von Rosenberg died."
+          "type": "parent",
+          "person": "Michael von Rosenberg",
+          "of": "Eberhard von Rosenberg",
+          "date": "1519"
         },
         {
           "type": "spouse",
@@ -2756,8 +3169,16 @@
           "date": "1527"
         },
         {
-          "date": "1527",
-          "text": "Eberhard von Rosenberg, husband of Anna von Dienheim, was deceased by 1527."
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedOn": "1519",
+          "date": "1519"
+        },
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedBefore": "1528",
+          "date": "1527"
         }
       ]
     },
@@ -2766,8 +3187,10 @@
       "english": "1. Albrecht von Rosenberg, died 1572.\n2. Eberhard von Leyen, born 1532, died at Kocherstetten on December 21, 1572, after returning from Hungary (see I).\n3. Margaretha von Leyen (see XII).",
       "facts": [
         {
-          "date": "1572",
-          "text": "Albrecht von Rosenberg died."
+          "type": "death",
+          "person": "Albrecht von Rosenberg",
+          "diedOn": "1572",
+          "date": "1572"
         }
       ]
     },

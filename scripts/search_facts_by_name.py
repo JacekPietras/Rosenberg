@@ -106,6 +106,11 @@ def typed_fact_text(fact, people_by_id, include_ids=True, unresolved_references=
     kind = fact.get("type")
     if kind == "title":
         return f"{participant('person', False)} is designated {', '.join(fact.get('personTitle', []))}."
+    if kind == "death":
+        when = fact.get("diedOn")
+        wording = f"died on {when}" if when else f"died before {fact.get('diedBefore')}"
+        circumstances = fact.get("circumstances")
+        return f"{participant('person')} {wording}" + (f" ({circumstances})" if circumstances else "") + "."
     if kind in {"parent", "sibling", "spouse", "kin"}:
         term = f" ({fact.get('term', '')})" if kind == "kin" else ""
         return f"{participant('person')} is {kind} of {participant('of')}{term}."

@@ -13,7 +13,11 @@
           "personDeceased": true,
           "of": "Ulrich von Rosenberg"
         },
-        "Ulrich von Rosenberg's father, Eberhard von Rosenberg, was deceased by 1435-09-18.",
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedBefore": "1435-09-19"
+        },
         {
           "type": "sibling",
           "person": "Kunz von Rosenberg",

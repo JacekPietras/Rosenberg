@@ -33,8 +33,15 @@
             "Ritter"
           ]
         },
-        "Hans Phal von Grünsfeld, Ritter, was deceased by 1368-03-28.",
-        "Anna von Rosenberg sold the tithe at Großrinderfeld to Grünau Charterhouse."
+        "Anna von Rosenberg sold the tithe at Großrinderfeld to Grünau Charterhouse.",
+        {
+          "type": "death",
+          "person": "Hans Phal von Grünsfeld",
+          "personTitle": [
+            "Ritter"
+          ],
+          "diedBefore": "1368-03-29"
+        }
       ],
       "img": [
         {

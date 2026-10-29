@@ -63,7 +63,9 @@
         {
           "type": "spouse",
           "person": "Eberhard von Uissigheim",
-          "personTitle": ["von Rannenberg"],
+          "personTitle": [
+            "von Rannenberg"
+          ],
           "of": "Elisabeth"
         },
         "Uissigheim family renounced rights to Breitenau farm in favor of Bronnbach Abbey"

@@ -23,7 +23,11 @@
           "person": "Kunigunde von Lissberg",
           "of": "Hans von Hirschhorn"
         },
-        "Engelhard von Hirschhorn was deceased by 1342-10-27."
+        {
+          "type": "death",
+          "person": "Engelhard von Hirschhorn",
+          "diedBefore": "1342-10-28"
+        }
       ],
       "img": [
         {

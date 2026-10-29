@@ -13,8 +13,12 @@
           "of": "Eberhard von Rosenberg",
           "ofDeceased": true
         },
-        "Eberhard von Rosenberg was deceased by 1364-02-12.",
-        "Margarethe von Thüngen purchased tithes at Schweigern from Hans von Klepsau and Elisabeth von Klepsau"
+        "Margarethe von Thüngen purchased tithes at Schweigern from Hans von Klepsau and Elisabeth von Klepsau",
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedBefore": "1364-02-13"
+        }
       ],
       "img": [
         {

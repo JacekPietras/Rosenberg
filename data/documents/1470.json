@@ -7,7 +7,11 @@
       "german": "Notariatsinstrument über die Aussage der Margarethe Zobel, Witwe Jörg von Rosenbergs zu Boxberg, dass sie von allen Forderung wegen Kriegsbeschädigung gegenüber dem Deutschen Orden absehen will.",
       "english": "Notarial instrument about the statement of Margarethe Zobel, widow of Jörg von Rosenberg zu Boxberg, that she wants to refrain from all claims for war damage to the German Order.",
       "facts": [
-        "Jörg von Rosenberg zu Boxberg was deceased by 1470.",
+        {
+          "type": "death",
+          "person": "Jörg von Rosenberg zu Boxberg",
+          "diedBefore": "1471"
+        },
         {
           "type": "spouse",
           "person": "Margarethe Zobel",

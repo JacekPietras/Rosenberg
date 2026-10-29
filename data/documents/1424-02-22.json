@@ -26,6 +26,13 @@
         {
           "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1011_116.jpg"
         }
+      ],
+      "guesses": [
+        {
+          "type": "death",
+          "person": "Ulrich von Rosenberg",
+          "diedBefore": "1424-04-22"
+        }
       ]
     }
   ]

@@ -15,8 +15,12 @@
           "person": "Eberhard von Uissigheim",
           "of": "Konrad von Uissigheim"
         },
-        "Eberhard von Uissigheim was deceased by 1372-01-03.",
-        "Eberhard Schenk von Rossberg, Ritter, and his wife Agnes sold their castle, residence, and farm in Veitshöchheim to Konrad von Uissigheim."
+        "Eberhard Schenk von Rossberg, Ritter, and his wife Agnes sold their castle, residence, and farm in Veitshöchheim to Konrad von Uissigheim.",
+        {
+          "type": "death",
+          "person": "Eberhard von Uissigheim",
+          "diedBefore": "1372-01-04"
+        }
       ]
     }
   ]

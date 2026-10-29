@@ -24,7 +24,11 @@
           "of": "Eberhard von Rosenberg",
           "ofDeceased": true
         },
-        "Eberhard von Rosenberg was deceased by 1412-06-11.",
+        {
+          "type": "death",
+          "person": "Eberhard von Rosenberg",
+          "diedBefore": "1412-06-12"
+        },
         "Engelhard von Rosenberg der Ältere sealed the charter.",
         "Anne von Bebenburg sealed the charter.",
         "Kunz von Rosenberg sealed the charter."

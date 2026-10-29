@@ -10,9 +10,14 @@
         {
           "type": "spouse",
           "person": "Elisabeth von Erligheim",
-          "of": "vogt_zu_Lauda"
+          "of": "vogt_zu_Lauda",
+          "ofDeceased": true
         },
-        "[vogt_zu_Lauda] was deceased by 1389",
+        {
+          "type": "death",
+          "person": "vogt_zu_Lauda",
+          "diedBefore": "1389-01-19"
+        },
         {
           "type": "title",
           "person": "heinrich_von_Erligheim",
@@ -29,7 +34,11 @@
           "of": "Elisabeth von Erligheim",
           "term": "Vetter"
         },
-        "[heinrich_von_Erligheim] was deceased by 1389",
+        {
+          "type": "death",
+          "person": "heinrich_von_Erligheim",
+          "diedBefore": "1389-01-19"
+        },
         "[heinrich_von_Erligheim] had received Bensheim castle as a pledge from Archbishop Adolf of Mainz",
         {
           "type": "kin",

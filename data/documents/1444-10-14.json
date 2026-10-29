@@ -21,7 +21,9 @@
         {
           "type": "kin",
           "person": "Konrad von Rosenberg",
-          "personTitle": ["Ritter"],
+          "personTitle": [
+            "Ritter"
+          ],
           "of": "Kunz von Rosenberg",
           "term": "Vetter"
         }

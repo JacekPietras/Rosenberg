@@ -27,6 +27,12 @@ function titles(value) {
 
 function typedText(fact, participant, literal) {
   if (fact.type === 'title') return `${participant(fact.person)} is designated ${literal(titles(fact.personTitle))}.`;
+  if (fact.type === 'death') {
+    const when = fact.diedOn ? `died on ${literal(fact.diedOn)}` : `died before ${literal(fact.diedBefore || '')}`;
+    const circumstances = typeof fact.circumstances === 'string' && fact.circumstances.trim()
+      ? ` (${literal(fact.circumstances)})` : '';
+    return `${participant(fact.person, fact.personTitle)} ${when}${circumstances}.`;
+  }
   const person = participant(fact.person, fact.personTitle);
   const other = participant(fact.of, fact.ofTitle);
   if (fact.type === 'kin') return `${person} is kin of ${other} (${literal(fact.term || '')}).`;

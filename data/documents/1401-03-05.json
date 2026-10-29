@@ -28,7 +28,15 @@
           "personDeceased": true,
           "of": "Konrad von Rosenberg"
         },
-        "Konrad von Rosenberg, Ritter, formerly Vizedom zu Amberg, was deceased by 1401-03-05.",
+        {
+          "type": "death",
+          "person": "Konrad von Rosenberg",
+          "diedBefore": "1401-03-06",
+          "personTitle": [
+            "Ritter",
+            "Vizedom zu Amberg"
+          ]
+        },
         "King Ruprecht permitted Kunz von Rosenberg and Konrad von Rosenberg, also identified as a son of a Konrad von Rosenberg whose identity is not established, to appoint a Schultheiss and Schöffen and hold a Halsgericht, Stock und Galgen in Schweigern."
       ]
     }

@@ -17,7 +17,11 @@
           "personDeceased": true,
           "of": "Hans von Rosenberg"
         },
-        "Kunz von Rosenberg was deceased by 1457-11-19.",
+        {
+          "type": "death",
+          "person": "Kunz von Rosenberg",
+          "diedBefore": "1457-11-20"
+        },
         "Hans von Rosenberg received Burggeld from rentmaster Eberhard Gysel on behalf of Count Hans von Wertheim."
       ],
       "img": [
