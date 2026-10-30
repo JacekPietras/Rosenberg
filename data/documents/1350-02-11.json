@@ -51,9 +51,18 @@
             "Ritter",
             "Vogt zu Wildenberg"
           ],
-          "of": "Hans von Rosenberg"
+          "of": "hans_domherr_zu_wurzburg",
+          "ofTitle": [
+            "Domherr in Würzburg"
+          ]
         },
-        "Hans von Rosenberg is a Domherr in Würzburg."
+        {
+          "type": "title",
+          "person": "hans_domherr_zu_wurzburg",
+          "personTitle": [
+            "Domherr in Würzburg"
+          ]
+        }
       ]
     }
   ],
