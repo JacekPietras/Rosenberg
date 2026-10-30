@@ -206,19 +206,19 @@
       "facts": [
         {
           "date": "1271",
-          "text": "Hans von Rosenberg appeared as a witness in a document."
+          "text": "[hans_father_of_eckhard] appeared as a witness in a document."
         },
         {
           "date": "1286",
-          "text": "Hans von Rosenberg appeared as a witness in a document."
+          "text": "[hans_father_of_eckhard] appeared as a witness in a document."
         },
         {
           "date": "1290",
-          "text": "Hans von Rosenberg appeared as a witness in a document."
+          "text": "[hans_father_of_eckhard] appeared as a witness in a document."
         },
         {
           "type": "parent",
-          "person": "Hans von Rosenberg",
+          "person": "hans_father_of_eckhard",
           "of": "Eckhard von Rosenberg",
           "date": "1300"
         },
