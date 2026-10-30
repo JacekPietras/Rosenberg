@@ -8,6 +8,7 @@ import { moduleUrl } from './browser-module.mjs';
 globalThis.crypto ||= webcrypto;
 const { buildRelationshipGraph, resolvePerson, verifyFamilyGraph, evidenceFingerprint, canonicalEvidence, registryIdentities, focusFamilyGraph, expandEvidenceGraph, remapSourcePerson } =
   await import(await moduleUrl(new URL('../docs/app/data/relationships.js', import.meta.url)));
+const { relationshipPanel } = await import(await moduleUrl(new URL('../docs/app/rendering/relationships.js', import.meta.url)));
 const { renderPeopleTree } = await import(await moduleUrl(new URL('../docs/app/screens/tree.js', import.meta.url)));
 const { createDataLoader } = await import(await moduleUrl(new URL('../docs/app/data/loader.js', import.meta.url)));
 const { parsePeople, parsePlaces } = await import(await moduleUrl(new URL('../docs/app/data/entities.js', import.meta.url)));
@@ -65,7 +66,7 @@ test('generated edges are excluded until the complete build is verified', async 
   const graph = buildRelationshipGraph(data.people, { verification });
   assert.equal(graph.edges.length, 1);
   assert.equal(graph.reverse.get('c')[0].person, 'a');
-  assert.match(renderPeopleTree(data.people, data.documents, { graph }), /Reconstructed relationships/);
+  assert.doesNotMatch(renderPeopleTree(data.people, data.documents, { graph }), /Reconstructed relationships/);
   assert.match(renderPeopleTree(data.people, data.documents, { graph }), /event.json#\/entries\/0\/facts\/0/);
 });
 
@@ -107,7 +108,7 @@ test('multiple marriages never confer parentage; kin terms and uncertainty are s
   const graph = buildRelationshipGraph(people, { view: 'with-guesses', verification: { valid: true } });
   assert.equal(graph.valid, true, graph.reason);
   assert.equal(graph.edges.filter((edge) => edge.type === 'parent').length, 1);
-  const html = renderPeopleTree(people, [], { graph });
+  const html = relationshipPanel(graph);
   assert.match(html, /Vetter/);
   assert.match(html, /inferred identity/);
   assert.match(html, /depends on guesses/);
@@ -613,21 +614,20 @@ async function probabilityFixture() {
   return data;
 }
 
-test('probability tree shows global parameters, weighted guesses, and explained comparisons', async () => {
+test('probability tree omits configuration while person evidence retains explained comparisons', async () => {
   const data = await probabilityFixture();
   const verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
   assert.equal(verification.valid, true, verification.reason);
   const graph = buildRelationshipGraph(data.people, { tree: data.tree, verification });
   assert.equal(graph.view, 'with-guesses');
   const html = renderPeopleTree(data.people, data.documents, { graph });
-  assert.match(html, /Facts \+ weighted guesses/);
+  assert.doesNotMatch(html, /Facts \+ weighted guesses/);
   assert.doesNotMatch(html, /data-family-view/);
-  assert.match(html, /Matching parameters \(global\)/);
-  assert.match(html, /sourceWeights.books/);
-  assert.match(html, /guessWeight/);
-  assert.match(html, /uncalibrated/);
-  assert.match(html, /Identity match estimates/);
-  assert.match(html, /50.0%/);
+  assert.doesNotMatch(html, /Matching parameters|matching-parameters|sourceWeights.books|guessWeight/);
+  assert.doesNotMatch(html, /Identity match estimates/);
+  const evidence = relationshipPanel(graph);
+  assert.match(evidence, /Identity match estimates/);
+  assert.match(evidence, /50.0%/);
 });
 
 test('probability verification rejects altered estimates and effective parameters', async () => {

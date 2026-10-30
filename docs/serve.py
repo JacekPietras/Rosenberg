@@ -251,8 +251,12 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                                "--root", str(ROOT), "--apply", "--search-limit", str(search_limit)]
                     if not include_guesses:
                         command.append("--facts-only")
-                    result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True,
-                                            check=False, timeout=120)
+                    # Data edited during a build only requires building again.
+                    for _ in range(3):
+                        result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True,
+                                                check=False, timeout=120)
+                        if result.returncode != 75:
+                            break
                     if result.returncode:
                         self.send_json(422, {"error": result.stderr.strip() or result.stdout.strip() or "Could not rebuild family relationships"})
                         return

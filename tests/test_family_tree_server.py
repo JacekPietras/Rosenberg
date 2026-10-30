@@ -119,5 +119,14 @@ class FamilyTreeServerTests(unittest.TestCase):
             self.assertEqual(504, self.post()[0])
 
 
+    def test_inputs_changed_during_build_are_rebuilt_without_an_error(self):
+        changed = subprocess.CompletedProcess('rebuild', 75, '', 'inputs or tree changed during computation')
+        done = subprocess.CompletedProcess('rebuild', 0, '', '')
+        with patch.object(viewer.subprocess, 'run', side_effect=[changed, done]) as run:
+            self.assertEqual(200, self.post()[0])
+        self.assertEqual(2, run.call_count)
+        with patch.object(viewer.subprocess, 'run', return_value=changed):
+            self.assertEqual(422, self.post()[0])
+
 if __name__ == '__main__':
     unittest.main()

@@ -11,7 +11,7 @@ export function relationshipControls(graph, { focus } = {}) {
   const counts = coverage?.reconstructedPeople !== undefined
     ? `${coverage.reconstructedPeople} source identities · ${coverage.reconstructedRelationships} relationships · ${graph.components?.length || 0} family groups · ${coverage.conflicts} conflicts`
     : coverage ? `${coverage.unresolvedMentions} unresolved mentions · ${coverage.omittedRelationships} relationships omitted · ${coverage.conflicts} conflicts` : '';
-  return `<div class="family-graph-controls">${graph.metadata?.schema >= 4 ? '<span>Facts + weighted guesses</span>' : graph.views.length > 1 ? `<label>Evidence <select data-family-view>${graph.views.map((view) => `<option value="${view}"${view === graph.view ? ' selected' : ''}>${view === 'facts' ? 'Facts only' : 'Include guesses'}</option>`).join('')}</select></label>` : '<span>Facts only</span>'}${families}${graph.canRebuild && !graph.valid && !graph.rebuilding ? '<button type="button" data-family-rebuild>Retry rebuild</button>' : ''}<span>${escapeHtml(counts)}</span><p class="status" role="status" data-family-rebuild-status>${status}</p>${probabilityParameters(graph)}${graph.valid ? '<small>Source people have no permanent registry ID. Contextual identity links and guess-dependent relationships remain marked.</small>' : ''}</div>`;
+  return `<div class="family-graph-controls">${graph.metadata?.schema >= 4 ? '' : graph.views.length > 1 ? `<label>Evidence <select data-family-view>${graph.views.map((view) => `<option value="${view}"${view === graph.view ? ' selected' : ''}>${view === 'facts' ? 'Facts only' : 'Include guesses'}</option>`).join('')}</select></label>` : '<span>Facts only</span>'}${families}${graph.canRebuild && !graph.valid && !graph.rebuilding ? '<button type="button" data-family-rebuild>Retry rebuild</button>' : ''}<span>${escapeHtml(counts)}</span><p class="status" role="status" data-family-rebuild-status>${status}</p></div>`;
 }
 
 export function relationshipPanel(graph, key = null) {
@@ -27,18 +27,6 @@ export function relationshipPanel(graph, key = null) {
     const index = Number(source.pointer.match(/\/entries\/(\d+)/)?.[1] || 0);
     return `<li><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></li>`;
   }).join('')}</ul>`).join('')}</details></li>`).join('')}</ul></section>${identityComparisons(graph, key)}`;
-}
-
-function probabilityParameters(graph) {
-  const settings = graph.metadata?.configuration?.probability;
-  if (!settings) return '';
-  const background = graph.metadata.matchingBackground?.[graph.view];
-  const context = graph.metadata.coverage?.[graph.view]?.contextCoverage;
-  const flatten = (value, prefix = '') => Object.entries(value).flatMap(([key, item]) => {
-    const label = prefix ? `${prefix}.${key}` : key;
-    return item && typeof item === 'object' ? flatten(item, label) : [[label, String(item)]];
-  });
-  return `<details class="matching-parameters"><summary>Matching parameters (global)</summary><p>Estimated probabilities · uncalibrated model. Guesses are always included with lower weight. Configuration: <code>data/matching.json</code>.</p>${background ? `<p>Relative-name frequency background: ${background.total} weighted factual name references. This measures representation in the sources, not historical population frequency.</p>` : ''}${context ? `<p>Context facts available to the matcher: ${context.attached} of ${context.total} facts/guesses; ${context.explicitIdFacts} contain confirmed IDs. Other text lacks a usable date, a supported unique actor, or sufficient matching evidence.</p>` : ''}<table><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>${flatten(settings).map(([key, value]) => `<tr><td>${escapeHtml(key)}</td><td>${escapeHtml(value)}</td></tr>`).join('')}</tbody></table></details>`;
 }
 
 export function identityComparisons(graph, key = null) {

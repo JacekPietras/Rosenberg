@@ -261,15 +261,20 @@ def validate_evidence(metadata, registry, root=None, cache=None):
                     raise ValueError('unmarked probability guess dependency')
 
 
+class ConcurrentChange(ValueError):
+    """Inputs or the tree changed while building; rebuilding again is safe."""
+
+
 def apply(inputs, tree):
     validate_generated(tree, inputs.people, inputs.root)
     path = inputs.root / 'data/tree.json'
     output = (json.dumps(tree, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
     previous = path.read_bytes() if path.exists() else None
-    if (inputs.manifest != input_manifest(inputs.root)
-        or (inputs.root / 'data/people.json').read_bytes() != inputs.registry_bytes
-        or previous != inputs.tree_bytes):
-        raise ValueError('inputs or tree changed during computation; tree was not written')
+    inputs_changed = (inputs.manifest != input_manifest(inputs.root)
+                      or (inputs.root / 'data/people.json').read_bytes() != inputs.registry_bytes)
+    # Another build may already have written this same result.
+    if inputs_changed or previous not in (inputs.tree_bytes, output):
+        raise ConcurrentChange('inputs or tree changed during computation; tree was not written')
     if output != previous:
         path.write_bytes(output)
     return output

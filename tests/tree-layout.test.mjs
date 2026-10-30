@@ -170,7 +170,7 @@ test('simple view keeps shared children on their married fathers branch', () => 
   assert.equal(Math.abs(a.x - b.x), a.w + 52, 'shared children stay adjacent');
   assert.equal(geometry(people).paths.length, 5, 'show kins restores both parent stems');
   assert.match(layout.html, /Elisabeth von Erligheim/);
-  assert.match(layout.html, /is parent of/, 'source relationships remain in the evidence panel');
+  assert.doesNotMatch(layout.html, /entity-relationships|identity-comparisons/, 'tree has no evidence panels below it');
 });
 
 test('simple view preserves both parent stems without a marriage or identifiable father', () => {
@@ -247,7 +247,7 @@ test('generated multiple marriages preserve explicit parents and repeated ancest
   assert.equal(layout.paths.length, 3);
   assert.equal(layout.spouses.length, 2);
   assert.ok(!layout.connections.some((edge) => edge.type === 'parent' && edge.person === 'other'));
-  assert.match(layout.html, /is spouse of/);
+  assert.doesNotMatch(layout.html, /entity-relationships|identity-comparisons/);
 });
 
 test('sibling and kin assertions connect their single cards without inferred parents', () => {
@@ -272,4 +272,51 @@ test('sibling and kin assertions connect their single cards without inferred par
   assert.match(layout.html, /people-tree-sibling/);
   assert.match(layout.html, /people-tree-kin/);
   assert.match(layout.html, />Vetter</);
+});
+
+
+test('hover facts use source identity pointers and keep namesakes separate', () => {
+  const path = 'data/documents/example.json';
+  const documents = new Map([[path, { date: '1400', entries: [{ facts: [
+    { type: 'title', person: 'Same name', personTitle: ['Ritter'] },
+    { type: 'title', person: 'Same name', personTitle: ['Vogt'] },
+  ], guesses: [{ text: 'A guess that must stay out of facts.' }] }] }]]);
+  const graph = { records: [0, 1].map((index) => ({ name: 'Same name', _treeKey: `source-${index}`,
+    reconstruction: { dates: ['1400'], mentions: [
+      { source: { path, pointer: `/entries/0/facts/${index}` }, date: '1400' },
+      { source: { path, pointer: `/entries/0/facts/${index}` }, date: '1400' },
+      { source: { path, pointer: '/entries/0/guesses/0' }, date: '1400' },
+    ] } })), edges: [], reverse: new Map() };
+  const html = renderPeopleTree([], documents, { graph });
+  const templates = [...html.matchAll(/<template[^>]*>(.*?)<\/template>/g)].map((match) => match[1]);
+  assert.equal(templates.length, 2);
+  assert.match(templates[0], /Ritter/);
+  assert.doesNotMatch(templates[0], /Vogt/);
+  assert.match(templates[1], /Vogt/);
+  assert.doesNotMatch(templates[1], /Ritter/);
+  assert.equal((templates[0].match(/<li>/g) || []).length, 1, 'duplicate participant references show one fact');
+  assert.match(templates[0], /<time>1400<\/time>/);
+  assert.match(templates[0], /href="\?tab=documents&amp;record=/);
+  assert.doesNotMatch(html, /A guess|entity-relationships|identity-comparisons/);
+  assert.ok(html.endsWith('</section>'), 'nothing follows the tree wrapper');
+});
+
+test('registry hover facts use exact IDs and historical dates', () => {
+  const people = [person('a', [], { name: 'Same name' }), person('b', [], { name: 'Same name' })];
+  const html = renderPeopleTree(people, new Map([
+    ['data/books/example.json', { date: '2020', entries: [{ facts: [
+      { type: 'title', person: 'a', personTitle: ['Ritter'], date: '1350' },
+      { type: 'title', person: 'b', personTitle: ['Vogt'], date: '1360' },
+      { text: 'Same name held land.' },
+      { text: '[a] used <script>unsafe</script> text.' },
+    ] }] }],
+  ]));
+  const templates = [...html.matchAll(/<template[^>]*>(.*?)<\/template>/g)].map((match) => match[1]);
+  assert.match(templates[0], /Ritter/);
+  assert.match(templates[0], /<time>1350<\/time>/);
+  assert.match(templates[0], /Undated/);
+  assert.match(templates[0], /&lt;script&gt;/);
+  assert.doesNotMatch(templates[0], /Vogt|2020|held land|<script>/);
+  assert.match(templates[1], /Vogt/);
+  assert.doesNotMatch(templates[1], /Ritter|unsafe/);
 });

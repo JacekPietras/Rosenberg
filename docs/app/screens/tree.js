@@ -1,5 +1,8 @@
-import { buildRelationshipGraph, focusFamilyGraph } from '../data/relationships.js?v=7';
-import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=7';
+import { buildRelationshipGraph, focusFamilyGraph, resolveEvidencePointer } from '../data/relationships.js?v=7';
+import { relationshipControls } from '../rendering/relationships.js?v=7';
+import { factText, factPersonMatch, factDate } from '../rendering/facts.js?v=6';
+import { formatDate, dateSortValue } from '../rendering/dates.js';
+import { documentNavigationUrl } from '../rendering/navigation.js';
 import { layoutFamilyGraph } from '../rendering/family-layout.js?v=3';
 
 function svgEscape(value) {
@@ -8,6 +11,44 @@ function svgEscape(value) {
 
 function regexEscape(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function personFacts(person, documentRecords, people) {
+  const facts = [];
+  const add = (fact, date, path, pointer) => {
+    if (fact == null || pointer.includes('/guesses/')) return;
+    const text = factText(fact, people).trim();
+    if (text) facts.push({ text, date: factDate(fact, date), path, pointer });
+  };
+  if (person.reconstruction) {
+    const documents = new Map(documentRecords);
+    const seen = new Set();
+    for (const { source, date } of person.reconstruction.mentions) {
+      const key = `${source.path}#${source.pointer}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const doc = documents.get(source.path);
+      if (doc) add(resolveEvidencePointer(doc, source.pointer), date, source.path, source.pointer);
+    }
+  } else {
+    for (const [path, doc] of documentRecords) {
+      const explicit = /^data\/(books|notes)\//.test(path) || !!doc?.book;
+      const visit = (value, inherited = '', pointer = '') => {
+        if (!value || typeof value !== 'object') return;
+        const date = explicit ? '' : Object.hasOwn(value, 'date') ? value.date : inherited;
+        Object.entries(value).forEach(([key, child]) => {
+          const next = `${pointer}/${key.replaceAll('~', '~0').replaceAll('/', '~1')}`;
+          if (key === 'facts') {
+            (Array.isArray(child) ? child : []).forEach((fact, index) => {
+              if (factPersonMatch(fact, person.id || person.name, people) === 'direct') add(fact, date, path, `${next}/${index}`);
+            });
+          } else if (key !== 'guesses') visit(child, date, next);
+        });
+      };
+      visit(doc);
+    }
+  }
+  return facts.sort((a, b) => dateSortValue(a.date) - dateSortValue(b.date));
 }
 
 export function renderPeopleTree(people = [], documents = [], { graph, focus, showKins = false } = {}) {
@@ -83,13 +124,16 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, sh
     const labelText = edge.type === 'kin' ? edge.term || 'kin' : edge.type === 'spouse' && !graph.generated ? 'wife' : edge.type;
     return `<g class="people-tree-edge" data-person="${svgEscape(edge.person)}" data-of="${svgEscape(edge.of)}"><path class="people-tree-${edge.type}" data-person="${svgEscape(edge.person)}" data-of="${svgEscape(edge.of)}" data-identity="${edge.inferred ? 'inferred' : 'anchored'}" fill="none" d="${path}"><title>${svgEscape(title)}${edge.term ? ` (${svgEscape(edge.term)})` : ''}</title></path>${label ? `<text class="people-tree-edge-label" x="${label[0]}" y="${label[1]}">${svgEscape(labelText)}</text>` : ''}</g>`;
   });
-  const nodes = cards.map(({ person, x, y }) => {
+  const factsTemplates = [];
+  const nodes = cards.map(({ person, x, y }, index) => {
+    const facts = personFacts(person, documentRecords, people);
+    factsTemplates.push(`<template data-tree-facts="${index}"><h3>${svgEscape(person.name)}</h3>${facts.length ? `<ul>${facts.map(({ text, date, path, pointer }) => `<li><time>${svgEscape(formatDate(date) || 'Undated')}</time><p>${svgEscape(text)}</p>${path ? `<a href="${svgEscape(documentNavigationUrl(path, Number(pointer.match(/\/entries\/(\d+)/)?.[1] || 0)))}">${svgEscape(path)}#${svgEscape(pointer)}</a>` : ''}</li>`).join('')}</ul>` : '<p class="status">No recorded facts for this person.</p>'}</template>`);
     const nodeHeight = nodeHeightFor(person);
     const text = personLines(person).map((line, index) => `<tspan class="${line.name ? 'people-tree-name' : 'people-tree-detail'}" x="${x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line.text)}</tspan>`).join('');
     const href = `?person=${encodeURIComponent(person.id || (person._evidence ? person._treeKey : person.name))}`;
-    return `<a class="people-tree-person-link" data-person="${svgEscape(person._treeKey)}" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${x}" y="${y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${x + nodeWidth / 2}" y="${y + 25}" text-anchor="middle">${text}</text></g></a>`;
+    return `<a class="people-tree-person-link" data-person="${svgEscape(person._treeKey)}" data-tree-facts="${index}" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${x}" y="${y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${x + nodeWidth / 2}" y="${y + 25}" text-anchor="middle">${text}</text></g></a>`;
   }).join('');
-  return `${relationshipControls(graph, { focus })}<label><input type="checkbox" data-show-kins${showKins ? ' checked' : ''}> show kins</label><section class="people-tree-wrap" aria-label="Family tree viewer"><div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div></section>${relationshipPanel(graph)}`;
+  return `${relationshipControls(graph, { focus })}<label><input type="checkbox" data-show-kins${showKins ? ' checked' : ''}> show kins</label><section class="people-tree-wrap" aria-label="Family tree viewer"><div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div><aside class="people-tree-facts" id="people-tree-facts" aria-label="Person facts" hidden></aside>${factsTemplates.join('')}</section>`;
 }
 
 export function setupPeopleTreeZoom(root = document) {
@@ -103,14 +147,59 @@ export function setupPeopleTreeZoom(root = document) {
     nodes.forEach((item) => item.classList.toggle('people-tree-highlighted', item === node));
     edges.forEach((edge) => edge.classList.toggle('people-tree-highlighted', !!node && (edge.dataset.person === node.dataset.person || edge.dataset.of === node.dataset.person)));
   };
+  const panel = wrapper.querySelector('.people-tree-facts');
+  const templates = [...wrapper.querySelectorAll('template[data-tree-facts]')];
+  let activeNode = null;
+  let hideTimer;
+  const hideFacts = () => {
+    clearTimeout(hideTimer);
+    activeNode?.removeAttribute('aria-describedby');
+    activeNode = null;
+    panel.hidden = true;
+    highlightPerson(null);
+  };
+  const scheduleHide = () => {
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(() => {
+      if (!panel.matches(':hover') && !panel.contains(document.activeElement)
+        && !activeNode?.matches(':hover') && activeNode !== document.activeElement) hideFacts();
+    }, 180);
+  };
+  const showFacts = (node) => {
+    clearTimeout(hideTimer);
+    if (node === activeNode) return;
+    activeNode?.removeAttribute('aria-describedby');
+    activeNode = node;
+    highlightPerson(node);
+    panel.replaceChildren(templates.find((template) => template.dataset.treeFacts === node.dataset.treeFacts).content.cloneNode(true));
+    panel.hidden = false;
+    panel.scrollTop = 0;
+    node.setAttribute('aria-describedby', panel.id);
+    const bounds = wrapper.getBoundingClientRect();
+    const card = node.getBoundingClientRect();
+    const left = card.right - bounds.left + 10;
+    panel.style.left = `${Math.max(0, Math.min(left + panel.offsetWidth <= bounds.width ? left : card.left - bounds.left - panel.offsetWidth - 10, bounds.width - panel.offsetWidth))}px`;
+    panel.style.top = `${Math.max(0, Math.min(card.top - bounds.top, bounds.height - panel.offsetHeight))}px`;
+  };
   svg.addEventListener('pointerover', (event) => {
     const node = event.target.closest('.people-tree-person-link');
-    if (node) highlightPerson(node);
+    if (node) showFacts(node);
   });
   svg.addEventListener('pointerout', (event) => {
     const node = event.target.closest('.people-tree-person-link');
-    if (node && !node.contains(event.relatedTarget)) highlightPerson(null);
+    if (node && !node.contains(event.relatedTarget)) scheduleHide();
   });
+  svg.addEventListener('focusin', (event) => {
+    const node = event.target.closest('.people-tree-person-link');
+    if (node) showFacts(node);
+  });
+  wrapper.addEventListener('focusout', scheduleHide);
+  panel.addEventListener('pointerenter', () => clearTimeout(hideTimer));
+  panel.addEventListener('pointerleave', scheduleHide);
+  wrapper.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') hideFacts();
+  });
+  wrapper.querySelector('.people-tree').addEventListener('scroll', hideFacts);
   const [viewWidth, viewHeight] = svg.getAttribute('viewBox').split(/\s+/).slice(2).map(Number);
   const viewport = wrapper.querySelector('.people-tree');
   let scale = 1;

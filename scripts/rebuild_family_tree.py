@@ -9,7 +9,9 @@ import argparse
 from pathlib import Path
 import sys
 from family_graph import build, load_inputs
-from family_graph.export import apply, serialize
+from family_graph.export import ConcurrentChange, apply, serialize
+
+CONCURRENT_CHANGE = 75
 
 
 def explain(result, query):
@@ -69,6 +71,9 @@ def main(argv=None):
             print('Wrote validated family graph to data/tree.json.')
         else:
             print('Read-only: no files changed. Use --apply to write data/tree.json.')
+    except ConcurrentChange as exc:
+        print(f'Reconstruction failed: {exc}', file=sys.stderr)
+        return CONCURRENT_CHANGE
     except (ValueError, OSError, KeyError, TypeError) as exc:
         print(f'Reconstruction failed: {exc}', file=sys.stderr)
         return 1

@@ -475,7 +475,7 @@
     "scripts/family_graph/__init__.py": "sha256:649f8e410779bdbf9eb2cbabebe04ec849ddd59336bb896d175723bf97bb679d",
     "scripts/family_graph/constraints.py": "sha256:c412aeffd7b96438d8fb229e23ecefcb83692138c9811be0fe516e2a47c5af6b",
     "scripts/family_graph/dates.py": "sha256:35bd355695d84ae6c7e3639c699acac40634ef7bd20b73a1faad29dc8d9f5684",
-    "scripts/family_graph/export.py": "sha256:c86542f0a8dbd2c2451c5a550a67306d39ca2d9d239a15a1ff2009478c6de7ad",
+    "scripts/family_graph/export.py": "sha256:bd61e78b6742eac397e4497aefe08f196e96992ce936b533f5a81e2ecd1e044c",
     "scripts/family_graph/graph.py": "sha256:fff0514ae1344bc00a87995971e4a8b44cda0a49ad8e7c1d8adaae897a7be525",
     "scripts/family_graph/model.py": "sha256:9f95df66618a415267af155262109b142c52284b02daae760d5b95ae86d7560c",
     "scripts/family_graph/names.py": "sha256:388a00a3df239db0bc2e25adc0e757f5e218ebfdb35018fe86b1ad7b8f4dd904",
@@ -486,12 +486,12 @@
     "scripts/family_graph/scoring.py": "sha256:812d1f393a631e3880550b552d8e88d46d2959aa7ec8ac09fb739d3e4676d2c0",
     "scripts/family_graph/sources.py": "sha256:c3f6667c133a1e7e38c5f41c75bb8dc2cb1a11426123ce24d2aa55e3c2ab045c",
     "scripts/place_names.py": "sha256:f3f5ebba3bb0135da3397062bac5436ac9f389fc6b4bffc5b10735036c449afa",
-    "scripts/rebuild_family_tree.py": "sha256:4508f7515234ebec1eca9071971cc39414a24d4eac24487dff951394cd684319",
+    "scripts/rebuild_family_tree.py": "sha256:ef93db0eebe5f58523ad4938ab207f34509361ce35f3c92344c10577c2db9845",
     "scripts/search_facts_by_name.py": "sha256:0977c927f94b6675635ea6f459d7cb0b8922ad185cb56b1fe1ff84cd7375aed9",
     "scripts/search_places_by_name.py": "sha256:2034da7ef86d2016e9d546f89100e74977cd68d2db5ddbe235ff4045f2ce60ec",
     "scripts/validate_facts.py": "sha256:55ae6062aab59d96ef0f6bfc6b2a1602e111e19b5aab302150cf9778d57557f9"
   },
-  "fingerprint": "sha256:bc4a336a783c208983167901acee3e5735369bb441edca90ea5edd2f0fbbdf29",
+  "fingerprint": "sha256:891e62eca032c5dc569a22c6f27b99c6ad4804ff65c171c85ea1d08717073eeb",
   "evidence": {
     "facts": {
       "sources": [
