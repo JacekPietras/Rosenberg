@@ -76,11 +76,11 @@ contribute additional evidence. Informative prose-only actors can supply
 context records without creating family edges. Confirmed IDs in textual facts
 are recognized directly. A capped full-relative-name rarity adjustment uses
 factual source frequencies; it is not a historical population estimate.
-The diagram defaults to parent/child and spouse lines; **show kins** reveals
-sibling and other kin lines as well. Children with the same recorded parents
+The diagram defaults to parent/child and spouse lines; hovering over or focusing
+a person reveals their sibling and other kin lines as well. Children with the same recorded parents
 share a branch. In the default view, married parents use only the identifiable
 father's stem for shared children; both parent assertions remain in the evidence
-panel and return when **show kins** is enabled. The initial merge threshold is 85%, with
+panel and appear when either connected person is hovered over or focused. The initial merge threshold is 85%, with
 competing-candidate and cluster checks. Estimates are **uncalibrated**, not
 measured historical accuracy. The tree stores comparison probabilities, feature
 contributions, rejected alternatives, and provenance; tree and person pages

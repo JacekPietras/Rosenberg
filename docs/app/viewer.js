@@ -2,8 +2,8 @@ import { buildRelationshipGraph, resolvePerson, remapSourcePerson } from './data
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
-import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=107';
-import { renderActiveScreen } from './screens/router-view.js?v=9';
+import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=108';
+import { renderActiveScreen } from './screens/router-view.js?v=10';
 import { createDocumentRenderer } from './screens/documents.js?v=7';
 import { setupRecordLabelSelector } from './screens/record-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
@@ -24,6 +24,7 @@ import { documentTitle, documentYear, bookSortYear } from './rendering/document-
 import { createLanguageRenderer } from './rendering/languages.js';
 import { createCitationIndex } from './data/citations.js';
 import { entryAnchor, documentNavigationUrl } from './rendering/navigation.js';
+import { keepEntryInView } from './components/entry-scroll.js';
 import { hrrBuildWarp as buildMapWarp, hrrBuildInverseWarp as buildInverseMapWarp, hrrCalibrationKeys as mapCalibrationKeys, HRR_MAP_NATIVE_WIDTH as mapNativeWidth, HRR_MAP_NATIVE_HEIGHT as mapNativeHeight } from './map/warp.js';
 
 export function startViewer({ store, repository, preferences, savePreferences: persistPreferences }) {
@@ -42,19 +43,12 @@ function savePreferences() {
     showFacts: state.showFacts,
     familyView: state.familyView,
     familyFocus: state.familyFocus,
-    showKins: state.showKins,
     darkMode: state.darkMode,
   });
 }
 const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, record: preferences.record, recordSource: null, navigationRecord: null, navigationRecordSource: null, recordLabels: preferences.recordLabels, hiddenRecordLabels: preferences.hiddenRecordLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, imageRegions: preferences.imageRegions || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedDocumentsYear: null };
 state.familyView = preferences.familyView || 'facts';
 state.familyFocus = preferences.familyFocus || null;
-state.showKins = preferences.showKins === true;
-state.changeShowKins = async (showKins) => {
-  state.showKins = showKins;
-  savePreferences();
-  await renderActive();
-};
 state.changeFamilyFocus = async (focus) => {
   state.familyFocus = focus;
   savePreferences();
@@ -1253,11 +1247,12 @@ function restoreRecord(paths) {
   if (target) window.scrollTo(0, target.getBoundingClientRect().top + window.scrollY - 104);
 }
 
+let entryScrollCleanup = null;
 function scrollToEntryHash() {
   const hash = decodeURIComponent(location.hash.slice(1));
   if (!hash) return;
   const target = document.getElementById(hash);
-  if (target) target.scrollIntoView({ block: 'start' });
+  if (target) entryScrollCleanup = keepEntryInView(target, $('#content'));
 }
 
 const markupRenderer = createMarkupRenderer({ state });
@@ -1325,6 +1320,8 @@ const mapScreen = createMapScreen({
 });
 
 async function renderActive() {
+  entryScrollCleanup?.();
+  entryScrollCleanup = null;
   if (state.familyGraph?.generated && (repository.revision || 0) !== state.familyRepositoryRevision) {
     return dataLoader.loadAll();
   }

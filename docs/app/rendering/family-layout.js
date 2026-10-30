@@ -148,7 +148,7 @@ export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nod
     const slots = layers.map(() => 0), outer = { left: 0, right: 0 };
     const allocate = (rank) => slots[rank]++;
     const familySlots = new Map();
-    const routes = componentEdges.filter((edge) => !hiddenParents.has(edge)).map((edge) => {
+    const routes = componentEdges.map((edge) => {
       const a = cards.get(edge.person), b = cards.get(edge.of);
       if (edge.type === 'parent' && b.rank === a.rank + 1) {
         // Children with precisely the same recorded parents can share a bus.
@@ -201,7 +201,7 @@ export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nod
           [x, endY], [endX, endY], [endX, b.y]];
         if (edge.type !== 'parent') label = [(x + startX) / 2, startY - 6];
       }
-      return { edge, points: points.map(([x, y]) => [x + leftSpace, y]), label: label && [label[0] + leftSpace, label[1]] };
+      return { edge, hidden: hiddenParents.has(edge), points: points.map(([x, y]) => [x + leftSpace, y]), label: label && [label[0] + leftSpace, label[1]] };
     });
     return { cards: [...cards.values()].map((card) => ({ ...card, x: card.x + leftSpace })), connectors,
       width: cardWidth + leftSpace + rightSpace, height: rowY.at(-1) + rowHeights.at(-1) + 16 };

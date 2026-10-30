@@ -24,14 +24,13 @@ export function loadPreferences(storage) {
       showFacts: raw.showFacts !== false,
       familyView: raw.familyView === 'with-guesses' ? 'with-guesses' : 'facts',
       familyFocus: typeof raw.familyFocus === 'string' ? raw.familyFocus : null,
-      showKins: raw.showKins === true,
       darkMode: raw.darkMode !== false,
     };
   } catch {
     return {
       active: null, place: null, person: null, record: null,
       recordLabels: [], hiddenRecordLabels: null, sealNames: [], sealType: null, imageRegions: [],
-      language: 'english', showFacts: true, darkMode: true, familyView: 'facts', showKins: false,
+      language: 'english', showFacts: true, darkMode: true, familyView: 'facts',
     };
   }
 }

@@ -11,28 +11,30 @@ const { createMarkupRenderer } = await import(await moduleUrl(new URL('../docs/a
 const person = (id, children = [], extra = {}) => ({ id, name: id, children, ...extra });
 const attr = (markup, name) => markup.match(new RegExp(` ${name}="([^"]*)"`))?.[1];
 
-function geometry(people, tree, view = 'facts', showKins = true) {
-  const html = renderPeopleTree(people, [], { graph: buildRelationshipGraph(people, { tree, view, verification: { valid: true } }), showKins });
+function geometry(people, tree, view = 'facts', includeHoverEdges = true) {
+  const html = renderPeopleTree(people, [], { graph: buildRelationshipGraph(people, { tree, view, verification: { valid: true } }) });
   const cards = [...html.matchAll(/<a class="people-tree-person-link"[^>]*>(.*?)<\/a>/g)].map(([markup]) => {
     const rect = markup.match(/<rect [^>]*>/)[0];
     return { id: decodeURIComponent(attr(markup, 'href').slice('?person='.length)),
       x: +attr(rect, 'x'), y: +attr(rect, 'y'), w: +attr(rect, 'width'), h: +attr(rect, 'height') };
   });
-  const connections = [...html.matchAll(/<path class="people-tree-(parent|spouse|sibling|kin)"[^>]*>/g)].map(([markup, type]) => {
-    const segments = [];
-    let x, y;
-    for (const [, command, value] of attr(markup, 'd').matchAll(/([MVH])([\d.]+(?: [\d.]+)?)/g)) {
-      const numbers = value.split(' ').map(Number);
-      if (command === 'M') [x, y] = numbers;
-      else {
-        const nextX = command === 'H' ? numbers[0] : x;
-        const nextY = command === 'V' ? numbers[0] : y;
-        segments.push({ x1: x, y1: y, x2: nextX, y2: nextY });
-        [x, y] = [nextX, nextY];
+  const connections = [...html.matchAll(/<g class="people-tree-edge"([^>]*)>(<path class="people-tree-(parent|spouse|sibling|kin)"[^>]*>)/g)]
+    .filter(([, attributes]) => includeHoverEdges || !attributes.includes('data-tree-hover-only'))
+    .map(([, , markup, type]) => {
+      const segments = [];
+      let x, y;
+      for (const [, command, value] of attr(markup, 'd').matchAll(/([MVH])([\d.]+(?: [\d.]+)?)/g)) {
+        const numbers = value.split(' ').map(Number);
+        if (command === 'M') [x, y] = numbers;
+        else {
+          const nextX = command === 'H' ? numbers[0] : x;
+          const nextY = command === 'V' ? numbers[0] : y;
+          segments.push({ x1: x, y1: y, x2: nextX, y2: nextY });
+          [x, y] = [nextX, nextY];
+        }
       }
-    }
-    return { type, person: attr(markup, 'data-person'), of: attr(markup, 'data-of'), segments };
-  });
+      return { type, person: attr(markup, 'data-person'), of: attr(markup, 'data-of'), segments };
+    });
   return { html, cards, connections, paths: connections.filter((edge) => edge.type === 'parent').map((edge) => edge.segments),
     spouses: connections.filter((edge) => edge.type === 'spouse').map((edge) => edge.segments) };
 }
@@ -170,7 +172,7 @@ test('simple view keeps shared children on their married fathers branch', () => 
   const a = layout.cards.find((card) => card.id === 'a'), b = layout.cards.find((card) => card.id === 'b');
   assert.equal(a.y, b.y);
   assert.equal(Math.abs(a.x - b.x), a.w + 52, 'shared children stay adjacent');
-  assert.equal(geometry(people).paths.length, 5, 'show kins restores both parent stems');
+  assert.equal(geometry(people).paths.length, 5, 'hover connections include both parent stems');
   assert.match(layout.html, /Elisabeth von Erligheim/);
   assert.doesNotMatch(layout.html, /entity-relationships|identity-comparisons/, 'tree has no evidence panels below it');
 });
@@ -263,10 +265,10 @@ test('sibling and kin assertions connect their single cards without inferred par
   const layout = geometry(people);
   const graph = buildRelationshipGraph(people, { verification: { valid: true } });
   const defaultHtml = renderPeopleTree(people, [], { graph });
-  assert.match(defaultHtml, /data-show-kins> show kins/);
-  assert.doesNotMatch(defaultHtml, /<path class="people-tree-(sibling|kin)"/);
+  assert.doesNotMatch(defaultHtml, /data-show-kins|show kins/);
+  assert.equal((defaultHtml.match(/data-tree-hover-only="true"/g) || []).length, 2);
+  assert.equal(geometry(people, undefined, 'facts', false).connections.length, 0);
   assert.equal((defaultHtml.match(/class="people-tree-person-link"/g) || []).length, 3);
-  assert.match(layout.html, /data-show-kins checked/);
   assertLayout(layout);
   assert.equal(layout.cards.length, 3);
   assert.equal(layout.paths.length, 0);

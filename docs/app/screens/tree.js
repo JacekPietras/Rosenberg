@@ -5,7 +5,7 @@ import { renderFactsView } from '../components/facts_view.js?v=6';
 import { createMarkupRenderer } from '../rendering/markup.js';
 import { documentNavigationUrl } from '../rendering/navigation.js';
 import { dateSortValue } from '../rendering/dates.js';
-import { layoutFamilyGraph } from '../rendering/family-layout.js?v=3';
+import { layoutFamilyGraph } from '../rendering/family-layout.js?v=4';
 
 function svgEscape(value) {
   return String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
@@ -53,7 +53,7 @@ function personFacts(person, documentRecords, people) {
   return facts.sort((a, b) => dateSortValue(a.date) - dateSortValue(b.date));
 }
 
-export function renderPeopleTree(people = [], documents = [], { graph, focus, showKins = false, inlineMarkup = createMarkupRenderer({ state: { people } }).inlineMarkup } = {}) {
+export function renderPeopleTree(people = [], documents = [], { graph, focus, inlineMarkup = createMarkupRenderer({ state: { people } }).inlineMarkup } = {}) {
   graph ||= buildRelationshipGraph(Array.isArray(people) ? people : []);
   graph = focusFamilyGraph(graph, focus);
   const records = graph.records.filter((person) => person?.name);
@@ -115,16 +115,15 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, sh
   });
   const nodeHeightFor = (person) => Math.max(44, 25 + (personLines(person).length - 1) * 18 + 10);
   const nodeWidth = 220;
-  const visibleEdges = graph.edges.filter((edge) => showKins || ['parent', 'spouse'].includes(edge.type));
-  const { cards, connectors, width, height } = layoutFamilyGraph(records, visibleEdges, {
-    nodeWidth, nodeHeight: nodeHeightFor, simplifyParents: !showKins,
+  const { cards, connectors, width, height } = layoutFamilyGraph(records, graph.edges, {
+    nodeWidth, nodeHeight: nodeHeightFor, simplifyParents: true,
   });
-  const edges = connectors.map(({ edge, points, label }) => {
+  const edges = connectors.map(({ edge, points, label, hidden }) => {
     const path = points.map(([x, y], index) => !index ? `M${x} ${y}`
       : points[index - 1][1] === y ? `H${x}` : `V${y}`).join(' ');
     const title = `${records.find((person) => person._treeKey === edge.person).name} · ${edge.type} · ${records.find((person) => person._treeKey === edge.of).name}`;
     const labelText = edge.type === 'kin' ? edge.term || 'kin' : edge.type === 'spouse' && !graph.generated ? 'wife' : edge.type;
-    return `<g class="people-tree-edge" data-person="${svgEscape(edge.person)}" data-of="${svgEscape(edge.of)}"><path class="people-tree-${edge.type}" data-person="${svgEscape(edge.person)}" data-of="${svgEscape(edge.of)}" data-identity="${edge.inferred ? 'inferred' : 'anchored'}" fill="none" d="${path}"><title>${svgEscape(title)}${edge.term ? ` (${svgEscape(edge.term)})` : ''}</title></path>${label ? `<text class="people-tree-edge-label" x="${label[0]}" y="${label[1]}">${svgEscape(labelText)}</text>` : ''}</g>`;
+    return `<g class="people-tree-edge"${hidden || !['parent', 'spouse'].includes(edge.type) ? ' data-tree-hover-only="true"' : ''} data-person="${svgEscape(edge.person)}" data-of="${svgEscape(edge.of)}"><path class="people-tree-${edge.type}" data-person="${svgEscape(edge.person)}" data-of="${svgEscape(edge.of)}" data-identity="${edge.inferred ? 'inferred' : 'anchored'}" fill="none" d="${path}"><title>${svgEscape(title)}${edge.term ? ` (${svgEscape(edge.term)})` : ''}</title></path>${label ? `<text class="people-tree-edge-label" x="${label[0]}" y="${label[1]}">${svgEscape(labelText)}</text>` : ''}</g>`;
   });
   const factsTemplates = [];
   const nodes = cards.map(({ person, x, y }, index) => {
@@ -135,7 +134,7 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, sh
     const href = `?person=${encodeURIComponent(person.id || (person._evidence ? person._treeKey : person.name))}`;
     return `<a class="people-tree-person-link" data-person="${svgEscape(person._treeKey)}" data-tree-facts="${index}" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${x}" y="${y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${x + nodeWidth / 2}" y="${y + 25}" text-anchor="middle">${text}</text></g></a>`;
   }).join('');
-  return `${relationshipControls(graph, { focus })}<label><input type="checkbox" data-show-kins${showKins ? ' checked' : ''}> show kins</label><section class="people-tree-wrap" aria-label="Family tree viewer"><div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div><aside class="people-tree-facts" id="people-tree-facts" aria-label="Person facts" hidden></aside>${factsTemplates.join('')}</section>`;
+  return `${relationshipControls(graph, { focus })}<section class="people-tree-wrap" aria-label="Family tree viewer"><div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div><aside class="people-tree-facts" id="people-tree-facts" aria-label="Person facts" hidden></aside>${factsTemplates.join('')}</section>`;
 }
 
 export function setupPeopleTreeZoom(root = document) {
@@ -173,6 +172,10 @@ export function setupPeopleTreeZoom(root = document) {
     if (node) showFacts(node);
   });
   svg.addEventListener('pointerout', (event) => {
+    const node = event.target.closest('.people-tree-person-link');
+    if (node && !node.contains(event.relatedTarget)) highlightPerson(null);
+  });
+  svg.addEventListener('focusout', (event) => {
     const node = event.target.closest('.people-tree-person-link');
     if (node && !node.contains(event.relatedTarget)) highlightPerson(null);
   });
