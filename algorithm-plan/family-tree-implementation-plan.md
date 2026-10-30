@@ -1,5 +1,10 @@
 # Implementation plan for family reconstruction in Rosenberg
 
+**Later requirements:** [Probability matching](probability-matching-requirements.md)
+supersedes the optional-guesses and generated-people.json proposals below.
+The current request is weighted matching across all source people, globally
+visible probability parameters, and generated output in `tree.json`.
+
 This document turns [the algorithm plan](family-tree-algorithm-plan.md) and
 [the research findings](family-tree-algorithm-research.md) into a proposed
 implementation for this repository. All new paths, commands, and schemas below

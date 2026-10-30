@@ -1,5 +1,10 @@
 # Family tree: final implementation
 
+**Pending requirements:** [Probability matching](probability-matching-requirements.md)
+records the user's requested broader matcher, always-weighted guesses, and
+globally visible parameters. Those requirements go beyond the implementation
+described here; its existing matching scores are not calibrated probabilities.
+
 The implemented system reconstructs relationships from typed source assertions,
 keeps uncertain identities visible, and exports the complete source-person
 graph in `data/tree.json`. The confirmed registry in `data/people.json` contains

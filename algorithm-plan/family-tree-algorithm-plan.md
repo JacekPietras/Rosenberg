@@ -1,5 +1,11 @@
 # Plan: rebuild the family tree from facts and optional guesses
 
+**Later requirements:** [Probability matching](probability-matching-requirements.md)
+records the user's current direction: always include guesses with lower weight,
+match all source people using combined evidence, show global probability
+parameters, and keep generated results in `tree.json`. It supersedes conflicting
+proposals in this earlier plan.
+
 ## Objective
 
 Build an evidence graph with identity resolution, then generate the family tree
