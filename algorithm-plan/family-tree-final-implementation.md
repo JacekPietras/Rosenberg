@@ -306,7 +306,8 @@ accepted generated edges. The browser does not rerun Python identity matching.
 
 The active loader reads `people.json` and `tree.json` separately and passes the
 selected view explicitly. A missing or stale local tree triggers the Python
-rebuild and verified reload, with a manual rebuild action available as well. A saved preference
+rebuild and verified reload. A retry action appears only when that process fails;
+verified graphs have no rebuild button. A saved preference
 cannot enable an unavailable guesses view. Local and published source discovery
 include nested JSON and watch registry/name/place/engine inputs plus the
 generated tree for refresh. The output is never ingested as source evidence.

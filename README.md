@@ -56,10 +56,10 @@ may later prove to be the same person. The diagram displays each identity once,
 including people with multiple spouses or shared descendants. The viewer exposes source
 links, identity uncertainty, and the available evidence modes. The local viewer
 automatically rebuilds relationships when source edits make them stale, then
-reloads and verifies the result. Its **Rebuild relationships** button also runs
-the same validated export, preserving the existing evidence views and search
-configuration. Restart an already running local server once after updating the
-viewer to enable this action. The published read-only site links to the local
+reloads and verifies the result, preserving the existing evidence views and
+search configuration. A **Retry rebuild** button appears only if automatic
+rebuilding fails. Restart an already running local server once after updating
+the viewer to enable automatic rebuilding. The published read-only site links to the local
 viewer when a rebuild is needed.
 
 The registry and generated tree schemas are documented in [rules/json-formats.md](rules/json-formats.md).

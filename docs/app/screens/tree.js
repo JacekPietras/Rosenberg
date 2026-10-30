@@ -1,5 +1,5 @@
 import { buildRelationshipGraph, focusFamilyGraph } from '../data/relationships.js?v=4';
-import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=3';
+import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=4';
 import { layoutFamilyGraph } from '../rendering/family-layout.js?v=1';
 
 function svgEscape(value) {

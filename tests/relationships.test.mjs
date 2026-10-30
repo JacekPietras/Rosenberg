@@ -238,6 +238,7 @@ test('stale local evidence automatically rebuilds once and reloads the verified 
   assert.equal(state.familyGraph.edges.length, 1);
   assert.equal(state.familyView, 'with-guesses');
   assert.equal(state.familyGraph.canRebuild, true);
+  assert.doesNotMatch(renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph }), /data-family-rebuild>/);
   assert.deepEqual(counts(), { renders: 1, progress: 1 });
 });
 
@@ -254,11 +255,12 @@ test('rebuild failures retain hidden stale edges and a working retry action', as
   assert.equal(state.familyGraph.valid, false);
   assert.equal(state.familyGraph.edges.length, 0);
   const html = renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph });
-  assert.match(html, /data-family-rebuild/);
+  assert.match(html, /data-family-rebuild>Retry rebuild/);
   assert.match(html, /Invalid source date/);
   await loader.rebuildFamilyGraph();
   assert.equal(rebuilds, 2);
   assert.equal(state.familyGraph.valid, true);
+  assert.doesNotMatch(renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph }), /data-family-rebuild>/);
 });
 
 test('a second input change cannot cause an automatic rebuild loop', async () => {
@@ -315,6 +317,8 @@ test('the rebuild button disables itself and reports a failed attempt with retry
   const message = { textContent: '' };
   const graph = buildRelationshipGraph(data.people, { verification: { valid: true } });
   graph.canRebuild = true;
+  graph.valid = false;
+  graph.rebuildError = 'Try again';
   const content = { innerHTML: '', querySelector: (selector) => selector === '[data-family-rebuild]' ? button
     : selector === '[data-family-rebuild-status]' ? message : null };
   const state = { active: 'tree', personRecords: data.people, documents: data.documents, familyGraph: graph,
