@@ -73,7 +73,7 @@ export function factPersonMatch(fact, query, people = []) {
 }
 
 // Explicit IDs stay specific; plain names use the generic name route.
-export function renderFactText(fact, { people = [], inlineMarkup }) {
+export function renderFactText(fact, { people = [], personNames = [], inlineMarkup }) {
   const peopleById = new Map(people.filter((person) => person.id).map((person) => [person.id, person]));
   if (isTypedFact(fact)) {
     return typedText(fact, (value, designations) => {
@@ -91,16 +91,16 @@ export function renderFactText(fact, { people = [], inlineMarkup }) {
     links.push(`<a class="person-link" href="?person=${encodeURIComponent(person.id)}">${inlineMarkup(person.name, false)}</a>`);
     return marker;
   });
-  const names = [...new Set(people.map((person) => person.name).filter(Boolean))]
+  const names = [...new Set([...people.map((person) => person.name), ...personNames].filter(Boolean))]
     .sort((left, right) => right.length - left.length)
     .map(escapePattern);
   if (names.length) {
     const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?:${names.join('|')})(?![\\p{L}\\p{N}])`, 'giu');
     text = text.replace(pattern, (match) => {
-      const person = people.find((item) => item.name.toLocaleLowerCase() === match.toLocaleLowerCase());
-      if (!person) return match;
+      const name = [...people.map((person) => person.name), ...personNames]
+        .find((name) => name.toLocaleLowerCase() === match.toLocaleLowerCase());
       const marker = `\u0001FACTPERSON${links.length}\u0002`;
-      links.push(`<a class="person-link" href="?person=${encodeURIComponent(person.name)}">${inlineMarkup(match, false)}</a>`);
+      links.push(`<a class="person-link" href="?person=${encodeURIComponent(name)}">${inlineMarkup(match, false)}</a>`);
       return marker;
     });
   }

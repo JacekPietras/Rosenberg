@@ -1,8 +1,10 @@
-import { renderFactText, factDate } from '../rendering/facts.js?v=6';
+import { renderFactText, factDate, isTypedFact } from '../rendering/facts.js?v=7';
 import { formatDate } from '../rendering/dates.js';
 import { escapeHtml } from '../rendering/html.js';
 
-export function renderFactsView(facts, { people = [], inlineMarkup, itemClass = () => '', defaultDate = '', listClass = '', sourceHref = () => '' }) {
+export function renderFactsView(facts, { people = [], personNames = [], inlineMarkup, itemClass = () => '', defaultDate = '', listClass = '', sourceHref = () => '' }) {
+  const knownNames = [...personNames, ...facts.filter(isTypedFact).flatMap((fact) => [fact.person, fact.of])
+    .filter((value) => typeof value === 'string' && !people.some((person) => person.id === value))];
   const classes = ['facts', 'facts-view', listClass].filter(Boolean).join(' ');
   const label = listClass === 'guesses-view' ? ' aria-label="Guesses"' : '';
   return `<ul class="${classes}"${label}>${facts.map((fact, index) => {
@@ -13,6 +15,6 @@ export function renderFactsView(facts, { people = [], inlineMarkup, itemClass = 
       : showDate ? '<span class="fact-date">Undated</span>' : '<span class="fact-date" aria-hidden="true"></span>';
     const href = sourceHref(fact, index);
     const sourceLink = href ? `<a class="fact-source-link" href="${escapeHtml(href)}" aria-label="Open fact source" title="Open fact source"></a>` : '';
-    return `<li${href ? ' data-fact-source' : ''}${itemClass(fact, index)}>${dateMarkup}<span class="fact-text">${renderFactText(fact, { people, inlineMarkup })}</span>${sourceLink}</li>`;
+    return `<li${href ? ' data-fact-source' : ''}${itemClass(fact, index)}>${dateMarkup}<span class="fact-text">${renderFactText(fact, { people, personNames: knownNames, inlineMarkup })}</span>${sourceLink}</li>`;
   }).join('')}</ul>`;
 }

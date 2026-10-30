@@ -1,6 +1,6 @@
 import { imageCardMarkup } from '../rendering/images.js?v=13';
-import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rendering/facts.js?v=6';
-import { renderFactsView } from '../components/facts_view.js?v=6';
+import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rendering/facts.js?v=7';
+import { renderFactsView } from '../components/facts_view.js?v=7';
 import { findPlaceByName } from '../data/entities.js?v=87';
 import { resolvePerson, resolveEvidencePointer } from '../data/relationships.js?v=7';
 import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=7';
@@ -22,6 +22,8 @@ export function createEntityScreens({
   displayedLanguagesFor,
   imageMarkup,
 }) {
+  const factPersonNames = () => [...(state.familyGraph?.valid ? state.familyGraph.records.map((person) => person.name) : []),
+    ...(!getPeople().some((person) => person.id === state.person) && state.person && !state.person.startsWith('@evidence/') ? [state.person] : [])];
   const fields = ['title', 'source', 'german', 'latin', 'english', 'facts'];
 
   const findByName = (entities, name) => entities.find((entity) => entity.name.toLocaleLowerCase() === String(name).toLocaleLowerCase());
@@ -57,6 +59,7 @@ export function createEntityScreens({
     if (!facts.length) return '';
     const items = renderFactsView(facts, {
       people,
+      personNames: factPersonNames(),
       inlineMarkup,
       sourceHref: (fact) => fact.sourceHref,
       itemClass: (fact) => fact.personMatch === 'ambiguous' ? ' class="entity-fact-ambiguous"' : '',
@@ -122,7 +125,7 @@ export function createEntityScreens({
         const doc = getDocuments().get(source.path);
         const fact = resolveEvidencePointer(doc, source.pointer);
         const index = Number(source.pointer.match(/\/entries\/(\d+)/)?.[1] || 0);
-        return `<article class="document"><p class="entry-date">${source.pointer.includes('/guesses/') ? 'Guess · ' : ''}${escapeHtml(formatDate(date))}</p>${renderFactsView([{ ...(typeof fact === 'string' ? { text: fact } : fact), date }], { people, inlineMarkup, sourceHref: () => documentNavigationUrl(source.path, index) })}<p class="source"><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></p></article>`;
+        return `<article class="document"><p class="entry-date">${source.pointer.includes('/guesses/') ? 'Guess · ' : ''}${escapeHtml(formatDate(date))}</p>${renderFactsView([{ ...(typeof fact === 'string' ? { text: fact } : fact), date }], { people, personNames: factPersonNames(), inlineMarkup, sourceHref: () => documentNavigationUrl(source.path, index) })}<p class="source"><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></p></article>`;
       }).join('');
       return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2><p>${node.status === 'contextual' ? 'Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.' : 'Source person; correspondence with other mentions remains open.'} No permanent person ID has been created.</p></article>${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, node.key)}<h3>Source attestations</h3>${attestations}`;
     }

@@ -1,4 +1,4 @@
-import { renderFactsView } from '../components/facts_view.js?v=3';
+import { renderFactsView } from '../components/facts_view.js?v=7';
 
 export function createDocumentRenderer({
   state,
@@ -21,11 +21,13 @@ export function createDocumentRenderer({
     const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
     const facts = state.showFacts && entry.facts?.length ? renderFactsView(entry.facts, {
       people: getPeople(),
+      personNames: state.familyGraph?.valid ? state.familyGraph.records.map((person) => person.name) : [],
       inlineMarkup,
       defaultDate: /^data\/(?:books|notes)\//.test(path) ? '' : Object.hasOwn(entry, 'date') ? entry.date : documentDate,
     }) : '';
     const guesses = state.showFacts && entry.guesses?.length ? renderFactsView(entry.guesses, {
       people: getPeople(),
+      personNames: state.familyGraph?.valid ? state.familyGraph.records.map((person) => person.name) : [],
       inlineMarkup,
       listClass: 'guesses-view',
       defaultDate: /^data\/(?:books|notes)\//.test(path) ? '' : Object.hasOwn(entry, 'date') ? entry.date : documentDate,

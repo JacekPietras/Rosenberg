@@ -1,7 +1,7 @@
 import { buildRelationshipGraph, focusFamilyGraph, resolveEvidencePointer } from '../data/relationships.js?v=7';
 import { relationshipControls } from '../rendering/relationships.js?v=7';
-import { factText, factPersonMatch, factDate } from '../rendering/facts.js?v=6';
-import { renderFactsView } from '../components/facts_view.js?v=6';
+import { factText, factPersonMatch, factDate } from '../rendering/facts.js?v=7';
+import { renderFactsView } from '../components/facts_view.js?v=7';
 import { createMarkupRenderer } from '../rendering/markup.js';
 import { documentNavigationUrl } from '../rendering/navigation.js';
 import { dateSortValue } from '../rendering/dates.js';
@@ -130,7 +130,7 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, in
     const facts = personFacts(person, documentRecords, people);
     const evidence = [false, true].map((isGuess) => {
       const items = facts.filter((fact) => fact.isGuess === isGuess);
-      return items.length ? renderFactsView(items, { people, inlineMarkup, listClass: isGuess ? 'guesses-view' : '', sourceHref: (fact) => fact.sourceHref }) : '';
+      return items.length ? renderFactsView(items, { people, personNames: graph.records.map((person) => person.name), inlineMarkup, listClass: isGuess ? 'guesses-view' : '', sourceHref: (fact) => fact.sourceHref }) : '';
     }).join('');
     factsTemplates.push(`<template data-tree-facts="${index}">${evidence || '<p class="status">No recorded facts or guesses for this person.</p>'}</template>`);
     const nodeHeight = nodeHeightFor(person);

@@ -78,7 +78,7 @@ test('name routes aggregate source identities while person and evidence IDs sele
   const people = [{ id: 'hans_1513', name }, { id: 'hans_1516', name }];
   const path = 'data/documents/hans.json';
   const entries = [
-    { date: '1359', facts: [{ type: 'title', person: name, personTitle: ['Witness in 1359'] }] },
+    { date: '1359', facts: [{ text: `${name} appeared as a witness in 1359.` }] },
     { date: '1513', facts: [{ type: 'title', person: 'hans_1513', personTitle: ['Witness in 1513'] }] },
     { date: '1516', facts: [{ type: 'title', person: 'hans_1516', personTitle: ['Witness in 1516'] }] },
   ];
@@ -102,7 +102,8 @@ test('name routes aggregate source identities while person and evidence IDs sele
     displayedLanguagesFor: () => [],
   });
   const generic = renderPersonPage();
-  for (const year of ['1359', '1513', '1516']) assert.ok(generic.includes(`Witness in ${year}`));
+  for (const year of ['1513', '1516']) assert.ok(generic.includes(`Witness in ${year}`));
+  assert.match(generic, /href="\?person=Hans%20von%20Rosenberg">Hans von Rosenberg<\/a> appeared as a witness in 1359/);
   assert.match(generic, /3 mentions/);
   assert.doesNotMatch(generic, /Choose a person|Ambiguous name|Source attestations|source identities|Reconstructed relationships|No resolved relationships/);
 
@@ -116,7 +117,7 @@ test('name routes aggregate source identities while person and evidence IDs sele
   const evidence = renderPersonPage();
   assert.match(evidence, /Source attestations/);
   assert.match(evidence, /688 source identities|Reconstructed relationships/);
-  assert.match(evidence, /Witness in 1359/);
+  assert.match(evidence, /href="\?person=Hans%20von%20Rosenberg">Hans von Rosenberg<\/a> appeared as a witness in 1359/);
   assert.doesNotMatch(evidence, /Witness in 1513|Witness in 1516/);
 
   // A name remains generic even if just one generated source identity is available.
@@ -124,6 +125,20 @@ test('name routes aggregate source identities while person and evidence IDs sele
   state.familyGraph.records = records.slice(0, 1);
   assert.match(renderPersonPage(), /3 mentions/);
   assert.doesNotMatch(renderPersonPage(), /Source attestations/);
+});
+
+test('prose facts link unregistered names from typed facts and source identities', async () => {
+  const nameLink = /href="\?person=Hans%20von%20Rosenberg">Hans von Rosenberg<\/a> appeared as a witness/;
+  const book = JSON.parse(await readFile(new URL('../data/books/bidermann_1751.json', import.meta.url), 'utf8'));
+  const entry = book.entries.find((entry) => entry.facts?.some((fact) => fact.date === '1290' && fact.text === 'Hans von Rosenberg appeared as a witness in a document.'));
+  assert.match(renderFactsView(entry.facts, options), nameLink);
+  const prose = entry.facts.find((fact) => fact.date === '1290');
+  assert.match(renderFactsView([prose], { ...options, personNames: ['Hans von Rosenberg'] }), nameLink);
+  const { renderEntry } = createDocumentRenderer({
+    state: { showFacts: true, familyGraph: { valid: true, records: [{ name: 'Hans von Rosenberg' }] } },
+    escapeHtml, ...options, getPeople: () => options.people,
+  });
+  assert.match(renderEntry({ facts: [prose] }), nameLink);
 });
 
 test('shared facts view formats dates, groups repeated dates, and preserves person links', () => {
