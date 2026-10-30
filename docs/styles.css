@@ -191,6 +191,11 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .facts.facts-view { padding-left: 1rem; list-style: none; }
 .facts.facts-view li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: .25rem .75rem; align-items: baseline; padding: 0; }
 .fact-date { display: block; margin-bottom: .1rem; color: var(--muted); font-size: .78rem; }
+.facts-view li[data-fact-source] { position: relative; isolation: isolate; cursor: pointer; }
+.fact-source-link { position: absolute; inset: 0; z-index: 1; border-radius: 3px; }
+.fact-source-link:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.fact-source-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.facts-view li[data-fact-source] .fact-text a { position: relative; z-index: 2; }
 .fact-text { display: block; min-width: 0; }
 .entity-fact-ambiguous { opacity: .62; }
 .entity-section-title { margin-top: 2rem; }

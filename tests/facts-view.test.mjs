@@ -8,9 +8,10 @@ import { moduleUrl } from './browser-module.mjs';
 const { renderFactsView } = await import(await moduleUrl(new URL('../docs/app/components/facts_view.js', import.meta.url)));
 const { createDocumentRenderer } = await import(await moduleUrl(new URL('../docs/app/screens/documents.js', import.meta.url)));
 const { createEntityScreens } = await import(await moduleUrl(new URL('../docs/app/screens/entities.js', import.meta.url)));
-const { buildPersonPattern } = await import(await moduleUrl(new URL('../docs/app/data/entities.js', import.meta.url)));
+const { buildPersonPattern, buildPlacePattern } = await import(await moduleUrl(new URL('../docs/app/data/entities.js', import.meta.url)));
 const { escapeHtml } = await import(await moduleUrl(new URL('../docs/app/rendering/html.js', import.meta.url)));
 globalThis.window = { location: { hostname: 'example.github.io', pathname: '/Rosenberg/docs/' } };
+const { documentNavigationUrl } = await import(await moduleUrl(new URL('../docs/app/rendering/navigation.js', import.meta.url)));
 const options = { people: [{ id: 'eberhard', name: 'Eberhard' }], inlineMarkup: escapeHtml };
 
 test('ambiguous name pages list anchors while ID pages distinguish namesake effigies', async () => {
@@ -240,4 +241,48 @@ test('unregistered typed names have working generic person pages', () => {
   assert.match(html, /<h2>Unknown Arnold<\/h2>/);
   assert.match(html, /is designated Ritter/);
   assert.doesNotMatch(html, /Person not found/);
+});
+
+
+test('source links are optional, preserve inline links, and address source entries', () => {
+  const facts = [{ date: '1400', text: '[eberhard] held Boxberg.' }];
+  assert.doesNotMatch(renderFactsView(facts, options), /fact-source-link|data-fact-source/);
+  for (const path of ['data/books/example.json', 'data/documents/example.json', 'data/images/images.json']) {
+    const url = documentNavigationUrl(path, 2);
+    const html = renderFactsView(facts, { ...options, sourceHref: () => url });
+    assert.match(html, /<li data-fact-source>/);
+    assert.ok(html.includes(`class="fact-source-link" href="${escapeHtml(url)}"`));
+    assert.match(html, /aria-label="Open fact source"/);
+    assert.match(html, /href="\?person=eberhard"/);
+    assert.doesNotMatch(html, /<a[^>]*><a/, 'source and person links are separate anchors');
+    assert.doesNotMatch(html, />data\//, 'no visible source URLs added');
+  }
+});
+
+test('person and place fact rows link to the correct source entry after sorting', () => {
+  const people = options.people;
+  const documents = new Map([
+    ['data/books/example.json', { book: 'Example', entries: [{ facts: [{ date: '1400', text: '[eberhard] held Boxberg.' }] }] }],
+    ['data/documents/example.json', { date: '1380', entries: [{}, { facts: [{ text: '[eberhard] visited Boxberg.' }] }] }],
+    ['data/images/images.json', { entries: [{ facts: [{ date: '1390', text: '[eberhard] is depicted at Boxberg.' }] }] }],
+  ]);
+  const state = { person: 'eberhard' };
+  const screens = createEntityScreens({
+    state, getPeople: () => people, getPlaces: () => [{ id: 'boxberg', name: 'Boxberg', variations: ['Boxberg'] }],
+    getDocuments: () => documents, buildPersonPattern, buildPlacePattern, escapeHtml,
+    inlineMarkup: escapeHtml, markdownLinks: escapeHtml, documentNavigationUrl,
+    dateSortValue: (date) => Number.parseInt(date, 10) || 0, formatDate: String,
+    documentTitle: () => 'Source', displayedLanguagesFor: () => [], imageMarkup: () => '',
+  });
+  for (const kind of ['person', 'place']) {
+    if (kind === 'place') { state.person = ''; state.place = 'boxberg'; }
+    const html = kind === 'person' ? screens.renderPersonPage() : screens.renderPlacePage();
+    const facts = html.match(/<section class="entity-facts">(.*?)<\/section>/)[1];
+    const links = [...facts.matchAll(/class="fact-source-link" href="([^"]+)"/g)].map((match) => match[1]);
+    assert.deepEqual(links, [
+      documentNavigationUrl('data/documents/example.json', 1),
+      documentNavigationUrl('data/images/images.json', 0),
+      documentNavigationUrl('data/books/example.json', 0),
+    ].map(escapeHtml), kind);
+  }
 });

@@ -296,13 +296,13 @@ test('hover facts use source identity pointers and keep namesakes separate', () 
   assert.doesNotMatch(templates[0], /Vogt/);
   assert.match(templates[1], /Vogt/);
   assert.doesNotMatch(templates[1], /Ritter/);
-  assert.equal((templates[0].match(/<li>/g) || []).length, 1, 'duplicate participant references show one fact');
+  assert.equal((templates[0].match(/<li\b/g) || []).length, 1, 'duplicate participant references show one fact');
   assert.match(templates[0], /<time class="fact-date" datetime="1400">1400<\/time>/);
-  assert.doesNotMatch(templates[0], /<h3|class="source"|tab=documents|example.json/);
+  assert.doesNotMatch(templates[0], /<h3|class="source"|>data\/documents/);
   assert.doesNotMatch(html, /A guess|entity-relationships|identity-comparisons/);
   assert.match(html, /<\/svg><\/div><aside class="people-tree-facts"/, 'facts follow the scrollable tree');
   const { inlineMarkup } = createMarkupRenderer({ state: { people: [] } });
-  assert.equal(templates[0], renderFactsView([{ ...documents.get(path).entries[0].facts[0], date: '1400' }], { people: [], inlineMarkup }), 'exact output of the existing facts renderer');
+  assert.equal(templates[0], renderFactsView([{ ...documents.get(path).entries[0].facts[0], date: '1400' }], { people: [], inlineMarkup, sourceHref: () => '?tab=documents&record=data%2Fdocuments%2Fexample.json#entry-data-documents-example-json-0' }), 'exact output of the existing facts renderer');
   assert.match(templates[0], /class="person-link"/, 'reuse person links');
 });
 
