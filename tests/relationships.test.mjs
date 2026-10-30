@@ -171,16 +171,51 @@ test('active loader filters watched non-source files and verifies evidence views
         : data.files.get(path) || '',
   };
   let renders = 0;
+  const validityAtRender = [];
   const loader = createDataLoader({ repository, state, parsePeople, parsePlaces,
     buildPersonPattern: () => [], buildPlacePattern: () => null,
     bookSortYear: () => 0, recordHasMissingSourceOrUrl: () => false,
     missingRecordLabel: 'missing', greyRecordLabels: [], savePreferences() {}, renderTabs() {},
-    renderActive: async () => { renders++; } });
+    renderActive: async () => { renders++; validityAtRender.push(state.familyGraph.valid); } });
   await loader.loadAll();
-  assert.equal(renders, 1);
+  assert.equal(renders, 2);
+  assert.deepEqual(validityAtRender, [false, true]);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   assert.equal(state.familyView, 'with-guesses');
   assert.equal(state.documents.size, 1);
+});
+
+test('a book renders before unrelated source files finish loading', async () => {
+  const data = await fixture();
+  const book = 'data/books/example.json';
+  const delayed = 'data/documents/delayed.json';
+  let releaseDocument;
+  const documentReady = new Promise((resolve) => { releaseDocument = resolve; });
+  let firstRender;
+  let tabsRendered = false;
+  const rendered = new Promise((resolve) => { firstRender = resolve; });
+  const state = { recordLabels: [], sealNames: [], imageRegions: [], active: 'books', familyView: 'facts' };
+  const repository = {
+    ...data.repository,
+    getRepositoryFiles: async () => [...data.files.keys(), book, delayed].map((path) => ({ path })),
+    getText: async (path) => path === 'data/people.json' ? JSON.stringify(data.people)
+      : path === 'data/places.json' || path === 'docs/assets/calibration-cities.json' ? '[]' : data.files.get(path) || '',
+    getJson: async (path) => path === book ? { book: 'Example' }
+      : path === delayed ? documentReady : data.repository.getJson(path),
+  };
+  const loader = createDataLoader({ repository, state, parsePeople, parsePlaces,
+    buildPersonPattern: () => [], buildPlacePattern: () => null,
+    bookSortYear: () => 0, recordHasMissingSourceOrUrl: () => false,
+    missingRecordLabel: 'missing', greyRecordLabels: [], savePreferences() {}, renderTabs() { tabsRendered = true; },
+    renderActive: async () => { if (state.active === book) firstRender(); } });
+  const loading = loader.loadAll();
+  await rendered;
+  assert.equal(tabsRendered, true);
+  assert.equal(state.documents.get(book).book, 'Example');
+  assert.equal(state.documents.has(delayed), false);
+  releaseDocument({});
+  await loading;
+  assert.equal(state.documents.has(delayed), true);
 });
 
 test('the tree mode control passes an available view explicitly to viewer state', async () => {
@@ -240,7 +275,7 @@ test('stale local evidence automatically rebuilds once and reloads the verified 
   assert.equal(state.familyView, 'with-guesses');
   assert.equal(state.familyGraph.canRebuild, true);
   assert.doesNotMatch(renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph }), /data-family-rebuild>/);
-  assert.deepEqual(counts(), { renders: 2, progress: 1 });
+  assert.deepEqual(counts(), { renders: 3, progress: 1 });
 });
 
 test('other screens render before a slow family rebuild finishes', async () => {

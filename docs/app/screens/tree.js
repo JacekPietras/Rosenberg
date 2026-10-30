@@ -81,13 +81,13 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, sh
       : points[index - 1][1] === y ? `H${x}` : `V${y}`).join(' ');
     const title = `${records.find((person) => person._treeKey === edge.person).name} · ${edge.type} · ${records.find((person) => person._treeKey === edge.of).name}`;
     const labelText = edge.type === 'kin' ? edge.term || 'kin' : edge.type === 'spouse' && !graph.generated ? 'wife' : edge.type;
-    return `<path class="people-tree-${edge.type}" data-person="${svgEscape(edge.person)}" data-of="${svgEscape(edge.of)}" data-identity="${edge.inferred ? 'inferred' : 'anchored'}" fill="none" d="${path}"><title>${svgEscape(title)}${edge.term ? ` (${svgEscape(edge.term)})` : ''}</title></path>${label ? `<text class="people-tree-edge-label" x="${label[0]}" y="${label[1]}">${svgEscape(labelText)}</text>` : ''}`;
+    return `<g class="people-tree-edge" data-person="${svgEscape(edge.person)}" data-of="${svgEscape(edge.of)}"><path class="people-tree-${edge.type}" data-person="${svgEscape(edge.person)}" data-of="${svgEscape(edge.of)}" data-identity="${edge.inferred ? 'inferred' : 'anchored'}" fill="none" d="${path}"><title>${svgEscape(title)}${edge.term ? ` (${svgEscape(edge.term)})` : ''}</title></path>${label ? `<text class="people-tree-edge-label" x="${label[0]}" y="${label[1]}">${svgEscape(labelText)}</text>` : ''}</g>`;
   });
   const nodes = cards.map(({ person, x, y }) => {
     const nodeHeight = nodeHeightFor(person);
     const text = personLines(person).map((line, index) => `<tspan class="${line.name ? 'people-tree-name' : 'people-tree-detail'}" x="${x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line.text)}</tspan>`).join('');
     const href = `?person=${encodeURIComponent(person.id || (person._evidence ? person._treeKey : person.name))}`;
-    return `<a class="people-tree-person-link" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${x}" y="${y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${x + nodeWidth / 2}" y="${y + 25}" text-anchor="middle">${text}</text></g></a>`;
+    return `<a class="people-tree-person-link" data-person="${svgEscape(person._treeKey)}" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${x}" y="${y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${x + nodeWidth / 2}" y="${y + 25}" text-anchor="middle">${text}</text></g></a>`;
   }).join('');
   return `${relationshipControls(graph, { focus })}<label><input type="checkbox" data-show-kins${showKins ? ' checked' : ''}> show kins</label><section class="people-tree-wrap" aria-label="Family tree viewer"><div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div></section>${relationshipPanel(graph)}`;
 }
@@ -96,6 +96,21 @@ export function setupPeopleTreeZoom(root = document) {
   const wrapper = root.querySelector('.people-tree-wrap');
   const svg = wrapper?.querySelector('.people-tree svg');
   if (!wrapper || !svg) return;
+  const nodes = [...svg.querySelectorAll('.people-tree-person-link')];
+  const edges = [...svg.querySelectorAll('.people-tree-edge')];
+  const highlightPerson = (node) => {
+    svg.classList.toggle('people-tree-highlighting', !!node);
+    nodes.forEach((item) => item.classList.toggle('people-tree-highlighted', item === node));
+    edges.forEach((edge) => edge.classList.toggle('people-tree-highlighted', !!node && (edge.dataset.person === node.dataset.person || edge.dataset.of === node.dataset.person)));
+  };
+  svg.addEventListener('pointerover', (event) => {
+    const node = event.target.closest('.people-tree-person-link');
+    if (node) highlightPerson(node);
+  });
+  svg.addEventListener('pointerout', (event) => {
+    const node = event.target.closest('.people-tree-person-link');
+    if (node && !node.contains(event.relatedTarget)) highlightPerson(null);
+  });
   const [viewWidth, viewHeight] = svg.getAttribute('viewBox').split(/\s+/).slice(2).map(Number);
   const viewport = wrapper.querySelector('.people-tree');
   let scale = 1;

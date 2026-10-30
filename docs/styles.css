@@ -222,6 +222,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .people-tree { height: min(72vh, 720px); min-height: 20rem; padding: 1rem; overflow: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; touch-action: pan-x pan-y; }
 .people-tree svg { display: block; max-width: none; }
 .people-tree-person-link { cursor: pointer; }
+.people-tree-highlighting .people-tree-person-link:not(.people-tree-highlighted),
+.people-tree-highlighting .people-tree-edge:not(.people-tree-highlighted) { opacity: .2; }
 .people-tree-person-link:focus-visible .people-tree-node rect { stroke-width: 3; }
 .people-tree-node rect { fill: var(--surface-raised); stroke: var(--accent); stroke-width: 1.5; }
 .people-tree-node text { fill: var(--ink); font-size: 14px; }

@@ -33,6 +33,10 @@ export async function renderActiveScreen({
 }) {
   status.textContent = '';
   status.classList.remove('error');
+  if (state.sourceLoading && (state.person || state.place || !state.manifest.books.some((book) => book.path === state.active))) {
+    content.textContent = 'Loading sources…';
+    return;
+  }
   state.sealMarkerCleanup?.();
   state.sealMarkerCleanup = null;
   if (leafletMap && state.active !== 'map') destroyMap();
