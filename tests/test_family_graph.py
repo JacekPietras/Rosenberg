@@ -68,7 +68,7 @@ class FamilyGraphTests(unittest.TestCase):
         result = build(self.inputs([person('son_of_a', 'Alex'), person('b', 'Bea')], [relation('Alex', 'b')]))
         self.assertTrue(any(d.status == 'unresolved' for d in result.decisions.values()))
         self.assertEqual(1, result.omitted)
-        self.assertEqual([], serialize(load_inputs(self.root, validate=False), [result])[0]['relationships'])
+        self.assertEqual(0, serialize(load_inputs(self.root, validate=False), [result])['coverage']['facts']['registryRelationships'])
 
     def test_recursive_sources_and_no_publication_inheritance(self):
         self.inputs()
@@ -184,6 +184,27 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertTrue(result.alternatives)
         serialize(inputs, [build(inputs), result])
 
+    def test_guessed_cycle_cannot_block_identity_matching_in_another_family(self):
+        inputs = self.family_context_inputs()
+        self.write('data/people.json', inputs.people + [person('x', 'Xavier'), person('y', 'Yves')])
+        self.write('data/documents/cycle.json', {'date': '1393', 'guesses': [relation('x', 'y'), relation('y', 'x')]})
+        inputs = load_inputs(self.root, validate=False)
+        result = build(inputs, include_guesses=True)
+        decision = next(d for d in result.decisions.values() if d.mention.reference == 'Alex')
+        self.assertEqual(('accepted', 'a'), (decision.status, decision.identity))
+        self.assertFalse(decision.uses_guesses)
+        self.assertTrue(result.conflicts)
+        serialize(inputs, [build(inputs), result])
+
+    def test_valid_guessed_bridge_between_conflicting_families_is_preserved(self):
+        inputs = self.inputs([person(key) for key in ('a', 'b', 'c', 'd')],
+                             [relation('a', 'b'), relation('c', 'd')],
+                             [relation('b', 'a'), relation('d', 'c'), relation('b', 'c')])
+        result = build(inputs, include_guesses=True)
+        self.assertEqual({('a', 'b'), ('c', 'd'), ('b', 'c')},
+                         {(e.person, e.of) for e in result.relationships})
+        serialize(inputs, [build(inputs), result])
+
     def test_name_only_registry_records_have_distinct_internal_handles(self):
         result = build(self.inputs([{'name': 'Alex'}, {'name': 'Alex'}, person('b')], [relation('Alex', 'b')]))
         decision = next(d for d in result.decisions.values() if d.mention.reference == 'Alex')
@@ -193,7 +214,7 @@ class FamilyGraphTests(unittest.TestCase):
     def test_empty_views_are_explicit_and_apply_is_idempotent(self):
         inputs = self.inputs(facts=[])
         output = serialize(inputs, [build(inputs), build(inputs, include_guesses=True)])
-        self.assertEqual(['facts', 'with-guesses'], output[0]['familyGraph']['views'])
+        self.assertEqual(['facts', 'with-guesses'], output['views'])
         first = apply(inputs, output)
         second_inputs = load_inputs(self.root, validate=False)
         second_output = serialize(second_inputs, [build(second_inputs), build(second_inputs, include_guesses=True)])
@@ -218,14 +239,14 @@ class FamilyGraphTests(unittest.TestCase):
                 else:
                     self.write('data/names.md', 'Alex, Alexander')
                 with self.assertRaisesRegex(ValueError, 'stale'):
-                    validate_generated(output, self.root)
+                    validate_generated(output, inputs.people, self.root)
 
     def test_source_pointers_and_assertion_fingerprints_are_validated(self):
         inputs = self.inputs(facts=[relation('a', 'b')])
         output = serialize(inputs, [build(inputs)])
-        output[0]['relationships'][0]['derivations'][0]['sources'][0]['fingerprint'] = 'sha256:' + '0' * 64
+        output['evidence']['facts']['sources'][0]['fingerprint'] = 'sha256:' + '0' * 64
         with self.assertRaisesRegex(ValueError, 'fingerprint'):
-            validate_generated(output, self.root)
+            validate_generated(output, inputs.people, self.root)
 
     def test_numeric_fingerprints_are_cross_runtime_and_type_sensitive(self):
         self.assertEqual(fingerprint({'x': 1}), fingerprint({'x': 1.0}))
@@ -277,9 +298,9 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertEqual(1, len(graph['relationships']))
         self.assertTrue(all(node['key'].startswith('@evidence/') for node in graph['nodes']))
         output = serialize(inputs, [result])
-        self.assertEqual(1, len(output))
-        self.assertEqual(2, output[0]['familyGraph']['schema'])
-        self.assertEqual(2, len(output[0]['familyGraph']['evidence']['facts']['nodes']))
+        self.assertEqual(1, len(inputs.people))
+        self.assertEqual(3, output['schema'])
+        self.assertEqual(2, len(output['evidence']['facts']['nodes']))
 
     def test_repeated_family_pair_links_without_any_registry_anchor(self):
         self.inputs([person('unrelated', 'Unrelated')], [relation('Alex von North', 'Bea von South', 'spouse')])
@@ -336,10 +357,17 @@ class FamilyGraphTests(unittest.TestCase):
     def test_reconstructed_graph_validates_participant_assignments(self):
         inputs = self.inputs([person('unrelated', 'Unrelated')], [relation('Alex', 'Bea')])
         output = serialize(inputs, [build(inputs)])
-        graph = output[0]['familyGraph']['evidence']['facts']
+        graph = output['evidence']['facts']
         graph['relationships'][0]['person'], graph['relationships'][0]['of'] = graph['relationships'][0]['of'], graph['relationships'][0]['person']
         with self.assertRaisesRegex(ValueError, 'supporting participant'):
-            validate_generated(output, self.root)
+            validate_generated(output, inputs.people, self.root)
+
+    def test_reconstructed_kin_term_must_match_its_source(self):
+        inputs = self.inputs(facts=[relation('a', 'b', 'kin', term='Vetter')])
+        output = serialize(inputs, [build(inputs)])
+        output['evidence']['facts']['relationships'][0]['term'] = 'Schwager'
+        with self.assertRaisesRegex(ValueError, 'supporting participant'):
+            validate_generated(output, inputs.people, self.root)
 
     def test_source_graph_never_merges_distinct_namesake_anchors(self):
         inputs = self.inputs([person('a', 'Alex von North'), person('other', 'Alex von North')], [relation('a', 'Bea von South', 'spouse'), relation('other', 'Bea von South', 'spouse'), relation('Alex von North', 'Bea von South', 'spouse')])
@@ -378,6 +406,38 @@ class FamilyGraphTests(unittest.TestCase):
         graph = reconstruct(inputs.assertions, result.decisions, registry, Names(inputs.names, inputs.places))
         self.assertEqual(1, len(graph['relationships']))
         self.assertTrue(all(d['usesGuesses'] for d in graph['relationships'][0]['derivations']))
+
+    def test_apply_writes_only_tree_and_preserves_the_confirmed_registry(self):
+        inputs = self.inputs(facts=[relation('a', 'b')])
+        before = (self.root / 'data/people.json').read_bytes()
+        tree = serialize(inputs, [build(inputs)])
+        output = apply(inputs, tree)
+        self.assertEqual(before, (self.root / 'data/people.json').read_bytes())
+        self.assertEqual(output, (self.root / 'data/tree.json').read_bytes())
+        self.assertNotIn('data/tree.json', tree['inputs'])
+        self.assertTrue(all(set(person) == {'id', 'name'} for person in json.loads(before)))
+
+    def test_intervening_tree_edit_prevents_overwriting_it(self):
+        inputs = self.inputs(facts=[relation('a', 'b')])
+        tree = serialize(inputs, [build(inputs)])
+        self.write('data/tree.json', {'changed': 'by another editor'})
+        with self.assertRaisesRegex(ValueError, 'changed'):
+            apply(inputs, tree)
+        self.assertEqual({'changed': 'by another editor'}, json.loads((self.root / 'data/tree.json').read_text()))
+
+    def test_invalid_generated_tree_can_be_rebuilt_without_using_it_as_evidence(self):
+        self.inputs(facts=[relation('a', 'b')])
+        self.write('data/tree.json', '{invalid')
+        inputs = load_inputs(self.root)
+        tree = serialize(inputs, [build(inputs)])
+        apply(inputs, tree)
+        self.assertEqual(3, json.loads((self.root / 'data/tree.json').read_text())['schema'])
+
+    def test_confirmed_registry_rejects_computation_fields(self):
+        self.inputs()
+        self.write('data/people.json', [person('a', 'Alex', relationships=[])])
+        with self.assertRaisesRegex(ValueError, 'only id and name'):
+            load_inputs(self.root)
 
 
 if __name__ == '__main__':

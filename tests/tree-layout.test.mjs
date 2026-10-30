@@ -9,8 +9,8 @@ const { buildRelationshipGraph } = await import(await moduleUrl(new URL('../docs
 const person = (id, children = [], extra = {}) => ({ id, name: id, children, ...extra });
 const attr = (markup, name) => markup.match(new RegExp(` ${name}="([^"]*)"`))?.[1];
 
-function geometry(people) {
-  const html = renderPeopleTree(people, [], { graph: buildRelationshipGraph(people, { verification: { valid: true } }) });
+function geometry(people, tree) {
+  const html = renderPeopleTree(people, [], { graph: buildRelationshipGraph(people, { tree, verification: { valid: true } }) });
   const cards = [...html.matchAll(/<a class="people-tree-person-link"[^>]*>(.*?)<\/a>/g)].map(([markup]) => {
     const rect = markup.match(/<rect [^>]*>/)[0];
     return { id: decodeURIComponent(attr(markup, 'href').slice('?person='.length)),
@@ -123,9 +123,10 @@ test('cycles terminate, unknown references are ignored, and names are escaped', 
 
 test('repository family tree has no crossings, overlaps, or clipped cards', async () => {
   const people = JSON.parse(await readFile(new URL('../data/people.json', import.meta.url), 'utf8'));
-  const layout = geometry(people);
+  const tree = JSON.parse(await readFile(new URL('../data/tree.json', import.meta.url), 'utf8'));
+  const layout = geometry(people, tree);
   assertPlanar(layout);
-  const graph = buildRelationshipGraph(people, { verification: { valid: true } });
+  const graph = buildRelationshipGraph(people, { tree, verification: { valid: true } });
   assert.equal(new Set(layout.cards.map((card) => card.id)).size, graph.records.length);
   assert.ok(layout.cards.length < graph.records.length * 3, 'repeated family occurrences remain bounded');
 });

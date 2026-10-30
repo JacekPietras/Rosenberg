@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=2';
+import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=4';
 
 export function createDataLoader({
   repository,
@@ -22,8 +22,12 @@ export function createDataLoader({
   let lastVerifiedGraph;
   function rebuildOptions() {
     const metadata = state.tree ?? state.personRecords[0]?.familyGraph;
-    return { includeGuesses: metadata?.views ? metadata.views.includes('with-guesses') : true,
-      searchLimit: metadata?.configuration?.searchLimit || 10000 };
+    const views = metadata?.views;
+    const validViews = Array.isArray(views) && views[0] === 'facts'
+      && (views.length === 1 || views.length === 2 && views[1] === 'with-guesses');
+    const limit = metadata?.configuration?.searchLimit;
+    return { includeGuesses: validViews ? views.includes('with-guesses') : true,
+      searchLimit: Number.isSafeInteger(limit) && limit > 0 ? limit : 10000 };
   }
 
   async function loadSnapshot({ autoRebuild = true } = {}) {

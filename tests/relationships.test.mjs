@@ -222,7 +222,7 @@ function loaderFor(data, { rebuild, local = true } = {}) {
 }
 
 async function updateFixtureBuild(data) {
-  const metadata = data.people[0].familyGraph;
+  const metadata = data.tree || data.people[0].familyGraph;
   metadata.inputs[source.path] = await evidenceFingerprint(data.documents.get(source.path));
   metadata.fingerprint = await evidenceFingerprint(metadata.inputs);
 }
@@ -434,4 +434,98 @@ test('source-person navigation follows verified occurrences across changed evide
   state.sourcePersonChoices = { reference: state.person, matches: [] };
   assert.equal(remapSourcePerson(state, previous), false);
   assert.equal(state.sourcePersonChoices, null);
+});
+
+async function externalTreeFixture() {
+  const data = await sourcePeopleFixture();
+  data.tree = { ...data.people[0].familyGraph, schema: 3, engine: '3' };
+  data.people = registryIdentities(data.people);
+  data.files.set('data/people.json', data.people);
+  data.files.set('data/tree.json', data.tree);
+  data.repository.getFamilyTree = async () => data.tree;
+  return data;
+}
+
+test('tree.json holds computed views while people remains an ID/name registry', async () => {
+  const data = await externalTreeFixture();
+  const before = JSON.stringify(data.people);
+  const verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+  assert.equal(verification.valid, true, verification.reason);
+  const graph = buildRelationshipGraph(data.people, { tree: data.tree, verification });
+  assert.equal(graph.records.length, 4);
+  assert.equal(graph.edges.length, 1);
+  assert.equal(JSON.stringify(data.people), before);
+  assert.ok(data.people.every((person) => Object.keys(person).sort().join(',') === 'id,name'));
+  assert.ok(!Object.hasOwn(data.tree.inputs, 'data/tree.json'));
+});
+
+test('active loader reads and rebuilds the separate tree without changing registry entries', async () => {
+  const data = await externalTreeFixture();
+  const before = JSON.stringify(data.people);
+  data.documents.get(source.path).date = '1400';
+  let rebuilds = 0;
+  const { loader, state } = loaderFor(data, { rebuild: async (options) => {
+    rebuilds++;
+    assert.equal(options.includeGuesses, true);
+    await updateFixtureBuild(data);
+  } });
+  await loader.loadAll();
+  assert.equal(rebuilds, 1);
+  assert.equal(state.tree, data.tree);
+  assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
+  assert.equal(JSON.stringify(state.personRecords), before);
+});
+
+test('missing tree.json triggers generation even when the registry has no relationship fields', async () => {
+  const data = await externalTreeFixture();
+  const generated = data.tree;
+  data.tree = null;
+  let rebuilds = 0;
+  const { loader, state } = loaderFor(data, { rebuild: async () => { rebuilds++; data.tree = generated; } });
+  await loader.loadAll();
+  assert.equal(rebuilds, 1);
+  assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
+  assert.equal(state.familyGraph.edges.length, 1);
+});
+
+test('invalid saved build options cannot prevent automatic regeneration', async () => {
+  for (const invalid of [{ views: {} }, { views: 'facts' }, { views: [] },
+    { configuration: { searchLimit: -1 } }, { configuration: { searchLimit: 'bad' } }]) {
+    const data = await externalTreeFixture();
+    const generated = structuredClone(data.tree);
+    Object.assign(data.tree, invalid);
+    let rebuilds = 0;
+    const { loader, state } = loaderFor(data, { rebuild: async (options) => {
+      rebuilds++;
+      assert.deepEqual(options, { includeGuesses: true, searchLimit: 10000 });
+      data.tree = generated;
+    } });
+    await loader.loadAll();
+    assert.equal(rebuilds, 1);
+    assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
+  }
+});
+
+test('reconstructed kin terms must be supported by their source assertion', async () => {
+  const data = await externalTreeFixture();
+  const fact = data.documents.get(source.path).entries[0].facts[0];
+  fact.type = 'kin';
+  fact.term = 'Vetter';
+  const ref = { ...source, fingerprint: await evidenceFingerprint(fact) };
+  for (const graph of Object.values(data.tree.evidence)) {
+    graph.nodes.forEach((node) => node.mentions.forEach((mention) => { mention.source = ref; }));
+    const edge = graph.relationships[0];
+    edge.type = 'kin';
+    edge.term = 'Schwager';
+    edge.derivations.forEach((d) => { d.sources = [ref]; });
+  }
+  await updateFixtureBuild(data);
+  const verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+  assert.equal(verification.valid, false);
+});
+
+test('repository handles a missing generated tree without treating it as source data', async () => {
+  const repository = createRepository({ location: { hostname: 'localhost', pathname: '/docs/' },
+    fetchFunction: async (path) => { assert.match(path, /data\/tree.json/); return { ok: false, status: 404 }; } });
+  assert.equal(await repository.getFamilyTree(), null);
 });

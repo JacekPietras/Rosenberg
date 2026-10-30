@@ -2,7 +2,8 @@
 
 The implemented system reconstructs relationships from typed source assertions,
 keeps uncertain identities visible, and exports the complete source-person
-graph alongside its registry-only projection. A Python engine computes the result; the
+graph in `data/tree.json`. The confirmed registry in `data/people.json` contains
+only IDs and full names. A Python engine computes the result; the
 browser verifies and displays it. Source assertions remain in their original
 JSON entries.
 
@@ -13,11 +14,11 @@ The [algorithm plan](family-tree-algorithm-plan.md),
 design. The authoritative persisted format is documented in
 [the People JSON rules](../rules/json-formats.md#people-json).
 
-## Complete source-person reconstruction (engine 2)
+## Complete source-person reconstruction and separate storage (engine 3)
 
 The first implementation displayed only nine relationships between existing
 registry IDs. That projection was insufficient as the main family tree. The
-current viewer uses `familyGraph.evidence` for each independently built view,
+current viewer uses the `evidence` views in `data/tree.json`,
 including source people who have no permanent registry record or ID.
 
 The engine starts with source occurrences, groups repeated participant references
@@ -46,7 +47,7 @@ source evidence or matching policy changes. The nine registry-only relationships
 remain a projection, not the extent of the reconstruction.
 
 `reconstruction.py` implements the source-person graph and contextual rounds.
-Schema 2 stores each view's source references once in an indexed table, avoiding
+Tree schema 3 stores each view's source references once in an indexed table, avoiding
 repeated full citations in every node and derivation. It is documented in the
 People JSON rules. The earlier architecture details below describe the initial
 registry matching layer; references to omitted endpoints apply to that
@@ -66,10 +67,10 @@ python3 scripts/rebuild_family_tree.py --include-guesses
 # Inspect decisions, candidate scores, exclusions, and source references.
 python3 scripts/rebuild_family_tree.py --include-guesses --explain vogt_zu_Lauda
 
-# Replace registry relationships with both validated views.
+# Write the generated tree with both validated views.
 python3 scripts/rebuild_family_tree.py --include-guesses --apply
 
-# Replace registry relationships with facts only, removing the guesses view.
+# Write a facts-only tree, removing the previous guesses view.
 python3 scripts/rebuild_family_tree.py --apply
 ```
 
@@ -79,7 +80,7 @@ connected component; the default is 10,000. The limit is recorded in build
 metadata. Reaching it leaves the component's affected assignments unresolved.
 
 The default command validates a complete proposed export in memory and prints
-coverage and conflicts. Only `--apply` writes `data/people.json`. There are no
+coverage and conflicts. Only `--apply` writes `data/tree.json`; rebuilding never writes `people.json`. There are no
 generated report files, staging files, separate facts stores, or review queues.
 
 ## Architecture and code locations
@@ -90,7 +91,7 @@ Source JSON + registry identities + name/place variations
     -> exact anchors, contextual candidates, and constraints
     -> independent facts / with-guesses builds
     -> relationships, derivations, alternatives, and coverage
-    -> validated people.json replacement
+    -> validated tree.json output; unchanged confirmed people.json
     -> browser verification, tree, and person pages
 ```
 
@@ -110,7 +111,7 @@ The engine uses Python's standard library. Its public library entry points are
 | [`constraints.py`](../scripts/family_graph/constraints.py) | Self-relationship, ancestry-cycle, and combined death checks |
 | [`resolve.py`](../scripts/family_graph/resolve.py) | Bounded component search and accepted/unresolved identity decisions |
 | [`graph.py`](../scripts/family_graph/graph.py) | Evidence-view orchestration, conflict handling, relationships, and provisional alternatives |
-| [`export.py`](../scripts/family_graph/export.py) | Serialization, generated-schema validation, and guarded registry replacement |
+| [`export.py`](../scripts/family_graph/export.py) | Serialization, generated-schema validation, and guarded tree replacement |
 
 Candidate generation lives in `scoring.py`; there is no separate `candidates.py`.
 Reconstruction has its own structured source walker. The existing search walker
@@ -151,8 +152,8 @@ does not prove life and cannot, by itself, contradict an earlier death.
 
 An exact, case-sensitive existing ID fixes the participant to that registry
 person. Different IDs remain distinct. Registry relationships and the wording
-of IDs contribute no genealogical evidence. Registry titles and biographical
-dates are not used as source-supported matching observations.
+of IDs contribute no genealogical evidence. The registry contains only IDs and names; titles and dates come from source
+assertions.
 
 Names are normalized using `data/names.md` and expanded place variations.
 Comments are stripped from variation lines. The normalizer preserves the
@@ -248,8 +249,12 @@ dates do not become relationship start dates.
 Conflicting factual deaths or anchored factual ancestry cycles block affected
 anchors' conclusions. Conflicting guessed death observations involving an
 anchor are removed from usable hypothetical evidence and reported. Parentage
-cycles detected after edge construction retain removed relationships as
-alternatives; guess-dependent edges are removed preferentially. This is
+cycles involving exact-ID guesses are removed before identity matching, so a
+contradiction cannot block matching in an unrelated family or supply identity
+support. Only edges within a cyclic component are affected; bridges between
+separate components remain available. Removed relationships are retained as
+alternatives. Any remaining cycles after edge construction also remove
+guess-dependent edges preferentially. This is
 conservative conflict handling, not exhaustive reconstruction of every possible
 historical alternative.
 
@@ -261,55 +266,35 @@ separately.
 
 ## Persisted output and replacement
 
-The top-level people array, record order, existing IDs, names, and unrelated
-values are preserved. Applying a build replaces `wife` and `children` with a
-`relationships` array on every record, including empty arrays.
+`data/people.json` is the manually curated list of confirmed, separate people.
+Every record contains exactly `id` and `name`. IDs remain case-sensitive and
+unique; namesakes can share a full name. Reconstruction never adds people or
+inferred identities to this file and never rewrites it. Source assertions also
+remain unchanged.
 
-A relationship is stored once: on the parent for parentage, otherwise on the
-endpoint with the smaller serialized reference. An endpoint uses an existing
-ID, or a unique registry name when a resolved no-ID record is exportable.
-Unresolved or ambiguous endpoints are omitted and counted. Source participants
-are never rewritten to match an inferred assignment.
+`data/tree.json` holds all generated calculation results: schema 3, engine 3,
+policy 2, configuration, available views, input fingerprints, coverage, and each
+view's complete evidence graph. It includes registry-backed nodes and provisional
+source identities. Each view uses a deduplicated table of source references;
+mentions, grouping evidence, and derivations reference its zero-based indexes.
+The exact format is documented in the Tree JSON rules.
 
-Illustrative relationship shape; the fingerprint placeholder is not valid data:
+The registry-only count is a diagnostic projection, not the displayed graph.
+New source people do not need permanent registry IDs to appear in the tree.
+Unresolved identities stay visible with their original source references,
+source-stated relationships, and uncertainty.
 
-```json
-{
-  "type": "parent",
-  "of": "example_child",
-  "derivations": [
-    {
-      "view": "facts",
-      "identity": "anchored",
-      "usesGuesses": false,
-      "sources": [
-        {
-          "path": "data/documents/example.json",
-          "pointer": "/entries/0/facts/0",
-          "fingerprint": "sha256:<assertion hash>"
-        }
-      ]
-    }
-  ]
-}
-```
+Fingerprints cover the historical source file set and contents, name and place
+inputs, confirmed ID/name records, and engine/shared utility code. Generated
+`tree.json` is excluded from inputs. Consequently identical builds reproduce the
+same bytes without feeding their own conclusions back into matching.
 
-The first person alone carries `familyGraph` metadata: schema/engine/policy
-versions, search configuration, explicit available views, input fingerprints,
-and per-view coverage. Views remain listed even when empty or identical.
-
-Input fingerprints cover complete parsed source files, name and place inputs,
-the registry identity projection, and engine/shared utility code. The projection
-excludes `wife`, `children`, `relationships`, and `familyGraph`, so applying a
-build does not immediately invalidate it. Python and JavaScript share a tagged
-canonical encoding and SHA-256; its exact specification is in the format rules.
-
-Before writing, the exporter validates references, derivations, source pointers,
-assertion fingerprints, and graph consistency. It then rechecks input
-fingerprints and the original registry bytes to detect intervening changes.
-Only the complete validated replacement is written. No timestamps are added;
-identical inputs, configuration, and policy produce identical bytes, and an
-unchanged output is not rewritten.
+The exporter validates references, participant assignments, names, derivations,
+guess dependencies, and parentage consistency in memory. Before writing only
+`tree.json`, it checks that source inputs, registry bytes, and the previous tree
+bytes have not changed during computation. A conflicting edit prevents writing.
+An unchanged tree is not rewritten. No timestamps or additional facts store are
+introduced.
 
 ## Browser behavior
 
@@ -319,9 +304,12 @@ individual source pointers and hashes, endpoint references, and both available
 graph views. Stale or unverifiable evidence produces a visible message and no
 accepted generated edges. The browser does not rerun Python identity matching.
 
-The active loader passes the selected view explicitly. A saved preference
+The active loader reads `people.json` and `tree.json` separately and passes the
+selected view explicitly. A missing or stale local tree triggers the Python
+rebuild and verified reload, with a manual rebuild action available as well. A saved preference
 cannot enable an unavailable guesses view. Local and published source discovery
-include nested JSON and watch registry/name/place/engine inputs for refresh.
+include nested JSON and watch registry/name/place/engine inputs plus the
+generated tree for refresh. The output is never ingested as source evidence.
 Successful local saves advance a repository revision so the viewer can
 reverify evidence before subsequent rendering.
 
@@ -339,12 +327,12 @@ individual derivations remain inspectable.
 Exact-ID routes select an anchor. Ambiguous name routes list possible registry
 people instead of selecting the first namesake. Mention years use direct typed
 ID references and historical dates, with a retained image-title mention
-fallback. They are displayed separately from life dates. Unresolved graph
-occurrences are inspectable through the CLI/library; the browser currently
-shows their coverage counts rather than rendering the full unresolved graph.
+fallback. They are displayed separately from life dates. Unresolved source identities are displayed in the graph and have their own
+source-attestation pages. Family selection makes the complete graph browsable.
 
-Legacy `wife`/`children` rendering remains available only when the generated
-schema is absent. Generated and legacy relationships are never combined.
+The adapter retains read compatibility for old embedded builds during migration.
+New exports only use `tree.json`; the confirmed registry has no relationship or
+build fields.
 
 ## Initial registry projection result and verification
 
@@ -385,17 +373,17 @@ assertions; generated genealogy validation belongs to the reconstruction CLI.
 
 ## Limits and future extensions
 
-The implemented graph can be substantially smaller than the old registry tree.
-Missing support is left visible through diagnostics and coverage rather than
-restored from old relationship fields.
+Connected families can remain incomplete when source identity is ambiguous.
+The viewer exposes those source groups and their attestations instead of
+restoring unsupported relationships or forcing namesakes together.
 
 - Structured living-activity assertions are absent, so a later ordinary mention
   cannot safely exclude a deceased candidate.
 - Shared historical event IDs are absent. Feature caps and attestation keys
   reduce duplicate influence but do not fully establish source independence.
-- Registry candidate profiles still do not bootstrap identity from a unique
-  name. The separate source-person reconstruction now groups and links source
-  identities with contextual support, without adding permanent registry IDs.
+- Registry candidate profiles do not bootstrap identity from a unique name.
+  Contextual source-person grouping does not promote inferred people to the
+  confirmed registry.
 - Scoring does not extract transactions, property continuity, associates,
   individual seal identities, or residence/activity roles from prose.
 - The joint search considers above-threshold registry candidates and an

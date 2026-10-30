@@ -1,7 +1,7 @@
 """Build independently reproducible evidence views without registry genealogy."""
 
 from collections import defaultdict
-from .constraints import cycle_nodes
+from .constraints import cycle_edges, cycle_nodes
 from .dates import compatible_deaths
 from .model import BuildResult, Candidate, IdentityDecision, Relationship, fingerprint
 from .names import Names
@@ -49,12 +49,30 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
     if cyclic:
         blocked.update(cyclic)
         conflicts.append({'reason': 'anchored factual parentage cycle', 'identities': sorted(cyclic)})
+    # Reject cyclic exact-ID guesses before scoring. Otherwise one inconsistent
+    # family makes every joint assignment invalid, even in unrelated families,
+    # and removed guesses can still leak into identity-support dependencies.
+    anchored_parents = [a for a in assertions if a.original['type'] == 'parent'
+                        and a.source.key not in ignored_guesses
+                        and all(m.reference in registry and m.reference not in blocked for m in a.mentions)]
+    cyclic_pairs = cycle_edges(tuple(m.reference for m in a.mentions) for a in anchored_parents)
+    rejected_parents = [a for a in anchored_parents if a.source.kind == 'guesses'
+                        and tuple(m.reference for m in a.mentions) in cyclic_pairs]
+    ignored_guesses.update(a.source.key for a in rejected_parents)
+    if rejected_parents:
+        conflicts.append({'reason': 'incompatible parentage alternatives',
+                          'identities': sorted({m.reference for a in rejected_parents for m in a.mentions}),
+                          'sources': [a.source.export() for a in rejected_parents]})
     usable = [assertion for assertion in assertions if assertion.source.key not in ignored_guesses
               and not any(mention.reference in blocked for mention in assertion.mentions)]
     # Candidates must be rebuilt after removing incompatible hypothetical
     # constraints so rejected guesses cannot supply positive identity evidence.
     registry, _, candidates = make_candidates(usable, inputs.people, names, rules)
     decisions, alternatives = resolve(usable, registry, candidates, search_limit)
+    if rejected_parents:
+        alternatives.append({'relationships': [Relationship('parent', a.mentions[0].reference, a.mentions[1].reference, '',
+            derivations=[{'view': 'with-guesses', 'identity': 'anchored', 'usesGuesses': True,
+                          'sources': [a.source.export()]}]) for a in rejected_parents]})
     for assertion in assertions:
         for mention in assertion.mentions:
             if mention.handle not in decisions:
@@ -86,12 +104,12 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
     edges = list(relationships.values())
     # Never flatten inconsistent guessed graphs. Keep competing guessed edges
     # inspectable, exporting the uncontested factual subset of this view.
-    cycles = cycle_nodes((edge.person, edge.of) for edge in edges if edge.type == 'parent')
-    if cycles:
-        conflicting = [edge for edge in edges if edge.type == 'parent' and edge.person in cycles and edge.of in cycles]
+    cyclic_pairs = cycle_edges((edge.person, edge.of) for edge in edges if edge.type == 'parent')
+    if cyclic_pairs:
+        conflicting = [edge for edge in edges if edge.type == 'parent' and (edge.person, edge.of) in cyclic_pairs]
         guessed = [edge for edge in conflicting if all(d['usesGuesses'] for d in edge.derivations)]
         removed = guessed or conflicting
-        conflicts.append({'reason': 'incompatible parentage alternatives', 'identities': sorted(cycles)})
+        conflicts.append({'reason': 'incompatible parentage alternatives', 'identities': sorted({node for pair in cyclic_pairs for node in pair})})
         alternatives.append({'relationships': removed})
         edges = [edge for edge in edges if edge not in removed]
     omitted = sum(edge.person not in registry or edge.of not in registry for edge in edges)

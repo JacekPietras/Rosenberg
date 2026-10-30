@@ -112,14 +112,17 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
         const graph = expandEvidenceGraph(stored);
         const membership = new Map();
         for (const node of graph.nodes) {
+          let named = !!node.registry && people.some((person) => person.id === node.registry && person.name === node.name);
           for (const mention of node.mentions) {
             const fact = await sourceFact(mention.source, view);
             if (!['person', 'of'].includes(mention.field) || typeof fact[mention.field] !== 'string') throw new Error('Invalid reconstructed participant');
             if (people.some((person) => person.id && person.id === fact[mention.field]) && node.key !== fact[mention.field]) throw new Error('Reconstructed occurrence overrides a fixed anchor');
+            named ||= fact[mention.field] === node.name;
             const key = JSON.stringify([mention.source.path, mention.source.pointer, mention.field]);
             if (membership.has(key)) throw new Error('Occurrence assigned to two people');
             membership.set(key, node.key);
           }
+          if (!named) throw new Error('Reconstructed name lacks a source or confirmed registry name');
           for (const source of node.identitySources || []) await sourceFact(source, view);
         }
         for (const edge of graph.relationships) {
@@ -127,7 +130,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
             let supported = false;
             for (const source of derivation.sources) {
               const fact = await sourceFact(source, view);
-              if (fact.type !== edge.type) continue;
+              if (fact.type !== edge.type || (fact.term || '') !== (edge.term || '')) continue;
               const endpoints = ['person', 'of'].map((field) => membership.get(JSON.stringify([source.path, source.pointer, field])));
               const expected = [edge.person, edge.of];
               if (edge.type !== 'parent') { endpoints.sort(); expected.sort(); }
@@ -157,7 +160,7 @@ export function buildRelationshipGraph(people, { tree, view = 'facts', verificat
   });
   const generated = tree !== undefined || people.some((person) => Object.hasOwn(person, 'relationships') || person.familyGraph);
   const metadata = tree === undefined ? people[0]?.familyGraph : tree;
-  const views = generated ? metadata?.views || [] : ['facts'];
+  const views = generated ? Array.isArray(metadata?.views) ? metadata.views : [] : ['facts'];
   const selectedView = views.includes(view) ? view : 'facts';
   let evidence;
   try { evidence = expandEvidenceGraph(metadata?.evidence?.[selectedView]); }

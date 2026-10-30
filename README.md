@@ -13,7 +13,8 @@ data/
 ├── documents/    # Historical source documents
 ├── images/       # Armorial and effigy image collections
 ├── calendar.md   # Liturgical calendar and dated annotations
-├── people.json   # People and relationships
+├── people.json   # Confirmed separate people: ID and full name only
+├── tree.json     # Generated family graph and calculation results
 ├── names.md      # Historical name variants
 └── places.json   # Place-name variants and coordinates
 docs/             # Browser viewer for the dataset
@@ -43,9 +44,9 @@ python3 scripts/rebuild_family_tree.py
 python3 scripts/rebuild_family_tree.py --include-guesses --explain vogt_zu_Lauda
 ```
 
-Use `--include-guesses --apply` to replace registry relationships with both
-independently built evidence views, or `--apply` for facts only. Existing
-relationships are ignored as evidence. The tree includes people found in typed
+Use `--include-guesses --apply` to write both independently built evidence
+views to `data/tree.json`, or `--apply` for facts only. `data/people.json` contains
+only confirmed IDs and full names; reconstruction never changes that registry. The tree includes people found in typed
 source assertions, including people without registry IDs. Source-local family
 groups and contextual links across sources remain distinguishable from fixed
 registry identities. Ambiguous namesakes stay separate. The family-group
@@ -60,7 +61,7 @@ configuration. Restart an already running local server once after updating the
 viewer to enable this action. The published read-only site links to the local
 viewer when a rebuild is needed.
 
-The generated schema is documented in [rules/json-formats.md](rules/json-formats.md).
+The registry and generated tree schemas are documented in [rules/json-formats.md](rules/json-formats.md).
 Matching scores are conservative heuristics, not calibrated probabilities.
 Structured living activity, shared historical event IDs, and precise place
 roles remain deferred; ordinary mentions do not prove that someone was alive.

@@ -3,12 +3,12 @@
 from collections import defaultdict
 
 
-def cycle_nodes(edges):
-    """Return nodes in directed cycles, allowing repeated ancestry (a DAG)."""
+def cycle_components(edges):
+    """Return cyclic strongly connected components, allowing pedigree collapse."""
     children = defaultdict(set)
     for parent, child in edges:
         children[parent].add(child)
-    index, low, stack, active, cyclic = {}, {}, [], set(), set()
+    index, low, stack, active, cyclic = {}, {}, [], set(), []
 
     def visit(node):
         index[node] = low[node] = len(index)
@@ -29,12 +29,24 @@ def cycle_nodes(edges):
                 if child == node:
                     break
             if len(component) > 1 or node in children[node]:
-                cyclic.update(component)
+                cyclic.append(component)
 
     for node in list(children):
         if node not in index:
             visit(node)
     return cyclic
+
+
+def cycle_nodes(edges):
+    """Return nodes in directed cycles, allowing repeated ancestry (a DAG)."""
+    return set().union(*cycle_components(edges))
+
+
+def cycle_edges(edges):
+    """Exclude bridges between separate cycles from the conflicting edges."""
+    edges = list(edges)
+    membership = {node: index for index, component in enumerate(cycle_components(edges)) for node in component}
+    return {(left, right) for left, right in edges if left in membership and membership.get(right) == membership[left]}
 
 
 def valid_assignment(assertions, assignment):

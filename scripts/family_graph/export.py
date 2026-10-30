@@ -105,7 +105,7 @@ def validate_generated(tree, people, root=None):
         raise ValueError('stale build inputs; rerun reconstruction')
     if 'data/tree.json' in tree['inputs']:
         raise ValueError('generated tree cannot be an input to itself')
-    validate_evidence(tree, set(ids), root)
+    validate_evidence(tree, {person['id']: person['name'] for person in people}, root)
     return tree
 
 
@@ -152,6 +152,7 @@ def validate_evidence(metadata, registry, root=None, cache=None):
                 or ('registry' not in node and (not key.startswith('@evidence/') or key in registry))):
                 raise ValueError('invalid reconstructed person')
             nodes[key] = node
+            named = bool(node.get('registry') and registry[node['registry']] == node['name'])
             for mention in node['mentions']:
                 fact = source(mention['source'], view)
                 field = mention.get('field')
@@ -159,10 +160,13 @@ def validate_evidence(metadata, registry, root=None, cache=None):
                     raise ValueError('invalid reconstructed participant')
                 if fact is not None and fact[field] in registry and key != fact[field]:
                     raise ValueError('reconstructed occurrence overrides a fixed registry anchor')
+                named |= fact is not None and fact[field] == node['name']
                 location = (mention['source']['path'], mention['source']['pointer'], field)
                 if location in membership:
                     raise ValueError('source occurrence assigned to two reconstructed people')
                 membership[location] = key
+            if root is not None and not named:
+                raise ValueError('reconstructed name lacks a supporting source or confirmed registry name')
             for ref in node.get('identitySources', []):
                 source(ref, view)
         parents, seen = [], set()
@@ -186,7 +190,8 @@ def validate_evidence(metadata, registry, root=None, cache=None):
                     if '/guesses/' in ref['pointer'] and not d['usesGuesses']:
                         raise ValueError('unmarked reconstructed guess dependency')
                     fact = source(ref, view)
-                    if fact is not None and fact.get('type') == kind:
+                    if (fact is not None and fact.get('type') == kind
+                        and fact.get('term', '') == edge.get('term', '')):
                         pair = [membership.get((ref['path'], ref['pointer'], field)) for field in ('person', 'of')]
                         supported |= pair == [left, right] if kind == 'parent' else sorted(pair, key=str) == sorted([left, right])
                 if root is not None and not supported:

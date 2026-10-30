@@ -343,169 +343,119 @@ image URL. An optional `placeId` refers to the matching place ID in
 
 ## People JSON
 
-`data/people.json` remains a non-empty array in registry order. A person has a
-non-empty `name` and an optional unique, case-sensitive `id`. IDs cannot collide
-with full names. Preserve existing IDs, names, titles, biographical dates, and
-unrelated fields. Dates retain ISO precision. Registry titles and dates are
-summaries, not authoritative identity evidence.
-
-### Generated relationships (schema 2)
-
-Reconstruct relationships with `python3 scripts/rebuild_family_tree.py`. The
-command is read-only unless passed `--apply`. `--include-guesses` computes two
-independent views. The engine reads typed source assertions; prose is supporting
-material and is never parsed automatically into genealogy. Existing registry
-relationships are excluded from all matching inputs.
-
-Generated records contain `relationships: []` even when no relationship can be
-exported. Remove legacy `wife` and `children` fields when applying a generated
-build; never combine them with generated relationships. A relationship is stored
-once, on its parent for `parent`, otherwise on the endpoint with the
-lexicographically smaller serialized reference. Reverse navigation is computed.
-
-Illustrative output, not historical evidence:
+`data/people.json` is the manually curated registry of confirmed, separate
+people. It is a non-empty array containing **only** `id` and `name` on each
+record. Both are non-empty strings; IDs are unique and case-sensitive and must
+not collide with any full name. Different people can have the same full name.
+Preserve confirmed IDs and names. Inclusion in this registry is a reviewed
+identity decision; reconstruction must never add provisional people to it.
 
 ```json
-{
-  "id": "example_parent",
-  "name": "Example parent",
-  "relationships": [
-    {
-      "type": "parent",
-      "of": "example_child",
-      "derivations": [
-        {
-          "view": "facts",
-          "identity": "anchored",
-          "usesGuesses": false,
-          "sources": [
-            {
-              "path": "data/documents/example.json",
-              "pointer": "/entries/0/facts/0",
-              "fingerprint": "sha256:<64 lowercase hexadecimal characters>"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {"id": "example_person", "name": "Example person"},
+  {"id": "another_person", "name": "Another person"}
+]
 ```
 
-Relationship fields are exactly `type`, `of`, `derivations`, and, only for `kin`,
-`term`. Types are `parent`, `spouse`, `sibling`, and `kin`. `term` is a non-empty
-source kinship term, such as `Vetter`; no precise modern relationship is inferred.
-Multiple spouses are allowed. `of` is an exact existing ID, otherwise a unique
-registry name. Shared names and unresolved mentions cannot select a namesake or
-create a permanent ID. No self-relationships, duplicate edges, or directed
-parentage cycles are accepted. Repeated ancestry through different branches is
-allowed. Marriage supplies no additional parentage, and siblings supply no
-parents or transitive sibling edges. Attestation dates are not relationship
-start dates.
+Do not store relationships, titles, biographies, matching results, provenance,
+input fingerprints, build metadata, or configuration here. Source assertions
+remain in their source JSON. All computed results belong in `data/tree.json`.
+Rebuilding the tree must leave the registry byte-for-byte unchanged.
 
-Every edge has one or more complete `derivations`. Each has exactly:
+## Tree JSON
 
-- `view`: `facts` or `with-guesses`.
-- `identity`: `anchored` (both endpoints are exact source IDs), `reviewed`
-  (at least one endpoint uses a scoped reviewed rule), or `inferred` (at least
-  one endpoint uses contextual matching). Use the least certain endpoint status.
-- `usesGuesses`: a boolean covering assertion content and every identity,
-  competing-candidate, and negative-evidence dependency. It is always false in
-  `facts`. A `with-guesses` derivation can be independent of guesses.
-- `sources`: a non-empty array of source references, including the relationship
-  assertion and all identity dependencies. References have exactly `path`,
-  `pointer` (zero-based RFC 6901 JSON Pointer), and `fingerprint`. Pointers end
-  in `/facts/N` or `/guesses/N`. A guesses pointer requires `usesGuesses: true`.
+`data/tree.json` is the generated family graph, separate from the confirmed
+registry. Generate it with `python3 scripts/rebuild_family_tree.py --apply`;
+add `--include-guesses` to compute facts and guesses-enabled views independently.
+Without `--apply` the CLI is read-only. The local viewer also rebuilds stale or
+missing trees and offers a rebuild button. The tree is output, never input
+identity evidence, and must not be included in its own input fingerprints.
 
-Equivalent edges retain alternative complete derivations. Different evidence
-views remain separate; do not validate their union as a single genealogy.
-Contradictory anchored evidence blocks affected conclusions and is reported by
-the CLI. Incompatible guesses remain alternatives; they cannot erase firm
-factual evidence. Unresolved endpoints and explanations remain inspectable in
-the read-only build and CLI, with omitted-edge counts in generated metadata.
-No separate facts database or persistent review queue is created.
+The top-level object has:
 
-### Reconstructed source people and complete evidence views
-
-The registry is an identity anchor list, not the limit of the family graph.
-Schema 2 stores the full reconstruction under the first record's
-`familyGraph.evidence`, keyed by each available view (`facts`, `with-guesses`).
-Each view contains `sources`, `nodes`, and `relationships`. The `sources` array
-stores each path/pointer/fingerprint reference once. In persisted view data,
-`mentions[].source`, `identitySources[]`, and derivation `sources[]` use zero-based
-integer indexes into that table; the browser expands them for display. Complete
-reference objects are also accepted when reading an uncompressed view. The ordinary per-person
-`relationships` arrays remain the registry-only projection; the viewer uses the
-complete evidence view when available. Source participants and registry IDs
-are never rewritten, and no permanent people are invented to fill gaps.
-
-A node contains `key`, `name`, `titles`, `dates`, `status`, `mentions`, and
-`identitySources`. A registry-backed node also contains `registry`, equal to
-its exact internal registry key. Other nodes use an opaque `@evidence/` handle
-derived from their source occurrences. These handles are generated view keys,
-not person IDs, and can change after new evidence changes a grouping.
-`status` is `anchored`, `contextual`, or `source`. Contextual nodes are inferred
-identity clusters; source nodes may still correspond to another node elsewhere.
-Counts describe source identities, not a proven number of distinct people.
-
-Each `mentions` item contains `source` (a path/pointer/fingerprint reference),
-`field` (`person` or `of`), and the resolved historical `date`. An occurrence
-can belong to only one node per view. `identitySources` retains the source
-references supporting grouping. Titles and dates summarize source attestations,
-without turning a mention into evidence that the person was alive.
-
-Evidence-view relationships contain `type`, `person`, `of`, `derivations`, and
-`term` for kin. Endpoints are node keys. Their derivations contain `identity`,
-`usesGuesses`, and `sources`; the containing view supplies the evidence mode.
-Identity can additionally be `source`, indicating a source participant whose
-correspondence to other occurrences remains open. Each relationship must have
-an original assertion whose participant assignments match its endpoints.
-
-The engine groups repeated participant references in one dated source passage
-only when source distinctions and graph constraints allow it. Cross-source
-links require family context: independently grounded relatives, repeated full
-spouse pairs, or multiple source-stated relatives within a temporal comparison
-window. Co-parentage can support identity, but never creates a marriage or an
-additional parent edge. Contextual given-name variants or omitted surnames
-require family support and cannot join incompatible complete surnames. Shared
-names, titles, or places alone do not link separate source people.
-
-Candidate links are evaluated in rounds against existing source profiles.
-Complete connected proposal groups must preserve separate registry anchors,
-compatible deaths, source distinctions, and acyclic parentage. Conflicting
-proposal groups remain separate. Grouping supports are retained through later
-rounds, including dependencies on guesses. Facts and guesses remain independent
-builds. Ambiguous occurrence groups are visible in the tree instead of being
-silently discarded because they lack registry IDs.
-
-`coverage` additionally records `reconstructedPeople`,
-`reconstructedRelationships`, and `contextualLinks` per view. The viewer offers
-family-group selection, source-person pages with attestations, and links to
-identity and relationship evidence. Schema 1 builds remain readable for
-migration; changed engine fingerprints trigger rebuilding into schema 2.
-
-### Build metadata and evidence verification
-
-The first registry record alone contains `familyGraph`, with:
-
-- `schema: 2`, `engine: "2"`, and `policy: "2"`.
-- `configuration.searchLimit`: the positive integer bound used for joint search.
+- `schema: 3`, `engine: "3"`, `policy: "2"`.
+- `configuration.searchLimit`: the positive integer bound for registry matching.
 - `views`: exactly `["facts"]` or `["facts", "with-guesses"]`, including empty
   or identical views.
-- `inputs`: repository-relative input path to SHA-256 fingerprint, covering all
-  recursively discovered source JSON under books/documents/notes/images,
-  `data/names.md`, `data/places.json`, the identity projection of `people.json`,
-  and the engine and shared Python utilities.
+- `inputs`: repository-relative input path to SHA-256 fingerprint, covering
+  recursively discovered source JSON in books/documents/notes/images,
+  `data/names.md`, `data/places.json`, the confirmed ID/name registry, and
+  engine/shared Python utilities.
 - `fingerprint`: the fingerprint of the complete `inputs` object.
-- `coverage`: counts per view for `unresolvedMentions`, `omittedRelationships`,
-  and `conflicts`.
+- `evidence`: a graph keyed by each available evidence view.
+- `coverage`: counts per view for `reconstructedPeople`,
+  `reconstructedRelationships`, `contextualLinks`, `registryRelationships`,
+  `unresolvedMentions` from registry matching, and `conflicts`.
 
-The identity projection excludes `wife`, `children`, `relationships`, and
-`familyGraph`. This makes repeated applications deterministic without
-invalidating the build as soon as it is written. All other registry values are
-fingerprinted. Source fingerprints cover complete parsed files, including
-enclosing dates, citations, text, and newly added assertions; a separate source
-file-set check detects added and removed files.
+### Source people and relationships
+
+Each evidence view contains `sources`, `nodes`, and `relationships`. The
+`sources` array stores each path/pointer/fingerprint reference once. Persisted
+`mentions[].source`, `identitySources[]`, and derivation `sources[]` contain
+zero-based integer indexes into that table; readers expand them for inspection.
+Complete reference objects are also accepted in an uncompressed view.
+
+A source reference has exactly `path`, `pointer`, and `fingerprint`. `path` is a
+source JSON path, `pointer` is a zero-based RFC 6901 JSON Pointer ending in
+`/facts/N` or `/guesses/N`, and `fingerprint` identifies that original assertion.
+References remain attached to their original source entry; do not relocate a
+stale pointer by searching for another identical assertion.
+
+A node contains `key`, `name`, `titles`, `dates`, `status`, `mentions`, and
+`identitySources`. A registry-backed node also contains `registry`, equal to its
+confirmed ID and node key. Other nodes use an opaque `@evidence/` handle derived
+from their source occurrences. These are generated view handles, not permanent
+person IDs, and can change when new evidence changes a grouping.
+
+`status` is `anchored`, `contextual`, or `source`. Contextual nodes are inferred
+identity clusters; source nodes can still correspond to another node elsewhere.
+Counts describe source identities, not a proven count of distinct people.
+Each mention contains `source`, `field` (`person` or `of`), and its resolved
+historical `date`. An occurrence belongs to only one node per view. Source
+references supporting grouping remain in `identitySources`. Titles and dates
+summarize attestations, without turning a mention into proof of life.
+
+Relationships contain `type`, `person`, `of`, `derivations`, and `term` for kin.
+Types are directed `parent`, and symmetric `spouse`, `sibling`, and `kin`.
+Endpoints are node keys. Kin terms preserve the source's wording, such as
+`Vetter`, without inventing a precise modern relationship. Marriage does not
+supply another parent; siblings do not supply parents or transitive siblings.
+No self-relationships or directed ancestry cycles are accepted. Repeated
+ancestry through different branches is allowed. Attestation dates are not
+relationship start dates.
+
+Each derivation contains `identity`, `usesGuesses`, and `sources`; its containing
+view supplies the evidence mode. Identity is `anchored`, `reviewed`, `inferred`,
+or `source` (correspondence to other occurrences remains open). `usesGuesses`
+covers assertion content and all identity dependencies, including negative
+constraints and earlier contextual links. Guesses references require this flag,
+and it is always false in the facts view. Every relationship must have a source
+assertion whose participant assignments match its endpoints. Equivalent edges
+retain alternative complete derivations; each view is validated separately.
+
+### Reconstruction and verification
+
+Repeated participant references can be grouped in one dated source passage only
+when source distinctions and graph constraints permit it. Cross-source links
+require family context: grounded relatives, repeated full spouse pairs, or
+multiple source-stated relatives within a temporal comparison window.
+Co-parentage can support identity, but creates no marriage or extra parent edge.
+Contextual given-name variants and omitted surnames require family support and
+cannot bridge incompatible full surnames. Matching names, titles, or places
+alone do not establish cross-source identity.
+
+Candidate links are evaluated against a frozen round. Connected source families
+are checked jointly, preserving distinct registry anchors, compatible deaths,
+source distinctions, and acyclic parentage. Conflicting proposals remain
+separate. Their supporting evidence and guess dependencies propagate through
+later links. The two evidence views are independent builds. The viewer displays
+unresolved source people, source attestations, and connected family selection.
+
+Input fingerprints cover complete parsed source files, including enclosing dates,
+citations, text, and newly added assertions; a separate source file-set check
+catches added and removed files. The registry fingerprint covers only confirmed
+IDs and names. Generated tree data is excluded, so applying an identical build
+is deterministic and does not invalidate itself.
 
 Fingerprint encoding is shared by Python and JavaScript. Recursively encode
 objects as `["object", [[key, encodedValue], ...]]` with sorted keys, arrays as
@@ -516,24 +466,15 @@ lowercase `\u` escapes, including UTF-16 surrogate pairs), then hash its UTF-8
 bytes with SHA-256 and prefix `sha256:`. Object key order and insignificant JSON
 whitespace do not affect a fingerprint; semantic input changes do.
 
-Before displaying accepted generated edges, the browser verifies the input set,
-input fingerprints, evidence pointers, assertion fingerprints, references, and
-graph consistency. Stale or unverifiable builds show a visible status and no
-accepted edges until rebuilt. Do not relocate an edited pointer by searching
-for another copy with the same fingerprint.
+Before displaying generated relationships, the viewer verifies the input set,
+input fingerprints, source pointers and hashes, participant assignments, and
+graph consistency. A stale or missing local tree triggers the Python rebuild
+and a verified reload. The browser does not duplicate the matching algorithm.
 
-`--apply` computes and validates the entire replacement before writing once.
-It verifies that source inputs and the original registry bytes have not changed
-during computation, preserves record order and unrelated values, and writes no
-timestamps. A facts-only apply removes any previous guesses-enabled view.
-
-### Legacy registry compatibility
-
-The browser accepts `wife` and `children` only when the generated schema is
-absent. Legacy references resolve exact IDs first, then unique names; ambiguous
-names never select the first or last record. Name-only registry records receive
-separate internal rendering handles. Source assertions themselves keep their
-existing schemas; generated relationship fields must not be added to them.
+`--apply` validates the complete tree in memory, rechecks source inputs, registry
+bytes, and existing tree bytes, and writes `tree.json` once. It never modifies
+`people.json` or source assertions. Intervening changes prevent a write. No
+timestamps, reports, review queues, or separate facts database are introduced.
 
 ## Places JSON
 

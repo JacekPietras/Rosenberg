@@ -237,8 +237,14 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                     configuration = metadata.get("configuration", {})
                     if not isinstance(configuration, dict):
                         configuration = {}
-                    include_guesses = payload.get("includeGuesses", "with-guesses" in metadata.get("views", ['facts', 'with-guesses']))
-                    search_limit = payload.get("searchLimit", configuration.get("searchLimit", 10000))
+                    views = metadata.get("views")
+                    if views not in (['facts'], ['facts', 'with-guesses']):
+                        views = ['facts', 'with-guesses']
+                    saved_limit = configuration.get("searchLimit")
+                    if type(saved_limit) is not int or saved_limit < 1:
+                        saved_limit = 10000
+                    include_guesses = payload.get("includeGuesses", "with-guesses" in views)
+                    search_limit = payload.get("searchLimit", saved_limit)
                     if type(include_guesses) is not bool or type(search_limit) is not int or search_limit < 1:
                         raise ValueError("Invalid rebuild options")
                     command = [sys.executable, str(ROOT / "scripts/rebuild_family_tree.py"),

@@ -31,11 +31,8 @@ class FamilyTreeServerTests(unittest.TestCase):
         (self.root / 'scripts').symlink_to(ROOT / 'scripts', target_is_directory=True)
         self.write('data/names.md', 'Alex\nBea\n')
         self.write('data/places.json', [])
-        self.write('data/people.json', [
-            {'id': 'a', 'name': 'Alex', 'familyGraph': {
-                'views': ['facts', 'with-guesses'], 'configuration': {'searchLimit': 37}}},
-            {'id': 'b', 'name': 'Bea'},
-        ])
+        self.write('data/people.json', [{'id': 'a', 'name': 'Alex'}, {'id': 'b', 'name': 'Bea'}])
+        self.write('data/tree.json', {'views': ['facts', 'with-guesses'], 'configuration': {'searchLimit': 37}})
         self.write('data/documents/test.json', {'date': '1393', 'facts': [
             {'type': 'parent', 'person': 'a', 'of': 'b'},
         ]})
@@ -72,20 +69,23 @@ class FamilyTreeServerTests(unittest.TestCase):
         status, result = self.post()
         self.assertEqual((200, {'ok': True}), (status, result))
         people = json.loads((self.root / 'data/people.json').read_text())
-        metadata = people[0]['familyGraph']
+        metadata = json.loads((self.root / 'data/tree.json').read_text())
         self.assertEqual(['facts', 'with-guesses'], metadata['views'])
         self.assertEqual(37, metadata['configuration']['searchLimit'])
-        self.assertEqual('b', people[0]['relationships'][0]['of'])
+        self.assertEqual('b', metadata['evidence']['facts']['relationships'][0]['of'])
+        self.assertTrue(all(set(person) == {'id', 'name'} for person in people))
         self.assertEqual(source, (self.root / 'data/documents/test.json').read_bytes())
-        before = (self.root / 'data/people.json').read_bytes()
+        before = (self.root / 'data/tree.json').read_bytes()
+        registry = (self.root / 'data/people.json').read_bytes()
         self.assertEqual(200, self.post()[0])
-        self.assertEqual(before, (self.root / 'data/people.json').read_bytes())
+        self.assertEqual(before, (self.root / 'data/tree.json').read_bytes())
+        self.assertEqual(registry, (self.root / 'data/people.json').read_bytes())
 
     def test_facts_only_request_does_not_add_a_guesses_view(self):
         self.assertEqual(200, self.post({'includeGuesses': False, 'searchLimit': 23})[0])
-        people = json.loads((self.root / 'data/people.json').read_text())
-        self.assertEqual(['facts'], people[0]['familyGraph']['views'])
-        self.assertEqual(23, people[0]['familyGraph']['configuration']['searchLimit'])
+        tree = json.loads((self.root / 'data/tree.json').read_text())
+        self.assertEqual(['facts'], tree['views'])
+        self.assertEqual(23, tree['configuration']['searchLimit'])
 
     def test_invalid_sources_return_failure_without_replacing_registry(self):
         before = (self.root / 'data/people.json').read_bytes()
@@ -99,6 +99,19 @@ class FamilyTreeServerTests(unittest.TestCase):
         for request in ({'command': 'anything'}, {'searchLimit': -1}, {'includeGuesses': 'true'}, ['bad']):
             with self.subTest(request=request):
                 self.assertEqual(400, self.post(request)[0])
+
+    def test_invalid_saved_options_fall_back_to_rebuild_defaults(self):
+        for metadata in ({'views': None}, {'views': 'facts'},
+                         {'configuration': {'searchLimit': -1}},
+                         {'configuration': {'searchLimit': 'bad'}},
+                         {'configuration': {'searchLimit': True}}):
+            with self.subTest(metadata=metadata):
+                self.write('data/tree.json', metadata)
+                status, result = self.post()
+                self.assertEqual(200, status, result)
+                tree = json.loads((self.root / 'data/tree.json').read_text())
+                self.assertEqual(['facts', 'with-guesses'], tree['views'])
+                self.assertEqual(10000, tree['configuration']['searchLimit'])
 
     def test_timeout_is_reported_as_a_retryable_failure(self):
         with patch.object(viewer.subprocess, 'run', side_effect=subprocess.TimeoutExpired('rebuild', 120)):

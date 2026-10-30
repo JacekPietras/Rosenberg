@@ -1,5 +1,5 @@
-import { buildRelationshipGraph, focusFamilyGraph } from '../data/relationships.js?v=2';
-import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=2';
+import { buildRelationshipGraph, focusFamilyGraph } from '../data/relationships.js?v=4';
+import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=3';
 
 function svgEscape(value) {
   return String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
