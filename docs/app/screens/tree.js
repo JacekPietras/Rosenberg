@@ -18,9 +18,9 @@ function regexEscape(value) {
 function personFacts(person, documentRecords, people) {
   const facts = [];
   const add = (fact, date, path, pointer) => {
-    if (fact == null || pointer.includes('/guesses/')) return;
+    if (fact == null) return;
     const text = factText(fact, people).trim();
-    if (text) facts.push({ ...(typeof fact === 'object' ? fact : { text: fact }), date: factDate(fact, date), sourceHref: path ? documentNavigationUrl(path, Number(pointer.match(/\/entries\/(\d+)/)?.[1] || 0)) : '' });
+    if (text) facts.push({ ...(typeof fact === 'object' ? fact : { text: fact }), isGuess: pointer.includes('/guesses/'), date: factDate(fact, date), sourceHref: path ? documentNavigationUrl(path, Number(pointer.match(/\/entries\/(\d+)/)?.[1] || 0)) : '' });
   };
   if (person.reconstruction) {
     const documents = new Map(documentRecords);
@@ -40,11 +40,11 @@ function personFacts(person, documentRecords, people) {
         const date = explicit ? '' : Object.hasOwn(value, 'date') ? value.date : inherited;
         Object.entries(value).forEach(([key, child]) => {
           const next = `${pointer}/${key.replaceAll('~', '~0').replaceAll('/', '~1')}`;
-          if (key === 'facts') {
+          if (key === 'facts' || key === 'guesses') {
             (Array.isArray(child) ? child : []).forEach((fact, index) => {
               if (factPersonMatch(fact, person.id || person.name, people) === 'direct') add(fact, date, path, `${next}/${index}`);
             });
-          } else if (key !== 'guesses') visit(child, date, next);
+          } else visit(child, date, next);
         });
       };
       visit(doc);
@@ -128,7 +128,11 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, in
   const factsTemplates = [];
   const nodes = cards.map(({ person, x, y }, index) => {
     const facts = personFacts(person, documentRecords, people);
-    factsTemplates.push(`<template data-tree-facts="${index}">${facts.length ? renderFactsView(facts, { people, inlineMarkup, sourceHref: (fact) => fact.sourceHref }) : '<p class="status">No recorded facts for this person.</p>'}</template>`);
+    const evidence = [false, true].map((isGuess) => {
+      const items = facts.filter((fact) => fact.isGuess === isGuess);
+      return items.length ? renderFactsView(items, { people, inlineMarkup, listClass: isGuess ? 'guesses-view' : '', sourceHref: (fact) => fact.sourceHref }) : '';
+    }).join('');
+    factsTemplates.push(`<template data-tree-facts="${index}">${evidence || '<p class="status">No recorded facts or guesses for this person.</p>'}</template>`);
     const nodeHeight = nodeHeightFor(person);
     const text = personLines(person).map((line, index) => `<tspan class="${line.name ? 'people-tree-name' : 'people-tree-detail'}" x="${x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line.text)}</tspan>`).join('');
     const href = `?person=${encodeURIComponent(person.id || (person._evidence ? person._treeKey : person.name))}`;
