@@ -1,5 +1,5 @@
 Eberhard, Ebirh, Everard, Everhard, Eberhardi, Ebirhardus, eebhrt, rebhart, Ebhart, Eberhardus, Ebhrhard, Eberhardts, Eberhart, Ebirbard, Ebirhardo, Ebirhardz, Ebirhart, Ebyrhard, Eberhardt, erberhart, Eberharten, Ebirharten, Eberhardum, Ebert, Eberh, Eberhards
-Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele
+Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele, Wyklo
 Engelhard, Engelhart, Engelhardus
 Konrad, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat, Cunrad, Cunreth
 Kunz, Cunz, Konz, Conz, Concz, Contz, Contze, Kontz, Kuntz, Cuntz, Cuncze, Guntz, Kunczen // are shortened versions of Konrad, but not used as it\! [1401 March 5]
