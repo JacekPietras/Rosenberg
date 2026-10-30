@@ -17,7 +17,7 @@ from .names import normalize
 from .scoring import place_patterns
 
 DEFAULTS = {
-    'model': 'weighted-log-odds-v1', 'calibrated': False,
+    'model': 'weighted-log-odds-v2', 'calibrated': False,
     'priorProbability': 0.05, 'mergeProbability': 0.85,
     'ambiguityLogOddsMargin': 1.0, 'clusterMinimumProbability': 0.35,
     'guessWeight': 0.45,
@@ -26,8 +26,10 @@ DEFAULTS = {
     'titleWeights': {'office': 8.0, 'designation': 6.0, 'age': 3.0, 'territory': 3.0, 'rank': 0.75, 'other': 1.0},
     'titleHalfLivesYears': {'office': 15.0, 'designation': 30.0, 'age': 12.0, 'territory': 15.0, 'rank': 20.0, 'other': 15.0},
     'placeWeights': {'issuance': 2.0, 'property': 4.0, 'context': 2.5}, 'placeHalfLifeYears': 20.0,
+    'crossRolePlaceFactor': 0.5,
     'associateWeight': 2.0, 'associateMaxWeight': 4.0, 'associateHalfLifeYears': 15.0,
     'familyWeights': {'anchored': 9.0, 'linked': 7.5, 'name': 4.0, 'spouse': 9.0}, 'familyMaxWeight': 16.0,
+    'relativeRarityWeight': 1.0, 'relativeRarityMaxWeight': 1.5, 'relativeRarityReferenceFrequency': 0.1,
     'opposedAgePenalty': 5.0, 'opposedAgeHalfLifeYears': 10.0,
     'deathConflictPenalty': 20.0, 'distinctPenalty': 20.0, 'maxRounds': 12,
 }
@@ -50,6 +52,8 @@ def parameters(value=None):
     for key in ('priorProbability', 'mergeProbability', 'clusterMinimumProbability', 'guessWeight'):
         if not 0 < result[key] < 1:
             raise ValueError(f'matching.{key}: expected a value between zero and one')
+    if result['crossRolePlaceFactor'] > 1 or result['relativeRarityReferenceFrequency'] >= 1:
+        raise ValueError('matching: invalid cross-role factor or rarity reference frequency')
     if result['priorProbability'] >= result['mergeProbability'] or type(result['maxRounds']) is not int:
         raise ValueError('matching: invalid prior, threshold, or iteration bound')
     if result['sourceWeights'] != DEFAULTS['sourceWeights']:
@@ -80,7 +84,7 @@ def title_category(title):
         return 'rank', 'ritter' if value in {'ritter', 'miles'} else 'edelknecht'
     if value.startswith('zu '):
         return 'territory', value
-    if re.match(r'^(vogt|amtmann|hofmeister|burggraf|domherr|vizedom|vitztum|komtur)\s+\S', value):
+    if re.search(r'\b(vogt|amtmann|hofmeister|burggraf|domherr|vizedom|vitztum|komtur)\s+\S', value):
         return 'office', value
     return 'other', value
 
@@ -107,6 +111,7 @@ class Profile:
     confidence: float = 1.0
     key: str = ''
     distinctions: dict = field(default_factory=dict)
+    office_scopes: dict = field(default_factory=dict)
 
 
 # Deliberately deterministic; no extraction of relationships from prose.
@@ -117,15 +122,60 @@ class ProbabilityModel:
     def __init__(self, settings, names):
         self.settings, self.names = parameters(settings), names
         self.patterns = place_patterns(resolve_place_names(names.raw_places))
+        self.background = {'total': 0.0, 'counts': {}}
+
+    def set_name_frequencies(self, assertions, observations, registry):
+        counts = {}
+        for assertion in assertions:
+            if assertion.source.kind != 'facts':
+                continue
+            found = {self.names.key(registry[m.reference]['name'] if m.reference in registry else m.reference) for m in assertion.mentions}
+            for name in found:
+                if len(name.split()) >= 2:
+                    counts[name] = counts.get(name, 0) + reliability(assertion.source, self.settings)
+        for observation in observations:
+            if observation.source.kind != 'facts':
+                continue
+            found = self.person_names(observation.text)
+            found |= {self.names.key(person['name']) for identity, person in registry.items() if '[' + identity + ']' in observation.text}
+            for name in found:
+                if len(name.split()) >= 2:
+                    counts[name] = counts.get(name, 0) + reliability(observation.source, self.settings)
+        self.background = {'total': round(sum(counts.values()), 8), 'counts': {name: round(counts[name], 8) for name in sorted(counts)}}
+
+    def relative_rarity(self, name):
+        if self.background['total'] <= 0 or len(name.split()) < 2:
+            return 0, 0
+        # Add-one smoothing and a cap prevent a rare typo from becoming an
+        # overwhelming discriminator. Counts are factual and frozen per build.
+        frequency = (self.background['counts'].get(name, 0) + 1) / (self.background['total'] + 1)
+        value = max(0, math.log(self.settings['relativeRarityReferenceFrequency'] / frequency))
+        return min(self.settings['relativeRarityMaxWeight'], self.settings['relativeRarityWeight'] * value), frequency
+
+    @lru_cache(maxsize=None)
+    def person_references(self, text):
+        result = set()
+        for match in PERSON_NAME.finditer(text):
+            value = match.group()
+            first = value.split()[0].casefold()
+            if first in {'the', 'a', 'an', 'family', 'familie'}:
+                continue
+            prefixes = {'herr', 'frau', 'graf', 'count', 'sir', 'ritter', 'freiherr', 'markgraf', 'pfalzgraf', 'archbishop', 'bishop', 'erzbischof', 'bischof'}
+            if first in prefixes and len(value.split()) <= 3:
+                continue
+            if first in prefixes:
+                value = value.split(' ', 1)[1]
+            result.add(value)
+        return frozenset(result)
 
     @lru_cache(maxsize=None)
     def person_names(self, text):
-        return {self.names.key(match.group()) for match in PERSON_NAME.finditer(text)}
+        return frozenset(self.names.key(value) for value in self.person_references(text))
 
     @lru_cache(maxsize=None)
     def places(self, text):
         if not isinstance(text, str):
-            return set()
+            return frozenset()
         matches = {}
         for pattern, keys in self.patterns:
             for match in pattern.finditer(text):
@@ -137,7 +187,7 @@ class ProbabilityModel:
             selected.append((start, end))
             if len(keys) == 1:
                 result.update(keys)
-        return result
+        return frozenset(result)
 
     def add_context(self, profile, source, bounds, text='', issuance='', self_names=()):
         if bounds is None:
@@ -183,6 +233,16 @@ class ProbabilityModel:
                 by_category[category] = value, title, sources
         for category, (value, title, sources) in sorted(by_category.items()):
             add(f'{category} title: {title}', value, sources)
+        # Different scoped offices can share territorial context. It is weaker
+        # than an exact office match and must not count the same scope twice.
+        if 'office' not in by_category:
+            scope_values = [(*best(left.office_scopes[place], right.office_scopes[place], p['titleWeights']['territory'], p['titleHalfLivesYears']['territory']), place)
+                            for place in sorted(set(left.office_scopes) & set(right.office_scopes))]
+            if scope_values:
+                value, sources, place = max(scope_values, key=lambda item: item[0])
+                previous = by_category.get('territory', (0, '', ()))[0]
+                if value > previous:
+                    add(f'shared office scope: {place}', value - previous, sources)
         for a, b in (('young', 'elder'), ('elder', 'young')):
             value, sources = best(left.titles.get(('age', a), []), right.titles.get(('age', b), []),
                                   p['opposedAgePenalty'], p['opposedAgeHalfLifeYears'])
@@ -191,10 +251,17 @@ class ProbabilityModel:
         # One strongest observation per place; distinct place roles are not
         # independent evidence about the same geographical association.
         place_values = {}
-        for role, place in sorted(set(left.places) & set(right.places)):
-            value, sources = best(left.places[(role, place)], right.places[(role, place)], p['placeWeights'][role], p['placeHalfLifeYears'])
-            if value > place_values.get(place, (0, '', ()))[0]:
-                place_values[place] = value, role, sources
+        for (left_role, place), a in sorted(left.places.items()):
+            for (right_role, other_place), b in sorted(right.places.items()):
+                if place != other_place:
+                    continue
+                weight = min(p['placeWeights'][left_role], p['placeWeights'][right_role])
+                if left_role != right_role:
+                    weight *= p['crossRolePlaceFactor']
+                value, sources = best(a, b, weight, p['placeHalfLifeYears'])
+                role = left_role if left_role == right_role else '/'.join(sorted((left_role, right_role)))
+                if value > place_values.get(place, (0, '', ()))[0]:
+                    place_values[place] = value, role, sources
         for place, (value, role, sources) in sorted(place_values.items()):
             add(f'{role} place: {place}', value, sources)
 
@@ -217,13 +284,19 @@ class ProbabilityModel:
             if not identity and len(relative_name.split()) < 2:
                 continue
             value, sources = best(left.relatives[token], right.relatives[token], weight * confidence, p['timeDistanceScaleYears'])
-            if value > relatives.get(key, (0, '', ()))[0]:
-                relatives[key] = value, f'{role[0]} family context: {relative_name}', sources
+            rarity, frequency = self.relative_rarity(relative_name)
+            bonus, _ = best(left.relatives[token], right.relatives[token], rarity * confidence, p['timeDistanceScaleYears'])
+            if value + bonus > relatives.get(key, (0, '', (), 0, 0, 0))[0]:
+                label = 'shared family context' if role[0] == 'family context' else f'{role[0]} family context'
+                relatives[key] = value + bonus, f'{label}: {relative_name}', sources, value, bonus, frequency
         remaining = p['familyMaxWeight']
-        for value, label, sources in sorted(relatives.values(), key=lambda item: (-item[0], item[1])):
+        for _, label, sources, value, bonus, frequency in sorted(relatives.values(), key=lambda item: (-item[0], item[1])):
             value = min(value, remaining)
             add(label, value, sources)
             remaining -= value
+            bonus = min(bonus, remaining)
+            add(f'full relative name rarity: {label.split(": ", 1)[1]} ({frequency:.2%} of factual references)', bonus, sources)
+            remaining -= bonus
 
         # Conflicting guessed deaths are drastic negative evidence, not a hard
         # identity assertion. Ordinary late mentions do not prove life.

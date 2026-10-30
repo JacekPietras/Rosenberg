@@ -63,7 +63,7 @@ export async function renderActiveScreen({
   if (state.active === 'tree') {
     const focus = state.familyFocus && (state.familyFocus === 'all' || state.familyGraph?.components?.some((c) => c.key === state.familyFocus))
       ? state.familyFocus : state.familyGraph?.defaultFocus;
-    content.innerHTML = renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph, focus });
+    content.innerHTML = renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph, focus, showKins: state.showKins });
     setupFamilyControls();
     setupPeopleTreeZoom(content);
     return;
@@ -103,6 +103,9 @@ export async function renderActiveScreen({
   scrollToEntryHash();
 
   function setupFamilyControls() {
+    content.querySelector('[data-show-kins]')?.addEventListener('change', async (event) => {
+      await state.changeShowKins?.(event.target.checked);
+    });
     content.querySelector('[data-family-focus]')?.addEventListener('change', async (event) => {
       await state.changeFamilyFocus?.(event.target.value);
     });

@@ -11,7 +11,7 @@ import re
 
 from .constraints import cycle_nodes
 from .dates import compatible_deaths, near
-from .model import fingerprint
+from .model import fingerprint, Assertion, Mention
 from .probability import ProbabilityModel, Profile, title_category, reliability
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
@@ -24,6 +24,51 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     dependencies = defaultdict(dict)
     links, comparisons = [], {}
     model = ProbabilityModel(parameters, names)
+    model.set_name_frequencies(assertions, observations, registry)
+    # Informative prose-only actors are context occurrences, not new family
+    # assertions. They can bridge typed family records, but never add edges.
+    typed_scopes = defaultdict(list)
+    for mention in mentions.values():
+        key = (mention.assertion.source.path, mention.assertion.source.pointer.rsplit('/' + mention.assertion.source.kind + '/', 1)[0])
+        typed_scopes[key].append(mention)
+    context_handles = defaultdict(list)
+    required = math.log(model.settings['mergeProbability'] / (1 - model.settings['mergeProbability'])) - math.log(model.settings['priorProbability'] / (1 - model.settings['priorProbability']))
+    for observation in observations:
+        if not observation.bounds:
+            continue
+        passage = (observation.source.path, observation.source.pointer.rsplit('/' + observation.source.kind + '/', 1)[0])
+        explicit = {identity for identity, person in registry.items() if person.get('id') == identity and '[' + identity + ']' in observation.text}
+        references = set(explicit)
+        literal_references = model.person_references(observation.text)
+        normalized_counts = defaultdict(int)
+        for reference in literal_references:
+            normalized_counts[names.key(reference)] += observation.text.count(reference)
+        for identity in explicit:
+            normalized_counts[names.key(registry[identity]['name'])] += 1
+        for reference in literal_references:
+            normalized = names.key(reference)
+            if any(names.key(registry[m.reference]['name'] if m.reference in registry else m.reference) == normalized
+                   and max(m.assertion.bounds[0], observation.bounds[0]) <= min(m.assertion.bounds[1], observation.bounds[1])
+                   for m in typed_scopes[passage]):
+                continue
+            # A repeated literal name in one fact may distinguish namesakes.
+            if normalized_counts[normalized] != 1 or reference in registry:
+                continue
+            profile = Profile([], [])
+            model.add_context(profile, observation.source, observation.bounds, observation.text,
+                              issuance=observation.context.get('place', ''), self_names={normalized})
+            places = {place: max(model.settings['placeWeights'][role] for role, site in profile.places if place == site) for _, place in profile.places}
+            potential = (sum(places.values()) + min(model.settings['associateMaxWeight'], len(profile.associates) * model.settings['associateWeight'])) * reliability(observation.source, model.settings)
+            if potential >= required:
+                references.add(reference)
+        for reference in sorted(references):
+            handle = observation.source.key + '/text/' + reference
+            assertion = Assertion(observation.source, {'type': 'context'}, observation.historical_date, observation.bounds, observation.context)
+            mention = Mention(handle, reference, 'text', (), False, assertion)
+            assertion.mentions = [mention]
+            mentions[handle] = mention
+            parent[handle] = handle
+            context_handles[observation.source.key].append(handle)
     confidence = defaultdict(lambda: 1.0)
     round_scores = {}
 
@@ -160,7 +205,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 for key in component:
                     parent[key] = root
                 dependencies[root].update(refs)
-                estimates = [record['probability'] for (a, b), record in round_scores.items() if a in component and b in component]
+                estimates = [round_scores[pair]['probability'] for a in component for b in adjacency[a]
+                             if a < b and (pair := tuple(sorted((a, b)))) in round_scores]
                 confidence[root] = min([confidence[key] for key in component] + estimates)
                 links.append({'reason': reason, 'mentions': joined,
                               'sources': [refs[key].export() for key in sorted(refs)]})
@@ -182,14 +228,29 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     # passage distinguishes namesakes, leave the unqualified occurrences apart.
     local = defaultdict(list)
     for handle, mention in mentions.items():
-        if not anchor([handle]):
+        if not anchor([handle]) and mention.field != 'text':
             local[(scope(mention), name(handle))].append(handle)
     local_proposals = []
+    current_local = groups()
+    def compatible_local(handles):
+        roots = {find(h) for h in handles}
+        joined = [h for root in roots for h in current_local[root]]
+        return consistent([joined, *[group for root, group in current_local.items() if root not in roots]])
     for handles in local.values():
         if len(handles) < 2:
             continue
-        for left, right in zip(handles, handles[1:]):
-            local_proposals.append((left, right, [mentions[left].assertion.source, mentions[right].assertion.source]))
+        neighbors = defaultdict(set)
+        pairs = []
+        for left, right in combinations(handles, 2):
+            if compatible_local([left, right]):
+                pairs.append((left, right))
+                neighbors[left].add(right); neighbors[right].add(left)
+        # An unqualified occurrence compatible with conflicting namesakes must
+        # not bridge them. Qualified occurrences can still group with each other.
+        ambiguous = {h for h, choices in neighbors.items() if not compatible_local([h, *choices])}
+        for left, right in pairs:
+            if left not in ambiguous and right not in ambiguous:
+                local_proposals.append((left, right, [mentions[left].assertion.source, mentions[right].assertion.source]))
     accept(local_proposals, 'repeated participant within one dated source passage')
 
     # Only a specific source reference plus the historical date and complete
@@ -222,41 +283,61 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                       for root, handles in current.items()}
         for root, profile in profiles.items():
             profile.refs.update(dependencies[root])
-        scopes = defaultdict(lambda: defaultdict(set))
+        scope_mentions = defaultdict(list)
         for handle, mention in mentions.items():
             root = find(handle)
-            passage = scope(mention)
-            scopes[passage][name(handle)].add(root)
+            scope_mentions[(scope(mention)[:2], name(handle))].append((handle, mention))
             profile = profiles[root]
             ref, bounds = mention.assertion.source, mention.assertion.bounds
             profile.refs[ref.key] = ref
             for title in mention.titles:
-                profile.titles.setdefault(title_category(title), []).append((ref, bounds))
+                category = title_category(title)
+                profile.titles.setdefault(category, []).append((ref, bounds))
+                if category[0] == 'office':
+                    for place in model.places(title):
+                        profile.office_scopes.setdefault(place, []).append((ref, bounds))
             model.add_context(profile, ref, bounds, issuance=mention.assertion.context.get('place', ''))
+        context_coverage = {'total': len(observations), 'attached': 0, 'undated': 0, 'unattached': 0, 'explicitIdFacts': 0}
+        # A bracketed confirmed ID identifies its person even when that source
+        # contains no typed participant. Plain names still require local context.
+        ids = {identity: registry[identity]['name'] for identity in by_anchor}
         for observation in observations:
             if not observation or observation.bounds is None:
+                context_coverage['undated'] += 1
                 continue
-            passage = (observation.source.path, observation.source.pointer.rsplit('/' + observation.source.kind + '/', 1)[0], observation.historical_date)
+            passage = (observation.source.path, observation.source.pointer.rsplit('/' + observation.source.kind + '/', 1)[0])
+            explicit = {identity for identity in ids if '[' + identity + ']' in observation.text}
+            text = observation.text
+            for identity in sorted(explicit):
+                text = text.replace('[' + identity + ']', ids[identity])
+            attached = {find(by_anchor[identity][0]) for identity in explicit}
+            attached.update(find(handle) for handle in context_handles[observation.source.key])
+            if explicit:
+                context_coverage['explicitIdFacts'] += 1
             found = model.person_names(observation.text)
             for person_name in sorted(found):
-                candidates = scopes[passage].get(person_name, set())
-                # A prose name cannot select one of several namesakes in a
-                # passage, and a whole entry is never an associate clique.
+                # Match date intervals, not ISO spelling: 1393 and 1393-05-01
+                # may refer to the same passage participant.
+                candidates = {find(h) for h, m in scope_mentions[(passage, person_name)]
+                              if max(m.assertion.bounds[0], observation.bounds[0]) <= min(m.assertion.bounds[1], observation.bounds[1])}
                 if len(candidates) == 1:
-                    root = next(iter(candidates))
-                    model.add_context(profiles[root], observation.source, observation.bounds, observation.text,
-                                      self_names={root_names[root], person_name})
+                    attached.update(candidates)
+            for root in sorted(attached):
+                model.add_context(profiles[root], observation.source, observation.bounds, text,
+                                  self_names={root_names[root]})
+            context_coverage['attached' if attached else 'unattached'] += 1
         parents = defaultdict(lambda: defaultdict(list))
-        def relative(profile_root, relative_root, role, source_assertions):
+        def relative(profile_root, relative_root, role, source_assertions, context_confidence=1.0, context_refs=()):
             profile, other = profiles[profile_root], profiles[relative_root]
             relative_name = root_names[relative_root]
-            tokens = [(role, relative_root, relative_name, other.anchored, other.confidence),
+            tokens = [(role, relative_root, relative_name, other.anchored, min(other.confidence, context_confidence)),
                       (role, '', relative_name, False, 1.0)]
             for token in tokens:
                 profile.relatives.setdefault(token, []).extend((a.source, a.bounds) for a in source_assertions)
             for a in source_assertions:
                 profile.refs[a.source.key] = a.source
             profile.refs.update(dependencies[relative_root])
+            profile.refs.update({ref.key: ref for ref in context_refs})
         for assertion in assertions:
             if assertion.original['type'] not in RELATIONS:
                 continue
@@ -272,11 +353,15 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     relative(own, other, ('family context', '', ''), [assertion])
             if kind == 'parent':
                 parents[right][left].append(assertion)
-        for co_parents in parents.values():
+        for child, co_parents in parents.items():
             for left, right in combinations(co_parents, 2):
+                # Repeated attestations of a same-named parent are not evidence
+                # that those unresolved parent records are different partners.
+                if compatible_names(root_names[left], root_names[right]):
+                    continue
                 basis = [*co_parents[left], *co_parents[right]]
-                relative(left, right, ('family context', '', ''), basis)
-                relative(right, left, ('family context', '', ''), basis)
+                relative(left, right, ('family context', '', ''), basis, confidence[child], dependencies[child].values())
+                relative(right, left, ('family context', '', ''), basis, confidence[child], dependencies[child].values())
         buckets = defaultdict(list)
         for root in current:
             buckets[given(root_names[root])].append(root)
@@ -294,6 +379,11 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 comparisons[pair] = record
                 if len(anchor([*current[left], *current[right]])) > 1:
                     record.update(status='incompatible', reason='distinct confirmed registry IDs')
+                    continue
+                partial_name = any((len(name(a).split()) == 1) != (len(name(b).split()) == 1)
+                                   for a in current[left] for b in current[right])
+                if partial_name and not any(f['contribution'] > 0 and ('family context:' in f['name'] or 'office title:' in f['name'] or 'designation title:' in f['name']) for f in record['features']):
+                    record.update(status='incompatible', reason='an omitted surname requires family or identifying-title support; shared geography and associates are insufficient')
                     continue
                 if record['probability'] < model.settings['mergeProbability']:
                     continue
@@ -346,7 +436,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             mention = mentions[handle]
             refs[mention.assertion.source.key] = mention.assertion.source
             occurrences.append({'source': mention.assertion.source.export(), 'field': mention.field,
-                                'date': mention.assertion.historical_date})
+                                'date': mention.assertion.historical_date,
+                                **({'reference': mention.reference} if mention.field == 'text' else {})})
         display = min(handles, key=lambda h: (-len(name(h).split()), -len(mentions[h].reference), h))
         nodes.append({'key': key, **({'registry': key} if anchors else {}),
                       'name': registry[key]['name'] if anchors else mentions[display].reference,
@@ -387,6 +478,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     # Unconnected title/death occurrences remain available for identity scoring;
     # the family view contains participants in actual relationship assertions.
     participants = {edge[field] for edge in edges.values() for field in ('person', 'of')}
+    context_coverage['contextOnlyOccurrences'] = sum(len(handles) for handles in context_handles.values())
+    context_coverage['contextOccurrencesInFamilies'] = sum(keys[handle] in participants for handles in context_handles.values() for handle in handles)
     exported_comparisons = []
     for pair, comparison in sorted(comparisons.items()):
         left, right = keys[pair[0]], keys[pair[1]]
@@ -400,4 +493,5 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             'sources': [ref.export() for ref in comparison['sources']]})
     return {'nodes': [node for node in nodes if node['key'] in participants],
             'relationships': [edges[key] for key in sorted(edges)], 'links': links,
-            'comparisons': exported_comparisons}
+            'comparisons': exported_comparisons, 'contextCoverage': context_coverage,
+            'nameFrequencies': model.background}

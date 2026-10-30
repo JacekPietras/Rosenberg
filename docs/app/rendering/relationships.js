@@ -32,11 +32,13 @@ export function relationshipPanel(graph, key = null) {
 function probabilityParameters(graph) {
   const settings = graph.metadata?.configuration?.probability;
   if (!settings) return '';
+  const background = graph.metadata.matchingBackground?.[graph.view];
+  const context = graph.metadata.coverage?.[graph.view]?.contextCoverage;
   const flatten = (value, prefix = '') => Object.entries(value).flatMap(([key, item]) => {
     const label = prefix ? `${prefix}.${key}` : key;
     return item && typeof item === 'object' ? flatten(item, label) : [[label, String(item)]];
   });
-  return `<details class="matching-parameters"><summary>Matching parameters (global)</summary><p>Estimated probabilities · uncalibrated model. Guesses are always included with lower weight. Configuration: <code>data/matching.json</code>.</p><table><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>${flatten(settings).map(([key, value]) => `<tr><td>${escapeHtml(key)}</td><td>${escapeHtml(value)}</td></tr>`).join('')}</tbody></table></details>`;
+  return `<details class="matching-parameters"><summary>Matching parameters (global)</summary><p>Estimated probabilities · uncalibrated model. Guesses are always included with lower weight. Configuration: <code>data/matching.json</code>.</p>${background ? `<p>Relative-name frequency background: ${background.total} weighted factual name references. This measures representation in the sources, not historical population frequency.</p>` : ''}${context ? `<p>Context facts available to the matcher: ${context.attached} of ${context.total} facts/guesses; ${context.explicitIdFacts} contain confirmed IDs. Other text lacks a usable date, a supported unique actor, or sufficient matching evidence.</p>` : ''}<table><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>${flatten(settings).map(([key, value]) => `<tr><td>${escapeHtml(key)}</td><td>${escapeHtml(value)}</td></tr>`).join('')}</tbody></table></details>`;
 }
 
 export function identityComparisons(graph, key = null) {

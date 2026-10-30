@@ -1,6 +1,6 @@
 # Family tree: current implementation
 
-Engine 4 / policy 3 implements the
+Engine 5 / policy 4 implements the
 [probability-matching requirements](probability-matching-requirements.md).
 The normal tree always uses facts and lower-weight guesses. Probability values
 are explicit model estimates, **not calibrated historical accuracy**.
@@ -43,6 +43,8 @@ Initial assumptions include:
 These values encode assumptions and tested behavior; they are not fitted
 probability estimates. All other category weights, half-lives, temporal scales,
 caps, and iteration limits are in the configuration and global viewer panel.
+Model v2 also exposes cross-role place support (factor 0.5) and relative-name
+rarity (weight 1.0, maximum 1.5, reference frequency 0.1).
 
 ## Source ingestion and context
 
@@ -53,20 +55,30 @@ Kunz/Konrad and Münch/non-Münch distinctions. Books and notes require explicit
 historical assertion dates; publication dates never supply them.
 
 Dated textual facts and guesses supply supporting context through deterministic
-recognition of `XXX von YYY` personal names. Context attaches only when the name
-selects a unique source participant in the same dated passage. Co-occurrence is
+recognition of `XXX von YYY` personal names. Exact bracketed confirmed IDs bind
+directly to their anchors. Ordinary names attach to a unique participant in the
+same source passage when their date intervals overlap; equal ISO spellings are
+not required. If no typed participant exists, an informative textual occurrence
+can become a provisional context record. Its strongest possible place/associate
+support must be capable of passing the existing threshold, otherwise no context
+profile is added. These context records can bridge typed families but never
+create relationship edges or additional disconnected family cards. Co-occurrence is
 within one fact, not an entire entry. Recognized places use `places.json` and its
 variations; personal names are stripped before matching geographical context so
 surname places do not become evidence of property ownership or residence.
 Property words select the property-place feature. No family relationships or
 titles are extracted speculatively from prose, and no source assertions change.
-Undated or ambiguous text is not attached automatically.
+Undated or ambiguous text is not attached automatically. Repeated normalized
+names in one textual fact are not used to manufacture a unique context actor.
+Text-context occurrences remain individually identifiable by their source and
+reference; only exact IDs seed fixed context identities.
 
 ## One source-to-source probability model
 
 Exact case-sensitive registry IDs seed fixed identities. Source-local repeated
 participants and specifically cited duplicate attestations can be grouped when
-consistent. Different registry IDs always remain separate. Registry biography,
+consistent. Conflicting local namesakes no longer prevent a qualified subset
+from grouping; an ambiguous unqualified mention cannot bridge those subsets. Different registry IDs always remain separate. Registry biography,
 legacy genealogy, and the wording of IDs supply no identity evidence.
 
 The source matcher compares all compatible-name groups, including groups with
@@ -85,7 +97,11 @@ temporal consistency penalty, not an invented biological age or lifespan.
 
 Every title category decays with time, including age epithets, ranks, territorial
 scope, offices, and called/born designations. Scoped offices are much stronger
-than generic ranks. Missing titles are neutral; changing from younger to elder
+than generic ranks. Institutional prefixes such as `erzb. Amtmann` are recognized as offices.
+Different offices in the same unambiguous place can supply weaker shared-scope
+evidence without duplicating an exact office match. Place support can cross
+issuance/property/context roles at the configured reduced factor.
+Missing titles are neutral; changing from younger to elder
 or Edelknecht to Ritter is not automatically a contradiction. Opposed age titles
 supply a time-decaying negative feature; explicit source distinctions remain
 constraints. Death intervals preserve precision, exclusive diedBefore bounds,
@@ -102,7 +118,19 @@ co-parent context. They collect the candidate's titles from relationship facts;
 they never transfer a relative's title onto the candidate. Accepted links retain
 confidence and dependencies for later frozen rounds. Evidence about rival
 candidates is retained when it affects selection, including negative guessed
-evidence. The algorithm's earlier conclusion is not independent corroboration.
+evidence. The algorithm's earlier conclusion is not independent corroboration. Cluster
+confidence uses accepted links, not rejected pairwise comparisons that happened
+to lie inside the final cluster. An omitted surname requires family or
+identifying-title support; common geography and associates alone are insufficient.
+Repeated same-named parent records do not become distinct co-parent evidence,
+and co-parent context retains the child-identity confidence and provenance.
+
+Full relative names receive a capped specificity adjustment based on factual
+participant and textual-name frequencies, with source factors applied. Counts
+are frozen per build and exclude guesses. Add-one smoothing and the cap prevent
+a rare typo from dominating a match. The adjustment can help a specific family
+pair bootstrap without IDs; it does not make a matching name alone sufficient.
+Counts and their total are stored per view in `matchingBackground`.
 
 Candidates must pass the configured threshold and reciprocal margin. Complete
 candidate components and connected source families are checked jointly before
@@ -153,8 +181,17 @@ Older viewer artifacts retain migration read support.
 
 Each identity has exactly one card, including multiple marriages and shared
 descendants. A layered graph layout aligns spouses when ancestry permits and
-routes long edges around cards. Every connector represents an existing parent
-or spouse assertion. Shared buses require identical recorded parent sets;
+routes long edges around cards. Every connector represents an existing parent, spouse, sibling, or kin
+assertion. Previously sibling and kin links appeared only in the text panel,
+which made connected source families look like disconnected diagrams. They now
+connect the same unique cards, with their source terms and no invented parents
+when **show kins** is enabled. That checkbox defaults to off. Children with the
+same recorded parents stay in contiguous layout blocks. With kins hidden, a
+child with exactly two recorded, married parents uses only the identifiable
+father's visible stem; unknown roles retain both stems. Name hints select a
+display stem only and supply no matching or ancestry evidence. Both parent
+assertions remain in the evidence panel. Shared buses require identical full
+recorded parent sets even when a mother's stem is hidden;
 marriage never supplies another parent. Dense graphs may have crossing lines,
 without duplicate cards. Source-person and registry pages show provenance and
 identity-comparison explanations. Inferred identities remain labelled.
@@ -187,3 +224,37 @@ heuristics joined. This is a model to evaluate against reviewed positive and
 negative identities, not a calibrated historical benchmark. No numerical-age
 model, speculative prose relationship extraction, or automated seal comparison
 is introduced. Seal comparison remains human work.
+
+## Fragmentation investigation
+
+The follow-up audit found dropped bracketed-ID context, exact date-string
+matching instead of interval overlap, local grouping that discarded compatible
+qualified subsets, missing shared-place support across roles, unrecognized
+prefixed offices, and a confidence bug that used rejected links in accepted
+clusters. It also found that prose-only actors could never relay contextual
+evidence, specific full-relative-name matches lacked a frequency adjustment,
+and sibling/kin graph links were absent from the diagram. These are general
+pipeline corrections; the merge threshold and source factors were not lowered.
+
+Regressions cover those paths, preserve the Elisabeth/Else distinction, check
+context source references in Python and JavaScript, retain all original typed
+relationships, and require one card and one connector per actual identity/edge.
+Context coverage is exposed in the global panel so remaining unused text is
+visible rather than being mistaken for complete evidence coverage.
+
+On the checked-in source corpus, the weighted view changed from 719 source
+identities and 283 connected source families to 655 identities and 246 families.
+The previous diagram omitted 214 sibling/kin links, so it actually displayed
+451 disconnected pieces with at most eight people together. Drawing every
+relationship and applying the matching corrections produces 246 connected
+pieces, with 25 people in the largest. These counts exclude confirmed registry
+records without a source-family node.
+
+All 582 weighted-view source relationship assertions (553 in the facts-only
+view) retain their endpoints, kin terms, source references, and source weights.
+Elisabeth von Erligheim retains all 11 typed attestations in one node and remains
+distinct from the confirmed Else record. The weighted matcher can now use
+context from 751 of 1,838 textual facts/guesses; the remaining text still lacks
+a supported attachment under the current rules. Lower identity/edge counts
+reflect consolidated attestations, not removed source evidence. These results
+verify software behavior and evidence coverage, not historical calibration.

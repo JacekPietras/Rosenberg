@@ -375,7 +375,7 @@ identity evidence, and must not be included in its own input fingerprints.
 
 The top-level object has:
 
-- `schema: 4`, `engine: "4"`, `policy: "3"`.
+- `schema: 4`, `engine: "5"`, `policy: "4"`.
 - `configuration.searchLimit`: the positive integer bound for the retained registry diagnostics.
 - `configuration.probability`: the effective model settings from `data/matching.json`,
   including model/calibration status, source and guess weights, prior, merge
@@ -388,9 +388,14 @@ The top-level object has:
   engine/shared Python utilities.
 - `fingerprint`: the fingerprint of the complete `inputs` object.
 - `evidence`: a graph keyed by each available evidence view.
+- `matchingBackground`: per-view factual full-name counts and their weighted
+  total, used for capped relative-name specificity. Source factors apply and
+  guesses are excluded. Totals and values are validated.
 - `coverage`: counts per view for `reconstructedPeople`,
   `reconstructedRelationships`, `contextualLinks`, `registryRelationships`,
-  `unresolvedMentions` from registry diagnostics, `candidateComparisons`, and `conflicts`.
+  `unresolvedMentions` from registry diagnostics, `candidateComparisons`,
+  `contextCoverage`, and `conflicts`. Context coverage counts attached,
+  unattached, undated, explicit-ID, context-only, and family-linked occurrences.
 
 ### Source people and relationships
 
@@ -418,8 +423,13 @@ person IDs, and can change when new evidence changes a grouping.
 `status` is `anchored`, `contextual`, or `source`. Contextual nodes are inferred
 identity clusters; source nodes can still correspond to another node elsewhere.
 Counts describe source identities, not a proven count of distinct people.
-Each mention contains `source`, `field` (`person` or `of`), and its resolved
-historical `date`. An occurrence belongs to only one node per view. Source
+Each mention contains `source`, `field`, and its resolved historical `date`.
+Typed occurrences use `field: "person"` or `"of"`. Textual context occurrences
+use `field: "text"` and a `reference` containing a literal name from the fact
+or a confirmed ID explicitly present as `[id]`. The reference must be supported
+by the original fact text. A context ID cannot override a different fixed
+anchor. Occurrence uniqueness includes the text reference; several named actors
+in one fact are distinct occurrences, not duplicate assignments. An occurrence belongs to only one node per view. Source
 references supporting grouping remain in `identitySources`. Titles and dates
 summarize attestations, without turning a mention into proof of life.
 
@@ -454,12 +464,17 @@ probability = 1 / (1 + exp(-logOdds))
 ```
 
 All title categories decay with the distance between their actual attestation
-intervals. Scoped offices have stronger weights than ranks. Property associations
+intervals. Prefixed offices retain office classification; different offices can
+supply weaker shared-scope support. Cross-role place support uses
+`crossRolePlaceFactor`. Scoped offices have stronger weights than ranks. Property associations
 use names/variations from `places.json`. Same-fact associates are deterministic
 `XXX von YYY` name co-occurrences; an entire entry is never one associate group.
-Dated prose supplies context only when its name selects a unique participant in
-the same dated passage. It never generates a family relationship. Missing dates
-or ambiguous names do not justify inventing that attachment.
+Dated prose binds exact bracketed IDs directly. Ordinary names select a unique
+local participant using overlapping date intervals. Informative prose-only
+occurrences can form provisional context profiles and bridge typed family
+identities, but never create family edges or standalone disconnected family
+cards. Repeated normalized names in a fact remain ambiguous. Context occurrences
+retain source text references rather than being rewritten as typed facts.
 
 Family evidence uses exact anchors, already linked relatives, full relative
 names, and co-parent context without creating extra edges. Features are capped
@@ -473,9 +488,15 @@ remain consistency constraints. Ordinary mentions are not living activity.
 
 The configuration defines the compatible-name prior (initially 0.05), merge
 threshold (0.85), reciprocal log-odds margin, temporal penalties, cluster checks,
-and maximum rounds. Matching runs against frozen profiles; whole candidate
+and maximum rounds. Capped full-relative-name frequency adjustments use the frozen
+factual `matchingBackground`, add-one smoothing, and configurable rarity weight,
+maximum, and reference frequency. This is source representation, not population
+frequency. Matching runs against frozen profiles; whole candidate
 components and connected source families are checked jointly. Inferred links
-carry their dependencies and confidence into later rounds. The algorithm's own
+carry their dependencies and confidence into later rounds. Only accepted links
+reduce cluster confidence; rejected internal pairs do not. Same-named repeated
+parents are not co-parent evidence. Omitted surnames require family or identifying
+title support, and co-parent support retains child-identity provenance. The algorithm's own
 conclusions are not independent evidence. No age model or seal-image matching is
 used. These probabilities are **uncalibrated estimates**.
 
@@ -522,10 +543,11 @@ timestamps, reports, review queues, or separate facts database are introduced.
 ## Matching JSON
 
 `data/matching.json` is the authoritative global configuration for the weighted
-identity model. It contains `model: "weighted-log-odds-v1"`, `calibrated: false`,
+identity model. It contains `model: "weighted-log-odds-v2"`, `calibrated: false`,
 `priorProbability`, `mergeProbability`, `ambiguityLogOddsMargin`,
 `clusterMinimumProbability`, `guessWeight`, `sourceWeights`, document/time-span
-scales, title weights and half-lives, place weights and half-life, associate
+scales, title weights and half-lives, place weights and half-life, cross-role
+place factor, relative-name rarity weight/cap/reference frequency, associate
 weights/cap/half-life, family weights/cap, age-opposition penalty/half-life,
 death and explicit-distinction penalties, and `maxRounds`.
 

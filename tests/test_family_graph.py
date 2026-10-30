@@ -294,7 +294,7 @@ class FamilyGraphTests(unittest.TestCase):
             expected = {(a.source.path, a.source.pointer, m.field) for a in inputs.assertions
                         if include_guesses or a.source.kind == 'facts'
                         for m in a.mentions if m.reference == 'Elisabeth von Erligheim'}
-            actual = {(m['source']['path'], m['source']['pointer'], m['field']) for m in elisabeth['mentions']}
+            actual = {(m['source']['path'], m['source']['pointer'], m['field']) for m in elisabeth['mentions'] if m['field'] in {'person', 'of'}}
             self.assertEqual(expected, actual)
             relationships = {(edge['type'], edge['person'], edge['of']) for edge in graph['relationships']}
             self.assertIn(('parent', elisabeth['key'], 'arnold_boxberg'), relationships)
@@ -302,6 +302,15 @@ class FamilyGraphTests(unittest.TestCase):
             self.assertTrue(any(edge['type'] == 'spouse' and {edge['person'], edge['of']} == {elisabeth['key'], 'vogt_zu_Lauda'}
                                 for edge in graph['relationships']))
             self.assertNotEqual(elisabeth['key'], 'else_wife_of_arnold')
+            membership = {(m['source']['path'], m['source']['pointer'], m['field']): node['key']
+                          for node in graph['nodes'] for m in node['mentions'] if m['field'] in {'person', 'of'}}
+            for first, second in [
+                (('data/documents/1358-05-19.json', '/entries/0/facts/4'), ('data/documents/1364-03-10.json', '/entries/0/facts/5')),
+                (('data/books/bauer_1872.json', '/entries/101/facts/0'), ('data/books/freiburger_dioecesan_archiv_1896_25.json', '/entries/52/facts/1')),
+            ]:
+                for field in ('person', 'of'):
+                    self.assertEqual(membership[(*first, field)], membership[(*second, field)])
+            self.assertTrue(all(node['identityProbability'] >= inputs.matching['mergeProbability'] for node in graph['nodes']))
 
     def test_unresolved_groups_are_alternatives_without_merging_nodes(self):
         result = build(self.inputs(facts=[relation('Alex', 'b'), relation('Alex', 'c')]))

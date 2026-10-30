@@ -1,5 +1,5 @@
 {
-  "model": "weighted-log-odds-v1",
+  "model": "weighted-log-odds-v2",
   "calibrated": false,
   "priorProbability": 0.05,
   "mergeProbability": 0.85,
@@ -37,6 +37,7 @@
     "context": 2.5
   },
   "placeHalfLifeYears": 20.0,
+  "crossRolePlaceFactor": 0.5,
   "associateWeight": 2.0,
   "associateMaxWeight": 4.0,
   "associateHalfLifeYears": 15.0,
@@ -47,6 +48,9 @@
     "spouse": 9.0
   },
   "familyMaxWeight": 16.0,
+  "relativeRarityWeight": 1.0,
+  "relativeRarityMaxWeight": 1.5,
+  "relativeRarityReferenceFrequency": 0.1,
   "opposedAgePenalty": 5.0,
   "opposedAgeHalfLifeYears": 10.0,
   "deathConflictPenalty": 20.0,

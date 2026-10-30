@@ -9,14 +9,14 @@ const { buildRelationshipGraph } = await import(await moduleUrl(new URL('../docs
 const person = (id, children = [], extra = {}) => ({ id, name: id, children, ...extra });
 const attr = (markup, name) => markup.match(new RegExp(` ${name}="([^"]*)"`))?.[1];
 
-function geometry(people, tree, view = 'facts') {
-  const html = renderPeopleTree(people, [], { graph: buildRelationshipGraph(people, { tree, view, verification: { valid: true } }) });
+function geometry(people, tree, view = 'facts', showKins = true) {
+  const html = renderPeopleTree(people, [], { graph: buildRelationshipGraph(people, { tree, view, verification: { valid: true } }), showKins });
   const cards = [...html.matchAll(/<a class="people-tree-person-link"[^>]*>(.*?)<\/a>/g)].map(([markup]) => {
     const rect = markup.match(/<rect [^>]*>/)[0];
     return { id: decodeURIComponent(attr(markup, 'href').slice('?person='.length)),
       x: +attr(rect, 'x'), y: +attr(rect, 'y'), w: +attr(rect, 'width'), h: +attr(rect, 'height') };
   });
-  const connections = [...html.matchAll(/<path class="people-tree-(parent|spouse)"[^>]*>/g)].map(([markup, type]) => {
+  const connections = [...html.matchAll(/<path class="people-tree-(parent|spouse|sibling|kin)"[^>]*>/g)].map(([markup, type]) => {
     const segments = [];
     let x, y;
     for (const [, command, value] of attr(markup, 'd').matchAll(/([MVH])([\d.]+(?: [\d.]+)?)/g)) {
@@ -51,7 +51,7 @@ function assertLayout(layout) {
       assert.ok(card.x + card.w <= other.x || other.x + other.w <= card.x
         || card.y + card.h <= other.y || other.y + other.h <= card.y, 'cards do not overlap');
     }
-    for (const line of [...paths.flat(), ...spouses.flat()]) {
+    for (const line of layout.connections.flatMap((connection) => connection.segments)) {
       assert.ok(!intersects(line, { x1: card.x + .01, y1: card.y + .01, x2: card.x + card.w - .01, y2: card.y + card.h - .01 }),
         `connector avoids ${card.id}'s card`);
     }
@@ -61,7 +61,7 @@ function assertLayout(layout) {
     for (const [point, key] of [[{ x: first.x1, y: first.y1 }, connection.person], [{ x: last.x2, y: last.y2 }, connection.of]]) {
       const card = cards.find((item) => item.id === key);
       // Spouse paths may run left-to-right regardless of canonical endpoint order.
-      const endpoints = connection.type === 'spouse' ? cards.filter((item) => [connection.person, connection.of].includes(item.id)) : [card];
+      const endpoints = connection.type !== 'parent' ? cards.filter((item) => [connection.person, connection.of].includes(item.id)) : [card];
       assert.ok(endpoints.some((item) => point.x >= item.x && point.x <= item.x + item.w && point.y >= item.y && point.y <= item.y + item.h),
         'connector attaches to its recorded participant');
     }
@@ -129,15 +129,75 @@ test('repository family tree shows each identity once with no overlaps or clippe
   for (const view of tree.views) {
     const layout = geometry(people, tree, view);
     assertLayout(layout);
+    const simplified = geometry(people, tree, view, false);
+    assertLayout(simplified);
+    assert.equal(simplified.cards.length, layout.cards.length);
     const graph = buildRelationshipGraph(people, { tree, view, verification: { valid: true } });
     assert.equal(new Set(layout.cards.map((card) => card.id)).size, graph.records.length);
     assert.equal(layout.cards.length, graph.records.length);
     const elisabeth = graph.records.find((record) => record.name === 'Elisabeth von Erligheim');
     assert.equal(layout.cards.filter((card) => card.id === elisabeth._treeKey).length, 1);
-    assert.equal(layout.connections.length, graph.edges.filter((edge) => ['parent', 'spouse'].includes(edge.type)).length);
+    assert.equal(layout.connections.length, graph.edges.length);
     const signature = (edge) => JSON.stringify([edge.type, edge.person, edge.of]);
-    assert.deepEqual(layout.connections.map(signature).sort(), graph.edges.filter((edge) => ['parent', 'spouse'].includes(edge.type)).map(signature).sort());
+    assert.deepEqual(layout.connections.map(signature).sort(), graph.edges.map(signature).sort());
   }
+});
+
+function recordedFamily(names, relationships) {
+  const derivations = [{ view: 'facts', identity: 'anchored', usesGuesses: false,
+    sources: [{ path: 'data/documents/family.json', pointer: '/facts/0' }] }];
+  return Object.entries(names).map(([id, name], index) => ({ id, name,
+    ...(index === 0 ? { familyGraph: { views: ['facts'] } } : {}),
+    relationships: relationships.filter(([person]) => person === id).map(([, type, of]) => ({ type, of, derivations })),
+  }));
+}
+
+test('simple view keeps shared children on their married fathers branch', () => {
+  const people = recordedFamily({ mother: 'Elisabeth von Erligheim', father: 'Eberhard von Rosenberg',
+    a: 'Arnold', b: 'Konrad', other: 'Other child' }, [
+    ['mother', 'spouse', 'father'], ['mother', 'parent', 'a'], ['father', 'parent', 'a'],
+    ['mother', 'parent', 'b'], ['father', 'parent', 'b'], ['mother', 'parent', 'other'],
+  ]);
+  const layout = geometry(people, undefined, 'facts', false);
+  assertLayout(layout);
+  assert.equal(layout.cards.length, 5);
+  const parents = layout.connections.filter((edge) => edge.type === 'parent');
+  assert.deepEqual(parents.map((edge) => [edge.person, edge.of]).sort(), [['father', 'a'], ['father', 'b'], ['mother', 'other']]);
+  const busY = (edge) => edge.segments.find((segment) => segment.y1 === segment.y2).y1;
+  assert.equal(busY(parents.find((edge) => edge.of === 'a')), busY(parents.find((edge) => edge.of === 'b')));
+  const a = layout.cards.find((card) => card.id === 'a'), b = layout.cards.find((card) => card.id === 'b');
+  assert.equal(a.y, b.y);
+  assert.equal(Math.abs(a.x - b.x), a.w + 52, 'shared children stay adjacent');
+  assert.equal(geometry(people).paths.length, 5, 'show kins restores both parent stems');
+  assert.match(layout.html, /Elisabeth von Erligheim/);
+  assert.match(layout.html, /is parent of/, 'source relationships remain in the evidence panel');
+});
+
+test('simple view preserves both parent stems without a marriage or identifiable father', () => {
+  for (const [names, marriage] of [
+    [{ left: 'Elisabeth von Erligheim', right: 'Eberhard von Rosenberg', child: 'Child' }, false],
+    [{ left: 'Unidentified parent A', right: 'Unidentified parent B', child: 'Child' }, true],
+  ]) {
+    const people = recordedFamily(names, [['left', 'parent', 'child'], ['right', 'parent', 'child'],
+      ...(marriage ? [['left', 'spouse', 'right']] : [])]);
+    const layout = geometry(people, undefined, 'facts', false);
+    assertLayout(layout);
+    assert.equal(layout.paths.length, 2);
+  }
+});
+
+test('children of different marriages keep distinct buses in the simple view', () => {
+  const people = recordedFamily({ father: 'Eberhard von Rosenberg', first: 'Elisabeth von Erligheim',
+    second: 'Anna von Dienheim', a: 'Arnold', b: 'Konrad' }, [
+    ['first', 'spouse', 'father'], ['second', 'spouse', 'father'],
+    ['father', 'parent', 'a'], ['first', 'parent', 'a'],
+    ['father', 'parent', 'b'], ['second', 'parent', 'b'],
+  ]);
+  const layout = geometry(people, undefined, 'facts', false);
+  assertLayout(layout);
+  assert.equal(layout.paths.length, 2);
+  const busY = layout.paths.map((path) => path.find((segment) => segment.y1 === segment.y2).y1);
+  assert.equal(new Set(busY).size, 2, 'hidden mother stems do not collapse different recorded parent sets');
 });
 
 test('long parent edges and nonadjacent marriages route around all cards', () => {
@@ -188,4 +248,28 @@ test('generated multiple marriages preserve explicit parents and repeated ancest
   assert.equal(layout.spouses.length, 2);
   assert.ok(!layout.connections.some((edge) => edge.type === 'parent' && edge.person === 'other'));
   assert.match(layout.html, /is spouse of/);
+});
+
+test('sibling and kin assertions connect their single cards without inferred parents', () => {
+  const derivations = [{ view: 'facts', identity: 'anchored', usesGuesses: false,
+    sources: [{ path: 'data/documents/example.json', pointer: '/facts/0' }] }];
+  const people = [
+    { id: 'a', name: 'Alex', familyGraph: { views: ['facts'] }, relationships: [
+      { type: 'sibling', of: 'b', derivations }, { type: 'kin', of: 'c', term: 'Vetter', derivations }] },
+    { id: 'b', name: 'Bea', relationships: [] }, { id: 'c', name: 'Chris', relationships: [] },
+  ];
+  const layout = geometry(people);
+  const graph = buildRelationshipGraph(people, { verification: { valid: true } });
+  const defaultHtml = renderPeopleTree(people, [], { graph });
+  assert.match(defaultHtml, /data-show-kins> show kins/);
+  assert.doesNotMatch(defaultHtml, /<path class="people-tree-(sibling|kin)"/);
+  assert.equal((defaultHtml.match(/class="people-tree-person-link"/g) || []).length, 3);
+  assert.match(layout.html, /data-show-kins checked/);
+  assertLayout(layout);
+  assert.equal(layout.cards.length, 3);
+  assert.equal(layout.paths.length, 0);
+  assert.deepEqual(layout.connections.map((edge) => edge.type).sort(), ['kin', 'sibling']);
+  assert.match(layout.html, /people-tree-sibling/);
+  assert.match(layout.html, /people-tree-kin/);
+  assert.match(layout.html, />Vetter</);
 });

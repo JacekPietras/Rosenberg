@@ -56,6 +56,12 @@ export function expandEvidenceGraph(graph) {
   comparisons: (graph.comparisons || []).map((comparison) => ({ ...comparison, sources: comparison.sources.map(source) })) };
 }
 
+function literalReference(text, reference) {
+  const parts = text.split(reference);
+  const word = /[\p{L}\p{N}_]/u;
+  return parts.some((part, index) => index < parts.length - 1 && !word.test(part.at(-1) || '') && !word.test(parts[index + 1][0] || ''));
+}
+
 export async function verifyFamilyGraph(people, documents, repository, paths = [...documents.keys()], tree) {
   const metadata = tree === undefined ? people[0]?.familyGraph : tree;
   if (!metadata) return { valid: false, reason: 'Generated build metadata is absent.' };
@@ -63,7 +69,8 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
     const version = metadata.schema === 1 && metadata.engine === '1' && metadata.policy === '1'
       || metadata.schema === 2 && metadata.engine === '2' && metadata.policy === '2'
       || metadata.schema === 3 && metadata.engine === '3' && metadata.policy === '2'
-      || metadata.schema === 4 && metadata.engine === '4' && metadata.policy === '3';
+      || metadata.schema === 4 && metadata.engine === '4' && metadata.policy === '3'
+      || metadata.schema === 4 && metadata.engine === '5' && metadata.policy === '4';
     if (!version
       || !['facts', 'facts,with-guesses'].includes(metadata.views?.join(','))
       || !Number.isInteger(metadata.configuration?.searchLimit) || metadata.configuration.searchLimit < 1
@@ -83,7 +90,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
     if (metadata.schema >= 4) {
       if (!Object.hasOwn(metadata.inputs, 'data/matching.json')) throw new Error('Missing global probability configuration');
       const settings = metadata.configuration.probability;
-      if (settings?.model !== 'weighted-log-odds-v1' || settings.calibrated !== false
+      if (!['weighted-log-odds-v1', 'weighted-log-odds-v2'].includes(settings?.model) || settings.calibrated !== false
         || !(settings.priorProbability > 0 && settings.priorProbability < settings.mergeProbability && settings.mergeProbability < 1)
         || !(settings.guessWeight > 0 && settings.guessWeight < 1)
         || Object.keys(settings.sourceWeights || {}).length !== 4
@@ -121,6 +128,13 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
         return checked.get(key);
       };
       for (const [view, stored] of Object.entries(metadata.evidence)) {
+        if (metadata.engine === '5') {
+          const background = metadata.matchingBackground?.[view];
+          if (!background || !background.counts || typeof background.counts !== 'object' || Array.isArray(background.counts)
+            || !Number.isFinite(background.total) || background.total < 0
+            || Object.values(background.counts).some((count) => !Number.isFinite(count) || count <= 0)
+            || Math.abs(Object.values(background.counts).reduce((sum, count) => sum + count, 0) - background.total) > 1e-6) throw new Error('Invalid name-frequency background');
+        }
         const graph = expandEvidenceGraph(stored);
         const membership = new Map();
         for (const node of graph.nodes) {
@@ -128,10 +142,19 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
           let named = !!node.registry && people.some((person) => person.id === node.registry && person.name === node.name);
           for (const mention of node.mentions) {
             const fact = await sourceFact(mention.source, view);
-            if (!['person', 'of'].includes(mention.field) || typeof fact[mention.field] !== 'string') throw new Error('Invalid reconstructed participant');
-            if (people.some((person) => person.id && person.id === fact[mention.field]) && node.key !== fact[mention.field]) throw new Error('Reconstructed occurrence overrides a fixed anchor');
-            named ||= fact[mention.field] === node.name;
-            const key = JSON.stringify([mention.source.path, mention.source.pointer, mention.field]);
+            let reference;
+            if (mention.field === 'text') {
+              reference = mention.reference;
+              const text = typeof fact === 'string' ? fact : typeof fact.text === 'string' ? fact.text : '';
+              const fixed = people.some((person) => person.id && person.id === reference);
+              if (typeof reference !== 'string' || !reference || !(fixed ? text.includes(`[${reference}]`) : literalReference(text, reference))) throw new Error('Invalid context participant reference');
+            } else {
+              if (!['person', 'of'].includes(mention.field) || typeof fact[mention.field] !== 'string') throw new Error('Invalid reconstructed participant');
+              reference = fact[mention.field];
+            }
+            if (people.some((person) => person.id && person.id === reference) && node.key !== reference) throw new Error('Reconstructed occurrence overrides a fixed anchor');
+            named ||= reference === node.name;
+            const key = JSON.stringify([mention.source.path, mention.source.pointer, mention.field, mention.reference || '']);
             if (membership.has(key)) throw new Error('Occurrence assigned to two people');
             membership.set(key, node.key);
           }
@@ -146,7 +169,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
             for (const source of derivation.sources) {
               const fact = await sourceFact(source, view);
               if (fact.type !== edge.type || (fact.term || '') !== (edge.term || '')) continue;
-              const endpoints = ['person', 'of'].map((field) => membership.get(JSON.stringify([source.path, source.pointer, field])));
+              const endpoints = ['person', 'of'].map((field) => membership.get(JSON.stringify([source.path, source.pointer, field, ''])));
               const expected = [edge.person, edge.of];
               if (edge.type !== 'parent') { endpoints.sort(); expected.sort(); }
               supported ||= JSON.stringify(endpoints) === JSON.stringify(expected);
@@ -343,7 +366,7 @@ export function remapSourcePerson(state, previous) {
   }
   const old = previous?.records.find((person) => person._evidence && person._treeKey === state.person);
   if (!old) return false;
-  const occurrence = ({ source, field }) => JSON.stringify([source.path, source.pointer, source.fingerprint, field]);
+  const occurrence = ({ source, field, reference }) => JSON.stringify([source.path, source.pointer, source.fingerprint, field, reference || '']);
   const references = new Set(old.reconstruction.mentions.map(occurrence));
   const matches = state.familyGraph.records.filter((person) => person.reconstruction?.mentions.some((mention) => references.has(occurrence(mention))));
   if (matches.length === 1) {

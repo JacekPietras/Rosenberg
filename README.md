@@ -72,7 +72,15 @@ Documents/images have source weight 1.0; books/notes 0.5; guesses receive an
 additional factor of 0.45. Title evidence decays with time, scoped offices carry
 more weight, and conflicting deaths impose a large penalty. Place/property
 context, formal family relationships, and deterministic same-fact associates
-contribute additional evidence. The initial merge threshold is 85%, with
+contribute additional evidence. Informative prose-only actors can supply
+context records without creating family edges. Confirmed IDs in textual facts
+are recognized directly. A capped full-relative-name rarity adjustment uses
+factual source frequencies; it is not a historical population estimate.
+The diagram defaults to parent/child and spouse lines; **show kins** reveals
+sibling and other kin lines as well. Children with the same recorded parents
+share a branch. In the default view, married parents use only the identifiable
+father's stem for shared children; both parent assertions remain in the evidence
+panel and return when **show kins** is enabled. The initial merge threshold is 85%, with
 competing-candidate and cluster checks. Estimates are **uncalibrated**, not
 measured historical accuracy. The tree stores comparison probabilities, feature
 contributions, rejected alternatives, and provenance; tree and person pages

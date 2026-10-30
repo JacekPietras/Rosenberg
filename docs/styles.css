@@ -229,6 +229,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .people-tree-node .people-tree-detail { fill: var(--muted); font-size: 12px; }
 .people-tree-parent { fill: none; stroke: var(--accent); stroke-width: 1.5; }
 .people-tree-spouse { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.people-tree-sibling { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 2 4; }
+.people-tree-kin { fill: none; stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 6 3 2 3; }
 .people-tree-edge-label { fill: var(--muted); font-size: 11px; text-anchor: middle; }
 .map-wrap { position: relative; isolation: isolate; z-index: 0; margin: 1.5rem 0; }
 .map-container { height: 70vh; min-height: 22rem; margin: 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #dce6e0; }
@@ -443,4 +445,4 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .entity-relationships li { margin: .5rem 0; }
 .entity-relationships summary { cursor: pointer; }
 .relationship-uncertainty { font-size: .85em; padding: .15rem .35rem; border: 1px dashed #b48236; border-radius: .25rem; }
-.people-tree-parent[data-identity="inferred"], .people-tree-spouse[data-identity="inferred"] { stroke-dasharray: 7 4; }
+.people-tree-parent[data-identity="inferred"], .people-tree-spouse[data-identity="inferred"], .people-tree-sibling[data-identity="inferred"], .people-tree-kin[data-identity="inferred"] { stroke-dasharray: 7 4; }

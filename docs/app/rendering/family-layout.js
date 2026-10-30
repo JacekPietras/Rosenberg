@@ -1,9 +1,21 @@
 // Lay out identities, never cloned branch occurrences. Marriage affects
 // placement only; every connector still represents one recorded relationship.
-export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nodeHeight, horizontalGap = 52 } = {}) {
+// Name hints choose a visible stem only; they never supply identity or ancestry.
+function fatherForDisplay(pair) {
+  const masculine = /^(?:albrecht|albert|anselm|arnold|arnolt|conrad|conradus|cunz|diether|dieter|eberhard|eberhart|eckhard|engelhard|engelhart|georg|gerhard|gotfried|gottfried|götz|hans|heinemann|heinrich|henrich|johann|johannes|konrad|kraft|kunz|nicolaus|niklaus|raban|reinhard|rudolf|ruprecht|thomas|ulrich|wilhelm|wiprecht|zeisolf)$/iu;
+  const feminine = /^(?:adelheid|agnes|anna|anne|barbara|christina|christine|dorothea|eilse|elisabeth|els|elsbet|elsbeth|else|elspeth|eva|gertrud|guda|gute|gutta|irmtraut|irmendrut|jutta|katharina|kunigunde|magdalena|margaretha|margarethe|maria|mechthild|sophia|sophie|ursula)$/iu;
+  const first = (person) => person.name.trim().split(/\s+/)[0];
+  const father = pair.find((person) => masculine.test(first(person)));
+  const mother = pair.find((person) => feminine.test(first(person)));
+  if (father && mother && father !== mother) return father._treeKey;
+  // Retain support for the older viewer's explicit husband/wife records.
+  return pair.find((person) => person.wife && pair.some((other) => other !== person && [other.id, other.name].includes(person.wife)))?._treeKey;
+}
+
+export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nodeHeight, horizontalGap = 52, simplifyParents = false } = {}) {
   const byKey = new Map(records.map((person) => [person._treeKey, person]));
   const compare = (a, b) => byKey.get(a).name.localeCompare(byKey.get(b).name) || a.localeCompare(b);
-  const edges = relationships.filter((edge) => ['parent', 'spouse'].includes(edge.type)
+  const edges = relationships.filter((edge) => ['parent', 'spouse', 'sibling', 'kin'].includes(edge.type)
     && byKey.has(edge.person) && byKey.has(edge.of) && edge.person !== edge.of);
   const adjacent = new Map(records.map((person) => [person._treeKey, new Set()]));
   edges.forEach(({ person, of }) => { adjacent.get(person).add(of); adjacent.get(of).add(person); });
@@ -42,6 +54,13 @@ export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nod
   function layoutComponent(keys, componentEdges) {
     const parents = componentEdges.filter((edge) => edge.type === 'parent');
     const spouses = componentEdges.filter((edge) => edge.type === 'spouse');
+    const parentSets = new Map(keys.map((key) => [key, parents.filter((edge) => edge.of === key).map((edge) => edge.person).sort()]));
+    const hiddenParents = new Set();
+    if (simplifyParents) for (const [child, pair] of parentSets) {
+      if (pair.length !== 2 || !spouses.some((edge) => pair.includes(edge.person) && pair.includes(edge.of))) continue;
+      const father = fatherForDisplay(pair.map((key) => byKey.get(key)));
+      if (father) parents.filter((edge) => edge.of === child && edge.person !== father).forEach((edge) => hiddenParents.add(edge));
+    }
     const roots = new Map(keys.map((key) => [key, key]));
     const find = (key) => {
       while (roots.get(key) !== key) key = roots.get(key);
@@ -82,6 +101,11 @@ export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nod
     }
     const layers = Array.from({ length: Math.max(...ranks) + 1 }, () => []);
     units.forEach((unit, index) => { unit.sort(compare); layers[ranks[index]].push(index); });
+    const familyKey = (index) => {
+      const known = units[index].map((key) => parentSets.get(key)).filter((set) => set.length);
+      const signatures = new Set(known.map((set) => JSON.stringify(set)));
+      return signatures.size === 1 ? `parents:${[...signatures][0]}` : `unit:${index}`;
+    };
     const positions = new Map();
     const updatePositions = () => layers.forEach((layer) => {
       const total = layer.reduce((sum, index) => sum + units[index].length, 0);
@@ -99,7 +123,17 @@ export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nod
             .map((edge) => membership.get(down ? edge.person : edge.of)).filter((other) => other !== index);
           return [index, neighbors.length ? neighbors.reduce((sum, other) => sum + positions.get(other), 0) / neighbors.length : positions.get(index)];
         }));
-        layer.sort((a, b) => scores.get(a) - scores.get(b) || compare(units[a][0], units[b][0]));
+        // Keep children of the same recorded parents in one block, including
+        // their spouses. Different known parent sets never share a sibling bus.
+        const blocks = new Map();
+        layer.forEach((index) => {
+          const key = familyKey(index);
+          if (!blocks.has(key)) blocks.set(key, []);
+          blocks.get(key).push(index);
+        });
+        const score = (block) => block.reduce((sum, index) => sum + scores.get(index), 0) / block.length;
+        const ordered = [...blocks.values()].sort((a, b) => score(a) - score(b) || compare(units[a[0]][0], units[b[0]][0]));
+        layer.splice(0, layer.length, ...ordered.flatMap((block) => block.sort((a, b) => scores.get(a) - scores.get(b) || compare(units[a][0], units[b][0]))));
         updatePositions();
       }
     }
@@ -113,9 +147,8 @@ export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nod
     })));
     const slots = layers.map(() => 0), outer = { left: 0, right: 0 };
     const allocate = (rank) => slots[rank]++;
-    const parentSets = new Map(keys.map((key) => [key, parents.filter((edge) => edge.of === key).map((edge) => edge.person).sort()]));
     const familySlots = new Map();
-    const routes = componentEdges.map((edge) => {
+    const routes = componentEdges.filter((edge) => !hiddenParents.has(edge)).map((edge) => {
       const a = cards.get(edge.person), b = cards.get(edge.of);
       if (edge.type === 'parent' && b.rank === a.rank + 1) {
         // Children with precisely the same recorded parents can share a bus.
@@ -124,8 +157,9 @@ export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nod
         if (!familySlots.has(family)) familySlots.set(family, allocate(b.rank));
         return { edge, kind: 'parent', slot: familySlots.get(family) };
       }
-      if (edge.type === 'spouse' && a.rank === b.rank) {
-        if (Math.abs(a.x - b.x) === nodeWidth + horizontalGap) return { edge, kind: 'adjacent' };
+      if (edge.type !== 'parent' && a.rank === b.rank) {
+        const label = edge.type === 'kin' ? edge.term || 'kin' : edge.type;
+        if (Math.abs(a.x - b.x) === nodeWidth + horizontalGap && label.length * 6 < horizontalGap - 4) return { edge, kind: 'adjacent' };
         return { edge, kind: 'above', slot: allocate(a.rank) };
       }
       const side = a.x + b.x + nodeWidth < cardWidth ? 'left' : 'right';
@@ -165,7 +199,7 @@ export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nod
         const startX = a.x + nodeWidth * (route.downward ? .5 : port), endX = b.x + nodeWidth * (route.downward ? .5 : port);
         points = [[startX, route.downward ? a.y + a.height : a.y], [startX, startY], [x, startY],
           [x, endY], [endX, endY], [endX, b.y]];
-        if (edge.type === 'spouse') label = [(x + startX) / 2, startY - 6];
+        if (edge.type !== 'parent') label = [(x + startX) / 2, startY - 6];
       }
       return { edge, points: points.map(([x, y]) => [x + leftSpace, y]), label: label && [label[0] + leftSpace, label[1]] };
     });

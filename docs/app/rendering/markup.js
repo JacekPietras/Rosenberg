@@ -1,6 +1,6 @@
 import { escapeHtml } from './html.js';
 import { findPlaceByName } from '../data/entities.js?v=87';
-import { resolvePerson } from '../data/relationships.js?v=5';
+import { resolvePerson } from '../data/relationships.js?v=7';
 
 export function createMarkupRenderer({ state }) {
   function linkedMarkup(value = '', linkEntities = true) {

@@ -4,7 +4,7 @@ This document records the user's latest requirements for family reconstruction.
 It takes precedence over earlier proposals about optional guesses, registry-only
 matching, or writing generated relationships into `people.json`.
 
-**Status:** implemented by engine 4 / policy 3 as an initial, uncalibrated model.
+**Status:** implemented by engine 5 / policy 4 as an initial, uncalibrated model.
 The global configuration is `data/matching.json`; generated calculations are in
 `data/tree.json`. Historical calibration remains outstanding. The current implementation is described
 in [family-tree-final-implementation.md](family-tree-final-implementation.md).
@@ -179,7 +179,9 @@ invalidate the previous build and trigger automatic reconstruction.
 **Agreed numerical values:** documents/images have source factor `1.0`;
 books/notes have source factor `0.5`. The initial additional guess factor is `0.45`, the compatible-name prior is
 `0.05`, and the merge threshold is `0.85`. All other effective weights and decay
-values are in `data/matching.json` and the global viewer panel. These are
+values are in `data/matching.json` and the global viewer panel. Model v2 adds
+`crossRolePlaceFactor` and capped full-relative-name rarity settings. Neither
+the 85% merge threshold nor the agreed source weights changed. These are
 documented model assumptions, not empirically calibrated probabilities.
 
 ## Apply matching to all source people

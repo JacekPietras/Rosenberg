@@ -2,8 +2,8 @@ import { imageCardMarkup } from '../rendering/images.js?v=13';
 import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rendering/facts.js?v=6';
 import { renderFactsView } from '../components/facts_view.js?v=3';
 import { findPlaceByName } from '../data/entities.js?v=87';
-import { resolvePerson, resolveEvidencePointer } from '../data/relationships.js?v=5';
-import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=5';
+import { resolvePerson, resolveEvidencePointer } from '../data/relationships.js?v=7';
+import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=7';
 
 export function createEntityScreens({
   state,
@@ -107,8 +107,8 @@ export function createEntityScreens({
     const exactAnchor = people.some((person) => person.id && person.id === state.person);
     const query = String(state.person || '').toLocaleLowerCase();
     const sourcePeople = state.familyGraph?.valid && !exactAnchor ? state.familyGraph.records.filter((record) => record._evidence
-      && (record._treeKey === state.person || record.name.toLocaleLowerCase() === query || record.reconstruction.mentions.some(({ source, field }) =>
-        String(resolveEvidencePointer(getDocuments().get(source.path), source.pointer)[field]).toLocaleLowerCase() === query))) : [];
+      && (record._treeKey === state.person || record.name.toLocaleLowerCase() === query || record.reconstruction.mentions.some(({ source, field, reference }) =>
+        String(field === 'text' ? reference : resolveEvidencePointer(getDocuments().get(source.path), source.pointer)[field]).toLocaleLowerCase() === query))) : [];
     const exactSource = sourcePeople.find((record) => record._treeKey === state.person);
     if (!exactSource && sourcePeople.length && sourcePeople.length + resolution.matches.length > 1) {
       const choices = [...resolution.matches, ...sourcePeople];
@@ -131,7 +131,7 @@ export function createEntityScreens({
         const doc = getDocuments().get(source.path);
         const fact = resolveEvidencePointer(doc, source.pointer);
         const index = Number(source.pointer.match(/\/entries\/(\d+)/)?.[1] || 0);
-        return `<article class="document"><p class="entry-date">${source.pointer.includes('/guesses/') ? 'Guess · ' : ''}${escapeHtml(formatDate(date))}</p>${renderFactsView([{ ...fact, date }], { people, inlineMarkup })}<p class="source"><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></p></article>`;
+        return `<article class="document"><p class="entry-date">${source.pointer.includes('/guesses/') ? 'Guess · ' : ''}${escapeHtml(formatDate(date))}</p>${renderFactsView([{ ...(typeof fact === 'string' ? { text: fact } : fact), date }], { people, inlineMarkup })}<p class="source"><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></p></article>`;
       }).join('');
       return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2><p>${node.status === 'contextual' ? 'Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.' : 'Source person; correspondence with other mentions remains open.'} No permanent person ID has been created.</p></article>${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, node.key)}<h3>Source attestations</h3>${attestations}`;
     }

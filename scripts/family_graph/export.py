@@ -81,6 +81,7 @@ def serialize(inputs, results):
         'views': [result.view for result in results],
         'inputs': inputs.manifest, 'fingerprint': fingerprint(inputs.manifest),
         'evidence': {result.view: pack_evidence(result.evidence_graph) for result in results},
+        'matchingBackground': {result.view: result.evidence_graph['nameFrequencies'] for result in results},
         'coverage': {result.view: {
             'unresolvedMentions': sum(d.status == 'unresolved' for d in result.decisions.values()),
             'registryRelationships': sum(e['person'] in registry and e['of'] in registry for e in result.evidence_graph['relationships']),
@@ -89,6 +90,7 @@ def serialize(inputs, results):
             'reconstructedRelationships': len(result.evidence_graph['relationships']),
             'contextualLinks': len(result.evidence_graph['links']),
             'candidateComparisons': len(result.evidence_graph['comparisons']),
+            'contextCoverage': result.evidence_graph['contextCoverage'],
         } for result in results},
     }
     validate_generated(tree, inputs.people, inputs.root)
@@ -107,6 +109,16 @@ def validate_generated(tree, people, root=None):
         raise ValueError('invalid generated tree metadata')
     if parameters(tree['configuration'].get('probability')) != tree['configuration'].get('probability'):
         raise ValueError('missing probability configuration')
+    backgrounds = tree.get('matchingBackground')
+    if not isinstance(backgrounds, dict) or set(backgrounds) != set(tree['views']):
+        raise ValueError('missing name-frequency background')
+    for background in backgrounds.values():
+        if (not isinstance(background, dict) or not isinstance(background.get('counts'), dict)
+            or type(background.get('total')) not in (int, float) or not math.isfinite(background['total'])
+            or background['total'] < 0 or any(not isinstance(name, str) or type(count) not in (int, float)
+                or not math.isfinite(count) or count <= 0 for name, count in background['counts'].items())
+            or abs(sum(background['counts'].values()) - background['total']) > 1e-6):
+            raise ValueError('invalid name-frequency background')
     if not isinstance(people, list) or not people:
         raise ValueError('person registry must be a non-empty array')
     ids = [person.get('id') for person in people]
@@ -172,12 +184,20 @@ def validate_evidence(metadata, registry, root=None, cache=None):
             for mention in node['mentions']:
                 fact = source(mention['source'], view)
                 field = mention.get('field')
-                if field not in {'person', 'of'} or fact is not None and field not in fact:
+                if field not in {'person', 'of', 'text'} or fact is not None and field != 'text' and field not in fact:
                     raise ValueError('invalid reconstructed participant')
-                if fact is not None and fact[field] in registry and key != fact[field]:
+                if field == 'text':
+                    reference = mention.get('reference')
+                    text = fact if isinstance(fact, str) else fact.get('text', '') if isinstance(fact, dict) else ''
+                    if (not isinstance(reference, str) or not reference
+                        or fact is not None and (('[' + reference + ']') not in text if reference in registry else not re.search(r'(?<!\w)' + re.escape(reference) + r'(?!\w)', text))):
+                        raise ValueError('invalid context participant reference')
+                else:
+                    reference = fact[field] if fact is not None else None
+                if fact is not None and reference in registry and key != reference:
                     raise ValueError('reconstructed occurrence overrides a fixed registry anchor')
-                named |= fact is not None and fact[field] == node['name']
-                location = (mention['source']['path'], mention['source']['pointer'], field)
+                named |= fact is not None and reference == node['name']
+                location = (mention['source']['path'], mention['source']['pointer'], field, mention.get('reference', ''))
                 if location in membership:
                     raise ValueError('source occurrence assigned to two reconstructed people')
                 membership[location] = key
@@ -211,7 +231,7 @@ def validate_evidence(metadata, registry, root=None, cache=None):
                     fact = source(ref, view)
                     if (isinstance(fact, dict) and fact.get('type') == kind
                         and fact.get('term', '') == edge.get('term', '')):
-                        pair = [membership.get((ref['path'], ref['pointer'], field)) for field in ('person', 'of')]
+                        pair = [membership.get((ref['path'], ref['pointer'], field, '')) for field in ('person', 'of')]
                         supported |= pair == [left, right] if kind == 'parent' else sorted(pair, key=str) == sorted([left, right])
                 if root is not None and not supported:
                     raise ValueError('reconstructed edge has no supporting participant assignment')

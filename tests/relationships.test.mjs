@@ -537,7 +537,7 @@ test('repository handles a missing generated tree without treating it as source 
 async function probabilityFixture() {
   const data = await externalTreeFixture();
   const parameters = JSON.parse(await readFile(new URL('../data/matching.json', import.meta.url), 'utf8'));
-  Object.assign(data.tree, { schema: 4, engine: '4', policy: '3', configuration: { searchLimit: 10000, probability: structuredClone(parameters) } });
+  Object.assign(data.tree, { schema: 4, engine: '5', policy: '4', matchingBackground: { facts: { total: 0, counts: {} }, 'with-guesses': { total: 0, counts: {} } }, configuration: { searchLimit: 10000, probability: structuredClone(parameters) } });
   data.files.set('data/matching.json', parameters);
   data.tree.inputs['data/matching.json'] = await evidenceFingerprint(parameters);
   data.tree.fingerprint = await evidenceFingerprint(data.tree.inputs);
@@ -597,4 +597,47 @@ test('parameter changes automatically rebuild and a saved facts-only preference 
   assert.equal(rebuilds, 1);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   assert.equal(state.familyGraph.view, 'with-guesses');
+});
+
+test('text context participants preserve exact references and cannot override an ID', async () => {
+  const data = await probabilityFixture();
+  const doc = data.documents.get(source.path);
+  const child = data.tree.evidence.facts.nodes.find((node) => !node.registry);
+  const text = `[a] and ${child.name} held property at North.`;
+  doc.entries[0].facts.push(text);
+  const ref = { path: source.path, pointer: '/entries/0/facts/1', fingerprint: await evidenceFingerprint(text) };
+  for (const graph of Object.values(data.tree.evidence)) {
+    graph.nodes.find((node) => node.registry === 'a').mentions.push({ source: ref, field: 'text', reference: 'a', date: '1393' });
+    graph.nodes.find((node) => !node.registry).mentions.push({ source: ref, field: 'text', reference: child.name, date: '1393' });
+  }
+  await updateFixtureBuild(data);
+  let verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+  assert.equal(verification.valid, true, verification.reason);
+  data.tree.evidence.facts.nodes.find((node) => !node.registry).mentions.at(-1).reference = 'a';
+  verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+  assert.equal(verification.valid, false);
+  assert.match(verification.reason, /fixed anchor/);
+});
+
+test('name-frequency background must agree with its total', async () => {
+  const data = await probabilityFixture();
+  data.tree.matchingBackground.facts = { total: 10, counts: { 'someone von somewhere': 3 } };
+  const verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+  assert.equal(verification.valid, false);
+  assert.match(verification.reason, /name-frequency/);
+});
+
+test('context attestations render original text on source-person pages', async () => {
+  const data = await probabilityFixture();
+  const doc = data.documents.get(source.path);
+  const child = data.tree.evidence.facts.nodes.find((node) => !node.registry);
+  const text = `${child.name} held property at North.`;
+  doc.entries[0].facts.push(text);
+  const ref = { path: source.path, pointer: '/entries/0/facts/1', fingerprint: await evidenceFingerprint(text) };
+  for (const graph of Object.values(data.tree.evidence)) graph.nodes.find((node) => !node.registry).mentions.push({ source: ref, field: 'text', reference: child.name, date: '1393' });
+  const graph = buildRelationshipGraph(data.people, { tree: data.tree, verification: { valid: true } });
+  const state = { person: child.key, familyGraph: graph };
+  const { renderPersonPage } = createEntityScreens({ state, getPeople: () => data.people, getDocuments: () => data.documents,
+    escapeHtml, inlineMarkup: escapeHtml, formatDate: String, documentNavigationUrl: (path, index) => `?document=${path}&entry=${index}` });
+  assert.match(renderPersonPage(), /held property at North/);
 });
