@@ -125,8 +125,9 @@ test('repository family tree has no crossings, overlaps, or clipped cards', asyn
   const people = JSON.parse(await readFile(new URL('../data/people.json', import.meta.url), 'utf8'));
   const layout = geometry(people);
   assertPlanar(layout);
-  assert.equal(new Set(layout.cards.map((card) => card.id)).size, people.length);
-  assert.ok(layout.cards.length < people.length * 2, 'shared branches remain small');
+  const graph = buildRelationshipGraph(people, { verification: { valid: true } });
+  assert.equal(new Set(layout.cards.map((card) => card.id)).size, graph.records.length);
+  assert.ok(layout.cards.length < graph.records.length * 3, 'repeated family occurrences remain bounded');
 });
 
 test('generated multiple marriages preserve explicit parents and repeated ancestry', () => {

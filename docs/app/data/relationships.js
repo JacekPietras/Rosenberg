@@ -43,11 +43,26 @@ export function resolveEvidencePointer(document, pointer) {
   }, document);
 }
 
+export function expandEvidenceGraph(graph) {
+  if (!graph?.sources) return graph;
+  const source = (index) => {
+    if (!Number.isInteger(index) || index < 0 || index >= graph.sources.length) throw new Error('Invalid reconstructed source index');
+    return graph.sources[index];
+  };
+  return { nodes: graph.nodes.map((node) => ({ ...node,
+    mentions: node.mentions.map((mention) => ({ ...mention, source: source(mention.source) })),
+    identitySources: node.identitySources.map(source) })),
+  relationships: graph.relationships.map((edge) => ({ ...edge,
+    derivations: edge.derivations.map((d) => ({ ...d, sources: d.sources.map(source) })) })) };
+}
+
 export async function verifyFamilyGraph(people, documents, repository, paths = [...documents.keys()]) {
   const metadata = people[0]?.familyGraph;
   if (!metadata) return { valid: false, reason: 'Generated build metadata is absent.' };
   try {
-    if (metadata.schema !== 1 || metadata.engine !== '1' || metadata.policy !== '1'
+    const version = metadata.schema === 1 && metadata.engine === '1' && metadata.policy === '1'
+      || metadata.schema === 2 && metadata.engine === '2' && metadata.policy === '2';
+    if (!version
       || !['facts', 'facts,with-guesses'].includes(metadata.views?.join(','))
       || !Number.isInteger(metadata.configuration?.searchLimit) || metadata.configuration.searchLimit < 1
       || !['data/people.json', 'data/places.json', 'data/names.md'].every((path) => Object.hasOwn(metadata.inputs || {}, path))
@@ -76,6 +91,51 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
         }
       }
     }
+    if (metadata.schema === 2) {
+      if (!metadata.evidence || JSON.stringify(Object.keys(metadata.evidence).sort()) !== JSON.stringify([...metadata.views].sort())) throw new Error('Missing reconstructed evidence views');
+      const checked = new Map();
+      const sourceFact = async (source, view) => {
+        if (!sourcePath.test(source.path) || !Object.hasOwn(metadata.inputs, source.path)
+          || !/\/(facts|guesses)\/[0-9]+$/.test(source.pointer)
+          || view === 'facts' && source.pointer.includes('/guesses/')) throw new Error('Invalid reconstructed source');
+        const key = JSON.stringify(source);
+        if (!checked.has(key)) {
+          const assertion = resolveEvidencePointer(documents.get(source.path), source.pointer);
+          if (await evidenceFingerprint(assertion) !== source.fingerprint) throw new Error('Reconstructed source changed');
+          checked.set(key, assertion);
+        }
+        return checked.get(key);
+      };
+      for (const [view, stored] of Object.entries(metadata.evidence)) {
+        const graph = expandEvidenceGraph(stored);
+        const membership = new Map();
+        for (const node of graph.nodes) {
+          for (const mention of node.mentions) {
+            const fact = await sourceFact(mention.source, view);
+            if (!['person', 'of'].includes(mention.field) || typeof fact[mention.field] !== 'string') throw new Error('Invalid reconstructed participant');
+            if (people.some((person) => person.id && person.id === fact[mention.field]) && node.key !== fact[mention.field]) throw new Error('Reconstructed occurrence overrides a fixed anchor');
+            const key = JSON.stringify([mention.source.path, mention.source.pointer, mention.field]);
+            if (membership.has(key)) throw new Error('Occurrence assigned to two people');
+            membership.set(key, node.key);
+          }
+          for (const source of node.identitySources || []) await sourceFact(source, view);
+        }
+        for (const edge of graph.relationships) {
+          for (const derivation of edge.derivations) {
+            let supported = false;
+            for (const source of derivation.sources) {
+              const fact = await sourceFact(source, view);
+              if (fact.type !== edge.type) continue;
+              const endpoints = ['person', 'of'].map((field) => membership.get(JSON.stringify([source.path, source.pointer, field])));
+              const expected = [edge.person, edge.of];
+              if (edge.type !== 'parent') { endpoints.sort(); expected.sort(); }
+              supported ||= JSON.stringify(endpoints) === JSON.stringify(expected);
+            }
+            if (!supported) throw new Error('Reconstructed relationship lacks its source participants');
+          }
+        }
+      }
+    }
     for (const view of metadata.views) {
       const graph = buildRelationshipGraph(people, { view, verification: { valid: true } });
       if (!graph.valid) throw new Error(graph.reason);
@@ -97,6 +157,9 @@ export function buildRelationshipGraph(people, { view = 'facts', verification } 
   const metadata = people[0]?.familyGraph;
   const views = generated ? metadata?.views || [] : ['facts'];
   const selectedView = views.includes(view) ? view : 'facts';
+  let evidence;
+  try { evidence = expandEvidenceGraph(metadata?.evidence?.[selectedView]); }
+  catch (error) { return { records, edges: [], reverse: new Map(), generated, views, view: selectedView, valid: false, reason: error.message, metadata }; }
   const result = { records, edges: [], reverse: new Map(), generated, views, view: selectedView,
     valid: !generated || verification?.valid === true, reason: generated && !verification?.valid ? verification?.reason || 'Evidence has not been verified.' : '', metadata };
   if (!result.valid) return result;
@@ -118,11 +181,37 @@ export function buildRelationshipGraph(people, { view = 'facts', verification } 
     }
     seen.add(key);
     result.edges.push({ person: left, of: right, type, term, derivations,
+      sourceIdentity: derivations.some((d) => d.identity === 'source'),
       inferred: derivations.length > 0 && derivations.every((d) => d.identity === 'inferred'),
       usesGuesses: derivations.length > 0 && derivations.every((d) => d.usesGuesses) });
   };
   try {
-    for (const person of records) {
+    if (evidence) {
+      const byKey = new Map(records.map((person) => [person._treeKey, person]));
+      const seenNodes = new Set();
+      for (const node of evidence.nodes) {
+        if (!node.key || seenNodes.has(node.key) || !node.name || !['source', 'contextual', 'anchored'].includes(node.status) || !node.mentions?.length) throw new Error('Invalid reconstructed person');
+        seenNodes.add(node.key);
+        if (node.registry) {
+          if (node.registry !== node.key || !byKey.has(node.key)) throw new Error('Invalid reconstructed registry anchor');
+          Object.assign(byKey.get(node.key), { reconstruction: node });
+        } else {
+          if (!node.key.startsWith('@evidence/') || byKey.has(node.key)) throw new Error('Invalid source person handle');
+          const record = { name: node.name, titles: node.titles, _treeKey: node.key, _evidence: true, reconstruction: node };
+          records.push(record); byKey.set(node.key, record);
+        }
+      }
+      for (const edge of evidence.relationships) {
+        if (!['parent', 'spouse', 'sibling', 'kin'].includes(edge.type) || edge.type === 'kin' && !edge.term?.trim() || !edge.derivations?.length) throw new Error('Invalid reconstructed relationship');
+        const derivations = edge.derivations.map((d) => ({ ...d, view: selectedView }));
+        for (const d of derivations) {
+          if (!['anchored', 'reviewed', 'inferred', 'source'].includes(d.identity) || typeof d.usesGuesses !== 'boolean'
+            || !d.sources?.length || selectedView === 'facts' && d.usesGuesses
+            || d.sources.some((source) => source.pointer.includes('/guesses/') && !d.usesGuesses)) throw new Error('Invalid reconstructed derivation');
+        }
+        add(byKey.get(edge.person), byKey.get(edge.of), edge.type, derivations, edge.term || '');
+      }
+    } else for (const person of records) {
       if (generated) {
         if (!Array.isArray(person.relationships) || Object.hasOwn(person, 'wife') || Object.hasOwn(person, 'children')) throw new Error('Incomplete generated registry');
         for (const edge of person.relationships) {
@@ -160,8 +249,66 @@ export function buildRelationshipGraph(people, { view = 'facts', verification } 
       if (!result.reverse.has(key)) result.reverse.set(key, []);
       result.reverse.get(key).push(edge);
     }));
+    if (evidence) {
+      result.components = familyComponents(records, result.edges);
+      result.defaultFocus = (result.components.find((component) => component.anchored) || result.components[0])?.key;
+    }
   } catch (error) {
     result.valid = false; result.reason = error.message; result.edges = []; result.reverse.clear();
   }
   return result;
+}
+
+function familyComponents(records, edges) {
+  const adjacency = new Map(records.map((person) => [person._treeKey, new Set()]));
+  edges.forEach((edge) => { adjacency.get(edge.person).add(edge.of); adjacency.get(edge.of).add(edge.person); });
+  const byKey = new Map(records.map((person) => [person._treeKey, person]));
+  const unseen = new Set(adjacency.keys()), components = [];
+  while (unseen.size) {
+    const stack = [unseen.values().next().value], members = new Set();
+    while (stack.length) {
+      const key = stack.pop();
+      if (members.has(key)) continue;
+      members.add(key); unseen.delete(key);
+      stack.push(...[...adjacency.get(key)].filter((other) => !members.has(other)));
+    }
+    const ordered = [...members].sort((a, b) => Number(!!byKey.get(b).id) - Number(!!byKey.get(a).id)
+      || adjacency.get(b).size - adjacency.get(a).size || a.localeCompare(b));
+    const anchors = ordered.filter((key) => byKey.get(key).id);
+    const relatives = ordered.map((key) => byKey.get(key).name).filter((name, index, values) => values.indexOf(name) === index);
+    const years = [...members].flatMap((key) => (byKey.get(key).reconstruction?.dates || []).flatMap((date) => date.match(/\d{4}/g) || [])).sort();
+    components.push({ key: [...(anchors.length ? anchors : members)].sort()[0], members: [...members],
+      label: `${relatives.slice(0, 2).join(' / ')} · ${members.size} people${years.length ? ` · ${years[0]}${years.at(-1) !== years[0] ? `–${years.at(-1)}` : ''}` : ''}`, anchored: anchors.length > 0 });
+  }
+  return components.sort((a, b) => b.members.length - a.members.length || a.key.localeCompare(b.key));
+}
+
+export function focusFamilyGraph(graph, focus) {
+  if (!focus || focus === 'all' || !graph.components?.length) return graph;
+  const component = graph.components.find((item) => item.key === focus) || graph.components.find((item) => item.key === graph.defaultFocus);
+  if (!component) return graph;
+  const members = new Set(component.members);
+  const edges = graph.edges.filter((edge) => members.has(edge.person) && members.has(edge.of));
+  return { ...graph, records: graph.records.filter((person) => members.has(person._treeKey)), edges,
+    reverse: new Map([...graph.reverse].filter(([key]) => members.has(key))) };
+}
+
+export function remapSourcePerson(state, previous) {
+  if (!state.familyGraph?.valid || !state.person) return false;
+  if (state.familyGraph.records.some((person) => person._treeKey === state.person)) {
+    state.sourcePersonChoices = null;
+    return false;
+  }
+  const old = previous?.records.find((person) => person._evidence && person._treeKey === state.person);
+  if (!old) return false;
+  const occurrence = ({ source, field }) => JSON.stringify([source.path, source.pointer, source.fingerprint, field]);
+  const references = new Set(old.reconstruction.mentions.map(occurrence));
+  const matches = state.familyGraph.records.filter((person) => person.reconstruction?.mentions.some((mention) => references.has(occurrence(mention))));
+  if (matches.length === 1) {
+    state.person = matches[0].id || matches[0]._treeKey;
+    state.sourcePersonChoices = null;
+    return true;
+  }
+  state.sourcePersonChoices = { reference: state.person, name: old.name, matches };
+  return false;
 }

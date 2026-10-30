@@ -124,6 +124,7 @@ class BuildResult:
     omitted: int = 0
     provisional_groups: dict = field(default_factory=dict)
     configuration: dict = field(default_factory=dict)
+    evidence_graph: dict = field(default_factory=dict)
 
 
 @dataclass

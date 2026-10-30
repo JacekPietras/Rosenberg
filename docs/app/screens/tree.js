@@ -1,5 +1,5 @@
-import { buildRelationshipGraph } from '../data/relationships.js';
-import { relationshipControls, relationshipPanel } from '../rendering/relationships.js';
+import { buildRelationshipGraph, focusFamilyGraph } from '../data/relationships.js?v=2';
+import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=2';
 
 function svgEscape(value) {
   return String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
@@ -9,8 +9,9 @@ function regexEscape(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-export function renderPeopleTree(people = [], documents = [], { graph } = {}) {
+export function renderPeopleTree(people = [], documents = [], { graph, focus } = {}) {
   graph ||= buildRelationshipGraph(Array.isArray(people) ? people : []);
+  graph = focusFamilyGraph(graph, focus);
   const records = graph.records.filter((person) => person?.name).map((person) => ({ ...person,
     children: graph.edges.filter((edge) => edge.type === 'parent' && edge.person === person._treeKey).map((edge) => edge.of),
     wife: graph.generated ? null : person.wife }));
@@ -19,6 +20,10 @@ export function renderPeopleTree(people = [], documents = [], { graph } = {}) {
   const documentRecords = documents instanceof Map ? [...documents.entries()] : Array.isArray(documents) ? documents.map((doc) => ['', doc]) : [];
   const mentionedYears = new Map(records.map((person) => {
     const years = new Set();
+    if (person.reconstruction) {
+      person.reconstruction.dates.forEach((date) => (date.match(/\d{4}/g) || []).forEach((year) => years.add(year)));
+      return [person._treeKey, [...years].sort()];
+    }
     documentRecords.forEach(([path, document]) => {
       const explicit = /^data\/(books|notes)\//.test(path) || !!document?.book;
       const visit = (value, inherited = '') => {
@@ -51,6 +56,7 @@ export function renderPeopleTree(people = [], documents = [], { graph } = {}) {
   }));
   const personLines = (person) => [
     person.name,
+    person._evidence ? person.reconstruction.status === 'contextual' ? 'contextual identity · inferred' : 'source person · identity open' : '',
     person._treeRepeated ? 'shown in multiple branches' : '',
     ...(Array.isArray(person.titles) ? person.titles : []),
     person.born || person.died ? `${person.born || '?'}–${person.died || '?'}` : '',
@@ -277,10 +283,10 @@ export function renderPeopleTree(people = [], documents = [], { graph } = {}) {
   const nodes = cards.map(({ person, x, y }) => {
     const nodeHeight = nodeHeightFor(person);
     const text = personLines(person).map((line, index) => `<tspan class="${index ? 'people-tree-detail' : 'people-tree-name'}" x="${x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line)}</tspan>`).join('');
-    const href = `?person=${encodeURIComponent(person.id || person.name)}`;
+    const href = `?person=${encodeURIComponent(person.id || (person._evidence ? person._treeKey : person.name))}`;
     return `<a class="people-tree-person-link" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${x}" y="${y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${x + nodeWidth / 2}" y="${y + 25}" text-anchor="middle">${text}</text></g></a>`;
   }).join('');
-  return `${relationshipControls(graph)}<section class="people-tree-wrap" aria-label="Family tree viewer"><div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div></section>${relationshipPanel(graph)}`;
+  return `${relationshipControls(graph, { focus })}<section class="people-tree-wrap" aria-label="Family tree viewer"><div class="people-tree"><svg viewBox="0 0 ${width} ${height}" role="group" aria-label="Family tree">${edges.join('')}${nodes}</svg></div></section>${relationshipPanel(graph)}`;
 }
 
 export function setupPeopleTreeZoom(root = document) {

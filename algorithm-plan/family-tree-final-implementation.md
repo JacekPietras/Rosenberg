@@ -1,8 +1,8 @@
 # Family tree: final implementation
 
 The implemented system reconstructs relationships from typed source assertions,
-keeps uncertain identities unresolved, and exports the relationships that can be
-attached to existing registry people. A Python engine computes the result; the
+keeps uncertain identities visible, and exports the complete source-person
+graph alongside its registry-only projection. A Python engine computes the result; the
 browser verifies and displays it. Source assertions remain in their original
 JSON entries.
 
@@ -12,6 +12,45 @@ The [algorithm plan](family-tree-algorithm-plan.md),
 [implementation plan](family-tree-implementation-plan.md) explain the preceding
 design. The authoritative persisted format is documented in
 [the People JSON rules](../rules/json-formats.md#people-json).
+
+## Complete source-person reconstruction (engine 2)
+
+The first implementation displayed only nine relationships between existing
+registry IDs. That projection was insufficient as the main family tree. The
+current viewer uses `familyGraph.evidence` for each independently built view,
+including source people who have no permanent registry record or ID.
+
+The engine starts with source occurrences, groups repeated participant references
+within compatible dated passages, recognizes specifically cited duplicate
+attestations, and compares source-stated family context across sources. It can
+link repeated full spouse pairs and families with multiple relatives without
+requiring either endpoint to have an existing ID. Grounded relatives and
+co-parent context supply additional identity evidence; no marriage, sibling
+closure, or additional parent edge is invented. Contextual name variants and
+omitted surnames require family support and cannot bridge incompatible full
+surnames. Matching remains inferred and all supporting source references remain
+inspectable. Distinct registry anchors, source distinctions, incompatible deaths,
+and parentage cycles constrain complete proposal groups.
+
+The source graph preserves individual or contextual identities when no justified
+cross-source match exists. Those nodes are not claims that each occurrence is a
+separate historical person. Permanent registry IDs and original fact participants
+are unchanged. Node pages show their original typed assertions and source links.
+The family selector opens connected groups or all groups; the initial view
+focuses the largest connected group containing registry anchors.
+
+A reconstruction checked after this change contains 699 source identities and
+483 relationships in the facts view, and 735 source identities and 511
+relationships with guesses. These are dataset snapshots and may change as
+source evidence or matching policy changes. The nine registry-only relationships
+remain a projection, not the extent of the reconstruction.
+
+`reconstruction.py` implements the source-person graph and contextual rounds.
+Schema 2 stores each view's source references once in an indexed table, avoiding
+repeated full citations in every node and derivation. It is documented in the
+People JSON rules. The earlier architecture details below describe the initial
+registry matching layer; references to omitted endpoints apply to that
+projection. The complete source graph is now persisted and displayed.
 
 ## Running the reconstruction
 
@@ -307,7 +346,7 @@ shows their coverage counts rather than rendering the full unresolved graph.
 Legacy `wife`/`children` rendering remains available only when the generated
 schema is absent. Generated and legacy relationships are never combined.
 
-## Current result and verification
+## Initial registry projection result and verification
 
 The read-only run checked while writing this document loaded 1,062 typed
 assertions and counted 1,674 factual prose items and 164 prose guesses:
@@ -354,9 +393,9 @@ restored from old relationship fields.
   cannot safely exclude a deceased candidate.
 - Shared historical event IDs are absent. Feature caps and attestation keys
   reduce duplicate influence but do not fully establish source independence.
-- Provisional groups do not discover or merge new people. Exact-ID profiles
-  also mean that no-ID registry records cannot bootstrap evidence merely from
-  having a unique name.
+- Registry candidate profiles still do not bootstrap identity from a unique
+  name. The separate source-person reconstruction now groups and links source
+  identities with contextual support, without adding permanent registry IDs.
 - Scoring does not extract transactions, property continuity, associates,
   individual seal identities, or residence/activity roles from prose.
 - The joint search considers above-threshold registry candidates and an

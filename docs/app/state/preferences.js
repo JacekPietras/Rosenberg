@@ -23,6 +23,7 @@ export function loadPreferences(storage) {
       language: normalizeDisplayMode(raw.language),
       showFacts: raw.showFacts !== false,
       familyView: raw.familyView === 'with-guesses' ? 'with-guesses' : 'facts',
+      familyFocus: typeof raw.familyFocus === 'string' ? raw.familyFocus : null,
       darkMode: raw.darkMode !== false,
     };
   } catch {

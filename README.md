@@ -45,8 +45,13 @@ python3 scripts/rebuild_family_tree.py --include-guesses --explain vogt_zu_Lauda
 
 Use `--include-guesses --apply` to replace registry relationships with both
 independently built evidence views, or `--apply` for facts only. Existing
-relationships are ignored as evidence. Unresolved identities stay unresolved;
-the CLI reports omitted relationships and conflicts. The viewer exposes source
+relationships are ignored as evidence. The tree includes people found in typed
+source assertions, including people without registry IDs. Source-local family
+groups and contextual links across sources remain distinguishable from fixed
+registry identities. Ambiguous namesakes stay separate. The family-group
+selector opens connected families or the complete graph; source-person pages
+show original attestations. Counts describe source identities, some of which
+may later prove to be the same person. The viewer exposes source
 links, identity uncertainty, and the available evidence modes. The local viewer
 automatically rebuilds relationships when source edits make them stale, then
 reloads and verifies the result. Its **Rebuild relationships** button also runs

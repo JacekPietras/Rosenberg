@@ -8,6 +8,7 @@ from .names import Names
 from .policy import OFFICE_RULES, SEARCH_LIMIT
 from .resolve import resolve
 from .scoring import anchor_profiles, make_candidates
+from .reconstruction import reconstruct
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
@@ -109,4 +110,7 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
         if len(handles) > 1:
             for handle in handles:
                 decisions[handle].candidates.append(Candidate(group, [{'name': 'compatible unresolved occurrences; no identity merge', 'score': 0}]))
-    return BuildResult(view, decisions, edges, conflicts, diagnostics, alternatives, omitted, dict(provisional_groups), {'searchLimit': search_limit})
+    retained = {source['path'] + '#' + source['pointer'] for edge in edges for d in edge.derivations for source in d['sources']}
+    evidence = reconstruct([a for a in usable if a.original['type'] not in RELATIONS or a.source.key in retained],
+                           decisions, registry, names)
+    return BuildResult(view, decisions, edges, conflicts, diagnostics, alternatives, omitted, dict(provisional_groups), {'searchLimit': search_limit}, evidence)

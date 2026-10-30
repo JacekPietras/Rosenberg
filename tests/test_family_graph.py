@@ -17,6 +17,8 @@ from family_graph.names import Names
 from family_graph.policy import OfficeRule
 from family_graph.sources import input_manifest, walk_assertions
 from family_graph.scoring import place_patterns, places_for
+from family_graph.scoring import anchor_profiles
+from family_graph.reconstruction import reconstruct
 
 
 def person(identity, name=None, **extra):
@@ -266,6 +268,116 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertEqual(2, len(set(handles)))
         self.assertTrue(any(set(handles) <= set(group) for group in result.provisional_groups.values()))
         self.assertEqual(2, len({edge.person for edge in result.relationships}))
+
+    def test_source_people_are_exported_without_creating_registry_ids(self):
+        inputs = self.inputs([person('unrelated', 'Unrelated')], [relation('Alex von North', 'Bea von South', 'spouse')])
+        result = build(inputs)
+        graph = result.evidence_graph
+        self.assertEqual(2, len(graph['nodes']))
+        self.assertEqual(1, len(graph['relationships']))
+        self.assertTrue(all(node['key'].startswith('@evidence/') for node in graph['nodes']))
+        output = serialize(inputs, [result])
+        self.assertEqual(1, len(output))
+        self.assertEqual(2, output[0]['familyGraph']['schema'])
+        self.assertEqual(2, len(output[0]['familyGraph']['evidence']['facts']['nodes']))
+
+    def test_repeated_family_pair_links_without_any_registry_anchor(self):
+        self.inputs([person('unrelated', 'Unrelated')], [relation('Alex von North', 'Bea von South', 'spouse')])
+        self.write('data/documents/other.json', {'date': '1394', 'source': 'different charter', 'facts': [relation('Alex von North', 'Bea von South', 'spouse')]})
+        inputs = load_inputs(self.root, validate=False)
+        graph = build(inputs).evidence_graph
+        self.assertEqual(2, len(graph['nodes']))
+        self.assertEqual(1, len(graph['relationships']))
+        self.assertTrue(all(node['status'] == 'contextual' for node in graph['nodes']))
+        self.assertTrue(all(d['identity'] == 'inferred' and len(d['sources']) >= 2 for d in graph['relationships'][0]['derivations']))
+        serialize(inputs, [build(inputs)])
+
+    def test_name_only_cross_source_occurrences_remain_separate(self):
+        self.inputs([person('unrelated', 'Unrelated')], [relation('Alex', 'Bea')])
+        self.write('data/documents/other.json', {'date': '1394', 'facts': [relation('Alex', 'Bea')]})
+        graph = build(load_inputs(self.root, validate=False)).evidence_graph
+        self.assertEqual(4, len(graph['nodes']))
+        self.assertEqual(2, len(graph['relationships']))
+
+    def test_source_family_keeps_one_parent_across_its_explicit_children(self):
+        inputs = self.inputs([person('unrelated', 'Unrelated')], [relation('Alex', 'Bea'), relation('Alex', 'Chris'), relation('Alex', 'Dora', 'spouse')])
+        graph = build(inputs).evidence_graph
+        self.assertEqual(4, len(graph['nodes']))
+        self.assertEqual(2, len([edge for edge in graph['relationships'] if edge['type'] == 'parent']))
+        self.assertEqual(1, len([node for node in graph['nodes'] if node['name'] == 'Alex']))
+
+    def test_coparent_context_links_identity_without_inventing_relationships(self):
+        self.inputs(facts=[relation('Bea von South', 'a', 'spouse')])
+        self.write('data/documents/parents.json', {'date': '1394', 'facts': [relation('Bea von South', 'c'), relation('a', 'c')]})
+        graph = build(load_inputs(self.root, validate=False)).evidence_graph
+        self.assertEqual(1, len([node for node in graph['nodes'] if node['name'] == 'Bea von South']))
+        self.assertEqual(3, len(graph['relationships']))
+        self.assertEqual(2, len([edge for edge in graph['relationships'] if edge['type'] == 'parent']))
+
+    def test_contextual_name_variants_require_matching_family_context(self):
+        self.inputs(facts=[relation('Anne von South', 'a', 'spouse')])
+        self.write('data/documents/variant.json', {'date': '1394', 'facts': [relation('Anna von South', 'a', 'spouse')]})
+        graph = build(load_inputs(self.root, validate=False)).evidence_graph
+        self.assertEqual(1, len([node for node in graph['nodes'] if not node.get('registry')]))
+        self.assertEqual(1, len(graph['relationships']))
+        self.write('data/documents/variant.json', {'date': '1394', 'facts': [relation('Anna von West', 'a', 'spouse')]})
+        graph = build(load_inputs(self.root, validate=False)).evidence_graph
+        self.assertEqual(2, len([node for node in graph['nodes'] if not node.get('registry')]))
+
+    def test_source_graph_guesses_have_separate_views_and_dependencies(self):
+        inputs = self.inputs([person('unrelated', 'Unrelated')], [relation('Alex von North', 'Bea von South', 'spouse')], [relation('Alex von North', 'Bea von South', 'spouse')])
+        facts = build(inputs)
+        guessed = build(inputs, include_guesses=True)
+        self.assertTrue(all(not d['usesGuesses'] for e in facts.evidence_graph['relationships'] for d in e['derivations']))
+        self.assertTrue(any(d['usesGuesses'] for e in guessed.evidence_graph['relationships'] for d in e['derivations']))
+        self.assertEqual(facts.evidence_graph, build(inputs).evidence_graph)
+        serialize(inputs, [facts, guessed])
+
+    def test_reconstructed_graph_validates_participant_assignments(self):
+        inputs = self.inputs([person('unrelated', 'Unrelated')], [relation('Alex', 'Bea')])
+        output = serialize(inputs, [build(inputs)])
+        graph = output[0]['familyGraph']['evidence']['facts']
+        graph['relationships'][0]['person'], graph['relationships'][0]['of'] = graph['relationships'][0]['of'], graph['relationships'][0]['person']
+        with self.assertRaisesRegex(ValueError, 'supporting participant'):
+            validate_generated(output, self.root)
+
+    def test_source_graph_never_merges_distinct_namesake_anchors(self):
+        inputs = self.inputs([person('a', 'Alex von North'), person('other', 'Alex von North')], [relation('a', 'Bea von South', 'spouse'), relation('other', 'Bea von South', 'spouse'), relation('Alex von North', 'Bea von South', 'spouse')])
+        graph = build(inputs).evidence_graph
+        self.assertEqual({'a', 'other'}, {node['registry'] for node in graph['nodes'] if node.get('registry')})
+        self.assertTrue(any(not node.get('registry') and node['name'] == 'Alex von North' for node in graph['nodes']))
+
+    def test_general_book_citation_does_not_turn_equal_assertions_into_one_event(self):
+        self.inputs([person('unrelated', 'Unrelated')])
+        document = {'date': '1393', 'source': 'General book [1872]', 'facts': [relation('Alex', 'Bea')]}
+        self.write('data/documents/first.json', document)
+        self.write('data/documents/second.json', document)
+        graph = build(load_inputs(self.root, validate=False)).evidence_graph
+        self.assertEqual(4, len(graph['nodes']))
+        self.assertEqual(2, len(graph['relationships']))
+
+    def test_joint_source_constraints_do_not_choose_an_arbitrary_identity_merge(self):
+        inputs = self.inputs([person('unrelated', 'Unrelated')], [relation('Alex', 'Bea'), relation('Bea', 'Alex')])
+        graph = build(inputs).evidence_graph
+        self.assertEqual(4, len(graph['nodes']))
+        self.assertEqual(2, len(graph['relationships']))
+        self.assertFalse(graph['links'])
+
+    def test_negative_guess_dependencies_survive_contextual_link_propagation(self):
+        self.inputs(facts=[relation('Alex', 'c')], guesses=[{'type': 'death', 'person': 'b', 'diedOn': '1394'}])
+        self.write('data/documents/second.json', {'date': '1394', 'facts': [relation('Alex', 'c')]})
+        inputs = load_inputs(self.root, validate=False)
+        result = build(inputs, include_guesses=True)
+        # Inject the preceding resolver's accepted, guess-dependent decision;
+        # this tests the source-linker's provenance contract independently.
+        decision = next(d for d in result.decisions.values() if d.mention.reference == 'Alex' and d.mention.assertion.source.path.endswith('/test.json'))
+        guess = next(a.source for a in inputs.assertions if a.source.kind == 'guesses')
+        decision.status, decision.identity, decision.method = 'accepted', 'a', 'inferred'
+        decision.uses_guesses, decision.sources = True, [guess]
+        registry, _ = anchor_profiles(inputs.assertions, inputs.people)
+        graph = reconstruct(inputs.assertions, result.decisions, registry, Names(inputs.names, inputs.places))
+        self.assertEqual(1, len(graph['relationships']))
+        self.assertTrue(all(d['usesGuesses'] for d in graph['relationships'][0]['derivations']))
 
 
 if __name__ == '__main__':

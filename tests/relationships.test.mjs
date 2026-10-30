@@ -6,7 +6,7 @@ import test from 'node:test';
 import { moduleUrl } from './browser-module.mjs';
 
 globalThis.crypto ||= webcrypto;
-const { buildRelationshipGraph, resolvePerson, verifyFamilyGraph, evidenceFingerprint, canonicalEvidence, registryIdentities } =
+const { buildRelationshipGraph, resolvePerson, verifyFamilyGraph, evidenceFingerprint, canonicalEvidence, registryIdentities, focusFamilyGraph, expandEvidenceGraph, remapSourcePerson } =
   await import(await moduleUrl(new URL('../docs/app/data/relationships.js', import.meta.url)));
 const { renderPeopleTree } = await import(await moduleUrl(new URL('../docs/app/screens/tree.js', import.meta.url)));
 const { createDataLoader } = await import(await moduleUrl(new URL('../docs/app/data/loader.js', import.meta.url)));
@@ -14,6 +14,8 @@ const { parsePeople, parsePlaces } = await import(await moduleUrl(new URL('../do
 const { createRepository } = await import(await moduleUrl(new URL('../docs/app/data/repository.js', import.meta.url)));
 const { loadPreferences } = await import(await moduleUrl(new URL('../docs/app/state/preferences.js', import.meta.url)));
 const { renderActiveScreen } = await import(await moduleUrl(new URL('../docs/app/screens/router-view.js', import.meta.url)));
+const { createEntityScreens } = await import(await moduleUrl(new URL('../docs/app/screens/entities.js', import.meta.url)));
+const { escapeHtml } = await import(await moduleUrl(new URL('../docs/app/rendering/html.js', import.meta.url)));
 const source = { path: 'data/documents/deep/event.json', pointer: '/entries/0/facts/0', fingerprint: '' };
 
 async function fixture({ empty = false } = {}) {
@@ -323,4 +325,113 @@ test('the rebuild button disables itself and reports a failed attempt with retry
   assert.equal(button.disabled, false);
   assert.equal(button.textContent, 'Retry rebuild');
   assert.match(message.textContent, /Try again/);
+});
+
+async function sourcePeopleFixture() {
+  const data = await fixture();
+  const doc = data.documents.get(source.path);
+  doc.entries[0].facts[0].of = 'Unregistered Child';
+  data.people.forEach((person) => { person.relationships = []; });
+  const ref = { ...source, fingerprint: await evidenceFingerprint(doc.entries[0].facts[0]) };
+  const nodes = [
+    { key: 'a', registry: 'a', name: 'Same', status: 'anchored', titles: [], dates: ['1393'],
+      mentions: [{ source: ref, field: 'person', date: '1393' }], identitySources: [] },
+    { key: '@evidence/child', name: 'Unregistered Child', status: 'source', titles: [], dates: ['1393'],
+      mentions: [{ source: ref, field: 'of', date: '1393' }], identitySources: [] },
+  ];
+  const relationships = [{ type: 'parent', person: 'a', of: '@evidence/child',
+    derivations: [{ identity: 'source', usesGuesses: false, sources: [ref] }] }];
+  const metadata = data.people[0].familyGraph;
+  Object.assign(metadata, { schema: 2, engine: '2', policy: '2', evidence: {
+    facts: { nodes, relationships }, 'with-guesses': structuredClone({ nodes, relationships }),
+  } });
+  metadata.coverage.facts.reconstructedPeople = 2;
+  metadata.coverage.facts.reconstructedRelationships = 1;
+  await updateFixtureBuild(data);
+  return data;
+}
+
+test('schema 2 displays source people and relationships outside the registry', async () => {
+  const data = await sourcePeopleFixture();
+  const verification = await verifyFamilyGraph(data.people, data.documents, data.repository);
+  assert.equal(verification.valid, true, verification.reason);
+  const graph = buildRelationshipGraph(data.people, { verification });
+  assert.equal(graph.records.length, 4);
+  assert.equal(data.people.length, 3);
+  assert.equal(graph.records.filter((person) => person.id).length, 3);
+  assert.equal(graph.records.find((person) => person._treeKey === '@evidence/child')._evidence, true);
+  assert.equal(graph.edges.length, 1);
+  assert.equal(graph.edges[0].sourceIdentity, true);
+  assert.match(renderPeopleTree(data.people, data.documents, { graph }), /person=%40evidence%2Fchild/);
+});
+
+test('source identities have working pages with their original assertion and source link', async () => {
+  const data = await sourcePeopleFixture();
+  const graph = buildRelationshipGraph(data.people, { verification: { valid: true } });
+  const state = { person: '@evidence/child', familyGraph: graph };
+  const { renderPersonPage } = createEntityScreens({
+    state, getPeople: () => data.people,
+    getDocuments: () => data.documents, escapeHtml, inlineMarkup: escapeHtml, formatDate: String,
+    documentNavigationUrl: (path, index) => `?document=${path}&entry=${index}`,
+  });
+  const html = renderPersonPage();
+  assert.match(html, /Unregistered Child/);
+  assert.match(html, /No permanent person ID/);
+  assert.match(html, /is parent of/);
+  assert.match(html, /Source attestations/);
+  assert.match(html, /event.json/);
+  state.person = 'Unregistered Child';
+  assert.match(renderPersonPage(), /Source attestations/);
+});
+
+test('family selection keeps connected source people and offers the complete graph', async () => {
+  const data = await sourcePeopleFixture();
+  const graph = buildRelationshipGraph(data.people, { verification: { valid: true } });
+  assert.equal(graph.components.length, 3);
+  const family = focusFamilyGraph(graph, graph.defaultFocus);
+  assert.equal(family.records.length, 2);
+  assert.equal(family.edges.length, 1);
+  assert.equal(focusFamilyGraph(graph, 'all').records.length, 4);
+  const html = renderPeopleTree(data.people, data.documents, { graph, focus: graph.defaultFocus });
+  assert.match(html, /data-family-focus/);
+  assert.match(html, /All family groups/);
+  assert.equal((html.match(/class="people-tree-person-link"/g) || []).length, 2);
+});
+
+test('source graph verification rejects endpoint reassignment and stale occurrence pointers', async () => {
+  for (const change of ['reverse', 'pointer', 'anchor']) {
+    const data = await sourcePeopleFixture();
+    const graph = data.people[0].familyGraph.evidence.facts;
+    if (change === 'reverse') [graph.relationships[0].person, graph.relationships[0].of] = [graph.relationships[0].of, graph.relationships[0].person];
+    if (change === 'pointer') graph.nodes[1].mentions[0].source = { ...source, pointer: '/entries/0/facts/1' };
+    if (change === 'anchor') graph.nodes[1].mentions[0].field = 'person';
+    assert.equal((await verifyFamilyGraph(data.people, data.documents, data.repository)).valid, false, change);
+  }
+});
+
+test('compact source indexes expand to provenance and invalid indexes are rejected', async () => {
+  const data = await sourcePeopleFixture();
+  const graph = data.people[0].familyGraph.evidence.facts;
+  const ref = graph.nodes[0].mentions[0].source;
+  graph.sources = [ref];
+  graph.nodes.forEach((node) => { node.mentions[0].source = 0; });
+  graph.relationships[0].derivations[0].sources = [0];
+  assert.deepEqual(expandEvidenceGraph(graph).relationships[0].derivations[0].sources, [ref]);
+  assert.equal((await verifyFamilyGraph(data.people, data.documents, data.repository)).valid, true);
+  graph.relationships[0].derivations[0].sources = [-1];
+  assert.throws(() => expandEvidenceGraph(graph), /source index/);
+});
+
+test('source-person navigation follows verified occurrences across changed evidence groups', async () => {
+  const data = await sourcePeopleFixture();
+  const previous = buildRelationshipGraph(data.people, { verification: { valid: true } });
+  const changed = data.people[0].familyGraph.evidence['with-guesses'];
+  changed.nodes[1].key = '@evidence/changed';
+  changed.relationships[0].of = '@evidence/changed';
+  const state = { person: '@evidence/child', familyGraph: buildRelationshipGraph(data.people, { view: 'with-guesses', verification: { valid: true } }) };
+  assert.equal(remapSourcePerson(state, previous), true);
+  assert.equal(state.person, '@evidence/changed');
+  state.sourcePersonChoices = { reference: state.person, matches: [] };
+  assert.equal(remapSourcePerson(state, previous), false);
+  assert.equal(state.sourcePersonChoices, null);
 });

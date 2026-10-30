@@ -14,6 +14,16 @@ from family_graph.export import apply, serialize
 
 def explain(result, query):
     print(f'\n{result.view}: explanations for {query}')
+    for node in result.evidence_graph.get('nodes', []):
+        if query not in (node['key'], node['name']):
+            continue
+        print(f'  SOURCE PERSON {node["key"]}: {node["name"]} ({node["status"]})')
+        for mention in node['mentions']:
+            ref = mention['source']
+            print(f'    {mention["date"]}: {ref["path"]}#{ref["pointer"]}/{mention["field"]}')
+        for edge in result.evidence_graph['relationships']:
+            if node['key'] in (edge['person'], edge['of']):
+                print(f'    {edge["person"]} --{edge["type"]}--> {edge["of"]}')
     for handle, decision in result.decisions.items():
         if not (query in (handle, decision.identity, decision.mention.reference)
                 or any(candidate.identity == query for candidate in decision.candidates)):
@@ -66,7 +76,8 @@ def main(argv=None):
         for result in results:
             coverage = people[0]['familyGraph']['coverage'][result.view]
             exported = sum(any(d['view'] == result.view for d in edge['derivations']) for person in people for edge in person['relationships'])
-            print(f'{result.view}: {exported} exported relationships, {coverage["omittedRelationships"]} omitted, '
+            print(f'{result.view}: {coverage["reconstructedPeople"]} source identities, '
+                  f'{coverage["reconstructedRelationships"]} relationships ({exported} between registry records), '
                   f'{coverage["unresolvedMentions"]} unresolved mentions, {coverage["conflicts"]} conflicts.')
             for conflict in result.conflicts:
                 print(f'  REVIEW: {conflict["reason"]}: {", ".join(conflict.get("identities", []))}')

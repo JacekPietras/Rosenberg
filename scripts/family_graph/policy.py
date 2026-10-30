@@ -2,8 +2,8 @@
 
 from dataclasses import dataclass
 
-ENGINE_VERSION = '1'
-POLICY_VERSION = '1'
+ENGINE_VERSION = '2'
+POLICY_VERSION = '2'
 MIN_SCORE = 7
 MIN_MARGIN = 3
 SEARCH_LIMIT = 10000

@@ -349,7 +349,7 @@ with full names. Preserve existing IDs, names, titles, biographical dates, and
 unrelated fields. Dates retain ISO precision. Registry titles and dates are
 summaries, not authoritative identity evidence.
 
-### Generated relationships (schema 1)
+### Generated relationships (schema 2)
 
 Reconstruct relationships with `python3 scripts/rebuild_family_tree.py`. The
 command is read-only unless passed `--apply`. `--include-guesses` computes two
@@ -425,11 +425,70 @@ factual evidence. Unresolved endpoints and explanations remain inspectable in
 the read-only build and CLI, with omitted-edge counts in generated metadata.
 No separate facts database or persistent review queue is created.
 
+### Reconstructed source people and complete evidence views
+
+The registry is an identity anchor list, not the limit of the family graph.
+Schema 2 stores the full reconstruction under the first record's
+`familyGraph.evidence`, keyed by each available view (`facts`, `with-guesses`).
+Each view contains `sources`, `nodes`, and `relationships`. The `sources` array
+stores each path/pointer/fingerprint reference once. In persisted view data,
+`mentions[].source`, `identitySources[]`, and derivation `sources[]` use zero-based
+integer indexes into that table; the browser expands them for display. Complete
+reference objects are also accepted when reading an uncompressed view. The ordinary per-person
+`relationships` arrays remain the registry-only projection; the viewer uses the
+complete evidence view when available. Source participants and registry IDs
+are never rewritten, and no permanent people are invented to fill gaps.
+
+A node contains `key`, `name`, `titles`, `dates`, `status`, `mentions`, and
+`identitySources`. A registry-backed node also contains `registry`, equal to
+its exact internal registry key. Other nodes use an opaque `@evidence/` handle
+derived from their source occurrences. These handles are generated view keys,
+not person IDs, and can change after new evidence changes a grouping.
+`status` is `anchored`, `contextual`, or `source`. Contextual nodes are inferred
+identity clusters; source nodes may still correspond to another node elsewhere.
+Counts describe source identities, not a proven number of distinct people.
+
+Each `mentions` item contains `source` (a path/pointer/fingerprint reference),
+`field` (`person` or `of`), and the resolved historical `date`. An occurrence
+can belong to only one node per view. `identitySources` retains the source
+references supporting grouping. Titles and dates summarize source attestations,
+without turning a mention into evidence that the person was alive.
+
+Evidence-view relationships contain `type`, `person`, `of`, `derivations`, and
+`term` for kin. Endpoints are node keys. Their derivations contain `identity`,
+`usesGuesses`, and `sources`; the containing view supplies the evidence mode.
+Identity can additionally be `source`, indicating a source participant whose
+correspondence to other occurrences remains open. Each relationship must have
+an original assertion whose participant assignments match its endpoints.
+
+The engine groups repeated participant references in one dated source passage
+only when source distinctions and graph constraints allow it. Cross-source
+links require family context: independently grounded relatives, repeated full
+spouse pairs, or multiple source-stated relatives within a temporal comparison
+window. Co-parentage can support identity, but never creates a marriage or an
+additional parent edge. Contextual given-name variants or omitted surnames
+require family support and cannot join incompatible complete surnames. Shared
+names, titles, or places alone do not link separate source people.
+
+Candidate links are evaluated in rounds against existing source profiles.
+Complete connected proposal groups must preserve separate registry anchors,
+compatible deaths, source distinctions, and acyclic parentage. Conflicting
+proposal groups remain separate. Grouping supports are retained through later
+rounds, including dependencies on guesses. Facts and guesses remain independent
+builds. Ambiguous occurrence groups are visible in the tree instead of being
+silently discarded because they lack registry IDs.
+
+`coverage` additionally records `reconstructedPeople`,
+`reconstructedRelationships`, and `contextualLinks` per view. The viewer offers
+family-group selection, source-person pages with attestations, and links to
+identity and relationship evidence. Schema 1 builds remain readable for
+migration; changed engine fingerprints trigger rebuilding into schema 2.
+
 ### Build metadata and evidence verification
 
 The first registry record alone contains `familyGraph`, with:
 
-- `schema: 1`, `engine: "1"`, and `policy: "1"`.
+- `schema: 2`, `engine: "2"`, and `policy: "2"`.
 - `configuration.searchLimit`: the positive integer bound used for joint search.
 - `views`: exactly `["facts"]` or `["facts", "with-guesses"]`, including empty
   or identical views.

@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildRelationshipGraph, verifyFamilyGraph } from './relationships.js';
+import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=2';
 
 export function createDataLoader({
   repository,
@@ -16,8 +16,10 @@ export function createDataLoader({
   renderTabs,
   renderActive,
   onFamilyRebuild = () => {},
+  onPersonReassigned = () => {},
 }) {
   let loading;
+  let lastVerifiedGraph;
 
   async function loadSnapshot({ autoRebuild = true } = {}) {
     const files = await repository.getRepositoryFiles();
@@ -50,6 +52,7 @@ export function createDataLoader({
       collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => imageLabels(item).includes('effigy')),
     };
     state.documents = documents;
+    if (state.familyGraph?.valid) lastVerifiedGraph = state.familyGraph;
     state.familyVerification = await verifyFamilyGraph(state.personRecords, documents, repository, paths);
     state.familyGraph = buildRelationshipGraph(state.personRecords, { view: state.familyView, verification: state.familyVerification });
     state.canRebuildFamilyGraph = typeof repository.rebuildFamilyGraph === 'function' && await repository.isLocalServer();
@@ -63,6 +66,8 @@ export function createDataLoader({
         state.familyGraph.rebuildError = error.message;
       }
     }
+    if (remapSourcePerson(state, lastVerifiedGraph)) onPersonReassigned();
+    if (state.familyGraph.valid) lastVerifiedGraph = state.familyGraph;
     state.familyView = state.familyGraph.view;
     state.familyRepositoryRevision = repository.revision || 0;
     state.snapshot = snapshot;
