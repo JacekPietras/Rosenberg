@@ -14,7 +14,7 @@ globalThis.window = { location: { hostname: 'example.github.io', pathname: '/Ros
 const { documentNavigationUrl } = await import(await moduleUrl(new URL('../docs/app/rendering/navigation.js', import.meta.url)));
 const options = { people: [{ id: 'eberhard', name: 'Eberhard' }], inlineMarkup: escapeHtml };
 
-test('ambiguous name pages list anchors while ID pages distinguish namesake effigies', async () => {
+test('generic name pages include namesake effigies while ID pages distinguish them', async () => {
   const people = JSON.parse(await readFile(new URL('../data/people.json', import.meta.url), 'utf8'));
   const images = JSON.parse(await readFile(new URL('../data/images/images.json', import.meta.url), 'utf8'));
   const effigy = images.entries.find((entry) => entry.title === '[vogt_zu_Lauda]');
@@ -32,14 +32,13 @@ test('ambiguous name pages list anchors while ID pages distinguish namesake effi
     assert.ok(renderPersonPage().includes(effigy.coverImage), person);
   }
   state.person = 'Eberhard von Rosenberg';
-  assert.match(renderPersonPage(), /Ambiguous name/);
-  assert.match(renderPersonPage(), /person=vogt_zu_Lauda/);
-  assert.match(renderPersonPage(), /person=vogt_zu_Durn/);
+  assert.ok(renderPersonPage().includes(effigy.coverImage));
+  assert.doesNotMatch(renderPersonPage(), /Ambiguous name|Choose a person/);
   state.person = 'vogt_zu_Durn';
   assert.ok(!renderPersonPage().includes(effigy.coverImage));
 });
 
-test('ID pages exclude name-only images and seals; ambiguous routes list choices', () => {
+test('ID pages select their images and seals; name routes include all namesakes', () => {
   const name = 'Eberhard von Rosenberg';
   const people = [{ id: 'lauda', name }, { id: 'durn', name }];
   const state = { person: 'lauda' };
@@ -68,10 +67,63 @@ test('ID pages exclude name-only images and seals; ambiguous routes list choices
   for (const marker of ['generic-image', 'other-image', 'seal-0', 'seal-1']) assert.ok(!strictHtml.includes(marker), marker);
   state.person = name;
   const nameHtml = renderPersonPage();
-  assert.match(nameHtml, /Ambiguous name/);
-  assert.match(nameHtml, /person=lauda/);
-  assert.match(nameHtml, /person=durn/);
-  assert.ok(!nameHtml.includes('generic-image'));
+  assert.doesNotMatch(nameHtml, /Ambiguous name|Choose a person/);
+  for (const marker of ['generic-image', 'other-image', 'direct-image', 'person-id-image', 'seal-0', 'seal-1', 'seal-2']) {
+    assert.ok(nameHtml.includes(marker), marker);
+  }
+});
+
+test('name routes aggregate source identities while person and evidence IDs select their views', () => {
+  const name = 'Hans von Rosenberg';
+  const people = [{ id: 'hans_1513', name }, { id: 'hans_1516', name }];
+  const path = 'data/documents/hans.json';
+  const entries = [
+    { date: '1359', facts: [{ type: 'title', person: name, personTitle: ['Witness in 1359'] }] },
+    { date: '1513', facts: [{ type: 'title', person: 'hans_1513', personTitle: ['Witness in 1513'] }] },
+    { date: '1516', facts: [{ type: 'title', person: 'hans_1516', personTitle: ['Witness in 1516'] }] },
+  ];
+  const records = [0, 1].map((index) => ({
+    name, _evidence: true, _treeKey: `@evidence/hans-${index}`,
+    reconstruction: { name, key: `@evidence/hans-${index}`, status: 'source',
+      mentions: [{ source: { path, pointer: `/entries/${index}/facts/0` }, field: 'person', date: entries[index].date }] },
+  }));
+  const state = { person: name, familyGraph: {
+    valid: true, generated: true, records, reverse: new Map(), edges: [],
+    view: 'facts', views: ['facts'], components: [],
+    metadata: { schema: 4, coverage: { facts: {
+      reconstructedPeople: 688, reconstructedRelationships: 476, conflicts: 0,
+    } } },
+  } };
+  const { renderPersonPage } = createEntityScreens({
+    state, getPeople: () => people, getDocuments: () => new Map([[path, { entries }]]),
+    buildPersonPattern, escapeHtml, inlineMarkup: escapeHtml, markdownLinks: escapeHtml,
+    dateSortValue: Number, formatDate: String, documentTitle: () => 'Document',
+    documentNavigationUrl: (path, index) => `?document=${path}#entry-${index}`,
+    displayedLanguagesFor: () => [],
+  });
+  const generic = renderPersonPage();
+  for (const year of ['1359', '1513', '1516']) assert.ok(generic.includes(`Witness in ${year}`));
+  assert.match(generic, /3 mentions/);
+  assert.doesNotMatch(generic, /Choose a person|Ambiguous name|Source attestations|source identities|Reconstructed relationships|No resolved relationships/);
+
+  state.person = 'hans_1513';
+  const identified = renderPersonPage();
+  assert.match(identified, /Witness in 1513/);
+  assert.match(identified, /688 source identities|Reconstructed relationships/);
+  assert.doesNotMatch(identified, /Witness in 1516|Source attestations/);
+
+  state.person = '@evidence/hans-0';
+  const evidence = renderPersonPage();
+  assert.match(evidence, /Source attestations/);
+  assert.match(evidence, /688 source identities|Reconstructed relationships/);
+  assert.match(evidence, /Witness in 1359/);
+  assert.doesNotMatch(evidence, /Witness in 1513|Witness in 1516/);
+
+  // A name remains generic even if just one generated source identity is available.
+  state.person = name;
+  state.familyGraph.records = records.slice(0, 1);
+  assert.match(renderPersonPage(), /3 mentions/);
+  assert.doesNotMatch(renderPersonPage(), /Source attestations/);
 });
 
 test('shared facts view formats dates, groups repeated dates, and preserves person links', () => {

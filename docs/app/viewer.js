@@ -11,7 +11,7 @@ import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from 
 import { createSealScreen } from './screens/seals.js?v=2';
 import { createImageScreen } from './screens/images.js?v=36';
 import { createDataLoader } from './data/loader.js?v=18';
-import { createEntityScreens } from './screens/entities.js?v=104';
+import { createEntityScreens } from './screens/entities.js?v=106';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';

@@ -79,7 +79,7 @@
     "data/books/arnold_von_uissigheim.json": "sha256:c71515e3ec3e5e000b71961c37caf7d99af5b956032fff1d28214a6f9e746292",
     "data/books/bauer_1872.json": "sha256:1c3617b8393d61ba03f299d779d9ae56ac637224df4dde096d9af33af6ea1e44",
     "data/books/bidermann_1751.json": "sha256:ca977834c924869d70607667740af7573eeeaa820389a7af9a8c9f730174b12b",
-    "data/books/freiburger_dioecesan_archiv_1896_25.json": "sha256:2b69f073990c729fa14eaec0f11322e3aff3cbdf187d3576a39594ef970abcfc",
+    "data/books/freiburger_dioecesan_archiv_1896_25.json": "sha256:dad9d9e244ea933429d4bc7d0b08dea6691f1667757c9da6781035cca7091072",
     "data/books/kreis_mosbach_1898.json": "sha256:ac51719d0903977bbab660852c307140978790f05108ddb4ee6482638e0b887f",
     "data/books/neumaier_1986.json": "sha256:83d24ffa5ecca56bd9d7705b84b48c9c537bd0dd73401f63c4b8ff1cd36633fa",
     "data/books/wappengruppen_1977.json": "sha256:b36a70b7b1bf03e18f64c338efa454621497163f74d92691f601331f942f96b2",
@@ -468,7 +468,7 @@
     "data/documents/1804-05-15.json": "sha256:42939ecfe82696ba10c2ccaf21b7729eed5a4437f1e393eb7caa6c3944835c20",
     "data/images/images.json": "sha256:4730b80c0558a21214f92b16c8b9740cc18fdc56895f05177dc9a348c13ea33e",
     "data/matching.json": "sha256:cf738d6a7562d4ae32a2133a880491626419e77ba83f98d2e0d8d9b366706498",
-    "data/names.md": "sha256:3d827dca22f7816f25bf47a0ef38dc9285bfd426f7e779ebe85bd69d46734591",
+    "data/names.md": "sha256:889052d794fb58c46d1ce1fb2c2c7fbb45719a89d90b6175a80145b688f2d673",
     "data/notes/notes.json": "sha256:a33e162e8b4aca9261bbc132c2f2a4aacc82f84b40f38ae52d5777a8a8510ec4",
     "data/people.json": "sha256:7abadb6cf556bbf9da3fb71d9d5bb5a2ff6c3a086221c41ed41343cc9d13f6f1",
     "data/places.json": "sha256:7bfd1843f2dcc1683ffbbd41f707c2019d27d6c0a7ec3607ba4cd3552705e0fb",
@@ -491,7 +491,7 @@
     "scripts/search_places_by_name.py": "sha256:2034da7ef86d2016e9d546f89100e74977cd68d2db5ddbe235ff4045f2ce60ec",
     "scripts/validate_facts.py": "sha256:55ae6062aab59d96ef0f6bfc6b2a1602e111e19b5aab302150cf9778d57557f9"
   },
-  "fingerprint": "sha256:891e62eca032c5dc569a22c6f27b99c6ad4804ff65c171c85ea1d08717073eeb",
+  "fingerprint": "sha256:bed12cd9cdd93e05291a3fca780088750ef22550af3a61bf115e776acc465da7",
   "evidence": {
     "facts": {
       "sources": [
@@ -2158,17 +2158,17 @@
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/38/facts/0",
-          "fingerprint": "sha256:a6e1d9274b1cf64c9804c92352365befee06232c13a5bfc36918c871a8fccbc5"
+          "fingerprint": "sha256:4d844b76b8823b204335aea89c35ab70ad1f22edda552addcf446263658dbefa"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/38/facts/1",
-          "fingerprint": "sha256:81251d583ad811bdc9d95d4fda878d4515693ea0dcc9bd1197281a6c0b1a531c"
+          "fingerprint": "sha256:74bde8d8698a763fab0503d390f8e11ce07ccac0bb6afbf49f7693342444f02d"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/38/facts/2",
-          "fingerprint": "sha256:1ce46fac7c69a8b72cef7c30a595f59b28db18c9380ae3d6f6ca92870a23e391"
+          "fingerprint": "sha256:4890b895b8b94f1fadbb567bd0100ea7f2dba44077be0e3b8d4c43da2830a7bc"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
@@ -19919,7 +19919,7 @@
         },
         {
           "key": "@evidence/8f76988eec376287d9e0",
-          "name": "Erhart von Rosenberg",
+          "name": "Eberhard von Rosenberg",
           "titles": [
             "Ritter",
             "Vogt zu Wildenberg"
@@ -146337,6 +146337,58 @@
           "usesGuesses": false
         },
         {
+          "probability": 0.82571547,
+          "logOdds": 1.55556102,
+          "features": [
+            {
+              "name": "shared family context: eberhard von rosenberg",
+              "contribution": 4.5
+            }
+          ],
+          "sources": [
+            333,
+            545,
+            546,
+            547,
+            548
+          ],
+          "mentions": [
+            "data/books/freiburger_dioecesan_archiv_1896_25.json#/entries/38/facts/1/of",
+            "data/documents/1341-04-30_2.json#/entries/0/facts/0/of"
+          ],
+          "iteration": 4,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "@evidence/dce19069efb7b3eda4d6",
+          "candidate": "@evidence/81c819243f0942d8d835",
+          "usesGuesses": false
+        },
+        {
+          "probability": 0.82571547,
+          "logOdds": 1.55556102,
+          "features": [
+            {
+              "name": "shared family context: eberhard von rosenberg",
+              "contribution": 4.5
+            }
+          ],
+          "sources": [
+            333,
+            546,
+            547
+          ],
+          "mentions": [
+            "data/books/freiburger_dioecesan_archiv_1896_25.json#/entries/38/facts/1/of",
+            "data/documents/1341-05-12.json#/entries/0/facts/1/of"
+          ],
+          "iteration": 0,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "@evidence/dce19069efb7b3eda4d6",
+          "candidate": "@evidence/81c819243f0942d8d835",
+          "usesGuesses": false
+        },
+        {
           "probability": 0.05782381,
           "logOdds": -2.79079164,
           "features": [
@@ -224887,17 +224939,17 @@
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/38/facts/0",
-          "fingerprint": "sha256:a6e1d9274b1cf64c9804c92352365befee06232c13a5bfc36918c871a8fccbc5"
+          "fingerprint": "sha256:4d844b76b8823b204335aea89c35ab70ad1f22edda552addcf446263658dbefa"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/38/facts/1",
-          "fingerprint": "sha256:81251d583ad811bdc9d95d4fda878d4515693ea0dcc9bd1197281a6c0b1a531c"
+          "fingerprint": "sha256:74bde8d8698a763fab0503d390f8e11ce07ccac0bb6afbf49f7693342444f02d"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/38/facts/2",
-          "fingerprint": "sha256:1ce46fac7c69a8b72cef7c30a595f59b28db18c9380ae3d6f6ca92870a23e391"
+          "fingerprint": "sha256:4890b895b8b94f1fadbb567bd0100ea7f2dba44077be0e3b8d4c43da2830a7bc"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
@@ -243709,7 +243761,7 @@
         },
         {
           "key": "@evidence/8f76988eec376287d9e0",
-          "name": "Erhart von Rosenberg",
+          "name": "Eberhard von Rosenberg",
           "titles": [
             "Ritter",
             "Vogt zu Wildenberg"
@@ -379739,6 +379791,58 @@
           "usesGuesses": false
         },
         {
+          "probability": 0.82571547,
+          "logOdds": 1.55556102,
+          "features": [
+            {
+              "name": "shared family context: eberhard von rosenberg",
+              "contribution": 4.5
+            }
+          ],
+          "sources": [
+            357,
+            588,
+            589,
+            590,
+            591
+          ],
+          "mentions": [
+            "data/books/freiburger_dioecesan_archiv_1896_25.json#/entries/38/facts/1/of",
+            "data/documents/1341-04-30_2.json#/entries/0/facts/0/of"
+          ],
+          "iteration": 4,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "@evidence/dce19069efb7b3eda4d6",
+          "candidate": "@evidence/81c819243f0942d8d835",
+          "usesGuesses": false
+        },
+        {
+          "probability": 0.82571547,
+          "logOdds": 1.55556102,
+          "features": [
+            {
+              "name": "shared family context: eberhard von rosenberg",
+              "contribution": 4.5
+            }
+          ],
+          "sources": [
+            357,
+            589,
+            590
+          ],
+          "mentions": [
+            "data/books/freiburger_dioecesan_archiv_1896_25.json#/entries/38/facts/1/of",
+            "data/documents/1341-05-12.json#/entries/0/facts/1/of"
+          ],
+          "iteration": 0,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "@evidence/dce19069efb7b3eda4d6",
+          "candidate": "@evidence/81c819243f0942d8d835",
+          "usesGuesses": false
+        },
+        {
           "probability": 0.05782381,
           "logOdds": -2.79079164,
           "features": [
@@ -474280,7 +474384,7 @@
       "reconstructedPeople": 645,
       "reconstructedRelationships": 447,
       "contextualLinks": 383,
-      "candidateComparisons": 2706,
+      "candidateComparisons": 2708,
       "contextCoverage": {
         "total": 1674,
         "attached": 721,
@@ -474298,7 +474402,7 @@
       "reconstructedPeople": 688,
       "reconstructedRelationships": 476,
       "contextualLinks": 398,
-      "candidateComparisons": 3070,
+      "candidateComparisons": 3072,
       "contextCoverage": {
         "total": 1838,
         "attached": 746,

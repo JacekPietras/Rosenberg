@@ -284,7 +284,7 @@ test('hover facts use source identity pointers and keep namesakes separate', () 
   const documents = new Map([[path, { date: '1400', entries: [{ facts: [
     { type: 'title', person: 'Same name', personTitle: ['Ritter'] },
     { type: 'title', person: 'Same name', personTitle: ['Vogt'] },
-  ], guesses: [{ text: 'A guess that must stay out of facts.' }] }] }]]);
+  ], guesses: [{ text: 'An inferred relationship.' }] }] }]]);
   const graph = { records: [0, 1].map((index) => ({ name: 'Same name', _treeKey: `source-${index}`,
     reconstruction: { dates: ['1400'], mentions: [
       { source: { path, pointer: `/entries/0/facts/${index}` }, date: '1400' },
@@ -298,14 +298,35 @@ test('hover facts use source identity pointers and keep namesakes separate', () 
   assert.doesNotMatch(templates[0], /Vogt/);
   assert.match(templates[1], /Vogt/);
   assert.doesNotMatch(templates[1], /Ritter/);
-  assert.equal((templates[0].match(/<li\b/g) || []).length, 1, 'duplicate participant references show one fact');
+  assert.equal((templates[0].match(/<li\b/g) || []).length, 2, 'duplicate participant references show one fact plus one guess');
   assert.match(templates[0], /<time class="fact-date" datetime="1400">1400<\/time>/);
   assert.doesNotMatch(templates[0], /<h3|class="source"|>data\/documents/);
-  assert.doesNotMatch(html, /A guess|entity-relationships|identity-comparisons/);
+  assert.doesNotMatch(html, /entity-relationships|identity-comparisons/);
   assert.match(html, /<\/svg><\/div><aside class="people-tree-facts"/, 'facts follow the scrollable tree');
   const { inlineMarkup } = createMarkupRenderer({ state: { people: [] } });
-  assert.equal(templates[0], renderFactsView([{ ...documents.get(path).entries[0].facts[0], date: '1400' }], { people: [], inlineMarkup, sourceHref: () => '?tab=documents&record=data%2Fdocuments%2Fexample.json#entry-data-documents-example-json-0' }), 'exact output of the existing facts renderer');
+  const sourceHref = () => '?tab=documents&record=data%2Fdocuments%2Fexample.json#entry-data-documents-example-json-0';
+  assert.equal(templates[0],
+    renderFactsView([{ ...documents.get(path).entries[0].facts[0], date: '1400' }], { people: [], inlineMarkup, sourceHref })
+    + renderFactsView([{ ...documents.get(path).entries[0].guesses[0], date: '1400' }], { people: [], inlineMarkup, sourceHref, listClass: 'guesses-view' }),
+    'facts and guesses use the same renderer and styles as source screens');
   assert.match(templates[0], /class="person-link"/, 'reuse person links');
+});
+
+test('hover displays a source person supported only by a guess', () => {
+  const path = 'data/books/example.json';
+  const documents = new Map([[path, { entries: [{ guesses: [
+    { type: 'sibling', person: 'Eberhard von Rosenberg', of: 'Konrad von Rosenberg', date: '1381-05-25' },
+  ] }] }]]);
+  const graph = { records: [{ name: 'Eberhard von Rosenberg', _treeKey: 'source-eberhard',
+    reconstruction: { dates: ['1381-05-25'], mentions: [
+      { source: { path, pointer: '/entries/0/guesses/0' }, date: '1381-05-25' },
+    ] } }], edges: [], reverse: new Map() };
+  const html = renderPeopleTree([], documents, { graph });
+  assert.match(html, /class="facts facts-view guesses-view" aria-label="Guesses"/);
+  assert.match(html, /is sibling of/);
+  assert.match(html, /datetime="1381-05-25"/);
+  assert.match(html, /document=data%2Fbooks%2Fexample.json#entry-data-books-example-json-0/);
+  assert.doesNotMatch(html, /No recorded/);
 });
 
 test('registry hover facts use exact IDs and historical dates', () => {
@@ -316,15 +337,22 @@ test('registry hover facts use exact IDs and historical dates', () => {
       { type: 'title', person: 'b', personTitle: ['Vogt'], date: '1360' },
       { text: 'Same name held land.' },
       { text: '[a] used <script>unsafe</script> **bold** text.' },
+    ], guesses: [
+      { type: 'title', person: 'a', personTitle: ['der Jüngere'], date: '1351' },
+      { type: 'title', person: 'b', personTitle: ['der Ältere'], date: '1361' },
     ] }] }],
   ]));
   const templates = [...html.matchAll(/<template[^>]*>(.*?)<\/template>/g)].map((match) => match[1]);
   assert.match(templates[0], /Ritter/);
+  assert.match(templates[0], /guesses-view/);
+  assert.match(templates[0], /der Jüngere/);
+  assert.doesNotMatch(templates[0], /der Ältere/);
   assert.match(templates[0], /<time class="fact-date" datetime="1350">1350<\/time>/);
   assert.match(templates[0], /Undated/);
   assert.match(templates[0], /&lt;script&gt;/);
   assert.match(templates[0], /<strong>bold<\/strong>/, 'reuse document inline formatting');
   assert.doesNotMatch(templates[0], /Vogt|2020|held land|<script>/);
   assert.match(templates[1], /Vogt/);
+  assert.match(templates[1], /der Ältere/);
   assert.doesNotMatch(templates[1], /Ritter|unsafe/);
 });

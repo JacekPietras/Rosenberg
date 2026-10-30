@@ -11,7 +11,7 @@ const { buildRelationshipGraph, resolvePerson, verifyFamilyGraph, evidenceFinger
 const { relationshipPanel } = await import(await moduleUrl(new URL('../docs/app/rendering/relationships.js', import.meta.url)));
 const { renderPeopleTree } = await import(await moduleUrl(new URL('../docs/app/screens/tree.js', import.meta.url)));
 const { createDataLoader } = await import(await moduleUrl(new URL('../docs/app/data/loader.js', import.meta.url)));
-const { parsePeople, parsePlaces } = await import(await moduleUrl(new URL('../docs/app/data/entities.js', import.meta.url)));
+const { parsePeople, parsePlaces, buildPersonPattern } = await import(await moduleUrl(new URL('../docs/app/data/entities.js', import.meta.url)));
 const { createRepository } = await import(await moduleUrl(new URL('../docs/app/data/repository.js', import.meta.url)));
 const { loadPreferences } = await import(await moduleUrl(new URL('../docs/app/state/preferences.js', import.meta.url)));
 const { renderActiveScreen } = await import(await moduleUrl(new URL('../docs/app/screens/router-view.js', import.meta.url)));
@@ -435,6 +435,8 @@ test('source identities have working pages with their original assertion and sou
   const { renderPersonPage } = createEntityScreens({
     state, getPeople: () => data.people,
     getDocuments: () => data.documents, escapeHtml, inlineMarkup: escapeHtml, formatDate: String,
+    buildPersonPattern, dateSortValue: () => 0, displayedLanguagesFor: () => [],
+    markdownLinks: escapeHtml, documentTitle: () => 'Document',
     documentNavigationUrl: (path, index) => `?document=${path}&entry=${index}`,
   });
   const html = renderPersonPage();
@@ -444,7 +446,9 @@ test('source identities have working pages with their original assertion and sou
   assert.match(html, /Source attestations/);
   assert.match(html, /event.json/);
   state.person = 'Unregistered Child';
-  assert.match(renderPersonPage(), /Source attestations/);
+  const nameHtml = renderPersonPage();
+  assert.match(nameHtml, /is parent of/);
+  assert.doesNotMatch(nameHtml, /Source attestations|No permanent person ID/);
 });
 
 test('family selection keeps connected source people and offers the complete graph', async () => {

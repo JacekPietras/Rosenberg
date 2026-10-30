@@ -106,20 +106,10 @@ export function createEntityScreens({
     }
     const resolution = resolvePerson(people, state.person);
     const exactAnchor = people.some((person) => person.id && person.id === state.person);
-    const query = String(state.person || '').toLocaleLowerCase();
-    const sourcePeople = state.familyGraph?.valid && !exactAnchor ? state.familyGraph.records.filter((record) => record._evidence
-      && (record._treeKey === state.person || record.name.toLocaleLowerCase() === query || record.reconstruction.mentions.some(({ source, field, reference }) =>
-        String(field === 'text' ? reference : resolveEvidencePointer(getDocuments().get(source.path), source.pointer)[field]).toLocaleLowerCase() === query))) : [];
-    const exactSource = sourcePeople.find((record) => record._treeKey === state.person);
-    if (!exactSource && sourcePeople.length && sourcePeople.length + resolution.matches.length > 1) {
-      const choices = [...resolution.matches, ...sourcePeople];
-      return `<article class="document"><h2>${escapeHtml(state.person)}</h2><p class="status">This name has several source identities. Choose a person or source group.</p><ul>${choices.map((person) => {
-        const reference = person.id || (person._evidence ? person._treeKey : person.name);
-        const dates = person.reconstruction?.dates || [];
-        return `<li><a class="person-link" href="?person=${encodeURIComponent(reference)}">${escapeHtml(person.name)}</a>${person.id ? ` [${escapeHtml(person.id)}]` : dates.length ? ` · ${escapeHtml(dates[0])}${dates.length > 1 ? `–${escapeHtml(dates.at(-1))}` : ''} · ${person.reconstruction.mentions.length} source occurrences` : ''}</li>`;
-      }).join('')}</ul></article>`;
-    }
-    const reconstructed = exactSource || sourcePeople[0];
+    // Names collect all matching mentions; only an evidence key selects a source identity.
+    const reconstructed = state.familyGraph?.valid && !exactAnchor
+      ? state.familyGraph.records.find((record) => record._evidence && record._treeKey === state.person)
+      : undefined;
     if (reconstructed) {
       const node = reconstructed.reconstruction;
       const seen = new Set();
@@ -137,14 +127,10 @@ export function createEntityScreens({
       return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2><p>${node.status === 'contextual' ? 'Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.' : 'Source person; correspondence with other mentions remains open.'} No permanent person ID has been created.</p></article>${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, node.key)}<h3>Source attestations</h3>${attestations}`;
     }
     if (String(state.person).startsWith('@evidence/')) return '<article class="document"><h2>Source identity changed</h2><p>This generated source group changed after rebuilding.</p><a href="?tab=tree">Open the family tree to choose its current source identities</a></article>';
-    if (resolution.ambiguous) {
-      return `<article class="document"><h2>${escapeHtml(state.person)}</h2><p class="status">Ambiguous name: choose an identified person.</p><ul>${resolution.matches.map((item) => `<li>${item.id ? `<a class="person-link" href="?person=${encodeURIComponent(item.id)}">${escapeHtml(item.name)} [${escapeHtml(item.id)}]</a>` : escapeHtml(item.name)}${item.titles?.length ? ` — ${escapeHtml(item.titles.join(', '))}` : ''}</li>`).join('')}</ul></article>`;
-    }
-    let person = resolution.person;
-    if (!person) {
-      const hasUnresolvedName = [...getDocuments().values()].some((doc) => (doc.entries || []).some((entry) => (entry.facts || []).some((fact) => isTypedFact(fact) && [fact.person, fact.of].some((value) => typeof value === 'string' && value.toLocaleLowerCase() === String(state.person).toLocaleLowerCase() && !people.some((item) => item.id === value)))));
-      if (hasUnresolvedName) person = { name: String(state.person) };
-    }
+    let person = exactAnchor ? resolution.person
+      : { name: resolution.matches[0]?.name || String(state.person) };
+    const mentions = mentionsFor(person, 'person');
+    if (!exactAnchor && !resolution.matches.length && !mentions.length) person = undefined;
     const pattern = person ? buildPersonPattern([person])[0]?.pattern : /$a/;
     if (!person) return renderPage(person, [], 'person', pattern);
     const selectedId = people.some((item) => item.id === state.person) ? person.id : '';
@@ -187,8 +173,10 @@ export function createEntityScreens({
     }).join('')}</div></section>` : '';
     const personPlacesMarkup = person ? '<section class="person-places-map"><div class="person-map-wrap"><div id="person-place-map" class="map-container person-place-map" role="application" aria-label="Places mentioned in this person’s facts"></div></div></section>' : '';
     const graphPerson = state.familyGraph?.records[people.indexOf(person)];
-    const relationships = `${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, graphPerson?._treeKey || '__unregistered__')}`;
-    return renderPage(person, mentionsFor(person, 'person'), 'person', pattern, () => '', `${relationships}${personPlacesMarkup}${imagesMarkup}${sealsMarkup}`);
+    const relationships = exactAnchor
+      ? `${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, graphPerson?._treeKey || '__unregistered__')}`
+      : '';
+    return renderPage(person, mentions, 'person', pattern, () => '', `${relationships}${personPlacesMarkup}${imagesMarkup}${sealsMarkup}`);
   }
 
   function renderPlacePage() {
