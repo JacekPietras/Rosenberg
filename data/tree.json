@@ -463,7 +463,7 @@
     "data/matching.json": "sha256:0ed34a8d27e2deb417b52597e873e7eb3f564cb05552c00c718a7534df222ccd",
     "data/names.md": "sha256:3d827dca22f7816f25bf47a0ef38dc9285bfd426f7e779ebe85bd69d46734591",
     "data/notes/notes.json": "sha256:a33e162e8b4aca9261bbc132c2f2a4aacc82f84b40f38ae52d5777a8a8510ec4",
-    "data/people.json": "sha256:4fdbee0780459f49f873da3893488964542caad6e0bcc3d3a2642cd6cb48648e",
+    "data/people.json": "sha256:7abadb6cf556bbf9da3fb71d9d5bb5a2ff6c3a086221c41ed41343cc9d13f6f1",
     "data/places.json": "sha256:7bfd1843f2dcc1683ffbbd41f707c2019d27d6c0a7ec3607ba4cd3552705e0fb",
     "scripts/family_graph/__init__.py": "sha256:649f8e410779bdbf9eb2cbabebe04ec849ddd59336bb896d175723bf97bb679d",
     "scripts/family_graph/constraints.py": "sha256:c412aeffd7b96438d8fb229e23ecefcb83692138c9811be0fe516e2a47c5af6b",
@@ -484,7 +484,7 @@
     "scripts/search_places_by_name.py": "sha256:2034da7ef86d2016e9d546f89100e74977cd68d2db5ddbe235ff4045f2ce60ec",
     "scripts/validate_facts.py": "sha256:55ae6062aab59d96ef0f6bfc6b2a1602e111e19b5aab302150cf9778d57557f9"
   },
-  "fingerprint": "sha256:a0a1ccfa925671deb6479dd0ca33ae4268c6dcc6bb7136f455ddc69f80dfb50d",
+  "fingerprint": "sha256:7945917d006779e1319d9ed6be502227d804a605d31d1d302546cea55c037676",
   "evidence": {
     "facts": {
       "sources": [
@@ -21613,7 +21613,7 @@
         {
           "key": "else_wife_of_arnold",
           "registry": "else_wife_of_arnold",
-          "name": "Else",
+          "name": "Elisabeth",
           "titles": [],
           "dates": [
             "1387-05-26"
@@ -242298,7 +242298,7 @@
         {
           "key": "else_wife_of_arnold",
           "registry": "else_wife_of_arnold",
-          "name": "Else",
+          "name": "Elisabeth",
           "titles": [],
           "dates": [
             "1387-05-26"

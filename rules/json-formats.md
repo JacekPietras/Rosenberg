@@ -58,13 +58,14 @@ fact requires `personTitle` and has no `of` or `ofTitle` fields.
 `personDeceased` and `ofDeceased` are optional boolean fields identifying the corresponding
 participant as deceased at the fact's historical date. Set a field to `true` only when the source
 states that participant was deceased, including when it identifies the other spouse as a widow or
-widower. Omit it otherwise; absence does not mean the person was alive. Do not use `false` or
+widower. Omit it otherwise. Do not use `false` or
 `null`. Use `ofDeceased` only on facts with an `of` participant. Do not put
 `verstorben` or equivalent deceased status in a title array.
 
 Facts are analyzed independently. A participant marked deceased may have died before the fact's
-attestation; a mention at that date does not imply that participant was alive. An unmarked mention
-alone also does not establish that the participant was alive. A separate `death` fact can record a
+attestation; a mention at that date does not imply that participant was alive. An unmarked
+participant is treated as alive at the fact's historical date, so a missing marker can separate a
+dead person from later records. A separate `death` fact can record a
 usable death date or bound, but must not be required to interpret the status on a relationship or
 title fact. For example, a spouse fact can stand alone:
 

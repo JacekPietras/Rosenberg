@@ -38,8 +38,10 @@ converting an existing death statement.
 On each typed relationship or title fact, independently mark a participant
 whom the source identifies as deceased using `personDeceased` or
 `ofDeceased`, as applicable. A widow or widower designation establishes that
-the other spouse is deceased. Omit the field when the source does not state
-that status; omission does not establish that the person was alive. Do not
+the other spouse is deceased, as do terms such as “late”, “selig”, or
+“quondam”. Omit the field only when the source does not identify the
+participant as dead: identity matching treats an unmarked participant as alive
+at the fact's historical date. Do not
 store `verstorben` or equivalent status in a title array. The separate death
 fact and participant status serve different purposes: each fact must be
 interpretable independently.
