@@ -5,6 +5,8 @@ description: Transcribe image. Use when given image to transcribe.
 
 # Transcribe document
 
+If the user says the document is not Rosenberg-related, do only steps 1 and 4 (transcribe, then reconcile with Transkribus) and give an English translation per step 5 in the answer. Do not search for, create, or modify any record or facts under `data/`.
+
 ## 1. Transcribe the image
 
 Read the image. Transcribe it line by line, keeping the exact original vernacular spelling (Middle High German / Early New High German, or Latin). Expand scribal abbreviations inside brackets `[ ]`. Mark uncertain letters or words `[?]` and lost or illegible text `[…]`.
