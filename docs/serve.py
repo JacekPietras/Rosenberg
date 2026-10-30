@@ -100,7 +100,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             ]
             paths.extend(
                 {"path": path.relative_to(ROOT).as_posix(), "version": path.stat().st_mtime_ns}
-                for path in [ROOT / "data/people.json", ROOT / "data/places.json", ROOT / "data/names.md",
+                for path in [ROOT / "data/people.json", ROOT / "data/tree.json", ROOT / "data/places.json", ROOT / "data/names.md",
                              *(ROOT / "scripts").rglob("*.py")]
                 if path.is_file()
             )
@@ -228,16 +228,16 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 if not isinstance(payload, dict) or set(payload) - {"includeGuesses", "searchLimit"}:
                     raise ValueError("Invalid rebuild options")
                 with family_rebuild_lock:
-                    people = json.loads((ROOT / "data/people.json").read_text(encoding="utf-8"))
-                    if not isinstance(people, list) or not people or not isinstance(people[0], dict):
-                        raise ValueError("Invalid person registry")
-                    metadata = people[0].get("familyGraph", {}) if people else {}
+                    try:
+                        metadata = json.loads((ROOT / "data/tree.json").read_text(encoding="utf-8"))
+                    except (FileNotFoundError, ValueError):
+                        metadata = {}
                     if not isinstance(metadata, dict):
                         metadata = {}
                     configuration = metadata.get("configuration", {})
                     if not isinstance(configuration, dict):
                         configuration = {}
-                    include_guesses = payload.get("includeGuesses", "with-guesses" in metadata.get("views", []))
+                    include_guesses = payload.get("includeGuesses", "with-guesses" in metadata.get("views", ['facts', 'with-guesses']))
                     search_limit = payload.get("searchLimit", configuration.get("searchLimit", 10000))
                     if type(include_guesses) is not bool or type(search_limit) is not int or search_limit < 1:
                         raise ValueError("Invalid rebuild options")

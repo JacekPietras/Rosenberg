@@ -56,7 +56,7 @@ state.changeFamilyFocus = async (focus) => {
 state.changeFamilyView = async (view) => {
   const previous = state.familyGraph;
   const { canRebuild, rebuildError } = state.familyGraph;
-  state.familyGraph = buildRelationshipGraph(state.personRecords, { view, verification: state.familyVerification });
+  state.familyGraph = buildRelationshipGraph(state.personRecords, { tree: state.tree, view, verification: state.familyVerification });
   Object.assign(state.familyGraph, { canRebuild, rebuildError });
   if (remapSourcePerson(state, previous)) synchronizePersonRoute();
   state.familyView = state.familyGraph.view;

@@ -134,6 +134,10 @@ class Validator:
             if not isinstance(person, dict):
                 self.report(loc, 'person record must be an object')
                 continue
+            for field in sorted(set(person) - {'id', 'name'}):
+                self.report(loc + '/' + field, 'confirmed people support only id and name; calculated data belongs in tree.json')
+            if 'id' not in person:
+                self.report(loc + '/id', 'confirmed people require an ID')
             name = person.get('name')
             if not self.nonblank(name):
                 self.report(loc + '/name', 'expected a non-empty name string')
@@ -302,9 +306,11 @@ class Validator:
         if document is MISSING:
             return
         self.counts['files'] += 1
-        # Generated registry metadata uses evidence-view names such as facts;
-        # it is validated by family_graph.export, not as source assertions.
+        # Generated tree data is validated by family_graph.export, not as
+        # source assertions; its view names include facts and guesses.
         if path.name == 'people.json' and isinstance(document, list):
+            return
+        if path.resolve() == (self.root / 'data/tree.json').resolve():
             return
         is_book = 'books' in path.parts or (isinstance(document, dict) and 'book' in document)
         is_document = 'documents' in path.parts

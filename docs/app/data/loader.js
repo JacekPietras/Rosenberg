@@ -20,18 +20,24 @@ export function createDataLoader({
 }) {
   let loading;
   let lastVerifiedGraph;
+  function rebuildOptions() {
+    const metadata = state.tree ?? state.personRecords[0]?.familyGraph;
+    return { includeGuesses: metadata?.views ? metadata.views.includes('with-guesses') : true,
+      searchLimit: metadata?.configuration?.searchLimit || 10000 };
+  }
 
   async function loadSnapshot({ autoRebuild = true } = {}) {
     const files = await repository.getRepositoryFiles();
     const paths = files.map((file) => typeof file === 'string' ? file : file.path)
       .filter((path) => /^data\/(books|documents|notes|images)\/.*\.json$/.test(path));
     const snapshot = JSON.stringify(files);
-    const [placesText, calibrationCitiesText, peopleText, particlesText, documents] = await Promise.all([
+    const [placesText, calibrationCitiesText, peopleText, particlesText, documents, tree] = await Promise.all([
       repository.getText('data/places.json'),
       repository.getText('docs/assets/calibration-cities.json'),
       repository.getText('data/people.json'),
       repository.getText('data/nobiliary_particles.md'),
       new Map(await Promise.all(paths.map(async (path) => [path, await repository.getJson(path)]))),
+      typeof repository.getFamilyTree === 'function' ? repository.getFamilyTree() : undefined,
     ]);
     state.nobiliaryParticles = particlesText.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
     state.places = parsePlaces(placesText);
@@ -52,15 +58,16 @@ export function createDataLoader({
       collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => imageLabels(item).includes('effigy')),
     };
     state.documents = documents;
+    state.tree = tree;
     if (state.familyGraph?.valid) lastVerifiedGraph = state.familyGraph;
-    state.familyVerification = await verifyFamilyGraph(state.personRecords, documents, repository, paths);
-    state.familyGraph = buildRelationshipGraph(state.personRecords, { view: state.familyView, verification: state.familyVerification });
+    state.familyVerification = await verifyFamilyGraph(state.personRecords, documents, repository, paths, tree);
+    state.familyGraph = buildRelationshipGraph(state.personRecords, { tree, view: state.familyView, verification: state.familyVerification });
     state.canRebuildFamilyGraph = typeof repository.rebuildFamilyGraph === 'function' && await repository.isLocalServer();
     state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
     if (!state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild) {
       try {
         onFamilyRebuild();
-        await repository.rebuildFamilyGraph();
+        await repository.rebuildFamilyGraph(rebuildOptions());
         return await loadSnapshot({ autoRebuild: false });
       } catch (error) {
         state.familyGraph.rebuildError = error.message;
@@ -94,7 +101,7 @@ export function createDataLoader({
 
   async function rebuildFamilyGraph() {
     onFamilyRebuild();
-    await repository.rebuildFamilyGraph();
+    await repository.rebuildFamilyGraph(rebuildOptions());
     await loadAll({ autoRebuild: false });
   }
 

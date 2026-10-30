@@ -7,11 +7,10 @@ from .dates import date_bounds, inherited_date_bounds
 from .model import Assertion, Inputs, Mention, SourceRef, fingerprint
 
 SOURCE_DIRS = ('books', 'documents', 'notes', 'images')
-GENERATED_FIELDS = frozenset({'wife', 'children', 'relationships', 'familyGraph'})
 
 
 def identities(people):
-    return [{key: value for key, value in person.items() if key not in GENERATED_FIELDS} for person in people]
+    return [{key: person[key] for key in ('id', 'name') if key in person} for person in people]
 
 
 def source_paths(root):
@@ -85,6 +84,8 @@ def load_inputs(root, validate=True):
     root = Path(root).resolve()
     initial_manifest = input_manifest(root)
     registry_bytes = (root / 'data/people.json').read_bytes()
+    tree_path = root / 'data/tree.json'
+    tree_bytes = tree_path.read_bytes() if tree_path.exists() else None
     people = json.loads(registry_bytes)
     if not isinstance(people, list) or not people:
         raise ValueError('people.json must be a non-empty array')
@@ -92,7 +93,8 @@ def load_inputs(root, validate=True):
     if len(ids) != len(set(ids)) or set(ids) & {person['name'] for person in people}:
         raise ValueError('duplicate IDs or ID/name collisions in people.json')
     validator = Validator(root=root)
-    validator.load_people(root / 'data/people.json')
+    if validate:
+        validator.load_people(root / 'data/people.json')
     assertions, prose = [], {'facts': 0, 'guesses': 0}
     for path in source_paths(root):
         if validate:
@@ -115,4 +117,4 @@ def load_inputs(root, validate=True):
     # Refuse a mixed snapshot if a file changed during ingestion.
     if manifest != initial_manifest or registry_bytes != (root / 'data/people.json').read_bytes():
         raise ValueError('inputs changed during ingestion; rerun reconstruction')
-    return Inputs(root, people, names, places, assertions, manifest, prose, registry_bytes)
+    return Inputs(root, people, names, places, assertions, manifest, prose, registry_bytes, tree_bytes)

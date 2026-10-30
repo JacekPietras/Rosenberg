@@ -137,3 +137,4 @@ class Inputs:
     manifest: dict
     prose: dict
     registry_bytes: bytes
+    tree_bytes: bytes | None = None

@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 
-ENGINE_VERSION = '2'
+ENGINE_VERSION = '3'
 POLICY_VERSION = '2'
 MIN_SCORE = 7
 MIN_MARGIN = 3

@@ -29,10 +29,19 @@ export function createRepository({ location = window.location, fetchFunction = w
     async getJson(path) {
       return JSON.parse(await getText(path));
     },
-    rebuildFamilyGraph() {
+    async getFamilyTree() {
+      const response = await fetchFunction(`${dataUrl('data/tree.json', location)}?v=${Date.now()}`, { cache: 'no-store' });
+      if (response.status === 404) return null;
+      if (!response.ok) throw new Error(`data/tree.json: ${response.status}`);
+      try { return await response.json(); }
+      catch (error) { if (error instanceof SyntaxError) return null; throw error; }
+    },
+    rebuildFamilyGraph(options = {}) {
       if (!familyRebuild) {
         familyRebuild = (async () => {
-          const response = await fetchFunction('/api/rebuild-family-tree', { method: 'POST' });
+          const response = await fetchFunction('/api/rebuild-family-tree', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(options),
+          });
           if (response.status === 404) throw new Error('Restart the local viewer to enable rebuilding relationships.');
           const result = await response.json();
           if (!response.ok) throw new Error(result.error || 'Could not rebuild family relationships.');
@@ -56,7 +65,7 @@ export function createRepository({ location = window.location, fetchFunction = w
       if (!response.ok) throw new Error(`Repository file listing: ${response.status}`);
       const tree = await response.json();
       return tree.tree
-        .filter((item) => item.type === 'blob' && /^(?:data\/(?:books|documents|notes|images)\/.*\.json|data\/(?:people\.json|places\.json|names\.md)|scripts\/.*\.py)$/.test(item.path))
+        .filter((item) => item.type === 'blob' && /^(?:data\/(?:books|documents|notes|images)\/.*\.json|data\/(?:people\.json|tree\.json|places\.json|names\.md)|scripts\/.*\.py)$/.test(item.path))
         .map((item) => ({ path: item.path, version: item.sha }))
         .sort((left, right) => left.path.localeCompare(right.path));
     },

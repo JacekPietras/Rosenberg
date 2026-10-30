@@ -1,9 +1,8 @@
 // Generated evidence is accepted only after verifying the complete build input.
 const sourcePath = /^data\/(books|documents|notes|images)\/.*\.json$/;
-const generatedFields = new Set(['wife', 'children', 'relationships', 'familyGraph']);
 
 export function registryIdentities(people) {
-  return people.map((person) => Object.fromEntries(Object.entries(person).filter(([key]) => !generatedFields.has(key))));
+  return people.map((person) => Object.fromEntries(['id', 'name'].filter((key) => Object.hasOwn(person, key)).map((key) => [key, person[key]])));
 }
 
 export function resolvePerson(people, reference) {
@@ -56,17 +55,20 @@ export function expandEvidenceGraph(graph) {
     derivations: edge.derivations.map((d) => ({ ...d, sources: d.sources.map(source) })) })) };
 }
 
-export async function verifyFamilyGraph(people, documents, repository, paths = [...documents.keys()]) {
-  const metadata = people[0]?.familyGraph;
+export async function verifyFamilyGraph(people, documents, repository, paths = [...documents.keys()], tree) {
+  const metadata = tree === undefined ? people[0]?.familyGraph : tree;
   if (!metadata) return { valid: false, reason: 'Generated build metadata is absent.' };
   try {
     const version = metadata.schema === 1 && metadata.engine === '1' && metadata.policy === '1'
-      || metadata.schema === 2 && metadata.engine === '2' && metadata.policy === '2';
+      || metadata.schema === 2 && metadata.engine === '2' && metadata.policy === '2'
+      || metadata.schema === 3 && metadata.engine === '3' && metadata.policy === '2';
     if (!version
       || !['facts', 'facts,with-guesses'].includes(metadata.views?.join(','))
       || !Number.isInteger(metadata.configuration?.searchLimit) || metadata.configuration.searchLimit < 1
       || !['data/people.json', 'data/places.json', 'data/names.md'].every((path) => Object.hasOwn(metadata.inputs || {}, path))
       || !metadata.inputs || metadata.fingerprint !== await evidenceFingerprint(metadata.inputs)) throw new Error('Invalid build metadata');
+    if (tree !== undefined && people.some((person) => !person.id || Object.keys(person).some((key) => !['id', 'name'].includes(key)))) throw new Error('Confirmed people support only id and name');
+    if (Object.hasOwn(metadata.inputs, 'data/tree.json')) throw new Error('Generated tree cannot be its own input');
     const sources = Object.keys(metadata.inputs).filter((path) => sourcePath.test(path)).sort();
     if (JSON.stringify(sources) !== JSON.stringify(paths.filter((path) => sourcePath.test(path)).sort())) throw new Error('The source file set changed');
     await Promise.all(Object.entries(metadata.inputs).map(async ([path, expected]) => {
@@ -91,7 +93,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
         }
       }
     }
-    if (metadata.schema === 2) {
+    if (metadata.schema >= 2) {
       if (!metadata.evidence || JSON.stringify(Object.keys(metadata.evidence).sort()) !== JSON.stringify([...metadata.views].sort())) throw new Error('Missing reconstructed evidence views');
       const checked = new Map();
       const sourceFact = async (source, view) => {
@@ -137,7 +139,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
       }
     }
     for (const view of metadata.views) {
-      const graph = buildRelationshipGraph(people, { view, verification: { valid: true } });
+      const graph = buildRelationshipGraph(people, { tree, view, verification: { valid: true } });
       if (!graph.valid) throw new Error(graph.reason);
     }
     return { valid: true, reason: '' };
@@ -146,15 +148,15 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
   }
 }
 
-export function buildRelationshipGraph(people, { view = 'facts', verification } = {}) {
+export function buildRelationshipGraph(people, { tree, view = 'facts', verification } = {}) {
   const ids = new Set(people.filter((person) => person.id).map((person) => person.id));
   const records = people.map((person, index) => {
     let key = person.id || `@registry/${index}`;
     if (!person.id) while (ids.has(key)) key += '~';
     return { ...person, _treeKey: key };
   });
-  const generated = people.some((person) => Object.hasOwn(person, 'relationships') || person.familyGraph);
-  const metadata = people[0]?.familyGraph;
+  const generated = tree !== undefined || people.some((person) => Object.hasOwn(person, 'relationships') || person.familyGraph);
+  const metadata = tree === undefined ? people[0]?.familyGraph : tree;
   const views = generated ? metadata?.views || [] : ['facts'];
   const selectedView = views.includes(view) ? view : 'facts';
   let evidence;
@@ -194,7 +196,7 @@ export function buildRelationshipGraph(people, { view = 'facts', verification } 
         seenNodes.add(node.key);
         if (node.registry) {
           if (node.registry !== node.key || !byKey.has(node.key)) throw new Error('Invalid reconstructed registry anchor');
-          Object.assign(byKey.get(node.key), { reconstruction: node });
+          Object.assign(byKey.get(node.key), { reconstruction: node, titles: node.titles });
         } else {
           if (!node.key.startsWith('@evidence/') || byKey.has(node.key)) throw new Error('Invalid source person handle');
           const record = { name: node.name, titles: node.titles, _treeKey: node.key, _evidence: true, reconstruction: node };

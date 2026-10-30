@@ -1,13 +1,12 @@
-"""Validate a complete replacement in memory, then write the registry once."""
+"""Validate a generated graph in memory and write only data/tree.json."""
 
-from collections import Counter
 from copy import deepcopy
 import json
 import re
 from .constraints import cycle_nodes
 from .model import fingerprint, registry_keys
 from .policy import ENGINE_VERSION, POLICY_VERSION
-from .sources import identities, input_manifest
+from .sources import input_manifest
 
 
 def resolve_pointer(value, pointer):
@@ -66,137 +65,48 @@ def unpack_evidence(graph):
 def serialize(inputs, results):
     if not results or any(result.configuration != results[0].configuration for result in results):
         raise ValueError('evidence views require the same engine configuration')
-    people = deepcopy(identities(inputs.people))
-    counts = Counter(person['name'] for person in people)
-    keys = registry_keys(people)
-    references = {key: person.get('id') or (person['name'] if counts[person['name']] == 1 else None)
-                  for key, person in zip(keys, people)}
-    by_key = dict(zip(keys, people))
-    for person in people:
-        person['relationships'] = []
-    combined = {}
-    for result in results:
-        for edge in result.relationships:
-            if not references.get(edge.person) or not references.get(edge.of):
-                continue
-            left, right = edge.person, edge.of
-            if edge.type != 'parent' and references[left] > references[right]:
-                left, right = right, left
-            key = (left, edge.type, references[right], edge.term)
-            record = combined.setdefault(key, {'type': edge.type, 'of': references[right], 'derivations': []})
-            if edge.term:
-                record['term'] = edge.term
-            for derivation in edge.derivations:
-                if derivation not in record['derivations']:
-                    record['derivations'].append(derivation)
-    for (owner, _, _, _), record in sorted(combined.items()):
-        record['derivations'].sort(key=lambda value: (value['view'], fingerprint(value)))
-        by_key[owner]['relationships'].append(record)
-    people[0]['familyGraph'] = {
-        'schema': 2, 'engine': ENGINE_VERSION, 'policy': POLICY_VERSION,
+    registry = set(registry_keys(inputs.people))
+    tree = {
+        'schema': 3, 'engine': ENGINE_VERSION, 'policy': POLICY_VERSION,
         'configuration': results[0].configuration,
         'views': [result.view for result in results],
         'inputs': inputs.manifest, 'fingerprint': fingerprint(inputs.manifest),
         'evidence': {result.view: pack_evidence(result.evidence_graph) for result in results},
-        'coverage': {result.view: {'unresolvedMentions': sum(d.status == 'unresolved' for d in result.decisions.values()),
-                                  'omittedRelationships': sum(not references.get(e.person) or not references.get(e.of) for e in result.relationships),
-                                  'conflicts': len(result.conflicts),
-                                  'reconstructedPeople': len(result.evidence_graph['nodes']),
-                                  'reconstructedRelationships': len(result.evidence_graph['relationships']),
-                                  'contextualLinks': len(result.evidence_graph['links'])} for result in results},
+        'coverage': {result.view: {
+            'unresolvedMentions': sum(d.status == 'unresolved' for d in result.decisions.values()),
+            'registryRelationships': sum(e.person in registry and e.of in registry for e in result.relationships),
+            'conflicts': len(result.conflicts),
+            'reconstructedPeople': len(result.evidence_graph['nodes']),
+            'reconstructedRelationships': len(result.evidence_graph['relationships']),
+            'contextualLinks': len(result.evidence_graph['links']),
+        } for result in results},
     }
-    validate_generated(people, inputs.root)
-    return people
+    validate_generated(tree, inputs.people, inputs.root)
+    return tree
 
 
-def validate_generated(people, root=None):
+def validate_generated(tree, people, root=None):
+    if (not isinstance(tree, dict) or tree.get('schema') != 3
+        or tree.get('engine') != ENGINE_VERSION or tree.get('policy') != POLICY_VERSION
+        or tree.get('views') not in (['facts'], ['facts', 'with-guesses'])
+        or not isinstance(tree.get('inputs'), dict)
+        or not {'data/people.json', 'data/places.json', 'data/names.md'} <= tree.get('inputs', {}).keys()
+        or type(tree.get('configuration', {}).get('searchLimit')) is not int
+        or tree['configuration']['searchLimit'] < 1
+        or fingerprint(tree['inputs']) != tree.get('fingerprint')):
+        raise ValueError('invalid generated tree metadata')
     if not isinstance(people, list) or not people:
-        raise ValueError('generated registry must be a non-empty array')
-    metadata = people[0].get('familyGraph', {})
-    if (metadata.get('schema') != 2 or metadata.get('engine') != ENGINE_VERSION or metadata.get('policy') != POLICY_VERSION
-        or metadata.get('views') not in (['facts'], ['facts', 'with-guesses'])
-        or not isinstance(metadata.get('inputs'), dict)
-        or not {'data/people.json', 'data/places.json', 'data/names.md'} <= metadata.get('inputs', {}).keys()
-        or type(metadata.get('configuration', {}).get('searchLimit')) is not int
-        or metadata['configuration']['searchLimit'] < 1
-        or fingerprint(metadata['inputs']) != metadata.get('fingerprint')):
-        raise ValueError('invalid generated build metadata')
-    if root is not None and metadata['inputs'] != input_manifest(root, people):
+        raise ValueError('person registry must be a non-empty array')
+    ids = [person.get('id') for person in people]
+    if (any(not isinstance(value, str) or not value.strip() for value in ids)
+        or len(set(ids)) != len(ids) or set(ids) & {person['name'] for person in people}):
+        raise ValueError('invalid confirmed person IDs')
+    if root is not None and tree['inputs'] != input_manifest(root, people):
         raise ValueError('stale build inputs; rerun reconstruction')
-    ids = {person['id']: index for index, person in enumerate(people) if person.get('id')}
-    if len(ids) != sum(bool(person.get('id')) for person in people):
-        raise ValueError('duplicate person ID')
-    names = {}
-    for index, person in enumerate(people):
-        names.setdefault(person['name'], []).append(index)
-
-    def target(reference):
-        if reference in ids:
-            return ids[reference]
-        matches = names.get(reference, [])
-        if len(matches) != 1:
-            raise ValueError(f'unknown or ambiguous generated endpoint {reference!r}')
-        return matches[0]
-
-    cache, seen = {}, set()
-    parent_edges = {view: [] for view in metadata['views']}
-    for index, person in enumerate(people):
-        if any(field in person for field in ('wife', 'children')) or index > 0 and 'familyGraph' in person:
-            raise ValueError('mixed legacy/generated registry or duplicate build metadata')
-        if not isinstance(person.get('relationships'), list):
-            raise ValueError('every generated person requires a relationships array')
-        for edge in person['relationships']:
-            if edge.get('type') not in {'parent', 'spouse', 'sibling', 'kin'} or set(edge) - {'type', 'of', 'term', 'derivations'}:
-                raise ValueError('invalid generated relationship')
-            if (edge['type'] == 'kin') != (isinstance(edge.get('term'), str) and bool(edge['term'].strip())):
-                raise ValueError('only kin requires a non-empty source term')
-            endpoint = target(edge['of'])
-            if endpoint == index:
-                raise ValueError('self-relationship')
-            pair = (index, endpoint) if edge['type'] == 'parent' else tuple(sorted((index, endpoint)))
-            key = (edge['type'], pair, edge.get('term', ''))
-            if key in seen:
-                raise ValueError('duplicate relationship')
-            seen.add(key)
-            if not isinstance(edge.get('derivations'), list) or not edge['derivations']:
-                raise ValueError('relationship without derivations')
-            for derivation in edge['derivations']:
-                view = derivation.get('view')
-                if (set(derivation) != {'view', 'identity', 'usesGuesses', 'sources'}
-                    or view not in metadata['views'] or derivation.get('identity') not in {'anchored', 'reviewed', 'inferred'}
-                    or not isinstance(derivation.get('usesGuesses'), bool)
-                    or view == 'facts' and derivation['usesGuesses']
-                    or not isinstance(derivation.get('sources'), list) or not derivation['sources']):
-                    raise ValueError('invalid relationship derivation')
-                if edge['type'] == 'parent':
-                    parent_edges[view].append((index, endpoint))
-                found_relationship = False
-                for source in derivation['sources']:
-                    path = source.get('path', '')
-                    pointer = source.get('pointer', '')
-                    if (set(source) != {'path', 'pointer', 'fingerprint'} or path not in metadata['inputs']
-                        or not re.fullmatch(r'data/(books|documents|notes|images)/[^\0]+\.json', path)
-                        or '..' in path.split('/') or not re.fullmatch(r'sha256:[a-f0-9]{64}', source.get('fingerprint', ''))
-                        or not re.search(r'/(facts|guesses)/[0-9]+$', pointer)):
-                        raise ValueError('invalid source reference')
-                    if '/guesses/' in pointer and not derivation['usesGuesses']:
-                        raise ValueError('unmarked guess dependency')
-                    if root is not None:
-                        if path not in cache:
-                            cache[path] = json.loads((root / path).read_text(encoding='utf-8'))
-                        try:
-                            assertion = resolve_pointer(cache[path], pointer)
-                        except (KeyError, IndexError, TypeError, ValueError) as exc:
-                            raise ValueError('stale evidence pointer') from exc
-                        if fingerprint(assertion) != source['fingerprint']:
-                            raise ValueError('stale evidence fingerprint')
-                        found_relationship |= assertion.get('type') == edge['type']
-                if root is not None and not found_relationship:
-                    raise ValueError('derivation lacks a supporting relationship assertion')
-    if any(cycle_nodes(edges) for edges in parent_edges.values()):
-        raise ValueError('generated parentage cycle')
-    validate_evidence(metadata, registry_keys(people), root, cache)
-    return metadata
+    if 'data/tree.json' in tree['inputs']:
+        raise ValueError('generated tree cannot be an input to itself')
+    validate_evidence(tree, set(ids), root)
+    return tree
 
 
 def validate_evidence(metadata, registry, root=None, cache=None):
@@ -285,12 +195,15 @@ def validate_evidence(metadata, registry, root=None, cache=None):
             raise ValueError('reconstructed parentage cycle')
 
 
-def apply(inputs, people):
-    validate_generated(people, inputs.root)
-    path = inputs.root / 'data/people.json'
-    output = (json.dumps(people, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
-    if inputs.manifest != input_manifest(inputs.root) or path.read_bytes() != inputs.registry_bytes:
-        raise ValueError('inputs changed during computation; registry was not written')
-    if output != inputs.registry_bytes:
+def apply(inputs, tree):
+    validate_generated(tree, inputs.people, inputs.root)
+    path = inputs.root / 'data/tree.json'
+    output = (json.dumps(tree, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
+    previous = path.read_bytes() if path.exists() else None
+    if (inputs.manifest != input_manifest(inputs.root)
+        or (inputs.root / 'data/people.json').read_bytes() != inputs.registry_bytes
+        or previous != inputs.tree_bytes):
+        raise ValueError('inputs or tree changed during computation; tree was not written')
+    if output != previous:
         path.write_bytes(output)
     return output
