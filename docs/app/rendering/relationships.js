@@ -4,14 +4,14 @@ import { documentNavigationUrl } from './navigation.js';
 export function relationshipControls(graph, { focus } = {}) {
   if (!graph?.generated) return '';
   const coverage = graph.metadata?.coverage?.[graph.view];
-  const status = graph.rebuildError ? `Could not rebuild relationships. ${escapeHtml(graph.rebuildError)}`
+  const status = graph.rebuilding ? 'Rebuilding family relationships…' : graph.rebuildError ? `Could not rebuild relationships. ${escapeHtml(graph.rebuildError)}`
     : graph.valid ? '' : graph.canRebuild ? 'Relationships need refreshing.'
       : 'Relationships need refreshing. <a href="http://localhost:8000/docs/?tab=tree">Open the local viewer to rebuild</a>.';
   const families = focus !== undefined && graph.components?.length ? `<label>Family group <select data-family-focus><option value="all"${focus === 'all' ? ' selected' : ''}>All family groups</option>${graph.components.map((component) => `<option value="${escapeHtml(component.key)}"${component.key === focus ? ' selected' : ''}>${escapeHtml(component.label)}</option>`).join('')}</select></label>` : '';
   const counts = coverage?.reconstructedPeople !== undefined
     ? `${coverage.reconstructedPeople} source identities · ${coverage.reconstructedRelationships} relationships · ${graph.components?.length || 0} family groups · ${coverage.conflicts} conflicts`
     : coverage ? `${coverage.unresolvedMentions} unresolved mentions · ${coverage.omittedRelationships} relationships omitted · ${coverage.conflicts} conflicts` : '';
-  return `<div class="family-graph-controls">${graph.metadata?.schema >= 4 ? '<span>Facts + weighted guesses</span>' : graph.views.length > 1 ? `<label>Evidence <select data-family-view>${graph.views.map((view) => `<option value="${view}"${view === graph.view ? ' selected' : ''}>${view === 'facts' ? 'Facts only' : 'Include guesses'}</option>`).join('')}</select></label>` : '<span>Facts only</span>'}${families}${graph.canRebuild && !graph.valid ? '<button type="button" data-family-rebuild>Retry rebuild</button>' : ''}<span>${escapeHtml(counts)}</span><p class="status" role="status" data-family-rebuild-status>${status}</p>${probabilityParameters(graph)}${graph.valid ? '<small>Source people have no permanent registry ID. Contextual identity links and guess-dependent relationships remain marked.</small>' : ''}</div>`;
+  return `<div class="family-graph-controls">${graph.metadata?.schema >= 4 ? '<span>Facts + weighted guesses</span>' : graph.views.length > 1 ? `<label>Evidence <select data-family-view>${graph.views.map((view) => `<option value="${view}"${view === graph.view ? ' selected' : ''}>${view === 'facts' ? 'Facts only' : 'Include guesses'}</option>`).join('')}</select></label>` : '<span>Facts only</span>'}${families}${graph.canRebuild && !graph.valid && !graph.rebuilding ? '<button type="button" data-family-rebuild>Retry rebuild</button>' : ''}<span>${escapeHtml(counts)}</span><p class="status" role="status" data-family-rebuild-status>${status}</p>${probabilityParameters(graph)}${graph.valid ? '<small>Source people have no permanent registry ID. Contextual identity links and guess-dependent relationships remain marked.</small>' : ''}</div>`;
 }
 
 export function relationshipPanel(graph, key = null) {

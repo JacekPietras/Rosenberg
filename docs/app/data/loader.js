@@ -20,6 +20,7 @@ export function createDataLoader({
 }) {
   let loading;
   let lastVerifiedGraph;
+  let backgroundRebuild;
   function rebuildOptions() {
     const metadata = state.tree ?? state.personRecords[0]?.familyGraph;
     const limit = metadata?.configuration?.searchLimit;
@@ -27,7 +28,7 @@ export function createDataLoader({
       searchLimit: Number.isSafeInteger(limit) && limit > 0 ? limit : 10000 };
   }
 
-  async function loadSnapshot({ autoRebuild = true } = {}) {
+  async function loadSnapshot({ autoRebuild = true, familyOnly = false } = {}) {
     const files = await repository.getRepositoryFiles();
     const paths = files.map((file) => typeof file === 'string' ? file : file.path)
       .filter((path) => /^data\/(books|documents|notes|images)\/.*\.json$/.test(path));
@@ -67,15 +68,8 @@ export function createDataLoader({
     state.familyGraph = buildRelationshipGraph(state.personRecords, { tree, view: state.familyView, verification: state.familyVerification });
     state.canRebuildFamilyGraph = typeof repository.rebuildFamilyGraph === 'function' && await repository.isLocalServer();
     state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
-    if (!state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild) {
-      try {
-        onFamilyRebuild();
-        await repository.rebuildFamilyGraph(rebuildOptions());
-        return await loadSnapshot({ autoRebuild: false });
-      } catch (error) {
-        state.familyGraph.rebuildError = error.message;
-      }
-    }
+    const shouldRebuild = !state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild && !backgroundRebuild;
+    state.familyGraph.rebuilding = Boolean((autoRebuild && backgroundRebuild) || shouldRebuild);
     if (remapSourcePerson(state, lastVerifiedGraph)) onPersonReassigned();
     if (state.familyGraph.valid) lastVerifiedGraph = state.familyGraph;
     state.familyView = state.familyGraph.view;
@@ -93,8 +87,27 @@ export function createDataLoader({
     const reserved = ['documents', 'seals', 'tree', 'map', 'images/all'];
     if (!reserved.includes(state.active) && !paths.includes(state.active)) state.active = state.manifest.books[0]?.path || 'documents';
     savePreferences();
-    renderTabs();
-    await renderActive();
+    if (!familyOnly) renderTabs();
+    if (!familyOnly || state.active === 'tree' || state.person) await renderActive();
+    if (shouldRebuild) {
+      onFamilyRebuild();
+      backgroundRebuild = (async () => {
+        try {
+          await repository.rebuildFamilyGraph(rebuildOptions());
+          // A refresh may already be loading when the rebuild finishes.
+          await new Promise((resolve) => setTimeout(resolve, 0));
+          if (loading) await loading;
+          await loadAll({ autoRebuild: false, familyOnly: true });
+        } catch (error) {
+          state.familyGraph.rebuilding = false;
+          state.familyGraph.rebuildError = error.message;
+          if (state.active === 'tree') await renderActive();
+        } finally {
+          backgroundRebuild = null;
+          if (state.familyGraph) state.familyGraph.rebuilding = false;
+        }
+      })();
+    }
   }
 
   function loadAll(options) {
@@ -108,5 +121,5 @@ export function createDataLoader({
     await loadAll({ autoRebuild: false });
   }
 
-  return { loadAll, rebuildFamilyGraph };
+  return { loadAll, rebuildFamilyGraph, waitForFamilyRebuild: () => backgroundRebuild };
 }

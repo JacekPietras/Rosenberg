@@ -10,7 +10,7 @@ import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=87';
 import { createSealScreen } from './screens/seals.js?v=2';
 import { createImageScreen } from './screens/images.js?v=36';
-import { createDataLoader } from './data/loader.js?v=13';
+import { createDataLoader } from './data/loader.js?v=14';
 import { createEntityScreens } from './screens/entities.js?v=103';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
@@ -1415,19 +1415,9 @@ const dataLoader = createDataLoader({
   savePreferences,
   renderTabs,
   renderActive,
-  onFamilyRebuild: () => {
-    $('#status').textContent = 'Rebuilding family relationships…';
-    $('#status').classList.remove('error');
-  },
   onPersonReassigned: synchronizePersonRoute,
 });
-state.rebuildFamilyGraph = async () => {
-  try {
-    await dataLoader.rebuildFamilyGraph();
-  } finally {
-    $('#status').textContent = '';
-  }
-};
+state.rebuildFamilyGraph = () => dataLoader.rebuildFamilyGraph();
 
 async function loadAll() {
   return dataLoader.loadAll();

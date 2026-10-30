@@ -461,7 +461,7 @@
     "data/documents/1804-05-15.json": "sha256:42939ecfe82696ba10c2ccaf21b7729eed5a4437f1e393eb7caa6c3944835c20",
     "data/images/images.json": "sha256:4730b80c0558a21214f92b16c8b9740cc18fdc56895f05177dc9a348c13ea33e",
     "data/matching.json": "sha256:0ed34a8d27e2deb417b52597e873e7eb3f564cb05552c00c718a7534df222ccd",
-    "data/names.md": "sha256:03e73c2b21e1e4d5655df8520829e6501c4d52250254b157e43aa14c613a4565",
+    "data/names.md": "sha256:3d827dca22f7816f25bf47a0ef38dc9285bfd426f7e779ebe85bd69d46734591",
     "data/notes/notes.json": "sha256:a33e162e8b4aca9261bbc132c2f2a4aacc82f84b40f38ae52d5777a8a8510ec4",
     "data/people.json": "sha256:4fdbee0780459f49f873da3893488964542caad6e0bcc3d3a2642cd6cb48648e",
     "data/places.json": "sha256:7bfd1843f2dcc1683ffbbd41f707c2019d27d6c0a7ec3607ba4cd3552705e0fb",
@@ -484,7 +484,7 @@
     "scripts/search_places_by_name.py": "sha256:2034da7ef86d2016e9d546f89100e74977cd68d2db5ddbe235ff4045f2ce60ec",
     "scripts/validate_facts.py": "sha256:55ae6062aab59d96ef0f6bfc6b2a1602e111e19b5aab302150cf9778d57557f9"
   },
-  "fingerprint": "sha256:66e82f75f98f23a4d94ce4efbb3dcecd2395a81422ccb2632092c87fe63d162b",
+  "fingerprint": "sha256:a0a1ccfa925671deb6479dd0ca33ae4268c6dcc6bb7136f455ddc69f80dfb50d",
   "evidence": {
     "facts": {
       "sources": [

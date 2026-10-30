@@ -233,13 +233,34 @@ test('stale local evidence automatically rebuilds once and reloads the verified 
   let rebuilds = 0;
   const { loader, state, counts } = loaderFor(data, { rebuild: async () => { rebuilds++; await updateFixtureBuild(data); } });
   await Promise.all([loader.loadAll(), loader.loadAll()]);
+  await loader.waitForFamilyRebuild();
   assert.equal(rebuilds, 1);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   assert.equal(state.familyGraph.edges.length, 1);
   assert.equal(state.familyView, 'with-guesses');
   assert.equal(state.familyGraph.canRebuild, true);
   assert.doesNotMatch(renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph }), /data-family-rebuild>/);
-  assert.deepEqual(counts(), { renders: 1, progress: 1 });
+  assert.deepEqual(counts(), { renders: 2, progress: 1 });
+});
+
+test('other screens render before a slow family rebuild finishes', async () => {
+  const data = await fixture();
+  data.documents.get(source.path).date = '1400';
+  let finish;
+  const pending = new Promise((resolve) => { finish = resolve; });
+  const { loader, state, counts } = loaderFor(data, { rebuild: async () => {
+    await pending;
+    await updateFixtureBuild(data);
+  } });
+  state.active = 'documents';
+  await loader.loadAll();
+  assert.equal(counts().renders, 1);
+  assert.equal(state.familyGraph.rebuilding, true);
+  finish();
+  await loader.waitForFamilyRebuild();
+  assert.equal(state.familyGraph.valid, true);
+  assert.equal(state.familyGraph.rebuilding, false);
+  assert.equal(counts().renders, 1);
 });
 
 test('rebuild failures retain hidden stale edges and a working retry action', async () => {
@@ -251,6 +272,7 @@ test('rebuild failures retain hidden stale edges and a working retry action', as
     await updateFixtureBuild(data);
   } });
   await loader.loadAll();
+  await loader.waitForFamilyRebuild();
   assert.equal(rebuilds, 1);
   assert.equal(state.familyGraph.valid, false);
   assert.equal(state.familyGraph.edges.length, 0);
@@ -273,6 +295,7 @@ test('a second input change cannot cause an automatic rebuild loop', async () =>
     data.documents.get(source.path).date = '1401';
   } });
   await loader.loadAll();
+  await loader.waitForFamilyRebuild();
   assert.equal(rebuilds, 1);
   assert.equal(state.familyGraph.valid, false);
   assert.equal(state.familyGraph.canRebuild, true);
@@ -474,6 +497,7 @@ test('active loader reads and rebuilds the separate tree without changing regist
     await updateFixtureBuild(data);
   } });
   await loader.loadAll();
+  await loader.waitForFamilyRebuild();
   assert.equal(rebuilds, 1);
   assert.equal(state.tree, data.tree);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
@@ -487,6 +511,7 @@ test('missing tree.json triggers generation even when the registry has no relati
   let rebuilds = 0;
   const { loader, state } = loaderFor(data, { rebuild: async () => { rebuilds++; data.tree = generated; } });
   await loader.loadAll();
+  await loader.waitForFamilyRebuild();
   assert.equal(rebuilds, 1);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   assert.equal(state.familyGraph.edges.length, 1);
@@ -505,6 +530,7 @@ test('invalid saved build options cannot prevent automatic regeneration', async 
       data.tree = generated;
     } });
     await loader.loadAll();
+    await loader.waitForFamilyRebuild();
     assert.equal(rebuilds, 1);
     assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   }
@@ -594,6 +620,7 @@ test('parameter changes automatically rebuild and a saved facts-only preference 
   } });
   state.familyView = 'facts';
   await loader.loadAll();
+  await loader.waitForFamilyRebuild();
   assert.equal(rebuilds, 1);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   assert.equal(state.familyGraph.view, 'with-guesses');
