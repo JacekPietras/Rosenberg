@@ -1,5 +1,5 @@
-import { buildRelationshipGraph, focusFamilyGraph } from '../data/relationships.js?v=4';
-import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=4';
+import { buildRelationshipGraph, focusFamilyGraph } from '../data/relationships.js?v=5';
+import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=5';
 import { layoutFamilyGraph } from '../rendering/family-layout.js?v=1';
 
 function svgEscape(value) {
@@ -56,6 +56,7 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus } =
   const personLines = (person) => [
     person.name,
     person._evidence ? person.reconstruction.status === 'contextual' ? 'contextual identity · inferred' : 'source person · identity open' : '',
+    person.reconstruction?.status === 'contextual' && person.reconstruction.identityProbability < 1 ? `identity estimate: ${(person.reconstruction.identityProbability * 100).toFixed(1)}%` : '',
     ...(Array.isArray(person.titles) ? person.titles : []),
     person.born || person.died ? `${person.born || '?'}–${person.died || '?'}` : '',
     mentionedYears.get(person._treeKey)?.length

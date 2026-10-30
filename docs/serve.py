@@ -100,7 +100,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             ]
             paths.extend(
                 {"path": path.relative_to(ROOT).as_posix(), "version": path.stat().st_mtime_ns}
-                for path in [ROOT / "data/people.json", ROOT / "data/tree.json", ROOT / "data/places.json", ROOT / "data/names.md",
+                for path in [ROOT / "data/people.json", ROOT / "data/tree.json", ROOT / "data/places.json", ROOT / "data/names.md", ROOT / "data/matching.json",
                              *(ROOT / "scripts").rglob("*.py")]
                 if path.is_file()
             )
@@ -243,14 +243,14 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                     saved_limit = configuration.get("searchLimit")
                     if type(saved_limit) is not int or saved_limit < 1:
                         saved_limit = 10000
-                    include_guesses = payload.get("includeGuesses", "with-guesses" in views)
+                    include_guesses = payload.get("includeGuesses", True)
                     search_limit = payload.get("searchLimit", saved_limit)
                     if type(include_guesses) is not bool or type(search_limit) is not int or search_limit < 1:
                         raise ValueError("Invalid rebuild options")
                     command = [sys.executable, str(ROOT / "scripts/rebuild_family_tree.py"),
                                "--root", str(ROOT), "--apply", "--search-limit", str(search_limit)]
-                    if include_guesses:
-                        command.append("--include-guesses")
+                    if not include_guesses:
+                        command.append("--facts-only")
                     result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True,
                                             check=False, timeout=120)
                     if result.returncode:

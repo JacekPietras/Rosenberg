@@ -52,7 +52,8 @@ export function expandEvidenceGraph(graph) {
     mentions: node.mentions.map((mention) => ({ ...mention, source: source(mention.source) })),
     identitySources: node.identitySources.map(source) })),
   relationships: graph.relationships.map((edge) => ({ ...edge,
-    derivations: edge.derivations.map((d) => ({ ...d, sources: d.sources.map(source) })) })) };
+    derivations: edge.derivations.map((d) => ({ ...d, sources: d.sources.map(source) })) })),
+  comparisons: (graph.comparisons || []).map((comparison) => ({ ...comparison, sources: comparison.sources.map(source) })) };
 }
 
 export async function verifyFamilyGraph(people, documents, repository, paths = [...documents.keys()], tree) {
@@ -61,7 +62,8 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
   try {
     const version = metadata.schema === 1 && metadata.engine === '1' && metadata.policy === '1'
       || metadata.schema === 2 && metadata.engine === '2' && metadata.policy === '2'
-      || metadata.schema === 3 && metadata.engine === '3' && metadata.policy === '2';
+      || metadata.schema === 3 && metadata.engine === '3' && metadata.policy === '2'
+      || metadata.schema === 4 && metadata.engine === '4' && metadata.policy === '3';
     if (!version
       || !['facts', 'facts,with-guesses'].includes(metadata.views?.join(','))
       || !Number.isInteger(metadata.configuration?.searchLimit) || metadata.configuration.searchLimit < 1
@@ -78,6 +80,16 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
           : path.endsWith('.json') ? await repository.getJson(path) : await repository.getText(path);
       if (await evidenceFingerprint(value) !== expected) throw new Error(`Build input changed: ${path}`);
     }));
+    if (metadata.schema >= 4) {
+      if (!Object.hasOwn(metadata.inputs, 'data/matching.json')) throw new Error('Missing global probability configuration');
+      const settings = metadata.configuration.probability;
+      if (settings?.model !== 'weighted-log-odds-v1' || settings.calibrated !== false
+        || !(settings.priorProbability > 0 && settings.priorProbability < settings.mergeProbability && settings.mergeProbability < 1)
+        || !(settings.guessWeight > 0 && settings.guessWeight < 1)
+        || Object.keys(settings.sourceWeights || {}).length !== 4
+        || Object.entries({ documents: 1, images: 1, books: .5, notes: .5 }).some(([key, value]) => settings.sourceWeights?.[key] !== value)) throw new Error('Invalid probability parameters');
+      if (metadata.inputs['data/matching.json'] && await evidenceFingerprint(settings) !== await evidenceFingerprint(await repository.getJson('data/matching.json'))) throw new Error('Probability parameters changed');
+    }
     for (const person of people) {
       for (const edge of person.relationships || []) {
         for (const derivation of edge.derivations || []) {
@@ -112,6 +124,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
         const graph = expandEvidenceGraph(stored);
         const membership = new Map();
         for (const node of graph.nodes) {
+          if (metadata.schema >= 4 && (!Number.isFinite(node.identityProbability) || node.identityProbability < 0 || node.identityProbability > 1)) throw new Error('Invalid source identity probability');
           let named = !!node.registry && people.some((person) => person.id === node.registry && person.name === node.name);
           for (const mention of node.mentions) {
             const fact = await sourceFact(mention.source, view);
@@ -127,6 +140,8 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
         }
         for (const edge of graph.relationships) {
           for (const derivation of edge.derivations) {
+            if (metadata.schema >= 4 && (!Number.isFinite(derivation.assertionWeight) || derivation.assertionWeight <= 0 || derivation.assertionWeight > 1
+              || derivation.endpointProbability !== null && (!Number.isFinite(derivation.endpointProbability) || derivation.endpointProbability < 0 || derivation.endpointProbability > 1))) throw new Error('Invalid relationship evidence weights');
             let supported = false;
             for (const source of derivation.sources) {
               const fact = await sourceFact(source, view);
@@ -137,6 +152,27 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
               supported ||= JSON.stringify(endpoints) === JSON.stringify(expected);
             }
             if (!supported) throw new Error('Reconstructed relationship lacks its source participants');
+          }
+        }
+        if (metadata.schema >= 4) {
+          if (!Array.isArray(graph.comparisons)) throw new Error('Missing probability comparisons');
+          const keys = new Set(graph.nodes.map((node) => node.key));
+          const prior = metadata.configuration.probability.priorProbability;
+          for (const comparison of graph.comparisons) {
+            if (!keys.has(comparison.person) || !keys.has(comparison.candidate)
+              || !['merged', 'below-threshold', 'ambiguous', 'incompatible', 'superseded'].includes(comparison.status)
+              || !Number.isFinite(comparison.probability) || comparison.probability < 0 || comparison.probability > 1
+              || !Number.isFinite(comparison.logOdds) || !Array.isArray(comparison.features)
+              || comparison.features.some((feature) => typeof feature.name !== 'string' || !Number.isFinite(feature.contribution))
+              || typeof comparison.usesGuesses !== 'boolean' || view === 'facts' && comparison.usesGuesses
+              || !comparison.sources?.length) throw new Error('Invalid probability comparison');
+            const expected = 1 / (1 + Math.exp(-comparison.logOdds));
+            const total = Math.log(prior / (1 - prior)) + comparison.features.reduce((sum, feature) => sum + feature.contribution, 0);
+            if (Math.abs(expected - comparison.probability) > 1e-7 || Math.abs(total - comparison.logOdds) > 1e-6) throw new Error('Invalid probability calculation');
+            for (const source of comparison.sources) {
+              await sourceFact(source, view);
+              if (source.pointer.includes('/guesses/') && !comparison.usesGuesses) throw new Error('Unmarked probability guess dependency');
+            }
           }
         }
       }
@@ -151,7 +187,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
   }
 }
 
-export function buildRelationshipGraph(people, { tree, view = 'facts', verification } = {}) {
+export function buildRelationshipGraph(people, { tree, view, verification } = {}) {
   const ids = new Set(people.filter((person) => person.id).map((person) => person.id));
   const records = people.map((person, index) => {
     let key = person.id || `@registry/${index}`;
@@ -161,11 +197,12 @@ export function buildRelationshipGraph(people, { tree, view = 'facts', verificat
   const generated = tree !== undefined || people.some((person) => Object.hasOwn(person, 'relationships') || person.familyGraph);
   const metadata = tree === undefined ? people[0]?.familyGraph : tree;
   const views = generated ? Array.isArray(metadata?.views) ? metadata.views : [] : ['facts'];
-  const selectedView = views.includes(view) ? view : 'facts';
+  const requestedView = view || (metadata?.schema >= 4 ? 'with-guesses' : 'facts');
+  const selectedView = views.includes(requestedView) ? requestedView : 'facts';
   let evidence;
   try { evidence = expandEvidenceGraph(metadata?.evidence?.[selectedView]); }
   catch (error) { return { records, edges: [], reverse: new Map(), generated, views, view: selectedView, valid: false, reason: error.message, metadata }; }
-  const result = { records, edges: [], reverse: new Map(), generated, views, view: selectedView,
+  const result = { records, edges: [], comparisons: evidence?.comparisons || [], reverse: new Map(), generated, views, view: selectedView,
     valid: !generated || verification?.valid === true, reason: generated && !verification?.valid ? verification?.reason || 'Evidence has not been verified.' : '', metadata };
   if (!result.valid) return result;
   const resolve = (reference) => {

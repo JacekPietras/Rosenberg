@@ -25,9 +25,8 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
             conflicts.append({'reason': 'conflicting factual death constraints', 'identities': [identity],
                               'sources': [mention.assertion.source.export() for mention in factual]})
         elif not compatible_deaths(observations):
-            # Conflicting guesses are alternatives requiring review, not a
-            # reason to erase the independently factual graph.
-            ignored_guesses.update(mention.assertion.source.key for mention in observations if mention.assertion.source.kind == 'guesses')
+            # Keep guessed death evidence available to the weighted model.
+            # It must neither erase factual identities nor disappear silently.
             conflicts.append({'reason': 'incompatible guessed death alternatives', 'identities': [identity],
                               'sources': [mention.assertion.source.export() for mention in observations]})
     # Diagnose anchored contradictions before considering inferred assignments.
@@ -114,9 +113,9 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
         edges = [edge for edge in edges if edge not in removed]
     omitted = sum(edge.person not in registry or edge.of not in registry for edge in edges)
     diagnostics = ['Ordinary mentions do not prove life; structured living-activity assertions are unavailable.',
-                   'Source independence is incomplete without shared event IDs; duplicate features are capped.',
+                   'Repeated features are capped by category; document/image source factors remain 1.0.',
                    'Prose and synthetic seal descriptions do not generate relationships.',
-                   'Scores are uncalibrated matching scores, not probabilities.']
+                   'Identity probabilities are model estimates, not calibrated historical accuracy.']
     provisional_groups = defaultdict(list)
     for handle, decision in decisions.items():
         if decision.status == 'unresolved':
@@ -128,7 +127,8 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
         if len(handles) > 1:
             for handle in handles:
                 decisions[handle].candidates.append(Candidate(group, [{'name': 'compatible unresolved occurrences; no identity merge', 'score': 0}]))
-    retained = {source['path'] + '#' + source['pointer'] for edge in edges for d in edge.derivations for source in d['sources']}
-    evidence = reconstruct([a for a in usable if a.original['type'] not in RELATIONS or a.source.key in retained],
-                           decisions, registry, names)
-    return BuildResult(view, decisions, edges, conflicts, diagnostics, alternatives, omitted, dict(provisional_groups), {'searchLimit': search_limit}, evidence)
+    evidence = reconstruct(usable, decisions, registry, names, parameters=inputs.matching or None,
+                           observations=[o for o in inputs.observations if include_guesses or o.source.kind == 'facts'])
+    from .probability import parameters
+    return BuildResult(view, decisions, edges, conflicts, diagnostics, alternatives, omitted, dict(provisional_groups),
+                       {'searchLimit': search_limit, 'probability': parameters(inputs.matching or None)}, evidence)

@@ -43,6 +43,7 @@ class FamilyGraphTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.write('data/names.md', 'Konrad, Conradus\nKunz, Cunz // never expand to Konrad\nEberhard, Eberhardi\nMünch, Mönch\n')
         self.write('data/places.json', [])
+        self.write('data/matching.json', json.loads((Path(__file__).resolve().parents[1] / 'data/matching.json').read_text()))
 
     def write(self, path, value):
         path = self.root / path
@@ -318,7 +319,7 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertTrue(all(node['key'].startswith('@evidence/') for node in graph['nodes']))
         output = serialize(inputs, [result])
         self.assertEqual(1, len(inputs.people))
-        self.assertEqual(3, output['schema'])
+        self.assertEqual(4, output['schema'])
         self.assertEqual(2, len(output['evidence']['facts']['nodes']))
 
     def test_repeated_family_pair_links_without_any_registry_anchor(self):
@@ -410,21 +411,15 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertEqual(2, len(graph['relationships']))
         self.assertFalse(graph['links'])
 
-    def test_negative_guess_dependencies_survive_contextual_link_propagation(self):
-        self.inputs(facts=[relation('Alex', 'c')], guesses=[{'type': 'death', 'person': 'b', 'diedOn': '1394'}])
-        self.write('data/documents/second.json', {'date': '1394', 'facts': [relation('Alex', 'c')]})
-        inputs = load_inputs(self.root, validate=False)
+    def test_legacy_guessed_registry_resolution_cannot_bypass_probability_weights(self):
+        inputs = self.family_context_inputs(guessed=True)
         result = build(inputs, include_guesses=True)
-        # Inject the preceding resolver's accepted, guess-dependent decision;
-        # this tests the source-linker's provenance contract independently.
-        decision = next(d for d in result.decisions.values() if d.mention.reference == 'Alex' and d.mention.assertion.source.path.endswith('/test.json'))
-        guess = next(a.source for a in inputs.assertions if a.source.kind == 'guesses')
-        decision.status, decision.identity, decision.method = 'accepted', 'a', 'inferred'
-        decision.uses_guesses, decision.sources = True, [guess]
-        registry, _ = anchor_profiles(inputs.assertions, inputs.people)
-        graph = reconstruct(inputs.assertions, result.decisions, registry, Names(inputs.names, inputs.places))
-        self.assertEqual(1, len(graph['relationships']))
-        self.assertTrue(all(d['usesGuesses'] for d in graph['relationships'][0]['derivations']))
+        # The preceding diagnostic resolver accepts this legacy score. The
+        # actual source graph must still apply the weaker guessed evidence.
+        self.assertTrue(any(d.identity == 'a' and d.uses_guesses for d in result.decisions.values()))
+        graph = result.evidence_graph
+        self.assertTrue(any(node['name'] == 'Alex' and not node.get('registry') for node in graph['nodes']))
+        self.assertTrue(any(c['usesGuesses'] and c['status'] != 'merged' for c in graph['comparisons']))
 
     def test_apply_writes_only_tree_and_preserves_the_confirmed_registry(self):
         inputs = self.inputs(facts=[relation('a', 'b')])
@@ -450,7 +445,7 @@ class FamilyGraphTests(unittest.TestCase):
         inputs = load_inputs(self.root)
         tree = serialize(inputs, [build(inputs)])
         apply(inputs, tree)
-        self.assertEqual(3, json.loads((self.root / 'data/tree.json').read_text())['schema'])
+        self.assertEqual(4, json.loads((self.root / 'data/tree.json').read_text())['schema'])
 
     def test_confirmed_registry_rejects_computation_fields(self):
         self.inputs()

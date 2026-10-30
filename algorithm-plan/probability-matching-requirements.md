@@ -4,8 +4,9 @@ This document records the user's latest requirements for family reconstruction.
 It takes precedence over earlier proposals about optional guesses, registry-only
 matching, or writing generated relationships into `people.json`.
 
-**Status:** requirements and implementation gaps, not a claim that the requested
-probability model is already implemented. The current implementation is described
+**Status:** implemented by engine 4 / policy 3 as an initial, uncalibrated model.
+The global configuration is `data/matching.json`; generated calculations are in
+`data/tree.json`. Historical calibration remains outstanding. The current implementation is described
 in [family-tree-final-implementation.md](family-tree-final-implementation.md).
 
 ## Intended result
@@ -176,9 +177,10 @@ tree interface. Record them with the generated result. Parameter changes must
 invalidate the previous build and trigger automatic reconstruction.
 
 **Agreed numerical values:** documents/images have source factor `1.0`;
-books/notes have source factor `0.5`. Other numerical defaults, including the
-additional guess factor, remain implementation work to choose, document, and
-evaluate.
+books/notes have source factor `0.5`. The initial additional guess factor is `0.45`, the compatible-name prior is
+`0.05`, and the merge threshold is `0.85`. All other effective weights and decay
+values are in `data/matching.json` and the global viewer panel. These are
+documented model assumptions, not empirically calibrated probabilities.
 
 ## Apply matching to all source people
 
@@ -229,9 +231,13 @@ must be checked separately: her 11 typed mentions already formed one identity,
 but the previous layout drew duplicate cards. Fixing that display behavior did
 not implement the broader probability model requested here.
 
-## Gaps found in the current matcher
+## Gaps recorded before implementation
 
-| Current behavior | Remaining requirement |
+The following table records the earlier audit; these engineering gaps are now
+addressed by `probability.py`, source reconstruction, schema 4 export, and the
+viewer. It is retained to explain the requirements, not to describe the new code.
+
+| Previous behavior | Implemented requirement |
 | --- | --- |
 | Place and title scores mainly compare mentions with existing registry anchors. | Apply them to all candidate source-person pairs and clusters. |
 | Source-person clustering mainly uses family context. | Combine family evidence with places, titles, deaths, and temporal evidence. |

@@ -1,0 +1,55 @@
+{
+  "model": "weighted-log-odds-v1",
+  "calibrated": false,
+  "priorProbability": 0.05,
+  "mergeProbability": 0.85,
+  "ambiguityLogOddsMargin": 1.0,
+  "clusterMinimumProbability": 0.35,
+  "guessWeight": 0.45,
+  "sourceWeights": {
+    "documents": 1.0,
+    "images": 1.0,
+    "books": 0.5,
+    "notes": 0.5
+  },
+  "timeDistanceScaleYears": 35.0,
+  "clusterSpanStartYears": 60.0,
+  "clusterSpanScaleYears": 20.0,
+  "titleWeights": {
+    "office": 8.0,
+    "designation": 6.0,
+    "age": 3.0,
+    "territory": 3.0,
+    "rank": 0.75,
+    "other": 1.0
+  },
+  "titleHalfLivesYears": {
+    "office": 15.0,
+    "designation": 30.0,
+    "age": 12.0,
+    "territory": 15.0,
+    "rank": 20.0,
+    "other": 15.0
+  },
+  "placeWeights": {
+    "issuance": 2.0,
+    "property": 4.0,
+    "context": 2.5
+  },
+  "placeHalfLifeYears": 20.0,
+  "associateWeight": 2.0,
+  "associateMaxWeight": 4.0,
+  "associateHalfLifeYears": 15.0,
+  "familyWeights": {
+    "anchored": 9.0,
+    "linked": 7.5,
+    "name": 4.0,
+    "spouse": 9.0
+  },
+  "familyMaxWeight": 16.0,
+  "opposedAgePenalty": 5.0,
+  "opposedAgeHalfLifeYears": 10.0,
+  "deathConflictPenalty": 20.0,
+  "distinctPenalty": 20.0,
+  "maxRounds": 12
+}

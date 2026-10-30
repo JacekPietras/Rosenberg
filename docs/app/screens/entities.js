@@ -2,8 +2,8 @@ import { imageCardMarkup } from '../rendering/images.js?v=13';
 import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rendering/facts.js?v=6';
 import { renderFactsView } from '../components/facts_view.js?v=3';
 import { findPlaceByName } from '../data/entities.js?v=87';
-import { resolvePerson, resolveEvidencePointer } from '../data/relationships.js?v=4';
-import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=4';
+import { resolvePerson, resolveEvidencePointer } from '../data/relationships.js?v=5';
+import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=5';
 
 export function createEntityScreens({
   state,
@@ -133,7 +133,7 @@ export function createEntityScreens({
         const index = Number(source.pointer.match(/\/entries\/(\d+)/)?.[1] || 0);
         return `<article class="document"><p class="entry-date">${source.pointer.includes('/guesses/') ? 'Guess · ' : ''}${escapeHtml(formatDate(date))}</p>${renderFactsView([{ ...fact, date }], { people, inlineMarkup })}<p class="source"><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></p></article>`;
       }).join('');
-      return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2><p>${node.status === 'contextual' ? 'Inferred identity across source passages; source-stated family context supplies the links.' : 'Source person; correspondence with other mentions remains open.'} No permanent person ID has been created.</p></article>${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, node.key)}<h3>Source attestations</h3>${attestations}`;
+      return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2><p>${node.status === 'contextual' ? 'Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.' : 'Source person; correspondence with other mentions remains open.'} No permanent person ID has been created.</p></article>${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, node.key)}<h3>Source attestations</h3>${attestations}`;
     }
     if (String(state.person).startsWith('@evidence/')) return '<article class="document"><h2>Source identity changed</h2><p>This generated source group changed after rebuilding.</p><a href="?tab=tree">Open the family tree to choose its current source identities</a></article>';
     if (resolution.ambiguous) {

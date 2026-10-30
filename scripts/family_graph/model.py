@@ -138,3 +138,5 @@ class Inputs:
     prose: dict
     registry_bytes: bytes
     tree_bytes: bytes | None = None
+    matching: dict = field(default_factory=dict)
+    observations: list = field(default_factory=list)

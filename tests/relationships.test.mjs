@@ -533,3 +533,68 @@ test('repository handles a missing generated tree without treating it as source 
     fetchFunction: async (path) => { assert.match(path, /data\/tree.json/); return { ok: false, status: 404 }; } });
   assert.equal(await repository.getFamilyTree(), null);
 });
+
+async function probabilityFixture() {
+  const data = await externalTreeFixture();
+  const parameters = JSON.parse(await readFile(new URL('../data/matching.json', import.meta.url), 'utf8'));
+  Object.assign(data.tree, { schema: 4, engine: '4', policy: '3', configuration: { searchLimit: 10000, probability: structuredClone(parameters) } });
+  data.files.set('data/matching.json', parameters);
+  data.tree.inputs['data/matching.json'] = await evidenceFingerprint(parameters);
+  data.tree.fingerprint = await evidenceFingerprint(data.tree.inputs);
+  for (const graph of Object.values(data.tree.evidence)) {
+    graph.nodes.forEach((node) => { node.identityProbability = 1; });
+    graph.relationships.forEach((edge) => edge.derivations.forEach((d) => { d.assertionWeight = 1; d.endpointProbability = null; }));
+    graph.comparisons = [{ person: 'a', candidate: '@evidence/child', probability: .5, logOdds: 0,
+      features: [{ name: 'test evidence', contribution: -Math.log(parameters.priorProbability / (1 - parameters.priorProbability)) }],
+      status: 'below-threshold', reason: 'Below merge probability', usesGuesses: false,
+      sources: [graph.relationships[0].derivations[0].sources[0]] }];
+  }
+  return data;
+}
+
+test('probability tree shows global parameters, weighted guesses, and explained comparisons', async () => {
+  const data = await probabilityFixture();
+  const verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+  assert.equal(verification.valid, true, verification.reason);
+  const graph = buildRelationshipGraph(data.people, { tree: data.tree, verification });
+  assert.equal(graph.view, 'with-guesses');
+  const html = renderPeopleTree(data.people, data.documents, { graph });
+  assert.match(html, /Facts \+ weighted guesses/);
+  assert.doesNotMatch(html, /data-family-view/);
+  assert.match(html, /Matching parameters \(global\)/);
+  assert.match(html, /sourceWeights.books/);
+  assert.match(html, /guessWeight/);
+  assert.match(html, /uncalibrated/);
+  assert.match(html, /Identity match estimates/);
+  assert.match(html, /50.0%/);
+});
+
+test('probability verification rejects altered estimates and effective parameters', async () => {
+  for (const mutation of ['estimate', 'parameters']) {
+    const data = await probabilityFixture();
+    if (mutation === 'estimate') data.tree.evidence.facts.comparisons[0].probability = .99;
+    else data.tree.configuration.probability.mergeProbability = .8;
+    const verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+    assert.equal(verification.valid, false);
+    assert.match(verification.reason, /probability|Probability/);
+  }
+});
+
+test('parameter changes automatically rebuild and a saved facts-only preference cannot omit guesses', async () => {
+  const data = await probabilityFixture();
+  const next = { ...data.files.get('data/matching.json'), mergeProbability: .8 };
+  data.files.set('data/matching.json', next);
+  let rebuilds = 0;
+  const { loader, state } = loaderFor(data, { rebuild: async (options) => {
+    rebuilds++;
+    assert.equal(options.includeGuesses, true);
+    data.tree.configuration.probability = structuredClone(next);
+    data.tree.inputs['data/matching.json'] = await evidenceFingerprint(next);
+    data.tree.fingerprint = await evidenceFingerprint(data.tree.inputs);
+  } });
+  state.familyView = 'facts';
+  await loader.loadAll();
+  assert.equal(rebuilds, 1);
+  assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
+  assert.equal(state.familyGraph.view, 'with-guesses');
+});

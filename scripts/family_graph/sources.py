@@ -5,6 +5,7 @@ from pathlib import Path
 from validate_facts import TYPES, Validator
 from .dates import date_bounds, inherited_date_bounds
 from .model import Assertion, Inputs, Mention, SourceRef, fingerprint
+from .probability import Observation, parameters
 
 SOURCE_DIRS = ('books', 'documents', 'notes', 'images')
 
@@ -18,7 +19,7 @@ def source_paths(root):
 
 
 def input_manifest(root, people=None):
-    paths = source_paths(root) + [root / 'data/names.md', root / 'data/places.json']
+    paths = source_paths(root) + [root / 'data/names.md', root / 'data/places.json', root / 'data/matching.json']
     # Engine and policy changes also invalidate generated results.
     paths += sorted((root / 'scripts/family_graph').glob('*.py'))
     paths += [root / 'scripts/rebuild_family_tree.py', root / 'scripts/validate_facts.py',
@@ -40,7 +41,7 @@ def input_manifest(root, people=None):
     return dict(sorted(manifest.items()))
 
 
-def walk_assertions(document, path):
+def walk_assertions(document, path, include_text=False):
     explicit = path.startswith(('data/books/', 'data/notes/')) or isinstance(document, dict) and 'book' in document
 
     def visit(value, pointer='', inherited='', context=None):
@@ -56,7 +57,13 @@ def walk_assertions(document, path):
                         ref = SourceRef(path, f'{location}/{index}', fingerprint(fact), key,
                                         json.dumps(current_context.get('source', current_context.get('book', '')), ensure_ascii=False, sort_keys=True))
                         if not isinstance(fact, dict) or 'type' not in fact:
-                            yield ref, None
+                            text = fact if isinstance(fact, str) else fact.get('text', '') if isinstance(fact, dict) else ''
+                            historical_date = fact.get('date', current_date) if isinstance(fact, dict) else current_date
+                            try:
+                                bounds = inherited_date_bounds(historical_date)
+                            except (ValueError, TypeError):
+                                bounds = None
+                            yield ref, Observation(ref, text, historical_date, bounds, current_context) if include_text else None
                             continue
                         if fact['type'] not in TYPES:
                             raise ValueError(f'{ref.key}: unsupported assertion type')
@@ -95,7 +102,7 @@ def load_inputs(root, validate=True):
     validator = Validator(root=root)
     if validate:
         validator.load_people(root / 'data/people.json')
-    assertions, prose = [], {'facts': 0, 'guesses': 0}
+    assertions, observations, prose = [], [], {'facts': 0, 'guesses': 0}
     for path in source_paths(root):
         if validate:
             validator.validate_file(path)
@@ -103,18 +110,23 @@ def load_inputs(root, validate=True):
             document = json.loads(path.read_text(encoding='utf-8'))
         except (ValueError, OSError) as exc:
             raise ValueError(f'{path}: {exc}') from exc
-        for ref, assertion in walk_assertions(document, path.relative_to(root).as_posix()):
-            if assertion:
+        for ref, assertion in walk_assertions(document, path.relative_to(root).as_posix(), include_text=True):
+            if isinstance(assertion, Assertion):
                 assertions.append(assertion)
             else:
+                observations.append(assertion)
                 prose[ref.kind] += 1
     errors = [str(item) for item in validator.diagnostics if item.severity == 'error']
     if errors:
         raise ValueError('\n'.join(errors))
     names = (root / 'data/names.md').read_text(encoding='utf-8')
     places = json.loads((root / 'data/places.json').read_text(encoding='utf-8'))
+    matching_path = root / 'data/matching.json'
+    if validate and not matching_path.exists():
+        raise ValueError('data/matching.json: global probability configuration is missing')
+    matching = parameters(json.loads(matching_path.read_text(encoding='utf-8')) if matching_path.exists() else None)
     manifest = input_manifest(root, people)
     # Refuse a mixed snapshot if a file changed during ingestion.
     if manifest != initial_manifest or registry_bytes != (root / 'data/people.json').read_bytes():
         raise ValueError('inputs changed during ingestion; rerun reconstruction')
-    return Inputs(root, people, names, places, assertions, manifest, prose, registry_bytes, tree_bytes)
+    return Inputs(root, people, names, places, assertions, manifest, prose, registry_bytes, tree_bytes, matching, observations)

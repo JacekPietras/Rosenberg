@@ -31,6 +31,7 @@ class FamilyTreeServerTests(unittest.TestCase):
         (self.root / 'scripts').symlink_to(ROOT / 'scripts', target_is_directory=True)
         self.write('data/names.md', 'Alex\nBea\n')
         self.write('data/places.json', [])
+        self.write('data/matching.json', json.loads((ROOT / 'data/matching.json').read_text()))
         self.write('data/people.json', [{'id': 'a', 'name': 'Alex'}, {'id': 'b', 'name': 'Bea'}])
         self.write('data/tree.json', {'views': ['facts', 'with-guesses'], 'configuration': {'searchLimit': 37}})
         self.write('data/documents/test.json', {'date': '1393', 'facts': [

@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=4';
+import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=5';
 
 export function createDataLoader({
   repository,
@@ -22,11 +22,8 @@ export function createDataLoader({
   let lastVerifiedGraph;
   function rebuildOptions() {
     const metadata = state.tree ?? state.personRecords[0]?.familyGraph;
-    const views = metadata?.views;
-    const validViews = Array.isArray(views) && views[0] === 'facts'
-      && (views.length === 1 || views.length === 2 && views[1] === 'with-guesses');
     const limit = metadata?.configuration?.searchLimit;
-    return { includeGuesses: validViews ? views.includes('with-guesses') : true,
+    return { includeGuesses: true,
       searchLimit: Number.isSafeInteger(limit) && limit > 0 ? limit : 10000 };
   }
 
@@ -63,8 +60,10 @@ export function createDataLoader({
     };
     state.documents = documents;
     state.tree = tree;
+    if (tree?.schema >= 4) state.familyView = 'with-guesses';
     if (state.familyGraph?.valid) lastVerifiedGraph = state.familyGraph;
     state.familyVerification = await verifyFamilyGraph(state.personRecords, documents, repository, paths, tree);
+    if (tree?.schema >= 4 && !tree.views?.includes('with-guesses')) state.familyVerification = { valid: false, reason: 'The normal tree requires weighted guesses.' };
     state.familyGraph = buildRelationshipGraph(state.personRecords, { tree, view: state.familyView, verification: state.familyVerification });
     state.canRebuildFamilyGraph = typeof repository.rebuildFamilyGraph === 'function' && await repository.isLocalServer();
     state.familyGraph.canRebuild = state.canRebuildFamilyGraph;

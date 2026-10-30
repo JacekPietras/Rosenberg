@@ -366,33 +366,41 @@ Rebuilding the tree must leave the registry byte-for-byte unchanged.
 
 `data/tree.json` is the generated family graph, separate from the confirmed
 registry. Generate it with `python3 scripts/rebuild_family_tree.py --apply`;
-add `--include-guesses` to compute facts and guesses-enabled views independently.
+The normal CLI computes a facts-only audit and an independently built weighted
+facts-and-guesses view; guesses are always included in the normal viewer.
+`--facts-only` is an explicit audit command.
 Without `--apply` the CLI is read-only. The local viewer also rebuilds stale or
-missing trees and offers a rebuild button. The tree is output, never input
+missing trees and offers a retry action only when rebuilding fails. The tree is output, never input
 identity evidence, and must not be included in its own input fingerprints.
 
 The top-level object has:
 
-- `schema: 3`, `engine: "3"`, `policy: "2"`.
-- `configuration.searchLimit`: the positive integer bound for registry matching.
+- `schema: 4`, `engine: "4"`, `policy: "3"`.
+- `configuration.searchLimit`: the positive integer bound for the retained registry diagnostics.
+- `configuration.probability`: the effective model settings from `data/matching.json`,
+  including model/calibration status, source and guess weights, prior, merge
+  threshold, ambiguity margin, feature weights, temporal decay, and iteration limits.
 - `views`: exactly `["facts"]` or `["facts", "with-guesses"]`, including empty
   or identical views.
 - `inputs`: repository-relative input path to SHA-256 fingerprint, covering
   recursively discovered source JSON in books/documents/notes/images,
-  `data/names.md`, `data/places.json`, the confirmed ID/name registry, and
+  `data/names.md`, `data/places.json`, `data/matching.json`, the confirmed ID/name registry, and
   engine/shared Python utilities.
 - `fingerprint`: the fingerprint of the complete `inputs` object.
 - `evidence`: a graph keyed by each available evidence view.
 - `coverage`: counts per view for `reconstructedPeople`,
   `reconstructedRelationships`, `contextualLinks`, `registryRelationships`,
-  `unresolvedMentions` from registry matching, and `conflicts`.
+  `unresolvedMentions` from registry diagnostics, `candidateComparisons`, and `conflicts`.
 
 ### Source people and relationships
 
-Each evidence view contains `sources`, `nodes`, and `relationships`. The
+Each evidence view contains `sources`, `nodes`, `relationships`, and
+`comparisons`. Schema 4 readers continue to accept earlier viewer artifacts for
+migration, but new exports use schema 4. The
 `sources` array stores each path/pointer/fingerprint reference once. Persisted
 `mentions[].source`, `identitySources[]`, and derivation `sources[]` contain
-zero-based integer indexes into that table; readers expand them for inspection.
+zero-based integer indexes into that table; comparison `sources[]` use the same
+indexes. Readers expand them for inspection.
 Complete reference objects are also accepted in an uncompressed view.
 
 A source reference has exactly `path`, `pointer`, and `fingerprint`. `path` is a
@@ -402,7 +410,7 @@ References remain attached to their original source entry; do not relocate a
 stale pointer by searching for another identical assertion.
 
 A node contains `key`, `name`, `titles`, `dates`, `status`, `mentions`, and
-`identitySources`. A registry-backed node also contains `registry`, equal to its
+`identitySources`, and `identityProbability`. A registry-backed node also contains `registry`, equal to its
 confirmed ID and node key. Other nodes use an opaque `@evidence/` handle derived
 from their source occurrences. These are generated view handles, not permanent
 person IDs, and can change when new evidence changes a grouping.
@@ -436,20 +444,55 @@ retain alternative complete derivations; each view is validated separately.
 ### Reconstruction and verification
 
 Repeated participant references can be grouped in one dated source passage only
-when source distinctions and graph constraints permit it. Cross-source links
-require family context: grounded relatives, repeated full spouse pairs, or
-multiple source-stated relatives within a temporal comparison window.
-Co-parentage can support identity, but creates no marriage or extra parent edge.
-Contextual given-name variants and omitted surnames require family support and
-cannot bridge incompatible full surnames. Matching names, titles, or places
-alone do not establish cross-source identity.
+when source distinctions and graph constraints permit it. Cross-source matching
+uses a weighted log-odds model for all source people, including those without
+registry IDs. For compatible-name candidates:
 
-Candidate links are evaluated against a frozen round. Connected source families
-are checked jointly, preserving distinct registry anchors, compatible deaths,
-source distinctions, and acyclic parentage. Conflicting proposals remain
-separate. Their supporting evidence and guess dependencies propagate through
-later links. The two evidence views are independent builds. The viewer displays
-unresolved source people, source attestations, and connected family selection.
+```text
+logOdds = log(prior / (1 - prior)) + sum(feature contributions)
+probability = 1 / (1 + exp(-logOdds))
+```
+
+All title categories decay with the distance between their actual attestation
+intervals. Scoped offices have stronger weights than ranks. Property associations
+use names/variations from `places.json`. Same-fact associates are deterministic
+`XXX von YYY` name co-occurrences; an entire entry is never one associate group.
+Dated prose supplies context only when its name selects a unique participant in
+the same dated passage. It never generates a family relationship. Missing dates
+or ambiguous names do not justify inventing that attachment.
+
+Family evidence uses exact anchors, already linked relatives, full relative
+names, and co-parent context without creating extra edges. Features are capped
+by category/relative/place; repeated extraction does not manufacture support.
+Document/image source factors are always 1.0; book/note factors are 0.5.
+Guesses receive an additional 0.45 factor by default. Pairwise evidence uses the
+weaker of the two observations' effective factors. Death conflicts and formal
+participant distinctions impose large negative contributions. Factual death
+incompatibility, separate confirmed IDs, self-relationships, and ancestry cycles
+remain consistency constraints. Ordinary mentions are not living activity.
+
+The configuration defines the compatible-name prior (initially 0.05), merge
+threshold (0.85), reciprocal log-odds margin, temporal penalties, cluster checks,
+and maximum rounds. Matching runs against frozen profiles; whole candidate
+components and connected source families are checked jointly. Inferred links
+carry their dependencies and confidence into later rounds. The algorithm's own
+conclusions are not independent evidence. No age model or seal-image matching is
+used. These probabilities are **uncalibrated estimates**.
+
+Each comparison contains `person`, `candidate` (final node keys), original
+`mentions` handles, `iteration`, `probability`, `logOdds`, `features` (named
+log-odds contributions), `sources`, `usesGuesses`, `status`, and `reason`. Status
+is `merged`, `below-threshold`, `ambiguous`, `incompatible`, or `superseded`.
+The latter preserves an earlier comparison when later cluster evidence joined
+its occurrences. Name/time-only candidates with no substantive additional
+signal are not persisted. References and probability arithmetic are validated.
+
+A node's `identityProbability` is the weakest accepted model link supporting its
+cluster, or 1 for an exact/local occurrence grouping. It is not a probability
+that the historical person existed or that the identity is permanently confirmed.
+Derivations also retain `assertionWeight` and `endpointProbability`; the latter
+is null when correspondence remains open. Assertion weights are evidence
+factors, not calibrated probabilities of relationship truth.
 
 Input fingerprints cover complete parsed source files, including enclosing dates,
 citations, text, and newly added assertions; a separate source file-set check
@@ -475,6 +518,25 @@ and a verified reload. The browser does not duplicate the matching algorithm.
 bytes, and existing tree bytes, and writes `tree.json` once. It never modifies
 `people.json` or source assertions. Intervening changes prevent a write. No
 timestamps, reports, review queues, or separate facts database are introduced.
+
+## Matching JSON
+
+`data/matching.json` is the authoritative global configuration for the weighted
+identity model. It contains `model: "weighted-log-odds-v1"`, `calibrated: false`,
+`priorProbability`, `mergeProbability`, `ambiguityLogOddsMargin`,
+`clusterMinimumProbability`, `guessWeight`, `sourceWeights`, document/time-span
+scales, title weights and half-lives, place weights and half-life, associate
+weights/cap/half-life, family weights/cap, age-opposition penalty/half-life,
+death and explicit-distinction penalties, and `maxRounds`.
+
+Use the existing file's exact keys; unknown/missing keys, non-finite or
+non-positive values, invalid probability ranges, and non-integer iteration
+bounds are rejected. The agreed source factors are documents/images 1.0 and
+books/notes 0.5; these values are enforced. Guesses must have a factor strictly
+between 0 and 1. Other values are configurable model assumptions. Parameter
+changes invalidate generated results and automatically rebuild the local tree.
+The viewer shows every effective value from the generated configuration.
+
 
 ## Places JSON
 

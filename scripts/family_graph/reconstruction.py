@@ -6,21 +6,26 @@ round, then checked together; no link can merge distinct registry anchors.
 
 from collections import defaultdict
 from itertools import combinations
+import math
 import re
 
 from .constraints import cycle_nodes
 from .dates import compatible_deaths, near
 from .model import fingerprint
+from .probability import ProbabilityModel, Profile, title_category, reliability
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 OPPOSED = ({'der Junge', 'der Jüngere'}, {'der Alte', 'der Ältere'})
 
 
-def reconstruct(assertions, decisions, registry, names):
+def reconstruct(assertions, decisions, registry, names, parameters=None, observations=()):
     mentions = {m.handle: m for a in assertions for m in a.mentions}
     parent = {key: key for key in mentions}
     dependencies = defaultdict(dict)
-    links = []
+    links, comparisons = [], {}
+    model = ProbabilityModel(parameters, names)
+    confidence = defaultdict(lambda: 1.0)
+    round_scores = {}
 
     def find(key):
         while parent[key] != key:
@@ -35,11 +40,11 @@ def reconstruct(assertions, decisions, registry, names):
         return result
 
     def anchor(handles):
-        return {decisions[h].identity for h in handles if decisions[h].status == 'accepted'}
+        return {mentions[h].reference for h in handles if mentions[h].reference in registry and registry[mentions[h].reference].get('id') == mentions[h].reference}
 
     def name(handle):
-        decision = decisions[handle]
-        return names.key(registry[decision.identity]['name'] if decision.status == 'accepted' else mentions[handle].reference)
+        ref = mentions[handle].reference
+        return names.key(registry[ref]['name'] if ref in registry and registry[ref].get('id') == ref else ref)
 
     def given(value):
         first = value.split()[0]
@@ -57,9 +62,7 @@ def reconstruct(assertions, decisions, registry, names):
     def consistent(components):
         mapping = {h: index for index, component in enumerate(components) for h in component}
         for component in components:
-            if len(anchor(component)) > 1 or not compatible_deaths([mentions[h] for h in component]):
-                return False
-            if anchor(component) and any('search limit' in decisions[h].reason and decisions[h].identity is None for h in component):
+            if len(anchor(component)) > 1 or not compatible_deaths([mentions[h] for h in component if mentions[h].assertion.source.kind == 'facts']):
                 return False
             forms = {name(h) for h in component}
             if any(not compatible_names(a, b) for a, b in combinations(forms, 2)):
@@ -113,7 +116,10 @@ def reconstruct(assertions, decisions, registry, names):
         for component in components:
             joined = sorted(h for key in component for h in current[key])
             other = [handles for key, handles in current.items() if key not in component]
-            if consistent([joined, *other]):
+            negative_pair = any(round_scores.get(tuple(sorted((a, b))), {}).get('probability', 1) < model.settings['clusterMinimumProbability']
+                                and any(f['contribution'] < 0 and f['name'] not in {'document time distance'} for f in round_scores.get(tuple(sorted((a, b))), {}).get('features', []))
+                                for a, b in combinations(component, 2))
+            if not negative_pair and consistent([joined, *other]):
                 candidates.append(component)
         # Different identity components can jointly create an ancestry cycle.
         # Check all proposed links in each connected source family together,
@@ -154,32 +160,29 @@ def reconstruct(assertions, decisions, registry, names):
                 for key in component:
                     parent[key] = root
                 dependencies[root].update(refs)
+                estimates = [record['probability'] for (a, b), record in round_scores.items() if a in component and b in component]
+                confidence[root] = min([confidence[key] for key in component] + estimates)
                 links.append({'reason': reason, 'mentions': joined,
                               'sources': [refs[key].export() for key in sorted(refs)]})
                 accepted += len(component) - 1
             current = groups()
         return accepted
 
-    # Exact and already reviewed/inferred registry assignments are fixed seeds.
+    # Only exact source IDs seed fixed identities. The preceding registry
+    # resolver's inferred scores never bypass this probability model.
     by_anchor = defaultdict(list)
-    for handle, decision in decisions.items():
-        if handle in mentions and decision.status == 'accepted':
-            by_anchor[decision.identity].append(handle)
+    for handle, mention in mentions.items():
+        if mention.reference in anchor([handle]):
+            by_anchor[mention.reference].append(handle)
     for handles in by_anchor.values():
         for handle in handles[1:]:
             parent[handle] = handles[0]
-        for handle in handles:
-            decision = decisions[handle]
-            dependencies[handles[0]].update({source.key: source for source in decision.sources})
-            if decision.uses_guesses:
-                ref = mentions[handle].assertion.source
-                dependencies[handles[0]][ref.key] = ref
 
     # A source's repeated participant reference supplies local context. If that
     # passage distinguishes namesakes, leave the unqualified occurrences apart.
     local = defaultdict(list)
     for handle, mention in mentions.items():
-        if decisions[handle].status != 'accepted':
+        if not anchor([handle]):
             local[(scope(mention), name(handle))].append(handle)
     local_proposals = []
     for handles in local.values():
@@ -209,90 +212,124 @@ def reconstruct(assertions, decisions, registry, names):
                 proposals.append((left.handle, right.handle, [first.source, second.source]))
     accept(proposals, 'same dated relationship in a specifically cited attestation')
 
-    # Resolve source families together. A shared grounded relative is stronger
-    # than a name; two matching source-stated relatives can link a family even
-    # when none of its members has a registry ID.
-    for _ in range(12):
+    # Frozen-round profiles combine dated titles, geography, same-fact
+    # associates and family evidence for every source identity, not just IDs.
+    for iteration in range(model.settings['maxRounds']):
         current = groups()
-        profiles = defaultdict(dict)
-        sources = defaultdict(dict)
+        profiles = {root: Profile(handles, [mentions[h] for h in handles], anchored=bool(anchor(handles)), confidence=confidence[root], key=root)
+                    for root, handles in current.items()}
+        root_names = {root: min((name(h) for h in handles), key=lambda value: (-len(value.split()), -len(value), value))
+                      for root, handles in current.items()}
+        for root, profile in profiles.items():
+            profile.refs.update(dependencies[root])
+        scopes = defaultdict(lambda: defaultdict(set))
+        for handle, mention in mentions.items():
+            root = find(handle)
+            passage = scope(mention)
+            scopes[passage][name(handle)].add(root)
+            profile = profiles[root]
+            ref, bounds = mention.assertion.source, mention.assertion.bounds
+            profile.refs[ref.key] = ref
+            for title in mention.titles:
+                profile.titles.setdefault(title_category(title), []).append((ref, bounds))
+            model.add_context(profile, ref, bounds, issuance=mention.assertion.context.get('place', ''))
+        for observation in observations:
+            if not observation or observation.bounds is None:
+                continue
+            passage = (observation.source.path, observation.source.pointer.rsplit('/' + observation.source.kind + '/', 1)[0], observation.historical_date)
+            found = model.person_names(observation.text)
+            for person_name in sorted(found):
+                candidates = scopes[passage].get(person_name, set())
+                # A prose name cannot select one of several namesakes in a
+                # passage, and a whole entry is never an associate clique.
+                if len(candidates) == 1:
+                    root = next(iter(candidates))
+                    model.add_context(profiles[root], observation.source, observation.bounds, observation.text,
+                                      self_names={root_names[root], person_name})
         parents = defaultdict(lambda: defaultdict(list))
+        def relative(profile_root, relative_root, role, source_assertions):
+            profile, other = profiles[profile_root], profiles[relative_root]
+            relative_name = root_names[relative_root]
+            tokens = [(role, relative_root, relative_name, other.anchored, other.confidence),
+                      (role, '', relative_name, False, 1.0)]
+            for token in tokens:
+                profile.relatives.setdefault(token, []).extend((a.source, a.bounds) for a in source_assertions)
+            for a in source_assertions:
+                profile.refs[a.source.key] = a.source
+            profile.refs.update(dependencies[relative_root])
         for assertion in assertions:
             if assertion.original['type'] not in RELATIONS:
                 continue
             a, b = assertion.mentions
-            for mention, relative, direction in ((a, b, 'out'), (b, a, 'in')):
-                key = find(mention.handle)
-                role = assertion.original['type'], direction if assertion.original['type'] == 'parent' else '', assertion.original.get('term', '')
-                token = role, find(relative.handle)
-                profiles[key].setdefault(token, set()).add(name(relative.handle))
-                sources[key][assertion.source.key] = assertion.source
-                if assertion.original['type'] == 'spouse':
-                    profiles[key].setdefault((('family context', '', ''), find(relative.handle)), set()).add(name(relative.handle))
-            if assertion.original['type'] == 'parent':
-                parents[find(b.handle)][find(a.handle)].append(assertion)
-        # Co-parentage is identity context only. It never generates a marriage
-        # or another parent assertion; both parents already have source edges.
+            left, right = find(a.handle), find(b.handle)
+            kind = assertion.original['type']
+            profiles[left].distinctions.setdefault(right, []).append(assertion.source)
+            profiles[right].distinctions.setdefault(left, []).append(assertion.source)
+            for own, other, direction in ((left, right, 'out'), (right, left, 'in')):
+                role = kind, direction if kind == 'parent' else '', assertion.original.get('term', '')
+                relative(own, other, role, [assertion])
+                if kind == 'spouse':
+                    relative(own, other, ('family context', '', ''), [assertion])
+            if kind == 'parent':
+                parents[right][left].append(assertion)
         for co_parents in parents.values():
             for left, right in combinations(co_parents, 2):
-                for a, b in ((left, right), (right, left)):
-                    profiles[a].setdefault((('family context', '', ''), b), set()).add(name(current[b][0]))
-                    for assertion in [*co_parents[left], *co_parents[right]]:
-                        sources[a][assertion.source.key] = assertion.source
-        by_name = defaultdict(list)
-        for key, handles in current.items():
-            by_name[given(name(handles[0]))].append(key)
-        scores = defaultdict(list)
-        supports = {}
-        for candidates in by_name.values():
-            for left, right in combinations(candidates, 2):
+                basis = [*co_parents[left], *co_parents[right]]
+                relative(left, right, ('family context', '', ''), basis)
+                relative(right, left, ('family context', '', ''), basis)
+        buckets = defaultdict(list)
+        for root in current:
+            buckets[given(root_names[root])].append(root)
+        round_scores, options = {}, defaultdict(list)
+        for roots in buckets.values():
+            for left, right in combinations(roots, 2):
                 if not all(compatible_names(name(a), name(b)) for a in current[left] for b in current[right]):
                     continue
+                record = model.compare(profiles[left], profiles[right])
+                if not record.pop('substantive'):
+                    continue
+                pair = tuple(sorted((left, right)))
+                record.update(mentions=list(pair), iteration=iteration, status='below-threshold', reason='below merge probability')
+                round_scores[pair] = record
+                comparisons[pair] = record
                 if len(anchor([*current[left], *current[right]])) > 1:
+                    record.update(status='incompatible', reason='distinct confirmed registry IDs')
                     continue
-                if not any(near(mentions[a].assertion.bounds, mentions[b].assertion.bounds, 25)
-                           for a in current[left] for b in current[right]):
+                if record['probability'] < model.settings['mergeProbability']:
                     continue
-                shared = set(profiles[left]) & set(profiles[right])
-                grounded = {token[1] for token in shared if anchor(current[token[1]])}
-                # Distinct relatives, not duplicate facts about one relative.
-                shared_relatives = {token[1] for token in shared}
-                left_names = {(role, relative_name) for (role, _), values in profiles[left].items() for relative_name in values}
-                right_names = {(role, relative_name) for (role, _), values in profiles[right].items() for relative_name in values}
-                family = left_names & right_names
-                family_names = {value for _, value in family}
-                score = 10 * len(grounded) + 5 * len(shared_relatives - grounded)
-                if len(family_names) >= 2:
-                    score += 4 * len(family_names)
-                # A repeated full spouse name is a family-pair hypothesis,
-                # rather than name-only linkage of either partner. Both source
-                # relationships remain its provenance and uncertainty is kept.
-                spouses = {relative_name for role, relative_name in family
-                           if role[0] == 'spouse' and len(relative_name.split()) >= 2}
-                if spouses:
-                    score += 9
-                if score < 8:
-                    continue
-                refs = {**sources[left], **sources[right]}
-                for key in (left, right, *(token[1] for token in shared)):
-                    refs.update(dependencies[key])
-                scores[left].append((score, right))
-                scores[right].append((score, left))
-                supports[tuple(sorted((left, right)))] = list(refs.values())
-        proposals = []
-        for left, options in scores.items():
-            best = max(score for score, _ in options)
-            # Ambiguous rivals with distinct anchors are deliberately retained.
-            best_options = [right for score, right in options if best - score < 3]
-            competing_anchors = set().union(*(anchor(current[key]) for key in [left, *best_options]))
-            if len(competing_anchors) > 1:
+                record.update(status='ambiguous', reason='competing candidates within the decision margin')
+                options[left].append((record['logOdds'], right))
+                options[right].append((record['logOdds'], left))
+        proposals, selected = [], set()
+        margin = model.settings['ambiguityLogOddsMargin']
+        for left, alternatives in options.items():
+            best = max(score for score, _ in alternatives)
+            best_options = [right for score, right in alternatives if best - score < margin]
+            if len(set().union(*(anchor(current[key]) for key in [left, *best_options]))) > 1:
                 continue
             for right in best_options:
-                reverse_best = max(score for score, _ in scores[right])
-                score = next(score for score, candidate in scores[right] if candidate == left)
-                if reverse_best - score < 3:
-                    proposals.append((left, right, supports[tuple(sorted((left, right)))]))
-        if not accept(proposals, 'compatible source-stated family context'):
+                reverse_best = max(score for score, _ in options[right])
+                pair = tuple(sorted((left, right)))
+                if reverse_best - round_scores[pair]['logOdds'] >= margin or pair in selected:
+                    continue
+                selected.add(pair)
+                # Negative and rival evidence can influence selection too.
+                refs = {**profiles[left].refs, **profiles[right].refs, **dependencies[left], **dependencies[right]}
+                for (a, b), comparison in round_scores.items():
+                    if left in (a, b) or right in (a, b):
+                        without_negative = comparison['logOdds'] - sum(min(0, f['contribution']) for f in comparison['features'])
+                        threshold = model.settings['mergeProbability']
+                        if comparison['probability'] >= threshold or without_negative >= math.log(threshold / (1 - threshold)):
+                            refs.update({ref.key: ref for ref in comparison['sources']})
+                proposals.append((left, right, list(refs.values())))
+                round_scores[pair]['sources'] = [refs[key] for key in sorted(refs)]
+        count = accept(proposals, 'weighted probability of source identity')
+        for pair in selected:
+            if find(pair[0]) == find(pair[1]):
+                round_scores[pair].update(status='merged', reason='probability, margin and cluster constraints passed')
+            else:
+                round_scores[pair].update(status='incompatible', reason='complete proposed cluster violates identity constraints')
+        if not count:
             break
 
     current = groups()
@@ -316,6 +353,7 @@ def reconstruct(assertions, decisions, registry, names):
                       'titles': sorted({title for h in handles for title in mentions[h].titles}),
                       'dates': sorted({mentions[h].assertion.historical_date for h in handles}),
                       'status': 'anchored' if anchors else 'contextual' if len({scope(mentions[h]) for h in handles}) > 1 else 'source',
+                      'identityProbability': round(confidence[root], 8),
                       'mentions': occurrences,
                       'identitySources': [ref.export() for _, ref in sorted(dependencies[root].items())]})
     edges = {}
@@ -330,15 +368,16 @@ def reconstruct(assertions, decisions, registry, names):
         support = {assertion.source.key: assertion.source}
         methods = []
         for mention in assertion.mentions:
-            decision = decisions[mention.handle]
-            if decision.status == 'accepted':
-                methods.append(decision.method)
-                support.update({ref.key: ref for ref in decision.sources})
+            root = find(mention.handle)
+            if anchor([mention.handle]):
+                methods.append('anchored')
             else:
-                methods.append('inferred' if len(current[find(mention.handle)]) > 1 else 'source')
-                support.update(dependencies[find(mention.handle)])
+                methods.append('inferred' if len(current[root]) > 1 else 'source')
+                support.update(dependencies[root])
         identity = next((value for value in ('source', 'inferred', 'reviewed', 'anchored') if value in methods), 'source')
         derivation = {'identity': identity, 'usesGuesses': any(ref.kind == 'guesses' for ref in support.values()),
+                      'assertionWeight': reliability(assertion.source, model.settings),
+                      'endpointProbability': None if 'source' in methods else min(confidence[find(m.handle)] if not anchor([m.handle]) else 1.0 for m in assertion.mentions),
                       'sources': [support[value].export() for value in sorted(support)]}
         edge = edges.setdefault(key, {'type': kind, 'person': left, 'of': right, 'derivations': []})
         if kind == 'kin':
@@ -348,5 +387,17 @@ def reconstruct(assertions, decisions, registry, names):
     # Unconnected title/death occurrences remain available for identity scoring;
     # the family view contains participants in actual relationship assertions.
     participants = {edge[field] for edge in edges.values() for field in ('person', 'of')}
+    exported_comparisons = []
+    for pair, comparison in sorted(comparisons.items()):
+        left, right = keys[pair[0]], keys[pair[1]]
+        if left not in participants or right not in participants:
+            continue
+        if left == right and comparison['status'] != 'merged':
+            comparison = {**comparison, 'status': 'superseded',
+                          'reason': 'earlier comparison; later compatible cluster evidence joined these occurrences'}
+        exported_comparisons.append({**comparison, 'person': left, 'candidate': right,
+            'usesGuesses': any(ref.kind == 'guesses' for ref in comparison['sources']),
+            'sources': [ref.export() for ref in comparison['sources']]})
     return {'nodes': [node for node in nodes if node['key'] in participants],
-            'relationships': [edges[key] for key in sorted(edges)], 'links': links}
+            'relationships': [edges[key] for key in sorted(edges)], 'links': links,
+            'comparisons': exported_comparisons}

@@ -15,6 +15,7 @@ data/
 ├── calendar.md   # Liturgical calendar and dated annotations
 ├── people.json   # Confirmed separate people: ID and full name only
 ├── tree.json     # Generated family graph and calculation results
+├── matching.json # Global probability model parameters
 ├── names.md      # Historical name variants
 └── places.json   # Place-name variants and coordinates
 docs/             # Browser viewer for the dataset
@@ -44,8 +45,10 @@ python3 scripts/rebuild_family_tree.py
 python3 scripts/rebuild_family_tree.py --include-guesses --explain vogt_zu_Lauda
 ```
 
-Use `--include-guesses --apply` to write both independently built evidence
-views to `data/tree.json`, or `--apply` for facts only. `data/people.json` contains
+Use `--apply` to write `data/tree.json`. The normal result always combines facts
+and lower-weight guesses; a separate facts-only view is retained for audit.
+`--facts-only` explicitly builds only that audit view; the viewer restores the
+normal weighted tree automatically. `data/people.json` contains
 only confirmed IDs and full names; reconstruction never changes that registry. The tree includes people found in typed
 source assertions, including people without registry IDs. Source-local family
 groups and contextual links across sources remain distinguishable from fixed
@@ -63,9 +66,18 @@ the viewer to enable automatic rebuilding. The published read-only site links to
 viewer when a rebuild is needed.
 
 The registry and generated tree schemas are documented in [rules/json-formats.md](rules/json-formats.md).
-Matching scores are conservative heuristics, not calibrated probabilities.
-Structured living activity, shared historical event IDs, and precise place
-roles remain deferred; ordinary mentions do not prove that someone was alive.
+Matching uses an explicit log-odds model across all source identities.
+`data/matching.json` holds its global parameters, also visible in the viewer.
+Documents/images have source weight 1.0; books/notes 0.5; guesses receive an
+additional factor of 0.45. Title evidence decays with time, scoped offices carry
+more weight, and conflicting deaths impose a large penalty. Place/property
+context, formal family relationships, and deterministic same-fact associates
+contribute additional evidence. The initial merge threshold is 85%, with
+competing-candidate and cluster checks. Estimates are **uncalibrated**, not
+measured historical accuracy. The tree stores comparison probabilities, feature
+contributions, rejected alternatives, and provenance; tree and person pages
+explain them. Ordinary mentions do not prove life. Seal comparison remains
+human work; no numerical-age model or automatic seal matching is introduced.
 
 ## Archives
 

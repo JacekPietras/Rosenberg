@@ -3,10 +3,12 @@
 from copy import deepcopy
 import json
 import re
+import math
 from .constraints import cycle_nodes
 from .model import fingerprint, registry_keys
 from .policy import ENGINE_VERSION, POLICY_VERSION
 from .sources import input_manifest
+from .probability import parameters
 
 
 def resolve_pointer(value, pointer):
@@ -19,7 +21,7 @@ def resolve_pointer(value, pointer):
 
 
 def pack_evidence(graph):
-    result = deepcopy({key: graph[key] for key in ('nodes', 'relationships')})
+    result = deepcopy({key: graph[key] for key in ('nodes', 'relationships', 'comparisons') if key in graph})
     refs = {}
     for node in result['nodes']:
         for ref in [*(m['source'] for m in node['mentions']), *node['identitySources']]:
@@ -28,6 +30,9 @@ def pack_evidence(graph):
         for d in edge['derivations']:
             for ref in d['sources']:
                 refs[(ref['path'], ref['pointer'], ref['fingerprint'])] = ref
+    for comparison in result.get('comparisons', []):
+        for ref in comparison['sources']:
+            refs[(ref['path'], ref['pointer'], ref['fingerprint'])] = ref
     ordered = sorted(refs)
     index = {key: i for i, key in enumerate(ordered)}
     def number(ref):
@@ -39,15 +44,17 @@ def pack_evidence(graph):
     for edge in result['relationships']:
         for d in edge['derivations']:
             d['sources'] = [number(ref) for ref in d['sources']]
+    for comparison in result.get('comparisons', []):
+        comparison['sources'] = [number(ref) for ref in comparison['sources']]
     return {'sources': [refs[key] for key in ordered], **result}
 
 
 def unpack_evidence(graph):
     if 'sources' not in graph:
         return graph
-    if set(graph) != {'sources', 'nodes', 'relationships'} or not isinstance(graph['sources'], list):
+    if set(graph) not in ({'sources', 'nodes', 'relationships'}, {'sources', 'nodes', 'relationships', 'comparisons'}) or not isinstance(graph['sources'], list):
         raise ValueError('invalid reconstructed source table')
-    result = deepcopy({key: graph[key] for key in ('nodes', 'relationships')})
+    result = deepcopy({key: graph[key] for key in ('nodes', 'relationships', 'comparisons') if key in graph})
     def source(index):
         if type(index) is not int or not 0 <= index < len(graph['sources']):
             raise ValueError('invalid reconstructed source index')
@@ -59,6 +66,8 @@ def unpack_evidence(graph):
     for edge in result['relationships']:
         for d in edge['derivations']:
             d['sources'] = [source(index) for index in d['sources']]
+    for comparison in result.get('comparisons', []):
+        comparison['sources'] = [source(index) for index in comparison['sources']]
     return result
 
 
@@ -67,18 +76,19 @@ def serialize(inputs, results):
         raise ValueError('evidence views require the same engine configuration')
     registry = set(registry_keys(inputs.people))
     tree = {
-        'schema': 3, 'engine': ENGINE_VERSION, 'policy': POLICY_VERSION,
+        'schema': 4, 'engine': ENGINE_VERSION, 'policy': POLICY_VERSION,
         'configuration': results[0].configuration,
         'views': [result.view for result in results],
         'inputs': inputs.manifest, 'fingerprint': fingerprint(inputs.manifest),
         'evidence': {result.view: pack_evidence(result.evidence_graph) for result in results},
         'coverage': {result.view: {
             'unresolvedMentions': sum(d.status == 'unresolved' for d in result.decisions.values()),
-            'registryRelationships': sum(e.person in registry and e.of in registry for e in result.relationships),
+            'registryRelationships': sum(e['person'] in registry and e['of'] in registry for e in result.evidence_graph['relationships']),
             'conflicts': len(result.conflicts),
             'reconstructedPeople': len(result.evidence_graph['nodes']),
             'reconstructedRelationships': len(result.evidence_graph['relationships']),
             'contextualLinks': len(result.evidence_graph['links']),
+            'candidateComparisons': len(result.evidence_graph['comparisons']),
         } for result in results},
     }
     validate_generated(tree, inputs.people, inputs.root)
@@ -86,15 +96,17 @@ def serialize(inputs, results):
 
 
 def validate_generated(tree, people, root=None):
-    if (not isinstance(tree, dict) or tree.get('schema') != 3
+    if (not isinstance(tree, dict) or tree.get('schema') != 4
         or tree.get('engine') != ENGINE_VERSION or tree.get('policy') != POLICY_VERSION
         or tree.get('views') not in (['facts'], ['facts', 'with-guesses'])
         or not isinstance(tree.get('inputs'), dict)
-        or not {'data/people.json', 'data/places.json', 'data/names.md'} <= tree.get('inputs', {}).keys()
+        or not {'data/people.json', 'data/places.json', 'data/names.md', 'data/matching.json'} <= tree.get('inputs', {}).keys()
         or type(tree.get('configuration', {}).get('searchLimit')) is not int
         or tree['configuration']['searchLimit'] < 1
         or fingerprint(tree['inputs']) != tree.get('fingerprint')):
         raise ValueError('invalid generated tree metadata')
+    if parameters(tree['configuration'].get('probability')) != tree['configuration'].get('probability'):
+        raise ValueError('missing probability configuration')
     if not isinstance(people, list) or not people:
         raise ValueError('person registry must be a non-empty array')
     ids = [person.get('id') for person in people]
@@ -103,6 +115,8 @@ def validate_generated(tree, people, root=None):
         raise ValueError('invalid confirmed person IDs')
     if root is not None and tree['inputs'] != input_manifest(root, people):
         raise ValueError('stale build inputs; rerun reconstruction')
+    if root is not None and (root / 'data/matching.json').exists() and tree['configuration']['probability'] != parameters(json.loads((root / 'data/matching.json').read_text())):
+        raise ValueError('probability parameters changed; rerun reconstruction')
     if 'data/tree.json' in tree['inputs']:
         raise ValueError('generated tree cannot be an input to itself')
     validate_evidence(tree, {person['id']: person['name'] for person in people}, root)
@@ -141,7 +155,7 @@ def validate_evidence(metadata, registry, root=None, cache=None):
 
     for view, graph in graphs.items():
         graph = unpack_evidence(graph)
-        if set(graph) != {'nodes', 'relationships'} or not isinstance(graph['nodes'], list) or not isinstance(graph['relationships'], list):
+        if set(graph) != {'nodes', 'relationships', 'comparisons'} or not isinstance(graph['nodes'], list) or not isinstance(graph['relationships'], list):
             raise ValueError('invalid reconstructed graph')
         nodes, membership = {}, {}
         for node in graph['nodes']:
@@ -152,6 +166,8 @@ def validate_evidence(metadata, registry, root=None, cache=None):
                 or ('registry' not in node and (not key.startswith('@evidence/') or key in registry))):
                 raise ValueError('invalid reconstructed person')
             nodes[key] = node
+            if type(node.get('identityProbability')) not in (int, float) or not 0 <= node['identityProbability'] <= 1:
+                raise ValueError('invalid source identity probability')
             named = bool(node.get('registry') and registry[node['registry']] == node['name'])
             for mention in node['mentions']:
                 fact = source(mention['source'], view)
@@ -185,12 +201,15 @@ def validate_evidence(metadata, registry, root=None, cache=None):
                     or type(d.get('usesGuesses')) is not bool or not d.get('sources')
                     or view == 'facts' and d['usesGuesses']):
                     raise ValueError('invalid reconstructed derivation')
+                if (type(d.get('assertionWeight')) not in (int, float) or not 0 < d['assertionWeight'] <= 1
+                    or d.get('endpointProbability') is not None and (type(d['endpointProbability']) not in (int, float) or not 0 <= d['endpointProbability'] <= 1)):
+                    raise ValueError('invalid relationship evidence weights')
                 supported = False
                 for ref in d['sources']:
                     if '/guesses/' in ref['pointer'] and not d['usesGuesses']:
                         raise ValueError('unmarked reconstructed guess dependency')
                     fact = source(ref, view)
-                    if (fact is not None and fact.get('type') == kind
+                    if (isinstance(fact, dict) and fact.get('type') == kind
                         and fact.get('term', '') == edge.get('term', '')):
                         pair = [membership.get((ref['path'], ref['pointer'], field)) for field in ('person', 'of')]
                         supported |= pair == [left, right] if kind == 'parent' else sorted(pair, key=str) == sorted([left, right])
@@ -198,6 +217,28 @@ def validate_evidence(metadata, registry, root=None, cache=None):
                     raise ValueError('reconstructed edge has no supporting participant assignment')
         if cycle_nodes(parents):
             raise ValueError('reconstructed parentage cycle')
+        for comparison in graph['comparisons']:
+            probability, log_odds = comparison.get('probability'), comparison.get('logOdds')
+            if (comparison.get('person') not in nodes or comparison.get('candidate') not in nodes
+                or comparison.get('status') not in {'merged', 'below-threshold', 'ambiguous', 'incompatible', 'superseded'}
+                or type(probability) not in (int, float) or not 0 <= probability <= 1
+                or type(log_odds) not in (int, float) or not math.isfinite(log_odds)
+                or type(comparison.get('usesGuesses')) is not bool or not comparison.get('sources')
+                or view == 'facts' and comparison['usesGuesses']):
+                raise ValueError('invalid probability comparison')
+            expected = 1 / (1 + math.exp(-max(-700, min(700, log_odds))))
+            features = comparison.get('features', [])
+            if (not isinstance(features, list) or any(not isinstance(f.get('name'), str)
+                or type(f.get('contribution')) not in (int, float) or not math.isfinite(f['contribution']) for f in features)
+                or abs(expected - probability) > 1e-7):
+                raise ValueError('invalid probability calculation')
+            prior = metadata['configuration']['probability']['priorProbability']
+            if abs(math.log(prior / (1 - prior)) + sum(f['contribution'] for f in features) - log_odds) > 1e-6:
+                raise ValueError('invalid probability feature sum')
+            for ref in comparison['sources']:
+                source(ref, view)
+                if '/guesses/' in ref['pointer'] and not comparison['usesGuesses']:
+                    raise ValueError('unmarked probability guess dependency')
 
 
 def apply(inputs, tree):
