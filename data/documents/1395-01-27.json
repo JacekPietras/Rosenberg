@@ -18,11 +18,13 @@
         {
           "type": "parent",
           "person": "vogt_zu_Lauda",
+          "personDeceased": true,
           "of": "arnold_boxberg"
         },
         {
           "type": "parent",
           "person": "vogt_zu_Lauda",
+          "personDeceased": true,
           "of": "eberhard_jagstberg"
         },
         {

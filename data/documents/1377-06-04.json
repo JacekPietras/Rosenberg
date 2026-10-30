@@ -13,7 +13,8 @@
         {
           "type": "spouse",
           "person": "Margarethe von Erbach",
-          "of": "Engelhard von Hirschhorn"
+          "of": "Engelhard von Hirschhorn",
+          "ofDeceased": true
         }
       ]
     }

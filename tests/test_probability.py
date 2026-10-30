@@ -295,6 +295,22 @@ class ProbabilityTests(unittest.TestCase):
         self.assertEqual(4, len(alex))
         self.assertTrue(all(len(n['titles']) <= 1 for n in alex))
 
+    def test_namesake_father_and_son_in_one_passage_are_split_by_generation(self):
+        father = lambda child: {'type': 'parent', 'person': 'Alex von South', 'personTitle': ['zu North'], 'of': child}
+        brother = lambda other: {'type': 'sibling', 'person': 'Alex von South', 'of': other}
+        for explicit in ([], [{'type': 'parent', 'person': 'Alex von South', 'of': 'Alex von South'}]):
+            with self.subTest(explicit=bool(explicit)):
+                facts = [*map(father, ('Bea von South', 'Chris von South')), *map(brother, ('Bea von South', 'Chris von South')), *explicit]
+                graph = build(self.repository(facts, [])).evidence_graph
+                alex = [n for n in graph['nodes'] if n['name'] == 'Alex von South']
+                self.assertEqual(2, len(alex))
+                by_key = {n['key']: n for n in graph['nodes']}
+                siblings = {key for edge in graph['relationships'] if edge['type'] == 'sibling'
+                            for key in (edge['person'], edge['of']) if by_key[key]['name'] == 'Alex von South'}
+                parents = {edge['person'] for edge in graph['relationships'] if edge['type'] == 'parent' and by_key[edge['of']]['name'] != 'Alex von South'}
+                self.assertEqual(1, len(siblings)); self.assertEqual(1, len(parents))
+                self.assertNotEqual(siblings, parents)
+
     def test_repeated_parent_records_do_not_manufacture_same_named_coparents(self):
         inputs = self.repository([{'type': 'parent', 'person': 'Alex von South', 'of': 'c'}],
                                  [{'type': 'parent', 'person': 'Alex von South', 'of': 'c'}])

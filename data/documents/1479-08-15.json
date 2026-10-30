@@ -14,7 +14,8 @@
         {
           "type": "spouse",
           "person": "Elisabeth Wolfskelin",
-          "of": "Thomas von Rosenberg"
+          "of": "Thomas von Rosenberg",
+          "ofDeceased": true
         },
         {
           "type": "death",

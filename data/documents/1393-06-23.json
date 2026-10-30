@@ -18,7 +18,8 @@
         {
           "type": "spouse",
           "person": "Elisabeth von Erligheim",
-          "of": "vogt_zu_Lauda"
+          "of": "vogt_zu_Lauda",
+          "ofDeceased": true
         },
         "[vogt_zu_Lauda]’s Wittum included properties belonging to Boxberg.",
         "Ruprecht confirmed the Wittum arrangement established by [vogt_zu_Lauda]."

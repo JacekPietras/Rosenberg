@@ -454,8 +454,11 @@ retain alternative complete derivations; each view is validated separately.
 
 ### Reconstruction and verification
 
-Repeated participant references can be grouped in one dated source passage only
-when source distinctions and graph constraints permit it. Cross-source matching
+Repeated participant references in one dated source passage are grouped into
+the fewest people that source distinctions and graph constraints jointly allow;
+occurrences are merged only when every such grouping puts them together.
+Siblings share a generation and a parent is one generation above a child, so a
+person cannot be both parent and sibling of the same person. Cross-source matching
 uses a weighted log-odds model for all source people, including those without
 registry IDs. For compatible-name candidates:
 

@@ -11,7 +11,8 @@
         {
           "type": "spouse",
           "person": "Gute",
-          "of": "Ulrich von Rosenberg"
+          "of": "Ulrich von Rosenberg",
+          "ofDeceased": true
         },
         {
           "type": "parent",

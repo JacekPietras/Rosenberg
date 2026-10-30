@@ -1207,6 +1207,7 @@
         {
           "type": "parent",
           "person": "Arnold von Rosenberg",
+          "personDeceased": true,
           "of": "Eberhard von Rosenberg",
           "date": "1359"
         },
@@ -1390,6 +1391,7 @@
           "type": "spouse",
           "person": "Anna von Rosenberg",
           "of": "Hans Pfahl von Grünsfeld",
+          "ofDeceased": true,
           "date": "1368"
         },
         {
@@ -1497,6 +1499,7 @@
         {
           "type": "parent",
           "person": "Eberhard von Rosenberg",
+          "personDeceased": true,
           "of": "Arnold von Rosenberg",
           "ofTitle": [
             "der Junge"
@@ -2400,6 +2403,7 @@
           "type": "spouse",
           "person": "Sibylla von Rosenberg",
           "of": "Joachim von Stettenberg",
+          "ofDeceased": true,
           "date": "1530"
         },
         {
@@ -2580,6 +2584,7 @@
             "Ritter",
             "zu Boxberg"
           ],
+          "personDeceased": true,
           "of": "Osanna von Eicholzheim",
           "date": "1509"
         },
@@ -2688,6 +2693,7 @@
         {
           "type": "parent",
           "person": "Michael von Rosenberg",
+          "personDeceased": true,
           "of": "Georg von Rosenberg",
           "date": "1508"
         },

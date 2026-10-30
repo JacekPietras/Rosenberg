@@ -5,7 +5,7 @@ round, then checked together; no link can merge distinct registry anchors.
 """
 
 from collections import defaultdict
-from itertools import combinations
+from itertools import combinations, product
 import math
 import re
 
@@ -15,6 +15,26 @@ from .policy import AGE_TITLES
 from .probability import ProbabilityModel, Profile, chronology_blocked, title_category, reliability
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
+
+
+def generations_consistent(parent_edges, sibling_edges):
+    """Siblings share a generation; a parent is exactly one generation above."""
+    root, offset = {}, {}
+    def find(node):
+        root.setdefault(node, node); offset.setdefault(node, 0)
+        if root[node] != node:
+            top, value = find(root[node])
+            offset[node] += value
+            root[node] = top
+        return root[node], offset[node]
+    for (upper, lower), difference in [*((edge, 1) for edge in parent_edges), *((edge, 0) for edge in sibling_edges)]:
+        (a, x), (b, y) = find(upper), find(lower)
+        if a == b:
+            if x - y != difference:
+                return False
+        else:
+            root[a], offset[a] = b, difference + y - x
+    return True
 
 
 def reconstruct(assertions, decisions, registry, names, parameters=None, observations=()):
@@ -131,7 +151,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             # Different age designations in one passage name different people.
             if any(len(titles & AGE_TITLES) > 1 for titles in by_scope.values()):
                 return False
-        edges = []
+        edges, siblings = [], []
         for assertion in assertions:
             if assertion.original['type'] not in RELATIONS:
                 continue
@@ -140,7 +160,9 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 return False
             if assertion.original['type'] == 'parent':
                 edges.append((left, right))
-        return not cycle_nodes(edges)
+            elif assertion.original['type'] == 'sibling':
+                siblings.append((left, right))
+        return not cycle_nodes(edges) and generations_consistent(edges, siblings)
 
     def accept(proposals, reason):
         if not proposals:
@@ -238,34 +260,82 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         for handle in handles[1:]:
             parent[handle] = handles[0]
 
-    # A source's repeated participant reference supplies local context. If that
-    # passage distinguishes namesakes, leave the unqualified occurrences apart.
-    local = defaultdict(list)
+    # A source's repeated participant references supply local context. All
+    # same-name occurrences of one passage form the fewest people the
+    # constraints jointly allow; only occurrences grouped together in every
+    # such partition are merged.
+    local = defaultdict(lambda: defaultdict(list))
     for handle, mention in mentions.items():
         if not anchor([handle]) and mention.field != 'text':
-            local[(scope(mention), name(handle))].append(handle)
-    local_proposals = []
-    current_local = groups()
-    def compatible_local(handles):
-        roots = {find(h) for h in handles}
-        joined = [h for root in roots for h in current_local[root]]
-        return consistent([joined, *[group for root, group in current_local.items() if root not in roots]], 1)
-    for handles in local.values():
-        if len(handles) < 2:
-            continue
-        neighbors = defaultdict(set)
-        pairs = []
-        for left, right in combinations(handles, 2):
-            if compatible_local([left, right]):
-                pairs.append((left, right))
-                neighbors[left].add(right); neighbors[right].add(left)
-        # An unqualified occurrence compatible with conflicting namesakes must
-        # not bridge them. Qualified occurrences can still group with each other.
-        ambiguous = {h for h, choices in neighbors.items() if not compatible_local([h, *choices])}
-        for left, right in pairs:
-            if left not in ambiguous and right not in ambiguous:
-                local_proposals.append((left, right, [mentions[left].assertion.source, mentions[right].assertion.source]))
-    accept(local_proposals, 'repeated participant within one dated source passage')
+            local[scope(mention)][name(handle)].append(handle)
+
+    def partitions_of(roots, allowed, limit=500):
+        result = defaultdict(list)
+        def assign(index, blocks):
+            if sum(map(len, result.values())) >= limit:
+                return
+            if index == len(roots):
+                result[len(blocks)].append([list(block) for block in blocks])
+                return
+            root = roots[index]
+            for block in blocks:
+                if all(allowed[frozenset((member, root))] for member in block):
+                    block.append(root)
+                    assign(index + 1, blocks)
+                    block.pop()
+            blocks.append([root])
+            assign(index + 1, blocks)
+            blocks.pop()
+        assign(0, [])
+        return None if sum(map(len, result.values())) >= limit else result
+
+    def passage_partitions(name_roots, current_local, limit=2000):
+        involved = {root for roots in name_roots for root in roots}
+        others = [group for root, group in current_local.items() if root not in involved]
+        fixed = [current_local[root] for roots in name_roots if len(roots) == 1 for root in roots]
+        variable = [roots for roots in name_roots if len(roots) > 1]
+        options = []
+        for roots in variable:
+            rest = [current_local[r] for r in involved if r not in roots]
+            allowed = {frozenset((a, b)): consistent([current_local[a] + current_local[b], *others, *rest,
+                                                      *[current_local[r] for r in roots if r not in (a, b)]], 1)
+                       for a, b in combinations(roots, 2)}
+            choices = partitions_of(roots, allowed)
+            if choices is None:
+                return []
+            options.append(choices)
+        checked = 0
+        for total in range(len(variable), sum(map(len, variable)) + 1):
+            valid = []
+            for sizes in product(*[sorted(choice) for choice in options]):
+                if sum(sizes) != total:
+                    continue
+                for combination in product(*[choice[size] for choice, size in zip(options, sizes)]):
+                    checked += 1
+                    if checked > limit:
+                        return []
+                    blocks = [[h for r in block for h in current_local[r]] for partition in combination for block in partition]
+                    if consistent([*blocks, *fixed, *others], len(blocks)):
+                        valid.append([set(block) for partition in combination for block in partition])
+            if valid:
+                return valid
+        return []
+
+    for _ in range(len(mentions)):
+        current_local = groups()
+        local_proposals = []
+        for by_name in local.values():
+            name_roots = [sorted({find(h) for h in handles}) for _, handles in sorted(by_name.items())]
+            if all(len(roots) < 2 for roots in name_roots):
+                continue
+            partitions = passage_partitions(name_roots, current_local)
+            for roots in name_roots:
+                for left, right in combinations(roots, 2):
+                    if partitions and all(any({left, right} <= block for block in partition) for partition in partitions):
+                        first, second = current_local[left][0], current_local[right][0]
+                        local_proposals.append((first, second, [mentions[first].assertion.source, mentions[second].assertion.source]))
+        if not accept(local_proposals, 'repeated participant within one dated source passage'):
+            break
 
     # Only a specific source reference plus the historical date and complete
     # relationship signature can identify a repeated attestation.

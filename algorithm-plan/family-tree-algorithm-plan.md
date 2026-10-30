@@ -75,6 +75,16 @@ same name distinguished in one entry (for example `der Ältere`, `der Jüngere`
 and `der Junge` together) are different people. No chain of merges may join
 them, create self-relationships, or create ancestry cycles.
 
+Siblings share a generation and a parent is exactly one generation above a
+child. A merge that breaks this (for example someone being both father and
+brother of Hermann) is blocked.
+
+Within one passage, same-name occurrences are grouped into the fewest people
+these rules jointly allow. Occurrences are merged only if every such grouping
+puts them together; otherwise they stay unresolved. Example: a father
+"Eberhard zu Dürn" (parent of Konrad, Engelhard, Hermann) and a son "Eberhard"
+(brother of the same three) in one passage form exactly two people.
+
 ## Estimated age
 
 Each proposed identity has an estimated birth interval `[earliest, latest]`,

@@ -19,7 +19,8 @@
         {
           "type": "spouse",
           "person": "Anna von Rosenberg geb. Krantz von Geispitzheim",
-          "of": "Balthasar von Rosenberg"
+          "of": "Balthasar von Rosenberg",
+          "ofDeceased": true
         },
         "Anna von Rosenberg geb. Krantz von Geispitzheim gave agnatischen Konsens to the Vertrag über die Abtretung Boxbergs vom 24. Juli 1561",
         "Wilhelm Krantz von Geispitzheim is Vormund of Friedrich von Rosenberg",

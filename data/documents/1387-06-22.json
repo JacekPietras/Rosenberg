@@ -32,6 +32,7 @@
           "ofTitle": [
             "Ritter"
           ],
+          "ofDeceased": true,
           "term": "patruo"
         },
         "[vogt_zu_Lauda] had a wife",
@@ -53,6 +54,7 @@
           "ofTitle": [
             "Ritter"
           ],
+          "ofDeceased": true,
           "term": "consanguineos"
         },
         {
@@ -72,6 +74,7 @@
           "ofTitle": [
             "Ritter"
           ],
+          "ofDeceased": true,
           "term": "consanguineos"
         },
         {
@@ -91,6 +94,7 @@
           "ofTitle": [
             "Ritter"
           ],
+          "ofDeceased": true,
           "term": "consanguineos"
         }
       ],

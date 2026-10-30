@@ -60,11 +60,13 @@
         {
           "type": "parent",
           "person": "Agatha",
+          "personDeceased": true,
           "of": "Wilhelm Sützel von Mergentheim"
         },
         {
           "type": "parent",
           "person": "Agatha",
+          "personDeceased": true,
           "of": "Christoph Sützel von Mergentheim"
         },
         {

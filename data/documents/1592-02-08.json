@@ -16,7 +16,8 @@
         {
           "type": "spouse",
           "person": "Felicitas von Rosenberg",
-          "of": "Wolf Dietrich Rüd von Collenberg"
+          "of": "Wolf Dietrich Rüd von Collenberg",
+          "ofDeceased": true
         }
       ]
     }

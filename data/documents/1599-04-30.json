@@ -14,7 +14,8 @@
           "of": "Hans Georg von Seckendorff",
           "ofTitle": [
             "zu Sugenheim"
-          ]
+          ],
+          "ofDeceased": true
         },
         {
           "type": "parent",
@@ -22,6 +23,7 @@
           "personTitle": [
             "zu Sugenheim"
           ],
+          "personDeceased": true,
           "of": "Georg Albrecht von Seckendorff"
         },
         {
@@ -30,6 +32,7 @@
           "personTitle": [
             "zu Sugenheim"
           ],
+          "personDeceased": true,
           "of": "Philipp Ludwig von Seckendorff"
         },
         {

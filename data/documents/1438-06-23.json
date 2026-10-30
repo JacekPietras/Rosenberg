@@ -54,7 +54,8 @@
           "personTitle": [
             "der Jüngere"
           ],
-          "of": "Walther von Kronberg"
+          "of": "Walther von Kronberg",
+          "ofDeceased": true
         },
         {
           "type": "kin",

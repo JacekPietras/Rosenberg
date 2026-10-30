@@ -370,6 +370,7 @@
           "personTitle": [
             "Ritter"
           ],
+          "personDeceased": true,
           "of": "Eberhard von Rosenberg",
           "date": "1300-05-17"
         },
@@ -379,6 +380,7 @@
           "personTitle": [
             "Ritter"
           ],
+          "personDeceased": true,
           "of": "Konrad von Rosenberg",
           "date": "1300-05-17"
         },
@@ -723,6 +725,7 @@
         {
           "type": "spouse",
           "person": "Konrad von Rosenberg",
+          "personDeceased": true,
           "of": "Adelheid von Neudeck",
           "date": "1327"
         },
