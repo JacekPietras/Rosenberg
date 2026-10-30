@@ -313,10 +313,23 @@ generated tree for refresh. The output is never ingested as source evidence.
 Successful local saves advance a repository revision so the viewer can
 reverify evidence before subsequent rendering.
 
-The tree draws only explicit parent-child edges. Each marriage has its own pair
-of visual occurrences, without children attached to that pair. Several marriages
-therefore cannot form one inferred parental unit. Repeated ancestry can display
-the same person in several branches while preserving one registry identity.
+The diagram draws exactly one card for each identity, including multiple
+marriages and shared descendants. A layered graph layout replaces the former
+branch expansion, which copied people into parent branches and separate
+marriage pairs. Spouses share a generation when consistent with recorded
+ancestry; conflicting marriage alignment is routed across generations instead
+of copying identities. Every parent or spouse connector represents an existing
+edge. Children share a bus only when their complete recorded parent sets agree;
+marriage supplies no additional parent. Long connectors route around cards.
+Dense relationship networks can have crossing lines, without duplicated cards.
+
+The Elisabeth von Erligheim investigation demonstrated the distinction: all 11
+typed attestations from 1381–1395 already formed one inferred source identity,
+including the spouse and mother attestations. The old diagram rendered her twice
+and repeated her children under both parents. The layout now displays that one
+identity once. Real-source and synthetic regressions cover identity membership,
+unique cards, exact connector endpoints, multiple marriages, shared ancestry,
+generation conflicts, namesakes, and both evidence views.
 
 Tree and person pages include a relationship panel with sibling and kin edges,
 source links, derivation details, and separate labels for inferred identity and

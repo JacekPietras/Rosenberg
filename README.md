@@ -52,7 +52,8 @@ groups and contextual links across sources remain distinguishable from fixed
 registry identities. Ambiguous namesakes stay separate. The family-group
 selector opens connected families or the complete graph; source-person pages
 show original attestations. Counts describe source identities, some of which
-may later prove to be the same person. The viewer exposes source
+may later prove to be the same person. The diagram displays each identity once,
+including people with multiple spouses or shared descendants. The viewer exposes source
 links, identity uncertainty, and the available evidence modes. The local viewer
 automatically rebuilds relationships when source edits make them stale, then
 reloads and verifies the result. Its **Rebuild relationships** button also runs

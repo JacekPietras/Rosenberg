@@ -283,6 +283,25 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertIn(('vogt_zu_Durn', 'engelhard_son_of_vogt_zu_Durn'), edges)
         self.assertTrue(any(d.method == 'reviewed' for d in result.decisions.values()))
 
+    def test_real_elisabeth_spouse_and_mother_attestations_form_one_identity(self):
+        inputs = load_inputs(Path(__file__).resolve().parents[1])
+        for include_guesses in (False, True):
+            graph = build(inputs, include_guesses=include_guesses).evidence_graph
+            nodes = [node for node in graph['nodes'] if node['name'] == 'Elisabeth von Erligheim']
+            self.assertEqual(1, len(nodes))
+            elisabeth = nodes[0]
+            expected = {(a.source.path, a.source.pointer, m.field) for a in inputs.assertions
+                        if include_guesses or a.source.kind == 'facts'
+                        for m in a.mentions if m.reference == 'Elisabeth von Erligheim'}
+            actual = {(m['source']['path'], m['source']['pointer'], m['field']) for m in elisabeth['mentions']}
+            self.assertEqual(expected, actual)
+            relationships = {(edge['type'], edge['person'], edge['of']) for edge in graph['relationships']}
+            self.assertIn(('parent', elisabeth['key'], 'arnold_boxberg'), relationships)
+            self.assertIn(('parent', elisabeth['key'], 'eberhard_jagstberg'), relationships)
+            self.assertTrue(any(edge['type'] == 'spouse' and {edge['person'], edge['of']} == {elisabeth['key'], 'vogt_zu_Lauda'}
+                                for edge in graph['relationships']))
+            self.assertNotEqual(elisabeth['key'], 'else_wife_of_arnold')
+
     def test_unresolved_groups_are_alternatives_without_merging_nodes(self):
         result = build(self.inputs(facts=[relation('Alex', 'b'), relation('Alex', 'c')]))
         handles = [d.mention.handle for d in result.decisions.values() if d.mention.reference == 'Alex']
