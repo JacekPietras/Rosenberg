@@ -1,329 +1,374 @@
-# Plan: rebuild the family tree from facts and optional guesses
+# Family reconstruction specification
 
-**Later requirements:** [Probability matching](probability-matching-requirements.md)
-records the user's current direction: always include guesses with lower weight,
-match all source people using combined evidence, show global probability
-parameters, and keep generated results in `tree.json`. It supersedes conflicting
-proposals in this earlier plan.
+This document defines the required matching behavior, known implementation
+gaps, and next implementation steps. Requirements describe the target behavior;
+the current engine does not yet satisfy the chronology rules below.
 
-## Objective
+## Weight calculation convention
 
-Build an evidence graph with identity resolution, then generate the family tree
-from that graph. Resolving which person a fact describes comes before creating
-relationships between registry records.
-
-Ignore all existing relationships in `data/people.json` during reconstruction.
-Keep existing IDs as distinct identity anchors, and reconstruct relationships
-entirely from source facts and, optionally, guesses. This document is a plan;
-schema extensions described below are proposals, not currently permitted fields.
-
-## 1. Read and normalize evidence
-
-Recursively collect `facts` and, when enabled, `guesses` from books, documents,
-notes, images, and nested records under `data/`.
-
-For each assertion, retain an internal record containing:
-
-- Source file, JSON location, citation, and original assertion.
-- Whether the assertion belongs to `facts` or `guesses`.
-- Historical date or date interval, following the existing inheritance rules.
-- Participant references, titles, and deceased status.
-- Relationship, title, or death information.
-
-Follow `rules/json-formats.md` and `rules/facts.md`. In particular, book and note
-typed assertions require explicit historical dates; publication dates must not
-be inherited. Preserve the source precision and existing document intervals.
-
-Use typed assertions directly. Legacy prose remains searchable supporting
-material; extracting new formal assertions from prose is a separate review step.
-
-Normalize names using `data/names.md` and places using the existing place
-resolver. Preserve meaningful distinctions such as `Kunz` versus `Konrad` and
-`Münch von Rosenberg` versus `von Rosenberg`.
-
-Do not collapse matching names into people at this stage. Every unresolved
-occurrence starts as a separate mention.
-
-## 2. Establish identity anchors
-
-Resolve an exact, case-sensitive existing person ID first:
+Weights are additive **log-odds contributions**, not percentage points:
 
 ```text
-person: "vogt_zu_Lauda"
-    -> fixed reference to that existing person
-
-person: "Eberhard von Rosenberg"
-    -> unresolved mention with several possible identities
+L = ln(prior / (1 - prior)) + sum(eligible evidence contributions)
+P = 1 / (1 + exp(-L))
+reliability(assertion) = source factor × (guess factor if guessed, else 1)
+pair reliability = min(reliability(left), reliability(right))
+positive contribution = base weight × pair reliability × temporal decay
 ```
 
-Treat different existing IDs as distinct people. No chain of uncertain matches
-may merge `vogt_zu_Lauda` and `vogt_zu_Durn`.
+Use each underlying signal once, applying category caps and dependency confidence
+before summing. The prior is applied once per comparison, not once per assertion.
+Hard constraints govern merge eligibility separately; an ineligible merge must
+be reported as a conflict, not displayed as a calculated 0% probability.
+Storage, display, and verification rules add no weight.
 
-Existing names and titles can help retrieve candidates, but registry titles and
-dates must not become authoritative evidence without source support. Existing
-spouses and children must not participate in matching.
+[Worked calculations](weight-calculation-examples.md) illustrate the arithmetic
+and distinguish existing parameter values from proposed temporal behavior.
 
-Never derive genealogical evidence from an ID's wording: an ID containing
-`son_of` is just an identifier.
+## Evidence and output
 
-Use internal handles for registry records without IDs. A shared name is not a
-unique identifier, and IDs must not be invented solely to complete the graph.
+- Compare all source people, including those without registry IDs. A matching
+  name retrieves candidates; it does not establish identity.
+- Keep exact registry IDs fixed and distinct. ID wording supplies no evidence.
+- Read facts and lower-weight guesses under `data/`, preserving source locations,
+  historical dates, participant roles, titles, and deceased status. Follow
+  `rules/facts.md` and `rules/json-formats.md`; never use publication dates as
+  activity dates or rewrite source facts to confirm an inferred identity.
+- Always include guesses in the normal result; retain a facts-only audit view.
+  Guess dependencies and uncertainty survive every subsequent merge.
+- Keep `people.json` as the confirmed ID/name registry. Store generated identities,
+  relationships, alternatives, calculations, and parameters in `tree.json`.
+- One card per reconstructed identity. Rebuild when evidence, code, or parameters
+  change. More connections do not by themselves establish better reconstruction.
 
-## 3. Apply different rules to different titles
+Weight effect: facts in documents/images have reliability `1.0`; facts in
+books/notes `0.5`. Guesses multiply that factor by `0.45`, giving `0.45` and
+`0.225` respectively. Exact IDs are assignments, not positive scoring features;
+distinct fixed IDs prohibit merging. Matching names add `0` beyond candidate
+retrieval and the configured prior. Registry storage, graph size, and number of
+cards add `0`.
 
-Use a configurable title policy:
+## Chronology comes before positive matching
 
-| Category | Examples | Matching behavior |
-| --- | --- | --- |
-| Reviewed identity discriminator | `Vogt zu Lauda` for the relevant Eberhard | Can identify an anchor within an explicitly established scope |
-| Relative age designation | `der Jüngere`, `der Junge`, `der Ältere`, `der Alte` | Dated contextual evidence; may change or disappear |
-| Rank or status | `Ritter`, `Edelknecht`, `miles`, `armiger` | Supporting evidence; allows change and omission |
-| Territorial association | `zu Boxberg`, `zu Jagstberg` | Dated supporting evidence, with stronger rules only where established |
+Preserve ISO precision. Internally interpret partial dates as intervals and
+`diedBefore` as an exclusive bound. Keep three different kinds of evidence:
 
-For identifying designations, encode the actual reviewed rule:
-
-```text
-Within this name/context/date scope:
-    "Vogt zu Lauda" identifies vogt_zu_Lauda.
-```
-
-This supports designations that can always identify a person within the relevant
-context without assuming that an office could never have another holder.
-
-For age designations:
-
-- Preserve the source's exact distinction.
-- Matching epithets close in time support identity.
-- Opposed epithets explicitly distinguishing people in the same passage support
-  separation.
-- A later change from younger to elder is possible.
-- Missing epithets supply no negative evidence.
-
-Rank changes normally affect the score rather than reject a candidate. A first
-`Ritter` attestation does not establish the date of knighting.
-
-## 4. Build chronological constraints
-
-Represent partial dates internally as intervals while preserving their original
-precision. Maintain separate constraints for:
-
-- Death during a stated day, month, or year.
-- Death before an exclusive bound.
-- Deceased status at an attestation.
-- Explicit evidence of living activity.
-- Mere mentions, including retrospective mentions.
-
-Death excludes a match only when the new assertion requires the person to have
-been alive afterward. A widow's 1393 mention of her husband is compatible with
-his death in 1387; `data/documents/1393-06-23_2.json` illustrates this distinction.
-
-An unmarked relationship or title mention does not prove life. Until living
-activity is formally represented, chronological exclusions must be conservative.
-
-Follow the existing exclusive-bound semantics for `diedBefore`. For example,
-`1394` means before 1 January 1394. Do not substitute an attestation date for a
-death date.
-
-When date intervals overlap, reject only if no compatible chronology remains.
-Estimated deaths from `guesses` remain defeasible constraints. Conflicting
-source-supported bounds must be reported rather than silently reconciled.
-
-## 5. Generate and score identity candidates
-
-For each unresolved mention, consider compatible registry identities and
-compatible unresolved mention groups. Always retain an unresolved or possibly
-another person alternative.
-
-Apply hard exclusions first, then score the remaining candidates:
-
-| Evidence | Suggested role |
+| Evidence | Meaning |
 | --- | --- |
-| Explicit ID | Fixed assignment |
-| Reviewed identifying designation | Strong identification within its scope |
-| Distinctive, independently resolved relatives | Strong support |
-| Compatible office chronology | Strong or moderate support |
-| Repeated property or transaction continuity | Moderate support |
-| Specific associates or seal evidence | Supporting evidence |
-| Time-sensitive title agreement | Supporting evidence |
-| Place overlap | Supporting evidence |
-| Same name alone | Candidate retrieval only |
+| Exact death, death interval, deceased designation | Constrains when death occurred; an attestation of deceased status supplies an upper bound, not an exact death date. |
+| Dated living activity | Explicit participation requiring life at the historical event date, such as personal issuance, witnessing, or sealing. |
+| Ordinary or retrospective reference | Does not establish life at the document date. |
 
-Initially call the result a matching score, not a probability. Percentages become
-meaningful only after calibration against reviewed identity decisions.
+A death fact or `personDeceased`/`ofDeceased` marker alone must never set the
+identity-match probability to zero or trigger a death penalty. The marker says
+the person was already dead when referenced; it does not say they died on that
+date. A deceased participant remains eligible for matching to earlier living
+attestations and later deceased or retrospective references. Apply negative
+death evidence only to incompatible chronology, not to the presence of death
+information. Compatible death evidence is neutral or corroborating.
 
-Require sufficient evidence and a clear margin over alternatives before
-accepting an inferred assignment. Otherwise preserve competing candidates.
-Inferred assignments must retain their uncertainty and must not rewrite source
-facts into claims of certain identity.
+For example, death in 1330 and a deceased designation in 1357 are compatible.
+Deceased by 1300 and deceased by 1357 are also compatible upper bounds: the
+second does not imply survival until 1357. Neither case warrants a zero match
+probability. An unmarked mention in 1357 does not establish survival either.
 
-## 6. Use places without contaminating evidence
+Living activity must be supported by the source and attached to the correct
+participant. A sale mentioned retrospectively uses its event date, when known,
+not the date of the later reference. Property formerly held, a widow naming her
+husband, and inherited rights do not establish continued life. An unmarked title
+or relationship fact alone is not evidence of life. If a role is ambiguous,
+retain that uncertainty; do not silently classify it as active or posthumous.
 
-Reuse the place matching behavior behind
-`scripts/search_places_by_name.py --count`, with one restriction: build an
-anchor's initial place profile only from explicitly identified mentions,
-equivalent to `--direct`.
+For each proposed complete identity cluster:
 
-Otherwise every Eberhard could inherit places from all unresolved Eberhards,
-making the matching circular.
+1. Intersect all factual death constraints with factual living-activity dates.
+   Reject the merge if no chronology remains possible. For uncertain intervals,
+   reject only if every allowed date combination conflicts.
+2. A factual death upper bound followed by factual personal activity is a hard
+   conflict only when the later activity is independently established for that
+   candidate, not inferred from a same-name mention or absence of a deceased
+   marker. Rejecting such a contradictory merge is distinct from zeroing the
+   probability merely because a participant is deceased.
+   Matching names, places, titles, relatives, or many intermediate
+   records cannot compensate for it. Fixed IDs with conflicting evidence produce
+   a reported data conflict, not an automatic reassignment.
+3. Conflicting guesses supply strong negative evidence with their lower weight;
+   they cannot override a factual contradiction or erase factual evidence.
+4. Later posthumous references remain compatible with earlier death. Multiple
+   compatible death upper bounds do not prove that later records are posthumous.
 
-Improve the basic counts by:
+Represent reviewed living-activity evidence internally with event dates, source
+pointers, and participant bindings. This is required for chronology enforcement,
+not a deferred enhancement. Do not invent source JSON fields or infer activity
+with an unrestricted prose keyword rule. Missing structured evidence must be
+reported and reviewed under the repository rules before any schema/data change.
 
-- Counting independent historical events rather than repeated quotations.
-- Giving distinctive places more weight than common places.
-- Comparing places within relevant time periods.
-- Separating personal activity, property location, document issuance, and title
-  scope.
-- Distinguishing a surname's place from evidence of actual presence.
-- Leaving ambiguous place names unresolved.
+Weight effect: compatible death bounds and deceased markers contribute `0` by
+default, including a missing deceased marker. Mere compatibility earns no bonus.
+A separate corroborating death feature would require its own configured rule
+and independent evidence; it must not count the same death twice. A conflict
+involving uncertain/guessed evidence contributes a negative weight, scaled by
+the weaker reliability (`-deathConflictPenalty × pair reliability` for a fully
+incompatible guessed chronology). Partial ambiguity must not receive a full
+conflict penalty. Proven factual impossibility blocks merging outside the
+weighted sum; generic positive signals cannot cancel that constraint.
 
-Geographical distance is usually a weak signal. Property ownership does not
-establish physical presence. Place evidence used in a title rule must not be
-counted again as independent corroboration.
+## Time distance and age designations
 
-## 7. Resolve connected evidence together
+Time distance is graded evidence, separate from logical impossibility. Do not
+infer numerical ages, birth years, or a maximum lifespan from titles.
 
-Avoid a greedy algorithm that permanently merges the highest-scoring pair first.
-Solve connected groups of ambiguous mentions together using candidate
-assignments and constraints. A bounded search over the best alternatives is a
-reasonable starting implementation.
+- Holding other evidence constant, a greater gap between comparable historical
+  attestations must weaken identity support progressively. A 57-year activity
+  span needs more distinguishing evidence than a short span; it is not by itself
+  impossible.
+- Compare the complete dated history of both candidate clusters, not only their
+  closest pair of records. Intermediate matches must not reset the clock or
+  remove a penalty for the combined span. Count active events separately from
+  later references: a 1357 retrospective reference does not extend an activity
+  span to 1357.
+- Every title category decays with the distance between its own attestations:
+  age epithets, rank, office, territory, and called/born designations. Do not
+  treat accumulated titles as timeless properties. Scoped offices carry more
+  support than generic ranks at comparable distance, but can have successive
+  holders.
+- `der Jüngere` and `der Ältere` are relative, dated designations. Preserve
+  `der Junge` and `der Alte` separately. Matching age designations close in time
+  can support identity; their support weakens over decades.
+- Earlier younger → later elder is an allowed progression. Do not apply a
+  symmetric “opposed age titles” penalty to that sequence. The reverse sequence
+  warrants caution but is not automatically impossible without an explicit
+  source distinction. Missing designations are neutral.
+- When comparing the elder parent and younger child in the same early source
+  with a person active much later, evaluate both candidates. Other evidence
+  being comparable, the later activity favors the younger generation. This is
+  relative ranking evidence, not a numerical age estimate or proof of identity.
+  If death/activity already excludes the elder, that exclusion decides the
+  comparison regardless of the age-title score.
+- A relative's late activity or title must not be transferred onto the person.
+  Keep uncertainty about the identity of later attestations visible.
 
-Check each proposed solution for:
+Use interval-aware distances; broad or missing dates must not receive the same
+precision or near-date bonus as two exact nearby dates. Missing historical dates
+supply no temporal support. Explain the intervals and distance convention used.
 
-- Merging distinct anchors.
-- Self-parentage or ancestry cycles.
-- Impossible chronological combinations.
-- Violating explicit source distinctions.
-- Contradictory assignments within a source passage.
+Weight effect: title support uses `base × reliability × 2^(-gap / halfLife)`.
+Missing titles or dates contribute `0`; younger → elder contributes `0` as a
+title mismatch, not the negative `opposedAgePenalty`. An explicit contemporary
+source distinction is a merge constraint, not a title-decay calculation.
+Any reverse-progression penalty must be a separately explained, configurable
+negative contribution rather than an automatic exclusion.
 
-Use family relationships to support identity only when their other endpoints are
-independently grounded. An inferred identity must not create a relationship that
-then serves as independent proof of that same identity.
-
-Conflicting anchored evidence produces a conflict requiring review rather than
-silently overriding an ID. Preserve alternative solutions when evidence does
-not distinguish them.
-
-## 8. Generate relationships with uncertainty preserved
-
-After resolving identities, convert assertions into graph edges:
-
-- `parent`: directed parent to child.
-- `spouse`: symmetric relationship.
-- `sibling`: symmetric relationship.
-- `kin`: symmetric connection retaining the source term.
-
-Do not infer a second parent from marriage, parents from siblings, sibling
-transitivity, or a precise relationship from `Vetter`. Relationship attestation
-dates do not establish relationship start dates.
-
-Each edge retains its supporting source locations and distinguishes:
-
-1. Whether the relationship assertion is a fact or guess.
-2. Whether either endpoint required uncertain identity matching.
-
-A source-supported parent assertion with an uncertain Eberhard endpoint remains
-an uncertain graph edge. Deduplicate equivalent edges while retaining all
-supporting assertions and their dependencies.
-
-## 9. Make guesses an optional overlay
-
-Use one matching engine with two evidence policies:
+For the revised temporal model, use the complete **active-event span** `S` of
+the proposed cluster in years, not the nearest pair, for the temporal penalty:
 
 ```text
-Facts-only:
-    facts supply assertions and identity evidence
-
-Include-guesses:
-    facts + guesses supply assertions and identity evidence
-    guess-dependent conclusions remain marked
+time contribution = -S / timeDistanceScaleYears
+                  - max(0, S - clusterSpanStartYears) / clusterSpanScaleYears
 ```
 
-Guesses must not override fixed identities or make conflicting factual evidence
-disappear. If a guessed death excludes a candidate, or a guessed relationship
-identifies a participant, every dependent conclusion retains that dependency.
+Apply this once per proposed cluster comparison, never add earlier pair or
+cluster penalties again. With current scales `35`, `60`, and `20`, a 57-year
+span contributes `-57/35 = -1.629`. Intermediate records cannot reduce it.
+Posthumous references do not enlarge `S`; if fewer than two independently dated
+active events exist, this feature is `0`, not evidence of a short life.
+Title/context decay still uses the relevant historical attestations' own dates.
+For date intervals, report the possible span/contribution range; uncertainty
+must not earn an exact-date bonus or be collapsed to the most favorable date.
 
-Disabling guesses must reproduce the facts-only result deterministically.
-Uncertain source identity and guessed relationship content remain separately
-visible.
+In an otherwise comparable early parent/child choice, later verified activity
+can add `generationPreferenceWeight × reliability × dependency confidence` to
+the younger candidate, with `0` for the elder. Apply it only with an explicit
+generational distinction and verified later activity, never from name or title
+alone. This new parameter requires review/configuration before implementation;
+it is not an inferred birth date, and must not duplicate another feature encoding
+the same generational evidence. Hard death/activity conflicts still take priority.
 
-## 10. Rebuild people.json after validating the result
+## Other matching evidence
 
-Compute the complete replacement in memory before changing the file:
+Combine dated evidence rather than using a single title or place as an identity
+key. Use places/property, scoped offices, ranks and designations, same-fact
+associates, and explicit family relationships. Resolve place variants using
+`places.json`; distinguish property, residence, issuance, and title scope where
+supported. A surname place is not independent geographical support.
 
-1. Remove old relationship fields from the output records.
-2. Populate only relationships supported by the selected evidence policy.
-3. Validate references, uncertainty handling, and graph consistency.
-4. Review the resulting diff.
+Associates are deterministically recognized within one fact, not across an
+entire entry. Co-occurrence never creates kinship. Seal comparison remains human
+work; do not introduce automatic visual identity matching.
 
-Keep old relationships available only for a before/after comparison, never as
-input evidence. Preserve existing IDs, names, unrelated fields, and source data.
+Full relative names can supply limited context. Independently identified
+relatives are stronger evidence than common unresolved names. A relative's title
+belongs to that relative. Do not bootstrap certainty by matching parents through
+children and then reusing those inferred parents to confirm the children.
+Repeated feature extraction, copies of an assertion, or iterative propagation
+must not manufacture independent corroboration or change fixed source factors.
 
-The current `wife` and `children` fields cannot represent the complete result.
-Propose a documented relationship array supporting multiple spouses, siblings,
-kin terms, evidence references, and uncertainty. Update the schema and viewer
-before exporting this new structure; do not silently introduce unsupported
-fields or discard relationships that the old structure cannot represent.
+Weight effect: use the configured place-role base (`property 4`, `context 2.5`,
+`issuance 2`), title-category base (`office 8`, `rank 0.75`, `age 3`), or associate
+base (`2`), each scaled by reliability and its temporal decay. Cross-role place
+matches additionally multiply by `crossRolePlaceFactor` (`0.5`). These are current
+configuration values, not historical likelihood ratios established by research.
+An office's place cannot earn a second independent place bonus for the same
+observation. Surname-only geography and unsupported associations contribute `0`.
 
-Unresolved mentions remain visible in the evidence graph using internal handles.
-Do not force them into existing people or invent permanent IDs merely to make
-the export complete. Ambiguous name-only references must never select the first
-matching registry record.
+Family support uses the appropriate configured base: independently anchored
+relative `9`, provisionally linked relative `7.5`, unresolved full relative name
+`4`. Scale by reliability, time decay, and the confidence of any inferred link.
+Use only the strongest applicable category per relative, cap total family
+support (`16` currently), and cap any relative-name rarity adjustment separately.
+Circular support and repeated extraction add `0`; human seal review adds no
+automatic numerical contribution. Caps limit contributions, not source factors.
 
-## 11. Data improvements with the greatest value
+## Decisions and explanations
 
-These require explicit schema extensions. Current typed fact formats reject
-additional fields.
+Use one global configuration in `data/matching.json`, visible in the viewer and
+recorded with each build. Retain agreed defaults: documents/images `1.0`,
+books/notes `0.5`, additional guess factor `0.45`, compatible-name prior `0.05`,
+and merge threshold `0.85`. Source factors scale evidence, not final probability.
+Other feature weights, decay settings, span penalties, and candidate margins
+must be explicit and configurable. Hard factual conflicts are not adjustable
+penalties. Estimates remain **uncalibrated** until evaluated against reviewed
+identity decisions; a high percentage is not historical confirmation.
 
-- **Living activity assertions:** formally identify someone acting at a
-  historical date, distinct from merely being mentioned.
-- **Reviewed identity constraints:** record that two mentions are the same person
-  or different people, with evidence and scope.
-- **Stable source-entry identifiers:** preserve evidence references when arrays
-  are reordered.
-- **Shared historical event identifiers:** connect a charter, its printed
-  edition, and later quotations so they do not count as independent
-  corroboration.
-- **Structured person-place roles:** distinguish residence, property, office
-  scope, issuance, and burial.
-- **Structured transactions and associates:** expose continuity currently buried
-  in prose.
-- **Seal observations:** distinguish family arms from evidence identifying an
-  individual seal.
-- **Temporal scope for designations:** distinguish attestation on one date from
-  evidence of holding an office throughout a period.
+Apply chronology and explicit-distinction checks before scoring, and repeat
+them on every proposed complete cluster, including source-local grouping and
+transitive merges. No chain may merge distinct anchors, violate participant
+distinctions, create self-relationships, or create ancestry cycles. Evaluate
+competing candidates together; retain an unresolved alternative when evidence
+or the winning margin is insufficient. Results must not depend on input order.
 
-Existing undated title lists in `data/people.json` remain summaries, not
-substitutes for dated source attestations. Keep source assertions alongside
-their source text and citations; do not create a separate facts database.
+Explain every substantive decision with source pointers, dates/intervals,
+activity versus reference roles, positive and negative contributions, complete
+cluster span, competing candidates, and rejection reasons. Uncertain endpoint
+identities remain uncertain even when the relationship assertion is factual.
+Generate only source-stated relationships; do not infer another parent from
+marriage or kinship from business association.
 
-## 12. Implementation order
+Weight effect: `prior=0.05` gives initial log odds `-2.944`; `P=0.85` requires
+final log odds about `1.735`. Therefore roughly `4.679` net positive evidence is
+needed from that baseline. Crossing the threshold is necessary but insufficient:
+the current rival margin is `1.0` log-odds unit and cluster constraints must also
+pass. Candidate probabilities are pairwise estimates, not normalized shares
+that must sum to one. Explanations, output formatting, and component counts do
+not change any contribution.
 
-1. **Evidence reader and graph:** typed facts, dates, provenance, explicit IDs,
-   and unresolved mentions.
-2. **Conservative matching:** reviewed title rules, chronology, direct-ID place
-   profiles, and explainable scores.
-3. **Joint resolution and guesses:** alternative assignments, conflict handling,
-   and dependency tracking.
-4. **Export and viewer:** revised relationship schema, relationship replacement,
-   and uncertainty display.
+## Required regression cases
 
-The first deliverable is a read-only prototype explaining candidate matches and
-proposed relationships. Once the decisions are inspectable and reliable, the
-same engine performs the relationship rebuild.
+1. **1300 elder versus Vogt zu Dürn:** `1300-05-17.json` identifies the elder
+   father as already deceased. Later verified personal activity of the Vogt
+   (for example the 1328 sale/sealing) excludes that father from his identity.
+   The source parent assertion remains valid and its unresolved name unchanged.
+2. **1300 younger versus later activity:** compare the younger son as a separate
+   candidate. If activity through 1357 is established for the Vogt, account for
+   the full 57-year span. It favors the younger over the elder on generational
+   chronology, but does not alone identify the younger as the Vogt. The 1357
+   entries contain an issuer and a deceased namesake; their identities must be
+   established separately, not assumed from the date or shared name.
+3. **Progression:** younger in an early source and elder decades later is
+   compatible. Same-time explicit elder/younger distinctions keep people apart.
+4. **Bridge:** a chain of nearby attestations cannot hide a long combined span
+   or join a deceased person to later living activity.
+5. **Posthumous reference:** a widow's later reference to a deceased husband
+   remains compatible. A later reference without active participation must not
+   extend his activity span. An exact death followed by a later deceased marker,
+   and two compatible deceased upper bounds decades apart, must remain eligible
+   matches with no death-conflict penalty. Exercise both `personDeceased` and
+   `ofDeceased`; absence of either marker is not proof of life.
+6. **Intervals and uncertainty:** overlapping partial dates remain possible;
+   factual impossibility excludes; guessed conflict lowers support. Missing or
+   broad dates must not generate false temporal precision.
+7. **Controls:** unchanged evidence at greater time distance gives less support;
+   guesses contribute less than facts; circular family support cannot inflate
+   confidence; rivals, distinct IDs, and source distinctions remain inspectable.
 
-## 13. Acceptance checks
+Validate deterministic output, provenance, unchanged source/registry files, and
+one card per identity. Passing software tests or reducing fragmentation does
+not establish historical accuracy.
 
-- An unresolved Eberhard can match Lauda while Lauda and Dürn remain distinct.
-- A younger designation can disappear or later become elder.
-- `Edelknecht` followed by `Ritter` remains compatible.
-- Posthumous mentions remain compatible with death.
-- Explicit living activity after a firm death bound is rejected.
-- Partial dates, intervals, and exclusive death bounds preserve their semantics.
-- Repeated editions do not inflate confidence.
-- Ambiguity remains unresolved when evidence cannot distinguish candidates.
-- Disabling guesses removes every guess-dependent conclusion.
-- Changing old `people.json` relationships does not change the generated result.
-- Inferred relationships cannot provide circular identity corroboration.
-- Distinct people with the same name cannot be conflated by export or rendering.
-- Conflicting assertions remain traceable to their sources.
-- Repeated runs with the same inputs and policy produce the same result.
+Weight effect to verify: each regression must assert the sign and magnitude
+(or configured formula) of the relevant contribution, not only the final merge.
+Compatible deceased markers add `0`; greater active span increases the penalty;
+longer title gaps reduce support; younger → elder has no mismatch penalty;
+guesses scale evidence down; duplicate/circular evidence adds `0`. Impossible
+factual chronology must fail eligibility even with a high raw score.
+
+## Current implementation and known gaps
+
+The current engine reads source facts and guesses, anchors exact registry IDs,
+and compares source identities with an uncalibrated log-odds model. Global
+parameters live in `data/matching.json`; generated calculations and audit views
+live in `data/tree.json`. Source assertions and `people.json` are not rewritten.
+The viewer displays evidence, alternatives, and one card per identity.
+
+The 1300 Eberhard case exposes a serious chronology gap:
+
+- `dates.py` compares death intervals against one another, without a complete
+  death-versus-living-activity check.
+- Ordinary mentions do not prove life, but that safeguard must not prevent
+  source-supported active participation from excluding an already dead person.
+- The current symmetric opposed-age-title feature does not adequately represent
+  younger → elder progression.
+- Pairwise proximity and contextual matches can support a cluster whose full
+  chronology needs much stronger scrutiny. A combined-span penalty exists;
+  its presence alone does not establish adequate temporal behavior.
+
+Consequently, generated percentages and merges, including the 1300 deceased
+elder assigned to `vogt_zu_Durn`, require review. Passing existing checks does
+not establish compliance with the revised chronology requirements.
+
+Read-only inspection:
+
+```sh
+python3 scripts/rebuild_family_tree.py
+python3 scripts/rebuild_family_tree.py --include-guesses --explain vogt_zu_Durn
+```
+
+`--apply` writes a rebuilt tree. Rebuilding with the unchanged matcher does not
+fix the chronology flaw.
+
+Weight effect: these gaps mean current computed weights are not yet compliant
+with the revised spec. In particular, nearest-pair timing can under-penalize a
+long cluster span, and a symmetric age penalty can unfairly lower a plausible
+younger → elder match. The new generation preference is not in the current
+configuration. Do not describe the worked target calculations as current engine
+output or silently change global parameters while documenting them.
+
+## Implementation steps
+
+These changes are pending:
+
+1. **Evidence model:** distinguish dated living activity, deceased status/death
+   intervals, and ordinary/posthumous references. Bind each observation to the
+   correct participant and historical event. Preserve uncertainty and source
+   pointers; review any required source-schema extension separately.
+2. **Constraints:** extend `scripts/family_graph/dates.py` and all grouping/merge
+   paths to check death against living activity across complete clusters. Apply
+   factual conflicts as exclusions, guessed conflicts as weighted evidence, and
+   report contradictory anchored evidence.
+3. **Temporal scoring:** use complete activity spans as well as pair distances.
+   Keep later references separate from activity. Prevent bridging records from
+   concealing long spans. Specify interval/missing-date behavior and expose
+   effective temporal settings in the global configuration.
+4. **Age designations:** replace symmetric opposed-title handling with dated,
+   directional comparison. Allow younger → elder; compare early parent/child
+   candidates against later activity without inferring numerical ages.
+5. **Evidence propagation:** retain dependencies and evaluate rivals jointly.
+   Common relative names and already inferred family links must not become
+   independent proof. Repeat constraints after every proposed merge.
+6. **Export and viewer:** explain activity/reference classifications, full spans,
+   hard conflicts, temporal contributions, and unresolved alternatives. Version
+   changed semantics so stale trees rebuild.
+7. **Validation:** add the regression cases above; review the
+   1300/Vogt assignments before and after rebuilding. Preserve the parent fact,
+   sources, and registry. Run appropriate Python and viewer checks, inspect the
+   generated diff, and report unresolved evidence rather than forcing a merge.
+
+Do not lower merge thresholds or add person-specific exceptions to obtain the
+expected result.
+
+Weight effect: implement and test eligibility before changing scoring. Then
+replace temporal/age contributions using the formulas above; add any reviewed
+new parameters to the one global configuration. Preserve agreed source factors,
+prior, and merge threshold. Export each effective contribution and its evidence
+so example arithmetic can be reproduced. Verification and rebuilding add no
+confidence by themselves.
