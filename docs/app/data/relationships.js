@@ -70,7 +70,8 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
       || metadata.schema === 2 && metadata.engine === '2' && metadata.policy === '2'
       || metadata.schema === 3 && metadata.engine === '3' && metadata.policy === '2'
       || metadata.schema === 4 && metadata.engine === '4' && metadata.policy === '3'
-      || metadata.schema === 4 && metadata.engine === '5' && metadata.policy === '4';
+      || metadata.schema === 4 && metadata.engine === '5' && metadata.policy === '4'
+      || metadata.schema === 4 && metadata.engine === '6' && metadata.policy === '4';
     if (!version
       || !['facts', 'facts,with-guesses'].includes(metadata.views?.join(','))
       || !Number.isInteger(metadata.configuration?.searchLimit) || metadata.configuration.searchLimit < 1
@@ -90,7 +91,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
     if (metadata.schema >= 4) {
       if (!Object.hasOwn(metadata.inputs, 'data/matching.json')) throw new Error('Missing global probability configuration');
       const settings = metadata.configuration.probability;
-      if (!['weighted-log-odds-v1', 'weighted-log-odds-v2'].includes(settings?.model) || settings.calibrated !== false
+      if (!['weighted-log-odds-v1', 'weighted-log-odds-v2', 'weighted-log-odds-v3'].includes(settings?.model) || settings.calibrated !== false
         || !(settings.priorProbability > 0 && settings.priorProbability < settings.mergeProbability && settings.mergeProbability < 1)
         || !(settings.guessWeight > 0 && settings.guessWeight < 1)
         || Object.keys(settings.sourceWeights || {}).length !== 4

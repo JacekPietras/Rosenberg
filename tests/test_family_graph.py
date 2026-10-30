@@ -95,9 +95,13 @@ class FamilyGraphTests(unittest.TestCase):
         inputs = self.inputs(facts=[{'type': 'death', 'person': 'a', 'diedBefore': '1394'}])
         self.assertEqual('1393-12-31', death_interval(inputs.assertions[0].mentions[0])[1].isoformat())
 
-    def test_posthumous_mentions_do_not_prove_life(self):
-        result = build(self.inputs(facts=[{'type': 'death', 'person': 'a', 'diedOn': '1387'}, relation('a', 'b', 'spouse', personDeceased=True), {'type': 'title', 'person': 'a', 'personTitle': ['Ritter']}]))
+    def test_marked_posthumous_mentions_are_compatible_and_unmarked_ones_are_reported(self):
+        death = {'type': 'death', 'person': 'a', 'diedOn': '1387'}
+        result = build(self.inputs(facts=[death, relation('a', 'b', 'spouse', personDeceased=True), {'type': 'title', 'person': 'a', 'personTitle': ['Ritter'], 'personDeceased': True}]))
         self.assertFalse(result.conflicts)
+        self.assertEqual('anchored', result.relationships[0].derivations[0]['identity'])
+        result = build(self.inputs(facts=[death, relation('a', 'b', 'spouse', personDeceased=True), {'type': 'title', 'person': 'a', 'personTitle': ['Ritter']}]))
+        self.assertEqual(['unmarked mention after recorded death or impossible age'], [c['reason'] for c in result.conflicts])
         self.assertEqual('anchored', result.relationships[0].derivations[0]['identity'])
 
     def test_conflicting_factual_deaths_block_affected_edges(self):
@@ -278,7 +282,8 @@ class FamilyGraphTests(unittest.TestCase):
         death_mentions = [d for d in result.decisions.values() if d.mention.assertion.source.path == 'data/documents/1393-06-23_2.json' and d.mention.reference == 'vogt_zu_Lauda']
         self.assertTrue(death_mentions)
         self.assertTrue(all(d.identity == 'vogt_zu_Lauda' and d.method == 'anchored' for d in death_mentions))
-        self.assertFalse(result.conflicts)
+        # Unmarked later mentions of a fixed ID are reported for review, not reassigned.
+        self.assertFalse([c for c in result.conflicts if c['reason'] != 'unmarked mention after recorded death or impossible age'])
         edges = [(e.person, e.of) for e in result.relationships if e.type == 'parent']
         self.assertIn(('vogt_zu_Lauda', 'arnold_boxberg'), edges)
         self.assertIn(('vogt_zu_Durn', 'engelhard_son_of_vogt_zu_Durn'), edges)

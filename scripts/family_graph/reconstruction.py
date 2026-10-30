@@ -10,12 +10,11 @@ import math
 import re
 
 from .constraints import cycle_nodes
-from .dates import compatible_deaths, near
 from .model import fingerprint, Assertion, Mention
-from .probability import ProbabilityModel, Profile, title_category, reliability
+from .policy import AGE_TITLES
+from .probability import ProbabilityModel, Profile, chronology_blocked, title_category, reliability
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
-OPPOSED = ({'der Junge', 'der Jüngere'}, {'der Alte', 'der Ältere'})
 
 
 def reconstruct(assertions, decisions, registry, names, parameters=None, observations=()):
@@ -104,10 +103,24 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 mention.assertion.source.pointer.rsplit('/' + mention.assertion.source.kind + '/', 1)[0],
                 mention.assertion.historical_date)
 
-    def consistent(components):
+    def chronology_conflict(component):
+        # An identity whose own sources already conflict (a data conflict on a
+        # fixed ID) is not blocked again; pairwise comparisons still apply.
+        parts = defaultdict(list)
+        for h in component:
+            parts[find(h)].append(mentions[h])
+        if any(chronology_blocked(part, model.settings) for part in parts.values()):
+            return False
+        return chronology_blocked([mentions[h] for h in component], model.settings)
+
+    def consistent(components, new=None):
+        # Only proposed components are checked for chronology; unchanged
+        # identities cannot block unrelated merges.
         mapping = {h: index for index, component in enumerate(components) for h in component}
-        for component in components:
-            if len(anchor(component)) > 1 or not compatible_deaths([mentions[h] for h in component if mentions[h].assertion.source.kind == 'facts']):
+        for index, component in enumerate(components):
+            if len(anchor(component)) > 1:
+                return False
+            if (new is None or index < new) and chronology_conflict(component):
                 return False
             forms = {name(h) for h in component}
             if any(not compatible_names(a, b) for a, b in combinations(forms, 2)):
@@ -115,7 +128,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             by_scope = defaultdict(set)
             for h in component:
                 by_scope[scope(mentions[h])].update(mentions[h].titles)
-            if any(titles & OPPOSED[0] and titles & OPPOSED[1] for titles in by_scope.values()):
+            # Different age designations in one passage name different people.
+            if any(len(titles & AGE_TITLES) > 1 for titles in by_scope.values()):
                 return False
         edges = []
         for assertion in assertions:
@@ -162,9 +176,9 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             joined = sorted(h for key in component for h in current[key])
             other = [handles for key, handles in current.items() if key not in component]
             negative_pair = any(round_scores.get(tuple(sorted((a, b))), {}).get('probability', 1) < model.settings['clusterMinimumProbability']
-                                and any(f['contribution'] < 0 and f['name'] not in {'document time distance'} for f in round_scores.get(tuple(sorted((a, b))), {}).get('features', []))
+                                and any(f['contribution'] < 0 for f in round_scores.get(tuple(sorted((a, b))), {}).get('features', []))
                                 for a, b in combinations(component, 2))
-            if not negative_pair and consistent([joined, *other]):
+            if not negative_pair and consistent([joined, *other], 1):
                 candidates.append(component)
         # Different identity components can jointly create an ancestry cycle.
         # Check all proposed links in each connected source family together,
@@ -194,7 +208,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             involved = set().union(*batch)
             partitions = [[h for key in component for h in current[key]] for component in batch]
             partitions += [handles for key, handles in current.items() if key not in involved]
-            if not consistent(partitions):
+            if not consistent(partitions, len(batch)):
                 continue
             for component in batch:
                 joined = sorted(h for key in component for h in current[key])
@@ -235,7 +249,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     def compatible_local(handles):
         roots = {find(h) for h in handles}
         joined = [h for root in roots for h in current_local[root]]
-        return consistent([joined, *[group for root, group in current_local.items() if root not in roots]])
+        return consistent([joined, *[group for root, group in current_local.items() if root not in roots]], 1)
     for handles in local.values():
         if len(handles) < 2:
             continue
@@ -371,6 +385,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 if not all(compatible_names(name(a), name(b)) for a in current[left] for b in current[right]):
                     continue
                 record = model.compare(profiles[left], profiles[right])
+                blocks = record.pop('blocks')
                 if not record.pop('substantive'):
                     continue
                 pair = tuple(sorted((left, right)))
@@ -379,6 +394,9 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 comparisons[pair] = record
                 if len(anchor([*current[left], *current[right]])) > 1:
                     record.update(status='incompatible', reason='distinct confirmed registry IDs')
+                    continue
+                if blocks:
+                    record.update(status='incompatible', reason='blocked: ' + '; '.join(blocks))
                     continue
                 partial_name = any((len(name(a).split()) == 1) != (len(name(b).split()) == 1)
                                    for a in current[left] for b in current[right])

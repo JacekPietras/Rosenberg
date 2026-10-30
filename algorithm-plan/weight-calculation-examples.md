@@ -17,8 +17,10 @@ evidence = base × pair reliability × 2^(-gap / halfLife)
 age = -max(0, minAge - 60) / 10 × pair reliability; minAge > 80 is impossible
 ```
 
-The age model, rank-regression rule, and family relation factors are
-**proposed behavior**. Other values use the current configuration.
+Values use the current configuration. Dates in these examples are exact days
+(for example 1 May of each year), so a 57-year gap is exactly 57 years; with
+year-only dates the engine reads the gap permissively (end of the first year to
+start of the second).
 
 Each example starts fresh from the prior. Distinct signals are assumed
 independent, caps are not exceeded, and unlisted features contribute `0`.

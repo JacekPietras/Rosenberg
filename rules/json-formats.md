@@ -432,7 +432,7 @@ by the original fact text. A context ID cannot override a different fixed
 anchor. Occurrence uniqueness includes the text reference; several named actors
 in one fact are distinct occurrences, not duplicate assignments. An occurrence belongs to only one node per view. Source
 references supporting grouping remain in `identitySources`. Titles and dates
-summarize attestations, without turning a mention into proof of life.
+summarize attestations.
 
 Relationships contain `type`, `person`, `of`, `derivations`, and `term` for kin.
 Types are directed `parent`, and symmetric `spouse`, `sibling`, and `kin`.
@@ -465,7 +465,9 @@ probability = 1 / (1 + exp(-logOdds))
 ```
 
 All title categories decay with the distance between their actual attestation
-intervals. Prefixed offices retain office classification; different offices can
+intervals. Elder → younger age titles and Ritter → Edelknecht are penalized; the
+reverse progressions are neutral. Different age titles of one name in one
+passage are different people. Prefixed offices retain office classification; different offices can
 supply weaker shared-scope support. Cross-role place support uses
 `crossRolePlaceFactor`. Scoped offices have stronger weights than ranks. Property associations
 use names/variations from `places.json`. Same-fact associates are deterministic
@@ -478,17 +480,31 @@ cards. Repeated normalized names in a fact remain ambiguous. Context occurrences
 retain source text references rather than being rewritten as typed facts.
 
 Family evidence uses exact anchors, already linked relatives, full relative
-names, and co-parent context without creating extra edges. Features are capped
+names, and co-parent context without creating extra edges, scaled by relation
+type (parent/child and spouse above sibling above other kin). Features are capped
 by category/relative/place; repeated extraction does not manufacture support.
 Document/image source factors are always 1.0; book/note factors are 0.5.
 Guesses receive an additional 0.45 factor by default. Pairwise evidence uses the
-weaker of the two observations' effective factors. Death conflicts and formal
-participant distinctions impose large negative contributions. Factual death
-incompatibility, separate confirmed IDs, self-relationships, and ancestry cycles
-remain consistency constraints. Ordinary mentions are not living activity.
+weaker of the two observations' effective factors.
+
+A typed mention without a deceased marker means the person was alive at the
+fact's date. A death fact or deceased marker supplies a death bound. Each
+identity has an estimated birth interval: a rank, office, `der Ältere`/`der
+Alte`, parent, or spouse requires adulthood (`adultAgeYears`), and every
+unmarked mention or exact death requires an age of at most `maxAgeYears`. Partial
+dates are read permissively. A mention after death, incompatible death dates,
+or an impossible age blocks a merge when both records are document/image facts;
+otherwise it contributes `-deathConflictPenalty × pair reliability`. A merge
+that raises the minimum implied age above `ageComfortYears` contributes
+`-(minimum age - ageComfortYears) / ageScaleYears × pair reliability`; time
+distance alone is neutral. Participants of one relationship fact, separate
+confirmed IDs, self-relationships, and ancestry cycles block merges. Blocked
+comparisons have status `incompatible` and a reason starting with `blocked:`.
+A confirmed ID whose own document facts conflict is reported for review and is
+not reassigned.
 
 The configuration defines the compatible-name prior (initially 0.05), merge
-threshold (0.85), reciprocal log-odds margin, temporal penalties, cluster checks,
+threshold (0.85), reciprocal log-odds margin, age assumptions, cluster checks,
 and maximum rounds. Capped full-relative-name frequency adjustments use the frozen
 factual `matchingBackground`, add-one smoothing, and configurable rarity weight,
 maximum, and reference frequency. This is source representation, not population
@@ -498,8 +514,7 @@ carry their dependencies and confidence into later rounds. Only accepted links
 reduce cluster confidence; rejected internal pairs do not. Same-named repeated
 parents are not co-parent evidence. Omitted surnames require family or identifying
 title support, and co-parent support retains child-identity provenance. The algorithm's own
-conclusions are not independent evidence. No age model or seal-image matching is
-used. These probabilities are **uncalibrated estimates**.
+conclusions are not independent evidence. No seal-image matching is used. These probabilities are **uncalibrated estimates**.
 
 Each comparison contains `person`, `candidate` (final node keys), original
 `mentions` handles, `iteration`, `probability`, `logOdds`, `features` (named
@@ -544,13 +559,15 @@ timestamps, reports, review queues, or separate facts database are introduced.
 ## Matching JSON
 
 `data/matching.json` is the authoritative global configuration for the weighted
-identity model. It contains `model: "weighted-log-odds-v2"`, `calibrated: false`,
+identity model. It contains `model: "weighted-log-odds-v3"`, `calibrated: false`,
 `priorProbability`, `mergeProbability`, `ambiguityLogOddsMargin`,
-`clusterMinimumProbability`, `guessWeight`, `sourceWeights`, document/time-span
-scales, title weights and half-lives, place weights and half-life, cross-role
-place factor, relative-name rarity weight/cap/reference frequency, associate
-weights/cap/half-life, family weights/cap, age-opposition penalty/half-life,
-death and explicit-distinction penalties, and `maxRounds`.
+`clusterMinimumProbability`, `guessWeight`, `sourceWeights`, age assumptions
+(`adultAgeYears`, `maxAgeYears`, `ageComfortYears`, `ageScaleYears`), title
+weights and half-lives, place weights and half-life, cross-role place factor,
+relative-name rarity weight/cap/reference frequency, associate
+weights/cap/half-life, family weights, relation factors, cap and half-life,
+elder-before-younger and Ritter-before-Edelknecht penalties, death conflict
+penalty, and `maxRounds`.
 
 Use the existing file's exact keys; unknown/missing keys, non-finite or
 non-positive values, invalid probability ranges, and non-integer iteration

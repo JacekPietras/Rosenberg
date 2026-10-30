@@ -1,8 +1,7 @@
 # Family reconstruction specification
 
-This document defines the required matching behavior, known implementation
-gaps, and next implementation steps. Requirements describe the target behavior;
-the current engine does not yet satisfy them.
+This document defines the matching behavior implemented by engine 6
+(`weighted-log-odds-v3`).
 
 ## Weight calculation convention
 
@@ -48,7 +47,7 @@ A **block** makes a merge ineligible regardless of positive evidence. A
 | Mention after death | Block | Penalty |
 | Incompatible death dates | Block | Penalty |
 | Impossible age | Block | Penalty |
-| Explicit distinction | Block (any fact) | Penalty (guess) |
+| Explicit distinction | Block | Block |
 
 ### Death
 
@@ -100,16 +99,19 @@ For a proposed identity:
 2. Otherwise compute the minimum age the identity must have at its last unmarked
    mention: `minAge = last mention - latest birth`. Use the most permissive
    reading of partial dates.
-3. Age contribution = `-max(0, minAge - ageComfortYears) / ageScaleYears ×
-   pair reliability`, using the records that set the latest birth and the last
-   mention.
+3. Age penalty = `max(0, minAge - ageComfortYears) / ageScaleYears ×
+   reliability`, taking the strongest value over reliability levels (each level
+   uses records of that reliability or higher).
+4. A comparison contributes only the increase of the merged identity's penalty
+   over the larger penalty of its two parts, so years already accepted inside
+   one identity are not charged again.
 
 Mentions marked deceased do not extend the last mention. Time distance itself
 adds no penalty; long gaps lower the score only through the age contribution and
 through the fading of title, place, associate, and family evidence.
 
 Example: someone called `der Ältere` in 1300 and mentioned alive in 1357 must be
-at least 73 in 1357 (`-1.3`). A `der Jüngere` from 1300 has no adult constraint
+at least 72 in 1357 (`-1.2`; end of 1300 to start of 1357). A `der Jüngere` from 1300 has no adult constraint
 and needs only age 57 (`0`). This favors the younger candidate without
 inventing a birth year.
 
@@ -151,7 +153,11 @@ inventing a birth year.
 | --- | --- |
 | Registry ID | 9 |
 | Linked reconstructed identity | 7.5 × link confidence |
-| Unresolved full name | 4 |
+| Unresolved full spouse name | 9 |
+| Other unresolved full name | 4 |
+
+An unresolved spouse pairs two families' names, so it is more distinctive than
+a relative's name that repeats across generations.
 
 | Relation | Factor |
 | --- | --- |
@@ -206,51 +212,23 @@ repeated extraction or iteration adds `0`.
 Each regression asserts the sign and magnitude of the relevant contribution,
 not only the final merge.
 
-## Current implementation and known gaps
+## Implementation status
 
-The engine reads facts and guesses, anchors registry IDs, and scores with the
-log-odds model. Parameters live in `data/matching.json`; output in
-`data/tree.json`.
+Implemented in `scripts/family_graph/` (`probability.py`, `reconstruction.py`,
+`graph.py`) with the configuration in `data/matching.json`. Regression tests are
+in `tests/test_probability.py` and `tests/test_family_graph.py`.
 
-Gaps against this specification:
-
-- `dates.py` compares death bounds only with other death bounds; unmarked
-  mentions are not treated as alive.
-- Explicit distinctions are a `-20 × reliability` penalty, not a block.
-- Time is penalized by nearest-pair distance and combined span; this is to be
-  replaced by the age model.
-- No age model.
-- The opposed age-title penalty is symmetric.
-- No rank-regression rule.
-- Family weights ignore the relation type.
-- Family decay borrows `timeDistanceScaleYears` as its half-life.
-- `rules/json-formats.md` still says an unmarked mention does not establish life
-  and describes the old algorithm.
-
-Generated merges, including the 1300 deceased elder assigned to `vogt_zu_Durn`,
-require review.
+- The 1300 deceased elder is no longer part of `vogt_zu_Durn`.
+- Proposed merges are blocked for impossible age, mention after recorded death,
+  and explicit distinctions; the viewer shows them as blocked.
+- A confirmed ID whose own document facts conflict is reported as `REVIEW`
+  during rebuild. Currently: `vogt_zu_Lauda` (died before 23 June 1387) is
+  named without a deceased marker as father in `1395-01-27.json`.
 
 ```sh
 python3 scripts/rebuild_family_tree.py
 python3 scripts/rebuild_family_tree.py --include-guesses --explain vogt_zu_Durn
 ```
-
-## Implementation steps
-
-1. **Death and distinctions:** treat unmarked mentions as alive; apply the
-   block/penalty table across complete identities; make distinctions blocks.
-2. **Age model:** birth intervals, impossible-age checks, and the age
-   contribution. Remove the time-distance and combined-span terms.
-3. **Titles:** directional age-title penalty, rank regression.
-4. **Family:** relation factors and `familyHalfLifeYears`.
-5. **Configuration:** add `adultAgeYears`, `maxAgeYears`, `ageComfortYears`,
-   `ageScaleYears`, `rankRegressionPenalty`, `familyHalfLifeYears`, relation
-   factors; remove `timeDistanceScaleYears`, `clusterSpanStartYears`,
-   `clusterSpanScaleYears`. Version the model so stale trees rebuild.
-6. **Rules and viewer:** update `rules/json-formats.md`; show birth intervals,
-   minimum ages, blocks, and rivals.
-7. **Validation:** add the regression cases; review the 1300/Vogt assignments
-   before and after rebuilding; inspect the generated diff.
 
 Do not lower merge thresholds or add person-specific exceptions to obtain an
 expected result.

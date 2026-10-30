@@ -5,6 +5,7 @@ from .constraints import cycle_edges, cycle_nodes
 from .dates import compatible_deaths
 from .model import BuildResult, Candidate, IdentityDecision, Relationship, fingerprint
 from .names import Names
+from .probability import chronology_blocked, parameters
 from .policy import OFFICE_RULES, SEARCH_LIMIT
 from .resolve import resolve
 from .scoring import anchor_profiles, make_candidates
@@ -23,6 +24,9 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
         if not compatible_deaths(factual):
             blocked.add(identity)
             conflicts.append({'reason': 'conflicting factual death constraints', 'identities': [identity],
+                              'sources': [mention.assertion.source.export() for mention in factual]})
+        elif chronology_blocked(factual, parameters(inputs.matching or None)):
+            conflicts.append({'reason': 'unmarked mention after recorded death or impossible age', 'identities': [identity],
                               'sources': [mention.assertion.source.export() for mention in factual]})
         elif not compatible_deaths(observations):
             # Keep guessed death evidence available to the weighted model.
@@ -112,7 +116,7 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
         alternatives.append({'relationships': removed})
         edges = [edge for edge in edges if edge not in removed]
     omitted = sum(edge.person not in registry or edge.of not in registry for edge in edges)
-    diagnostics = ['Ordinary mentions do not prove life; structured living-activity assertions are unavailable.',
+    diagnostics = ['A typed mention without a deceased marker means the person was alive at its date.',
                    'Repeated features are capped by category; document/image source factors remain 1.0.',
                    'Prose and synthetic seal descriptions do not generate relationships.',
                    'Identity probabilities are model estimates, not calibrated historical accuracy.']
@@ -129,6 +133,5 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
                 decisions[handle].candidates.append(Candidate(group, [{'name': 'compatible unresolved occurrences; no identity merge', 'score': 0}]))
     evidence = reconstruct(usable, decisions, registry, names, parameters=inputs.matching or None,
                            observations=[o for o in inputs.observations if include_guesses or o.source.kind == 'facts'])
-    from .probability import parameters
     return BuildResult(view, decisions, edges, conflicts, diagnostics, alternatives, omitted, dict(provisional_groups),
                        {'searchLimit': search_limit, 'probability': parameters(inputs.matching or None)}, evidence)

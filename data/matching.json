@@ -1,5 +1,5 @@
 {
-  "model": "weighted-log-odds-v2",
+  "model": "weighted-log-odds-v3",
   "calibrated": false,
   "priorProbability": 0.05,
   "mergeProbability": 0.85,
@@ -12,9 +12,10 @@
     "books": 0.5,
     "notes": 0.5
   },
-  "timeDistanceScaleYears": 35.0,
-  "clusterSpanStartYears": 60.0,
-  "clusterSpanScaleYears": 20.0,
+  "adultAgeYears": 16.0,
+  "maxAgeYears": 80.0,
+  "ageComfortYears": 60.0,
+  "ageScaleYears": 10.0,
   "titleWeights": {
     "office": 8.0,
     "designation": 6.0,
@@ -47,13 +48,19 @@
     "name": 4.0,
     "spouse": 9.0
   },
+  "familyRelationFactors": {
+    "parent": 1.0,
+    "spouse": 1.0,
+    "sibling": 0.8,
+    "kin": 0.5
+  },
   "familyMaxWeight": 16.0,
+  "familyHalfLifeYears": 35.0,
   "relativeRarityWeight": 1.0,
   "relativeRarityMaxWeight": 1.5,
   "relativeRarityReferenceFrequency": 0.1,
   "opposedAgePenalty": 5.0,
-  "opposedAgeHalfLifeYears": 10.0,
+  "rankRegressionPenalty": 1.0,
   "deathConflictPenalty": 20.0,
-  "distinctPenalty": 20.0,
   "maxRounds": 12
 }

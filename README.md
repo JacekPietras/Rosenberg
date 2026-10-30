@@ -84,8 +84,10 @@ panel and return when **show kins** is enabled. The initial merge threshold is 8
 competing-candidate and cluster checks. Estimates are **uncalibrated**, not
 measured historical accuracy. The tree stores comparison probabilities, feature
 contributions, rejected alternatives, and provenance; tree and person pages
-explain them. Ordinary mentions do not prove life. Seal comparison remains
-human work; no numerical-age model or automatic seal matching is introduced.
+explain them. A typed mention without a deceased marker means the person was
+alive then; an estimated birth interval derived from titles, relationships, and
+deaths limits plausible ages. Seal comparison remains human work; no automatic
+seal matching is introduced.
 
 ## Archives
 

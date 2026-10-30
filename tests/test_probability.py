@@ -67,21 +67,82 @@ class ProbabilityTests(unittest.TestCase):
                 feature = next(f for f in comparison['features'] if 'office title' in f['name'])
                 self.assertAlmostEqual(8 * source_factor * guess_factor, feature['contribution'])
 
-    def test_conflicting_deaths_drastically_reduce_probability(self):
+    def person(self, *facts, date='1393', category='documents', kind='facts'):
+        document = {kind: [{**fact, 'date': date} for fact in facts]}
+        mentions = [m for _, a in walk_assertions(document, f'data/{category}/{date}.json') for m in a.mentions
+                    if m.reference == 'Alex von South']
+        profile = Profile([m.handle for m in mentions], mentions)
+        for mention in mentions:
+            profile.refs[mention.assertion.source.key] = mention.assertion.source
+            for title in mention.titles:
+                profile.titles.setdefault(title_category(title), []).append((mention.assertion.source, mention.assertion.bounds))
+        return profile
+
+    def feature(self, result, name):
+        return sum(f['contribution'] for f in result['features'] if name in f['name'])
+
+    def test_incompatible_document_deaths_block_and_weaker_sources_are_penalized(self):
         comparison = self.model.compare(self.profile(death='1390'), self.profile(death='1391'))
-        self.assertLess(comparison['probability'], 1e-8)
-        guessed = self.model.compare(self.profile(death='1390'), self.profile(death='1391', kind='guesses'))
-        self.assertGreater(guessed['probability'], comparison['probability'])
-        self.assertLess(guessed['probability'], .001)
+        self.assertEqual(['incompatible death dates'], comparison['blocks'])
+        book = self.model.compare(self.profile(death='1390'), self.profile(death='1391', category='books'))
+        self.assertEqual([], book['blocks'])
+        self.assertAlmostEqual(-20 * .5, self.feature(book, 'incompatible death dates'))
+        guessed = self.model.compare(self.profile(death='1390'), self.profile(death='1391', category='books', kind='guesses'))
+        self.assertAlmostEqual(-20 * .225, self.feature(guessed, 'incompatible death dates'))
 
-    def test_a_later_ordinary_attestation_is_not_a_death_conflict(self):
-        result = self.model.compare(self.profile(death='1390'), self.profile('Ritter', date='1400'))
+    def test_unmarked_mention_after_death_is_a_different_person(self):
+        dead = self.person({'type': 'death', 'person': 'Alex von South', 'diedBefore': '1300'}, date='1300')
+        later = {'type': 'title', 'person': 'Alex von South', 'personTitle': ['Vogt zu North']}
+        self.assertEqual(['mention after recorded death'], self.model.compare(dead, self.person(later, date='1328'))['blocks'])
+        guessed = self.model.compare(dead, self.person(later, date='1328', category='books', kind='guesses'))
+        self.assertEqual([], guessed['blocks'])
+        self.assertAlmostEqual(-20 * .225, self.feature(guessed, 'mention after recorded death'))
+        marked = self.model.compare(dead, self.person({**later, 'personDeceased': True}, date='1328'))
+        self.assertEqual([], marked['blocks'])
+        self.assertFalse(any('death' in f['name'] for f in marked['features']))
+
+    def test_compatible_deceased_bounds_and_earlier_life_are_neutral(self):
+        widow = lambda: {'type': 'spouse', 'person': 'Bea', 'of': 'Alex von South', 'ofDeceased': True}
+        first, second = self.person(widow(), date='1300'), self.person(widow(), date='1357')
+        result = self.model.compare(first, second)
+        self.assertEqual([], result['blocks'])
         self.assertFalse(any('death' in f['name'] for f in result['features']))
+        earlier = self.person({'type': 'title', 'person': 'Alex von South', 'personTitle': ['Ritter']}, date='1290')
+        self.assertEqual([], self.model.compare(earlier, first)['blocks'])
 
-    def test_more_time_distance_lowers_probability_without_an_age_model(self):
-        near = self.model.compare(self.profile(), self.profile(date='1394'))
-        far = self.model.compare(self.profile(), self.profile(date='1494'))
-        self.assertGreater(near['probability'], far['probability'])
+    def test_time_distance_counts_only_through_implied_age(self):
+        office = lambda: {'type': 'title', 'person': 'Alex von South', 'personTitle': ['Vogt zu North']}
+        first = self.person(office(), date='1300')
+        self.assertEqual(0, self.feature(self.model.compare(first, self.person(office(), date='1315')), 'age:'))
+        # Year precision is read permissively: end of 1300 to start of 1357.
+        result = self.model.compare(first, self.person(office(), date='1357'))
+        self.assertAlmostEqual(-1.2, self.feature(result, 'age:'), places=2)
+        self.assertEqual([], result['blocks'])
+        self.assertTrue(self.model.compare(first, self.person(office(), date='1375'))['blocks'][0].startswith('impossible age'))
+        book = self.model.compare(first, self.person(office(), date='1375', category='books'))
+        self.assertAlmostEqual(-20 * .5, self.feature(book, 'age:'))
+
+    def test_later_activity_favors_the_younger_generation(self):
+        parent = {'type': 'parent', 'person': 'Alex von South', 'personTitle': ['der Ältere'], 'of': 'Alex von South', 'ofTitle': ['der Jüngere']}
+        document = {'facts': [{**parent, 'date': '1300'}]}
+        elder, younger = next(walk_assertions(document, 'data/documents/1300.json'))[1].mentions
+        later = self.person({'type': 'title', 'person': 'Alex von South', 'personTitle': ['der Ältere']}, date='1357')
+        scores = {}
+        for mention in (elder, younger):
+            profile = Profile([mention.handle], [mention])
+            profile.titles = {title_category(t): [(mention.assertion.source, mention.assertion.bounds)] for t in mention.titles}
+            scores[mention.field] = self.model.compare(profile, later)
+        self.assertAlmostEqual(-1.2, self.feature(scores['person'], 'age:'), places=2)
+        self.assertEqual(0, self.feature(scores['of'], 'age:'))
+        self.assertEqual(0, self.feature(scores['of'], 'elder title before younger'))
+        self.assertGreater(scores['of']['logOdds'] - scores['person']['logOdds'], DEFAULTS['ambiguityLogOddsMargin'])
+
+    def test_title_regressions_are_directional(self):
+        title = lambda value, date: self.person({'type': 'title', 'person': 'Alex von South', 'personTitle': [value]}, date=date)
+        self.assertEqual(0, self.feature(self.model.compare(title('der Jüngere', '1300'), title('der Ältere', '1330')), 'before'))
+        self.assertEqual(-DEFAULTS['opposedAgePenalty'], self.feature(self.model.compare(title('der Ältere', '1300'), title('der Jüngere', '1330')), 'elder title before younger'))
+        self.assertEqual(0, self.feature(self.model.compare(title('Edelknecht', '1300'), title('Ritter', '1330')), 'before'))
+        self.assertEqual(-DEFAULTS['rankRegressionPenalty'], self.feature(self.model.compare(title('Ritter', '1300'), title('Edelknecht', '1330')), 'Ritter before Edelknecht'))
 
     def test_names_and_places_are_recognized_without_surname_double_counting(self):
         self.assertEqual({'alex von south', 'bea von north'}, self.model.person_names('Alex von South sold property at North to Bea von North.'))
@@ -224,15 +285,15 @@ class ProbabilityTests(unittest.TestCase):
         self.assertTrue(any(n['name'] == 'Alex von South' and not n.get('registry') for n in graph['nodes']))
         self.assertTrue(any('omitted surname' in c['reason'] for c in graph['comparisons']))
 
-    def test_local_namesake_conflict_keeps_qualified_groups_and_leaves_bare_reference_open(self):
+    def test_different_age_titles_in_one_passage_are_different_people(self):
         facts = [{'type': 'parent', 'person': 'Alex von South', 'personTitle': [age], 'of': child}
                  for age, child in [('der Junge', 'Bea'), ('der Jüngere', 'Chris'), ('der Alte', 'Dora')]]
         facts.append({'type': 'parent', 'person': 'Alex von South', 'of': 'Eve'})
         inputs = self.repository(facts, [])
         graph = build(inputs).evidence_graph
         alex = [n for n in graph['nodes'] if n['name'] == 'Alex von South']
-        self.assertEqual(3, len(alex))
-        self.assertTrue(any(set(n['titles']) == {'der Junge', 'der Jüngere'} and len(n['mentions']) == 2 for n in alex))
+        self.assertEqual(4, len(alex))
+        self.assertTrue(all(len(n['titles']) <= 1 for n in alex))
 
     def test_repeated_parent_records_do_not_manufacture_same_named_coparents(self):
         inputs = self.repository([{'type': 'parent', 'person': 'Alex von South', 'of': 'c'}],
@@ -270,13 +331,13 @@ class ProbabilityTests(unittest.TestCase):
         self.assertTrue(any(c['status'] == 'merged' and c['probability'] >= DEFAULTS['mergeProbability'] for c in graph['comparisons']))
         self.assertTrue(any('property place' in feature['name'] for c in graph['comparisons'] for feature in c['features']))
 
-    def test_formal_distinction_reduces_probability_and_prevents_merge(self):
+    def test_formal_distinction_blocks_merge(self):
         parents = [{'type': 'parent', 'person': 'Alex von South', 'of': 'Alex von South',
                     'personTitle': ['Vogt zu North'], 'ofTitle': ['Vogt zu North']}]
         inputs = self.repository(parents, [])
         graph = build(inputs).evidence_graph
         self.assertEqual(2, len(graph['nodes']))
-        self.assertTrue(any(c['probability'] < .001 and any('distinct' in f['name'] for f in c['features']) for c in graph['comparisons']))
+        self.assertTrue(any(c['status'] == 'incompatible' and 'explicitly distinct' in c['reason'] for c in graph['comparisons']))
 
     def test_associates_require_cooccurrence_in_one_fact(self):
         relation = lambda child: {'type': 'parent', 'person': 'Alex von South', 'personTitle': ['der Jüngere'], 'of': child}
