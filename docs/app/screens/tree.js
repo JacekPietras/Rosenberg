@@ -1,8 +1,9 @@
 import { buildRelationshipGraph, focusFamilyGraph, resolveEvidencePointer } from '../data/relationships.js?v=7';
 import { relationshipControls } from '../rendering/relationships.js?v=7';
 import { factText, factPersonMatch, factDate } from '../rendering/facts.js?v=6';
-import { formatDate, dateSortValue } from '../rendering/dates.js';
-import { documentNavigationUrl } from '../rendering/navigation.js';
+import { renderFactsView } from '../components/facts_view.js?v=5';
+import { createMarkupRenderer } from '../rendering/markup.js';
+import { dateSortValue } from '../rendering/dates.js';
 import { layoutFamilyGraph } from '../rendering/family-layout.js?v=3';
 
 function svgEscape(value) {
@@ -15,10 +16,10 @@ function regexEscape(value) {
 
 function personFacts(person, documentRecords, people) {
   const facts = [];
-  const add = (fact, date, path, pointer) => {
+  const add = (fact, date, pointer) => {
     if (fact == null || pointer.includes('/guesses/')) return;
     const text = factText(fact, people).trim();
-    if (text) facts.push({ text, date: factDate(fact, date), path, pointer });
+    if (text) facts.push({ ...(typeof fact === 'object' ? fact : { text: fact }), date: factDate(fact, date) });
   };
   if (person.reconstruction) {
     const documents = new Map(documentRecords);
@@ -28,7 +29,7 @@ function personFacts(person, documentRecords, people) {
       if (seen.has(key)) continue;
       seen.add(key);
       const doc = documents.get(source.path);
-      if (doc) add(resolveEvidencePointer(doc, source.pointer), date, source.path, source.pointer);
+      if (doc) add(resolveEvidencePointer(doc, source.pointer), date, source.pointer);
     }
   } else {
     for (const [path, doc] of documentRecords) {
@@ -40,7 +41,7 @@ function personFacts(person, documentRecords, people) {
           const next = `${pointer}/${key.replaceAll('~', '~0').replaceAll('/', '~1')}`;
           if (key === 'facts') {
             (Array.isArray(child) ? child : []).forEach((fact, index) => {
-              if (factPersonMatch(fact, person.id || person.name, people) === 'direct') add(fact, date, path, `${next}/${index}`);
+              if (factPersonMatch(fact, person.id || person.name, people) === 'direct') add(fact, date, `${next}/${index}`);
             });
           } else if (key !== 'guesses') visit(child, date, next);
         });
@@ -51,7 +52,7 @@ function personFacts(person, documentRecords, people) {
   return facts.sort((a, b) => dateSortValue(a.date) - dateSortValue(b.date));
 }
 
-export function renderPeopleTree(people = [], documents = [], { graph, focus, showKins = false } = {}) {
+export function renderPeopleTree(people = [], documents = [], { graph, focus, showKins = false, inlineMarkup = createMarkupRenderer({ state: { people } }).inlineMarkup } = {}) {
   graph ||= buildRelationshipGraph(Array.isArray(people) ? people : []);
   graph = focusFamilyGraph(graph, focus);
   const records = graph.records.filter((person) => person?.name);
@@ -127,7 +128,7 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, sh
   const factsTemplates = [];
   const nodes = cards.map(({ person, x, y }, index) => {
     const facts = personFacts(person, documentRecords, people);
-    factsTemplates.push(`<template data-tree-facts="${index}"><h3>${svgEscape(person.name)}</h3>${facts.length ? `<ul>${facts.map(({ text, date, path, pointer }) => `<li><time>${svgEscape(formatDate(date) || 'Undated')}</time><p>${svgEscape(text)}</p>${path ? `<a href="${svgEscape(documentNavigationUrl(path, Number(pointer.match(/\/entries\/(\d+)/)?.[1] || 0)))}">${svgEscape(path)}#${svgEscape(pointer)}</a>` : ''}</li>`).join('')}</ul>` : '<p class="status">No recorded facts for this person.</p>'}</template>`);
+    factsTemplates.push(`<template data-tree-facts="${index}">${facts.length ? renderFactsView(facts, { people, inlineMarkup }) : '<p class="status">No recorded facts for this person.</p>'}</template>`);
     const nodeHeight = nodeHeightFor(person);
     const text = personLines(person).map((line, index) => `<tspan class="${line.name ? 'people-tree-name' : 'people-tree-detail'}" x="${x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line.text)}</tspan>`).join('');
     const href = `?person=${encodeURIComponent(person.id || (person._evidence ? person._treeKey : person.name))}`;
@@ -150,36 +151,21 @@ export function setupPeopleTreeZoom(root = document) {
   const panel = wrapper.querySelector('.people-tree-facts');
   const templates = [...wrapper.querySelectorAll('template[data-tree-facts]')];
   let activeNode = null;
-  let hideTimer;
   const hideFacts = () => {
-    clearTimeout(hideTimer);
     activeNode?.removeAttribute('aria-describedby');
     activeNode = null;
     panel.hidden = true;
     highlightPerson(null);
   };
-  const scheduleHide = () => {
-    clearTimeout(hideTimer);
-    hideTimer = setTimeout(() => {
-      if (!panel.matches(':hover') && !panel.contains(document.activeElement)
-        && !activeNode?.matches(':hover') && activeNode !== document.activeElement) hideFacts();
-    }, 180);
-  };
   const showFacts = (node) => {
-    clearTimeout(hideTimer);
+    highlightPerson(node);
     if (node === activeNode) return;
     activeNode?.removeAttribute('aria-describedby');
     activeNode = node;
-    highlightPerson(node);
     panel.replaceChildren(templates.find((template) => template.dataset.treeFacts === node.dataset.treeFacts).content.cloneNode(true));
     panel.hidden = false;
     panel.scrollTop = 0;
     node.setAttribute('aria-describedby', panel.id);
-    const bounds = wrapper.getBoundingClientRect();
-    const card = node.getBoundingClientRect();
-    const left = card.right - bounds.left + 10;
-    panel.style.left = `${Math.max(0, Math.min(left + panel.offsetWidth <= bounds.width ? left : card.left - bounds.left - panel.offsetWidth - 10, bounds.width - panel.offsetWidth))}px`;
-    panel.style.top = `${Math.max(0, Math.min(card.top - bounds.top, bounds.height - panel.offsetHeight))}px`;
   };
   svg.addEventListener('pointerover', (event) => {
     const node = event.target.closest('.people-tree-person-link');
@@ -187,19 +173,15 @@ export function setupPeopleTreeZoom(root = document) {
   });
   svg.addEventListener('pointerout', (event) => {
     const node = event.target.closest('.people-tree-person-link');
-    if (node && !node.contains(event.relatedTarget)) scheduleHide();
+    if (node && !node.contains(event.relatedTarget)) highlightPerson(null);
   });
   svg.addEventListener('focusin', (event) => {
     const node = event.target.closest('.people-tree-person-link');
     if (node) showFacts(node);
   });
-  wrapper.addEventListener('focusout', scheduleHide);
-  panel.addEventListener('pointerenter', () => clearTimeout(hideTimer));
-  panel.addEventListener('pointerleave', scheduleHide);
   wrapper.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') hideFacts();
   });
-  wrapper.querySelector('.people-tree').addEventListener('scroll', hideFacts);
   const [viewWidth, viewHeight] = svg.getAttribute('viewBox').split(/\s+/).slice(2).map(Number);
   const viewport = wrapper.querySelector('.people-tree');
   let scale = 1;

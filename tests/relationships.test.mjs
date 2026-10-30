@@ -67,7 +67,7 @@ test('generated edges are excluded until the complete build is verified', async 
   assert.equal(graph.edges.length, 1);
   assert.equal(graph.reverse.get('c')[0].person, 'a');
   assert.doesNotMatch(renderPeopleTree(data.people, data.documents, { graph }), /Reconstructed relationships/);
-  assert.match(renderPeopleTree(data.people, data.documents, { graph }), /event.json#\/entries\/0\/facts\/0/);
+  assert.match(renderPeopleTree(data.people, data.documents, { graph }), /class="facts facts-view"/);
 });
 
 test('inherited context, new sources, and name inputs invalidate evidence', async () => {

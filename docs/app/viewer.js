@@ -2,7 +2,7 @@ import { buildRelationshipGraph, resolvePerson, remapSourcePerson } from './data
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
-import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=104';
+import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=106';
 import { renderActiveScreen } from './screens/router-view.js?v=9';
 import { createDocumentRenderer } from './screens/documents.js?v=7';
 import { setupRecordLabelSelector } from './screens/record-label-selector.js';
@@ -1342,7 +1342,7 @@ async function renderActive() {
     sealSortYear: sealScreen.sealSortYear,
     sealMatchesSelected: sealScreen.sealMatchesSelected,
     sealMatchesType: sealScreen.sealMatchesType,
-    renderPeopleTree,
+    renderPeopleTree: (people, documents, options) => renderPeopleTree(people, documents, { ...options, inlineMarkup: markupRenderer.inlineMarkup }),
     setupPeopleTreeZoom,
     renderMapPage: mapScreen.renderMapPage,
     setupMap: mapScreen.setupMap,

@@ -6,6 +6,8 @@ import test from 'node:test';
 import { moduleUrl } from './browser-module.mjs';
 const { renderPeopleTree } = await import(await moduleUrl(new URL('../docs/app/screens/tree.js', import.meta.url)));
 const { buildRelationshipGraph } = await import(await moduleUrl(new URL('../docs/app/data/relationships.js', import.meta.url)));
+const { renderFactsView } = await import(await moduleUrl(new URL('../docs/app/components/facts_view.js', import.meta.url)));
+const { createMarkupRenderer } = await import(await moduleUrl(new URL('../docs/app/rendering/markup.js', import.meta.url)));
 const person = (id, children = [], extra = {}) => ({ id, name: id, children, ...extra });
 const attr = (markup, name) => markup.match(new RegExp(` ${name}="([^"]*)"`))?.[1];
 
@@ -295,10 +297,13 @@ test('hover facts use source identity pointers and keep namesakes separate', () 
   assert.match(templates[1], /Vogt/);
   assert.doesNotMatch(templates[1], /Ritter/);
   assert.equal((templates[0].match(/<li>/g) || []).length, 1, 'duplicate participant references show one fact');
-  assert.match(templates[0], /<time>1400<\/time>/);
-  assert.match(templates[0], /href="\?tab=documents&amp;record=/);
+  assert.match(templates[0], /<time class="fact-date" datetime="1400">1400<\/time>/);
+  assert.doesNotMatch(templates[0], /<h3|class="source"|tab=documents|example.json/);
   assert.doesNotMatch(html, /A guess|entity-relationships|identity-comparisons/);
-  assert.ok(html.endsWith('</section>'), 'nothing follows the tree wrapper');
+  assert.match(html, /<\/svg><\/div><aside class="people-tree-facts"/, 'facts follow the scrollable tree');
+  const { inlineMarkup } = createMarkupRenderer({ state: { people: [] } });
+  assert.equal(templates[0], renderFactsView([{ ...documents.get(path).entries[0].facts[0], date: '1400' }], { people: [], inlineMarkup }), 'exact output of the existing facts renderer');
+  assert.match(templates[0], /class="person-link"/, 'reuse person links');
 });
 
 test('registry hover facts use exact IDs and historical dates', () => {
@@ -308,14 +313,15 @@ test('registry hover facts use exact IDs and historical dates', () => {
       { type: 'title', person: 'a', personTitle: ['Ritter'], date: '1350' },
       { type: 'title', person: 'b', personTitle: ['Vogt'], date: '1360' },
       { text: 'Same name held land.' },
-      { text: '[a] used <script>unsafe</script> text.' },
+      { text: '[a] used <script>unsafe</script> **bold** text.' },
     ] }] }],
   ]));
   const templates = [...html.matchAll(/<template[^>]*>(.*?)<\/template>/g)].map((match) => match[1]);
   assert.match(templates[0], /Ritter/);
-  assert.match(templates[0], /<time>1350<\/time>/);
+  assert.match(templates[0], /<time class="fact-date" datetime="1350">1350<\/time>/);
   assert.match(templates[0], /Undated/);
   assert.match(templates[0], /&lt;script&gt;/);
+  assert.match(templates[0], /<strong>bold<\/strong>/, 'reuse document inline formatting');
   assert.doesNotMatch(templates[0], /Vogt|2020|held land|<script>/);
   assert.match(templates[1], /Vogt/);
   assert.doesNotMatch(templates[1], /Ritter|unsafe/);

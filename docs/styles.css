@@ -218,14 +218,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .source-list > li:first-child, .facts > li:first-child { margin-top: 0; }
 .diagram { margin: 1.25rem 0; padding: 1rem; overflow-x: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; }
 .diagram svg { display: block; max-width: none; height: auto; margin: 0 auto; }
-.people-tree-wrap { position: relative; margin: 1.25rem 0; }
-.people-tree-facts { position: absolute; z-index: 10; box-sizing: border-box; width: min(26rem, 100%); max-height: min(30rem, 60vh); overflow: auto; overscroll-behavior: contain; padding: 1rem; background: var(--surface-raised); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 28px #0005; }
-.people-tree-facts h3 { margin: 0 0 .75rem; font-size: 1rem; }
-.people-tree-facts ul { list-style: none; padding: 0; margin: 0; }
-.people-tree-facts li + li { margin-top: .75rem; padding-top: .75rem; border-top: 1px solid var(--line); }
-.people-tree-facts time, .people-tree-facts li > a { font-size: .8rem; color: var(--muted); }
-.people-tree-facts li > a { overflow-wrap: anywhere; }
-.people-tree-facts p { margin: .3rem 0; }
+.people-tree-wrap { margin: 1.25rem 0; }
+.people-tree-facts { margin-top: 1.25rem; }
 .people-tree { height: min(72vh, 720px); min-height: 20rem; padding: 1rem; overflow: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; touch-action: pan-x pan-y; }
 .people-tree svg { display: block; max-width: none; }
 .people-tree-person-link { cursor: pointer; }
