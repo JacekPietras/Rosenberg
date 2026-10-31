@@ -3,6 +3,55 @@
   "entries": [
     {
       "label": "armorial",
+      "title": "Wappenstammbuch, Karlsruhe, Badische Landesbibliothek, Cod. Karlsruhe 2821",
+      "date": "1501-1600",
+      "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185533 — https://digital.blb-karlsruhe.de/i3f/v20/4185533/full/max/0/default.jpg — https://drive.google.com/file/d/1Ljz7-ej2yv5p-b88aFmAKobHzfs0Il77/view",
+      "description": "Page 235. The BLB catalog dates the manuscript to the 16th century.",
+      "url": "https://drive.google.com/thumbnail?id=1Ljz7-ej2yv5p-b88aFmAKobHzfs0Il77&sz=w1600"
+    },
+    {
+      "label": "armorial",
+      "title": "Wappenstammbuch, Karlsruhe, Badische Landesbibliothek, Cod. Karlsruhe 2821",
+      "date": "1501-1600",
+      "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185505 — https://digital.blb-karlsruhe.de/i3f/v20/4185505/full/max/0/default.jpg — https://drive.google.com/file/d/1rOWxMaaUGIR9ia6_QRfc7rqtkYh0mxNK/view",
+      "description": "Page 207. The BLB catalog dates the manuscript to the 16th century.",
+      "url": "https://drive.google.com/thumbnail?id=1rOWxMaaUGIR9ia6_QRfc7rqtkYh0mxNK&sz=w1600"
+    },
+    {
+      "label": "armorial",
+      "title": "Wappenstammbuch, Karlsruhe, Badische Landesbibliothek, Cod. Karlsruhe 2821",
+      "date": "1501-1600",
+      "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185499 — https://digital.blb-karlsruhe.de/i3f/v20/4185499/full/max/0/default.jpg — https://drive.google.com/file/d/1w0SEVCwP8fjheBNtKW-JIPEJBCt25WcO/view",
+      "description": "Page 201. The BLB catalog dates the manuscript to the 16th century.",
+      "url": "https://drive.google.com/thumbnail?id=1w0SEVCwP8fjheBNtKW-JIPEJBCt25WcO&sz=w1600"
+    },
+    {
+      "label": "armorial",
+      "title": "Coats of arms of Nuremberg families, Washington, Library of Congress, Rosenwald 17",
+      "date": "1500-1599",
+      "source": "https://www.loc.gov/resource/rbc.2011rosen0017/?sp=189 — https://www.loc.gov/item/49038313/ — https://tile.loc.gov/image-services/iiif/service:rbc:rbc0001:2011:2011rosen0017:0189/full/full/0/default.jpg — https://drive.google.com/file/d/1pEjttrpJTPesc7wIXUP_M74Hw00yYeTu/view",
+      "description": "Image 189. The Library of Congress catalog dates the manuscript to [15--]. Credit: Library of Congress, Rare Book and Special Collections Division.",
+      "url": "https://drive.google.com/thumbnail?id=1pEjttrpJTPesc7wIXUP_M74Hw00yYeTu&sz=w1600"
+    },
+    {
+      "label": "armorial",
+      "title": "Wappenstammbuch, Karlsruhe, Badische Landesbibliothek, Cod. Karlsruhe 2821",
+      "date": "1501-1600",
+      "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185407 — https://digital.blb-karlsruhe.de/i3f/v20/4185407/full/max/0/default.jpg — https://drive.google.com/file/d/1tijyc1sRBIW_5HIMmmTKeFCyAUuWsWfo/view",
+      "description": "Page 111. The BLB catalog dates the manuscript to the 16th century.",
+      "url": "https://drive.google.com/thumbnail?id=1tijyc1sRBIW_5HIMmmTKeFCyAUuWsWfo&sz=w1600"
+    },
+    {
+      "label": "armorial",
+      "title": "Puchbergisches Wappenbuch, Nürnberg, Germanisches Nationalmuseum, Hs 6599",
+      "date": "1501-1600",
+      "folio": "91v",
+      "source": "https://dlib.gnm.de/item/Hs6599/196 — https://dlib.gnm.de/item/Hs6599/196/jpg/2000 — https://drive.google.com/file/d/1YRQ3TfDB8iuWsCW0Itbs1iYrL9vqXkyC/view",
+      "description": "The GNM catalog dates the manuscript to 1501–1600.",
+      "url": "https://drive.google.com/thumbnail?id=1YRQ3TfDB8iuWsCW0Itbs1iYrL9vqXkyC&sz=w1600"
+    },
+    {
+      "label": "armorial",
       "title": "Wappenbuch, Paris, Bibliothèque nationale de France, Allemand 304",
       "date": "1501-1600",
       "source": "https://archive.org/details/bnf_ms_allemand_304/page/n885/mode/1up — https://drive.google.com/file/d/1K6UWJuK9deBtC3uEo-yRwO9nTjszwoV4/view",
