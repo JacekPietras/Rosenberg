@@ -3263,7 +3263,7 @@
       ],
       "facts": [
         {
-          "person": "Konrad von Rosenberg",
+          "person": "konrad_schonau",
           "personDeceased": true,
           "type": "generic",
           "content": "died on 6 May in a year ending in 6; the decade and century are illegible."
@@ -3272,7 +3272,7 @@
           "person": "Adelheid von Hirschhorn",
           "personDeceased": true,
           "type": "spouse",
-          "of": "Konrad von Rosenberg",
+          "of": "konrad_schonau",
           "ofDeceased": true
         },
         {
