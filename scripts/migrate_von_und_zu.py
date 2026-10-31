@@ -74,7 +74,6 @@ def main(argv=None):
             files.add(path)
         else:
             parser.error(f"not a JSON file or directory: {path}")
-    changed = 0
     for path in sorted(files):
         # The tree is generated from source facts, not a source to migrate.
         if path.resolve() == (ROOT / "data" / "tree.json").resolve():
@@ -89,11 +88,9 @@ def main(argv=None):
             continue
         if original != canonical:
             raise ValueError(f"{path}: nonstandard JSON formatting; refusing to reformat")
-        changed += 1
         print("".join(difflib.unified_diff(original.splitlines(keepends=True), updated.splitlines(keepends=True), fromfile=str(path), tofile=str(path))), end="")
         if args.apply:
             path.write_text(updated, encoding="utf-8")
-    print(f"{changed} file(s) {'updated' if args.apply else 'would change'}.")
 
 
 if __name__ == "__main__":
