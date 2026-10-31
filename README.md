@@ -93,6 +93,23 @@ alive then; an estimated birth interval derived from titles, relationships, and
 deaths limits plausible ages. Seal comparison remains human work; no automatic
 seal matching is introduced.
 
+### Inspect saved graph connections
+
+Inspect connections in the saved graph without rebuilding or writing files:
+
+```text
+python3 scripts/print_graph_connections.py vogt_zu_Lauda
+python3 scripts/print_graph_connections.py '@evidence/KEY' --details
+python3 scripts/print_graph_connections.py 'data/documents/1397-04-29.json#/entries/0/facts/0'
+```
+
+Accepts a person ID, evidence node key, exact full name, or source JSON pointer
+(optionally ending in `/person` or `/of`). Prints family connections, supporting
+sources, identity comparisons, and possible identity matches. Use `--depth 2`
+for another family hop, `--details --comparison-limit 0` for all comparison
+evidence, or `--json` for the full selected graph. Stale source fingerprints are
+reported; evidence keys refer to the saved build and can change after rebuilding.
+
 ## Archives
 
 Archive catalogs and related research portals are collected in [`data/notes/archives.md`](data/notes/archives.md).
