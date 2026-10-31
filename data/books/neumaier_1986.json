@@ -396,7 +396,7 @@
         },
         {
           "type": "kin",
-          "person": "Jutta",
+          "person": "jutta_wife_of_konrad",
           "of": "Eberhard von Rosenberg",
           "ofTitle": [
             "Ritter"
@@ -549,7 +549,7 @@
         },
         {
           "type": "kin",
-          "person": "Jutta",
+          "person": "jutta_wife_of_konrad",
           "of": "Eberhard von Rosenberg",
           "ofTitle": [
             "Rufus"
@@ -569,7 +569,7 @@
         },
         {
           "date": "1300-05-17",
-          "text": "Eberhard, Arnold, and Juta, called nepotes of Eberhard Rufus in 1300, may have been his brother’s children; nepotes does not specify the exact relationship."
+          "text": "Eberhard, Arnold, and Juta [jutta_wife_of_konrad], called nepotes of Eberhard Rufus in 1300, may have been his brother’s children; nepotes does not specify the exact relationship."
         }
       ]
     },
@@ -700,7 +700,7 @@
       "guesses": [
         {
           "date": "1300-05-17",
-          "text": "Another Arnold may have been an ancestor of Eberhard, Juta, and Arnold, the nepotes of Eberhard Rufus."
+          "text": "Another Arnold may have been an ancestor of Eberhard, Juta [jutta_wife_of_konrad], and Arnold, the nepotes of Eberhard Rufus."
         }
       ]
     },
