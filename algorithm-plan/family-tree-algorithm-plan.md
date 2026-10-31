@@ -1,7 +1,8 @@
 # Family reconstruction specification
 
-This document defines the matching behavior implemented by engine 6
-(`weighted-log-odds-v3`).
+This document defines the matching behavior of the first pass
+(`weighted-log-odds-v4`). Leftover records are then attached to the resulting
+tree by the [second pass](second-pass-plan.md).
 
 ## Weight calculation convention
 
@@ -211,10 +212,10 @@ repeated extraction or iteration adds `0`.
 ## Decisions
 
 - One global configuration in `data/matching.json`, recorded with each build.
-  Prior `0.05`, merge threshold `0.80`, rival margin `1.0` log-odds. Estimates
-  are **uncalibrated**.
-- `prior 0.05` gives initial log odds `-2.944`; `P = 0.80` needs `1.386`, so
-  about `4.331` net positive evidence is required.
+  Prior `0.05`, merge threshold `0.70` (second pass `0.80`), rival margin `1.0`
+  log-odds. Estimates are **uncalibrated**.
+- `prior 0.05` gives initial log odds `-2.944`; `P = 0.70` needs `0.847`, so
+  about `3.792` net positive evidence is required (`4.331` for `0.80`).
 - Check blocks on every proposed complete identity, including transitive merges,
   before accepting a merge.
 - A record that fits several candidates (for example father, son, or cousin of

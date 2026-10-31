@@ -18,6 +18,7 @@ data/
 ├── matching.json # Global probability model parameters
 ├── names.md      # Historical name variants
 ├── titles.md     # Equivalent title words and epithets for matching
+├── kinship.md    # Tree positions meant by source kinship terms
 └── places.json   # Place-name variants and coordinates
 docs/             # Browser viewer for the dataset
 rules/            # Conditional instructions for data work
@@ -78,8 +79,8 @@ The diagram defaults to parent/child and spouse lines; hovering over or focusing
 a person reveals their sibling and other kin lines as well. Children with the same recorded parents
 share a branch. In the default view, married parents use only the identifiable
 father's stem for shared children; both parent assertions remain in the evidence
-panel and appear when either connected person is hovered over or focused. The merge threshold is 80%, with
-competing-candidate and cluster checks. Estimates are **uncalibrated**, not
+panel and appear when either connected person is hovered over or focused. The merge threshold is 70% in the first pass and
+80% in the [second pass](algorithm-plan/second-pass-plan.md), with competing-candidate and cluster checks. Estimates are **uncalibrated**, not
 measured historical accuracy. The tree stores comparison probabilities, feature
 contributions, rejected alternatives, and provenance; tree and person pages
 explain them. A typed mention without a deceased marker means the person was
@@ -173,6 +174,13 @@ Equivalent title words and epithets used for identity matching (for example
 `Vogt, Voigt, advocatus` or `der Rote, Rufus`) are listed in
 [`data/titles.md`](data/titles.md), one group per line with the canonical form
 first. They are not personal names and do not belong in `data/names.md`.
+
+### Kinship terms
+
+The tree positions a source kinship term can mean (for example `Vetter`: a
+parent's brother, a sibling's son, or a cousin, never a brother, parent, or child)
+are listed in [`data/kinship.md`](data/kinship.md). Facts keep the source term
+verbatim; this file only guides matching.
 
 ### Places
 

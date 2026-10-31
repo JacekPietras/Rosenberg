@@ -12,7 +12,8 @@ import re
 from .constraints import cycle_nodes
 from .model import fingerprint, Assertion, Mention
 from .policy import AGE_TITLES
-from .probability import ProbabilityModel, Profile, chronology_blocked, title_category, reliability
+from .kinship import generation, tree_paths
+from .probability import ProbabilityModel, Profile, chronology_blocked, decay, title_category, reliability
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
@@ -381,7 +382,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
 
     # Frozen-round profiles combine dated titles, geography, same-fact
     # associates and family evidence for every source identity, not just IDs.
-    for iteration in range(model.settings['maxRounds']):
+    def build_profiles():
         current = groups()
         profiles = {root: Profile(handles, [mentions[h] for h in handles], anchored=bool(anchor(handles)), confidence=confidence[root], key=root)
                     for root, handles in current.items()}
@@ -469,6 +470,10 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 basis = [*co_parents[left], *co_parents[right]]
                 relative(left, right, ('family context', '', ''), basis, confidence[child], dependencies[child].values())
                 relative(right, left, ('family context', '', ''), basis, confidence[child], dependencies[child].values())
+        return current, profiles, root_names, context_coverage
+
+    for iteration in range(model.settings['maxRounds']):
+        current, profiles, root_names, context_coverage = build_profiles()
         buckets = defaultdict(list)
         for root in current:
             buckets[given(root_names[root])].append(root)
@@ -482,7 +487,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 if not record.pop('substantive'):
                     continue
                 pair = tuple(sorted((left, right)))
-                record.update(mentions=list(pair), iteration=iteration, status='below-threshold', reason='below merge probability')
+                record.update(mentions=list(pair), iteration=iteration, **{'pass': 1}, status='below-threshold', reason='below merge probability')
                 round_scores[pair] = record
                 comparisons[pair] = record
                 if len(anchor([*current[left], *current[right]])) > 1:
@@ -532,6 +537,139 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 round_scores[pair].update(status='incompatible', reason='complete proposed cluster violates identity constraints')
         if not count:
             break
+
+    # Second pass: single-passage leftovers attach to the frozen tree through
+    # the positions their relationships allow; attachments never support each
+    # other and never join two existing identities.
+    second = model.settings['secondPass']
+    current, profiles, root_names, context_coverage = build_profiles()
+    labels = {root: next(iter(anchor(handles)), root_names[root]) for root, handles in current.items()}
+    reference = {root for root, handles in current.items()
+                 if anchor(handles) or len({scope(mentions[h])[:2] for h in handles}) > 1}
+    tree, relations = defaultdict(set), defaultdict(list)
+    steps = {'parent': ('C', 'P'), 'sibling': ('S', 'S'), 'spouse': ('Sp', 'Sp')}
+    for assertion in assertions:
+        kind = assertion.original['type']
+        if kind not in RELATIONS:
+            continue
+        a, b = assertion.mentions
+        left, right = find(a.handle), find(b.handle)
+        if left == right:
+            continue
+        if kind in steps:
+            tree[left].add((steps[kind][0], right))
+            tree[right].add((steps[kind][1], left))
+        for own, field, other in ((left, a.field, right), (right, b.field, left)):
+            if own not in reference and other in reference:
+                relations[own].append((assertion, field, other))
+    paths = {}
+    def paths_from(root):
+        if root not in paths:
+            paths[root] = tree_paths(tree, root, second['maxPathSteps'])
+        return paths[root]
+    def nearest(assertion, root):
+        return max(decay(assertion.bounds, mentions[h].assertion.bounds, model.settings['familyHalfLifeYears']) for h in current[root])
+    elder = {'der Ältere', 'der Alte'}
+    younger = {'der Jüngere', 'der Junge'}
+    second_scores, proposals = {}, []
+    for leftover in sorted(relations):
+        if all(mentions[h].field == 'text' for h in current[leftover]):
+            continue
+        candidates = [root for root in sorted(reference)
+                      if given(root_names[root]) == given(root_names[leftover])
+                      and all(compatible_names(name(a), name(b)) for a in current[leftover] for b in current[root])]
+        scored = {}
+        for candidate in candidates:
+            record = model.compare(profiles[leftover], profiles[candidate])
+            blocks = record.pop('blocks')
+            record.pop('substantive')
+            added, positioned, contradicted = [], False, False
+            family = {f['name'].split(': ', 1)[1] for f in record['features'] if 'family context: ' in f['name']}
+            by_relative = {}
+            for assertion, field, relative_root in relations[leftover]:
+                term = names.kinship.position(assertion, field)
+                found = paths_from(relative_root).get(candidate, set())
+                allowed = sorted(path for path in found if term.allowed.contains(path))
+                weight = reliability(assertion.source, model.settings)
+                label = assertion.original.get('term') or assertion.original['type']
+                if allowed:
+                    positioned = True
+                    if root_names[relative_root] in family:
+                        continue  # pass 1 already counted this relative
+                    value = (model.settings['sharedRelativeWeight'] * second['specificityFactors'][term.specificity] * weight
+                             * confidence[relative_root] * nearest(assertion, candidate))
+                    if value > by_relative.get(relative_root, (0,))[0]:
+                        by_relative[relative_root] = value, f'kinship position {"".join(allowed[0])} of {labels[relative_root]} ({label})', assertion.source
+                elif found and all(term.excludes(path) for path in found):
+                    text = f'kinship term {label} excludes position {"".join(sorted(found)[0])} of {labels[relative_root]}'
+                    contradicted = True
+                    if weight == 1:
+                        blocks.append(text)
+                    else:
+                        added.append((text, -model.settings['deathConflictPenalty'] * weight, assertion.source))
+            remaining = model.settings['familyMaxWeight']
+            for value, text, source in sorted(by_relative.values(), key=lambda item: (-item[0], item[1])):
+                added.append((text, min(value, remaining), source))
+                remaining -= min(value, remaining)
+            # An age title implies a same-named relative of another generation
+            # in that passage; the candidate should sit on the other side of it.
+            for h in current[leftover]:
+                titles = set(mentions[h].titles)
+                offset = 1 if titles & elder else -1 if titles & younger else 0
+                if not offset:
+                    continue
+                namesakes = [root for root in candidates if root != candidate
+                             and any(scope(mentions[x])[:2] == scope(mentions[h])[:2] for x in current[root])]
+                if any(generation(path) == offset for root in namesakes for path in paths_from(root).get(candidate, ())):
+                    added.append(('age-title namesake one generation ' + ('below' if offset > 0 else 'above'),
+                                  second['ageTitleNamesakeWeight'] * reliability(mentions[h].assertion.source, model.settings),
+                                  mentions[h].assertion.source))
+                    break
+            scored[candidate] = record, blocks, added, positioned, contradicted
+        # Only candidate: one compatible same-named identity in that family,
+        # unless another leftover of that name is related to the same family.
+        compatible = [c for c, (_, blocks, _, positioned, _) in scored.items() if positioned and not blocks]
+        relatives = {relative_root for _, _, relative_root in relations[leftover]}
+        competing = any(other != leftover and given(root_names[other]) == given(root_names[leftover])
+                     and relatives & {relative_root for _, _, relative_root in relations[other]} for other in relations)
+        if len(compatible) == 1 and not competing:
+            source = relations[leftover][0][0].source
+            scored[compatible[0]][2].append((f'only compatible candidate near {", ".join(sorted(labels[r] for r in relatives))}',
+                                             second['eliminationWeight'] * min(reliability(a.source, model.settings) for a, _, _ in relations[leftover]), source))
+        options = []
+        for candidate, (record, blocks, added, _, contradicted) in scored.items():
+            if not added and not contradicted:
+                continue
+            for text, value, source in added:
+                record['features'].append({'name': text, 'contribution': round(value, 8)})
+                if source.key not in {ref.key for ref in record['sources']}:
+                    record['sources'].append(source)
+            record['logOdds'] = round(record['logOdds'] + sum(value for _, value, _ in added), 8)
+            record['probability'] = round(1 / (1 + math.exp(-max(-700, min(700, record['logOdds'])))), 8)
+            pair = tuple(sorted((leftover, candidate)))
+            record.update(mentions=list(pair), **{'pass': 2}, status='below-threshold', reason='below second-pass merge probability')
+            if blocks:
+                record.update(status='incompatible', reason='blocked: ' + '; '.join(blocks))
+            elif record['probability'] >= second['mergeProbability']:
+                options.append((record['logOdds'], candidate))
+            second_scores[pair] = record
+            comparisons[pair] = record
+        rivals = sorted((record['logOdds'] for record, blocks, added, _, _ in scored.values() if added and not blocks), reverse=True)
+        if options:
+            best, candidate = max(options)
+            pair = tuple(sorted((leftover, candidate)))
+            if len(rivals) > 1 and best - rivals[1] < model.settings['ambiguityLogOddsMargin']:
+                second_scores[pair].update(status='ambiguous', reason='competing candidates within the decision margin')
+            else:
+                proposals.append((leftover, candidate, second_scores[pair]['sources']))
+    round_scores = second_scores
+    accept(proposals, 'second pass: relationship position in the reference tree')
+    for leftover, candidate, _ in proposals:
+        pair = tuple(sorted((leftover, candidate)))
+        if find(leftover) == find(candidate):
+            second_scores[pair].update(status='merged', reason='second-pass probability, margin and cluster constraints passed')
+        else:
+            second_scores[pair].update(status='incompatible', reason='complete proposed cluster violates identity constraints')
 
     current = groups()
     keys = {}

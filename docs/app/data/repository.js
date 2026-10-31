@@ -65,7 +65,7 @@ export function createRepository({ location = window.location, fetchFunction = w
       if (!response.ok) throw new Error(`Repository file listing: ${response.status}`);
       const tree = await response.json();
       return tree.tree
-        .filter((item) => item.type === 'blob' && /^(?:data\/(?:books|documents|notes|images)\/.*\.json|data\/(?:people\.json|tree\.json|places\.json|matching\.json|names\.md|titles\.md))$/.test(item.path))
+        .filter((item) => item.type === 'blob' && /^(?:data\/(?:books|documents|notes|images)\/.*\.json|data\/(?:people\.json|tree\.json|places\.json|matching\.json|names\.md|titles\.md|kinship\.md))$/.test(item.path))
         .map((item) => ({ path: item.path, version: item.sha }))
         .sort((left, right) => left.path.localeCompare(right.path));
     },

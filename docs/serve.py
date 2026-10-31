@@ -100,7 +100,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             ]
             paths.extend(
                 {"path": path.relative_to(ROOT).as_posix(), "version": path.stat().st_mtime_ns}
-                for path in [ROOT / "data/people.json", ROOT / "data/tree.json", ROOT / "data/places.json", ROOT / "data/names.md", ROOT / "data/titles.md", ROOT / "data/matching.json"]
+                for path in [ROOT / "data/people.json", ROOT / "data/tree.json", ROOT / "data/places.json", ROOT / "data/names.md", ROOT / "data/titles.md", ROOT / "data/kinship.md", ROOT / "data/matching.json"]
                 if path.is_file()
             )
             paths.sort(key=lambda item: item["path"])

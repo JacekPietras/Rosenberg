@@ -1,8 +1,8 @@
 {
-  "model": "weighted-log-odds-v3",
+  "model": "weighted-log-odds-v4",
   "calibrated": false,
   "priorProbability": 0.05,
-  "mergeProbability": 0.8,
+  "mergeProbability": 0.7,
   "ambiguityLogOddsMargin": 1.0,
   "clusterMinimumProbability": 0.35,
   "guessWeight": 0.45,
@@ -63,5 +63,16 @@
   "opposedAgePenalty": 5.0,
   "rankRegressionPenalty": 1.0,
   "deathConflictPenalty": 20.0,
-  "maxRounds": 12
+  "maxRounds": 12,
+  "secondPass": {
+    "mergeProbability": 0.8,
+    "maxPathSteps": 3,
+    "specificityFactors": {
+      "exact": 1.0,
+      "narrow": 0.5,
+      "broad": 0.3
+    },
+    "eliminationWeight": 1.5,
+    "ageTitleNamesakeWeight": 1.0
+  }
 }

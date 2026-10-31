@@ -16,7 +16,7 @@ RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
 def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH_LIMIT):
     assertions = [assertion for assertion in inputs.assertions if include_guesses or assertion.source.kind == 'facts']
-    names = Names(inputs.names, inputs.places, inputs.titles)
+    names = Names(inputs.names, inputs.places, inputs.titles, inputs.kinship)
     registry, profiles = anchor_profiles(assertions, inputs.people)
     conflicts, blocked, ignored_guesses = [], set(), set()
     for identity, observations in profiles.items():

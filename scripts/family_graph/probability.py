@@ -18,8 +18,8 @@ from .names import normalize
 from .scoring import place_patterns
 
 DEFAULTS = {
-    'model': 'weighted-log-odds-v3', 'calibrated': False,
-    'priorProbability': 0.05, 'mergeProbability': 0.8,
+    'model': 'weighted-log-odds-v4', 'calibrated': False,
+    'priorProbability': 0.05, 'mergeProbability': 0.7,
     'ambiguityLogOddsMargin': 1.0, 'clusterMinimumProbability': 0.35,
     'guessWeight': 0.45,
     'sourceWeights': {'documents': 1.0, 'images': 1.0, 'books': 0.5, 'notes': 0.5},
@@ -35,6 +35,9 @@ DEFAULTS = {
     'relativeRarityWeight': 1.0, 'relativeRarityMaxWeight': 1.5, 'relativeRarityReferenceFrequency': 0.1,
     'opposedAgePenalty': 5.0, 'rankRegressionPenalty': 1.0,
     'deathConflictPenalty': 20.0, 'maxRounds': 12,
+    'secondPass': {'mergeProbability': 0.8, 'maxPathSteps': 3,
+                   'specificityFactors': {'exact': 1.0, 'narrow': 0.5, 'broad': 0.3},
+                   'eliminationWeight': 1.5, 'ageTitleNamesakeWeight': 1.0},
 }
 
 
@@ -61,6 +64,11 @@ def parameters(value=None):
         raise ValueError('matching.familyRelationFactors: expected values not above one')
     if not result['adultAgeYears'] < result['ageComfortYears'] < result['maxAgeYears']:
         raise ValueError('matching: expected adult age < comfortable age < maximum age')
+    second = result['secondPass']
+    if not result['priorProbability'] < second['mergeProbability'] < 1 or type(second['maxPathSteps']) is not int:
+        raise ValueError('matching.secondPass: invalid threshold or path length')
+    if any(value > 1 for value in second['specificityFactors'].values()):
+        raise ValueError('matching.secondPass.specificityFactors: expected values not above one')
     if result['priorProbability'] >= result['mergeProbability'] or type(result['maxRounds']) is not int:
         raise ValueError('matching: invalid prior, threshold, or iteration bound')
     if result['sourceWeights'] != DEFAULTS['sourceWeights']:

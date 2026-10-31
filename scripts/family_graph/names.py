@@ -11,8 +11,10 @@ def normalize(value):
 
 
 class Names:
-    def __init__(self, names_text, places, titles_text=''):
+    def __init__(self, names_text, places, titles_text='', kinship_text=''):
+        from .kinship import Kinship
         self.raw_places = places
+        self.kinship = Kinship(kinship_text)
         # Equivalent title words and epithets, e.g. Vogt/advocatus, der Rote/Rufus.
         self.titles = {}
         for line in titles_text.splitlines():

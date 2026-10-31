@@ -438,4 +438,58 @@ class ProbabilityTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'probability'): validate_generated(tree, inputs.people, inputs.root)
 
 
+    def family(self, extra):
+        """Vogt Eberhard with brother Arnold and sons Eberhard and Arnold, plus extra dated facts."""
+        temp = tempfile.TemporaryDirectory(); self.addCleanup(temp.cleanup)
+        root = Path(temp.name)
+        (root / 'data/documents').mkdir(parents=True)
+        (root / 'data/names.md').write_text('Arnold\nEberhard\n')
+        (root / 'data/kinship.md').write_text((Path(__file__).resolve().parents[1] / 'data/kinship.md').read_text())
+        (root / 'data/places.json').write_text(json.dumps([{'id': 'north', 'variations': ['North']}]))
+        (root / 'data/matching.json').write_text(json.dumps(DEFAULTS))
+        (root / 'data/people.json').write_text(json.dumps([
+            {'id': 'vogt', 'name': 'Eberhard von Rosenberg'}, {'id': 'uncle', 'name': 'Arnold von Rosenberg'},
+            {'id': 'son_e', 'name': 'Eberhard von Rosenberg'}, {'id': 'son_a', 'name': 'Arnold von Rosenberg'}]))
+        facts = {'1381': [{'type': 'sibling', 'person': 'uncle', 'of': 'vogt'}],
+                 '1395': [{'type': 'parent', 'person': 'vogt', 'of': 'son_e'}, {'type': 'parent', 'person': 'vogt', 'of': 'son_a'},
+                          {'type': 'sibling', 'person': 'son_e', 'of': 'son_a'}], **extra}
+        for date, items in facts.items():
+            (root / f'data/documents/{date}.json').write_text(json.dumps({'date': date, 'facts': items}))
+        return build(load_inputs(root, validate=False)).evidence_graph
+
+    def test_second_pass_attaches_vetter_to_fathers_brother(self):
+        graph = self.family({'1401': [{'type': 'kin', 'person': 'Arnold von Rosenberg', 'personTitle': ['der Ältere'], 'of': 'son_e', 'term': 'Vetter'},
+                                      {'type': 'sibling', 'person': 'son_e', 'of': 'son_a'}]})
+        uncle = next(n for n in graph['nodes'] if n['key'] == 'uncle')
+        self.assertIn('1401', uncle['dates'])
+        record = next(c for c in graph['comparisons'] if c.get('pass') == 2 and c['status'] == 'merged')
+        names = {f['name'] for f in record['features']}
+        self.assertIn('kinship position PS of son_e (Vetter)', names)
+        self.assertIn('age-title namesake one generation below', names)
+        self.assertTrue(any(name.startswith('only compatible candidate') for name in names))
+        self.assertGreaterEqual(record['probability'], DEFAULTS['secondPass']['mergeProbability'])
+
+    def test_second_pass_vetter_never_matches_a_brother(self):
+        graph = self.family({'1401': [{'type': 'kin', 'person': 'Arnold von Rosenberg', 'of': 'son_e', 'term': 'Vetter'}],
+                             '1381': []})
+        self.assertFalse(any('1401' in n['dates'] for n in graph['nodes'] if n['key'] == 'son_a'))
+        self.assertTrue(any(c['status'] == 'incompatible' and 'Vetter excludes position S' in c['reason'] for c in graph['comparisons']))
+
+    def test_second_pass_broad_term_fitting_brother_and_son_stays_unresolved(self):
+        graph = self.family({'1387': [{'type': 'kin', 'person': 'Arnold von Rosenberg', 'of': 'vogt', 'term': 'consanguineus'}]})
+        self.assertFalse(any('1387' in n['dates'] for n in graph['nodes'] if n['key'] in {'uncle', 'son_a'}))
+        positions = {f['name'] for c in graph['comparisons'] if c.get('pass') == 2 for f in c['features'] if f['name'].startswith('kinship position')}
+        self.assertEqual({'kinship position S of vogt (consanguineus)', 'kinship position C of vogt (consanguineus)'}, positions)
+
+    def test_kinship_terms_combine_and_invert(self):
+        from family_graph.kinship import Kinship, invert
+        kinship = Kinship((Path(__file__).resolve().parents[1] / 'data/kinship.md').read_text())
+        combined = kinship.term('Vetter und Schwager')
+        self.assertTrue(combined.excludes(('S',)))
+        self.assertFalse(combined.excludes(('Sp',)))
+        self.assertTrue(combined.allowed.contains(('Sp', 'S')))
+        self.assertEqual({('Sp', 'P')}, set(kinship.term('Eidam').inverted().allowed.paths))
+        self.assertEqual(('S', 'C'), invert(('P', 'S')))
+        self.assertTrue(kinship.term('unknown word').allowed.contains(('P', 'P')))
+
 if __name__ == '__main__': unittest.main()

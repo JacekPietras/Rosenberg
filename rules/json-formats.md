@@ -377,7 +377,7 @@ The top-level object has:
 - `configuration.searchLimit`: the positive integer bound for the retained registry diagnostics.
 - `inputs`: repository-relative input path to SHA-256 fingerprint, covering
   recursively discovered source JSON in books/documents/notes/images,
-  `data/names.md`, `data/titles.md`, `data/places.json`, `data/matching.json`, and the confirmed ID/name registry.
+  `data/names.md`, `data/titles.md`, `data/kinship.md`, `data/places.json`, `data/matching.json`, and the confirmed ID/name registry.
   Python scripts are not inputs; changes to them do not invalidate the stored graph.
 - `fingerprint`: the fingerprint of the complete `inputs` object.
 - `evidence`: a graph keyed by each available evidence view.
@@ -427,7 +427,8 @@ summarize attestations.
 Relationships contain `type`, `person`, `of`, `derivations`, and `term` for kin.
 Types are directed `parent`, and symmetric `spouse`, `sibling`, and `kin`.
 Endpoints are node keys. Kin terms preserve the source's wording, such as
-`Vetter`, without inventing a precise modern relationship. Marriage does not
+`Vetter`, without inventing a precise modern relationship; the tree positions a
+term can mean are listed in `data/kinship.md` and used only for matching. Marriage does not
 supply another parent; siblings do not supply parents or transitive siblings.
 No self-relationships or directed ancestry cycles are accepted. Repeated
 ancestry through different branches is allowed. Attestation dates are not
@@ -506,7 +507,7 @@ A confirmed ID whose own document facts conflict is reported for review and is
 not reassigned.
 
 The configuration defines the compatible-name prior (initially 0.05), merge
-threshold (0.80), reciprocal log-odds margin, age assumptions, cluster checks,
+threshold (0.70; 0.80 in the second pass), reciprocal log-odds margin, age assumptions, cluster checks,
 and maximum rounds. Capped full-relative-name frequency adjustments use the frozen
 factual `matchingBackground`, add-one smoothing, and configurable rarity weight,
 maximum, and reference frequency. This is source representation, not population
@@ -561,7 +562,7 @@ timestamps, reports, review queues, or separate facts database are introduced.
 ## Matching JSON
 
 `data/matching.json` is the authoritative global configuration for the weighted
-identity model. It contains `model: "weighted-log-odds-v3"`, `calibrated: false`,
+identity model. It contains `model: "weighted-log-odds-v4"`, `calibrated: false`,
 `priorProbability`, `mergeProbability`, `ambiguityLogOddsMargin`,
 `clusterMinimumProbability`, `guessWeight`, `sourceWeights`, age assumptions
 (`adultAgeYears`, `maxAgeYears`, `ageComfortYears`, `ageScaleYears`), title
@@ -570,7 +571,9 @@ relative-name rarity weight/cap/reference frequency, associate
 weights/cap/half-life, family weights, relation factors, shared-relative weight,
 cap and half-life,
 elder-before-younger and Ritter-before-Edelknecht penalties, death conflict
-penalty, and `maxRounds`.
+penalty, `maxRounds`, and `secondPass` (`mergeProbability`, `maxPathSteps`,
+`specificityFactors` for exact/narrow/broad kinship terms, `eliminationWeight`,
+`ageTitleNamesakeWeight`).
 
 Use the existing file's exact keys; unknown/missing keys, non-finite or
 non-positive values, invalid probability ranges, and non-integer iteration

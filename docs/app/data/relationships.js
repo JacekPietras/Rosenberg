@@ -97,7 +97,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
       if (!Object.hasOwn(metadata.inputs, 'data/matching.json')) throw new Error('Missing global probability configuration');
       settings = await repository.getJson('data/matching.json');
       if (await evidenceFingerprint(settings) !== metadata.inputs['data/matching.json']) throw new Error('Probability parameters changed');
-      if (!['weighted-log-odds-v1', 'weighted-log-odds-v2', 'weighted-log-odds-v3'].includes(settings?.model) || settings.calibrated !== false
+      if (!['weighted-log-odds-v1', 'weighted-log-odds-v2', 'weighted-log-odds-v3', 'weighted-log-odds-v4'].includes(settings?.model) || settings.calibrated !== false
         || !(settings.priorProbability > 0 && settings.priorProbability < settings.mergeProbability && settings.mergeProbability < 1)
         || !(settings.guessWeight > 0 && settings.guessWeight < 1)
         || Object.keys(settings.sourceWeights || {}).length !== 4

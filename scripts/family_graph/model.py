@@ -141,3 +141,4 @@ class Inputs:
     matching: dict = field(default_factory=dict)
     observations: list = field(default_factory=list)
     titles: str = ''
+    kinship: str = ''

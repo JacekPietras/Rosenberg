@@ -19,7 +19,7 @@ def source_paths(root):
 
 
 def input_manifest(root, people=None):
-    paths = source_paths(root) + [root / 'data/names.md', root / 'data/titles.md', root / 'data/places.json', root / 'data/matching.json']
+    paths = source_paths(root) + [root / 'data/names.md', root / 'data/titles.md', root / 'data/kinship.md', root / 'data/places.json', root / 'data/matching.json']
     manifest = {}
     for path in sorted(set(paths)):
         if not path.exists():
@@ -117,6 +117,8 @@ def load_inputs(root, validate=True):
     names = (root / 'data/names.md').read_text(encoding='utf-8')
     titles_path = root / 'data/titles.md'
     titles = titles_path.read_text(encoding='utf-8') if titles_path.exists() else ''
+    kinship_path = root / 'data/kinship.md'
+    kinship = kinship_path.read_text(encoding='utf-8') if kinship_path.exists() else ''
     places = json.loads((root / 'data/places.json').read_text(encoding='utf-8'))
     matching_path = root / 'data/matching.json'
     if validate and not matching_path.exists():
@@ -126,4 +128,4 @@ def load_inputs(root, validate=True):
     # Refuse a mixed snapshot if a file changed during ingestion.
     if manifest != initial_manifest or registry_bytes != (root / 'data/people.json').read_bytes():
         raise ValueError('inputs changed during ingestion; rerun reconstruction')
-    return Inputs(root, people, names, places, assertions, manifest, prose, registry_bytes, tree_bytes, matching, observations, titles)
+    return Inputs(root, people, names, places, assertions, manifest, prose, registry_bytes, tree_bytes, matching, observations, titles, kinship)

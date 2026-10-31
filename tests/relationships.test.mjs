@@ -653,7 +653,7 @@ test('probability verification rejects altered estimates and effective parameter
   for (const mutation of ['estimate', 'parameters']) {
     const data = await probabilityFixture();
     if (mutation === 'estimate') data.tree.evidence.facts.comparisons[0].probability = .99;
-    else data.files.set('data/matching.json', { ...data.files.get('data/matching.json'), mergeProbability: .7 });
+    else data.files.set('data/matching.json', { ...data.files.get('data/matching.json'), mergeProbability: .75 });
     const verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
     assert.equal(verification.valid, false);
     assert.match(verification.reason, /probability|Probability|Build input changed/);
@@ -662,7 +662,7 @@ test('probability verification rejects altered estimates and effective parameter
 
 test('parameter changes automatically rebuild and a saved facts-only preference cannot omit guesses', async () => {
   const data = await probabilityFixture();
-  const next = { ...data.files.get('data/matching.json'), mergeProbability: .7 };
+  const next = { ...data.files.get('data/matching.json'), mergeProbability: .75 };
   data.files.set('data/matching.json', next);
   let rebuilds = 0;
   const { loader, state } = loaderFor(data, { rebuild: async (options) => {

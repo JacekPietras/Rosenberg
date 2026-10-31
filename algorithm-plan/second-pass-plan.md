@@ -1,8 +1,11 @@
 # Second pass: attaching leftover records
 
-Design proposal; not implemented. It extends the
+Implemented in `scripts/family_graph/reconstruction.py` and
+`scripts/family_graph/kinship.py`. It extends the
 [specification](family-tree-algorithm-plan.md) and keeps its log-odds
-convention, threshold (`0.80`), rival margin (`1.0`), and blocks.
+convention, rival margin (`1.0`), and blocks. Pass 1 merges at `0.70`; pass 2
+attaches at the stricter `0.80`, because its evidence depends on the tree pass 1
+built.
 
 ## Problem
 
@@ -48,11 +51,13 @@ there, `arnold_boxberg`, is Eberhard's brother and therefore not his `Vetter`.
 | Kind | Definition | Can use |
 | --- | --- | --- |
 | Related leftover | Unmerged record without registry ID that has a relationship to a `T0` identity | All pass-2 evidence |
-| Detached leftover | Unmerged record whose relatives are also leftovers | Pass-1 evidence only |
-| Lone mention | `title` or `death` mention without a relationship, not grouped into any identity | Pass-1 evidence only |
+| Detached leftover | Unmerged record whose relatives are also leftovers | Nothing new |
+| Lone mention | `title` or `death` mention without a relationship, not grouped into any identity | Nothing new |
 
 Only related leftovers get structural evidence, because the tree can only be
-consulted from a known point. Example: in `1381-05-25_3.json` Konrad, Ritter,
+consulted from a known point. Pass 1's last round already compared detached
+leftovers and lone mentions against the final tree with all pass-1 evidence, so
+pass 2 has nothing to add for them. Example: in `1381-05-25_3.json` Konrad, Ritter,
 Vitztum zu Heidelberg, is `Schwager` of Hans von Hirschhorn. Hans is not in the
 Rosenberg tree, so this case stays a detached leftover.
 
@@ -80,7 +85,7 @@ sibling's child, `PSC` a cousin, `CSp` a child's spouse.
 | `fratrueles`, `fratruales` | `SC`, `PSC` | `S`, `P`, `C`, `Sp` | narrow |
 | `Schwager` | `SpS`, `SSp`, `SpSSp` | blood relatives | narrow |
 | `consanguineus` | any blood path up to 3 steps | `Sp`, in-laws | broad |
-| `Vetter und Schwager` | union of both terms | intersection of exclusions | broad |
+| `Vetter und Schwager` | union of both terms | only what both exclude | broadest part |
 | unknown term | any path up to 3 steps | none | broad |
 
 - Paths use only `T0` relationships, at most 3 steps.
@@ -90,8 +95,10 @@ sibling's child, `PSC` a cousin, `CSp` a child's spouse.
 
 ## Evidence
 
-All contributions are scaled by pair reliability and decay like family evidence
-(`familyHalfLifeYears`). The `T0` relative's link confidence also applies.
+Contributions are scaled by the leftover assertion's reliability and decay like
+family evidence (`familyHalfLifeYears`, gap to the candidate's nearest mention).
+The relative X's link confidence also applies. If pass 1 already counted a
+family feature for X, the position match for X is not added again.
 
 ### 1. Position match
 
@@ -114,8 +121,8 @@ Unknown and broad terms never contradict.
 
 ### 3. Only candidate
 
-Among `T0` identities of that name within 3 steps of X, exactly one is
-compatible: allowed position, alive and of possible age at the date, not blocked.
+Among same-named `T0` identities, exactly one sits in an allowed position and
+is not blocked (death, age, distinction, contradiction).
 
 ```text
 contribution = eliminationWeight (proposed 1.5) × reliability
@@ -156,18 +163,15 @@ against the candidate's full `T0` identity. Lone mentions rely on these alone.
    same identity conflict with each other (blocks on the combined identity),
    reject all of the conflicting proposals and record them as competing. This
    keeps the result independent of order.
-6. Lone mentions and detached leftovers go through steps 3–5 with pass-1
-   evidence only.
-
 Single round. Repeating pass 2 to a fixed point would find more but breaks
 principle 3.
 
-## Expected effect on current data
+## Effect on current data
 
 | Leftover | Best candidate | Evidence | Result |
 | --- | --- | --- | --- |
-| Arnold der Ältere, 1401, `Vetter` of `eberhard_jagstberg` | `arnold_brother_of_vogt_zu_Lauda` (`PS`) | position `12 × 0.5 × 2^(-12/35) = +4.73`, only candidate `+1.5`, age-title namesake `+1`; `arnold_boxberg` contradicted (brother) | `L = 4.29`, 98.6%, attached |
-| Arnold, armiger, 1387, `consanguineus` of the Vogt | brother (`S`) vs. son `arnold_boxberg` (`C`) | both `12 × 0.3 × 2^(-6/35) ≈ +3.2`; brother also rank `+0.75`; son age `-0.7` | brother ≈ 73%, below threshold: unresolved |
+| Arnold der Ältere, 1401, `Vetter` of `eberhard_jagstberg` | `arnold_brother_of_vogt_zu_Lauda` (`PS`) | position `+4.6`, only candidate `+1.5`, age-title namesake `+1`; `arnold_boxberg` contradicted (brother) | 98.5%, attached |
+| Arnold, armiger, 1387, `consanguineus` of the Vogt | brother (`S`) vs. son `arnold_boxberg` (`C`) | brother: position `+2.56`, rank `+0.75`; son: position `+2.33`, age `-0.7` | brother 62.5%, below threshold: unresolved |
 | Konrad, Ritter, Vitztum, 1381, `Schwager` of Hans von Hirschhorn | — | Hans not in `T0` | detached, unchanged |
 
 The 1387 Arnold stays unresolved because `consanguineus` fits both brother and
@@ -195,7 +199,7 @@ weight rather than add a special rule.
 ## Required regression cases
 
 1. `Vetter` of X attaches to X's father's brother; never to X's brother.
-2. A `consanguineus` fitting both brother and son stays unresolved (margin).
+2. A `consanguineus` fitting both brother and son stays unresolved.
 3. A `Vetter` pointing only at X's brother is blocked (documents) or penalized
    (books).
 4. An attachment that creates a mention after death or an impossible age is
@@ -206,6 +210,9 @@ weight rather than add a special rule.
    leftover that only fits through the first stays unresolved.
 7. Results are identical under reversed input order.
 8. Detached leftovers and lone mentions receive no structural evidence.
+
+Cases 1–3 and the kinship-term parsing are tested in `tests/test_probability.py`.
+Cases 4–8 rely on the shared pass-1 checks and are not yet tested separately.
 
 ## Open questions
 
