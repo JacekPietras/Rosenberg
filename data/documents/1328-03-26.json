@@ -23,6 +23,17 @@
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "of": "hans_domherr_zu_wurzburg",
+          "ofTitle": [
+            "Domherr zu Würzburg"
+          ]
+        },
+        {
+          "type": "parent",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
           "of": "Eberhard von Rosenberg"
         },
         {
