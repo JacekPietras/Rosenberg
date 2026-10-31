@@ -318,6 +318,18 @@ test('sibling and kin assertions connect their single cards without inferred par
   assert.match(layout.html, />Vetter</);
 });
 
+test('siblings share a generation when compatible with recorded ancestry', () => {
+  const records = ['parent', 'a', 'b', 'child'].map((id) => ({ _treeKey: id, name: id }));
+  const edge = (type, person, of) => ({ type, person, of });
+  const layout = (relationships) => layoutFamilyGraph(records, relationships, { nodeHeight: () => 44 });
+  const ranks = (result) => Object.fromEntries(result.cards.map((card) => [card.person._treeKey, card.rank]));
+  const aligned = ranks(layout([edge('parent', 'parent', 'a'), edge('sibling', 'a', 'b'), edge('parent', 'b', 'child')]));
+  assert.equal(aligned.a, aligned.b);
+  assert.ok(aligned.parent < aligned.a && aligned.b < aligned.child);
+  const conflict = ranks(layout([edge('parent', 'parent', 'a'), edge('parent', 'a', 'b'), edge('sibling', 'a', 'b')]));
+  assert.ok(conflict.a < conflict.b, 'conflicting sibling alignment does not override ancestry');
+});
+
 
 test('hover facts use source identity pointers and keep namesakes separate', () => {
   const path = 'data/documents/example.json';

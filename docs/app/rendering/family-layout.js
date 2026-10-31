@@ -99,6 +99,37 @@ export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nod
       if (![...conflicts].some((index) => units[index].length > 1)) break;
       units = units.flatMap((unit, index) => conflicts.has(index) ? unit.map((key) => [key]) : [unit]);
     }
+    // Siblings may share a generation without being contracted into one
+    // placement unit. Accept each alignment only if ancestry remains acyclic.
+    let rankGroups = units.map((_, index) => index);
+    const groupRanks = (groups) => {
+      const ids = [...new Set(groups)], children = new Map(ids.map((id) => [id, new Set()]));
+      const indegrees = new Map(ids.map((id) => [id, 0]));
+      for (const edge of parents) {
+        const parent = groups[membership.get(edge.person)], child = groups[membership.get(edge.of)];
+        if (parent === child) return null;
+        if (!children.get(parent).has(child)) {
+          children.get(parent).add(child);
+          indegrees.set(child, indegrees.get(child) + 1);
+        }
+      }
+      const queue = ids.filter((id) => !indegrees.get(id)), result = new Map(ids.map((id) => [id, 0]));
+      for (let i = 0; i < queue.length; i++) for (const child of children.get(queue[i])) {
+        result.set(child, Math.max(result.get(child), result.get(queue[i]) + 1));
+        indegrees.set(child, indegrees.get(child) - 1);
+        if (!indegrees.get(child)) queue.push(child);
+      }
+      return queue.length === ids.length ? groups.map((id) => result.get(id)) : null;
+    };
+    if (groupRanks(rankGroups)) {
+      for (const edge of componentEdges.filter((edge) => edge.type === 'sibling')) {
+        const a = rankGroups[membership.get(edge.person)], b = rankGroups[membership.get(edge.of)];
+        if (a === b) continue;
+        const candidate = rankGroups.map((id) => id === b ? a : id);
+        const aligned = groupRanks(candidate);
+        if (aligned) { rankGroups = candidate; ranks = aligned; }
+      }
+    }
     const layers = Array.from({ length: Math.max(...ranks) + 1 }, () => []);
     units.forEach((unit, index) => { unit.sort(compare); layers[ranks[index]].push(index); });
     const familyKey = (index) => {

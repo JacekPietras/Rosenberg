@@ -5,7 +5,7 @@ import { renderFactsView } from '../components/facts_view.js?v=8';
 import { createMarkupRenderer } from '../rendering/markup.js';
 import { documentNavigationUrl } from '../rendering/navigation.js';
 import { dateSortValue } from '../rendering/dates.js';
-import { layoutFamilyGraph } from '../rendering/family-layout.js?v=7';
+import { layoutFamilyGraph } from '../rendering/family-layout.js?v=8';
 
 function svgEscape(value) {
   return String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
