@@ -153,6 +153,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 return False
         edges, siblings = [], []
         same_named_parents = defaultdict(set)
+        same_named_spouses = defaultdict(set)
         for assertion in assertions:
             if assertion.original['type'] not in RELATIONS:
                 continue
@@ -165,11 +166,15 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     same_named_parents[(right, name(assertion.mentions[0].handle))].add(left)
             elif assertion.original['type'] == 'sibling':
                 siblings.append((left, right))
-        # Same-named parents of one person should be one person; if they
-        # cannot be, the merge that gave the child both of them is wrong.
-        for parents in same_named_parents.values():
-            if len(parents) > 1:
-                union = [h for index in parents for h in components[index]]
+            elif assertion.original['type'] == 'spouse':
+                for own, (other, partner) in ((left, (right, assertion.mentions[1])), (right, (left, assertion.mentions[0]))):
+                    if new is None or own < new:
+                        same_named_spouses[(own, name(partner.handle))].add(other)
+        # Same-named parents or spouses of one person should be one person; if
+        # they cannot be, the merge that gave that person both of them is wrong.
+        for relatives in [*same_named_parents.values(), *same_named_spouses.values()]:
+            if len(relatives) > 1:
+                union = [h for index in relatives for h in components[index]]
                 if len(anchor(union)) > 1 or chronology_conflict(union):
                     return False
         return not cycle_nodes(edges) and generations_consistent(edges, siblings)
@@ -279,13 +284,14 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         if not anchor([handle]) and mention.field != 'text':
             local[scope(mention)][name(handle)].append(handle)
 
-    def partitions_of(roots, allowed, limit=500):
-        result = defaultdict(list)
+    def partitions_of(roots, allowed, size, limit=1000):
+        """Partitions into exactly `size` pairwise-compatible blocks, or None if too many."""
+        result = []
         def assign(index, blocks):
-            if sum(map(len, result.values())) >= limit:
+            if len(result) > limit or len(blocks) + len(roots) - index < size:
                 return
             if index == len(roots):
-                result[len(blocks)].append([list(block) for block in blocks])
+                result.append([list(block) for block in blocks])
                 return
             root = roots[index]
             for block in blocks:
@@ -293,34 +299,40 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     block.append(root)
                     assign(index + 1, blocks)
                     block.pop()
-            blocks.append([root])
-            assign(index + 1, blocks)
-            blocks.pop()
+            if len(blocks) < size:
+                blocks.append([root])
+                assign(index + 1, blocks)
+                blocks.pop()
         assign(0, [])
-        return None if sum(map(len, result.values())) >= limit else result
+        return None if len(result) > limit else result
 
     def passage_partitions(name_roots, current_local, limit=2000):
         involved = {root for roots in name_roots for root in roots}
         others = [group for root, group in current_local.items() if root not in involved]
         fixed = [current_local[root] for roots in name_roots if len(roots) == 1 for root in roots]
         variable = [roots for roots in name_roots if len(roots) > 1]
-        options = []
+        allowed = []
         for roots in variable:
             rest = [current_local[r] for r in involved if r not in roots]
-            allowed = {frozenset((a, b)): consistent([current_local[a] + current_local[b], *others, *rest,
-                                                      *[current_local[r] for r in roots if r not in (a, b)]], 1)
-                       for a, b in combinations(roots, 2)}
-            choices = partitions_of(roots, allowed)
-            if choices is None:
-                return []
-            options.append(choices)
+            allowed.append({frozenset((a, b)): consistent([current_local[a] + current_local[b], *others, *rest,
+                                                           *[current_local[r] for r in roots if r not in (a, b)]], 1)
+                            for a, b in combinations(roots, 2)})
+        cache = {}
+        def choices(index, size):
+            if (index, size) not in cache:
+                cache[index, size] = partitions_of(variable[index], allowed[index], size)
+            return cache[index, size]
         checked = 0
+        # Fewest people first: stop at the first total with a consistent grouping.
         for total in range(len(variable), sum(map(len, variable)) + 1):
             valid = []
-            for sizes in product(*[sorted(choice) for choice in options]):
+            for sizes in product(*[range(1, len(roots) + 1) for roots in variable]):
                 if sum(sizes) != total:
                     continue
-                for combination in product(*[choice[size] for choice, size in zip(options, sizes)]):
+                options = [choices(index, size) for index, size in enumerate(sizes)]
+                if any(option is None for option in options):
+                    return []
+                for combination in product(*options):
                     checked += 1
                     if checked > limit:
                         return []

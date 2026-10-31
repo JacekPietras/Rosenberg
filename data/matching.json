@@ -2,7 +2,7 @@
   "model": "weighted-log-odds-v3",
   "calibrated": false,
   "priorProbability": 0.05,
-  "mergeProbability": 0.85,
+  "mergeProbability": 0.8,
   "ambiguityLogOddsMargin": 1.0,
   "clusterMinimumProbability": 0.35,
   "guessWeight": 0.45,

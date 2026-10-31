@@ -81,7 +81,7 @@ The diagram defaults to parent/child and spouse lines; hovering over or focusing
 a person reveals their sibling and other kin lines as well. Children with the same recorded parents
 share a branch. In the default view, married parents use only the identifiable
 father's stem for shared children; both parent assertions remain in the evidence
-panel and appear when either connected person is hovered over or focused. The initial merge threshold is 85%, with
+panel and appear when either connected person is hovered over or focused. The merge threshold is 80%, with
 competing-candidate and cluster checks. Estimates are **uncalibrated**, not
 measured historical accuracy. The tree stores comparison probabilities, feature
 contributions, rejected alternatives, and provenance; tree and person pages

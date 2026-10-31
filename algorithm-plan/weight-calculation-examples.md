@@ -110,7 +110,7 @@ preferred candidate. If the elder is also marked deceased by 1300, the unmarked
 ## 6. Duplicate support and close rivals
 
 Candidate A receives independent evidence `+5` and candidate B `+4.8`: `L =
-2.056` (88.65%) and `L = 1.856` (86.48%). Both clear 85%, but the difference
+2.056` (88.65%) and `L = 1.856` (86.48%). Both clear 80%, but the difference
 `0.2` is below the margin `1`. Keep the assignment unresolved.
 
 Extracting A's same family assertion twice adds `0`. Reusing an inferred parent

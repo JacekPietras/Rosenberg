@@ -182,16 +182,19 @@ a relative's name that repeats across generations.
 
 Same-named people who share an identified relative (registry ID or linked
 reconstructed identity) in the same role are rarely different people: both
-siblings of Z, both parents of Z, or both children of Z. This shared relative
+siblings of Z, both parents of Z, both children of Z, or both spouses of Z. This shared relative
 contributes `sharedRelativeWeight` (`12`) instead of the ordinary weight,
 scaled by reliability, link confidence, and decay. Example: an Eberhard listed
 as brother of Arnold der Jüngere in a charter and an Eberhard listed as his
 brother in a book retelling of that charter.
 
-Consequently, a person should not keep two same-named parents. If those two
-parents cannot be one person (distinct confirmed IDs or a chronology block, for
-example one dead in 1305 and the other alive in 1332), the merge that gave the
-child both of them is blocked.
+Consequently, a person should not keep two same-named parents or two
+same-named spouses. If those two cannot be one person (distinct confirmed IDs or
+a chronology block, for example one dead in 1305 and the other alive in 1332),
+the merge that gave the person both of them is blocked. Example: once a book's
+"Irmtraut, wife of Eberhard von Rosenberg" (1327) is identified with the
+documented Irmtraut, her husband in that book merges with her documented
+husband, the Vogt zu Dürn.
 
 | Relation | Factor |
 | --- | --- |
@@ -208,10 +211,10 @@ repeated extraction or iteration adds `0`.
 ## Decisions
 
 - One global configuration in `data/matching.json`, recorded with each build.
-  Prior `0.05`, merge threshold `0.85`, rival margin `1.0` log-odds. Estimates
+  Prior `0.05`, merge threshold `0.80`, rival margin `1.0` log-odds. Estimates
   are **uncalibrated**.
-- `prior 0.05` gives initial log odds `-2.944`; `P = 0.85` needs `1.735`, so
-  about `4.679` net positive evidence is required.
+- `prior 0.05` gives initial log odds `-2.944`; `P = 0.80` needs `1.386`, so
+  about `4.331` net positive evidence is required.
 - Check blocks on every proposed complete identity, including transitive merges,
   before accepting a merge.
 - A record that fits several candidates (for example father, son, or cousin of

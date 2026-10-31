@@ -340,6 +340,17 @@ class ProbabilityTests(unittest.TestCase):
         self.assertTrue(any(f['name'].startswith('sibling family context') and f['contribution'] >= DEFAULTS['sharedRelativeWeight'] * .5 * .9
                             for c in graph['comparisons'] for f in c['features']))
 
+    def test_same_named_spouses_of_one_identified_person_merge(self):
+        inputs = self.repository([{'type': 'spouse', 'person': 'w', 'of': 'Alex von South'}], [])
+        root = inputs.root
+        (root / 'data/people.json').write_text(json.dumps([{'id': 'w', 'name': 'Bea'}]))
+        (root / 'data/books').mkdir()
+        (root / 'data/books/retold.json').write_text(json.dumps({'entries': [{'facts': [
+            {'type': 'spouse', 'person': 'Alex von South', 'of': 'Bea', 'date': '1393'}]}]}))
+        graph = build(load_inputs(root, validate=False)).evidence_graph
+        self.assertEqual(1, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
+        self.assertEqual(1, len([n for n in graph['nodes'] if n['name'] == 'Bea']))
+
     def test_repeated_parent_records_do_not_manufacture_same_named_coparents(self):
         inputs = self.repository([{'type': 'parent', 'person': 'Alex von South', 'of': 'c'}],
                                  [{'type': 'parent', 'person': 'Alex von South', 'of': 'c'}])

@@ -19,7 +19,7 @@ from .scoring import place_patterns
 
 DEFAULTS = {
     'model': 'weighted-log-odds-v3', 'calibrated': False,
-    'priorProbability': 0.05, 'mergeProbability': 0.85,
+    'priorProbability': 0.05, 'mergeProbability': 0.8,
     'ambiguityLogOddsMargin': 1.0, 'clusterMinimumProbability': 0.35,
     'guessWeight': 0.45,
     'sourceWeights': {'documents': 1.0, 'images': 1.0, 'books': 0.5, 'notes': 0.5},
@@ -412,9 +412,9 @@ class ProbabilityModel:
             # distinctive than a relative's name repeated across generations.
             weight = p['familyWeights']['anchored' if grounded else 'linked' if identity else 'spouse' if relation == 'spouse' else 'name']
             weight *= p['familyRelationFactors'][relation]
-            # Same-named siblings, parents, or children of one identified
-            # person are rarely different people.
-            if relation in {'sibling', 'parent'} and identity:
+            # Same-named siblings, parents, children, or spouses of one
+            # identified person are rarely different people.
+            if relation in {'sibling', 'parent', 'spouse'} and identity:
                 weight = max(weight, p['sharedRelativeWeight'])
             # A bare given name alone cannot bootstrap two provisional families.
             if not identity and len(relative_name.split()) < 2:

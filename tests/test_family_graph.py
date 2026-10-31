@@ -426,8 +426,9 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertFalse(graph['links'])
 
     def test_legacy_guessed_registry_resolution_cannot_bypass_probability_weights(self):
-        inputs = self.family_context_inputs(guessed=True)
-        result = build(inputs, include_guesses=True)
+        self.inputs([person('a', 'Alex'), person('other_a', 'Alex'), person('b', 'Bea')], [relation('Alex', 'b', 'spouse')])
+        self.write('data/books/independent.json', {'entries': [{'guesses': [{**relation('a', 'b', 'spouse'), 'date': '1390'}]}]})
+        result = build(load_inputs(self.root, validate=False), include_guesses=True)
         # The preceding diagnostic resolver accepts this legacy score. The
         # actual source graph must still apply the weaker guessed evidence.
         self.assertTrue(any(d.identity == 'a' and d.uses_guesses for d in result.decisions.values()))

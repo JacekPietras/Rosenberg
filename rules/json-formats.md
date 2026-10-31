@@ -490,10 +490,10 @@ retain source text references rather than being rewritten as typed facts.
 Family evidence uses exact anchors, already linked relatives, full relative
 names, and co-parent context without creating extra edges, scaled by relation
 type (parent/child and spouse above sibling above other kin). Same-named
-siblings, parents, or children of the same identified person receive the
-stronger `sharedRelativeWeight`. A merge that leaves a person with two
-same-named parents who cannot be one person (distinct confirmed IDs or a
-chronology block) is blocked. Features are capped
+siblings, parents, children, or spouses of the same identified person receive
+the stronger `sharedRelativeWeight`. A merge that leaves a person with two
+same-named parents or spouses who cannot be one person (distinct confirmed IDs
+or a chronology block) is blocked. Features are capped
 by category/relative/place; repeated extraction does not manufacture support.
 Document/image source factors are always 1.0; book/note factors are 0.5.
 Guesses receive an additional 0.45 factor by default. Pairwise evidence uses the
@@ -516,7 +516,7 @@ A confirmed ID whose own document facts conflict is reported for review and is
 not reassigned.
 
 The configuration defines the compatible-name prior (initially 0.05), merge
-threshold (0.85), reciprocal log-odds margin, age assumptions, cluster checks,
+threshold (0.80), reciprocal log-odds margin, age assumptions, cluster checks,
 and maximum rounds. Capped full-relative-name frequency adjustments use the frozen
 factual `matchingBackground`, add-one smoothing, and configurable rarity weight,
 maximum, and reference frequency. This is source representation, not population

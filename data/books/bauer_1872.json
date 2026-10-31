@@ -148,12 +148,12 @@
     },
     {
       "german": "Dem Eberhard v. R. auf Ussigheim dürfen wohl zwei Söhne beigegeben werden, nach dem cit. Brombacher Necrolog, der Conradus de Ussigheim, dessen Gemahlin Gutta 1311, März 1. gestorben ist, und Frizo de Ussigheim, armiger, † 1324, October 5, c. uxore Petrissa, † 1325, Sept. 13. (Die anderweitige Vertheilung im Stammbaum Biedermanns ist natürlich eben auch seine Combination. Weil aber die spätern Herrn von Ussigheim alle das rosenbergische Wappen führen, so stammen sie natürlich auch alle von dem nach Ussigheim verpflanzten Herrn von Rosenberg ab. Der Schluß des Biedermannschen Stammbaums lässt sich wesentlich verbessern durch unser Jahresheft 1857. S. 224.)",
-      "english": "Eberhard von Rosenberg zu Uissigheim could likely have had two sons, according to the cited Brombacher Necrologium: Konrad von Uissigheim, whose wife Gutta died on March 1, 1311, and Frizo de Uissigheim, noble, who died on October 5, 1324, with his wife Petrissa, who died on September 13, 1325. (The distribution in Biedermann's family tree is, of course, also his own interpretation. However, since all the later Herren von Uissigheim bear the Rosenberg coat of arms, they naturally all descend from the Lord of Rosenberg who relocated to Uissigheim. The conclusion of Biedermann's family tree can be significantly improved by our annual publication from 1857, p. 224).",
+      "english": "Eberhard von Rosenberg zu Uissigheim could likely have had two sons, according to the cited Brombacher Necrologium: Konrad von Uissigheim, whose wife Jutta died on March 1, 1311, and Frizo de Uissigheim, noble, who died on October 5, 1324, with his wife Petrissa, who died on September 13, 1325. (The distribution in Biedermann's family tree is, of course, also his own interpretation. However, since all the later Herren von Uissigheim bear the Rosenberg coat of arms, they naturally all descend from the Lord of Rosenberg who relocated to Uissigheim. The conclusion of Biedermann's family tree can be significantly improved by our annual publication from 1857, p. 224).",
       "facts": [
         {
           "type": "spouse",
           "person": "Konrad von Uissigheim",
-          "of": "Gutta",
+          "of": "Jutta",
           "date": "1311-03-01"
         },
         {
@@ -167,7 +167,7 @@
         },
         {
           "type": "death",
-          "person": "Gutta",
+          "person": "Jutta",
           "diedOn": "1311-03-01",
           "date": "1311-03-01"
         },
@@ -743,7 +743,7 @@
     },
     {
       "german": "A. 1353. Dns Episcopus herbip. recognovit Dnae Gutae uxori Engelhardi de Rosenberg militis super ½ decima in Boffsheim pro sua Zugelt CC florenorum tenenda quousque per dct. Engelhardum pro tot florenis redimeretur, et frater ejusdem Gutae — C. de Bickenbach sibi eam portare debet. Item D. Ep. recognovit Elisabethae uxori Conradi de Rosenberg militis super eadem decima etiam pro sua Zugelt CC florenos.... et Joannes de Seckendorf frater Elisabethae eam sibi interim portare debebit. (Würzb. Lehenbuch.)",
-      "english": "In 1353, the Lord Bishop of Würzburg acknowledged to Lady Guta, wife of Engelhard von Rosenberg, Ritter, a claim over ½ of the tithe in Boffsheim for her dowry of 200 florins, to be held until redeemed by the said Engelhard for the same amount of florins, and her brother C. von Bickenbach should bring it to her. Likewise, the Lord Bishop acknowledged to Elisabeth, wife of Konrad von Rosenberg, Ritter, a claim over the same tithe also for her dowry of 200 florins... and Hans von Seckendorf, brother of Elisabeth, should bring it to her in the meantime. (Würzburg Fief Book).",
+      "english": "In 1353, the Lord Bishop of Würzburg acknowledged to Lady Jutta, wife of Engelhard von Rosenberg, Ritter, a claim over ½ of the tithe in Boffsheim for her dowry of 200 florins, to be held until redeemed by the said Engelhard for the same amount of florins, and her brother C. von Bickenbach should bring it to her. Likewise, the Lord Bishop acknowledged to Elisabeth, wife of Konrad von Rosenberg, Ritter, a claim over the same tithe also for her dowry of 200 florins... and Hans von Seckendorf, brother of Elisabeth, should bring it to her in the meantime. (Würzburg Fief Book).",
       "facts": [
         {
           "type": "spouse",
@@ -751,12 +751,12 @@
           "personTitle": [
             "miles"
           ],
-          "of": "Guta",
+          "of": "Jutta",
           "date": "1353"
         },
         {
           "type": "sibling",
-          "person": "Guta",
+          "person": "Jutta",
           "of": "Konrad von Bickenbach",
           "date": "1353"
         },
