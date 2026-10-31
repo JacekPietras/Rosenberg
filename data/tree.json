@@ -5,7 +5,7 @@
   "inputs": {
     "data/books/arnold_von_uissigheim.json": "sha256:c71515e3ec3e5e000b71961c37caf7d99af5b956032fff1d28214a6f9e746292",
     "data/books/bauer_1872.json": "sha256:4d5324a106fa61e704f89ffb7de904e401a88e4e3b0e002e63d1a71074f262b0",
-    "data/books/bidermann_1751.json": "sha256:07e134e6b2c8f4089f532a15b22f0f63742146aaf84c98674c815dde8b32409b",
+    "data/books/bidermann_1751.json": "sha256:8d4c04494319e38bd61caaab470f5fac65d39e029ba1351c4c7d19caa6f6614e",
     "data/books/freiburger_dioecesan_archiv_1896_25.json": "sha256:1b40a37122227b1c4aad58519502e39fc0871414748b4c146c7e2c2260fc952f",
     "data/books/kreis_mosbach_1898.json": "sha256:ac51719d0903977bbab660852c307140978790f05108ddb4ee6482638e0b887f",
     "data/books/neumaier_1986.json": "sha256:e56fcea5fd69963cdbc426a9f5356b686314e1f3994024c51e339597bd1f1f72",
@@ -395,13 +395,13 @@
     "data/documents/1804-05-15.json": "sha256:42939ecfe82696ba10c2ccaf21b7729eed5a4437f1e393eb7caa6c3944835c20",
     "data/images/images.json": "sha256:4730b80c0558a21214f92b16c8b9740cc18fdc56895f05177dc9a348c13ea33e",
     "data/matching.json": "sha256:3346beefb1829f6beab72c59287f0337b8eb33c7eae92919385c359745cad737",
-    "data/names.md": "sha256:963c7e1115aed4dcbe3b4083d1e69b8bb0e7d1084fd6605fcbe0ce5e5e2be1cd",
+    "data/names.md": "sha256:a61e54dba4092ef599531b599dd4ad42de22dcaafd9f2d3d6508825170dc8b3d",
     "data/notes/notes.json": "sha256:a33e162e8b4aca9261bbc132c2f2a4aacc82f84b40f38ae52d5777a8a8510ec4",
     "data/people.json": "sha256:bfa0fa84fe11108970611571824d38ba271353f98b3a9d00afa867f07975d687",
     "data/places.json": "sha256:6de0aa90fc7ccb5cc09e136b9588acb825c18b4e6b746901105c0e55ae3b68cc",
     "data/titles.md": "sha256:804f3644a90300d6d13bd9b6718879d462f676f943878d329d68a24770ab0248"
   },
-  "fingerprint": "sha256:19bcbc61d1b749536ddf09372daa1ee92a32782de175d358aab72f1662bd5f97",
+  "fingerprint": "sha256:f5507423d2e5c2354e3b6cfc7826a1687f011cc440ded66e9aa56a43662edd17",
   "evidence": {
     "with-guesses": {
       "sources": [
@@ -1613,7 +1613,7 @@
         {
           "path": "data/books/bidermann_1751.json",
           "pointer": "/entries/30/facts/1",
-          "fingerprint": "sha256:51aaeb44ad4060c52431f8dbb66f9f9b09f932643c62fde445e3e405d57cfc16"
+          "fingerprint": "sha256:3e6774c1b41afb55e2f23777fc7d01a22b2f9286ad5f24e5678dcc8434138251"
         },
         {
           "path": "data/books/bidermann_1751.json",
@@ -1693,7 +1693,7 @@
         {
           "path": "data/books/bidermann_1751.json",
           "pointer": "/entries/34/facts/7",
-          "fingerprint": "sha256:fdb993f3477912dbc03dacc42f68c357193cb11876e8eabbb157febc12de547a"
+          "fingerprint": "sha256:52806949f9a2a1053afa967c6b32e2d368eeb48deef414ddc1a2ea94141c7171"
         },
         {
           "path": "data/books/bidermann_1751.json",
@@ -15937,7 +15937,7 @@
         },
         {
           "key": "@evidence/7a5fd35d4e7aefd9bd10",
-          "name": "Regina Kunigunda von Rosenberg",
+          "name": "Regina Kunigunde von Rosenberg",
           "titles": [],
           "dates": [
             "1586"
@@ -16224,7 +16224,7 @@
         },
         {
           "key": "@evidence/05f8f9d0206662f91197",
-          "name": "Cunigunda von Rosenberg",
+          "name": "Kunigunde von Rosenberg",
           "titles": [],
           "dates": [
             "1550"
@@ -66142,7 +66142,7 @@
               "contribution": 0.99994578
             },
             {
-              "name": "full relative name rarity: kunigunde von rosenberg (0.12% of factual references)",
+              "name": "full relative name rarity: kunigunde von rosenberg (0.14% of factual references)",
               "contribution": 0.74995933
             }
           ],
@@ -351941,7 +351941,6 @@
         "christoph von rosenberg": 5.0,
         "claus von rosenberg": 1.0,
         "closenern von arnsdorf": 1.0,
-        "cunigunda von rosenberg": 0.5,
         "deutsch ordens komtur wolfgang von bibra": 1.0,
         "diether von gauangelloch": 2.0,
         "diether von helmstadt": 0.5,
@@ -352244,7 +352243,7 @@
         "krantz von geispitzheim": 1.0,
         "kunigunde hofwart von kirchheim nee von rosenberg": 1.0,
         "kunigunde von lissberg": 8.0,
-        "kunigunde von rosenberg": 2.5,
+        "kunigunde von rosenberg": 3.0,
         "kunne von rosenberg": 1.0,
         "kuno ii von falkenstein": 1.0,
         "kuno ii von falkenstein s": 1.0,
@@ -352345,7 +352344,7 @@
         "philipp von weinsberg": 0.5,
         "puschbeck von calmunz": 1.0,
         "raban von helmstadt": 1.0,
-        "regina kunigunda von rosenberg": 1.0,
+        "regina kunigunde von rosenberg": 1.0,
         "reichart von rosenberg": 1.0,
         "reinbot streckfuss": 2.0,
         "reinhard von dienheim": 1.0,
