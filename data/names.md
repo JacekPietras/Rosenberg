@@ -30,6 +30,6 @@ Raban, Rabanus
 Wenceslaus, Wenzel
 Kraft, Krafto
 Götz, Goetz
-Kunigunde, Kunnegunt, Kunnigund
+Kunigunde, Kunnegunt, Kunnigund, Kunegunde, Kunegunt, Kunegunth, Konigunt, Kunigunda, Kunigundis, Cunegunda, Cunigunda, Conegundis
 Margaretha, Margretha
 Jutta, Juta, Guta, Gutta
