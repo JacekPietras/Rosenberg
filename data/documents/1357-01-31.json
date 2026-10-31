@@ -9,7 +9,7 @@
       "english": "I, Eberhard von Rosenberg der Jüngere, and Margareth von Thüngen, wife of the late Eberhard von Rosenberg der Ältere, publicly acknowledge by this letter, for ourselves and all our heirs, and make known to all who see or hear it read: We have bought from the noble, well-born lord and lady, Junker Eberhart, Count of Wertheim, and Lady Katherine, his lawful wife, and all their heirs, the village of Uffingen and whatever belongs to it, whether jurisdiction, water or pasture, in field and in village, and in addition all the people who belong to Uffingen and Schweigern, and all revenues, rights and customs that they have there at Schweigern, excepting their church patronage rights (kirchensetze) and their Mannlehen, and in addition all their people whom they have from Lauda to Heckefeld, from Heckefeld to Buchen, from Buchen to Gerichtstetten, and from Gerichtstetten to Buchheim, along the true route, without fraud. [These are] drawn from the purchase described below, and [?] us and our heirs, rightfully and properly bought for 1,400 good small, well-weighted gulden of Florence, as they are called, according to the letters that they have given us and our heirs about it. Therefore, for ourselves and our heirs, we have done the aforementioned lord and lady, Count Eberhart and Lady Katherine, and their heirs the kindness, of our own good free will, and declare with this document, that they may buy back the aforementioned village of Uffingen and Schweigern and everything included in the aforementioned purchase from us and our heirs within the next ten consecutive years, every year fourteen days before St. Peter's Day, as he was set on the chair, or fourteen days after it, for 1,400 good well-weighted gulden or for such currency in gold or silver as is current and acceptable there, without fraud. And in the matter of the buyback we shall be obedient to them and their heirs within the aforementioned terms, as set out above, without any objection. If the buyback does not take place within the aforementioned ten years, the purchase shall henceforth stand without any objection from them or their heirs. Also, we and our heirs shall receive as fief from the aforementioned lord Count Eberhart, Lady Katherine and their heirs the aforementioned goods, people and villages and whatever is included in the aforementioned purchase, and hold them as fief according to feudal law, without objection. Should we or our heirs be subject to a claim concerning the aforementioned goods, jurisdictions or customs, from them or their heirs, or on behalf of their or our heirs, in whatever way, they and their heirs shall defend us and our heirs in the same property according to the custom of the land, as feudal law provides, in the same manner and with the same rights as they and the lordship of Wertheim have held and practised until now, without objection. Also, the aforementioned people, goods, villages and jurisdictions, and whatever is included in the aforementioned purchase, shall remain and settle with us and our heirs in all the rights and customs in which they have hitherto remained and settled with the aforementioned lord Count Eberhart, Lady Katherine and the lordship of Wertheim. It is, however, agreed that we shall enjoy and use these goods as our own property, except that we shall not impose higher Bede on the people than the aforementioned lord Count Eberhart, Lady Katherine and the lordship of Wertheim have customarily requested until now, without fraud. And in witness and for greater security of all the things written above, we give to the aforementioned lord and lady, Junker Eberhart, Count of Wertheim, and Lady Katherine, his lawful wife, and all their heirs this our open letter, for ourselves and all our heirs, with our pendant seals, which have been attached with our knowledge. Given after the birth of Christ thirteen hundred years, and after that in the fifty-seventh year, on the Tuesday before Our Lady's Day Candlemas, which in Latin is called Purificatio.",
       "facts": [
         {
-          "person": "Margaretha von Thüngen",
+          "person": "margaretha_von_thungen",
           "type": "spouse",
           "of": "Eberhard von Rosenberg",
           "ofTitle": [
@@ -31,10 +31,10 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "bought the village of Uffingen jointly with Margaretha von Thüngen from Eberhard, Count of Wertheim, and Katherine."
+          "content": "bought the village of Uffingen jointly with [margaretha_von_thungen] from Eberhard, Count of Wertheim, and Katherine."
         },
         {
-          "person": "Margaretha von Thüngen",
+          "person": "margaretha_von_thungen",
           "type": "generic",
           "content": "bought the village of Uffingen jointly with Eberhard von Rosenberg der Jüngere from Eberhard, Count of Wertheim, and Katherine."
         },
@@ -44,10 +44,10 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "bought the people and rights at Schweigern jointly with Margaretha von Thüngen from Eberhard, Count of Wertheim, and Katherine."
+          "content": "bought the people and rights at Schweigern jointly with [margaretha_von_thungen] from Eberhard, Count of Wertheim, and Katherine."
         },
         {
-          "person": "Margaretha von Thüngen",
+          "person": "margaretha_von_thungen",
           "type": "generic",
           "content": "bought the people and rights at Schweigern jointly with Eberhard von Rosenberg der Jüngere from Eberhard, Count of Wertheim, and Katherine."
         },
@@ -57,7 +57,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "bought Schweigern jointly with Margaretha von Thüngen, subject to the sellers’ retained church-patronage and Mannlehen rights."
+          "content": "bought Schweigern jointly with [margaretha_von_thungen], subject to the sellers’ retained church-patronage and Mannlehen rights."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -84,7 +84,7 @@
           "content": "was to hold the purchased property as a fief from Eberhard, Count of Wertheim, and Katherine."
         },
         {
-          "person": "Margaretha von Thüngen",
+          "person": "margaretha_von_thungen",
           "type": "generic",
           "content": "was to hold the purchased property as a fief from Eberhard, Count of Wertheim, and Katherine."
         },
@@ -94,10 +94,10 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "agreed with Margaretha von Thüngen not to exact higher Bede from the people than the Wertheim lordship had customarily demanded."
+          "content": "agreed with [margaretha_von_thungen] not to exact higher Bede from the people than the Wertheim lordship had customarily demanded."
         },
         {
-          "person": "Margaretha von Thüngen",
+          "person": "margaretha_von_thungen",
           "type": "generic",
           "content": "agreed with Eberhard von Rosenberg der Jüngere not to exact higher Bede from the people than the Wertheim lordship had customarily demanded."
         },
@@ -110,7 +110,7 @@
           "content": "sealed the document with a pendant seal."
         },
         {
-          "person": "Margaretha von Thüngen",
+          "person": "margaretha_von_thungen",
           "type": "generic",
           "content": "sealed the document with a pendant seal."
         },
