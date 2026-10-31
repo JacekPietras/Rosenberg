@@ -34,7 +34,7 @@ function typedText(fact, participant, literal) {
     return `${participant(fact.person, fact.personTitle)} ${when}${circumstances}.`;
   }
   const person = participant(fact.person, fact.personTitle);
-  if (fact.type === 'generic') return `${person}${fact.personDeceased === true ? ' (deceased)' : ''}: ${literal(fact.content || '')}`;
+  if (fact.type === 'generic') return `${person}${fact.personDeceased === true ? ' (deceased)' : ''} ${literal(fact.content || '')}`;
   const other = participant(fact.of, fact.ofTitle);
   if (fact.type === 'kin') return `${person} is kin of ${other} (${literal(fact.term || '')}).`;
   return RELATIONS[fact.type] ? `${person} ${RELATIONS[fact.type]} ${other}.` : '';

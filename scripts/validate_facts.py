@@ -300,7 +300,9 @@ class Validator:
             if kind == 'kin' and 'term' in fact and not self.nonblank(fact['term']):
                 self.report(location + '/term', 'expected a non-empty kinship term string')
         if 'date' in fact:
-            if document_source and inherited is not MISSING and fact['date'] == inherited:
+            if document_source and kind == 'generic':
+                self.report(location + '/date', 'generic document facts and guesses cannot have a date; inherit the enclosing date')
+            elif document_source and inherited is not MISSING and fact['date'] == inherited:
                 self.report(
                     location + '/date',
                     'redundant document date; omit this field to inherit the enclosing document or entry date',

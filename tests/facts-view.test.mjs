@@ -359,11 +359,11 @@ test('person and place fact rows link to the correct source entry after sorting'
 
 test('generic facts render linked subjects, titles, deceased status and escaped bodies', () => {
   const people = [{ id: 'arnold', name: 'Arnold von Rosenberg' }];
-  const fact = { type: 'generic', person: 'arnold', personTitle: ['Ritter', 'zu Boxberg'], personDeceased: true, content: 'Held property at Boxberg <script>.' };
-  assert.equal(factText(fact, people), 'Arnold von Rosenberg, Ritter, zu Boxberg (deceased): Held property at Boxberg <script>.');
+  const fact = { type: 'generic', person: 'arnold', personTitle: ['Ritter', 'zu Boxberg'], personDeceased: true, content: 'held property at Boxberg <script>.' };
+  assert.equal(factText(fact, people), 'Arnold von Rosenberg, Ritter, zu Boxberg (deceased) held property at Boxberg <script>.');
   const html = renderFactsView([fact], { ...options, people });
-  assert.match(html, /href="\?person=arnold">Arnold von Rosenberg<\/a>, Ritter, zu Boxberg \(deceased\): Held property at Boxberg &lt;script&gt;\./);
+  assert.match(html, /href="\?person=arnold">Arnold von Rosenberg<\/a>, Ritter, zu Boxberg \(deceased\) held property at Boxberg &lt;script&gt;\./);
   assert.equal(factPersonMatch(fact, 'arnold', people), 'direct');
   assert.equal(factPersonMatch(fact, 'Arnold von Rosenberg', people), 'direct');
-  assert.equal(factText({ type: 'generic', person: 'Unknown', content: 'Witnessed the agreement.' }), 'Unknown: Witnessed the agreement.');
+  assert.equal(factText({ type: 'generic', person: 'Unknown', content: 'witnessed the agreement.' }), 'Unknown witnessed the agreement.');
 });

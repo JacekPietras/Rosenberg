@@ -80,9 +80,16 @@ title or generic fact. For example, a spouse fact can stand alone:
 
 A `generic` object requires `person` and a non-empty `content` string. `person` identifies the
 subject using the same normalized name or confirmed ID rules as other types. Keep `content` a
-simple English fact body, for example `"Witnessed the agreement at Boxberg."`; avoid repeating the
-subject's name or titles. Record source-stated titles and deceased status in `personTitle` and
-`personDeceased`. Optional `date` follows the shared date rules. Do not use `of`, `ofTitle`, or
+simple English continuation of a fact about the subject, for example
+`"witnessed the agreement at Boxberg."`. `content` must not repeat the subject's name or titles;
+store those only in `person` and `personTitle`. Begin with the predicate (normally a lowercase
+verb) so the viewer and search output can display `<name> <titles> <content>` as one sentence,
+without a colon between the subject and body. For example, `person: "Arnold von Rosenberg"`,
+`personTitle: ["Ritter", "zu Boxberg"]`, and `content: "witnessed the agreement at Boxberg."`
+display as `Arnold von Rosenberg, Ritter, zu Boxberg witnessed the agreement at Boxberg.`
+Names of other participants may appear in `content` when needed to state the claim. Record source-stated titles and deceased status in `personTitle` and
+`personDeceased`. In books and notes, `date` is required; in documents, it must be omitted and the
+generic fact inherits the enclosing historical date. Elsewhere, `date` follows the shared date rules. Do not use `of`, `ofTitle`, or
 `ofDeceased` on generic objects. Use the more specific supported type for relationships, title
 attestations, and dated deaths. The same format applies to guesses.
 
@@ -179,11 +186,12 @@ Fact-level dates are valid calendar dates using only the source's precision:
 field is required. Null values are not accepted; omit unnecessary optional fields instead of filling
 them with `null`.
 
-In documents, an explicit fact date overrides the entry/document date. Without it, inherit the
+In documents, an explicit date on a non-generic fact overrides the entry/document date. Generic
+facts and guesses cannot have a `date` field. Without an explicit date, inherit the
 nearest enclosing historical date, normally the entry's date or the document-level date. Preserve
 existing inherited document intervals (`YYYY-YYYY`, ISO endpoints separated by `/` or `--`) as
-intervals; do not reduce them to a single day. A typed fact with neither a historical date to
-inherit nor its own date must supply a valid historical date. Omit a fact-level `date` when it
+intervals; do not reduce them to a single day. A generic fact must have an enclosing historical
+date; another typed fact without one must supply its own valid historical date. Omit a fact-level `date` when it
 repeats the enclosing document or entry date; the fact inherits that date. Keep an explicit date
 only when it records a different historical date, such as a death date stated in the document.
 
@@ -218,7 +226,7 @@ resolved person. Review source evidence and data diffs as well.
           "date": "1399-02-01",
           "type": "generic",
           "person": "Example person",
-          "content": "Witnessed the agreement at Boxberg."
+          "content": "witnessed the agreement at Boxberg."
         }
       ],
       "diagram": "Optional diagram data"
@@ -249,7 +257,7 @@ Book facts follow the shared Facts JSON rules above. Every fact and guess uses a
         {
           "type": "generic",
           "person": "Example person",
-          "content": "Witnessed the agreement at Boxberg."
+          "content": "witnessed the agreement at Boxberg."
         }
       ],
       "img": [
@@ -275,7 +283,7 @@ Book facts follow the shared Facts JSON rules above. Every fact and guess uses a
 ```
 
 Documents have a document-level `date` and an `entries` array. Each entry retains `source`,`german`,
-`english`, and `facts`. Its `facts` array follows the shared Facts JSON rules above: every fact and guess is typed, and facts normally inherit the document date unless overridden.
+`english`, and `facts`. Its `facts` array follows the shared Facts JSON rules above: every fact and guess is typed, generic objects inherit the enclosing date, and other types normally inherit it unless overridden.
 
 The optional document-level `label` may be a string or an array of strings. Each label is displayed
 as a red badge. The special label `"important"` gives the document a reddish background; `"Hessen"`,

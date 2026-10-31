@@ -13,8 +13,9 @@ explicit, and written in English, except for historically meaningful German or
 Latin names, titles, places, and epithets. Make one assertion per fact. Keep
 facts in the source entry; use the typed formats in `rules/json-formats.md`
 for every fact and guess. Use `generic` with `person` and a simple, atomic
-`content` body for claims outside the supported relationship, title, and death
-types. Optional `personTitle` and `personDeceased` describe the subject; dates
+`content` continuation for claims outside the supported relationship, title, and death
+types. Do not repeat the subject's name or titles in `content`; begin with the predicate
+so the name, titles, and content read as one sentence. Optional `personTitle` and `personDeceased` describe the subject; dates
 follow the shared rules. Untyped facts and guesses are not supported.
 
 Extract each explicitly stated family relationship as a separate typed fact:

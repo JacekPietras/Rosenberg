@@ -107,6 +107,17 @@ class FactValidatorTests(unittest.TestCase):
                     with self.subTest(relative=relative, strict=strict, field=field):
                         self.assertEqual(2, len(self.errors(self.check(value, relative, strict))))
 
+    def test_dated_text_only_fact_is_rejected(self):
+        item = {
+            'date': '1336',
+            'text': 'Arnold von Uissigheim led the anti-Jewish violence as König Armleder during the summer.',
+        }
+        for relative in ('documents/test.json', 'books/test.json', 'notes/test.json'):
+            for field in ('facts', 'guesses'):
+                with self.subTest(relative=relative, field=field):
+                    errors = self.errors(self.check({'date': '1336', field: [item]}, relative))
+                    self.assertTrue(any(error.location.endswith('/type') for error in errors))
+
     def test_generic_schema_and_dates_for_facts_and_guesses(self):
         for field in ('facts', 'guesses'):
             for relative in ('documents/test.json', 'books/test.json', 'notes/test.json'):
@@ -118,6 +129,11 @@ class FactValidatorTests(unittest.TestCase):
                 if 'date' in item:
                     del item['date']
                     self.assertTrue(self.errors(self.check(value, relative)))
+                else:
+                    for date in ('1395', '1395-04-12', None):
+                        with self.subTest(field=field, relative=relative, date=date):
+                            item['date'] = date
+                            self.assertTrue(self.errors(self.check(value, relative)))
         for item in (self.generic(content=' '), self.generic(content=None), self.generic(content=[]),
                      self.generic(person=''), self.generic(personTitle=[]),
                      self.generic(personDeceased='true'), self.generic(of='Other'),
