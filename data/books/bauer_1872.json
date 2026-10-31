@@ -292,7 +292,7 @@
         {
           "type": "generic",
           "person": "Arnold von Rosenberg",
-          "content": "exchanged a wine tithe with Seligenthal monastery together with Eberhard von Rosenberg and Wipert von Rosenberg.",
+          "content": "exchanged a wine tithe with Seligenthal monastery together with Eberhard von Rosenberg and Wiprecht von Rosenberg.",
           "personTitle": [
             "miles"
           ],
@@ -301,12 +301,12 @@
         {
           "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "exchanged a wine tithe with Seligenthal monastery together with Arnold von Rosenberg and Wipert von Rosenberg.",
+          "content": "exchanged a wine tithe with Seligenthal monastery together with Arnold von Rosenberg and Wiprecht von Rosenberg.",
           "date": "1321"
         },
         {
           "type": "generic",
-          "person": "Wipert von Rosenberg",
+          "person": "wiprecht_von_rosenberg",
           "content": "exchanged a wine tithe with Seligenthal monastery together with Arnold and Eberhard von Rosenberg.",
           "date": "1321"
         }
