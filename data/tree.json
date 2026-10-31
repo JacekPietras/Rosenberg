@@ -269,7 +269,7 @@
     "data/documents/1422.json": "sha256:6a854ecc2bff2e106cc1daa0c9e01cf538dfeb6f1a7db2ce2cb843487e623a62",
     "data/documents/1423-04-23.json": "sha256:59fa2079fe8148ed3ff3d32e7ac3315f04a61e0b2a4390676e7515fb5bdb05c8",
     "data/documents/1423-08-13.json": "sha256:91da3c2b6081b0acea861d2edb659f6026405d2c442284002e12ab1193074e36",
-    "data/documents/1424-02-22.json": "sha256:614de60b4b3c661a7c8cf44ade60ad98c02bdcaaa787b9453fa43efe714a9ea9",
+    "data/documents/1424-02-22.json": "sha256:2f73e557cbe37b88a0f846b09a5015e7692c2df65102f65090bd0711482ebf49",
     "data/documents/1425.json": "sha256:314c39a0471835164f01fc68fab29ca72a5a29554aa099b867adc6f9243dc6bf",
     "data/documents/1425_2.json": "sha256:a62e22e0a24969fa1e2b245ffecad594eb69b0747c02c83e2a3e9223928350ac",
     "data/documents/1426-06-24.json": "sha256:c7d2377ad8531459e6ab917b30ceac972d00e21b0b107810deda462d7cba314e",
@@ -277,7 +277,7 @@
     "data/documents/1428-07-05.json": "sha256:b0cfcde6a1daa31199b2279794e697827711a3d1ce5fc3adaf8c58f86377838c",
     "data/documents/1429-08-01.json": "sha256:29659f409c9a0836a9921ee260635b2e9bd19e9b08f68c291109e751c4ca6ce7",
     "data/documents/1429-09-11.json": "sha256:556905e6d35878d05dcb2da5e85512e7a0b8a1e5143dfa620bf05e0516d48221",
-    "data/documents/1429.json": "sha256:c655508d8577014a2ee0943013bb554d19a440f9cf04495139cb03103994664e",
+    "data/documents/1429.json": "sha256:a01c2f8b41ecb7edb699bc1ed7e35460ec111549a7fb51b813089480d64ac94a",
     "data/documents/1430-06-09.json": "sha256:ade847befe8fe11a5efaad60dc939dbed6d597685d1f0163788d564b59945d6f",
     "data/documents/1431-08-06.json": "sha256:a2c920f6b0f2c674d39945fa824e0698d9a86a48739dd1a16d3f4bfc7c202443",
     "data/documents/1433-03-14.json": "sha256:b47463bd3ec37881bcefd35444642685e490640259d9f4054686fc9c6082cc13",
@@ -289,7 +289,7 @@
     "data/documents/1435.json": "sha256:25574ebd4a3bb99733aa561b8b86073c29ef6aeee87850001f34346cc677d80e",
     "data/documents/1436-01-05.json": "sha256:29e45b89bd8cfeee2287879c14761dc423f0a4ce1a0079e9cb1bd38e1088f1dd",
     "data/documents/1436-01-28.json": "sha256:813e32bfbdb29d3fdba2fd1cba846580aa200b21bbeb302a991c38e349e3a46b",
-    "data/documents/1436-03-11.json": "sha256:94e87987e24495af1d781bbfa77968c37c8ed506fcea98bf6dcd86d45f24a325",
+    "data/documents/1436-03-11.json": "sha256:fb60f15125263a6c86fb7a006f7a0fb36a8bb195d2e516840ff826b40f50b2d1",
     "data/documents/1436-10-05.json": "sha256:66d0a4b5543cf8c8bf58ebd3a634bd3ee1e09f2b38ba844f8022f0af1acd6f19",
     "data/documents/1436.json": "sha256:25997c8d855fade3205c7027d15cd2ebe35a3e3613008a8b7615b73bfea32386",
     "data/documents/1437-08-18.json": "sha256:4121b268889fb0ba9788af3a491b72b8701c2e66c207b40daae9b51782020a81",
@@ -395,13 +395,13 @@
     "data/documents/1804-05-15.json": "sha256:42939ecfe82696ba10c2ccaf21b7729eed5a4437f1e393eb7caa6c3944835c20",
     "data/images/images.json": "sha256:4730b80c0558a21214f92b16c8b9740cc18fdc56895f05177dc9a348c13ea33e",
     "data/matching.json": "sha256:3346beefb1829f6beab72c59287f0337b8eb33c7eae92919385c359745cad737",
-    "data/names.md": "sha256:a61e54dba4092ef599531b599dd4ad42de22dcaafd9f2d3d6508825170dc8b3d",
+    "data/names.md": "sha256:3a656424f1919cd870e3343b138b793003cab9b341e5b88cfbfe8ed24a888deb",
     "data/notes/notes.json": "sha256:a33e162e8b4aca9261bbc132c2f2a4aacc82f84b40f38ae52d5777a8a8510ec4",
     "data/people.json": "sha256:bfa0fa84fe11108970611571824d38ba271353f98b3a9d00afa867f07975d687",
     "data/places.json": "sha256:6de0aa90fc7ccb5cc09e136b9588acb825c18b4e6b746901105c0e55ae3b68cc",
     "data/titles.md": "sha256:804f3644a90300d6d13bd9b6718879d462f676f943878d329d68a24770ab0248"
   },
-  "fingerprint": "sha256:f5507423d2e5c2354e3b6cfc7826a1687f011cc440ded66e9aa56a43662edd17",
+  "fingerprint": "sha256:7ac2f2abe7b6aaff5190104db4831c165739c576f2230d8c8a79ed9aad6b4f65",
   "evidence": {
     "with-guesses": {
       "sources": [
@@ -5508,12 +5508,12 @@
         {
           "path": "data/documents/1424-02-22.json",
           "pointer": "/entries/0/facts/4",
-          "fingerprint": "sha256:2eb4e0045122c5d747f121512a2e608c5e152589035798aaa4befdde1380a96f"
+          "fingerprint": "sha256:0b06c80f87f03122eed594f26f33cc9a2a0495bb615138edc87ea7aa4e6c5ee5"
         },
         {
           "path": "data/documents/1424-02-22.json",
           "pointer": "/entries/0/facts/5",
-          "fingerprint": "sha256:1b54b4cdecbe521d0bb98c803b77ca5ddf64e2c4d33344f9ef60ea9852aa2bd3"
+          "fingerprint": "sha256:81dc96fc60ce08927d4682960e61ea5b38fd918247af98c906974febcb75d600"
         },
         {
           "path": "data/documents/1424-02-22.json",
@@ -5593,12 +5593,12 @@
         {
           "path": "data/documents/1429.json",
           "pointer": "/entries/0/facts/1",
-          "fingerprint": "sha256:6bd525a7c848ff3fec4edbca03e9e9e9a8a709aa7b977faeace83c81511da348"
+          "fingerprint": "sha256:42e9ec0e757e8bf84e12b47cf6e85195480bc91f6e8008ebbe6255ba5e64cd37"
         },
         {
           "path": "data/documents/1429.json",
           "pointer": "/entries/0/facts/2",
-          "fingerprint": "sha256:1b54b4cdecbe521d0bb98c803b77ca5ddf64e2c4d33344f9ef60ea9852aa2bd3"
+          "fingerprint": "sha256:81dc96fc60ce08927d4682960e61ea5b38fd918247af98c906974febcb75d600"
         },
         {
           "path": "data/documents/1434-01-05.json",
@@ -5708,7 +5708,7 @@
         {
           "path": "data/documents/1436-03-11.json",
           "pointer": "/entries/0/facts/3",
-          "fingerprint": "sha256:1b54b4cdecbe521d0bb98c803b77ca5ddf64e2c4d33344f9ef60ea9852aa2bd3"
+          "fingerprint": "sha256:81dc96fc60ce08927d4682960e61ea5b38fd918247af98c906974febcb75d600"
         },
         {
           "path": "data/documents/1436-10-05.json",
@@ -25076,7 +25076,7 @@
         },
         {
           "key": "@evidence/899a51ca8fbfb613cf9c",
-          "name": "Gute",
+          "name": "Jutta",
           "titles": [],
           "dates": [
             "1424-02-22",
@@ -64842,6 +64842,126 @@
           "reason": "an omitted surname requires family or identifying-title support; shared geography and associates are insufficient",
           "person": "jutta_wife_of_konrad",
           "candidate": "@evidence/1016749944ed5be34cd5",
+          "usesGuesses": true
+        },
+        {
+          "probability": 0.0,
+          "logOdds": -22.94443898,
+          "features": [
+            {
+              "name": "age: at least 141 years old by 1436",
+              "contribution": -10.0
+            },
+            {
+              "name": "mention after recorded death",
+              "contribution": -10.0
+            }
+          ],
+          "sources": [
+            31,
+            33,
+            465,
+            475,
+            476,
+            477,
+            478,
+            490,
+            1016,
+            1017,
+            1018,
+            1019,
+            1020,
+            1021,
+            1022,
+            1036,
+            1037,
+            1038,
+            1057,
+            1058,
+            1059,
+            1060
+          ],
+          "mentions": [
+            "data/books/bauer_1872.json#/entries/11/facts/0/of",
+            "data/documents/1424-02-22.json#/entries/0/facts/4/person"
+          ],
+          "iteration": 6,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "jutta_wife_of_konrad",
+          "candidate": "@evidence/899a51ca8fbfb613cf9c",
+          "usesGuesses": true
+        },
+        {
+          "probability": 0.0,
+          "logOdds": -22.94443898,
+          "features": [
+            {
+              "name": "age: at least 134 years old by 1429",
+              "contribution": -10.0
+            },
+            {
+              "name": "mention after recorded death",
+              "contribution": -10.0
+            }
+          ],
+          "sources": [
+            31,
+            33,
+            465,
+            475,
+            476,
+            477,
+            478,
+            490,
+            1037,
+            1038
+          ],
+          "mentions": [
+            "data/books/bauer_1872.json#/entries/11/facts/0/of",
+            "data/documents/1429.json#/entries/0/facts/1/person"
+          ],
+          "iteration": 0,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "jutta_wife_of_konrad",
+          "candidate": "@evidence/899a51ca8fbfb613cf9c",
+          "usesGuesses": true
+        },
+        {
+          "probability": 0.0,
+          "logOdds": -22.94443898,
+          "features": [
+            {
+              "name": "age: at least 141 years old by 1436",
+              "contribution": -10.0
+            },
+            {
+              "name": "mention after recorded death",
+              "contribution": -10.0
+            }
+          ],
+          "sources": [
+            31,
+            33,
+            465,
+            475,
+            476,
+            477,
+            478,
+            490,
+            1059,
+            1060
+          ],
+          "mentions": [
+            "data/books/bauer_1872.json#/entries/11/facts/0/of",
+            "data/documents/1436-03-11.json#/entries/0/facts/3/person"
+          ],
+          "iteration": 0,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "jutta_wife_of_konrad",
+          "candidate": "@evidence/899a51ca8fbfb613cf9c",
           "usesGuesses": true
         },
         {
@@ -346421,7 +346541,7 @@
               "contribution": 1.59771971
             },
             {
-              "name": "shared family context: gute",
+              "name": "shared family context: jutta",
               "contribution": 10.89873559
             }
           ],
@@ -346982,7 +347102,7 @@
               "contribution": 1.59771971
             },
             {
-              "name": "parent family context: gute",
+              "name": "parent family context: jutta",
               "contribution": 10.89873559
             }
           ],
@@ -347020,7 +347140,7 @@
               "contribution": 1.50224865
             },
             {
-              "name": "parent family context: gute",
+              "name": "parent family context: jutta",
               "contribution": 10.61470849
             }
           ],
@@ -347271,7 +347391,7 @@
           "logOdds": 7.67026951,
           "features": [
             {
-              "name": "shared family context: gute",
+              "name": "shared family context: jutta",
               "contribution": 10.61470849
             }
           ],
@@ -347636,7 +347756,7 @@
               "contribution": 1.50224865
             },
             {
-              "name": "parent family context: gute",
+              "name": "parent family context: jutta",
               "contribution": 10.61470849
             }
           ],
@@ -352454,7 +352574,7 @@
       "reconstructedPeople": 633,
       "reconstructedRelationships": 443,
       "contextualLinks": 435,
-      "candidateComparisons": 3302,
+      "candidateComparisons": 3305,
       "contextCoverage": {
         "total": 1837,
         "attached": 770,

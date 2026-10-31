@@ -32,4 +32,4 @@ Kraft, Krafto
 Götz, Goetz
 Kunigunde, Kunnegunt, Kunnigund, Kunegunde, Kunegunt, Kunegunth, Konigunt, Kunigunda, Kunigundis, Cunegunda, Cunigunda, Conegundis
 Margaretha, Margretha
-Jutta, Juta, Guta, Gutta
+Jutta, Juta, Guta, Gutta, Gute

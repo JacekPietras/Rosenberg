@@ -10,13 +10,13 @@
         "Bishop Johann von Brunn added 500 florins to the 4,000 florins owed to Gute, widow of Ulrich von Rosenberg, and her son Anselm von Rosenberg, secured on Brassoldshaim.",
         {
           "type": "spouse",
-          "person": "Gute",
+          "person": "Jutta",
           "of": "Ulrich von Rosenberg",
           "ofDeceased": true
         },
         {
           "type": "parent",
-          "person": "Gute",
+          "person": "Jutta",
           "of": "Anselm von Rosenberg"
         }
       ],
