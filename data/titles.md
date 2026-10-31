@@ -5,4 +5,5 @@ Vizedom, Vicedom, Vitzthum, Vitztum, Viztum, vicedominus
 Keller, Kelner, cellerarius
 Domherr, canonicus, Kanoniker, Kanonikus
 Schultheiß, Schultheiss, scultetus
+Ritter, miles
 der Rote, Rufus
