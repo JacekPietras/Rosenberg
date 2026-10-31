@@ -16,6 +16,17 @@
           ],
           "type": "title"
         }
+      ],
+      "guesses": [
+        {
+          "person": "Margaretha von Thüngen",
+          "type": "parent",
+          "of": "vogt_zu_Lauda",
+          "ofTitle": [
+            "der Junge",
+            "genannt von Thüngen"
+          ]
+        }
       ]
     }
   ]
