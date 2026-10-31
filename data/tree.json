@@ -289,7 +289,7 @@
     "data/documents/1435.json": "sha256:25574ebd4a3bb99733aa561b8b86073c29ef6aeee87850001f34346cc677d80e",
     "data/documents/1436-01-05.json": "sha256:29e45b89bd8cfeee2287879c14761dc423f0a4ce1a0079e9cb1bd38e1088f1dd",
     "data/documents/1436-01-28.json": "sha256:813e32bfbdb29d3fdba2fd1cba846580aa200b21bbeb302a991c38e349e3a46b",
-    "data/documents/1436-03-11.json": "sha256:fb60f15125263a6c86fb7a006f7a0fb36a8bb195d2e516840ff826b40f50b2d1",
+    "data/documents/1436-03-11.json": "sha256:276700e24890c9e62b21323bdf8208d7dca99c8770eaf8c333a5e17b2cc9398d",
     "data/documents/1436-10-05.json": "sha256:66d0a4b5543cf8c8bf58ebd3a634bd3ee1e09f2b38ba844f8022f0af1acd6f19",
     "data/documents/1436.json": "sha256:25997c8d855fade3205c7027d15cd2ebe35a3e3613008a8b7615b73bfea32386",
     "data/documents/1437-08-18.json": "sha256:4121b268889fb0ba9788af3a491b72b8701c2e66c207b40daae9b51782020a81",
@@ -401,7 +401,7 @@
     "data/places.json": "sha256:6de0aa90fc7ccb5cc09e136b9588acb825c18b4e6b746901105c0e55ae3b68cc",
     "data/titles.md": "sha256:804f3644a90300d6d13bd9b6718879d462f676f943878d329d68a24770ab0248"
   },
-  "fingerprint": "sha256:7ac2f2abe7b6aaff5190104db4831c165739c576f2230d8c8a79ed9aad6b4f65",
+  "fingerprint": "sha256:4b6f36c839aa2969677c02dbb0be419b2529d936d995be6c348d0c2a4e3b6469",
   "evidence": {
     "with-guesses": {
       "sources": [
@@ -5703,7 +5703,7 @@
         {
           "path": "data/documents/1436-03-11.json",
           "pointer": "/entries/0/facts/2",
-          "fingerprint": "sha256:b9d39e88ba2e0d3cde70d829cc69c1dc9f582e6e25b9aea4bb1fd261da1666ad"
+          "fingerprint": "sha256:3c131c27c8c390f36e6d98953b7cdef22e0b1fea03ff1c74ad0f77afa37295cb"
         },
         {
           "path": "data/documents/1436-03-11.json",
@@ -25033,15 +25033,16 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/d5266a14137d953f688d",
+          "key": "@evidence/5b40baf8cf4d4c61e2d4",
           "name": "Ulrich von Rosenberg",
           "titles": [],
           "dates": [
             "1424-02-22",
-            "1429"
+            "1429",
+            "1436-03-11"
           ],
           "status": "contextual",
-          "identityProbability": 0.99998562,
+          "identityProbability": 0.99953373,
           "mentions": [
             {
               "source": 1020,
@@ -25057,6 +25058,11 @@
               "source": 1037,
               "field": "of",
               "date": "1429"
+            },
+            {
+              "source": 1059,
+              "field": "person",
+              "date": "1436-03-11"
             }
           ],
           "identitySources": [
@@ -25386,24 +25392,6 @@
               "source": 1053,
               "field": "person",
               "date": "1435-09-18"
-            }
-          ],
-          "identitySources": []
-        },
-        {
-          "key": "@evidence/2a54b8dbf6d1cdd3409e",
-          "name": "Ulrich von Rosenberg",
-          "titles": [],
-          "dates": [
-            "1436-03-11"
-          ],
-          "status": "source",
-          "identityProbability": 1.0,
-          "mentions": [
-            {
-              "source": 1059,
-              "field": "person",
-              "date": "1436-03-11"
             }
           ],
           "identitySources": []
@@ -30157,33 +30145,6 @@
         },
         {
           "type": "parent",
-          "person": "@evidence/2a54b8dbf6d1cdd3409e",
-          "of": "@evidence/80d1d0e205445689fccc",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": true,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1018,
-                1019,
-                1020,
-                1021,
-                1022,
-                1036,
-                1037,
-                1038,
-                1057,
-                1058,
-                1059,
-                1060
-              ]
-            }
-          ]
-        },
-        {
-          "type": "parent",
           "person": "@evidence/2a59285d8c1f858d07b8",
           "of": "@evidence/901c88084e452a77de70",
           "derivations": [
@@ -30982,6 +30943,35 @@
               "endpointProbability": null,
               "sources": [
                 62
+              ]
+            }
+          ]
+        },
+        {
+          "type": "parent",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
+          "of": "@evidence/80d1d0e205445689fccc",
+          "derivations": [
+            {
+              "identity": "inferred",
+              "usesGuesses": true,
+              "assertionWeight": 1.0,
+              "endpointProbability": 0.99953373,
+              "sources": [
+                1016,
+                1017,
+                1018,
+                1019,
+                1020,
+                1021,
+                1022,
+                1036,
+                1037,
+                1038,
+                1057,
+                1058,
+                1059,
+                1060
               ]
             }
           ]
@@ -45411,6 +45401,33 @@
         },
         {
           "type": "spouse",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
+          "of": "@evidence/899a51ca8fbfb613cf9c",
+          "derivations": [
+            {
+              "identity": "inferred",
+              "usesGuesses": true,
+              "assertionWeight": 1.0,
+              "endpointProbability": 0.99953373,
+              "sources": [
+                1016,
+                1017,
+                1018,
+                1019,
+                1020,
+                1021,
+                1022,
+                1036,
+                1037,
+                1038,
+                1059,
+                1060
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spouse",
           "person": "@evidence/5d8cbb198dfa1506cf9c",
           "of": "@evidence/f777312814440d9c99aa",
           "derivations": [
@@ -46240,33 +46257,6 @@
                 1186,
                 1187,
                 1188
-              ]
-            }
-          ]
-        },
-        {
-          "type": "spouse",
-          "person": "@evidence/899a51ca8fbfb613cf9c",
-          "of": "@evidence/d5266a14137d953f688d",
-          "derivations": [
-            {
-              "identity": "inferred",
-              "usesGuesses": true,
-              "assertionWeight": 1.0,
-              "endpointProbability": 0.99998431,
-              "sources": [
-                1016,
-                1017,
-                1018,
-                1019,
-                1020,
-                1021,
-                1022,
-                1036,
-                1037,
-                1038,
-                1059,
-                1060
               ]
             }
           ]
@@ -107526,6 +107516,8 @@
           ],
           "sources": [
             96,
+            1016,
+            1017,
             1018,
             1019,
             1020,
@@ -107629,6 +107621,8 @@
           ],
           "sources": [
             96,
+            1016,
+            1017,
             1018,
             1019,
             1020,
@@ -107644,13 +107638,47 @@
           ],
           "mentions": [
             "data/books/bauer_1872.json#/entries/24/facts/0/person",
-            "data/documents/1436-03-11.json#/entries/0/facts/2/person"
+            "data/documents/1424-02-22.json#/entries/0/facts/4/of"
           ],
           "iteration": 6,
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/26ef9c269ad7666f5bd1",
-          "candidate": "@evidence/2a54b8dbf6d1cdd3409e",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
+          "usesGuesses": true
+        },
+        {
+          "probability": 0.29560979,
+          "logOdds": -0.86829215,
+          "features": [
+            {
+              "name": "parent family context: anselm von rosenberg",
+              "contribution": 1.50992497
+            },
+            {
+              "name": "full relative name rarity: anselm von rosenberg (0.80% of factual references)",
+              "contribution": 0.56622186
+            }
+          ],
+          "sources": [
+            96,
+            1020,
+            1021,
+            1022,
+            1037,
+            1038,
+            1059,
+            1060
+          ],
+          "mentions": [
+            "data/books/bauer_1872.json#/entries/24/facts/0/person",
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person"
+          ],
+          "iteration": 2,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "@evidence/26ef9c269ad7666f5bd1",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -122778,6 +122806,8 @@
             1036,
             1037,
             1038,
+            1057,
+            1058,
             1059,
             1060
           ],
@@ -122789,7 +122819,7 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/afebf033caaf3dee90d4",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -122821,7 +122851,38 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/afebf033caaf3dee90d4",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
+          "usesGuesses": true
+        },
+        {
+          "probability": 2.39e-06,
+          "logOdds": -12.94443898,
+          "features": [
+            {
+              "name": "mention after recorded death",
+              "contribution": -10.0
+            }
+          ],
+          "sources": [
+            120,
+            121,
+            1020,
+            1021,
+            1022,
+            1037,
+            1038,
+            1059,
+            1060
+          ],
+          "mentions": [
+            "data/books/bauer_1872.json#/entries/39/facts/11/person",
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person"
+          ],
+          "iteration": 2,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "@evidence/afebf033caaf3dee90d4",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -122932,6 +122993,8 @@
             1036,
             1037,
             1038,
+            1057,
+            1058,
             1059,
             1060
           ],
@@ -122943,7 +123006,7 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/6ff30d13648bb7455113",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -122975,7 +123038,7 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/6ff30d13648bb7455113",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -123007,6 +123070,37 @@
           "person": "@evidence/6ff30d13648bb7455113",
           "candidate": "@evidence/abab6f749c329c8f8ca9",
           "usesGuesses": false
+        },
+        {
+          "probability": 2.39e-06,
+          "logOdds": -12.94443898,
+          "features": [
+            {
+              "name": "mention after recorded death",
+              "contribution": -10.0
+            }
+          ],
+          "sources": [
+            124,
+            125,
+            1020,
+            1021,
+            1022,
+            1037,
+            1038,
+            1059,
+            1060
+          ],
+          "mentions": [
+            "data/books/bauer_1872.json#/entries/39/facts/6/of",
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person"
+          ],
+          "iteration": 2,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "@evidence/6ff30d13648bb7455113",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
+          "usesGuesses": true
         },
         {
           "probability": 9.4e-07,
@@ -124799,6 +124893,8 @@
             1036,
             1037,
             1038,
+            1057,
+            1058,
             1059,
             1060
           ],
@@ -124810,7 +124906,7 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/f7516ac6dad26bb9ae43",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -124842,7 +124938,7 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/f7516ac6dad26bb9ae43",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -124878,6 +124974,37 @@
           "person": "@evidence/f7516ac6dad26bb9ae43",
           "candidate": "@evidence/abab6f749c329c8f8ca9",
           "usesGuesses": false
+        },
+        {
+          "probability": 2.39e-06,
+          "logOdds": -12.94443898,
+          "features": [
+            {
+              "name": "mention after recorded death",
+              "contribution": -10.0
+            }
+          ],
+          "sources": [
+            126,
+            127,
+            1020,
+            1021,
+            1022,
+            1037,
+            1038,
+            1059,
+            1060
+          ],
+          "mentions": [
+            "data/books/bauer_1872.json#/entries/39/facts/8/person",
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person"
+          ],
+          "iteration": 2,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "@evidence/f7516ac6dad26bb9ae43",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
+          "usesGuesses": true
         },
         {
           "probability": 0.24635889,
@@ -125479,6 +125606,8 @@
             1036,
             1037,
             1038,
+            1057,
+            1058,
             1059,
             1060
           ],
@@ -125490,7 +125619,7 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/5653c0567ee198b41217",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -125523,7 +125652,7 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/5653c0567ee198b41217",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -185543,6 +185672,8 @@
             1036,
             1037,
             1038,
+            1057,
+            1058,
             1059,
             1060
           ],
@@ -185554,7 +185685,7 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/a6016e69d2a35a340803",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -185586,7 +185717,7 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/a6016e69d2a35a340803",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -259781,6 +259912,8 @@
           "sources": [
             421,
             422,
+            1016,
+            1017,
             1018,
             1019,
             1020,
@@ -259857,6 +259990,8 @@
           ],
           "sources": [
             421,
+            1016,
+            1017,
             1018,
             1019,
             1020,
@@ -259872,13 +260007,47 @@
           ],
           "mentions": [
             "data/books/freiburger_dioecesan_archiv_1896_25.json#/entries/71/facts/2/person",
-            "data/documents/1436-03-11.json#/entries/0/facts/2/person"
+            "data/documents/1424-02-22.json#/entries/0/facts/4/of"
           ],
           "iteration": 6,
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/32b70e0ea75b8088d06b",
-          "candidate": "@evidence/2a54b8dbf6d1cdd3409e",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
+          "usesGuesses": true
+        },
+        {
+          "probability": 0.29560979,
+          "logOdds": -0.86829215,
+          "features": [
+            {
+              "name": "parent family context: anselm von rosenberg",
+              "contribution": 1.50992497
+            },
+            {
+              "name": "full relative name rarity: anselm von rosenberg (0.80% of factual references)",
+              "contribution": 0.56622186
+            }
+          ],
+          "sources": [
+            421,
+            1020,
+            1021,
+            1022,
+            1037,
+            1038,
+            1059,
+            1060
+          ],
+          "mentions": [
+            "data/books/freiburger_dioecesan_archiv_1896_25.json#/entries/71/facts/2/person",
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person"
+          ],
+          "iteration": 2,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "@evidence/32b70e0ea75b8088d06b",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -259995,6 +260164,8 @@
             1036,
             1037,
             1038,
+            1057,
+            1058,
             1059,
             1060,
             1085,
@@ -260032,7 +260203,7 @@
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
           "person": "@evidence/f0bb3bc8be15e653c1fd",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -260065,7 +260236,65 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/f0bb3bc8be15e653c1fd",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
+          "usesGuesses": true
+        },
+        {
+          "probability": 2.39e-06,
+          "logOdds": -12.94443898,
+          "features": [
+            {
+              "name": "mention after recorded death",
+              "contribution": -10.0
+            }
+          ],
+          "sources": [
+            423,
+            424,
+            425,
+            1020,
+            1021,
+            1022,
+            1037,
+            1038,
+            1059,
+            1060,
+            1085,
+            1086,
+            1087,
+            1088,
+            1089,
+            1090,
+            1091,
+            1092,
+            1093,
+            1095,
+            1096,
+            1097,
+            1098,
+            1099,
+            1100,
+            1101,
+            1102,
+            1103,
+            1104,
+            1105,
+            1106,
+            1107,
+            1108,
+            1109,
+            1110,
+            1111
+          ],
+          "mentions": [
+            "data/books/freiburger_dioecesan_archiv_1896_25.json#/entries/73/facts/1/of",
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person"
+          ],
+          "iteration": 2,
+          "status": "below-threshold",
+          "reason": "below merge probability",
+          "person": "@evidence/f0bb3bc8be15e653c1fd",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -262975,6 +263204,8 @@
             1036,
             1037,
             1038,
+            1057,
+            1058,
             1059,
             1060
           ],
@@ -262986,7 +263217,7 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/50ae0632f24e462ef18a",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -263018,7 +263249,7 @@
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/50ae0632f24e462ef18a",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -346566,8 +346797,8 @@
           "iteration": 1,
           "status": "merged",
           "reason": "probability, margin and cluster constraints passed",
-          "person": "@evidence/d5266a14137d953f688d",
-          "candidate": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -346591,6 +346822,8 @@
             1054,
             1055,
             1056,
+            1057,
+            1058,
             1059,
             1060
           ],
@@ -346601,14 +346834,19 @@
           "iteration": 6,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/abab6f749c329c8f8ca9",
           "usesGuesses": true
         },
         {
-          "probability": 0.05,
-          "logOdds": -2.94443898,
-          "features": [],
+          "probability": 0.99953373,
+          "logOdds": 7.67026951,
+          "features": [
+            {
+              "name": "shared family context: jutta",
+              "contribution": 10.61470849
+            }
+          ],
           "sources": [
             1016,
             1017,
@@ -346620,8 +346858,6 @@
             1036,
             1037,
             1038,
-            1057,
-            1058,
             1059,
             1060
           ],
@@ -346629,11 +346865,11 @@
             "data/documents/1424-02-22.json#/entries/0/facts/4/of",
             "data/documents/1436-03-11.json#/entries/0/facts/2/person"
           ],
-          "iteration": 6,
-          "status": "incompatible",
-          "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
-          "candidate": "@evidence/2a54b8dbf6d1cdd3409e",
+          "iteration": 2,
+          "status": "merged",
+          "reason": "probability, margin and cluster constraints passed",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -346736,6 +346972,8 @@
             1036,
             1037,
             1038,
+            1057,
+            1058,
             1059,
             1060,
             1061,
@@ -346760,7 +346998,7 @@
           "iteration": 6,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/c8b5aa265cee476c2b88",
           "usesGuesses": true
         },
@@ -346795,7 +347033,7 @@
           "iteration": 0,
           "status": "below-threshold",
           "reason": "below merge probability",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/c8b5aa265cee476c2b88",
           "usesGuesses": true
         },
@@ -346817,6 +347055,8 @@
             1036,
             1037,
             1038,
+            1057,
+            1058,
             1059,
             1060,
             1085,
@@ -346853,7 +347093,7 @@
           "iteration": 3,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/f0bb3bc8be15e653c1fd",
           "usesGuesses": true
         },
@@ -346911,7 +347151,7 @@
           "iteration": 2,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/f0bb3bc8be15e653c1fd",
           "usesGuesses": true
         },
@@ -346970,7 +347210,7 @@
           "iteration": 1,
           "status": "below-threshold",
           "reason": "below merge probability",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/f0bb3bc8be15e653c1fd",
           "usesGuesses": true
         },
@@ -347005,7 +347245,7 @@
           "iteration": 0,
           "status": "below-threshold",
           "reason": "below merge probability",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/f0bb3bc8be15e653c1fd",
           "usesGuesses": true
         },
@@ -347382,7 +347622,7 @@
           "iteration": 1,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/abab6f749c329c8f8ca9",
           "usesGuesses": true
         },
@@ -347410,10 +347650,10 @@
             "data/documents/1436-03-11.json#/entries/0/facts/2/person"
           ],
           "iteration": 1,
-          "status": "incompatible",
-          "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
-          "candidate": "@evidence/2a54b8dbf6d1cdd3409e",
+          "status": "superseded",
+          "reason": "earlier comparison; later compatible cluster evidence joined these occurrences",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
+          "candidate": "@evidence/5b40baf8cf4d4c61e2d4",
           "usesGuesses": true
         },
         {
@@ -347534,7 +347774,7 @@
           "iteration": 1,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/c8b5aa265cee476c2b88",
           "usesGuesses": true
         },
@@ -347560,7 +347800,7 @@
           "iteration": 0,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/c8b5aa265cee476c2b88",
           "usesGuesses": false
         },
@@ -347596,7 +347836,7 @@
           "iteration": 1,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/f0bb3bc8be15e653c1fd",
           "usesGuesses": true
         },
@@ -347625,7 +347865,7 @@
           "iteration": 1,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/f0bb3bc8be15e653c1fd",
           "usesGuesses": true
         },
@@ -347676,7 +347916,7 @@
           "iteration": 1,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/f0bb3bc8be15e653c1fd",
           "usesGuesses": true
         },
@@ -347702,7 +347942,7 @@
           "iteration": 0,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/d5266a14137d953f688d",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
           "candidate": "@evidence/f0bb3bc8be15e653c1fd",
           "usesGuesses": false
         },
@@ -347999,6 +348239,315 @@
           "reason": "blocked: impossible age: at least 93 years old by 1512; mention after recorded death",
           "person": "@evidence/35fc387ccf7a6143b1be",
           "candidate": "@evidence/ca049376f6d81781a58d",
+          "usesGuesses": false
+        },
+        {
+          "probability": 0.05,
+          "logOdds": -2.94443898,
+          "features": [],
+          "sources": [
+            168,
+            169,
+            170,
+            171,
+            172,
+            761,
+            764,
+            766,
+            767,
+            770,
+            771,
+            772,
+            773,
+            775,
+            776,
+            782,
+            783,
+            785,
+            787,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            818,
+            819,
+            821,
+            822,
+            854,
+            857,
+            859,
+            900,
+            901,
+            903,
+            904,
+            905,
+            906,
+            907,
+            908,
+            909,
+            910,
+            911,
+            912,
+            913,
+            914,
+            915,
+            916,
+            917,
+            918,
+            934,
+            935,
+            951,
+            954,
+            955,
+            956,
+            957,
+            958,
+            959,
+            960,
+            964,
+            965,
+            966,
+            967,
+            970,
+            971,
+            973,
+            976,
+            979,
+            988,
+            991,
+            993,
+            994,
+            995,
+            996,
+            998,
+            1001,
+            1002,
+            1003,
+            1004,
+            1009,
+            1010,
+            1011,
+            1012,
+            1020,
+            1021,
+            1022,
+            1037,
+            1038,
+            1059,
+            1060,
+            1061,
+            1062,
+            1063,
+            1064,
+            1065,
+            1066,
+            1067,
+            1069,
+            1070,
+            1071,
+            1079,
+            1080,
+            1081
+          ],
+          "mentions": [
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person",
+            "data/documents/1436-10-05.json#/entries/0/facts/2/of"
+          ],
+          "iteration": 2,
+          "status": "incompatible",
+          "reason": "blocked: mention after recorded death",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
+          "candidate": "@evidence/c8b5aa265cee476c2b88",
+          "usesGuesses": true
+        },
+        {
+          "probability": 0.05,
+          "logOdds": -2.94443898,
+          "features": [],
+          "sources": [
+            1059,
+            1060,
+            1069,
+            1070,
+            1071,
+            1079,
+            1080,
+            1081
+          ],
+          "mentions": [
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person",
+            "data/documents/1438-06-23.json#/entries/0/facts/1/of"
+          ],
+          "iteration": 0,
+          "status": "incompatible",
+          "reason": "blocked: mention after recorded death",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
+          "candidate": "@evidence/c8b5aa265cee476c2b88",
+          "usesGuesses": false
+        },
+        {
+          "probability": 0.05,
+          "logOdds": -2.94443898,
+          "features": [],
+          "sources": [
+            1020,
+            1021,
+            1022,
+            1037,
+            1038,
+            1059,
+            1060,
+            1085,
+            1087,
+            1088,
+            1089,
+            1095,
+            1096,
+            1097,
+            1099,
+            1103,
+            1109,
+            1111
+          ],
+          "mentions": [
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person",
+            "data/documents/1447-05-01.json#/entries/0/facts/2/person"
+          ],
+          "iteration": 2,
+          "status": "incompatible",
+          "reason": "blocked: mention after recorded death",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
+          "candidate": "@evidence/f0bb3bc8be15e653c1fd",
+          "usesGuesses": true
+        },
+        {
+          "probability": 0.05,
+          "logOdds": -2.94443898,
+          "features": [],
+          "sources": [
+            423,
+            424,
+            425,
+            1020,
+            1021,
+            1022,
+            1037,
+            1038,
+            1059,
+            1060,
+            1085,
+            1086,
+            1087,
+            1088,
+            1089,
+            1090,
+            1091,
+            1092,
+            1093,
+            1095,
+            1096,
+            1097,
+            1098,
+            1099,
+            1100,
+            1101,
+            1102,
+            1103,
+            1104,
+            1105,
+            1106,
+            1107,
+            1108,
+            1109,
+            1110,
+            1111
+          ],
+          "mentions": [
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person",
+            "data/documents/1450-02-16_2.json#/entries/0/facts/0/of"
+          ],
+          "iteration": 2,
+          "status": "incompatible",
+          "reason": "blocked: mention after recorded death",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
+          "candidate": "@evidence/f0bb3bc8be15e653c1fd",
+          "usesGuesses": true
+        },
+        {
+          "probability": 0.05,
+          "logOdds": -2.94443898,
+          "features": [],
+          "sources": [
+            423,
+            424,
+            425,
+            1020,
+            1021,
+            1022,
+            1037,
+            1038,
+            1059,
+            1060,
+            1085,
+            1086,
+            1087,
+            1088,
+            1090,
+            1091,
+            1092,
+            1093,
+            1095,
+            1096,
+            1097,
+            1098,
+            1099,
+            1100,
+            1101,
+            1102,
+            1103,
+            1104,
+            1105,
+            1106,
+            1107,
+            1108,
+            1109
+          ],
+          "mentions": [
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person",
+            "data/documents/1452-10-02.json#/entries/0/facts/0/of"
+          ],
+          "iteration": 1,
+          "status": "incompatible",
+          "reason": "blocked: mention after recorded death",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
+          "candidate": "@evidence/f0bb3bc8be15e653c1fd",
+          "usesGuesses": true
+        },
+        {
+          "probability": 0.05,
+          "logOdds": -2.94443898,
+          "features": [],
+          "sources": [
+            1059,
+            1060,
+            1104,
+            1105,
+            1106,
+            1107,
+            1108,
+            1109
+          ],
+          "mentions": [
+            "data/documents/1436-03-11.json#/entries/0/facts/2/person",
+            "data/documents/1452-10-02_2.json#/entries/0/facts/0/of"
+          ],
+          "iteration": 0,
+          "status": "incompatible",
+          "reason": "blocked: mention after recorded death",
+          "person": "@evidence/5b40baf8cf4d4c61e2d4",
+          "candidate": "@evidence/f0bb3bc8be15e653c1fd",
           "usesGuesses": false
         },
         {
@@ -352571,10 +353120,10 @@
       "unresolvedMentions": 1504,
       "registryRelationships": 10,
       "conflicts": 0,
-      "reconstructedPeople": 633,
+      "reconstructedPeople": 632,
       "reconstructedRelationships": 443,
-      "contextualLinks": 435,
-      "candidateComparisons": 3305,
+      "contextualLinks": 436,
+      "candidateComparisons": 3317,
       "contextCoverage": {
         "total": 1837,
         "attached": 770,
