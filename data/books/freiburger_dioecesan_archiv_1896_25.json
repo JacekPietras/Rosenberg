@@ -326,7 +326,7 @@
         },
         {
           "date": "1321",
-          "text": "Arnold von Rosenberg, Ritter; Eberhard von Rosenberg; and Wipert von Rosenberg exchanged wine tithes at Ruchsen."
+          "text": "Arnold von Rosenberg, Ritter; Eberhard von Rosenberg; and [wiprecht_von_rosenberg] exchanged wine tithes at Ruchsen."
         },
         {
           "type": "kin",
@@ -341,7 +341,7 @@
         {
           "type": "kin",
           "person": "Arnold von Rosenberg",
-          "of": "Wipert von Rosenberg",
+          "of": "wiprecht_von_rosenberg",
           "term": "fratrueles",
           "personTitle": [
             "miles"

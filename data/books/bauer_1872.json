@@ -237,13 +237,13 @@
           "personTitle": [
             "miles"
           ],
-          "of": "Wipert von Rosenberg",
+          "of": "wiprecht_von_rosenberg",
           "term": "fratruales",
           "date": "1321"
         },
         {
           "date": "1321",
-          "text": "Arnold von Rosenberg, miles, Eberhard von Rosenberg and Wipert von Rosenberg exchanged a wine tithe with Seligenthal monastery."
+          "text": "Arnold von Rosenberg, miles, Eberhard von Rosenberg and [wiprecht_von_rosenberg] exchanged a wine tithe with Seligenthal monastery."
         }
       ],
       "guesses": [
@@ -269,7 +269,7 @@
         {
           "type": "parent",
           "person": "Konrad von Rosenberg",
-          "of": "Wipert von Rosenberg",
+          "of": "wiprecht_von_rosenberg",
           "date": "1321"
         }
       ]
@@ -304,11 +304,11 @@
       "guesses": [
         {
           "date": "1343",
-          "text": "Diether von Rosenberg, Ritter, attested in 1343, may have been a son or brother of Wipert von Rosenberg."
+          "text": "Diether von Rosenberg, Ritter, attested in 1343, may have been a son or brother of [wiprecht_von_rosenberg]."
         },
         {
           "date": "1368",
-          "text": "Eberhard von Rosenberg, Johanniter-Komtur zu Aichen in 1368, may have belonged to Wipert von Rosenberg’s family."
+          "text": "Eberhard von Rosenberg, Johanniter-Komtur zu Aichen in 1368, may have belonged to [wiprecht_von_rosenberg]’s family."
         }
       ]
     },
@@ -1131,7 +1131,7 @@
       "facts": [
         {
           "date": "1321",
-          "text": "Arnold von Rosenberg, miles, Eberhard von Rosenberg and Wipert von Rosenberg exchanged two parts of the wine tithe at Ruchsheim, held from Count Rupert von Dürn, with Seligenthal monastery for a rent at Sindolsheim near castle Rosenberg."
+          "text": "Arnold von Rosenberg, miles, Eberhard von Rosenberg and [wiprecht_von_rosenberg] exchanged two parts of the wine tithe at Ruchsheim, held from Count Rupert von Dürn, with Seligenthal monastery for a rent at Sindolsheim near castle Rosenberg."
         },
         {
           "type": "kin",
@@ -1149,7 +1149,7 @@
           "personTitle": [
             "miles"
           ],
-          "of": "Wipert von Rosenberg",
+          "of": "wiprecht_von_rosenberg",
           "term": "fratruales",
           "date": "1321"
         }

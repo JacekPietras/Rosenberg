@@ -139,6 +139,27 @@ class FactValidatorTests(unittest.TestCase):
         warning = self.check(self.document(self.parent(person='unknown_id'))).diagnostics[0]
         self.assertEqual('warning', warning.severity)
 
+    def test_redundant_name_before_person_reference_in_prose(self):
+        validator = facts.Validator()
+        validator.load_people(self.write('people.json', [
+            {'id': 'wiprecht_von_rosenberg', 'name': 'Wiprecht von Rosenberg'}]))
+        validator.given_name_variants.update({'wipert': 'Wiprecht', 'wyprecht': 'Wiprecht'})
+        for text in ('Wipert von Rosenberg [wiprecht_von_rosenberg] witnessed it.',
+                     'WYPRECHT von Rosenberg [wiprecht_von_rosenberg] witnessed it.',
+                     'Wiprecht von Rosenberg [wiprecht_von_rosenberg] witnessed it.'):
+            for item in (text, {'date': '1395', 'text': text}):
+                with self.subTest(item=item):
+                    validator.diagnostics.clear()
+                    validator.check_fact(item, 'fact', False, False, '1395')
+                    self.assertEqual(1, len(self.errors(validator)))
+                    self.assertIn('bracketed ID alone', self.errors(validator)[0].message)
+        for text in ('[wiprecht_von_rosenberg] witnessed it.',
+                     'Other von Rosenberg [wiprecht_von_rosenberg] witnessed it.',
+                     'Wipert von Rosenberg [unknown_id] witnessed it.'):
+            validator.diagnostics.clear()
+            validator.check_fact({'date': '1395', 'text': text}, 'guess', False, False, '1395', guess=True)
+            self.assertEqual([], validator.diagnostics)
+
     def test_cli_exit_status_order_and_malformed_json(self):
         registry = self.write('people.json', [{'id': 'known_id', 'name': 'Known Person'}])
         first = self.write('documents/a.json', self.document(self.parent(type='father')))

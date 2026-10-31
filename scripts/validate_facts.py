@@ -86,6 +86,7 @@ class Validator:
         self.counts = Counter()
         self.person_ids = set()
         self.person_names = set()
+        self.people_by_id = {}
         self.given_name_variants = {}
         self.place_name_variants = {}
         self.load_name_variants()
@@ -151,6 +152,8 @@ class Validator:
                     self.report(loc + '/id', f'duplicate person ID {person_id!r}')
                 else:
                     self.person_ids.add(person_id)
+                    if self.nonblank(name):
+                        self.people_by_id[person_id] = name
         for collision in sorted(self.person_ids & self.person_names):
             self.report(path, f'person ID collides with full name {collision!r}')
 
@@ -213,10 +216,32 @@ class Validator:
             else:
                 seen.add(item)
 
+    def check_text_person_references(self, text, location):
+        for match in re.finditer(r'\[([^\[\]]+)\]', text):
+            person_id = match.group(1)
+            name = self.people_by_id.get(person_id)
+            if not name:
+                continue
+            given, *rest = name.split()
+            canonical = self.given_name_variants.get(given.casefold(), given).casefold()
+            variants = {given.casefold()} | {
+                form for form, standard in self.given_name_variants.items()
+                if standard.casefold() == canonical
+            }
+            suffix = r'\s+'.join(re.escape(part) for part in rest)
+            for variant in variants:
+                pattern = r'(?<!\w)' + re.escape(variant)
+                if suffix:
+                    pattern += r'\s+' + suffix
+                if re.search(pattern + r'\s*$', text[:match.start()], re.IGNORECASE):
+                    self.report(location, f'person name duplicates [{person_id}]; use the bracketed ID alone')
+                    break
+
     def check_fact(self, fact, location, require_date, explicit_date_required,
                    inherited, document_source=False, guess=False):
         self.counts['guesses' if guess else 'facts'] += 1
         if isinstance(fact, str):
+            self.check_text_person_references(fact, location)
             if not guess:
                 self.counts['legacy'] += 1
             if not self.nonblank(fact):
@@ -283,6 +308,8 @@ class Validator:
                 self.report(location + '/' + field, 'legacy text facts support only date and text')
             if not self.nonblank(fact.get('text')):
                 self.report(location + '/text', 'expected non-empty legacy fact text')
+            else:
+                self.check_text_person_references(fact['text'], location + '/text')
         if 'date' in fact:
             if document_source and inherited is not MISSING and fact['date'] == inherited:
                 self.report(

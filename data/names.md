@@ -17,7 +17,7 @@ Thomas, Thoman
 Anselm, Anshelm
 Ulrich, Vlreich
 Georg, Gorg
-Wiprecht, Wibrecht, Wynprecht, Wyprecht
+Wiprecht, Wibrecht, Wynprecht, Wyprecht, Wipert
 Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
 Albrecht, Albert
 Nicolaus, Nicholas, Niklaus

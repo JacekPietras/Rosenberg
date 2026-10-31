@@ -165,8 +165,9 @@ normalized family name (for example, `Konrad von Rosenberg`), rather than
 source spelling variants when the correspondence is clear. In typed facts,
 `person` and `of` accept either that name or an exact, case-sensitive existing
 `people.json` ID. Write the ID directly in the field, without square brackets
-or separate ID fields. In legacy prose, retain bracketed IDs for identified
-people when needed to distinguish namesakes.
+or separate ID fields. In legacy prose, use a bracketed ID in place of the
+person's name when needed to distinguish namesakes; do not write the name
+immediately before the ID.
 
 Only use an ID when the evidence identifies that person. An unresolved name
 is not automatically linked to a registry record or the same name in another
