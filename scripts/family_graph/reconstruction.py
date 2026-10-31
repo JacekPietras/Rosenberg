@@ -5,6 +5,8 @@ round, then checked together; no link can merge distinct registry anchors.
 """
 
 from collections import defaultdict
+from datetime import date
+import heapq
 from itertools import combinations, product
 import math
 import re
@@ -13,7 +15,9 @@ from .constraints import cycle_nodes
 from .model import fingerprint, Assertion, Mention
 from .policy import AGE_TITLES
 from .kinship import generation, tree_paths
-from .probability import ProbabilityModel, Profile, chronology_blocked, decay, title_category, reliability, speculative_parent_claim
+from .dates import death_interval
+from .probability import (ProbabilityModel, Profile, PERSON_NAME, YEAR, chronology_blocked, decay, gap_years, mention_rank,
+                          reliability, single_day, speculative_parent_claim, title_category)
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
@@ -94,6 +98,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             parent[handle] = handle
             context_handles[observation.source.key].append(handle)
     confidence = defaultdict(lambda: 1.0)
+    membership = defaultdict(lambda: 1.0)
     round_scores = {}
     # References and source passages stay fixed while identity groups change.
     # Compute these once per reconstruction, including prose-only mentions.
@@ -145,6 +150,34 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             return False
         return chronology_blocked([mentions[h] for h in component], model.settings, names)
 
+    def passage_conflict(handles):
+        """Same-passage distinctions: opposite ranks, an explicitly deceased and a
+        living occurrence, or two separate facts with the same content."""
+        ranks, alive, contents = defaultdict(set), defaultdict(set), defaultdict(set)
+        for h in handles:
+            mention = mentions[h]
+            where = scope(mention)
+            rank = mention_rank(mention)
+            if rank:
+                ranks[where].add(rank)
+            if mention.field != 'text' and not speculative_parent_claim(mention):
+                if mention.deceased:
+                    alive[where].add(False)
+                elif mention.assertion.original['type'] != 'death':
+                    alive[where].add(True)
+            if mention.field == 'person' and mention.assertion.original['type'] == 'generic':
+                contents[where, mention.assertion.original['content']].add(mention.assertion.source.key)
+        return (any(len(values) > 1 for values in ranks.values()) or any(len(values) > 1 for values in alive.values())
+                or any(len(values) > 1 for values in contents.values()))
+
+    def new_passage_conflict(component):
+        # Conflicts already inside one existing identity are data problems,
+        # reported elsewhere; they must not block every later merge.
+        parts = defaultdict(list)
+        for h in component:
+            parts[find(h)].append(h)
+        return passage_conflict(component) and not any(passage_conflict(part) for part in parts.values())
+
     def consistent(components, new=None):
         # Only proposed components are checked for chronology; unchanged
         # identities cannot block unrelated merges.
@@ -162,6 +195,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 by_scope[scope(mentions[h])].update(mentions[h].titles)
             # Different age designations in one passage name different people.
             if any(len(titles & AGE_TITLES) > 1 for titles in by_scope.values()):
+                return False
+            if (new is None or index < new) and new_passage_conflict(component):
                 return False
         edges, siblings = [], []
         same_named_parents = defaultdict(set)
@@ -191,7 +226,72 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     return False
         return not cycle_nodes(edges) and generations_consistent(edges, siblings)
 
-    def accept(proposals, reason):
+    def passages(handles):
+        return len({scope(mentions[h])[:2] for h in handles})
+
+    def join_membership(component, current, adjacency, scores):
+        # A mention's membership confidence is the product of the merge
+        # probabilities linking it to the identity's core (registry mention,
+        # else the largest part); the cluster minimum is only a summary.
+        core = min(component, key=lambda key: (not anchor(current[key]), -passages(current[key]), key))
+        for key in component:
+            if key == core:
+                continue
+            estimates = [scores[pair]['probability'] for other in adjacency[key]
+                         if (pair := tuple(sorted((key, other)))) in scores]
+            factor = max(estimates, default=1.0)
+            for h in current[key]:
+                membership[h] *= factor
+
+    steps = {'parent': ('C', 'P'), 'sibling': ('S', 'S'), 'spouse': ('Sp', 'Sp')}
+    # Paths between two records of one person: both in one sibling group
+    # (siblings, shared parent, child of the parent's spouse), both parents of
+    # one sibling group, both spouses of one person, or the spouse of X and
+    # the other parent of X's child.
+    same_role = re.compile(r'^(?:(?:s|pc|pmc)+|c(?:s|pc|pmc)*p|mm|mc(?:s|pc|pmc)*p|c(?:s|pc|pmc)*pm)$')
+    letters = {'P': 'p', 'C': 'c', 'S': 's', 'Sp': 'm'}
+    def family_tree():
+        tree, relations, factual_parents = defaultdict(set), defaultdict(list), defaultdict(list)
+        for assertion in assertions:
+            kind = assertion.original['type']
+            if kind not in RELATIONS:
+                continue
+            a, b = assertion.mentions
+            left, right = find(a.handle), find(b.handle)
+            if kind == 'parent' and assertion.source.kind == 'facts':
+                factual_parents[left].append((right, assertion))
+            if left == right:
+                continue
+            if kind in steps:
+                tree[left].add((steps[kind][0], right))
+                tree[right].add((steps[kind][1], left))
+            relations[left].append((assertion, a.field, right))
+            relations[right].append((assertion, b.field, left))
+        return tree, relations, factual_parents
+
+    def relative_blocks(tree, start):
+        """Identities reachable from `start` by a path that makes them a different person."""
+        blocked = {}
+        def walk(node, path, seen):
+            if path and node not in blocked and not same_role.match(''.join(letters[step] for step in path)):
+                blocked[node] = 'known relatives: ' + '-'.join(path)
+            if len(path) == model.settings['bestCandidate']['maxRelativePathSteps']:
+                return
+            for step, other in sorted(tree.get(node, ())):
+                if other not in seen:
+                    walk(other, path + (step,), seen | {other})
+        walk(start, (), {start})
+        return blocked
+
+    def known_relatives(component, current):
+        """Two parts of a proposed identity that the tree already relates as different people."""
+        if len(component) < 2:
+            return False
+        tree = family_tree()[0]
+        return any(other in relative_blocks(tree, key) for key in component for other in component if other != key)
+
+    def accept(proposals, reason, scores=None, strict=False):
+        scores = round_scores if scores is None else scores
         if not proposals:
             return 0
         current = groups()
@@ -227,7 +327,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             negative_pair = any(round_scores.get(tuple(sorted((a, b))), {}).get('probability', 1) < model.settings['clusterMinimumProbability']
                                 and any(f['contribution'] < 0 for f in round_scores.get(tuple(sorted((a, b))), {}).get('features', []))
                                 for a, b in combinations(component, 2))
-            if not negative_pair and consistent([joined, *other], 1):
+            if not negative_pair and consistent([joined, *other], 1) and not known_relatives(component, current):
                 candidates.append(component)
         # Different identity components can jointly create an ancestry cycle.
         # Check all proposed links in each connected source family together,
@@ -257,20 +357,38 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             involved = set().union(*batch)
             partitions = [[h for key in component for h in current[key]] for component in batch]
             partitions += [handles for key, handles in current.items() if key not in involved]
-            if not consistent(partitions, len(batch)):
-                continue
+            if not consistent(partitions, len(batch)) and strict:
+                # Unweighted merges never choose between conflicting groupings:
+                # keep only components that conflict with no other component.
+                def together(items):
+                    used = set().union(*items)
+                    parts = [[h for key in item for h in current[key]] for item in items]
+                    parts += [handles for key, handles in current.items() if key not in used]
+                    return consistent(parts, len(items))
+                kept = [c for c in batch if all(together([c, other]) for other in batch if other is not c)]
+                batch = kept if together(kept) else []
+            elif not consistent(partitions, len(batch)):
+                # Keep every component that stays consistent, in a fixed order.
+                kept = []
+                for component in sorted(batch, key=min):
+                    trial = [*kept, component]
+                    used = set().union(*trial)
+                    parts = [[h for key in item for h in current[key]] for item in trial]
+                    parts += [handles for key, handles in current.items() if key not in used]
+                    if consistent(parts, len(trial)):
+                        kept.append(component)
+                batch = kept
             for component in batch:
                 joined = sorted(h for key in component for h in current[key])
                 root, refs = min(component), {}
                 for key in component:
                     refs.update(dependencies[key])
                     refs.update(support[key])
+                join_membership(component, current, adjacency, scores)
                 for key in component:
                     parent[key] = root
                 dependencies[root].update(refs)
-                estimates = [round_scores[pair]['probability'] for a in component for b in adjacency[a]
-                             if a < b and (pair := tuple(sorted((a, b)))) in round_scores]
-                confidence[root] = min([confidence[key] for key in component] + estimates)
+                confidence[root] = min(membership[h] for h in joined)
                 links.append({'reason': reason, 'mentions': joined,
                               'sources': [refs[key].export() for key in sorted(refs)]})
                 accepted += len(component) - 1
@@ -287,17 +405,66 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         for handle in handles[1:]:
             parent[handle] = handles[0]
 
+    # Pass 0: within one document file, or one book, notes or image section,
+    # occurrences with the same name and the same titles (or both untitled)
+    # are one person, whatever their dates, unless a block separates them.
+    def section(mention):
+        source = mention.assertion.source
+        if source.path.startswith('data/documents/'):
+            return source.path,
+        return source.path, source.pointer.rsplit('/' + source.kind + '/', 1)[0]
+
+    def title_key(mention):
+        return frozenset(title_category(title, names) for title in mention.titles)
+
+    def chronology_allows(handles):
+        left, right = handles
+        profiles = [Profile(list(side), [mentions[h] for h in side]) for side in (left, right)]
+        blocks = model.compare(*profiles)['hardBlocks']
+        return not any(block.startswith(('impossible age', 'mention after', 'incompatible death', 'living mentions'))
+                       for block in blocks)
+
+    same_section = defaultdict(list)
+    for handle, mention in mentions.items():
+        if mention.field != 'text' and not anchor([handle]):
+            same_section[section(mention), name(handle), title_key(mention)].append(handle)
+    zero_proposals = []
+    for key in sorted(same_section, key=str):
+        handles = sorted(same_section[key], key=lambda h: (mentions[h].assertion.bounds, h))
+        if len({find(h) for h in handles}) < 2:
+            continue
+        clusters = []
+        current = groups()
+        for handle in handles:
+            fitting = []
+            for cluster in clusters:
+                joined = sorted({h for x in (*cluster, handle) for h in current[find(x)]})
+                others = [group for root, group in current.items() if root not in {find(x) for x in (*cluster, handle)}]
+                if (consistent([joined, *others], 1)
+                        and not known_relatives({find(x) for x in (*cluster, handle)}, current)
+                        and chronology_allows(([h for x in cluster for h in current[find(x)]], current[find(handle)]))):
+                    fitting.append(cluster)
+            if len(fitting) == 1:
+                fitting[0].append(handle)
+            elif not fitting:
+                clusters.append([handle])
+            # An occurrence that fits several people stays for the later stages.
+        for cluster in clusters:
+            zero_proposals += [(cluster[0], other, [mentions[cluster[0]].assertion.source, mentions[other].assertion.source])
+                               for other in cluster[1:]]
+    accept(zero_proposals, 'same name and titles in one document or section', {}, strict=True)
+
     # A source's repeated participant references supply local context. All
     # same-name occurrences of one passage form the fewest people the
-    # constraints jointly allow; only occurrences grouped together in every
-    # such partition are merged.
+    # constraints jointly allow. Among those groupings, the ones whose groups
+    # agree best on titles win; occurrences together in all winners merge.
     local = defaultdict(lambda: defaultdict(list))
     for handle, mention in mentions.items():
         if not anchor([handle]) and mention.field != 'text':
             local[scope(mention)][name(handle)].append(handle)
 
-    def partitions_of(roots, allowed, size, limit=1000):
-        """Partitions into exactly `size` pairwise-compatible blocks, or None if too many."""
+    def partitions_of(roots, allowed, size, limit=20000):
+        """Partitions into exactly `size` pairwise-compatible blocks (the first `limit` found)."""
         result = []
         def assign(index, blocks):
             if len(result) > limit or len(blocks) + len(roots) - index < size:
@@ -316,9 +483,38 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 assign(index + 1, blocks)
                 blocks.pop()
         assign(0, [])
-        return None if len(result) > limit else result
+        return result[:limit]
 
-    def passage_partitions(name_roots, current_local, limit=2000):
+    def agreement_keys(handles):
+        keys = set()
+        for h in handles:
+            mention = mentions[h]
+            rank = mention_rank(mention)
+            if rank:
+                keys.add(('rank', rank))
+            for title in mention.titles:
+                category = title_category(title, names)
+                if category[0] in {'office', 'designation', 'age'}:
+                    keys.add(category)
+            if mention.deceased:
+                keys.add(('deceased', ''))
+            if mention.assertion.original['type'] == 'death':
+                keys.add(('death record', ''))
+        return keys
+
+    def agreement(blocks):
+        # Shared ranks, offices, designations or age titles, and a death record
+        # grouped with an explicitly deceased occurrence, support a grouping.
+        score = 0
+        for block in blocks:
+            keys = [agreement_keys(group) for group in block]
+            for a, b in combinations(keys, 2):
+                plain = {key for key in a & b if key[0] not in {'deceased', 'death record'}}
+                death = ('death record', '') in a and ('deceased', '') in b or ('death record', '') in b and ('deceased', '') in a
+                score += bool(plain) + death
+        return score * model.settings['passageTitleAgreementWeight']
+
+    def passage_partitions(name_roots, current_local, limit=200000):
         involved = {root for roots in name_roots for root in roots}
         others = [group for root, group in current_local.items() if root not in involved]
         fixed = [current_local[root] for roots in name_roots if len(roots) == 1 for root in roots]
@@ -342,19 +538,20 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 if sum(sizes) != total:
                     continue
                 options = [choices(index, size) for index, size in enumerate(sizes)]
-                if any(option is None for option in options):
-                    return []
                 for combination in product(*options):
                     checked += 1
                     if checked > limit:
-                        return []
+                        break
                     blocks = [[h for r in block for h in current_local[r]] for partition in combination for block in partition]
                     if consistent([*blocks, *fixed, *others], len(blocks)):
-                        valid.append([set(block) for partition in combination for block in partition])
+                        grouping = [set(block) for partition in combination for block in partition]
+                        valid.append((agreement([[current_local[r] for r in block] for block in grouping]), grouping))
             if valid:
-                return valid
+                best = max(score for score, _ in valid)
+                return [grouping for score, grouping in valid if score == best]
         return []
 
+    stage1_tied = set()
     for _ in range(len(mentions)):
         current_local = groups()
         local_proposals = []
@@ -365,10 +562,14 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             partitions = passage_partitions(name_roots, current_local)
             for roots in name_roots:
                 for left, right in combinations(roots, 2):
-                    if partitions and all(any({left, right} <= block for block in partition) for partition in partitions):
+                    together = [any({left, right} <= block for block in partition) for partition in partitions]
+                    if partitions and all(together):
                         first, second = current_local[left][0], current_local[right][0]
                         local_proposals.append((first, second, [mentions[first].assertion.source, mentions[second].assertion.source]))
-        if not accept(local_proposals, 'repeated participant within one dated source passage'):
+                    elif any(together):
+                        # Left apart only because the best groupings disagree.
+                        stage1_tied.update(current_local[left] + current_local[right])
+        if not accept(local_proposals, 'repeated participant within one dated source passage', {}):
             break
 
     # Only a specific source reference plus the historical date and complete
@@ -391,6 +592,15 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 proposals.append((left.handle, right.handle, [first.source, second.source]))
     accept(proposals, 'same dated relationship in a specifically cited attestation')
 
+    def retrospective(mention):
+        """A title of a deceased person describes the years before the death bound."""
+        died = death_interval(mention) if mention.assertion.original['type'] == 'death' else None
+        if not mention.deceased and not died:
+            return None
+        end = died[1] if died else mention.assertion.bounds[1]
+        start = date.fromordinal(max(1, end.toordinal() - round(model.settings['retrospectiveLookBackYears'] * YEAR)))
+        return start, end
+
     # Frozen-round profiles combine dated titles, geography, same-fact
     # associates and family evidence for every source identity, not just IDs.
     def build_profiles():
@@ -408,13 +618,17 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             profile = profiles[root]
             ref, bounds = mention.assertion.source, mention.assertion.bounds
             profile.refs[ref.key] = ref
+            rank = mention_rank(mention)
+            if rank:
+                profile.ranks.append((rank, ref, bounds, scope(mention)))
             for title in mention.titles:
                 category = title_category(title, names)
-                profile.titles.setdefault(category, []).append((ref, bounds))
+                attested = retrospective(mention) or bounds
+                profile.titles.setdefault(category, []).append((ref, attested))
                 if category[0] in {'office', 'designation'}:
                     scopes = profile.office_scopes if category[0] == 'office' else profile.designation_places
                     for place in model.places(title):
-                        scopes.setdefault(place, []).append((ref, bounds))
+                        scopes.setdefault(place, []).append((ref, attested))
             content = mention.assertion.original.get('content', '') if mention.assertion.original['type'] == 'generic' else ''
             model.add_context(profile, ref, bounds, text=content,
                               issuance=mention.assertion.context.get('place', ''), self_names=(name(handle),),
@@ -449,13 +663,12 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                                   self_names={root_names[root]})
             context_coverage['attached' if attached else 'unattached'] += 1
         parents = defaultdict(lambda: defaultdict(list))
-        def relative(profile_root, relative_root, role, source_assertions, context_confidence=1.0, context_refs=()):
+        def relative(profile_root, relative_root, role, source_assertions, relative_confidence=1.0, context_refs=()):
             profile, other = profiles[profile_root], profiles[relative_root]
             relative_name = root_names[relative_root]
-            tokens = [(role, relative_root, relative_name, other.anchored, min(other.confidence, context_confidence)),
-                      (role, '', relative_name, False, 1.0)]
-            for token in tokens:
-                profile.relatives.setdefault(token, []).extend((a.source, a.bounds) for a in source_assertions)
+            linked = 1.0 if other.anchored and relative_confidence == 1.0 else relative_confidence
+            for token, value in (((role, relative_root, relative_name, other.anchored), linked), ((role, '', relative_name, False), 1.0)):
+                profile.relatives.setdefault(token, []).extend((a.source, a.bounds, value) for a in source_assertions)
             for a in source_assertions:
                 profile.refs[a.source.key] = a.source
             profile.refs.update(dependencies[relative_root])
@@ -468,11 +681,11 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             kind = assertion.original['type']
             profiles[left].distinctions.setdefault(right, []).append(assertion.source)
             profiles[right].distinctions.setdefault(left, []).append(assertion.source)
-            for own, other, direction in ((left, right, 'out'), (right, left, 'in')):
+            for own, other, direction, other_mention in ((left, right, 'out', b), (right, left, 'in', a)):
                 role = kind, direction if kind == 'parent' else '', assertion.original.get('term', '')
-                relative(own, other, role, [assertion])
+                relative(own, other, role, [assertion], membership[other_mention.handle])
                 if kind == 'spouse':
-                    relative(own, other, ('family context', '', ''), [assertion])
+                    relative(own, other, ('family context', '', ''), [assertion], membership[other_mention.handle])
             if kind == 'parent':
                 parents[right][left].append(assertion)
         for child, co_parents in parents.items():
@@ -482,10 +695,35 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 if compatible_names(root_names[left], root_names[right]):
                     continue
                 basis = [*co_parents[left], *co_parents[right]]
-                relative(left, right, ('family context', '', ''), basis, confidence[child], dependencies[child].values())
-                relative(right, left, ('family context', '', ''), basis, confidence[child], dependencies[child].values())
+                child_confidence = max(membership[a.mentions[1].handle] for a in basis)
+                relative(left, right, ('family context', '', ''), basis, child_confidence, dependencies[child].values())
+                relative(right, left, ('family context', '', ''), basis, child_confidence, dependencies[child].values())
         return current, profiles, root_names, context_coverage
 
+    def same_named_relatives():
+        """Same-name people in one role to one identity are one person unless blocked."""
+        current = groups()
+        found = defaultdict(dict)
+        for assertion in assertions:
+            kind = assertion.original['type']
+            if kind not in {'parent', 'sibling', 'spouse'}:
+                continue
+            a, b = assertion.mentions
+            for own, other in ((a, b), (b, a)):
+                if membership[own.handle] < model.settings['mergeProbability']:
+                    continue
+                role = ('child' if own is a else 'parent') if kind == 'parent' else kind
+                own_root, other_root = find(own.handle), find(other.handle)
+                if own_root != other_root:
+                    found[own_root, role, given(name(other.handle))].setdefault(other_root, []).append(assertion.source)
+        proposals = []
+        for _, roots in sorted(found.items()):
+            for left, right in combinations(sorted(roots), 2):
+                if all(compatible_names(name(x), name(y)) for x in current[left] for y in current[right]):
+                    proposals.append((current[left][0], current[right][0], [*roots[left], *roots[right]]))
+        return accept(proposals, 'same-named relatives of one identity', {})
+
+    same_named_relatives()
     for iteration in range(model.settings['maxRounds']):
         current, profiles, root_names, context_coverage = build_profiles()
         buckets = defaultdict(list)
@@ -498,10 +736,11 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     continue
                 record = model.compare(profiles[left], profiles[right])
                 blocks = record.pop('blocks')
+                record.pop('hardBlocks')
                 if not record.pop('substantive'):
                     continue
                 pair = tuple(sorted((left, right)))
-                record.update(mentions=list(pair), iteration=iteration, **{'pass': 1}, status='below-threshold', reason='below merge probability')
+                record.update(mentions=list(pair), iteration=iteration, stage=3, status='below-threshold', reason='below merge probability')
                 round_scores[pair] = record
                 comparisons[pair] = record
                 if len(anchor([*current[left], *current[right]])) > 1:
@@ -549,137 +788,107 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 round_scores[pair].update(status='merged', reason='probability, margin and cluster constraints passed')
             else:
                 round_scores[pair].update(status='incompatible', reason='complete proposed cluster violates identity constraints')
+        count += same_named_relatives()
         if not count:
             break
 
-    # Second pass: single-passage leftovers attach to the frozen tree through
-    # the positions their relationships allow; attachments never support each
-    # other and never join two existing identities.
+    # Stage 4: every identity joins its most probable same-name identity unless
+    # a hard block forbids it. Thresholds above only decided which merges came
+    # first; here a join needs real evidence, not a probability threshold.
+    best_settings = model.settings['bestCandidate']
     second = model.settings['secondPass']
-    current, profiles, root_names, context_coverage = build_profiles()
-    labels = {root: next(iter(anchor(handles)), root_names[root]) for root, handles in current.items()}
-    reference = {root for root, handles in current.items()
-                 if anchor(handles) or len({scope(mentions[h])[:2] for h in handles}) > 1}
-    tree, relations, family_roots = defaultdict(set), defaultdict(list), set()
-    factual_parents = defaultdict(list)
-    steps = {'parent': ('C', 'P'), 'sibling': ('S', 'S'), 'spouse': ('Sp', 'Sp')}
-    for assertion in assertions:
-        kind = assertion.original['type']
-        if kind not in RELATIONS:
-            continue
-        a, b = assertion.mentions
-        left, right = find(a.handle), find(b.handle)
-        family_roots.update((left, right))
-        if kind == 'parent' and assertion.source.kind == 'facts':
-            factual_parents[left].append((right, assertion))
-        if left == right:
-            continue
-        if kind in steps:
-            tree[left].add((steps[kind][0], right))
-            tree[right].add((steps[kind][1], left))
-        for own, field, other in ((left, a.field, right), (right, b.field, left)):
-            if own not in reference and other in reference:
-                relations[own].append((assertion, field, other))
-    widows = defaultdict(list)
-    widow_claim = re.compile(r'^(?:(?:was|is|remained|became)\s+(?:a\s+)?widow(?:er)?\b|'
-                            r'(?:was|is)\s+(?:recorded|described|named|mentioned|listed)\b[^.!?;]*\bas\s+(?:a\s+)?widow(?:er)?\b)', re.I)
-    for assertion in assertions:
-        if assertion.source.kind != 'facts':
-            continue
-        if assertion.original['type'] == 'spouse':
-            a, b = assertion.mentions
-            for own, other in ((a, b), (b, a)):
-                if other.deceased and not own.deceased:
-                    widows[find(own.handle)].append(own)
-        elif (assertion.original['type'] == 'generic' and assertion.mentions
-              and not assertion.mentions[0].deceased and widow_claim.search(assertion.original['content'])):
-            mention = assertion.mentions[0]
-            widows[find(mention.handle)].append(mention)
-    # A deliberately weaker rule for standalone widow records: one full name
-    # may attach to an established family, but no two reference identities join.
-    widow_leftovers = {root for root in widows if root not in reference and root not in family_roots
-                      and len(root_names[root].split()) >= 2}
-    parental_mentions = defaultdict(list)
-    established_names = {root_names[root] for root in reference}
-    for root, handles in current.items():
-        if root in reference or root in family_roots or len(root_names[root].split()) < 2:
-            continue
-        for handle in handles:
-            mention = mentions[handle]
-            claim = speculative_parent_claim(mention)
-            if not claim:
-                continue
-            children = set()
-            for literal in model.person_references(claim[1]):
-                child = names.key(literal)
-                # English plural names in "the two X von Ys" still discuss X
-                # von Y. This retrieves a name; it never supplies a second child.
-                if (child.endswith('s') and child not in established_names and child[:-1] in established_names
-                    and re.search(r'\b(?:two|both|several)\s+' + re.escape(literal), claim[1], re.I)):
-                    child = child[:-1]
-                children.add(child)
-            if children:
-                parental_mentions[root].append((mention, children))
-    paths = {}
-    def paths_from(root):
-        if root not in paths:
-            paths[root] = tree_paths(tree, root, second['maxPathSteps'])
-        return paths[root]
-    def nearest(assertion, root):
-        return max(decay(assertion.bounds, mentions[h].assertion.bounds, model.settings['familyHalfLifeYears']) for h in current[root])
+    prior_log_odds = math.log(model.settings['priorProbability'] / (1 - model.settings['priorProbability']))
     elder = {'der Ältere', 'der Alte'}
     younger = {'der Jüngere', 'der Junge'}
-    second_scores, proposals = {}, []
-    for leftover in sorted(set(relations) | widow_leftovers | parental_mentions.keys()):
-        if all(mentions[h].field == 'text' for h in current[leftover]):
-            continue
-        candidates = [root for root in sorted(reference)
-                      if given(root_names[root]) == given(root_names[leftover])
-                      and all(compatible_names(name(a), name(b)) for a in current[leftover] for b in current[root])]
-        weak_only = leftover in widow_leftovers
-        attribution_only = leftover in parental_mentions
-        if weak_only or attribution_only:
-            candidates = [root for root in candidates if root_names[root] == root_names[leftover]]
-        scored = {}
-        for candidate in candidates:
-            record = model.compare(profiles[leftover], profiles[candidate])
-            blocks = record.pop('blocks')
+    widow_claim = re.compile(r'^(?:(?:was|is|remained|became)\s+(?:a\s+)?widow(?:er)?\b|'
+                             r'(?:was|is)\s+(?:recorded|described|named|mentioned|listed)\b[^.!?;]*\bas\s+(?:a\s+)?widow(?:er)?\b)', re.I)
+    tied_roots = set()
+    possible = {}
+
+    def time_gap(left, right):
+        hull = lambda handles: (min(mentions[h].assertion.bounds[0] for h in handles), max(mentions[h].assertion.bounds[1] for h in handles))
+        return gap_years(hull(left), hull(right))
+
+    for stage_round in range(len(mentions)):
+        current, profiles, root_names, context_coverage = build_profiles()
+        labels = {root: next(iter(anchor(handles)), root_names[root]) for root, handles in current.items()}
+        reference = {root for root, handles in current.items() if anchor(handles) or passages(handles) > 1}
+        tree, relations, factual_parents = family_tree()
+        family_roots = set(relations)
+        typed = {root for root, handles in current.items() if any(mentions[h].field != 'text' for h in handles)}
+        tied_roots = {root for root in typed if passages(current[root]) == 1 and stage1_tied & set(current[root])}
+        widows = defaultdict(list)
+        for assertion in assertions:
+            if assertion.source.kind != 'facts':
+                continue
+            if assertion.original['type'] == 'spouse':
+                a, b = assertion.mentions
+                for own, other in ((a, b), (b, a)):
+                    if other.deceased and not own.deceased:
+                        widows[find(own.handle)].append(own)
+            elif (assertion.original['type'] == 'generic' and assertion.mentions
+                  and not assertion.mentions[0].deceased and widow_claim.search(assertion.original['content'])):
+                widows[find(assertion.mentions[0].handle)].append(assertion.mentions[0])
+        parental_mentions = defaultdict(list)
+        established_names = {root_names[root] for root in reference}
+        for root, handles in current.items():
+            if root in reference or root in family_roots or len(root_names[root].split()) < 2:
+                continue
+            for handle in handles:
+                claim = speculative_parent_claim(mentions[handle])
+                if not claim:
+                    continue
+                children = set()
+                for literal in model.person_references(claim[1]):
+                    child = names.key(literal)
+                    # English plural names in "the two X von Ys" still discuss X
+                    # von Y. This retrieves a name; it never supplies a second child.
+                    if (child.endswith('s') and child not in established_names and child[:-1] in established_names
+                        and re.search(r'\b(?:two|both|several)\s+' + re.escape(literal), claim[1], re.I)):
+                        child = child[:-1]
+                    children.add(child)
+                if children:
+                    parental_mentions[root].append((mentions[handle], children))
+        paths = {}
+        def paths_from(root):
+            if root not in paths:
+                paths[root] = tree_paths(tree, root, second['maxPathSteps'])
+            return paths[root]
+        relative_memo = {}
+        def relative_block(root, candidate):
+            if root not in relative_memo:
+                relative_memo[root] = relative_blocks(tree, root)
+            return relative_memo[root].get(candidate)
+        def nearest(assertion, root):
+            return max(decay(assertion.bounds, mentions[h].assertion.bounds, model.settings['familyHalfLifeYears']) for h in current[root])
+        buckets = defaultdict(list)
+        for root in sorted(typed):
+            buckets[given(root_names[root])].append(root)
+        base = {}
+        for roots in buckets.values():
+            for left, right in combinations(roots, 2):
+                if all(compatible_names(name(a), name(b)) for a in current[left] for b in current[right]):
+                    base[left, right] = base[right, left] = model.compare(profiles[left], profiles[right])
+
+        def score(root, candidate):
+            """Directional record: shared evidence plus the root's own kinship positions."""
+            record = {key: (list(value) if isinstance(value, list) else value) for key, value in base[root, candidate].items()}
+            record['features'] = [dict(f) for f in record['features']]
+            blocks = list(record.pop('hardBlocks'))
+            record.pop('blocks')
             record.pop('substantive')
-            added, positioned, contradicted = [], False, False
-            if (weak_only and candidate in family_roots
-                and len({scope(mentions[h])[:2] for h in current[candidate]}) > 1):
-                support = [(own, other) for own in widows[leftover] for other in widows[candidate]
-                           if other.assertion.bounds[0] <= own.assertion.bounds[1]]
-                if support:
-                    own, other = max(support, key=lambda pair: min(reliability(m.assertion.source, model.settings) for m in pair))
-                    value = second['widowhoodNameWeight'] * min(reliability(m.assertion.source, model.settings) for m in (own, other))
-                    added.append(('weak attachment: same full name and earlier widowhood', value, own.assertion.source))
+            if len(anchor([*current[root], *current[candidate]])) > 1:
+                blocks.append('distinct confirmed registry IDs')
+            known = relative_block(root, candidate)
+            if known:
+                blocks.append(known)
+            added = []
             family = {f['name'].split(': ', 1)[1] for f in record['features'] if 'family context: ' in f['name']}
             by_relative = {}
-            for mention, children in parental_mentions.get(leftover, ()):
-                for child, factual in factual_parents[candidate]:
-                    if child not in reference or root_names[child] not in children:
-                        continue
-                    # Identify the actor through independently recorded factual
-                    # parentage. The hypothesis itself remains a guess and adds
-                    # no relationship. Its tentative wording is not uncertainty
-                    # that the source explicitly names this parent and child.
-                    source_weight = model.settings['sourceWeights'][mention.assertion.source.path.split('/')[1]]
-                    weight = min(source_weight, reliability(factual.source, model.settings))
-                    # An exact child ID in the factual relationship is fixed;
-                    # uncertain aliases elsewhere in that child's cluster do
-                    # not weaken this independently anchored parentage.
-                    child_confidence = 1.0 if anchor([factual.mentions[1].handle]) else confidence[child]
-                    value = model.settings['sharedRelativeWeight'] * weight * child_confidence
-                    if value > by_relative.get(child, (0,))[0]:
-                        by_relative[child] = (value, f'factual parentage of {root_names[child]} corroborates speculative mention',
-                                              mention.assertion.source)
-                    if factual.source.key not in {ref.key for ref in record['sources']}:
-                        record['sources'].append(factual.source)
-                    for ref in dependencies[child].values():
-                        if ref.key not in {source.key for source in record['sources']}:
-                            record['sources'].append(ref)
-            for assertion, field, relative_root in relations[leftover]:
+            positioned = False
+            for assertion, field, relative_root in relations[root]:
+                if relative_root == candidate:
+                    continue
                 term = names.kinship.position(assertion, field)
                 found = paths_from(relative_root).get(candidate, set())
                 allowed = sorted(path for path in found if term.allowed.contains(path))
@@ -688,86 +897,181 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 if allowed:
                     positioned = True
                     if root_names[relative_root] in family:
-                        continue  # pass 1 already counted this relative
+                        continue  # the shared-relative feature already counts it
+                    relative_mention = assertion.mentions[1] if field == 'person' else assertion.mentions[0]
                     value = (model.settings['sharedRelativeWeight'] * second['specificityFactors'][term.specificity] * weight
-                             * confidence[relative_root] * nearest(assertion, candidate))
+                             * membership[relative_mention.handle] * nearest(assertion, candidate))
                     if value > by_relative.get(relative_root, (0,))[0]:
                         by_relative[relative_root] = value, f'kinship position {"".join(allowed[0])} of {labels[relative_root]} ({label})', assertion.source
                 elif found and all(term.excludes(path) for path in found):
-                    text = f'kinship term {label} excludes position {"".join(sorted(found)[0])} of {labels[relative_root]}'
-                    contradicted = True
-                    if weight == 1:
-                        blocks.append(text)
-                    else:
-                        added.append((text, -model.settings['deathConflictPenalty'] * weight, assertion.source))
+                    blocks.append(f'kinship term {label} excludes position {"".join(sorted(found)[0])} of {labels[relative_root]}')
             remaining = model.settings['familyMaxWeight']
             for value, text, source in sorted(by_relative.values(), key=lambda item: (-item[0], item[1])):
                 added.append((text, min(value, remaining), source))
                 remaining -= min(value, remaining)
             # An age title implies a same-named relative of another generation
             # in that passage; the candidate should sit on the other side of it.
-            for h in current[leftover]:
+            for h in current[root]:
                 titles = set(mentions[h].titles)
                 offset = 1 if titles & elder else -1 if titles & younger else 0
                 if not offset:
                     continue
-                namesakes = [root for root in candidates if root != candidate
-                             and any(scope(mentions[x])[:2] == scope(mentions[h])[:2] for x in current[root])]
-                if any(generation(path) == offset for root in namesakes for path in paths_from(root).get(candidate, ())):
+                namesakes = [other for other in buckets[given(root_names[root])] if other not in (root, candidate)
+                             and any(scope(mentions[x])[:2] == scope(mentions[h])[:2] for x in current[other])]
+                if any(generation(path) == offset for other in namesakes for path in paths_from(other).get(candidate, ())):
                     added.append(('age-title namesake one generation ' + ('below' if offset > 0 else 'above'),
                                   second['ageTitleNamesakeWeight'] * reliability(mentions[h].assertion.source, model.settings),
                                   mentions[h].assertion.source))
                     break
-            scored[candidate] = record, blocks, added, positioned, contradicted
-        # Only candidate: one compatible same-named identity in that family,
-        # unless another leftover of that name is related to the same family.
-        compatible = [c for c, (_, blocks, _, positioned, _) in scored.items() if positioned and not blocks]
-        relatives = {relative_root for _, _, relative_root in relations[leftover]}
-        competing = any(other != leftover and given(root_names[other]) == given(root_names[leftover])
-                     and relatives & {relative_root for _, _, relative_root in relations[other]} for other in relations)
-        if len(compatible) == 1 and not competing and not weak_only and not attribution_only:
-            source = relations[leftover][0][0].source
-            scored[compatible[0]][2].append((f'only compatible candidate near {", ".join(sorted(labels[r] for r in relatives))}',
-                                             second['eliminationWeight'] * min(reliability(a.source, model.settings) for a, _, _ in relations[leftover]), source))
-        options = []
-        for candidate, (record, blocks, added, _, contradicted) in scored.items():
-            if not added and not contradicted:
-                continue
+            # A standalone widow record and an established family with earlier
+            # widowhood under the same full name.
+            if (root not in family_roots and root in widows and root_names[root] == root_names[candidate]
+                    and candidate in family_roots and passages(current[candidate]) > 1):
+                support = [(own, other) for own in widows[root] for other in widows[candidate]
+                           if other.assertion.bounds[0] <= own.assertion.bounds[1]]
+                if support:
+                    own, other = max(support, key=lambda pair: min(reliability(m.assertion.source, model.settings) for m in pair))
+                    value = second['widowhoodNameWeight'] * min(reliability(m.assertion.source, model.settings) for m in (own, other))
+                    added.append(('weak attachment: same full name and earlier widowhood', value, own.assertion.source))
+            # A speculative "may have been the parent of X" corroborated by
+            # independently recorded factual parentage of X.
+            if root_names[root] == root_names[candidate]:
+                corroborated = {}
+                for mention, children in parental_mentions.get(root, ()):
+                    for child, factual in factual_parents[candidate]:
+                        if child not in reference or root_names[child] not in children:
+                            continue
+                        source_weight = model.settings['sourceWeights'][mention.assertion.source.path.split('/')[1]]
+                        weight = min(source_weight, reliability(factual.source, model.settings))
+                        child_confidence = 1.0 if anchor([factual.mentions[1].handle]) else membership[factual.mentions[1].handle]
+                        value = model.settings['sharedRelativeWeight'] * weight * child_confidence
+                        if value > corroborated.get(child, (0,))[0]:
+                            corroborated[child] = (value, f'factual parentage of {root_names[child]} corroborates speculative mention',
+                                                   mention.assertion.source)
+                        if factual.source.key not in {ref.key for ref in record['sources']}:
+                            record['sources'].append(factual.source)
+                added.extend((text, value, source) for value, text, source in corroborated.values())
             for text, value, source in added:
                 record['features'].append({'name': text, 'contribution': round(value, 8)})
                 if source.key not in {ref.key for ref in record['sources']}:
                     record['sources'].append(source)
             record['logOdds'] = round(record['logOdds'] + sum(value for _, value, _ in added), 8)
             record['probability'] = round(1 / (1 + math.exp(-max(-700, min(700, record['logOdds'])))), 8)
-            pair = tuple(sorted((leftover, candidate)))
-            record.update(mentions=list(pair), **{'pass': 2}, status='below-threshold', reason='below second-pass merge probability')
-            if blocks:
-                record.update(status='incompatible', reason='blocked: ' + '; '.join(blocks))
-            elif weak_only and sum(not entry[1] for entry in scored.values()) != 1:
-                record.update(status='ambiguous', reason='weak widowhood attachment has competing same-name reference identities')
-            elif attribution_only and sum(bool(entry[2]) and not entry[1] for entry in scored.values()) != 1:
-                record.update(status='ambiguous', reason='speculative mention has competing factual parents with the same names')
-            elif record['probability'] >= second['mergeProbability']:
-                options.append((record['logOdds'], candidate))
-            second_scores[pair] = record
-            comparisons[pair] = record
-        rivals = sorted((record['logOdds'] for record, blocks, added, _, _ in scored.values() if added and not blocks), reverse=True)
-        if options:
-            best, candidate = max(options)
-            pair = tuple(sorted((leftover, candidate)))
-            if len(rivals) > 1 and best - rivals[1] < model.settings['ambiguityLogOddsMargin']:
-                second_scores[pair].update(status='ambiguous', reason='competing candidates within the decision margin')
-            else:
-                proposals.append((leftover, candidate, second_scores[pair]['sources']))
-    round_scores = second_scores
-    accept(proposals, 'second pass: relationship position, corroborated speculative mention, or weak widowhood attachment')
-    for leftover, candidate, _ in proposals:
-        pair = tuple(sorted((leftover, candidate)))
-        if find(leftover) == find(candidate):
-            second_scores[pair].update(status='merged', reason='second-pass probability, margin and cluster constraints passed')
-        else:
-            second_scores[pair].update(status='incompatible', reason='complete proposed cluster violates identity constraints')
+            return record, blocks, positioned
 
+        heap, orders, records, directed, ties = [], {}, {}, {}, {}
+        for root in sorted(typed):
+            candidates = [other for other in buckets[given(root_names[root])] if other != root and (root, other) in base]
+            scored = {candidate: score(root, candidate) for candidate in candidates}
+            # Only candidate: one unblocked identity in an allowed kinship position.
+            positioned = [c for c, (_, blocks, ok) in scored.items() if ok and not blocks]
+            if len(positioned) == 1 and relations[root]:
+                record = scored[positioned[0]][0]
+                value = second['eliminationWeight'] * min(reliability(a.source, model.settings) for a, _, _ in relations[root])
+                record['features'].append({'name': 'only compatible candidate in the family', 'contribution': round(value, 8)})
+                record['logOdds'] = round(record['logOdds'] + value, 8)
+                record['probability'] = round(1 / (1 + math.exp(-max(-700, min(700, record['logOdds'])))), 8)
+            unblocked = {c: record for c, (record, blocks, _) in scored.items() if not blocks}
+            total = sum(math.exp(min(700, record['logOdds'])) for record in unblocked.values())
+            eligible = []
+            for candidate, (record, blocks, _) in sorted(scored.items()):
+                pair = tuple(sorted((root, candidate)))
+                net = record['logOdds'] - prior_log_odds
+                positive = [f for f in record['features'] if f['contribution'] > 0 and not f['name'].startswith('rank title')]
+                identifying = any('family context:' in f['name'] or 'office title:' in f['name'] or 'designation title:' in f['name']
+                                  or f['name'].startswith(('kinship position', 'factual parentage', 'weak attachment'))
+                                  for f in positive)
+                partial_name = any((len(name(a).split()) == 1) != (len(name(b).split()) == 1)
+                                   for a in current[root] for b in current[candidate])
+                record.update(mentions=list(pair), stage=4, iteration=stage_round)
+                if blocks:
+                    record.update(status='incompatible', reason='blocked: ' + '; '.join(blocks))
+                elif net < best_settings['minJoinEvidence'] or not positive:
+                    record.update(status='below-threshold', reason='not enough evidence for a join')
+                elif partial_name and not identifying:
+                    record.update(status='incompatible', reason='an omitted surname requires family or identifying-title support; shared geography and associates are insufficient')
+                else:
+                    record.update(status='below-threshold', reason='a stronger candidate was chosen')
+                    eligible.append(candidate)
+                record['share'] = round(math.exp(min(700, record['logOdds'])) / (1 + total), 8) if not blocks else 0.0
+                directed[root, candidate] = record
+                worth = any(f['contribution'] > 0 for f in record['features']) or blocks and not blocks[0].startswith('impossible age')
+                if worth and record['logOdds'] >= records.get(pair, {'logOdds': -math.inf})['logOdds']:
+                    records[pair] = record
+                if not blocks and record['probability'] >= model.settings['possibleSameDisplayProbability']:
+                    possible[pair] = record['probability']
+            eligible.sort(key=lambda c: (-scored[c][0]['logOdds'], c))
+            if not eligible:
+                continue
+            top = scored[eligible[0]][0]['logOdds']
+            tied = [c for c in eligible if top - scored[c][0]['logOdds'] < best_settings['attachmentTieLogOdds']]
+            chosen = tied[0]
+            if len(tied) > 1:
+                chosen = None
+                if root not in tied_roots:
+                    has_family = [c for c in tied if any(f['contribution'] > 0 and ('family context' in f['name'] or f['name'].startswith('kinship position'))
+                                                         for f in scored[c][0]['features'])]
+                    if len(has_family) == 1:
+                        chosen = has_family[0]
+                    else:
+                        pool = has_family or tied
+                        gaps = {c: time_gap(current[root], current[c]) for c in pool}
+                        nearest_gap = min(gaps.values())
+                        if sum(gap == nearest_gap for gap in gaps.values()) == 1:
+                            chosen = min(gaps, key=gaps.get)
+                if chosen is None:
+                    ties[root] = set(tied)
+                    for c in tied:
+                        pair = tuple(sorted((root, c)))
+                        scored[c][0].update(status='ambiguous', reason='tied with another candidate')
+                        records[pair] = scored[c][0]
+                        possible[pair] = scored[c][0]['probability']
+                    continue
+            orders[root] = [chosen] + [c for c in eligible if c not in tied]
+            heapq.heappush(heap, (-scored[chosen][0]['logOdds'], root, chosen, 0))
+        comparisons.update(records)
+        joined, touched = 0, set()
+        while heap:
+            _, root, candidate, index = heapq.heappop(heap)
+            left, right = find(root), find(candidate)
+            def retry():
+                if index + 1 < len(orders[root]):
+                    following = orders[root][index + 1]
+                    heapq.heappush(heap, (-directed[root, following]['logOdds'], root, following, index + 1))
+            if left == right or left in touched or right in touched:
+                continue  # scored against an identity that changed; next round
+            if root in ties.get(candidate, ()):
+                retry()  # the candidate cannot choose between this identity and another
+                continue
+            live = groups()
+            union = sorted(live[left] + live[right])
+            others = [handles for key, handles in live.items() if key not in (left, right)]
+            if (len(anchor(union)) > 1 or relative_blocks(family_tree()[0], left).get(right)
+                    or not consistent([union, *others], 1)):
+                retry()
+                continue
+            pair = tuple(sorted((root, candidate)))
+            record = directed[root, candidate]
+            comparisons[pair] = record
+            share = record['share']
+            # The record that joins carries the uncertainty of the choice.
+            moving = left if not anchor(live[left]) and (anchor(live[right]) or root == left) else right
+            for h in live[moving]:
+                membership[h] *= share
+            top_root = min(left, right)
+            parent[left if top_root == right else right] = top_root
+            touched.update((left, right))
+            refs = {**dependencies[left], **dependencies[right], **{ref.key: ref for ref in record['sources']}}
+            dependencies[top_root].update(refs)
+            confidence[top_root] = min(membership[h] for h in union)
+            record.update(status='merged', reason=f'best unblocked candidate (share {share:.0%})')
+            possible.pop(pair, None)
+            links.append({'reason': 'best unblocked candidate', 'mentions': union,
+                          'sources': [refs[key].export() for key in sorted(refs)]})
+            joined += 1
+        joined += same_named_relatives()
+        if not joined:
+            break
     current = groups()
     keys = {}
     nodes = []
@@ -837,6 +1141,17 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         exported_comparisons.append({**comparison, 'person': left, 'candidate': right,
             'usesGuesses': any(ref.kind == 'guesses' for ref in comparison['sources']),
             'sources': [ref.export() for ref in comparison['sources']]})
+    # Candidates that could not be decided (ties, or likely but not chosen)
+    # are shown as possibly the same person, never merged.
+    possibly = defaultdict(dict)
+    for (left, right), probability in possible.items():
+        one, other = keys[left], keys[right]
+        if one != other and one in participants and other in participants:
+            for x, y in ((one, other), (other, one)):
+                possibly[x][y] = max(probability, possibly[x].get(y, 0))
+    for node in nodes:
+        if possibly.get(node['key']):
+            node['possiblySame'] = [{'key': key, 'probability': round(value, 8)} for key, value in sorted(possibly[node['key']].items())]
     return {'nodes': [node for node in nodes if node['key'] in participants],
             'relationships': [edges[key] for key in sorted(edges)], 'links': links,
             'comparisons': exported_comparisons, 'contextCoverage': context_coverage,

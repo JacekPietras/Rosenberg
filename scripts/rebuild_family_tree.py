@@ -6,6 +6,7 @@ evidence, and --apply to write data/tree.json after validation.
 """
 
 import argparse
+from collections import Counter, defaultdict
 from pathlib import Path
 import sys
 from family_graph import build, load_inputs
@@ -34,6 +35,35 @@ def explain(result, query):
                 print(f'      {feature["name"]}: {feature["contribution"]:+g} log-odds')
 
 
+def report(graph):
+    """Disconnected family trees, common names per century, and split passages."""
+    parent = {node['key']: node['key'] for node in graph['nodes']}
+    def find(key):
+        while parent[key] != key:
+            parent[key] = parent[parent[key]]
+            key = parent[key]
+        return key
+    for edge in graph['relationships']:
+        parent[find(edge['person'])] = find(edge['of'])
+    sizes = Counter(find(key) for key in parent)
+    print(f'  {len(sizes)} family trees; largest {", ".join(map(str, sorted(sizes.values(), reverse=True)[:5]))}.')
+    by_name = defaultdict(Counter)
+    for node in graph['nodes']:
+        if node['dates']:
+            by_name[node['name']][node['dates'][0][:2] + '00s'] += 1
+    common = sorted(by_name.items(), key=lambda item: -sum(item[1].values()))[:6]
+    for name, centuries in common:
+        print(f'  {name}: ' + ', '.join(f'{century} {count}' for century, count in sorted(centuries.items())))
+    split = defaultdict(set)
+    for node in graph['nodes']:
+        for mention in node['mentions']:
+            if mention['field'] != 'text':
+                ref = mention['source']
+                split[ref['path'], ref['pointer'].rsplit('/', 2)[0], mention['date'], node['name']].add(node['key'])
+    print(f'  {sum(len(keys) > 1 for keys in split.values())} passages keep same-name occurrences in several identities '
+          '(forced distinctions or ties).')
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--explain', metavar='ID_OR_MENTION')
@@ -54,6 +84,7 @@ def main(argv=None):
             print(f'{result.view}: {coverage["reconstructedPeople"]} source identities, '
                   f'{coverage["reconstructedRelationships"]} relationships ({exported} between registry records), '
                   f'{coverage["unresolvedMentions"]} unresolved mentions, {coverage["conflicts"]} conflicts.')
+            report(result.evidence_graph)
             for conflict in result.conflicts:
                 print(f'  REVIEW: {conflict["reason"]}: {", ".join(conflict.get("identities", []))}')
                 for source in conflict.get('sources', []):

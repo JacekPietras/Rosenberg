@@ -1,5 +1,8 @@
 # Second pass: attaching leftover records
 
+> Superseded by [version 2](family-tree-algorithm-plan-v2.md). Kept for the
+> reasoning behind rules that version 2 retains.
+
 Implemented in `scripts/family_graph/reconstruction.py` and
 `scripts/family_graph/kinship.py`. It extends the
 [specification](family-tree-algorithm-plan.md) and keeps its log-odds

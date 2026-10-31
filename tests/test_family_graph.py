@@ -317,6 +317,29 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertIn(('vogt_zu_Durn', 'engelhard_son_of_vogt_zu_Durn'), edges)
         self.assertTrue(any(d.method == 'reviewed' for d in result.decisions.values()))
 
+    def test_real_vogt_zu_lauda_family_has_no_duplicate_konrad_or_arnold(self):
+        inputs = load_inputs(Path(__file__).resolve().parents[1])
+        graph = build(inputs, include_guesses=True).evidence_graph
+        nodes = {node['key']: node for node in graph['nodes']}
+        where = {(m['source']['path'], m['source']['pointer'], m['field']): node['key'] for node in graph['nodes'] for m in node['mentions']}
+        book = 'data/books/'
+        siblings = {edge['person'] if edge['of'] == 'vogt_zu_Lauda' else edge['of'] for edge in graph['relationships']
+                    if edge['type'] == 'sibling' and 'vogt_zu_Lauda' in (edge['person'], edge['of'])}
+        konrads = {key for key in siblings if nodes[key]['name'] == 'Konrad von Rosenberg'}
+        self.assertEqual(2, len(konrads))
+        # Kreis Mosbach's Ritter and Edelknecht are two people; the Ritter is the documented Vitztum.
+        ritter = where[(book + 'kreis_mosbach_1898.json', '/entries/3/guesses/2', 'person')]
+        squire = where[(book + 'kreis_mosbach_1898.json', '/entries/3/guesses/7', 'person')]
+        self.assertNotEqual(ritter, squire)
+        self.assertEqual(ritter, where[('data/documents/1381-05-25_4.json', '/entries/0/facts/2', 'person')])
+        # Bauer 1395: the late father, Arnold der Junge and his brother are three people.
+        bauer = book + 'bauer_1872.json'
+        self.assertEqual(where[(bauer, '/entries/60/facts/1', 'of')], where[(bauer, '/entries/60/facts/2', 'person')])
+        self.assertNotEqual(where[(bauer, '/entries/60/facts/1', 'person')], where[(bauer, '/entries/60/facts/2', 'of')])
+        # Freiburger 1401: the living Vizedom and Anna Marschalk's late husband stay apart.
+        fda = book + 'freiburger_dioecesan_archiv_1896_25.json'
+        self.assertNotEqual(where[(fda, '/entries/65/facts/2', 'person')], where[(fda, '/entries/65/facts/1', 'of')])
+
     def test_real_elisabeth_spouse_and_mother_attestations_form_one_identity(self):
         inputs = load_inputs(Path(__file__).resolve().parents[1])
         self.assertFalse(any(person['name'] == 'Elisabeth von Erligheim' for person in inputs.people),
@@ -346,7 +369,7 @@ class FamilyGraphTests(unittest.TestCase):
             ]:
                 for field in ('person', 'of'):
                     self.assertEqual(membership[(*first, field)], membership[(*second, field)])
-            self.assertTrue(all(node['identityProbability'] >= inputs.matching['mergeProbability'] for node in graph['nodes']))
+            self.assertGreaterEqual(elisabeth['identityProbability'], inputs.matching['mergeProbability'])
 
     def test_unresolved_groups_are_alternatives_without_merging_nodes(self):
         result = build(self.inputs(facts=[relation('Alex', 'b'), relation('Alex', 'c')]))
@@ -464,8 +487,10 @@ class FamilyGraphTests(unittest.TestCase):
         # actual source graph must still apply the weaker guessed evidence.
         self.assertTrue(any(d.identity == 'a' and d.uses_guesses for d in result.decisions.values()))
         graph = result.evidence_graph
-        self.assertTrue(any(node['name'] == 'Alex' and not node.get('registry') for node in graph['nodes']))
-        self.assertTrue(any(c['usesGuesses'] and c['status'] != 'merged' for c in graph['comparisons']))
+        # The source graph joins them by its own rule (two same-named spouses of
+        # b), and the join keeps its dependency on the guess.
+        link = next(link for link in graph['links'] if link['reason'] == 'same-named relatives of one identity')
+        self.assertTrue(any('/guesses/' in ref['pointer'] for ref in link['sources']))
 
     def test_apply_writes_only_tree_and_preserves_the_confirmed_registry(self):
         inputs = self.inputs(facts=[relation('a', 'b')])

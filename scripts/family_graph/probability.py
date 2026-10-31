@@ -18,8 +18,8 @@ from .names import normalize
 from .scoring import place_patterns
 
 DEFAULTS = {
-    'model': 'weighted-log-odds-v5', 'calibrated': False,
-    'priorProbability': 0.05, 'mergeProbability': 0.7,
+    'model': 'weighted-log-odds-v6', 'calibrated': False,
+    'priorProbability': 0.1, 'mergeProbability': 0.7,
     'ambiguityLogOddsMargin': 1.0, 'clusterMinimumProbability': 0.35,
     'guessWeight': 0.45,
     'sourceWeights': {'documents': 1.0, 'images': 1.0, 'books': 0.5, 'notes': 0.5},
@@ -36,7 +36,12 @@ DEFAULTS = {
     'relativeRarityWeight': 1.0, 'relativeRarityMaxWeight': 1.5, 'relativeRarityReferenceFrequency': 0.1,
     'opposedAgePenalty': 5.0, 'rankRegressionPenalty': 1.0,
     'deathConflictPenalty': 20.0, 'maxRounds': 12,
-    'secondPass': {'mergeProbability': 0.8, 'maxPathSteps': 3,
+    'sameDateRankConflictPenalty': 3.0,
+    'retrospectiveLookBackYears': 20.0, 'passageTitleAgreementWeight': 1.0,
+    'possibleSameDisplayProbability': 0.5,
+    'bestCandidate': {'maxLivingSpanYears': 64.0, 'attachmentTieLogOdds': 0.25,
+                      'minJoinEvidence': 0.5, 'maxRelativePathSteps': 6},
+    'secondPass': {'maxPathSteps': 3,
                    'specificityFactors': {'exact': 1.0, 'narrow': 0.5, 'broad': 0.3},
                    'eliminationWeight': 1.5, 'ageTitleNamesakeWeight': 1.0,
                    'widowhoodNameWeight': 5.0},
@@ -67,8 +72,10 @@ def parameters(value=None):
     if not result['adultAgeYears'] < result['ageComfortYears'] < result['maxAgeYears']:
         raise ValueError('matching: expected adult age < comfortable age < maximum age')
     second = result['secondPass']
-    if not result['priorProbability'] < second['mergeProbability'] < 1 or type(second['maxPathSteps']) is not int:
-        raise ValueError('matching.secondPass: invalid threshold or path length')
+    if type(second['maxPathSteps']) is not int or type(result['bestCandidate']['maxRelativePathSteps']) is not int:
+        raise ValueError('matching: invalid path length')
+    if not 0 < result['possibleSameDisplayProbability'] < 1:
+        raise ValueError('matching.possibleSameDisplayProbability: expected a value between zero and one')
     if any(value > 1 for value in second['specificityFactors'].values()):
         raise ValueError('matching.secondPass.specificityFactors: expected values not above one')
     if result['priorProbability'] >= result['mergeProbability'] or type(result['maxRounds']) is not int:
@@ -118,6 +125,15 @@ def chronology(mentions, settings, names=None):
         current = level.get(key)
         if current is None or (value > current[0] if larger else value < current[0]):
             level[key] = value, source
+    # Alternative guessed death dates of one passage ("died 1383, 1387 or
+    # 1388") are one uncertain death: the union of their intervals.
+    alternatives = {}
+    for mention in mentions:
+        if mention.assertion.source.kind == 'guesses' and mention.assertion.original['type'] == 'death' and death_interval(mention):
+            passage = mention.assertion.source.path, mention.assertion.source.pointer.rsplit('/guesses/', 1)[0], mention.reference
+            died = death_interval(mention)
+            low, high = alternatives.get(passage, died)
+            alternatives[passage] = min(low, died[0]), max(high, died[1])
     for mention in mentions:
         if mention.field == 'text' or speculative_parent_claim(mention) and not mention.deceased:
             continue
@@ -125,6 +141,8 @@ def chronology(mentions, settings, names=None):
         level = levels.setdefault(reliability(source, settings), {})
         keep(level, 'birth', end.toordinal() - (settings['adultAgeYears'] * YEAR if adult(mention, names) else 0), source, False)
         died = death_interval(mention)
+        if died and mention.assertion.source.kind == 'guesses' and mention.assertion.original['type'] == 'death':
+            died = alternatives[mention.assertion.source.path, mention.assertion.source.pointer.rsplit('/guesses/', 1)[0], mention.reference]
         if died:
             keep(level, 'deathStart', died[0].toordinal(), source, True)
             keep(level, 'deathEnd', died[1].toordinal(), source, False)
@@ -132,6 +150,7 @@ def chronology(mentions, settings, names=None):
                 keep(level, 'last', died[0].toordinal(), source, True)
         elif mention.assertion.original['type'] != 'death':
             keep(level, 'alive', start.toordinal(), source, True)
+            keep(level, 'first', end.toordinal(), source, False)
             keep(level, 'last', start.toordinal(), source, True)
     return levels
 
@@ -182,6 +201,28 @@ def death_conflicts(left, right, settings):
                         if result[3] or result[0] > worst[0] and not worst[3]:
                             worst = result
     return worst
+
+
+KNIGHT, SQUIRE = frozenset({'ritter', 'miles'}), frozenset({'edelknecht', 'armiger'})
+
+
+def mention_rank(mention):
+    """Distinguishing rank of one occurrence; `Knecht` alone and mixed ranks give none."""
+    titles = {normalize(title) for title in mention.titles}
+    knight, squire = bool(titles & KNIGHT), bool(titles & SQUIRE)
+    return 'ritter' if knight and not squire else 'edelknecht' if squire and not knight else None
+
+
+def single_day(bounds):
+    return bounds is not None and bounds[0] == bounds[1]
+
+
+def living_span(mentions, settings, names=None):
+    """Years between the first and last living mention, over all reliability levels."""
+    level = cumulative(chronology(mentions, settings, names), 0)
+    if 'first' not in level or 'alive' not in level:
+        return 0
+    return (level['alive'][0] - level['first'][0]) / YEAR
 
 
 def chronology_blocked(mentions, settings, names=None):
@@ -246,6 +287,8 @@ class Profile:
     distinctions: dict = field(default_factory=dict)
     office_scopes: dict = field(default_factory=dict)
     designation_places: dict = field(default_factory=dict)
+    # (rank, source, bounds, passage) for Ritter/miles versus Edelknecht/armiger.
+    ranks: list = field(default_factory=list)
 
 
 # Deliberately deterministic; no extraction of relationships from prose.
@@ -366,7 +409,7 @@ class ProbabilityModel:
                        for x, dx in a for y, dy in b]
             return max(choices, key=lambda choice: choice[0], default=(0, ()))
 
-        blocks = []
+        blocks, hard = [], []
         # Time distance alone is neutral; only the years a merge adds to the
         # minimum implied age count, and only beyond a comfortable age.
         own = chronology(left.mentions, p, self.names), chronology(right.mentions, p, self.names)
@@ -382,6 +425,20 @@ class ProbabilityModel:
             blocks.append(label)
         elif value:
             add(label, -value, sources)
+        # Joins without a probability threshold still respect impossibility:
+        # any impossible age, death conflicts between facts, and too long a life.
+        merged = merge_chronology(*own)
+        for level in sorted(merged):
+            summary = cumulative(merged, level)
+            if 'birth' in summary and 'last' in summary and (summary['last'][0] - summary['birth'][0]) / YEAR > p['maxAgeYears']:
+                hard.append('impossible age')
+                break
+        factual = [chronology([m for m in side.mentions if m.assertion.source.kind == 'facts'], p, self.names) for side in (left, right)]
+        if death_conflicts(*factual, p)[0]:
+            hard.append(death_conflicts(*factual, p)[1])
+        span = living_span([*left.mentions, *right.mentions], p, self.names)
+        if span > p['bestCandidate']['maxLivingSpanYears']:
+            hard.append(f'living mentions span {span:.0f} years')
 
         by_category = {}
         for key in sorted(set(left.titles) & set(right.titles)):
@@ -411,6 +468,15 @@ class ProbabilityModel:
             return max(choices, default=0)
         add('elder title before younger title', -regression(('age', 'elder'), ('age', 'young'), p['opposedAgePenalty']))
         add('Ritter before Edelknecht', -regression(('rank', 'ritter'), ('rank', 'edelknecht'), p['rankRegressionPenalty']))
+        # Ritter in one source and Edelknecht in another on the same day.
+        conflicts = [(min(reliability(x, p), reliability(y, p)), (x, y))
+                     for rank, x, dx, scope in left.ranks for other, y, dy, other_scope in right.ranks
+                     if rank != other and scope != other_scope and single_day(dx) and dx == dy]
+        if conflicts:
+            weight, sources = max(conflicts, key=lambda item: item[0])
+            if weight == 1:
+                blocks.append('same-date opposite ranks in two documents')
+            add('same-date opposite ranks', -p['sameDateRankConflictPenalty'] * weight, sources)
 
         # One strongest observation per place; distinct place roles are not
         # independent evidence about the same geographical association.
@@ -445,9 +511,14 @@ class ProbabilityModel:
             add(f'{label}: {name}', value, sources)
             remaining -= value
 
+        def best_family(a, b, weight):
+            # Each relative mention carries its own membership confidence.
+            choices = [(weight * min(reliability(x, p), reliability(y, p)) * min(cx, cy) * decay(dx, dy, p['familyHalfLifeYears']), (x, y))
+                       for x, dx, cx in a for y, dy, cy in b]
+            return max(choices, key=lambda choice: choice[0], default=(0, ()))
         relatives = {}
         for token in sorted(set(left.relatives) & set(right.relatives), key=str):
-            role, identity, relative_name, grounded, confidence = token
+            role, identity, relative_name, grounded = token
             key = relative_name
             relation = 'spouse' if role[0] == 'family context' else role[0]
             # An unresolved spouse pairs two families' names and is more
@@ -461,9 +532,9 @@ class ProbabilityModel:
             # A bare given name alone cannot bootstrap two provisional families.
             if not identity and len(relative_name.split()) < 2:
                 continue
-            value, sources = best(left.relatives[token], right.relatives[token], weight * confidence, p['familyHalfLifeYears'])
+            value, sources = best_family(left.relatives[token], right.relatives[token], weight)
             rarity, frequency = self.relative_rarity(relative_name)
-            bonus, _ = best(left.relatives[token], right.relatives[token], rarity * confidence, p['familyHalfLifeYears'])
+            bonus, _ = best_family(left.relatives[token], right.relatives[token], rarity)
             if value + bonus > relatives.get(key, (0, '', (), 0, 0, 0))[0]:
                 label = 'shared family context' if role[0] == 'family context' else f'{role[0]} family context'
                 relatives[key] = value + bonus, f'{label}: {relative_name}', sources, value, bonus, frequency
@@ -478,12 +549,14 @@ class ProbabilityModel:
 
         if left.distinctions.get(right.key) or right.distinctions.get(left.key):
             blocks.append('explicitly distinct relationship participants')
+            hard.append('explicitly distinct relationship participants')
+        hard.extend(block for block in blocks if block not in hard and not block.startswith(('mention after', 'incompatible death', 'impossible age')))
         prior = math.log(p['priorProbability'] / (1 - p['priorProbability']))
         log_odds = prior + sum(feature['contribution'] for feature in features)
         probability = 1 / (1 + math.exp(-max(-700, min(700, log_odds))))
         return {'probability': round(probability, 8), 'logOdds': round(log_odds, 8),
                 'features': features, 'sources': [refs[key] for key in sorted(refs)],
-                'blocks': blocks,
+                'blocks': blocks, 'hardBlocks': hard,
                 # Name/age-only candidates are not worth persisting.
                 'substantive': any(f['contribution'] > 0 or 'death' in f['name'] for f in features)
                                or any(not block.startswith('impossible age') for block in blocks)}

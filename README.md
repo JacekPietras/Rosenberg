@@ -75,17 +75,17 @@ contribute additional evidence. Informative prose-only actors can supply
 context records without creating family edges. Confirmed IDs in textual facts
 are recognized directly. A capped full-relative-name rarity adjustment uses
 factual source frequencies; it is not a historical population estimate.
-The second pass can identify a person discussed in a retrospective parentage
-hypothesis through independently recorded factual parentage, retaining the
-hypothesis as a guess. Standalone widow records can use a weaker same-full-name
-attachment to a unique established family with earlier documented widowhood;
-this assumption can conflate undocumented namesakes.
+Records that no threshold merges still join their most probable same-name
+candidate unless something strictly forbids it (death, impossible age or time
+span, distinct registry IDs, or a known kinship such as father/son or cousins);
+a join needs at least some evidence beyond the name and rank. Undecided
+candidates are kept as "possibly the same person".
 The diagram defaults to parent/child and spouse lines; hovering over or focusing
 a person reveals their sibling and other kin lines as well. Children with the same recorded parents
 share a branch. In the default view, married parents use only the identifiable
 father's stem for shared children; both parent assertions remain in the evidence
-panel and appear when either connected person is hovered over or focused. The merge threshold is 70% in the first pass and
-80% in the [second pass](algorithm-plan/second-pass-plan.md), with competing-candidate and cluster checks. Estimates are **uncalibrated**, not
+panel and appear when either connected person is hovered over or focused. The merge threshold is 70% for confident merges; best-candidate joins have none
+and record their share instead ([plan](algorithm-plan/family-tree-algorithm-plan-v2.md)). Estimates are **uncalibrated**, not
 measured historical accuracy. The tree stores comparison probabilities, feature
 contributions, rejected alternatives, and provenance; tree and person pages
 explain them. A typed mention without a deceased marker means the person was

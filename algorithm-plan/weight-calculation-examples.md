@@ -8,8 +8,8 @@ uncalibrated.
 ## Calculation rules
 
 ```text
-prior = 0.05
-initial L = ln(0.05 / 0.95) = -2.944439
+prior = 0.10
+initial L = ln(0.10 / 0.90) = -2.197225
 P = 1 / (1 + exp(-L))
 reliability = source factor × guess factor (if guessed)
 pair reliability = min(left reliability, right reliability)
@@ -33,10 +33,10 @@ other record is always a document fact.
 
 | Weaker source | Pair reliability | Office | Property | Final L | P |
 | --- | --- | --- | --- | --- | --- |
-| Document fact | 1 | +8.000 | +4.000 | 9.056 | 99.99% |
-| Book fact | 0.5 | +4.000 | +2.000 | 3.056 | 95.50% |
-| Document guess | 0.45 | +3.600 | +1.800 | 2.456 | 92.10% |
-| Book guess | 0.225 | +1.800 | +0.900 | -0.244 | 43.92% |
+| Document fact | 1 | +8.000 | +4.000 | 9.803 | 99.99% |
+| Book fact | 0.5 | +4.000 | +2.000 | 3.803 | 97.82% |
+| Document guess | 0.45 | +3.600 | +1.800 | 3.203 | 96.10% |
+| Book guess | 0.225 | +1.800 | +0.900 | 0.503 | 62.32% |
 
 The same name adds no extra weight.
 
@@ -48,9 +48,9 @@ farther apart. The office makes him adult at the first record, so
 
 | Gap (years) | Office | Property | Min age | Age | Final L | P |
 | --- | --- | --- | --- | --- | --- | --- |
-| 0 | +8.000 | +4.000 | 16 | 0.000 | 9.056 | 99.99% |
-| 15 | +4.000 | +2.378 | 31 | 0.000 | 3.434 | 96.87% |
-| 57 | +0.574 | +0.555 | 73 | -1.300 | -3.115 | 4.25% |
+| 0 | +8.000 | +4.000 | 16 | 0.000 | 9.803 | 99.99% |
+| 15 | +4.000 | +2.378 | 31 | 0.000 | 4.181 | 98.50% |
+| 57 | +0.574 | +0.555 | 73 | -1.300 | -2.368 | 8.57% |
 | 75 | +0.250 | +0.297 | 91 | impossible | blocked | — |
 
 At 75 years the birth interval is empty: born no later than `d - 16` and no
@@ -68,8 +68,8 @@ A 1357 reference also marks him deceased.
 family = 9 × 1.0 × 1 × 2^(-10/35) = 7.383018
 compatible deceased markers = 0
 compatible death bound = 0
-L = -2.944439 + 7.383018 = 4.438579
-P = 98.83%
+L = -2.197225 + 7.383018 = 5.185793
+P = 99.44%
 ```
 
 If the 1357 reference did **not** mark him deceased, it would be a mention after
@@ -77,15 +77,15 @@ death: blocked for document facts.
 
 ## 4. Mention after death
 
-Start with compatible contextual evidence totaling `+8`: 99.37%. One source
+Start with compatible contextual evidence totaling `+8`: 99.70%. One source
 says he died before 1300; a 1328 fact mentions him without a deceased marker.
 
 | Death source | Contribution | Final L | P |
 | --- | --- | --- | --- |
 | Document fact | blocked | — | — |
-| Book fact (0.5) | `-20 × 0.5 = -10` | -4.944 | 0.71% |
-| Book guess (0.225) | `-20 × 0.225 = -4.5` | 0.556 | 63.54% |
-| 1328 mention marked deceased | 0 | 5.056 | 99.37% |
+| Book fact (0.5) | `-20 × 0.5 = -10` | -4.197 | 1.48% |
+| Book guess (0.225) | `-20 × 0.225 = -4.5` | 1.303 | 78.64% |
+| 1328 mention marked deceased | 0 | 5.803 | 99.70% |
 
 ## 5. Earlier younger, later elder; comparing generations
 
@@ -96,8 +96,8 @@ and called `der Ältere` then. Both early candidates have contextual support
 
 | Candidate | Latest birth | Min age 1357 | Context | Age | Age title | Final L | P |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Earlier elder | 1284 | 73 | +6 | -1.300 | +0.111 | 1.867 | 86.61% |
-| Earlier younger | 1300 | 57 | +6 | 0 | 0 | 3.056 | 95.50% |
+| Earlier elder | 1284 | 73 | +6 | -1.300 | +0.111 | 2.614 | 93.18% |
+| Earlier younger | 1300 | 57 | +6 | 0 | 0 | 3.803 | 97.82% |
 
 The elder is a parent and `der Ältere` in 1300, so he was born no later than
 1284. The younger has no adult constraint. Younger → elder has no opposed-title
@@ -110,8 +110,23 @@ preferred candidate. If the elder is also marked deceased by 1300, the unmarked
 ## 6. Duplicate support and close rivals
 
 Candidate A receives independent evidence `+5` and candidate B `+4.8`: `L =
-2.056` (88.65%) and `L = 1.856` (86.48%). Both clear 70%, but the difference
-`0.2` is below the margin `1`. Keep the assignment unresolved.
+2.803` (94.28%) and `L = 2.603` (93.10%). Both clear 70%, but the difference
+`0.2` is below the rival margin `1` (stage 3) and below the tie margin `0.25`
+(stage 4). Without family evidence or a nearer date for one of them, keep the
+assignment unresolved and show both as possibly the same person.
 
 Extracting A's same family assertion twice adds `0`. Reusing an inferred parent
 to confirm the child that identified that parent also adds `0`.
+
+## 7. Best-candidate join without a threshold
+
+A record shares only a property place with its single unblocked candidate,
+20 years apart, both book facts: `4 × 0.5 × 2^(-20/20) = 1.000`.
+
+```text
+L = -2.197225 + 1.000 = -1.197225      P = 23.20%   (below 70%: no stage-3 merge)
+net evidence = 1.000 ≥ minJoinEvidence 0.5, not rank only → stage 4 joins
+share = exp(L) / (1 + exp(L)) = 23.20%  (membership confidence of the joined record)
+```
+
+With only a shared `Ritter` (`0.75 × 0.5 = 0.375`) the record stays separate.

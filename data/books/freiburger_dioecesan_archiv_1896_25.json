@@ -3886,7 +3886,7 @@
           "type": "generic",
           "content": "left no children.",
           "date": "1572"
-        }
+        }ri
       ]
     },
     {
@@ -3900,6 +3900,18 @@
           "date": "1519"
         },
         {
+          "person": "Anna Rüd von Kollenberg",
+          "type": "spouse",
+          "of": "Michael von Rosenberg",
+          "date": "1519"
+        },
+        {
+          "person": "Anna von Dienheim",
+          "type": "parent",
+          "of": "Albrecht von Rosenberg",
+          "date": "1527"
+        },
+        {
           "person": "Anna von Dienheim",
           "type": "spouse",
           "of": "Peter von Leyen",
@@ -3909,8 +3921,7 @@
           "person": "Anna von Dienheim",
           "type": "spouse",
           "of": "Eberhard von Rosenberg",
-          "ofDeceased": true,
-          "date": "1527"
+          "date": "1519"
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -3935,6 +3946,12 @@
           "type": "death",
           "diedOn": "1572",
           "date": "1572"
+        },
+        {
+          "person": "Anna von Dienheim",
+          "type": "parent",
+          "of": "Albrecht von Rosenberg",
+          "date": "1527"
         }
       ]
     },

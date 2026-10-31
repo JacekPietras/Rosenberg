@@ -244,11 +244,12 @@ class ProbabilityTests(unittest.TestCase):
         self.assertTrue(any(c['status'] == 'merged' for c in financial))
         self.assertTrue(all(not any('same-fact associate: peter von east' == f['name'] for f in c['features'])
                             for c in financial))
-        # Mere co-occurrence with the same actor does not establish this role.
+        # Mere co-occurrence with the same actor does not establish this role;
+        # it is an ordinary associate, enough for a best-candidate join only.
         second[0]['content'] = 'met Graf Peter von East.'
         graph = build(self.repository(first, second)).evidence_graph
-        alex = next(node for node in graph['nodes'] if node['name'] == 'Alex von South')
-        self.assertEqual(2, len(alex['mentions']))
+        self.assertFalse(any('financial counterparty' in f['name'] for c in graph['comparisons'] for f in c['features']))
+        self.assertTrue(any(c['stage'] == 4 and c['status'] == 'merged' for c in graph['comparisons']))
 
     def test_financial_role_is_not_assigned_to_other_people_in_context(self):
         left, right = self.profile(), self.profile()
@@ -388,8 +389,7 @@ class ProbabilityTests(unittest.TestCase):
         (inputs.root / 'data/books/retold.json').write_text(json.dumps({'entries': [{'facts': [{**sibling(), 'date': '1393'}]}]}))
         graph = build(load_inputs(inputs.root, validate=False)).evidence_graph
         self.assertEqual(1, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
-        self.assertTrue(any(f['name'].startswith('sibling family context') and f['contribution'] >= DEFAULTS['sharedRelativeWeight'] * .5 * .9
-                            for c in graph['comparisons'] for f in c['features']))
+        self.assertTrue(any(link['reason'] == 'same-named relatives of one identity' for link in graph['links']))
 
     def test_same_named_spouses_of_one_identified_person_merge(self):
         inputs = self.repository([{'type': 'spouse', 'person': 'w', 'of': 'Alex von South'}], [])
@@ -454,7 +454,7 @@ class ProbabilityTests(unittest.TestCase):
         self.assertEqual(1, len([node for node in graph['nodes'] if node['name'] == 'Alex von South']))
         inputs = self.repository([relation('Bea')], [relation('Chris')], [context_fact('Alex von South witnessed.'), context_fact('Bea von East met Chris von West.')], [together])
         graph = build(inputs).evidence_graph
-        self.assertEqual(2, len([node for node in graph['nodes'] if node['name'] == 'Alex von South']))
+        self.assertFalse(any(f['name'].startswith('same-fact associate') for c in graph['comparisons'] for f in c['features']))
 
     def test_negative_guessed_rival_evidence_remains_in_match_provenance(self):
         title = lambda name: {'type': 'title', 'person': name, 'personTitle': ['Vogt zu North']}
@@ -470,7 +470,7 @@ class ProbabilityTests(unittest.TestCase):
         self.assertTrue(any(c['status'] == 'merged' and c['usesGuesses'] for c in graph['comparisons']))
         self.assertTrue(any(d['usesGuesses'] for edge in graph['relationships'] for d in edge['derivations']))
 
-    def test_same_place_and_generic_rank_are_insufficient_to_merge_namesakes(self):
+    def test_same_place_and_generic_rank_join_only_as_best_candidate(self):
         relation = lambda child: {'type': 'parent', 'person': 'Alex von South', 'personTitle': ['Ritter'], 'of': child}
         inputs = self.repository([relation('Bea')], [relation('Chris')])
         for filename in ('first', 'second'):
@@ -478,7 +478,11 @@ class ProbabilityTests(unittest.TestCase):
             document = json.loads(path.read_text()); document['place'] = 'North'
             path.write_text(json.dumps(document))
         graph = build(load_inputs(inputs.root, validate=False)).evidence_graph
-        self.assertEqual(2, len([node for node in graph['nodes'] if node['name'] == 'Alex von South']))
+        self.assertEqual(1, len([node for node in graph['nodes'] if node['name'] == 'Alex von South']))
+        record = next(c for c in graph['comparisons'] if c['status'] == 'merged')
+        self.assertEqual(4, record['stage'])
+        self.assertLess(record['probability'], DEFAULTS['mergeProbability'])
+        self.assertLess(record['share'], .7)
 
     def test_comparison_export_is_verified_and_parameters_are_fingerprinted(self):
         relation = lambda child: {'type': 'parent', 'person': 'Alex von South', 'personTitle': ['Vogt zu North'], 'of': child}
@@ -513,12 +517,12 @@ class ProbabilityTests(unittest.TestCase):
                                       {'type': 'sibling', 'person': 'son_e', 'of': 'son_a'}]})
         uncle = next(n for n in graph['nodes'] if n['key'] == 'uncle')
         self.assertIn('1401', uncle['dates'])
-        record = next(c for c in graph['comparisons'] if c.get('pass') == 2 and c['status'] == 'merged')
+        record = next(c for c in graph['comparisons'] if c.get('stage') == 4 and c['status'] == 'merged')
         names = {f['name'] for f in record['features']}
         self.assertIn('kinship position PS of son_e (Vetter)', names)
         self.assertIn('age-title namesake one generation below', names)
         self.assertTrue(any(name.startswith('only compatible candidate') for name in names))
-        self.assertGreaterEqual(record['probability'], DEFAULTS['secondPass']['mergeProbability'])
+        self.assertGreater(record['share'], 0)
 
     def test_second_pass_vetter_never_matches_a_brother(self):
         graph = self.family({'1401': [{'type': 'kin', 'person': 'Arnold von Rosenberg', 'of': 'son_e', 'term': 'Vetter'}],
@@ -526,10 +530,11 @@ class ProbabilityTests(unittest.TestCase):
         self.assertFalse(any('1401' in n['dates'] for n in graph['nodes'] if n['key'] == 'son_a'))
         self.assertTrue(any(c['status'] == 'incompatible' and 'Vetter excludes position S' in c['reason'] for c in graph['comparisons']))
 
-    def test_second_pass_broad_term_fitting_brother_and_son_stays_unresolved(self):
+    def test_broad_term_fitting_brother_and_son_joins_the_nearer_candidate(self):
         graph = self.family({'1387': [{'type': 'kin', 'person': 'Arnold von Rosenberg', 'of': 'vogt', 'term': 'consanguineus'}]})
-        self.assertFalse(any('1387' in n['dates'] for n in graph['nodes'] if n['key'] in {'uncle', 'son_a'}))
-        positions = {f['name'] for c in graph['comparisons'] if c.get('pass') == 2 for f in c['features'] if f['name'].startswith('kinship position')}
+        self.assertTrue(any('1387' in n['dates'] for n in graph['nodes'] if n['key'] == 'uncle'))
+        self.assertFalse(any('1387' in n['dates'] for n in graph['nodes'] if n['key'] == 'son_a'))
+        positions = {f['name'] for c in graph['comparisons'] if c.get('stage') == 4 for f in c['features'] if f['name'].startswith('kinship position')}
         self.assertEqual({'kinship position S of vogt (consanguineus)', 'kinship position C of vogt (consanguineus)'}, positions)
 
     def widow_family(self, *, name='Mara von East', widow=True, rival=False, death=False, early=False, claim=True):
@@ -560,7 +565,7 @@ class ProbabilityTests(unittest.TestCase):
         mara = next(n for n in result.evidence_graph['nodes'] if n['name'] == 'Mara von East')
         self.assertNotIn('registry', mara)
         self.assertEqual(3, len(mara['mentions']))
-        comparison = next(c for c in result.evidence_graph['comparisons'] if c.get('pass') == 2 and c['status'] == 'merged')
+        comparison = next(c for c in result.evidence_graph['comparisons'] if c.get('stage') == 4 and c['status'] == 'merged')
         self.assertTrue(any(f['name'].startswith('weak attachment:') for f in comparison['features']))
         paths = {ref['path'] for ref in comparison['sources']}
         self.assertTrue(any(path.endswith('late.json') for path in paths))
@@ -631,14 +636,14 @@ class ProbabilityTests(unittest.TestCase):
                 self.assertTrue(any(m['source']['path'].endswith('hypothesis.json') for m in mara['mentions']))
                 self.assertEqual({('parent', mara['key'], 'c')},
                                  {(edge['type'], edge['person'], edge['of']) for edge in graph['relationships']})
-                record = next(c for c in graph['comparisons'] if c.get('pass') == 2 and c['status'] == 'merged')
+                record = next(c for c in graph['comparisons'] if c.get('stage') == 4 and c['status'] == 'merged')
                 self.assertTrue(record['usesGuesses'])
                 self.assertTrue(any('factual parentage' in feature['name'] for feature in record['features']))
                 self.assertTrue(any(ref['path'].endswith('first.json') for ref in record['sources']))
                 self.assertTrue(any('/guesses/' in ref['pointer'] for ref in record['sources']))
                 if options.get('uncertain_child'):
                     child = next(node for node in graph['nodes'] if node.get('registry') == 'c')
-                    self.assertLess(child['identityProbability'], .75)
+                    self.assertLess(child['identityProbability'], 1)
                 hypothesis = next(a for a in inputs.assertions if a.source.path.endswith('hypothesis.json'))
                 self.assertEqual('guesses', hypothesis.source.kind)
                 validate_generated(serialize(inputs, [result]), inputs.people, inputs.root)
@@ -689,5 +694,130 @@ class ProbabilityTests(unittest.TestCase):
         self.assertEqual({('Sp', 'P')}, set(kinship.term('Eidam').inverted().allowed.paths))
         self.assertEqual(('S', 'C'), invert(('P', 'S')))
         self.assertTrue(kinship.term('unknown word').allowed.contains(('P', 'P')))
+
+    def passage(self, facts, guesses=(), date='1381-05-25'):
+        temp = tempfile.TemporaryDirectory(); self.addCleanup(temp.cleanup)
+        root = Path(temp.name)
+        (root / 'data/documents').mkdir(parents=True)
+        (root / 'data/names.md').write_text('Alex\nBea\nChris\nKonrad\n')
+        (root / 'data/places.json').write_text(json.dumps([{'id': 'north', 'variations': ['North']}]))
+        (root / 'data/people.json').write_text(json.dumps([{'id': 'unrelated', 'name': 'Unrelated'}]))
+        (root / 'data/matching.json').write_text(json.dumps(DEFAULTS))
+        (root / 'data/documents/one.json').write_text(json.dumps({'date': date, 'facts': list(facts), 'guesses': list(guesses)}))
+        return load_inputs(root, validate=False)
+
+    def test_opposite_ranks_in_one_passage_are_two_people(self):
+        ritter = lambda other: {'type': 'sibling', 'person': 'Konrad von South', 'personTitle': ['Ritter'], 'of': other}
+        squire = lambda other: {'type': 'sibling', 'person': 'Konrad von South', 'personTitle': ['Edelknecht'], 'of': other}
+        graph = build(self.passage([ritter('Bea von South'), ritter('Chris von South'), squire('Bea von South'), squire('Chris von South')])).evidence_graph
+        konrads = [n for n in graph['nodes'] if n['name'] == 'Konrad von South']
+        self.assertEqual(2, len(konrads))
+        self.assertEqual([['Edelknecht'], ['Ritter']], sorted(n['titles'] for n in konrads))
+
+    def test_explicit_deceased_marker_separates_but_a_death_record_does_not(self):
+        late = {'type': 'parent', 'person': 'Alex von South', 'personDeceased': True, 'of': 'Bea von South'}
+        living = {'type': 'sibling', 'person': 'Alex von South', 'of': 'Chris von South'}
+        graph = build(self.passage([late, living])).evidence_graph
+        self.assertEqual(2, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
+        death = {'type': 'death', 'person': 'Alex von South', 'diedOn': '1381'}
+        graph = build(self.passage([living, death], date='1381')).evidence_graph
+        alex = [n for n in graph['nodes'] if n['name'] == 'Alex von South']
+        self.assertEqual(1, len(alex))
+
+    def test_known_relatives_never_join(self):
+        # A father and his same-named son, each also named elsewhere with the same place.
+        father = {'type': 'parent', 'person': 'Alex von South', 'personTitle': ['der Ältere'], 'of': 'Alex von South', 'ofTitle': ['der Jüngere']}
+        place = lambda: context_fact('Alex von South held property at North.')
+        inputs = self.repository([father], [{'type': 'spouse', 'person': 'Alex von South', 'of': 'Bea von South'}], [place()], [place()])
+        graph = build(inputs).evidence_graph
+        by_key = {n['key']: n for n in graph['nodes']}
+        edge = next(e for e in graph['relationships'] if e['type'] == 'parent')
+        self.assertNotEqual(edge['person'], edge['of'])
+        self.assertEqual('Alex von South', by_key[edge['person']]['name'])
+
+    def test_cousins_with_the_same_name_never_join(self):
+        place = context_fact('Alex von South held property at North.')
+        inputs = self.repository([{'type': 'parent', 'person': 'bea', 'of': 'Alex von South'}, {'type': 'sibling', 'person': 'bea', 'of': 'chris'}],
+                                 [{'type': 'parent', 'person': 'chris', 'of': 'Alex von South'}], [place], [place])
+        (inputs.root / 'data/people.json').write_text(json.dumps([{'id': 'bea', 'name': 'Bea von South'}, {'id': 'chris', 'name': 'Chris von South'}]))
+        graph = build(load_inputs(inputs.root, validate=False)).evidence_graph
+        self.assertEqual(2, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
+        self.assertTrue(any(c['status'] == 'incompatible' and 'known relatives' in c['reason'] for c in graph['comparisons']))
+
+    def test_name_and_date_alone_do_not_join(self):
+        inputs = self.repository([{'type': 'parent', 'person': 'Alex von South', 'of': 'Bea'}],
+                                 [{'type': 'parent', 'person': 'Alex von South', 'of': 'Chris'}])
+        graph = build(inputs).evidence_graph
+        self.assertEqual(2, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
+
+    def test_rank_alone_does_not_join(self):
+        relation = lambda child: {'type': 'parent', 'person': 'Alex von South', 'personTitle': ['Ritter'], 'of': child}
+        graph = build(self.repository([relation('Bea')], [relation('Chris')])).evidence_graph
+        self.assertEqual(2, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
+
+    def test_best_candidate_join_is_independent_of_input_order(self):
+        relation = lambda child: {'type': 'parent', 'person': 'Alex von South', 'personTitle': ['der Jüngere'], 'of': child}
+        place = context_fact('Alex von South held property at North.')
+        first = build(self.repository([relation('Bea'), place], [relation('Chris')])).evidence_graph
+        second = build(self.repository([relation('Chris')], [place, relation('Bea')])).evidence_graph
+        size = lambda graph: sorted(len(n['mentions']) for n in graph['nodes'] if n['name'] == 'Alex von South')
+        self.assertEqual(size(first), size(second))
+
+    def test_guessed_alternative_death_dates_form_one_interval(self):
+        from family_graph.probability import chronology
+        _, early = next(walk_assertions({'guesses': [{'type': 'death', 'person': 'Alex von South', 'diedOn': '1383', 'date': '1383'}]}, 'data/books/x.json'))
+        records = list(walk_assertions({'entries': [{'guesses': [
+            {'type': 'death', 'person': 'Alex von South', 'diedOn': '1383', 'date': '1383'},
+            {'type': 'death', 'person': 'Alex von South', 'diedOn': '1388', 'date': '1388'}]}]}, 'data/books/x.json'))
+        levels = chronology([assertion.mentions[0] for _, assertion in records], DEFAULTS)
+        self.assertEqual(1388, __import__('datetime').date.fromordinal(next(iter(levels.values()))['deathEnd'][0]).year)
+
+    def test_same_date_opposite_ranks_across_sources_are_penalized(self):
+        left, right = self.profile('Ritter', '1381-05-25'), self.profile('Edelknecht', '1381-05-25', category='books')
+        left.ranks = [('ritter', left.mentions[0].assertion.source, left.mentions[0].assertion.bounds, 'a')]
+        right.ranks = [('edelknecht', right.mentions[0].assertion.source, right.mentions[0].assertion.bounds, 'b')]
+        record = self.model.compare(left, right)
+        self.assertIn(('same-date opposite ranks', -DEFAULTS['sameDateRankConflictPenalty'] * .5),
+                      [(f['name'], f['contribution']) for f in record['features']])
+
+    def book_section(self, facts):
+        temp = tempfile.TemporaryDirectory(); self.addCleanup(temp.cleanup)
+        root = Path(temp.name)
+        (root / 'data/books').mkdir(parents=True)
+        (root / 'data/names.md').write_text('Alex\nBea\nChris\n')
+        (root / 'data/places.json').write_text(json.dumps([]))
+        (root / 'data/people.json').write_text(json.dumps([{'id': 'unrelated', 'name': 'Unrelated'}]))
+        (root / 'data/matching.json').write_text(json.dumps(DEFAULTS))
+        (root / 'data/books/book.json').write_text(json.dumps({'entries': [{'facts': facts}]}))
+        return build(load_inputs(root, validate=False)).evidence_graph
+
+    def test_pass_zero_merges_same_name_and_titles_in_one_section_across_years(self):
+        elder = lambda kind, other, date: {'type': kind, 'person': 'Alex von South', 'personTitle': ['der Ältere'], 'of': other, 'date': date}
+        graph = self.book_section([elder('spouse', 'Bea von East', '1383'), elder('parent', 'Chris von South', '1407')])
+        alex = [n for n in graph['nodes'] if n['name'] == 'Alex von South']
+        self.assertEqual(1, len(alex))
+        self.assertEqual(1, alex[0]['identityProbability'])
+        self.assertTrue(any(link['reason'] == 'same name and titles in one document or section' for link in graph['links']))
+
+    def test_pass_zero_merges_untitled_namesakes_of_one_section(self):
+        graph = self.book_section([{'type': 'spouse', 'person': 'Bea von East', 'of': 'Alex von South', 'date': '1383'},
+                                   {'type': 'parent', 'person': 'Bea von East', 'of': 'Chris von South', 'date': '1407'},
+                                   {'type': 'death', 'person': 'Bea von East', 'diedBefore': '1420', 'date': '1419'}])
+        bea = [n for n in graph['nodes'] if n['name'] == 'Bea von East']
+        self.assertEqual(1, len(bea))
+        self.assertEqual(3, len(bea[0]['mentions']))
+        self.assertEqual(1, bea[0]['identityProbability'])
+
+    def test_pass_zero_needs_identical_titles_and_respects_blocks(self):
+        titled = lambda title, other, date: {'type': 'parent', 'person': 'Alex von South', 'personTitle': [title], 'of': other, 'date': date}
+        graph = self.book_section([titled('Ritter', 'Bea von East', '1383'), titled('der Ältere', 'Chris von South', '1407')])
+        self.assertFalse(any(link['reason'] == 'same name and titles in one document or section' for link in graph['links']))
+        # Father and son with the same name and title stay two people.
+        graph = self.book_section([{'type': 'parent', 'person': 'Alex von South', 'personTitle': ['Ritter'], 'of': 'Alex von South',
+                                    'ofTitle': ['Ritter'], 'date': '1383'}])
+        self.assertEqual(2, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
+        # Living mentions more than 64 years apart stay two people.
+        graph = self.book_section([titled('Ritter', 'Bea von East', '1300'), titled('Ritter', 'Chris von South', '1390')])
+        self.assertFalse(any(link['reason'] == 'same name and titles in one document or section' for link in graph['links']))
 
 if __name__ == '__main__': unittest.main()

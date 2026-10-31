@@ -1,5 +1,8 @@
 # Family reconstruction specification
 
+> Superseded by [version 2](family-tree-algorithm-plan-v2.md). Kept for the
+> reasoning behind rules that version 2 retains.
+
 This document defines the matching behavior of the first pass
 (`weighted-log-odds-v4`). Leftover records are then attached to the resulting
 tree by the [second pass](second-pass-plan.md).

@@ -514,7 +514,9 @@ or a chronology block) is blocked. Features are capped
 by category/relative/place; repeated extraction does not manufacture support.
 Document/image source factors are always 1.0; book/note factors are 0.5.
 Guesses receive an additional 0.45 factor by default. Pairwise evidence uses the
-weaker of the two observations' effective factors. A second-pass attribution of
+weaker of the two observations' effective factors. Relative evidence also uses
+the membership confidence of the specific relative mention, not of its whole
+cluster. A stage-4 attribution of
 a speculative mention can instead be corroborated by an independently recorded
 factual parent relationship. That feature uses the weaker source-category/factual
 relationship weight and the child's identity confidence (1 for an exact child ID
@@ -541,9 +543,41 @@ comparisons have status `incompatible` and a reason starting with `blocked:`.
 A confirmed ID whose own document facts conflict is reported for review and is
 not reassigned.
 
-The configuration defines the compatible-name prior (initially 0.05), merge
-threshold (0.70; 0.80 in the second pass), reciprocal log-odds margin, age assumptions, cluster checks,
-and maximum rounds. Capped full-relative-name frequency adjustments use the frozen
+Before any weighting, occurrences with the same name and the same titles (or
+both untitled) in one document file or one book, notes or image section are
+merged regardless of date, unless a block separates them; their membership
+confidence is 1.
+
+Within one source passage (entry and date), same-name occurrences form the
+fewest people allowed; occurrences are also distinct when one is a knight
+(`Ritter`/`miles`) and the other a squire (`Edelknecht`/`armiger`), when one has
+an explicit deceased marker and the other is an unmarked living mention, or when
+they are the subjects of two separate facts with the same content. Ties between
+groupings are decided by title agreement. Titles on deceased-marked mentions and
+death records are dated to the `retrospectiveLookBackYears` before the death
+bound. Ritter and Edelknecht on the same day in different sources contribute
+`-sameDateRankConflictPenalty × reliability` (blocked between documents).
+Guessed alternative death dates from one passage form one interval.
+
+Two identities connected in the tree by a relationship path that makes them
+different people (father/son, uncle/nephew, cousins, in-laws, an excluded kin
+term) never merge in any stage. Allowed paths keep both in one sibling group,
+make both parents of one sibling group, both spouses of one person, or the
+spouse of X and the other parent of X's child. Same-named siblings, parents,
+children or spouses of one identity are merged unless blocked.
+
+The configuration defines the compatible-name prior (0.10), the stage-3 merge
+threshold (0.70), reciprocal log-odds margin, age assumptions, cluster checks,
+and maximum rounds. Stage 4 then joins every identity to its highest-scoring
+unblocked same-name candidate without a probability threshold. A join needs net
+evidence of at least `bestCandidate.minJoinEvidence` from a feature other than
+rank; hard blocks are distinct registry IDs, explicit distinctions, death
+conflicts between facts, any impossible age, living mentions spanning more than
+`bestCandidate.maxLivingSpanYears`, and known relatives. Candidates within
+`bestCandidate.attachmentTieLogOdds` are decided by family evidence, then the
+nearer date; otherwise the identity stays separate. Each join stores its `share`,
+`exp(L) / (1 + Σ exp(L_j))` over unblocked candidates, which becomes the joined
+mentions' membership confidence. Capped full-relative-name frequency adjustments use the frozen
 factual `matchingBackground`, add-one smoothing, and configurable rarity weight,
 maximum, and reference frequency. This is source representation, not population
 frequency. Matching runs against frozen profiles; whole candidate
@@ -554,7 +588,7 @@ parents are not co-parent evidence. Omitted surnames require family or identifyi
 title support, and co-parent support retains child-identity provenance. The algorithm's own
 conclusions are not independent evidence. No seal-image matching is used. These probabilities are **uncalibrated estimates**.
 
-The second pass also permits a weaker attachment of a standalone factual widow
+Stage 4 also permits a weaker attachment of a standalone factual widow
 or widower record to an established family identity. Both records must have the
 same complete normalized name; the family must span multiple source passages
 and explicitly attest widowhood at or before the standalone record. Competing
@@ -567,15 +601,19 @@ in force. The frozen reference tree prevents these attachments supporting one
 another or joining established identities.
 
 Each comparison contains `person`, `candidate` (final node keys), original
-`mentions` handles, `iteration`, `probability`, `logOdds`, `features` (named
+`mentions` handles, `stage` (3 or 4), `iteration`, `probability`, `logOdds`, `features` (named
 log-odds contributions), `sources`, `usesGuesses`, `status`, and `reason`. Status
 is `merged`, `below-threshold`, `ambiguous`, `incompatible`, or `superseded`.
+Stage-4 comparisons also contain `share`.
 The latter preserves an earlier comparison when later cluster evidence joined
 its occurrences. Name/time-only candidates with no substantive additional
 signal are not persisted. References and probability arithmetic are validated.
 
-A node's `identityProbability` is the weakest accepted model link supporting its
-cluster, or 1 for an exact/local occurrence grouping. It is not a probability
+A node's `identityProbability` is the lowest membership confidence of its
+mentions (the product of merge probabilities or stage-4 shares linking a mention
+to the identity's core), or 1 for an exact/local occurrence grouping. A node may
+contain `possiblySame`: `[{key, probability}]` for candidates that were tied or
+likely but not chosen. It is not a probability
 that the historical person existed or that the identity is permanently confirmed.
 Derivations also retain `assertionWeight` and `endpointProbability`; the latter
 is null when correspondence remains open. Assertion weights are evidence
@@ -609,7 +647,7 @@ timestamps, reports, review queues, or separate facts database are introduced.
 ## Matching JSON
 
 `data/matching.json` is the authoritative global configuration for the weighted
-identity model. It contains `model: "weighted-log-odds-v5"`, `calibrated: false`,
+identity model. It contains `model: "weighted-log-odds-v6"`, `calibrated: false`,
 `priorProbability`, `mergeProbability`, `ambiguityLogOddsMargin`,
 `clusterMinimumProbability`, `guessWeight`, `sourceWeights`, age assumptions
 (`adultAgeYears`, `maxAgeYears`, `ageComfortYears`, `ageScaleYears`), title
@@ -618,7 +656,10 @@ relative-name rarity weight/cap/reference frequency, associate
 weights/cap/half-life, `financialCounterpartyWeight`, family weights, relation factors, shared-relative weight,
 cap and half-life,
 elder-before-younger and Ritter-before-Edelknecht penalties, death conflict
-penalty, `maxRounds`, and `secondPass` (`mergeProbability`, `maxPathSteps`,
+penalty, `maxRounds`, `sameDateRankConflictPenalty`, `retrospectiveLookBackYears`,
+`passageTitleAgreementWeight`, `possibleSameDisplayProbability`, `bestCandidate`
+(`maxLivingSpanYears`, `attachmentTieLogOdds`, `minJoinEvidence`,
+`maxRelativePathSteps`), and `secondPass` (`maxPathSteps`,
 `specificityFactors` for exact/narrow/broad kinship terms, `eliminationWeight`,
 `ageTitleNamesakeWeight`, `widowhoodNameWeight`).
 

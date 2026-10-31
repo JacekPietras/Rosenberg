@@ -100,6 +100,7 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, in
     person.name,
     person._evidence ? person.reconstruction.status === 'contextual' ? 'contextual identity · inferred' : 'source person · identity open' : '',
     person.reconstruction?.status === 'contextual' && person.reconstruction.identityProbability < 1 ? `identity estimate: ${(person.reconstruction.identityProbability * 100).toFixed(1)}%` : '',
+    person.reconstruction?.possiblySame?.length ? `possibly the same person as ${person.reconstruction.possiblySame.length} other${person.reconstruction.possiblySame.length > 1 ? 's' : ''}` : '',
     ...(Array.isArray(person.titles) ? person.titles : []),
     person.born || person.died ? `${person.born || '?'}–${person.died || '?'}` : '',
     mentionedYears.get(person._treeKey)?.length
