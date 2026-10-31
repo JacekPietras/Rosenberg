@@ -319,11 +319,14 @@ class FamilyGraphTests(unittest.TestCase):
 
     def test_real_elisabeth_spouse_and_mother_attestations_form_one_identity(self):
         inputs = load_inputs(Path(__file__).resolve().parents[1])
+        self.assertFalse(any(person['name'] == 'Elisabeth von Erligheim' for person in inputs.people),
+                         'This regression must exercise automatic identity matching without a registry anchor.')
         for include_guesses in (False, True):
             graph = build(inputs, include_guesses=include_guesses).evidence_graph
             nodes = [node for node in graph['nodes'] if node['name'] == 'Elisabeth von Erligheim']
             self.assertEqual(1, len(nodes))
             elisabeth = nodes[0]
+            self.assertNotIn('registry', elisabeth)
             expected = {(a.source.path, a.source.pointer, m.field) for a in inputs.assertions
                         if include_guesses or a.source.kind == 'facts'
                         for m in a.mentions if m.reference == 'Elisabeth von Erligheim'}

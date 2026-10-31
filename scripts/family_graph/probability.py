@@ -18,7 +18,7 @@ from .names import normalize
 from .scoring import place_patterns
 
 DEFAULTS = {
-    'model': 'weighted-log-odds-v4', 'calibrated': False,
+    'model': 'weighted-log-odds-v5', 'calibrated': False,
     'priorProbability': 0.05, 'mergeProbability': 0.7,
     'ambiguityLogOddsMargin': 1.0, 'clusterMinimumProbability': 0.35,
     'guessWeight': 0.45,
@@ -28,7 +28,8 @@ DEFAULTS = {
     'titleHalfLivesYears': {'office': 15.0, 'designation': 30.0, 'age': 12.0, 'territory': 15.0, 'rank': 20.0, 'other': 15.0},
     'placeWeights': {'issuance': 2.0, 'property': 4.0, 'context': 2.5}, 'placeHalfLifeYears': 20.0,
     'crossRolePlaceFactor': 0.5,
-    'associateWeight': 2.0, 'associateMaxWeight': 4.0, 'associateHalfLifeYears': 15.0,
+    'associateWeight': 2.0, 'financialCounterpartyWeight': 4.0,
+    'associateMaxWeight': 4.0, 'associateHalfLifeYears': 15.0,
     'familyWeights': {'anchored': 9.0, 'linked': 7.5, 'name': 4.0, 'spouse': 9.0},
     'familyRelationFactors': {'parent': 1.0, 'spouse': 1.0, 'sibling': 0.8, 'kin': 0.5},
     'sharedRelativeWeight': 12.0, 'familyMaxWeight': 16.0, 'familyHalfLifeYears': 35.0,
@@ -37,7 +38,8 @@ DEFAULTS = {
     'deathConflictPenalty': 20.0, 'maxRounds': 12,
     'secondPass': {'mergeProbability': 0.8, 'maxPathSteps': 3,
                    'specificityFactors': {'exact': 1.0, 'narrow': 0.5, 'broad': 0.3},
-                   'eliminationWeight': 1.5, 'ageTitleNamesakeWeight': 1.0},
+                   'eliminationWeight': 1.5, 'ageTitleNamesakeWeight': 1.0,
+                   'widowhoodNameWeight': 5.0},
 }
 
 
@@ -99,6 +101,16 @@ def adult(mention, names=None):
     return any(title_category(title, names)[0] in {'rank', 'office'} or title_category(title, names) == ('age', 'elder') for title in mention.titles)
 
 
+def speculative_parent_claim(mention):
+    """A retrospective hypothesis discusses parentage, not life at its date."""
+    assertion = mention.assertion
+    if (assertion.source.kind != 'guesses' or assertion.original['type'] != 'generic'
+        or mention.field != 'person'):
+        return None
+    return re.match(r'^(?:may|might|could)\s+have\s+been\s+(?:the|a)\s+(?:mother|father|parent)\s+of\s+([^.;]+)',
+                    assertion.original['content'], re.I)
+
+
 def chronology(mentions, settings, names=None):
     """Extremes per reliability level; an unmarked typed mention means alive."""
     levels = {}
@@ -107,7 +119,7 @@ def chronology(mentions, settings, names=None):
         if current is None or (value > current[0] if larger else value < current[0]):
             level[key] = value, source
     for mention in mentions:
-        if mention.field == 'text':
+        if mention.field == 'text' or speculative_parent_claim(mention) and not mention.deceased:
             continue
         source, (start, end) = mention.assertion.source, mention.assertion.bounds
         level = levels.setdefault(reliability(source, settings), {})
@@ -226,6 +238,7 @@ class Profile:
     titles: dict = field(default_factory=dict)
     places: dict = field(default_factory=dict)
     associates: dict = field(default_factory=dict)
+    financial_counterparties: dict = field(default_factory=dict)
     relatives: dict = field(default_factory=dict)
     anchored: bool = False
     confidence: float = 1.0
@@ -239,6 +252,22 @@ class Profile:
 PERSON_NAME = re.compile(r'\b[A-ZÄÖÜ][\wÄÖÜäöüß’\'-]*(?:\s+[A-ZÄÖÜ][\wÄÖÜäöüß’\'-]*)?\s+von\s+[A-ZÄÖÜ][\wÄÖÜäöüß’\'-]*')
 
 
+def person_references(text):
+    result = set()
+    for match in PERSON_NAME.finditer(text):
+        value = match.group()
+        first = value.split()[0].casefold()
+        if first in {'the', 'a', 'an', 'family', 'familie'}:
+            continue
+        prefixes = {'herr', 'frau', 'graf', 'count', 'sir', 'ritter', 'freiherr', 'markgraf', 'pfalzgraf', 'archbishop', 'bishop', 'erzbischof', 'bischof'}
+        if first in prefixes and len(value.split()) <= 3:
+            continue
+        if first in prefixes:
+            value = value.split(' ', 1)[1]
+        result.add(value)
+    return frozenset(result)
+
+
 class ProbabilityModel:
     def __init__(self, settings, names):
         self.settings, self.names = parameters(settings), names
@@ -246,22 +275,26 @@ class ProbabilityModel:
         self.background = {'total': 0.0, 'counts': {}}
 
     def set_name_frequencies(self, assertions, observations, registry):
-        counts = {}
+        counts, by_source, weights = {}, {}, {}
         for assertion in assertions:
             if assertion.source.kind != 'facts':
                 continue
             found = {self.names.key(registry[m.reference]['name'] if m.reference in registry else m.reference) for m in assertion.mentions}
-            for name in found:
-                if len(name.split()) >= 2:
-                    counts[name] = counts.get(name, 0) + reliability(assertion.source, self.settings)
+            by_source.setdefault(assertion.source.key, set()).update(found)
+            weights[assertion.source.key] = reliability(assertion.source, self.settings)
         for observation in observations:
             if observation.source.kind != 'facts':
                 continue
             found = self.person_names(observation.text)
             found |= {self.names.key(person['name']) for identity, person in registry.items() if '[' + identity + ']' in observation.text}
+            by_source.setdefault(observation.source.key, set()).update(found)
+            weights[observation.source.key] = reliability(observation.source, self.settings)
+        # A generic fact supplies both its typed subject and textual context.
+        # Count a name only once in that fact, regardless of its representations.
+        for key, found in by_source.items():
             for name in found:
                 if len(name.split()) >= 2:
-                    counts[name] = counts.get(name, 0) + reliability(observation.source, self.settings)
+                    counts[name] = counts.get(name, 0) + weights[key]
         self.background = {'total': round(sum(counts.values()), 8), 'counts': {name: round(counts[name], 8) for name in sorted(counts)}}
 
     def relative_rarity(self, name):
@@ -275,19 +308,7 @@ class ProbabilityModel:
 
     @lru_cache(maxsize=None)
     def person_references(self, text):
-        result = set()
-        for match in PERSON_NAME.finditer(text):
-            value = match.group()
-            first = value.split()[0].casefold()
-            if first in {'the', 'a', 'an', 'family', 'familie'}:
-                continue
-            prefixes = {'herr', 'frau', 'graf', 'count', 'sir', 'ritter', 'freiherr', 'markgraf', 'pfalzgraf', 'archbishop', 'bishop', 'erzbischof', 'bischof'}
-            if first in prefixes and len(value.split()) <= 3:
-                continue
-            if first in prefixes:
-                value = value.split(' ', 1)[1]
-            result.add(value)
-        return frozenset(result)
+        return person_references(text)
 
     @lru_cache(maxsize=None)
     def person_names(self, text):
@@ -310,7 +331,7 @@ class ProbabilityModel:
                 result.update(keys)
         return frozenset(result)
 
-    def add_context(self, profile, source, bounds, text='', issuance='', self_names=()):
+    def add_context(self, profile, source, bounds, text='', issuance='', self_names=(), personal_claim=False):
         if bounds is None:
             return
         evidence = (source, bounds)
@@ -324,6 +345,13 @@ class ProbabilityModel:
             profile.places.setdefault((role, place), []).append(evidence)
         for name in self.person_names(text) - set(self_names):
             profile.associates.setdefault(name, []).append(evidence)
+        # The typed subject is explicitly the recipient/creditor. Do not infer
+        # that role for every other actor merely mentioned in the same passage.
+        if personal_claim:
+            payment = re.match(r'^(?:was|were)\s+(?:paid|owed)\b.*?\bby\s+([^,.;!?]+)', text, re.I)
+            parties = self.person_names(payment[1]) - set(self_names) if payment else ()
+            if len(parties) == 1:
+                profile.financial_counterparties.setdefault(next(iter(parties)), []).append(evidence)
 
     def compare(self, left, right):
         p = self.settings
@@ -404,11 +432,17 @@ class ProbabilityModel:
         associate_values = []
         for name in sorted(set(left.associates) & set(right.associates)):
             value, sources = best(left.associates[name], right.associates[name], p['associateWeight'], p['associateHalfLifeYears'])
-            associate_values.append((value, name, sources))
+            label = 'same-fact associate'
+            if name in left.financial_counterparties and name in right.financial_counterparties:
+                financial, support = best(left.financial_counterparties[name], right.financial_counterparties[name],
+                                          p['financialCounterpartyWeight'], p['associateHalfLifeYears'])
+                if financial > value:
+                    value, sources, label = financial, support, 'shared financial counterparty'
+            associate_values.append((value, name, sources, label))
         remaining = p['associateMaxWeight']
-        for value, name, sources in sorted(associate_values, key=lambda item: (-item[0], item[1])):
+        for value, name, sources, label in sorted(associate_values, key=lambda item: (-item[0], item[1])):
             value = min(value, remaining)
-            add(f'same-fact associate: {name}', value, sources)
+            add(f'{label}: {name}', value, sources)
             remaining -= value
 
         relatives = {}

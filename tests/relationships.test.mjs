@@ -678,6 +678,25 @@ test('parameter changes automatically rebuild and a saved facts-only preference 
   assert.equal(state.familyGraph.view, 'with-guesses');
 });
 
+test('generic context participants are verified against the cited fact', async () => {
+  const data = await probabilityFixture();
+  const doc = data.documents.get(source.path);
+  const fact = { type: 'generic', subject: 'The source passage', content: '[a] held property at North.' };
+  doc.entries[0].facts.push(fact);
+  const ref = { path: source.path, pointer: '/entries/0/facts/1', fingerprint: await evidenceFingerprint(fact) };
+  const mention = { source: ref, field: 'text', reference: 'a', date: '1393' };
+  data.tree.evidence.facts.nodes.find((node) => node.registry === 'a').mentions.push(mention);
+  await updateFixtureBuild(data);
+  let verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+  assert.equal(verification.valid, true, verification.reason);
+  for (const reference of ['b', 'North', 'forged']) {
+    mention.reference = reference;
+    verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+    assert.equal(verification.valid, false);
+    assert.match(verification.reason, /Invalid reconstructed context participant/);
+  }
+});
+
 test('legacy text context participants are rejected', async () => {
   const data = await probabilityFixture();
   const doc = data.documents.get(source.path);

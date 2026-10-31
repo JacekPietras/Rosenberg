@@ -75,6 +75,11 @@ contribute additional evidence. Informative prose-only actors can supply
 context records without creating family edges. Confirmed IDs in textual facts
 are recognized directly. A capped full-relative-name rarity adjustment uses
 factual source frequencies; it is not a historical population estimate.
+The second pass can identify a person discussed in a retrospective parentage
+hypothesis through independently recorded factual parentage, retaining the
+hypothesis as a guess. Standalone widow records can use a weaker same-full-name
+attachment to a unique established family with earlier documented widowhood;
+this assumption can conflate undocumented namesakes.
 The diagram defaults to parent/child and spouse lines; hovering over or focusing
 a person reveals their sibling and other kin lines as well. Children with the same recorded parents
 share a branch. In the default view, married parents use only the identifiable

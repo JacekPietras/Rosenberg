@@ -5,7 +5,7 @@ from pathlib import Path
 from validate_facts import TYPES, Validator
 from .dates import date_bounds, inherited_date_bounds
 from .model import Assertion, Inputs, Mention, SourceRef, fingerprint
-from .probability import parameters
+from .probability import Observation, parameters
 
 SOURCE_DIRS = ('books', 'documents', 'notes', 'images')
 
@@ -36,6 +36,13 @@ def input_manifest(root, people=None):
     return dict(sorted(manifest.items()))
 
 
+def generic_text(fact):
+    """Render typed context without mistaking a person ID for a literal name."""
+    if not isinstance(fact, dict) or fact.get('type') != 'generic':
+        return ''
+    return (f'[{fact["person"]}] ' if 'person' in fact else '') + fact['content']
+
+
 def walk_assertions(document, path, include_text=False):
     explicit = path.startswith(('data/books/', 'data/notes/')) or isinstance(document, dict) and 'book' in document
 
@@ -52,8 +59,7 @@ def walk_assertions(document, path, include_text=False):
                         ref = SourceRef(path, f'{location}/{index}', fingerprint(fact), key,
                                         json.dumps(current_context.get('source', current_context.get('book', '')), ensure_ascii=False, sort_keys=True))
                         if not isinstance(fact, dict) or 'type' not in fact:
-                            yield ref, None
-                            continue
+                            raise ValueError(f'{ref.key}: expected a typed assertion')
                         if fact['type'] not in TYPES:
                             raise ValueError(f'{ref.key}: unsupported assertion type')
                         historical_date = fact.get('date', current_date)
@@ -67,6 +73,8 @@ def walk_assertions(document, path, include_text=False):
                                 assertion.mentions.append(Mention(ref.key + '/' + field, fact[field], field,
                                     tuple(fact.get(field + 'Title', [])), fact.get(field + 'Deceased') is True, assertion))
                         yield ref, assertion
+                        if include_text and fact['type'] == 'generic':
+                            yield ref, Observation(ref, generic_text(fact), historical_date, bounds, current_context)
                 else:
                     yield from visit(child, location, current_date, current_context)
         elif isinstance(value, list):

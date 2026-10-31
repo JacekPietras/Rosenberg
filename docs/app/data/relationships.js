@@ -1,6 +1,20 @@
 // Generated evidence is accepted only after verifying the complete build input.
 const sourcePath = /^data\/(books|documents|notes|images)\/.*\.json$/;
 
+function contextParticipant(fact, reference, people) {
+  if (fact?.type !== 'generic' || typeof fact.content !== 'string' || typeof reference !== 'string' || !reference) return false;
+  const text = (fact.person ? `[${fact.person}] ` : '') + fact.content;
+  if (people.some((person) => person.id === reference)) return text.includes(`[${reference}]`);
+  const names = text.matchAll(/(?<![\p{L}\p{N}_])[A-ZÄÖÜ][\p{L}\p{N}_’'-]*(?:\s+[A-ZÄÖÜ][\p{L}\p{N}_’'-]*)?\s+von\s+[A-ZÄÖÜ][\p{L}\p{N}_’'-]*/gu);
+  const prefixes = new Set(['herr', 'frau', 'graf', 'count', 'sir', 'ritter', 'freiherr', 'markgraf', 'pfalzgraf', 'archbishop', 'bishop', 'erzbischof', 'bischof']);
+  for (const [value] of names) {
+    const words = value.split(/\s+/), first = words[0].toLowerCase();
+    if (['the', 'a', 'an', 'family', 'familie'].includes(first) || prefixes.has(first) && words.length <= 3) continue;
+    if ((prefixes.has(first) ? value.slice(words[0].length).trimStart() : value) === reference) return true;
+  }
+  return false;
+}
+
 export function registryIdentities(people) {
   return people.map((person) => Object.fromEntries(['id', 'name'].filter((key) => Object.hasOwn(person, key)).map((key) => [key, person[key]])));
 }
@@ -93,7 +107,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
       if (!Object.hasOwn(metadata.inputs, 'data/matching.json')) throw new Error('Missing global probability configuration');
       settings = await repository.getJson('data/matching.json');
       if (await evidenceFingerprint(settings) !== metadata.inputs['data/matching.json']) throw new Error('Probability parameters changed');
-      if (!['weighted-log-odds-v1', 'weighted-log-odds-v2', 'weighted-log-odds-v3', 'weighted-log-odds-v4'].includes(settings?.model) || settings.calibrated !== false
+      if (!['weighted-log-odds-v1', 'weighted-log-odds-v2', 'weighted-log-odds-v3', 'weighted-log-odds-v4', 'weighted-log-odds-v5'].includes(settings?.model) || settings.calibrated !== false
         || !(settings.priorProbability > 0 && settings.priorProbability < settings.mergeProbability && settings.mergeProbability < 1)
         || !(settings.guessWeight > 0 && settings.guessWeight < 1)
         || Object.keys(settings.sourceWeights || {}).length !== 4
@@ -144,8 +158,15 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
           let named = !!node.registry && people.some((person) => person.id === node.registry && person.name === node.name);
           for (const mention of node.mentions) {
             const fact = await sourceFact(mention.source, view);
-            if (!fact || !['person', 'of'].includes(mention.field) || typeof fact[mention.field] !== 'string') throw new Error('Invalid reconstructed participant');
-            const reference = fact[mention.field];
+            let reference;
+            if (mention.field === 'text') {
+              if (fact?.type !== 'generic') throw new Error('Invalid reconstructed participant');
+              reference = mention.reference;
+              if (!contextParticipant(fact, reference, people)) throw new Error('Invalid reconstructed context participant');
+            } else {
+              if (!fact || !['person', 'of'].includes(mention.field) || typeof fact[mention.field] !== 'string') throw new Error('Invalid reconstructed participant');
+              reference = fact[mention.field];
+            }
             if (people.some((person) => person.id && person.id === reference) && node.key !== reference) throw new Error('Reconstructed occurrence overrides a fixed anchor');
             named ||= reference === node.name;
             const key = JSON.stringify([mention.source.path, mention.source.pointer, mention.field, mention.reference || '']);

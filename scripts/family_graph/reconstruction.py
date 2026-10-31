@@ -13,7 +13,7 @@ from .constraints import cycle_nodes
 from .model import fingerprint, Assertion, Mention
 from .policy import AGE_TITLES
 from .kinship import generation, tree_paths
-from .probability import ProbabilityModel, Profile, chronology_blocked, decay, title_category, reliability
+from .probability import ProbabilityModel, Profile, chronology_blocked, decay, title_category, reliability, speculative_parent_claim
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
@@ -58,7 +58,11 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             continue
         passage = (observation.source.path, observation.source.pointer.rsplit('/' + observation.source.kind + '/', 1)[0])
         explicit = {identity for identity, person in registry.items() if person.get('id') == identity and '[' + identity + ']' in observation.text}
-        references = set(explicit)
+        # A typed participant already carries its titles and deceased status.
+        # Do not create a second, apparently living occurrence for its context.
+        references = {identity for identity in explicit
+                      if not any(m.reference == identity and m.assertion.source.key == observation.source.key
+                                 for m in typed_scopes[passage])}
         literal_references = model.person_references(observation.text)
         normalized_counts = defaultdict(int)
         for reference in literal_references:
@@ -91,6 +95,16 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             context_handles[observation.source.key].append(handle)
     confidence = defaultdict(lambda: 1.0)
     round_scores = {}
+    # References and source passages stay fixed while identity groups change.
+    # Compute these once per reconstruction, including prose-only mentions.
+    mention_names = {}
+    mention_scopes = {}
+    for handle, mention in mentions.items():
+        ref = mention.reference
+        mention_names[handle] = names.key(registry[ref]['name'] if ref in registry and registry[ref].get('id') == ref else ref)
+        mention_scopes[handle] = (mention.assertion.source.path,
+                                 mention.assertion.source.pointer.rsplit('/' + mention.assertion.source.kind + '/', 1)[0],
+                                 mention.assertion.historical_date)
 
     def find(key):
         while parent[key] != key:
@@ -108,8 +122,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         return {mentions[h].reference for h in handles if mentions[h].reference in registry and registry[mentions[h].reference].get('id') == mentions[h].reference}
 
     def name(handle):
-        ref = mentions[handle].reference
-        return names.key(registry[ref]['name'] if ref in registry and registry[ref].get('id') == ref else ref)
+        return mention_names[handle]
 
     def given(value):
         first = value.split()[0]
@@ -120,9 +133,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         return given(left) == given(right) and (len(a) == 1 or len(b) == 1 or a[1:] == b[1:])
 
     def scope(mention):
-        return (mention.assertion.source.path,
-                mention.assertion.source.pointer.rsplit('/' + mention.assertion.source.kind + '/', 1)[0],
-                mention.assertion.historical_date)
+        return mention_scopes[mention.handle]
 
     def chronology_conflict(component):
         # An identity whose own sources already conflict (a data conflict on a
@@ -406,7 +417,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                         scopes.setdefault(place, []).append((ref, bounds))
             content = mention.assertion.original.get('content', '') if mention.assertion.original['type'] == 'generic' else ''
             model.add_context(profile, ref, bounds, text=content,
-                              issuance=mention.assertion.context.get('place', ''), self_names=(name(handle),))
+                              issuance=mention.assertion.context.get('place', ''), self_names=(name(handle),),
+                              personal_claim=mention.assertion.original['type'] == 'generic')
         context_coverage = {'total': len(observations), 'attached': 0, 'undated': 0, 'unattached': 0, 'explicitIdFacts': 0}
         # A bracketed confirmed ID identifies its person even when that source
         # contains no typed participant. Plain names still require local context.
@@ -548,7 +560,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     labels = {root: next(iter(anchor(handles)), root_names[root]) for root, handles in current.items()}
     reference = {root for root, handles in current.items()
                  if anchor(handles) or len({scope(mentions[h])[:2] for h in handles}) > 1}
-    tree, relations = defaultdict(set), defaultdict(list)
+    tree, relations, family_roots = defaultdict(set), defaultdict(list), set()
+    factual_parents = defaultdict(list)
     steps = {'parent': ('C', 'P'), 'sibling': ('S', 'S'), 'spouse': ('Sp', 'Sp')}
     for assertion in assertions:
         kind = assertion.original['type']
@@ -556,6 +569,9 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             continue
         a, b = assertion.mentions
         left, right = find(a.handle), find(b.handle)
+        family_roots.update((left, right))
+        if kind == 'parent' and assertion.source.kind == 'facts':
+            factual_parents[left].append((right, assertion))
         if left == right:
             continue
         if kind in steps:
@@ -564,6 +580,46 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         for own, field, other in ((left, a.field, right), (right, b.field, left)):
             if own not in reference and other in reference:
                 relations[own].append((assertion, field, other))
+    widows = defaultdict(list)
+    widow_claim = re.compile(r'^(?:(?:was|is|remained|became)\s+(?:a\s+)?widow(?:er)?\b|'
+                            r'(?:was|is)\s+(?:recorded|described|named|mentioned|listed)\b[^.!?;]*\bas\s+(?:a\s+)?widow(?:er)?\b)', re.I)
+    for assertion in assertions:
+        if assertion.source.kind != 'facts':
+            continue
+        if assertion.original['type'] == 'spouse':
+            a, b = assertion.mentions
+            for own, other in ((a, b), (b, a)):
+                if other.deceased and not own.deceased:
+                    widows[find(own.handle)].append(own)
+        elif (assertion.original['type'] == 'generic' and assertion.mentions
+              and not assertion.mentions[0].deceased and widow_claim.search(assertion.original['content'])):
+            mention = assertion.mentions[0]
+            widows[find(mention.handle)].append(mention)
+    # A deliberately weaker rule for standalone widow records: one full name
+    # may attach to an established family, but no two reference identities join.
+    widow_leftovers = {root for root in widows if root not in reference and root not in family_roots
+                      and len(root_names[root].split()) >= 2}
+    parental_mentions = defaultdict(list)
+    established_names = {root_names[root] for root in reference}
+    for root, handles in current.items():
+        if root in reference or root in family_roots or len(root_names[root].split()) < 2:
+            continue
+        for handle in handles:
+            mention = mentions[handle]
+            claim = speculative_parent_claim(mention)
+            if not claim:
+                continue
+            children = set()
+            for literal in model.person_references(claim[1]):
+                child = names.key(literal)
+                # English plural names in "the two X von Ys" still discuss X
+                # von Y. This retrieves a name; it never supplies a second child.
+                if (child.endswith('s') and child not in established_names and child[:-1] in established_names
+                    and re.search(r'\b(?:two|both|several)\s+' + re.escape(literal), claim[1], re.I)):
+                    child = child[:-1]
+                children.add(child)
+            if children:
+                parental_mentions[root].append((mention, children))
     paths = {}
     def paths_from(root):
         if root not in paths:
@@ -574,20 +630,55 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     elder = {'der Ältere', 'der Alte'}
     younger = {'der Jüngere', 'der Junge'}
     second_scores, proposals = {}, []
-    for leftover in sorted(relations):
+    for leftover in sorted(set(relations) | widow_leftovers | parental_mentions.keys()):
         if all(mentions[h].field == 'text' for h in current[leftover]):
             continue
         candidates = [root for root in sorted(reference)
                       if given(root_names[root]) == given(root_names[leftover])
                       and all(compatible_names(name(a), name(b)) for a in current[leftover] for b in current[root])]
+        weak_only = leftover in widow_leftovers
+        attribution_only = leftover in parental_mentions
+        if weak_only or attribution_only:
+            candidates = [root for root in candidates if root_names[root] == root_names[leftover]]
         scored = {}
         for candidate in candidates:
             record = model.compare(profiles[leftover], profiles[candidate])
             blocks = record.pop('blocks')
             record.pop('substantive')
             added, positioned, contradicted = [], False, False
+            if (weak_only and candidate in family_roots
+                and len({scope(mentions[h])[:2] for h in current[candidate]}) > 1):
+                support = [(own, other) for own in widows[leftover] for other in widows[candidate]
+                           if other.assertion.bounds[0] <= own.assertion.bounds[1]]
+                if support:
+                    own, other = max(support, key=lambda pair: min(reliability(m.assertion.source, model.settings) for m in pair))
+                    value = second['widowhoodNameWeight'] * min(reliability(m.assertion.source, model.settings) for m in (own, other))
+                    added.append(('weak attachment: same full name and earlier widowhood', value, own.assertion.source))
             family = {f['name'].split(': ', 1)[1] for f in record['features'] if 'family context: ' in f['name']}
             by_relative = {}
+            for mention, children in parental_mentions.get(leftover, ()):
+                for child, factual in factual_parents[candidate]:
+                    if child not in reference or root_names[child] not in children:
+                        continue
+                    # Identify the actor through independently recorded factual
+                    # parentage. The hypothesis itself remains a guess and adds
+                    # no relationship. Its tentative wording is not uncertainty
+                    # that the source explicitly names this parent and child.
+                    source_weight = model.settings['sourceWeights'][mention.assertion.source.path.split('/')[1]]
+                    weight = min(source_weight, reliability(factual.source, model.settings))
+                    # An exact child ID in the factual relationship is fixed;
+                    # uncertain aliases elsewhere in that child's cluster do
+                    # not weaken this independently anchored parentage.
+                    child_confidence = 1.0 if anchor([factual.mentions[1].handle]) else confidence[child]
+                    value = model.settings['sharedRelativeWeight'] * weight * child_confidence
+                    if value > by_relative.get(child, (0,))[0]:
+                        by_relative[child] = (value, f'factual parentage of {root_names[child]} corroborates speculative mention',
+                                              mention.assertion.source)
+                    if factual.source.key not in {ref.key for ref in record['sources']}:
+                        record['sources'].append(factual.source)
+                    for ref in dependencies[child].values():
+                        if ref.key not in {source.key for source in record['sources']}:
+                            record['sources'].append(ref)
             for assertion, field, relative_root in relations[leftover]:
                 term = names.kinship.position(assertion, field)
                 found = paths_from(relative_root).get(candidate, set())
@@ -634,7 +725,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         relatives = {relative_root for _, _, relative_root in relations[leftover]}
         competing = any(other != leftover and given(root_names[other]) == given(root_names[leftover])
                      and relatives & {relative_root for _, _, relative_root in relations[other]} for other in relations)
-        if len(compatible) == 1 and not competing:
+        if len(compatible) == 1 and not competing and not weak_only and not attribution_only:
             source = relations[leftover][0][0].source
             scored[compatible[0]][2].append((f'only compatible candidate near {", ".join(sorted(labels[r] for r in relatives))}',
                                              second['eliminationWeight'] * min(reliability(a.source, model.settings) for a, _, _ in relations[leftover]), source))
@@ -652,6 +743,10 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             record.update(mentions=list(pair), **{'pass': 2}, status='below-threshold', reason='below second-pass merge probability')
             if blocks:
                 record.update(status='incompatible', reason='blocked: ' + '; '.join(blocks))
+            elif weak_only and sum(not entry[1] for entry in scored.values()) != 1:
+                record.update(status='ambiguous', reason='weak widowhood attachment has competing same-name reference identities')
+            elif attribution_only and sum(bool(entry[2]) and not entry[1] for entry in scored.values()) != 1:
+                record.update(status='ambiguous', reason='speculative mention has competing factual parents with the same names')
             elif record['probability'] >= second['mergeProbability']:
                 options.append((record['logOdds'], candidate))
             second_scores[pair] = record
@@ -665,7 +760,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             else:
                 proposals.append((leftover, candidate, second_scores[pair]['sources']))
     round_scores = second_scores
-    accept(proposals, 'second pass: relationship position in the reference tree')
+    accept(proposals, 'second pass: relationship position, corroborated speculative mention, or weak widowhood attachment')
     for leftover, candidate, _ in proposals:
         pair = tuple(sorted((leftover, candidate)))
         if find(leftover) == find(candidate):

@@ -14,6 +14,10 @@ from family_graph.probability import DEFAULTS, ProbabilityModel, Profile, Observ
 from family_graph.export import serialize, validate_generated
 
 
+def context_fact(text):
+    return {"type": "generic", "subject": "The source passage", "content": text}
+
+
 class ProbabilityTests(unittest.TestCase):
     def setUp(self):
         self.names = Names('Alex\nBea\nChris\n', [{'id': 'north', 'variations': ['North']}], 'Vogt, advocatus\nder Rote, Rufus\n')
@@ -203,17 +207,64 @@ class ProbabilityTests(unittest.TestCase):
     def test_context_dates_use_interval_overlap_not_identical_spelling(self):
         first = [{'type': 'parent', 'person': 'Alex von South', 'personTitle': ['der Jüngere'], 'of': 'Bea', 'date': '1393-05-01'}]
         second = [{'type': 'parent', 'person': 'Alex von South', 'personTitle': ['der Jüngere'], 'of': 'Chris', 'date': '1394-05-01'}]
-        inputs = self.repository(first, second, ['Alex von South held property at North.'], ['Alex von South held property at North.'])
+        inputs = self.repository(first, second, [context_fact('Alex von South held property at North.')], [context_fact('Alex von South held property at North.')])
         graph = build(inputs).evidence_graph
         self.assertEqual(1, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
         self.assertEqual(2, graph['contextCoverage']['attached'])
 
+    def test_generic_subject_and_context_count_once_and_preserve_deceased_status(self):
+        facts = [{'type': 'parent', 'person': 'a', 'of': 'Bea', 'personDeceased': True},
+                 {'type': 'generic', 'person': 'a', 'personDeceased': True,
+                  'content': 'held property at North.'}]
+        inputs = self.repository(facts, [])
+        (inputs.root / 'data/people.json').write_text(json.dumps([{'id': 'a', 'name': 'Alex von South'}]))
+        inputs = load_inputs(inputs.root, validate=False)
+        graph = build(inputs).evidence_graph
+        self.assertEqual(2, graph['nameFrequencies']['counts']['alex von south'])
+        alex = next(node for node in graph['nodes'] if node.get('registry') == 'a')
+        self.assertEqual({'person'}, {mention['field'] for mention in alex['mentions']})
+        validate_generated(serialize(inputs, [build(inputs)]), inputs.people, inputs.root)
+
+    def test_untyped_context_is_rejected_even_without_schema_validation(self):
+        with self.assertRaisesRegex(ValueError, 'expected a typed assertion'):
+            self.repository(['Alex von South held property at North.'], [])
+
+    def test_shared_financial_counterparty_links_generic_records_without_an_id(self):
+        first = [{'type': 'spouse', 'person': 'Alex von South', 'of': 'Bea'},
+                 {'type': 'generic', 'person': 'Alex von South',
+                  'content': 'was paid inherited rents by Graf Peter von East.'}]
+        second = [{'type': 'generic', 'person': 'Alex von South',
+                   'content': 'was owed money by Graf Peter von East, payable in installments.'}]
+        graph = build(self.repository(first, second)).evidence_graph
+        alex = next(node for node in graph['nodes'] if node['name'] == 'Alex von South')
+        self.assertNotIn('registry', alex)
+        self.assertEqual(3, len(alex['mentions']))
+        financial = [c for c in graph['comparisons']
+                     if any('financial counterparty' in f['name'] for f in c['features'])]
+        self.assertTrue(any(c['status'] == 'merged' for c in financial))
+        self.assertTrue(all(not any('same-fact associate: peter von east' == f['name'] for f in c['features'])
+                            for c in financial))
+        # Mere co-occurrence with the same actor does not establish this role.
+        second[0]['content'] = 'met Graf Peter von East.'
+        graph = build(self.repository(first, second)).evidence_graph
+        alex = next(node for node in graph['nodes'] if node['name'] == 'Alex von South')
+        self.assertEqual(2, len(alex['mentions']))
+
+    def test_financial_role_is_not_assigned_to_other_people_in_context(self):
+        left, right = self.profile(), self.profile()
+        ref, bounds = left.mentions[0].assertion.source, left.mentions[0].assertion.bounds
+        for profile in (left, right):
+            self.model.add_context(profile, ref, bounds,
+                                   text='was paid by Graf Peter von East.', personal_claim=False)
+        record = self.model.compare(left, right)
+        self.assertFalse(any('financial counterparty' in f['name'] for f in record['features']))
+
     def test_informative_prose_can_bridge_family_records_without_creating_edges(self):
-        first = [{'type': 'parent', 'person': 'Alex von South', 'of': 'Bea'}, 'Alex von South held property at North with Peter von West.']
-        second = [{'type': 'parent', 'person': 'Alex von South', 'of': 'Chris'}, 'Alex von South held property at East with Peter von West.']
+        first = [{'type': 'parent', 'person': 'Alex von South', 'of': 'Bea'}, context_fact('Alex von South held property at North with Peter von West.')]
+        second = [{'type': 'parent', 'person': 'Alex von South', 'of': 'Chris'}, context_fact('Alex von South held property at East with Peter von West.')]
         inputs = self.repository(first, second)
         (inputs.root / 'data/places.json').write_text(json.dumps([{'id': 'north', 'variations': ['North']}, {'id': 'east', 'variations': ['East']}]))
-        (inputs.root / 'data/documents/bridge.json').write_text(json.dumps({'date': '1393', 'facts': ['Alex von South held property at North and East with Peter von West.']}))
+        (inputs.root / 'data/documents/bridge.json').write_text(json.dumps({'date': '1393', 'facts': [context_fact('Alex von South held property at North and East with Peter von West.')]}))
         # The prose-only occurrence can enrich an existing family identity;
         # its potential evidence is considered, without inventing parentage.
         graph = build(load_inputs(inputs.root, validate=False)).evidence_graph
@@ -228,13 +279,13 @@ class ProbabilityTests(unittest.TestCase):
         participants = {edge[field] for edge in graph['relationships'] for field in ('person', 'of')}
         self.assertEqual(participants, {node['key'] for node in graph['nodes']})
 
-    def test_untyped_known_id_context_has_a_fixed_anchor_and_valid_export(self):
+    def test_generic_known_id_context_has_a_fixed_anchor_and_valid_export(self):
         inputs = self.repository([{'type': 'parent', 'person': 'Alex von South', 'of': 'Bea'},
-                                  'Alex von South held property at North and East.'], [])
+                                  context_fact('Alex von South held property at North and East.')], [])
         root = inputs.root
         (root / 'data/people.json').write_text(json.dumps([{'id': 'a', 'name': 'Alex von South'}]))
         (root / 'data/places.json').write_text(json.dumps([{'id': 'north', 'variations': ['North']}, {'id': 'east', 'variations': ['East']}]))
-        (root / 'data/documents/context.json').write_text(json.dumps({'date': '1393', 'facts': ['[a] held property at North and East.']}))
+        (root / 'data/documents/context.json').write_text(json.dumps({'date': '1393', 'facts': [context_fact('[a] held property at North and East.')]}))
         inputs = load_inputs(root, validate=False)
         graph = build(inputs).evidence_graph
         self.assertTrue(any(node.get('registry') == 'a' for node in graph['nodes']))
@@ -248,7 +299,7 @@ class ProbabilityTests(unittest.TestCase):
 
     def test_context_record_cannot_override_another_confirmed_id(self):
         inputs = self.repository([{'type': 'parent', 'person': 'a', 'of': 'Bea'}], [],
-                                 ['[a] held property at North and East.'])
+                                 [context_fact('[a] held property at North and East.')])
         root = inputs.root
         (root / 'data/people.json').write_text(json.dumps([{'id': 'a', 'name': 'Alex von South'}, {'id': 'b', 'name': 'Other von West'}]))
         inputs = load_inputs(root, validate=False)
@@ -274,12 +325,12 @@ class ProbabilityTests(unittest.TestCase):
         root = inputs.root
         (root / 'data/people.json').write_text(json.dumps([{'id': 'a', 'name': 'Alex von South'}]))
         (root / 'data/documents/anchor.json').write_text(json.dumps({'date': '1393', 'facts': [{'type': 'title', 'person': 'a', 'personTitle': ['der Jüngere', 'Ritter']}]}))
-        (root / 'data/documents/context.json').write_text(json.dumps({'date': '1393', 'facts': ['[a] held property at North.']}))
+        (root / 'data/documents/context.json').write_text(json.dumps({'date': '1393', 'facts': [context_fact('[a] held property at North.')]}))
         # This context source has no typed participant. The exact ID, rather
         # than an inferred same-name attachment, establishes whose property it is.
         for filename in ('first', 'second'):
             path = root / f'data/documents/{filename}.json'
-            document = json.loads(path.read_text()); document['facts'].append('Alex von South held property at North.')
+            document = json.loads(path.read_text()); document['facts'].append(context_fact('Alex von South held property at North.'))
             path.write_text(json.dumps(document))
         graph = build(load_inputs(root, validate=False)).evidence_graph
         self.assertEqual(1, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
@@ -289,14 +340,14 @@ class ProbabilityTests(unittest.TestCase):
     def test_partial_names_do_not_merge_on_geography_and_associates_alone(self):
         inputs = self.repository([{'type': 'spouse', 'person': 'Alex', 'of': 'Bea von East'}],
                                  [{'type': 'spouse', 'person': 'Alex von South', 'of': 'Chris von West'}],
-                                 ['Alex von South held property at North with Peter von East.'],
-                                 ['Alex von South held property at North with Peter von East.'])
+                                 [context_fact('Alex von South held property at North with Peter von East.')],
+                                 [context_fact('Alex von South held property at North with Peter von East.')])
         # Give the bare reference a confirmed ID and explicit context. It is
         # still not the fully named person's identity merely due to shared land.
         root = inputs.root
         (root / 'data/people.json').write_text(json.dumps([{'id': 'a', 'name': 'Alex'}]))
         path = root / 'data/documents/first.json';document = json.loads(path.read_text())
-        document['facts'] = [{'type': 'spouse', 'person': 'a', 'of': 'Bea von East'}, '[a] held property at North with Peter von East.']
+        document['facts'] = [{'type': 'spouse', 'person': 'a', 'of': 'Bea von East'}, context_fact('[a] held property at North with Peter von East.')]
         path.write_text(json.dumps(document))
         graph = build(load_inputs(root, validate=False)).evidence_graph
         self.assertTrue(any(n['name'] == 'Alex von South' and not n.get('registry') for n in graph['nodes']))
@@ -379,7 +430,7 @@ class ProbabilityTests(unittest.TestCase):
 
     def test_places_and_titles_link_people_without_registry_ids(self):
         relation = lambda child: {'type': 'parent', 'person': 'Alex von South', 'personTitle': ['der Jüngere', 'Ritter'], 'of': child}
-        property_fact = 'Alex von South held property at North.'
+        property_fact = context_fact('Alex von South held property at North.')
         inputs = self.repository([relation('Bea')], [relation('Chris')], [property_fact], [property_fact])
         graph = build(inputs).evidence_graph
         self.assertEqual(1, len([node for node in graph['nodes'] if node['name'] == 'Alex von South']))
@@ -397,11 +448,11 @@ class ProbabilityTests(unittest.TestCase):
 
     def test_associates_require_cooccurrence_in_one_fact(self):
         relation = lambda child: {'type': 'parent', 'person': 'Alex von South', 'personTitle': ['der Jüngere'], 'of': child}
-        together = 'Alex von South met Bea von East and Chris von West.'
+        together = context_fact('Alex von South met Bea von East and Chris von West.')
         inputs = self.repository([relation('Bea')], [relation('Chris')], [together], [together])
         graph = build(inputs).evidence_graph
         self.assertEqual(1, len([node for node in graph['nodes'] if node['name'] == 'Alex von South']))
-        inputs = self.repository([relation('Bea')], [relation('Chris')], ['Alex von South witnessed.', 'Bea von East met Chris von West.'], [together])
+        inputs = self.repository([relation('Bea')], [relation('Chris')], [context_fact('Alex von South witnessed.'), context_fact('Bea von East met Chris von West.')], [together])
         graph = build(inputs).evidence_graph
         self.assertEqual(2, len([node for node in graph['nodes'] if node['name'] == 'Alex von South']))
 
@@ -480,6 +531,153 @@ class ProbabilityTests(unittest.TestCase):
         self.assertFalse(any('1387' in n['dates'] for n in graph['nodes'] if n['key'] in {'uncle', 'son_a'}))
         positions = {f['name'] for c in graph['comparisons'] if c.get('pass') == 2 for f in c['features'] if f['name'].startswith('kinship position')}
         self.assertEqual({'kinship position S of vogt (consanguineus)', 'kinship position C of vogt (consanguineus)'}, positions)
+
+    def widow_family(self, *, name='Mara von East', widow=True, rival=False, death=False, early=False, claim=True):
+        spouse = {'type': 'spouse', 'person': 'Mara von East', 'of': 'p'}
+        if widow:
+            spouse['ofDeceased'] = True
+        inputs = self.repository([spouse], [spouse])
+        people = [{'id': 'p', 'name': 'Felix von West'}]
+        if rival:
+            people += [{'id': 'w1', 'name': 'Mara von East'}, {'id': 'w2', 'name': 'Mara von East'},
+                       {'id': 'q', 'name': 'George von West'}]
+        (inputs.root / 'data/people.json').write_text(json.dumps(people))
+        for filename, date in [('first', '1300' if early else '1393'), ('second', '1301' if early else '1394')]:
+            facts = [spouse]
+            if rival:
+                facts = [{**spouse, 'person': 'w1'}, {**spouse, 'person': 'w2', 'of': 'q'}]
+            if death and filename == 'second':
+                facts.append({'type': 'death', 'person': 'Mara von East', 'diedOn': '1394'})
+            (inputs.root / f'data/documents/{filename}.json').write_text(json.dumps({'date': date, 'facts': facts}))
+        content = 'was recorded among the benefactors of a monastery as a widow.' if claim else 'was a benefactor of a monastery.'
+        (inputs.root / 'data/documents/late.json').write_text(json.dumps({'date': '1420', 'facts': [
+            {'type': 'generic', 'person': name, 'content': content}]}))
+        return load_inputs(inputs.root, validate=False)
+
+    def test_weak_widow_attachment_uses_an_unanchored_family_and_keeps_provenance(self):
+        inputs = self.widow_family()
+        result = build(inputs)
+        mara = next(n for n in result.evidence_graph['nodes'] if n['name'] == 'Mara von East')
+        self.assertNotIn('registry', mara)
+        self.assertEqual(3, len(mara['mentions']))
+        comparison = next(c for c in result.evidence_graph['comparisons'] if c.get('pass') == 2 and c['status'] == 'merged')
+        self.assertTrue(any(f['name'].startswith('weak attachment:') for f in comparison['features']))
+        paths = {ref['path'] for ref in comparison['sources']}
+        self.assertTrue(any(path.endswith('late.json') for path in paths))
+        self.assertTrue(any(path.endswith('first.json') for path in paths))
+        validate_generated(serialize(inputs, [result]), inputs.people, inputs.root)
+
+    def test_weak_widow_attachment_keeps_namesake_and_chronology_limits(self):
+        for options in ({'rival': True}, {'death': True}, {'early': True}, {'widow': False},
+                        {'name': 'Mara'}, {'name': 'Mara von South'}, {'claim': False}):
+            with self.subTest(options=options):
+                graph = build(self.widow_family(**options)).evidence_graph
+                self.assertFalse(any(m['source']['path'].endswith('late.json')
+                                     for node in graph['nodes'] for m in node['mentions']))
+
+    def test_weak_widow_attachment_needs_an_established_family_and_own_widowhood(self):
+        for single_passage in (False, True):
+            with self.subTest(single_passage=single_passage):
+                inputs = self.widow_family()
+                if single_passage:
+                    (inputs.root / 'data/documents/second.json').unlink()
+                else:
+                    path = inputs.root / 'data/documents/late.json'
+                    document = json.loads(path.read_text())
+                    document['facts'][0]['content'] = 'was paid money by a widow.'
+                    path.write_text(json.dumps(document))
+                graph = build(load_inputs(inputs.root, validate=False)).evidence_graph
+                self.assertFalse(any(m['source']['path'].endswith('late.json')
+                                     for node in graph['nodes'] for m in node['mentions']))
+
+    def speculative_family(self, *, rival=False, wrong_child=False, guessed_parent=False, deceased=False, plural=False, uncertain_child=False):
+        parent = {'type': 'parent', 'person': 'Mara von East', 'of': 'c'}
+        inputs = self.repository([parent], [parent])
+        people = [{'id': 'c', 'name': 'Felix von West'}, {'id': 'p', 'name': 'George von South'}]
+        if rival:
+            people += [{'id': 'w1', 'name': 'Mara von East'}, {'id': 'w2', 'name': 'Mara von East'},
+                       {'id': 'c2', 'name': 'Felix von West'}]
+        (inputs.root / 'data/people.json').write_text(json.dumps(people))
+        for filename, date in [('first', '1393'), ('second', '1394')]:
+            facts, guesses = [parent], []
+            if uncertain_child and filename == 'first':
+                facts = [{**parent, 'ofTitle': ['zu North']}]
+            if rival:
+                facts = [{**parent, 'person': 'w1'}, {**parent, 'person': 'w2', 'of': 'c2'}]
+            if guessed_parent:
+                facts = [{'type': 'spouse', 'person': 'Mara von East', 'of': 'p'}]
+                guesses = [parent]
+            if deceased and filename == 'second':
+                facts.append({'type': 'death', 'person': 'Mara von East', 'diedOn': '1394'})
+            (inputs.root / f'data/documents/{filename}.json').write_text(json.dumps({'date': date, 'facts': facts, 'guesses': guesses}))
+        if uncertain_child:
+            (inputs.root / 'data/documents/alias.json').write_text(json.dumps({'date': '1413', 'facts': [
+                {'type': 'title', 'person': 'Felix von West', 'personTitle': ['zu North']}]}))
+        child = 'Ada von North' if wrong_child else 'the two Felix von Wests whose tombs bear matching arms' if plural else 'Felix von West'
+        (inputs.root / 'data/books').mkdir()
+        (inputs.root / 'data/books/hypothesis.json').write_text(json.dumps({'entries': [{'guesses': [
+            {'type': 'generic', 'person': 'Mara von East', 'date': '1449',
+             'content': f'may have been the mother of {child}.'}]}]}))
+        return load_inputs(inputs.root, validate=False)
+
+    def test_second_pass_identifies_speculative_mentions_from_factual_parentage(self):
+        for options in ({}, {'deceased': True}, {'plural': True}, {'uncertain_child': True}):
+            with self.subTest(options=options):
+                inputs = self.speculative_family(**options)
+                result = build(inputs, include_guesses=True)
+                graph = result.evidence_graph
+                mara = next(node for node in graph['nodes'] if node['name'] == 'Mara von East')
+                self.assertNotIn('registry', mara)
+                self.assertTrue(any(m['source']['path'].endswith('hypothesis.json') for m in mara['mentions']))
+                self.assertEqual({('parent', mara['key'], 'c')},
+                                 {(edge['type'], edge['person'], edge['of']) for edge in graph['relationships']})
+                record = next(c for c in graph['comparisons'] if c.get('pass') == 2 and c['status'] == 'merged')
+                self.assertTrue(record['usesGuesses'])
+                self.assertTrue(any('factual parentage' in feature['name'] for feature in record['features']))
+                self.assertTrue(any(ref['path'].endswith('first.json') for ref in record['sources']))
+                self.assertTrue(any('/guesses/' in ref['pointer'] for ref in record['sources']))
+                if options.get('uncertain_child'):
+                    child = next(node for node in graph['nodes'] if node.get('registry') == 'c')
+                    self.assertLess(child['identityProbability'], .75)
+                hypothesis = next(a for a in inputs.assertions if a.source.path.endswith('hypothesis.json'))
+                self.assertEqual('guesses', hypothesis.source.kind)
+                validate_generated(serialize(inputs, [result]), inputs.people, inputs.root)
+                facts = build(inputs).evidence_graph
+                self.assertFalse(any(m['source']['path'].endswith('hypothesis.json')
+                                     for node in facts['nodes'] for m in node['mentions']))
+
+    def test_speculative_identity_attribution_rejects_namesakes_and_circular_support(self):
+        for options in ({'rival': True}, {'wrong_child': True}, {'guessed_parent': True}):
+            with self.subTest(options=options):
+                graph = build(self.speculative_family(**options), include_guesses=True).evidence_graph
+                self.assertFalse(any(m['source']['path'].endswith('hypothesis.json')
+                                     for node in graph['nodes'] for m in node['mentions']))
+
+    def test_quantified_child_names_preserve_a_real_surname_ending_in_s(self):
+        inputs = self.speculative_family(plural=True)
+        (inputs.root / 'data/people.json').write_text(json.dumps([{'id': 'c', 'name': 'Felix von Fuchs'}]))
+        path = inputs.root / 'data/books/hypothesis.json'
+        document = json.loads(path.read_text())
+        document['entries'][0]['guesses'][0]['content'] = 'may have been the mother of the two Felix von Fuchs.'
+        path.write_text(json.dumps(document))
+        graph = build(load_inputs(inputs.root, validate=False), include_guesses=True).evidence_graph
+        mara = next(node for node in graph['nodes'] if node['name'] == 'Mara von East')
+        self.assertTrue(any(m['source']['path'].endswith('hypothesis.json') for m in mara['mentions']))
+
+    def test_retrospective_parent_hypotheses_do_not_erase_other_chronology_evidence(self):
+        death = self.person({'type': 'death', 'person': 'Alex von South', 'diedOn': '1394'}, date='1394')
+        ordinary = self.person({'type': 'generic', 'person': 'Alex von South', 'content': 'held property at North.'},
+                               date='1449', category='books', kind='guesses')
+        retrospective = self.person({'type': 'generic', 'person': 'Alex von South',
+                                     'content': 'may have been the father of Felix von West.'},
+                                    date='1449', category='books', kind='guesses')
+        self.assertTrue(any('after recorded death' in f['name'] for f in self.model.compare(death, ordinary)['features']))
+        self.assertFalse(any('after recorded death' in f['name'] for f in self.model.compare(death, retrospective)['features']))
+        deceased = self.person({'type': 'generic', 'person': 'Alex von South', 'personDeceased': True,
+                                'content': 'may have been the father of Felix von West.'},
+                               date='1390', category='books', kind='guesses')
+        alive = self.person({'type': 'title', 'person': 'Alex von South', 'personTitle': ['Ritter']}, date='1393')
+        self.assertTrue(any('after recorded death' in f['name'] for f in self.model.compare(alive, deceased)['features']))
 
     def test_kinship_terms_combine_and_invert(self):
         from family_graph.kinship import Kinship, invert

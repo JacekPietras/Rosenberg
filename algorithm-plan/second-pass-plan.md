@@ -53,6 +53,8 @@ there, `arnold_boxberg`, is Eberhard's brother and therefore not his `Vetter`.
 | Related leftover | Unmerged record without registry ID that has a relationship to a `T0` identity | All pass-2 evidence |
 | Detached leftover | Unmerged record whose relatives are also leftovers | Nothing new |
 | Lone mention | `title` or `death` mention without a relationship, not grouped into any identity | Nothing new |
+| Standalone widow record | Factual personal `generic` claim explicitly describing widowhood | Weaker same-full-name attachment to a unique established family with earlier documented widowhood |
+| Speculative parent mention | Retrospective personal `generic` guess naming a possible parent and child | Attribution to a same-full-name parent corroborated by an existing factual parent relationship |
 
 Only related leftovers get structural evidence, because the tree can only be
 consulted from a known point. Pass 1's last round already compared detached
@@ -60,6 +62,30 @@ leftovers and lone mentions against the final tree with all pass-1 evidence, so
 pass 2 has nothing to add for them. Example: in `1381-05-25_3.json` Konrad, Ritter,
 Vitztum zu Heidelberg, is `Schwager` of Hans von Hirschhorn. Hans is not in the
 Rosenberg tree, so this case stays a detached leftover.
+
+Standalone widow records have an explicitly weaker, non-structural exception.
+They require the same complete normalized name, an existing family identity
+spanning multiple passages, and a factual widowhood attestation at or before the
+standalone record. The feature uses `secondPass.widowhoodNameWeight` and records
+its supporting sources. Any other chronologically compatible same-name
+reference identity blocks the weak attachment, regardless of score advantage.
+Existing death, age, probability and whole-family constraints still apply.
+This exception can conflate undocumented namesakes; it does not establish an
+exact spouse or birth family from the generic text. Attachments cannot support
+one another.
+
+Speculative mentions such as "may have been the mother of X" can be attributed
+using independently recorded factual parentage in the frozen reference tree.
+The parent's complete normalized name and an explicitly named child's name must
+match; the child must already be an established identity. Multiple corroborated
+same-name parents remain ambiguous. Guessed parent relationships cannot
+corroborate the attribution, and attributing the mention creates no relationship.
+The feature uses `sharedRelativeWeight`, the weaker of the mentioning source's
+category weight and the factual relationship's weight, and the child's identity
+confidence. An exact child ID in the factual relationship remains fixed even
+when other aliases in that child's cluster are uncertain. The mentioning source still retains its guess provenance. The
+retrospective wording does not assert that the parent was alive at the date used
+to discuss the children's history; an explicit deceased marker is preserved.
 
 ## Kinship terms
 

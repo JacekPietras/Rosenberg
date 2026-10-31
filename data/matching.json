@@ -1,5 +1,5 @@
 {
-  "model": "weighted-log-odds-v4",
+  "model": "weighted-log-odds-v5",
   "calibrated": false,
   "priorProbability": 0.05,
   "mergeProbability": 0.7,
@@ -40,6 +40,7 @@
   "placeHalfLifeYears": 20.0,
   "crossRolePlaceFactor": 0.5,
   "associateWeight": 2.0,
+  "financialCounterpartyWeight": 4.0,
   "associateMaxWeight": 4.0,
   "associateHalfLifeYears": 15.0,
   "familyWeights": {
@@ -73,6 +74,7 @@
       "broad": 0.3
     },
     "eliminationWeight": 1.5,
-    "ageTitleNamesakeWeight": 1.0
+    "ageTitleNamesakeWeight": 1.0,
+    "widowhoodNameWeight": 5.0
   }
 }

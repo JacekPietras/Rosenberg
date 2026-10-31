@@ -138,6 +138,13 @@ or the research process. Retain citations needed to identify the basis of a gues
 Never invent a date or use the publication year as an event date. In books and
 notes, every fact and guess must have an explicit historical date.
 
+A retrospective personal generic hypothesis such as "may have been the mother
+of" does not assert that the parent was alive at the date used to discuss the
+children's history. Preserve the recorded date and deceased status; do not add a
+deceased marker or shift the date just to make identities match. The second pass
+may attribute that mention through independently recorded factual parentage
+without promoting the hypothesis into a fact or creating a new relationship.
+
 ## Relevance and identity
 
 Keep a fact when it mentions a member of von Rosenberg, von Uissigheim, or von

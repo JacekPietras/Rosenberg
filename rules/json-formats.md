@@ -491,6 +491,12 @@ territory weight once. Cross-role place support uses
 `crossRolePlaceFactor`. Scoped offices have stronger weights than ranks. Property associations
 use names/variations from `places.json`. Same-fact associates are deterministic
 `XXX von YYY` name co-occurrences; an entire entry is never one associate group.
+Typed personal generic claims that the subject "was paid" or "was owed" money
+by one named counterparty provide stronger, role-specific associate evidence
+when both profiles state that role. It replaces ordinary association with that
+counterparty, uses the associate decay and cap, and does not assert that the
+records describe the same transaction. Other actors in a passage do not inherit
+the subject's financial role.
 Dated prose binds exact bracketed IDs directly. Ordinary names select a unique
 local participant using overlapping date intervals. Informative prose-only
 occurrences can form provisional context profiles and bridge typed family
@@ -508,10 +514,19 @@ or a chronology block) is blocked. Features are capped
 by category/relative/place; repeated extraction does not manufacture support.
 Document/image source factors are always 1.0; book/note factors are 0.5.
 Guesses receive an additional 0.45 factor by default. Pairwise evidence uses the
-weaker of the two observations' effective factors.
+weaker of the two observations' effective factors. A second-pass attribution of
+a speculative mention can instead be corroborated by an independently recorded
+factual parent relationship. That feature uses the weaker source-category/factual
+relationship weight and the child's identity confidence (1 for an exact child ID
+in the factual relationship, otherwise the inferred cluster confidence): the guess
+does not supply a new parent relationship or corroborate itself. Its uncertainty
+label and source pointer remain unchanged.
 
 A typed mention without a deceased marker means the person was alive at the
-fact's date. A death fact or deceased marker supplies a death bound. Each
+fact's date. A retrospective personal generic guess beginning "may/might/could
+have been the mother/father/parent of" does not assert life at the date of the
+retrospective discussion. An explicit deceased marker still supplies its bound;
+no deceased marker or replacement date is inferred. A death fact or deceased marker supplies a death bound. Each
 identity has an estimated birth interval: a rank, office, `der Ältere`/`der
 Alte`, parent, or spouse requires adulthood (`adultAgeYears`), and every
 unmarked mention or exact death requires an age of at most `maxAgeYears`. Partial
@@ -538,6 +553,18 @@ reduce cluster confidence; rejected internal pairs do not. Same-named repeated
 parents are not co-parent evidence. Omitted surnames require family or identifying
 title support, and co-parent support retains child-identity provenance. The algorithm's own
 conclusions are not independent evidence. No seal-image matching is used. These probabilities are **uncalibrated estimates**.
+
+The second pass also permits a weaker attachment of a standalone factual widow
+or widower record to an established family identity. Both records must have the
+same complete normalized name; the family must span multiple source passages
+and explicitly attest widowhood at or before the standalone record. Competing
+chronologically compatible reference identities prevent this attachment, even
+when one scores higher. Full-name matching alone is insufficient. The configured
+`widowhoodNameWeight` makes the name-plus-widowhood assumption explicit; it is
+weaker evidence than a shared identified spouse and can still join undocumented
+namesakes. Existing probability, chronology, and complete-cluster checks remain
+in force. The frozen reference tree prevents these attachments supporting one
+another or joining established identities.
 
 Each comparison contains `person`, `candidate` (final node keys), original
 `mentions` handles, `iteration`, `probability`, `logOdds`, `features` (named
@@ -582,18 +609,18 @@ timestamps, reports, review queues, or separate facts database are introduced.
 ## Matching JSON
 
 `data/matching.json` is the authoritative global configuration for the weighted
-identity model. It contains `model: "weighted-log-odds-v4"`, `calibrated: false`,
+identity model. It contains `model: "weighted-log-odds-v5"`, `calibrated: false`,
 `priorProbability`, `mergeProbability`, `ambiguityLogOddsMargin`,
 `clusterMinimumProbability`, `guessWeight`, `sourceWeights`, age assumptions
 (`adultAgeYears`, `maxAgeYears`, `ageComfortYears`, `ageScaleYears`), title
 weights and half-lives, place weights and half-life, cross-role place factor,
 relative-name rarity weight/cap/reference frequency, associate
-weights/cap/half-life, family weights, relation factors, shared-relative weight,
+weights/cap/half-life, `financialCounterpartyWeight`, family weights, relation factors, shared-relative weight,
 cap and half-life,
 elder-before-younger and Ritter-before-Edelknecht penalties, death conflict
 penalty, `maxRounds`, and `secondPass` (`mergeProbability`, `maxPathSteps`,
 `specificityFactors` for exact/narrow/broad kinship terms, `eliminationWeight`,
-`ageTitleNamesakeWeight`).
+`ageTitleNamesakeWeight`, `widowhoodNameWeight`).
 
 Use the existing file's exact keys; unknown/missing keys, non-finite or
 non-positive values, invalid probability ranges, and non-integer iteration

@@ -6,8 +6,8 @@ import re
 import math
 from .constraints import cycle_nodes
 from .model import fingerprint, registry_keys
-from .sources import input_manifest
-from .probability import parameters
+from .sources import generic_text, input_manifest
+from .probability import parameters, person_references
 
 
 def resolve_pointer(value, pointer):
@@ -178,9 +178,20 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
             for mention in node['mentions']:
                 fact = source(mention['source'], view)
                 field = mention.get('field')
-                if field not in {'person', 'of'} or fact is not None and (not isinstance(fact, dict) or field not in fact):
+                if field == 'text':
+                    reference = mention.get('reference')
+                    if not isinstance(reference, str) or not reference:
+                        raise ValueError('invalid reconstructed context participant')
+                    if fact is not None:
+                        text = generic_text(fact)
+                        if (reference in registry and '[' + reference + ']' not in text
+                            or reference not in registry and reference not in person_references(text)):
+                            raise ValueError('invalid reconstructed context participant')
+                    named |= reference == node['name']
+                elif field not in {'person', 'of'} or fact is not None and (not isinstance(fact, dict) or field not in fact):
                     raise ValueError('invalid reconstructed participant')
-                reference = fact[field] if fact is not None else None
+                else:
+                    reference = fact[field] if fact is not None else None
                 if fact is not None and reference in registry and key != reference:
                     raise ValueError('reconstructed occurrence overrides a fixed registry anchor')
                 named |= fact is not None and reference == node['name']
