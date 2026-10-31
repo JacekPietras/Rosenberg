@@ -5,13 +5,22 @@
       "source": "StAN, Herrschaft Sugenheim, Urkunden 380 (Rechter, Seckendorff Urkundenbestände, Inv.-Nr. 920)",
       "url": "https://www.gda.bayern.de/gvl/archive.jsf?id=Vz++++++b78554a3-b213-4cb5-98f2-aa3446450c4c",
       "german": "Albrecht Christoph von und zu Roßenberg, Waldtmanßhouen, Gnetzheim und Schüpff, Eberhard v. Elttershouen zu Ipßheim, markgräflicher Rat und Amtmann zu Hoheneckh, und Georg Friedrich v. Seckhendorff zu Langenfeldt machen als Vormünder der Söhne des gest. Hans Georg v. Seckhendorff bekannt, daß sie Lorenz v. Münster zu Braitenlohe 1000 fl fränkischer Landeswährung schulden, die dieser dem Verstorbenen 1594 geliehen hat, und sichern zu, bis zur Ablösung ab 1609 jährlich an Kathedra Petri [Febr. 22] jeweils 50 fl Zins zu bezahlen. - B: Georg Sigmund v. Rosenberg zu Waldtmanßhouen, Haldenbergstetten, Gnetzheim und Schüpff, Bruder von A 1. - S und U: 1. A 3, 2. A 2, 3. A 1, 4. B.",
-      "english": "Albrecht Christoph von Rosenberg zu Rosenberg of Waldmannshofen, Gnötzheim, and Schüpf; Eberhard von Elttershouen of Ipsheim, margravial councillor and Amtmann at Hoheneck; and Georg Friedrich von Seckhendorff of Langenfeld, acting as guardians of the sons of the late Hans Georg von Seckhendorff, acknowledge a debt to Lorenz von Münster of Breitenlohe and promise annual interest until redemption. Guarantor: Georg Sigmund von Rosenberg of Waldmannshofen, Haldenbergstetten, Gnötzheim, and Schüpf, brother of Albrecht Christoph.",
+      "english": "Albrecht Christoph von Rosenberg zu Rosenberg of Waldmannshofen, Gnötzheim, and Schüpf; Eberhard von Elttershouen of Ipsheim, margravial councillor and Amtmann at Hoheneck; and Georg Friedrich von Seckendorff of Langenfeld, acting as guardians of the sons of the late Hans Georg von Seckendorff, acknowledge a debt to Lorenz von Münster of Breitenlohe and promise annual interest until redemption. Guarantor: Georg Sigmund von Rosenberg of Waldmannshofen, Haldenbergstetten, Gnötzheim, and Schüpf, brother of Albrecht Christoph.",
       "facts": [
         {
           "type": "sibling",
           "person": "Georg Sigmund von Rosenberg",
+          "personTitle": [
+            "zu Waldmannshofen",
+            "zu Haldenbergstetten",
+            "zu Gnötzheim",
+            "zu Schüpf"
+          ],
           "of": "Albrecht Christoph von Rosenberg",
           "ofTitle": [
+            "zu Waldmannshofen",
+            "zu Gnötzheim",
+            "zu Schüpf",
             "zu Rosenberg"
           ]
         },

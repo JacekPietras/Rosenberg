@@ -57,11 +57,19 @@
         {
           "type": "generic",
           "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
           "content": "spent 30 shillings Heller at a meeting in Bensheim with friends of Count Palatine Ruprecht, together with the Archbishop of Mainz’s notary and other friends of the archbishop."
         },
         {
           "type": "generic",
           "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
           "content": "was to be paid 30 shillings Heller by Jakob, the cellarer at Starkenburg, for the meeting expenses."
         }
       ]

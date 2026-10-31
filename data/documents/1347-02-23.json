@@ -17,12 +17,18 @@
         {
           "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "served as a provisor of the Archbishop of Mainz."
+          "content": "served as a provisor of the Archbishop of Mainz.",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
           "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "participated in the inventory of the Erenfels toll chest."
+          "content": "participated in the inventory of the Erenfels toll chest.",
+          "personTitle": [
+            "Ritter"
+          ]
         }
       ]
     }

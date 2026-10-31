@@ -32,6 +32,10 @@
         {
           "type": "generic",
           "person": "Lutz Schott",
+          "personTitle": [
+            "Ritter",
+            "Amtmann zu Weinsberg"
+          ],
           "content": "reported that Boxberg had been captured on Thursday night."
         },
         {
@@ -73,6 +77,9 @@
         {
           "type": "generic",
           "person": "Eberhard von Württemberg",
+          "personTitle": [
+            "Graf"
+          ],
           "content": "had become an ally of Count Palatine Friedrich in the conflict against the Rosenbergs."
         }
       ]

@@ -19,7 +19,26 @@
         {
           "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "was named in the letters governing return of the Mainz archbishopric, together with Johan von Randeck and Johan von Bellersheim."
+          "content": "served as a guardian of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Hans von Randeck, and Hans von Bellersheim.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was named in the letters governing return of the Mainz archbishopric, together with Hans von Randeck and Hans von Bellersheim.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "participated in the accounting process for Kuno II von Falkenstein's guardianship period.",
+          "personTitle": [
+            "Ritter"
+          ]
         }
       ]
     }

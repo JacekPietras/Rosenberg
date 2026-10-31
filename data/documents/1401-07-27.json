@@ -30,7 +30,7 @@
         {
           "type": "generic",
           "person": "eberhard_jagstberg",
-          "content": "borrowed money from his brother Arnold von Rosenberg."
+          "content": "borrowed money from his brother [arnold_boxberg]."
         },
         {
           "type": "generic",
@@ -38,12 +38,12 @@
           "personTitle": [
             "der Ältere"
           ],
-          "content": "acted as a surety for Eberhard von Rosenberg."
+          "content": "acted as a surety for [eberhard_jagstberg]."
         },
         {
           "type": "generic",
           "person": "Hans von Rosenberg",
-          "content": "acted as a surety for Eberhard von Rosenberg."
+          "content": "acted as a surety for [eberhard_jagstberg]."
         }
       ],
       "img": [

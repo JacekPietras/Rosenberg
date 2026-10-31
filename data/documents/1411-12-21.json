@@ -8,16 +8,14 @@
         "https://www.deutsche-digitale-bibliothek.de/item/UKWJDTLQIJORWST22WREIISRRYCAMKNE"
       ],
       "german": "Ich Engelhart von Rosenberg und Ich Else von Bebenborg Eberharts von Rosenberg seligen hussfrauwe gesessn zu dohrn bekennen offlichn an diessem brieffe allermenglich fur uns und alle unsre erbn, daz wir dem Erbern geistlichn hern Ulrich Wambolt Comenthur zu Mergentheim dutsches ordens und dem huse daselbes zu kauffe geben han und geben mit crafft disses brieffs unsre eigen lute die uns got lehn gewesen sint mit namen Heintzn Mulner und alle sine kint und sine uffkint und Annen sine eliche hussfrauwen und alle ire kint gesessn etwann zu Uffingen umb achte Rynsche gulden, der wir gancz und gar von im betzalt sin. Wir sagn sie auch alle ir […] und gelobde von der vorgeschryben Eigentschafft quid ledig und los an allis geuerde […] so habn wir fur uns und unsre erbn unser eygn Insigel laszen hencken an diessen briff. Der geben ist noch Crists geburtt viertzehenhundt im eilfften jare an sent Thomas tag des heilign zwelffbotn.",
-      "english": "I, Engelhard von Rosenberg, and I, Else von Bebenborg, the late wife of Eberhard von Rosenberg, resident at Dürn, publicly acknowledge in this letter before everyone, for ourselves and all our heirs, that we have sold, and by the force of this letter do sell, to the honourable spiritual lord Ulrich Wambolt, Komtur at Mergentheim of the Teutonic Order, and to the house there, our Eigenleute who were [?] our fief from God, namely Heintz Mulner and all his children and his later descendants, and Anne his lawful wife and all her children, formerly resident at Uffingen, for eight Rhenish gulden, which we have received in full from him. We also declare them […] and promise […] the aforementioned property free, unencumbered and without fraud […]. For this we have had our own seal hung on this letter for ourselves and our heirs. Given after Christ's birth fourteen hundred in the eleventh year, on St. Thomas's day, the holy apostle.",
+      "english": "I, Engelhard von Rosenberg, and I, Elisabeth von Bebenburg, the late wife of Eberhard von Rosenberg, resident at Dürn, publicly acknowledge in this letter before everyone, for ourselves and all our heirs, that we have sold, and by the force of this letter do sell, to the honourable spiritual lord Ulrich Wambolt, Komtur at Mergentheim of the Teutonic Order, and to the house there, our Eigenleute who were [?] our fief from God, namely Heinrich Mulner and all his children and his later descendants, and Anne his lawful wife and all her children, formerly resident at Uffingen, for eight Rhenish gulden, which we have received in full from him. We also declare them […] and promise […] the aforementioned property free, unencumbered and without fraud […]. For this we have had our own seal hung on this letter for ourselves and our heirs. Given after Christ's birth fourteen hundred in the eleventh year, on St. Thomas's day, the holy apostle.",
       "summary": "Engelhard von Rosenberg und Else (Anne?) von Bebenburg, Ehefrau des verstorbenen Eberhard von Rosenberg, verkaufen an Ulrich Wambolt, Komtur, und das Deutsch-Ordens-Haus zu Mergentheim, ihre Eigenleute zu Uffingen um 8 Gulden.",
       "facts": [
         {
           "type": "spouse",
           "person": "Elisabeth von Bebenburg",
           "of": "Eberhard von Rosenberg",
-          "ofTitle": [
-            "selig"
-          ]
+          "ofDeceased": true
         },
         {
           "type": "death",
@@ -27,12 +25,12 @@
         {
           "type": "generic",
           "person": "Engelhard von Rosenberg",
-          "content": "sold their Eigenleute Heintz Mulner, all his children and descendants, and his lawful wife Anne and all her children, formerly resident at Uffingen, to Ulrich Wambolt and the Teutonic Order house at Mergentheim, jointly with Elisabeth von Bebenburg."
+          "content": "sold their Eigenleute Heinrich Mulner, all his children and descendants, and his lawful wife Anne and all her children, formerly resident at Uffingen, to Ulrich Wambolt and the Teutonic Order house at Mergentheim, jointly with Elisabeth von Bebenburg."
         },
         {
           "type": "generic",
           "person": "Elisabeth von Bebenburg",
-          "content": "sold their Eigenleute Heintz Mulner, all his children and descendants, and his lawful wife Anne and all her children, formerly resident at Uffingen, to Ulrich Wambolt and the Teutonic Order house at Mergentheim, jointly with Engelhard von Rosenberg."
+          "content": "sold their Eigenleute Heinrich Mulner, all his children and descendants, and his lawful wife Anne and all her children, formerly resident at Uffingen, to Ulrich Wambolt and the Teutonic Order house at Mergentheim, jointly with Engelhard von Rosenberg."
         },
         {
           "type": "generic",

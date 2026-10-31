@@ -31,5 +31,5 @@ Wenceslaus, Wenzel
 Kraft, Krafto
 Götz, Goetz
 Kunigunde, Kunnegunt, Kunnigund, Kunegunde, Kunegunt, Kunegunth, Konigunt, Kunigunda, Kunigundis, Cunegunda, Cunigunda, Conegundis
-Margaretha, Margretha
+Margaretha, Margretha, Margarete
 Jutta, Juta, Guta, Gutta, Gute

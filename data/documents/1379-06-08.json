@@ -21,6 +21,25 @@
             "Vitzthum in Amberg"
           ],
           "content": "sealed the cancelled debt letter issued by Hans von Seckendorff to Elisabeth, widow of Herman Vorhtel."
+        },
+        {
+          "type": "generic",
+          "person": "Heinrich Auerochs",
+          "content": "sealed the cancelled debt letter issued by Hans von Seckendorff to Elisabeth, widow of Herman Vorhtel."
+        },
+        {
+          "type": "generic",
+          "person": "Hans Muffel",
+          "content": "sealed the cancelled debt letter issued by Hans von Seckendorff to Elisabeth, widow of Herman Vorhtel.",
+          "personTitle": [
+            "Bürger in Nürnberg"
+          ]
+        },
+        {
+          "type": "spouse",
+          "person": "Elisabeth",
+          "of": "Herman Vorhtel",
+          "ofDeceased": true
         }
       ]
     }

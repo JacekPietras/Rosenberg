@@ -36,6 +36,9 @@
         {
           "type": "kin",
           "person": "Hans Hofwart",
+          "personTitle": [
+            "Domherr zu Würzburg"
+          ],
           "of": "eberhard_jagstberg",
           "ofTitle": [
             "der Jüngere"
@@ -76,7 +79,7 @@
           "personTitle": [
             "der Jüngere"
           ],
-          "content": "had received Jagstberg Castle from the Würzburg canon Johann Hofwart for Margaretha, the canon’s niece and his wife."
+          "content": "had received Jagstberg Castle from Hans Hofwart for Margaretha, his niece and his wife."
         },
         {
           "type": "generic",

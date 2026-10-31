@@ -5,22 +5,28 @@
       "source": "Staatsarchiv Wertheim G-Rep. 10a Lade III-IV A Nr. 6",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-165757",
       "german": "Eberhart, Graf zu Wertheim, verschreibt seiner Hausfrau Katherin für das Dorf Uffingen, das er ihr zur Morgengabe gegeben hat, später den erbarn Leuten Eberhart von Rosenberg und Margareten von Thüngen, weiland Eberharts von Rosenberg Hausfrauen, versetzte, die Dörfer Dertingen und Waldbüttelbrunn (Bütelbrunne), so daß sie von Dertingen jährlich 50 pf. h. Würzburger Währung und 50 Malter Korn Wertheimer Maß erhalten und Waldbüttelbrunn (Butelbrunne) mit allen Rechten besitzen soll bis auf Wiederlösung.\n\nSiegler: der Graf; Eberhart Rüde; Ulrich Pavey; beide Ritter; Arnold von Talheim; Herman Seman; Walther Kotbuss; edle Knechte",
-      "english": "Eberhard, Count of Wertheim, grants his wife Katherin the village of Uffingen, which he gave her as a dowry, and later transferred to the honorable people Eberhard von Rosenberg and Margarete von Thüngen, the former housewives of Eberhard von Rosenberg, the villages of Dertingen and Waldbüttelbrunn, so that she will receive 50 Pfennig (Würzburg currency) and 50 Malters of Wertheim grain annually from Dertingen and will own Waldbüttelbrunn with all rights until redemption.\n\nSealers: the Count; Eberhard Rüde; Ulrich Pavey; both knights; Arnold von Talheim; Herman Seman; Walther Kotbuss; noble servants",
+      "english": "Eberhard, Count of Wertheim, grants his wife Katherin the village of Uffingen, which he gave her as a dowry, and later transferred to the honorable people Eberhard von Rosenberg der Jüngere and Margarete von Thüngen, the former housewives of Eberhard von Rosenberg der Ältere, the villages of Dertingen and Waldbüttelbrunn, so that she will receive 50 Pfennig (Würzburg currency) and 50 Malters of Wertheim grain annually from Dertingen and will own Waldbüttelbrunn with all rights until redemption.\n\nSealers: the Count; Eberhard Rüde; Ulrich Pavey; both knights; Arnold von Talheim; Herman Seman; Walther Kotbuss; noble servants",
       "facts": [
         {
           "type": "spouse",
           "person": "Margaretha von Thüngen",
           "of": "Eberhard von Rosenberg",
+          "ofTitle": [
+            "der Ältere"
+          ],
           "ofDeceased": true
         },
         {
           "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "had received the village of Uffingen as a pledge from Eberhard, Count of Wertheim."
+          "content": "had received the village of Uffingen as a pledge from Eberhard, Count of Wertheim.",
+          "personTitle": [
+            "der Jüngere"
+          ]
         },
         {
           "type": "generic",
-          "person": "Margarete von Thüngen",
+          "person": "Margaretha von Thüngen",
           "content": "had received the village of Uffingen as a pledge from Eberhard, Count of Wertheim."
         },
         {
@@ -34,6 +40,9 @@
         {
           "type": "death",
           "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ],
           "diedBefore": "1357-02-04"
         }
       ],

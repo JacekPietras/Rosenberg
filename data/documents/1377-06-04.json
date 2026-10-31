@@ -13,6 +13,24 @@
           "content": "witnessed Margarethe von Erbach’s transfer of debt letters concerning Neckarau, Reinhausen, Videnheim, the mill, and the toll to the Count Palatine."
         },
         {
+          "type": "generic",
+          "person": "Konrad von Erbach",
+          "content": "witnessed Margarethe von Erbach’s transfer of debt letters to the Count Palatine.",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Hirschhorn",
+          "content": "witnessed Margarethe von Erbach’s transfer of debt letters to the Count Palatine."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Neipperg",
+          "content": "witnessed Margarethe von Erbach’s transfer of debt letters to the Count Palatine."
+        },
+        {
           "type": "spouse",
           "person": "Margarethe von Erbach",
           "of": "Engelhard von Hirschhorn",

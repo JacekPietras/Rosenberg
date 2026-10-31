@@ -18,12 +18,18 @@
         {
           "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "served as one of the guardians of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Nicolaus vom Steine, Hans von Randeck, and Hans von Beldersheim."
+          "content": "served as one of the guardians of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Nicolaus vom Steine, Hans von Randeck, and Hans von Beldersheim.",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
           "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "with the other guardians, sold Viernheim to Hans, reeve of Weinheim."
+          "content": "with the other guardians, sold Viernheim to Hans, reeve of Weinheim.",
+          "personTitle": [
+            "Ritter"
+          ]
         }
       ]
     }

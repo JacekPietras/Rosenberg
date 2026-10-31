@@ -27,6 +27,14 @@
         },
         {
           "type": "generic",
+          "person": "arnold_brother_of_vogt_zu_Lauda",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "content": "purchased Boxberg Castle and town with Konrad and Eberhard von Rosenberg, Ritter, and Konrad von Rosenberg, Edelknecht, from the Order of St. John."
+        },
+        {
+          "type": "generic",
           "person": "vogt_zu_Lauda",
           "personTitle": [
             "Ritter"

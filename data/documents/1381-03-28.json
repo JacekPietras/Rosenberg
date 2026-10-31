@@ -13,14 +13,6 @@
           "personTitle": [
             "Herzog von Österreich"
           ],
-          "content": "described the von Rosenberg family as noble."
-        },
-        {
-          "type": "generic",
-          "person": "Albrecht von Österreich",
-          "personTitle": [
-            "Herzog von Österreich"
-          ],
           "content": "was in dispute with the noble von Rosenberg family over Eferdingen, prisoners, and other matters."
         },
         {
@@ -30,6 +22,22 @@
             "Herzog von Österreich"
           ],
           "content": "sought to settle his disputes with the von Rosenberg family through Burggraf Friedrich von Nürnberg and Landgraf Hans vom Leuchtenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Friedrich von Nürnberg",
+          "personTitle": [
+            "Burggraf"
+          ],
+          "content": "was chosen as mediator in the disputes between Duke Albrecht of Austria and the von Rosenberg family."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Leuchtenberg",
+          "personTitle": [
+            "Landgraf"
+          ],
+          "content": "was chosen as mediator in the disputes between Duke Albrecht of Austria and the von Rosenberg family."
         }
       ]
     }

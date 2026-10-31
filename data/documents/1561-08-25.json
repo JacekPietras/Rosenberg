@@ -78,11 +78,13 @@
         {
           "type": "parent",
           "person": "Balthasar von Rosenberg",
+          "personDeceased": true,
           "of": "Friedrich von Rosenberg"
         },
         {
           "type": "parent",
           "person": "Balthasar von Rosenberg",
+          "personDeceased": true,
           "of": "Hans Christoph von Rosenberg"
         },
         {

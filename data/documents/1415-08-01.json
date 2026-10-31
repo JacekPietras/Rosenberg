@@ -36,6 +36,10 @@
         {
           "type": "generic",
           "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "der Ältere",
+            "zu Minnenberg"
+          ],
           "content": "resided at Minnenberg."
         },
         {
@@ -45,23 +49,24 @@
             "der Ältere",
             "zu Minnenberg"
           ],
-          "content": "sold their quarter of Boxberg to Arnold von Rosenberg and Christine von Handschuhsheim together with his wife Anna von Sickingen."
+          "content": "sold their quarter of Boxberg to arnold_boxberg and Christine von Handschuhsheim together with his wife Anna von Sickingen."
         },
         {
           "type": "generic",
           "person": "Anna von Sickingen",
-          "content": "sold their quarter of Boxberg to Arnold von Rosenberg and Christine von Handschuhsheim together with her husband Kunz von Rosenberg der Ältere."
+          "content": "sold their quarter of Boxberg to arnold_boxberg and Christine von Handschuhsheim together with her husband Kunz von Rosenberg der Ältere."
         },
         {
           "type": "generic",
           "person": "Anna Marschall",
-          "content": "sold their quarter of Boxberg to Arnold von Rosenberg and Christine von Handschuhsheim together with her son Kunz von Rosenberg der Ältere and his wife Anna von Sickingen."
+          "content": "sold their quarter of Boxberg to arnold_boxberg and Christine von Handschuhsheim together with her son Kunz von Rosenberg der Ältere and his wife Anna von Sickingen."
         },
         {
           "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
-            "der Ältere"
+            "der Ältere",
+            "zu Minnenberg"
           ],
           "content": "had previously bought the quarter of Boxberg from the Hospitallers."
         }

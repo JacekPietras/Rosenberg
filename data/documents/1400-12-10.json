@@ -16,7 +16,12 @@
         {
           "type": "generic",
           "person": "arnold_boxberg",
-          "content": "received King Ruprecht’s permission jointly with his brother Eberhard von Rosenberg to have a high court, stocks, and gallows in Schweigern."
+          "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to have a high court, stocks, and gallows in Schweigern."
+        },
+        {
+          "type": "generic",
+          "person": "eberhard_jagstberg",
+          "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to have a high court, stocks, and gallows in Schweigern."
         }
       ]
     },
@@ -33,7 +38,12 @@
         {
           "type": "generic",
           "person": "arnold_boxberg",
-          "content": "received King Ruprecht’s permission jointly with his brother Eberhard von Rosenberg to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction."
+          "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction."
+        },
+        {
+          "type": "generic",
+          "person": "eberhard_jagstberg",
+          "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction."
         }
       ]
     }

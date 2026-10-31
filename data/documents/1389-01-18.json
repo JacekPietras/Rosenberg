@@ -23,7 +23,8 @@
           "person": "Heinrich von Erligheim",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "personDeceased": true
         },
         {
           "type": "kin",
@@ -31,6 +32,7 @@
           "personTitle": [
             "Ritter"
           ],
+          "personDeceased": true,
           "of": "Elisabeth von Erligheim",
           "term": "Vetter"
         },
@@ -42,7 +44,7 @@
         {
           "type": "generic",
           "person": "Heinrich von Erligheim",
-          "content": "had taken Bensheim Castle as a pledge from Archbishop Adolf von Mainz for 4,000 guilders.",
+          "content": "had taken Bensheim Castle as a pledge from Archbishop Adolf von Mainz.",
           "personTitle": [
             "Ritter"
           ],

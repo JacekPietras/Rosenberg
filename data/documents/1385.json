@@ -5,12 +5,15 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bd 1",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-962173",
       "german": "Eberhard von Rosenberg schlichtet Streitigkeiten zwischen Eberhard d.Ä. von Rosenberg und Hans Pfahl wegen der Gülten von einem Hof zu Rosenberg",
-      "english": "Eberhard von Rosenberg settles disputes between Eberhard von Rosenberg der Ältere and Hans Pfahl over the rents of a farm in Rosenberg",
+      "english": "Eberhard von Rosenberg der Jüngere settles disputes between Eberhard von Rosenberg der Ältere and Hans Pfahl over the rents of a farm in Rosenberg",
       "facts": [
         {
           "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "settled a dispute involving his namesake, identified as der Ältere, and Hans Pfahl over rents from a farm at Rosenberg."
+          "content": "settled a dispute between Eberhard von Rosenberg der Ältere and Hans Pfahl over rents from a farm at Rosenberg.",
+          "personTitle": [
+            "der Jüngere"
+          ]
         },
         {
           "type": "generic",

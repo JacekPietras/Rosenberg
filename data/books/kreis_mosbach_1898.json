@@ -30,7 +30,14 @@
           "content": "issued a village ordinance for Angelthürn."
         }
       ],
-      "guesses": []
+      "guesses": [
+        {
+          "type": "generic",
+          "person": "Kraft von Boxberg",
+          "date": "1191",
+          "content": "may have held Angelthürn as one of the Lords of Boxberg before making the first donation there to the Johanniter in 1191."
+        }
+      ]
     },
     {
       "title": "BOBSTADT",
@@ -149,7 +156,7 @@
           "type": "generic",
           "person": "Jörg von Rosenberg",
           "date": "1470",
-          "content": "was driven from Boxberg when the Palatinate, Mainz, and Würzburg besieged the town and castle."
+          "content": "held Boxberg when the Palatinate, Mainz, and Würzburg besieged the town and castle."
         },
         {
           "type": "generic",
@@ -203,7 +210,91 @@
           "type": "generic",
           "person": "Guota von Boxberg",
           "date": "1100",
-          "content": "may have been the wife of the later Konrad von Boxberg; the Comburg donation book records her as the wife of a Conrad around 1100 (Württembergisches Urkundenbuch, I, no. A21)."
+          "content": "may have been the wife of the later Konrad von Boxberg; the Comburg donation book records her as the wife of a Konrad around 1100 (Württembergisches Urkundenbuch, I, no. A21)."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "date": "1381-05-25",
+          "content": "may have been a brother of the other three purchasers of Boxberg in 1381; the book gives no documentary basis for this relationship."
+        },
+        {
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Eberhard von Rosenberg",
+          "ofTitle": [
+            "Ritter"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Konrad von Rosenberg",
+          "ofTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Arnold von Rosenberg",
+          "ofTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "sibling",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Konrad von Rosenberg",
+          "ofTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "sibling",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Arnold von Rosenberg",
+          "ofTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "sibling",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "of": "Arnold von Rosenberg",
+          "ofTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "generic",
+          "person": "Rosenberg Castle",
+          "date": "1276",
+          "content": "may have been the ancestral castle of the von Rosenberg family, which was first attested in 1276."
         }
       ]
     },
@@ -320,10 +411,19 @@
       "english": "\"In the year of our Lord 1480, on Wednesday before Mid-Lent, I, Georg von Rosenberg, Ritter, laid the first stone at Boxberg on Monday after St. Michael's Day in the 14th year. Pray to God for us. This stone was laid here by Hans [von Rosenberg] of Encholtze, born my lawful wife, and she has faithfully commanded me to complete such construction as it stands here, and it was made as a watchtower into the land.\"",
       "guesses": [
         {
+          "type": "spouse",
+          "person": "Jörg von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Hans von Encholtze",
+          "date": "1480"
+        },
+        {
           "type": "generic",
           "person": "Jörg von Rosenberg",
           "date": "1480",
-          "content": "may have been married to Hans von Encholtze, born von Rosenberg; the damaged inscription leaves her given name and role in the construction uncertain."
+          "content": "is identified by the damaged building inscription as the husband of a woman born von Encholtze, but parts of her name and the description of her role in the construction are reconstructed."
         }
       ]
     },
@@ -431,13 +531,13 @@
             "der Ältere"
           ],
           "date": "1397",
-          "content": "may have donated the Eulschirben mill to Bronnbach in 1397."
+          "content": "may have donated the Eulschirben mill to Bronnbach in 1397, according to the Series Abbatum; the book presents this account as conflicting with Kraemer’s account of 1320."
         },
         {
           "type": "generic",
           "person": "Eberhard von Rosenberg",
           "date": "1320",
-          "content": "may have acquired the Eulschirben mill for Bronnbach by exchange."
+          "content": "may have acquired the Eulschirben mill for Bronnbach by exchange, according to Kraemer; the book presents this account as conflicting with the Series Abbatum’s account of 1397."
         }
       ]
     },
@@ -510,7 +610,7 @@
           "type": "generic",
           "person": "Veit von Riedern",
           "date": "1480",
-          "content": "held tithes at Uissigheim as a fief of Rieneck."
+          "content": "held tithes at Uissigheim as a fief of Rineck."
         },
         {
           "type": "title",
@@ -632,7 +732,10 @@
         },
         {
           "type": "death",
-          "person": "Eberhard von Uissigheim, genannt von Ranneberg",
+          "person": "Eberhard von Uissigheim",
+          "personTitle": [
+            "genannt von Ranneberg"
+          ],
           "diedOn": "1332",
           "date": "1332"
         }
@@ -642,19 +745,40 @@
           "type": "generic",
           "person": "Arnold von Uissigheim",
           "date": "1336",
-          "content": "may be the knight on the damaged Uissigheim gravestone."
+          "content": "may be the knight on the damaged Uissigheim gravestone, as Gamans transcribed the name, though the identity of the knight is uncertain."
         },
         {
           "type": "generic",
-          "person": "Eberhard von Uissigheim, genannt von Ranneberg",
+          "person": "Eberhard von Uissigheim",
+          "personTitle": [
+            "genannt von Ranneberg"
+          ],
           "date": "1332",
-          "content": "may be the Eberhard on the Uissigheim gravestone."
+          "content": "may be the Eberhard on the Uissigheim gravestone, as Gamans’s transcription names him, though the identity of Eberhard is uncertain."
         },
         {
           "type": "generic",
           "person": "Ritter von Uissigheim",
           "date": "1343",
-          "content": "may have been responsible for anti-Jewish killings and later captured and executed; his identity with the knight on the damaged Uissigheim gravestone is uncertain."
+          "content": "is said by the Erfurt chronicle to have committed anti-Jewish killings in 1343 and to have been captured, executed, and buried at Uissigheim; his identity with the knight on the damaged gravestone is uncertain."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "date": "1314",
+          "content": "may have obtained Uissigheim property through an heiress by 1314."
+        },
+        {
+          "type": "generic",
+          "person": "Uissigheim Castle",
+          "date": "1300",
+          "content": "is recorded by LEO-BW as a residential tower around 1300; the so-called Tempelhaus may be a remnant of that castle."
+        },
+        {
+          "type": "death",
+          "person": "Arnold von Uissigheim",
+          "diedOn": "1336",
+          "date": "1336"
         }
       ]
     },

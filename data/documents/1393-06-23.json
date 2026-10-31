@@ -17,7 +17,8 @@
         {
           "type": "generic",
           "person": "vogt_zu_Lauda",
-          "content": "had granted a Wittum to his wife Elisabeth von Erligheim."
+          "content": "had granted a Wittum to his wife Elisabeth von Erligheim.",
+          "personDeceased": true
         },
         {
           "type": "spouse",
@@ -28,12 +29,13 @@
         {
           "type": "generic",
           "person": "vogt_zu_Lauda",
-          "content": "had endowed the Wittum with properties belonging to Boxberg."
+          "content": "had endowed the Wittum with properties belonging to Boxberg.",
+          "personDeceased": true
         },
         {
           "type": "generic",
           "person": "Ruprecht",
-          "content": "confirmed the Wittum granted by Eberhard von Rosenberg to Elisabeth von Erligheim."
+          "content": "confirmed the Wittum granted by [vogt_zu_Lauda] to Elisabeth von Erligheim."
         }
       ]
     }

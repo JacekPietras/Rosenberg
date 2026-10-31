@@ -19,6 +19,11 @@
           "content": "was enfeoffed with half of Boxberg and other fiefs in place of her underage sons."
         },
         {
+          "type": "generic",
+          "person": "Ruprecht",
+          "content": "enfeoffed Elisabeth von Erligheim with half of Boxberg and other fiefs in place of her underage sons."
+        },
+        {
           "type": "death",
           "person": "vogt_zu_Lauda",
           "diedBefore": "1387-12-29"

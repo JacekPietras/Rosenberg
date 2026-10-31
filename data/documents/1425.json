@@ -13,6 +13,20 @@
           "content": "allowed Hans Gauß and his wife Agnes, citizens of Öhringen, to serve Eberhard von Rosenberg."
         },
         {
+          "type": "title",
+          "person": "Hans Gauß",
+          "personTitle": [
+            "Bürger zu Öhringen"
+          ]
+        },
+        {
+          "type": "title",
+          "person": "Agnes",
+          "personTitle": [
+            "Bürger zu Öhringen"
+          ]
+        },
+        {
           "type": "generic",
           "person": "Leonhart Lesch",
           "content": "sealed the charter."

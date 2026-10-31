@@ -10,7 +10,7 @@
           "type": "title",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "Kanonikus der Kirche S. Juliana zu Mosbach (Würzburger Diöcese)"
+            "Kanonikus zu Mosbach"
           ]
         },
         {
@@ -23,9 +23,17 @@
         },
         {
           "type": "generic",
+          "person": "Urban V",
+          "personTitle": [
+            "Papst"
+          ],
+          "content": "commissioned the deans of St. Peter in Wimpfen and Öhringen and Guilelmus Baro, canon at Konstanz, to install Eberhard von Rosenberg as provost of the church of St. Juliana at Mosbach."
+        },
+        {
+          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "Kleriker der Würzburger Diözese"
+            "Kanonikus zu Mosbach"
           ],
           "content": "held the parish church of Kocherthürn."
         }

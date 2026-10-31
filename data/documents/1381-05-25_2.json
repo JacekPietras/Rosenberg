@@ -35,6 +35,11 @@
         },
         {
           "type": "generic",
+          "person": "arnold_brother_of_vogt_zu_Lauda",
+          "content": "surrendered the half of Boxberg Castle and town that he held jointly with his brother to Ruprecht der Ältere and Ruprecht der Jüngere and immediately received it back as a Mannlehen."
+        },
+        {
+          "type": "generic",
           "person": "vogt_zu_Lauda",
           "personTitle": [
             "Ritter"

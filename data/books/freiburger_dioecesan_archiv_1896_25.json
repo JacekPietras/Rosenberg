@@ -168,8 +168,7 @@
     },
     {
       "german": "„Der Roſenbergiſche Namen iſt an verſchiedenen Orten und Ländern bekannt, und es hat verſchiedene Familien dieſes Namens gegeben, ſo in Schleſien, Böhmen, Kärnten, im Baireuthiſchen, welche ihr Geſchlecht von den römiſchen Urſinern herleiten; die ſich ohne Zweifel gratulirt haben würden, wenn ſie ſich mit unſeren fränkiſchen Roſenbergern von einem Stamm hätten deriviren und ein Recht auf die Succeſſion formiren können. Das Stammhaus unſerer Roſenberger iſt das alte Schloß Roſen⸗berg am Eingang des Odenwaldes.“ (Leutwein.)",
-      "english": "“The name of Rosenberg is known in various places and lands, and there have been several families of that name, in Silesia, Bohemia, Carinthia, and the Bayreuth region, who traced their lineage to the Roman Ursini. They would doubtless have congratulated themselves had they been able to derive their descent from the same stock as our Franconian Rosenbergs and establish a right of succession. The ancestral seat of our Rosenbergs is the old castle of Rosenberg at the entrance to the Odenwald.” (Leutwein.)",
-      "guesses": []
+      "english": "“The name of Rosenberg is known in various places and lands, and there have been several families of that name, in Silesia, Bohemia, Carinthia, and the Bayreuth region, who traced their lineage to the Roman Ursini. They would doubtless have congratulated themselves had they been able to derive their descent from the same stock as our Franconian Rosenbergs and establish a right of succession. The ancestral seat of our Rosenbergs is the old castle of Rosenberg at the entrance to the Odenwald.” (Leutwein.)"
     },
     {
       "german": "Von dieſem Geſchlecht finden ſich folgende Glieder, bei deren Auf—zählung wir die übliche Geringſchätzung der Turnierbücher nicht theilten, wenn wir ſie auch den Urkunden nicht gleichachteten.",
@@ -312,6 +311,24 @@
           "person": "Georg von Rosenberg",
           "date": "1235",
           "content": "is said by a tournament book to have attended the tournament at Würzburg."
+        },
+        {
+          "type": "parent",
+          "person": "Hans von Rosenberg",
+          "of": "Eckhard von Rosenberg",
+          "date": "1290"
+        },
+        {
+          "type": "parent",
+          "person": "Hans von Rosenberg",
+          "of": "Eberhard von Rosenberg",
+          "date": "1290"
+        },
+        {
+          "type": "parent",
+          "person": "Hans von Rosenberg",
+          "of": "Konrad von Rosenberg",
+          "date": "1290"
         }
       ]
     },
@@ -386,7 +403,7 @@
             "miles"
           ],
           "date": "1321",
-          "content": "exchanged wine tithes at Ruchsen with Eberhard von Rosenberg and Wiprecht von Rosenberg."
+          "content": "exchanged wine tithes at Ruchsen with Eberhard von Rosenberg and [wiprecht_von_rosenberg]."
         },
         {
           "type": "kin",
@@ -685,7 +702,7 @@
     },
     {
       "german": "1353 geſtattet der Biſchof von Würzburg, daß Guta, Ehefrau des Ritters Engelhard v. R., auf den halben Zehnten von Bofsheim für ihre 200 Gulden Zugelt gewieſen werde; ihr Bruder iſt C. von Bickenbach. Ferner wird Eliſabetha, Ehefrau des Ritters Konrad v. R. auf den⸗ſelben Zehnten für ihre 200 Gulden Zugelt verwieſen; ihr Bruder iſt Johannes von Seckendorf.",
-      "english": "In 1353, the Bishop of Würzburg permitted Guta, wife of Engelhard von Rosenberg, Ritter, to be assigned half of the tithe at Bofsheim for her 200 florins of marriage portion; her brother was Konrad von Bickenbach. Elisabeth, wife of Konrad von Rosenberg, Ritter, was likewise assigned a share of the same tithe for her 200 florins of marriage portion; her brother was Hans von Seckendorf.",
+      "english": "In 1353, the Bishop of Würzburg permitted Jutta, wife of Engelhard von Rosenberg, Ritter, to be assigned half of the tithe at Bofsheim for her 200 florins of marriage portion; her brother was Konrad von Bickenbach. Elisabeth, wife of Konrad von Rosenberg, Ritter, was likewise assigned a share of the same tithe for her 200 florins of marriage portion; her brother was Hans von Seckendorf.",
       "facts": [
         {
           "type": "spouse",
@@ -1379,7 +1396,6 @@
     {
       "german": "1401 verſchreibt ſich Eberhard v. R., der junge, unter Bürgſchaft einer Wittwe Arnolds v. R., des ältern, und Hanſens v. R., des ältern, über 415 fl. gegen ſeinen Bruder Arnold v. R. (Nach Wirtt. Franken IN, 191 iſt dieſe Zahl falſch; vielleicht 1410 richtig.)",
       "english": "In 1401, Eberhard von Rosenberg der Jüngere, backed by the surety of a widow of Arnold von Rosenberg der Ältere and Hans von Rosenberg der Ältere, issued a bond to his brother Arnold for more than 415 florins. (According to Wirtemberg Franken IX, p. 191, this figure is wrong; perhaps 1410 is correct.)",
-      "facts": [],
       "guesses": [
         {
           "type": "generic",
@@ -1421,7 +1437,7 @@
     },
     {
       "german": "1401, Dominica ante Simonis et Judae. Konrad v. R., Vitzdum in Heidelberg, Arnold v. R., auch Katharina von Erlick, Herrn Eber—hards ſel. Hausfrau v. R., und Anna Marſchelkin, Konrads v. R. ſel. Hausfrau, beide Wittiben, haben zu dem Altar zu St. Jerg im Schloß Boxberg verſchiedene Zinſe und Gülten geſtiftet. Dieſe Stifter geben auch dem Kaplan zu Boxberg den kleinen Zehnten zu Angerthal und Ramsthal (Pfarrregiſtratur Boxberg).",
-      "english": "On the Sunday before the Feast of Saints Simon and Jude in 1401, Konrad von Rosenberg, vicedom at Heidelberg; Arnold von Rosenberg; Katharina von Erlick, the widow of the late Lord Eberhard von Rosenberg; and Anna Marschalk, widow of the late Konrad von Rosenberg, endowed the altar of St. George in Boxberg Castle with various rents and revenues. These donors also gave the chaplain at Boxberg the small tithe at Angerthal and Ramsthal (parish register of Boxberg).",
+      "english": "On the Sunday before the Feast of Saints Simon and Jude in 1401, Konrad von Rosenberg, vicedom at Heidelberg; Arnold von Rosenberg; Katharina von Erlick, the widow of the late Lord Eberhard von Rosenberg; and Anna Marschalk, widow of the late Konrad von Rosenberg, endowed the altar of St. George in Boxberg Castle with various rents and revenues. These donors also gave the chaplain at Boxberg the small tithe at Angeltürn and Ramsthal (parish register of Boxberg).",
       "facts": [
         {
           "type": "spouse",
@@ -1453,7 +1469,7 @@
             "Vizedom zu Heidelberg"
           ],
           "date": "1401",
-          "content": "gave the small tithes at Angerthal and Ramsthal to the chaplain at Boxberg together with Arnold von Rosenberg, Katharina von Erligheim, and Anna Marschalk."
+          "content": "gave the small tithes at Angeltürn and Ramsthal to the chaplain at Boxberg together with Arnold von Rosenberg, Katharina von Erligheim, and Anna Marschalk."
         },
         {
           "type": "death",
@@ -1627,7 +1643,17 @@
           "content": "held half of Boxberg Castle and its appurtenances as a male-line fief from the Palatinate."
         }
       ],
-      "guesses": []
+      "guesses": [
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "date": "1408",
+          "content": "made the exchange with Christine von Hentschesheim after the 1408 permission; its date is unknown."
+        }
+      ]
     },
     {
       "german": "1409, Dienſtag vor unſers Herrn Leichnams Tag, kauft Eberhard v. R., zu Jagsberg geſeſſen, 2 Gulden Gelds um 30 fl. rhein. Er hatte Jagsberg als würzburgiſche Pfandſchaft inne, welche wahrſcheinlich 1414 abgelöſt wurde, denn ſpäter hatten die von Hornberg Jagſtberg im Beſitz. 1447 vertauſcht er in Boxberg einen Stall an ſeine Vettern Ulrich und Jörg. 1449 heißt er Eberhard ſelig v. R.; ſein Grabmal in Wölchingen hat dieſe Inſchrift: Anno dm. MCCCCXLIX iar an sant Walpurgen- tag starp Eberhart v. Rosenberg dem got gnedig sey. Amen. Seines Bruders Eberhard Grabſtein ſteht in ſeiner Nähe; beider Mutter⸗wappen hat einen Löwen; die Mutter war wohl Elſe von Erligheim.",
@@ -1733,7 +1759,7 @@
             "zu Boxberg"
           ],
           "date": "1415-07-02",
-          "content": "sold Niklashausen to Grünau Abbey with Count Johann von Wertheim’s approval."
+          "content": "sold Niklashausen to Grünau Abbey with Count Hans von Wertheim’s approval."
         },
         {
           "type": "generic",
@@ -1832,7 +1858,7 @@
     },
     {
       "german": "1422, Dienſtag nach unſer Frauen Tag annunciationis, verkaufen „Hans Heß und Hedel, Heinz Belz ſel. Tochter, ſein ehelich Hausfrau, zu der Pfründ und Pfarr zu Boxberg um 67½ fl. 2 Mlt. Korn 10 Sri Weizen, 1 Mlt. Haber, 16 6. an Geld und 1 Faſtnachthuhn zu Oetelfingen“. Geſiegelt von Friedrich Reich von Mergentheim und Hans v. R., zu Schipff geſeſſen (Pfarrregiſtratur Boxberg).",
-      "english": "On the Tuesday after the Feast of the Annunciation in 1422, “Hans Heß and Hedel, the late Heinz Belz’s daughter and his lawful wife,” sold to the benefice and parish of Boxberg, for 67½ florins, two Malter of grain, ten Sester of wheat, one Malter of oats, sixteen [units] in money, and one Fastnacht hen at Oetelfingen. Sealed by Friedrich Reich of Mergentheim and Hans von Rosenberg, resident at Schipf (parish register of Boxberg).",
+      "english": "On the Tuesday after the Feast of the Annunciation in 1422, “Hans Heß and Hedel, the late Heinrich Belz’s daughter and his lawful wife,” sold to the benefice and parish of Boxberg, for 67½ florins, two Malter of grain, ten Sester of wheat, one Malter of oats, sixteen [units] in money, and one Fastnacht hen at Oetelfingen. Sealed by Friedrich Reich of Mergentheim and Hans von Rosenberg, resident at Schipf (parish register of Boxberg).",
       "facts": [
         {
           "type": "generic",
@@ -2246,7 +2272,7 @@
             "Ritter"
           ],
           "date": "1453-07-12",
-          "content": "was sued by Eberhard von Riedern, Ritter, over tithes before the Würzburg archdeaconry court alongside several citizens and the community of Sachsenflur."
+          "content": "was in a dispute over tithes with Eberhard von Riedern, Ritter, and others, including several citizens and the community of Sachsenflur, which was the subject of a judgment of the Würzburg archdeaconry court."
         }
       ]
     },
@@ -2281,7 +2307,7 @@
             "Amtmann zu Möckmühl"
           ],
           "date": "1458-01-02",
-          "content": "had an exchange with Möckmühl Abbey approved by Count Palatine Friedrich II."
+          "content": "had an exchange with the foundation of Möckmühl approved by Count Palatine Friedrich II."
         }
       ]
     },
@@ -2341,7 +2367,7 @@
           "type": "generic",
           "person": "Jörg von Rosenberg",
           "date": "1477",
-          "content": "was to receive the return of Boxberg town and castle and the Rosenberg share in Schüpf Castle under the settlement with Mainz, the Palatinate, and Würzburg."
+          "content": "was to receive, together with Michael and Arnold von Rosenberg, the return of Boxberg town and castle and the Rosenberg share in Schüpf Castle under the settlement with Mainz, the Palatinate, and Würzburg."
         },
         {
           "type": "kin",
@@ -2722,21 +2748,27 @@
       "facts": [
         {
           "type": "generic",
-          "person": "Eberhard von Rosenberg zu Stuttgart",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "zu Stuttgart"
+          ],
           "personDeceased": true,
           "date": "1519-10-16",
           "content": "is commemorated by a tomb inscription recording his death on St. Gall’s Day in 1519."
         },
         {
           "type": "generic",
-          "person": "Anna von Rosenberg, née von Dienheim",
+          "person": "Anna von Dienheim",
           "personDeceased": true,
           "date": "1568-11-26",
           "content": "is commemorated in the inscription as having died on 26 November 1568."
         },
         {
           "type": "death",
-          "person": "Eberhard von Rosenberg zu Stuttgart",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "zu Stuttgart"
+          ],
           "diedOn": "1519-10-16",
           "date": "1519-10-16"
         },
@@ -2987,7 +3019,14 @@
     {
       "german": "1556, 31. Febr., ſtarb die edel und tugendſam Frau Maria Cleophe, geborene v. Roſenberg, Gerhard v. Bödigheim eheliche Hausfrau geweſen (Grabſtein in der Kirche zu Binau a. N.). Ihre Mutter war eine geborene v. Adelsheim.",
       "english": "On February 31, 1556, the noble and virtuous Lady Maria Cleophe, née von Rosenberg and lawful wife of Gerhard von Bödigheim, died (tombstone in the church at Binau on the Neckar). Her mother was née von Adelsheim.",
-      "guesses": []
+      "guesses": [
+        {
+          "type": "generic",
+          "person": "Maria Cleophe von Rosenberg",
+          "date": "1556",
+          "content": "is recorded by Stocker as having died on 31 February 1556; the date is invalid and needs source verification."
+        }
+      ]
     },
     {
       "german": "1560 empfängt Elchine von Eicholzheim Wittwe, geborene v. R., ½ Zehnten zu Seckach und ſo noch 1571.",
@@ -2995,19 +3034,19 @@
       "facts": [
         {
           "type": "generic",
-          "person": "Elchine von Eicholzheim, née von Rosenberg",
+          "person": "Elchine von Rosenberg",
           "date": "1560",
           "content": "received half of the tithe at Seckach."
         },
         {
           "type": "generic",
-          "person": "Elchine von Eicholzheim, née von Rosenberg",
+          "person": "Elchine von Rosenberg",
           "date": "1560",
           "content": "was identified as the widow of an unnamed member of the von Eicholzheim family."
         },
         {
           "type": "generic",
-          "person": "Elchine von Eicholzheim, née von Rosenberg",
+          "person": "Elchine von Rosenberg",
           "date": "1571",
           "content": "still held half of the tithe at Seckach."
         }
@@ -3092,7 +3131,7 @@
           "type": "generic",
           "person": "Albrecht von Rosenberg",
           "date": "1562-11-09",
-          "content": "requested that Emperor Ferdinand grant Unterschüpf weekly and annual markets and a coat of arms."
+          "content": "requested, and Emperor Ferdinand granted, a weekly market, two annual markets and arms for Unterschüpf."
         }
       ]
     },
@@ -3256,15 +3295,51 @@
       "guesses": [
         {
           "type": "death",
-          "person": "Zeisolf von Rosenberg der Jüngere",
+          "person": "Zeisolf von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
           "diedOn": "1578",
           "date": "1578"
         },
         {
           "type": "death",
-          "person": "Zeisolf von Rosenberg der Jüngere",
+          "person": "Zeisolf von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
           "diedOn": "1576-08-13",
           "date": "1576-08-13"
+        },
+        {
+          "type": "spouse",
+          "person": "Zeisolf von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "of": "Anna von der Keer",
+          "date": "1576"
+        },
+        {
+          "type": "parent",
+          "person": "Zeisolf von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "of": "Zeisolf von Rosenberg",
+          "ofTitle": [
+            "der Jüngere"
+          ],
+          "date": "1576"
+        },
+        {
+          "type": "parent",
+          "person": "Zeisolf von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "of": "Georg Sigmund von Rosenberg",
+          "date": "1576"
         }
       ],
       "facts": [
@@ -3282,7 +3357,10 @@
         },
         {
           "type": "death",
-          "person": "Zeisolf von Rosenberg der Ältere",
+          "person": "Zeisolf von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ],
           "diedOn": "1543",
           "date": "1543",
           "circumstances": "While serving as Amtmann zu Crailsheim"
@@ -3295,7 +3373,10 @@
         },
         {
           "type": "death",
-          "person": "Hans Christoph von Rosenberg zu Haltenbergstetten",
+          "person": "Hans Christoph von Rosenberg",
+          "personTitle": [
+            "zu Haltenbergstetten"
+          ],
           "diedOn": "1587",
           "date": "1587"
         }
@@ -3314,15 +3395,22 @@
         {
           "type": "spouse",
           "person": "Albrecht Christoph von Rosenberg",
-          "of": "Margaretha Schenk von Siman",
+          "of": "Margaretha von Siman",
+          "ofTitle": [
+            "Schenk"
+          ],
           "date": "1582-09-17"
         },
         {
           "type": "parent",
-          "person": "Adam Ulrich Schenk von Siman",
-          "of": "Margaretha Schenk von Siman",
+          "person": "Adam Ulrich von Siman",
+          "of": "Margaretha von Siman",
           "personTitle": [
+            "Schenk",
             "Amtmann zu Hochstetten"
+          ],
+          "ofTitle": [
+            "Schenk"
           ],
           "date": "1582-09-17"
         },
@@ -3381,7 +3469,7 @@
     },
     {
       "german": "1589, 20. Nov., bekennen Melchior Jäger von Gertringen zu En—ningen und Höpfingen, württembergiſcher Geh. Rath, Hans Reinhard von Berlichingen zu Roßach, württembergiſcher Oberamtmann in Möck⸗mühl, Chriſtoph Truchſeß, Vormund zu Pommersfelden, und Conrad Voit von Rieneck zu Laudenbach, als Curatores der Töchter des ver—ſtorbenen Hans Gottfried von Berlichingen zu Neunſtetten, Margaretha Amalia und Dorothea, daß Hans Gottfried von Berlichingen 1582 an Konrad zu Gnetzheim, Albrecht Chriſtoph und Georg Sigmund, allen dreien Gebrüder v. R., ſeine Gülten und Gefälle zu Angerthal und If—fingen um 350 fl. verkauft habe. Freib. Diöc.⸗Archiv. XXV. 12",
-      "english": "On November 20, 1589, Melchior Jäger von Gertringen of Enningen and Höpfingen, privy councillor of Württemberg; Hans Reinhard von Berlichingen of Roßach, senior Württemberg official at Möckmühl; Christoph Truchsess, guardian at Pommersfelden; and Konrad Voit von Rieneck of Laudenbach, as guardians of the daughters Margaretha Amalia and Dorothea of the late Hans Gotfried von Berlichingen of Neunstetten, declared that in 1582 Hans Gotfried von Berlichingen had sold to Konrad of Gnötzheim, Albrecht Christoph, and Georg Sigmund, all three brothers von Rosenberg, his rents and revenues at Angerthal and Uiffingen for 350 florins.",
+      "english": "On November 20, 1589, Melchior Jäger von Gertringen of Enningen and Höpfingen, privy councillor of Württemberg; Hans Reinhard von Berlichingen of Roßach, senior Württemberg official at Möckmühl; Christoph Truchsess, guardian at Pommersfelden; and Konrad Voit von Rieneck of Laudenbach, as guardians of the daughters Margaretha Amalia and Dorothea of the late Hans Gotfried von Berlichingen of Neunstetten, declared that in 1582 Hans Gotfried von Berlichingen had sold to Konrad of Gnötzheim, Albrecht Christoph, and Georg Sigmund, all three brothers von Rosenberg, his rents and revenues at Angeltürn and Uiffingen for 350 florins.",
       "facts": [
         {
           "type": "generic",
@@ -3389,19 +3477,19 @@
           "personTitle": [
             "zu Gnötzheim"
           ],
-          "content": "jointly acquired Hans Gottfried von Berlichingen’s rents and revenues at Angerthal and Iffingen with Albrecht Christoph von Rosenberg and Georg Sigmund von Rosenberg.",
+          "content": "jointly acquired Hans Gotfried von Berlichingen’s rents and revenues at Angeltürn and Iffingen with Albrecht Christoph von Rosenberg and Georg Sigmund von Rosenberg.",
           "date": "1582"
         },
         {
           "type": "generic",
           "person": "Albrecht Christoph von Rosenberg",
-          "content": "jointly acquired Hans Gottfried von Berlichingen’s rents and revenues at Angerthal and Iffingen with Konrad von Rosenberg and Georg Sigmund von Rosenberg.",
+          "content": "jointly acquired Hans Gotfried von Berlichingen’s rents and revenues at Angeltürn and Iffingen with Konrad von Rosenberg and Georg Sigmund von Rosenberg.",
           "date": "1582"
         },
         {
           "type": "generic",
           "person": "Georg Sigmund von Rosenberg",
-          "content": "jointly acquired Hans Gottfried von Berlichingen’s rents and revenues at Angerthal and Iffingen with Konrad von Rosenberg and Albrecht Christoph von Rosenberg.",
+          "content": "jointly acquired Hans Gotfried von Berlichingen’s rents and revenues at Angeltürn and Iffingen with Konrad von Rosenberg and Albrecht Christoph von Rosenberg.",
           "date": "1582"
         },
         {
@@ -3474,7 +3562,7 @@
     },
     {
       "german": "1626, 22. Febr., bekennen Margaretha von Dienheim, geborene Eblin, Wittwe, Johann Philipp, Georg Friedrich Eberhart von Dien—heim zu Angerthal, Gebrüder, für ſich und ihren Bruder Albrecht von Dienheim, Karthäuſerordens in Würzburg, dann Kunigunde Eliſabetha von Dienheim, Mutter, Söhne und Tochter, daß ihr Vater ſel., Albrecht von Dienheim, anno 1610, Ende Auguſt, an Albrecht Chriſtoph und Georg Sigmund, Gebrüder v. und z. R., Waldmannshofen, Haldenberg⸗ſtetten ꝛc., ihr zu Unterſchüpf gelegenes adeliges Schloß ſamt Zugehör, ſowie das ganze Dorf Lengrieden mit allen ſeinen Gerechtigkeiten um 26 000 fl., beneben 200 Güldenthaler für die Mutter und beiden Töchter⸗lein zu Weinkaufgeld verkauft habe. 1615, 22. Febr., fertigen die ritter⸗ſchaftlichen Räthe einen Vertrag über jenen Kauf aus. Weil aber das alte Schloß ſo in Abgang gekommen war, wurde es ganz abgebrochen und das jetzige neu aufgebaut, was mehr als 12000 fl. koſtete.",
-      "english": "On February 22, 1626, Margaretha von Dienheim, née Eblin and a widow; the brothers Hans Philipp and Georg Friedrich Eberhard von Dienheim of Angerthal, for themselves and their brother Albrecht von Dienheim, a Carthusian in Würzburg; and Kunigunde Elisabetha von Dienheim, their mother, declared that their late father Albrecht von Dienheim had sold, at the end of August 1610, to the brothers Albrecht Christoph and Georg Sigmund von Rosenberg zu Rosenberg of Waldmannshofen, Haldenbergstetten, and elsewhere, his noble castle at Untereschüpf and all its appurtenances, as well as the entire village of Lengenrieden with all its rights, for 26,000 florins, together with 200 gold thalers as purchase money for the mother and two daughters. On February 22, 1615, the knights’ councillors drew up a contract for the sale. Since the old castle had fallen into disrepair, it was completely demolished and the present one newly built, at a cost of more than 12,000 florins.",
+      "english": "On February 22, 1626, Margaretha von Dienheim, née Eblin and a widow; the brothers Hans Philipp and Georg Friedrich Eberhard von Dienheim of Angeltürn, for themselves and their brother Albrecht von Dienheim, a Carthusian in Würzburg; and Kunigunde Elisabetha von Dienheim, their mother, declared that their late father Albrecht von Dienheim had sold, at the end of August 1610, to the brothers Albrecht Christoph and Georg Sigmund von Rosenberg zu Rosenberg of Waldmannshofen, Haldenbergstetten, and elsewhere, his noble castle at Untereschüpf and all its appurtenances, as well as the entire village of Lengenrieden with all its rights, for 26,000 florins, together with 200 gold thalers as purchase money for the mother and two daughters. On February 22, 1615, the knights’ councillors drew up a contract for the sale. Since the old castle had fallen into disrepair, it was completely demolished and the present one newly built, at a cost of more than 12,000 florins.",
       "facts": [
         {
           "type": "generic",
@@ -3591,7 +3679,7 @@
     },
     {
       "german": "Das Schloß zu Schüpf mit dem Dorf Lengrieden, dann die Schloß—mühle zu Unterſchüpf mit Gärten, Wieſen, Weinberg und Waldung iſt von den von Dienheim erkauft worden 46 765 fl. 33 kr. Zu dieſen von Dienheimſchen Erwerbungen hatten die v. Roſenberg noch weiter an ſich gekauft: Wieſen, Weinberge und Waldungen zu Unterſchüpf 630 fl.; Frucht⸗und Weinzehnten zu Unter- und Oberſchüpf 208 fl.; den von vellbergi—ſchen Antheil an ſolchem Zehnten 1800 fl.; den herdaiſchen Zehnten zu Sachſenflur 3000 fl.; 3 Morg. Wieſen daſelbſt 337 fl.; 4 Morg. Wieſen zu Lengenrieden 187 fl. 30 kr.; Zins und Gült zu Angerthal und Uif—fingen 350 fl.; Behauſung zu Oberſchüpf 25 fl. Zuſ. 53303 fl. 3 kr.",
-      "english": "Schüpf Castle with the village of Lengrieden, and the castle mill at Untereschüpf with gardens, meadows, vineyard, and woodland, were bought from the von Dienheim family for 46,765 florins and 33 kreuzers. In addition to these acquisitions from the von Dienheims, the Rosenbergs bought further properties: meadows, vineyards, and woods at Untereschüpf, 630 florins; grain and wine tithes at Unter- and Obereschüpf, 208 florins; the von Vellberg share of those tithes, 1,800 florins; the Herdar tithe at Sachsenflur, 3,000 florins; three acres of meadow there, 337 florins; four acres of meadow at Lengenrieden, 187 florins and 30 kreuzers; rents and revenues at Angerthal and Uiffingen, 350 florins; a residence at Obereschüpf, 25 florins. Total: 53,303 florins and 3 kreuzers."
+      "english": "Schüpf Castle with the village of Lengrieden, and the castle mill at Untereschüpf with gardens, meadows, vineyard, and woodland, were bought from the von Dienheim family for 46,765 florins and 33 kreuzers. In addition to these acquisitions from the von Dienheims, the Rosenbergs bought further properties: meadows, vineyards, and woods at Untereschüpf, 630 florins; grain and wine tithes at Unter- and Obereschüpf, 208 florins; the von Vellberg share of those tithes, 1,800 florins; the Herdar tithe at Sachsenflur, 3,000 florins; three acres of meadow there, 337 florins; four acres of meadow at Lengenrieden, 187 florins and 30 kreuzers; rents and revenues at Angeltürn and Uiffingen, 350 florins; a residence at Obereschüpf, 25 florins. Total: 53,303 florins and 3 kreuzers."
     },
     {
       "german": "IV. Vogtei zu Waldmannshofen.",

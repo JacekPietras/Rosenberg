@@ -10,12 +10,19 @@
         {
           "type": "generic",
           "person": "Marx Nues",
-          "content": "acquired Konrad von Velberg’s inheritance in a farm at Sachsenflur jointly with Jos Eberhardt."
+          "content": "acquired Konrad von Velberg’s inheritance in a farm at Sachsenflur jointly with Jos Eberhard."
         },
         {
           "type": "generic",
           "person": "Marx Nues",
-          "content": "served Albrecht von Rosenberg, Ritter."
+          "content": "served Albrecht von Rosenberg."
+        },
+        {
+          "type": "title",
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
         }
       ]
     }

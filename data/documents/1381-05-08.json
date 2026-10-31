@@ -11,9 +11,20 @@
           "type": "generic",
           "person": "Friderich von Rosenberg",
           "personTitle": [
-            "Vogt von Rosenberg"
+            "Vogt"
           ],
           "content": "sold two Huben at Ekkersuelt to Erhard den Loehleyn as free property."
+        },
+        {
+          "type": "generic",
+          "person": "Erhard Loehleyn",
+          "content": "acquired the two Huben at Ekkersuelt through possession, according to Friderich Kemnatter.",
+          "personDeceased": true
+        },
+        {
+          "type": "generic",
+          "person": "Friderich Kemnatter",
+          "content": "presented a letter with four seals, declared valid by the Landgericht at Sultzbach, concerning Friderich von Rosenberg’s sale of two Huben at Ekkersuelt."
         }
       ]
     }
