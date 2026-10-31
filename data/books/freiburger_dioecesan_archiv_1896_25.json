@@ -2712,6 +2712,30 @@
           "type": "generic",
           "content": "assisted Sickingen against Worms.",
           "date": "1516"
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "parent",
+          "of": "Hans Thomas von Rosenberg",
+          "date": "1518"
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "parent",
+          "of": "Hans Melchior von Rosenberg",
+          "date": "1518"
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "parent",
+          "of": "Hans Ulrich von Rosenberg",
+          "date": "1518"
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "parent",
+          "of": "Hans Kaspar von Rosenberg",
+          "date": "1518"
         }
       ],
       "guesses": [
@@ -2719,30 +2743,6 @@
           "person": "Arnold von Rosenberg",
           "type": "spouse",
           "of": "Anna von Dottenheim",
-          "date": "1512"
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "parent",
-          "of": "Hans Thomas von Rosenberg",
-          "date": "1512"
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "parent",
-          "of": "Hans Melchior von Rosenberg",
-          "date": "1512"
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "parent",
-          "of": "Hans Ulrich von Rosenberg",
-          "date": "1512"
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "parent",
-          "of": "Hans Kaspar von Rosenberg",
           "date": "1512"
         }
       ]
