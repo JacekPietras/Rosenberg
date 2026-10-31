@@ -19,7 +19,7 @@ def source_paths(root):
 
 
 def input_manifest(root, people=None):
-    paths = source_paths(root) + [root / 'data/names.md', root / 'data/places.json', root / 'data/matching.json']
+    paths = source_paths(root) + [root / 'data/names.md', root / 'data/titles.md', root / 'data/places.json', root / 'data/matching.json']
     # Engine and policy changes also invalidate generated results.
     paths += sorted((root / 'scripts/family_graph').glob('*.py'))
     paths += [root / 'scripts/rebuild_family_tree.py', root / 'scripts/validate_facts.py',
@@ -120,6 +120,8 @@ def load_inputs(root, validate=True):
     if errors:
         raise ValueError('\n'.join(errors))
     names = (root / 'data/names.md').read_text(encoding='utf-8')
+    titles_path = root / 'data/titles.md'
+    titles = titles_path.read_text(encoding='utf-8') if titles_path.exists() else ''
     places = json.loads((root / 'data/places.json').read_text(encoding='utf-8'))
     matching_path = root / 'data/matching.json'
     if validate and not matching_path.exists():
@@ -129,4 +131,4 @@ def load_inputs(root, validate=True):
     # Refuse a mixed snapshot if a file changed during ingestion.
     if manifest != initial_manifest or registry_bytes != (root / 'data/people.json').read_bytes():
         raise ValueError('inputs changed during ingestion; rerun reconstruction')
-    return Inputs(root, people, names, places, assertions, manifest, prose, registry_bytes, tree_bytes, matching, observations)
+    return Inputs(root, people, names, places, assertions, manifest, prose, registry_bytes, tree_bytes, matching, observations, titles)

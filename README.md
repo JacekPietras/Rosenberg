@@ -17,6 +17,7 @@ data/
 ├── tree.json     # Generated family graph and calculation results
 ├── matching.json # Global probability model parameters
 ├── names.md      # Historical name variants
+├── titles.md     # Equivalent title words and epithets for matching
 └── places.json   # Place-name variants and coordinates
 docs/             # Browser viewer for the dataset
 rules/            # Conditional instructions for data work
@@ -168,6 +169,13 @@ matching fact records mention each place; repeated mentions in one record count 
 
 Straightforward personal-name spelling variations are listed in
 [`data/names.md`](data/names.md).
+
+### Titles
+
+Equivalent title words and epithets used for identity matching (for example
+`Vogt, Voigt, advocatus` or `der Rote, Rufus`) are listed in
+[`data/titles.md`](data/titles.md), one group per line with the canonical form
+first. They are not personal names and do not belong in `data/names.md`.
 
 ### Places
 

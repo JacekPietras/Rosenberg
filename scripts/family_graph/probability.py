@@ -31,7 +31,7 @@ DEFAULTS = {
     'associateWeight': 2.0, 'associateMaxWeight': 4.0, 'associateHalfLifeYears': 15.0,
     'familyWeights': {'anchored': 9.0, 'linked': 7.5, 'name': 4.0, 'spouse': 9.0},
     'familyRelationFactors': {'parent': 1.0, 'spouse': 1.0, 'sibling': 0.8, 'kin': 0.5},
-    'familyMaxWeight': 16.0, 'familyHalfLifeYears': 35.0,
+    'sharedRelativeWeight': 12.0, 'familyMaxWeight': 16.0, 'familyHalfLifeYears': 35.0,
     'relativeRarityWeight': 1.0, 'relativeRarityMaxWeight': 1.5, 'relativeRarityReferenceFrequency': 0.1,
     'opposedAgePenalty': 5.0, 'rankRegressionPenalty': 1.0,
     'deathConflictPenalty': 20.0, 'maxRounds': 12,
@@ -84,14 +84,14 @@ def decay(left, right, half_life):
 YEAR = 365.2425
 
 
-def adult(mention):
+def adult(mention, names=None):
     kind = mention.assertion.original['type']
     if kind == 'spouse' or kind == 'parent' and mention.field == 'person':
         return True
-    return any(title_category(title)[0] in {'rank', 'office'} or title_category(title) == ('age', 'elder') for title in mention.titles)
+    return any(title_category(title, names)[0] in {'rank', 'office'} or title_category(title, names) == ('age', 'elder') for title in mention.titles)
 
 
-def chronology(mentions, settings):
+def chronology(mentions, settings, names=None):
     """Extremes per reliability level; an unmarked typed mention means alive."""
     levels = {}
     def keep(level, key, value, source, larger):
@@ -103,7 +103,7 @@ def chronology(mentions, settings):
             continue
         source, (start, end) = mention.assertion.source, mention.assertion.bounds
         level = levels.setdefault(reliability(source, settings), {})
-        keep(level, 'birth', end.toordinal() - (settings['adultAgeYears'] * YEAR if adult(mention) else 0), source, False)
+        keep(level, 'birth', end.toordinal() - (settings['adultAgeYears'] * YEAR if adult(mention, names) else 0), source, False)
         died = death_interval(mention)
         if died:
             keep(level, 'deathStart', died[0].toordinal(), source, True)
@@ -164,26 +164,40 @@ def death_conflicts(left, right, settings):
     return worst
 
 
-def chronology_blocked(mentions, settings):
+def chronology_blocked(mentions, settings, names=None):
     """Document facts alone make this identity chronologically impossible."""
-    level = chronology(mentions, settings).get(1, {})
+    level = chronology(mentions, settings, names).get(1, {})
     if 'deathEnd' in level and any(key in level and level[key][0] > level['deathEnd'][0] for key in ('alive', 'deathStart')):
         return True
     return 'birth' in level and 'last' in level and (level['last'][0] - level['birth'][0]) / YEAR > settings['maxAgeYears']
 
 
-def title_category(title):
+OFFICES = {'vogt', 'amtmann', 'hofmeister', 'burggraf', 'domherr', 'vizedom', 'komtur', 'keller', 'schultheiss'}
+DESIGNATED = r'(?:called|born|genannt|gennant|genant|gen|dictus|dicti|dicta|geboren|geborene|geb|nee|nata)'
+CONNECTOR = r'(?:von|vom|van|de|zu|ze|zum|zur|in|of|at)'
+
+
+def title_category(title, names=None):
+    """Meaning of a title; equivalents come from data/titles.md and places.json."""
     value = normalize(title)
+    translate = (lambda text: names.titles.get(text, text)) if names else (lambda text: text)
+    place = (lambda text: names.places.get(text, text)) if names else (lambda text: text)
+    value = translate(value)
     if value in {'der junge', 'der jungere', 'der alte', 'der altere'}:
         return 'age', 'young' if 'jung' in value else 'elder'
-    if re.match(r'^(called|born|genannt|dictus|geboren|geborene|nee|nata)\b', value):
-        return 'designation', value
     if value in {'ritter', 'miles', 'edelknecht', 'knecht', 'armiger'}:
         return 'rank', 'ritter' if value in {'ritter', 'miles'} else 'edelknecht'
-    if value.startswith('zu '):
-        return 'territory', value
-    if re.search(r'\b(vogt|amtmann|hofmeister|burggraf|domherr|vizedom|vitztum|komtur)\s+\S', value):
-        return 'office', value
+    words = value.split()
+    for index, word in enumerate(words[:-1]):
+        office = translate(word)
+        if office in OFFICES:
+            # The connector (zu, in, von …) does not change the office.
+            rest = re.sub(rf'^{CONNECTOR}\s+', '', ' '.join(words[index + 1:]))
+            return 'office', f'{office} {place(rest)}'
+    designated = re.match(rf'^(?:{DESIGNATED}\s+)?(?:{CONNECTOR}\s+(?:und\s+{CONNECTOR}\s+)?)?(.+)$', value)
+    if designated and designated.group(1) != value:
+        # genannt X, called von X, von X and zu X name the same designation.
+        return 'designation', place(designated.group(1))
     return 'other', value
 
 
@@ -210,6 +224,7 @@ class Profile:
     key: str = ''
     distinctions: dict = field(default_factory=dict)
     office_scopes: dict = field(default_factory=dict)
+    designation_places: dict = field(default_factory=dict)
 
 
 # Deliberately deterministic; no extraction of relationships from prose.
@@ -318,7 +333,7 @@ class ProbabilityModel:
         blocks = []
         # Time distance alone is neutral; only the years a merge adds to the
         # minimum implied age count, and only beyond a comfortable age.
-        own = chronology(left.mentions, p), chronology(right.mentions, p)
+        own = chronology(left.mentions, p, self.names), chronology(right.mentions, p, self.names)
         value, age, year, sources, blocked = age_penalty(merge_chronology(*own), p)
         if blocked:
             blocks.append(f'impossible age: at least {age:.0f} years old by {year}')
@@ -340,16 +355,18 @@ class ProbabilityModel:
                 by_category[category] = value, title, sources
         for category, (value, title, sources) in sorted(by_category.items()):
             add(f'{category} title: {title}', value, sources)
-        # Different scoped offices can share territorial context. It is weaker
-        # than an exact office match and must not count the same scope twice.
-        if 'office' not in by_category:
-            scope_values = [(*best(left.office_scopes[place], right.office_scopes[place], p['titleWeights']['territory'], p['titleHalfLivesYears']['territory']), place)
+        # Different offices, or an office and a bare place designation, can
+        # share a place. It is weaker than an exact match and counts once.
+        if 'office' not in by_category and 'designation' not in by_category:
+            territory = p['titleWeights']['territory'], p['titleHalfLivesYears']['territory']
+            scope_values = [(*best(left.office_scopes[place], right.office_scopes[place], *territory), 'shared office scope', place)
                             for place in sorted(set(left.office_scopes) & set(right.office_scopes))]
+            scope_values += [(*best(one.office_scopes[place], other.designation_places[place], *territory), 'office and designation place', place)
+                             for one, other in ((left, right), (right, left))
+                             for place in sorted(set(one.office_scopes) & set(other.designation_places))]
             if scope_values:
-                value, sources, place = max(scope_values, key=lambda item: item[0])
-                previous = by_category.get('territory', (0, '', ()))[0]
-                if value > previous:
-                    add(f'shared office scope: {place}', value - previous, sources)
+                value, sources, label, place = max(scope_values, key=lambda item: (item[0], item[2], item[3]))
+                add(f'{label}: {place}', value, sources)
         # Younger → elder and Edelknecht → Ritter are normal progressions;
         # only the reverse order counts against identity.
         def regression(earlier, later, weight):
@@ -395,6 +412,10 @@ class ProbabilityModel:
             # distinctive than a relative's name repeated across generations.
             weight = p['familyWeights']['anchored' if grounded else 'linked' if identity else 'spouse' if relation == 'spouse' else 'name']
             weight *= p['familyRelationFactors'][relation]
+            # Same-named siblings, parents, or children of one identified
+            # person are rarely different people.
+            if relation in {'sibling', 'parent'} and identity:
+                weight = max(weight, p['sharedRelativeWeight'])
             # A bare given name alone cannot bootstrap two provisional families.
             if not identity and len(relative_name.split()) < 2:
                 continue

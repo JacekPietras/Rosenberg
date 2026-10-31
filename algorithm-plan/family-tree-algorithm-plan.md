@@ -130,14 +130,25 @@ inventing a birth year.
 | Category | Examples | Base | Half-life (years) |
 | --- | --- | --- | --- |
 | Office | `Vogt zu Dürn`, `Amtmann zu …` | 8 | 15 |
-| Called/born designation | `genannt …`, `dictus …` | 6 | 30 |
-| Territory | `zu Boxberg` | 3 | 15 |
+| Designation | `genannt X`, `called von X`, `dictus de X`, `von X`, `zu X` | 6 | 30 |
+| Shared place only | `Vogt zu Lauda` / `Amtmann zu Lauda`; `Vogt zu Lauda` / `zu Lauda` | 3 | 15 |
 | Age | `der Ältere`, `der Jüngere`, `der Alte`, `der Junge` | 3 | 12 |
 | Rank | `Ritter`, `Edelknecht` | 0.75 | 20 |
 | Other | epithets like `Rufus` | 1 | 15 |
 
 - Matching titles contribute `base × pair reliability × decay`. Missing titles
   contribute `0`.
+- Titles are compared by meaning, not wording. An office is its office word and
+  place: prefixes (`erzbischöflicher`) and connectors (`zu`, `in`, `von`) are
+  ignored, so `Vogt zu Lauda` = `Vogt in Lauda`. A designation is its place or
+  name alone, so all `genannt/called/dictus/von/zu Rannenberg` forms match.
+  Places use `places.json` variants.
+- Equivalent title words and epithets (`Vogt`/`Voigt`/`advocatus`,
+  `Vizedom`/`Vitzthum`/`vicedominus`, `der Rote`/`Rufus`) are listed in
+  `data/titles.md`, separate from personal names.
+- Different offices with the same place, or an office and a bare designation of
+  its place, contribute the shared-place weight once, and only without an exact
+  office or designation match.
 - An office's place cannot earn a separate place contribution for the same
   observation.
 - Rank: Edelknecht earlier → Ritter later is normal and contributes `0`. Ritter
@@ -168,6 +179,19 @@ inventing a birth year.
 
 An unresolved spouse pairs two families' names, so it is more distinctive than
 a relative's name that repeats across generations.
+
+Same-named people who share an identified relative (registry ID or linked
+reconstructed identity) in the same role are rarely different people: both
+siblings of Z, both parents of Z, or both children of Z. This shared relative
+contributes `sharedRelativeWeight` (`12`) instead of the ordinary weight,
+scaled by reliability, link confidence, and decay. Example: an Eberhard listed
+as brother of Arnold der Jüngere in a charter and an Eberhard listed as his
+brother in a book retelling of that charter.
+
+Consequently, a person should not keep two same-named parents. If those two
+parents cannot be one person (distinct confirmed IDs or a chronology block, for
+example one dead in 1305 and the other alive in 1332), the merge that gave the
+child both of them is blocked.
 
 | Relation | Factor |
 | --- | --- |

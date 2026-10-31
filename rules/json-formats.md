@@ -385,7 +385,7 @@ The top-level object has:
   or identical views.
 - `inputs`: repository-relative input path to SHA-256 fingerprint, covering
   recursively discovered source JSON in books/documents/notes/images,
-  `data/names.md`, `data/places.json`, `data/matching.json`, the confirmed ID/name registry, and
+  `data/names.md`, `data/titles.md`, `data/places.json`, `data/matching.json`, the confirmed ID/name registry, and
   engine/shared Python utilities.
 - `fingerprint`: the fingerprint of the complete `inputs` object.
 - `evidence`: a graph keyed by each available evidence view.
@@ -470,8 +470,13 @@ probability = 1 / (1 + exp(-logOdds))
 All title categories decay with the distance between their actual attestation
 intervals. Elder → younger age titles and Ritter → Edelknecht are penalized; the
 reverse progressions are neutral. Different age titles of one name in one
-passage are different people. Prefixed offices retain office classification; different offices can
-supply weaker shared-scope support. Cross-role place support uses
+passage are different people. Titles are compared by meaning, using the
+equivalents in `data/titles.md` and place variants in `places.json`: an office is
+its office word and place, regardless of prefix or connector (`Vogt zu Lauda` =
+`Vogt in Lauda` = `erzbischöflicher Voigt zu Lauda`); `genannt X`, `called von X`,
+`dictus de X`, `von X`, and `zu X` are one designation of X. Different offices with
+the same place, or an office and a bare place designation, supply the weaker
+territory weight once. Cross-role place support uses
 `crossRolePlaceFactor`. Scoped offices have stronger weights than ranks. Property associations
 use names/variations from `places.json`. Same-fact associates are deterministic
 `XXX von YYY` name co-occurrences; an entire entry is never one associate group.
@@ -484,7 +489,11 @@ retain source text references rather than being rewritten as typed facts.
 
 Family evidence uses exact anchors, already linked relatives, full relative
 names, and co-parent context without creating extra edges, scaled by relation
-type (parent/child and spouse above sibling above other kin). Features are capped
+type (parent/child and spouse above sibling above other kin). Same-named
+siblings, parents, or children of the same identified person receive the
+stronger `sharedRelativeWeight`. A merge that leaves a person with two
+same-named parents who cannot be one person (distinct confirmed IDs or a
+chronology block) is blocked. Features are capped
 by category/relative/place; repeated extraction does not manufacture support.
 Document/image source factors are always 1.0; book/note factors are 0.5.
 Guesses receive an additional 0.45 factor by default. Pairwise evidence uses the
@@ -568,7 +577,8 @@ identity model. It contains `model: "weighted-log-odds-v3"`, `calibrated: false`
 (`adultAgeYears`, `maxAgeYears`, `ageComfortYears`, `ageScaleYears`), title
 weights and half-lives, place weights and half-life, cross-role place factor,
 relative-name rarity weight/cap/reference frequency, associate
-weights/cap/half-life, family weights, relation factors, cap and half-life,
+weights/cap/half-life, family weights, relation factors, shared-relative weight,
+cap and half-life,
 elder-before-younger and Ritter-before-Edelknecht penalties, death conflict
 penalty, and `maxRounds`.
 

@@ -140,3 +140,4 @@ class Inputs:
     tree_bytes: bytes | None = None
     matching: dict = field(default_factory=dict)
     observations: list = field(default_factory=list)
+    titles: str = ''

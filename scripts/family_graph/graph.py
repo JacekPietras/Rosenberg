@@ -16,7 +16,7 @@ RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
 def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH_LIMIT):
     assertions = [assertion for assertion in inputs.assertions if include_guesses or assertion.source.kind == 'facts']
-    names = Names(inputs.names, inputs.places)
+    names = Names(inputs.names, inputs.places, inputs.titles)
     registry, profiles = anchor_profiles(assertions, inputs.people)
     conflicts, blocked, ignored_guesses = [], set(), set()
     for identity, observations in profiles.items():
@@ -25,7 +25,7 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
             blocked.add(identity)
             conflicts.append({'reason': 'conflicting factual death constraints', 'identities': [identity],
                               'sources': [mention.assertion.source.export() for mention in factual]})
-        elif chronology_blocked(factual, parameters(inputs.matching or None)):
+        elif chronology_blocked(factual, parameters(inputs.matching or None), names):
             conflicts.append({'reason': 'unmarked mention after recorded death or impossible age', 'identities': [identity],
                               'sources': [mention.assertion.source.export() for mention in factual]})
         elif not compatible_deaths(observations):

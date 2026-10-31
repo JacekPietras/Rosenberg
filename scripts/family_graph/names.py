@@ -11,8 +11,14 @@ def normalize(value):
 
 
 class Names:
-    def __init__(self, names_text, places):
+    def __init__(self, names_text, places, titles_text=''):
         self.raw_places = places
+        # Equivalent title words and epithets, e.g. Vogt/advocatus, der Rote/Rufus.
+        self.titles = {}
+        for line in titles_text.splitlines():
+            forms = [normalize(item) for item in line.split('//', 1)[0].split(',') if item.strip()]
+            for form in forms:
+                self.titles[form] = forms[0]
         self.given = {}
         for line in names_text.splitlines():
             forms = [normalize(item) for item in line.split('//', 1)[0].split(',') if item.strip()]

@@ -129,9 +129,9 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         parts = defaultdict(list)
         for h in component:
             parts[find(h)].append(mentions[h])
-        if any(chronology_blocked(part, model.settings) for part in parts.values()):
+        if any(chronology_blocked(part, model.settings, names) for part in parts.values()):
             return False
-        return chronology_blocked([mentions[h] for h in component], model.settings)
+        return chronology_blocked([mentions[h] for h in component], model.settings, names)
 
     def consistent(components, new=None):
         # Only proposed components are checked for chronology; unchanged
@@ -152,6 +152,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             if any(len(titles & AGE_TITLES) > 1 for titles in by_scope.values()):
                 return False
         edges, siblings = [], []
+        same_named_parents = defaultdict(set)
         for assertion in assertions:
             if assertion.original['type'] not in RELATIONS:
                 continue
@@ -160,8 +161,17 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 return False
             if assertion.original['type'] == 'parent':
                 edges.append((left, right))
+                if new is None or right < new:
+                    same_named_parents[(right, name(assertion.mentions[0].handle))].add(left)
             elif assertion.original['type'] == 'sibling':
                 siblings.append((left, right))
+        # Same-named parents of one person should be one person; if they
+        # cannot be, the merge that gave the child both of them is wrong.
+        for parents in same_named_parents.values():
+            if len(parents) > 1:
+                union = [h for index in parents for h in components[index]]
+                if len(anchor(union)) > 1 or chronology_conflict(union):
+                    return False
         return not cycle_nodes(edges) and generations_consistent(edges, siblings)
 
     def accept(proposals, reason):
@@ -375,11 +385,12 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             ref, bounds = mention.assertion.source, mention.assertion.bounds
             profile.refs[ref.key] = ref
             for title in mention.titles:
-                category = title_category(title)
+                category = title_category(title, names)
                 profile.titles.setdefault(category, []).append((ref, bounds))
-                if category[0] == 'office':
+                if category[0] in {'office', 'designation'}:
+                    scopes = profile.office_scopes if category[0] == 'office' else profile.designation_places
                     for place in model.places(title):
-                        profile.office_scopes.setdefault(place, []).append((ref, bounds))
+                        scopes.setdefault(place, []).append((ref, bounds))
             model.add_context(profile, ref, bounds, issuance=mention.assertion.context.get('place', ''))
         context_coverage = {'total': len(observations), 'attached': 0, 'undated': 0, 'unattached': 0, 'explicitIdFacts': 0}
         # A bracketed confirmed ID identifies its person even when that source

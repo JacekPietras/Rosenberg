@@ -16,7 +16,7 @@ from family_graph.export import serialize, validate_generated
 
 class ProbabilityTests(unittest.TestCase):
     def setUp(self):
-        self.names = Names('Alex\nBea\nChris\n', [{'id': 'north', 'variations': ['North']}])
+        self.names = Names('Alex\nBea\nChris\n', [{'id': 'north', 'variations': ['North']}], 'Vogt, advocatus\nder Rote, Rufus\n')
         self.model = ProbabilityModel(None, self.names)
 
     def profile(self, title=None, date='1393', category='documents', kind='facts', death=None):
@@ -27,10 +27,12 @@ class ProbabilityTests(unittest.TestCase):
         profile = Profile([assertion.mentions[0].handle], assertion.mentions)
         profile.refs[assertion.source.key] = assertion.source
         if title:
-            profile.titles[title_category(title)] = [(assertion.source, assertion.bounds)]
-            if title_category(title)[0] == 'office':
+            category = title_category(title, self.names)
+            profile.titles[category] = [(assertion.source, assertion.bounds)]
+            if category[0] in {'office', 'designation'}:
+                scopes = profile.office_scopes if category[0] == 'office' else profile.designation_places
                 for place in self.model.places(title):
-                    profile.office_scopes[place] = [(assertion.source, assertion.bounds)]
+                    scopes[place] = [(assertion.source, assertion.bounds)]
         return profile
 
     def test_every_title_category_decays_with_time(self):
@@ -42,6 +44,21 @@ class ProbabilityTests(unittest.TestCase):
                 positive = lambda result: sum(f['contribution'] for f in result['features'] if f['contribution'] > 0)
                 self.assertGreater(positive(near), positive(far))
                 self.assertGreater(near['probability'], far['probability'])
+
+    def test_titles_are_compared_by_meaning_not_wording(self):
+        title = lambda result: [(f['name'], f['contribution']) for f in result['features']]
+        for left, right in [('genannt North', 'called von North'), ('zu North', 'von North'), ('dictus de North', 'gennant North')]:
+            with self.subTest(left=left, right=right):
+                self.assertEqual([('designation title: north', DEFAULTS['titleWeights']['designation'])],
+                                 title(self.model.compare(self.profile(left), self.profile(right))))
+        for left, right in [('Vogt zu North', 'Vogt in North'), ('Vogt zu North', 'erzbischöflicher advocatus von North')]:
+            with self.subTest(left=left, right=right):
+                self.assertEqual([('office title: vogt north', DEFAULTS['titleWeights']['office'])],
+                                 title(self.model.compare(self.profile(left), self.profile(right))))
+        self.assertEqual([('office and designation place: north', DEFAULTS['titleWeights']['territory'])],
+                         title(self.model.compare(self.profile('Vogt zu North'), self.profile('zu North'))))
+        self.assertEqual([('other title: der rote', DEFAULTS['titleWeights']['other'])],
+                         title(self.model.compare(self.profile('Rufus'), self.profile('der Rote'))))
 
     def test_scoped_office_is_much_stronger_than_generic_rank(self):
         office = self.model.compare(self.profile('Vogt zu North'), self.profile('Vogt zu North'))
@@ -310,6 +327,18 @@ class ProbabilityTests(unittest.TestCase):
                 parents = {edge['person'] for edge in graph['relationships'] if edge['type'] == 'parent' and by_key[edge['of']]['name'] != 'Alex von South'}
                 self.assertEqual(1, len(siblings)); self.assertEqual(1, len(parents))
                 self.assertNotEqual(siblings, parents)
+
+    def test_same_named_siblings_of_one_identified_person_merge(self):
+        sibling = lambda: {'type': 'sibling', 'person': 'Alex von South', 'of': 'b'}
+        inputs = self.repository([sibling()], [sibling()])
+        (inputs.root / 'data/people.json').write_text(json.dumps([{'id': 'b', 'name': 'Bea von South'}]))
+        (inputs.root / 'data/documents/second.json').write_text(json.dumps({'date': '1394', 'facts': [sibling()]}))
+        (inputs.root / 'data/books').mkdir()
+        (inputs.root / 'data/books/retold.json').write_text(json.dumps({'entries': [{'facts': [{**sibling(), 'date': '1393'}]}]}))
+        graph = build(load_inputs(inputs.root, validate=False)).evidence_graph
+        self.assertEqual(1, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
+        self.assertTrue(any(f['name'].startswith('sibling family context') and f['contribution'] >= DEFAULTS['sharedRelativeWeight'] * .5 * .9
+                            for c in graph['comparisons'] for f in c['features']))
 
     def test_repeated_parent_records_do_not_manufacture_same_named_coparents(self):
         inputs = self.repository([{'type': 'parent', 'person': 'Alex von South', 'of': 'c'}],

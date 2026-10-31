@@ -127,10 +127,12 @@ test('name routes aggregate source identities while person and evidence IDs sele
   assert.doesNotMatch(renderPersonPage(), /Source attestations/);
 });
 
-test('prose facts link unregistered names from typed facts and source identities', async () => {
+test('prose facts link unregistered names from typed facts and source identities', () => {
   const nameLink = /href="\?person=Hans%20von%20Rosenberg">Hans von Rosenberg<\/a> appeared as a witness/;
-  const book = JSON.parse(await readFile(new URL('../data/books/bidermann_1751.json', import.meta.url), 'utf8'));
-  const entry = book.entries.find((entry) => entry.facts?.some((fact) => fact.date === '1290' && fact.text === 'Hans von Rosenberg appeared as a witness in a document.'));
+  const entry = { facts: [
+    { date: '1290', text: 'Hans von Rosenberg appeared as a witness in a document.' },
+    { type: 'parent', person: 'Hans von Rosenberg', of: 'Eckhard von Rosenberg', date: '1300' },
+  ] };
   assert.match(renderFactsView(entry.facts, options), nameLink);
   const prose = entry.facts.find((fact) => fact.date === '1290');
   assert.match(renderFactsView([prose], { ...options, personNames: ['Hans von Rosenberg'] }), nameLink);

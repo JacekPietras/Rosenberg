@@ -54,6 +54,7 @@
     "sibling": 0.8,
     "kin": 0.5
   },
+  "sharedRelativeWeight": 12.0,
   "familyMaxWeight": 16.0,
   "familyHalfLifeYears": 35.0,
   "relativeRarityWeight": 1.0,
