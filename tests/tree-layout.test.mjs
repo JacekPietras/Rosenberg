@@ -284,7 +284,7 @@ test('hover facts use source identity pointers and keep namesakes separate', () 
   const documents = new Map([[path, { date: '1400', entries: [{ facts: [
     { type: 'title', person: 'Same name', personTitle: ['Ritter'] },
     { type: 'title', person: 'Same name', personTitle: ['Vogt'] },
-  ], guesses: [{ text: 'An inferred relationship.' }] }] }]]);
+  ], guesses: [{ type: 'generic', person: 'Same name', content: 'had an inferred relationship.' }] }] }]]);
   const graph = { records: [0, 1].map((index) => ({ name: 'Same name', _treeKey: `source-${index}`,
     reconstruction: { dates: ['1400'], mentions: [
       { source: { path, pointer: `/entries/0/facts/${index}` }, date: '1400' },
@@ -348,9 +348,7 @@ test('registry hover facts use exact IDs and historical dates', () => {
   assert.match(templates[0], /der Jüngere/);
   assert.doesNotMatch(templates[0], /der Ältere/);
   assert.match(templates[0], /<time class="fact-date" datetime="1350">1350<\/time>/);
-  assert.match(templates[0], /Undated/);
-  assert.match(templates[0], /&lt;script&gt;/);
-  assert.match(templates[0], /<strong>bold<\/strong>/, 'reuse document inline formatting');
+  assert.doesNotMatch(templates[0], /Undated|unsafe|bold/);
   assert.doesNotMatch(templates[0], /Vogt|2020|held land|<script>/);
   assert.match(templates[1], /Vogt/);
   assert.match(templates[1], /der Ältere/);

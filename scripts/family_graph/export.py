@@ -178,16 +178,9 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
             for mention in node['mentions']:
                 fact = source(mention['source'], view)
                 field = mention.get('field')
-                if field not in {'person', 'of', 'text'} or fact is not None and field != 'text' and field not in fact:
+                if field not in {'person', 'of'} or fact is not None and (not isinstance(fact, dict) or field not in fact):
                     raise ValueError('invalid reconstructed participant')
-                if field == 'text':
-                    reference = mention.get('reference')
-                    text = fact if isinstance(fact, str) else fact.get('text', '') if isinstance(fact, dict) else ''
-                    if (not isinstance(reference, str) or not reference
-                        or fact is not None and (('[' + reference + ']') not in text if reference in registry else not re.search(r'(?<!\w)' + re.escape(reference) + r'(?!\w)', text))):
-                        raise ValueError('invalid context participant reference')
-                else:
-                    reference = fact[field] if fact is not None else None
+                reference = fact[field] if fact is not None else None
                 if fact is not None and reference in registry and key != reference:
                     raise ValueError('reconstructed occurrence overrides a fixed registry anchor')
                 named |= fact is not None and reference == node['name']

@@ -198,6 +198,12 @@ Pass a place name or spelling variation to show only matching entries. Churches 
 
 ### English name review
 
+Running `python3 scripts/validate_facts.py` migrates `von und zu NAME` in
+English text and fact participants before validating. Specify JSON files or
+directories to limit the scan. Fact participant titles are retained and
+`zu NAME` is added when absent. To preview the migration without writing, run
+`python3 scripts/migrate_von_und_zu.py`.
+
 Check English text in documents and books for personal names that use a known
 name or place variation, or a non-standard `de` connector. The checker reports
 the source location and a suggested normalized form; it does not edit files.

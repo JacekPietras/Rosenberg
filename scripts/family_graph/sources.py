@@ -5,7 +5,7 @@ from pathlib import Path
 from validate_facts import TYPES, Validator
 from .dates import date_bounds, inherited_date_bounds
 from .model import Assertion, Inputs, Mention, SourceRef, fingerprint
-from .probability import Observation, parameters
+from .probability import parameters
 
 SOURCE_DIRS = ('books', 'documents', 'notes', 'images')
 
@@ -52,13 +52,7 @@ def walk_assertions(document, path, include_text=False):
                         ref = SourceRef(path, f'{location}/{index}', fingerprint(fact), key,
                                         json.dumps(current_context.get('source', current_context.get('book', '')), ensure_ascii=False, sort_keys=True))
                         if not isinstance(fact, dict) or 'type' not in fact:
-                            text = fact if isinstance(fact, str) else fact.get('text', '') if isinstance(fact, dict) else ''
-                            historical_date = fact.get('date', current_date) if isinstance(fact, dict) else current_date
-                            try:
-                                bounds = inherited_date_bounds(historical_date)
-                            except (ValueError, TypeError):
-                                bounds = None
-                            yield ref, Observation(ref, text, historical_date, bounds, current_context) if include_text else None
+                            yield ref, None
                             continue
                         if fact['type'] not in TYPES:
                             raise ValueError(f'{ref.key}: unsupported assertion type')

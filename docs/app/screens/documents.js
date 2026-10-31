@@ -1,4 +1,4 @@
-import { renderFactsView } from '../components/facts_view.js?v=7';
+import { renderFactsView } from '../components/facts_view.js?v=8';
 
 export function createDocumentRenderer({
   state,

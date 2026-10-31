@@ -678,7 +678,7 @@ test('parameter changes automatically rebuild and a saved facts-only preference 
   assert.equal(state.familyGraph.view, 'with-guesses');
 });
 
-test('text context participants preserve exact references and cannot override an ID', async () => {
+test('legacy text context participants are rejected', async () => {
   const data = await probabilityFixture();
   const doc = data.documents.get(source.path);
   const child = data.tree.evidence.facts.nodes.find((node) => !node.registry);
@@ -691,11 +691,8 @@ test('text context participants preserve exact references and cannot override an
   }
   await updateFixtureBuild(data);
   let verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
-  assert.equal(verification.valid, true, verification.reason);
-  data.tree.evidence.facts.nodes.find((node) => !node.registry).mentions.at(-1).reference = 'a';
-  verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
   assert.equal(verification.valid, false);
-  assert.match(verification.reason, /fixed anchor/);
+  assert.match(verification.reason, /Invalid reconstructed participant/);
 });
 
 test('name-frequency background must agree with its total', async () => {
@@ -706,7 +703,7 @@ test('name-frequency background must agree with its total', async () => {
   assert.match(verification.reason, /name-frequency/);
 });
 
-test('context attestations render original text on source-person pages', async () => {
+test('legacy context attestations are not displayed on source-person pages', async () => {
   const data = await probabilityFixture();
   const doc = data.documents.get(source.path);
   const child = data.tree.evidence.facts.nodes.find((node) => !node.registry);
@@ -718,5 +715,5 @@ test('context attestations render original text on source-person pages', async (
   const state = { person: child.key, familyGraph: graph };
   const { renderPersonPage } = createEntityScreens({ state, getPeople: () => data.people, getDocuments: () => data.documents,
     escapeHtml, inlineMarkup: escapeHtml, formatDate: String, documentNavigationUrl: (path, index) => `?document=${path}&entry=${index}` });
-  assert.match(renderPersonPage(), /held property at North/);
+  assert.doesNotMatch(renderPersonPage(), /held property at North/);
 });

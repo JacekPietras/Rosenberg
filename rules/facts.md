@@ -127,7 +127,9 @@ use it to resolve an identity or relationship as certain.
 
 Use the same typed object formats and historical date rules as facts for guesses,
 including `generic` for other interpretations, and relationship and death objects
-for inferred relationships and death dates. Keep `content` simple and atomic.
+for inferred relationships and death dates. Keep `content` simple and atomic. Guesses must concern the same people and
+subjects as relevant facts; do not use them for commentary on authors, sources,
+or the research process. Retain citations needed to identify the basis of a guess.
 Never invent a date or use the publication year as an event date. In books and
 notes, every fact and guess must have an explicit historical date.
 

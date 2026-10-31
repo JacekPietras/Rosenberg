@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Find legacy and typed facts by person ID, name, title, surname, or place.
+"""Find typed facts by person ID, name, title, surname, or place.
 
 Examples:
     python3 scripts/search_facts_by_name.py 'Eberhardi v. Roßenberg'
@@ -163,13 +163,11 @@ def fact_records(data_dir, people_by_id=None):
                 for key, child in value.items():
                     if key == "facts" and isinstance(child, list):
                         for fact_index, fact in enumerate(child, 1):
-                            if isinstance(fact, dict):
-                                typed = fact if 'type' in fact else None
-                                text = typed_fact_text(fact, people_by_id) if typed else fact.get("text", "")
-                                fact_date = fact.get("date", date)
-                            else:
-                                typed = None
-                                text, fact_date = str(fact), date
+                            if not isinstance(fact, dict) or 'type' not in fact:
+                                continue
+                            typed = fact
+                            text = typed_fact_text(fact, people_by_id)
+                            fact_date = fact.get("date", date)
                             if text:
                                 metadata = " ".join(str(value.get(key, "")) for key in ("place", "title", "name", "label"))
                                 yield path, location, fact_index, fact_date, value.get("source") or value.get("title", ""), text, metadata, typed

@@ -78,7 +78,7 @@ test('name routes aggregate source identities while person and evidence IDs sele
   const people = [{ id: 'hans_1513', name }, { id: 'hans_1516', name }];
   const path = 'data/documents/hans.json';
   const entries = [
-    { date: '1359', facts: [{ text: `${name} appeared as a witness in 1359.` }] },
+    { date: '1359', facts: [{ type: 'generic', person: name, content: 'appeared as a witness in 1359.' }] },
     { date: '1513', facts: [{ type: 'title', person: 'hans_1513', personTitle: ['Witness in 1513'] }] },
     { date: '1516', facts: [{ type: 'title', person: 'hans_1516', personTitle: ['Witness in 1516'] }] },
   ];
@@ -127,29 +127,23 @@ test('name routes aggregate source identities while person and evidence IDs sele
   assert.doesNotMatch(renderPersonPage(), /Source attestations/);
 });
 
-test('prose facts link unregistered names from typed facts and source identities', () => {
-  const nameLink = /href="\?person=Hans%20von%20Rosenberg">Hans von Rosenberg<\/a> appeared as a witness/;
-  const entry = { facts: [
-    { date: '1290', text: 'Hans von Rosenberg appeared as a witness in a document.' },
-    { type: 'parent', person: 'Hans von Rosenberg', of: 'Eckhard von Rosenberg', date: '1300' },
-  ] };
-  assert.match(renderFactsView(entry.facts, options), nameLink);
-  const prose = entry.facts.find((fact) => fact.date === '1290');
-  assert.match(renderFactsView([prose], { ...options, personNames: ['Hans von Rosenberg'] }), nameLink);
-  const { renderEntry } = createDocumentRenderer({
-    state: { showFacts: true, familyGraph: { valid: true, records: [{ name: 'Hans von Rosenberg' }] } },
-    escapeHtml, ...options, getPeople: () => options.people,
-  });
-  assert.match(renderEntry({ facts: [prose] }), nameLink);
+test('legacy facts and strings are excluded from fact views', () => {
+  const legacy = { date: '1336', text: 'Arnold led the violence.' };
+  const typed = { type: 'generic', person: 'Arnold', content: 'appeared.' };
+  assert.equal(factText(legacy), '');
+  assert.equal(factPersonMatch(legacy, 'Arnold'), '');
+  assert.equal(renderFactsView([legacy, 'Legacy fact.'], options), '');
+  const html = renderFactsView([legacy, typed], options);
+  assert.doesNotMatch(html, /violence|1336|Legacy/);
+  assert.match(html, /Arnold/);
 });
 
 test('shared facts view formats dates, groups repeated dates, and preserves person links', () => {
   const html = renderFactsView([
-    { date: '1383', text: 'Wife of [eberhard].' },
-    { date: '1383', text: 'Another fact.' },
-    { date: '1421-03-02', text: 'Later fact.' },
-    { text: 'Undated fact.' },
-    'Legacy fact.',
+    { date: '1383', type: 'spouse', person: 'A', of: 'eberhard' },
+    { date: '1383', type: 'generic', person: 'A', content: 'appeared.' },
+    { date: '1421-03-02', type: 'generic', person: 'A', content: 'appeared later.' },
+    { type: 'generic', person: 'A', content: 'appeared.' },
   ], options);
   assert.match(html, /class="facts facts-view"/);
   assert.equal((html.match(/datetime="1383"/g) || []).length, 1);
@@ -157,20 +151,19 @@ test('shared facts view formats dates, groups repeated dates, and preserves pers
   assert.match(html, /1421, March 2/);
   assert.match(html, /href="\?person=eberhard"/);
   assert.match(html, /Undated/);
-  assert.match(html, /Legacy fact\./);
 });
 
 test('document facts use the shared view and respect the facts toggle', () => {
   const state = { showFacts: true };
   const { renderEntry } = createDocumentRenderer({ state, escapeHtml, ...options, getPeople: () => options.people });
-  const facts = [{ date: '1383', text: 'Wife of [eberhard].' }];
+  const facts = [{ date: '1383', type: 'spouse', person: 'A', of: 'eberhard' }];
   assert.equal(renderEntry({ facts }), `<article class="entry">${renderFactsView(facts, options)}</article>`);
   state.showFacts = false;
   assert.equal(renderEntry({ facts }), '<article class="entry"></article>');
 });
 
 test('shared facts view preserves the person screen ambiguity styling', () => {
-  const html = renderFactsView([{ text: 'Eberhard' }], {
+  const html = renderFactsView([{ type: 'generic', person: 'Eberhard', content: 'appeared.' }], {
     ...options, itemClass: () => ' class="entity-fact-ambiguous"',
   });
   assert.match(html, /<li class="entity-fact-ambiguous">/);
@@ -185,8 +178,8 @@ test('document facts inherit the entry or document date while explicit fact date
     entryAnchor: () => 'entry',
   });
   const doc = { date: '1383', entries: [
-    { facts: ['Legacy fact.', { text: 'Another fact.' }, { date: '1382', text: 'Earlier event.' }] },
-    { date: '1384', facts: [{ text: 'Entry date.' }] },
+    { facts: [{ type: 'generic', person: 'A', content: 'appeared.' }, { type: 'generic', person: 'B', content: 'appeared.' }, { date: '1382', type: 'generic', person: 'A', content: 'appeared earlier.' }] },
+    { date: '1384', facts: [{ type: 'generic', person: 'A', content: 'appeared.' }] },
   ] };
   const html = renderDocument(doc, 'data/documents/example.json', 0);
   assert.match(html, /datetime="1383"/);
@@ -194,7 +187,7 @@ test('document facts inherit the entry or document date while explicit fact date
   assert.match(html, /datetime="1384"/);
   assert.doesNotMatch(html, /Undated/);
   assert.equal((html.match(/datetime="1383"/g) || []).length, 1);
-  assert.equal(doc.entries[0].facts[0], 'Legacy fact.');
+  assert.equal(doc.entries[0].facts[0].person, 'A');
 });
 
 test('a book publication date is not used as a fact date', () => {
@@ -204,7 +197,7 @@ test('a book publication date is not used as a fact date', () => {
     documentTitle: () => 'Book', documentYear: () => '1872',
     markdownLinks: escapeHtml, entryAnchor: () => 'entry',
   });
-  const html = renderDocument({ date: '1872', entries: [{ facts: [{ text: 'Undated fact.' }] }] }, 'data/books/example.json', 0);
+  const html = renderDocument({ date: '1872', entries: [{ facts: [{ type: 'generic', person: 'A', content: 'appeared.' }] }] }, 'data/books/example.json', 0);
   assert.match(html, /Undated/);
   assert.doesNotMatch(html, /datetime="1872"/);
 });
@@ -314,7 +307,7 @@ test('unregistered typed names have working generic person pages', () => {
 
 
 test('source links are optional, preserve inline links, and address source entries', () => {
-  const facts = [{ date: '1400', text: '[eberhard] held Boxberg.' }];
+  const facts = [{ date: '1400', type: 'generic', person: 'eberhard', content: 'held Boxberg.' }];
   assert.doesNotMatch(renderFactsView(facts, options), /fact-source-link|data-fact-source/);
   for (const path of ['data/books/example.json', 'data/documents/example.json', 'data/images/images.json']) {
     const url = documentNavigationUrl(path, 2);
@@ -331,9 +324,9 @@ test('source links are optional, preserve inline links, and address source entri
 test('person and place fact rows link to the correct source entry after sorting', () => {
   const people = options.people;
   const documents = new Map([
-    ['data/books/example.json', { book: 'Example', entries: [{ facts: [{ date: '1400', text: '[eberhard] held Boxberg.' }] }] }],
-    ['data/documents/example.json', { date: '1380', entries: [{}, { facts: [{ text: '[eberhard] visited Boxberg.' }] }] }],
-    ['data/images/images.json', { entries: [{ facts: [{ date: '1390', text: '[eberhard] is depicted at Boxberg.' }] }] }],
+    ['data/books/example.json', { book: 'Example', entries: [{ facts: [{ date: '1400', type: 'generic', person: 'eberhard', content: 'held Boxberg.' }] }] }],
+    ['data/documents/example.json', { date: '1380', entries: [{}, { facts: [{ type: 'generic', person: 'eberhard', content: 'visited Boxberg.' }] }] }],
+    ['data/images/images.json', { entries: [{ facts: [{ date: '1390', type: 'generic', person: 'eberhard', content: 'is depicted at Boxberg.' }] }] }],
   ]);
   const state = { person: 'eberhard' };
   const screens = createEntityScreens({

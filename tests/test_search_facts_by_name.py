@@ -1,4 +1,4 @@
-"""Synthetic typed and legacy facts exercise search without migrating the corpus."""
+"""Synthetic facts exercise search without migrating the corpus."""
 import contextlib
 import importlib.util
 import io
@@ -153,19 +153,19 @@ class SearchFactsTests(unittest.TestCase):
         self.assertNotIn('[1872]', output)
         self.assertNotIn('[1880]', output)
         self.assertEqual(2, output.count('[1395]'))
-        self.assertEqual(2, output.count('[1396]'))
+        self.assertNotIn('[1396]', output)
 
-    def test_legacy_facts_and_runtime_seal_search_remain_available(self):
+    def test_legacy_facts_are_ignored_and_runtime_seal_search_remains_available(self):
         self.write('documents/legacy.json', self.document(
             'Eberhard von Rosenberg [eberhard_id] witnessed a charter.',
             {'text': 'Arnold von Rosenberg sold property.', 'date': '1396'},
             img=[{'seals': [{'person': 'Arnold von Rosenberg'}, {'person': 'Arnold von Rosenberg'}, {'person': 'unknown'}]}],
         ))
-        self.assertIn('Eberhard von Rosenberg [eberhard_id]', self.run_search('eberhard_id', direct=True))
+        self.assertEqual('No matching facts found.\n', self.run_search('eberhard_id', direct=True))
         output = self.run_search('known_arnold')
         self.assertIn('The seal of Arnold von Rosenberg [not recognised] is under document Example charter.', output)
         self.assertEqual(1, output.count('The seal'))
-        self.assertIn('[1396] Arnold von Rosenberg [not recognised] sold property.', output)
+        self.assertNotIn('sold property', output)
         self.assertEqual('No matching facts found.\n', self.run_search('known_arnold', direct=True))
 
     def test_cli_custom_data_dir_with_typed_facts(self):

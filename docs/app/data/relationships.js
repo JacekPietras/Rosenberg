@@ -56,11 +56,7 @@ export function expandEvidenceGraph(graph) {
   comparisons: (graph.comparisons || []).map((comparison) => ({ ...comparison, sources: comparison.sources.map(source) })) };
 }
 
-function literalReference(text, reference) {
-  const parts = text.split(reference);
-  const word = /[\p{L}\p{N}_]/u;
-  return parts.some((part, index) => index < parts.length - 1 && !word.test(part.at(-1) || '') && !word.test(parts[index + 1][0] || ''));
-}
+
 
 function treeMetadata(value) {
   return value && value.schema === undefined && value.views === undefined ? { ...value, views: ['with-guesses'] } : value;
@@ -148,16 +144,8 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
           let named = !!node.registry && people.some((person) => person.id === node.registry && person.name === node.name);
           for (const mention of node.mentions) {
             const fact = await sourceFact(mention.source, view);
-            let reference;
-            if (mention.field === 'text') {
-              reference = mention.reference;
-              const text = typeof fact === 'string' ? fact : typeof fact.text === 'string' ? fact.text : '';
-              const fixed = people.some((person) => person.id && person.id === reference);
-              if (typeof reference !== 'string' || !reference || !(fixed ? text.includes(`[${reference}]`) : literalReference(text, reference))) throw new Error('Invalid context participant reference');
-            } else {
-              if (!['person', 'of'].includes(mention.field) || typeof fact[mention.field] !== 'string') throw new Error('Invalid reconstructed participant');
-              reference = fact[mention.field];
-            }
+            if (!fact || !['person', 'of'].includes(mention.field) || typeof fact[mention.field] !== 'string') throw new Error('Invalid reconstructed participant');
+            const reference = fact[mention.field];
             if (people.some((person) => person.id && person.id === reference) && node.key !== reference) throw new Error('Reconstructed occurrence overrides a fixed anchor');
             named ||= reference === node.name;
             const key = JSON.stringify([mention.source.path, mention.source.pointer, mention.field, mention.reference || '']);

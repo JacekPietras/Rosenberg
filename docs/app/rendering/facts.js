@@ -2,7 +2,6 @@ import { escapeHtml } from './html.js';
 
 const RELATIONS = { parent: 'is parent of', sibling: 'is sibling of', spouse: 'is spouse of' };
 const hasDate = (value) => value && typeof value === 'object' && Object.hasOwn(value, 'date');
-const escapePattern = (value) => String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 export function isTypedFact(fact) {
   return !!fact && typeof fact === 'object' && Object.hasOwn(fact, 'type');
@@ -41,7 +40,7 @@ function typedText(fact, participant, literal) {
 }
 
 export function factText(fact, people = []) {
-  if (!isTypedFact(fact)) return fact && typeof fact === 'object' ? String(fact.text || '') : String(fact || '');
+  if (!isTypedFact(fact)) return '';
   return typedText(fact, (value, designations) => {
     const title = titles(designations);
     return `${personName(value, people)}${title ? `, ${title}` : ''}`;
@@ -66,10 +65,6 @@ export function factPersonMatch(fact, query, people = []) {
     }
     return nameMatch ? 'ambiguous' : '';
   }
-  const text = factText(fact);
-  if (selected && text.includes(`[${selected.id}]`)) return 'direct';
-  if (new RegExp(`(?<![\\p{L}\\p{N}])${escapePattern(name)}(?![\\p{L}\\p{N}])`, 'iu').test(text)) return selected ? 'ambiguous' : 'direct';
-  if (!selected && people.some((person) => person.id && sameName(person.name) && text.includes(`[${person.id}]`))) return 'direct';
   return '';
 }
 
@@ -84,27 +79,5 @@ export function renderFactText(fact, { people = [], personNames = [], inlineMark
       return `<a class="person-link" href="?person=${encodeURIComponent(person?.id || name)}">${escapeHtml(name)}</a>${title ? `, ${escapeHtml(title)}` : ''}`;
     }, escapeHtml);
   }
-  const links = [];
-  let text = factText(fact).replace(/\[([^\]]+)\]/g, (match, id) => {
-    const person = peopleById.get(id);
-    if (!person) return match;
-    const marker = `\u0001FACTPERSON${links.length}\u0002`;
-    links.push(`<a class="person-link" href="?person=${encodeURIComponent(person.id)}">${inlineMarkup(person.name, false)}</a>`);
-    return marker;
-  });
-  const names = [...new Set([...people.map((person) => person.name), ...personNames].filter(Boolean))]
-    .sort((left, right) => right.length - left.length)
-    .map(escapePattern);
-  if (names.length) {
-    const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?:${names.join('|')})(?![\\p{L}\\p{N}])`, 'giu');
-    text = text.replace(pattern, (match) => {
-      const name = [...people.map((person) => person.name), ...personNames]
-        .find((name) => name.toLocaleLowerCase() === match.toLocaleLowerCase());
-      const marker = `\u0001FACTPERSON${links.length}\u0002`;
-      links.push(`<a class="person-link" href="?person=${encodeURIComponent(name)}">${inlineMarkup(match, false)}</a>`);
-      return marker;
-    });
-  }
-  const rendered = inlineMarkup(text, false);
-  return rendered.replace(/\u0001FACTPERSON(\d+)\u0002/g, (match, index) => links[Number(index)] ?? match);
+  return '';
 }

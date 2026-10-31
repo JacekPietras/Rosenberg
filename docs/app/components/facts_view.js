@@ -1,8 +1,10 @@
-import { renderFactText, factDate, isTypedFact } from '../rendering/facts.js?v=7';
+import { renderFactText, factDate, isTypedFact } from '../rendering/facts.js?v=8';
 import { formatDate } from '../rendering/dates.js';
 import { escapeHtml } from '../rendering/html.js';
 
 export function renderFactsView(facts, { people = [], personNames = [], inlineMarkup, itemClass = () => '', defaultDate = '', listClass = '', sourceHref = () => '' }) {
+  facts = facts.filter(isTypedFact);
+  if (!facts.length) return '';
   const knownNames = [...personNames, ...facts.filter(isTypedFact).flatMap((fact) => [fact.person, fact.of])
     .filter((value) => typeof value === 'string' && !people.some((person) => person.id === value))];
   const classes = ['facts', 'facts-view', listClass].filter(Boolean).join(' ');

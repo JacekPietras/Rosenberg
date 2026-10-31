@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only syntax checks for the typed facts and guesses.
+"""Migrate von und zu names and check typed facts and guesses.
 
 Examples:
     python3 scripts/validate_facts.py
@@ -372,6 +372,8 @@ def main(argv=None):
     parser.add_argument('--people', type=Path, default=ROOT / 'data/people.json', help='person registry JSON')
     parser.add_argument('--strict-migration', action='store_true', help='compatibility option; all facts and guesses already require typed objects and historical dates')
     args = parser.parse_args(argv)
+    from migrate_von_und_zu import main as migrate_von_und_zu
+    migrate_von_und_zu([*(str(path) for path in args.paths), '--apply'])
     validator = Validator(args.strict_migration)
     validator.load_people(args.people.resolve())
     for path in collect_paths(args.paths or [ROOT / 'data'], validator):

@@ -60,13 +60,13 @@ Write `english` as a faithful translation of the stored text:
 Follow `rules/facts.md` and `rules/json-formats.md`, and the `fact-extraction-review` skill if the work is substantial.
 
 - Verify every existing fact against the German text. Correct or delete unsupported and contradicted facts.
-- Use typed facts (`parent`, `sibling`, `spouse`, `kin`, `title`) for stated relationships and titles. Use prose facts for the rest.
-- Record death separately. `selig` or "deceased" gives "was deceased" (by the document date) and nothing more.
+- Every fact is a typed object. Use `parent`, `sibling`, `spouse`, `kin` and `title` for stated relationships and titles, and `generic` (`person`, optional `personTitle`, `content` starting with the predicate) for the rest.
+- `selig` or "deceased" sets `personDeceased`/`ofDeceased: true` on each fact naming that person, plus a `death` fact with `diedBefore` the day after the document date. Never infer more.
 - Omit prices and amounts. State the people, property, place and parties of each transaction. One assertion per fact.
 - Normalize names through `data/names.md` (for example Else to Elisabeth, Engelhart to Engelhard). The validator rejects unnormalized given names. Check places with `python3 scripts/list_place_variations.py`.
 - Do not link `people.json` IDs or merge namesakes without evidence in this document. Report possible matches instead.
 - Do not infer relationships or residence from proximity. Put assumptions in `guesses`, not `facts`.
-- Use the source's own designation in title arrays (`selig`, not `verstorben`).
+- Use the source's own designations in title arrays (`der Junge`, `Knecht`, `zu Boxberg`). Never put `selig` or `verstorben` there.
 
 ## 7. Verify and report
 

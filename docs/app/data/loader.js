@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=9';
+import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=10';
 
 export function createDataLoader({
   repository,

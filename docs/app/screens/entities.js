@@ -1,9 +1,9 @@
 import { imageCardMarkup } from '../rendering/images.js?v=13';
-import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rendering/facts.js?v=7';
-import { renderFactsView } from '../components/facts_view.js?v=7';
+import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rendering/facts.js?v=8';
+import { renderFactsView } from '../components/facts_view.js?v=8';
 import { findPlaceByName } from '../data/entities.js?v=87';
-import { resolvePerson, resolveEvidencePointer } from '../data/relationships.js?v=9';
-import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=9';
+import { resolvePerson, resolveEvidencePointer } from '../data/relationships.js?v=10';
+import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=10';
 
 export function createEntityScreens({
   state,
@@ -49,7 +49,7 @@ export function createEntityScreens({
     const personQuery = state.person || '';
     const facts = mentions.flatMap(({ doc, path, entry, index }, mentionIndex) => (Array.isArray(entry.facts) ? entry.facts : [])
       .map((fact, factIndex) => ({
-        ...(fact && typeof fact === 'object' ? fact : { text: fact }),
+        ...fact,
         date: sourceFactDate(fact, doc, entry, path),
         mentionIndex, factIndex, sourceHref: documentNavigationUrl(path, index),
         personMatch: personQuery ? factPersonMatch(fact, personQuery, people) : 'direct',
@@ -125,7 +125,7 @@ export function createEntityScreens({
         const doc = getDocuments().get(source.path);
         const fact = resolveEvidencePointer(doc, source.pointer);
         const index = Number(source.pointer.match(/\/entries\/(\d+)/)?.[1] || 0);
-        return `<article class="document"><p class="entry-date">${source.pointer.includes('/guesses/') ? 'Guess · ' : ''}${escapeHtml(formatDate(date))}</p>${renderFactsView([{ ...(typeof fact === 'string' ? { text: fact } : fact), date }], { people, personNames: factPersonNames(), inlineMarkup, sourceHref: () => documentNavigationUrl(source.path, index) })}<p class="source"><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></p></article>`;
+        return `<article class="document"><p class="entry-date">${source.pointer.includes('/guesses/') ? 'Guess · ' : ''}${escapeHtml(formatDate(date))}</p>${renderFactsView([{ ...fact, date }], { people, personNames: factPersonNames(), inlineMarkup, sourceHref: () => documentNavigationUrl(source.path, index) })}<p class="source"><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></p></article>`;
       }).join('');
       return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2><p>${node.status === 'contextual' ? 'Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.' : 'Source person; correspondence with other mentions remains open.'} No permanent person ID has been created.</p></article>${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, node.key)}<h3>Source attestations</h3>${attestations}`;
     }
@@ -147,7 +147,7 @@ export function createEntityScreens({
     };
     const imageEntries = getDocuments().get('data/images/images.json')?.entries || [];
     const relatedImages = imageEntries.filter((entry) => matchesPerson(
-      [entry.title, entry.description, ...(Array.isArray(entry.facts) ? entry.facts : []).filter((fact) => !isTypedFact(fact)).map((fact) => factText(fact, people))].join(' '), entry.personId || entry.personid,
+      [entry.title, entry.description].join(' '), entry.personId || entry.personid,
     ) || (entry.facts || []).some((fact) => isTypedFact(fact) && factPersonMatch(fact, state.person, people) === 'direct'));
     const imagesMarkup = relatedImages.length ? `<section class="entity-images"><h3 class="entity-section-title">Images</h3><div class="models-grid armorial-grid">${relatedImages.map((entry) => imageCardMarkup(entry, { titleMarkup: inlineMarkup })).join('')}</div></section>` : '';
     const sealEntries = [];
