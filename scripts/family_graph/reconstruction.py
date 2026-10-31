@@ -16,8 +16,9 @@ from .model import fingerprint, Assertion, Mention
 from .policy import AGE_TITLES
 from .kinship import generation, tree_paths
 from .dates import death_interval
-from .probability import (ProbabilityModel, Profile, PERSON_NAME, YEAR, chronology_blocked, decay, gap_years, mention_rank,
-                          reliability, single_day, speculative_parent_claim, title_category)
+from .probability import (ProbabilityModel, Profile, PERSON_NAME, YEAR, chronology, chronology_blocked, cumulative, decay,
+                          gap_years, living_span, mention_rank, names_relative, reliability, single_day,
+                          speculative_parent_claim, title_category)
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
@@ -163,12 +164,26 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             if mention.field != 'text' and not speculative_parent_claim(mention):
                 if mention.deceased:
                     alive[where].add(False)
-                elif mention.assertion.original['type'] != 'death':
+                elif mention.assertion.original['type'] != 'death' and not names_relative(mention):
                     alive[where].add(True)
             if mention.field == 'person' and mention.assertion.original['type'] == 'generic':
                 contents[where, mention.assertion.original['content']].add(mention.assertion.source.key)
         return (any(len(values) > 1 for values in ranks.values()) or any(len(values) > 1 for values in alive.values())
                 or any(len(values) > 1 for values in contents.values()))
+
+    def too_old(handles):
+        """Impossible for any source type: too long a life or an impossible age."""
+        group = [mentions[h] for h in handles]
+        if living_span(group, model.settings, names) > model.settings['bestCandidate']['maxLivingSpanYears']:
+            return True
+        level = cumulative(chronology(group, model.settings, names), 0)
+        return 'birth' in level and 'last' in level and (level['last'][0] - level['birth'][0]) / YEAR > model.settings['maxAgeYears']
+
+    def new_too_old(component):
+        parts = defaultdict(list)
+        for h in component:
+            parts[find(h)].append(h)
+        return too_old(component) and not any(too_old(part) for part in parts.values())
 
     def new_passage_conflict(component):
         # Conflicts already inside one existing identity are data problems,
@@ -196,7 +211,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             # Different age designations in one passage name different people.
             if any(len(titles & AGE_TITLES) > 1 for titles in by_scope.values()):
                 return False
-            if (new is None or index < new) and new_passage_conflict(component):
+            if (new is None or index < new) and (new_passage_conflict(component) or new_too_old(component)):
                 return False
         edges, siblings = [], []
         same_named_parents = defaultdict(set)
@@ -688,6 +703,21 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     relative(own, other, ('family context', '', ''), [assertion], membership[other_mention.handle])
             if kind == 'parent':
                 parents[right][left].append(assertion)
+        # A child is born at most `posthumousBirthYears` after a parent's death;
+        # the bound feeds the child's ordinary age rules and penalties.
+        deaths = {}
+        for assertion in assertions:
+            if assertion.original['type'] != 'parent':
+                continue
+            father, child = (find(m.handle) for m in assertion.mentions)
+            if father == child:
+                continue
+            if father not in deaths:
+                deaths[father] = [(value, level['deathEnd']) for value, level in
+                                  chronology(profiles[father].mentions, model.settings, names).items() if 'deathEnd' in level]
+            for value, (end, source) in deaths[father]:
+                weight = min(value, reliability(assertion.source, model.settings))
+                profiles[child].derived.append((weight, end + round(model.settings['posthumousBirthYears'] * YEAR), source))
         for child, co_parents in parents.items():
             for left, right in combinations(co_parents, 2):
                 # Repeated attestations of a same-named parent are not evidence

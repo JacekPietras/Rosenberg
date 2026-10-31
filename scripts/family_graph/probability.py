@@ -38,6 +38,7 @@ DEFAULTS = {
     'deathConflictPenalty': 20.0, 'maxRounds': 12,
     'sameDateRankConflictPenalty': 3.0,
     'retrospectiveLookBackYears': 20.0, 'passageTitleAgreementWeight': 1.0,
+    'posthumousBirthYears': 1.0,
     'possibleSameDisplayProbability': 0.5,
     'bestCandidate': {'maxLivingSpanYears': 64.0, 'attachmentTieLogOdds': 0.25,
                       'minJoinEvidence': 0.5, 'maxRelativePathSteps': 6},
@@ -118,8 +119,16 @@ def speculative_parent_claim(mention):
                     assertion.original['content'], re.I)
 
 
-def chronology(mentions, settings, names=None):
-    """Extremes per reliability level; an unmarked typed mention means alive."""
+def names_relative(mention):
+    """Being named as someone's parent or sibling says nothing about being alive then."""
+    kind = mention.assertion.original['type']
+    return kind == 'sibling' or kind == 'parent' and mention.field == 'person'
+
+
+def chronology(mentions, settings, names=None, derived=()):
+    """Extremes per reliability level; an unmarked typed mention means alive.
+
+    `derived` adds latest-birth bounds implied by relatives: (level, ordinal, source)."""
     levels = {}
     def keep(level, key, value, source, larger):
         current = level.get(key)
@@ -148,10 +157,12 @@ def chronology(mentions, settings, names=None):
             keep(level, 'deathEnd', died[1].toordinal(), source, False)
             if mention.assertion.original.get('diedOn'):
                 keep(level, 'last', died[0].toordinal(), source, True)
-        elif mention.assertion.original['type'] != 'death':
+        elif mention.assertion.original['type'] != 'death' and not names_relative(mention):
             keep(level, 'alive', start.toordinal(), source, True)
             keep(level, 'first', end.toordinal(), source, False)
             keep(level, 'last', start.toordinal(), source, True)
+    for value, ordinal, source in derived:
+        keep(levels.setdefault(value, {}), 'birth', ordinal, source, False)
     return levels
 
 
@@ -289,6 +300,8 @@ class Profile:
     designation_places: dict = field(default_factory=dict)
     # (rank, source, bounds, passage) for Ritter/miles versus Edelknecht/armiger.
     ranks: list = field(default_factory=list)
+    # Latest-birth bounds from a parent's death: (reliability, ordinal, source).
+    derived: list = field(default_factory=list)
 
 
 # Deliberately deterministic; no extraction of relationships from prose.
@@ -412,7 +425,7 @@ class ProbabilityModel:
         blocks, hard = [], []
         # Time distance alone is neutral; only the years a merge adds to the
         # minimum implied age count, and only beyond a comfortable age.
-        own = chronology(left.mentions, p, self.names), chronology(right.mentions, p, self.names)
+        own = chronology(left.mentions, p, self.names, left.derived), chronology(right.mentions, p, self.names, right.derived)
         value, age, year, sources, blocked = age_penalty(merge_chronology(*own), p)
         if blocked:
             blocks.append(f'impossible age: at least {age:.0f} years old by {year}')

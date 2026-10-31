@@ -2987,7 +2987,7 @@
     },
     {
       "german": "1555, 17. Aug., belehnt Kurfürſt Daniel v. Mainz den Albrecht v. Roſenberg, Eberhards v. R. Sohn, mit den auf Kunz v. R., ob⸗gemelts Eberhards Bruder, Albrechts Vater, wechſels- und vertragsweis gekommenen Gütern, nämlich das Schloß Oberſchüpf ſamt dem Flecken darunter zum halben Theil, item halb Unterſchüpf, item einen Hof mit ſeiner Zugehörung, item ein Viertel am Dorf Daynbach, item das Halb—theil am Dorf Uiffingen, item 5 Morgen Wieſen zwiſchen Schwagern und Niederſchüpf und das Dorf Kuprichhauſen ganz.",
-      "english": "On August 17, 1555, Elector Daniel of Mainz enfeoffed Albrecht von Rosenberg, son of Eberhard von Rosenberg, with the properties that had come to him by exchange and agreement from Kunz von Rosenberg, the aforementioned Eberhard’s brother and Albrecht’s father. They were: one half of Obereschüpf Castle and the settlement below it; half of Untereschüpf; a farm with its appurtenances; a quarter of the village of Dainbach; half of Uiffingen; five acres of meadow between Schweigern and Niedereschüpf; and all of Kupprichhausen.",
+      "english": "On August 17, 1555, Elector Daniel of Mainz enfeoffed Albrecht von Rosenberg, son of Eberhard von Rosenberg, with the properties that had come to him by exchange and agreement from Kunz von Rosenberg, brother of the aforementioned Eberhard, Albrecht’s father. They were: one half of Obereschüpf Castle and the settlement below it; half of Untereschüpf; a farm with its appurtenances; a quarter of the village of Dainbach; half of Uiffingen; five acres of meadow between Schweigern and Niedereschüpf; and all of Kupprichhausen.",
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -3000,17 +3000,9 @@
           "type": "generic",
           "content": "received as a fief half of Obereschüpf Castle and settlement, half of Untereschüpf, a farm, a quarter of Dainbach, half of Uiffingen, five acres of meadow, and all of Kupprichhausen from Elector Daniel of Mainz.",
           "date": "1555-08-17"
-        }
-      ],
-      "guesses": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "parent",
-          "of": "Albrecht von Rosenberg",
-          "date": "1555-08-17"
         },
         {
-          "person": "Kunz von Rosenberg",
+          "person": "Eberhard von Rosenberg",
           "type": "parent",
           "of": "Albrecht von Rosenberg",
           "date": "1555-08-17"
@@ -3886,7 +3878,7 @@
           "type": "generic",
           "content": "left no children.",
           "date": "1572"
-        }ri
+        }
       ]
     },
     {

@@ -116,6 +116,22 @@ Use `--mode download` to cache the files locally, or `--image-dir SUBDIRECTORY`
 to choose a subdirectory under `data/documents/`. Retain the archive source
 signature and follow its usage terms.
 
+### Selected archive images
+
+Download one selected viewer page with:
+
+```text
+python3 scripts/download_archive_image.py \
+  'https://digi.vatlib.it/view/MSS_Vat.lat.10127' --folio 108r \
+  --output /tmp/vat_lat_10127_108r.jpg
+```
+
+Supports Internet Archive, DigiVatLib, BLB Karlsruhe, GNM, Library of Congress
+RBC, and Findbuch. Use `--resolve-only` to inspect image details. The script
+downloads only; follow the
+[archive image skill](skills/archive-image-download/SKILL.md) for verification,
+Drive uploads, catalog entries, and adding support for new viewers.
+
 ### Bavarikon images
 
 Parse image URLs from a Bavarikon object page with:

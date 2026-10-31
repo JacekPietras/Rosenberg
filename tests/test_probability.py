@@ -716,11 +716,16 @@ class ProbabilityTests(unittest.TestCase):
 
     def test_explicit_deceased_marker_separates_but_a_death_record_does_not(self):
         late = {'type': 'parent', 'person': 'Alex von South', 'personDeceased': True, 'of': 'Bea von South'}
-        living = {'type': 'sibling', 'person': 'Alex von South', 'of': 'Chris von South'}
-        graph = build(self.passage([late, living])).evidence_graph
+        living = {'type': 'generic', 'person': 'Alex von South', 'content': 'sealed the charter.'}
+        sibling = {'type': 'spouse', 'person': 'Alex von South', 'of': 'Chris von South'}
+        graph = build(self.passage([late, living, sibling])).evidence_graph
         self.assertEqual(2, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
+        # Being named as a brother is not a living mention.
+        brother = {'type': 'sibling', 'person': 'Alex von South', 'of': 'Chris von South'}
+        graph = build(self.passage([late, brother])).evidence_graph
+        self.assertEqual(1, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
         death = {'type': 'death', 'person': 'Alex von South', 'diedOn': '1381'}
-        graph = build(self.passage([living, death], date='1381')).evidence_graph
+        graph = build(self.passage([sibling, living, death], date='1381')).evidence_graph
         alex = [n for n in graph['nodes'] if n['name'] == 'Alex von South']
         self.assertEqual(1, len(alex))
 
@@ -817,7 +822,25 @@ class ProbabilityTests(unittest.TestCase):
                                     'ofTitle': ['Ritter'], 'date': '1383'}])
         self.assertEqual(2, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
         # Living mentions more than 64 years apart stay two people.
-        graph = self.book_section([titled('Ritter', 'Bea von East', '1300'), titled('Ritter', 'Chris von South', '1390')])
-        self.assertFalse(any(link['reason'] == 'same name and titles in one document or section' for link in graph['links']))
+        knight = lambda date: {'type': 'title', 'person': 'Alex von South', 'personTitle': ['Ritter'], 'date': date}
+        graph = self.book_section([titled('Ritter', 'Bea von East', '1300'), knight('1300'),
+                                   titled('Ritter', 'Chris von South', '1390'), knight('1390')])
+        pointers = lambda node: {m['source']['pointer'] for m in node['mentions']}
+        self.assertFalse(any({'/entries/0/facts/1', '/entries/0/facts/3'} <= pointers(n) for n in graph['nodes']))
+
+    def test_a_parent_can_be_named_after_death_and_bounds_the_childs_birth(self):
+        # "Albrecht, son of Eberhard" years after Eberhard's death is not a mention after death.
+        graph = self.book_section([{'type': 'death', 'person': 'Alex von South', 'diedOn': '1519', 'date': '1519'},
+                                   {'type': 'parent', 'person': 'Alex von South', 'of': 'Chris von South', 'date': '1555'}])
+        self.assertEqual(1, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
+        from family_graph.probability import chronology
+        _, parent = next(walk_assertions({'facts': [{'type': 'parent', 'person': 'Alex von South', 'of': 'Bea', 'date': '1555'}]}, 'data/books/x.json'))
+        self.assertNotIn('alive', next(iter(chronology([parent.mentions[0]], DEFAULTS).values())))
+        # A father dead in 1300 makes a son alive in 1375 at least 74: the age penalty applies.
+        child = self.profile('Ritter', '1375')
+        child.derived = [(1.0, __import__('datetime').date(1301, 12, 31).toordinal(), child.mentions[0].assertion.source)]
+        other = self.profile('Ritter', '1381')
+        record = self.model.compare(child, other)
+        self.assertTrue(any(f['name'].startswith('age: at least 7') and f['contribution'] < 0 for f in record['features']))
 
 if __name__ == '__main__': unittest.main()

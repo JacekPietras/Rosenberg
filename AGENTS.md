@@ -21,6 +21,9 @@ There is no automated merge, sorting, queue, report, or temporary-file workflow.
 
 ## Images
 
+For downloading a selected image from an archive viewer, follow
+[`archive-image-download`](skills/archive-image-download/SKILL.md).
+
 Majority of images with references to Google Drive are available under https://drive.google.com/drive/folders/1IsXSTRMEPEmAAgwtbOq_hUa6P3ge-vbU?usp=drive_link
 You are free to scan it and make direct references.
 

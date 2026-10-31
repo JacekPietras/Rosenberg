@@ -206,6 +206,19 @@ distance between attestation intervals. "The late Konrad, Vizedom zu Amberg"
 (1401) is therefore compared as an office held 1381–1401, but does not match a
 father who held the same hereditary office 50 years earlier at full weight.
 
+### Parents named after their death
+
+The parent in a `parent` fact, and both people in a `sibling` fact, are not
+living mentions: "Albrecht, son of Eberhard" (1555) and "Kunz, brother of
+Eberhard" (1555) are compatible with Eberhard's death in 1519. The parent must
+still have been an adult. The relation instead bounds the child: born at most
+`posthumousBirthYears` (`1`) after the parent's death bound. That bound enters
+the child's birth interval, so the ordinary age penalty and impossible-age block
+apply (a father dead in 1300 makes a son alive in 1375 at least 74).
+
+The 64-year living span and an impossible age (any source type) are checked on
+every proposed identity in every stage.
+
 ### Penalties, blocks and age
 
 New: same-date opposite ranks across sources (Ritter/miles versus
@@ -509,8 +522,8 @@ speculative-parent evidence are stage-4 features. Tests:
 per century, and passages whose same-name occurrences stay in several
 identities. Nodes carry `possiblySame` for undecided candidates.
 
-Result on current data: 677 → 501 identities, 258 → 150 family trees (largest
-25 → 67); Eberhard von Rosenberg 65 → 30 nodes, Konrad 40 → 24.
+Result on current data: 677 → 488 identities, 258 → 146 family trees (largest
+25 → 70); Eberhard von Rosenberg 65 → 26 nodes.
 
 In pass 0, an occurrence that fits more than one group of its section stays for
 the later stages, and groups that conflict with each other are both left

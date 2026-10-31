@@ -68,6 +68,7 @@
   "sameDateRankConflictPenalty": 3.0,
   "retrospectiveLookBackYears": 20.0,
   "passageTitleAgreementWeight": 1.0,
+  "posthumousBirthYears": 1.0,
   "possibleSameDisplayProbability": 0.5,
   "bestCandidate": {
     "maxLivingSpanYears": 64.0,

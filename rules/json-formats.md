@@ -525,7 +525,11 @@ does not supply a new parent relationship or corroborate itself. Its uncertainty
 label and source pointer remain unchanged.
 
 A typed mention without a deceased marker means the person was alive at the
-fact's date. A retrospective personal generic guess beginning "may/might/could
+fact's date, except the parent in a `parent` fact and both people in a
+`sibling` fact: being named as someone's parent or sibling says nothing about
+being alive then. Instead, a child is born at most
+`posthumousBirthYears` after a parent's death, which bounds the child's birth
+and feeds the child's age penalty and impossible-age block. A retrospective personal generic guess beginning "may/might/could
 have been the mother/father/parent of" does not assert life at the date of the
 retrospective discussion. An explicit deceased marker still supplies its bound;
 no deceased marker or replacement date is inferred. A death fact or deceased marker supplies a death bound. Each
@@ -657,7 +661,7 @@ weights/cap/half-life, `financialCounterpartyWeight`, family weights, relation f
 cap and half-life,
 elder-before-younger and Ritter-before-Edelknecht penalties, death conflict
 penalty, `maxRounds`, `sameDateRankConflictPenalty`, `retrospectiveLookBackYears`,
-`passageTitleAgreementWeight`, `possibleSameDisplayProbability`, `bestCandidate`
+`passageTitleAgreementWeight`, `posthumousBirthYears`, `possibleSameDisplayProbability`, `bestCandidate`
 (`maxLivingSpanYears`, `attachmentTieLogOdds`, `minJoinEvidence`,
 `maxRelativePathSteps`), and `secondPass` (`maxPathSteps`,
 `specificityFactors` for exact/narrow/broad kinship terms, `eliminationWeight`,
