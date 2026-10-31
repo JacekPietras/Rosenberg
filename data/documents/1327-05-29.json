@@ -18,23 +18,20 @@
         {
           "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "with his wife Irmtraut, sold the Hohe Mühle beside Rosenberg Castle to Schöntal Abbey.",
-          "personTitle": [
-            "Ritter"
-          ]
+          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold the Hohe Mühle beside Rosenberg Castle to Schöntal Abbey."
         },
         {
           "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "with his wife Irmtraut, sold another mill on the Kirnau between Sindolsheim and Rosenberg to Schöntal Abbey.",
-          "personTitle": [
-            "Ritter"
-          ]
+          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold another mill on the Kirnau between Sindolsheim and Rosenberg to Schöntal Abbey."
         },
         {
           "type": "generic",
           "person": "Arnold von Rosenberg",
-          "content": "acted as a surety for the sale."
+          "content": "acted as a surety for the sale.",
+          "personTitle": [
+            "Ritter"
+          ]
         }
       ],
       "img": [
