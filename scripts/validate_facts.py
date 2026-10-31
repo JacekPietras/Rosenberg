@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
-"""Read-only syntax checks for the proposed typed facts and legacy facts.
+"""Read-only syntax checks for the typed facts and guesses.
 
 Examples:
     python3 scripts/validate_facts.py
     python3 scripts/validate_facts.py data/documents/1397-04-29.json
-    python3 scripts/validate_facts.py --strict-migration data/books data/notes
+    python3 scripts/validate_facts.py data/books data/notes
 
 The source assertion schema is in rules/json-formats.md. This script does
 not verify source support or historical identity and does not build a graph.
-Legacy strings and text objects remain accepted by default outside books.
-Book facts and guesses always require explicit historical dates. Strict
-migration also requires date-bearing objects for all facts and guesses in
-notes, including free text.
+Every assertion must be typed. Books and notes require explicit historical dates.
 """
 
 import argparse
@@ -25,7 +22,7 @@ from place_names import resolve_place_names
 
 ROOT = Path(__file__).resolve().parents[1]
 RELATIONS = frozenset({'parent', 'sibling', 'spouse', 'kin'})
-TYPES = RELATIONS | {'title', 'death'}
+TYPES = RELATIONS | {'title', 'death', 'generic'}
 MISSING = object()
 DATE_PATTERN = re.compile(r'[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?\Z')
 
@@ -92,7 +89,11 @@ class Validator:
         self.load_name_variants()
 
     def report(self, location, message, severity='error'):
-        self.diagnostics.append(Diagnostic(str(location), severity, message))
+        location = str(location)
+        repository_prefix = str(self.root.resolve()) + '/'
+        if location.startswith(repository_prefix):
+            location = '/' + location[len(repository_prefix):]
+        self.diagnostics.append(Diagnostic(location, severity, message))
 
     def read_json(self, path):
         try:
@@ -240,28 +241,15 @@ class Validator:
     def check_fact(self, fact, location, require_date, explicit_date_required,
                    inherited, document_source=False, guess=False):
         self.counts['guesses' if guess else 'facts'] += 1
-        if isinstance(fact, str):
-            self.check_text_person_references(fact, location)
-            if not guess:
-                self.counts['legacy'] += 1
-            if not self.nonblank(fact):
-                self.report(location, 'fact text must not be empty')
-            if guess:
-                if explicit_date_required:
-                    self.report(location, 'this source requires guesses to be objects with an explicit historical date')
-                else:
-                    self.report(location, 'undated legacy guess requires historical date review', 'warning')
-            elif explicit_date_required:
-                self.report(location, 'this source requires facts to be objects with an explicit historical date')
-            elif require_date and self.strict_migration:
-                self.report(location, 'books/notes facts require an object with an explicit date in strict migration mode')
-            return
         if not isinstance(fact, dict):
-            self.report(location, 'fact must be a string or object')
+            self.report(location, 'fact or guess must be a typed object')
             return
         typed = 'type' in fact
+        if not typed:
+            self.report(location + '/type', 'required field is missing; use a supported typed object')
+            return
         if not guess:
-            self.counts['typed' if typed else 'legacy'] += 1
+            self.counts['typed'] += 1
         if typed:
             kind = fact['type']
             if not isinstance(kind, str) or kind not in TYPES:
@@ -275,6 +263,14 @@ class Validator:
             elif kind == 'title':
                 allowed.add('personDeceased')
                 required.add('personTitle')
+            elif kind == 'generic':
+                allowed |= {'content', 'personDeceased'}
+                required.add('content')
+                if 'content' in fact:
+                    if not self.nonblank(fact['content']):
+                        self.report(location + '/content', 'expected a non-empty content string')
+                    else:
+                        self.check_text_person_references(fact['content'], location + '/content')
             elif kind == 'death':
                 allowed |= {'diedOn', 'diedBefore', 'circumstances'}
                 death_fields = {'diedOn', 'diedBefore'} & set(fact)
@@ -303,13 +299,6 @@ class Validator:
                     self.report(location + '/' + field, 'expected true when the source identifies this participant as deceased; otherwise omit the field')
             if kind == 'kin' and 'term' in fact and not self.nonblank(fact['term']):
                 self.report(location + '/term', 'expected a non-empty kinship term string')
-        else:
-            for field in sorted(set(fact) - {'date', 'text'}):
-                self.report(location + '/' + field, 'legacy text facts support only date and text')
-            if not self.nonblank(fact.get('text')):
-                self.report(location + '/text', 'expected non-empty legacy fact text')
-            else:
-                self.check_text_person_references(fact['text'], location + '/text')
         if 'date' in fact:
             if document_source and inherited is not MISSING and fact['date'] == inherited:
                 self.report(
@@ -317,15 +306,9 @@ class Validator:
                     'redundant document date; omit this field to inherit the enclosing document or entry date',
                 )
             self.check_date(fact['date'], location + '/date')
-        elif guess and explicit_date_required:
-            self.report(location + '/date', 'guesses require an explicit historical date')
-        elif guess and document_source and typed:
-            self.check_date(inherited, location + '/date (inherited)', inherited=True)
-        elif guess:
-            self.report(location + '/date', 'undated legacy guess requires historical date review', 'warning')
-        elif explicit_date_required or (require_date and (typed or self.strict_migration)):
-            self.report(location + '/date', 'books/notes facts require an explicit historical date')
-        elif typed:
+        elif require_date or explicit_date_required:
+            self.report(location + '/date', 'books/notes facts and guesses require an explicit historical date')
+        else:
             self.check_date(inherited, location + '/date (inherited)', inherited=True)
 
     def validate_file(self, path):
@@ -385,7 +368,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('paths', nargs='*', type=Path, help='JSON files or directories (default: repository data/)')
     parser.add_argument('--people', type=Path, default=ROOT / 'data/people.json', help='person registry JSON')
-    parser.add_argument('--strict-migration', action='store_true', help='also require explicit date-bearing objects for all notes facts')
+    parser.add_argument('--strict-migration', action='store_true', help='compatibility option; all facts and guesses already require typed objects and historical dates')
     args = parser.parse_args(argv)
     validator = Validator(args.strict_migration)
     validator.load_people(args.people.resolve())
@@ -396,7 +379,7 @@ def main(argv=None):
     errors = sum(item.severity == 'error' for item in validator.diagnostics)
     warnings = len(validator.diagnostics) - errors
     c = validator.counts
-    print(f'Checked {c["files"]} files, {c["facts"]} facts ({c["typed"]} typed, {c["legacy"]} legacy), {c["guesses"]} guesses: {errors} errors, {warnings} warnings.')
+    print(f'Checked {c["files"]} files, {c["facts"]} facts ({c["typed"]} typed), {c["guesses"]} guesses: {errors} errors, {warnings} warnings.')
     return 1 if errors else 0
 
 

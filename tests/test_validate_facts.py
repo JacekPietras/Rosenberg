@@ -1,4 +1,4 @@
-"""Checks for the proposed fact validator; all fixtures are synthetic."""
+"""Checks for the typed fact validator; all fixtures are synthetic."""
 import importlib.util
 import json
 from pathlib import Path
@@ -85,7 +85,7 @@ class FactValidatorTests(unittest.TestCase):
         self.assertTrue(self.errors(self.check(self.document(self.parent(), date='1396/1395'))))
         self.assertTrue(self.errors(self.check({'facts': [self.parent()]})))
         self.assertFalse(self.errors(self.check(self.document(self.parent(date='1395'), date='bad metadata'))))
-        self.assertFalse(self.errors(self.check({'date': '1395-1396', 'entries': [{'facts': ['Legacy']}]})))
+        self.assertTrue(self.errors(self.check({'date': '1395-1396', 'entries': [{'facts': ['Untyped']}]})))
 
     def test_null_dates_rejected_and_optional_dates_omitted(self):
         for relative in ('documents/test.json', 'books/test.json', 'notes/test.json'):
@@ -94,15 +94,40 @@ class FactValidatorTests(unittest.TestCase):
                     self.assertTrue(self.errors(self.check(self.document(item), relative)))
         self.assertTrue(self.errors(self.check(self.document(self.parent(), date=None))))
         self.assertFalse(self.errors(self.check(self.document(self.parent()))))
-        self.assertFalse(self.errors(self.check(self.document({'text': 'Example fact'}))))
+        self.assertFalse(self.errors(self.check(self.document({'type': 'generic', 'person': 'Example', 'content': 'Witnessed it.'}))))
 
-    def test_legacy_default_and_strict_migration(self):
-        value = self.document('Old text', {'text': 'Other text', 'date': '1395'})
-        self.assertEqual(1, len(self.errors(self.check(value, 'books/test.json'))))
-        self.assertEqual(1, len(self.errors(self.check(value, 'books/test.json', strict=True))))
-        self.assertFalse(self.errors(self.check(value, strict=True)))
-        self.assertTrue(self.errors(self.check(self.document({'text': 'A', 'extra': 1}))))
-        self.assertTrue(self.errors(self.check(self.document({'text': ' '}))))
+    def generic(self, **extra):
+        return {'type': 'generic', 'person': 'known_id', 'content': 'Witnessed the agreement at Boxberg.', **extra}
+
+    def test_untyped_facts_and_guesses_rejected_everywhere(self):
+        for relative in ('documents/test.json', 'books/test.json', 'notes/test.json'):
+            for strict in (False, True):
+                for field in ('facts', 'guesses'):
+                    value = {'date': '1395', field: ['Old text', {'text': 'Other text', 'date': '1395'}]}
+                    with self.subTest(relative=relative, strict=strict, field=field):
+                        self.assertEqual(2, len(self.errors(self.check(value, relative, strict))))
+
+    def test_generic_schema_and_dates_for_facts_and_guesses(self):
+        for field in ('facts', 'guesses'):
+            for relative in ('documents/test.json', 'books/test.json', 'notes/test.json'):
+                item = self.generic(personTitle=['Ritter'], personDeceased=True)
+                if not relative.startswith('documents'):
+                    item['date'] = '1395'
+                value = {'date': '1395-04-12', field: [item]}
+                self.assertEqual([], self.check(value, relative).diagnostics)
+                if 'date' in item:
+                    del item['date']
+                    self.assertTrue(self.errors(self.check(value, relative)))
+        for item in (self.generic(content=' '), self.generic(content=None), self.generic(content=[]),
+                     self.generic(person=''), self.generic(personTitle=[]),
+                     self.generic(personDeceased='true'), self.generic(of='Other'),
+                     self.generic(text='Old field')):
+            with self.subTest(item=item):
+                self.assertTrue(self.errors(self.check(self.document(item))))
+        for field in ('person', 'content'):
+            item = self.generic()
+            del item[field]
+            self.assertTrue(self.errors(self.check(self.document(item))))
 
     def test_nested_facts_and_bad_arrays(self):
         validator = self.check({'research': [{'facts': [self.parent(date='1395'), None]}]}, 'notes/test.json')
@@ -118,13 +143,13 @@ class FactValidatorTests(unittest.TestCase):
         self.assertEqual(0, validator.counts['facts'])
 
     def test_guesses_use_fact_shapes_and_require_historical_dates(self):
-        entry = {'guesses': [self.parent(date='1395'), {'date': '1395', 'text': 'A possible event'}]}
+        entry = {'guesses': [self.parent(date='1395'), self.generic(date='1395')]}
         validator = self.check({'book': 'Example', 'entries': [entry]}, 'books/test.json', strict=True)
         self.assertEqual([], validator.diagnostics)
         self.assertEqual(2, validator.counts['guesses'])
         self.assertEqual(0, validator.counts['facts'])
 
-        entry['guesses'] = [self.parent(), {'date': '1395-02-29', 'text': 'Invalid date'}, 'Undated interpretation']
+        entry['guesses'] = [self.parent(), self.generic(date='1395-02-29'), 'Undated interpretation']
         validator = self.check({'book': 'Example', 'entries': [entry]}, 'books/test.json', strict=True)
         self.assertEqual(3, len(self.errors(validator)))
         self.assertEqual(0, len([d for d in validator.diagnostics if d.severity == 'warning']))
@@ -147,7 +172,7 @@ class FactValidatorTests(unittest.TestCase):
         for text in ('Wipert von Rosenberg [wiprecht_von_rosenberg] witnessed it.',
                      'WYPRECHT von Rosenberg [wiprecht_von_rosenberg] witnessed it.',
                      'Wiprecht von Rosenberg [wiprecht_von_rosenberg] witnessed it.'):
-            for item in (text, {'date': '1395', 'text': text}):
+            for item in (self.generic(person='wiprecht_von_rosenberg', date='1395', content=text),):
                 with self.subTest(item=item):
                     validator.diagnostics.clear()
                     validator.check_fact(item, 'fact', False, False, '1395')
@@ -157,7 +182,7 @@ class FactValidatorTests(unittest.TestCase):
                      'Other von Rosenberg [wiprecht_von_rosenberg] witnessed it.',
                      'Wipert von Rosenberg [unknown_id] witnessed it.'):
             validator.diagnostics.clear()
-            validator.check_fact({'date': '1395', 'text': text}, 'guess', False, False, '1395', guess=True)
+            validator.check_fact(self.generic(person='wiprecht_von_rosenberg', date='1395', content=text), 'guess', False, False, '1395', guess=True)
             self.assertEqual([], validator.diagnostics)
 
     def test_cli_exit_status_order_and_malformed_json(self):

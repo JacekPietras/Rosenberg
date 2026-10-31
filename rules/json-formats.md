@@ -7,9 +7,8 @@ use a separate facts database.
 ## Facts JSON
 
 Keep every fact in its existing source entry's `facts` array, alongside the original text,
-translation, and citations. Arrays may contain typed objects, legacy strings, and legacy
-`{date, text}` objects during migration. Use typed objects for supported relationships, title
-attestations, and deaths; other relevant facts may remain prose. A typed object has no duplicate
+translation, and citations. Every fact and guess must be a typed object. Use `generic` for claims not represented by a
+relationship, title, or death type. A typed object has no duplicate
 `text`, `id`,
 `evidence`, or `assessment` field. Its source is the containing entry.
 
@@ -17,6 +16,7 @@ The supported typed facts are:
 
 | `type`    | Required fields, in addition to `type`            | Optional fields                                                  | Meaning                                                       |
 |-----------|---------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------|
+| `generic` | `person`, `content` | `personTitle`, `personDeceased`, `date` | One simple, atomic claim about `person`. |
 | `parent`  | `person`, `of`                                    | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a parent of `of`.                                 |
 | `sibling` | `person`, `of`                                    | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a sibling of `of`.                                |
 | `spouse`  | `person`, `of`                                    | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a spouse of `of`, including widowhood.            |
@@ -32,14 +32,12 @@ meaning.
 
 An entry may also contain an optional `guesses` array alongside `facts` for assumptions, inferences,
 and author interpretations. Use the same object formats and historical dates as for facts:
-`{date, text}` for prose, and typed objects for inferred family relationships and death dates. The
-containing
-`guesses` array identifies these as uncertain; retain reasoning and attribution in an accompanying
-dated prose guess when needed. Include a citation when the containing entry does not identify the
-basis. Never invent a date: preserve legacy undated strings when the historical date cannot be
-established, and flag them for review. Book entries require an explicit historical date on every
-fact and guess; `validate_facts.py` reports an undated book item as an error. Do not invent a date
-to satisfy validation. Keep guesses separate from source-supported facts.
+typed objects for every claim, including `generic` for interpretations and reasoning that need
+prose. The containing `guesses` array identifies these as uncertain. Keep `content` simple and
+atomic, retaining relevant uncertainty, reasoning, and attribution. Include a citation when the
+containing entry does not identify the basis. Never invent a historical date or use a publication
+year to satisfy validation. Books and notes require an explicit historical date on every fact and
+guess. Keep guesses separate from source-supported facts.
 
 `person` and `of` are non-empty strings: either a known `people.json` ID or a normalized full name.
 Resolve an exact, case-sensitive ID match first; otherwise treat the value as a name, without
@@ -67,7 +65,7 @@ attestation; a mention at that date does not imply that participant was alive. A
 participant is treated as alive at the fact's historical date, so a missing marker can separate a
 dead person from later records. A separate `death` fact can record a
 usable death date or bound, but must not be required to interpret the status on a relationship or
-title fact. For example, a spouse fact can stand alone:
+title or generic fact. For example, a spouse fact can stand alone:
 
 ```json
 {
@@ -77,6 +75,16 @@ title fact. For example, a spouse fact can stand alone:
   "ofDeceased": true
 }
 ```
+
+### Generic facts
+
+A `generic` object requires `person` and a non-empty `content` string. `person` identifies the
+subject using the same normalized name or confirmed ID rules as other types. Keep `content` a
+simple English fact body, for example `"Witnessed the agreement at Boxberg."`; avoid repeating the
+subject's name or titles. Record source-stated titles and deceased status in `personTitle` and
+`personDeceased`. Optional `date` follows the shared date rules. Do not use `of`, `ofTitle`, or
+`ofDeceased` on generic objects. Use the more specific supported type for relationships, title
+attestations, and dated deaths. The same format applies to guesses.
 
 ### Death facts
 
@@ -94,8 +102,7 @@ For “shortly after” a dated point, use `diedBefore` two calendar months afte
 standardized estimate, not a source-stated limit. When the target month lacks the original day, use
 its last day. Preserve the original source wording in the source text; put the estimated typed bound
 in `guesses`. Do not add a prose fact or guess explaining the calculation. Do not treat the
-estimated bound as a source-supported fact. Other approximations that cannot be expressed by these
-types remain prose. Do not create a typed death fact without a usable date or bound.
+estimated bound as a source-supported fact. Other approximations that cannot be expressed as death objects use `generic` guesses. Do not create a typed death fact without a usable date or bound.
 
 The top-level `date` is the historical date of the claim or attestation, subject to the ordinary
 inheritance and book/note rules below. It is distinct from `diedOn` and `diedBefore` and never
@@ -137,9 +144,8 @@ historical date can contain this guess:
 ```
 
 The same format applies in `guesses`; the array identifies the claim as an inference. The
-standardized two-month estimate requires no explanatory prose guess. Retain legacy prose during
-migration. Store a stated cause, manner, or place of death as a separate prose fact or guess when
-relevant.
+standardized two-month estimate requires no explanatory prose guess. Store a stated cause, manner, or place of death in `circumstances`, or as a separate atomic
+`generic` fact or guess when relevant.
 
 Illustrative facts, not historical additions:
 
@@ -182,20 +188,17 @@ repeats the enclosing document or entry date; the fact inherits that date. Keep 
 only when it records a different historical date, such as a death date stated in the document.
 
 In books and notes, typed facts require their own `date` field, even if an entry has a date. Never
-inherit a publication year. Book prose facts and all book guesses use `{date, text}`; bare strings
-and objects without a date are validation errors. Strict migration validation applies the same
-requirement to notes. Dates record the historical event or attestation, not when extraction
+inherit a publication year. All facts and guesses use typed objects; untyped values are validation errors. Dates record the historical event or attestation, not when extraction
 occurred. A relationship attestation date is not its start date.
 
 Validate facts from the repository root:
 
 ```text
 python3 scripts/validate_facts.py
-python3 scripts/validate_facts.py --strict-migration data/books data/notes
+python3 scripts/validate_facts.py data/books data/notes
 ```
 
-The existing validator may not yet recognize the death types; update it before relying on it to
-validate newly added death objects. The validator checks syntax, fields, dates, and registry
+The validator checks syntax, fields, dates, and registry
 references and reports source locations. It does not verify historical support or identity, build
 the graph, or detect ancestry cycles. An unmatched ID-like string is a review warning, not a
 resolved person. Review source evidence and data diffs as well.
@@ -213,7 +216,9 @@ resolved person. Review source evidence and data diffs as well.
       "facts": [
         {
           "date": "1399-02-01",
-          "text": "An explicit, atomic historical fact"
+          "type": "generic",
+          "person": "Example person",
+          "content": "Witnessed the agreement at Boxberg."
         }
       ],
       "diagram": "Optional diagram data"
@@ -222,9 +227,7 @@ resolved person. Review source evidence and data diffs as well.
 }
 ```
 
-Book facts follow the shared Facts JSON rules above. Prose facts use
-`{date, text}`; supported relationship, title, and death facts use typed objects with an explicit
-historical `date`. Existing string facts remain supported during migration.
+Book facts follow the shared Facts JSON rules above. Every fact and guess uses a typed object with an explicit historical `date`.
 
 ## Document JSON
 
@@ -243,7 +246,11 @@ historical `date`. Existing string facts remain supported during migration.
       "german": "Original text",
       "english": "English translation",
       "facts": [
-        "An explicit, atomic historical fact"
+        {
+          "type": "generic",
+          "person": "Example person",
+          "content": "Witnessed the agreement at Boxberg."
+        }
       ],
       "img": [
         {
@@ -268,8 +275,7 @@ historical `date`. Existing string facts remain supported during migration.
 ```
 
 Documents have a document-level `date` and an `entries` array. Each entry retains `source`,`german`,
-`english`, and `facts`. Its `facts` array follows the shared Facts JSON rules above: typed facts and
-legacy prose may coexist, and facts normally inherit the document date unless overridden.
+`english`, and `facts`. Its `facts` array follows the shared Facts JSON rules above: every fact and guess is typed, and facts normally inherit the document date unless overridden.
 
 The optional document-level `label` may be a string or an array of strings. Each label is displayed
 as a red badge. The special label `"important"` gives the document a reddish background; `"Hessen"`,

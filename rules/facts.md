@@ -12,9 +12,10 @@ it differs from the English translation. Facts must be concise, atomic,
 explicit, and written in English, except for historically meaningful German or
 Latin names, titles, places, and epithets. Make one assertion per fact. Keep
 facts in the source entry; use the typed formats in `rules/json-formats.md`
-for supported relationships and titles. Legacy strings and `{date, text}`
-objects remain supported during migration; other relevant facts may remain
-prose.
+for every fact and guess. Use `generic` with `person` and a simple, atomic
+`content` body for claims outside the supported relationship, title, and death
+types. Optional `personTitle` and `personDeceased` describe the subject; dates
+follow the shared rules. Untyped facts and guesses are not supported.
 
 Extract each explicitly stated family relationship as a separate typed fact:
 
@@ -32,10 +33,10 @@ the attestation. When a source identifies someone as deceased at a known
 date, record the corresponding `diedBefore` bound unless it supplies a more
 precise claim. Never
 infer an exact death date from widowhood or other context. Record a stated
-cause or manner of death separately as a prose fact; do not lose it when
+cause or manner of death separately as a generic fact; do not lose it when
 converting an existing death statement.
 
-On each typed relationship or title fact, independently mark a participant
+On each typed relationship, title, or generic fact, independently mark a participant
 whom the source identifies as deceased using `personDeceased` or
 `ofDeceased`, as applicable. A widow or widower designation establishes that
 the other spouse is deceased, as do terms such as “late”, “selig”, or
@@ -59,7 +60,7 @@ normalized full name. Use optional `personTitle` and `ofTitle` arrays for
 source-stated designations, including age epithets and territorial scope.
 Omit absent titles; do not fill them from `people.json` or another source.
 A `title` fact uses `person` and a non-empty `personTitle` array, without `of`.
-A designation already recorded on a relationship fact need not be duplicated
+A designation already recorded on a relationship or generic fact need not be duplicated
 as a separate title fact at the same date.
 
 Preserve the source's distinction among `der Alte`, `der Ältere`, `der Junge`,
@@ -67,7 +68,7 @@ and `der Jüngere`; do not translate them as “the old/older/elder/young/younge
 Expand abbreviations such as `d. Ä.` and `d. J.` in facts and English
 translations; leave the source text as written. In typed facts, keep each
 expanded epithet or territorial designation in the corresponding title array.
-In prose facts and translations, put it after the full name, as in
+In generic facts, use `personTitle`; in translations, put it after the full name, as in
 `Konrad von Rosenberg der Ältere` or `Arnold von Rosenberg zu Boxberg`.
 
 Titles are dated attestations, not permanent identity properties. `der
@@ -85,7 +86,7 @@ Examples include `Ritter`, `Edelmann`, `Edel`, `Edelknecht`, `Knecht`, `Vogt`,
 and `armiger`.
 
 Keep these forms in typed title arrays when they function as personal titles
-or designations. In prose facts and English translations, place them after
+or designations. In generic facts, use `personTitle`. In English translations, place them after
 the full name even if the German source puts them first: `Arnold von
 Uissigheim, Ritter`; `Eberhard von Rosenberg, Vogt zu Dürn`. Retain the territorial or institutional scope. In a
 list, attach the title to each person, for example, `Eberhard von Rosenberg,
@@ -123,13 +124,11 @@ and cite the book, note, or other basis when it is not already identified by
 the containing entry. Do not present a guess as a document-supported fact or
 use it to resolve an identity or relationship as certain.
 
-Use the same dated object formats as facts for guesses, including typed
-relationship and death objects for inferred relationships and death dates. Preserve legacy
-undated strings in existing records when no historical date can be established;
-never invent a date or use the publication year as an event date. In books,
-every fact and guess must have an explicit historical date. The validator
-reports undated book items as errors until a date is established or the record
-is otherwise resolved.
+Use the same typed object formats and historical date rules as facts for guesses,
+including `generic` for other interpretations, and relationship and death objects
+for inferred relationships and death dates. Keep `content` simple and atomic.
+Never invent a date or use the publication year as an event date. In books and
+notes, every fact and guess must have an explicit historical date.
 
 ## Relevance and identity
 
@@ -165,9 +164,7 @@ normalized family name (for example, `Konrad von Rosenberg`), rather than
 source spelling variants when the correspondence is clear. In typed facts,
 `person` and `of` accept either that name or an exact, case-sensitive existing
 `people.json` ID. Write the ID directly in the field, without square brackets
-or separate ID fields. In legacy prose, use a bracketed ID in place of the
-person's name when needed to distinguish namesakes; do not write the name
-immediately before the ID.
+or separate ID fields.
 
 Only use an ID when the evidence identifies that person. An unresolved name
 is not automatically linked to a registry record or the same name in another
@@ -185,7 +182,7 @@ Never merge people or places solely because their names are similar. If
 identity is ambiguous, preserve the source form and flag it for review. Do not
 normalize away `der Ältere`, `der Jüngere`, `zu [place]`, titles, or other
 identifiers. Keep age epithets in German, in title arrays for typed facts or
-after the full name in prose (`<given name> von <surname> der
+after the full name in translations (`<given name> von <surname> der
 Alte/der Ältere/der Junge/der Jüngere`). Record legitimate
 new variants for later addition to the relevant names or places file rather
 than silently inventing a standard form.
@@ -213,11 +210,10 @@ fact unresolved and report the issue.
 After editing, verify that JSON parses, the document-level `date` and
 `entries` structure remain intact, each relevant entry retains `source`,
 `german`, `english`, and `facts`, and each `facts` array follows the applicable
-schema in `rules/json-formats.md`, including typed objects and supported legacy
-forms. Confirm every fact is supported, atomic, relevant, and not duplicated;
+schema in `rules/json-formats.md`, including the `generic` type for other atomic claims. Confirm every fact is supported, atomic, relevant, and not duplicated;
 also confirm source text, translation, citations, names, and date precision
 were not changed unintentionally. Run `python3 scripts/validate_facts.py`
-on edited files, adding `--strict-migration` for migrated books/notes. The
+on edited files. The
 validator checks syntax and references, not source support, identity, or graph
 consistency. Verification quotes and statuses belong in the review response;
 do not add redundant evidence or assessment fields to stored typed facts.
