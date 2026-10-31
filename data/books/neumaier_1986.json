@@ -550,6 +550,7 @@
           "personTitle": [
             "Rufus"
           ],
+          "personDeceased": true,
           "type": "parent",
           "of": "Eberhard von Rosenberg",
           "ofTitle": [
@@ -562,6 +563,7 @@
           "personTitle": [
             "Rufus"
           ],
+          "personDeceased": true,
           "type": "parent",
           "of": "Konrad von Rosenberg",
           "date": "1305-10-25"
