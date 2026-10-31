@@ -11,7 +11,7 @@ Elisabeth, Elspeth, Elsbet, Else, Els, Eilse, Elsbeth
 Senant, Synant
 Niedeck, Nydeck
 Hans, Johann, Hanemann, Hanse, Johannes, Hanns
-Heinrich, Heintze, Henrich, Heinricus
+Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus
 Gotfried, Godefrid, Gottfried
 Thomas, Thoman
 Anselm, Anshelm

@@ -153,7 +153,7 @@
     "data/documents/1349-09-02.json": "sha256:0fe7bacde70436477610c4ce2e1e62062d5c975caedf5815cb161a8d6a639a40",
     "data/documents/1349-09-15.json": "sha256:73fcb1c547fc6e6be85180ccd165443717429d5082ea00e07a77e039f26fe07c",
     "data/documents/1349-09-28.json": "sha256:7060ce020d6216247a6bede150d92f09fe028c70c0e41bf201bc280ce7ce4705",
-    "data/documents/1350-02-11.json": "sha256:bce503f2ccc0e3c419f923d3f9a0be41af5c368b44f0abdab65fa9180c7bfa56",
+    "data/documents/1350-02-11.json": "sha256:e4515527c824217750e80949d86278238cd1b1a4360cf72f58f13e05ffde9ad5",
     "data/documents/1350-06-18.json": "sha256:c750da8c33b6a4fe1308c081c72ae87c689522cccfbf6389a62327488c4417ca",
     "data/documents/1352-01-07.json": "sha256:316858e8e5b60806ea179648c76e095801f087be788dfbbfe0e13d8ec7e1a1a4",
     "data/documents/1353-10-31.json": "sha256:790a2e8b5e26dd47f66970afeb242bc988314eebe40779c02d133c318216d14b",
@@ -166,7 +166,7 @@
     "data/documents/1356-04-09_2.json": "sha256:f8df3ec0720068ea595c1e6cc5e1c6e11a48b65c1d33277705cfc253192c6214",
     "data/documents/1356-06-04.json": "sha256:5932f34fedfd3f172ff22ef740b38615bccaa90830553d8ae3ebd7875a09ea09",
     "data/documents/1357-01-31.json": "sha256:4327deb4c0a9d61526315c36b5f2bf54aa99c7facf0b7082553632b65d22acd2",
-    "data/documents/1357-02-03.json": "sha256:7a494bf1b49e53c3621ad6a207ad55d25f7e321ee9bb1ac8c3ca2af299415f37",
+    "data/documents/1357-02-03.json": "sha256:6e651c263b817681ae65c148a9845403fc0f0f9344231db17a9b17c37373df47",
     "data/documents/1358-05-19.json": "sha256:2880edb00707f39b6ee01ed0b2bc890fb839c019ea4143bb6fb8b391ea63d032",
     "data/documents/1360-08-03.json": "sha256:cfaca9b0ca9f5f28764d013ad967fd55e418687f477e60ebad88d0b08652571a",
     "data/documents/1360-08-03_2.json": "sha256:0dfba9f207605f34930d1a8342e05adfdd22ad5ed2f39d055e53ae0b2d499e98",
@@ -231,7 +231,7 @@
     "data/documents/1381-05-25_4.json": "sha256:76d4aa0ea572ef37359cb9e8e8c8072f4c0194d3f1e84be8655a35f7a879564b",
     "data/documents/1381-06-14.json": "sha256:cfe772b46ef48a991f3b14fa28815ccdc9702ffd297eff2238173dd53da27616",
     "data/documents/1381-07-26.json": "sha256:9c0650fcf3c59e23cfb1436d697eaae771d3e937437204ce202c25602d643b34",
-    "data/documents/1381-09-15.json": "sha256:c4de2fb67a98e89d53236a36390aa829246e339e5ac230b793e5e31fadb2c3e5",
+    "data/documents/1381-09-15.json": "sha256:dee3cb91b3afd89d30ce97fb799690b8fe2b24a7bfddf37af2bcb30191e69e4f",
     "data/documents/1381-12-07.json": "sha256:b3787cfcec3c57a2df845cf3b4ef09e837d66be4980d4c6722619235bdc2519d",
     "data/documents/1382-01-09.json": "sha256:953dd51d6ea838c42da1891622b32159e6ee9a74c67d253e40661c14f89adc20",
     "data/documents/1382-02-15.json": "sha256:b2643f3941dedf56202f2421c88f203243baff5dacfa2ed922bbead86497b6ca",
@@ -427,7 +427,7 @@
     "data/documents/1504-11-10.json": "sha256:c95e9396ad3ae6366de07219f5add8cd292aeb85473ea2afb209884791c18203",
     "data/documents/1510-08-12.json": "sha256:5f25b060dae86ae377ddd3856b81ce87e5e0f06f5b7ec973299753ebadbdd45d",
     "data/documents/1512-04-29.json": "sha256:10e048c181c1e4833ac8f0ae7d43590b044c9a476bca1416575c1f7ae2d22b6b",
-    "data/documents/1512-08-31.json": "sha256:8d52ca7bad1e5ed5be4b4b6c4e3b65f255e5cb2918696c6f0f11b7fe33e16fb3",
+    "data/documents/1512-08-31.json": "sha256:6f34c04907bb68302feb2996ae29ec62872fa7a8b03955950ca5d6bc183d14b8",
     "data/documents/1512-11-16.json": "sha256:f58ad71fc259e5691fbbb5cb3056a0a783c8850d84406da5d1cbd43bf71fdfd0",
     "data/documents/1514-10-23.json": "sha256:d0849571dbccaeb1c5f1236ed4026c507bdc84a98f6b3caa34b26b3e0b17d425",
     "data/documents/1516-04-07.json": "sha256:d911eeba7c0eda1fe25a5c7a3cc2090d9eac60ed41450550a253210e2634dc52",
@@ -471,7 +471,7 @@
     "data/names.md": "sha256:03267515204d2ba3097d9036caededd1820163128022ea535e7d63bb440354f6",
     "data/notes/notes.json": "sha256:a33e162e8b4aca9261bbc132c2f2a4aacc82f84b40f38ae52d5777a8a8510ec4",
     "data/people.json": "sha256:6ae40f66b5255ffcb1226b51a7d21cdf995d95fd626729805767db225a4b1c6d",
-    "data/places.json": "sha256:7bfd1843f2dcc1683ffbbd41f707c2019d27d6c0a7ec3607ba4cd3552705e0fb",
+    "data/places.json": "sha256:d8dadd10d1aa87bcdebe08c1e986ad73381fe398cc9bb93c1c3b35dd15eb8428",
     "scripts/family_graph/__init__.py": "sha256:649f8e410779bdbf9eb2cbabebe04ec849ddd59336bb896d175723bf97bb679d",
     "scripts/family_graph/constraints.py": "sha256:c412aeffd7b96438d8fb229e23ecefcb83692138c9811be0fe516e2a47c5af6b",
     "scripts/family_graph/dates.py": "sha256:35bd355695d84ae6c7e3639c699acac40634ef7bd20b73a1faad29dc8d9f5684",
@@ -491,7 +491,7 @@
     "scripts/search_places_by_name.py": "sha256:2034da7ef86d2016e9d546f89100e74977cd68d2db5ddbe235ff4045f2ce60ec",
     "scripts/validate_facts.py": "sha256:55ae6062aab59d96ef0f6bfc6b2a1602e111e19b5aab302150cf9778d57557f9"
   },
-  "fingerprint": "sha256:432530c7df547a85bddaf2d5b88f06e50b03b35f10b335cabbaecdcd2235bd7c",
+  "fingerprint": "sha256:7be3cd9ac80f2c9ae4d3f0ebf591d6a1683945a15c012e49f8fc66cb31bae8e8",
   "evidence": {
     "facts": {
       "sources": [
@@ -3448,12 +3448,12 @@
         {
           "path": "data/documents/1350-02-11.json",
           "pointer": "/entries/0/facts/6",
-          "fingerprint": "sha256:7ec243e025d85e2d9075f13df3f854368648629ee0e2a30aeb61f24897ded249"
+          "fingerprint": "sha256:496db27715f268c0b9e529c525de81ccddaca536cd7bc71f6ac59531d96ae82e"
         },
         {
           "path": "data/documents/1350-02-11.json",
           "pointer": "/entries/0/facts/7",
-          "fingerprint": "sha256:8406cb1337d027030bfe068d29e54e59cbcd560dfa27d5911dfcbed79d87130b"
+          "fingerprint": "sha256:f1e95d3a6295822de41cd52c727fe62b7d3a741ac265037a3a7627abf8086698"
         },
         {
           "path": "data/documents/1352-01-07.json",
@@ -289092,12 +289092,12 @@
         {
           "path": "data/documents/1350-02-11.json",
           "pointer": "/entries/0/facts/6",
-          "fingerprint": "sha256:7ec243e025d85e2d9075f13df3f854368648629ee0e2a30aeb61f24897ded249"
+          "fingerprint": "sha256:496db27715f268c0b9e529c525de81ccddaca536cd7bc71f6ac59531d96ae82e"
         },
         {
           "path": "data/documents/1350-02-11.json",
           "pointer": "/entries/0/facts/7",
-          "fingerprint": "sha256:8406cb1337d027030bfe068d29e54e59cbcd560dfa27d5911dfcbed79d87130b"
+          "fingerprint": "sha256:f1e95d3a6295822de41cd52c727fe62b7d3a741ac265037a3a7627abf8086698"
         },
         {
           "path": "data/documents/1352-01-07.json",
