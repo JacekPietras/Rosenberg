@@ -5,6 +5,7 @@ import test from 'node:test';
 // The viewer uses browser ES modules without a Node package manifest.
 import { moduleUrl } from './browser-module.mjs';
 const { renderPeopleTree } = await import(await moduleUrl(new URL('../docs/app/screens/tree.js', import.meta.url)));
+const { layoutFamilyGraph } = await import(await moduleUrl(new URL('../docs/app/rendering/family-layout.js', import.meta.url)));
 const { buildRelationshipGraph } = await import(await moduleUrl(new URL('../docs/app/data/relationships.js', import.meta.url)));
 const { renderFactsView } = await import(await moduleUrl(new URL('../docs/app/components/facts_view.js', import.meta.url)));
 const { createMarkupRenderer } = await import(await moduleUrl(new URL('../docs/app/rendering/markup.js', import.meta.url)));
@@ -84,6 +85,45 @@ test('generations preserve parentage with one card per identity', () => {
     assert.equal(new Set(children.map((child) => child.y)).size, 1);
   }
   assert.equal(layout.paths.length, 7, 'one connector per recorded parent-child relationship');
+});
+
+test('parents are centered over their sibling groups even when branches have different widths', () => {
+  const people = [person('root', ['a', 'b']), person('a', ['a1', 'a2', 'a3', 'a4']),
+    person('b', ['b1']), ...['a1', 'a2', 'a3', 'a4', 'b1'].map((id) => person(id))];
+  const { cards } = geometry(people);
+  for (const id of ['a', 'b']) {
+    const parent = cards.find((card) => card.id === id);
+    const children = people.find((item) => item.id === id).children.map((child) => cards.find((card) => card.id === child));
+    const midpoint = (Math.min(...children.map((card) => card.x)) + Math.max(...children.map((card) => card.x + card.w))) / 2;
+    assert.ok(Math.abs(parent.x + parent.w / 2 - midpoint) < 1, `${id} is above its children`);
+  }
+});
+
+test('wide sibling groups do not push later branches far apart', () => {
+  const branches = ['a', 'b', 'c', 'd'];
+  const people = [person('root', branches), ...branches.map((id) => person(id, [1, 2, 3, 4].map((n) => `${id}${n}`))),
+    ...branches.flatMap((id) => [1, 2, 3, 4].map((n) => person(`${id}${n}`)))];
+  const layout = geometry(people);
+  assertLayout(layout);
+  const leaves = layout.cards.filter((card) => /^[a-d][1-4]$/.test(card.id));
+  const span = Math.max(...leaves.map((card) => card.x + card.w)) - Math.min(...leaves.map((card) => card.x));
+  assert.ok(span <= 16 * 220 + 15 * 52 + 2, `leaf row stays compact: ${span}`);
+});
+
+test('reserves the wider generation for each family, including spouses', () => {
+  const records = ['root', 'p', 'spouse', 'only', 'q', 'a', 'a-spouse', 'b'].map((id) => ({ _treeKey: id, name: id }));
+  const edge = (type, person, of) => ({ type, person, of });
+  const result = layoutFamilyGraph(records, [edge('parent', 'root', 'p'), edge('parent', 'root', 'q'),
+    edge('spouse', 'p', 'spouse'), edge('parent', 'p', 'only'),
+    edge('parent', 'q', 'a'), edge('parent', 'q', 'b'), edge('spouse', 'a', 'a-spouse')], { nodeHeight: () => 44 });
+  const card = (id) => result.cards.find((item) => item.person._treeKey === id);
+  const midpoint = (ids) => (Math.min(...ids.map((id) => card(id).x)) + Math.max(...ids.map((id) => card(id).x + 220))) / 2;
+  assert.equal(midpoint(['p', 'spouse']), midpoint(['only']), 'a wider parent couple is centered over its child');
+  assert.equal(midpoint(['q']), midpoint(['a', 'a-spouse', 'b']), 'a parent is centered over children and their spouses');
+  const childMin = Math.min(card('a').x, card('a-spouse').x, card('b').x);
+  const childMax = Math.max(card('a').x, card('a-spouse').x, card('b').x) + 220;
+  assert.ok(childMin >= card('only').x + 220 + 52 || card('only').x >= childMax + 52,
+    'neighboring families have room in the wider generation');
 });
 
 test('spouses with the same child share one child card', () => {

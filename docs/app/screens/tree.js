@@ -5,7 +5,7 @@ import { renderFactsView } from '../components/facts_view.js?v=8';
 import { createMarkupRenderer } from '../rendering/markup.js';
 import { documentNavigationUrl } from '../rendering/navigation.js';
 import { dateSortValue } from '../rendering/dates.js';
-import { layoutFamilyGraph } from '../rendering/family-layout.js?v=4';
+import { layoutFamilyGraph } from '../rendering/family-layout.js?v=7';
 
 function svgEscape(value) {
   return String(value).replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
@@ -148,10 +148,69 @@ export function setupPeopleTreeZoom(root = document) {
   if (!wrapper || !svg) return;
   const nodes = [...svg.querySelectorAll('.people-tree-person-link')];
   const edges = [...svg.querySelectorAll('.people-tree-edge')];
+  let preview;
   const highlightPerson = (node) => {
+    preview?.remove();
+    preview = null;
+    svg.classList.remove('people-tree-previewing');
     svg.classList.toggle('people-tree-highlighting', !!node);
-    nodes.forEach((item) => item.classList.toggle('people-tree-highlighted', item === node));
-    edges.forEach((edge) => edge.classList.toggle('people-tree-highlighted', !!node && (edge.dataset.person === node.dataset.person || edge.dataset.of === node.dataset.person)));
+    const visiblePeople = new Set(node ? [node.dataset.person] : []);
+    const closePeople = new Set(visiblePeople);
+    edges.forEach((edge) => {
+      const connected = !!node && (edge.dataset.person === node.dataset.person || edge.dataset.of === node.dataset.person);
+      const close = connected && !!edge.querySelector('.people-tree-parent, .people-tree-spouse');
+      edge.classList.toggle('people-tree-highlighted', connected);
+      edge.classList.toggle('people-tree-close', close);
+      if (connected) { visiblePeople.add(edge.dataset.person); visiblePeople.add(edge.dataset.of); }
+      if (close) { closePeople.add(edge.dataset.person); closePeople.add(edge.dataset.of); }
+    });
+    nodes.forEach((item) => {
+      item.classList.toggle('people-tree-highlighted', visiblePeople.has(item.dataset.person));
+      item.classList.toggle('people-tree-close', closePeople.has(item.dataset.person));
+    });
+    if (!node) return;
+    const selectedNodes = nodes.filter((item) => visiblePeople.has(item.dataset.person));
+    const selectedEdges = edges.filter((edge) => edge.classList.contains('people-tree-highlighted'));
+    const records = selectedNodes.map((item) => ({ _treeKey: item.dataset.person,
+      name: item.querySelector('.people-tree-name')?.textContent || item.dataset.person }));
+    const relationships = selectedEdges.map((edge) => ({ person: edge.dataset.person, of: edge.dataset.of,
+      type: [...edge.querySelector('path').classList].find((name) => name.startsWith('people-tree-')).slice('people-tree-'.length),
+      term: edge.querySelector('text')?.textContent || '' }));
+    const heights = new Map(selectedNodes.map((item) => [item.dataset.person, Number(item.querySelector('rect').getAttribute('height'))]));
+    const layout = layoutFamilyGraph(records, relationships, { nodeWidth: 220, nodeHeight: (person) => heights.get(person._treeKey) });
+    const copy = svg.cloneNode(true);
+    copy.querySelectorAll('.people-tree-person-link:not(.people-tree-highlighted), .people-tree-edge:not(.people-tree-highlighted)').forEach((item) => item.remove());
+    for (const card of layout.cards) {
+      const item = [...copy.querySelectorAll('.people-tree-person-link')].find((candidate) => candidate.dataset.person === card.person._treeKey);
+      const rect = item.querySelector('rect'), text = item.querySelector('.people-tree-node text');
+      rect.setAttribute('x', card.x); rect.setAttribute('y', card.y);
+      text.setAttribute('x', card.x + 110); text.setAttribute('y', card.y + 25);
+      text.querySelectorAll('tspan').forEach((span) => span.setAttribute('x', card.x + 110));
+    }
+    const copies = [...copy.querySelectorAll('.people-tree-edge')];
+    layout.connectors.forEach(({ edge, points, label }) => {
+      const item = copies[relationships.indexOf(edge)];
+      item.querySelector('path').setAttribute('d', points.map(([x, y], i) => !i ? `M${x} ${y}` : points[i - 1][1] === y ? `H${x}` : `V${y}`).join(' '));
+      const text = item.querySelector('text');
+      if (text && label) { text.setAttribute('x', label[0]); text.setAttribute('y', label[1]); }
+      else if (text) text.remove();
+    });
+    copy.setAttribute('viewBox', `0 0 ${layout.width} ${layout.height}`);
+    copy.setAttribute('aria-hidden', 'true');
+    const bounds = wrapper.querySelector('.people-tree').getBoundingClientRect();
+    const original = node.querySelector('rect').getBoundingClientRect();
+    const anchor = layout.cards.find((card) => card.person._treeKey === node.dataset.person);
+    const scale = original.width / 220;
+    Object.assign(copy.style, { position: 'absolute', maxWidth: 'none',
+      width: `${layout.width * scale}px`, height: `${layout.height * scale}px`,
+      left: `${original.left - bounds.left - anchor.x * scale}px`,
+      top: `${original.top - bounds.top - anchor.y * scale}px` });
+    preview = document.createElement('div');
+    preview.className = 'people-tree-preview';
+    Object.assign(preview.style, { left: `${bounds.left}px`, top: `${bounds.top}px`, width: `${bounds.width}px`, height: `${bounds.height}px` });
+    preview.append(copy);
+    document.body.append(preview);
+    svg.classList.add('people-tree-previewing');
   };
   const panel = wrapper.querySelector('.people-tree-facts');
   const templates = [...wrapper.querySelectorAll('template[data-tree-facts]')];
@@ -200,12 +259,6 @@ export function setupPeopleTreeZoom(root = document) {
     svg.style.width = `${viewWidth * scale}px`;
     svg.style.height = `${viewHeight * scale}px`;
   };
-  const fit = () => {
-    scale = Math.min(1, (viewport.clientWidth - 32) / viewWidth, (viewport.clientHeight - 32) / viewHeight);
-    scale = Math.max(minScale, scale);
-    applyScale();
-    viewport.scrollTo({ left: 0, top: 0 });
-  };
   const zoomAt = (factor, clientX = viewport.getBoundingClientRect().left + viewport.clientWidth / 2, clientY = viewport.getBoundingClientRect().top + viewport.clientHeight / 2) => {
     const bounds = viewport.getBoundingClientRect();
     const x = viewport.scrollLeft + clientX - bounds.left;
@@ -251,5 +304,5 @@ export function setupPeopleTreeZoom(root = document) {
   viewport.addEventListener('touchend', (event) => {
     if (event.touches.length < 2) touchStartDistance = 0;
   }, { passive: true });
-  fit();
+  applyScale();
 }

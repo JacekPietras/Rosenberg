@@ -138,18 +138,97 @@ export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nod
       }
     }
     const rowKeys = layers.map((layer) => layer.flatMap((index) => units[index]));
-    const rowWidth = (row) => row.length * nodeWidth + Math.max(0, row.length - 1) * horizontalGap;
-    const cardWidth = Math.max(...rowKeys.map(rowWidth));
+    // Give branches room to spread out, then align each generation with its
+    // relatives without compressing cards or changing the established order.
+    const unitX = new Map();
+    layers.forEach((layer) => {
+      let x = 0;
+      layer.forEach((index) => { unitX.set(index, x); x += units[index].length * (nodeWidth + horizontalGap); });
+    });
+    const unitWidth = (index) => units[index].length * (nodeWidth + horizontalGap) - horizontalGap;
+    const center = (index) => unitX.get(index) + unitWidth(index) / 2;
+    for (let pass = 0; pass < 16; pass++) {
+      const down = pass % 2 === 0;
+      for (const layer of down ? layers : [...layers].reverse()) {
+        const desired = layer.map((index) => {
+          const neighbors = [...new Set(parents.filter((edge) => membership.get(down ? edge.of : edge.person) === index)
+            .map((edge) => membership.get(down ? edge.person : edge.of)).filter((other) => other !== index))];
+          return neighbors.length ? neighbors.reduce((sum, other) => sum + center(other), 0) / neighbors.length - unitWidth(index) / 2 : unitX.get(index);
+        });
+        // Project the desired positions onto the closest non-overlapping row.
+        // Pooling conflicting positions moves both sides of a collision instead
+        // of repeatedly pushing every later branch to the right.
+        const offsets = [], blocks = [];
+        layer.forEach((index, i) => {
+          offsets[i] = i ? offsets[i - 1] + unitWidth(layer[i - 1]) + horizontalGap : 0;
+          blocks.push({ start: i, end: i, sum: desired[i] - offsets[i], count: 1 });
+          while (blocks.length > 1 && blocks.at(-2).sum / blocks.at(-2).count > blocks.at(-1).sum / blocks.at(-1).count) {
+            const right = blocks.pop(), left = blocks.at(-1);
+            left.end = right.end; left.sum += right.sum; left.count += right.count;
+          }
+        });
+        blocks.forEach((block) => {
+          for (let i = block.start; i <= block.end; i++) unitX.set(layer[i], block.sum / block.count + offsets[i]);
+        });
+      }
+    }
+    // For a branching tree, reserve the wider of each couple and its entire
+    // children group. This lets a narrow generation sit centered over a wide
+    // one, and also gives a wide couple room above a narrow child group.
+    // Shared ancestry and long edges retain the general graph layout above.
+    const descendants = units.map(() => new Set()), ancestors = units.map(() => new Set());
+    let branchingTree = true;
+    for (const edge of parents) {
+      const parent = membership.get(edge.person), child = membership.get(edge.of);
+      if (parent === child || ranks[child] !== ranks[parent] + 1) { branchingTree = false; break; }
+      descendants[parent].add(child); ancestors[child].add(parent);
+      if (ancestors[child].size > 1) { branchingTree = false; break; }
+    }
+    if (branchingTree) {
+      const order = new Map(layers.flatMap((layer) => layer.map((index, position) => [index, position])));
+      const children = descendants.map((set) => [...set].sort((a, b) => order.get(a) - order.get(b)));
+      const widths = new Map();
+      const subtreeWidth = (index) => {
+        const childWidths = children[index].map(subtreeWidth);
+        const width = Math.max(unitWidth(index), childWidths.reduce((sum, value) => sum + value, 0)
+          + Math.max(0, childWidths.length - 1) * horizontalGap);
+        widths.set(index, width);
+        return width;
+      };
+      const place = (index, left) => {
+        const width = widths.get(index);
+        unitX.set(index, left + (width - unitWidth(index)) / 2);
+        const childWidth = children[index].reduce((sum, child) => sum + widths.get(child), 0)
+          + Math.max(0, children[index].length - 1) * horizontalGap;
+        let childLeft = left + (width - childWidth) / 2;
+        children[index].forEach((child) => { place(child, childLeft); childLeft += widths.get(child) + horizontalGap; });
+      };
+      const roots = units.map((_, index) => index).filter((index) => !ancestors[index].size)
+        .sort((a, b) => ranks[a] - ranks[b] || order.get(a) - order.get(b));
+      let left = 0;
+      roots.forEach((root) => { left += subtreeWidth(root) + horizontalGap; });
+      left = 0;
+      roots.forEach((root) => { place(root, left); left += widths.get(root) + horizontalGap; });
+    }
+    const minX = Math.min(...unitX.values());
+    const cardWidth = Math.max(...units.map((unit, index) => unitX.get(index) - minX + unitWidth(index)));
     const cards = new Map();
-    rowKeys.forEach((row, rank) => row.forEach((key, index) => cards.set(key, {
-      person: byKey.get(key), rank, x: (cardWidth - rowWidth(row)) / 2 + index * (nodeWidth + horizontalGap),
+    layers.forEach((layer, rank) => layer.forEach((index) => units[index].forEach((key, offset) => cards.set(key, {
+      person: byKey.get(key), rank, x: unitX.get(index) - minX + offset * (nodeWidth + horizontalGap),
       height: nodeHeight(byKey.get(key)),
-    })));
+    }))));
     const slots = layers.map(() => 0), outer = { left: 0, right: 0 };
     const allocate = (rank) => slots[rank]++;
+    const hoverSlots = new Map(), hoverLanes = new Map();
+    const allocateHover = (rank) => {
+      if (!hoverSlots.has(rank)) hoverSlots.set(rank, allocate(rank));
+      return hoverSlots.get(rank);
+    };
     const familySlots = new Map();
     const routes = componentEdges.map((edge) => {
       const a = cards.get(edge.person), b = cards.get(edge.of);
+      const hoverOnly = hiddenParents.has(edge) || !['parent', 'spouse'].includes(edge.type);
+      const slot = hoverOnly ? allocateHover : allocate;
       if (edge.type === 'parent' && b.rank === a.rank + 1) {
         // Children with precisely the same recorded parents can share a bus.
         // Marriage alone never supplies an additional stem or child edge.
@@ -160,13 +239,14 @@ export function layoutFamilyGraph(records, relationships, { nodeWidth = 220, nod
       if (edge.type !== 'parent' && a.rank === b.rank) {
         const label = edge.type === 'kin' ? edge.term || 'kin' : edge.type;
         if (Math.abs(a.x - b.x) === nodeWidth + horizontalGap && label.length * 6 < horizontalGap - 4) return { edge, kind: 'adjacent' };
-        return { edge, kind: 'above', slot: allocate(a.rank) };
+        return { edge, kind: 'above', slot: slot(a.rank) };
       }
       const side = a.x + b.x + nodeWidth < cardWidth ? 'left' : 'right';
       const downward = edge.type === 'parent' && b.rank > a.rank;
-      return { edge, kind: 'outer', side, lane: outer[side]++, downward,
+      if (hoverOnly && !hoverLanes.has(side)) hoverLanes.set(side, outer[side]++);
+      return { edge, kind: 'outer', side, lane: hoverOnly ? hoverLanes.get(side) : outer[side]++, downward,
         startRank: downward ? a.rank + 1 : a.rank, endRank: b.rank,
-        startSlot: allocate(downward ? a.rank + 1 : a.rank), endSlot: allocate(b.rank) };
+        startSlot: slot(downward ? a.rank + 1 : a.rank), endSlot: slot(b.rank) };
     });
     const rowHeights = rowKeys.map((row) => Math.max(...row.map((key) => cards.get(key).height)));
     const rowY = [];

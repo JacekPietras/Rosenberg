@@ -227,9 +227,13 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .people-tree-facts { margin-top: 1.25rem; }
 .people-tree { height: min(72vh, 720px); min-height: 20rem; padding: 1rem; overflow: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; touch-action: pan-x pan-y; }
 .people-tree svg { display: block; max-width: none; }
+.people-tree svg.people-tree-previewing { opacity: 0; }
+.people-tree-preview { position: fixed; z-index: 20; overflow: hidden; pointer-events: none; background: #11161c; border-radius: 7px; }
 .people-tree-person-link { cursor: pointer; }
 .people-tree-highlighting .people-tree-person-link:not(.people-tree-highlighted),
-.people-tree-highlighting .people-tree-edge:not(.people-tree-highlighted) { opacity: .2; }
+.people-tree-highlighting .people-tree-edge:not(.people-tree-highlighted) { visibility: hidden; }
+.people-tree-highlighting .people-tree-person-link:not(.people-tree-close),
+.people-tree-highlighting .people-tree-edge:not(.people-tree-close) { opacity: .5; }
 .people-tree-edge[data-tree-hover-only]:not(.people-tree-highlighted) { display: none; }
 .people-tree-person-link:focus-visible .people-tree-node rect { stroke-width: 3; }
 .people-tree-node rect { fill: var(--surface-raised); stroke: var(--accent); stroke-width: 1.5; }
@@ -404,6 +408,7 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 :root[data-theme="light"] .seal-marker-label { color: #fff; }
 :root[data-theme="light"] .diagram { background: #f2f5f8; }
 :root[data-theme="light"] .people-tree { background: #f2f5f8; }
+:root[data-theme="light"] .people-tree-preview { background: #f2f5f8; }
 :root[data-theme="light"] .document.important { background: #fff1f1; border-color: #e5b8b8; }
 :root[data-theme="light"] .label-sidebar a.selected[data-label="important"] { color: #b42332; background: #fff1f1; }
 
