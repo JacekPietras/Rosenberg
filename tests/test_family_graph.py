@@ -219,7 +219,7 @@ class FamilyGraphTests(unittest.TestCase):
     def test_empty_views_are_explicit_and_apply_is_idempotent(self):
         inputs = self.inputs(facts=[])
         output = serialize(inputs, [build(inputs), build(inputs, include_guesses=True)])
-        self.assertEqual(['facts', 'with-guesses'], output['views'])
+        self.assertEqual({'facts', 'with-guesses'}, set(output['evidence']))
         first = apply(inputs, output)
         second_inputs = load_inputs(self.root, validate=False)
         second_output = serialize(second_inputs, [build(second_inputs), build(second_inputs, include_guesses=True)])
@@ -231,6 +231,15 @@ class FamilyGraphTests(unittest.TestCase):
         self.write('data/people.json', [*inputs.people, person('new')])
         with self.assertRaisesRegex(ValueError, 'stale|changed'):
             apply(inputs, output)
+
+    def test_python_script_changes_do_not_invalidate_tree(self):
+        self.write('scripts/family_graph/graph.py', 'original')
+        inputs = self.inputs(facts=[relation('a', 'b')])
+        output = serialize(inputs, [build(inputs, include_guesses=True)])
+        self.assertTrue(all(path.endswith(('.json', '.md')) for path in output['inputs']))
+        self.write('scripts/family_graph/graph.py', 'changed')
+        validate_generated(output, inputs.people, self.root)
+        self.assertEqual(inputs.manifest, input_manifest(self.root))
 
     def test_inherited_context_added_sources_and_name_inputs_invalidate_build(self):
         for kind in ('context', 'source', 'names'):
@@ -333,7 +342,7 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertTrue(all(node['key'].startswith('@evidence/') for node in graph['nodes']))
         output = serialize(inputs, [result])
         self.assertEqual(1, len(inputs.people))
-        self.assertEqual(4, output['schema'])
+        self.assertNotIn('schema', output)
         self.assertEqual(2, len(output['evidence']['facts']['nodes']))
 
     def test_repeated_family_pair_links_without_any_registry_anchor(self):
@@ -460,7 +469,7 @@ class FamilyGraphTests(unittest.TestCase):
         inputs = load_inputs(self.root)
         tree = serialize(inputs, [build(inputs)])
         apply(inputs, tree)
-        self.assertEqual(4, json.loads((self.root / 'data/tree.json').read_text())['schema'])
+        self.assertIn('evidence', json.loads((self.root / 'data/tree.json').read_text()))
 
     def test_confirmed_registry_rejects_computation_fields(self):
         self.inputs()

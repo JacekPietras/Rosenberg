@@ -62,18 +62,22 @@ function literalReference(text, reference) {
   return parts.some((part, index) => index < parts.length - 1 && !word.test(part.at(-1) || '') && !word.test(parts[index + 1][0] || ''));
 }
 
+function treeMetadata(value) {
+  return value && value.schema === undefined && value.views === undefined ? { ...value, views: ['with-guesses'] } : value;
+}
+
 export async function verifyFamilyGraph(people, documents, repository, paths = [...documents.keys()], tree) {
-  const metadata = tree === undefined ? people[0]?.familyGraph : tree;
+  const metadata = treeMetadata(tree === undefined ? people[0]?.familyGraph : tree);
   if (!metadata) return { valid: false, reason: 'Generated build metadata is absent.' };
   try {
-    const version = metadata.schema === 1 && metadata.engine === '1' && metadata.policy === '1'
+    const version = metadata.schema === undefined || metadata.schema === 1 && metadata.engine === '1' && metadata.policy === '1'
       || metadata.schema === 2 && metadata.engine === '2' && metadata.policy === '2'
       || metadata.schema === 3 && metadata.engine === '3' && metadata.policy === '2'
       || metadata.schema === 4 && metadata.engine === '4' && metadata.policy === '3'
       || metadata.schema === 4 && metadata.engine === '5' && metadata.policy === '4'
       || metadata.schema === 4 && metadata.engine === '6' && metadata.policy === '4';
     if (!version
-      || !['facts', 'facts,with-guesses'].includes(metadata.views?.join(','))
+      || !['facts', 'with-guesses', 'facts,with-guesses'].includes(metadata.views?.join(','))
       || !Number.isInteger(metadata.configuration?.searchLimit) || metadata.configuration.searchLimit < 1
       || !['data/people.json', 'data/places.json', 'data/names.md'].every((path) => Object.hasOwn(metadata.inputs || {}, path))
       || !metadata.inputs || metadata.fingerprint !== await evidenceFingerprint(metadata.inputs)) throw new Error('Invalid build metadata');
@@ -82,21 +86,22 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
     const sources = Object.keys(metadata.inputs).filter((path) => sourcePath.test(path)).sort();
     if (JSON.stringify(sources) !== JSON.stringify(paths.filter((path) => sourcePath.test(path)).sort())) throw new Error('The source file set changed');
     await Promise.all(Object.entries(metadata.inputs).map(async ([path, expected]) => {
-      if (path.split('/').includes('..') || !/^(data|scripts)\//.test(path)) throw new Error('Invalid build input path');
+      if (path.split('/').includes('..') || !/^data\/.*\.(json|md)$/.test(path)) throw new Error('Invalid build input path');
       const value = path === 'data/people.json' ? registryIdentities(people)
         : documents.has(path) ? documents.get(path)
           : path.endsWith('.json') ? await repository.getJson(path) : await repository.getText(path);
       if (await evidenceFingerprint(value) !== expected) throw new Error(`Build input changed: ${path}`);
     }));
-    if (metadata.schema >= 4) {
+    let settings;
+    if ((metadata.schema === undefined || metadata.schema >= 4)) {
       if (!Object.hasOwn(metadata.inputs, 'data/matching.json')) throw new Error('Missing global probability configuration');
-      const settings = metadata.configuration.probability;
+      settings = await repository.getJson('data/matching.json');
+      if (await evidenceFingerprint(settings) !== metadata.inputs['data/matching.json']) throw new Error('Probability parameters changed');
       if (!['weighted-log-odds-v1', 'weighted-log-odds-v2', 'weighted-log-odds-v3'].includes(settings?.model) || settings.calibrated !== false
         || !(settings.priorProbability > 0 && settings.priorProbability < settings.mergeProbability && settings.mergeProbability < 1)
         || !(settings.guessWeight > 0 && settings.guessWeight < 1)
         || Object.keys(settings.sourceWeights || {}).length !== 4
         || Object.entries({ documents: 1, images: 1, books: .5, notes: .5 }).some(([key, value]) => settings.sourceWeights?.[key] !== value)) throw new Error('Invalid probability parameters');
-      if (metadata.inputs['data/matching.json'] && await evidenceFingerprint(settings) !== await evidenceFingerprint(await repository.getJson('data/matching.json'))) throw new Error('Probability parameters changed');
     }
     for (const person of people) {
       for (const edge of person.relationships || []) {
@@ -113,7 +118,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
         }
       }
     }
-    if (metadata.schema >= 2) {
+    if ((metadata.schema === undefined || metadata.schema >= 2)) {
       if (!metadata.evidence || JSON.stringify(Object.keys(metadata.evidence).sort()) !== JSON.stringify([...metadata.views].sort())) throw new Error('Missing reconstructed evidence views');
       const checked = new Map();
       const sourceFact = async (source, view) => {
@@ -129,7 +134,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
         return checked.get(key);
       };
       for (const [view, stored] of Object.entries(metadata.evidence)) {
-        if (metadata.engine === '5') {
+        if ((metadata.schema === undefined || metadata.engine === '5')) {
           const background = metadata.matchingBackground?.[view];
           if (!background || !background.counts || typeof background.counts !== 'object' || Array.isArray(background.counts)
             || !Number.isFinite(background.total) || background.total < 0
@@ -139,7 +144,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
         const graph = expandEvidenceGraph(stored);
         const membership = new Map();
         for (const node of graph.nodes) {
-          if (metadata.schema >= 4 && (!Number.isFinite(node.identityProbability) || node.identityProbability < 0 || node.identityProbability > 1)) throw new Error('Invalid source identity probability');
+          if ((metadata.schema === undefined || metadata.schema >= 4) && (!Number.isFinite(node.identityProbability) || node.identityProbability < 0 || node.identityProbability > 1)) throw new Error('Invalid source identity probability');
           let named = !!node.registry && people.some((person) => person.id === node.registry && person.name === node.name);
           for (const mention of node.mentions) {
             const fact = await sourceFact(mention.source, view);
@@ -164,7 +169,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
         }
         for (const edge of graph.relationships) {
           for (const derivation of edge.derivations) {
-            if (metadata.schema >= 4 && (!Number.isFinite(derivation.assertionWeight) || derivation.assertionWeight <= 0 || derivation.assertionWeight > 1
+            if ((metadata.schema === undefined || metadata.schema >= 4) && (!Number.isFinite(derivation.assertionWeight) || derivation.assertionWeight <= 0 || derivation.assertionWeight > 1
               || derivation.endpointProbability !== null && (!Number.isFinite(derivation.endpointProbability) || derivation.endpointProbability < 0 || derivation.endpointProbability > 1))) throw new Error('Invalid relationship evidence weights');
             let supported = false;
             for (const source of derivation.sources) {
@@ -178,10 +183,10 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
             if (!supported) throw new Error('Reconstructed relationship lacks its source participants');
           }
         }
-        if (metadata.schema >= 4) {
+        if ((metadata.schema === undefined || metadata.schema >= 4)) {
           if (!Array.isArray(graph.comparisons)) throw new Error('Missing probability comparisons');
           const keys = new Set(graph.nodes.map((node) => node.key));
-          const prior = metadata.configuration.probability.priorProbability;
+          const prior = settings.priorProbability;
           for (const comparison of graph.comparisons) {
             if (!keys.has(comparison.person) || !keys.has(comparison.candidate)
               || !['merged', 'below-threshold', 'ambiguous', 'incompatible', 'superseded'].includes(comparison.status)
@@ -219,9 +224,9 @@ export function buildRelationshipGraph(people, { tree, view, verification } = {}
     return { ...person, _treeKey: key };
   });
   const generated = tree !== undefined || people.some((person) => Object.hasOwn(person, 'relationships') || person.familyGraph);
-  const metadata = tree === undefined ? people[0]?.familyGraph : tree;
+  const metadata = treeMetadata(tree === undefined ? people[0]?.familyGraph : tree);
   const views = generated ? Array.isArray(metadata?.views) ? metadata.views : [] : ['facts'];
-  const requestedView = view || (metadata?.schema >= 4 ? 'with-guesses' : 'facts');
+  const requestedView = view || (metadata && (metadata.schema === undefined || metadata.schema >= 4) ? 'with-guesses' : 'facts');
   const selectedView = views.includes(requestedView) ? requestedView : 'facts';
   let evidence;
   try { evidence = expandEvidenceGraph(metadata?.evidence?.[selectedView]); }

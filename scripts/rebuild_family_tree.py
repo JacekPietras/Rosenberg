@@ -36,8 +36,6 @@ def explain(result, query):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--include-guesses', action='store_true')
-    parser.add_argument('--facts-only', action='store_true', help='build a facts-only audit instead of the normal weighted tree')
     parser.add_argument('--explain', metavar='ID_OR_MENTION')
     parser.add_argument('--apply', action='store_true', help='write the reconstructed graph to data/tree.json')
     parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[1], help=argparse.SUPPRESS)
@@ -47,9 +45,7 @@ def main(argv=None):
         parser.error('--search-limit must be positive')
     try:
         inputs = load_inputs(args.root)
-        results = [build(inputs, search_limit=args.search_limit)]
-        if not args.facts_only:
-            results.append(build(inputs, include_guesses=True, search_limit=args.search_limit))
+        results = [build(inputs, include_guesses=True, search_limit=args.search_limit)]
         tree = serialize(inputs, results)
         print(f'Read {len(inputs.assertions)} typed assertions; supporting prose: {inputs.prose["facts"]} facts, {inputs.prose["guesses"]} guesses.')
         for result in results:

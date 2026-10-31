@@ -100,8 +100,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             ]
             paths.extend(
                 {"path": path.relative_to(ROOT).as_posix(), "version": path.stat().st_mtime_ns}
-                for path in [ROOT / "data/people.json", ROOT / "data/tree.json", ROOT / "data/places.json", ROOT / "data/names.md", ROOT / "data/matching.json",
-                             *(ROOT / "scripts").rglob("*.py")]
+                for path in [ROOT / "data/people.json", ROOT / "data/tree.json", ROOT / "data/places.json", ROOT / "data/names.md", ROOT / "data/titles.md", ROOT / "data/matching.json"]
                 if path.is_file()
             )
             paths.sort(key=lambda item: item["path"])
@@ -225,7 +224,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 if not 0 <= length <= 8192:
                     raise ValueError("Invalid rebuild request size")
                 payload = json.loads(self.rfile.read(length)) if length else {}
-                if not isinstance(payload, dict) or set(payload) - {"includeGuesses", "searchLimit"}:
+                if not isinstance(payload, dict) or set(payload) - {"searchLimit"}:
                     raise ValueError("Invalid rebuild options")
                 with family_rebuild_lock:
                     try:
@@ -237,20 +236,14 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                     configuration = metadata.get("configuration", {})
                     if not isinstance(configuration, dict):
                         configuration = {}
-                    views = metadata.get("views")
-                    if views not in (['facts'], ['facts', 'with-guesses']):
-                        views = ['facts', 'with-guesses']
                     saved_limit = configuration.get("searchLimit")
                     if type(saved_limit) is not int or saved_limit < 1:
                         saved_limit = 10000
-                    include_guesses = payload.get("includeGuesses", True)
                     search_limit = payload.get("searchLimit", saved_limit)
-                    if type(include_guesses) is not bool or type(search_limit) is not int or search_limit < 1:
+                    if type(search_limit) is not int or search_limit < 1:
                         raise ValueError("Invalid rebuild options")
                     command = [sys.executable, str(ROOT / "scripts/rebuild_family_tree.py"),
                                "--root", str(ROOT), "--apply", "--search-limit", str(search_limit)]
-                    if not include_guesses:
-                        command.append("--facts-only")
                     # Data edited during a build only requires building again.
                     for _ in range(3):
                         result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True,

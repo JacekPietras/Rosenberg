@@ -153,7 +153,8 @@ test('local and published discovery return recursive sources plus watched build 
   const published = createRepository({ location: { hostname: 'example.github.io', pathname: '/Rosenberg/docs/' },
     fetchFunction: async () => ({ ok: true, json: async () => ({ tree: tree.map((path) => ({ path, type: 'blob', sha: 'abc' })) }) }) });
   const files = await published.getRepositoryFiles();
-  assert.equal(files.length, 4);
+  assert.equal(files.length, 3);
+  assert.ok(files.every(({ path }) => !path.endsWith('.py')));
   const local = createRepository({ location: { hostname: 'localhost', pathname: '/docs/' },
     fetchFunction: async () => ({ ok: true, json: async () => files }) });
   assert.deepEqual(await local.getRepositoryFiles(), files);
@@ -533,7 +534,6 @@ test('active loader reads and rebuilds the separate tree without changing regist
   let rebuilds = 0;
   const { loader, state } = loaderFor(data, { rebuild: async (options) => {
     rebuilds++;
-    assert.equal(options.includeGuesses, true);
     await updateFixtureBuild(data);
   } });
   await loader.loadAll();
@@ -566,7 +566,7 @@ test('invalid saved build options cannot prevent automatic regeneration', async 
     let rebuilds = 0;
     const { loader, state } = loaderFor(data, { rebuild: async (options) => {
       rebuilds++;
-      assert.deepEqual(options, { includeGuesses: true, searchLimit: 10000 });
+      assert.deepEqual(options, { searchLimit: 10000 });
       data.tree = generated;
     } });
     await loader.loadAll();
@@ -603,7 +603,7 @@ test('repository handles a missing generated tree without treating it as source 
 async function probabilityFixture() {
   const data = await externalTreeFixture();
   const parameters = JSON.parse(await readFile(new URL('../data/matching.json', import.meta.url), 'utf8'));
-  Object.assign(data.tree, { schema: 4, engine: '5', policy: '4', matchingBackground: { facts: { total: 0, counts: {} }, 'with-guesses': { total: 0, counts: {} } }, configuration: { searchLimit: 10000, probability: structuredClone(parameters) } });
+  Object.assign(data.tree, { schema: 4, engine: '5', policy: '4', matchingBackground: { facts: { total: 0, counts: {} }, 'with-guesses': { total: 0, counts: {} } }, configuration: { searchLimit: 10000 } });
   data.files.set('data/matching.json', parameters);
   data.tree.inputs['data/matching.json'] = await evidenceFingerprint(parameters);
   data.tree.fingerprint = await evidenceFingerprint(data.tree.inputs);
@@ -617,6 +617,21 @@ async function probabilityFixture() {
   }
   return data;
 }
+
+
+test('current tree uses its single weighted graph without version or view metadata', async () => {
+  const data = await probabilityFixture();
+  delete data.tree.schema;
+  delete data.tree.engine;
+  delete data.tree.policy;
+  delete data.tree.views;
+  for (const key of ['evidence', 'matchingBackground']) delete data.tree[key].facts;
+  const verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+  assert.equal(verification.valid, true, verification.reason);
+  const graph = buildRelationshipGraph(data.people, { tree: data.tree, verification });
+  assert.equal(graph.view, 'with-guesses');
+  assert.doesNotMatch(renderPeopleTree(data.people, data.documents, { graph }), /Facts only|data-family-view/);
+});
 
 test('probability tree omits configuration while person evidence retains explained comparisons', async () => {
   const data = await probabilityFixture();
@@ -638,22 +653,20 @@ test('probability verification rejects altered estimates and effective parameter
   for (const mutation of ['estimate', 'parameters']) {
     const data = await probabilityFixture();
     if (mutation === 'estimate') data.tree.evidence.facts.comparisons[0].probability = .99;
-    else data.tree.configuration.probability.mergeProbability = .8;
+    else data.files.set('data/matching.json', { ...data.files.get('data/matching.json'), mergeProbability: .7 });
     const verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
     assert.equal(verification.valid, false);
-    assert.match(verification.reason, /probability|Probability/);
+    assert.match(verification.reason, /probability|Probability|Build input changed/);
   }
 });
 
 test('parameter changes automatically rebuild and a saved facts-only preference cannot omit guesses', async () => {
   const data = await probabilityFixture();
-  const next = { ...data.files.get('data/matching.json'), mergeProbability: .8 };
+  const next = { ...data.files.get('data/matching.json'), mergeProbability: .7 };
   data.files.set('data/matching.json', next);
   let rebuilds = 0;
   const { loader, state } = loaderFor(data, { rebuild: async (options) => {
     rebuilds++;
-    assert.equal(options.includeGuesses, true);
-    data.tree.configuration.probability = structuredClone(next);
     data.tree.inputs['data/matching.json'] = await evidenceFingerprint(next);
     data.tree.fingerprint = await evidenceFingerprint(data.tree.inputs);
   } });

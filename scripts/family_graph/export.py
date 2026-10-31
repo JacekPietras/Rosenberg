@@ -6,7 +6,6 @@ import re
 import math
 from .constraints import cycle_nodes
 from .model import fingerprint, registry_keys
-from .policy import ENGINE_VERSION, POLICY_VERSION
 from .sources import input_manifest
 from .probability import parameters
 
@@ -76,9 +75,7 @@ def serialize(inputs, results):
         raise ValueError('evidence views require the same engine configuration')
     registry = set(registry_keys(inputs.people))
     tree = {
-        'schema': 4, 'engine': ENGINE_VERSION, 'policy': POLICY_VERSION,
-        'configuration': results[0].configuration,
-        'views': [result.view for result in results],
+        'configuration': {'searchLimit': results[0].configuration['searchLimit']},
         'inputs': inputs.manifest, 'fingerprint': fingerprint(inputs.manifest),
         'evidence': {result.view: pack_evidence(result.evidence_graph) for result in results},
         'matchingBackground': {result.view: result.evidence_graph['nameFrequencies'] for result in results},
@@ -98,19 +95,17 @@ def serialize(inputs, results):
 
 
 def validate_generated(tree, people, root=None):
-    if (not isinstance(tree, dict) or tree.get('schema') != 4
-        or tree.get('engine') != ENGINE_VERSION or tree.get('policy') != POLICY_VERSION
-        or tree.get('views') not in (['facts'], ['facts', 'with-guesses'])
+    if (not isinstance(tree, dict)
+        or not isinstance(tree.get('evidence'), dict) or not tree['evidence']
+        or not set(tree['evidence']) <= {'facts', 'with-guesses'}
         or not isinstance(tree.get('inputs'), dict)
         or not {'data/people.json', 'data/places.json', 'data/names.md', 'data/matching.json'} <= tree.get('inputs', {}).keys()
         or type(tree.get('configuration', {}).get('searchLimit')) is not int
         or tree['configuration']['searchLimit'] < 1
         or fingerprint(tree['inputs']) != tree.get('fingerprint')):
         raise ValueError('invalid generated tree metadata')
-    if parameters(tree['configuration'].get('probability')) != tree['configuration'].get('probability'):
-        raise ValueError('missing probability configuration')
     backgrounds = tree.get('matchingBackground')
-    if not isinstance(backgrounds, dict) or set(backgrounds) != set(tree['views']):
+    if not isinstance(backgrounds, dict) or set(backgrounds) != set(tree['evidence']):
         raise ValueError('missing name-frequency background')
     for background in backgrounds.values():
         if (not isinstance(background, dict) or not isinstance(background.get('counts'), dict)
@@ -127,17 +122,16 @@ def validate_generated(tree, people, root=None):
         raise ValueError('invalid confirmed person IDs')
     if root is not None and tree['inputs'] != input_manifest(root, people):
         raise ValueError('stale build inputs; rerun reconstruction')
-    if root is not None and (root / 'data/matching.json').exists() and tree['configuration']['probability'] != parameters(json.loads((root / 'data/matching.json').read_text())):
-        raise ValueError('probability parameters changed; rerun reconstruction')
+    settings = parameters(json.loads((root / 'data/matching.json').read_text())) if root is not None else None
     if 'data/tree.json' in tree['inputs']:
         raise ValueError('generated tree cannot be an input to itself')
-    validate_evidence(tree, {person['id']: person['name'] for person in people}, root)
+    validate_evidence(tree, {person['id']: person['name'] for person in people}, root, settings=settings)
     return tree
 
 
-def validate_evidence(metadata, registry, root=None, cache=None):
+def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
     graphs = metadata.get('evidence')
-    if not isinstance(graphs, dict) or set(graphs) != set(metadata['views']):
+    if not isinstance(graphs, dict) or set(graphs) != set(metadata.get('matchingBackground', {})):
         raise ValueError('missing reconstructed evidence views')
     cache = {} if cache is None else cache
     resolved = {}
@@ -252,9 +246,10 @@ def validate_evidence(metadata, registry, root=None, cache=None):
                 or type(f.get('contribution')) not in (int, float) or not math.isfinite(f['contribution']) for f in features)
                 or abs(expected - probability) > 1e-7):
                 raise ValueError('invalid probability calculation')
-            prior = metadata['configuration']['probability']['priorProbability']
-            if abs(math.log(prior / (1 - prior)) + sum(f['contribution'] for f in features) - log_odds) > 1e-6:
-                raise ValueError('invalid probability feature sum')
+            if settings is not None:
+                prior = settings['priorProbability']
+                if abs(math.log(prior / (1 - prior)) + sum(f['contribution'] for f in features) - log_odds) > 1e-6:
+                    raise ValueError('invalid probability feature sum')
             for ref in comparison['sources']:
                 source(ref, view)
                 if '/guesses/' in ref['pointer'] and not comparison['usesGuesses']:

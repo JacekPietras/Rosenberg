@@ -43,13 +43,10 @@ Read the reconstruction without changing files:
 
 ```text
 python3 scripts/rebuild_family_tree.py
-python3 scripts/rebuild_family_tree.py --include-guesses --explain vogt_zu_Lauda
+python3 scripts/rebuild_family_tree.py --explain vogt_zu_Lauda
 ```
 
-Use `--apply` to write `data/tree.json`. The normal result always combines facts
-and lower-weight guesses; a separate facts-only view is retained for audit.
-`--facts-only` explicitly builds only that audit view; the viewer restores the
-normal weighted tree automatically. `data/people.json` contains
+Use `--apply` to write `data/tree.json`. The result combines facts and lower-weight guesses. `data/people.json` contains
 only confirmed IDs and full names; reconstruction never changes that registry. The tree includes people found in typed
 source assertions, including people without registry IDs. Source-local family
 groups and contextual links across sources remain distinguishable from fixed
@@ -68,7 +65,7 @@ viewer when a rebuild is needed.
 
 The registry and generated tree schemas are documented in [rules/json-formats.md](rules/json-formats.md).
 Matching uses an explicit log-odds model across all source identities.
-`data/matching.json` holds its global parameters, also visible in the viewer.
+`data/matching.json` holds its global parameters.
 Documents/images have source weight 1.0; books/notes 0.5; guesses receive an
 additional factor of 0.45. Title evidence decays with time, scoped offices carry
 more weight, and conflicting deaths impose a large penalty. Place/property

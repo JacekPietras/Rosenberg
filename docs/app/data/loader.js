@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=7';
+import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=9';
 
 export function createDataLoader({
   repository,
@@ -24,9 +24,9 @@ export function createDataLoader({
       const tree = typeof repository.getFamilyTree === 'function' ? await repository.getFamilyTree() : undefined;
       let verification = await verifyFamilyGraph(people, documents, repository, paths, tree);
       if (tree?.schema >= 4 && !tree.views?.includes('with-guesses')) verification = { valid: false, reason: 'The normal tree requires weighted guesses.' };
-      return { tree, verification, graph: buildRelationshipGraph(people, { tree, view: tree?.schema >= 4 ? 'with-guesses' : view, verification }) };
+      return { tree, verification, graph: buildRelationshipGraph(people, { tree, view: tree && (tree.schema === undefined || tree.schema >= 4) ? 'with-guesses' : view, verification }) };
     }
-    const worker = new Worker(new URL('./verification-worker.js?v=2', import.meta.url), { type: 'module' });
+    const worker = new Worker(new URL('./verification-worker.js?v=4', import.meta.url), { type: 'module' });
     try {
       return await new Promise((resolve, reject) => {
         worker.onmessage = (event) => event.data.error ? reject(new Error(event.data.error)) : resolve(event.data.result);
@@ -40,8 +40,7 @@ export function createDataLoader({
   function rebuildOptions() {
     const metadata = state.tree ?? state.personRecords[0]?.familyGraph;
     const limit = metadata?.configuration?.searchLimit;
-    return { includeGuesses: true,
-      searchLimit: Number.isSafeInteger(limit) && limit > 0 ? limit : 10000 };
+    return { searchLimit: Number.isSafeInteger(limit) && limit > 0 ? limit : 10000 };
   }
 
   async function loadSnapshot({ autoRebuild = true, familyOnly = false } = {}) {
@@ -123,7 +122,7 @@ export function createDataLoader({
     if (!familyOnly) await renderActive();
     const family = await loadFamilyInBackground(state.personRecords, documents, paths, state.familyView);
     state.tree = family.tree;
-    if (family.tree?.schema >= 4) state.familyView = 'with-guesses';
+    if (family.tree && (family.tree.schema === undefined || family.tree.schema >= 4)) state.familyView = 'with-guesses';
     state.familyVerification = family.verification;
     state.familyGraph = family.graph;
     state.familyGraph.canRebuild = state.canRebuildFamilyGraph;

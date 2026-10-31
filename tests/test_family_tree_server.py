@@ -71,9 +71,9 @@ class FamilyTreeServerTests(unittest.TestCase):
         self.assertEqual((200, {'ok': True}), (status, result))
         people = json.loads((self.root / 'data/people.json').read_text())
         metadata = json.loads((self.root / 'data/tree.json').read_text())
-        self.assertEqual(['facts', 'with-guesses'], metadata['views'])
+        self.assertEqual(['with-guesses'], list(metadata['evidence']))
         self.assertEqual(37, metadata['configuration']['searchLimit'])
-        self.assertEqual('b', metadata['evidence']['facts']['relationships'][0]['of'])
+        self.assertEqual('b', metadata['evidence']['with-guesses']['relationships'][0]['of'])
         self.assertTrue(all(set(person) == {'id', 'name'} for person in people))
         self.assertEqual(source, (self.root / 'data/documents/test.json').read_bytes())
         before = (self.root / 'data/tree.json').read_bytes()
@@ -82,11 +82,8 @@ class FamilyTreeServerTests(unittest.TestCase):
         self.assertEqual(before, (self.root / 'data/tree.json').read_bytes())
         self.assertEqual(registry, (self.root / 'data/people.json').read_bytes())
 
-    def test_facts_only_request_does_not_add_a_guesses_view(self):
-        self.assertEqual(200, self.post({'includeGuesses': False, 'searchLimit': 23})[0])
-        tree = json.loads((self.root / 'data/tree.json').read_text())
-        self.assertEqual(['facts'], tree['views'])
-        self.assertEqual(23, tree['configuration']['searchLimit'])
+    def test_facts_only_request_is_rejected(self):
+        self.assertEqual(400, self.post({'includeGuesses': False})[0])
 
     def test_invalid_sources_return_failure_without_replacing_registry(self):
         before = (self.root / 'data/people.json').read_bytes()
@@ -111,7 +108,7 @@ class FamilyTreeServerTests(unittest.TestCase):
                 status, result = self.post()
                 self.assertEqual(200, status, result)
                 tree = json.loads((self.root / 'data/tree.json').read_text())
-                self.assertEqual(['facts', 'with-guesses'], tree['views'])
+                self.assertEqual(['with-guesses'], list(tree['evidence']))
                 self.assertEqual(10000, tree['configuration']['searchLimit'])
 
     def test_timeout_is_reported_as_a_retryable_failure(self):

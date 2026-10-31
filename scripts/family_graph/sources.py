@@ -20,15 +20,10 @@ def source_paths(root):
 
 def input_manifest(root, people=None):
     paths = source_paths(root) + [root / 'data/names.md', root / 'data/titles.md', root / 'data/places.json', root / 'data/matching.json']
-    # Engine and policy changes also invalidate generated results.
-    paths += sorted((root / 'scripts/family_graph').glob('*.py'))
-    paths += [root / 'scripts/rebuild_family_tree.py', root / 'scripts/validate_facts.py',
-              root / 'scripts/place_names.py', root / 'scripts/search_places_by_name.py',
-              root / 'scripts/search_facts_by_name.py']
     manifest = {}
     for path in sorted(set(paths)):
         if not path.exists():
-            continue  # A small synthetic repository need not contain engine files.
+            continue  # A small synthetic repository may omit optional data files.
         text = path.read_text(encoding='utf-8')
         try:
             value = json.loads(text) if path.suffix == '.json' else text

@@ -130,7 +130,7 @@ test('cycles terminate, unknown references are ignored, and names are escaped', 
 test('repository family tree shows each identity once with no overlaps or clipped cards', async () => {
   const people = JSON.parse(await readFile(new URL('../data/people.json', import.meta.url), 'utf8'));
   const tree = JSON.parse(await readFile(new URL('../data/tree.json', import.meta.url), 'utf8'));
-  for (const view of tree.views) {
+  for (const view of Object.keys(tree.evidence)) {
     const layout = geometry(people, tree, view);
     assertLayout(layout);
     const simplified = geometry(people, tree, view, false);

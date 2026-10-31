@@ -367,26 +367,18 @@ Rebuilding the tree must leave the registry byte-for-byte unchanged.
 
 `data/tree.json` is the generated family graph, separate from the confirmed
 registry. Generate it with `python3 scripts/rebuild_family_tree.py --apply`;
-The normal CLI computes a facts-only audit and an independently built weighted
-facts-and-guesses view; guesses are always included in the normal viewer.
-`--facts-only` is an explicit audit command.
+The CLI computes a weighted graph combining facts and guesses.
 Without `--apply` the CLI is read-only. The local viewer also rebuilds stale or
 missing trees and offers a retry action only when rebuilding fails. The tree is output, never input
 identity evidence, and must not be included in its own input fingerprints.
 
 The top-level object has:
 
-- `schema: 4`, `engine: "5"`, `policy: "4"`.
 - `configuration.searchLimit`: the positive integer bound for the retained registry diagnostics.
-- `configuration.probability`: the effective model settings from `data/matching.json`,
-  including model/calibration status, source and guess weights, prior, merge
-  threshold, ambiguity margin, feature weights, temporal decay, and iteration limits.
-- `views`: exactly `["facts"]` or `["facts", "with-guesses"]`, including empty
-  or identical views.
 - `inputs`: repository-relative input path to SHA-256 fingerprint, covering
   recursively discovered source JSON in books/documents/notes/images,
-  `data/names.md`, `data/titles.md`, `data/places.json`, `data/matching.json`, the confirmed ID/name registry, and
-  engine/shared Python utilities.
+  `data/names.md`, `data/titles.md`, `data/places.json`, `data/matching.json`, and the confirmed ID/name registry.
+  Python scripts are not inputs; changes to them do not invalidate the stored graph.
 - `fingerprint`: the fingerprint of the complete `inputs` object.
 - `evidence`: a graph keyed by each available evidence view.
 - `matchingBackground`: per-view factual full-name counts and their weighted
@@ -400,10 +392,8 @@ The top-level object has:
 
 ### Source people and relationships
 
-Each evidence view contains `sources`, `nodes`, `relationships`, and
-`comparisons`. Schema 4 readers continue to accept earlier viewer artifacts for
-migration, but new exports use schema 4. The
-`sources` array stores each path/pointer/fingerprint reference once. Persisted
+The evidence graph contains `sources`, `nodes`, `relationships`, and
+`comparisons`. The `sources` array stores each path/pointer/fingerprint reference once. Persisted
 `mentions[].source`, `identitySources[]`, and derivation `sources[]` contain
 zero-based integer indexes into that table; comparison `sources[]` use the same
 indexes. Readers expand them for inspection.
@@ -588,7 +578,7 @@ bounds are rejected. The agreed source factors are documents/images 1.0 and
 books/notes 0.5; these values are enforced. Guesses must have a factor strictly
 between 0 and 1. Other values are configurable model assumptions. Parameter
 changes invalidate generated results and automatically rebuild the local tree.
-The viewer shows every effective value from the generated configuration.
+The matching parameters are stored only in `data/matching.json`.
 
 
 ## Places JSON
