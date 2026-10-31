@@ -236,6 +236,25 @@ def living_span(mentions, settings, names=None):
     return (level['alive'][0] - level['first'][0]) / YEAR
 
 
+def child_age(summary, children, settings):
+    """Strongest penalty from children born after this parent's death bound:
+    (penalty, minimum child age, sources, impossible for any source, impossible for documents)."""
+    worst = 0, 0, (), False, False
+    for value, level in summary.items():
+        if 'deathEnd' not in level:
+            continue
+        born = level['deathEnd'][0] + settings['posthumousBirthYears'] * YEAR
+        for weight, last, source in children:
+            age = (last - born) / YEAR
+            impossible = age > settings['maxAgeYears']
+            factor = min(value, weight)
+            penalty = settings['deathConflictPenalty'] if impossible else max(0, age - settings['ageComfortYears']) / settings['ageScaleYears']
+            result = penalty * factor, age, (level['deathEnd'][1], source), impossible, impossible and factor == 1
+            if result[0] > worst[0] or result[3] and not worst[3]:
+                worst = result
+    return worst
+
+
 def chronology_blocked(mentions, settings, names=None):
     """Document facts alone make this identity chronologically impossible."""
     level = chronology(mentions, settings, names).get(1, {})
@@ -302,6 +321,8 @@ class Profile:
     ranks: list = field(default_factory=list)
     # Latest-birth bounds from a parent's death: (reliability, ordinal, source).
     derived: list = field(default_factory=list)
+    # Children's last living mentions: (reliability, ordinal, source).
+    children: list = field(default_factory=list)
 
 
 # Deliberately deterministic; no extraction of relationships from prose.
@@ -438,9 +459,21 @@ class ProbabilityModel:
             blocks.append(label)
         elif value:
             add(label, -value, sources)
+        # A parent's death bounds each child's birth; a merge that moves the
+        # death earlier ages the children (posthumousBirthYears allowance).
+        merged = merge_chronology(*own)
+        children = [*left.children, *right.children]
+        value, age, sources, impossible, documented = child_age(merged, children, p)
+        if documented:
+            blocks.append('child born after parent death')
+        if impossible:
+            hard.append('child born after parent death')
+        elif value:
+            value -= max(child_age(summary, children, p)[0] for summary in own)
+            if value > 0:
+                add(f'child at least {age:.0f} years old after parent death', -value, sources)
         # Joins without a probability threshold still respect impossibility:
         # any impossible age, death conflicts between facts, and too long a life.
-        merged = merge_chronology(*own)
         for level in sorted(merged):
             summary = cumulative(merged, level)
             if 'birth' in summary and 'last' in summary and (summary['last'][0] - summary['birth'][0]) / YEAR > p['maxAgeYears']:

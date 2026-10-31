@@ -705,7 +705,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 parents[right][left].append(assertion)
         # A child is born at most `posthumousBirthYears` after a parent's death;
         # the bound feeds the child's ordinary age rules and penalties.
-        deaths = {}
+        deaths, lives = {}, {}
         for assertion in assertions:
             if assertion.original['type'] != 'parent':
                 continue
@@ -718,6 +718,11 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             for value, (end, source) in deaths[father]:
                 weight = min(value, reliability(assertion.source, model.settings))
                 profiles[child].derived.append((weight, end + round(model.settings['posthumousBirthYears'] * YEAR), source))
+            if child not in lives:
+                lives[child] = [(value, level['last']) for value, level in
+                                chronology(profiles[child].mentions, model.settings, names).items() if 'last' in level]
+            for value, (last, source) in lives[child]:
+                profiles[father].children.append((min(value, reliability(assertion.source, model.settings)), last, source))
         for child, co_parents in parents.items():
             for left, right in combinations(co_parents, 2):
                 # Repeated attestations of a same-named parent are not evidence

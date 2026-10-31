@@ -33,7 +33,7 @@ export function createEntityScreens({
     const patterns = kind === 'person' ? buildPersonPattern([entity]).map(({ pattern }) => pattern) : [buildPlacePattern([entity])];
     const mentions = [];
     getDocuments().forEach((doc, path) => (Array.isArray(doc?.entries) ? doc.entries : []).forEach((entry, index) => {
-      const factMatch = kind === 'person' && (entry.facts || []).some((fact) => factPersonMatch(fact, state.person || entity.id || entity.name, getPeople()));
+      const factMatch = kind === 'person' && [...(entry.facts || []), ...(entry.guesses || [])].some((fact) => factPersonMatch(fact, state.person || entity.id || entity.name, getPeople()));
       if (factMatch || patterns.some((pattern) => pattern && fields.some((field) => {
         if (kind === 'person' && field === 'facts') return false;
         pattern.lastIndex = 0;
@@ -44,10 +44,10 @@ export function createEntityScreens({
     return mentions;
   }
 
-  function renderFacts(mentions, factMatches = () => true) {
+  function renderFacts(mentions, factMatches = () => true, kind = 'facts') {
     const people = getPeople();
     const personQuery = state.person || '';
-    const facts = mentions.flatMap(({ doc, path, entry, index }, mentionIndex) => (Array.isArray(entry.facts) ? entry.facts : [])
+    const facts = mentions.flatMap(({ doc, path, entry, index }, mentionIndex) => (Array.isArray(entry[kind]) ? entry[kind] : [])
       .map((fact, factIndex) => ({
         ...fact,
         date: sourceFactDate(fact, doc, entry, path),
@@ -61,10 +61,11 @@ export function createEntityScreens({
       people,
       personNames: factPersonNames(),
       inlineMarkup,
+      listClass: kind === 'guesses' ? 'guesses-view' : '',
       sourceHref: (fact) => fact.sourceHref,
       itemClass: (fact) => fact.personMatch === 'ambiguous' ? ' class="entity-fact-ambiguous"' : '',
     });
-    return `<section class="entity-facts"><h3>Facts</h3>${items}</section>`;
+    return `<section class="entity-facts"><h3>${kind === 'guesses' ? 'Guesses' : 'Facts'}</h3>${items}</section>`;
   }
 
   function excerpt(value, pattern, linkEntities = true) {
@@ -98,7 +99,7 @@ export function createEntityScreens({
       const date = entry.date || doc.date || '';
       return `<article class="document ${kind}-mention" role="link" tabindex="0" data-document-href="${escapeHtml(documentNavigationUrl(path, index))}"><p class="entry-title">${markdownLinks(entry.title || documentTitle(doc, path))}</p>${date ? `<p class="entry-date">${escapeHtml(formatDate(date))}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, pattern) : ''}${extraMarkup(doc, entry)}</article>`;
     }).join('');
-    return `${heading}${leadingMarkup}${renderFacts(mentions, factMatches)}${content ? `<h3 class="entity-section-title">Direct quotations</h3>${content}` : '<article class="document"><p class="status">No mentions found.</p></article>'}`;
+    return `${heading}${leadingMarkup}${renderFacts(mentions, factMatches)}${kind === 'person' ? renderFacts(mentions, factMatches, 'guesses') : ''}${content ? `<h3 class="entity-section-title">Direct quotations</h3>${content}` : '<article class="document"><p class="status">No mentions found.</p></article>'}`;
   }
 
   function renderPersonPage() {

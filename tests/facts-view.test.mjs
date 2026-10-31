@@ -127,6 +127,27 @@ test('name routes aggregate source identities while person and evidence IDs sele
   assert.doesNotMatch(renderPersonPage(), /Source attestations/);
 });
 
+test('person pages show matching guesses separately, including guess-only sources', () => {
+  const state = { person: 'Wyclo' };
+  const documents = new Map([['data/books/example.json', { entries: [
+    { date: '1341', guesses: [{ type: 'spouse', person: 'Eberhard', of: 'Wyclo' }] },
+    { date: '1342', guesses: [{ type: 'generic', person: 'Someone else', content: 'appeared.' }] },
+  ] }]]);
+  const screens = createEntityScreens({
+    state, getPeople: () => [], getDocuments: () => documents,
+    buildPersonPattern, escapeHtml, inlineMarkup: escapeHtml, markdownLinks: escapeHtml,
+    dateSortValue: Number, formatDate: String, documentTitle: () => 'Book',
+    documentNavigationUrl: (path, index) => `?document=${path}#entry-${index}`,
+    displayedLanguagesFor: () => [],
+  });
+  const html = screens.renderPersonPage();
+  assert.match(html, /1 mention/);
+  assert.match(html, /<h3>Guesses<\/h3><ul class="facts facts-view guesses-view" aria-label="Guesses">/);
+  assert.match(html, /Wyclo/);
+  assert.match(html, /\?document=data\/books\/example.json#entry-0/);
+  assert.doesNotMatch(html, /Someone else|<h3>Facts<\/h3>/);
+});
+
 test('legacy facts and strings are excluded from fact views', () => {
   const legacy = { date: '1336', text: 'Arnold led the violence.' };
   const typed = { type: 'generic', person: 'Arnold', content: 'appeared.' };
