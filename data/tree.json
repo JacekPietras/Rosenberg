@@ -393,7 +393,7 @@
     "data/documents/1621-10-28.json": "sha256:15fa4aed32a4e9e4e0225add542d542429e2d8bf3ceea5bd9588af264b5eec69",
     "data/documents/1626-02-22.json": "sha256:34daee665dc6684ea3a1887acd60617a48d5830cc3cec544996d0934b154159f",
     "data/documents/1804-05-15.json": "sha256:86aa753836c8eaac5774d179c1ec43f243e7ec5f003f074db5b016bdf20351d6",
-    "data/images/images.json": "sha256:d40609892a6675e1d742faa8d8819a3e9fbfc49dde1f49ed7f2d023a622c1746",
+    "data/images/images.json": "sha256:8d689b65348c64c804ee570a900ca7019fc550d604fcadf3acf800bf329fc34f",
     "data/kinship.md": "sha256:a107f5093e44e57a84c9fda420fb88305b175def759b362f1da7779f3fdc9cba",
     "data/matching.json": "sha256:7ef45c55b24de4fdda23937bb8c7b49f1b7d8f88892209097655a24b61f6558d",
     "data/names.md": "sha256:40bd4c327268348f060905342cabe0998990adb0de5e2656c7efbc0cc169a816",
@@ -402,7 +402,7 @@
     "data/places.json": "sha256:debe760515ed1ec45abac9c41850875573a498396fa87537999e121e462d0dba",
     "data/titles.md": "sha256:97e8dd72c8aa0a206b9cf484304bf6ffb1a28b3e69a46fc5c0c3242c99685098"
   },
-  "fingerprint": "sha256:b4ebc8b48e1fd85aa758cf37e893673451d7fb90a26e0eb7abaacf3ca19aa882",
+  "fingerprint": "sha256:71fe277b1cee65f6495e4361ab4490842b4358bca277551f4231de715925ab29",
   "evidence": {
     "with-guesses": {
       "sources": [
@@ -7408,112 +7408,112 @@
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/122/facts/1",
+          "pointer": "/entries/124/facts/1",
           "fingerprint": "sha256:49225be1323efb840547624e844b8f8b52b51441d34503468bf797d5441805fc"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/124/facts/0",
+          "pointer": "/entries/126/facts/0",
           "fingerprint": "sha256:456d0bf3566555bea203e1e7ffbc737db68bbb62b991f1e40fe89065de3e5388"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/125/facts/0",
+          "pointer": "/entries/127/facts/0",
           "fingerprint": "sha256:2ce185fcd7f6f415513698af7a935129de0ff20d63a26b5b2cc680afba7a67bf"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/125/facts/2",
+          "pointer": "/entries/127/facts/2",
           "fingerprint": "sha256:ebfb0288ab95153b1cc9e5ef24e6f2ed36854b44cc7cf8cd211719684c6d15c1"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/148/facts/0",
+          "pointer": "/entries/150/facts/0",
           "fingerprint": "sha256:bd33376f9b89a222c74301d623ce2c7b3fae6db1ad1a56e354fba153fb664e45"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/148/facts/1",
+          "pointer": "/entries/150/facts/1",
           "fingerprint": "sha256:acab06523bfac2257e3dc018ec3ff6aa3480047c4db68dbe1d1df54e3be727c3"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/155/facts/0",
+          "pointer": "/entries/157/facts/0",
           "fingerprint": "sha256:33b7d6d6e14579e04e78a2f0bd6030c8878980040ceefb6f8f5e4fb4d25ce701"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/155/facts/1",
+          "pointer": "/entries/157/facts/1",
           "fingerprint": "sha256:48e336c2d1f28885cec8047b7ea5d0fbb93acb066c3204cef55ef59f9fbf9da1"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/156/facts/0",
+          "pointer": "/entries/158/facts/0",
           "fingerprint": "sha256:efa8eed79803677a2f42d85a893c288f845fb49aa7ae8034c1ee439d48b4afbd"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/156/facts/1",
+          "pointer": "/entries/158/facts/1",
           "fingerprint": "sha256:dd0b49403d5f68511530628ef6347ece35d8be478d9dae1cbed619c977edf2f9"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/156/facts/2",
+          "pointer": "/entries/158/facts/2",
           "fingerprint": "sha256:29e6961b5b2755db6e864b14d10525804dec859c667318ed23880fcda957fa53"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/159/facts/0",
+          "pointer": "/entries/161/facts/0",
           "fingerprint": "sha256:51ce2ff1a7c295b5e620bc04909ecd4ba86b1b958dd3cf129138234d6791125f"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/160/facts/2",
+          "pointer": "/entries/162/facts/2",
           "fingerprint": "sha256:d6a735d181412cafb23bd3f69c3b155be39c80461e33d1a34a0c6dffe296b09e"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/160/facts/3",
+          "pointer": "/entries/162/facts/3",
           "fingerprint": "sha256:833cb0a26aba621509842f8880d843bfed1f236fb340eb88877918dcaeeb3282"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/166/facts/0",
+          "pointer": "/entries/168/facts/0",
           "fingerprint": "sha256:e5a68ff036ca0445e0466e95caf579f72cfac533dd8fc6237a9dcc699c886f1e"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/166/facts/1",
+          "pointer": "/entries/168/facts/1",
           "fingerprint": "sha256:c6dcd53984f4e0d5c21d5175cd0f9cec7c7a74c2795339fda345306fb37d7751"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/166/facts/2",
+          "pointer": "/entries/168/facts/2",
           "fingerprint": "sha256:b848fe9038ada494eb5dc4c154f61854a733733814ae3302bf1a08300e82d8f1"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/166/facts/3",
+          "pointer": "/entries/168/facts/3",
           "fingerprint": "sha256:8b9743f61858c1cd01fdb9bab806e18e0f362324141e05e20c8cd0a30d29343a"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/174/facts/0",
+          "pointer": "/entries/176/facts/0",
           "fingerprint": "sha256:1fb7e463fb7fa40f8eec44699c041c94b87c147161e6ad8a89e7de652aa41af3"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/174/facts/1",
+          "pointer": "/entries/176/facts/1",
           "fingerprint": "sha256:a0abafa880ff550c6008bb29117f51db3ef841e260262f7d6794c88f291a26b6"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/174/facts/2",
+          "pointer": "/entries/176/facts/2",
           "fingerprint": "sha256:21b914adb4a4c1fdb87690a491e421b54c85be01eca055510fd7c360c70096da"
         },
         {
           "path": "data/images/images.json",
-          "pointer": "/entries/84/guesses/0",
+          "pointer": "/entries/86/guesses/0",
           "fingerprint": "sha256:004b540be8ec842a679081ec530fa5ebff730e8e96cfc125f0645179dfd39a5e"
         }
       ],
@@ -33969,7 +33969,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/2fe2459bf09878365683",
+          "key": "@evidence/8400bf18a4df0bca1f10",
           "name": "Hans Georg von Seckendorff",
           "titles": [
             "zu Sugenheim"
@@ -34025,7 +34025,7 @@
           ]
         },
         {
-          "key": "@evidence/abbc86592d9d85a51dae",
+          "key": "@evidence/72d59eb61e23a0b3285d",
           "name": "Brigitta von Rosenberg",
           "titles": [],
           "dates": [
@@ -34197,7 +34197,7 @@
           ]
         },
         {
-          "key": "@evidence/89f857a9b01e67fa7ab9",
+          "key": "@evidence/a39e3675176f5249d20d",
           "name": "Albrecht von Rosenberg",
           "titles": [],
           "dates": [
@@ -34215,7 +34215,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/3ecda4d45b33f65628ec",
+          "key": "@evidence/4bd46fdf629a0d9c9be3",
           "name": "Rufina von Rosenberg, née Stiebar von Buttenheim",
           "titles": [],
           "dates": [
@@ -34233,7 +34233,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/ce82bf440aa15cdc6c74",
+          "key": "@evidence/1df9c34340bbdf9ddf5b",
           "name": "Albrecht von Rosenberg",
           "titles": [],
           "dates": [
@@ -34251,7 +34251,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/ac58fed3a8ab45bc2a54",
+          "key": "@evidence/e9c4857fc32cd31a69e0",
           "name": "Katharina von Rosenberg, née von Seinsheim",
           "titles": [],
           "dates": [
@@ -34269,7 +34269,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/54ade5876d3c753603fd",
+          "key": "@evidence/f0812de5a48133f6fc95",
           "name": "Eberhard von Rosenberg",
           "titles": [],
           "dates": [
@@ -34295,7 +34295,7 @@
           ]
         },
         {
-          "key": "@evidence/50557706b8d8a788337d",
+          "key": "@evidence/1aeff84bb97b7b078545",
           "name": "Anna von Rosenberg, née von Dienheim",
           "titles": [],
           "dates": [
@@ -34313,7 +34313,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/fa491bf0e2c805f40062",
+          "key": "@evidence/4f588387045a8e66f691",
           "name": "Georg Albrecht von Seckendorff",
           "titles": [],
           "dates": [
@@ -34339,7 +34339,7 @@
           ]
         },
         {
-          "key": "@evidence/244bbba8e56c1f1b96e0",
+          "key": "@evidence/fd1a9579ccac8eb25485",
           "name": "Hans Georg von Seckendorff",
           "titles": [],
           "dates": [
@@ -34357,7 +34357,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/00cd8f22398d4491b204",
+          "key": "@evidence/9577274659b41e54664a",
           "name": "Brigitta von Rosenberg",
           "titles": [],
           "dates": [
@@ -34375,7 +34375,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/df7f1fccb7dd48433ce3",
+          "key": "@evidence/c636b6109863ff0cb1ef",
           "name": "Hans von Sternberg",
           "titles": [
             "zu Schenkenau"
@@ -34403,7 +34403,7 @@
           ]
         },
         {
-          "key": "@evidence/a33eb5741abadabcd031",
+          "key": "@evidence/9526e06e4bb48a341f09",
           "name": "Anna von Sternberg, née von Rosenberg",
           "titles": [],
           "dates": [
@@ -34421,7 +34421,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/6b6d98b03ca23435617d",
+          "key": "@evidence/fbfde873d25bdaf10c8b",
           "name": "Wolf von Hürnheim",
           "titles": [],
           "dates": [
@@ -34453,7 +34453,7 @@
           ]
         },
         {
-          "key": "@evidence/9dee3d75bb40e3b540bb",
+          "key": "@evidence/ff63e9fcd55c7d853236",
           "name": "Uta von Rosenberg",
           "titles": [],
           "dates": [
@@ -34471,7 +34471,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/0438d4087bca142a55a6",
+          "key": "@evidence/f9dc0d48ebb1b7a13f62",
           "name": "Christoph von Maßbach",
           "titles": [],
           "dates": [
@@ -34489,7 +34489,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/d882f79acfaa3a9e5f0a",
+          "key": "@evidence/d0653a44a638400fbd42",
           "name": "Eva von Maßbach, née von Rosenberg",
           "titles": [],
           "dates": [
@@ -34507,7 +34507,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/0cb892102b5f645d790a",
+          "key": "@evidence/1cce6c9c5f20ca9a1e26",
           "name": "Philipp von Maßbach",
           "titles": [],
           "dates": [
@@ -34525,7 +34525,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/1170f568c5c1da173f84",
+          "key": "@evidence/2d7244577cdef0e66329",
           "name": "Eva von Maßbach, née von Rosenberg",
           "titles": [],
           "dates": [
@@ -34551,7 +34551,7 @@
           ]
         },
         {
-          "key": "@evidence/4c550583678cdefdcceb",
+          "key": "@evidence/54e5e06c2e0c8c0a5d7d",
           "name": "Eva von Maßbach",
           "titles": [],
           "dates": [
@@ -34569,7 +34569,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/8d638b66dd1995b31135",
+          "key": "@evidence/529a0cd044669cbe9220",
           "name": "Hans Ludovicus von Seckendorff",
           "titles": [],
           "dates": [
@@ -34631,7 +34631,7 @@
           "identitySources": []
         },
         {
-          "key": "@evidence/c541b257e4e5db8d85cb",
+          "key": "@evidence/f2dc2914e9e804d0ded8",
           "name": "Adelheid von Hirschhorn",
           "titles": [],
           "dates": [
@@ -35805,25 +35805,6 @@
             }
           ],
           "term": "Vetter"
-        },
-        {
-          "type": "kin",
-          "person": "@evidence/6b6d98b03ca23435617d",
-          "of": "@evidence/9dee3d75bb40e3b540bb",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1408,
-                1409,
-                1410
-              ]
-            }
-          ],
-          "term": "paternal grandmother"
         },
         {
           "type": "kin",
@@ -37944,6 +37925,25 @@
         },
         {
           "type": "kin",
+          "person": "@evidence/fbfde873d25bdaf10c8b",
+          "of": "@evidence/ff63e9fcd55c7d853236",
+          "derivations": [
+            {
+              "identity": "source",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": null,
+              "sources": [
+                1408,
+                1409,
+                1410
+              ]
+            }
+          ],
+          "term": "paternal grandmother"
+        },
+        {
+          "type": "kin",
           "person": "arnold_brother_of_vogt_zu_Lauda",
           "of": "eberhard_jagstberg",
           "derivations": [
@@ -38880,23 +38880,6 @@
         },
         {
           "type": "parent",
-          "person": "@evidence/00cd8f22398d4491b204",
-          "of": "@evidence/fa491bf0e2c805f40062",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1404,
-                1405
-              ]
-            }
-          ]
-        },
-        {
-          "type": "parent",
           "person": "@evidence/00e27ea8696cbc4285e1",
           "of": "@evidence/e2360be3f8b9971d4655",
           "derivations": [
@@ -38978,40 +38961,6 @@
               "sources": [
                 307,
                 312
-              ]
-            }
-          ]
-        },
-        {
-          "type": "parent",
-          "person": "@evidence/1170f568c5c1da173f84",
-          "of": "@evidence/0cb892102b5f645d790a",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1412,
-                1413
-              ]
-            }
-          ]
-        },
-        {
-          "type": "parent",
-          "person": "@evidence/1170f568c5c1da173f84",
-          "of": "@evidence/4c550583678cdefdcceb",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1412,
-                1413
               ]
             }
           ]
@@ -40624,23 +40573,6 @@
         },
         {
           "type": "parent",
-          "person": "@evidence/244bbba8e56c1f1b96e0",
-          "of": "@evidence/fa491bf0e2c805f40062",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1404,
-                1405
-              ]
-            }
-          ]
-        },
-        {
-          "type": "parent",
           "person": "@evidence/26ef9c269ad7666f5bd1",
           "of": "@evidence/7a9297552f223be37357",
           "derivations": [
@@ -40691,8 +40623,8 @@
         },
         {
           "type": "parent",
-          "person": "@evidence/2fe2459bf09878365683",
-          "of": "@evidence/29f329e7ef6a4295eadf",
+          "person": "@evidence/2d7244577cdef0e66329",
+          "of": "@evidence/1cce6c9c5f20ca9a1e26",
           "derivations": [
             {
               "identity": "source",
@@ -40700,27 +40632,16 @@
               "assertionWeight": 1.0,
               "endpointProbability": null,
               "sources": [
-                1383,
-                1384,
-                1385,
-                1386,
-                1387,
-                1396,
-                1397,
-                1404,
-                1405,
-                1414,
-                1415,
-                1416,
-                1417
+                1412,
+                1413
               ]
             }
           ]
         },
         {
           "type": "parent",
-          "person": "@evidence/2fe2459bf09878365683",
-          "of": "@evidence/8b40bf4fd3b595651bfa",
+          "person": "@evidence/2d7244577cdef0e66329",
+          "of": "@evidence/54e5e06c2e0c8c0a5d7d",
           "derivations": [
             {
               "identity": "source",
@@ -40728,47 +40649,8 @@
               "assertionWeight": 1.0,
               "endpointProbability": null,
               "sources": [
-                1383,
-                1384,
-                1385,
-                1386,
-                1387,
-                1396,
-                1397,
-                1404,
-                1405,
-                1414,
-                1415,
-                1416,
-                1417
-              ]
-            }
-          ]
-        },
-        {
-          "type": "parent",
-          "person": "@evidence/2fe2459bf09878365683",
-          "of": "@evidence/8d638b66dd1995b31135",
-          "derivations": [
-            {
-              "identity": "inferred",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": 0.97769888,
-              "sources": [
-                1383,
-                1384,
-                1385,
-                1386,
-                1387,
-                1396,
-                1397,
-                1404,
-                1405,
-                1414,
-                1415,
-                1416,
-                1417
+                1412,
+                1413
               ]
             }
           ]
@@ -42588,6 +42470,62 @@
         },
         {
           "type": "parent",
+          "person": "@evidence/72d59eb61e23a0b3285d",
+          "of": "@evidence/529a0cd044669cbe9220",
+          "derivations": [
+            {
+              "identity": "inferred",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": 0.97769888,
+              "sources": [
+                1383,
+                1384,
+                1385,
+                1386,
+                1387,
+                1396,
+                1397,
+                1404,
+                1405,
+                1414,
+                1415,
+                1416,
+                1417
+              ]
+            }
+          ]
+        },
+        {
+          "type": "parent",
+          "person": "@evidence/72d59eb61e23a0b3285d",
+          "of": "@evidence/de174b187977c604034e",
+          "derivations": [
+            {
+              "identity": "source",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": null,
+              "sources": [
+                1383,
+                1384,
+                1385,
+                1386,
+                1387,
+                1396,
+                1397,
+                1404,
+                1405,
+                1414,
+                1415,
+                1416,
+                1417
+              ]
+            }
+          ]
+        },
+        {
+          "type": "parent",
           "person": "@evidence/738c454cd28431b79b6e",
           "of": "@evidence/255304c53b9e49af52fd",
           "derivations": [
@@ -43326,6 +43264,90 @@
         },
         {
           "type": "parent",
+          "person": "@evidence/8400bf18a4df0bca1f10",
+          "of": "@evidence/29f329e7ef6a4295eadf",
+          "derivations": [
+            {
+              "identity": "source",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": null,
+              "sources": [
+                1383,
+                1384,
+                1385,
+                1386,
+                1387,
+                1396,
+                1397,
+                1404,
+                1405,
+                1414,
+                1415,
+                1416,
+                1417
+              ]
+            }
+          ]
+        },
+        {
+          "type": "parent",
+          "person": "@evidence/8400bf18a4df0bca1f10",
+          "of": "@evidence/529a0cd044669cbe9220",
+          "derivations": [
+            {
+              "identity": "inferred",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": 0.97769888,
+              "sources": [
+                1383,
+                1384,
+                1385,
+                1386,
+                1387,
+                1396,
+                1397,
+                1404,
+                1405,
+                1414,
+                1415,
+                1416,
+                1417
+              ]
+            }
+          ]
+        },
+        {
+          "type": "parent",
+          "person": "@evidence/8400bf18a4df0bca1f10",
+          "of": "@evidence/8b40bf4fd3b595651bfa",
+          "derivations": [
+            {
+              "identity": "source",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": null,
+              "sources": [
+                1383,
+                1384,
+                1385,
+                1386,
+                1387,
+                1396,
+                1397,
+                1404,
+                1405,
+                1414,
+                1415,
+                1416,
+                1417
+              ]
+            }
+          ]
+        },
+        {
+          "type": "parent",
           "person": "@evidence/88ba163924508f9c5173",
           "of": "@evidence/df7229b594c7d115dd98",
           "derivations": [
@@ -43449,6 +43471,23 @@
                 1309,
                 1310,
                 1311
+              ]
+            }
+          ]
+        },
+        {
+          "type": "parent",
+          "person": "@evidence/9577274659b41e54664a",
+          "of": "@evidence/4f588387045a8e66f691",
+          "derivations": [
+            {
+              "identity": "source",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": null,
+              "sources": [
+                1404,
+                1405
               ]
             }
           ]
@@ -44522,62 +44561,6 @@
         },
         {
           "type": "parent",
-          "person": "@evidence/abbc86592d9d85a51dae",
-          "of": "@evidence/8d638b66dd1995b31135",
-          "derivations": [
-            {
-              "identity": "inferred",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": 0.97769888,
-              "sources": [
-                1383,
-                1384,
-                1385,
-                1386,
-                1387,
-                1396,
-                1397,
-                1404,
-                1405,
-                1414,
-                1415,
-                1416,
-                1417
-              ]
-            }
-          ]
-        },
-        {
-          "type": "parent",
-          "person": "@evidence/abbc86592d9d85a51dae",
-          "of": "@evidence/de174b187977c604034e",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1383,
-                1384,
-                1385,
-                1386,
-                1387,
-                1396,
-                1397,
-                1404,
-                1405,
-                1414,
-                1415,
-                1416,
-                1417
-              ]
-            }
-          ]
-        },
-        {
-          "type": "parent",
           "person": "@evidence/abff7dff6daee5702993",
           "of": "@evidence/039d15b56d116d5a683c",
           "derivations": [
@@ -45520,6 +45503,23 @@
               "sources": [
                 166,
                 171
+              ]
+            }
+          ]
+        },
+        {
+          "type": "parent",
+          "person": "@evidence/fd1a9579ccac8eb25485",
+          "of": "@evidence/4f588387045a8e66f691",
+          "derivations": [
+            {
+              "identity": "source",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": null,
+              "sources": [
+                1404,
+                1405
               ]
             }
           ]
@@ -62312,22 +62312,6 @@
         },
         {
           "type": "spouse",
-          "person": "@evidence/0438d4087bca142a55a6",
-          "of": "@evidence/d882f79acfaa3a9e5f0a",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1411
-              ]
-            }
-          ]
-        },
-        {
-          "type": "spouse",
           "person": "@evidence/0451c403ae3f5c6756b5",
           "of": "@evidence/586a58046a4734487d29",
           "derivations": [
@@ -62776,6 +62760,23 @@
         },
         {
           "type": "spouse",
+          "person": "@evidence/1aeff84bb97b7b078545",
+          "of": "@evidence/f0812de5a48133f6fc95",
+          "derivations": [
+            {
+              "identity": "source",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": null,
+              "sources": [
+                1402,
+                1403
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spouse",
           "person": "@evidence/1caae5c63ae67d0ad205",
           "of": "@evidence/36ac4c1afb944884cbff",
           "derivations": [
@@ -62819,6 +62820,22 @@
               "endpointProbability": null,
               "sources": [
                 320
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spouse",
+          "person": "@evidence/1df9c34340bbdf9ddf5b",
+          "of": "@evidence/e9c4857fc32cd31a69e0",
+          "derivations": [
+            {
+              "identity": "source",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": null,
+              "sources": [
+                1401
               ]
             }
           ]
@@ -62993,34 +63010,6 @@
         },
         {
           "type": "spouse",
-          "person": "@evidence/2fe2459bf09878365683",
-          "of": "@evidence/abbc86592d9d85a51dae",
-          "derivations": [
-            {
-              "identity": "inferred",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": 0.97769888,
-              "sources": [
-                1383,
-                1384,
-                1385,
-                1386,
-                1387,
-                1396,
-                1397,
-                1404,
-                1405,
-                1414,
-                1415,
-                1416,
-                1417
-              ]
-            }
-          ]
-        },
-        {
-          "type": "spouse",
           "person": "@evidence/30994657f6f8c7d03f9e",
           "of": "@evidence/4e615839de7558529600",
           "derivations": [
@@ -63182,22 +63171,6 @@
         },
         {
           "type": "spouse",
-          "person": "@evidence/3ecda4d45b33f65628ec",
-          "of": "@evidence/89f857a9b01e67fa7ab9",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1400
-              ]
-            }
-          ]
-        },
-        {
-          "type": "spouse",
           "person": "@evidence/3fbd800f244b4329f5bd",
           "of": "@evidence/634e9953dec7bdd7df28",
           "derivations": [
@@ -63302,6 +63275,22 @@
         },
         {
           "type": "spouse",
+          "person": "@evidence/4bd46fdf629a0d9c9be3",
+          "of": "@evidence/a39e3675176f5249d20d",
+          "derivations": [
+            {
+              "identity": "source",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": null,
+              "sources": [
+                1400
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spouse",
           "person": "@evidence/4d83bfff5a97eeabf2bb",
           "of": "@evidence/79b0f5f754b846a867a4",
           "derivations": [
@@ -63344,23 +63333,6 @@
                 1165,
                 1166,
                 1167
-              ]
-            }
-          ]
-        },
-        {
-          "type": "spouse",
-          "person": "@evidence/50557706b8d8a788337d",
-          "of": "@evidence/54ade5876d3c753603fd",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1402,
-                1403
               ]
             }
           ]
@@ -64735,6 +64707,34 @@
         },
         {
           "type": "spouse",
+          "person": "@evidence/72d59eb61e23a0b3285d",
+          "of": "@evidence/8400bf18a4df0bca1f10",
+          "derivations": [
+            {
+              "identity": "inferred",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": 0.97769888,
+              "sources": [
+                1383,
+                1384,
+                1385,
+                1386,
+                1387,
+                1396,
+                1397,
+                1404,
+                1405,
+                1414,
+                1415,
+                1416,
+                1417
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spouse",
           "person": "@evidence/74428b34acecdb6d0e40",
           "of": "@evidence/d7aa7b11d68192fe8bda",
           "derivations": [
@@ -65340,6 +65340,23 @@
         },
         {
           "type": "spouse",
+          "person": "@evidence/9526e06e4bb48a341f09",
+          "of": "@evidence/c636b6109863ff0cb1ef",
+          "derivations": [
+            {
+              "identity": "source",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": null,
+              "sources": [
+                1406,
+                1407
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spouse",
           "person": "@evidence/9a256f9ee644d6363196",
           "of": "@evidence/ed879f8fbe3eaaa50dd3",
           "derivations": [
@@ -65903,23 +65920,6 @@
         },
         {
           "type": "spouse",
-          "person": "@evidence/a33eb5741abadabcd031",
-          "of": "@evidence/df7f1fccb7dd48433ce3",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1406,
-                1407
-              ]
-            }
-          ]
-        },
-        {
-          "type": "spouse",
           "person": "@evidence/a3d3ba211cdbb5e0341c",
           "of": "@evidence/d17ad09df6b8e1b43c0e",
           "derivations": [
@@ -66241,22 +66241,6 @@
         },
         {
           "type": "spouse",
-          "person": "@evidence/ac58fed3a8ab45bc2a54",
-          "of": "@evidence/ce82bf440aa15cdc6c74",
-          "derivations": [
-            {
-              "identity": "source",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": null,
-              "sources": [
-                1401
-              ]
-            }
-          ]
-        },
-        {
-          "type": "spouse",
           "person": "@evidence/ace51f07cc0824029c1d",
           "of": "@evidence/d5000d55e2d991a9adfb",
           "derivations": [
@@ -66382,23 +66366,6 @@
         },
         {
           "type": "spouse",
-          "person": "@evidence/c541b257e4e5db8d85cb",
-          "of": "konrad_schonau",
-          "derivations": [
-            {
-              "identity": "inferred",
-              "usesGuesses": false,
-              "assertionWeight": 1.0,
-              "endpointProbability": 1.0,
-              "sources": [
-                1419,
-                1420
-              ]
-            }
-          ]
-        },
-        {
-          "type": "spouse",
           "person": "@evidence/c76cb8749dd386269b28",
           "of": "@evidence/d927975945dcbd24d659",
           "derivations": [
@@ -66486,6 +66453,22 @@
         },
         {
           "type": "spouse",
+          "person": "@evidence/d0653a44a638400fbd42",
+          "of": "@evidence/f9dc0d48ebb1b7a13f62",
+          "derivations": [
+            {
+              "identity": "source",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": null,
+              "sources": [
+                1411
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spouse",
           "person": "@evidence/d92c88ecc2879db5e6d7",
           "of": "@evidence/df92efcc6dbe30dc3866",
           "derivations": [
@@ -66519,6 +66502,23 @@
                 1325,
                 1326,
                 1327
+              ]
+            }
+          ]
+        },
+        {
+          "type": "spouse",
+          "person": "@evidence/f2dc2914e9e804d0ded8",
+          "of": "konrad_schonau",
+          "derivations": [
+            {
+              "identity": "inferred",
+              "usesGuesses": false,
+              "assertionWeight": 1.0,
+              "endpointProbability": 1.0,
+              "sources": [
+                1419,
+                1420
               ]
             }
           ]
@@ -214929,7 +214929,7 @@
           ],
           "mentions": [
             "data/books/bauer_1872.json#/entries/39/facts/12/of",
-            "data/images/images.json#/entries/174/facts/0/person"
+            "data/images/images.json#/entries/176/facts/0/person"
           ],
           "iteration": 8,
           "pass": 1,
@@ -327419,7 +327419,7 @@
           ],
           "mentions": [
             "data/books/bauer_1872.json#/entries/88/facts/0/of",
-            "data/images/images.json#/entries/174/facts/0/person"
+            "data/images/images.json#/entries/176/facts/0/person"
           ],
           "iteration": 8,
           "pass": 1,
@@ -330048,7 +330048,7 @@
           ],
           "mentions": [
             "data/books/bidermann_1751.json#/entries/28/facts/11/of",
-            "data/images/images.json#/entries/174/facts/0/person"
+            "data/images/images.json#/entries/176/facts/0/person"
           ],
           "iteration": 8,
           "pass": 1,
@@ -335607,7 +335607,7 @@
           ],
           "mentions": [
             "data/books/freiburger_dioecesan_archiv_1896_25.json#/entries/139/facts/3/of",
-            "data/images/images.json#/entries/174/facts/0/person"
+            "data/images/images.json#/entries/176/facts/0/person"
           ],
           "iteration": 8,
           "pass": 1,
@@ -335922,7 +335922,7 @@
           ],
           "mentions": [
             "data/books/freiburger_dioecesan_archiv_1896_25.json#/entries/139/facts/5/person",
-            "data/images/images.json#/entries/174/facts/0/person"
+            "data/images/images.json#/entries/176/facts/0/person"
           ],
           "iteration": 8,
           "pass": 1,
@@ -336269,7 +336269,7 @@
           ],
           "mentions": [
             "data/books/freiburger_dioecesan_archiv_1896_25.json#/entries/141/facts/3/person",
-            "data/images/images.json#/entries/174/facts/0/person"
+            "data/images/images.json#/entries/176/facts/0/person"
           ],
           "iteration": 8,
           "pass": 1,
@@ -336589,7 +336589,7 @@
           ],
           "mentions": [
             "data/books/freiburger_dioecesan_archiv_1896_25.json#/entries/142/facts/0/person",
-            "data/images/images.json#/entries/174/facts/0/person"
+            "data/images/images.json#/entries/176/facts/0/person"
           ],
           "iteration": 8,
           "pass": 1,
@@ -508966,14 +508966,14 @@
           ],
           "mentions": [
             "data/documents/1382-02-15.json#/entries/0/facts/1/person",
-            "data/images/images.json#/entries/125/facts/2/person"
+            "data/images/images.json#/entries/127/facts/2/person"
           ],
           "iteration": 1,
           "pass": 1,
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/ef608acbd5e91b096f26",
-          "candidate": "@evidence/50557706b8d8a788337d",
+          "candidate": "@evidence/1aeff84bb97b7b078545",
           "usesGuesses": true
         },
         {
@@ -509242,14 +509242,14 @@
           ],
           "mentions": [
             "data/documents/1382-02-17.json#/entries/0/facts/1/person",
-            "data/images/images.json#/entries/125/facts/2/person"
+            "data/images/images.json#/entries/127/facts/2/person"
           ],
           "iteration": 0,
           "pass": 1,
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/ef608acbd5e91b096f26",
-          "candidate": "@evidence/50557706b8d8a788337d",
+          "candidate": "@evidence/1aeff84bb97b7b078545",
           "usesGuesses": false
         },
         {
@@ -526034,7 +526034,7 @@
           ],
           "mentions": [
             "data/documents/1477-06-02.json#/entries/0/facts/0/person",
-            "data/images/images.json#/entries/174/facts/0/person"
+            "data/images/images.json#/entries/176/facts/0/person"
           ],
           "iteration": 8,
           "pass": 1,
@@ -526677,8 +526677,8 @@
           "pass": 1,
           "status": "merged",
           "reason": "probability, margin and cluster constraints passed",
-          "person": "@evidence/2fe2459bf09878365683",
-          "candidate": "@evidence/2fe2459bf09878365683",
+          "person": "@evidence/8400bf18a4df0bca1f10",
+          "candidate": "@evidence/8400bf18a4df0bca1f10",
           "usesGuesses": false
         },
         {
@@ -526719,14 +526719,14 @@
           ],
           "mentions": [
             "data/documents/1599-04-30.json#/entries/0/facts/0/of",
-            "data/images/images.json#/entries/148/facts/0/person"
+            "data/images/images.json#/entries/150/facts/0/person"
           ],
           "iteration": 8,
           "pass": 1,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/2fe2459bf09878365683",
-          "candidate": "@evidence/244bbba8e56c1f1b96e0",
+          "person": "@evidence/8400bf18a4df0bca1f10",
+          "candidate": "@evidence/fd1a9579ccac8eb25485",
           "usesGuesses": false
         },
         {
@@ -526759,14 +526759,14 @@
           ],
           "mentions": [
             "data/documents/1599-04-30.json#/entries/0/facts/0/of",
-            "data/images/images.json#/entries/166/facts/0/person"
+            "data/images/images.json#/entries/168/facts/0/person"
           ],
           "iteration": 0,
           "pass": 1,
           "status": "merged",
           "reason": "probability, margin and cluster constraints passed",
-          "person": "@evidence/2fe2459bf09878365683",
-          "candidate": "@evidence/2fe2459bf09878365683",
+          "person": "@evidence/8400bf18a4df0bca1f10",
+          "candidate": "@evidence/8400bf18a4df0bca1f10",
           "usesGuesses": false
         },
         {
@@ -526805,8 +526805,8 @@
           "pass": 1,
           "status": "merged",
           "reason": "probability, margin and cluster constraints passed",
-          "person": "@evidence/abbc86592d9d85a51dae",
-          "candidate": "@evidence/abbc86592d9d85a51dae",
+          "person": "@evidence/72d59eb61e23a0b3285d",
+          "candidate": "@evidence/72d59eb61e23a0b3285d",
           "usesGuesses": false
         },
         {
@@ -526839,14 +526839,14 @@
           ],
           "mentions": [
             "data/documents/1599-04-30.json#/entries/0/facts/0/person",
-            "data/images/images.json#/entries/148/facts/1/person"
+            "data/images/images.json#/entries/150/facts/1/person"
           ],
           "iteration": 8,
           "pass": 1,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/abbc86592d9d85a51dae",
-          "candidate": "@evidence/00cd8f22398d4491b204",
+          "person": "@evidence/72d59eb61e23a0b3285d",
+          "candidate": "@evidence/9577274659b41e54664a",
           "usesGuesses": false
         },
         {
@@ -526878,14 +526878,14 @@
           ],
           "mentions": [
             "data/documents/1599-04-30.json#/entries/0/facts/0/person",
-            "data/images/images.json#/entries/166/facts/1/person"
+            "data/images/images.json#/entries/168/facts/1/person"
           ],
           "iteration": 0,
           "pass": 1,
           "status": "merged",
           "reason": "probability, margin and cluster constraints passed",
-          "person": "@evidence/abbc86592d9d85a51dae",
-          "candidate": "@evidence/abbc86592d9d85a51dae",
+          "person": "@evidence/72d59eb61e23a0b3285d",
+          "candidate": "@evidence/72d59eb61e23a0b3285d",
           "usesGuesses": false
         },
         {
@@ -526918,14 +526918,14 @@
           ],
           "mentions": [
             "data/documents/1599-04-30.json#/entries/0/facts/1/of",
-            "data/images/images.json#/entries/148/facts/0/of"
+            "data/images/images.json#/entries/150/facts/0/of"
           ],
           "iteration": 8,
           "pass": 1,
           "status": "below-threshold",
           "reason": "below merge probability",
           "person": "@evidence/29f329e7ef6a4295eadf",
-          "candidate": "@evidence/fa491bf0e2c805f40062",
+          "candidate": "@evidence/4f588387045a8e66f691",
           "usesGuesses": false
         },
         {
@@ -527436,14 +527436,14 @@
           ],
           "mentions": [
             "data/documents/1621-10-28.json#/entries/0/facts/0/person",
-            "data/images/images.json#/entries/148/facts/1/person"
+            "data/images/images.json#/entries/150/facts/1/person"
           ],
           "iteration": 1,
           "pass": 1,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/abbc86592d9d85a51dae",
-          "candidate": "@evidence/00cd8f22398d4491b204",
+          "person": "@evidence/72d59eb61e23a0b3285d",
+          "candidate": "@evidence/9577274659b41e54664a",
           "usesGuesses": false
         },
         {
@@ -527469,14 +527469,14 @@
           ],
           "mentions": [
             "data/documents/1621-10-28.json#/entries/0/facts/0/person",
-            "data/images/images.json#/entries/166/facts/1/person"
+            "data/images/images.json#/entries/168/facts/1/person"
           ],
           "iteration": 0,
           "pass": 1,
           "status": "superseded",
           "reason": "earlier comparison; later compatible cluster evidence joined these occurrences",
-          "person": "@evidence/abbc86592d9d85a51dae",
-          "candidate": "@evidence/abbc86592d9d85a51dae",
+          "person": "@evidence/72d59eb61e23a0b3285d",
+          "candidate": "@evidence/72d59eb61e23a0b3285d",
           "usesGuesses": false
         },
         {
@@ -527500,14 +527500,14 @@
           ],
           "mentions": [
             "data/documents/1621-10-28.json#/entries/0/facts/1/of",
-            "data/images/images.json#/entries/148/facts/0/person"
+            "data/images/images.json#/entries/150/facts/0/person"
           ],
           "iteration": 1,
           "pass": 1,
           "status": "incompatible",
           "reason": "blocked: mention after recorded death",
-          "person": "@evidence/2fe2459bf09878365683",
-          "candidate": "@evidence/244bbba8e56c1f1b96e0",
+          "person": "@evidence/8400bf18a4df0bca1f10",
+          "candidate": "@evidence/fd1a9579ccac8eb25485",
           "usesGuesses": false
         },
         {
@@ -527533,14 +527533,14 @@
           ],
           "mentions": [
             "data/documents/1621-10-28.json#/entries/0/facts/1/of",
-            "data/images/images.json#/entries/166/facts/0/person"
+            "data/images/images.json#/entries/168/facts/0/person"
           ],
           "iteration": 0,
           "pass": 1,
           "status": "superseded",
           "reason": "earlier comparison; later compatible cluster evidence joined these occurrences",
-          "person": "@evidence/2fe2459bf09878365683",
-          "candidate": "@evidence/2fe2459bf09878365683",
+          "person": "@evidence/8400bf18a4df0bca1f10",
+          "candidate": "@evidence/8400bf18a4df0bca1f10",
           "usesGuesses": false
         },
         {
@@ -527565,15 +527565,15 @@
             1417
           ],
           "mentions": [
-            "data/images/images.json#/entries/148/facts/0/person",
-            "data/images/images.json#/entries/166/facts/0/person"
+            "data/images/images.json#/entries/150/facts/0/person",
+            "data/images/images.json#/entries/168/facts/0/person"
           ],
           "iteration": 0,
           "pass": 1,
           "status": "ambiguous",
           "reason": "competing candidates within the decision margin",
-          "person": "@evidence/244bbba8e56c1f1b96e0",
-          "candidate": "@evidence/2fe2459bf09878365683",
+          "person": "@evidence/fd1a9579ccac8eb25485",
+          "candidate": "@evidence/8400bf18a4df0bca1f10",
           "usesGuesses": false
         },
         {
@@ -527598,15 +527598,15 @@
             1417
           ],
           "mentions": [
-            "data/images/images.json#/entries/148/facts/1/person",
-            "data/images/images.json#/entries/166/facts/1/person"
+            "data/images/images.json#/entries/150/facts/1/person",
+            "data/images/images.json#/entries/168/facts/1/person"
           ],
           "iteration": 0,
           "pass": 1,
           "status": "ambiguous",
           "reason": "competing candidates within the decision margin",
-          "person": "@evidence/00cd8f22398d4491b204",
-          "candidate": "@evidence/abbc86592d9d85a51dae",
+          "person": "@evidence/9577274659b41e54664a",
+          "candidate": "@evidence/72d59eb61e23a0b3285d",
           "usesGuesses": false
         }
       ]
