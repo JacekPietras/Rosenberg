@@ -47,6 +47,15 @@ class SearchFactsTests(unittest.TestCase):
             search.main([query] + (['--direct'] if direct else []))
         return output.getvalue()
 
+    def test_generic_subject_titles_status_and_body_are_searchable(self):
+        self.write('documents/generic.json', self.document({
+            'type': 'generic', 'person': 'known_arnold', 'personTitle': ['Ritter', 'zu Boxberg'],
+            'personDeceased': True, 'content': 'Held property at Boxberg.'}))
+        for query in ('known_arnold', 'Arnolt', 'Boxberg'):
+            output = self.run_search(query, direct=query == 'known_arnold')
+            self.assertIn('Arnold von Rosenberg [known_arnold], Ritter, zu Boxberg (deceased): Held property at Boxberg.', output)
+        self.assertEqual('No matching facts found.\n', self.run_search('other_arnold', direct=True))
+
     def test_render_all_supported_types_and_title_lists(self):
         facts = [
             {'type': kind, 'person': 'known_arnold', 'personTitle': ['der Jüngere', 'Ritter'],

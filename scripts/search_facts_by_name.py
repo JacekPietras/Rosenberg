@@ -104,6 +104,9 @@ def typed_fact_text(fact, people_by_id, include_ids=True, unresolved_references=
         return ", ".join([name, *titles])
 
     kind = fact.get("type")
+    if kind == "generic":
+        status = " (deceased)" if fact.get("personDeceased") is True else ""
+        return f"{participant('person')}{status}: {fact.get('content', '')}"
     if kind == "title":
         return f"{participant('person', False)} is designated {', '.join(fact.get('personTitle', []))}."
     if kind == "death":

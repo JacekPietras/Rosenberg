@@ -56,6 +56,17 @@ class FamilyGraphTests(unittest.TestCase):
             self.write('data/documents/test.json', {'date': '1393', 'entries': [{'source': 'charter 1', 'facts': facts or [], 'guesses': guesses or []}]})
         return load_inputs(self.root, validate=False)
 
+    def test_generic_facts_and_guesses_preserve_subject_metadata_without_edges(self):
+        fact = {'type': 'generic', 'person': 'a', 'personTitle': ['Ritter', 'zu Boxberg'],
+                'personDeceased': True, 'content': 'Held property at Boxberg.'}
+        inputs = self.inputs(facts=[fact], guesses=[{**fact, 'person': 'Unresolved name'}])
+        self.assertEqual(2, len(inputs.assertions))
+        for assertion in inputs.assertions:
+            self.assertEqual(1, len(assertion.mentions))
+            self.assertEqual(('Ritter', 'zu Boxberg'), assertion.mentions[0].titles)
+            self.assertTrue(assertion.mentions[0].deceased)
+        self.assertEqual([], build(inputs).relationships)
+
     def test_exact_ids_and_old_relationship_independence(self):
         inputs = self.inputs(facts=[relation('a', 'b'), relation('A', 'b')])
         first = build(inputs)

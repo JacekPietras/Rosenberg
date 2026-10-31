@@ -404,7 +404,9 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     scopes = profile.office_scopes if category[0] == 'office' else profile.designation_places
                     for place in model.places(title):
                         scopes.setdefault(place, []).append((ref, bounds))
-            model.add_context(profile, ref, bounds, issuance=mention.assertion.context.get('place', ''))
+            content = mention.assertion.original.get('content', '') if mention.assertion.original['type'] == 'generic' else ''
+            model.add_context(profile, ref, bounds, text=content,
+                              issuance=mention.assertion.context.get('place', ''), self_names=(name(handle),))
         context_coverage = {'total': len(observations), 'attached': 0, 'undated': 0, 'unattached': 0, 'explicitIdFacts': 0}
         # A bracketed confirmed ID identifies its person even when that source
         # contains no typed participant. Plain names still require local context.
