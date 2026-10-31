@@ -13,11 +13,12 @@
           "content": "concluded a Burgfrieden at Nagelsberg with [vogt_zu_Durn]."
         },
         {
-          "type": "title",
+          "type": "generic",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
-          ]
+          ],
+          "content": "concluded a Burgfrieden at Nagelsberg with Kraft von Hohenlohe."
         }
       ]
     }
