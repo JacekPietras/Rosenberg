@@ -11,11 +11,11 @@
       "english": "Bishop Rudolf and his cathedral chapter undertook to pay the aforementioned 8,000 florins to the von Rosenberg family in two installments. Done on Monday after St Kilian in 1487.\n\nContext from the preceding entry (no. 5721, 2 July 1487): that entry gives 8,500 florins as compensation for Rosenberg properties seized by Bishop Rudolf, including Prosselsheim and Röttingen. Fries notes that the present entry gives only 8,000 florins.",
       "facts": [
         {
-          "type": "generic",
           "person": "Rudolf von Scherenberg",
           "personTitle": [
             "Bischof"
           ],
+          "type": "generic",
           "content": "agreed with the Würzburg cathedral chapter to pay the von Rosenberg family 8,000 florins in two installments."
         }
       ],

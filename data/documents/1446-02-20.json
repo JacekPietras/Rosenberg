@@ -11,31 +11,31 @@
       "english": "Eberhard von Rosenberg zu Boxberg documented that he sold the income of an estate in the Apfelbach district, formerly owned by Seibott Butz, to Heinrich Hotz zu Apfelbach for 26 guilders. Eberhard von Rosenberg zu Boxberg",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "sold revenues from an estate in the Apfelbach district to Heinrich Hotz zu Apfelbach."
         },
         {
-          "type": "title",
           "person": "Heinrich Hotz",
           "personTitle": [
             "zu Apfelbach"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Seibott Butz",
+          "type": "generic",
           "content": "had formerly held the estate in the Apfelbach district."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "sealed the charter."
         }
       ],

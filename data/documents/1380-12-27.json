@@ -7,37 +7,37 @@
       "english": "Pledge of Fealty of the Citizens of Mergentheim to the Teutonic Order. We, the citizens of the town of Mergentheim, collectively and publicly acknowledge and make known with this letter to all who see, hear, or read it, that the venerable spiritual lord, Lord Konrad Rüde, Master of the Teutonic Order in German and in Italian lands, with the counsel of his advisors, our dear lords, wished to have a new pledge of homage from us for himself, his order, and all his successors; which we have performed and sworn upon the saints. And whoever wishes to be a citizen of Mergentheim shall swear to the aforementioned our lords—the Master, the Order, the Landkomtur, the house at Mergentheim, the Komtur, the house-Komtur there, who may be in office at the time, and all their successors—to be faithful and loyal, to warn them of harm and to promote peace, as to our rightful lords, without any deception. And we shall not ally against them with anyone, nor form a confederation, be it with lords or cities, nor with anyone Elisabeth, whoever they may be. We shall also seek and receive justice before our aforementioned lords and before their officials who represent or act for them, and shall not press the matter before any other spiritual or secular court as long as we live, unless it were that our aforementioned lords or their officials would not help us to our right. And we shall and will also keep all the commands that they give us or that are given to us by their people on their behalf. Should it also happen that someone among us no longer wishes to be a citizen in our aforementioned lords' town of Mergentheim, he or they shall ask for leave from our lord the Master, from our lord the Landkomtur, or from our lord the Komtur, who are in office at the time. To him or them, leave shall never be refused, so long as they uphold what is written above and properly distinguish their obligations. Should it also happen that the aforementioned lords' own people desire leave, our lords—the Master, the Landkomtur, or our lord the Komtur—may grant them leave in due time, if they so wish. In witness and for the stability of all these things written above, and especially so that they remain firm and unbroken, we, the aforementioned citizens of Mergentheim, have all together requested the stern and steadfast, pious men, Lord Itel Mertin, Lord Wiprecht Mertin von Mergentheim, Ritter; Junker Eberhard von Rosenberg der Ältere, Edelknecht, Junker Kunz von Sachsenflur, Junker Wiprecht Mertin residing at Schüpf, and Junker Arnold von Rosenberg, Edelknecht, that they have hung their seals on this letter as an eternal testimony concerning us. And we, the aforementioned Itel Mertin, Wiprecht Mertin, Ritter, Eberhard von Rosenberg der Ältere, Kunz von Sachsenflur, Wiprecht Mertin, and Arnold von Rosenberg, Edelknecht, acknowledge that at the collective request of the aforementioned wise people, citizens of Mergentheim, we have had our seals hung on this letter. Given in the 1380th year after God's birth, on the day of Saint John the holy apostle and evangelist.",
       "facts": [
         {
-          "type": "title",
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere",
-            "Junkherre"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Ältere",
             "Junkherre"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Ältere",
+            "Junkherre"
+          ],
+          "type": "generic",
           "content": "sealed the citizens’ oath of loyalty to the Teutonic Order."
         },
         {
-          "type": "title",
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Junkherre",
-            "Edelknecht"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
           "personTitle": [
             "Junkherre",
             "Edelknecht"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "Junkherre",
+            "Edelknecht"
+          ],
+          "type": "generic",
           "content": "sealed the citizens’ oath of loyalty to the Teutonic Order."
         }
       ]

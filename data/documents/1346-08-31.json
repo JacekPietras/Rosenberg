@@ -8,12 +8,12 @@
       "english": "Albrecht von Hohenlohe, elected Bishop of Würzburg, declares that he has taken Elisabeth, widow of Gotfried von Hohenlohe, and her movable property under his and the Würzburg bishopric’s protection. He undertakes to provide her annually with grain, wine, and money from the revenues of Weikersheim Castle and town, and sets out further provisions for her household and the delivery of these revenues. The elector names as guarantors the canons Albrecht von Heßberg, Gotfried von Neideck, Hans von Rosenberg, and Ernst von Reistenhausen; the cathedral cantor Markward von Heideck; Erkinger von Seinsheim, Ritter zu Kottenheim, Heinrich Pfahl von Grünsfeld, and Diether Geyer von Giebelstadt; and the Edelknechte Konrad von Finsterlohr and Weiprecht Haupt. The guarantors undertake to enter custody with a servant and a horse if required. If a guarantor dies or leaves the country, Albrecht must appoint an equivalent replacement. Elisabeth may collect firewood from the woods around Weikersheim and Röttingen if she resides at Schäftersheim, Weikersheim, or Röttingen. She may appoint an agent to receive her annual revenues; during a vacancy of the see, the Würzburg cathedral chapter must ensure delivery. Albrecht promises to keep the agreement and make payments on time. Domdekan Eberhard von Riedern and the Würzburg cathedral chapter also consent. Issuer: Albrecht von Hohenlohe, elected Bishop of Würzburg. Recipient: Elisabeth, widow of Gotfried von Hohenlohe.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
-          "content": "served as a guarantor for Albrecht von Hohenlohe’s agreement with Elisabeth, widow of Gotfried von Hohenlohe.",
           "personTitle": [
             "Domherr zu Würzburg"
-          ]
+          ],
+          "type": "generic",
+          "content": "served as a guarantor for Albrecht von Hohenlohe’s agreement with Elisabeth, widow of Gotfried von Hohenlohe."
         }
       ]
     }

@@ -12,22 +12,22 @@
       "english": "Count Eberhard von Wertheim grants the tithe at Großrinderfeld, a fief of the county, which Edelfrau Anna, daughter of Hans von Rosenberg, Ritter, and widow of Hans Phal von Grünsfeld, Ritter, had sold to Grünau Charterhouse. Dated 28 March 1368.",
       "facts": [
         {
-          "type": "parent",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "parent",
           "of": "Anna von Rosenberg",
           "ofTitle": [
             "Edelfrau"
           ]
         },
         {
-          "type": "spouse",
           "person": "Anna von Rosenberg",
           "personTitle": [
             "Edelfrau"
           ],
+          "type": "spouse",
           "of": "Hans Phal von Grünsfeld",
           "ofTitle": [
             "Ritter"
@@ -35,19 +35,19 @@
           "ofDeceased": true
         },
         {
-          "type": "generic",
           "person": "Anna von Rosenberg",
-          "content": "had sold the tithe at Großrinderfeld to Grünau Charterhouse.",
           "personTitle": [
             "Edelfrau"
-          ]
+          ],
+          "type": "generic",
+          "content": "had sold the tithe at Großrinderfeld to Grünau Charterhouse."
         },
         {
-          "type": "death",
           "person": "Hans Phal von Grünsfeld",
           "personTitle": [
             "Ritter"
           ],
+          "type": "death",
           "diedBefore": "1368-03-29"
         }
       ],

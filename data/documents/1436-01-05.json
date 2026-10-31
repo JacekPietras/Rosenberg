@@ -12,11 +12,11 @@
       "english": "Bishop John II of Würzburg records the amicable settlement of a dispute over rights and properties at Bieringen between Abbot Henry VI and Schöntal Abbey on one side and Hans von Adelsheim of Bieringen on the other. Konrad, Lord of Weinsberg, and Konrad von Rosenberg of Bartenstein had referred the parties to the bishop for a decision. The bishop settles, among other matters, wine sales, construction, meadow and fishing rights, tithes, fields, woodland pasture, various claims, and the appointment of the parish priest. The dispute is thereby resolved. Issued at Röttingen on 5 January 1436.",
       "facts": [
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "zu Bartenstein"
           ],
+          "type": "generic",
           "content": "referred the dispute between Schöntal Abbey and Hans von Adelsheim over rights and property at Bieringen to Bishop Hans of Würzburg for a decision together with Konrad, Lord of Weinsberg."
         }
       ],

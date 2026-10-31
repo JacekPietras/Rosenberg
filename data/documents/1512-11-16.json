@@ -8,25 +8,25 @@
       "english": "Arnold von Rosenberg proves his wife Margarethe von Dottenheim because of their marriage contract, which was concluded by Count Philipp von Rieneck, which was made up of his estates and fiefs in Boxberg.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Arnold von Rosenberg",
+          "type": "spouse",
           "of": "Margarethe von Dottenheim"
         },
         {
-          "type": "title",
           "person": "Philipp von Rieneck",
           "personTitle": [
             "Graf"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Margarethe von Dottenheim",
+          "type": "generic",
           "content": "held claims arising from the marriage contract arranged by Count Philipp von Rieneck."
         },
         {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
+          "type": "generic",
           "content": "secured his wife Margarethe’s claims under their marriage contract against his property and fiefs at Boxberg."
         }
       ],

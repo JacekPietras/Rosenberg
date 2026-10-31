@@ -8,36 +8,36 @@
       "english": "Kunz Landschade von Steinach acknowledges in this letter that Knight Kunz von Rosenberg, his “Vetter” (kinsman), pledged to him his quarter share of Schloss Schadeck near Steinach on the Neckar, together with the forest and the rent at Amorbach. The knight Kunz's charter is inserted. The Rosenberg permits the pledgee to use the pledge and draw on it in all need, but not against the issuer. Half of the rent at Amorbach belongs to the Rosenberg. Landschade is to keep a servant at Schadeck from his half to maintain the castle and guard the forest. Firewood for Schadeck may be taken from the forest. Knight Konrad von Rosenberg, Kunz's “Vetter,” holds a third of Schadeck. Further standard provisions follow (the issuer's right of entry, a ban on repledging, and terms for redeeming the pledge). Kunz von Rosenberg announces his seal. — ... given ... on St. Burkhard's Day ... 1444. Kunz Landschad promises to keep the foregoing agreements without breach and announces his seal. — ... given in the year and on the day stated above.",
       "facts": [
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "pledged his quarter share of Schloss Schadeck, together with the forest and rent at Amorbach, to Kunz Landschade von Steinach."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "held a third of Schloss Schadeck."
         },
         {
-          "type": "kin",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "kin",
           "of": "Kunz Landschade von Steinach",
           "term": "Vetter"
         },
         {
-          "type": "kin",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "kin",
           "of": "Kunz von Rosenberg",
           "term": "Vetter"
         }

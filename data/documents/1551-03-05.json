@@ -8,15 +8,15 @@
       "english": "Farewell between Elector Frederick II from the Palatinate and Michael von Rosenberg regarding Boxberg.",
       "facts": [
         {
-          "type": "title",
           "person": "Friedrich II. von der Pfalz",
           "personTitle": [
             "Kurfürst"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Michael von Rosenberg",
+          "type": "generic",
           "content": "made an Abschied with Elector Friedrich II of the Palatinate concerning Boxberg."
         }
       ],

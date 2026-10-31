@@ -11,55 +11,55 @@
       "english": "Konrad and Eberhard von Rosenberg, Ritter, as well as Konrad and Arnold von Rosenberg, Edelknechte, who bought the castle and town of Boxberg from the Order of St. John, undertake to take over and continue to pay the rents that the Order had to give from the goods in Boxberg to the cathedral chapter of Würzburg and to Engelhard von Rosenberg.\n\n1st-4th of the 4 exhibitors; 5th of Dietrich Gyer, Ritter; 6th of Kunz Mertin of Messelhausen; 7th of Hemp Eheman (?) of Eubigheim; 8th of Berthold von Gimpern; 9th of Lutz Truchsess of Balbach; 10th of Siefried Streckfuß of Lauda; all guarantors",
       "facts": [
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "title",
           "person": "vogt_zu_Lauda",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Edelknecht"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "title",
           "person": "arnold_brother_of_vogt_zu_Lauda",
           "personTitle": [
             "Edelknecht"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Lauda",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "bought Boxberg Castle and town with Konrad von Rosenberg, Ritter, and Konrad and Arnold von Rosenberg, Edelknechte, from the Order of St. John."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Lauda",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "undertook, together with the other Rosenberg purchasers, to pay the rents owed by the Order of St. John to Würzburg Cathedral and Engelhard von Rosenberg from the Boxberg properties."
         },
         {
-          "type": "generic",
           "person": "Dietrich Gyer",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "served as a surety for the four Rosenberg purchasers."
         }
       ],

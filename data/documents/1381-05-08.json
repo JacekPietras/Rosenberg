@@ -8,22 +8,22 @@
       "english": "Dyetraich Stauffer, Vitztum of Sultzbach, gives Friderich Kemnatter a letter about the judgment of the local district court, declaring a letter with four seals presented by him to be valid, according to which Friderich Vogt von Rosenberg had sold Erhard den Lo{e}hleyn two Huben in Ekkersuelt(1) as his own property. According to F. Kemnatter's statement, Erhart Lo{e}hleyn had acquired the property through possession. District court seal.",
       "facts": [
         {
-          "type": "generic",
           "person": "Friderich von Rosenberg",
           "personTitle": [
             "Vogt"
           ],
+          "type": "generic",
           "content": "sold two Huben at Ekkersuelt to Erhard den Loehleyn as free property."
         },
         {
-          "type": "generic",
           "person": "Erhard Loehleyn",
-          "content": "acquired the two Huben at Ekkersuelt through possession, according to Friderich Kemnatter.",
-          "personDeceased": true
+          "personDeceased": true,
+          "type": "generic",
+          "content": "acquired the two Huben at Ekkersuelt through possession, according to Friderich Kemnatter."
         },
         {
-          "type": "generic",
           "person": "Friderich Kemnatter",
+          "type": "generic",
           "content": "presented a letter with four seals, declared valid by the Landgericht at Sultzbach, concerning Friderich von Rosenberg’s sale of two Huben at Ekkersuelt."
         }
       ]

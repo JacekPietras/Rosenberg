@@ -8,31 +8,31 @@
       "english": "Count Rudolf of Wertheim and Rudolf von Wertheim, Canon zu Würzburg, brothers, renounce all their feudal rights to the properties owned by the Order of St. John out of love for their uncle Count Berthold of Henneberg, Prior of the Order of St. John and Commander of Boxberg.\n\nSeal of Count of Wertheim badly damaged, that of Canon Rudolf missing",
       "facts": [
         {
-          "type": "title",
           "person": "Berthold von Henneberg",
           "personTitle": [
             "Graf",
             "Johanniter-Prior",
             "Komtur zu Boxberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "sibling",
           "person": "Rudolf von Wertheim",
           "personTitle": [
             "Graf"
           ],
+          "type": "sibling",
           "of": "Rudolf von Wertheim",
           "ofTitle": [
             "Domherr zu Würzburg"
           ]
         },
         {
-          "type": "kin",
           "person": "Rudolf von Wertheim",
           "personTitle": [
             "Graf"
           ],
+          "type": "kin",
           "of": "Berthold von Henneberg",
           "ofTitle": [
             "Graf"
@@ -40,11 +40,11 @@
           "term": "Oheim"
         },
         {
-          "type": "kin",
           "person": "Rudolf von Wertheim",
           "personTitle": [
             "Domherr zu Würzburg"
           ],
+          "type": "kin",
           "of": "Berthold von Henneberg",
           "ofTitle": [
             "Graf"
@@ -52,22 +52,22 @@
           "term": "Oheim"
         },
         {
-          "type": "generic",
           "person": "Berthold von Henneberg",
-          "content": "led the Johanniter commandery at Boxberg.",
           "personTitle": [
             "Graf",
             "Johanniter-Prior",
             "Komtur zu Boxberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "led the Johanniter commandery at Boxberg."
         },
         {
-          "type": "generic",
           "person": "Rudolf von Wertheim",
-          "content": "renounced the Wertheim family’s feudal rights over the Johanniter goods at Boxberg in favor of Henneberg.",
           "personTitle": [
             "Graf"
-          ]
+          ],
+          "type": "generic",
+          "content": "renounced the Wertheim family’s feudal rights over the Johanniter goods at Boxberg in favor of Henneberg."
         }
       ],
       "img": [

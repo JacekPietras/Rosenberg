@@ -8,19 +8,19 @@
       "english": "Eberhard von Rosenberg der Ältere renounces his Würzburg fiefdoms in favor of his son Ulrich.",
       "facts": [
         {
-          "type": "parent",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "parent",
           "of": "Ulrich von Rosenberg"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "generic",
           "content": "renounced his Würzburg fiefs in favor of his son Ulrich von Rosenberg."
         }
       ]

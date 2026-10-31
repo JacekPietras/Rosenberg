@@ -8,13 +8,13 @@
       "english": "Abbess Margarete von Rieneck and the convent of Himmelspforten Monastery, with the consent of Abbot Otto von Ebrach, certify that they accept the endowment of the late Konrad Silberlin, citizen of Würzburg, and his daughter Elisabeth, former abbess, and will permanently adhere to its provisions. The obligations include, among others: (...) The endowed properties include farms, acres, vineyards, and rents from more than 30 villages, including: From properties in Kirchheim purchased from the von Rosenbergs, 16 malters of rye and wheat and 3 malters of oats are to be given annually. (...) The agreement was legally sealed by Abbot Otto and the monasteries of Himmelspforten and Ebrach. Issuer: Abbess, officials, and convent of Himmelspforten Monastery Recipient: Himmelspforten Monastery",
       "facts": [
         {
-          "type": "generic",
           "person": "Himmelspforten Monastery",
+          "type": "generic",
           "content": "had acquired properties in Kirchheim from members of the von Rosenberg family."
         },
         {
-          "type": "generic",
           "person": "Himmelspforten Monastery",
+          "type": "generic",
           "content": "received annual grain rents from endowed properties in Kirchheim purchased from the von Rosenberg family."
         }
       ]

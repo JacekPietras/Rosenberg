@@ -8,18 +8,18 @@
       "english": "Record of the testimony of Wiprecht von Helmstadt der Jüngere, which he made in the presence of six arbitrators. The arbitrators are: Wiprecht Ridt, Albrecht von Berwangen, Eitel Martin von Dörzbach, Götz von Adelsheim, Hans von Rosenberg, Hans Truchseß, and Götz von Aschhausen. Wiprecht von Helmstadt agrees to divide the property he owned from the deceased Eberhard Hofwart with Hans Sturmfeder and Eberhard von Rosenberg, provided that the \"servants\" of Eberhard and Hans Hofwart are questioned about the extent of the property left behind.",
       "facts": [
         {
-          "type": "death",
           "person": "Eberhard Hofwart",
+          "type": "death",
           "diedBefore": "1403-06-17"
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
+          "type": "generic",
           "content": "served as an arbitrator during Wiprecht von Helmstadt der Jüngere’s testimony."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "was included in Wiprecht von Helmstadt der Jüngere’s proposal to divide the property held from the late Eberhard Hofwart, subject to questioning Eberhard and Hans Hofwart’s servants about the extent of the estate."
         }
       ]

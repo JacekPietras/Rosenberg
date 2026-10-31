@@ -10,8 +10,8 @@
       "english": "Kuno von Falkenstein, provost and guardian of the Mainz church, acknowledges that the archbishopric owes Konrad Rüdt, Ritter, Burgrave zu Starkenburg, 1,400 pounds Heller in Frankfurt currency for losses he suffered in the service of Archbishop Heinrich III of Virneburg of Mainz, Kuno, and their co-guardians. With the archbishop’s consent, he pledges the town of Amorbach and the villages of Schneeberg, Buchen, Weilbach, Reuental, Buch, Kirchzell, Ottorfszell, Watterbach, and Dörnbach, excluding the fishery held by Eberhard von Rosenberg by virtue of his office. Amorbach remains open to Mainz. The losses of Konrad’s servants are not yet included, except for 50 pounds for a stallion belonging to Konrad von Neideck and 35 pounds for a stallion belonging to Rudolf von Böckingen der Ältere. If Amorbach is lost in a war of the archbishop, Konrad is to receive his money a quarter of a year later; if it is lost in his own cause, he loses both the money lent to the archbishopric and the town, unless the town is returned through a settlement. The archbishop, Kuno, and the guardians seal the document.",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "held the fishery at Amorbach by virtue of his office."
         }
       ]

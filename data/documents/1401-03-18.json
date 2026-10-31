@@ -9,23 +9,23 @@
       "english": "As Count Palatine, Konrad von Rosenberg, son of Konrad von Rosenberg, grants {vitztums} (in Amberg) a quarter of the castle in Boxberg.",
       "facts": [
         {
-          "type": "parent",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "der Ältere",
             "Vizedom zu Amberg"
           ],
+          "type": "parent",
           "of": "Konrad von Rosenberg",
           "ofTitle": [
             "der Jüngere"
           ]
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "der Jüngere"
           ],
+          "type": "generic",
           "content": "received a quarter of Boxberg Castle from King Ruprecht, acting as Count Palatine."
         }
       ]

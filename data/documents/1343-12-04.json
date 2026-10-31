@@ -9,18 +9,18 @@
       "english": "Dean John of Mainz certifies that he, together with Schenk Konrad von Erbach-Erbach, Ritter (probably Konrad IV, who held fiefs from Mainz, cf. below, No. 184), Eberhard von Rosenberg, Gotfried called Stahel, Marshal John von Waldeck, Konrad Rüdt, Burgrave of Starkenburg, as well as other friends of the Archbishop of Mainz (Heinrich III von Virneburg), stayed in Bensheim from the evening of December 1st until December 4th after breakfast on behalf of the Archbishop with the friends of the Dukes of Bavaria (also Counts Palatine of the Rhine), and in doing so spent 20 pounds and 17 heller in money and consumed for bread 9 Malter of rye, in Franconian wine 4 amas, in Hunnish wine 25 quartalia, and for fodder 21 Malter with 3 summa of oats. The archepiscopal cellarer, Jacob in Starkenburg, supplied all of this by virtue of his office and receives this document as proof thereof.",
       "facts": [
         {
-          "type": "title",
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "attended a meeting in Bensheim from the evening of 1 December until after breakfast on 4 December, on behalf of the Archbishop of Mainz and together with the friends of the dukes of Bavaria."
         }
       ]

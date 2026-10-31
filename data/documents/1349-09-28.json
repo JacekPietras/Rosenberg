@@ -9,12 +9,12 @@
       "english": "Eberhard Rüde von Bödigheim, Hans von Rosenberg, and Herman Bilgerin, Edelknechte, decide the dispute between the noble Herman, lord of Lybesperg, on one side and Walthe and Endriz von Hardheim on the other. The lord of Lybesperg demands, on behalf of the Mainz chapter, a court in the village of Hepphenkein, as well as the right to regulate measures, weights, and lengths, as the Hardheimers claim for themselves. The arbitrators confirm that the Hardheimers presented better evidence.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
-          "content": "served as an arbitrator in a dispute between Herman, lord of Lybesperg, and Walthe and Endriz von Hardheim.",
           "personTitle": [
             "Edelknecht"
-          ]
+          ],
+          "type": "generic",
+          "content": "served as an arbitrator in a dispute between Herman, lord of Lybesperg, and Walthe and Endriz von Hardheim."
         }
       ]
     }

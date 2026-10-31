@@ -8,8 +8,8 @@
       "english": "At the request of the procurator Lic. jur. Leo Breeckh and by decision of the Imperial Chamber Court under Hans Ludwig von Graveneeg, Emperor Rudolf II appoints Albrecht Christoph von Rosenberg zu Rosenberg of Waldmannshofen, together with Gotfried von Seckendorff of Unter- and Obernzenn and Eberhard von Elttershouen of Ipsheim, Amtmann at Hoheneck, as guardians of the children Georg Albrecht and Philipp Ludwig of the late Hans Georg von Seckendorff of Sugenheim. Hans Georg’s widow Brigitta, née von Rosenberg, gave birth to a daughter, Anna Margareta, after his death.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Brigitta von Rosenberg",
+          "type": "spouse",
           "of": "Hans Georg von Seckendorff",
           "ofTitle": [
             "zu Sugenheim"
@@ -17,40 +17,40 @@
           "ofDeceased": true
         },
         {
-          "type": "parent",
           "person": "Hans Georg von Seckendorff",
           "personTitle": [
             "zu Sugenheim"
           ],
           "personDeceased": true,
+          "type": "parent",
           "of": "Georg Albrecht von Seckendorff"
         },
         {
-          "type": "parent",
           "person": "Hans Georg von Seckendorff",
           "personTitle": [
             "zu Sugenheim"
           ],
           "personDeceased": true,
+          "type": "parent",
           "of": "Philipp Ludwig von Seckendorff"
         },
         {
-          "type": "parent",
           "person": "Brigitta von Rosenberg",
+          "type": "parent",
           "of": "Anna Margareta"
         },
         {
-          "type": "death",
           "person": "Hans Georg von Seckendorff zu Sugenheim",
+          "type": "death",
           "diedOn": "1598-12-23"
         },
         {
-          "type": "generic",
           "person": "Albrecht Christoph von Rosenberg",
           "personTitle": [
             "zu Waldmannshofen",
             "zu Rosenberg"
           ],
+          "type": "generic",
           "content": "was appointed with Gotfried von Seckendorff and Eberhard von Eltershouen as guardian of Georg Albrecht and Philipp Ludwig, the sons of the late Hans Georg von Seckendorff."
         }
       ]

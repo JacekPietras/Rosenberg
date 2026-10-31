@@ -9,13 +9,13 @@
       "english": "Eberhard von Rosenberg, Ritter, Vogt, the mayor, and the aldermen of (Tauber-)Bischofsheim certify that Heinrich Wernheri and his wife Hadewig, their named daughters, and their son-in-law, citizens of (Tauber-)Bischofsheim, sell to the dean and chapter of Aschaffenburg, for 60 pounds Heller, an annual rent of 5 pounds Heller from specified vineyards and fields there for the chapter's common fund.",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "certified that Heinrich Wernheri, his wife Hadewig, their daughters, and son-in-law sold an annual rent from vineyards and fields at (Tauber-)Bischofsheim to the dean and chapter of Aschaffenburg.",
           "personTitle": [
             "Ritter",
             "Vogt"
-          ]
+          ],
+          "type": "generic",
+          "content": "certified that Heinrich Wernheri, his wife Hadewig, their daughters, and son-in-law sold an annual rent from vineyards and fields at (Tauber-)Bischofsheim to the dean and chapter of Aschaffenburg."
         }
       ],
       "img": [

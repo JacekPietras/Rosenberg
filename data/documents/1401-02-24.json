@@ -9,23 +9,23 @@
       "english": "King Ruprecht instructs the city of Schweinfurt to obedience towards Arnold von Rosenberg der Ältere, appointed by him as Imperial Vogt and bailiff there, C.",
       "facts": [
         {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
           "personTitle": [
             "der Ältere",
             "Reichsvogt",
             "Amtmann zu Schweinfurt"
           ],
+          "type": "generic",
           "content": "was appointed Imperial Vogt and bailiff of Schweinfurt by King Ruprecht."
         },
         {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
           "personTitle": [
             "der Ältere",
             "Reichsvogt",
             "Amtmann zu Schweinfurt"
           ],
+          "type": "generic",
           "content": "was the subject of King Ruprecht’s order directing Schweinfurt to obey him."
         }
       ]

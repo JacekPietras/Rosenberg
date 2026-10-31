@@ -8,18 +8,18 @@
       "english": "A: Konrad von Rosenberg, Vicar of Amberg E: Abbot of Ensdorf Monastery Court letter granting permission to seize the Rosenhof in Theuern for the annual interest due to the monastery.",
       "facts": [
         {
-          "type": "title",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vitzthum zu Amberg"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Amberg"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "type": "generic",
           "content": "issued a court letter authorizing Ensdorf Abbey to distrain the Rosenhof at Theuern for the annual rent due to the monastery."
         }
       ]

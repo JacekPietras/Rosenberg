@@ -11,8 +11,8 @@
       "english": "Konrad von Wittstadt called Wolper, Edelknecht, and his wife Elisabeth [von Rosenberg] sell to the Edelknechte Kunz and Gerwig, sons of + Eberhard von Schüpf, for 343 lb hl 1/3 of the large and 1/4 of the small tithe in the village and district of Oberwittstatt, fief of Count Rudolf [IV] von Wertheim. Guarantors: 1) Lord Hans von Rosenberg, Ritter, 2) Hans von Berlichingen called von [Jagst-]Hausen, 3) Götz von Adelsheim and the brothers 4) Engelhard and 5) Konrad von Wittstadt \n\nSealers: 1) - 2) the A., 3) - 7) the Guarantors Perforated version, damaged, laminated on both sides with tracing paper - 7 pieces removed, press cuts present - Rev.: ... over the czenden at Wy[...]sta[t]; - Super partes decime maioris et minoris etc. in Wittigstat Note: The name Wolper is derived from Wolleber; see Mittelstraß, Ritter and Edelknechte, p. 172: Wolleber/Wolper 1306 Vogt of Ulrich von Dürn at Walldürn. - Count Rudolf IV of Wertheim died on January 6, 1355. Prov.: Schüpf, von",
       "facts": [
         {
-          "type": "spouse",
           "person": "Elisabeth von Rosenberg",
+          "type": "spouse",
           "of": "Konrad von Wittstadt",
           "ofTitle": [
             "gen. Wolper",
@@ -20,31 +20,31 @@
           ]
         },
         {
-          "type": "generic",
           "person": "Elisabeth von Rosenberg",
+          "type": "generic",
           "content": "sold one-third of the large tithe and one-fourth of the small tithe at Oberwittstatt with Konrad von Wittstadt gen. Wolper to Kunz and Gerwig, sons of Eberhard von Schüpf."
         },
         {
-          "type": "title",
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "served as surety for the sale of tithes at Oberwittstatt by Konrad von Wittstadt gen. Wolper and Elisabeth von Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "sealed the property transaction."
         }
       ],

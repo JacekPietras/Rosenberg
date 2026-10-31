@@ -8,49 +8,49 @@
       "english": "Agreement between Konrad, Lord of Bickenbach, and Eberhard Schenk, Lord of Erpach, concerning the division of their respective rights to dower, goods, and revenues in Spachbrücken, Ziegelhard, and Habesheim. I, Konrad Rüde, Burggraf zu Wildenburg¹), Engelhard von Rosenberg, Ritter, and Heinrich Pilgerin, Ritter; Eberhard Rüde von Bodenkein, Edelknecht, and Senant von Rosenberg, Edelknecht, chosen arbiters in the matters between Lord Konrad, Lord of Bickenbach and Lord Eberhard Schenk, Lord of Erpach, openly acknowledge by this letter and make known to all who see or hear it, that we have decided, judged, and made an agreement concerning the disputes that they have had with each other until this day: Firstly, we decide, judge, and make an agreement concerning the dower in Spachbrücken, in Ziegelhard, and in Habesheim, on the part of the aforementioned Lord Eberhard Schenk, that the aforementioned Eberhard Schenk shall give one part to the aforementioned Konrad von Bickenbach and an equal part to the other part of the dower, and equal parts in each of the aforementioned villages, and they shall therefore draw lots for these parts, and whichever part falls to the aforementioned Bickenbach, the aforementioned Lord Eberhard Schenk shall have no dower from it, nor claims, as is the right of dower, except for the good rents and duties of whatever kind they are, including principal, customary rights, and lifelong rights. It is also agreed that those houses which belonged to the late Lord Ulrich von Bickenbach were free shall also remain free in the future and remain in their freedom and rights, as they have been until now and openly demonstrate their freedom. But if they were subject to dower until now, they shall also be subject to dower in the future, with services and claims, but not dower rights. English Translation of image_e61638.jpg: Also, the aforementioned from Bickenbach shall have no dower from the other three parts of the Schenk's goods that are divided by him. Should the aforementioned Bickenbach acquire people or gain in the aforementioned villages, in the three parts of the aforementioned Lord Eberhard Schenk, then the aforementioned Bickenbach shall also have his principal and lifelong rights from them, without hindrance from the aforementioned Schenk and his. It is also agreed that such payments, as are annually due to the aforementioned Bickenbach, which the Schenk annually pays him, he shall pay him and give him according to the right, as the old letters attest, which they have on both sides and have given to each other in old times. And for this, I, Konrad Rüde, Burggraf zu Wildenburg, Engelhard von Rosenberg and Heinrich Pilgerin, Ritter aforesaid, and Eberhard Rüde von Bodenkein, Edelknecht, and Senant von Rosenberg, Edelknecht also aforesaid, have affixed our seals to this letter for firm testimony and good, firm security. And I, Konrad, Lord of Bickenbach, and Eberhard Schenk, Lord of Erpach, aforesaid, openly acknowledge by this letter that all these aforesaid divisions and directions have occurred with our knowledge and good will, and we promise that we will steadily and firmly uphold them with good faith, by oath, for us and for all our heirs, without any fraud. And for this, we have also affixed our seals, and the aforesaid five seals, to this letter, which is given on the next Monday after Saint Peter's Day in the spring, which is called in Latin Vincula Petri, after God's birth, thirteen hundred and sixty years. Of all seals, only that of Senant von Rosenberg is still present. Incorrectly printed by Schneider C. H., u. N. XXXVII 2.",
       "facts": [
         {
-          "type": "title",
           "person": "Engelhard von Rosenberg",
           "personTitle": [
             "Ritter"
-          ]
-        },
-        {
-          "type": "generic",
-          "person": "Engelhard von Rosenberg",
-          "content": "served as a mediator between Konrad von Bickenbach and Eberhard Schenk von Erbach.",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "title",
-          "person": "Senant von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ]
-        },
-        {
-          "type": "generic",
-          "person": "Senant von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "served as a mediator between Konrad von Bickenbach and Eberhard Schenk von Erbach."
         },
         {
-          "type": "generic",
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "content": "sealed the agreement."
-        },
-        {
-          "type": "generic",
           "person": "Senant von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Senant von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "type": "generic",
+          "content": "served as a mediator between Konrad von Bickenbach and Eberhard Schenk von Erbach."
+        },
+        {
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "sealed the agreement."
+        },
+        {
+          "person": "Senant von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "type": "generic",
           "content": "sealed the agreement."
         }
       ]

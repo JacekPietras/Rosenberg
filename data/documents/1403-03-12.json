@@ -8,19 +8,19 @@
       "english": "Margarethe Hofwart von Kirchheim, Walther von Ebersberg's widow, declares that she has ceded all claims to her paternal inheritance and to the inheritance of her brother Hans to Hans Sturmfeder, Wiprecht von Helmstadt, and Eberhard von Rosenberg, Ritter for 750 Rhenish guilders. Furthermore, she instructed her daughter-in-law Mattolf von Mensheim to hand over everything he brought from Heilbronn to the aforementioned Ritter. Witnesses: Gerung Utzlinger; Wilhelm von Klepsheim; Hans von Helmstadt; Reinhard Hofwart zu Kirchheim, the exhibitor's uncle",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "received from Margarethe Hofwart von Kirchheim, with Hans Sturmfeder and Wiprecht von Helmstadt, her claims to her paternal inheritance and her deceased brother Hans’s inheritance share."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "was among the knights to whom Margarethe Hofwart von Kirchheim directed her son-in-law Mattolf von Mensheim to deliver what he had brought from Heilbronn."
         }
       ]

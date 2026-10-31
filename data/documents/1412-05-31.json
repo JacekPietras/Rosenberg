@@ -8,11 +8,11 @@
       "english": "Hans von Rosenberg, Schultheiß, and the aldermen of the city of Nuremberg certify that, in the dispute between parish priest Albrecht of St. Sebald as plaintiff and Eberhard Quetrer as defendant, the council ruled on the testimony of Hans Tucher the Elder and Sebald Pfintzing that the defendant must remove the privy built in his little house below the rectory, beside the churchyard at the Weinmarkt. Witnesses: Stephan Coler and Jacob Ortlieb.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Schultheiß zu Nürnberg"
           ],
+          "type": "generic",
           "content": "certified the council’s judgment with the Nuremberg aldermen in the dispute between Albrecht of St. Sebald and Eberhard Quetrer."
         }
       ]

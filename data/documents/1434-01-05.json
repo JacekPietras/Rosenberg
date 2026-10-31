@@ -12,41 +12,41 @@
       "english": "Diether von Gauangelloch der Jüngere, son of the late Eberhard, and Agnes von Rosenberg, widow of Peter von Gauangelloch, sell all their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth for 20 pounds and 10 shillings Heller. Original on parchment with two seals. Dated 5 January 1434.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Agnes von Rosenberg",
+          "type": "spouse",
           "of": "Peter von Gauangelloch",
           "ofDeceased": true
         },
         {
-          "type": "death",
           "person": "Peter von Gauangelloch",
-          "diedBefore": "1434-01-06"
-        },
-        {
           "type": "death",
-          "person": "Eberhard von Gauangelloch",
           "diedBefore": "1434-01-06"
         },
         {
-          "type": "parent",
+          "person": "Eberhard von Gauangelloch",
+          "type": "death",
+          "diedBefore": "1434-01-06"
+        },
+        {
           "person": "Eberhard von Gauangelloch",
           "personDeceased": true,
+          "type": "parent",
           "of": "Diether von Gauangelloch",
           "ofTitle": [
             "der Jüngere"
           ]
         },
         {
-          "type": "generic",
           "person": "Agnes von Rosenberg",
+          "type": "generic",
           "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Diether von Gauangelloch der Jüngere."
         },
         {
-          "type": "generic",
           "person": "Diether von Gauangelloch",
           "personTitle": [
             "der Jüngere"
           ],
+          "type": "generic",
           "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Agnes von Rosenberg."
         }
       ],

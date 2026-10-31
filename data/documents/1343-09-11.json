@@ -11,13 +11,13 @@
       "english": "Hermann, son of Eberhard von Rosenberg, pledges himself, with his house [at] Mauer, to Ruprecht der Ältere and Ruprecht der Jüngere.",
       "facts": [
         {
-          "type": "parent",
           "person": "vogt_zu_Durn",
+          "type": "parent",
           "of": "Hermann von Rosenberg"
         },
         {
-          "type": "generic",
           "person": "Hermann von Rosenberg",
+          "type": "generic",
           "content": "pledged himself and his house at Mauer to Ruprecht der Ältere and Ruprecht der Jüngere."
         }
       ]

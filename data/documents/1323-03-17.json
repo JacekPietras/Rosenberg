@@ -11,81 +11,81 @@
       "english": "Arnold von Uissigheim, Ritter, his wife Richtze, the Knechte Heinrich and Arnold, sons of the aforementioned Arnold von Uissigheim, Ritter, Eberhard von Uissigheim, called von Rannenberg, and his wife Elsebet, renounce all their rights and claims to the farm at Breitenau with all appurtenances in favor of the Bronnbach Abbey in exchange for a one-time compensation of 1 barrel of Franconian wine and 6 malters of grain valued at 33 shillings, as well as their rights to a meadow between Dörlesberg and the Botenmühle (which lies in the grounds of Turlichsbur and stands undeniably on the mills called Bottenmule).\n\nSeal: Arnold von Uissigheim, Ritter, exhibitor; Eberhard von Uissigheim, exhibitor; Eberhard von Rosenberg  Notes: On the back: \"On the settlement made with Arnold von Uissigheim, Ritter, and Eberhard von Rannenberg over the court of Braitenow and a certain meadow.\"",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "sealed the transaction."
         },
         {
-          "type": "title",
-          "person": "Arnold von Uissigheim",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "spouse",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "spouse",
           "of": "Richtze"
         },
         {
-          "type": "parent",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "Ritter"
           ],
+          "type": "parent",
           "of": "Heinrich von Uissigheim",
           "ofTitle": [
             "Knecht"
           ]
         },
         {
-          "type": "parent",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "Ritter"
           ],
+          "type": "parent",
           "of": "Arnold von Uissigheim",
           "ofTitle": [
             "Knecht"
           ]
         },
         {
-          "type": "sibling",
           "person": "Heinrich von Uissigheim",
           "personTitle": [
             "Knecht"
           ],
+          "type": "sibling",
           "of": "Arnold von Uissigheim",
           "ofTitle": [
             "Knecht"
           ]
         },
         {
-          "type": "generic",
-          "person": "Eberhard von Uissigheim",
-          "content": "was an issuer of the transaction.",
-          "personTitle": [
-            "von Rannenberg"
-          ]
-        },
-        {
-          "type": "spouse",
           "person": "Eberhard von Uissigheim",
           "personTitle": [
             "von Rannenberg"
           ],
+          "type": "generic",
+          "content": "was an issuer of the transaction."
+        },
+        {
+          "person": "Eberhard von Uissigheim",
+          "personTitle": [
+            "von Rannenberg"
+          ],
+          "type": "spouse",
           "of": "Elisabeth"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "renounced his rights and claims to the farm at Breitenau and a meadow between Dörlesberg and the Botenmühle, together with his family and Eberhard von Uissigheim and his family, in favor of Bronnbach Abbey.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "renounced his rights and claims to the farm at Breitenau and a meadow between Dörlesberg and the Botenmühle, together with his family and Eberhard von Uissigheim and his family, in favor of Bronnbach Abbey."
         }
       ],
       "img": [

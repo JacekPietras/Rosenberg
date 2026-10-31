@@ -9,12 +9,12 @@
       "english": "Sworn testimony of the failed Mergentheim arbitration between DM Konrad Rüdt on the one hand and [N] Mertin von Mgh, Canton of Regensburg, on the other hand, by Eberhard Schenk von Roßberg, Ritter, Heinz Pleich, Egen Seman, Amtmann of [Tauber-]Bischofsheim, Kunz von Buchheim, Albrecht von Stettenberg, Ruprecht the Tall von Stettenberg, and Kunz von Uissigheim der Jüngere",
       "facts": [
         {
-          "type": "generic",
           "person": "Kunz von Uissigheim",
-          "content": "gave sworn testimony concerning the failed Mergentheim arbitration between Konrad Rüdt and Mertin.",
           "personTitle": [
             "der Jüngere"
-          ]
+          ],
+          "type": "generic",
+          "content": "gave sworn testimony concerning the failed Mergentheim arbitration between Konrad Rüdt and Mertin."
         }
       ]
     }

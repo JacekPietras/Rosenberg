@@ -8,11 +8,11 @@
       "english": "King Ruprecht commands the city of Schweinfurt to give the tax to Arnold von Rosenberg der Jüngere. C.",
       "facts": [
         {
-          "type": "generic",
           "person": "Ruprecht",
           "personTitle": [
             "König"
           ],
+          "type": "generic",
           "content": "ordered the city of Schweinfurt to give the tax to arnold_boxberg der Jüngere."
         }
       ]

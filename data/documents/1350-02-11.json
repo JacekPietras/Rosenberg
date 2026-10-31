@@ -8,68 +8,68 @@
       "english": "Letter of proof by Eberhard von Rosenberg, Ritter, Vogt zu Wildenberg, concerning 60 marks of silver secured on the Bauhof (\"Buhoffe\") at Rosenberg for Elisabeth, daughter of Burkhard von Seckendorff and wife of Konrad von Rosenberg, the issuer's son, as her morning gift. Seals: the issuer and his three sons Enhelhart von Rosenberg, Hans von Rosenberg (as an attachment, see below), and Konrad von Rosenberg.\n\nWith an attachment added after 11 February 1350 from Hans von Rosenberg, canon in Würzburg. - Sealer: the issuer Hans von Rosenberg.",
       "facts": [
         {
-          "type": "title",
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Wildenberg"
-          ]
-        },
-        {
-          "type": "parent",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter",
             "Vogt zu Wildenberg"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Wildenberg"
+          ],
+          "type": "parent",
           "of": "Konrad von Rosenberg"
         },
         {
-          "type": "spouse",
           "person": "Konrad von Rosenberg",
+          "type": "spouse",
           "of": "Elisabeth von Seckendorff"
         },
         {
-          "type": "parent",
           "person": "Burkhard von Seckendorff",
+          "type": "parent",
           "of": "Elisabeth von Seckendorff"
         },
         {
-          "type": "generic",
-          "person": "Eberhard von Rosenberg",
-          "content": "issued a proof letter concerning the Bauhof at Rosenberg securing Elisabeth von Seckendorff’s Morgengabe.",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Wildenberg"
-          ]
-        },
-        {
-          "type": "parent",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter",
             "Vogt zu Wildenberg"
           ],
+          "type": "generic",
+          "content": "issued a proof letter concerning the Bauhof at Rosenberg securing Elisabeth von Seckendorff’s Morgengabe."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Wildenberg"
+          ],
+          "type": "parent",
           "of": "Engelhard von Rosenberg"
         },
         {
-          "type": "parent",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter",
             "Vogt zu Wildenberg"
           ],
+          "type": "parent",
           "of": "hans_domherr_zu_wurzburg",
           "ofTitle": [
             "Domherr zu Würzburg"
           ]
         },
         {
-          "type": "title",
           "person": "hans_domherr_zu_wurzburg",
           "personTitle": [
             "Domherr zu Würzburg"
-          ]
+          ],
+          "type": "title"
         }
       ]
     }

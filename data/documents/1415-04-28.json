@@ -9,8 +9,8 @@
       "english": "I, Kunz von Rosenberg der Junge, residing at Boxberg, and I, Elisabeth, his wedded wife, acknowledge and make known publicly to all people with this letter, for us and all our heirs, that with good, well-considered mind and will, and also with the will, knowledge, word and consent of the highborn prince and lord, Lord Ludwig, Pfalzgraf bei Rhein and Herzog in Bayern, our gracious lord, we have sold and given in an eternal sale, rightly and properly, [in due form?] and forever, with the force and power of this letter, to the vest Knecht Arnold von Rosenberg, Christine his wedded wife, and all their heirs, our share, namely the quarter and whatever we have in the castle and the town of Boxberg, as my, the aforementioned [young?] one's, late father bought it from the Johanniter (Johans herren) and brought and passed it to me by inheritance, and which is held in fief from the Palatinate, with all its appurtenances: villages, people, rents, tithes, tolls, Hantlohn, revenues, goods, fields, gardens, meadows, vineyards, houses, courtyards, woods, heath, waters, pasture, watercourses, ways, paths, jurisdiction, Vogtei, Atzung, [buweteil?] and Hauptrecht, small and great, however all of it is called and named, in fields and in villages, used and unused, under the earth and above the earth, named or unnamed, as my late father brought it and passed it to me by inheritance, with all its lordship, rule, liberties and customs, nothing excepted, so that they shall henceforth hold, cultivate, possess, use and enjoy all of it according to their best will. Neither we nor our heirs shall [hinder?] or disturb the aforementioned buyers or their heirs in it, secretly or openly, in any way, without any guile, as a rightful eternal sale, for a sum of gulden good in gold, right in coinage and full in weight, which we have entirely received from the buyers and turned to our evident benefit and use. The aforementioned quarter and whatever we have in the castle and town of Boxberg, with all its aforesaid lordships, rule, liberties, customs and rights, as we have held and possessed it, we have surrendered for us and all our heirs to the aforementioned buyers and their heirs with mouth, with hands and with the straw, as is customary in the land and duchy of Franconia, and we put them now into bodily, beneficial and [peaceful?] possession, rightly and properly, with the force and power of this letter. We also promise to warrant to them the aforementioned quarter of the castle and town of Boxberg with all its aforesaid lordships and appurtenances, small and great, by right, unpledged, unclaimed and unencumbered, anywhere and against all people, and to defend it against all claims and obstructions before both ecclesiastical and secular courts, as is the custom and law of fiefs in the land and duchy of Franconia, without any kind of guile. For this, and for all the things, points and articles written before and after, we give them as sureties, jointly and severally, the sureties named below: if the aforesaid share of the castle and town of Boxberg, with any of its lordships and appurtenances, small and great, as named, jointly or separately, should [ever?] be claimed by anyone, wherever, however, by whom or from whom, or if any other breach, incident or hindrance should occur, however it might come about, and the sureties named below are summoned by the aforementioned buyers or their heirs by messenger or by letter, then each of them shall without delay and without objection deliver and send a Knecht and a horse to Mergentheim or to [Lauda?], whichever of the two towns is named to them, into the house and inn of a public innkeeper, there to perform Einlager at our and our heirs' cost until we have entirely and fully settled, fulfilled and ended, by right, all breaches, points and articles for which they were summoned, in every way written before and after, without any loss to them and without guile. If any of the sureties should depart, enter religion, die, perish or otherwise become useless, we shall each time set another surety as good and as reliable within fourteen days after his departure. If we or our heirs fail to do so and the other sureties are then summoned, they shall perform Einlager as stated above until another surety as good and reliable is set for them. If any of the Knechte or horses in Einlager is consumed or lost, the surety whose Knecht or horse it was shall each time deliver another Knecht or horse into the Einlager in its place without delay. No surety shall excuse, delay or postpone with another so that he remains unsummoned for a year and a day or longer, or claim he is in another Einlager; whoever is summoned shall without delay enter and perform Einlager as written above, without guile. We also promise for us and our heirs to release and free the sureties named below from this suretyship without oath and without loss to them, without guile. Further, we have promised and promise in this letter in good faith, without guile, for us and all our heirs, to keep this sale and all the aforesaid things with all their [bonds?], points and articles firm and unbroken, and not to act against them secretly or openly, with ecclesiastical or secular court or without court, by words or deeds, and to induce no one on our behalf who would act or come against it, in any matter, nor to permit [or allow?] it, without any kind of guile. Should any of the seals on this letter break, this shall cause no harm to the aforementioned buyers and their heirs in this sale or in any of the aforesaid things, points or articles, before ecclesiastical or secular courts, secretly or openly, in any way, without guile. In witness and true testimony of this and all the aforesaid things, we, the aforementioned Konrad von Rosenberg and Elisabeth my wedded wife, sellers, have each hung our own inherited seal to this letter for us and all our heirs. And we, the sureties named below, acknowledge that we have thus become sureties jointly and severally and have promised and promise with this letter in good faith to perform and act in every way as written above by us, without guile, and in witness and true testimony thereof we, the sureties named below, have each hung our own seal to this letter. These are the sureties of whom it is written above, by name: Kunz von Rosenberg der Ältere, Thomas von Rosenberg, [Fritz Truchsess?], Hans von Rosenberg der Alte, [Götz?] von Dottenheim, Ulrich von Rosenberg, Hans von Dottenheim, Reinhard von Uissigheim, Dietrich Geyer and [Eberhard?] von Dottenheim. This letter is given after Christ's birth fourteen hundred years and thereafter in the fifteenth year, on the Sunday before St. Walpurga's day (28 April 1415).",
       "facts": [
         {
-          "type": "spouse",
           "person": "Elisabeth",
+          "type": "spouse",
           "of": "Kunz von Rosenberg",
           "ofTitle": [
             "der Junge",
@@ -18,117 +18,117 @@
           ]
         },
         {
-          "type": "spouse",
           "person": "Christine",
+          "type": "spouse",
           "of": "arnold_boxberg",
           "ofTitle": [
             "Knecht"
           ]
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "der Junge",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "sold, with his wife Elisabeth, their quarter of the castle and town of Boxberg to Arnold von Rosenberg and his wife Christine."
         },
         {
-          "type": "generic",
           "person": "Elisabeth",
+          "type": "generic",
           "content": "sold, with her husband Kunz von Rosenberg der Junge, their quarter of the castle and town of Boxberg to Arnold von Rosenberg and his wife Christine."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "der Junge",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "sold the quarter of Boxberg with the consent of Ludwig, Pfalzgraf bei Rhein and Herzog in Bayern."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "der Junge",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "held the quarter of Boxberg as a fief from the Palatinate."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "der Junge",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "had inherited the quarter of Boxberg from his late father."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "der Junge",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "stated that his late father had bought the quarter of Boxberg from the Johanniter."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "generic",
           "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
-          "type": "generic",
           "person": "Thomas von Rosenberg",
+          "type": "generic",
           "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
-          "type": "generic",
           "person": "Fritz Truchsess",
+          "type": "generic",
           "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "der Alte"
           ],
+          "type": "generic",
           "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
-          "type": "generic",
           "person": "Götz von Dottenheim",
+          "type": "generic",
           "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
-          "type": "generic",
           "person": "Ulrich von Rosenberg",
+          "type": "generic",
           "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
-          "type": "generic",
           "person": "Hans von Dottenheim",
+          "type": "generic",
           "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
-          "type": "generic",
           "person": "Reinhard von Uissigheim",
+          "type": "generic",
           "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
-          "type": "generic",
           "person": "Dietrich Geyer",
+          "type": "generic",
           "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Dottenheim",
+          "type": "generic",
           "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         }
       ],

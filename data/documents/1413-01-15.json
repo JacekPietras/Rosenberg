@@ -10,8 +10,8 @@
       "english": "Worms (St. Martin): Dielmann Byzlonis of Fritzlar, imperial notary, certifies that before the canons of St. Martin and the witnesses, including Bobfing, vicar of the Catherine altar in the church of St. Martin, the customary and inserted oath was sworn. - Witnesses: Diether Bügel, Albrecht Wolfskehlen, Frank von Heimbach, Heilmann Osterich, Eberhard von Rosenberg",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "witnessed the oath sworn before the canons of St. Martin in Worms."
         }
       ],

@@ -8,38 +8,38 @@
       "english": "King Wenceslas allows the brothers Arnold and Eberhard von Rosenberg to have mayors and jurors in their village Schweigern, a court of law as well as stocks and gallows, and to judge there as is customary in courts",
       "facts": [
         {
-          "type": "sibling",
           "person": "arnold_boxberg",
+          "type": "sibling",
           "of": "eberhard_jagstberg"
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
+          "type": "generic",
           "content": "was granted by King Wenceslas the right to appoint a Schultheiß and Schöffen in Schweigern."
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
+          "type": "generic",
           "content": "was granted by King Wenceslas the right to hold a Halsgericht and maintain Stock und Galgen in Schweigern."
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
+          "type": "generic",
           "content": "was granted by King Wenceslas the right to judge in Schweigern according to customary court practice."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
+          "type": "generic",
           "content": "was granted by King Wenceslas the right to appoint a Schultheiß and Schöffen in Schweigern."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
+          "type": "generic",
           "content": "was granted by King Wenceslas the right to hold a Halsgericht and maintain Stock und Galgen in Schweigern."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
+          "type": "generic",
           "content": "was granted by King Wenceslas the right to judge in Schweigern according to customary court practice."
         }
       ]

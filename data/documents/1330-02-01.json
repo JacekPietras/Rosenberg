@@ -11,16 +11,16 @@
       "english": "Rudolf, Count of Wertheim, and Elisabeth, his wife, have made an agreement with Rudolf, the count’s brother and a Domherr zu Würzburg, under which the Domherr renounces his paternal and maternal inheritance according to local custom. In return, he receives the villages of Zellingen and Waldbüttelbrunn. If Waldbüttelbrunn is redeemed, the count must pay the canon an annual rent of 50 pounds in Heller. He also receives the Wertheim vineyards. The count further promises him 200 pounds in Heller, to be advanced for him by Elisabeth von Hohenlohe, widow of the late Gotfried von Hohenlohe and their kinswoman; if this cannot be done, he is to receive an annual rent of 20 pounds in Heller in the town of Wertheim. If this rent is not redeemed, he or his successors may dispose of it freely. The canon is also to receive 100 pounds in Heller annually at Martinmas for as long as the agreement made with the town remains in effect. The guarantors are Arnold von Rosenberg, Ritter, Kraft von Uissigheim, Gerer, mayor of Wertheim, Gotfried Schrenck von Gerlachsheim, and the brothers and citizens of Wertheim Konrad and Wernher Schetzelin. If summoned, they must send one servant and one horse to Würzburg to serve as hostages. After these have served for a month, the guarantors themselves must enter custody until the rent and any resulting damages are paid. If a guarantor dies or leaves the country, the count must appoint a replacement within a month or the guarantors must serve. They make the same promise and seal the agreement. For as long as the canon lives, the village of Kredenbach, the wood at Grünach, and the count’s part of Laudenbach Castle are to remain in joint possession. Nothing in the castle or town of Wertheim may be sold or pledged, nor may an official be appointed there, without the canon’s consent. At Helmstadt and Dertingen he may keep a man independent of the count. He may keep sheep wherever the count keeps none in his courts, and, like the count, the canon has the right of safe conduct to and from Wertheim. The canon may redeem pledged property. All property not excepted above is to revert to the county after the canon’s death.",
       "facts": [
         {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
-          "content": "served as a guarantor for the agreement between Rudolf, Count of Wertheim, and his brother Rudolf, canon of Würzburg.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "served as a guarantor for the agreement between Rudolf, Count of Wertheim, and his brother Rudolf, canon of Würzburg."
         },
         {
-          "type": "generic",
           "person": "Kraft von Uissigheim",
+          "type": "generic",
           "content": "served as a guarantor for the agreement between Rudolf, Count of Wertheim, and his brother Rudolf, canon of Würzburg."
         }
       ]

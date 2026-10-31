@@ -9,39 +9,39 @@
       "english": "Hans Munich and Lutz Halmunich, brothers of Hainstadt (according to the seals, Mönche von Rosenberg), sell to the abbot and convent of the Cistercian monastery in Bronnbach for 200 florins a rent of 18 malters of grain and 1 pound h on their share of the tithes from Dürrhof, Laukenhof, and Winnenden, which the monastery was required to pay to their family annually. They reserve the right to collect an annual tax of 1 malter of monk's cheese derived from the same tithes. If any party proves a feudal claim to rent or tithes, the issuers shall be the feudal holders instead of the purchasers. The purchase is valid for 1,000 years and 1 day. Witnesses: Hans von Rosenberg, Ritter; Konrad von Uissigheim der Ältere; Eberhard von Rosenberg der Ältere; Reinhart von Hartheim",
       "facts": [
         {
-          "type": "title",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
-          "content": "witnessed the property sale.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "witnessed the property sale."
         },
         {
-          "type": "generic",
           "person": "Konrad von Uissigheim",
-          "content": "witnessed the property sale.",
           "personTitle": [
             "der Ältere"
-          ]
+          ],
+          "type": "generic",
+          "content": "witnessed the property sale."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "witnessed the property sale.",
           "personTitle": [
             "der Ältere"
-          ]
+          ],
+          "type": "generic",
+          "content": "witnessed the property sale."
         },
         {
-          "type": "generic",
           "person": "Reinhart von Hartheim",
+          "type": "generic",
           "content": "witnessed the property sale."
         }
       ],

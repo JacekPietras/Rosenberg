@@ -8,18 +8,18 @@
       "english": "Jobs Tezzel, citizen of Nuremberg, receives forgiveness from Konrad von Rosenberg, Vicedom of Amberg, in the name of Duke Ruprecht, for having captured Haymeran [?] the Alhart and led him to Lauf.",
       "facts": [
         {
-          "type": "title",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vicedom zu Amberg"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vicedom zu Amberg"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vicedom zu Amberg"
+          ],
+          "type": "generic",
           "content": "granted Jobs Tezzel pardon, in Duke Ruprecht’s name, for capturing Haymeran [?] the Alhart and taking him to Lauf."
         }
       ]

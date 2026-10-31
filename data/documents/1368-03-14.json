@@ -7,34 +7,34 @@
       "english": "Urban V commissions the deans of St. Peter in Wimpfen and Öhringen, of the Worms and Würzburg dioceses, and Guilelmus Baro, canon at Konstanz, to install Eberhard von Rosenberg, canon of the Church of St. Juliana at Mosbach, of the Würzburg diocese, into the provostry of this church, although Eberhard already possesses the canonry at the Church of St. Juliana and the parish church at Kocherthürn of the same diocese. — Rome, on the 2nd day before the Ides of March in the sixth year [of his pontificate]. — [For his] praiseworthy honesty.",
       "facts": [
         {
-          "type": "title",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Kanonikus zu Mosbach"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Urban V",
           "personTitle": [
             "Papst"
           ],
+          "type": "generic",
           "content": "commissioned the installation of Eberhard von Rosenberg as provost of the church of St. Juliana at Mosbach."
         },
         {
-          "type": "generic",
           "person": "Urban V",
           "personTitle": [
             "Papst"
           ],
+          "type": "generic",
           "content": "commissioned the deans of St. Peter in Wimpfen and Öhringen and Guilelmus Baro, canon at Konstanz, to install Eberhard von Rosenberg as provost of the church of St. Juliana at Mosbach."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Kanonikus zu Mosbach"
           ],
+          "type": "generic",
           "content": "held the parish church of Kocherthürn."
         }
       ]

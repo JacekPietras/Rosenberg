@@ -8,16 +8,16 @@
       "english": "Kraft von Hohenlohe and Eberhard von Rosenberg, Vogt zu Dürn, conclude a truce in Nagelsberg; issued in 1329, St. Catherine's Eve;\n\nSeal: Count Kraft von Hohenlohe and Eberhard von Rosenberg.",
       "facts": [
         {
-          "type": "generic",
           "person": "Kraft von Hohenlohe",
+          "type": "generic",
           "content": "concluded a Burgfrieden at Nagelsberg with [vogt_zu_Durn]."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "generic",
           "content": "concluded a Burgfrieden at Nagelsberg with Kraft von Hohenlohe."
         }
       ]

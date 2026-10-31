@@ -8,14 +8,14 @@
       "english": "Ruprecht der Jüngere, Count Palatine of the Rhine and Duke in Bavaria, records that he has reached an agreement with Count Hans of Wertheim that their people in the Lauda district are not to pay a death duty until further notice.",
       "facts": [
         {
-          "type": "generic",
           "person": "Ruprecht",
-          "content": "agreed with Count Hans von Wertheim to exempt their subjects in the Amt Lauda from the death duty until further notice.",
           "personTitle": [
             "der Jüngste",
             "Pfalzgraf bei Rhein",
             "Herzog in Bayern"
-          ]
+          ],
+          "type": "generic",
+          "content": "agreed with Count Hans von Wertheim to exempt their subjects in the Amt Lauda from the death duty until further notice."
         }
       ]
     }

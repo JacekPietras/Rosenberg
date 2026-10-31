@@ -12,19 +12,19 @@
       "english": "Albrecht von Rosenberg, Ritter, grants his subject Jakob Mührien of Unterschüpf the small Dottenheim estate at Unterschüpf, which he had bought from Eberhard Rüdt von Collenberg, court steward of Mainz, in return for an annual rent. Dated 14 March 1561.",
       "facts": [
         {
-          "type": "generic",
           "person": "Albrecht von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "granted the small Dottenheim estate at Unterschüpf to his subject Jakob Mührien of Unterschüpf in return for an annual rent."
         },
         {
-          "type": "generic",
           "person": "Albrecht von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "had bought the estate from Eberhard Rüdt von Collenberg."
         }
       ],

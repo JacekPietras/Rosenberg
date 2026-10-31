@@ -7,35 +7,35 @@
       "english": "Lienhart von Rosenberg, mayor, and the judges of Frankenbach decide between Eitel Engelfried von Rothenburg, citizen of Heilbronn, and his courtier Hans Bart, who holds the Wickmarshof in Frankenbach from him. Engelfried demands that Bart name the properties belonging to the estate and state the annual rent, and also demands a corvée and a malter of fruit. Bart states that the last owner of the farm, Peter Wickmar, never received more than 39 malters and 2 carnival chickens, and is acquitted of the last claim, but must name the properties (a description of the property follows: 17 ³/₄, 35 ¹/₄ and 32 acres of fields in three areas: behind the church, towards the forest and towards the town, in the last area another field, the size of which is not specified; 6 ³/₄ acres of meadows, an orchard, a garden, house, barn, farmstead, garden and farmyard in the village next to the Baumann farms and the special inmates of Heilbronn). —\n\nSiegler Junker Hans von Rosenberg, Vogt of Frankenbach, and Konrad Markart, councilor and judge of Heilbronn. — 1466 (Monday before Matthias day) February 17th.",
       "facts": [
         {
-          "type": "title",
-          "person": "Lienhart von Rosenberg",
-          "personTitle": [
-            "Schultheiss zu Frankenbach"
-          ]
-        },
-        {
-          "type": "title",
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Junker",
-            "Vogt zu Frankenbach"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Lienhart von Rosenberg",
           "personTitle": [
             "Schultheiss zu Frankenbach"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Junker",
+            "Vogt zu Frankenbach"
+          ],
+          "type": "title"
+        },
+        {
+          "person": "Lienhart von Rosenberg",
+          "personTitle": [
+            "Schultheiss zu Frankenbach"
+          ],
+          "type": "generic",
           "content": "decided the case between Eitel Engelfried von Rothenburg and his courtier Hans Bart concerning the Wickmarshof at Frankenbach together with the Frankenbach judges."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Junker",
             "Vogt zu Frankenbach"
           ],
+          "type": "generic",
           "content": "sealed the charter."
         }
       ]

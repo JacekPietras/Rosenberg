@@ -151,6 +151,17 @@ class FactValidatorTests(unittest.TestCase):
         self.assertIn('#/research/0/facts/1', self.errors(validator)[0].location)
         self.assertTrue(self.errors(self.check({'facts': 'bad'})))
 
+    def test_non_person_generic_subjects_require_one_subject_and_no_person_metadata(self):
+        item = {'type': 'generic', 'subject': 'Boxberg Castle', 'content': 'was attacked.'}
+        self.assertEqual([], self.check(self.document(item)).diagnostics)
+        for extra in ({'person': 'known_id'}, {'subject': ''}, {'subject': None},
+                      {'subject': []}, {'personTitle': ['Ritter']}, {'personDeceased': True}):
+            with self.subTest(extra=extra):
+                self.assertTrue(self.errors(self.check(self.document({**item, **extra}))))
+        self.assertTrue(self.errors(self.check(self.document({**item, 'date': '1395'}))))
+        self.assertTrue(self.errors(self.check(self.document(item), 'books/test.json')))
+        self.assertEqual([], self.check(self.document({**item, 'date': '1395'}), 'books/test.json').diagnostics)
+
     def test_generated_registry_metadata_is_not_source_facts(self):
         validator = self.check([{'name': 'Example', 'relationships': [], 'familyGraph': {
             'coverage': {'facts': {'unresolvedMentions': 0}},

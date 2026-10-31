@@ -9,12 +9,12 @@
       "english": "Eberhard von Rosenberg der Junge, called von Thüngen.",
       "facts": [
         {
-          "type": "title",
           "person": "vogt_zu_Lauda",
           "personTitle": [
             "der Junge",
             "genannt von Thüngen"
-          ]
+          ],
+          "type": "title"
         }
       ]
     }

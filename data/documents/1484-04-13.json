@@ -12,18 +12,18 @@
       "english": "Jörg von Hardheim and his wife Walpurga von Rosenberg sell to Claus Frosch and his wife Katherina their third of the great and small tithes at Wolferstetten, which they inherited in part from Walpurga’s father or father-in-law Reinhard von Hardheim. The remaining two thirds are a fief of the Bishop of Würzburg. With the lord’s consent, they sell their allodial third subject to a right of repurchase. Sealed by the issuers and by Eberhard von Hardheim for himself and his brothers Wolf and Jörg. Dated 13 April 1484.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Walpurga von Rosenberg",
+          "type": "spouse",
           "of": "Jörg von Hardheim"
         },
         {
-          "type": "generic",
           "person": "Jörg von Hardheim",
+          "type": "generic",
           "content": "sold his and his wife Walpurga von Rosenberg’s third of the great and small tithes at Wolferstetten to Claus Frosch and his wife Katherina, subject to a right of repurchase and with the fief lord’s consent."
         },
         {
-          "type": "generic",
           "person": "Walpurga von Rosenberg",
+          "type": "generic",
           "content": "sold her and her husband Jörg von Hardheim’s third of the great and small tithes at Wolferstetten to Claus Frosch and his wife Katherina, subject to a right of repurchase and with the fief lord’s consent."
         }
       ],

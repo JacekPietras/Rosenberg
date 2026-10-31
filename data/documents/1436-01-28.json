@@ -11,11 +11,11 @@
       "english": "Saturday after St. Paul; Bishop Hans of Würzburg enfeoffs Konrad von Rosenberg, resident of Bartenstein, with half of the village of Riedbach and its toll;\n\nseals of the bishop and the cathedral chapter; missing.",
       "facts": [
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "zu Bartenstein"
           ],
+          "type": "generic",
           "content": "received half of Riedbach village and its toll as a fief from the Bishop of Würzburg."
         }
       ],

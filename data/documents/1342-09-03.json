@@ -12,29 +12,29 @@
       "english": "Eberhard von Rosenberg, Ritter, Vogt zu Dürn, testifies that he, together with Heinrich Bavar, notary of the lord of Mainz, and his other friends, on the day of the hearing on behalf of the lord of Mainz with Ruprecht, duke of Bavaria, in Bensheim, had spent 30 Hallenses shillings, to be paid by Jacob, the cellarer in Starkenberg. Given at Bensheim on the Tuesday after the day of the beheading of John the Baptist.",
       "facts": [
         {
-          "type": "title",
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Dürn"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Ritter",
             "Vogt zu Dürn"
           ],
+          "type": "title"
+        },
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
           "content": "spent money at a meeting in Bensheim with friends of Count Palatine Ruprecht, together with Heinrich Bavar and other friends of the Archbishop of Mainz."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Ritter",
             "Vogt zu Dürn"
           ],
+          "type": "generic",
           "content": "was owed the meeting expenses by Jakob, the cellarer at Starkenburg."
         }
       ]
@@ -47,29 +47,29 @@
       "english": "Eberhard von Rosenberg, Ritter, Vogt zu Dürn, states that on the date of the document he spent 30 Heller shillings at a meeting in Bensheim with friends of Count Palatine Ruprecht, together with Heinrich Bavarus, notary of the Archbishop of Mainz, and other friends of the archbishop. Jakob, the cellarer in Starkenburg, is to pay the expense. Given at Bensheim on the Tuesday after the beheading of John the Baptist.",
       "facts": [
         {
-          "type": "title",
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Dürn"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Ritter",
             "Vogt zu Dürn"
           ],
+          "type": "title"
+        },
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
           "content": "spent 30 shillings Heller at a meeting in Bensheim with friends of Count Palatine Ruprecht, together with the Archbishop of Mainz’s notary and other friends of the archbishop."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Ritter",
             "Vogt zu Dürn"
           ],
+          "type": "generic",
           "content": "was to be paid 30 shillings Heller by Jakob, the cellarer at Starkenburg, for the meeting expenses."
         }
       ]

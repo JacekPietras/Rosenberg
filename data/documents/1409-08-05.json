@@ -12,11 +12,11 @@
       "english": "Werner von Hardheim sells to his cousin Konrad von Hardheim, Ritter, all the properties at Bretzingen that once belonged to Berthold Sützel of Mergentheim, together with their appurtenances and rights, for 255 gulden. Arnold von Rosenberg der Ältere is one of the three sealers. Dated 5 August 1409.",
       "facts": [
         {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "generic",
           "content": "sealed Werner von Hardheim’s sale of properties and rights at Bretzingen to Konrad von Hardheim."
         }
       ],

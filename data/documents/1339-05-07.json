@@ -8,20 +8,20 @@
       "english": "(...) And so that all these binding pieces and articles, as they are written here before and after, may be firmly and steadily observed by each of us with complete affection and friendship among us and our beloved ones, and that all disputes and events and disagreements that have occurred or may occur may be prevented and settled, we have appointed the strict Eberhard von Rosenberg, Ritter, our bailiff in Dürn, or whoever may be our official in Dürn at the time, to be our counselor, and the aforesaid lord from Würzburg, Konrad Jemerer, Ritter, his official in Hohenburg, or whoever may be the official in Hohenburg at the time, to be his counselor, and we both, together with the noble man Rodolph, count of Wertheim, have chosen a common arbiter, so that to him, or to our people whom we both had to answer for, no offense or harm may occur; he may and shall immediately bring the matter before both of our aforesaid counselors, and the same counselors shall, within eight days thereafter, ride to the city of Wertheim when a complaint is brought before them, and shall never come (...)",
       "facts": [
         {
-          "type": "title",
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Dürn"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Ritter",
             "Vogt zu Dürn"
           ],
+          "type": "title"
+        },
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
           "content": "served as a counselor in resolving disputes under the agreement."
         }
       ]

@@ -8,38 +8,38 @@
       "english": "Reversal by Philipp Karl Freiherr von Hoheneck, cantor of Mainz Cathedral, who had been appointed feudal representative by his named co-heirs in the Dottenheim hereditary fief in the Schüpfergrund, concerning the enfeoffment by Archbishop, Archchancellor, and Elector Karl with properties listed in an incorporated charter dated 5 February 1578. In that charter, Archbishop Daniel of Mainz enfeoffs the heirs of the late Albrecht von Rosenberg, Ritter: Eberhard von Stetten zu Hochstetten; Ludwig von Sternfels as guardian of Eberhard von Leyen’s children; and Reinhard von Dienheim as feudal representative for his wife Ruffina von Leyen. The fiefs included shares in Schüpf Castle and the village of Uiffingen, as well as revenues and properties at other places.",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Stetten",
           "personTitle": [
             "zu Hochstetten"
           ],
+          "type": "generic",
           "content": "was named in the inserted charter of 5 February 1578 as an heir of the late Albrecht von Rosenberg and a recipient of Dottenheim fiefs."
         },
         {
-          "type": "generic",
           "person": "Ludwig von Sternfels",
+          "type": "generic",
           "content": "acted as guardian for Eberhard von Leyen’s children, who were named in the inserted charter of 5 February 1578 as heirs of Albrecht von Rosenberg and recipients of Dottenheim fiefs."
         },
         {
-          "type": "generic",
           "person": "Reinhard von Dienheim",
+          "type": "generic",
           "content": "acted as feudal representative for his wife Ruffina von Leyen, who was named in the inserted charter of 5 February 1578 as an heir of Albrecht von Rosenberg and a recipient of Dottenheim fiefs."
         },
         {
-          "type": "death",
           "person": "Albrecht von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
-          "date": "1578-02-05",
-          "diedBefore": "1578-02-06"
+          "type": "death",
+          "diedBefore": "1578-02-06",
+          "date": "1578-02-05"
         },
         {
-          "type": "generic",
           "person": "Philipp Karl von Hoheneck",
           "personTitle": [
             "Freiherr"
           ],
+          "type": "generic",
           "content": "issued a Revers as cantor of Mainz Cathedral concerning the fief grant for properties in the Schüpfergrund, including shares in Schüpf Castle and the village of Uiffingen, listed in the inserted charter of 5 February 1578."
         }
       ]

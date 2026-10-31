@@ -8,27 +8,27 @@
       "english": "When the aforementioned charter concerning the last 500 florins was damaged by fire, the aforementioned Anselm von Rosenberg lent Bishop Hans von Brunn a further 500 florins, and Bishop Hans gave him a new bond for the full sum of 6,000 florins on Sunday Oculi in 1436.\n\nContext from the preceding entries (nos. 1747–1748): Anselm von Rosenberg was the son of Ulrich von Rosenberg and Jutta. Those entries concern the bond secured on Brassoldshaim and the claims of Jutta and Anselm von Rosenberg under that arrangement.",
       "facts": [
         {
-          "type": "parent",
           "person": "Ulrich von Rosenberg",
           "personDeceased": true,
-          "of": "Anselm von Rosenberg"
-        },
-        {
           "type": "parent",
-          "person": "Jutta",
           "of": "Anselm von Rosenberg"
         },
         {
-          "type": "generic",
+          "person": "Jutta",
+          "type": "parent",
+          "of": "Anselm von Rosenberg"
+        },
+        {
           "person": "Anselm von Rosenberg",
+          "type": "generic",
           "content": "lent Bishop Hans von Brunn a further 500 florins after the previous bond was damaged by fire."
         },
         {
-          "type": "generic",
           "person": "Hans von Brunn",
           "personTitle": [
             "Bischof"
           ],
+          "type": "generic",
           "content": "issued Anselm von Rosenberg a new bond for a total of 6,000 florins."
         }
       ],

@@ -8,25 +8,25 @@
       "english": "Eberhard von Rosenberg der Jüngere, son of Eberhard, testifies that he transferred Jagstberg Castle, which was a feudal cedent of the Würzburg Abbey, to his brother-in-law Hans Hofwart in return for 2,000 Rhenish guilders. He received the castle from the Würzburg canon Hans Hofwart for his nephew's daughter, Margaretha, the wife of the exhibitor. Witnesses: Arnold von Rosenberg; Arnold von Rosenberg; Kuno von Rosenberg",
       "facts": [
         {
-          "type": "parent",
           "person": "vogt_zu_Lauda",
           "personDeceased": true,
+          "type": "parent",
           "of": "eberhard_jagstberg",
           "ofTitle": [
             "der Jüngere"
           ]
         },
         {
+          "person": "Margaretha",
           "type": "spouse",
-          "person": "Margaretha",
           "of": "eberhard_jagstberg",
           "ofTitle": [
             "der Jüngere"
           ]
         },
         {
-          "type": "kin",
           "person": "Margaretha",
+          "type": "kin",
           "of": "Hans Hofwart",
           "ofTitle": [
             "Domherr zu Würzburg"
@@ -34,11 +34,11 @@
           "term": "Bruderstochter"
         },
         {
-          "type": "kin",
           "person": "Hans Hofwart",
           "personTitle": [
             "Domherr zu Würzburg"
           ],
+          "type": "kin",
           "of": "eberhard_jagstberg",
           "ofTitle": [
             "der Jüngere"
@@ -46,49 +46,49 @@
           "term": "Schwager"
         },
         {
-          "type": "death",
           "person": "vogt_zu_Lauda",
+          "type": "death",
           "diedBefore": "1401-02-01"
         },
         {
-          "type": "title",
           "person": "Hans Hofwart",
           "personTitle": [
             "Domherr zu Würzburg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
           "personTitle": [
             "der Jüngere"
           ],
+          "type": "generic",
           "content": "pledged Jagstberg Castle to his brother-in-law Hans Hofwart for 2,000 Rhenish guilders."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
           "personTitle": [
             "der Jüngere"
           ],
+          "type": "generic",
           "content": "held Jagstberg Castle as a fief from the Würzburg Abbey."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
           "personTitle": [
             "der Jüngere"
           ],
+          "type": "generic",
           "content": "had received Jagstberg Castle from Hans Hofwart for Margaretha, his niece and his wife."
         },
         {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
+          "type": "generic",
           "content": "witnessed the pledge of Jagstberg Castle."
         },
         {
-          "type": "generic",
           "person": "Kuno von Rosenberg",
+          "type": "generic",
           "content": "witnessed the pledge of Jagstberg Castle."
         }
       ]

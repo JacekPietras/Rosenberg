@@ -8,29 +8,29 @@
       "english": "Eberhard von Rosenberg der Jüngere, armiger, and his wife Wyclo, sell to the monastery in Himmelpforten the goods and revenues in Kirchheim for 105 Hallensian pounds.\n\nCo-sealers: Joannes von Rosenberg, Wippo von Adolsheim, Joannes von Heidingsfeld, Cunradus von Saunsheim, and Joannes von Rimpůr. Given on the Saturday before the Ascension of our Lord Jesus Christ. (Citation: c. 6. S.)",
       "facts": [
         {
-          "type": "title",
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Jüngere",
-            "armiger"
-          ]
-        },
-        {
-          "type": "spouse",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Jüngere",
             "armiger"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Jüngere",
+            "armiger"
+          ],
+          "type": "spouse",
           "of": "Wyclo"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Jüngere",
             "armiger"
           ],
+          "type": "generic",
           "content": "sold the goods and revenues in Kirchheim to Himmelpforten Abbey with his wife Wyclo."
         }
       ]

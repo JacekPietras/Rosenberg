@@ -14,12 +14,12 @@
       "english": "Hans von Rosenberg, Ritter and chief magistrate of Nuremberg, authenticates for Konrad Haller a copy of the testament of Katrein, daughter of Ulrich and Katrein Haller and widow of Erckinger Zollner, Ritter. The testament had been made on 27 September 1411. Witnesses to the authentication: Weygell Graser and Konrad Paumgartner. Sealer: the court seal of Nuremberg. Dated Wednesday before Martinmas 1413 (8 November 1413).",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter",
             "Schultheiß zu Nürnberg"
           ],
+          "type": "generic",
           "content": "authenticated for Konrad Haller a copy of Katrein Haller’s testament, made on 27 September 1411."
         }
       ],

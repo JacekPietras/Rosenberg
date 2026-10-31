@@ -8,27 +8,27 @@
       "english": "The Margraves Kasimir and Georg von Brandenburg give their council, Georg von Rosenberg, for the town of Boxberg, the village of Schweigern and the Seehof near Boxberg.",
       "facts": [
         {
-          "type": "title",
           "person": "Kasimir von Brandenburg",
           "personTitle": [
             "Markgraf"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "title",
           "person": "Georg von Brandenburg",
           "personTitle": [
             "Markgraf"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Georg von Rosenberg",
+          "type": "generic",
           "content": "served as a councilor to Margraves Kasimir and Georg of Brandenburg."
         },
         {
-          "type": "generic",
           "person": "Georg von Rosenberg",
+          "type": "generic",
           "content": "received from Margraves Kasimir and Georg of Brandenburg a letter of protection for Boxberg, Schweigern, and the Seehof near Boxberg."
         }
       ],

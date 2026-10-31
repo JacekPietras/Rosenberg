@@ -8,41 +8,41 @@
       "english": "Eberhard von Rosenberg borrows 415 guilders from his brother Arnold von Rosenberg for the duration of one year under the performance guarantee of his kinsmen Arnold der Ältere and Hans von Rosenberg.",
       "facts": [
         {
-          "type": "sibling",
           "person": "eberhard_jagstberg",
+          "type": "sibling",
           "of": "arnold_boxberg"
         },
         {
-          "type": "kin",
           "person": "Arnold von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
-          "of": "eberhard_jagstberg",
-          "term": "Vetter"
-        },
-        {
           "type": "kin",
-          "person": "Hans von Rosenberg",
           "of": "eberhard_jagstberg",
           "term": "Vetter"
         },
         {
-          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "type": "kin",
+          "of": "eberhard_jagstberg",
+          "term": "Vetter"
+        },
+        {
           "person": "eberhard_jagstberg",
+          "type": "generic",
           "content": "borrowed money from his brother [arnold_boxberg]."
         },
         {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "generic",
           "content": "acted as a surety for [eberhard_jagstberg]."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
+          "type": "generic",
           "content": "acted as a surety for [eberhard_jagstberg]."
         }
       ],

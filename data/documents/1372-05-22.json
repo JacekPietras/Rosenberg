@@ -8,24 +8,24 @@
       "english": "Konrad Rabenolt, Vogt of Dieburg, declares: He is guarantor to Kunz Mönch and his wife Anna and Eberhard von Rosenberg and also to his wife Annen and her heirs in place of the deceased Dietrich von Hattenheim, Ritter and just like him for a rent of 100 guilders redeemable with 1000 guilders, as stated in the document they have from the Archbishop of Mainz.",
       "facts": [
         {
-          "type": "generic",
           "person": "Konrad Rabenolt",
-          "content": "stood surety in place of the late Ritter Dietrich von Hattenheim to Kunz Mönch, Frau Anna, Eberhard von Rosenberg, Frau Annen, and her heirs for a redeemable rent.",
           "personTitle": [
             "Vogt zu Dieburg"
-          ]
+          ],
+          "type": "generic",
+          "content": "stood surety in place of the late Ritter Dietrich von Hattenheim to Kunz Mönch, Frau Anna, Eberhard von Rosenberg, Frau Annen, and her heirs for a redeemable rent."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "was a beneficiary under a document from the Archbishop of Mainz concerning the rent."
         },
         {
-          "type": "death",
           "person": "Dietrich von Hattenheim",
           "personTitle": [
             "Ritter"
           ],
+          "type": "death",
           "diedBefore": "1372-05-23"
         }
       ]

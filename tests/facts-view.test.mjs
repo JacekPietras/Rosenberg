@@ -360,3 +360,12 @@ test('generic facts render linked subjects, titles, deceased status and escaped 
   assert.equal(factPersonMatch(fact, 'Arnold von Rosenberg', people), 'direct');
   assert.equal(factText({ type: 'generic', person: 'Unknown', content: 'witnessed the agreement.' }), 'Unknown witnessed the agreement.');
 });
+
+test('non-person subjects render as escaped text without person links', () => {
+  const fact = { type: 'generic', subject: 'Boxberg <Castle>', content: 'was attacked <script>.' };
+  assert.equal(factText(fact), 'Boxberg <Castle> was attacked <script>.');
+  const html = renderFactsView([fact], options);
+  assert.match(html, /Boxberg &lt;Castle&gt; was attacked &lt;script&gt;\./);
+  assert.doesNotMatch(html, /person-link|\?person=/);
+  assert.equal(factPersonMatch(fact, fact.subject), '');
+});

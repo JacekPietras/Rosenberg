@@ -12,24 +12,24 @@
       "english": "Bishop Hans of Würzburg grants Reinhard von Hardheim one third of the tithe at Schweinberg, which he had bought from Eberhard Pfale, who had bought it from Kunz von Rosenberg, resident at Röttingen. The reverse bears the note “hartheym”. Dated 3 January 1420.",
       "facts": [
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "gesessen zu Röttingen"
           ],
+          "type": "generic",
           "content": "sold one third of the tithe at Schweinberg to Eberhard Pfale."
         },
         {
-          "type": "generic",
           "person": "Eberhard Pfale",
+          "type": "generic",
           "content": "sold one third of the tithe at Schweinberg to Reinhard von Hardheim."
         },
         {
-          "type": "generic",
           "person": "Hans von Würzburg",
           "personTitle": [
             "Bischof von Würzburg"
           ],
+          "type": "generic",
           "content": "granted Reinhard von Hardheim one third of the tithe at Schweinberg."
         }
       ],

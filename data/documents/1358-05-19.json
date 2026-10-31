@@ -12,42 +12,42 @@
       "english": "Archbishop Gerlach announces an agreement with Count Boppo von Eberstein concerning Alfeld Castle, which Boppo had pledged to him for repurchase. Boppo transfers the castle and its appurtenances to the archbishop as property and waives all claims. The archbishop must pay the count 1,600 florins on the coming feast of the Chair of St Peter. If he fails, he must deliver 100 florins and 100 malters of grain of Widdern measure to Adelsheim free of charge and pay the 1,600 florins on 22 February 1360. If he still fails to pay, his sureties include the knights Konrad Rüdt, Burgrave of Wildenberg, Eberhard Rüdt, Boppo von Adelsheim, Wiprecht von Dürn, Engelhard von Rosenberg, and the noblemen Eberhard Rüdt von Bödigheim, Konrad von Hartheim, Stein von Riedern, Kunz von Buchen, and Eberhard von Rosenberg. Upon the creditor’s summons, each must enter Einlager at Mergentheim with a servant and a horse. The archbishop promises to release the sureties, who undertake to act as reliable sureties and affix their seals.",
       "facts": [
         {
-          "type": "title",
           "person": "Engelhard von Rosenberg",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
-          "content": "served as surety for Archbishop Gerlach's debt to Count Boppo von Eberstein.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "served as surety for Archbishop Gerlach's debt to Count Boppo von Eberstein."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "served as surety for Archbishop Gerlach's debt to Count Boppo von Eberstein.",
           "personTitle": [
             "Edelknecht"
-          ]
+          ],
+          "type": "generic",
+          "content": "served as surety for Archbishop Gerlach's debt to Count Boppo von Eberstein."
         },
         {
-          "type": "title",
           "person": "Konrad Rüdt",
           "personTitle": [
             "Ritter",
             "Burggraf zu Wildenberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "sibling",
           "person": "Eberhard Rüdt",
           "personTitle": [
             "Ritter"
           ],
+          "type": "sibling",
           "of": "Konrad Rüdt",
           "ofTitle": [
             "Ritter",
@@ -55,20 +55,20 @@
           ]
         },
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
-          "content": "sealed the surety agreement.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "sealed the surety agreement."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "sealed the surety agreement.",
           "personTitle": [
             "Edelknecht"
-          ]
+          ],
+          "type": "generic",
+          "content": "sealed the surety agreement."
         }
       ]
     }

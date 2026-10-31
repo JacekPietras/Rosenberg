@@ -11,8 +11,8 @@
       "english": "Anna Marschall, her son Kunz von Rosenberg der Ältere, resident at Minnenberg, and his wife Anna von Sickingen sell her district to Arnold von Rosenberg and his wife Christine von Handschuhsheim to Boxberg, as Kunz von Rosenberg had bought this from the Johanniter, around 6,500 guilders.",
       "facts": [
         {
-          "type": "parent",
           "person": "Anna Marschall",
+          "type": "parent",
           "of": "Kunz von Rosenberg",
           "ofTitle": [
             "der Ältere",
@@ -20,8 +20,8 @@
           ]
         },
         {
-          "type": "spouse",
           "person": "Anna von Sickingen",
+          "type": "spouse",
           "of": "Kunz von Rosenberg",
           "ofTitle": [
             "der Ältere",
@@ -29,45 +29,45 @@
           ]
         },
         {
-          "type": "spouse",
           "person": "Christine von Handschuhsheim",
+          "type": "spouse",
           "of": "arnold_boxberg"
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "der Ältere",
             "zu Minnenberg"
           ],
+          "type": "generic",
           "content": "resided at Minnenberg."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "der Ältere",
             "zu Minnenberg"
           ],
+          "type": "generic",
           "content": "sold their quarter of Boxberg to arnold_boxberg and Christine von Handschuhsheim together with his wife Anna von Sickingen."
         },
         {
-          "type": "generic",
           "person": "Anna von Sickingen",
+          "type": "generic",
           "content": "sold their quarter of Boxberg to arnold_boxberg and Christine von Handschuhsheim together with her husband Kunz von Rosenberg der Ältere."
         },
         {
-          "type": "generic",
           "person": "Anna Marschall",
+          "type": "generic",
           "content": "sold their quarter of Boxberg to arnold_boxberg and Christine von Handschuhsheim together with her son Kunz von Rosenberg der Ältere and his wife Anna von Sickingen."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "der Ältere",
             "zu Minnenberg"
           ],
+          "type": "generic",
           "content": "had previously bought the quarter of Boxberg from the Hospitallers."
         }
       ],

@@ -10,35 +10,35 @@
       "english": "Archbishop Heinrich III of Virneburg of Mainz records that, with the consent of the named cathedral canons present, he received the accounts of Kuno von Falkenstein, provost and sole guardian of the Mainz church, for the period from 22 February 1348, when Kuno was elected sole guardian by the archbishop and his supporters in the cathedral chapter, until 2 September 1349. The archbishopric still owed Kuno 34,238 pounds and 10 shillings Heller. Until payment, and until the agreed four years had passed, Kuno and his co-guardians were to retain the guardianship and then return the archbishopric with all unpledged property. The stated sum was to cover Kuno’s debts, but excluded numerous outstanding obligations, including debts to the Burgraves of Starkenburg, officials and servants in Thuringia and Hesse, pledged castles and revenues, construction at Fürsteneck near Lorch, debts at Friedberg and Mainz, and sums previously charged by the guardians. Witnesses included the six named canons and Gotfried Stal von Biegen, Ritter, Claus von Scharfenstein, Johan von Waldeck, Gerhard von Bigen, Johan von Randeck, Ritter; Konrad Rüdt, Heilman von Praunheim, and Johan Marschal, together with other Mainz officials and clergy.",
       "facts": [
         {
-          "type": "title",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "served as a guardian of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Hans von Randeck, and Hans von Bellersheim.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "served as a guardian of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Hans von Randeck, and Hans von Bellersheim."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "was named in the letters governing return of the Mainz archbishopric, together with Hans von Randeck and Hans von Bellersheim.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "was named in the letters governing return of the Mainz archbishopric, together with Hans von Randeck and Hans von Bellersheim."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "participated in the accounting process for Kuno II von Falkenstein's guardianship period.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "participated in the accounting process for Kuno II von Falkenstein's guardianship period."
         }
       ]
     }

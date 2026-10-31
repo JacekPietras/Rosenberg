@@ -9,35 +9,35 @@
       "english": "King Wenceslas confirms to Konrad von Rosenberg and his cousins ​​the court and other rights in their city of Boxberg\n\nZeitschrift für die Geschichte des Oberrheins. 24. 1872\n\nKing Wenceslaus, for the sake of his faithful services, grants to Konrad von Rosenberg, Viztame at Heidelberg, and to his cousins, \"who jointly hold with him the fortress at Boxberg,\" the favor that people or Jews who move to the town of Boxberg and become resident there, shall partake in all liberties, graces, and rights as they appertain to the town; he also confirms to them the court at Boxberg and all graces and rights as they are established of old. Given at Amberg in 1388 on the Monday after St. Ambrose's day, in the 25th year of our Bohemian reign and in the 12th year of our Roman reign. Original on parchment with a damaged seal of majesty. By the lord Lampert, Bishop of Bamberg; Wlachnico de Weytenmule.",
       "facts": [
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Viztum zu Heidelberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "received King Wenceslaus’s confirmation of the court and other historic rights at Boxberg for himself and his cousins.",
           "personTitle": [
             "Viztum zu Heidelberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "received King Wenceslaus’s confirmation of the court and other historic rights at Boxberg for himself and his cousins."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "had cousins who jointly held the fortress at Boxberg with him.",
           "personTitle": [
             "Viztum zu Heidelberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "had cousins who jointly held the fortress at Boxberg with him."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "received this favor in recognition of his loyal service.",
           "personTitle": [
             "Viztum zu Heidelberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "received this favor in recognition of his loyal service."
         }
       ]
     }

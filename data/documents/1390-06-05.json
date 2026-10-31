@@ -11,13 +11,13 @@
       "english": "Engelhard von Rosenberg and his son Eberhard renounce their claims against the Knights of St. John because of the purchase of Boxberg and a castle estate on the farm in Gräfingen.",
       "facts": [
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
+          "type": "generic",
           "content": "renounced, with his son Eberhard, claims against the Johanniter Order concerning the Boxberg purchase and a Burggut at the Hof zu Gräfingen."
         },
         {
-          "type": "parent",
           "person": "Engelhard von Rosenberg",
+          "type": "parent",
           "of": "Eberhard von Rosenberg"
         }
       ],

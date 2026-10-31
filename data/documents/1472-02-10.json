@@ -12,21 +12,21 @@
       "english": "Konrad von Rosenberg issues a Revers to Elector Friedrich I of the Palatinate concerning the quarter of the castle and outer bailey at Rosenberg that Eberhard von Rosenberg der Ältere had previously held from the Palatinate as a Mannlehen. After Elector Friedrich’s death, the fiefs are to be received from his son Philipp and their electoral heirs.",
       "facts": [
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
+          "type": "generic",
           "content": "issued a Revers to Elector Friedrich I concerning the quarter of Rosenberg Castle and its outer bailey."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "generic",
           "content": "had previously held the quarter of Rosenberg Castle and its outer bailey as a Mannlehen from the Palatinate."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
+          "type": "generic",
           "content": "was to receive the fiefs from Elector Friedrich’s son Philipp and the electoral heirs after Friedrich’s death."
         }
       ],

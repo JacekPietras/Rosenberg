@@ -15,30 +15,30 @@
       "english": "Ruprecht granted Arnold and Eberhard von Rosenberg, sons of Eberhard von Rosenberg, a dowry for their mother Elisabeth von Erligheim on a quarter of Boxberg.",
       "facts": [
         {
-          "type": "generic",
           "person": "Ruprecht",
+          "type": "generic",
           "content": "authorized [arnold_boxberg] and [eberhard_jagstberg], sons of Eberhard von Rosenberg, to establish a Wittum for their mother Elisabeth von Erligheim on one quarter of Boxberg."
         },
         {
-          "type": "parent",
           "person": "vogt_zu_Lauda",
           "personDeceased": true,
+          "type": "parent",
           "of": "arnold_boxberg"
         },
         {
-          "type": "parent",
           "person": "vogt_zu_Lauda",
           "personDeceased": true,
+          "type": "parent",
           "of": "eberhard_jagstberg"
         },
         {
-          "type": "parent",
           "person": "Elisabeth von Erligheim",
+          "type": "parent",
           "of": "arnold_boxberg"
         },
         {
-          "type": "parent",
           "person": "Elisabeth von Erligheim",
+          "type": "parent",
           "of": "eberhard_jagstberg"
         }
       ]

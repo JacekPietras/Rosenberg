@@ -11,13 +11,13 @@
       "english": "Eberhard Rüdt von Bödigheim, bailiff zu [Tauber-]Bischofsheim, with the consent of Agnes von Rosenberg, his brother's widow, who inherited the property from her mother, sells to the six daughters (thoder kinden) of Konrad Daniel von Würzburg, nuns in the Billigheim monastery, lifetime rents from the so-called properties in Unterkessach, which are to be given in the same way as the rents are given to the lords of Schöntal for their properties there. After the death of the six nuns, the rents revert to the monastery. Guarantors: 1) Lord Hartwig von Erenstein of Schlierstadt, 2) Honauf, 3) Fritz the innkeeper and 4) Erbe (heirs) the butcher, [all three farmers] of Bödigheim \n\nSealers: 1) A., 2) Mr. Diether Rüdt, cousin of A., and 3) Mr. Hartwig von Erenstein, all three jointly for the other guarantors Execution: Perg., documented - 3 Sg., 1 documented, 3 abg., Pressel attached - Rv.: De bonis in Nydern Kessach Note: The sale to Schöntal Abbey took place on April 4, 1361; see U 543. Prov.: Billigheim, Cistercian nuns",
       "facts": [
         {
-          "type": "generic",
           "person": "Agnes von Rosenberg",
+          "type": "generic",
           "content": "was the widow of a brother of Eberhard Rüdt."
         },
         {
-          "type": "generic",
           "person": "Agnes von Rosenberg",
+          "type": "generic",
           "content": "inherited the property from her late mother."
         }
       ],

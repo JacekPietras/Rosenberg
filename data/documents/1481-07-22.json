@@ -8,24 +8,24 @@
       "english": "Stefan von Bibra served the bishopric in fighting against the von Rosenbergs. In compensation, Bishop Rudolf reached an agreement with him on the Sunday after the Division of the Apostles in 1481 and gave him 400 florins for the loss of seven horses, armor, damages, expenses, and other costs. The database comment notes that the copybook gives the year as 1491.",
       "facts": [
         {
-          "type": "generic",
           "person": "Stefan von Bibra",
+          "type": "generic",
           "content": "served the bishopric in fighting against the von Rosenberg family."
         },
         {
-          "type": "generic",
           "person": "Rudolf von Scherenberg",
           "personTitle": [
             "Bischof"
           ],
+          "type": "generic",
           "content": "compensated Stefan von Bibra with 400 florins for his losses of seven horses, armor, damages, expenses, and other costs."
         },
         {
-          "type": "generic",
           "person": "Rudolf von Scherenberg",
           "personTitle": [
             "Bischof"
           ],
+          "type": "generic",
           "content": "reached the compensation agreement with Stefan von Bibra in 1481, although the copybook gives the year as 1491."
         }
       ]

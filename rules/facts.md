@@ -18,6 +18,11 @@ types. Do not repeat the subject's name or titles in `content`; begin with the p
 so the name, titles, and content read as one sentence. Optional `personTitle` and `personDeceased` describe the subject; dates
 follow the shared rules. Untyped facts and guesses are not supported.
 
+For claims about a family, place, institution, object, or an unidentified figure, use a
+`generic` object with a non-person `subject` instead of `person`, as specified in
+`rules/json-formats.md`. Preserve supported collective claims without inventing personal
+identities. Do not use personal title or deceased-status fields on these objects.
+
 Extract each explicitly stated family relationship as a separate typed fact:
 
 - `parent`: `person` is a parent of `of`. Reverse the participants when the

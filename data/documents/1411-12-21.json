@@ -12,29 +12,29 @@
       "summary": "Engelhard von Rosenberg und Else (Anne?) von Bebenburg, Ehefrau des verstorbenen Eberhard von Rosenberg, verkaufen an Ulrich Wambolt, Komtur, und das Deutsch-Ordens-Haus zu Mergentheim, ihre Eigenleute zu Uffingen um 8 Gulden.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Elisabeth von Bebenburg",
+          "type": "spouse",
           "of": "Eberhard von Rosenberg",
           "ofDeceased": true
         },
         {
-          "type": "death",
           "person": "Eberhard von Rosenberg",
+          "type": "death",
           "diedBefore": "1411-12-22"
         },
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
+          "type": "generic",
           "content": "sold their Eigenleute Heinrich Mulner, all his children and descendants, and his lawful wife Anne and all her children, formerly resident at Uffingen, to Ulrich Wambolt and the Teutonic Order house at Mergentheim, jointly with Elisabeth von Bebenburg."
         },
         {
-          "type": "generic",
           "person": "Elisabeth von Bebenburg",
+          "type": "generic",
           "content": "sold their Eigenleute Heinrich Mulner, all his children and descendants, and his lawful wife Anne and all her children, formerly resident at Uffingen, to Ulrich Wambolt and the Teutonic Order house at Mergentheim, jointly with Engelhard von Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
+          "type": "generic",
           "content": "had their seal affixed to the charter for themselves and their heirs."
         }
       ],

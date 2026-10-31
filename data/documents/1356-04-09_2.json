@@ -8,42 +8,42 @@
       "english": "Letter from Engelhard von Rosenberg, Ritter, about how he received 100 guilders from Gotfried von Hanau, Landkomtur of the Bailiwick of Franconia, in return for which he promised himself and his estate at Sailach as a loyal castle guard to the House of Mergentheim",
       "facts": [
         {
-          "type": "title",
           "person": "Engelhard von Rosenberg",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "title"
         },
         {
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "type": "generic",
-          "person": "Engelhard von Rosenberg",
-          "content": "received 100 guilders from Gotfried von Hanau, Landkomtur of the Bailiwick of Franconia.",
-          "personTitle": [
-            "Ritter"
-          ]
+          "content": "received 100 guilders from Gotfried von Hanau, Landkomtur of the Bailiwick of Franconia."
         },
         {
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "type": "generic",
-          "person": "Engelhard von Rosenberg",
-          "content": "pledged to serve the Teutonic House at Mergentheim as a Burgmann.",
-          "personTitle": [
-            "Ritter"
-          ]
+          "content": "pledged to serve the Teutonic House at Mergentheim as a Burgmann."
         },
         {
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "type": "generic",
-          "person": "Engelhard von Rosenberg",
-          "content": "pledged his estate at Sailach to the Teutonic House at Mergentheim as security for his service as a Burgmann.",
-          "personTitle": [
-            "Ritter"
-          ]
+          "content": "pledged his estate at Sailach to the Teutonic House at Mergentheim as security for his service as a Burgmann."
         },
         {
-          "type": "title",
           "person": "Gotfried von Hanau",
           "personTitle": [
             "Landkomtur der Ballei Franken"
-          ]
+          ],
+          "type": "title"
         }
       ],
       "img": [

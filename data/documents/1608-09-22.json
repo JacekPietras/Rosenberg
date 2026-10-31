@@ -9,7 +9,6 @@
       "english": "The imperial notary Stephan Weiner von Weigenheim authenticates at Sugenheim Castle, in the presence of the guardians Albrecht Christoph von Rosenberg zu Rosenberg of Waldmannshofen, Knetzgau, and Schüpf, Eberhard von Eltershofen, and Georg Friedrich von Seckendorff, an inventory of the movable goods and jewelry share belonging to the remarried widow Brigitta, née von Rosenberg.",
       "facts": [
         {
-          "type": "generic",
           "person": "Albrecht Christoph von Rosenberg",
           "personTitle": [
             "zu Waldmannshofen",
@@ -17,6 +16,7 @@
             "zu Schüpf",
             "zu Rosenberg"
           ],
+          "type": "generic",
           "content": "was present with the other guardians when the notary authenticated an inventory of Brigitta’s share of movable goods and jewelry."
         }
       ]

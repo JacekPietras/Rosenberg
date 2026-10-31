@@ -8,36 +8,36 @@
       "english": "The brothers Engelhard and Konrad von Rosenberg, both Ritter, certify that, out of friendship for their brother-in-law Philipp von Bickenbach, Komtur des Deutschen Hauses zu Mergentheim, they have entrusted all their property in the town of Mergentheim to the brothers of the aforementioned house.\n\nSeal: Engelhard von Rosenberg; Konrad von Rosenberg",
       "facts": [
         {
-          "type": "title",
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "title",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "sibling",
           "person": "Engelhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "title"
+        },
+        {
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "sibling",
           "of": "Konrad von Rosenberg",
           "ofTitle": [
             "Ritter"
           ]
         },
         {
-          "type": "kin",
           "person": "Philipp von Bickenbach",
           "personTitle": [
             "Komtur des Deutschen Hauses zu Mergentheim"
           ],
+          "type": "kin",
           "of": "Engelhard von Rosenberg",
           "ofTitle": [
             "Ritter"
@@ -45,11 +45,11 @@
           "term": "Schwager"
         },
         {
-          "type": "kin",
           "person": "Philipp von Bickenbach",
           "personTitle": [
             "Komtur des Deutschen Hauses zu Mergentheim"
           ],
+          "type": "kin",
           "of": "Konrad von Rosenberg",
           "ofTitle": [
             "Ritter"
@@ -57,43 +57,43 @@
           "term": "Schwager"
         },
         {
-          "type": "title",
           "person": "Philipp von Bickenbach",
           "personTitle": [
             "Komtur des Deutschen Hauses zu Mergentheim"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "transferred his serfs in Mergentheim to the Teutonic Order."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "transferred his serfs in Mergentheim to the Teutonic Order."
         },
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
-          "content": "sealed the transaction.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "sealed the transaction."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "sealed the transaction.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "sealed the transaction."
         }
       ],
       "img": [

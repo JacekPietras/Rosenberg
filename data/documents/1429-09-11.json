@@ -11,13 +11,13 @@
       "english": "Eberhard von Hardheim sold to Count Palatine Otto von Mosbach all the rents and interest in Königheim, Eiersheim, Schweinberg and Rinderfeld, which he had bought from Anna von Rosenberg, Hans von Rosenberg's wife.",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Hardheim",
+          "type": "generic",
           "content": "sold to Count Palatine Otto von Mosbach all rents and interest at Königheim, Eiersheim, Schweinberg, and Rinderfeld that he had bought from Anna von Rosenberg."
         },
         {
-          "type": "spouse",
           "person": "Anna von Rosenberg",
+          "type": "spouse",
           "of": "Hans von Rosenberg"
         }
       ],

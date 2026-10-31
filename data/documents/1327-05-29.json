@@ -11,27 +11,27 @@
       "english": "Eberhard von Rosenberg and his wife Irmtraut sell their mill, called the Hohe Mühle, the mill located next to Rosenberg Castle, and their mill located immediately adjacent to it on the Kirnau (on the same stream) between Sindolsheim and Rosenberg, which was previously held by Eberhard Rüdt, Ritter, to Schöntal Abbey for 90 lb hl.  Guardians: 1) Arnold von Rosenberg, 2) Lord Konrad von Rossriet, 3) Lord Diether von Berlichingen, [all] Ritter, and 4) Hermann von Berlichingen  Above the mill, which is called Hohemul, next to the castle of Rosenberg and above the mill located below Sindeltzhein and Rosenberg",
       "facts": [
         {
-          "type": "spouse",
           "person": "irmtraut_wife_of_vogt_zu_Durn",
+          "type": "spouse",
           "of": "vogt_zu_Durn"
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
+          "type": "generic",
           "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold the Hohe Mühle beside Rosenberg Castle to Schöntal Abbey."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
+          "type": "generic",
           "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold another mill on the Kirnau between Sindolsheim and Rosenberg to Schöntal Abbey."
         },
         {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
-          "content": "acted as a surety for the sale.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "acted as a surety for the sale."
         }
       ],
       "img": [

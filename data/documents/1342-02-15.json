@@ -10,18 +10,18 @@
       "english": "HEINRICH III, Archbishop of Mainz, ratifies the accounts of PETRUS, parish priest in Bischofsheim, his cellarer in the same place. We, HEINRICH, by the grace of God Archbishop of the holy see of Mainz, Archchancellor of the Holy Empire through Germany, publicly acknowledge in these writings that from the Saturday next after the day of the blessed Apostle Andrew in the year of the Lord 1340 until the day of the date of these presents, PETRUS, parish priest in Bischofsheim, our cellarer in the same place, has made a just and legitimate accounting of all and sundry things received and distributed by him in our name—as much in money as in wine and also grain, chickens and tallow, and in any other things incumbent upon him regarding his said office. This accounting was made with Eberhard von Rosenberg in Dürn and Konrad RUDE in Bischofsheim, Advocates, and also Konrad Spigel, Vicar of the Church of Aschaffenburg, Cleric, [and] HENRICUS Beyer & LUDOWICO de Ameneburg, our Notaries, in our Castle of Aschaffenburg, namely in the Notary's chamber, by our special order and mandate. And that, this accounting having been made and with the deduction of all distributions from the receipts, according to his accounting and his writings, with his final receipt also included, the same Cellarer remains obligated to us for the following:     firstly, in money: twenty-one Hallensian shillings.     Item in wheat: forty-eight and a half maldra.     Item in rye: one hundred forty-two and a half maldra.     Item in oats: thirty-two maldra.     Item in spelt: six maldra.     Item in peas: half a maldrum.     Item in wine: twenty-six carratas, one ama.     Item: ten and eight chickens.     Item in tallow: thirty-two talenta. Done and Dated at Aschaffenburg in the Notary's chamber, in the presence of the aforementioned persons, on the Friday next before the day of the Chair of the blessed Apostle Peter, 1342.",
       "facts": [
         {
-          "type": "title",
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Vogt zu Dürn"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "title"
+        },
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
           "content": "was present during the accounting of the archiepiscopal cellarer at Aschaffenburg."
         }
       ]

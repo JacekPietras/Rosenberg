@@ -8,8 +8,8 @@
       "english": "Hans, Count of Wertheim, guardian of the Counts Albrecht, Georg, Heinrich, and Hans von Lewenstein, sells to the Count Palatine half of the lordship of Lewenstein for 5000 guilders with the right of redemption.\n\nCo-sealers: Heinrich, Count of Sponheim; Konrad von Rosenberg; and Eberhard von Hartheim.",
       "facts": [
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
+          "type": "generic",
           "content": "sealed the document as a co-sealer."
         }
       ]

@@ -8,32 +8,32 @@
       "english": "Stefan von Adelsheim informed his cousins and brothers-in-law Anselm von Eicholzheim, Veit von Mosbach, Michel von Rosenberg, and Zeisolf von Adelsheim that he would seek a legal resolution in his feud, and that of Eberhard and Tristan von Adelsheim, before the Bamberg regional court if safe conduct were granted.",
       "facts": [
         {
-          "type": "kin",
           "person": "Anselm von Eicholzheim",
+          "type": "kin",
           "of": "Stefan von Adelsheim",
           "term": "Vetter und Schwager"
         },
         {
-          "type": "kin",
           "person": "Veit von Mosbach",
+          "type": "kin",
           "of": "Stefan von Adelsheim",
           "term": "Vetter und Schwager"
         },
         {
-          "type": "kin",
           "person": "Michel von Rosenberg",
+          "type": "kin",
           "of": "Stefan von Adelsheim",
           "term": "Vetter und Schwager"
         },
         {
-          "type": "kin",
           "person": "Zeisolf von Adelsheim",
+          "type": "kin",
           "of": "Stefan von Adelsheim",
           "term": "Vetter und Schwager"
         },
         {
-          "type": "generic",
           "person": "Michel von Rosenberg",
+          "type": "generic",
           "content": "was notified by Stefan von Adelsheim that Stefan, Eberhard, and Tristan von Adelsheim would seek a legal resolution of their feud before the Bamberg regional court if safe conduct were granted."
         }
       ]

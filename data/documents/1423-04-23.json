@@ -11,31 +11,31 @@
       "english": "Rüdiger Sützel, Kunz von Ochsenfurt, Kunz von Rosenberg zu Reichelsburg, Kunz von Rosenberg zu Bartenstein, Hans von Dottenheim, Dietrich Geyr, Hartrach Truchszeß and Heinrich Knebel, who, as citizens, have stood in for Reinhard von Uissigheim towards Eberhard von Seinsheim, Master of the Teutonic Order in German and French Lands, for the purchase price of 2,080 guilders for Zimmern Castle, promise to continue to assume the guarantee until the sum is paid, after the aforementioned Eberhard von Seinsheim has extended the payment period by one year.",
       "facts": [
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "zu Reichelsburg"
           ],
+          "type": "generic",
           "content": "promised to continue serving as surety for Reinhard von Uissigheim toward Eberhard von Seinsheim for the purchase price of Zimmern Castle until it was paid."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "zu Bartenstein"
           ],
+          "type": "generic",
           "content": "promised to continue serving as surety for Reinhard von Uissigheim toward Eberhard von Seinsheim for the purchase price of Zimmern Castle until it was paid."
         },
         {
-          "type": "title",
           "person": "Eberhard von Seinsheim",
           "personTitle": [
             "Meister des Deutschen Ordens in deutschen und welschen Landen"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Seinsheim",
+          "type": "generic",
           "content": "extended the payment deadline for the purchase price of Zimmern Castle by one year."
         }
       ],

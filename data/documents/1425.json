@@ -8,27 +8,27 @@
       "english": "Sunday after Dorothea; Hans Gauss and Agnes, his wife, citizens of Öhringen, confess that Albrecht von Hohenlohe has allowed them to serve Eberhard von Rosenberg;\n\nseal: Leonhart Lesch.",
       "facts": [
         {
-          "type": "generic",
           "person": "Albrecht von Hohenlohe",
+          "type": "generic",
           "content": "allowed Hans Gauß and his wife Agnes, citizens of Öhringen, to serve Eberhard von Rosenberg."
         },
         {
-          "type": "title",
           "person": "Hans Gauß",
           "personTitle": [
             "Bürger zu Öhringen"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "title",
           "person": "Agnes",
           "personTitle": [
             "Bürger zu Öhringen"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Leonhart Lesch",
+          "type": "generic",
           "content": "sealed the charter."
         }
       ],

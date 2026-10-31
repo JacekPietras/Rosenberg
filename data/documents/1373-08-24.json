@@ -8,39 +8,39 @@
       "english": "Ruprecht promises to Konrad von Rosenberg, his viztame¹ at Amberg, the ordinary tax there and the \"seigniorage\" of the mint up to a revenue of 2000 guilders, which he owes him on account of the dowry of his [Konrad's] wife, Margarethe von Hirschhorn, and which are to be deducted from the pledge of Rheinhausen and Neckarau.\n\nKarlsr. Coph. 540,221.\n\nRuprecht grants to Konrad von Rosenberg, his viztame at Amberg, a dower for his [Konrad's] wife, Margarethe von Hirschhorn, of 4000 guilders on the village and fortress of Mure.",
       "facts": [
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Amberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "spouse",
           "person": "Margarethe von Hirschhorn",
+          "type": "spouse",
           "of": "Konrad von Rosenberg",
           "ofTitle": [
             "Vitzthum zu Amberg"
           ]
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "was owed 2,000 florins by Ruprecht for the Zugeld of his wife Margarethe von Hirschhorn.",
           "personTitle": [
             "Vitzthum zu Amberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "was owed 2,000 florins by Ruprecht for the Zugeld of his wife Margarethe von Hirschhorn."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "was promised the ordinary tax at Amberg and the mint’s seigniorage toward this debt until 2,000 florins had been collected.",
           "personTitle": [
             "Vitzthum zu Amberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "was promised the ordinary tax at Amberg and the mint’s seigniorage toward this debt until 2,000 florins had been collected."
         },
         {
-          "type": "generic",
           "person": "Margarethe von Hirschhorn",
+          "type": "generic",
           "content": "was granted a Wittum on the village and fortress of Mure by Ruprecht."
         }
       ]

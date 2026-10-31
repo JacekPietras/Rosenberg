@@ -8,18 +8,18 @@
       "english": "Archbishop Adolf of Mainz arranges the repayment of his debts to Elisabeth von Erligheim. L(ite)ra data Elsen de Rosenb(er)g d(i)ct(a) de Erligheim sup(ra) mille florenis. V(er)schreibung Elsen von Rosenberg über 1000 f. [a] [Archbishop] Adolf [of Mainz] owes Mrs. Elisabeth von Erligheim, her heirs, or the rightful owner of this document, 1,000 guilders, Frankfurt currency. The archbishop intends to repay the money in two installments: 500 guilders next Christmas, and the remainder exactly one year later. The archbishop appoints his \"friends and loyal followers\" as guarantors: Ditter Rüdt, Ritter, the Tauberbischofsheim bailiff Egen Seman, Götz von Adelsheim, Raben Rüdt, Eberhard von Grumbach, resident of the Gamburg, Eberhard von Grumbach, the son of Herdan, Hertwig Creiß von Bürgstadt, Heinrich Rüdt der Junge, Eberhard Rüdt, the son of the deceased Eberhard, Ritter and Endres von Riedern. If Mainz defaults on payment, the creditors can issue verbal or written reminders to the guarantors, who must then each send a farmhand and a horse (Pherd) to Wertheim or Bischofsheim within eight days for storage (in leistunge) at a public inn designated by Frau Elisabeth. They must remain there until the debt is paid. If a guarantor dies or leaves the country, an equivalent substitute guarantor must be provided within one month upon request. If this is not done, the other guarantors must continue to provide storage until then. No guarantor may evade their obligation under the pretext that they have not been called upon to provide storage for a year. The archbishop promises his guarantors to release them amicably from their obligation and to indemnify them. He promises to abide by the above agreement without fail. The archbishop and the two guarantors, Ditter Rüdt and Egen Seman, announce their seals. - Date Dominica qua cantatur ... Letare 1389.",
       "facts": [
         {
-          "type": "generic",
           "person": "Elisabeth von Erligheim",
+          "type": "generic",
           "content": "was owed money in Frankfurt currency by Archbishop Adolf von Mainz, payable in two installments."
         },
         {
-          "type": "generic",
           "person": "Elisabeth von Erligheim",
+          "type": "generic",
           "content": "benefited from the guarantees of Ditter Rüdt, Egen Seman, and the other named sureties for Archbishop Adolf’s debt."
         },
         {
-          "type": "generic",
           "person": "Elisabeth von Erligheim",
+          "type": "generic",
           "content": "could require the guarantors to undertake Einlager at Wertheim or Bischofsheim if payment was delayed."
         }
       ]

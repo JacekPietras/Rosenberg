@@ -8,12 +8,12 @@
       "english": "Hans von Rosenberg, Ritter, Schultheiß of Nürnberg, confirmed that Anna, widow of Eberhard Quetrer, acting for her children and son-in-law, transferred her property at the Weinmarkt to Kunz Praun in return for an annual rent. Konrad Pözlinger and Steffan Schuler were witnesses.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter",
             "Schultheiß zu Nürnberg"
           ],
+          "type": "generic",
           "content": "confirmed Anna Quetrer’s transfer of her property at the Weinmarkt to Kunz Praun, acting for her children and son-in-law Peter Steffan and Grede Quetrer and Kunz and Margareta Scheuhenpflug."
         }
       ]
@@ -25,11 +25,11 @@
       "english": "Hans von Rosenberg, Schultheiß of Nürnberg, confirmed that Anna, widow of Eberhard Quetrer, acting for her children and son-in-law, sold her house at the Weinmarkt beside the Sebald school to Hartmann and Elisabeth Franck in return for an annual rent. Konrad Pözlinger and Stephan Schuler were witnesses.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Schultheiß zu Nürnberg"
           ],
+          "type": "generic",
           "content": "confirmed Anna Quetrer’s sale of her house at the Weinmarkt to Hartmann and Elisabeth Franck."
         }
       ]
@@ -41,11 +41,11 @@
       "english": "Hans von Rosenberg, Schultheiß of Nürnberg, confirmed that Anna, widow of Eberhard Quetrer, acting for her children, transferred her house at the Weinmarkt beside Hartmann Franck’s house to Albrecht and Elisabeth Lilgenpaum in return for an annual rent. Konrad Pötzlinger and Stephan Schuler were witnesses.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Schultheiß zu Nürnberg"
           ],
+          "type": "generic",
           "content": "confirmed Anna Quetrer’s transfer of her house at the Weinmarkt to Albrecht and Elisabeth Lilgenpaum."
         }
       ]

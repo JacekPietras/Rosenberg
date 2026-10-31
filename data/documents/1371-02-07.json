@@ -8,19 +8,19 @@
       "english": "H. Albrecht of Bavaria acknowledges to LG. Johans zu dem Lewthemberg, Guardian of the State of Lower Bavaria, the accounting of his term of office that was carried out in Strawbing before the council and the estates, namely for the cash received from his cousin H. Ruprecht der Ältere when he took office on Corpus Christi Day according to the accounting of the vicar Ekker and the county clerk, Mr. Raben, and for the income from the court and toll in Scherding in the years 1368 to 1371 as well as all other state income, altogether 5,721 pounds, 6 shillings, 8 Regensburg pfennigs and 2,891 pounds in Viennese pfennigs, and in addition holds the following debts to the LG. fixed: 1,377 pounds 7 shillings 10 Regensburg pfennigs from the care allowance for 2.5 years until the settlement day on the Sunday before Paul's Conversion (19th January), 181 pounds 3 shillings 14 Regensburg pfennigs for the provisions in Strawbing from the aforementioned Sunday until the Wednesday before Candlemas (29th January), 74.5 pounds 8 Regensburg pfennigs and 200 shocks of large Prague pfennigs for the provisions in Chambe, 200 pounds Regensburg pfennigs for Stephan the Altman; all this makes a total of 2,033 pounds 7 shillings 2 Regensburg pfennigs, to which 500 fl for the Duke's horse, payable on St. George's Day (24th April) to Konrad von Rosenberg, Vicar in Amberg, and 100 fl, which were given to Ott the Stainer for a trip to Hungary and for 2 horses; Furthermore, certain services remain open on the order of the Holy See to LG. Vlrich [in Leuchtenberg], to the court master Daniel, to the Ramsp",
       "facts": [
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum in Amberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "was to receive 500 florins for the Duke’s horse on Georgi.",
           "personTitle": [
             "Vitzthum in Amberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "was to receive 500 florins for the Duke’s horse on Georgi."
         }
       ]
     }

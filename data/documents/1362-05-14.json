@@ -9,23 +9,23 @@
       "english": "Ruprecht commands all his subjects in Bavaria on behalf of his cousin Meinhard of Tyrol, to be obedient to the commands of Konrad von Rosenberg, Viztame at Amberg, or in case of his absence, to the regional scribe.",
       "facts": [
         {
-          "type": "title",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vitzthum zu Amberg"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Amberg"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "type": "generic",
           "content": "held administrative authority over Ruprecht’s subjects in Bavaria."
         },
         {
-          "type": "generic",
           "person": "Ruprecht",
+          "type": "generic",
           "content": "commanded his Bavarian subjects to obey Konrad von Rosenberg’s orders, or those of the regional scribe if Konrad was absent."
         }
       ]

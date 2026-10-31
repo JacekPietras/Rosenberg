@@ -12,79 +12,79 @@
       "english": "In the dispute between the brothers Wilhelm and Christoph Sützel of Mergentheim, their cousins Albrecht von Rosenberg, Ritter, Philipp Jakob von Rosenberg zu Rosenberg, and Eberhard von Stetten of Kocherstetten decide that Wilhelm is to receive the mill at Unterbalbach and Christoph the mill at Oberbalbach, held by Hans Öchszner. To offset the higher income from the Unterbalbach mill, Wilhelm is to give his brother 1½ malters of grain annually. Wilhelm alone is to pay the accrued 60 gulden interest, for which the brothers had been jointly liable, to the Teutonic Order at Wimpfen. Christoph is to repay Wilhelm 16 gulden from a previous 32-gulden loan from their late mother Agatha. Wilhelm is to pay their sister Ottilie 400 gulden, while Christoph assumes the 400-gulden debt to the Teutonic Order at Wimpfen. Dated 7 April 1563.",
       "facts": [
         {
-          "type": "generic",
           "person": "Albrecht von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "decided with Philipp Jakob von Rosenberg zu Rosenberg and Eberhard von Stetten zu Kocherstetten the dispute between brothers Wilhelm and Christoph Sützel over their mills and debts."
         },
         {
-          "type": "kin",
           "person": "Albrecht von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "kin",
           "of": "Wilhelm Sützel von Mergentheim",
           "term": "Vetter"
         },
         {
-          "type": "kin",
           "person": "Albrecht von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "kin",
           "of": "Christoph Sützel von Mergentheim",
           "term": "Vetter"
         },
         {
-          "type": "kin",
           "person": "Philipp Jakob von Rosenberg",
+          "personTitle": [
+            "zu Rosenberg"
+          ],
+          "type": "kin",
           "of": "Wilhelm Sützel von Mergentheim",
-          "term": "Vetter",
-          "personTitle": [
-            "zu Rosenberg"
-          ]
+          "term": "Vetter"
         },
         {
-          "type": "kin",
           "person": "Philipp Jakob von Rosenberg",
-          "of": "Christoph Sützel von Mergentheim",
-          "term": "Vetter",
           "personTitle": [
             "zu Rosenberg"
-          ]
+          ],
+          "type": "kin",
+          "of": "Christoph Sützel von Mergentheim",
+          "term": "Vetter"
         },
         {
-          "type": "sibling",
           "person": "Wilhelm Sützel von Mergentheim",
+          "type": "sibling",
           "of": "Christoph Sützel von Mergentheim"
         },
         {
-          "type": "sibling",
           "person": "Ottilie",
+          "type": "sibling",
           "of": "Wilhelm Sützel von Mergentheim"
         },
         {
-          "type": "sibling",
           "person": "Ottilie",
+          "type": "sibling",
           "of": "Christoph Sützel von Mergentheim"
         },
         {
-          "type": "parent",
           "person": "Agatha",
           "personDeceased": true,
+          "type": "parent",
           "of": "Wilhelm Sützel von Mergentheim"
         },
         {
-          "type": "parent",
           "person": "Agatha",
           "personDeceased": true,
+          "type": "parent",
           "of": "Christoph Sützel von Mergentheim"
         },
         {
+          "person": "Agatha",
           "type": "death",
-          "person": "Agatha",
           "diedBefore": "1563-04-08"
         }
       ],

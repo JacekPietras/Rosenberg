@@ -8,30 +8,30 @@
       "english": "Friedrich von Rosenberg hands over all his belongings to his cousin Jörg Hansen and Eberhard von Rosenberg zu Boxberg.",
       "facts": [
         {
-          "type": "kin",
           "person": "Jörg Hansen",
+          "type": "kin",
           "of": "Friedrich von Rosenberg",
           "term": "Vetter"
         },
         {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ],
           "type": "kin",
-          "person": "Eberhard von Rosenberg",
           "of": "Friedrich von Rosenberg",
-          "term": "Vetter",
-          "personTitle": [
-            "zu Boxberg"
-          ]
+          "term": "Vetter"
         },
         {
-          "type": "title",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "zu Boxberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Friedrich von Rosenberg",
+          "type": "generic",
           "content": "transferred all his property and possessions to his cousins Jörg Hansen and Eberhard von Rosenberg zu Boxberg."
         }
       ],

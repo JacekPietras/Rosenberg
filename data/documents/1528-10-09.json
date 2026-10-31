@@ -8,15 +8,15 @@
       "english": "At the request of the Order of the German Order of Mergentheim, Wolfgang von Bibra, the mayor and the council of the imperial city of Rothenburg ob der Tauber provide a document from 1516 April 7 on the disputes of the House of Mergentheim with the brothers von Rosenberg.",
       "facts": [
         {
-          "type": "title",
           "person": "Wolfgang von Bibra",
           "personTitle": [
             "Deutsch-Ordens-Komtur zu Mergentheim"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Wolfgang von Bibra",
+          "type": "generic",
           "content": "requested that Rothenburg’s mayor and council authenticate the charter of 7 April 1516 concerning disputes between the House of Mergentheim and the Rosenberg brothers."
         }
       ],

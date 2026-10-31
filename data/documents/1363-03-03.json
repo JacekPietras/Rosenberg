@@ -7,34 +7,34 @@
       "english": "Urban V cleanses Eberhard von Rosenberg, a cleric of the Würzburg Diocese, of the blemish which he had incurred by taking possession of the parish church of Kocherthürn of the same diocese without having received priestly ordination, but requires him to leave the said church. — Avignon, on the 5th day before the Nones of March in the first year [of his pontificate]. — Apostolic See.",
       "facts": [
         {
-          "type": "title",
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Kleriker der Würzburger Diözese"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Kleriker der Würzburger Diözese"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Kleriker der Würzburger Diözese"
+          ],
+          "type": "generic",
           "content": "took possession of the parish church of Kocherthürn before receiving priestly ordination."
         },
         {
-          "type": "generic",
           "person": "Urban V",
           "personTitle": [
             "Papst"
           ],
+          "type": "generic",
           "content": "cleansed Eberhard von Rosenberg of the canonical irregularity arising from his taking possession of the parish church of Kocherthürn before ordination."
         },
         {
-          "type": "generic",
           "person": "Urban V",
           "personTitle": [
             "Papst"
           ],
+          "type": "generic",
           "content": "ordered Eberhard von Rosenberg to leave the parish church of Kocherthürn."
         }
       ]
@@ -45,18 +45,18 @@
       "english": "Urban V commissions the abbots of Sinsheim and Amorbach and the dean of the church in Mosbach, of the Worms and Würzburg dioceses, to install Eberhard von Rosenberg, a cleric of the Würzburg Diocese, into the possession of the said parish church, after he [the Pope] has cleansed him of the blemish of taking possession of the parish church in Kocherthürn of the same diocese before receiving priestly ordination. — Avignon, on the 5th day before the Nones of March in the first year. — [For his] praiseworthy honesty.",
       "facts": [
         {
-          "type": "title",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Kleriker der Würzburger Diözese"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Urban V",
           "personTitle": [
             "Papst"
           ],
+          "type": "generic",
           "content": "commissioned the abbots of Sinsheim and Amorbach and the dean of Mosbach to install Eberhard von Rosenberg in possession of the parish church of Kocherthürn."
         }
       ]

@@ -8,24 +8,24 @@
       "english": "Ruprecht enfeoffed Elisabeth von Erligheim, widow of Eberhard von Rosenberg, in place of her underage son, with half of Boxberg and other fiefdoms.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Elisabeth von Erligheim",
+          "type": "spouse",
           "of": "vogt_zu_Lauda",
           "ofDeceased": true
         },
         {
-          "type": "generic",
           "person": "Elisabeth von Erligheim",
+          "type": "generic",
           "content": "was enfeoffed with half of Boxberg and other fiefs in place of her underage sons."
         },
         {
-          "type": "generic",
           "person": "Ruprecht",
+          "type": "generic",
           "content": "enfeoffed Elisabeth von Erligheim with half of Boxberg and other fiefs in place of her underage sons."
         },
         {
-          "type": "death",
           "person": "vogt_zu_Lauda",
+          "type": "death",
           "diedBefore": "1387-12-29"
         }
       ]

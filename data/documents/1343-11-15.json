@@ -10,18 +10,18 @@
       "english": "Archbishop Heinrich III of Virneburg of Mainz records that Heinrich, his cellarer and chaplain at Scheuerberg, rendered accounts for his office from the Thursday after All Saints’ Day in 1341 to 15 November 1343, including the garrison of Neckarsulm and the expenses of officials, companions, servants, and guards. After the final balance and deductions for crop failure, Heinrich owed the archbishop 12 malters of grain, 74 malters of oats less three sumerini, and 43½ loads of wine, while the archbishop owed him 16 malters of spelt and 13 pounds 2 shillings Heller, in addition to the expenses of four armed guards at Sulm for eight days. These expenses were to be included in the next account. Witnesses included Gotfrid Stail, Ritter; Eberhard von Rosenberg, Ritter, Wildrich, Vogt of Aschaffenburg, Konrad Rüdt, Burgrave of Starkenburg, and the archbishop’s clerks and secretaries Konrad Spiegel and Hans von Siegburg.",
       "facts": [
         {
-          "type": "title",
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "witnessed the accounting at Aschaffenburg."
         }
       ]

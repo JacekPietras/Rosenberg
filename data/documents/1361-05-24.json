@@ -8,18 +8,18 @@
       "english": "A: Konrad von Rosenberg, Vicar of Amberg  E: Abbot Ulrich of Ensdorf Monastery Judicial confirmation of the following tithes at Schmidmühlen: all tithes from the Hofgarten, all tithes from the Ambrönger's garden, all tithes from the Stöckl's garden, the third sheaf from Otten von Amberg's property, half the tithe from Heinzel der Hosen's Regelsleiten, the fourth sheaf from the Radacker, all tithes from the Leiten Elblin der Schefmann, all tithes from the rented fief held by Friedrich der Prenner, all tithes from all fields belonging to the upper mill, all tithes from the Schmiedswiddum, all tithes from two fields held by the Messerschmier, and half the tithe from the Hufeisen's garden at Prunnleit.",
       "facts": [
         {
-          "type": "title",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Viztum zu Amberg"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Viztum zu Amberg"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Viztum zu Amberg"
+          ],
+          "type": "generic",
           "content": "judicially confirmed the listed tithes at Schmidmühlen to Abbot Ulrich of Ensdorf Monastery."
         }
       ]

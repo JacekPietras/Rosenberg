@@ -67,6 +67,14 @@ class FamilyGraphTests(unittest.TestCase):
             self.assertTrue(assertion.mentions[0].deceased)
         self.assertEqual([], build(inputs).relationships)
 
+    def test_non_person_subjects_do_not_create_person_mentions(self):
+        fact = {'type': 'generic', 'subject': 'The von Rosenberg family',
+                'content': 'held Boxberg Castle.'}
+        inputs = self.inputs(facts=[fact], guesses=[fact])
+        self.assertEqual(2, len(inputs.assertions))
+        self.assertTrue(all(not assertion.mentions for assertion in inputs.assertions))
+        self.assertEqual([], build(inputs).relationships)
+
     def test_exact_ids_and_old_relationship_independence(self):
         inputs = self.inputs(facts=[relation('a', 'b'), relation('A', 'b')])
         first = build(inputs)

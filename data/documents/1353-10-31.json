@@ -9,19 +9,19 @@
       "english": "Innocent VI to the Bishops of Eichstätt and Freising and to the Sacristan of the Church of Avignon: Since Marquard von Heideck, Albrecht von Ebersberg, Lupold von Bebenburg, Gotfried von Neudeck, Hans Schenk von Erbach, Dietrich von Mosbach, Hans von Rosenberg, Friedrich von Schälberg, Hans von Salzberg, Hans von Brendein and Wolfram von Stein, canons, and the deceased Eberhard von Riedern, dean, and the chapter of the Church of Würzburg, have opposed the provision of Berthold von Burg-Grumbach with a canonry and prebend of the Church of Würzburg and have unlawfully installed Konrad, the son of Engelhard von Weinsberg, in this position, have disregarded the interdict imposed upon them, and have even installed Engelhard, the brother of Konrad von Weinsberg, as a canon, the Pope therefore commands the three above-mentioned [the Bishops and the Sacristan] to proceed against the defiant ones with harsher penal sentences. — Avignon, on the second day before the Kalends of November in the first year [of his pontificate]. — Exhibited to us.",
       "facts": [
         {
-          "type": "title",
           "person": "hans_domherr_zu_wurzburg",
           "personTitle": [
             "Kanoniker zu Würzburg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "hans_domherr_zu_wurzburg",
-          "content": "opposed the papal provision of Berthold von Burg-Grumbach to a canonry and prebend at Würzburg.",
           "personTitle": [
             "Kanoniker zu Würzburg"
-          ]
+          ],
+          "type": "generic",
+          "content": "opposed the papal provision of Berthold von Burg-Grumbach to a canonry and prebend at Würzburg."
         }
       ]
     }

@@ -8,8 +8,8 @@
       "english": "King Ruprecht instructs the city of Schweinfurt to give the next annual tax to Arnold von Rosenberg. C.",
       "facts": [
         {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
+          "type": "generic",
           "content": "was designated by King Ruprecht to receive Schweinfurt’s next annual tax."
         }
       ]

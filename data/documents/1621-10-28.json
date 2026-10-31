@@ -8,36 +8,36 @@
       "english": "Guardians Albrecht Christoph von Rosenberg zu Rosenberg und Waldmannshofen and Georg Friedrich von Seckendorff zu Langenfeld, together with the named advisers including Georg Sigmund von Rosenberg zu Haldenbergstetten, made a marriage agreement for Philipp Ludwig von Seckendorff and Maria Margareta von Gemmingen. Brigitta née von Rosenberg is named as the late wife of Hans Georg von Seckendorff; Anna Maria von Rosenberg née von Gemmingen is mentioned in connection with an inheritance.",
       "facts": [
         {
-          "type": "death",
           "person": "Brigitta von Rosenberg",
+          "type": "death",
           "diedBefore": "1621-10-29"
         },
         {
-          "type": "spouse",
           "person": "Brigitta von Rosenberg",
+          "type": "spouse",
           "of": "Hans Georg von Seckendorff",
           "ofDeceased": true
         },
         {
-          "type": "generic",
           "person": "Albrecht Christoph von Rosenberg",
           "personTitle": [
             "zu Waldmannshofen",
             "zu Rosenberg"
           ],
+          "type": "generic",
           "content": "served as a guardian in the marriage agreement for Philipp Ludwig von Seckendorff and Maria Margareta von Gemmingen."
         },
         {
-          "type": "generic",
           "person": "Georg Sigmund von Rosenberg",
           "personTitle": [
             "zu Haldenbergstetten"
           ],
+          "type": "generic",
           "content": "advised the parties in the marriage agreement."
         },
         {
-          "type": "generic",
           "person": "Anna Maria von Rosenberg",
+          "type": "generic",
           "content": "was mentioned in the marriage agreement in connection with an inheritance."
         }
       ]

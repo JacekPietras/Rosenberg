@@ -8,124 +8,124 @@
       "english": "Eberhard and Konrad, Edelknechte and brothers of the von Rosenberg family, acknowledge that they will not encroach upon the people called the King's people—whom their father, Lord Eberhard von Rosenberg zu Dürn, had given to the two of them on the one hand, and to their brothers Engelhard and Herman on the other hand—with unjust exactions, excessive lodging demands, or other things. Should any two of them break this, they shall, upon the complaint of the others, have the matter settled at the next assembly as their three common friends—namely Eberhard, Konrad, and Heinz, all three called von Rosenberg—shall decide. Given on Our Lady's Day of the Consecration of the Candles.",
       "facts": [
         {
-          "type": "title",
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ]
-        },
-        {
-          "type": "title",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ]
-        },
-        {
-          "type": "sibling",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "type": "title"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "type": "sibling",
           "of": "Konrad von Rosenberg",
           "ofTitle": [
             "Edelknecht"
           ]
         },
         {
-          "type": "sibling",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "sibling",
           "of": "Hermann von Rosenberg"
         },
         {
-          "type": "sibling",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "sibling",
           "of": "engelhard_son_of_vogt_zu_Durn"
         },
         {
-          "type": "sibling",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "sibling",
           "of": "Hermann von Rosenberg"
         },
         {
-          "type": "sibling",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "sibling",
           "of": "engelhard_son_of_vogt_zu_Durn"
         },
         {
-          "type": "parent",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "zu Dürn"
           ],
+          "type": "parent",
           "of": "Eberhard von Rosenberg",
           "ofTitle": [
             "Edelknecht"
           ]
         },
         {
-          "type": "parent",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "zu Dürn"
           ],
+          "type": "parent",
           "of": "Konrad von Rosenberg",
           "ofTitle": [
             "Edelknecht"
           ]
         },
         {
-          "type": "parent",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "zu Dürn"
           ],
+          "type": "parent",
           "of": "engelhard_son_of_vogt_zu_Durn"
         },
         {
-          "type": "parent",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "zu Dürn"
           ],
+          "type": "parent",
           "of": "Hermann von Rosenberg"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "generic",
           "content": "received royal subjects from his father."
         },
         {
-          "type": "generic",
           "person": "engelhard_son_of_vogt_zu_Durn",
+          "type": "generic",
           "content": "received royal subjects from his father."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "generic",
           "content": "received royal subjects from his father."
         },
         {
-          "type": "generic",
           "person": "Hermann von Rosenberg",
+          "type": "generic",
           "content": "received royal subjects from his father."
         }
       ]

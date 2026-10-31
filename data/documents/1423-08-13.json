@@ -12,18 +12,18 @@
       "english": "Eberhard von Balzhofen and his wife Margret von Rosenberg sell an annuity of 10 pounds Heller in Heidelberg currency, which they hold at Walheim, to the prebend of St. John and St. Catherine in Hohenhaslach for 100 florins.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Margret von Rosenberg",
+          "type": "spouse",
           "of": "Eberhard von Balzhofen"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Balzhofen",
+          "type": "generic",
           "content": "sold an annuity held at Walheim to the prebend of St. John and St. Catherine in Hohenhaslach together with his wife Margret von Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Margret von Rosenberg",
+          "type": "generic",
           "content": "sold an annuity held at Walheim to the prebend of St. John and St. Catherine in Hohenhaslach together with her husband Eberhard von Balzhofen."
         }
       ],

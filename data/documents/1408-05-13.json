@@ -12,32 +12,32 @@
       "english": "Hans von Dottenheim, Edelknecht, his wife Margaretha von Rosenberg, and his brother Götz donate specified rents and dues at Steinfeld, Unter-Leinach, and Greußenheim to Bronnbach Abbey. Sealers: Hans von Dottenheim; his wife Margaretha von Rosenberg; his brother Götz von Dottenheim; and Hans, Eberhard, and Wilhelm von Dottenheim. Dated 13 May 1408.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Margaretha von Rosenberg",
+          "type": "spouse",
           "of": "Hans von Dottenheim",
           "ofTitle": [
             "Edelknecht"
           ]
         },
         {
-          "type": "sibling",
           "person": "Götz von Dottenheim",
+          "type": "sibling",
           "of": "Hans von Dottenheim",
           "ofTitle": [
             "Edelknecht"
           ]
         },
         {
-          "type": "generic",
           "person": "Hans von Dottenheim",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "generic",
           "content": "jointly donated specified rents and dues at Steinfeld, Unter-Leinach, and Greußenheim to Bronnbach Abbey with his wife Margaretha von Rosenberg and his brother Götz von Dottenheim."
         },
         {
-          "type": "generic",
           "person": "Margaretha von Rosenberg",
+          "type": "generic",
           "content": "sealed the donation."
         }
       ],

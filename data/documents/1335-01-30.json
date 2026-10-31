@@ -12,11 +12,11 @@
       "english": "Konrad von Gebsattel, Edelknecht and his wife Mechthild, resident in Königheim, their sons Hermann and Gotfried, and their other siblings and co-heirs sell an annual rent of 3 pounds Heller and 6 Shrovetide hens from six properties and their farm in Königheim to Dean Heilmann Schwab and the chapter of Aschaffenburg Abbey. To guarantee the customary warranty, they name the parish priest of Königheim, Kraft [During], and Kraft von Uissigheim, Edelknecht, and Hermann Seman von Königheim, Edelknecht, as guarantors. The guarantors undertake the guarantee and agree to stay under pledge at a public inn in Tauberbischofsheim if the warranty is not fulfilled after they are called upon.",
       "facts": [
         {
-          "type": "generic",
           "person": "Kraft von Uissigheim",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "generic",
           "content": "served as guarantor for Konrad von Gebsattel, Mechthild, and their co-heirs in their sale of an annual rent from properties in Königheim to Aschaffenburg Abbey."
         }
       ],

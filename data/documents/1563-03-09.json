@@ -8,11 +8,11 @@
       "english": "Albrecht von Rosenberg, Ritter, and five other Ritter arbitrated an inheritance dispute involving heirs of the Seckendorff, Thüngen, and Adelsheim families.",
       "facts": [
         {
-          "type": "generic",
           "person": "Albrecht von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "arbitrated an inheritance dispute among heirs of the Seckendorff, Thüngen, and Adelsheim families together with five other knights."
         }
       ]

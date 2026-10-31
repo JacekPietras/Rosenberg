@@ -8,18 +8,18 @@
       "english": "Konrad von Rosenberg, Vitztum zu Amberg, gives Abbot Konrad of Kastel a letter about the judgment of the Landschranne of Amberg, in which the monastery is awarded a rent of 5 ß Reg. d against Wirnher, the Kegelhaimer of Vilshof(1), as well as the large and small tithes from the farm in Hüllach(2), as long as this farm pays 1 d or more to the Kegelhaimer. Right of attachment for the abbot or his bailiff.\n\nSeal of the district court.",
       "facts": [
         {
-          "type": "title",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vitzthum zu Amberg"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Amberg"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "type": "generic",
           "content": "issued the abbot a letter with the district court seal recording the Landschranne’s judgment at Amberg."
         }
       ]

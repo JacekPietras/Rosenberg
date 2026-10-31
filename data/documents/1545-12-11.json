@@ -8,53 +8,53 @@
       "english": "Michael von Rosenberg, including hearings and justice, after he compared with the Elector of Elector Frederick II of the Palatinate by especially a treaty about it, comes to the Elector, Michael von Rosenberg, already inherited by his father Jörg from his cousin Hans, Hans Melchior and Hans Ulrich von Rosenberg, after he has compared himself with Elector Frederick II of the Palatinate by about it and renounces all his right.",
       "facts": [
         {
-          "type": "title",
           "person": "Friedrich II. von der Pfalz",
           "personTitle": [
             "Kurfürst"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Michael von Rosenberg",
+          "type": "generic",
           "content": "ceded his share in the old family fief of Boxberg, including the castle, town, appurtenances, and rights, to Elector Friedrich II of the Palatinate."
         },
         {
-          "type": "generic",
           "person": "Michael von Rosenberg",
+          "type": "generic",
           "content": "reached a separate agreement with Elector Friedrich II of the Palatinate concerning the share."
         },
         {
-          "type": "generic",
           "person": "Michael von Rosenberg",
+          "type": "generic",
           "content": "renounced all his rights to the share."
         },
         {
-          "type": "parent",
           "person": "Jörg von Rosenberg",
+          "type": "parent",
           "of": "Michael von Rosenberg"
         },
         {
-          "type": "kin",
           "person": "Hans Thomas von Rosenberg",
+          "type": "kin",
           "of": "Jörg von Rosenberg",
           "term": "Vetter"
         },
         {
-          "type": "kin",
           "person": "Hans Melchior von Rosenberg",
-          "of": "Jörg von Rosenberg",
-          "term": "Vetter"
-        },
-        {
           "type": "kin",
-          "person": "Hans Ulrich von Rosenberg",
           "of": "Jörg von Rosenberg",
           "term": "Vetter"
         },
         {
-          "type": "generic",
+          "person": "Hans Ulrich von Rosenberg",
+          "type": "kin",
+          "of": "Jörg von Rosenberg",
+          "term": "Vetter"
+        },
+        {
           "person": "Jörg von Rosenberg",
+          "type": "generic",
           "content": "inherited a share in the old family fief of Boxberg, including the castle, town, appurtenances, and rights, from his cousins Hans Thomas, Hans Melchior, and Hans Ulrich von Rosenberg."
         }
       ],

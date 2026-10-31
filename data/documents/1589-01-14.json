@@ -8,64 +8,64 @@
       "english": "The named guarantors and advisers conclude a marriage agreement for Hans Georg, son of Hans Ludwig von Seckendorff and Ursula née von Adoltzheim, and Brigitta, daughter of the late spouses Zeisolf von Rosenberg and Anna née von der Kehre. Konrad von Rosenberg of Külzheim and Schüpf is among the guardians; Albrecht Christoph von Rosenberg zu Rosenberg of Waldmannshofen and Georg Sigmund von Rosenberg of Haltenbergstetten are among Brigitta’s advisers. The agreement sets out the bride’s dowry and trousseau, the groom’s counter-dowry and morning gift, the widow’s jointure and residence, and inheritance provisions. The listed men seal the agreement.",
       "facts": [
         {
-          "type": "parent",
           "person": "Zeisolf von Rosenberg",
           "personTitle": [
             "zu Knetzheim und Haltenbergstetten"
           ],
-          "of": "Brigitta von Rosenberg",
-          "personDeceased": true
-        },
-        {
-          "type": "parent",
-          "person": "Anna von der Kehre",
-          "of": "Brigitta von Rosenberg",
-          "personDeceased": true
-        },
-        {
-          "type": "spouse",
-          "person": "Zeisolf von Rosenberg",
-          "personTitle": [
-            "zu Knetzheim und Haltenbergstetten"
-          ],
-          "of": "Anna von der Kehre",
           "personDeceased": true,
+          "type": "parent",
+          "of": "Brigitta von Rosenberg"
+        },
+        {
+          "person": "Anna von der Kehre",
+          "personDeceased": true,
+          "type": "parent",
+          "of": "Brigitta von Rosenberg"
+        },
+        {
+          "person": "Zeisolf von Rosenberg",
+          "personTitle": [
+            "zu Knetzheim und Haltenbergstetten"
+          ],
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "Anna von der Kehre",
           "ofDeceased": true
         },
         {
-          "type": "death",
           "person": "Zeisolf von Rosenberg zu Knetzheim und Haltenbergstetten",
-          "diedBefore": "1589-01-15"
-        },
-        {
           "type": "death",
-          "person": "Anna von der Kehre",
           "diedBefore": "1589-01-15"
         },
         {
-          "type": "generic",
+          "person": "Anna von der Kehre",
+          "type": "death",
+          "diedBefore": "1589-01-15"
+        },
+        {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "zu Külzheim",
             "zu Schüpf"
           ],
+          "type": "generic",
           "content": "served as a guardian for Hans Georg von Seckendorff in his marriage agreement."
         },
         {
-          "type": "generic",
           "person": "Albrecht Christoph von Rosenberg",
           "personTitle": [
             "zu Waldmannshofen",
             "zu Rosenberg"
           ],
+          "type": "generic",
           "content": "advised Brigitta von Rosenberg in her marriage agreement."
         },
         {
-          "type": "generic",
           "person": "Georg Sigmund von Rosenberg",
           "personTitle": [
             "zu Haltenbergstetten"
           ],
+          "type": "generic",
           "content": "advised Brigitta von Rosenberg in her marriage agreement."
         }
       ]

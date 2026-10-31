@@ -12,31 +12,31 @@
       "english": "Konrad von Rosenberg and his wife Elichin von Riedern renounce all inheritance claims on the Riedern side after receiving a marriage portion and dowry from her father, Philipp der Ältere von Riedern. Sealers: the issuers, Friedrich von Rosenberg, and Philipp der Jüngere von Riedern. Dated 2 June 1477.",
       "facts": [
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
+          "type": "generic",
           "content": "renounced inheritance claims from the von Riedern family together with his wife Elichin von Riedern after they received her marriage portion and dowry from her father Philipp der Ältere von Riedern."
         },
         {
-          "type": "spouse",
           "person": "Elichin von Riedern",
+          "type": "spouse",
           "of": "Konrad von Rosenberg"
         },
         {
-          "type": "parent",
           "person": "Philipp von Riedern",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "parent",
           "of": "Elichin von Riedern"
         },
         {
-          "type": "generic",
           "person": "Elichin von Riedern",
+          "type": "generic",
           "content": "sealed the renunciation as one of the issuers."
         },
         {
-          "type": "generic",
           "person": "Friedrich von Rosenberg",
+          "type": "generic",
           "content": "sealed the renunciation."
         }
       ],

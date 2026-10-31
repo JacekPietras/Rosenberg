@@ -8,11 +8,11 @@
       "english": "Wiprecht von Riedern, Bailli of the Hospitaller Houses in Franconia, and the aforementioned Commanders of the Franconian Hospitaller Houses declare that after long refusal, Konrad von Brunsberg, Master of the Hospitaller Order in German lands, agreed to the sale of Boxberg and hung his seal next to theirs on the relevant sales document.",
       "facts": [
         {
-          "type": "generic",
           "person": "Konrad von Brunsberg",
           "personTitle": [
             "Johanniter-Ordensmeister in deutschen Landen"
           ],
+          "type": "generic",
           "content": "consented to the sale of Boxberg after a long refusal."
         }
       ],

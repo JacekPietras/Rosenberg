@@ -264,7 +264,14 @@ class Validator:
                 allowed.add('personDeceased')
                 required.add('personTitle')
             elif kind == 'generic':
-                allowed |= {'content', 'personDeceased'}
+                allowed |= {'content', 'personDeceased', 'subject'}
+                required.discard('person')
+                if ('person' in fact) == ('subject' in fact):
+                    self.report(location, 'generic facts require exactly one of person or subject')
+                if 'subject' in fact:
+                    allowed -= {'personTitle', 'personDeceased'}
+                    if not self.nonblank(fact['subject']):
+                        self.report(location + '/subject', 'expected a non-empty non-person subject string')
                 required.add('content')
                 if 'content' in fact:
                     if not self.nonblank(fact['content']):
@@ -366,17 +373,58 @@ def collect_paths(paths, validator):
     return sorted(files)
 
 
+def clean_facts(path, validator):
+    if path.resolve() == (validator.root / 'data/tree.json').resolve():
+        return
+    original = path.read_text(encoding='utf-8')
+    document = json.loads(original)
+
+    def clean(value):
+        if isinstance(value, dict):
+            if value.get('facts') == []:
+                del value['facts']
+            for field in ('facts', 'guesses'):
+                for fact in value.get(field, []) if isinstance(value.get(field), list) else []:
+                    if isinstance(fact, dict):
+                        order = ('subject', 'person', 'personTitle', 'personDeceased', 'type', 'of', 'ofTitle', 'ofDeceased')
+                        reordered = {key: fact[key] for key in order if key in fact}
+                        reordered.update((key, item) for key, item in fact.items() if key not in reordered and key != 'date')
+                        if 'date' in fact:
+                            reordered['date'] = fact['date']
+                        fact.clear()
+                        fact.update(reordered)
+            for child in value.values():
+                clean(child)
+        elif isinstance(value, list):
+            for child in value:
+                clean(child)
+
+    canonical = json.dumps(document, ensure_ascii=False, indent=2) + '\n'
+    clean(document)
+    updated = json.dumps(document, ensure_ascii=False, indent=2) + '\n'
+    if updated != canonical:
+        if original != canonical:
+            validator.report(path, 'cannot clean facts in nonstandard JSON formatting')
+        else:
+            path.write_text(updated, encoding='utf-8')
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('paths', nargs='*', type=Path, help='JSON files or directories (default: repository data/)')
     parser.add_argument('--people', type=Path, default=ROOT / 'data/people.json', help='person registry JSON')
     parser.add_argument('--strict-migration', action='store_true', help='compatibility option; all facts and guesses already require typed objects and historical dates')
     args = parser.parse_args(argv)
-    from migrate_von_und_zu import main as migrate_von_und_zu
-    migrate_von_und_zu([*(str(path) for path in args.paths), '--apply'])
     validator = Validator(args.strict_migration)
     validator.load_people(args.people.resolve())
-    for path in collect_paths(args.paths or [ROOT / 'data'], validator):
+    # Report unreadable inputs before migration, which assumes parseable JSON.
+    paths = [path for path in collect_paths(args.paths or [ROOT / 'data'], validator)
+             if validator.read_json(path) is not MISSING]
+    if paths:
+        from migrate_von_und_zu import main as migrate_von_und_zu
+        migrate_von_und_zu([*(str(path) for path in paths), '--apply'])
+    for path in paths:
+        clean_facts(path, validator)
         validator.validate_file(path)
     for diagnostic in sorted(validator.diagnostics):
         print(diagnostic)

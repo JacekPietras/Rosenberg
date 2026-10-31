@@ -11,8 +11,8 @@
       "english": "Eberhard von Rosenberg, resident of Jagstberg: sum owed.",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "was resident at Jagstberg."
         }
       ],

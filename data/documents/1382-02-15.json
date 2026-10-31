@@ -11,52 +11,52 @@
       "english": "Eberhard von Rosenberg der Alte, and Anna, his wife, sold tithes, goods, and interest in Wagenbuch, Höhefeld, and Lindelbach to the Bronnbach Monastery for 80 guilders.\n\nSeal: Eberhard von Rosenberg der Ältere; Anna, his wife; Knebel von Huesen, surety; Fritz Stetenberg, surety; Peter Stetenberg, Fritz's brother, surety",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "sold the named tithes, goods, and rents at Wagenbuch, Höhefeld, and Lindelbach to Bronnbach Monastery jointly with his wife Anna.",
           "personTitle": [
             "der Alte"
-          ]
+          ],
+          "type": "generic",
+          "content": "sold the named tithes, goods, and rents at Wagenbuch, Höhefeld, and Lindelbach to Bronnbach Monastery jointly with his wife Anna."
         },
         {
-          "type": "spouse",
           "person": "Anna",
+          "type": "spouse",
           "of": "Eberhard von Rosenberg",
           "ofTitle": [
             "der Alte"
           ]
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "sealed the sale deed.",
           "personTitle": [
             "der Alte"
-          ]
-        },
-        {
+          ],
           "type": "generic",
-          "person": "Anna",
           "content": "sealed the sale deed."
         },
         {
+          "person": "Anna",
           "type": "generic",
+          "content": "sealed the sale deed."
+        },
+        {
           "person": "Knebel von Huesen",
-          "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
-        },
-        {
           "type": "generic",
-          "person": "Fritz Stetenberg",
           "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
         },
         {
-          "type": "sibling",
+          "person": "Fritz Stetenberg",
+          "type": "generic",
+          "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
+        },
+        {
           "person": "Peter Stetenberg",
+          "type": "sibling",
           "of": "Fritz Stetenberg"
         },
         {
-          "type": "generic",
           "person": "Peter Stetenberg",
+          "type": "generic",
           "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
         }
       ],

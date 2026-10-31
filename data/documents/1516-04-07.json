@@ -8,40 +8,40 @@
       "english": "Batt Horneck von Hornberg, Amtmann zu Darmstadt, and Georg von Rosenberg, Vogt zu Heidelberg, make a comparison between the Teuture Order Mergentheim (Komtur Hans Nothaft) and the Rosenberg brothers about the marrow division to Boxberg, Wölchingen and Bobstadt, as well as over the Wald called the Hesbach and other neighbouring points of dispute.",
       "facts": [
         {
-          "type": "title",
           "person": "Georg von Rosenberg",
           "personTitle": [
             "Vogt zu Heidelberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "title",
           "person": "Batt Horneck von Hornberg",
           "personTitle": [
             "Amtmann zu Darmstadt"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "title",
           "person": "Hans Nothaft",
           "personTitle": [
             "Komtur der Deutsch-Ordens-Kommende Mergentheim"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Georg von Rosenberg",
           "personTitle": [
             "Vogt zu Heidelberg"
           ],
+          "type": "generic",
           "content": "settled disputes between the Mergentheim commandery of the Teutonic Order and the Rosenberg brothers concerning boundaries at Boxberg, Wölchingen, and Bobstadt, the Hesbach forest, and other neighboring matters jointly with Batt Horneck von Hornberg."
         },
         {
-          "type": "generic",
           "person": "Batt Horneck von Hornberg",
           "personTitle": [
             "Amtmann zu Darmstadt"
           ],
+          "type": "generic",
           "content": "settled disputes between the Mergentheim commandery of the Teutonic Order and the Rosenberg brothers concerning boundaries at Boxberg, Wölchingen, and Bobstadt, the Hesbach forest, and other neighboring matters jointly with Georg von Rosenberg."
         }
       ],

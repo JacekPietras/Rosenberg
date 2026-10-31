@@ -11,45 +11,45 @@
       "english": "Heinrich von Slytez der Junge, Ritter; Erwin, son of the late Lord Erwin vom Buchez, Ritter; and Carl, son of Lord Wigand von Buchez, Ritter, vow to their Lord, Bishop H. Otto of Würzburg, to invest 300 pounds of Heller in a castle estate within a year's time, and also to give one hundred pounds of Heller to the provost at Wehtersvinkel to compensate for the damage to the citizens of Meiningen.  Guarantors: The honorable and steadfast men Lord Konrad von Bikenbach; Lord Eberhard von Rosenberg, vogt at Dürn; Lord Wyldrich von Vylmer, viztame at Aschaffenburg; Lord Fritz Schellritze; Lord Engelhard von Rosenberg, son of the aforementioned Lord Eberhard; Lord Cyse von Hune; Lord Drabot von Steyna; Lord Heinrich von der Tanne, called von Bischoffsheim, Ritter; Berthold von Weyers, Edelknecht, and Ludwig von Romrode, Edelknecht. Given on the next Tuesday before St. Giles' Day. (Citation: c. S.)",
       "facts": [
         {
-          "type": "title",
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Vogt zu Dürn"
-          ]
-        },
-        {
-          "type": "parent",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "title"
+        },
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "parent",
           "of": "engelhard_son_of_vogt_zu_Durn",
           "ofTitle": [
             "Ritter"
           ]
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "generic",
           "content": "served as surety for Bishop Otto of Würzburg regarding damages at Meiningen."
         },
         {
-          "type": "generic",
           "person": "engelhard_son_of_vogt_zu_Durn",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "served as surety for Bishop Otto of Würzburg regarding damages at Meiningen."
         },
         {
-          "type": "title",
           "person": "engelhard_son_of_vogt_zu_Durn",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "title"
         }
       ]
     }

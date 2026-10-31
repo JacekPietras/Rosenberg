@@ -11,27 +11,27 @@
       "english": "Count Rudolf von Wertheim gives his consent to Eberhard von Rosenberg, called von Zimmern, exchanging his tithes from \"Wulfingsloch\", which are held as a fief by the Count of Wertheim, for a vineyard in Hochhausen to the abbot and convent of the monastery in Bronnbach. On the back: \"Hochhausen. Exchange of vineyards, which the monastery gave in return for tithes in Wolfingsloch to Eberhard von Rosenberg with the consent of Count Rudolf of Wertheim, who had given this tithe in fee to the said Rosenberg, in the year 1340\"",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "genannt von Zimmern"
           ],
+          "type": "generic",
           "content": "held the tithe at Wulfingsloch as a fief from the Count of Wertheim."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "genannt von Zimmern"
           ],
+          "type": "generic",
           "content": "exchanged the tithe at Wulfingsloch for a vineyard at Hochhausen."
         },
         {
-          "type": "generic",
           "person": "Rudolf von Wertheim",
           "personTitle": [
             "Graf"
           ],
+          "type": "generic",
           "content": "consented to Eberhard von Rosenberg’s exchange of the tithe at Wulfingsloch for a vineyard at Hochhausen."
         }
       ],

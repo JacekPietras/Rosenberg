@@ -8,27 +8,27 @@
       "english": "Konrad the Lengenvelder von Rosenberg, with the consent of his wife Jeute, sold his farm in Pfeffershoven(1) to Abbot Herman of Chastel for 145 pounds h as free property. Guarantors with obligation to perform in Sultzbach or Chastel: H. Rüdger the Smid of Pfaffenhoven, cousin of the issuer; H. Heinrich the Truchsezz of Holnstain; Fridrich the Franch von Rosenberg, uncle of the issuer; Wernher the Kegelhaimer; Hartung the Swepferman of Pfaffenhoven. Ms.: the guarantors.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "der Lengenvelder"
           ],
+          "type": "spouse",
           "of": "Jeute"
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "sold his farm at Pfeffershoven to Abbot Herman of Kastl with his wife’s consent.",
           "personTitle": [
             "der Lengenvelder"
-          ]
+          ],
+          "type": "generic",
+          "content": "sold his farm at Pfeffershoven to Abbot Herman of Kastl with his wife’s consent."
         },
         {
-          "type": "kin",
           "person": "Friedrich von Rosenberg",
           "personTitle": [
             "der Franch"
           ],
+          "type": "kin",
           "of": "Konrad von Rosenberg",
           "ofTitle": [
             "der Lengenvelder"
@@ -36,11 +36,11 @@
           "term": "Oheim"
         },
         {
-          "type": "kin",
           "person": "Rüdger von Pfaffenhoven",
           "personTitle": [
             "der Smid"
           ],
+          "type": "kin",
           "of": "Konrad von Rosenberg",
           "ofTitle": [
             "der Lengenvelder"

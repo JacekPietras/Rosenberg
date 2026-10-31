@@ -9,79 +9,79 @@
       "english": "Wilhelm von Rechberg zu Hohenrechberg, Ritter, Hofmeister, Wiprecht von Helmstadt der Ältere, Ritter, and Hans von Rotenhan, and Eberhard Rüdt (von Collenberg), Burggraf zu Miltenberg, declare that they have concluded a marriage agreement between Ulrich von Rosenberg, son of Arnold, and Anna von Kronberg, daughter of the late Walther, with the stipulation that the marriage should take place after Anna reaches the age of 15. Frank der Jüngere von Kronberg is to give his brother's daughter 3,000 guilders in Frankfurt currency from her paternal inheritance, which Ulrich is to repay with the same amount. Anne is to retain her right to the 2,000 guilders assigned to Margerethe von Hirschhorn, Anna's mother, in Heppenheim, and to the 2,400 guilders that accrued to her from her brothers, Hans and Philipp von Hirschhorn, from their paternal and maternal inheritances.",
       "facts": [
         {
-          "type": "generic",
           "person": "Ulrich von Rosenberg",
+          "type": "generic",
           "content": "entered into a marriage agreement with Anna von Kronberg."
         },
         {
-          "type": "parent",
           "person": "arnold_boxberg",
+          "type": "parent",
           "of": "Ulrich von Rosenberg"
         },
         {
-          "type": "parent",
           "person": "Walther von Kronberg",
           "personDeceased": true,
+          "type": "parent",
           "of": "Anna von Kronberg"
         },
         {
-          "type": "death",
           "person": "Walther von Kronberg",
+          "type": "death",
           "diedBefore": "1438-06-24"
         },
         {
-          "type": "generic",
           "person": "Anna von Kronberg",
+          "type": "generic",
           "content": "was to have the marriage with Ulrich von Rosenberg take place after she reached the age of 15."
         },
         {
-          "type": "generic",
           "person": "Wilhelm von Rechberg",
           "personTitle": [
             "zu Hohenrechberg",
             "Hofmeister",
             "Ritter"
           ],
+          "type": "generic",
           "content": "attested the marriage agreement between Ulrich von Rosenberg and Anna von Kronberg."
         },
         {
-          "type": "generic",
           "person": "Wiprecht von Helmstadt",
           "personTitle": [
             "der Ältere",
             "Ritter"
           ],
-          "content": "attested the marriage agreement between Ulrich von Rosenberg and Anna von Kronberg."
-        },
-        {
           "type": "generic",
-          "person": "Hans von Rotenhan",
           "content": "attested the marriage agreement between Ulrich von Rosenberg and Anna von Kronberg."
         },
         {
-          "type": "title",
+          "person": "Hans von Rotenhan",
+          "type": "generic",
+          "content": "attested the marriage agreement between Ulrich von Rosenberg and Anna von Kronberg."
+        },
+        {
           "person": "Eberhard Rüdt von Collenberg",
           "personTitle": [
             "Burggraf zu Miltenberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Eberhard Rüdt von Collenberg",
+          "type": "generic",
           "content": "attested the marriage agreement between Ulrich von Rosenberg and Anna von Kronberg."
         },
         {
-          "type": "sibling",
           "person": "Frank von Kronberg",
           "personTitle": [
             "der Jüngere"
           ],
+          "type": "sibling",
           "of": "Walther von Kronberg",
           "ofDeceased": true
         },
         {
-          "type": "kin",
           "person": "Anna von Kronberg",
+          "type": "kin",
           "of": "Frank von Kronberg",
           "ofTitle": [
             "der Jüngere"
@@ -89,18 +89,18 @@
           "term": "Bruderstochter"
         },
         {
-          "type": "parent",
           "person": "Margerethe von Hirschhorn",
+          "type": "parent",
           "of": "Anna von Kronberg"
         },
         {
-          "type": "sibling",
           "person": "Hans von Hirschhorn",
+          "type": "sibling",
           "of": "Margerethe von Hirschhorn"
         },
         {
-          "type": "sibling",
           "person": "Philipp von Hirschhorn",
+          "type": "sibling",
           "of": "Margerethe von Hirschhorn"
         }
       ]

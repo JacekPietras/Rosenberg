@@ -8,79 +8,79 @@
       "english": "Arnold von Rosenberg, Edelknecht, sold his share of Boxberg to his brother Eberhard for 600 guilders with the approval of the Count Palatine.\n\nCo-sealers: Konrad von Rosenberg, Viztame of Heidelberg, and Claus von Rosenberg.\n\nZeitschrift für die Geschichte des Oberrheins. 24. 1872\n\nArnold von Rosenberg, Edelknecht, and Elisabeth, his wife, sell their share of Boxberg, with the approval of their feudal lord, Count Palatine Ruprecht der Ältere, for 6000 guilders to Arnold's brother, Eberhard von Rosenberg. Given in 1387 on the holy day of Pentecost.  Original on parchment with 5 seals: [those] of the two issuers, of Konrad von Rosenberg, Viztame at Heidelberg, and of Hans von Rosenberg.",
       "facts": [
         {
-          "type": "title",
           "person": "arnold_brother_of_vogt_zu_Lauda",
           "personTitle": [
             "Edelknecht"
-          ]
+          ],
+          "type": "title"
         },
         {
+          "person": "arnold_brother_of_vogt_zu_Lauda",
+          "personTitle": [
+            "Edelknecht"
+          ],
           "type": "generic",
-          "person": "arnold_brother_of_vogt_zu_Lauda",
-          "content": "sold his share of Boxberg to his brother [vogt_zu_Lauda].",
-          "personTitle": [
-            "Edelknecht"
-          ]
+          "content": "sold his share of Boxberg to his brother [vogt_zu_Lauda]."
         },
         {
-          "type": "spouse",
           "person": "else_wife_of_arnold",
+          "type": "spouse",
           "of": "arnold_brother_of_vogt_zu_Lauda",
           "ofTitle": [
             "Edelknecht"
           ]
         },
         {
-          "type": "generic",
           "person": "else_wife_of_arnold",
+          "type": "generic",
           "content": "joined her husband [arnold_brother_of_vogt_zu_Lauda] in selling their share of Boxberg to his brother [vogt_zu_Lauda]."
         },
         {
-          "type": "sibling",
           "person": "vogt_zu_Lauda",
+          "type": "sibling",
           "of": "arnold_brother_of_vogt_zu_Lauda",
           "ofTitle": [
             "Edelknecht"
           ]
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Lauda",
+          "type": "generic",
           "content": "purchased his brother [arnold_brother_of_vogt_zu_Lauda]’s share of Boxberg."
         },
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitztum zu Heidelberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "served as a co-sealer for the sale of Boxberg.",
           "personTitle": [
             "Vitztum zu Heidelberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "served as a co-sealer for the sale of Boxberg."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
+          "type": "generic",
           "content": "served as a co-sealer for the sale of Boxberg."
         },
         {
-          "type": "generic",
           "person": "Claus von Rosenberg",
+          "type": "generic",
           "content": "served as a co-sealer for the sale of Boxberg."
         },
         {
-          "type": "generic",
           "person": "Ruprecht",
-          "content": "approved the sale of Boxberg as its feudal lord.",
           "personTitle": [
             "Pfalzgraf",
             "der Ältere"
-          ]
+          ],
+          "type": "generic",
+          "content": "approved the sale of Boxberg as its feudal lord."
         }
       ]
     }

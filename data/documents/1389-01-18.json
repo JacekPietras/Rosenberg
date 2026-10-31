@@ -8,70 +8,70 @@
       "english": "Thame Knebel, Ritter, and his wife Kunigunde and Elisabeth von Erligheim, widow of Eberhard von Rosenberg, confirm that Archbishop Adolf of Mainz has reached an agreement with them regarding their share of the pledge on the archbishop's Bensheim Castle. L(ite)ra ex p(ar)te Heinrici de Erligheim milit(is) cone(n) p(ar)tis sive in Bensheim - Erleckheim Bensheim [a] Thame Knebel, Ritter, mayor of Oppenheim, his wife Kunigunde, and Elisabeth von Erligheim, widow of Eberhard von Rosenberg, confirm that Archbishop Adolf of Mainz, Archchancellor of the Holy Roman Empire in German Lands, has reached an amicable agreement with them regarding their share of the pledge of the archiepiscopal palace (sloße) in Bensheim. Their deceased cousin, Heinrich von Erligheim, Ritter, had taken it as collateral from the archbishop for 4,000 guilders. They are entitled to inheritance shares and rents totaling 1,000 guilders. The archbishop paid them this money. They hereby release the people of Mainz and the community of Bensheim from all claims within the scope of the pledge. Thame and Elisabeth also announce their seals on behalf of their heirs. Kunigunde asks Peter von Bechtolsheim, Ritter, called Burggrave, and Frau Elisabeth asks her brother-in-law Arnold von Rosenberg to affix their seals to the deed to confirm what they promise. - The surrender is the following day after sente Anthony's day 1389",
       "facts": [
         {
-          "type": "spouse",
           "person": "Elisabeth von Erligheim",
+          "type": "spouse",
           "of": "vogt_zu_Lauda",
           "ofDeceased": true
         },
         {
-          "type": "death",
           "person": "vogt_zu_Lauda",
+          "type": "death",
           "diedBefore": "1389-01-19"
         },
         {
-          "type": "title",
-          "person": "Heinrich von Erligheim",
-          "personTitle": [
-            "Ritter"
-          ],
-          "personDeceased": true
-        },
-        {
-          "type": "kin",
           "person": "Heinrich von Erligheim",
           "personTitle": [
             "Ritter"
           ],
           "personDeceased": true,
+          "type": "title"
+        },
+        {
+          "person": "Heinrich von Erligheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "personDeceased": true,
+          "type": "kin",
           "of": "Elisabeth von Erligheim",
           "term": "Vetter"
         },
         {
-          "type": "death",
           "person": "Heinrich von Erligheim",
+          "type": "death",
           "diedBefore": "1389-01-19"
         },
         {
-          "type": "generic",
           "person": "Heinrich von Erligheim",
-          "content": "had taken Bensheim Castle as a pledge from Archbishop Adolf von Mainz.",
           "personTitle": [
             "Ritter"
           ],
-          "personDeceased": true
+          "personDeceased": true,
+          "type": "generic",
+          "content": "had taken Bensheim Castle as a pledge from Archbishop Adolf von Mainz."
         },
         {
-          "type": "kin",
           "person": "arnold_brother_of_vogt_zu_Lauda",
+          "type": "kin",
           "of": "Elisabeth von Erligheim",
           "term": "Schwager"
         },
         {
-          "type": "generic",
           "person": "Elisabeth von Erligheim",
+          "type": "generic",
           "content": "was paid her inherited share and rents from the pledge on Bensheim Castle by Archbishop Adolf von Mainz."
         },
         {
-          "type": "title",
           "person": "Thame Knebel",
           "personTitle": [
             "Ritter",
             "Schultheiß in Oppenheim"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "spouse",
           "person": "Kunigunde",
+          "type": "spouse",
           "of": "Thame Knebel",
           "ofTitle": [
             "Ritter",

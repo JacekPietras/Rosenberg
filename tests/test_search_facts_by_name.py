@@ -56,6 +56,12 @@ class SearchFactsTests(unittest.TestCase):
             self.assertIn('Arnold von Rosenberg [known_arnold], Ritter, zu Boxberg (deceased) held property at Boxberg.', output)
         self.assertEqual('No matching facts found.\n', self.run_search('other_arnold', direct=True))
 
+    def test_non_person_subject_is_searchable_without_person_reference(self):
+        self.write('documents/castle.json', self.document({
+            'type': 'generic', 'subject': 'Boxberg Castle', 'content': 'was attacked.'}))
+        self.assertIn('Boxberg Castle was attacked.', self.run_search('Boxberg'))
+        self.assertEqual('No matching facts found.\n', self.run_search('known_arnold', direct=True))
+
     def test_render_all_supported_types_and_title_lists(self):
         facts = [
             {'type': kind, 'person': 'known_arnold', 'personTitle': ['der Jüngere', 'Ritter'],

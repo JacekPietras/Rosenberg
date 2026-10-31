@@ -8,18 +8,18 @@
       "english": "An account of the expenses of the knight Eberhard von Rosenberg on the business of Baldwin, the provisor of the Church of Mainz, at Amöneburg, Geismar, and Fritzlar. Done on the Saturday before [the feast of Saint] Margaret.",
       "facts": [
         {
-          "type": "title",
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "incurred expenses on Balduin’s business at Amöneburg, Geismar, and Fritzlar."
         }
       ]

@@ -8,42 +8,42 @@
       "english": "Albrecht Göler von Ravensburg, Gerhard von Angelbach, and Rabe von Helmstadt for his daughter-in-law Wiprecht von Helmstadt on the one hand, and Ulrich Satzkern, Werner Rost, and Berthold von Massenbach for Hans Sturmfeder and Eberhard von Rosenberg, Ritter on the other, render the following verdicts as arbitrators: 1) The inheritance and debts of Eberhard Hofwart and his wife are to be divided between the parties, 2) The parties must settle their dispute regarding the fiefdoms before the competent fiefdom lords, 3) The dispute must be settled before the Würzburg Regional Court.",
       "facts": [
         {
-          "type": "title",
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "was represented in the arbitration by Ulrich Satzkern, Werner Rost, and Berthold von Massenbach, alongside Hans Sturmfeder."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "was a party to an arbitration in which the arbitrators ordered Eberhard Hofwart’s inheritance and debts to be divided between the parties."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "was involved in a dispute over fiefs that the arbitrators directed the parties to take before the competent feudal lords."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "was involved in a dispute before the Würzburg regional court that the arbitrators directed the parties to pursue there."
         }
       ]

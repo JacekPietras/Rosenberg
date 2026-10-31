@@ -11,46 +11,46 @@
       "english": "Eberhard von Rosenberg, Vogt zu Dürn, Hans, Domherr zu Würzburg, Eberhard and Engelhard, the former's sons, sold various rents and dues from their properties in Uissigheim, Dienstadt, Brehmen, Sindolsheim, and the Eulschirbenmühle to Bronnbach Monastery for 184 pounds of Heller.\n\nSeal Holders: Eberhard, Vogt zu Dürn, Issuer; Eberhard and Engelhard von Rosenberg; Erkinger von Uissigheim, Ritter; Friedrich; Eberhard called von Rannenberg in Uissigheim; Eberhard von Rosenberg; Ludwig called Mönch. Seal Description: Seal on parchment strips, those of Friedrich and Ludwig called Mönch are missing. Notes: On the reverse: \"I buy goods for Eberhard, the lawyer in Durn. (!)\". Next to it: \"Üssigheim, Aulschirben Mühl, Dienstatt, Brehmen, Sindolzheim. Purchase deed for various rents and gradients in the above-mentioned places sold by the first von Rosenberg to the Cl",
       "facts": [
         {
-          "type": "title",
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Vogt zu Dürn"
-          ]
-        },
-        {
-          "type": "parent",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "title"
+        },
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "parent",
           "of": "hans_domherr_zu_wurzburg",
           "ofTitle": [
             "Domherr zu Würzburg"
           ]
         },
         {
-          "type": "parent",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "parent",
           "of": "Eberhard von Rosenberg"
         },
         {
-          "type": "parent",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "parent",
           "of": "engelhard_son_of_vogt_zu_Durn"
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "sold various rents and dues from properties in Uissigheim, Dienstadt, Brehmen, Sindolsheim, and at the Eulschirbenmühle to Bronnbach Abbey.",
           "personTitle": [
             "Vogt zu Dürn"
-          ]
+          ],
+          "type": "generic",
+          "content": "sold various rents and dues from properties in Uissigheim, Dienstadt, Brehmen, Sindolsheim, and at the Eulschirbenmühle to Bronnbach Abbey."
         }
       ],
       "img": [

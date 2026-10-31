@@ -9,18 +9,18 @@
       "english": "King Ruprecht allows the brothers Arnold and Eberhard von Rosenberg to have a neck court, stocks and gallows in their village of Schweigern.",
       "facts": [
         {
-          "type": "sibling",
           "person": "arnold_boxberg",
+          "type": "sibling",
           "of": "eberhard_jagstberg"
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
+          "type": "generic",
           "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to have a high court, stocks, and gallows in Schweigern."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
+          "type": "generic",
           "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to have a high court, stocks, and gallows in Schweigern."
         }
       ]
@@ -31,18 +31,18 @@
       "english": "King Ruprecht permits the brothers Arnold and Eberhard von Rosenberg to henceforth have a reeve and aldermen, a high court of justice, stocks, and gallows in their village \"Schweigern and in its jurisdiction,\" C.",
       "facts": [
         {
-          "type": "sibling",
           "person": "arnold_boxberg",
+          "type": "sibling",
           "of": "eberhard_jagstberg"
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
+          "type": "generic",
           "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
+          "type": "generic",
           "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction."
         }
       ]

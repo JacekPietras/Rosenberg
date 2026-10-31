@@ -8,18 +8,18 @@
       "english": "Ambassadors, captains and councils of the Swabian League, currently gathered in Mergentheim, step down from Elector Ludwig of the Palatinate City and Castle Boxberg, which have conquered them and burned out the castle, for 5,000 guilders as the right property.",
       "facts": [
         {
-          "type": "title",
-          "person": "Ludwig von der Pfalz",
-          "personTitle": [
-            "Kurfürst"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Ludwig von der Pfalz",
           "personTitle": [
             "Kurfürst"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Ludwig von der Pfalz",
+          "personTitle": [
+            "Kurfürst"
+          ],
+          "type": "generic",
           "content": "received Boxberg town and castle from the Swabian League as outright property in return for 5,000 florins."
         }
       ],

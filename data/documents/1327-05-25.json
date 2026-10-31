@@ -8,15 +8,15 @@
       "english": "Archbishop Mathias acknowledges that he owes Lupold von Hanstein, his children, and Hans, Dylo, and Heinrich, the sons of Lupold's brother, 300 marks of Heilgenstadt weight for the \"verzichnus\" that they have pledged to the archbishopric in writing and for certain services established by Hildebrand von Hardenberg, Ritter, Hermann von Bültzingslöwen, Wenceslaus von Ringelrode, and Arnold von Rusteberg, who were chosen for this purpose. He will pay them 150 marks each at Candlemas in 1328 and 1329, and appoints as their sureties the Ritter Ulrich and Gotfried von Bickenbach, Hartmut von Cron(en)berg, the archiepiscopal Burggraf of Starkenburg, Hans von Rockenberg, Heinrich Schetzel, the archiepiscopal Vitztum in the Rheingau, Hans von Lorch, the archiepiscopal marshal, Konrad von Elkerhausen, the archiepiscopal Amtmann of Amöneburg, Eberhard Rüdt, the archiepiscopal Hofmeister, Eberhard von Rosenberg, the archiepiscopal Vogt zu Walldürn, and Reinhard von Hartheim. The sureties are to maintain an Einlager in Frankfurt with a servant and a horse within eight days after being summoned by the von Hanstein family or, on their behalf, by Ruprecht von Büches, Ritter and Löwenstein. If Lupold, Hans, Dylo, and Heinrich carry out all the matters and pledges they have undertaken to him, Ritter Konrad Ryse, the archiepiscopal Amtmann of Rusteberg,[a] is to issue them a document confirming this. If he delays doing so, but Hartmut von Cronberg, Ritter and Ruprecht von Büches swear that Lupold and his nephews have fulfilled everything, the sureties are nevertheless to be obligated to maintain the Einlager.\n\nWritten and sealed at Aschaffenburg on the Wednesday after Mid-Lent, 1327.",
       "facts": [
         {
-          "type": "title",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
+          "type": "generic",
           "content": "served as a surety for Archbishop Mathias of Mainz."
         }
       ]

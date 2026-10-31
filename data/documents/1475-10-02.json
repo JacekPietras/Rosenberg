@@ -12,21 +12,21 @@
       "english": "Hans, Lord of Heydeck, and Dietz von Thüngen zum Russenberg record the marriage contract between Elche von Riedern, daughter of Philipp der Ältere von Riedern, and Kunz von Rosenberg. The contract is sealed by the issuers, Philipp von Riedern, and Kunz von Rosenberg. Dated 2 October 1475.",
       "facts": [
         {
-          "type": "parent",
           "person": "Philipp von Riedern",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "parent",
           "of": "Elche von Riedern"
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
+          "type": "generic",
           "content": "entered into a marriage contract with Elche von Riedern."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
+          "type": "generic",
           "content": "sealed the marriage contract."
         }
       ],

@@ -8,11 +8,11 @@
       "english": "As guardians of the sons of the late Gotfried von Seckendorff, Georg Sigmund von Rosenberg zu Haldenbergstetten, Martin Konrad von Eyb zu Dörzbach, and Joachim Christoph von Seckendorff zu Ullstadt acknowledged a debt to Eberhard von Eltershofen.",
       "facts": [
         {
-          "type": "generic",
           "person": "Georg Sigmund von Rosenberg",
           "personTitle": [
             "zu Haldenbergstetten"
           ],
+          "type": "generic",
           "content": "served as a guardian for the sons of the late Gotfried von Seckendorff."
         }
       ]

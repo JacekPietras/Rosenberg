@@ -11,26 +11,26 @@
       "english": "Eberhard von Rosenberg the. Under the mediation of the Thomas von Rosenberg, exchange his stable in the rear part of the Boxberg Castle at the fountain above the tower for a stable and a bakery in the front part of the castle, which belong to the brothers Ulrich and Jörg von Rosenberg; the latter still give an overend of 80 guilders.",
       "facts": [
         {
-          "type": "generic",
           "person": "Thomas von Rosenberg",
+          "type": "generic",
           "content": "mediated the exchange at Boxberg Castle between Eberhard von Rosenberg der Ältere and the brothers Ulrich and Jörg von Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "generic",
           "content": "exchanged his stable in the rear part of Boxberg Castle by the fountain above the tower for the brothers Ulrich and Jörg von Rosenberg’s stable and bakery in the front part of the castle."
         },
         {
-          "type": "sibling",
           "person": "Ulrich von Rosenberg",
+          "type": "sibling",
           "of": "Jörg von Rosenberg"
         },
         {
-          "type": "generic",
           "person": "Ulrich von Rosenberg",
+          "type": "generic",
           "content": "paid an additional amount in connection with the exchange together with his brother Jörg von Rosenberg."
         }
       ],
@@ -89,27 +89,27 @@
       "english": "Letter stating that a barn built by Anselm von Rosenberg, Ritter above his castle at Prosselsheim on the monastery farm shall remain standing and that he and his wife may use it and the farm for their lifetimes in return for certain rents and dues; after their deaths, however, it shall pass to the Astheim Carthusian monastery.",
       "facts": [
         {
-          "type": "generic",
           "person": "Anselm von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "built a barn on the monastery farm above his castle at Prosselsheim."
         },
         {
-          "type": "generic",
           "person": "Anselm von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "was entitled to use the barn and monastery farm with his wife for their lifetimes in return for rents and dues."
         },
         {
-          "type": "generic",
           "person": "Anselm von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "was to leave the barn and monastery farm to the Astheim Carthusian monastery after his and his wife’s deaths."
         }
       ]

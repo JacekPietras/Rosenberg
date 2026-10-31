@@ -9,27 +9,27 @@
       "english": "The guardians—Cone von Falkenstein, schoolmaster; Nicolas von Stein, canon of Mainz; and Eberhard von Rosenberg, Ritter; Johan von Randeck, Ritter; and Johan von Beldersheim, Ritter—sell Viernheim with all rights and revenues to Hans, called the Schultheiß of Weinheim, for 1,200 pounds Heller with right of redemption. Excluded are the Kesegulde owed annually by the abbot and convent of Schönau to the archbishopric or a Burgrave of Starkenburg from their estate in the Viernheim March, and a wagon from that estate when required for the journey of a Burgrave of Starkenburg on the archbishopric’s behalf. Redemption is possible annually from fourteen days before to fourteen days after St George’s Day. If necessity forces Hans or his heirs to pledge the village again, they may do so only to people who are their relatives. The guardians seal the transaction.",
       "facts": [
         {
-          "type": "title",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "served as one of the guardians of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Nicolaus vom Steine, Hans von Randeck, and Hans von Beldersheim.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "served as one of the guardians of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Nicolaus vom Steine, Hans von Randeck, and Hans von Beldersheim."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "with the other guardians, sold Viernheim to Hans, reeve of Weinheim.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "with the other guardians, sold Viernheim to Hans, reeve of Weinheim."
         }
       ]
     }

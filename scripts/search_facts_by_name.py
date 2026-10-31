@@ -105,6 +105,8 @@ def typed_fact_text(fact, people_by_id, include_ids=True, unresolved_references=
 
     kind = fact.get("type")
     if kind == "generic":
+        if 'subject' in fact:
+            return f"{fact['subject']} {fact.get('content', '')}"
         status = " (deceased)" if fact.get("personDeceased") is True else ""
         return f"{participant('person')}{status} {fact.get('content', '')}"
     if kind == "title":

@@ -8,11 +8,11 @@
       "english": "At about the same time, another bond was drawn up, although undated, stating that the aforementioned Bishop Hans had pledged Schloss and Amt Brassoldshaim, together with its associated villages and the local Zent, to Apel von Stein for 10,000 florins. Fries considers that this arrangement did not take effect, since Brassoldshaim remained in the hands of the von Rosenbergs, as the following entries show.\n\nContext: The preceding entry (no. 1749) reports Bishop Hans's bond to Anselm von Rosenberg for a total of 6,000 florins. This entry concerns a separate undated bond in favor of Apel von Stein, which Fries doubts took effect.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Brunn",
           "personTitle": [
             "Bischof von Würzburg"
           ],
+          "type": "generic",
           "content": "pledged Schloss and Amt Brassoldshaim, its associated villages, and the local Zent to Apel von Stein in an undated bond for 10,000 florins."
         }
       ],

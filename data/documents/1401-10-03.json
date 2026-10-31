@@ -8,11 +8,11 @@
       "english": "King Ruprecht grants to Hans von Rosenberg, Ritter the small and the great tithe in the village of Lohr, between Rothenburg an der Tauber and Insingen, which has become vacant. B.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "received the small and great tithes in Lohr as a fief from King Ruprecht."
         }
       ]

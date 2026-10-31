@@ -8,13 +8,13 @@
       "english": "Jheronimus von Rosenberg, Ritter, prince-bishop’s Hofmeister, recorded that a dispute between the parish priests in Eichstätt and Peter Sletlein over a tithe was settled by arbitration by the prince-bishop’s councillors; Jheronimus von Rosenberg was among the arbitrators.",
       "facts": [
         {
-          "type": "generic",
           "person": "Jheronimus von Rosenberg",
-          "content": "served among the arbitrators who settled the tithe dispute between the parish priests in Eichstätt and Peter Sletlein.",
           "personTitle": [
             "Ritter",
             "Hofmeister des Fürstbischofs"
-          ]
+          ],
+          "type": "generic",
+          "content": "served among the arbitrators who settled the tithe dispute between the parish priests in Eichstätt and Peter Sletlein."
         }
       ]
     }

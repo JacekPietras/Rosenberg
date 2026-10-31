@@ -8,37 +8,37 @@
       "english": "Engelhard von Rosenberg der Ältere, Edelknecht, hands over the royal people pledged to him by the Empire to Count Palatine Ruprecht, who has redeemed them from him for the same sum for which they were pledged to him by the Empire.",
       "facts": [
         {
-          "type": "title",
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "der Ältere",
-            "Edelknecht"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
           "personTitle": [
             "der Ältere",
             "Edelknecht"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "der Ältere",
+            "Edelknecht"
+          ],
+          "type": "generic",
           "content": "held royal subjects pledged to him by the Empire."
         },
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
           "personTitle": [
             "der Ältere",
             "Edelknecht"
           ],
+          "type": "generic",
           "content": "transferred the royal subjects pledged to him by the Empire to Count Palatine Ruprecht."
         },
         {
-          "type": "generic",
           "person": "Ruprecht",
           "personTitle": [
             "Pfalzgraf"
           ],
+          "type": "generic",
           "content": "redeemed the royal subjects from Engelhard von Rosenberg der Ältere for the sum for which the Empire had pledged them."
         }
       ],

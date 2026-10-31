@@ -9,28 +9,28 @@
       "english": "Rudolff von Sassenhusen, Ritter, Schultheiß, records the judgment of the lay court in the dispute between Arnold zu Liechtenstein and Herman zu Rosenberg concerning the house in the Neustadt opposite Furfoncke's court, which Schonottiln and his wife Liebste had pledged to them by deed. Arnold's deed concerning an income of 4 marks remains valid because he asserted his claims in good time when he learned of Hermann's deed concerning an income of 15 Achtel of grain.",
       "facts": [
         {
-          "type": "generic",
           "person": "Herman von Rosenberg",
-          "content": "was party to a dispute with Arnold zu Liechtenstein over a house in the Neustadt opposite Furfoncke’s court.",
           "personTitle": [
             "zu Rosenberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "was party to a dispute with Arnold zu Liechtenstein over a house in the Neustadt opposite Furfoncke’s court."
         },
         {
-          "type": "generic",
           "person": "Herman von Rosenberg",
-          "content": "held a deed for the house pledged to him and Arnold zu Liechtenstein by Schonottiln and his wife Liebste.",
           "personTitle": [
             "zu Rosenberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "held a deed for the house pledged to him and Arnold zu Liechtenstein by Schonottiln and his wife Liebste."
         },
         {
-          "type": "generic",
           "person": "Herman von Rosenberg",
-          "content": "held a deed concerning income of 15 Achtel of grain.",
           "personTitle": [
             "zu Rosenberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "held a deed concerning income of 15 Achtel of grain."
         }
       ]
     }

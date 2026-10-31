@@ -25,6 +25,7 @@ function titles(value) {
 }
 
 function typedText(fact, participant, literal) {
+  if (fact.type === 'generic' && Object.hasOwn(fact, 'subject')) return `${literal(fact.subject)} ${literal(fact.content || '')}`;
   if (fact.type === 'title') return `${participant(fact.person)} is designated ${literal(titles(fact.personTitle))}.`;
   if (fact.type === 'death') {
     const when = fact.diedOn ? `died on ${literal(fact.diedOn)}` : `died before ${literal(fact.diedBefore || '')}`;

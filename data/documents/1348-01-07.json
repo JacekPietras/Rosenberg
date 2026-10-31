@@ -10,19 +10,19 @@
       "english": "Konrad von Kirkel, guardian of the Mainz chapter, with the consent of Archbishop Heinrich of Mainz, wins Counts Hans and Eberhard von Katzenelnbogen for the archbishop and that part of the chapter which has remained with him, for service against King Karl of Bohemia, Gerlach, son of Count Gerlach of Nassau, who calls himself Bishop of Mainz, and all their enemies, except Archbishop Walram of Cologne, Archbishop Balduin of Trier, the Bishop of Würzburg, the Abbot of Fulda, the Abbot of Prüm, the dukes of Bavaria, the Duke of Brabant, the Count of Holland, Count Walram of Nassau, and the brothers Adolf and Hans, Counts of Nassau. Counts Hans and Eberhard are to assist the Mainz chapter in the field with 40 armored men and in the fortresses with 30 men in helmets and 30 armored men, at the chapter's cost and risk. For this they receive 7,000 pounds in Frankfurt currency, initially 1,000 pounds and the remaining 6,000 pounds in three installments of 2,000 pounds on specified dates. Proven damages they suffer in the service of the Mainz chapter are to be reimbursed. The seals of the issuer and Archbishop Heinrich, as well as the common seal of the five guardians, are attached by Kuno von Falkenstein, scholaster, Nikolaus vom Stein, canon, and Eberhard von Rosenberg, Ritter, Hans von Randeck, and Hans von Bellersheim as guardians, as a sign of their consent.",
       "facts": [
         {
-          "type": "title",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "was one of the five guardians who attached their common seal to signify consent to the agreement.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "was one of the five guardians who attached their common seal to signify consent to the agreement."
         }
       ],
       "img": [

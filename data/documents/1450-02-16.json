@@ -8,13 +8,13 @@
       "english": "Eberhard and Ulrich von Rosenberg unite to have the sheep farm, which Eberhard alone had previously alone.",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "had previously held the sheep farm alone."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "agreed with Ulrich von Rosenberg to hold the sheep farm jointly."
         }
       ],

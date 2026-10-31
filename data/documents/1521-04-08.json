@@ -8,32 +8,32 @@
       "english": "Hans Melchior von Rosenberg, reject his Antheil, with respect for his illness and for other reasons, including accessories, to his lords, the Elector Ludwig von derPfalz and Count Palatine Frederick.",
       "facts": [
         {
-          "type": "title",
           "person": "Ludwig von der Pfalz",
           "personTitle": [
             "Kurfürst"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "title",
           "person": "Friedrich von der Pfalz",
           "personTitle": [
             "Pfalzgraf"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Hans Melchior von Rosenberg",
+          "type": "generic",
           "content": "relinquished his share in Boxberg, its bastion and town, and their appurtenances to his liege lords Elector Ludwig and Count Palatine Friedrich."
         },
         {
-          "type": "generic",
           "person": "Hans Melchior von Rosenberg",
+          "type": "generic",
           "content": "cited his illness and other reasons for relinquishing his share in Boxberg."
         },
         {
-          "type": "generic",
           "person": "Hans Melchior von Rosenberg",
+          "type": "generic",
           "content": "held Boxberg, its bastion and town, and their appurtenances as fiefs from Elector Ludwig and Count Palatine Friedrich."
         }
       ],

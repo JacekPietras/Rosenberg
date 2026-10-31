@@ -15,13 +15,13 @@
       "english": "We want to approach his person in three steps: First, we will introduce what little we know about the knight and his family before his infamous appearance as a \"Jew thug\". The focus will be on his rampage as \"King Armleder\" in the summer of 1336, before the afterlife of his earthly existence brings it to a close.",
       "facts": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "led the anti-Jewish violence during the summer of 1336.",
-          "date": "1336",
           "personTitle": [
             "König Armleder"
-          ]
+          ],
+          "type": "generic",
+          "content": "led the anti-Jewish violence during the summer of 1336.",
+          "date": "1336"
         }
       ]
     },
@@ -34,46 +34,50 @@
       "english": "The name Uissigheim first appears in documents in 1178. Until their death in 1546, the Uissigheim feudal lords of the Mainz Archbishopric, as well as Hohenloh and Wertheim vassals, their spiritual members were monks in Bronnbach and canons in Würzburg. While the first verifiable representative of the family bore the name Ruprecht, Arnold established itself as the \"leading name\" among his sons and then in almost every later generation. As early as 1178, Arnold and Konrad von Uissigheim appeared as free {liberi) among the witnesses to a Bronnbach document. In addition, ministerials of this name appear: In the same year, a Herbord and 1282-88 the brothers Eberhard and Konrad are attested as servants of the Wertheim counts, and Konrad's son Eberhard and an Arnold von Uissigheim are also attested as vassals of the Würzburg bishops. Since 1275, members of the family have been called not only liberi and nobiles, but also \"Ritter\".",
       "facts": [
         {
-          "type": "title",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "liber"
           ],
+          "type": "title",
           "date": "1178"
         },
         {
-          "type": "title",
           "person": "Konrad von Uissigheim",
           "personTitle": [
             "liber"
           ],
+          "type": "title",
           "date": "1178"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "type": "generic",
           "content": "witnessed a document from Bronnbach.",
           "date": "1178"
         },
         {
-          "type": "generic",
           "person": "Konrad von Uissigheim",
+          "type": "generic",
           "content": "witnessed a document from Bronnbach.",
           "date": "1178"
         },
         {
-          "type": "generic",
           "person": "Herbord von Uissigheim",
+          "type": "generic",
           "content": "served as a Dienstmann of the Counts of Wertheim.",
           "date": "1178"
         },
         {
-          "date": "1178",
-          "text": "The name Uissigheim first appears in a document."
+          "subject": "The name Uissigheim",
+          "type": "generic",
+          "content": "first appears in a document.",
+          "date": "1178"
         },
         {
-          "date": "1546",
-          "text": "The von Uissigheim family became extinct."
+          "subject": "The von Uissigheim family",
+          "type": "generic",
+          "content": "became extinct.",
+          "date": "1546"
         }
       ]
     },
@@ -82,74 +86,74 @@
       "english": "\"Arnold\" often appears among the people of Uissigheim, alongside Heinrich and Eberhard, as the name of the firstborn: after 1178, there is an Uber de Ussenkeim named in this way in 1219; In 1225 Arnoldus de Ussinheim et filius eius Eberhardus, castellani de Gamburc were named as the lords of the Mainz Gamburg above the Taubertal; in the following year a vir nobilis Arnold and in 1247 as Würzburg vassals Eberhardus et Arnoldus fratres, nobiles de Ussinheim, fideles Herbipolensis episcopi and another bearer of this name is attested in 1298 as canonicus ecclesiae Herbipolensis; The Würzburg canon curia “Uissigheimer Hof”, which existed until the 20th century, may have derived its name from this.",
       "facts": [
         {
-          "type": "title",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "liber"
           ],
+          "type": "title",
           "date": "1219"
         },
         {
-          "type": "parent",
           "person": "Arnold von Uissigheim",
-          "of": "Eberhard von Uissigheim",
-          "date": "1225",
           "personTitle": [
             "castellanus de Gamburc"
           ],
+          "type": "parent",
+          "of": "Eberhard von Uissigheim",
           "ofTitle": [
             "castellanus de Gamburc"
-          ]
+          ],
+          "date": "1225"
         },
         {
-          "type": "title",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "vir nobilis"
           ],
+          "type": "title",
           "date": "1226"
         },
         {
-          "type": "sibling",
           "person": "Eberhard von Uissigheim",
-          "of": "Arnold von Uissigheim",
-          "date": "1247",
           "personTitle": [
             "nobilis"
           ],
+          "type": "sibling",
+          "of": "Arnold von Uissigheim",
           "ofTitle": [
             "nobilis"
-          ]
+          ],
+          "date": "1247"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Uissigheim",
-          "content": "served as a vassal of the Bishop of Würzburg.",
-          "date": "1247"
-        },
-        {
           "type": "generic",
-          "person": "Arnold von Uissigheim",
           "content": "served as a vassal of the Bishop of Würzburg.",
           "date": "1247"
         },
         {
-          "type": "title",
+          "person": "Arnold von Uissigheim",
+          "type": "generic",
+          "content": "served as a vassal of the Bishop of Würzburg.",
+          "date": "1247"
+        },
+        {
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "canonicus ecclesiae Herbipolensis"
           ],
+          "type": "title",
           "date": "1298"
         }
       ],
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "may have given his name to the Würzburg canon’s curia known as Uissigheimer Hof.",
           "personTitle": [
             "canonicus ecclesiae Herbipolensis"
           ],
+          "type": "generic",
+          "content": "may have given his name to the Würzburg canon’s curia known as Uissigheimer Hof.",
           "date": "1298"
         }
       ]
@@ -159,128 +163,128 @@
       "english": "The series continues in the 14th century: in 1305 an Arnold von Uissigheim figures as a witness to a document, in 1317 a miles, in 1318 a bearer of the same name as fidelis archiepiscopi Moguntini, in 1323 a knight of this name together with his married housewife Richtze, in 1327 a her Arnold von Uissigheim von Talheim and in 1332 a family member of the same name as guarantor and co-signer of a document. As if to further confuse the genealogy of this family, side lines appear parallel to this, such as a noble servant Heinrich von Uissigheim named von Rinnec in 1337. In a Bronnbach document from 1323 III 17 the following are named: Arnold von Uissigheim, Heinrich and Arnold, his sons, and Eberhard von Uissigheim, called von Ranneberg. The latter's tomb is probably the one that has been preserved to this day in the west wall of the church in Uissigheim: Anno domini MCCCXXXII ohiit Ebirhardus des Ussen-ken hone memorie qui dicitur de Ranneberc I. K. Ianuarii; the person who died on December 31, 1331 appears in documents in 1323, 1328 and 1330 with the addition of de Ranneberc.",
       "facts": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "type": "generic",
           "content": "witnessed a document.",
           "date": "1305"
         },
         {
-          "type": "title",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "miles"
           ],
+          "type": "title",
           "date": "1317"
         },
         {
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "miles"
+          ],
           "type": "generic",
-          "person": "Arnold von Uissigheim",
           "content": "was a fidelis of the Archbishop of Mainz.",
-          "personTitle": [
-            "miles"
-          ],
           "date": "1318"
         },
         {
-          "type": "title",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "miles"
           ],
+          "type": "title",
           "date": "1318"
         },
         {
-          "type": "spouse",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "Ritter"
           ],
+          "type": "spouse",
           "of": "Richtze",
           "date": "1323"
         },
         {
-          "type": "title",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "von Talheim"
           ],
+          "type": "title",
           "date": "1327"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "type": "generic",
           "content": "served as a surety for a document.",
           "date": "1332"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "type": "generic",
           "content": "co-sealed a document.",
           "date": "1332"
         },
         {
-          "type": "title",
           "person": "Heinrich von Uissigheim",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "title",
           "date": "1337"
         },
         {
-          "type": "title",
           "person": "Heinrich von Uissigheim",
           "personTitle": [
             "genannt von Rinnec"
           ],
+          "type": "title",
           "date": "1337"
         },
         {
-          "type": "parent",
           "person": "Arnold von Uissigheim",
+          "type": "parent",
           "of": "Heinrich von Uissigheim",
           "date": "1323-03-17"
         },
         {
-          "type": "title",
           "person": "Eberhard von Uissigheim",
           "personTitle": [
             "genannt von Ranneberg"
           ],
+          "type": "title",
           "date": "1323-03-17"
         },
         {
-          "type": "title",
           "person": "Eberhard von Uissigheim",
           "personTitle": [
             "genannt von Ranneberg"
           ],
+          "type": "title",
           "date": "1328"
         },
         {
-          "type": "title",
           "person": "Eberhard von Uissigheim",
           "personTitle": [
             "genannt von Ranneberg"
           ],
+          "type": "title",
           "date": "1330"
         }
       ],
       "guesses": [
         {
-          "type": "generic",
-          "person": "Eberhard von Uissigheim",
-          "content": "may be commemorated by the grave monument preserved in the west wall of the church at Uissigheim.",
-          "date": "1331-12-31",
-          "personTitle": [
-            "genannt von Ranneberg"
-          ]
-        },
-        {
-          "type": "death",
           "person": "Eberhard von Uissigheim",
           "personTitle": [
             "genannt von Ranneberg"
           ],
+          "type": "generic",
+          "content": "may be commemorated by the grave monument preserved in the west wall of the church at Uissigheim.",
+          "date": "1331-12-31"
+        },
+        {
+          "person": "Eberhard von Uissigheim",
+          "personTitle": [
+            "genannt von Ranneberg"
+          ],
+          "type": "death",
           "diedOn": "1331-12-31",
           "date": "1331-12-31"
         }
@@ -291,19 +295,19 @@
       "english": "Spiritual representatives of the von Uissigheim family in the 14th century included, among others, a canon Heinrich von Uissigheim in Würzburg in 1336, Hans, Deutschordensritter in1361 and the author of a malicious mockery of the Würzburg citizens who had risen up against their episcopal city lord Gerhard von Schwarzburg at the end of the century, 1397/1400 spiritual author Bernhard von Uissigheim represented.",
       "facts": [
         {
-          "type": "title",
           "person": "Heinrich von Uissigheim",
           "personTitle": [
             "Domherr zu Würzburg"
           ],
+          "type": "title",
           "date": "1336"
         },
         {
-          "type": "title",
           "person": "Hans von Uissigheim",
           "personTitle": [
             "Deutschordensritter"
           ],
+          "type": "title",
           "date": "1361"
         }
       ]
@@ -313,99 +317,99 @@
       "english": "Only a document from the Wertheim archive brings us closer to the person of \"our\" Arnold von Uissigheim: On November 24, 1332, Arnold von Uissigheim der Ältere, Arnold von Uissigheim der Jüngere, Ritter, and his brothers Heinrich and Eberhard, all sons of the former, issued a document that documented an agreement with their gracious master, Count Rudolf (IV.) von Wertheim: I Arnolde von Uzzinchein der Ältere, Ritter, and we, Arnolde von Uzzinchein der Jüngere, Ritter, Heinrich and Eberhard, also von Uzzinchein brother, the aforementioned Arnolde von Uzzinchein sune... With no less than 13 attached seals certify Arnold von Uissigheim der Ältere and his sons, Arnold von Uissigheim der Jüngere, also Ritter, with his brothers Heinrich and Eberhard signed a contract with their sovereign.",
       "facts": [
         {
-          "type": "parent",
           "person": "Arnold von Uissigheim",
-          "of": "Arnold von Uissigheim",
-          "date": "1332-11-24",
           "personTitle": [
             "der Ältere",
             "Ritter"
           ],
+          "type": "parent",
+          "of": "Arnold von Uissigheim",
           "ofTitle": [
             "der Jüngere",
             "Ritter"
-          ]
+          ],
+          "date": "1332-11-24"
         },
         {
-          "type": "parent",
           "person": "Arnold von Uissigheim",
-          "of": "Heinrich von Uissigheim",
-          "date": "1332-11-24",
           "personTitle": [
             "der Ältere"
-          ]
+          ],
+          "type": "parent",
+          "of": "Heinrich von Uissigheim",
+          "date": "1332-11-24"
         },
         {
-          "type": "parent",
           "person": "Arnold von Uissigheim",
-          "of": "Eberhard von Uissigheim",
-          "date": "1332-11-24",
           "personTitle": [
             "der Ältere"
-          ]
-        },
-        {
-          "type": "sibling",
-          "person": "Arnold von Uissigheim",
-          "of": "Heinrich von Uissigheim",
-          "date": "1332-11-24",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "type": "sibling",
-          "person": "Arnold von Uissigheim",
-          "of": "Eberhard von Uissigheim",
-          "date": "1332-11-24",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "type": "sibling",
-          "person": "Heinrich von Uissigheim",
+          ],
+          "type": "parent",
           "of": "Eberhard von Uissigheim",
           "date": "1332-11-24"
         },
         {
-          "type": "title",
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "type": "sibling",
+          "of": "Heinrich von Uissigheim",
+          "date": "1332-11-24"
+        },
+        {
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "type": "sibling",
+          "of": "Eberhard von Uissigheim",
+          "date": "1332-11-24"
+        },
+        {
+          "person": "Heinrich von Uissigheim",
+          "type": "sibling",
+          "of": "Eberhard von Uissigheim",
+          "date": "1332-11-24"
+        },
+        {
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "der Ältere",
             "Ritter"
           ],
+          "type": "title",
           "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "issued an agreement with Count Rudolf von Wertheim.",
-          "date": "1332-11-24",
           "personTitle": [
             "der Ältere",
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "issued an agreement with Count Rudolf von Wertheim.",
+          "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "issued the agreement with Count Rudolf von Wertheim.",
-          "date": "1332-11-24",
           "personTitle": [
             "der Jüngere",
             "Ritter"
-          ]
-        },
-        {
+          ],
           "type": "generic",
-          "person": "Heinrich von Uissigheim",
           "content": "issued the agreement with Count Rudolf von Wertheim.",
           "date": "1332-11-24"
         },
         {
+          "person": "Heinrich von Uissigheim",
           "type": "generic",
+          "content": "issued the agreement with Count Rudolf von Wertheim.",
+          "date": "1332-11-24"
+        },
+        {
           "person": "Eberhard von Uissigheim",
+          "type": "generic",
           "content": "issued the agreement with Count Rudolf von Wertheim.",
           "date": "1332-11-24"
         }
@@ -416,22 +420,22 @@
       "english": "We learn something unusual about the history of this parchment: Arnold der Jüngere was guilty of breaching the peace in the Wertheim territory in the past by being named responsible for an uprising. Therefore, it was agreed and sworn by oath between Count Rudolf and Arnold von Uissigheim der Jüngere that the latter would not be allowed to leave the Wertheim territory for ten years between Candlemas Day of the following year (1333 II 2) and during this time he would not be allowed to approach it forty miles without the permission of the Count and his heirs. The radius of this expulsion from the country is, at forty miles, extraordinarily high by the standards of the time; In such cases, eight to ten miles or the naming of four rivers in the corresponding cardinal points were common.",
       "facts": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "agreed with Count Rudolf von Wertheim to leave the Wertheim territory for ten years beginning on Candlemas, 2 February 1333.",
-          "date": "1332-11-24",
           "personTitle": [
             "der Jüngere"
-          ]
+          ],
+          "type": "generic",
+          "content": "agreed with Count Rudolf von Wertheim to leave the Wertheim territory for ten years beginning on Candlemas, 2 February 1333.",
+          "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "agreed not to approach within forty miles of Wertheim territory during that period without permission from the count or his heirs.",
-          "date": "1332-11-24",
           "personTitle": [
             "der Jüngere"
-          ]
+          ],
+          "type": "generic",
+          "content": "agreed not to approach within forty miles of Wertheim territory during that period without permission from the count or his heirs.",
+          "date": "1332-11-24"
         }
       ]
     },
@@ -440,13 +444,13 @@
       "english": "The following provides an indication of the misdeeds of the young Arnold von Uissigheim: Together with his father and two brothers, he promises his sovereign that he will no longer disturb his right of escort in the future. Safe conduct was one of the most important pillars of late medieval territorial rule; Anyone who broke it broke the peace and thereby undermined the power and credibility of the sovereign.",
       "facts": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "promised, together with his father and two brothers, not to interfere further with their lord’s right of safe conduct.",
-          "date": "1332-11-24",
           "personTitle": [
             "der Junge"
-          ]
+          ],
+          "type": "generic",
+          "content": "promised, together with his father and two brothers, not to interfere further with their lord’s right of safe conduct.",
+          "date": "1332-11-24"
         }
       ]
     },
@@ -455,13 +459,13 @@
       "english": "The most common crime was attacks on travelers, especially traveling merchants, who could be robbed for profit and taken hostage. Arnold von Uissigheim der Jüngere had at least a short-term career as a \"robber baron\" (even if this term only belonged to the 19th century) and thus turned the crisis and economic hardship of the lower nobility in the late Middle Ages into a \"virtue\" that was certainly not part of the knightly system of virtues, but was often part of everyday knightly life.",
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "may have pursued a brief career as a Raubritter, based on the agreement’s account of his earlier offenses.",
-          "date": "1332-11-24",
           "personTitle": [
             "der Jüngere"
-          ]
+          ],
+          "type": "generic",
+          "content": "may have pursued a brief career as a Raubritter, based on the agreement’s account of his earlier offenses.",
+          "date": "1332-11-24"
         }
       ]
     },
@@ -470,120 +474,120 @@
       "english": "If in the future one of the four should be guilty of such attacks against the counts or their followers, they should appear in Wertheim upon request and answer for themselves, and should not be released from there without a court decision. With the jurisdiction of the counts, another pillar of territorial rule is addressed. Included in this obligation are six others named by name: Wilhelm and Konrad der Ältere uf der nider burch von Aschhausen, Konrad and Eberhard Rüdt von Collenberg, Konrad von Uissigheim and Wiprecht von Rosenberg, who swore to the agreement and witnessed it with their attached seals. In addition to the ten, three more sealers come as witnesses: Hans von Riedern, Eberhard von Rosenberg, Vogt zu Dürn, and Arnold von Rosenberg, Ritter. After Wiprecht and Eberhard (II., 1328-1347 Mainzian Vogt zu Dürn) were sons of Eberhard I. miles de Rosenberg dictus de Ussinkeim, with whom the Rosenberg line split off from the Uissigheimers - while the coats of arms remained the same - it becomes clear that all thirteen sealers of the document from 1332 were relatives or, based on property, family or coat of arms history, were demonstrably close relatives of the Uissigheimers, so after the crime of Arnold von Uissigheim der Jüngere, his entire family was taken into “clan liability” by the count’s sovereign.",
       "facts": [
         {
-          "type": "title",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "title",
           "date": "1332-11-24"
         },
         {
-          "type": "title",
           "person": "Arnold von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title",
           "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Wilhelm von Aschhausen",
+          "type": "generic",
           "content": "swore to the agreement and witnessed it with his attached seal.",
           "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Konrad von Aschhausen",
-          "content": "swore to the agreement and witnessed it with his attached seal.",
-          "date": "1332-11-24",
           "personTitle": [
             "der Ältere"
-          ]
+          ],
+          "type": "generic",
+          "content": "swore to the agreement and witnessed it with his attached seal.",
+          "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Konrad Rüdt von Collenberg",
+          "type": "generic",
           "content": "swore to the agreement and witnessed it with his attached seal.",
           "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Eberhard Rüdt von Collenberg",
+          "type": "generic",
           "content": "swore to the agreement and witnessed it with his attached seal.",
           "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Konrad von Uissigheim",
+          "type": "generic",
           "content": "swore to the agreement and witnessed it with his attached seal.",
           "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Wiprecht von Rosenberg",
+          "type": "generic",
           "content": "swore to the agreement and witnessed it with his attached seal.",
           "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Hans von Riedern",
+          "type": "generic",
           "content": "witnessed and sealed the agreement as a witness.",
           "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "witnessed and sealed the agreement as a witness.",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "generic",
+          "content": "witnessed and sealed the agreement as a witness.",
           "date": "1332-11-24"
         },
         {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
-          "content": "witnessed and sealed the agreement as a witness.",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
+          "content": "witnessed and sealed the agreement as a witness.",
           "date": "1332-11-24"
         }
       ],
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "may have been subjected to collective responsibility together with his extended family by Count Rudolf von Wertheim.",
-          "date": "1332-11-24",
           "personTitle": [
             "der Jüngere"
-          ]
+          ],
+          "type": "generic",
+          "content": "may have been subjected to collective responsibility together with his extended family by Count Rudolf von Wertheim.",
+          "date": "1332-11-24"
         },
         {
-          "type": "parent",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "genannt von Uissigheim"
           ],
+          "type": "parent",
           "of": "Wiprecht von Rosenberg",
           "date": "1332"
         },
         {
-          "type": "parent",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "genannt von Uissigheim"
           ],
+          "type": "parent",
           "of": "Eberhard von Rosenberg",
           "date": "1332"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "may have been the progenitor of a Rosenberg branch of the von Uissigheim family.",
           "personTitle": [
             "genannt von Uissigheim"
           ],
+          "type": "generic",
+          "content": "may have been the progenitor of a Rosenberg branch of the von Uissigheim family.",
           "date": "1332"
         }
       ]
@@ -593,8 +597,8 @@
       "english": "However, the trigger for the sovereign's actions was primarily Arnold von Uissigheim der Jüngere, Ritter. We simply know nothing about his previous life up to the time when he first became “on record”. He shares with almost all of his contemporaries that the year of his birth remains unknown. The assumption that it was \"around 1290\" can therefore be based on nothing other than the fact that, on the one hand, the father was still alive and, on the other hand, the son had already achieved the knighthood in 1332, i.e. had already completed his years as a miner and had already proven himself in battle. But it is not even possible to make any assumptions about what happened afterwards until the exile came into the light of history in the summer of 1336 at the head of the “Jew thugs” in the central Taubertal.",
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "type": "generic",
           "content": "may have been born around 1290; this estimate rests on his father being alive and Arnold having been knighted by 1332.",
           "date": "1290"
         }
@@ -613,32 +617,46 @@
       "english": "There is more contemporary news: On the night of September 23rd to 24th, 1336, a man named Nicolaus hastily wrote down various notes on paper, a series of the latest news that had come to his attention in the past few days. Already after midnight, half-blind from writing and without the opportunity to reread what he had written - the scribe reports all of this in his final writing - Nicolaus finished his letter to Rudolf Losse, the messenger and notary of Archbishop Baldwin of Trier in what was then the papal residence in Avignon. Among the most diverse news, one also comes across a note about events in connection with a \"rex Armleder\": In Franconia, in the area of ​​Tauberbischofsheim, the farmers had chosen a king named Armleder and marched in large numbers, mostly on foot, very few on horseback, against villages and towns and massacred all the Jews there. First they killed everyone in Kitzingen, in Ochsenfurt, in Aub, in Mergentheim and in four other cities. They were also in front of the city of Würzburg, although here they were unsuccessful. They besieged Tauberbischofsheim three times - in vain: they were well prepared there. In total, 1,500 Jews are said to have died, as is credibly assured. Even on the other side of the Rhine, people feared King Armleder's troops: even in Trier, bishops, counts, nobility, citizens and Jews prepared daily against him and his army in fear that he would cross the Rhine if they were not careful.",
       "facts": [
         {
-          "date": "1336-09-24",
-          "text": "Nikolaus wrote to Rudolf Losse that peasants in the Tauberbischofsheim region had chosen a leader called König Armleder."
+          "person": "Nikolaus",
+          "type": "generic",
+          "content": "wrote to Rudolf Losse that peasants in the Tauberbischofsheim region had chosen a leader called König Armleder.",
+          "date": "1336-09-24"
         },
         {
-          "date": "1336-09-24",
-          "text": "Nikolaus reported that the forces of König Armleder besieged Tauberbischofsheim three times without success."
+          "person": "Nikolaus",
+          "type": "generic",
+          "content": "reported that the forces of König Armleder besieged Tauberbischofsheim three times without success.",
+          "date": "1336-09-24"
         },
         {
-          "date": "1336-09-24",
-          "text": "Nikolaus reported that the forces of König Armleder killed the Jews of Kitzingen."
+          "person": "Nikolaus",
+          "type": "generic",
+          "content": "reported that the forces of König Armleder killed the Jews of Kitzingen.",
+          "date": "1336-09-24"
         },
         {
-          "date": "1336-09-24",
-          "text": "Nikolaus reported that the forces of König Armleder killed the Jews of Ochsenfurt."
+          "person": "Nikolaus",
+          "type": "generic",
+          "content": "reported that the forces of König Armleder killed the Jews of Ochsenfurt.",
+          "date": "1336-09-24"
         },
         {
-          "date": "1336-09-24",
-          "text": "Nikolaus reported that the forces of König Armleder killed the Jews of Aub."
+          "person": "Nikolaus",
+          "type": "generic",
+          "content": "reported that the forces of König Armleder killed the Jews of Aub.",
+          "date": "1336-09-24"
         },
         {
-          "date": "1336-09-24",
-          "text": "Nikolaus reported that the forces of König Armleder killed the Jews of Mergentheim."
+          "person": "Nikolaus",
+          "type": "generic",
+          "content": "reported that the forces of König Armleder killed the Jews of Mergentheim.",
+          "date": "1336-09-24"
         },
         {
-          "date": "1336-09-24",
-          "text": "Nikolaus reported that the forces of König Armleder came before Würzburg without success."
+          "person": "Nikolaus",
+          "type": "generic",
+          "content": "reported that the forces of König Armleder came before Würzburg without success.",
+          "date": "1336-09-24"
         }
       ]
     },
@@ -659,12 +677,22 @@
       "english": "So the overview of the course of this \"arm leather movement\" is as follows: Consistent with the testimonies cited, a simultaneous Jewish source, the Martyrology of the Nuremberg Memoir Book, reports the beginning of the uprising of the \"common man\" on July 29, 1336 in Röttingen. In the days and weeks that followed, Armleder's troops raged against the Jews between Tauber and the Lower Main Triangle, a relatively limited area - and, it should be added, for a relatively short period of time.",
       "facts": [
         {
-          "date": "1336-07-29",
-          "text": "The Armleder uprising began in Röttingen."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "led the uprising that began in Röttingen.",
+          "date": "1336-07-29"
         },
         {
-          "date": "1336",
-          "text": "The forces of König Armleder attacked Jews between the Tauber and the lower Main triangle."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "led forces that attacked Jews between the Tauber and the lower Main triangle.",
+          "date": "1336"
         }
       ]
     },
@@ -673,34 +701,64 @@
       "english": "In the following days, Aub, Uffenheim, Laudenbach, Krautheim, (Bad) Mergentheim and possibly Weikersheim were covered by the rampage of Armleder's hordes. But already in Tauberbischofsheim in Mainz, Armleder reached the limits of his rapid success: he ran the official town three times without success. The then changed direction of attack pointed northeast towards the Main Triangle. The group, consisting mostly of infantry and probably only a few mounted men, now moved towards Ochsenfurt and Iphofen, reaching a bloody climax in their actions in Kitzingen.",
       "facts": [
         {
-          "date": "1336",
-          "text": "The forces of König Armleder attacked Jews in Aub."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "led forces that attacked Jews in Aub.",
+          "date": "1336"
         },
         {
-          "date": "1336",
-          "text": "The forces of König Armleder attacked Jews in Uffenheim."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "led forces that attacked Jews in Uffenheim.",
+          "date": "1336"
         },
         {
-          "date": "1336",
-          "text": "The forces of König Armleder attacked Jews in Laudenbach."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "led forces that attacked Jews in Laudenbach.",
+          "date": "1336"
         },
         {
-          "date": "1336",
-          "text": "The forces of König Armleder attacked Jews in Krautheim."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "led forces that attacked Jews in Krautheim.",
+          "date": "1336"
         },
         {
-          "date": "1336",
-          "text": "The forces of König Armleder attacked Jews in Bad Mergentheim."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "led forces that attacked Jews in Bad Mergentheim.",
+          "date": "1336"
         },
         {
-          "date": "1336",
-          "text": "König Armleder unsuccessfully attacked Tauberbischofsheim three times."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "unsuccessfully attacked Tauberbischofsheim three times.",
+          "date": "1336"
         }
       ],
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "type": "generic",
           "content": "may have led forces that attacked Weikersheim.",
           "date": "1336"
         }
@@ -711,8 +769,13 @@
       "english": "In the Main city, the council and citizens were initially determined to protect the Jews who had long lived in the city and had the gates closed against the approaching \"rabble\" - as Lorenz Fries puts it. However, the common burgers, the urban lower classes, the non-citizens and poor residents, forcibly gained possession of the keys, opened the gates to Armleder's gang and took part in the subsequent massacre that brought death to all Jews living in Kitzingen on the 2nd day of August 1336.",
       "facts": [
         {
-          "date": "1336-08-02",
-          "text": "The forces of König Armleder and inhabitants of Kitzingen killed the Jews living in Kitzingen."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "led forces that, together with inhabitants of Kitzingen, killed the Jews living in Kitzingen.",
+          "date": "1336-08-02"
         }
       ]
     },
@@ -721,16 +784,31 @@
       "english": "In Würzburg everyone was aware of what was to come if the band of Jew thugs turned their attention to the episcopal city: the episcopal city ruler as well as the clergy, citizens as well as Jews. Looking back, Fries expressed the opinion that the citizens of Würzburg would have preferred to plunder and tax \"their\" Jews themselves; but this remains his subjective assessment. What seems certain, however, is that the city made efforts to defend itself and sent a contingent to Kleinochsenfurt in the southern Main Triangle. There, on an unknown day at the beginning of August, there was a decisive confrontation with the \"Rex Armleder\" and his followers. The victory of the cantonal and municipal forces was clear: many of the Jew thugs were killed in this battle and 47 prisoners were taken to Würzburg.",
       "facts": [
         {
-          "date": "1336-08",
-          "text": "An armed force from Würzburg fought König Armleder and his followers at Kleinochsenfurt."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "fought an armed force from Würzburg at Kleinochsenfurt.",
+          "date": "1336-08"
         },
         {
-          "date": "1336-08",
-          "text": "The Würzburg force killed many followers of König Armleder at Kleinochsenfurt."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "led followers, many of whom were killed by the Würzburg force at Kleinochsenfurt.",
+          "date": "1336-08"
         },
         {
-          "date": "1336-08",
-          "text": "The Würzburg force took 47 followers of König Armleder prisoner to Würzburg."
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "König Armleder"
+          ],
+          "type": "generic",
+          "content": "led followers, 47 of whom were taken prisoner to Würzburg by the Würzburg force.",
+          "date": "1336-08"
         }
       ]
     },
@@ -739,68 +817,68 @@
       "english": "The fate of the leader escapes our view for a while, because he does not seem to be among the prisoners, but has escaped for the time being. But John of Winterthur already reported that the Jews had ultimately caused his death by bribing \"bad Christians.\" The continuator of the chronicle from Erfurt provides further details: 400 pounds of heller flowed to Gotfried von Hohenlohe for the capture of Arnold von Uissigheim, Ritter. After his arrest, he was taken to Röttingen, where he confessed to the dean several times and then received communion in both forms. Ultimately, however, he was transferred to Kitzingen and beheaded there; He was buried in his village of Uissigheim in the church there, where many miracles occurred afterwards.",
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "is said by the chronicler Hans von Winterthur to have died because Jews secured his death through bribery of Christians; this is the chronicler’s account.",
-          "personTitle": [
-            "Ritter"
-          ],
           "date": "1336"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have been captured by Gotfried von Hohenlohe.",
-          "personTitle": [
-            "Ritter"
-          ],
           "date": "1336"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have been taken to Röttingen after his capture.",
-          "personTitle": [
-            "Ritter"
-          ],
           "date": "1336"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have confessed several times to the dean in Röttingen.",
-          "personTitle": [
-            "Ritter"
-          ],
           "date": "1336"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have been transferred to Kitzingen.",
-          "personTitle": [
-            "Ritter"
-          ],
           "date": "1336"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "personDeceased": true,
+          "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have been beheaded in Kitzingen.",
-          "personTitle": [
-            "Ritter"
-          ],
-          "personDeceased": true,
           "date": "1336"
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "is reported by the Erfurt chronicle continuator to have been buried in the church at Uissigheim.",
           "personTitle": [
             "Ritter"
           ],
           "personDeceased": true,
+          "type": "generic",
+          "content": "is reported by the Erfurt chronicle continuator to have been buried in the church at Uissigheim.",
           "date": "1336"
         }
       ]
@@ -846,12 +924,12 @@
       "english": "In Kitzingen am Main, \"King Armleder\" finally died after the movement he initiated was suppressed and he was captured. Why here? One might first assume that the Main city became the final chapter in the life of Arnold von Uissigheim because the bloodiest pogrom of his rampage against the city's Jewish communities took place here on August 2, 1336.",
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "may have been executed in Kitzingen because the pogrom took place there on 2 August 1336.",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
+          "content": "may have been executed in Kitzingen because the pogrom took place there on 2 August 1336.",
           "date": "1336-11-14"
         }
       ]
@@ -865,12 +943,12 @@
       "english": "In Röttingen too, judicial power in the castle and town had passed to Bishop Otto von Würzburg, whose office it subsequently became. But this only happened in 1345; In 1336, on July 16, Emperor Ludwig Gotfried von Hohenlohe confirmed various urban freedoms for Röttingen and Weikersheim. Consequently, according to the well-informed chronicle from Erfurt, Armleder was initially held prisoner in Röttingen in Hohenloh and then transferred to the Würzburg central court in Kitzingen for trial.",
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "may have been detained first in Röttingen and then transferred to the Würzburg court in Kitzingen.",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
+          "content": "may have been detained first in Röttingen and then transferred to the Würzburg court in Kitzingen.",
           "date": "1336"
         }
       ]
@@ -880,14 +958,14 @@
       "english": "We are informed about the competence of this Kitzingen centrist court by records from Rothenburg for the years 1343-47: Uff daz geriht geriht in Kiezingen ledet man priests, Ritter and servants, burghers uz of the rich and all gentlemen and poor people and Jews, as wit daz bystum zu Wirczburg is ... The centgreven and scoops are built, the umb and umb in the ... The judges also attacked and judged the judges and took them in their good graces and protected them ... Accordingly, clergy, Ritter, servants, citizens, farmers and Jews from imperial and country towns in the area of the Würzburg blast area could be summoned, captured and tried. Centgraves, that is, holders of the blood court jurisdiction, and lay judges were recruited from the farmers of the surrounding villages; in other cases, the judge was usually the responsible magistrate. The judges exercised high and low jurisdiction, levied fines and handed down corporal punishments. “King Armleder” was finally sentenced to death by this Würzburg central court in Kitzingen and put to death by the sword on November 14, 1336.",
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "type": "generic",
           "content": "may have been sentenced to death by the Zentgericht at Kitzingen.",
           "date": "1336"
         },
         {
-          "type": "death",
           "person": "Arnold von Uissigheim",
+          "type": "death",
           "diedOn": "1336-11-14",
           "circumstances": "may have been executed by the sword at Kitzingen.",
           "date": "1336-11-14"
@@ -903,13 +981,13 @@
       "english": "The chroniclers of the 14th century, who have already been consulted several times, had already provided helpful information: The continuation of the chronicle of the Erfurt St. Peter's Monastery:... tandem in civitatem Kyczingen deductus ibidem decollatus est: qui in suam villam, scilicet Ussenkeym, delatu s et in ecclesia sepultus innumeris so miraculis (finally he is in the city Kitzingen and beheaded there; he was then transferred to his village, namely Uissigheim, and buried in the church, where he performed countless miracles). And the historian Hans von Viktring reports: ... miles Arnoldus ... capitur et capite spoliatur et in natali solo sepultus iuxta oppidum Kulsheim territorii Moguntini. Tumulus eius pro fidei merito pluribus miraculis didtur coruscasse (miles Arnold ... was captured, robbed of his head and buried in native soil near the town of Külsheim in the Mainz territory. His tomb is said to have become famous for many miracles thanks to his faith).",
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "is reported by the Erfurt chronicle and Hans von Viktring to have had miracles occur at his grave.",
           "personTitle": [
             "Ritter"
           ],
           "personDeceased": true,
+          "type": "generic",
+          "content": "is reported by the Erfurt chronicle and Hans von Viktring to have had miracles occur at his grave.",
           "date": "1336"
         }
       ]
@@ -919,13 +997,13 @@
       "english": "The tombstone standing upright today in the Uissigheim church was originally - as was the case for most of this time - the lying cover plate of a grave. This is indicated by a square cushion on which the head of the larger-than-life figure rests. The size of the sandstone slab is now 225 x 86 cm; Damage to the head and foot side shows that it was even larger before the destruction, since the knight's feet are missing. The stern, even dark features of the powerful head, framed by thickly curly hair, are what first attract the eye. It is a youthful, beardless face above a decidedly broad neck on which rests the blade of a sword. This is held by a smaller figure sitting on the frame, whose upper body and head are lost; the tap hole used for fastening is still visible. The body of the person lying down is covered by a calf-length, wide robe with many parallel folds and open, hanging arms. The scabbard to the man's right is empty, probably to indicate that it was his own sword that killed him. His hands are not folded as one might expect; rather, they were laid one on top of the other with visible remains of shackles. The protection of the forearms is formed by arm leather.",
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "may have been executed with his own sword, as the empty scabbard on his grave monument may indicate.",
           "personTitle": [
             "Ritter"
           ],
           "personDeceased": true,
+          "type": "generic",
+          "content": "may have been executed with his own sword, as the empty scabbard on his grave monument may indicate.",
           "date": "1336-11-14"
         }
       ]
@@ -935,33 +1013,33 @@
       "english": "The mutilated inscription of the record today reads (added): f ANNO DOMINI MCCCXXXVI SUBIIT GLADIO BEATUS ARNOLDUS IUVENIS MILES DE VSSINKEM XVIII. KL. DECEMBRIS (In the year of our Lord 1336, the blessed Arnold von Uissigheim der Junge, miles died by the sword on November 14th). On the (heraldic) right side of the knight's head you can see the coat of arms of the von Uissigheim family: divided shield, split five times; The (possibly originally existing colored) tinging would have to be added in red and white in mixed colors. What is unusual is the arrangement of the pot helmet, which - probably due to lack of space - appears to be placed crosswise to support the cushion, and is provided with a helmet ornament consisting of two swan necks.",
       "facts": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "content": "died by the sword.",
           "personTitle": [
             "der Junge",
             "Ritter"
           ],
           "personDeceased": true,
+          "type": "generic",
+          "content": "died by the sword.",
           "date": "1336-11-14"
         },
         {
-          "type": "title",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "der Junge",
             "miles"
           ],
           "personDeceased": true,
+          "type": "title",
           "date": "1336-11-14"
         },
         {
-          "type": "death",
           "person": "Arnold von Uissigheim",
           "personTitle": [
             "der Junge",
             "Ritter"
           ],
+          "type": "death",
           "diedOn": "1336-11-14",
           "date": "1336-11-14"
         }
@@ -972,18 +1050,24 @@
       "english": "The current location is certainly not the original one. This emerges from the notes of the Jesuit and historical researcher Hans Gamans, which he made on the occasion of his visit to Uissigheim in 1641; they also enable the reconstruction of the original inscription text. At that time, the gravestone was still placed in the middle of the church as the cover plate of a high grave resting on two stone bases. Gamans found the grave slab damaged back then: two beams that had fallen during renovation work two years earlier had broken off parts. The Jesuit had them brought in and recorded what he could decipher. Gamans also noted that the knight's feet originally rested on a lion.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans Gamans",
+          "type": "generic",
           "content": "recorded the inscription on Arnold von Uissigheim’s grave monument in the church at Uissigheim.",
           "date": "1641"
         },
         {
-          "date": "1641",
-          "text": "The grave monument of Arnold von Uissigheim stood in the middle of the church at Uissigheim."
+          "person": "Arnold von Uissigheim",
+          "personDeceased": true,
+          "type": "generic",
+          "content": "was commemorated by a grave monument standing in the middle of the church at Uissigheim.",
+          "date": "1641"
         },
         {
-          "date": "1639",
-          "text": "Falling beams damaged the grave monument of Arnold von Uissigheim during renovation work in the church at Uissigheim."
+          "person": "Arnold von Uissigheim",
+          "personDeceased": true,
+          "type": "generic",
+          "content": "was commemorated by a grave monument damaged by falling beams during renovation work in the church at Uissigheim.",
+          "date": "1639"
         }
       ]
     },
@@ -1000,8 +1084,8 @@
       "english": "Attempts at an explanation are difficult: The Lords of Uissigheim were possibly something like lords of their own church in their village church, who saw it as their family burial place and were therefore able to bring their interpretation of the end of Arnold von Uissigheim, Ritter to bear. They also made greater financial investments for their point of view and, soon after the events of 1336, won a not insignificant artist for the monumental stone. The iconography of the grave slab consciously points out that the end should not be seen as dishonorable: the condemned man is beheaded with his own sword (gladio subiit). And, as the chronicle reports point out: after confession and penance, he dies in peace with the church.",
       "guesses": [
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "type": "generic",
           "content": "belonged to the lords of Uissigheim, who may have regarded the village church as their family burial place and exercised rights over it.",
           "date": "1336"
         }

@@ -8,12 +8,12 @@
       "english": "Hans von Rosenberg, Ritter, Schultheiß, and the Nürnberg town judges recorded, on the testimony of Eckhard Neydung and Cristan Coler, that Eberhard Eck, a Nürnberg citizen, bequeathed his tithe at Heroldsberg to the New Hospital for the holding of memorial masses.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter",
             "Schultheiß zu Nürnberg"
           ],
+          "type": "generic",
           "content": "recorded Eberhard Eck’s bequest of his tithe at Heroldsberg to the New Hospital with the Nuremberg aldermen, on the testimony of Eckhard Neydung and Cristan Coler."
         }
       ]

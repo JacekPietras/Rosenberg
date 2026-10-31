@@ -8,27 +8,27 @@
       "english": "The five Provisors of HEINRICH III, Archbishop of Mainz, & of the Church of Mainz, draw up an inventory of the toll chest in Erenfels. We, NYCOLAUS de Lapide, Canon of the church of Mainz, & Hans de Randecken, knight, together with the honorable man Lord CUNONE de Valkinstein, Scholar of the church of Mainz, and also the strenuous men Eberhard von Rosenberg & Johanne de Beldirsheim, knights, Provisors of our Lord, Lord HEYNRICH, Archbishop of Mainz, & of his Church of Mainz, acknowledge... [that] we, as much on our own behalf as in the name of and for our aforementioned Compromisers, together with LUDOWICO de Ameneburg, scribe of the toll in Erinvels, have opened the Chest of the same toll on the day of the date of these presents, and that we have found in it seven hundred and eighty-eight pounds with ten Hallensian shillings in coins equivalent to it. In testimony of which matter, the seal of our said provision is appended to these presents on the morrow of the Chair of the blessed Apostle Peter, in the year of the Lord 1347.",
       "facts": [
         {
-          "type": "title",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "served as a provisor of the Archbishop of Mainz.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "served as a provisor of the Archbishop of Mainz."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "participated in the inventory of the Erenfels toll chest.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "participated in the inventory of the Erenfels toll chest."
         }
       ]
     }

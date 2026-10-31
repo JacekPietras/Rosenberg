@@ -8,20 +8,20 @@
       "english": "Sale of some interest, rents and goods in Dainbach to Kt Jost von Venningen and the DOH Mgh by Eberhard [X.] der Ältere von Rosenberg, Ritte",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Ältere",
             "Ritter"
           ],
+          "type": "generic",
           "content": "sold some interest, rents, and properties in Dainbach to Jost von Venningen and the Teutonic Order House in Mergentheim."
         },
         {
-          "type": "title",
           "person": "Jost von Venningen",
           "personTitle": [
             "Komtur zu Mergentheim"
-          ]
+          ],
+          "type": "title"
         }
       ]
     }

@@ -11,51 +11,51 @@
       "english": "Eberhard von Rosenberg asks Count Palatine Frederick, his cousin Ulrich von Rosenberg, to whom he has sold his district to Castle and City Boxberg, which is a Palatinate Manlehen, to sorrow; his cousins and eies Thomas and Jörg von Rosenberg join this bite.",
       "facts": [
         {
-          "type": "kin",
           "person": "Eberhard von Rosenberg",
+          "type": "kin",
           "of": "Ulrich von Rosenberg",
           "term": "Vetter"
         },
         {
-          "type": "kin",
           "person": "Thomas von Rosenberg",
+          "type": "kin",
           "of": "Eberhard von Rosenberg",
           "term": "Vetter"
         },
         {
-          "type": "kin",
           "person": "Jörg von Rosenberg",
+          "type": "kin",
           "of": "Eberhard von Rosenberg",
           "term": "Vetter"
         },
         {
-          "type": "generic",
           "person": "Thomas von Rosenberg",
+          "type": "generic",
           "content": "was named as a Lehnserbe of Eberhard von Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Jörg von Rosenberg",
+          "type": "generic",
           "content": "was named as a Lehnserbe of Eberhard von Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "sold his quarter of Boxberg Castle and town to Ulrich von Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "asked Count Palatine Friedrich to enfeoff Ulrich von Rosenberg with the quarter of Boxberg Castle and town that he had sold as a Palatine Mannlehen."
         },
         {
-          "type": "generic",
           "person": "Thomas von Rosenberg",
+          "type": "generic",
           "content": "joined Eberhard von Rosenberg’s petition for Ulrich von Rosenberg to receive the enfeoffment of the quarter of Boxberg Castle and town."
         },
         {
-          "type": "generic",
           "person": "Jörg von Rosenberg",
+          "type": "generic",
           "content": "joined Eberhard von Rosenberg’s petition for Ulrich von Rosenberg to receive the enfeoffment of the quarter of Boxberg Castle and town."
         }
       ],

@@ -8,26 +8,26 @@
       "english": "Head register: Hans von Riedern, Ritter, and Eberhard von Rosenberg, Ritter report to the provost of Mainz, Archbishop Baldewin, about their journey to and stay in Würzburg.  Full register: Hans von Riedern, Ritter, and Eberhard von Rosenberg, Ritter, Vogt of Dürn, report to Archbishop Baldewin of Trier, custodian of the Mainz chapter, that they rode to Würzburg at his behest and have both been there ever since. \"And have recruited what we thought would be the most useful and best.\" On the Friday after Jacob's Day (July 30), six gentlemen in the chapter elected von Wolfskehl[a], \"who holds the vests of the bishopric in common\"; and he has \"appointed himself for the position.\" In contrast, 17 canons have \"begged\" the chancellor. The chancellor intends to ride to Baldwin and seek justice before him. They advise the archbishop not to give a final answer to any embassy from Würzburg, but to await their oral report. They intend to remain in Würzburg and negotiate (in rede sin) with the city and those who hold the diocese. Count Berthold of Henneberg, the burgrave of Nuremberg, Lord Lucze and Lord Götz of Hohenlohe have themselves declared to the letter writers that they intend to hold on to the bishopric of Wolfskehl. Lucze and Götz of Hohenlohe hold Rotenburg, which is also against the chancellor. \"I have realized that I then, as we believe, will win good things around Rotenburg.\" They advise the archbishop to leave the continuation of negotiations with Count Heinrich von Rieneck and his wife von Rieneck of Hohenlohe to them and to inform the Vitztum of Aschaffenburg of this. Eberhard von Rosenberg has taken Lauda (as they write that Goltsteinen[c] should be protected from outside); he and other friends of Baldewin believe this would be advantageous for Baldewin, given the vacant domain of Rieneck. He would also have taken the village of Werbach (having taken possession of the village). But the one from Hanau and the one from Hohenlohe referred to a letter from Baldewin, \"that all fiefs should remain silent, and until now they wanted to speak to each other.\"[d] He therefore requests guidelines. \"Some lords have also stated that Wolfskehl had not appealed for the bosom and had said that he would also seek his rights before us.\"  - D. Herbipoli feria VI. post Jacobi. Under the seal of Eberhard von Rosenberg.",
       "facts": [
         {
-          "type": "title",
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Vogt zu Dürn"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "title"
+        },
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
           "content": "seized Lauda."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "generic",
           "content": "attempted to take Werbach, but Hanau and Hohenlohe invoked Balduin’s letter ordering fiefs to remain undisturbed."
         }
       ]

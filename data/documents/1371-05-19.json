@@ -8,27 +8,27 @@
       "english": "Konrad von Rosenberg, Vicar of Amberg, grants Osann, widow of Konrad the Zenger, a court charter regarding the estates at Hollenstein near Velburg, which she is to hold for usufruct in return for her home tax of 600 pounds Hellers. The children of Ulrich the Zenger are entitled to redeem the estates for two years, after which they become the free property of the usufructuary. S: Konrad von Rosenberg, Vicar of Amberg",
       "facts": [
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Amberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "issued a court letter to Osann, widow of Konrad the Zenger, concerning the estates at Hollenstein.",
           "personTitle": [
             "Vitzthum zu Amberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "issued a court letter to Osann, widow of Konrad the Zenger, concerning the estates at Hollenstein."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "sealed the court document.",
           "personTitle": [
             "Vitzthum zu Amberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "sealed the court document."
         }
       ]
     }

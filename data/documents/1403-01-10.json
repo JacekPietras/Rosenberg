@@ -9,27 +9,27 @@
       "english": "King Ruprecht permits Kunz von Rosenberg (son of the late Konrad von Rosenberg, Ritter, formerly Vitztum zu Amberg) and Konrad von Rosenberg, to have a reeve, aldermen, and a court in their village of Hohenstatt, situated near Rosenberg, C.",
       "facts": [
         {
-          "type": "parent",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Ritter",
             "Vizedom zu Amberg"
           ],
-          "of": "Kunz von Rosenberg",
-          "personDeceased": true
+          "personDeceased": true,
+          "type": "parent",
+          "of": "Kunz von Rosenberg"
         },
         {
-          "type": "death",
           "person": "Konrad von Rosenberg",
-          "diedBefore": "1403-01-11",
           "personTitle": [
             "Ritter",
             "Vizedom zu Amberg"
-          ]
+          ],
+          "type": "death",
+          "diedBefore": "1403-01-11"
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
+          "type": "generic",
           "content": "received King Ruprecht’s permission jointly with Konrad von Rosenberg to have a reeve, aldermen, and a court in their village of Hohenstatt near Rosenberg."
         }
       ]

@@ -8,43 +8,43 @@
       "english": "Ruprecht owes Konrad von Rosenberg, Vitztum zu Heidelberg, and his wife Margarethe von Hirschhorn 810 guilders from Ruprecht I, for which the same Minneberg von Kunz Mönch, bailiff zu Steinsberg, was redeemed, 1000 guilders, which the Count Palatine gave to Rosenberg's daughter, and 1000 guilders for himself, altogether 2810 guilders, for which Minneberg remains as collateral.",
       "facts": [
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitztum zu Heidelberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "spouse",
           "person": "Margarethe von Hirschhorn",
+          "type": "spouse",
           "of": "Konrad von Rosenberg",
           "ofTitle": [
             "Vitztum zu Heidelberg"
           ]
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "had a daughter to whom the Count Palatine had pledged money.",
           "personTitle": [
             "Vitztum zu Heidelberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "had a daughter to whom the Count Palatine had pledged money."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "was owed money by Ruprecht and also held claims to money pledged to his daughter and to himself.",
           "personTitle": [
             "Vitztum zu Heidelberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "was owed money by Ruprecht and also held claims to money pledged to his daughter and to himself."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "held Minneberg as security for debts owed by Ruprecht to him and Margarethe von Hirschhorn.",
           "personTitle": [
             "Vitztum zu Heidelberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "held Minneberg as security for debts owed by Ruprecht to him and Margarethe von Hirschhorn."
         }
       ]
     }

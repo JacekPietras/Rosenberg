@@ -16,7 +16,7 @@ The supported typed facts are:
 
 | `type`    | Required fields, in addition to `type`            | Optional fields                                                  | Meaning                                                       |
 |-----------|---------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------|
-| `generic` | `person`, `content` | `personTitle`, `personDeceased`, `date` | One simple, atomic claim about `person`. |
+| `generic` | Exactly one of `person` or `subject`, plus `content` | `personTitle`, `personDeceased`, `date` | One simple, atomic claim about a person or non-person subject. |
 | `parent`  | `person`, `of`                                    | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a parent of `of`.                                 |
 | `sibling` | `person`, `of`                                    | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a sibling of `of`.                                |
 | `spouse`  | `person`, `of`                                    | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a spouse of `of`, including widowhood.            |
@@ -78,7 +78,13 @@ title or generic fact. For example, a spouse fact can stand alone:
 
 ### Generic facts
 
-A `generic` object requires `person` and a non-empty `content` string. `person` identifies the
+A `generic` object requires exactly one of `person` or `subject`, and a non-empty `content` string.
+Use `subject` for a non-person entity such as a family, place, institution, object, or an
+unidentified figure described by a source. It is a non-empty literal description, never a person
+ID or an invented personal name. Subject-based claims do not create person identities or family
+relationships. Omit `personTitle` and `personDeceased` when using `subject`. Keep the same date,
+atomicity, source-support, and uncertainty rules as person-based claims.
+`person` identifies the
 subject using the same normalized name or confirmed ID rules as other types. Keep `content` a
 simple English continuation of a fact about the subject, for example
 `"witnessed the agreement at Boxberg."`. `content` must not repeat the subject's name or titles;

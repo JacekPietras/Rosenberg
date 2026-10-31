@@ -8,16 +8,16 @@
       "english": "The governors and councillors of Prince-Bishop Gabriel of Eichstätt—including Jheronimus von Rosenberg, Ritter, Hofmeister; Bernhart Artzt, provost of the collegiate church in Herrieden and canon of Eichstätt; the Eichstätt canons Karel von Absberg and Eberhard von Parsberg; the Eichstätt official Dr. Johann Ramelsbach; the prince-bishop’s chancellor Dr. Kilian Mönch; his steward at Nassenfels Wentzel von Wolfskehl; his landvogt at St. Willibald’s hill in Eichstätt Eberhard von Thürheim; Heinrich vom Stein zum Altenstein; and Steffan von Knöringen—settle by agreement the dispute between Abbot Walther and the convent of St. James’s Scottish monastery in Regensburg on one side, and Steffan Frech and the village community of Bitz on the other, concerning the chapel at Bitz and various dues.",
       "facts": [
         {
-          "type": "title",
           "person": "Jheronimus von Rosenberg",
           "personTitle": [
             "Ritter",
             "Hofmeister des Fürstbischofs von Eichstätt"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Jheronimus von Rosenberg",
+          "type": "generic",
           "content": "joined the prince-bishop’s councillors in settling by agreement the dispute concerning the chapel and dues at Bitz."
         }
       ]

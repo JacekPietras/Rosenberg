@@ -15,29 +15,29 @@
       "english": "Ruprecht granted Elisabeth von Erligheim, widow of Eberhard von Rosenberg, granted the foundation of a perpetual fair with property belonging to Boxberg Castle for the women's altar in Wölchingen.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Elisabeth von Erligheim",
+          "type": "spouse",
           "of": "vogt_zu_Lauda",
           "ofDeceased": true
         },
         {
-          "type": "death",
           "person": "vogt_zu_Lauda",
+          "type": "death",
           "diedBefore": "1393-06-24"
         },
         {
-          "type": "generic",
           "person": "Elisabeth von Erligheim",
+          "type": "generic",
           "content": "was authorized by Ruprecht to endow a perpetual Mass at the women’s altar in Wölchingen."
         },
         {
-          "type": "generic",
           "person": "Elisabeth von Erligheim",
+          "type": "generic",
           "content": "was authorized to fund the endowment with properties belonging to Boxberg Castle."
         },
         {
-          "type": "generic",
           "person": "Ruprecht",
+          "type": "generic",
           "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the women’s altar in Wölchingen with properties belonging to Boxberg Castle."
         }
       ]

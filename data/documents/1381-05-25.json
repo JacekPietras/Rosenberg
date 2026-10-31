@@ -11,34 +11,34 @@
       "english": "Wiprecht von Riedern, Bailli of the Hospitaller Houses in Franconia, and the aforementioned commanders of the individual Franconian houses of the Hospitaller Order, sold the castle and town of Boxberg to Konrad and Eberhard von Rosenberg as well as to the Edelknecht Arnold von Rosenberg, Ritter for 18,000 guilders.\n\nZeitschrift für die Geschichte des Oberrheins. 24. 1872\n\nBrother Wipprecht von Ryden, Bailiff of the houses in Franconia; Dieß von Cellingen, Commander at Rotenburg; Arnold von Berlichingen, Commander at Hall; Konrad Wolfsdörffer, Commander at Biebelried¹; Hans von Gundelsingen, Commander at Erningen²; Hans Ludener, Commander at Mergentheim; and Brother Hans Merklin, Commander at Würzburg, and the assembly of the convents of the above-named houses of the Order of St. John, sell, by decision of the chapter and with the approval of Brother Konrad von Brunnsperg, Master in German lands—as they are burdened with heavy debts \"among Jews and Christians\"—to Konrad and Eberhard von Rosenberg and to the Edelknecht Konrad and Arnold von Rosenberg, Ritter for 18,000 guilders in gold their castle and town at Boxberg, with all rights and appurtenances, furthermore the rights of church patronage at Wölchingen, Schillingstat, Assumstadt, and Bogestat, and the properties of the parish of Wölchingen. The buyers shall, in addition to the payment of the purchase price, give to the lord at the Cathedral in Würzburg 4 Malter of wheat and 10 pounds of Heller in Würzburg currency, and to Engelhard von Rosenberg and his heirs of Grefewinden on St. Martin's Day 20 pounds of Heller, and shall, once and for all, release and free the Order from these two obligations and some other insignificant ones which they have to take over. Given in 1381 on St. Urban the Pope's day. Original on parchment. Of 12 seals (of Master Konrad von Brunšperg, of the Bailiff, and of the Commanders of the above-named houses and of the houses at Rotenburg, Hall, Erningen, and Mergentheim), only the first has fallen off; 11 are still attached.",
       "facts": [
         {
-          "type": "title",
-          "person": "vogt_zu_Lauda",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "vogt_zu_Lauda",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title"
+        },
+        {
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "purchased Boxberg Castle and town with Konrad von Rosenberg, Ritter, and Konrad and Arnold von Rosenberg, Edelknechte, from the Order of St. John."
         },
         {
-          "type": "generic",
           "person": "arnold_brother_of_vogt_zu_Lauda",
           "personTitle": [
             "Edelknecht"
           ],
+          "type": "generic",
           "content": "purchased Boxberg Castle and town with Konrad and Eberhard von Rosenberg, Ritter, and Konrad von Rosenberg, Edelknecht, from the Order of St. John."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Lauda",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "undertook, together with the other purchasers, to discharge the rents owed by the Order of St. John to Würzburg Cathedral and Engelhard von Rosenberg from the Boxberg properties."
         }
       ],

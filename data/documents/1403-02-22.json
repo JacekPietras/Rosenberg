@@ -11,48 +11,48 @@
       "english": "Engelhard von Rosenberg, his son Eberhard von Rosenberg, and Anne von Bebenburg, Eberhard's wife, sold their property and dues in Schweinberg to the staunch servant Heintz Stumpff of Schweinberg and his wife Anne for 200 fl. rh. and 1/2 fuder of wine (Taubermaß). The property was held as freehold property and the dues were held as a fiefdom. Any damages incurred by the purchasers within a year and day from third-party claims must be compensated within one month upon notice of default; otherwise, upon notice of default within eight days, each purchaser must be kept with a servant or horse in an open inn in Hardheim until payment is received.\n\nSeal: Engelhard von Rosenberg, seller; Eberhard von Rosenberg, his son, seller",
       "facts": [
         {
-          "type": "parent",
           "person": "Engelhard von Rosenberg",
+          "type": "parent",
           "of": "Eberhard von Rosenberg"
         },
         {
-          "type": "spouse",
           "person": "Eberhard von Rosenberg",
+          "type": "spouse",
           "of": "Anne von Bebenburg"
         },
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
+          "type": "generic",
           "content": "sold the property and dues in Schweinberg to Heintz Stumpff of Schweinberg and his wife Anne, jointly with Eberhard von Rosenberg and Anne von Bebenburg; the property was freehold and the dues were held as fiefs."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "sold their property and dues in Schweinberg to Heintz Stumpff of Schweinberg and his wife Anne, jointly with his father Engelhard von Rosenberg and Anne von Bebenburg."
         },
         {
-          "type": "generic",
           "person": "Anne von Bebenburg",
+          "type": "generic",
           "content": "sold their property and dues in Schweinberg to Heintz Stumpff of Schweinberg and his wife Anne, jointly with Engelhard and Eberhard von Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
+          "type": "generic",
           "content": "was obliged with the other sellers to compensate the buyers for losses from third-party claims arising within a year and a day, and to perform Einlager at Hardheim if they failed to pay."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "was obliged with the other sellers to compensate the buyers for losses from third-party claims arising within a year and a day, and to perform Einlager at Hardheim if they failed to pay."
         },
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
+          "type": "generic",
           "content": "sealed the charter as a seller."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "sealed the charter as a seller."
         }
       ],

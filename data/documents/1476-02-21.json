@@ -8,26 +8,26 @@
       "english": "Archbishop Dietrich von Mainz praised the castle keep the castle fried to Boxberg between his predecessor Adolf and the Count Palatine Frederick and Bishop Rudolf von Würzburg.",
       "facts": [
         {
-          "type": "title",
-          "person": "Dietrich von Mainz",
-          "personTitle": [
-            "Erzbischof von Mainz"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Dietrich von Mainz",
           "personTitle": [
             "Erzbischof von Mainz"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Dietrich von Mainz",
+          "personTitle": [
+            "Erzbischof von Mainz"
+          ],
+          "type": "generic",
           "content": "promised to uphold the castle peace at Boxberg."
         },
         {
-          "type": "generic",
           "person": "Friedrich von der Pfalz",
           "personTitle": [
             "Pfalzgraf"
           ],
+          "type": "generic",
           "content": "concluded the castle peace at Boxberg jointly with Archbishop Adolf of Mainz and Bishop Rudolf of Würzburg."
         }
       ],

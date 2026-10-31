@@ -8,17 +8,17 @@
       "english": "Dr. Hermann von Rosenberg, scholaster of the Mainz Mariengredenstift and vicar general of Archbishop Dietrich of Mainz, produced an authenticated copy, at the request of Duke Stephan of Bavaria, of King Friedrich III’s 5 August 1442 charter confirming legal protections and privileges for Mainz’s clergy. Konrad von Bensheim and Rudolf von Seligenstadt were witnesses. Imperial notary Eberhard Rumelfels of Forchheim certified the document.",
       "facts": [
         {
-          "type": "title",
           "person": "Hermann von Rosenberg",
           "personTitle": [
             "Dr.",
             "Scholaster des Mainzer Mariengredenstifts",
             "Generalvikar des Mainzer Erzbischofs Dietrich"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Hermann von Rosenberg",
+          "type": "generic",
           "content": "authenticated, at the request of Duke Stephan of Bavaria, a copy of King Friedrich III’s 5 August 1442 charter confirming privileges for Mainz’s clergy."
         }
       ]

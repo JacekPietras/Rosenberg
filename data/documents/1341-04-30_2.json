@@ -8,11 +8,11 @@
       "english": "Sale of a grain rent in Simmringen to Konrad Vilmann, mayor of Niedernhall, by Eberhard von Rosenberg, Vogt zu Nagelsberg, and his wife Wyclo",
       "facts": [
         {
-          "type": "spouse",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Vogt zu Nagelsberg"
           ],
+          "type": "spouse",
           "of": "Wyclo"
         }
       ]

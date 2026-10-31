@@ -8,20 +8,20 @@
       "english": "Eberhard von Rosenberg der Jüngere settles disputes between Eberhard von Rosenberg der Ältere and Hans Pfahl over the rents of a farm in Rosenberg",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "settled a dispute between Eberhard von Rosenberg der Ältere and Hans Pfahl over rents from a farm at Rosenberg.",
           "personTitle": [
             "der Jüngere"
-          ]
+          ],
+          "type": "generic",
+          "content": "settled a dispute between Eberhard von Rosenberg der Ältere and Hans Pfahl over rents from a farm at Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "was in dispute with Hans Pfahl over rents from a farm at Rosenberg.",
           "personTitle": [
             "der Ältere"
-          ]
+          ],
+          "type": "generic",
+          "content": "was in dispute with Hans Pfahl over rents from a farm at Rosenberg."
         }
       ]
     }

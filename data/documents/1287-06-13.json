@@ -14,12 +14,12 @@
       "english": "Count Rudolf I of Wertheim, together with Konrad von Uissigheim, Ritter, and Arnold genannt Bleiche, Ritter, guarantees to the dean and chapter of Aschaffenburg that the heirs of his late brother Boppo IV will warrant the farm at Mönchberg that was sold to the abbey.",
       "facts": [
         {
-          "type": "generic",
           "person": "Konrad von Uissigheim",
-          "content": "served as guarantor to the dean and chapter of Aschaffenburg for the warranty by Boppo IV’s heirs of the farm at Mönchberg.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "served as guarantor to the dean and chapter of Aschaffenburg for the warranty by Boppo IV’s heirs of the farm at Mönchberg."
         }
       ],
       "img": [

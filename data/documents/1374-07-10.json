@@ -8,19 +8,19 @@
       "english": "A: Konrad von Rosenberg, Vicar of Amberg E: Ensdorf Monastery Court letter in the monastery's lawsuit regarding the use and profits of the farm at Eitlbrunn, on which Mittermaier resides, and the rents that are to accrue to the monastery annually. With the insertion of the deed of Hans Sinzenhofer von Stockenfels and his brothers Konrad and Friedrich from 1362 VIII 17 (= Deed No. 140). Or; Perg.",
       "facts": [
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Amberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "issued a court letter in Ensdorf Monastery’s lawsuit concerning the use and possession of a farm at Eitlbrunn and the annual rent due to the monastery.",
           "personTitle": [
             "Vitzthum zu Amberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "issued a court letter in Ensdorf Monastery’s lawsuit concerning the use and possession of a farm at Eitlbrunn and the annual rent due to the monastery."
         }
       ]
     }

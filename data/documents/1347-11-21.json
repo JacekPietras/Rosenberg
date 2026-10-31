@@ -9,12 +9,12 @@
       "english": "1347, November 21, Wednesday after Elisabeth - Emperor Charles IV grants Kraft von Hohenlohe the imperial fees held by Eberhard von Rosenberg, Vogt of Dürn",
       "facts": [
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "held imperial dues that Emperor Charles IV granted to Kraft von Hohenlohe.",
           "personTitle": [
             "Vogt zu Dürn"
-          ]
+          ],
+          "type": "generic",
+          "content": "held imperial dues that Emperor Charles IV granted to Kraft von Hohenlohe."
         }
       ]
     },
@@ -37,12 +37,12 @@
       ],
       "facts": [
         {
-          "type": "generic",
           "person": "Kraft von Hohenlohe",
-          "content": "acquired serfs in the Ohrnwald from [vogt_zu_Durn].",
           "personTitle": [
             "Graf"
-          ]
+          ],
+          "type": "generic",
+          "content": "acquired serfs in the Ohrnwald from [vogt_zu_Durn]."
         }
       ]
     },
@@ -70,8 +70,8 @@
       "english": "King Charles IV for Count Kraft of Hohenlohe, concerning the serfs in the Ohrenwald and on the Kocher river, whom Eberhard von Rosenberg had held on behalf of the Empire. Given at Nuremberg on the Wednesday after Saint Elizabeth's Day, 1347.",
       "facts": [
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
+          "type": "generic",
           "content": "held imperial serfs in the Ohrenwald and along the Kocher on behalf of the Empire."
         }
       ]
@@ -83,20 +83,20 @@
       "english": "We, Karl, by God's grace Roman king, at all times increaser of the Empire, and king of Bohemia, acknowledge and make known openly with this letter to all who see or hear it read, that we have considered the useful and faithful service that the noble, our dear faithful Kraft von Hohenloch has rendered us and shall and may render; we have given and do give to him and his heirs with this letter all the proper dues that belong to us and the Empire, which are situated and located in the Ohrenwald and on the Kocher, and namely all the dues that Eberhard von Rosenberg, vogt at Dürn, formerly held on behalf of the Empire, in which tithe districts they are located, however they are called and named. He and his heirs shall have and enjoy these same aforementioned dues and shall be protected and warranted by us without deceit. In witness thereof, we give to him and his heirs this letter, sealed with our seal. Which is given at Nuremberg on the Wednesday after St. Elizabeth's day, when one counted after Christ's birth thirteen hundred years and thereafter in the seventh and fortieth year [1347], in the second year of our reign.",
       "facts": [
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "held imperial serfs in the Ohrenwald and along the Kocher on behalf of the Empire.",
           "personTitle": [
             "Vogt zu Dürn"
-          ]
+          ],
+          "type": "generic",
+          "content": "held imperial serfs in the Ohrenwald and along the Kocher on behalf of the Empire."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "had his imperial serfs in the Ohrenwald and along the Kocher granted to Kraft von Hohenlohe and his heirs by Emperor Charles IV.",
           "personTitle": [
             "Vogt zu Dürn"
-          ]
+          ],
+          "type": "generic",
+          "content": "had his imperial serfs in the Ohrenwald and along the Kocher granted to Kraft von Hohenlohe and his heirs by Emperor Charles IV."
         }
       ]
     }

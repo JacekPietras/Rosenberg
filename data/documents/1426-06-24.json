@@ -11,45 +11,45 @@
       "english": "Eberhard von Gauangelloch and his wife Anna von Rosenberg sold to Mr. Eberhard von Seinsheim, Deutschmeister (Master of the German Order in German and French lands) and the Teutonic Order a third of the great tithe in Kirchhausen and a farm in Kirchhausen with all rights and income for 910 fl., whereby the aforementioned guarantors are to perform their service in Waldhilsbach.\n\nStaatsarchiv Ludwigsburg JL 425 Bd 23 Qu. 74\n\nSale of a farm in Kirchhausen to DM Eberhard von Seinsheim by Kunz Wolff von Biberach], 1430 [June 24; only the year is mentioned]; Sale of 1/3 of the large tithe and his share of the small tithe as well as a farm in Kirchhausen to DM Eberhard von Seinsheim by Eberhard von Gauangelloch, Ritter, and his wife Anna von Rosenberg,",
       "facts": [
         {
-          "type": "spouse",
           "person": "Anna von Rosenberg",
+          "type": "spouse",
           "of": "Eberhard von Gauangelloch",
           "ofTitle": [
             "Ritter"
           ]
         },
         {
-          "type": "generic",
           "person": "Eberhard von Gauangelloch",
-          "content": "sold, with his wife Anna von Rosenberg, one third of the great tithe at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, and the Teutonic Order.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "sold, with his wife Anna von Rosenberg, one third of the great tithe at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, and the Teutonic Order."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Gauangelloch",
-          "content": "sold, with his wife Anna von Rosenberg, a farm at Kirchhausen with all rights and revenues to Eberhard von Seinsheim, Deutschmeister, and the Teutonic Order.",
           "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "generic",
+          "content": "sold, with his wife Anna von Rosenberg, a farm at Kirchhausen with all rights and revenues to Eberhard von Seinsheim, Deutschmeister, and the Teutonic Order."
         },
         {
-          "type": "generic",
           "person": "Anna von Rosenberg",
+          "type": "generic",
           "content": "sold, with her husband Eberhard von Gauangelloch, one third of the great tithe at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, and the Teutonic Order."
         },
         {
-          "type": "generic",
           "person": "Anna von Rosenberg",
+          "type": "generic",
           "content": "sold, with her husband Eberhard von Gauangelloch, a farm at Kirchhausen with all rights and revenues to Eberhard von Seinsheim, Deutschmeister, and the Teutonic Order."
         },
         {
-          "type": "title",
           "person": "Eberhard von Seinsheim",
           "personTitle": [
             "Deutschmeister"
-          ]
+          ],
+          "type": "title"
         }
       ],
       "img": [

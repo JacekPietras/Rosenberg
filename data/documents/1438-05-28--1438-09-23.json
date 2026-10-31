@@ -7,20 +7,20 @@
       "english": "Continuation of the trial between Heilbronn and the Ritter von Neipperg over demarcation disputes in Böckingen. — 1438 May 26 to September 23. Count Palatine Otto summons the city of Heilbronn to a hearing in Ladenburg on Monday after St. Matthew's Day, September 22, regarding the attack on Böckingen, initially the following day. —\n\nThe sealer is his court master, Konrad von Rosenberg, Ritter, with his own seal, half of which is ours at this time. — Ladenburg 1438 (quarta post Egidii) Sept. 3. Count Palatine Otto, Count Palatine Ludwig's guardian, and his councilors, Bishop Friedrich of Worms, Hans von Sickingen, Konrad von Rosenberg, Hofmeister, Wiprecht von Helmstatt der Jüngere, von Sickingen, Vogt of Bretten, Sigfrid von Venningen, Ritter, Heinrich von Fleckenstein der Ältere, Konrad von Lengenfeld, Hartmann von Handschuchsheim, Hans von Venningen Vitzum of Neustadt, Michel Not von Mosbach, and Eberhard von Sickingen, Vogt of Heidelberg, decide between Eberhard and Reinhard von Neipperg and the city of Heilbronn: regarding the attack at Böckingen, all Heilbronn and Böckingen over the age of 16 are to swear their innocence; regarding the pasture, both parties are to provide information by St. Martin's Day and carry out a destruction; regarding the costs of the defeated servants, the people of Neipperg are not to be prosecuted for the time being. The oaths are to be taken before one of the Palatine councilors on the Monday after Luke (October 20) in Heilbronn at the town hall, and in Böckingen before the church. — Ladenburg 1438 (Tuesday after Matthew), September 23. — Two simultaneous copies; the second is dated Saint Matthew; according to the summons of September 3, the first date is the correct one.",
       "facts": [
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Ritter",
             "Hofmeister"
           ],
+          "type": "generic",
           "content": "sealed the summons to the hearing in Ladenburg with his own seal."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Hofmeister"
           ],
+          "type": "generic",
           "content": "served as a councilor to Count Palatine Otto and took part in the decision between the von Neipperg family and Heilbronn."
         }
       ]

@@ -8,22 +8,22 @@
       "english": "Bishop Hans von Brunn still owed Jutta von Rosenberg and her son Anselm von Rosenberg a further 500 florins, which he added to the 4,000 florins secured on Brassoldshaim.\n\nContext from the immediately preceding entry (no. 1747): Jutta was the widow of Ulrich von Rosenberg, and Anselm von Rosenberg was her son. The 4,000 florins mentioned there were secured by the pledge of Brassoldshaim.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Brunn",
           "personTitle": [
             "Bischof von Würzburg"
           ],
+          "type": "generic",
           "content": "added a further 500 florins to the 4,000 florins he owed Jutta von Rosenberg and her son Anselm von Rosenberg, secured on Brassoldshaim."
         },
         {
-          "type": "spouse",
           "person": "Jutta von Rosenberg",
+          "type": "spouse",
           "of": "Ulrich von Rosenberg",
           "ofDeceased": true
         },
         {
-          "type": "parent",
           "person": "Jutta von Rosenberg",
+          "type": "parent",
           "of": "Anselm von Rosenberg"
         }
       ],

@@ -15,26 +15,26 @@
       "english": "Ruprecht confirms the inheritance bequeathed by Eberhard von Rosenberg to his wife Elisabeth von Erligheim, including property belonging to Boxberg.",
       "facts": [
         {
-          "type": "generic",
           "person": "vogt_zu_Lauda",
-          "content": "had granted a Wittum to his wife Elisabeth von Erligheim.",
-          "personDeceased": true
+          "personDeceased": true,
+          "type": "generic",
+          "content": "had granted a Wittum to his wife Elisabeth von Erligheim."
         },
         {
-          "type": "spouse",
           "person": "Elisabeth von Erligheim",
+          "type": "spouse",
           "of": "vogt_zu_Lauda",
           "ofDeceased": true
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Lauda",
-          "content": "had endowed the Wittum with properties belonging to Boxberg.",
-          "personDeceased": true
+          "personDeceased": true,
+          "type": "generic",
+          "content": "had endowed the Wittum with properties belonging to Boxberg."
         },
         {
-          "type": "generic",
           "person": "Ruprecht",
+          "type": "generic",
           "content": "confirmed the Wittum granted by [vogt_zu_Lauda] to Elisabeth von Erligheim."
         }
       ]

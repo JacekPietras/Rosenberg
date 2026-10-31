@@ -8,19 +8,19 @@
       "english": "Emperor Maximilian I forbids the goods of those suspected of participating in the assault and capture of merchants travelling under Bamberg’s safe conduct near Forchheim from being acquired, taken as fiefs, or concealed or transferred until the accused clear themselves before the imperial chamber judge and receive a certificate. The named suspects include Lienhart von Rosenberg, Amtmann at Offenhain, and Zeisel von Rosenberg der Junge.",
       "facts": [
         {
-          "type": "generic",
           "person": "Lienhart von Rosenberg",
           "personTitle": [
             "Amtmann zu Offenhain"
           ],
+          "type": "generic",
           "content": "was named among those suspected of participating in the assault and capture of merchants traveling under Bamberg’s safe conduct near Forchheim."
         },
         {
-          "type": "generic",
           "person": "Zeisel von Rosenberg",
           "personTitle": [
             "der Junge"
           ],
+          "type": "generic",
           "content": "was named among those suspected of participating in the assault and capture of merchants traveling under Bamberg’s safe conduct near Forchheim."
         }
       ]

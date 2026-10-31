@@ -8,12 +8,12 @@
       "english": "Archbishop Konrad of Mainz writes to the town of Rothenburg ob der Tauber. He wants the dispute between Count Michel of Wertheim and the town of Rothenburg settled, and asks the townspeople to attend a meeting at Bischofsheim an der Tauber on 'Saturday evening after St Margaret's day' (the date wording is uncertain), where he will also be present. If the townspeople need help summoning their people to the meeting or escorting them there safely, they should contact Eberhard von Rosenberg, his Amtmann at Bischofsheim.",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "was the person Archbishop Konrad von Mainz directed Rothenburg to contact if it needed help summoning townspeople to or safely escorting them to the meeting at Bischofsheim an der Tauber.",
           "personTitle": [
             "Amtmann zu Bischofsheim"
-          ]
+          ],
+          "type": "generic",
+          "content": "was the person Archbishop Konrad von Mainz directed Rothenburg to contact if it needed help summoning townspeople to or safely escorting them to the meeting at Bischofsheim an der Tauber."
         }
       ]
     }

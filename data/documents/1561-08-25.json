@@ -8,133 +8,133 @@
       "english": "Philipp Jakob von Rosenberg zu Rosenberg, Kunz von Rosenberg zu Waldmannshofen, Hans Casimir von Rosenberg zu Rosenberg, Zeisolf von Rosenberg zu Haldenbergstetten, Anna von Rosenberg born. Krantz von Geispitzheim, widow Balthasar von Rosenbergs, also Wilhelm Krantz von Geispitzheim and Wolf von Weingarten as convine guardian of the suroned sons Friedrich and Hans Christoph des Balthasar von Rosenberg, give their agnatical consensus on the insurized contract for the Boxberg contract on 24. July 1561. Witnesses and co-sealists: Philipp Soldan, Vogt von Rieneck zu Urspringen; Albrecht von Adelsheim, mainzischer Amtmann zu Krautheim, and Hans von Finsterlohr zu Laudenbach.",
       "facts": [
         {
-          "type": "death",
           "person": "Balthasar von Rosenberg",
+          "type": "death",
           "diedBefore": "1561-08-26"
         },
         {
-          "type": "generic",
           "person": "Philipp Jakob von Rosenberg",
-          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561.",
           "personTitle": [
             "zu Rosenberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "zu Waldmannshofen"
           ],
+          "type": "generic",
           "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
         },
         {
-          "type": "generic",
           "person": "Hans Casimir von Rosenberg",
           "personTitle": [
             "zu Rosenberg"
           ],
+          "type": "generic",
           "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
         },
         {
-          "type": "generic",
           "person": "Zeisolf von Rosenberg",
           "personTitle": [
             "zu Haldenbergstetten"
           ],
+          "type": "generic",
           "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
         },
         {
-          "type": "spouse",
           "person": "Anna von Rosenberg geb. Krantz von Geispitzheim",
+          "type": "spouse",
           "of": "Balthasar von Rosenberg",
           "ofDeceased": true
         },
         {
-          "type": "generic",
           "person": "Anna von Rosenberg geb. Krantz von Geispitzheim",
+          "type": "generic",
           "content": "gave her consent to the inserted agreement transferring Boxberg dated 24 July 1561."
         },
         {
-          "type": "generic",
           "person": "Wilhelm Krantz von Geispitzheim",
+          "type": "generic",
           "content": "served as guardian for Friedrich von Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Wilhelm Krantz von Geispitzheim",
+          "type": "generic",
           "content": "served as guardian for Hans Christoph von Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Wolf von Weingarten",
+          "type": "generic",
           "content": "served as guardian for Friedrich von Rosenberg."
         },
         {
-          "type": "generic",
           "person": "Wolf von Weingarten",
+          "type": "generic",
           "content": "served as guardian for Hans Christoph von Rosenberg."
         },
         {
-          "type": "parent",
           "person": "Balthasar von Rosenberg",
           "personDeceased": true,
+          "type": "parent",
           "of": "Friedrich von Rosenberg"
         },
         {
-          "type": "parent",
           "person": "Balthasar von Rosenberg",
           "personDeceased": true,
+          "type": "parent",
           "of": "Hans Christoph von Rosenberg"
         },
         {
-          "type": "title",
           "person": "Philipp Soldan",
           "personTitle": [
             "Vogt von Rieneck zu Urspringen"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "title",
           "person": "Albrecht von Adelsheim",
           "personTitle": [
             "mainzischer Amtmann zu Krautheim"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Hans von Finsterlohr",
           "personTitle": [
             "zu Laudenbach"
           ],
+          "type": "generic",
           "content": "witnessed the agreement."
         },
         {
-          "type": "generic",
           "person": "Hans von Finsterlohr",
           "personTitle": [
             "zu Laudenbach"
           ],
+          "type": "generic",
           "content": "co-sealed the agreement."
         },
         {
-          "type": "generic",
           "person": "Philipp Soldan",
+          "type": "generic",
           "content": "witnessed the agreement."
         },
         {
-          "type": "generic",
           "person": "Philipp Soldan",
+          "type": "generic",
           "content": "co-sealed the agreement."
         },
         {
-          "type": "generic",
           "person": "Albrecht von Adelsheim",
+          "type": "generic",
           "content": "witnessed the agreement."
         },
         {
-          "type": "generic",
           "person": "Albrecht von Adelsheim",
+          "type": "generic",
           "content": "co-sealed the agreement."
         }
       ],

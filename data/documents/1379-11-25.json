@@ -10,26 +10,26 @@
       "english": "Archbishop Adolf of Mainz acknowledges that he has become indebted to the Jews Abraham von Jagstberg and Gottschalk, residing in Mergentheim, because of a document valued at 4,000 guilders that he had redeemed from them. He promises to repay this sum by February 22 (Cathedra Petri), otherwise undertaking to pay weekly interest of two old hellers per guilder. He has appointed Hans von Rosenberg, Ritter, the Keller of Miltenberg Nikolaus, the Dürn official Markward, the [Tauber-]Bischofsheim official Egen Seman, and the Külsheim official Eberhard von Grumbach as sureties, who are to hold Einlager in Mergentheim if necessary.",
       "facts": [
         {
-          "type": "title",
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "served as a surety for Archbishop Adolf of Mainz’s debt to Abraham von Jagstberg and Gottschalk of Mergentheim."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "was to hold Einlager in Mergentheim if required."
         }
       ]

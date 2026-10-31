@@ -11,19 +11,19 @@
       "english": "Eberhard Schenk von Rossberg, Ritter, and his wife Agnes sell to Konrad von Uissigheim, son of the late Eberhard von Uissigheim, their castle and residence as well as their farm and all appurtenances in the village and district of Veitshöchheim. The sale excludes only two annual rents. The buyer has paid them 1,900 pounds in Würzburg Heller. The sellers transfer the stated properties to him and warrant the sale. They also provide the buyer with the brothers Gotfried and Dietrich Lamprecht, Dietrich Geyer, and Weiprecht von Grumbach as guarantors, bound to enter custody in Würzburg. The document was given in 1372 on the Saturday next after the feast of the Holy New Year. Issuers: Eberhard Schenk von Rossberg and his wife Agnes. Recipient: Konrad von Uissigheim.",
       "facts": [
         {
-          "type": "parent",
           "person": "Eberhard von Uissigheim",
           "personDeceased": true,
+          "type": "parent",
           "of": "Konrad von Uissigheim"
         },
         {
-          "type": "generic",
           "person": "Konrad von Uissigheim",
+          "type": "generic",
           "content": "purchased the castle, residence, and farm in Veitshöchheim from Eberhard Schenk von Rossberg and his wife Agnes."
         },
         {
-          "type": "death",
           "person": "Eberhard von Uissigheim",
+          "type": "death",
           "diedBefore": "1372-01-04"
         }
       ]

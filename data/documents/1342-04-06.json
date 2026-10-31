@@ -11,18 +11,18 @@
       "english": "Alheit von Uissigheim, die jüngere Ritterin, bequeaths her farm there to the early mass in Uissigheim in the event of her death, 1/2 acre of meadow and 2 acres of fields to the pastor of Uissigheim for one anniversary. She further bequeaths the aforementioned meadows and fields to an eternal light in Uissigheim, and finally, her house in Bischofsheim and the meadows in Hochhausen to the virgin Hyldegunde of Steinfeld, 1 1/2 acres of fields for the purchase of wafers.\n\nSealers: Alheit von Uissigheim, exhibitor; Eberhard, pastor of Uissigheim; Erkinger, Ritter; Engelhard von Rosenberg, Ritter; Heinrich von Uissigheim, Knecht",
       "facts": [
         {
-          "type": "title",
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "sealed Alheit von Uissigheim’s testament."
         }
       ],

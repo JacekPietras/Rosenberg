@@ -9,20 +9,20 @@
       "english": "Konrad Otte and his wife Jutta were granted four Morgen of vineyards [in Impfingen] in return for an annual rent of 24 shillings in Bischofsheim Heller. They are to pay this rent each year to the Präsenzmeister (presencier) and canons (tvmherren) of Aschaffenburg collegiate church fourteen days after 11 November (the feast of Saint Martin). One vineyard lies on the Kirchenberg, another on the Höhberg. As collateral (vnderphande, also called vrsacz elsewhere), the tenants transfer to the collegiate church three Morgen of arable land and vineyard on the hill called Papst, adjoining fields belonging to Golen and a vineyard belonging to Elgast. They also transfer five Viertel [Morgen] of vineyard on the Hvntzenberg, adjoining a field belonging to Lemelerin and the vineyard of Billung Hake. The collateral was transferred before Engelhard von Rosenberg, Amtmann zu Grünsfeld, and before Heinrich Steheler, Heimbürge (heinburgere), and Konrad Müller, Heinrich Wortwin, Ruker, Heinrich Stechel, and Konrad Gnannen, lay judges in Impfingen. For greater security, the Heimbürgen and lay judges of Impfingen also swore before Engelhard von Rosenberg and Konrad Müller and Konrad Zaumelin, citizens and lay judges of Tauberbischofsheim, that the transferred collateral was of equal or greater value than the granted vineyards. The tenants undertake to keep the vineyards in good cultivation and not to encumber them with other dues. In the event of inheritance, the vineyards may pass to no more than two heirs and are not to be divided further. If the agreement is breached, the vineyards and collateral revert to Aschaffenburg collegiate church.",
       "facts": [
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
-          "content": "witnessed the transfer of the pledged fields and vineyards to Aschaffenburg collegiate church.",
           "personTitle": [
             "Amtmann zu Grünsfeld"
-          ]
+          ],
+          "type": "generic",
+          "content": "witnessed the transfer of the pledged fields and vineyards to Aschaffenburg collegiate church."
         },
         {
-          "type": "generic",
           "person": "Engelhard von Rosenberg",
-          "content": "heard the Heimbürgen and lay judges of Impfingen swear that the collateral was of equal or greater value than the vineyards granted to Konrad Otte and Jutta.",
           "personTitle": [
             "Amtmann zu Grünsfeld"
-          ]
+          ],
+          "type": "generic",
+          "content": "heard the Heimbürgen and lay judges of Impfingen swear that the collateral was of equal or greater value than the vineyards granted to Konrad Otte and Jutta."
         }
       ],
       "img": [

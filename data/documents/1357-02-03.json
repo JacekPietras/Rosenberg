@@ -8,8 +8,8 @@
       "english": "Eberhard, Count of Wertheim, grants his wife Katherin the village of Uffingen, which he gave her as a dowry, and later transferred to the honorable people Eberhard von Rosenberg der Jüngere and Margarete von Thüngen, the former housewives of Eberhard von Rosenberg der Ältere, the villages of Dertingen and Waldbüttelbrunn, so that she will receive 50 Pfennig (Würzburg currency) and 50 Malters of Wertheim grain annually from Dertingen and will own Waldbüttelbrunn with all rights until redemption.\n\nSealers: the Count; Eberhard Rüde; Ulrich Pavey; both knights; Arnold von Talheim; Herman Seman; Walther Kotbuss; noble servants",
       "facts": [
         {
-          "type": "spouse",
           "person": "Margaretha von Thüngen",
+          "type": "spouse",
           "of": "Eberhard von Rosenberg",
           "ofTitle": [
             "der Ältere"
@@ -17,32 +17,32 @@
           "ofDeceased": true
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "had received the village of Uffingen as a pledge from Eberhard, Count of Wertheim.",
           "personTitle": [
             "der Jüngere"
-          ]
-        },
-        {
+          ],
           "type": "generic",
-          "person": "Margaretha von Thüngen",
           "content": "had received the village of Uffingen as a pledge from Eberhard, Count of Wertheim."
         },
         {
+          "person": "Margaretha von Thüngen",
           "type": "generic",
-          "person": "Eberhard von Wertheim",
-          "content": "pledged Dertingen and Waldbüttelbrunn to his wife Katherine as substitute properties for Uffingen.",
-          "personTitle": [
-            "Graf zu Wertheim"
-          ]
+          "content": "had received the village of Uffingen as a pledge from Eberhard, Count of Wertheim."
         },
         {
-          "type": "death",
+          "person": "Eberhard von Wertheim",
+          "personTitle": [
+            "Graf zu Wertheim"
+          ],
+          "type": "generic",
+          "content": "pledged Dertingen and Waldbüttelbrunn to his wife Katherine as substitute properties for Uffingen."
+        },
+        {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "death",
           "diedBefore": "1357-02-04"
         }
       ],

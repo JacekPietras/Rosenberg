@@ -8,19 +8,19 @@
       "english": "A: Konrad von Rosenberg, Vicar of Amberg E: Abbot Friedrich of Ensdorf Monastery Court letter in the lawsuit of Ensdorf Monastery against Friedrich and Hartnid the Teuerners of Theuern regarding two timber yards near Theuern, called Sunnleiten and Mad.",
       "facts": [
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Amberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "issued a court letter in Ensdorf Monastery’s lawsuit against Friedrich and Hartnid the Theuerner of Theuern concerning two timber yards near Theuern.",
           "personTitle": [
             "Vitzthum zu Amberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "issued a court letter in Ensdorf Monastery’s lawsuit against Friedrich and Hartnid the Theuerner of Theuern concerning two timber yards near Theuern."
         }
       ]
     }

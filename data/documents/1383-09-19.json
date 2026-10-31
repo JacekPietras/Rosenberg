@@ -8,12 +8,12 @@
       "english": "Sale of all rents and goods in Rötelsee to the DOH Mgh by Eberhard von Rosenberg der Ältere, 1385 Feb. 19.",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "sold all rents and goods at Rötelsee to the Teutonic House at Mergentheim on 19 February 1385.",
           "personTitle": [
             "der Ältere"
-          ]
+          ],
+          "type": "generic",
+          "content": "sold all rents and goods at Rötelsee to the Teutonic House at Mergentheim on 19 February 1385."
         }
       ],
       "img": [

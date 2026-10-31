@@ -12,8 +12,8 @@
       "english": "In God's name, amen. I, Alheit of Niedeck, called so, formerly the lawful wife of the steadfast and honourable Ritter Lord Konrad von Rosenberg, publicly declare in this letter and make known to all who see it or hear it read that I, for myself and for all my heirs, and especially for my son Hans, who has not yet come of age, give and have given to the religious people, the abbot and the convent of the monastery of Bronnbach, three and a half pounds of Heller rent, to be given every year at Epiphany from my share of the mill at Rosenberg, ahead of all other rent which I have from that same mill, should it no longer be able to pay me or my heirs. Heinrich Müller now lives on that mill and has acknowledged the rent, as stated above. From those Heller, whoever collects them at Bronnbach shall give the convent a service every year in Advent for the sake of my late husband's soul, as best it can be arranged for that money. And those Heller shall be lent out in Advent by whoever receives them at Bronnbach at the following Epiphany. And whoever is pastor of Uissigheim, to whom a rent has also been assigned for this, shall be present when the vigil is announced and the anniversary is observed, so that the convent is treated rightly. I and my heirs shall also help them to receive their rent every year. If we did not do so, they may distrain on the mill or compel the miller by ecclesiastical court to ensure that their rent falls due to them. Should the mill lie waste, or should it happen for any other reason that the rent is not paid, they would not be bound to perform the service for as long as the rent is not paid to them. I and my heirs also have the power to buy back this rent for thirty-five pounds of Heller every year, whenever we can or wish, around St. Peter's day that falls around Shrovetide, fourteen days before or after, whichever is nearest. They shall then invest those Heller for the monastery on my advice or that of my heirs, wherever they can, and buy other rent as best they can, and the service shall be given from that. We shall not compel them to perform the service beyond the rent they can buy with that money. I also promise and declare that I shall bring my son to the point, when he comes of age and my Buhle Eberhard von Rosenberg or the monastery asks him, that he acknowledges the aforesaid rent and surrenders it. For this I have appointed as surety my Buhle Eberhard. If he did not do it, my Buhle shall perform an Einlager at Külsheim at an open inn, at my and my heirs' expense, with one servant and one horse, for as long as he acknowledges the rent and surrenders it. As true testimony and confirmation of all these matters, I, Alheit of Niedeck, have given this letter sealed with my seal and that of my Buhle Eberhard von Rosenberg, which hang on it. I, Eberhard von Rosenberg, Ritter and Vogt zu Dürn, also publicly declare the suretyship and promise to do what is right as a surety, as stated above, without deceit, whenever I am asked. For this I have also hung my seal on this letter. Given when one counted from the birth of Christ thirteen hundred years in the twenty-seventh year, on the Monday after St. Walpurgis' day. Present at this declaration were my Buhle Eberhard von Rosenberg, Konrad von Bremen, my uncle (oheim) Brother Eberhard von Uissigheim, cellarer at Bronnbach, and Brother Hans von Bibelach and Jünich [?] there, and other honourable people.",
       "facts": [
         {
-          "type": "spouse",
           "person": "alheit_von_neudeck",
+          "type": "spouse",
           "of": "konrad_husband_of_alheit_von_neudeck",
           "ofTitle": [
             "Ritter"
@@ -21,13 +21,13 @@
           "ofDeceased": true
         },
         {
-          "type": "parent",
           "person": "alheit_von_neudeck",
+          "type": "parent",
           "of": "Hans von Neudeck"
         },
         {
-          "type": "kin",
           "person": "alheit_von_neudeck",
+          "type": "kin",
           "of": "Eberhard von Uissigheim",
           "ofTitle": [
             "Kellerer zu Bronnbach"
@@ -35,104 +35,104 @@
           "term": "oheim"
         },
         {
-          "type": "generic",
           "person": "alheit_von_neudeck",
+          "type": "generic",
           "content": "donated annual rent from her share of the mill at Rosenberg to Bronnbach Abbey."
         },
         {
-          "type": "generic",
           "person": "alheit_von_neudeck",
+          "type": "generic",
           "content": "endowed an annual Advent service at Bronnbach for the soul of her late husband."
         },
         {
-          "type": "generic",
           "person": "Heinrich Müller",
+          "type": "generic",
           "content": "lived at the mill at Rosenberg."
         },
         {
-          "type": "generic",
           "person": "alheit_von_neudeck",
+          "type": "generic",
           "content": "required the pastor of Uissigheim to attend the vigil and anniversary of the Advent service at Bronnbach."
         },
         {
-          "type": "generic",
           "person": "alheit_von_neudeck",
+          "type": "generic",
           "content": "reserved the right to buy back the rent from Bronnbach Abbey."
         },
         {
-          "type": "generic",
           "person": "alheit_von_neudeck",
+          "type": "generic",
           "content": "promised to ensure that her son would confirm and surrender the rent to Bronnbach Abbey once of age."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "was called Alheit’s “Buhle” in the charter.",
           "personTitle": [
             "Ritter",
             "Vogt zu Dürn"
-          ]
+          ],
+          "type": "generic",
+          "content": "was called Alheit’s “Buhle” in the charter."
         },
         {
-          "type": "generic",
           "person": "alheit_von_neudeck",
+          "type": "generic",
           "content": "appointed [vogt_zu_Durn] as surety for the donation."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "was obliged to perform Einlager at Külsheim if Alheit’s son did not confirm the donation.",
           "personTitle": [
             "Ritter",
             "Vogt zu Dürn"
-          ]
+          ],
+          "type": "generic",
+          "content": "was obliged to perform Einlager at Külsheim if Alheit’s son did not confirm the donation."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "sealed the donation.",
           "personTitle": [
             "Ritter",
             "Vogt zu Dürn"
-          ]
+          ],
+          "type": "generic",
+          "content": "sealed the donation."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "was present as a witness.",
           "personTitle": [
             "Ritter",
             "Vogt zu Dürn"
-          ]
-        },
-        {
+          ],
           "type": "generic",
-          "person": "Eberhard von Uissigheim",
-          "content": "was present as a witness.",
-          "personTitle": [
-            "Bruder",
-            "Kellerer zu Bronnbach"
-          ]
-        },
-        {
-          "type": "generic",
-          "person": "Konrad von Bremen",
           "content": "was present as a witness."
         },
         {
-          "type": "generic",
-          "person": "Hans von Bibelach",
-          "content": "was present as a witness.",
+          "person": "Eberhard von Uissigheim",
           "personTitle": [
-            "Bruder"
-          ]
+            "Bruder",
+            "Kellerer zu Bronnbach"
+          ],
+          "type": "generic",
+          "content": "was present as a witness."
         },
         {
-          "type": "death",
+          "person": "Konrad von Bremen",
+          "type": "generic",
+          "content": "was present as a witness."
+        },
+        {
+          "person": "Hans von Bibelach",
+          "personTitle": [
+            "Bruder"
+          ],
+          "type": "generic",
+          "content": "was present as a witness."
+        },
+        {
           "person": "konrad_husband_of_alheit_von_neudeck",
           "personTitle": [
             "Ritter"
           ],
+          "type": "death",
           "diedBefore": "1327-05-05"
         }
       ],

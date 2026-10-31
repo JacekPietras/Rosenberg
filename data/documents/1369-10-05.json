@@ -8,18 +8,18 @@
       "english": "Ruprecht owes Hannes and Eberhard, the Closeners of Arnsdorf, 920 Regensburg pennies and in a second charter appoints as guarantors: Konrad von Rosenberg, Viztame at Amberg; Friedrich den Auwer von Brennenberg; Ulrich den Puschbeck von Kallmünz; and Ulrich, the Schenk of Richnecke.",
       "facts": [
         {
-          "type": "title",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vitzthum zu Amberg"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Amberg"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "type": "generic",
           "content": "was named as a surety for Ruprecht’s debt to Hannes and Eberhard den Closenern von Arnsdorf, alongside Friedrich den Auwer von Brennenberg, Ulrich den Puschbeck von Calmunz, and Ulrich den Schenken von Richnecke."
         }
       ]

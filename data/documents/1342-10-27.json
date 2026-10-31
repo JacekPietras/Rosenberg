@@ -9,24 +9,24 @@
       "english": "Emperor Ludwig IV the Bavarian judges that Kunigunde von Lißberg, the wife of Eberhard von Rosenberg and mother of the deceased Engelhard von Hirschhorn and Hans von Hirschhorn, should give up the Prachtaue fortress with its accessories, which came to her as a paternal inheritance, and hand it over to Engelhard, Hans and Hermann von Hirschhorn.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Kunigunde von Lissberg",
+          "type": "spouse",
           "of": "Eberhard von Rosenberg"
         },
         {
-          "type": "parent",
           "person": "Kunigunde von Lissberg",
+          "type": "parent",
           "of": "Engelhard von Hirschhorn",
           "ofDeceased": true
         },
         {
-          "type": "parent",
           "person": "Kunigunde von Lissberg",
+          "type": "parent",
           "of": "Hans von Hirschhorn"
         },
         {
-          "type": "death",
           "person": "Engelhard von Hirschhorn",
+          "type": "death",
           "diedBefore": "1342-10-28"
         }
       ],
@@ -44,28 +44,28 @@
       "english": "King Ludwig declares: While he was sitting in court in Würzburg, Kunigunde von Lißberg, wife of Eberhard von Rosenberg, appeared before him as his advocate (she came to us as her advocate, as we were sitting in court in Würzburg [...]). By the unanimous judgment of the lords and Ritter present, the fortresses of Lißberg and Bracht with all appurtenances, along with other inheritances of her father, were awarded to her (and granted in a fair and just manner, as the lords and Ritter issued their unanimous judgment), with the proviso that her brother Hermann may not alienate or encumber this inheritance without her consent. Thereupon, she transferred this inheritance, with all rights, to her sons Engelhard, Hans, and Hermann [von Hirschhorn], according to the corresponding judgment (after which she gave the inheritance to us willingly and irrevocably, in good faith and in good faith, as granted [...] so that they may do with it their own free will and exactly what they know is good and useful).",
       "facts": [
         {
-          "type": "spouse",
           "person": "Kunigunde von Lissberg",
+          "type": "spouse",
           "of": "Eberhard von Rosenberg"
         },
         {
-          "type": "sibling",
           "person": "Kunigunde von Lissberg",
+          "type": "sibling",
           "of": "Hermann"
         },
         {
-          "type": "parent",
           "person": "Kunigunde von Lissberg",
+          "type": "parent",
           "of": "Engelhard von Hirschhorn"
         },
         {
-          "type": "parent",
           "person": "Kunigunde von Lissberg",
+          "type": "parent",
           "of": "Hans von Hirschhorn"
         },
         {
-          "type": "parent",
           "person": "Kunigunde von Lissberg",
+          "type": "parent",
           "of": "Hermann von Hirschhorn"
         }
       ]

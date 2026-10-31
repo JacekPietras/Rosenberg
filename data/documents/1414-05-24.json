@@ -12,11 +12,11 @@
       "english": "Hans von Rosenberg, chief magistrate of Nuremberg, and the city’s aldermen record the sale by Hans Weliczer and his wife Alheid to Kunz Hofman, administrator of St Peter’s church at Poppenreuth, of one and a half morgen of arable land by the Gründlach. The property is endowed as a memorial foundation for Mager and his wife Elisabeth. Witnesses: Sigmund Pfintzing and Steffan Schuler. Sealer: the city court. Dated 24 May 1414.",
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Schultheiß zu Nürnberg"
           ],
+          "type": "generic",
           "content": "recorded the sale by Hans Weliczer and Alheid to Kunz Hofman for a memorial foundation for Mager and his wife Elisabeth, together with the city’s aldermen."
         }
       ],

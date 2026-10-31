@@ -8,39 +8,39 @@
       "english": "by means of which Count Rudolf of Wertheim, Gotfried of Bruneck and Ludwig of Hohenloch mediate a reconciliation between the nobleman Kraft of Hohenloch, their 1st uncle and savior, on the one hand, and the staunch hereditary men, Lord Eberhard von Rosenberg, Vogt of Dürn, Eberhard von Rosenberg, called von Zimmern, Eberhard and Konrad, the aforementioned Vogt's sons, and Hans von Rosenberg on the other hand.",
       "facts": [
         {
-          "type": "title",
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Vogt zu Dürn"
-          ]
-        },
-        {
-          "type": "generic",
-          "person": "Eberhard von Rosenberg",
-          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe.",
-          "personTitle": [
-            "genannt von Zimmern"
-          ]
-        },
-        {
-          "type": "parent",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
           ],
-          "of": "Eberhard von Rosenberg"
+          "type": "title"
         },
         {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "genannt von Zimmern"
+          ],
           "type": "generic",
-          "person": "Hans von Rosenberg",
           "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe."
         },
         {
-          "type": "parent",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
           ],
+          "type": "parent",
+          "of": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "type": "generic",
+          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe."
+        },
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "parent",
           "of": "Konrad von Rosenberg"
         }
       ]

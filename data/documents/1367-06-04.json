@@ -8,18 +8,18 @@
       "english": "Ruprecht gives all properties—which Konrad von Rosenberg, Viztame, and Heinrich, regional scribe at Amberg, had sued for from him at the Smydemulen fortress before the Count Palatine's \"regional judges\" at Lyngenfelt with law and judgment—to Ulrich Wolfelin von Nappurg, his master of the kitchen.",
       "facts": [
         {
-          "type": "title",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vitzthum zu Amberg"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Amberg"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "type": "generic",
           "content": "joined Heinrich, regional scribe at Amberg, in claiming property at the fortress of Smydemulen through judgment at the Count Palatine’s regional court at Lyngenfelt."
         }
       ]

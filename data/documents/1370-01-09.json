@@ -11,18 +11,18 @@
       "english": "The Edelknecht Hans Schelris of Wasserlos and his wife Agnes declare that, with the permission of Nicolaus vom Stein, provost of Aschaffenburg Abbey, they sold their share of the tithes in the village and district of Altenmittlau and in Somborn to Dean Franz [von Amöneburg] and the chapter of Aschaffenburg Abbey. In exchange, they assigned the provost an annual rent of six malters of rye, measured by Aschaffenburg measure, from their own properties: eight morgen of meadow in one parcel at Kälberau, adjoining property of Konrad von Uissigheim, and three morgen of meadow at Michelbach, adjoining property of the same Konrad. Before the centgrave and jurors at Wasserlos, they relinquished these properties and had Heinrich Schoffrude, the provost's servant, placed in possession of them. The provost then granted this rent as a fief to Hans Schelris. This took place at Wasserlos before the chapel, in the presence of the centgrave Bechtold Keppeler, the jurors Friedrich Weineigen, Konrad Helferich of Michelbach, Eberhard Schurmanne, and Helbold of Wasserlos, and the witnesses Herbord of Sterzelheim, cantor of Aschaffenburg Abbey; Hermann von der Ecken, canon of the abbey; Godebold of Gemünden on the Wohra, schoolmaster at Aschaffenburg; and Hans of Hemsbach. Hans Schelris further declares that, on behalf of the provost, he is entitled to an annual rent of five and a half malters of rye, measured by Aschaffenburg measure, from all of the provost's fiefs in the village of Sailauf. If this rent is not paid on time to him or his heirs as fief holders, they may distrain the entire village until paid in full. Present when this rent was assigned were Hans Schelris, his servant Friedrich of Wasserlos, the abbey's vicar Hartmann of Bergen as its representative, Erenbolt, the bailiff at Sailauf who transferred the rent to Hans Schelris, and many others.",
       "facts": [
         {
-          "type": "generic",
           "person": "Konrad von Uissigheim",
+          "type": "generic",
           "content": "owned land adjoining the meadow of Hans Schelris and his wife Agnes at Kälberau."
         },
         {
-          "type": "generic",
           "person": "Konrad von Uissigheim",
+          "type": "generic",
           "content": "owned land adjoining the meadow of Hans Schelris and his wife Agnes at Michelbach."
         },
         {
-          "type": "spouse",
           "person": "Agnes",
+          "type": "spouse",
           "of": "Hans Schelris",
           "ofTitle": [
             "Edelknecht"

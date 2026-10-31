@@ -8,12 +8,12 @@
       "english": "Hans Sigmund von Crailsheim zu Altenschönbach issued a receipt to the guardians of the children of the late Hans Georg von Seckendorff zu Sugenheim, including Albrecht Christoph von Rosenberg zu Rosenberg und Waldmannshofen.",
       "facts": [
         {
-          "type": "generic",
           "person": "Albrecht Christoph von Rosenberg",
           "personTitle": [
             "zu Waldmannshofen",
             "zu Rosenberg"
           ],
+          "type": "generic",
           "content": "served as one of the guardians of the children of the late Hans Georg von Seckendorff."
         }
       ]

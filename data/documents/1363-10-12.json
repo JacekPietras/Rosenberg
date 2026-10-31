@@ -8,23 +8,23 @@
       "english": "Ruprecht decrees that his heirs, in case he should die in a foreign land and Konrad von Rosenberg, his viztame¹ at Amberg, is still alive, shall give to the same [Konrad], before he is removed from his office, 400 pounds of Heller.",
       "facts": [
         {
-          "type": "title",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vitzthum zu Amberg"
-          ]
-        },
-        {
-          "type": "generic",
-          "person": "Ruprecht",
-          "content": "directed his heirs to pay Konrad von Rosenberg 400 pounds Heller if he died abroad while Konrad was still alive."
-        },
-        {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Amberg"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Ruprecht",
+          "type": "generic",
+          "content": "directed his heirs to pay Konrad von Rosenberg 400 pounds Heller if he died abroad while Konrad was still alive."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "type": "generic",
           "content": "was to receive 400 pounds Heller before being removed from office if Ruprecht died abroad while Konrad was still alive."
         }
       ]

@@ -12,27 +12,27 @@
       "english": "Eberhard von Rosenberg, Vogt zu Dürn, acknowledges that, on Heylmann’s order, he received 516 pounds Heller from the Jews of the Vitztumamt of Aschaffenburg. Of this sum, 100 pounds were paid to von Hohenlohe, 200 pounds to the “Stuormfedere,” 110 pounds to Theoderich Gundelwin, Ritter and Berthold Hundelin, and 106 pounds to the Ritter Götz and Ruodegere. Heylmann also transferred to Eberhard and the Vogt of Buchen the taxes from Bischofsheim, Külsheim, Amorbach, Dürn, and Buchen, so that they could pay them to Schurberg and Neckarsulm.",
       "facts": [
         {
-          "type": "title",
           "person": "vogt_zu_Durn",
           "personTitle": [
             "Vogt zu Dürn"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "received funds from the Jews of the Aschaffenburg Vitztumamt on Heylmann’s order and distributed them among the named recipients.",
           "personTitle": [
             "Vogt zu Dürn"
-          ]
+          ],
+          "type": "generic",
+          "content": "received funds from the Jews of the Aschaffenburg Vitztumamt on Heylmann’s order and distributed them among the named recipients."
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Durn",
-          "content": "received the taxes from Bischofsheim, Külsheim, Amorbach, Dürn, and Buchen together with the Vogt of Buchen, to pay them to Schurberg and Neckarsulm.",
           "personTitle": [
             "Vogt zu Dürn"
-          ]
+          ],
+          "type": "generic",
+          "content": "received the taxes from Bischofsheim, Külsheim, Amorbach, Dürn, and Buchen together with the Vogt of Buchen, to pay them to Schurberg and Neckarsulm."
         }
       ]
     }

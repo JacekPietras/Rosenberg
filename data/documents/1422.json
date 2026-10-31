@@ -8,39 +8,39 @@
       "english": "Sunday before Simon and Jude; Luppold von Seldeneck and Kunz von Rosenberg, both residing in Bartenstein because of a building that Kunz von Rosenberg had built in Bartenstein as an entrance to the chapel of the castle;\n\nseals: Luppold von Seldeneck, Kunz von Rosenberg, Reinhard von Uissigheim and Fritz Truchseß von Baldersheim.",
       "facts": [
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "zu Bartenstein"
           ],
+          "type": "generic",
           "content": "built a structure at Bartenstein as an entrance to the castle chapel."
         },
         {
-          "type": "generic",
           "person": "Luppold von Seldeneck",
+          "type": "generic",
           "content": "resided at Bartenstein."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "zu Bartenstein"
           ],
+          "type": "generic",
           "content": "sealed the charter."
         },
         {
-          "type": "generic",
           "person": "Luppold von Seldeneck",
+          "type": "generic",
           "content": "sealed the charter."
         },
         {
-          "type": "generic",
           "person": "Reinhard von Uissigheim",
+          "type": "generic",
           "content": "sealed the charter."
         },
         {
-          "type": "generic",
           "person": "Fritz Truchseß von Baldersheim",
+          "type": "generic",
           "content": "sealed the charter."
         }
       ],

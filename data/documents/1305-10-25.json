@@ -13,133 +13,133 @@
       "english": "In the name of the Lord, amen. So that what is done in time may not follow the nature of time, it is expedient that it be made perpetual by the testimony of letters. For this reason we, Eberhard the Elder and Konrad his brother, called of Boxberg, sons of the late Eberhard called the Red, Eberhard the Younger and Arnold his brother, sons of the late Arnold called of Uissigheim, acknowledge and by the tenor of these presents make known to all, present and future, that with equal consent and unanimous will we have sold and handed over our goods described below in the village called Stembach, situated near [Wertheim?], [Got]frid our serf, and universally all our goods in the aforesaid village of Stembach and in the boundaries of the same village, cultivated and uncultivated, acquired and to be acquired, with the jurisdiction and judicial authority of the same village, both in the village and in the field, to the said religious men, the lord .. abbot and the convent of the monastery in Bronnbach, and we wish them to be transferred to them for one hundred and eighty and four pounds of Heller in counted money, to be held in perpetual ownership. These are the goods, namely: the farm (mansus) which Wernher called Brockenloch holds, paying annually 8 malters of rye, two malters of wheat, two malters of oats and one Shrovetide hen. Likewise a vineyard which the said Wernher holds, paying annually [6] pennies and two Easter hens. Likewise the goods held by Irmengard, Blanke's sister, paying annually two malters of rye, one malter of oats, one malter of wheat and one Shrovetide hen. Likewise the goods held by Gotfrid Gundolf, paying annually one malter of rye and one malter of oats in the larger measure. Likewise the goods held by Heinrich called Eberhard, paying annually three malters of rye and [one] malter of oats in the larger measure and 7 pennies. Likewise a plot (area) held by Konrad called Angelus, paying annually one malter of rye and one March hen. Likewise a plot held by the same, paying annually 6 pennies and one March hen. Likewise a fief held by the same, paying annually [60?] pennies. Likewise the goods held by Walther [Glimens]vender, paying annually two malters of rye, two malters of oats and one Shrovetide hen. Likewise a plot held by Konrad Kirchene, paying annually 5 pennies. Likewise a plot held by H. Hoveman, paying annually 2 pennies and one March hen. Likewise the goods held by Wolfram Sengil, paying 8 pennies and one March hen. Likewise a plot held by C., his brother, paying one March hen. Likewise the goods held by C. Weideman, paying annually two malters of rye, two malters of oats and one Shrovetide hen. Likewise the goods held by Gotfrid Taschere, paying annually two malters of rye, one malter of wheat, one malter of oats and one Shrovetide hen. Likewise the goods held by the son of Hermann Blanke[?], paying annually two malters of rye and two malters of oats. Likewise a plot and a vineyard held by C., his brother, paying annually 13 pennies. Likewise the goods held by Gertrud [Vllin?], paying annually two malters of rye, half a malter of oats and [72?] pennies. Likewise the goods held by H. [Vorchiche?], paying annually two malters of rye, half a malter of oats in the larger measure and 38 pennies. Likewise the goods held by [Wirtiche?], paying annually four malters of rye. Likewise the goods which Mechthild, daughter of Albrecht, formerly held, paying annually 12 pennies and one March hen. Likewise a garden held by C. [Rise?], paying 2 pennies. Likewise fields held by Kunigunde [Genum?], paying 4 pennies. Likewise the goods held by Gotfrid [Wichiche?], paying annually three malters of rye, one malter of wheat, one malter of oats and one Shrovetide hen. Likewise a garden held by Konrad Winzurne, paying annually two pennies. For warranty, which is commonly called werschaft, concerning the said goods, to be rendered to the aforementioned religious, the .. abbot and the convent, for a year and a day, as is customary to be done by right on the part of owners: we, the aforesaid brothers Eberhard and Konrad, and Eberhard and Arnold, the aforementioned brothers, bind ourselves by these presents to the .. abbot and the convent, acknowledge, and publicly declare by these presents that we have received in full from the aforesaid .. abbot and convent the said sum of money, namely one hundred and eighty pounds and four pounds of Heller in counted money. In testimony of all the aforesaid, as clear proof and safeguard, our seals have been appended to these presents with the listing of witnesses. Witnesses are: Erkinger of [Hannes?]heim, Konrad of Uissigheim, Arnold called Bloche, knights, Eberhard of Randersacker, the lord Eberhard abbot, Herold the cellarer, Andreas master [...], Dytherus the custodian, Gotfrid the provost, monks of Bronnbach, and many other trustworthy persons. Given in the year of the Lord 1305, on the 8th day before the Kalends of November [25 October].",
       "facts": [
         {
-          "type": "parent",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Rote"
           ],
           "personDeceased": true,
+          "type": "parent",
           "of": "Eberhard von Rosenberg",
           "ofTitle": [
             "der Ältere"
           ]
         },
         {
-          "type": "parent",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Rote"
           ],
           "personDeceased": true,
+          "type": "parent",
           "of": "Konrad von Rosenberg"
         },
         {
-          "type": "sibling",
           "person": "Konrad von Rosenberg",
+          "type": "sibling",
           "of": "Eberhard von Rosenberg",
           "ofTitle": [
             "der Ältere"
           ]
         },
         {
-          "type": "parent",
           "person": "Arnold von Uissigheim",
           "personDeceased": true,
+          "type": "parent",
           "of": "Eberhard von Uissigheim",
           "ofTitle": [
             "der Jüngere"
           ]
         },
         {
-          "type": "parent",
           "person": "Arnold von Uissigheim",
           "personDeceased": true,
+          "type": "parent",
           "of": "Arnold"
         },
         {
-          "type": "sibling",
           "person": "Arnold",
+          "type": "sibling",
           "of": "Eberhard von Uissigheim",
           "ofTitle": [
             "der Jüngere"
           ]
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim.",
           "personTitle": [
             "der Ältere"
-          ]
+          ],
+          "type": "generic",
+          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
+          "type": "generic",
           "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Uissigheim",
-          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Arnold von Uissigheim.",
           "personTitle": [
             "der Jüngere"
-          ]
+          ],
+          "type": "generic",
+          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Arnold von Uissigheim."
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "type": "generic",
           "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Eberhard von Uissigheim der Jüngere."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim.",
           "personTitle": [
             "der Ältere"
-          ]
+          ],
+          "type": "generic",
+          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
         },
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
-          "content": "appended his seal to the charter.",
           "personTitle": [
             "der Ältere"
-          ]
-        },
-        {
+          ],
           "type": "generic",
-          "person": "Konrad von Rosenberg",
-          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
-        },
-        {
-          "type": "generic",
-          "person": "Konrad von Rosenberg",
           "content": "appended his seal to the charter."
         },
         {
+          "person": "Konrad von Rosenberg",
           "type": "generic",
-          "person": "Eberhard von Uissigheim",
-          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Arnold von Uissigheim.",
-          "personTitle": [
-            "der Jüngere"
-          ]
+          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
         },
         {
+          "person": "Konrad von Rosenberg",
           "type": "generic",
-          "person": "Eberhard von Uissigheim",
-          "content": "appended his seal to the charter.",
-          "personTitle": [
-            "der Jüngere"
-          ]
+          "content": "appended his seal to the charter."
         },
         {
+          "person": "Eberhard von Uissigheim",
+          "personTitle": [
+            "der Jüngere"
+          ],
           "type": "generic",
+          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Arnold von Uissigheim."
+        },
+        {
+          "person": "Eberhard von Uissigheim",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "type": "generic",
+          "content": "appended his seal to the charter."
+        },
+        {
           "person": "Arnold von Uissigheim",
+          "type": "generic",
           "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Eberhard von Uissigheim der Jüngere."
         },
         {
-          "type": "generic",
           "person": "Arnold von Uissigheim",
+          "type": "generic",
           "content": "appended his seal to the charter."
         }
       ],

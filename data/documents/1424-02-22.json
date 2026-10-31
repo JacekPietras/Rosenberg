@@ -8,29 +8,29 @@
       "english": "Bishop Hans von Brunn owed Ulrich von Rosenberg and Jutta, his wife, 3,500 florins, which he undertook to repay with surety on the Feast of St Peter's Chair in 1424. This did not happen, and shortly afterward Ulrich von Rosenberg died. Bishop Hans then reached an agreement with Jutta, his widow, and their son Anselm von Rosenberg: 4,000 florins were to be paid to them on the Feast of St Peter's Chair in 1427; otherwise Schloss Brassoldshaim, with its appurtenances and revenues, was to be handed over to them for use.",
       "facts": [
         {
-          "type": "generic",
           "person": "Ulrich von Rosenberg",
+          "type": "generic",
           "content": "was, together with his wife Jutta, owed 3,500 florins by Bishop Hans von Brunn; repayment was secured by a surety and due on the Feast of St Peter’s Chair in 1424."
         },
         {
-          "type": "generic",
           "person": "Jutta",
+          "type": "generic",
           "content": "reached an agreement with Bishop Hans von Brunn for payment of 4,000 florins to her and her son Anselm von Rosenberg by the Feast of St Peter’s Chair in 1427."
         },
         {
-          "type": "generic",
           "person": "Jutta",
+          "type": "generic",
           "content": "was to receive Schloss Brassoldshaim, with its appurtenances and revenues, for use with her son Anselm von Rosenberg if Bishop Hans von Brunn failed to pay the agreed 4,000 florins."
         },
         {
-          "type": "spouse",
           "person": "Jutta",
+          "type": "spouse",
           "of": "Ulrich von Rosenberg",
           "ofDeceased": true
         },
         {
-          "type": "parent",
           "person": "Jutta",
+          "type": "parent",
           "of": "Anselm von Rosenberg"
         }
       ],
@@ -41,8 +41,8 @@
       ],
       "guesses": [
         {
-          "type": "death",
           "person": "Ulrich von Rosenberg",
+          "type": "death",
           "diedBefore": "1424-04-22"
         }
       ]

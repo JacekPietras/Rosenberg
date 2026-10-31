@@ -12,65 +12,65 @@
       "english": "1408 Nov. 11 (St. Martin's Day) Arnold von Rosenberg der Jüngere, resident of Boxberg, and his wife Christina von Handschuhsheim exchanged goods in Erlenbach, a village below Ballenberg and Merchingen with Abbot Heinrich [V] and the convent of Schöntal Abbey for the Abbey's properties in Buch [on the Ahorn], See, and Sachsen (on the Sahsßhen) [= Sachsenflur?]. Since the Rosenberg goods [of the Electorate of the Palatinate] were fiefs, Arnold undertook to obtain the fief's consent to this exchange.\n\nSealers: 1) of A., due to a seal ban, also for Christina von Handschuhsheim, as well as the Edelknechte 2) Eberhard von Rosenberg zu Jagstberg, brother of A., and 3) Konrad von Rosenberg zu Boxberg, cousin of A. Execution: Perg., damaged, mounted on canvas - 3 seals, 1st and 3rd damaged, 2nd removed, press residue attached -  Rev.: A letter from Arnold von Rosenberg concerning the goods in Erlbach and Merchingen Note: For King Ruprecht's will of March 2, 1408, see HStAS H 51 No. 1140.",
       "facts": [
         {
-          "type": "generic",
           "person": "arnold_boxberg",
           "personTitle": [
             "der Jüngere",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "resided at Boxberg."
         },
         {
-          "type": "spouse",
           "person": "arnold_boxberg",
           "personTitle": [
             "der Jüngere",
             "zu Boxberg"
           ],
+          "type": "spouse",
           "of": "Christina von Handschuhsheim"
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
           "personTitle": [
             "der Jüngere",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "exchanged goods in Erlenbach and Merchingen with Abbot Heinrich V and the convent of Schöntal Abbey for the abbey’s properties at Buch am Ahorn, See, and Sachsenflur."
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
           "personTitle": [
             "der Jüngere",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "held the exchanged Rosenberg goods as fiefs from the Electorate of the Palatinate."
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
           "personTitle": [
             "der Jüngere",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "undertook to obtain the fief lord’s consent to the exchange."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
           "personTitle": [
             "zu Jagstberg"
           ],
+          "type": "generic",
           "content": "resided at Jagstberg."
         },
         {
-          "type": "sibling",
           "person": "eberhard_jagstberg",
           "personTitle": [
             "zu Jagstberg",
             "Edelknecht"
           ],
+          "type": "sibling",
           "of": "arnold_boxberg",
           "ofTitle": [
             "der Jüngere",
@@ -78,28 +78,28 @@
           ]
         },
         {
-          "type": "title",
           "person": "eberhard_jagstberg",
           "personTitle": [
             "zu Jagstberg",
             "Edelknecht"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "resided at Boxberg."
         },
         {
-          "type": "kin",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "zu Boxberg",
             "Edelknecht"
           ],
+          "type": "kin",
           "of": "arnold_boxberg",
           "ofTitle": [
             "der Jüngere",
@@ -108,36 +108,36 @@
           "term": "Vetter"
         },
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "zu Boxberg",
             "Edelknecht"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
           "personTitle": [
             "der Jüngere",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "sealed the charter, also for Christina von Handschuhsheim because she was unable to seal."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
           "personTitle": [
             "zu Jagstberg"
           ],
+          "type": "generic",
           "content": "sealed the charter."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "sealed the charter."
         }
       ],

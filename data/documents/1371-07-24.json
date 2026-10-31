@@ -8,19 +8,19 @@
       "english": "Ruprecht pledges to Konrad von Rosenberg, Viztame at Heidelberg, the Minneberg house, as Ulrich Landschad had held it, for 810 Florentine guilders.",
       "facts": [
         {
-          "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Heidelberg"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
-          "content": "was the beneficiary of Ruprecht’s pledge of the Minneberg house, previously held by Ulrich Landschad.",
           "personTitle": [
             "Vitzthum zu Heidelberg"
-          ]
+          ],
+          "type": "generic",
+          "content": "was the beneficiary of Ruprecht’s pledge of the Minneberg house, previously held by Ulrich Landschad."
         }
       ]
     }

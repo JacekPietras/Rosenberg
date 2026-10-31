@@ -11,18 +11,18 @@
       "english": "Fritz von Uissigheim and Petrisa, his wife, with the knowledge and consent of Kraft von Uissigheim, give Bronnbach Abbey one malter of grain annually from their farm at Uissigheim for the salvation of their souls and that of their mother Irmingard.",
       "facts": [
         {
-          "type": "spouse",
           "person": "Fritz von Uissigheim",
+          "type": "spouse",
           "of": "Petrisa"
         },
         {
-          "type": "generic",
           "person": "Fritz von Uissigheim",
+          "type": "generic",
           "content": "gave Bronnbach Abbey one malter of grain annually from their farm at Uissigheim together with his wife Petrisa."
         },
         {
-          "type": "generic",
           "person": "Kraft von Uissigheim",
+          "type": "generic",
           "content": "consented to Fritz von Uissigheim and Petrisa’s donation to Bronnbach Abbey."
         }
       ]

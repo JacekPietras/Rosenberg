@@ -8,71 +8,71 @@
       "english": "Purchase deed of Arnold von Rosenberg of Boxberg and his wife Christine von Handschuhsheim for their properties in Hochhausen, Werbach, Niklashausen, and Höhefeld, which they sold to the Grünau Carthusian Order for 350 florins. Guarantors: Hans von Rosenberg der Ältere, Ulrich von Rosenberg, bailiff of Krautheim, Eberhard von Rosenberg of Jagstberg  \n\nSeal 1) Arnold von Rosenberg (blurred), 2) Christine von Handschuhsheim (double coat of arms, unrecognizable), 3) Eberhard von Rosenberg (cf. U 48), 4) Helmet with rose between swan necks",
       "facts": [
         {
-          "type": "spouse",
           "person": "Christine von Handschuhsheim",
+          "type": "spouse",
           "of": "arnold_boxberg",
           "ofTitle": [
             "zu Boxberg"
           ]
         },
         {
-          "type": "title",
           "person": "Ulrich von Rosenberg",
           "personTitle": [
             "Amtmann zu Krautheim"
-          ]
+          ],
+          "type": "title"
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
           "personTitle": [
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "sold their properties in Hochhausen, Werbach, Niklashausen, and Höhefeld to the Grünau Charterhouse together with his wife Christine von Handschuhsheim."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "generic",
           "content": "acted as a surety for the sale to the Grünau Charterhouse."
         },
         {
-          "type": "generic",
           "person": "Ulrich von Rosenberg",
           "personTitle": [
             "Amtmann zu Krautheim"
           ],
+          "type": "generic",
           "content": "acted as a surety for the sale to the Grünau Charterhouse."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
           "personTitle": [
             "zu Jagstberg"
           ],
+          "type": "generic",
           "content": "acted as a surety for the sale to the Grünau Charterhouse."
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
           "personTitle": [
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "sealed the charter."
         },
         {
-          "type": "generic",
           "person": "Christine von Handschuhsheim",
+          "type": "generic",
           "content": "sealed the charter."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
           "personTitle": [
             "zu Jagstberg"
           ],
+          "type": "generic",
           "content": "sealed the charter."
         }
       ],

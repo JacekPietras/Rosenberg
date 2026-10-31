@@ -8,18 +8,18 @@
       "english": "Mayor and Council of the Imperial City of Nördlingen confess that they had 5,000 guilders (in gold 4,687 guilders 32 Kreuzer) cash for the Boxberg Castle (in gold 4,687 guilders 32 Kreuzer) by his secretaries and servants Bernhard Freinsheimer and Ott Reiß as representatives of the Swabian Federal Ministry.",
       "facts": [
         {
-          "type": "title",
-          "person": "Ludwig von der Pfalz",
-          "personTitle": [
-            "Kurfürst"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Ludwig von der Pfalz",
           "personTitle": [
             "Kurfürst"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Ludwig von der Pfalz",
+          "personTitle": [
+            "Kurfürst"
+          ],
+          "type": "generic",
           "content": "paid 5,000 florins in cash for Boxberg Castle through his secretaries and servants Bernhard Freinsheimer and Ott Reiß, as acknowledged by Nördlingen’s mayor and council on behalf of the Swabian League."
         }
       ],

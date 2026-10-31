@@ -8,18 +8,18 @@
       "english": "The municipality of Boxberg hands over its moat to Elector Ludwig V of the Palatinate, with certain reservations.",
       "facts": [
         {
-          "type": "title",
-          "person": "Ludwig V. von der Pfalz",
-          "personTitle": [
-            "Kurfürst"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Ludwig V. von der Pfalz",
           "personTitle": [
             "Kurfürst"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Ludwig V. von der Pfalz",
+          "personTitle": [
+            "Kurfürst"
+          ],
+          "type": "generic",
           "content": "received Boxberg’s city moat from the municipality subject to certain reservations."
         }
       ],

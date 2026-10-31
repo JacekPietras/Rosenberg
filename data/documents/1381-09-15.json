@@ -12,27 +12,27 @@
       "english": "The brothers Eberhard, Ritter, and Arnold, called von Rosenberg, and Eberhard’s wife Elisabeth exchange specified properties and revenues in Eiersheim with Bronnbach Abbey for the von Thüngen estate at Uissigheim.",
       "facts": [
         {
-          "type": "sibling",
           "person": "vogt_zu_Lauda",
           "personTitle": [
             "Ritter"
           ],
+          "type": "sibling",
           "of": "arnold_brother_of_vogt_zu_Lauda"
         },
         {
-          "type": "spouse",
           "person": "Elisabeth von Erligheim",
+          "type": "spouse",
           "of": "vogt_zu_Lauda",
           "ofTitle": [
             "Ritter"
           ]
         },
         {
-          "type": "generic",
           "person": "vogt_zu_Lauda",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "exchanged properties and revenues in Eiersheim with Bronnbach Abbey for the von Thüngen estate at Uissigheim, jointly with his brother Arnold and his wife Elisabeth."
         }
       ],

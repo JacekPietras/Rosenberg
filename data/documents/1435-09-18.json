@@ -8,34 +8,34 @@
       "english": "Ulrich von Rosenberg's fief reversal to Archbishop Dietrich of Mainz, Ulrich being the son of the late Eberhard von Rosenberg, concerning castle fiefs previously held by his brother Kunz and assigned to Ulrich in a division of property with his brother: an annual rent of 20 pounds Heller from the farm at Greuenwinde, 3 pounds of revenue from the tax at Bischofsheim, both castle fiefs at Bischofsheim, and 4 pounds of revenue from the cellarer's office at Dürn, the last redeemable by the archbishop for 40 pounds.",
       "facts": [
         {
-          "type": "parent",
           "person": "Eberhard von Rosenberg",
           "personDeceased": true,
+          "type": "parent",
           "of": "Ulrich von Rosenberg"
         },
         {
-          "type": "death",
           "person": "Eberhard von Rosenberg",
+          "type": "death",
           "diedBefore": "1435-09-19"
         },
         {
-          "type": "sibling",
           "person": "Kunz von Rosenberg",
+          "type": "sibling",
           "of": "Ulrich von Rosenberg"
         },
         {
-          "type": "generic",
           "person": "Ulrich von Rosenberg",
+          "type": "generic",
           "content": "received in a division of property with his brother Kunz the castle fiefs previously held by Kunz."
         },
         {
-          "type": "generic",
           "person": "Ulrich von Rosenberg",
+          "type": "generic",
           "content": "held castle fiefs at Bischofsheim from Archbishop Dietrich of Mainz."
         },
         {
-          "type": "generic",
           "person": "Ulrich von Rosenberg",
+          "type": "generic",
           "content": "held a fief from Archbishop Dietrich of Mainz consisting of revenue from the cellarer’s office at Dürn."
         }
       ]

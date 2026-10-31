@@ -8,18 +8,18 @@
       "english": "A: Konrad von Rosenberg, Vicar of Amberg E: Herr Ulrich der Perkhauser, Master of the Infirmary of Ensdorf Court letter confirming that the monastery is entitled to the interest from the Rosenhof in Theuern.",
       "facts": [
         {
-          "type": "title",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vitzthum zu Amberg"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitzthum zu Amberg"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "type": "generic",
           "content": "issued a court letter confirming Ensdorf Abbey’s entitlement to rents from the Rosenhof at Theuern."
         }
       ]

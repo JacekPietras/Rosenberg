@@ -8,8 +8,8 @@
       "english": "Hohenlohe against Hatzfeldt: An old order written on parchment from Bishop Wolfram of Würzburg to Eberhard von Rosenberg.",
       "facts": [
         {
-          "type": "generic",
           "person": "Eberhard von Rosenberg",
+          "type": "generic",
           "content": "received a command from Wolfram, Bishop of Würzburg."
         }
       ]

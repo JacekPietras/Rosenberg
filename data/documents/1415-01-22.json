@@ -8,13 +8,13 @@
       "english": "King Sigmund allows Arnold and Eberhard von Rosenberg to appoint mayors and lay judges as well as to exercise high jurisdiction in the village of Schweigern",
       "facts": [
         {
-          "type": "generic",
           "person": "arnold_boxberg",
+          "type": "generic",
           "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [eberhard_jagstberg]."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
+          "type": "generic",
           "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [arnold_boxberg]."
         }
       ]

@@ -11,42 +11,33 @@
       "english": "Deed of inheritance from Arnold von Rosenberg der Jüngere of Boxberg and his wife Christina von Handschuhsheim for Kunz Pfister and Kunz Fuchs of Eiersheim regarding meadows, rents, and interest above Massenbach.\n\nSeal: 1) Arnold von Rosenberg, 2) Eberhard von Rosenberg (brother), 3) Reinhard von Uessigheim (kinsman, missing), 4) Kunz von Rosenberg (kinsman)",
       "facts": [
         {
-          "type": "generic",
           "person": "arnold_boxberg",
           "personTitle": [
             "der Jüngere",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "issued an Erbbestandsbrief for Kunz Pfister and Kunz Fuchs of Eiersheim concerning meadows, rents, and dues above Massenbach together with Christina von Handschuhsheim."
         },
         {
-          "type": "spouse",
           "person": "arnold_boxberg",
           "personTitle": [
             "der Jüngere"
           ],
+          "type": "spouse",
           "of": "Christina von Handschuhsheim"
         },
         {
-          "type": "sibling",
           "person": "eberhard_jagstberg",
+          "type": "sibling",
           "of": "arnold_boxberg",
           "ofTitle": [
             "der Jüngere"
           ]
         },
         {
-          "type": "kin",
           "person": "Reinhard von Uissigheim",
-          "of": "arnold_boxberg",
-          "ofTitle": [
-            "der Jüngere"
-          ],
-          "term": "Vetter"
-        },
-        {
           "type": "kin",
-          "person": "Kunz von Rosenberg",
           "of": "arnold_boxberg",
           "ofTitle": [
             "der Jüngere"
@@ -54,27 +45,36 @@
           "term": "Vetter"
         },
         {
-          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "type": "kin",
+          "of": "arnold_boxberg",
+          "ofTitle": [
+            "der Jüngere"
+          ],
+          "term": "Vetter"
+        },
+        {
           "person": "arnold_boxberg",
           "personTitle": [
             "der Jüngere",
             "zu Boxberg"
           ],
+          "type": "generic",
           "content": "sealed the charter."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
+          "type": "generic",
           "content": "sealed the charter."
         },
         {
-          "type": "generic",
           "person": "Reinhard von Uissigheim",
+          "type": "generic",
           "content": "was listed as a sealer, but his seal is missing."
         },
         {
-          "type": "generic",
           "person": "Kunz von Rosenberg",
+          "type": "generic",
           "content": "sealed the charter."
         }
       ],

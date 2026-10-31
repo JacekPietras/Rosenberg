@@ -8,16 +8,16 @@
       "english": "Statutes and tournament regulations of the Knights' Society of the Donkey.\n\nHans von Hirschhorn der Jüngere; Wilhelm Rüde; Schenk Konrad, Herr zu Erbach der Jüngere; Hans von Remchingen; Kunz von Hornbach; Albrecht von Venningen; Siegfried von Venningen; Reinhard von Nippenburg; **Ulrich** von Rosenberg; Eberhard von Gemmingen; Eberhard von Neipperg; Wiprecht von Helmstatt der Jüngere; Hans von Helmstatt zu Asbach; **Konrad** von Rosenberg der Ältere; Hans von Venningen, der Marschall; Reinhard Kreuß (editorial supplement: Reuß); Konrad von Frankenstein; Hermann von Rodenstein der Jüngere; Konrad von Hastlin; Wiprecht von Helmstatt der Jüngste; Hans von Venningen der Ältere; Eberhard von Venningen; Hans von Helmstatt der Jüngere; Wiprecht von Helmstatt der Ältere; Götz von Berlichingen; Schwicker von Sickingen der Jüngere; Reinhard von Sickingen; Hans von Sickingen; Haman von Sickingen; Kunz Landschad; Heinrich von Sickingen; Eberhard von Menzingen; Hans von Helmstatt; Eberhard von Hirschhorn; Hermann von Rodenstein; Hans von Hirschhorn; Eberhard von Hirschhorn der Jüngere; Hans Landschad von Steinach",
       "facts": [
         {
-          "type": "generic",
           "person": "Ulrich von Rosenberg",
+          "type": "generic",
           "content": "was named in the roster accompanying the statutes and tournament regulations of the Rittergesellschaft zum Esel."
         },
         {
-          "type": "generic",
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "der Ältere"
           ],
+          "type": "generic",
           "content": "was named in the roster accompanying the statutes and tournament regulations of the Rittergesellschaft zum Esel."
         }
       ]

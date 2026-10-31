@@ -8,18 +8,18 @@
       "english": "King Wencesnzel allows the brothers Arnold and Eberhard von Rosenberg to have a neck dish, stick and gallows in their village Schweigern.",
       "facts": [
         {
-          "type": "sibling",
           "person": "arnold_boxberg",
+          "type": "sibling",
           "of": "eberhard_jagstberg"
         },
         {
-          "type": "generic",
           "person": "arnold_boxberg",
+          "type": "generic",
           "content": "was granted by King Wenceslas the right to hold a Halsgericht and maintain Stock und Galgen in Schweigern."
         },
         {
-          "type": "generic",
           "person": "eberhard_jagstberg",
+          "type": "generic",
           "content": "was granted by King Wenceslas the right to hold a Halsgericht and maintain Stock und Galgen in Schweigern."
         }
       ]

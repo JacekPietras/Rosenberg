@@ -8,28 +8,28 @@
       "english": "Arnold and Friedrich von Rosenberg swap the Hofstatt zu Boxberg, located at the top of their brother Michael Hofhaus, who fell to them in the division with it, for the chapel garden belonging to this associated chapel garden at the chapel and Peter Zimmermann's house at the Brunnen Gate.",
       "facts": [
         {
-          "type": "sibling",
           "person": "Arnold von Rosenberg",
+          "type": "sibling",
           "of": "Michael von Rosenberg"
         },
         {
-          "type": "sibling",
           "person": "Friedrich von Rosenberg",
+          "type": "sibling",
           "of": "Michael von Rosenberg"
         },
         {
-          "type": "generic",
           "person": "Arnold von Rosenberg",
+          "type": "generic",
           "content": "exchanged the Hofstatt at Boxberg that he and his brother Friedrich had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Friedrich."
         },
         {
-          "type": "generic",
           "person": "Friedrich von Rosenberg",
+          "type": "generic",
           "content": "exchanged the Hofstatt at Boxberg that he and his brother Arnold had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Arnold."
         },
         {
-          "type": "generic",
           "person": "Michael von Rosenberg",
+          "type": "generic",
           "content": "had a Hofhaus at Boxberg above the Hofstatt that his brothers Arnold and Friedrich received in their partition with him."
         }
       ],

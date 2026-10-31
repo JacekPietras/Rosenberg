@@ -8,40 +8,40 @@
       "english": "Götz von Berlichingen, Hans von Rosenberg, Ritter, and Engelhard von Bachenstein, Edelknecht, question witnesses about the winepress rights of the noble Lord Kraft von Hohenlohe, on the one hand, and Boppe von Alotzhein, on the other, in the village and the Mark of Rohenkein. They learn that the disputes between Albrecht von Hohenlohe and Boppe's father regarding this matter were settled at the time by the blessed Berngern von Urhusen and Wernhern Kornharten, among others. Given with their seals in 1361, on the day of St. Mary Magdalene. According to the original manuscript in the joint archives in Öhringen, with three attached seals, the third of which has fallen off. – See 1366, September 18.",
       "facts": [
         {
-          "type": "title",
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "title"
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
           "content": "examined witnesses concerning the winepress rights claimed by Kraft von Hohenlohe and Boppe von Alotzhein at Rohenkein."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "learned that earlier disputes between Albrecht von Hohenlohe and Boppe’s father over these rights had been settled by Berngern von Urhusen and Wernhern Kornharten."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "sealed the witness examination document."
         },
         {
-          "type": "generic",
           "person": "Berngern von Urhusen",
           "personDeceased": true,
+          "type": "generic",
           "content": "had settled, together with Wernhern Kornharten, the earlier disputes between Albrecht von Hohenlohe and Boppe’s father over the winepress rights."
         }
       ]
