@@ -14,8 +14,16 @@
             "Vogt zu Dürn"
           ]
         },
-        "[vogt_zu_Durn] seized Lauda",
-        "[vogt_zu_Durn] attempted to take Werbach (intervened by Hanau and Hohenlohe citing Baldwin's letter)"
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "seized Lauda."
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "attempted to take Werbach, but Hanau and Hohenlohe invoked Balduin’s letter ordering fiefs to remain undisturbed."
+        }
       ]
     }
   ]

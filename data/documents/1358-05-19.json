@@ -18,8 +18,22 @@
             "Ritter"
           ]
         },
-        "Engelhard von Rosenberg served as surety for Archbishop Gerlach's debt to Graf Boppo von Eberstein.",
-        "Eberhard von Rosenberg (Edelknecht) served as surety for Archbishop Gerlach's debt to Graf Boppo von Eberstein.",
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "served as surety for Archbishop Gerlach's debt to Count Boppo von Eberstein.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "served as surety for Archbishop Gerlach's debt to Count Boppo von Eberstein.",
+          "personTitle": [
+            "Edelknecht"
+          ]
+        },
         {
           "type": "title",
           "person": "Konrad Rüdt",
@@ -40,8 +54,22 @@
             "Burggraf zu Wildenberg"
           ]
         },
-        "Engelhard von Rosenberg sealed the surety agreement.",
-        "Eberhard von Rosenberg (Edelknecht) sealed the surety agreement."
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "sealed the surety agreement.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sealed the surety agreement.",
+          "personTitle": [
+            "Edelknecht"
+          ]
+        }
       ]
     }
   ]

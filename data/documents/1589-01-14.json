@@ -5,7 +5,7 @@
       "source": "StAN, Herrschaft Sugenheim, Urkunden 333 (Rechter, Seckendorff Urkundenbestände, Inv.-Nr. 869)",
       "url": "https://www.gda.bayern.de/gvl/archive.jsf?id=Vz++++++71c81e2b-2967-42f1-a9a4-0e37525eeca7",
       "german": "1. Theobald Julius v. Thungen zu Büchold und Sodenberg, 2. Georg Sigmund von und zu Adoltzhaim und Wachenbach, würzburgischer Rat und Amtmann zu Raigelßberg und Rötingen, 3. Georg Ludwig der Jüngere v. Seinßheim zu Hohen Cottenheim, 4. Sebastian v. Liechtenstein zum Geyerßberg, 5. Hans v. Liechtenstein zum Schottenstein, Amtmann zu Creylßheim und Lobenhaußen, 6. Friedrich v. Creylßheim zum Stephans Berg, 7. Hans Asimus v. Aschehaußen zu Lißberg und Merchingen, 8. Eberhard v. Eltershouen zu Ipsheim und 9. Johann Philipp v. Nipfenburg zu Scheckingen teidigen als Beistände des Hans Georg, Sohn des Hans Ludwig v. Seckendorff zu Sugenheim und Nidernzenn und der Ursula geb. v. Adoltzheim, zusammen mit 10. Conrad von und zu Velberg und Leofelß, 11. Hans v. Steinaw genannt Steinrück zu Euerbach, Burggraf zum Rotenberg, 12. Philipp Geyer von und zu Gibelstatt und 13. Conrad v. Rosenberg zu Kuelzheim und Schupf als Vormünder sowie mit 14. Albert Christoph von und zu Rosenberg und Waltmanßhouen, 15. Georg Sigmund v. Rosenberg zu Haltenbergstetten, 16. Dietrich Echter v. Meßbrun, würzburgischen Rat und Amtmann zu Rotenfelß, 17. Albrecht v. Liebenstein, 18. Sigmund v. Vestenberg zu Breitten Lohe und 19. Georg Dietrich von und zu Ertel als Beiständen der Tochter Brigitta der gest. Eheleute Zeisolf v. Rosenberg zu Knetzheim und Haltenberg Stetten und Anna geb. von der Kehre nachstehende Heiratsabrede. - Heiratsgut der Braut: 3000 fl fr und standesgemäße Aussteuer, was ihre Brüder innerhalb Jahresfrist geben. Bei deren kinderlosem Tod ist der zu leistende Erbverzicht hinfällig. Der Bräutigam gibt 3000 fl für Widerlegung und 500 fl als Morgengabe; er verschreibt das Wittum von 6500 fl zu 6 2/3 Zins und sichert standesgemäßen Witwensitz. - Erbregelungen: 1. Wie Nr. 547 (1.). 2. Wie Nr. 773 (4.). 3. Über Morgengabe und persönliche Habe kann sie frei verfügen. 4. Wie Nr. 773 (5.). 6. Bei Wiederverheiratung kann das Wittum mit halbjähriger Kündigung zu Kathedra Petri [Febr. 22] mit 6500 fl in Rotenburg, Mergentheim oder Winßheim abgelöst werden. 7. Neben ihrem Teil der Fahrnis stehen der Witwe auch inzwischen angefallene Erbschaften zu. 8. Erwachsen aus einer weiteren Ehe ebenfalls Kinder, so erhalten diese nur ihren Anteil am mütterlichen Erbe, während die Widerlegung an die aus erster Ehe fällt. 9. Bei Tod der Ehefrau und kinderloser Ehe erhält der Witwer lebenslangen Nießbrauch am Wittum. 10. Bei Tod des Ehepaares erben zunächst vorhandene Kinder, ansonsten fällt die Widerlegung an die Agnaten des Ehemanns, das Heiratsgut an die der Ehefrau, denen auch, wenn nicht anders verfügt, die Morgengabe zukommt. - S: 1. Bräutigam, 2. Hans Ludwig v. Seckendorff, 3. A 1, 4. A 2, 5. A 3, 6. A 4, 7. A 5, 8. A 6, 9. A 7, 10. A 8, 11. A 9, 12. A 10, 13. A 11, 14. A 12, 15. A 13, 16. A 14, 17. A 15, 18. A 16, 19. A 17, 20. A 18, 21. A 19.",
-      "english": "The named guarantors and advisers conclude a marriage agreement for Hans Georg, son of Hans Ludwig von Seckendorff and Ursula née von Adoltzheim, and Brigitta, daughter of the late spouses Zeisolf von Rosenberg and Anna née von der Kehre. Konrad von Rosenberg of Külzheim and Schüpf is among the guardians; Albrecht Christoph von und zu Rosenberg of Waldmannshofen and Georg Sigmund von Rosenberg of Haltenbergstetten are among Brigitta’s advisers. The agreement sets out the bride’s dowry and trousseau, the groom’s counter-dowry and morning gift, the widow’s jointure and residence, and inheritance provisions. The listed men seal the agreement.",
+      "english": "The named guarantors and advisers conclude a marriage agreement for Hans Georg, son of Hans Ludwig von Seckendorff and Ursula née von Adoltzheim, and Brigitta, daughter of the late spouses Zeisolf von Rosenberg and Anna née von der Kehre. Konrad von Rosenberg of Külzheim and Schüpf is among the guardians; Albrecht Christoph von Rosenberg zu Rosenberg of Waldmannshofen and Georg Sigmund von Rosenberg of Haltenbergstetten are among Brigitta’s advisers. The agreement sets out the bride’s dowry and trousseau, the groom’s counter-dowry and morning gift, the widow’s jointure and residence, and inheritance provisions. The listed men seal the agreement.",
       "facts": [
         {
           "type": "parent",
@@ -13,12 +13,14 @@
           "personTitle": [
             "zu Knetzheim und Haltenbergstetten"
           ],
-          "of": "Brigitta von Rosenberg"
+          "of": "Brigitta von Rosenberg",
+          "personDeceased": true
         },
         {
           "type": "parent",
           "person": "Anna von der Kehre",
-          "of": "Brigitta von Rosenberg"
+          "of": "Brigitta von Rosenberg",
+          "personDeceased": true
         },
         {
           "type": "spouse",
@@ -26,7 +28,9 @@
           "personTitle": [
             "zu Knetzheim und Haltenbergstetten"
           ],
-          "of": "Anna von der Kehre"
+          "of": "Anna von der Kehre",
+          "personDeceased": true,
+          "ofDeceased": true
         },
         {
           "type": "death",
@@ -38,9 +42,32 @@
           "person": "Anna von der Kehre",
           "diedBefore": "1589-01-15"
         },
-        "Konrad von Rosenberg zu Külzheim und Schüpf acted as a guardian in the marriage agreement for Brigitta von Rosenberg.",
-        "Albrecht Christoph von und zu Rosenberg zu Waldmannshofen advised Brigitta von Rosenberg in her marriage agreement.",
-        "Georg Sigmund von Rosenberg zu Haltenbergstetten advised Brigitta von Rosenberg in her marriage agreement."
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Külzheim",
+            "zu Schüpf"
+          ],
+          "content": "served as a guardian for Hans Georg von Seckendorff in his marriage agreement."
+        },
+        {
+          "type": "generic",
+          "person": "Albrecht Christoph von Rosenberg",
+          "personTitle": [
+            "zu Waldmannshofen",
+            "zu Rosenberg"
+          ],
+          "content": "advised Brigitta von Rosenberg in her marriage agreement."
+        },
+        {
+          "type": "generic",
+          "person": "Georg Sigmund von Rosenberg",
+          "personTitle": [
+            "zu Haltenbergstetten"
+          ],
+          "content": "advised Brigitta von Rosenberg in her marriage agreement."
+        }
       ]
     }
   ],

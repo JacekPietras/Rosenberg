@@ -16,7 +16,11 @@
             "Ritter"
           ]
         },
-        "Eberhard von Rosenberg attended Aschaffenburg accounting session as a witness"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "witnessed the accounting at Aschaffenburg."
+        }
       ]
     }
   ]

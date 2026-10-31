@@ -14,8 +14,11 @@
             "Kurfürst"
           ]
         },
-        "An Abschied was made between Kurfürst Friedrich II. von der Pfalz and Michael von Rosenberg",
-        "The Abschied concerned Boxberg"
+        {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "content": "made an Abschied with Elector Friedrich II of the Palatinate concerning Boxberg."
+        }
       ],
       "img": [
         {

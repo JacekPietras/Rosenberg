@@ -14,7 +14,11 @@
             "Vogt zu Dürn"
           ]
         },
-        "[vogt_zu_Durn] served as surety for Archbishop Mathias of Mainz"
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "served as a surety for Archbishop Mathias of Mainz."
+        }
       ]
     }
   ]

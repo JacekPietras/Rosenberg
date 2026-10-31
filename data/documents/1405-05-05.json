@@ -11,7 +11,11 @@
       "german": "Eberhard Schenk von Roßberg bekennt: Abt und Konvent des Klosters St. Stephan in Würzburg bzw. der Cellerar des Klosters Berthold von Lichtel haben ihm Hofstatt und Garten in dem Dorf Veitshöchheim bis auf Widerruf verliehen. Diese Güter hat vorher Ulrich von Mannheim vom Kloster zu Lehen gehabt. Der geben ist 1405 feria tercia post Walpurgis.",
       "english": "Eberhard Schenk von Roßberg acknowledges that the abbot and convent of St. Stephan Abbey in Würzburg, through the abbey’s cellarer Berthold von Lichtel, have granted him a homestead and garden in Veitshöchheim until revoked. Ulrich von Mannheim had previously held these properties in fief from the abbey. Given in 1405 on the Tuesday after Walpurgis.",
       "facts": [
-        "Eberhard Schenk von Roßberg received a homestead and garden at Veitshöchheim from St. Stephan Abbey in Würzburg until revoked."
+        {
+          "type": "generic",
+          "person": "Eberhard Schenk von Rosenberg",
+          "content": "received a homestead and garden in Veitshöchheim from the abbot and convent of St. Stephan Abbey in Würzburg through the abbey’s cellarer Berthold von Lichtel until revoked."
+        }
       ]
     }
   ]

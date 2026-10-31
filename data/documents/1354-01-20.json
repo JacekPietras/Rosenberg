@@ -14,7 +14,14 @@
             "Ritter"
           ]
         },
-        "Gerlach, Archbishop of Mainz, and Eberhard von Rosenberg chose Rudolf von Wertheim, Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach to investigate Eberhard von Rosenberg's debt letters from the Mainz Chapter"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "together with Archbishop Gerlach, chose Rudolf von Wertheim, Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach to investigate the debt letters he claimed were owed to him by the Mainz Chapter.",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
       ]
     },
     {
@@ -31,9 +38,33 @@
             "Vogt zu Wildenberg"
           ]
         },
-        "Eberhard von Rosenberg claimed to have debt letters from the Mainz Cathedral Chapter",
-        "Eberhard von Rosenberg demanded payment of debts from Archbishop Gerlach of Mainz",
-        "Gerlach, Archbishop of Mainz, and Eberhard von Rosenberg chose Rudolf von Wertheim, Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach to investigate Eberhard von Rosenberg's debt claims"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "claimed to have debt letters from the Mainz Cathedral Chapter.",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Wildenberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "demanded payment of the debt from Archbishop Gerlach of Mainz.",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Wildenberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "together with Archbishop Gerlach, chose Rudolf von Wertheim, Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach to investigate the debt claims he had made against the Mainz Chapter.",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Wildenberg"
+          ]
+        }
       ]
     }
   ]

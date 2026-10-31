@@ -11,7 +11,11 @@
       "german": "Vereinigung Albrecht, Markgrafen von Brandenburg, Kraft von Hohenlohe, Hans von Absberg, Jörg von Rosenberg, Götz, alt und jung, Hans von Berlichingen, Simon, alt und jung, Wilhelm Eberhard und Wilhelm von Stetten, Burkhardt von Wolmershausen, Wilhelm und Hans genannt Gäumann von Crailsheim, Kraft von Enslingen, Hans Wilhelm und Jörg von Vellberg gegen Horneck von Hornberg. Konzept, Laufzeit 1447.",
       "english": "Draft of an alliance by Albrecht, Margrave of Brandenburg, Kraft von Hohenlohe, Hans von Absberg, Jörg von Rosenberg, Götz der Ältere und der Jüngere, Hans von Berlichingen, Simon der Ältere und der Jüngere, Wilhelm Eberhard and Wilhelm von Stetten, Burkhardt von Wolmershausen, Wilhelm and Hans called Gäumann of Crailsheim, Kraft von Enslingen, and Hans Wilhelm and Jörg von Vellberg against Horneck von Hornberg. Dated 1447.",
       "facts": [
-        "Jörg von Rosenberg joined an alliance against Horneck von Hornberg."
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "joined the alliance against Horneck von Hornberg."
+        }
       ],
       "img": [
         {
@@ -31,7 +35,11 @@
       "german": "Mergentheim, Samstag nach Obersttag. Markgraf Albrecht von Brandenburg, Kraft von Hohenlohe und die Ritter der Vereinigung an der Jagst: Hans von Absberg, Jörg von Rosenberg, Götz d. Ä. und d. J. von Berlichingen, Simon d. Ä. und d. J., Wilhelm und Wilhelm Eberhard von Stetten, Burkhardt von Wolmershausen, Wilhelm Heinz, Hans Gaimann von Crailsheim, Kraft von Enslingen, Hans Wilhelm und Jörg von Vellberg, die alle in der Feindschaft gegen Horneck von Hornberg vereinigt sind, schließen einen Beistand gegen denselben. Laufzeit 1447.",
       "english": "Mergentheim, Saturday after Epiphany. Margrave Albrecht of Brandenburg, Kraft von Hohenlohe, and the Ritter of the Jagst alliance—Hans von Absberg, Jörg von Rosenberg, Götz der Ältere und der Jüngere von Berlichingen, Simon der Ältere und der Jüngere, Wilhelm and Wilhelm Eberhard von Stetten, Burkhardt von Wolmershausen, Wilhelm Heinz, Hans Gaimann of Crailsheim, Kraft von Enslingen, Hans Wilhelm, and Jörg von Vellberg—who were united in hostility against Horneck von Hornberg, form a mutual aid pact against him. Dated 1447.",
       "facts": [
-        "Jörg von Rosenberg joined the mutual aid pact against Horneck von Hornberg."
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "joined the mutual aid pact against Horneck von Hornberg."
+        }
       ],
       "img": [
         {

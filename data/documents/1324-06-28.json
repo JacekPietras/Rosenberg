@@ -15,8 +15,16 @@
           "person": "Fritz von Uissigheim",
           "of": "Petrisa"
         },
-        "Fritz von Uissigheim and his wife Petrisa gave Bronnbach Abbey one malter of grain annually from their farm at Uissigheim.",
-        "Kraft von Uissigheim consented to the donation by Fritz von Uissigheim and Petrisa, his wife, to Bronnbach Abbey."
+        {
+          "type": "generic",
+          "person": "Fritz von Uissigheim",
+          "content": "gave Bronnbach Abbey one malter of grain annually from their farm at Uissigheim together with his wife Petrisa."
+        },
+        {
+          "type": "generic",
+          "person": "Kraft von Uissigheim",
+          "content": "consented to Fritz von Uissigheim and Petrisa’s donation to Bronnbach Abbey."
+        }
       ]
     }
   ]

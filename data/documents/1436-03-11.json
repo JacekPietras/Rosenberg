@@ -7,8 +7,6 @@
       "german": "Als aber derselbig brief vber die letzten 500 fl sagend durch feur schaden name lihe gedachter Anshelm B Johannsen noch 500 fl hinaus vnd gab B Johanns ime ain newe verschreibung uber die gantze Summa 6000 fl sagend am Sontag Oculi des 1436 Jars.\n\nKontext aus den vorhergehenden Einträgen (Nr. 1747–1748): Anselm von Rosenberg war der Sohn Ulrichs von Rosenberg und Guten. Die vorherigen Einträge behandeln die Verschreibung über Brassoldshaim und die darauf aufgelaufenen Forderungen Guten und Anselm von Rosenbergs.",
       "english": "When the aforementioned charter concerning the last 500 florins was damaged by fire, the aforementioned Anselm von Rosenberg lent Bishop Johann von Brunn a further 500 florins, and Bishop Johann gave him a new bond for the full sum of 6,000 florins on Sunday Oculi in 1436.\n\nContext from the preceding entries (nos. 1747–1748): Anselm von Rosenberg was the son of Ulrich von Rosenberg and Gute. Those entries concern the bond secured on Brassoldshaim and the claims of Gute and Anselm von Rosenberg under that arrangement.",
       "facts": [
-        "Anselm von Rosenberg lent Bishop Johann von Brunn an additional 500 florins after the previous bond was damaged by fire.",
-        "Bishop Johann von Brunn issued Anselm von Rosenberg a new bond for a total of 6,000 florins on 11 March 1436.",
         {
           "type": "parent",
           "person": "Ulrich von Rosenberg",
@@ -19,6 +17,19 @@
           "type": "parent",
           "person": "Jutta",
           "of": "Anselm von Rosenberg"
+        },
+        {
+          "type": "generic",
+          "person": "Anselm von Rosenberg",
+          "content": "lent Bishop Johann von Brunn a further 500 florins after the previous bond was damaged by fire."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Brunn",
+          "personTitle": [
+            "Bischof von Würzburg"
+          ],
+          "content": "issued Anselm von Rosenberg a new bond for a total of 6,000 florins."
         }
       ],
       "img": [

@@ -28,7 +28,11 @@
             "zu Boxberg"
           ]
         },
-        "Margarethe Zobel waived all claims for war damage against the Deutschorden"
+        {
+          "type": "generic",
+          "person": "Margarethe Zobel",
+          "content": "declared that she would refrain from all claims for war damage against the Teutonic Order."
+        }
       ],
       "img": [
         {

@@ -23,17 +23,6 @@
           "personTitle": [
             "Vogt zu Dürn"
           ],
-          "of": "hans_domherr_zu_wurzburg",
-          "ofTitle": [
-            "Domherr zu Würzburg"
-          ]
-        },
-        {
-          "type": "parent",
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Vogt zu Dürn"
-          ],
           "of": "Eberhard von Rosenberg"
         },
         {
@@ -44,7 +33,14 @@
           ],
           "of": "engelhard_son_of_vogt_zu_Durn"
         },
-        "Rents and dues from properties in Uissigheim, Dienstad, Brehmen, Sindolsheim, and at the Eulschirbenmühle were sold to Bronnbach Abbey"
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "sold various rents and dues from properties in Uissigheim, Dienstadt, Brehmen, Sindolsheim, and at the Eulschirbenmühle to Bronnbach Abbey.",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ]
+        }
       ],
       "img": [
         {

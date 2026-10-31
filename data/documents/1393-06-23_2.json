@@ -25,9 +25,21 @@
           "person": "vogt_zu_Lauda",
           "diedBefore": "1393-06-24"
         },
-        "Elisabeth von Erligheim established a perpetual mass endowment for the women's altar at Wölchingen",
-        "Elisabeth von Erligheim used properties belonging to Schloss Boxberg for her religious endowment",
-        "Ruprecht granted permission for Elisabeth von Erligheim's religious endowment"
+        {
+          "type": "generic",
+          "person": "Elisabeth von Erligheim",
+          "content": "was authorized by Ruprecht to endow a perpetual Mass at the women’s altar in Wölchingen."
+        },
+        {
+          "type": "generic",
+          "person": "Elisabeth von Erligheim",
+          "content": "was authorized to fund the endowment with properties belonging to Boxberg Castle."
+        },
+        {
+          "type": "generic",
+          "person": "Ruprecht",
+          "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the women’s altar in Wölchingen with properties belonging to Boxberg Castle."
+        }
       ]
     }
   ]

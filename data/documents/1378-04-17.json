@@ -14,9 +14,14 @@
             "Vicedom zu Amberg"
           ]
         },
-        "Konrad von Rosenberg acted in the name of Herzog Ruprecht (Duke Ruprecht)",
-        "Konrad von Rosenberg granted pardon to Jobs Tezzel, citizen of Nuremberg",
-        "Konrad von Rosenberg handled criminal justice matters involving capture and imprisonment"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vicedom zu Amberg"
+          ],
+          "content": "granted Jobs Tezzel pardon, in Duke Ruprecht’s name, for capturing Haymeran [?] the Alhart and taking him to Lauf."
+        }
       ]
     }
   ]

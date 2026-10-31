@@ -22,9 +22,27 @@
             "Vitzthum zu Amberg"
           ]
         },
-        "Ruprecht owed Konrad von Rosenberg money for the Zugeld (marriage portion) of Margarethe von Hirschhorn",
-        "Ruprecht granted Konrad von Rosenberg tax revenues at Amberg and mint profits",
-        "Ruprecht granted a Wittum (widow's dower) for Margarethe von Hirschhorn on the village and fortress of Mure"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "was owed 2,000 florins by Ruprecht for the Zugeld of his wife Margarethe von Hirschhorn.",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "was promised the ordinary tax at Amberg and the mint’s seigniorage toward this debt until 2,000 florins had been collected.",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Margarethe von Hirschhorn",
+          "content": "was granted a Wittum on the village and fortress of Mure by Ruprecht."
+        }
       ]
     }
   ]

@@ -12,7 +12,11 @@
           "person": "Anna von Rosenberg",
           "of": "Kunz von Hardheim"
         },
-        "Anna von Rosenberg sold interest and rents at Bütthard to Bronnbach monastery"
+        {
+          "type": "generic",
+          "person": "Anna von Rosenberg",
+          "content": "sold, together with her husband Kunz von Hardheim, their interest and rents at Bütthard to Bronnbach Abbey."
+        }
       ],
       "img": [
         {

@@ -13,10 +13,22 @@
             "Kanonikus der Kirche S. Juliana zu Mosbach (Würzburger Diöcese)"
           ]
         },
-        "Pope Urban V commissioned Eberhard von Rosenberg's installation as Propst of S. Juliana church at Mosbach",
-        "Eberhard von Rosenberg held a canonry at S. Juliana church at Mosbach",
-        "Eberhard von Rosenberg held the parish church of Kocherthürn in Würzburg Diocese",
-        "Dekane of S. Peter in Wimpfen and Öhringen were commissioned to install Eberhard von Rosenberg as Propst"
+        {
+          "type": "generic",
+          "person": "Urban V",
+          "personTitle": [
+            "Papst"
+          ],
+          "content": "commissioned the installation of Eberhard von Rosenberg as provost of the church of St. Juliana at Mosbach."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Kleriker der Würzburger Diözese"
+          ],
+          "content": "held the parish church of Kocherthürn."
+        }
       ]
     }
   ]

@@ -55,10 +55,36 @@
           "of": "Friedrich von Rosenberg",
           "term": "Schwager"
         },
-        "Michael von Rosenberg, Arnold von Rosenberg, and Friedrich von Rosenberg owed a Zugeld as jährliche Gült to Gotfried von Stockheim for Christine von Rosenberg",
-        "Michael von Rosenberg took over the Zugeld Gült debt alone",
-        "Arnold von Rosenberg transferred his share in the drei Seen und Gräben zu Boxberg to Michael von Rosenberg",
-        "Friedrich von Rosenberg transferred his share in the drei Seen und Gräben zu Boxberg to Michael von Rosenberg"
+        {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "content": "owed an annual annuity to Gotfried von Stockheim as a marriage portion for their sister Christine, together with his brothers Arnold and Friedrich von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "owed an annual annuity to Gotfried von Stockheim as a marriage portion for his sister Christine, together with his brothers Michael and Friedrich von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Friedrich von Rosenberg",
+          "content": "owed an annual annuity to Gotfried von Stockheim as a marriage portion for his sister Christine, together with his brothers Michael and Arnold von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "content": "assumed sole responsibility for the annuity debt owed to Gotfried von Stockheim."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "transferred his share in the three lakes and ditches at Boxberg to Michael von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Friedrich von Rosenberg",
+          "content": "transferred his share in the three lakes and ditches at Boxberg to Michael von Rosenberg."
+        }
       ],
       "img": [
         {

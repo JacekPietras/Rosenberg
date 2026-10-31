@@ -19,16 +19,6 @@
           "of": "Kunz von Rosenberg"
         },
         {
-          "type": "parent",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Vizedom zu Amberg"
-          ],
-          "personDeceased": true,
-          "of": "Konrad von Rosenberg"
-        },
-        {
           "type": "death",
           "person": "Konrad von Rosenberg",
           "diedBefore": "1401-03-06",
@@ -37,7 +27,11 @@
             "Vizedom zu Amberg"
           ]
         },
-        "King Ruprecht permitted Kunz von Rosenberg and Konrad von Rosenberg, also identified as a son of a Konrad von Rosenberg whose identity is not established, to appoint a Schultheiss and Schöffen and hold a Halsgericht, Stock und Galgen in Schweigern."
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "received King Ruprecht’s permission jointly with Konrad von Rosenberg to appoint a reeve and aldermen and to hold a high court, stocks, and gallows in Schweigern and its jurisdiction."
+        }
       ]
     }
   ]

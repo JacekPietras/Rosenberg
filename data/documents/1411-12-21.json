@@ -24,9 +24,21 @@
           "person": "Eberhard von Rosenberg",
           "diedBefore": "1411-12-22"
         },
-        "Engelhard von Rosenberg sold Eigenleute formerly resident at Uffingen to Ulrich Wambolt, Komtur at Mergentheim, and the house of the Teutonic Order there",
-        "Elisabeth von Bebenburg sold Eigenleute formerly resident at Uffingen to Ulrich Wambolt, Komtur at Mergentheim, and the house of the Teutonic Order there",
-        "The Eigenleute sold by Engelhard von Rosenberg and Elisabeth von Bebenburg were Heintz Mulner, his wife Anne, and their children"
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "sold their Eigenleute Heintz Mulner, all his children and descendants, and his lawful wife Anne and all her children, formerly resident at Uffingen, to Ulrich Wambolt and the Teutonic Order house at Mergentheim, jointly with Elisabeth von Bebenburg."
+        },
+        {
+          "type": "generic",
+          "person": "Elisabeth von Bebenburg",
+          "content": "sold their Eigenleute Heintz Mulner, all his children and descendants, and his lawful wife Anne and all her children, formerly resident at Uffingen, to Ulrich Wambolt and the Teutonic Order house at Mergentheim, jointly with Engelhard von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "had their seal affixed to the charter for themselves and their heirs."
+        }
       ],
       "img": [
         {

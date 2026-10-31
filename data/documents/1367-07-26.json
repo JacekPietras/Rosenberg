@@ -14,9 +14,14 @@
             "Vitzthum zu Amberg"
           ]
         },
-        "Konrad von Rosenberg issued legal judgment from the Landschranne zu Amberg",
-        "Konrad von Rosenberg adjudicated monastery rights regarding tithes at Hüllach",
-        "Konrad von Rosenberg used the Landgericht seal for official documents"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "content": "issued the abbot a letter with the district court seal recording the Landschranne’s judgment at Amberg."
+        }
       ]
     }
   ]

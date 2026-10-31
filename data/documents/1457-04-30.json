@@ -7,8 +7,20 @@
       "german": "Dr. Hermann Rosenberg, Scholaster des Mainzer Mariengredenstifts und Generalvikar des Mainzer Erzbischofs Dietrich, vidimiert auf Bitten des Herzogs Stephan von Bayern die inserierte Urkunde König Friedrichs III. vom 5. August 1442, mit welcher dem Mainzer Klerus Schutz- und Rechtsprivilegien bestätigt werden. Zeugen: Konrad von Bensheim und Rudolf von Seligenstadt. Notarielle Bestätigung durch den kaiserlichen Notar Eberhard Rumelfels von Forchheim.",
       "english": "Dr. Hermann Rosenberg, scholaster of the Mainz Mariengredenstift and vicar general of Archbishop Dietrich of Mainz, produced an authenticated copy, at the request of Duke Stephan of Bavaria, of King Friedrich III’s 5 August 1442 charter confirming legal protections and privileges for Mainz’s clergy. Konrad von Bensheim and Rudolf von Seligenstadt were witnesses. Imperial notary Eberhard Rumelfels of Forchheim certified the document.",
       "facts": [
-        "Dr. Hermann Rosenberg was scholaster of the Mainz Mariengredenstift and vicar general of Archbishop Dietrich of Mainz.",
-        "Dr. Hermann Rosenberg authenticated a copy of King Friedrich III’s 5 August 1442 charter confirming privileges for Mainz’s clergy."
+        {
+          "type": "title",
+          "person": "Hermann Rosenberg",
+          "personTitle": [
+            "Dr.",
+            "Scholaster des Mainzer Mariengredenstifts",
+            "Generalvikar des Mainzer Erzbischofs Dietrich"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Hermann Rosenberg",
+          "content": "authenticated, at the request of Duke Stephan of Bavaria, a copy of King Friedrich III’s 5 August 1442 charter confirming privileges for Mainz’s clergy."
+        }
       ]
     }
   ],

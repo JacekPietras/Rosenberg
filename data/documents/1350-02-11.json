@@ -34,7 +34,15 @@
           "person": "Burkhard von Seckendorff",
           "of": "Elisabeth von Seckendorff"
         },
-        "Eberhard von Rosenberg issued a Beweisbrief concerning 60 marks of silver on the Bauhof at Rosenberg for Elisabeth von Seckendorff as her Morgengabe.",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "issued a proof letter concerning the Bauhof at Rosenberg securing Elisabeth von Seckendorff’s Morgengabe.",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Wildenberg"
+          ]
+        },
         {
           "type": "parent",
           "person": "Eberhard von Rosenberg",

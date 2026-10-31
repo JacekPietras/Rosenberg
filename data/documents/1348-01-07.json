@@ -16,7 +16,11 @@
             "Ritter"
           ]
         },
-        "Eberhard von Rosenberg was one of five Vormünder who attached a common seal to signify their consent to the agreement"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was one of the five guardians who attached their common seal to signify consent to the agreement."
+        }
       ],
       "img": [
         {

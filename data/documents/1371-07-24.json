@@ -14,9 +14,14 @@
             "Vitzthum zu Heidelberg"
           ]
         },
-        "Ruprecht pledged the house Minneberg to Konrad von Rosenberg",
-        "Konrad von Rosenberg received the house Minneberg which had previously been held by Ulrich Landschad",
-        "Konrad von Rosenberg participated in significant property transactions with Ruprecht"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "was the beneficiary of Ruprecht’s pledge of the Minneberg house, previously held by Ulrich Landschad.",
+          "personTitle": [
+            "Vitzthum zu Heidelberg"
+          ]
+        }
       ]
     }
   ]

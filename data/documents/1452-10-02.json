@@ -28,12 +28,36 @@
           "of": "Eberhard von Rosenberg",
           "term": "Vetter"
         },
-        "Thomas von Rosenberg is Lehnserbe of Eberhard von Rosenberg",
-        "Jörg von Rosenberg is Lehnserbe of Eberhard von Rosenberg",
-        "Eberhard von Rosenberg sold his quarter at Schloss Boxberg and Stadt Boxberg to Ulrich von Rosenberg",
-        "Eberhard von Rosenberg petitioned Pfalzgraf Friedrich to enfeoff Ulrich von Rosenberg with the quarter at Schloss Boxberg and Stadt Boxberg (pfälzisches Mannlehen)",
-        "Thomas von Rosenberg joined the petition to enfeoff Ulrich von Rosenberg with the quarter at Schloss Boxberg and Stadt Boxberg",
-        "Jörg von Rosenberg joined the petition to enfeoff Ulrich von Rosenberg with the quarter at Schloss Boxberg and Stadt Boxberg"
+        {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
+          "content": "was named as a Lehnserbe of Eberhard von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "was named as a Lehnserbe of Eberhard von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sold his quarter of Boxberg Castle and town to Ulrich von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "asked Count Palatine Friedrich to enfeoff Ulrich von Rosenberg with the quarter of Boxberg Castle and town that he had sold as a Palatine Mannlehen."
+        },
+        {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
+          "content": "joined Eberhard von Rosenberg’s petition for Ulrich von Rosenberg to receive the enfeoffment of the quarter of Boxberg Castle and town."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "joined Eberhard von Rosenberg’s petition for Ulrich von Rosenberg to receive the enfeoffment of the quarter of Boxberg Castle and town."
+        }
       ],
       "img": [
         {

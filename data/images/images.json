@@ -102,27 +102,33 @@
           "text": "The Rosenbergs became enemies of the people of Hall."
         },
         {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
           "date": "1434",
-          "text": "Georg von Rosenberg fought against the people of Hall for more than 10 years."
+          "content": "set fire to several villages belonging to the people of Hall."
         },
         {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
           "date": "1434",
-          "text": "Georg von Rosenberg set fire to several villages of the people of Hall."
-        },
-        {
-          "date": "1434",
-          "text": "Georg von Rosenberg had to settle with the people of Hall without payment."
-        },
-        {
-          "date": "1434",
-          "text": "The settlement between Georg von Rosenberg and the people of Hall was made at Hall at the Landtag."
-        },
-        {
-          "date": "1434",
-          "text": "Georg von Rosenberg had many nobles with him at the Landtag at Hall."
+          "content": "was compelled to settle with the people of Hall without payment at the Landtag in Hall."
         }
       ],
-      "url": "https://drive.google.com/thumbnail?id=1QeHsLSA8pqyofWbc4h7mzIv8pOx6r16Q&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1QeHsLSA8pqyofWbc4h7mzIv8pOx6r16Q&sz=w1600",
+      "guesses": [
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1434",
+          "content": "may have fought against the people of Hall for more than 10 years."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1434",
+          "content": "may have had many nobles with him at the Landtag in Hall."
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -1394,7 +1400,8 @@
       ],
       "facts": [
         "An unidentified member of the von Rosenberg family died between 1360 and 1420."
-      ]
+      ],
+      "guesses": []
     },
     {
       "title": "Schloss Grumbach, heraldic frieze in the Rittersaal",
@@ -1593,7 +1600,8 @@
       "placeId": "boxberg",
       "facts": [
         "Boxberg Castle was attacked in 1523."
-      ]
+      ],
+      "guesses": []
     },
     {
       "title": "Donzdorf St Martin, bronze memorial to Ulrich II von Rechberg, who died in 1496",
@@ -1643,8 +1651,13 @@
         }
       ],
       "placeId": "euerbach-sts-cosmas-damian",
-      "facts": [
-        "Ursula von Steinau was born von Rosenberg; the epitaph dates to 1547–1560."
+      "facts": [],
+      "guesses": [
+        {
+          "type": "generic",
+          "person": "Ursula von Steinau",
+          "content": "may have been born into the von Rosenberg family, based on the Rosenberg arms shown on the epitaph."
+        }
       ]
     },
     {
@@ -1836,8 +1849,13 @@
       ],
       "label": "effigy",
       "placeId": "mosbach-st-juliana",
-      "facts": [
-        "A grave slab possibly commemorates canon Eberhard von Rosenberg, active from 1363 to 1368."
+      "facts": [],
+      "guesses": [
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "may be commemorated by this grave slab."
+        }
       ]
     },
     {
@@ -1889,7 +1907,8 @@
       "placeId": "liebenstein-castle",
       "facts": [
         "Albrecht von Liebenstein and Margaretha von Rosenberg are commemorated together."
-      ]
+      ],
+      "guesses": []
     },
     {
       "title": "Neckarwestheim Schloss Liebenstein, Renaissance bay window with Liebenstein and Rosenberg arms",
@@ -1923,7 +1942,11 @@
       ],
       "placeId": "schloss-haltenbergstetten",
       "facts": [
-        "The portal arms identify Friedrich Zeisolf von Rosenberg and the von Kere family."
+        {
+          "type": "generic",
+          "person": "Friedrich Zeisolf von Rosenberg",
+          "content": "is identified among the arms shown on the portal alongside the von Kere family."
+        }
       ]
     },
     {
@@ -1980,7 +2003,13 @@
       ],
       "placeId": "speyer",
       "facts": [
-        "Philipp von Rosenberg was Prince-Bishop of Speyer."
+        {
+          "type": "title",
+          "person": "Philipp von Rosenberg",
+          "personTitle": [
+            "Prince-Bishop of Speyer"
+          ]
+        }
       ]
     },
     {
@@ -2025,7 +2054,13 @@
           "date": "1572-05-17",
           "diedOn": "1572-05-17"
         },
-        "Rufina von Rosenberg, née Stiebar von Buttenheim, was Albrecht von Rosenberg's second wife.",
+        {
+          "type": "spouse",
+          "person": "Rufina von Rosenberg, née Stiebar von Buttenheim",
+          "personDeceased": true,
+          "of": "Albrecht von Rosenberg",
+          "ofDeceased": true
+        },
         {
           "type": "death",
           "person": "Rufina von Rosenberg, née Stiebar von Buttenheim",
@@ -2071,7 +2106,12 @@
         }
       ],
       "facts": [
-        "Katharina von Rosenberg, née von Seinsheim, was Albrecht von Rosenberg's first wife.",
+        {
+          "type": "spouse",
+          "person": "Katharina von Rosenberg, née von Seinsheim",
+          "personDeceased": true,
+          "of": "Albrecht von Rosenberg"
+        },
         {
           "type": "death",
           "person": "Katharina von Rosenberg, née von Seinsheim",
@@ -2098,14 +2138,25 @@
         }
       ],
       "facts": [
-        "Eberhard von Rosenberg was buried in Stuttgart.",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personDeceased": true,
+          "content": "was buried in Stuttgart."
+        },
         {
           "type": "death",
           "person": "Eberhard von Rosenberg",
           "date": "1519-10-16",
           "diedOn": "1519-10-16"
         },
-        "Anna von Rosenberg, née von Dienheim, was Eberhard von Rosenberg’s wife.",
+        {
+          "type": "spouse",
+          "person": "Anna von Rosenberg, née von Dienheim",
+          "personDeceased": true,
+          "of": "Eberhard von Rosenberg",
+          "ofDeceased": true
+        },
         {
           "type": "death",
           "person": "Anna von Rosenberg, née von Dienheim",
@@ -2137,7 +2188,13 @@
       "date": "1343",
       "placeId": "wildenberg-castle",
       "facts": [
-        "Eberhard von Rosenberg was recorded as burgrave of Wildenberg in 1343."
+        {
+          "type": "title",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Burggraf auf Wildenberg"
+          ]
+        }
       ]
     },
     {
@@ -2231,7 +2288,11 @@
         }
       ],
       "facts": [
-        "Konrad von Rosenberg died"
+        {
+          "type": "death",
+          "person": "Konrad von Rosenberg",
+          "diedOn": "1596"
+        }
       ]
     },
     {
@@ -2374,7 +2435,11 @@
       "description": "Etching, ca. 1545; the museum API gives the date bounds 1540–1550. Public domain image. The museum's earlier title explicitly names Albrecht von Rosenberg, preserved in its Commons image record.",
       "url": "https://drive.google.com/thumbnail?id=1F4kT-9sKrnSxpGljZpuEz8xiICIw_qPt&sz=w1600",
       "facts": [
-        "An etching by Matthias Zündt, made circa 1545, depicts Albrecht von Rosenberg abducting Hieronymus Paumgartner."
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "content": "is depicted abducting Hieronymus Paumgartner in an etching by Matthias Zündt made circa 1545."
+        }
       ]
     },
     {
@@ -2544,7 +2609,16 @@
         }
       ],
       "facts": [
-        "Georg Albrecht von Seckendorff was the son of Hans Georg von Seckendorff and Brigitta von Rosenberg.",
+        {
+          "type": "parent",
+          "person": "Hans Georg von Seckendorff",
+          "of": "Georg Albrecht von Seckendorff"
+        },
+        {
+          "type": "parent",
+          "person": "Brigitta von Rosenberg",
+          "of": "Georg Albrecht von Seckendorff"
+        },
         {
           "type": "death",
           "person": "Georg Albrecht von Seckendorff",
@@ -2606,7 +2680,11 @@
         }
       ],
       "facts": [
-        "Albrecht von Rosenberg's donor column dates to 1557."
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "content": "is commemorated by a donor column dated to 1557."
+        }
       ]
     },
     {
@@ -2689,7 +2767,16 @@
           "date": "1576",
           "diedOn": "1576"
         },
-        "Anna von Sternberg, born von Rosenberg, was his wife."
+        {
+          "type": "spouse",
+          "person": "Anna von Sternberg, née von Rosenberg",
+          "of": "Hans von Sternberg",
+          "ofTitle": [
+            "zu Schenkenau"
+          ],
+          "ofDeceased": true,
+          "date": "1576"
+        }
       ]
     },
     {
@@ -2710,14 +2797,25 @@
         }
       ],
       "facts": [
-        "Wolf von Hürnheim was buried at Kenzingen parish church.",
+        {
+          "type": "generic",
+          "person": "Wolf von Hürnheim",
+          "personDeceased": true,
+          "content": "was buried at Kenzingen parish church."
+        },
         {
           "type": "death",
           "person": "Wolf von Hürnheim",
           "date": "1533",
           "diedOn": "1533"
         },
-        "Uta von Rosenberg was Wolf von Hürnheim's paternal grandmother."
+        {
+          "type": "kin",
+          "person": "Uta von Rosenberg",
+          "of": "Wolf von Hürnheim",
+          "term": "paternal grandmother",
+          "ofDeceased": true
+        }
       ]
     },
     {
@@ -2781,7 +2879,13 @@
         }
       ],
       "facts": [
-        "Eva von Maßbach, born von Rosenberg, was Christoph von Maßbach’s wife.",
+        {
+          "type": "spouse",
+          "person": "Eva von Maßbach, née von Rosenberg",
+          "of": "Christoph von Maßbach",
+          "personDeceased": true,
+          "ofDeceased": true
+        },
         {
           "type": "death",
           "person": "Christoph von Maßbach",
@@ -2826,7 +2930,16 @@
           "date": "1567",
           "diedOn": "1567"
         },
-        "Their mother was Eva von Maßbach, born von Rosenberg."
+        {
+          "type": "parent",
+          "person": "Eva von Maßbach, née von Rosenberg",
+          "of": "Philipp von Maßbach"
+        },
+        {
+          "type": "parent",
+          "person": "Eva von Maßbach, née von Rosenberg",
+          "of": "Eva von Maßbach"
+        }
       ]
     },
     {
@@ -2931,11 +3044,23 @@
       "description": "Klopp identifies Johannes Ludovicus as a child of Hans Georg von Seckendorff and Brigitta von Rosenberg and records his death dates as 16 May–6 September 1596. Photograph credited to Heinrich Klopp; no open reuse license stated.",
       "url": "https://drive.google.com/thumbnail?id=1S5jI-fO4QMpDZLmrFEBhocd9h1IvttmD&sz=w1600",
       "facts": [
-        "Johannes Ludovicus von Seckendorff was a child of Hans Georg von Seckendorff and Brigitta von Rosenberg.",
+        {
+          "type": "parent",
+          "person": "Hans Georg von Seckendorff",
+          "of": "Hans Ludovicus von Seckendorff",
+          "ofDeceased": true
+        },
+        {
+          "type": "parent",
+          "person": "Brigitta von Rosenberg",
+          "of": "Hans Ludovicus von Seckendorff",
+          "ofDeceased": true
+        },
         "The epitaph gives 16 May 1596 as the earliest possible date.",
         {
           "type": "death",
           "person": "Hans Ludovicus von Seckendorff",
+          "date": "1596",
           "diedBefore": "1596-09-07"
         }
       ]
@@ -3004,11 +3129,15 @@
         }
       ],
       "facts": [
-        "The epitaph identifies the date as the Wednesday after Pentecost.",
+        {
+          "type": "generic",
+          "person": "Margaretha von Rosenberg",
+          "personDeceased": true,
+          "content": "died on the Wednesday after Pentecost."
+        },
         {
           "type": "death",
           "person": "Margaretha von Rosenberg",
-          "date": "1418",
           "diedOn": "1418"
         }
       ]
@@ -3061,7 +3190,17 @@
       "description": "Description supplied by the user: Two separate figure stones, 1493, commemorating the rebuilding begun in 1480. Originally outside the chapel at Boxberg castle, above a gate; since 1856 in Karlsruhe, Landessammlungen, stone hall, museum nos. C 101 and C 102. Approximately life-sized reliefs on tomb-like slabs, made during their lifetimes. Jörg wears a knee-length coat and hat and carries an axe and rosary. Osanna carries a rosary, bottle, handled basket with bread(?) and double basket-covered bottle. The editors identify these as a building memorial. Original image filename: C 00101-C 00102_D 4988.jpg.",
       "url": "https://drive.google.com/thumbnail?id=1l7DObHTunxziPyv02CPrQbt-rTLxD41j&sz=w1600",
       "facts": [
-        "Jörg von Rosenberg and Osanna von Rosenberg, née von Eycholtzheim, are commemorated on building memorials made in 1493. The rebuilding of Boxberg Castle commemorated by the memorials began in 1480."
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "is commemorated on a building memorial alongside Osanna von Rosenberg, née von Eycholtzheim, made in 1493."
+        },
+        {
+          "type": "generic",
+          "person": "Osanna von Rosenberg, née von Eycholtzheim",
+          "content": "is commemorated on a building memorial alongside Jörg von Rosenberg made in 1493."
+        },
+        "The rebuilding of Boxberg Castle commemorated by the memorials began in 1480."
       ]
     },
     {
@@ -3102,8 +3241,15 @@
         }
       ],
       "facts": [
-        "[konrad_schonau] died on 6 May in a year ending in 6; the decade and century are illegible.",
-        "Adelheid von Hirschhorn was the wife of Konrad von Rosenberg and died on 2 April in the same year ending in 6."
+        "Konrad von Rosenberg died on 6 May in a year ending in 6; the decade and century are illegible.",
+        {
+          "type": "spouse",
+          "person": "Adelheid von Hirschhorn",
+          "of": "Konrad von Rosenberg",
+          "personDeceased": true,
+          "ofDeceased": true
+        },
+        "Adelheid von Hirschhorn died on 2 April in the same year ending in 6."
       ]
     },
     {

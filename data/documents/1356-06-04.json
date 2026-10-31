@@ -8,7 +8,11 @@
       "german": "[1356] Juni 4: Jodocus de Rosenberch bittet Frankfurt, den ihn und seine Brüder ohne Grund befehdenden Kaiser [Karl IV.] aufzufordern, dass er sie bei dem böhmischen Recht in Frieden lasse. Sie hatten einen Austrag vor dem Landesherrn angeboten, der aber nicht angenommen worden sei.\n\n[Karl IV. verzieh am 21.6.1356 den Brüdern Peter, Jodocus, Ulrich und Johann von Roesenberg alle Verfehlungen und Mejestätsbeleidigungen und setzte sie wieder in ihre früheren Adelsrechte ein; Böhmer/Huber, Regesta Imperii 8, S.199 Nr. 2468]",
       "english": "[1356] June 4: Jodocus von Rosenberg asks Frankfurt to urge the emperor [Karl IV], who is waging an unjustified feud against him and his brothers, to leave them in peace under Bohemian law. They had offered a settlement before the territorial lord, but it was not accepted.\n\n[Karl IV pardoned the brothers Peter, Jodocus, Ulrich, and Hans von Rosenberg on June 21, 1356, for all offenses and insults against imperial majesty and restored them to their former noble rights; Böhmer/Huber, Regesta Imperii 8, p. 199 no. 2468]",
       "facts": [
-        "Jodocus von Rosenberg asked Frankfurt to urge Emperor Karl IV to leave him and his brothers in peace under Bohemian law",
+        {
+          "type": "generic",
+          "person": "Jodocus von Rosenberg",
+          "content": "asked Frankfurt to urge Emperor Karl IV to leave him and his brothers in peace under Bohemian law."
+        },
         {
           "type": "sibling",
           "person": "Jodocus von Rosenberg",
@@ -27,8 +31,46 @@
           "of": "Hans von Rosenberg",
           "date": "1356-06-21"
         },
-        "Peter von Rosenberg, Jodocus von Rosenberg, Ulrich von Rosenberg, and Hans von Rosenberg were pardoned by Emperor Karl IV for offenses and insults against imperial majesty",
-        "Emperor Karl IV restored Peter von Rosenberg, Jodocus von Rosenberg, Ulrich von Rosenberg, and Hans von Rosenberg to their former noble rights"
+        {
+          "type": "generic",
+          "person": "Peter von Rosenberg",
+          "content": "was pardoned by Emperor Karl IV on 21 June 1356 for offenses and insults against imperial majesty."
+        },
+        {
+          "type": "generic",
+          "person": "Jodocus von Rosenberg",
+          "content": "was pardoned by Emperor Karl IV on 21 June 1356 for offenses and insults against imperial majesty."
+        },
+        {
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "was pardoned by Emperor Karl IV on 21 June 1356 for offenses and insults against imperial majesty."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "was pardoned by Emperor Karl IV on 21 June 1356 for offenses and insults against imperial majesty."
+        },
+        {
+          "type": "generic",
+          "person": "Peter von Rosenberg",
+          "content": "was restored by Emperor Karl IV on 21 June 1356 to former noble rights."
+        },
+        {
+          "type": "generic",
+          "person": "Jodocus von Rosenberg",
+          "content": "was restored by Emperor Karl IV on 21 June 1356 to former noble rights."
+        },
+        {
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "was restored by Emperor Karl IV on 21 June 1356 to former noble rights."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "was restored by Emperor Karl IV on 21 June 1356 to former noble rights."
+        }
       ],
       "img": [
         {

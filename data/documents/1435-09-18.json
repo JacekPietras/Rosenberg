@@ -23,9 +23,21 @@
           "person": "Kunz von Rosenberg",
           "of": "Ulrich von Rosenberg"
         },
-        "Ulrich von Rosenberg received castle fiefs previously held by Kunz von Rosenberg in a division of property.",
-        "Ulrich von Rosenberg held castle fiefs at Bischofsheim from Archbishop Dietrich of Mainz.",
-        "Ulrich von Rosenberg held a fief of four pounds of revenue from the cellarer's office at Dürn from Archbishop Dietrich of Mainz."
+        {
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "received in a division of property with his brother Kunz the castle fiefs previously held by Kunz."
+        },
+        {
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "held castle fiefs at Bischofsheim from Archbishop Dietrich of Mainz."
+        },
+        {
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "held a fief from Archbishop Dietrich of Mainz consisting of revenue from the cellarer’s office at Walldürn."
+        }
       ]
     }
   ],

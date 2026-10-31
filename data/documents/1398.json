@@ -14,9 +14,30 @@
             "Ritter"
           ]
         },
-        "Hans von Rosenberg held Burg and Dorf Mure",
-        "Hans von Rosenberg owned a house in Heidelberg",
-        "Hans von Rosenberg's house in Heidelberg was located adjacent to Albrecht von Erligheim's house"
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "held Mure Castle and village."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "owned a house in Heidelberg."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "had a house in Heidelberg next to Albrecht von Erligheim’s house."
+        }
       ]
     }
   ]

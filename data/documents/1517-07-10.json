@@ -21,11 +21,16 @@
             "Markgraf"
           ]
         },
-        "Georg von Rosenberg is Rat of Kasimir von Brandenburg",
-        "Georg von Rosenberg is Rat of Georg von Brandenburg",
-        "Kasimir von Brandenburg and Georg von Brandenburg issued a Schutz- und Schirmbrief to Georg von Rosenberg for Stadt Boxberg",
-        "Kasimir von Brandenburg and Georg von Brandenburg issued a Schutz- und Schirmbrief to Georg von Rosenberg for Dorf Schweigern",
-        "Kasimir von Brandenburg and Georg von Brandenburg issued a Schutz- und Schirmbrief to Georg von Rosenberg for Seehof bei Boxberg"
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "content": "served as a councilor to Margraves Kasimir and Georg of Brandenburg."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "content": "received from Margraves Kasimir and Georg of Brandenburg a letter of protection for Boxberg, Schweigern, and the Seehof near Boxberg."
+        }
       ],
       "img": [
         {

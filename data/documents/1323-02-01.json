@@ -8,7 +8,15 @@
       "german": "Ritter Eberhard von Rosenberg, Vogt, Schultheiß und Schöffen von (Tauber-)Bischofsheim beurkunden, dass Wignand, Sohn des Brundward von Eiersheim, seine Ehefrau Katharina und beider genannte zwei Töchter und Eidame an Dekan und Kapitel von Aschaffenburg für 24 Pfund Heller aus genannten Weinbergen und Äckern zu (Tauber-)Bischofsheim eine Gült von 2 Pfund Hellern zur Präsenz verkauften.",
       "english": "Eberhard von Rosenberg, Ritter, bailiff, the mayor, and the aldermen of (Tauber-)Bischofsheim certify that Wignand, son of Brundward von Eiersheim, his wife Katharina, their two named daughters, and sons-in-law sold to the dean and chapter of Aschaffenburg, for 24 pounds Heller, an annual rent of 2 pounds Heller from specified vineyards and fields in (Tauber-)Bischofsheim for the chapter's common fund.",
       "facts": [
-        "Eberhard von Rosenberg, Ritter participated in certifying the sale of an annual rent from vineyards and fields at (Tauber-)Bischofsheim by Wignand, son of Brundward von Eiersheim, his wife Katharina, their two daughters, and sons-in-law to the dean and chapter of Aschaffenburg."
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "certified that Wignand, son of Brundward von Eiersheim, his wife Katharina, their two daughters, and sons-in-law sold an annual rent from vineyards and fields at (Tauber-)Bischofsheim to the dean and chapter of Aschaffenburg.",
+          "personTitle": [
+            "Ritter",
+            "Vogt"
+          ]
+        }
       ],
       "img": [
         {

@@ -10,9 +10,16 @@
       "german": "Lehenrevers Eberhardts von Rosenberg an H. Graf Johann ausgestellt über das Mannlehen den halbtheil des Zehnten zu Hohenstadt (Hohenstatt) klein und groß, den bisher Marquard von Hohenstadt (Hohenstatt) von der Herrschaft zu Wertheim zu Lehen getragen.",
       "english": "Lehenrevers Eberhard von Rosenberg issued to H. Graf Hans over the male fief the half part of the tithes in Hohenstadt small and large, which until now Marquard von Hohenstadt had borne as a fief from the lordship of Wertheim.",
       "facts": [
-        "Eberhard von Rosenberg received a Mannlehen (man's fief) from Graf Hans",
-        "Eberhard von Rosenberg received half of the tithes at Hohenstadt klein and groß as a fief",
-        "Eberhard von Rosenberg's fief at Hohenstadt had previously been held by Marquard von Hohenstadt from the lordship of Wertheim"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "held half the small and large tithes at Hohenstadt as a Mannlehen from Count Hans."
+        },
+        {
+          "type": "generic",
+          "person": "Marquard von Hohenstadt",
+          "content": "had previously held the tithes at Hohenstadt as a fief from the lordship of Wertheim."
+        }
       ],
       "img": [
         {

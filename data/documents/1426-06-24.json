@@ -18,12 +18,29 @@
             "Ritter"
           ]
         },
-        "Eberhard von Gauangelloch is titled Ritter.",
-        "Eberhard von Gauangelloch sold one third of the großen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, and the Deutscher Orden.",
-        "Anna von Rosenberg sold one third of the großen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, and the Deutscher Orden.",
-        "Eberhard von Gauangelloch sold a Hof at Kirchhausen with all rights and incomes to Eberhard von Seinsheim, Deutschmeister, and the Deutscher Orden.",
-        "Anna von Rosenberg sold a Hof at Kirchhausen with all rights and incomes to Eberhard von Seinsheim, Deutschmeister, and the Deutscher Orden.",
-        "Eberhard von Seinsheim is Deutschmeister (Meister des Deutschen Ordens in deutschen und welschen Landen)."
+        {
+          "type": "generic",
+          "person": "Eberhard von Gauangelloch",
+          "content": "sold, with his wife Anna von Rosenberg, one third of the great tithe at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, and the Teutonic Order.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Gauangelloch",
+          "content": "sold, with his wife Anna von Rosenberg, a farm at Kirchhausen with all rights and revenues to Eberhard von Seinsheim, Deutschmeister, and the Teutonic Order.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "title",
+          "person": "Eberhard von Seinsheim",
+          "personTitle": [
+            "Deutschmeister"
+          ]
+        }
       ],
       "img": [
         {

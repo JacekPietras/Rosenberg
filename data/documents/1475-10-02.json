@@ -19,8 +19,16 @@
           ],
           "of": "Elche von Riedern"
         },
-        "Elche von Riedern and Kunz von Rosenberg entered into a marriage contract.",
-        "Kunz von Rosenberg sealed the marriage contract; his seal is now detached."
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "entered into a marriage contract with Elche von Riedern."
+        },
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "sealed the marriage contract."
+        }
       ],
       "img": [
         {

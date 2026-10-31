@@ -14,12 +14,16 @@
             "Deutsch-Ordens-Komtur zu Mergentheim"
           ]
         },
-        "Citizens of (Tauber-)Bischofsheim acted on behalf of Deutsch-Ordens-Komtur Wolfgang von Bibra",
-        "Citizens of Grünsfeld acted on behalf of Georg von Rosenberg",
-        "Bürgermeister, Gericht und Gemeinde zu Boxberg participated in the Schlichtung",
-        "A Streit had erupted between the Deutscher Orden and the von Rosenberg",
-        "The Streit concerned Grenzen in the Holz called die Klingen",
-        "The Streit over Grenzen in the Holz called die Klingen was settled by Schlichtung"
+        {
+          "type": "generic",
+          "person": "Wolfgang von Bibra",
+          "content": "was represented by named citizens of Tauberbischofsheim in the settlement of a border dispute with Georg von Rosenberg over the woodland called die Klingen, in which Boxberg’s mayor, court, and community also participated."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "content": "was represented by named citizens of Grünsfeld in the settlement of a border dispute with the Teutonic Order over the woodland called die Klingen, in which Boxberg’s mayor, court, and community also participated."
+        }
       ],
       "img": [
         {

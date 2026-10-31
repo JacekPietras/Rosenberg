@@ -14,8 +14,16 @@
             "Ritter"
           ]
         },
-        "Eberhard von Rosenberg served as Provisor of the Archbishop of Mainz.",
-        "Eberhard von Rosenberg participated in the inventory of the Erenfels toll chest."
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "served as a provisor of the Archbishop of Mainz."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "participated in the inventory of the Erenfels toll chest."
+        }
       ]
     }
   ]

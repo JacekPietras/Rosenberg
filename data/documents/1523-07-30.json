@@ -14,7 +14,14 @@
             "Kurfürst"
           ]
         },
-        "Kurfürst Ludwig von der Pfalz paid for Schloss Boxberg"
+        {
+          "type": "generic",
+          "person": "Ludwig von der Pfalz",
+          "personTitle": [
+            "Kurfürst"
+          ],
+          "content": "paid 5,000 florins in cash for Boxberg Castle through his secretaries and servants Bernhard Freinsheimer and Ott Reiß, as acknowledged by Nördlingen’s mayor and council on behalf of the Swabian League."
+        }
       ],
       "img": [
         {

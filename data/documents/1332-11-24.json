@@ -46,9 +46,30 @@
           "person": "Konrad von Uissigheim",
           "of": "Erkinger von Uissigheim"
         },
-        "Wiprecht von Rosenberg, Knecht, swore a ten-year Urfehde with the named participants in the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim.",
-        "[vogt_zu_Durn], Vogt zu Dürn, witnessed the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim.",
-        "Arnold von Rosenberg, Ritter, witnessed the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim."
+        {
+          "type": "generic",
+          "person": "Wiprecht von Rosenberg",
+          "personTitle": [
+            "Knecht"
+          ],
+          "content": "swore a ten-year Urfehde with the other named participants in the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim."
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "content": "witnessed the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "witnessed the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim."
+        }
       ]
     }
   ]

@@ -18,7 +18,22 @@
             "Vogt zu Dürn"
           ]
         },
-        "Involved in Mainz fiscal administration affecting Bischofsheim, Külsheim, Amorbach, Dürn, Buchen"
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "received funds from the Jews of the Aschaffenburg Vitztumamt on Heylmann’s order and distributed them among the named recipients.",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "received the taxes from Bischofsheim, Külsheim, Amorbach, Dürn, and Buchen together with the Vogt of Buchen, to pay them to Schurberg and Neckarsulm.",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ]
+        }
       ]
     }
   ]

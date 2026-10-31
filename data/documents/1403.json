@@ -10,7 +10,11 @@
       "german": "Eberhard von Rosenberg, zu Jagstberg gesessen: Schuldsumme.",
       "english": "Eberhard von Rosenberg, resident of Jagstberg: sum owed.",
       "facts": [
-        "Eberhard von Rosenberg resided at Jagstberg"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was resident at Jagstberg."
+        }
       ],
       "img": [
         {

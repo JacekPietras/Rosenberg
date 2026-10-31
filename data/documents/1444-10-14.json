@@ -7,8 +7,22 @@
       "german": "Contz Landschade von Steinach bekennt mit diesem Brief, dass der Ritter Contz von Rosenberg, sein »Vetter«, ihm sein Viertel an Schloss Schadeck bei Steinach am Neckar mitsamt dem Wald und der Gülte zu Amorbach verpfändet hat. Die Urkunde des Ritters Contz ist inseriert. Der Rosenberger erlaubt dem Pfandnehmer, sich des Pfandes zu gebrauchen und sich daraus zu allen Nöten zu behelfen, nicht aber gegen den Aussteller selbst. Von der Gülte in Amorbach steht die Hälfte dem Rosenberger zu. Der Landschade soll von seiner Hälfte einen Knecht in Schadeck anstellen, der das Schloss versorgt und den Wald behütet. Brennholz für Schadeck darf dem Wald entnommen werden. Ritter Konrad von Rosenberg, Contz' »Vetter«, besitzt ein Drittel an Schadeck. Es folgen weitere übliche Bestimmungen (Öffnung für den Aussteller, Verbot der Weiterverpfändung, Modalitäten einer Lösung des Pfandes). Contz von Rosenberg kündigt sein Siegel an. — ... geben ... an Sand Burckharts tag ... 1444. Contz Landschad verspricht vorstehende Abmachungen unverbrüchlich zu halten und kündigt sein Siegel an. — ... geben ... im Jahr und auf dem Tag, wie es oben steht.",
       "english": "Contz Landschade von Steinach acknowledges in this letter that Knight Kunz von Rosenberg, his “Vetter” (kinsman), pledged to him his quarter share of Schloss Schadeck near Steinach on the Neckar, together with the forest and the rent at Amorbach. The knight Contz's charter is inserted. The Rosenberg permits the pledgee to use the pledge and draw on it in all need, but not against the issuer. Half of the rent at Amorbach belongs to the Rosenberg. Landschade is to keep a servant at Schadeck from his half to maintain the castle and guard the forest. Firewood for Schadeck may be taken from the forest. Knight Konrad von Rosenberg, Contz's “Vetter,” holds a third of Schadeck. Further standard provisions follow (the issuer's right of entry, a ban on repledging, and terms for redeeming the pledge). Kunz von Rosenberg announces his seal. — ... given ... on St. Burkhard's Day ... 1444. Contz Landschad promises to keep the foregoing agreements without breach and announces his seal. — ... given in the year and on the day stated above.",
       "facts": [
-        "Ritter Kunz von Rosenberg pledged his quarter share of Schloss Schadeck, together with the forest and rent at Amorbach, to Contz Landschade von Steinach.",
-        "Konrad von Rosenberg, Ritter, held a third of Schloss Schadeck.",
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "pledged his quarter share of Schloss Schadeck, together with the forest and rent at Amorbach, to Kunz Landschade von Steinach."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "held a third of Schloss Schadeck."
+        },
         {
           "type": "kin",
           "person": "Kunz von Rosenberg",

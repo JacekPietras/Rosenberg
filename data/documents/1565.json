@@ -7,7 +7,16 @@
       "german": "Conrad von Velberg verkauft an Marx Nues, Diener des Ritters Albrecht von Rosenberg, und Jos Eberhardt das Erbe an seinem Hof zu Sachsenflur um 1000 fl.",
       "english": "Konrad von Velberg sells the inheritance in his farm at Sachsenflur to Marx Nues, servant of Albrecht von Rosenberg, Ritter, and Jos Eberhard for 1,000 florins.",
       "facts": [
-        "Marx Nues, a servant of Albrecht von Rosenberg, Ritter, acquired an inheritance in a farm at Sachsenflur from Konrad von Velberg together with Jos Eberhard."
+        {
+          "type": "generic",
+          "person": "Marx Nues",
+          "content": "acquired Konrad von Velberg’s inheritance in a farm at Sachsenflur jointly with Jos Eberhardt."
+        },
+        {
+          "type": "generic",
+          "person": "Marx Nues",
+          "content": "served Albrecht von Rosenberg, Ritter."
+        }
       ]
     }
   ],

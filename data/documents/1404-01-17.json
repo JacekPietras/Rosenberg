@@ -7,7 +7,11 @@
       "german": "Belagerung der Burg Werberg durch Truppen der fränkischen Landfriedenseinung im Namen König Ruprechts wegen der von dieser Burg aus verübten Räubereien und Untaten derer von Hutten. Versuch einer schiedsrichterlichen Beilegung der Streitigkeiten zwischen denen von Hutten und der Einung, insbesondere dem Kloster Fulda, zunächst vor der Burg Werberg durch Eberhard von Buchenau, Ludwig von Hutten, Wilhelm von Thüngen und Konrad von Steinau genannt Steinrück laut einer im Wortlaut inserierten Urkunde vom 30. November 1403, danach auf einem Tag zu Schweinfurt durch Friedrich Schenk von Limpurg. Angefügt sind die Beschwerden des Abtes von Fulda gegen die von Hutten. Die Verzeichnung nennt Arnold von Rosenberg unter den zugehörigen Personennamen.",
       "english": "Troops of the Franconian Land Peace League besieged Werberg Castle in King Ruprecht’s name because of robberies and misdeeds committed from the castle by the Hutten family. An attempt was made to arbitrate the dispute between the Huttens and the League, particularly Fulda Abbey, first before Werberg Castle by Eberhard von Buchenau, Ludwig von Hutten, Wilhelm von Thüngen, and Konrad von Steinau genannt Steinrück, according to an incorporated charter of 30 November 1403, and later at a meeting in Schweinfurt by Friedrich Schenk von Limpurg. The abbot of Fulda’s complaints against the Huttens are attached. The catalog also lists Arnold von Rosenberg among the associated people.",
       "facts": [
-        "The GDA catalog lists Arnold von Rosenberg among the persons associated with the record concerning the siege of Werberg Castle and the dispute involving the Hutten family and Fulda Abbey."
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "is listed in the catalog among the people associated with the record concerning the siege of Werberg Castle and the dispute involving the Hutten family and Fulda Abbey."
+        }
       ]
     }
   ],

@@ -16,7 +16,11 @@
           "person": "Margret von Rosenberg",
           "of": "Eberhard von Balzhofen"
         },
-        "Eberhard von Balzhofen and Margret von Rosenberg sold an annuity from Walheim to the prebend of St. John and St. Catherine in Hohenhaslach."
+        {
+          "type": "generic",
+          "person": "Eberhard von Balzhofen",
+          "content": "sold an annuity held at Walheim to the prebend of St. John and St. Catherine in Hohenhaslach together with his wife Margret von Rosenberg."
+        }
       ],
       "img": [
         {

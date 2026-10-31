@@ -7,14 +7,26 @@
       "german": "B Johanns von Brun wart Vlrichen von Rosenberg vnd Guten seiner hausfrawen schuldig 3500 fl, die verschrib er imen mit burgschafft vf Petri Cathedra des 1424 Jars zubezalen. Es beschahe aber nit, vnd ging vnlang darnach gemelter von Rosenberg mit dot ab, vnd vertrug sich genanter B Johanns mit desselben verlassen hausfrawen, vnd irem sone Anshelmen, der gestalt das imen ir 4000 fl vf Petri Cathedra des 1427 Jhars gewislich ausgericht, oder das Sloss Brassoldshaim mit seinen nutzungen zu vnd eingehorungen zugebrauchen eingeantwortet werden solte.",
       "english": "Bishop Johann von Brunn owed Ulrich von Rosenberg and Gute, his wife, 3,500 florins, which he undertook to repay with surety on the Feast of St Peter's Chair in 1424. This did not happen, and shortly afterward Ulrich von Rosenberg died. Bishop Johann then reached an agreement with Gute, his widow, and their son Anselm von Rosenberg: 4,000 florins were to be paid to them on the Feast of St Peter's Chair in 1427; otherwise Schloss Brassoldshaim, with its appurtenances and revenues, was to be handed over to them for use.",
       "facts": [
-        "Bishop Johann von Brunn owed Ulrich von Rosenberg and his wife Gute 3,500 florins, payable on 22 February 1424.",
-        "Ulrich von Rosenberg died shortly after 22 February 1424.",
-        "Bishop Johann von Brunn agreed to pay Gute, widow of Ulrich von Rosenberg, and her son Anselm von Rosenberg 4,000 florins by 22 February 1427.",
-        "Bishop Johann von Brunn agreed to deliver Schloss Brassoldshaim and its appurtenances and revenues to Gute, widow of Ulrich von Rosenberg, and Anselm von Rosenberg if he did not pay the 4,000 florins.",
+        {
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "was, together with his wife Jutta, owed 3,500 florins by Bishop Johann von Brunn; repayment was secured by a surety and due on the Feast of St Peter’s Chair in 1424."
+        },
+        {
+          "type": "generic",
+          "person": "Jutta",
+          "content": "reached an agreement with Bishop Johann von Brunn for payment of 4,000 florins to her and her son Anselm von Rosenberg by the Feast of St Peter’s Chair in 1427."
+        },
+        {
+          "type": "generic",
+          "person": "Jutta",
+          "content": "was to receive Schloss Brassoldshaim, with its appurtenances and revenues, for use with her son Anselm von Rosenberg if Bishop Johann von Brunn failed to pay the agreed 4,000 florins."
+        },
         {
           "type": "spouse",
           "person": "Jutta",
-          "of": "Ulrich von Rosenberg"
+          "of": "Ulrich von Rosenberg",
+          "ofDeceased": true
         },
         {
           "type": "parent",

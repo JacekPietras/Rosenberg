@@ -7,7 +7,26 @@
       "german": "Familienvertrag über die Rosenberg'schen Besitzungen zu Boxberg, abgeschlossen durch Michael, Jörg, Arnold und Friedrich von Rosenberg.",
       "english": "Family contract for Rosenberg's possessions in Boxberg, concluded by Michael, Jörg, Arnold and Friedrich von Rosenberg.",
       "facts": [
-        "Michael von Rosenberg, Jörg von Rosenberg, Arnold von Rosenberg, and Friedrich von Rosenberg concluded a family agreement concerning the Rosenberg possessions at Boxberg"
+        {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Friedrich von Rosenberg",
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
+        }
       ],
       "img": [
         {

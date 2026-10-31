@@ -7,7 +7,11 @@
       "german": "verkaufen Hans v. Rosenberg und ſeine Gemahlin Anna von Kronen⸗ berg und ſein Bruder Götz ihre Veſte Urhauſen um 215 fl. Bürgen: Eberhard v. Rosenberg, Ritter, Vogt zu Lauda, und Conz v. Rosenberg, zu Boxberg geſeſſen.",
       "english": "Hans von Rosenberg and his wife Anna von Kronenberg and his brother Götz sold their Urhausen fortress for 215 florins. Guarantors: Eberhard von Rosenberg, knight, vogt zu Lauda, and Kunz von Rosenberg, resident of Boxberg.",
       "facts": [
-        "Hans von Rosenberg, Anna von Kronenberg, and Götz von Rosenberg sold Veste Urhausen",
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "sold Veste Urhausen jointly with his wife Anna von Kronenberg and his brother Götz von Rosenberg."
+        },
         {
           "type": "spouse",
           "person": "Anna von Kronenberg",
@@ -26,9 +30,25 @@
             "Vogt zu Lauda"
           ]
         },
-        "[vogt_zu_Lauda] served as surety for the sale of Veste Urhausen",
-        "Kunz von Rosenberg is resident at Boxberg",
-        "Kunz von Rosenberg served as surety for the sale of Veste Urhausen"
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "content": "served as surety for the sale of Veste Urhausen.",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Lauda"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "resided at Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "served as surety for the sale of Veste Urhausen."
+        }
       ]
     }
   ]

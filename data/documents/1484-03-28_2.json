@@ -17,13 +17,21 @@
           "person": "Friedrich von Rosenberg",
           "of": "Michael von Rosenberg"
         },
-        "Arnold von Rosenberg exchanged the Hofstatt zu Boxberg with Michael von Rosenberg",
-        "Friedrich von Rosenberg exchanged the Hofstatt zu Boxberg with Michael von Rosenberg",
-        "The Hofstatt zu Boxberg was located above Michael von Rosenberg's Hofhaus",
-        "Arnold von Rosenberg received the Hofstatt zu Boxberg in the Teilung with Michael von Rosenberg",
-        "Friedrich von Rosenberg received the Hofstatt zu Boxberg in the Teilung with Michael von Rosenberg",
-        "The exchange was against the Kapellengarten near the Kapelle belonging to Michael von Rosenberg",
-        "The exchange was against Peter Zimmermann's house by the Brunnentor"
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "exchanged the Hofstatt at Boxberg that he and his brother Friedrich had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Friedrich."
+        },
+        {
+          "type": "generic",
+          "person": "Friedrich von Rosenberg",
+          "content": "exchanged the Hofstatt at Boxberg that he and his brother Arnold had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Arnold."
+        },
+        {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "content": "had a Hofhaus at Boxberg above the Hofstatt that his brothers Arnold and Friedrich received in their partition with him."
+        }
       ],
       "img": [
         {

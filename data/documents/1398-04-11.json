@@ -15,9 +15,32 @@
             "Edelknecht"
           ]
         },
-        "Engelhard von Rosenberg der Ältere had royal subjects (Königsleute) pledged to him by the Empire",
-        "Engelhard von Rosenberg der Ältere transferred the royal subjects to Pfalzgraf Ruprecht",
-        "Pfalzgraf Ruprecht redeemed the royal subjects from Engelhard von Rosenberg der Ältere for the same sum they were originally pledged"
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "der Ältere",
+            "Edelknecht"
+          ],
+          "content": "held royal subjects pledged to him by the Empire."
+        },
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "der Ältere",
+            "Edelknecht"
+          ],
+          "content": "transferred the royal subjects pledged to him by the Empire to Count Palatine Ruprecht."
+        },
+        {
+          "type": "generic",
+          "person": "Ruprecht",
+          "personTitle": [
+            "Pfalzgraf bei Rhein"
+          ],
+          "content": "redeemed the royal subjects from Engelhard von Rosenberg der Ältere for the sum for which the Empire had pledged them."
+        }
       ],
       "img": [
         {

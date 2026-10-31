@@ -12,9 +12,17 @@
           "person": "Heinrich Stumpff von Schweinberg",
           "diedBefore": "1409-01-11"
         },
-        "Heinrich Stumpff von Schweinberg purchased Güter und Gefälle at Schweinberg from Engelhard von Rosenberg.",
-        "Heinrich Stumpff von Schweinberg purchased Güter und Gefälle at Schweinberg from Eberhard von Rosenberg.",
-        "The Güter und Gefälle at Schweinberg were held zu Lehen from Stift Würzburg."
+        {
+          "type": "generic",
+          "person": "Heinrich Stumpff von Schweinberg",
+          "personDeceased": true,
+          "content": "had purchased the estates and revenues at Schweinberg from Engelhard and Eberhard von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Fritze Stumph von Swymburg",
+          "content": "sold estates and revenues at Schweinberg that were held as fiefs from Würzburg Abbey."
+        }
       ],
       "img": [
         {

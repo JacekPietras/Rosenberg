@@ -7,8 +7,16 @@
       "german": "Sonntag nach Dorothea; Johannes Gauß und Agnes, seine Hausfrau, Bürger zu Öhringen, bekennen, dass Albrecht von Hohenlohe erlaubt hat, Eberhardt von Rosenberg zu dienen;\n\nSiegel: Leonhart Lesch.",
       "english": "Sunday after Dorothea; Hans Gauss and Agnes, his wife, citizens of Öhringen, confess that Albrecht von Hohenlohe has allowed them to serve Eberhard von Rosenberg;\n\nseal: Leonhart Lesch.",
       "facts": [
-        "Albrecht von Hohenlohe allowed Hans Gauß and his wife Agnes, Bürger zu Öhringen, to serve Eberhard von Rosenberg",
-        "Leonhart Lesch sealed the charter"
+        {
+          "type": "generic",
+          "person": "Albrecht von Hohenlohe",
+          "content": "allowed Hans Gauß and his wife Agnes, citizens of Öhringen, to serve Eberhard von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Leonhart Lesch",
+          "content": "sealed the charter."
+        }
       ],
       "img": [
         {

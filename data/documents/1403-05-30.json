@@ -14,12 +14,38 @@
             "Ritter"
           ]
         },
-        "Schiedsrichter ordered that the Erbe und Schulden of Eberhard Hofwart and his wife be divided between the parties",
-        "Schiedsrichter ordered that disputes about Lehen be brought before the zuständigen Lehenherren",
-        "Schiedsrichter ordered that the case before the Landgericht Würzburg be litigated there",
-        "Ulrich Satzkern acted on behalf of Eberhard von Rosenberg",
-        "Werner Rost acted on behalf of Eberhard von Rosenberg",
-        "Berthold von Massenbach acted on behalf of Eberhard von Rosenberg"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "was represented in the arbitration by Ulrich Satzkern, Werner Rost, and Berthold von Massenbach, alongside Hans Sturmfeder."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "was a party to an arbitration in which the arbitrators ordered Eberhard Hofwart’s inheritance and debts to be divided between the parties."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "was involved in a dispute over fiefs that the arbitrators directed the parties to take before the competent feudal lords."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "was involved in a dispute before the Würzburg regional court that the arbitrators directed the parties to pursue there."
+        }
       ]
     }
   ]

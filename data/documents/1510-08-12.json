@@ -10,13 +10,20 @@
       "german": "Erasmus von Enheim (Ehenheim) zu Eubigheim (Eybicken) und seine Ehefrau Klara geborene Fuchs von Schweinshaupten (Schweinhaubte) beurkunden, daß sie Prior Kilian und dem Konvent des Augustinerklosters Rebdorf (Rebdorff) im Bistum Eichstätt (Eystet) ihren Wein-, Getreide-, Heu-, und Hauszehnten zu Markelsheim (Marckelszheym) an der Tauber (Tawber) sowie ihr Haus und ihre Hofreite daselbst um 3.200 rheinische Gulden fränkischer Landeswährung (werunge des Landts zu Francken) verkauft haben. Sie übergeben den Käufern ein Verzeichnis der Güter, die in den Zehnten gehören, sowie eine Urkunde, die den A. verbrieft, daß sie die Güter , die sie zuvor von Albrecht von Bibra, Domprobst zu Würzburg (Wurtzpurgk) und Probst zu Neumünster (Neuen Münster) zu Lehen hatten, als freies Eigen besitzen. Desweiteren händigen sie den Käufer eine Urkunde aus, die besagt, daß derjenige, der auf den erwähnten Hof gesetzt wird , nicht Unterton des Deutschen Ordens sein soll. Die Bürgen solen ihren Dienst in Ansbach (Omoltzpach), Herrieden oder Rothenburg (Rottenburgk) leisten. Bürgen sind: Sigmund von Thüngen, Ritter, Amtmann zu Karlburg (Karelpurgk), Jörg Truchseß zu Baldersheim, Ritter, Amtmann zu Lauda (Lauden), Leonhard von Rosenberg (Rosenbergk), Amtmann zu Uffenheim (Ufenheym), Wolfhard von Enheim zu Forndorf (Vorndorf), Amtmann zu Feuchtwangen (Feuchtwang).",
       "english": "Erasmus von Enheim of Eubigheim and his wife Klara, née Fuchs von Schweinshaupten, certify that they have sold their wine, grain, hay, and house tithes at Markelsheim on the Tauber, as well as their house and farmstead there, to Prior Kilian and the convent of the Augustinian monastery at Rebdorf in the diocese of Eichstätt for 3,200 Rhenish guilders in Franconian currency. They hand over to the buyers a list of the properties belonging to the tithes and a document certifying that they hold the properties as freehold, having previously held them in fief from Albrecht von Bibra, provost of Würzburg and Neumünster. They also hand over a document stating that whoever is appointed to the farm is not to be a subject of the Teutonic Order. The guarantors are to serve at Ansbach, Herrieden, or Rothenburg. They are Sigmund von Thüngen, Ritter and official at Karlburg; Jörg Truchseß von Baldersheim, Ritter and official at Lauda; Leonhard von Rosenberg, official at Uffenheim; and Wolfhard von Enheim of Forndorf, official at Feuchtwangen.",
       "facts": [
-        "Leonhard von Rosenberg served as a guarantor for the sale by Erasmus von Enheim and his wife Klara to the Augustinian monastery at Rebdorf.",
         {
           "type": "title",
           "person": "Leonhard von Rosenberg",
           "personTitle": [
             "Amtmann zu Uffenheim"
           ]
+        },
+        {
+          "type": "generic",
+          "person": "Leonhard von Rosenberg",
+          "personTitle": [
+            "Amtmann zu Uffenheim"
+          ],
+          "content": "served as a surety for Erasmus von Enheim and Klara’s sale to the Augustinian monastery at Rebdorf."
         }
       ]
     }

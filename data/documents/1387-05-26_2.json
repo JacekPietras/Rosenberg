@@ -30,8 +30,11 @@
             "Edelknecht"
           ]
         },
-        "[else_wife_of_arnold] was named as a seller.",
-        "[arnold_brother_of_vogt_zu_Lauda] and [else_wife_of_arnold] sold their share of Boxberg to [vogt_zu_Lauda].",
+        {
+          "type": "generic",
+          "person": "else_wife_of_arnold",
+          "content": "joined her husband Arnold von Rosenberg in selling their share of Boxberg to Eberhard von Rosenberg."
+        },
         {
           "type": "sibling",
           "person": "vogt_zu_Lauda",
@@ -53,10 +56,38 @@
             "Vicedom zu Heidelberg"
           ]
         },
-        "Konrad von Rosenberg served as sealer for the Boxberg sale.",
-        "Kunz von Rosenberg served as sealer for the Boxberg sale.",
-        "Hans von Rosenberg served as sealer for the Boxberg sale.",
-        "Pfalzgraf Ruprecht der Ältere gave permission for the sale as feudal lord."
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "served as a co-sealer for the sale of Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "served as a co-sealer for the sale of Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "served as a co-sealer for the sale of Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Ruprecht",
+          "content": "approved the sale of Boxberg as its feudal lord.",
+          "personTitle": [
+            "Pfalzgraf",
+            "der Ältere"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "arnold_brother_of_vogt_zu_Lauda",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "content": "sold, with his wife Else, their share of Boxberg to his brother and brother-in-law Eberhard von Rosenberg."
+        }
       ],
       "img": [
         {

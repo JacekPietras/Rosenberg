@@ -15,8 +15,19 @@
             "Vitzthum zu Amberg"
           ]
         },
-        "Konrad von Rosenberg held administrative authority over Bavarian subjects",
-        "Ruprecht commanded his Bavarian subjects to obey Konrad von Rosenberg's orders"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "content": "held administrative authority over Ruprecht’s subjects in Bavaria."
+        },
+        {
+          "type": "generic",
+          "person": "Ruprecht",
+          "content": "commanded his Bavarian subjects to obey Konrad von Rosenberg’s orders, or those of the regional scribe if Konrad was absent."
+        }
       ]
     }
   ]

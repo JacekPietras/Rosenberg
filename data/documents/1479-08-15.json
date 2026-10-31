@@ -22,7 +22,11 @@
           "person": "Thomas von Rosenberg",
           "diedBefore": "1479-08-16"
         },
-        "Eberhard Haselbaum and Hans Meffrise settled a dispute involving Elisabeth Wolfskelin over the Heiligen Gut at Buch."
+        {
+          "type": "generic",
+          "person": "Eberhard Haselbaum",
+          "content": "settled the dispute over the so-called Heiligen Gut at Buch together with Hans Meffrise, between the tenants of Mathern von Grumbach and the widow Elisabeth Wolfskelin on one side and the tenants of Endris Kettel von Bretzingen on the other."
+        }
       ],
       "img": [
         {

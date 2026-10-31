@@ -33,7 +33,14 @@
             "Ritter"
           ]
         },
-        "Anna von Rosenberg sold the tithe at Großrinderfeld to Grünau Charterhouse.",
+        {
+          "type": "generic",
+          "person": "Anna von Rosenberg",
+          "content": "had sold the tithe at Großrinderfeld to Grünau Charterhouse.",
+          "personTitle": [
+            "Edelfrau"
+          ]
+        },
         {
           "type": "death",
           "person": "Hans Phal von Grünsfeld",

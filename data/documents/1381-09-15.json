@@ -27,7 +27,14 @@
             "Ritter"
           ]
         },
-        "[vogt_zu_Lauda], Ritter, and [arnold_brother_of_vogt_zu_Lauda] exchanged properties and revenues in Eiersheim with Bronnbach Abbey for the von Thüngen estate at Uissigheim."
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "exchanged properties and revenues in Eiersheim with Bronnbach Abbey for the von Thüngen estate at Uissigheim, jointly with his brother Arnold and his wife Elisabeth."
+        }
       ],
       "img": [
         {

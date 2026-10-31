@@ -14,8 +14,14 @@
             "Vitztum zu Heidelberg"
           ]
         },
-        "Konrad von Rosenberg witnessed the sale of wine tithes at Winzingen and Gymeltingen to Stift Neustadt",
-        "Konrad von Rosenberg served as witness alongside Bishop Nicolaus of Speyer, Gerhard von Katzenelnbogen, Heinrich Graf von Spanheim, and Hans vom Hirschhorn"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "witnessed the sale by Ruprecht and his brothers to the Neustadt foundation of half their wine tithe at Winzingen and the aspen tithe at Gymeltingen.",
+          "personTitle": [
+            "Vitztum zu Heidelberg"
+          ]
+        }
       ]
     }
   ]

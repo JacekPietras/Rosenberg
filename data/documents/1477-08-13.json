@@ -7,8 +7,15 @@
       "german": "Als aber pfaltzgrave Fridrich in kurtzer zeit auch mit dot abging, schlugen sich marggrave Albrecht churfurst und B. Philips zu Bamberg in die sachen und erlangten bei den treien fursten Maintz, Pfaltz und Wirtzburg sovil, das si den obgedachten von Rosenberg bede sloss Bocksberg und Schipf widergaben. Actum mitwochen nach Laurentii anno 1477.",
       "english": "After Count Palatine Friedrich also died soon afterward, Margrave and Elector Albrecht and Bishop Philipp of Bamberg intervened in the matter and obtained from the three princes of Mainz, the Palatinate, and Würzburg that they return both castles, Bocksberg and Schipf, to the aforementioned von Rosenbergs. Done on Wednesday after St Lawrence in 1477.",
       "facts": [
-        "Diether von Isenburg, Philipp der Aufrichtige von der Pfalz, and Rudolf von Scherenberg returned Schloss Bocksberg and Schloss Schipf to the von Rosenberg family on 13 August 1477.",
-        "Albrecht III von Brandenburg and Philipp von Henneberg intervened to obtain the return of Schloss Bocksberg and Schloss Schipf to the von Rosenberg family."
+        {
+          "type": "generic",
+          "person": "Albrecht",
+          "personTitle": [
+            "Markgraf",
+            "Kurfürst"
+          ],
+          "content": "intervened with Bishop Philipp of Bamberg to obtain the return of Bocksberg and Schipf to the von Rosenberg family from the three princes of Mainz, the Palatinate, and Würzburg."
+        }
       ],
       "img": [
         {

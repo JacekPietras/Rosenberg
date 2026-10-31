@@ -20,13 +20,41 @@
           "person": "Eberhard von Rosenberg",
           "of": "Anne von Bebenburg"
         },
-        "Engelhard von Rosenberg sold Güter und Gefälle at Schweinberg to Heinrich Stumpff zu Schweinberg and his wife Anne",
-        "Eberhard von Rosenberg sold Güter und Gefälle at Schweinberg to Heinrich Stumpff zu Schweinberg and his wife Anne",
-        "Anne von Bebenburg sold Güter und Gefälle at Schweinberg to Heinrich Stumpff zu Schweinberg and his wife Anne",
-        "The Güter at Schweinberg were Freieigen",
-        "The Gefälle at Schweinberg were held zu Lehnschaft",
-        "Engelhard von Rosenberg sealed the charter as Verkäufer",
-        "Eberhard von Rosenberg sealed the charter as Verkäufer"
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "sold the property and dues in Schweinberg to Heintz Stumpff of Schweinberg and his wife Anne, jointly with Eberhard von Rosenberg and Anne von Bebenburg; the property was freehold and the dues were held as fiefs."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sold their property and dues in Schweinberg to Heintz Stumpff of Schweinberg and his wife Anne, jointly with his father Engelhard von Rosenberg and Anne von Bebenburg."
+        },
+        {
+          "type": "generic",
+          "person": "Anne von Bebenburg",
+          "content": "sold their property and dues in Schweinberg to Heintz Stumpff of Schweinberg and his wife Anne, jointly with Engelhard and Eberhard von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "was obliged with the other sellers to compensate the buyers for losses from third-party claims arising within a year and a day, and to perform Einlager at Hardheim if they failed to pay."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was obliged with the other sellers to compensate the buyers for losses from third-party claims arising within a year and a day, and to perform Einlager at Hardheim if they failed to pay."
+        },
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "sealed the charter as a seller."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sealed the charter as a seller."
+        }
       ],
       "img": [
         {

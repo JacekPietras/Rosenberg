@@ -16,8 +16,11 @@
             "Ritter"
           ]
         },
-        "Eberhard von Rosenberg served as guardian (Vormünder) of the Archbishopric of Mainz alongside Johan von Randeck and Johan von Bellersheim",
-        "Eberhard von Rosenberg participated in the accounting process for Kuno II von Falkenstein's guardianship period"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was named in the letters governing return of the Mainz archbishopric, together with Johan von Randeck and Johan von Bellersheim."
+        }
       ]
     }
   ]

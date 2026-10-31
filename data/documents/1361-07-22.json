@@ -14,9 +14,30 @@
             "Ritter"
           ]
         },
-        "Hans von Rosenberg conducted a witness examination regarding wine press rights at Rohenkein",
-        "Hans von Rosenberg investigated disputes between Kraft von Hohenlohe and Boppe von Alotzhein",
-        "Hans von Rosenberg sealed the witness examination document"
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "examined witnesses concerning the winepress rights claimed by Kraft von Hohenlohe and Boppe von Alotzhein at Rohenkein."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "learned that earlier disputes between Albrecht von Hohenlohe and Boppe’s father over these rights had been settled by Berngern von Urhusen and Wernhern Kornharten."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "sealed the witness examination document."
+        }
       ]
     }
   ]

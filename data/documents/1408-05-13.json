@@ -27,8 +27,19 @@
             "Edelknecht"
           ]
         },
-        "Hans von Dottenheim, Margaretha von Rosenberg, and Götz von Dottenheim donated rents and dues at Steinfeld, Unter-Leinach, and Greußenheim to Bronnbach Abbey.",
-        "Margaretha von Rosenberg sealed the donation as an issuer."
+        {
+          "type": "generic",
+          "person": "Hans von Dottenheim",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "content": "jointly donated specified rents and dues at Steinfeld, Unter-Leinach, and Greußenheim to Bronnbach Abbey with his wife Margaretha von Rosenberg and his brother Götz von Dottenheim."
+        },
+        {
+          "type": "generic",
+          "person": "Margaretha von Rosenberg",
+          "content": "sealed the donation."
+        }
       ],
       "img": [
         {

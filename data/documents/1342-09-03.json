@@ -19,8 +19,24 @@
             "Vogt zu Dürn"
           ]
         },
-        "[vogt_zu_Durn] spent money at a meeting with friends of Count Palatine Ruprecht in Bensheim",
-        "Jakob, cellarer at Starkenburg, was to repay [vogt_zu_Durn] for the meeting expenses"
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
+          "content": "spent money at a meeting in Bensheim with friends of Count Palatine Ruprecht, together with Heinrich Bavar and other friends of the Archbishop of Mainz."
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
+          "content": "was owed the meeting expenses by Jakob, the cellarer at Starkenburg."
+        }
       ]
     },
     {
@@ -38,8 +54,16 @@
             "Vogt zu Dürn"
           ]
         },
-        "[vogt_zu_Durn] spent money at a meeting with friends of Count Palatine Ruprecht in Bensheim",
-        "Jakob, cellarer at Starkenburg, was to repay [vogt_zu_Durn] for the meeting expenses"
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "spent 30 shillings Heller at a meeting in Bensheim with friends of Count Palatine Ruprecht, together with the Archbishop of Mainz’s notary and other friends of the archbishop."
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "was to be paid 30 shillings Heller by Jakob, the cellarer at Starkenburg, for the meeting expenses."
+        }
       ]
     }
   ]

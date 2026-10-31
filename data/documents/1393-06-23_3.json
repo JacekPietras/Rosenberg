@@ -32,9 +32,26 @@
           "person": "vogt_zu_Lauda",
           "diedBefore": "1393-06-24"
         },
-        "Elisabeth von Erligheim established a perpetual mass at the altar of Our Lady in the parish of Wölchingen",
-        "Elisabeth von Erligheim used feudal properties from Schloss Boxberg at Gommersdorf, Angeltürn, and Wölchingen for her religious endowment",
-        "Kurfürst Ruprecht [II.] der Ältere Pfalzgraf bei Rhein granted permission for Elisabeth von Erligheim's religious endowment"
+        {
+          "type": "generic",
+          "person": "Elisabeth von Erligheim",
+          "content": "was authorized by Elector Ruprecht II der Ältere to endow a perpetual Mass at the altar of Our Lady in the parish of Wölchingen."
+        },
+        {
+          "type": "generic",
+          "person": "Elisabeth von Erligheim",
+          "content": "was authorized to endow the Mass with fiefs from Boxberg Castle at Gommersdorf, Angeltürn, and Wölchingen."
+        },
+        {
+          "type": "generic",
+          "person": "Ruprecht",
+          "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the altar of Our Lady in Wölchingen using the specified fiefs.",
+          "personTitle": [
+            "Kurfürst",
+            "der Ältere",
+            "Pfalzgraf bei Rhein"
+          ]
+        }
       ],
       "img": [
         {

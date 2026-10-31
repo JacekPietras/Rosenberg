@@ -13,9 +13,24 @@
           "of": "Eberhard von Rosenberg",
           "ofDeceased": true
         },
-        "Eberhard von Rosenberg had received Uffingen village as a pledge from Graf Eberhard zu Wertheim",
-        "Margarete von Thüngen had received Uffingen village as a pledge from Graf Eberhard zu Wertheim",
-        "Graf Eberhard zu Wertheim provided Dertingen and Waldbüttelbrunn as substitute properties for Uffingen",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "had received the village of Uffingen as a pledge from Eberhard, Count of Wertheim."
+        },
+        {
+          "type": "generic",
+          "person": "Margarete von Thüngen",
+          "content": "had received the village of Uffingen as a pledge from Eberhard, Count of Wertheim."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Wertheim",
+          "content": "pledged Dertingen and Waldbüttelbrunn to his wife Katherine as substitute properties for Uffingen.",
+          "personTitle": [
+            "Graf zu Wertheim"
+          ]
+        },
         {
           "type": "death",
           "person": "Eberhard von Rosenberg",

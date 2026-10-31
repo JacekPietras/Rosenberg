@@ -11,7 +11,11 @@
       "german": "Hermann Seman und seine Ehefrau Elisabeth verkaufen dem Dekan Arnold [Binthammer] und dem Kapitel des Stifts Aschaffenburg einen jährlichen Zins von 2 Pfund und 5 Schilling Heller aus Gütern in Königheim. Die Käufer bezahlen dafür 33 Pfund und 15 Schilling Heller. Die Verkäufer versprechen Gewährleistung nach Landessitte und stellen dafür als Bürgen die Edelknechte Kraft von Uissigheim und Ulrich During. Die Bürgen erklären sich zur Übernahme der Bürgschaft und der damit verbundenen Pflichten bereit.",
       "english": "Hermann Seman and his wife Elisabeth sell an annual rent of 2 pounds and 5 shillings Heller from properties in Königheim to Dean Arnold [Binthammer] and the chapter of Aschaffenburg Abbey. The buyers pay 33 pounds and 15 shillings Heller. The sellers promise warranty according to local custom and provide the Edelknechte Kraft von Uissigheim and Ulrich During as guarantors. The guarantors agree to undertake the guarantee and its associated obligations.",
       "facts": [
-        "Kraft von Uissigheim served as a guarantor for Hermann Seman and Elisabeth, his wife, in their sale of an annual rent from properties in Königheim to Aschaffenburg Abbey."
+        {
+          "type": "generic",
+          "person": "Kraft von Uissigheim",
+          "content": "served as guarantor for Hermann Seman and Elisabeth in their sale of an annual rent from properties in Königheim to Aschaffenburg Abbey."
+        }
       ],
       "img": [
         {

@@ -10,7 +10,14 @@
       "german": "Eberhard von Rosenberg, der Alte, und Anna, seine Ehefrau, versprechen den Zehnten zu Wagenbuch (vgl. StAWt-R US 1382 Februar 15), welchen sie an das Kloster Bronnbach verkauft hatten, von einer etwaigen Lehenspflicht zu befreien oder das Kloster auf andere Weise zu entschädigen.\n\nSiegler: Eberhard von Rosenberg der Alte; Anna, seine Ehefrau; Knebel Stetenberg von Husen, Bürge; Fritz Stetenberg, Bürge; Peter Stetenberg, Fritzes Bruder, Bürge Auf der Rückseite: \"Wölchingen (!). Revers von Eberhard von Rosenberg, das, wann der zehend, so das closter ihm abgekauft, von jemanden zu lehen gienge, er selbigen befreyen wolle, de anno 1382\"",
       "english": "Eberhard von Rosenberg, der Alte, and Anna, his wife, promise to release the Wagenbuch tithe (cf. StAWt-R US 1382 February 15), which they had sold to Bronnbach Monastery, from any feudal obligation or to compensate the monastery in some other way.\n\nSeal: Eberhard von Rosenberg der Alte; Anna, his wife; Knebel Stetenberg von Husen, guarantor; Fritz Stetenberg, guarantor; Peter Stetenberg, Fritz's brother, guarantor On the back: \"Wölchingen (!). Reverse of Eberhard von Rosenberg, that if the tithe, which the monastery had bought from him, were to be given to someone as a fief, he would free the same, from the year 1382.\"",
       "facts": [
-        "Eberhard von Rosenberg, der Alte sold tithes at Wagenbuch to Kloster Bronnbach",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "had sold the Wagenbuch tithe to Bronnbach Monastery jointly with his wife Anna.",
+          "personTitle": [
+            "der Alte"
+          ]
+        },
         {
           "type": "spouse",
           "person": "Anna",
@@ -19,17 +26,47 @@
             "der Alte"
           ]
         },
-        "Eberhard von Rosenberg, der Alte sealed the document promising to free tithes from feudal obligations",
-        "Anna sealed the document promising to free tithes from feudal obligations",
-        "Eberhard von Rosenberg, der Alte promised to compensate Bronnbach monastery if tithes had feudal obligations",
-        "Knebel Stetenberg von Husen served as surety for Eberhard von Rosenberg, der Alte",
-        "Fritz Stetenberg served as surety for Eberhard von Rosenberg, der Alte",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sealed the undertaking concerning the Wagenbuch tithe.",
+          "personTitle": [
+            "der Alte"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Anna",
+          "content": "sealed the undertaking concerning the Wagenbuch tithe."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "promised, jointly with his wife Anna, to free the Wagenbuch tithe from any feudal obligation or otherwise compensate Bronnbach Monastery.",
+          "personTitle": [
+            "der Alte"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Knebel Stetenberg von Husen",
+          "content": "served as surety for Eberhard von Rosenberg and Anna."
+        },
+        {
+          "type": "generic",
+          "person": "Fritz Stetenberg",
+          "content": "served as surety for Eberhard von Rosenberg and Anna."
+        },
         {
           "type": "sibling",
           "person": "Peter Stetenberg",
           "of": "Fritz Stetenberg"
         },
-        "Peter Stetenberg served as surety for Eberhard von Rosenberg, der Alte"
+        {
+          "type": "generic",
+          "person": "Peter Stetenberg",
+          "content": "served as surety for Eberhard von Rosenberg and Anna."
+        }
       ],
       "img": [
         {

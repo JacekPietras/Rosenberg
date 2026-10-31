@@ -15,7 +15,14 @@
           ],
           "of": "Jeute"
         },
-        "Konrad der Lengenvelder von Rosenberg sold his farm at Pfeffershoven to Abbot Herman of Kastl",
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "sold his farm at Pfeffershoven to Abbot Herman of Kastl with his wife’s consent.",
+          "personTitle": [
+            "der Lengenvelder"
+          ]
+        },
         {
           "type": "kin",
           "person": "Friedrich von Rosenberg",

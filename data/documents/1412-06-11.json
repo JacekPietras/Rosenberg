@@ -7,9 +7,6 @@
       "german": "Engelhart von Rosenberg der Ältere und Anne von Bebenburg, Frau des verst. Eberhart von Rosenberg, sowie sein Sohn Cuncze verkaufen an Hans Fuger (?) und Hans Greyn, Bürger (?) zu Bischofsheim näher beschriebene (Abgabepflichtige, Anstößer, Flurnamen gen.) Zinsen zu Bischofsheim (Bischofsheyn) und Werbachhausen (Werpachhusen) um 10 Gulden. Aussteller: Engelhart von Rosenberg ,der Ältere; Anne von Bebenburg, Frau des verstorbenen Eberhart von Rosenberg; Cuncze, Sohn des Engelhart von Rosenberg, dem Älteren Empfänger: Hans Fuger (?); Hans Greyn, Bürger (?) zu Bischofsheim \n\nSiegler:Engelhart von Rosenberg, der Ältere; Anne von Bebenburg, Frau des verstorbenen Eberhart von Rosenberg; Cuncze, Sohn von Engelhart von Rosenberg dem Älteren",
       "english": "Engelhard von Rosenberg der Ältere and Anne von Bebenburg, wife of the deceased Eberhard von Rosenberg, as well as his son Kunz, sell to Hans Fuger (?) and Hans Greyn, citizens (?) of Bischofsheim, the more detailed (taxable persons, tenants, field names specified) interest in Bischofsheim and Werbachhausen for 10 guilders. Issuer: Engelhard von Rosenberg der Ältere; Anne von Bebenburg, wife of the late Eberhard von Rosenberg; Kunz, son of Engelhard von Rosenberg der Ältere Recipient: Hans Fuger (?); Hans Greyn, citizens (?) of Bischofsheim \n\nSealer: Engelhard von Rosenberg der Ältere; Anne von Bebenburg, wife of the late Eberhard von Rosenberg; Kunz, son of Engelhard von Rosenberg der Ältere",
       "facts": [
-        "Engelhard von Rosenberg der Ältere sold rents at Bischofsheim and Werbachhausen to Hans Fuger (?) and Hans Greyn, Bürger (?) zu Bischofsheim.",
-        "Anne von Bebenburg sold rents at Bischofsheim and Werbachhausen to Hans Fuger (?) and Hans Greyn, Bürger (?) zu Bischofsheim.",
-        "Kunz von Rosenberg sold rents at Bischofsheim and Werbachhausen to Hans Fuger (?) and Hans Greyn, Bürger (?) zu Bischofsheim.",
         {
           "type": "parent",
           "person": "Engelhard von Rosenberg",
@@ -29,9 +26,42 @@
           "person": "Eberhard von Rosenberg",
           "diedBefore": "1412-06-12"
         },
-        "Engelhard von Rosenberg der Ältere sealed the charter.",
-        "Anne von Bebenburg sealed the charter.",
-        "Kunz von Rosenberg sealed the charter."
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "content": "sold rents at Bischofsheim and Werbachhausen to Hans Fuger and Hans Greyn jointly with Anne von Bebenburg and Kunz von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Anne von Bebenburg",
+          "content": "sold rents at Bischofsheim and Werbachhausen to Hans Fuger and Hans Greyn jointly with Engelhard von Rosenberg der Ältere and Kunz von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "sold rents at Bischofsheim and Werbachhausen to Hans Fuger and Hans Greyn jointly with Engelhard von Rosenberg der Ältere and Anne von Bebenburg."
+        },
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "content": "sealed the charter together with Anne von Bebenburg and Kunz von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Anne von Bebenburg",
+          "content": "sealed the charter together with Engelhard von Rosenberg der Ältere and Kunz von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "sealed the charter together with Engelhard von Rosenberg der Ältere and Anne von Bebenburg."
+        }
       ],
       "img": [
         {

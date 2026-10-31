@@ -11,12 +11,17 @@
           "type": "title",
           "person": "Konrad von Rosenberg",
           "personTitle": [
-            "Vitzthum"
+            "Vitzthum zu Amberg"
           ]
         },
-        "Konrad von Rosenberg worked with Heinrich (Landschreiber zu Amberg) in legal proceedings",
-        "Konrad von Rosenberg successfully claimed goods at fortress Smydemulen through legal judgment",
-        "Konrad von Rosenberg participated in proceedings at the Pfalzgraf's Landschranne zu Lyngenfelt"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "content": "joined Heinrich, regional scribe at Amberg, in claiming property at the fortress of Smydemulen through judgment at the Count Palatine’s regional court at Lyngenfelt."
+        }
       ]
     }
   ]

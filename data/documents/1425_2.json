@@ -11,7 +11,11 @@
       "german": "Vertrag zwischen Margarete von Stetten, Äbtissin des Klosters Gnadental, und Breyd von Stetten, Eberhard von Tottenheims (=Dottenheim, Krs. Neustadt a.d.Aisch-Bad Windsheim) eheliche Hausfrau, wegen des Vermögens ihrer Schwester, Klosterfrau in Gnadental; ausgestellt o.O., o.D. 1425; Pergament, Siegel: Hans von Tottenheim zu Messelhausen, Eberhard von Rosenberg, Beringer von Berlichingen (abgefallen), Eberhard von Tottenheim, Truchseß, und Hans von Tottenheim.",
       "english": "Agreement between Margarete von Stetten, abbess of Gnadental convent, and Breyd von Stetten, the lawful wife of Eberhard von Dottenheim (Neustadt an der Aisch-Bad Windsheim district), concerning the property of their sister, a nun at Gnadental; issued at an unknown place and on an unknown date in 1425; parchment, seals: Hans von Dottenheim of Messelhausen, Eberhard von Rosenberg, Beringer von Berlichingen (detached), Eberhard von Dottenheim, Truchseß, and Hans von Dottenheim.",
       "facts": [
-        "The agreement concerning the property of Margarete von Stetten and Breyd von Stetten’s sister was sealed by Eberhard von Rosenberg."
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sealed the agreement concerning the property of Margarete von Stetten and her sister Breyd von Stetten."
+        }
       ],
       "img": [
         {

@@ -14,7 +14,14 @@
             "Viztum zu Amberg"
           ]
         },
-        "Konrad von Rosenberg judicially confirmed tithes at Schmidmühlen to Abt Ulrich of Ensdorf Monastery"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vizedom zu Amberg"
+          ],
+          "content": "judicially confirmed the listed tithes at Schmidmühlen to Abbot Ulrich of Ensdorf Monastery."
+        }
       ]
     }
   ]

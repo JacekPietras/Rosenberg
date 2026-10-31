@@ -21,10 +21,33 @@
             "Ritter"
           ]
         },
-        "[vogt_zu_Lauda] was killed by his enemies",
-        "[vogt_zu_Lauda]'s heirs agreed to pursue the tithe case before the Bishop of Würzburg by the next feast of Saint Martin and submit to Church judgment",
-        "Bishop Gerhard of Würzburg permitted church burial of [vogt_zu_Lauda] after receiving his heirs' undertakings and Engelhard's promises",
-        "[vogt_zu_Lauda] was in dispute with the Bishop of Würzburg over tithes at Wölchingen",
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "content": "was represented by his wife and sons, who undertook through the parish priest of Wölchingen to pursue the tithe case before the bishop by the next feast of Saint Martin and submit to Church judgment.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "personDeceased": true
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "content": "was granted ecclesiastical burial by Bishop Gerhard of Würzburg after his wife and sons undertook to pursue the tithe case and Engelhard von Rosenberg gave further promises.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "personDeceased": true
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "content": "was accused, together with Konrad von Rosenberg, Arnold von Rosenberg, and another Konrad von Rosenberg, of usurping and continuing to hold the tithes of Wölchingen without just title.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "personDeceased": true
+        },
         {
           "type": "kin",
           "person": "Engelhard von Rosenberg",
@@ -35,8 +58,6 @@
           "ofDeceased": true,
           "term": "patruo"
         },
-        "[vogt_zu_Lauda] had a wife",
-        "[vogt_zu_Lauda] had sons",
         {
           "type": "title",
           "person": "Konrad von Rosenberg",

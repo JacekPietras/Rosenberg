@@ -11,7 +11,16 @@
       "german": "Konrad von Rosenberg und Kloster Schöntal beenden ihre Fehde und Auseinandersetzung um den Hof zu Seilach durch einen Schiedsspruch Konrads von Weinsberg, Friedrichs von Heinriet und Konrads von Helmstatt. Konrad von Rosenberg erhält den Hof und verpflichtet sich, dem Kloster bis Fastnacht 1317 den Kaufpreis zu bezahlen, den das Kloster für den Hof aufgewendet hatte. Das Klostervieh darf die Weide des Hofes nutzen, soweit dies nicht durch die Gemeinde untersagt ist. Ausfertigung auf beschädigtem Pergament mit vier Siegeln, davon drei abgegangen. Ausgestellt zu Scheuerberg am 29. Juni 1316.",
       "english": "Konrad von Rosenberg and Schöntal Abbey settle their feud and dispute over the farm at Seilach through an arbitration by Konrad von Weinsberg, Friedrich von Heinriet, and Konrad von Helmstatt. Konrad von Rosenberg receives the farm and undertakes to pay the abbey by Shrovetide 1317 the purchase price the abbey had paid for it. The abbey’s livestock may graze on the farm’s pasture when this is not prohibited by the community. Original on damaged parchment with four seals, three detached. Issued at Scheuerberg on 29 June 1316.",
       "facts": [
-        "Konrad von Rosenberg received the farm at Seilach under an arbitration settlement with Schöntal Abbey and agreed to reimburse the abbey by Shrovetide 1317."
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "received the farm at Seilach under an arbitration settlement with Schöntal Abbey."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "agreed to reimburse Schöntal Abbey for the purchase price by Shrovetide 1317."
+        }
       ],
       "img": [
         {

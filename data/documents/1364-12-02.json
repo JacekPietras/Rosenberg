@@ -19,7 +19,11 @@
             "Edelknecht"
           ]
         },
-        "Elisabeth von Rosenberg and Konrad von Wittstadt gen. Wolper sold tithes at Oberwittstatt to Kunz and Gerwig, sons of Eberhard von Schüpf.",
+        {
+          "type": "generic",
+          "person": "Elisabeth von Rosenberg",
+          "content": "sold one-third of the large tithe and one-fourth of the small tithe at Oberwittstatt with Konrad von Wittstadt gen. Wolper to Kunz and Gerwig, sons of Eberhard von Schüpf."
+        },
         {
           "type": "title",
           "person": "Hans von Rosenberg",
@@ -27,8 +31,22 @@
             "Ritter"
           ]
         },
-        "Hans von Rosenberg served as surety for the property sale by Konrad von Wittstadt gen. Wolper and Elisabeth von Rosenberg.",
-        "Hans von Rosenberg sealed the property transaction."
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "served as surety for the sale of tithes at Oberwittstatt by Konrad von Wittstadt gen. Wolper and Elisabeth von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "sealed the property transaction."
+        }
       ],
       "img": [
         {

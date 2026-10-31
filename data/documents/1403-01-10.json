@@ -27,7 +27,11 @@
             "Vizedom zu Amberg"
           ]
         },
-        "King Ruprecht permitted Kunz von Rosenberg and another Konrad von Rosenberg (whose father is not identified in the source) to have a Schultheiss, Schöffen, and court in their village of Hohenstadt near Rosenberg."
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "received King Ruprecht’s permission jointly with Konrad von Rosenberg to have a reeve, aldermen, and a court in their village of Hohenstatt near Rosenberg."
+        }
       ]
     }
   ]

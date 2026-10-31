@@ -15,8 +15,16 @@
             "Ritter"
           ]
         },
-        "Eberhard von Rosenberg served as guardian (Vormünder) of the Archbishopric of Mainz",
-        "Eberhard von Rosenberg participated in sale of villages Trösel and Löhrbach to Anselm von Hemsbach"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "served as one of the guardians of the Archbishopric of Mainz."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "with the other guardians, sold the villages of Trösel and Löhrbach to Anselm von Hemsbach."
+        }
       ]
     }
   ]

@@ -15,7 +15,11 @@
           "person": "vogt_zu_Durn",
           "of": "Hermann von Rosenberg"
         },
-        "Hermann von Rosenberg pledged fealty to Ruprecht der Ältere and Ruprecht der Jüngere with his house at Mauer."
+        {
+          "type": "generic",
+          "person": "Hermann von Rosenberg",
+          "content": "pledged himself and his house at Mauer to Ruprecht der Ältere and Ruprecht der Jüngere."
+        }
       ]
     }
   ]

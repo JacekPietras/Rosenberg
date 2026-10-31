@@ -48,10 +48,6 @@
           "person": "Eckhard von Rosenberg",
           "of": "Eberhard von Rosenberg",
           "date": "1312"
-        },
-        {
-          "date": "1312",
-          "text": "Eckhard and Eberhard von Rosenberg may have made the agreement in 1312; the claim may rest on a document."
         }
       ]
     },
@@ -69,20 +65,44 @@
           "date": "1288"
         },
         {
-          "date": "1288",
-          "text": "Eberhard von Rosenberg, Ritter, and Konrad, abbot of Amorbach, acknowledged the settlement of their dispute with Seligenthal monastery over meadows at Heimesbach."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "acknowledged the settlement of his dispute with Seligenthal over meadows at Heimesbach, mediated by Abbot Winther of Bronnbach and Egeno, pastor of Dürn.",
+          "personTitle": [
+            "Ritter",
+            "dictus de Uissigheim"
+          ],
+          "date": "1288"
         },
         {
-          "date": "1288",
-          "text": "Seligenthal monastery transferred to Eberhard von Rosenberg a meadow at Sindolsheim that it had held jointly with him."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received a meadow at Sindolsheim from the nuns of Seligenthal, who had held it jointly with him.",
+          "personTitle": [
+            "Ritter",
+            "dictus de Uissigheim"
+          ],
+          "date": "1288"
         },
         {
-          "date": "1288",
-          "text": "Winther, abbot of Bronnbach, mediated the dispute between Eberhard von Rosenberg and Seligenthal monastery."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "had his dispute with Seligenthal over meadows at Heimesbach mediated by Winther, abbot of Bronnbach.",
+          "personTitle": [
+            "Ritter",
+            "dictus de Uissigheim"
+          ],
+          "date": "1288"
         },
         {
-          "date": "1288",
-          "text": "Egeno, pastor of Dürn, mediated the dispute between Eberhard von Rosenberg and Seligenthal monastery."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "had his dispute with Seligenthal over meadows at Heimesbach mediated by Egeno, pastor of Dürn.",
+          "personTitle": [
+            "Ritter",
+            "dictus de Uissigheim"
+          ],
+          "date": "1288"
         },
         {
           "type": "death",
@@ -97,8 +117,20 @@
       "english": "Considering that the Lords of Uissigheim bore the same coat of arms as the Lords of Rosenberg, there can be little doubt: this Eberhard founded a distinct lineage at the castle in Uissigheim, and the subsequent Lords of Uissigheim also belong to the Rosenberg family tree in a broader sense.",
       "guesses": [
         {
-          "date": "1288",
-          "text": "It is possible that Eberhard von Rosenberg founded a separate line at Uissigheim and that the later von Uissigheim belonged to the wider von Rosenberg family, based on their shared arms."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "may have founded a separate von Rosenberg line at Uissigheim, based on the shared coat of arms.",
+          "personTitle": [
+            "Ritter",
+            "dictus de Uissigheim"
+          ],
+          "date": "1288"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "may have belonged to the same wider family as the later von Uissigheim, based on the shared coat of arms.",
+          "date": "1288"
         }
       ]
     },
@@ -141,8 +173,10 @@
       ],
       "guesses": [
         {
-          "date": "1247",
-          "text": "It is possible that the inheritance of Eberhard and Arnold von Uissigheim passed to von Rosenberg through an heiress, explaining the shared arms and name."
+          "type": "generic",
+          "person": "Eberhard von Uissigheim",
+          "content": "may have had his inheritance pass to the von Rosenberg family through an heiress.",
+          "date": "1247"
         }
       ]
     },
@@ -186,8 +220,16 @@
       ],
       "guesses": [
         {
-          "date": "1324",
-          "text": "It is possible that Konrad and Frizo von Uissigheim were sons of Eberhard von Rosenberg, citing the Bronnbach necrology and the later family arms."
+          "type": "parent",
+          "person": "Eberhard von Rosenberg",
+          "of": "Konrad von Uissigheim",
+          "date": "1324"
+        },
+        {
+          "type": "parent",
+          "person": "Eberhard von Rosenberg",
+          "of": "Frizo von Uissigheim",
+          "date": "1324"
         }
       ]
     },
@@ -196,14 +238,18 @@
       "english": "Returning to the Lords of Rosenberg, we find in the next generation, without a doubt, a son of Eckard, a Konrad von Rosenberg, who in 1315 witnessed a donation by Count Rudolf von Wertheim in Nuremberg [Reg. b. V, 323, and in the same year, l. c. V, 308.]",
       "facts": [
         {
-          "date": "1315",
-          "text": "Konrad von Rosenberg witnessed a donation by Count Rudolf von Wertheim at Nürnberg."
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "witnessed a donation by Count Rudolf von Wertheim at Nürnberg.",
+          "date": "1315"
         }
       ],
       "guesses": [
         {
-          "date": "1315",
-          "text": "Konrad von Rosenberg, attested in 1315, may have been a son of Eckhard von Rosenberg."
+          "type": "parent",
+          "person": "Eckhard von Rosenberg",
+          "of": "Konrad von Rosenberg",
+          "date": "1315"
         }
       ]
     },
@@ -212,8 +258,10 @@
       "english": "In 1316, he was granted permission to redeem some Dürnesche fiefs in Benzenweiler, Merchingen, and in the town of Selhech (?) that had already been pledged to the Schönthal Monastery in 1313. [see Jahrbesh. 1847.]",
       "facts": [
         {
-          "date": "1316",
-          "text": "Konrad von Rosenberg was permitted to redeem Dürn fiefs at Benzenweiler, Merchingen and a place recorded uncertainly as Selhech that had been pledged to Schönthal monastery in 1313."
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "was permitted to redeem Dürn fiefs at Benzenweiler, Merchingen, and a place recorded uncertainly as Selhech that had been pledged to Schönthal monastery in 1313.",
+          "date": "1316"
         }
       ]
     },
@@ -242,14 +290,36 @@
           "date": "1321"
         },
         {
-          "date": "1321",
-          "text": "Arnold von Rosenberg, miles, Eberhard von Rosenberg and [wiprecht_von_rosenberg] exchanged a wine tithe with Seligenthal monastery."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "exchanged a wine tithe with Seligenthal monastery together with Eberhard von Rosenberg and Wipert von Rosenberg.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1321"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "exchanged a wine tithe with Seligenthal monastery together with Arnold von Rosenberg and Wipert von Rosenberg.",
+          "date": "1321"
+        },
+        {
+          "type": "generic",
+          "person": "Wipert von Rosenberg",
+          "content": "exchanged a wine tithe with Seligenthal monastery together with Arnold and Eberhard von Rosenberg.",
+          "date": "1321"
         }
       ],
       "guesses": [
         {
-          "date": "1321",
-          "text": "Bauer interprets the 1321 fratruales as children of a brother of Arnold von Rosenberg and proposes that this brother was Konrad."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "may have had nephews Eberhard and Wipert whose father may have been Konrad.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1321"
         },
         {
           "type": "sibling",
@@ -283,16 +353,22 @@
       "english": "We begin with the previously mentioned Konrad von Rosenberg, 1315 and following, who died in 1321, and his sons Eberhard and Wipert. We have not encountered Wipert again, and it remains a very uncertain possibility that we tentatively place a Diether von Rosenberg, Ritter, who is mentioned in a solitary (Amorbacher document) in 1343, in the family tree as perhaps his son or, preferably, as another brother. His descendant could be the Eberhard von Rosenberg, Commander of the Order of St. John at Aichen in 1368, whom Biedermann lists in Table 402. Eberhard I von Rosenberg appears much more frequently (later followed by Arnold's son, Eberhard II); and then, in turn, each has a son bearing the father's name, Eberhard III and IV. Eberhard I is mentioned as a witness in a document from 1325 in [Wentz's Hessische Geschichte, II, 303]. In 1327, he sold two estates in Sindolsheim to the Brombach Monastery for 70 Hellers, [Reg. b. VI, 231] and to the Schönthal Monastery two mills, one near Rosenberg and the other between Sindolsheim and Rosenberg. His wife, Lady Irmentrurt, is also mentioned in this context.",
       "facts": [
         {
-          "date": "1325",
-          "text": "Eberhard von Rosenberg witnessed a document."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "witnessed a document.",
+          "date": "1325"
         },
         {
-          "date": "1327",
-          "text": "Eberhard von Rosenberg sold two farms at Sindolsheim to Bronnbach monastery."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sold two farms at Sindolsheim to Bronnbach monastery.",
+          "date": "1327"
         },
         {
-          "date": "1327",
-          "text": "Eberhard von Rosenberg sold Schönthal monastery a mill near Rosenberg and another between Sindolsheim and Rosenberg."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sold Schönthal monastery a mill near Rosenberg and another between Sindolsheim and Rosenberg.",
+          "date": "1327"
         },
         {
           "type": "spouse",
@@ -303,12 +379,22 @@
       ],
       "guesses": [
         {
-          "date": "1343",
-          "text": "Diether von Rosenberg, Ritter, attested in 1343, may have been a son or brother of [wiprecht_von_rosenberg]."
+          "type": "generic",
+          "person": "Diether von Rosenberg",
+          "content": "may have been a son or brother of Wipert von Rosenberg.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1343"
         },
         {
-          "date": "1368",
-          "text": "Eberhard von Rosenberg, Johanniter-Komtur zu Aichen in 1368, may have belonged to [wiprecht_von_rosenberg]’s family."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Komtur des Johanniterordens zu Aichen"
+          ],
+          "content": "may have belonged to the family of Wipert von Rosenberg.",
+          "date": "1368"
         }
       ]
     },
@@ -317,8 +403,10 @@
       "english": "In 1329, Lord Kraft von Hohenlohe reconciled with Eberhard von Rosenberg regarding a castle peace at Nagelsberg, where Eberhard had somehow acquired the castle. A bit later, for example, in 1334, Eberhard von Rosenberg appears as the Mainz Vogt zu Dürn (Gud. C. D. V, 352), and these two characteristics provide us with a guide to distinguish this Eberhard I from his contemporaries of the same name. We summarize here:",
       "facts": [
         {
-          "date": "1329",
-          "text": "Kraft von Hohenlohe and Eberhard von Rosenberg reached an agreement concerning a Burgfrieden at Nagelsberg."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "reached an agreement with Kraft von Hohenlohe concerning a Burgfrieden at Nagelsberg, where he had somehow acquired the castle.",
+          "date": "1329"
         },
         {
           "type": "title",
@@ -343,32 +431,67 @@
           "date": "1333"
         },
         {
-          "date": "1333",
-          "text": "Eberhard von Rosenberg, miles, received from Würzburg two parts of the great tithe at Bofsheim, purchased from Diether Rüdt."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received from Würzburg two parts of the great tithe at Bofsheim, purchased from Diether Rüdt.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1333"
         },
         {
-          "date": "1333",
-          "text": "Eberhard von Rosenberg, miles, received the patronage rights of the churches at Rosenberg, Burgheim and Bofsheim."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received the patronage rights of the churches at Rosenberg, Burgheim and Bofsheim.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1333"
         },
         {
-          "date": "1333",
-          "text": "Eberhard von Rosenberg, miles, received a quarter of the village of Bofsheim."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received a quarter of the village of Bofsheim.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1333"
         },
         {
-          "date": "1333",
-          "text": "Eberhard von Rosenberg, miles, received the village of Brehmen with its Vogtei and court."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received the village of Brehmen with its Vogtei and court.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1333"
         },
         {
-          "date": "1333",
-          "text": "Eberhard von Rosenberg, miles, received a quarter of the village of Buch with its Vogtei and court."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received a quarter of the village of Buch with its Vogtei and court.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1333"
         },
         {
-          "date": "1333",
-          "text": "Eberhard von Rosenberg, miles, received two parts of the tithe at Schweinberg."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received two parts of the tithe at Schweinberg.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1333"
         },
         {
-          "date": "1333",
-          "text": "Eberhard von Rosenberg, miles, received a tithe and a quarter of the tithe called Metelsheimb at Sindolsheim."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received a tithe and a quarter of the tithe called Metelsheimb at Sindolsheim.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1333"
         },
         {
           "type": "title",
@@ -379,32 +502,67 @@
           "date": "1353"
         },
         {
-          "date": "1353",
-          "text": "Eberhard von Rosenberg, miles, was newly enfeoffed with two parts of the great tithe at Bofsheim."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was newly enfeoffed with two parts of the great tithe at Bofsheim.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1353"
         },
         {
-          "date": "1353",
-          "text": "Eberhard von Rosenberg, miles, was newly enfeoffed with the church patronage rights at Rosenberg, Burgheim and Bofsheim."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was newly enfeoffed with the church patronage rights at Rosenberg, Burgheim and Bofsheim.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1353"
         },
         {
-          "date": "1353",
-          "text": "Eberhard von Rosenberg, miles, was newly enfeoffed with a quarter of the village of Bofsheim."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was newly enfeoffed with a quarter of the village of Bofsheim.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1353"
         },
         {
-          "date": "1353",
-          "text": "Eberhard von Rosenberg, miles, was newly enfeoffed with the village of Brehmen, its Vogtei and court."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was newly enfeoffed with the village of Brehmen, its Vogtei and court.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1353"
         },
         {
-          "date": "1353",
-          "text": "Eberhard von Rosenberg, miles, was newly enfeoffed with a quarter of the village of Buch, its Vogtei and court."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was newly enfeoffed with a quarter of the village of Buch, its Vogtei and court.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1353"
         },
         {
-          "date": "1353",
-          "text": "Eberhard von Rosenberg, miles, was newly enfeoffed with two parts of the tithe at Schweinberg."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was newly enfeoffed with two parts of the tithe at Schweinberg.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1353"
         },
         {
-          "date": "1353",
-          "text": "Eberhard von Rosenberg, miles, was newly enfeoffed with a tithe and a quarter of the tithe called Mettelzehntlein at Sindolsheim."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was newly enfeoffed with a tithe and a quarter of the tithe called Mettelzehntlein at Sindolsheim.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1353"
         }
       ]
     },
@@ -413,8 +571,13 @@
       "english": "In 1334, Eberhard von Rosenberg, Ritter conducted business for Archbishop Baldwin of Mainz in Amöneberg, Geismar, and Fritzlar; Reg. b. VII, 84.",
       "facts": [
         {
-          "date": "1334",
-          "text": "Eberhard von Rosenberg, Ritter, conducted business for Archbishop Balduin of Mainz at Amöneburg, Geismar and Fritzlar."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "conducted business for Archbishop Balduin of Mainz at Amöneburg, Geismar, and Fritzlar.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1334"
         }
       ]
     },
@@ -423,12 +586,19 @@
       "english": "In 1335, he is occasionally referred to as a fidelis, a vassal of the Bishop of Würzburg, and this bishop wrote to Ritter Eberhard, instructing him to protect the Romburg Monastery in his fiefdom over the castrum Nagelsberg, from which the same Lord Kraft von Hohenlohe had expelled the monastery; Wibel IV, 43. Among the guarantors in the sale of the lordship of Scheuerberg was also Lord Eberhard von Rosenberg in 1335. In 1339, Eberhard, the Archbishop's Vogt zu Dürn, acted as a witness for Mainz; Reg. b. VII, 260, and was seated at a Mainz fief court, Gud. C. D. I, 954. In 1342, Eberhard von Rosenberg is mentioned as a Ritter and advocate in Walldürn, Reg. b. VII, 343, and in a 1343 document from Amorbach, Eberhard von Rosenberg is referred to as the Bauth (Vogt zu Dürn). In 1345, Biedermann reports in Table 402 the fiefs he received: two parts of the tithe in Boffsheim, the patronage rights in Burgheim, Rosenberg, and Boffsheim, the great and small tithes in Sindolsheim and ¼ Mettelscheinlein, the village of Bramen with advocacy and all jurisdiction, ¼ of the village of Buch likewise, and two parts of the tithe in Schweinberg.",
       "facts": [
         {
-          "date": "1335",
-          "text": "The bishop of Würzburg instructed Eberhard von Rosenberg, Ritter, to protect Romburg monastery in its fief right to Nagelsberg castle."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was instructed by the Bishop of Würzburg to protect Romburg monastery’s fief rights over Nagelsberg Castle.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1335"
         },
         {
-          "date": "1335",
-          "text": "Eberhard von Rosenberg was a surety for the sale of the lordship of Scheuerberg."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "stood surety for the sale of the lordship of Scheuerberg.",
+          "date": "1335"
         },
         {
           "type": "title",
@@ -448,36 +618,58 @@
           "date": "1343"
         },
         {
-          "date": "1339",
-          "text": "Eberhard von Rosenberg, Vogt zu Dürn, acted as arbitrator for Mainz."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "acted as an arbitrator for Mainz.",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "date": "1339"
         },
         {
-          "date": "1339",
-          "text": "Eberhard von Rosenberg, Vogt zu Dürn, sat on a Mainz fief court."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sat on a Mainz fief court.",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "date": "1339"
         },
         {
-          "date": "1345",
-          "text": "Eberhard von Rosenberg received the village of Brehmen with its Vogtei and court as a fief."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received the village of Brehmen with its Vogtei and court as a fief.",
+          "date": "1345"
         },
         {
-          "date": "1345",
-          "text": "Eberhard von Rosenberg received the patronage rights at Burgheim, Rosenberg and Bofsheim as fiefs."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received the patronage rights at Burgheim, Rosenberg, and Bofsheim as fiefs.",
+          "date": "1345"
         },
         {
-          "date": "1345",
-          "text": "Eberhard von Rosenberg received two parts of the tithe at Bofsheim as a fief."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received two parts of the tithe at Bofsheim as a fief.",
+          "date": "1345"
         },
         {
-          "date": "1345",
-          "text": "Eberhard von Rosenberg received the great and small tithes at Sindolsheim and a quarter of the Mettelzehntlein as fiefs."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received the great and small tithes at Sindolsheim and a quarter of the Mettelzehntlein as fiefs.",
+          "date": "1345"
         },
         {
-          "date": "1345",
-          "text": "Eberhard von Rosenberg received a quarter of the village of Buch with its Vogtei and court as a fief."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received a quarter of the village of Buch with its Vogtei and court as a fief.",
+          "date": "1345"
         },
         {
-          "date": "1345",
-          "text": "Eberhard von Rosenberg received two parts of the tithe at Schweinberg as a fief."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received two parts of the tithe at Schweinberg as a fief.",
+          "date": "1345"
         }
       ]
     },
@@ -486,8 +678,13 @@
       "english": "1347: Eberhard von Rosenberg, the Vogt zu Dürn, has under his authority the serfs of the empire in the Odenwald and on the Kocher; D.A. \\= Description of Dehringen, pp. 158 and 142; he is referred to as the guardian of the Mainz chapter, Reg. b. VIII, 104; in 1349, he permitted the Archbishopric of Mainz to redeem the Nagelsberg Castle for 400 ß Heller; Reg. b. VIII, 172. At this time, Eberhard was a supporter of the rival bishop Heinrich von Birnenburg, Gud. C. D. III, 344; in 1354, Ritter Eberhard had a negotiation with the chapter in Mainz regarding debt documents; Reg. b. VIII, 289.",
       "facts": [
         {
-          "date": "1347",
-          "text": "Eberhard von Rosenberg, Vogt zu Dürn, had charge of imperial serfs in the Odenwald and at the Kocher."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "had charge of imperial serfs in the Odenwald and along the Kocher.",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "date": "1347"
         },
         {
           "type": "title",
@@ -498,12 +695,19 @@
           "date": "1347"
         },
         {
-          "date": "1349",
-          "text": "Eberhard von Rosenberg allowed the archbishopric of Mainz to redeem Nagelsberg castle."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "allowed the Archbishopric of Mainz to redeem Nagelsberg Castle.",
+          "date": "1349"
         },
         {
-          "date": "1354",
-          "text": "Eberhard von Rosenberg, Ritter, negotiated with the Mainz chapter concerning debt instruments."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "negotiated with the Mainz chapter concerning debt instruments.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1354"
         }
       ]
     },
@@ -569,12 +773,34 @@
           "date": "1341"
         },
         {
-          "date": "1341",
-          "text": "Eberhard and Konrad von Rosenberg promised not to impose unjust demands on the Königleute their father had transferred to them and their brothers Engelhard and Hermann."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "promised not to impose unjust demands on the Königleute their father had transferred to him and his brothers.",
+          "date": "1341"
         },
         {
-          "date": "1341",
-          "text": "Eberhard, Konrad and Hans von Rosenberg were appointed to judge complaints concerning the Königleute held by the sons of Eberhard von Rosenberg zu Dürn."
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "promised not to impose unjust demands on the Königleute their father had transferred to him and his brothers.",
+          "date": "1341"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was to judge complaints concerning these Königleute, together with Konrad and Hans von Rosenberg.",
+          "date": "1341"
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "was to judge complaints concerning these Königleute, together with Eberhard and Hans von Rosenberg.",
+          "date": "1341"
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "was to judge complaints concerning these Königleute, together with Eberhard and Konrad von Rosenberg.",
+          "date": "1341"
         }
       ]
     },
@@ -591,14 +817,33 @@
           "date": "1340"
         },
         {
-          "date": "1340",
-          "text": "Eberhard von Rosenberg genannt von Zimmern transferred his tithe at Wülfingsloch to Bronnbach monastery with the consent of the count of Wertheim."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "transferred his tithe at Wülfingsloch to Bronnbach monastery with the consent of the Count of Wertheim.",
+          "personTitle": [
+            "genannt von Zimmern"
+          ],
+          "date": "1340"
         }
       ],
       "guesses": [
         {
-          "date": "1340",
-          "text": "Eberhard, son of Eberhard von Rosenberg zu Dürn, may have been Eberhard von Rosenberg genannt von Zimmern or Eberhard von Rosenberg der Jüngere, Wyclo’s husband."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "may have been the Eberhard attested with the designation genannt von Zimmern in 1340.",
+          "personTitle": [
+            "zu Dürn"
+          ],
+          "date": "1340"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "may have been the younger Eberhard, husband of Wyclo.",
+          "personTitle": [
+            "zu Dürn"
+          ],
+          "date": "1340"
         }
       ]
     },
@@ -613,12 +858,22 @@
           "date": "1421"
         },
         {
-          "date": "1380",
-          "text": "Eberhard von Rosenberg der Ältere witnessed a Teutonic Order document."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "witnessed a Teutonic Order document.",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "date": "1380"
         },
         {
-          "date": "1385",
-          "text": "Eberhard von Rosenberg der Ältere witnessed a Teutonic Order document."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "witnessed a Teutonic Order document.",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "date": "1385"
         },
         {
           "type": "spouse",
@@ -630,8 +885,13 @@
           "date": "1383"
         },
         {
-          "date": "1383",
-          "text": "Eberhard von Rosenberg der Ältere assigned goods at Breitzheim and Sindolsheim to his wife Anna Landschad."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "conveyed his properties at Breitzheim and Sindolsheim to his wife Anna Landschad.",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "date": "1383"
         },
         {
           "type": "parent",
@@ -643,12 +903,25 @@
           "date": "1407"
         },
         {
-          "date": "1407",
-          "text": "Bishop Johann von Würzburg enfeoffed Ulrich von Rosenberg at the request of his father Eberhard von Rosenberg der Ältere with fiefs including shares at Bofsheim, Breitzheim and Rosenberg."
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "received fiefs including shares at Bofsheim, Breitzheim, and Rosenberg from Bishop Johann of Würzburg.",
+          "date": "1407"
         },
         {
-          "date": "1411",
-          "text": "Ulrich von Rosenberg sealed a document."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "requested that Bishop Johann of Würzburg enfeoff his son Ulrich with fiefs including shares at Bofsheim, Breitzheim, and Rosenberg.",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "date": "1407"
+        },
+        {
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "sealed a document.",
+          "date": "1411"
         }
       ]
     },
@@ -657,24 +930,35 @@
       "english": "This Anselm provided surety for 500 florins in 1439; see Hessisches Archiv XI, 104, and sold a part of the castle at Schüpft to Eberhard, Götz, and Wilhelm von Dottenheim, which was confirmed by the regional court. In 1448, Anselm received his share of the villages of Boffsheim and Breitgheim, the tithe at Brunacker, Zimmern, and Higelsdorf. To free the tithe at Meckmühl, he enfeoffed his share of the two hamlets of Ersalt. From 1443 to 1454, he held the castle, town, and office of Röttingen in pawn, from where, in 1454, he launched an attack on merchants from Nördlingen traveling to the Frankfurt Fair. That same year, he took his own life by hanging himself (Wibel III, 109.*), and the bishop then seized his estate as forfeited, even though Anselm left behind a daughter, Kunigunde, who was later married to a Vesseer. Biedermann names him Hans Vesseer of Rothenburg; Table 405. The brothers Georg, Arnold, and Friedrich von Rosenberg took care of their cousin, demanded compensation, and lodged a complaint with the Diocese of Würzburg until the bishop agreed to a settlement in 1487 and paid 7500 florins; see Chmel, Kaiser Friedrich III., no. 8029. However, it seems that the dispute was not yet fully resolved, as the Unterfränkisches Archiv XIV, 2, p. 160 mentions a 1496 printed deduction by Bishop Rudolf of Würzburg against the Lords of Rosenberg in this matter.",
       "facts": [
         {
-          "date": "1439",
-          "text": "Anselm von Rosenberg was a surety."
+          "type": "generic",
+          "person": "Anselm von Rosenberg",
+          "content": "stood surety.",
+          "date": "1439"
         },
         {
-          "date": "1439",
-          "text": "Anselm von Rosenberg sold a share of Schloss Schüpf to Eberhard, Götz and Wilhelm von Dottenheim."
+          "type": "generic",
+          "person": "Anselm von Rosenberg",
+          "content": "sold a share of Schüpf Castle to Eberhard, Götz, and Wilhelm von Dottenheim.",
+          "date": "1439"
         },
         {
-          "date": "1448",
-          "text": "Anselm von Rosenberg received his shares in Bofsheim and Breitzheim and tithes at Brunacker, Zimmern and Higelsdorf."
+          "type": "generic",
+          "person": "Anselm von Rosenberg",
+          "content": "received his shares in Bofsheim and Breitzheim and tithes at Brunacker, Zimmern, and Higelsdorf.",
+          "date": "1448"
         },
         {
-          "date": "1454",
-          "text": "Anselm von Rosenberg attacked Nördlingen merchants travelling to the Frankfurt fair from Röttingen."
+          "type": "generic",
+          "person": "Anselm von Rosenberg",
+          "content": "attacked merchants from Nördlingen travelling to the Frankfurt fair from Röttingen.",
+          "date": "1454"
         },
         {
-          "date": "1454",
-          "text": "Cause: suicide."
+          "type": "generic",
+          "person": "Anselm von Rosenberg",
+          "content": "died by suicide.",
+          "personDeceased": true,
+          "date": "1454"
         },
         {
           "type": "parent",
@@ -683,8 +967,22 @@
           "date": "1454"
         },
         {
-          "date": "1487",
-          "text": "The bishop of Würzburg settled the dispute with Georg, Arnold and Friedrich von Rosenberg over their Base Kunigunde’s inheritance."
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "content": "pursued compensation from the Bishop of Würzburg over cousin Kunigunde’s inheritance until he agreed to settle in 1487.",
+          "date": "1487"
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "pursued compensation from the Bishop of Würzburg over cousin Kunigunde’s inheritance until he agreed to settle in 1487.",
+          "date": "1487"
+        },
+        {
+          "type": "generic",
+          "person": "Friedrich von Rosenberg",
+          "content": "pursued compensation from the Bishop of Würzburg over cousin Kunigunde’s inheritance until he agreed to settle in 1487.",
+          "date": "1487"
         },
         {
           "type": "sibling",
@@ -780,8 +1078,10 @@
           "text": "The bishop of Würzburg recognized Guta, wife of Engelhard von Rosenberg, miles, on half the tithe at Bofsheim for her Zugelt."
         },
         {
-          "date": "1353",
-          "text": "The bishop of Würzburg recognized Elisabeth von Seckendorf, wife of Konrad von Rosenberg, miles, on the same tithe at Bofsheim for her Zugelt."
+          "type": "generic",
+          "person": "Elisabeth von Seckendorf",
+          "content": "had her 200-florin dowry claim on half the tithe at Bofsheim recognized by the Bishop of Würzburg.",
+          "date": "1353"
         }
       ]
     },
@@ -802,8 +1102,22 @@
           "date": "1356"
         },
         {
-          "date": "1356",
-          "text": "Engelhard and Konrad von Rosenberg, Ritter, sold their serfs at Mergentheim to the Teutonic Order."
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "sold his serfs at Mergentheim to the Teutonic Order with his brother Konrad von Rosenberg.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1356"
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "sold his serfs at Mergentheim to the Teutonic Order with his brother Engelhard von Rosenberg.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1356"
         }
       ]
     },
@@ -820,8 +1134,13 @@
           "date": "1359"
         },
         {
-          "date": "1359",
-          "text": "Engelhard von Rosenberg, armiger, received half the tithe at Rügheim after its resignation by Aplo Fuchs and Dietrich, Ritter."
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "received half the tithe at Rügheim after its resignation by Aplo Fuchs and Dietrich.",
+          "personTitle": [
+            "armiger"
+          ],
+          "date": "1359"
         }
       ]
     },
@@ -846,8 +1165,10 @@
           "date": "1361"
         },
         {
-          "date": "1398",
-          "text": "Engelhard von Rosenberg received from Bishop Gerhard von Würzburg the fief of goods at Getzikeim that he had bought from Herold von Buchen and his heirs."
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "received as a fief the goods at Getzikeim that he had bought from Herolt von Buchen and his heirs.",
+          "date": "1398"
         }
       ]
     },
@@ -856,12 +1177,22 @@
       "english": "The same Engelhard von Rosenberg was enfeoffed in 1387 with a farm, including its appurtenances, and a castle estate in Binsfeld. A bit later, he appears repeatedly in close association with an Eberhard von Rosenberg; in 1399, both are witnesses side by side; Mon. Zoll. VI, 55.",
       "facts": [
         {
-          "date": "1387",
-          "text": "Engelhard von Rosenberg was enfeoffed with a farm and Burgut at Binsfeld."
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "was enfeoffed with a farm, its appurtenances, and a Burgut at Binsfeld.",
+          "date": "1387"
         },
         {
-          "date": "1399",
-          "text": "Engelhard von Rosenberg and Eberhard von Rosenberg witnessed a document."
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "witnessed a document alongside Eberhard von Rosenberg.",
+          "date": "1399"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "witnessed a document alongside Engelhard von Rosenberg.",
+          "date": "1399"
         }
       ]
     },
@@ -870,14 +1201,18 @@
       "english": "In 1406, on the eve of Palm Sunday, Bishop Hans of Würzburg acknowledges: Engelhard and Eberhard von Rosenberg sold all their fiefs and properties in Gözigheim to Arnold von Rosenberg der Jüngere for 200 florins, with the right of repurchase, which the feudal lord approved.",
       "facts": [
         {
-          "date": "1406",
-          "text": "Engelhard von Rosenberg and another seller sold their fiefs and goods at Götzigheim to Arnold von Rosenberg der Junge, subject to redemption and with the bishop of Würzburg’s approval."
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "sold his fiefs and goods at Götzigheim to Arnold von Rosenberg der Jüngere with an unidentified co-seller, subject to repurchase and with the Bishop of Würzburg’s approval.",
+          "date": "1406"
         }
       ],
       "guesses": [
         {
-          "date": "1406",
-          "text": "The source transcription identifies Engelhard’s co-seller as possibly Eberhard von Rosenberg, with a question mark."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "may have been Engelhard’s co-seller in the sale of fiefs and goods at Götzigheim to Arnold von Rosenberg der Jüngere.",
+          "date": "1406"
         }
       ]
     },
@@ -886,8 +1221,16 @@
       "english": "In 1411, Engelhard and Eberhard von Rosenberg sold their own people in Uffingen to the Teutonic Order.",
       "facts": [
         {
-          "date": "1411",
-          "text": "Engelhard and Eberhard von Rosenberg sold their serfs at Uiffingen to the Teutonic Order."
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "sold his serfs at Uiffingen to the Teutonic Order together with Eberhard von Rosenberg.",
+          "date": "1411"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sold his serfs at Uiffingen to the Teutonic Order together with Engelhard von Rosenberg.",
+          "date": "1411"
         }
       ]
     },
@@ -896,8 +1239,10 @@
       "english": "We are therefore inclined to consider these two men as brothers, and this assumption is confirmed by a later document from 1444, according to which Ulrich von Rosenberg received those fiefs that had passed down to him from his ancestor Engelhard (I.) and from his father Eberhard. Therefore, Engelhard I. also had a son named Eberhard.",
       "guesses": [
         {
-          "date": "1444",
-          "text": "Engelhard and Eberhard von Rosenberg may have been brothers; a 1444 fief record describes Ulrich as Eberhard’s son and Engelhard’s descendant."
+          "type": "sibling",
+          "person": "Engelhard von Rosenberg",
+          "of": "Eberhard von Rosenberg",
+          "date": "1444"
         }
       ]
     },
@@ -906,14 +1251,18 @@
       "english": "Regarding the possessions of this line, some information is provided by the enfeoffment of Engelhard II in 1401. He received from Würzburg his share in Rosenberg and Boßfheim, the large and ½ and ⅙ of the small tithe there, ¼ of the large and small tithe in Sindolzheim, the purchased properties in Gözigheim, a share of the tithe in Schweinburg, 10 florins in cash as a castle fief at Hohenburg, a property in the city, a farm in Halberstadt, and a share in the court at Bremen, with all appurtenances. Now, while these possessions are mostly family properties near the ancestral seat, where the other lines also held shares, the castle fief at Hohenburg stands out as particularly unique and serves as a guide. We will certainly not go wrong if, because of this castle fief, we attribute the sons of an Eberhard von Rosenberg to be the brothers of Engelhard.",
       "facts": [
         {
-          "date": "1401",
-          "text": "Engelhard von Rosenberg received from Würzburg his shares at Rosenberg and Bofsheim, tithes at Sindolsheim and Schweinberg, goods at Gözigheim, a Burglehen at Hohenburg, a farm at Halberstadt and a share of the court at Brehmen."
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "received from Würzburg his shares at Rosenberg and Bofsheim, tithes at Sindolsheim and Schweinberg, goods at Gözigheim, a Burglehen at Hohenburg, a farm at Halberstadt, and a share of the court at Brehmen.",
+          "date": "1401"
         }
       ],
       "guesses": [
         {
-          "date": "1401",
-          "text": "The sons of an Eberhard von Rosenberg may have been sons of Engelhard’s brother, based on a Burglehen at Hohenburg."
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "may have been the brother of the Eberhard von Rosenberg whose sons belonged to Engelhard’s line, based on the Burglehen at Hohenburg.",
+          "date": "1401"
         }
       ]
     },
@@ -940,20 +1289,49 @@
           "date": "1443"
         },
         {
-          "date": "1417",
-          "text": "Kunz von Rosenberg der Jüngste, son of Eberhard, received a share of Schloss Rosenberg, of Bofsheim and Sindolsheim, and goods and rents at Gezigheim."
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "received a share of Rosenberg Castle and shares at Bofsheim and Sindolsheim, with goods and rents at Gezigheim.",
+          "personTitle": [
+            "der Jüngste"
+          ],
+          "date": "1417"
         },
         {
-          "date": "1423",
-          "text": "Kunz von Rosenberg der Jüngere, son of Eberhard, received goods at Brehmen and one third of Buch."
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "received goods at Brehmen and one third of Buch.",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "date": "1423"
         },
         {
-          "date": "1443",
-          "text": "Kunz von Rosenberg der Jüngere received tithes at Bofsheim and Sindolsheim, rents and goods at Gezigheim, and a Burggut at Hohenburg that came to him from his brother Eberhard."
+          "type": "parent",
+          "person": "Eberhard von Rosenberg",
+          "of": "Kunz von Rosenberg",
+          "ofTitle": [
+            "der Jüngere"
+          ],
+          "date": "1423"
         },
         {
-          "date": "1425",
-          "text": "Eberhard von Rosenberg der Jüngere was enfeoffed with goods at Bofsheim, Sindolsheim, Gezigheim and Hohenburg."
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "received tithes at Bofsheim and Sindolsheim, rents and goods at Gezigheim, and a Burggut at Hohenburg from his brother Eberhard.",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "date": "1443"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was enfeoffed with goods at Bofsheim, Sindolsheim, Gezigheim, and Hohenburg.",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "date": "1425"
         },
         {
           "type": "kin",
@@ -984,12 +1362,19 @@
           "date": "1450"
         },
         {
-          "date": "1450",
-          "text": "Ulrich von Rosenberg der Junge inherited a Burggut in Hohenburg castle and a house in the town from his brother Kunz."
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "inherited a Burggut at Hohenburg Castle and a house in the town from his brother Kunz.",
+          "personTitle": [
+            "der Junge"
+          ],
+          "date": "1450"
         },
         {
-          "date": "1458",
-          "text": "Ulrich von Rosenberg sold a quarter of Bofsheim to his Vetter Konrad von Rosenberg, Ritter."
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "sold a quarter of Bofsheim to his Vetter Konrad von Rosenberg, Ritter.",
+          "date": "1458"
         },
         {
           "type": "kin",
@@ -1028,12 +1413,22 @@
           "date": "1436"
         },
         {
-          "date": "1436",
-          "text": "Ulrich and Jörg von Rosenberg bought a quarter of Boxberg from their Vetter Arnold von Rosenberg."
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "bought a quarter of Borberg from his Vetter Arnold von Rosenberg together with his brother Jörg von Rosenberg.",
+          "date": "1436"
         },
         {
-          "date": "1458",
-          "text": "Ulrich von Rosenberg received fiefs partly for himself and partly for the sons of his brother Georg, including shares of Burgheim, Rosenberg, Bofsheim and Buch."
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "bought a quarter of Borberg from his Vetter Arnold von Rosenberg together with his brother Ulrich von Rosenberg.",
+          "date": "1436"
+        },
+        {
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "received fiefs partly for himself and partly for the sons of his brother Georg, including shares at Burgheim, Rosenberg, Bofsheim, and Buch.",
+          "date": "1458"
         },
         {
           "type": "title",
@@ -1052,24 +1447,34 @@
           "date": "1464"
         },
         {
-          "date": "1461",
-          "text": "Ulrich von Rosenberg received a quarter of castle and town Rosenberg and the patronage rights at Rosenberg, Burgheim, Wolsheim, Heimesbach, Bofsheim and Uissigheim from Würzburg."
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "received from Würzburg a quarter of Rosenberg Castle and town and the patronage rights at Rosenberg, Burgheim, Wolsheim, Heimesbach, Bofsheim, and Uissigheim.",
+          "date": "1461"
         },
         {
-          "date": "1460",
-          "text": "Ulrich von Rosenberg was surety in a Schönthal document concerning a farm at Assmannstadt."
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "stood surety in a Schönthal document concerning a farm at Assmannstadt.",
+          "date": "1460"
         },
         {
-          "date": "1463-03-08",
-          "text": "Ulrich von Rosenberg made a Burgfrieden at Schüpf with Georg von Dottenheim and Horned von Hornberg."
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "made a Burgfrieden at Schüpf with Georg von Dottenheim and Horned von Hornberg.",
+          "date": "1463-03-08"
         },
         {
-          "date": "1463",
-          "text": "Ulrich von Rosenberg and the guardians of his brother Georg’s children sold an eighth of Schloss Schüpf."
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "sold one eighth of Schüpf Castle together with the guardians of his brother Georg’s children.",
+          "date": "1463"
         },
         {
-          "date": "1464",
-          "text": "Ulrich von Rosenberg acquired a share of Maienfels previously held by Konrad von Bubenhofen."
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "acquired a share of Maienfels previously held by Konrad von Bubenhofen.",
+          "date": "1464"
         },
         {
           "type": "death",
@@ -1084,8 +1489,10 @@
       "english": "Georg von Rosenberg appears, for example, in 1447 during an alliance on the Jagst against the Horneck; in 1453, he was enfeoffed with ¼ of the castle and town of Bofsberg, especially with the large Kempnate and the house above the chapel. According to the Jahrbuch 1861, p. 397, he died on April 28, 1458.",
       "facts": [
         {
-          "date": "1453",
-          "text": "Georg von Rosenberg was enfeoffed with a quarter of castle and town Boxberg, including the great Kemenate and the house above the chapel."
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "content": "was enfeoffed with a quarter of Boxberg Castle and town, including the great Kemenate and the house above the chapel.",
+          "date": "1453"
         },
         {
           "type": "death",
@@ -1116,12 +1523,22 @@
           "date": "1317"
         },
         {
-          "date": "1317",
-          "text": "Arnold von Rosenberg, miles, held half the village of Büffelsheim as a Würzburg fief."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "held half the village of Büffelsheim as a Würzburg fief.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1317"
         },
         {
-          "date": "1317",
-          "text": "Arnold von Rosenberg, miles, received the village of Hirschlanden and the other fiefs of Lutz Münch with Lutz’s consent."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "received the village of Hirschlanden and the other fiefs of Lutz Münch with Lutz’s consent.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1317"
         }
       ]
     },
@@ -1130,8 +1547,25 @@
       "english": "Arnoldus de Rosenberg, Ritter, and Eberhard and Wipertus, his fraternal brothers—exchange with the Seeligenthal Monastery two parts of the wine tithe in the village and march of Ruchsheim, which they held as a fief from Count Ruprecht von Dürn and the Count from the Würzburg Church, for 10 pounds Heller of \"Herrngulte\" income, commonly called, located near Rosenberg Castle in the village of Sindolzheim. This income is then enfeoffed to the Count and the chapter and received from them in 1321. See Gudeni C. D. III, 738 f.",
       "facts": [
         {
-          "date": "1321",
-          "text": "Arnold von Rosenberg, miles, Eberhard von Rosenberg and [wiprecht_von_rosenberg] exchanged two parts of the wine tithe at Ruchsheim, held from Count Rupert von Dürn, with Seligenthal monastery for a rent at Sindolsheim near castle Rosenberg."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "exchanged two parts of the wine tithe at Ruchsheim, held as a fief from Count Rupert von Dürn, with Seligenthal monastery for rent near Rosenberg Castle at Sindolsheim, together with Eberhard von Rosenberg and Wipert von Rosenberg.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1321"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "exchanged two parts of the wine tithe at Ruchsheim, held as a fief from Count Rupert von Dürn, with Seligenthal monastery for rent near Rosenberg Castle at Sindolsheim, together with Arnold and Wipert von Rosenberg.",
+          "date": "1321"
+        },
+        {
+          "type": "generic",
+          "person": "wiprecht_von_rosenberg",
+          "content": "exchanged two parts of the wine tithe at Ruchsheim, held as a fief from Count Rupert von Dürn, with Seligenthal monastery for rent near Rosenberg Castle at Sindolsheim, together with Arnold and Eberhard von Rosenberg.",
+          "date": "1321"
         },
         {
           "type": "kin",
@@ -1164,16 +1598,22 @@
       "english": "1325: Arnoldus de Rosenberg receives the patronage rights in Rosenberg, as well as the patronage rights in Burcheim and an income of 30 solidi there. Additionally, he receives the patronage rights in Boeffelsheim, ½ of the tithe in Schweineburg, and in Bremen, the court and ½ of the advocacy, as well as ½ of the tithe in Syndolzhausen and in Gnetzenkeim, the fief of the said Heiden.",
       "facts": [
         {
-          "date": "1325",
-          "text": "Arnold von Rosenberg received the patronage rights at Rosenberg, Burgheim and Bofsheim."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "received the patronage rights at Rosenberg, Burgheim, and Bofsheim.",
+          "date": "1325"
         },
         {
-          "date": "1325",
-          "text": "Arnold von Rosenberg received half the tithe at Schweinberg and court and half the Vogtei at Brehmen."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "received half the tithe at Schweinberg and the court and half the Vogtei at Brehmen.",
+          "date": "1325"
         },
         {
-          "date": "1325",
-          "text": "Arnold von Rosenberg received half the tithe at Sindolsheim and a fief at Gnetzenkeim."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "received half the tithe at Sindolsheim and a fief at Gnetzenkeim.",
+          "date": "1325"
         }
       ]
     },
@@ -1189,14 +1629,30 @@
           "date": "1321"
         },
         {
-          "date": "1321",
-          "text": "Arnold von Rosenberg was surety for Count Rudolf von Wertheim in a sale to Gerlachsheim monastery."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "stood surety for Count Rudolf von Wertheim in a sale to Gerlachsheim monastery.",
+          "date": "1321"
         }
       ],
       "guesses": [
         {
-          "date": "1321",
-          "text": "Eberhard, Konrad, and Hans von Rosenberg may have been Arnold’s sons, based on their description as cousins of Eberhard’s sons."
+          "type": "parent",
+          "person": "Arnold von Rosenberg",
+          "of": "Eberhard von Rosenberg",
+          "date": "1321"
+        },
+        {
+          "type": "parent",
+          "person": "Arnold von Rosenberg",
+          "of": "Konrad von Rosenberg",
+          "date": "1321"
+        },
+        {
+          "type": "parent",
+          "person": "Arnold von Rosenberg",
+          "of": "Hans von Rosenberg",
+          "date": "1321"
         }
       ]
     },
@@ -1212,36 +1668,73 @@
           "date": "1359"
         },
         {
-          "date": "1359",
-          "text": "At the request of Eberhard von Rosenberg, the bishop of Würzburg enfeoffed Ludwig Münch von Rosenberg, Ritter, and his son Johann to hold property for Eberhard’s children."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "requested that the Bishop of Würzburg grant fiefs to Ludwig Münch von Rosenberg and his son Hans to hold for his children.",
+          "date": "1359"
         },
         {
-          "date": "1359",
-          "text": "Ludwig Münch von Rosenberg, miles, and his son Hans received the wine tithe at Möckmühl to hold for the children of Eberhard von Rosenberg."
+          "type": "generic",
+          "person": "Ludwig Münch von Rosenberg",
+          "content": "received the wine tithe at Möckmühl with his son Hans to hold for the children of Eberhard von Rosenberg.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1359"
         },
         {
-          "date": "1359",
-          "text": "Ludwig Münch von Rosenberg, miles, and his son Hans received the tithe at Oberzimmern to hold for the children of Eberhard von Rosenberg."
+          "type": "generic",
+          "person": "Ludwig Münch von Rosenberg",
+          "content": "received the rye tithe at Oberzimmern with his son Hans to hold for the children of Eberhard von Rosenberg.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1359"
         },
         {
-          "date": "1359",
-          "text": "Ludwig Münch von Rosenberg, miles, and his son Hans received a sixth of the rye tithe at Burgheim to hold for the children of Eberhard von Rosenberg."
+          "type": "generic",
+          "person": "Ludwig Münch von Rosenberg",
+          "content": "received a sixth of the rye tithe at Burgheim with his son Hans to hold for the children of Eberhard von Rosenberg.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1359"
         },
         {
-          "date": "1359",
-          "text": "Ludwig Münch von Rosenberg, miles, and his son Hans received a quarter and a twelfth of the rye tithe at Rosenberg to hold for the children of Eberhard von Rosenberg."
+          "type": "generic",
+          "person": "Ludwig Münch von Rosenberg",
+          "content": "received a quarter and a twelfth of the rye tithe at Rosenberg with his son Hans to hold for the children of Eberhard von Rosenberg.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1359"
         },
         {
-          "date": "1359",
-          "text": "Ludwig Münch von Rosenberg, miles, and his son Hans received the Dürrhof at Rosenberg to hold for the children of Eberhard von Rosenberg."
+          "type": "generic",
+          "person": "Ludwig Münch von Rosenberg",
+          "content": "received the Dürrhof at Rosenberg with his son Hans to hold for the children of Eberhard von Rosenberg.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1359"
         },
         {
-          "date": "1359",
-          "text": "Ludwig Münch von Rosenberg, miles, and his son Hans received the Budenhof at Sindolsheim to hold for the children of Eberhard von Rosenberg."
+          "type": "generic",
+          "person": "Ludwig Münch von Rosenberg",
+          "content": "received the Budenhof at Sindolsheim with his son Hans to hold for the children of Eberhard von Rosenberg.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1359"
         },
         {
-          "date": "1359",
-          "text": "Ludwig Münch von Rosenberg, miles, and his son Hans received a quarter of the village and court of Bofsheim to hold for the children of Eberhard von Rosenberg."
+          "type": "generic",
+          "person": "Ludwig Münch von Rosenberg",
+          "content": "received a quarter of the village and court of Bofsheim with his son Hans to hold for the children of Eberhard von Rosenberg.",
+          "personTitle": [
+            "miles"
+          ],
+          "date": "1359"
         },
         {
           "type": "parent",
@@ -1271,8 +1764,10 @@
           "date": "1366"
         },
         {
-          "date": "1366",
-          "text": "Eberhard von Rosenberg, son of Arnold, received the Würzburg fiefs at Breitzheim sold and resigned by the brothers Konrad and Eberhard von Hartheim, except their vineyards."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received the Würzburg fiefs at Breitzheim sold and resigned by the brothers Konrad and Eberhard von Hartheim, except their vineyards.",
+          "date": "1366"
         }
       ]
     },
@@ -1281,8 +1776,10 @@
       "english": "1366: Eberhard von Rosenberg received an income of 10 pounds Heller from the estate in Bretzigheim with its appurtenances—inhabited by Itel Ketel there—and the remaining part still held by Ketel, through the sale and resignation of the aforementioned Ketel.",
       "facts": [
         {
-          "date": "1366",
-          "text": "Eberhard von Rosenberg received rents on a farm at Breitzheim sold and resigned by Itel Ketel."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received rents on a farm at Breitzheim sold and resigned by Itel Ketel.",
+          "date": "1366"
         }
       ]
     },
@@ -1291,14 +1788,21 @@
       "english": "This Eberhard, Arnold's son, could very well be the Eberhard referred to with his wife Wyclo, who lived in Zimmern in the 13th century and owned property in Kirchheim; see above. Indeed, I am inclined to think of this Eberhard because his mother, born a Pfahl von Grünsfeld, could quite possibly have passed these possessions on to her children, as Eberhard already had children living in 1359. Eberhard von Rosenberg of Zimmern (and associates) was reconciled with Lord Kraft von Hohenlohe on St. Vincent's Day in 1347 over certain funds and the estate of Zimmern, over which they had fought; see Fleischners Chronik.",
       "guesses": [
         {
-          "date": "1359",
-          "text": "Bauer suggests Eberhard von Rosenberg, son of Arnold, may be Eberhard von Rosenberg at Zimmern, husband of Wyclo, partly because his mother may have inherited property there."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "may have been the husband of Wyclo attested at Zimmern, based partly on a possible inheritance there by his mother.",
+          "date": "1359"
         }
       ],
       "facts": [
         {
-          "date": "1347",
-          "text": "Eberhard von Rosenberg zu Zimmern and his associates settled a dispute with Kraft von Hohenlohe over money and the fortress of Zimmern."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "settled a dispute with Kraft von Hohenlohe over money and the estate of Zimmern.",
+          "personTitle": [
+            "zu Zimmern"
+          ],
+          "date": "1347"
         }
       ]
     },
@@ -1315,8 +1819,13 @@
           "date": "1377"
         },
         {
-          "date": "1379",
-          "text": "Peter von Helmstadt genannt von Rosenberg was living at Helmstadt."
+          "type": "generic",
+          "person": "Peter von Helmstadt",
+          "content": "resided at Helmstadt.",
+          "personTitle": [
+            "genannt von Rosenberg"
+          ],
+          "date": "1379"
         },
         {
           "type": "parent",
@@ -1337,16 +1846,28 @@
           "date": "1374"
         },
         {
-          "date": "1374",
-          "text": "Peter von Helmstadt genannt von Rosenberg and his brother Raban exchanged goods."
+          "type": "generic",
+          "person": "Peter von Helmstadt",
+          "content": "exchanged goods with his brother Raban von Helmstadt.",
+          "personTitle": [
+            "genannt von Rosenberg"
+          ],
+          "date": "1374"
         },
         {
-          "date": "1374",
-          "text": "Kunz Münch von Rosenberg sealed the exchange of goods by Peter and Raban von Helmstadt."
+          "type": "generic",
+          "person": "Kunz Münch von Rosenberg",
+          "content": "sealed the exchange of goods by Peter and Raban von Helmstadt.",
+          "date": "1374"
         },
         {
-          "date": "1396",
-          "text": "Hans von Helmstadt genannt von Rosenberg resided at Helmstadt."
+          "type": "generic",
+          "person": "Hans von Helmstadt",
+          "content": "resided at Helmstadt.",
+          "personTitle": [
+            "genannt von Rosenberg"
+          ],
+          "date": "1396"
         }
       ]
     },
@@ -1361,8 +1882,16 @@
           "date": "1359"
         },
         {
-          "date": "1359",
-          "text": "Eberhard and Johann von Rosenberg received the village and court at Bofsheim after Johann von Helmstadt resigned them."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "received the village and court at Bofsheim after Hans von Helmstadt resigned them, together with his brother Hans von Rosenberg.",
+          "date": "1359"
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "received the village and court at Bofsheim after Hans von Helmstadt resigned them, together with his brother Eberhard von Rosenberg.",
+          "date": "1359"
         }
       ]
     },
@@ -1371,8 +1900,16 @@
       "english": "The same two brothers, Hans and Eberhard von Rosenberg, acted as guarantors in 1363; see Reg. b. IX, 81.",
       "facts": [
         {
-          "date": "1363",
-          "text": "Hans and Eberhard von Rosenberg were sureties."
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "stood surety together with Eberhard von Rosenberg.",
+          "date": "1363"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "stood surety together with Hans von Rosenberg.",
+          "date": "1363"
         }
       ]
     },
@@ -1395,8 +1932,10 @@
           "date": "1368"
         },
         {
-          "date": "1368",
-          "text": "Eberhard von Rosenberg was a co-guardian of the children of Anna von Rosenberg, widow of Johann Pfahl von Grünsfeld."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "served as a co-guardian of the children of his niece Anna von Rosenberg, widow of Hans Pfahl von Grünsfeld.",
+          "date": "1368"
         },
         {
           "type": "death",
@@ -1407,8 +1946,10 @@
       ],
       "guesses": [
         {
-          "date": "1381",
-          "text": "The account says that Eberhard, Arnold, Konrad and Eberhard von Rosenberg bought castle and town Boxberg from the Johanniter in 1381, noting that it was reportedly drawn from documents."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "may have been one of the four Rosenberg purchasers of Boxberg from the Johanniter.",
+          "date": "1381"
         }
       ]
     },
@@ -1426,12 +1967,34 @@
           "date": "1381-05-25"
         },
         {
-          "date": "1381-05-25",
-          "text": "Eberhard von Rosenberg, Ritter, and his brother Arnold transferred their half of castle and town Boxberg to the counts palatine of the Rhine and received it back as a Mannlehen."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "transferred his half of Boxberg Castle, fortress, and town to the Counts Palatine and received it back as a Mannlehen with his brother Arnold.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1381-05-25"
         },
         {
-          "date": "1381-05-25",
-          "text": "Eberhard von Rosenberg, Ritter, and Arnold von Rosenberg made their share of Boxberg an open house for the three Ruprechts of the Palatinate."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "transferred his half of Boxberg Castle, fortress, and town to the Counts Palatine and received it back as a Mannlehen with his brother Eberhard von Rosenberg.",
+          "date": "1381-05-25"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "made the Rosenberg brothers’ share of Boxberg an open house for the three Ruprechts of the Palatinate with his brother Arnold.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1381-05-25"
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "made the Rosenberg brothers’ share of Boxberg an open house for the three Ruprechts of the Palatinate with his brother Eberhard von Rosenberg.",
+          "date": "1381-05-25"
         }
       ]
     },
@@ -1440,12 +2003,28 @@
       "english": "Arnold, however, sold his share in Boxberg in 1387 to his brother, as he had acquired a share in Schüpf; both brothers had their rights to the court at Boxberg confirmed by Emperor Wenceslaus in 1388 (Stocker, p. 19). The court at Schweigern was granted by King Wenceslaus in 1397, l. c. p. 55.",
       "facts": [
         {
-          "date": "1387",
-          "text": "Arnold von Rosenberg sold his share of Boxberg to his brother Eberhard von Rosenberg."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "sold his share of Boxberg to his brother Eberhard von Rosenberg.",
+          "date": "1387"
         },
         {
-          "date": "1388",
-          "text": "King Wenzel confirmed the court at Boxberg to Eberhard and Arnold von Rosenberg."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "acquired his brother Arnold von Rosenberg’s share of Boxberg.",
+          "date": "1387"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "had the court at Boxberg confirmed by King Wenceslaus.",
+          "date": "1388"
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "had the court at Boxberg confirmed by King Wenceslaus.",
+          "date": "1388"
         }
       ]
     },
@@ -1472,14 +2051,28 @@
           "date": "1409-05-01"
         },
         {
-          "date": "1409-05-01",
-          "text": "Arnold von Rosenberg der Ältere zu Schüpf and his wife Elsbeth sold goods and rents at Ober-Dypach, Niedernhall and Crispenhofen to Schönthal monastery."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "sold goods and rents at Ober-Dypach, Niedernhall, and Crispenhofen to Schönthal monastery with his wife Elisabeth.",
+          "personTitle": [
+            "der Ältere",
+            "zu Schüpf"
+          ],
+          "date": "1409-05-01"
         }
       ],
       "guesses": [
         {
-          "date": "1381",
-          "text": "It is possible that the brothers Eberhard and Arnold who held Boxberg in 1381 were children of Eberhard, son of Arnold, partly because Arnold bore their grandfather’s name."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "may have been a son of Eberhard von Rosenberg, son of Arnold, based partly on the repeated name.",
+          "date": "1381"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "may have fathered Arnold von Rosenberg and a brother who held Boxberg.",
+          "date": "1381"
         }
       ]
     },
@@ -1516,8 +2109,19 @@
           "date": "1395"
         },
         {
-          "date": "1395",
-          "text": "Arnold von Rosenberg der Junge and his brother Eberhard sold a meadow at Kupprichhausen to the Martine."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "sold a meadow at Kupprichhausen to the Martine together with his brother Eberhard von Rosenberg.",
+          "personTitle": [
+            "der Junge"
+          ],
+          "date": "1395"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sold a meadow at Kupprichhausen to the Martine together with his brother Arnold von Rosenberg.",
+          "date": "1395"
         },
         {
           "type": "death",
@@ -1528,8 +2132,14 @@
       ],
       "guesses": [
         {
-          "date": "1388",
-          "text": "The father of Arnold der Jüngere and Eberhard may have been Eberhard von Rosenberg, Ritter and Vogt zu Lauda in 1385."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "may have been the father of Arnold von Rosenberg der Jüngere and his brother Eberhard.",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Lauda"
+          ],
+          "date": "1388"
         },
         {
           "type": "death",
@@ -1550,8 +2160,16 @@
           "date": "1400-12-10"
         },
         {
-          "date": "1400-12-10",
-          "text": "King Ruprecht permitted Arnold and Eberhard von Rosenberg to have a Schultheiß, Schöffen and a criminal court in their village of Schweigern."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "was permitted by King Ruprecht to have a Schultheiß, Schöffen, and criminal court in Schweigern.",
+          "date": "1400-12-10"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was permitted by King Ruprecht to have a Schultheiß, Schöffen, and criminal court in Schweigern together with his brother Arnold.",
+          "date": "1400-12-10"
         },
         {
           "type": "spouse",
@@ -1592,16 +2210,33 @@
           "date": "1408-11-11"
         },
         {
-          "date": "1408-11-11",
-          "text": "Arnold von Rosenberg der Junge zu Boxberg and his wife Christine von Handschuhsheim exchanged goods at Erlenbach and Merchingen for Schönthal monastery goods at Buch am Ahorn."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "exchanged his goods at Erlenbach and Merchingen for Schönthal monastery goods at Buch am Ahorn with his wife Christine von Handschuhsheim.",
+          "personTitle": [
+            "der Junge",
+            "zu Boxberg"
+          ],
+          "date": "1408-11-11"
         },
         {
-          "date": "1408-11-11",
-          "text": "Eberhard von Rosenberg, Knecht, zu Jagstberg sealed the exchange by his brother Arnold von Rosenberg der Junge."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sealed the exchange by his brother Arnold von Rosenberg der Jüngere.",
+          "personTitle": [
+            "Knecht",
+            "zu Jagstberg"
+          ],
+          "date": "1408-11-11"
         },
         {
-          "date": "1408-11-11",
-          "text": "Konrad von Rosenberg zu Boxberg sealed the exchange by his Vetter Arnold von Rosenberg der Junge."
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "sealed the exchange by his Vetter Arnold von Rosenberg der Jüngere.",
+          "personTitle": [
+            "zu Boxberg"
+          ],
+          "date": "1408-11-11"
         }
       ]
     },
@@ -1614,16 +2249,25 @@
       "english": "In July 1415, Count Hans von Wertheim approved the sale by his vassal Arnold von Rosenberg (no longer referred to as \"junior\") of properties in Niccolzhausen to the monastery in Grünau. Mone, D. Rhein XVIII, 323. In 1419, Arnold von Rosenberg, with his wife Christine von Hantschuchsheim, sold properties in Gommersdorf, which had previously belonged to the castle at Boxberg, to Schöntal Abbey for 750 Rhenish florins. In 1436, Arnold sold his quarter share in Boxberg to his cousins Ulrich and Jörg von Rosenberg.",
       "facts": [
         {
-          "date": "1415-07",
-          "text": "Count Johann von Wertheim approved the sale by his vassal Arnold von Rosenberg zu Boxberg of goods at Niklashausen to Grünau monastery."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "sold goods at Niklashausen to Grünau monastery with Count Johann von Wertheim’s approval.",
+          "personTitle": [
+            "zu Boxberg"
+          ],
+          "date": "1415-07"
         },
         {
-          "date": "1419",
-          "text": "Arnold von Rosenberg and his wife Christine von Handschuhsheim sold goods at Gommersdorf to Schönthal monastery."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "sold goods at Gommersdorf to Schönthal monastery with his wife Christine von Handschuhsheim.",
+          "date": "1419"
         },
         {
-          "date": "1436",
-          "text": "Arnold von Rosenberg sold his quarter of Boxberg to his Vettern Ulrich and Jörg von Rosenberg."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "sold his quarter of Boxberg to his Vettern Ulrich and Jörg von Rosenberg.",
+          "date": "1436"
         },
         {
           "type": "kin",
@@ -1662,12 +2306,18 @@
       "english": "Two gravestones in Wölchingen seem to belong here, see 1856, p. 34. On St. Walpurgis Day, 1449, Eberhard von Rosenberg died, and on the Thursday after Trinity Sunday in 1447, Arnold von Rosenberg passed away. Their mother's coat of arms shows a lion, so they are undoubtedly brothers, which aligns with the above. This mother is likely Elisabeth von Erligheim, who, according to Stocker's Boxberg p. 48, was the wife of an Eberhard von Rosenberg and endowed half of her income in Gommersdorf for a Mass in Wölchingen, which was confirmed by their liege lord, Elector Palatine Ruprecht, in 1393.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "died on St. Walpurgis Day.",
           "date": "1449",
-          "text": "The source gives St. Walpurgis Day as the date for Eberhard von Rosenberg."
+          "personDeceased": true
         },
         {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "died on the Thursday after Trinity Sunday.",
           "date": "1447",
-          "text": "The source gives the Thursday after Trinity as Arnold von Rosenberg’s date."
+          "personDeceased": true
         },
         {
           "type": "death",
@@ -1684,8 +2334,10 @@
       ],
       "guesses": [
         {
-          "date": "1449",
-          "text": "The two von Rosenberg men buried at Wölchingen may have been brothers, and their mother may have been Els von Erligheim; their maternal arms show a lion."
+          "type": "generic",
+          "person": "Elisabeth von Erligheim",
+          "content": "may have been the mother of Eberhard and Arnold von Rosenberg; their mother’s arms bore a lion.",
+          "date": "1449"
         }
       ]
     },
@@ -1708,14 +2360,24 @@
       "english": "Biedermann, in Table 405, claims with certainty that a Michael von Rosenberg of Schüpff appeared in 1407, 08, and 11. Since we have at least found one Michael von Rosenberg, who in 1378 sold his half tithe in Bobstadt to the Teutonic Order for 140 florins, we will tentatively identify this Michael as another son of Eberhard, a brother of Arnold I.",
       "facts": [
         {
-          "date": "1378",
-          "text": "Michael von Rosenberg sold his half of the tithe at Bobstadt to the Teutonic Order."
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "content": "sold his half of the tithe at Bobstadt to the Teutonic Order.",
+          "date": "1378"
         }
       ],
       "guesses": [
         {
-          "date": "1378",
-          "text": "Michael von Rosenberg, who sold the Bobstadt tithe in 1378, may have been another son of Eberhard and brother of Arnold."
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "content": "may have been another son of Eberhard von Rosenberg.",
+          "date": "1378"
+        },
+        {
+          "type": "sibling",
+          "person": "Michael von Rosenberg",
+          "of": "Arnold von Rosenberg",
+          "date": "1378"
         }
       ]
     },
@@ -1740,24 +2402,43 @@
           "date": "1361"
         },
         {
-          "date": "1346",
-          "text": "Hans von Rosenberg was surety for the bishop of Würzburg."
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "stood surety for the Bishop of Würzburg.",
+          "date": "1346"
         },
         {
-          "date": "1341",
-          "text": "Hans von Rosenberg sealed the document of Eberhard von Rosenberg and his wife Wyclo."
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "sealed the document of Eberhard von Rosenberg and his wife Wyclo.",
+          "date": "1341"
         },
         {
-          "date": "1361",
-          "text": "Hans von Rosenberg, Ritter, became a Burgmann at Mergentheim."
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "became a Burgmann at Mergentheim.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1361"
         },
         {
-          "date": "1361",
-          "text": "Hans von Rosenberg, Ritter, transferred ownership of a farm at Berolzheim to the Teutonic Order."
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "transferred ownership of a farm at Berolzheim to the Teutonic Order.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1361"
         },
         {
-          "date": "1363",
-          "text": "Hans von Rosenberg, Ritter, was surety for Mainz."
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "stood surety for Mainz.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1363"
         }
       ]
     },
@@ -1784,16 +2465,28 @@
           "date": "1368"
         },
         {
-          "date": "1368-02",
-          "text": "Anna von Rosenberg, widow of Johann Pfahl von Grünsfeld, sold the great tithe at Großrinderfeld with the participation of the guardians of her children."
+          "type": "generic",
+          "person": "Anna von Rosenberg",
+          "content": "sold the great tithe at Großrinderfeld as a widow, with the involvement of her children’s guardians.",
+          "date": "1368-02"
         },
         {
-          "date": "1368-02",
-          "text": "Eberhard von Rosenberg, Edelknecht, was a guardian of the children of Anna von Rosenberg and Johann Pfahl von Grünsfeld."
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "served as a guardian of the children of Anna von Rosenberg and Hans Pfahl von Grünsfeld.",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "date": "1368-02"
         },
         {
-          "date": "1368-02",
-          "text": "Heinrich Pfahl, Edelknecht, was a guardian of the children of Anna von Rosenberg and Johann Pfahl von Grünsfeld."
+          "type": "generic",
+          "person": "Heinrich Pfahl",
+          "content": "served as a guardian of the children of Anna von Rosenberg and Hans Pfahl von Grünsfeld.",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "date": "1368-02"
         },
         {
           "type": "death",
@@ -1823,20 +2516,53 @@
           "date": "1385"
         },
         {
-          "date": "1385",
-          "text": "The father of Hans and Götz von Rosenberg was deceased by 1385."
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "had a father who was deceased by 1385.",
+          "date": "1385"
         },
         {
-          "date": "1385",
-          "text": "Hans von Rosenberg, his wife Anna von Kronenberg and his brother Götz sold the fortress of Urhausen, inherited from the brothers’ deceased father."
+          "type": "generic",
+          "person": "Götz von Rosenberg",
+          "content": "had a father who was deceased by 1385.",
+          "date": "1385"
         },
         {
-          "date": "1385",
-          "text": "Eberhard von Rosenberg, Ritter, Vogt zu Lauda, was a surety for the sale of Urhausen by Hans and Götz von Rosenberg."
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "sold the fortress of Urhausen, inherited from his deceased father, with his wife Anna von Kronenberg and his brother Götz.",
+          "date": "1385"
         },
         {
-          "date": "1385",
-          "text": "Kunz von Rosenberg zu Boxberg was a surety for the sale of Urhausen by Hans and Götz von Rosenberg."
+          "type": "generic",
+          "person": "Götz von Rosenberg",
+          "content": "sold the fortress of Urhausen, inherited from his deceased father, with his brother Hans von Rosenberg and Anna von Kronenberg.",
+          "date": "1385"
+        },
+        {
+          "type": "generic",
+          "person": "Anna von Kronenberg",
+          "content": "participated in the sale of the fortress of Urhausen by her husband Hans von Rosenberg and his brother Götz; they had inherited it from their deceased father.",
+          "date": "1385"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "stood surety for the sale of Urhausen by Hans and Götz von Rosenberg.",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Lauda"
+          ],
+          "date": "1385"
+        },
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "stood surety for the sale of Urhausen by Hans and Götz von Rosenberg.",
+          "personTitle": [
+            "zu Boxberg"
+          ],
+          "date": "1385"
         }
       ]
     },
@@ -1845,8 +2571,10 @@
       "english": "In 1401, Hans von Rosenberg received from Würzburg his share of the large and small tithes in Brunnacker and Burkheim in Boßfheim, what he had there, his share of the house in Rosenberg, and a castle fief belonging to Rodenfels.",
       "facts": [
         {
-          "date": "1401",
-          "text": "Hans von Rosenberg received from Würzburg shares of tithes at Brunacker and Burgheim, property at Bofsheim, a share of the house at Rosenberg and a Burglehen belonging to Rodenfels."
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "received from Würzburg shares of tithes at Brunacker and Burgheim, property at Bofsheim, a share of the house at Rosenberg, and a Burglehen belonging to Rodenfels.",
+          "date": "1401"
         }
       ]
     },
@@ -1855,8 +2583,10 @@
       "english": "In 1401, Götz von Rosenberg received his share in Rosenberg, as well as his share of the tithe in Rosenberg, Brunnacker, and Burkheim; likewise, in Boßfheim, what he held there, and a castle fief belonging to Rodenfels.",
       "facts": [
         {
-          "date": "1401",
-          "text": "Götz von Rosenberg received shares at Rosenberg, of tithes at Rosenberg, Brunacker and Burgheim, property at Bofsheim and a Burglehen belonging to Rodenfels."
+          "type": "generic",
+          "person": "Götz von Rosenberg",
+          "content": "received shares at Rosenberg, of tithes at Rosenberg, Brunacker, and Burgheim, property at Bofsheim, and a Burglehen belonging to Rodenfels.",
+          "date": "1401"
         }
       ]
     },
@@ -1865,8 +2595,13 @@
       "english": "The two brothers, Hans and Götz, transferred 20 malters of grain rent from the tithe in Burkheim to Arnold von Rosenberg der Jüngere, with whom Arnold was enfeoffed in 1405.",
       "facts": [
         {
-          "date": "1405",
-          "text": "Arnold von Rosenberg der Junge was enfeoffed with a grain rent from the Burgheim tithe transferred to him by the brothers Hans and Götz von Rosenberg."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "was enfeoffed with a grain rent from the Burkheim tithe transferred to him by the brothers Hans and Götz von Rosenberg.",
+          "personTitle": [
+            "der Junge"
+          ],
+          "date": "1405"
         }
       ]
     },
@@ -1879,20 +2614,28 @@
       "english": "In 1412, Götz von Rosenberg received from Würzburg as a fief his share of properties and tithes in Rosenberg, his share of the tithe in Burkheim, and in the village of Boßfheim and the new farm near Rosenberg. Hans von Rosenberg received ⅛ of the tithe in Burgheim, 2 parts of ¼ of the tithe in Rosenberg, his and his brother's house in Rosenberg, as far as the fortified courtyard reached, and 5 properties—his share in Boßfheim. Götz von Rosenberg received the tithe in Boßfheim, ⅓ of the tithe in Sindolzheim, and other properties.",
       "facts": [
         {
-          "date": "1412",
-          "text": "Götz von Rosenberg received Würzburg fiefs consisting of shares of property and tithes at Rosenberg, the Burgheim tithe and Bofsheim village and the new farm near Rosenberg."
+          "type": "generic",
+          "person": "Götz von Rosenberg",
+          "content": "received Würzburg fiefs consisting of shares of property and tithes at Rosenberg, the Burgheim tithe, Bofsheim village, and the new farm near Rosenberg.",
+          "date": "1412"
         },
         {
-          "date": "1412",
-          "text": "Götz von Rosenberg received the tithe at Bofsheim as a Würzburg fief."
+          "type": "generic",
+          "person": "Götz von Rosenberg",
+          "content": "received the tithe at Bofsheim as a Würzburg fief.",
+          "date": "1412"
         },
         {
-          "date": "1412",
-          "text": "Götz von Rosenberg received one third of the tithe at Sindolsheim as a Würzburg fief."
+          "type": "generic",
+          "person": "Götz von Rosenberg",
+          "content": "received one third of the tithe at Sindolsheim as a Würzburg fief.",
+          "date": "1412"
         },
         {
-          "date": "1412",
-          "text": "Hans von Rosenberg received Würzburg fiefs including shares of tithes at Burgheim and Rosenberg, the house he shared with his brother at Rosenberg, and property at Bofsheim."
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "received Würzburg fiefs including shares of tithes at Burgheim and Rosenberg, the house he shared with his brother at Rosenberg, and property at Bofsheim.",
+          "date": "1412"
         }
       ]
     },
@@ -1910,41 +2653,36 @@
           "date": "1415"
         },
         {
-          "date": "1415",
-          "text": "Hans von Rosenberg der Jüngere received tithes at Burgheim and Rosenberg, a share of Bofsheim with its court, and rents at Sindolsheim previously held by his brother Thomas."
-        },
-        {
           "type": "parent",
           "person": "Hans von Rosenberg",
           "of": "Kunz von Rosenberg",
           "date": "1421"
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "date": "1415",
+          "content": "received the tithe at Burkheim, his share of the tithe at Rosenberg, his share of Bofsheim with its court and appurtenances, and the income at Sindolsheim that his brother Thomas had previously held as a fief."
         }
       ],
       "guesses": [
         {
-          "date": "1415",
-          "text": "The succession of Götz von Rosenberg’s sons Thomas and Hans may support this dating."
-        },
-        {
-          "type": "parent",
-          "person": "Götz von Rosenberg",
-          "of": "Hans von Rosenberg",
-          "ofTitle": [
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
             "der Jüngere"
           ],
-          "date": "1415"
-        },
-        {
-          "type": "parent",
-          "person": "Götz von Rosenberg",
-          "of": "Thomas von Rosenberg",
-          "date": "1415"
+          "date": "1415",
+          "content": "may have succeeded Götz together with his brother Thomas, as Götz’s sons."
         },
         {
           "type": "death",
           "person": "Götz von Rosenberg",
-          "diedBefore": "1415",
-          "date": "1415"
+          "date": "1415",
+          "diedBefore": "1416"
         }
       ]
     },
@@ -1953,18 +2691,22 @@
       "english": "Kunz von Rosenberg, son of Hans von Rosenberg, received in 1421 a ¼ share of the tithe in Burkheim, properties in Boßfheim and Espelbach*), and a stone house in Rosenberg. The three mentioned brothers and cousins sealed a deed of sale in 1425 concerning a share in Rosenberg Castle: (Kunz von Rosenberg of Bartenstein,) Thomas and Hans von Rosenberg, brothers, Kunz von Rosenberg der Jüngere—",
       "facts": [
         {
-          "date": "1421",
-          "text": "Kunz von Rosenberg, son of Hans, received a quarter of the Burgheim tithe, goods at Bofsheim and Espelbach, and a stone house at Rosenberg."
-        },
-        {
-          "date": "1425",
-          "text": "Kunz von Rosenberg zu Bartenstein, Thomas and Hans von Rosenberg and Kunz von Rosenberg der Jüngere sealed a purchase deed concerning a share of castle Rosenberg."
-        },
-        {
           "type": "sibling",
           "person": "Thomas von Rosenberg",
           "of": "Hans von Rosenberg",
           "date": "1425"
+        },
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "date": "1421",
+          "content": "received a quarter of the tithe at Burkheim, goods at Bofsheim and Espelbach, and a stone house at Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
+          "date": "1425",
+          "content": "sealed a deed of sale concerning a share of Rosenberg Castle with Kunz von Rosenberg zu Bartenstein, his brother Hans, and Kunz von Rosenberg der Jüngere."
         }
       ]
     },
@@ -1977,16 +2719,22 @@
       "english": "Thomas von Rosenberg was in a feud with the city of Heilbronn from 1426 to 1429; see Jäger's Geschichte von Heilbronn I, 186 f. In 1429, the city demanded that he sever ties with Eberhard der Jüngere von Doltenheim, who had become their enemy. Therefore, Thomas likely resided in Schüpf.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
           "date": "1429",
-          "text": "Heilbronn asked Thomas von Rosenberg to end his association with Eberhard von Dottenheim der Jüngere."
+          "content": "was asked by the city of Heilbronn to end his association with Eberhard von Dottenheim der Jüngere, who had become the city’s enemy."
         },
         {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
           "date": "1426",
-          "text": "Thomas von Rosenberg was in a feud with the town of Heilbronn."
+          "content": "was in a feud with the city of Heilbronn."
         },
         {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
           "date": "1429",
-          "text": "Thomas von Rosenberg was in a feud with the town of Heilbronn."
+          "content": "was in a feud with the city of Heilbronn."
         }
       ]
     },
@@ -1995,12 +2743,16 @@
       "english": "In 1426, Thomas von Rosenberg acted as a guarantor in a Gnadenthal document, Wibel II, 217. In 1429, he was enfeoffed with ½ of the tithe in Rosenberg and ⅛ of the tithe in Burkheim, inherited from his father; in 1437, Konrad von Weinsberg purchased 100 malters of oats from him at the Mergentheim fair for 100 florins.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
           "date": "1429",
-          "text": "Thomas von Rosenberg was enfeoffed with half the tithe at Rosenberg and an eighth of the tithe at Burgheim inherited from his father."
+          "content": "held as a fief half of the tithe at Rosenberg and an eighth of the tithe at Burkheim, inherited from his father."
         },
         {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
           "date": "1426",
-          "text": "Thomas von Rosenberg was a surety in a Gnadenthal document."
+          "content": "acted as a surety in a Gnadenthal document."
         }
       ]
     },
@@ -2018,14 +2770,6 @@
           "date": "1445"
         },
         {
-          "date": "1445",
-          "text": "Hans von Rosenberg der Junge received a third of the tithe at Burgheim and shares of Bofsheim, castle Rosenberg and Espelbach, inherited from his father Kunz."
-        },
-        {
-          "date": "1456",
-          "text": "Hans von Rosenberg der Junge received a third of the tithe at Burgheim and shares of Bofsheim, castle Rosenberg and Espelbach, inherited from his father Kunz."
-        },
-        {
           "type": "death",
           "person": "Thomas von Rosenberg",
           "personTitle": [
@@ -2033,6 +2777,24 @@
           ],
           "diedOn": "1458-01-24",
           "date": "1458-01-24"
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "der Junge"
+          ],
+          "date": "1445",
+          "content": "received a third of the tithe at Burkheim and his shares in Bofsheim, Rosenberg Castle, and Eßelbach (Espelbach), inherited from his father Kunz."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "der Junge"
+          ],
+          "date": "1456",
+          "content": "received a third of the tithe at Burkheim and his shares in Bofsheim, Rosenberg Castle, and Eßelbach (Espelbach), inherited from his father Kunz."
         }
       ]
     },
@@ -2041,14 +2803,21 @@
       "english": "Mysteriously, an Eberhard von Rosenberg also reappears in 1452, who, alongside Ulrich, was enfeoffed with ¼ of Borberg, but sold his ¼ share to Ulrich in the same year with the consent of Sir Thomas von Rosenberg, Ritter, and Jörgen von Rosenberg (who is Ulrich's brother and co-owner of Borberg). This Eberhard, who sold his share in Borberg with Thomas's approval, can only be thought of as a member of the Hansian line, perhaps as a brother of Hans V. This line likely came into possession of a share in Borberg as an inheritance after the death of their cousins Arnold III and Eberhard VI. We have not yet encountered this Eberhard VIII elsewhere, unless he is Eberhard von Rosenberg, Ritter who allegedly, in 1488 with his wife Ursula von Adelsheim, established a Mass in Crailsheim, with the wife also donating an income in Wolmershausen to the St. John's Church in Crailsheim.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
           "date": "1452",
-          "text": "Eberhard von Rosenberg sold his quarter of Boxberg to Ulrich von Rosenberg with the consent of Thomas and Jörg von Rosenberg."
+          "content": "sold his quarter share of Borberg to Ulrich von Rosenberg with the consent of Thomas von Rosenberg, Ritter, and Jörg von Rosenberg."
         }
       ],
       "guesses": [
         {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "VIII"
+          ],
           "date": "1452",
-          "text": "Eberhard von Rosenberg, who sold a quarter of Boxberg in 1452 with Thomas’s consent, may have belonged to Hans’s line and been his brother."
+          "content": "may have belonged to Hans’s line and been his brother, based on Thomas’s consent to the sale."
         }
       ]
     },
@@ -2065,18 +2834,24 @@
           "date": "1460"
         },
         {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
           "date": "1460",
-          "text": "Hans von Rosenberg served as judge and councillor at Heilbronn."
+          "content": "served as a judge and councillor at Heilbronn."
         },
         {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
           "date": "1460",
-          "text": "Johann von Rosenberg bought a Mannlehen called a Reitlehen and a Reminate at Lengsfeld."
+          "content": "bought a Mannlehen called a Reitlehen and a Reminate at Lengsfeld."
         }
       ],
       "guesses": [
         {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
           "date": "1460",
-          "text": "It is uncertain whether the Hans von Rosenberg named in the 1460 Heilbronn documents and Johann von Rosenberg in the Lengsfeld transaction are the same as the Hans he numbers V."
+          "content": "may be the Hans named in the Heilbronn documents and the Johann named in the Lengsfeld transaction."
         }
       ]
     },
@@ -2084,10 +2859,6 @@
       "german": "Ganz wie oben wurde Hans 1468 wiederum belehnt und nochmals 1485, diese beiden male aber ohne den Beisatz \"der jüngere\". 1489 heißt er Hans v. R. zu Ußingen und war pfälzischer Hofrichter. Er hatte, nebst seinem Vetter Conrad v. R. 1487 eine Irrung mit Kloster Schönthal wegen des Zehnten zu Hirschlanden. Bald darauf ist er gestorben und 1491 wurden Hansen v. R. Söhne belehnt: Hans und Georg, der geistlich werden will. Hans allein empfing seine würzb. Lehen wieder a. 1497 und 1519; 1494 bürgte er für Wendel von Adelsheim; 1521 verkaufte Hans v. R. ⅓ des großen und kleinen Zehnten, einen Hof und eine Mühle zu Sindringen an Schönthal; Schönhuths Schönthal S. 139. 1525 ist er im Bauernkrieg umgekommen und sein Sohn Christoffel versäumte es, die Lehen zu empfangen, welche dadurch verfallen waren. Christof bat deswegen später den Bischof, die Lehen doch wenigstens seinem Sohne Hans Gucharius zu übertragen und wegen der willigen Dienste, welche dieser Sohn eine Zeit lang dem Stifte gethan hat, wird er 1536 wieder belehnt. Christof v. R. wurde 1497 vom Pfalzgrafen dem König von Frankreich zum Dienst empfohlen; Ludewig, reliq. mscr. VI, 97.",
       "english": "As noted above, Hans was enfeoffed again in 1468 and once more in 1485, but these two times without the designation der Jüngere. In 1489, he is referred to as Hans von Rosenberg zu Ußingen and was a Palatinate court judge. Along with his cousin Konrad von Rosenberg, he had a dispute with the Schönthal Monastery in 1487 over the tithe in Hirschlanden. He died shortly thereafter, and in 1491, Hans von Rosenberg's sons were enfeoffed: Hans and Georg, who intended to become a cleric. Hans alone received his Würzburg fiefs again in 1497 and 1519; in 1494, he acted as a guarantor for Wendel von Adelsheim; in 1521, Hans von Rosenberg sold ⅓ of the large and small tithe, a farm, and a mill in Sindringen to Schönthal; see Schönhuth's Schönthal, p. 139. In 1525, he was killed in the Peasants' War, and his son Christoffel failed to receive the fiefs, which therefore lapsed. Christoffel later requested the bishop to transfer the fiefs at least to his son Hans Gucharius, and due to the willing service this son had rendered to the chapter for some time, he was re-enfeoffed in 1536. Christoffel von Rosenberg was recommended by the Palatinate elector to the King of France for service in 1497; see Ludewig, Reliq. mscr. VI, 97.",
       "facts": [
-        {
-          "date": "1487",
-          "text": "Hans von Rosenberg and his Vetter Konrad von Rosenberg had a dispute with Schönthal monastery over the tithe at Hirschlanden."
-        },
         {
           "type": "kin",
           "person": "Hans von Rosenberg",
@@ -2111,22 +2882,6 @@
           "date": "1491"
         },
         {
-          "date": "1491",
-          "text": "Hans and Georg, sons of Hans von Rosenberg, received fiefs."
-        },
-        {
-          "date": "1491",
-          "text": "Hans von Rosenberg’s sons Hans and Georg received fiefs in 1491."
-        },
-        {
-          "date": "1494",
-          "text": "Hans von Rosenberg was surety for Wendel von Adelsheim."
-        },
-        {
-          "date": "1521",
-          "text": "Hans von Rosenberg sold a third of the great and small tithes, a farm and a mill at Sindringen to Schönthal monastery."
-        },
-        {
           "type": "parent",
           "person": "Hans von Rosenberg",
           "of": "Christoph von Rosenberg",
@@ -2139,25 +2894,49 @@
           "date": "1536"
         },
         {
-          "date": "1536",
-          "text": "Hans Eucharius von Rosenberg received fiefs after his father Christoph requested their restoration following the forfeiture caused by Christoph’s failure to receive them."
-        },
-        {
-          "date": "1497",
-          "text": "The count palatine recommended Christoph von Rosenberg to the king of France for service."
-        },
-        {
-          "type": "death",
-          "person": "Hans von Rosenberg",
-          "diedBefore": "1492",
-          "date": "1491"
-        },
-        {
           "type": "death",
           "person": "Hans von Rosenberg",
           "diedOn": "1525",
           "date": "1525",
           "circumstances": "During the Peasants’ War"
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "date": "1487",
+          "content": "had a dispute with Schönthal Monastery over the tithe at Hirschlanden, together with his cousin Konrad von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "date": "1494",
+          "content": "acted as surety for Wendel von Adelsheim."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "date": "1521",
+          "content": "sold a third of the great and small tithes, a farm, and a mill at Sindringen to Schönthal Monastery."
+        },
+        {
+          "type": "generic",
+          "person": "Hans Eucharius von Rosenberg",
+          "date": "1536",
+          "content": "received fiefs after his father Christoph petitioned for their transfer, following their forfeiture when Christoph failed to receive them."
+        },
+        {
+          "type": "generic",
+          "person": "Christoph von Rosenberg",
+          "date": "1497",
+          "content": "was recommended by the count palatine to the king of France for service."
+        }
+      ],
+      "guesses": [
+        {
+          "type": "death",
+          "person": "Hans von Rosenberg",
+          "date": "1489",
+          "diedBefore": "1489-03"
         }
       ]
     },
@@ -2170,12 +2949,16 @@
       "english": "Since we have successfully placed all the other Konrad, the brother of Ritter Hans must be the Konrad von Rosenberg who was enfeoffed with the fortress of Bartenstein by the Lords of Hohenlohe in 1421 and 1432, as he had purchased it from Hans von Seldenet der Ältere.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
           "date": "1421",
-          "text": "Konrad von Rosenberg received Bartenstein castle as a Hohenlohe fief after buying it from Hans von Seldeneck der Ältere."
+          "content": "was enfeoffed by the lords of Hohenlohe with Bartenstein Castle, which he had bought from Hans von Seldeneck der Ältere."
         },
         {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
           "date": "1432",
-          "text": "Konrad von Rosenberg received Bartenstein castle as a Hohenlohe fief after buying it from Hans von Seldeneck der Ältere."
+          "content": "was enfeoffed by the lords of Hohenlohe with Bartenstein Castle, which he had bought from Hans von Seldeneck der Ältere."
         }
       ]
     },
@@ -2184,12 +2967,22 @@
       "english": "In 1423, Kunz von Rosenberg of Bartenstein appears as a guarantor (alongside Konrad von Rosenberg of Reichelsberg); see 1857, p. 224; likewise, in 1425, in a Mergentheim document (alongside Kunz von Rosenberg der Jüngere, i.e., the son of the Reichelsberger).",
       "facts": [
         {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ],
           "date": "1423",
-          "text": "Kunz von Rosenberg zu Bartenstein was a surety."
+          "content": "acted as a surety."
         },
         {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ],
           "date": "1425",
-          "text": "Kunz von Rosenberg zu Bartenstein was a surety in a Mergentheim document."
+          "content": "acted as a surety in a Mergentheim document."
         }
       ]
     },
@@ -2198,16 +2991,40 @@
       "english": "Which of these two was enfeoffed in 1432 with a house and courtyard in Röttingen, purchased from Fritz von Giebelheim by the Lords of Hohenlohe, we must leave undecided. Kunz von Rosenberg \"of Bartenstein\" is explicitly mentioned again in 1435 at a Würzburg fief court (the above-cited Hohenlohe deduction against Würzburg, p. 29 of the appendices). In 1436, he received from the bishop, as he held no other fief from the chapter, for his good services, the toll at the half-village of Rippach, and if he were to die without sons, this fief should be redeemed for his daughters with 2000 florins. In 1438, among the hostages for Bishop Hans of Würzburg was Konrad von Rosenberg of Bartenstein. Therefore, the account in the Oberamt-Description of Gerabronn, p. 116, may be misleading, as it suggests that the Horneck of Hornberg were already co-owners at that time \"as successors to Konrad von Rosenberg.\" The change of ownership could not have occurred until shortly before the capture of Bartenstein on November 21, 1438, due to the robberies committed by the co-owners von Seldeneck. In the settlement, the Horneck were compensated for their share of the castle and the village of Riedbach with 3000 florins in gold, and with 1100 florins in gold for the pledged share of the toll there.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ],
           "date": "1435",
-          "text": "Kunz von Rosenberg zu Bartenstein participated in a Würzburg Mannengericht."
+          "content": "appeared at a Würzburg fief court."
         },
         {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ],
           "date": "1436",
-          "text": "Kunz von Rosenberg zu Bartenstein received the toll at Riedbach from the bishop of Würzburg in addition to half the village."
+          "content": "received half of the village of Rippach (Niedbach) from the bishop of Würzburg for his good services."
         },
         {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ],
+          "date": "1436",
+          "content": "received the toll at Rippach (Niedbach) from the bishop of Würzburg for his good services."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ],
           "date": "1438",
-          "text": "Konrad von Rosenberg zu Bartenstein was among the hostages for Bishop Johann von Würzburg."
+          "content": "was among the hostages for Bishop Hans of Würzburg."
         }
       ]
     },
@@ -2220,8 +3037,16 @@
       "english": "The remaining question now is where to place the two progenitors of these Konrad lines in the family tree? Considering everything, the times and other circumstances seem to fit best if we consider Lord Konrad of the Amberg bishopric to be the son of Arnold, and the longer-living Heidelberg bishopric Konrad to be the son of Eberhard I; this arrangement aligns all the generations with the parallel generations of the other lines. In this manner, we will now draft a family tree that includes only the documented individuals, leaving out the many names that Biedermann derived from the tournament books. We do not deny that some actual individuals may not have appeared in the records; others may still incorporate them. We are satisfied if a solid foundation for further genealogical research is established, something that has been lacking until now.",
       "guesses": [
         {
-          "date": "1370",
-          "text": "In a 1370 attestation as Vizedom in Amberg, Konrad von Rosenberg may have been Arnold’s son; the later Vizedom in Heidelberg may have been Eberhard I’s son (Staatsarchiv Amberg, Kloster Ensdorf Urkunden 156)."
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "may have been the father of Konrad von Rosenberg, attested as Vizedom at Amberg.",
+          "date": "1370"
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "may have fathered the later Vizedom zu Heidelberg.",
+          "date": "1370"
         }
       ]
     },
@@ -2273,8 +3098,10 @@
       "english": "1268: An Elisabeth von Rosenberg is said to have donated a property in Flein to the Steinheim Monastery; D. A. Heilbronn p. 281.",
       "guesses": [
         {
+          "type": "generic",
+          "person": "Elisabeth von Rosenberg",
           "date": "1268",
-          "text": "Elisabeth von Rosenberg may have donated property at Flein to Steinheim monastery in 1268."
+          "content": "is said to have donated property at Flein to Steinheim Monastery (D. A. Heilbronn, p. 281)."
         }
       ]
     },
@@ -2314,8 +3141,10 @@
       "english": "1406: Barbara von Rosenberg sold something in Großalmerstpan to the Komburg Monastery; D. A. Hall p. 212.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Barbara von Rosenberg",
           "date": "1406",
-          "text": "Barbara von Rosenberg sold property at Großalmerstpan to Komburg monastery."
+          "content": "sold property at Großalmerstpan to Komburg Monastery."
         }
       ]
     },
@@ -2435,12 +3264,16 @@
       "english": "1560: Elchine von Eicholzheim, widow, born von Rosenberg, received ¼ of the tithe in Seckach, a fief of the Hohenlohe, and still held it in 1571; see 1859, p. 36.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Elchine von Eicholzheim",
           "date": "1560",
-          "text": "Elchine von Eicholzheim, born von Rosenberg, received a quarter of the tithe at Seckach as a Hohenlohe fief."
+          "content": "received a quarter of the tithe at Seckach as a Hohenlohe fief."
         },
         {
+          "type": "generic",
+          "person": "Elchine von Eicholzheim",
           "date": "1571",
-          "text": "Elchine von Eicholzheim, born von Rosenberg, received a quarter of the tithe at Seckach as a Hohenlohe fief."
+          "content": "still held a quarter of the tithe at Seckach as a Hohenlohe fief."
         }
       ]
     },
@@ -2481,12 +3314,58 @@
           "date": "1468"
         },
         {
-          "date": "1468",
-          "text": "The brothers Michael, Georg and Arnold von Rosenberg renewed the Burgfrieden for Schüpf with the von Dottenheim."
+          "type": "sibling",
+          "person": "Michael von Rosenberg",
+          "of": "Georg von Rosenberg",
+          "date": "1468"
         },
         {
+          "type": "sibling",
+          "person": "Michael von Rosenberg",
+          "of": "Arnold von Rosenberg",
+          "date": "1468"
+        },
+        {
+          "type": "sibling",
+          "person": "Georg von Rosenberg",
+          "of": "Arnold von Rosenberg",
+          "date": "1468"
+        },
+        {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "date": "1468",
+          "content": "renewed the Burgfrieden for Schüpf with the lords of Dottenheim together with his brothers Georg and Arnold von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
           "date": "1469",
-          "text": "Michael, Georg and Arnold von Rosenberg participated in the foundation of a benefice for the chapel at Sachsenflur."
+          "content": "participated in establishing a benefice for the chapel at Sachsenflur together with his brothers Georg and Arnold von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1468",
+          "content": "renewed the Burgfrieden for Schüpf with the lords of Dottenheim together with his brothers Michael and Arnold von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1469",
+          "content": "participated in establishing a benefice for the chapel at Sachsenflur together with his brothers Michael and Arnold von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "date": "1468",
+          "content": "renewed the Burgfrieden for Schüpf with the lords of Dottenheim together with his brothers Michael and Georg von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "date": "1469",
+          "content": "participated in establishing a benefice for the chapel at Sachsenflur together with his brothers Michael and Georg von Rosenberg."
         }
       ]
     },
@@ -2495,12 +3374,16 @@
       "english": "The brothers were belligerent lords and took care to fortify their residence securely, along with the town of Boxberg. To better defend it, they built walls up to the castle and excavated a lake in the plain, while in the castle itself, they dug a well 48 fathoms deep into the rock. In 1469, Georg had a feud with the city of Hall, during which (as Herold recounts) he secretly entered the city and, among other things, burned down the village of Wolpertshausen (D. A. Hall p. 319) and roamed far and wide through the area (Jägers Geschichte von Heilbronn I, 237). As a result, the Rosenbergs gained a bad reputation as robbers and oppressors, and when Georg finally captured Weiprecht Sützel in a somewhat dubious manner, a severe storm began to brew against them.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
           "date": "1469",
-          "text": "Georg von Rosenberg feuded with the city of Hall."
+          "content": "was in a feud with the city of Hall."
         },
         {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
           "date": "1469",
-          "text": "Georg von Rosenberg burned the village of Wolpertshausen during his feud with Hall."
+          "content": "burned the village of Wolpertshausen during his feud with Hall."
         }
       ]
     },
@@ -2509,12 +3392,37 @@
       "english": "Archbishop Adolf of Mainz, Elector Friedrich of the Palatinate, and Bishop Rudolf of Würzburg concluded an agreement on the Monday before St. Anthony's Day in 1470 to use their combined forces (each contributing 200 cavalry and 300 infantry) to first capture the fortified churchyards in Schweigern and Schüpf and then, if no agreement was reached in the meantime, to conquer the castles of Boxberg and Schüpf. This plan was carried out. After a heavy bombardment lasting twelve days, Georg fled from Boxberg with 70 cavalry, and the three allies then took possession and established a castle peace among themselves. The castle in Oberschüpf was destroyed and was not rebuilt.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Adolf von Mainz",
+          "personTitle": [
+            "Erzbischof von Mainz"
+          ],
           "date": "1470",
-          "text": "Georg von Rosenberg escaped from Boxberg after a siege by Mainz, the Palatinate and Würzburg."
+          "content": "joined the allied forces that took possession of Boxberg and established a Burgfrieden after Georg fled."
         },
         {
+          "type": "generic",
+          "person": "Friedrich von der Pfalz",
+          "personTitle": [
+            "Kurfürst"
+          ],
           "date": "1470",
-          "text": "The allies Mainz, the Palatinate and Würzburg occupied Boxberg after Georg von Rosenberg escaped."
+          "content": "joined the allied forces that took possession of Boxberg and established a Burgfrieden after Georg fled."
+        },
+        {
+          "type": "generic",
+          "person": "Rudolf von Würzburg",
+          "personTitle": [
+            "Bischof von Würzburg"
+          ],
+          "date": "1470",
+          "content": "joined the allied forces that took possession of Boxberg and established a Burgfrieden after Georg fled."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1470",
+          "content": "fled from Boxberg after a twelve-day bombardment by forces allied from Mainz, the Palatinate, and Würzburg."
         },
         {
           "date": "1470",
@@ -2527,22 +3435,10 @@
       "english": "After long negotiations, the Lords of Rosenberg, mainly through the mediation of Margrave Albrecht of Ansbach and the Bishop of Bamberg, regained Boxberg in 1477. However, they had to promise to receive their \"castle,\" if they were to restore it, as a fief from the three allied princes. Georg von Rosenberg, with the help of his wife Johanna von Eicholzheim, zealously undertook the restoration from 1480 to 1493, though they did not refer to it as a castle due to the terms of the agreement, but rather as a bastion. Georg (also known for a knightly duel with Sigmund von Stetten) soon resumed his old ways and engaged in a feud, particularly in support of his cousin, the daughter of Anselm von Rosenberg (see above). This led to a conflict with the Bishop of Würzburg in 1486, who was ready to march against Boxberg with significant force. However, friendly mediators managed to negotiate an agreement in 1487, in which the Bishop paid 5700 florins, although he estimated his damages at 80,000 florins. See Stocker's Boxberg p. 20 ff. Jahresheft 1856.",
       "facts": [
         {
-          "date": "1477",
-          "text": "The von Rosenberg regained Boxberg through mediation including that of Margrave Albrecht von Ansbach and the bishop of Bamberg."
-        },
-        {
           "type": "spouse",
           "person": "Georg von Rosenberg",
           "of": "Johanna von Eicholzheim",
           "date": "1480"
-        },
-        {
-          "date": "1480",
-          "text": "Georg von Rosenberg began rebuilding Boxberg with the assistance of his wife Johanna von Eicholzheim."
-        },
-        {
-          "date": "1486",
-          "text": "Georg von Rosenberg feuded with the bishopric of Würzburg over the claims of his Base, Anselm von Rosenberg’s daughter."
         },
         {
           "type": "kin",
@@ -2550,6 +3446,22 @@
           "of": "Kunigunde von Rosenberg",
           "term": "Base",
           "date": "1486"
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1480",
+          "content": "began restoring Boxberg with the assistance of his wife Johanna von Eicholzheim."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1486",
+          "content": "feuded with the bishopric of Würzburg over claims concerning his cousin, the daughter of Anselm von Rosenberg."
+        },
+        {
+          "date": "1477",
+          "text": "The von Rosenberg regained Boxberg through mediation including that of Margrave Albrecht von Ansbach and the bishop of Bamberg."
         },
         {
           "date": "1487",
@@ -2561,22 +3473,6 @@
       "german": "Jörg v. R. hat 1480 Erlaubniß bekommen, auf seine würzb. Lehengüter zu Rosenberg 400 fl. aufzunehmen (Biedermann Tab. 406, A.) 1488 schlichtete er eine Zwietracht zwischen Herrn Philipp sen. v. Weinsberg und den Truchsessen von Baldersheim u. a. wegen Aub. Er war in der Rittergesellschaft des Einhorns (Unterfränkisch. Archiv XIX, 2. S. 196) und auf mehreren Turnieren jener Zeit. 1500 war er in Fehde mit dem Grafen Asmus v. Wertheim. 1502 half er dem Markgrafen Casimir gegen Nürnberg und kämpfte im bayerischen Erbfolgekrieg auf pfälzischer Seite 1504. 1509 heißt Osanna geb. v. Eicholzheim Herrn Georg v. R. zu Boxberg, Ritters, verlassene Wittwe; sie hatten keine Kinder.",
       "english": "In 1480, Jörg von Rosenberg received permission to take a loan of 400 florins on his Würzburg fiefs in Rosenberg (Biedermann, Table 406, A.). In 1488, he mediated a dispute between Lord Philipp der Ältere von Weinsberg and the Truchsesses of Baldersheim and others concerning Aub. He was a member of the Society of the Unicorn (Unterfränkisches Archiv XIX, 2, p. 196) and participated in several tournaments of that time. In 1500, he was in a feud with Count Asmus von Wertheim. In 1502, he supported Margrave Casimir against Nuremberg and fought on the Palatine side in the Bavarian Succession War in 1504. In 1509, Osanna, née von Eicholzheim, was referred to as the widow of Lord Georg von Rosenberg zu Boxberg, Ritter; they had no children.",
       "facts": [
-        {
-          "date": "1488",
-          "text": "Jörg von Rosenberg settled a dispute between Philipp von Weinsberg der Ältere and the Truchsessen von Baldersheim concerning Aub."
-        },
-        {
-          "date": "1500",
-          "text": "Jörg von Rosenberg feuded with Count Asmus von Wertheim."
-        },
-        {
-          "date": "1502",
-          "text": "Jörg von Rosenberg assisted Margrave Kasimir against Nürnberg."
-        },
-        {
-          "date": "1504",
-          "text": "Jörg von Rosenberg fought on the Palatinate side in the Bavarian War of Succession."
-        },
         {
           "type": "spouse",
           "person": "Georg von Rosenberg",
@@ -2597,6 +3493,30 @@
             "Ritter",
             "zu Boxberg"
           ]
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "date": "1488",
+          "content": "mediated a dispute between Philipp von Weinsberg der Ältere and the Truchsessen von Baldersheim and others concerning Aub."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "date": "1500",
+          "content": "was in a feud with Count Asmus von Wertheim."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "date": "1502",
+          "content": "assisted Margrave Casimir against Nuremberg."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "date": "1504",
+          "content": "fought on the Palatinate side in the War of the Bavarian Succession."
         }
       ]
     },
@@ -2604,26 +3524,6 @@
       "german": "Der Bruder Arnold erscheint etliche mal in Baldersheimischen Urkunden, z. B. 1478 und war auch in der Gesellschaft des Einhorns. Er nahm Theil an der Fehde gegen Würzburg 1487; 1498 machte er mit Conrad von Dottenheim einen Vertrag wegen des Schlosses Schüpf, dt. zu Freiburg im Breisgau. 1509 hat er seine würzb. Lehen empfangen, nämlich 1/4 an Schloß und Stadt Rosenberg; als Ältester der Familie aber empfing er die Kirchfäße und 1/4 Dorf Bofsheim. 1512 verschieb er den Herren Zeißolf und Leonhard v. R. als seinen Bürgen gegen Hans v. Rosenberg zu ihrer Schadloshaltung 700 fl. auf seinen Theil von Rosenberg, welchen er auch einmal dem Dechanten zu Mosbach für 1000 fl. verschrieben hat; s. Biedermann T. 406, B. Als seine Gemahlin wird genannt Anna von Dottenheim, Tochter Conrads v. D., des Letzten dieser Familie. Jedenfalls hinterließ Arnold 4 Söhne: Hans Thomas (der Sickingens Helfer gegen Worms gewesen war 1516), Hans Melchior, Hans Ulrich und Hans Kaspar, welche mit ihren Vettern zu Boxberg nach heftigen Händeln 1518 gesöhnt wurden in Betreff des Mitbesitzes von Boxberg. Die 3 ersten wurden aber in die Händel des Thomas v. Absberg verwickelt; das Heer des schwäbischen Bundes unter Anführung Georgs Truchsess v. Waldburg zog des wegen auch gegen Boxberg, das die Hrn. v. Rosenberg mit ihren Reißigen verließen. In der Burg fand sich reiche Beute; sie wurde ausgebrannt und dem Kurfürsten von der Pfalz als Lehenserben überlassen gegen Kriegskostenentschädigung von 5000 fl.; s. Stockers Boxberg S. 26 ff.",
       "english": "Arnold, the brother, appears several times in Baldersheim documents, such as in 1478, and was also a member of the Society of the Unicorn. He participated in the feud against Würzburg in 1487; in 1498, he made an agreement with Konrad von Dottenheim regarding the castle of Schüpf, dated in Freiburg im Breisgau. In 1509, he received his Würzburg fiefs, namely ¼ of the castle and town of Rosenberg; as the eldest of the family, he also received the church rights and ¼ of the village of Boßheim. In 1512, he assigned the gentlemen Zeißolf and Leonhard von Rosenberg as his guarantors against Hans von Rosenberg for indemnification of 700 florins on his share of Rosenberg, which he had also once mortgaged to the dean of Mosbach for 1000 florins; see Biedermann, Table 406, B. His wife is named as Anna von Dottenheim, daughter of Konrad von Dottenheim, the last of that family. Arnold certainly left behind four sons: Hans Thomas (who had assisted Sickingen against Worms in 1516), Hans Melchior, Hans Ulrich, and Hans Kaspar. These sons were reconciled with their cousins in Boxberg in 1518 after intense disputes regarding the joint ownership of Boxberg. However, the first three became entangled in the affairs of Thomas von Absberg; the army of the Swabian League, led by Georg Truchsess von Waldburg, therefore marched against Boxberg, which the Lords of Rosenberg abandoned with their cavalry. The castle yielded rich spoils; it was burned down and handed over to the Elector of the Palatinate as the feudal heir in exchange for war compensation of 5000 florins; see Stocker's Boxberg p. 26 ff.",
       "facts": [
-        {
-          "date": "1498",
-          "text": "Arnold von Rosenberg and Konrad von Dottenheim made an agreement concerning Schloss Schüpf."
-        },
-        {
-          "date": "1512",
-          "text": "Zeisolf von Rosenberg was Arnold von Rosenberg’s surety against Hans von Rosenberg."
-        },
-        {
-          "date": "1512",
-          "text": "Leonhard von Rosenberg was Arnold von Rosenberg’s surety against Hans von Rosenberg."
-        },
-        {
-          "date": "1509",
-          "text": "Arnold von Rosenberg received a quarter of castle and town Rosenberg, a quarter of Bofsheim and the family’s patronage rights as Würzburg fiefs."
-        },
-        {
-          "date": "1518",
-          "text": "Hans Thomas, Hans Melchior, Hans Ulrich and Hans Kaspar von Rosenberg reached an agreement with their Vettern concerning co-possession of Boxberg."
-        },
         {
           "type": "parent",
           "person": "Arnold von Rosenberg",
@@ -2647,6 +3547,80 @@
           "person": "Arnold von Rosenberg",
           "of": "Hans Kaspar von Rosenberg",
           "date": "1518"
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "date": "1498",
+          "content": "made an agreement with Konrad von Dottenheim concerning Schüpf Castle."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "date": "1509",
+          "content": "received a quarter share of Rosenberg Castle and town as Würzburg fiefs."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "date": "1509",
+          "content": "received the church rights and a quarter of Bofsheim as Würzburg fiefs as the eldest of his family."
+        },
+        {
+          "type": "parent",
+          "person": "Arnold von Rosenberg",
+          "of": "Hans Thomas von Rosenberg",
+          "date": "1518"
+        },
+        {
+          "type": "generic",
+          "person": "Hans Thomas von Rosenberg",
+          "date": "1518",
+          "content": "reconciled with his cousins over the joint ownership of Boxberg."
+        },
+        {
+          "type": "parent",
+          "person": "Arnold von Rosenberg",
+          "of": "Hans Melchior von Rosenberg",
+          "date": "1518"
+        },
+        {
+          "type": "generic",
+          "person": "Hans Melchior von Rosenberg",
+          "date": "1518",
+          "content": "reconciled with his cousins over the joint ownership of Boxberg."
+        },
+        {
+          "type": "parent",
+          "person": "Arnold von Rosenberg",
+          "of": "Hans Ulrich von Rosenberg",
+          "date": "1518"
+        },
+        {
+          "type": "generic",
+          "person": "Hans Ulrich von Rosenberg",
+          "date": "1518",
+          "content": "reconciled with his cousins over the joint ownership of Boxberg."
+        },
+        {
+          "type": "parent",
+          "person": "Arnold von Rosenberg",
+          "of": "Hans Kaspar von Rosenberg",
+          "date": "1518"
+        },
+        {
+          "type": "generic",
+          "person": "Hans Kaspar von Rosenberg",
+          "date": "1518",
+          "content": "reconciled with his cousins over the joint ownership of Boxberg."
+        },
+        {
+          "date": "1512",
+          "text": "Zeisolf von Rosenberg was Arnold von Rosenberg’s surety against Hans von Rosenberg."
+        },
+        {
+          "date": "1512",
+          "text": "Leonhard von Rosenberg was Arnold von Rosenberg’s surety against Hans von Rosenberg."
         }
       ]
     },
@@ -2667,22 +3641,31 @@
       "english": "Georg I's son, Michael, who was not yet of age in 1459, appears several times in Baldersheim documents, such as in 1479 and 1496; he was also a member of the Society of the Unicorn. In 1481, Michel mortgaged his village of Schweigern, along with the Seehof, for 2000 florins to the Palatinate; 1856, p. 39. In 1484, the three brothers issued a promissory note for 1000 florins at 5%, and Michael exchanged the chapel garden at Boxberg with his brothers for a homestead; Stocker p. 19. On June 8, 1489, Hans Landgrave of Leuchtenberg enfeoffed Michael von Rosenberg zu Boxberg with the estate of Mepstetten (Impfingen a. T.) and the wine tithe in Marbach, as both had come to him by grace from our dear ancestor, Count Philip of Rhineg; however, it was to remain harmless to us and the Lordship of Grünsfeld. Mone IX, p. 316 f.",
       "facts": [
         {
-          "date": "1481",
-          "text": "Michael von Rosenberg pledged his village Schweigern with the Seehof to the Palatinate."
-        },
-        {
           "type": "parent",
           "person": "Georg von Rosenberg",
           "of": "Michael von Rosenberg",
           "date": "1459"
         },
         {
-          "date": "1484",
-          "text": "Michael von Rosenberg exchanged the chapel garden at Boxberg with his brothers for a Hofstatt."
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "date": "1481",
+          "content": "pledged Schweigern and the Seehof to the Palatinate."
         },
         {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "date": "1484",
+          "content": "exchanged the chapel garden at Boxberg with his brothers for a homestead."
+        },
+        {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ],
           "date": "1489-06-08",
-          "text": "Landgrave Johann von Leuchtenberg enfeoffed Michael von Rosenberg zu Boxberg with the farm at Impfingen and the wine tithe at Marbach."
+          "content": "was enfeoffed by Landgrave Johann von Leuchtenberg with the farm at Mepstetten (Impfingen) and the wine tithe at Marbach."
         }
       ]
     },
@@ -2698,14 +3681,16 @@
           "date": "1508"
         },
         {
-          "date": "1508",
-          "text": "Georg von Rosenberg, son of Michael, received an eighth of all tithes at Oberlauda from the bishop of Würzburg as his father had held it."
-        },
-        {
           "type": "death",
           "person": "Michael von Rosenberg",
-          "diedBefore": "1509",
-          "date": "1508"
+          "date": "1508",
+          "diedOn": "1508"
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1508",
+          "content": "received an eighth of all tithes at Oberlauda from the bishop of Würzburg, as his father Michael had held it."
         }
       ]
     },
@@ -2723,8 +3708,31 @@
           "date": "1516"
         },
         {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
           "date": "1516",
-          "text": "Hans von Rosenberg sealed Georg von Rosenberg zu Boxberg’s debt to the parish benefice at Jagsthausen."
+          "content": "signed Georg von Rosenberg zu Boxberg’s acknowledgment of a debt to the parish benefice at Jagsthausen."
+        },
+        {
+          "type": "sibling",
+          "person": "Georg von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ],
+          "of": "Eberhard von Rosenberg",
+          "ofTitle": [
+            "VIII"
+          ],
+          "date": "1516"
+        },
+        {
+          "type": "sibling",
+          "person": "Hans von Rosenberg",
+          "of": "Eberhard von Rosenberg",
+          "ofTitle": [
+            "VIII"
+          ],
+          "date": "1516"
         }
       ]
     },
@@ -2733,18 +3741,36 @@
       "english": "Before we proceed to the next generation, it should be noted that a Friedrich von Rosenberg appears several times, who also likely belonged to the Boxberg line. In 1491, Friedrich von Rosenberg zu Boxberg sealed a document from Königshofen; see 1856, p. 62. In 1494, Friedrich von Rosenberg issued a reversal to the Palatinate regarding the redemption of the tithe in Schweigern, which had been pledged for 1000 florins; Stocker, p. 55. Finally, according to the document shared in 1867, p. 599, Friedrich von Rosenberg was the heir of Jörg II and, instead of paying the 1240 florins with which he was supposed to compensate the heirs of Jörg's wife, the Eicholzheimer siblings, he gave his share of the village of Schillingstat—on the condition of redemption. We can only reconcile all this by assuming that Friedrich was an otherwise unknown additional brother of Jörg, who inherited Jörg's allodial property, while the other brothers and their descendants inherited the fiefs.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Friedrich von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ],
           "date": "1491",
-          "text": "Friedrich von Rosenberg zu Boxberg sealed a Königshofen document."
+          "content": "sealed a document from Königshofen."
         },
         {
+          "type": "generic",
+          "person": "Friedrich von Rosenberg",
           "date": "1494",
-          "text": "Friedrich von Rosenberg acknowledged an arrangement with the Palatinate concerning redemption of the pledged tithe at Schweigern."
+          "content": "issued a reversal to the Palatinate concerning redemption of the tithe at Schweigern that had been pledged."
         }
       ],
       "guesses": [
         {
+          "type": "sibling",
+          "person": "Friedrich von Rosenberg",
+          "of": "Jörg von Rosenberg",
+          "ofTitle": [
+            "II"
+          ],
+          "date": "1494"
+        },
+        {
+          "type": "generic",
+          "person": "Friedrich von Rosenberg",
           "date": "1494",
-          "text": "It is possible that Friedrich von Rosenberg was a previously unknown brother of Jörg and inherited Jörg’s allodial property, while other brothers and their descendants inherited the fiefs."
+          "content": "may have inherited Jörg II’s allodial property while Jörg’s other brothers and their descendants inherited the fiefs."
         }
       ]
     },
@@ -2771,20 +3797,58 @@
           "date": "1513"
         },
         {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
           "date": "1513",
-          "text": "Georg and Hans von Rosenberg and Heinz Rüdt von Bödigheim as guardian of their brother Eberhard transferred their village of Hohenstadt to the bishop of Würzburg as a fief."
+          "content": "joined his brother Hans and Heinrich Rüd von Bödigheim, curator of their brother Eberhard, in enfeoffing Hohenstadt to the bishop of Würzburg."
         },
         {
+          "type": "generic",
+          "person": "Heinrich Rüd von Bödigheim",
           "date": "1513",
-          "text": "Georg von Rosenberg received half of Hohenstadt as a Würzburg fief."
+          "content": "acted as curator for Eberhard von Rosenberg when Georg and Hans von Rosenberg enfeoffed Hohenstadt to the bishop of Würzburg."
         },
         {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1513",
+          "content": "received half of Hohenstadt as a fief from the bishop of Würzburg."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
           "date": "1520",
-          "text": "Hans von Rosenberg received half of Hohenstadt as a Würzburg fief."
+          "content": "received half of Hohenstadt as a fief from the bishop of Würzburg."
         },
         {
+          "type": "generic",
+          "person": "Friedrich von der Pfalz",
+          "personTitle": [
+            "Pfalzgraf"
+          ],
           "date": "1518",
-          "text": "Pfalzgraf Friedrich and Margrave Kasimir mediated an agreement between Hans Thomas von Rosenberg and his brothers and Georg von Rosenberg and his brothers and Vettern concerning Boxberg."
+          "content": "mediated an agreement between Hans Thomas von Rosenberg and his brothers and Georg von Rosenberg and his brothers and cousins concerning their return to Boxberg, its town, rents, appurtenances, and a shared Burgfrieden."
+        },
+        {
+          "type": "generic",
+          "person": "Kasimir von Brandenburg",
+          "personTitle": [
+            "Markgraf"
+          ],
+          "date": "1518",
+          "content": "mediated an agreement between Hans Thomas von Rosenberg and his brothers and Georg von Rosenberg and his brothers and cousins concerning their return to Boxberg, its town, rents, appurtenances, and a shared Burgfrieden."
+        },
+        {
+          "type": "generic",
+          "person": "Hans Thomas von Rosenberg",
+          "date": "1518",
+          "content": "was party, with his brothers, to an agreement with Georg von Rosenberg and his brothers and cousins concerning a return to Boxberg, its town, rents, appurtenances, and a shared Burgfrieden."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1518",
+          "content": "was party, with his brothers and cousins, to an agreement with Hans Thomas von Rosenberg and his brothers concerning their return to Boxberg, its town, rents, appurtenances, and a shared Burgfrieden."
         }
       ]
     },
@@ -2793,8 +3857,10 @@
       "english": "In 1525, Georg von Rosenberg was among the defenders of the Würzburg Castle Frauenberg against the peasants.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
           "date": "1525",
-          "text": "Georg von Rosenberg defended Schloss Frauenberg at Würzburg against the peasants."
+          "content": "defended Frauenberg Castle in Würzburg against the peasants."
         }
       ]
     },
@@ -2803,34 +3869,61 @@
       "english": "Georg III seems to have predominantly resided in the small castle at Schweigern. In 1516, he reached an agreement with the community that they should pay him 140 florins annually instead of the owed so-called Adelsheim feudal labor and dues. In 1521, he renewed the village ordinances; in 1524, he granted the Electoral Palatinate extensive rights of requisition in his castle at Schweigern; in 1525, he mortgaged his half of the village to the Palatinate and promised to redeem the 700 florins borrowed against the tithe; in 1526, he assigned an additional 70 florins to the Palatinate on his share; and finally, in 1535, Elector Ludwig granted Georg von Rosenberg his castle Winzingen (?) on the condition of redemption, with the promise not to redeem it during the lifetime of Georg, his wife, and his son Michael. In return, Georg handed over his castle and half of the village of Schweigern, along with the Seehof and the small village of Windisch-Buch, as payment to the Elector; see Stocker's Boxberg p. 56. With this, it appears that Georg left our region.",
       "facts": [
         {
-          "date": "1516",
-          "text": "Georg von Rosenberg agreed with the community of Schweigern concerning its obligations to him."
-        },
-        {
-          "date": "1521",
-          "text": "Georg von Rosenberg renewed the village ordinance at Schweigern."
-        },
-        {
-          "date": "1524",
-          "text": "Georg von Rosenberg granted the Palatinate rights over his castle at Schweigern."
-        },
-        {
-          "date": "1525",
-          "text": "Georg von Rosenberg pledged his half of the village of Schweigern to the Palatinate."
-        },
-        {
-          "date": "1535",
-          "text": "Elector Ludwig of the Palatinate transferred a castle, recorded uncertainly as Winzingen, to Georg von Rosenberg subject to redemption."
-        },
-        {
           "type": "parent",
           "person": "Georg von Rosenberg",
           "of": "Michael von Rosenberg",
           "date": "1535"
         },
         {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1516",
+          "content": "agreed with the community of Schweigern that it would pay him 140 florins annually in place of its Adelsheim feudal labor and dues."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1521",
+          "content": "renewed the village ordinance at Schweigern."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1524",
+          "content": "granted the Electoral Palatinate extensive rights of requisition in his castle at Schweigern."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1525",
+          "content": "pledged his half of Schweigern to the Palatinate and promised redemption of the 700 florins borrowed against the tithe."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1526",
+          "content": "pledged an additional 70 florins to the Palatinate against his share."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
           "date": "1535",
-          "text": "Georg von Rosenberg transferred his castle and half the village of Schweigern, the Seehof and Windischbuch to Elector Ludwig of the Palatinate."
+          "content": "received a castle identified uncertainly as Winzingen from Elector Ludwig on condition of redemption; Ludwig promised not to redeem it during Georg’s, his wife’s, or his son Michael’s lifetime."
+        },
+        {
+          "type": "generic",
+          "person": "Ludwig von der Pfalz",
+          "personTitle": [
+            "Kurfürst"
+          ],
+          "date": "1535",
+          "content": "granted Georg von Rosenberg a castle identified uncertainly as Winzingen on condition of redemption, promising not to redeem it during Georg’s, his wife’s, or his son Michael’s lifetime."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1535",
+          "content": "transferred his castle and half of Schweigern, the Seehof, and Windisch-Buch to Elector Ludwig as payment."
         }
       ]
     },
@@ -2839,14 +3932,19 @@
       "english": "His son, Michael II, is said to have appeared in 1541, and Biedermann also attributes a son named Georg to him; Table 404, A. However, it is more likely that it was Georg III who, in November 1540, renounced the burgrave's claim regarding Sachsen; see the deluxe edition of Götz von Berlichingen p. 293. According to a registration note, Elector Ludwig in 1540 mortgaged 700 florins to Jörg von Rosenberg against the pledge of ½ of the wine tithe in Schweigern. According to Würzburg fief notes, in 1553, Albrecht von Rosenberg zu Boxberg received the entire village of Hohenstat, of which he had previously owned half, and the other half now fell to him through the death of Michael von Rosenberg. This confirms that Michael II died at that time without surviving heirs to the fiefs.",
       "facts": [
         {
-          "date": "1553",
-          "text": "Albrecht von Rosenberg zu Boxberg received the whole village of Hohenstadt, including Michael von Rosenberg’s former half."
-        },
-        {
           "type": "death",
           "person": "Michael von Rosenberg",
           "diedBefore": "1554",
           "date": "1553"
+        },
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ],
+          "date": "1553",
+          "content": "received the whole village of Hohenstadt, including the half that had fallen to him after Michael von Rosenberg died without surviving fief heirs."
         }
       ]
     },
@@ -2855,14 +3953,16 @@
       "english": "The brother Hans is rarely mentioned in documents; in 1513, he was of age, and by 1537, he had died, as his nephew Albrecht received half of the village of Hohenstat that year, which had come to him from his cousin Hans. This also proves his death without heirs to the fiefs; other properties were inherited by his brother Georg III.",
       "guesses": [
         {
-          "date": "1537",
-          "text": "Albrecht’s receipt of half of Hohenstadt from his Vetter Hans may support the proposed date."
-        },
-        {
           "type": "death",
           "person": "Hans von Rosenberg",
           "diedBefore": "1538",
           "date": "1537"
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "date": "1537",
+          "content": "may have died by this year, as his nephew Albrecht’s receipt of half of Hohenstadt from him suggests."
         }
       ]
     },
@@ -2911,17 +4011,14 @@
       "facts": [
         {
           "date": "1519",
-          "text": "The source identifies St. Gall’s Day as the date; Eberhard von Rosenberg was buried in Stuttgart."
-        },
-        {
-          "date": "1568-11-26",
-          "text": "Anna von Dienheim was the widow of Eberhard von Rosenberg."
+          "text": "Eberhard von Rosenberg died in Stuttgart on St. Gall’s Day in 1519."
         },
         {
           "type": "spouse",
           "person": "Eberhard von Rosenberg",
           "of": "Anna von Dienheim",
-          "date": "1519"
+          "date": "1519",
+          "personDeceased": true
         },
         {
           "type": "parent",
@@ -2947,6 +4044,14 @@
           "person": "Anna von Dienheim",
           "diedOn": "1568-11-26",
           "date": "1568-11-26"
+        },
+        {
+          "type": "spouse",
+          "person": "Eberhard von Rosenberg",
+          "personDeceased": true,
+          "of": "Anna von Dienheim",
+          "ofDeceased": true,
+          "date": "1568-11-26"
         }
       ]
     },
@@ -2961,8 +4066,13 @@
       ],
       "guesses": [
         {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "V"
+          ],
           "date": "1437",
-          "text": "The unnamed monument in Wölchingen may depict Eberhard von Rosenberg and his wife von Handschuhsheim, based on the arms."
+          "content": "may be depicted with his wife, a member of the von Handschuhsheim family, on the unnamed Wölchingen monument, based on the coat of arms."
         }
       ]
     },
@@ -2971,32 +4081,54 @@
       "english": "We first found a note about Eberhard's son Albrecht in 1526, regarding his consent (likely that of the guardians) to provide for his mother in Unterschüpf and to grant her a morning gift. In 1534, he first received his Hohenlohe fiefs—two parts of the tithe in Neidlingen and Dach, along with a farm in Horrenbach—and again in 1553, 1555, 1561, 1562, and 1570.",
       "facts": [
         {
-          "date": "1526",
-          "text": "Albrecht von Rosenberg consented to provision for his mother at Unterschüpf."
+          "type": "parent",
+          "person": "Eberhard von Rosenberg",
+          "of": "Albrecht von Rosenberg",
+          "date": "1526"
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1534",
-          "text": "Albrecht von Rosenberg received Hohenlohe fiefs including shares of tithes at Neidlingen and Dach and a farm at Horrenbach."
+          "content": "received two shares of the tithes at Neidlingen and Dach, together with a farm at Horrenbach, as Hohenlohe fiefs."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1553",
-          "text": "Albrecht von Rosenberg received Hohenlohe fiefs including shares of tithes at Neidlingen and Dach and a farm at Horrenbach."
+          "content": "received two shares of the tithes at Neidlingen and Dach, together with a farm at Horrenbach, as Hohenlohe fiefs."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1555",
-          "text": "Albrecht von Rosenberg received Hohenlohe fiefs including shares of tithes at Neidlingen and Dach and a farm at Horrenbach."
+          "content": "received two shares of the tithes at Neidlingen and Dach, together with a farm at Horrenbach, as Hohenlohe fiefs."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1561",
-          "text": "Albrecht von Rosenberg received Hohenlohe fiefs including shares of tithes at Neidlingen and Dach and a farm at Horrenbach."
+          "content": "received two shares of the tithes at Neidlingen and Dach, together with a farm at Horrenbach, as Hohenlohe fiefs."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1562",
-          "text": "Albrecht von Rosenberg received Hohenlohe fiefs including shares of tithes at Neidlingen and Dach and a farm at Horrenbach."
+          "content": "received two shares of the tithes at Neidlingen and Dach, together with a farm at Horrenbach, as Hohenlohe fiefs."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1570",
-          "text": "Albrecht von Rosenberg received Hohenlohe fiefs including shares of tithes at Neidlingen and Dach and a farm at Horrenbach."
+          "content": "received two shares of the tithes at Neidlingen and Dach, together with a farm at Horrenbach, as Hohenlohe fiefs."
+        }
+      ],
+      "guesses": [
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "date": "1526",
+          "content": "may have consented, or his guardians may have consented, to provide for his mother at Unterschüpf and grant her a morning gift."
         }
       ]
     },
@@ -3009,12 +4141,22 @@
       "english": "Albrecht von Rosenberg then declared to the cities of the League on December 21, 1536, that since the Elector Palatine had continually postponed and offered excuses, he was now turning to them again, requesting their assistance in compensating him for his damages, failing which he would take action against them and their allies with fire and plunder. Endless negotiations followed; individual cities, such as Heilbronn, which was closest to and therefore most threatened by Rosenberg, were inclined to make peace with him, at least for their part. However, Albrecht's patience ran out, and as a bold warrior, he took justice into his own hands in the old feudal manner. He ambushed and captured a respected councilor, Hieronymus Baumgärtner, who was returning home from the Reichstag in Speyer in 1544, unconcerned and under the protection of an imperial safe-conduct letter, between Sinsheim and Wimpfen (in a forest near Treschklingen). The captive was moved between various castles and fortresses, as Albrecht intended to force the Nurembergers to assist him in regaining possession of Boxberg and to compensate him for all the lost revenues and so forth.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1536-12-21",
-          "text": "Albrecht von Rosenberg asked the cities of the former Swabian League to help secure compensation for his claims against the Palatinate."
+          "content": "asked the cities of the Swabian League to help obtain compensation for his claims against the Palatinate."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1544",
-          "text": "Albrecht von Rosenberg captured the Nürnberg councillor Hieronymus Baumgartner between Sinsheim and Wimpfen."
+          "content": "captured the Nuremberg councillor Hieronymus Baumgartner between Sinsheim and Wimpfen despite his imperial safe-conduct."
+        },
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "date": "1544",
+          "content": "moved Hieronymus Baumgartner among various castles to compel Nuremberg to help restore his possession of Boxberg and compensate his lost revenues."
         }
       ]
     },
@@ -3023,8 +4165,10 @@
       "english": "Nuremberg made diligent efforts to secure the release of its councilor, and in 1545, it seemed that a settlement might finally be reached. However, Albrecht's demands were too great for the cities, and they preferred to prepare themselves to defend against his attacks. The cities' cavalry scoured the land for Rosenberg's forces, and Nuremberg's scouts sought the hidden and frequently changed location where Baumgärtner was being held. On one occasion, an army of 600 men with four field pieces came to Haldenbergstetten, where, in their frustration at finding nothing, they vented their anger on the castle. Nuremberg also appealed to the Emperor, who issued an order for the prisoner to be delivered under threat of outlawry, and various great lords took on the role of mediators, which led to Albrecht himself being granted safe conduct to the Reichstag in Worms—and indeed, the imperial justice system was so prompt that Nuremberg had to pay 10,000 gold gulden to ransom both Baumgärtner and Christoph Kreter, who had also been captured in the meantime! 1545.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Hieronymus Baumgartner",
           "date": "1545",
-          "text": "Nürnberg redeemed Hieronymus Baumgartner and helped redeem Christoph Kreter after their capture in connection with Albrecht von Rosenberg’s dispute."
+          "content": "was ransomed by Nuremberg for 10,000 gold gulden together with Christoph Kreter."
         }
       ]
     },
@@ -3037,12 +4181,16 @@
       "english": "However, Albrecht had become a very capable officer and had earned the Emperor's favor, particularly during the Schmalkaldic War, while the Elector of the Palatinate had fallen out of favor. As a result, an imperial military force took possession of Boxberg and handed over the town and castle to the plaintiff, Albrecht, in 1547. Albrecht immediately began to rebuild the castle, which had been in ruins since 1523, as attested by a stone inscription in the wall for many years.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1547",
-          "text": "Imperial troops transferred town and castle Boxberg to Albrecht von Rosenberg."
+          "content": "received Boxberg town and castle from the imperial troops."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1547",
-          "text": "Albrecht von Rosenberg began rebuilding Schloss Boxberg."
+          "content": "began rebuilding Boxberg Castle, which had remained in ruins since 1523."
         }
       ]
     },
@@ -3051,8 +4199,13 @@
       "english": "The Elector Palatine then filed a lawsuit; however, Albrecht, the brave cavalry colonel who around this time also received the title of knight, had the opportunity to render a very significant personal service to the Emperor. When Charles V was forced to flee quickly from Tyrol after being ambushed by Elector Maurice of Saxony in 1552, Rosenberg accompanied and protected him, and it is said that the Emperor wore Rosenberg's colors at the time, as if he were his squire.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Reiterobrist"
+          ],
           "date": "1552",
-          "text": "Albrecht von Rosenberg accompanied Emperor Karl V during his flight from Tirol."
+          "content": "accompanied Emperor Charles V protectively during his flight from Tyrol."
         }
       ]
     },
@@ -3077,12 +4230,16 @@
       "english": "Emperor Ferdinand himself also took an interest in the entire dispute and in 1553 brought about a settlement with the cities of the former Swabian League in Augsburg, in which these cities paid a little over 41,000 florins for all the damages Albrecht had suffered. However, the lawsuit with the Palatinate continued, and Albrecht was deprived of Boxberg, leading him to build a modern castle—still standing today—in Unterschüpf, and in 1561 he sold his share in Boxberg to the Elector for 2,400 florins and the transfer of the cent to Schillingstadt, Sachsenflur, Epplingen, and Dainbach, which belonged to the Lordship of Schüpf. Albrecht was also enfeoffed with half of Bobstadt.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1553",
-          "text": "Emperor Ferdinand brought about a settlement at Augsburg between Albrecht von Rosenberg and the cities of the former Swabian League."
+          "content": "obtained a settlement at Augsburg with the cities of the former Swabian League for the damages he had suffered, through Emperor Ferdinand’s intervention."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1561",
-          "text": "Albrecht von Rosenberg sold his share of Boxberg to the Elector Palatine."
+          "content": "sold his share of Boxberg to the Elector Palatine in exchange for money and the Cent rights at Schillingstadt, Sachsenflur, Epplingen, and Dainbach."
         }
       ]
     },
@@ -3099,20 +4256,28 @@
       "english": "This Lord von Rüd sold his Mainz fief, along with the Limburg property, in 1561 to our Albrecht von Rosenberg, who thereby became the sole lord of Schüpf and also acquired the parish fief from the Lords Counts of Hohenlohe. He similarly owned Buch am Ahorn in 1560; in 1559, he bought ¼ of the tithe in Epplingen from two Dottenheim daughters; in 1561, a farm in Sachsenflur, a Würzburg fief.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Eberhard Rüd von Collenberg",
           "date": "1561",
-          "text": "Eberhard Rüdt von Collenberg sold his Mainz and Limburg fiefs at Schüpf and Sachsenflur to Albrecht von Rosenberg."
+          "content": "sold his Mainz and Limburg fiefs at Schüpf and Sachsenflur to Albrecht von Rosenberg."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1560",
-          "text": "Albrecht von Rosenberg held Buch am Ahorn."
+          "content": "held Buch am Ahorn."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1559",
-          "text": "Albrecht von Rosenberg bought a quarter of the tithe at Epplingen from two daughters of the von Dottenheim."
+          "content": "bought a quarter of the tithe at Epplingen from two daughters of the von Dottenheim."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1561",
-          "text": "Albrecht von Rosenberg received a farm at Sachsenflur as a Würzburg fief."
+          "content": "held a farm at Sachsenflur as a Würzburg fief."
         }
       ]
     },
@@ -3125,16 +4290,25 @@
       "english": "1555: Albrecht von Rosenberg received ½ of the wine tithe in Oberschüpf, which he had bought from Albrecht von Biberehrn, as well as (a knightly fief in) 1561 and 1562.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1555",
-          "text": "Albrecht von Rosenberg received half the wine tithe at Oberschüpf as a fief, having bought it from Albrecht von Biberehrn."
+          "content": "received half of the wine tithe at Oberschüpf as a fief, after buying it from Albrecht von Biberehrn."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1561",
-          "text": "Albrecht von Rosenberg, Ritter, received half the wine tithe at Oberschüpf as a fief."
+          "content": "again received half of the wine tithe at Oberschüpf as a fief."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "date": "1562",
-          "text": "Albrecht von Rosenberg received half the wine tithe at Oberschüpf as a fief."
+          "content": "received half of the wine tithe at Oberschüpf as a fief."
         }
       ]
     },
@@ -3151,12 +4325,16 @@
           "date": "1561"
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1561",
-          "text": "Albrecht von Rosenberg, Ritter, received the patronage of the parish at Unterschüpf."
+          "content": "received the right of presentation to the parish at Unterschüpf."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1561",
-          "text": "Albrecht von Rosenberg, Ritter, received rents from a farm at Klepsheim formerly held by Dietrich von Rosenberg."
+          "content": "received rents from a farm at Klepsheim formerly held by Dietrich von Rosenberg."
         }
       ]
     },
@@ -3169,20 +4347,28 @@
       "english": "So also in 1562, and in addition, two Huben (farms) and other incomes in Ahlringen, Unter- and Oberschüpf, as well as the patronage rights of the morning masses in Unterschüpf and Schwaigern; similarly in 1570.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1562",
-          "text": "Albrecht von Rosenberg received the patronage of the early masses at Unterschüpf and Schweigern."
+          "content": "received the patronage rights for the early masses at Unterschüpf and Schweigern."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1562",
-          "text": "Albrecht von Rosenberg received two Hufen and rents at Ahlringen, Unterschüpf and Oberschüpf."
+          "content": "received two Hufen and other rents at Ahlringen, Unterschüpf, and Oberschüpf."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1570",
-          "text": "Albrecht von Rosenberg received two Hufen and rents at Ahlringen, Unterschüpf and Oberschüpf."
+          "content": "again received the patronage rights for the early masses at Unterschüpf and Schweigern."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1570",
-          "text": "Albrecht von Rosenberg received the patronage of the early masses at Unterschüpf and Schweigern."
+          "content": "again received two Hufen and other rents at Ahlringen, Unterschüpf, and Oberschüpf."
         }
       ]
     },
@@ -3191,10 +4377,6 @@
       "english": "Regarding the Limburg fief, a fief letter was issued on October 15, 1561, by Schent Christof for Albrecht von Rosenberg zu Niedernschüpf, Ritter, who had purchased the Sachsenflur fief from Eberhard Rüd.",
       "facts": [
         {
-          "date": "1561-10-15",
-          "text": "Schenk Christoph von Limburg enfeoffed Albrecht von Rosenberg, Ritter zu Niederschüpf, with the Sachsenflur fief bought from Eberhard Rüdt."
-        },
-        {
           "type": "title",
           "person": "Albrecht von Rosenberg",
           "personTitle": [
@@ -3202,6 +4384,12 @@
             "zu Niederschüpf"
           ],
           "date": "1561-10-15"
+        },
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "date": "1561-10-15",
+          "content": "received a fief letter from Schent Christof von Limburg for the Sachsenflur fief he had bought from Eberhard Rüd."
         }
       ]
     },
@@ -3210,8 +4398,10 @@
       "english": "The possession of Schüpf soon led to conflicts with Kurmainz, which also held fiefdoms in the surrounding area, leading to a contract in 1565 to settle the mutual rights and claims; see 1856, p. 45.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1565",
-          "text": "Albrecht von Rosenberg and Kurmainz made an agreement concerning their respective rights in the Schüpf area."
+          "content": "made an agreement with Kurmainz concerning their respective rights in Schüpf after disputes over the lordship."
         }
       ]
     },
@@ -3224,24 +4414,43 @@
       "english": "In 1557, Albrecht led the soldiers of the Franconian Circle as commander against the Turks in Hungary; in 1562, he accompanied Duke Christoph of Württemberg to Frankfurt for the coronation of Emperor Ferdinand. Albrecht von Rosenberg was particularly well-suited to Duke Christoph because he had since become a very fervent Lutheran; indeed, he also acquired additional patronage rights from Hohenlohe. In 1563, Lord Albrecht von Rosenberg, Ritter, received the patronage of the parishes of Oberbalbach and Dettelsingen, as well as other properties and incomes in Ober- and Unterbalbach and Oberlauda. (Albrecht von Rosenberg, in return, made his 1/4 share of Dettelsingen a Hohenlohe fief.)",
       "facts": [
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1557",
-          "text": "Albrecht von Rosenberg led soldiers of the Franconian Circle to Hungary against the Turks."
+          "content": "led the Franconian Circle’s soldiers in a campaign against the Turks in Hungary."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1562",
-          "text": "Albrecht von Rosenberg accompanied Duke Christoph von Württemberg to Frankfurt for Emperor Ferdinand’s coronation."
+          "content": "accompanied Duke Christoph of Württemberg to Frankfurt for Emperor Ferdinand’s coronation."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "date": "1563",
-          "text": "Albrecht von Rosenberg, Ritter, received the patronage of the parishes at Oberbalbach and Dettelsingen."
+          "content": "received the right of presentation to the parishes at Oberbalbach and Dettelsingen."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "date": "1563",
-          "text": "Albrecht von Rosenberg, Ritter, received goods and rents at Oberbalbach, Unterbalbach and Oberlauda."
+          "content": "received goods and rents at Oberbalbach, Unterbalbach, and Oberlauda."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "date": "1563",
-          "text": "Albrecht von Rosenberg made his quarter of Dettelsingen a Hohenlohe fief."
+          "content": "made his quarter share of Dettelsingen a Hohenlohe fief."
         }
       ]
     },
@@ -3250,16 +4459,22 @@
       "english": "In 1558, Albrecht requested the evangelical Lutheran preacher and pastor Konrad Hochmuth from the Imperial City of Rothenburg to serve at Boxberg. When he moved to Schüpf, he took this cherished clergyman with him and gradually staffed all his parishes with Lutherans. In contrast, the Palatinate had turned to the Reformed Confession and now appointed Reformed clergy in Boxberg and Schweigern, against which Albrecht directed his subjects to attend his churches; for example, he directed the congregation of Epplingen, previously a filial of Schweigern, to Ußingen. In Schüpf, he established a chaplaincy (diaconate) in 1564 (Wibel I, 413 f.) from the income of the dissolved morning masses and assigned it to Epplingen and Dainbach, under protest from the Palatinate (which in 1681 established its own parish in Dainbach). See Stocker p. 78. In 1562, Albrecht organized a colloquium and examination for his clergy, to which Gallus Hartmann of Dehlingen was invited; Wibel I, 386. III, 183. The entire church administration was to be put in proper order.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1558",
-          "text": "Albrecht von Rosenberg requested Konrad Hochmuth from Rothenburg as a Lutheran preacher and pastor for Boxberg."
+          "content": "requested Konrad Hochmuth from Rothenburg as a Lutheran preacher and pastor for Boxberg."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1564",
-          "text": "Albrecht von Rosenberg established a chaplaincy at Schüpf and assigned Epplingen and Dainbach to it."
+          "content": "established a chaplaincy at Schüpf from the revenues of the dissolved early masses and assigned it to Epplingen and Dainbach."
         },
         {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1562",
-          "text": "Albrecht von Rosenberg arranged a colloquium and examination for his clergy, inviting Gallus Hartmann von Dehlingen."
+          "content": "organized a colloquium and examination for his clergy and invited Gallus Hartmann von Dehlingen."
         }
       ]
     },

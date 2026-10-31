@@ -14,7 +14,14 @@
             "Ritter"
           ]
         },
-        "Engelhard von Rosenberg served as arbitrator between Konrad von Bickenbach and Eberhard Schenk von Erbach",
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "served as a mediator between Konrad von Bickenbach and Eberhard Schenk von Erbach.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
         {
           "type": "title",
           "person": "Senant von Rosenberg",
@@ -22,10 +29,30 @@
             "Edelknecht"
           ]
         },
-        "Senant von Rosenberg served as arbitrator between Konrad von Bickenbach and Eberhard Schenk von Erbach",
-        "Engelhard von Rosenberg sealed the arbitration agreement",
-        "Senant von Rosenberg sealed the arbitration agreement",
-        "The printed source spells the surviving sealer’s name differently from the document body, which names Senant von Rosenberg."
+        {
+          "type": "generic",
+          "person": "Senant von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "content": "served as a mediator between Konrad von Bickenbach and Eberhard Schenk von Erbach."
+        },
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "sealed the agreement."
+        },
+        {
+          "type": "generic",
+          "person": "Senant von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "content": "sealed the agreement."
+        }
       ]
     }
   ]

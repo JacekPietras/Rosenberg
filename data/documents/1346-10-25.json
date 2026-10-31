@@ -15,8 +15,16 @@
             "Ritter"
           ]
         },
-        "Eberhard von Rosenberg served as guardian (Vormünder) of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Nicolaus vom Steine, Hans von Randeck, and Hans von Beldersheim",
-        "Eberhard von Rosenberg participated in sale of Viernheim village to Hans (Schultheiß of Weinheim)"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "served as one of the guardians of the Archbishopric of Mainz alongside Kuno II von Falkenstein, Nicolaus vom Steine, Hans von Randeck, and Hans von Beldersheim."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "with the other guardians, sold Viernheim to Hans, reeve of Weinheim."
+        }
       ]
     }
   ]

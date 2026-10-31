@@ -10,11 +10,11 @@
       "german": "Eberhard von Hardheim verkauft an Pfalzgraf Otto von Mosbach alle Gülten und Zinse zu Königheim, Eiersheim, Schweinberg und Rinderfeld, die er von Anna von Rosenberg, Hans von Rosenbergs Ehefrau, gekauft hatte.",
       "english": "Eberhard von Hardheim sold to Count Palatine Otto von Mosbach all the rents and interest in Königheim, Eiersheim, Schweinberg and Rinderfeld, which he had bought from Anna von Rosenberg, Hans von Rosenberg's wife.",
       "facts": [
-        "Eberhard von Hardheim sold Gülten und Zinse at Königheim to Pfalzgraf Otto von Mosbach",
-        "Eberhard von Hardheim sold Gülten und Zinse at Eiersheim to Pfalzgraf Otto von Mosbach",
-        "Eberhard von Hardheim sold Gülten und Zinse at Schweinberg to Pfalzgraf Otto von Mosbach",
-        "Eberhard von Hardheim sold Gülten und Zinse at Rinderfeld to Pfalzgraf Otto von Mosbach",
-        "Eberhard von Hardheim had previously purchased these Gülten und Zinse from Anna von Rosenberg, spouse of Hans von Rosenberg",
+        {
+          "type": "generic",
+          "person": "Eberhard von Hardheim",
+          "content": "sold to Count Palatine Otto von Mosbach all rents and interest at Königheim, Eiersheim, Schweinberg, and Rinderfeld that he had bought from Anna von Rosenberg."
+        },
         {
           "type": "spouse",
           "person": "Anna von Rosenberg",

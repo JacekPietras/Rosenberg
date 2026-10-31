@@ -39,14 +39,26 @@
           "person": "Heinrich von Erligheim",
           "diedBefore": "1389-01-19"
         },
-        "Heinrich von Erligheim had received Bensheim castle as a pledge from Archbishop Adolf of Mainz",
+        {
+          "type": "generic",
+          "person": "Heinrich von Erligheim",
+          "content": "had taken Bensheim Castle as a pledge from Archbishop Adolf von Mainz for 4,000 guilders.",
+          "personTitle": [
+            "Ritter"
+          ],
+          "personDeceased": true
+        },
         {
           "type": "kin",
           "person": "arnold_brother_of_vogt_zu_Lauda",
           "of": "Elisabeth von Erligheim",
           "term": "Schwager"
         },
-        "Elisabeth von Erligheim settled with Archbishop Adolf of Mainz regarding inheritance from Heinrich von Erligheim",
+        {
+          "type": "generic",
+          "person": "Elisabeth von Erligheim",
+          "content": "was paid her inherited share and rents from the pledge on Bensheim Castle by Archbishop Adolf von Mainz."
+        },
         {
           "type": "title",
           "person": "Thame Knebel",

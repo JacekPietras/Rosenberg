@@ -14,8 +14,11 @@
             "Kurfürst"
           ]
         },
-        "Die Stadtgemeinde Boxberg transferred ihren Stadtgraben to Kurfürst Ludwig V. von der Pfalz",
-        "The transfer of the Stadtgraben was made unter gewissen Vorbehalten"
+        {
+          "type": "generic",
+          "person": "Ludwig V. von der Pfalz",
+          "content": "received Boxberg’s city moat from the municipality subject to certain reservations."
+        }
       ],
       "img": [
         {

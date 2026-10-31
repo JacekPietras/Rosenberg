@@ -16,7 +16,11 @@
             "Vogt zu Dürn"
           ]
         },
-        "[vogt_zu_Durn] took part in the account of the archiepiscopal cellarer at Aschaffenburg."
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "was present during the accounting of the archiepiscopal cellarer at Aschaffenburg."
+        }
       ]
     }
   ]

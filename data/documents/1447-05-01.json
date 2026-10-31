@@ -10,15 +10,29 @@
       "german": "Eberhard von Rosenberg d. Ä. tauscht unter Vermittlung des Thomas von Rosenberg seinen Stall im hinteren Teil des Schlosses Boxberg beim Brunnen ober oberhalb des Turms gegen einen Stall und ein Backhaus im vorderen Teile des Schlosses, welche den Brüdern Ulrich und Jörg von Rosenberg gehören; letztere geben noch ein Aufgeld von 80 Gulden.",
       "english": "Eberhard von Rosenberg the. Under the mediation of the Thomas von Rosenberg, exchange his stable in the rear part of the Boxberg Castle at the fountain above the tower for a stable and a bakery in the front part of the castle, which belong to the brothers Ulrich and Jörg von Rosenberg; the latter still give an overend of 80 guilders.",
       "facts": [
-        "Thomas von Rosenberg mediated the exchange at Schloss Boxberg between Eberhard von Rosenberg der Ältere and the brothers Ulrich von Rosenberg and Jörg von Rosenberg",
-        "Eberhard von Rosenberg der Ältere exchanged his Stall in the rear part of Schloss Boxberg near the well above the tower for a Stall and a Backhaus in the front part of Schloss Boxberg",
+        {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
+          "content": "mediated the exchange at Boxberg Castle between Eberhard von Rosenberg der Ältere and the brothers Ulrich and Jörg von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "content": "exchanged his stable in the rear part of Boxberg Castle by the fountain above the tower for the brothers Ulrich and Jörg von Rosenberg’s stable and bakery in the front part of the castle."
+        },
         {
           "type": "sibling",
           "person": "Ulrich von Rosenberg",
           "of": "Jörg von Rosenberg"
         },
-        "Ulrich von Rosenberg gave an Aufgeld as part of the exchange",
-        "Jörg von Rosenberg gave an Aufgeld as part of the exchange"
+        {
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "paid an additional amount in connection with the exchange together with his brother Jörg von Rosenberg."
+        }
       ],
       "img": [
         {
@@ -74,9 +88,30 @@
       "german": "Weisungsbrief des Inhalts, dass eine von Ritter Anselm von Rosenberg über seinem Schloss zu Prosselsheim auf dem Klosterhof erbaute Scheuer stehen bleiben und mit diesem Hof von ihm und seiner Ehefrau gegen gewisse Gülten und Zinsen lebenslänglich genutzt werden, nach deren Ableben aber dem Astheimer Kartäuserkloster zufallen soll.",
       "english": "Letter stating that a barn built by Anselm von Rosenberg, Ritter above his castle at Prosselsheim on the monastery farm shall remain standing and that he and his wife may use it and the farm for their lifetimes in return for certain rents and dues; after their deaths, however, it shall pass to the Astheim Carthusian monastery.",
       "facts": [
-        "Anselm von Rosenberg, Ritter built a barn on the monastery farm at his Schloss Prosselsheim",
-        "Anselm von Rosenberg and his wife were entitled to use the barn and the monastery farm for their lifetimes in return for certain rents and dues",
-        "The barn and monastery farm were to pass to the Astheim Carthusian monastery after Anselm von Rosenberg and his wife's deaths"
+        {
+          "type": "generic",
+          "person": "Anselm von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "built a barn on the monastery farm above his castle at Prosselsheim."
+        },
+        {
+          "type": "generic",
+          "person": "Anselm von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "was entitled to use the barn and monastery farm with his wife for their lifetimes in return for rents and dues."
+        },
+        {
+          "type": "generic",
+          "person": "Anselm von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "was to leave the barn and monastery farm to the Astheim Carthusian monastery after his and his wife’s deaths."
+        }
       ]
     }
   ]

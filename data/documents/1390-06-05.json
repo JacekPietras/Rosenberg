@@ -10,14 +10,16 @@
       "german": "Engelhard von Rosenberg und sein Sohn Eberhard verzichten auf ihre Ansprüche gegenüber den Johanniter wegen des Kaufs zu Boxberg und eines Burgguts auf dem Hof zu Gräfingen.",
       "english": "Engelhard von Rosenberg and his son Eberhard renounce their claims against the Knights of St. John because of the purchase of Boxberg and a castle estate on the farm in Gräfingen.",
       "facts": [
-        "Engelhard von Rosenberg renounced claims against the Johanniter Order regarding the Boxberg purchase",
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "renounced, with his son Eberhard, claims against the Johanniter Order concerning the Boxberg purchase and a Burggut at the Hof zu Gräfingen."
+        },
         {
           "type": "parent",
           "person": "Engelhard von Rosenberg",
           "of": "Eberhard von Rosenberg"
-        },
-        "Eberhard von Rosenberg renounced claims against the Johanniter Order regarding the Boxberg purchase",
-        "Engelhard von Rosenberg and Eberhard von Rosenberg renounced claims regarding a Burggut at the Hof zu Gräfingen"
+        }
       ],
       "img": [
         {

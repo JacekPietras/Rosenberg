@@ -8,7 +8,14 @@
       "german": "Eberhart Rüde von Bödigheim (Botinken), Hans von Rosenberg und Herman Bilgerin, Edelknechte, entscheiden in dem Streite zwischen den edeln Herrn Herman, Herrn zu Lybesperg einerseits und Walthe und Endriz von Hardheim andererseits. Der von Lybesperg verlangt von des Stiftes zu Mainz wegen ein Gericht im Dorfe Hepphenkein, sowie das Recht zum „Angießen“ über Maß, Gewicht und Ellen, wie die Hardheimer für sich in Anspruch nehmen. Die Schiedsleute bestätigen nun, daß die Hardheimer einen besseren Beweis (Kundschaft) erbrachten.",
       "english": "Eberhard Rüde von Bödigheim, Hans von Rosenberg, and Herman Bilgerin, Edelknechte, decide the dispute between the noble Herman, lord of Lybesperg, on one side and Walthe and Endriz von Hardheim on the other. The lord of Lybesperg demands, on behalf of the Mainz chapter, a court in the village of Hepphenkein, as well as the right to regulate measures, weights, and lengths, as the Hardheimers claim for themselves. The arbitrators confirm that the Hardheimers presented better evidence.",
       "facts": [
-        "Hans von Rosenberg served as an arbitrator in a dispute between Herman, lord of Lybesperg, and Walthe and Endriz von Hardheim."
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "served as an arbitrator in a dispute between Herman, lord of Lybesperg, and Walthe and Endriz von Hardheim.",
+          "personTitle": [
+            "Edelknecht"
+          ]
+        }
       ]
     }
   ]

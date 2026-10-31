@@ -22,17 +22,74 @@
             "Graf zu Wertheim"
           ]
         },
-        "Eberhard von Rosenberg (issuer of the document) bought Uffingen village from Graf Eberhard zu Wertheim and Katherine.",
-        "Margaretha von Thüngen bought Uffingen village from Graf Eberhard zu Wertheim and Katherine.",
-        "Eberhard von Rosenberg (issuer of the document) bought the people and rights at Schweigern from Graf Eberhard zu Wertheim and Katherine.",
-        "Margaretha von Thüngen bought the people and rights at Schweigern from Graf Eberhard zu Wertheim and Katherine.",
-        "Graf Eberhard zu Wertheim and Katherine retained their kirchensetze and Mannlehen at Schweigern when selling to Eberhard von Rosenberg (issuer of the document) and Margaretha von Thüngen.",
-        "Graf Eberhard zu Wertheim and Katherine could buy back Uffingen village and the property at Schweigern from Eberhard von Rosenberg (issuer of the document) and Margaretha von Thüngen within ten years.",
-        "The buyback date was fourteen days before or after St. Peter's Day (Cathedra Petri) in each of the ten years.",
-        "Eberhard von Rosenberg (issuer of the document) was to receive the purchased property as a fief from Graf Eberhard zu Wertheim and Katherine.",
-        "Margaretha von Thüngen was to receive the purchased property as a fief from Graf Eberhard zu Wertheim and Katherine.",
-        "Eberhard von Rosenberg (issuer of the document) and Margaretha von Thüngen agreed not to raise the Bede of the people above what the Wertheim lordship had customarily requested.",
-        "Eberhard von Rosenberg (issuer of the document) and Margaretha von Thüngen sealed the document with their pendant seals.",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "bought the village of Uffingen jointly with Margaretha von Thüngen from Eberhard, Count of Wertheim, and Katherine."
+        },
+        {
+          "type": "generic",
+          "person": "Margaretha von Thüngen",
+          "content": "bought the village of Uffingen jointly with Eberhard von Rosenberg from Eberhard, Count of Wertheim, and Katherine."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "bought the people and rights at Schweigern jointly with Margaretha von Thüngen from Eberhard, Count of Wertheim, and Katherine."
+        },
+        {
+          "type": "generic",
+          "person": "Margaretha von Thüngen",
+          "content": "bought the people and rights at Schweigern jointly with Eberhard von Rosenberg from Eberhard, Count of Wertheim, and Katherine."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "bought Schweigern jointly with Margaretha von Thüngen, subject to the sellers’ retained church-patronage and Mannlehen rights."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "granted Eberhard, Count of Wertheim, and Katherine a ten-year right to redeem Uffingen and the Schweigern property."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Wertheim",
+          "content": "could redeem the property each year within fourteen days before or after Cathedra Petri during the ten-year term.",
+          "personTitle": [
+            "Graf zu Wertheim"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was to hold the purchased property as a fief from Eberhard, Count of Wertheim, and Katherine."
+        },
+        {
+          "type": "generic",
+          "person": "Margaretha von Thüngen",
+          "content": "was to hold the purchased property as a fief from Eberhard, Count of Wertheim, and Katherine."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "agreed with Margaretha von Thüngen not to exact higher Bede from the people than the Wertheim lordship had customarily demanded."
+        },
+        {
+          "type": "generic",
+          "person": "Margaretha von Thüngen",
+          "content": "agreed with Eberhard von Rosenberg not to exact higher Bede from the people than the Wertheim lordship had customarily demanded."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sealed the document with a pendant seal."
+        },
+        {
+          "type": "generic",
+          "person": "Margaretha von Thüngen",
+          "content": "sealed the document with a pendant seal."
+        },
         {
           "type": "death",
           "person": "Eberhard von Rosenberg",

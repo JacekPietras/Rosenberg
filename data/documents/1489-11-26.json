@@ -31,7 +31,11 @@
           "of": "Stefan von Adelsheim",
           "term": "Vetter und Schwager"
         },
-        "Stefan von Adelsheim addressed Michel von Rosenberg regarding the feud involving Stefan, Eberhard, and Tristan von Adelsheim."
+        {
+          "type": "generic",
+          "person": "Michel von Rosenberg",
+          "content": "was notified by Stefan von Adelsheim that Stefan, Eberhard, and Tristan von Adelsheim would seek a legal resolution of their feud before the Bamberg regional court if safe conduct were granted."
+        }
       ]
     }
   ],

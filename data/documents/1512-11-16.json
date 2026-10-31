@@ -12,14 +12,22 @@
           "person": "Arnold von Rosenberg",
           "of": "Margarethe von Dottenheim"
         },
-        "Margarethe von Dottenheim had Ansprüche from an Ehevertrag arranged by Graf Philipp von Rieneck",
-        "Arnold von Rosenberg acknowledged his Ehefrau's Ansprüche on his Güter und Lehen zu Boxberg",
         {
           "type": "title",
           "person": "Philipp von Rieneck",
           "personTitle": [
             "Graf"
           ]
+        },
+        {
+          "type": "generic",
+          "person": "Margarethe von Dottenheim",
+          "content": "held claims arising from the marriage contract arranged by Count Philipp von Rieneck."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "secured his wife Margarethe’s claims under their marriage contract against his property and fiefs at Boxberg."
         }
       ],
       "img": [

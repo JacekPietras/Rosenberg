@@ -15,10 +15,35 @@
             "Ritter"
           ]
         },
-        "Hans von Rosenberg witnessed a property sale.",
-        "Konrad von Uissigheim der Ältere witnessed the property sale.",
-        "Eberhard von Rosenberg der Ältere witnessed the property sale.",
-        "Reinhart von Hartheim witnessed the property sale."
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "witnessed the property sale.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Uissigheim",
+          "content": "witnessed the property sale.",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "witnessed the property sale.",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Reinhart von Hartheim",
+          "content": "witnessed the property sale."
+        }
       ],
       "img": [
         {

@@ -28,12 +28,22 @@
             "Komtur der Deutsch-Ordens-Kommende Mergentheim"
           ]
         },
-        "Georg von Rosenberg and Batt Horneck von Hornberg made a Vergleich between the Deutsch-Ordens-Kommende Mergentheim and the Brüder von Rosenberg",
-        "The Vergleich addressed Markscheidung zu Boxberg",
-        "The Vergleich addressed Markscheidung zu Wölchingen",
-        "The Vergleich addressed Markscheidung zu Bobstadt",
-        "The Vergleich addressed the Wald called die Hesbach",
-        "The Vergleich addressed other nachbarliche Streitpunkte"
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "personTitle": [
+            "Vogt zu Heidelberg"
+          ],
+          "content": "settled disputes between the Mergentheim commandery of the Teutonic Order and the Rosenberg brothers concerning boundaries at Boxberg, Wölchingen, and Bobstadt, the Hesbach forest, and other neighboring matters jointly with Batt Horneck von Hornberg."
+        },
+        {
+          "type": "generic",
+          "person": "Batt Horneck von Hornberg",
+          "personTitle": [
+            "Amtmann zu Darmstadt"
+          ],
+          "content": "settled disputes between the Mergentheim commandery of the Teutonic Order and the Rosenberg brothers concerning boundaries at Boxberg, Wölchingen, and Bobstadt, the Hesbach forest, and other neighboring matters jointly with Georg von Rosenberg."
+        }
       ],
       "img": [
         {

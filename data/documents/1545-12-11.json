@@ -14,9 +14,21 @@
             "Kurfürst"
           ]
         },
-        "Michael von Rosenberg ceded his Anteil am alten Stammlehen, Schloss und Stadt Boxberg samt Zugehörungen und Gerechtigkeiten to Kurfürst Friedrich II. von der Pfalz",
-        "Michael von Rosenberg reached a Vergleich mittels eines besondern Vertrags with Kurfürst Friedrich II. von der Pfalz regarding the Anteil",
-        "Michael von Rosenberg renounced all his Anrechte",
+        {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "content": "ceded his share in the old family fief of Boxberg, including the castle, town, appurtenances, and rights, to Elector Friedrich II of the Palatinate."
+        },
+        {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "content": "reached a separate agreement with Elector Friedrich II of the Palatinate concerning the share."
+        },
+        {
+          "type": "generic",
+          "person": "Michael von Rosenberg",
+          "content": "renounced all his rights to the share."
+        },
         {
           "type": "parent",
           "person": "Jörg von Rosenberg",
@@ -40,9 +52,11 @@
           "of": "Jörg von Rosenberg",
           "term": "Vetter"
         },
-        "Jörg von Rosenberg inherited an Anteil am alten Stammlehen, Schloss und Stadt Boxberg samt Zugehörungen und Gerechtigkeiten from Hans Thomas von Rosenberg",
-        "Jörg von Rosenberg inherited an Anteil am alten Stammlehen, Schloss und Stadt Boxberg samt Zugehörungen und Gerechtigkeiten from Hans Melchior von Rosenberg",
-        "Jörg von Rosenberg inherited an Anteil am alten Stammlehen, Schloss und Stadt Boxberg samt Zugehörungen und Gerechtigkeiten from Hans Ulrich von Rosenberg"
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "inherited a share in the old family fief of Boxberg, including the castle, town, appurtenances, and rights, from his cousins Hans Thomas, Hans Melchior, and Hans Ulrich von Rosenberg."
+        }
       ],
       "img": [
         {

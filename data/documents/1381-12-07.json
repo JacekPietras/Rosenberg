@@ -8,8 +8,11 @@
       "german": "Eberhard von Rosenberg übergibt dem pfalzgrafen sein viertel an der veste Rosenberg mit dem vorhof zu lehen auf.",
       "english": "Eberhard von Rosenberg surrenders his quarter-share of the Rosenberg fortress with its forecourt to the Count Palatine to be held as a fief",
       "facts": [
-        "Eberhard von Rosenberg transferred his quarter share of Veste Rosenberg and its forecourt to the Palatine as a fief.",
-        "Eberhard von Rosenberg held a quarter share of Veste Rosenberg and its forecourt."
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "surrendered his quarter share of Veste Rosenberg and its forecourt to the Count Palatine as a fief."
+        }
       ]
     }
   ]

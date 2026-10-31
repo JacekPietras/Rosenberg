@@ -20,9 +20,29 @@
             "der Ältere"
           ]
         },
-        "[vogt_zu_Durn] der Ältere and [irmtraut_wife_of_vogt_zu_Durn] jointly bequeathed their estate in Königheim and Dienstadt to Bronnbach Abbey.",
-        "Arnold von Uissigheim sealed the charter.",
-        "[vogt_zu_Durn] der Ältere sealed the charter; his seal is now detached."
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "with his wife Irmtraut, bequeathed their estate in Königheim and Dienstadt to Bronnbach Abbey.",
+          "personTitle": [
+            "Ritter",
+            "der Ältere"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Uissigheim",
+          "content": "sealed the charter."
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "sealed the charter; his seal is now detached.",
+          "personTitle": [
+            "Ritter",
+            "der Ältere"
+          ]
+        }
       ],
       "img": [
         {

@@ -14,9 +14,16 @@
             "Kurfürst"
           ]
         },
-        "Kurfürst Ludwig V. von der Pfalz settled a dispute between Jörg von Rosenberg and the Bürgerschaft zu Boxberg",
-        "The dispute concerned the Holz called die Klingen",
-        "A Revers der Gemeinde Boxberg recorded a controversy arising in execution of the settlement provisions"
+        {
+          "type": "generic",
+          "person": "Ludwig V. von der Pfalz",
+          "content": "settled a dispute with Jörg von Rosenberg and the citizens of Boxberg concerning the woodland called die Klingen."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "was party to a dispute with Boxberg over the Klingen woodland that was settled by Elector Ludwig V of the Palatinate."
+        }
       ],
       "img": [
         {

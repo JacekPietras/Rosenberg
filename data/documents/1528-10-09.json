@@ -14,7 +14,11 @@
             "Deutsch-Ordens-Komtur zu Mergentheim"
           ]
         },
-        "A 1516-04-07 charter concerning disputes between the Haus Mergentheim and the Gebrüder von Rosenberg was vidimated"
+        {
+          "type": "generic",
+          "person": "Wolfgang von Bibra",
+          "content": "requested that Rothenburg’s mayor and council authenticate the charter of 7 April 1516 concerning disputes between the House of Mergentheim and the Rosenberg brothers."
+        }
       ],
       "img": [
         {

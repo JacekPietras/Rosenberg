@@ -13,7 +13,11 @@
           "of": "Eberhard von Rosenberg",
           "ofDeceased": true
         },
-        "Margarethe von Thüngen purchased tithes at Schweigern from Hans von Klepsau and Elisabeth von Klepsau",
+        {
+          "type": "generic",
+          "person": "Margarethe von Thüngen",
+          "content": "purchased Hans and Elisabeth von Klepsau’s share of the tithe at Schweigern."
+        },
         {
           "type": "death",
           "person": "Eberhard von Rosenberg",

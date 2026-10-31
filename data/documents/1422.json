@@ -7,13 +7,42 @@
       "german": "Sonntag vor Simon und Judä; Luppold von Seldeneck und Conz von Rosenberg, beide gesessen zu Bartenstein wegen eines Baues den Conz von Rosenberg zu Bartenstein als Eingang in die Kapelle der Burg gemacht hat;\n\nSiegel: Luppold von Seldeneck, Conz von Rosenberg, Reinhard von Ussigheim und Fritz Truchseß von Baldersheim.",
       "english": "Sunday before Simon and Jude; Luppold von Seldeneck and Kunz von Rosenberg, both residing in Bartenstein because of a building that Kunz von Rosenberg had built in Bartenstein as an entrance to the chapel of the castle;\n\nseals: Luppold von Seldeneck, Kunz von Rosenberg, Reinhard von Uissigheim and Fritz Truchseß von Baldersheim.",
       "facts": [
-        "Kunz von Rosenberg resided at Bartenstein",
-        "Luppold von Seldeneck resided at Bartenstein",
-        "Kunz von Rosenberg zu Bartenstein made a Bau at Bartenstein as entrance to the Kapelle der Burg",
-        "Kunz von Rosenberg zu Bartenstein sealed the charter",
-        "Luppold von Seldeneck sealed the charter",
-        "Reinhard von Uissigheim sealed the charter",
-        "Fritz Truchseß von Baldersheim sealed the charter"
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ],
+          "content": "built a structure at Bartenstein as an entrance to the castle chapel."
+        },
+        {
+          "type": "generic",
+          "person": "Luppold von Seldeneck",
+          "content": "resided at Bartenstein."
+        },
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ],
+          "content": "sealed the charter."
+        },
+        {
+          "type": "generic",
+          "person": "Luppold von Seldeneck",
+          "content": "sealed the charter."
+        },
+        {
+          "type": "generic",
+          "person": "Reinhard von Uissigheim",
+          "content": "sealed the charter."
+        },
+        {
+          "type": "generic",
+          "person": "Fritz Truchseß von Baldersheim",
+          "content": "sealed the charter."
+        }
       ],
       "img": [
         {

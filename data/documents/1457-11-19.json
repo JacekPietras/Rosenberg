@@ -22,7 +22,11 @@
           "person": "Kunz von Rosenberg",
           "diedBefore": "1457-11-20"
         },
-        "Hans von Rosenberg received Burggeld from rentmaster Eberhard Gysel on behalf of Count Hans von Wertheim."
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "received 6 pounds of castle dues from rentmaster Eberhard Gysel on behalf of Count Johann von Wertheim; the dues had fallen due on the preceding Martinmas."
+        }
       ],
       "img": [
         {

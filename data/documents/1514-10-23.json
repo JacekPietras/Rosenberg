@@ -12,9 +12,6 @@
           "person": "Arnold von Rosenberg",
           "diedBefore": "1514-10-24"
         },
-        "Friedrich von Rosenberg is cousin of the sons of Arnold von Rosenberg",
-        "Jörg von Rosenberg is cousin of the sons of Arnold von Rosenberg",
-        "Hans von Rosenberg is cousin of the sons of Arnold von Rosenberg",
         {
           "type": "title",
           "person": "Sigmund von Thüngen",
@@ -36,11 +33,37 @@
             "Kurfürst"
           ]
         },
-        "Sigmund von Thüngen acted as verordneter Obmann of Kurfürst Ludwig von der Pfalz",
-        "Jörg Truchsess von Baldersheim acted as verordneter Obmann of Kurfürst Ludwig von der Pfalz",
-        "Sigmund von Thüngen and Jörg Truchsess von Baldersheim settled by Austrag a dispute between the sons of Arnold von Rosenberg and Friedrich von Rosenberg regarding Anteil an Bastei und Stadt Boxberg",
-        "Sigmund von Thüngen and Jörg Truchsess von Baldersheim settled by Austrag a dispute between the sons of Arnold von Rosenberg and Jörg von Rosenberg regarding Anteil an Bastei und Stadt Boxberg",
-        "Sigmund von Thüngen and Jörg Truchsess von Baldersheim settled by Austrag a dispute between the sons of Arnold von Rosenberg and Hans von Rosenberg regarding Anteil an Bastei und Stadt Boxberg"
+        {
+          "type": "generic",
+          "person": "Friedrich von Rosenberg",
+          "content": "was identified as a cousin of the sons of the late Arnold von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "was identified as a cousin of the sons of the late Arnold von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "was identified as a cousin of the sons of the late Arnold von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Sigmund von Thüngen",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "served as an appointed arbitrator for Elector Ludwig von der Pfalz in the dispute between Arnold von Rosenberg’s sons and their cousins Friedrich, Jörg, and Hans over their shares in the Boxberg bastion and town."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg Truchsess von Baldersheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "served as an appointed arbitrator for Elector Ludwig von der Pfalz in the dispute between Arnold von Rosenberg’s sons and their cousins Friedrich, Jörg, and Hans over their shares in the Boxberg bastion and town."
+        }
       ],
       "img": [
         {

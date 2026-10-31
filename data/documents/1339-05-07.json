@@ -15,7 +15,15 @@
             "Vogt zu Dürn"
           ]
         },
-        "[vogt_zu_Durn] served as arbitrator/counselor in disputes between parties"
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
+          "content": "served as a counselor in resolving disputes under the agreement."
+        }
       ]
     }
   ]

@@ -16,7 +16,11 @@
           "personDeceased": true,
           "of": "Konrad von Uissigheim"
         },
-        "Eberhard Schenk von Rossberg, Ritter, and his wife Agnes sold their castle, residence, and farm in Veitshöchheim to Konrad von Uissigheim.",
+        {
+          "type": "generic",
+          "person": "Konrad von Uissigheim",
+          "content": "purchased the castle, residence, and farm in Veitshöchheim from Eberhard Schenk von Rossberg and his wife Agnes."
+        },
         {
           "type": "death",
           "person": "Eberhard von Uissigheim",

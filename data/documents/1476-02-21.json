@@ -14,8 +14,22 @@
             "Erzbischof von Mainz"
           ]
         },
-        "Dietrich von Mainz promised to uphold the Burgfrieden at Boxberg",
-        "The Burgfrieden at Boxberg was concluded between Pfalzgraf Friedrich and Bischof Rudolf von Würzburg under Erzbischof Adolf von Mainz"
+        {
+          "type": "generic",
+          "person": "Dietrich von Mainz",
+          "personTitle": [
+            "Erzbischof von Mainz"
+          ],
+          "content": "promised to uphold the castle peace at Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Friedrich von der Pfalz",
+          "personTitle": [
+            "Pfalzgraf"
+          ],
+          "content": "concluded the castle peace at Boxberg jointly with Archbishop Adolf of Mainz and Bishop Rudolf of Würzburg."
+        }
       ],
       "img": [
         {

@@ -7,12 +7,42 @@
       "german": "Jörg Balbach und Jörg Otte, gefangengesetzt auf Betreiben des Eberhart von Rosenberg des Alten, schwören nach der auf Fürbitte des Yttel Faut von Ryneck erfolgten Entlassung aus der Haft gegen Jost von Venningen, Komtur zu Mergentheim, Urfehde. Sr.: 1) Arnold Stetenberger, 2) Hans von Tottenheim zu Messelhausen (Messelhusen)",
       "english": "Jörg Balbach and Jörg Otte, imprisoned at the instigation of Eberhard von Rosenberg der Alte, swear a pledge of allegiance to Jost von Venningen, Commander of Mergentheim, after their release from prison at the intercession of Yttel Faut von Ryneck. Sirs: 1) Arnold Stetenberger, 2) Hans von Dottenheim of Messelhausen",
       "facts": [
-        "Eberhard von Rosenberg der Alte instigated the imprisonment of Jörg Balbach",
-        "Eberhard von Rosenberg der Alte instigated the imprisonment of Jörg Otte",
-        "Yttel Faut von Ryneck interceded for the release of Jörg Balbach from custody",
-        "Yttel Faut von Ryneck interceded for the release of Jörg Otte from custody",
-        "Jörg Balbach swore Urfehde against Jost von Venningen, Komtur zu Mergentheim",
-        "Jörg Otte swore Urfehde against Jost von Venningen, Komtur zu Mergentheim",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Alte"
+          ],
+          "content": "instigated the imprisonment of Jörg Balbach."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Alte"
+          ],
+          "content": "instigated the imprisonment of Jörg Otte."
+        },
+        {
+          "type": "generic",
+          "person": "Yttel Faut von Ryneck",
+          "content": "interceded for Jörg Balbach’s release from custody."
+        },
+        {
+          "type": "generic",
+          "person": "Yttel Faut von Ryneck",
+          "content": "interceded for Jörg Otte’s release from custody."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg Balbach",
+          "content": "swore an Urfehde against Jost von Venningen, Komtur zu Mergentheim."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg Otte",
+          "content": "swore an Urfehde against Jost von Venningen, Komtur zu Mergentheim."
+        },
         {
           "type": "title",
           "person": "Jost von Venningen",

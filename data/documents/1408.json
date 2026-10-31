@@ -15,7 +15,14 @@
           ],
           "of": "Ulrich von Rosenberg"
         },
-        "Eberhard von Rosenberg der Ältere renounced his Würzburg fiefs in favor of Ulrich von Rosenberg"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "content": "renounced his Würzburg fiefs in favor of his son Ulrich von Rosenberg."
+        }
       ]
     }
   ]

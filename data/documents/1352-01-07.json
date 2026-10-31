@@ -14,8 +14,19 @@
             "Vogt zu Wildenberg"
           ]
         },
-        "Eberhard von Rosenberg served as arbitrator between Kuno von Falkenstein and Heinrich von Turewang and Konrad von Saulheim",
-        "Eberhard von Uissigheim was included in the arbitration proceedings"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "negotiated a peace between Kuno von Falkenstein and Heinrich von Turewang and Konrad von Saulheim.",
+          "personTitle": [
+            "Vogt zu Wildenberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Uissigheim",
+          "content": "was included in the peace agreement."
+        }
       ]
     }
   ]

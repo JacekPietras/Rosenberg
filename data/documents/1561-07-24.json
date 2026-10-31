@@ -15,7 +15,11 @@
             "Herzog zu Sachsen"
           ]
         },
-        "Hans Friedrich der Mittlere mediated a Vertrag between Kurfürst Friedrich II. von der Pfalz and Albrecht von Rosenberg",
+        {
+          "type": "generic",
+          "person": "Hans Friedrich",
+          "content": "mediated an agreement between Elector Friedrich II of the Palatinate and Albrecht von Rosenberg."
+        },
         {
           "type": "title",
           "person": "Friedrich II. von der Pfalz",
@@ -23,7 +27,11 @@
             "Kurfürst"
           ]
         },
-        "Albrecht von Rosenberg ceded all his Rechte und Ansprüche an Boxberg und Zubehör"
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "content": "ceded all his rights and claims to Boxberg and its appurtenances to Elector Friedrich II of the Palatinate in return for payment of 27,000 florins."
+        }
       ],
       "img": [
         {

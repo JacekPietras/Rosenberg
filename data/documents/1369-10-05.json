@@ -14,8 +14,14 @@
             "Vitzthum zu Amberg"
           ]
         },
-        "Konrad von Rosenberg served as surety for Ruprecht's debt to Hannes and Eberhard den Closenern von Arnsdorf",
-        "Konrad von Rosenberg was appointed as Bürge alongside Friedrich den Auwer von Brennenberg, Ulrich den Puschbeck von Calmunz, and Ulrich den Schenken von Richnecke"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "content": "was named as a surety for Ruprecht’s debt to Hannes and Eberhard den Closenern von Arnsdorf, alongside Friedrich den Auwer von Brennenberg, Ulrich den Puschbeck von Calmunz, and Ulrich den Schenken von Richnecke."
+        }
       ]
     }
   ]

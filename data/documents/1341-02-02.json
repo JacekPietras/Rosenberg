@@ -102,10 +102,32 @@
           ],
           "of": "Hermann von Rosenberg"
         },
-        "Eberhard von Rosenberg received royal subjects from his father [vogt_zu_Durn]",
-        "[engelhard_son_of_vogt_zu_Durn] received royal subjects from his father [vogt_zu_Durn]",
-        "Konrad von Rosenberg received royal subjects from his father [vogt_zu_Durn]",
-        "Hermann von Rosenberg received royal subjects from his father [vogt_zu_Durn]"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "content": "received royal subjects from his father."
+        },
+        {
+          "type": "generic",
+          "person": "engelhard_son_of_vogt_zu_Durn",
+          "content": "received royal subjects from his father."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "content": "received royal subjects from his father."
+        },
+        {
+          "type": "generic",
+          "person": "Hermann von Rosenberg",
+          "content": "received royal subjects from his father."
+        }
       ]
     }
   ]

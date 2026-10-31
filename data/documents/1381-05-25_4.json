@@ -29,12 +29,59 @@
           ],
           "term": "swager"
         },
-        "Konrad von Rosenberg held a quarter of Boxberg castle and town as a fief from Ruprecht der Ältere, Ruprecht der Jüngere, and Ruprecht der Jüngste.",
-        "Konrad von Rosenberg opened his quarter of Boxberg to Ruprecht der Ältere, Ruprecht der Jüngere, and Ruprecht der Jüngste for their lifetimes.",
-        "The Boxberg grant allowed use by the eldest of the three Pfalzgrafen and their representatives.",
-        "The Boxberg grant excluded action against the Bishop of Würzburg, Konrad's Hirschhorn relatives by marriage, and his kinsmen bearing the same helmet.",
-        "Konrad von Rosenberg sealed the Boxberg charter.",
-        "Hans von Hirschhorn, Ritter, co-sealed the Boxberg charter at Konrad von Rosenberg's request."
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vitztum zu Heidelberg"
+          ],
+          "content": "held a quarter of Boxberg Castle and town as a fief from the three Counts Palatine Ruprecht."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vitztum zu Heidelberg"
+          ],
+          "content": "made his quarter of Boxberg an open house for the three Counts Palatine Ruprecht."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vitztum zu Heidelberg"
+          ],
+          "content": "allowed whichever of the three Counts Palatine Ruprecht was eldest at the time to use the open house and establish himself there against any enemy."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vitztum zu Heidelberg"
+          ],
+          "content": "excepted the Bishop of Würzburg and his brothers-in-law of Hirschhorn from the open-house grant."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vitztum zu Heidelberg"
+          ],
+          "content": "sealed the Boxberg charter."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Hirschhorn",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "co-sealed the Boxberg charter at Konrad’s request."
+        }
       ],
       "img": [
         {

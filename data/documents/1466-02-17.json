@@ -13,7 +13,6 @@
             "Schultheiss zu Frankenbach"
           ]
         },
-        "Lienhart Rosenberg decided a case between Eitel Engelfried von Rothenburg and Hans Bart concerning the Wickmarshof zu Frankenbach",
         {
           "type": "title",
           "person": "Hans von Rosenberg",
@@ -22,7 +21,23 @@
             "Vogt zu Frankenbach"
           ]
         },
-        "Hans von Rosenberg sealed the charter"
+        {
+          "type": "generic",
+          "person": "Lienhart Rosenberg",
+          "personTitle": [
+            "Schultheiss zu Frankenbach"
+          ],
+          "content": "decided the case between Eitel Engelfried von Rothenburg and his courtier Hans Bart concerning the Wickmarshof at Frankenbach together with the Frankenbach judges."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Junker",
+            "Vogt zu Frankenbach"
+          ],
+          "content": "sealed the charter."
+        }
       ]
     }
   ]

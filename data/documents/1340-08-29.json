@@ -28,8 +28,22 @@
             "Ritter"
           ]
         },
-        "[vogt_zu_Durn] served as surety for Bishop Otto of Würzburg regarding Meiningen damages",
-        "[engelhard_son_of_vogt_zu_Durn] served as surety for Bishop Otto of Würzburg regarding Meiningen damages",
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "content": "served as surety for Bishop Otto of Würzburg regarding damages at Meiningen."
+        },
+        {
+          "type": "generic",
+          "person": "engelhard_son_of_vogt_zu_Durn",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "served as surety for Bishop Otto of Würzburg regarding damages at Meiningen."
+        },
         {
           "type": "title",
           "person": "engelhard_son_of_vogt_zu_Durn",

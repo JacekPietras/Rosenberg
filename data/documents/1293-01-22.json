@@ -10,8 +10,16 @@
       "german": "Die Richter des Stifts Aschaffenburg beurkunden, dass Arnold Schick, Bruder des Aschaffenburger Kanonikers Konrad Schick, und genannte Verwandte auf alle Güter, die Konrad zur Donation der von ihm am Michaelsaltar im Kapitelsaal gestifteten Vikarie übertrug, namentlich auf den Hof zu Obernau, den Hof zu Radheim, Zinsen zu Uissigheim und die Güter zu Dasbach, Verzicht leisteten und ihr Einverständnis dazu erklärten, dass die Gült von 2 Malter Weizen und 1 Malter Roggen, die der Aschaffenburger Kämmerer, und von 1 Malter Roggen, das der Präsenzer bisher aus dem genannten Hof zu Obernau für den Jahrtag von Konrads Mutter bezogen hatten, auf einen Hof zu Albstadt oder auf einen von Konrad zu benennenden nähergelegenen Ort umgelegt werden.",
       "english": "The judges of Aschaffenburg Abbey certify that Arnold Schick, brother of the Aschaffenburg canon Konrad Schick, and named relatives renounced all claims to the properties Konrad transferred to endow the vicarage he founded at the Michael altar in the chapter hall, namely the farms at Obernau and Radheim, rents at Uissigheim, and properties at Dasbach. They also consented to the transfer to a farm at Albstadt, or another nearer location to be named by Konrad, of the rents previously received from the Obernau farm for the anniversary of Konrad's mother: two malters of wheat and one of rye by the Aschaffenburg chamberlain, and one malter of rye by the prebendary.",
       "facts": [
-        "Konrad Schick transferred rents at Uissigheim to endow the vicarage he founded at the Michael altar in the Aschaffenburg chapter hall.",
-        "Arnold Schick and named relatives renounced claims to the rents at Uissigheim transferred by Konrad Schick to endow the vicarage."
+        {
+          "type": "generic",
+          "person": "Konrad Schick",
+          "content": "transferred rents at Uissigheim to endow the vicarage he founded at the Michael altar in the Aschaffenburg chapter hall."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold Schick",
+          "content": "with named relatives, renounced claims to the rents at Uissigheim transferred by Konrad Schick to endow the vicarage."
+        }
       ],
       "img": [
         {

@@ -7,8 +7,14 @@
       "german": "Samstag nach St. Gregor; Abt Gottfried von Comburg verleiht Conz von Rosenberg zu Bartenstein alle Güter, die Conz Lecher gehabt hat;\n\nSiegel abgefallen.",
       "english": "Saturday after St. Gregory; Abbot Gotfried von Comburg grants Kunz von Rosenberg zu Bartenstein all the property that Kunz Lecher had owned;\n\nseal removed.",
       "facts": [
-        "Kunz von Rosenberg resided at Bartenstein",
-        "Abt Gotfried von Comburg granted to Kunz von Rosenberg all Güter formerly held by Kunz Lecher"
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ],
+          "content": "received from Abbot Gotfried of Comburg all the property formerly held by Kunz Lecher."
+        }
       ],
       "img": [
         {

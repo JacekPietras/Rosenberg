@@ -13,9 +13,11 @@
           "of": "vogt_zu_Lauda",
           "ofDeceased": true
         },
-        "Elisabeth von Erligheim received half of Boxberg and other feudal goods on behalf of her minor sons",
-        "[vogt_zu_Lauda] had minor sons with Elisabeth von Erligheim",
-        "Ruprecht granted fiefs to Elisabeth von Erligheim as guardian of her minor sons",
+        {
+          "type": "generic",
+          "person": "Elisabeth von Erligheim",
+          "content": "was enfeoffed with half of Boxberg and other fiefs in place of her underage sons."
+        },
         {
           "type": "death",
           "person": "vogt_zu_Lauda",

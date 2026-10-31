@@ -14,9 +14,30 @@
             "Ritter"
           ]
         },
-        "Engelhard von Rosenberg received payment from Gotfried von Hanau (Landkomtur der Ballei Franken)",
-        "Engelhard von Rosenberg committed himself as Burgmann to Mergentheim",
-        "Engelhard von Rosenberg pledged his property at Sailach to Mergentheim",
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "received 100 guilders from Gotfried von Hanau, Landkomtur of the Bailiwick of Franconia.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "pledged to serve the Teutonic House at Mergentheim as a Burgmann.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "pledged his estate at Sailach to the Teutonic House at Mergentheim as security for his service as a Burgmann.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
         {
           "type": "title",
           "person": "Gotfried von Hanau",

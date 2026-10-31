@@ -7,7 +7,11 @@
       "german": "König Rupertus weiset die Stadt Schweinfurt an, die nächste Jahressteuer dem Arnolt von Rosenberg zu geben. C.",
       "english": "King Ruprecht instructs the city of Schweinfurt to give the next annual tax to Arnold von Rosenberg. C.",
       "facts": [
-        "King Ruprecht ordered the city of Schweinfurt to pay its next annual tax to Arnold von Rosenberg."
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "was designated by King Ruprecht to receive Schweinfurt’s next annual tax."
+        }
       ]
     }
   ]

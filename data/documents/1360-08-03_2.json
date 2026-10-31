@@ -8,8 +8,11 @@
       "german": "Bickenbach: Entscheid zwischen Conrad zu Bickenbach und Eberhard v. Erbach durch Conrad Ru .... Burggraf zu Miltenberg, Engelhardt v. Rosenberg über die Zurückgabe des vierten Theils der Mann und Mannschaft zu Bickenbach.",
       "english": "Bickenbach: Decision between Konrad of Bickenbach and Eberhard von Erbach by Konrad Ru ...., Burgrave zu Miltenberg, and Engelhard von Rosenberg, concerning the return of one-fourth of the Mann und Mannschaft at Bickenbach.",
       "facts": [
-        "Engelhard von Rosenberg participated in a decision between Konrad von Bickenbach and Eberhard von Erbach",
-        "Engelhard von Rosenberg participated in a decision concerning the return of one-fourth of the Mann und Mannschaft at Bickenbach"
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "participated in the decision between Konrad von Bickenbach and Eberhard von Erbach concerning the return of one-fourth of the Mann und Mannschaft at Bickenbach."
+        }
       ],
       "img": [
         {

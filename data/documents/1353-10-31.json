@@ -15,7 +15,14 @@
             "Kanoniker at Würzburg Cathedral"
           ]
         },
-        "[hans_domherr_zu_wurzburg] opposed papal provision of Berthold von Burg-Grumbach at Würzburg"
+        {
+          "type": "generic",
+          "person": "hans_domherr_zu_wurzburg",
+          "content": "opposed the papal provision of Berthold von Burg-Grumbach to a canonry and prebend at Würzburg.",
+          "personTitle": [
+            "Kanoniker zu Würzburg"
+          ]
+        }
       ]
     }
   ]

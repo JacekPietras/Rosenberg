@@ -25,12 +25,22 @@
           ],
           "of": "arnold_brother_of_vogt_zu_Lauda"
         },
-        "[vogt_zu_Lauda] received half of Schloss and Stadt Boxberg as Mannlehen from the Pfalzgrafen",
-        "[arnold_brother_of_vogt_zu_Lauda] received half of Schloss and Stadt Boxberg as Mannlehen from the Pfalzgrafen",
-        "[vogt_zu_Lauda] and [arnold_brother_of_vogt_zu_Lauda] transferred their half of Boxberg to the Pfalzgrafen and received it back as fief",
-        "Ruprecht der ältere (Pfalzgraf bei Rhein) granted Mannlehen to the Rosenberg brothers",
-        "Ruprecht der jüngere (Pfalzgraf bei Rhein) granted Mannlehen to the Rosenberg brothers",
-        "The Pfalzgrafen promised to protect the Rosenberg brothers in their possession of Boxberg"
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "surrendered the half of Boxberg Castle and town that he held jointly with his brother Arnold to Ruprecht der Ältere and Ruprecht der Jüngere and immediately received it back as a Mannlehen."
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "was promised protection in his possession of Boxberg by Ruprecht der Ältere, Ruprecht der Jüngere, and Ruprecht der Jüngste."
+        }
       ],
       "img": [
         {

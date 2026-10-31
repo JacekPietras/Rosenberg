@@ -7,7 +7,15 @@
       "german": "Ritter Hans von Rosenberg, Schultheiß und die Schöffen der Stadt Nürnberg beurkunden auf Zeugnis des Eckhart Neydung und Cristan Coler, daß Eberhart Eck, Bürger zu Nürnberg dem Neuen Spital daselbst seinen der Herrschaft zu Prawneck lehenbaren selben Zehnten zu Heroldsberg zur Abhaltung von Seelmessen vermacht.",
       "english": "Hans von Rosenberg, Ritter, Schultheiß, and the Nürnberg town judges recorded, on the testimony of Eckhard Neydung and Cristan Coler, that Eberhard Eck, a Nürnberg citizen, bequeathed his tithe at Heroldsberg to the New Hospital for the holding of memorial masses.",
       "facts": [
-        "Hans von Rosenberg was Schultheiß of Nürnberg when the town judges recorded Eberhard Eck’s bequest to the New Hospital."
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Schultheiß zu Nürnberg"
+          ],
+          "content": "recorded Eberhard Eck’s bequest of his tithe at Heroldsberg to the New Hospital with the Nuremberg aldermen, on the testimony of Eckhard Neydung and Cristan Coler."
+        }
       ]
     }
   ],

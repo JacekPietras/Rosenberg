@@ -16,13 +16,41 @@
           "of": "Ulrich von Rosenberg",
           "term": "Vetter"
         },
-        "Ulrich von Rosenberg is Lehnserbe of Eberhard von Rosenberg",
-        "Eberhard von Rosenberg sold his quarter at Boxberg to Ulrich von Rosenberg",
-        "Eberhard von Rosenberg petitioned Pfalzgraf Friedrich to enfeoff Ulrich von Rosenberg with the quarter at Boxberg",
-        "Thomas von Rosenberg consented to the enfeoffment of Ulrich von Rosenberg with the quarter at Boxberg",
-        "Jörg von Rosenberg consented to the enfeoffment of Ulrich von Rosenberg with the quarter at Boxberg",
-        "Thomas von Rosenberg acted as surety for the enfeoffment",
-        "Jörg von Rosenberg acted as surety for the enfeoffment"
+        {
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "was named as Eberhard von Rosenberg’s next Lehnserbe."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sold his quarter of Boxberg to his cousin and next Lehnserbe, Ulrich von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "asked Count Palatine Friedrich to enfeoff Ulrich von Rosenberg with the quarter of Boxberg he had sold to him."
+        },
+        {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
+          "content": "consented to Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
+          "content": "served as a surety for Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "consented to Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "served as a surety for Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
+        }
       ],
       "img": [
         {

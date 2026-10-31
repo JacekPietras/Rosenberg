@@ -14,9 +14,14 @@
             "Vitzthum zu Amberg"
           ]
         },
-        "Konrad von Rosenberg issued a Gerichtsbrief (court letter) to Herr Ulrich der Perkhauser (Siechenmeister zu Ensdorf)",
-        "Konrad von Rosenberg confirmed that Kloster Ensdorf was entitled to rents from the Rosenhof zu Theuern",
-        "Konrad von Rosenberg adjudicated monastery property rights involving the Rosenhof"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ],
+          "content": "issued a court letter confirming Ensdorf Abbey’s entitlement to rents from the Rosenhof at Theuern."
+        }
       ]
     }
   ]

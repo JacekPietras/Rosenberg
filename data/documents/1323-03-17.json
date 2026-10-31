@@ -10,7 +10,11 @@
       "german": "Arnold, ein Ritter von Uissigheim (Ussenkein), seine Frau Richtze, die Knechte Heinrich und Arnold, des vorgenanten Ritters Söhne, Eberhart von Uissigheim (Ussenkein geheizen von Rannenberg) und seine Frau Elsebet verzichten zu Gunsten der Abtei Bronnbach gegen eine einmalige Entschädigug von 1 Fuder fränkischen Weins und 6 Malter Korn im Werte von 33 Schillingen auf alle ihre Rechte und Forderungen an dem Hof zu Breitenau (Breitenauwe) mit allem Zubehör gegen einen Jahreszins von 8 Schillingen Heller sowie auf solche ihre Rechte an einer Wiese zwischen Dörlesberg und der Botenmühle (die lit in deme grunde gein Turlichsbur and stozet undene offe die mulen, die da heiset Bottenmule).\n\nSiegler: Arnold, Ritter von Uissigheim, Aussteller; Eberhard von Uissigheim, Aussteller; Eberhard von Rosenberg Vermerke: Auf der Rückseite: \"De compositione facta cum Arnoldo milite de Ussinkein et Eberharto de Rannenberg super curia Braitenow et quodam prato\"",
       "english": "Arnold von Uissigheim, Ritter, his wife Richtze, the Knechte Heinrich and Arnold, sons of the aforementioned Arnold von Uissigheim, Ritter, Eberhard von Uissigheim, called von Rannenberg, and his wife Elsebet, renounce all their rights and claims to the farm at Breitenau with all appurtenances in favor of the Bronnbach Abbey in exchange for a one-time compensation of 1 barrel of Franconian wine and 6 malters of grain valued at 33 shillings, as well as their rights to a meadow between Dörlesberg and the Botenmühle (which lies in the grounds of Turlichsbur and stands undeniably on the mills called Bottenmule).\n\nSeal: Arnold von Uissigheim, Ritter, exhibitor; Eberhard von Uissigheim, exhibitor; Eberhard von Rosenberg  Notes: On the back: \"On the settlement made with Arnold von Uissigheim, Ritter, and Eberhard von Rannenberg over the court of Braitenow and a certain meadow.\"",
       "facts": [
-        "Eberhard von Rosenberg sealed the transaction as witness",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sealed the transaction."
+        },
         {
           "type": "title",
           "person": "Arnold von Uissigheim",
@@ -59,7 +63,14 @@
             "Knecht"
           ]
         },
-        "Eberhard von Uissigheim, called von Rannenberg, was an issuer of the transaction",
+        {
+          "type": "generic",
+          "person": "Eberhard von Uissigheim",
+          "content": "was an issuer of the transaction.",
+          "personTitle": [
+            "von Rannenberg"
+          ]
+        },
         {
           "type": "spouse",
           "person": "Eberhard von Uissigheim",
@@ -68,7 +79,14 @@
           ],
           "of": "Elisabeth"
         },
-        "Uissigheim family renounced rights to Breitenau farm in favor of Bronnbach Abbey"
+        {
+          "type": "generic",
+          "person": "Arnold von Uissigheim",
+          "content": "renounced his rights and claims to the farm at Breitenau and a meadow between Dörlesberg and the Botenmühle, together with his family and Eberhard von Uissigheim and his family, in favor of Bronnbach Abbey.",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
       ],
       "img": [
         {

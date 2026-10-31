@@ -7,7 +7,14 @@
       "german": "Ritter Albert von Rosenberg und fünf weitere Ritter teidigen in einem Erbschaftsstreit zwischen den Erben der Familien von Seckendorff, von Thüngen und von Adelsheim.",
       "english": "Albrecht von Rosenberg, Ritter, and five other Ritter arbitrated an inheritance dispute involving heirs of the Seckendorff, Thüngen, and Adelsheim families.",
       "facts": [
-        "Albrecht von Rosenberg, Ritter, served as an arbitrator in an inheritance dispute involving heirs of the Seckendorff, Thüngen, and Adelsheim families."
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "arbitrated an inheritance dispute among heirs of the Seckendorff, Thüngen, and Adelsheim families together with five other knights."
+        }
       ]
     }
   ],

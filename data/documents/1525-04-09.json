@@ -7,7 +7,14 @@
       "german": "Schreiben Hanns von Rosenberg, Amtmann zu Rottingen, an Eberhard Geyer, zu Uffenheim, das Lager der Bauern bei Mergentheim und die von solchen begangene Beraubung der Klosterfrauen zu Scheftersheim betreffend, d. Palmar.",
       "english": "Hans von Rosenberg, Amtmann at Rottingen, wrote to Eberhard Geyer at Uffenheim concerning the peasants’ camp near Mergentheim and their plundering of the nuns of Scheftersheim; dated Palm Sunday.",
       "facts": [
-        "Hans von Rosenberg, Amtmann at Rottingen, wrote to Eberhard Geyer about the peasants’ camp near Mergentheim and the plundering of the nuns of Scheftersheim."
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "wrote to Eberhard Geyer concerning the peasants’ camp near Mergentheim and their plundering of the nuns of Scheftersheim.",
+          "personTitle": [
+            "Amtmann zu Rottingen"
+          ]
+        }
       ]
     }
   ],

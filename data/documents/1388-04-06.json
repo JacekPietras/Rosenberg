@@ -15,11 +15,30 @@
             "Viztum zu Heidelberg"
           ]
         },
-        "Konrad von Rosenberg received royal confirmation of judicial and other rights at Boxberg from King Wenceslaus",
-        "Konrad von Rosenberg has Vettern (cousins) who are partners with him at the fortress of Boxberg",
-        "Konrad von Rosenberg and his cousins hold joint rights at Boxberg",
-        "King Wenceslaus confirmed the Gericht (court) at Boxberg for Konrad von Rosenberg and his cousins",
-        "Konrad von Rosenberg's loyal service was recognized by King Wenceslaus"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "received King Wenceslaus’s confirmation of the court and other historic rights at Boxberg for himself and his cousins.",
+          "personTitle": [
+            "Viztum zu Heidelberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "had cousins who jointly held the fortress at Boxberg with him.",
+          "personTitle": [
+            "Viztum zu Heidelberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "received this favor in recognition of his loyal service.",
+          "personTitle": [
+            "Viztum zu Heidelberg"
+          ]
+        }
       ]
     }
   ]

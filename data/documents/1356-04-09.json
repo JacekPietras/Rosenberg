@@ -63,9 +63,38 @@
             "Komtur des Deutschen Hauses zu Mergentheim"
           ]
         },
-        "Engelhard von Rosenberg and Konrad von Rosenberg transferred their serfs in Mergentheim to the German House",
-        "Engelhard von Rosenberg sealed the transaction",
-        "Konrad von Rosenberg sealed the transaction"
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "transferred his serfs in Mergentheim to the Teutonic Order."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "transferred his serfs in Mergentheim to the Teutonic Order."
+        },
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "sealed the transaction.",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "sealed the transaction.",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
       ],
       "img": [
         {

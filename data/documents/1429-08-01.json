@@ -15,10 +15,11 @@
           "person": "Anna von Rosenberg",
           "of": "Hans von Rosenberg"
         },
-        "Anna von Rosenberg sold Gülten und Zinse at Königheim to Eberhard von Hardheim",
-        "Anna von Rosenberg sold Gülten und Zinse at Eiersheim to Eberhard von Hardheim",
-        "Anna von Rosenberg sold Gülten und Zinse at Rinderfeld to Eberhard von Hardheim",
-        "Anna von Rosenberg sold Gülten und Zinse at Schweinberg to Eberhard von Hardheim"
+        {
+          "type": "generic",
+          "person": "Anna von Rosenberg",
+          "content": "sold to Eberhard von Hardheim all rents and interest she held in Königheim, Eiersheim, Rinderfeld, and Schweinberg."
+        }
       ],
       "img": [
         {

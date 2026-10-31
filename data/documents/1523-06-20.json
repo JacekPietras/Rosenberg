@@ -14,11 +14,14 @@
             "Kurfürst"
           ]
         },
-        "The Schwäbischer Bund ceded Stadt Boxberg as rechtes Eigentum to Kurfürst Ludwig von der Pfalz",
-        "The Schwäbischer Bund ceded Schloss Boxberg as rechtes Eigentum to Kurfürst Ludwig von der Pfalz",
-        "The Schwäbischer Bund captured Stadt Boxberg",
-        "The Schwäbischer Bund captured Schloss Boxberg",
-        "The Schwäbischer Bund burned the Schloss Boxberg"
+        {
+          "type": "generic",
+          "person": "Ludwig von der Pfalz",
+          "personTitle": [
+            "Kurfürst"
+          ],
+          "content": "received Boxberg town and castle from the Swabian League as outright property in return for 5,000 florins."
+        }
       ],
       "img": [
         {

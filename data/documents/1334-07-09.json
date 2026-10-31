@@ -14,7 +14,14 @@
             "Ritter"
           ]
         },
-        "Eberhard von Rosenberg served Balduin (Mainz provisor) at Amöneberg, Geismar, and Fritzlar"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "incurred expenses on Balduin’s business at Amöneburg, Geismar, and Fritzlar."
+        }
       ]
     }
   ]

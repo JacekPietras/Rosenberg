@@ -14,9 +14,16 @@
             "Ritter"
           ]
         },
-        "The Bürgermeister, Schultheiss und Gemeinde zu Boxberg repurchased goods belonging to the Hof of Jörg von Rosenberg in Boxberg",
-        "The goods repurchased had previously been purchased from Jörg von Rosenberg",
-        "The Bürgermeister, Schultheiss und Gemeinde zu Boxberg issued a quittance for the repurchase"
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "received back from Boxberg’s mayor, Schultheiß, and community goods belonging to his farm that they had previously bought from him in a transaction valued at 538 guilders."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "content": "received a quittance documenting the transaction."
+        }
       ],
       "img": [
         {

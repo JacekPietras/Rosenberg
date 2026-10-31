@@ -14,10 +14,22 @@
             "Vitzthum zu Amberg"
           ]
         },
-        "Konrad von Rosenberg issued a Gerichtsbrief (court letter) to Osann, widow of Konrad dem Zenger",
-        "Konrad von Rosenberg adjudicated property rights at Hollenstein bei Velburg",
-        "Konrad von Rosenberg handled legal cases involving Heimsteuer (dowry/marriage portion) rights",
-        "Konrad von Rosenberg sealed the court document as Vitzthum zu Amberg"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "issued a court letter to Osann, widow of Konrad the Zenger, concerning the estates at Hollenstein.",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "sealed the court document.",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ]
+        }
       ]
     }
   ]

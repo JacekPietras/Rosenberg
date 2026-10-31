@@ -14,8 +14,22 @@
             "Ritter"
           ]
         },
-        "Hans von Rosenberg served as surety for Archbishop Gerlach's purchase of Neudenau",
-        "Eberhard von Rosenberg served as surety for Archbishop Gerlach's purchase of Neudenau",
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "served as surety for Archbishop Gerlach’s purchase of Neudenau."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "content": "served as surety for Archbishop Gerlach’s purchase of Neudenau."
+        },
         {
           "type": "title",
           "person": "Eberhard von Rosenberg",
@@ -42,8 +56,22 @@
             "erzb. Amtmann zu Wildenberg"
           ]
         },
-        "Hans von Rosenberg sealed the surety agreement",
-        "Eberhard von Rosenberg sealed the surety agreement"
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "sealed the surety agreement."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "content": "sealed the surety agreement."
+        }
       ]
     }
   ]

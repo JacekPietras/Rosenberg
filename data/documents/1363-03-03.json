@@ -10,11 +10,33 @@
           "type": "title",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "Kleriker of Würzburg Diocese"
+            "Kleriker der Würzburger Diözese"
           ]
         },
-        "Eberhard von Rosenberg took possession of the parish church of Kocherthürn without priestly ordination",
-        "Pope Urban V cleansed Eberhard von Rosenberg of canonical irregularity regarding Kocherthürn church"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Kleriker der Würzburger Diözese"
+          ],
+          "content": "took possession of the parish church of Kocherthürn before receiving priestly ordination."
+        },
+        {
+          "type": "generic",
+          "person": "Urban V",
+          "personTitle": [
+            "Papst"
+          ],
+          "content": "cleansed Eberhard von Rosenberg of the canonical irregularity arising from his taking possession of the parish church of Kocherthürn before ordination."
+        },
+        {
+          "type": "generic",
+          "person": "Urban V",
+          "personTitle": [
+            "Papst"
+          ],
+          "content": "ordered Eberhard von Rosenberg to leave the parish church of Kocherthürn."
+        }
       ]
     },
     {
@@ -26,10 +48,17 @@
           "type": "title",
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "Kleriker of Würzburg Diocese"
+            "Kleriker der Würzburger Diözese"
           ]
         },
-        "Pope Urban V commissioned the abbots of Sinsheim and Amorbach and the dean of the church in Mosbach to install Eberhard von Rosenberg in the parish church of Kocherthürn"
+        {
+          "type": "generic",
+          "person": "Urban V",
+          "personTitle": [
+            "Papst"
+          ],
+          "content": "commissioned the abbots of Sinsheim and Amorbach and the dean of Mosbach to install Eberhard von Rosenberg as provost of the church of St. Juliana."
+        }
       ]
     }
   ]

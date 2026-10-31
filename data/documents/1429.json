@@ -7,16 +7,23 @@
       "german": "Vnd ward B Johanns egemelte Frauen Guten und irem sone Anshelmen noch 500 fl schuldig, die schlug er inen zu den obberurten 4000 fl vf Brassoldshaim.\n\nKontext aus dem unmittelbar vorhergehenden Eintrag (Nr. 1747): Gute war die Witwe Ulrichs von Rosenberg; Anselm von Rosenberg war ihr Sohn. Die dort genannten 4.000 fl sollten durch das Pfand Brassoldshaim gesichert werden.",
       "english": "Bishop Johann von Brunn still owed Gute and her son Anselm von Rosenberg a further 500 florins, which he added to the 4,000 florins secured on Brassoldshaim.\n\nContext from the immediately preceding entry (no. 1747): Gute was the widow of Ulrich von Rosenberg, and Anselm von Rosenberg was her son. The 4,000 florins mentioned there were secured by the pledge of Brassoldshaim.",
       "facts": [
-        "Bishop Johann von Brunn added 500 florins to the 4,000 florins owed to Gute, widow of Ulrich von Rosenberg, and her son Anselm von Rosenberg, secured on Brassoldshaim.",
+        {
+          "type": "generic",
+          "person": "Hans von Brunn",
+          "personTitle": [
+            "Bischof von Würzburg"
+          ],
+          "content": "added a further 500 florins to the 4,000 florins he owed Jutta von Rosenberg and her son Anselm, secured on Brassoldshaim."
+        },
         {
           "type": "spouse",
-          "person": "Jutta",
+          "person": "Jutta von Rosenberg",
           "of": "Ulrich von Rosenberg",
           "ofDeceased": true
         },
         {
           "type": "parent",
-          "person": "Jutta",
+          "person": "Jutta von Rosenberg",
           "of": "Anselm von Rosenberg"
         }
       ],

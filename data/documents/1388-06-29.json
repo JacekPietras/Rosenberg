@@ -12,7 +12,11 @@
           "person": "Elisabeth von Rosenberg",
           "of": "Heinrich Seman"
         },
-        "Elisabeth von Rosenberg participated in the sale of a serf to the Teutonic Order at Mergentheim",
+        {
+          "type": "generic",
+          "person": "Elisabeth von Rosenberg",
+          "content": "joined her husband Heinrich Seman, her brother-in-law Eckhard Seman, and his wife Anne von Leiningen in selling their serf Hans Spannrücken to the Teutonic Order at Mergentheim."
+        },
         {
           "type": "sibling",
           "person": "Eckhard Seman",

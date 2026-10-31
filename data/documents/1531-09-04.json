@@ -11,7 +11,11 @@
       "german": "Wolf von Gemmingen als Richter und Obmann, Albrecht von Adelsheim, Amtmann zu Lauda, Hans von Rosenberg, Eberhard von Gemmingen zu Burg und Karl von Zandt vermitteln eine Einigung zwischen Walter von Cronberg, Administrator des Hochmeistertums in Preußen und Meister des Deutschen Ordens in deutschen und welschen Landen, einerseits und Wolf Greck zu Kochendorf und Stephan von Venningen, beide Vogtsherren zu Kochendorf, andererseits über den Wildbann im Kochendorfer Wald und auf dem Reichertsberg. Christoph von Venningen, Erbe des verstorbenen Stephan, stimmt dem Spruch auch im Namen seiner unmündigen Brüder Hans Moritz und Erasmus zu. Beide Parteien erhalten je eine Ausfertigung. Datiert 4. September 1531.",
       "english": "Wolf von Gemmingen, acting as judge and arbitrator, Albrecht von Adelsheim, bailiff at Lauda, Hans von Rosenberg, Eberhard von Gemmingen zu Burg, and Karl von Zandt mediate a settlement between Walter von Cronberg, administrator of the Grand Mastership in Prussia and master of the Teutonic Order in German and Italian lands, on one side, and Wolf Greck of Kochendorf and Stephan von Venningen, both bailiffs of Kochendorf, on the other, concerning the hunting rights in the Kochendorf forest and on the Reichertsberg. Christoph von Venningen, heir of the late Stephan, approves the award also on behalf of his underage brothers Hans Moritz and Erasmus. Each party receives an original copy. Dated 4 September 1531.",
       "facts": [
-        "Hans von Rosenberg participated in the arbitration of the dispute over hunting rights in the Kochendorf forest and on the Reichertsberg."
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "joined Wolf von Gemmingen, Albrecht von Adelsheim, Eberhard von Gemmingen, and Karl von Zandt in mediating a settlement over hunting rights in the Kochendorf forest and on the Reichertsberg."
+        }
       ],
       "img": [
         {

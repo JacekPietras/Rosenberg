@@ -24,7 +24,15 @@
           ],
           "of": "Wyclo"
         },
-        "Eberhard von Rosenberg and Wyclo sold goods and revenues in Kirchheim to Coeliporta monastery."
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Jüngere",
+            "armiger"
+          ],
+          "content": "sold the goods and revenues in Kirchheim to Himmelpforten Abbey with his wife Wyclo."
+        }
       ]
     }
   ]

@@ -26,13 +26,30 @@
             "Ritter"
           ]
         },
-        "[vogt_zu_Lauda] and [arnold_brother_of_vogt_zu_Lauda] opened their half of Boxberg castle and town to the Pfalzgrafen Ruprecht der Ältere, Ruprecht der Jüngere, and Ruprecht der Jüngste.",
-        "Whichever of the three Pfalzgrafen Ruprecht was eldest at the time could use the opening granted by [vogt_zu_Lauda] and [arnold_brother_of_vogt_zu_Lauda] to establish himself in Boxberg castle and town against any enemy except those expressly exempted.",
-        "The Bishop of Würzburg was exempted from the opening of Boxberg granted by [vogt_zu_Lauda] and [arnold_brother_of_vogt_zu_Lauda].",
-        "The Count of Wertheim was exempted from the opening of Boxberg granted by [vogt_zu_Lauda] and [arnold_brother_of_vogt_zu_Lauda].",
-        "[vogt_zu_Lauda] had cousins who bore the helmet with him.",
-        "[arnold_brother_of_vogt_zu_Lauda] had cousins who bore the helmet with him.",
-        "The issuers excepted their cousins who bore the helmet with them from the opening of Boxberg."
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "opened their half of Boxberg Castle and town, held as a fief from the Palatinate, to the three Counts Palatine Ruprecht."
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "allowed whichever of the three Counts Palatine Ruprecht was eldest at the time to use Boxberg and establish himself there against any enemy."
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "excepted the Bishop of Würzburg, the Count of Wertheim, and their cousins bearing the same helmet from the open-house grant, together with his brother Arnold."
+        }
       ],
       "english": "Eberhard von Rosenberg, Ritter, and Arnold von Rosenberg, Edelknecht, open up their half of the castle and town of Boxberg, which is given as a fief by the Palatinate, to the three Counts Palatine Ruprecht.\n\nthe two exhibitors, Konrad von Rosenberg and Albrecht von Venningen\n\nZeitschrift für die Geschichte des Oberrheins. 24. 1872\n\nEberhard von Rosenberg, Ritter, and Arnold von Rosenberg, Edelknecht, acknowledge that out of a special favor that the Counts Palatine Ruprecht der Ältere, Ruprecht der Jüngere, and Ruprecht the Youngest have done for them, they have opened to these their gracious lords Boxberg, castle and town, insofar as it belongs to them—namely the half part, which also derives from them as a fief—so that always \"whichever of them at the time is the eldest\" should be able to make use of this opening and establish himself therein against any enemy. Excepted are: the Bishop of Würzburg, the Count of Wertheim, and the cousins of the issuers \"who bear the helmet with us.\" Given at Heidelberg on St. Urban's day, 1381.  Original on parchment with 4 seals: of the issuer, of Konrad von Rosenberg, and of Albrecht von Venigen. — From the same day, a nearly identical document exists, which Konrad von Rosenberg, Ritter, Vitztum zu Heidelberg, issued. In that one, excepted alongside the Bishop of Würzburg are the issuer's brothers-in-law of Hirzhorn. This document is sealed by the issuer and his brother-in-law Hans vom Hirzhorn.",
       "img": [

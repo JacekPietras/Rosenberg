@@ -17,7 +17,11 @@
             "Ritter"
           ]
         },
-        "Engelhard von Rosenberg sealed Alheit von Uissigheim’s testament."
+        {
+          "type": "generic",
+          "person": "Engelhard von Rosenberg",
+          "content": "sealed Alheit von Uissigheim’s testament."
+        }
       ],
       "img": [
         {

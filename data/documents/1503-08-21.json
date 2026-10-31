@@ -7,8 +7,19 @@
       "german": "A: Statthalter und Räte des Fb. Gabriel E. S 1: Fb. Gabriel E. S 2: Waltherus, Abt des [Schotten-] Klosters St. Jakob in Regensburg Die Statthalter und Räte des Fb. Gabriel E. - der fbl. eichstätt. Hofmeister Ritter Jheronimus von Rosenberg, der Propst des Chorherrenstiftes in Herrieden (Stadt Herrieden, LK Ansbach) und eichstätt. Domherr Bernhart Artzt, die eichstätt. Domherren Karel von Absperg und Eberhardt von Parßperg, der eichstätt. Offizial Dr. Johann Ramelßpach, der fbl. eichstätt. Kanzler Dr. Kilian Münch, der fbl. eichstätt. Pfleger in Nassenfels (Markt Nassenfels, LK E.) Wentzel von Wolfßkel, der fbl. Landvogt auf dem St. Willibaldsberg in E. Eberhardt von Türheim, Heinrich vom Stain zum Altennstain (Altenstein, Markt Maroldsweisach, LK Haßberge) und Steffan von Knoringen - legen den Streit zwischen Abt Waltherus und dem Konvent des [Schotten-] Klosters St. Jakob in Regennßpurg (Regensburg, krfrSt.) einerseits und Steffan Frech und der Dorfgemeinde in Pütz (Bitz, Gde. Denkendorf, LK E.) andererseits über die Kapelle in Pütz und über verschiedene Abgaben durch einen Vergleich bei.",
       "english": "The governors and councillors of Prince-Bishop Gabriel of Eichstätt—including Jheronimus von Rosenberg, Ritter, Hofmeister; Bernhart Artzt, provost of the collegiate church in Herrieden and canon of Eichstätt; the Eichstätt canons Karel von Absberg and Eberhard von Parsberg; the Eichstätt official Dr. Johann Ramelsbach; the prince-bishop’s chancellor Dr. Kilian Mönch; his steward at Nassenfels Wentzel von Wolfskehl; his landvogt at St. Willibald’s hill in Eichstätt Eberhard von Thürheim; Heinrich vom Stein zum Altenstein; and Steffan von Knöringen—settle by agreement the dispute between Abbot Walther and the convent of St. James’s Scottish monastery in Regensburg on one side, and Steffan Frech and the village community of Bitz on the other, concerning the chapel at Bitz and various dues.",
       "facts": [
-        "Jheronimus von Rosenberg, Ritter, was Hofmeister of the Prince-Bishop of Eichstätt.",
-        "Jheronimus von Rosenberg served among the arbitrators who settled the dispute concerning the chapel and dues at Bitz."
+        {
+          "type": "title",
+          "person": "Jheronimus von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Hofmeister des Fürstbischofs von Eichstätt"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Jheronimus von Rosenberg",
+          "content": "joined the prince-bishop’s councillors in settling by agreement the dispute concerning the chapel and dues at Bitz."
+        }
       ]
     }
   ],

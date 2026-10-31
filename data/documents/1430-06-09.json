@@ -7,7 +7,11 @@
       "german": "Eberhart von Neuburg, Konrad von Rosenberg, Hans von Gemmingen und weitere namentlich genannte Aussteller bestätigen, dass ihnen Konrad von Weinsberg, Erbkämmerer des Römischen Reiches, und seine Ehefrau Anna, geb. von Hohenlohe die Burg Weikersheim, Schäftersheim, Nassach, Rettersheim, Elpersheim, Neubronn, Rinderfeld, Wermutshausen (\"Wernprechtshusen\"), Streichental, Herbsthausen (\"Herbishusen\"), Adolzhausen (\"Ottelshusen\") und Queckbronn mit Zustimmung des Bischofs Johann von Würzburg als Lehensherr verpfändet haben.",
       "english": "Eberhard von Neuburg, Konrad von Rosenberg, Hans von Gemmingen, and other named issuers confirm that Konrad von Weinsberg, hereditary chamberlain of the Holy Roman Empire, and his wife Anna, née von Hohenlohe, pledged Weikersheim Castle and the places Schäftersheim, Nassach, Rettersheim, Elpersheim, Neubronn, Rinderfeld, Wermutshausen, Streichental, Herbsthausen, Adolzhausen, and Queckbronn to them with the consent of Bishop Hans of Würzburg, their feudal lord.",
       "facts": [
-        "Konrad von Rosenberg was one of the issuers confirming the pledge of Weikersheim Castle and the named places by Konrad von Weinsberg and his wife Anna."
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "was among the issuers who confirmed that Konrad von Weinsberg and his wife Anna had pledged Weikersheim Castle and the named places to them with the consent of the Bishop of Würzburg, their liege lord."
+        }
       ]
     }
   ],

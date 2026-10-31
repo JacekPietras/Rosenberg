@@ -12,7 +12,6 @@
           "person": "Christine von Handschuhsheim",
           "of": "arnold_boxberg"
         },
-        "Arnold von Rosenberg and Christine von Handschuhsheim sold their quarter share of Boxberg to Ulrich and Jörg von Rosenberg for 6,500 florins.",
         {
           "type": "parent",
           "person": "arnold_boxberg",
@@ -40,8 +39,26 @@
             "Ritter"
           ]
         },
-        "[arnold_boxberg] had previously purchased a quarter share of Boxberg from Konrad von Rosenberg, Ritter",
-        "Christine von Handschuhsheim had previously purchased a quarter share of Boxberg from Konrad von Rosenberg, Ritter"
+        {
+          "type": "generic",
+          "person": "arnold_boxberg",
+          "content": "sold their quarter of Boxberg to their sons Ulrich and Jörg von Rosenberg together with his wife Christine von Handschuhsheim."
+        },
+        {
+          "type": "generic",
+          "person": "Christine von Handschuhsheim",
+          "content": "sold their quarter of Boxberg to their sons Ulrich and Jörg von Rosenberg together with her husband Arnold von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "arnold_boxberg",
+          "content": "had previously bought their quarter of Boxberg from Konrad von Rosenberg, Ritter, together with his wife Christine von Handschuhsheim."
+        },
+        {
+          "type": "generic",
+          "person": "Christine von Handschuhsheim",
+          "content": "had previously bought their quarter of Boxberg from Konrad von Rosenberg, Ritter, together with her husband Arnold von Rosenberg."
+        }
       ],
       "img": [
         {

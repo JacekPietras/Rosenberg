@@ -7,9 +7,16 @@
       "german": "Eberhard und Ulrich von Rosenberg vereinigen sich, die Schäferei, die bisher Eberhard allein hatte, gemeinsam zu haben.",
       "english": "Eberhard and Ulrich von Rosenberg unite to have the sheep farm, which Eberhard alone had previously alone.",
       "facts": [
-        "Eberhard von Rosenberg der Jüngere previously held the Schäferei alone",
-        "Eberhard von Rosenberg der Jüngere agreed to jointly hold the Schäferei with Ulrich von Rosenberg",
-        "Ulrich von Rosenberg agreed to jointly hold the Schäferei with Eberhard von Rosenberg der Jüngere"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "had previously held the sheep farm alone."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "agreed with Ulrich von Rosenberg to hold the sheep farm jointly."
+        }
       ],
       "img": [
         {

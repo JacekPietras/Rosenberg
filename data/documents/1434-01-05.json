@@ -27,7 +27,6 @@
           "person": "Eberhard von Gauangelloch",
           "diedBefore": "1434-01-06"
         },
-        "Agnes von Rosenberg and Diether von Gauangelloch der Jüngere sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth.",
         {
           "type": "parent",
           "person": "Eberhard von Gauangelloch",
@@ -36,6 +35,19 @@
           "ofTitle": [
             "der Jüngere"
           ]
+        },
+        {
+          "type": "generic",
+          "person": "Agnes von Rosenberg",
+          "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Diether von Gauangelloch der Jüngere."
+        },
+        {
+          "type": "generic",
+          "person": "Diether von Gauangelloch",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Agnes von Rosenberg."
         }
       ],
       "img": [

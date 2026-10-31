@@ -11,7 +11,16 @@
       "german": "Georg, Graf und Herr zu Henneberg, Komtur zu Mergentheim des Deutschen Ordens, und Wolf von Dottenheim genannt Adell zu Messelhausen schlichten mit Einwilligung Arnolds von Rosenberg den Streit zwischen Wendel Franck und Hans Quentzer aus Edelfingen. Hans Quentzer verpflichtet sich, Wendel Franck den entstandenen Schaden und die Kosten in Höhe von 10 rheinischen Gulden zu erstatten. Siegler: Georg von Henneberg, Wolf von Dottenheim und Arnold von Rosenberg. Datiert 18. Februar 1495.",
       "english": "Georg, Count and Lord of Henneberg and Teutonic Order commander at Mergentheim, and Wolf von Dottenheim called Adell of Messelhausen settle, with Arnold von Rosenberg’s consent, the dispute between Wendel Franck and Hans Quentzer of Edelfingen. Hans Quentzer undertakes to reimburse Wendel Franck for the resulting damage and costs, amounting to 10 Rhenish gulden. Sealers: Georg von Henneberg, Wolf von Dottenheim, and Arnold von Rosenberg. Dated 18 February 1495.",
       "facts": [
-        "Arnold von Rosenberg consented to the arbitration of the dispute between Wendel Franck and Hans Quentzer and sealed the settlement."
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "consented to the settlement of the dispute between Wendel Franck and Hans Quentzer."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "content": "sealed the deed documenting the settlement."
+        }
       ],
       "img": [
         {

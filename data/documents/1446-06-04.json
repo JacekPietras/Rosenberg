@@ -11,7 +11,14 @@
       "german": "Eberhard von Rosenberg d. Ä. verkauft an Jost von Venningen, Komtur zu Mergentheim, verschiedene Gülten und Güter zu Dainbach.",
       "english": "Eberhard von Rosenberg der Ältere sells various rents and properties in Dainbach to Jost von Venningen, Commander at Mergentheim.",
       "facts": [
-        "Eberhard von Rosenberg der Ältere sold rents and properties in Dainbach to Jost von Venningen, Komtur zu Mergentheim."
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "content": "sold various rents and properties in Dainbach to Jost von Venningen, Komtur zu Mergentheim."
+        }
       ],
       "img": [
         {

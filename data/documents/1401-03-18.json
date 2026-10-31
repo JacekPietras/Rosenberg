@@ -20,7 +20,14 @@
             "der Jüngere"
           ]
         },
-        "The Pfalzgraf granted Konrad von Rosenberg a quarter share of Schloss Boxberg."
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "content": "received a quarter of Boxberg Castle from King Ruprecht, acting as Count Palatine."
+        }
       ]
     }
   ]

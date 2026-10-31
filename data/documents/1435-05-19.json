@@ -22,13 +22,26 @@
             "Ritter"
           ]
         },
-        "Eberhard von Gauangelloch sold a share of the großen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
-        "Anna von Rosenberg sold a share of the großen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
-        "Eberhard von Gauangelloch sold a share of the kleinen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
-        "Anna von Rosenberg sold a share of the kleinen Zehnten at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
-        "Eberhard von Gauangelloch sold a Gut at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
-        "Anna von Rosenberg sold a Gut at Kirchhausen to Eberhard von Seinsheim, Deutschmeister",
-        "Eberhard von Seinsheim is Deutschmeister (Meister des Deutschen Ordens in deutschen und welschen Landen)"
+        {
+          "type": "generic",
+          "person": "Eberhard von Gauangelloch",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "sold their share of the large and small tithes and an estate at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, jointly with his wife Anna von Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Anna von Rosenberg",
+          "content": "sold their share of the large and small tithes and an estate at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, jointly with her husband Eberhard von Gauangelloch."
+        },
+        {
+          "type": "title",
+          "person": "Eberhard von Seinsheim",
+          "personTitle": [
+            "Deutschmeister"
+          ]
+        }
       ]
     }
   ]

@@ -15,7 +15,11 @@
             "der Jüngere"
           ]
         },
-        "Anna von Rosenberg is commemorated in the Jahrzeit endowed by Wiprecht von Helmstatt der Ältere and Anna von Neipperg"
+        {
+          "type": "generic",
+          "person": "Anna von Rosenberg",
+          "content": "was commemorated in the annual observance established by Wiprecht von Helmstatt der Ältere and Anna von Neipperg."
+        }
       ]
     }
   ]

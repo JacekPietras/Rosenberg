@@ -27,9 +27,22 @@
             "der Jüngere"
           ]
         },
-        "Eberhard von Rosenberg der Jüngere transferred a share at Boxberg to Ulrich von Rosenberg to redeem a Pfandschaft",
-        "Eberhard von Rosenberg der Ältere held a share at Boxberg as a Pfandschaft from Ulrich von Rosenberg",
-        "Eberhard von Rosenberg der Ältere held a share at Boxberg as a Pfandschaft from Jörg von Rosenberg"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "transferred to his cousin Ulrich von Rosenberg the Boxberg share that his father had held as a 3,000-guilder pledge, in order to redeem the pledge.",
+          "personTitle": [
+            "der Jüngere"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "had received the Boxberg share as a 3,000-guilder pledge from Ulrich and Jörg von Rosenberg.",
+          "personTitle": [
+            "der Ältere"
+          ]
+        }
       ],
       "img": [
         {

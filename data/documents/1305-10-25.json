@@ -64,9 +64,66 @@
             "der Jüngere"
           ]
         },
-        "Eberhard von Rosenberg der Ältere, Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold sold their goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey.",
-        "Eberhard von Rosenberg der Ältere, Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold bound themselves to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day.",
-        "Eberhard von Rosenberg der Ältere, Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold appended their seals to the charter."
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Uissigheim",
+          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Arnold von Uissigheim."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Uissigheim",
+          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Eberhard von Uissigheim der Jüngere."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "appended his seal to the charter."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "appended his seal to the charter."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Uissigheim",
+          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Arnold von Uissigheim."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Uissigheim",
+          "content": "appended his seal to the charter."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Uissigheim",
+          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Eberhard von Uissigheim der Jüngere."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Uissigheim",
+          "content": "appended his seal to the charter."
+        }
       ],
       "img": [
         {

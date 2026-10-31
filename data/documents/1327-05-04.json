@@ -17,36 +17,116 @@
           "of": "konrad_husband_of_alheit_von_neudeck",
           "ofTitle": [
             "Ritter"
-          ]
+          ],
+          "ofDeceased": true
         },
         {
           "type": "parent",
           "person": "alheit_von_neudeck",
-          "of": "Hans von Neudeck"
+          "of": "Hans"
         },
         {
           "type": "kin",
           "person": "alheit_von_neudeck",
           "of": "Eberhard von Uissigheim",
           "ofTitle": [
-            "kelner ze Brunnebach"
+            "Kellerer zu Bronnbach"
           ],
           "term": "oheim"
         },
-        "[alheit_von_neudeck] donated annual rent from her share of the mill at Rosenberg to Bronnbach Abbey",
-        "[alheit_von_neudeck] endowed an annual Advent service at Bronnbach for the soul of [konrad_husband_of_alheit_von_neudeck]",
-        "Heinrich Müller lived at the mill at Rosenberg",
-        "The pastor of Uissigheim was to be present at the vigil and anniversary of the Advent service at Bronnbach",
-        "[alheit_von_neudeck] reserved the right to buy back the rent from Bronnbach Abbey",
-        "[alheit_von_neudeck] promised that her son Hans would confirm and surrender the rent to Bronnbach Abbey once of age",
-        "[vogt_zu_Durn] is named as Alheit's “Buhle”",
-        "[alheit_von_neudeck] appointed [vogt_zu_Durn] as surety for the donation",
-        "[vogt_zu_Durn] was obliged to perform Einlager at Külsheim if Hans did not confirm the donation",
-        "[vogt_zu_Durn] sealed the donation",
-        "[vogt_zu_Durn] was a witness",
-        "Brother Eberhard von Uissigheim, cellarer of Bronnbach, was a witness",
-        "Konrad von Bremen was a witness",
-        "Brother Hans von Bibelach was a witness",
+        {
+          "type": "generic",
+          "person": "alheit_von_neudeck",
+          "content": "donated annual rent from her share of the mill at Rosenberg to Bronnbach Abbey."
+        },
+        {
+          "type": "generic",
+          "person": "alheit_von_neudeck",
+          "content": "endowed an annual Advent service at Bronnbach for the soul of her late husband."
+        },
+        {
+          "type": "generic",
+          "person": "Heinrich Müller",
+          "content": "lived at the mill at Rosenberg."
+        },
+        {
+          "type": "generic",
+          "person": "alheit_von_neudeck",
+          "content": "required the pastor of Uissigheim to attend the vigil and anniversary of the Advent service at Bronnbach."
+        },
+        {
+          "type": "generic",
+          "person": "alheit_von_neudeck",
+          "content": "reserved the right to buy back the rent from Bronnbach Abbey."
+        },
+        {
+          "type": "generic",
+          "person": "alheit_von_neudeck",
+          "content": "promised to ensure that her son would confirm and surrender the rent to Bronnbach Abbey once of age."
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "was called Alheit’s “Buhle” in the charter.",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "alheit_von_neudeck",
+          "content": "appointed Eberhard von Rosenberg as surety for the donation."
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "was obliged to perform Einlager at Külsheim if Alheit’s son did not confirm the donation.",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "sealed the donation.",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Durn",
+          "content": "was present as a witness.",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Uissigheim",
+          "content": "was present as a witness.",
+          "personTitle": [
+            "Bruder",
+            "Kellerer zu Bronnbach"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Bremen",
+          "content": "was present as a witness."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Bibelach",
+          "content": "was present as a witness.",
+          "personTitle": [
+            "Bruder"
+          ]
+        },
         {
           "type": "death",
           "person": "konrad_husband_of_alheit_von_neudeck",

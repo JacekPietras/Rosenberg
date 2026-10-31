@@ -15,8 +15,11 @@
           "person": "arnold_boxberg",
           "of": "eberhard_jagstberg"
         },
-        "[arnold_boxberg] and [eberhard_jagstberg] exchanged meadows at Beckstein for a meadow at Kupprichhausen",
-        "[arnold_boxberg] and [eberhard_jagstberg] conducted property transactions with Raban Mertin and Kunz Mertin of Messelhausen"
+        {
+          "type": "generic",
+          "person": "arnold_boxberg",
+          "content": "exchanged a meadow at Beckstein for a meadow at Kupprichhausen with Raban and Kunz Mertin, residents of Messelhausen, jointly with Eberhard von Rosenberg."
+        }
       ],
       "img": [
         {

@@ -16,8 +16,22 @@
             "Ritter"
           ]
         },
-        "Hans von Rosenberg served as a surety for Archbishop Adolf of Mainz's debt to Abraham von Jagstberg and Gottschalk of Mergentheim",
-        "Hans von Rosenberg was required to hold Einlager in Mergentheim if necessary"
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "served as a surety for Archbishop Adolf of Mainz’s debt to Abraham von Jagstberg and Gottschalk of Mergentheim."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "was to hold Einlager in Mergentheim if required."
+        }
       ]
     }
   ]

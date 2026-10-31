@@ -14,7 +14,15 @@
             "Junkherre"
           ]
         },
-        "Eberhard von Rosenberg der Ältere sealed the Mergentheim citizens’ oath of loyalty to the Teutonic Order.",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Ältere",
+            "Junkherre"
+          ],
+          "content": "sealed the citizens’ oath of loyalty to the Teutonic Order."
+        },
         {
           "type": "title",
           "person": "Arnold von Rosenberg",
@@ -23,7 +31,15 @@
             "Edelknecht"
           ]
         },
-        "Arnold von Rosenberg sealed the Mergentheim citizens’ oath of loyalty to the Teutonic Order."
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "Junkherre",
+            "Edelknecht"
+          ],
+          "content": "sealed the citizens’ oath of loyalty to the Teutonic Order."
+        }
       ]
     }
   ]

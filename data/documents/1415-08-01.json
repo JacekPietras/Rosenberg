@@ -19,7 +19,6 @@
             "zu Minnenberg"
           ]
         },
-        "Kunz von Rosenberg der Ältere zu Minnenberg resided at Minnenberg",
         {
           "type": "spouse",
           "person": "Anna von Sickingen",
@@ -34,10 +33,38 @@
           "person": "Christine von Handschuhsheim",
           "of": "arnold_boxberg"
         },
-        "Kunz von Rosenberg der Ältere zu Minnenberg sold his Viertel at Boxberg to [arnold_boxberg]",
-        "Anna von Sickingen sold her Viertel at Boxberg to [arnold_boxberg]",
-        "Anna Marschall sold her Viertel at Boxberg to [arnold_boxberg]",
-        "Kunz von Rosenberg der Ältere zu Minnenberg had previously purchased the Viertel at Boxberg from the Johanniter"
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "content": "resided at Minnenberg."
+        },
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "der Ältere",
+            "zu Minnenberg"
+          ],
+          "content": "sold their quarter of Boxberg to Arnold von Rosenberg and Christine von Handschuhsheim together with his wife Anna von Sickingen."
+        },
+        {
+          "type": "generic",
+          "person": "Anna von Sickingen",
+          "content": "sold their quarter of Boxberg to Arnold von Rosenberg and Christine von Handschuhsheim together with her husband Kunz von Rosenberg der Ältere."
+        },
+        {
+          "type": "generic",
+          "person": "Anna Marschall",
+          "content": "sold their quarter of Boxberg to Arnold von Rosenberg and Christine von Handschuhsheim together with her son Kunz von Rosenberg der Ältere and his wife Anna von Sickingen."
+        },
+        {
+          "type": "generic",
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "content": "had previously bought the quarter of Boxberg from the Hospitallers."
+        }
       ],
       "img": [
         {

@@ -33,8 +33,19 @@
           "personDeceased": true,
           "of": "Konrad von Rosenberg"
         },
-        "Eberhard von Rosenberg and Konrad von Rosenberg sold a hufe at Uissigheim to Bronnbach Abbey",
-        "Konrad von Uissigheim sealed the transaction",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sold a Hube at Uissigheim to Bronnbach Abbey together with Konrad von Rosenberg.",
+          "personTitle": [
+            "der Jüngere"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Uissigheim",
+          "content": "sealed the transaction."
+        },
         {
           "type": "death",
           "person": "Eberhard von Rosenberg",

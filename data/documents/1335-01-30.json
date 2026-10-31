@@ -11,7 +11,14 @@
       "german": "Der Edelknecht Konrad von Gebsattel und seine Ehefrau Mechthild, gesessen zu Königheim, ihre Söhne Hermann und Gottfried sowie weitere Geschwister und Miterben verkaufen dem Dekan Heilmann Schwab und dem Kapitel des Stifts Aschaffenburg einen jährlichen Zins von 3 Pfund Heller und 6 Fastnachtshühnern aus sechs Gütern und ihrem Hof in Königheim. Sie stellen für die Gewährleistung nach Landesgewohnheit den Pfarrer von Königheim Kraft [During] sowie die Edelknechte Kraft von Uissigheim und Hermann Seman von Königheim als Bürgen. Die Bürgen übernehmen die Bürgschaft und verpflichten sich, bei ausbleibender Gewährleistung auf Aufforderung in einer öffentlichen Herberge in Tauberbischofsheim Einlager zu halten.",
       "english": "Konrad von Gebsattel, Edelknecht and his wife Mechthild, resident in Königheim, their sons Hermann and Gotfried, and their other siblings and co-heirs sell an annual rent of 3 pounds Heller and 6 Shrovetide hens from six properties and their farm in Königheim to Dean Heilmann Schwab and the chapter of Aschaffenburg Abbey. To guarantee the customary warranty, they name the parish priest of Königheim, Kraft [During], and Kraft von Uissigheim, Edelknecht, and Hermann Seman von Königheim, Edelknecht, as guarantors. The guarantors undertake the guarantee and agree to stay under pledge at a public inn in Tauberbischofsheim if the warranty is not fulfilled after they are called upon.",
       "facts": [
-        "Kraft von Uissigheim served as a guarantor for Konrad von Gebsattel, Mechthild, and their co-heirs in their sale of an annual rent from properties in Königheim to Aschaffenburg Abbey."
+        {
+          "type": "generic",
+          "person": "Kraft von Uissigheim",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "content": "served as guarantor for Konrad von Gebsattel, Mechthild, and their co-heirs in their sale of an annual rent from properties in Königheim to Aschaffenburg Abbey."
+        }
       ],
       "img": [
         {

@@ -12,26 +12,25 @@
       "english": "Spellings: Angerthal 1401 and 1440 (document in the Protestant parish archive in Boxberg), Angelthor 1589, Angeldarm around 1650, Angelthorn 1589. \\n\\nLiterature: C. W. F. L. Stocker, Chronicle of Angelthürn, Schillingstadt, Schwabhausen, Windischbuch, Sachsenflur. Heidelberg 1870. \\n\\nOriginally probably belonging to the Lords of Boxberg, then to the Knights Hospitaller of Wölchingen, to whom Kraft von Boxberg made the first donation there in 1191. Later, it appears to have been owned by the Lords of Rosenberg. After the death of Albrecht von Rosenberg (1572), Angelthürn changed hands several times in the following centuries (the longest being owned by the von Dienheim family, until 1668), until 1764, when Joachim Joseph von Fick, a Palatinate-Sulzbach government councillor and court chamberlain, acquired the town for 16,000 florins. With his grandson Franz, who donated his entire estate to the construction of a Catholic church and parish, the family died out in Angelthürn in 1879. The Electorate of the Palatinate held territorial rights until 1803, and Leiningen from 1803 to 1806. \\n\\nVillage regulations renewed and confirmed in 1563 by Albrecht von Rosenberg, in 1589 by Albrecht von Dienheim, and in 1613 and 1614. \\n\\nA chapel (U. L. Fr.), already mentioned in 1440, with its own chaplains since 1482. (E.) \\n\\nThe Protestant church, picturesquely situated above the village, dates back to its original foundation by the Lords of Rosenberg toward the end of the 15th century. After the introduction of Lutheran doctrine by Albrecht von Rosenberg, the church and rectory gradually fell into disrepair until the tower collapsed in 1769. Repairs were undertaken by J. von Fick (see above) in 1771, after the sacristy had already been demolished in 1765 and its materials used to raise the tower, which had been damaged and nearly collapsed by severe weather in 1751. \\n\\nA single-nave, flat-roofed nave with a vaulted, square chancel, on whose keystone the Rosenberg coat of arms (see above) is inscribed. The tracery in the two-part pointed-arch windows has been largely renewed. The bell tower rising above the chancel, never rebuilt to its original height since its collapse (see above), is covered with an ugly gable roof. It is unadorned both inside and out. \\n\\nIn the cemetery there are some rich tombstones from the previous century belonging to members of the von Fick family. \\n\\nBells. \\n\\n1) The smaller one (15th century) with the inscription:\nave 🔔 maria 🔔 grace 🔔 full 🔔 lord 🔔 with you 🔔 beatrid ✠ en (sic!);  \\n\\nbelow, Mary with the Child under a late Gothic canopy. \\n\\n2) The larger one (end of 15th century) with the inscription: \\n\\n✠ God's word remains forever 🔔 believe that with that you are blessed 🔔 Christoph Glockengiesser from Nuremberg gave me ✠; \\n\\nbelow a pretty trefoil frieze. \\n\\nIn the center of the village stands the former von Fick castle, partially demolished; all that remains is an unadorned half-timbered house on a solid foundation with the von Fick coat of arms (a swan under a beam with three stars) above the (renovated) door. Inside is the renovated Catholic oratory (since 1768), dedicated to St. Joseph.",
       "facts": [
         {
-          "date": "1191",
-          "text": "Kraft von Boxberg made a donation at Angelthürn to the Johanniter of Wölchingen."
-        },
-        {
-          "date": "1563",
-          "text": "Albrecht von Rosenberg issued a village ordinance for Angelthürn."
-        },
-        {
           "type": "death",
           "person": "Albrecht von Rosenberg",
           "diedOn": "1572",
           "date": "1572"
+        },
+        {
+          "type": "generic",
+          "person": "Kraft von Boxberg",
+          "date": "1191",
+          "content": "made the first donation there to the Hospitallers of Wölchingen."
+        },
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "date": "1563",
+          "content": "issued a village ordinance for Angelthürn."
         }
       ],
-      "guesses": [
-        {
-          "date": "1191",
-          "text": "Before the Johanniter’s first donation there in 1191, Angelthürn may have belonged to the Lords of Boxberg."
-        }
-      ]
+      "guesses": []
     },
     {
       "title": "BOBSTADT",
@@ -50,25 +49,14 @@
           "date": "1632",
           "text": "The Bobstadt fief reverted to Kurpfalz."
         }
-      ]
+      ],
+      "guesses": []
     },
     {
       "title": "BOXBERG",
       "german": "Schreibweisen: Bockesberg 1166, Bocchesberg 1172, Bokkeberc 1221, Bocsberg 1301, Poxberg 1489, Poxburg 1528. \\n\\nLiteratur: Ottmar F. H. Schönhuth, Bocksberg und der Schüpfergrund bei Königshofen, Mergentheim 1856 — C. W. F. L. Stocker, Chronik von Boxberg... (s.o.). \\n\\nDas Herrengeschlecht vom badischen Boxberg tritt zuerst mit Konrad von Boxberg in der 2. Hälfte des XII. Jhs. auf. Die im Komburger Schenkungsbuche genannte Frau Guota von Bocchesberg scheint die Gattin dieses Konrad gewesen zu sein. Um 1212 war ein Konrad von Boxberg Lehensträger der Herren von Schweinberg, während Heinrich von Boxberg i. J. 1213 Schloss und Dorf Boxberg dem Stifte Würzburg übergab und wieder als Lehen empfing. Seine Erben waren die Söhne seiner Schwester Adelheid: Konrad und Krafto von Krautheim, von denen der letztere unter Verzicht auf Krautheim in den Besitz der meisten Güter in Boxberg gelangte und fortan den Namen davon führte. Mit dessen Sohne Konrad starb das Geschlecht i. J. 1313 aus. Erben wurden die Grafen von Wertheim, neben denen die Johanniter von Wölchingen, die hier eine Kommende gegründet hatten, den Hauptbesitz von Boxberg in Händen hatten. Ihnen traten denn auch bald darauf die Wertheimer Grafen ihre dortige Erbschaft ab, aber bereits am 25. Mai 1381 verkaufte der verschuldete Orden Burg und Stadt Boxberg um 18 000 Goldgulden an die Ritter Konrad und Eberhard von Rosenberg und die Edelknechte Konrad und Arnold von Rosenberg, welche die Neuerwerbung sofort an Kurpfalz übertrugen, um sie von diesem als Lehen zurückzuerhalten. Als Stammschloss dieses 1276 zum ersten Male urkundlich genannten Geschlechtes gilt das badische Rosenberg. Die Nachkommen der vier Brüder, welche den Besitz in verschiedener Weise unter sich getheilt und Burg und Stadt sehr befestigt hatten, arteten immer mehr in Raubritter aus, so daß es i.J. 1470 zu einer Belagerung der Stadt und Burg kam von Seiten der verbundenen Herren von Kurpfalz, Mainz und Würzburg, die nach Vertreibung des Jörg von Rosenberg zunächst die Herrschaft gemeinschaftlich übernahmen, aber bereits 1477 den früheren Besitzer wieder restituierten unter der besonderen Bedingung, daß die „gebrochene“ Veste nicht mehr aufgebaut werde. Jörg von Rosenberg umging dies Verbot in der Weise, daß er nur eine Bastei neu errichtete, in Wirklichkeit schuf er ein neues Schloss, dessen Grundsteinlegung laut Inschrift (jetzt in Karlsruhe, s. unten) am Mittwoch vor Mttfasten des Jahres 1480 erfolgt ist. Bald ging das alte Treiben abermals los, so daß am 14. Juni 1523 das Heer des schwäbischen Bundes vor Boxberg erschien, das neue Schloss eroberte und in Asche legte. Kurfürst Ludwig V. von der Pfalz erwarb darauf die Herrschaft Boxberg von den drei aus der Burg geflohenen Söhnen Georgs von Rosenberg um 5000 fl., aber bereits i.J. 1547 ist Albrecht von Rosenberg, ein thatkräftiger und vom Kaiser Karl V. wegen ausgezeichneter Kriegsdienste hochgeschätzter Ritter, trotz des Widerspruches von Kurpfalz, wieder in Besitz des der Familie entrissenen Besitzes, und im selben Jahre begann der Aufbau einer dritten Burg, die bereits nach 2 Jahren in bewohnbaren Zustande gewesen ist. Die nächsten Jahre vergingen unter beständigen Streitigkeiten des Ritters mit Kurpfalz und den Städten des schwäbischen Bundes, bis es i.J. 1561 zu einem Vergleich mit dem Heidelberger Kurfürsten und zur Abtretung von Schloss, Stadt und Amt Boxberg an Kurpfalz seitens Albrechts von Rosenberg um die Summe von 27000 fl. und zu mancher anderweitigen Abfindung kam. Albrecht verlegte später seinen Wohnsitz in Unterschüpf, wo er sich ein Schloss erbaute (s. unten). Von dieser Zeit ab blieb Boxberg kurpfälzisch.",
       "english": "Spellings: Bockesberg 1166, Bocchesberg 1172, Bokkeberc 1221, Bocsberg 1301, Poxberg 1489, Poxburg 1528. \\n\\nLiterature: Ottmar F. H. Schönhuth, Boxberg and the Schüpfergrund near Königshofen, Mergentheim 1856 — C. W. F. L. Stocker, Chronicle of Boxberg... (see above). \\n\\nThe lordly family of Boxberg in Baden first appears with Konrad von Boxberg in the second half of the 12th century. Guota von Bocchesberg, mentioned in the Komburg Book of Donations, appears to have been this Konrad's wife. Around 1212, a Konrad von Boxberg was a feudal lord of the Lords of Schweinberg, while Heinrich von Boxberg i. In 1213, the Order transferred the castle and village of Boxberg to the Würzburg Abbey and received it back as a fief. His heirs were the sons of his sister Adelheid: Konrad and Kraft von Krautheim. The latter, renouncing Krautheim, acquired most of the Boxberg estates and henceforth bore the name. With his son Konrad, the family died out in 1313. The heirs were the Counts of Wertheim, alongside whom the Knights of St. John of Wölchingen, who had founded a commandery here, held the main holdings of Boxberg. The Counts of Wertheim soon ceded their inheritance there to them, but on May 25, 1381, the indebted Order sold the castle and town of Boxberg for 18,000 gold guilders to the knights Konrad and Eberhard von Rosenberg and the noblemen Konrad and Arnold von Rosenberg, who immediately transferred their new acquisition to the Electorate of the Palatinate, in order to receive it back from them as a fief. Rosenberg in Baden is considered the ancestral castle of this family, first documented in 1276. The descendants of the four brothers, who divided the property among themselves in various ways and heavily fortified the castle and town, increasingly degenerated into robber barons, so that in 1470 the town and castle were besieged by the allied lords of the Electorate of the Palatinate, Mainz, and Würzburg. After Jörg von Rosenberg was expelled, they initially assumed joint control, but in 1477 they restored the former owner under the special condition that the \"broken\" fortress would not be rebuilt. Jörg von Rosenberg circumvented this prohibition by only rebuilding a bastion; in reality, he created a new castle, the foundation stone of which, according to the inscription (now in Karlsruhe, see below), was laid on the Wednesday before Lent in 1480. Soon the old hustle and bustle started up again, so that on June 14, 1523 the army of the Swabian League appeared before Boxberg, captured the new castle and reduced it to ashes. Elector Ludwig V of the Palatinate then acquired the lordship of Boxberg from the three sons of Georg von Rosenberg who had fled the castle for 5,000 florins, but already in 1547 Albrecht von Rosenberg, an energetic knight highly esteemed by Emperor Charles V for his outstanding military service, despite the opposition of the Electorate of the Palatinate, regained possession of the property that had been taken from the family, and in the same year the construction of a third castle began, which was inhabitable after just two years. The following years passed with constant disputes between the knight and the Electorate of the Palatinate and the cities of the Swabian League, until in 1548 In 1561, a settlement was reached with the Elector of Heidelberg, resulting in Albrecht von Rosenberg cession of the castle, town, and district of Boxberg to the Electorate of the Palatinate for the sum of 27,000 florins, along with various other compensations. Albrecht later moved his residence to Unterschüpf, where he built a castle (see below). From this time on, Boxberg remained part of the Electorate of the Palatinate.",
       "facts": [
-        {
-          "date": "1213",
-          "text": "Heinrich von Boxberg transferred castle and village of Boxberg to the foundation of Würzburg."
-        },
-        {
-          "date": "1213",
-          "text": "Heinrich von Boxberg received castle and village of Boxberg as a fief from the foundation of Würzburg."
-        },
-        {
-          "date": "1381-05-25",
-          "text": "The Johanniter of Wölchingen sold castle and town of Boxberg to Konrad von Rosenberg, Ritter; Eberhard von Rosenberg, Ritter; Konrad von Rosenberg, Edelknecht; and Arnold von Rosenberg, Edelknecht."
-        },
         {
           "type": "title",
           "person": "Konrad von Rosenberg",
@@ -102,30 +90,6 @@
           "date": "1381-05-25"
         },
         {
-          "date": "1276",
-          "text": "The von Rosenberg family was first mentioned in a document in 1276."
-        },
-        {
-          "date": "1470",
-          "text": "Kurpfalz, Mainz and Würzburg besieged the town and castle of Boxberg."
-        },
-        {
-          "date": "1477",
-          "text": "Kurpfalz, Mainz and Würzburg restored the lordship of Boxberg to Jörg von Rosenberg on condition that the damaged fortress not be rebuilt."
-        },
-        {
-          "date": "1480",
-          "text": "The foundation stone of Jörg von Rosenberg’s new castle at Boxberg was laid on the Wednesday before Mid-Lent."
-        },
-        {
-          "date": "1523-06-14",
-          "text": "The army of the Swabian League captured and burned the new castle at Boxberg."
-        },
-        {
-          "date": "1547",
-          "text": "Albrecht von Rosenberg regained possession of the Boxberg property taken from his family."
-        },
-        {
           "type": "title",
           "person": "Albrecht von Rosenberg",
           "personTitle": [
@@ -134,98 +98,112 @@
           "date": "1547"
         },
         {
-          "date": "1547",
-          "text": "Construction of a third castle at Boxberg began."
+          "type": "generic",
+          "person": "Heinrich von Boxberg",
+          "date": "1213",
+          "content": "transferred Boxberg Castle and village to the Würzburg foundation."
         },
         {
+          "type": "generic",
+          "person": "Heinrich von Boxberg",
+          "date": "1213",
+          "content": "received Boxberg Castle and village back as a fief from the Würzburg foundation."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1381-05-25",
+          "content": "acquired Boxberg Castle and town from the Hospitallers of Wölchingen as one of four Rosenberg purchasers."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1381-05-25",
+          "content": "acquired Boxberg Castle and town from the Hospitallers of Wölchingen as one of four Rosenberg purchasers."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25",
+          "content": "acquired Boxberg Castle and town from the Hospitallers of Wölchingen as one of four Rosenberg purchasers."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "date": "1381-05-25",
+          "content": "acquired Boxberg Castle and town from the Hospitallers of Wölchingen as one of four Rosenberg purchasers."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "date": "1470",
+          "content": "was driven from Boxberg when the Palatinate, Mainz, and Würzburg besieged the town and castle."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "date": "1477",
+          "content": "was restored to the lordship of Boxberg on condition that the damaged fortress not be rebuilt."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "date": "1480",
+          "content": "began construction of a new castle at Boxberg, whose foundation stone was laid on the Wednesday before Mid-Lent."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "date": "1523-06-14",
+          "content": "had his new castle at Boxberg captured and burned by the Swabian League."
+        },
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1547",
+          "content": "regained possession of the Boxberg property taken from his family despite opposition from the Palatinate."
+        },
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "date": "1547",
+          "content": "laid the foundation stone of a third castle at Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
           "date": "1561",
-          "text": "Albrecht von Rosenberg ceded castle, town and district of Boxberg to Kurpfalz."
+          "content": "ceded Boxberg Castle, town, and district to the Electorate of the Palatinate."
+        },
+        {
+          "date": "1276",
+          "text": "The von Rosenberg family was first mentioned in a document in 1276."
         }
       ],
       "guesses": [
         {
+          "type": "generic",
+          "person": "Guota von Boxberg",
           "date": "1100",
-          "text": "Around 1100, the Comburg donation book records Guota von Bocchesberg as the wife of a Conrad (Württembergisches Urkundenbuch, I, no. A21); she may have been the wife of the later Konrad von Boxberg."
-        },
-        {
-          "date": "1381-05-25",
-          "text": "The four purchasers of Boxberg in 1381 may have been brothers; the book gives no documentary basis for this relationship."
-        },
-        {
-          "type": "sibling",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "of": "Eberhard von Rosenberg",
-          "ofTitle": [
-            "Ritter"
-          ],
-          "date": "1381-05-25"
-        },
-        {
-          "type": "sibling",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "of": "Konrad von Rosenberg",
-          "ofTitle": [
-            "Edelknecht"
-          ],
-          "date": "1381-05-25"
-        },
-        {
-          "type": "sibling",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "of": "Arnold von Rosenberg",
-          "ofTitle": [
-            "Edelknecht"
-          ],
-          "date": "1381-05-25"
-        },
-        {
-          "type": "sibling",
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "of": "Konrad von Rosenberg",
-          "ofTitle": [
-            "Edelknecht"
-          ],
-          "date": "1381-05-25"
-        },
-        {
-          "type": "sibling",
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "of": "Arnold von Rosenberg",
-          "ofTitle": [
-            "Edelknecht"
-          ],
-          "date": "1381-05-25"
-        },
-        {
-          "type": "sibling",
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "of": "Arnold von Rosenberg",
-          "ofTitle": [
-            "Edelknecht"
-          ],
-          "date": "1381-05-25"
-        },
-        {
-          "date": "1276",
-          "text": "The von Rosenberg family was first attested in 1276; Rosenberg in Baden may have been its ancestral castle."
+          "content": "may have been the wife of the later Konrad von Boxberg; the Comburg donation book records her as the wife of a Conrad around 1100 (Württembergisches Urkundenbuch, I, no. A21)."
         }
       ]
     },
@@ -238,8 +216,22 @@
       "english": "The town of Boxberg was formed when the lords of Rosenberg incorporated the village of Wanshoven, located below the castle, into the castle’s fortifications, surrounding it with walls and a moat. First mentioned in documents in 1245, it was already referred to as a town by 1332. Gate towers mentioned include the Eckmann Gate toward Schweigern and the Cent Gate toward Angeltürn. In 1479, Michel, Jörg, and Arnold Friedrich von Rosenberg granted their town of Boxberg a weekly market to be held on Saturdays. In 1590, the town, which already had three annual fairs, received a fourth one from Elector Friedrich of the Palatinate.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Michel von Rosenberg",
           "date": "1479",
-          "text": "Michel von Rosenberg, Jörg von Rosenberg, and Arnold Friedrich von Rosenberg granted Boxberg a weekly market on Saturdays."
+          "content": "with Jörg von Rosenberg and Arnold Friedrich von Rosenberg granted Boxberg a weekly market to be held on Saturdays."
+        },
+        {
+          "type": "generic",
+          "person": "Jörg von Rosenberg",
+          "date": "1479",
+          "content": "with Michel von Rosenberg and Arnold Friedrich von Rosenberg granted Boxberg a weekly market to be held on Saturdays."
+        },
+        {
+          "type": "generic",
+          "person": "Arnold Friedrich von Rosenberg",
+          "date": "1479",
+          "content": "with Michel and Jörg von Rosenberg granted Boxberg a weekly market to be held on Saturdays."
         }
       ]
     },
@@ -256,20 +248,26 @@
       "english": "As we have seen, there were three castles built in succession on this hill: the first, probably dating from the 12th century, was destroyed in 1470; the second was begun by Georg von Rosenberg in 1480 (see inscription below) but was already reduced to ruins by 1523; and the third, whose foundation stone was laid by Albrecht von Rosenberg in 1547 (see inscription below). Aside from some damage during the sieges and occupations of the Thirty Years' War—the town was surprisingly spared from destruction during the War of the Spanish Succession—this third castle appears to have remained in good condition until the previous century. In 1726, it was even repaired and partly used as a granary under Leiningen's rule (an interesting description of the castle remains from 1821 can be found in Gott: \"Schalk: The Knightly Castles and Mountain Castles of Germany,\" Halle, Vol. V, p. 134). In 1849, the castle was plundered by insurgents, and in 1857 it was auctioned off for demolition and gradually almost entirely dismantled.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1480",
+          "content": "began construction of the second castle at Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Georg von Rosenberg",
+          "date": "1523",
+          "content": "saw the second castle he had begun at Boxberg reduced to ruins by this year."
+        },
+        {
+          "type": "generic",
+          "person": "Albrecht von Rosenberg",
+          "date": "1547",
+          "content": "laid the foundation stone of the third castle at Boxberg."
+        },
+        {
           "date": "1470",
           "text": "The first castle at Boxberg was destroyed."
-        },
-        {
-          "date": "1480",
-          "text": "Georg von Rosenberg began construction of the second castle at Boxberg."
-        },
-        {
-          "date": "1523",
-          "text": "The second castle at Boxberg was reduced to ruins."
-        },
-        {
-          "date": "1547",
-          "text": "Albrecht von Rosenberg laid the foundation stone of the third castle at Boxberg."
         }
       ]
     },
@@ -322,17 +320,10 @@
       "english": "\"In the year of our Lord 1480, on Wednesday before Mid-Lent, I, Georg von Rosenberg, Ritter, laid the first stone at Boxberg on Monday after St. Michael's Day in the 14th year. Pray to God for us. This stone was laid here by Hans [von Rosenberg] of Encholtze, born my lawful wife, and she has faithfully commanded me to complete such construction as it stands here, and it was made as a watchtower into the land.\"",
       "guesses": [
         {
-          "date": "1480",
-          "text": "The damaged building inscription identifies Jörg von Rosenberg’s wife as Johann, born von Encholtze, but parts of her name and the description of her role in the construction are reconstructed."
-        },
-        {
-          "type": "spouse",
+          "type": "generic",
           "person": "Jörg von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "of": "Hans von Encholtze",
-          "date": "1480"
+          "date": "1480",
+          "content": "may have been married to Hans von Encholtze, born von Rosenberg; the damaged inscription leaves her given name and role in the construction uncertain."
         }
       ]
     },
@@ -409,8 +400,10 @@
       ],
       "guesses": [
         {
+          "type": "generic",
+          "person": "Margaretha von Rosenberg",
           "date": "1418",
-          "text": "The Bronnbach liber mortuorum reportedly records Margaretha von Rosenberg on 19 May 1418; the inscription instead states Wednesday after Pentecost, so the precise date requires checking."
+          "content": "may have been recorded in the Bronnbach liber mortuorum on 19 May 1418; her epitaph instead gives Wednesday after Pentecost, so the exact day remains uncertain."
         }
       ]
     },
@@ -424,18 +417,27 @@
       "english": "Older names: Ulscirben (ula altth. pot; scirbi-shards), Aulschirben, Eulscherben, Eilschirben, Eulscharben etc. \\n\\nFarm and mill. \\n\\nThe mill was first mentioned in documents in 1245 (Werth. Archive) and apparently initially belonged to the Rosenbergs and then to the Bronnbach monastery. In 1592 it passed from the property of a certain Hans Heilig for 4,100 fl. to the then owners of Gamburg, the cousins ​​Hartmut the Elder and Hartmut the Younger of Kronenberg, after the income owed to the monastery had already been sold to the Gamburg rulers for 240 fl. in 1572 by Abbot Hans of Bronnbach. [The Series Abbatum (see under the list of literature on Bronnbach) reports that the mill was built in 1397 by Konrad der Ältere. A. von Uissigheim, while the Historia monasterii Bronnbacensis by P. L. Kraemer (see ibid.) claims that it was acquired for the monastery by exchange in 1320 by Eberhard von Rosenberg. In any case, in a document from 1328 (Werth. Archives), it is still called: molendinum Eberhard von Rosenberg. \\n\\nFries's lovely tale, connected with the Melusinen legend, about the love of a Gamburg count and a water nymph living in a mill, published in the Archives of the Historical Society of Lower Franconia and Aschaffenburg, XIV, 1st issue, p. 179 ff.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
           "date": "1328",
-          "text": "A charter calls the mill at Eulschirben the mill of Eberhard von Rosenberg."
+          "content": "was associated with the Eulschirben mill, which a charter called his mill."
         }
       ],
       "guesses": [
         {
+          "type": "generic",
+          "person": "Konrad von Uissigheim",
+          "personTitle": [
+            "der Ältere"
+          ],
           "date": "1397",
-          "text": "The Series Abbatum states that Konrad von Uissigheim der Ältere donated the mill at Eulschirben to Bronnbach; the book presents this account as conflicting with Kraemer’s account of 1320."
+          "content": "may have donated the Eulschirben mill to Bronnbach in 1397."
         },
         {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
           "date": "1320",
-          "text": "Kraemer states that Eberhard von Rosenberg acquired the mill at Eulschirben by exchange for Bronnbach; the book presents this account as conflicting with the Series Abbatum’s account of 1397."
+          "content": "may have acquired the Eulschirben mill for Bronnbach by exchange."
         }
       ]
     },
@@ -471,24 +473,44 @@
           "date": "1457"
         },
         {
+          "type": "generic",
+          "person": "Margaretha von Uissigheim",
           "date": "1457",
-          "text": "Margaretha von Uissigheim and Stephan von der Thann sold their court at Uissigheim to Bronnbach monastery."
+          "content": "sold the farm she shared with Stephan von der Thann at Uissigheim to Bronnbach Monastery."
         },
         {
+          "type": "generic",
+          "person": "Stephan von der Thann",
           "date": "1457",
-          "text": "Margaretha von Uissigheim and Stephan von der Thann sold their possessions in the area around Uissigheim to Bronnbach monastery."
+          "content": "sold the farm he shared with Margaretha von Uissigheim at Uissigheim to Bronnbach Monastery."
+        },
+        {
+          "type": "generic",
+          "person": "Margaretha von Uissigheim",
+          "date": "1457",
+          "content": "sold the Uissigheim-area holdings she shared with Stephan von der Thann to Bronnbach Monastery."
+        },
+        {
+          "type": "generic",
+          "person": "Stephan von der Thann",
+          "date": "1457",
+          "content": "sold the Uissigheim-area holdings he shared with Margaretha von Uissigheim to Bronnbach Monastery."
         },
         {
           "date": "1165",
           "text": "Bronnbach monastery held property at Uissigheim."
         },
         {
+          "type": "generic",
+          "person": "Ludwig von Rineck",
           "date": "1223",
-          "text": "Ludwig von Rieneck granted Mainz fief property at Uissigheim to Bronnbach monastery."
+          "content": "granted Mainz fief estates at Uissigheim to Bronnbach Monastery."
         },
         {
+          "type": "generic",
+          "person": "Veit von Riedern",
           "date": "1480",
-          "text": "Veit von Riedern held tithes at Uissigheim as a Rieneck fief."
+          "content": "held tithes at Uissigheim as a fief of Rieneck."
         },
         {
           "type": "title",
@@ -496,11 +518,7 @@
           "personTitle": [
             "armiger"
           ],
-          "date": "1324"
-        },
-        {
-          "date": "1324",
-          "text": "Frizo von Uissigheim, armiger, is recorded in the Bronnbach necrology on 5 October 1324."
+          "date": "1324-10-05"
         },
         {
           "type": "title",
@@ -575,16 +593,32 @@
           "text": "The children of Götz von Uissigheim had a stone house at Uissigheim."
         },
         {
+          "type": "generic",
+          "person": "Mathern von Grumbach",
           "date": "1486",
-          "text": "Mathern von Grumbach sold the castle and its property at Uissigheim to Michel Voit von Rieneck."
+          "content": "sold the castle and its property at Uissigheim to Michel Voit von Rineck."
         },
         {
+          "type": "generic",
+          "person": "Michel Voit von Rineck",
+          "date": "1486",
+          "content": "acquired the castle and its property at Uissigheim from Mathern von Grumbach."
+        },
+        {
+          "type": "generic",
+          "person": "Amalie von Rümrodt",
           "date": "1570",
-          "text": "Amalie von Rümrodt, born von Vechbach, sold the castle and its property at Uissigheim to the Deutsch-Ordensmeister."
+          "content": "sold the castle and its property at Uissigheim to the Grand Master of the Teutonic Order."
         },
         {
+          "type": "generic",
+          "person": "Groll von Bamberg",
+          "personTitle": [
+            "Junker",
+            "zu Königheim"
+          ],
           "date": "1590",
-          "text": "Junker Groll von Bamberg zu Königheim acquired the castle and its property at Uissigheim."
+          "content": "acquired the castle and its property at Uissigheim."
         },
         {
           "date": "1592",
@@ -605,30 +639,22 @@
       ],
       "guesses": [
         {
-          "date": "1314",
-          "text": "By 1314, Uissigheim property may have passed through an heiress to Eberhard von Rosenberg."
-        },
-        {
-          "date": "1336",
-          "text": "The identity of the knight on the damaged Uissigheim gravestone is uncertain; Gamans transcribed the name as Arnold von Uissigheim."
-        },
-        {
-          "date": "1332",
-          "text": "The identity of Eberhard on the Uissigheim gravestone is uncertain, despite Gamans’s transcription naming him genannt von Ranneberg."
-        },
-        {
-          "date": "1343",
-          "text": "The Erfurt chronicle attributes anti-Jewish killings in 1343 to a Ritter von Uissigheim and relates his capture, execution, and burial at Uissigheim. His identity with the knight on the damaged gravestone is uncertain."
-        },
-        {
-          "date": "1300",
-          "text": "LEO-BW records the former Uissigheim residential tower around 1300; the so-called Tempelhaus may be a remnant of that castle."
-        },
-        {
-          "type": "death",
+          "type": "generic",
           "person": "Arnold von Uissigheim",
-          "diedOn": "1336",
-          "date": "1336"
+          "date": "1336",
+          "content": "may be the knight on the damaged Uissigheim gravestone."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Uissigheim, genannt von Ranneberg",
+          "date": "1332",
+          "content": "may be the Eberhard on the Uissigheim gravestone."
+        },
+        {
+          "type": "generic",
+          "person": "Ritter von Uissigheim",
+          "date": "1343",
+          "content": "may have been responsible for anti-Jewish killings and later captured and executed; his identity with the knight on the damaged Uissigheim gravestone is uncertain."
         }
       ]
     },
@@ -638,20 +664,40 @@
       "english": "Spellings: Wolechingen 1221, Wollechingen 1239, Wollichingen 1245, Wulchingen 1387, Welchingen 1421. \\n\\nLiterature: Ottmar F. H. Schönhuth, Boxberg and the Schüpfergrund, (see above) p. 32 ff., Bauer, Journal for the Wirttemberg Franconia 1868, p. 106 ff., C W F. L. Stocker, Chronicle of Boxberg (see above) p. 44 ff. \\n\\nA Siboto de Wolechingen appears with Bertolt de Mergentheim, both Templars, as witnesses in a Bronnbach document from 1221; the place is mentioned as belonging to the Lordship of Boxberg in documents from 1239 (contract between Gotfried von Hohenlohe and Konrad von Krutheim) and 1245 (bequest of Kraft von Boxberg) (cf. Boxberg). In Kraft's donation to the Knights Hospitaller in Würzburg from 1192, some unspecified properties probably refer to Wölchingen; in 1239, the Knights Hospitaller owned a farm there, which was subject to tithes in Würzburg. Their own settlement, a house, is first documented in 1249 (Konrad de Bvechel, provisor domus in Wollechingen), and a commandery in 1284 (frater commendator domus S. Johannis in Wollechingen). In 1313, it was moved to Boxberg Castle (donated to the Order by the last of the Boxberg family, Konrad). In 1381, Wölchingen and Boxberg passed to the Rosenberg family, and in 1561 to the Electorate of the Palatinate (Oberamt Boxberg); from 1803 to 1806, it belonged to Leiningen. (E.) \\n\\nDuring railway construction in August 1866, a Frankish grave covered with limestone slabs was discovered directly north of the cemetery. In it, next to the skeleton, lay an iron spearhead and colorful decorative beads made of glass and clay. Upon further investigation, it would likely remain the only one found, but would prove to belong to an entire cemetery. (W.) \\n\\nThe church. \\n\\nNothing is known for sure about the origin of the Romanesque parish church, located on the north side of the lovely Schüpfergrund above the village. Bauer considers it unlikely that the Knights of St. John built the church, as they only owned a commandery in Wölchingen in 1249, and the architectural style indicates an earlier date. In his opinion, however, \"the respected lords of Boxberg\" could well have been the founders of this building. This is contradicted by the fact that the Boxbergs never erected similarly sumptuous buildings either in their residence above or in Wanshofen, located at the foot of the castle. Furthermore, the Knights of St. John had owned large estates near Boxberg and Schweigern even earlier, namely since 1192, although a farm in Wölchingen is only documented in 1239. Nevertheless, it is much more likely to attribute the construction of this church, which can be seen from afar as a symbol of their power and which virtually dominates the Schüpfergrund, to the rich members of the order, who were well versed in architecture and art, than to the minor dynasts of Boxberg. Frater Konrad sacerdos, mentioned in 1249 in Wölchingen, was certainly also appointed by the Order, so the parish must have been founded by the Order a generation or two earlier. In the liber Synodalis Wirceburgensis, the parish (Chapter Mergentheim), Frühmüsse B. M. V. and the vicarage of St. Johannis in Wölchingen are mentioned for the year 1452. Under the patronage of the von Rosenbergs in the 16th century, i. In 1558, the Reformation was introduced here as well, and confirmed by the Peace of Westphalia. Now the Protestant parish church for Boxberg and Wölchingen. \\n\\nThe construction records of the Grand General State Archives on our church begin in 1663, but essentially contain only information of little relevance to the building's history, concerning repairs to the venerable building, which had apparently been badly damaged during the preceding war years. Regarding the condition of the building at the time when the Protestant building authority began its most recent repairs, the construction officer, Baurat Behaghel, in Heidelberg, wrote the following: \\n\\n\"The existing structure at that time was not suitable for systematic graphic recording, as it presented a far from pleasing image, and moreover, the original form of the building was almost obscured from view by a conglomerate of the most primitive structural makeshift structures. These makeshift structures, which, however, survived for centuries, consisted of superstructures above the only fragmentary main cornice, which, judging by their overall nature, had probably served defensive purposes since its destruction during the Peasants' War, and were composed in detail of fragments of the former tower and gable superstructures, or even of clay timber framing. The old roof truss was poorly constructed from thin, not even square-jointed logs and had been patched up many times over the past few centuries. The bells, which hardly dated back to the previous century, had been hung on the south side of the granary in an ordinary oak trestle frame as a bell cage. \\n\\nThe interior of the church looked downright desolate; it was completely built over with colorful, marbled, randomly placed wooden galleries, to which numerous steps led. It had been so diminished with paint and crude, rustic paintings from the end of the previous century that the forms of the capitals were barely recognizable, and the entire church gave the impression of a large junk room. The walls of the north side, which were embedded at a height of about 3 meters in the muddy soil of the old cemetery at the back, were covered with dense green lichen along the entire length of the church, almost up to the level of the vaults, and were so wet that even to this day, the traces of this have not completely disappeared. The crypt was also covered with mud up to the height of the windowsills. \\n\\nBefore the restoration, the vaults, made of tuff, were partly in very poor condition, as their plaster was almost completely destroyed due to the hygroscopic properties of the material. \\n\\nAs far as the restoration of the church was concerned, the first step was to thoroughly clear and dry the area, along with extensive drainage. Then, all superstructures above the main cornice had to be removed, the previous gables had to be restored, and a crossing tower had to be constructed. After that, the entire interior, after removing all obstructive fixtures, had to be exposed and restored to its original form. In addition to the unsuccessful searches for possible remains of the foundations of a particular bell tower, the examination of the crossing pillars, whose foundations exhibit a quite unusual depth and thickness, as well as individual remains of wall supports at the relevant locations in the attic, all of which supported the earlier existence of a crossing tower. Further evidence came from the various debris found in the superstructure, which, after eliminating the pieces undoubtedly suitable for the cornices, gable ends, and the like, made their former use in a tower structure seem very likely. \\n\\nThe restoration of the central and transept nave sills was facilitated by the unexpected discovery of well-preserved fragments of the starter and cornice stones of the arched frieze on the west gable, as well as by the excavation of several different motifs from the arched inlays embedded in the vault rubble. The reconstruction of the entire roof structure was presented so clearly that the present form of the church's roof structure can be considered completely identical to its earlier form, especially since the finds also provided numerous clues regarding the details of the crossing tower. Furthermore, a close resemblance to the Romanesque buildings of Lower Franconia has been observed. \\n\\nThe cleaning and restoration of the interior, especially the pillars, capitals and vault ribs, and indeed all the stonework, was an extremely laborious and time-consuming task, as several coats of paint (including oil paint) were superimposed and had virtually grown into the porous stone material, so that a complete overhaul by the stonemason and striking of the surfaces with a stock hammer proved necessary. \\n\\nDuring the entire restoration, nothing was added except for the gallery in the west of the nave, which was essential for the organ installation. The principle was strictly adhered to: to expose or supplement what was already there and to reconstruct what was missing. Even with regard to the painting, which has suffered greatly as a result of the dampness left over from earlier times and is to be restored in a more durable manner in the near future, the work was limited to the simplest surface decoration in order to better emphasize the architectural elements in their dignified simplicity. The restoration work began in 1877 and was completed in 1878. \\n\\nFrom the above report it emerges that all components located above the main cornice (gable, roof and crossing tower) are to be considered as completely renewed, while all those located below it (in particular the vaults) are to be considered as old and only partially restored. \\n\\nThe building records of the General State Archives, which, as mentioned, only begin in 1663, unfortunately do not provide any evidence for the above-mentioned evidence of the former existence of a bell tower above the crossing. However, they do allow the conclusion that the bell tower above the crossing had already been destroyed, or at least disused, long before the Great War. In its place, a bell cage was erected above the southern vault of the transept, as can be seen from the following entry in the building records: 1664 May 16. The bell cage, on which two heavy bells hang, and its sleepers, stock and bow (?), and other supporting structures, are all incredibly old, partly rotten and completely bare, so damaged that ringing poses a great danger to the bells, the vault on which the bells stand, and to the people in the church, including the bell ringer. The addition: \"everything is immemorial,\" suggests that the destruction of the church, to which the entire upper part, including the crossing tower, fell victim, must have occurred during the Peasants' War (or even earlier, during the two sieges of Boxberg in 1470 and 1533), and in any case long before the Thirty Years' War. A second reference is even clearer: May 9 and July 9, 1784. According to expert investigations, that part of the vault above which the bell cage has stood since time immemorial, and beneath which a gallery church, and the main wall upon which the vault rests, are in danger of collapsing. The aforementioned \"gallery church,\" as another reference shows, was located in the southern part of the transept; Further reports from 1794 and 1800 confirm this, proving that it is the bell tower that was still in the same location at the beginning of the restoration in 1877 (see above, p. 227). To accommodate it, the walls of the southern transept (\"the main wall\") were raised higher, and a massive roof with sound holes was added above it. \\n\\nOtherwise, little can be gleaned from the aforementioned construction records about the church's former appearance. They mainly concern the most necessary repairs, which were carried out with the greatest economy. The following excerpts, for example, demonstrate how barbaric the work was, and which, like the previous ones, we owe to Professor Ehrenberger: \\n\\n1663 March 10. The church has 21 windows in total, five of which are 6' high, 16 of which are 10' high and 3' wide, plus two large rose windows, one 10' round and in the choir. The rose windows and five windows are completely without glass, and the remaining glass is badly damaged, all destroyed during the dreadful war. Snow and rain fall on the pulpit (through the side skylights). Estimated value: 44 fl. \\n\\n1663 April 25. Since the above expenditure is too much, it is proposed to brick up 2 of the 11 larger windows and 4 of the smaller ones. \\n\\nIn 1784, it was ordered that the damaged vault beneath the bell tower be removed and replaced with timbers. The pastor and congregation prevented the work, which had already begun, because it \"would have disfigured the church.\" \\n\\nIn 1666, a large portion of the floor lacked any covering, so that it \"looked quite rude and mocking because of the bare earth on which one walked.\" Repeated roof repairs and, in particular, the reconstruction of damaged or collapsed sections of the churchyard wall are recorded. The latter probably involved the northern retaining wall, which was intended to protect the cemetery surrounding the church and the church itself from the inflow of earth from above. It disappeared in 1794, causing great damage to the relevant parts of the building (see the above report). \\n\\nUnfortunately, the building records tell us nothing about the buildings belonging to the Knights Hospitaller belonging to the church, except for one mention that the stones from an old cellar located behind the church – probably the former order's house – were to be used to repair the churchyard wall (August 6, 1691). (The term \"cloister\" in a contract dated February 8, 1731, refers, as is clear from the context, to the central section of the nave and transept, forming a cross.) \\n\\nBuilding description. \\n\\nThe church is a Romanesque, three-aisled, cross-shaped pillar basilica with a semicircular apse and two side apses, vaulted in a tied system (see floor plan Fig. 67). The dimensions are not large, but the proportions are so fortunate that the building appears larger than it is. The whole thing must have been erected quickly according to a uniform plan; only in one place can a deliberate deviation from the original layout be detected. After the first bay of the nave – construction began in the east as usual – was completed, it seems that people came to the conclusion that the strongly projecting pillars of the side aisles unnecessarily narrowed them and that the side walls were sufficiently strong to support the small vaults. At the same time, the distance between the cumbersome arcade pillars was reduced from 1.66 to 1.86 m. 1.35 m to 2.00 m, thus giving the western part of the nave a freer, more airy character (see Fig. 68). \\n\\nThe main apse, like the side apses, is vaulted with a semi-dome. In all three, at the front corners, at moderate intervals below the impost, which is accentuated by a cornice, there is a flat cuboid with a straight, simply decorated front. It projects slightly like a console, allowing a slight narrowing of the semicircle in the upper parts. This arrangement has never been encountered by the author before, and the purpose of which is unclear, since, given the existing dimensions, such a small saving in span would not have been possible, even for the large semi-dome, let alone for the side apses. The seven square cross vaults that cover the choir, transept, and nave are of identical construction, although they have the same width (an average of 5 meters). Broad, unarticulated, heavy-duty transverse arches separate the vaults, whose ribs appear simple with a sturdy pear-shaped rib, and only in the chancel are they somewhat more richly profiled, with a bulge and pear-shaped rib. The ribs of the southern transept vault show a remarkable deviation: the edges of the square stones, projecting far in front of the coping, are chamfered and set with hemispheres on the slope, an original but somewhat heavy-duty motif. [The above-mentioned bell cage stood above this until 1877]. The keystones show simple arched sections between the ribs and flat-pattern decoration, and are circularly hollowed in the center. While the transverse arches of the nave are supported by the capitals of the half-columns, the diagonal ribs emanate from consoles that are joined to the column capitals and covered by a common abacus. Some of them have a piece of column shaft, decorated with grotesques or similar motifs on the underside (see Fig. 69). In the choir and transept, however, the diagonals of round columns also rise in the corners. There are no special shield arches anywhere; instead, the capping line, i.e., the shield arch line (incorrectly depicted as a semicircle in our sections), which forms a steep basket arch at a significant rise in the apex, lies directly against the surface of the shield wall. Otherwise, the pointed arch form prevails everywhere, both in the transverse and diagonal arches, as well as in the arcade arches. The cover plate of the half-column capital and the consoles extends as a transom cornice around the entire \"cloister\" (see above). A second, strong horizontal emphasis is formed by the transom cornice of the arcade arches, which curves around the half-column supports. The clumsy arcade pillars stand on a richly structured base consisting of cornice, round bar, plate, slope and foot, while the base cornice running all the way around the walls has only a round bar and foot plate. \\n\\nIn contrast to the somewhat cumbersome ribbed cross vaults of the \"cloister,\" the vaults of the side aisles—two of which, in keeping with the tied system, are arranged for each central bay—are spanned without ribs on corner consoles between heavy, unprofiled transverse arches. The latter, too, are supported only in the first two bays (see above), and in the rest by simply decorated corbels. In the southeast corner (at the transept) and northwest corner (at the west front), corner columns are exceptionally installed, consistent in both aisles. The passage from the side aisle to the transept has undergone a peculiar narrowing on both sides, as a second pillar with an arch has been inserted within the opening corresponding to the transverse arch. At the end of the north aisle, a spiral staircase cut out of the strong front wall leads to the church floor. The windows, like the doors (see below), are all round-arched and smoothly cut into the walls, without rods or the like at the corners and with only a moderate slope. In the transept, the aforementioned impost cornice runs to a dead end on both sides of the upper windows; in the nave, this disadvantage was easily avoided by setting the windows accordingly higher (see Fig. 68). The round windows in the gables are particularly attractive. The one above the apse appears to be framed by a strong \"Norman\" zigzag and has a panel pierced all around by circular cutouts. \\n\\nOrnamental decoration is used with extreme sparingness in the interior; except for the capitals and consoles, and to a limited extent on the keystones, there are no ornaments to be found anywhere. The forms generally adhere to the Romanesque canon, but in some places, attempts at bulbous forms and a freer, more natural treatment of the foliage and tendrils are already apparent. The transitional period is thus revealed not only in the vaulting (pointed arches), but also in the intrusion of Gothic forms. \\n\\nThe interior is of great beauty and will be significantly enhanced once the planned painting (see above) is completed and the uniform, cold tone of the stone has disappeared. Despite all the compactness and coarseness, which is particularly evident in the arcades and vaulting, and despite all the poor ornamentation, the eye still wanders with pleasure through the high nave and the bright transept to the choir, where the colorfully glazed round window above the concha illuminates effectively. In terms of clarity, clarity, and uniformity of its interior, the St. John's Church in Wölching undoubtedly ranks first among the oldest churches in Franconia and Swabia (see collotype plate XIX). \\n\\nOf the details inside, it is worth mentioning: above the sacrament niche in the choir there is a completely mutilated relief of the Crucifixion, which, judging by the shape of the letters, dates back to the 14th century. \\n\\nThe adjacent door leads outside. The sacristy may once have been located in this corner, as usual, and is mentioned repeatedly in the building records of the General State Archives, but without further details. A now bricked-up door located at the top (about 4 meters above the floor) in the west wall of the northern transept probably provided access from outside to a gallery of the Ritter of the Order and may have been directly connected to the hospital above. \\n\\nBeneath half the choir and the apse is a low crypt, accessible via a narrow staircase through an opening in the floor. Its shape is circular, covered by a circular vault supported by a central pillar (see Fig. 71). Four slanted slit windows provide the small space with minimal illumination. Of particular interest is the octagonal capital of the central column (see Fig. 72), from which eight ribs extend and gradually taper into the round barrel vault. That the unusual circular shape of the crypt in this case, as so often, is connected with the general idea of ​​the circular structure of the Holy Sepulchre (cf. Dehio and Bezold, die kirchliche Baukunst des Abendlandes, Vol. I, Stuttgart 1892, pp. 35 ff., 542 and 554 ff.), seems just as irrefutable as the assumption that the Knights Hospitaller Commander would have had their tomb here. \\n\\nThe exterior of the church reflects the interior: uniform, simple, yet beautiful and stately. The restoration work, carried out with great piety, is noticeable only in the currently somewhat lighter color of the material used. The walls, constructed of rubble stone, are unstructured and decorated only with simple but robust main and base cornices. The latter runs horizontally around the entire building, regardless of the variation in the floor level. In contrast to the interior, the exterior is still dominated exclusively by round arches. The windows also appear without frames or moldings, with the exception of the apse windows, which have robust round-bar frames. Apart from the southern side portal, only the three apses, the west facade, and the gables are somewhat more richly decorated. Actually, however, it is only a round-arch frieze here, which has a stimulating effect and displays the same decoration by means of volute-like insets or underlays as in the apse of the Bronnbach monastery church (see Section I, Plate I). Here, the stonemason had a great opportunity to explore his wealth of forms and ideas, to demonstrate his imagination in diverse ornamentation and figurative grotesque creatures. (The motifs of the above-mentioned finds have been very skillfully used in the restored sections.) The gable ends also appear to be decorated in part with grotesques and squatting figures, the cover plates with a round-arch pattern and diagonal cut (see Fig. 73). \\n\\nIn keeping with the overall simplicity, the main portal and south portal (both completely intact) are richly structured, yet treated with extreme restraint in ornamentation and a complete renunciation of figurative decoration. The south portal on the front side of the church (see collotype XX) can be described as a classic example of noble and simple design. Particularly attractive is a bas-relief of triangular tendrils above the apex of the arch, below an equal-armed cross crowning the gable. To achieve a colorful effect, the round columns in the jamb of the main portal were made of red sandstone, and the polished limestone cylinder on the south portal was painted red in a similar manner, as the existing paint remains demonstrate. Traces of paint are also visible elsewhere, on the tympanum stone, capitals, and bases. The front facade was provided with a (wooden?) vestibule in the usual manner. The traces of the pilasters are still clearly visible in places. The asymmetrical arrangement of the pilasters bordering the nave on the main facade is very odd. The left-hand projection is about 0.30 m closer to the main portal than the right-hand one, so that a corresponding projection to the left had to be made above the projection line of the northern aisle roof in order to reach the corner of the rising nave at the top. That this was the correction of an oversight when marking out the left half is obvious. Otherwise, the right-hand pillar projection would not have been moved away from the ashlar edge of the portal by the specified width from below, thus avoiding the unsightly ledge that resulted. The presence of the aforementioned spiral staircase on the left side inside the wall has nothing to do with this. On the rear, it can be described as faulty, or at least as odd, that the tip of the semi-conical roof of the main apse projects freely in front of the wall into the curve of the window above. Furthermore, the technical aspects of the exterior have also been treated with the utmost care. \\n\\nThe modern, eight-sided crossing tower contributes significantly to the overall impression and effectively enlivens the silhouette. \\n\\nDating the Wölching church to within one or two decades seems difficult. If one were to place the construction of the church, which was apparently erected in rapid succession, in the 13th century, then, given the clumsiness and uncertainty evident in both the Gothic forms and the construction, the year 1210 would be considered the upper limit. However, following Bronnbach's analogy, it is equally conceivable that the church had already been completed by the turn of the 12th century. The overall impression is certainly still thoroughly Romanesque. \\n\\nThe church is rich in tombs, which changed their location during the last restoration, and partly even before (cf. Schönhuth, op. cit., p. 33 ff.) and are now located in the following places: \\n\\nI. Inside. \\n\\na. In the south transept: \\n\\nIn the gable wall, two niches (arcosolia) are arranged side by side, vaulted with shallow arches. Each niche contains a Romanesque cover plate above the empty (?) coffin space. One contains, in low relief, the image of a man reclining with folded hands, his upper body exposed and his lower body covered only by a hairy (?) garment belted around his waist. Bare feet protrude from beneath. The face has been cut off. Romanesque tendrils run all around the horizontal and beveled parts of the rim (see Fig. 74). \\n\\nThe second stone shows only a sword grasped by a hand, and above it a crudely carved human mask or flat head in low relief. The ornament here runs only along the upper part of the rim (see Fig. 75). \\n\\nThe absence of any inscription is doubly regrettable in this case, since our two monuments, along with that of Notburga in Hochhausen am Neckar, are undoubtedly the oldest monuments of this type in the Neckar and Tauber region. Their forms are so ancient that one would involuntarily place them a century before the construction of the church. As can be seen from a contract dated February 8, 1731, in the building records, the gravestones in the choir were moved at that time. These two slabs are unlikely to have been included at that time, since the method of burial in wall niches (arcosolia), in the early Christian style, makes a decidedly older impression. \\n\\nb. In the south aisle (all erected and walled up close to each other): \\n\\nI. Gravestone (w. S.) of Arnold von Rosenberg († 1447) with the almost entirely free-carved figure of a Ritter in full armor. His arms hang down, his feet resting on a lion. The face peering out from the Herseniener is vividly individual, the entire work meticulous and by a skilled master. At the top left is the Rosenberg coat of arms, at the right the Dienheim coat of arms. The inscription reads:Anno · dni · m · cccc · xlvii · yea · on · nest · tuesday · before · sant · mateus · day · of · the · twelve messengers · died · Arnold · von · rosenberg · the · god · gracious · sen · amen —Traces of painting on the figure and coat of arms. The stone above it, bearing the large Rosenberg coat of arms, probably originates from elsewhere. \\n\\n2. Gravestone (w. S.) of a knightly couple without inscription (see Fig. 76). Both kneel, three-quarters facing each other, on a lion and lioness, below which are the coats of arms of the von Handschuchsheim and Hirschhorn families. The figures are somewhat less freely carved, but reveal a far more practiced 15th-century hand, both in the faces and especially in the folds. The faces are particularly excellent. Lifelikeness and expression have been achieved with minimal means. The old Rosenberg coat of arms, walled in above, is not included. \\n\\n3. Gravestone (w. S.) of Eberhard von Rosenberg († 1387) with the free-standing figure (cf. I. and 2.) of a Ritter in full armor. The feet rest on a sloping slab, posture as in 1. The inscription reads:Anno · dni · m ccc · lxxxvii · iar · an · dem · nesten · suntag · noch · vity · starp · her · eeb’hart · von · rosenberg.Related in technique and conception to the first, and again crowned by a coat of arms that does not belong to it. The Gothic minuscule on this stone is particularly beautifully carved. However, the sculptor made the mistake of leaving twoandone after the other. \\n\\nWhat stands out from the solemn seriousness of these late Gothic works is: \\n\\n4. The baroque gravestone (w. p.) of the pastor's wife, Johanna Eleonora Schneiderin from Boxberg († 1739), with a lengthy inscription wreathed in laurel. On top, in a semicircle, is the Alliance coat of arms, colorfully painted. \\n\\nc. In the north aisle: \\n\\n5. Gravestone (w. S.) of Eberhard von Rosenberg, Ritter († 1449), treated in exactly the same manner and with the same artistic qualities as 1., except that the Ritter steps on a lion. On the upper left is the Rosenberg shield, on the right the Dienheim shield. The inscription reads:Anno · dmini · m⁰ · cccc⁰ · xlix · jar · an · sant · walpurgen · day · died · Eberhard(sic!) · von · rosenberg · may · god · be merciful · amen  \\n\\nOnce again, a non-belonging Rosenberg coat of arms stone is painted on top. \\n\\nII. Outside on the south side of the church some insignificant monuments: \\n\\n6. Small gravestone (w. S.) of Pastor Ursinus Herborn († 16///) with noble coat of arms. 7. Small baroque gravestone of Hans Christoforus († 1662) with weathered inscription. \\n\\n8. Small baroque panel (right side) of Anna Maria Salmuth († 1661) with coat of arms and inscription. \\n\\n9. Simple gravestone (w. S.) of the electoral administrator of Boxberg, Joh. Jacob Lampert, and his wife, who died in the same year (1681); without decoration. \\n\\n10. Gravestone (right side) of the Boxberg pastor Hans Henrici (1765) with Rococo decorations. \\n\\n11. Simple, undecorated gravestone (right side) of the town mayor Hans Hohl († 1711) and his wife († 1699). \\n\\n12. Large gravestone (right side) of a clergyman with a weathered inscription (Melchior Wolf von Seckach?) from the 17th century. \\n\\nThe small town offers nothing worth mentioning. No traces remain of the Hospital of the Knights of St. John, the town fortifications, etc.",
       "facts": [
         {
+          "type": "generic",
+          "person": "Siboto von Wölchingen",
+          "personTitle": [
+            "Templer"
+          ],
           "date": "1221",
-          "text": "Siboto von Wölchingen, a Templar, witnessed a Bronnbach charter."
+          "content": "witnessed a Bronnbach charter together with Bertolt von Mergentheim."
         },
         {
+          "type": "generic",
+          "person": "Bertolt von Mergentheim",
+          "personTitle": [
+            "Templer"
+          ],
           "date": "1221",
-          "text": "Bertolt von Mergentheim, a Templar, witnessed a Bronnbach charter together with Siboto von Wölchingen."
+          "content": "witnessed a Bronnbach charter together with Siboto von Wölchingen."
         },
         {
+          "type": "generic",
+          "person": "Gotfried von Hohenlohe",
           "date": "1239",
-          "text": "Wölchingen was named as part of the lordship of Boxberg in an agreement between Gottfried von Hohenlohe and Konrad von Krautheim."
+          "content": "was named with Konrad von Krautheim in an agreement identifying Wölchingen as part of the lordship of Boxberg."
         },
         {
+          "type": "generic",
+          "person": "Konrad von Krautheim",
+          "date": "1239",
+          "content": "was named with Gotfried von Hohenlohe in an agreement identifying Wölchingen as part of the lordship of Boxberg."
+        },
+        {
+          "type": "generic",
+          "person": "Kraft von Boxberg",
           "date": "1245",
-          "text": "Wölchingen was named as part of the lordship of Boxberg in Kraft von Boxberg’s bequest."
+          "content": "named Wölchingen in his bequest as part of the lordship of Boxberg."
         },
         {
           "date": "1239",
@@ -690,12 +736,16 @@
           "text": "The Reformation was introduced at the church of Wölchingen under von Rosenberg patronage."
         },
         {
+          "type": "generic",
+          "person": "Arnold von Rosenberg",
           "date": "1447",
-          "text": "The inscription gives the Tuesday before St Matthew’s Day in 1447 as the date."
+          "content": "is commemorated by an inscription dating his death to the Tuesday before St Matthew’s Day."
         },
         {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
           "date": "1387",
-          "text": "The inscription gives the Sunday after St Vitus’s Day in 1387 as the date."
+          "content": "is commemorated by an inscription dating his death to the Sunday after St Vitus’s Day."
         },
         {
           "type": "death",
@@ -718,8 +768,10 @@
       ],
       "guesses": [
         {
+          "type": "generic",
+          "person": "Johanniter",
           "date": "1210",
-          "text": "The Johanniter may have founded the Wölchingen church by about 1210, based on the building’s dating and their property in the area."
+          "content": "may have completed the Wölchingen church by about 1210, based on the building’s dating and their property in the area."
         }
       ]
     }

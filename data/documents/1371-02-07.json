@@ -14,9 +14,14 @@
             "Vitzthum in Amberg"
           ]
         },
-        "Konrad von Rosenberg was to receive payment for des Herzogs Roß (the Duke's horse)",
-        "Konrad von Rosenberg's payment was scheduled for Georgi (St. George's Day, April 24th)",
-        "Konrad von Rosenberg participated in financial arrangements with Duke Albrecht von Bayern"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "was to receive 500 florins for the Duke’s horse on Georgi.",
+          "personTitle": [
+            "Vitzthum zu Amberg"
+          ]
+        }
       ]
     }
   ]

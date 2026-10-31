@@ -10,8 +10,11 @@
       "german": "Bertold von Zwingenberg verpflichtet sich, wieder im Schloß Lichteneck bei Ingelfingen sich zu stellen;\n\nSiegel: Bertold von Zwingenberg und Eberhard von Rosenberg.",
       "english": "Bertold von Zwingenberg undertakes to present himself again at Lichteneck Castle near Ingelfingen;\n\nseal: Bertold von Zwingenberg and Eberhard von Rosenberg.",
       "facts": [
-        "Eberhard von Rosenberg sealed Bertold von Zwingenberg's pledge to return to Lichteneck castle",
-        "Eberhard von Rosenberg served as surety for Bertold von Zwingenberg"
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sealed Bertold von Zwingenberg’s undertaking to return to Lichteneck Castle."
+        }
       ],
       "img": [
         {

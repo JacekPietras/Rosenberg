@@ -11,7 +11,14 @@
       "german": "Anna, geborene von Waldenfels, Witwe Reinhards von Gemmingen, verkauft an Eberhard von Gemmingen, Kammermeister, drei Morgen Wiesen zu Gochsen, die ihr als Morgengabe verschrieben worden waren, als freies und lediges Gut für 60 rheinische Gulden. Sie quittiert über die Kaufsumme und leistet Währschaft. Siegler: Hans von Rosenberg zu Essingen und Kuno von Altdorf, genannt Kropsburg. Datiert 19. Juni 1492.",
       "english": "Anna, née von Waldenfels, widow of Reinhard von Gemmingen, sells to Eberhard von Gemmingen, chamberlain, three morgen of meadow at Gochsen, which had been assigned to her as a marriage portion, as freehold property for 60 Rhenish gulden. She acknowledges receipt of the purchase price and warrants the sale. Sealers: Hans von Rosenberg of Essingen and Kuno von Altdorf, called Kropsburg. Dated 19 June 1492.",
       "facts": [
-        "Hans von Rosenberg of Essingen sealed Anna von Waldenfels’s sale of meadow at Gochsen to Eberhard von Gemmingen."
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "sealed Anna von Waldenfels’s sale of three morgen of meadow at Gochsen to Eberhard von Gemmingen.",
+          "personTitle": [
+            "zu Essingen"
+          ]
+        }
       ],
       "img": [
         {

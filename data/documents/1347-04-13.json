@@ -14,7 +14,14 @@
             "Vogt zu Dürn"
           ]
         },
-        "Eberhard von Rosenberg genannt von Zimmern is mentioned.",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe.",
+          "personTitle": [
+            "genannt von Zimmern"
+          ]
+        },
         {
           "type": "parent",
           "person": "vogt_zu_Durn",
@@ -23,7 +30,11 @@
           ],
           "of": "Eberhard von Rosenberg"
         },
-        "Hans von Rosenberg is mentioned in context of mediation with Kraft von Hohenlohe.",
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe."
+        },
         {
           "type": "parent",
           "person": "vogt_zu_Durn",

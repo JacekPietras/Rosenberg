@@ -7,7 +7,11 @@
       "german": "Revers Herting Deysenrods und Konrad Rosenbergs bezüglich der Belehnung mit der Vockenmühle und weiteren im Einzelnen aufgeführten Lehen durch Reinhard [von Weilnau], Abt von Fulda.",
       "english": "Reversal by Herting Deysenrod and Konrad Rosenberg concerning their enfeoffment with the Vockenmühle and other individually listed fiefs by Reinhard [von Weilnau], abbot of Fulda.",
       "facts": [
-        "Herting Deysenrod and Konrad Rosenberg received the Vockenmühle and other fiefs in enfeoffment from Reinhard [von Weilnau], abbot of Fulda."
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "was enfeoffed, together with Herting Deysenrod, with the Vockenmühle and other listed fiefs by Abbot Reinhard [von Weilnau]."
+        }
       ]
     }
   ]

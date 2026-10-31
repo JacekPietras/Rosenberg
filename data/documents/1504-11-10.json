@@ -17,8 +17,16 @@
       "german": "Papst Julius II. überträgt die mit der Wahl Philipps von Rosenberg zum Bischof von Speyer erledigte Stelle eines Domkantors dem Domherrn Eberhard von Neuhausen. Ausstellungsort Rom; vier Ausfertigungen auf Pergament mit Bleibullen, datiert 10. November 1504.",
       "english": "Pope Julius II transfers the office of cathedral cantor, left vacant by Philipp von Rosenberg’s election as Bishop of Speyer, to the cathedral canon Eberhard von Neuhausen. Issued in Rome; four parchment originals with lead bullae, dated 10 November 1504.",
       "facts": [
-        "Philipp von Rosenberg was elected Bishop of Speyer.",
-        "Pope Julius II transferred the Speyer cathedral cantor position, vacant after Philipp von Rosenberg’s election, to Eberhard von Neuhausen."
+        {
+          "type": "generic",
+          "person": "Philipp von Rosenberg",
+          "content": "was elected Bishop of Speyer."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Neuhausen",
+          "content": "was appointed by Pope Julius II to the Speyer cathedral cantor position vacated by Philipp von Rosenberg’s election."
+        }
       ],
       "img": [
         {

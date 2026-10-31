@@ -19,9 +19,21 @@
           ],
           "ofDeceased": true
         },
-        "Anna geborene von Rosenberg sold tithes at Großrinderfeld to Carthause Grünau",
-        "Hans von Rosenberg sealed Anna's property sale document",
-        "Eberhard von Rosenberg sealed Anna's property sale document",
+        {
+          "type": "generic",
+          "person": "Anna von Rosenberg",
+          "content": "sold tithes at Großrinderfeld to the Carthusian monastery at Grünau."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "content": "sealed Anna von Rosenberg’s sale of tithes at Großrinderfeld."
+        },
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sealed Anna von Rosenberg’s sale of tithes at Großrinderfeld."
+        },
         {
           "type": "death",
           "person": "Hans Phal",

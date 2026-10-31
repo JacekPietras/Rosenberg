@@ -22,9 +22,30 @@
             "Vitztum zu Heidelberg"
           ]
         },
-        "Konrad von Rosenberg had a daughter who was promised money by the Pfalzgraf",
-        "Konrad von Rosenberg was creditor of Ruprecht for multiple debts",
-        "Konrad von Rosenberg held Minneberg as security for debts owed by Ruprecht"
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "had a daughter to whom the Count Palatine had pledged 1,000 guilders.",
+          "personTitle": [
+            "Vitztum zu Heidelberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "was owed 810 guilders by Ruprecht and also held claims to 1,000 guilders pledged to his daughter and 1,000 guilders for himself.",
+          "personTitle": [
+            "Vitztum zu Heidelberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "content": "held Minneberg as security for debts owed by Ruprecht to him and Margarethe von Hirschhorn.",
+          "personTitle": [
+            "Vitztum zu Heidelberg"
+          ]
+        }
       ]
     }
   ]

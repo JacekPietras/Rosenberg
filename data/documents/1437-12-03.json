@@ -7,7 +7,14 @@
       "german": "Gerichtsbrief des Bischofs Johann von Würzburg im Rechtsstreit zwischen Graf Wilhelm von Henneberg-Schleusingen und einigen von Bibra vor dem bischöflichen Hofgericht. Als Urteiler sind unter anderem Konrad von Rosenberg zu Bartenstein und Eberhard von Schaumberg, Ritter und Fürsprecher am Würzburger Hofgericht, aufgeführt.",
       "english": "Court letter of Bishop Hans of Würzburg concerning litigation between Count Wilhelm of Henneberg-Schleusingen and members of the Bibra family before the episcopal court. Those listed among the judges include Konrad von Rosenberg zu Bartenstein and Eberhard von Schaumberg, Ritter and advocate at the Würzburg court.",
       "facts": [
-        "Konrad von Rosenberg zu Bartenstein was listed among the judges in a case before the Würzburg episcopal court."
+        {
+          "type": "generic",
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ],
+          "content": "was listed among the judges in litigation before the Würzburg episcopal court."
+        }
       ]
     }
   ],

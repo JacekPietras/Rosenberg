@@ -8,7 +8,11 @@
       "latin": "Benefactores coenobii Neuburgensis sic annotati reperiuntur: (...) 1420 Elisabetha de Erlickheim, vidua nata de Rosenberg",
       "english": "The following benefactors of Neuburg monastery are recorded: (...) In 1420, Elisabeth von Erligheim, widow, born von Rosenberg.",
       "facts": [
-        "Elisabeth von Erligheim, a widow born von Rosenberg, was recorded among the benefactors of Neuburg monastery"
+        {
+          "type": "generic",
+          "person": "Elisabeth von Erligheim",
+          "content": "was recorded among the benefactors of Neuburg monastery as a widow born von Rosenberg."
+        }
       ],
       "img": [
         {

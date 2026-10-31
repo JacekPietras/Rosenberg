@@ -12,8 +12,16 @@
           "person": "Katherina von Rosenberg",
           "of": "Friedmann Zobel"
         },
-        "Katherina von Rosenberg participated in the property exchange between Friedmann Zobel and Dietzel Zobel",
-        "Katherina von Rosenberg sealed the property exchange document involving goods at Essfeld and Wolkshausen",
+        {
+          "type": "generic",
+          "person": "Katherina von Rosenberg",
+          "content": "exchanged goods at Essfeld and Wolkshausen jointly with her husband Friedmann Zobel and his brother Dietzel Zobel."
+        },
+        {
+          "type": "generic",
+          "person": "Katherina von Rosenberg",
+          "content": "sealed the exchange agreement."
+        },
         {
           "type": "sibling",
           "person": "Dietzel Zobel",

@@ -7,7 +7,14 @@
       "german": "König Rupertus verleiht dem Ritter Hanns von Rosenberg den kleinen und grossen Zehend in dem Dorfe zu Lôre zwischen Rotenburg an der Tauber und Insingen, der ledig geworden ist. B.",
       "english": "King Ruprecht grants to Hans von Rosenberg, Ritter the small and the great tithe in the village of Lohr, between Rothenburg an der Tauber and Insingen, which has become vacant. B.",
       "facts": [
-        "King Ruprecht enfeoffed Hans von Rosenberg, Ritter with the small and great tithes in Lôre."
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "received the small and great tithes in Lohr as a fief from King Ruprecht."
+        }
       ]
     }
   ]

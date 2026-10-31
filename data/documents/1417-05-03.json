@@ -6,7 +6,11 @@
       "german": "1417 Mai 3. Thomas u. Hans v. Rosenberg verkaufen für sich u. das Spital zu Schupf dem Cuntz v. Rosenberg etliche Wiesen. PO. 1 S. erhalten, 1 ab.",
       "english": "Archival inventory description: On 3 May 1417, Thomas and Hans von Rosenberg sold several meadows to Kunz von Rosenberg on behalf of themselves and the hospital at Schüpf. One sheet of the original is preserved and one is missing.",
       "facts": [
-        "Thomas von Rosenberg and Hans von Rosenberg sold several meadows to Kunz von Rosenberg on behalf of themselves and the hospital at Schüpf."
+        {
+          "type": "generic",
+          "person": "Thomas von Rosenberg",
+          "content": "sold several meadows to Kunz von Rosenberg on their own behalf and on behalf of the hospital at Schüpf."
+        }
       ]
     }
   ]

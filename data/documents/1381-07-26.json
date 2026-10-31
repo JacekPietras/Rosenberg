@@ -38,9 +38,30 @@
             "Edelknecht"
           ]
         },
-        "Konrad von Rosenberg, Ritter; [vogt_zu_Lauda], Ritter; Konrad von Rosenberg, Edelknecht; and [arnold_brother_of_vogt_zu_Lauda], Edelknecht, bought Burg und Stadt Boxberg from the Johanniter Order.",
-        "[vogt_zu_Lauda] and the other Rosenberg purchasers undertook to pay the rents owed by the Johanniter Order to the Würzburg Cathedral chapter and Engelhard von Rosenberg from the Boxberg properties.",
-        "Dietrich Gyer served as a surety for the four Rosenberg purchasers."
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "bought Boxberg Castle and town with Konrad von Rosenberg, Ritter, and Konrad and Arnold von Rosenberg, Edelknechte, from the Order of St. John."
+        },
+        {
+          "type": "generic",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "undertook, together with the other Rosenberg purchasers, to pay the rents owed by the Order of St. John to Würzburg Cathedral and Engelhard von Rosenberg from the Boxberg properties."
+        },
+        {
+          "type": "generic",
+          "person": "Dietrich Gyer",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "served as a surety for the four Rosenberg purchasers."
+        }
       ],
       "img": [
         {

@@ -10,7 +10,14 @@
       "german": "Wie sich B. Rudolf vnd sein domcapittel der obgemelte 8000 guldt den von Rosenberg vf zwei zil zubetzalen verschriben acten Montag nach Kilian anno 1487 Recepta 4 Contractum Rudolfi fo: 39.\n\nKontext aus dem vorhergehenden Eintrag (Nr. 5721, 2. Juli 1487): Dort werden die 8.500 fl als Entschädigung für die von Bischof Rudolf eingezogenen Rosenbergischen Güter, darunter Prosselsheim und Röttingen, genannt. Fries weist darauf hin, dass der vorliegende Eintrag nur noch 8.000 fl nennt.",
       "english": "Bishop Rudolf and his cathedral chapter undertook to pay the aforementioned 8,000 florins to the von Rosenberg family in two installments. Done on Monday after St Kilian in 1487.\n\nContext from the preceding entry (no. 5721, 2 July 1487): that entry gives 8,500 florins as compensation for Rosenberg properties seized by Bishop Rudolf, including Prosselsheim and Röttingen. Fries notes that the present entry gives only 8,000 florins.",
       "facts": [
-        "Bishop Rudolf von Scherenberg and the Würzburg cathedral chapter undertook to pay the von Rosenberg family 8,000 florins in two installments on 9 July 1487."
+        {
+          "type": "generic",
+          "person": "Rudolf von Scherenberg",
+          "personTitle": [
+            "Bischof"
+          ],
+          "content": "agreed with the Würzburg cathedral chapter to pay the von Rosenberg family 8,000 florins in two installments."
+        }
       ],
       "img": [
         {

@@ -10,7 +10,14 @@
       "german": "Eberhard von Rosenberg, gen. der Alte, und Anna, seine Ehefrau, verkaufen an das Kloster Bronnbach benannte Zehnten, Güter und Zinsen zu Wagenbuch, Höhefeld (Hoevelt) und Lindelbach um 80 Gulden.\n\nSiegler: Eberhard von Rosenberg d. Ä.; Anna, seine Ehefrau; Knebel von Huesen, Bürge; Fritz Stetenberg, Bürge; Peter Stetenberg, Fritzes Bruder, Bürge",
       "english": "Eberhard von Rosenberg der Alte, and Anna, his wife, sold tithes, goods, and interest in Wagenbuch, Höhefeld, and Lindelbach to the Bronnbach Monastery for 80 guilders.\n\nSeal: Eberhard von Rosenberg der Ältere; Anna, his wife; Knebel von Huesen, surety; Fritz Stetenberg, surety; Peter Stetenberg, Fritz's brother, surety",
       "facts": [
-        "Eberhard von Rosenberg, gen. der Alte sold tithes, goods, and rents at Wagenbuch, Höhefeld, and Lindelbach to Kloster Bronnbach",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sold the named tithes, goods, and rents at Wagenbuch, Höhefeld, and Lindelbach to Bronnbach Monastery jointly with his wife Anna.",
+          "personTitle": [
+            "der Alte"
+          ]
+        },
         {
           "type": "spouse",
           "person": "Anna",
@@ -19,16 +26,39 @@
             "der Alte"
           ]
         },
-        "Eberhard von Rosenberg, gen. der Alte sealed the property sale document",
-        "Anna sealed the property sale document",
-        "Knebel von Huesen served as surety for Eberhard von Rosenberg's property sale",
-        "Fritz Stetenberg served as surety for Eberhard von Rosenberg's property sale",
+        {
+          "type": "generic",
+          "person": "Eberhard von Rosenberg",
+          "content": "sealed the sale deed.",
+          "personTitle": [
+            "der Alte"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Anna",
+          "content": "sealed the sale deed."
+        },
+        {
+          "type": "generic",
+          "person": "Knebel von Huesen",
+          "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
+        },
+        {
+          "type": "generic",
+          "person": "Fritz Stetenberg",
+          "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
+        },
         {
           "type": "sibling",
           "person": "Peter Stetenberg",
           "of": "Fritz Stetenberg"
         },
-        "Peter Stetenberg served as surety for Eberhard von Rosenberg's property sale"
+        {
+          "type": "generic",
+          "person": "Peter Stetenberg",
+          "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
+        }
       ],
       "img": [
         {

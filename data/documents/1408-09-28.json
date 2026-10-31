@@ -7,7 +7,14 @@
       "german": "König Rupertus befehlt der Stadt Dinckelsbühl, die Steuer dem Conrad von Rosenberg dem alten zu geben. C.",
       "english": "King Ruprecht commands the city of Dinkelsbühl to give the tax to Konrad von Rosenberg der Alte. C.",
       "facts": [
-        "King Ruprecht ordered the city of Dinkelsbühl to pay the tax to Konrad von Rosenberg der Alte."
+        {
+          "type": "generic",
+          "person": "Ruprecht",
+          "personTitle": [
+            "König"
+          ],
+          "content": "ordered the city of Dinkelsbühl to give the tax to Konrad von Rosenberg der Alte."
+        }
       ]
     }
   ]

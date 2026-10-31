@@ -8,7 +8,11 @@
       "german": "Ritter Wilhelm von Rechberg zu Hohenrechberg, Hofmeister, Ritter Wiprecht der Ältere von Helmstadt, Hans von Rotenhan und Eberhard Rüdt (von Collenberg), Burggraf zu Miltenberg, bekunden, dass sie eine Eheberedung zwischen Ulrich von Rosenberg, Sohn des Arnold, und der Anna von Kronberg, Tochter des verstorbenen Walther, mit der Maßgabe geschlossen haben, dass das Beilager nach Erreichung des 15. Lebensjahres der Anna stattfinden soll. Frank der Jüngere von Kronberg soll der Tochter seines Bruders aus ihrem väterlichen Erbe 3.000 Gulden Frankfurter Währung geben, die Ulrich mit gleicher Summe widerlegen soll. An den 2.000 Gulden, die Margerethe von Hirschhorn, Annas Mutter, auf Heppenheim verschrieben sind, und an den 2.400 Gulden, die ihr von ihren Brüdern Hans und Philipp von Hirschhorn aus dem väterlichen und mütterlichen Erbe zugefallen sind, soll Anne ihr Anrecht behalten.",
       "english": "Wilhelm von Rechberg zu Hohenrechberg, Ritter, Hofmeister, Wiprecht von Helmstadt der Ältere, Ritter, and Hans von Rotenhan, and Eberhard Rüdt (von Collenberg), Burggraf zu Miltenberg, declare that they have concluded a marriage agreement between Ulrich von Rosenberg, son of Arnold, and Anna von Kronberg, daughter of the late Walther, with the stipulation that the marriage should take place after Anna reaches the age of 15. Frank der Jüngere von Kronberg is to give his brother's daughter 3,000 guilders in Frankfurt currency from her paternal inheritance, which Ulrich is to repay with the same amount. Anne is to retain her right to the 2,000 guilders assigned to Margerethe von Hirschhorn, Anna's mother, in Heppenheim, and to the 2,400 guilders that accrued to her from her brothers, Hans and Philipp von Hirschhorn, from their paternal and maternal inheritances.",
       "facts": [
-        "A marriage contract (Eheberedung) was concluded between Ulrich von Rosenberg and Anna von Kronberg",
+        {
+          "type": "generic",
+          "person": "Ulrich von Rosenberg",
+          "content": "entered into a marriage agreement with Anna von Kronberg."
+        },
         {
           "type": "parent",
           "person": "arnold_boxberg",
@@ -25,29 +29,47 @@
           "person": "Walther von Kronberg",
           "diedBefore": "1438-06-24"
         },
-        "The Beilager shall take place after Anna von Kronberg reaches age 15",
         {
-          "type": "title",
+          "type": "generic",
+          "person": "Anna von Kronberg",
+          "content": "was to have the marriage with Ulrich von Rosenberg take place after she reached the age of 15."
+        },
+        {
+          "type": "generic",
           "person": "Wilhelm von Rechberg",
           "personTitle": [
             "zu Hohenrechberg",
             "Hofmeister",
             "Ritter"
-          ]
+          ],
+          "content": "attested the marriage agreement between Ulrich von Rosenberg and Anna von Kronberg."
         },
-        "Wilhelm von Rechberg zu Hohenrechberg attested the marriage contract between Ulrich von Rosenberg and Anna von Kronberg",
         {
-          "type": "title",
+          "type": "generic",
           "person": "Wiprecht von Helmstadt",
           "personTitle": [
             "der Ältere",
             "Ritter"
+          ],
+          "content": "attested the marriage agreement between Ulrich von Rosenberg and Anna von Kronberg."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rotenhan",
+          "content": "attested the marriage agreement between Ulrich von Rosenberg and Anna von Kronberg."
+        },
+        {
+          "type": "title",
+          "person": "Eberhard Rüdt von Collenberg",
+          "personTitle": [
+            "Burggraf zu Miltenberg"
           ]
         },
-        "Wiprecht der Ältere von Helmstadt attested the marriage contract between Ulrich von Rosenberg and Anna von Kronberg",
-        "Hans von Rotenhan attested the marriage contract between Ulrich von Rosenberg and Anna von Kronberg",
-        "Eberhard Rüdt von Collenberg is Burggraf zu Miltenberg",
-        "Eberhard Rüdt von Collenberg attested the marriage contract between Ulrich von Rosenberg and Anna von Kronberg",
+        {
+          "type": "generic",
+          "person": "Eberhard Rüdt von Collenberg",
+          "content": "attested the marriage agreement between Ulrich von Rosenberg and Anna von Kronberg."
+        },
         {
           "type": "sibling",
           "person": "Frank von Kronberg",
