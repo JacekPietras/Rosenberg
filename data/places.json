@@ -1314,5 +1314,16 @@
     ],
     "lat": 49.4359,
     "lon": 8.8094
+  },
+  {
+    "id": "esselbach",
+    "category": "village",
+    "variations": [
+      "Esselbach",
+      "Espelbach",
+      "Eßelbach"
+    ],
+    "lat": 49.855278,
+    "lon": 9.525833
   }
 ]

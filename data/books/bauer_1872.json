@@ -2507,37 +2507,37 @@
       "english": "Brothers of Anna appear later; in 1387, Götz von Rosenberg and his brothers (or brother?) received their share in Rosenberg, a castle fief in Rodenfels, and properties in Esselbach. The father was likely deceased by then. In 1385, Hans von Rosenberg & his wife Anna von Kronenberg and his brother Götz sold their fortress in Urhausen, as it had been inherited from their late father, for 215 florins. The guarantors were: Eberhard von Rosenberg, Ritter, Vogt of Lauda, and Kunz von Rosenberg, residing in Boxberg.",
       "facts": [
         {
-          "person": "Hans von Rosenberg",
+          "person": "hans_brother_of_gotz",
           "type": "sibling",
-          "of": "Götz von Rosenberg",
+          "of": "gotz_von_rosenberg",
           "date": "1385"
         },
         {
-          "person": "Hans von Rosenberg",
+          "person": "hans_brother_of_gotz",
           "type": "spouse",
           "of": "Anna von Kronenberg",
           "date": "1385"
         },
         {
-          "person": "Hans von Rosenberg",
+          "person": "hans_brother_of_gotz",
           "type": "generic",
           "content": "had a father who was deceased by 1385.",
           "date": "1385"
         },
         {
-          "person": "Götz von Rosenberg",
+          "person": "gotz_von_rosenberg",
           "type": "generic",
           "content": "had a father who was deceased by 1385.",
           "date": "1385"
         },
         {
-          "person": "Hans von Rosenberg",
+          "person": "hans_brother_of_gotz",
           "type": "generic",
           "content": "sold the fortress of Urhausen, inherited from his deceased father, with his wife Anna von Kronenberg and his brother Götz.",
           "date": "1385"
         },
         {
-          "person": "Götz von Rosenberg",
+          "person": "gotz_von_rosenberg",
           "type": "generic",
           "content": "sold the fortress of Urhausen, inherited from his deceased father, with his brother Hans von Rosenberg and Anna von Kronenberg.",
           "date": "1385"
@@ -2574,7 +2574,7 @@
       "english": "In 1401, Hans von Rosenberg received from Würzburg his share of the large and small tithes in Brunnacker and Burkheim in Boßfheim, what he had there, his share of the house in Rosenberg, and a castle fief belonging to Rodenfels.",
       "facts": [
         {
-          "person": "Hans von Rosenberg",
+          "person": "hans_brother_of_gotz",
           "type": "generic",
           "content": "received from Würzburg shares of tithes at Brunacker and Burgheim, property at Bofsheim, a share of the house at Rosenberg, and a Burglehen belonging to Rodenfels.",
           "date": "1401"
@@ -2586,7 +2586,7 @@
       "english": "In 1401, Götz von Rosenberg received his share in Rosenberg, as well as his share of the tithe in Rosenberg, Brunnacker, and Burkheim; likewise, in Boßfheim, what he held there, and a castle fief belonging to Rodenfels.",
       "facts": [
         {
-          "person": "Götz von Rosenberg",
+          "person": "gotz_von_rosenberg",
           "type": "generic",
           "content": "received shares at Rosenberg, of tithes at Rosenberg, Brunacker, and Burgheim, property at Bofsheim, and a Burglehen belonging to Rodenfels.",
           "date": "1401"
@@ -2617,25 +2617,25 @@
       "english": "In 1412, Götz von Rosenberg received from Würzburg as a fief his share of properties and tithes in Rosenberg, his share of the tithe in Burkheim, and in the village of Boßfheim and the new farm near Rosenberg. Hans von Rosenberg received ⅛ of the tithe in Burgheim, 2 parts of ¼ of the tithe in Rosenberg, his and his brother's house in Rosenberg, as far as the fortified courtyard reached, and 5 properties—his share in Boßfheim. Götz von Rosenberg received the tithe in Boßfheim, ⅓ of the tithe in Sindolzheim, and other properties.",
       "facts": [
         {
-          "person": "Götz von Rosenberg",
+          "person": "gotz_von_rosenberg",
           "type": "generic",
           "content": "received Würzburg fiefs consisting of shares of property and tithes at Rosenberg, the Burgheim tithe, Bofsheim village, and the new farm near Rosenberg.",
           "date": "1412"
         },
         {
-          "person": "Götz von Rosenberg",
+          "person": "gotz_von_rosenberg",
           "type": "generic",
           "content": "received the tithe at Bofsheim as a Würzburg fief.",
           "date": "1412"
         },
         {
-          "person": "Götz von Rosenberg",
+          "person": "gotz_von_rosenberg",
           "type": "generic",
           "content": "received one third of the tithe at Sindolsheim as a Würzburg fief.",
           "date": "1412"
         },
         {
-          "person": "Hans von Rosenberg",
+          "person": "hans_brother_of_gotz",
           "type": "generic",
           "content": "received Würzburg fiefs including shares of tithes at Burgheim and Rosenberg, the house he shared with his brother at Rosenberg, and property at Bofsheim.",
           "date": "1412"
@@ -2647,7 +2647,7 @@
       "english": "Shortly thereafter, two brothers, Hans der Jüngere and Thomas, appear, enfeoffed in 1415, and in 1421 Kunz von Rosenberg, the son of Hans von Rosenberg. It is evident that Götz had passed away, and he was succeeded by the two brothers, Thomas and Hans, who was first called \"the Younger\" because his uncle Hans was still alive for some time. Hans von Rosenberg der Jüngere received in 1415 the tithe in Burkheim, his share of the tithe in Rosenberg, his share of the village of Boßfheim with the court and its appurtenances, and the income in Sindolzheim, which his brother Thomas von Rosenberg had previously held as a fief and now relinquished.",
       "facts": [
         {
-          "person": "Hans von Rosenberg",
+          "person": "hans_son_of_gotz",
           "personTitle": [
             "der Jüngere"
           ],
@@ -2656,13 +2656,13 @@
           "date": "1415"
         },
         {
-          "person": "Hans von Rosenberg",
+          "person": "hans_brother_of_gotz",
           "type": "parent",
           "of": "Kunz von Rosenberg",
           "date": "1421"
         },
         {
-          "person": "Hans von Rosenberg",
+          "person": "hans_son_of_gotz",
           "personTitle": [
             "der Jüngere"
           ],
@@ -2673,7 +2673,7 @@
       ],
       "guesses": [
         {
-          "person": "Hans von Rosenberg",
+          "person": "hans_son_of_gotz",
           "personTitle": [
             "der Jüngere"
           ],
@@ -2682,22 +2682,22 @@
           "date": "1415"
         },
         {
-          "person": "Götz von Rosenberg",
+          "person": "gotz_von_rosenberg",
           "type": "death",
           "diedBefore": "1415",
           "date": "1415"
         },
         {
-          "person": "Götz von Rosenberg",
+          "person": "gotz_von_rosenberg",
           "type": "parent",
-          "of": "Hans von Rosenberg",
+          "of": "hans_son_of_gotz",
           "ofTitle": [
             "der Jüngere"
           ],
           "date": "1415"
         },
         {
-          "person": "Götz von Rosenberg",
+          "person": "gotz_von_rosenberg",
           "type": "parent",
           "of": "Thomas von Rosenberg",
           "date": "1415"
@@ -2717,7 +2717,7 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of the tithe at Burkheim, goods at Bofsheim and Espelbach, and a stone house at Rosenberg.",
+          "content": "received a quarter of the tithe at Burkheim, goods at Bofsheim and Esselbach, and a stone house at Rosenberg.",
           "date": "1421"
         },
         {
@@ -2802,7 +2802,7 @@
             "der Junge"
           ],
           "type": "generic",
-          "content": "received a third of the tithe at Burkheim and his shares in Bofsheim, Rosenberg Castle, and Eßelbach (Espelbach), inherited from his father Kunz.",
+          "content": "received a third of the tithe at Burkheim and his shares in Bofsheim, Rosenberg Castle, and Esselbach, inherited from his father Kunz.",
           "date": "1445"
         },
         {
@@ -2811,7 +2811,7 @@
             "der Junge"
           ],
           "type": "generic",
-          "content": "received a third of the tithe at Burkheim and his shares in Bofsheim, Rosenberg Castle, and Eßelbach (Espelbach), inherited from his father Kunz.",
+          "content": "received a third of the tithe at Burkheim and his shares in Bofsheim, Rosenberg Castle, and Esselbach, inherited from his father Kunz.",
           "date": "1456"
         }
       ]
