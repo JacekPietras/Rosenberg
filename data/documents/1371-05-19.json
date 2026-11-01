@@ -15,13 +15,6 @@
           "personTitle": [
             "Vitzthum zu Amberg"
           ],
-          "type": "title"
-        },
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vitzthum zu Amberg"
-          ],
           "type": "generic",
           "content": "issued a court letter to Osann, widow of Konrad the Zenger, concerning the estates at Hollenstein."
         },
@@ -39,7 +32,18 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/1/full/4368,/0/default.jpg"
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/2/full/4368,/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/2/full/4368,/0/default.jpg",
+          "seals": [
+            {
+              "person": "vitztum_zu_Heidelberg",
+              "position": "0.5073,0.3271",
+              "size": 0.2110000000000001,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         }
       ]
     }
