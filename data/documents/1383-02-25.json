@@ -1,0 +1,33 @@
+{
+  "date": "1383-02-25",
+  "label": "new",
+  "entries": [
+    {
+      "source": "Generallandesarchiv Karlsruhe 42 Nr. 4175",
+      "url": [
+        "http://www.landesarchiv-bw.de/plink/?f=4-1854937",
+        "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?bestand=50939&id=7461481&syssuche=1383+rosenberg&logik=und&screenbreite=1512&screenhoehe=982"
+      ],
+      "german": "Abt Albrecht von Ellwangen verweist auf Befragen genannter Bürger zu Schwäbisch Gmünd den Streit zwischen Dietrich Geyer (von Giebelstadt), Ritter, und Hennel Streuff wegen des Zehnten zu Östringen vor ein Schiedsgericht und bestellt als Gemeinen eventuell Konrad von Rosenberg.",
+      "english": "Albrecht, abbot of Ellwangen, at the request of named citizens of Schwäbisch Gmünd, refers the dispute between Dietrich Geyer (von Giebelstadt), Ritter, and Hennel Streuff over the tithe at Östringen to an arbitration court and appoints Konrad von Rosenberg as a possible umpire.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "was appointed as a possible umpire in the dispute between Dietrich Geyer von Giebelstadt and Hennel Streuff over the tithe at Östringen."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=775024&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000775024%2Ftitlaufn_0001854937%2F04_0001854937_0001_4-1854937-1.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=775024&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000775024%2Ftitlaufn_0001854937%2F04_0001854937_0002_4-1854937-2.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=775024&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000775024%2Ftitlaufn_0001854937%2F04_0001854937_0003_4-1854937-3.jpg"
+        }
+      ]
+    }
+  ]
+}
