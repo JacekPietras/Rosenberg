@@ -2134,19 +2134,26 @@
       ],
       "guesses": [
         {
-          "person": "Eberhard von Rosenberg",
+          "person": "vogt_zu_Lauda",
           "personTitle": [
             "Ritter",
             "Vogt zu Lauda"
           ],
-          "type": "generic",
-          "content": "may have been the father of Arnold von Rosenberg der Jüngere and his brother Eberhard.",
+          "type": "parent",
+          "of": "arnold_boxberg",
+          "ofTitle": [
+            "der Jüngere"
+          ],
           "date": "1388"
         },
         {
-          "person": "Eberhard von Rosenberg",
-          "type": "death",
-          "diedOn": "1388",
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Lauda"
+          ],
+          "type": "parent",
+          "of": "eberhard_jagstberg",
           "date": "1388"
         }
       ]

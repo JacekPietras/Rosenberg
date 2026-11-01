@@ -4,7 +4,7 @@
   },
   "inputs": {
     "data/books/arnold_von_uissigheim.json": "sha256:204a3482a75b29b090c97096b62ba55fd5ba4b110200d56c038c804b82bace42",
-    "data/books/bauer_1872.json": "sha256:c93e06d4e5dc19d71d8a60a3bd757c74ad5b0a4e9db6107e72137f595b9a9198",
+    "data/books/bauer_1872.json": "sha256:72d872c42c9f85788287b01980e7e8907a5f2d5a7e592a67ae32d3b168f3ad96",
     "data/books/bidermann_1751.json": "sha256:592dacc0501debe8669520a44203b787628a283d1af0c0035acd421c5e598fda",
     "data/books/freiburger_dioecesan_archiv_1896_25.json": "sha256:8b78239305b0b136240144fbaacd252c00eb4d7647e73f7712e6c80c1b16dcd1",
     "data/books/kreis_mosbach_1898.json": "sha256:2b4fda1ae54e9f8881b9e562330f197a7563cbe59ca47a3dedfcc70db53eec2f",
@@ -404,7 +404,7 @@
     "data/places.json": "sha256:3ec2927a669ea2c00bfc4d976682550bb5169120b848e1027f0fbbfb863cf59e",
     "data/titles.md": "sha256:97e8dd72c8aa0a206b9cf484304bf6ffb1a28b3e69a46fc5c0c3242c99685098"
   },
-  "fingerprint": "sha256:86de9331397751b574df6efb3c5a1813d854b5e3906c7187a2cadfb7a6ac996a",
+  "fingerprint": "sha256:d0248d84098aa7abc97c51852aa908b1b4367a35ada5c78fcc6df1c5546b1497",
   "evidence": {
     "with-guesses": {
       "sources": [
@@ -2116,7 +2116,7 @@
         {
           "path": "data/books/bauer_1872.json",
           "pointer": "/entries/56/guesses/0",
-          "fingerprint": "sha256:634c8a64110240252ce75817e4741fed27306ebf9396da381b38566431774a26"
+          "fingerprint": "sha256:a41c4c335468a1b856f4d75852d4e0be81253c01df8776d4ad4225c16ce31b7e"
         },
         {
           "path": "data/books/bauer_1872.json",
