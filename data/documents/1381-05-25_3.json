@@ -12,7 +12,7 @@
         {
           "person": "Hans von Hirschhorn",
           "type": "kin",
-          "of": "Konrad von Rosenberg",
+          "of": "vitztum_zu_Heidelberg",
           "ofTitle": [
             "Ritter",
             "Vitztum zu Heidelberg"
@@ -81,7 +81,7 @@
               "wideningRotation": 49
             },
             {
-              "person": "Konrad von Rosenberg",
+              "person": "vitztum_zu_Heidelberg",
               "position": "0.5892,0.7716",
               "size": 0.12299999999999997,
               "type": "swans"
