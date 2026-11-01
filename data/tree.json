@@ -186,7 +186,7 @@
     "data/documents/1387-09-23.json": "sha256:939b188bfc57a8b6e74168d17b11ed1ef4438d051791e47fb485692a210f66a2",
     "data/documents/1387-12-28.json": "sha256:c91c6bd53913bbb3c3042cd3a1388ced8a43790e7077810c066fce78b9d7e192",
     "data/documents/1388-04-06.json": "sha256:a0800133c288971c2bd626f73fa74d451632c1da826dcdbded65a0d80dc0e5f0",
-    "data/documents/1388-06-29.json": "sha256:c20b861162a0ecb8960e3c14ba96eed5f723b1f4e188f997b5fc70e3af6af531",
+    "data/documents/1388-06-29.json": "sha256:3ed22526fbca1eeb815f6f899e974577c6c3909c5b563b56601b0d632c0ca58d",
     "data/documents/1389-01-18.json": "sha256:2f4abe3322b7e77e534aa6e2bd3df5aab15f0962e6544550bc49b832f4778cc9",
     "data/documents/1389-02-21.json": "sha256:e18771ed220f2b99041707c7235bf96f6608461e6ddad9d433a1c27ec689e0c2",
     "data/documents/1389-03-28.json": "sha256:fc1d1592a042e552e366ddc23908b61fb6df4bf32d6a462170ad94c1f96dab40",
@@ -403,7 +403,7 @@
     "data/places.json": "sha256:debe760515ed1ec45abac9c41850875573a498396fa87537999e121e462d0dba",
     "data/titles.md": "sha256:97e8dd72c8aa0a206b9cf484304bf6ffb1a28b3e69a46fc5c0c3242c99685098"
   },
-  "fingerprint": "sha256:eda41ade070ac3702b58748de9c2e1e4fa83b4a05aa023dbb9d54e465404da13",
+  "fingerprint": "sha256:97977101951e1df6bc446e4b3601c6ed6b34f18585fc4a071b6118e863bf4c92",
   "evidence": {
     "with-guesses": {
       "sources": [

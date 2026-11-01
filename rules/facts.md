@@ -5,6 +5,10 @@ JSON documents under `data/`.
 
 ## Extraction
 
+Skip fact and guess extraction for any document whose document-level `label`
+is `Hessen` or contains `Hessen` in an array. Do not add facts or guesses to
+any of its entries.
+
 Read the complete document and its source text before adding facts. Extract
 only information explicitly stated or unambiguously expressed in the source;
 never infer, interpret, or extrapolate. The German source is authoritative when
@@ -159,10 +163,13 @@ activity, financial amounts or measurements, or third-party transactions with
 no target-family participant. Keep relevant property and transaction facts even
 when they are not genealogical.
 
-`Münch von Rosenberg` is a distinct family. Never conflate it with the primary
-von Rosenberg family or use its genealogy as evidence about von Rosenberg. A
-Münch fact may remain when it explicitly documents a direct interaction with
-the primary von Rosenberg family.
+`Schenk von Rosenberg` and `Mönch von Rosenberg` (also spelled `Münch von
+Rosenberg`) are distinct families from each other and from the primary von
+Rosenberg family. Do not target them for facts or guesses merely because their
+names contain `von Rosenberg`, and never use their genealogy as evidence about
+the primary family. A fact or guess involving a member of either family may
+be relevant when it explicitly documents a direct interaction with a target
+family or otherwise meets the relevance criteria above.
 
 ## Names and normalization
 
