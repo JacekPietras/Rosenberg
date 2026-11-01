@@ -1326,5 +1326,16 @@
     ],
     "lat": 49.855278,
     "lon": 9.525833
+  },
+  {
+    "id": "seckendorff",
+    "category": "village",
+    "variations": [
+      "Seckendorf",
+      "Seckendorff"
+    ],
+    "showOnMap": false,
+    "lat": 0.0,
+    "lon": 0.0
   }
 ]

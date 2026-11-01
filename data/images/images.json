@@ -2796,17 +2796,17 @@
       ],
       "facts": [
         {
-          "person": "Hans Georg von Seckendorff",
+          "person": "Hans Georg von Seckendorf",
           "type": "parent",
-          "of": "Georg Albrecht von Seckendorff"
+          "of": "Georg Albrecht von Seckendorf"
         },
         {
           "person": "Brigitta von Rosenberg",
           "type": "parent",
-          "of": "Georg Albrecht von Seckendorff"
+          "of": "Georg Albrecht von Seckendorf"
         },
         {
-          "person": "Georg Albrecht von Seckendorff",
+          "person": "Georg Albrecht von Seckendorf",
           "type": "death",
           "diedOn": "1632-04-30",
           "date": "1632-04-30"
@@ -3231,25 +3231,25 @@
       "url": "https://drive.google.com/thumbnail?id=1S5jI-fO4QMpDZLmrFEBhocd9h1IvttmD&sz=w1600",
       "facts": [
         {
-          "person": "Hans Georg von Seckendorff",
+          "person": "Hans Georg von Seckendorf",
           "type": "parent",
-          "of": "Hans Ludovicus von Seckendorff",
+          "of": "Hans Ludovicus von Seckendorf",
           "ofDeceased": true
         },
         {
           "person": "Brigitta von Rosenberg",
           "type": "parent",
-          "of": "Hans Ludovicus von Seckendorff",
+          "of": "Hans Ludovicus von Seckendorf",
           "ofDeceased": true
         },
         {
-          "person": "Hans Ludovicus von Seckendorff",
+          "person": "Hans Ludovicus von Seckendorf",
           "personDeceased": true,
           "type": "generic",
           "content": "has 16 May 1596 recorded on his epitaph as the earliest possible date."
         },
         {
-          "person": "Hans Ludovicus von Seckendorff",
+          "person": "Hans Ludovicus von Seckendorf",
           "type": "death",
           "diedBefore": "1596-09-07",
           "date": "1596"
