@@ -6,6 +6,7 @@ from validate_facts import TYPES, Validator
 from .dates import date_bounds, inherited_date_bounds
 from .model import Assertion, Inputs, Mention, SourceRef, fingerprint
 from .probability import Observation, parameters
+from .names import Names
 
 SOURCE_DIRS = ('books', 'documents', 'notes', 'images')
 
@@ -122,6 +123,18 @@ def load_inputs(root, validate=True):
     kinship_path = root / 'data/kinship.md'
     kinship = kinship_path.read_text(encoding='utf-8') if kinship_path.exists() else ''
     places = json.loads((root / 'data/places.json').read_text(encoding='utf-8'))
+    title_names = Names(names, places, titles, kinship)
+    canonical_titles = {}
+    for assertion in assertions:
+        for mention in assertion.mentions:
+            normalized = []
+            for title in mention.titles:
+                if title not in canonical_titles:
+                    canonical_titles[title] = title_names.canonical_title(title)
+                value = canonical_titles[title]
+                if value not in normalized:
+                    normalized.append(value)
+            mention.titles = tuple(normalized)
     matching_path = root / 'data/matching.json'
     if validate and not matching_path.exists():
         raise ValueError('data/matching.json: global probability configuration is missing')

@@ -67,6 +67,19 @@ class FamilyGraphTests(unittest.TestCase):
             self.assertTrue(assertion.mentions[0].deceased)
         self.assertEqual([], build(inputs).relationships)
 
+    def test_titles_normalized_on_ingestion_and_deduplicated_in_tree(self):
+        self.write('data/titles.md', 'Vizedom, Vicedom, Vitzthum\nRitter, miles\nder Rote, Rufus\n')
+        facts = [
+            {'type': 'parent', 'person': 'a', 'of': 'b', 'personTitle': ['Vicedom zu Amberg', 'miles', 'Rufus']},
+            {'type': 'title', 'person': 'a', 'personTitle': ['Vitzthum in Amberg', 'Ritter', 'der Rote']},
+            {'type': 'title', 'person': 'a', 'personTitle': ['Vitzthum zu Heidelberg']},
+        ]
+        inputs = self.inputs(facts=facts)
+        self.assertEqual(('Vizedom zu Amberg', 'Ritter', 'der Rote'), inputs.assertions[0].mentions[0].titles)
+        self.assertEqual(facts[0], inputs.assertions[0].original)
+        node = next(n for n in build(inputs).evidence_graph['nodes'] if n.get('registry') == 'a')
+        self.assertEqual(['Ritter', 'Vizedom zu Amberg', 'Vizedom zu Heidelberg', 'der Rote'], node['titles'])
+
     def test_non_person_subjects_do_not_create_person_mentions(self):
         fact = {'type': 'generic', 'subject': 'The von Rosenberg family',
                 'content': 'held Boxberg Castle.'}

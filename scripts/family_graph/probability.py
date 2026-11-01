@@ -268,6 +268,7 @@ DESIGNATED = r'(?:called|born|genannt|gennant|genant|gen|dictus|dicti|dicta|gebo
 CONNECTOR = r'(?:von|vom|van|de|zu|ze|zum|zur|in|of|at)'
 
 
+@lru_cache(maxsize=32768)
 def title_category(title, names=None):
     """Meaning of a title; equivalents come from data/titles.md and places.json."""
     value = normalize(title)
