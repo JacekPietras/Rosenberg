@@ -70,6 +70,21 @@
             "Domherr zu Würzburg"
           ],
           "type": "title"
+        },
+        {
+          "person": "Engelhard von Rosenberg",
+          "type": "sibling",
+          "of": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Engelhard von Rosenberg",
+          "type": "sibling",
+          "of": "hans_domherr_zu_wurzburg"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "sibling",
+          "of": "hans_domherr_zu_wurzburg"
         }
       ]
     }
