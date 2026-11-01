@@ -87,10 +87,8 @@ export function createSealScreen({
   function sealPersonLabel(value) {
     const label = String(value || '').trim();
     const reference = label.match(/^\[([^\]]+)\]$/);
-    if (!reference) return label;
-    const person = (state.personRecords || []).find((item) => item?.id === reference[1]);
-    if (!person?.name) return label;
-    return String(person.name).trim().split(/\s+/)[0];
+    const person = (state.personRecords || []).find((item) => item?.id === (reference ? reference[1] : label));
+    return person?.name ? String(person.name).trim() : label;
   }
 
   function sealMatchesSelected(title, selected) {
@@ -186,7 +184,8 @@ export function createSealScreen({
     const selected = new Set(state.sealNames);
     const entries = allEntries.filter((entry) => (!selected.size || sealMatchesSelected(entry.title, selected)) && sealMatchesType(entry, state.sealType));
     const content = entries.map((entry, index) => {
-      const title = entry.title ? `<h3>${titleMarkup(entry.title)}</h3>` : '';
+      const person = (state.personRecords || []).find((item) => item?.id === entry.title.replace(/^\[|\]$/g, ''));
+      const title = entry.title ? `<h3>${person ? `<a class="person-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>` : titleMarkup(entry.title)}</h3>` : '';
       const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
       const sourceMarkup = entry.source ? `<p class="source">${sealSourceMarkup(entry.source)}</p>` : '';
       const recordUrl = entry.source ? sealRecordUrlMarkup(entry.source) || urlMarkup(entry.url) : urlMarkup(entry.url);

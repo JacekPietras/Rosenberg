@@ -1,6 +1,6 @@
 import { escapeHtml } from './html.js';
 import { localImageName, imageRootForPath } from './image-paths.js?v=2';
-import { sealAnnotationMarkup } from './seal-markup.js';
+import { sealAnnotationMarkup } from './seal-markup.js?v=2';
 
 function cachedDriveThumbnail(url, location = window.location, size = 'w480', scope = 'images') {
   let id = '';

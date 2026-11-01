@@ -9,8 +9,8 @@ export function sealAnnotationMarkup(seals = [], escapeHtml, personRecords = [])
     if (!Number.isFinite(x) || !Number.isFinite(y) || !Number.isFinite(size) || x < 0 || x > 1 || y < 0 || y > 1 || size <= 0 || !String(seal?.person || '').trim()) return '';
     const personLabel = String(seal.person).trim();
     const reference = personLabel.match(/^\[([^\]]+)\]$/);
-    const person = reference && personRecords.find((item) => item?.id === reference[1]);
+    const person = personRecords.find((item) => item?.id === (reference ? reference[1] : personLabel));
     const personText = escapeHtml(person?.name || personLabel.replace(/^\[|\]$/g, ''));
-    return `<span class="seal-marker"${reference ? ' data-person-reference="true"' : ''} data-size="${size}" data-width="${width}" data-widening-rotation="${wideningRotation}" data-rotation="${rotation}" style="left:${x * 100}%;top:${y * 100}%" role="img" aria-label="Seal of ${personText}" title="${personText}"><span class="seal-marker-label">${personText}</span></span>`;
+    return `<span class="seal-marker"${reference || person ? ' data-person-reference="true"' : ''} data-size="${size}" data-width="${width}" data-widening-rotation="${wideningRotation}" data-rotation="${rotation}" style="left:${x * 100}%;top:${y * 100}%" role="img" aria-label="Seal of ${personText}" title="${personText}"><span class="seal-marker-label">${personText}</span></span>`;
   }).join('');
 }

@@ -1,4 +1,4 @@
-import { sealAnnotationMarkup } from '../rendering/seal-markup.js';
+import { sealAnnotationMarkup } from '../rendering/seal-markup.js?v=2';
 import { escapeHtml } from '../rendering/html.js';
 import { positionSealCrop } from './seal-annotations.js';
 
