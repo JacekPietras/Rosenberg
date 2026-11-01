@@ -248,6 +248,7 @@ Book facts follow the shared Facts JSON rules above. Every fact and guess uses a
 ```json
 {
   "date": "1399-02-01",
+  "transcribed": true,
   "label": [
     "Schenk",
     "important"
@@ -290,6 +291,8 @@ Book facts follow the shared Facts JSON rules above. Every fact and guess uses a
 
 Documents have a document-level `date` and an `entries` array. Each entry retains `source`,`german`,
 `english`, and `facts`. Its `facts` array follows the shared Facts JSON rules above: every fact and guess is typed, generic objects inherit the enclosing date, and other types normally inherit it unless overridden.
+
+The optional document-level boolean `transcribed` is `true` when the document has been successfully transcribed. An absent field or `false` means it has not been marked as transcribed.
 
 The optional document-level `label` may be a string or an array of strings. Each label is displayed
 as a red badge. The special label `"important"` gives the document a reddish background; `"Hessen"`,

@@ -1,5 +1,5 @@
 import { escapeHtml } from './html.js';
-import { localImageName, imageRootForPath } from './image-paths.js';
+import { localImageName, imageRootForPath } from './image-paths.js?v=2';
 import { sealAnnotationMarkup } from './seal-markup.js';
 
 function cachedDriveThumbnail(url, location = window.location, size = 'w480', scope = 'images') {
@@ -50,7 +50,7 @@ export function createImageRenderer({ location = window.location, state } = {}) 
           } else source = fileName;
           if (context.thumbnail && !fallback) fallback = fileName;
         } else {
-        fallback = fileName; const localName = localImageName(fileName);
+        fallback = fileName; const localName = localImageName(fileName, context.path?.startsWith('data/documents/'));
         if (!/\.(?:svg|png|jpe?g|gif|webp)$/i.test(localName)) return '';
         if (context.path?.startsWith('data/documents/') && !location.hostname.endsWith('github.io')) {
           cachedSource = `/api/document-image?url=${encodeURIComponent(fileName)}`;

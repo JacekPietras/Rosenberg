@@ -70,6 +70,8 @@ Follow `rules/facts.md` and `rules/json-formats.md`, and the `fact-extraction-re
 
 ## 7. Verify and report
 
+Once the document transcription has been completed, set the document-level `transcribed` field to `true`. Do not mark it while the transcription is incomplete.
+
 - `python3 -c "import json; json.load(open('<file>'))"` and `python3 scripts/validate_facts.py` must report no errors.
-- Review `git diff` of the file. Confirm that only `summary`, `german`/`latin`, `english` and `facts` changed.
+- Review `git diff` of the file. Confirm that only `transcribed`, `summary`, `german`/`latin`, `english` and `facts` changed.
 - Report: the file identified; the uncertain readings; each fact with its supporting quote and status (supported / partially supported / unsupported / contradicted), as in `rules/facts.md`; and open questions such as possible person matches.

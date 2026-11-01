@@ -1,6 +1,7 @@
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import json
+import hashlib
 from html.parser import HTMLParser
 import os
 import re
@@ -10,7 +11,7 @@ import tempfile
 import threading
 import time
 import traceback
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 from urllib.request import Request, urlopen
 import webbrowser
 
@@ -128,14 +129,15 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 return
             query = parse_qs(parsed_image_url.query)
             original_name = query.get("originalBilddatei", [""])[0]
-            image_name = Path(original_name or parsed_image_url.path).name
+            image_name = Path(original_name or unquote(parsed_image_url.path)).name
             if not image_name.lower().endswith((".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg")):
                 self.send_json(400, {"error": "Could not determine the document image filename"})
                 return
             cache_dir = ROOT / "data" / "documents" / "img-temp"
             cache_dir.mkdir(parents=True, exist_ok=True)
-            cached = cache_dir / image_name
-            mime_file = cache_dir / f"{image_name}.mime"
+            cache_key = hashlib.sha256(image_url.encode("utf-8")).hexdigest()
+            cached = cache_dir / f"{cache_key}{Path(image_name).suffix.lower()}"
+            mime_file = cache_dir / f"{cached.name}.mime"
             try:
                 if not cached.exists() or cached.stat().st_size == 0:
                     request = Request(image_url, headers={"User-Agent": "Rosenberg research image cache/1.0"})

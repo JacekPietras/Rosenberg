@@ -8,6 +8,7 @@ image URL and falls back to that URL when the local file is unavailable.
 from __future__ import annotations
 
 import json
+import hashlib
 import sys
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlsplit
@@ -25,10 +26,10 @@ IMAGE_SUFFIXES = {".gif", ".jpeg", ".jpg", ".png", ".svg", ".webp"}
 def cache_name(image_url: str) -> str:
     parts = urlsplit(image_url)
     original = parse_qs(parts.query).get("originalBilddatei", [""])[0]
-    name = Path(unquote(original or parts.path)).name
+    name = Path(original or unquote(parts.path)).name
     if not name or Path(name).suffix.lower() not in IMAGE_SUFFIXES:
         raise ValueError(f"cannot determine an image filename from {image_url}")
-    return name
+    return hashlib.sha256(image_url.encode("utf-8")).hexdigest() + Path(name).suffix.lower()
 
 
 def image_urls() -> list[str]:

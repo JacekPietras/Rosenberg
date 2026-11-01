@@ -18,7 +18,7 @@ import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as 
 import { createMapScreen } from './screens/map.js?v=85';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=94';
 import { createMarkupRenderer } from './rendering/markup.js?v=94';
-import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=15';
+import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=16';
 import { sortByDate } from './image-date-sort.js?v=2';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
 import { createLanguageRenderer } from './rendering/languages.js';
@@ -35,6 +35,7 @@ function savePreferences() {
     person: state.person,
     record: state.record,
     recordLabels: state.recordLabels,
+    toTranscribe: state.toTranscribe,
     hiddenRecordLabels: state.hiddenRecordLabels,
     sealNames: state.sealNames,
     sealType: state.sealType,
@@ -46,7 +47,7 @@ function savePreferences() {
     darkMode: state.darkMode,
   });
 }
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, record: preferences.record, recordSource: null, navigationRecord: null, navigationRecordSource: null, recordLabels: preferences.recordLabels, hiddenRecordLabels: preferences.hiddenRecordLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, imageRegions: preferences.imageRegions || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedDocumentsYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, record: preferences.record, recordSource: null, navigationRecord: null, navigationRecordSource: null, recordLabels: preferences.recordLabels, toTranscribe: preferences.toTranscribe, hiddenRecordLabels: preferences.hiddenRecordLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, imageRegions: preferences.imageRegions || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedDocumentsYear: null };
 state.familyView = preferences.familyView || 'facts';
 state.familyFocus = preferences.familyFocus || null;
 state.changeFamilyFocus = async (focus) => {
@@ -89,6 +90,7 @@ function clearScreenCaches() {
   state.record = state.navigationRecord;
   state.recordSource = state.navigationRecordSource;
   state.recordLabels = [];
+  state.toTranscribe = false;
   state.hiddenRecordLabels = [...GREY_RECORD_LABELS];
   state.sealNames = [];
   state.sealType = null;
@@ -1141,11 +1143,22 @@ function recordLabelsForPath(path) {
   return (Array.isArray(value) ? value : [value]).map((label) => String(label || '').trim()).filter(Boolean);
 }
 
+function recordNeedsTranscription(doc) {
+  return doc?.transcribed !== true && (doc?.entries || []).some((entry) => {
+    const images = Array.isArray(entry.img) ? entry.img : [entry.img];
+    return images.some((image) => {
+      if (image && typeof image === 'object' && (image.deleted === 'true' || image.deleted === true)) return false;
+      return typeof image === 'string' ? Boolean(image.trim()) : Boolean(typeof image?.src === 'string' && image.src.trim());
+    });
+  });
+}
+
 function visibleRecordPaths(paths) {
   const selected = new Set(state.recordLabels);
   const hidden = new Set(state.hiddenRecordLabels || []);
   return paths.filter((path) => {
     if (state.recordSource && !citationIndex.recordHasSource(path, state.recordSource)) return false;
+    if (state.toTranscribe && !recordNeedsTranscription(state.documents.get(path))) return false;
     if (path === state.navigationRecord) return true;
     const labels = recordLabelForPath(path);
     const missing = selected.has(MISSING_RECORD_LABEL) && recordHasMissingSourceOrUrl(path);
@@ -1169,6 +1182,7 @@ function renderYearSidebar(paths, labelPaths = paths) {
   });
   const missingPath = labelPaths.find((path) => recordHasMissingSourceOrUrl(path));
   if (missingPath && !labels.has(MISSING_RECORD_LABEL)) labels.set(MISSING_RECORD_LABEL, { label: MISSING_RECORD_LABEL, path: missingPath });
+  const transcriptionLink = `<a href="#" class="${state.toTranscribe ? 'selected' : ''}" data-sidebar-type="transcribe">to transcribe</a>`;
   const labelLinks = [...labels.values()]
     .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
     .map(({ label, path }) => {
@@ -1178,8 +1192,7 @@ function renderYearSidebar(paths, labelPaths = paths) {
       return `<a href="#" class="${selected ? 'selected' : ''}" data-sidebar-type="label" data-label="${escapeHtml(key)}" data-path="${escapeHtml(path)}">${escapeHtml(displayLabel)}</a>`;
     })
     .join('');
-  if (!yearLinks && !labelLinks) return '';
-  return `${yearLinks ? `<aside class="year-sidebar" aria-label="Documents by year"><nav>${yearLinks}</nav></aside>` : ''}${labelLinks ? `<aside class="label-sidebar" aria-label="Documents by label"><nav>${labelLinks}</nav></aside>` : ''}`;
+  return `${yearLinks ? `<aside class="year-sidebar" aria-label="Documents by year"><nav>${yearLinks}</nav></aside>` : ''}<aside class="label-sidebar" aria-label="Document filters"><nav>${transcriptionLink}${labelLinks}</nav></aside>`;
 }
 
 function setupYearHighlight(paths) {
@@ -1189,11 +1202,17 @@ function setupYearHighlight(paths) {
   const targets = paths
     .map((path, index) => ({ path, element: document.querySelector(`#year-${documentYear(state.documents.get(path))}-${index}`) }))
     .filter(({ element }) => element);
-  if (!links.length || !targets.length) return;
+  if (!links.length) return;
   let selectedLink = null;
 
   links.forEach((link) => link.addEventListener('click', (event) => {
     event.preventDefault();
+    if (link.dataset.sidebarType === 'transcribe') {
+      state.toTranscribe = !state.toTranscribe;
+      savePreferences();
+      renderActive();
+      return;
+    }
     if (link.dataset.sidebarType === 'label') {
       const label = link.dataset.label;
       const values = GREY_RECORD_LABELS.has(label) ? state.hiddenRecordLabels : state.recordLabels;
@@ -1211,6 +1230,7 @@ function setupYearHighlight(paths) {
     window.scrollTo(0, target.element.getBoundingClientRect().top + window.scrollY - 104);
   }));
 
+  if (!targets.length) return;
   const update = () => {
     const marker = window.scrollY + 160;
     let current = targets[0];
@@ -1222,6 +1242,7 @@ function setupYearHighlight(paths) {
     const year = current.element.id.match(/^year-(\d{4})-/)?.[1];
     const currentLabels = new Set(recordLabelForPath(current.path));
     links.forEach((link) => {
+      if (link.dataset.sidebarType === 'transcribe') return;
       const active = link.dataset.sidebarType === 'year'
         ? link.textContent === year
         : currentLabels.has(link.dataset.label) || (link.dataset.label === MISSING_RECORD_LABEL && recordHasMissingSourceOrUrl(current.path));

@@ -15,6 +15,7 @@ export function loadPreferences(storage) {
       place: typeof raw.place === 'string' ? raw.place : null,
       person: typeof raw.person === 'string' ? raw.person : null,
       record: normalizePath(raw.record || raw.letter),
+      toTranscribe: raw.toTranscribe === true,
       recordLabels: Array.isArray(raw.recordLabels) ? raw.recordLabels : (Array.isArray(raw.letterLabels) ? raw.letterLabels : []),
       hiddenRecordLabels: Array.isArray(raw.hiddenRecordLabels) ? raw.hiddenRecordLabels : (Array.isArray(raw.hiddenLetterLabels) ? raw.hiddenLetterLabels : null),
       sealNames: Array.isArray(raw.sealNames) ? raw.sealNames : [],
