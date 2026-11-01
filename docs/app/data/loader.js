@@ -126,7 +126,8 @@ export function createDataLoader({
     state.familyVerification = family.verification;
     state.familyGraph = family.graph;
     state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
-    const shouldRebuild = !state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild && !backgroundRebuild;
+    const shouldRebuild = state.active === 'tree' && !state.person && !state.place
+      && !state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild && !backgroundRebuild;
     state.familyGraph.rebuilding = Boolean((autoRebuild && backgroundRebuild) || shouldRebuild);
     if (remapSourcePerson(state, lastVerifiedGraph)) onPersonReassigned();
     if (state.familyGraph.valid) lastVerifiedGraph = state.familyGraph;

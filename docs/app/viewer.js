@@ -1128,7 +1128,10 @@ const tabs = createTabs({
   escapeHtml,
   clearScreenCaches,
   savePreferences,
-  rerender: renderActive,
+  rerender: async () => {
+    if (state.active === 'tree') await dataLoader.loadAll();
+    else await renderActive();
+  },
 });
 
 function renderTabs() {
