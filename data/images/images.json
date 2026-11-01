@@ -3435,25 +3435,21 @@
           "name": "Rosenberg"
         }
       ],
-      "facts": [
+      "guesses": [
         {
-          "person": "konrad_schonau",
-          "personDeceased": true,
+          "person": "vitztum_zu_Heidelberg",
           "type": "generic",
-          "content": "died on 6 May in a year ending in 6; the decade and century are illegible."
+          "content": "may be [vitztum_zu_Heidelberg]: his documented lifetime and Hirschhorn marriage are consistent with a death in 1396, although his wife is named Margarethe in the 1392 record and Adelheid in the monument."
         },
         {
-          "person": "Adelheid von Hirschhorn",
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "konrad_schonau",
-          "ofDeceased": true
+          "person": "vitztum_zu_Heidelberg",
+          "type": "death",
+          "diedOn": "1396-05-06"
         },
         {
-          "person": "Adelheid von Hirschhorn",
-          "personDeceased": true,
-          "type": "generic",
-          "content": "died on 2 April in the same year ending in 6 as Konrad von Rosenberg."
+          "person": "Margarethe von Hirschhorn",
+          "type": "death",
+          "diedOn": "1396-04-02"
         }
       ]
     },
