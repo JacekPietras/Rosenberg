@@ -1,6 +1,18 @@
 // Generated evidence is accepted only after verifying the complete build input.
 const sourcePath = /^data\/(books|documents|notes|images)\/.*\.json$/;
 
+function kinshipCanonicalizer(text) {
+  const normalize = (value) => value.replaceAll('ß', 'ss').replaceAll('ſ', 's').normalize('NFKD')
+    .toLowerCase().replace(/\p{M}/gu, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  const forms = new Map();
+  for (const line of text.split(/\r?\n/)) {
+    const group = line.split('//')[0].split(':')[0].split(',').map((form) => form.trim()).filter(Boolean);
+    for (const form of group) forms.set(normalize(form), group[0]);
+  }
+  return (term) => forms.get(normalize(term)) ?? term.split(/(\s+(?:und|and|et|oder|or)\s+)/i)
+    .map((part) => forms.get(normalize(part)) ?? part).join('');
+}
+
 function contextParticipant(fact, reference, people) {
   if (fact?.type !== 'generic' || typeof fact.content !== 'string' || typeof reference !== 'string' || !reference) return false;
   const text = (fact.person ? `[${fact.person}] ` : '') + fact.content;
@@ -95,13 +107,16 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
     if (Object.hasOwn(metadata.inputs, 'data/tree.json')) throw new Error('Generated tree cannot be its own input');
     const sources = Object.keys(metadata.inputs).filter((path) => sourcePath.test(path)).sort();
     if (JSON.stringify(sources) !== JSON.stringify(paths.filter((path) => sourcePath.test(path)).sort())) throw new Error('The source file set changed');
+    let kinshipText = '';
     await Promise.all(Object.entries(metadata.inputs).map(async ([path, expected]) => {
       if (path.split('/').includes('..') || !/^data\/.*\.(json|md)$/.test(path)) throw new Error('Invalid build input path');
       const value = path === 'data/people.json' ? registryIdentities(people)
         : documents.has(path) ? documents.get(path)
           : path.endsWith('.json') ? await repository.getJson(path) : await repository.getText(path);
+      if (path === 'data/kinship.md') kinshipText = value;
       if (await evidenceFingerprint(value) !== expected) throw new Error(`Build input changed: ${path}`);
     }));
+    const canonicalKinship = kinshipCanonicalizer(kinshipText);
     let settings;
     if ((metadata.schema === undefined || metadata.schema >= 4)) {
       if (!Object.hasOwn(metadata.inputs, 'data/matching.json')) throw new Error('Missing global probability configuration');
@@ -192,7 +207,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
                 else if (fact.type === 'sibling' && endpoints.includes(edge.of)) siblings.add(endpoints[0] === edge.of ? endpoints[1] : endpoints[0]);
                 continue;
               }
-              if (fact.type !== edge.type || (fact.term || '') !== (edge.term || '')) continue;
+              if (fact.type !== edge.type || canonicalKinship(fact.term || '') !== (edge.term || '')) continue;
               const expected = [edge.person, edge.of];
               if (edge.type !== 'parent') { endpoints.sort(); expected.sort(); }
               supported ||= JSON.stringify(endpoints) === JSON.stringify(expected);

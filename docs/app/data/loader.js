@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=10';
+import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=11';
 
 export function createDataLoader({
   repository,
@@ -26,7 +26,7 @@ export function createDataLoader({
       if (tree?.schema >= 4 && !tree.views?.includes('with-guesses')) verification = { valid: false, reason: 'The normal tree requires weighted guesses.' };
       return { tree, verification, graph: buildRelationshipGraph(people, { tree, view: tree && (tree.schema === undefined || tree.schema >= 4) ? 'with-guesses' : view, verification }) };
     }
-    const worker = new Worker(new URL('./verification-worker.js?v=4', import.meta.url), { type: 'module' });
+    const worker = new Worker(new URL('./verification-worker.js?v=5', import.meta.url), { type: 'module' });
     try {
       return await new Promise((resolve, reject) => {
         worker.onmessage = (event) => event.data.error ? reject(new Error(event.data.error)) : resolve(event.data.result);

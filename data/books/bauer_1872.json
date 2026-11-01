@@ -2337,8 +2337,14 @@
       "guesses": [
         {
           "person": "Elisabeth von Erligheim",
-          "type": "generic",
-          "content": "may have been the mother of Eberhard and Arnold von Rosenberg; their mother’s arms bore a lion.",
+          "type": "parent",
+          "of": "eberhard_jagstberg",
+          "date": "1449"
+        },
+        {
+          "person": "Elisabeth von Erligheim",
+          "type": "parent",
+          "of": "arnold_boxberg",
           "date": "1449"
         }
       ]

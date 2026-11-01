@@ -1,4 +1,4 @@
-import { buildRelationshipGraph, resolvePerson, remapSourcePerson } from './data/relationships.js?v=10';
+import { buildRelationshipGraph, resolvePerson, remapSourcePerson } from './data/relationships.js?v=11';
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
@@ -10,7 +10,7 @@ import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=87';
 import { createSealScreen } from './screens/seals.js?v=2';
 import { createImageScreen } from './screens/images.js?v=36';
-import { createDataLoader } from './data/loader.js?v=20';
+import { createDataLoader } from './data/loader.js?v=21';
 import { createEntityScreens } from './screens/entities.js?v=111';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';

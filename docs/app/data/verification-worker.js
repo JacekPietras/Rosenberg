@@ -1,4 +1,4 @@
-import { verifyFamilyGraph, buildRelationshipGraph } from './relationships.js?v=10';
+import { verifyFamilyGraph, buildRelationshipGraph } from './relationships.js?v=11';
 import { createRepository } from './repository.js?v=7';
 
 self.onmessage = async ({ data }) => {

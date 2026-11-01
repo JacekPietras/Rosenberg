@@ -576,6 +576,26 @@ test('invalid saved build options cannot prevent automatic regeneration', async 
   }
 });
 
+test('normalized kin terms verify against original source spellings', async () => {
+  for (const [original, canonical] of [['swager', 'Schwager'], ['Schwägerin', 'Schwager'], ['Vettern und swager', 'Vetter und Schwager']]) {
+    const data = await externalTreeFixture();
+    data.files.set('data/kinship.md', 'Schwager, swager, Schwägerin: SpS SSp SpSSp | blood | narrow\nVetter, Vettern: PS SC PSC | S P C Sp | narrow');
+    data.tree.inputs['data/kinship.md'] = await evidenceFingerprint(data.files.get('data/kinship.md'));
+    const fact = data.documents.get(source.path).entries[0].facts[0];
+    Object.assign(fact, { type: 'kin', term: original });
+    const ref = { ...source, fingerprint: await evidenceFingerprint(fact) };
+    for (const graph of Object.values(data.tree.evidence)) {
+      graph.nodes.forEach((node) => node.mentions.forEach((mention) => { mention.source = ref; }));
+      const edge = graph.relationships[0];
+      Object.assign(edge, { type: 'kin', term: canonical });
+      edge.derivations.forEach((d) => { d.sources = [ref]; });
+    }
+    await updateFixtureBuild(data);
+    const verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+    assert.equal(verification.valid, true, verification.reason);
+  }
+});
+
 test('reconstructed kin terms must be supported by their source assertion', async () => {
   const data = await externalTreeFixture();
   const fact = data.documents.get(source.path).entries[0].facts[0];

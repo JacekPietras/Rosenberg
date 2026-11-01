@@ -2,7 +2,7 @@ import { imageCardMarkup } from '../rendering/images.js?v=13';
 import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rendering/facts.js?v=8';
 import { renderFactsView } from '../components/facts_view.js?v=8';
 import { findPlaceByName } from '../data/entities.js?v=87';
-import { resolvePerson, resolveEvidencePointer } from '../data/relationships.js?v=10';
+import { resolvePerson, resolveEvidencePointer } from '../data/relationships.js?v=11';
 import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=10';
 
 export function createEntityScreens({
