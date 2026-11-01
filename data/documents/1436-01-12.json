@@ -1,0 +1,32 @@
+{
+  "date": "1436-01-12",
+  "label": "new",
+  "entries": [
+    {
+      "source": "Staatsarchiv Ludwigsburg B 207 U 624 (deed; catalogue description); JL 425 Bd 26 Qu. 153 (Sammlung Breitenbach, later catalogue cross-reference)",
+      "url": [
+        "https://www.landesarchiv-bw.de/plink/?f=2-5341843",
+        "http://www.landesarchiv-bw.de/plink/?f=2-756328"
+      ],
+      "german": "Burkard von Bach und seine Frau Anna Marschalk verkaufen an Konrad Schleicher, Bürger zu Ulm, ihre Güter und Leute zu Bollingen um 1.030 Gulden rheinisch. / 1436 Januar 12 (Donnerstag nach Obristentag)",
+      "english": "Burkard von Bach and his wife Anna Marschalk sell their properties and dependants at Bollingen to Konrad Schleicher, a citizen of Ulm, for 1,030 Rhenish guilders. / 12 January 1436 (Thursday after Epiphany)",
+      "img": [sc
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1236&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001236%2Ftitlaufn_00005341843%2F02_0005341843_0001_2-5341843-1.jpg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Anna Marschalk",
+          "type": "spouse",
+          "of": "Burkard von Bach"
+        },
+        {
+          "person": "Anna Marschalk",
+          "type": "generic",
+          "content": "jointly sold properties and dependants at Bollingen with Burkard von Bach to Konrad Schleicher for 1,030 Rhenish guilders."
+        }
+      ]
+    }
+  ]
+}
