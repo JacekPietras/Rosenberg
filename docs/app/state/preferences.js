@@ -19,7 +19,7 @@ export function loadPreferences(storage) {
       recordLabels: Array.isArray(raw.recordLabels) ? raw.recordLabels : (Array.isArray(raw.letterLabels) ? raw.letterLabels : []),
       hiddenRecordLabels: Array.isArray(raw.hiddenRecordLabels) ? raw.hiddenRecordLabels : (Array.isArray(raw.hiddenLetterLabels) ? raw.hiddenLetterLabels : null),
       sealNames: Array.isArray(raw.sealNames) ? raw.sealNames : [],
-      sealType: ['contrepalle', 'swans', 'helm', 'full', 'unknown'].includes(raw.sealType) ? raw.sealType : null,
+      sealType: ['contrepalle', 'swans', 'helm', 'full', 'woman', 'unknown'].includes(raw.sealType) ? raw.sealType : null,
       imageRegions: Array.isArray(raw.imageRegions) ? raw.imageRegions : [],
       language: normalizeDisplayMode(raw.language),
       showFacts: raw.showFacts !== false,

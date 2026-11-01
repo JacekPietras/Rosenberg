@@ -1006,7 +1006,7 @@ async function getRepositoryFiles() {
   return repository.getRepositoryFiles();
 }
 
-const SEAL_TYPES = new Set(['contrepalle', 'swans', 'helm', 'full']);
+const SEAL_TYPES = new Set(['contrepalle', 'swans', 'helm', 'full', 'woman']);
 
 function sealTypeForSeal(seal) {
   if (SEAL_TYPES.has(seal?.type)) return seal.type;
@@ -1056,6 +1056,7 @@ const sealTypeFilters = [
   ['swans', 'swans'],
   ['helm', 'helm'],
   ['full', 'full'],
+  ['woman', 'woman'],
   ['unknown', 'unknown'],
 ];
 

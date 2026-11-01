@@ -1,9 +1,10 @@
-const SEAL_TYPES = new Set(['contrepalle', 'swans', 'helm', 'full']);
+const SEAL_TYPES = new Set(['contrepalle', 'swans', 'helm', 'full', 'woman']);
 const sealTypeFilters = [
   ['contrepalle', 'contrepalle'],
   ['swans', 'swans'],
   ['helm', 'helm'],
   ['full', 'full'],
+  ['woman', 'woman'],
   ['unknown', 'unknown'],
 ];
 

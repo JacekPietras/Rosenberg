@@ -2,7 +2,7 @@ import { sealAnnotationMarkup } from '../rendering/seal-markup.js?v=2';
 import { escapeHtml } from '../rendering/html.js';
 import { positionSealCrop } from './seal-annotations.js';
 
-const SEAL_TYPES = new Set(['contrepalle', 'swans', 'helm', 'full']);
+const SEAL_TYPES = new Set(['contrepalle', 'swans', 'helm', 'full', 'woman']);
 
 export function setupImageLightbox({ state, repository, rerender }) {
   const $ = (selector) => document.querySelector(selector);

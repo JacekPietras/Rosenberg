@@ -136,6 +136,15 @@
               "width": 0.38,
               "wideningRotation": -56,
               "rotation": 6
+            },
+            {
+              "person": "?",
+              "position": "0.2121,0.7854",
+              "size": 0.06849999999999999,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "woman"
             }
           ]
         },
