@@ -3,7 +3,10 @@
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, Heilig-Geist-Spital, Urkunden 76",
-      "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++54200F60-E23C-46F7-83FB-5EB1DA26AA86",
+      "url": [
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++54200F60-E23C-46F7-83FB-5EB1DA26AA86",
+        "https://dfg-viewer.de/show/?tx_dlf%5Bid%5D=https%3A//www.gda.bayern.de/gvl/mets/9688fac3-2a95-4082-9213-8025899b518b"
+      ],
       "german": "Ritter Hans von Rosenberg, Schultheiß und die Schöffen der Stadt Nürnberg beurkunden auf Zeugnis des Eckhart Neydung und Cristan Coler, daß Eberhart Eck, Bürger zu Nürnberg dem Neuen Spital daselbst seinen der Herrschaft zu Prawneck lehenbaren selben Zehnten zu Heroldsberg zur Abhaltung von Seelmessen vermacht.",
       "english": "Hans von Rosenberg, Ritter, Schultheiß, and the Nürnberg town judges recorded, on the testimony of Eckhard Neydung and Cristan Coler, that Eberhard Eck, a Nürnberg citizen, bequeathed his tithe at Heroldsberg to the New Hospital for the holding of memorial masses.",
       "facts": [
@@ -15,6 +18,14 @@
           ],
           "type": "generic",
           "content": "recorded Eberhard Eck’s bequest of his tithe at Heroldsberg to the New Hospital with the Nuremberg aldermen, on the testimony of Eckhard Neydung and Cristan Coler."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/9688fac3-2a95-4082-9213-8025899b518b/1/full/5000,/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/9688fac3-2a95-4082-9213-8025899b518b/2/full/5000,/0/default.jpg"
         }
       ]
     }

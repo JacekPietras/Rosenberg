@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Stift Neumünster Würzburg Urkunden 1484 Mai 10",
-      "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C4CEDEC3-FDCC-4B8C-8DB5-11ACA3C02CE8",
+      "url": [
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C4CEDEC3-FDCC-4B8C-8DB5-11ACA3C02CE8",
+        "https://dfg-viewer.de/show/?tx_dlf%5Bid%5D=https%3A//www.gda.bayern.de/gvl/mets/c5cb077e-66f8-49eb-8caf-14997d603ed1"
+      ],
       "german": "Die Bürgermeister und der Rat der Stadt Röttingen vidimieren auf Bitten des Eustachius von Kottenheim eine Schuldverschreibung von Propst, Dekan und Kapitel des Stifts Neumünster für Kaspar von Geißlingen über eine jährliche Gült von 154 Malter Korn Ochsenfurter Stadtmaß. Die Urkunde inseriert den Wortlaut der Schuldverschreibung von 1417 Januar 14. Der GDA-Personenindex führt unter anderem Konrad von Rosenberg auf.",
       "english": "The mayor and council of Röttingen authenticate, at the request of Eustachius von Kottenheim, a debt obligation issued by the provost, dean, and chapter of Neumünster Abbey to Kaspar von Geißlingen for an annual rent of 154 Malter of grain by the Ochsenfurt measure. The charter inserts the text of the debt obligation dated 14 January 1417. The GDA person index includes Konrad von Rosenberg.",
       "facts": [
@@ -12,6 +15,17 @@
           "person": "Konrad von Rosenberg",
           "type": "generic",
           "content": "was listed in the GDA personal-name index for this charter."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/c5cb077e-66f8-49eb-8caf-14997d603ed1/1/full/5000,/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/c5cb077e-66f8-49eb-8caf-14997d603ed1/2/full/5000,/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/c5cb077e-66f8-49eb-8caf-14997d603ed1/3/full/5000,/0/default.jpg"
         }
       ]
     }

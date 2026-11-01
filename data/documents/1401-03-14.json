@@ -3,7 +3,10 @@
   "entries": [
     {
       "source": "Reichsstadt Nürnberg, Klarenamt, Kloster Pillenreuth, Urkunden 7",
-      "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5E87EF71-4681-4C18-BF86-350142BF8B9E",
+      "url": [
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5E87EF71-4681-4C18-BF86-350142BF8B9E",
+        "https://dfg-viewer.de/show/?tx_dlf%5Bid%5D=https%3A//www.gda.bayern.de/gvl/mets/2e911128-b6dd-4b46-adc1-7f609ad93eb5"
+      ],
       "german": "König Rupertus bestätigt dem Kloster Pillenreut alle von Karl IV. bestätigten Rechte. - Inseriert: Bestätigungsurkunde Karls IV., Sulzbach 1356 Januar 19. - Zeugen: Rupertus senior, comes Palatinus Reni, dux Bavariae etc., Rudolfus senior, dux Saxoniae, Ludevicus Romanus, march. Brandenbg., Henricus Ludwucensis, Theodericus Mindensis Episcopi, Bolko Falkembergensis, Bolko Opulicusus, Przimislaus Thesniencis Duces, Ulricus de Rosenberg, Russo de Lutiz. Sulzbach XIV. Kal. Febr. 1356. Ad rel. mgri. Nicolai Prowin, Nicolaus Bumann",
       "english": "King Ruprecht confirms all the rights confirmed by Charles IV to the Pillenreut monastery. - Advertised: Confirmation certificate of Charles IV, Sulzbach 1356 January 19. - Witnesses: Ruprecht senior, comes Palatinus Reni, dux Bavariae etc., Rudolfus senior, dux Saxoniae, Ludevicus Romanus, march. Brandenbg., Henricus Ludwucensis, Theodericus Mindensis Episcopi, Bolko Falkembergensis, Bolko Opulicusus, Przimislaus Thesniencis Duces, Ulrich von Rosenberg, Russo de Lutiz. Sulzbach XIV. Cal. February 1356. Ad rel. mgri. Nicolai Prowin, Nicolaus Bumann",
       "facts": [
@@ -12,7 +15,16 @@
           "type": "generic",
           "content": "was named among the witnesses to the confirmation charter for Pillenreuth Abbey inserted in this record."
         }
+      ],
+      "img": [
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/2e911128-b6dd-4b46-adc1-7f609ad93eb5/1/full/5000,/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/2e911128-b6dd-4b46-adc1-7f609ad93eb5/2/full/5000,/0/default.jpg"
+        }
       ]
     }
-  ]
+  ],
+  "label": "to review"
 }

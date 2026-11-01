@@ -3,7 +3,10 @@
   "entries": [
     {
       "source": "BayHStA, Jesuit Order, College St. Paul Regensburg Certificates 824",
-      "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++94666C05-9308-4D20-92A5-CF97593BA6D3",
+      "url": [
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++94666C05-9308-4D20-92A5-CF97593BA6D3",
+        "https://dfg-viewer.de/show/?tx_dlf%5Bid%5D=https%3A//www.gda.bayern.de/gvl/mets/67d645a6-1e48-4cc6-ade6-18eaec99f559"
+      ],
       "german": "Konrad von Rosenberg, Viztum zu Amberg, erteilt der Osann, Witwe von Konrad dem Zenger, einen Gerichtsbrief über die Güter zu Hollenstein (Holenstein) bei Velburg, die sie für ihre Heimsteuer in Höhe von 600 Pfund Hellern zu Nutznießung inne haben soll. Den Kinder von Ulrich dem Zenger steht für zwei jahre das Recht zu, die Güter auszulösen, danach gehen sie in das freie Eigentum der Nutznießerin über. S: Konrad von Rosenberg, Viztum zu Amberg",
       "english": "Konrad von Rosenberg, Vicar of Amberg, grants Osann, widow of Konrad the Zenger, a court charter regarding the estates at Hollenstein near Velburg, which she is to hold for usufruct in return for her home tax of 600 pounds Hellers. The children of Ulrich the Zenger are entitled to redeem the estates for two years, after which they become the free property of the usufructuary. S: Konrad von Rosenberg, Vicar of Amberg",
       "facts": [
@@ -30,7 +33,16 @@
           "type": "generic",
           "content": "sealed the court document."
         }
+      ],
+      "img": [
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/1/full/4368,/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/2/full/4368,/0/default.jpg"
+        }
       ]
     }
-  ]
+  ],
+  "label": "to review"
 }

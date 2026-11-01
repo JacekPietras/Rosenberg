@@ -3,7 +3,10 @@
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, Losungamt, 35 neue Laden, Urkunden 2123 (archival old reference: 89/1)",
-      "url": "https://www.gda.bayern.de/gvl/archive.jsf?id=Vz++++++71ECCB3C-5034-4E96-8E58-B6FB62469969",
+      "url": [
+        "https://www.gda.bayern.de/gvl/archive.jsf?id=Vz++++++71ECCB3C-5034-4E96-8E58-B6FB62469969",
+        "https://dfg-viewer.de/show/?tx_dlf%5Bid%5D=https%3A//www.gda.bayern.de/gvl/mets/300e75a0-ed72-40f3-a13e-ca31276a767c"
+      ],
       "german": "Contz Koczler jun. schwört bei seiner Entlassung aus dem Gefängnis der Stadt Nürnberg Urfehde und stellt als Bürgen Eberhart Koczler, Conrad Koeczler Lederer, Conrad Koczler von Leuchendorf, Hanns Koczler von Rebdorff. Siegler: Contz und Eberhart Koczler, Hans von Rosemberg, Schultheiß zu Nürnberg, und Hartmann Rindsmaul.",
       "english": "On his release from the city of Nuremberg’s prison, Kunz Koczler der Jüngere swears an Urfehde and names Eberhard Koczler, Konrad Koeczler Lederer, Konrad Koczler of Leuchendorf, and Hans Koczler of Rebdorf as guarantors. Seals: Kunz and Eberhard Koczler, Hans von Rosenberg, Schultheiß of Nuremberg, and Hartmann Rindsmaul.",
       "facts": [
@@ -14,6 +17,14 @@
           ],
           "type": "generic",
           "content": "sealed Kunz Koczler der Jüngere’s Urfehde."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/300e75a0-ed72-40f3-a13e-ca31276a767c/1/full/4183,/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/300e75a0-ed72-40f3-a13e-ca31276a767c/2/full/4183,/0/default.jpg"
         }
       ]
     }

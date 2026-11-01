@@ -3,7 +3,10 @@
   "entries": [
     {
       "source": "StAAM, Fürstentum Obere Pfalz, Kloster Ensdorf Urkunden 182",
-      "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5F2BD70C-D26B-445D-B281-A3B15ACC5B4E",
+      "url": [
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5F2BD70C-D26B-445D-B281-A3B15ACC5B4E",
+        "https://dfg-viewer.de/show/?tx_dlf%5Bid%5D=https%3A//www.gda.bayern.de/gvl/mets/7faff8cb-8db3-4bbe-9d18-23e4603bb09e"
+      ],
       "german": "A: Konrad von Rosenberg, Viztum zu Amberg E: Abt des Klosters Ensdorf Gerichtsbrief mit der Erlaubnis, auf dem Rosenhof zu Theuern wegen des dem Kloster zustehenden jährlichen Zinses zu pfänden.",
       "english": "A: Konrad von Rosenberg, Vicar of Amberg E: Abbot of Ensdorf Monastery Court letter granting permission to seize the Rosenhof in Theuern for the annual interest due to the monastery.",
       "facts": [
@@ -22,7 +25,16 @@
           "type": "generic",
           "content": "issued a court letter authorizing Ensdorf Abbey to distrain the Rosenhof at Theuern for the annual rent due to the monastery."
         }
+      ],
+      "img": [
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/7faff8cb-8db3-4bbe-9d18-23e4603bb09e/1/full/4646,/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/7faff8cb-8db3-4bbe-9d18-23e4603bb09e/2/full/4640,/0/default.jpg"
+        }
       ]
     }
-  ]
+  ],
+  "label": "to review"
 }
