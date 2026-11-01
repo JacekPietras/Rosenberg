@@ -115,16 +115,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
         if self.path.split("?", 1)[0] == "/api/document-image":
             image_url = parse_qs(urlparse(self.path).query).get("url", [""])[0]
             parsed_image_url = urlparse(image_url)
-            allowed_image_hosts = {
-                "api.digitale-sammlungen.de",
-                "digi.ub.uni-heidelberg.de",
-                "digitalisate-he.arcinsys.de",
-                "digitalisate.frankfurt.de",
-                "iiif.deutsche-digitale-bibliothek.de",
-                "www.historisches-unterfranken.uni-wuerzburg.de",
-                "www2.landesarchiv-bw.de",
-            }
-            if parsed_image_url.scheme not in ("http", "https") or parsed_image_url.hostname not in allowed_image_hosts:
+            if parsed_image_url.scheme not in ("http", "https") or not parsed_image_url.hostname:
                 self.send_json(400, {"error": "Unsupported document image source"})
                 return
             query = parse_qs(parsed_image_url.query)

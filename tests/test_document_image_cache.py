@@ -43,7 +43,10 @@ class FakeResponse:
 
 class ImageCacheTest(unittest.TestCase):
     def test_distinct_urls_do_not_reuse_legacy_or_each_others_images(self):
-        urls = [f'https://api.digitale-sammlungen.de/iiif/image/v2/{page}/full/max/0/default.jpg' for page in ('first', 'second')]
+        urls = [
+            'https://www.gda.bayern.de/digitalisat/iiif/first/full/3500,/0/default.jpg',
+            'https://another-archive.example/iiif/second/full/max/0/default.jpg',
+        ]
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             cache = root / 'data/documents/img-temp'
