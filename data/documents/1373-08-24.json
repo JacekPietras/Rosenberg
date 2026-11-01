@@ -8,7 +8,7 @@
       "english": "Ruprecht promises to Konrad von Rosenberg, his viztame¹ at Amberg, the ordinary tax there and the \"seigniorage\" of the mint up to a revenue of 2000 guilders, which he owes him on account of the dowry of his [Konrad's] wife, Margarethe von Hirschhorn, and which are to be deducted from the pledge of Rheinhausen and Neckarau.\n\nKarlsr. Coph. 540,221.\n\nRuprecht grants to Konrad von Rosenberg, his viztame at Amberg, a dower for his [Konrad's] wife, Margarethe von Hirschhorn, of 4000 guilders on the village and fortress of Mure.",
       "facts": [
         {
-          "person": "Konrad von Rosenberg",
+          "person": "vitztum_zu_Heidelberg",
           "personTitle": [
             "Vitzthum zu Amberg"
           ],
@@ -17,13 +17,13 @@
         {
           "person": "Margarethe von Hirschhorn",
           "type": "spouse",
-          "of": "Konrad von Rosenberg",
+          "of": "vitztum_zu_Heidelberg",
           "ofTitle": [
             "Vitzthum zu Amberg"
           ]
         },
         {
-          "person": "Konrad von Rosenberg",
+          "person": "vitztum_zu_Heidelberg",
           "personTitle": [
             "Vitzthum zu Amberg"
           ],
@@ -31,7 +31,7 @@
           "content": "was owed 2,000 florins by Ruprecht for the Zugeld of his wife Margarethe von Hirschhorn."
         },
         {
-          "person": "Konrad von Rosenberg",
+          "person": "vitztum_zu_Heidelberg",
           "personTitle": [
             "Vitzthum zu Amberg"
           ],
