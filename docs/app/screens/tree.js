@@ -15,6 +15,9 @@ function regexEscape(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+// Office variants from data/titles.md.
+const prominentOffice = /^(?:Vogt|Voigt|advocatus|Vizedom|Vicedom|Vitzthum|Vitztum|Viztum|vicedominus)(?![\p{L}\p{N}])/iu;
+
 function personFacts(person, documentRecords, people) {
   const facts = [];
   const add = (fact, date, path, pointer) => {
@@ -101,7 +104,8 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, in
     { text: person._evidence ? person.reconstruction.status === 'contextual' ? 'contextual identity · inferred' : 'source person · identity open' : '', technical: true },
     { text: person.reconstruction?.status === 'contextual' && person.reconstruction.identityProbability < 1 ? `identity estimate: ${(person.reconstruction.identityProbability * 100).toFixed(1)}%` : '', technical: true },
     { text: person.reconstruction?.possiblySame?.length ? `possibly the same person as ${person.reconstruction.possiblySame.length} other${person.reconstruction.possiblySame.length > 1 ? 's' : ''}` : '', technical: true },
-    ...(Array.isArray(person.titles) ? person.titles : []),
+    ...(Array.isArray(person.titles) ? person.titles.map((text) => ({ text, prominent: prominentOffice.test(text) }))
+      .sort((a, b) => Number(b.prominent) - Number(a.prominent)) : []),
     person.born || person.died ? `${person.born || '?'}–${person.died || '?'}` : '',
     mentionedYears.get(person._treeKey)?.length
       ? `mentioned: [${mentionedYears.get(person._treeKey)[0]}${mentionedYears.get(person._treeKey).length > 1 ? `-${mentionedYears.get(person._treeKey).at(-1)}` : ''}]`
@@ -112,7 +116,7 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, in
       if (lines.at(-1) && lines.at(-1).length + word.length + 1 > (index ? 31 : 24)) lines.push(word);
       else lines[lines.length - 1] += `${lines.at(-1) ? ' ' : ''}${word}`;
     }
-    return lines.map((text) => ({ text, name: index === 0, technical: line.technical }));
+    return lines.map((text) => ({ text, name: index === 0, technical: line.technical, prominent: line.prominent }));
   });
   const nodeHeightFor = (person) => Math.max(44, 25 + (personLines(person).length - 1) * 18 + 10);
   const nodeWidth = 220;
@@ -135,7 +139,7 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, in
     }).join('');
     factsTemplates.push(`<template data-tree-facts="${index}">${evidence || '<p class="status">No recorded facts or guesses for this person.</p>'}</template>`);
     const nodeHeight = nodeHeightFor(person);
-    const text = personLines(person).map((line, index) => `<tspan class="${line.name ? 'people-tree-name' : 'people-tree-detail'}${line.technical ? ' people-tree-technical' : ''}" x="${x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line.text)}</tspan>`).join('');
+    const text = personLines(person).map((line, index) => `<tspan class="${line.name ? 'people-tree-name' : 'people-tree-detail'}${line.technical ? ' people-tree-technical' : ''}${line.prominent ? ' people-tree-office' : ''}" x="${x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line.text)}</tspan>`).join('');
     const href = `?person=${encodeURIComponent(person.id || (person._evidence ? person._treeKey : person.name))}`;
     return `<a class="people-tree-person-link" data-person="${svgEscape(person._treeKey)}" data-tree-facts="${index}" href="${svgEscape(href)}" aria-label="View ${svgEscape(person.name)}"><g class="people-tree-node"><rect x="${x}" y="${y}" width="${nodeWidth}" height="${nodeHeight}" rx="8"/><text x="${x + nodeWidth / 2}" y="${y + 25}" text-anchor="middle">${text}</text></g></a>`;
   }).join('');

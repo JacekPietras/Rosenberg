@@ -240,6 +240,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .people-tree-node text { fill: var(--ink); font-size: 14px; }
 .people-tree-node .people-tree-name { font-size: 16px; font-weight: 650; }
 .people-tree-node .people-tree-detail { fill: var(--muted); font-size: 12px; }
+.people-tree-node .people-tree-office { font-weight: 700; }
 .people-tree-node .people-tree-technical { opacity: 0.5; }
 .people-tree-parent { fill: none; stroke: var(--accent); stroke-width: 1.5; }
 .people-tree-spouse { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 5 4; }
