@@ -421,6 +421,10 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         for handle in handles[1:]:
             parent[handle] = handles[0]
 
+    # Pass 0: normalize kinship variants before grouping relationships.
+    # Source assertions retain their verbatim terms.
+    kin_terms = {a.source.key: names.kinship.canonical(a.original.get('term', '')) for a in assertions}
+
     # Pass 0: within one document file, or one book, notes or image section,
     # occurrences with the same name and the same titles (or both untitled)
     # are one person, whatever their dates, unless a block separates them.
@@ -599,7 +603,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             continue
         signature = (assertion.historical_date, citation, assertion.original['type'],
                      tuple(name(m.handle) for m in assertion.mentions),
-                     tuple(m.titles for m in assertion.mentions), assertion.original.get('term', ''))
+                     tuple(m.titles for m in assertion.mentions), kin_terms[assertion.source.key])
         duplicates[signature].append(assertion)
     proposals = []
     for copies in duplicates.values():
@@ -698,7 +702,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             profiles[left].distinctions.setdefault(right, []).append(assertion.source)
             profiles[right].distinctions.setdefault(left, []).append(assertion.source)
             for own, other, direction, other_mention in ((left, right, 'out', b), (right, left, 'in', a)):
-                role = kind, direction if kind == 'parent' else '', assertion.original.get('term', '')
+                role = kind, direction if kind == 'parent' else '', kin_terms[assertion.source.key]
                 relative(own, other, role, [assertion], membership[other_mention.handle])
                 if kind == 'spouse':
                     relative(own, other, ('family context', '', ''), [assertion], membership[other_mention.handle])
@@ -1202,7 +1206,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         left, right = [keys[m.handle] for m in assertion.mentions]
         if kind != 'parent' and left > right:
             left, right = right, left
-        key = kind, left, right, assertion.original.get('term', '')
+        key = kind, left, right, kin_terms[assertion.source.key]
         if assertion.basis and (key in edges or left == right):
             continue  # a recorded relationship needs no inferred derivation
         basis = assertion.basis or (assertion,)

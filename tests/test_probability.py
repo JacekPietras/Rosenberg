@@ -687,6 +687,9 @@ class ProbabilityTests(unittest.TestCase):
     def test_kinship_terms_combine_and_invert(self):
         from family_graph.kinship import Kinship, invert
         kinship = Kinship((Path(__file__).resolve().parents[1] / 'data/kinship.md').read_text())
+        self.assertEqual('Schwager', kinship.canonical('swager'))
+        self.assertEqual('Vetter und Schwager', kinship.canonical('Vettern und swager'))
+        self.assertEqual('unknown word', kinship.canonical('unknown word'))
         combined = kinship.term('Vetter und Schwager')
         self.assertTrue(combined.excludes(('S',)))
         self.assertFalse(combined.excludes(('Sp',)))

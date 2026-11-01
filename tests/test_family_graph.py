@@ -473,6 +473,18 @@ class FamilyGraphTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'supporting participant'):
             validate_generated(output, inputs.people, self.root)
 
+    def test_pass_zero_kinship_variants_share_one_relationship(self):
+        self.write('data/kinship.md', 'Schwager, swager, Schwägerin: SpS SSp SpSSp | blood | narrow\n')
+        facts = [relation('a', 'b', 'kin', term=term)
+                 for term in ('swager', 'Schwager', 'Schwägerin')]
+        inputs = self.inputs(facts=facts)
+        output = serialize(inputs, [build(inputs)])
+        edges = output['evidence']['facts']['relationships']
+        self.assertEqual(1, len(edges))
+        self.assertEqual('Schwager', edges[0]['term'])
+        self.assertEqual(3, len(edges[0]['derivations']))
+        self.assertEqual(['swager', 'Schwager', 'Schwägerin'], [fact['term'] for fact in facts])
+
     def test_reconstructed_kin_term_must_match_its_source(self):
         inputs = self.inputs(facts=[relation('a', 'b', 'kin', term='Vetter')])
         output = serialize(inputs, [build(inputs)])

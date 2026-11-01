@@ -5,6 +5,7 @@ import json
 import re
 import math
 from .constraints import cycle_nodes
+from .kinship import Kinship
 from .model import fingerprint, registry_keys
 from .sources import generic_text, input_manifest
 from .probability import parameters, person_references
@@ -130,6 +131,8 @@ def validate_generated(tree, people, root=None):
 
 
 def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
+    kinship_path = root / 'data/kinship.md' if root is not None else None
+    kinship = Kinship(kinship_path.read_text() if kinship_path is not None and kinship_path.exists() else '')
     graphs = metadata.get('evidence')
     if not isinstance(graphs, dict) or set(graphs) != set(metadata.get('matchingBackground', {})):
         raise ValueError('missing reconstructed evidence views')
@@ -237,7 +240,7 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
                             fathered.add(pair[1])
                         elif fact.get('type') == 'sibling' and right in pair:
                             siblings.add(pair[1] if pair[0] == right else pair[0])
-                    elif fact.get('type') == kind and fact.get('term', '') == edge.get('term', ''):
+                    elif fact.get('type') == kind and kinship.canonical(fact.get('term', '')) == edge.get('term', ''):
                         supported |= pair == [left, right] if kind == 'parent' else sorted(pair, key=str) == sorted([left, right])
                 supported |= bool(fathered & siblings - {right})
                 if root is not None and not supported:

@@ -92,6 +92,7 @@ DIRECT = {('parent', 'person'): ('P',), ('parent', 'of'): ('C',), ('sibling', 'p
 class Kinship:
     def __init__(self, text=''):
         self.terms = {}
+        self.canonical_forms = {}
         for line in text.splitlines():
             line = line.split('//', 1)[0].strip()
             if not line:
@@ -104,6 +105,15 @@ class Kinship:
             for form in forms.split(','):
                 if form.strip():
                     self.terms[normalize(form)] = term
+                    self.canonical_forms[normalize(form)] = forms.split(',')[0].strip()
+
+    def canonical(self, text):
+        """Use the first listed form; preserve unknown terms and conjunctions."""
+        key = normalize(text)
+        if key in self.canonical_forms:
+            return self.canonical_forms[key]
+        return ''.join(self.canonical_forms.get(normalize(part), part)
+                       for part in re.split(r'(\s+(?:und|and|et|oder|or)\s+)', text, flags=re.I))
 
     def term(self, text):
         """Meaning of `person is <term> of X`, read from X; combined terms are unions."""

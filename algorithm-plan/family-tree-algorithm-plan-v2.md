@@ -89,6 +89,11 @@ link factor = membership confidence of the specific relative mention used
 
 ## Pass 0: same document or section
 
+Normalize kinship terms to the first form in each group in `data/kinship.md`
+before comparing or grouping relationships (for example, `swager` becomes
+`Schwager`). Generated relationships use that form and retain all supporting
+source references; source facts keep their original terms.
+
 Within one document file, or one book, notes or image section (entry),
 occurrences with the same normalized name and the same set of titles by meaning
 are one person, whatever their dates. Two untitled occurrences have the same
