@@ -4,7 +4,7 @@
   },
   "inputs": {
     "data/books/arnold_von_uissigheim.json": "sha256:6c5483c12acd1c32dd1a78aba78365dc56c158450a47f28a8692bd91ecde2d7f",
-    "data/books/bauer_1872.json": "sha256:51e6f0ae709b84a8330f1789a9844975b8a9366b3b10f3c2320d34e65e32ae4b",
+    "data/books/bauer_1872.json": "sha256:abe73df2bd47be82f51048b68f5439598dceb2e3d64e31c44af3db2022bdbe59",
     "data/books/bidermann_1751.json": "sha256:fbaab7f1d7328618b7a61f155c2a623664e8a74970083a26a987f9cc62bebc9c",
     "data/books/freiburger_dioecesan_archiv_1896_25.json": "sha256:e0cd48a0aca7685c1f28604a42c07fe38343b8b09af4ea597a5bb17d1f4030b0",
     "data/books/kreis_mosbach_1898.json": "sha256:32d9c12489fd5872060c3d7bad7a84c7cab7c0da6ba1873373229c3303fcc1ae",
@@ -401,10 +401,10 @@
     "data/names.md": "sha256:77d822f78ab04d10d1a90df1203f5f522dffbd1a70ce985fc3e7798be802a975",
     "data/notes/notes.json": "sha256:a33e162e8b4aca9261bbc132c2f2a4aacc82f84b40f38ae52d5777a8a8510ec4",
     "data/people.json": "sha256:c4896ec2f0a318351fee255cfde98aae8949fddffeaf8a04b47a63e607415813",
-    "data/places.json": "sha256:3ec2927a669ea2c00bfc4d976682550bb5169120b848e1027f0fbbfb863cf59e",
+    "data/places.json": "sha256:75add4d302ab8bcb7bd37c6bdbd50b3b5e3a4f49899b703d23201ae19f223155",
     "data/titles.md": "sha256:9fdd2e973af6368bdc4e471037e9e3dfcd2c6f6a8a835838062a51e00318fb78"
   },
-  "fingerprint": "sha256:dd1f53ca2a7e8607f62510fb779352d6b8be2c3fca1ce02cfbc816f2f4a389bd",
+  "fingerprint": "sha256:23f94304b385942b7a7c97dce99d2c7e20f8b496af1bed5bb3912d947186b46d",
   "evidence": {
     "with-guesses": {
       "sources": [
@@ -2491,7 +2491,7 @@
         {
           "path": "data/books/bauer_1872.json",
           "pointer": "/entries/81/facts/1",
-          "fingerprint": "sha256:48ecf1fdbe5673cc27a2ae1828b6c0f917fea6beff1bef498abc78012af12c17"
+          "fingerprint": "sha256:f8ae540bd0ea4a639186d10ae3f6e2d7bc3a2e2318c29b9d1084ee343dbb7081"
         },
         {
           "path": "data/books/bauer_1872.json",
@@ -2516,12 +2516,12 @@
         {
           "path": "data/books/bauer_1872.json",
           "pointer": "/entries/85/facts/2",
-          "fingerprint": "sha256:e5138eb4ac848c63b010b200c854764029b10085b2c00c0cea56c301b533f1d2"
+          "fingerprint": "sha256:7a9c22d31a8bc5a7fa7c94dab4c646d3c5c056de2ab41b7d28d51f7926116aec"
         },
         {
           "path": "data/books/bauer_1872.json",
           "pointer": "/entries/85/facts/3",
-          "fingerprint": "sha256:c319b166c2332e532c90ab9bb290fba4f2e1c660282df8d6985b90f668d26400"
+          "fingerprint": "sha256:1df8f98c1c19866a1630d1da3cf9a4f385d10f1512b64363a18315f24bd754bc"
         },
         {
           "path": "data/books/bauer_1872.json",

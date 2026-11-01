@@ -38,7 +38,8 @@
           "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/d4777342-840f-4d4d-8663-615bf453f853/full/full/0/default.jpg"
         },
         {
-          "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/1ec8d390-b9c7-4674-840a-445a8fb8877c/full/full/0/default.jpg"
+          "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/1ec8d390-b9c7-4674-840a-445a8fb8877c/full/full/0/default.jpg",
+          "deleted": "true"
         }
       ]
     }
