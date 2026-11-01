@@ -218,6 +218,7 @@ class Validator:
                 seen.add(item)
 
     def check_text_person_references(self, text, location):
+        self.check_unbracketed_person_ids(text, location)
         for match in re.finditer(r'\[([^\[\]]+)\]', text):
             person_id = match.group(1)
             name = self.people_by_id.get(person_id)
@@ -237,6 +238,14 @@ class Validator:
                 if re.search(pattern + r'\s*$', text[:match.start()], re.IGNORECASE):
                     self.report(location, f'person name duplicates [{person_id}]; use the bracketed ID alone')
                     break
+
+    def check_unbracketed_person_ids(self, text, location):
+        if not self.person_ids:
+            return
+        ids = '|'.join(re.escape(person_id) for person_id in sorted(self.person_ids, key=lambda value: (-len(value), value)))
+        for match in re.finditer(r'(?<!\w)(?:' + ids + r')(?!\w)', text):
+            if text[match.start() - 1:match.start()] != '[' or text[match.end():match.end() + 1] != ']':
+                self.report(location, f'person ID {match.group()!r} in prose must be enclosed in square brackets')
 
     def check_fact(self, fact, location, require_date, explicit_date_required,
                    inherited, document_source=False, guess=False):
@@ -353,6 +362,8 @@ class Validator:
                                     document_source=is_document,
                                     guess=key == 'guesses',
                                 )
+                    elif key == 'english' and isinstance(child, str):
+                        self.check_unbracketed_person_ids(child, loc)
                     else:
                         visit(child, loc, current_date)
             elif isinstance(value, list):

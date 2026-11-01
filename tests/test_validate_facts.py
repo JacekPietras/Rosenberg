@@ -212,6 +212,23 @@ class FactValidatorTests(unittest.TestCase):
             validator.check_fact(self.generic(person='wiprecht_von_rosenberg', date='1395', content=text), 'guess', False, False, '1395', guess=True)
             self.assertEqual([], validator.diagnostics)
 
+    def test_person_ids_in_english_and_fact_or_guess_content_are_bracketed(self):
+        for field in ('facts', 'guesses'):
+            for text, expected in (('known_id witnessed it.', 2),
+                                   ('[known_id] witnessed it.', 0),
+                                   ('[known_id witnessed it.', 2),
+                                   ('other_known_id witnessed it.', 0)):
+                with self.subTest(field=field, text=text):
+                    entry = {'english': text, field: [self.generic(content=text)]}
+                    validator = self.check({'date': '1395', 'entries': [entry]})
+                    errors = self.errors(validator)
+                    self.assertEqual(expected, len(errors))
+                    for error in errors:
+                        self.assertIn('square brackets', error.message)
+
+        validator = self.check(self.document(self.parent()))
+        self.assertEqual([], validator.diagnostics)
+
     def test_cli_exit_status_order_and_malformed_json(self):
         registry = self.write('people.json', [{'id': 'known_id', 'name': 'Known Person'}])
         first = self.write('documents/a.json', self.document(self.parent(type='father')))
