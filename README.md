@@ -78,7 +78,9 @@ factual source frequencies; it is not a historical population estimate.
 Records that no threshold merges still join their most probable same-name
 candidate unless something strictly forbids it (death, impossible age or time
 span, distinct registry IDs, or a known kinship such as father/son or cousins);
-a join needs at least some evidence beyond the name and rank. Undecided
+a join needs at least some evidence beyond the name and rank. A same-surname
+sibling inherits the other sibling's recorded same-surname father, so separate
+records of that father can join. Undecided
 candidates are kept as "possibly the same person".
 The diagram defaults to parent/child and spouse lines; hovering over or focusing
 a person reveals their sibling and other kin lines as well. Children with the same recorded parents

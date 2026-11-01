@@ -452,7 +452,11 @@ Types are directed `parent`, and symmetric `spouse`, `sibling`, and `kin`.
 Endpoints are node keys. Kin terms preserve the source's wording, such as
 `Vetter`, without inventing a precise modern relationship; the tree positions a
 term can mean are listed in `data/kinship.md` and used only for matching. Marriage does not
-supply another parent; siblings do not supply parents or transitive siblings.
+supply another parent and siblings do not supply transitive siblings. One
+exception: when two siblings share a surname, a recorded parent with that
+surname (the father) of one sibling is also a parent of the other, unless that
+sibling already has a different-named father with that surname or the edge would
+create a cycle. Recorded parents of a sibling are not propagated further.
 No self-relationships or directed ancestry cycles are accepted. Repeated
 ancestry through different branches is allowed. Attestation dates are not
 relationship start dates.
@@ -463,7 +467,9 @@ or `source` (correspondence to other occurrences remains open). `usesGuesses`
 covers assertion content and all identity dependencies, including negative
 constraints and earlier contextual links. Guesses references require this flag,
 and it is always false in the facts view. Every relationship must have a source
-assertion whose participant assignments match its endpoints. Equivalent edges
+assertion whose participant assignments match its endpoints, except a parent
+derivation with `inference: "sibling"`: its sources contain a parent assertion
+from `person` to some node X and a sibling assertion between X and `of`. Equivalent edges
 retain alternative complete derivations; each view is validated separately.
 
 ### Reconstruction and verification

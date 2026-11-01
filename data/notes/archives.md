@@ -7,6 +7,7 @@
 - [Historical Unterfranken: Town Database](https://www.historisches-unterfranken.uni-wuerzburg.de/staedte/staedte.php)
 - [Historical Unterfranken: Fries](https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries.php)
 - [Regesta Imperii](https://www.regesta-imperii.de/regesten/suche.html)
+- [Monasterium.net](https://www.icar-us.eu/en/cooperation/online-portals/monasterium-net/)
 - [Ingrossaturbücher](https://www.ingrossaturbuecher.de)
 - [Heidelberg University Library digital collections](https://www.ub.uni-heidelberg.de/Englisch/helios/digi/digilit.html)
 - [Baden State Library](https://www.blb-karlsruhe.de/)

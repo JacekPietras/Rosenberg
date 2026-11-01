@@ -180,15 +180,24 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
           for (const derivation of edge.derivations) {
             if ((metadata.schema === undefined || metadata.schema >= 4) && (!Number.isFinite(derivation.assertionWeight) || derivation.assertionWeight <= 0 || derivation.assertionWeight > 1
               || derivation.endpointProbability !== null && (!Number.isFinite(derivation.endpointProbability) || derivation.endpointProbability < 0 || derivation.endpointProbability > 1))) throw new Error('Invalid relationship evidence weights');
+            const inferred = Object.hasOwn(derivation, 'inference');
+            if (inferred && (derivation.inference !== 'sibling' || edge.type !== 'parent')) throw new Error('Invalid reconstructed derivation');
             let supported = false;
+            const fathered = new Set(), siblings = new Set();
             for (const source of derivation.sources) {
               const fact = await sourceFact(source, view);
-              if (fact.type !== edge.type || (fact.term || '') !== (edge.term || '')) continue;
               const endpoints = ['person', 'of'].map((field) => membership.get(JSON.stringify([source.path, source.pointer, field, ''])));
+              if (inferred) {
+                if (fact.type === 'parent' && endpoints[0] === edge.person) fathered.add(endpoints[1]);
+                else if (fact.type === 'sibling' && endpoints.includes(edge.of)) siblings.add(endpoints[0] === edge.of ? endpoints[1] : endpoints[0]);
+                continue;
+              }
+              if (fact.type !== edge.type || (fact.term || '') !== (edge.term || '')) continue;
               const expected = [edge.person, edge.of];
               if (edge.type !== 'parent') { endpoints.sort(); expected.sort(); }
               supported ||= JSON.stringify(endpoints) === JSON.stringify(expected);
             }
+            supported ||= [...fathered].some((key) => key !== edge.of && siblings.has(key));
             if (!supported) throw new Error('Reconstructed relationship lacks its source participants');
           }
         }

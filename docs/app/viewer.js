@@ -16,7 +16,7 @@ import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';
 import { createMapScreen } from './screens/map.js?v=85';
-import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=94';
+import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=95';
 import { createMarkupRenderer } from './rendering/markup.js?v=94';
 import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=16';
 import { sortByDate } from './image-date-sort.js?v=2';
@@ -1156,9 +1156,10 @@ function recordNeedsTranscription(doc) {
 function visibleRecordPaths(paths) {
   const selected = new Set(state.recordLabels);
   const hidden = new Set(state.hiddenRecordLabels || []);
+  const transcriptionExcludedLabels = new Set(['hessen', 'schenk', 'mönch']);
   return paths.filter((path) => {
     if (state.recordSource && !citationIndex.recordHasSource(path, state.recordSource)) return false;
-    if (state.toTranscribe && !recordNeedsTranscription(state.documents.get(path))) return false;
+    if (state.toTranscribe && (!recordNeedsTranscription(state.documents.get(path)) || recordLabelForPath(path).some((label) => transcriptionExcludedLabels.has(label)))) return false;
     if (path === state.navigationRecord) return true;
     const labels = recordLabelForPath(path);
     const missing = selected.has(MISSING_RECORD_LABEL) && recordHasMissingSourceOrUrl(path);

@@ -44,6 +44,7 @@ def generations_consistent(parent_edges, sibling_edges):
 
 
 def reconstruct(assertions, decisions, registry, names, parameters=None, observations=()):
+    assertions = list(assertions)
     mentions = {m.handle: m for a in assertions for m in a.mentions}
     parent = {key: key for key in mentions}
     dependencies = defaultdict(dict)
@@ -758,7 +759,68 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     proposals.append((current[left][0], current[right][0], [*roots[left], *roots[right]]))
         return accept(proposals, 'same-named relatives of one identity', {})
 
-    same_named_relatives()
+    inferred_bases = set()
+
+    def shared_fathers():
+        """A same-surname sibling shares an identity's same-surname (paternal) parent."""
+        current = groups()
+        def surname(root):
+            forms = {tuple(name(h).split()[1:]) for h in current[root]} - {()}
+            return next(iter(forms)) if len(forms) == 1 else None
+        def structure():
+            edges, siblings = [], []
+            for a in assertions:
+                if a.original['type'] in {'parent', 'sibling'}:
+                    pair = tuple(find(m.handle) for m in a.mentions)
+                    (edges if a.original['type'] == 'parent' else siblings).append(pair)
+            return not cycle_nodes(edges) and generations_consistent(edges, siblings)
+        parents_of = defaultdict(list)
+        for a in assertions:
+            if a.original['type'] == 'parent':
+                parents_of[find(a.mentions[1].handle)].append(a)
+        valid = structure()
+        added = 0
+        for sibling in [a for a in assertions if a.original['type'] == 'sibling']:
+            for known, other in (sibling.mentions, sibling.mentions[::-1]):
+                x, y = find(known.handle), find(other.handle)
+                family = surname(x)
+                if x == y or not family or surname(y) != family:
+                    continue
+                for parent in [p for p in parents_of[x] if not p.basis]:
+                    key = parent.source.key, sibling.source.key, other.handle
+                    father = find(parent.mentions[0].handle)
+                    if key in inferred_bases or father == y or surname(father) != family:
+                        continue
+                    fathers = {find(p.mentions[0].handle) for p in parents_of[y]}
+                    if father in fathers:
+                        continue
+                    paternal = [f for f in fathers if surname(f) == family]
+                    if any(given(root_names_of(current[f])) != given(root_names_of(current[father])) for f in paternal):
+                        continue  # a different recorded father: half-siblings or a wrong identity
+                    if any(len(anchor(current[f] + current[father])) > 1 or chronology_conflict(current[f] + current[father])
+                           for f in paternal):
+                        continue
+                    weaker = min((parent, sibling), key=lambda a: (a.source.kind == 'facts', reliability(a.source, model.settings)))
+                    father_mention = parent.mentions[0]
+                    inferred = Assertion(weaker.source, {'type': 'parent', 'person': father_mention.reference, 'of': other.reference},
+                                         weaker.historical_date, weaker.bounds, weaker.context, [father_mention, other], (parent, sibling))
+                    assertions.append(inferred)
+                    if valid and not structure():
+                        assertions.pop()
+                        inferred_bases.add(key)
+                        continue
+                    inferred_bases.add(key)
+                    parents_of[y].append(inferred)
+                    added += 1
+        return added
+
+    def root_names_of(handles):
+        return min((name(h) for h in handles), key=lambda value: (-len(value.split()), -len(value), value))
+
+    def family_closure():
+        return shared_fathers() + same_named_relatives()
+
+    family_closure()
     for iteration in range(model.settings['maxRounds']):
         current, profiles, root_names, context_coverage = build_profiles()
         buckets = defaultdict(list)
@@ -823,7 +885,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 round_scores[pair].update(status='merged', reason='probability, margin and cluster constraints passed')
             else:
                 round_scores[pair].update(status='incompatible', reason='complete proposed cluster violates identity constraints')
-        count += same_named_relatives()
+        count += family_closure()
         if not count:
             break
 
@@ -1104,7 +1166,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             links.append({'reason': 'best unblocked candidate', 'mentions': union,
                           'sources': [refs[key].export() for key in sorted(refs)]})
             joined += 1
-        joined += same_named_relatives()
+        joined += family_closure()
         if not joined:
             break
     current = groups()
@@ -1141,7 +1203,14 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         if kind != 'parent' and left > right:
             left, right = right, left
         key = kind, left, right, assertion.original.get('term', '')
-        support = {assertion.source.key: assertion.source}
+        if assertion.basis and (key in edges or left == right):
+            continue  # a recorded relationship needs no inferred derivation
+        basis = assertion.basis or (assertion,)
+        support = {a.source.key: a.source for a in basis}
+        for a in basis:
+            for mention in a.mentions:
+                if not anchor([mention.handle]):
+                    support.update(dependencies[find(mention.handle)])
         methods = []
         for mention in assertion.mentions:
             root = find(mention.handle)
@@ -1152,9 +1221,10 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 support.update(dependencies[root])
         identity = next((value for value in ('source', 'inferred', 'reviewed', 'anchored') if value in methods), 'source')
         derivation = {'identity': identity, 'usesGuesses': any(ref.kind == 'guesses' for ref in support.values()),
-                      'assertionWeight': reliability(assertion.source, model.settings),
+                      'assertionWeight': min(reliability(a.source, model.settings) for a in basis),
                       'endpointProbability': None if 'source' in methods else min(confidence[find(m.handle)] if not anchor([m.handle]) else 1.0 for m in assertion.mentions),
-                      'sources': [support[value].export() for value in sorted(support)]}
+                      'sources': [support[value].export() for value in sorted(support)],
+                      **({'inference': 'sibling'} if assertion.basis else {})}
         edge = edges.setdefault(key, {'type': kind, 'person': left, 'of': right, 'derivations': []})
         if kind == 'kin':
             edge['term'] = key[3]

@@ -461,3 +461,12 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .entity-relationships summary { cursor: pointer; }
 .relationship-uncertainty { font-size: .85em; padding: .15rem .35rem; border: 1px dashed #b48236; border-radius: .25rem; }
 .people-tree-parent[data-identity="inferred"], .people-tree-spouse[data-identity="inferred"], .people-tree-sibling[data-identity="inferred"], .people-tree-kin[data-identity="inferred"] { stroke-dasharray: 7 4; }
+
+.image-lightbox-crop-controls { position: absolute; z-index: 5; top: .65rem; right: 3.4rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .4rem; }
+.image-lightbox-crop-controls button { padding: .3rem .55rem; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.image-lightbox-crop-controls button:disabled { opacity: .5; cursor: default; }
+#image-lightbox-crop-status:not(:empty) { padding: .3rem .5rem; color: var(--ink); background: var(--surface-raised); border-radius: 4px; }
+.image-lightbox-crop-overlay { position: absolute; z-index: 4; cursor: crosshair; touch-action: none; }
+.image-lightbox-crop-overlay[hidden], .image-lightbox-crop-box[hidden] { display: none; }
+.image-lightbox-crop-box { position: absolute; box-sizing: border-box; border: 2px solid white; outline: 1px solid black; background: rgb(255 255 255 / .12); pointer-events: none; }
+.image-lightbox.is-cropping .image-lightbox-editor { visibility: hidden; }

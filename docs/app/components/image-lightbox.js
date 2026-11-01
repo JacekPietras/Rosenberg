@@ -26,6 +26,12 @@ export function setupImageLightbox({ state, repository, rerender }) {
   const collectionNext = $('#image-lightbox-collection-next');
   const collectionPosition = $('#image-lightbox-collection-position');
   const closeButton = $('#image-lightbox-close');
+  const cropButton = $('#image-lightbox-crop');
+  const cropDownload = $('#image-lightbox-crop-download');
+  const cropCancel = $('#image-lightbox-crop-cancel');
+  const cropStatus = $('#image-lightbox-crop-status');
+  const cropOverlay = $('#image-lightbox-crop-overlay');
+  const cropBox = cropOverlay?.querySelector('.image-lightbox-crop-box');
   if (!lightbox || !image || !stage || !annotations || !closeButton) return;
 
   const editable = !location.hostname.endsWith('github.io');
@@ -41,6 +47,21 @@ export function setupImageLightbox({ state, repository, rerender }) {
       removeConfirmation.addEventListener('close', () => resolve(removeConfirmation.returnValue === 'confirm'), { once: true });
       removeConfirmation.showModal();
     });
+  };
+  let cropSource = '';
+  let cropSelection = null;
+  let cropDrag = null;
+  let cropGeneration = 0;
+  const stopCrop = () => {
+    cropGeneration += 1;
+    cropSelection = null; cropDrag = null;
+    lightbox.classList.remove('is-cropping');
+    if (cropOverlay) cropOverlay.hidden = true;
+    if (cropBox) cropBox.hidden = true;
+    if (cropButton) cropButton.hidden = false;
+    if (cropDownload) { cropDownload.hidden = true; cropDownload.disabled = true; }
+    if (cropCancel) cropCancel.hidden = true;
+    if (cropStatus) cropStatus.textContent = '';
   };
   let context = null;
   let collectionLinks = null;
@@ -84,6 +105,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const width = image.naturalWidth * scale; const height = image.naturalHeight * scale;
     annotations.style.left = `${(stage.clientWidth - width) / 2}px`; annotations.style.top = `${(stage.clientHeight - height) / 2}px`;
     annotations.style.width = `${width}px`; annotations.style.height = `${height}px`;
+    if (cropOverlay) Object.assign(cropOverlay.style, { left: annotations.style.left, top: annotations.style.top, width: `${width}px`, height: `${height}px` });
     if (regionOverlay) {
       Object.assign(regionOverlay.style, { left: annotations.style.left, top: annotations.style.top, width: `${width}px`, height: `${height}px` });
     }
@@ -168,6 +190,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   };
   if ($('#image-lightbox-editor')) $('#image-lightbox-editor').hidden = !editable;
   const openImageLink = (link) => {
+    stopCrop();
     const path = link.dataset.documentPath; const entryIndex = Number(link.dataset.entryIndex); const imageIndex = Number(link.dataset.imageIndex); const entry = path ? state.documents.get(path)?.entries?.[entryIndex] : null;
     let node = entry && (Array.isArray(entry.img) ? entry.img[imageIndex] : entry.img);
     visibleRegions = node && typeof node === 'object' ? node.regions || [] : entry?.regions || [];
@@ -180,6 +203,11 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const item = entry && Array.isArray(entry.img) ? entry.img[imageIndex] : null;
     const directSource = collectionLinks?.entry === entry ? (typeof item === 'string' ? item : item?.src) : '';
     const sources = [...new Set([directSource, link.dataset.imageSrc, link.dataset.imageFallback, link.querySelector('img')?.currentSrc].filter(Boolean))];
+    cropSource = link.dataset.imageSrc || sources[0] || '';
+    const cropDriveId = driveFileId(cropSource) || driveFileId(link.dataset.imageFallback);
+    if (cropDriveId) cropSource = location.hostname.endsWith('github.io')
+      ? `https://drive.google.com/uc?export=download&id=${encodeURIComponent(cropDriveId)}`
+      : `/api/drive-thumbnail?id=${encodeURIComponent(cropDriveId)}&size=original&scope=${path?.startsWith('data/documents/') ? 'documents' : 'images'}`;
     let sourceIndex = 0;
     image.onerror = () => { sourceIndex += 1; if (sourceIndex < sources.length) image.src = sources[sourceIndex]; };
     image.onload = () => { updateGeometry(); updatePreview(); };
@@ -257,6 +285,74 @@ export function setupImageLightbox({ state, repository, rerender }) {
     render();
     await save();
   });
+  cropButton?.addEventListener('click', () => {
+    if (!image.naturalWidth || !cropSource) return;
+    regionMode = false; regionDrag = null; selectedIndex = null; magnifierPoint = null;
+    render();
+    lightbox.classList.add('is-cropping');
+    cropButton.hidden = true; cropDownload.hidden = false; cropCancel.hidden = false;
+    cropOverlay.hidden = false;
+    cropStatus.textContent = 'Drag over the image to select an area.';
+  });
+  cropCancel?.addEventListener('click', stopCrop);
+  const cropPoint = (event) => {
+    const rect = cropOverlay.getBoundingClientRect();
+    return { x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)), y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)) };
+  };
+  const updateCropSelection = (start, end) => {
+    cropSelection = { x: Math.min(start.x, end.x), y: Math.min(start.y, end.y), width: Math.abs(end.x - start.x), height: Math.abs(end.y - start.y) };
+    Object.assign(cropBox.style, { left: `${cropSelection.x * 100}%`, top: `${cropSelection.y * 100}%`, width: `${cropSelection.width * 100}%`, height: `${cropSelection.height * 100}%` });
+    cropBox.hidden = false;
+    cropDownload.disabled = cropSelection.width === 0 || cropSelection.height === 0;
+  };
+  cropOverlay?.addEventListener('pointerdown', (event) => {
+    if (event.button !== 0 || !cropOverlay.clientWidth || !cropOverlay.clientHeight) return;
+    cropDrag = { pointerId: event.pointerId, start: cropPoint(event) };
+    cropOverlay.setPointerCapture(event.pointerId);
+    updateCropSelection(cropDrag.start, cropDrag.start);
+    event.preventDefault();
+  });
+  cropOverlay?.addEventListener('pointermove', (event) => {
+    if (cropDrag?.pointerId === event.pointerId) updateCropSelection(cropDrag.start, cropPoint(event));
+  });
+  cropOverlay?.addEventListener('pointerup', (event) => {
+    if (cropDrag?.pointerId !== event.pointerId) return;
+    updateCropSelection(cropDrag.start, cropPoint(event)); cropDrag = null;
+    cropStatus.textContent = cropDownload.disabled ? 'Drag over the image to select an area.' : 'Drag again to change the selection.';
+  });
+  cropOverlay?.addEventListener('pointercancel', () => { cropDrag = null; });
+  cropDownload?.addEventListener('click', async () => {
+    if (!cropSelection || cropDownload.disabled) return;
+    const generation = cropGeneration;
+    const selection = { ...cropSelection };
+    cropDownload.disabled = true; cropStatus.textContent = 'Loading original image…';
+    let bitmap;
+    try {
+      const response = await fetch(cropSource, { referrerPolicy: 'no-referrer' });
+      if (!response.ok) throw new Error('Could not load the original image.');
+      bitmap = await createImageBitmap(await response.blob());
+      if (generation !== cropGeneration) return;
+      const x = Math.floor(selection.x * bitmap.width), y = Math.floor(selection.y * bitmap.height);
+      const right = Math.min(bitmap.width, Math.ceil((selection.x + selection.width) * bitmap.width));
+      const bottom = Math.min(bitmap.height, Math.ceil((selection.y + selection.height) * bitmap.height));
+      const canvas = document.createElement('canvas'); canvas.width = right - x; canvas.height = bottom - y;
+      const drawing = canvas.getContext('2d');
+      if (!drawing || !canvas.width || !canvas.height) throw new Error('Could not create the crop.');
+      drawing.drawImage(bitmap, x, y, canvas.width, canvas.height, 0, 0, canvas.width, canvas.height);
+      const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
+      if (generation !== cropGeneration) return;
+      if (!blob) throw new Error('Could not create the crop image.');
+      const url = URL.createObjectURL(blob); const link = document.createElement('a');
+      link.href = url; link.download = 'image-crop.png'; link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 60000);
+      stopCrop();
+    } catch (error) {
+      if (generation !== cropGeneration) return;
+      console.error('Could not crop the original image', error);
+      cropStatus.textContent = 'Could not access the original image for cropping.';
+      cropDownload.disabled = false;
+    } finally { bitmap?.close(); }
+  });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
   [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => $(selector)?.addEventListener('input', (event) => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) { seal[key] = Number(event.target.value); render(); } }));
@@ -288,7 +384,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   });
   preview?.addEventListener('pointerdown', (event) => { if (context && selectedIndex !== null && preview.classList.contains('is-seal-preview') && event.target.closest('.seal-crop')) startDrag(event, selectedIndex, preview); }); preview?.addEventListener('pointermove', moveDrag); preview?.addEventListener('pointerup', () => { drag = null; }); preview?.addEventListener('pointercancel', () => { drag = null; });
   stage.addEventListener('click', async (event) => {
-    if (!context) return;
+    if (!context || lightbox.classList.contains('is-cropping')) return;
     const marker = event.target.closest?.('.seal-marker'); if (marker) { const seal = currentSeals()[Number(marker.dataset.sealIndex)]; if (seal) { const [x, y] = String(seal.position || '').split(',').map(Number); magnifierPoint = { x, y }; } magnifierDismissed = false; selectedIndex = Number(marker.dataset.sealIndex); render(); return; } const old = selectedIndex; selectedIndex = null; const rect = annotations.getBoundingClientRect(); if (event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom) { magnifierPoint = point(event); const box = lightbox.getBoundingClientRect(); if (preview) { preview.style.left = `${event.clientX - box.left}px`; preview.style.top = `${event.clientY - box.top}px`; } } else magnifierPoint = null; magnifierDismissed = true; render(); if (old !== null) await save();
   });
   annotations.addEventListener('click', async (event) => {
@@ -307,7 +403,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     render();
     await save();
   });
-  stage.addEventListener('pointermove', (event) => { if (regionDrag || selectedIndex !== null) return; const rect = annotations.getBoundingClientRect(); if (!rect.width || event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) { magnifierPoint = null; magnifierDismissed = false; updatePreview(); return; } magnifierPoint = point(event); magnifierDismissed = false; updatePreview(); const box = lightbox.getBoundingClientRect(); if (preview) { preview.style.left = `${event.clientX - box.left}px`; preview.style.top = `${event.clientY - box.top}px`; } });
+  stage.addEventListener('pointermove', (event) => { if (regionDrag || selectedIndex !== null || lightbox.classList.contains('is-cropping')) return; const rect = annotations.getBoundingClientRect(); if (!rect.width || event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) { magnifierPoint = null; magnifierDismissed = false; updatePreview(); return; } magnifierPoint = point(event); magnifierDismissed = false; updatePreview(); const box = lightbox.getBoundingClientRect(); if (preview) { preview.style.left = `${event.clientX - box.left}px`; preview.style.top = `${event.clientY - box.top}px`; } });
   stage.addEventListener('pointerleave', () => { if (selectedIndex === null) { magnifierPoint = null; updatePreview(); } });
   lightbox.addEventListener('wheel', (event) => {
     if (description?.contains(event.target)) return;
@@ -342,6 +438,6 @@ export function setupImageLightbox({ state, repository, rerender }) {
   });
   descriptionClose?.addEventListener('click', () => { if (description) { description.hidden = true; updateDescriptionLayout(); } });
   lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
-  lightbox.addEventListener('cancel', (event) => { event.preventDefault(); close(); });
-  lightbox.addEventListener('close', () => { image.removeAttribute('src'); annotations.replaceChildren(); if (descriptionText) descriptionText.textContent = ''; if (description) description.hidden = true; stage.style.height = ''; if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
+  lightbox.addEventListener('cancel', (event) => { event.preventDefault(); if (lightbox.classList.contains('is-cropping')) stopCrop(); else close(); });
+  lightbox.addEventListener('close', () => { stopCrop(); cropSource = ''; image.removeAttribute('src'); annotations.replaceChildren(); if (descriptionText) descriptionText.textContent = ''; if (description) description.hidden = true; stage.style.height = ''; if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
 }

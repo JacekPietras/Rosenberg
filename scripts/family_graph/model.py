@@ -71,6 +71,8 @@ class Assertion:
     bounds: tuple[date, date]
     context: dict
     mentions: list[Mention] = field(default_factory=list)
+    # Assertions an inferred relationship is derived from.
+    basis: tuple = ()
 
     @property
     def event_key(self):

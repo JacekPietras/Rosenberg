@@ -401,6 +401,29 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertTrue(all(d['identity'] == 'inferred' and len(d['sources']) >= 2 for d in graph['relationships'][0]['derivations']))
         serialize(inputs, [build(inputs)])
 
+    def inferred_parents(self, facts):
+        inputs = self.inputs([person('unrelated', 'Unrelated')], facts)
+        result = build(inputs)
+        graph = result.evidence_graph
+        named = {node['key']: node['name'] for node in graph['nodes']}
+        return inputs, result, [(named[e['person']], named[e['of']], e['derivations']) for e in graph['relationships']
+                                if e['type'] == 'parent' and any('inference' in d for d in e['derivations'])]
+
+    def test_same_surname_sibling_shares_recorded_father(self):
+        inputs, result, inferred = self.inferred_parents([relation('Eberhard von North', 'Ulrich von North'),
+                                                          relation('Ulrich von North', 'Kunz von North', 'sibling'),
+                                                          relation('Ulrich von North', 'Bea von South', 'sibling')])
+        self.assertEqual([('Eberhard von North', 'Kunz von North')], [(left, right) for left, right, _ in inferred])
+        self.assertEqual([{'sibling'}], [{d['inference'] for d in derivations} for _, _, derivations in inferred])
+        self.assertGreaterEqual(len(inferred[0][2][0]['sources']), 2)
+        serialize(inputs, [result])
+
+    def test_sibling_with_a_different_recorded_father_gets_no_inferred_father(self):
+        _, _, inferred = self.inferred_parents([relation('Eberhard von North', 'Ulrich von North'),
+                                                relation('Arnold von North', 'Kunz von North'),
+                                                relation('Ulrich von North', 'Kunz von North', 'sibling')])
+        self.assertEqual([], inferred)
+
     def test_name_only_cross_source_occurrences_remain_separate(self):
         self.inputs([person('unrelated', 'Unrelated')], [relation('Alex', 'Bea')])
         self.write('data/documents/other.json', {'date': '1394', 'facts': [relation('Alex', 'Bea')]})

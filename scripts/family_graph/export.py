@@ -222,15 +222,24 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
                 if (type(d.get('assertionWeight')) not in (int, float) or not 0 < d['assertionWeight'] <= 1
                     or d.get('endpointProbability') is not None and (type(d['endpointProbability']) not in (int, float) or not 0 <= d['endpointProbability'] <= 1)):
                     raise ValueError('invalid relationship evidence weights')
-                supported = False
+                if d.get('inference', 'sibling') != 'sibling' or 'inference' in d and kind != 'parent':
+                    raise ValueError('invalid reconstructed derivation')
+                supported, fathered, siblings = False, set(), set()
                 for ref in d['sources']:
                     if '/guesses/' in ref['pointer'] and not d['usesGuesses']:
                         raise ValueError('unmarked reconstructed guess dependency')
                     fact = source(ref, view)
-                    if (isinstance(fact, dict) and fact.get('type') == kind
-                        and fact.get('term', '') == edge.get('term', '')):
-                        pair = [membership.get((ref['path'], ref['pointer'], field, '')) for field in ('person', 'of')]
+                    if not isinstance(fact, dict):
+                        continue
+                    pair = [membership.get((ref['path'], ref['pointer'], field, '')) for field in ('person', 'of')]
+                    if 'inference' in d:
+                        if fact.get('type') == 'parent' and pair[0] == left:
+                            fathered.add(pair[1])
+                        elif fact.get('type') == 'sibling' and right in pair:
+                            siblings.add(pair[1] if pair[0] == right else pair[0])
+                    elif fact.get('type') == kind and fact.get('term', '') == edge.get('term', ''):
                         supported |= pair == [left, right] if kind == 'parent' else sorted(pair, key=str) == sorted([left, right])
+                supported |= bool(fathered & siblings - {right})
                 if root is not None and not supported:
                     raise ValueError('reconstructed edge has no supporting participant assignment')
         if cycle_nodes(parents):

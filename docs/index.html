@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0d0f11">
   <link rel="icon" type="image/svg+xml" href="assets/von-rosenberg.svg">
   <title>Rosenberg sources</title>
-  <link rel="stylesheet" href="styles.css?v=149">
+  <link rel="stylesheet" href="styles.css?v=150">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
@@ -53,6 +53,12 @@
 
   <dialog id="image-lightbox" class="image-lightbox" aria-label="Image viewer">
     <button id="image-lightbox-close" class="image-lightbox-close" type="button" aria-label="Close image viewer" title="Close"><span class="image-lightbox-close-icon" aria-hidden="true"></span></button>
+    <div class="image-lightbox-crop-controls">
+      <button id="image-lightbox-crop" type="button">Crop</button>
+      <button id="image-lightbox-crop-download" type="button" hidden disabled>Download crop</button>
+      <button id="image-lightbox-crop-cancel" type="button" hidden>Cancel crop</button>
+      <span id="image-lightbox-crop-status" role="status" aria-live="polite"></span>
+    </div>
     <div id="image-lightbox-editor" class="image-lightbox-editor" hidden>
       <span id="image-lightbox-collection-navigation" class="image-lightbox-collection-navigation" hidden aria-label="Collection cover images">
         <button id="image-lightbox-collection-previous" type="button" aria-label="Previous collection image">‹</button>
@@ -80,6 +86,7 @@
     </div>
     <div id="image-lightbox-stage" class="image-lightbox-stage">
       <img id="image-lightbox-image" alt="">
+      <div id="image-lightbox-crop-overlay" class="image-lightbox-crop-overlay" hidden><div class="image-lightbox-crop-box" hidden></div></div>
       <div id="image-lightbox-annotations" class="image-lightbox-annotations" aria-hidden="true"></div>
       <div id="image-lightbox-region-overlay" class="image-lightbox-region-overlay" aria-hidden="true"><div class="image-lightbox-region-box"></div></div>
     </div>
@@ -95,6 +102,6 @@
 
   <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script type="module" src="app.js?v=174"></script>
+  <script type="module" src="app.js?v=175"></script>
 </body>
 </html>
