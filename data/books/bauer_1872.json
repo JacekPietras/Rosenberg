@@ -2315,30 +2315,16 @@
       "english": "Two gravestones in Wölchingen seem to belong here, see 1856, p. 34. On St. Walpurgis Day, 1449, Eberhard von Rosenberg died, and on the Thursday after Trinity Sunday in 1447, Arnold von Rosenberg passed away. Their mother's coat of arms shows a lion, so they are undoubtedly brothers, which aligns with the above. This mother is likely Elisabeth von Erligheim, who, according to Stocker's Boxberg p. 48, was the wife of an Eberhard von Rosenberg and endowed half of her income in Gommersdorf for a Mass in Wölchingen, which was confirmed by their liege lord, Elector Palatine Ruprecht, in 1393.",
       "facts": [
         {
-          "person": "Eberhard von Rosenberg",
-          "personDeceased": true,
-          "type": "generic",
-          "content": "died on St. Walpurgis Day.",
-          "date": "1449"
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "personDeceased": true,
-          "type": "generic",
-          "content": "died on the Thursday after Trinity Sunday.",
-          "date": "1447"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
+          "person": "eberhard_jagstberg",
           "type": "death",
-          "diedOn": "1449",
-          "date": "1449"
+          "diedOn": "1449-05-01",
+          "date": "1449-05-01"
         },
         {
-          "person": "Arnold von Rosenberg",
+          "person": "arnold_boxberg",
           "type": "death",
-          "diedOn": "1447",
-          "date": "1447"
+          "diedOn": "1447-06-08",
+          "date": "1447-06-08"
         }
       ],
       "guesses": [
