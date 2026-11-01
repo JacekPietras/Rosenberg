@@ -16,6 +16,20 @@ export function createDocumentRenderer({
   documentYear,
   getPeople,
 }) {
+  // Keep the special-family emphasis local to the documents view. Place spellings
+  // come from scripts/list_place_variations.py; title spellings come from names.md.
+  const rossenbergSpellings = ['Rosenberg', 'Rosinberg', 'Rosemberg', 'Rossenberg', 'Roßenberg', 'Rosenberch', 'Rosemberch', 'Rosenburgk', 'Rossberg', 'Rosperg', 'Rosenperg', 'Rosenbergk', 'Rosenburg', 'Rosennberg', 'Rosenbach'];
+  const targetNames = [
+    ...rossenbergSpellings.map((name) => `Schenk\\s+von(?:\\s|<[^>]*>)*${name}`),
+    ...rossenbergSpellings.flatMap((name) => [`Mönch\\s+von(?:\\s|<[^>]*>)*${name}`, `Münch\\s+von(?:\\s|<[^>]*>)*${name}`, `Munch\\s+von(?:\\s|<[^>]*>)*${name}`, `Mönich\\s+von(?:\\s|<[^>]*>)*${name}`, `Monich\\s+von(?:\\s|<[^>]*>)*${name}`]),
+  ];
+  const targetNamePattern = new RegExp(`(${targetNames.sort((a, b) => b.length - a.length).join('|')})`, 'giu');
+  const highlightTargetNames = (markup) => String(markup).replace(targetNamePattern, (name) => name
+    .split(/(<[^>]*>)/g)
+    .map((part) => part.startsWith('<') ? part : `<span class="target-family-name">${part}</span>`)
+    .join(''));
+  const documentMarkup = (value) => highlightTargetNames(inlineMarkup(value));
+
   function renderEntry(entry, { title = true, date = true, source = true, path = '', index = null, documentDate = '' } = {}) {
     const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
     const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
@@ -32,7 +46,7 @@ export function createDocumentRenderer({
       listClass: 'guesses-view',
       defaultDate: /^data\/(?:books|notes)\//.test(path) ? '' : Object.hasOwn(entry, 'date') ? entry.date : documentDate,
     }) : '';
-    return `<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}${guesses}</article>`;
+    return highlightTargetNames(`<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}${guesses}</article>`);
   }
 
   function bookSections(entries) {
@@ -69,7 +83,7 @@ export function createDocumentRenderer({
     const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
     const important = labelKeys.includes('important') ? ' important' : '';
     const dimmed = labelKeys.some((label) => ['hessen', 'schenk', 'mönch'].includes(label)) ? ' dimmed' : '';
-    return `<article class="document${important}${dimmed}"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
+    return `<article class="document${important}${dimmed}"${anchor}><div class="document-heading"><div><h2>${documentMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
   }
 
   return { renderEntry, renderDocument };

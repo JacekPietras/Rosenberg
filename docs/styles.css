@@ -173,6 +173,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .place-link:hover, .place-link:focus { color: var(--place-link-hover); }
 .person-link { color: var(--person-link); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--person-link) 55%, transparent); text-underline-offset: .14em; }
 .person-link:hover, .person-link:focus { color: var(--person-link-hover); }
+.target-family-name { color: var(--danger) !important; }
 .place-variants { margin: .2rem 0 0; color: var(--muted); font-size: .8rem; }
 .place-mention { border-top: 1px solid var(--line); cursor: pointer; transition: border-color .15s ease, box-shadow .15s ease; }
 .place-mention:hover { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent-soft); }
