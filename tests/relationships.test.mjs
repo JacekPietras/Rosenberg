@@ -280,7 +280,7 @@ test('stale local evidence automatically rebuilds once and reloads the verified 
   assert.deepEqual(counts(), { renders: 3, progress: 1 });
 });
 
-test('other screens render before a slow family rebuild finishes', async () => {
+test('family rebuild waits until the tree screen is opened', async () => {
   const data = await fixture();
   data.documents.get(source.path).date = '1400';
   let finish;
@@ -292,12 +292,16 @@ test('other screens render before a slow family rebuild finishes', async () => {
   state.active = 'documents';
   await loader.loadAll();
   assert.equal(counts().renders, 1);
+  assert.equal(state.familyGraph.rebuilding, undefined);
+  assert.equal(counts().progress, 0);
+  state.active = 'tree';
+  await loader.loadAll();
   assert.equal(state.familyGraph.rebuilding, true);
   finish();
   await loader.waitForFamilyRebuild();
   assert.equal(state.familyGraph.valid, true);
   assert.equal(state.familyGraph.rebuilding, false);
-  assert.equal(counts().renders, 1);
+  assert.equal(counts().progress, 1);
 });
 
 test('rebuild failures retain hidden stale edges and a working retry action', async () => {

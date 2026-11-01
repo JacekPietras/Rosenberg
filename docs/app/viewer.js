@@ -1348,7 +1348,7 @@ const mapScreen = createMapScreen({
 async function renderActive() {
   entryScrollCleanup?.();
   entryScrollCleanup = null;
-  if (state.familyGraph?.generated && (repository.revision || 0) !== state.familyRepositoryRevision) {
+  if (state.active === 'tree' && !state.person && !state.place && !state.sourceLoading && state.familyGraph?.generated && (repository.revision || 0) !== state.familyRepositoryRevision) {
     return dataLoader.loadAll();
   }
   return renderActiveScreen({
