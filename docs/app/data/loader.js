@@ -100,8 +100,10 @@ export function createDataLoader({
     state.documents = documents;
     state.sourceLoading = false;
     if (state.familyGraph?.valid) lastVerifiedGraph = state.familyGraph;
-    state.familyVerification = { valid: false, reason: 'Verifying family graph…' };
-    state.familyGraph = buildRelationshipGraph(state.personRecords, { tree: null, view: state.familyView, verification: state.familyVerification });
+    if (!state.familyGraph) {
+      state.familyVerification = { valid: false, reason: 'Open the family tree to verify its saved graph.' };
+      state.familyGraph = buildRelationshipGraph(state.personRecords, { tree: null, view: state.familyView, verification: state.familyVerification });
+    }
     state.canRebuildFamilyGraph = typeof repository.rebuildFamilyGraph === 'function' && await repository.isLocalServer();
     state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
     state.familyRepositoryRevision = repository.revision || 0;
@@ -120,37 +122,41 @@ export function createDataLoader({
     savePreferences();
     if (!familyOnly) renderTabs();
     if (!familyOnly) await renderActive();
-    const family = await loadFamilyInBackground(state.personRecords, documents, paths, state.familyView);
-    state.tree = family.tree;
-    if (family.tree && (family.tree.schema === undefined || family.tree.schema >= 4)) state.familyView = 'with-guesses';
-    state.familyVerification = family.verification;
-    state.familyGraph = family.graph;
-    state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
-    const shouldRebuild = state.active === 'tree' && !state.person && !state.place
-      && !state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild && !backgroundRebuild;
-    state.familyGraph.rebuilding = Boolean((autoRebuild && backgroundRebuild) || shouldRebuild);
-    if (remapSourcePerson(state, lastVerifiedGraph)) onPersonReassigned();
-    if (state.familyGraph.valid) lastVerifiedGraph = state.familyGraph;
-    state.familyView = state.familyGraph.view;
-    if (state.active === 'tree' || state.person) await renderActive();
-    if (shouldRebuild) {
-      onFamilyRebuild();
-      backgroundRebuild = (async () => {
-        try {
-          await repository.rebuildFamilyGraph(rebuildOptions());
-          // A refresh may already be loading when the rebuild finishes.
-          await new Promise((resolve) => setTimeout(resolve, 0));
-          if (loading) await loading;
-          await loadAll({ autoRebuild: false, familyOnly: true });
-        } catch (error) {
-          state.familyGraph.rebuilding = false;
-          state.familyGraph.rebuildError = error.message;
-          if (state.active === 'tree') await renderActive();
-        } finally {
-          backgroundRebuild = null;
-          if (state.familyGraph) state.familyGraph.rebuilding = false;
-        }
-      })();
+    const treeScreenVisible = state.active === 'tree' && !state.person && !state.place;
+    if (treeScreenVisible) {
+      const family = await loadFamilyInBackground(state.personRecords, documents, paths, state.familyView);
+      state.tree = family.tree;
+      if (family.tree && (family.tree.schema === undefined || family.tree.schema >= 4)) state.familyView = 'with-guesses';
+      state.familyVerification = family.verification;
+      state.familyGraph = family.graph;
+      state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
+      const shouldRebuild = !state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild && !backgroundRebuild;
+      state.familyGraph.rebuilding = Boolean((autoRebuild && backgroundRebuild) || shouldRebuild);
+      if (remapSourcePerson(state, lastVerifiedGraph)) onPersonReassigned();
+      if (state.familyGraph.valid) lastVerifiedGraph = state.familyGraph;
+      state.familyView = state.familyGraph.view;
+      await renderActive();
+      if (shouldRebuild) {
+        onFamilyRebuild();
+        backgroundRebuild = (async () => {
+          try {
+            await repository.rebuildFamilyGraph(rebuildOptions());
+            // A refresh may already be loading when the rebuild finishes.
+            await new Promise((resolve) => setTimeout(resolve, 0));
+            if (loading) await loading;
+            await loadAll({ autoRebuild: false, familyOnly: true });
+          } catch (error) {
+            state.familyGraph.rebuilding = false;
+            state.familyGraph.rebuildError = error.message;
+            if (state.active === 'tree') await renderActive();
+          } finally {
+            backgroundRebuild = null;
+            if (state.familyGraph) state.familyGraph.rebuilding = false;
+          }
+        })();
+      }
+    } else if (state.person) {
+      await renderActive();
     }
   }
 

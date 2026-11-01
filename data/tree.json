@@ -15,7 +15,7 @@
     "data/documents/1293-01-22.json": "sha256:a25428e585ffc3b71206b8a665ef12c120768fb1693de2f3ef4b61e9c3e00d96",
     "data/documents/1299-02.json": "sha256:9cd4db882873ea348c9057bbf99995c754f47218052460bbcb02316ebcf839fb",
     "data/documents/1300-05-17.json": "sha256:377ca884ef036381a02522b7c3547e6a82aad7b12f98f54af7de672463329f39",
-    "data/documents/1305-10-25.json": "sha256:75f9602813da6ad6e9ec5cc0575b464f9c6db0929609a8ad2d0452864f553a3a",
+    "data/documents/1305-10-25.json": "sha256:6c29404861ed3ced74d7592a80c1e116e306583a8aefa07eb4ff6c7dd0746ad2",
     "data/documents/1314-10-11.json": "sha256:8e529b4a9966209a681f68b2701b034871f9cf0892d098b9913da7d39f890ab9",
     "data/documents/1316-06-29.json": "sha256:3eed091dfd9cbd15c800e314b34e796e32111241a576ef172120e0be034e06c3",
     "data/documents/1318-04-24.json": "sha256:98eac6152058dc6c5d272077985510630688052bf30339f4466f63fa46dd457a",
@@ -404,7 +404,7 @@
     "data/places.json": "sha256:75add4d302ab8bcb7bd37c6bdbd50b3b5e3a4f49899b703d23201ae19f223155",
     "data/titles.md": "sha256:9fdd2e973af6368bdc4e471037e9e3dfcd2c6f6a8a835838062a51e00318fb78"
   },
-  "fingerprint": "sha256:d59ae0dd4a2f27ae91c7cccbd90b664d21efe437e8334e95e665a79953d26930",
+  "fingerprint": "sha256:52902bc896e3a3e90f5d9069144ccca7fdea00b58b48df6bc084f30ba720b8f7",
   "evidence": {
     "with-guesses": {
       "sources": [
