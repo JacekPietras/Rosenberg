@@ -9,7 +9,7 @@
       "english": "Eberhard von Rosenberg, Ritter, bailiff, the mayor, and the aldermen of (Tauber-)Bischofsheim certify that Wignand, son of Brundward von Eiersheim, his wife Katharina, their two named daughters, and sons-in-law sold to the dean and chapter of Aschaffenburg, for 24 pounds Heller, an annual rent of 2 pounds Heller from specified vineyards and fields in (Tauber-)Bischofsheim for the chapter's common fund.",
       "facts": [
         {
-          "person": "Eberhard von Rosenberg",
+          "person": "vogt_zu_Durn",
           "personTitle": [
             "Ritter",
             "Vogt"
@@ -23,7 +23,7 @@
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035799_00001/full/max/0/default.jpg",
           "seals": [
             {
-              "person": "Eberhard von Rosenberg",
+              "person": "vogt_zu_Durn",
               "position": "0.2633,0.7442",
               "size": 0.15250000000000005,
               "width": 0,
