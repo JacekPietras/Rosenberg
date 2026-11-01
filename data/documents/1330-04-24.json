@@ -1,5 +1,6 @@
 {
   "date": "1330-04-24",
+  "transcribed": true,
   "entries": [
     {
       "source": "GA 5 U 714",
@@ -7,15 +8,47 @@
         "https://www.landesarchiv-bw.de/plink/?f=3-188335",
         "https://www.deutsche-digitale-bibliothek.de/item/FE77ENZI4ANXSDU2AXLEIXIBFSXUTHPV"
       ],
-      "german": "Nächsten Tag nach Georgi; Eberhard von Rosenberg bestätigt dem Bischof von Würzburg, daß er seinen Teil an der Burg zu Nagelsberg mit allen Zugehörungen, die ursprünglich Otto Lesch inne hatte, von Comburg zu Lehen empfing;\n\nSiegel des Eberhard von Rosenberg.",
-      "english": "The next day after St. George's Day; Eberhard von Rosenberg confirms to the Bishop of Würzburg that he has received his share of the castle at Nagelsberg, with all its appurtenances, originally held by Otto Lesch, from Comburg as a fief;\n\nseal of Eberhard von Rosenberg.",
+      "summary": "Nächsten Tag nach Georgi; Eberhard von Rosenberg bestätigt dem Bischof von Würzburg, daß er seinen Teil an der Burg zu Nagelsberg mit allen Zugehörungen, die ursprünglich Otto Lesch inne hatte, von Comburg zu Lehen empfing;\n\nSiegel des Eberhard von Rosenberg.",
+      "german": "Dem hochgelobten herren hern Wolfram von gotes gnaden bischof ze Wirtzeburg enbüt ich Eberhart von Rosenberg ritter und vogt ze Dürne minen undertenigen dienst mit gantzem flizze. Gnediger herre ich tun iu kunt und bekenne an disem gegenwrtigen brive daz ich von mime gnedigen herren hern Cunrat apt [?] ze Komberg [?] ze lehen empfangen hon alles daz reht daz wilunt [?] Otto Resche [?] ein ritter an der burg ze Nagelsberg het und an welden und an wingarten die er selbe buwete an den teil der Otten [?] ist sine sune. Und allen den teil den Arnolt von Tierbach [?] het und kaufte umb Cunrat Flachen [?] an der egenanten burge und hon im ouch da von lehens reht geben als ich billich solt. Und zu einer warheit und gezugnisse dirre vorgeschriben dinge hon ich min insigel gelet [?] an disen brief. Der geben wart do man zalt von Cristes geburte driuzehen hundert jar dar nach in dem drizigesten jare an dem nehsten tag nach sant Georien [?] tag.",
+      "english": "To the highly praised lord, Lord Wolfram, by the grace of God Bishop of Würzburg, I, Eberhard von Rosenberg, Ritter, Vogt zu Dürn, offer my humble service with all diligence. Gracious lord, I make known to you and acknowledge by this present letter that I have received as a fief from my gracious lord, Lord Konrad, Abbot [?] of Comburg [?], all the rights that Otto Resche [?], a Ritter, formerly [?] had at the castle of Nagelsberg and in the woods and vineyards that he himself cultivated, except the part that belongs to Otto [?], his son; and all the part at the aforesaid castle that Arnold von Tierbach [?] had and bought from Konrad Flach [?]; and I have also given him the feudal right for it, as I rightly should. In truth and testimony of the things written above I have set my seal to this letter, which was given in the year after the birth of Christ thirteen hundred and thirty, on the next day after St. George's [?] day.",
       "facts": [
         {
-          "person": "Eberhard von Rosenberg",
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
           "type": "generic",
-          "content": "held a share of Nagelsberg Castle as a fief from Comburg."
+          "content": "notified Wolfram, Bishop of Würzburg, of his enfeoffment with rights at Nagelsberg Castle."
+        },
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "received as a fief from Konrad, Abbot of Comburg, the rights that Otto Resche, Ritter, had held at Nagelsberg Castle and in the woods and vineyards he cultivated, except the share belonging to Otto Resche's son."
+        },
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "received as a fief from Konrad, Abbot of Comburg, the share of Nagelsberg Castle that Arnold von Tierbach had bought from Konrad Flach."
+        },
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "sealed the letter."
         }
-      ],
+      ]
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000188335%2F03_0000188335_0001_3-188335-1.jpg"

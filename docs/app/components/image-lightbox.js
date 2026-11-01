@@ -49,6 +49,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     });
   };
   let cropSource = '';
+  let cropFilename = 'image-crop.png';
   let cropSelection = null;
   let cropDrag = null;
   let cropGeneration = 0;
@@ -192,6 +193,11 @@ export function setupImageLightbox({ state, repository, rerender }) {
   const openImageLink = (link) => {
     stopCrop();
     const path = link.dataset.documentPath; const entryIndex = Number(link.dataset.entryIndex); const imageIndex = Number(link.dataset.imageIndex); const entry = path ? state.documents.get(path)?.entries?.[entryIndex] : null;
+    const documentTitle = path ? state.documents.get(path)?.title : '';
+    const filenameBase = [documentTitle, entry?.title, path?.split('/').pop()?.replace(/\.json$/i, '')]
+      .map((value) => String(value || '').replace(/[<>:"/\\|?*\x00-\x1f]/g, ' ').replace(/\s+/g, ' ').trim().replace(/[. ]+$/g, '').slice(0, 150))
+      .find(Boolean) || 'image';
+    cropFilename = `${filenameBase}-crop.png`;
     let node = entry && (Array.isArray(entry.img) ? entry.img[imageIndex] : entry.img);
     visibleRegions = node && typeof node === 'object' ? node.regions || [] : entry?.regions || [];
     if (node && typeof node !== 'object' && entry) { node = { src: node }; if (Array.isArray(entry.img)) entry.img[imageIndex] = node; else entry.img = node; }
@@ -343,7 +349,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
       if (generation !== cropGeneration) return;
       if (!blob) throw new Error('Could not create the crop image.');
       const url = URL.createObjectURL(blob); const link = document.createElement('a');
-      link.href = url; link.download = 'image-crop.png'; link.click();
+      link.href = url; link.download = cropFilename; link.click();
       setTimeout(() => URL.revokeObjectURL(url), 60000);
       stopCrop();
     } catch (error) {
