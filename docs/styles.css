@@ -152,7 +152,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .record-label-dialog-actions button:disabled { opacity: .55; cursor: wait; }
 .document.dimmed .record-label { background: #68727d; }
 .document-url { margin: .45rem 0 0; overflow-wrap: anywhere; font-size: .78rem; }
-.document-url a, .text a { color: var(--accent); }
+.document-url a, .text a:not(.place-link):not(.person-link) { color: var(--accent); }
 .seals-layout { display: grid; grid-template-columns: minmax(0, 1fr) repeat(2, minmax(5.5rem, 7rem)); gap: .85rem; align-items: start; }
 .seals-document { grid-column: 1; grid-row: 1; }
 .seal-sidebar { position: sticky; top: 5.5rem; grid-column: 2; grid-row: 1; padding: 1.1rem 0; font-size: .82rem; }
