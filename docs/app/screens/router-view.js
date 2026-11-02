@@ -65,6 +65,10 @@ export async function renderActiveScreen({
     return;
   }
   if (state.active === 'tree') {
+    if (state.treeLoading || state.familyGraph?.rebuilding) {
+      content.textContent = 'Building tree…';
+      return;
+    }
     const focus = state.familyFocus && (state.familyFocus === 'all' || state.familyGraph?.components?.some((c) => c.key === state.familyFocus))
       ? state.familyFocus : state.familyGraph?.defaultFocus;
     content.innerHTML = renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph, focus });

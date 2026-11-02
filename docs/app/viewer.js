@@ -3,14 +3,14 @@ import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=123';
-import { renderActiveScreen } from './screens/router-view.js?v=10';
+import { renderActiveScreen } from './screens/router-view.js?v=12';
 import { createDocumentRenderer } from './screens/documents.js?v=9';
 import { setupRecordLabelSelector } from './screens/record-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=88';
 import { createSealScreen } from './screens/seals.js?v=3';
 import { createImageScreen } from './screens/images.js?v=37';
-import { createDataLoader } from './data/loader.js?v=25';
+import { createDataLoader } from './data/loader.js?v=26';
 import { createEntityScreens } from './screens/entities.js?v=116';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
@@ -1348,7 +1348,7 @@ const mapScreen = createMapScreen({
 async function renderActive() {
   entryScrollCleanup?.();
   entryScrollCleanup = null;
-  if (state.active === 'tree' && !state.person && !state.place && !state.sourceLoading && state.familyGraph?.generated && (repository.revision || 0) !== state.familyRepositoryRevision) {
+  if (state.active === 'tree' && !state.person && !state.place && !state.sourceLoading && !state.treeLoading && state.familyGraph?.generated && (repository.revision || 0) !== state.familyRepositoryRevision) {
     return dataLoader.loadAll();
   }
   return renderActiveScreen({

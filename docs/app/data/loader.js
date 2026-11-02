@@ -45,6 +45,10 @@ export function createDataLoader({
   }
 
   async function loadSnapshot({ autoRebuild = true, familyOnly = false } = {}) {
+    if (!familyOnly && state.active === 'tree' && !state.person && !state.place) {
+      state.treeLoading = true;
+      await renderActive();
+    }
     const files = await repository.getRepositoryFiles();
     const paths = files.map((file) => typeof file === 'string' ? file : file.path)
       .filter((path) => /^data\/(books|documents|notes|images)\/.*\.json$/.test(path));
@@ -148,6 +152,7 @@ export function createDataLoader({
       state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
       const shouldRebuild = !state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild && !backgroundRebuild;
       state.familyGraph.rebuilding = Boolean((autoRebuild && backgroundRebuild) || shouldRebuild);
+      state.treeLoading = false;
       if (remapSourcePerson(state, lastVerifiedGraph)) onPersonReassigned();
       if (state.familyGraph.valid) lastVerifiedGraph = state.familyGraph;
       state.familyView = state.familyGraph.view;
@@ -177,7 +182,10 @@ export function createDataLoader({
   }
 
   function loadAll(options) {
-    if (!loading) loading = loadSnapshot(options).finally(() => { loading = null; });
+    if (!loading) loading = loadSnapshot(options).catch((error) => {
+      state.treeLoading = false;
+      throw error;
+    }).finally(() => { loading = null; });
     return loading;
   }
 
