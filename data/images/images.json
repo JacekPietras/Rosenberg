@@ -646,14 +646,32 @@
       "title": "Lewis armorial, Philadelphia, Free Library, Lewis E 17",
       "source": "https://archive.org/details/lewis_e_017/page/n144/mode/1up",
       "page": "144",
-      "url": "https://drive.google.com/thumbnail?id=1BlMU0VlWvqJ-YyADkKnsc7sSpK-PKeNs&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1BlMU0VlWvqJ-YyADkKnsc7sSpK-PKeNs&sz=w1600",
+      "regions": [
+        {
+          "x": 0.5731,
+          "y": 0.3815,
+          "width": 0.1667,
+          "height": 0.2377,
+          "name": "swans"
+        }
+      ]
     },
     {
       "label": "armorial",
       "title": "Lewis armorial, Philadelphia, Free Library, Lewis E 17",
       "source": "https://archive.org/details/lewis_e_017/page/n76/mode/1up",
       "page": "76",
-      "url": "https://drive.google.com/thumbnail?id=1vl0ZOUWjTne9iGxo1JNCInLioVK2XLST&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1vl0ZOUWjTne9iGxo1JNCInLioVK2XLST&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4335,
+          "y": 0.6308,
+          "width": 0.1626,
+          "height": 0.2662,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "label": "armorial",

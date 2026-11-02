@@ -38,6 +38,11 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, titleMarkup 
     const regions = [...new Set(entries.flatMap(({ entry }) => regionNames(entry)))].sort((a, b) => a.localeCompare(b));
     const regionFilters = regions.map((name) => ({ name, value: normalize(name) }));
     if (entries.some(({ entry }) => !regionNames(entry).length)) regionFilters.push({ name: 'Unknown', value: unknownRegionFilter });
+    for (const value of selected) {
+      if (!value.startsWith('label:') && !regionFilters.some((filter) => filter.value === value)) {
+        regionFilters.push({ name: value === unknownRegionFilter ? 'Unknown' : value, value });
+      }
+    }
     const renderFilters = (items) => items.map(({ name, value }) => `<a href="#" class="${selected.has(value) ? 'selected' : ''}" data-image-filter="${escapeHtml(value)}">${escapeHtml(name)}</a>`).join('');
     const sidebar = labels.length || regionFilters.length ? `<aside class="seal-sidebar image-tag-sidebar" aria-label="Filter images"><section aria-label="Labels"><nav>${renderFilters(labels.map((name) => ({ name, value: `label:${name}` })))}</nav></section><section aria-label="Regions"><nav>${renderFilters(regionFilters)}</nav></section></aside>` : '';
     const selectedLabels = [...selected].filter((value) => value.startsWith('label:'));
