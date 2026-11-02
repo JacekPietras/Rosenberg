@@ -223,7 +223,8 @@
       "title": "Wappenstammbuch, Karlsruhe, Badische Landesbibliothek, Cod. Karlsruhe 2821",
       "date": "1501-1600",
       "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185533 — https://digital.blb-karlsruhe.de/i3f/v20/4185533/full/max/0/default.jpg — https://drive.google.com/file/d/1Ljz7-ej2yv5p-b88aFmAKobHzfs0Il77/view",
-      "description": "Page 235. The BLB catalog dates the manuscript to the 16th century.",
+      "page": "235",
+      "description": "The BLB catalog dates the manuscript to the 16th century.",
       "url": "https://drive.google.com/thumbnail?id=1Ljz7-ej2yv5p-b88aFmAKobHzfs0Il77&sz=w1600",
       "regions": [
         {
@@ -240,7 +241,8 @@
       "title": "Wappenstammbuch, Karlsruhe, Badische Landesbibliothek, Cod. Karlsruhe 2821",
       "date": "1501-1600",
       "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185505 — https://digital.blb-karlsruhe.de/i3f/v20/4185505/full/max/0/default.jpg — https://drive.google.com/file/d/1rOWxMaaUGIR9ia6_QRfc7rqtkYh0mxNK/view",
-      "description": "Page 207. The BLB catalog dates the manuscript to the 16th century.",
+      "page": "207",
+      "description": "The BLB catalog dates the manuscript to the 16th century.",
       "url": "https://drive.google.com/thumbnail?id=1rOWxMaaUGIR9ia6_QRfc7rqtkYh0mxNK&sz=w1600",
       "regions": [
         {
@@ -257,7 +259,8 @@
       "title": "Wappenstammbuch, Karlsruhe, Badische Landesbibliothek, Cod. Karlsruhe 2821",
       "date": "1501-1600",
       "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185499 — https://digital.blb-karlsruhe.de/i3f/v20/4185499/full/max/0/default.jpg — https://drive.google.com/file/d/1w0SEVCwP8fjheBNtKW-JIPEJBCt25WcO/view",
-      "description": "Page 201. The BLB catalog dates the manuscript to the 16th century.",
+      "page": "201",
+      "description": "The BLB catalog dates the manuscript to the 16th century.",
       "url": "https://drive.google.com/thumbnail?id=1w0SEVCwP8fjheBNtKW-JIPEJBCt25WcO&sz=w1600",
       "regions": [
         {
@@ -291,7 +294,8 @@
       "title": "Wappenstammbuch, Karlsruhe, Badische Landesbibliothek, Cod. Karlsruhe 2821",
       "date": "1501-1600",
       "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185407 — https://digital.blb-karlsruhe.de/i3f/v20/4185407/full/max/0/default.jpg — https://drive.google.com/file/d/1tijyc1sRBIW_5HIMmmTKeFCyAUuWsWfo/view",
-      "description": "Page 111. The BLB catalog dates the manuscript to the 16th century.",
+      "page": "111",
+      "description": "The BLB catalog dates the manuscript to the 16th century.",
       "url": "https://drive.google.com/thumbnail?id=1tijyc1sRBIW_5HIMmmTKeFCyAUuWsWfo&sz=w1600",
       "regions": [
         {
@@ -593,35 +597,62 @@
       "label": "armorial",
       "title": "Lewis armorial, Philadelphia, Free Library, Lewis E 17",
       "source": "https://archive.org/details/lewis_e_017/page/n96/mode/1up",
-      "description": "Page 96.",
-      "url": "https://drive.google.com/thumbnail?id=1zbOqOnJRNXErjmiGzXixZl7t-ocQ92Cg&sz=w1600"
+      "page": "96",
+      "url": "https://drive.google.com/thumbnail?id=1zbOqOnJRNXErjmiGzXixZl7t-ocQ92Cg&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4145,
+          "y": 0.3624,
+          "width": 0.1611,
+          "height": 0.257,
+          "name": "Erligheim"
+        }
+      ]
     },
     {
       "label": "armorial",
       "title": "Lewis armorial, Philadelphia, Free Library, Lewis E 17",
       "source": "https://archive.org/details/lewis_e_017/page/n266/mode/1up",
-      "description": "Page 266.",
-      "url": "https://drive.google.com/thumbnail?id=1UH4WN0JtN8OwsQNZ82Gibf7oaO2cGX3v&sz=w1600"
+      "page": "266",
+      "url": "https://drive.google.com/thumbnail?id=1UH4WN0JtN8OwsQNZ82Gibf7oaO2cGX3v&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2512,
+          "y": 0.3698,
+          "width": 0.1757,
+          "height": 0.2584,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "effigy",
       "title": "Epitaph des Wipert von Erligheim, Abtei Neuburg bei Heidelberg",
       "source": "https://commons.wikimedia.org/wiki/File:Epitaph_Wipert_von_Erligheim.jpg",
       "description": "Wipert von Erligheim died in 1348. Photograph by Kumbalam, 27 December 2012; CC0.",
-      "url": "https://drive.google.com/thumbnail?id=1E8veZzpEUm70FUzk6FrEg4hSHYP_xaru&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1E8veZzpEUm70FUzk6FrEg4hSHYP_xaru&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2156,
+          "y": 0.1222,
+          "width": 0.5712,
+          "height": 0.5913,
+          "name": "Erligheim"
+        }
+      ]
     },
     {
       "label": "armorial",
       "title": "Lewis armorial, Philadelphia, Free Library, Lewis E 17",
       "source": "https://archive.org/details/lewis_e_017/page/n144/mode/1up",
-      "description": "Page 144.",
+      "page": "144",
       "url": "https://drive.google.com/thumbnail?id=1BlMU0VlWvqJ-YyADkKnsc7sSpK-PKeNs&sz=w1600"
     },
     {
       "label": "armorial",
       "title": "Lewis armorial, Philadelphia, Free Library, Lewis E 17",
       "source": "https://archive.org/details/lewis_e_017/page/n76/mode/1up",
-      "description": "Page 76.",
+      "page": "76",
       "url": "https://drive.google.com/thumbnail?id=1vl0ZOUWjTne9iGxo1JNCInLioVK2XLST&sz=w1600"
     },
     {
@@ -629,7 +660,8 @@
       "title": "Hällische Chronik, Bratislava, Univerzitná knižnica, Ms 1825",
       "date": "1494-1545",
       "source": "http://digitalna.kniznica.info/zoom/68248/view?page=38&p=separate&view=0,0,600,941",
-      "description": "Page 38.\n\nTranscription: Roßenberger seÿn der Von Hall Feind worden, Herr Jorg von Roßenberg, hat die von Hall länger dann 10. Jahr bekriegt [?], und Ihnen etlich Dörffer angesteckt, daß mit viel sonders außgericht [?], musste sich zulezt ohn Geldt mit Jhnen vertragen, und geschah der Vertrag zu Hall auff dem Landtag, Er hatt [?] viel vom Adel bey sich, aber die von Hall hatten auf dem Land viel von Adel die auch Bürger waren, und sich der Statt annahmen, also musste er [?] die Sachen von Handgeben, und wurden ihme die Kosten so er dann Rosenbergischen [?] hatt, nit bezahlet, geschah im Anno 1434.\n\nTranslation: The Rosenbergs became enemies of the people of Hall. Lord Georg von Rosenberg warred against the people of Hall for more than 10 years and set fire to several of their villages. Because he achieved little, he finally had to settle with them without payment. The settlement was made at Hall at the Landtag. He had many nobles with him, but the people of Hall had many nobles in the countryside who were also citizens and sided with the town. So he had to give up the matter, and the costs he had incurred were not reimbursed. This happened in the year 1434.",
+      "page": "38",
+      "description": "Transcription: Roßenberger seÿn der Von Hall Feind worden, Herr Jorg von Roßenberg, hat die von Hall länger dann 10. Jahr bekriegt [?], und Ihnen etlich Dörffer angesteckt, daß mit viel sonders außgericht [?], musste sich zulezt ohn Geldt mit Jhnen vertragen, und geschah der Vertrag zu Hall auff dem Landtag, Er hatt [?] viel vom Adel bey sich, aber die von Hall hatten auf dem Land viel von Adel die auch Bürger waren, und sich der Statt annahmen, also musste er [?] die Sachen von Handgeben, und wurden ihme die Kosten so er dann Rosenbergischen [?] hatt, nit bezahlet, geschah im Anno 1434.\n\nTranslation: The Rosenbergs became enemies of the people of Hall. Lord Georg von Rosenberg warred against the people of Hall for more than 10 years and set fire to several of their villages. Because he achieved little, he finally had to settle with them without payment. The settlement was made at Hall at the Landtag. He had many nobles with him, but the people of Hall had many nobles in the countryside who were also citizens and sided with the town. So he had to give up the matter, and the costs he had incurred were not reimbursed. This happened in the year 1434.",
       "facts": [
         {
           "subject": "The von Rosenberg family",

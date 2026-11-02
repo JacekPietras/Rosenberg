@@ -168,7 +168,8 @@ support. An ID-like string that matches no ID is a warning.
 
 - `title`: the image or armorial name, without date or folio.
 - `date`: `YYYY` or `YYYY-YYYY` (legacy `year` is still read). `folio` without
-  a `fol.` prefix.
+  a `fol.` prefix; `page` is a string giving a page number or a labeled viewer
+  page identifier (such as `Internet Archive leaf n885`).
 - `label`: a string or array (`armorial`, `effigy`, review labels such as
   `new`); keep `armorial`/`effigy` when adding review labels. `tags`: filters.
 - `url`: an image URL, a Google Drive thumbnail URL, or the filename of an image
