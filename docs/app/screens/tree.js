@@ -259,7 +259,10 @@ export function setupPeopleTreeZoom(root = document) {
   const applyScale = () => {
     svg.style.width = `${viewWidth * scale}px`;
     svg.style.height = `${viewHeight * scale}px`;
+    svg.style.margin = 'auto';
   };
+  scale = Math.min(1, (viewport.clientWidth - 32) / viewWidth, (viewport.clientHeight - 32) / viewHeight);
+  scale = Math.max(minScale, scale);
   const zoomAt = (factor, clientX = viewport.getBoundingClientRect().left + viewport.clientWidth / 2, clientY = viewport.getBoundingClientRect().top + viewport.clientHeight / 2) => {
     const bounds = viewport.getBoundingClientRect();
     const x = viewport.scrollLeft + clientX - bounds.left;
