@@ -166,6 +166,17 @@ export function createDataLoader({
       state.familyGraph.checking = false;
       state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
       const shouldRebuild = !state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild && !backgroundRebuild;
+      if (shouldRebuild && family.tree) {
+        // Keep displaying the saved graph while its replacement is calculated.
+        // Verification still controls whether we start the rebuild; it should
+        // not blank a usable saved tree during that work.
+        state.familyGraph = buildRelationshipGraph(state.personRecords, {
+          tree: family.tree,
+          view: state.familyView,
+          verification: { valid: true, reason: '' },
+        });
+        state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
+      }
       state.familyGraph.rebuilding = Boolean((autoRebuild && backgroundRebuild) || shouldRebuild);
       state.treeLoading = false;
       if (remapSourcePerson(state, lastVerifiedGraph)) onPersonReassigned();
