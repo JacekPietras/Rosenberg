@@ -3,6 +3,18 @@ import { findPlaceByName } from '../data/entities.js?v=87';
 import { resolvePerson } from '../data/relationships.js?v=11';
 
 export function createMarkupRenderer({ state }) {
+  const frakturUpper = [...'𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ'];
+  const frakturLower = [...'𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭𝔮𝔯𝔰𝔱𝔲𝔳𝔴𝔵𝔶𝔷'];
+  function frakturMarkup(value) {
+    const converted = [...value].map((character) => {
+      const code = character.codePointAt(0);
+      if (code >= 65 && code <= 90) return frakturUpper[code - 65];
+      if (code >= 97 && code <= 122) return frakturLower[code - 97];
+      return character;
+    }).join('');
+    return `<span class="fraktur">${escapeHtml(converted)}</span>`;
+  }
+
   function linkedMarkup(value = '', linkEntities = true) {
     if (!linkEntities) return String(value);
     const tokens = []; const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
@@ -29,10 +41,15 @@ export function createMarkupRenderer({ state }) {
   }
 
   function inlineMarkup(value = '', linkEntities = true) {
-    const tokens = []; const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
-    let text = escapeHtml(value).replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => token(`<a href="${url}" target="_blank" rel="noreferrer">${linkedMarkup(label, linkEntities)}</a>`));
-    text = linkedMarkup(text, linkEntities).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-    return text.replace(/\u0000(\d+)\u0000/g, (match, index) => tokens[Number(index)] ?? match);
+    const renderPlainText = (plainText) => {
+      const tokens = []; const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
+      let text = escapeHtml(plainText).replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => token(`<a href="${url}" target="_blank" rel="noreferrer">${linkedMarkup(label, linkEntities)}</a>`));
+      text = linkedMarkup(text, linkEntities).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      return text.replace(/\u0000(\d+)\u0000/g, (match, index) => tokens[Number(index)] ?? match);
+    };
+    return String(value).split(/(`[^`]+`)/g).map((part) =>
+      part.startsWith('`') && part.endsWith('`') ? frakturMarkup(part.slice(1, -1)) : renderPlainText(part),
+    ).join('');
   }
 
   function personMarkup(value = '') {

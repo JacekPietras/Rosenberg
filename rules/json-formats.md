@@ -106,6 +106,11 @@ support. An ID-like string that matches no ID is a warning.
 | `abstract` | English summary of the original |
 | `english` | English translation; the source itself when it is the only text field |
 
+In book and document text, wrap a passage in single backticks to display its
+Latin letters as Unicode Fraktur, for example `` `Ebirhardus` `` renders as
+“𝔈𝔟𝔦𝔯𝔥𝔞𝔯𝔡𝔲𝔰”. The stored text keeps the backticks as the marker; digits,
+punctuation, and spaces inside the passage remain unchanged.
+
 ## Book and notes JSON
 
 ```json
