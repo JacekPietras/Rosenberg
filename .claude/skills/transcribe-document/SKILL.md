@@ -9,7 +9,7 @@ If the user says the document is not Rosenberg-related, do only steps 1 and 4 (t
 
 ## 1. Transcribe the image
 
-Read the image. Transcribe it line by line, keeping the exact original vernacular spelling (Middle High German / Early New High German, or Latin). Expand scribal abbreviations inside brackets `[ ]`. Mark uncertain letters or words `[?]` and lost or illegible text `[…]`.
+Read the image. Transcribe it line by line, keeping the exact original vernacular spelling (Middle High German / Early New High German, or Latin). Preserve each line break in the transcription as the literal `\n` separator; do not join separate lines into continuous prose. Expand scribal abbreviations inside brackets `[ ]`. Mark uncertain letters or words `[?]` and lost or illegible text `[…]`.
 
 For each ambiguous letter, note the paleographical reasoning briefly: minim clusters (`n`/`u`/`m`/`i`), long `s` versus `f`, `b` versus `l`, `c` versus `t`, `u` versus `v`, nasal strokes, and similar. Give a confidence level. Do not guess to produce fluent text. Words hidden by stains or folds stay `[…]`.
 
@@ -43,7 +43,7 @@ Where Transkribus produces nonsense, prefer your own reading or the standard for
 Store the result in `german` (or `latin`):
 - Keep the original spelling, including `v`/`u`, `ss`/`sz` and doubled consonants. Do not modernize.
 - Routine abbreviations are expanded silently, with no brackets, so that place and person matching works. Keep `[…]` for gaps and `[?]` for doubtful words.
-- Plain text only, as one string.
+- Plain text only, as one string, with original line breaks represented by literal `\n` separators.
 
 If the user corrects a reading afterwards, update the field and everything derived from it.
 

@@ -27,11 +27,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   const collectionPosition = $('#image-lightbox-collection-position');
   const closeButton = $('#image-lightbox-close');
   const cropButton = $('#image-lightbox-crop');
-  const cropDownload = $('#image-lightbox-crop-download');
-  const cropCancel = $('#image-lightbox-crop-cancel');
   const cropStatus = $('#image-lightbox-crop-status');
-  const cropOverlay = $('#image-lightbox-crop-overlay');
-  const cropBox = cropOverlay?.querySelector('.image-lightbox-crop-box');
   if (!lightbox || !image || !stage || !annotations || !closeButton) return;
 
   const editable = !location.hostname.endsWith('github.io');
@@ -48,51 +44,12 @@ export function setupImageLightbox({ state, repository, rerender }) {
       removeConfirmation.showModal();
     });
   };
-  const regionNameDialog = document.createElement('dialog');
-  regionNameDialog.className = 'region-name-dialog';
-  regionNameDialog.setAttribute('aria-labelledby', 'region-name-title');
-  regionNameDialog.innerHTML = '<form method="dialog"><label id="region-name-title" for="region-name-input">Name this image region:</label><input id="region-name-input" autocomplete="off"><div class="region-name-suggestions" aria-label="Existing region names"></div><div class="region-name-actions"><button value="cancel" type="button">Cancel</button><button value="confirm" type="submit">OK</button></div></form>';
-  document.body.append(regionNameDialog);
-  const regionNameInput = regionNameDialog.querySelector('input');
-  const regionNameSuggestions = regionNameDialog.querySelector('.region-name-suggestions');
-  const askRegionName = () => {
-    if (typeof regionNameDialog.showModal !== 'function') return Promise.resolve(window.prompt('Name this image region:'));
-    const names = new Set();
-    const collect = (value) => {
-      if (!value || typeof value !== 'object') return;
-      if (Array.isArray(value.regions)) value.regions.forEach((region) => { if (typeof region?.name === 'string' && region.name.trim()) names.add(region.name.trim()); });
-      Object.values(value).forEach(collect);
-    };
-    state.documents.forEach(collect);
-    regionNameSuggestions.replaceChildren(...[...names].sort((a, b) => a.localeCompare(b)).map((name) => {
-      const button = document.createElement('button');
-      button.type = 'button'; button.textContent = name;
-      button.addEventListener('click', () => { regionNameInput.value = name; regionNameDialog.close('confirm'); });
-      return button;
-    }));
-    regionNameInput.value = '';
-    regionNameDialog.returnValue = '';
-    return new Promise((resolve) => {
-      regionNameDialog.addEventListener('close', () => resolve(regionNameDialog.returnValue === 'confirm' ? regionNameInput.value : null), { once: true });
-      regionNameDialog.showModal();
-      regionNameInput.focus();
-    });
-  };
-  regionNameDialog.querySelector('button[value="cancel"]').addEventListener('click', () => regionNameDialog.close('cancel'));
   let cropSource = '';
   let cropFilename = 'image-crop.png';
-  let cropSelection = null;
-  let cropDrag = null;
   let cropGeneration = 0;
   const stopCrop = () => {
     cropGeneration += 1;
-    cropSelection = null; cropDrag = null;
     lightbox.classList.remove('is-cropping');
-    if (cropOverlay) cropOverlay.hidden = true;
-    if (cropBox) cropBox.hidden = true;
-    if (cropButton) cropButton.hidden = false;
-    if (cropDownload) { cropDownload.hidden = true; cropDownload.disabled = true; }
-    if (cropCancel) cropCancel.hidden = true;
     if (cropStatus) cropStatus.textContent = '';
   };
   let context = null;
@@ -137,7 +94,6 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const width = image.naturalWidth * scale; const height = image.naturalHeight * scale;
     annotations.style.left = `${(stage.clientWidth - width) / 2}px`; annotations.style.top = `${(stage.clientHeight - height) / 2}px`;
     annotations.style.width = `${width}px`; annotations.style.height = `${height}px`;
-    if (cropOverlay) Object.assign(cropOverlay.style, { left: annotations.style.left, top: annotations.style.top, width: `${width}px`, height: `${height}px` });
     if (regionOverlay) {
       Object.assign(regionOverlay.style, { left: annotations.style.left, top: annotations.style.top, width: `${width}px`, height: `${height}px` });
     }
@@ -164,6 +120,8 @@ export function setupImageLightbox({ state, repository, rerender }) {
   };
   const updateControls = () => {
     const selected = selectedIndex === null ? null : currentSeals()[selectedIndex];
+    const addSeal = $('#image-lightbox-add-seal');
+    if (addSeal) addSeal.hidden = !context?.path?.startsWith('data/documents/');
     const controls = $('#image-lightbox-seal-selected-controls'); const remove = $('#image-lightbox-remove-seal');
     if (controls) controls.hidden = !selected; if (remove) remove.hidden = !selected;
     const removeImage = $('#image-lightbox-remove-image'); if (removeImage) removeImage.hidden = Boolean(context?.entryImage);
@@ -171,6 +129,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => { input.disabled = !selected; input.checked = Boolean(selected && SEAL_TYPES.has(selected.type) && selected.type === input.value); });
     if (collectionNavigation) collectionNavigation.hidden = !collectionLinks || collectionLinks.links.length < 2;
     if (collectionPosition) collectionPosition.textContent = collectionLinks ? `${collectionLinks.index + 1} / ${collectionLinks.links.length}` : '';
+    if (cropButton) cropButton.hidden = !context?.path?.startsWith('data/documents/') || !currentRegions().some((region) => region?.name === 'text');
   };
   const updateFocusOverlay = () => {
     regionOverlay?.classList.toggle('is-visible', regionMode);
@@ -229,7 +188,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const filenameBase = [documentTitle, entry?.title, path?.split('/').pop()?.replace(/\.json$/i, '')]
       .map((value) => String(value || '').replace(/[<>:"/\\|?*\x00-\x1f]/g, ' ').replace(/\s+/g, ' ').trim().replace(/[. ]+$/g, '').slice(0, 150))
       .find(Boolean) || 'image';
-    cropFilename = `${filenameBase}-crop.png`;
+    cropFilename = `${filenameBase}-text.png`;
     let node = entry && (Array.isArray(entry.img) ? entry.img[imageIndex] : entry.img);
     visibleRegions = node && typeof node === 'object' ? node.regions || [] : entry?.regions || [];
     if (node && typeof node !== 'object' && entry) { node = { src: node }; if (Array.isArray(entry.img)) entry.img[imageIndex] = node; else entry.img = node; }
@@ -323,49 +282,15 @@ export function setupImageLightbox({ state, repository, rerender }) {
     render();
     await save();
   });
-  cropButton?.addEventListener('click', () => {
-    if (!image.naturalWidth || !cropSource) return;
-    regionMode = false; regionDrag = null; selectedIndex = null; magnifierPoint = null;
-    render();
-    lightbox.classList.add('is-cropping');
-    cropButton.hidden = true; cropDownload.hidden = false; cropCancel.hidden = false;
-    cropOverlay.hidden = false;
-    cropStatus.textContent = 'Drag over the image to select an area.';
-  });
-  cropCancel?.addEventListener('click', stopCrop);
-  const cropPoint = (event) => {
-    const rect = cropOverlay.getBoundingClientRect();
-    return { x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)), y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)) };
-  };
-  const updateCropSelection = (start, end) => {
-    cropSelection = { x: Math.min(start.x, end.x), y: Math.min(start.y, end.y), width: Math.abs(end.x - start.x), height: Math.abs(end.y - start.y) };
-    Object.assign(cropBox.style, { left: `${cropSelection.x * 100}%`, top: `${cropSelection.y * 100}%`, width: `${cropSelection.width * 100}%`, height: `${cropSelection.height * 100}%` });
-    cropBox.hidden = false;
-    cropDownload.disabled = cropSelection.width === 0 || cropSelection.height === 0;
-  };
-  cropOverlay?.addEventListener('pointerdown', (event) => {
-    if (event.button !== 0 || !cropOverlay.clientWidth || !cropOverlay.clientHeight) return;
-    cropDrag = { pointerId: event.pointerId, start: cropPoint(event) };
-    cropOverlay.setPointerCapture(event.pointerId);
-    updateCropSelection(cropDrag.start, cropDrag.start);
-    event.preventDefault();
-  });
-  cropOverlay?.addEventListener('pointermove', (event) => {
-    if (cropDrag?.pointerId === event.pointerId) updateCropSelection(cropDrag.start, cropPoint(event));
-  });
-  cropOverlay?.addEventListener('pointerup', (event) => {
-    if (cropDrag?.pointerId !== event.pointerId) return;
-    updateCropSelection(cropDrag.start, cropPoint(event)); cropDrag = null;
-    cropStatus.textContent = cropDownload.disabled ? 'Drag over the image to select an area.' : 'Drag again to change the selection.';
-  });
-  cropOverlay?.addEventListener('pointercancel', () => { cropDrag = null; });
-  cropDownload?.addEventListener('click', async () => {
-    if (!cropSelection || cropDownload.disabled) return;
-    const generation = cropGeneration;
-    const selection = { ...cropSelection };
-    cropDownload.disabled = true; cropStatus.textContent = 'Loading original image…';
+  cropButton?.addEventListener('click', async () => {
+    const region = currentRegions().find((item) => item?.name === 'text');
+    if (!region || !image.naturalWidth || !cropSource) return;
+    const generation = ++cropGeneration;
+    cropButton.disabled = true; cropStatus.textContent = 'Cropping text region…';
+    const selection = { x: Number(region.x), y: Number(region.y), width: Number(region.width), height: Number(region.height) };
     let bitmap;
     try {
+      if (!Object.values(selection).every(Number.isFinite) || selection.width <= 0 || selection.height <= 0) throw new Error('The text region has invalid coordinates.');
       const response = await fetch(cropSource, { referrerPolicy: 'no-referrer' });
       if (!response.ok) throw new Error('Could not load the original image.');
       bitmap = await createImageBitmap(await response.blob());
@@ -383,13 +308,12 @@ export function setupImageLightbox({ state, repository, rerender }) {
       const url = URL.createObjectURL(blob); const link = document.createElement('a');
       link.href = url; link.download = cropFilename; link.click();
       setTimeout(() => URL.revokeObjectURL(url), 60000);
-      stopCrop();
+      cropStatus.textContent = '';
     } catch (error) {
       if (generation !== cropGeneration) return;
       console.error('Could not crop the original image', error);
       cropStatus.textContent = 'Could not access the original image for cropping.';
-      cropDownload.disabled = false;
-    } finally { bitmap?.close(); }
+    } finally { bitmap?.close(); cropButton.disabled = false; }
   });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
@@ -422,8 +346,8 @@ export function setupImageLightbox({ state, repository, rerender }) {
     if (!regionDrag.moved && !regionDrag.secondClick) { regionDrag.waiting = true; return; }
     const region = drawRegion(regionDrag.start, regionPoint(event));
     regionDrag = null;
-    const name = await askRegionName();
-    if (name?.trim()) { const owner = context?.node || context?.entry; if (owner) { if (!Array.isArray(owner.regions)) owner.regions = []; owner.regions.push({ ...region, name: name.trim() }); render(); await save(); } }
+    const owner = context?.node || context?.entry;
+    if (owner) { if (!Array.isArray(owner.regions)) owner.regions = []; owner.regions.push({ ...region, name: 'text' }); render(); await save(); }
     regionMode = false;
     regionDrag = null; ignoreFocusClick = true; updateFocusOverlay();
   });
