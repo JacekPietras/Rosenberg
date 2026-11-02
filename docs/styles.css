@@ -355,6 +355,7 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .image-lightbox.is-transcription-mode .image-lightbox-crop-controls,
 .image-lightbox.is-transcription-mode .image-lightbox-editor,
 .image-lightbox.is-transcription-mode .image-lightbox-description { display: none; }
+.image-lightbox.is-transcription-mode .image-lightbox-annotations { display: none; }
 .image-lightbox.is-transcription-mode { display: flex; gap: 0; padding: 1rem; }
 .image-lightbox.is-transcription-mode .image-lightbox-stage,
 .image-lightbox.is-transcription-mode .image-lightbox-transcription-text { width: 50%; height: 100%; min-width: 0; }

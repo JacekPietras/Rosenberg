@@ -50,8 +50,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   let cropSource = '';
   let cropFilename = 'image-crop.png';
   let cropGeneration = 0;
-  let transcriptionUrl = '';
-  let transcriptionOriginalSrc = '';
+  let transcriptionModeActive = false;
   let transcriptionLanguage = '';
   let transcriptionZoom = 1;
   let transcriptionFocus = { x: 0.5, y: 0.5 };
@@ -61,8 +60,27 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const scale = Math.min(width / image.naturalWidth, height / image.naturalHeight);
     const fittedWidth = image.naturalWidth * scale, fittedHeight = image.naturalHeight * scale;
     const left = (width - fittedWidth) / 2, top = (height - fittedHeight) / 2;
-    const x = Math.max(width - (left + fittedWidth) * transcriptionZoom, Math.min(-left * transcriptionZoom, width / 2 - (left + transcriptionFocus.x * fittedWidth) * transcriptionZoom));
-    const y = Math.max(height - (top + fittedHeight) * transcriptionZoom, Math.min(-top * transcriptionZoom, height / 2 - (top + transcriptionFocus.y * fittedHeight) * transcriptionZoom));
+    const targetX = width / 2 - (left + transcriptionFocus.x * fittedWidth) * transcriptionZoom;
+    const targetY = height / 2 - (top + transcriptionFocus.y * fittedHeight) * transcriptionZoom;
+    const region = currentRegions().find((item) => item?.name === 'text');
+    const regionX = Number(region?.x), regionY = Number(region?.y);
+    const regionWidth = Number(region?.width), regionHeight = Number(region?.height);
+    const regionLeft = left + regionX * fittedWidth, regionTop = top + regionY * fittedHeight;
+    const regionRight = regionLeft + regionWidth * fittedWidth, regionBottom = regionTop + regionHeight * fittedHeight;
+    const minX = regionWidth * fittedWidth * transcriptionZoom >= width
+      ? width - regionRight * transcriptionZoom
+      : width - (left + fittedWidth) * transcriptionZoom;
+    const maxX = regionWidth * fittedWidth * transcriptionZoom >= width
+      ? -regionLeft * transcriptionZoom
+      : -left * transcriptionZoom;
+    const minY = regionHeight * fittedHeight * transcriptionZoom >= height
+      ? height - regionBottom * transcriptionZoom
+      : height - (top + fittedHeight) * transcriptionZoom;
+    const maxY = regionHeight * fittedHeight * transcriptionZoom >= height
+      ? -regionTop * transcriptionZoom
+      : -top * transcriptionZoom;
+    const x = fittedWidth * transcriptionZoom <= width ? 0 : Math.max(minX, Math.min(maxX, targetX));
+    const y = fittedHeight * transcriptionZoom <= height ? 0 : Math.max(minY, Math.min(maxY, targetY));
     image.style.transformOrigin = '0 0';
     image.style.transform = `translate(${x}px, ${y}px) scale(${transcriptionZoom})`;
   };
@@ -73,12 +91,16 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const fittedWidth = image.naturalWidth * scale, fittedHeight = image.naturalHeight * scale;
     const left = rect.left + (rect.width - fittedWidth) / 2;
     const top = rect.top + (rect.height - fittedHeight) / 2;
+    const region = currentRegions().find((item) => item?.name === 'text');
+    const regionX = Number(region?.x), regionY = Number(region?.y);
+    const regionRight = regionX + Number(region?.width), regionBottom = regionY + Number(region?.height);
     transcriptionFocus = {
-      x: Math.max(0, Math.min(1, (event.clientX - left) / fittedWidth)),
-      y: Math.max(0, Math.min(1, (event.clientY - top) / fittedHeight)),
+      x: Math.max(Number.isFinite(regionX) ? regionX : 0, Math.min(Number.isFinite(regionRight) ? regionRight : 1, (event.clientX - left) / fittedWidth)),
+      y: Math.max(Number.isFinite(regionY) ? regionY : 0, Math.min(Number.isFinite(regionBottom) ? regionBottom : 1, (event.clientY - top) / fittedHeight)),
     };
   };
   const setTranscriptionMode = (active) => {
+    transcriptionModeActive = active;
     if (!active) {
       transcriptionZoom = 1;
       transcriptionFocus = { x: 0.5, y: 0.5 };
@@ -229,8 +251,6 @@ export function setupImageLightbox({ state, repository, rerender }) {
   if ($('#image-lightbox-editor')) $('#image-lightbox-editor').hidden = !editable;
   const openImageLink = (link) => {
     stopCrop();
-    if (transcriptionUrl) URL.revokeObjectURL(transcriptionUrl);
-    transcriptionUrl = ''; transcriptionOriginalSrc = '';
     setTranscriptionMode(false);
     if (transcriptionButton) { transcriptionButton.textContent = 'Transcription'; transcriptionButton.disabled = false; }
     const path = link.dataset.documentPath; const entryIndex = Number(link.dataset.entryIndex); const imageIndex = Number(link.dataset.imageIndex); const entry = path ? state.documents.get(path)?.entries?.[entryIndex] : null;
@@ -324,7 +344,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   };
   collectionPrevious?.addEventListener('click', () => moveCollectionCover(-1));
   collectionNext?.addEventListener('click', () => moveCollectionCover(1));
-  window.addEventListener('resize', () => { updateDescriptionLayout(); updateGeometry(); updatePreview(); }, { passive: true });
+  window.addEventListener('resize', () => { updateDescriptionLayout(); updateGeometry(); updatePreview(); if (transcriptionModeActive) applyTranscriptionZoom(); }, { passive: true });
   regionButton?.addEventListener('click', () => { regionMode = !regionMode; regionDrag = null; if (regionBox) regionBox.removeAttribute('style'); ignoreFocusClick = false; selectedIndex = null; updateFocusOverlay(); });
   removeRegionButton?.addEventListener('click', async () => {
     const regions = currentRegions();
@@ -368,52 +388,22 @@ export function setupImageLightbox({ state, repository, rerender }) {
     } finally { bitmap?.close(); cropButton.disabled = false; }
   });
   transcriptionButton?.addEventListener('click', async () => {
-    if (transcriptionUrl) {
+    if (transcriptionModeActive) {
       if (context?.entry && transcriptionInput) {
         context.entry[transcriptionLanguage] = transcriptionInput.value;
         if (!await save()) return;
       }
-      image.src = transcriptionOriginalSrc;
-      URL.revokeObjectURL(transcriptionUrl);
-      transcriptionUrl = '';
-      transcriptionOriginalSrc = '';
       setTranscriptionMode(false);
       transcriptionButton.textContent = 'Transcription';
       return;
     }
     const region = currentRegions().find((item) => item?.name === 'text');
-    if (!region || !cropSource) return;
-    transcriptionButton.disabled = true;
-    try {
-      const selection = { x: Number(region.x), y: Number(region.y), width: Number(region.width), height: Number(region.height) };
-      if (!Object.values(selection).every(Number.isFinite) || selection.width <= 0 || selection.height <= 0) throw new Error('The text region has invalid coordinates.');
-      const response = await fetch(cropSource, { referrerPolicy: 'no-referrer' });
-      if (!response.ok) throw new Error('Could not load the original image.');
-      const bitmap = await createImageBitmap(await response.blob());
-      try {
-        const x = Math.floor(selection.x * bitmap.width), y = Math.floor(selection.y * bitmap.height);
-        const right = Math.min(bitmap.width, Math.ceil((selection.x + selection.width) * bitmap.width));
-        const bottom = Math.min(bitmap.height, Math.ceil((selection.y + selection.height) * bitmap.height));
-        const canvas = document.createElement('canvas'); canvas.width = right - x; canvas.height = bottom - y;
-        const drawing = canvas.getContext('2d');
-        if (!drawing || !canvas.width || !canvas.height) throw new Error('Could not create the transcription view.');
-        drawing.drawImage(bitmap, x, y, canvas.width, canvas.height, 0, 0, canvas.width, canvas.height);
-        const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
-        if (!blob) throw new Error('Could not create the transcription view.');
-        transcriptionOriginalSrc = image.src;
-        transcriptionUrl = URL.createObjectURL(blob);
-        image.src = transcriptionUrl;
-        transcriptionZoom = 1;
-        transcriptionFocus = { x: 0.5, y: 0.5 };
-        image.style.transform = '';
-        image.style.transformOrigin = '';
-        setTranscriptionMode(true);
-        transcriptionButton.textContent = 'Full image';
-      } finally { bitmap.close(); }
-    } catch (error) {
-      console.error('Could not show the transcription region', error);
-      setStatus(error?.message || String(error), true);
-    } finally { transcriptionButton.disabled = false; }
+    if (!region) return;
+    transcriptionZoom = 1;
+    transcriptionFocus = { x: Number(region.x) + Number(region.width) / 2, y: Number(region.y) + Number(region.height) / 2 };
+    setTranscriptionMode(true);
+    applyTranscriptionZoom();
+    transcriptionButton.textContent = 'Full image';
   });
   stage.addEventListener('wheel', (event) => {
     if (!lightbox.classList.contains('is-transcription-mode')) return;
@@ -530,5 +520,5 @@ export function setupImageLightbox({ state, repository, rerender }) {
   descriptionClose?.addEventListener('click', () => { if (description) { description.hidden = true; updateDescriptionLayout(); } });
   lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
   lightbox.addEventListener('cancel', (event) => { event.preventDefault(); if (lightbox.classList.contains('is-cropping')) stopCrop(); else close(); });
-  lightbox.addEventListener('close', () => { stopCrop(); cropSource = ''; if (transcriptionUrl) URL.revokeObjectURL(transcriptionUrl); transcriptionUrl = ''; transcriptionOriginalSrc = ''; setTranscriptionMode(false); if (transcriptionButton) { transcriptionButton.textContent = 'Transcription'; transcriptionButton.disabled = false; transcriptionButton.hidden = true; } image.removeAttribute('src'); annotations.replaceChildren(); if (descriptionText) descriptionText.textContent = ''; if (description) description.hidden = true; stage.style.height = ''; if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing', 'has-pointer'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
+  lightbox.addEventListener('close', () => { stopCrop(); cropSource = ''; setTranscriptionMode(false); if (transcriptionButton) { transcriptionButton.textContent = 'Transcription'; transcriptionButton.disabled = false; transcriptionButton.hidden = true; } image.removeAttribute('src'); annotations.replaceChildren(); if (descriptionText) descriptionText.textContent = ''; if (description) description.hidden = true; stage.style.height = ''; if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing', 'has-pointer'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
 }
