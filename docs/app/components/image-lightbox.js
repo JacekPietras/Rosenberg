@@ -48,6 +48,37 @@ export function setupImageLightbox({ state, repository, rerender }) {
       removeConfirmation.showModal();
     });
   };
+  const regionNameDialog = document.createElement('dialog');
+  regionNameDialog.className = 'region-name-dialog';
+  regionNameDialog.setAttribute('aria-labelledby', 'region-name-title');
+  regionNameDialog.innerHTML = '<form method="dialog"><label id="region-name-title" for="region-name-input">Name this image region:</label><input id="region-name-input" autocomplete="off"><div class="region-name-suggestions" aria-label="Existing region names"></div><div class="region-name-actions"><button value="cancel" type="button">Cancel</button><button value="confirm" type="submit">OK</button></div></form>';
+  document.body.append(regionNameDialog);
+  const regionNameInput = regionNameDialog.querySelector('input');
+  const regionNameSuggestions = regionNameDialog.querySelector('.region-name-suggestions');
+  const askRegionName = () => {
+    if (typeof regionNameDialog.showModal !== 'function') return Promise.resolve(window.prompt('Name this image region:'));
+    const names = new Set();
+    const collect = (value) => {
+      if (!value || typeof value !== 'object') return;
+      if (Array.isArray(value.regions)) value.regions.forEach((region) => { if (typeof region?.name === 'string' && region.name.trim()) names.add(region.name.trim()); });
+      Object.values(value).forEach(collect);
+    };
+    state.documents.forEach(collect);
+    regionNameSuggestions.replaceChildren(...[...names].sort((a, b) => a.localeCompare(b)).map((name) => {
+      const button = document.createElement('button');
+      button.type = 'button'; button.textContent = name;
+      button.addEventListener('click', () => { regionNameInput.value = name; regionNameDialog.close('confirm'); });
+      return button;
+    }));
+    regionNameInput.value = '';
+    regionNameDialog.returnValue = '';
+    return new Promise((resolve) => {
+      regionNameDialog.addEventListener('close', () => resolve(regionNameDialog.returnValue === 'confirm' ? regionNameInput.value : null), { once: true });
+      regionNameDialog.showModal();
+      regionNameInput.focus();
+    });
+  };
+  regionNameDialog.querySelector('button[value="cancel"]').addEventListener('click', () => regionNameDialog.close('cancel'));
   let cropSource = '';
   let cropFilename = 'image-crop.png';
   let cropSelection = null;
@@ -378,7 +409,8 @@ export function setupImageLightbox({ state, repository, rerender }) {
     if (!regionDrag || event.pointerId !== regionDrag.pointerId) return;
     if (!regionMode) { regionDrag = null; return; }
     const region = drawRegion(regionDrag.start, regionPoint(event));
-    const name = window.prompt('Name this image region:');
+    regionDrag = null;
+    const name = await askRegionName();
     if (name?.trim()) { const owner = context?.node || context?.entry; if (owner) { if (!Array.isArray(owner.regions)) owner.regions = []; owner.regions.push({ ...region, name: name.trim() }); render(); await save(); } }
     regionMode = false;
     regionDrag = null; ignoreFocusClick = true; updateFocusOverlay();

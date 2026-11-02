@@ -92,7 +92,16 @@
       "date": "1501-1600",
       "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185533 — https://digital.blb-karlsruhe.de/i3f/v20/4185533/full/max/0/default.jpg — https://drive.google.com/file/d/1Ljz7-ej2yv5p-b88aFmAKobHzfs0Il77/view",
       "description": "Page 235. The BLB catalog dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1Ljz7-ej2yv5p-b88aFmAKobHzfs0Il77&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1Ljz7-ej2yv5p-b88aFmAKobHzfs0Il77&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4731,
+          "y": 0.0976,
+          "width": 0.4091,
+          "height": 0.4045,
+          "name": "Uissigheim"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -100,7 +109,16 @@
       "date": "1501-1600",
       "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185505 — https://digital.blb-karlsruhe.de/i3f/v20/4185505/full/max/0/default.jpg — https://drive.google.com/file/d/1rOWxMaaUGIR9ia6_QRfc7rqtkYh0mxNK/view",
       "description": "Page 207. The BLB catalog dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1rOWxMaaUGIR9ia6_QRfc7rqtkYh0mxNK&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1rOWxMaaUGIR9ia6_QRfc7rqtkYh0mxNK&sz=w1600",
+      "regions": [
+        {
+          "x": 0.071,
+          "y": 0.0843,
+          "width": 0.4081,
+          "height": 0.4003,
+          "name": "not Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -108,7 +126,16 @@
       "date": "1501-1600",
       "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185499 — https://digital.blb-karlsruhe.de/i3f/v20/4185499/full/max/0/default.jpg — https://drive.google.com/file/d/1w0SEVCwP8fjheBNtKW-JIPEJBCt25WcO/view",
       "description": "Page 201. The BLB catalog dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1w0SEVCwP8fjheBNtKW-JIPEJBCt25WcO&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1w0SEVCwP8fjheBNtKW-JIPEJBCt25WcO&sz=w1600",
+      "regions": [
+        {
+          "x": 0.1368,
+          "y": 0.5288,
+          "width": 0.3762,
+          "height": 0.4263,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -116,7 +143,16 @@
       "date": "1500-1599",
       "source": "https://www.loc.gov/resource/rbc.2011rosen0017/?sp=189 — https://www.loc.gov/item/49038313/ — https://tile.loc.gov/image-services/iiif/service:rbc:rbc0001:2011:2011rosen0017:0189/full/full/0/default.jpg — https://drive.google.com/file/d/1pEjttrpJTPesc7wIXUP_M74Hw00yYeTu/view",
       "description": "Image 189. The Library of Congress catalog dates the manuscript to [15--]. Credit: Library of Congress, Rare Book and Special Collections Division.",
-      "url": "https://drive.google.com/thumbnail?id=1pEjttrpJTPesc7wIXUP_M74Hw00yYeTu&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1pEjttrpJTPesc7wIXUP_M74Hw00yYeTu&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0283,
+          "y": 0.0646,
+          "width": 0.3656,
+          "height": 0.434,
+          "name": "swans"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -124,7 +160,16 @@
       "date": "1501-1600",
       "source": "https://digital.blb-karlsruhe.de/blbhs/content/pageview/4185407 — https://digital.blb-karlsruhe.de/i3f/v20/4185407/full/max/0/default.jpg — https://drive.google.com/file/d/1tijyc1sRBIW_5HIMmmTKeFCyAUuWsWfo/view",
       "description": "Page 111. The BLB catalog dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1tijyc1sRBIW_5HIMmmTKeFCyAUuWsWfo&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1tijyc1sRBIW_5HIMmmTKeFCyAUuWsWfo&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4721,
+          "y": 0.0456,
+          "width": 0.3831,
+          "height": 0.4551,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -133,7 +178,16 @@
       "folio": "91v",
       "source": "https://dlib.gnm.de/item/Hs6599/196 — https://dlib.gnm.de/item/Hs6599/196/jpg/2000 — https://drive.google.com/file/d/1YRQ3TfDB8iuWsCW0Itbs1iYrL9vqXkyC/view",
       "description": "The GNM catalog dates the manuscript to 1501–1600.",
-      "url": "https://drive.google.com/thumbnail?id=1YRQ3TfDB8iuWsCW0Itbs1iYrL9vqXkyC&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1YRQ3TfDB8iuWsCW0Itbs1iYrL9vqXkyC&sz=w1600",
+      "regions": [
+        {
+          "x": 0.5974,
+          "y": 0.1103,
+          "width": 0.306,
+          "height": 0.3778,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -141,7 +195,16 @@
       "date": "1501-1600",
       "source": "https://archive.org/details/bnf_ms_allemand_304/page/n885/mode/1up — https://drive.google.com/file/d/1K6UWJuK9deBtC3uEo-yRwO9nTjszwoV4/view",
       "description": "Internet Archive leaf n885. The Internet Archive description dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1K6UWJuK9deBtC3uEo-yRwO9nTjszwoV4&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1K6UWJuK9deBtC3uEo-yRwO9nTjszwoV4&sz=w1600",
+      "regions": [
+        {
+          "x": 0.5458,
+          "y": 0.1004,
+          "width": 0.2468,
+          "height": 0.4171,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -149,7 +212,16 @@
       "date": "1501-1600",
       "source": "https://archive.org/details/bnf_ms_allemand_304/page/n876/mode/1up — https://drive.google.com/file/d/1XVaX0p4rR5VcCA1o2jI0B9UPBz3K3rq7/view",
       "description": "Internet Archive leaf n876. The Internet Archive description dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1XVaX0p4rR5VcCA1o2jI0B9UPBz3K3rq7&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1XVaX0p4rR5VcCA1o2jI0B9UPBz3K3rq7&sz=w1600",
+      "regions": [
+        {
+          "x": 0.1728,
+          "y": 0.5204,
+          "width": 0.2865,
+          "height": 0.4403,
+          "name": "not Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -157,7 +229,16 @@
       "date": "1501-1600",
       "source": "https://archive.org/details/bnf_ms_allemand_304/page/n693/mode/1up — https://drive.google.com/file/d/1zpxszRshImnC05UZ7E9iu2ZDLPbRICQp/view",
       "description": "Internet Archive leaf n693. The Internet Archive description dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1zpxszRshImnC05UZ7E9iu2ZDLPbRICQp&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1zpxszRshImnC05UZ7E9iu2ZDLPbRICQp&sz=w1600",
+      "regions": [
+        {
+          "x": 0.5468,
+          "y": 0.5049,
+          "width": 0.2511,
+          "height": 0.4508,
+          "name": "swans"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -165,7 +246,16 @@
       "date": "1501-1600",
       "source": "https://archive.org/details/bnf_ms_allemand_304/page/n107/mode/1up — https://drive.google.com/file/d/1_anmgRyVPsjEcMqDQpCJ4ugMZtSe8RVG/view",
       "description": "Internet Archive leaf n107. The Internet Archive description dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1_anmgRyVPsjEcMqDQpCJ4ugMZtSe8RVG&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1_anmgRyVPsjEcMqDQpCJ4ugMZtSe8RVG&sz=w1600",
+      "regions": [
+        {
+          "x": 0.3485,
+          "y": 0.1032,
+          "width": 0.2832,
+          "height": 0.4115,
+          "name": "not Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -173,7 +263,16 @@
       "date": "1501-1600",
       "source": "https://archive.org/details/bnf_ms_allemand_304/page/n574/mode/1up — https://drive.google.com/file/d/1QoPJjxl3VbZZP5uXhBvlxP2nse6870uG/view",
       "description": "Internet Archive leaf n574. The Internet Archive description dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1QoPJjxl3VbZZP5uXhBvlxP2nse6870uG&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1QoPJjxl3VbZZP5uXhBvlxP2nse6870uG&sz=w1600",
+      "regions": [
+        {
+          "x": 0.6296,
+          "y": 0.0751,
+          "width": 0.2632,
+          "height": 0.415,
+          "name": "Erligheim"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -214,7 +313,16 @@
       "folio": "304v",
       "source": "https://www.digitale-sammlungen.de/de/view/bsb00018706?page=674",
       "description": "Dated by the Bayerische Staatsbibliothek to the first half of the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1eLO2mfRfuRyxUdpvuhIvW4V6mpwTBUeW&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1eLO2mfRfuRyxUdpvuhIvW4V6mpwTBUeW&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4902,
+          "y": 0.0555,
+          "width": 0.2775,
+          "height": 0.2739,
+          "name": "swans"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -335,6 +443,15 @@
           "type": "generic",
           "content": "may have had many nobles with him at the Landtag in Hall.",
           "date": "1434"
+        }
+      ],
+      "regions": [
+        {
+          "x": 0.0834,
+          "y": 0.3036,
+          "width": 0.2083,
+          "height": 0.167,
+          "name": "Rosenberg"
         }
       ]
     },
