@@ -3,7 +3,7 @@
 Adam
 Adolf
 Alban, Albanus
-Albrecht, Albert
+Albrecht, Albert, Albertus, Adalbrecht
 Anselm, Anshelm
 Anton
 Aplo
@@ -29,15 +29,15 @@ Erkinger
 Ernst
 Franz, Franziskus
 Friedmann
-Friedrich, Friderich, Fritz, Fritze
+Friedrich, Friderich, Fridrich, Fridericus, Friderici, Friderico, Fritz, Fritze, Friz, Frize
 Frizo
 Georg, Gorg, Jörg
 Gerhard, Gerhardus
 Gotfried, Godefrid, Gottfried
 Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
-Hans, Johann, Hanemann, Hanse, Johannes, Hanns, Joannes
+Hans, Johann, Hanemann, Hanse, Johannes, Hanns, Joannes, Iohannes, Johanns
 Hartmut
-Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus
+Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus, Henricus, Hainrich, Heinrici, Heinrico
 Herbord
 Herman, Hermann
 Hieronymus, Jheronimus
@@ -46,11 +46,11 @@ Joachim
 Jost
 Kasimir
 Kilian
-Konrad, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat, Cunrad, Cunreth, Cunradus
+Konrad, Chuonrad, Chuonradus, Chunrat, Conradt, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat, Cunrad, Cunreth, Cunradus
 Kraft, Krafto
 Kuno
 Kunz, Cunz, Konz, Conz, Concz, Contz, Contze, Kontz, Kuntz, Cuntz, Cuncze, Guntz, Kunczen // are shortened versions of Konrad, but not used as it\! [1401 March 5]
-Leonhard, Leonhart, Lienhart
+Leonhard, Leonhart, Lienhart, Leonhardus, Leonardus, Lenhart, Linhard, Linhart
 Leopold, Lupold, Luppold
 Lorenz
 Ludwig
@@ -115,7 +115,7 @@ Elchana
 Elche
 Elchine
 Elichin
-Elisabeth, Elspeth, Elsbet, Else, Els, Eilse, Elsbeth
+Elisabeth, Elspeth, Elsbet, Else, Els, Eilse, Elsbeth, Elisabet, Elizabet, Elizabeth, Elyzabeth, Elspet
 Felicitas
 Gertraud
 Guda
@@ -125,10 +125,10 @@ Irmtraut, Irmendrut, Jrmtrudis, Irmentrurt
 Jeute
 Johanna
 Jutta, Juta, Guta, Gutta, Gute
-Katharina, Katherina, Katherine
+Katharina, Katherina, Katherine, Kathrein, Katerina
 Kunigunde, Kunnegunt, Kunnigund, Kunegunde, Kunegunt, Kunegunth, Konigunt, Kunigunda, Kunigundis, Cunegunda, Cunigunda, Conegundis
 Kunne
-Margaretha, Margretha, Margarete, Margarethe, Margret
+Margaretha, Margretha, Margarete, Margarethe, Margret, Margareta, Margreth, Margett
 Maria
 Osanna
 Ottilia, Ottilie
