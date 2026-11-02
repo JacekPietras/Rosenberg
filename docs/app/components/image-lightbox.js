@@ -27,6 +27,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   const collectionPosition = $('#image-lightbox-collection-position');
   const closeButton = $('#image-lightbox-close');
   const cropButton = $('#image-lightbox-crop');
+  const transcriptionButton = $('#image-lightbox-transcription');
   const cropStatus = $('#image-lightbox-crop-status');
   if (!lightbox || !image || !stage || !annotations || !closeButton) return;
 
@@ -47,6 +48,15 @@ export function setupImageLightbox({ state, repository, rerender }) {
   let cropSource = '';
   let cropFilename = 'image-crop.png';
   let cropGeneration = 0;
+  let transcriptionUrl = '';
+  let transcriptionOriginalSrc = '';
+  const setTranscriptionMode = (active) => {
+    annotations.hidden = active;
+    if (regionOverlay) regionOverlay.hidden = active;
+    lightbox.classList.toggle('is-transcription-mode', active);
+    if (active && preview) preview.hidden = true;
+    else updatePreview();
+  };
   const stopCrop = () => {
     cropGeneration += 1;
     lightbox.classList.remove('is-cropping');
@@ -130,6 +140,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     if (collectionNavigation) collectionNavigation.hidden = !collectionLinks || collectionLinks.links.length < 2;
     if (collectionPosition) collectionPosition.textContent = collectionLinks ? `${collectionLinks.index + 1} / ${collectionLinks.links.length}` : '';
     if (cropButton) cropButton.hidden = !context?.path?.startsWith('data/documents/') || !currentRegions().some((region) => region?.name === 'text');
+    if (transcriptionButton) transcriptionButton.hidden = !context?.path?.startsWith('data/documents/') || !currentRegions().some((region) => region?.name === 'text');
   };
   const updateFocusOverlay = () => {
     regionOverlay?.classList.toggle('is-visible', regionMode);
@@ -183,6 +194,10 @@ export function setupImageLightbox({ state, repository, rerender }) {
   if ($('#image-lightbox-editor')) $('#image-lightbox-editor').hidden = !editable;
   const openImageLink = (link) => {
     stopCrop();
+    if (transcriptionUrl) URL.revokeObjectURL(transcriptionUrl);
+    transcriptionUrl = ''; transcriptionOriginalSrc = '';
+    setTranscriptionMode(false);
+    if (transcriptionButton) { transcriptionButton.textContent = 'Transcription'; transcriptionButton.disabled = false; }
     const path = link.dataset.documentPath; const entryIndex = Number(link.dataset.entryIndex); const imageIndex = Number(link.dataset.imageIndex); const entry = path ? state.documents.get(path)?.entries?.[entryIndex] : null;
     const documentTitle = path ? state.documents.get(path)?.title : '';
     const filenameBase = [documentTitle, entry?.title, path?.split('/').pop()?.replace(/\.json$/i, '')]
@@ -315,6 +330,46 @@ export function setupImageLightbox({ state, repository, rerender }) {
       cropStatus.textContent = 'Could not access the original image for cropping.';
     } finally { bitmap?.close(); cropButton.disabled = false; }
   });
+  transcriptionButton?.addEventListener('click', async () => {
+    if (transcriptionUrl) {
+      image.src = transcriptionOriginalSrc;
+      URL.revokeObjectURL(transcriptionUrl);
+      transcriptionUrl = '';
+      transcriptionOriginalSrc = '';
+      setTranscriptionMode(false);
+      transcriptionButton.textContent = 'Transcription';
+      return;
+    }
+    const region = currentRegions().find((item) => item?.name === 'text');
+    if (!region || !cropSource) return;
+    transcriptionButton.disabled = true;
+    try {
+      const selection = { x: Number(region.x), y: Number(region.y), width: Number(region.width), height: Number(region.height) };
+      if (!Object.values(selection).every(Number.isFinite) || selection.width <= 0 || selection.height <= 0) throw new Error('The text region has invalid coordinates.');
+      const response = await fetch(cropSource, { referrerPolicy: 'no-referrer' });
+      if (!response.ok) throw new Error('Could not load the original image.');
+      const bitmap = await createImageBitmap(await response.blob());
+      try {
+        const x = Math.floor(selection.x * bitmap.width), y = Math.floor(selection.y * bitmap.height);
+        const right = Math.min(bitmap.width, Math.ceil((selection.x + selection.width) * bitmap.width));
+        const bottom = Math.min(bitmap.height, Math.ceil((selection.y + selection.height) * bitmap.height));
+        const canvas = document.createElement('canvas'); canvas.width = right - x; canvas.height = bottom - y;
+        const drawing = canvas.getContext('2d');
+        if (!drawing || !canvas.width || !canvas.height) throw new Error('Could not create the transcription view.');
+        drawing.drawImage(bitmap, x, y, canvas.width, canvas.height, 0, 0, canvas.width, canvas.height);
+        const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
+        if (!blob) throw new Error('Could not create the transcription view.');
+        transcriptionOriginalSrc = image.src;
+        transcriptionUrl = URL.createObjectURL(blob);
+        image.src = transcriptionUrl;
+        setTranscriptionMode(true);
+        transcriptionButton.textContent = 'Full image';
+      } finally { bitmap.close(); }
+    } catch (error) {
+      console.error('Could not show the transcription region', error);
+      setStatus(error?.message || String(error), true);
+    } finally { transcriptionButton.disabled = false; }
+  });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
   [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => $(selector)?.addEventListener('input', (event) => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) { seal[key] = Number(event.target.value); render(); } }));
@@ -414,5 +469,5 @@ export function setupImageLightbox({ state, repository, rerender }) {
   descriptionClose?.addEventListener('click', () => { if (description) { description.hidden = true; updateDescriptionLayout(); } });
   lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
   lightbox.addEventListener('cancel', (event) => { event.preventDefault(); if (lightbox.classList.contains('is-cropping')) stopCrop(); else close(); });
-  lightbox.addEventListener('close', () => { stopCrop(); cropSource = ''; image.removeAttribute('src'); annotations.replaceChildren(); if (descriptionText) descriptionText.textContent = ''; if (description) description.hidden = true; stage.style.height = ''; if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing', 'has-pointer'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
+  lightbox.addEventListener('close', () => { stopCrop(); cropSource = ''; if (transcriptionUrl) URL.revokeObjectURL(transcriptionUrl); transcriptionUrl = ''; transcriptionOriginalSrc = ''; setTranscriptionMode(false); if (transcriptionButton) { transcriptionButton.textContent = 'Transcription'; transcriptionButton.disabled = false; transcriptionButton.hidden = true; } image.removeAttribute('src'); annotations.replaceChildren(); if (descriptionText) descriptionText.textContent = ''; if (description) description.hidden = true; stage.style.height = ''; if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing', 'has-pointer'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
 }

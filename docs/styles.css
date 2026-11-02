@@ -352,6 +352,9 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .entry-image img { display: block; max-width: 100%; height: auto; max-height: 32rem; margin: 0 auto; }
 .image-link { display: block; cursor: zoom-in; }
 .image-lightbox { inset: 0; width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; box-sizing: border-box; overflow: hidden; padding: 3rem 1rem 1rem; color: var(--ink); background: var(--surface); border: 0; border-radius: 0; }
+.image-lightbox.is-transcription-mode .image-lightbox-crop-controls,
+.image-lightbox.is-transcription-mode .image-lightbox-editor,
+.image-lightbox.is-transcription-mode .image-lightbox-description { display: none; }
 .image-lightbox::backdrop { background: rgb(0 0 0 / .82); }
 .image-remove-confirmation { max-width: min(28rem, calc(100vw - 2rem)); padding: 1.25rem; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
 .image-remove-confirmation::backdrop { background: rgb(0 0 0 / .55); }
