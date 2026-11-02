@@ -360,9 +360,9 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .image-lightbox.is-transcription-mode .image-lightbox-stage,
 .image-lightbox.is-transcription-mode .image-lightbox-transcription-text { width: 50%; height: 100%; min-width: 0; }
 .image-lightbox.is-transcription-mode .image-lightbox-stage { flex: 1 1 50%; overflow: hidden; }
-.image-lightbox-transcription-text { box-sizing: border-box; flex: 1 1 50%; display: flex; min-height: 0; padding: 0; color: var(--ink); }
+.image-lightbox-transcription-text { position: relative; box-sizing: border-box; flex: 1 1 50%; min-height: 0; overflow: hidden; padding: 0; color: var(--ink); }
 .image-lightbox-transcription-text[hidden] { display: none; }
-.image-lightbox-transcription-text textarea { box-sizing: border-box; flex: 1; width: 100%; min-height: 0; margin: 0; resize: none; overflow: auto; white-space: pre; overflow-wrap: normal; word-break: normal; padding: 1rem; color: var(--ink); background: transparent; border: 0; outline: 0; font-family: inherit; line-height: 1.5; }
+.image-lightbox-transcription-text textarea { position: absolute; left: 1rem; box-sizing: border-box; width: calc(100% - 2rem); min-height: 0; margin: 0; resize: none; overflow-x: auto; overflow-y: hidden; white-space: pre; overflow-wrap: normal; word-break: normal; padding: .5rem; color: var(--ink); background: transparent; border: 0; outline: 0; font-family: inherit; line-height: 1.5; }
 .image-lightbox::backdrop { background: rgb(0 0 0 / .82); }
 .image-remove-confirmation { max-width: min(28rem, calc(100vw - 2rem)); padding: 1.25rem; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
 .image-remove-confirmation::backdrop { background: rgb(0 0 0 / .55); }
@@ -413,7 +413,7 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .image-lightbox-seal-preview-name { pointer-events: auto; }
 .image-lightbox.is-editable .image-lightbox-seal-preview.is-seal-preview,
 .image-lightbox.is-editable .image-lightbox-seal-preview.is-seal-preview .seal-crop { pointer-events: auto; cursor: move; touch-action: none; }
-.image-lightbox-close { position: absolute; top: .65rem; right: .75rem; display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; padding: 0; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 50%; cursor: pointer; font-size: 1.4rem; line-height: 1; }
+.image-lightbox-close { position: absolute; z-index: 10; top: .65rem; right: .75rem; display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; padding: 0; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 50%; cursor: pointer; font-size: 1.4rem; line-height: 1; }
 .image-lightbox-close-icon { position: relative; display: block; width: .75rem; height: .75rem; }
 .image-lightbox-close-icon::before, .image-lightbox-close-icon::after { position: absolute; top: 50%; left: 50%; width: .85rem; height: 2px; border-radius: 1px; background: currentColor; content: ''; transform: translate(-50%, -50%) rotate(45deg); }
 .image-lightbox-close-icon::after { transform: translate(-50%, -50%) rotate(-45deg); }

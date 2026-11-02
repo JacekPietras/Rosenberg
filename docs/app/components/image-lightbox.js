@@ -91,8 +91,17 @@ export function setupImageLightbox({ state, repository, rerender }) {
     image.style.transformOrigin = '0 0';
     image.style.transform = `translate(${x}px, ${y}px) scale(${transcriptionZoom})`;
     if (transcriptionInput) {
-      const relativeZoom = transcriptionZoom / transcriptionMinimumZoom();
-      transcriptionInput.style.fontSize = `${relativeZoom}rem`;
+      const region = currentRegions().find((item) => item?.name === 'text');
+      if (region && transcriptionModeActive) {
+        const regionTop = top + Number(region.y) * fittedHeight;
+        const regionHeight = Number(region.height) * fittedHeight * transcriptionZoom;
+        transcriptionInput.style.top = `${y + regionTop * transcriptionZoom}px`;
+        transcriptionInput.style.height = `${regionHeight}px`;
+        const lineCount = Math.max(1, transcriptionInput.value.split('\n').length);
+        const availableHeight = Math.max(1, regionHeight - 16);
+        const fitFontSize = availableHeight / (lineCount * 1.5);
+        transcriptionInput.style.fontSize = `${Math.max(1, Math.min(16 * transcriptionZoom, fitFontSize))}px`;
+      }
     }
   };
   const setTranscriptionFocusFromPointer = (event) => {
@@ -454,6 +463,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   });
   transcriptionInput?.addEventListener('input', () => {
     if (context?.entry && transcriptionLanguage) context.entry[transcriptionLanguage] = transcriptionInput.value;
+    if (transcriptionModeActive) applyTranscriptionZoom();
   });
   transcriptionInput?.addEventListener('change', () => { if (context?.entry) save(); });
   transcriptionInput?.addEventListener('wheel', (event) => {
@@ -466,7 +476,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     syncTranscriptionTextToImageFocus();
   }, { passive: false });
   transcriptionInput?.addEventListener('pointermove', (event) => {
-    if (!transcriptionModeActive || transcriptionZoom <= transcriptionMinimumZoom() + 0.0001) return;
+    if (!transcriptionModeActive) return;
     setTranscriptionFocusFromTextPointer(event);
     applyTranscriptionZoom();
     syncTranscriptionTextToImageFocus();
