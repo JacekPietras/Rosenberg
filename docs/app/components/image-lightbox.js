@@ -28,6 +28,8 @@ export function setupImageLightbox({ state, repository, rerender }) {
   const closeButton = $('#image-lightbox-close');
   const cropButton = $('#image-lightbox-crop');
   const transcriptionButton = $('#image-lightbox-transcription');
+  const transcriptionPanel = $('#image-lightbox-transcription-text');
+  const transcriptionInput = $('#image-lightbox-transcription-input');
   const cropStatus = $('#image-lightbox-crop-status');
   if (!lightbox || !image || !stage || !annotations || !closeButton) return;
 
@@ -50,9 +52,11 @@ export function setupImageLightbox({ state, repository, rerender }) {
   let cropGeneration = 0;
   let transcriptionUrl = '';
   let transcriptionOriginalSrc = '';
+  let transcriptionLanguage = '';
   const setTranscriptionMode = (active) => {
     annotations.hidden = active;
     if (regionOverlay) regionOverlay.hidden = active;
+    if (transcriptionPanel) transcriptionPanel.hidden = !active;
     lightbox.classList.toggle('is-transcription-mode', active);
     if (active && preview) preview.hidden = true;
     else updatePreview();
@@ -199,6 +203,8 @@ export function setupImageLightbox({ state, repository, rerender }) {
     setTranscriptionMode(false);
     if (transcriptionButton) { transcriptionButton.textContent = 'Transcription'; transcriptionButton.disabled = false; }
     const path = link.dataset.documentPath; const entryIndex = Number(link.dataset.entryIndex); const imageIndex = Number(link.dataset.imageIndex); const entry = path ? state.documents.get(path)?.entries?.[entryIndex] : null;
+    transcriptionLanguage = entry?.german?.trim() ? 'german' : entry?.latin?.trim() ? 'latin' : 'german';
+    if (transcriptionInput) transcriptionInput.value = entry?.[transcriptionLanguage] || '';
     const documentTitle = path ? state.documents.get(path)?.title : '';
     const filenameBase = [documentTitle, entry?.title, path?.split('/').pop()?.replace(/\.json$/i, '')]
       .map((value) => String(value || '').replace(/[<>:"/\\|?*\x00-\x1f]/g, ' ').replace(/\s+/g, ' ').trim().replace(/[. ]+$/g, '').slice(0, 150))
@@ -332,6 +338,10 @@ export function setupImageLightbox({ state, repository, rerender }) {
   });
   transcriptionButton?.addEventListener('click', async () => {
     if (transcriptionUrl) {
+      if (context?.entry && transcriptionInput) {
+        context.entry[transcriptionLanguage] = transcriptionInput.value;
+        if (!await save()) return;
+      }
       image.src = transcriptionOriginalSrc;
       URL.revokeObjectURL(transcriptionUrl);
       transcriptionUrl = '';
@@ -370,6 +380,10 @@ export function setupImageLightbox({ state, repository, rerender }) {
       setStatus(error?.message || String(error), true);
     } finally { transcriptionButton.disabled = false; }
   });
+  transcriptionInput?.addEventListener('input', () => {
+    if (context?.entry && transcriptionLanguage) context.entry[transcriptionLanguage] = transcriptionInput.value;
+  });
+  transcriptionInput?.addEventListener('change', () => { if (context?.entry) save(); });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
   [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => $(selector)?.addEventListener('input', (event) => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) { seal[key] = Number(event.target.value); render(); } }));
