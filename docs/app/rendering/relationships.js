@@ -8,9 +8,9 @@ export function relationshipControls(graph, { focus } = {}) {
     : graph.valid ? '' : graph.canRebuild ? 'Relationships need refreshing.'
       : 'Relationships need refreshing. <a href="http://localhost:8000/docs/?tab=tree">Open the local viewer to rebuild</a>.';
   const families = focus !== undefined && graph.components?.length ? `<label>Family group <select data-family-focus><option value="all"${focus === 'all' ? ' selected' : ''}>All family groups</option>${graph.components.map((component) => `<option value="${escapeHtml(component.key)}"${component.key === focus ? ' selected' : ''}>${escapeHtml(component.label)}</option>`).join('')}</select></label>` : '';
-  const counts = coverage?.reconstructedPeople !== undefined
-    ? `${coverage.reconstructedPeople} source identities · ${coverage.reconstructedRelationships} relationships · ${graph.components?.length || 0} family groups · ${coverage.conflicts} conflicts`
-    : coverage ? `${coverage.unresolvedMentions} unresolved mentions · ${coverage.omittedRelationships} relationships omitted · ${coverage.conflicts} conflicts` : '';
+  const counts = graph.valid && !graph.checking && !graph.rebuilding && coverage?.reconstructedPeople !== undefined
+    ? `${coverage.reconstructedPeople} identities · ${coverage.reconstructedRelationships} relations · ${graph.components?.length || 0} groups${coverage.conflicts > 0 ? ` · ${coverage.conflicts} conflicts` : ''}`
+    : '';
   return `<div class="family-graph-controls">${graph.metadata && (graph.metadata.schema === undefined || graph.metadata.schema >= 4) ? '' : graph.views.length > 1 ? `<label>Evidence <select data-family-view>${graph.views.map((view) => `<option value="${view}"${view === graph.view ? ' selected' : ''}>${view === 'facts' ? 'Facts only' : 'Include guesses'}</option>`).join('')}</select></label>` : '<span>Facts only</span>'}${families}${graph.canRebuild && !graph.valid && !graph.rebuilding ? '<button type="button" data-family-rebuild>Retry rebuild</button>' : ''}<span>${escapeHtml(counts)}</span><p class="status" role="status" data-family-rebuild-status>${status}</p></div>`;
 }
 
