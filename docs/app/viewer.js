@@ -9,7 +9,7 @@ import { setupRecordLabelSelector } from './screens/record-label-selector.js';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=88';
 import { createSealScreen } from './screens/seals.js?v=3';
-import { createImageScreen } from './screens/images.js?v=37';
+import { createImageScreen } from './screens/images.js?v=38';
 import { createDataLoader } from './data/loader.js?v=28';
 import { createEntityScreens } from './screens/entities.js?v=116';
 import { createTabs } from './components/tabs.js?v=2';

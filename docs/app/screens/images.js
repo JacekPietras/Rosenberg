@@ -65,8 +65,8 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, titleMarkup 
     const cards = matchingEntries.map(({ entry, index }) => {
       const previewRegions = selectedRegions.length
         ? (entry.regions || []).filter((region) => selectedRegions.includes(normalize(region?.name)))
-        : entry.regions;
-      const previewFocus = selectedRegions.length ? previewRegions[0] : entry.focus;
+        : undefined;
+      const previewFocus = selectedRegions.length ? previewRegions[0] : undefined;
       const label = labelMarkup(entry, index);
       const place = state.places.find((item) => item.id === entry.placeId);
       const placeMarkup = place?.name ? `<span class="image-place-name">${escapeHtml(place.name)}</span>` : '';
@@ -77,16 +77,18 @@ export function createImageScreen({ state, escapeHtml, imageMarkup, titleMarkup 
         const coverId = driveFileId(cover);
         const coverImageIndex = collectionImages.findIndex((item) => coverId && driveFileId(item?.src || item) === coverId);
         const coverImage = coverImageIndex >= 0 ? collectionImages[coverImageIndex] : null;
-        const focus = coverImage?.cropFocus || coverImage?.regions?.[0] || entry.focus || entry.regions?.[0];
+        const focus = selectedRegions.length
+          ? coverImage?.cropFocus || coverImage?.regions?.find((region) => selectedRegions.includes(normalize(region?.name))) || entry.regions?.find((region) => selectedRegions.includes(normalize(region?.name)))
+          : undefined;
         const coverPicker = state.canEditDocuments
           ? `<button class="model-collection-cover-picker" type="button" data-open-collection-cover="${index}" aria-label="Edit cover for ${escapeHtml(entry.title || document.title)}" title="Edit cover"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5 5 5M4 20l4.5-1 11-11a2.12 2.12 0 0 0-3-3l-11 11L4 20Z"/></svg><span>Cover</span></button><div class="model-collection-cover-images" hidden>${collectionImages.length ? imageMarkup(collectionImages, [], { path, index, title: entry.title || document.title, showRegions: false }) : ''}</div>`
           : '';
-        return imageCardMarkup(entry, { focus, controls: coverPicker, label, place: placeMarkup, fallbackTitle: document.title, titleMarkup });
+        return imageCardMarkup(entry, { focus, zoomToFocus: selectedRegions.length > 0, controls: coverPicker, label, place: placeMarkup, fallbackTitle: document.title, titleMarkup });
       }
       const media = entry.id ? undefined : entry.url
         ? imageMarkup(entry.url, [], { path, index, title: displayTitle, description: entry.description, focus: previewFocus, regions: previewRegions, showRegions: false, thumbnail: true })
         : undefined;
-      return imageCardMarkup(entry, { media, label, place: placeMarkup, fallbackTitle: document.title, titleMarkup });
+      return imageCardMarkup(entry, { media, zoomToFocus: selectedRegions.length > 0, label, place: placeMarkup, fallbackTitle: document.title, titleMarkup });
     }).join('');
     return `<div class="image-tags-layout">${sidebar}<div class="models-grid armorial-grid">${cards || '<p class="status">No images match the selected regions.</p>'}</div></div>`;
   }
