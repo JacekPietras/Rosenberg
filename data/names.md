@@ -33,3 +33,4 @@ Götz, Goetz
 Kunigunde, Kunnegunt, Kunnigund, Kunegunde, Kunegunt, Kunegunth, Konigunt, Kunigunda, Kunigundis, Cunegunda, Cunigunda, Conegundis
 Margaretha, Margretha, Margarete
 Jutta, Juta, Guta, Gutta, Gute
+Caspar, Kaspar, Caſpar
