@@ -4,9 +4,9 @@
   },
   "inputs": {
     "data/books/arnold_von_uissigheim.json": "sha256:cffd4383fd3bd3f97d01e31d77b322420561707cf8bfcd5fe649173a823866e0",
-    "data/books/bauer_1872.json": "sha256:1aceacf9f49516bbfed581a2288cf591edb8f9437ec7481199fe6f91945c312c",
-    "data/books/bidermann_1751.json": "sha256:25d6a2b88eef2ec0c5cd86e5c0b138b5115369717043d948799ec1fa3903f483",
-    "data/books/freiburger_dioecesan_archiv_1896_25.json": "sha256:9390ea1179428a02091108a06c7e34443398e8ecd4b863de10d12a069b76a3ca",
+    "data/books/bauer_1872.json": "sha256:89522b188caf561a8aa82c41827c2d1e6eb6e8e0ab75e406f27706f0ae663046",
+    "data/books/bidermann_1751.json": "sha256:79a5ab058591ba7a4e28e89fc2f831ae613e3d0912211148dcb3edf661d72f2c",
+    "data/books/freiburger_dioecesan_archiv_1896_25.json": "sha256:5a4c83cad590b9dcd0b67714350fead72d1bd38b40a091af7b3e6825c9431e9f",
     "data/books/kreis_mosbach_1898.json": "sha256:cd6fd14220acb1cb49e1924c4131ae240681aa7d03ec9dae283227324330a0dc",
     "data/books/neumaier_1986.json": "sha256:269098ecaff6063402d0938d98d1e39f8b764164ecd01c288f131f6d7b1f6f21",
     "data/books/wappengruppen_1977.json": "sha256:619410d6740fd02490e228b2305fd024d300cfb70c807b4df669261883842aa4",
@@ -236,11 +236,11 @@
     "data/documents/1404-09-17.json": "sha256:dd2bcae632a6fd4ebec0c10274f0dd74c6f872b2d8d79fa0a0bb049d1334bb4d",
     "data/documents/1405-05-05.json": "sha256:01f58d9d18961f27dd9b475af722a90903fcf5a9c81d616193b3788e6469eb98",
     "data/documents/1406-02-01.json": "sha256:d785665a4cff681b9d1c8be1d9eb7bc8960a663f875d848ba078efe9d99fa86f",
-    "data/documents/1406-09-04.json": "sha256:2d249b91d4fecac3ebd5f11bd46c04c7220e85942698e7305fe07dcb24b67dc6",
+    "data/documents/1406-09-04.json": "sha256:cc0da01e115bd2f72ef85883ae91b1fd523ce373cff52683fa33a1c877033fa4",
     "data/documents/1407-07-28.json": "sha256:fbaf01c170fd942b1848f98020e948b512329deed36d5a313f0a18bc7529bf3a",
     "data/documents/1408-05-13.json": "sha256:c81b744e64937c58b2f88a88e9434838658b5f0d3c386b34aa7b498f28cfc966",
     "data/documents/1408-09-28.json": "sha256:daf0982861eb201346bfafd917f80f8d26474466166fac58118e473c754b1919",
-    "data/documents/1408-11-11.json": "sha256:fb92ec54816522c58efefbee42668285694a75f33338f20b8be58728a4175efc",
+    "data/documents/1408-11-11.json": "sha256:306ca3619119830fb9b6921bcec03880d23d488a3c67a7540bee01eb92d92ef1",
     "data/documents/1408-11-11_2.json": "sha256:aeb7bfec6872feff012fb81aab1528a02bfbca2e5c4bbf3d6e48d20517e9a15b",
     "data/documents/1408.json": "sha256:7caa695e267b1b6b0ba08c385ae5566b9962bddeb350403061d22ddbb81798b0",
     "data/documents/1409-01-10.json": "sha256:ffad2cbb97c5f1c8db345037644176280e7df260e7a44ea96c184d6d9d0c6ca0",
@@ -258,9 +258,9 @@
     "data/documents/1414-05-24.json": "sha256:c2d56e0d067731b95f699ca0d998f4a785820e13ccb62474a8186d6e258e9ae2",
     "data/documents/1414-07-12.json": "sha256:393f5fa21a73ce07013b137e2af8e611001985e36db27ea0fa37a77113585f20",
     "data/documents/1415-01-22.json": "sha256:bcb079c3213e2e1ba4aa5f0fdc5d38368a8141e09130623d32569b6e1f10ff29",
-    "data/documents/1415-04-28.json": "sha256:c0861e14064c2e9452e292b5f2de2408d8f2d852da2829f154281bb3afad5fa5",
-    "data/documents/1415-07-07.json": "sha256:5349b0ac64316678e86f6d40a6f4f450f0345aa105b13f62e305d4c0c5954d64",
-    "data/documents/1415-08-01.json": "sha256:981787d05280fb14a483ddaadee4ced52f865d5bc527d8f8f129d4c40ad30214",
+    "data/documents/1415-04-28.json": "sha256:742513ea87888ea8d55dca608d9a14ea88f1d730476dac3997be8b1427e59386",
+    "data/documents/1415-07-07.json": "sha256:6a99cc83ceb6a4904b2bda592d252db83ca484ee2900d24040381eb87b1c76ad",
+    "data/documents/1415-08-01.json": "sha256:a0893538cebaf59d8c2d537f8f724019abb1bd624b9a66cda4360596582187e9",
     "data/documents/1417-01-14.json": "sha256:55734df213b3288c924c350954831f749f175ec9f49530202945b0b5a0c0202a",
     "data/documents/1417-05-03.json": "sha256:ec5a7626acbc36b36cbf26f207188a8fb171cb3b2a815923d1f68eaeaca51f5d",
     "data/documents/1418-06-05.json": "sha256:b723c4edd471e26b7369aeb1acc955cf762451537e927bd9bafa6f94741b57ad",
@@ -292,7 +292,7 @@
     "data/documents/1436-01-05.json": "sha256:6d0ce4b71c012106bffba4fe601ca2641b361aa5352a5745c8639934d24b7677",
     "data/documents/1436-01-28.json": "sha256:4cfc66a2f9c7806e625311c8b22406ef3e6031c853d048153c2461c2d1115ee5",
     "data/documents/1436-03-11.json": "sha256:3e8c78f97b75652b0b9e8efb7b5d50e59bf6fc4d1ca1cb0c86db814af2485414",
-    "data/documents/1436-10-05.json": "sha256:561e8bfc705a0e5ca300377f4e7b93daa1fba3dbecbb5da102ffecde93616ed5",
+    "data/documents/1436-10-05.json": "sha256:0a017ee576bb06ddeacf1f196bb1dd8f61f3a10c0977aae81bd2a521ad0df7a2",
     "data/documents/1436.json": "sha256:16fd2662a058ed63bb19588908d82a9f25789c956091029d7d7259015878e51a",
     "data/documents/1437-08-18.json": "sha256:0735500c240594dbd6ff2f837334e783fdc288253bb24cac4d928d4326337563",
     "data/documents/1437-12-03.json": "sha256:740cf06f68c16ae5255b29902562d2380beabdf9974e54c743ea8620641e3942",
@@ -336,7 +336,7 @@
     "data/documents/1479.json": "sha256:54e93e80edcdaeb738190459be8adf7da9d09f8641b63ebcfdb76c35564ff258",
     "data/documents/1480-01-03.json": "sha256:5f8e66aeff31e31163e56cd692e19b5adfddfee9a5b19ed2e2f2fa766d8af713",
     "data/documents/1481-07-22.json": "sha256:ce6dda88d2c15ccabd48f72701255eb4d9d257a3e525ab3114b85e454d1cc267",
-    "data/documents/1484-03-28.json": "sha256:6da35ec025c8f9b3a6041a2d663781db8f471565dbedb2c952a02e7810ddb8ee",
+    "data/documents/1484-03-28.json": "sha256:a42bdc27a5e03dc3a3457ba144e245d94b39d5ac68e9980a88f182db6025493b",
     "data/documents/1484-03-28_2.json": "sha256:4bc8c945b3234a7e4037b7088323fa4ff33e7a959152ec9ae794edf381d820ce",
     "data/documents/1484-04-13.json": "sha256:1c8fd996d67f38aee0036bf401d96134afa8bb069a4a1f2e44d37e7ef98cac1f",
     "data/documents/1484-05-10.json": "sha256:30cc56181962e203a97691bc2734301667ffedbb9dd704bdecac8f9f052ec194",
@@ -384,27 +384,27 @@
     "data/documents/1563-03-09.json": "sha256:5a3afae548fec29f77d244166befa04530709c91943403307dea21c82e224dbe",
     "data/documents/1563-04-07.json": "sha256:f27dabbb63625c338abebc8a6409b869400c0b5b4d24eb49c2209e4b2706b32a",
     "data/documents/1565.json": "sha256:c04df1406be49b2c80e0408ae5c591de0919a5221a856bbd7eb3f0aaee44adf6",
-    "data/documents/1589-01-14.json": "sha256:a0ea75b28a3dff8c7e5ee102223bd3093ad60075606fd465d97844fe8f158449",
+    "data/documents/1589-01-14.json": "sha256:9dae69e123b2dfc02b6754efb693d914e1f110a87712b65364fbfc57810c3dd4",
     "data/documents/1592-02-08.json": "sha256:96c49484717e34af300af3742169c4ae40bf0cf8f2d00e5d4ca3f65141a4521d",
     "data/documents/1599-04-30.json": "sha256:218ee031ef67f401b1309586eca4294459ced277a3f7bb753202cf83430432af",
     "data/documents/1600-03-02.json": "sha256:d5d58973b6401c0d3d7a24586a46ad431889b2de81e9fabcfbdc15df30636058",
-    "data/documents/1605.json": "sha256:f1bc2a0d46fd9c4a0ac3abc332d0e2c752726b11a757f522c2853eb8101562e4",
-    "data/documents/1608-02-22.json": "sha256:1d7f13138a8b8d07e9d5d9d493df33c95fbc994166ffc9adc500aad1eec4ac28",
+    "data/documents/1605.json": "sha256:d8eae624483d7204c8cfd11571d660c792dbfaa7c3db51c3197d5bfad4d9e53f",
+    "data/documents/1608-02-22.json": "sha256:57aab17a52abe9225875589fa5caaaa381b105d4bb598837467af5594d94c628",
     "data/documents/1608-09-22.json": "sha256:4b81208ea4e9fa936d2ad947af0f934f6738c33027e8a95606996f7ac93af4ab",
-    "data/documents/1609-07.json": "sha256:dc5335a8d5afcc1355ebfa708c036f9593507f86ebec8aaf763e24a32418c9d4",
-    "data/documents/1621-10-28.json": "sha256:14c9a865a7254489198412898812225434ca00cf2bdf74afc73a60d93e4eee3d",
+    "data/documents/1609-07.json": "sha256:a58036f1a1cf7ca2c685b96813e73fdc1c03f5ed11b5b350d7ddb4b013e3d394",
+    "data/documents/1621-10-28.json": "sha256:0c384b9d729e8a42a34de7ad721036e011b4ce02c342389c3660b38da37b858b",
     "data/documents/1626-02-22.json": "sha256:f3064ddd3ae00b667d4a6268686b3e380ce005eedaff75412652758723afccde",
     "data/documents/1804-05-15.json": "sha256:86aa753836c8eaac5774d179c1ec43f243e7ec5f003f074db5b016bdf20351d6",
-    "data/images/images.json": "sha256:2f976b9fdec93c16451c82374b5bd127a7c452e9db0886ada3b1be29d0db4b16",
+    "data/images/images.json": "sha256:2340055f3f35a837c24f995e6e4184c8323bd5d98c3c773e2f31a74ea1015088",
     "data/kinship.md": "sha256:a107f5093e44e57a84c9fda420fb88305b175def759b362f1da7779f3fdc9cba",
     "data/matching.json": "sha256:b9d25227bdd14db418946ca93eac56822e2ff4e11a63a25e4c9648f2abdae595",
-    "data/names.md": "sha256:5ea0e46268bbb9d4a4a26da260496acf606ee70ed4bff5c280c43ce7af015638",
+    "data/names.md": "sha256:433dd9eb4e5b459147dc28f230e90716ba7d6c2599889b94e393fb1ab945f672",
     "data/notes/notes.json": "sha256:a33e162e8b4aca9261bbc132c2f2a4aacc82f84b40f38ae52d5777a8a8510ec4",
     "data/people.json": "sha256:c4896ec2f0a318351fee255cfde98aae8949fddffeaf8a04b47a63e607415813",
-    "data/places.json": "sha256:4e68cced6ec671b68511fd67da382275d2e8d2c4a8b669daaefa596f406517a3",
+    "data/places.json": "sha256:685bbb28c704753bb85e0601286ceac58d726830efea5c370b7330d7022809f1",
     "data/titles.md": "sha256:e018ab5b196f7336b3b7385eec8477f496fd909ec54d648e14a34a6377a29797"
   },
-  "fingerprint": "sha256:dc7a86df2b22af44355316fa525d91e6c0fdac06eccf6cab00b76dc9feb1e028",
+  "fingerprint": "sha256:2f9846ddef3d470d41b5eb3500952c6e7c74cd9d6508d4e6750edbe168f2db6e",
   "evidence": {
     "with-guesses": {
       "sources": [
@@ -841,7 +841,7 @@
         {
           "path": "data/books/bauer_1872.json",
           "pointer": "/entries/119/facts/10",
-          "fingerprint": "sha256:1212232d6cc88b0644c4467f59c4ae46db412f0d1b5d0b8315f80445417dd3b7"
+          "fingerprint": "sha256:b135532b569c979000ab0bbea521c02e4bfadf3b79e663289504794d192da8a5"
         },
         {
           "path": "data/books/bauer_1872.json",
@@ -851,7 +851,7 @@
         {
           "path": "data/books/bauer_1872.json",
           "pointer": "/entries/119/facts/3",
-          "fingerprint": "sha256:0d210ec5faf7cc610ced2e97cc269f6597a5bc4fc5ef1c9890cca4a866de114d"
+          "fingerprint": "sha256:f31a7ce0929c3269c226d955543061d6a8eb224f7e610fba2db0bbeaf70dabed"
         },
         {
           "path": "data/books/bauer_1872.json",
@@ -2266,7 +2266,7 @@
         {
           "path": "data/books/bauer_1872.json",
           "pointer": "/entries/61/facts/3",
-          "fingerprint": "sha256:344e438b625f9dba9ba3a4912106be960726292ede9a4521a0a17b2756905527"
+          "fingerprint": "sha256:810cb753403593b2e4b3201441f85648dabc873788b070b7bf1f28fb0a9b5d3a"
         },
         {
           "path": "data/books/bauer_1872.json",
@@ -3011,12 +3011,12 @@
         {
           "path": "data/books/bidermann_1751.json",
           "pointer": "/entries/34/facts/11",
-          "fingerprint": "sha256:68d1f02600b9f1c4705df00af06d0d01b8f089d2e7002e9fd70733435a5179ec"
+          "fingerprint": "sha256:aff5184573aae884a4f74116a70e745db68ca3e7e739c551e621819cc4af2405"
         },
         {
           "path": "data/books/bidermann_1751.json",
           "pointer": "/entries/34/facts/12",
-          "fingerprint": "sha256:974d393121a8252534470a62938d30f83f4f6d235b250327604cbb108f732ce1"
+          "fingerprint": "sha256:1ad964ede2e46fd142b2ff10ac47ba3d812f50f048bb5b5b25703bf0973ec8c3"
         },
         {
           "path": "data/books/bidermann_1751.json",
@@ -3026,7 +3026,7 @@
         {
           "path": "data/books/bidermann_1751.json",
           "pointer": "/entries/34/facts/14",
-          "fingerprint": "sha256:1c0d2ac6478289c2ffb813953bd8ed13f455dbbd223b3b2307645bda9d7c82f1"
+          "fingerprint": "sha256:39a4e12522279537f428ac6a30aa855b2d5a7c4315883a3b18a312beaae20339"
         },
         {
           "path": "data/books/bidermann_1751.json",
@@ -3036,7 +3036,7 @@
         {
           "path": "data/books/bidermann_1751.json",
           "pointer": "/entries/34/facts/16",
-          "fingerprint": "sha256:5083a393a9c52a16f2ba856e38f36b904004c341956600b2151f9df3c20e9281"
+          "fingerprint": "sha256:607af47282354aa510542050d0baddf7e17608619bbc9e7bc72804a514cba01d"
         },
         {
           "path": "data/books/bidermann_1751.json",
@@ -3061,7 +3061,7 @@
         {
           "path": "data/books/bidermann_1751.json",
           "pointer": "/entries/34/facts/20",
-          "fingerprint": "sha256:600d8cfe94b01169d8d148329c7f2ae869b65b59399253e802d73eeeeb4bc00b"
+          "fingerprint": "sha256:b7075fc117cdf32d4f44b76a584b4b77a84b6ba12b36fdcf5ca6ca07dbd2b92d"
         },
         {
           "path": "data/books/bidermann_1751.json",
@@ -3076,7 +3076,7 @@
         {
           "path": "data/books/bidermann_1751.json",
           "pointer": "/entries/34/facts/26",
-          "fingerprint": "sha256:c53d0f4b18684bc0da049d9fc33430b30c349c49dc355136f65b79aad8ecf45c"
+          "fingerprint": "sha256:58437192da971fec4d41b71a7ee566fd4ce210b8c54f158eb58724cb662d6e24"
         },
         {
           "path": "data/books/bidermann_1751.json",
@@ -3106,7 +3106,7 @@
         {
           "path": "data/books/bidermann_1751.json",
           "pointer": "/entries/34/facts/9",
-          "fingerprint": "sha256:fbd4becfe5231e6dce240af59241f7e8b7b4ba695bc20514e2fa9cd92e24ec6f"
+          "fingerprint": "sha256:25163115a4e9bc0daf64287634b7427b99de33eb360f4cbc618103c301798a89"
         },
         {
           "path": "data/books/bidermann_1751.json",
@@ -3166,12 +3166,12 @@
         {
           "path": "data/books/bidermann_1751.json",
           "pointer": "/entries/36/facts/6",
-          "fingerprint": "sha256:c773e29783ec953049974d45d57371554c5789d59bed7eb80ac2d341fbb65d28"
+          "fingerprint": "sha256:5a316676dd27c680c3868b48e5f3272bfbec866460bfc2781057ecad0fdeeeed"
         },
         {
           "path": "data/books/bidermann_1751.json",
           "pointer": "/entries/36/facts/7",
-          "fingerprint": "sha256:4a0f10444284ff56a4296bb05256cabe32f15ac805f80c61adb5c320a5bda442"
+          "fingerprint": "sha256:763a2328ef99bd22e8e59dc7e56e7c07a0f03c6e732ef1cf252c77ca7fae9f5c"
         },
         {
           "path": "data/books/bidermann_1751.json",
@@ -3441,7 +3441,7 @@
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/123/facts/5",
-          "fingerprint": "sha256:0d210ec5faf7cc610ced2e97cc269f6597a5bc4fc5ef1c9890cca4a866de114d"
+          "fingerprint": "sha256:f31a7ce0929c3269c226d955543061d6a8eb224f7e610fba2db0bbeaf70dabed"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
@@ -3671,7 +3671,7 @@
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/140/facts/0",
-          "fingerprint": "sha256:0d35554ca736cafb46b9aa51012fce4153df11e07806634b95beba08d545aaa6"
+          "fingerprint": "sha256:2d702c29980468379cc5ab92ab7a295058be2bade92f48bdf3d92de42873321a"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
@@ -3711,12 +3711,12 @@
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/140/guesses/4",
-          "fingerprint": "sha256:c35127be3e6fe14a361fd29f566b5383bfa271581eee7078ece2a9407c620459"
+          "fingerprint": "sha256:cb74b1c35845b09bcd070676667a79ffebf218efd784c0a8d210371060e5c560"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/141/facts/0",
-          "fingerprint": "sha256:1752cb80a62ff9c4247525d44816aafe4f0801a871c7e2a7c5a0fd3d78051490"
+          "fingerprint": "sha256:d3aabb0e8fbefa937224c01c60e7d97226adbf2a708efd1f1ff34e8f9790b357"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
@@ -3746,7 +3746,7 @@
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/141/facts/6",
-          "fingerprint": "sha256:55ed587c3e3a9dab5a311776437dbc1fcf54030f0a0655c735c2e87eefdffbf1"
+          "fingerprint": "sha256:c516c5ec8e5a89f4606820829552e867b77eccc8f4392a7d207ab497048c2ea3"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
@@ -3776,7 +3776,7 @@
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/142/facts/2",
-          "fingerprint": "sha256:0d6e6997fa132377ddc8f8b0a5f218b9b5ddb1e9432d6f07cffa4373bb48ba21"
+          "fingerprint": "sha256:5285e7e2a30d3c336faa7ac961796194173a840e4f2cf4a201b291312c67eae6"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
@@ -3786,17 +3786,17 @@
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/142/facts/4",
-          "fingerprint": "sha256:9d3436a0d38f9445b20ecaecb90c142fd1f8c7d94a3174f338b0768df8ddade6"
+          "fingerprint": "sha256:500b67251192b2a1c5271be8e720101b185529885e40420d3214977417fba209"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/142/facts/5",
-          "fingerprint": "sha256:91f87de9f160484250dd5fe5a574c9c591f6d0ad638c81ca863fd0b803e7ce28"
+          "fingerprint": "sha256:49c85dfcb9170ca884dbd1795cc61041e0a554177416a571951a710186f23cec"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/145/facts/0",
-          "fingerprint": "sha256:4e44ea9fb8a040494e29da64bfa76278febb6d40ffd8d89aca3d5e82bfba6876"
+          "fingerprint": "sha256:ceda5b93266e2f01dc1092772f9e3258c25d5eede830ffa18423a2698d142f20"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
@@ -3806,12 +3806,12 @@
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/146/facts/1",
-          "fingerprint": "sha256:deb487fb8660c0b9948e72ac007ecc1867121de76332359de6f0bb71f648df3b"
+          "fingerprint": "sha256:5bee35bc7a7bfa0c519bc9e7a08503fcfddfc9e2221b5f9e88eaf8da9303dec5"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
           "pointer": "/entries/146/facts/2",
-          "fingerprint": "sha256:3974f3394e1297cfc557678a8720f1f71b92dbb41b4f0de8c9e2f3d5a523fd13"
+          "fingerprint": "sha256:a302eef78355940d398d4889cf7115d04c525cd57c53cea0d2c64744bcaac907"
         },
         {
           "path": "data/books/freiburger_dioecesan_archiv_1896_25.json",
@@ -7936,7 +7936,7 @@
         {
           "path": "data/documents/1406-09-04.json",
           "pointer": "/entries/0/facts/1",
-          "fingerprint": "sha256:aaf6c0f96fe33856271f4c8391b27bd77e6fb19ecd8fd8c8dc796b1f9dfc2a85"
+          "fingerprint": "sha256:5ae188b1a9463c3d5c4dad33d627976e7b4b2a4a39331b1546fc6210710a3cda"
         },
         {
           "path": "data/documents/1406-09-04.json",
@@ -8001,7 +8001,7 @@
         {
           "path": "data/documents/1408-11-11.json",
           "pointer": "/entries/0/facts/1",
-          "fingerprint": "sha256:1e69630c617e2551055707421336b937401e04e7e4e6122d7bd6c8d70ef7fb18"
+          "fingerprint": "sha256:e238ee3c619c88d8691cb7e27c2556361b94c96d309ced4e095752d6471f0660"
         },
         {
           "path": "data/documents/1408-11-11.json",
@@ -8166,7 +8166,7 @@
         {
           "path": "data/documents/1415-04-28.json",
           "pointer": "/entries/0/facts/1",
-          "fingerprint": "sha256:4bfffbbd014539b55a78b3ce47cfb4258cceeefc2971ea0ac6346447439ba860"
+          "fingerprint": "sha256:1338ebfdc5f94f99cdf987f6f52dda7d5ee5a67b84d139d7f9601f2307bc60fa"
         },
         {
           "path": "data/documents/1415-04-28.json",
@@ -8251,7 +8251,7 @@
         {
           "path": "data/documents/1415-07-07.json",
           "pointer": "/entries/0/facts/0",
-          "fingerprint": "sha256:0fb9637f86a6dc9262f9fb792dc063093891a946882c71bd5442f38b3338b862"
+          "fingerprint": "sha256:3b8ec533dad2aefe31740912b5430a08a0e8eb2ad25854ead452f3e8172f957e"
         },
         {
           "path": "data/documents/1415-07-07.json",
@@ -8276,7 +8276,7 @@
         {
           "path": "data/documents/1415-07-07.json",
           "pointer": "/entries/0/facts/7",
-          "fingerprint": "sha256:984363556db228f1250b966268af57ee3943c5e713d82678f2dd55a208daffbe"
+          "fingerprint": "sha256:2e758c1d9a5af5b99891d2c0cfd36919122f6f63a9867314136675d3789178f7"
         },
         {
           "path": "data/documents/1415-07-07.json",
@@ -8336,7 +8336,7 @@
         {
           "path": "data/documents/1415-08-01.json",
           "pointer": "/entries/0/facts/2",
-          "fingerprint": "sha256:da219f301d2fb217d790478817699779904fdb568fd8c9c547e583118ca02144"
+          "fingerprint": "sha256:229d115f864d2799561f3cceb592f88bf9688300cdf153ae3689dce03a8d9450"
         },
         {
           "path": "data/documents/1415-08-01.json",
@@ -8666,7 +8666,7 @@
         {
           "path": "data/documents/1436-10-05.json",
           "pointer": "/entries/0/facts/0",
-          "fingerprint": "sha256:1a37fcdece81e69dd54e3fcf8f35e27cd900efc99b5a8e0fe4a54f0ddcab27d8"
+          "fingerprint": "sha256:c5148eeb8b0c536bc3de136b943c3fae81ecb3155d375adf2312bfde8bd9ed44"
         },
         {
           "path": "data/documents/1436-10-05.json",
@@ -8676,7 +8676,7 @@
         {
           "path": "data/documents/1436-10-05.json",
           "pointer": "/entries/0/facts/2",
-          "fingerprint": "sha256:976239bc94a5ab1d120882f944e7a46ae074c9f921b2e0b743db97f764073c6f"
+          "fingerprint": "sha256:9759400af0ee2f4c2cfbb1413be278ae7268971f1a36eb6a221c1b026553e3b2"
         },
         {
           "path": "data/documents/1436-10-05.json",
@@ -8686,7 +8686,7 @@
         {
           "path": "data/documents/1436-10-05.json",
           "pointer": "/entries/0/facts/4",
-          "fingerprint": "sha256:b352923d19194f0fa1aa13c7f500a8b72aeccea80138b18c43252f8ac6f8a9b4"
+          "fingerprint": "sha256:a4728b0f911beb63d69e322aa110eafe2bd163c3e2fd29ce403bec84ccff35d7"
         },
         {
           "path": "data/documents/1436-10-05.json",
@@ -8701,7 +8701,7 @@
         {
           "path": "data/documents/1436-10-05.json",
           "pointer": "/entries/0/facts/7",
-          "fingerprint": "sha256:ef9feeda173fe5dae37c7e0b65ffb078bb749a7869ff11f9a1f2e496a2f13327"
+          "fingerprint": "sha256:04887a3b3f4a39d50f5ceed717f247f4df510b0e1e01e52381026668dc45c41f"
         },
         {
           "path": "data/documents/1436-10-05.json",
@@ -8711,7 +8711,7 @@
         {
           "path": "data/documents/1436-10-05.json",
           "pointer": "/entries/0/facts/9",
-          "fingerprint": "sha256:6a854cc9c84b5ce397426d8977cb7af13563ff7c3b73948b3392fe04e882ef60"
+          "fingerprint": "sha256:42453169f15b645932fcf79e54ed389f92d49035b12706da77c5e4ff751b9e7e"
         },
         {
           "path": "data/documents/1437-08-18.json",
@@ -9136,22 +9136,22 @@
         {
           "path": "data/documents/1484-03-28.json",
           "pointer": "/entries/0/facts/2",
-          "fingerprint": "sha256:b9358b766cb75a17ce571f5e52329a36db2e3ea2e4fc9a87611969900304a688"
+          "fingerprint": "sha256:e2aff5a09ff21720c0bf10b97da06c7576fbdf16b7b93a71b0f879bc67ca8827"
         },
         {
           "path": "data/documents/1484-03-28.json",
           "pointer": "/entries/0/facts/3",
-          "fingerprint": "sha256:184d17b75c1c631a335f51e6c4ca32193df80d129b063eaea682b2e6c7e73adf"
+          "fingerprint": "sha256:7840a84f8c647e9bc8f4077e26c5acd9c12b71dc01839d342649a040b2737996"
         },
         {
           "path": "data/documents/1484-03-28.json",
           "pointer": "/entries/0/facts/4",
-          "fingerprint": "sha256:67b5eaa9f701c25677f77f15103943ee77895984cabd178838682b0535df0888"
+          "fingerprint": "sha256:24e56d32fa6b3cb1c00bbccb9e6510e7dd2e2afb9c601536f4e8348a9de76333"
         },
         {
           "path": "data/documents/1484-03-28.json",
           "pointer": "/entries/0/facts/5",
-          "fingerprint": "sha256:cfb31fd476f95224ca42e4e4660b1f9a7686297ae92f286f82f6799affcbc587"
+          "fingerprint": "sha256:1f5db3cb06c510b408c3f6ed1e0ae4a919875e5151496cd89ba1923be538b010"
         },
         {
           "path": "data/documents/1484-03-28.json",
@@ -9566,7 +9566,7 @@
         {
           "path": "data/documents/1589-01-14.json",
           "pointer": "/entries/0/facts/7",
-          "fingerprint": "sha256:91a89b1ece250d40d30cd3469746d8dae5ad86a4d1d678f651540c0631666cd0"
+          "fingerprint": "sha256:3eb5263bb4f89c35f20ed2ffe7116ebac1ed1b0fc4bce08ffe9f1f7ab6991ea8"
         },
         {
           "path": "data/documents/1592-02-08.json",
@@ -9611,12 +9611,12 @@
         {
           "path": "data/documents/1605.json",
           "pointer": "/entries/0/facts/0",
-          "fingerprint": "sha256:2fc33067bccf253ee6a48e4855826223ebf45266e9a4d029a5ea1fd467dade5a"
+          "fingerprint": "sha256:0c6e035e7fa17101b0b38fb9e13b2974d8f00d1ab5ad205c511888da195f5873"
         },
         {
           "path": "data/documents/1608-02-22.json",
           "pointer": "/entries/0/facts/0",
-          "fingerprint": "sha256:61fa7d745d8fb9a05058bbd827ffd4e306df39d02466cd2c8558742ff87be181"
+          "fingerprint": "sha256:30ee2af88da58a47309a35abbf550d7ebf00744a3ce96089ecfb2bd9950ddf5f"
         },
         {
           "path": "data/documents/1608-02-22.json",
@@ -9626,7 +9626,7 @@
         {
           "path": "data/documents/1608-02-22.json",
           "pointer": "/entries/0/facts/2",
-          "fingerprint": "sha256:93d0f40731749f797f69b962db85b9f80b0160aab870538239948a3dfed9eb99"
+          "fingerprint": "sha256:e4690f2d598eedd090270a59f4262b2e8daa6e6ad0865415cefebc99af0af199"
         },
         {
           "path": "data/documents/1608-09-22.json",
@@ -9636,12 +9636,12 @@
         {
           "path": "data/documents/1609-07.json",
           "pointer": "/entries/0/facts/0",
-          "fingerprint": "sha256:f31520b155b7928d7882189cacb6bd050b2c329db34b0c4fa9e4673c76638575"
+          "fingerprint": "sha256:db3bd8a3812904413cba64f85badc24798b222e7f81a01b482193ff3403444ee"
         },
         {
           "path": "data/documents/1609-07.json",
           "pointer": "/entries/0/facts/1",
-          "fingerprint": "sha256:912867599e57ce3ffbab129e093a12245736b950664887109c3c5bd73803d23d"
+          "fingerprint": "sha256:191980870d3d0d54acadddec264051c4a7f924fcca88fe2250196744a6b2dd2d"
         },
         {
           "path": "data/documents/1621-10-28.json",
@@ -9661,7 +9661,7 @@
         {
           "path": "data/documents/1621-10-28.json",
           "pointer": "/entries/0/facts/3",
-          "fingerprint": "sha256:f7a70d7ac0ecc87b05ae56beeee351bea4585f3a3b9b94d49dd5ef57d78fb040"
+          "fingerprint": "sha256:e5ce0b76061918bb9fa38b4a8a3962d79affc4a969dbf19aa9951c3436548de0"
         },
         {
           "path": "data/images/images.json",
@@ -17466,7 +17466,7 @@
         },
         {
           "key": "@evidence/888b8ea341668f3ec3a9",
-          "name": "Hans Kaspar von Rosenberg",
+          "name": "Hans Caspar von Rosenberg",
           "titles": [],
           "dates": [
             "1518"
@@ -31837,7 +31837,7 @@
         },
         {
           "key": "@evidence/547460385bbb3e04190c",
-          "name": "Christina von Handschuhsheim",
+          "name": "Christiana von Handschuhsheim",
           "titles": [],
           "dates": [
             "1406-09-04",
@@ -39204,7 +39204,7 @@
         },
         {
           "key": "@evidence/0e17de13b860237778df",
-          "name": "Friedrich Zeisolf von Rosenberg",
+          "name": "Friedrich Zaisolph von Rosenberg",
           "titles": [],
           "dates": [
             "1542"
@@ -39242,7 +39242,7 @@
         },
         {
           "key": "@evidence/72feac5414affbae1889",
-          "name": "Hans Kaspar von Rosenberg",
+          "name": "Hans Caspar von Rosenberg",
           "titles": [],
           "dates": [
             "1531",
@@ -39586,7 +39586,7 @@
         },
         {
           "key": "@evidence/d927975945dcbd24d659",
-          "name": "Friedrich Zeisolf von Rosenberg",
+          "name": "Friedrich Zaisolph von Rosenberg",
           "titles": [
             "zu Haltenbergstetten"
           ],
@@ -40270,7 +40270,7 @@
         },
         {
           "key": "@evidence/944c9d91b011f7829506",
-          "name": "Georg Sigmund von Rosenberg",
+          "name": "Georg Siegmund von Rosenberg",
           "titles": [],
           "dates": [
             "1576",
@@ -40437,7 +40437,7 @@
         },
         {
           "key": "@evidence/265af8ec60d49f45c9a7",
-          "name": "Georg Sigmund von Rosenberg",
+          "name": "Georg Siegmund von Rosenberg",
           "titles": [],
           "dates": [
             "1620-05-22",
@@ -40769,7 +40769,7 @@
         },
         {
           "key": "@evidence/eaeb77524d9dfdab9d86",
-          "name": "Georg Sigmund von Rosenberg",
+          "name": "Georg Siegmund von Rosenberg",
           "titles": [
             "zu Gnötzheim",
             "zu Haldenbergstetten",
@@ -50042,7 +50042,7 @@
         },
         {
           "key": "@evidence/f137012f7357bff054e1",
-          "name": "Christina von Rosenberg",
+          "name": "Christiana von Rosenberg",
           "titles": [],
           "dates": [
             "1484-03-28"
@@ -656652,7 +656652,7 @@
               "contribution": 1.0
             },
             {
-              "name": "same-fact associate: christina von handschuhsheim",
+              "name": "same-fact associate: christiana von handschuhsheim",
               "contribution": 0.85383169
             }
           ],
@@ -878409,7 +878409,7 @@
               "contribution": 2.0
             },
             {
-              "name": "same-fact associate: christina von handschuhsheim",
+              "name": "same-fact associate: christiana von handschuhsheim",
               "contribution": 1.0
             },
             {
@@ -878417,11 +878417,11 @@
               "contribution": 0.7510293
             },
             {
-              "name": "shared family context: christina von handschuhsheim",
+              "name": "shared family context: christiana von handschuhsheim",
               "contribution": 4.5
             },
             {
-              "name": "full relative name rarity: christina von handschuhsheim (0.70% of factual references)",
+              "name": "full relative name rarity: christiana von handschuhsheim (0.70% of factual references)",
               "contribution": 0.75
             },
             {
@@ -878732,7 +878732,7 @@
               "contribution": 1.0
             },
             {
-              "name": "same-fact associate: christina von handschuhsheim",
+              "name": "same-fact associate: christiana von handschuhsheim",
               "contribution": 0.85383169
             }
           ],
@@ -900857,7 +900857,7 @@
           "logOdds": -1.57128209,
           "features": [
             {
-              "name": "same-fact associate: christina von handschuhsheim",
+              "name": "same-fact associate: christiana von handschuhsheim",
               "contribution": 0.62594249
             }
           ],
@@ -1266063,9 +1266063,8 @@
         "burggraf friedrich von nurnberg": 1.0,
         "burkhard von seckendorf": 1.0,
         "caspar von stetten": 2.5,
-        "christiana von rosenberg": 0.5,
-        "christina von handschuhsheim": 19.5,
-        "christina von rosenberg": 4.0,
+        "christiana von handschuhsheim": 19.5,
+        "christiana von rosenberg": 4.5,
         "christoph sutzel von mergentheim": 5.0,
         "christoph von massbach": 2.0,
         "christoph von mosbach": 1.0,
