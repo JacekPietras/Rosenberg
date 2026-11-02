@@ -355,6 +355,14 @@ export function buildRelationshipGraph(people, { tree, view, verification } = {}
     }));
     if (evidence) {
       result.components = familyComponents(records, result.edges);
+      result.components = result.components.filter((component) => component.members.some((key) => {
+        const name = records.find((person) => person._treeKey === key)?.name || '';
+        return /rosenberg|uissigheim/i.test(name);
+      }));
+      const retained = new Set(result.components.flatMap((component) => component.members));
+      result.records = records.filter((person) => retained.has(person._treeKey));
+      result.edges = result.edges.filter((edge) => retained.has(edge.person) && retained.has(edge.of));
+      result.reverse = new Map([...result.reverse].filter(([key]) => retained.has(key)));
       result.defaultFocus = (result.components.find((component) => component.anchored) || result.components[0])?.key;
     }
   } catch (error) {
