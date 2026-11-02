@@ -133,6 +133,10 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .record-label-edit:hover, .record-label-edit:focus-visible { color: var(--accent); background: var(--surface-raised); }
 .record-label-edit svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
 .record-label { padding: .2rem .5rem; color: #fff; background: #b42332; border-radius: 4px; font-size: .68rem; font-weight: 750; letter-spacing: .08em; line-height: 1.2; text-transform: uppercase; white-space: nowrap; }
+.label-sidebar .record-filter { position: relative; }
+.label-sidebar .record-filter-include { color: var(--accent); background: var(--accent-soft); }
+.label-sidebar .record-filter-exclude { color: #68727d; background: var(--surface-raised); }
+.label-sidebar .record-filter-neutral { color: var(--faint); background: transparent; }
 .record-label-dialog { width: min(28rem, calc(100vw - 2rem)); max-height: min(80vh, 42rem); padding: 1.35rem; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 1rem 3rem #0008; }
 .record-label-dialog::backdrop { background: #0009; backdrop-filter: blur(3px); }
 .record-label-dialog-form h2 { margin: 0 0 1rem; font-size: 1.2rem; }

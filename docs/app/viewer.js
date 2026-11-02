@@ -1192,9 +1192,10 @@ function renderYearSidebar(paths, labelPaths = paths) {
     .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
     .map(({ label, path }) => {
       const key = label.toLocaleLowerCase();
-      const selected = GREY_RECORD_LABELS.has(key) ? state.hiddenRecordLabels.includes(key) : state.recordLabels.includes(key);
-      const displayLabel = GREY_RECORD_LABELS.has(key) ? `× ${label}` : label;
-      return `<a href="#" class="${selected ? 'selected' : ''}" data-sidebar-type="label" data-label="${escapeHtml(key)}" data-path="${escapeHtml(path)}">${escapeHtml(displayLabel)}</a>`;
+      const mode = state.hiddenRecordLabels.includes(key) ? 'exclude' : state.recordLabels.includes(key) ? 'include' : 'neutral';
+      const prefix = mode === 'exclude' ? '× ' : mode === 'include' ? '+ ' : '';
+      const modeLabel = mode === 'exclude' ? 'excluded' : mode === 'include' ? 'included' : 'neutral';
+      return `<a href="#" class="record-filter record-filter-${mode}" aria-label="${escapeHtml(label)}: ${modeLabel}" title="${escapeHtml(modeLabel)} — click to change" data-sidebar-type="label" data-label="${escapeHtml(key)}" data-path="${escapeHtml(path)}">${escapeHtml(prefix + label)}</a>`;
     })
     .join('');
   return `${yearLinks ? `<aside class="year-sidebar" aria-label="Documents by year"><nav>${yearLinks}</nav></aside>` : ''}<aside class="label-sidebar" aria-label="Document filters"><nav>${transcriptionLink}${labelLinks}</nav></aside>`;
@@ -1220,10 +1221,17 @@ function setupYearHighlight(paths) {
     }
     if (link.dataset.sidebarType === 'label') {
       const label = link.dataset.label;
-      const values = GREY_RECORD_LABELS.has(label) ? state.hiddenRecordLabels : state.recordLabels;
-      const index = values.indexOf(label);
-      if (index >= 0) values.splice(index, 1);
-      else values.push(label);
+      const wasExcluded = state.hiddenRecordLabels.includes(label);
+      const wasIncluded = state.recordLabels.includes(label);
+      state.hiddenRecordLabels = state.hiddenRecordLabels.filter((value) => value !== label);
+      state.recordLabels = state.recordLabels.filter((value) => value !== label);
+      // Labels excluded by default cycle × → neutral → + → ×. Other labels
+      // cycle neutral → + → × → neutral.
+      const next = GREY_RECORD_LABELS.has(label)
+        ? (wasExcluded ? 'neutral' : wasIncluded ? 'exclude' : 'include')
+        : (wasIncluded ? 'exclude' : wasExcluded ? 'neutral' : 'include');
+      if (next === 'exclude') state.hiddenRecordLabels.push(label);
+      if (next === 'include') state.recordLabels.push(label);
       savePreferences();
       renderActive();
       return;
