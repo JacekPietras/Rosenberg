@@ -112,22 +112,28 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const left = rect.left + (rect.width - fittedWidth) / 2;
     const top = rect.top + (rect.height - fittedHeight) / 2;
     const region = currentRegions().find((item) => item?.name === 'text');
-    const regionX = Number(region?.x), regionY = Number(region?.y);
-    const regionRight = regionX + Number(region?.width), regionBottom = regionY + Number(region?.height);
+    const regionX = Math.max(0, Math.min(1, Number(region?.x) || 0));
+    const regionY = Math.max(0, Math.min(1, Number(region?.y) || 0));
+    const regionRight = Math.max(regionX, Math.min(1, regionX + (Number(region?.width) || 0)));
+    const regionBottom = Math.max(regionY, Math.min(1, regionY + (Number(region?.height) || 0)));
     transcriptionFocus = {
-      x: Math.max(Number.isFinite(regionX) ? regionX : 0, Math.min(Number.isFinite(regionRight) ? regionRight : 1, (event.clientX - left) / fittedWidth)),
-      y: Math.max(Number.isFinite(regionY) ? regionY : 0, Math.min(Number.isFinite(regionBottom) ? regionBottom : 1, (event.clientY - top) / fittedHeight)),
+      x: Math.max(regionX, Math.min(regionRight, Math.max(0, Math.min(1, (event.clientX - left) / fittedWidth)))),
+      y: Math.max(regionY, Math.min(regionBottom, Math.max(0, Math.min(1, (event.clientY - top) / fittedHeight)))),
     };
   };
   const setTranscriptionFocusFromTextPointer = (event) => {
     const region = currentRegions().find((item) => item?.name === 'text');
-    const rect = transcriptionInput?.getBoundingClientRect();
+    const rect = transcriptionPanel?.getBoundingClientRect();
     if (!region || !rect?.width || !rect?.height) return;
     const x = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
     const y = Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height));
+    const regionX = Math.max(0, Math.min(1, Number(region.x) || 0));
+    const regionY = Math.max(0, Math.min(1, Number(region.y) || 0));
+    const regionWidth = Math.max(0, Math.min(1 - regionX, Number(region.width) || 0));
+    const regionHeight = Math.max(0, Math.min(1 - regionY, Number(region.height) || 0));
     transcriptionFocus = {
-      x: Number(region.x) + x * Number(region.width),
-      y: Number(region.y) + y * Number(region.height),
+      x: Math.max(0, Math.min(1, regionX + x * regionWidth)),
+      y: Math.max(0, Math.min(1, regionY + y * regionHeight)),
     };
   };
   const syncTranscriptionTextToImageFocus = () => {
@@ -475,7 +481,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     applyTranscriptionZoom();
     syncTranscriptionTextToImageFocus();
   }, { passive: false });
-  transcriptionInput?.addEventListener('pointermove', (event) => {
+  transcriptionPanel?.addEventListener('pointermove', (event) => {
     if (!transcriptionModeActive) return;
     setTranscriptionFocusFromTextPointer(event);
     applyTranscriptionZoom();
