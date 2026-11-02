@@ -127,9 +127,9 @@ export function createEntityScreens({
         const doc = getDocuments().get(source.path);
         const fact = resolveEvidencePointer(doc, source.pointer);
         const index = Number(source.pointer.match(/\/entries\/(\d+)/)?.[1] || 0);
-        return `<article class="document"><p class="entry-date">${source.pointer.includes('/guesses/') ? 'Guess · ' : ''}${escapeHtml(formatDate(date))}</p>${renderFactsView([{ ...fact, date, isGuess: source.pointer.includes('/guesses/') }], { people, personNames: factPersonNames(), inlineMarkup, sourceHref: () => documentNavigationUrl(source.path, index) })}<p class="source"><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></p></article>`;
-      }).join('');
-      return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2>${node.status === 'contextual' ? '<p>Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.</p>' : ''}</article><h3>Source attestations</h3>${attestations}`;
+        return { ...fact, date, isGuess: source.pointer.includes('/guesses/'), sourceHref: documentNavigationUrl(source.path, index) };
+      });
+      return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2>${node.status === 'contextual' ? '<p>Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.</p>' : ''}</article><section class="entity-facts"><h3>Facts</h3>${renderFactsView(attestations, { people, personNames: factPersonNames(), inlineMarkup, sourceHref: (fact) => fact.sourceHref })}</section>`;
     }
     if (String(state.person).startsWith('@evidence/')) return '<article class="document"><h2>Source identity changed</h2><p>This generated source group changed after rebuilding.</p><a href="?tab=tree">Open the family tree to choose its current source identities</a></article>';
     let person = exactAnchor ? resolution.person
