@@ -175,6 +175,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   const updateFocusOverlay = () => {
     regionOverlay?.classList.toggle('is-visible', regionMode);
     regionOverlay?.classList.toggle('is-editing', regionMode);
+    if (!regionMode) regionOverlay?.classList.remove('has-pointer');
     regionButton?.setAttribute('aria-pressed', String(regionMode));
   };
   const render = () => {
@@ -313,7 +314,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   collectionPrevious?.addEventListener('click', () => moveCollectionCover(-1));
   collectionNext?.addEventListener('click', () => moveCollectionCover(1));
   window.addEventListener('resize', () => { updateDescriptionLayout(); updateGeometry(); updatePreview(); }, { passive: true });
-  regionButton?.addEventListener('click', () => { regionMode = !regionMode; ignoreFocusClick = false; selectedIndex = null; updateFocusOverlay(); });
+  regionButton?.addEventListener('click', () => { regionMode = !regionMode; regionDrag = null; if (regionBox) regionBox.removeAttribute('style'); ignoreFocusClick = false; selectedIndex = null; updateFocusOverlay(); });
   removeRegionButton?.addEventListener('click', async () => {
     const regions = currentRegions();
     if (selectedRegionIndex === null || !regions[selectedRegionIndex]) return;
@@ -397,10 +398,20 @@ export function setupImageLightbox({ state, repository, rerender }) {
   annotations.addEventListener('pointerdown', (event) => { const marker = event.target.closest('.seal-marker'); if (context && marker) startDrag(event, Number(marker.dataset.sealIndex), marker); }); annotations.addEventListener('pointermove', moveDrag); annotations.addEventListener('pointerup', () => { drag = null; }); annotations.addEventListener('pointercancel', () => { drag = null; });
   regionOverlay?.addEventListener('pointerdown', (event) => {
     if (!regionMode || !regionOverlay.clientWidth || !regionOverlay.clientHeight) return;
-    const p = regionPoint(event); regionDrag = { pointerId: event.pointerId, start: p, moved: false };
+    if (regionDrag?.waiting) { regionDrag.pointerId = event.pointerId; regionDrag.waiting = false; regionDrag.secondClick = true; }
+    else { const p = regionPoint(event); regionDrag = { pointerId: event.pointerId, start: p, moved: false }; }
+    regionOverlay.classList.remove('has-pointer');
   });
+  regionOverlay?.addEventListener('pointermove', (event) => {
+    if (!regionMode || regionDrag) return;
+    const rect = regionOverlay.getBoundingClientRect();
+    regionOverlay.style.setProperty('--pointer-x', `${event.clientX - rect.left}px`);
+    regionOverlay.style.setProperty('--pointer-y', `${event.clientY - rect.top}px`);
+    regionOverlay.classList.add('has-pointer');
+  });
+  regionOverlay?.addEventListener('pointerleave', () => regionOverlay.classList.remove('has-pointer'));
   window.addEventListener('pointermove', (event) => {
-    if (regionDrag?.pointerId !== event.pointerId) return;
+    if (!regionDrag || (!regionDrag.waiting && regionDrag.pointerId !== event.pointerId)) return;
     const current = regionPoint(event);
     if (Math.abs(current.x - regionDrag.start.x) + Math.abs(current.y - regionDrag.start.y) > 0.005) regionDrag.moved = true;
     if (regionMode) drawRegion(regionDrag.start, current);
@@ -408,6 +419,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   window.addEventListener('pointerup', async (event) => {
     if (!regionDrag || event.pointerId !== regionDrag.pointerId) return;
     if (!regionMode) { regionDrag = null; return; }
+    if (!regionDrag.moved && !regionDrag.secondClick) { regionDrag.waiting = true; return; }
     const region = drawRegion(regionDrag.start, regionPoint(event));
     regionDrag = null;
     const name = await askRegionName();
@@ -417,6 +429,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
   });
   window.addEventListener('pointercancel', () => { regionDrag = null; });
   regionOverlay?.addEventListener('click', (event) => {
+    event.stopPropagation();
     if (ignoreFocusClick) { ignoreFocusClick = false; return; }
     if (regionMode) event.preventDefault();
   });
@@ -477,5 +490,5 @@ export function setupImageLightbox({ state, repository, rerender }) {
   descriptionClose?.addEventListener('click', () => { if (description) { description.hidden = true; updateDescriptionLayout(); } });
   lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
   lightbox.addEventListener('cancel', (event) => { event.preventDefault(); if (lightbox.classList.contains('is-cropping')) stopCrop(); else close(); });
-  lightbox.addEventListener('close', () => { stopCrop(); cropSource = ''; image.removeAttribute('src'); annotations.replaceChildren(); if (descriptionText) descriptionText.textContent = ''; if (description) description.hidden = true; stage.style.height = ''; if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
+  lightbox.addEventListener('close', () => { stopCrop(); cropSource = ''; image.removeAttribute('src'); annotations.replaceChildren(); if (descriptionText) descriptionText.textContent = ''; if (description) description.hidden = true; stage.style.height = ''; if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing', 'has-pointer'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
 }

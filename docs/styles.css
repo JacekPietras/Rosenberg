@@ -368,6 +368,9 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .image-lightbox-region-overlay { position: absolute; z-index: 2; box-sizing: border-box; pointer-events: none; }
 .image-lightbox-region-overlay.is-visible { pointer-events: auto; }
 .image-lightbox-region-overlay.is-visible.is-editing { cursor: crosshair; touch-action: none; }
+.image-lightbox-region-overlay.is-editing.has-pointer::before, .image-lightbox-region-overlay.is-editing.has-pointer::after { position: absolute; z-index: 1; content: ''; pointer-events: none; }
+.image-lightbox-region-overlay.is-editing.has-pointer::before { top: 0; bottom: 0; left: var(--pointer-x); border-left: 1px dashed white; filter: drop-shadow(1px 0 1px black); }
+.image-lightbox-region-overlay.is-editing.has-pointer::after { right: 0; left: 0; top: var(--pointer-y); border-top: 1px dashed white; filter: drop-shadow(0 1px 1px black); }
 .image-lightbox-region-box { position: absolute; box-sizing: border-box; border: 2px solid #60c4a0; background: rgb(96 196 160 / .08); pointer-events: none; }
 .image-lightbox-region-overlay:not(.is-editing) .image-lightbox-region-box { display: none; }
 .image-lightbox-region-overlay.is-editing .image-lightbox-region-box { display: block; }

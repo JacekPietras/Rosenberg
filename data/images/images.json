@@ -6,7 +6,16 @@
       "title": "Ebrach, Fuchsenkapelle, memorials of Wolf and Sibylla Fuchs",
       "source": "Die Deutschen Inschriften, vol. 18, Landkreis Bamberg (1980), no. 135 and fig. 54 — https://drive.google.com/file/d/1pviVrd0iaVt82DXE47e7D0eBzilsolhY/view",
       "description": "Figure 54 reproduces engravings after Gropp. The left monument depicts Wolf Fuchs von Bimbach, who died on 14 April 1535, kneeling in armor; its eight ancestral shields include Rosenberg. The accompanying entry identifies the other monument as that of Sibylla Fuchs and discusses earlier misidentifications of the pair.",
-      "url": "https://drive.google.com/thumbnail?id=1pviVrd0iaVt82DXE47e7D0eBzilsolhY&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1pviVrd0iaVt82DXE47e7D0eBzilsolhY&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0958,
+          "y": 0.4686,
+          "width": 0.0759,
+          "height": 0.1161,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "effigy",
@@ -14,7 +23,16 @@
       "date": "1520",
       "source": "Johann Octavian Salver, Proben des hohen Teütschen Reichs Adels (1775), https://play.google.com/store/books/details?id=SqlfAAAAcAAJ — https://drive.google.com/file/d/1f7QY7aBYEgkCJOKan0aSIw4xS1KcgRXe/view",
       "description": "The accompanying text says that Pancratius received a cathedral prebend on 26 June 1505 and also held a prebend at Comburg. It places his burial under the second stone in the fourth row and describes a clerical effigy with four ancestral arms. The text gives his death as 28 November 1520, while its transcription of the inscription gives 28 September 1520.",
-      "url": "https://drive.google.com/thumbnail?id=1f7QY7aBYEgkCJOKan0aSIw4xS1KcgRXe&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1f7QY7aBYEgkCJOKan0aSIw4xS1KcgRXe&sz=w1600",
+      "regions": [
+        {
+          "x": 0.6275,
+          "y": 0.1007,
+          "width": 0.1941,
+          "height": 0.1088,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "effigy",
@@ -30,6 +48,50 @@
           "diedOn": "1358-12-27",
           "date": "1358-12-27"
         }
+      ],
+      "regions": [
+        {
+          "x": 0.428,
+          "y": 0.3964,
+          "width": 0.2186,
+          "height": 0.1479,
+          "name": "Rosenberg"
+        },
+        {
+          "x": 0.6791,
+          "y": 0.5688,
+          "width": 0.1086,
+          "height": 0.0633,
+          "name": "Thüngen"
+        },
+        {
+          "x": 0.2588,
+          "y": 0.5736,
+          "width": 0.1157,
+          "height": 0.0649,
+          "name": "Rosenberg"
+        },
+        {
+          "x": 0.7073,
+          "y": 0.0419,
+          "width": 0.2158,
+          "height": 0.1203,
+          "name": "Rosenberg"
+        },
+        {
+          "x": 0.696,
+          "y": 0.6835,
+          "width": 0.0973,
+          "height": 0.0562,
+          "name": "Uissigheim"
+        },
+        {
+          "x": 0.4563,
+          "y": 0.6448,
+          "width": 0.1622,
+          "height": 0.1179,
+          "name": "Uissigheim"
+        }
       ]
     },
     {
@@ -38,21 +100,55 @@
       "date": "1686",
       "source": "Johann Octavian Salver, Proben des hohen Teütschen Reichs Adels (1775), https://play.google.com/store/books/details?id=SqlfAAAAcAAJ — https://drive.google.com/file/d/10AQsUThd_fpLufAQqyEO3W8wSUErI5Yr/view",
       "description": "The accompanying text states that Vitus Theodoricus ab Ehrthal died on 23 December 1686 and that this memorial marked his burial place, the third stone in the second row. He was a canon at Bamberg and provost of St. Gangolph there. The heraldic memorial includes a shield labeled Rosenberg.",
-      "url": "https://drive.google.com/thumbnail?id=10AQsUThd_fpLufAQqyEO3W8wSUErI5Yr&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=10AQsUThd_fpLufAQqyEO3W8wSUErI5Yr&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0449,
+          "y": 0.2584,
+          "width": 0.2143,
+          "height": 0.1496,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
       "title": "Altes Wappenbuch (Annenberger Codex), St. Pölten, Niederösterreichisches Landesarchiv, HS StA 0162",
       "source": "https://www.noela.findbuch.net/php/view.php?link=485320537441x16#&path=http://augias.noel.gv.at/05_Sammlungen/HS/HS-StA/HS_0162/HS_0162_Nr_189.jpg — https://www.noela.findbuch.net/php/gtpc.php?be_id=12&ve_id=1393432&count=188 — https://drive.google.com/file/d/116QCXQoAWBQeNb6pvBq6WGvKTTLVqHJ-/view",
       "description": "Image HS_0162_Nr_189, showing a two-page spread.",
-      "url": "https://drive.google.com/thumbnail?id=116QCXQoAWBQeNb6pvBq6WGvKTTLVqHJ-&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=116QCXQoAWBQeNb6pvBq6WGvKTTLVqHJ-&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4958,
+          "y": 0.1636,
+          "width": 0.0977,
+          "height": 0.3497,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
       "title": "Altes Wappenbuch (Annenberger Codex), St. Pölten, Niederösterreichisches Landesarchiv, HS StA 0162",
       "source": "https://www.noela.findbuch.net/php/view.php?link=485320537441x16#&path=http://augias.noel.gv.at/05_Sammlungen/HS/HS-StA/HS_0162/HS_0162_Nr_188.jpg — https://www.noela.findbuch.net/php/gtpc.php?be_id=12&ve_id=1393432&count=187 — https://drive.google.com/file/d/1M3ym659_6FZqWZvRRn4Ldxn9pEthDpxZ/view",
       "description": "Image HS_0162_Nr_188, showing a two-page spread.",
-      "url": "https://drive.google.com/thumbnail?id=1M3ym659_6FZqWZvRRn4Ldxn9pEthDpxZ&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1M3ym659_6FZqWZvRRn4Ldxn9pEthDpxZ&sz=w1600",
+      "regions": [
+        {
+          "x": 0.143,
+          "y": 0.0934,
+          "width": 0.1149,
+          "height": 0.389,
+          "name": "Thüngen"
+        },
+        {
+          "x": 0.4925,
+          "y": 0.5098,
+          "width": 0.0986,
+          "height": 0.335,
+          "name": "Uissigheim"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -60,7 +156,16 @@
       "folio": "130v",
       "source": "https://digi.vatlib.it/view/MSS_Vat.lat.10127/0264 — https://digi.vatlib.it/iiif/MSS_Vat.lat.10127/manifest.json — https://drive.google.com/file/d/14AU2EttuYSh7PrXtLbvyCny1dwbr1AAj/view",
       "description": "Folio 130v, identified in the DigiVatLib IIIF manifest. Image © Biblioteca Apostolica Vaticana. DigiVatLib permits free use for personal study; printed or online publication requires permission.",
-      "url": "https://drive.google.com/thumbnail?id=14AU2EttuYSh7PrXtLbvyCny1dwbr1AAj&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=14AU2EttuYSh7PrXtLbvyCny1dwbr1AAj&sz=w1600",
+      "regions": [
+        {
+          "x": 0.3904,
+          "y": 0.0815,
+          "width": 0.2193,
+          "height": 0.2626,
+          "name": "Erligheim"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -68,7 +173,16 @@
       "folio": "108r",
       "source": "https://digi.vatlib.it/view/MSS_Vat.lat.10127/0219 — https://digi.vatlib.it/iiif/MSS_Vat.lat.10127/manifest.json — https://drive.google.com/file/d/1tj1zfQgyTPCrHWs3yHvHqznQF-oZgQ_K/view",
       "description": "Folio 108r, identified in the DigiVatLib IIIF manifest. Image © Biblioteca Apostolica Vaticana. DigiVatLib permits free use for personal study; printed or online publication requires permission.",
-      "url": "https://drive.google.com/thumbnail?id=1tj1zfQgyTPCrHWs3yHvHqznQF-oZgQ_K&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1tj1zfQgyTPCrHWs3yHvHqznQF-oZgQ_K&sz=w1600",
+      "regions": [
+        {
+          "x": 0.157,
+          "y": 0.6018,
+          "width": 0.2846,
+          "height": 0.2416,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -76,7 +190,16 @@
       "folio": "92v",
       "source": "https://digi.vatlib.it/view/MSS_Vat.lat.10127/0188 — https://digi.vatlib.it/iiif/MSS_Vat.lat.10127/manifest.json — https://drive.google.com/file/d/1rs6gDUybbKQlzUkp7b2mKqD0FYQP6dmj/view",
       "description": "Folio 92v, identified in the DigiVatLib IIIF manifest. Image © Biblioteca Apostolica Vaticana. DigiVatLib permits free use for personal study; printed or online publication requires permission.",
-      "url": "https://drive.google.com/thumbnail?id=1rs6gDUybbKQlzUkp7b2mKqD0FYQP6dmj&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1rs6gDUybbKQlzUkp7b2mKqD0FYQP6dmj&sz=w1600",
+      "regions": [
+        {
+          "x": 0.1882,
+          "y": 0.5702,
+          "width": 0.2856,
+          "height": 0.2507,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -84,7 +207,16 @@
       "folio": "80r",
       "source": "https://digi.vatlib.it/view/MSS_Vat.lat.10127/0163 — https://digi.vatlib.it/iiif/MSS_Vat.lat.10127/manifest.json — https://drive.google.com/file/d/1d7yC_GxgNTc67XvOAwbK3cBhjtOU_alu/view",
       "description": "Folio 80r, identified in the DigiVatLib IIIF manifest. Image © Biblioteca Apostolica Vaticana. DigiVatLib permits free use for personal study; printed or online publication requires permission.",
-      "url": "https://drive.google.com/thumbnail?id=1d7yC_GxgNTc67XvOAwbK3cBhjtOU_alu&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1d7yC_GxgNTc67XvOAwbK3cBhjtOU_alu&sz=w1600",
+      "regions": [
+        {
+          "x": 0.3491,
+          "y": 0.3287,
+          "width": 0.2464,
+          "height": 0.2669,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -280,7 +412,16 @@
       "date": "1501-1600",
       "source": "https://archive.org/details/bnf_ms_allemand_304/page/n569/mode/1up — https://drive.google.com/file/d/1zOhiyl8WrOhoZwiXFACe27OLz5yK62PI/view",
       "description": "Internet Archive leaf n569. The Internet Archive description dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1zOhiyl8WrOhoZwiXFACe27OLz5yK62PI&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1zOhiyl8WrOhoZwiXFACe27OLz5yK62PI&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0709,
+          "y": 0.0709,
+          "width": 0.3622,
+          "height": 0.4164,
+          "name": "Uissigheim"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -288,7 +429,16 @@
       "date": "1501-1600",
       "source": "https://archive.org/details/bnf_ms_allemand_304/page/n516/mode/1up — https://drive.google.com/file/d/1lnZGCuHdLc0hNf39kDPcgRKRap1jrOlS/view",
       "description": "Internet Archive leaf n516. The Internet Archive description dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1lnZGCuHdLc0hNf39kDPcgRKRap1jrOlS&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1lnZGCuHdLc0hNf39kDPcgRKRap1jrOlS&sz=w1600",
+      "regions": [
+        {
+          "x": 0.2184,
+          "y": 0.2022,
+          "width": 0.2587,
+          "height": 0.3013,
+          "name": "Thüngen"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -296,7 +446,16 @@
       "date": "1501-1600",
       "source": "https://archive.org/details/bnf_ms_allemand_304/page/n457/mode/1up — https://drive.google.com/file/d/16RoUP8EPrUsMzRHC4uwlmFrNuM-fWVjC/view",
       "description": "Internet Archive leaf n457. The Internet Archive description dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=16RoUP8EPrUsMzRHC4uwlmFrNuM-fWVjC&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=16RoUP8EPrUsMzRHC4uwlmFrNuM-fWVjC&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0924,
+          "y": 0.0927,
+          "width": 0.2761,
+          "height": 0.4228,
+          "name": "not Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -304,7 +463,16 @@
       "date": "1501-1600",
       "source": "https://archive.org/details/bnf_ms_allemand_304/page/n455/mode/1up — https://drive.google.com/file/d/1iI2WO_S7oej0LcG0D9IBMl724B50oBs-/view",
       "description": "Internet Archive leaf n455. The Internet Archive description dates the manuscript to the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1iI2WO_S7oej0LcG0D9IBMl724B50oBs-&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1iI2WO_S7oej0LcG0D9IBMl724B50oBs-&sz=w1600",
+      "regions": [
+        {
+          "x": 0.318,
+          "y": 0.1131,
+          "width": 0.3235,
+          "height": 0.4066,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -331,7 +499,16 @@
       "folio": "270v",
       "source": "https://www.digitale-sammlungen.de/de/view/bsb00018706?page=610",
       "description": "Dated by the Bayerische Staatsbibliothek to the first half of the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1Hg7F9bEaBPgrZOcUVqRvBNt6DvwCqL9K&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1Hg7F9bEaBPgrZOcUVqRvBNt6DvwCqL9K&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0311,
+          "y": 0.0428,
+          "width": 0.2804,
+          "height": 0.2956,
+          "name": "swans"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -340,7 +517,16 @@
       "folio": "213r",
       "source": "https://www.digitale-sammlungen.de/de/view/bsb00018706?page=493",
       "description": "Dated by the Bayerische Staatsbibliothek to the first half of the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1BMKLVOPjgoE-zjOsAQQWldSBTF7KynHe&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1BMKLVOPjgoE-zjOsAQQWldSBTF7KynHe&sz=w1600",
+      "regions": [
+        {
+          "x": 0.4142,
+          "y": 0.0084,
+          "width": 0.3114,
+          "height": 0.3785,
+          "name": "Erligheim"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -349,7 +535,23 @@
       "folio": "207v",
       "source": "https://www.digitale-sammlungen.de/de/view/bsb00018706?page=482",
       "description": "Dated by the Bayerische Staatsbibliothek to the first half of the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1BWUbGq0Hu_JWB9eInOaRlarO9Twmwl-a&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1BWUbGq0Hu_JWB9eInOaRlarO9Twmwl-a&sz=w1600",
+      "regions": [
+        {
+          "x": 0.5255,
+          "y": 0.0204,
+          "width": 0.2751,
+          "height": 0.3237,
+          "name": "Thüngen"
+        },
+        {
+          "x": 0.0276,
+          "y": 0.0751,
+          "width": 0.3006,
+          "height": 0.2676,
+          "name": "Uissigheim"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -358,7 +560,16 @@
       "folio": "201r",
       "source": "https://www.digitale-sammlungen.de/de/view/bsb00018706?page=469",
       "description": "Dated by the Bayerische Staatsbibliothek to the first half of the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1HlDChAn5x-BKZmmvHB0cvXF9YYx_jDmX&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1HlDChAn5x-BKZmmvHB0cvXF9YYx_jDmX&sz=w1600",
+      "regions": [
+        {
+          "x": 0.1889,
+          "y": 0.3912,
+          "width": 0.2781,
+          "height": 0.2935,
+          "name": "Erligheim"
+        }
+      ]
     },
     {
       "label": "armorial",
@@ -367,7 +578,16 @@
       "folio": "199r",
       "source": "https://www.digitale-sammlungen.de/de/view/bsb00018706?page=465",
       "description": "Dated by the Bayerische Staatsbibliothek to the first half of the 16th century.",
-      "url": "https://drive.google.com/thumbnail?id=1xl0hg2b1IiGGQvlDSm57xu7PGhR_0lJX&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1xl0hg2b1IiGGQvlDSm57xu7PGhR_0lJX&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0064,
+          "y": 0.066,
+          "width": 0.2017,
+          "height": 0.2753,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "armorial",
