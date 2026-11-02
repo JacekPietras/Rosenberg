@@ -53,7 +53,38 @@ export function setupImageLightbox({ state, repository, rerender }) {
   let transcriptionUrl = '';
   let transcriptionOriginalSrc = '';
   let transcriptionLanguage = '';
+  let transcriptionZoom = 1;
+  let transcriptionFocus = { x: 0.5, y: 0.5 };
+  const applyTranscriptionZoom = () => {
+    const width = stage.clientWidth, height = stage.clientHeight;
+    if (!width || !height || !image.naturalWidth || !image.naturalHeight) return;
+    const scale = Math.min(width / image.naturalWidth, height / image.naturalHeight);
+    const fittedWidth = image.naturalWidth * scale, fittedHeight = image.naturalHeight * scale;
+    const left = (width - fittedWidth) / 2, top = (height - fittedHeight) / 2;
+    const x = Math.max(width - (left + fittedWidth) * transcriptionZoom, Math.min(-left * transcriptionZoom, width / 2 - (left + transcriptionFocus.x * fittedWidth) * transcriptionZoom));
+    const y = Math.max(height - (top + fittedHeight) * transcriptionZoom, Math.min(-top * transcriptionZoom, height / 2 - (top + transcriptionFocus.y * fittedHeight) * transcriptionZoom));
+    image.style.transformOrigin = '0 0';
+    image.style.transform = `translate(${x}px, ${y}px) scale(${transcriptionZoom})`;
+  };
+  const setTranscriptionFocusFromPointer = (event) => {
+    if (!image.naturalWidth || !image.naturalHeight) return;
+    const rect = stage.getBoundingClientRect();
+    const scale = Math.min(rect.width / image.naturalWidth, rect.height / image.naturalHeight);
+    const fittedWidth = image.naturalWidth * scale, fittedHeight = image.naturalHeight * scale;
+    const left = rect.left + (rect.width - fittedWidth) / 2;
+    const top = rect.top + (rect.height - fittedHeight) / 2;
+    transcriptionFocus = {
+      x: Math.max(0, Math.min(1, (event.clientX - left) / fittedWidth)),
+      y: Math.max(0, Math.min(1, (event.clientY - top) / fittedHeight)),
+    };
+  };
   const setTranscriptionMode = (active) => {
+    if (!active) {
+      transcriptionZoom = 1;
+      transcriptionFocus = { x: 0.5, y: 0.5 };
+      image.style.transform = '';
+      image.style.transformOrigin = '';
+    }
     annotations.hidden = active;
     if (regionOverlay) regionOverlay.hidden = active;
     if (transcriptionPanel) transcriptionPanel.hidden = !active;
@@ -228,7 +259,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
       : `/api/drive-thumbnail?id=${encodeURIComponent(cropDriveId)}&size=original&scope=${path?.startsWith('data/documents/') ? 'documents' : 'images'}`;
     let sourceIndex = 0;
     image.onerror = () => { sourceIndex += 1; if (sourceIndex < sources.length) image.src = sources[sourceIndex]; };
-    image.onload = () => { updateGeometry(); updatePreview(); };
+    image.onload = () => { updateGeometry(); updatePreview(); if (transcriptionZoom > 1) applyTranscriptionZoom(); };
     image.referrerPolicy = 'no-referrer';
     image.alt = link.querySelector('img')?.alt || (typeof item === 'object' ? item?.name : '') || '';
     const imageDescription = (typeof item === 'object' && item?.description) || link.dataset.imageDescription || '';
@@ -372,6 +403,10 @@ export function setupImageLightbox({ state, repository, rerender }) {
         transcriptionOriginalSrc = image.src;
         transcriptionUrl = URL.createObjectURL(blob);
         image.src = transcriptionUrl;
+        transcriptionZoom = 1;
+        transcriptionFocus = { x: 0.5, y: 0.5 };
+        image.style.transform = '';
+        image.style.transformOrigin = '';
         setTranscriptionMode(true);
         transcriptionButton.textContent = 'Full image';
       } finally { bitmap.close(); }
@@ -379,6 +414,18 @@ export function setupImageLightbox({ state, repository, rerender }) {
       console.error('Could not show the transcription region', error);
       setStatus(error?.message || String(error), true);
     } finally { transcriptionButton.disabled = false; }
+  });
+  stage.addEventListener('wheel', (event) => {
+    if (!lightbox.classList.contains('is-transcription-mode')) return;
+    event.preventDefault();
+    setTranscriptionFocusFromPointer(event);
+    transcriptionZoom = Math.max(1, Math.min(8, transcriptionZoom * (event.deltaY < 0 ? 1.2 : 1 / 1.2)));
+    applyTranscriptionZoom();
+  }, { passive: false });
+  stage.addEventListener('pointermove', (event) => {
+    if (!lightbox.classList.contains('is-transcription-mode') || transcriptionZoom <= 1) return;
+    setTranscriptionFocusFromPointer(event);
+    applyTranscriptionZoom();
   });
   transcriptionInput?.addEventListener('input', () => {
     if (context?.entry && transcriptionLanguage) context.entry[transcriptionLanguage] = transcriptionInput.value;
