@@ -29,7 +29,7 @@ Erkinger
 Ernst
 Franz, Franziskus
 Friedmann
-Friedrich, Friderich, Fridrich, Fridericus, Friderici, Friderico, Fritz, Fritze, Friz, Frize
+Friedrich, Friderich, Fridrich, Fridericus, Friderici, Friderico, Fritz, Fritze, Friz, Frize, Frederick
 Frizo
 Georg, Gorg, Jörg
 Gerhard, Gerhardus
@@ -53,7 +53,7 @@ Kunz, Cunz, Konz, Conz, Concz, Contz, Contze, Kontz, Kuntz, Cuntz, Cuncze, Guntz
 Leonhard, Leonhart, Lienhart, Leonhardus, Leonardus, Lenhart, Linhard, Linhart
 Leopold, Lupold, Luppold
 Lorenz
-Ludwig
+Ludwig, Ludewig
 Lutz
 Mangold
 Marquard
@@ -71,14 +71,14 @@ Reichard, Reichart, Richard
 Reinbot
 Reinhard, Reinhart
 Rüdiger, Rüdger
-Rudolf
+Rudolf, Rudolph
 Ruprecht, Rupert, Rupertus
 Sebastian
 Seibott
 Senant, Synant
 Siboto
 Siegfried
-Siegmund, Sigmund
+Siegmund, Sigmund, Siegemund
 Stephan, Stefan
 Thame
 Thomas, Thoman
@@ -90,8 +90,8 @@ Weigrecht
 Wenceslaus, Wenzel
 Wernher
 Wilhelm, Wilhem
-Wiprecht, Wibrecht, Wynprecht, Wyprecht, Wipert
-Wolf
+Wiprecht, Wibrecht, Wynprecht, Wyprecht, Wipert, Welprecht
+Wolf, Wolff
 Wolfgang
 Yttel
 Zaisolph, Zeisolf
@@ -145,8 +145,9 @@ Walpurga
 Willertraud
 Wiltraut
 Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele, Wyklo
+Magdalena
 
 # Other
 
-Mönch, Münch, Munch, Mönich, Monich // it derives from "Monk"
+Mönch, Münch, Munch, Mönich, Monich, Münchin, Mönchin // it derives from "Monk"
 Schenk

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Expand 'von und zu NAME' in English text and split fact titles.
+"""Expand 'von und zu NAME' and 'von u. zu NAME' and split fact titles.
 
 Preview changes by default; pass --apply to write them. Optional paths limit
 the scan to JSON files or directories (default: source JSON under data/).
@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 # A single name component, including accented letters, apostrophes and hyphens.
-FORM = re.compile(r"\bvon und zu ([^\W\d_]+(?:[-’'][^\W\d_]+)*)", re.UNICODE)
+FORM = re.compile(r"\bvon (?:und|u\.) zu ([^\W\d_]+(?:[-’'][^\W\d_]+)*)", re.UNICODE)
 
 
 def expand(value):
