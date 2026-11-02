@@ -186,7 +186,7 @@ export function createSealScreen({
     const entries = allEntries.filter((entry) => (!selected.size || sealMatchesSelected(entry.title, selected)) && sealMatchesType(entry, state.sealType));
     const content = entries.map((entry, index) => {
       const person = (state.personRecords || []).find((item) => item?.id === entry.title.replace(/^\[|\]$/g, ''));
-      const title = entry.title ? `<h3>${person ? `<a class="person-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>` : titleMarkup(entry.title)}</h3>` : '';
+      const title = entry.title ? `<h3>${person ? `<a class="person-link person-id-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>` : titleMarkup(entry.title)}</h3>` : '';
       const dateMarkup = entry.date ? `<small>${escapeHtml(formatDate(entry.date))}</small>` : '';
       const sourceMarkup = entry.source ? `<p class="source">${sealSourceMarkup(entry.source)}</p>` : '';
       const recordUrl = entry.source ? sealRecordUrlMarkup(entry.source) || urlMarkup(entry.url) : urlMarkup(entry.url);

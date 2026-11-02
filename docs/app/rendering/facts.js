@@ -77,7 +77,7 @@ export function renderFactText(fact, { people = [], personNames = [], inlineMark
       const person = peopleById.get(value);
       const name = person?.name || String(value || '');
       const title = titles(designations);
-      return `<a class="person-link" href="?person=${encodeURIComponent(person?.id || name)}">${escapeHtml(name)}</a>${title ? `, ${escapeHtml(title)}` : ''}`;
+      return `<a class="person-link${person?.id ? ' person-id-link' : ''}" href="?person=${encodeURIComponent(person?.id || name)}">${escapeHtml(name)}</a>${title ? `, ${escapeHtml(title)}` : ''}`;
     }, (value) => inlineMarkup ? inlineMarkup(String(value ?? '')) : escapeHtml(value));
   }
   return '';

@@ -18,6 +18,8 @@
   --place-link-hover: #ffc078;
   --person-link: #91c7ff;
   --person-link-hover: #c4e2ff;
+  --person-id-link: #8bd49c;
+  --person-id-link-hover: #b2edbd;
 }
 
 :root[data-theme="light"] {
@@ -39,6 +41,8 @@
   --place-link-hover: #82470c;
   --person-link: #1769aa;
   --person-link-hover: #125386;
+  --person-id-link: #21833b;
+  --person-id-link-hover: #17652c;
 }
 
 * { box-sizing: border-box; }
@@ -177,6 +181,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .place-link:hover, .place-link:focus { color: var(--place-link-hover); }
 .person-link { color: var(--person-link); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--person-link) 55%, transparent); text-underline-offset: .14em; }
 .person-link:hover, .person-link:focus { color: var(--person-link-hover); }
+.person-id-link { color: var(--person-id-link); text-decoration-color: color-mix(in srgb, var(--person-id-link) 55%, transparent); }
+.person-id-link:hover, .person-id-link:focus { color: var(--person-id-link-hover); }
 .target-family-name { color: var(--danger) !important; }
 .place-variants { margin: .2rem 0 0; color: var(--muted); font-size: .8rem; }
 .place-mention { border-top: 1px solid var(--line); cursor: pointer; transition: border-color .15s ease, box-shadow .15s ease; }

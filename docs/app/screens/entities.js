@@ -107,7 +107,7 @@ export function createEntityScreens({
     const people = getPeople();
     if (state.sourcePersonChoices?.reference === state.person && state.familyGraph?.valid) {
       const { name, matches } = state.sourcePersonChoices;
-      return `<article class="document"><h2>${escapeHtml(name)}</h2><p>This source identity ${matches.length ? 'separates into several groups' : 'is not present'} in the selected evidence view.</p><ul>${matches.map((person) => `<li><a class="person-link" href="?person=${encodeURIComponent(person.id || person._treeKey)}">${escapeHtml(person.name)}</a> · ${escapeHtml((person.reconstruction?.dates || []).join(', '))}</li>`).join('')}</ul><a href="?tab=tree">Open the family tree</a></article>`;
+      return `<article class="document"><h2>${escapeHtml(name)}</h2><p>This source identity ${matches.length ? 'separates into several groups' : 'is not present'} in the selected evidence view.</p><ul>${matches.map((person) => `<li><a class="person-link${person.id ? ' person-id-link' : ''}" href="?person=${encodeURIComponent(person.id || person._treeKey)}">${escapeHtml(person.name)}</a> · ${escapeHtml((person.reconstruction?.dates || []).join(', '))}</li>`).join('')}</ul><a href="?tab=tree">Open the family tree</a></article>`;
     }
     const resolution = resolvePerson(people, state.person);
     const exactAnchor = people.some((person) => person.id && person.id === state.person);

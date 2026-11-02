@@ -19,7 +19,7 @@ export function relationshipPanel(graph, key = null) {
   const records = new Map(graph.records.map((person) => [person._treeKey, person]));
   const link = (key) => {
     const person = records.get(key);
-    return `<a class="person-link" href="?person=${encodeURIComponent(person.id || (person._evidence ? person._treeKey : person.name))}">${escapeHtml(person.name)}</a>`;
+    return `<a class="person-link${person.id ? ' person-id-link' : ''}" href="?person=${encodeURIComponent(person.id || (person._evidence ? person._treeKey : person.name))}">${escapeHtml(person.name)}</a>`;
   };
   const edges = key ? graph.reverse.get(key) || [] : graph.edges;
   if (!edges.length) return '<section class="entity-relationships"><h3>Reconstructed relationships</h3><p>No resolved relationships in this evidence view.</p></section>';

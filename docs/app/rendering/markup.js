@@ -10,7 +10,7 @@ export function createMarkupRenderer({ state }) {
     const peopleById = new Map((state.people || []).filter((person) => person.id).map((person) => [person.id, person]));
     text = text.replace(/\[([^\]]+)\]/g, (match, id) => {
       const person = peopleById.get(id);
-      return person ? token(`<a class="person-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>`) : match;
+      return person ? token(`<a class="person-link person-id-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>`) : match;
     });
     if (state.sourcePersonPattern) text = text.replace(state.sourcePersonPattern, (match) =>
       token(`<a class="person-link" href="?person=${encodeURIComponent(match)}">${match}</a>`));
@@ -37,7 +37,7 @@ export function createMarkupRenderer({ state }) {
 
   function personMarkup(value = '') {
     const person = (state.people || []).find((item) => item.id === String(value).replace(/^\[|\]$/g, ''));
-    return person ? `<a class="person-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>` : inlineMarkup(value);
+    return person ? `<a class="person-link person-id-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>` : inlineMarkup(value);
   }
 
   function markdownMarkup(value = '', linkEntities = true) {
