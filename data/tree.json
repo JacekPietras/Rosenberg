@@ -395,16 +395,16 @@
     "data/documents/1621-10-28.json": "sha256:17792926b9ffdf5c5c7ffb1947959b19db1dcd1462bb81cc14187edb5f470534",
     "data/documents/1626-02-22.json": "sha256:f3064ddd3ae00b667d4a6268686b3e380ce005eedaff75412652758723afccde",
     "data/documents/1804-05-15.json": "sha256:86aa753836c8eaac5774d179c1ec43f243e7ec5f003f074db5b016bdf20351d6",
-    "data/images/images.json": "sha256:8f502df11fc47819a1a001ddbc8b2bd1831571dc380f3a94e5ba6160c2fd40e2",
+    "data/images/images.json": "sha256:b391b557eb72e7e049ded0cb2022e7806219a97d9a3c4925d3309d19fec0659a",
     "data/kinship.md": "sha256:a107f5093e44e57a84c9fda420fb88305b175def759b362f1da7779f3fdc9cba",
     "data/matching.json": "sha256:b9d25227bdd14db418946ca93eac56822e2ff4e11a63a25e4c9648f2abdae595",
     "data/names.md": "sha256:433dd9eb4e5b459147dc28f230e90716ba7d6c2599889b94e393fb1ab945f672",
     "data/notes/notes.json": "sha256:a33e162e8b4aca9261bbc132c2f2a4aacc82f84b40f38ae52d5777a8a8510ec4",
     "data/people.json": "sha256:c4896ec2f0a318351fee255cfde98aae8949fddffeaf8a04b47a63e607415813",
-    "data/places.json": "sha256:685bbb28c704753bb85e0601286ceac58d726830efea5c370b7330d7022809f1",
+    "data/places.json": "sha256:b5034119f5a68e94eb952f540a6b3e43b20cf3c152e24773a1e3c38556684650",
     "data/titles.md": "sha256:e018ab5b196f7336b3b7385eec8477f496fd909ec54d648e14a34a6377a29797"
   },
-  "fingerprint": "sha256:7e4b4cbff0b5168109bdcbb957cb3dc7bf9f34233b273852141b6eaab1aecfef",
+  "fingerprint": "sha256:70ff9363f187f0e6c62ee89e6c31e1547f9a7688916a48feb2814e7617b12bdb",
   "evidence": {
     "with-guesses": {
       "sources": [
