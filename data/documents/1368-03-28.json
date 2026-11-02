@@ -23,16 +23,16 @@
           ]
         },
         {
-          "person": "Anna von Rosenberg",
+          "person": "Hans Phal von Grünsfeld",
           "personTitle": [
-            "Edelfrau"
-          ],
-          "type": "spouse",
-          "of": "Hans Phal von Grünsfeld",
-          "ofTitle": [
             "Ritter"
           ],
-          "ofDeceased": true
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "Anna von Rosenberg",
+          "ofTitle": [
+            "Edelfrau"
+          ]
         },
         {
           "person": "Anna von Rosenberg",

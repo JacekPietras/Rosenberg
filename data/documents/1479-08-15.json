@@ -12,10 +12,10 @@
       "english": "Eberhard Haselbaum and Hans Meffrise of Königheim settle a dispute over the so-called Heiligen Gut at Buch between the tenants of Mathern von Grumbach and Elisabeth Wolfskelin, widow of Thomas von Rosenberg, on one side and the tenants of Endris Kettel von Bretzingen on the other. Dated 15 August 1479.",
       "facts": [
         {
-          "person": "Elisabeth Wolfskelin",
+          "person": "Thomas von Rosenberg",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Thomas von Rosenberg",
-          "ofDeceased": true
+          "of": "Elisabeth Wolfskelin"
         },
         {
           "person": "Thomas von Rosenberg",

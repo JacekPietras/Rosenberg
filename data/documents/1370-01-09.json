@@ -21,12 +21,12 @@
           "content": "owned land adjoining the meadow of Hans Schelris and his wife Agnes at Michelbach."
         },
         {
-          "person": "Agnes",
-          "type": "spouse",
-          "of": "Hans Schelris",
-          "ofTitle": [
+          "person": "Hans Schelris",
+          "personTitle": [
             "Edelknecht"
-          ]
+          ],
+          "type": "spouse",
+          "of": "Agnes"
         }
       ],
       "img": [

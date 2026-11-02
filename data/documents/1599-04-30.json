@@ -8,13 +8,13 @@
       "english": "At the request of the procurator Lic. jur. Leo Breeckh and by decision of the Imperial Chamber Court under Hans Ludwig von Graveneeg, Emperor Rudolf II appoints Albrecht Christoph von Rosenberg zu Rosenberg of Waldmannshofen, together with Gotfried von Seckendorf of Unter- and Obernzenn and Eberhard von Elttershouen of Ipsheim, Amtmann at Hoheneck, as guardians of the children Georg Albrecht and Philipp Ludwig of the late Hans Georg von Seckendorf of Sugenheim. Hans Georg’s widow Brigitta, née von Rosenberg, gave birth to a daughter, Anna Margareta, after his death.",
       "facts": [
         {
-          "person": "Brigitta von Rosenberg",
-          "type": "spouse",
-          "of": "Hans Georg von Seckendorf",
-          "ofTitle": [
+          "person": "Hans Georg von Seckendorf",
+          "personTitle": [
             "zu Sugenheim"
           ],
-          "ofDeceased": true
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "Brigitta von Rosenberg"
         },
         {
           "person": "Hans Georg von Seckendorf",

@@ -8,13 +8,13 @@
       "english": "Eberhard, Count of Wertheim, grants his wife Katherin the village of Uffingen, which he gave her as a dowry, and later transferred to the honorable people Eberhard von Rosenberg der Jüngere and Margarete von Thüngen, the former housewives of Eberhard von Rosenberg der Ältere, the villages of Dertingen and Waldbüttelbrunn, so that she will receive 50 Pfennig (Würzburg currency) and 50 Malters of Wertheim grain annually from Dertingen and will own Waldbüttelbrunn with all rights until redemption.\n\nSealers: the Count; Eberhard Rüde; Ulrich Pavey; both knights; Arnold von Talheim; Herman Seman; Walther Kotbuss; noble servants",
       "facts": [
         {
-          "person": "margaretha_von_thungen",
-          "type": "spouse",
-          "of": "Eberhard von Rosenberg",
-          "ofTitle": [
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
             "der Ältere"
           ],
-          "ofDeceased": true
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "margaretha_von_thungen"
         },
         {
           "person": "Eberhard von Rosenberg",

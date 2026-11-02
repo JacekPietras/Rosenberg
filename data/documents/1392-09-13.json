@@ -15,12 +15,12 @@
           "type": "title"
         },
         {
-          "person": "Margaretha von Hirschhorn",
-          "type": "spouse",
-          "of": "vitztum_zu_Heidelberg",
-          "ofTitle": [
+          "person": "vitztum_zu_Heidelberg",
+          "personTitle": [
             "Vitztum zu Heidelberg"
-          ]
+          ],
+          "type": "spouse",
+          "of": "Margaretha von Hirschhorn"
         },
         {
           "person": "vitztum_zu_Heidelberg",

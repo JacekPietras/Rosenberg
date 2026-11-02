@@ -8,9 +8,9 @@
       "english": "Heinrich Seman, his wife Elisabeth von Rosenberg, his brother Eckhard Seman and his wife Anne von Leiningen certify that they have sold Hans Spannrücken, son of Seitz Ludener from Hirschlanden, who was their serf (who was our godzlehen), to the Commander and the Lords of the German House in Mergentheim for 19 pounds and 4 shillings and renounce all rights to the aforementioned Hans Spannrücken",
       "facts": [
         {
-          "person": "Elisabeth von Rosenberg",
+          "person": "Heinrich Seman",
           "type": "spouse",
-          "of": "Heinrich Seman"
+          "of": "Elisabeth von Rosenberg"
         },
         {
           "person": "Elisabeth von Rosenberg",
@@ -23,9 +23,9 @@
           "of": "Heinrich Seman"
         },
         {
-          "person": "Anna von Leiningen",
+          "person": "Eckhard Seman",
           "type": "spouse",
-          "of": "Eckhard Seman"
+          "of": "Anna von Leiningen"
         }
       ],
       "img": [

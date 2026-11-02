@@ -16,10 +16,10 @@
           "content": "added a further 500 florins to the 4,000 florins he owed Jutta von Rosenberg and her son Anselm von Rosenberg, secured on Brassoldshaim."
         },
         {
-          "person": "Jutta von Rosenberg",
+          "person": "Ulrich von Rosenberg",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Ulrich von Rosenberg",
-          "ofDeceased": true
+          "of": "Jutta von Rosenberg"
         },
         {
           "person": "Jutta von Rosenberg",

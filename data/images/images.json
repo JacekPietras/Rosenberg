@@ -2667,10 +2667,10 @@
           "date": "1572-05-17"
         },
         {
-          "person": "Rufina von Rosenberg, née Stiebar von Buttenheim",
+          "person": "Albrecht von Rosenberg",
           "personDeceased": true,
           "type": "spouse",
-          "of": "Albrecht von Rosenberg",
+          "of": "Rufina von Rosenberg, née Stiebar von Buttenheim",
           "ofDeceased": true
         },
         {
@@ -2719,10 +2719,10 @@
       ],
       "facts": [
         {
-          "person": "Katharina von Rosenberg, née von Seinsheim",
-          "personDeceased": true,
+          "person": "Albrecht von Rosenberg",
           "type": "spouse",
-          "of": "Albrecht von Rosenberg"
+          "of": "Katharina von Rosenberg, née von Seinsheim",
+          "ofDeceased": true
         },
         {
           "person": "Katharina von Rosenberg, née von Seinsheim",
@@ -2763,10 +2763,10 @@
           "date": "1519-10-16"
         },
         {
-          "person": "Anna von Rosenberg, née von Dienheim",
+          "person": "Eberhard von Rosenberg",
           "personDeceased": true,
           "type": "spouse",
-          "of": "Eberhard von Rosenberg",
+          "of": "Anna von Rosenberg, née von Dienheim",
           "ofDeceased": true
         },
         {
@@ -3380,13 +3380,13 @@
           "date": "1576"
         },
         {
-          "person": "Anna von Sternberg, née von Rosenberg",
-          "type": "spouse",
-          "of": "Hans von Sternberg",
-          "ofTitle": [
+          "person": "Hans von Sternberg",
+          "personTitle": [
             "zu Schenkenau"
           ],
-          "ofDeceased": true,
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "Anna von Sternberg, née von Rosenberg",
           "date": "1576"
         }
       ]
@@ -3492,10 +3492,10 @@
       ],
       "facts": [
         {
-          "person": "Eva von Maßbach, née von Rosenberg",
+          "person": "Christoph von Maßbach",
           "personDeceased": true,
           "type": "spouse",
-          "of": "Christoph von Maßbach",
+          "of": "Eva von Maßbach, née von Rosenberg",
           "ofDeceased": true
         },
         {

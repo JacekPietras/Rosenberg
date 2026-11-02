@@ -9,12 +9,12 @@
       "english": "Eberhard von Menzingen, Ritter, and his wife Ela von Rosenberg sold their properties in Großgartach to Odenheim Monastery for 750 florins.",
       "facts": [
         {
-          "person": "Ela von Rosenberg",
-          "type": "spouse",
-          "of": "Eberhard von Menzingen",
-          "ofTitle": [
+          "person": "Eberhard von Menzingen",
+          "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "spouse",
+          "of": "Ela von Rosenberg"
         },
         {
           "person": "Ela von Rosenberg",

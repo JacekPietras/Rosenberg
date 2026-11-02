@@ -531,6 +531,30 @@ test('tree.json holds computed views while people remains an ID/name registry', 
   assert.ok(!Object.hasOwn(data.tree.inputs, 'data/tree.json'));
 });
 
+test('person pages use the saved tree even when its source evidence has changed', async () => {
+  const data = await externalTreeFixture();
+  data.documents.get(source.path).date = '1400';
+  let rebuilds = 0;
+  const { loader, state } = loaderFor(data, { rebuild: async () => { rebuilds++; } });
+  state.person = data.people[0].id;
+  await loader.loadAll();
+  assert.equal(rebuilds, 0);
+  assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
+  assert.equal(state.familyGraph.edges.length, 1);
+  assert.equal(state.tree, data.tree);
+});
+
+test('person pages do not rebuild a missing saved tree', async () => {
+  const data = await externalTreeFixture();
+  data.tree = null;
+  let rebuilds = 0;
+  const { loader, state } = loaderFor(data, { rebuild: async () => { rebuilds++; } });
+  state.person = data.people[0].id;
+  await loader.loadAll();
+  assert.equal(rebuilds, 0);
+  assert.equal(state.familyGraph.valid, false);
+});
+
 test('active loader reads and rebuilds the separate tree without changing registry entries', async () => {
   const data = await externalTreeFixture();
   const before = JSON.stringify(data.people);

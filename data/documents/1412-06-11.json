@@ -16,10 +16,10 @@
           "of": "Kunz von Rosenberg"
         },
         {
-          "person": "Anna von Bebenburg",
+          "person": "Eberhard von Rosenberg",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Eberhard von Rosenberg",
-          "ofDeceased": true
+          "of": "Anna von Bebenburg"
         },
         {
           "person": "Eberhard von Rosenberg",

@@ -115,6 +115,15 @@ export function createDataLoader({
     state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
     state.familyRepositoryRevision = repository.revision || 0;
     state.snapshot = snapshot;
+    if (state.person) {
+      const tree = await repository.getFamilyTree();
+      const verification = tree ? { valid: true, reason: '' } : { valid: false, reason: 'Saved family tree is unavailable.' };
+      state.tree = tree;
+      state.familyVerification = verification;
+      state.familyGraph = buildRelationshipGraph(state.personRecords, { tree, view: state.familyView, verification });
+      state.familyView = state.familyGraph.view;
+      if (remapSourcePerson(state, lastVerifiedGraph)) onPersonReassigned();
+    }
     if (!recordPaths.some((path) => recordHasMissingSourceOrUrl(path))) state.recordLabels = state.recordLabels.filter((label) => label !== missingRecordLabel);
     if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = [...greyRecordLabels];
     state.sealNames = [...new Set(state.sealNames.map((label) => label.includes('?') ? 'unknown' : label.toLocaleLowerCase()).filter(Boolean))];

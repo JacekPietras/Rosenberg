@@ -31,10 +31,10 @@
           "content": "witnessed Margarethe von Erbach’s transfer of debt letters to the Count Palatine."
         },
         {
-          "person": "Margaretha von Erbach",
+          "person": "Engelhard von Hirschhorn",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Engelhard von Hirschhorn",
-          "ofDeceased": true
+          "of": "Margaretha von Erbach"
         }
       ]
     }

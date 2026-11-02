@@ -17,12 +17,12 @@
           ]
         },
         {
-          "person": "Margaretha",
-          "type": "spouse",
-          "of": "eberhard_jagstberg",
-          "ofTitle": [
+          "person": "eberhard_jagstberg",
+          "personTitle": [
             "der Jüngere"
-          ]
+          ],
+          "type": "spouse",
+          "of": "Margaretha"
         },
         {
           "person": "Margaretha",

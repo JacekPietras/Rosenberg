@@ -36,10 +36,10 @@
           "content": "sealed the cancelled debt letter issued by Hans von Seckendorf to Elisabeth, widow of Herman Vorhtel."
         },
         {
-          "person": "Elisabeth",
+          "person": "Herman Vorhtel",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Herman Vorhtel",
-          "ofDeceased": true
+          "of": "Elisabeth"
         }
       ]
     }

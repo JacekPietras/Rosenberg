@@ -13,13 +13,13 @@
           "diedBefore": "1471"
         },
         {
-          "person": "Margaretha Zobel",
-          "type": "spouse",
-          "of": "Georg von Rosenberg",
-          "ofTitle": [
+          "person": "Georg von Rosenberg",
+          "personTitle": [
             "zu Boxberg"
           ],
-          "ofDeceased": true
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "Margaretha Zobel"
         },
         {
           "person": "Georg von Rosenberg",

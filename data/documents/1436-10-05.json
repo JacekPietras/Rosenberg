@@ -8,9 +8,9 @@
       "english": "Arnold von Rosenberg and his wife Christine von Handschuhsheim sell their district to Boxberg, which they had bought from Konrad von Rosenberg, Ritter, at 6,500 guilders to their sons Ulrich and Jörg von Rosenberg.",
       "facts": [
         {
-          "person": "Christiana von Handschuhsheim",
+          "person": "arnold_boxberg",
           "type": "spouse",
-          "of": "arnold_boxberg"
+          "of": "Christiana von Handschuhsheim"
         },
         {
           "person": "arnold_boxberg",

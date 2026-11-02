@@ -22,21 +22,21 @@
           ]
         },
         {
-          "person": "Anna von Sickingen",
-          "type": "spouse",
-          "of": "Kunz von Rosenberg",
-          "ofTitle": [
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
             "der Ältere",
             "zu Minnenberg"
-          ]
+          ],
+          "type": "spouse",
+          "of": "Anna von Sickingen"
         },
         {
-          "person": "Christiana von Handschuhsheim",
-          "type": "spouse",
-          "of": "arnold_boxberg",
-          "ofTitle": [
+          "person": "arnold_boxberg",
+          "personTitle": [
             "Knecht"
-          ]
+          ],
+          "type": "spouse",
+          "of": "Christiana von Handschuhsheim"
         },
         {
           "person": "Kunz von Rosenberg",

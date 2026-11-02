@@ -116,10 +116,10 @@
           "date": "0943"
         },
         {
-          "person": "Anna von Rosenberg",
+          "person": "Rudolf von Thüngen",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Rudolf von Thüngen",
-          "ofDeceased": true,
+          "of": "Anna von Rosenberg",
           "date": "0942"
         },
         {
@@ -216,10 +216,10 @@
           "date": "1158"
         },
         {
-          "person": "Willertraud von Rosenberg",
+          "person": "Alban von Freundsberg",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Alban von Freundsberg",
-          "ofDeceased": true,
+          "of": "Willertraud von Rosenberg",
           "date": "1080"
         },
         {
@@ -364,13 +364,13 @@
           "date": "1403"
         },
         {
-          "person": "Margaretha von Rosenberg",
-          "type": "spouse",
-          "of": "Hans von Egloffstein",
-          "ofTitle": [
+          "person": "Hans von Egloffstein",
+          "personTitle": [
             "Senior",
             "von und zu Egloffstein und Bärenfels"
           ],
+          "type": "spouse",
+          "of": "Margaretha von Rosenberg",
           "date": "1380"
         },
         {
@@ -795,9 +795,9 @@
           "date": "1553"
         },
         {
-          "person": "Rufina Stiebar von Buttenheim",
+          "person": "Anton Rüdt von Collenberg",
           "type": "spouse",
-          "of": "Anton Rüdt von Collenberg",
+          "of": "Rufina Stiebar von Buttenheim",
           "date": "1553"
         },
         {
@@ -907,9 +907,9 @@
           "date": "1439"
         },
         {
-          "person": "Gertraud von Rosenberg",
+          "person": "Hans Rüdt von Eubigheim",
           "type": "spouse",
-          "of": "Hans Rüdt von Eubigheim",
+          "of": "Gertraud von Rosenberg",
           "date": "1460"
         },
         {
@@ -986,9 +986,9 @@
           "date": "1486"
         },
         {
-          "person": "Christiana von Rosenberg",
+          "person": "Heinrich Fuchs von Walburg",
           "type": "spouse",
-          "of": "Heinrich Fuchs von Walburg",
+          "of": "Christiana von Rosenberg",
           "date": "1421"
         },
         {
@@ -1080,12 +1080,12 @@
           "date": "1486"
         },
         {
-          "person": "Ursula von Rosenberg",
-          "type": "spouse",
-          "of": "Friedrich Marschall von Ebnet",
-          "ofTitle": [
+          "person": "Friedrich Marschall von Ebnet",
+          "personTitle": [
             "zu Ebnet und Wildenberg"
           ],
+          "type": "spouse",
+          "of": "Ursula von Rosenberg",
           "date": "1528-01-01"
         }
       ]
@@ -1323,38 +1323,38 @@
           "date": "1486"
         },
         {
-          "person": "Barbara von Rosenberg",
-          "type": "spouse",
-          "of": "Hans Georg von Aschhausen",
-          "ofTitle": [
+          "person": "Hans Georg von Aschhausen",
+          "personTitle": [
             "zu Aschhausen und Biringen"
           ],
+          "type": "spouse",
+          "of": "Barbara von Rosenberg",
           "date": "1515"
         },
         {
-          "person": "Barbara von Rosenberg",
+          "person": "Hans von Ehrenberg",
           "type": "spouse",
-          "of": "Hans von Ehrenberg",
+          "of": "Barbara von Rosenberg",
           "date": "1541"
         },
         {
-          "person": "Eva von Rosenberg",
-          "type": "spouse",
-          "of": "Christoph von Mosbach",
-          "ofTitle": [
+          "person": "Christoph von Mosbach",
+          "personTitle": [
             "zu Madenhausen"
           ],
+          "type": "spouse",
+          "of": "Eva von Rosenberg",
           "date": "1559"
         },
         {
-          "person": "Margaretha von Rosenberg",
-          "type": "spouse",
-          "of": "Wilhelm von Schaunberg",
-          "ofTitle": [
+          "person": "Wilhelm von Schaunberg",
+          "personTitle": [
             "zu Dindorf",
             "Ritter"
           ],
-          "ofDeceased": true,
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "Margaretha von Rosenberg",
           "date": "1568"
         },
         {
@@ -1629,18 +1629,18 @@
           "date": "1573"
         },
         {
-          "person": "Felicitas von Rosenberg",
+          "person": "Wolfgang Dietrich Rüdt von Collenberg",
           "type": "spouse",
-          "of": "Wolfgang Dietrich Rüdt von Collenberg",
+          "of": "Felicitas von Rosenberg",
           "date": "1567-05-27"
         },
         {
-          "person": "Ursula von Rosenberg",
-          "type": "spouse",
-          "of": "Hans Wolf von Lentersheim",
-          "ofTitle": [
+          "person": "Hans Wolf von Lentersheim",
+          "personTitle": [
             "zu Altenmuhr"
           ],
+          "type": "spouse",
+          "of": "Ursula von Rosenberg",
           "date": "1543"
         },
         {
@@ -1746,9 +1746,9 @@
           "date": "1562-08-27"
         },
         {
-          "person": "Regina Kunigunde von Rosenberg",
+          "person": "Georg Eyrich von Ehrthal",
           "type": "spouse",
-          "of": "Georg Eyrich von Ehrthal",
+          "of": "Regina Kunigunde von Rosenberg",
           "date": "1586"
         },
         {
@@ -1803,13 +1803,13 @@
           "date": "1495"
         },
         {
-          "person": "Margaretha von Rosenberg",
-          "type": "spouse",
-          "of": "Mangold von Ehenheim",
-          "ofTitle": [
+          "person": "Mangold von Ehenheim",
+          "personTitle": [
             "Ritter",
             "zum Brandenstein"
           ],
+          "type": "spouse",
+          "of": "Margaretha von Rosenberg",
           "date": "1516"
         },
         {
@@ -1950,9 +1950,9 @@
           "date": "1539"
         },
         {
-          "person": "Kunigunde von Rosenberg",
+          "person": "Valentin von Stein",
           "type": "spouse",
-          "of": "Valentin von Stein",
+          "of": "Kunigunde von Rosenberg",
           "date": "1550"
         },
         {
@@ -2098,12 +2098,12 @@
       "english": "* Friedrich Zeisolph von Rosenberg to Haltenbergstetten, continued the line to Haltenbergstetten (Tab. CCCCXII.) His wife, Anna von der Keer, Lord Jacob von der Keer of Schwenckersbausen and Roßrieth, hereditary marshal of the High Diocese of Würzburg, as well as High Princely Würzburg bailiff of Mellerstadt, and then his wife Anna von der Keer, a daughter of a woman born in Bemelburg. In 1559, on the Friday after Candlemas, he brought her a confiscation of 1,700 florins to Bishop Friedrich of Würzburg. from his estate in Haltenbergstetten, the village of Neubrunn with all its appurtenances, the deserted village of Deichelbrunn, the hamlet of Oberndorf with all its appurtenances, and the treasury of the tithes in Morlbach, under the condition that as long as she did not move the widow's chair after his death, she should have and enjoy the said goods.\n  * Ursula von Rosenberg. His name is Philipp Geyer von Giebelstadt in Reinsbrunn. He died in 1600, after he had married Rosina, a Schenckin, born in Symau, for the second time.\n  * Brigitta von Rosenberg. Husband, (I) Lord George von Seckendorf, dorff Aberdar of Marck Sugenheim, Deutenheim and Duzenthal, born on March 28, 1565, died on December 23, 1598, in Windsheim, and rests in the church in Marck Sugenheim. (11) Lord Hans Joachim von Seckendorf, called Nolt of Jochsberg, Trautkkirchen and Weisendorff, who married for the second time Mrs. Christina Margaretha, née von Rumrod.\n  * Catherine von Rosenberg. Husband, Lord Gotfried von Seckendorf Aberdar of Ober and Unter Zenn, born on January 4, 1573. Married on March 7, 1604.\n  * Margaretha von Rosenberg. His wife, Lord Bert von Liebenstein zu Liebenstein, High Princely Würzburg Voigt of Lauffen and Bosickheim in 1597.\n  * Sophia von Rosenberg. Husband, Lord Christoph Siegemund of Princely Brandenburg-Wirßberg, stronghold of Culmbach, councillor and court master.\n  * Georg Siegemund von Rosenberg, died in 1630. Wife, (I) Veronica Susanna Wolffskeelin von Reischenberg, Lord Georg Siegesmund Wolffskeel of Reichenberg, Albertshausen, Geroldshausen, Ungershausen, Uttingen, and Lindflur, High Princely Würzburg Bailiff of Röttingen, and Mrs. Aemilia Brigitta Wolffsteelin von Reichenberg, née von Heßberg, daughter. (11) Anna Margaretha von Bulach, Lord Hans Christoph von Bulach, and Mrs. Anna Catharin von Bulach, née von Zaißkam, daughter.\n    * Hans Chriftoph von Rosenberg, died in his youth.\n    * Friedrich Seisolph von Rosenberg, died in childhood.\n    * Adam Christoph von Rosenberg, died in 1629. before the Lord Father\n  * Konrad von Rosenberg zu Gnetsheim, died in 1598 without male heirs. His wife, Catharina von Liebenstein, daughter of Lord Bernhard von Liebenstein, and his wife Margaretha von Liebenstein, née von Hutten.\n  * Albrecht Christpoh von Rosenberg zu Rosenberg, Baltenberg, fretten, Gnetsheim, Schipff and Waldmannsbofen, High Princely Brandenburg Onoldsbachischer noble Ritter, feudal court assessor and Ritter captain of the lordly canton on the Ottenwald, was granted the tithe of Haltenbergstetten on February 28, 1631 by Lord Georg Friederich Count of Hohenlohe, and died in 1632 as the last of his name, family, shield and helmet, without a physical heir. Wife, (I) Margaretha Schenckin von Symau, Lord Adam Ulrich Schenckens von Symau zu Uutern Symau and Birnbaum, High Princely Bamberg Councillor and Bailiff in Höchstadt, as well as Captain in Kronach, then wife Amalia Schenckin von Symau, a née Truchsesin von Weshausen, daughter, born in 1564, on March 16, married in 1582, on September 15, died in 1619, on May 19. (11) Sibylla von Rabenstein, daughter of Lord Siegemund von Rabenstein.",
       "facts": [
         {
-          "person": "Katharina von Rosenberg",
-          "type": "spouse",
-          "of": "Gotfried von Seckendorf",
-          "ofTitle": [
+          "person": "Gotfried von Seckendorf",
+          "personTitle": [
             "Aberdar zu Ober- und Unterzenn"
           ],
+          "type": "spouse",
+          "of": "Katharina von Rosenberg",
           "date": "1595"
         },
         {

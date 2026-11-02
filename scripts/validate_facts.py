@@ -86,6 +86,7 @@ class Validator:
         self.person_names = set()
         self.people_by_id = {}
         self.given_name_variants = {}
+        self.given_name_genders = {}
         self.place_name_variants = {}
         self.load_name_variants()
 
@@ -110,9 +111,11 @@ class Validator:
     def load_name_variants(self):
         names_path = self.root / 'data/names.md'
         try:
-            for forms, _ in name_groups(names_path.read_text(encoding='utf-8')):
+            for forms, gender in name_groups(names_path.read_text(encoding='utf-8')):
                 for form in forms:
                     self.given_name_variants[form.casefold()] = forms[0]
+                    if gender:
+                        self.given_name_genders.setdefault(form.casefold(), set()).add(gender)
             places = json.loads((self.root / 'data/places.json').read_text(encoding='utf-8'))
             for place in resolve_place_names(places):
                 variations = place.get('variations', [])
@@ -155,6 +158,13 @@ class Validator:
                         self.people_by_id[person_id] = name
         for collision in sorted(self.person_ids & self.person_names):
             self.report(path, f'person ID collides with full name {collision!r}')
+
+    def gender(self, person):
+        if not self.nonblank(person):
+            return None
+        name = self.people_by_id.get(person, person)
+        genders = self.given_name_genders.get(name.split()[0].casefold(), set())
+        return next(iter(genders)) if len(genders) == 1 else None
 
     def check_date(self, value, location, inherited=False):
         if value is MISSING:
@@ -398,6 +408,19 @@ def clean_facts(path, validator):
             for field in ('facts', 'guesses'):
                 for fact in value.get(field, []) if isinstance(value.get(field), list) else []:
                     if isinstance(fact, dict):
+                        if (fact.get('type') in ('spouse', 'sibling')
+                                and validator.gender(fact.get('person')) == 'woman'
+                                and validator.gender(fact.get('of')) == 'man'):
+                            # Move all participant-specific fields, including optional
+                            # fields present on only one side, with their participant.
+                            fields = list(fact)
+                            swapped = {}
+                            for key in fields:
+                                if key == 'person' or re.match(r'^person[A-Z]', key):
+                                    swapped['of' + key[6:]] = fact.pop(key)
+                                elif key == 'of' or re.match(r'^of[A-Z]', key):
+                                    swapped['person' + key[2:]] = fact.pop(key)
+                            fact.update(swapped)
                         order = ('subject', 'person', 'personTitle', 'personDeceased', 'type', 'of', 'ofTitle', 'ofDeceased')
                         reordered = {key: fact[key] for key in order if key in fact}
                         reordered.update((key, item) for key, item in fact.items() if key not in reordered and key != 'date')

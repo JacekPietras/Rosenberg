@@ -23,12 +23,12 @@
           "type": "title"
         },
         {
-          "person": "else_wife_of_arnold",
-          "type": "spouse",
-          "of": "arnold_brother_of_vogt_zu_Lauda",
-          "ofTitle": [
+          "person": "arnold_brother_of_vogt_zu_Lauda",
+          "personTitle": [
             "Edelknecht"
-          ]
+          ],
+          "type": "spouse",
+          "of": "else_wife_of_arnold"
         },
         {
           "person": "else_wife_of_arnold",

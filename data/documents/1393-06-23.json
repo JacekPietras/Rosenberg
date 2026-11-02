@@ -21,10 +21,10 @@
           "content": "had granted a Wittum to his wife Elisabeth von Erligheim."
         },
         {
-          "person": "Elisabeth von Erligheim",
+          "person": "vogt_zu_Lauda",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "vogt_zu_Lauda",
-          "ofDeceased": true
+          "of": "Elisabeth von Erligheim"
         },
         {
           "person": "vogt_zu_Lauda",

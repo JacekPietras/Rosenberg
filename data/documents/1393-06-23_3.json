@@ -11,13 +11,13 @@
       "english": "Elector Ruprecht II der Ältere, Count Palatine of the Rhine, grants Elisabeth von Erligheim, widow of Eberhard von Rosenberg, Ritter, the foundation of an Eternal Mass at the altar of St. ULF in the parish of Wölchingen, with the properties in Gommersdorf, Angeltürn, and Wölchingen, which are fiefs of Boxberg Castle and the A. - The A. undertakes not to mislead the Eternal Mass and the respective priest regarding the use of the foundation's properties.",
       "facts": [
         {
-          "person": "Elisabeth von Erligheim",
-          "type": "spouse",
-          "of": "vogt_zu_Lauda",
-          "ofTitle": [
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
             "Ritter"
           ],
-          "ofDeceased": true
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "Elisabeth von Erligheim"
         },
         {
           "person": "vogt_zu_Lauda",

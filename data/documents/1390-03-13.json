@@ -19,10 +19,10 @@
           "content": "joined four other lords in ruling in the dispute between Elisabeth von Erligheim, her children and heirs with [vogt_zu_Lauda], and Schöntal Abbey."
         },
         {
-          "person": "Elisabeth von Erligheim",
+          "person": "vogt_zu_Lauda",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "vogt_zu_Lauda",
-          "ofDeceased": true
+          "of": "Elisabeth von Erligheim"
         },
         {
           "person": "vogt_zu_Lauda",

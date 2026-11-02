@@ -41,6 +41,31 @@ class FactValidatorTests(unittest.TestCase):
     def parent(self, **extra):
         return {'type': 'parent', 'person': 'known_id', 'of': 'Arnold von Rosenberg', **extra}
 
+    def test_cleanup_orders_mixed_gender_symmetric_relations(self):
+        validator = facts.Validator()
+        validator.given_name_genders = {'anna': {'woman'}, 'arnold': {'man'}, 'unknown': {'man', 'woman'}}
+        validator.people_by_id = {'man_id': 'Arnold von Rosenberg'}
+        relation = {'type': 'spouse', 'person': 'Anna', 'personTitle': ['Frau'],
+                    'personDeceased': True, 'of': 'man_id', 'ofTitle': ['Ritter'],
+                    'ofExtra': 'associated', 'date': '1395'}
+        sibling = {'type': 'sibling', 'person': 'Anna', 'of': 'Arnold'}
+        parent = {'type': 'parent', 'person': 'Anna', 'of': 'Arnold'}
+        uncertain = {'type': 'sibling', 'person': 'Anna', 'of': 'Unknown'}
+        path = self.write('documents/test.json', {'facts': [relation, parent, uncertain], 'guesses': [sibling]})
+        path.write_text(json.dumps(json.loads(path.read_text()), ensure_ascii=False, indent=2) + '\n')
+        facts.clean_facts(path, validator)
+        result = json.loads(path.read_text())
+        self.assertEqual({'type': 'spouse', 'person': 'man_id', 'personTitle': ['Ritter'],
+                          'personExtra': 'associated', 'of': 'Anna', 'ofTitle': ['Frau'],
+                          'ofDeceased': True, 'date': '1395'}, result['facts'][0])
+        self.assertEqual(parent, result['facts'][1])
+        self.assertEqual(uncertain, result['facts'][2])
+        self.assertEqual({'type': 'sibling', 'person': 'Arnold', 'of': 'Anna'}, result['guesses'][0])
+        self.assertEqual([], validator.diagnostics)
+        first = path.read_text()
+        facts.clean_facts(path, validator)
+        self.assertEqual(first, path.read_text())
+
     def test_supported_types_and_flat_names_or_ids(self):
         items = [self.parent(type=kind) for kind in ('parent', 'sibling', 'spouse')]
         items += [self.parent(type='kin', term='Vetter'), {'type': 'title', 'person': 'known_id', 'personTitle': ['Ritter', 'der Ältere']}]

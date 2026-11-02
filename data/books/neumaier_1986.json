@@ -885,21 +885,21 @@
       "english": "A confirmed kinship is established by a document from Jutta von Uissigheim dated December 28, 1322, in which she, with the consent of her brothers Friedrich, Albrecht, and Kraft, sold properties in Uissigheim to Bronnbach Abbey and called herself the daughter of the vicedominus⁴⁵. But what could the ancestral line of Eberhard, Jutta, and Arnold, the nepotes of Eberhard Rufus, have looked like? Their father is documented as Arnold von Uissigheim. As nepotes of Rufus, the Arnold from 1260 can hardly be their father. One possibility would be to interpolate another bearer of this name.\n\n⁴⁴ StA Wertheim Lit. A 436 fol. 116 seq.",
       "facts": [
         {
-          "person": "Jutta von Uissigheim",
+          "person": "Friedrich von Uissigheim",
           "type": "sibling",
-          "of": "Friedrich von Uissigheim",
+          "of": "Jutta von Uissigheim",
           "date": "1322-12-28"
         },
         {
-          "person": "Jutta von Uissigheim",
+          "person": "Albrecht von Uissigheim",
           "type": "sibling",
-          "of": "Albrecht von Uissigheim",
+          "of": "Jutta von Uissigheim",
           "date": "1322-12-28"
         },
         {
-          "person": "Jutta von Uissigheim",
+          "person": "Kraft von Uissigheim",
           "type": "sibling",
-          "of": "Kraft von Uissigheim",
+          "of": "Jutta von Uissigheim",
           "date": "1322-12-28"
         },
         {

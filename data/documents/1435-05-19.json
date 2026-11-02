@@ -8,12 +8,12 @@
       "english": "Sale of the share of the large and small tithes and an estate in Kirchhausen to DM Eberhard von Seinsheim by Eberhard von Gauangelloch, Ritter, and his wife Anna von Rosenberg,",
       "facts": [
         {
-          "person": "Anna von Rosenberg",
-          "type": "spouse",
-          "of": "Eberhard von Gauangelloch",
-          "ofTitle": [
+          "person": "Eberhard von Gauangelloch",
+          "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "spouse",
+          "of": "Anna von Rosenberg"
         },
         {
           "person": "Eberhard von Gauangelloch",

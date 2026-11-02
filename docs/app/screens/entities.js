@@ -179,7 +179,7 @@ export function createEntityScreens({
     const personPlacesMarkup = person ? '<section class="person-places-map"><div class="person-map-wrap"><div id="person-place-map" class="map-container person-place-map" role="application" aria-label="Places mentioned in this person’s facts"></div></div></section>' : '';
     const graphPerson = state.familyGraph?.records[people.indexOf(person)];
     const relationships = exactAnchor
-      ? `${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, graphPerson?._treeKey || '__unregistered__')}`
+      ? state.familyGraph?.valid ? `${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, graphPerson?._treeKey || '__unregistered__')}` : '<p>Saved family relationships are unavailable.</p>'
       : '';
     return renderPage(person, mentions, 'person', pattern, () => '', `${relationships}${personPlacesMarkup}${imagesMarkup}${sealsMarkup}`);
   }

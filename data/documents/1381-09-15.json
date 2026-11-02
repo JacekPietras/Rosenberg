@@ -20,12 +20,12 @@
           "of": "arnold_brother_of_vogt_zu_Lauda"
         },
         {
-          "person": "Elisabeth von Erligheim",
-          "type": "spouse",
-          "of": "vogt_zu_Lauda",
-          "ofTitle": [
+          "person": "vogt_zu_Lauda",
+          "personTitle": [
             "Ritter"
-          ]
+          ],
+          "type": "spouse",
+          "of": "Elisabeth von Erligheim"
         },
         {
           "person": "vogt_zu_Lauda",

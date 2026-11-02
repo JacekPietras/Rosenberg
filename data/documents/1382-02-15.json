@@ -19,12 +19,12 @@
           "content": "sold the named tithes, goods, and rents at Wagenbuch, Höhefeld, and Lindelbach to Bronnbach Monastery jointly with his wife Anna."
         },
         {
-          "person": "Anna",
-          "type": "spouse",
-          "of": "Eberhard von Rosenberg",
-          "ofTitle": [
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
             "der Alte"
-          ]
+          ],
+          "type": "spouse",
+          "of": "Anna"
         },
         {
           "person": "Eberhard von Rosenberg",

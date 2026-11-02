@@ -191,10 +191,10 @@
           "date": "0942"
         },
         {
-          "person": "Anna von Rosenberg",
+          "person": "Rudolf von Thüngen",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Rudolf von Thüngen",
-          "ofDeceased": true,
+          "of": "Anna von Rosenberg",
           "date": "0942"
         }
       ]
@@ -216,10 +216,10 @@
           "date": "1019"
         },
         {
-          "person": "Wiltraut von Rosenberg",
+          "person": "Alban von Frundsperg",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Alban von Frundsperg",
-          "ofDeceased": true,
+          "of": "Wiltraut von Rosenberg",
           "date": "1019"
         },
         {
@@ -720,9 +720,9 @@
           "date": "1353"
         },
         {
-          "person": "Jutta",
+          "person": "Konrad von Bickenbach",
           "type": "sibling",
-          "of": "Konrad von Bickenbach",
+          "of": "Jutta",
           "date": "1353"
         },
         {
@@ -735,9 +735,9 @@
           "date": "1353"
         },
         {
-          "person": "Elisabeth",
+          "person": "Hans von Seckendorf",
           "type": "sibling",
-          "of": "Hans von Seckendorf",
+          "of": "Elisabeth",
           "date": "1353"
         }
       ]
@@ -938,10 +938,10 @@
           "date": "1368"
         },
         {
-          "person": "Anna von Rosenberg",
+          "person": "Hans Pahl von Grünsfeld",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Hans Pahl von Grünsfeld",
-          "ofDeceased": true,
+          "of": "Anna von Rosenberg",
           "date": "1368"
         },
         {
@@ -981,9 +981,9 @@
           "date": "1378"
         },
         {
-          "person": "Barbara von Rosenberg",
+          "person": "Hans Geyer",
           "type": "spouse",
-          "of": "Hans Geyer",
+          "of": "Barbara von Rosenberg",
           "date": "1380"
         }
       ]
@@ -1196,10 +1196,10 @@
       "english": "In 1394, Anna Marschalk, widow of Konrad von Rosenberg, endowed Dückelhausen Abbey with four Malter of grain. Her son Kunz von Rosenberg sealed the deed. In 1394, Arnold von Rosenberg der Jüngere, resident at Boxberg, sealed a document.",
       "facts": [
         {
-          "person": "Anna Marschalk",
+          "person": "Konrad von Rosenberg",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Konrad von Rosenberg",
-          "ofDeceased": true,
+          "of": "Anna Marschalk",
           "date": "1394"
         },
         {
@@ -1271,10 +1271,10 @@
           "date": "1421"
         },
         {
-          "person": "Selende Langmantel",
+          "person": "Siegfried Häuptlin",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Siegfried Häuptlin",
-          "ofDeceased": true,
+          "of": "Selende Langmantel",
           "date": "1421"
         },
         {
@@ -1445,17 +1445,17 @@
       "english": "On the Sunday before the Feast of Saints Simon and Jude in 1401, Konrad von Rosenberg, vicedom at Heidelberg; Arnold von Rosenberg; Katharina von Erlick, the widow of the late Lord Eberhard von Rosenberg; and Anna Marschalk, widow of the late Konrad von Rosenberg, endowed the altar of St. George in Boxberg Castle with various rents and revenues. These donors also gave the chaplain at Boxberg the small tithe at Angeltürn and Ramsthal (parish register of Boxberg).",
       "facts": [
         {
-          "person": "Katharina von Erligheim",
+          "person": "Eberhard von Rosenberg",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Eberhard von Rosenberg",
-          "ofDeceased": true,
+          "of": "Katharina von Erligheim",
           "date": "1401"
         },
         {
-          "person": "Anna Marschalk",
+          "person": "Konrad von Rosenberg",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Konrad von Rosenberg",
-          "ofDeceased": true,
+          "of": "Anna Marschalk",
           "date": "1401"
         },
         {
@@ -1800,15 +1800,15 @@
       "english": "In 1419 and 1424, Barbara von Rosenberg was the wife of Reinbot Streckfuß.",
       "facts": [
         {
-          "person": "Barbara von Rosenberg",
+          "person": "Reinbot Streckfuß",
           "type": "spouse",
-          "of": "Reinbot Streckfuß",
+          "of": "Barbara von Rosenberg",
           "date": "1419"
         },
         {
-          "person": "Barbara von Rosenberg",
+          "person": "Reinbot Streckfuß",
           "type": "spouse",
-          "of": "Reinbot Streckfuß",
+          "of": "Barbara von Rosenberg",
           "date": "1424"
         }
       ]
@@ -1854,9 +1854,9 @@
           "date": "1421"
         },
         {
-          "person": "Kunne von Rosenberg",
+          "person": "Leopold von Seldeneck",
           "type": "spouse",
-          "of": "Leopold von Seldeneck",
+          "of": "Kunne von Rosenberg",
           "date": "1422"
         }
       ]
@@ -1916,9 +1916,9 @@
       "english": "In 1426, Anna von Rosenberg was the wife of Eberhard von Gauangelloch. From 1426 to 1429, Thomas von Rosenberg was at feud with the city of Hall. Thomas was a surety and received the fiefs inherited from his father. The city of Hall called upon him to end his partnership with Eberhard der Jüngere von Dottenheim, since the latter had become its enemy. Thomas must therefore have resided at Schüpf. In 1437, Konrad von Weinsberg bought 100 Malter of oats from him for 100 florins. Thomas died on January 24, 1458.",
       "facts": [
         {
-          "person": "Anna von Rosenberg",
+          "person": "Eberhard von Gauangelloch",
           "type": "spouse",
-          "of": "Eberhard von Gauangelloch",
+          "of": "Anna von Rosenberg",
           "date": "1426"
         },
         {
@@ -2229,9 +2229,9 @@
       "english": "In 1450, Elisabeth von Rosenberg was the wife of Wilhelm von Stetten. That year Eberhard and Ulrich von Rosenberg divided their joint sheep farm at Boxberg.",
       "facts": [
         {
-          "person": "Elisabeth von Rosenberg",
+          "person": "Wilhelm von Stetten",
           "type": "spouse",
-          "of": "Wilhelm von Stetten",
+          "of": "Elisabeth von Rosenberg",
           "date": "1450"
         },
         {
@@ -2286,9 +2286,9 @@
       "english": "In 1454, Elisabeth von Rosenberg was the wife of Hans von Helmstadt.",
       "facts": [
         {
-          "person": "Elisabeth von Rosenberg",
+          "person": "Hans von Helmstadt",
           "type": "spouse",
-          "of": "Hans von Helmstadt",
+          "of": "Elisabeth von Rosenberg",
           "date": "1454"
         }
       ]
@@ -2844,15 +2844,15 @@
       "english": "In 1524, Lady Dorothea von Rosenberg died at Nieder-Saulheim. (Maiores: Dienheim, Forstmeister—Rosenberg; Rüdt von Collenberg; Archive for Hessian History VIII, 310.) In 1525, Sibylla von Rosenberg was the wife of Joachim von Stettenberg; by 1530 she was his widow.",
       "facts": [
         {
-          "person": "Sibylla von Rosenberg",
+          "person": "Joachim von Stettenberg",
           "type": "spouse",
-          "of": "Joachim von Stettenberg",
+          "of": "Sibylla von Rosenberg",
           "date": "1525"
         },
         {
-          "person": "Sibylla von Rosenberg",
+          "person": "Joachim von Stettenberg",
           "type": "spouse",
-          "of": "Joachim von Stettenberg",
+          "of": "Sibylla von Rosenberg",
           "date": "1530"
         },
         {
@@ -2912,9 +2912,9 @@
           "date": "1525"
         },
         {
-          "person": "Anna von Rosenberg",
+          "person": "Albrecht von Rosenberg",
           "type": "sibling",
-          "of": "Albrecht von Rosenberg",
+          "of": "Anna von Rosenberg",
           "date": "1548"
         },
         {
@@ -2950,18 +2950,18 @@
       ],
       "guesses": [
         {
-          "person": "Anna von Rosenberg",
+          "person": "Caspar von Stetten",
           "personDeceased": true,
           "type": "spouse",
-          "of": "Caspar von Stetten",
+          "of": "Anna von Rosenberg",
           "ofDeceased": true,
           "date": "1548"
         },
         {
-          "person": "Anna von Rosenberg",
+          "person": "Wolf von Stetten",
           "personDeceased": true,
           "type": "spouse",
-          "of": "Wolf von Stetten",
+          "of": "Anna von Rosenberg",
           "ofDeceased": true,
           "date": "1548"
         }
@@ -3892,9 +3892,9 @@
           "date": "1519"
         },
         {
-          "person": "Anna Rüd von Kollenberg",
+          "person": "Michael von Rosenberg",
           "type": "spouse",
-          "of": "Michael von Rosenberg",
+          "of": "Anna Rüd von Kollenberg",
           "date": "1519"
         },
         {
@@ -3904,15 +3904,15 @@
           "date": "1527"
         },
         {
-          "person": "Anna von Dienheim",
+          "person": "Peter von Leyen",
           "type": "spouse",
-          "of": "Peter von Leyen",
+          "of": "Anna von Dienheim",
           "date": "1527"
         },
         {
-          "person": "Anna von Dienheim",
+          "person": "Eberhard von Rosenberg",
           "type": "spouse",
-          "of": "Eberhard von Rosenberg",
+          "of": "Anna von Dienheim",
           "date": "1519"
         },
         {
