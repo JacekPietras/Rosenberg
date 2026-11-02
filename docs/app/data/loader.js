@@ -50,15 +50,7 @@ export function createDataLoader({
   }
 
   async function loadSnapshot({ autoRebuild = true, familyOnly = false } = {}) {
-    if (!familyOnly && state.active === 'tree' && !state.person && !state.place) {
-      state.treeLoading = true;
-      state.treeLoadingStage = 'Preparing to load the source records';
-      await renderActive();
-    }
-    if (state.treeLoading && state.active === 'tree') {
-      state.treeLoadingStage = 'Listing available source files';
-      await renderActive();
-    }
+    if (state.active === 'tree' && !state.person && !state.place) state.treeLoading = false;
     const files = await repository.getRepositoryFiles();
     const paths = files.map((file) => typeof file === 'string' ? file : file.path)
       .filter((path) => /^data\/(books|documents|notes|images)\/.*\.json$/.test(path));
@@ -69,10 +61,6 @@ export function createDataLoader({
     const showBookEarly = !familyOnly && bookPathsForStartup.length > 0;
     let earlyBooks;
     if (showBookEarly) {
-      if (state.treeLoading && state.active === 'tree') {
-        state.treeLoadingStage = `Loading source files (${paths.length} found)`;
-        await renderActive();
-      }
       const [placesText, peopleText, namesText, particlesText, entries] = await Promise.all([
         repository.getText('data/places.json'), repository.getText('data/people.json'),
         repository.getText('data/names.md'), repository.getText('data/nobiliary_particles.md'),
@@ -92,10 +80,6 @@ export function createDataLoader({
       state.documents = earlyBooks;
       if (state.active === 'books') state.active = ordered[0];
       renderTabs();
-      await renderActive();
-    }
-    if (state.treeLoading && state.active === 'tree') {
-      state.treeLoadingStage = `Loading source records from ${paths.length} files`;
       await renderActive();
     }
     const [placesText, calibrationCitiesText, peopleText, particlesText, namesText, documents] = await Promise.all([
@@ -162,13 +146,24 @@ export function createDataLoader({
     if (!familyOnly) await renderActive();
     const treeScreenVisible = state.active === 'tree' && !state.person && !state.place;
     if (treeScreenVisible) {
-      state.treeLoadingStage = 'Checking the saved family graph';
+      // Put the saved graph on screen before fingerprint verification. The
+      // verification below can then run while the user sees the current tree.
+      const savedTree = await repository.getFamilyTree();
+      state.tree = savedTree;
+      state.familyVerification = { valid: Boolean(savedTree), reason: 'Checking saved graph inputs.' };
+      state.familyGraph = buildRelationshipGraph(state.personRecords, { tree: savedTree, view: state.familyView, verification: state.familyVerification });
+      state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
+      state.familyGraph.checking = true;
+      state.familyGraph.rebuildStage = '';
+      state.treeLoading = false;
+      state.familyView = state.familyGraph.view;
       await renderActive();
       const family = await loadFamilyInBackground(state.personRecords, documents, paths, state.familyView);
       state.tree = family.tree;
       if (family.tree && (family.tree.schema === undefined || family.tree.schema >= 4)) state.familyView = 'with-guesses';
       state.familyVerification = family.verification;
       state.familyGraph = family.graph;
+      state.familyGraph.checking = false;
       state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
       const shouldRebuild = !state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild && !backgroundRebuild;
       state.familyGraph.rebuilding = Boolean((autoRebuild && backgroundRebuild) || shouldRebuild);

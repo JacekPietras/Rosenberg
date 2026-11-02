@@ -33,7 +33,7 @@ export async function renderActiveScreen({
 }) {
   status.textContent = '';
   status.classList.remove('error');
-  if (state.sourceLoading && (state.person || state.place || !state.manifest.books.some((book) => book.path === state.active))) {
+  if (state.active !== 'tree' && state.sourceLoading && (state.person || state.place || !state.manifest.books.some((book) => book.path === state.active))) {
     content.textContent = 'Loading sources…';
     return;
   }
@@ -65,15 +65,6 @@ export async function renderActiveScreen({
     return;
   }
   if (state.active === 'tree') {
-    if (state.treeLoading || state.familyGraph?.rebuilding) {
-      const stage = state.treeLoading ? state.treeLoadingStage : state.familyGraph?.rebuildStage;
-      const progress = document.createElement('p');
-      progress.setAttribute('role', 'status');
-      progress.setAttribute('aria-live', 'polite');
-      progress.textContent = stage || 'Preparing the family tree';
-      content.replaceChildren(progress);
-      return;
-    }
     const focus = state.familyFocus && (state.familyFocus === 'all' || state.familyGraph?.components?.some((c) => c.key === state.familyFocus))
       ? state.familyFocus : state.familyGraph?.defaultFocus;
     content.innerHTML = renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph, focus });
