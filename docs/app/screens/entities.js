@@ -107,7 +107,7 @@ export function createEntityScreens({
     const people = getPeople();
     if (state.sourcePersonChoices?.reference === state.person && state.familyGraph?.valid) {
       const { name, matches } = state.sourcePersonChoices;
-      return `<article class="document"><h2>${escapeHtml(name)}</h2><p>This source identity ${matches.length ? 'separates into several groups' : 'is not present'} in the selected evidence view.</p><ul>${matches.map((person) => `<li><a class="person-link" href="?person=${encodeURIComponent(person.id || person._treeKey)}">${escapeHtml(person.name)}</a> · ${escapeHtml((person.reconstruction?.dates || []).join(', '))}</li>`).join('')}</ul><a href="?tab=tree">Open the family tree</a></article>${relationshipControls(state.familyGraph)}`;
+      return `<article class="document"><h2>${escapeHtml(name)}</h2><p>This source identity ${matches.length ? 'separates into several groups' : 'is not present'} in the selected evidence view.</p><ul>${matches.map((person) => `<li><a class="person-link" href="?person=${encodeURIComponent(person.id || person._treeKey)}">${escapeHtml(person.name)}</a> · ${escapeHtml((person.reconstruction?.dates || []).join(', '))}</li>`).join('')}</ul><a href="?tab=tree">Open the family tree</a></article>`;
     }
     const resolution = resolvePerson(people, state.person);
     const exactAnchor = people.some((person) => person.id && person.id === state.person);
@@ -129,7 +129,7 @@ export function createEntityScreens({
         const index = Number(source.pointer.match(/\/entries\/(\d+)/)?.[1] || 0);
         return `<article class="document"><p class="entry-date">${source.pointer.includes('/guesses/') ? 'Guess · ' : ''}${escapeHtml(formatDate(date))}</p>${renderFactsView([{ ...fact, date, isGuess: source.pointer.includes('/guesses/') }], { people, personNames: factPersonNames(), inlineMarkup, sourceHref: () => documentNavigationUrl(source.path, index) })}<p class="source"><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></p></article>`;
       }).join('');
-      return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2><p>${node.status === 'contextual' ? 'Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.' : 'Source person; correspondence with other mentions remains open.'} No permanent person ID has been created.</p></article>${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, node.key)}<h3>Source attestations</h3>${attestations}`;
+      return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2>${node.status === 'contextual' ? '<p>Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.</p>' : ''}</article><h3>Source attestations</h3>${attestations}`;
     }
     if (String(state.person).startsWith('@evidence/')) return '<article class="document"><h2>Source identity changed</h2><p>This generated source group changed after rebuilding.</p><a href="?tab=tree">Open the family tree to choose its current source identities</a></article>';
     let person = exactAnchor ? resolution.person
@@ -178,9 +178,7 @@ export function createEntityScreens({
     }).join('')}</div></section>` : '';
     const personPlacesMarkup = person ? '<section class="person-places-map"><div class="person-map-wrap"><div id="person-place-map" class="map-container person-place-map" role="application" aria-label="Places mentioned in this person’s facts"></div></div></section>' : '';
     const graphPerson = state.familyGraph?.records[people.indexOf(person)];
-    const relationships = exactAnchor
-      ? state.familyGraph?.valid ? `${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, graphPerson?._treeKey || '__unregistered__')}` : '<p>Saved family relationships are unavailable.</p>'
-      : '';
+    const relationships = '';
     return renderPage(person, mentions, 'person', pattern, () => '', `${relationships}${personPlacesMarkup}${imagesMarkup}${sealsMarkup}`);
   }
 
