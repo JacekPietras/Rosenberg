@@ -187,18 +187,15 @@ class Validator:
                 )
                 return
             parts = value.split()
-            given = parts[0]
-            given_canonical = self.given_name_variants.get(given.casefold())
             canonical_parts = parts.copy()
             has_name_variation = False
-            if given_canonical and given != given_canonical:
-                canonical_parts[0] = given_canonical
-                has_name_variation = True
-            if 'von' in [part.casefold() for part in parts]:
-                von_index = next(index for index, part in enumerate(parts) if part.casefold() == 'von')
-                surname_parts = parts[von_index + 1:]
-            else:
-                surname_parts = parts[1:]
+            von_index = next((index for index, part in enumerate(parts) if part.casefold() == 'von'), None)
+            for index in range(von_index if von_index is not None else 1):
+                canonical = self.given_name_variants.get(parts[index].casefold())
+                if canonical and parts[index] != canonical:
+                    canonical_parts[index] = canonical
+                    has_name_variation = True
+            surname_parts = parts[von_index + 1:] if von_index is not None else parts[1:]
             if surname_parts:
                 surname = ' '.join(surname_parts)
                 surname_canonical = self.place_name_variants.get(surname.casefold())
@@ -206,7 +203,7 @@ class Validator:
                     canonical_parts[von_index + 1 if 'von' in [part.casefold() for part in parts] else 1:] = surname_canonical.split()
                     has_name_variation = True
             if has_name_variation:
-                self.report(location, f'name {value!r} uses a variation; canonical form is {" ".join(canonical_parts)!r} (data/names.md and/or data/places.json)')
+                self.report(location, f'name {value!r} uses a variation; canonical form is {" ".join(canonical_parts)!r} (data/names.md and/or data/places.json)', 'warning' if canonical_parts[0] == parts[0] and surname_parts == canonical_parts[von_index + 1 if von_index is not None else 1:] else 'error')
 
     def check_titles(self, value, location):
         if not isinstance(value, list) or not value:

@@ -57,6 +57,12 @@ class FamilyGraphTests(unittest.TestCase):
             self.write('data/documents/test.json', {'date': '1393', 'entries': [{'source': 'charter 1', 'facts': facts or [], 'guesses': guesses or []}]})
         return load_inputs(self.root, validate=False)
 
+    def test_multiple_name_components_use_variants(self):
+        names = Names('# Men\nLudwig\nMönch, Münch\nFriedrich\nZaisolph, Zeisolf\n', [])
+        self.assertEqual(names.key('Ludwig Münch von Rosenberg'), names.key('Ludwig Mönch von Rosenberg'))
+        self.assertEqual(names.key('Friedrich Zeisolf von Rosenberg'), names.key('Friedrich Zaisolph von Rosenberg'))
+        self.assertNotEqual(names.key('Ludwig Mönch von Rosenberg'), names.key('Ludwig von Rosenberg'))
+
     def test_generic_facts_and_guesses_preserve_subject_metadata_without_edges(self):
         fact = {'type': 'generic', 'person': 'a', 'personTitle': ['Ritter', 'zu Boxberg'],
                 'personDeceased': True, 'content': 'Held property at Boxberg.'}

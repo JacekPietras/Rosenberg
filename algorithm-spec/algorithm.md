@@ -107,3 +107,7 @@ same inputs gives a byte-identical `tree.json`.
 
 Tests: `tests/test_probability.py` (features and blocks) and
 `tests/test_family_graph.py` (passes and real-data cases).
+
+Name variants before `von` are normalized component by component; for example,
+`Ludwig Münch von Rosenberg` and `Ludwig Mönch von Rosenberg` have the
+same name key, while a different intervening name remains distinct.

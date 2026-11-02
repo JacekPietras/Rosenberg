@@ -65,9 +65,11 @@ class Names:
         parts = normalize(name).split(' ')
         if not parts:
             return ''
-        parts[0] = self.given.get(parts[0], parts[0])
-        if len(parts) > 1 and parts[1] == 'de':
-            parts[1] = 'von'
+        connector = next((i for i, part in enumerate(parts) if part in {'von', 'de'}), None)
+        for index in range(connector if connector is not None else min(1, len(parts))):
+            parts[index] = self.given.get(parts[index], parts[index])
+        if connector is not None and parts[connector] == 'de':
+            parts[connector] = 'von'
         if 'von' in parts:
             index = parts.index('von')
             surname = ' '.join(parts[index + 1:])

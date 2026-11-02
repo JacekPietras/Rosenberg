@@ -63,7 +63,7 @@ def name_pattern(given_names, surnames):
     surname = alternatives(surnames)
     return re.compile(
         rf'(?<!\w)(?P<given>{given})'
-        rf'(?:\s+(?P<middle>{given}))?'
+        rf'(?P<middle>(?:\s+(?:{given}))*)'
         rf'\s+(?P<connector>von|v\.|de)\s+'
         rf'(?P<surname>{surname})(?!\w)',
         re.IGNORECASE,
@@ -73,7 +73,7 @@ def name_pattern(given_names, surnames):
 def suggested_name(match, given_names, surnames):
     given = given_names[match.group('given').casefold()]
     middle = match.group('middle')
-    middle = ' ' + given_names[middle.casefold()] if middle else ''
+    middle = ''.join(' ' + given_names[word.casefold()] for word in middle.split())
     surname = surnames[match.group('surname').casefold()]
     return f'{given}{middle} von {surname}'
 
