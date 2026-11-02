@@ -41,7 +41,8 @@ class FamilyGraphTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        self.write('data/names.md', 'Konrad, Conradus\nKunz, Cunz // never expand to Konrad\nEberhard, Eberhardi\nMünch, Mönch\n')
+        self.write('data/names.md', '# Men\n\nArnold\nEberhard, Eberhardi\nKonrad, Conradus\nKunz, Cunz // never expand to Konrad\n\n'
+                                    '# Women\n\nElisabeth\nJutta\n\n# Other\n\nMünch, Mönch\n')
         self.write('data/places.json', [])
         self.write('data/matching.json', json.loads((Path(__file__).resolve().parents[1] / 'data/matching.json').read_text()))
 
@@ -436,6 +437,34 @@ class FamilyGraphTests(unittest.TestCase):
                                                 relation('Arnold von North', 'Kunz von North'),
                                                 relation('Ulrich von North', 'Kunz von North', 'sibling')])
         self.assertEqual([], inferred)
+
+    def test_same_surname_mother_is_not_inherited_by_sibling(self):
+        _, _, inferred = self.inferred_parents([relation('Elisabeth von North', 'Ulrich von North'),
+                                                relation('Ulrich von North', 'Kunz von North', 'sibling')])
+        self.assertEqual([], inferred)
+
+    def test_names_md_headers_give_genders(self):
+        names = Names((self.root / 'data/names.md').read_text(), [])
+        self.assertEqual(['man', 'man', 'woman', None, None],
+                         [names.gender(names.key(value)) for value in ('Eberhardi von North', 'Cunz', 'Jutta', 'Münch', 'Alex')])
+
+    def one_document_children(self, facts):
+        self.inputs([person('unrelated', 'Unrelated')], facts)
+        graph = build(load_inputs(self.root, validate=False)).evidence_graph
+        return [node for node in graph['nodes'] if node['name'] == 'Hans von North']
+
+    def test_different_recorded_fathers_keep_children_apart(self):
+        self.assertEqual(2, len(self.one_document_children([relation('Eberhard von North', 'Hans von North'),
+                                                            relation('Arnold von North', 'Hans von North')])))
+
+    def test_different_recorded_mothers_keep_children_apart(self):
+        self.assertEqual(2, len(self.one_document_children([relation('Elisabeth von South', 'Hans von North'),
+                                                            relation('Jutta von West', 'Hans von North')])))
+
+    def test_same_named_fathers_and_a_father_with_a_mother_do_not_block(self):
+        self.assertEqual(1, len(self.one_document_children([relation('Eberhard von North', 'Hans von North'),
+                                                            relation('Eberhard von North', 'Hans von North'),
+                                                            relation('Elisabeth von South', 'Hans von North')])))
 
     def test_name_only_cross_source_occurrences_remain_separate(self):
         self.inputs([person('unrelated', 'Unrelated')], [relation('Alex', 'Bea')])

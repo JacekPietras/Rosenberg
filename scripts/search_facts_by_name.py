@@ -15,6 +15,7 @@ import json
 import re
 import unicodedata
 from pathlib import Path
+from given_names import name_groups as variant_lines
 from place_names import resolve_place_names
 
 
@@ -30,11 +31,8 @@ def norm(value):
 
 def name_groups(include_person_ids=True):
     groups = []
-    for line in (ROOT / "data/names.md").read_text(encoding="utf-8").splitlines():
-        names = [item.strip() for item in line.split(",")]
-        names = [item for item in names if item and not item.startswith("//")]
-        if names:
-            groups.append({norm(name) for name in names if norm(name)})
+    for names, _ in variant_lines((ROOT / "data/names.md").read_text(encoding="utf-8")):
+        groups.append({norm(name) for name in names if norm(name)})
     # Place variations can also appear in personal names, e.g. "de Rosinberg".
     try:
         places = resolve_place_names(json.loads((ROOT / "data/places.json").read_text(encoding="utf-8")))

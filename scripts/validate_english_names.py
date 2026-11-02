@@ -14,6 +14,7 @@ import json
 from pathlib import Path
 import re
 
+from given_names import name_groups
 from place_names import resolve_place_names
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,11 +22,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def load_variants():
     given_names = {}
-    for line in (ROOT / 'data/names.md').read_text(encoding='utf-8').splitlines():
-        forms = [part.strip() for part in line.split('//', 1)[0].split(',') if part.strip()]
-        if forms:
-            for form in forms:
-                given_names[form.casefold()] = forms[0]
+    for forms, _ in name_groups((ROOT / 'data/names.md').read_text(encoding='utf-8')):
+        for form in forms:
+            given_names[form.casefold()] = forms[0]
 
     places = json.loads((ROOT / 'data/places.json').read_text(encoding='utf-8'))
     place_forms = defaultdict(set)

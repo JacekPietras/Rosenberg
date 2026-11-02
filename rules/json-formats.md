@@ -586,7 +586,8 @@ unblocked same-name candidate without a probability threshold. A join needs net
 evidence of at least `bestCandidate.minJoinEvidence` from a feature other than
 rank; hard blocks are distinct registry IDs, explicit distinctions, death
 conflicts between facts, any impossible age, living mentions spanning more than
-`bestCandidate.maxLivingSpanYears`, and known relatives. Candidates within
+`bestCandidate.maxLivingSpanYears`, known relatives, and different recorded
+fathers or mothers (by the `data/names.md` gender section; sibling-inferred fathers never block). Candidates within
 `bestCandidate.attachmentTieLogOdds` are decided by family evidence, then the
 nearer date; otherwise the identity stays separate. Each join stores its `share`,
 `exp(L) / (1 + Σ exp(L_j))` over unblocked candidates, which becomes the joined

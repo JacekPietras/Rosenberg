@@ -130,7 +130,7 @@ test('name routes aggregate source identities while person and evidence IDs sele
 test('person pages show matching guesses separately, including guess-only sources', () => {
   const state = { person: 'Wyclo' };
   const documents = new Map([['data/books/example.json', { entries: [
-    { date: '1341', guesses: [{ type: 'spouse', person: 'Eberhard', of: 'Wyclo' }] },
+    { date: '1341', english: 'Wyclo appears in this source fragment.', facts: [{ type: 'generic', person: 'Wyclo', content: 'appeared.' }], guesses: [{ type: 'spouse', person: 'Eberhard', of: 'Wyclo' }] },
     { date: '1342', guesses: [{ type: 'generic', person: 'Someone else', content: 'appeared.' }] },
   ] }]]);
   const screens = createEntityScreens({
@@ -138,14 +138,15 @@ test('person pages show matching guesses separately, including guess-only source
     buildPersonPattern, escapeHtml, inlineMarkup: escapeHtml, markdownLinks: escapeHtml,
     dateSortValue: Number, formatDate: String, documentTitle: () => 'Book',
     documentNavigationUrl: (path, index) => `?document=${path}#entry-${index}`,
-    displayedLanguagesFor: () => [],
+    displayedLanguagesFor: () => ['english'],
   });
   const html = screens.renderPersonPage();
   assert.match(html, /1 mention/);
   assert.match(html, /<h3>Guesses<\/h3><ul class="facts facts-view guesses-view" aria-label="Guesses">/);
   assert.match(html, /Wyclo/);
   assert.match(html, /\?document=data\/books\/example.json#entry-0/);
-  assert.doesNotMatch(html, /Someone else|<h3>Facts<\/h3>/);
+  assert.match(html, /<h3>Facts<\/h3>/);
+  assert.doesNotMatch(html, /Someone else|source fragment|Direct quotations/);
 });
 
 test('legacy facts and strings are excluded from fact views', () => {
@@ -298,8 +299,8 @@ test('person pages include typed facts on either side and retain source links wi
   assert.match(html, /unresolved marker/);
   assert.doesNotMatch(html, /other identity marker/);
   assert.match(html, /class="entity-fact-ambiguous"/);
-  assert.match(html, /data-document-href="\?record=data\/documents\/a.json&amp;entry=0"/);
-  assert.match(html, /Charter A/);
+  assert.match(html, /href="\?record=data\/documents\/a.json&amp;entry=0"/);
+  assert.doesNotMatch(html, /Charter A/);
   assert.match(html, /datetime="1395"/);
 });
 

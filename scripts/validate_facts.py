@@ -18,6 +18,7 @@ from datetime import date
 import json
 from pathlib import Path
 import re
+from given_names import name_groups
 from place_names import resolve_place_names
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -109,12 +110,9 @@ class Validator:
     def load_name_variants(self):
         names_path = self.root / 'data/names.md'
         try:
-            for line in names_path.read_text(encoding='utf-8').splitlines():
-                line = line.split('//', 1)[0]
-                forms = [form.strip() for form in line.split(',') if form.strip()]
-                if forms:
-                    for form in forms:
-                        self.given_name_variants[form.casefold()] = forms[0]
+            for forms, _ in name_groups(names_path.read_text(encoding='utf-8')):
+                for form in forms:
+                    self.given_name_variants[form.casefold()] = forms[0]
             places = json.loads((self.root / 'data/places.json').read_text(encoding='utf-8'))
             for place in resolve_place_names(places):
                 variations = place.get('variations', [])

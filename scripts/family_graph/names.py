@@ -2,6 +2,7 @@
 
 import re
 import unicodedata
+from given_names import name_groups
 from place_names import resolve_place_names
 
 
@@ -23,11 +24,13 @@ class Names:
             for form in forms:
                 self.titles[normalize(form)] = normalize(forms[0])
                 self.title_display[normalize(form)] = forms[0]
-        self.given = {}
-        for line in names_text.splitlines():
-            forms = [normalize(item) for item in line.split('//', 1)[0].split(',') if item.strip()]
+        self.given, self.genders = {}, {}
+        for forms, gender in name_groups(names_text):
+            forms = [normalize(form) for form in forms]
             for form in forms:
                 self.given[form] = forms[0]
+            if gender:
+                self.genders[forms[0]] = gender
         variants = {}
         for place in resolve_place_names(places):
             for variant in place.get('variations', []):
@@ -51,6 +54,10 @@ class Names:
                 parts[index + 1] = 'zu'
                 return ' '.join(parts)
         return words
+
+    def gender(self, key):
+        """'man', 'woman' or None for the given name that starts a name key."""
+        return self.genders.get(key.split(' ', 1)[0]) if key else None
 
     def key(self, name):
         # Only normalize the given name and the complete surname/place phrase.

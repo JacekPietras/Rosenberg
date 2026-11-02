@@ -94,12 +94,13 @@ export function createEntityScreens({
   function renderPage(entity, mentions, kind, pattern, extraMarkup = () => '', leadingMarkup = '', factMatches = () => true) {
     if (!entity) return `<article class="document"><h2>${kind === 'place' ? 'Place' : 'Person'} not found</h2><p class="status">No ${kind} matching the requested name is listed in the research data.</p></article>`;
     const heading = `<article class="document ${kind}-document-heading"><div class="document-heading"><div><h2>${escapeHtml(entity.name)}</h2></div><small>${mentions.length} mention${mentions.length === 1 ? '' : 's'}</small></div></article>`;
+    if (kind === 'person') return `${heading}${leadingMarkup}${renderFacts(mentions, factMatches)}${renderFacts(mentions, factMatches, 'guesses')}${mentions.length ? '' : '<article class="document"><p class="status">No mentions found.</p></article>'}`;
     const sorted = [...mentions].sort((left, right) => dateSortValue(left.entry.date || left.doc.date) - dateSortValue(right.entry.date || right.doc.date) || left.index - right.index);
     const content = sorted.map(({ doc, path, entry, index }) => {
       const date = entry.date || doc.date || '';
       return `<article class="document ${kind}-mention" role="link" tabindex="0" data-document-href="${escapeHtml(documentNavigationUrl(path, index))}"><p class="entry-title">${markdownLinks(entry.title || documentTitle(doc, path))}</p>${date ? `<p class="entry-date">${escapeHtml(formatDate(date))}</p>` : ''}${entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, pattern) : ''}${extraMarkup(doc, entry)}</article>`;
     }).join('');
-    return `${heading}${leadingMarkup}${renderFacts(mentions, factMatches)}${kind === 'person' ? renderFacts(mentions, factMatches, 'guesses') : ''}${content ? `<h3 class="entity-section-title">Direct quotations</h3>${content}` : '<article class="document"><p class="status">No mentions found.</p></article>'}`;
+    return `${heading}${leadingMarkup}${renderFacts(mentions, factMatches)}${content ? `<h3 class="entity-section-title">Direct quotations</h3>${content}` : '<article class="document"><p class="status">No mentions found.</p></article>'}`;
   }
 
   function renderPersonPage() {

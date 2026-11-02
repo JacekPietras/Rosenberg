@@ -16,7 +16,7 @@ data/
 ├── people.json   # Confirmed separate people: ID and full name only
 ├── tree.json     # Generated family graph and calculation results
 ├── matching.json # Global probability model parameters
-├── names.md      # Historical name variants
+├── names.md      # Historical given-name variants under # Men / # Women
 ├── titles.md     # Equivalent title words and epithets for matching
 ├── kinship.md    # Tree positions meant by source kinship terms
 └── places.json   # Place-name variants and coordinates
@@ -77,10 +77,14 @@ are recognized directly. A capped full-relative-name rarity adjustment uses
 factual source frequencies; it is not a historical population estimate.
 Records that no threshold merges still join their most probable same-name
 candidate unless something strictly forbids it (death, impossible age or time
-span, distinct registry IDs, or a known kinship such as father/son or cousins);
-a join needs at least some evidence beyond the name and rank. A same-surname
-sibling inherits the other sibling's recorded same-surname father, so separate
-records of that father can join. Undecided
+span, distinct registry IDs, a known kinship such as father/son or cousins, or
+a different recorded father or mother); a join needs at least some evidence
+beyond the name and rank. A person has one father and one mother: records whose
+recorded fathers (or mothers) have incompatible names stay separate, while
+same-named parents can still prove to be one person. A same-surname sibling
+inherits the other sibling's recorded same-surname father (never a mother), so
+separate records of that father can join; an inherited father only adds
+evidence and never blocks a merge. Undecided
 candidates are kept as "possibly the same person".
 The diagram defaults to parent/child and spouse lines; hovering over or focusing
 a person reveals their sibling and other kin lines as well. Children with the same recorded parents
@@ -206,7 +210,9 @@ matching fact records mention each place; repeated mentions in one record count 
 ### Names
 
 Straightforward personal-name spelling variations are listed in
-[`data/names.md`](data/names.md).
+[`data/names.md`](data/names.md), one group per line with the canonical form
+first, sorted under `# Men`, `# Women`, and `# Other` (non-given names). The
+section gives the gender used by the family-tree reconstruction.
 
 ### Titles
 
