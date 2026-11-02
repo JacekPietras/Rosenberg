@@ -466,6 +466,19 @@ class FamilyGraphTests(unittest.TestCase):
                                                             relation('Eberhard von North', 'Hans von North'),
                                                             relation('Elisabeth von South', 'Hans von North')])))
 
+    def test_inherited_and_recorded_fathers_never_give_one_person_two_fathers(self):
+        self.inputs([person('unrelated', 'Unrelated')], [relation('Eberhard von North', 'Ulrich von North'),
+                                                         relation('Ulrich von North', 'Hans von North', 'sibling')])
+        self.write('data/documents/other.json', {'date': '1394', 'facts': [relation('Arnold von North', 'Hans von North'),
+                                                                          relation('Ulrich von North', 'Hans von North', 'sibling')]})
+        graph = build(load_inputs(self.root, validate=False)).evidence_graph
+        named = {node['key']: node['name'] for node in graph['nodes']}
+        fathers = {}
+        for edge in graph['relationships']:
+            if edge['type'] == 'parent':
+                fathers.setdefault(edge['of'], set()).add(named[edge['person']])
+        self.assertTrue(all(len(values) == 1 for values in fathers.values()), fathers)
+
     def test_name_only_cross_source_occurrences_remain_separate(self):
         self.inputs([person('unrelated', 'Unrelated')], [relation('Alex', 'Bea')])
         self.write('data/documents/other.json', {'date': '1394', 'facts': [relation('Alex', 'Bea')]})

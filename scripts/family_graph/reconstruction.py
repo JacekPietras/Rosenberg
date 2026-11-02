@@ -112,13 +112,17 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         mention_scopes[handle] = (mention.assertion.source.path,
                                  mention.assertion.source.pointer.rsplit('/' + mention.assertion.source.kind + '/', 1)[0],
                                  mention.assertion.historical_date)
-    recorded_parents = defaultdict(list)
-    for assertion in assertions:
-        if assertion.original['type'] == 'parent':
-            senior, child = assertion.mentions
-            sex = names.gender(mention_names[senior.handle])
-            if sex:
-                recorded_parents[child.handle].append((sex, mention_names[senior.handle]))
+    parents_of_mention = defaultdict(list)
+
+    def index_parents():
+        parents_of_mention.clear()
+        for assertion in assertions:
+            if assertion.original['type'] == 'parent':
+                senior, child = assertion.mentions
+                sex = names.gender(mention_names[senior.handle])
+                if sex:
+                    parents_of_mention[child.handle].append((sex, senior.handle))
+    index_parents()
 
     def find(key):
         while parent[key] != key:
@@ -201,21 +205,36 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             parts[find(h)].append(h)
         return passage_conflict(component) and not any(passage_conflict(part) for part in parts.values())
 
+    def could_be_one(left, right, members):
+        """Two parent identities (root, mention handle) are or could become one person."""
+        (x, a), (y, b) = left, right
+        if x == y:
+            return True
+        if not compatible_names(name(a), name(b)) or len(anchor(members[x] + members[y])) > 1:
+            return False
+        return not chronology_conflict(members[x] + members[y]) and chronology_allows((members[x], members[y]))
+
     def different_parent(parts):
-        """A person has one father and one mother: records whose recorded ones
-        share no compatible name are different people. Inferred parents never block."""
+        """A person has one father and one mother: records whose fathers (or mothers),
+        recorded or inherited, cannot be one person are different people."""
         found = []
         for part in parts:
-            seen = defaultdict(set)
+            seen = defaultdict(dict)
             for h in part:
-                for sex, value in recorded_parents.get(h, ()):
-                    seen[sex].add(value)
+                for sex, handle in parents_of_mention.get(h, ()):
+                    seen[sex].setdefault(find(handle), handle)
             found.append(seen)
+        members = None
+        def one_person(left, right):
+            nonlocal members
+            members = members or groups()
+            return could_be_one(left, right, members)
         for a, b in combinations(found, 2):
             for sex in sorted(set(a) & set(b)):
-                if not any(compatible_names(x, y) for x in a[sex] for y in b[sex]):
+                if not any(one_person(x, y) for x in a[sex].items() for y in b[sex].items()):
                     role = 'father' if sex == 'man' else 'mother'
-                    return f'different recorded {role}: {", ".join(sorted(a[sex]))} / {", ".join(sorted(b[sex]))}'
+                    listed = lambda side: ', '.join(sorted({name(h) for h in side[sex].values()}))
+                    return f'different {role}: {listed(a)} / {listed(b)}'
         return None
 
     def new_different_parent(component):
@@ -824,7 +843,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     continue
                 for parent in [p for p in parents_of[x] if not p.basis]:
                     key = parent.source.key, sibling.source.key, other.handle
-                    father = find(parent.mentions[0].handle)
+                    father_handle = parent.mentions[0].handle
+                    father = find(father_handle)
                     if (key in inferred_bases or father == y or surname(father) != family
                             or names.gender(root_names_of(current[father])) != 'man'):
                         continue
@@ -834,8 +854,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     paternal = [f for f in fathers if names.gender(root_names_of(current[f])) == 'man']
                     if any(given(root_names_of(current[f])) != given(root_names_of(current[father])) for f in paternal):
                         continue  # a different recorded father: half-siblings or a wrong identity
-                    if any(len(anchor(current[f] + current[father])) > 1 or chronology_conflict(current[f] + current[father])
-                           for f in paternal):
+                    if not all(could_be_one((f, current[f][0]), (father, father_handle), current) for f in paternal):
                         continue
                     weaker = min((parent, sibling), key=lambda a: (a.source.kind == 'facts', reliability(a.source, model.settings)))
                     father_mention = parent.mentions[0]
@@ -847,6 +866,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                         inferred_bases.add(key)
                         continue
                     inferred_bases.add(key)
+                    sex = names.gender(name(father_mention.handle))
+                    parents_of_mention[other.handle].append((sex, father_mention.handle))
                     parents_of[y].append(inferred)
                     added += 1
         return added
@@ -856,24 +877,29 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
 
     def withdraw_inferred():
         """Drop inferred fathers that later merges contradict: a self-parent, a cycle,
-        a generation conflict, or a differently named recorded father."""
+        a generation conflict, or a second father who cannot be the same person."""
+        members = groups()
         recorded = [a for a in assertions if not a.basis and a.original['type'] in {'parent', 'sibling'}]
         edges = [tuple(find(m.handle) for m in a.mentions) for a in recorded if a.original['type'] == 'parent']
         siblings = [tuple(find(m.handle) for m in a.mentions) for a in recorded if a.original['type'] == 'sibling']
-        fathers = defaultdict(set)
+        fathers = defaultdict(dict)
         for a in recorded:
             if a.original['type'] == 'parent' and names.gender(name(a.mentions[0].handle)) == 'man':
-                fathers[find(a.mentions[1].handle)].add(name(a.mentions[0].handle))
+                fathers[find(a.mentions[1].handle)].setdefault(find(a.mentions[0].handle), a.mentions[0].handle)
         valid = not cycle_nodes(edges) and generations_consistent(edges, siblings)
         withdrawn = set()
         for a in [a for a in assertions if a.basis]:
             pair = father, child = tuple(find(m.handle) for m in a.mentions)
-            if (father == child or any(not compatible_names(name(a.mentions[0].handle), other) for other in fathers[child])
+            own = father, a.mentions[0].handle
+            if (father == child or not all(could_be_one(own, other, members) for other in fathers[child].items())
                     or valid and (cycle_nodes([*edges, pair]) or not generations_consistent([*edges, pair], siblings))):
                 withdrawn.add(id(a))
             else:
                 edges.append(pair)
-        assertions[:] = [a for a in assertions if id(a) not in withdrawn]
+                fathers[child].setdefault(father, a.mentions[0].handle)
+        if withdrawn:
+            assertions[:] = [a for a in assertions if id(a) not in withdrawn]
+            index_parents()
 
     def family_closure():
         withdraw_inferred()

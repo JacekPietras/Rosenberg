@@ -20,6 +20,7 @@ data/
 ├── titles.md     # Equivalent title words and epithets for matching
 ├── kinship.md    # Tree positions meant by source kinship terms
 └── places.json   # Place-name variants and coordinates
+algorithm-spec/   # Family reconstruction rules and algorithm
 docs/             # Browser viewer for the dataset
 rules/            # Conditional instructions for data work
 ```
@@ -65,39 +66,21 @@ the viewer to enable automatic rebuilding. The published read-only site links to
 viewer when a rebuild is needed.
 
 The registry and generated tree schemas are documented in [rules/json-formats.md](rules/json-formats.md).
-Matching uses an explicit log-odds model across all source identities.
-`data/matching.json` holds its global parameters.
-Documents/images have source weight 1.0; books/notes 0.5; guesses receive an
-additional factor of 0.45. Title evidence decays with time, scoped offices carry
-more weight, and conflicting deaths impose a large penalty. Place/property
-context, formal family relationships, and deterministic same-fact associates
-contribute additional evidence. Informative prose-only actors can supply
-context records without creating family edges. Confirmed IDs in textual facts
-are recognized directly. A capped full-relative-name rarity adjustment uses
-factual source frequencies; it is not a historical population estimate.
-Records that no threshold merges still join their most probable same-name
-candidate unless something strictly forbids it (death, impossible age or time
-span, distinct registry IDs, a known kinship such as father/son or cousins, or
-a different recorded father or mother); a join needs at least some evidence
-beyond the name and rank. A person has one father and one mother: records whose
-recorded fathers (or mothers) have incompatible names stay separate, while
-same-named parents can still prove to be one person. A same-surname sibling
-inherits the other sibling's recorded same-surname father (never a mother), so
-separate records of that father can join; an inherited father only adds
-evidence and never blocks a merge. Undecided
-candidates are kept as "possibly the same person".
+Matching uses an explicit, uncalibrated log-odds model across all source
+identities, with global parameters in `data/matching.json`. Records join their
+most probable same-name candidate unless something forbids it (death,
+impossible age, distinct registry IDs, known relatives, a different father or
+mother); undecided candidates are kept as "possibly the same person". The tree
+stores comparison probabilities, feature contributions, rejected alternatives,
+and provenance; tree and person pages explain them. The rules and passes are
+specified in [algorithm-spec](algorithm-spec/), starting with its
+[domain rules](algorithm-spec/domain-rules.md).
+
 The diagram defaults to parent/child and spouse lines; hovering over or focusing
 a person reveals their sibling and other kin lines as well. Children with the same recorded parents
 share a branch. In the default view, married parents use only the identifiable
 father's stem for shared children; both parent assertions remain in the evidence
-panel and appear when either connected person is hovered over or focused. The merge threshold is 70% for confident merges; best-candidate joins have none
-and record their share instead ([plan](algorithm-plan/family-tree-algorithm-plan-v2.md)). Estimates are **uncalibrated**, not
-measured historical accuracy. The tree stores comparison probabilities, feature
-contributions, rejected alternatives, and provenance; tree and person pages
-explain them. A typed mention without a deceased marker means the person was
-alive then; an estimated birth interval derived from titles, relationships, and
-deaths limits plausible ages. Seal comparison remains human work; no automatic
-seal matching is introduced.
+panel and appear when either connected person is hovered over or focused.
 
 ### Inspect saved graph connections
 

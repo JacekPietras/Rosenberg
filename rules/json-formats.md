@@ -30,27 +30,18 @@ to `parent` with B in `person` and A in `of`. Do not add a reverse fact. `kin.te
 string preserving the source kinship term, such as `Vetter`, without guessing its precise modern
 meaning.
 
-An entry may also contain an optional `guesses` array alongside `facts` for assumptions, inferences,
-and author interpretations. Use the same object formats and historical dates as for facts:
-typed objects for every claim, including `generic` for interpretations and reasoning that need
-prose. The containing `guesses` array identifies these as uncertain. Keep `content` simple and
-atomic, retaining relevant uncertainty, reasoning, and attribution. Include a citation when the
-containing entry does not identify the basis. Never invent a historical date or use a publication
-year to satisfy validation. Books and notes require an explicit historical date on every fact and
-guess. Keep guesses separate from source-supported facts.
+An entry may also contain an optional `guesses` array alongside `facts`. Guesses use the same typed
+object formats and date rules as facts; the containing `guesses` array marks them as uncertain.
 
 `person` and `of` are non-empty strings: either a known `people.json` ID or a normalized full name.
-Resolve an exact, case-sensitive ID match first; otherwise treat the value as a name, without
-selecting a namesake's record. Write IDs directly in these fields, without square brackets or
-separate
-`personId`/`ofId` fields. Do not use nested person objects. IDs must be unique and must not collide
-with full names. Preserve existing IDs; do not require or invent one when identity is unresolved.
+A value equal to an existing ID (case-sensitive) is that ID; any other value is a name. Write IDs
+directly in these fields, without square brackets or separate `personId`/`ofId` fields. Do not use
+nested person objects. IDs must be unique and must not collide with full names.
 
 `personTitle` and `ofTitle`, when present, are non-empty arrays of unique, non-empty strings. Put
 each designation in its own item, for example
 `["der Jüngere", "Ritter", "zu Boxberg"]`; keep `Vogt zu Lauda` as one complete item. Omit an absent
-title field instead of writing `null`, an empty array, or a scalar string. Only record designations
-stated by this source. A `title`
+title field instead of writing `null`, an empty array, or a scalar string. A `title`
 fact requires `personTitle` and has no `of` or `ofTitle` fields.
 
 `personDeceased` and `ofDeceased` are optional boolean fields identifying the corresponding
@@ -60,12 +51,10 @@ widower. Omit it otherwise. Do not use `false` or
 `null`. Use `ofDeceased` only on facts with an `of` participant. Do not put
 `verstorben` or equivalent deceased status in a title array.
 
-Facts are analyzed independently. A participant marked deceased may have died before the fact's
-attestation; a mention at that date does not imply that participant was alive. An unmarked
-participant is treated as alive at the fact's historical date, so a missing marker can separate a
-dead person from later records. A separate `death` fact can record a
-usable death date or bound, but must not be required to interpret the status on a relationship or
-title or generic fact. For example, a spouse fact can stand alone:
+Each fact is self-contained. A participant marked deceased was dead by the fact's historical date;
+an unmarked participant was alive then. A separate `death` fact can record a usable death date or
+bound, but is not needed to interpret the status on a relationship, title, or generic fact. For
+example, a spouse fact can stand alone:
 
 ```json
 {
@@ -81,8 +70,7 @@ title or generic fact. For example, a spouse fact can stand alone:
 A `generic` object requires exactly one of `person` or `subject`, and a non-empty `content` string.
 Use `subject` for a non-person entity such as a family, place, institution, object, or an
 unidentified figure described by a source. It is a non-empty literal description, never a person
-ID or an invented personal name. Subject-based claims do not create person identities or family
-relationships. Omit `personTitle` and `personDeceased` when using `subject`. Keep the same date,
+ID or an invented personal name. A `subject` is not a person. Omit `personTitle` and `personDeceased` when using `subject`. Keep the same date,
 atomicity, source-support, and uncertainty rules as person-based claims.
 `person` identifies the
 subject using the same normalized name or confirmed ID rules as other types. Keep `content` a
@@ -213,9 +201,8 @@ python3 scripts/validate_facts.py data/books data/notes
 ```
 
 The validator checks syntax, fields, dates, and registry
-references and reports source locations. It does not verify historical support or identity, build
-the graph, or detect ancestry cycles. An unmatched ID-like string is a review warning, not a
-resolved person. Review source evidence and data diffs as well.
+references and reports source locations. It does not verify historical support. An unmatched
+ID-like string is a review warning, not a resolved person.
 
 ## Book JSON
 
@@ -371,8 +358,8 @@ image URL. An optional `placeId` refers to the matching place ID in
 people. It is a non-empty array containing **only** `id` and `name` on each
 record. Both are non-empty strings; IDs are unique and case-sensitive and must
 not collide with any full name. Different people can have the same full name.
-Preserve confirmed IDs and names. Inclusion in this registry is a reviewed
-identity decision; reconstruction must never add provisional people to it.
+Preserve confirmed IDs and names. Only reviewed, confirmed people are added;
+generated files never change it.
 
 ```json
 [
@@ -381,19 +368,15 @@ identity decision; reconstruction must never add provisional people to it.
 ]
 ```
 
-Do not store relationships, titles, biographies, matching results, provenance,
+Do not store relationships, titles, biographies, generated results, provenance,
 input fingerprints, build metadata, or configuration here. Source assertions
-remain in their source JSON. All computed results belong in `data/tree.json`.
-Rebuilding the tree must leave the registry byte-for-byte unchanged.
+remain in their source JSON; generated results belong in `data/tree.json`.
 
 ## Tree JSON
 
 `data/tree.json` is the generated family graph, separate from the confirmed
-registry. Generate it with `python3 scripts/rebuild_family_tree.py --apply`;
-The CLI computes a weighted graph combining facts and guesses.
-Without `--apply` the CLI is read-only. The local viewer also rebuilds stale or
-missing trees and offers a retry action only when rebuilding fails. The tree is output, never input
-identity evidence, and must not be included in its own input fingerprints.
+registry. It is written only by `python3 scripts/rebuild_family_tree.py --apply`
+and is never edited by hand. It is not one of its own inputs.
 
 The top-level object has:
 
@@ -405,8 +388,7 @@ The top-level object has:
 - `fingerprint`: the fingerprint of the complete `inputs` object.
 - `evidence`: a graph keyed by each available evidence view.
 - `matchingBackground`: per-view factual full-name counts and their weighted
-  total, used for capped relative-name specificity. Source factors apply and
-  guesses are excluded. Totals and values are validated.
+  total (source factors applied, guesses excluded).
 - `coverage`: counts per view for `reconstructedPeople`,
   `reconstructedRelationships`, `contextualLinks`, `registryRelationships`,
   `unresolvedMentions` from registry diagnostics, `candidateComparisons`,
@@ -434,30 +416,22 @@ confirmed ID and node key. Other nodes use an opaque `@evidence/` handle derived
 from their source occurrences. These are generated view handles, not permanent
 person IDs, and can change when new evidence changes a grouping.
 
-`status` is `anchored`, `contextual`, or `source`. Contextual nodes are inferred
-identity clusters; source nodes can still correspond to another node elsewhere.
-Counts describe source identities, not a proven count of distinct people.
+`status` is `anchored` (a registry person), `contextual` (occurrences from
+several passages), or `source` (occurrences from one passage). Nodes are
+generated identities, not a proven count of distinct people.
 Each mention contains `source`, `field`, and its resolved historical `date`.
 Typed occurrences use `field: "person"` or `"of"`. Textual context occurrences
 use `field: "text"` and a `reference` containing a literal name from the fact
 or a confirmed ID explicitly present as `[id]`. The reference must be supported
-by the original fact text. A context ID cannot override a different fixed
-anchor. Occurrence uniqueness includes the text reference; several named actors
+by the original fact text. Occurrence uniqueness includes the text reference; several named actors
 in one fact are distinct occurrences, not duplicate assignments. An occurrence belongs to only one node per view. Source
 references supporting grouping remain in `identitySources`. Titles and dates
 summarize attestations.
 
 Relationships contain `type`, `person`, `of`, `derivations`, and `term` for kin.
 Types are directed `parent`, and symmetric `spouse`, `sibling`, and `kin`.
-Endpoints are node keys. Kin terms preserve the source's wording, such as
-`Vetter`, without inventing a precise modern relationship; the tree positions a
-term can mean are listed in `data/kinship.md` and used only for matching. Marriage does not
-supply another parent and siblings do not supply transitive siblings. One
-exception: when two siblings share a surname, a recorded parent with that
-surname (the father) of one sibling is also a parent of the other, unless that
-sibling already has a different-named father with that surname or the edge would
-create a cycle. Recorded parents of a sibling are not propagated further.
-No self-relationships or directed ancestry cycles are accepted. Repeated
+Endpoints are node keys. `term` preserves the source's kinship wording, such
+as `Vetter`. No self-relationships or directed ancestry cycles are accepted. Repeated
 ancestry through different branches is allowed. Attestation dates are not
 relationship start dates.
 
@@ -472,160 +446,20 @@ derivation with `inference: "sibling"`: its sources contain a parent assertion
 from `person` to some node X and a sibling assertion between X and `of`. Equivalent edges
 retain alternative complete derivations; each view is validated separately.
 
-### Reconstruction and verification
-
-Repeated participant references in one dated source passage are grouped into
-the fewest people that source distinctions and graph constraints jointly allow;
-occurrences are merged only when every such grouping puts them together.
-Siblings share a generation and a parent is one generation above a child, so a
-person cannot be both parent and sibling of the same person. Cross-source matching
-uses a weighted log-odds model for all source people, including those without
-registry IDs. For compatible-name candidates:
-
-```text
-logOdds = log(prior / (1 - prior)) + sum(feature contributions)
-probability = 1 / (1 + exp(-logOdds))
-```
-
-All title categories decay with the distance between their actual attestation
-intervals. Elder → younger age titles and Ritter → Edelknecht are penalized; the
-reverse progressions are neutral. Different age titles of one name in one
-passage are different people. Titles are compared by meaning, using the
-equivalents in `data/titles.md` and place variants in `places.json`: an office is
-its office word and place, regardless of prefix or connector (`Vogt zu Lauda` =
-`Vogt in Lauda` = `erzbischöflicher Voigt zu Lauda`); `genannt X`, `called von X`,
-`dictus de X`, `von X`, and `zu X` are one designation of X. Different offices with
-the same place, or an office and a bare place designation, supply the weaker
-territory weight once. Cross-role place support uses
-`crossRolePlaceFactor`. Scoped offices have stronger weights than ranks. Property associations
-use names/variations from `places.json`. Same-fact associates are deterministic
-`XXX von YYY` name co-occurrences; an entire entry is never one associate group.
-Typed personal generic claims that the subject "was paid" or "was owed" money
-by one named counterparty provide stronger, role-specific associate evidence
-when both profiles state that role. It replaces ordinary association with that
-counterparty, uses the associate decay and cap, and does not assert that the
-records describe the same transaction. Other actors in a passage do not inherit
-the subject's financial role.
-Dated prose binds exact bracketed IDs directly. Ordinary names select a unique
-local participant using overlapping date intervals. Informative prose-only
-occurrences can form provisional context profiles and bridge typed family
-identities, but never create family edges or standalone disconnected family
-cards. Repeated normalized names in a fact remain ambiguous. Context occurrences
-retain source text references rather than being rewritten as typed facts.
-
-Family evidence uses exact anchors, already linked relatives, full relative
-names, and co-parent context without creating extra edges, scaled by relation
-type (parent/child and spouse above sibling above other kin). Same-named
-siblings, parents, children, or spouses of the same identified person receive
-the stronger `sharedRelativeWeight`. A merge that leaves a person with two
-same-named parents or spouses who cannot be one person (distinct confirmed IDs
-or a chronology block) is blocked. Features are capped
-by category/relative/place; repeated extraction does not manufacture support.
-Document/image source factors are always 1.0; book/note factors are 0.5.
-Guesses receive an additional 0.45 factor by default. Pairwise evidence uses the
-weaker of the two observations' effective factors. Relative evidence also uses
-the membership confidence of the specific relative mention, not of its whole
-cluster. A stage-4 attribution of
-a speculative mention can instead be corroborated by an independently recorded
-factual parent relationship. That feature uses the weaker source-category/factual
-relationship weight and the child's identity confidence (1 for an exact child ID
-in the factual relationship, otherwise the inferred cluster confidence): the guess
-does not supply a new parent relationship or corroborate itself. Its uncertainty
-label and source pointer remain unchanged.
-
-A typed mention without a deceased marker means the person was alive at the
-fact's date, except the parent in a `parent` fact and both people in a
-`sibling` fact: being named as someone's parent or sibling says nothing about
-being alive then. Instead, a child is born at most
-`posthumousBirthYears` after a parent's death, which bounds the child's birth
-and feeds the child's age penalty and impossible-age block. A retrospective personal generic guess beginning "may/might/could
-have been the mother/father/parent of" does not assert life at the date of the
-retrospective discussion. An explicit deceased marker still supplies its bound;
-no deceased marker or replacement date is inferred. A death fact or deceased marker supplies a death bound. Each
-identity has an estimated birth interval: a rank, office, `der Ältere`/`der
-Alte`, parent, or spouse requires adulthood (`adultAgeYears`), and every
-unmarked mention or exact death requires an age of at most `maxAgeYears`. Partial
-dates are read permissively. A mention after death, incompatible death dates,
-or an impossible age blocks a merge when both records are document/image facts;
-otherwise it contributes `-deathConflictPenalty × pair reliability`. A merge
-that raises the minimum implied age above `ageComfortYears` contributes
-`-(minimum age - ageComfortYears) / ageScaleYears × pair reliability`; time
-distance alone is neutral. Participants of one relationship fact, separate
-confirmed IDs, self-relationships, and ancestry cycles block merges. Blocked
-comparisons have status `incompatible` and a reason starting with `blocked:`.
-A confirmed ID whose own document facts conflict is reported for review and is
-not reassigned.
-
-Before any weighting, occurrences with the same name and the same titles (or
-both untitled) in one document file or one book, notes or image section are
-merged regardless of date, unless a block separates them; their membership
-confidence is 1.
-
-Within one source passage (entry and date), same-name occurrences form the
-fewest people allowed; occurrences are also distinct when one is a knight
-(`Ritter`/`miles`) and the other a squire (`Edelknecht`/`armiger`), when one has
-an explicit deceased marker and the other is an unmarked living mention, or when
-they are the subjects of two separate facts with the same content. Ties between
-groupings are decided by title agreement. Titles on deceased-marked mentions and
-death records are dated to the `retrospectiveLookBackYears` before the death
-bound. Ritter and Edelknecht on the same day in different sources contribute
-`-sameDateRankConflictPenalty × reliability` (blocked between documents).
-Guessed alternative death dates from one passage form one interval.
-
-Two identities connected in the tree by a relationship path that makes them
-different people (father/son, uncle/nephew, cousins, in-laws, an excluded kin
-term) never merge in any stage. Allowed paths keep both in one sibling group,
-make both parents of one sibling group, both spouses of one person, or the
-spouse of X and the other parent of X's child. Same-named siblings, parents,
-children or spouses of one identity are merged unless blocked.
-
-The configuration defines the compatible-name prior (0.10), the stage-3 merge
-threshold (0.70), reciprocal log-odds margin, age assumptions, cluster checks,
-and maximum rounds. Stage 4 then joins every identity to its highest-scoring
-unblocked same-name candidate without a probability threshold. A join needs net
-evidence of at least `bestCandidate.minJoinEvidence` from a feature other than
-rank; hard blocks are distinct registry IDs, explicit distinctions, death
-conflicts between facts, any impossible age, living mentions spanning more than
-`bestCandidate.maxLivingSpanYears`, known relatives, and different recorded
-fathers or mothers (by the `data/names.md` gender section; sibling-inferred fathers never block). Candidates within
-`bestCandidate.attachmentTieLogOdds` are decided by family evidence, then the
-nearer date; otherwise the identity stays separate. Each join stores its `share`,
-`exp(L) / (1 + Σ exp(L_j))` over unblocked candidates, which becomes the joined
-mentions' membership confidence. Capped full-relative-name frequency adjustments use the frozen
-factual `matchingBackground`, add-one smoothing, and configurable rarity weight,
-maximum, and reference frequency. This is source representation, not population
-frequency. Matching runs against frozen profiles; whole candidate
-components and connected source families are checked jointly. Inferred links
-carry their dependencies and confidence into later rounds. Only accepted links
-reduce cluster confidence; rejected internal pairs do not. Same-named repeated
-parents are not co-parent evidence. Omitted surnames require family or identifying
-title support, and co-parent support retains child-identity provenance. The algorithm's own
-conclusions are not independent evidence. No seal-image matching is used. These probabilities are **uncalibrated estimates**.
-
-Stage 4 also permits a weaker attachment of a standalone factual widow
-or widower record to an established family identity. Both records must have the
-same complete normalized name; the family must span multiple source passages
-and explicitly attest widowhood at or before the standalone record. Competing
-chronologically compatible reference identities prevent this attachment, even
-when one scores higher. Full-name matching alone is insufficient. The configured
-`widowhoodNameWeight` makes the name-plus-widowhood assumption explicit; it is
-weaker evidence than a shared identified spouse and can still join undocumented
-namesakes. Existing probability, chronology, and complete-cluster checks remain
-in force. The frozen reference tree prevents these attachments supporting one
-another or joining established identities.
+### Comparisons and verification
 
 Each comparison contains `person`, `candidate` (final node keys), original
 `mentions` handles, `stage` (3 or 4), `iteration`, `probability`, `logOdds`, `features` (named
 log-odds contributions), `sources`, `usesGuesses`, `status`, and `reason`. Status
 is `merged`, `below-threshold`, `ambiguous`, `incompatible`, or `superseded`.
-Stage-4 comparisons also contain `share`.
-The latter preserves an earlier comparison when later cluster evidence joined
-its occurrences. Name/time-only candidates with no substantive additional
-signal are not persisted. References and probability arithmetic are validated.
+Blocked comparisons have status `incompatible` and a reason starting with
+`blocked:`. Stage-4 comparisons also contain `share`.
+`superseded` preserves an earlier comparison whose occurrences were later
+joined. References and probability arithmetic are validated.
 
-A node's `identityProbability` is the lowest membership confidence of its
-mentions (the product of merge probabilities or stage-4 shares linking a mention
-to the identity's core), or 1 for an exact/local occurrence grouping. A node may
+A node's `identityProbability`, from 0 to 1, is the lowest membership
+confidence of its mentions; it is 1 for a registry person or a grouping within
+one source. A node may
 contain `possiblySame`: `[{key, probability}]` for candidates that were tied or
 likely but not chosen. It is not a probability
 that the historical person existed or that the identity is permanently confirmed.
@@ -650,18 +484,14 @@ whitespace do not affect a fingerprint; semantic input changes do.
 
 Before displaying generated relationships, the viewer verifies the input set,
 input fingerprints, source pointers and hashes, participant assignments, and
-graph consistency. A stale or missing local tree triggers the Python rebuild
-and a verified reload. The browser does not duplicate the matching algorithm.
+graph consistency.
 
-`--apply` validates the complete tree in memory, rechecks source inputs, registry
-bytes, and existing tree bytes, and writes `tree.json` once. It never modifies
-`people.json` or source assertions. Intervening changes prevent a write. No
-timestamps, reports, review queues, or separate facts database are introduced.
+`--apply` validates the complete tree before writing it once; intervening input
+changes prevent the write. The tree contains no timestamps.
 
 ## Matching JSON
 
-`data/matching.json` is the authoritative global configuration for the weighted
-identity model. It contains `model: "weighted-log-odds-v6"`, `calibrated: false`,
+`data/matching.json` holds the parameters of the family reconstruction. It contains `model: "weighted-log-odds-v6"`, `calibrated: false`,
 `priorProbability`, `mergeProbability`, `ambiguityLogOddsMargin`,
 `clusterMinimumProbability`, `guessWeight`, `sourceWeights`, age assumptions
 (`adultAgeYears`, `maxAgeYears`, `ageComfortYears`, `ageScaleYears`), title
@@ -681,9 +511,8 @@ Use the existing file's exact keys; unknown/missing keys, non-finite or
 non-positive values, invalid probability ranges, and non-integer iteration
 bounds are rejected. The agreed source factors are documents/images 1.0 and
 books/notes 0.5; these values are enforced. Guesses must have a factor strictly
-between 0 and 1. Other values are configurable model assumptions. Parameter
-changes invalidate generated results and automatically rebuild the local tree.
-The matching parameters are stored only in `data/matching.json`.
+between 0 and 1. Other values are configurable. A change invalidates
+`data/tree.json` through its input fingerprints.
 
 
 ## Places JSON
@@ -828,9 +657,7 @@ consistent, and review the diff for unrelated changes.
 ## Editing requirements
 
 Keep source, translation, and facts together in the same entry. Preserve valid JSON, source
-citations, and date precision. Consult `data/names.md` before normalizing personal names. For
-place-name variants, run
+citations, and date precision. For place-name variants, run
 `python3 scripts/list_place_variations.py` from the project root (add
 `--include-churches` when relevant). Read the matching `data/places.json`
-record before adding or changing its variations. Do not merge similar people or places without clear
-correspondence. Validate edited JSON and review the diff manually.
+record before adding or changing its variations. Validate edited JSON and review the diff manually.

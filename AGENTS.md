@@ -14,6 +14,14 @@ the relevant task requires them.
 
 There is no automated merge, sorting, queue, report, or temporary-file workflow. Add facts directly to the relevant JSON entry and review the diff.
 
+## Family reconstruction
+
+- Before changing `scripts/family_graph/` or `data/matching.json`, read
+  [`algorithm-spec/domain-rules.md`](algorithm-spec/domain-rules.md) and
+  [`algorithm-spec/algorithm.md`](algorithm-spec/algorithm.md).
+- Keep `algorithm-spec/` in step with the code: update the domain rule, the
+  pass file and the worked examples in the same change.
+
 ## Research skills
 
 - For archival catalog searches by person or family name, read and follow [`archive-name-research`](.agents/skills/archive-name-research/SKILL.md).

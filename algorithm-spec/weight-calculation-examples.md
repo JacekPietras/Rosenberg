@@ -1,9 +1,9 @@
 # Worked identity-weight calculations
 
-These fictional examples illustrate the
-[specification](family-tree-algorithm-plan.md). They are not identifications of
-historical people or output from the current engine. Every probability below is
-uncalibrated.
+These fictional examples illustrate the [evidence model](evidence-model.md)
+and the passes that use it. They are not identifications of historical people
+or output from the current engine. Every probability below is uncalibrated.
+Update them whenever `data/matching.json` changes.
 
 ## Calculation rules
 
@@ -130,3 +130,27 @@ share = exp(L) / (1 + exp(L)) = 23.20%  (membership confidence of the joined rec
 ```
 
 With only a shared `Ritter` (`0.75 × 0.5 = 0.375`) the record stays separate.
+
+## 8. Kinship position and the only candidate (pass 4)
+
+A book fact (reliability 0.5) says Arnold is `Vetter` of Eberhard, a registry
+person (membership 1). In the tree, Arnold A is the brother of Eberhard's father
+(position `PS`), 10 years from the book's date; Arnold B is Eberhard's brother
+(`S`). `Vetter` allows `PS` and excludes `S`; it is a narrow term (0.5).
+
+```text
+Arnold A: position = 12 × 0.5 × 0.5 × 1 × 2^(-10/35) = 2.461006
+          only candidate in an allowed position = 1.5 × 0.5 = 0.750000
+          L = -2.197225 + 2.461006 + 0.750000 = 1.013781    P = 73.38%
+Arnold B: blocked (kinship term Vetter excludes position S)
+```
+
+A third Arnold C sharing only a property place (example 7, `L = -1.197225`) is
+an unblocked rival outside the family:
+
+```text
+share(A) = exp(1.013781) / (1 + exp(1.013781) + exp(-1.197225)) = 67.91%
+```
+
+A leads C by more than `attachmentTieLogOdds` 0.25, so the record joins A with
+membership confidence 67.91%.
