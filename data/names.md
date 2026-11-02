@@ -2,8 +2,7 @@
 
 Adam
 Adolf
-Alban
-Albanus
+Alban, Albanus
 Albrecht, Albert
 Anselm, Anshelm
 Anton
@@ -13,13 +12,10 @@ Balthasar
 Batt
 Berngern
 Bernhard
-Berthold
-Bertold
-Bertolt
+Berthold, Bertold, Bertolt
 Burkhard
 Caspar, Kaspar, Caſpar
 Christoph
-Claus
 Diether, Dieter
 Dietrich
 Dietzel
@@ -31,15 +27,11 @@ Erasmus
 Erhard
 Erkinger
 Ernst
-Franz
-Franziskus
-Friderich
+Franz, Franziskus
 Friedmann
-Friedrich
-Fritz
-Fritze
+Friedrich, Friderich, Fritz, Fritze
 Frizo
-Georg, Gorg
+Georg, Gorg, Jörg
 Gerhard, Gerhardus
 Gotfried, Godefrid, Gottfried
 Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
@@ -48,11 +40,9 @@ Hartmut
 Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus
 Herbord
 Herman, Hermann
-Hieronymus
+Hieronymus, Jheronimus
 Jakob
-Jheronimus
 Joachim
-Jörg
 Jost
 Kasimir
 Kilian
@@ -60,14 +50,10 @@ Konrad, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad,
 Kraft, Krafto
 Kuno
 Kunz, Cunz, Konz, Conz, Concz, Contz, Contze, Kontz, Kuntz, Cuntz, Cuncze, Guntz, Kunczen // are shortened versions of Konrad, but not used as it\! [1401 March 5]
-Leonhard
-Leonhart
-Leopold
-Lienhart
+Leonhard, Leonhart, Lienhart
+Leopold, Lupold, Luppold
 Lorenz
 Ludwig
-Lupold
-Luppold
 Lutz
 Mangold
 Marquard
@@ -76,19 +62,15 @@ Marx
 Mathern
 Melchior
 Michael , Michel
-Nicolaus, Nicholas, Niklaus
-Nikolaus
+Nicolaus, Nicholas, Niklaus, Nikolaus, Claus
 Pankraz
 Peter
 Philipp
 Raban, Rabanus
-Reichard
-Reichart
+Reichard, Reichart, Richard
 Reinbot
 Reinhard, Reinhart
-Richard
-Rüdger
-Rüdiger
+Rüdiger, Rüdger
 Rudolf
 Ruprecht, Rupert, Rupertus
 Sebastian
@@ -112,26 +94,21 @@ Wiprecht, Wibrecht, Wynprecht, Wyprecht, Wipert
 Wolf
 Wolfgang
 Yttel
-Zaisolph
+Zaisolph, Zeisolf
 Zeisel
-Zeisolf
 
 # Women
 
-Adelheid
+Adelheid, Alheit
 Agatha
-Agnes
-Agnese
-Alheit
+Agnes, Agnese
 Amalie
 Anastasia
-Anna
-Anne
+Anna, Anne
 Barbara
 Brigitta
 Christiana
-Christina
-Christine
+Christina, Christine
 Dorothea
 Ela
 Elchana
@@ -148,23 +125,17 @@ Irmtraut, Irmendrut, Jrmtrudis, Irmentrurt
 Jeute
 Johanna
 Jutta, Juta, Guta, Gutta, Gute
-Katharina
-Katherina
-Katherine
+Katharina, Katherina, Katherine
 Kunigunde, Kunnegunt, Kunnigund, Kunegunde, Kunegunt, Kunegunth, Konigunt, Kunigunda, Kunigundis, Cunegunda, Cunigunda, Conegundis
 Kunne
-Margaretha, Margretha, Margarete
-Margarethe
-Margret
+Margaretha, Margretha, Margarete, Margarethe, Margret
 Maria
 Osanna
 Ottilia, Ottilie
-Petrisa
-Petrissa
+Petrisa, Petrissa
 Regina
 Richtze
-Rofina
-Rufina, Ruffina
+Rufina, Ruffina, Rofina
 Selende
 Sibylla
 Ursula
