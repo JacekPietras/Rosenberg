@@ -15,7 +15,8 @@
           "height": 0.1161,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "ebrach"
     },
     {
       "label": "effigy",
@@ -92,7 +93,8 @@
           "height": 0.1179,
           "name": "Uissigheim"
         }
-      ]
+      ],
+      "placeId": "wurzburg"
     },
     {
       "label": "effigy",
@@ -109,7 +111,8 @@
           "height": 0.1496,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "wurzburg"
     },
     {
       "label": "armorial",
@@ -639,7 +642,8 @@
           "height": 0.5913,
           "name": "Erligheim"
         }
-      ]
+      ],
+      "placeId": "heidelberg"
     },
     {
       "label": "armorial",
@@ -2922,7 +2926,8 @@
           "height": 0.16,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "muenzesheim-st-martin"
     },
     {
       "title": "Münzesheim St Martin, grave slab of Kunigunde Hofwart von Kirchheim, born von Rosenberg",
@@ -2972,7 +2977,8 @@
           "height": 0.11,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "boennigheim"
     },
     {
       "title": "Waldmannshofen Evangelical church, grave slab of Albrecht Christoph von Rosenberg",
@@ -3155,7 +3161,8 @@
           "height": 0.0887,
           "name": "Rosenberg"
         }
-      ]
+      ],
+      "placeId": "marktbreit"
     },
     {
       "title": "Sugenheim St Erhard, epitaph of Philipp Ludwig von Seckendorff",

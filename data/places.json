@@ -1351,5 +1351,32 @@
     "showOnMap": false,
     "lat": 0.0,
     "lon": 0.0
+  },
+  {
+    "id": "ebrach",
+    "variations": [
+      "Ebrach"
+    ],
+    "category": "village",
+    "lat": 49.8463,
+    "lon": 10.4936
+  },
+  {
+    "id": "boennigheim",
+    "variations": [
+      "Bönnigheim"
+    ],
+    "category": "city",
+    "lat": 49.0408,
+    "lon": 9.0939
+  },
+  {
+    "id": "marktbreit",
+    "variations": [
+      "Marktbreit"
+    ],
+    "category": "village",
+    "lat": 49.6658,
+    "lon": 10.1471
   }
 ]
