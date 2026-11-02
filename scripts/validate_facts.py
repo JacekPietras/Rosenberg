@@ -189,8 +189,11 @@ class Validator:
             parts = value.split()
             given = parts[0]
             given_canonical = self.given_name_variants.get(given.casefold())
+            canonical_parts = parts.copy()
+            has_name_variation = False
             if given_canonical and given != given_canonical:
-                self.report(location, f'given name {given!r} is a variation; use normalized form {given_canonical!r} from data/names.md')
+                canonical_parts[0] = given_canonical
+                has_name_variation = True
             if 'von' in [part.casefold() for part in parts]:
                 von_index = next(index for index, part in enumerate(parts) if part.casefold() == 'von')
                 surname_parts = parts[von_index + 1:]
@@ -200,7 +203,10 @@ class Validator:
                 surname = ' '.join(surname_parts)
                 surname_canonical = self.place_name_variants.get(surname.casefold())
                 if surname_canonical and surname != surname_canonical:
-                    self.report(location, f'surname {surname!r} is a place-name variation; use normalized form {surname_canonical!r} from data/places.json')
+                    canonical_parts[von_index + 1 if 'von' in [part.casefold() for part in parts] else 1:] = surname_canonical.split()
+                    has_name_variation = True
+            if has_name_variation:
+                self.report(location, f'name {value!r} uses a variation; canonical form is {" ".join(canonical_parts)!r} (data/names.md and/or data/places.json)')
 
     def check_titles(self, value, location):
         if not isinstance(value, list) or not value:

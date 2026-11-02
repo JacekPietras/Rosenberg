@@ -196,7 +196,7 @@
             "armiger"
           ],
           "type": "spouse",
-          "of": "Petrissa",
+          "of": "Petrisa",
           "date": "1324-10-05"
         },
         {
@@ -212,7 +212,7 @@
           "date": "1324-10-05"
         },
         {
-          "person": "Petrissa",
+          "person": "Petrisa",
           "type": "death",
           "diedOn": "1325-09-13",
           "date": "1325-09-13"
@@ -739,7 +739,7 @@
             "zu Dürn"
           ],
           "type": "parent",
-          "of": "Hermann von Rosenberg",
+          "of": "Herman von Rosenberg",
           "date": "1341"
         },
         {
@@ -757,7 +757,7 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "sibling",
-          "of": "Hermann von Rosenberg",
+          "of": "Herman von Rosenberg",
           "date": "1341"
         },
         {
@@ -769,7 +769,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "sibling",
-          "of": "Hermann von Rosenberg",
+          "of": "Herman von Rosenberg",
           "date": "1341"
         },
         {
@@ -1397,7 +1397,7 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "sibling",
-          "of": "Jörg von Rosenberg",
+          "of": "Georg von Rosenberg",
           "date": "1436"
         },
         {
@@ -1408,7 +1408,7 @@
           "date": "1436"
         },
         {
-          "person": "Jörg von Rosenberg",
+          "person": "Georg von Rosenberg",
           "type": "kin",
           "of": "Arnold von Rosenberg",
           "term": "Vetter",
@@ -1421,7 +1421,7 @@
           "date": "1436"
         },
         {
-          "person": "Jörg von Rosenberg",
+          "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "bought a quarter of Boxberg from his Vetter Arnold von Rosenberg together with his brother Ulrich von Rosenberg.",
           "date": "1436"
@@ -1479,7 +1479,7 @@
           "date": "1464"
         },
         {
-          "person": "Jörg von Rosenberg",
+          "person": "Georg von Rosenberg",
           "type": "death",
           "diedBefore": "1459",
           "date": "1458"
@@ -2187,7 +2187,7 @@
             "zu Boxberg"
           ],
           "type": "spouse",
-          "of": "Christine von Handschuhsheim",
+          "of": "Christina von Handschuhsheim",
           "date": "1408-11-11"
         },
         {
@@ -2288,7 +2288,7 @@
         {
           "person": "Arnold von Rosenberg",
           "type": "kin",
-          "of": "Jörg von Rosenberg",
+          "of": "Georg von Rosenberg",
           "term": "Vetter",
           "date": "1436"
         }
@@ -3125,7 +3125,7 @@
       "english": "1364: Agnese von Rosenberg, widow of Lord Rüd von Bödigheim; Schönthaler Urkunden.",
       "facts": [
         {
-          "person": "Agnese von Rosenberg",
+          "person": "Agnes von Rosenberg",
           "type": "spouse",
           "of": "Rüd von Bödigheim",
           "ofDeceased": true,
@@ -3168,7 +3168,7 @@
       "english": "1418, May 19: Margarethe von Rosenberg passed away; Brombacher Necrologium.",
       "facts": [
         {
-          "person": "Margarethe von Rosenberg",
+          "person": "Margaretha von Rosenberg",
           "type": "death",
           "diedOn": "1418-05-19",
           "date": "1418-05-19"
@@ -3200,7 +3200,7 @@
         {
           "person": "Kunne von Rosenberg",
           "type": "spouse",
-          "of": "Lupold von Seldeneck",
+          "of": "Leopold von Seldeneck",
           "date": "1422"
         }
       ]
@@ -3532,25 +3532,25 @@
           "date": "1509"
         },
         {
-          "person": "Jörg von Rosenberg",
+          "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "mediated a dispute between Philipp von Weinsberg der Ältere and the Truchsessen von Baldersheim and others concerning Aub.",
           "date": "1488"
         },
         {
-          "person": "Jörg von Rosenberg",
+          "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "was in a feud with Count Asmus von Wertheim.",
           "date": "1500"
         },
         {
-          "person": "Jörg von Rosenberg",
+          "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "assisted Margrave Casimir against Nuremberg.",
           "date": "1502"
         },
         {
-          "person": "Jörg von Rosenberg",
+          "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "fought on the Palatinate side in the War of the Bavarian Succession.",
           "date": "1504"
@@ -3628,7 +3628,7 @@
           "date": "1518"
         },
         {
-          "person": "Zeisolf von Rosenberg",
+          "person": "Zaisolph von Rosenberg",
           "type": "generic",
           "content": "was Arnold von Rosenberg’s surety against Hans von Rosenberg.",
           "date": "1512"
@@ -3771,7 +3771,7 @@
         {
           "person": "Friedrich von Rosenberg",
           "type": "sibling",
-          "of": "Jörg von Rosenberg",
+          "of": "Georg von Rosenberg",
           "date": "1494"
         },
         {
@@ -3981,7 +3981,7 @@
         {
           "person": "Anna von Rosenberg",
           "type": "spouse",
-          "of": "Kaspar von Stetten",
+          "of": "Caspar von Stetten",
           "ofTitle": [
             "zu Kocherstetten"
           ],
@@ -4000,7 +4000,7 @@
           "date": "1548"
         },
         {
-          "person": "Kaspar von Stetten",
+          "person": "Caspar von Stetten",
           "personTitle": [
             "zu Kocherstetten"
           ],

@@ -8,21 +8,21 @@
       "english": "Notarial instrument about the statement of Margarethe Zobel, widow of Jörg von Rosenberg zu Boxberg, that she wants to refrain from all claims for war damage to the German Order.",
       "facts": [
         {
-          "person": "Jörg von Rosenberg zu Boxberg",
+          "person": "Georg von Rosenberg zu Boxberg",
           "type": "death",
           "diedBefore": "1471"
         },
         {
-          "person": "Margarethe Zobel",
+          "person": "Margaretha Zobel",
           "type": "spouse",
-          "of": "Jörg von Rosenberg",
+          "of": "Georg von Rosenberg",
           "ofTitle": [
             "zu Boxberg"
           ],
           "ofDeceased": true
         },
         {
-          "person": "Jörg von Rosenberg",
+          "person": "Georg von Rosenberg",
           "personTitle": [
             "zu Boxberg"
           ],
@@ -30,7 +30,7 @@
           "type": "title"
         },
         {
-          "person": "Margarethe Zobel",
+          "person": "Margaretha Zobel",
           "type": "generic",
           "content": "declared that she would refrain from all claims for war damage against the Teutonic Order."
         }

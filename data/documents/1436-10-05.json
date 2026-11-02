@@ -8,7 +8,7 @@
       "english": "Arnold von Rosenberg and his wife Christine von Handschuhsheim sell their district to Boxberg, which they had bought from Konrad von Rosenberg, Ritter, at 6,500 guilders to their sons Ulrich and Jörg von Rosenberg.",
       "facts": [
         {
-          "person": "Christine von Handschuhsheim",
+          "person": "Christina von Handschuhsheim",
           "type": "spouse",
           "of": "arnold_boxberg"
         },
@@ -18,19 +18,19 @@
           "of": "Ulrich von Rosenberg"
         },
         {
-          "person": "Christine von Handschuhsheim",
+          "person": "Christina von Handschuhsheim",
           "type": "parent",
           "of": "Ulrich von Rosenberg"
         },
         {
           "person": "arnold_boxberg",
           "type": "parent",
-          "of": "Jörg von Rosenberg"
+          "of": "Georg von Rosenberg"
         },
         {
-          "person": "Christine von Handschuhsheim",
+          "person": "Christina von Handschuhsheim",
           "type": "parent",
-          "of": "Jörg von Rosenberg"
+          "of": "Georg von Rosenberg"
         },
         {
           "person": "Konrad von Rosenberg",
@@ -45,7 +45,7 @@
           "content": "sold their quarter of Boxberg to their sons Ulrich and Jörg von Rosenberg together with his wife Christine von Handschuhsheim."
         },
         {
-          "person": "Christine von Handschuhsheim",
+          "person": "Christina von Handschuhsheim",
           "type": "generic",
           "content": "sold their quarter of Boxberg to their sons Ulrich and Jörg von Rosenberg together with her husband Arnold von Rosenberg."
         },
@@ -55,7 +55,7 @@
           "content": "had previously bought their quarter of Boxberg from Konrad von Rosenberg, Ritter, together with his wife Christine von Handschuhsheim."
         },
         {
-          "person": "Christine von Handschuhsheim",
+          "person": "Christina von Handschuhsheim",
           "type": "generic",
           "content": "had previously bought their quarter of Boxberg from Konrad von Rosenberg, Ritter, together with her husband Arnold von Rosenberg."
         }
