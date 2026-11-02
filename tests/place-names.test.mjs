@@ -15,6 +15,19 @@ const fixture = [
   { id: 'abbey', category: 'church', parent: 'town', variations: ['Schönau Abbey', 'Schönau Monastery'] },
 ];
 
+test('castle and church names take priority over overlapping settlement names', () => {
+  const places = [
+    { id: 'village', name: 'Old Rosenberg', variations: ['Old Rosenberg'], category: 'village' },
+    { id: 'castle', name: 'Rosenberg Castle', variations: ['Rosenberg Castle'], category: 'castle' },
+    { id: 'church', name: 'Rosenberg Church', variations: ['Rosenberg Church'], category: 'church' },
+  ];
+  const state = { places, buildingPattern: buildPlacePattern(places.filter((place) => ['castle', 'church'].includes(place.category))), placePattern: buildPlacePattern(places) };
+  const { inlineMarkup } = createMarkupRenderer({ state });
+  assert.equal(inlineMarkup('Old Rosenberg Castle'), 'Old <a class="place-link" href="?place=castle">Rosenberg Castle</a>');
+  assert.equal(inlineMarkup('Old Rosenberg Church'), 'Old <a class="place-link" href="?place=church">Rosenberg Church</a>');
+  assert.equal(inlineMarkup('Old Rosenberg'), '<a class="place-link" href="?place=village">Old Rosenberg</a>');
+});
+
 test('building combinations use only the first parent variation in both orders', () => {
   const places = parsePlaces(JSON.stringify(fixture));
   assert.deepEqual(new Set(places[1].variations), new Set([

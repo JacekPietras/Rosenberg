@@ -12,15 +12,19 @@ export function createMarkupRenderer({ state }) {
       const person = peopleById.get(id);
       return person ? token(`<a class="person-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>`) : match;
     });
+    if (state.sourcePersonPattern) text = text.replace(state.sourcePersonPattern, (match) =>
+      token(`<a class="person-link" href="?person=${encodeURIComponent(match)}">${match}</a>`));
     for (const { pattern, people } of state.personPattern || []) text = text.replace(pattern, (match) => {
       const { person, ambiguous } = resolvePerson(people, match);
       // Unqualified names use the generic name route; explicit [id] tokens above stay specific.
       return person || ambiguous ? token(`<a class="person-link" href="?person=${encodeURIComponent(match)}">${match}</a>`) : match;
     });
-    if (state.placePattern) text = text.replace(state.placePattern, (match) => {
-      const place = findPlaceByName(state.places, match);
-      return place ? token(`<a class="place-link" href="?place=${encodeURIComponent(place.id || place.name)}">${match}</a>`) : match;
-    });
+    for (const pattern of [state.buildingPattern, state.placePattern]) {
+      if (pattern) text = text.replace(pattern, (match) => {
+        const place = findPlaceByName(state.places, match);
+        return place ? token(`<a class="place-link" href="?place=${encodeURIComponent(place.id || place.name)}">${match}</a>`) : match;
+      });
+    }
     return text.replace(/\u0000(\d+)\u0000/g, (match, index) => tokens[Number(index)] ?? match);
   }
 

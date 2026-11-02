@@ -1,4 +1,5 @@
 import { imageLabels } from '../image-labels.js';
+import { buildSourcePersonPattern } from './entities.js?v=88';
 import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=11';
 
 export function createDataLoader({
@@ -54,8 +55,9 @@ export function createDataLoader({
     const showBookEarly = !familyOnly && bookPathsForStartup.length > 0;
     let earlyBooks;
     if (showBookEarly) {
-      const [placesText, peopleText, entries] = await Promise.all([
+      const [placesText, peopleText, namesText, particlesText, entries] = await Promise.all([
         repository.getText('data/places.json'), repository.getText('data/people.json'),
+        repository.getText('data/names.md'), repository.getText('data/nobiliary_particles.md'),
         Promise.all(bookPathsForStartup.map(async (path) => [path, await repository.getJson(path)])),
       ]);
       earlyBooks = new Map(entries);
@@ -63,6 +65,8 @@ export function createDataLoader({
       state.personRecords = JSON.parse(peopleText);
       state.people = parsePeople(peopleText);
       state.personPattern = buildPersonPattern(state.people);
+      state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places);
+      state.buildingPattern = buildPlacePattern(state.places.filter((place) => ['castle', 'church'].includes(place.category)));
       state.placePattern = buildPlacePattern(state.places);
       const ordered = [...bookPathsForStartup].sort((left, right) => bookSortYear(earlyBooks.get(right), right) - bookSortYear(earlyBooks.get(left), left) || left.localeCompare(right));
       state.manifest = { books: ordered.map((path) => ({ path, label: earlyBooks.get(path)?.book || path })), documents: paths.filter((path) => path.startsWith('data/documents/')), notes: paths.includes('data/notes/notes.json'), images: paths.includes('data/images/images.json') ? 'data/images/images.json' : null, collections: [] };
@@ -72,11 +76,12 @@ export function createDataLoader({
       renderTabs();
       await renderActive();
     }
-    const [placesText, calibrationCitiesText, peopleText, particlesText, documents] = await Promise.all([
+    const [placesText, calibrationCitiesText, peopleText, particlesText, namesText, documents] = await Promise.all([
       repository.getText('data/places.json'),
       repository.getText('docs/assets/calibration-cities.json'),
       repository.getText('data/people.json'),
       repository.getText('data/nobiliary_particles.md'),
+      repository.getText('data/names.md'),
       new Map(await Promise.all(paths.map(async (path) => [path, earlyBooks?.has(path) ? earlyBooks.get(path) : await repository.getJson(path)]))),
     ]);
     state.nobiliaryParticles = particlesText.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
@@ -85,6 +90,8 @@ export function createDataLoader({
     state.personRecords = JSON.parse(peopleText);
     state.people = parsePeople(peopleText);
     state.personPattern = buildPersonPattern(state.people);
+    state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places);
+    state.buildingPattern = buildPlacePattern(state.places.filter((place) => ['castle', 'church'].includes(place.category)));
     state.placePattern = buildPlacePattern(state.places);
     const bookPaths = paths
       .filter((path) => path.startsWith('data/books/'))

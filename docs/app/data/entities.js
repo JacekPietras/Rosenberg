@@ -71,3 +71,16 @@ export function buildPersonPattern(people) {
     ? [{ pattern: new RegExp(`(?<![\\p{L}\\p{N}])(?:${names.join('|')})(?![\\p{L}\\p{N}])`, 'giu'), people }]
     : [];
 }
+
+export function buildSourcePersonPattern(namesText, particlesText, places) {
+  const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
+  const alternatives = (values) => [...new Set(values.filter(Boolean))]
+    .sort((a, b) => b.length - a.length).map(escape).join('|');
+  const names = alternatives(String(namesText || '').split(/\r?\n/)
+    .filter((line) => !line.trim().startsWith('#'))
+    .flatMap((line) => line.split('//')[0].split(',').map((name) => name.trim())));
+  const particles = alternatives(String(particlesText || '').split(/\r?\n/).map((line) => line.split('//')[0].trim()));
+  const placeNames = alternatives(places.flatMap((place) => place.variations || [place.name]));
+  if (!names || !particles || !placeNames) return null;
+  return new RegExp(`(?<![\\p{L}\\p{N}])(?:${names})(?:\\s+(?:${names}))*\\s+(?:${particles})\\s+(?:${placeNames})(?![\\p{L}\\p{N}])`, 'giu');
+}
