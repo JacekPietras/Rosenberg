@@ -7,7 +7,7 @@ export function relationshipControls(graph, { focus } = {}) {
   const status = graph.checking ? '' : graph.rebuilding ? 'Rebuilding family relationships…' : graph.rebuildError ? `Could not rebuild relationships. ${escapeHtml(graph.rebuildError)}`
     : graph.valid ? '' : graph.canRebuild ? 'Relationships need refreshing.'
       : 'Relationships need refreshing. <a href="http://localhost:8000/docs/?tab=tree">Open the local viewer to rebuild</a>.';
-  const families = focus !== undefined && graph.components?.length ? `<label>Family group <select data-family-focus><option value="all"${focus === 'all' ? ' selected' : ''}>All family groups</option>${graph.components.map((component) => `<option value="${escapeHtml(component.key)}"${component.key === focus ? ' selected' : ''}>${escapeHtml(component.label)}</option>`).join('')}</select></label>` : '';
+  const families = focus !== undefined && graph.components?.length ? `<label><span class="visually-hidden">Family group</span><select data-family-focus aria-label="Family group"><option value="all"${focus === 'all' ? ' selected' : ''}>All family groups</option>${graph.components.map((component) => `<option value="${escapeHtml(component.key)}"${component.key === focus ? ' selected' : ''}>${escapeHtml(component.label)}</option>`).join('')}</select></label>` : '';
   const counts = graph.valid && !graph.checking && !graph.rebuilding && coverage?.reconstructedPeople !== undefined
     ? `${coverage.reconstructedPeople} identities · ${coverage.reconstructedRelationships} relations · ${graph.components?.length || 0} groups${coverage.conflicts > 0 ? ` · ${coverage.conflicts} conflicts` : ''}`
     : '';
