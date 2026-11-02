@@ -133,10 +133,7 @@ export function renderPeopleTree(people = [], documents = [], { graph, focus, in
   const factsTemplates = [];
   const nodes = cards.map(({ person, x, y }, index) => {
     const facts = personFacts(person, documentRecords, people);
-    const evidence = [false, true].map((isGuess) => {
-      const items = facts.filter((fact) => fact.isGuess === isGuess);
-      return items.length ? renderFactsView(items, { people, personNames: graph.records.map((person) => person.name), inlineMarkup, listClass: isGuess ? 'guesses-view' : '', sourceHref: (fact) => fact.sourceHref }) : '';
-    }).join('');
+    const evidence = renderFactsView(facts, { people, personNames: graph.records.map((person) => person.name), inlineMarkup, sourceHref: (fact) => fact.sourceHref });
     factsTemplates.push(`<template data-tree-facts="${index}">${evidence || '<p class="status">No recorded facts or guesses for this person.</p>'}</template>`);
     const nodeHeight = nodeHeightFor(person);
     const text = personLines(person).map((line, index) => `<tspan class="${line.name ? 'people-tree-name' : 'people-tree-detail'}${line.technical ? ' people-tree-technical' : ''}${line.prominent ? ' people-tree-office' : ''}" x="${x + nodeWidth / 2}" dy="${index ? 18 : 0}">${svgEscape(line.text)}</tspan>`).join('');

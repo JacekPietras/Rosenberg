@@ -8,8 +8,7 @@ export function renderFactsView(facts, { people = [], personNames = [], inlineMa
   const knownNames = [...personNames, ...facts.filter(isTypedFact).flatMap((fact) => [fact.person, fact.of])
     .filter((value) => typeof value === 'string' && !people.some((person) => person.id === value))];
   const classes = ['facts', 'facts-view', listClass].filter(Boolean).join(' ');
-  const label = listClass === 'guesses-view' ? ' aria-label="Guesses"' : '';
-  return `<ul class="${classes}"${label}>${facts.map((fact, index) => {
+  return `<ul class="${classes}">${facts.map((fact, index) => {
     const date = factDate(fact, defaultDate);
     const showDate = index === 0 || date !== factDate(facts[index - 1], defaultDate);
     const dateMarkup = showDate && date
@@ -17,6 +16,6 @@ export function renderFactsView(facts, { people = [], personNames = [], inlineMa
       : showDate ? '<span class="fact-date">Undated</span>' : '<span class="fact-date" aria-hidden="true"></span>';
     const href = sourceHref(fact, index);
     const sourceLink = href ? `<a class="fact-source-link" href="${escapeHtml(href)}" aria-label="Open fact source" title="Open fact source"></a>` : '';
-    return `<li${href ? ' data-fact-source' : ''}${itemClass(fact, index)}>${dateMarkup}<span class="fact-text">${renderFactText(fact, { people, personNames: knownNames, inlineMarkup })}</span>${sourceLink}</li>`;
+    return `<li${href ? ' data-fact-source' : ''}${itemClass(fact, index)}>${dateMarkup}<span class="fact-text${fact.isGuess ? ' fact-guess' : ''}">${fact.isGuess ? '<span class="visually-hidden">Guess: </span>' : ''}${renderFactText(fact, { people, personNames: knownNames, inlineMarkup })}${sourceLink}</span></li>`;
   }).join('')}</ul>`;
 }

@@ -127,7 +127,7 @@ test('name routes aggregate source identities while person and evidence IDs sele
   assert.doesNotMatch(renderPersonPage(), /Source attestations/);
 });
 
-test('person pages show matching guesses separately, including guess-only sources', () => {
+test('person pages show matching guesses alongside facts, including guess-only sources', () => {
   const state = { person: 'Wyclo' };
   const documents = new Map([['data/books/example.json', { entries: [
     { date: '1341', english: 'Wyclo appears in this source fragment.', facts: [{ type: 'generic', person: 'Wyclo', content: 'appeared.' }], guesses: [{ type: 'spouse', person: 'Eberhard', of: 'Wyclo' }] },
@@ -142,7 +142,8 @@ test('person pages show matching guesses separately, including guess-only source
   });
   const html = screens.renderPersonPage();
   assert.match(html, /1 mention/);
-  assert.match(html, /<h3>Guesses<\/h3><ul class="facts facts-view guesses-view" aria-label="Guesses">/);
+  assert.match(html, /class="fact-text fact-guess"/);
+  assert.equal((html.match(/class="facts facts-view"/g) || []).length, 1);
   assert.match(html, /Wyclo/);
   assert.match(html, /\?document=data\/books\/example.json#entry-0/);
   assert.match(html, /<h3>Facts<\/h3>/);
@@ -182,6 +183,18 @@ test('document facts use the shared view and respect the facts toggle', () => {
   assert.equal(renderEntry({ facts }), `<article class="entry">${renderFactsView(facts, options)}</article>`);
   state.showFacts = false;
   assert.equal(renderEntry({ facts }), '<article class="entry"></article>');
+});
+
+test('document facts and guesses share a chronological list', () => {
+  const { renderEntry } = createDocumentRenderer({ state: { showFacts: true }, escapeHtml, ...options, getPeople: () => options.people });
+  const html = renderEntry({ facts: [
+    { type: 'generic', person: 'A', content: 'later.', date: '1400' },
+    { type: 'generic', person: 'A', content: 'earlier.', date: '1380' },
+  ], guesses: [{ type: 'generic', person: 'A', content: 'uncertain.', date: '1390' }] });
+  assert.equal((html.match(/class="facts facts-view"/g) || []).length, 1);
+  assert.ok(html.indexOf('earlier.') < html.indexOf('uncertain.'));
+  assert.ok(html.indexOf('uncertain.') < html.indexOf('later.'));
+  assert.match(html, /class="fact-text fact-guess"/);
 });
 
 test('shared facts view preserves the person screen ambiguity styling', () => {

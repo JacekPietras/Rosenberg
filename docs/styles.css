@@ -192,12 +192,12 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .facts.facts-view { padding-left: 1rem; list-style: none; }
 .facts.facts-view li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: .25rem .75rem; align-items: baseline; padding: 0; }
 .fact-date { display: block; margin-bottom: .1rem; color: var(--muted); font-size: .78rem; }
-.facts-view li[data-fact-source] { position: relative; isolation: isolate; cursor: pointer; }
-.fact-source-link { position: absolute; inset: 0; z-index: 1; border-radius: 3px; }
+.facts-view li[data-fact-source] .fact-text { position: relative; isolation: isolate; }
+.fact-source-link { position: absolute; inset: 0; z-index: 1; border-radius: 6px; cursor: pointer; }
 .fact-source-link:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }
 .fact-source-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.facts-view li[data-fact-source] .fact-text a { position: relative; z-index: 2; }
-.fact-text { display: block; min-width: 0; }
+.facts-view li[data-fact-source] .fact-text a:not(.fact-source-link) { position: relative; z-index: 2; }
+.fact-text { display: block; min-width: 0; width: fit-content; max-width: 100%; box-sizing: border-box; border-radius: 6px; padding: .2rem .45rem; margin: -.2rem -.45rem; }
 .entity-fact-ambiguous { opacity: .62; }
 .entity-section-title { margin-top: 2rem; }
 .entry { padding: .9rem 0; }
@@ -217,7 +217,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 
 .source-list { margin: 1rem 0 0; padding: .15rem 0 .15rem 1.25rem; color: var(--text); font-size: .9rem; }
 .facts { margin: 1rem 0 0; padding: .85rem 1rem .85rem 2rem; color: var(--text); background: var(--accent-soft); border: 1px solid #2d466a; border-radius: 7px; font-size: .9rem; }
-.facts.guesses-view { background: #21170f; border-color: #62401f; }
+.fact-guess { background: #62401f; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .source-list ul { margin: .25rem 0; padding-left: 1.25rem; }
 .source-list li, .facts li { margin: .3rem 0; padding-left: .15rem; }
 .source-list > li, .facts > li { margin-top: .45rem; }

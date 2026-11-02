@@ -358,8 +358,8 @@ test('hover facts use source identity pointers and keep namesakes separate', () 
   const { inlineMarkup } = createMarkupRenderer({ state: { people: [] } });
   const sourceHref = () => '?tab=documents&record=data%2Fdocuments%2Fexample.json#entry-data-documents-example-json-0';
   assert.equal(templates[0],
-    renderFactsView([{ ...documents.get(path).entries[0].facts[0], date: '1400' }], { people: [], inlineMarkup, sourceHref })
-    + renderFactsView([{ ...documents.get(path).entries[0].guesses[0], date: '1400' }], { people: [], inlineMarkup, sourceHref, listClass: 'guesses-view' }),
+    renderFactsView([{ ...documents.get(path).entries[0].facts[0], date: '1400' },
+      { ...documents.get(path).entries[0].guesses[0], date: '1400', isGuess: true }], { people: [], inlineMarkup, sourceHref }),
     'facts and guesses use the same renderer and styles as source screens');
   assert.match(templates[0], /class="person-link"/, 'reuse person links');
 });
@@ -374,7 +374,7 @@ test('hover displays a source person supported only by a guess', () => {
       { source: { path, pointer: '/entries/0/guesses/0' }, date: '1381-05-25' },
     ] } }], edges: [], reverse: new Map() };
   const html = renderPeopleTree([], documents, { graph });
-  assert.match(html, /class="facts facts-view guesses-view" aria-label="Guesses"/);
+  assert.match(html, /class="fact-text fact-guess"/);
   assert.match(html, /is sibling of/);
   assert.match(html, /datetime="1381-05-25"/);
   assert.match(html, /document=data%2Fbooks%2Fexample.json#entry-data-books-example-json-0/);
@@ -396,7 +396,7 @@ test('registry hover facts use exact IDs and historical dates', () => {
   ]));
   const templates = [...html.matchAll(/<template[^>]*>(.*?)<\/template>/g)].map((match) => match[1]);
   assert.match(templates[0], /Ritter/);
-  assert.match(templates[0], /guesses-view/);
+  assert.match(templates[0], /fact-text fact-guess/);
   assert.match(templates[0], /der Jüngere/);
   assert.doesNotMatch(templates[0], /der Ältere/);
   assert.match(templates[0], /<time class="fact-date" datetime="1350">1350<\/time>/);

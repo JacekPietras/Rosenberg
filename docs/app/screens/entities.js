@@ -44,28 +44,28 @@ export function createEntityScreens({
     return mentions;
   }
 
-  function renderFacts(mentions, factMatches = () => true, kind = 'facts') {
+  function renderFacts(mentions, factMatches = () => true) {
     const people = getPeople();
     const personQuery = state.person || '';
-    const facts = mentions.flatMap(({ doc, path, entry, index }, mentionIndex) => (Array.isArray(entry[kind]) ? entry[kind] : [])
+    const facts = mentions.flatMap(({ doc, path, entry, index }, mentionIndex) => ['facts', 'guesses'].flatMap((kind) => (Array.isArray(entry[kind]) ? entry[kind] : [])
       .map((fact, factIndex) => ({
+        isGuess: kind === 'guesses',
         ...fact,
         date: sourceFactDate(fact, doc, entry, path),
         mentionIndex, factIndex, sourceHref: documentNavigationUrl(path, index),
         personMatch: personQuery ? factPersonMatch(fact, personQuery, people) : 'direct',
       }))
-      .filter((fact) => factText(fact, people).trim() && factMatches(factText(fact, people)) && fact.personMatch))
+      .filter((fact) => factText(fact, people).trim() && factMatches(factText(fact, people)) && fact.personMatch)))
       .sort((left, right) => dateSortValue(left.date) - dateSortValue(right.date) || left.mentionIndex - right.mentionIndex || left.factIndex - right.factIndex);
     if (!facts.length) return '';
     const items = renderFactsView(facts, {
       people,
       personNames: factPersonNames(),
       inlineMarkup,
-      listClass: kind === 'guesses' ? 'guesses-view' : '',
       sourceHref: (fact) => fact.sourceHref,
       itemClass: (fact) => fact.personMatch === 'ambiguous' ? ' class="entity-fact-ambiguous"' : '',
     });
-    return `<section class="entity-facts"><h3>${kind === 'guesses' ? 'Guesses' : 'Facts'}</h3>${items}</section>`;
+    return `<section class="entity-facts"><h3>Facts</h3>${items}</section>`;
   }
 
   function excerpt(value, pattern, linkEntities = true) {
@@ -94,7 +94,7 @@ export function createEntityScreens({
   function renderPage(entity, mentions, kind, pattern, extraMarkup = () => '', leadingMarkup = '', factMatches = () => true) {
     if (!entity) return `<article class="document"><h2>${kind === 'place' ? 'Place' : 'Person'} not found</h2><p class="status">No ${kind} matching the requested name is listed in the research data.</p></article>`;
     const heading = `<article class="document ${kind}-document-heading"><div class="document-heading"><div><h2>${escapeHtml(entity.name)}</h2></div><small>${mentions.length} mention${mentions.length === 1 ? '' : 's'}</small></div></article>`;
-    if (kind === 'person') return `${heading}${leadingMarkup}${renderFacts(mentions, factMatches)}${renderFacts(mentions, factMatches, 'guesses')}${mentions.length ? '' : '<article class="document"><p class="status">No mentions found.</p></article>'}`;
+    if (kind === 'person') return `${heading}${leadingMarkup}${renderFacts(mentions, factMatches)}${mentions.length ? '' : '<article class="document"><p class="status">No mentions found.</p></article>'}`;
     const sorted = [...mentions].sort((left, right) => dateSortValue(left.entry.date || left.doc.date) - dateSortValue(right.entry.date || right.doc.date) || left.index - right.index);
     const content = sorted.map(({ doc, path, entry, index }) => {
       const date = entry.date || doc.date || '';
@@ -127,7 +127,7 @@ export function createEntityScreens({
         const doc = getDocuments().get(source.path);
         const fact = resolveEvidencePointer(doc, source.pointer);
         const index = Number(source.pointer.match(/\/entries\/(\d+)/)?.[1] || 0);
-        return `<article class="document"><p class="entry-date">${source.pointer.includes('/guesses/') ? 'Guess · ' : ''}${escapeHtml(formatDate(date))}</p>${renderFactsView([{ ...fact, date }], { people, personNames: factPersonNames(), inlineMarkup, sourceHref: () => documentNavigationUrl(source.path, index) })}<p class="source"><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></p></article>`;
+        return `<article class="document"><p class="entry-date">${source.pointer.includes('/guesses/') ? 'Guess · ' : ''}${escapeHtml(formatDate(date))}</p>${renderFactsView([{ ...fact, date, isGuess: source.pointer.includes('/guesses/') }], { people, personNames: factPersonNames(), inlineMarkup, sourceHref: () => documentNavigationUrl(source.path, index) })}<p class="source"><a href="${escapeHtml(documentNavigationUrl(source.path, index))}">${escapeHtml(source.path)}#${escapeHtml(source.pointer)}</a></p></article>`;
       }).join('');
       return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2><p>${node.status === 'contextual' ? 'Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.' : 'Source person; correspondence with other mentions remains open.'} No permanent person ID has been created.</p></article>${relationshipControls(state.familyGraph)}${relationshipPanel(state.familyGraph, node.key)}<h3>Source attestations</h3>${attestations}`;
     }

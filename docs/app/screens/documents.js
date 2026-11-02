@@ -1,3 +1,5 @@
+import { factDate } from '../rendering/facts.js?v=8';
+import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=8';
 
 export function createDocumentRenderer({
@@ -33,20 +35,16 @@ export function createDocumentRenderer({
   function renderEntry(entry, { title = true, date = true, source = true, path = '', index = null, documentDate = '' } = {}) {
     const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
     const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
-    const facts = state.showFacts && entry.facts?.length ? renderFactsView(entry.facts, {
+    const defaultDate = /^data\/(?:books|notes)\//.test(path) ? '' : Object.hasOwn(entry, 'date') ? entry.date : documentDate;
+    const items = [...(entry.facts || []), ...(entry.guesses || []).map((fact) => ({ ...fact, isGuess: true }))]
+      .sort((a, b) => dateSortValue(factDate(a, defaultDate)) - dateSortValue(factDate(b, defaultDate)));
+    const facts = state.showFacts ? renderFactsView(items, {
       people: getPeople(),
       personNames: state.familyGraph?.valid ? state.familyGraph.records.map((person) => person.name) : [],
       inlineMarkup,
-      defaultDate: /^data\/(?:books|notes)\//.test(path) ? '' : Object.hasOwn(entry, 'date') ? entry.date : documentDate,
+      defaultDate,
     }) : '';
-    const guesses = state.showFacts && entry.guesses?.length ? renderFactsView(entry.guesses, {
-      people: getPeople(),
-      personNames: state.familyGraph?.valid ? state.familyGraph.records.map((person) => person.name) : [],
-      inlineMarkup,
-      listClass: 'guesses-view',
-      defaultDate: /^data\/(?:books|notes)\//.test(path) ? '' : Object.hasOwn(entry, 'date') ? entry.date : documentDate,
-    }) : '';
-    return highlightTargetNames(`<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}${guesses}</article>`);
+    return highlightTargetNames(`<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}</article>`);
   }
 
   function bookSections(entries) {
