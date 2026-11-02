@@ -67,8 +67,6 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const scale = Math.min(width / image.naturalWidth, height / image.naturalHeight);
     const fittedWidth = image.naturalWidth * scale, fittedHeight = image.naturalHeight * scale;
     const left = (width - fittedWidth) / 2, top = (height - fittedHeight) / 2;
-    const targetX = width / 2 - (left + transcriptionFocus.x * fittedWidth) * transcriptionZoom;
-    const targetY = height / 2 - (top + transcriptionFocus.y * fittedHeight) * transcriptionZoom;
     const region = currentRegions().find((item) => item?.name === 'text');
     const regionX = Number(region?.x), regionY = Number(region?.y);
     const regionWidth = Number(region?.width), regionHeight = Number(region?.height);
@@ -86,8 +84,10 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const maxY = regionHeight * fittedHeight * transcriptionZoom >= height
       ? -regionTop * transcriptionZoom
       : -top * transcriptionZoom;
-    const x = fittedWidth * transcriptionZoom <= width ? 0 : Math.max(minX, Math.min(maxX, targetX));
-    const y = fittedHeight * transcriptionZoom <= height ? 0 : Math.max(minY, Math.min(maxY, targetY));
+    const progressX = Number.isFinite(regionWidth) && regionWidth > 0 ? Math.max(0, Math.min(1, (transcriptionFocus.x - regionX) / regionWidth)) : transcriptionFocus.x;
+    const progressY = Number.isFinite(regionHeight) && regionHeight > 0 ? Math.max(0, Math.min(1, (transcriptionFocus.y - regionY) / regionHeight)) : transcriptionFocus.y;
+    const x = fittedWidth * transcriptionZoom <= width ? 0 : maxX - progressX * (maxX - minX);
+    const y = fittedHeight * transcriptionZoom <= height ? 0 : maxY - progressY * (maxY - minY);
     image.style.transformOrigin = '0 0';
     image.style.transform = `translate(${x}px, ${y}px) scale(${transcriptionZoom})`;
     if (transcriptionInput) {
@@ -121,12 +121,13 @@ export function setupImageLightbox({ state, repository, rerender }) {
       y: Number(region.y) + y * Number(region.height),
     };
   };
-  const moveTranscriptionTextWithPointer = (event) => {
+  const syncTranscriptionTextToImageFocus = () => {
     if (!transcriptionInput) return;
-    const rect = transcriptionInput.getBoundingClientRect();
-    if (!rect.width || !rect.height) return;
-    const x = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
-    const y = Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height));
+    const region = currentRegions().find((item) => item?.name === 'text');
+    const regionWidth = Number(region?.width), regionHeight = Number(region?.height);
+    if (!(regionWidth > 0) || !(regionHeight > 0)) return;
+    const x = Math.max(0, Math.min(1, (transcriptionFocus.x - Number(region.x)) / regionWidth));
+    const y = Math.max(0, Math.min(1, (transcriptionFocus.y - Number(region.y)) / regionHeight));
     transcriptionInput.scrollLeft = x * Math.max(0, transcriptionInput.scrollWidth - transcriptionInput.clientWidth);
     transcriptionInput.scrollTop = y * Math.max(0, transcriptionInput.scrollHeight - transcriptionInput.clientHeight);
   };
@@ -443,12 +444,13 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const minimumZoom = transcriptionMinimumZoom();
     transcriptionZoom = Math.max(minimumZoom, Math.min(Math.max(8, minimumZoom), transcriptionZoom * (event.deltaY < 0 ? 1.2 : 1 / 1.2)));
     applyTranscriptionZoom();
-    moveTranscriptionTextWithPointer(event);
+    syncTranscriptionTextToImageFocus();
   }, { passive: false });
   stage.addEventListener('pointermove', (event) => {
     if (!lightbox.classList.contains('is-transcription-mode') || transcriptionZoom <= 1) return;
     setTranscriptionFocusFromPointer(event);
     applyTranscriptionZoom();
+    syncTranscriptionTextToImageFocus();
   });
   transcriptionInput?.addEventListener('input', () => {
     if (context?.entry && transcriptionLanguage) context.entry[transcriptionLanguage] = transcriptionInput.value;
@@ -461,12 +463,13 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const minimumZoom = transcriptionMinimumZoom();
     transcriptionZoom = Math.max(minimumZoom, Math.min(Math.max(8, minimumZoom), transcriptionZoom * (event.deltaY < 0 ? 1.2 : 1 / 1.2)));
     applyTranscriptionZoom();
+    syncTranscriptionTextToImageFocus();
   }, { passive: false });
   transcriptionInput?.addEventListener('pointermove', (event) => {
     if (!transcriptionModeActive || transcriptionZoom <= transcriptionMinimumZoom() + 0.0001) return;
     setTranscriptionFocusFromTextPointer(event);
     applyTranscriptionZoom();
-    moveTranscriptionTextWithPointer(event);
+    syncTranscriptionTextToImageFocus();
   });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
