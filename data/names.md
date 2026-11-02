@@ -6,6 +6,7 @@ Alban, Albanus
 Albrecht, Albert, Albertus, Adalbrecht
 Anselm, Anshelm
 Anton
+Andreas
 Aplo
 Arnold, Arnolt
 Balthasar
@@ -15,7 +16,7 @@ Bernhard
 Berthold, Bertold, Bertolt
 Burkhard
 Caspar, Kaspar, Caſpar
-Christoph
+Christoph, Chriftoph, Christpoh
 Diether, Dieter
 Dietrich
 Dietzel
@@ -36,12 +37,13 @@ Gerhard, Gerhardus
 Gotfried, Godefrid, Gottfried
 Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
 Hans, Johann, Hanemann, Hanse, Johannes, Hanns, Joannes, Iohannes, Johanns
+Hank
 Hartmut
 Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus, Henricus, Hainrich, Heinrici, Heinrico
 Herbord
 Herman, Hermann
 Hieronymus, Jheronimus
-Jakob
+Jakob, Jacob
 Joachim
 Jost
 Kasimir
@@ -94,7 +96,7 @@ Wiprecht, Wibrecht, Wynprecht, Wyprecht, Wipert, Welprecht
 Wolf, Wolff
 Wolfgang
 Yttel
-Zaisolph, Zeisolf
+Zaisolph, Zeisolf, Seisolph, Zeisolph
 Zeisel
 
 # Women
@@ -102,20 +104,20 @@ Zeisel
 Adelheid, Alheit
 Agatha
 Agnes, Agnese
-Amalie
+Amalie, Amalia
 Anastasia
 Anna, Anne
 Barbara
 Brigitta
-Christiana
-Christina, Christine
+Christiana, Christina, Christine
 Dorothea
 Ela
 Elchana
 Elche
-Elchine
+Elchine, Elchina
 Elichin
 Elisabeth, Elspeth, Elsbet, Else, Els, Eilse, Elsbeth, Elisabet, Elizabet, Elizabeth, Elyzabeth, Elspet
+Eva
 Felicitas
 Gertraud
 Guda
@@ -125,10 +127,12 @@ Irmtraut, Irmendrut, Jrmtrudis, Irmentrurt
 Jeute
 Johanna
 Jutta, Juta, Guta, Gutta, Gute
-Katharina, Katherina, Katherine, Kathrein, Katerina
+Juliana
+Katharina, Katherina, Katherine, Kathrein, Katerina, Catharina, Catherine
 Kunigunde, Kunnegunt, Kunnigund, Kunegunde, Kunegunt, Kunegunth, Konigunt, Kunigunda, Kunigundis, Cunegunda, Cunigunda, Conegundis
 Kunne
-Margaretha, Margretha, Margarete, Margarethe, Margret, Margareta, Margreth, Margett
+Margaretha, Margretha, Margarete, Margarethe, Margret, Margareta, Margreth, Margett, Margarethå
+Magdalena
 Maria
 Osanna
 Ottilia, Ottilie
@@ -136,16 +140,18 @@ Petrisa, Petrissa
 Regina
 Richtze
 Rufina, Ruffina, Rofina
+Rosina
 Selende
-Sibylla
+Septia
+Sibylla, Sibyl
+Sophia
 Ursula
-Uta
+Uta, Utha
 Veronika
-Walpurga
+Walpurga, Walburga
 Willertraud
 Wiltraut
 Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele, Wyklo
-Magdalena
 
 # Other
 
