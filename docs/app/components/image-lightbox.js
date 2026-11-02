@@ -54,6 +54,13 @@ export function setupImageLightbox({ state, repository, rerender }) {
   let transcriptionLanguage = '';
   let transcriptionZoom = 1;
   let transcriptionFocus = { x: 0.5, y: 0.5 };
+  const transcriptionMinimumZoom = () => {
+    const region = currentRegions().find((item) => item?.name === 'text');
+    const regionWidth = Number(region?.width);
+    if (!region || !Number.isFinite(regionWidth) || regionWidth <= 0 || !image.naturalWidth || !image.naturalHeight || !stage.clientWidth || !stage.clientHeight) return 1;
+    const fittedWidth = image.naturalWidth * Math.min(stage.clientWidth / image.naturalWidth, stage.clientHeight / image.naturalHeight);
+    return Math.max(1, stage.clientWidth / (regionWidth * fittedWidth));
+  };
   const applyTranscriptionZoom = () => {
     const width = stage.clientWidth, height = stage.clientHeight;
     if (!width || !height || !image.naturalWidth || !image.naturalHeight) return;
@@ -83,6 +90,10 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const y = fittedHeight * transcriptionZoom <= height ? 0 : Math.max(minY, Math.min(maxY, targetY));
     image.style.transformOrigin = '0 0';
     image.style.transform = `translate(${x}px, ${y}px) scale(${transcriptionZoom})`;
+    if (transcriptionInput) {
+      const relativeZoom = transcriptionZoom / transcriptionMinimumZoom();
+      transcriptionInput.style.fontSize = `${relativeZoom}rem`;
+    }
   };
   const setTranscriptionFocusFromPointer = (event) => {
     if (!image.naturalWidth || !image.naturalHeight) return;
@@ -98,6 +109,26 @@ export function setupImageLightbox({ state, repository, rerender }) {
       x: Math.max(Number.isFinite(regionX) ? regionX : 0, Math.min(Number.isFinite(regionRight) ? regionRight : 1, (event.clientX - left) / fittedWidth)),
       y: Math.max(Number.isFinite(regionY) ? regionY : 0, Math.min(Number.isFinite(regionBottom) ? regionBottom : 1, (event.clientY - top) / fittedHeight)),
     };
+  };
+  const setTranscriptionFocusFromTextPointer = (event) => {
+    const region = currentRegions().find((item) => item?.name === 'text');
+    const rect = transcriptionInput?.getBoundingClientRect();
+    if (!region || !rect?.width || !rect?.height) return;
+    const x = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
+    const y = Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height));
+    transcriptionFocus = {
+      x: Number(region.x) + x * Number(region.width),
+      y: Number(region.y) + y * Number(region.height),
+    };
+  };
+  const moveTranscriptionTextWithPointer = (event) => {
+    if (!transcriptionInput) return;
+    const rect = transcriptionInput.getBoundingClientRect();
+    if (!rect.width || !rect.height) return;
+    const x = Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width));
+    const y = Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height));
+    transcriptionInput.scrollLeft = x * Math.max(0, transcriptionInput.scrollWidth - transcriptionInput.clientWidth);
+    transcriptionInput.scrollTop = y * Math.max(0, transcriptionInput.scrollHeight - transcriptionInput.clientHeight);
   };
   const setTranscriptionMode = (active) => {
     transcriptionModeActive = active;
@@ -399,7 +430,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     }
     const region = currentRegions().find((item) => item?.name === 'text');
     if (!region) return;
-    transcriptionZoom = 1;
+    transcriptionZoom = transcriptionMinimumZoom();
     transcriptionFocus = { x: Number(region.x) + Number(region.width) / 2, y: Number(region.y) + Number(region.height) / 2 };
     setTranscriptionMode(true);
     applyTranscriptionZoom();
@@ -409,8 +440,10 @@ export function setupImageLightbox({ state, repository, rerender }) {
     if (!lightbox.classList.contains('is-transcription-mode')) return;
     event.preventDefault();
     setTranscriptionFocusFromPointer(event);
-    transcriptionZoom = Math.max(1, Math.min(8, transcriptionZoom * (event.deltaY < 0 ? 1.2 : 1 / 1.2)));
+    const minimumZoom = transcriptionMinimumZoom();
+    transcriptionZoom = Math.max(minimumZoom, Math.min(Math.max(8, minimumZoom), transcriptionZoom * (event.deltaY < 0 ? 1.2 : 1 / 1.2)));
     applyTranscriptionZoom();
+    moveTranscriptionTextWithPointer(event);
   }, { passive: false });
   stage.addEventListener('pointermove', (event) => {
     if (!lightbox.classList.contains('is-transcription-mode') || transcriptionZoom <= 1) return;
@@ -421,6 +454,20 @@ export function setupImageLightbox({ state, repository, rerender }) {
     if (context?.entry && transcriptionLanguage) context.entry[transcriptionLanguage] = transcriptionInput.value;
   });
   transcriptionInput?.addEventListener('change', () => { if (context?.entry) save(); });
+  transcriptionInput?.addEventListener('wheel', (event) => {
+    if (!transcriptionModeActive) return;
+    event.preventDefault();
+    setTranscriptionFocusFromTextPointer(event);
+    const minimumZoom = transcriptionMinimumZoom();
+    transcriptionZoom = Math.max(minimumZoom, Math.min(Math.max(8, minimumZoom), transcriptionZoom * (event.deltaY < 0 ? 1.2 : 1 / 1.2)));
+    applyTranscriptionZoom();
+  }, { passive: false });
+  transcriptionInput?.addEventListener('pointermove', (event) => {
+    if (!transcriptionModeActive || transcriptionZoom <= transcriptionMinimumZoom() + 0.0001) return;
+    setTranscriptionFocusFromTextPointer(event);
+    applyTranscriptionZoom();
+    moveTranscriptionTextWithPointer(event);
+  });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
   [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => $(selector)?.addEventListener('input', (event) => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) { seal[key] = Number(event.target.value); render(); } }));
