@@ -149,4 +149,4 @@ Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele, Wyklo
 # Other
 
 Mönch, Münch, Munch, Mönich, Monich // it derives from "Monk"
-Niedeck, Nydeck
+Schenk

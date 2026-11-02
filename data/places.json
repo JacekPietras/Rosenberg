@@ -1338,5 +1338,16 @@
     "showOnMap": false,
     "lat": 49.484414,
     "lon": 10.850534
+  },
+  {
+    "id": "niedeck",
+    "category": "village",
+    "variations": [
+      "Niedeck",
+      "Nydeck"
+    ],
+    "showOnMap": false,
+    "lat": 0.0,
+    "lon": 0.0
   }
 ]
