@@ -40,25 +40,18 @@ links. `tree.json` is output only; it is never read back as evidence.
 
 ## Pipeline
 
-```text
-load       assertions, prose context mentions, registry anchors
-pass 0     same name and titles in one section                     merges
-pass 1     fewest people per passage; cited repeated attestations  merges
-closure    father from a sibling; same-named relatives             adds fathers, merges
-pass 3     confident pairs above 0.70, in rounds                   merges, then closure
-pass 4     best unblocked candidate, no threshold, in rounds       merges, then closure
-export     withdraw contradicted inherited fathers; nodes, edges, comparisons
-```
+| Step | Effect | Specification |
+| --- | --- | --- |
+| Load | Assertions, prose context mentions, one identity per registry ID | this file |
+| Pass 0 | Same name and titles in one section are merged | [pass-0-same-section.md](pass-0-same-section.md) |
+| Pass 1 | Fewest people per passage; cited repeated attestations merged | [pass-1-passage-resolution.md](pass-1-passage-resolution.md) |
+| Closure | Father from a sibling; same-named relatives merged | [family-closure.md](family-closure.md) |
+| Pass 3 | Pairs above 0.70 merged in rounds, each followed by closure | [pass-3-confident-linking.md](pass-3-confident-linking.md) |
+| Pass 4 | Best unblocked candidate joined in rounds, each followed by closure | [pass-4-best-candidate.md](pass-4-best-candidate.md) |
+| Export | Contradicted inherited fathers withdrawn; nodes, edges, comparisons written | [`rules/json-formats.md`](../rules/json-formats.md) |
 
-| Step | File |
-| --- | --- |
-| Pass 0 | [pass-0-same-section.md](pass-0-same-section.md) |
-| Pass 1 | [pass-1-passage-resolution.md](pass-1-passage-resolution.md) |
-| Family closure | [family-closure.md](family-closure.md) |
-| Evidence and blocks used by passes 3 and 4 | [evidence-model.md](evidence-model.md) |
-| Pass 3 | [pass-3-confident-linking.md](pass-3-confident-linking.md) |
-| Pass 4 | [pass-4-best-candidate.md](pass-4-best-candidate.md) |
-| Arithmetic | [weight-calculation-examples.md](weight-calculation-examples.md) |
+Passes 3 and 4 share the [evidence model](evidence-model.md); its arithmetic is
+worked through in [weight-calculation-examples.md](weight-calculation-examples.md).
 
 There is no pass 2: matching transaction types across sources was dropped,
 because same-day shared places and associates already link a book retelling to
@@ -114,10 +107,3 @@ same inputs gives a byte-identical `tree.json`.
 
 Tests: `tests/test_probability.py` (features and blocks) and
 `tests/test_family_graph.py` (passes and real-data cases).
-
-## Maintaining this specification
-
-This folder describes the current implementation. Change the domain rule first,
-then the pass file, the code and the tests together. Keep worked numbers in
-[weight-calculation-examples.md](weight-calculation-examples.md) in step with
-`data/matching.json`.

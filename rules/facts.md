@@ -1,257 +1,162 @@
 # Fact extraction and verification
 
-Read this file when adding, changing, reviewing, or removing `facts` in the
-JSON documents under `data/`. Facts are extracted from one entry's text fields
-into that entry's `facts` and `guesses`. Each fact states what that entry says;
-how facts from different entries are combined is outside these rules.
+Read this file when adding, changing, reviewing, or removing facts and guesses
+in the JSON under `data/`. Facts are extracted from one entry's text into that
+entry's `facts` and `guesses`; each states what that entry says. The object
+formats are in [`json-formats.md`](json-formats.md).
 
 ## Source fields
 
-An entry can carry its text in several fields:
-
-- `german`: the original German text, or the German text of a book. It is the
+- `german`, `latin`: the original text (or a book's German text). This is the
   source.
-- `latin`: the original Latin text. It is the source.
-- `summary`: an archival summary (regest) of the original, usually in modern
-  German. It helps to read the original but is not the source itself.
-- `english`: normally the project's translation of the fields above, not a
-  source. Use it to understand the original and check it against the original.
-  When `english` is the only text field, the source itself is in English: it is
-  then the direct source and is authoritative.
+- `summary`, `abstract`: an archival summary (regest) of the original, usually
+  in modern German (`summary`) or English (`abstract`). It helps to read the
+  original but is not the source.
+- `english`: normally the project's translation, not a source. When it is the
+  entry's only text field, the source itself is English and `english` is
+  authoritative.
 
-Extract only what the source supports. When the fields disagree, the source
-(`german` or `latin`) wins over `summary`, and both win over a translated
-`english`. A claim found only in `summary` or in a translated `english` is not a
-fact; correct the translation or report the difference instead.
+When fields disagree, `german`/`latin` wins over a summary, and both win over
+a translated `english`. A claim found only in a summary or a translation is not
+a fact; correct the translation or report the difference.
 
 ## Extraction
 
-Skip fact and guess extraction for any document whose document-level `label`
-is `Hessen` or contains `Hessen` in an array. Do not add facts or guesses to
-any of its entries.
+Do not add facts or guesses to documents labelled `Hessen`.
 
-Read the complete document and its source text before adding facts. Extract
-only information explicitly stated or unambiguously expressed in the source;
-never infer, interpret, or extrapolate. Facts must be concise, atomic,
-explicit, and written in English, except for historically meaningful German or
-Latin names, titles, places, and epithets. Make one assertion per fact. Keep
-facts in the source entry; use the typed formats in `rules/json-formats.md`
-for every fact and guess. Use `generic` with `person` and a simple, atomic
-`content` continuation for claims outside the supported relationship, title, and death
-types. Do not repeat the subject's name or titles in `content`; begin with the predicate
-so the name, titles, and content read as one sentence. Optional `personTitle` and `personDeceased` describe the subject; dates
-follow the shared rules. Untyped facts and guesses are not supported.
+Read the complete entry first. Extract only what the source states explicitly
+or unambiguously; never infer, interpret, or extrapolate. Each fact is one
+concise, atomic assertion in English, keeping historically meaningful German or
+Latin names, titles, places, and epithets.
 
-For claims about a family, place, institution, object, or an unidentified figure, use a
-`generic` object with a non-person `subject` instead of `person`, as specified in
-`rules/json-formats.md`. Preserve supported collective claims without inventing personal
-identities. Do not use personal title or deceased-status fields on these objects.
+| Source states | Fact |
+| --- | --- |
+| A is the parent, or B is the child, son or daughter of A | `parent` with A in `person`, B in `of` |
+| Siblings | `sibling` |
+| Spouses, a widow or widower | `spouse` |
+| Other kinship (`Vetter`, `Oheim` …) | `kin` with the source's `term`, without guessing its degree |
+| A designation at a date | `title` |
+| A death, or that someone was dead by a date | `death`; cause, manner or place in `circumstances` |
+| Anything else about a person | `generic` with `person` |
+| A family, place, institution, object, or unidentified figure | `generic` with `subject` |
 
-Extract each explicitly stated family relationship as a separate typed fact:
+- Store a relationship once; never add its reverse or a symmetric copy.
+- Never use grouped forms such as "Sons: A and B".
+- Do not infer relationships from proximity, transactions, witness status, or
+  shared names, parents from siblings, a second parent from a spouse, full
+  siblinghood from one shared parent, or sibling transitivity.
+- Record a death fact only with a usable date or bound. "Deceased at a known
+  date" becomes a `diedBefore` bound. Widowhood gives no death or marriage date.
+- `generic` `content` begins with the predicate and does not repeat the
+  subject's name or titles.
 
-- `parent`: `person` is a parent of `of`. Reverse the participants when the
-  source says that someone is a child, son, or daughter of someone else.
-- `sibling`: `person` is a sibling of `of`.
-- `spouse`: `person` is a spouse of `of`, including a widow or widower.
-- `kin`: explicit kinship not represented more precisely above; preserve the
-  source's kinship term in `term` without guessing its degree.
+For property and transactions, state the people, property, place, and parties:
+`X holds [asset] at [place]`, `X sold [asset] at [place] to Y`, `X donated
+[asset] to Y`, `X exchanged [asset] for [asset]`, `X held [asset] as a [type]
+fief from Y`, `X inherited or received [asset] from Y`. Also extract witnesses,
+arbitrators, sureties, and official duties. Omit prices, amounts, measurements,
+and administrative detail unless needed to identify the event.
 
-Record each source-stated death, including a designation as deceased or late,
-as a separate typed death fact when a usable date can be established, using the rules in
-`rules/json-formats.md`. Distinguish the death date or bound from the date of
-the attestation. When a source identifies someone as deceased at a known
-date, record the corresponding `diedBefore` bound unless it supplies a more
-precise claim. Never
-infer an exact death date from widowhood or other context. Record a stated
-cause or manner of death separately as a generic fact; do not lose it when
-converting an existing death statement.
+### Deceased participants
 
-On each typed relationship, title, or generic fact, independently mark a participant
-whom the source identifies as deceased using `personDeceased` or
-`ofDeceased`, as applicable. A widow or widower designation establishes that
-the other spouse is deceased, as do terms such as “late”, “selig”, or
-“quondam”. Omit the field only when the source does not identify the
-participant as dead: an unmarked participant means alive at the fact's
-historical date. Do not
-store `verstorben` or equivalent status in a title array. The separate death
-fact and participant status serve different purposes: each fact must be
-interpretable independently.
+Mark a participant the source identifies as dead with `personDeceased` or
+`ofDeceased` on every fact where he appears; an unmarked participant counts as
+alive at the fact's date. "Late", "selig", "quondam", and a widow or widower
+designation (for the other spouse) all mark death. Never put `verstorben` or
+similar in a title array.
 
-Never use grouped forms such as “Sons: A and B”. Do not infer relationships
-from proximity, transactions, or shared names. Store a relationship once; do
-not add its reverse (child of) or a symmetric copy (spouse, sibling). Do
-not infer parents from siblings, a second parent from a spouse, full
-siblinghood from one shared parent, or sibling transitivity. Widowhood does
-not supply an exact death or marriage date.
+### Titles
 
-Use `person` and `of` as flat strings containing a known person ID or a
-normalized full name. Use optional `personTitle` and `ofTitle` arrays for
-source-stated designations, including age epithets and territorial scope.
-Omit absent titles; do not fill them from `people.json` or another source.
-A `title` fact uses `person` and a non-empty `personTitle` array, without `of`.
-A designation already recorded on a relationship or generic fact need not be duplicated
-as a separate title fact at the same date.
+- Record only titles this source states, in `personTitle`/`ofTitle`; never copy
+  them from `people.json` or another source. A title already on a relationship
+  or generic fact needs no separate `title` fact at the same date.
+- Keep German and Latin terms that carry historical meaning: `Ritter`, `Edel`,
+  `Edelmann`, `Edelknecht`, `Knecht`, `Vogt`, `Hofmeister`, `Burggraf`,
+  `Domherr`, `Vizedom`, `Vitztum`, `Komtur`, `miles`, `armiger`. Keep the
+  territorial or institutional scope (`Vogt zu Dürn`).
+- Keep `der Alte`, `der Ältere`, `der Junge`, and `der Jüngere` distinct and
+  untranslated; expand `d. Ä.` and `d. J.` in facts and translations, not in
+  the source text.
+- Translate the term when it describes an office, action, or occupation rather
+  than a title: `Eberhard served as bailiff of Dürn`, `Rudolf, a canon of
+  Würzburg`. Avoid hybrids such as `bailiff zu Dürn`. Distinguish titles from
+  place descriptions such as `pastor of Uissigheim`.
+- Titles are dated attestations: `der Jüngere` can later be `der Ältere`, and
+  `Edelknecht` can precede `Ritter`. A first `Ritter` does not date a
+  knighting, and a missing title does not prove its absence. Do not infer that
+  two people are one from matching titles.
 
-Preserve the source's distinction among `der Alte`, `der Ältere`, `der Junge`,
-and `der Jüngere`; do not translate them as “the old/older/elder/young/younger.”
-Expand abbreviations such as `d. Ä.` and `d. J.` in facts and English
-translations; leave the source text as written. In typed facts, keep each
-expanded epithet or territorial designation in the corresponding title array.
-In generic facts, use `personTitle`; in translations, put it after the full name, as in
-`Konrad von Rosenberg der Ältere` or `Arnold von Rosenberg zu Boxberg`.
+In `english` translations, keep family names intact (`von Uissigheim`, not "of
+Uissigheim") and put titles after the full name, attached to each person in a
+list: `Arnold von Uissigheim, Ritter`; `Konrad von Rosenberg der Ältere`;
+`Eberhard von Rosenberg, Ritter; Johann von Randecke, Ritter`.
 
-Titles are dated attestations, not permanent properties of a person. `der
-Jüngere` can later become `der Ältere`, and `Edelknecht` can precede `Ritter`.
-A first `Ritter` attestation does not date a knighting, and omission of a title
-does not prove its absence. Do not infer uninterrupted title use, or that two
-people are one, from matching designations. Record a fact-level historical date when it
-differs from the enclosing document date; typed book/note facts always need
-an explicit valid date. Do not use `null`; omit unnecessary optional fields.
-Never substitute a book's publication date for historical time.
+### Dates
 
-Preserve German and Latin terminology when it carries historical meaning.
-Examples include `Ritter`, `Edelmann`, `Edel`, `Edelknecht`, `Knecht`, `Vogt`,
-`Hofmeister`, `Burggraf`, `Domherr`, `Vizedom`, `Vitztum`, `Komtur`, `miles`,
-and `armiger`.
+Give a fact its own `date` when it differs from the enclosing date; book and
+note facts always need one. Never use a publication date as historical time.
 
-Keep these forms in typed title arrays when they function as personal titles
-or designations. In generic facts, use `personTitle`. In English translations, place them after
-the full name even if the German source puts them first: `Arnold von
-Uissigheim, Ritter`; `Eberhard von Rosenberg, Vogt zu Dürn`. Retain the territorial or institutional scope. In a
-list, attach the title to each person, for example, `Eberhard von Rosenberg,
-Ritter; Johann von Randecke, Ritter`.
+## Guesses
 
-Translate the same term when it describes an office, action, or general
-occupation rather than identifying a person's title: `Eberhard served as
-bailiff of Dürn`; `Rudolf, a canon of Würzburg, renounced his inheritance`;
-`Like every knight, Eberhard had armour`. Avoid hybrids such as `bailiff zu
-Dürn` or `Canon zu Würzburg`. Keep family names intact (`von Uissigheim`, not
-“of Uissigheim”) and distinguish titles from place descriptions such as
-`pastor of Uissigheim`.
+Put assumptions, inferences, and interpretations (including a book's or note's
+own interpretation) in `guesses`, never in `facts`. State the uncertainty and
+its basis, citing it when the entry does not. Guesses use the same types, are
+about the same people and subjects as relevant facts, and never comment on
+authors, sources, or research. Do not present a guess as settling who someone
+is or how people are related.
 
-For property and transactions, state the people, property, place, and parties
-involved. Relevant forms include:
-
-- `X holds [asset] at [place]`
-- `X sold [asset] at [place] to Y`
-- `X donated [asset] to Y`
-- `X exchanged [asset] for [asset]`
-- `X held [asset] as a [type] fief from Y`
-- `X inherited or received [asset] from Y`
-
-Also extract relevant witnesses, arbitrators, sureties, and official duties.
-Omit prices, financial amounts, measurements, and unrelated administrative
-detail unless essential to identifying the event.
-
-## Guesses and interpretations
-
-An entry may also have a separate `guesses` array alongside `facts` for
-assumptions, inferences, and interpretations, including interpretations read
-in books or notes that are not claimed to come directly from a document. Keep
-these out of `facts`. State uncertainty and the reasoning or attribution clearly,
-and cite the book, note, or other basis when it is not already identified by
-the containing entry. Do not present a guess as a document-supported fact or
-present it as settling who someone is or how people are related.
-
-Use the same typed object formats and historical date rules as facts for guesses,
-including `generic` for other interpretations, and relationship and death objects
-for inferred relationships and death dates. Keep `content` simple and atomic. Guesses must concern the same people and
-subjects as relevant facts; do not use them for commentary on authors, sources,
-or the research process. Retain citations needed to identify the basis of a guess.
-Never invent a date or use the publication year as an event date. In books and
-notes, every fact and guess must have an explicit historical date.
-
-A retrospective personal generic hypothesis such as "may have been the mother
-of" does not assert that the parent was alive at the date used to discuss the
-children's history. Preserve the recorded date and deceased status; do not add a
-deceased marker or shift the date. Keep it a `generic` guess; do not turn it
-into a `parent` fact.
+"May have been the mother of X" says nothing about the parent being alive at
+the date of the discussion: keep the recorded date and deceased status, and keep
+it a `generic` guess, never a `parent` fact.
 
 ## Relevance
 
 Keep a fact when it mentions a member of von Rosenberg, von Uissigheim, or von
-Erligheim; documents a direct relationship or interaction with those families;
-or references Boxberg, Wölchingen, Uissigheim, Erligheim, Rosenberg, or
-Bartenstein. Direct interactions include spouses, parents, children, siblings,
-witnesses, sureties, arbitrators, transaction partners, and other direct
-participants.
+Erligheim; documents a direct interaction with them (relative, witness, surety,
+arbitrator, transaction partner, other participant); or references Boxberg,
+Wölchingen, Uissigheim, Erligheim, Rosenberg, or Bartenstein. Keep relevant
+property and transaction facts even when they are not genealogical.
 
-Remove facts only about unrelated nobility or clergy, unrelated administrative
-activity, financial amounts or measurements, or third-party transactions with
-no target-family participant. Keep relevant property and transaction facts even
-when they are not genealogical.
+Remove facts only about unrelated nobility or clergy, unrelated administration,
+amounts or measurements, or third-party transactions without a target-family
+participant.
 
-`Schenk von Rosenberg` and `Mönch von Rosenberg` (also spelled `Münch von
-Rosenberg`) are distinct families from each other and from the primary von
-Rosenberg family. Do not target them for facts or guesses merely because their
-names contain `von Rosenberg`, and never use their genealogy as evidence about
-the primary family. A fact or guess involving a member of either family may
-be relevant when it explicitly documents a direct interaction with a target
-family or otherwise meets the relevance criteria above.
+`Schenk von Rosenberg` and `Mönch` (`Münch`) `von Rosenberg` are separate
+families, distinct from each other and from the primary von Rosenberg family.
+Do not target them because of the name, and never use their genealogy as
+evidence about the primary family; a direct interaction with a target family is
+still relevant.
 
-## Names and normalization
+## Names
 
-Consult `data/names.md` for personal names. For place-name variants, run
-`python3 scripts/list_place_variations.py` from the project root; add
-`--include-churches` when churches are relevant. Use the first form in a
-variation entry as the standard only when the correspondence is clear. Read
-the matching place record in `data/places.json` before adding or changing its
-variations. Match spelling variants case-insensitively while
-preserving the standard form's case.
+- Write `person` and `of` as a normalized full name (`Konrad von Rosenberg`) or
+  an exact `people.json` ID. Use an ID only when the source identifies that
+  person; never give one ID to people because they share a name, title, or
+  place.
+- Normalize clear variants with `data/names.md` (`Conradus` → `Konrad`,
+  `Arnolt` → `Arnold`), keeping the canonical form's case. `Kunz`/`Cunz` stays
+  `Kunz`.
+- For places, run `python3 scripts/list_place_variations.py`
+  (`--include-churches` when relevant) and read the `data/places.json` record
+  before changing its variations (`Ussinkeim` → `Uissigheim`).
+- Never normalize away `der Ältere`, `zu [place]`, `dictus`, or other
+  identifiers, and never unify two names only because they look similar. If a
+  correspondence is ambiguous, keep the source form and flag it. Report new
+  variants for the names or places file instead of inventing a standard form.
 
-Use normalized full names, with the given name followed by `von` and the
-normalized family name (for example, `Konrad von Rosenberg`), rather than
-source spelling variants when the correspondence is clear. In typed facts,
-`person` and `of` accept either that name or an exact, case-sensitive existing
-`people.json` ID. Write the ID directly in the field, without square brackets
-or separate ID fields.
+## Verification
 
-Only use an ID when the source identifies that person; otherwise write the
-normalized name. Preserve source distinctions in title arrays and flag
-remaining ambiguity; do not add IDs or titles that the source does not give.
-Do not assign one ID to people because they share a name, title, or location.
+For every fact, find the exact supporting passage in the source field and check
+names, dates, titles, places, relationships, and similarly named people. Report
+per fact: the fact, entry, exact quote (or `NOT FOUND`), status, reasoning, and
+recommendation. Status is **supported** (explicit), **partially supported**
+(core claim present, details wrong), **unsupported** (not found or needs
+inference), or **contradicted**. Correct clear errors; remove unsupported and
+contradicted facts. If the source is missing, corrupted, or ambiguous, leave the
+fact and report the issue.
 
-Normalize clear variants such as `Conradus` to `Konrad`, `Arnolt` to `Arnold`,
-`Engelhart` to `Engelhard`, `Ussinkeim` to `Uissigheim`, and `Erlikeim` to
-`Erligheim`. Preserve context such as `dictus`, `von`, `miles`, and `armiger`.
-`Kunz`/`Cunz` are shortened forms of Konrad but must remain `Kunz` when used;
-do not expand them automatically.
-
-Never normalize two people's or places' names into one form solely because
-they look similar. If the correspondence is ambiguous, preserve the source form and flag it for review. Do not
-normalize away `der Ältere`, `der Jüngere`, `zu [place]`, titles, or other
-identifiers. Keep age epithets in German, in title arrays for typed facts or
-after the full name in translations (`<given name> von <surname> der
-Alte/der Ältere/der Junge/der Jüngere`). Record legitimate
-new variants for later addition to the relevant names or places file rather
-than silently inventing a standard form.
-
-## Source verification
-
-For every generated fact, locate the exact supporting passage in the source
-field (`german`, `latin`, or a source-only `english`). Check names, dates,
-titles, places, relationships, and similarly named people. Verify the
-translation and summary too, but treat the source as authoritative.
-
-When reporting verification, include the fact, source entry, exact supporting
-quote (or `NOT FOUND`), status, reasoning, and recommendation. A fact is:
-
-- **supported** only when the source explicitly supports it;
-- **partially supported** when the core claim is present but details need correction;
-- **unsupported** when it cannot be located or requires inference;
-- **contradicted** when it conflicts with the source.
-
-Correct clear errors and remove unsupported or contradicted facts. Never infer
-kinship from proximity, shared location, witness status, or business
-relationships. If the source is missing, corrupted, or ambiguous, leave the
-fact unresolved and report the issue.
-
-After editing, verify that JSON parses, the document-level `date` and
-`entries` structure remain intact, each relevant entry retains its `source`
-citation, its text fields, and `facts`, and each `facts` array follows the applicable
-schema in `rules/json-formats.md`, including the `generic` type for other atomic claims. Confirm every fact is supported, atomic, relevant, and not duplicated;
-also confirm source text, translation, citations, names, and date precision
-were not changed unintentionally. Run `python3 scripts/validate_facts.py`
-on edited files. The
-validator checks syntax and references, not source support. Verification quotes and statuses belong in the review response;
-do not add redundant evidence or assessment fields to stored typed facts.
+After editing, run `python3 scripts/validate_facts.py` on the edited files
+(it checks syntax and references, not support), and review the diff: source
+text, translation, citations, names, and date precision unchanged; facts
+supported, atomic, relevant, and not duplicated. Verification belongs in the
+review response, never in stored facts.

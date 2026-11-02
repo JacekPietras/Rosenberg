@@ -1,210 +1,112 @@
 # Data JSON formats
 
-Read this file when creating or editing JSON under `data/`. Preserve each document's source text,
-English translation, extracted facts, citations, and existing structure. Edit JSON directly; do not
-use a separate facts database.
+Read this file when creating or editing JSON under `data/`. Edit the JSON
+directly, preserve its existing structure, and validate it afterwards.
 
-## Facts JSON
+## Facts and guesses
 
-Keep every fact in its existing source entry's `facts` array, alongside the original text,
-translation, and citations. Every fact and guess must be a typed object. Use `generic` for claims not represented by a
-relationship, title, or death type. A typed object has no duplicate
-`text`, `id`,
-`evidence`, or `assessment` field. Its source is the containing entry.
+Facts and guesses are typed objects in an entry's `facts` and optional
+`guesses` arrays; the containing entry is their source. Guesses use exactly the
+same formats; the `guesses` array marks them as uncertain.
 
-The supported typed facts are:
+| `type` | Required | Optional | Meaning |
+| --- | --- | --- | --- |
+| `generic` | `person` or `subject` (exactly one), `content` | `personTitle`, `personDeceased`, `date` | One atomic claim about a person or a non-person subject |
+| `parent` | `person`, `of` | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a parent of `of` |
+| `sibling` | `person`, `of` | as `parent` | `person` is a sibling of `of` |
+| `spouse` | `person`, `of` | as `parent` | `person` is a spouse of `of`, including widowhood |
+| `kin` | `person`, `of`, `term` | as `parent` | Other kinship; `term` is the source's word (`Vetter`) |
+| `title` | `person`, `personTitle` | `personDeceased`, `date` | A designation of `person` |
+| `death` | `person`, `diedOn` or `diedBefore` (exactly one) | `personTitle`, `date`, `circumstances` | A death and its date or exclusive upper bound |
 
-| `type`    | Required fields, in addition to `type`            | Optional fields                                                  | Meaning                                                       |
-|-----------|---------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------|
-| `generic` | Exactly one of `person` or `subject`, plus `content` | `personTitle`, `personDeceased`, `date` | One simple, atomic claim about a person or non-person subject. |
-| `parent`  | `person`, `of`                                    | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a parent of `of`.                                 |
-| `sibling` | `person`, `of`                                    | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a sibling of `of`.                                |
-| `spouse`  | `person`, `of`                                    | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | `person` is a spouse of `of`, including widowhood.            |
-| `kin`     | `person`, `of`, `term`                            | `personTitle`, `ofTitle`, `personDeceased`, `ofDeceased`, `date` | Source-stated kinship without a more specific supported type. |
-| `title`   | `person`, `personTitle`                           | `personDeceased`, `date`                                         | Source-stated designation of `person`.                        |
-| `death`   | `person`, exactly one of `diedOn` or `diedBefore` | `personTitle`, `date`, `circumstances`                           | A person's death and its date or exclusive upper bound.       |
+Other types (`father`, `child`, `widow` …) and fields (`text`, `id`,
+`evidence`, `assessment`) are rejected. A child is recorded as `parent` with the
+parent in `person`; relationships are stored once, without reverse copies.
 
-Reject other types and fields. In particular, do not add `father`, `mother`,
-`child`, `son`, `daughter`, `brother`, `sister`, `wife`, or `widow` types. Convert “A is B's child”
-to `parent` with B in `person` and A in `of`. Do not add a reverse fact. `kin.term` is a non-empty
-string preserving the source kinship term, such as `Vetter`, without guessing its precise modern
-meaning.
+### Fields
 
-An entry may also contain an optional `guesses` array alongside `facts`. Guesses use the same typed
-object formats and date rules as facts; the containing `guesses` array marks them as uncertain.
+- `person`, `of`: a non-empty string, either an exact `people.json` ID
+  (case-sensitive) or a normalized full name. No brackets, nested objects, or
+  separate ID fields.
+- `personTitle`, `ofTitle`: a non-empty array of unique strings, one
+  designation per item: `["der Jüngere", "Ritter", "zu Boxberg"]`; `Vogt zu
+  Lauda` is one item. Omit the field when there is no title. Never put a
+  deceased status in it.
+- `personDeceased`, `ofDeceased`: `true` when the participant was dead by the
+  fact's date; otherwise omitted (never `false`). An unmarked participant was
+  alive then. `ofDeceased` only on facts with `of`.
+- `subject` (generic only): a literal description of a family, place,
+  institution, object, or unidentified figure; never a person ID or invented
+  name, and never combined with `personTitle` or `personDeceased`.
+- `content` (generic only): an English continuation starting with the
+  predicate, without the subject's name or titles, so that `<name> <titles>
+  <content>` reads as one sentence: `Arnold von Rosenberg, Ritter, zu Boxberg
+  witnessed the agreement at Boxberg.` Generic objects have no `of`, `ofTitle`,
+  or `ofDeceased`.
+- `null` is never used; omit absent optional fields.
 
-`person` and `of` are non-empty strings: either a known `people.json` ID or a normalized full name.
-A value equal to an existing ID (case-sensitive) is that ID; any other value is a name. Write IDs
-directly in these fields, without square brackets or separate `personId`/`ofId` fields. Do not use
-nested person objects. IDs must be unique and must not collide with full names.
-
-`personTitle` and `ofTitle`, when present, are non-empty arrays of unique, non-empty strings. Put
-each designation in its own item, for example
-`["der Jüngere", "Ritter", "zu Boxberg"]`; keep `Vogt zu Lauda` as one complete item. Omit an absent
-title field instead of writing `null`, an empty array, or a scalar string. A `title`
-fact requires `personTitle` and has no `of` or `ofTitle` fields.
-
-`personDeceased` and `ofDeceased` are optional boolean fields identifying the corresponding
-participant as deceased at the fact's historical date. Set a field to `true` only when the source
-states that participant was deceased, including when it identifies the other spouse as a widow or
-widower. Omit it otherwise. Do not use `false` or
-`null`. Use `ofDeceased` only on facts with an `of` participant. Do not put
-`verstorben` or equivalent deceased status in a title array.
-
-Each fact is self-contained. A participant marked deceased was dead by the fact's historical date;
-an unmarked participant was alive then. A separate `death` fact can record a usable death date or
-bound, but is not needed to interpret the status on a relationship, title, or generic fact. For
-example, a spouse fact can stand alone:
+Each fact is self-contained: a spouse fact with `ofDeceased` needs no separate
+death fact.
 
 ```json
-{
-  "type": "spouse",
-  "person": "Anne von Bebenburg",
-  "of": "Eberhard von Rosenberg",
-  "ofDeceased": true
-}
+{"type": "spouse", "person": "Anne von Bebenburg", "of": "Eberhard von Rosenberg", "ofDeceased": true}
 ```
 
-### Generic facts
+### Dates
 
-A `generic` object requires exactly one of `person` or `subject`, and a non-empty `content` string.
-Use `subject` for a non-person entity such as a family, place, institution, object, or an
-unidentified figure described by a source. It is a non-empty literal description, never a person
-ID or an invented personal name. A `subject` is not a person. Omit `personTitle` and `personDeceased` when using `subject`. Keep the same date,
-atomicity, source-support, and uncertainty rules as person-based claims.
-`person` identifies the
-subject using the same normalized name or confirmed ID rules as other types. Keep `content` a
-simple English continuation of a fact about the subject, for example
-`"witnessed the agreement at Boxberg."`. `content` must not repeat the subject's name or titles;
-store those only in `person` and `personTitle`. Begin with the predicate (normally a lowercase
-verb) so the viewer and search output can display `<name> <titles> <content>` as one sentence,
-without a colon between the subject and body. For example, `person: "Arnold von Rosenberg"`,
-`personTitle: ["Ritter", "zu Boxberg"]`, and `content: "witnessed the agreement at Boxberg."`
-display as `Arnold von Rosenberg, Ritter, zu Boxberg witnessed the agreement at Boxberg.`
-Names of other participants may appear in `content` when needed to state the claim. Record source-stated titles and deceased status in `personTitle` and
-`personDeceased`. In books and notes, `date` is required; in documents, it must be omitted and the
-generic fact inherits the enclosing historical date. Elsewhere, `date` follows the shared date rules. Do not use `of`, `ofTitle`, or
-`ofDeceased` on generic objects. Use the more specific supported type for relationships, title
-attestations, and dated deaths. The same format applies to guesses.
+A date is `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`, at the source's precision. It is
+the date of the event or attestation, never a publication date, and not the
+start of a relationship.
 
-### Death facts
+- **Documents**: facts inherit the entry or document date, including intervals
+  (`YYYY-YYYY`, ISO endpoints joined by `/` or `--`), which stay intervals.
+  Generic objects never have `date`; other types have one only when it differs
+  from the inherited date. A fact without an enclosing date needs its own.
+- **Books and notes**: every fact and guess has its own `date`.
 
-Each `death` object has exactly one of `diedOn` or `diedBefore`. Its value is a string containing a
-valid calendar date in `YYYY`, `YYYY-MM`, or
-`YYYY-MM-DD` form. `diedOn` identifies the stated day, month, or year, without inventing finer
-precision. `diedBefore` is an exclusive upper bound at the start of that day, month, or year: `1394`
-means before 1 January 1394. Convert “deceased by 1393” to `diedBefore` `1394` so the whole of 1393
-remains possible. Similarly, for an inclusive day or month, use the start of the next day or month
-as the exclusive bound. Optional `circumstances` is a non-empty string recording relevant
-circumstances of the death, such as its cause, manner, or place. Omit it when unknown or not
-relevant; do not use it to duplicate the death date or bound.
+### Deaths
 
-For “shortly after” a dated point, use `diedBefore` two calendar months after that point as a
-standardized estimate, not a source-stated limit. When the target month lacks the original day, use
-its last day. Preserve the original source wording in the source text; put the estimated typed bound
-in `guesses`. Do not add a prose fact or guess explaining the calculation. Do not treat the
-estimated bound as a source-supported fact. Other approximations that cannot be expressed as death objects use `generic` guesses. Do not create a typed death fact without a usable date or bound.
-
-The top-level `date` is the historical date of the claim or attestation, subject to the ordinary
-inheritance and book/note rules below. It is distinct from `diedOn` and `diedBefore` and never
-supplies either implicitly. A death date itself may be the historical date of a death event, but an
-attestation date must not be mistaken for an exact death date. If an entry says someone was already
-deceased, use the exclusive bound immediately after the attestation's date or period when known. For
-an inherited interval, use the exclusive bound immediately after its latest endpoint only when the
-attestation is known to fall within that interval. Do not use an interval as `diedOn` or
-`diedBefore`.
-
-Examples corresponding to death in a year and deceased by a year:
+- `diedOn`: the stated day, month, or year.
+- `diedBefore`: an exclusive bound at the start of that day, month, or year:
+  "dead by 1393" is `diedBefore: "1394"`; "dead by 3 May 1393" is
+  `"1393-05-04"`. Never an interval.
+- The fact's `date` is the attestation, distinct from `diedOn`/`diedBefore`
+  and never supplying them. "Already dead" at an attestation gives the bound
+  just after that date or period; for an inherited interval only when the
+  attestation lies within it.
+- "Shortly after" a date is the guess `diedBefore` two calendar months later
+  (the month's last day if that day does not exist), without an explanatory
+  guess. Other approximations are `generic` guesses.
+- `circumstances`: cause, manner, or place of death; omitted when unknown.
+- A death fact needs a usable date or bound.
 
 ```json
 [
-  {
-    "type": "death",
-    "person": "Eberhard von Rosenberg",
-    "date": "1314",
-    "diedOn": "1314"
-  },
-  {
-    "type": "death",
-    "person": "vogt_zu_Lauda",
-    "date": "1393",
-    "diedBefore": "1394"
-  }
+  {"type": "death", "person": "Eberhard von Rosenberg", "date": "1314", "diedOn": "1314"},
+  {"type": "death", "person": "vogt_zu_Lauda", "date": "1393", "diedBefore": "1394"}
 ]
 ```
 
-For “Ulrich von Rosenberg died shortly after 22 February 1424”, a document with an enclosing
-historical date can contain this guess:
-
-```json
-{
-  "type": "death",
-  "person": "Ulrich von Rosenberg",
-  "diedBefore": "1424-04-22"
-}
-```
-
-The same format applies in `guesses`; the array identifies the claim as an inference. The
-standardized two-month estimate requires no explanatory prose guess. Store a stated cause, manner, or place of death in `circumstances`, or as a separate atomic
-`generic` fact or guess when relevant.
-
-Illustrative facts, not historical additions:
-
-```json
-[
-  {
-    "type": "parent",
-    "person": "Example parent",
-    "personTitle": [
-      "Ritter"
-    ],
-    "of": "Example child",
-    "date": "1399"
-  },
-  {
-    "type": "title",
-    "person": "Example child",
-    "personTitle": [
-      "der Jüngere",
-      "zu Boxberg"
-    ],
-    "date": "1399-02-01"
-  }
-]
-```
-
-### Fact dates
-
-Fact-level dates are valid calendar dates using only the source's precision:
-`YYYY`, `YYYY-MM`, or `YYYY-MM-DD`. Never invent missing components. Use an valid date when a date
-field is required. Null values are not accepted; omit unnecessary optional fields instead of filling
-them with `null`.
-
-In documents, an explicit date on a non-generic fact overrides the entry/document date. Generic
-facts and guesses cannot have a `date` field. Without an explicit date, inherit the
-nearest enclosing historical date, normally the entry's date or the document-level date. Preserve
-existing inherited document intervals (`YYYY-YYYY`, ISO endpoints separated by `/` or `--`) as
-intervals; do not reduce them to a single day. A generic fact must have an enclosing historical
-date; another typed fact without one must supply its own valid historical date. Omit a fact-level `date` when it
-repeats the enclosing document or entry date; the fact inherits that date. Keep an explicit date
-only when it records a different historical date, such as a death date stated in the document.
-
-In books and notes, typed facts require their own `date` field, even if an entry has a date. Never
-inherit a publication year. All facts and guesses use typed objects; untyped values are validation errors. Dates record the historical event or attestation, not when extraction
-occurred. A relationship attestation date is not its start date.
-
-Validate facts from the repository root:
+### Validation
 
 ```text
 python3 scripts/validate_facts.py
 python3 scripts/validate_facts.py data/books data/notes
 ```
 
-The validator checks syntax, fields, dates, and registry
-references and reports source locations. It does not verify historical support. An unmatched
-ID-like string is a review warning, not a resolved person.
+It checks syntax, fields, dates, and registry references, not historical
+support. An ID-like string that matches no ID is a warning.
 
-## Book JSON
+## Entry text fields
+
+| Field | Content |
+| --- | --- |
+| `german`, `latin` | Original source text |
+| `summary` | Archival summary (regest) of the original, usually modern German |
+| `abstract` | English summary of the original |
+| `english` | English translation; the source itself when it is the only text field |
+
+## Book and notes JSON
 
 ```json
 {
@@ -214,21 +116,12 @@ ID-like string is a review warning, not a resolved person.
       "title": "Section or source title",
       "german": "Original German text",
       "english": "English translation",
-      "facts": [
-        {
-          "date": "1399-02-01",
-          "type": "generic",
-          "person": "Example person",
-          "content": "witnessed the agreement at Boxberg."
-        }
-      ],
+      "facts": [{"date": "1399-02-01", "type": "generic", "person": "Example person", "content": "witnessed the agreement at Boxberg."}],
       "diagram": "Optional diagram data"
     }
   ]
 }
 ```
-
-Book facts follow the shared Facts JSON rules above. Every fact and guess uses a typed object with an explicit historical `date`.
 
 ## Document JSON
 
@@ -236,10 +129,7 @@ Book facts follow the shared Facts JSON rules above. Every fact and guess uses a
 {
   "date": "1399-02-01",
   "transcribed": true,
-  "label": [
-    "Schenk",
-    "important"
-  ],
+  "label": ["Schenk", "important"],
   "place": "Boxberg",
   "entries": [
     {
@@ -247,417 +137,194 @@ Book facts follow the shared Facts JSON rules above. Every fact and guess uses a
       "url": "http://...",
       "german": "Original text",
       "english": "English translation",
-      "facts": [
-        {
-          "type": "generic",
-          "person": "Example person",
-          "content": "witnessed the agreement at Boxberg."
-        }
-      ],
-      "img": [
-        {
-          "src": "https://.../first-page.jpg",
-          "seals": [
-            {
-              "person": "Eberhard",
-              "position": "0.3,0.8",
-              "size": 0.05,
-              "type": "full"
-            }
-          ]
-        },
-        {
-          "src": "https://.../second-page.jpg",
-          "seals": []
-        }
-      ]
+      "facts": [{"type": "generic", "person": "Example person", "content": "witnessed the agreement at Boxberg."}],
+      "img": [{"src": "https://.../page.jpg", "seals": [{"person": "Eberhard", "position": "0.3,0.8", "size": 0.05, "type": "full"}]}]
     }
   ]
 }
 ```
 
-Documents have a document-level `date` and an `entries` array. Each entry retains `source`,`german`,
-`english`, and `facts`. Its `facts` array follows the shared Facts JSON rules above: every fact and guess is typed, generic objects inherit the enclosing date, and other types normally inherit it unless overridden.
-
-The optional document-level boolean `transcribed` is `true` when the document has been successfully transcribed. An absent field or `false` means it has not been marked as transcribed.
-
-The optional document-level `label` may be a string or an array of strings. Each label is displayed
-as a red badge. The special label `"important"` gives the document a reddish background; `"Hessen"`,
-`"Schenk"`, and `"Mönch"` give it a dimmed background.
-
-Each `img` item has a `src` URL and an optional `seals` array. Removed images remain in the JSON
-with `"deleted": "true"`; the viewer hides them and image import treats their `src` as already
-known. `position` is the comma-separated normalized center (`x,y`, both from 0 to 1), and `size` is
-the seal diameter as a fraction of the image height. Optional `width` is a normalized widening
-modifier from `0` to `1`, `wideningRotation` sets its direction, and optional
-`rotation` applies the seal's second, final rotation. The crop window remains circular and
-unchanged. Use an empty `seals` array when an image has no recorded annotations, or omit the field
-until annotations are available. Optional image-level `tags` is an array of strings. Optional
-`regions` is an array of named rectangles with a `name` and normalized `x`, `y`, `width`, and
-`height` values from 0 to 1. The viewer displays regions as labeled outlines. When no separate
-preview `focus` exists, the first region supplies the preview focus coordinates.
-
-Each seal may have one `type`: `contrepalle`, `swans`, `helm`, or `full`. The Seals tab's `unknown`
-filter shows seals whose type is not filled;
-`unknown` is not an editable type.
+- `date` (required): the document's historical date. `place`: place of issue.
+- `transcribed`: `true` when transcribed; absent or `false` otherwise.
+- `label`: a string or array of strings, shown as badges. `important` gives a
+  reddish background; `Hessen`, `Schenk`, and `Mönch` a dimmed one.
+- Entries keep `source` (the citation), their text fields, and `facts`.
+- `img[]`: `src`; `deleted: "true"` for a removed image (kept so it is not
+  imported again); optional `tags`, and `regions` (named rectangles with
+  normalized `x`, `y`, `width`, `height` from 0 to 1; the first gives the
+  preview focus when there is no `focus`).
+- `seals[]` (empty or omitted when not annotated): `position` is the normalized
+  center `x,y`, `size` the diameter as a fraction of the image height; optional
+  `width` (widening, 0–1), `wideningRotation`, `rotation`, and `type`
+  (`contrepalle`, `swans`, `helm`, `full`).
 
 ## Images JSON
 
-`data/images/images.json` is an object with a `title` and an `entries`
-array. An entry's optional `label` is a string or an array of strings, such as
-`"effigy"` or `["effigy", "new"]`. Each label is displayed separately and can be used to filter the
-Images view. Preserve the `armorial` or `effigy` label when adding review labels such as `new`.
-Armorial entries may include a `title`, `date`, `folio`, `source`, and `url`. The `title` contains
-the armorial name and additional details only. Store dates as `YYYY` or
-`YYYY-YYYY`, and store the optional folio separately without a `fol.` prefix. The viewer displays
-the date in brackets after the title; it does not add the folio to the displayed title. `url` is the
-image URL or local filename. The displayed title supplies the image's accessible name. Optional
-`tags` is an array of strings used to filter the Images view.
-`source` holds only references: URLs, or book citations with pages, figures, or plates. Optional
-`description` holds all other information: identification, transcriptions, translations, dating
-notes, photographer credits, licences, and caveats. Optional `regions` is an array of named
-rectangular image areas. Each region has a `name` and normalized `x`, `y`, `width`, and `height`
-values from 0 to 1. Regions are displayed as labeled outlines and can be added or renamed in the
-local image viewer. The first region supplies the preview framing. If an image is stored locally,
-place it directly in `data/images/` and reference its filename in `img`. The viewer also accepts
-Google Drive thumbnail URLs in `img` for images that remain hosted in Drive.
+`data/images/images.json` is `{"title": …, "entries": […]}`.
 
 ```json
-{
-  "title": "Images",
-  "entries": [
-    {
-      "title": "Family arms",
-      "date": "1370-1414",
-      "folio": "332v",
-      "label": "armorial",
-      "source": "Source citation",
-      "url": "family-arms.png"
-    }
-  ]
-}
+{"title": "Family arms", "date": "1370-1414", "folio": "332v", "label": "armorial", "source": "Source citation", "url": "family-arms.png"}
 ```
 
-For all image records, including effigies and Drive collections, keep dates out of `title` and store
-them separately in `date` as `YYYY` or `YYYY-YYYY`. The viewer appends the date in brackets during
-display. Legacy `year` fields are accepted as a display fallback. A Drive collection is one image
-entry with
-`type: "link"`, `title`, and `url` set to the Drive folder URL. The folder contents are the
-collection; keep its member image files in that Drive folder and do not add a separate image entry
-or `img` array for each member. Optional
-`coverImage` selects a folder image for the collection card. Add `date`,
-`label`, `source`, and `placeId` when they describe the collection. Effigy collections may also
-include `sketchfabUrl`. Effigy Sketchfab records use `title`, `id`, `url`, and optional `date` and
-`preview`
-image URL. An optional `placeId` refers to the matching place ID in
-`data/places.json`.
+- `title`: the image or armorial name, without date or folio.
+- `date`: `YYYY` or `YYYY-YYYY` (legacy `year` is still read). `folio` without
+  a `fol.` prefix.
+- `label`: a string or array (`armorial`, `effigy`, review labels such as
+  `new`); keep `armorial`/`effigy` when adding review labels. `tags`: filters.
+- `url`: an image URL, a Google Drive thumbnail URL, or the filename of an image
+  stored directly in `data/images/`.
+- `source`: only references (URLs, citations with pages, figures, plates).
+  `description`: everything else (identification, transcription, credits,
+  licences, caveats).
+- `regions`: as for documents; the first gives the preview framing.
+- `placeId`: an ID from `data/places.json`.
+- A Drive collection is one entry with `type: "link"`, `title`, and `url` set
+  to the folder; its images stay in the folder, without separate entries.
+  Optional `coverImage`, `date`, `label`, `source`, `placeId`, and, for
+  effigies, `sketchfabUrl`.
+- An effigy Sketchfab record has `title`, `id`, `url`, and optional `date` and
+  `preview`.
 
 ## People JSON
 
-`data/people.json` is the manually curated registry of confirmed, separate
-people. It is a non-empty array containing **only** `id` and `name` on each
-record. Both are non-empty strings; IDs are unique and case-sensitive and must
-not collide with any full name. Different people can have the same full name.
-Preserve confirmed IDs and names. Only reviewed, confirmed people are added;
-generated files never change it.
+`data/people.json` is the curated registry of confirmed, separate people: a
+non-empty array of objects with **only** `id` and `name`. IDs are unique,
+case-sensitive, and never equal to a full name; different people may share a
+name. Only reviewed people are added, and generated files never change it.
 
 ```json
-[
-  {"id": "example_person", "name": "Example person"},
-  {"id": "another_person", "name": "Another person"}
-]
+[{"id": "example_person", "name": "Example person"}]
 ```
-
-Do not store relationships, titles, biographies, generated results, provenance,
-input fingerprints, build metadata, or configuration here. Source assertions
-remain in their source JSON; generated results belong in `data/tree.json`.
 
 ## Tree JSON
 
-`data/tree.json` is the generated family graph, separate from the confirmed
-registry. It is written only by `python3 scripts/rebuild_family_tree.py --apply`
-and is never edited by hand. It is not one of its own inputs.
+`data/tree.json` is generated by `python3 scripts/rebuild_family_tree.py
+--apply` and never edited by hand. `--apply` validates the whole tree and
+writes it once; input changes during the build prevent the write.
 
-The top-level object has:
+| Key | Content |
+| --- | --- |
+| `configuration` | `searchLimit`, the bound for registry diagnostics |
+| `inputs` | Path → fingerprint for every source JSON in books/documents/notes/images, `data/names.md`, `titles.md`, `kinship.md`, `places.json`, `matching.json`, and the registry (IDs and names only). Scripts and the tree itself are not inputs. |
+| `fingerprint` | Fingerprint of `inputs` |
+| `evidence` | Graph per view (`with-guesses`) |
+| `matchingBackground` | Per view, factual full-name counts and their weighted total |
+| `coverage` | Per view: `reconstructedPeople`, `reconstructedRelationships`, `contextualLinks`, `registryRelationships`, `unresolvedMentions`, `candidateComparisons`, `contextCoverage`, `conflicts` |
 
-- `configuration.searchLimit`: the positive integer bound for the retained registry diagnostics.
-- `inputs`: repository-relative input path to SHA-256 fingerprint, covering
-  recursively discovered source JSON in books/documents/notes/images,
-  `data/names.md`, `data/titles.md`, `data/kinship.md`, `data/places.json`, `data/matching.json`, and the confirmed ID/name registry.
-  Python scripts are not inputs; changes to them do not invalidate the stored graph.
-- `fingerprint`: the fingerprint of the complete `inputs` object.
-- `evidence`: a graph keyed by each available evidence view.
-- `matchingBackground`: per-view factual full-name counts and their weighted
-  total (source factors applied, guesses excluded).
-- `coverage`: counts per view for `reconstructedPeople`,
-  `reconstructedRelationships`, `contextualLinks`, `registryRelationships`,
-  `unresolvedMentions` from registry diagnostics, `candidateComparisons`,
-  `contextCoverage`, and `conflicts`. Context coverage counts attached,
-  unattached, undated, explicit-ID, context-only, and family-linked occurrences.
+A graph has `sources`, `nodes`, `relationships`, and `comparisons`.
 
-### Source people and relationships
+**Sources.** `sources` lists each reference once; elsewhere references are
+integer indexes into it (full objects are also accepted). A reference has
+exactly `path`, `pointer` (RFC 6901, ending in `/facts/N` or `/guesses/N`), and
+`fingerprint` of the assertion. A stale pointer is never relocated to another
+identical assertion.
 
-The evidence graph contains `sources`, `nodes`, `relationships`, and
-`comparisons`. The `sources` array stores each path/pointer/fingerprint reference once. Persisted
-`mentions[].source`, `identitySources[]`, and derivation `sources[]` contain
-zero-based integer indexes into that table; comparison `sources[]` use the same
-indexes. Readers expand them for inspection.
-Complete reference objects are also accepted in an uncompressed view.
+**Nodes.** `key`, `name`, `titles`, `dates`, `status`, `identityProbability`,
+`mentions`, `identitySources`, optional `possiblySame`.
 
-A source reference has exactly `path`, `pointer`, and `fingerprint`. `path` is a
-source JSON path, `pointer` is a zero-based RFC 6901 JSON Pointer ending in
-`/facts/N` or `/guesses/N`, and `fingerprint` identifies that original assertion.
-References remain attached to their original source entry; do not relocate a
-stale pointer by searching for another identical assertion.
+- `key`: the registry ID for a registry person (also in `registry`), otherwise
+  a generated `@evidence/…` handle that can change between builds.
+- `status`: `anchored` (registry person), `contextual` (several passages), or
+  `source` (one passage).
+- `mentions[]`: `source`, `field` (`person`, `of`, or `text`), and the resolved
+  `date`. A `text` mention also has `reference`: a literal name from the fact
+  text or an `[id]` present in it. Each occurrence belongs to one node.
+- `identityProbability`: 0–1, the lowest membership confidence of the
+  mentions; 1 for a registry person or a grouping within one source.
+- `possiblySame`: `[{key, probability}]`, tied or likely candidates not chosen.
 
-A node contains `key`, `name`, `titles`, `dates`, `status`, `mentions`, and
-`identitySources`, and `identityProbability`. A registry-backed node also contains `registry`, equal to its
-confirmed ID and node key. Other nodes use an opaque `@evidence/` handle derived
-from their source occurrences. These are generated view handles, not permanent
-person IDs, and can change when new evidence changes a grouping.
+**Relationships.** `type` (directed `parent`; symmetric `spouse`, `sibling`,
+`kin`), `person`, `of` (node keys), `term` for `kin`, and `derivations`. No
+self-relationships or ancestry cycles; repeated ancestry through different
+branches is allowed. Each derivation has:
 
-`status` is `anchored` (a registry person), `contextual` (occurrences from
-several passages), or `source` (occurrences from one passage). Nodes are
-generated identities, not a proven count of distinct people.
-Each mention contains `source`, `field`, and its resolved historical `date`.
-Typed occurrences use `field: "person"` or `"of"`. Textual context occurrences
-use `field: "text"` and a `reference` containing a literal name from the fact
-or a confirmed ID explicitly present as `[id]`. The reference must be supported
-by the original fact text. Occurrence uniqueness includes the text reference; several named actors
-in one fact are distinct occurrences, not duplicate assignments. An occurrence belongs to only one node per view. Source
-references supporting grouping remain in `identitySources`. Titles and dates
-summarize attestations.
+- `identity`: `anchored`, `reviewed`, `inferred`, or `source` (correspondence
+  still open);
+- `usesGuesses`: whether the assertion or any identity it depends on uses
+  guesses;
+- `assertionWeight`, `endpointProbability` (`null` while correspondence is
+  open), and `sources`;
+- `inference: "sibling"` for a father taken from a sibling; its sources are the
+  parent assertion to sibling X and the sibling assertion between X and `of`.
+  Any other derivation has a source assertion whose participants match its
+  endpoints.
 
-Relationships contain `type`, `person`, `of`, `derivations`, and `term` for kin.
-Types are directed `parent`, and symmetric `spouse`, `sibling`, and `kin`.
-Endpoints are node keys. `term` preserves the source's kinship wording, such
-as `Vetter`. No self-relationships or directed ancestry cycles are accepted. Repeated
-ancestry through different branches is allowed. Attestation dates are not
-relationship start dates.
+**Comparisons.** `person`, `candidate` (node keys), `mentions`, `stage` (3 or
+4), `iteration`, `probability`, `logOdds`, `features` (named log-odds
+contributions), `sources`, `usesGuesses`, `status`, `reason`, and, at stage 4,
+`share`. `status` is `merged`, `below-threshold`, `ambiguous`, `incompatible`
+(reason starting `blocked:` when blocked), or `superseded` (an earlier
+comparison of occurrences joined later).
 
-Each derivation contains `identity`, `usesGuesses`, and `sources`; its containing
-view supplies the evidence mode. Identity is `anchored`, `reviewed`, `inferred`,
-or `source` (correspondence to other occurrences remains open). `usesGuesses`
-covers assertion content and all identity dependencies, including negative
-constraints and earlier contextual links. Guesses references require this flag,
-and it is always false in the facts view. Every relationship must have a source
-assertion whose participant assignments match its endpoints, except a parent
-derivation with `inference: "sibling"`: its sources contain a parent assertion
-from `person` to some node X and a sibling assertion between X and `of`. Equivalent edges
-retain alternative complete derivations; each view is validated separately.
+Probabilities and weights are uncalibrated estimates.
 
-### Comparisons and verification
+### Fingerprints
 
-Each comparison contains `person`, `candidate` (final node keys), original
-`mentions` handles, `stage` (3 or 4), `iteration`, `probability`, `logOdds`, `features` (named
-log-odds contributions), `sources`, `usesGuesses`, `status`, and `reason`. Status
-is `merged`, `below-threshold`, `ambiguous`, `incompatible`, or `superseded`.
-Blocked comparisons have status `incompatible` and a reason starting with
-`blocked:`. Stage-4 comparisons also contain `share`.
-`superseded` preserves an earlier comparison whose occurrences were later
-joined. References and probability arithmetic are validated.
-
-A node's `identityProbability`, from 0 to 1, is the lowest membership
-confidence of its mentions; it is 1 for a registry person or a grouping within
-one source. A node may
-contain `possiblySame`: `[{key, probability}]` for candidates that were tied or
-likely but not chosen. It is not a probability
-that the historical person existed or that the identity is permanently confirmed.
-Derivations also retain `assertionWeight` and `endpointProbability`; the latter
-is null when correspondence remains open. Assertion weights are evidence
-factors, not calibrated probabilities of relationship truth.
-
-Input fingerprints cover complete parsed source files, including enclosing dates,
-citations, text, and newly added assertions; a separate source file-set check
-catches added and removed files. The registry fingerprint covers only confirmed
-IDs and names. Generated tree data is excluded, so applying an identical build
-is deterministic and does not invalidate itself.
-
-Fingerprint encoding is shared by Python and JavaScript. Recursively encode
-objects as `["object", [[key, encodedValue], ...]]` with sorted keys, arrays as
-`["array", [encodedValue, ...]]`, and numbers as `["number", "<big-endian
-IEEE-754 binary64 hexadecimal>"]`. Strings, booleans, and null remain unchanged.
-Normalize negative zero to zero. Serialize this tagged value as compact ASCII JSON (non-ASCII code points use
-lowercase `\u` escapes, including UTF-16 surrogate pairs), then hash its UTF-8
-bytes with SHA-256 and prefix `sha256:`. Object key order and insignificant JSON
-whitespace do not affect a fingerprint; semantic input changes do.
-
-Before displaying generated relationships, the viewer verifies the input set,
-input fingerprints, source pointers and hashes, participant assignments, and
-graph consistency.
-
-`--apply` validates the complete tree before writing it once; intervening input
-changes prevent the write. The tree contains no timestamps.
+Fingerprints cover the complete parsed file (dates, citations, text,
+assertions), plus a check of the source file set. Encoding, shared by Python and
+JavaScript: objects become `["object", [[key, value], …]]` with sorted keys,
+arrays `["array", [value, …]]`, numbers `["number", "<big-endian IEEE-754
+binary64 hex>"]` (negative zero as zero); strings, booleans, and null stay as
+they are. Serialize as compact ASCII JSON (lowercase `\u` escapes, UTF-16
+surrogate pairs), hash the UTF-8 bytes with SHA-256, and prefix `sha256:`.
 
 ## Matching JSON
 
-`data/matching.json` holds the parameters of the family reconstruction. It contains `model: "weighted-log-odds-v6"`, `calibrated: false`,
-`priorProbability`, `mergeProbability`, `ambiguityLogOddsMargin`,
-`clusterMinimumProbability`, `guessWeight`, `sourceWeights`, age assumptions
-(`adultAgeYears`, `maxAgeYears`, `ageComfortYears`, `ageScaleYears`), title
-weights and half-lives, place weights and half-life, cross-role place factor,
-relative-name rarity weight/cap/reference frequency, associate
-weights/cap/half-life, `financialCounterpartyWeight`, family weights, relation factors, shared-relative weight,
-cap and half-life,
-elder-before-younger and Ritter-before-Edelknecht penalties, death conflict
-penalty, `maxRounds`, `sameDateRankConflictPenalty`, `retrospectiveLookBackYears`,
-`passageTitleAgreementWeight`, `posthumousBirthYears`, `possibleSameDisplayProbability`, `bestCandidate`
-(`maxLivingSpanYears`, `attachmentTieLogOdds`, `minJoinEvidence`,
-`maxRelativePathSteps`), and `secondPass` (`maxPathSteps`,
-`specificityFactors` for exact/narrow/broad kinship terms, `eliminationWeight`,
-`ageTitleNamesakeWeight`, `widowhoodNameWeight`).
+`data/matching.json` holds the reconstruction parameters, with exactly the keys
+of the existing file: `model` (`weighted-log-odds-v6`), `calibrated` (`false`),
+probabilities and margins, `guessWeight`, `sourceWeights`, age assumptions,
+title, place, associate and family weights and half-lives, penalties,
+`maxRounds`, `bestCandidate`, and `secondPass`.
 
-Use the existing file's exact keys; unknown/missing keys, non-finite or
-non-positive values, invalid probability ranges, and non-integer iteration
-bounds are rejected. The agreed source factors are documents/images 1.0 and
-books/notes 0.5; these values are enforced. Guesses must have a factor strictly
-between 0 and 1. Other values are configurable. A change invalidates
-`data/tree.json` through its input fingerprints.
-
+Missing or unknown keys, non-positive or non-finite numbers, probabilities
+outside 0–1, and non-integer counts are rejected. `sourceWeights` must be
+documents/images 1.0 and books/notes 0.5; `guessWeight` lies strictly between 0
+and 1.
 
 ## Places JSON
 
-`data/places.json` is an array of place objects. Each object's `variations`
-array starts with the canonical English name, followed by recognized historical spelling variants.
-`lat` and `lon` are decimal-degree WGS84 coordinates. An optional medieval place `category` may be
-`castle`, `church`, `city`, or
-`village`; omit it when uncertain. Settlement categories describe status in 1387, not present-day
-municipal status. Optional `showOnMap: false` excludes a place from all map views. Places are shown
-by default.
+`data/places.json` is an array of places.
 
 ```json
-[
-  {
-    "id": "uissigheim",
-    "variations": [
-      "Uissigheim",
-      "Ussigheim",
-      "Ußinkeim"
-    ],
-    "lat": 49.679167,
-    "lon": 9.5725
-  }
-]
+[{"id": "uissigheim", "variations": ["Uissigheim", "Ussigheim", "Ußinkeim"], "lat": 49.679167, "lon": 9.5725, "category": "village"}]
 ```
 
-The viewer uses the first variation as the canonical name for display. All listed variations are
-used when finding and linking related place content.
+| Field | Content |
+| --- | --- |
+| `id` | Unique, stable ID; check its uses before merging, removing, or reassigning a place |
+| `variations` | Canonical English name first, then historical spellings; the only place for names (no `aliases`, `nameFormat`, `mapLabel`) |
+| `lat`, `lon` | WGS84 decimal degrees |
+| `category` | `castle`, `church`, `city`, or `village`, as in 1387; omitted when uncertain |
+| `parent` | For a church or castle: the ID of its city or village |
+| `description` | Sourced notes, including the evidence for a settlement's status |
+| `showOnMap` | `false` hides the place on all maps |
 
-### Settlement parents
+### Parents and names
 
-A church or castle's optional `parent` contains the ID of its city or village record. Reuse the
-correct settlement record. The referenced record must exist, have category `city` or `village`, and
-have no parent of its own. Establish the relationship from evidence or an explicit user
-identification, not from similar names, shared coordinates, or a substring match. For example,
-`burg-oberlauda` has `parent: "lauda"` while retaining the name `Burg Oberlauda`.
+- A `parent` must exist, be a `city` or `village`, and have no parent itself.
+  Set it from evidence or an explicit user identification, never from similar
+  names, coordinates, or substrings. All buildings of one settlement share one
+  parent record.
+- A building with a parent stores only its local names (`["St. Laurentius"]`);
+  the displayed name adds the parent's first variation (`St. Laurentius
+  Uissigheim`). Settlement spellings belong to the settlement, not to its
+  buildings.
+- Generic building names (`Abbey`, `Monastery`, `Burg`, `Schloss`,
+  `Wasserschloss`, `Old Burg`, `Kirche`, `Evangelische Kirche`,
+  `Johanniskirche`, `Friedhofskapelle`) only match together with their parent.
+- A building without a parent lists the short settlement name first
+  (`Essingen`), then its full names.
 
-If the settlement is missing, research whether it was a city or village in 1387 before creating its
-record. Prefer municipal histories, official regional gazetteers, and charter evidence. Distinguish
-town rights from market rights; market rights alone do not establish city status. Record the
-supporting evidence and source references with the settlement, and use settlement coordinates rather
-than copying the building's coordinates without evidence. If its identity or status cannot be
-established, leave it unresolved rather than inventing a settlement or category. For the current
-city/village schema, represent a documented market settlement without town rights as `village` and
-explain its market status in the sourced description. Do not invent a medieval village when the
-evidence describes only a castle and its associated buildings. Bartenstein is such a case:
-its settlement category is unset and its settlement marker is hidden, while the castle has no
-settlement parent. Preserve both existing IDs:
-`bartenstein` remains an unclassified, hidden record for existing ID URLs, and `schloss-bartenstein`
-is the visible castle with variations
-`["Bartenstein", "Schloss Bartenstein"]`. Bare historical mentions must still match the castle in
-links and person maps. Check structured ID usages before merging, removing, or reassigning any place
-record.
+### Creating a settlement
 
-Once the settlement exists, reference it from the relevant buildings and remove bare settlement
-names from those buildings' variations. For example, create `niederstetten` as a `city` based on its
-privileges before 1387, then use it as the parent of `niederstetten-friedhofskapelle` and
-`niederstetten-st-jakobus`. The churches store their local building names; the bare name
-`Niederstetten` belongs to the settlement. A settlement shared by a church and castle must have one
-shared parent record: for example,
-`waldmannshofen` is the village parent of both its church and castle. Move bare historical
-settlement spellings to that parent as well.
+Before creating a missing settlement, establish whether it was a city or village
+in 1387 from municipal histories, official gazetteers, or charters. Market
+rights alone make a `village`; explain them in `description`. Use the
+settlement's own coordinates. Do not invent a village where the evidence shows
+only a castle: `bartenstein` stays an unclassified, hidden record, and
+`schloss-bartenstein` is the visible castle with `["Bartenstein", "Schloss
+Bartenstein"]` and no parent.
 
-### Names, combinations, and links
-
-Use only `variations` to store recognized names, including local, full, older, and punctuated forms.
-Do not add separate `aliases`, `nameFormat`, or
-`mapLabel` fields. When a parent exists, omit redundant settlement names:
-`uissigheim-st-laurentius` stores just `["St. Laurentius"]` with
-`parent: "uissigheim"`. Do not store generated combinations or duplicate building names for the
-parent's historical spellings. Existing explicit full names such as `St. Kilian, Röttingen` remain
-supported by the loader, but simplify redundant stored forms to `St. Kilian`. Similarly, store
-`Schloss`
-with `parent: "waldmannshofen"`; its display name must be exactly
-`Schloss Waldmannshofen`, never `Schloss Waldmannshofen Waldmannshofen`.
-
-The loader matches the linked parent's listed spellings within each full variation,
-case-insensitively at letter/digit boundaries, trying longer spellings first. It removes that
-matched spelling, trims surrounding commas and whitespace, and combines the remaining building name
-with only the first parent variation (the settlement's canonical name) in both orders, separated by
-a space. Other parent spellings may identify a settlement already present in a stored building name,
-but must not generate additional combinations. Preserve explicitly stored full building names,
-including historical forms, and deduplicate the expanded names. If the first stored variation
-already contains a parent spelling, it remains the canonical display name. Otherwise, append the
-first parent variation to form the canonical name. For example,
-`St. Laurentius` becomes `St. Laurentius Uissigheim`. Distinctive local names remain recognized too.
-Generic building names (`Abbey`, `Monastery`, `Burg`,
-`Schloss`, `Wasserschloss`, `Old Burg`, `Kirche`, `Evangelische Kirche`,
-`Johanniskirche`, and `Friedhofskapelle`) are combined with the parent but must not match on their
-own, which would incorrectly link unrelated buildings or include them in fact and map searches. Two
-building variations produce four unpunctuated combinations, regardless of how many settlement
-variations exist. The settlement's other variations remain available for settlement links and
-searches.
-
-Also recognize a comma between the building and settlement, in either order, without adding those
-combinations to the stored JSON. For example,
-`Friedhofskapelle Niederstetten`, `Friedhofskapelle, Niederstetten`, and
-`Niederstetten, Friedhofskapelle` must link to the same chapel as one phrase. Allow variable
-whitespace around the comma and preserve the source text. These punctuated forms must also work in
-old place URLs and mention searches.
-
-If a variation contains no parent spelling at those boundaries, treat it as a local building name
-and combine it with the canonical parent in both orders, also retaining the local name. Do not strip
-a substring from a word:
-`Lauda` does not match inside `Oberlauda`. Standalone names such as
-`Reichelsburg` remain valid too.
-`burg-oberlauda` intentionally resolves to `Burg Oberlauda Lauda`: Oberlauda is part of the
-building's local name and Lauda is its confirmed parent.
-
-Historical settlement spellings belong on the settlement. For example,
-`Haldemarstetten`, `Zaltenbergstetten`, `Haltermannstetten`, and
-`Haltenbergsketten` belong to `niederstetten`, not to the castle's local variations. Keep the
-distinct proper building name `Schloss Haltenbergstetten`.
-
-Use the same expanded variations for book/document hyperlinks, place-page mentions, fact and
-person-map matching, and the Python place-listing and fact-search tools. Match longer full names
-before shorter settlement names. Place links use IDs when present so distinct places can share a
-display name. Bare settlement names must resolve to the settlement rather than its church or castle.
-Prefer a unique matching city/village. If the other matches have no category, prefer the sole
-classified record, as for the Bartenstein castle and retained unclassified record. Otherwise leave
-an ambiguous name unlinked instead of selecting the first record. This matters for the two different
-Essingen sites. Explicit ID URLs still select the requested record. Place pages must also accept
-canonical names and all recognized variations to preserve existing full-name URLs.
-
-Map labels use the canonical name. For a building without a parent, put the short settlement name
-first in `variations`, such as `Essingen`, and retain the full building names as later variations.
-Apply this rule to both the person-screen map and the main map, including all map modes. Resolve
-labels from the stored canonical name; do not guess settlement names by splitting building names at
-runtime. When a missing settlement is established, migrate to the explicit parent relationship
-above.
-
-During a migration, preserve existing place IDs, building coordinates, categories, descriptions,
-source references, source text, and translations. Retain distinctive building spellings in
-`variations`, simplifying redundant settlement text; move bare settlement names to the parent where
-appropriate. Verify that composed names contain the settlement only once, generic building words do
-not create standalone matches, and shared settlements have one parent for all their buildings.
-Verify valid JSON, unique IDs, valid parent references, old name/ID URLs, both name orders using
-only the first parent variation, and both map views. Keep browser and Python expansion behavior
-consistent, and review the diff for unrelated changes.
-
-## Editing requirements
-
-Keep source, translation, and facts together in the same entry. Preserve valid JSON, source
-citations, and date precision. For place-name variants, run
-`python3 scripts/list_place_variations.py` from the project root (add
-`--include-churches` when relevant). Read the matching `data/places.json`
-record before adding or changing its variations. Validate edited JSON and review the diff manually.
+When moving buildings under a new parent, keep their IDs, coordinates,
+categories, descriptions, and sources, and move bare settlement names to the
+parent.
