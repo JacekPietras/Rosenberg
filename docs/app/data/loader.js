@@ -43,10 +43,20 @@ export function createDataLoader({
     const limit = metadata?.configuration?.searchLimit;
     return { searchLimit: Number.isSafeInteger(limit) && limit > 0 ? limit : 10000 };
   }
+  async function reportRebuildProgress(stage) {
+    if (!state.familyGraph?.rebuilding) return;
+    state.familyGraph.rebuildStage = stage;
+    if (state.active === 'tree') await renderActive();
+  }
 
   async function loadSnapshot({ autoRebuild = true, familyOnly = false } = {}) {
     if (!familyOnly && state.active === 'tree' && !state.person && !state.place) {
       state.treeLoading = true;
+      state.treeLoadingStage = 'Preparing to load the source records';
+      await renderActive();
+    }
+    if (state.treeLoading && state.active === 'tree') {
+      state.treeLoadingStage = 'Listing available source files';
       await renderActive();
     }
     const files = await repository.getRepositoryFiles();
@@ -59,6 +69,10 @@ export function createDataLoader({
     const showBookEarly = !familyOnly && bookPathsForStartup.length > 0;
     let earlyBooks;
     if (showBookEarly) {
+      if (state.treeLoading && state.active === 'tree') {
+        state.treeLoadingStage = `Loading source files (${paths.length} found)`;
+        await renderActive();
+      }
       const [placesText, peopleText, namesText, particlesText, entries] = await Promise.all([
         repository.getText('data/places.json'), repository.getText('data/people.json'),
         repository.getText('data/names.md'), repository.getText('data/nobiliary_particles.md'),
@@ -78,6 +92,10 @@ export function createDataLoader({
       state.documents = earlyBooks;
       if (state.active === 'books') state.active = ordered[0];
       renderTabs();
+      await renderActive();
+    }
+    if (state.treeLoading && state.active === 'tree') {
+      state.treeLoadingStage = `Loading source records from ${paths.length} files`;
       await renderActive();
     }
     const [placesText, calibrationCitiesText, peopleText, particlesText, namesText, documents] = await Promise.all([
@@ -144,6 +162,8 @@ export function createDataLoader({
     if (!familyOnly) await renderActive();
     const treeScreenVisible = state.active === 'tree' && !state.person && !state.place;
     if (treeScreenVisible) {
+      state.treeLoadingStage = 'Checking the saved family graph';
+      await renderActive();
       const family = await loadFamilyInBackground(state.personRecords, documents, paths, state.familyView);
       state.tree = family.tree;
       if (family.tree && (family.tree.schema === undefined || family.tree.schema >= 4)) state.familyView = 'with-guesses';
@@ -158,10 +178,12 @@ export function createDataLoader({
       state.familyView = state.familyGraph.view;
       await renderActive();
       if (shouldRebuild) {
+        state.familyGraph.rebuildStage = 'Rebuilding relationships; this can take several minutes';
+        await renderActive();
         onFamilyRebuild();
         backgroundRebuild = (async () => {
           try {
-            await repository.rebuildFamilyGraph(rebuildOptions());
+            await repository.rebuildFamilyGraph(rebuildOptions(), reportRebuildProgress);
             // A refresh may already be loading when the rebuild finishes.
             await new Promise((resolve) => setTimeout(resolve, 0));
             if (loading) await loading;
@@ -172,7 +194,10 @@ export function createDataLoader({
             if (state.active === 'tree') await renderActive();
           } finally {
             backgroundRebuild = null;
-            if (state.familyGraph) state.familyGraph.rebuilding = false;
+            if (state.familyGraph) {
+              state.familyGraph.rebuilding = false;
+              state.familyGraph.rebuildStage = '';
+            }
           }
         })();
       }
@@ -191,7 +216,21 @@ export function createDataLoader({
 
   async function rebuildFamilyGraph() {
     onFamilyRebuild();
-    await repository.rebuildFamilyGraph(rebuildOptions());
+    if (state.familyGraph) {
+      state.familyGraph.rebuilding = true;
+      state.familyGraph.rebuildStage = 'Rebuilding relationships; this can take several minutes';
+      await renderActive();
+    }
+    try {
+      await repository.rebuildFamilyGraph(rebuildOptions(), reportRebuildProgress);
+    } catch (error) {
+      if (state.familyGraph) {
+        state.familyGraph.rebuilding = false;
+        state.familyGraph.rebuildError = error.message;
+      }
+      await renderActive();
+      throw error;
+    }
     await loadAll({ autoRebuild: false });
   }
 

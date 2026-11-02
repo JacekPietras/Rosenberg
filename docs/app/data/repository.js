@@ -36,12 +36,27 @@ export function createRepository({ location = window.location, fetchFunction = w
       try { return await response.json(); }
       catch (error) { if (error instanceof SyntaxError) return null; throw error; }
     },
-    rebuildFamilyGraph(options = {}) {
+    rebuildFamilyGraph(options = {}, onProgress = () => {}) {
       if (!familyRebuild) {
         familyRebuild = (async () => {
-          const response = await fetchFunction('/api/rebuild-family-tree', {
-            method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(options),
-          });
+          let lastStage = '';
+          const poll = setInterval(async () => {
+            try {
+              const statusResponse = await fetchFunction(`/api/rebuild-status?v=${Date.now()}`, { cache: 'no-store' });
+              if (!statusResponse.ok) return;
+              const status = await statusResponse.json();
+              if (status.active && status.stage && status.stage !== lastStage) {
+                lastStage = status.stage;
+                onProgress(status.stage);
+              }
+            } catch { /* The rebuild request will report a connection failure if needed. */ }
+          }, 700);
+          let response;
+          try {
+            response = await fetchFunction('/api/rebuild-family-tree', {
+              method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(options),
+            });
+          } finally { clearInterval(poll); }
           if (response.status === 404) throw new Error('Restart the local viewer to enable rebuilding relationships.');
           const result = await response.json();
           if (!response.ok) throw new Error(result.error || 'Could not rebuild family relationships.');

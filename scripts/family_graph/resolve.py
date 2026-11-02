@@ -6,7 +6,8 @@ from .model import IdentityDecision
 from .policy import MIN_MARGIN, MIN_SCORE
 
 
-def resolve(assertions, registry, candidates, search_limit):
+def resolve(assertions, registry, candidates, search_limit, progress=None):
+    progress = progress or (lambda _stage: None)
     mentions = {mention.handle: mention for assertion in assertions for mention in assertion.mentions}
     fixed = {key: mention.reference for key, mention in mentions.items() if mention.reference in registry and registry[mention.reference].get('id') == mention.reference}
     decisions = {key: IdentityDecision(mentions[key], 'accepted', identity, 'anchored', reason='exact case-sensitive source ID') for key, identity in fixed.items()}
@@ -46,13 +47,16 @@ def resolve(assertions, registry, candidates, search_limit):
         components.append(sorted(component & eligible.keys()))
 
     alternatives_output = []
-    for component in components:
+    for component_index, component in enumerate(components, 1):
+        progress(f'Resolving candidate group {component_index} of {len(components)} ({len(component)} mentions)')
         best_score, solutions, visited, limited = float('-inf'), [], 0, False
         assignment = dict(fixed)
 
         def search(index, score):
             nonlocal visited, limited, best_score, solutions
             visited += 1
+            if visited % 10000 == 0:
+                progress(f'Resolving candidate group {component_index} of {len(components)}: {visited:,} search states')
             if visited > search_limit:
                 limited = True
                 return

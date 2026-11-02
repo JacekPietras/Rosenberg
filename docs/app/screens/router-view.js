@@ -66,7 +66,12 @@ export async function renderActiveScreen({
   }
   if (state.active === 'tree') {
     if (state.treeLoading || state.familyGraph?.rebuilding) {
-      content.textContent = 'Building tree…';
+      const stage = state.treeLoading ? state.treeLoadingStage : state.familyGraph?.rebuildStage;
+      const progress = document.createElement('p');
+      progress.setAttribute('role', 'status');
+      progress.setAttribute('aria-live', 'polite');
+      progress.textContent = stage || 'Preparing the family tree';
+      content.replaceChildren(progress);
       return;
     }
     const focus = state.familyFocus && (state.familyFocus === 'all' || state.familyGraph?.components?.some((c) => c.key === state.familyFocus))

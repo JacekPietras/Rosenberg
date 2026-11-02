@@ -14,7 +14,9 @@ from .reconstruction import reconstruct
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
 
-def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH_LIMIT):
+def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH_LIMIT, progress=None):
+    progress = progress or (lambda _stage: None)
+    progress('Preparing source identities')
     assertions = [assertion for assertion in inputs.assertions if include_guesses or assertion.source.kind == 'facts']
     names = Names(inputs.names, inputs.places, inputs.titles, inputs.kinship)
     registry, profiles = anchor_profiles(assertions, inputs.people)
@@ -70,8 +72,10 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
               and not any(mention.reference in blocked for mention in assertion.mentions)]
     # Candidates must be rebuilt after removing incompatible hypothetical
     # constraints so rejected guesses cannot supply positive identity evidence.
+    progress('Comparing candidate identities')
     registry, _, candidates = make_candidates(usable, inputs.people, names, rules)
-    decisions, alternatives = resolve(usable, registry, candidates, search_limit)
+    progress(f'Resolving identity matches across {len(candidates)} source mentions')
+    decisions, alternatives = resolve(usable, registry, candidates, search_limit, progress=progress)
     if rejected_parents:
         alternatives.append({'relationships': [Relationship('parent', a.mentions[0].reference, a.mentions[1].reference, '',
             derivations=[{'view': 'with-guesses', 'identity': 'anchored', 'usesGuesses': True,
@@ -81,6 +85,7 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
             if mention.handle not in decisions:
                 decisions[mention.handle] = IdentityDecision(mention, 'rejected', mention.reference if mention.reference in registry else None,
                     'anchored' if mention.reference in registry else 'unresolved', reason='affected by contradictory anchored evidence')
+    progress('Assembling family relationships')
     relationships = {}
     view = 'with-guesses' if include_guesses else 'facts'
     for assertion in usable:

@@ -73,9 +73,12 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.search_limit < 1:
         parser.error('--search-limit must be positive')
+    def progress(stage):
+        print(f'PROGRESS:{stage}', flush=True)
     try:
+        progress('Reading source records and reconstruction rules')
         inputs = load_inputs(args.root)
-        results = [build(inputs, include_guesses=True, search_limit=args.search_limit)]
+        results = [build(inputs, include_guesses=True, search_limit=args.search_limit, progress=progress)]
         tree = serialize(inputs, results)
         print(f'Read {len(inputs.assertions)} typed assertions; supporting prose: {inputs.prose["facts"]} facts, {inputs.prose["guesses"]} guesses.')
         for result in results:
@@ -94,6 +97,7 @@ def main(argv=None):
         for diagnostic in results[0].diagnostics:
             print(diagnostic)
         if args.apply:
+            progress('Validating and saving data/tree.json')
             apply(inputs, tree)
             print('Wrote validated family graph to data/tree.json.')
         else:

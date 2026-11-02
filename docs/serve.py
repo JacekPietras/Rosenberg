@@ -4,6 +4,7 @@ import json
 import hashlib
 from html.parser import HTMLParser
 import os
+import queue
 import re
 import subprocess
 import sys
@@ -21,6 +22,8 @@ last_heartbeat = [0.0]
 page_seen = threading.Event()
 stop_watcher = threading.Event()
 family_rebuild_lock = threading.Lock()
+family_rebuild_status = {'active': False, 'stage': ''}
+family_rebuild_status_lock = threading.Lock()
 
 
 class DriveFolderParser(HTMLParser):
@@ -80,6 +83,11 @@ class ViewerHandler(SimpleHTTPRequestHandler):
         if self.path.split("?", 1)[0] == "/api/local-server":
             self.send_response(204)
             self.end_headers()
+            return
+        if self.path.split("?", 1)[0] == "/api/rebuild-status":
+            with family_rebuild_status_lock:
+                status = dict(family_rebuild_status)
+            self.send_json(200, status)
             return
         if self.path.split("?", 1)[0] == "/api/git-status":
             result = subprocess.run(
@@ -212,6 +220,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
 
     def do_POST(self):
         if self.path.split("?", 1)[0] == "/api/rebuild-family-tree":
+            status_started = False
             try:
                 length = int(self.headers.get("Content-Length", "0"))
                 if not 0 <= length <= 8192:
@@ -220,6 +229,9 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 if not isinstance(payload, dict) or set(payload) - {"searchLimit"}:
                     raise ValueError("Invalid rebuild options")
                 with family_rebuild_lock:
+                    with family_rebuild_status_lock:
+                        family_rebuild_status.update(active=True, stage='Starting family graph rebuild')
+                    status_started = True
                     try:
                         metadata = json.loads((ROOT / "data/tree.json").read_text(encoding="utf-8"))
                     except (FileNotFoundError, ValueError):
@@ -238,13 +250,41 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                     command = [sys.executable, str(ROOT / "scripts/rebuild_family_tree.py"),
                                "--root", str(ROOT), "--apply", "--search-limit", str(search_limit)]
                     # Data edited during a build only requires building again.
-                    for _ in range(3):
-                        result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True,
-                                                check=False, timeout=120)
-                        if result.returncode != 75:
+                    output = []
+                    for _attempt in range(3):
+                        process = subprocess.Popen(command, cwd=ROOT, stdout=subprocess.PIPE,
+                                                   stderr=subprocess.STDOUT, text=True, bufsize=1)
+                        lines = queue.Queue()
+                        def read_output():
+                            for line in process.stdout:
+                                lines.put(line.rstrip())
+                            lines.put(None)
+                        reader = threading.Thread(target=read_output, daemon=True)
+                        reader.start()
+                        deadline = time.monotonic() + 120
+                        finished_reading = False
+                        while process.poll() is None or not finished_reading:
+                            if time.monotonic() >= deadline:
+                                process.kill()
+                                process.wait()
+                                raise subprocess.TimeoutExpired(command, 120)
+                            try:
+                                line = lines.get(timeout=0.1)
+                            except queue.Empty:
+                                continue
+                            if line is None:
+                                finished_reading = True
+                            else:
+                                output.append(line)
+                                if line.startswith('PROGRESS:'):
+                                    with family_rebuild_status_lock:
+                                        family_rebuild_status['stage'] = line[len('PROGRESS:'):]
+                        reader.join(timeout=1)
+                        if process.returncode != 75:
                             break
-                    if result.returncode:
-                        self.send_json(422, {"error": result.stderr.strip() or result.stdout.strip() or "Could not rebuild family relationships"})
+                        output.clear()
+                    if process.returncode:
+                        self.send_json(422, {"error": "\n".join(output).strip() or "Could not rebuild family relationships"})
                         return
                 self.send_json(200, {"ok": True})
             except (ValueError, TypeError, KeyError, IndexError) as error:
@@ -253,6 +293,10 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 self.send_json(504, {"error": "Rebuilding family relationships took too long. Please retry."})
             except OSError as error:
                 self.send_json(500, {"error": f"Could not rebuild family relationships: {error}"})
+            finally:
+                if status_started:
+                    with family_rebuild_status_lock:
+                        family_rebuild_status.update(active=False, stage='')
             return
         if self.path.split("?", 1)[0] == "/api/save-document":
             print(
