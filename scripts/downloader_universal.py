@@ -12,8 +12,8 @@ from urllib.parse import urlsplit
 
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 DOWNLOADERS = {
-    "www.gda.bayern.de": "downloader_gda_bayern.py",
     "gda.bayern.de": "downloader_gda_bayern.py",
+    "landesarchiv-bw.de": "downloader_landesarchiv.py",
 }
 
 
@@ -36,7 +36,7 @@ def main() -> int:
         parser.error("supply an archive record URL (or use --list)")
 
     parsed = urlsplit(args.url)
-    domain = (parsed.hostname or "").lower().rstrip(".")
+    domain = (parsed.hostname or "").lower().rstrip(".").removeprefix("www.")
     if parsed.scheme not in {"http", "https"} or not domain:
         parser.error("URL must have an http or https scheme and a hostname")
     script_name = DOWNLOADERS.get(domain)
