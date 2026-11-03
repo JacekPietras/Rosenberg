@@ -3,7 +3,7 @@
 
 // bailif
 Vogt, Voigt, advocatus
-Vizedom, Vicedom, Vitzthum, Vitztum, Viztum, vicedominus, Vicar
+Vizedom, Vicedom, Vitzthum, Vitztum, Viztum, vicedominus, Vicar, Viztums
 Keller, Kelner, cellerarius
 Domherr, canonicus, Kanoniker, Kanonikus
 Schultheiß, Schultheiss, scultetus
