@@ -103,6 +103,20 @@ reported; evidence keys refer to the saved build and can change after rebuilding
 
 Archive catalogs and related research portals are collected in [`data/notes/archives.md`](data/notes/archives.md).
 
+### Archive record downloader
+
+Route an archive record URL to the downloader for its domain:
+
+```text
+python3 scripts/downloader_universal.py 'RECORD_URL'
+python3 scripts/downloader_universal.py --list
+```
+
+GDA Bayern is currently supported. Its downloader creates a date-named
+document JSON entry labeled `to review`, with the catalog citation and German
+abstract and IIIF image links when available. Review the generated entry before
+using it as a completed document record.
+
 ### Landesarchiv images
 
 Download missing cached document images with:
