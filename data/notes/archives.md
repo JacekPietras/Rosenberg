@@ -1,7 +1,7 @@
 # Archives and research portals
 
-- [Hessian State Archive (Arcinsys)](https://arcinsys.hessen.de/arcinsys/simpleSearch.action)
-- [State Archives of Baden-Württemberg](https://www2.landesarchiv-bw.de/ofs21/home.php)
+- [Hessian State Archive](https://arcinsys.hessen.de/arcinsys/simpleSearch.action)
+- [Baden-Württemberg State Archives](https://www2.landesarchiv-bw.de/ofs21/home.php)
 - [Bavarian State Archives](https://www.gda.bayern.de/gvl/archive.xhtml?tx_gwrepertories_frontend%5Baction%5D=search&tx_gwrepertories_frontend%5Bcontroller%5D=Archive)
 - [Bavarikon](https://www.bavarikon.de/de/suche)
 - [Historical Unterfranken: Town Database](https://www.historisches-unterfranken.uni-wuerzburg.de/staedte/staedte.php)
@@ -11,6 +11,6 @@
 - [Ingrossaturbücher](https://www.ingrossaturbuecher.de)
 - [Heidelberg University Library digital collections](https://www.ub.uni-heidelberg.de/Englisch/helios/digi/digilit.html)
 - [Baden State Library](https://www.blb-karlsruhe.de/)
-- [Archivportal-D](https://www.archivportal-d.de/objekte?lang=en&utm_source=chatgpt.com&query=eberhard+von+rosenberg&rows=100)
-- [Deutsche Digitale Bibliothek](https://www.digitale-sammlungen.de/en/search?query=)
+- [Archivportal-D](https://www.archivportal-d.de/suche)
+- [Deutsche Digitale Bibliothek](https://www.digitale-sammlungen.de/en/search)
 - [Szukaj w Archiwach](https://www.szukajwarchiwach.gov.pl/de/wyszukiwarka)
