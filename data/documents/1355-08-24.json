@@ -1,6 +1,5 @@
 {
   "date": "1355-08-24",
-  "label": "to review",
   "entries": [
     {
       "source": "Staatsarchiv Wertheim G-Rep. 18 Lade XXV Nr. 25",
@@ -24,10 +23,20 @@
       ],
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=723&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000723%2Ftitlaufn_0000167907%2F07_0000167907_0001_7-167907-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=723&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000723%2Ftitlaufn_0000167907%2F07_0000167907_0001_7-167907-1.jpg",
+          "regions": [
+            {
+              "x": 0.3964,
+              "y": 0.3834,
+              "width": 0.4065,
+              "height": 0.283,
+              "name": "text"
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=723&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000723%2Ftitlaufn_0000167907%2F07_0000167907_0002_7-167907-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=723&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000723%2Ftitlaufn_0000167907%2F07_0000167907_0002_7-167907-2.jpg",
+          "deleted": "true"
         }
       ]
     }

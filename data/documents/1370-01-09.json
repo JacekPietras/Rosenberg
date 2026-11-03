@@ -1,8 +1,5 @@
 {
   "date": "1370-01-09",
-  "label": [
-    "to review"
-  ],
   "entries": [
     {
       "source": "Stadt- und Stiftsarchiv Aschaffenburg, StiftsA U 3901; Schöffler: Urkundenbuch Nr. 430 (Bavarikon catalogue description)",
@@ -19,22 +16,24 @@
           "person": "Konrad von Uissigheim",
           "type": "generic",
           "content": "owned land adjoining the meadow of Hans Schelris and his wife Agnes at Michelbach."
-        },
-        {
-          "person": "Hans Schelris",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "spouse",
-          "of": "Agnes"
         }
       ],
       "img": [
         {
-          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80036592_00001/full/max/0/default.jpg"
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80036592_00001/full/max/0/default.jpg",
+          "regions": [
+            {
+              "x": 0.0915,
+              "y": 0.0816,
+              "width": 0.8434,
+              "height": 0.6004,
+              "name": "text"
+            }
+          ]
         },
         {
-          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80036592_00002/full/max/0/default.jpg"
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80036592_00002/full/max/0/default.jpg",
+          "deleted": "true"
         }
       ]
     }

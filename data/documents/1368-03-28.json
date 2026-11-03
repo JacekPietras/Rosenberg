@@ -1,6 +1,5 @@
 {
   "date": "1368-03-28",
-  "label": "to review",
   "entries": [
     {
       "source": "Staatsarchiv Wertheim F-US 9 Nr. 76",
@@ -53,10 +52,20 @@
       ],
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129165%2F07_0000129165_0001_7-129165-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129165%2F07_0000129165_0001_7-129165-1.jpg",
+          "regions": [
+            {
+              "x": 0.1379,
+              "y": 0.3685,
+              "width": 0.7456,
+              "height": 0.2332,
+              "name": "text"
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129165%2F07_0000129165_0002_7-129165-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129165%2F07_0000129165_0002_7-129165-2.jpg",
+          "deleted": "true"
         }
       ]
     }

@@ -1,6 +1,5 @@
 {
   "date": "1365",
-  "label": "to review",
   "entries": [
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1322",
@@ -19,20 +18,6 @@
       ],
       "img": [
         {
-          "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/978aec27-dbe8-42ce-b3ac-cc8114eab869/full/full/0/default.jpg",
-          "seals": [
-            {
-              "person": "Eberhard von Rosenberg",
-              "position": "0.0991,0.5926",
-              "size": 0.13500000000000004,
-              "width": 0.16,
-              "wideningRotation": 4,
-              "rotation": -27,
-              "type": "helm"
-            }
-          ]
-        },
-        {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190272%2F03_0000190272_0001_3-190272-1.jpg",
           "seals": [
             {
@@ -43,6 +28,15 @@
               "wideningRotation": -7,
               "rotation": 0,
               "type": "helm"
+            }
+          ],
+          "regions": [
+            {
+              "x": 0.0633,
+              "y": 0.0771,
+              "width": 0.6629,
+              "height": 0.3193,
+              "name": "text"
             }
           ]
         },
