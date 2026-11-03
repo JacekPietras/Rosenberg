@@ -41,7 +41,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "sealed the charter; his seal is now detached."
+          "content": "sealed the charter"
         }
       ],
       "img": [
@@ -56,6 +56,15 @@
               "wideningRotation": 0,
               "rotation": -27,
               "type": "contrepalle"
+            }
+          ],
+          "regions": [
+            {
+              "x": 0.1192,
+              "y": 0.112,
+              "width": 0.8307,
+              "height": 0.3912,
+              "name": "text"
             }
           ]
         },

@@ -544,6 +544,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     if (!region) return;
     selectedRegionIndex = Number(marker.dataset.regionIndex);
     render();
+    if (region.name === 'text') return;
     const name = window.prompt('Rename image region (leave empty to keep the current name):', region.name);
     if (name === null || !name.trim()) return;
     region.name = name.trim();
