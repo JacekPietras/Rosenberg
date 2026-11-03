@@ -4,14 +4,18 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
+import html
 import json
 import re
 import sys
+import time
 from html.parser import HTMLParser
+from http.cookiejar import CookieJar
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urljoin, urlsplit
-from urllib.request import Request, urlopen
+from urllib.parse import urlencode, urljoin, urlsplit, urlunsplit
+from urllib.request import HTTPCookieProcessor, Request, build_opener
 from xml.etree import ElementTree
 
 
@@ -20,6 +24,10 @@ REQUEST_TIMEOUT = 60
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
 HOSTS = {"www.regesta-imperii.de", "regesta-imperii.de"}
+UUID_RE = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.I)
+MONTH_PREFIXES = ["jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez"]
+MONTH_ALIASES = {"jän": 1, "mar": 3, "mrz": 3}
+GERMAN_DATE_RE = re.compile(r"(\d{4})(?:\s+([A-Za-zäÄ]{3,9})\.?(?:\s+(\d{1,2})\b)?)?")
 CEI_LINK_RE = re.compile(r"(?:https?://[^\"'\s<>]+)?/cei/[\w.-]+/sources/[\w.-]+", re.I)
 
 
@@ -36,13 +44,70 @@ class Links(HTMLParser):
             self.hrefs.append(href)
 
 
-def fetch(url: str) -> tuple[str, bytes]:
+OPENER = build_opener(HTTPCookieProcessor(CookieJar()))
+ANUBIS_CHALLENGE_RE = re.compile(
+    r'<script id="anubis_challenge" type="application/json">(.*?)</script>', re.S
+)
+ANUBIS_PASS_PATH = "/.within.website/x/cmd/anubis/api/pass-challenge"
+
+
+def request_url(url: str) -> tuple[str, bytes]:
     request = Request(
         url,
         headers={"User-Agent": USER_AGENT, "Accept": "application/xml,text/xml,text/html,*/*"},
     )
-    with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
-        return response.geturl(), response.read()
+    try:
+        with OPENER.open(request, timeout=REQUEST_TIMEOUT) as response:
+            return response.geturl(), response.read()
+    except HTTPError as exc:
+        if exc.code != 403:
+            raise
+        return exc.geturl(), exc.read()
+
+
+def solve_anubis(page: bytes, page_url: str) -> str | None:
+    """Return the pass-challenge URL for an Anubis proof-of-work page, if it is one."""
+    match = ANUBIS_CHALLENGE_RE.search(page.decode("utf-8", "replace"))
+    if not match:
+        return None
+    data = json.loads(match.group(1))
+    challenge = data["challenge"]
+    difficulty = int(data["rules"]["difficulty"])
+    if data["rules"].get("algorithm") not in {"fast", "slow", "preact"}:
+        raise ValueError(f"Unsupported Anubis algorithm: {data['rules'].get('algorithm')!r}")
+    prefix = "0" * difficulty
+    seed = challenge["randomData"].encode()
+    started = time.monotonic()
+    nonce = 0
+    while True:
+        digest = hashlib.sha256(seed + str(nonce).encode()).hexdigest()
+        if digest.startswith(prefix):
+            break
+        nonce += 1
+    elapsed_ms = max(int((time.monotonic() - started) * 1000), 1)
+    parts = urlsplit(page_url)
+    query = urlencode(
+        {
+            "id": challenge["id"],
+            "response": digest,
+            "nonce": nonce,
+            "redir": page_url,
+            "elapsedTime": elapsed_ms,
+        }
+    )
+    return f"{parts.scheme}://{parts.netloc}{ANUBIS_PASS_PATH}?{query}"
+
+
+def fetch(url: str) -> tuple[str, bytes]:
+    final_url, body = request_url(url)
+    for _ in range(2):
+        pass_url = solve_anubis(body, final_url)
+        if pass_url is None:
+            return final_url, body
+        final_url, body = request_url(pass_url)
+    if solve_anubis(body, final_url) is not None:
+        raise ValueError("Could not pass the Regesta Imperii bot protection")
+    return final_url, body
 
 
 def local_name(tag: str) -> str:
@@ -153,6 +218,70 @@ def parse_cei(xml_bytes: bytes, page_url: str, entered_url: str) -> dict[str, ob
     return record
 
 
+def strip_tags(fragment: str) -> str:
+    fragment = re.sub(r"</?(?:p|br|div|li)\b[^>]*>", " ", fragment)
+    return " ".join(html.unescape(re.sub(r"<[^>]+>", "", fragment)).split())
+
+
+def month_number(name: str) -> int | None:
+    prefix = name.casefold()[:3]
+    if prefix in MONTH_ALIASES:
+        return MONTH_ALIASES[prefix]
+    return MONTH_PREFIXES.index(prefix) + 1 if prefix in MONTH_PREFIXES else None
+
+
+def parse_german_date(text: str) -> str:
+    dates = []
+    for year, month, day in GERMAN_DATE_RE.findall(text.replace("[", "").replace("]", "")):
+        value = year
+        number = month_number(month) if month else None
+        if number:
+            value += f"-{number:02d}"
+            if day:
+                value += f"-{int(day):02d}"
+        dates.append(value)
+    if not dates:
+        raise ValueError(f"No date found in Regesta Imperii page heading: {text!r}")
+    start, end = min(dates), max(dates)
+    return start if start == end else f"{start}/{end}"
+
+
+def parse_html(page: bytes, entered_url: str) -> dict[str, object]:
+    text = page.decode("utf-8", "replace")
+    head = re.search(r'<div id="head">(.*?)<p class="actionlinks">', text, re.S)
+    summary = re.search(r'<div id="summary">(.*?)</div>', text, re.S)
+    if not head or not summary:
+        raise ValueError("The Regesta Imperii page is not a single record page")
+    citation_node = re.search(r'<p class="departement">\s*<strong>(.*?)</strong>', head.group(1), re.S)
+    citation = strip_tags(citation_node.group(1)).split(" - ", 1)[-1] if citation_node else ""
+    heading = re.search(r"<h3>(.*?)</h3>", head.group(1), re.S)
+    paragraphs = [strip_tags(p) for p in re.findall(r"<p>(.*?)</p>", summary.group(1), re.S)]
+    abstract = "\n\n".join(p for p in paragraphs if p)
+    if not citation or not abstract or not heading:
+        raise ValueError("The Regesta Imperii page has no citation, date or abstract")
+    heading_text = strip_tags(heading.group(1))
+    parts = urlsplit(entered_url)
+    url = urlunsplit(parts._replace(query="", fragment="")) if "/regesten/" in parts.path else entered_url
+    record: dict[str, object] = {
+        "date": parse_german_date(heading_text),
+        "label": ["to review"],
+        "entries": [{"source": citation, "url": url, "german": abstract}],
+    }
+    place = heading_text.split(",", 1)[1].strip() if "," in heading_text else ""
+    if not place and (summary_place := re.match(r"\(([^)]+)\)", abstract)):
+        place = summary_place.group(1)
+    if place:
+        record["place"] = place
+    return record
+
+
+def canonical_url(url: str) -> str:
+    match = UUID_RE.search(urlsplit(url).path)
+    if not match:
+        raise ValueError("No record id found in the Regesta Imperii URL")
+    return f"https://www.regesta-imperii.de/id/{match.group(0).lower()}"
+
+
 def resolve_cei(url: str) -> tuple[str, bytes]:
     page_url, page = fetch(url)
     content_start = page.lstrip()[:100].lower()
@@ -198,7 +327,12 @@ def update_existing(path: Path, incoming: dict[str, object]) -> bool:
     for entry in document.get("entries", []):
         if not isinstance(entry, dict) or entry.get("source") != new_entry.get("source"):
             continue
+        old_urls = entry.get("url", [])
+        urls = [old_urls] if isinstance(old_urls, str) else list(old_urls)
+        new_urls = new_entry["url"] if isinstance(new_entry["url"], list) else [new_entry["url"]]
+        merged = list(dict.fromkeys(urls + new_urls))
         entry.update(new_entry)
+        entry["url"] = merged[0] if len(merged) == 1 else merged
         labels = document.get("label", [])
         labels = [labels] if isinstance(labels, str) else list(labels)
         if "to review" not in labels:
@@ -216,8 +350,12 @@ def create_record(url: str) -> tuple[Path, bool]:
     if not any(path in parsed.path for path in ("/regesten/", "/cei/", "/id/")):
         raise ValueError("Unsupported Regesta Imperii URL path")
 
-    cei_url, cei_xml = resolve_cei(url)
-    record = parse_cei(cei_xml, cei_url, url)
+    try:
+        cei_url, cei_xml = resolve_cei(url)
+        record = parse_cei(cei_xml, cei_url, url)
+    except (HTTPError, ValueError):
+        _, page = fetch(canonical_url(url))
+        record = parse_html(page, url)
     DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
     paths = dated_document_paths(str(record["date"]))
     for path in paths:
