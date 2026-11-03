@@ -112,10 +112,12 @@ python3 scripts/downloader_universal.py 'RECORD_URL'
 python3 scripts/downloader_universal.py --list
 ```
 
-GDA Bayern and Landesarchiv Baden-Württemberg are supported. Their downloaders
-create a date-named document JSON entry labeled `to review`, with the catalog
-citation, German catalog text, and image links when available. Review the
-generated entry before using it as a completed document record.
+GDA Bayern, Landesarchiv Baden-Württemberg, and Regesta Imperii are supported.
+Their downloaders create a date-named document JSON entry labeled `to review`,
+with the catalog citation, German catalog text, and image links when available.
+Regesta Imperii URLs can be HTML record links, persistent `/id/` links, or CEI
+REST source links. Review the generated entry before using it as a completed
+document record.
 
 ### Landesarchiv images
 
