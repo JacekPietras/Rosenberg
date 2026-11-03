@@ -27,7 +27,16 @@
       ],
       "img": [
         {
-          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035789_00001/full/max/0/default.jpg"
+          "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035789_00001/full/max/0/default.jpg",
+          "regions": [
+            {
+              "x": 0.0804,
+              "y": 0.103,
+              "width": 0.8214,
+              "height": 0.6775,
+              "name": "text"
+            }
+          ]
         },
         {
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035789_00002/full/max/0/default.jpg",

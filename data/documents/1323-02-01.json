@@ -1,12 +1,11 @@
 {
   "date": "1323-02-01",
-  "label": "to review",
   "entries": [
     {
       "source": "StiftsA U 1697; Thiel: Urkundenbuch, S. 614–616 (Nr. 298)",
       "url": "https://www.bavarikon.de/object/bav%3AAAB-URK-00000BAV80035799?cq=&lang=de&p=1",
       "german": "Ritter Eberhard von Rosenberg, Vogt, Schultheiß und Schöffen von (Tauber-)Bischofsheim beurkunden, dass Wignand, Sohn des Brundward von Eiersheim, seine Ehefrau Katharina und beider genannte zwei Töchter und Eidame an Dekan und Kapitel von Aschaffenburg für 24 Pfund Heller aus genannten Weinbergen und Äckern zu (Tauber-)Bischofsheim eine Gült von 2 Pfund Hellern zur Präsenz verkauften.",
-      "english": "Eberhard von Rosenberg, Ritter, bailiff, the mayor, and the aldermen of (Tauber-)Bischofsheim certify that Wignand, son of Brundward von Eiersheim, his wife Katharina, their two named daughters, and sons-in-law sold to the dean and chapter of Aschaffenburg, for 24 pounds Heller, an annual rent of 2 pounds Heller from specified vineyards and fields in (Tauber-)Bischofsheim for the chapter's common fund.",
+      "english": "Eberhard von Rosenberg, Ritter, Vogt, the mayor, and the aldermen of (Tauber-)Bischofsheim certify that Wignand, son of Brundward von Eiersheim, his wife Katharina, their two named daughters, and sons-in-law sold to the dean and chapter of Aschaffenburg, for 24 pounds Heller, an annual rent of 2 pounds Heller from specified vineyards and fields in (Tauber-)Bischofsheim for the chapter's common fund.",
       "facts": [
         {
           "person": "vogt_zu_Durn",
@@ -30,6 +29,15 @@
               "wideningRotation": 0,
               "rotation": 3,
               "type": "swans"
+            }
+          ],
+          "regions": [
+            {
+              "x": 0.0911,
+              "y": 0.0861,
+              "width": 0.8173,
+              "height": 0.4573,
+              "name": "text"
             }
           ]
         },

@@ -1,8 +1,5 @@
 {
   "date": "1329-08-31",
-  "label": [
-    "to review"
-  ],
   "place": "Königheim",
   "entries": [
     {
@@ -29,6 +26,15 @@
               "wideningRotation": 0,
               "rotation": -45,
               "type": "helm"
+            }
+          ],
+          "regions": [
+            {
+              "x": 0.0695,
+              "y": 0.0628,
+              "width": 0.8533,
+              "height": 0.4858,
+              "name": "text"
             }
           ]
         },

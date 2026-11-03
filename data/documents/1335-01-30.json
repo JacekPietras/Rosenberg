@@ -1,8 +1,5 @@
 {
   "date": "1335-01-30",
-  "label": [
-    "to review"
-  ],
   "place": "Königheim",
   "entries": [
     {
@@ -32,6 +29,15 @@
               "wideningRotation": 0,
               "rotation": 9,
               "type": "swans"
+            }
+          ],
+          "regions": [
+            {
+              "x": 0.0873,
+              "y": 0.0972,
+              "width": 0.8177,
+              "height": 0.5952,
+              "name": "text"
             }
           ]
         },

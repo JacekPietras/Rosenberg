@@ -1,6 +1,5 @@
 {
   "date": "1323-02-01",
-  "label": "to review",
   "entries": [
     {
       "source": "StiftsA U 1688; Thiel: Urkundenbuch, S. 616–618 (Nr. 299)",
@@ -30,6 +29,15 @@
               "wideningRotation": -1,
               "rotation": -12,
               "type": "swans"
+            }
+          ],
+          "regions": [
+            {
+              "x": 0.09,
+              "y": 0.0946,
+              "width": 0.8272,
+              "height": 0.4961,
+              "name": "text"
             }
           ]
         },
