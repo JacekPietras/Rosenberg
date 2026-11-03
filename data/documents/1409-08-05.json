@@ -30,8 +30,17 @@
               "size": 0.12450000000000003,
               "width": 0.1,
               "wideningRotation": 2,
-              "rotation": 9,
+              "rotation": 11,
               "type": "full"
+            }
+          ],
+          "regions": [
+            {
+              "x": 0.1563,
+              "y": 0.2105,
+              "width": 0.7099,
+              "height": 0.4048,
+              "name": "text"
             }
           ]
         },
