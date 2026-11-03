@@ -14,6 +14,7 @@ REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 DOWNLOADERS = {
     "gda.bayern.de": "downloader_gda_bayern.py",
     "landesarchiv-bw.de": "downloader_landesarchiv.py",
+    "regesta-imperii.de": "downloader_regesta_imperii.py",
 }
 
 
