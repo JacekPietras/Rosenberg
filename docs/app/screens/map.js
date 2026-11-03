@@ -5,6 +5,7 @@ import {
   hrrBuildWarp,
   hrrBuildInverseWarp,
 } from '../map/warp.js';
+import { factPersonMatch, factText, isTypedFact } from '../rendering/facts.js';
 
 const HRR_MAPS = [
   { id: '1378', label: '1378', image: 'assets/Germany_1378_map.jpg', width: 3215, height: 2514, credit: 'Historical base map: "Germany at the death of Emperor Charles IV, 1378," revised by Karl Wolf, from H.F. Helmolt\'s <a href="https://pl.wikipedia.org/wiki/Plik:Germany_1378_map.jpg" target="_blank" rel="noreferrer">History of the World</a>, Vol. VII (Dodd Mead, 1902). Public domain in the United States. Place positions are approximate.' },
@@ -60,22 +61,26 @@ function placesMentionedForPerson(documents, places, people, personQuery, partic
   if (!selectedPerson && !personByName) return found;
   const queryTokens = (String(personQuery).match(/[\p{L}\p{N}]+/gu) || []).map(normalize)
     .filter((token) => token && !particles.includes(token));
+  const addPlacesFromFact = (fact, inheritedMetadata = '') => {
+    const rawFactText = typeof fact === 'string' ? fact : String(fact?.text || '');
+    const direct = factPersonMatch(fact, personQuery, people) === 'direct'
+      || (selectedPerson && rawFactText.includes(`[${selectedPerson.id}]`));
+    const rawText = isTypedFact(fact)
+      ? factText(fact, people)
+      : typeof fact === 'string' ? fact : String(fact?.text || fact?.content || '');
+    const available = new Set(`${rawText} ${inheritedMetadata}`.match(/[\p{L}\p{N}]+/gu)?.map(normalize) || []);
+    const nameMatch = !selectedPerson && queryTokens.length > 0 && queryTokens.every((token) => available.has(token));
+    if (!direct && !nameMatch) return;
+    for (const place of places) {
+      const variants = (place.variations || [place.name]).map((name) => (String(name).match(/[\p{L}\p{N}]+/gu) || []).map(normalize)).filter((tokens) => tokens.length);
+      if (variants.some((variant) => variant.every((token) => available.has(token)))) found.add(place.name);
+    }
+  };
   const visit = (value, inheritedMetadata = '') => {
     if (Array.isArray(value)) { value.forEach((child) => visit(child, inheritedMetadata)); return; }
     if (!value || typeof value !== 'object') return;
     const metadata = `${inheritedMetadata} ${['place', 'title', 'name', 'label'].map((key) => value[key] || '').join(' ')}`;
-    for (const fact of Array.isArray(value.facts) ? value.facts : []) {
-      const text = typeof fact === 'string' ? fact : fact?.text || '';
-      const identifiers = text.match(/\[([^\]]+)\]/g) || [];
-      const directIdMatch = selectedPerson && identifiers.some((identifier) => normalize(identifier.slice(1, -1)) === normalize(selectedPerson.id));
-      const available = new Set(`${text} ${metadata}`.match(/[\p{L}\p{N}]+/gu)?.map(normalize) || []);
-      const nameMatch = queryTokens.length > 0 && queryTokens.every((token) => available.has(token));
-      if (selectedPerson ? !directIdMatch : !nameMatch) continue;
-      for (const place of places) {
-        const variants = (place.variations || [place.name]).map((name) => (String(name).match(/[\p{L}\p{N}]+/gu) || []).map(normalize)).filter((tokens) => tokens.length);
-        if (variants.some((variant) => variant.every((token) => available.has(token)))) found.add(place.name);
-      }
-    }
+    for (const fact of Array.isArray(value.facts) ? value.facts : []) addPlacesFromFact(fact, metadata);
     for (const [key, child] of Object.entries(value)) if (key !== 'facts' && child && typeof child === 'object') visit(child, metadata);
   };
   documents.forEach((document) => visit(document));
