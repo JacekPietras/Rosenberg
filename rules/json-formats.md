@@ -101,10 +101,15 @@ support. An ID-like string that matches no ID is a warning.
 
 | Field | Content |
 | --- | --- |
-| `german`, `latin` | Original source text |
-| `summary` | Archival summary (regest) of the original, usually modern German |
-| `abstract` | English summary of the original |
-| `english` | English translation; the source itself when it is the only text field |
+| `german`, `latin` | Original document text when available; otherwise the German archival abstract when no full transcription is available |
+| `english` | Normalized English translation of the original text, or English translation of the German abstract when the original is not transcribed |
+| `summary` | The abstract provided by the archive webpage, retained only when the document is transcribed (`transcribed: true`) |
+
+The `abstract` field must never be used. Do not put an archive-provided
+abstract in `german` or `latin` when a full transcription is available; keep it
+in `summary` instead. When no full transcription is available, put the German
+abstract in `german` or `latin` and its normalized English translation in
+`english`; omit `summary` unless the document is marked transcribed.
 
 In book and document text, wrap a passage in single backticks to display its
 Latin letters as Unicode Fraktur, for example `` `Ebirhardus` `` renders as
