@@ -9,8 +9,8 @@
 - [Heidelberg University Library digital collections](https://www.ub.uni-heidelberg.de/Englisch/helios/digi/digilit.html)
 - [Baden State Library](https://www.blb-karlsruhe.de/)
 - [Münchener Digitalisierungs Zentrum](https://www.digitale-sammlungen.de/en/search)
-- [Deutsche Digitale Bibliothek](https://www.deutsche-digitale-bibliothek.de)
 - [Szukaj w Archiwach](https://www.szukajwarchiwach.gov.pl/de/wyszukiwarka)
+- [Landesarchiv NRW](https://www.archive.nrw.de/)
 
 # Small
 
@@ -21,3 +21,4 @@
 
 - [Archivportal-D](https://www.archivportal-d.de/suche)
 - [Bavarikon](https://www.bavarikon.de/de/suche)
+- [Deutsche Digitale Bibliothek](https://www.deutsche-digitale-bibliothek.de)
