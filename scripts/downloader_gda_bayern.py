@@ -104,17 +104,54 @@ def iso_date(laufzeit: str) -> str:
     raise ValueError(f"Could not determine the document date from Laufzeit: {laufzeit!r}")
 
 
-def output_path(date: str) -> Path:
+def dated_document_paths(date: str) -> list[Path]:
     stem = re.sub(r"[^0-9-]+", "_", date)
-    path = DOCUMENT_DIR / f"{stem}.json"
-    suffix = 2
-    while path.exists():
-        path = DOCUMENT_DIR / f"{stem}_{suffix}.json"
-        suffix += 1
-    return path
+    pattern = re.compile(rf"{re.escape(stem)}(?:_(\d+))?\.json$")
+    paths = [path for path in DOCUMENT_DIR.glob(f"{stem}*.json") if pattern.fullmatch(path.name)]
+    return sorted(
+        paths,
+        key=lambda path: (int(pattern.fullmatch(path.name).group(1) or 1), path.name),
+    )
 
 
-def create_record(url: str) -> Path:
+def next_output_path(date: str, existing_paths: list[Path]) -> Path:
+    stem = re.sub(r"[^0-9-]+", "_", date)
+    if not existing_paths:
+        return DOCUMENT_DIR / f"{stem}.json"
+    pattern = re.compile(rf"{re.escape(stem)}(?:_(\d+))?\.json$")
+    suffixes = [
+        int(match.group(1))
+        for path in existing_paths
+        if (match := pattern.fullmatch(path.name)) and match.group(1)
+    ]
+    return DOCUMENT_DIR / f"{stem}_{max(suffixes, default=1) + 1}.json"
+
+
+def update_existing(path: Path, source: str, generated_entry: dict[str, object]) -> bool:
+    document = json.loads(path.read_text(encoding="utf-8"))
+    for entry in document.get("entries", []):
+        if not isinstance(entry, dict) or entry.get("source") != source:
+            continue
+        entry["url"] = generated_entry["url"]
+        if "german" in generated_entry:
+            entry["german"] = generated_entry["german"]
+        elif document.get("transcribed") is not True:
+            entry.pop("german", None)
+        if "img" in generated_entry:
+            entry["img"] = generated_entry["img"]
+        else:
+            entry.pop("img", None)
+        labels = document.get("label", [])
+        labels = [labels] if isinstance(labels, str) else list(labels)
+        if "to review" not in labels:
+            labels.append("to review")
+        document["label"] = labels
+        path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        return True
+    return False
+
+
+def create_record(url: str) -> tuple[Path, bool]:
     from urllib.parse import urlsplit
 
     parsed_url = urlsplit(url)
@@ -133,18 +170,28 @@ def create_record(url: str) -> Path:
         raise ValueError("The GDA page has no Bestellsignatur field")
 
     german = strip_rtf(subjects[0]) if subjects else ""
-    record = {
-        "date": iso_date(laufzeit[0]),
-        "label": ["to review"],
-        "entries": [{"source": citations[0], "url": url, **({"german": german} if german else {})}],
-    }
+    date = iso_date(laufzeit[0])
+    generated_entry: dict[str, object] = {"source": citations[0], "url": url}
+    if german:
+        generated_entry["german"] = german
     images = image_urls(page, url)
     if images:
-        record["entries"][0]["img"] = [{"src": image_url} for image_url in images]
+        generated_entry["img"] = [{"src": image_url} for image_url in images]
+
     DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
-    path = output_path(record["date"])
+    existing_paths = dated_document_paths(date)
+    for path in existing_paths:
+        if update_existing(path, citations[0], generated_entry):
+            return path, True
+
+    record = {
+        "date": date,
+        "label": ["to review"],
+        "entries": [generated_entry],
+    }
+    path = next_output_path(date, existing_paths)
     path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return path
+    return path, False
 
 
 def main() -> int:
@@ -152,11 +199,14 @@ def main() -> int:
     parser.add_argument("url", help="GDA Bayern archive record URL")
     args = parser.parse_args()
     try:
-        path = create_record(args.url)
+        path, updated = create_record(args.url)
     except (OSError, ValueError) as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
-    print(path.relative_to(REPOSITORY_ROOT))
+    if updated:
+        print(f"Only updated existing file: {path.relative_to(REPOSITORY_ROOT)}")
+    else:
+        print(path.relative_to(REPOSITORY_ROOT))
     return 0
 
 
