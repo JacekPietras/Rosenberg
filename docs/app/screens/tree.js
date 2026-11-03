@@ -33,7 +33,12 @@ function personFacts(person, documentRecords, people) {
       if (seen.has(key)) continue;
       seen.add(key);
       const doc = documents.get(source.path);
-      if (doc) add(resolveEvidencePointer(doc, source.pointer), date, source.path, source.pointer);
+      if (doc) {
+        try { add(resolveEvidencePointer(doc, source.pointer), date, source.path, source.pointer); }
+        catch (error) {
+          if (error.message !== 'Stale source pointer') throw error;
+        }
+      }
     }
   } else {
     for (const [path, doc] of documentRecords) {

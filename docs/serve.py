@@ -252,7 +252,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                     # Data edited during a build only requires building again.
                     output = []
                     for _attempt in range(3):
-                        process = subprocess.Popen(command, cwd=ROOT, stdout=subprocess.PIPE,
+                        process = subprocess.Popen(command, cwd=ROOT, stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
                                                    stderr=subprocess.STDOUT, text=True, bufsize=1)
                         lines = queue.Queue()
                         def read_output():
@@ -354,6 +354,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                     [sys.executable, str(Path(__file__).resolve())],
                     cwd=ROOT,
                     env=environment,
+                    stdin=subprocess.DEVNULL,
                     stdout=subprocess.DEVNULL,
                     stderr=subprocess.DEVNULL,
                     start_new_session=True,
