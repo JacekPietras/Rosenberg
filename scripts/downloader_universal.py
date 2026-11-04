@@ -17,6 +17,7 @@ DOWNLOADERS = {
     "regesta-imperii.de": "downloader_regesta_imperii.py",
     "archive.nrw.de": "downloader_archive_nrw.py",
     "arcinsys.hessen.de": "downloader_arcinsys_hessen.py",
+    "monasterium.net": "downloader_monasterium.py",
 }
 
 
