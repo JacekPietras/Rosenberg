@@ -1,0 +1,23 @@
+{
+  "date": "1391-10-01",
+  "transcribed": true,
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Die Rektorbücher der Universität Heidelberg, Band 1: 1386–1410 (zugleich das erste Amtsbuch der Juristischen Fakultät), Heidelberg 1986–1999, fol. 48r",
+      "latin": "[48r] Post hec prima octobris missis advocato pacis vicedomino et magistro curie in Heydelberg ad cives et magistros de universitate concordati et inventi fuerunt quidam articuli pro bono pacis observandi, qui una cum privilegiis nostris translati in vulgare advocato pacis fuerunt presentati, ut fieret littera sigillata in futuri roboris firmitatem.",
+      "summary": "(1391) Okt. 1: Zwischen dem als „advocatus pacis“ fungierenden Viztum (Konrad von Rosenberg), dem Hofmeister (wohl Dieter von Handschuhsheim), den Bürgern und den Magistern der Universität werden Artikel zur Erhaltung des öffentlichen Friedens festgelegt und zusammen mit der deutschen Übersetzung der Universitätsprivilegien dem „advocatus pacis“ zur Besiegelung vorgelegt.",
+      "english": "After this, on the first of October, the advocate of the peace, the Vizedom and the master of the court having been sent to Heidelberg to the citizens and masters of the university, certain articles for the preservation of peace were agreed and drawn up; these, translated into the vernacular together with our privileges, were presented to the advocate of the peace, so that a sealed letter might be made for lasting validity.",
+      "facts": [
+        {
+          "person": "vitztum_zu_Heidelberg",
+          "personTitle": [
+            "Vizedom"
+          ],
+          "type": "generic",
+          "content": "acted as advocatus pacis and, with the master of the court, was presented with articles for the preservation of peace agreed between the citizens and the masters of the university, for a sealed letter."
+        }
+      ]
+    }
+  ]
+}
