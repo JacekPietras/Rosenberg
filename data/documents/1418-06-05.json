@@ -1,6 +1,6 @@
 {
   "date": "1418-06-05",
-  "label": "Hessen",
+  "label": "to review",
   "entries": [
     {
       "source": "ISG FFM, H.06.08, 39",
@@ -15,16 +15,19 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._56/800/hstam_urk._56_nr_800_siegel_1.jpg"
         },
         {
-          "src": "https://digitalisate-he.arcinsys.de/hstam/urk._56/800/hstam_urk._56_nr_800_siegel_2.jpg"
+          "src": "https://digitalisate-he.arcinsys.de/hstam/urk._56/800/hstam_urk._56_nr_800_siegel_2.jpg",
+          "deleted": "true"
         },
         {
-          "src": "https://digitalisate-he.arcinsys.de/hstam/urk._56/800/hstam_urk._56_nr_800_siegel_3.jpg"
+          "src": "https://digitalisate-he.arcinsys.de/hstam/urk._56/800/hstam_urk._56_nr_800_siegel_3.jpg",
+          "deleted": "true"
         },
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._56/800/hstam_urk._56_nr_800_siegel_4.jpg"
         },
         {
-          "src": "https://digitalisate-he.arcinsys.de/hstam/urk._56/800/hstam_urk._56_nr_800_v.jpg"
+          "src": "https://digitalisate-he.arcinsys.de/hstam/urk._56/800/hstam_urk._56_nr_800_v.jpg",
+          "deleted": "true"
         }
       ]
     }
