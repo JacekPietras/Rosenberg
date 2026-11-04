@@ -25,6 +25,38 @@
           "content": "issued the abbot a letter with the district court seal recording the Landschranne’s judgment at Amberg."
         }
       ]
+    },
+    {
+      "source": "Monumenta Boica 24, Monasterium Ensdorf, Castel, Nr. CXXVIII",
+      "url": "https://www.bavarikon.de/object/bav:BSB-MDZ-00000BSB10721520",
+      "latin": "Num. CXXVIII. Adjudicatio census, facta a Vicedomino de Amberg in favorem Monasterii. ao. 1367.",
+      "german": "Ich Conrad von Rosenberg Vitztum ze Amberg bechenn offenbar mit disem brief als mein Herr Abbt Conrat von kastel vnd Wirnhir der kegelhaimer von Vilshof vor mir vf der Lantschrann ze Amberg mit einander gereht habent vmb den Hof ze Hullach. da hat mein Herr der Abbt behabt mit Volg mit Vrag mit Vrtail vnd mit dem rehten als reht ist. all di weil der egenant Hof ze Hullach. Wirnhir dem kegelhaimer gilt ain pfenning oder mer. so sol dem Gotzhaws ze kastel all iar dar ouz geuallen fünf schilling Regenspurger pfenning vnd der zehent klainer vnd grozzer. vnd darvmb mag mein Herr der Abbt oder sein Vogt pfenten nach dez briefs sag. den er vor darüber hat darzu sol ich in oder wer meins Herrn Oberster Amptman ist schützen vnd schermen vnd beholfen sein als der lantschrann reht ist. dez ward im von gerihts wegen ain brief ertailt mit dez Lantgerichts Insigel daz dar an hangt der geben ist do man zalt von kristes gepurt drewtzehen hundert iar vnd darnach in dem Siben vnd sechtzigsten Jar an dem nehsten Montag nach Sand Jacobs tag dez heyligen zwelfpoten. (Deest Sigillum.)",
+      "english": "I, Konrad von Rosenberg, Vitztum zu Amberg, acknowledge openly with this charter that my lord Abbot Konrad of Kastel and Wirnhir the Kegelhaimer of Vilshof went to law with each other before me at the Landschranne at Amberg concerning the farm at Hüllach. There my lord the abbot prevailed by pursuit, by inquiry, by judgment and by due process of law: for as long as the aforesaid farm at Hüllach pays Wirnhir the Kegelhaimer one penny or more, the monastery at Kastel shall receive from it every year five shillings of Regensburg pennies and the small and great tithe. For this my lord the abbot or his bailiff may distrain according to the tenor of the charter he already holds on it, and I, or whoever is my lord's chief officer, shall protect, defend and assist him as is the law of the Landschranne. A charter was issued to him on this by the court with the seal of the Landgericht hanging from it. Given in the year of Christ's birth thirteen hundred and thereafter in the sixty-seventh year, on the next Monday after the day of St. James the holy apostle. (The seal is missing.)",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitztum ze Amberg"
+          ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitztum ze Amberg"
+          ],
+          "type": "generic",
+          "content": "declared that Abbot Konrad of Kastel and Wirnhir the Kegelhaimer of Vilshof went to law before him at the Landschranne at Amberg over the farm at Hüllach, and that the abbot prevailed."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitztum ze Amberg"
+          ],
+          "type": "generic",
+          "content": "undertook to protect and defend the abbot or whoever is his chief officer, as is the law of the Landschranne."
+        }
+      ]
     }
   ]
 }
