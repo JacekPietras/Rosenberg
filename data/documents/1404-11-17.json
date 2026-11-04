@@ -59,6 +59,31 @@
           "content": "undertook in 1364 to protect and defend the abbot and convent of Kastel in the Mittermühle and Görenmühle on behalf of the Landschranne."
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 11 (Regesta sive rerum Boicarum autographa ad annum usque MCCC. 11 = Continuatio 7), 17 Nov. 1404",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb11746847",
+      "german": "Wilhelm Raydenbucher Ritter derzeit Landrichter zu Lengvelt erneut dem Kloster Kastel einen Gerichtsbrief des Cunrad von Rosenberg Vitztum zu Amberg, inhaltlich dessen genanntes Kloster im Jahre 1364 in Nutz und Gewer der Mittermül und der Görenmül bey Wesenacher an der Laber gesetzt worden ist. G. am Montag nach Marteins Tag. (c. Sig)",
+      "english": "Wilhelm Raydenbucher, Ritter, at present Landrichter at Lengvelt, renews for the monastery of Kastel a court charter of Cunrad von Rosenberg, Vitztum zu Amberg, according to which the said monastery was put in use and possession of the Mittermühle and the Görenmühle near Wesenacher on the Laber in the year 1364. Given on the Monday after St. Martin's day. (With seal.)",
+      "facts": [
+        {
+          "person": "Wilhelm Raydenbucher",
+          "personTitle": [
+            "Ritter",
+            "Landrichter zu Lengvelt"
+          ],
+          "type": "generic",
+          "content": "renewed for the monastery of Kastel the court charter of Konrad von Rosenberg, Vitztum zu Amberg, by which the monastery was put in use and possession of the Mittermühle and Görenmühle near Wesenacher on the Laber in 1364."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitztum zu Amberg"
+          ],
+          "type": "generic",
+          "content": "issued in 1364 a court charter by which the monastery of Kastel was put in use and possession of the Mittermühle and Görenmühle near Wesenacher on the Laber."
+        }
+      ]
     }
   ]
 }

@@ -16,6 +16,22 @@
           "content": "received the small and great tithes in Lohr as a fief from King Ruprecht."
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 11 (Regesta sive rerum Boicarum autographa ad annum usque MCCC. 11 = Continuatio 7), listed under 5 Oct. 1401",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb11746847",
+      "german": "Ruprecht römischer König belehnt Hans von Rosenberg Ritter, mit dem grossen und kleinen Zehenden in dem Dorfe Lor zwischen Rotenburg an der Tauber und Insingen. G. zu Botzen auf den Donnerstag nach sant Franciscen des heiligen Bichterstag.",
+      "english": "Ruprecht, King of the Romans, enfeoffs Hans von Rosenberg, Ritter, with the great and small tithes in the village of Lor between Rothenburg an der Tauber and Insingen. Given at Bolzano on the Thursday after the day of St. Francis the holy confessor.",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "was enfeoffed by King Ruprecht with the great and small tithes in the village of Lor between Rothenburg an der Tauber and Insingen."
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,36 @@
+{
+  "date": "1378-11-30",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 10 (Regesta sive rerum Boicarum autographa ad annum usque MCCC. 10 = Continuatio 6), 30 Nov. 1378",
+      "german": "Ott der Aderzhauser zu Lengenfeld quittirt 24 Pfd. Regensb. Pfeninge, welche ihm für seine von wegen des Herzogs Ruprecht erlittenen Schäden, durch Cunrad von Rosenberg Vizdom zu Amberg entrichtet worden. D. eod. d. (c. Sig.)",
+      "english": "Ott der Aderzhauser of Lengenfeld acknowledges receipt of 24 pounds of Regensburg pennies, which were paid to him by Konrad von Rosenberg, Vizdom zu Amberg, for the damages he suffered on behalf of Duke Ruprecht. Dated the same day. (With seal.)",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vizdom zu Amberg"
+          ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vizdom zu Amberg"
+          ],
+          "type": "generic",
+          "content": "paid 24 pounds of Regensburg pennies to Ott der Aderzhauser of Lengenfeld for damages he suffered on behalf of Duke Ruprecht."
+        },
+        {
+          "person": "Ott Aderzhauser",
+          "personTitle": [
+            "zu Lengenfeld"
+          ],
+          "type": "generic",
+          "content": "acknowledged receipt of 24 pounds of Regensburg pennies paid by Konrad von Rosenberg, Vizdom zu Amberg, for damages suffered on behalf of Duke Ruprecht."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "date": "1381-11-18",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 10 (Regesta sive rerum Boicarum autographa ad annum usque MCCC. 10 = Continuatio 6), 18 Nov. 1381",
+      "german": "Conrad von Rosenberg Vizthum von Amberg, setzt die Abtissin von Pülenhofen in den Besitz der drei daselbst gelegenen Hofstätten. G. Mondtag vor St. Elspethen-Tag.",
+      "english": "Konrad von Rosenberg, Vizthum von Amberg, puts the abbess of Pülenhofen in possession of the three house plots located there. Given on the Monday before St. Elisabeth's day.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vizthum von Amberg"
+          ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vizthum von Amberg"
+          ],
+          "type": "generic",
+          "content": "put the abbess of Pülenhofen in possession of the three house plots located at Pülenhofen."
+        }
+      ]
+    }
+  ]
+}
