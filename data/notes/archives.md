@@ -4,7 +4,7 @@
 - [Baden-Württemberg State Archives](https://www2.landesarchiv-bw.de/ofs21/home.php)
 - [Bavarian State Archives](https://www.gda.bayern.de/gvl/archive.xhtml?tx_gwrepertories_frontend%5Baction%5D=search&tx_gwrepertories_frontend%5Bcontroller%5D=Archive)
 - [Regesta Imperii](https://www.regesta-imperii.de/regesten/suche.html)
-- [Monasterium.net](https://www.icar-us.eu/en/cooperation/online-portals/monasterium-net/)
+- [Monasterium.net](https://www.monasterium.net/mom/search)
 - [Ingrossaturbücher](https://www.ingrossaturbuecher.de)
 - [Heidelberg University Library digital collections](https://www.ub.uni-heidelberg.de/Englisch/helios/digi/digilit.html)
 - [Baden State Library](https://www.blb-karlsruhe.de/)
