@@ -42,6 +42,50 @@ class SearchTests(unittest.TestCase):
             self.assertEqual(result, path)
             self.assertEqual(json.loads(path.read_text()), original)
 
+    def test_matching_text_merges_citations_across_fields_and_dates(self):
+        for field in ('german', 'latin', 'summary'):
+            with self.subTest(field=field), tempfile.TemporaryDirectory() as directory:
+                path = Path(directory) / '1399.json'
+                original = {'date': '1399', 'entries': [{'source': 'old', 'url': 'old-url',
+                    field: 'The same   text', 'english': 'Keep this translation'}]}
+                path.write_text(json.dumps(original))
+                incoming = {'date': '1400', 'entries': [{'source': 'new', 'url': 'new-url',
+                    'german': 'The same text'}]}
+                with patch.object(downloader, 'DOCUMENT_DIR', Path(directory)):
+                    result, matched = downloader.save_record(incoming, skip_existing=True)
+                    self.assertEqual(downloader.save_record(incoming, skip_existing=True), (path, True))
+                self.assertTrue(matched)
+                self.assertEqual(result, path)
+                entry = json.loads(path.read_text())['entries'][0]
+                self.assertEqual(entry['source'], ['old', 'new'])
+                self.assertEqual(entry['url'], ['old-url', 'new-url'])
+                self.assertEqual(entry['english'], 'Keep this translation')
+                self.assertEqual(entry[field], 'The same   text')
+
+    def test_existing_source_in_list_is_skipped(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / '1400.json'
+            original = {'date': '1400', 'entries': [{'source': ['first', 'second'],
+                'url': ['first-url', 'second-url'], 'german': 'Reviewed text'}]}
+            path.write_text(json.dumps(original))
+            incoming = {'date': '1400', 'entries': [{'source': 'second',
+                'url': 'second-url', 'german': 'Different text'}]}
+            with patch.object(downloader, 'DOCUMENT_DIR', Path(directory)):
+                result, matched = downloader.save_record(incoming, skip_existing=True)
+            self.assertEqual((result, matched), (path, True))
+            self.assertEqual(json.loads(path.read_text()), original)
+            self.assertEqual(list(Path(directory).glob('*.json')), [path])
+
+    def test_empty_text_does_not_merge(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / '1400.json'
+            path.write_text(json.dumps({'date': '1400', 'entries': [{'source': 'old', 'german': ''}]}))
+            incoming = {'date': '1400', 'entries': [{'source': 'new', 'german': ''}]}
+            with patch.object(downloader, 'DOCUMENT_DIR', Path(directory)):
+                result, matched = downloader.save_record(incoming, skip_existing=True)
+            self.assertFalse(matched)
+            self.assertNotEqual(result, path)
+
     def test_non_archival_result_has_no_download_url(self):
         self.assertIsNone(search.record_url({'columnKeyActions': [{'key': 'rowActionKeyShowItem',
             'detailId': 1, 'additionalParameters': {'itemPrefix': 'b'}}]}))

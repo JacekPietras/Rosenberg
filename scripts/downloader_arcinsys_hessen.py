@@ -119,22 +119,51 @@ def dated_paths(date: str) -> list[Path]:
                   key=lambda p: (int(pattern.fullmatch(p.name).group(1) or 1), p.name))
 
 
+def as_list(value: object) -> list:
+    return value if isinstance(value, list) else [value] if value else []
+
+
+def matching_texts(entry: dict) -> set[str]:
+    return {" ".join(value.split()) for key in ("german", "latin", "summary")
+            if isinstance((value := entry.get(key)), str) and value.strip()}
+
+
 def save_record(record: dict[str, object], skip_existing: bool = False) -> tuple[Path, bool]:
     date = str(record["date"])
     paths = dated_paths(date)
     incoming = record["entries"][0]
+    # First find an existing citation on this date, even when it is in an array.
     for path in paths:
         document = json.loads(path.read_text(encoding="utf-8"))
         for entry in document.get("entries", []):
-            if isinstance(entry, dict) and entry.get("source") == incoming.get("source"):
+            if isinstance(entry, dict) and incoming.get("source") in as_list(entry.get("source")):
                 if skip_existing:
                     return path, True
-                entry.update(incoming)
-                labels = document.get("label", [])
-                labels = [labels] if isinstance(labels, str) else list(labels)
+                # Preserve any other citations and links on a previously merged entry.
+                for key, value in incoming.items():
+                    if key not in ("source", "url"):
+                        entry[key] = value
+                labels = as_list(document.get("label"))
                 if "to review" not in labels:
                     labels.append("to review")
                 document["label"] = labels
+                path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                return path, True
+    # Exact content can identify the same document even if date precision differs.
+    texts = matching_texts(incoming)
+    if texts:
+        for path in sorted(DOCUMENT_DIR.glob("*.json")):
+            document = json.loads(path.read_text(encoding="utf-8"))
+            for entry in document.get("entries", []):
+                if not isinstance(entry, dict) or not texts.intersection(matching_texts(entry)):
+                    continue
+                for key in ("source", "url"):
+                    old = as_list(entry.get(key))
+                    for value in as_list(incoming.get(key)):
+                        if value not in old:
+                            old.append(value)
+                    if old:
+                        entry[key] = old[0] if len(old) == 1 else old
                 path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
                 return path, True
     stem = re.sub(r"[^0-9-]+", "_", date)
@@ -192,7 +221,7 @@ def main() -> int:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
     if updated and args.skip_existing:
-        print(f"Skipped existing file: {path.relative_to(REPOSITORY_ROOT)}")
+        print(f"Existing or merged file: {path.relative_to(REPOSITORY_ROOT)}")
         return 0
     print(f"Only updated existing file: {path.relative_to(REPOSITORY_ROOT)}" if updated else path.relative_to(REPOSITORY_ROOT))
     return 0

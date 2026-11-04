@@ -121,12 +121,12 @@ document record.
 
 ### Search Arcinsys Hessen
 
-List catalogue results, or download the archival records through the existing
-universal downloader (created entries require review):
+Search and download archival records through the existing universal downloader
+(created entries require review), or list catalogue results without downloading:
 
 ```text
 python3 scripts/search_arcinsys_hessen.py 'Eberhard von Rosenberg'
-python3 scripts/search_arcinsys_hessen.py 'Eberhard von Rosenberg' --limit 20
+python3 scripts/search_arcinsys_hessen.py 'Eberhard von Rosenberg' --limit 20 --list-only
 python3 scripts/search_arcinsys_hessen.py 'Eberhard Rosenberg' --download
 ```
 
