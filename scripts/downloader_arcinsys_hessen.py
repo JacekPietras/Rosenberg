@@ -119,7 +119,7 @@ def dated_paths(date: str) -> list[Path]:
                   key=lambda p: (int(pattern.fullmatch(p.name).group(1) or 1), p.name))
 
 
-def save_record(record: dict[str, object]) -> tuple[Path, bool]:
+def save_record(record: dict[str, object], skip_existing: bool = False) -> tuple[Path, bool]:
     date = str(record["date"])
     paths = dated_paths(date)
     incoming = record["entries"][0]
@@ -127,6 +127,8 @@ def save_record(record: dict[str, object]) -> tuple[Path, bool]:
         document = json.loads(path.read_text(encoding="utf-8"))
         for entry in document.get("entries", []):
             if isinstance(entry, dict) and entry.get("source") == incoming.get("source"):
+                if skip_existing:
+                    return path, True
                 entry.update(incoming)
                 labels = document.get("label", [])
                 labels = [labels] if isinstance(labels, str) else list(labels)
@@ -142,7 +144,7 @@ def save_record(record: dict[str, object]) -> tuple[Path, bool]:
     return path, False
 
 
-def create_record(url: str) -> tuple[Path, bool]:
+def create_record(url: str, skip_existing: bool = False) -> tuple[Path, bool]:
     parsed = urlsplit(url)
     if parsed.scheme != "https" or parsed.hostname not in HOSTS or parsed.path.rstrip("/") != "/arcinsys/showArchivalDescriptionDetails.action":
         raise ValueError("Expected an https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action URL")
@@ -176,18 +178,22 @@ def create_record(url: str) -> tuple[Path, bool]:
         entry["img"] = [{"src": image} for image in image_list]
     record = {"date": iso_date(date_value), "label": ["to review"], "entries": [entry]}
     DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
-    return save_record(record)
+    return save_record(record, skip_existing=skip_existing)
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("url", help="Arcinsys Hessen archival description URL")
+    parser.add_argument("--skip-existing", action="store_true", help="leave existing entries with the same source unchanged")
     args = parser.parse_args()
     try:
-        path, updated = create_record(args.url)
+        path, updated = create_record(args.url, skip_existing=args.skip_existing)
     except Exception as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
+    if updated and args.skip_existing:
+        print(f"Skipped existing file: {path.relative_to(REPOSITORY_ROOT)}")
+        return 0
     print(f"Only updated existing file: {path.relative_to(REPOSITORY_ROOT)}" if updated else path.relative_to(REPOSITORY_ROOT))
     return 0
 

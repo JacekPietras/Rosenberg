@@ -119,6 +119,28 @@ Regesta Imperii URLs can be HTML record links, persistent `/id/` links, or CEI
 REST source links. Review the generated entry before using it as a completed
 document record.
 
+### Search Arcinsys Hessen
+
+List catalogue results, or download the archival records through the existing
+universal downloader (created entries require review):
+
+```text
+python3 scripts/search_arcinsys_hessen.py 'Eberhard von Rosenberg'
+python3 scripts/search_arcinsys_hessen.py 'Eberhard von Rosenberg' --limit 20
+python3 scripts/search_arcinsys_hessen.py 'Eberhard Rosenberg' --download
+```
+
+The script sends the full phrase to Arcinsys as a quoted search and returns
+its results, including matches in indexed person descriptors. Namesakes can
+still match, and alternate historical spellings require separate searches.
+`--limit` limits the number of results listed.
+
+Downloading stops on the first error, and entries with an existing source
+signature are left unchanged. Requests and downloads run sequentially, with a
+default three-second interval; use `--delay` to increase it. The script stops
+on blocking or rate-limit responses. These precautions cannot guarantee that the
+archive will not impose limits.
+
 ### Landesarchiv images
 
 Download missing cached document images with:
