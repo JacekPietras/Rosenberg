@@ -5,12 +5,15 @@
 - [Bavarian State Archives](https://www.gda.bayern.de/gvl/search.xhtml)
 - [Nord Rhein Westfalen State Archives](https://www.archive.nrw.de/)
 - [Regesta Imperii](https://www.regesta-imperii.de/regesten/suche.html)
-- [Heidelberg University Library](https://www.ub.uni-heidelberg.de/Englisch/helios/digi/digilit.html)
-- [Baden State Library](https://www.blb-karlsruhe.de/)
-- [Bavarian State Library](https://www.digitale-sammlungen.de/en/search)
 - [Ingrossaturbücher](https://www.ingrossaturbuecher.de) (Down currently)
 - [Szukaj w Archiwach](https://www.szukajwarchiwach.gov.pl/de/wyszukiwarka) (Polish sources)
 - [Prussian Secret State Archives](https://archive.spk-berlin.de/actaproweb/search.xhtml)
+
+# Libraries
+
+- [Heidelberg University Library](https://www.ub.uni-heidelberg.de/Englisch/helios/digi/digilit.html)
+- [Baden State Library](https://www.blb-karlsruhe.de/)
+- [Bavarian State Library](https://www.digitale-sammlungen.de/en/search)
 
 # Small
 
