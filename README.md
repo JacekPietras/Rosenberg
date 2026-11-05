@@ -132,7 +132,29 @@ Archive search scripts are in `scripts/archive_search/`. For example:
 ```text
 python3 scripts/archive_search/search_arcinsys_hessen.py 'Eberhard von Rosenberg'
 python3 scripts/archive_search/search_landesarchiv_bw.py 'Konrad von Rosenberg'
+python3 scripts/archive_search/search_landesarchiv_nrw.py 'Eberhard von Rosenberg' --list-only
+python3 scripts/archive_search/search_regesta_imperii.py 'Eberhard von Rosenberg' --list-only
+python3 scripts/archive_search/search_monasterium.py 'Eberhard von Rosenberg' --list-only
 ```
+
+Regesta Imperii quick search combines the search words with AND and can return
+records where the words do not form an exact name. Its search client waits at
+least 15 seconds between requests and caches complete searches. As with the
+other search scripts, omit `--list-only` to import results; use `--limit` to
+restrict the number processed.
+
+Archive NRW keyword searches can match the words separately. The NRW client
+waits at least 15 seconds between requests, stops on access errors, and caches
+complete searches. Its record importer currently supports only NRW record IDs
+of the `VERZEICHNUNGSEINHEIT-Vz_...` form; other results are listed but skipped
+when importing.
+
+The Monasterium client selects the site's phrase option, but its search can
+also return loosely related hits; review the results. It waits at least 15
+seconds between search requests and imports, and caches complete searches.
+Some collection URLs cannot yet be imported by the Monasterium record importer;
+they can still be listed. Imports may contact the holding archive as well as
+Monasterium, using the existing archive-specific downloaders.
 
 ### Selected archive image
 
