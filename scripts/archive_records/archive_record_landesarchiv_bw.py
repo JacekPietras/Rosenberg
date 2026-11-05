@@ -267,10 +267,12 @@ def iso_date(value: str) -> str:
 def leading_title_date(value: str) -> str | None:
     """Read a full date when the catalogue title begins with one."""
     match = re.match(
-        r"^\s*(?:Darin:\s*)?(\d{4}\s+[A-Za-zÄÖÜäöüß]+\.?\s+\d{1,2})(?!\d)", value,
+        r"^\s*(?:Darin:\s*)?\[?(\d{4})\]?\s+([A-Za-zÄÖÜäöüß]+\.?)\s+(\d{1,2})(?!\d)", value,
         re.I,
     )
-    return iso_date(match.group(1)) if match else None
+    if not match:
+        return None
+    return iso_date(" ".join(match.groups()))
 
 
 def dated_document_paths(date: str) -> list[Path]:
