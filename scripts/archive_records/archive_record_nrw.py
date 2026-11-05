@@ -4,11 +4,9 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import re
 import sys
-import time
 from html.parser import HTMLParser
 from http.cookiejar import CookieJar
 from pathlib import Path
@@ -18,35 +16,16 @@ from urllib.request import HTTPCookieProcessor, Request, build_opener
 from xml.etree import ElementTree
 
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from archive_anubis import ANUBIS_CHALLENGE_RE, solve_anubis
+
+
 USER_AGENT = "Rosenberg research downloader/1.0"
 REQUEST_TIMEOUT = 60
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
 HOSTS = {"www.archive.nrw.de", "archive.nrw.de"}
 OPENER = build_opener(HTTPCookieProcessor(CookieJar()))
-ANUBIS_CHALLENGE_RE = re.compile(
-    r'<script id="anubis_challenge" type="application/json">(.*?)</script>', re.S
-)
-ANUBIS_PASS_PATH = "/.within.website/x/cmd/anubis/api/pass-challenge"
-
-
-class TextOnly(HTMLParser):
-    """Extract readable text from short HTML catalog descriptions."""
-
-    def __init__(self) -> None:
-        super().__init__(convert_charrefs=True)
-        self.parts: list[str] = []
-
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag in {"br", "p", "div", "li"}:
-            self.parts.append("\n")
-
-    def handle_data(self, data: str) -> None:
-        self.parts.append(data)
-
-    def handle_endtag(self, tag: str) -> None:
-        if tag in {"p", "div", "li"}:
-            self.parts.append("\n")
 
 
 def request(url: str) -> tuple[str, bytes]:
@@ -58,32 +37,6 @@ def request(url: str) -> tuple[str, bytes]:
         if exc.code != 403:
             raise
         return exc.geturl(), exc.read()
-
-
-def solve_anubis(page: bytes, page_url: str) -> str | None:
-    match = ANUBIS_CHALLENGE_RE.search(page.decode("utf-8", "replace"))
-    if not match:
-        return None
-    challenge = json.loads(match.group(1))
-    rules = challenge["rules"]
-    if rules.get("algorithm") not in {"fast", "slow", "preact"}:
-        raise ValueError(f"Unsupported Archive NRW bot challenge: {rules.get('algorithm')!r}")
-    prefix = "0" * int(rules["difficulty"])
-    seed = challenge["challenge"]["randomData"].encode()
-    started = time.monotonic()
-    nonce = 0
-    while True:
-        digest = hashlib.sha256(seed + str(nonce).encode()).hexdigest()
-        if digest.startswith(prefix):
-            break
-        nonce += 1
-    elapsed = max(int((time.monotonic() - started) * 1000), 1)
-    parts = urlsplit(page_url)
-    query = urlencode({
-        "id": challenge["challenge"]["id"], "response": digest, "nonce": nonce,
-        "redir": page_url, "elapsedTime": elapsed,
-    })
-    return f"{parts.scheme}://{parts.netloc}{ANUBIS_PASS_PATH}?{query}"
 
 
 def fetch(url: str) -> tuple[str, bytes]:

@@ -4,19 +4,21 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import html
 import json
 import re
 import sys
-import time
 from html.parser import HTMLParser
 from http.cookiejar import CookieJar
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode, urljoin, urlsplit, urlunsplit
+from urllib.parse import urljoin, urlsplit, urlunsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 from xml.etree import ElementTree
+
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from archive_anubis import ANUBIS_CHALLENGE_RE, solve_anubis
 
 
 USER_AGENT = "Rosenberg research downloader/1.0"
@@ -45,10 +47,6 @@ class Links(HTMLParser):
 
 
 OPENER = build_opener(HTTPCookieProcessor(CookieJar()))
-ANUBIS_CHALLENGE_RE = re.compile(
-    r'<script id="anubis_challenge" type="application/json">(.*?)</script>', re.S
-)
-ANUBIS_PASS_PATH = "/.within.website/x/cmd/anubis/api/pass-challenge"
 
 
 def request_url(url: str) -> tuple[str, bytes]:
@@ -63,39 +61,6 @@ def request_url(url: str) -> tuple[str, bytes]:
         if exc.code != 403:
             raise
         return exc.geturl(), exc.read()
-
-
-def solve_anubis(page: bytes, page_url: str) -> str | None:
-    """Return the pass-challenge URL for an Anubis proof-of-work page, if it is one."""
-    match = ANUBIS_CHALLENGE_RE.search(page.decode("utf-8", "replace"))
-    if not match:
-        return None
-    data = json.loads(match.group(1))
-    challenge = data["challenge"]
-    difficulty = int(data["rules"]["difficulty"])
-    if data["rules"].get("algorithm") not in {"fast", "slow", "preact"}:
-        raise ValueError(f"Unsupported Anubis algorithm: {data['rules'].get('algorithm')!r}")
-    prefix = "0" * difficulty
-    seed = challenge["randomData"].encode()
-    started = time.monotonic()
-    nonce = 0
-    while True:
-        digest = hashlib.sha256(seed + str(nonce).encode()).hexdigest()
-        if digest.startswith(prefix):
-            break
-        nonce += 1
-    elapsed_ms = max(int((time.monotonic() - started) * 1000), 1)
-    parts = urlsplit(page_url)
-    query = urlencode(
-        {
-            "id": challenge["id"],
-            "response": digest,
-            "nonce": nonce,
-            "redir": page_url,
-            "elapsedTime": elapsed_ms,
-        }
-    )
-    return f"{parts.scheme}://{parts.netloc}{ANUBIS_PASS_PATH}?{query}"
 
 
 def fetch(url: str) -> tuple[str, bytes]:

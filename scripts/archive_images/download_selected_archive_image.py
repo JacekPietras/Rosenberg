@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import html
 import json
 import os
@@ -15,10 +14,12 @@ from html import unescape
 from html.parser import HTMLParser
 from http.cookiejar import CookieJar
 from pathlib import Path
-from time import monotonic
-from urllib.parse import parse_qs, quote, urlencode, urljoin, urlsplit
+from urllib.parse import parse_qs, quote, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener, urlopen
 
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from archive_anubis import solve_anubis
 
 BAVARIKON_USER_AGENT = "Mozilla/5.0 (compatible; RosenbergResearch/1.0)"
 BAVARIKON_TIMEOUT = 45
@@ -231,45 +232,6 @@ def fetch(opener, url: str) -> tuple[str, bytes, str]:
         return response.geturl(), response.read(), response.headers.get_content_type()
 
 
-def solve_anubis(opener, page_url: str, challenge_html: str) -> None:
-    """Complete Anubis's published SHA-256 proof-of-work challenge."""
-    challenge_match = re.search(
-        r'<script\s+id=["\']anubis_challenge["\']\s+type=["\']application/json["\']\s*>(.*?)</script>',
-        challenge_html,
-        re.I | re.S,
-    )
-    if not challenge_match:
-        raise ValueError("Bavarikon returned an Anubis check without a readable challenge")
-    challenge = json.loads(html.unescape(challenge_match.group(1)))
-    challenge_data = challenge["challenge"]
-    difficulty = int(challenge.get("rules", {}).get("difficulty", challenge_data.get("difficulty", 0)))
-    random_data = challenge_data["randomData"]
-    challenge_id = challenge_data["id"]
-    started = monotonic()
-    nonce = 0
-    while nonce < 10_000_000:
-        digest = hashlib.sha256(f"{random_data}{nonce}".encode()).digest()
-        if digest[: difficulty // 2] == bytes(difficulty // 2) and (difficulty % 2 == 0 or digest[difficulty // 2] >> 4 == 0):
-            break
-        nonce += 1
-    else:
-        raise ValueError(f"Anubis proof-of-work difficulty {difficulty} exceeded the nonce limit")
-
-    base_match = re.search(r'<script\s+id=["\']anubis_base_prefix["\']\s+type=["\']application/json["\']\s*>(.*?)</script>', challenge_html, re.I | re.S)
-    base_prefix = json.loads(html.unescape(base_match.group(1))) if base_match else ""
-    pass_url = urljoin(page_url, f"{base_prefix}/.within.website/x/cmd/anubis/api/pass-challenge")
-    query = urlencode({
-        "id": challenge_id,
-        "response": digest.hex(),
-        "nonce": nonce,
-        "redir": page_url,
-        "elapsedTime": max(0, int((monotonic() - started) * 1000)),
-    })
-    request = Request(f"{pass_url}?{query}", headers={"User-Agent": BAVARIKON_USER_AGENT})
-    with opener.open(request, timeout=BAVARIKON_TIMEOUT) as response:
-        response.read()
-
-
 def absolute(base: str, values: list[str]) -> list[str]:
     return list(dict.fromkeys(urljoin(base, html.unescape(value.strip())) for value in values if value.strip()))
 
@@ -346,7 +308,12 @@ def scrape_bavarikon(page_url: str) -> tuple[dict[str, object], list[str], list[
     if "text/html" not in content_type and not text.lstrip().startswith("<"):
         raise ValueError(f"Expected an HTML object page; server returned {content_type}")
     if "Making sure you're not a bot" in text or "Protected by" in text and "Anubis" in text:
-        solve_anubis(opener, final_url, text)
+        pass_url = solve_anubis(raw, final_url)
+        if not pass_url:
+            raise ValueError("Bavarikon returned an Anubis check without a readable challenge")
+        request = Request(pass_url, headers={"User-Agent": BAVARIKON_USER_AGENT})
+        with opener.open(request, timeout=BAVARIKON_TIMEOUT) as response:
+            response.read()
         final_url, raw, content_type = fetch(opener, page_url)
         text = raw.decode("utf-8", "replace")
         if "Making sure you're not a bot" in text or "Protected by" in text and "Anubis" in text:
