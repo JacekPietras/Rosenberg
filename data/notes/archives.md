@@ -12,8 +12,8 @@
 # Libraries
 
 - [Heidelberg University Library](https://www.ub.uni-heidelberg.de/Englisch/helios/digi/digilit.html)
-- [Baden State Library](https://www.blb-karlsruhe.de/) (My IP might be blocked)
 - [Bavarian State Library](https://www.digitale-sammlungen.de/en/search)
+- [Baden State Library](https://www.blb-karlsruhe.de/) (My IP might be blocked)
 
 # Small
 
