@@ -10,16 +10,17 @@ import subprocess
 import sys
 import time
 from html.parser import HTMLParser
-
-from downloader_storage import has_url
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT / "scripts" / "archive_records"))
+from archive_record_storage import has_url
 from urllib.error import HTTPError
 from urllib.parse import urlencode, urljoin
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 
 
 BASE = 'https://arcinsys.hessen.de/arcinsys/'
-ROOT = Path(__file__).resolve().parent.parent
 COLUMNS = ['columnKeyItemType', 'columnKeySignatur', 'columnKeyBezeichnung',
            'columnKeyLaufzeit', 'columnKeyInfoIcons', 'columnKeyPreviewImage', 'columnKeyActions']
 
@@ -168,7 +169,7 @@ def main():
                 time.sleep(max(0, args.delay - (time.monotonic() - client.last_request)))
                 client.last_request = time.monotonic()
                 print(f'Downloading {url}', flush=True)
-                proc = subprocess.run([sys.executable, str(ROOT / 'scripts/downloader_universal.py'), url], cwd=ROOT)
+                proc = subprocess.run([sys.executable, str(ROOT / 'scripts/archive_records/archive_record_download.py'), url], cwd=ROOT)
                 if proc.returncode:
                     raise RuntimeError(f'Downloader failed for {url}; stopping (exit {proc.returncode})')
         print(f'Listed {count} of {total} catalogue results'

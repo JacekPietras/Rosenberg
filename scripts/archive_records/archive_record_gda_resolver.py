@@ -5,7 +5,7 @@ import re
 from urllib.parse import urlencode, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 
-from downloader_gda_bayern import RecordFields, fetch, field_values, iso_date
+from archive_record_gda_bayern import RecordFields, fetch, field_values, iso_date
 
 SEARCH_URL = "https://www.gda.bayern.de/gvl/search.jsf"
 

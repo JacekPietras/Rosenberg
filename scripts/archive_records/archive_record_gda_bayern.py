@@ -16,7 +16,7 @@ from xml.etree import ElementTree
 
 USER_AGENT = "Rosenberg research downloader/1.0"
 REQUEST_TIMEOUT = 60
-REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
+REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
 GDA_HOSTS = {"www.gda.bayern.de", "gda.bayern.de"}
 
@@ -178,7 +178,7 @@ def create_record(url: str) -> tuple[Path, bool]:
     if images:
         generated_entry["img"] = [{"src": image_url} for image_url in images]
 
-    from downloader_storage import save_record
+    from archive_record_storage import save_record
     record = {"date": date, "label": ["to review"], "entries": [generated_entry]}
     return save_record(record, DOCUMENT_DIR)
 

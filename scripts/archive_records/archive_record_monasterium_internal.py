@@ -8,7 +8,7 @@ from pathlib import Path
 from xml.etree import ElementTree
 
 
-REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
+REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
 def local_name(tag: str) -> str:
@@ -56,5 +56,5 @@ def create_record(root: ElementTree.Element, url: str) -> tuple[Path, bool]:
         entry["img"] = [{"src": image} for image in dict.fromkeys(graphics)]
     record = {"date": date, "label": ["to review"], "entries": [entry]}
 
-    from downloader_storage import save_record
+    from archive_record_storage import save_record
     return save_record(record, REPOSITORY_ROOT / "data" / "documents")

@@ -9,15 +9,16 @@ import subprocess
 import sys
 import time
 from html.parser import HTMLParser
-
-from downloader_storage import has_url
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT / "scripts" / "archive_records"))
+from archive_record_storage import has_url
 from urllib.error import HTTPError
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 
 BASE = 'https://www2.landesarchiv-bw.de/ofs21/'
-ROOT = Path(__file__).resolve().parent.parent
 
 
 class SearchPage(HTMLParser):
@@ -190,7 +191,7 @@ def main():
             if not args.list_only:
                 client.wait()
                 print(f'Downloading {url}', flush=True)
-                command = [sys.executable, str(ROOT / 'scripts/downloader_universal.py'), url,
+                command = [sys.executable, str(ROOT / 'scripts/archive_records/archive_record_download.py'), url,
                     '--catalog-id', row['id'], '--bestand', row['bestand'],
                     '--delay', str(args.delay)]
                 if row['has_viewer']:

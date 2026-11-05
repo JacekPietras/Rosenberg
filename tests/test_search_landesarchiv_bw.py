@@ -5,10 +5,12 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'archive_records'))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'archive_search'))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import search_landesarchiv_bw as search
-import downloader_landesarchiv as downloader
-import downloader_arcinsys_hessen as storage
+import archive_record_landesarchiv_bw as downloader
+import archive_record_arcinsys_hessen as storage
 
 
 def result_page(record_id, page):
@@ -45,7 +47,7 @@ class LandesarchivSearchTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
                 patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
                 patch.object(downloader.time, 'sleep'), patch.object(downloader, 'read_viewer', return_value=('viewer', {}, ['page'], '123')), \
-                patch.object(downloader, 'archive_image_urls', return_value=['https://archive/image']):
+                patch.object(downloader, 'image_urls', return_value=['https://archive/image']):
             url = 'https://www.landesarchiv-bw.de/plink/?f=4-123'
             path, _ = downloader.create_record(url, '11', '123')
             downloader.create_record(url, '11', '123', True, 1)

@@ -4,8 +4,9 @@ import tempfile
 import unittest
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'archive_records'))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from downloader_storage import save_record, has_url
+from archive_record_storage import save_record, has_url
 
 
 class DownloaderStorageTests(unittest.TestCase):

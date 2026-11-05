@@ -16,7 +16,7 @@ from urllib.request import Request, urlopen
 
 USER_AGENT = "Rosenberg research downloader/1.0"
 REQUEST_TIMEOUT = 60
-REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
+REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
 HOSTS = {"arcinsys.hessen.de"}
 MONTHS = {
@@ -120,7 +120,7 @@ def dated_paths(date: str) -> list[Path]:
 
 
 def save_record(record: dict[str, object]) -> tuple[Path, bool]:
-    from downloader_storage import save_record as save
+    from archive_record_storage import save_record as save
     return save(record, DOCUMENT_DIR)
 
 

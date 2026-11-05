@@ -21,7 +21,7 @@ from xml.etree import ElementTree
 
 USER_AGENT = "Rosenberg research downloader/1.0"
 REQUEST_TIMEOUT = 60
-REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
+REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
 HOSTS = {"www.regesta-imperii.de", "regesta-imperii.de"}
 UUID_RE = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.I)
@@ -356,7 +356,7 @@ def create_record(url: str) -> tuple[Path, bool]:
     except (HTTPError, ValueError):
         _, page = fetch(canonical_url(url))
         record = parse_html(page, url)
-    from downloader_storage import save_record
+    from archive_record_storage import save_record
     return save_record(record, DOCUMENT_DIR)
 
 

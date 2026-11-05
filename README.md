@@ -103,13 +103,17 @@ reported; evidence keys refer to the saved build and can change after rebuilding
 
 Archive catalogs and related research portals are collected in [`data/notes/archives.md`](data/notes/archives.md).
 
-### Archive record downloader
+### Archive record import
 
-Route an archive record URL to the downloader for its domain:
+Archive record importers and their shared storage code live in
+`scripts/archive_records/`. `archive_record_download.py` routes an archive catalog record to a source-specific
+parser. These commands create or update document JSON entries with catalog
+metadata and image links when available; they do not download image files into
+the local cache:
 
 ```text
-python3 scripts/downloader_universal.py 'RECORD_URL'
-python3 scripts/downloader_universal.py --list
+python3 scripts/archive_records/archive_record_download.py 'RECORD_URL'
+python3 scripts/archive_records/archive_record_download.py --list
 ```
 
 GDA Bayern, Landesarchiv Baden-Württemberg, Landesarchiv NRW, Regesta Imperii, Arcinsys Hessen, and Monasterium are supported.
@@ -121,13 +125,13 @@ document record.
 
 ### Search Arcinsys Hessen
 
-Search and download archival records through the existing universal downloader
+Search and download archival records through the archive record importer
 (created entries require review), or list catalogue results without downloading:
 
 ```text
-python3 scripts/search_arcinsys_hessen.py 'Eberhard von Rosenberg'
-python3 scripts/search_arcinsys_hessen.py 'Eberhard von Rosenberg' --limit 20 --list-only
-python3 scripts/search_arcinsys_hessen.py 'Eberhard Rosenberg' --download
+python3 scripts/archive_search/search_arcinsys_hessen.py 'Eberhard von Rosenberg'
+python3 scripts/archive_search/search_arcinsys_hessen.py 'Eberhard von Rosenberg' --limit 20 --list-only
+python3 scripts/archive_search/search_arcinsys_hessen.py 'Eberhard Rosenberg' --download
 ```
 
 The script sends the full phrase to Arcinsys as a quoted search and returns
@@ -148,8 +152,8 @@ Search for a quoted phrase across the legacy catalogue and download matching
 records, or list them without downloading:
 
 ```text
-python3 scripts/search_landesarchiv_bw.py 'Konrad von Rosenberg'
-python3 scripts/search_landesarchiv_bw.py 'Konrad von Rosenberg' --list-only --limit 20
+python3 scripts/archive_search/search_landesarchiv_bw.py 'Konrad von Rosenberg'
+python3 scripts/archive_search/search_landesarchiv_bw.py 'Konrad von Rosenberg' --list-only --limit 20
 ```
 
 The search follows all catalogue pages, resolves each result to its permanent
@@ -161,39 +165,27 @@ include namesakes or records matched through indexed fields. Use `--delay` to
 increase the default three-second spacing between search and download steps;
 blocking and rate-limit responses stop the run.
 
-### Landesarchiv images
+### Local document image cache
 
-Download missing cached document images with:
+The local viewer downloads external document images on demand and stores them
+under `data/documents/img-temp/`. The cache is ignored by Git. No separate
+prefetch script is needed; opening a document with images fills the cache.
 
-```text
-python3 scripts/download_missing_document_images.py
-```
+### Selected archive image
 
-To link a Landesarchiv permalink to its digitized pages:
-
-```text
-python3 scripts/download_landesarchiv.py \
-  'https://www.landesarchiv-bw.de/plink/?f=4-1723539'
-```
-
-Use `--mode download` to cache the files locally, or `--image-dir SUBDIRECTORY`
-to choose a subdirectory under `data/documents/`. Retain the archive source
-signature and follow its usage terms.
-
-### Selected archive images
-
-Download one selected viewer page with:
+`download_selected_archive_image.py` resolves and downloads one explicitly
+selected viewer page to a destination path. It does not create a document
+record or alter the local cache:
 
 ```text
-python3 scripts/download_archive_image.py \
+python3 scripts/archive_images/download_selected_archive_image.py \
   'https://digi.vatlib.it/view/MSS_Vat.lat.10127' --folio 108r \
   --output /tmp/vat_lat_10127_108r.jpg
 ```
 
 Supports Internet Archive, DigiVatLib, BLB Karlsruhe, GNM, Library of Congress
-RBC, and Findbuch. Use `--resolve-only` to inspect image details. The script
-downloads only; follow the
-[archive image skill](skills/archive-image-download/SKILL.md) for verification,
+RBC, and Findbuch. Use `--resolve-only` to inspect image details. Follow the
+[archive image skill](.agents/skills/archive-image-download/SKILL.md) for verification,
 Drive uploads, catalog entries, and adding support for new viewers.
 
 ### Bavarikon images

@@ -13,17 +13,17 @@ from urllib.parse import parse_qs, urlsplit, urlunsplit
 from urllib.request import Request, build_opener
 from xml.etree import ElementTree
 
-from downloader_monasterium_internal import create_record as create_internal_record
-from downloader_landesarchiv import create_record as create_landesarchiv_record
-from downloader_gda_bayern import create_record as create_gda_record
-from downloader_gda_resolver import resolve as resolve_gda_record
-from downloader_archive_nrw import create_record as create_nrw_record
-from downloader_arcinsys_hessen import create_record as create_hessen_record
+from archive_record_monasterium_internal import create_record as create_internal_record
+from archive_record_landesarchiv_bw import create_record as create_landesarchiv_record
+from archive_record_gda_bayern import create_record as create_gda_record
+from archive_record_gda_resolver import resolve as resolve_gda_record
+from archive_record_nrw import create_record as create_nrw_record
+from archive_record_arcinsys_hessen import create_record as create_hessen_record
 
 
 USER_AGENT = "Rosenberg research downloader/1.0"
 REQUEST_TIMEOUT = 60
-REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
+REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 HOSTS = {"www.monasterium.net", "monasterium.net"}
 
 
@@ -94,7 +94,7 @@ def add_monasterium_url(path: Path, monasterium_url: str, archive_url: str, root
         old_urls = [old_urls] if isinstance(old_urls, str) else list(old_urls)
         if archive_url not in old_urls:
             continue
-        from downloader_storage import merge_entry
+        from archive_record_storage import merge_entry
         graphics = [node.get("url", "").strip() for node in root.iter()
                     if local_name(node.tag) == "graphic" and node.get("url", "").strip()]
         merge_entry(entry, {"url": monasterium_url, "img": [{"src": image} for image in graphics]})

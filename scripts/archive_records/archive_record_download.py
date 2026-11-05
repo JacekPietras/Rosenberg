@@ -10,14 +10,14 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 
-REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
+REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOWNLOADERS = {
-    "gda.bayern.de": "downloader_gda_bayern.py",
-    "landesarchiv-bw.de": "downloader_landesarchiv.py",
-    "regesta-imperii.de": "downloader_regesta_imperii.py",
-    "archive.nrw.de": "downloader_archive_nrw.py",
-    "arcinsys.hessen.de": "downloader_arcinsys_hessen.py",
-    "monasterium.net": "downloader_monasterium.py",
+    "gda.bayern.de": "archive_record_gda_bayern.py",
+    "landesarchiv-bw.de": "archive_record_landesarchiv_bw.py",
+    "regesta-imperii.de": "archive_record_regesta_imperii.py",
+    "archive.nrw.de": "archive_record_nrw.py",
+    "arcinsys.hessen.de": "archive_record_arcinsys_hessen.py",
+    "monasterium.net": "archive_record_monasterium.py",
 }
 
 
@@ -25,7 +25,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("url", nargs="?", help="archive record URL")
     parser.add_argument(
-        "downloader_args",
+        "forwarded_args",
         nargs=argparse.REMAINDER,
         help="optional arguments forwarded to the selected downloader",
     )
@@ -49,8 +49,8 @@ def main() -> int:
         print(f"Unsupported archive domain {domain!r}. Supported domains: {supported}", file=sys.stderr)
         return 2
 
-    script_path = REPOSITORY_ROOT / "scripts" / script_name
-    command = [sys.executable, str(script_path), args.url, *args.downloader_args]
+    script_path = REPOSITORY_ROOT / "scripts" / "archive_records" / script_name
+    command = [sys.executable, str(script_path), args.url, *args.forwarded_args]
     return subprocess.run(command, cwd=REPOSITORY_ROOT, check=False).returncode
 
 

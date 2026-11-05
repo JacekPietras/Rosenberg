@@ -28,7 +28,7 @@ Search the supplied archive catalog thoroughly for records that may concern the 
 ## Add and document findings
 
 - If the task and repository call for data entry, follow the repository's schema and fact/source rules. Preserve source text, translations, citations, identifier/URL, and the archive's date precision. Make the smallest targeted change and review the diff.
-- For a selected archive record URL, run `python3 scripts/downloader_universal.py 'RECORD_URL'` to route it by domain to the matching downloader. Its downloader creates a date-named JSON document. Review the new entry against existing documents, check the abstract and images, and add or correct any needed English translation before considering the record complete.
+- For a selected archive record URL, run `python3 scripts/archive_records/archive_record_download.py 'RECORD_URL'` to route it by domain to the matching downloader. Its downloader creates a date-named JSON document. Review the new entry against existing documents, check the abstract and images, and add or correct any needed English translation before considering the record complete.
 - Cite each added candidate with a stable direct record URL and archive reference. Where only an index or catalog abstract supports the name, say so in the entry and do not imply the source text was checked.
 - Keep a compact audit of query variants, total results/pages reviewed, unique candidates, additions, duplicates, exclusions, and unresolved access limits. Do not claim completeness when the catalog's pagination, indexing, or access prevented it.
 - At completion, report the coverage and its limits, summarize what was added and why uncertain cases were retained, and point to the local entries or other deliverable.

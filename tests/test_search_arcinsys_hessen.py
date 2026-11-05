@@ -5,9 +5,11 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'archive_records'))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'archive_search'))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import search_arcinsys_hessen as search
-import downloader_arcinsys_hessen as downloader
+import archive_record_arcinsys_hessen as downloader
 
 
 class SearchTests(unittest.TestCase):

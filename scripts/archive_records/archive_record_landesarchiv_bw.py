@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import re
 import sys
@@ -13,12 +14,9 @@ from pathlib import Path
 from urllib.parse import urlencode, urljoin
 from urllib.request import Request, build_opener
 
-from download_landesarchiv import discover_viewer, read_viewer, image_urls as archive_image_urls
-
-
 USER_AGENT = "Rosenberg research downloader/1.0"
 REQUEST_TIMEOUT = 60
-REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
+REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
 MONTHS = {
     "januar": 1,
@@ -36,6 +34,118 @@ MONTHS = {
     "dezember": 12,
 }
 
+
+PLINK_RE = re.compile(r"/plink/\?(?:[^#]*&)?f=([^&#]+)", re.I)
+ID_RE = re.compile(r'title="Id:\s*(\d+).*?AID:\s*([^"\s]+)', re.I | re.S)
+HIDDEN_RE = re.compile(
+    r'<input\s+[^>]*name=["\']([^"\']+)["\'][^>]*value=["\']([^"\']*)["\']',
+    re.I,
+)
+IMAGE_SELECT_RE = re.compile(
+    r'<select\s+[^>]*name=["\']originalBilddatei["\'][^>]*>(.*?)</select>',
+    re.I | re.S,
+)
+OPTION_RE = re.compile(
+    r'<option\s+[^>]*value=["\']([^"\']+)["\'][^>]*>\s*'
+    r'(recto|verso|Bild\s*\d+)\s*</option>',
+    re.I,
+)
+SCOPE_RE = re.compile(r"scopeid_besta=(\d+)", re.I)
+
+
+def fetch(opener, url: str) -> tuple[str, str]:
+    request = Request(url, headers={"User-Agent": USER_AGENT})
+    with opener.open(request, timeout=REQUEST_TIMEOUT) as response:
+        content_type = response.headers.get_content_type()
+        body = response.read()
+        if content_type.startswith("text/") or "html" in content_type:
+            return response.geturl(), body.decode(response.headers.get_content_charset() or "utf-8", "replace")
+        return response.geturl(), body
+
+
+def discover_viewer(opener, permalink: str) -> tuple[str, dict[str, str], list[str], str]:
+    match = PLINK_RE.search(permalink)
+    if not match:
+        raise ValueError("URL does not look like a Landesarchiv /plink/?f=... permalink")
+
+    landing_url, landing_html = fetch(opener, permalink)
+    if not isinstance(landing_html, str):
+        raise ValueError("The permalink did not return an HTML catalogue page")
+
+    aid = match.group(1)
+    record_id = None
+    for found_id, found_aid in ID_RE.findall(landing_html):
+        if html.unescape(found_aid).strip() == aid:
+            record_id = found_id
+            break
+    if record_id is None:
+        raise ValueError(f"No catalogue record with AID {aid} was found; it may have no digitized image")
+
+    zoom_match = re.search(
+        rf"bild_zoom/(?:zoom|thumbnails)\.php\?[^\"' ]*?id={re.escape(record_id)}[^\"' ]*",
+        landing_html,
+        re.I,
+    )
+    if not zoom_match:
+        raise ValueError(f"Record {aid} has no image viewer link")
+    zoom_path = html.unescape(zoom_match.group(0))
+    # Some catalogue records link to the thumbnail-selection page instead of
+    # the image viewer.  The thumbnail page does not contain the form fields
+    # needed to construct the direct image URLs, but it uses the same
+    # ``bestand`` and ``id`` parameters as zoom.php.
+    zoom_path = re.sub(r"/thumbnails\.php(?=\?)", "/zoom.php", zoom_path, flags=re.I)
+    if not zoom_path.startswith("../"):
+        zoom_path = "../" + zoom_path
+    zoom_url = urljoin(landing_url, zoom_path)
+    return read_viewer(opener, zoom_url, record_id, aid)
+
+
+def read_viewer(opener, zoom_url: str, record_id: str, aid: str) -> tuple[str, dict[str, str], list[str], str]:
+    viewer_url, viewer_html = fetch(opener, zoom_url)
+    if not isinstance(viewer_html, str):
+        raise ValueError("The image viewer did not return HTML")
+
+    fields = dict(HIDDEN_RE.findall(viewer_html))
+    fields.setdefault("id", record_id)
+    fields.setdefault("aid", aid)
+    image_select = IMAGE_SELECT_RE.search(viewer_html)
+    options = OPTION_RE.findall(image_select.group(1)) if image_select else []
+    recto_verso = [value for value, label in options if label.casefold() in {"recto", "verso"}]
+    selected_options = recto_verso or [value for value, _ in options]
+    page_names = list(dict.fromkeys(selected_options))
+    if not page_names and fields.get("bilddatei"):
+        page_names = [fields["bilddatei"]]
+    if not page_names:
+        raise ValueError(f"The viewer for {aid} contains no page filenames")
+    scope_match = SCOPE_RE.search(viewer_html)
+    if not scope_match:
+        raise ValueError(f"The viewer for {aid} has no image scope identifier")
+    return viewer_url, fields, page_names, scope_match.group(1)
+
+
+def image_urls(viewer_url: str, fields: dict[str, str], page_names: list[str], scope_id: str) -> list[str]:
+    endpoint = urljoin(viewer_url, "bild.php")
+    urls = []
+    for page_name in page_names:
+        image_folder = fields.get("bildordner")
+        if not image_folder:
+            folder_match = re.match(r"(\d{2})_(\d{10})_", page_name)
+            if not folder_match:
+                raise ValueError(f"Cannot determine image folder for {page_name}")
+            image_folder = (
+                f"/data/bildcms/internetbilder/archiv_{int(folder_match.group(1))}/olf/"
+                f"bestand_{int(scope_id):010d}/titlaufn_{folder_match.group(2)}/"
+            )
+        query = {
+            "drehen": fields.get("drehen", ""),
+            "zoom": "100",
+            "gamma": "1",
+            "jpegQualitaetZoombild": "60",
+            "scopeid_besta": scope_id,
+            "originalBilddatei": f"{image_folder}{page_name}",
+        }
+        urls.append(f"{endpoint}?{urlencode(query)}")
+    return urls
 
 class CatalogDetails(HTMLParser):
     """Collect labeled metadata fields from the archive's details page."""
@@ -164,7 +274,7 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         viewer_url, fields, page_names, scope_id = discover_viewer(opener, url)
         details_url = urljoin(viewer_url, "../olf/druckansicht.php") + "?" + urlencode(
             {"id_titlaufn": fields["id"], "bestand": fields["bestand"]})
-        images = archive_image_urls(viewer_url, fields, page_names, scope_id)
+        images = image_urls(viewer_url, fields, page_names, scope_id)
     details = CatalogDetails()
     details.feed(fetch_page(details_url))
     if catalog_id and has_viewer:
@@ -172,7 +282,7 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         zoom_url = "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?" + urlencode(
             {"bestand": bestand, "id": catalog_id})
         viewer_url, viewer_fields, page_names, scope_id = read_viewer(build_opener(), zoom_url, catalog_id, aid)
-        images = archive_image_urls(viewer_url, viewer_fields, page_names, scope_id)
+        images = image_urls(viewer_url, viewer_fields, page_names, scope_id)
     source = details.fields.get("bestellsignatur")
     date_text = details.fields.get("laufzeit")
     german = details.fields.get("titel")
@@ -189,7 +299,7 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         generated_entry["img"] = [{"src": image_url} for image_url in images]
 
     DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
-    from downloader_storage import save_record
+    from archive_record_storage import save_record
     record = {"date": date, "label": ["to review"], "entries": [generated_entry]}
     return save_record(record, DOCUMENT_DIR)
 

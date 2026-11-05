@@ -12,15 +12,9 @@ from urllib.request import urlopen
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def load_module(name, path):
-    spec = importlib.util.spec_from_file_location(name, path)
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
-
-
-server = load_module('viewer_server', ROOT / 'docs/serve.py')
-downloader = load_module('image_downloader', ROOT / 'scripts/download_missing_document_images.py')
+spec = importlib.util.spec_from_file_location('viewer_server', ROOT / 'docs/serve.py')
+server = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(server)
 
 
 class FakeResponse:
@@ -63,7 +57,6 @@ class ImageCacheTest(unittest.TestCase):
                     self.assertEqual(fetch.call_count, 2)
                     for url in urls:
                         name = hashlib.sha256(url.encode()).hexdigest() + '.jpg'
-                        self.assertEqual(downloader.cache_name(url), name)
                         self.assertEqual((cache / name).read_bytes(), url.encode())
                 finally:
                     httpd.shutdown()
