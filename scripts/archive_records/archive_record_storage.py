@@ -10,7 +10,10 @@ def values(value):
     return value if isinstance(value, list) else [value] if value else []
 
 
-SPECIAL_PART = re.compile(r'(?<!\w)(Aussteller|Empfänger|Siegel|Siegler)\s*:\s*', re.I)
+SPECIAL_PART = re.compile(
+    r'(?<!\w)(Aussteller|Empfänger|Siegel|Siegler|Laufzeit|Enthält|Umfang|Format)\s*:\s*',
+    re.I,
+)
 
 
 def normalized(text):

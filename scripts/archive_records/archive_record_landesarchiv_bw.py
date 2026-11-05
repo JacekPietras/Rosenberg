@@ -344,6 +344,20 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
     date = iso_date(date_text)
     if re.fullmatch(r"\d{4}", date):
         date = leading_title_date(german) or date
+    # The printable catalogue view carries much more than the title and dates.
+    # In particular, "Enthält" is often a detailed archival abstract listing
+    # individual items, and Umfang/Format describe the physical unit. Preserve
+    # these fields in the German review text instead of silently dropping them.
+    for label, field in (
+        ("Laufzeit", "laufzeit"),
+        ("Enthält", "enthält"),
+        ("Umfang", "umfang"),
+        ("Format", "format"),
+    ):
+        value = details.fields.get(field)
+        if value:
+            german += f"\n\n{label}: {value}"
+
     siegler = details.fields.get("siegler")
     if siegler:
         german += f"\n\nSiegler: {siegler}"
