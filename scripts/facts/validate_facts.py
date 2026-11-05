@@ -2,9 +2,9 @@
 """Migrate von und zu names and check typed facts and guesses.
 
 Examples:
-    python3 scripts/validate_facts.py
-    python3 scripts/validate_facts.py data/documents/1397-04-29.json
-    python3 scripts/validate_facts.py data/books data/notes
+    python3 scripts/facts/validate_facts.py
+    python3 scripts/facts/validate_facts.py data/documents/1397-04-29.json
+    python3 scripts/facts/validate_facts.py data/books data/notes
 
 The source assertion schema is in rules/json-formats.md. This script does
 not verify source support or historical identity and does not build a graph.
@@ -18,10 +18,13 @@ from datetime import date
 import json
 from pathlib import Path
 import re
+import sys
+SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SCRIPTS_ROOT))
 from given_names import name_groups
 from place_names import resolve_place_names
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = SCRIPTS_ROOT.parent
 RELATIONS = frozenset({'parent', 'sibling', 'spouse', 'kin'})
 TYPES = RELATIONS | {'title', 'death', 'generic'}
 MISSING = object()
@@ -456,7 +459,7 @@ def main(argv=None):
     paths = [path for path in collect_paths(args.paths or [ROOT / 'data'], validator)
              if validator.read_json(path) is not MISSING]
     if paths:
-        from migrate_von_und_zu import main as migrate_von_und_zu
+        from facts.migrate_von_und_zu import main as migrate_von_und_zu
         migrate_von_und_zu([*(str(path) for path in paths), '--apply'])
     for path in paths:
         clean_facts(path, validator)

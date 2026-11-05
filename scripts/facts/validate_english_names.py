@@ -2,8 +2,8 @@
 """Find non-normalized personal names in English text in documents and books.
 
 Examples:
-    python3 scripts/validate_english_names.py
-    python3 scripts/validate_english_names.py data/documents/1466-10-25.json
+    python3 scripts/facts/validate_english_names.py
+    python3 scripts/facts/validate_english_names.py data/documents/1466-10-25.json
 
 This read-only review tool reports name forms to check; it does not edit JSON.
 """
@@ -13,11 +13,15 @@ from collections import defaultdict
 import json
 from pathlib import Path
 import re
+import sys
+
+SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SCRIPTS_ROOT))
 
 from given_names import name_groups
 from place_names import resolve_place_names
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = SCRIPTS_ROOT.parent
 
 
 def load_variants():

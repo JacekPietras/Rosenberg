@@ -155,7 +155,7 @@ inference), or **contradicted**. Correct clear errors; remove unsupported and
 contradicted facts. If the source is missing, corrupted, or ambiguous, leave the
 fact and report the issue.
 
-After editing, run `python3 scripts/validate_facts.py` on the edited files
+After editing, run `python3 scripts/facts/validate_facts.py` on the edited files
 (it checks syntax and references, not support), and review the diff: source
 text, translation, citations, names, and date precision unchanged; facts
 supported, atomic, relevant, and not duplicated. Verification belongs in the

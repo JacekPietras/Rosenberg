@@ -2,9 +2,8 @@
 
 - [Hessian State Archive](https://arcinsys.hessen.de/arcinsys/simpleSearch.action)
 - [Baden-Württemberg State Archives](https://www2.landesarchiv-bw.de/ofs21/home.php)
-- [Bavarian State Archives](https://www.gda.bayern.de/gvl/archive.xhtml?tx_gwrepertories_frontend%5Baction%5D=search&tx_gwrepertories_frontend%5Bcontroller%5D=Archive)
+- [Bavarian State Archives](https://www.gda.bayern.de/gvl/search.xhtml)
 - [Regesta Imperii](https://www.regesta-imperii.de/regesten/suche.html)
-- [Monasterium.net](https://www.monasterium.net/mom/search)
 - [Ingrossaturbücher](https://www.ingrossaturbuecher.de)
 - [Heidelberg University Library digital collections](https://www.ub.uni-heidelberg.de/Englisch/helios/digi/digilit.html)
 - [Baden State Library](https://www.blb-karlsruhe.de/)
@@ -19,6 +18,7 @@
 
 # Container
 
+- [Monasterium.net](https://www.monasterium.net/mom/search)
 - [Archivportal-D](https://www.archivportal-d.de/suche)
 - [Bavarikon](https://www.bavarikon.de/de/suche)
 - [Deutsche Digitale Bibliothek](https://www.deutsche-digitale-bibliothek.de)

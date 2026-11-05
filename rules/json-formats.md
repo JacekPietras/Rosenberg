@@ -90,8 +90,8 @@ start of a relationship.
 ### Validation
 
 ```text
-python3 scripts/validate_facts.py
-python3 scripts/validate_facts.py data/books data/notes
+python3 scripts/facts/validate_facts.py
+python3 scripts/facts/validate_facts.py data/books data/notes
 ```
 
 It checks syntax, fields, dates, and registry references, not historical

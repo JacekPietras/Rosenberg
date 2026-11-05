@@ -1,7 +1,7 @@
 """Inclusive calendar-day intervals, sharing the fact validator's semantics."""
 
 from datetime import date, timedelta
-from validate_facts import date_bounds, inherited_date_bounds
+from facts.validate_facts import date_bounds, inherited_date_bounds
 
 
 def death_interval(mention):

@@ -12,7 +12,7 @@ import re
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 # A single name component, including accented letters, apostrophes and hyphens.
 FORM = re.compile(r"\bvon (?:und|u\.) zu ([^\W\d_]+(?:[-’'][^\W\d_]+)*)", re.UNICODE)
 

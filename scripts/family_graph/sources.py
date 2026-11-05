@@ -2,7 +2,7 @@
 
 import json
 from pathlib import Path
-from validate_facts import TYPES, Validator
+from facts.validate_facts import TYPES, Validator
 from .dates import date_bounds, inherited_date_bounds
 from .model import Assertion, Inputs, Mention, SourceRef, fingerprint
 from .probability import Observation, parameters

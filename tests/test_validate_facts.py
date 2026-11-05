@@ -7,7 +7,8 @@ import sys
 import tempfile
 import unittest
 
-SCRIPT = Path(__file__).resolve().parents[1] / 'scripts/validate_facts.py'
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
+SCRIPT = Path(__file__).resolve().parents[1] / 'scripts/facts/validate_facts.py'
 spec = importlib.util.spec_from_file_location('validate_facts', SCRIPT)
 facts = importlib.util.module_from_spec(spec)
 sys.modules[spec.name] = facts
