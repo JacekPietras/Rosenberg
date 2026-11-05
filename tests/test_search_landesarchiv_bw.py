@@ -58,13 +58,14 @@ class LandesarchivSearchTests(unittest.TestCase):
             self.assertIn(darin, entry['german'])
 
     def test_existing_year_only_file_is_renamed_when_precise_date_is_found(self):
-        with tempfile.TemporaryDirectory() as directory:
-            path = Path(directory) / '1418.json'
-            path.write_text(json.dumps({'date': '1418', 'entries': [{'source': 'Archive record'}]}))
-            promoted = downloader.promote_existing_date(path, '1418-02-22')
-            self.assertEqual(promoted.name, '1418-02-22.json')
-            self.assertFalse(path.exists())
-            self.assertEqual(json.loads(promoted.read_text())['date'], '1418-02-22')
+        for name in ('1418.json', '1418_3.json'):
+            with self.subTest(name=name), tempfile.TemporaryDirectory() as directory:
+                path = Path(directory) / name
+                path.write_text(json.dumps({'date': '1418', 'entries': [{'source': 'Archive record'}]}))
+                promoted = downloader.promote_existing_date(path, '1418-02-22')
+                self.assertEqual(promoted.name, '1418-02-22.json')
+                self.assertFalse(path.exists())
+                self.assertEqual(json.loads(promoted.read_text())['date'], '1418-02-22')
 
     def test_pagination_and_form(self):
         client = search.Client(1)

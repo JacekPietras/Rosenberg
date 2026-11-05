@@ -299,7 +299,7 @@ def promote_existing_date(path: Path, date: str) -> Path:
     old_date = str(document.get("date", ""))
     if (not re.fullmatch(r"\d{4}", old_date)
             or not date.startswith(old_date + "-")
-            or path.stem != old_date
+            or not re.fullmatch(rf"{old_date}(?:_\d+)?", path.stem)
             or len(document.get("entries", [])) != 1):
         return path
     target = path.with_name(f"{re.sub(r'[^0-9-]+', '_', date)}.json")
