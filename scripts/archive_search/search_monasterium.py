@@ -90,7 +90,8 @@ class Client:
         stamp.write_text(str(time.time()))
 
     def search(self, query, limit):
-        path = self.cache / (hashlib.sha256(query.encode()).hexdigest() + '.json')
+        cache_key = f'and-quoted-v1\0{query}'
+        path = self.cache / (hashlib.sha256(cache_key.encode()).hexdigest() + '.json')
         if path.exists():
             cached = json.loads(path.read_text())
             if cached.get('query') != query or len(cached['rows']) != cached['total']:
@@ -102,7 +103,16 @@ class Client:
         total = None
         block = 1
         while True:
-            params = {'q': query, 'option': 'phrase', 'sort': 'date', 'block': block, '_lang': 'eng'}
+            params = {
+                'q': f'"{query}"',
+                'option': 'and',
+                'img': '',
+                'annotations': '',
+                'sort': 'date',
+                'block': block,
+                'categories': '',
+                'context': '',
+            }
             self.wait()
             request = Request(URL + '?' + urlencode(params), headers={'User-Agent': 'Rosenberg archive research/1.0'})
             with urlopen(request, timeout=60) as response:
