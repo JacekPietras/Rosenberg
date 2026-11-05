@@ -143,8 +143,8 @@ punctuation, and spaces inside the passage remain unchanged.
   "place": "Boxberg",
   "entries": [
     {
-      "source": "43 Nr. 5290",
-      "url": "http://...",
+      "source": ["43 Nr. 5290", "Regest Nr. 123"],
+      "url": ["http://...", "https://example.org/document"],
       "german": "Original text",
       "english": "English translation",
       "facts": [{"type": "generic", "person": "Example person", "content": "witnessed the agreement at Boxberg."}],
@@ -159,7 +159,9 @@ punctuation, and spaces inside the passage remain unchanged.
 - `deleted`: `true` hides the whole document from the Documents screen while retaining its JSON.
 - `label`: a string or array of strings, shown as badges. `important` gives a
   reddish background; `Hessen`, `Schenk`, and `Mönch` a dimmed one.
-- Entries keep `source` (the citation), their text fields, and `facts`.
+- Entries keep `source` (the citation) and `url` as either a string or an array
+  of strings, when there is one reference/link or several; they also keep their
+  text fields and `facts`.
 - `img[]`: `src`; `deleted: "true"` for a removed image (kept so it is not
   imported again); optional `tags`, and `regions` (named rectangles with
   normalized `x`, `y`, `width`, `height` from 0 to 1; the first gives the
