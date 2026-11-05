@@ -11,7 +11,7 @@ import sys
 import time
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlencode, urljoin
+from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 from urllib.request import Request, build_opener
 
 USER_AGENT = "Rosenberg research downloader/1.0"
@@ -24,6 +24,7 @@ MONTHS = {
     "märz": 3,
     "maerz": 3,
     "april": 4,
+    "apr": 4,
     "mai": 5,
     "juni": 6,
     "juli": 7,
@@ -63,7 +64,7 @@ def fetch(opener, url: str) -> tuple[str, str]:
         return response.geturl(), body
 
 
-def discover_viewer(opener, permalink: str) -> tuple[str, dict[str, str], list[str], str]:
+def discover_viewer(opener, permalink: str) -> tuple[str, str, dict[str, str], list[str], str]:
     match = PLINK_RE.search(permalink)
     if not match:
         raise ValueError("URL does not look like a Landesarchiv /plink/?f=... permalink")
@@ -81,13 +82,26 @@ def discover_viewer(opener, permalink: str) -> tuple[str, dict[str, str], list[s
     if record_id is None:
         raise ValueError(f"No catalogue record with AID {aid} was found; it may have no digitized image")
 
+    # The permalink may resolve directly to a catalogue record without any
+    # digitized images. In that case the landing page still provides enough
+    # information to fetch its printable metadata page.
+    bestand = parse_qs(urlsplit(landing_url).query).get("bestand", [None])[0]
+    if not bestand:
+        bestand_match = re.search(r"[?&]bestand=(\d+)", landing_html)
+        bestand = bestand_match.group(1) if bestand_match else None
+    if not bestand:
+        raise ValueError(f"Could not determine the collection for archive ID {aid}")
+    details_url = "https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?" + urlencode(
+        {"id_titlaufn": record_id, "bestand": bestand}
+    )
+
     zoom_match = re.search(
         rf"bild_zoom/(?:zoom|thumbnails)\.php\?[^\"' ]*?id={re.escape(record_id)}[^\"' ]*",
         landing_html,
         re.I,
     )
     if not zoom_match:
-        raise ValueError(f"Record {aid} has no image viewer link")
+        return details_url, "", {}, [], ""
     zoom_path = html.unescape(zoom_match.group(0))
     # Some catalogue records link to the thumbnail-selection page instead of
     # the image viewer.  The thumbnail page does not contain the form fields
@@ -97,7 +111,11 @@ def discover_viewer(opener, permalink: str) -> tuple[str, dict[str, str], list[s
     if not zoom_path.startswith("../"):
         zoom_path = "../" + zoom_path
     zoom_url = urljoin(landing_url, zoom_path)
-    return read_viewer(opener, zoom_url, record_id, aid)
+    viewer_url, fields, page_names, scope_id = read_viewer(opener, zoom_url, record_id, aid)
+    details_url = urljoin(viewer_url, "../olf/druckansicht.php") + "?" + urlencode(
+        {"id_titlaufn": fields["id"], "bestand": fields["bestand"]}
+    )
+    return details_url, viewer_url, fields, page_names, scope_id
 
 
 def read_viewer(opener, zoom_url: str, record_id: str, aid: str) -> tuple[str, dict[str, str], list[str], str]:
@@ -194,6 +212,14 @@ def iso_date(value: str) -> str:
     iso_match = re.search(r"(?<!\d)(\d{4})-(\d{2})-(\d{2})(?!\d)", value)
     if iso_match:
         return "-".join(iso_match.groups())
+    german_day_first = re.search(
+        r"(?<!\d)(\d{1,2})\.?\s+([A-Za-zÄÖÜäöüß]+)\.?\s+(\d{4})(?!\d)", value
+    )
+    if german_day_first:
+        day, month, year = german_day_first.groups()
+        month_number = MONTHS.get(month.casefold())
+        if month_number:
+            return f"{year}-{month_number:02d}-{int(day):02d}"
     german_match = re.search(
         r"(?<!\d)(\d{4})\s+([A-Za-zÄÖÜäöüß]+)\s+(\d{1,2})(?!\d)", value
     )
@@ -271,10 +297,10 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
             {"id_titlaufn": catalog_id, "bestand": bestand})
     else:
         opener = build_opener()
-        viewer_url, fields, page_names, scope_id = discover_viewer(opener, url)
-        details_url = urljoin(viewer_url, "../olf/druckansicht.php") + "?" + urlencode(
-            {"id_titlaufn": fields["id"], "bestand": fields["bestand"]})
-        images = image_urls(viewer_url, fields, page_names, scope_id)
+        discovered = discover_viewer(opener, url)
+        details_url, viewer_url, fields, page_names, scope_id = discovered
+        if page_names:
+            images = image_urls(viewer_url, fields, page_names, scope_id)
     details = CatalogDetails()
     details.feed(fetch_page(details_url))
     if catalog_id and has_viewer:

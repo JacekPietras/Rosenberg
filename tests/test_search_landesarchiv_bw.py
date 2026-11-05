@@ -21,6 +21,10 @@ def result_page(record_id, page):
 
 
 class LandesarchivSearchTests(unittest.TestCase):
+    def test_day_first_german_catalogue_date_keeps_full_precision(self):
+        self.assertEqual(downloader.iso_date('25. Apr. 1385'), '1385-04-25')
+        self.assertEqual(downloader.iso_date('25. April 1385'), '1385-04-25')
+
     def test_pagination_and_form(self):
         client = search.Client(1)
         with patch.object(client, 'request', side_effect=['home', result_page('11', 0), result_page('12', 1)]) as req:
@@ -65,6 +69,20 @@ class LandesarchivSearchTests(unittest.TestCase):
             self.assertFalse(existing)
             self.assertEqual(json.loads(path.read_text())['entries'][0]['german'], 'Document text')
             self.assertEqual(downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123'), (path, True))
+
+    def test_permalink_without_viewer_creates_metadata_record_without_images(self):
+        details = '''<table><tr><td>Bestellsignatur</td><td>Archive 11</td></tr>
+        <tr><td>Laufzeit</td><td>25. Apr. 1385</td></tr><tr><td>Titel</td><td>Document text</td></tr></table>'''
+        discovered = ('https://archive/details?id=11', '', {}, [], '')
+        with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
+                patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), \
+                patch.object(downloader, 'discover_viewer', return_value=discovered), \
+                patch.object(downloader, 'fetch_page', return_value=details):
+            path, existing = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123')
+            record = json.loads(path.read_text())
+            self.assertFalse(existing)
+            self.assertEqual(record['date'], '1385-04-25')
+            self.assertNotIn('img', record['entries'][0])
 
 
 if __name__ == '__main__':
