@@ -23,6 +23,7 @@ MONTHS = {
     "jan": 1,
     "februar": 2,
     "feb": 2,
+    "febr": 2,
     "märz": 3,
     "mär": 3,
     "maerz": 3,
@@ -292,6 +293,24 @@ def next_output_path(date: str, existing_paths: list[Path]) -> Path:
     return DOCUMENT_DIR / f"{stem}_{max(suffixes, default=1) + 1}.json"
 
 
+def promote_existing_date(path: Path, date: str) -> Path:
+    """Promote a matching year-only record when this catalog gives a full date."""
+    document = json.loads(path.read_text(encoding="utf-8"))
+    old_date = str(document.get("date", ""))
+    if (not re.fullmatch(r"\d{4}", old_date)
+            or not date.startswith(old_date + "-")
+            or path.stem != old_date
+            or len(document.get("entries", [])) != 1):
+        return path
+    target = path.with_name(f"{re.sub(r'[^0-9-]+', '_', date)}.json")
+    if target.exists():
+        return path
+    document["date"] = date
+    target.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.unlink()
+    return target
+
+
 def update_existing(path: Path, source: str, generated_entry: dict[str, object]) -> bool:
     document = json.loads(path.read_text(encoding="utf-8"))
     for entry in document.get("entries", []):
@@ -383,7 +402,10 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
     DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
     from archive_record_storage import save_record
     record = {"date": date, "label": ["to review"], "entries": [generated_entry]}
-    return save_record(record, DOCUMENT_DIR)
+    path, updated = save_record(record, DOCUMENT_DIR)
+    if updated:
+        path = promote_existing_date(path, date)
+    return path, updated
 
 
 
