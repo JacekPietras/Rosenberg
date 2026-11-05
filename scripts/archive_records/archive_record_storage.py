@@ -10,9 +10,48 @@ def values(value):
     return value if isinstance(value, list) else [value] if value else []
 
 
+SPECIAL_PART = re.compile(r'(?<!\w)(Aussteller|Empfänger|Siegel|Siegler)\s*:\s*', re.I)
+
+
+def normalized(text):
+    return ' '.join(text.split())
+
+
+def text_parts(text):
+    matches = list(SPECIAL_PART.finditer(text))
+    main = text[:matches[0].start()].strip() if matches else text.strip()
+    parts = [(match[1], text[match.end():matches[i + 1].start() if i + 1 < len(matches) else len(text)].strip())
+             for i, match in enumerate(matches)]
+    return main, parts
+
+
+def merge_text(old, new):
+    old_main, old_parts = text_parts(old)
+    new_main, new_parts = text_parts(new)
+    if not normalized(old_main) or normalized(old_main) != normalized(new_main):
+        return old
+    main = max((old_main, new_main), key=len)
+    parts = []
+    for label, content in old_parts + new_parts:
+        if not content:
+            continue
+        for i, (known_label, known_content) in enumerate(parts):
+            if label.casefold() != known_label.casefold():
+                continue
+            if normalized(content) in normalized(known_content):
+                break
+            if normalized(known_content) in normalized(content):
+                parts[i] = (known_label, content)
+                break
+        else:
+            parts.append((label, content))
+    return main + ''.join(f'\n\n{label}: {content}' for label, content in parts)
+
+
 def texts(entry):
-    return {' '.join(value.split()) for key in ('german', 'latin', 'summary')
-            if isinstance((value := entry.get(key)), str) and value.strip()}
+    return {normalized(main) for key in ('german', 'latin', 'summary')
+            if isinstance((value := entry.get(key)), str)
+            and (main := text_parts(value)[0]).strip()}
 
 
 def merge_entry(entry, incoming, transcribed=False):
@@ -38,6 +77,8 @@ def merge_entry(entry, incoming, transcribed=False):
                 entry['img'] = old
         elif key in ('german', 'latin') and transcribed:
             continue
+        elif key in ('german', 'latin', 'summary') and isinstance(entry.get(key), str) and isinstance(new, str):
+            entry[key] = merge_text(entry[key], new)
         elif key not in entry or entry[key] in (None, '', []):
             entry[key] = new
 
@@ -52,7 +93,7 @@ def save_record(record, document_dir: Path):
     incoming = record['entries'][0]
     incoming_sources = set(values(incoming.get('source')))
     incoming_texts = texts(incoming)
-    # Check citations first, followed by exact text across all document dates.
+    # Check citations first, then main text without catalog metadata sections.
     for by_source, candidates in ((True, paths), (False, sorted(document_dir.glob('*.json')))):
         if by_source and not incoming_sources or not by_source and not incoming_texts:
             continue

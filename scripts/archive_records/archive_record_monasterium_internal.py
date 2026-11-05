@@ -23,9 +23,7 @@ def first_node(root: ElementTree.Element, name: str) -> ElementTree.Element | No
     return next((node for node in root.iter() if local_name(node.tag) == name.casefold()), None)
 
 
-def create_record(root: ElementTree.Element, url: str) -> tuple[Path, bool]:
-    date_node = first_node(root, "date")
-    date_value = date_node.get("value", "") if date_node is not None else ""
+def parse_date(date_value: str) -> str:
     date_match = re.fullmatch(r"(\d{4})(\d{2})?(\d{2})?", date_value)
     if not date_match:
         raise ValueError(f"Unsupported Monasterium date value: {date_value!r}")
@@ -35,6 +33,24 @@ def create_record(root: ElementTree.Element, url: str) -> tuple[Path, bool]:
         date += f"-{month}"
         if day and day != "00":
             date += f"-{day}"
+
+    return date
+
+
+def create_record(root: ElementTree.Element, url: str) -> tuple[Path, bool]:
+    issued = first_node(root, "issued")
+    date_node = first_node(issued, "date") if issued is not None else None
+    range_node = first_node(issued, "dateRange") if issued is not None else None
+    if date_node is not None:
+        date = parse_date(date_node.get("value", ""))
+    elif range_node is not None:
+        start = parse_date(range_node.get("from", ""))
+        end = parse_date(range_node.get("to", ""))
+        if start > end:
+            raise ValueError("Reversed Monasterium date range")
+        date = f"{start}/{end}"
+    else:
+        raise ValueError("The Monasterium record has no supported issued date")
 
     abstract = node_text(first_node(root, "abstract"))
     identifier = first_node(root, "archidentifier")
