@@ -86,23 +86,27 @@ def merge_entry(entry, incoming, transcribed=False):
 def save_record(record, document_dir: Path):
     document_dir.mkdir(parents=True, exist_ok=True)
     date = str(record['date'])
+    date_start = re.match(r'^(\d{4}-\d{2}-\d{2})(?:_|$)', date)
+    if date_start:
+        date = date_start.group(1)
     stem = re.sub(r'[^0-9-]+', '_', date)
     pattern = re.compile(rf'{re.escape(stem)}(?:_(\d+))?\.json$')
     paths = sorted((p for p in document_dir.glob(f'{stem}*.json') if pattern.fullmatch(p.name)),
                    key=lambda p: (int(pattern.fullmatch(p.name).group(1) or 1), p.name))
     incoming = record['entries'][0]
     incoming_sources = set(values(incoming.get('source')))
+    incoming_urls = set(values(incoming.get('url')))
     incoming_texts = texts(incoming)
     # Check citations first, then main text without catalog metadata sections.
     for by_source, candidates in ((True, paths), (False, sorted(document_dir.glob('*.json')))):
-        if by_source and not incoming_sources or not by_source and not incoming_texts:
+        if by_source and not (incoming_sources or incoming_urls) or not by_source and not incoming_texts:
             continue
         for path in candidates:
             document = json.loads(path.read_text(encoding='utf-8'))
             for entry in document.get('entries', []):
                 if not isinstance(entry, dict):
                     continue
-                match = bool(incoming_sources.intersection(values(entry.get('source')))) if by_source else bool(incoming_texts.intersection(texts(entry)))
+                match = bool(incoming_sources.intersection(values(entry.get('source'))) or incoming_urls.intersection(values(entry.get('url')))) if by_source else bool(incoming_texts.intersection(texts(entry)))
                 if not match:
                     continue
                 before = json.dumps(document, ensure_ascii=False, sort_keys=True)

@@ -13,7 +13,7 @@
 
 - [Heidelberg University Library](https://www.ub.uni-heidelberg.de/Englisch/helios/digi/digilit.html)
 - [Bavarian State Library](https://www.digitale-sammlungen.de/en/search)
-- [Baden State Library](https://www.blb-karlsruhe.de/) (My IP might be blocked)
+- [Baden State Library](https://regionalia.blb-karlsruhe.de/solrsearch)
 
 # Small
 

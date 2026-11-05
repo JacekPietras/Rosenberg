@@ -10,6 +10,17 @@ from archive_record_storage import save_record, has_url, merge_text
 
 
 class DownloaderStorageTests(unittest.TestCase):
+    def test_existing_url_matches_when_citation_and_text_differ(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            path, _ = save_record({'date': '1341', 'entries': [{'source': 'old citation',
+                'url': 'same-url', 'german': 'Long reviewed text'}]}, folder)
+            self.assertEqual(save_record({'date': '1341', 'entries': [{'source': 'new citation',
+                'url': 'same-url', 'german': 'Short catalog text'}]}, folder), (path, True))
+            entry = json.loads(path.read_text())['entries'][0]
+            self.assertEqual(entry['source'], ['old citation', 'new citation'])
+            self.assertEqual(entry['german'], 'Long reviewed text')
+
     def test_matching_ignores_special_sections_and_merges_without_duplicates(self):
         with tempfile.TemporaryDirectory() as tmp:
             folder = Path(tmp)

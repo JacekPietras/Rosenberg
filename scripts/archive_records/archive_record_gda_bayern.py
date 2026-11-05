@@ -28,19 +28,23 @@ class RecordFields(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.fields: dict[str, list[str]] = {}
         self.current_label: str | None = None
+        self.current_parts: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         if tag == "td":
             self.current_label = dict(attrs).get("data-label")
             if self.current_label:
                 self.fields.setdefault(self.current_label.rstrip(":"), [])
+                self.current_parts = []
 
     def handle_data(self, data: str) -> None:
         if self.current_label:
-            self.fields[self.current_label.rstrip(":")].append(data)
+            self.current_parts.append(data)
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "td":
+            if self.current_label:
+                self.fields[self.current_label.rstrip(":")].append(''.join(self.current_parts))
             self.current_label = None
 
 
@@ -90,6 +94,10 @@ def strip_rtf(value: str) -> str:
 def iso_date(laufzeit: str) -> str:
     """Convert the catalog's common German date forms to ISO precision."""
     value = laufzeit.strip()
+    months = 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember'.split()
+    for month, name in enumerate(months, 1):
+        value = re.sub(rf'\b(\d{{4}})\s+{name}\s+(\d{{1,2}})\b',
+                       lambda m: f'{m[2]}.{month}.{m[1]}', value, flags=re.I)
     dates = re.findall(r"(?<!\d)(\d{1,2})\.(\d{1,2})\.(\d{4})(?!\d)", value)
     if len(dates) == 1:
         day, month, year = dates[0]

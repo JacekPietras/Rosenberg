@@ -117,8 +117,9 @@ def create_record(url: str) -> tuple[Path, bool]:
     if archive is None:
         parts = re.fullmatch(r"/mom/([^/]+)/([^/]+)/([^/]+)/charter/?", parsed.path)
         date_node = next((node for node in root.iter() if local_name(node.tag) == "date"), None)
-        archive_url = resolve_gda_record(*parts.groups(), date_node.get("value", "") if date_node is not None else "")
+        archive_url = resolve_gda_record(*parts.groups(), date_node.get("value", "") if date_node is not None else "", root=root)
         if archive_url is None:
+            print(f"Archive catalog URL unresolved for {parts[1]}/{parts[2]}; importing Monasterium metadata as a fallback", file=sys.stderr)
             return create_internal_record(root, url)
         archive = (archive_url, create_gda_record)
     archive_url, downloader = archive

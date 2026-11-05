@@ -2,12 +2,22 @@
 
 from html.parser import HTMLParser
 import re
+import sys
+from pathlib import Path
 from urllib.parse import urlencode, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 
 from archive_record_gda_bayern import RecordFields, fetch, field_values, iso_date
 
 SEARCH_URL = "https://www.gda.bayern.de/gvl/search.jsf"
+
+
+def same_archive(archive_code, citation):
+    # Monasterium abbreviates Würzburg as StAW; the Bavarian catalog uses StAWü.
+    codes = {archive_code}
+    if archive_code == 'StAW':
+        codes.add('StAWü')
+    return any(re.match(rf'^{re.escape(code)},', citation, re.I) for code in codes)
 
 
 class SearchForm(HTMLParser):
@@ -60,11 +70,60 @@ class SearchResult(HTMLParser):
             self.in_summary = False
 
 
-def resolve(archive, fonds, identifier, date):
+def resolve_metadata(archive, root):
+    """Resolve legacy/date-based identifiers using the archive's own citations."""
+    # Import lazily: the search client itself uses SearchForm from this module.
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'archive_search'))
+    from search_gda_bayern import Client
+    from archive_record_monasterium_internal import first_node, node_text, parse_date
+    from archive_record_storage import normalized
+
+    identifier = first_node(root, 'archIdentifier')
+    if identifier is None:
+        return None
+    references = []
+    for node in identifier.iter():
+        if node.tag.rsplit('}', 1)[-1].casefold() in {'idno', 'altidentifier'}:
+            references.extend(' '.join(part.replace(',', ' ').split()) for part in node_text(node).split(';') if part.strip())
+    issued = first_node(root, 'issued')
+    date_node = first_node(issued, 'date') if issued is not None else None
+    # A date range is not sufficient evidence for identifying a catalog item.
+    if date_node is None:
+        return None
+    expected_date = parse_date(date_node.get('value', ''))
+    client = Client()
+    matches = set()
+    for reference in sorted(set(references), key=len):
+        for row, _ in client.search(reference):
+            candidate = row['url'].split('&parent_id=', 1)[0]
+            target = urlsplit(candidate)
+            if target.hostname != 'www.gda.bayern.de' or not target.path.startswith('/gvl/'):
+                continue
+            client.wait()
+            fields = RecordFields()
+            fields.feed(fetch(candidate))
+            citations = list(dict.fromkeys(field_values(fields, 'Bestellsignatur')))
+            dates = list(dict.fromkeys(field_values(fields, 'Laufzeit')))
+            if len(citations) != 1 or len(dates) != 1:
+                continue
+            if not same_archive(archive[3:], citations[0]):
+                continue
+            catalog_text = normalized(' '.join(''.join(parts) for parts in fields.fields.values()).replace(',', ' '))
+            if normalized(reference) not in catalog_text or iso_date(dates[0]) != expected_date:
+                continue
+            matches.add(candidate)
+        if matches:
+            break
+    return next(iter(matches)) if len(matches) == 1 else None
+
+
+def resolve(archive, fonds, identifier, date, root=None):
     # These Monasterium fonds IDs encode the monastery name followed by its order.
     match = re.fullmatch(r"([A-Z][a-z]+)(?:OSB|OCist|CanReg)", fonds)
-    if not re.fullmatch(r"DE-(StA[A-Za-z]+|BayHStA)", archive) or not match or not re.fullmatch(r"\d+", identifier) or not re.fullmatch(r"\d{8}", date):
+    if not re.fullmatch(r"DE-(StA[A-Za-z]+|BayHStA)", archive):
         return None
+    if not match or not re.fullmatch(r"\d+", identifier) or not re.fullmatch(r"\d{8}", date):
+        return resolve_metadata(archive, root) if root is not None else None
     archive_code = archive[3:]
     monastery = match.group(1)
     opener = build_opener(HTTPCookieProcessor())
@@ -105,7 +164,7 @@ def resolve(archive, fonds, identifier, date):
     if len(citations) != 1 or len(dates) != 1:
         return None
     citation = " ".join(citations[0].split())
-    if not re.match(rf"^{re.escape(archive_code)},", citation, re.I) or not re.search(rf"\b{re.escape(monastery)}\s+Urkunden\s+{re.escape(identifier)}$", citation, re.I):
+    if not same_archive(archive_code, citation) or not re.search(rf"\b{re.escape(monastery)}\s+Urkunden\s+{re.escape(identifier)}$", citation, re.I):
         return None
     if iso_date(dates[0]) != expected:
         return None
