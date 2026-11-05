@@ -167,7 +167,7 @@ def main():
     parser.add_argument('--list-only', action='store_true', help='list results without downloading')
     parser.add_argument('--skip-existing', action='store_true', help='skip downloading URLs already stored locally')
     parser.add_argument('--limit', type=int, help='maximum number of results')
-    parser.add_argument('--delay', type=float, default=3, help='seconds between requests (minimum 1; default 3)')
+    parser.add_argument('--delay', type=float, default=15, help='seconds between requests (minimum 1; default 15)')
     args = parser.parse_args()
     phrase = args.query.strip()
     if phrase.startswith('"') and phrase.endswith('"'):

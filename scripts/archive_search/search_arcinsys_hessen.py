@@ -143,7 +143,7 @@ def main():
     mode.add_argument('--list-only', action='store_true', help='list results without downloading')
     p.add_argument('--skip-existing', action='store_true', help='skip downloading URLs already stored locally')
     p.add_argument('--limit', type=int, help='maximum number of search results to list')
-    p.add_argument('--delay', type=float, default=3, help='seconds between requests and downloads (minimum 1; default 3)')
+    p.add_argument('--delay', type=float, default=15, help='seconds between requests and downloads (minimum 1; default 15)')
     args = p.parse_args()
     if args.delay < 1 or not args.delay < float('inf'):
         p.error('--delay must be at least 1 second')

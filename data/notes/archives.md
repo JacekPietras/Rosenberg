@@ -5,7 +5,7 @@
 - [Bavarian State Archives](https://www.gda.bayern.de/gvl/search.xhtml)
 - [Nord Rhein Westfalen State Archives](https://www.archive.nrw.de/)
 - [Regesta Imperii](https://www.regesta-imperii.de/regesten/suche.html)
-- [Ingrossaturbücher](https://www.ingrossaturbuecher.de) (Down currently)
+- [Ingrossaturbücher](https://www.ingrossaturbuecher.de) (Currently site is down)
 - [Szukaj w Archiwach](https://www.szukajwarchiwach.gov.pl/de/wyszukiwarka) (Polish sources)
 - [Prussian Secret State Archives](https://archive.spk-berlin.de/actaproweb/search.xhtml)
 
