@@ -206,6 +206,23 @@ def fetch_page(url: str) -> str:
         return response.read().decode(response.headers.get_content_charset() or "utf-8", "replace")
 
 
+def verify_permalink(opener, url: str, aid: str) -> str:
+    """Return a usable canonical permalink, refusing the archive's dead-link page."""
+    final_url, page = fetch(opener, url)
+    if not isinstance(page, str):
+        raise ValueError("The permalink did not return an HTML catalogue page")
+    final = urlsplit(final_url)
+    if final.hostname not in {"www.landesarchiv-bw.de", "landesarchiv-bw.de", "www2.landesarchiv-bw.de"}:
+        raise ValueError(f"Permalink redirected outside Landesarchiv Baden-Württemberg: {final_url}")
+    if "Zu dieser URL existiert" in page and "keine Ressource" in page:
+        raise ValueError(f"Landesarchiv permalink {url} does not exist")
+    found = {html.unescape(record_aid).strip() for _, record_aid in ID_RE.findall(page)}
+    if aid not in found:
+        raise ValueError(f"Landesarchiv page did not confirm archive ID {aid}; refusing to save {url}")
+    # Keep the stable public permalink, but only after the archive has confirmed it.
+    return f"https://www.landesarchiv-bw.de/plink/?{urlencode({'f': aid})}"
+
+
 def iso_date(value: str) -> str:
     """Convert common Landesarchiv German date labels to the JSON ISO format."""
     value = value.strip()
@@ -297,6 +314,8 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
     if not aid:
         raise ValueError("The permalink has no f= archive identifier")
 
+    opener = build_opener()
+    url = verify_permalink(opener, url, aid)
     images = []
     if catalog_id:
         if not catalog_id.isdigit() or not bestand or not bestand.isdigit():
@@ -304,7 +323,6 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         details_url = "https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?" + urlencode(
             {"id_titlaufn": catalog_id, "bestand": bestand})
     else:
-        opener = build_opener()
         discovered = discover_viewer(opener, url)
         details_url, viewer_url, fields, page_names, scope_id = discovered
         if page_names:
