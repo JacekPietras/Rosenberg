@@ -7,6 +7,7 @@ import argparse
 import json
 import re
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qs, urlsplit, urlunsplit
@@ -68,14 +69,18 @@ def monasterium_metadata_url(parsed) -> str:
     )
 
 
-def fetch_cei(url: str) -> bytes:
+def fetch_page(url: str) -> bytes:
     request = Request(url, headers={
         "User-Agent": USER_AGENT,
         "Accept": "application/xml,text/xml,*/*",
         "Referer": "https://www.monasterium.net/",
     })
     with build_opener().open(request, timeout=REQUEST_TIMEOUT) as response:
-        payload = response.read()
+        return response.read()
+
+
+def fetch_cei(url: str) -> bytes:
+    payload = fetch_page(url)
     # Monasterium can append Cloudflare scripts and an incomplete HTML wrapper
     # inside its CEI response. Remove those additions and repair the open body.
     payload = re.sub(rb"<script(?:\s[^>]*)?>.*?</script>\s*</body>", b"", payload, flags=re.S)
@@ -83,6 +88,40 @@ def fetch_cei(url: str) -> bytes:
     payload = re.sub(rb"</chDesc>\s*</text>", b"</chDesc></body></text>", payload)
     end = payload.find(b"</atom:entry>")
     return payload[:end + len(b"</atom:entry>")] if end >= 0 else payload
+
+
+class EditionReferences(HTMLParser):
+    """Recognize edition hosts from explicit links, without contacting them."""
+
+    def __init__(self):
+        super().__init__()
+        self.sources = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        link = attrs.get('href', '') if tag == 'a' else attrs.get('src', '') if tag == 'img' else ''
+        parsed = urlsplit(link)
+        if parsed.scheme in {'http', 'https'} and parsed.hostname in {'www.ingrossaturbuecher.de', 'ingrossaturbuecher.de'}:
+            reference = 'https://www.ingrossaturbuecher.de/'
+            if reference not in self.sources:
+                self.sources.append(reference)
+
+
+def fallback_sources(root, url):
+    # CEI can contain only image filenames; the charter HTML supplies their host.
+    # Inspect explicit CEI links first and fetch HTML only for unresolved images.
+    parser = EditionReferences()
+    for node in root.iter():
+        for key in ('target', 'url'):
+            if node.get(key):
+                parser.handle_starttag('a', [('href', node.get(key))])
+    if not parser.sources and any(local_name(node.tag) == 'graphic' and node.get('url')
+                                  and not urlsplit(node.get('url')).netloc for node in root.iter()):
+        try:
+            parser.feed(fetch_page(url).decode('utf-8', 'replace'))
+        except OSError as exc:
+            print(f'Could not inspect edition references on Monasterium: {exc}; retaining CEI fallback', file=sys.stderr)
+    return parser.sources
 
 
 def add_monasterium_url(path: Path, monasterium_url: str, archive_url: str, root: ElementTree.Element) -> None:
@@ -119,8 +158,9 @@ def create_record(url: str) -> tuple[Path, bool]:
         date_node = next((node for node in root.iter() if local_name(node.tag) == "date"), None)
         archive_url = resolve_gda_record(*parts.groups(), date_node.get("value", "") if date_node is not None else "", root=root)
         if archive_url is None:
+            sources = fallback_sources(root, url)
             print(f"Archive catalog URL unresolved for {parts[1]}/{parts[2]}; importing Monasterium metadata as a fallback", file=sys.stderr)
-            return create_internal_record(root, url)
+            return create_internal_record(root, url, source_references=sources)
         archive = (archive_url, create_gda_record)
     archive_url, downloader = archive
     path, updated = downloader(archive_url)

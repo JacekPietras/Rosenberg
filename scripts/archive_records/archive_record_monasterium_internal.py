@@ -37,7 +37,7 @@ def parse_date(date_value: str) -> str:
     return date
 
 
-def create_record(root: ElementTree.Element, url: str) -> tuple[Path, bool]:
+def create_record(root: ElementTree.Element, url: str, source_references=()) -> tuple[Path, bool]:
     issued = first_node(root, "issued")
     date_node = first_node(issued, "date") if issued is not None else None
     range_node = first_node(issued, "dateRange") if issued is not None else None
@@ -66,6 +66,8 @@ def create_record(root: ElementTree.Element, url: str) -> tuple[Path, bool]:
     if seal is not None and node_text(seal):
         german += f"\n\nSiegler: {node_text(seal)}"
     entry: dict[str, object] = {"source": citation, "url": url, "german": german}
+    if source_references:
+        entry['source'] = list(dict.fromkeys([citation, *source_references]))
     graphics = [node.get("url", "").strip() for node in root.iter()
                 if local_name(node.tag) == "graphic" and node.get("url", "").strip()]
     if graphics:
