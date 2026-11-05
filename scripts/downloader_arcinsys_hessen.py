@@ -119,61 +119,12 @@ def dated_paths(date: str) -> list[Path]:
                   key=lambda p: (int(pattern.fullmatch(p.name).group(1) or 1), p.name))
 
 
-def as_list(value: object) -> list:
-    return value if isinstance(value, list) else [value] if value else []
+def save_record(record: dict[str, object]) -> tuple[Path, bool]:
+    from downloader_storage import save_record as save
+    return save(record, DOCUMENT_DIR)
 
 
-def matching_texts(entry: dict) -> set[str]:
-    return {" ".join(value.split()) for key in ("german", "latin", "summary")
-            if isinstance((value := entry.get(key)), str) and value.strip()}
-
-
-def save_record(record: dict[str, object], skip_existing: bool = False) -> tuple[Path, bool]:
-    date = str(record["date"])
-    paths = dated_paths(date)
-    incoming = record["entries"][0]
-    # First find an existing citation on this date, even when it is in an array.
-    for path in paths:
-        document = json.loads(path.read_text(encoding="utf-8"))
-        for entry in document.get("entries", []):
-            if isinstance(entry, dict) and incoming.get("source") in as_list(entry.get("source")):
-                if skip_existing:
-                    return path, True
-                # Preserve any other citations and links on a previously merged entry.
-                for key, value in incoming.items():
-                    if key not in ("source", "url"):
-                        entry[key] = value
-                labels = as_list(document.get("label"))
-                if "to review" not in labels:
-                    labels.append("to review")
-                document["label"] = labels
-                path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-                return path, True
-    # Exact content can identify the same document even if date precision differs.
-    texts = matching_texts(incoming)
-    if texts:
-        for path in sorted(DOCUMENT_DIR.glob("*.json")):
-            document = json.loads(path.read_text(encoding="utf-8"))
-            for entry in document.get("entries", []):
-                if not isinstance(entry, dict) or not texts.intersection(matching_texts(entry)):
-                    continue
-                for key in ("source", "url"):
-                    old = as_list(entry.get(key))
-                    for value in as_list(incoming.get(key)):
-                        if value not in old:
-                            old.append(value)
-                    if old:
-                        entry[key] = old[0] if len(old) == 1 else old
-                path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-                return path, True
-    stem = re.sub(r"[^0-9-]+", "_", date)
-    suffixes = [int(m.group(1)) for p in paths if (m := re.fullmatch(rf"{re.escape(stem)}_(\d+)\.json", p.name))]
-    path = DOCUMENT_DIR / (f"{stem}_{max(suffixes, default=1) + 1}.json" if paths else f"{stem}.json")
-    path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return path, False
-
-
-def create_record(url: str, skip_existing: bool = False) -> tuple[Path, bool]:
+def create_record(url: str) -> tuple[Path, bool]:
     parsed = urlsplit(url)
     if parsed.scheme != "https" or parsed.hostname not in HOSTS or parsed.path.rstrip("/") != "/arcinsys/showArchivalDescriptionDetails.action":
         raise ValueError("Expected an https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action URL")
@@ -207,22 +158,18 @@ def create_record(url: str, skip_existing: bool = False) -> tuple[Path, bool]:
         entry["img"] = [{"src": image} for image in image_list]
     record = {"date": iso_date(date_value), "label": ["to review"], "entries": [entry]}
     DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
-    return save_record(record, skip_existing=skip_existing)
+    return save_record(record)
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("url", help="Arcinsys Hessen archival description URL")
-    parser.add_argument("--skip-existing", action="store_true", help="leave existing entries with the same source unchanged")
     args = parser.parse_args()
     try:
-        path, updated = create_record(args.url, skip_existing=args.skip_existing)
+        path, updated = create_record(args.url)
     except Exception as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
-    if updated and args.skip_existing:
-        print(f"Existing or merged file: {path.relative_to(REPOSITORY_ROOT)}")
-        return 0
     print(f"Only updated existing file: {path.relative_to(REPOSITORY_ROOT)}" if updated else path.relative_to(REPOSITORY_ROOT))
     return 0
 

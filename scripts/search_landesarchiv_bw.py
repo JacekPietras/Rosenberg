@@ -9,6 +9,8 @@ import subprocess
 import sys
 import time
 from html.parser import HTMLParser
+
+from downloader_storage import has_url
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
@@ -162,6 +164,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('query', help='phrase to search for')
     parser.add_argument('--list-only', action='store_true', help='list results without downloading')
+    parser.add_argument('--skip-existing', action='store_true', help='skip downloading URLs already stored locally')
     parser.add_argument('--limit', type=int, help='maximum number of results')
     parser.add_argument('--delay', type=float, default=3, help='seconds between requests (minimum 1; default 3)')
     args = parser.parse_args()
@@ -181,11 +184,14 @@ def main():
             url = client.resolve(row)
             count += 1
             print(f'{count}. {row["signature"]} | {row["date"]}\n   {url}', flush=True)
+            if not args.list_only and args.skip_existing and has_url(ROOT / 'data/documents', url):
+                print(f'Skipping existing URL: {url}', flush=True)
+                continue
             if not args.list_only:
                 client.wait()
                 print(f'Downloading {url}', flush=True)
                 command = [sys.executable, str(ROOT / 'scripts/downloader_universal.py'), url,
-                    '--catalog-id', row['id'], '--bestand', row['bestand'], '--skip-existing',
+                    '--catalog-id', row['id'], '--bestand', row['bestand'],
                     '--delay', str(args.delay)]
                 if row['has_viewer']:
                     command.append('--has-viewer')

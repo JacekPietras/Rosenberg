@@ -83,7 +83,7 @@ export async function renderActiveScreen({
     setupSealAnnotations();
     return;
   }
-  const allRecordPaths = state.manifest.documents;
+  const allRecordPaths = state.manifest.documents.filter((path) => state.documents.get(path)?.deleted !== true && state.documents.get(path)?.deleted !== 'true');
   const paths = state.active === 'documents' ? visibleRecordPaths(allRecordPaths) : [state.active];
   const selectedYear = documentYear(state.documents.get(state.record));
   const shouldRestoreRecord = state.active === 'documents'

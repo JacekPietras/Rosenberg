@@ -34,6 +34,33 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
   };
 
   document.addEventListener('click', async (event) => {
+    const reviewButton = event.target.closest('[data-review-action]');
+    if (reviewButton) {
+      const path = reviewButton.dataset.reviewPath;
+      const original = state.documents.get(path);
+      if (!original || !state.canEditDocuments) return;
+      const updated = { ...original };
+      if (reviewButton.dataset.reviewAction === 'delete') updated.deleted = true;
+      else if (reviewButton.dataset.reviewAction === 'keep') {
+        const labels = labelsFor(original).filter((label) => label.toLocaleLowerCase() !== 'to review');
+        if (!labels.length) delete updated.label;
+        else updated.label = labels.length === 1 ? labels[0] : labels;
+      } else return;
+      const controls = reviewButton.closest('.document-heading-aside');
+      const status = controls.querySelector('.record-review-status');
+      controls.querySelectorAll('[data-review-action]').forEach((button) => { button.disabled = true; });
+      status.textContent = 'Saving…';
+      try {
+        await repository.saveDocument(path, updated);
+        state.documents.set(path, updated);
+        state.snapshot = '';
+        await rerender();
+      } catch (error) {
+        status.textContent = `Could not save: ${error.message}`;
+        controls.querySelectorAll('[data-review-action]').forEach((button) => { button.disabled = false; });
+      }
+      return;
+    }
     const editButton = event.target.closest('[data-edit-record-labels]');
     if (editButton) {
       activePath = editButton.dataset.editRecordLabels;

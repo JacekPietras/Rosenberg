@@ -143,7 +143,7 @@ def update_existing(path: Path, source: str, generated_entry: dict[str, object])
 
 
 def create_record(url: str, catalog_id: str | None = None, bestand: str | None = None,
-                  skip_existing: bool = False, has_viewer: bool = False, delay: float = 3) -> tuple[Path, bool]:
+                  has_viewer: bool = False, delay: float = 3) -> tuple[Path, bool]:
     from urllib.parse import parse_qs, urlsplit
 
     parsed = urlsplit(url)
@@ -189,27 +189,9 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         generated_entry["img"] = [{"src": image_url} for image_url in images]
 
     DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
-    from downloader_arcinsys_hessen import save_record
+    from downloader_storage import save_record
     record = {"date": date, "label": ["to review"], "entries": [generated_entry]}
-    path, existing = save_record(record, skip_existing=skip_existing)
-    if existing and images:
-        document = json.loads(path.read_text(encoding="utf-8"))
-        for entry in document.get("entries", []):
-            sources = entry.get("source", [])
-            sources = sources if isinstance(sources, list) else [sources]
-            if source not in sources:
-                continue
-            current = entry.get("img", [])
-            current = current if isinstance(current, list) else [current]
-            known = {item.get("src") for item in current if isinstance(item, dict)}
-            for image in images:
-                if image not in known:
-                    current.append({"src": image})
-                    known.add(image)
-            entry["img"] = current
-            path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-            break
-    return path, existing
+    return save_record(record, DOCUMENT_DIR)
 
 
 
@@ -218,18 +200,15 @@ def main() -> int:
     parser.add_argument("url", help="Landesarchiv BW permalink")
     parser.add_argument("--catalog-id", help="legacy catalogue record ID")
     parser.add_argument("--bestand", help="legacy catalogue collection ID")
-    parser.add_argument("--skip-existing", action="store_true", help="preserve existing source entries")
     parser.add_argument("--has-viewer", action="store_true", help="resolve the viewer linked in search results")
     parser.add_argument("--delay", type=float, default=3, help="seconds between catalogue and viewer requests")
     args = parser.parse_args()
     try:
-        path, updated = create_record(args.url, args.catalog_id, args.bestand, args.skip_existing, args.has_viewer, args.delay)
+        path, updated = create_record(args.url, args.catalog_id, args.bestand, args.has_viewer, args.delay)
     except Exception as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
-    if updated and args.skip_existing:
-        print(f"Existing or merged file: {path.relative_to(REPOSITORY_ROOT)}")
-    elif updated:
+    if updated:
         print(f"Only updated existing file: {path.relative_to(REPOSITORY_ROOT)}")
     else:
         print(path.relative_to(REPOSITORY_ROOT))

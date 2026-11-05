@@ -56,27 +56,5 @@ def create_record(root: ElementTree.Element, url: str) -> tuple[Path, bool]:
         entry["img"] = [{"src": image} for image in dict.fromkeys(graphics)]
     record = {"date": date, "label": ["to review"], "entries": [entry]}
 
-    document_dir = REPOSITORY_ROOT / "data" / "documents"
-    document_dir.mkdir(parents=True, exist_ok=True)
-    stem = re.sub(r"[^0-9-]+", "_", date)
-    pattern = re.compile(rf"{re.escape(stem)}(?:_(\d+))?\.json$")
-    paths = sorted((p for p in document_dir.glob(f"{stem}*.json") if pattern.fullmatch(p.name)),
-                   key=lambda p: (int(pattern.fullmatch(p.name).group(1) or 1), p.name))
-    for path in paths:
-        document = json.loads(path.read_text(encoding="utf-8"))
-        for old_entry in document.get("entries", []):
-            if isinstance(old_entry, dict) and old_entry.get("source") == citation:
-                old_entry.update(entry)
-                labels = document.get("label", [])
-                labels = [labels] if isinstance(labels, str) else list(labels)
-                if "to review" not in labels:
-                    labels.append("to review")
-                document["label"] = labels
-                path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-                return path, True
-    suffixes = [int(m.group(1)) for p in paths if (m := re.fullmatch(rf"{re.escape(stem)}_(\d+)\.json", p.name))]
-    output = document_dir / (f"{stem}_{max(suffixes, default=1) + 1}.json" if paths else f"{stem}.json")
-    output.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return output, False
-
-
+    from downloader_storage import save_record
+    return save_record(record, REPOSITORY_ROOT / "data" / "documents")

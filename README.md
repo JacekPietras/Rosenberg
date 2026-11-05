@@ -135,8 +135,9 @@ its results, including matches in indexed person descriptors. Namesakes can
 still match, and alternate historical spellings require separate searches.
 `--limit` limits the number of results listed.
 
-Downloading stops on the first error, and entries with an existing source
-signature are left unchanged. Requests and downloads run sequentially, with a
+Downloading stops on the first error. Existing entries keep their text and
+annotations while newly available fields and images are added. Use `--skip-existing`
+on a search to skip downloading URLs already stored locally. Requests and downloads run sequentially, with a
 default three-second interval; use `--delay` to increase it. The script stops
 on blocking or rate-limit responses. These precautions cannot guarantee that the
 archive will not impose limits.
@@ -154,7 +155,8 @@ python3 scripts/search_landesarchiv_bw.py 'Konrad von Rosenberg' --list-only --l
 The search follows all catalogue pages, resolves each result to its permanent
 link and prints progress. Search downloads create catalogue metadata entries
 marked `to review`, including image links when the results include a viewer.
-Existing citations and exact matching text are recognized. Results can
+Existing citations and exact matching text are recognized. Use `--skip-existing`
+to skip downloading URLs already stored locally. Results can
 include namesakes or records matched through indexed fields. Use `--delay` to
 increase the default three-second spacing between search and download steps;
 blocking and rate-limit responses stop the run.

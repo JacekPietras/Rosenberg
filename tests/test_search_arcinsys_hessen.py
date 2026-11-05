@@ -30,14 +30,14 @@ class SearchTests(unittest.TestCase):
         state = json.loads(__import__('urllib.parse', fromlist=['parse_qs']).parse_qs(request.call_args.args[1].decode())['tableStateJson'][0])
         self.assertEqual(state['start'], 100)
 
-    def test_skip_existing_preserves_entry(self):
+    def test_existing_text_is_preserved(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / '1400.json'
             original = {'date': '1400', 'entries': [{'source': 'signature', 'german': 'reviewed'}]}
             path.write_text(json.dumps(original))
             incoming = {'date': '1400', 'entries': [{'source': 'signature', 'german': 'new'}]}
             with patch.object(downloader, 'DOCUMENT_DIR', Path(directory)):
-                result, existing = downloader.save_record(incoming, skip_existing=True)
+                result, existing = downloader.save_record(incoming)
             self.assertTrue(existing)
             self.assertEqual(result, path)
             self.assertEqual(json.loads(path.read_text()), original)
@@ -52,8 +52,8 @@ class SearchTests(unittest.TestCase):
                 incoming = {'date': '1400', 'entries': [{'source': 'new', 'url': 'new-url',
                     'german': 'The same text'}]}
                 with patch.object(downloader, 'DOCUMENT_DIR', Path(directory)):
-                    result, matched = downloader.save_record(incoming, skip_existing=True)
-                    self.assertEqual(downloader.save_record(incoming, skip_existing=True), (path, True))
+                    result, matched = downloader.save_record(incoming)
+                    self.assertEqual(downloader.save_record(incoming), (path, True))
                 self.assertTrue(matched)
                 self.assertEqual(result, path)
                 entry = json.loads(path.read_text())['entries'][0]
@@ -62,7 +62,7 @@ class SearchTests(unittest.TestCase):
                 self.assertEqual(entry['english'], 'Keep this translation')
                 self.assertEqual(entry[field], 'The same   text')
 
-    def test_existing_source_in_list_is_skipped(self):
+    def test_existing_source_in_list_is_matched(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / '1400.json'
             original = {'date': '1400', 'entries': [{'source': ['first', 'second'],
@@ -71,7 +71,7 @@ class SearchTests(unittest.TestCase):
             incoming = {'date': '1400', 'entries': [{'source': 'second',
                 'url': 'second-url', 'german': 'Different text'}]}
             with patch.object(downloader, 'DOCUMENT_DIR', Path(directory)):
-                result, matched = downloader.save_record(incoming, skip_existing=True)
+                result, matched = downloader.save_record(incoming)
             self.assertEqual((result, matched), (path, True))
             self.assertEqual(json.loads(path.read_text()), original)
             self.assertEqual(list(Path(directory).glob('*.json')), [path])
@@ -82,7 +82,7 @@ class SearchTests(unittest.TestCase):
             path.write_text(json.dumps({'date': '1400', 'entries': [{'source': 'old', 'german': ''}]}))
             incoming = {'date': '1400', 'entries': [{'source': 'new', 'german': ''}]}
             with patch.object(downloader, 'DOCUMENT_DIR', Path(directory)):
-                result, matched = downloader.save_record(incoming, skip_existing=True)
+                result, matched = downloader.save_record(incoming)
             self.assertFalse(matched)
             self.assertNotEqual(result, path)
 

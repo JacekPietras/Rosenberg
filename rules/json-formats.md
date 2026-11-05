@@ -156,6 +156,7 @@ punctuation, and spaces inside the passage remain unchanged.
 
 - `date` (required): the document's historical date. `place`: place of issue.
 - `transcribed`: `true` when transcribed; absent or `false` otherwise.
+- `deleted`: `true` hides the whole document from the Documents screen while retaining its JSON.
 - `label`: a string or array of strings, shown as badges. `important` gives a
   reddish background; `Hessen`, `Schenk`, and `Mönch` a dimmed one.
 - Entries keep `source` (the citation), their text fields, and `facts`.

@@ -139,26 +139,8 @@ def dated_paths(date: str) -> list[Path]:
 
 
 def save_record(record: dict[str, object]) -> tuple[Path, bool]:
-    date = str(record["date"])
-    paths = dated_paths(date)
-    incoming = record["entries"][0]
-    for path in paths:
-        document = json.loads(path.read_text(encoding="utf-8"))
-        for entry in document.get("entries", []):
-            if isinstance(entry, dict) and entry.get("source") == incoming.get("source"):
-                entry.update(incoming)
-                labels = document.get("label", [])
-                labels = [labels] if isinstance(labels, str) else list(labels)
-                if "to review" not in labels:
-                    labels.append("to review")
-                document["label"] = labels
-                path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-                return path, True
-    stem = re.sub(r"[^0-9-]+", "_", date)
-    suffixes = [int(m.group(1)) for p in paths if (m := re.fullmatch(rf"{re.escape(stem)}_(\d+)\.json", p.name))]
-    path = DOCUMENT_DIR / (f"{stem}_{max(suffixes, default=1) + 1}.json" if paths else f"{stem}.json")
-    path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return path, False
+    from downloader_storage import save_record as save
+    return save(record, DOCUMENT_DIR)
 
 
 def create_record(url: str) -> tuple[Path, bool]:

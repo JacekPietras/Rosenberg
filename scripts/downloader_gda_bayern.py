@@ -178,20 +178,9 @@ def create_record(url: str) -> tuple[Path, bool]:
     if images:
         generated_entry["img"] = [{"src": image_url} for image_url in images]
 
-    DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
-    existing_paths = dated_document_paths(date)
-    for path in existing_paths:
-        if update_existing(path, citations[0], generated_entry):
-            return path, True
-
-    record = {
-        "date": date,
-        "label": ["to review"],
-        "entries": [generated_entry],
-    }
-    path = next_output_path(date, existing_paths)
-    path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return path, False
+    from downloader_storage import save_record
+    record = {"date": date, "label": ["to review"], "entries": [generated_entry]}
+    return save_record(record, DOCUMENT_DIR)
 
 
 def main() -> int:

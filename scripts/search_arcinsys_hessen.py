@@ -10,6 +10,8 @@ import subprocess
 import sys
 import time
 from html.parser import HTMLParser
+
+from downloader_storage import has_url
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.parse import urlencode, urljoin
@@ -138,6 +140,7 @@ def main():
     mode = p.add_mutually_exclusive_group()
     mode.add_argument('--download', action='store_true', help='download archival records (default)')
     mode.add_argument('--list-only', action='store_true', help='list results without downloading')
+    p.add_argument('--skip-existing', action='store_true', help='skip downloading URLs already stored locally')
     p.add_argument('--limit', type=int, help='maximum number of search results to list')
     p.add_argument('--delay', type=float, default=3, help='seconds between requests and downloads (minimum 1; default 3)')
     args = p.parse_args()
@@ -158,11 +161,14 @@ def main():
             url = record_url(row)
             count += 1
             print(f'{count}. {row.get("columnKeySignatur", "")} | {row.get("columnKeyLaufzeit", "")} | {row.get("columnKeyBezeichnung", "")}\n   {url or "No archival record URL"}', flush=True)
+            if not args.list_only and url and args.skip_existing and has_url(ROOT / 'data/documents', url):
+                print(f'Skipping existing URL: {url}', flush=True)
+                continue
             if not args.list_only and url:
                 time.sleep(max(0, args.delay - (time.monotonic() - client.last_request)))
                 client.last_request = time.monotonic()
                 print(f'Downloading {url}', flush=True)
-                proc = subprocess.run([sys.executable, str(ROOT / 'scripts/downloader_universal.py'), url, '--skip-existing'], cwd=ROOT)
+                proc = subprocess.run([sys.executable, str(ROOT / 'scripts/downloader_universal.py'), url], cwd=ROOT)
                 if proc.returncode:
                     raise RuntimeError(f'Downloader failed for {url}; stopping (exit {proc.returncode})')
         print(f'Listed {count} of {total} catalogue results'

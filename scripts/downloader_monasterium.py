@@ -85,7 +85,7 @@ def fetch_cei(url: str) -> bytes:
     return payload[:end + len(b"</atom:entry>")] if end >= 0 else payload
 
 
-def add_monasterium_url(path: Path, monasterium_url: str, archive_url: str) -> None:
+def add_monasterium_url(path: Path, monasterium_url: str, archive_url: str, root: ElementTree.Element) -> None:
     document = json.loads(path.read_text(encoding="utf-8"))
     for entry in document.get("entries", []):
         if not isinstance(entry, dict):
@@ -94,7 +94,10 @@ def add_monasterium_url(path: Path, monasterium_url: str, archive_url: str) -> N
         old_urls = [old_urls] if isinstance(old_urls, str) else list(old_urls)
         if archive_url not in old_urls:
             continue
-        entry["url"] = list(dict.fromkeys([monasterium_url, archive_url, *old_urls]))
+        from downloader_storage import merge_entry
+        graphics = [node.get("url", "").strip() for node in root.iter()
+                    if local_name(node.tag) == "graphic" and node.get("url", "").strip()]
+        merge_entry(entry, {"url": monasterium_url, "img": [{"src": image} for image in graphics]})
         path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         return
     raise ValueError(f"The archive downloader did not save an entry for {archive_url}")
@@ -120,7 +123,7 @@ def create_record(url: str) -> tuple[Path, bool]:
         archive = (archive_url, create_gda_record)
     archive_url, downloader = archive
     path, updated = downloader(archive_url)
-    add_monasterium_url(path, url, archive_url)
+    add_monasterium_url(path, url, archive_url, root)
     return path, updated
 
 

@@ -133,6 +133,10 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .document-heading small { color: var(--muted); font-size: .78rem; white-space: nowrap; }
 .document-heading-aside { display: flex; flex-direction: column; align-items: flex-end; gap: .35rem; }
 .record-labels { display: flex; align-items: center; justify-content: flex-end; gap: .35rem; flex-wrap: wrap; }
+.record-review-actions { display: flex; gap: .4rem; }
+.record-review-actions button { padding: .3rem .6rem; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.record-review-actions button:disabled { opacity: .55; cursor: wait; }
+.record-review-status { color: var(--muted); font-size: .8rem; }
 .record-label-edit { display: inline-grid; width: 1.65rem; height: 1.65rem; place-items: center; padding: .25rem; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
 .record-label-edit:hover, .record-label-edit:focus-visible { color: var(--accent); background: var(--surface-raised); }
 .record-label-edit svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }

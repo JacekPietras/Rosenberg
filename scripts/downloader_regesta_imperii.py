@@ -356,14 +356,8 @@ def create_record(url: str) -> tuple[Path, bool]:
     except (HTTPError, ValueError):
         _, page = fetch(canonical_url(url))
         record = parse_html(page, url)
-    DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
-    paths = dated_document_paths(str(record["date"]))
-    for path in paths:
-        if update_existing(path, record):
-            return path, True
-    path = next_output_path(str(record["date"]), paths)
-    path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return path, False
+    from downloader_storage import save_record
+    return save_record(record, DOCUMENT_DIR)
 
 
 def main() -> int:
