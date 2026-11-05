@@ -12,7 +12,9 @@ python3 scripts/archive_images/download_selected_archive_image.py 'VIEWER_URL' -
 python3 scripts/archive_images/download_selected_archive_image.py 'https://digi.vatlib.it/view/MSS_Vat.lat.10127' --folio '108 r' --output /tmp/vat_lat_10127_108r.jpg
 ```
 
-Supports Internet Archive, DigiVatLib, BLB Karlsruhe, GNM, LOC RBC, and Findbuch.
+Supports Internet Archive, DigiVatLib, BLB Karlsruhe, GNM, LOC RBC, Findbuch,
+and Bavarikon. For a Bavarikon object with multiple images, `--page` selects a
+one-based image sequence entry; a URL `p=` selector is used when present.
 `--resolve-only` prints image details without downloading. `--page` is a
 one-based viewer sequence number; Internet Archive `nNNN` URLs use zero-based
 scan leaves. Neither automatically identifies a manuscript folio. Vatican and
@@ -25,11 +27,11 @@ existing destination files; a successful download alone does not establish
 historical identification, dating, or a license. LOC's fallback reports when it
 used an image-service filename instead of the viewer API.
 
-When the user requests Drive upload or catalog addition, follow
+Next upload confirmed image to Google Drive, follow
 [google-drive-objects](../google-drive-objects/SKILL.md).
 Check for an existing entry before uploading. Use the uploader's returned cloud
 ID, then make the smallest direct edit to `../../../data/images/images.json` under
-`rules/json-formats.md`. Use `label: "armorial"` when requested. Preserve source
+`rules/json-formats.md`. Use `label: "armorial"`, `effigy` or other when requested. Preserve source
 links and supported credits/usage terms; keep folios separate from titles. Do
 not invent a folio or date from a scan index or filename. Validate JSON and
 review the diff. The downloader itself neither uploads nor edits the catalog.
@@ -59,9 +61,7 @@ fabricate a catalog entry.
 Observed pitfalls are encoded in the handlers: Findbuch's `gtpc.php` uses the
 selected path's array index, not the image filename number; GNM exposes image
 URLs in its viewer JSON; BLB's social preview can point at a different leaf;
-Vatican folios must come from its IIIF manifest. For Landesarchiv BW, page
-discovery is part of
-`../../../scripts/archive_records/archive_record_landesarchiv_bw.py`; extend it
-there when needed. For Bavarikon, inspect and reuse
-`../../../scripts/parse_bavarikon.py` when extending support instead of
-duplicating its specialized download logic.
+Vatican folios must come from its IIIF manifest. Bavarikon access,
+object-page parsing, and IIIF image discovery are implemented directly in
+`../../../scripts/archive_images/download_selected_archive_image.py`; extend
+that handler when Bavarikon's page mapping changes.

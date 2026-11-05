@@ -184,23 +184,11 @@ python3 scripts/archive_images/download_selected_archive_image.py \
 ```
 
 Supports Internet Archive, DigiVatLib, BLB Karlsruhe, GNM, Library of Congress
-RBC, and Findbuch. Use `--resolve-only` to inspect image details. Follow the
-[archive image skill](.agents/skills/archive-image-download/SKILL.md) for verification,
-Drive uploads, catalog entries, and adding support for new viewers.
-
-### Bavarikon images
-
-Parse image URLs from a Bavarikon object page with:
-
-```text
-python3 scripts/parse_bavarikon.py 'https://www.bavarikon.de/object/...'
-```
-
-The script handles Bavarikon's Anubis proof-of-work check directly and uses
-only Python's standard library.
-
-Add `--download` to cache discovered images under
-`data/documents/img-temp/bavarikon/`.
+RBC, Findbuch, and Bavarikon. For Bavarikon object pages, the URL's `p=` selects
+that image; otherwise use `--page` when the object has multiple images. Use
+`--resolve-only` to inspect image details. Follow the
+[archive image skill](.agents/skills/archive-image-download/SKILL.md) for
+verification, Drive uploads, catalog entries, and adding support for new viewers.
 
 ## Search facts
 
