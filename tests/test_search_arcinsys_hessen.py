@@ -13,6 +13,18 @@ import archive_record_arcinsys_hessen as downloader
 
 
 class SearchTests(unittest.TestCase):
+    def test_dotted_datierung_keeps_day_month_and_year(self):
+        self.assertEqual(downloader.iso_date('31.08.1444'), '1444-08-31')
+
+    def test_year_only_record_is_promoted_to_full_arcinsys_date(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / '1444.json'
+            path.write_text(json.dumps({'date': '1444', 'entries': [{'source': 'Archive record'}]}))
+            promoted = downloader.promote_existing_date(path, '1444-08-31')
+            self.assertEqual(promoted.name, '1444-08-31.json')
+            self.assertFalse(path.exists())
+            self.assertEqual(json.loads(promoted.read_text())['date'], '1444-08-31')
+
     def test_pagination_and_record_links(self):
         form = '<form id="simpleSearchForm"><input name="executionId" value="abc"></form>'
         result = ('<meta name="_csrf" content="token">'

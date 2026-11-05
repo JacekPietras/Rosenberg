@@ -8,6 +8,7 @@ import html
 import json
 import re
 import sys
+from datetime import date as calendar_date
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import parse_qs, urljoin, urlsplit
@@ -99,6 +100,13 @@ def fetch(url: str) -> str:
 
 def iso_date(value: str) -> str:
     value = html.unescape(value).strip()
+    dotted = re.search(r"(?<!\d)(\d{1,2})\.(\d{1,2})\.(\d{4})(?!\d)", value)
+    if dotted:
+        day, month, year = map(int, dotted.groups())
+        try:
+            return calendar_date(year, month, day).isoformat()
+        except ValueError as exc:
+            raise ValueError(f"Invalid day-month-year date in Datierung: {value!r}") from exc
     match = re.search(r"(?<!\d)(\d{4})\s+([A-Za-zÄÖÜäöüß]+)(?:\s+(\d{1,2}))?", value)
     if match:
         year, month, day = match.groups()
@@ -122,6 +130,24 @@ def dated_paths(date: str) -> list[Path]:
 def save_record(record: dict[str, object]) -> tuple[Path, bool]:
     from archive_record_storage import save_record as save
     return save(record, DOCUMENT_DIR)
+
+
+def promote_existing_date(path: Path, date: str) -> Path:
+    """Promote a matched year-only record when Arcinsys provides a full date."""
+    document = json.loads(path.read_text(encoding="utf-8"))
+    old_date = str(document.get("date", ""))
+    if (not re.fullmatch(r"\d{4}", old_date)
+            or not date.startswith(old_date + "-")
+            or not re.fullmatch(rf"{old_date}(?:_\d+)?", path.stem)
+            or len(document.get("entries", [])) != 1):
+        return path
+    target = path.with_name(f"{date}.json")
+    if target.exists():
+        return path
+    document["date"] = date
+    target.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.unlink()
+    return target
 
 
 def create_record(url: str) -> tuple[Path, bool]:
@@ -156,9 +182,13 @@ def create_record(url: str) -> tuple[Path, bool]:
     ))
     if image_list:
         entry["img"] = [{"src": image} for image in image_list]
-    record = {"date": iso_date(date_value), "label": ["to review"], "entries": [entry]}
+    date = iso_date(date_value)
+    record = {"date": date, "label": ["to review"], "entries": [entry]}
     DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
-    return save_record(record)
+    path, updated = save_record(record)
+    if updated:
+        path = promote_existing_date(path, date)
+    return path, updated
 
 
 def main() -> int:
