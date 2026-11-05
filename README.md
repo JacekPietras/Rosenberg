@@ -39,7 +39,9 @@ verification.
 The viewer is published at <https://jacekpietras.github.io/Rosenberg/> (read-only). 
 For local testing and modifications under <http://localhost:8000/docs/>, run `./server`
 
-## Reconstruct the family graph
+## Family Graph
+
+### Reconstruct the family graph
 
 Read the reconstruction without changing files:
 
@@ -123,74 +125,23 @@ Regesta Imperii URLs can be HTML record links, persistent `/id/` links, or CEI
 REST source links. Review the generated entry before using it as a completed
 document record.
 
-### Search Arcinsys Hessen
+### Search archives
 
-Search and download archival records through the archive record importer
-(created entries require review), or list catalogue results without downloading:
+Archive search scripts are in `scripts/archive_search/`. For example:
 
 ```text
 python3 scripts/archive_search/search_arcinsys_hessen.py 'Eberhard von Rosenberg'
-python3 scripts/archive_search/search_arcinsys_hessen.py 'Eberhard von Rosenberg' --limit 20 --list-only
-python3 scripts/archive_search/search_arcinsys_hessen.py 'Eberhard Rosenberg' --download
-```
-
-The script sends the full phrase to Arcinsys as a quoted search and returns
-its results, including matches in indexed person descriptors. Namesakes can
-still match, and alternate historical spellings require separate searches.
-`--limit` limits the number of results listed.
-
-Downloading stops on the first error. Existing entries keep their text and
-annotations while newly available fields and images are added. Use `--skip-existing`
-on a search to skip downloading URLs already stored locally. Requests and downloads run sequentially, with a
-default three-second interval; use `--delay` to increase it. The script stops
-on blocking or rate-limit responses. These precautions cannot guarantee that the
-archive will not impose limits.
-
-### Search Landesarchiv Baden-Württemberg
-
-Search for a quoted phrase across the legacy catalogue and download matching
-records, or list them without downloading:
-
-```text
 python3 scripts/archive_search/search_landesarchiv_bw.py 'Konrad von Rosenberg'
-python3 scripts/archive_search/search_landesarchiv_bw.py 'Konrad von Rosenberg' --list-only --limit 20
 ```
-
-The search follows all catalogue pages, resolves each result to its permanent
-link and prints progress. Search downloads create catalogue metadata entries
-marked `to review`, including image links when the results include a viewer.
-Existing citations and exact matching text are recognized. Use `--skip-existing`
-to skip downloading URLs already stored locally. Results can
-include namesakes or records matched through indexed fields. Use `--delay` to
-increase the default three-second spacing between search and download steps;
-blocking and rate-limit responses stop the run.
-
-### Local document image cache
-
-The local viewer downloads external document images on demand and stores them
-under `data/documents/img-temp/`. The cache is ignored by Git. No separate
-prefetch script is needed; opening a document with images fills the cache.
 
 ### Selected archive image
 
-`download_selected_archive_image.py` resolves and downloads one explicitly
-selected viewer page to a destination path. It does not create a document
-record or alter the local cache:
+Follow the [archive image skill](.agents/skills/archive-image-download/SKILL.md)
+to download a selected archive image.
 
-```text
-python3 scripts/archive_images/download_selected_archive_image.py \
-  'https://digi.vatlib.it/view/MSS_Vat.lat.10127' --folio 108r \
-  --output /tmp/vat_lat_10127_108r.jpg
-```
+## Facts
 
-Supports Internet Archive, DigiVatLib, BLB Karlsruhe, GNM, Library of Congress
-RBC, Findbuch, and Bavarikon. For Bavarikon object pages, the URL's `p=` selects
-that image; otherwise use `--page` when the object has multiple images. Use
-`--resolve-only` to inspect image details. Follow the
-[archive image skill](.agents/skills/archive-image-download/SKILL.md) for
-verification, Drive uploads, catalog entries, and adding support for new viewers.
-
-## Search facts
+### Search facts
 
 Search every `facts` array in JSON files under `data/` by person ID, full or
 partial person name, surname, or place. This includes documents, books, images,
@@ -211,7 +162,7 @@ python3 scripts/search_facts_by_name.py 'Eberhard von Rosenberg'
 python3 scripts/search_facts_by_name.py Boxberg
 ```
 
-## Search places mentioned in a person's facts
+### Search places mentioned in a person's facts
 
 List unique canonical names from `data/places.json` mentioned in matching facts:
 
@@ -263,24 +214,9 @@ python3 scripts/list_place_variations.py 'Boxberg'
 
 Pass a place name or spelling variation to show only matching entries. Churches are excluded by default. Include them with `--include-churches`.
 
-### Fact validation and migration
+## Facts
 
-Running `python3 scripts/facts/validate_facts.py` migrates `von und zu NAME` in
-fact participants before validating. Specify JSON files or directories to limit
-the scan. Fact participant titles are retained and `zu NAME` is added when
-absent. To preview the migration without writing, run
-`python3 scripts/facts/migrate_von_und_zu.py`.
+### Fact validation
 
-### English name review
+Run `python3 scripts/facts/validate_facts.py` to validate facts in the data.
 
-Check English text in documents and books for personal names that use a known
-name or place variation, or a non-standard `de` connector. The checker reports
-the source location and a suggested normalized form; it does not edit files.
-
-```text
-python3 scripts/facts/validate_english_names.py
-python3 scripts/facts/validate_english_names.py data/documents/1397-04-29.json
-```
-
-By default, it scans `data/documents/` and `data/books/`. Pass JSON files or
-directories to check a specific selection.
