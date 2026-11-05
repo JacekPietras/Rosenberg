@@ -24,6 +24,17 @@ class LandesarchivSearchTests(unittest.TestCase):
     def test_day_first_german_catalogue_date_keeps_full_precision(self):
         self.assertEqual(downloader.iso_date('25. Apr. 1385'), '1385-04-25')
         self.assertEqual(downloader.iso_date('25. April 1385'), '1385-04-25')
+        self.assertEqual(downloader.leading_title_date('1316 Juni 29 (an der heiligen Tag)'), '1316-06-29')
+        self.assertIsNone(downloader.leading_title_date('Hohenlohe gegen Hatzfeldt'))
+
+    def test_precise_leading_title_date_overrides_year_only_catalogue_date(self):
+        details = '''<table><tr><td>Bestellsignatur</td><td>Archive 11</td></tr>
+        <tr><td>Laufzeit</td><td>1316</td></tr><tr><td>Titel</td><td>1316 Juni 29 - Konrad von Rosenberg</td></tr></table>'''
+        with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
+                patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details):
+            path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123')
+            self.assertEqual(path.name, '1316-06-29.json')
+            self.assertEqual(json.loads(path.read_text())['date'], '1316-06-29')
 
     def test_pagination_and_form(self):
         client = search.Client(1)

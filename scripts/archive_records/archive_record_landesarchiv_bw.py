@@ -234,6 +234,14 @@ def iso_date(value: str) -> str:
     raise ValueError(f"Could not determine the document date from catalogue label: {value!r}")
 
 
+def leading_title_date(value: str) -> str | None:
+    """Read a full date when the catalogue title begins with one."""
+    match = re.match(
+        r"^\s*(\d{4}\s+[A-Za-zÄÖÜäöüß]+\.?\s+\d{1,2})(?!\d)", value
+    )
+    return iso_date(match.group(1)) if match else None
+
+
 def dated_document_paths(date: str) -> list[Path]:
     stem = re.sub(r"[^0-9-]+", "_", date)
     pattern = re.compile(rf"{re.escape(stem)}(?:_(\d+))?\.json$")
@@ -316,6 +324,8 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         raise ValueError(f"Could not find citation, date, or title for archive ID {aid}")
     source = " ".join(source.split())
     date = iso_date(date_text)
+    if re.fullmatch(r"\d{4}", date):
+        date = leading_title_date(german) or date
     siegler = details.fields.get("siegler")
     if siegler:
         german += f"\n\nSiegler: {siegler}"
