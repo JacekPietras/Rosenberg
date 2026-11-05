@@ -10,6 +10,7 @@
 - [Bavarian State Library](https://www.digitale-sammlungen.de/en/search)
 - [Ingrossaturbücher](https://www.ingrossaturbuecher.de) (Down currently)
 - [Szukaj w Archiwach](https://www.szukajwarchiwach.gov.pl/de/wyszukiwarka) (Polish sources)
+- [Prussian Secret State Archives](https://archive.spk-berlin.de/actaproweb/search.xhtml)
 
 # Small
 
