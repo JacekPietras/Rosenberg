@@ -7,12 +7,13 @@ import argparse
 import json
 import re
 import sys
+import time
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlencode, urljoin
 from urllib.request import Request, build_opener
 
-from download_landesarchiv import discover_viewer, image_urls as archive_image_urls
+from download_landesarchiv import discover_viewer, read_viewer, image_urls as archive_image_urls
 
 
 USER_AGENT = "Rosenberg research downloader/1.0"
@@ -141,7 +142,8 @@ def update_existing(path: Path, source: str, generated_entry: dict[str, object])
     return False
 
 
-def create_record(url: str) -> tuple[Path, bool]:
+def create_record(url: str, catalog_id: str | None = None, bestand: str | None = None,
+                  skip_existing: bool = False, has_viewer: bool = False, delay: float = 3) -> tuple[Path, bool]:
     from urllib.parse import parse_qs, urlsplit
 
     parsed = urlsplit(url)
@@ -151,13 +153,26 @@ def create_record(url: str) -> tuple[Path, bool]:
     if not aid:
         raise ValueError("The permalink has no f= archive identifier")
 
-    opener = build_opener()
-    viewer_url, fields, page_names, scope_id = discover_viewer(opener, url)
-    details_url = urljoin(viewer_url, "../olf/druckansicht.php") + "?" + urlencode(
-        {"id_titlaufn": fields["id"], "bestand": fields["bestand"]}
-    )
+    images = []
+    if catalog_id:
+        if not catalog_id.isdigit() or not bestand or not bestand.isdigit():
+            raise ValueError("Catalog ID and Bestand must be numeric")
+        details_url = "https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?" + urlencode(
+            {"id_titlaufn": catalog_id, "bestand": bestand})
+    else:
+        opener = build_opener()
+        viewer_url, fields, page_names, scope_id = discover_viewer(opener, url)
+        details_url = urljoin(viewer_url, "../olf/druckansicht.php") + "?" + urlencode(
+            {"id_titlaufn": fields["id"], "bestand": fields["bestand"]})
+        images = archive_image_urls(viewer_url, fields, page_names, scope_id)
     details = CatalogDetails()
     details.feed(fetch_page(details_url))
+    if catalog_id and has_viewer:
+        time.sleep(delay)
+        zoom_url = "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?" + urlencode(
+            {"bestand": bestand, "id": catalog_id})
+        viewer_url, viewer_fields, page_names, scope_id = read_viewer(build_opener(), zoom_url, catalog_id, aid)
+        images = archive_image_urls(viewer_url, viewer_fields, page_names, scope_id)
     source = details.fields.get("bestellsignatur")
     date_text = details.fields.get("laufzeit")
     german = details.fields.get("titel")
@@ -169,33 +184,52 @@ def create_record(url: str) -> tuple[Path, bool]:
     if siegler:
         german += f"\n\nSiegler: {siegler}"
 
-    images = archive_image_urls(viewer_url, fields, page_names, scope_id)
     generated_entry: dict[str, object] = {"source": source, "url": url, "german": german}
     if images:
         generated_entry["img"] = [{"src": image_url} for image_url in images]
 
     DOCUMENT_DIR.mkdir(parents=True, exist_ok=True)
-    existing_paths = dated_document_paths(date)
-    for path in existing_paths:
-        if update_existing(path, source, generated_entry):
-            return path, True
-
+    from downloader_arcinsys_hessen import save_record
     record = {"date": date, "label": ["to review"], "entries": [generated_entry]}
-    path = next_output_path(date, existing_paths)
-    path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return path, False
+    path, existing = save_record(record, skip_existing=skip_existing)
+    if existing and images:
+        document = json.loads(path.read_text(encoding="utf-8"))
+        for entry in document.get("entries", []):
+            sources = entry.get("source", [])
+            sources = sources if isinstance(sources, list) else [sources]
+            if source not in sources:
+                continue
+            current = entry.get("img", [])
+            current = current if isinstance(current, list) else [current]
+            known = {item.get("src") for item in current if isinstance(item, dict)}
+            for image in images:
+                if image not in known:
+                    current.append({"src": image})
+                    known.add(image)
+            entry["img"] = current
+            path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            break
+    return path, existing
+
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("url", help="Landesarchiv BW permalink")
+    parser.add_argument("--catalog-id", help="legacy catalogue record ID")
+    parser.add_argument("--bestand", help="legacy catalogue collection ID")
+    parser.add_argument("--skip-existing", action="store_true", help="preserve existing source entries")
+    parser.add_argument("--has-viewer", action="store_true", help="resolve the viewer linked in search results")
+    parser.add_argument("--delay", type=float, default=3, help="seconds between catalogue and viewer requests")
     args = parser.parse_args()
     try:
-        path, updated = create_record(args.url)
+        path, updated = create_record(args.url, args.catalog_id, args.bestand, args.skip_existing, args.has_viewer, args.delay)
     except Exception as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
-    if updated:
+    if updated and args.skip_existing:
+        print(f"Existing or merged file: {path.relative_to(REPOSITORY_ROOT)}")
+    elif updated:
         print(f"Only updated existing file: {path.relative_to(REPOSITORY_ROOT)}")
     else:
         print(path.relative_to(REPOSITORY_ROOT))

@@ -141,6 +141,24 @@ default three-second interval; use `--delay` to increase it. The script stops
 on blocking or rate-limit responses. These precautions cannot guarantee that the
 archive will not impose limits.
 
+### Search Landesarchiv Baden-Württemberg
+
+Search for a quoted phrase across the legacy catalogue and download matching
+records, or list them without downloading:
+
+```text
+python3 scripts/search_landesarchiv_bw.py 'Konrad von Rosenberg'
+python3 scripts/search_landesarchiv_bw.py 'Konrad von Rosenberg' --list-only --limit 20
+```
+
+The search follows all catalogue pages, resolves each result to its permanent
+link and prints progress. Search downloads create catalogue metadata entries
+marked `to review`, including image links when the results include a viewer.
+Existing citations and exact matching text are recognized. Results can
+include namesakes or records matched through indexed fields. Use `--delay` to
+increase the default three-second spacing between search and download steps;
+blocking and rate-limit responses stop the run.
+
 ### Landesarchiv images
 
 Download missing cached document images with:

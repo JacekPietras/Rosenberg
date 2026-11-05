@@ -86,6 +86,10 @@ def discover_viewer(opener, permalink: str) -> tuple[str, dict[str, str], list[s
     if not zoom_path.startswith("../"):
         zoom_path = "../" + zoom_path
     zoom_url = urljoin(landing_url, zoom_path)
+    return read_viewer(opener, zoom_url, record_id, aid)
+
+
+def read_viewer(opener, zoom_url: str, record_id: str, aid: str) -> tuple[str, dict[str, str], list[str], str]:
     viewer_url, viewer_html = fetch(opener, zoom_url)
     if not isinstance(viewer_html, str):
         raise ValueError("The image viewer did not return HTML")
