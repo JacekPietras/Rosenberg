@@ -25,6 +25,7 @@ class LandesarchivSearchTests(unittest.TestCase):
         self.assertEqual(downloader.iso_date('25. Apr. 1385'), '1385-04-25')
         self.assertEqual(downloader.iso_date('25. April 1385'), '1385-04-25')
         self.assertEqual(downloader.leading_title_date('1316 Juni 29 (an der heiligen Tag)'), '1316-06-29')
+        self.assertEqual(downloader.leading_title_date('1408 Nov. 11 (sant Mertins tag)'), '1408-11-11')
         self.assertIsNone(downloader.leading_title_date('Hohenlohe gegen Hatzfeldt'))
 
     def test_precise_leading_title_date_overrides_year_only_catalogue_date(self):

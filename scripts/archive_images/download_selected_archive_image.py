@@ -174,6 +174,20 @@ def findbuch(url, client, folio, page):
                  notes=[f"Selected catalog image: {selected}"])
 
 
+def landesarchiv_bw(url, client, folio, page):
+    """Download an exact Landesarchiv BW image URL recorded by its catalog."""
+    if folio or page is not None:
+        raise DownloadError("Landesarchiv BW needs the exact selected bild.php image URL")
+    parts = urlsplit(url)
+    if not re.fullmatch(r"/ofs21/bild_zoom/bild\.php", parts.path):
+        raise DownloadError("Expected a Landesarchiv BW /ofs21/bild_zoom/bild.php image URL")
+    selected = parse_qs(parts.query).get("originalBilddatei", [""])[0]
+    if not selected or not selected.lower().endswith((".jpg", ".jpeg")):
+        raise DownloadError("Landesarchiv BW image URL has no selected JPEG filename")
+    return Image(url, url, Path(selected).name,
+                 notes=[f"Selected catalog image: {selected}"])
+
+
 
 class PageParser(HTMLParser):
     def __init__(self) -> None:
@@ -451,7 +465,8 @@ def loc(url, client, folio, page):
 
 
 HANDLERS = {"archive.org": archive_org, "digi.vatlib.it": vatican,
-            "digital.blb-karlsruhe.de": blb, "dlib.gnm.de": gnm, "loc.gov": loc, "bavarikon.de": bavarikon}
+            "digital.blb-karlsruhe.de": blb, "dlib.gnm.de": gnm, "loc.gov": loc,
+            "bavarikon.de": bavarikon, "www2.landesarchiv-bw.de": landesarchiv_bw}
 
 
 def resolve(url, client, folio=None, page=None):

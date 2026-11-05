@@ -104,6 +104,16 @@ class SelectionTests(unittest.TestCase):
         with self.assertRaises(DownloadError):
             resolve(base + "#&path=http://offline.example/missing.jpg", client)
 
+    def test_landesarchiv_bw_uses_exact_catalog_image_url(self):
+        url = ("https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1"
+               "&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2F"
+               "olf%2Fbestand_0000001771%2Ftitlaufn_0000736702%2F02_0000736702_0003_2-736702-3.jpg")
+        image = resolve(url, FakeClient())
+        self.assertEqual("02_0000736702_0003_2-736702-3.jpg", image.filename)
+        self.assertEqual(url, image.image_url)
+        with self.assertRaises(DownloadError):
+            resolve(url, FakeClient(), page=2)
+
     def test_loc_uses_resource_sequence_and_largest_jpeg(self):
         url = "https://www.loc.gov/resource/rbc.2011rosen0017/?sp=2"
         api = "https://www.loc.gov/resource/rbc.2011rosen0017/?fo=json"

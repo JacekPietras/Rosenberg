@@ -20,19 +20,31 @@ REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
 MONTHS = {
     "januar": 1,
+    "jan": 1,
     "februar": 2,
+    "feb": 2,
     "märz": 3,
+    "mär": 3,
     "maerz": 3,
+    "mrz": 3,
     "april": 4,
     "apr": 4,
     "mai": 5,
     "juni": 6,
+    "jun": 6,
     "juli": 7,
+    "jul": 7,
     "august": 8,
+    "aug": 8,
     "september": 9,
+    "sept": 9,
+    "sep": 9,
     "oktober": 10,
+    "okt": 10,
     "november": 11,
+    "nov": 11,
     "dezember": 12,
+    "dez": 12,
 }
 
 
@@ -238,7 +250,7 @@ def iso_date(value: str) -> str:
         if month_number:
             return f"{year}-{month_number:02d}-{int(day):02d}"
     german_match = re.search(
-        r"(?<!\d)(\d{4})\s+([A-Za-zÄÖÜäöüß]+)\s+(\d{1,2})(?!\d)", value
+        r"(?<!\d)(\d{4})\s+([A-Za-zÄÖÜäöüß]+)\.?\s+(\d{1,2})(?!\d)", value
     )
     if german_match:
         year, month, day = german_match.groups()
