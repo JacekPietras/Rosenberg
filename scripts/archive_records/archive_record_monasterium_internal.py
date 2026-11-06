@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlsplit
 from xml.etree import ElementTree
 
 
@@ -42,13 +43,30 @@ def create_record(root: ElementTree.Element, url: str, source_references=()) -> 
     date_node = first_node(issued, "date") if issued is not None else None
     range_node = first_node(issued, "dateRange") if issued is not None else None
     if date_node is not None:
-        date = parse_date(date_node.get("value", ""))
+        raw_date = date_node.get('value', '')
+        if raw_date == '99999999':
+            # Some edited collections use an unknown-date sentinel despite an
+            # explicit historical date at the end of their abstract.
+            abstract = node_text(first_node(root, 'abstract'))
+            months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez']
+            match = re.search(r'\b(\d{4})\.\s*(' + '|'.join(months) + r')\.?\s+(\d{1,2})\.\s*$', abstract)
+            if not match:
+                raise ValueError('Unknown Monasterium date without an explicit date in the abstract')
+            from datetime import date as calendar_date
+            date = calendar_date(int(match[1]), months.index(match[2]) + 1, int(match[3])).isoformat()
+        else:
+            date = parse_date(raw_date)
     elif range_node is not None:
         start = parse_date(range_node.get("from", ""))
         end = parse_date(range_node.get("to", ""))
         if start > end:
             raise ValueError("Reversed Monasterium date range")
-        date = f"{start}/{end}"
+        if start == end:
+            date = start
+        elif start.endswith('-01-01') and end.endswith('-12-31'):
+            date = f'{start[:4]}-{end[:4]}'
+        else:
+            date = f"{start}/{end}"
     else:
         raise ValueError("The Monasterium record has no supported issued date")
 
@@ -58,6 +76,10 @@ def create_record(root: ElementTree.Element, url: str, source_references=()) -> 
     idno = first_node(root, "idno")
     if idno is not None and node_text(idno):
         citation = f"{citation}, {node_text(idno)}" if citation else node_text(idno)
+    if identifier is None:
+        bibliography = node_text(first_node(root, 'bibl'))
+        if bibliography:
+            citation = f'{bibliography}, {citation}'
     if not abstract or not citation:
         raise ValueError("The Monasterium record has no abstract or archival citation")
 
@@ -68,8 +90,10 @@ def create_record(root: ElementTree.Element, url: str, source_references=()) -> 
     entry: dict[str, object] = {"source": citation, "url": url, "german": german}
     if source_references:
         entry['source'] = list(dict.fromkeys([citation, *source_references]))
+        entry['url'] = list(dict.fromkeys([url, *source_references]))
     graphics = [node.get("url", "").strip() for node in root.iter()
                 if local_name(node.tag) == "graphic" and node.get("url", "").strip()]
+    graphics = [image for image in graphics if urlsplit(image).scheme in {'http', 'https'} and urlsplit(image).netloc]
     if graphics:
         entry["img"] = [{"src": image} for image in dict.fromkeys(graphics)]
     record = {"date": date, "label": ["to review"], "entries": [entry]}

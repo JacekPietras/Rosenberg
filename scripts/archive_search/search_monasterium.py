@@ -176,7 +176,7 @@ def main():
                 if args.skip_existing and has_url(ROOT / 'data/documents', url):
                     print(f'Skipping existing URL: {url}', flush=True)
                     continue
-                if not re.fullmatch(r'/mom/[^/]+/[^/]+/[^/]+/charter', urlsplit(url).path):
+                if not re.fullmatch(r'/mom/(?:[^/]+/){2,3}charter', urlsplit(url).path):
                     raise ValueError(f'The Monasterium importer does not support this collection URL: {url}; use --list-only')
                 client.wait()
                 proc = subprocess.run([sys.executable, str(ROOT / 'scripts/archive_records/archive_record_download.py'), url], cwd=ROOT)

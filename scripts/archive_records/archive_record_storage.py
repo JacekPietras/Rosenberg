@@ -89,6 +89,10 @@ def merge_entry(entry, incoming, transcribed=False):
 def save_record(record, document_dir: Path):
     document_dir.mkdir(parents=True, exist_ok=True)
     date = str(record['date'])
+    # Range endpoints belong in document metadata; filenames use the beginning.
+    date = re.split(r'/|--', date, maxsplit=1)[0]
+    if re.fullmatch(r'\d{4}-\d{4}', date):
+        date = date[:4]
     date_start = re.match(r'^(\d{4}-\d{2}-\d{2})(?:_|$)', date)
     if date_start:
         date = date_start.group(1)

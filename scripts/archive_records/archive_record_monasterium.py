@@ -59,13 +59,12 @@ def archival_permalink(root: ElementTree.Element):
 
 
 def monasterium_metadata_url(parsed) -> str:
-    match = re.fullmatch(r"/mom/([^/]+)/([^/]+)/([^/]+)/charter/?", parsed.path)
+    match = re.fullmatch(r"/mom/((?:[^/]+/){1,2}[^/]+)/charter/?", parsed.path)
     if not match:
         raise ValueError("Expected a Monasterium charter page URL")
-    archive, fonds, charter_id = match.groups()
     return (
         "https://www.monasterium.net/mom/atom/GET/metadata.charter.public/"
-        f"{archive}/{fonds}/{charter_id}.cei.xml"
+        f"{match[1]}.cei.xml"
     )
 
 
@@ -91,7 +90,7 @@ def fetch_cei(url: str) -> bytes:
 
 
 class EditionReferences(HTMLParser):
-    """Recognize edition hosts from explicit links, without contacting them."""
+    """Retain explicit edition record links; image hosts are not record IDs."""
 
     def __init__(self):
         super().__init__()
@@ -102,7 +101,13 @@ class EditionReferences(HTMLParser):
         link = attrs.get('href', '') if tag == 'a' else attrs.get('src', '') if tag == 'img' else ''
         parsed = urlsplit(link)
         if parsed.scheme in {'http', 'https'} and parsed.hostname in {'www.ingrossaturbuecher.de', 'ingrossaturbuecher.de'}:
-            reference = 'https://www.ingrossaturbuecher.de/'
+            query = parse_qs(parsed.query)
+            record_id = re.fullmatch(r'/id/source/(\d+)/?', parsed.path)
+            source_id = query.get('tx_hisodat_sources[source]', query.get('tx_hisodat_search[source]', []))
+            if not record_id and not (len(source_id) == 1 and re.fullmatch(r'\d+', source_id[0])):
+                return
+            identifier = record_id[1] if record_id else source_id[0]
+            reference = f'https://www.ingrossaturbuecher.de/id/source/{identifier}'
             if reference not in self.sources:
                 self.sources.append(reference)
 
@@ -134,9 +139,9 @@ def add_monasterium_url(path: Path, monasterium_url: str, archive_url: str, root
         if archive_url not in old_urls:
             continue
         from archive_record_storage import merge_entry
-        graphics = [node.get("url", "").strip() for node in root.iter()
-                    if local_name(node.tag) == "graphic" and node.get("url", "").strip()]
-        merge_entry(entry, {"url": monasterium_url, "img": [{"src": image} for image in graphics]})
+        # The archive downloader supplies its current image URLs. Monasterium's
+        # mirrored links can be obsolete and must not reintroduce broken images.
+        merge_entry(entry, {"url": monasterium_url})
         path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         return
     raise ValueError(f"The archive downloader did not save an entry for {archive_url}")
@@ -156,10 +161,10 @@ def create_record(url: str) -> tuple[Path, bool]:
     if archive is None:
         parts = re.fullmatch(r"/mom/([^/]+)/([^/]+)/([^/]+)/charter/?", parsed.path)
         date_node = next((node for node in root.iter() if local_name(node.tag) == "date"), None)
-        archive_url = resolve_gda_record(*parts.groups(), date_node.get("value", "") if date_node is not None else "", root=root)
+        archive_url = resolve_gda_record(*parts.groups(), date_node.get("value", "") if date_node is not None else "", root=root) if parts else None
         if archive_url is None:
             sources = fallback_sources(root, url)
-            print(f"Archive catalog URL unresolved for {parts[1]}/{parts[2]}; importing Monasterium metadata as a fallback", file=sys.stderr)
+            print(f"Archive catalog URL unresolved for {parsed.path}; importing Monasterium metadata as a fallback", file=sys.stderr)
             return create_internal_record(root, url, source_references=sources)
         archive = (archive_url, create_gda_record)
     archive_url, downloader = archive
