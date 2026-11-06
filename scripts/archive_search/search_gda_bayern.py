@@ -95,7 +95,7 @@ class Client:
         with self.opener.open(Request(URL, data=data, headers=headers), timeout=60) as response:
             return response.read().decode('utf-8', 'replace')
 
-    def search(self, phrase, limit=None):
+    def search(self, phrase, limit=None, exists=False):
         path = self.cache_dir / (hashlib.sha256(phrase.encode()).hexdigest() + '.json')
         if path.exists():
             cached = json.loads(path.read_text())
@@ -119,14 +119,21 @@ class Client:
                 'jakarta.faces.partial.execute': 'searchForm', 'jakarta.faces.partial.render': RENDER,
                 'searchForm:searchButton': 'searchForm:searchButton'})
             body = self.request(urlencode(fields).encode())
-            # Preserve raw responses even when parsing fails, for offline diagnosis.
-            path.with_suffix('.xml').write_text(body)
+            if not exists:
+                # Preserve raw responses for offline diagnosis.
+                path.with_suffix('.xml').write_text(body)
             rows, total, updates = parse_response(body)
+            if exists:
+                yield None, total
+                return
             if len(rows) != total:
                 raise ValueError(f'Catalogue returned {len(rows)} of {total} results; pagination is not yet supported. Narrow the phrase; response cached for inspection')
             if len({row['url'] for row in rows}) != total:
                 raise ValueError('Catalogue returned duplicate results')
             path.write_text(json.dumps({'query': phrase, 'total': total, 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
+        if exists:
+            yield None, total
+            return
         for row in rows[:limit]:
             yield row, total
 
@@ -137,6 +144,7 @@ def main():
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--download', action='store_true', help='download archival records (default)')
     mode.add_argument('--list-only', action='store_true', help='list without downloading')
+    mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     parser.add_argument('--skip-existing', action='store_true')
     parser.add_argument('--limit', type=int)
     parser.add_argument('--delay', type=float, default=15, help='seconds between requests (minimum/default 15)')
@@ -161,6 +169,10 @@ def main():
         print('Another Bavarian archive search is running; stopping', file=sys.stderr)
         return 1
     try:
+        if args.exists:
+            _, total = next(client.search(phrase, exists=True))
+            print('true' if total else 'false')
+            return 0
         for row, total in client.search(phrase, args.limit):
             count += 1
             url = row['url']

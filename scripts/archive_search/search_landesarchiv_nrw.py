@@ -45,7 +45,7 @@ class Client:
                 return exc.geturl(), body
             raise RuntimeError(f'HTTP {exc.code}; Retry-After: {exc.headers.get("Retry-After", "not provided")}') from exc
 
-    def search(self, query, limit):
+    def search(self, query, limit, exists=False):
         path = self.cache / (hashlib.sha256(query.encode()).hexdigest() + '.json')
         if path.exists():
             data = json.loads(path.read_text())
@@ -55,12 +55,14 @@ class Client:
             return data['rows'][:limit], data['total']
         rows, seen, total, page = [], set(), None, 0
         while True:
-            url = BASE + 'sufservice/api/search?' + urlencode({'keyword': query, 'page': page, 'size': 20})
+            url = BASE + 'sufservice/api/search?' + urlencode({'keyword': query, 'page': page, 'size': 1 if exists else 20})
             _, body = nrw.fetch(url)
             result = json.loads(body)
             batch, count = result['searchResult'], result['hits']
             if not isinstance(batch, list) or not isinstance(count, int) or count < 0:
                 raise ValueError('Invalid search response')
+            if exists:
+                return [], count
             if total is not None and total != count:
                 raise ValueError('Result count changed during pagination')
             total = count
@@ -88,6 +90,7 @@ def main():
     mode = p.add_mutually_exclusive_group()
     mode.add_argument('--download', action='store_true', help='import supported records (default)')
     mode.add_argument('--list-only', action='store_true', help='list without importing')
+    mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     p.add_argument('--skip-existing', action='store_true')
     p.add_argument('--limit', type=int)
     p.add_argument('--delay', type=float, default=15, help='minimum seconds between requests (default 15)')
@@ -103,7 +106,10 @@ def main():
             print('Another Archive NRW search is running; stopping', file=sys.stderr); return 1
         client = Client(args.delay, args.cache_dir)
         try:
-            rows, total = client.search(args.query.strip(), args.limit)
+            rows, total = client.search(args.query.strip(), 1 if args.exists else args.limit, exists=args.exists)
+            if args.exists:
+                print('true' if total else 'false')
+                return 0
             for i, row in enumerate(rows, 1):
                 node = row['nodeid']
                 url = BASE + 'archivsuche?' + urlencode({'link': node})

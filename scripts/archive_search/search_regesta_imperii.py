@@ -84,7 +84,7 @@ class Client:
         self.wait()
         req = Request(action, data=body, headers={'User-Agent': ri.USER_AGENT, 'Content-Type': 'multipart/form-data; boundary=' + boundary})
         with ri.OPENER.open(req, timeout=60) as resp: return resp.read()
-    def search(self, query, limit):
+    def search(self, query, limit, exists=False):
         path = self.cache / (hashlib.sha256(query.encode()).hexdigest() + '.json')
         if path.exists():
             data = json.loads(path.read_text()); print(f'Using cached search: {path}', file=sys.stderr)
@@ -105,6 +105,7 @@ class Client:
             if not match:
                 raise ValueError('Could not read the result count; stopping')
             count = int(match[1].replace('.', ''))
+            if exists: return [], count
             if total is not None and count != total: raise ValueError('Result count changed')
             total = count
             for row in result.rows:
@@ -127,6 +128,7 @@ def main():
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--download', action='store_true', help='download matching records (default)')
     mode.add_argument('--list-only', action='store_true', help='list without downloading')
+    mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     parser.add_argument('--skip-existing', action='store_true')
     parser.add_argument('--limit', type=int)
     parser.add_argument('--delay', type=float, default=15, help='minimum seconds between requests (default 15)')
@@ -142,7 +144,10 @@ def main():
             print('Another Regesta Imperii search is running; stopping', file=sys.stderr); return 1
         client = Client(args.delay, args.cache_dir)
         try:
-            rows, total = client.search(args.query.strip(), args.limit)
+            rows, total = client.search(args.query.strip(), 1 if args.exists else args.limit, exists=args.exists)
+            if args.exists:
+                print('true' if total else 'false')
+                return 0
             for i, row in enumerate(rows, 1):
                 url = row['url']; print(f'{i}. {row["title"]}\n   {url}', flush=True)
                 if args.list_only: continue

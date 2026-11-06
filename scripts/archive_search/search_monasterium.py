@@ -7,7 +7,9 @@ import fcntl
 import hashlib
 import json
 import math
+import os
 import re
+import ssl
 import subprocess
 import sys
 import time
@@ -24,9 +26,22 @@ URL = 'https://www.monasterium.net/mom/search'
 CACHE = ROOT / '.cache/archive_search/monasterium'
 
 
+def open_search(request):
+    # Some macOS Python installations have no configured CA bundle. Use the
+    # system bundle only in that case, without overriding an explicit setting.
+    paths = ssl.get_default_verify_paths()
+    system_bundle = Path('/etc/ssl/cert.pem')
+    if (sys.platform == 'darwin' and not paths.cafile and not paths.capath
+            and 'SSL_CERT_FILE' not in os.environ and 'SSL_CERT_DIR' not in os.environ
+            and system_bundle.is_file()):
+        return urlopen(request, timeout=60, context=ssl.create_default_context(cafile=str(system_bundle)))
+    return urlopen(request, timeout=60)
+
+
 class Results(HTMLParser):
-    def __init__(self):
+    def __init__(self, existence_only=False):
         super().__init__()
+        self.existence_only = existence_only
         self.hits_depth = 0
         self.hits_text = []
         self.no_results = False
@@ -43,7 +58,7 @@ class Results(HTMLParser):
             self.hits_depth = 1
         elif self.hits_depth and tag == 'div':
             self.hits_depth += 1
-        if tag == 'a':
+        if tag == 'a' and not self.existence_only:
             url = urljoin(URL, attrs.get('href', ''))
             parsed = urlsplit(url)
             if (parsed.scheme == 'https' and parsed.hostname == 'www.monasterium.net'
@@ -89,6 +104,26 @@ class Client:
         time.sleep(max(0, self.delay - (time.time() - previous)))
         stamp.write_text(str(time.time()))
 
+    def exists(self, query):
+        cache_key = f'and-quoted-v1\0{query}'
+        path = self.cache / (hashlib.sha256(cache_key.encode()).hexdigest() + '.json')
+        if path.exists():
+            cached = json.loads(path.read_text())
+            if cached.get('query') != query or len(cached['rows']) != cached['total']:
+                raise ValueError('Invalid cached search')
+            return cached['total'] > 0
+        params = {
+            'q': f'"{query}"', 'option': 'and', 'img': '', 'annotations': '',
+            'sort': 'date', 'block': 1, 'categories': '', 'context': '',
+        }
+        self.wait()
+        request = Request(URL + '?' + urlencode(params), headers={'User-Agent': 'Rosenberg archive research/1.0'})
+        with open_search(request) as response:
+            page = response.read().decode('utf-8', 'replace')
+        result = Results(existence_only=True)
+        result.feed(page)
+        return result.total() > 0
+
     def search(self, query, limit):
         cache_key = f'and-quoted-v1\0{query}'
         path = self.cache / (hashlib.sha256(cache_key.encode()).hexdigest() + '.json')
@@ -115,7 +150,7 @@ class Client:
             }
             self.wait()
             request = Request(URL + '?' + urlencode(params), headers={'User-Agent': 'Rosenberg archive research/1.0'})
-            with urlopen(request, timeout=60) as response:
+            with open_search(request) as response:
                 page = response.read().decode('utf-8', 'replace')
             result = Results()
             result.feed(page)
@@ -146,6 +181,7 @@ def main():
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--download', action='store_true', help='import records (default)')
     mode.add_argument('--list-only', action='store_true', help='list without downloading')
+    mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing results')
     parser.add_argument('--skip-existing', action='store_true')
     parser.add_argument('--limit', type=int)
     parser.add_argument('--delay', type=float, default=15, help='seconds between searches and imports (minimum 15)')
@@ -167,6 +203,9 @@ def main():
             return 1
         client = Client(args.delay, args.cache_dir)
         try:
+            if args.exists:
+                print('true' if client.exists(query) else 'false')
+                return 0
             rows, total = client.search(query, args.limit)
             for i, row in enumerate(rows, 1):
                 url = row['url']

@@ -66,7 +66,7 @@ class Client:
                 raise RuntimeError(f'Archive returned HTTP {exc.code}; stopping. Retry-After: {exc.headers.get("Retry-After", "not provided")}') from exc
             raise
 
-    def search(self, query, limit=None):
+    def search(self, query, limit=None, exists=False):
         _, page = self.request(urljoin(BASE, 'simpleSearch.action'))
         form = FormParser(); form.feed(page)
         if not form.execution:
@@ -80,6 +80,9 @@ class Client:
         match = re.search(r'data-query-table-data-url="([^"]+)', page)
         if not match or not form.csrf:
             raise ValueError('Search did not return the expected results page')
+        if exists:
+            yield None, 1
+            return
         import html
         table_url = urljoin(BASE, html.unescape(match.group(1)))
         tree_match = re.search(r'data-tree-data-url="([^"]+)', page)
@@ -141,6 +144,7 @@ def main():
     mode = p.add_mutually_exclusive_group()
     mode.add_argument('--download', action='store_true', help='download archival records (default)')
     mode.add_argument('--list-only', action='store_true', help='list results without downloading')
+    mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     p.add_argument('--skip-existing', action='store_true', help='skip downloading URLs already stored locally')
     p.add_argument('--limit', type=int, help='maximum number of search results to list')
     p.add_argument('--delay', type=float, default=15, help='seconds between requests and downloads (minimum 1; default 15)')
@@ -158,6 +162,10 @@ def main():
     count = 0
     total = 0
     try:
+        if args.exists:
+            found = next(client.search(f'"{phrase}"', exists=True), None) is not None
+            print('true' if found else 'false')
+            return 0
         for row, total in client.search(f'"{phrase}"', args.limit):
             url = record_url(row)
             count += 1

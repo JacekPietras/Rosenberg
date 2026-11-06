@@ -110,7 +110,7 @@ class Client:
                 raise RuntimeError(f'Archive returned HTTP {exc.code}; stopping. Retry-After: {exc.headers.get("Retry-After", "not provided")}') from exc
             raise
 
-    def search(self, phrase, limit=None):
+    def search(self, phrase, limit=None, exists=False):
         self.request(BASE + 'home.php')
         params = {'sortierung': 'archivort asc, klassifi_bestand asc, bereich asc, klassifi asc',
                   'trefferausgabe': '30', 'sucheAusgangspunkt': '../index', 'suchMaschine': 'lucene',
@@ -126,6 +126,9 @@ class Client:
                 count = int(hidden['treffer'])
             except (KeyError, ValueError) as exc:
                 raise ValueError('Could not read the catalogue result count') from exc
+            if exists:
+                yield None, count
+                return
             if total is not None and count != total:
                 raise ValueError('Result count changed during pagination')
             total = count
@@ -164,7 +167,9 @@ class Client:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('query', help='phrase to search for')
-    parser.add_argument('--list-only', action='store_true', help='list results without downloading')
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument('--list-only', action='store_true', help='list results without downloading')
+    mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     parser.add_argument('--skip-existing', action='store_true', help='skip downloading URLs already stored locally')
     parser.add_argument('--limit', type=int, help='maximum number of results')
     parser.add_argument('--delay', type=float, default=15, help='seconds between requests (minimum 1; default 15)')
@@ -181,6 +186,10 @@ def main():
     client = Client(args.delay)
     count = total = 0
     try:
+        if args.exists:
+            _, total = next(client.search(phrase, exists=True))
+            print('true' if total else 'false')
+            return 0
         for row, total in client.search(phrase, args.limit):
             url = client.resolve(row)
             count += 1
