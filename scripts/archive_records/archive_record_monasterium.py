@@ -112,6 +112,40 @@ class EditionReferences(HTMLParser):
                 self.sources.append(reference)
 
 
+class CharterImages(HTMLParser):
+    def __init__(self, filenames):
+        super().__init__()
+        self.filenames = set(filenames)
+        self.images = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag != 'a' or 'imageLink' not in attrs.get('class', '').split():
+            return
+        image = attrs.get('data-url', '')
+        parsed = urlsplit(image)
+        if parsed.scheme == 'http' and parsed.hostname == 'images.monasterium.net':
+            image = urlunsplit(parsed._replace(scheme='https'))
+            parsed = urlsplit(image)
+        if parsed.scheme in {'http', 'https'} and parsed.netloc and parsed.path.rsplit('/', 1)[-1] in self.filenames:
+            if image not in self.images:
+                self.images.append(image)
+
+
+def resolved_images(root, url):
+    filenames = [node.get('url', '') for node in root.iter()
+                 if local_name(node.tag) == 'graphic' and node.get('url')
+                 and not urlsplit(node.get('url')).netloc]
+    if not filenames:
+        return []
+    parser = CharterImages(filenames)
+    try:
+        parser.feed(fetch_page(url).decode('utf-8', 'replace'))
+    except OSError as exc:
+        print(f'Could not resolve Monasterium images: {exc}', file=sys.stderr)
+    return parser.images
+
+
 def fallback_sources(root, url):
     # CEI can contain only image filenames; the charter HTML supplies their host.
     # Inspect explicit CEI links first and fetch HTML only for unresolved images.
@@ -165,7 +199,7 @@ def create_record(url: str) -> tuple[Path, bool]:
         if archive_url is None:
             sources = fallback_sources(root, url)
             print(f"Archive catalog URL unresolved for {parsed.path}; importing Monasterium metadata as a fallback", file=sys.stderr)
-            return create_internal_record(root, url, source_references=sources)
+            return create_internal_record(root, url, source_references=sources, image_urls=resolved_images(root, url))
         archive = (archive_url, create_gda_record)
     archive_url, downloader = archive
     path, updated = downloader(archive_url)

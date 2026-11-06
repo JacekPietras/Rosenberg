@@ -38,7 +38,7 @@ def parse_date(date_value: str) -> str:
     return date
 
 
-def create_record(root: ElementTree.Element, url: str, source_references=()) -> tuple[Path, bool]:
+def create_record(root: ElementTree.Element, url: str, source_references=(), image_urls=()) -> tuple[Path, bool]:
     issued = first_node(root, "issued")
     date_node = first_node(issued, "date") if issued is not None else None
     range_node = first_node(issued, "dateRange") if issued is not None else None
@@ -87,6 +87,9 @@ def create_record(root: ElementTree.Element, url: str, source_references=()) -> 
     seal = first_node(root, "sigillant")
     if seal is not None and node_text(seal):
         german += f"\n\nSiegler: {node_text(seal)}"
+    seal_description = node_text(first_node(root, 'sealDesc'))
+    if seal_description:
+        german += f'\n\nSiegel: {seal_description}'
     entry: dict[str, object] = {"source": citation, "url": url, "german": german}
     if source_references:
         entry['source'] = list(dict.fromkeys([citation, *source_references]))
@@ -94,6 +97,7 @@ def create_record(root: ElementTree.Element, url: str, source_references=()) -> 
     graphics = [node.get("url", "").strip() for node in root.iter()
                 if local_name(node.tag) == "graphic" and node.get("url", "").strip()]
     graphics = [image for image in graphics if urlsplit(image).scheme in {'http', 'https'} and urlsplit(image).netloc]
+    graphics.extend(image_urls)
     if graphics:
         entry["img"] = [{"src": image} for image in dict.fromkeys(graphics)]
     record = {"date": date, "label": ["to review"], "entries": [entry]}
