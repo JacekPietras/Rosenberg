@@ -69,6 +69,12 @@ class Checker:
         self.last_finished = None
         self.answers = {}
         self.failed = []
+        results_path = results_file or ROOT / 'data/archive_search' / f'{archive}.json'
+        if results_path.exists():
+            saved = json.loads(results_path.read_text(encoding='utf-8'))
+            if saved.get('archive') == archive and isinstance(saved.get('queries'), dict):
+                self.answers.update({query: answer for query, answer in saved['queries'].items()
+                                     if isinstance(query, str) and isinstance(answer, bool)})
 
     def run(self, query, exists=False):
         # Some archive clients keep rate-limit timestamps only in their process.

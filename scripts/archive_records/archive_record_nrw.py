@@ -62,7 +62,7 @@ def fetch(url: str) -> tuple[str, bytes]:
 
 def normalize_date(raw: str) -> str:
     """Keep the catalog's year precision while removing EAD uncertainty brackets."""
-    value = raw.strip().strip("[]() ")
+    value = re.sub(r"[\[\]() ]", "", raw.strip())
     years = re.findall(r"(?<!\d)(\d{4})(?!\d)", value)
     if not years:
         raise ValueError(f"Could not determine a document date from unitDate: {raw!r}")
@@ -110,7 +110,7 @@ def create_record(url: str) -> tuple[Path, bool]:
     if parsed.scheme != "https" or parsed.hostname not in HOSTS or parsed.path.rstrip("/") != "/archivsuche":
         raise ValueError("Expected an https://www.archive.nrw.de/archivsuche record URL")
     node_id = parse_qs(parsed.query).get("link", [""])[0]
-    if not re.fullmatch(r"VERZEICH(?:NUNG|UNG)SEINHEIT-Vz_[0-9a-f-]+", node_id, re.I):
+    if not re.fullmatch(r"VERZEICH(?:NUNG|UNG)SEINHEIT-[A-Za-z0-9_-]+", node_id, re.I):
         raise ValueError("The URL must identify a VERZEICHNUNGSEINHEIT record")
     api_url = "https://www.archive.nrw.de/sufservice/api/listContextByNodeId?" + urlencode({"nodeId": node_id})
     _, body = fetch(api_url)

@@ -12,7 +12,7 @@ import re
 import sys
 import time
 from pathlib import Path
-from urllib.error import HTTPError
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request
 
@@ -57,8 +57,9 @@ class Client:
             if data.get('query') != query or len(data['rows']) != data['total']:
                 raise ValueError('Invalid cached search')
             print(f'Using cached search: {path}', file=sys.stderr)
-            return data['rows'][:limit], data['total']
+            return data['rows'][:limit], data.get('reported_total', data['total'])
         rows, seen, total, page = [], set(), None, 0
+        complete = False
         while True:
             url = BASE + 'sufservice/api/search?' + urlencode({'keyword': query, 'page': page, 'size': 1 if exists else 20})
             _, body = nrw.fetch(url)
@@ -73,19 +74,25 @@ class Client:
             total = count
             for row in batch:
                 node = row.get('nodeid')
-                if not isinstance(node, str) or not re.fullmatch(r'[A-Za-z0-9_-]+', node) or node in seen:
-                    raise ValueError('Missing, invalid, or duplicate result ID')
+                if not isinstance(node, str) or not re.fullmatch(r'[A-Za-z0-9_-]+', node):
+                    print(f'Skipping result with missing or invalid ID on page {page}', file=sys.stderr)
+                    continue
+                if node in seen:
+                    print(f'Skipping duplicate result ID {node!r} on page {page}', file=sys.stderr)
+                    continue
                 seen.add(node)
                 rows.append(row)
-            if len(rows) > total:
-                raise ValueError('Received more results than reported')
-            if len(rows) == total or (limit is not None and len(rows) >= limit):
+            if limit is not None and len(rows) >= limit:
+                break
+            if (page + 1) * 20 >= total:
+                complete = True
                 break
             if not batch:
                 raise ValueError('Empty page before end of results')
             page += 1
-        if len(rows) == total:
-            path.write_text(json.dumps({'query': query, 'total': total, 'rows': rows}, ensure_ascii=False) + '\n')
+        if complete:
+            path.write_text(json.dumps({'query': query, 'total': len(rows),
+                                        'reported_total': total, 'rows': rows}, ensure_ascii=False) + '\n')
         return rows[:limit], total
 
 
@@ -136,11 +143,15 @@ def main():
                 if len(title) > 240: title = title[:237] + '...'
                 print(f'{i}. {row.get("archivName") or ""} | {row.get("signatur") or ""} | {row.get("laufzeit") or ""} | {title}\n   {url}', flush=True)
                 if args.list_only: continue
-                if not re.fullmatch(r'VERZEICH(?:NUNG|UNG)SEINHEIT-Vz_[0-9a-f-]+', node, re.I):
+                if not re.fullmatch(r'VERZEICH(?:NUNG|UNG)SEINHEIT-[A-Za-z0-9_-]+', node, re.I):
                     print('Skipping: record type or ID is not supported by the NRW importer', flush=True); continue
                 if args.skip_existing and has_url(ROOT / 'data/documents', url):
                     print(f'Skipping existing URL: {url}', flush=True); continue
-                path, updated = nrw.create_record(url)
+                try:
+                    path, updated = nrw.create_record(url)
+                except (OSError, HTTPError, URLError, ValueError) as exc:
+                    print(f'Skipping record that could not be imported: {exc}', file=sys.stderr, flush=True)
+                    continue
                 print(f'{"Updated" if updated else "Created"}: {path.relative_to(ROOT)}', flush=True)
             print(f'Listed {len(rows)} of {total} catalogue results' + (' (limited)' if len(rows) < total else ''), file=sys.stderr)
             return 0

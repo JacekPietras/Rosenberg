@@ -72,7 +72,7 @@ class Pagination(HTMLParser):
 
     def handle_endtag(self, tag):
         if tag == 'a' and self.anchor is not None:
-            if self.anchor['id']:
+            if self.anchor['id'] and self.action is None:
                 self.action = self.anchor['id']
             self.anchor = None
 
@@ -135,12 +135,14 @@ class Client:
                 raise ValueError('Invalid cached search')
             print(f'Using cached search: {path}', file=sys.stderr)
         else:
+            csp_nonce = None
             for attempt in range(2):
                 page = self.request()
                 form = SearchForm(); form.feed(page)
                 nonce = re.search(r'<script[^>]+nonce="([^"]+)"', page)
                 if not nonce or not form.fields.get('jakarta.faces.ViewState'):
                     raise ValueError('Catalogue search state or CSP nonce is missing')
+                csp_nonce = nonce[1]
                 fields = dict(form.fields)
                 fields.update({'primefaces.nonce': nonce[1], 'searchForm': 'searchForm',
                     'searchForm:searchTerm_input': f'"{phrase}"', 'searchForm:valuesRecordPerpage': '100',
@@ -154,6 +156,9 @@ class Client:
                     path.with_suffix('.xml').write_text(body)
                 try:
                     rows, total, updates = parse_response(body)
+                    response_nonce = re.search(r"PrimeFaces\.csp\.init\('([^']+)'\)", body)
+                    if response_nonce:
+                        csp_nonce = response_nonce[1]
                     break
                 except ValueError as exc:
                     if attempt or 'Incomplete catalogue response' not in str(exc):
@@ -182,14 +187,25 @@ class Client:
                     'jakarta.faces.partial.ajax': 'true',
                     'jakarta.faces.source': source,
                     'jakarta.faces.partial.execute': 'pagingTopForm',
-                    'jakarta.faces.partial.render': 'pagingTopForm,docResultPanel,pagingTopFormBottom',
+                    'jakarta.faces.partial.render': 'pagingTopForm docResultPanel pagingTopFormBottom',
                     'jakarta.faces.behavior.event': 'action',
                     'jakarta.faces.partial.event': 'click',
+                    'primefaces.nonce': csp_nonce,
                     'jakarta.faces.ViewState': view_state,
                 }
-                body = self.request(urlencode(fields).encode())
-                path.with_suffix('.xml').write_text(body)
-                page_rows, page_total, updates = parse_response(body, total)
+                for attempt in range(2):
+                    body = self.request(urlencode(fields).encode())
+                    path.with_suffix('.xml').write_text(body)
+                    try:
+                        page_rows, page_total, updates = parse_response(body, total)
+                        response_nonce = re.search(r"PrimeFaces\.csp\.init\('([^']+)'\)", body)
+                        if response_nonce:
+                            csp_nonce = response_nonce[1]
+                        break
+                    except ValueError as exc:
+                        if attempt or 'Incomplete catalogue response' not in str(exc):
+                            raise
+                        print(f'Incomplete catalogue response on page {current_page + 1}; retrying once', file=sys.stderr)
                 if page_total != total:
                     raise ValueError('Catalogue result count changed during pagination')
                 if not page_rows:
