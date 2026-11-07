@@ -115,8 +115,12 @@ class Client:
                 r'Ihre Suche (?:hat\s+([\d.]+)\s+Treffer ergeben|'
                 r'erzielte\s+([\d.]+)\s+Treffer)', plain)
             if not match:
-                raise ValueError('Could not read the result count; stopping')
-            count = int((match[1] or match[2]).replace('.', ''))
+                if re.search(r'Nichts gefunden!', plain, re.IGNORECASE):
+                    count = 0
+                else:
+                    raise ValueError('Could not read the result count; stopping')
+            else:
+                count = int((match[1] or match[2]).replace('.', ''))
             selected = re.search(r'ausgewählt wurden die\s+([\d.]+)\s+relevantesten Regesten', plain)
             page_count = min(count, int(selected[1].replace('.', ''))) if selected else count
             if exists: return [], count
