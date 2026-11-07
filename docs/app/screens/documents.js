@@ -82,7 +82,7 @@ export function createDocumentRenderer({
     }
     const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
     const important = labelKeys.includes('important') ? ' important' : '';
-    const dimmed = labelKeys.some((label) => ['hessen', 'schenk', 'mönch'].includes(label)) ? ' dimmed' : '';
+    const dimmed = labelKeys.some((label) => ['hessen', 'schenk', 'mönch', 'czechia'].includes(label)) ? ' dimmed' : '';
     return `<article class="document${important}${dimmed}"${anchor}><div class="document-heading"><div><h2>${documentMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
   }
 

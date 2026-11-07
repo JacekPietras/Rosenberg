@@ -52,9 +52,20 @@ class ProvenanceTests(unittest.TestCase):
 
     def test_empty_metadata_is_reported_as_unavailable(self):
         url = 'https://www.monasterium.net/mom/CZ-NA/AZK-Koruna/1332_IX_08-15/charter'
-        with patch('archive_record_monasterium.fetch_cei', return_value=b'<atom:null xmlns:atom="http://www.w3.org/2005/Atom"/>'):
+        with patch('archive_record_monasterium.fetch_cei', return_value=b'<atom:null xmlns:atom="http://www.w3.org/2005/Atom"/>'), \
+             patch('archive_record_monasterium.fetch_page', return_value=b'<div id="error-content">Temporary error</div>'):
             with self.assertRaisesRegex(ValueError, 'returned no metadata'):
                 download_record(url)
+
+    def test_explicit_missing_charter_has_distinct_exit_status(self):
+        url = 'https://www.monasterium.net/mom/CZ-NA/AZK-Koruna/1332_IX_08-15/charter'
+        with patch('sys.argv', ['downloader', url]), \
+             patch('archive_record_monasterium.fetch_cei', return_value=b'<atom:null xmlns:atom="http://www.w3.org/2005/Atom"/>'), \
+             patch('archive_record_monasterium.fetch_page', return_value=b'<div id="error-content"><div>Charter not found<span>: </span></div></div>'), \
+             patch('archive_record_monasterium.create_internal_record') as save:
+            from archive_record_monasterium import main
+            self.assertEqual(main(), 76)
+            save.assert_not_called()
 
     def test_collection_explicit_date_and_citation(self):
         root = ET.fromstring('<cei><bibl>Book, p. 127</bibl><idno>LXXXIII.</idno><issued><date value="99999999"/></issued><abstract>Charter. 1340. Jan. 2.</abstract></cei>')

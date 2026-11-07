@@ -181,6 +181,31 @@ def add_monasterium_url(path: Path, monasterium_url: str, archive_url: str, root
     raise ValueError(f"The archive downloader did not save an entry for {archive_url}")
 
 
+class MissingCharterError(ValueError):
+    """The archive explicitly reports that this charter does not exist."""
+
+
+class ErrorContent(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.depth = 0
+        self.text = []
+
+    def handle_starttag(self, tag, attrs):
+        if self.depth:
+            self.depth += 1
+        elif dict(attrs).get('id') == 'error-content':
+            self.depth = 1
+
+    def handle_endtag(self, tag):
+        if self.depth:
+            self.depth -= 1
+
+    def handle_data(self, data):
+        if self.depth:
+            self.text.append(data)
+
+
 def create_record(url: str) -> tuple[Path, bool]:
     parsed = urlsplit(url)
     if parsed.scheme != "https" or parsed.hostname not in HOSTS:
@@ -192,6 +217,11 @@ def create_record(url: str) -> tuple[Path, bool]:
         raise ValueError("Monasterium did not return a usable CEI record") from exc
 
     if local_name(root.tag) == "null":
+        page = fetch_page(url).decode('utf-8', 'replace')
+        error = ErrorContent()
+        error.feed(page)
+        if 'Charter not found' in ' '.join(error.text):
+            raise MissingCharterError(f'Monasterium reports charter not found: {url}')
         raise ValueError(f"Monasterium returned no metadata for {url}; the charter may be unavailable")
 
     archive = archival_permalink(root)
@@ -216,6 +246,9 @@ def main() -> int:
     args = parser.parse_args()
     try:
         path, updated = create_record(args.url)
+    except MissingCharterError as exc:
+        print(f"Skipping: {exc}", file=sys.stderr)
+        return 76
     except (OSError, ValueError, HTTPError, URLError) as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1

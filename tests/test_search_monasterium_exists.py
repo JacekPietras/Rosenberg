@@ -57,6 +57,25 @@ class ExistenceTests(unittest.TestCase):
             self.assertEqual(cached['rows'], rows)
             self.assertEqual(cached['total'], 2)
 
+    def test_missing_charter_is_skipped_and_incomplete_cache_removed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            client = module.Client(15, root)
+            cache = client.cache_path('von Rosenberg')
+            cache.write_text('cached')
+            rows = [{'url': 'https://www.monasterium.net/mom/a/b/charter', 'title': 'Missing'},
+                    {'url': 'https://www.monasterium.net/mom/a/c/charter', 'title': 'Available'}]
+            args = ['search', 'von Rosenberg', '--cache-dir', directory,
+                    '--results-file', str(root / 'results.json')]
+            with patch.object(sys, 'argv', args), patch.object(module.Client, 'search', return_value=(rows, 2)), \
+                 patch.object(module.Client, 'wait'), \
+                 patch.object(module.subprocess, 'run', side_effect=[type('Result', (), {'returncode': 76})(),
+                                                                      type('Result', (), {'returncode': 0})()]) as run, \
+                 contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+                self.assertEqual(module.main(), 0)
+            self.assertEqual(run.call_count, 2)
+            self.assertFalse(cache.exists())
+
     def test_dotted_normal_search_is_skipped(self):
         with tempfile.TemporaryDirectory() as directory:
             args = ['search', 'Eberhard von. Rosenberg', '--cache-dir', directory,

@@ -72,7 +72,7 @@ function synchronizePersonRoute() {
 }
 const route = store?.getState?.().route || { active: 'books' };
 store?.setState(state);
-const GREY_RECORD_LABELS = new Set(['hessen', 'schenk', 'mönch']);
+const GREY_RECORD_LABELS = new Set(['hessen', 'schenk', 'mönch', 'czechia']);
 const MISSING_RECORD_LABEL = 'missing';
 let leafletMap = null;
 let mapMode = '1378';
@@ -1160,7 +1160,7 @@ function recordNeedsTranscription(doc) {
 function visibleRecordPaths(paths) {
   const selected = new Set(state.recordLabels);
   const hidden = new Set((state.hiddenRecordLabels || []).filter((label) => GREY_RECORD_LABELS.has(label)));
-  const transcriptionExcludedLabels = new Set(['hessen', 'schenk', 'mönch']);
+  const transcriptionExcludedLabels = new Set(['hessen', 'schenk', 'mönch', 'czechia']);
   return paths.filter((path) => {
     if (state.recordSource && !citationIndex.recordHasSource(path, state.recordSource)) return false;
     if (state.toTranscribe && (!recordNeedsTranscription(state.documents.get(path)) || recordLabelForPath(path).some((label) => transcriptionExcludedLabels.has(label)))) return false;
@@ -1226,7 +1226,7 @@ function setupYearHighlight(paths) {
       const wasIncluded = state.recordLabels.includes(label);
       state.hiddenRecordLabels = state.hiddenRecordLabels.filter((value) => value !== label);
       state.recordLabels = state.recordLabels.filter((value) => value !== label);
-      // Hessen, Schenk, and Mönch cycle × → neutral → + → ×. Other labels
+      // Hessen, Schenk, Mönch, and Czechia cycle × → neutral → + → ×. Other labels
       // toggle between neutral and +.
       const next = GREY_RECORD_LABELS.has(label)
         ? (wasExcluded ? 'neutral' : wasIncluded ? 'exclude' : 'include')

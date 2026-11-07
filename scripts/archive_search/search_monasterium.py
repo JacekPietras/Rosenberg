@@ -113,9 +113,12 @@ class Client:
         time.sleep(max(0, self.delay - (time.time() - previous)))
         stamp.write_text(str(time.time()))
 
-    def exists(self, query):
+    def cache_path(self, query):
         cache_key = f'and-quoted-v1\0{query}'
-        path = self.cache / (hashlib.sha256(cache_key.encode()).hexdigest() + '.json')
+        return self.cache / (hashlib.sha256(cache_key.encode()).hexdigest() + '.json')
+
+    def exists(self, query):
+        path = self.cache_path(query)
         if path.exists():
             cached = json.loads(path.read_text())
             if cached.get('query') != query or len(cached['rows']) != cached['total']:
@@ -133,8 +136,7 @@ class Client:
         return result.total() > 0
 
     def search(self, query, limit):
-        cache_key = f'and-quoted-v1\0{query}'
-        path = self.cache / (hashlib.sha256(cache_key.encode()).hexdigest() + '.json')
+        path = self.cache_path(query)
         if path.exists():
             cached = json.loads(path.read_text())
             if cached.get('query') != query or len(cached['rows']) != cached['total']:
@@ -239,6 +241,10 @@ def main():
                 client.wait()
                 proc = subprocess.run([sys.executable, str(ROOT / 'scripts/archive_records/archive_record_download.py'), url], cwd=ROOT)
                 (client.cache / 'last-request').write_text(str(time.time()))
+                if proc.returncode == 76:
+                    client.cache_path(query).unlink(missing_ok=True)
+                    print(f'Skipped unavailable charter: {url}', file=sys.stderr)
+                    continue
                 if proc.returncode:
                     raise RuntimeError(f'Downloader failed (exit {proc.returncode})')
             print(f'Listed {len(rows)} of {total} catalogue results' + (' (limited)' if len(rows) < total else ''), file=sys.stderr)

@@ -158,7 +158,7 @@ punctuation, and spaces inside the passage remain unchanged.
 - `transcribed`: `true` when transcribed; absent or `false` otherwise.
 - `deleted`: `true` hides the whole document from the Documents screen while retaining its JSON.
 - `label`: a string or array of strings, shown as badges. `important` gives a
-  reddish background; `Hessen`, `Schenk`, and `Mönch` a dimmed one.
+  reddish background; `Hessen`, `Schenk`, `Mönch`, and `Czechia` a dimmed one.
 - Entries keep `source` (the citation) and `url` as either a string or an array
   of strings, when there is one reference/link or several; they also keep their
   text fields and `facts`.
