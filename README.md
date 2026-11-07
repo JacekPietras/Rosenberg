@@ -146,13 +146,16 @@ appears on standard error:
 
 ```text
 python3 scripts/archive_search/check_variations.py monasterium 'Eberhard von Rosenberg'
+python3 scripts/archive_search/check_variations.py monasterium 'Vogt zu Lauda'
 python3 scripts/archive_search/search_monasterium.py Rosinberg --exists
 ```
 
-The checker accepts a full name with `von`, finds given-name variants in
-`data/names.md` and exact matching place variants in `data/places.json`, and
-checks each surviving surname with the prefixes `von`, `v`, `v.`, `von.`,
-and `de`, then uses only surviving prefix-surname pairs in full names. Unknown names use the
+The checker accepts a name or title followed by `von` or `zu` and a place.
+It finds given-name variants in `data/names.md`, title variants in
+`data/titles.md`, and exact matching place variants in `data/places.json`. It
+checks each surviving place with the prefixes `von`, `v`, `v.`, `von.`,
+and `de`, as well as without a connecting word. Titles also use `zu` and `des`.
+It uses only surviving particle-place pairs in full queries. Unknown names and titles use the
 spelling supplied. It may take a long time because every surviving combination
 is checked with the archive’s normal delays. Successful true and false checks
 are saved by each archive search script, for direct searches and variation checks,

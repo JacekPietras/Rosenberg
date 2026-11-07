@@ -20,7 +20,7 @@ SCRIPTS = {name: Path(__file__).with_name(f'search_{name}.py') for name in (
     'landesarchiv_nrw', 'regesta_imperii',
 )}
 CACHE_ARCHIVES = {'monasterium', 'gda_bayern', 'landesarchiv_nrw', 'regesta_imperii'}
-PREFIXES = ('von', 'v', 'v.', 'von.', 'de')
+PREFIXES = ('von', 'v', 'v.', 'von.', 'de', '')
 
 
 def unique(values):
@@ -39,6 +39,16 @@ def name_variants(name, names_file):
         if any(name.casefold() == variant.casefold() for variant in variants):
             return unique([name, *variants])
     return [name]
+
+
+def title_variants(title, titles_file):
+    for line in titles_file.read_text(encoding='utf-8').splitlines():
+        if line.lstrip().startswith('//'):
+            continue
+        variants = unique(line.split(','))
+        if any(title.casefold() == variant.casefold() for variant in variants):
+            return unique([title, *variants])
+    return []
 
 
 def surname_variants(surname, places_file):
@@ -85,26 +95,33 @@ class Checker:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('archive', choices=SCRIPTS)
-    parser.add_argument('name', help='full name in the form "given name von surname"')
+    parser.add_argument('name', help='name or title followed by von or zu and a place')
     parser.add_argument('--cache-dir', type=Path, help='archive search cache directory (where supported)')
     parser.add_argument('--results-file', type=Path,
                         help='JSON file for verified existence results')
     args = parser.parse_args()
     if args.cache_dir is not None and args.archive not in CACHE_ARCHIVES:
         parser.error(f'{args.archive} does not support --cache-dir')
-    parts = re.split(r'\s+von\s+', args.name.strip(), flags=re.IGNORECASE)
-    if len(parts) != 2 or not all(parts):
-        parser.error('supply a full name in the form "given name von surname"')
-    given_names, surname = parts[0].split(), parts[1]
+    parts = re.split(r'\s+(von|zu)\s+', args.name.strip(), flags=re.IGNORECASE)
+    if len(parts) != 3 or not parts[0] or not parts[2]:
+        parser.error('supply a name or title followed by von or zu and a place')
+    preceding, particle, surname = parts
     try:
         surnames = surname_variants(surname, ROOT / 'data/places.json')
-        names = [name_variants(name, ROOT / 'data/names.md') for name in given_names]
+        whole_title = title_variants(preceding, ROOT / 'data/titles.md')
+        title_groups = [title_variants(word, ROOT / 'data/titles.md') for word in preceding.split()]
+        only_titles = bool(whole_title) or all(title_groups)
+        names = ([whole_title] if whole_title else
+                 [title or name_variants(word, ROOT / 'data/names.md')
+                  for word, title in zip(preceding.split(), title_groups)])
+        prefixes = (*PREFIXES[:-1], 'zu', 'des', '') if only_titles else PREFIXES
         checker = Checker(args.archive, args.cache_dir, args.results_file)
         surnames = [variant for variant in surnames if checker.exists(variant)]
         if not surnames:
             return 0
-        prefixed_surnames = [f'{prefix} {family}' for family in surnames for prefix in PREFIXES
-                             if checker.exists(f'{prefix} {family}')]
+        prefixed_surnames = [f'{prefix} {family}' if prefix else family
+                             for family in surnames for prefix in prefixes
+                             if not prefix or checker.exists(f'{prefix} {family}')]
         if not prefixed_surnames:
             return 0
         surviving_names = []
