@@ -92,6 +92,13 @@ class ProvenanceTests(unittest.TestCase):
             path, _ = create_record(root, 'https://www.monasterium.net/charter')
             self.assertEqual(json.loads(path.read_text())['date'], '1354-01-04')
 
+    def test_unknown_date_with_historical_month_spelling(self):
+        root = ET.fromstring('<cei><idno>CXXII.</idno><issued><date value="99999999"/></issued>'
+                             '<abstract>1366. 28. October. Abt Heinrich und der Convent.</abstract></cei>')
+        with tempfile.TemporaryDirectory() as tmp, patch('archive_record_monasterium_internal.REPOSITORY_ROOT', Path(tmp)):
+            path, _ = create_record(root, 'https://www.monasterium.net/charter')
+            self.assertEqual(json.loads(path.read_text())['date'], '1366-10-28')
+
     def test_unknown_date_does_not_use_later_date_from_prose(self):
         root = ET.fromstring('<cei><idno>CIII.</idno><issued><date value="99999999"/></issued>'
                              '<abstract>A document mentioning 1354. 4. Jänner. in its text.</abstract></cei>')

@@ -56,8 +56,8 @@ def create_record(root: ElementTree.Element, url: str, source_references=(), ima
             else:
                 full_months = {'jänner': 1, 'januar': 1, 'februar': 2, 'märz': 3,
                                'april': 4, 'mai': 5, 'juni': 6, 'juli': 7,
-                               'august': 8, 'september': 9, 'oktober': 10,
-                               'november': 11, 'dezember': 12}
+                               'august': 8, 'september': 9, 'oktober': 10, 'october': 10,
+                               'november': 11, 'dezember': 12, 'december': 12}
                 match = re.match(r'^(\d{4})\.\s*(\d{1,2})\.\s*(' + '|'.join(full_months) + r')\.', abstract, re.I)
                 if not match:
                     raise ValueError('Unknown Monasterium date without an explicit date in the abstract')

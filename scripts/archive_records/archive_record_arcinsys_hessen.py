@@ -222,7 +222,7 @@ def create_record(url: str) -> tuple[Path, bool]:
     short = next(iter(fields.fields.get("Kurzregest", [])), "")
     full = next(iter(fields.fields.get("(Voll-) Regest", [])), "")
     sealer = next(iter(fields.fields.get("Siegler", [])), "")
-    if not date_value:
+    if not date_value or date_value.strip().casefold() in {"ohne datum", "undatiert", "ohne datierung"}:
         raise NonDatedCatalogEntry("Arcinsys catalog entry has no document date")
     if not source or not date_value:
         raise ValueError("Arcinsys record has no full signature or Datierung")
