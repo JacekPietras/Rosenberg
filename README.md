@@ -140,6 +140,34 @@ python3 scripts/archive_search/search_monasterium.py 'Eberhard von Rosenberg' --
 Use `--list-only` to list results without importing them. Use `--limit` to
 restrict the number processed.
 
+Check given-name and surname variants, then test each surviving full-person
+combination. The checker prints each full query and `true` or `false`; progress
+appears on standard error:
+
+```text
+python3 scripts/archive_search/check_variations.py monasterium 'Eberhard von Rosenberg'
+python3 scripts/archive_search/search_monasterium.py Rosinberg --exists
+```
+
+The checker accepts a full name with `von`, finds given-name variants in
+`data/names.md` and exact matching place variants in `data/places.json`, and
+tests the prefixes `von`, `v`, `v.`, `von.`, and `de`. Unknown names use the
+spelling supplied. It may take a long time because every surviving combination
+is checked with the archive’s normal delays. Successful true and false checks
+are saved by archive and exact query in
+`.cache/archive_search/variation_checks.sqlite3`, including after an interrupted
+run. Subsequent runs reuse them without another request. The cache does not
+expire automatically; delete the file to check again, or use `--results-cache`
+to select a separate cache. The archive scripts may also have their own search
+caches.
+
+All archive search scripts accept `--exists` and print `true` or `false` without
+listing or importing records. They stop once the archive reports whether results
+exist, reuse complete cached searches where supported, and observe their normal
+request delays. Some archives require session setup before a search. Search behavior is archive-specific, so
+an absent spelling only rules out combinations if the archive's matching rules
+make that inference valid.
+
 ### Selected archive image
 
 Follow the [archive image skill](.agents/skills/archive-image-download/SKILL.md)
