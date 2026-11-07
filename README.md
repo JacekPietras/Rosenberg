@@ -141,8 +141,8 @@ Use `--list-only` to list results without importing them. Use `--limit` to
 restrict the number processed.
 
 Screen given-name, title and place variants, then run a normal archive search
-for each surviving full-person combination. These searches import records by
-default; progress appears on standard error:
+for each surviving full-person combination. These searches import new records
+and skip URLs already saved in `data/documents/`; progress appears on standard error:
 
 ```text
 python3 scripts/archive_search/check_variations.py monasterium 'Eberhard von Rosenberg'

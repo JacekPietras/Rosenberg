@@ -104,6 +104,7 @@ class VariationChecks(unittest.TestCase):
             checker.run('Eberhard von Rosinberg')
         command = run.call_args.args[0]
         self.assertNotIn('--exists', command)
+        self.assertIn('--skip-existing', command)
         self.assertIn('Eberhard von Rosinberg', command)
         self.assertIn('--results-file', command)
         with patch.object(module.subprocess, 'run', return_value=subprocess.CompletedProcess([], 1)):

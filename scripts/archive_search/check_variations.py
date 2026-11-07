@@ -76,6 +76,8 @@ class Checker:
         command = [sys.executable, str(SCRIPTS[self.archive]), query]
         if exists:
             command.append('--exists')
+        else:
+            command.append('--skip-existing')
         if self.cache_dir is not None:
             command.extend(['--cache-dir', str(self.cache_dir)])
         if self.results_file is not None:
