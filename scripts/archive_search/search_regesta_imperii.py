@@ -52,7 +52,7 @@ class Results(HTMLParser):
             page = q.get('tx_hisodat_sources[@widget_0][currentPage]', [])
             if page and page[0].isdigit(): self.pages[int(page[0])] = href
             if self.heading and '/regesten/suche/result/nr/' in href:
-                self.current = {'url': href.split('?')[0], 'title': ''}
+                self.current = {'url': ri.canonical_url(href), 'title': ''}
     def handle_data(self, data):
         self.text.append(data)
         if self.current is not None: self.current['title'] += data
@@ -99,7 +99,8 @@ class Client:
                     or not isinstance(available, int) or available < 0
                     or available > data['total'] or len(data['rows']) != available):
                 raise ValueError('Invalid cached search')
-            return data['rows'][:limit], data['total']
+            rows = [{**row, 'url': ri.canonical_url(row['url'])} for row in data['rows']]
+            return rows[:limit], data['total']
         _, page = ri.fetch(URL)
         form = Form(); form.feed(page.decode('utf-8', 'replace'))
         if not form.action or 'tx_hisodat_sources[__trustedProperties]' not in form.fields: raise ValueError('Search form missing')
