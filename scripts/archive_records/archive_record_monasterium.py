@@ -191,6 +191,9 @@ def create_record(url: str) -> tuple[Path, bool]:
     except ElementTree.ParseError as exc:
         raise ValueError("Monasterium did not return a usable CEI record") from exc
 
+    if local_name(root.tag) == "null":
+        raise ValueError(f"Monasterium returned no metadata for {url}; the charter may be unavailable")
+
     archive = archival_permalink(root)
     if archive is None:
         parts = re.fullmatch(r"/mom/([^/]+)/([^/]+)/([^/]+)/charter/?", parsed.path)

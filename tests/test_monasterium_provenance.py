@@ -7,7 +7,7 @@ from unittest.mock import patch
 from xml.etree import ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts/archive_records'))
-from archive_record_monasterium import EditionReferences, fallback_sources
+from archive_record_monasterium import EditionReferences, fallback_sources, create_record as download_record
 from archive_record_monasterium_internal import create_record
 
 
@@ -43,6 +43,18 @@ class ProvenanceTests(unittest.TestCase):
             self.assertEqual(path.name, '1384-05-15.json')
             self.assertEqual(document['date'], '1384-05-15')
             self.assertNotIn('img', document['entries'][0])
+
+    def test_day_range_preserves_both_endpoints(self):
+        root = ET.fromstring('<cei><idno>Example</idno><issued><dateRange from="13320908" to="13320915"/></issued><abstract>Text</abstract></cei>')
+        with tempfile.TemporaryDirectory() as tmp, patch('archive_record_monasterium_internal.REPOSITORY_ROOT', Path(tmp)):
+            path, _ = create_record(root, 'https://www.monasterium.net/charter')
+            self.assertEqual(json.loads(path.read_text())['date'], '1332-09-08/1332-09-15')
+
+    def test_empty_metadata_is_reported_as_unavailable(self):
+        url = 'https://www.monasterium.net/mom/CZ-NA/AZK-Koruna/1332_IX_08-15/charter'
+        with patch('archive_record_monasterium.fetch_cei', return_value=b'<atom:null xmlns:atom="http://www.w3.org/2005/Atom"/>'):
+            with self.assertRaisesRegex(ValueError, 'returned no metadata'):
+                download_record(url)
 
     def test_collection_explicit_date_and_citation(self):
         root = ET.fromstring('<cei><bibl>Book, p. 127</bibl><idno>LXXXIII.</idno><issued><date value="99999999"/></issued><abstract>Charter. 1340. Jan. 2.</abstract></cei>')
