@@ -1,0 +1,10 @@
+{
+  "archive": "landesarchiv_bw",
+  "queries": {
+    "Rosemberg": true,
+    "Rosenberg": true,
+    "Rosinberg": true,
+    "Rossenberg": true,
+    "Roßenberg": true
+  }
+}

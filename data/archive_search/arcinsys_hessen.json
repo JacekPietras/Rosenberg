@@ -1,0 +1,12 @@
+{
+  "archive": "arcinsys_hessen",
+  "queries": {
+    "Rosemberch": false,
+    "Rosemberg": true,
+    "Rosenberch": true,
+    "Rosenberg": true,
+    "Rosinberg": true,
+    "Rossenberg": true,
+    "Roßenberg": true
+  }
+}

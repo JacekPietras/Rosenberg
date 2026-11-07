@@ -1,0 +1,14 @@
+{
+  "archive": "landesarchiv_nrw",
+  "queries": {
+    "Rosemberch": false,
+    "Rosemberg": false,
+    "Rosenberch": true,
+    "Rosenberg": true,
+    "Rosenburgk": false,
+    "Rosinberg": false,
+    "Rossberg": true,
+    "Rossenberg": true,
+    "Roßenberg": true
+  }
+}
