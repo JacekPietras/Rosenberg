@@ -196,6 +196,9 @@ def main():
                 client.last_request = time.monotonic()
                 print(f'Downloading {url}', flush=True)
                 proc = subprocess.run([sys.executable, str(ROOT / 'scripts/archive_records/archive_record_download.py'), url], cwd=ROOT)
+                if proc.returncode == 2:
+                    print(f'Skipping non-document catalog entry: {url}', file=sys.stderr)
+                    continue
                 if proc.returncode:
                     raise RuntimeError(f'Downloader failed for {url}; stopping (exit {proc.returncode})')
         if count == 0:

@@ -62,7 +62,7 @@ def fetch(url: str) -> tuple[str, bytes]:
 
 def normalize_date(raw: str) -> str:
     """Keep the catalog's year precision while removing EAD uncertainty brackets."""
-    value = re.sub(r"[\[\]() ]", "", raw.strip())
+    value = raw.strip().replace("[", "").replace("]", "").replace("(", "").replace(")", "")
     years = re.findall(r"(?<!\d)(\d{4})(?!\d)", value)
     if not years:
         raise ValueError(f"Could not determine a document date from unitDate: {raw!r}")

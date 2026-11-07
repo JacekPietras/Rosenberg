@@ -94,6 +94,10 @@ def strip_rtf(value: str) -> str:
 def iso_date(laufzeit: str) -> str:
     """Convert the catalog's common German date forms to ISO precision."""
     value = laufzeit.strip()
+    centuries = re.findall(r'(?<!\d)(\d{1,2})\.\s*(?:Jh\.?|Jahrhundert)', value, flags=re.I)
+    if centuries:
+        first, last = int(centuries[0]), int(centuries[-1])
+        return f'{(first - 1) * 100 + 1:04d}-{last * 100:04d}'
     months = 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember'.split()
     for month, name in enumerate(months, 1):
         value = re.sub(rf'\b(\d{{4}})\s+{name}\s+(\d{{1,2}})\b',

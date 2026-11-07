@@ -6,7 +6,8 @@
       "source": "StAWü, Stift Neumünster Würzburg Urkunden 1417 Januar 14",
       "url": [
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++93017A78-8760-4E01-986D-2161A4B8EFE4",
-        "https://dfg-viewer.de/show/?tx_dlf%5Bid%5D=https%3A//www.gda.bayern.de/gvl/mets/10069856-d072-4d9c-b367-7b212a8858d0"
+        "https://dfg-viewer.de/show/?tx_dlf%5Bid%5D=https%3A//www.gda.bayern.de/gvl/mets/10069856-d072-4d9c-b367-7b212a8858d0",
+        "https://www.monasterium.net/mom/DE-StAW/Neumuenster/Urkunden_1417_Januar_14/charter"
       ],
       "german": "Die Aussteller verkaufen dem Empfänger um 2002 rheinische Gulden einen jährlichen Zins von 154 Malter Roggen Ochsenfurter Stadtmaß von allen ihren Besitzungen in Dorf und Gemarkung Hopferstadt. Das Geld dient zur Tilgung der Stiftsschulden und insbesondere zur Bezahlung des Konrad von Weinsberg und seiner Ehefrau, denen die Aussteller um 2000 Gulden alle ihre Besitzungen in Dorf und Gemarkung Hopferstadt abgekauft haben. Die Aussteller quittieren über den Erhalt der vereinbarten Summe, verpflichten sich zur fristgerechten Lieferung des Zinses und stellen Bürgen. Als einer der Siegler wird Konrad von Rosenberg aufgeführt.",
       "english": "The issuers sold the recipient an annual rent secured on their properties in Hopferstadt. The funds were intended to pay the collegiate church’s debts, especially amounts owed to Konrad von Weinsberg and his wife. Konrad von Rosenberg is listed among the sealers.",
@@ -23,6 +24,12 @@
         },
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/10069856-d072-4d9c-b367-7b212a8858d0/2/full/5000,/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/10069856-d072-4d9c-b367-7b212a8858d0/1/full/max/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/10069856-d072-4d9c-b367-7b212a8858d0/2/full/max/0/default.jpg"
         }
       ]
     }

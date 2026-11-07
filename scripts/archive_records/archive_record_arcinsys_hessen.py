@@ -27,6 +27,10 @@ MONTHS = {
 }
 
 
+class NonDatedCatalogEntry(ValueError):
+    """An index entry that cannot be represented as a dated document."""
+
+
 class Fields(HTMLParser):
     """Collect the label/value rows used on Arcinsys detail pages."""
 
@@ -143,6 +147,11 @@ def fetch(url: str) -> str:
 
 def iso_date(value: str) -> str:
     value = html.unescape(value).strip()
+    half_century = re.search(r"\b([12])\s*\.\s*Hälfte\s+(\d{1,2})\s*\.\s*Jh\.?\b", value, re.I)
+    if half_century:
+        half, century = map(int, half_century.groups())
+        start = (century - 1) * 100 + (50 if half == 2 else 0)
+        return f"{start}-{start + 50}"
     dotted = re.search(r"(?<!\d)(\d{1,2})\.(\d{1,2})\.(\d{4})(?!\d)", value)
     if dotted:
         day, month, year = map(int, dotted.groups())
@@ -213,6 +222,8 @@ def create_record(url: str) -> tuple[Path, bool]:
     short = next(iter(fields.fields.get("Kurzregest", [])), "")
     full = next(iter(fields.fields.get("(Voll-) Regest", [])), "")
     sealer = next(iter(fields.fields.get("Siegler", [])), "")
+    if not date_value:
+        raise NonDatedCatalogEntry("Arcinsys catalog entry has no document date")
     if not source or not date_value:
         raise ValueError("Arcinsys record has no full signature or Datierung")
     german_parts = [part for part in (short, full) if part]
@@ -246,6 +257,9 @@ def main() -> int:
     args = parser.parse_args()
     try:
         path, updated = create_record(args.url)
+    except NonDatedCatalogEntry as exc:
+        print(f"Skipping non-document catalog entry: {exc}", file=sys.stderr)
+        return 2
     except Exception as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1

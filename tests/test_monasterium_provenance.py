@@ -85,6 +85,19 @@ class ProvenanceTests(unittest.TestCase):
             self.assertEqual(document['date'], '1340-01-02')
             self.assertEqual(document['entries'][0]['source'], 'Book, p. 127, LXXXIII.')
 
+    def test_unknown_date_with_explicit_german_date_at_start(self):
+        root = ET.fromstring('<cei><idno>CIII.</idno><issued><date value="99999999"/></issued>'
+                             '<abstract>1354. 4. Jänner. Abt Albert bestätigt die Urkunde.</abstract></cei>')
+        with tempfile.TemporaryDirectory() as tmp, patch('archive_record_monasterium_internal.REPOSITORY_ROOT', Path(tmp)):
+            path, _ = create_record(root, 'https://www.monasterium.net/charter')
+            self.assertEqual(json.loads(path.read_text())['date'], '1354-01-04')
+
+    def test_unknown_date_does_not_use_later_date_from_prose(self):
+        root = ET.fromstring('<cei><idno>CIII.</idno><issued><date value="99999999"/></issued>'
+                             '<abstract>A document mentioning 1354. 4. Jänner. in its text.</abstract></cei>')
+        with self.assertRaisesRegex(ValueError, 'without an explicit date'):
+            create_record(root, 'https://www.monasterium.net/charter')
+
     def test_sources_added_to_fallback_idempotently(self):
         root = ET.fromstring('<cei><idno>StA Wü, MIB 10 fol. 075v</idno>'
                             '<issued><dateRange from="13780101" to="13831231"/></issued>'

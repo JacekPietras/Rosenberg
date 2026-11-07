@@ -174,7 +174,11 @@ Results do not expire automatically; remove an entry to check it again, or use
 `--results-file` to select a different results file. Archive scripts may also
 have their own search caches.
 For Landesarchiv BW, repeat `--skip-result-id ID` to omit specific catalogue
-results from variation-check imports.
+results from variation-check imports. Its downloader uses the direct catalogue
+page when a search result's permalink does not resolve to that record, and the
+search continues past individual results it cannot resolve or import while
+reporting them. Use `--resume-after-result-id ID` to continue the first
+Landesarchiv BW import after an interrupted catalogue result.
 
 Monasterium skips normal searches containing a dot, since those duplicate the
 undotted query. For `--exists`, it checks or reuses the undotted query instead.

@@ -149,3 +149,13 @@ def has_url(document_dir: Path, url: str) -> bool:
                     normalized_url(existing) for existing in values(entry.get('url'))}:
                 return True
     return False
+
+
+def has_source(document_dir: Path, source: str) -> bool:
+    """Return whether an entry already has this exact archival citation."""
+    for path in document_dir.glob('*.json'):
+        document = json.loads(path.read_text(encoding='utf-8'))
+        for entry in document.get('entries', []):
+            if isinstance(entry, dict) and source in values(entry.get('source')):
+                return True
+    return False

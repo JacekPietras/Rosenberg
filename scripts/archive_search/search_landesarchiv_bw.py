@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore
 from search_retry import retry_get
 sys.path.insert(0, str(ROOT / "scripts" / "archive_records"))
-from archive_record_storage import has_url
+from archive_record_storage import has_source, has_url
 from urllib.error import HTTPError
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
@@ -180,6 +180,8 @@ def main():
     parser.add_argument('--limit', type=int, help='maximum number of results')
     parser.add_argument('--skip-result-id', action='append', default=[],
                         help='skip this catalogue result during listing or import (repeatable)')
+    parser.add_argument('--resume-after-result-id',
+                        help='resume importing after this catalogue result (inclusive)')
     parser.add_argument('--delay', type=float, default=15, help='seconds between requests (minimum 1; default 15)')
     args = parser.parse_args()
     results = ResultsStore('landesarchiv_bw', args.results_file)
@@ -200,6 +202,10 @@ def main():
         parser.error('--limit must be positive')
     client = Client(args.delay)
     count = total = 0
+    result_seen = False
+    failures = []
+    resume_pending = bool(args.resume_after_result_id)
+    resume_found = not resume_pending
     try:
         if not args.exists and results.get(phrase) is False:
             print('Skipping search: saved result is empty', file=sys.stderr)
@@ -209,12 +215,26 @@ def main():
             print('true' if found else 'false')
             return 0
         for row, total in client.search(phrase, args.limit):
+            if resume_pending:
+                if row['id'] == args.resume_after_result_id:
+                    resume_pending = False
+                    resume_found = True
+                    print(f'Resuming after catalogue result {row["id"]}', file=sys.stderr, flush=True)
+                continue
+            result_seen = True
+            results.record(phrase, True)
             if row['id'] in args.skip_result_id:
                 print(f'Skipping catalogue result {row["id"]}', file=sys.stderr, flush=True)
                 continue
-            if count == 0:
-                results.record(phrase, True)
-            url = client.resolve(row)
+            if not args.list_only and args.skip_existing and has_source(ROOT / 'data/documents', row['signature']):
+                print(f'Skipping existing citation: {row["signature"]}', flush=True)
+                continue
+            try:
+                url = client.resolve(row)
+            except (OSError, ValueError, RuntimeError) as exc:
+                failures.append((row['id'], row['signature'], str(exc)))
+                print(f'Skipping result {row["id"]} ({row["signature"]}): {exc}', file=sys.stderr, flush=True)
+                continue
             count += 1
             print(f'{count}. {row["signature"]} | {row["date"]}\n   {url}', flush=True)
             if not args.list_only and args.skip_existing and has_url(ROOT / 'data/documents', url):
@@ -231,10 +251,19 @@ def main():
                 proc = subprocess.run(command, cwd=ROOT)
                 client.last_request = time.monotonic()
                 if proc.returncode:
-                    raise RuntimeError(f'Downloader failed for {url}; stopping (exit {proc.returncode})')
-        if count == 0:
+                    failures.append((row['id'], row['signature'],
+                                     f'downloader failed for {url} (exit {proc.returncode})'))
+                    print(f'Skipping result {row["id"]} after downloader failure', file=sys.stderr, flush=True)
+        if not resume_found:
+            raise ValueError(f'Could not find resume result {args.resume_after_result_id}')
+        if not result_seen:
             results.record(phrase, False)
-        print(f'Listed {count} of {total} catalogue results' + (' (limited)' if count < total else ''), file=sys.stderr)
+        suffix = f'; skipped {len(failures)} problematic result(s)' if failures else ''
+        print(f'Listed {count} of {total} catalogue results' + (' (limited)' if count < total else '') + suffix,
+              file=sys.stderr)
+        if failures:
+            for result_id, signature, error in failures:
+                print(f'  {result_id} | {signature}: {error}', file=sys.stderr)
         return 0
     except (OSError, ValueError, RuntimeError) as exc:
         print(f'Error after {count} results: {exc}', file=sys.stderr)

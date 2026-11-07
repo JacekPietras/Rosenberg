@@ -3,9 +3,15 @@
   "place": "heidelberg",
   "entries": [
     {
-      "source": "D Nr. 456, Verweisung",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=4-3933636",
-      "german": "König Ruprecht gestattet den Brüdern Arnold und Eberhard von Rosenberg in ihrem Dorf Schweigern ein Halsgericht, Stock und Galgen zu haben.",
+      "source": [
+        "D Nr. 456, Verweisung",
+        "Generallandesarchiv Karlsruhe {D Nr. 456, Verweisung}"
+      ],
+      "url": [
+        "https://www.landesarchiv-bw.de/plink/?f=4-3933636",
+        "https://www.landesarchiv-bw.de/plink/?f=4-1787122"
+      ],
+      "german": "König Ruprecht gestattet den Brüdern Arnold und Eberhard von Rosenberg in ihrem Dorf Schweigern ein Halsgericht, Stock und Galgen zu haben.\n\nLaufzeit: 1400 Dezember 10 (1400 Freitag nach Nikolaus)",
       "english": "King Ruprecht allows the brothers Arnold and Eberhard von Rosenberg to have a neck court, stocks and gallows in their village of Schweigern.",
       "facts": [
         {

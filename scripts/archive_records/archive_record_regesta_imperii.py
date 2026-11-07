@@ -29,7 +29,7 @@ HOSTS = {"www.regesta-imperii.de", "regesta-imperii.de"}
 UUID_RE = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.I)
 MONTH_PREFIXES = ["jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez"]
 MONTH_ALIASES = {"jän": 1, "mar": 3, "mrz": 3}
-GERMAN_DATE_RE = re.compile(r"(\d{4})(?:\s+([A-Za-zäÄ]{3,9})\.?(?:\s+(\d{1,2})\b)?)?")
+GERMAN_DATE_RE = re.compile(r"(\d{3,4})(?:\s+([A-Za-zäÄ]{3,9})\.?(?:\s+(\d{1,2})\b)?)?")
 CEI_LINK_RE = re.compile(r"(?:https?://[^\"'\s<>]+)?/cei/[\w.-]+/sources/[\w.-]+", re.I)
 
 
@@ -198,7 +198,7 @@ def month_number(name: str) -> int | None:
 def parse_german_date(text: str) -> str:
     dates = []
     for year, month, day in GERMAN_DATE_RE.findall(text.replace("[", "").replace("]", "")):
-        value = year
+        value = year.zfill(4)
         number = month_number(month) if month else None
         if number:
             value += f"-{number:02d}"
@@ -241,10 +241,15 @@ def parse_html(page: bytes, entered_url: str) -> dict[str, object]:
 
 
 def canonical_url(url: str) -> str:
-    match = UUID_RE.search(urlsplit(url).path)
-    if not match:
-        raise ValueError("No record id found in the Regesta Imperii URL")
-    return f"https://www.regesta-imperii.de/id/{match.group(0).lower()}"
+    path = urlsplit(url).path
+    match = UUID_RE.search(path)
+    if match:
+        return f"https://www.regesta-imperii.de/id/{match.group(0).lower()}"
+    legacy = re.search(r"/nr/(\d{4}-\d{2}-\d{2})-([A-Za-z0-9]+(?:-[A-Za-z0-9]+)+)\.html$", path)
+    if legacy:
+        identifier = f"{legacy.group(1)}_{legacy.group(2).replace('-', '_')}"
+        return f"https://www.regesta-imperii.de/id/{identifier}"
+    raise ValueError("No record id found in the Regesta Imperii URL")
 
 
 def resolve_cei(url: str) -> tuple[str, bytes]:
@@ -319,7 +324,8 @@ def create_record(url: str) -> tuple[Path, bool]:
         cei_url, cei_xml = resolve_cei(url)
         record = parse_cei(cei_xml, cei_url, url)
     except (HTTPError, ValueError):
-        _, page = fetch(canonical_url(url))
+        fallback_url = canonical_url(url)
+        _, page = fetch(fallback_url)
         record = parse_html(page, url)
     from archive_record_storage import save_record
     return save_record(record, DOCUMENT_DIR)

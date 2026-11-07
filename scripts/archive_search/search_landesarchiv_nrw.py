@@ -149,7 +149,7 @@ def main():
                     print(f'Skipping existing URL: {url}', flush=True); continue
                 try:
                     path, updated = nrw.create_record(url)
-                except (OSError, HTTPError, URLError, ValueError) as exc:
+                except (OSError, HTTPError, URLError, RuntimeError, ValueError) as exc:
                     print(f'Skipping record that could not be imported: {exc}', file=sys.stderr, flush=True)
                     continue
                 print(f'{"Updated" if updated else "Created"}: {path.relative_to(ROOT)}', flush=True)

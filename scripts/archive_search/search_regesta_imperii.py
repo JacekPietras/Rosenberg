@@ -187,7 +187,18 @@ def main():
                 if args.list_only: continue
                 if args.skip_existing and has_url(ROOT / 'data/documents', url):
                     print(f'Skipping existing URL: {url}'); continue
-                path, updated = ri.create_record(url)
+                try:
+                    path, updated = ri.create_record(url)
+                except HTTPError as exc:
+                    if exc.code != 404:
+                        raise
+                    print(f'Skipping unavailable record (HTTP 404): {url}', file=sys.stderr)
+                    continue
+                except RuntimeError as exc:
+                    if not str(exc).startswith('HTTP 404;'):
+                        raise
+                    print(f'Skipping unavailable record (HTTP 404): {url}', file=sys.stderr)
+                    continue
                 print(f'{"Updated" if updated else "Created"}: {path.relative_to(ROOT)}', flush=True)
             print(f'Listed {len(rows)} of {total} catalogue results' + (' (limited)' if len(rows) < total else ''), file=sys.stderr)
             return 0

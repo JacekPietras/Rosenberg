@@ -231,7 +231,7 @@ def verify_permalink(opener, url: str, aid: str) -> str:
         raise ValueError(f"Landesarchiv permalink {url} does not exist")
     found = {html.unescape(record_aid).strip() for _, record_aid in ID_RE.findall(page)}
     if aid not in found:
-        raise ValueError(f"Landesarchiv page did not confirm archive ID {aid}; refusing to save {url}")
+        raise ValueError(f"Landesarchiv page did not confirm archive ID {aid}")
     # Keep the stable public permalink, but only after the archive has confirmed it.
     return f"https://www.landesarchiv-bw.de/plink/?{urlencode({'f': aid})}"
 
@@ -349,14 +349,23 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         raise ValueError("The permalink has no f= archive identifier")
 
     opener = build_opener()
-    url = verify_permalink(opener, url, aid)
     images = []
     if catalog_id:
         if not catalog_id.isdigit() or not bestand or not bestand.isdigit():
             raise ValueError("Catalog ID and Bestand must be numeric")
         details_url = "https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?" + urlencode(
             {"id_titlaufn": catalog_id, "bestand": bestand})
+        try:
+            url = verify_permalink(opener, url, aid)
+        except (OSError, ValueError) as exc:
+            # Some search results expose a stale or misdirected plink even
+            # though their numeric catalogue record is still available.
+            # Keep the record only through its directly addressable catalogue
+            # page, which is fetched and checked below before anything is saved.
+            url = details_url
+            print(f"Warning: {exc}; using the direct catalogue record URL {url}", file=sys.stderr)
     else:
+        url = verify_permalink(opener, url, aid)
         discovered = discover_viewer(opener, url)
         details_url, viewer_url, fields, page_names, scope_id = discovered
         if page_names:
@@ -364,11 +373,15 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
     details = CatalogDetails()
     details.feed(fetch_page(details_url))
     if catalog_id and has_viewer:
-        time.sleep(delay)
-        zoom_url = "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?" + urlencode(
-            {"bestand": bestand, "id": catalog_id})
-        viewer_url, viewer_fields, page_names, scope_id = read_viewer(build_opener(), zoom_url, catalog_id, aid)
-        images = image_urls(viewer_url, viewer_fields, page_names, scope_id)
+        try:
+            time.sleep(delay)
+            zoom_url = "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?" + urlencode(
+                {"bestand": bestand, "id": catalog_id})
+            viewer_url, viewer_fields, page_names, scope_id = read_viewer(
+                build_opener(), zoom_url, catalog_id, aid)
+            images = image_urls(viewer_url, viewer_fields, page_names, scope_id)
+        except (OSError, ValueError) as exc:
+            print(f"Warning: catalogue viewer unavailable for record {catalog_id}: {exc}", file=sys.stderr)
     source = details.fields.get("bestellsignatur")
     date_text = details.fields.get("laufzeit")
     german = details.fields.get("titel")
