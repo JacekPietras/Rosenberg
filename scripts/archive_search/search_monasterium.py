@@ -19,6 +19,8 @@ from urllib.parse import urlencode, urljoin, urlsplit
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
+from search_results import ResultsStore
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 from archive_record_storage import has_url
 
@@ -183,10 +185,12 @@ def main():
     mode.add_argument('--list-only', action='store_true', help='list without downloading')
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing results')
     parser.add_argument('--skip-existing', action='store_true')
+    parser.add_argument('--results-file', type=Path, help='JSON file for verified existence results')
     parser.add_argument('--limit', type=int)
     parser.add_argument('--delay', type=float, default=15, help='seconds between searches and imports (minimum 15)')
     parser.add_argument('--cache-dir', type=Path, default=CACHE)
     args = parser.parse_args()
+    results = ResultsStore('monasterium', args.results_file)
     query = args.query.strip()
     if not query:
         parser.error('query must not be empty')
@@ -203,10 +207,14 @@ def main():
             return 1
         client = Client(args.delay, args.cache_dir)
         try:
+            if not args.exists and results.get(query) is False:
+                print('Skipping search: saved result is empty', file=sys.stderr)
+                return 0
             if args.exists:
-                print('true' if client.exists(query) else 'false')
+                print('true' if results.exists(query, lambda: client.exists(query)) else 'false')
                 return 0
             rows, total = client.search(query, args.limit)
+            results.record(query, total > 0)
             for i, row in enumerate(rows, 1):
                 url = row['url']
                 print(f'{i}. {row["title"]}\n   {url}', flush=True)

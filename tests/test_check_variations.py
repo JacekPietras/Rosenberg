@@ -1,8 +1,6 @@
 import contextlib
 import importlib.util
 import io
-import tempfile
-import subprocess
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -54,38 +52,6 @@ class VariationChecks(unittest.TestCase):
             self.assertEqual(module.main(), 0)
         self.assertEqual(checked, ['Rosinberg', 'von Rosinberg', 'v Rosinberg',
                                    'v. Rosinberg', 'von. Rosinberg', 'de Rosinberg'])
-
-    def test_persistent_cache_separates_archives_and_stores_both_answers(self):
-        with tempfile.TemporaryDirectory() as directory:
-            cache = Path(directory) / 'checks.json'
-            with patch.object(module.subprocess, 'run', side_effect=[
-                subprocess.CompletedProcess([], 0, 'true\n'),
-                subprocess.CompletedProcess([], 0, 'false\n'),
-                subprocess.CompletedProcess([], 0, 'false\n'),
-            ]) as run:
-                first = module.Checker('monasterium', results_file=cache)
-                self.assertTrue(first.exists('Rosinberg'))
-                self.assertFalse(first.exists('Rosenburgk'))
-                second = module.Checker('monasterium', results_file=cache)
-                self.assertTrue(second.exists('Rosinberg'))
-                self.assertFalse(second.exists('Rosenburgk'))
-                other = module.Checker('regesta_imperii', results_file=Path(directory) / 'other.json')
-                self.assertFalse(other.exists('Rosinberg'))
-                self.assertEqual(run.call_count, 3)
-
-    def test_failures_are_not_cached(self):
-        with tempfile.TemporaryDirectory() as directory:
-            cache = Path(directory) / 'checks.json'
-            with patch.object(module.subprocess, 'run', side_effect=[
-                subprocess.CompletedProcess([], 1, ''),
-                subprocess.CompletedProcess([], 0, 'unexpected'),
-                subprocess.CompletedProcess([], 0, 'true\n'),
-            ]) as run:
-                for _ in range(2):
-                    with self.assertRaises(RuntimeError):
-                        module.Checker('monasterium', results_file=cache).exists('Rosinberg')
-                self.assertTrue(module.Checker('monasterium', results_file=cache).exists('Rosinberg'))
-                self.assertEqual(run.call_count, 3)
 
     def test_absent_surnames_skip_all_names(self):
         with patch.object(module, 'surname_variants', return_value=['Absent']), \

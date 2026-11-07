@@ -155,9 +155,12 @@ checks each surviving surname with the prefixes `von`, `v`, `v.`, `von.`,
 and `de`, then uses only surviving prefix-surname pairs in full names. Unknown names use the
 spelling supplied. It may take a long time because every surviving combination
 is checked with the archive’s normal delays. Successful true and false checks
-are saved by archive and exact query in `data/archive_search/ARCHIVE.json`,
+are saved by each archive search script, for direct searches and variation checks,
+by archive and exact query in `data/archive_search/ARCHIVE.json`,
 including after an interrupted run. Subsequent runs reuse them without another
-request. These files can be committed and published with the rest of the data.
+request. Normal searches also skip queries saved as empty; queries saved as
+positive still search for records. These files can be committed and published
+with the rest of the data.
 Results do not expire automatically; remove an entry to check it again, or use
 `--results-file` to select a different results file. Archive scripts may also
 have their own search caches.

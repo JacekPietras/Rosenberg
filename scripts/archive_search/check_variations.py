@@ -3,15 +3,11 @@
 from __future__ import annotations
 
 import argparse
-import fcntl
-import hashlib
 import itertools
 import json
-import os
 import re
 import subprocess
 import sys
-import tempfile
 import time
 from pathlib import Path
 
@@ -25,8 +21,6 @@ SCRIPTS = {name: Path(__file__).with_name(f'search_{name}.py') for name in (
 )}
 CACHE_ARCHIVES = {'monasterium', 'gda_bayern', 'landesarchiv_nrw', 'regesta_imperii'}
 PREFIXES = ('von', 'v', 'v.', 'von.', 'de')
-RESULTS_DIR = ROOT / 'data/archive_search'
-LOCK_DIR = ROOT / '.cache/archive_search/variation_locks'
 
 
 def unique(values):
@@ -60,59 +54,30 @@ class Checker:
     def __init__(self, archive, cache_dir=None, results_file=None):
         self.archive = archive
         self.cache_dir = cache_dir
-        self.results_file = results_file or RESULTS_DIR / f'{archive}.json'
+        self.results_file = results_file
         self.last_finished = None
         self.answers = {}
 
     def exists(self, query):
         if query in self.answers:
             return self.answers[query]
-        self.results_file.parent.mkdir(parents=True, exist_ok=True)
-        LOCK_DIR.mkdir(parents=True, exist_ok=True)
-        lock_name = hashlib.sha256(str(self.results_file.resolve()).encode()).hexdigest() + '.lock'
-        with (LOCK_DIR / lock_name).open('a') as lock:
-            fcntl.flock(lock, fcntl.LOCK_EX)
-            if self.results_file.exists():
-                data = json.loads(self.results_file.read_text(encoding='utf-8'))
-                if (not isinstance(data, dict) or data.get('archive') != self.archive
-                        or not isinstance(data.get('queries'), dict)
-                        or any(not isinstance(k, str) or not isinstance(v, bool)
-                               for k, v in data['queries'].items())):
-                    raise ValueError(f'Invalid results file: {self.results_file}')
-            else:
-                data = {'archive': self.archive, 'queries': {}}
-            if query in data['queries']:
-                self.answers[query] = data['queries'][query]
-                return self.answers[query]
-            # Some archive clients keep rate-limit timestamps only in their process.
-            if self.last_finished is not None and self.archive not in CACHE_ARCHIVES:
-                time.sleep(max(0, 15 - (time.monotonic() - self.last_finished)))
-            command = [sys.executable, str(SCRIPTS[self.archive]), query, '--exists']
-            if self.cache_dir is not None:
-                command.extend(['--cache-dir', str(self.cache_dir)])
-            print(f'Checking: {query}', file=sys.stderr, flush=True)
-            result = subprocess.run(command, cwd=ROOT, text=True, stdout=subprocess.PIPE)
-            self.last_finished = time.monotonic()
-            if result.returncode:
-                raise RuntimeError(f'Check failed for {query!r} (exit {result.returncode})')
-            answer = result.stdout.strip()
-            if answer not in ('true', 'false'):
-                raise RuntimeError(f'Unexpected response for {query!r}: {answer!r}')
-            found = answer == 'true'
-            data['queries'][query] = found
-            data['queries'] = dict(sorted(data['queries'].items()))
-            # Replace atomically so an interrupted write leaves valid JSON.
-            temp_path = None
-            try:
-                with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8',
-                                                 dir=self.results_file.parent, delete=False) as temp:
-                    temp_path = Path(temp.name)
-                    json.dump(data, temp, ensure_ascii=False, indent=2)
-                    temp.write('\n')
-                os.replace(temp_path, self.results_file)
-            finally:
-                if temp_path is not None:
-                    temp_path.unlink(missing_ok=True)
+        # Some archive clients keep rate-limit timestamps only in their process.
+        if self.last_finished is not None and self.archive not in CACHE_ARCHIVES:
+            time.sleep(max(0, 15 - (time.monotonic() - self.last_finished)))
+        command = [sys.executable, str(SCRIPTS[self.archive]), query, '--exists']
+        if self.cache_dir is not None:
+            command.extend(['--cache-dir', str(self.cache_dir)])
+        if self.results_file is not None:
+            command.extend(['--results-file', str(self.results_file)])
+        print(f'Checking: {query}', file=sys.stderr, flush=True)
+        result = subprocess.run(command, cwd=ROOT, text=True, stdout=subprocess.PIPE)
+        self.last_finished = time.monotonic()
+        if result.returncode:
+            raise RuntimeError(f'Check failed for {query!r} (exit {result.returncode})')
+        answer = result.stdout.strip()
+        if answer not in ('true', 'false'):
+            raise RuntimeError(f'Unexpected response for {query!r}: {answer!r}')
+        found = answer == 'true'
         self.answers[query] = found
         return found
 

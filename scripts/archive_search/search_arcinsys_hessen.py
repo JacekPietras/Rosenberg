@@ -13,6 +13,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
+from search_results import ResultsStore
 sys.path.insert(0, str(ROOT / "scripts" / "archive_records"))
 from archive_record_storage import has_url
 from urllib.error import HTTPError
@@ -146,9 +148,11 @@ def main():
     mode.add_argument('--list-only', action='store_true', help='list results without downloading')
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     p.add_argument('--skip-existing', action='store_true', help='skip downloading URLs already stored locally')
+    p.add_argument('--results-file', type=Path, help='JSON file for verified existence results')
     p.add_argument('--limit', type=int, help='maximum number of search results to list')
     p.add_argument('--delay', type=float, default=15, help='seconds between requests and downloads (minimum 1; default 15)')
     args = p.parse_args()
+    results = ResultsStore('arcinsys_hessen', args.results_file)
     if args.delay < 1 or not args.delay < float('inf'):
         p.error('--delay must be at least 1 second')
     if args.limit is not None and args.limit < 1:
@@ -162,11 +166,16 @@ def main():
     count = 0
     total = 0
     try:
+        if not args.exists and results.get(phrase) is False:
+            print('Skipping search: saved result is empty', file=sys.stderr)
+            return 0
         if args.exists:
-            found = next(client.search(f'"{phrase}"', exists=True), None) is not None
+            found = results.exists(phrase, lambda: next(client.search(f'"{phrase}"', exists=True), None) is not None)
             print('true' if found else 'false')
             return 0
         for row, total in client.search(f'"{phrase}"', args.limit):
+            if count == 0:
+                results.record(phrase, True)
             url = record_url(row)
             count += 1
             print(f'{count}. {row.get("columnKeySignatur", "")} | {row.get("columnKeyLaufzeit", "")} | {row.get("columnKeyBezeichnung", "")}\n   {url or "No archival record URL"}', flush=True)
@@ -180,6 +189,8 @@ def main():
                 proc = subprocess.run([sys.executable, str(ROOT / 'scripts/archive_records/archive_record_download.py'), url], cwd=ROOT)
                 if proc.returncode:
                     raise RuntimeError(f'Downloader failed for {url}; stopping (exit {proc.returncode})')
+        if count == 0:
+            results.record(phrase, False)
         print(f'Listed {count} of {total} catalogue results'
               + (' (limited)' if count < total else ''), file=sys.stderr)
         return 0

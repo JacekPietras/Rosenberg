@@ -17,6 +17,8 @@ from urllib.parse import urlencode
 from urllib.request import Request
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
+from search_results import ResultsStore
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 import archive_record_nrw as nrw
 from archive_record_storage import has_url
@@ -92,10 +94,12 @@ def main():
     mode.add_argument('--list-only', action='store_true', help='list without importing')
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     p.add_argument('--skip-existing', action='store_true')
+    p.add_argument('--results-file', type=Path, help='JSON file for verified existence results')
     p.add_argument('--limit', type=int)
     p.add_argument('--delay', type=float, default=15, help='minimum seconds between requests (default 15)')
     p.add_argument('--cache-dir', type=Path, default=CACHE)
     args = p.parse_args()
+    results = ResultsStore('landesarchiv_nrw', args.results_file)
     if not args.query.strip(): p.error('query must not be empty')
     if not math.isfinite(args.delay) or args.delay < 15: p.error('--delay must be at least 15 seconds')
     if args.limit is not None and args.limit < 1: p.error('--limit must be positive')
@@ -106,10 +110,16 @@ def main():
             print('Another Archive NRW search is running; stopping', file=sys.stderr); return 1
         client = Client(args.delay, args.cache_dir)
         try:
-            rows, total = client.search(args.query.strip(), 1 if args.exists else args.limit, exists=args.exists)
-            if args.exists:
-                print('true' if total else 'false')
+            query = args.query.strip()
+            if not args.exists and results.get(query) is False:
+                print('Skipping search: saved result is empty', file=sys.stderr)
                 return 0
+            if args.exists:
+                found = results.exists(query, lambda: client.search(query, 1, exists=True)[1] > 0)
+                print('true' if found else 'false')
+                return 0
+            rows, total = client.search(query, args.limit)
+            results.record(query, total > 0)
             for i, row in enumerate(rows, 1):
                 node = row['nodeid']
                 url = BASE + 'archivsuche?' + urlencode({'link': node})

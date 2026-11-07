@@ -19,6 +19,8 @@ from urllib.parse import urljoin, urlencode
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
+from search_results import ResultsStore
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 from archive_record_gda_resolver import SearchForm
 from archive_record_storage import has_url
@@ -146,10 +148,12 @@ def main():
     mode.add_argument('--list-only', action='store_true', help='list without downloading')
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     parser.add_argument('--skip-existing', action='store_true')
+    parser.add_argument('--results-file', type=Path, help='JSON file for verified existence results')
     parser.add_argument('--limit', type=int)
     parser.add_argument('--delay', type=float, default=15, help='seconds between requests (minimum/default 15)')
     parser.add_argument('--cache-dir', type=Path, default=CACHE)
     args = parser.parse_args()
+    results = ResultsStore('gda_bayern', args.results_file)
     phrase = args.query.strip()
     if phrase.startswith('"') and phrase.endswith('"'):
         phrase = phrase[1:-1].strip()
@@ -169,11 +173,16 @@ def main():
         print('Another Bavarian archive search is running; stopping', file=sys.stderr)
         return 1
     try:
+        if not args.exists and results.get(phrase) is False:
+            print('Skipping search: saved result is empty', file=sys.stderr)
+            return 0
         if args.exists:
-            _, total = next(client.search(phrase, exists=True))
-            print('true' if total else 'false')
+            found = results.exists(phrase, lambda: next(client.search(phrase, exists=True))[1] > 0)
+            print('true' if found else 'false')
             return 0
         for row, total in client.search(phrase, args.limit):
+            if count == 0:
+                results.record(phrase, True)
             count += 1
             url = row['url']
             print(f'{count}. {row["title"]}\n   {url}', flush=True)
@@ -186,6 +195,8 @@ def main():
                 (client.cache_dir / 'last-request').write_text(str(time.time()))
                 if proc.returncode:
                     raise RuntimeError(f'Downloader failed for {url}; stopping (exit {proc.returncode})')
+        if count == 0:
+            results.record(phrase, False)
         print(f'Listed {count} of {total} catalogue results' + (' (limited)' if count < total else ''), file=sys.stderr)
         return 0
     except (OSError, ValueError, RuntimeError) as exc:

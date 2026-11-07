@@ -350,4 +350,4 @@ reuse and publication. `archive` is the archive search script identifier;
 `queries` maps each exact query string to a Boolean indicating whether the
 archive returned any results. A negative result describes the catalogue search
 at the time it was checked; it is not a historical fact or proof that a person
-is absent from the archive. The variation checker writes entries immediately.
+is absent from the archive. The archive search scripts write entries immediately after a confirmed result.
