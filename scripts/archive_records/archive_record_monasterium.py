@@ -10,7 +10,7 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import parse_qs, urlsplit, urlunsplit
+from urllib.parse import parse_qs, unquote, urlsplit, urlunsplit
 from urllib.request import Request, build_opener
 from xml.etree import ElementTree
 
@@ -127,7 +127,7 @@ class CharterImages(HTMLParser):
         if parsed.scheme == 'http' and parsed.hostname == 'images.monasterium.net':
             image = urlunsplit(parsed._replace(scheme='https'))
             parsed = urlsplit(image)
-        if parsed.scheme in {'http', 'https'} and parsed.netloc and parsed.path.rsplit('/', 1)[-1] in self.filenames:
+        if parsed.scheme in {'http', 'https'} and parsed.netloc and unquote(parsed.path.rsplit('/', 1)[-1]) in self.filenames:
             if image not in self.images:
                 self.images.append(image)
 

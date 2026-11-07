@@ -7,11 +7,21 @@ from unittest.mock import patch
 from xml.etree import ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts/archive_records'))
-from archive_record_monasterium import EditionReferences, fallback_sources, create_record as download_record
+from archive_record_monasterium import CharterImages, EditionReferences, fallback_sources, create_record as download_record
 from archive_record_monasterium_internal import create_record
 
 
 class ProvenanceTests(unittest.TestCase):
+    def test_image_filenames_match_url_encoded_viewer_links(self):
+        parser = CharterImages(['K.._~Zwettl._~StAZ__12291219v.jpg', 'K.._~Zwettl._~StAZ__12291219.jpg'])
+        parser.feed('<a class="imageLink" data-url="http://images.monasterium.net/pics/166/K.._%7EZwettl._%7EStAZ__12291219v.jpg"></a>'
+                    '<a class="imageLink" data-url="http://images.monasterium.net/pics/166/K.._%7EZwettl._%7EStAZ__12291219.jpg"></a>'
+                    '<a class="imageLink" data-url="http://images.monasterium.net/pics/166/other.jpg"></a>')
+        self.assertEqual(parser.images, [
+            'https://images.monasterium.net/pics/166/K.._%7EZwettl._%7EStAZ__12291219v.jpg',
+            'https://images.monasterium.net/pics/166/K.._%7EZwettl._%7EStAZ__12291219.jpg',
+        ])
+
     def test_explicit_host_only_and_deduplication(self):
         parser = EditionReferences()
         parser.feed('<a href="http://www.ingrossaturbuecher.de/fileadmin/image.jpg">Image</a>'

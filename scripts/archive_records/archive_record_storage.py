@@ -4,10 +4,22 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from urllib.parse import parse_qsl, urlsplit
 
 
 def values(value):
     return value if isinstance(value, list) else [value] if value else []
+
+
+def normalized_url(url):
+    """Normalize known alternate forms of the same archive record URL."""
+    parts = urlsplit(url)
+    if parts.hostname == 'www.gda.bayern.de' and parts.path in {
+            '/gvl/archive.jsf', '/gvl/archive.xhtml'}:
+        query = tuple(sorted((key, value) for key, value in parse_qsl(parts.query)
+                             if key != 'parent_id'))
+        return parts.scheme, parts.netloc, '/gvl/archive.xhtml', query
+    return url
 
 
 SPECIAL_PART = re.compile(
@@ -102,7 +114,7 @@ def save_record(record, document_dir: Path):
                    key=lambda p: (int(pattern.fullmatch(p.name).group(1) or 1), p.name))
     incoming = record['entries'][0]
     incoming_sources = set(values(incoming.get('source')))
-    incoming_urls = set(values(incoming.get('url')))
+    incoming_urls = {normalized_url(url) for url in values(incoming.get('url'))}
     incoming_texts = texts(incoming)
     # Check citations first, then main text without catalog metadata sections.
     for by_source, candidates in ((True, paths), (False, sorted(document_dir.glob('*.json')))):
@@ -113,7 +125,8 @@ def save_record(record, document_dir: Path):
             for entry in document.get('entries', []):
                 if not isinstance(entry, dict):
                     continue
-                match = bool(incoming_sources.intersection(values(entry.get('source'))) or incoming_urls.intersection(values(entry.get('url')))) if by_source else bool(incoming_texts.intersection(texts(entry)))
+                existing_urls = {normalized_url(url) for url in values(entry.get('url'))}
+                match = bool(incoming_sources.intersection(values(entry.get('source'))) or incoming_urls.intersection(existing_urls)) if by_source else bool(incoming_texts.intersection(texts(entry)))
                 if not match:
                     continue
                 before = json.dumps(document, ensure_ascii=False, sort_keys=True)
@@ -128,9 +141,11 @@ def save_record(record, document_dir: Path):
 
 
 def has_url(document_dir: Path, url: str) -> bool:
+    wanted = normalized_url(url)
     for path in document_dir.glob('*.json'):
         document = json.loads(path.read_text(encoding='utf-8'))
         for entry in document.get('entries', []):
-            if isinstance(entry, dict) and url in values(entry.get('url')):
+            if isinstance(entry, dict) and wanted in {
+                    normalized_url(existing) for existing in values(entry.get('url'))}:
                 return True
     return False
