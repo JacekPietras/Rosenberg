@@ -1,0 +1,88 @@
+{
+  "date": "1365-03-08",
+  "entries": [
+    {
+      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1322",
+      "url": [
+        "https://www.landesarchiv-bw.de/plink/?f=3-190272",
+        "https://www.deutsche-digitale-bibliothek.de/item/WA766UW3H7EBBXWQ5NBMWZCV5CF4PR7O"
+      ],
+      "summary": "Bertold von Zwingenberg verpflichtet sich, wieder im Schloß Lichteneck bei Ingelfingen sich zu stellen; Siegel: Bertold von Zwingenberg und Eberhard von Rosenberg (Duplikat).",
+      "german": "Ich Berthold von Zwingenberg der knecht bekenne offenlich an disem briefe vnd tun kunt allen den die in sehent\noder horent lesen / daz ich gevangen bin mines herren / hern Kraften von Hohenlach dez alten / vnd sin erben / vnd vmb die\n[…] hat er mir tag gebin / biz uf den wissen suntag der nehst kumpt / daz ich mich sal stellen / den Lichtenecke [?]\n[…] nummer ze komen ich sie dan behalten vor in den handen / da ich vor inne bin gewesen on alle gnade / vnd auch\n[…] sin wile vnd sin wort / oder sin erben […] wes daz man min […]\nhern Kraft von Hohenlach der vorgenant / so hat er mich gemanet in Eberhartes hus von Rosinberg / dez […] ich\n[…] die manunge tut mit sinen briuen oder mit sinen boten / so sol ich mich dan nach stellen in vierzehen [?]\ntagen den Lichtenecke [?] / in alle wise als vorgeschriben stet / on alle gnade / vnd han dez zu den heyligen gesworn\nstet ze halten an alle gnade / ze vrkunde vnd sicherheit aller vorgeschribener rede / han ich min eygen Insigel\ngehenket an disen brief / vnd zu einer besern gezugnisse han ich gebetten hern Wiprechten von Dürn […] daz er sin Insigel […]\n[…] hat gehenket an disem brief / Ich Wiprecht von Dürn vorgenant bekenne daz ich durch\nbette willen dez vorgenanten Berthold von Zwingenberg / min Insigel zu sinem han gehenket an disen brief / der\ngeben wart do man zalt von Cristes geburte / drizehenhundert iar / vnd dar nach in dem fünf vnd sechzigsten\niare an dem nehsten Samstage vor sant Gregorien tag",
+      "english": "I, Berthold von Zwingenberg, the Knecht, publicly declare in this letter and make known to all who see\nor hear it read that I am a prisoner of my lord, Lord Kraft von Hohenlohe the Elder, and his heirs, and concerning the\n[…] he has given me a term until the coming White Sunday, by which I shall present myself [at Lichteneck [?]]\n[…] never to come [?], unless I am held in the hands in which I was before, without mercy, and also\n[…] his will and his word, or his heirs […] whatever my lord […]\nthe aforesaid Lord Kraft von Hohenlohe, then he has summoned me to the house of Eberhard von Rosenberg […] I\n[…] makes the summons with his letters or with his messengers, then I shall present myself within fourteen [?]\ndays at Lichteneck [?], in every way as written above, without mercy, and I have sworn this on the saints\nto keep without mercy. In witness and assurance of all the aforesaid, I have attached my own seal\nto this letter, and for better testimony I have asked Lord Wiprecht von Dürn […] that he […] seal\n[…] has attached to this letter. I, the aforesaid Wiprecht von Dürn, declare that, at the\nrequest of the aforesaid Berthold von Zwingenberg, I have attached my seal to his to this letter. This was\ngiven when one counted from Christ’s birth thirteen hundred years and thereafter in the sixty-fifth year, on the next Saturday before St. Gregory’s day.",
+      "facts": [
+        {
+          "person": "Berthold von Zwingenberg",
+          "type": "generic",
+          "content": "was held prisoner by Kraft von Hohenlohe the Elder and his heirs."
+        },
+        {
+          "person": "Berthold von Zwingenberg",
+          "type": "generic",
+          "content": "promised to present himself at Lichteneck by the coming Weißer Sonntag."
+        },
+        {
+          "person": "Berthold von Zwingenberg",
+          "type": "generic",
+          "content": "promised to present himself at Lichteneck within fourteen days [?] of a summons by letter or messenger from Kraft von Hohenlohe."
+        },
+        {
+          "person": "Berthold von Zwingenberg",
+          "type": "generic",
+          "content": "swore on the saints to keep his undertaking."
+        },
+        {
+          "person": "Berthold von Zwingenberg",
+          "type": "generic",
+          "content": "sealed his own undertaking."
+        },
+        {
+          "person": "Kraft von Hohenlohe",
+          "personTitle": [
+            "der Alte"
+          ],
+          "type": "title"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "generic",
+          "content": "had his house named as the place where Kraft von Hohenlohe could summon Berthold von Zwingenberg."
+        },
+        {
+          "person": "Wiprecht von Dürn",
+          "type": "generic",
+          "content": "sealed Berthold von Zwingenberg’s undertaking at his request."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190272%2F03_0000190272_0001_3-190272-1.jpg",
+          "seals": [
+            {
+              "person": "Eberhard von Rosenberg",
+              "position": "0.1013,0.5914",
+              "size": 0.13950000000000004,
+              "width": 0.08,
+              "wideningRotation": -7,
+              "rotation": 0,
+              "type": "helm"
+            }
+          ],
+          "regions": [
+            {
+              "x": 0.0633,
+              "y": 0.0771,
+              "width": 0.6629,
+              "height": 0.3193,
+              "name": "text"
+            }
+          ]
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190272%2F03_0000190272_0002_3-190272-2.jpg",
+          "deleted": "true"
+        }
+      ]
+    }
+  ]
+}

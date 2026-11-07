@@ -7,6 +7,7 @@ import sys
 import unittest
 from pathlib import Path
 from urllib.error import HTTPError
+from urllib.parse import parse_qs, urlsplit
 from unittest.mock import patch
 
 SCRIPT = Path(__file__).resolve().parents[1] / 'scripts/archive_search/search_monasterium.py'
@@ -38,6 +39,23 @@ class ExistenceTests(unittest.TestCase):
             with patch.object(module, 'urlopen') as fetch:
                 self.assertTrue(client.exists('Rosinberg'))
                 fetch.assert_not_called()
+
+    def test_full_search_fetches_all_pages_and_caches_complete_results(self):
+        pages = [
+            b'<div class="hits">Hits 1 to 1 of 2</div><a href="/mom/a/b/charter">First</a>',
+            b'<div class="hits">Hits 2 to 2 of 2</div><a href="/mom/a/c/charter">Second</a>',
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            client = module.Client(15, Path(directory))
+            with patch.object(client, 'wait'), patch.object(module, 'urlopen', side_effect=[io.BytesIO(page) for page in pages]) as fetch:
+                rows, total = client.search('von Rosenberg', None)
+            self.assertEqual(total, 2)
+            self.assertEqual([row['title'] for row in rows], ['First', 'Second'])
+            self.assertEqual([parse_qs(urlsplit(call.args[0].full_url).query)['block'][0]
+                              for call in fetch.call_args_list], ['1', '2'])
+            cached = json.loads(next(Path(directory).glob('*.json')).read_text())
+            self.assertEqual(cached['rows'], rows)
+            self.assertEqual(cached['total'], 2)
 
     def test_dotted_normal_search_is_skipped(self):
         with tempfile.TemporaryDirectory() as directory:
