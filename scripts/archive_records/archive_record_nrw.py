@@ -28,6 +28,15 @@ HOSTS = {"www.archive.nrw.de", "archive.nrw.de"}
 OPENER = build_opener(HTTPCookieProcessor(CookieJar()))
 
 
+class TextOnly(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.parts: list[str] = []
+
+    def handle_data(self, data: str) -> None:
+        self.parts.append(data)
+
+
 def request(url: str) -> tuple[str, bytes]:
     req = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json,application/xml,text/html,*/*"})
     try:
@@ -101,7 +110,7 @@ def create_record(url: str) -> tuple[Path, bool]:
     if parsed.scheme != "https" or parsed.hostname not in HOSTS or parsed.path.rstrip("/") != "/archivsuche":
         raise ValueError("Expected an https://www.archive.nrw.de/archivsuche record URL")
     node_id = parse_qs(parsed.query).get("link", [""])[0]
-    if not re.fullmatch(r"VERZEICHNUNGSEINHEIT-Vz_[0-9a-f-]+", node_id, re.I):
+    if not re.fullmatch(r"VERZEICH(?:NUNG|UNG)SEINHEIT-Vz_[0-9a-f-]+", node_id, re.I):
         raise ValueError("The URL must identify a VERZEICHNUNGSEINHEIT record")
     api_url = "https://www.archive.nrw.de/sufservice/api/listContextByNodeId?" + urlencode({"nodeId": node_id})
     _, body = fetch(api_url)

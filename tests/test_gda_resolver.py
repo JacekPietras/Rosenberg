@@ -42,6 +42,21 @@ class ResolverTests(unittest.TestCase):
                 client.return_value.search.return_value = [(dict(url='https://www.gda.bayern.de/gvl/archive.xhtml?id=x'), 1)]
                 self.assertIsNone(resolve('DE-StAW', 'HimmelspfortenOCist', 'Urkunden_1341_Mai_12', '13410512', self.root()))
 
+    def test_numeric_shelfmark_uses_collection_name(self):
+        root = ET.fromstring('<cei><archIdentifier><archFond>Jesuitenorden, Kolleg St. Paul Regensburg Urkunden</archFond>'
+                             '<idno>813</idno></archIdentifier><issued><date value="13580207"/></issued></cei>')
+        with patch('search_gda_bayern.Client') as client:
+            client.return_value.search.return_value = []
+            self.assertIsNone(resolve('DE-BayHStA', 'JesuitenordenKollegStPaulRegensburg', 'shelfmark', '13580207', root))
+            client.return_value.search.assert_called_once_with('Jesuitenorden Kolleg St. Paul Regensburg Urkunden 813')
+
+    def test_numeric_shelfmark_without_collection_is_not_searched(self):
+        root = ET.fromstring('<cei><archIdentifier><idno>813</idno></archIdentifier>'
+                             '<issued><date value="13580207"/></issued></cei>')
+        with patch('search_gda_bayern.Client') as client:
+            self.assertIsNone(resolve('DE-BayHStA', 'fonds', 'shelfmark', '13580207', root))
+            client.return_value.search.assert_not_called()
+
     def test_range_record_does_not_guess_catalog_item(self):
         root = self.root()
         root.find('issued').clear()

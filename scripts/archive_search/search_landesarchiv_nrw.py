@@ -136,7 +136,7 @@ def main():
                 if len(title) > 240: title = title[:237] + '...'
                 print(f'{i}. {row.get("archivName") or ""} | {row.get("signatur") or ""} | {row.get("laufzeit") or ""} | {title}\n   {url}', flush=True)
                 if args.list_only: continue
-                if not re.fullmatch(r'VERZEICHNUNGSEINHEIT-Vz_[0-9a-f-]+', node, re.I):
+                if not re.fullmatch(r'VERZEICH(?:NUNG|UNG)SEINHEIT-Vz_[0-9a-f-]+', node, re.I):
                     print('Skipping: record type or ID is not supported by the NRW importer', flush=True); continue
                 if args.skip_existing and has_url(ROOT / 'data/documents', url):
                     print(f'Skipping existing URL: {url}', flush=True); continue

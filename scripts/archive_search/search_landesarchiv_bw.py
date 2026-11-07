@@ -178,6 +178,8 @@ def main():
     parser.add_argument('--skip-existing', action='store_true', help='skip downloading URLs already stored locally')
     parser.add_argument('--results-file', type=Path, help='JSON file for verified existence results')
     parser.add_argument('--limit', type=int, help='maximum number of results')
+    parser.add_argument('--skip-result-id', action='append', default=[],
+                        help='skip this catalogue result during listing or import (repeatable)')
     parser.add_argument('--delay', type=float, default=15, help='seconds between requests (minimum 1; default 15)')
     args = parser.parse_args()
     results = ResultsStore('landesarchiv_bw', args.results_file)
@@ -207,6 +209,9 @@ def main():
             print('true' if found else 'false')
             return 0
         for row, total in client.search(phrase, args.limit):
+            if row['id'] in args.skip_result_id:
+                print(f'Skipping catalogue result {row["id"]}', file=sys.stderr, flush=True)
+                continue
             if count == 0:
                 results.record(phrase, True)
             url = client.resolve(row)

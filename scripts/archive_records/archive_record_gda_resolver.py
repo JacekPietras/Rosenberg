@@ -82,9 +82,19 @@ def resolve_metadata(archive, root):
     if identifier is None:
         return None
     references = []
+    fonds = first_node(identifier, 'archFond')
+    fonds_name = ' '.join(node_text(fonds).replace(',', ' ').split())
     for node in identifier.iter():
         if node.tag.rsplit('}', 1)[-1].casefold() in {'idno', 'altidentifier'}:
-            references.extend(' '.join(part.replace(',', ' ').split()) for part in node_text(node).split(';') if part.strip())
+            for part in node_text(node).split(';'):
+                reference = ' '.join(part.replace(',', ' ').split())
+                if reference:
+                    # A bare number can match thousands of unrelated records.
+                    if reference.isdigit():
+                        if not fonds_name:
+                            continue
+                        reference = f'{fonds_name} {reference}'
+                    references.append(reference)
     issued = first_node(root, 'issued')
     date_node = first_node(issued, 'date') if issued is not None else None
     # A date range is not sufficient evidence for identifying a catalog item.

@@ -39,10 +39,13 @@ class Fields(HTMLParser):
         self.fields: dict[str, list[str]] = {}
         self.in_label = False
         self.in_value = False
+        self.in_highlighting_area = False
+        self.in_row = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         classes = set((dict(attrs).get("class") or "").split())
         if tag == "div" and "row" in classes:
+            self.in_row = True
             self.current_label, self.current_value = [], []
             self.label_depth = self.value_depth = 0
             self.in_label = self.in_value = False
@@ -50,6 +53,7 @@ class Fields(HTMLParser):
             self.in_label = True
             self.label_depth += 1
         elif tag == "div" and "highlightingArea" in classes:
+            self.in_highlighting_area = True
             self.in_value = True
             self.value_depth += 1
         elif self.in_label:
@@ -64,6 +68,8 @@ class Fields(HTMLParser):
             self.current_value.append(data)
 
     def handle_endtag(self, tag: str) -> None:
+        if tag == "div" and self.in_highlighting_area:
+            self.in_highlighting_area = False
         if self.in_label:
             self.label_depth -= 1
             if self.label_depth <= 0:
@@ -76,6 +82,43 @@ class Fields(HTMLParser):
                 value = " ".join("".join(self.current_value).split())
                 if label and value:
                     self.fields.setdefault(label, []).append(value)
+        if tag == "div" and self.in_row:
+            self.in_row = False
+
+
+class Signature(HTMLParser):
+    """Read Arcinsys's current heading and paragraph signature layout."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.heading = False
+        self.signature_heading = False
+        self.paragraph = False
+        self.parts: list[str] = []
+        self.value = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "h2":
+            self.heading = True
+            self.parts = []
+        elif tag == "p" and self.signature_heading:
+            self.paragraph = True
+            self.parts = []
+
+    def handle_data(self, data: str) -> None:
+        if self.heading or self.paragraph:
+            self.parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        text = " ".join("".join(self.parts).split())
+        if tag == "h2":
+            self.heading = False
+            self.signature_heading = text.casefold() == "vollständige signatur"
+        elif tag == "p" and self.paragraph:
+            self.paragraph = False
+            self.signature_heading = False
+            if text:
+                self.value = text
 
 
 class Images(HTMLParser):
@@ -160,15 +203,21 @@ def create_record(url: str) -> tuple[Path, bool]:
     page = fetch(url)
     fields = Fields()
     fields.feed(page)
-    signature = re.search(r"<h2>\s*Vollständige Signatur\s*</h2>\s*<p>(.*?)</p>", page, re.S | re.I)
-    source = " ".join(html.unescape(re.sub(r"<[^>]+>", "", signature.group(1))).split()) if signature else ""
+    signature = Signature()
+    signature.feed(page)
+    source = signature.value
     date_value = next(iter(fields.fields.get("Datierung", [])), "")
+    if not date_value:
+        date_value = next(iter(fields.fields.get("Laufzeit", [])), "")
+    title = next(iter(fields.fields.get("Titel", [])), "")
     short = next(iter(fields.fields.get("Kurzregest", [])), "")
     full = next(iter(fields.fields.get("(Voll-) Regest", [])), "")
     sealer = next(iter(fields.fields.get("Siegler", [])), "")
     if not source or not date_value:
         raise ValueError("Arcinsys record has no full signature or Datierung")
     german_parts = [part for part in (short, full) if part]
+    if not german_parts and title:
+        german_parts.append(title)
     if sealer:
         german_parts.append(f"Siegler: {sealer}")
     german = "\n\n".join(german_parts)

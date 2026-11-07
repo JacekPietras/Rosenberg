@@ -53,7 +53,31 @@ class Results(HTMLParser):
             self.row = None
 
 
-def parse_response(body):
+class Pagination(HTMLParser):
+    def __init__(self, html, next_page):
+        super().__init__()
+        self.next_page = next_page
+        self.action = None
+        self.anchor = None
+        self.feed(html)
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'a' and attrs.get('title') == f'Zur Seite {self.next_page}':
+            self.anchor = {'id': attrs.get('id'), 'text': ''}
+
+    def handle_data(self, data):
+        if self.anchor is not None:
+            self.anchor['text'] += data
+
+    def handle_endtag(self, tag):
+        if tag == 'a' and self.anchor is not None:
+            if self.anchor['id']:
+                self.action = self.anchor['id']
+            self.anchor = None
+
+
+def parse_response(body, expected_total=None):
     try:
         root = ET.fromstring(body)
     except ET.ParseError as exc:
@@ -69,6 +93,8 @@ def parse_response(body):
         total = int(match[1].replace('.', ''))
     elif 'Suche lieferte kein Ergebnis' in summary:
         total = 0
+    elif not summary and expected_total is not None:
+        total = expected_total
     else:
         raise ValueError('Catalogue result count is missing')
     return result.rows, total, updates
@@ -109,33 +135,77 @@ class Client:
                 raise ValueError('Invalid cached search')
             print(f'Using cached search: {path}', file=sys.stderr)
         else:
-            if path.with_suffix('.xml').exists():
-                raise ValueError(f'An earlier raw response is cached beside {path}; inspect it before explicitly removing it to retry')
-            page = self.request()
-            form = SearchForm(); form.feed(page)
-            nonce = re.search(r'<script[^>]+nonce="([^"]+)"', page)
-            if not nonce or not form.fields.get('jakarta.faces.ViewState'):
-                raise ValueError('Catalogue search state or CSP nonce is missing')
-            fields = dict(form.fields)
-            fields.update({'primefaces.nonce': nonce[1], 'searchForm': 'searchForm',
-                'searchForm:searchTerm_input': f'"{phrase}"', 'searchForm:valuesRecordPerpage': '100',
-                'jakarta.faces.partial.ajax': 'true', 'jakarta.faces.behavior.event': 'action',
-                'jakarta.faces.partial.event': 'click', 'jakarta.faces.source': 'searchForm:searchButton',
-                'jakarta.faces.partial.execute': 'searchForm', 'jakarta.faces.partial.render': RENDER,
-                'searchForm:searchButton': 'searchForm:searchButton'})
-            body = self.request(urlencode(fields).encode())
-            if not exists:
-                # Preserve raw responses for offline diagnosis.
-                path.with_suffix('.xml').write_text(body)
-            rows, total, updates = parse_response(body)
+            for attempt in range(2):
+                page = self.request()
+                form = SearchForm(); form.feed(page)
+                nonce = re.search(r'<script[^>]+nonce="([^"]+)"', page)
+                if not nonce or not form.fields.get('jakarta.faces.ViewState'):
+                    raise ValueError('Catalogue search state or CSP nonce is missing')
+                fields = dict(form.fields)
+                fields.update({'primefaces.nonce': nonce[1], 'searchForm': 'searchForm',
+                    'searchForm:searchTerm_input': f'"{phrase}"', 'searchForm:valuesRecordPerpage': '100',
+                    'jakarta.faces.partial.ajax': 'true', 'jakarta.faces.behavior.event': 'action',
+                    'jakarta.faces.partial.event': 'click', 'jakarta.faces.source': 'searchForm:searchButton',
+                    'jakarta.faces.partial.execute': 'searchForm', 'jakarta.faces.partial.render': RENDER,
+                    'searchForm:searchButton': 'searchForm:searchButton'})
+                body = self.request(urlencode(fields).encode())
+                if not exists:
+                    # Preserve raw responses for offline diagnosis.
+                    path.with_suffix('.xml').write_text(body)
+                try:
+                    rows, total, updates = parse_response(body)
+                    break
+                except ValueError as exc:
+                    if attempt or 'Incomplete catalogue response' not in str(exc):
+                        raise
+                    print('Incomplete catalogue response; refreshing search state and retrying once', file=sys.stderr)
             if exists:
                 yield None, total
                 return
-            if len(rows) != total:
-                raise ValueError(f'Catalogue returned {len(rows)} of {total} results; pagination is not yet supported. Narrow the phrase; response cached for inspection')
-            if len({row['url'] for row in rows}) != total:
-                raise ValueError('Catalogue returned duplicate results')
-            path.write_text(json.dumps({'query': phrase, 'total': total, 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
+            seen = {row['url'] for row in rows}
+            if len(seen) != len(rows):
+                raise ValueError('Catalogue returned duplicate results on the first page')
+            if len(rows) > total:
+                raise ValueError('Catalogue returned more results than reported')
+            view_state = updates.get('j_id1:jakarta.faces.ViewState:0')
+            current_page = 1
+            while len(rows) < total and (limit is None or len(rows) < limit):
+                pagination = Pagination(updates.get('pagingTopForm', ''), current_page + 1)
+                if not pagination.action:
+                    raise ValueError(f'Catalogue did not provide a link to page {current_page + 1}')
+                if not view_state:
+                    raise ValueError('Catalogue pagination state is missing')
+                source = pagination.action
+                fields = {
+                    'pagingTopForm': 'pagingTopForm',
+                    source: source,
+                    'jakarta.faces.partial.ajax': 'true',
+                    'jakarta.faces.source': source,
+                    'jakarta.faces.partial.execute': 'pagingTopForm',
+                    'jakarta.faces.partial.render': 'pagingTopForm,docResultPanel,pagingTopFormBottom',
+                    'jakarta.faces.behavior.event': 'action',
+                    'jakarta.faces.partial.event': 'click',
+                    'jakarta.faces.ViewState': view_state,
+                }
+                body = self.request(urlencode(fields).encode())
+                path.with_suffix('.xml').write_text(body)
+                page_rows, page_total, updates = parse_response(body, total)
+                if page_total != total:
+                    raise ValueError('Catalogue result count changed during pagination')
+                if not page_rows:
+                    raise ValueError(f'Catalogue returned an empty page before page {current_page + 1}')
+                for row in page_rows:
+                    if row['url'] in seen:
+                        raise ValueError('Catalogue returned a duplicate result during pagination')
+                    seen.add(row['url'])
+                    rows.append(row)
+                if len(rows) > total:
+                    raise ValueError('Catalogue returned more results than reported')
+                current_page += 1
+                view_state = updates.get('j_id1:jakarta.faces.ViewState:0')
+            if len(rows) == total:
+                path.write_text(json.dumps({'query': phrase, 'total': total, 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
+                path.with_suffix('.xml').unlink(missing_ok=True)
         if exists:
             yield None, total
             return

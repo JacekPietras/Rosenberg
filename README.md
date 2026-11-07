@@ -147,6 +147,7 @@ and skip URLs already saved in `data/documents/`; progress appears on standard e
 ```text
 python3 scripts/archive_search/check_variations.py monasterium 'Eberhard von Rosenberg'
 python3 scripts/archive_search/check_variations.py monasterium 'von Rosenberg'
+python3 scripts/archive_search/check_variations.py landesarchiv_bw 'von Rosenberg' --skip-result-id 61710
 python3 scripts/archive_search/check_variations.py monasterium 'Vogt zu Lauda'
 python3 scripts/archive_search/check_variations.py regesta_imperii 'von Rosenberg' --exists-only
 python3 scripts/archive_search/search_monasterium.py Rosinberg --exists
@@ -172,6 +173,8 @@ with the rest of the data.
 Results do not expire automatically; remove an entry to check it again, or use
 `--results-file` to select a different results file. Archive scripts may also
 have their own search caches.
+For Landesarchiv BW, repeat `--skip-result-id ID` to omit specific catalogue
+results from variation-check imports.
 
 Monasterium skips normal searches containing a dot, since those duplicate the
 undotted query. For `--exists`, it checks or reuses the undotted query instead.

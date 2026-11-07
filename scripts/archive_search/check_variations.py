@@ -61,10 +61,11 @@ def surname_variants(surname, places_file):
 
 
 class Checker:
-    def __init__(self, archive, cache_dir=None, results_file=None):
+    def __init__(self, archive, cache_dir=None, results_file=None, skip_result_ids=()):
         self.archive = archive
         self.cache_dir = cache_dir
         self.results_file = results_file
+        self.skip_result_ids = skip_result_ids
         self.last_finished = None
         self.answers = {}
         self.failed = []
@@ -78,6 +79,8 @@ class Checker:
             command.append('--exists')
         else:
             command.append('--skip-existing')
+            for result_id in self.skip_result_ids:
+                command.extend(['--skip-result-id', result_id])
         if self.cache_dir is not None:
             command.extend(['--cache-dir', str(self.cache_dir)])
         if self.results_file is not None:
@@ -113,11 +116,15 @@ def main():
     parser.add_argument('--cache-dir', type=Path, help='archive search cache directory (where supported)')
     parser.add_argument('--results-file', type=Path,
                         help='JSON file for verified existence results')
+    parser.add_argument('--skip-result-id', action='append', default=[],
+                        help='skip this catalogue result when importing (Landesarchiv BW only; repeatable)')
     parser.add_argument('--exists-only', action='store_true',
                         help='check surviving full queries for results without listing or importing records')
     args = parser.parse_args()
     if args.cache_dir is not None and args.archive not in CACHE_ARCHIVES:
         parser.error(f'{args.archive} does not support --cache-dir')
+    if args.skip_result_id and args.archive != 'landesarchiv_bw':
+        parser.error('--skip-result-id is supported only for landesarchiv_bw')
     match = re.fullmatch(r'(?:(.+?)\s+)?(von|zu)\s+(.+)', args.name.strip(), flags=re.IGNORECASE)
     if not match:
         parser.error('supply von or zu and a place, optionally preceded by a name or title')
@@ -132,7 +139,7 @@ def main():
                  [title or name_variants(word, ROOT / 'data/names.md')
                   for word, title in zip(preceding.split(), title_groups)])
         prefixes = (*PREFIXES[:-1], 'zu', 'des', '') if only_titles else PREFIXES
-        checker = Checker(args.archive, args.cache_dir, args.results_file)
+        checker = Checker(args.archive, args.cache_dir, args.results_file, args.skip_result_id)
         surnames = [variant for variant in surnames if checker.exists(variant)]
         if not surnames:
             return 1 if checker.failed else 0
