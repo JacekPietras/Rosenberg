@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check name and surname variations and their full-person combinations."""
+"""Screen name variations and search archives for surviving combinations."""
 from __future__ import annotations
 
 import argparse
@@ -68,28 +68,35 @@ class Checker:
         self.last_finished = None
         self.answers = {}
 
-    def exists(self, query):
-        if query in self.answers:
-            return self.answers[query]
+    def run(self, query, exists=False):
         # Some archive clients keep rate-limit timestamps only in their process.
         if self.last_finished is not None and self.archive not in CACHE_ARCHIVES:
             time.sleep(max(0, 15 - (time.monotonic() - self.last_finished)))
-        command = [sys.executable, str(SCRIPTS[self.archive]), query, '--exists']
+        command = [sys.executable, str(SCRIPTS[self.archive]), query]
+        if exists:
+            command.append('--exists')
         if self.cache_dir is not None:
             command.extend(['--cache-dir', str(self.cache_dir)])
         if self.results_file is not None:
             command.extend(['--results-file', str(self.results_file)])
-        print(f'Checking: {query}', file=sys.stderr, flush=True)
-        result = subprocess.run(command, cwd=ROOT, text=True, stdout=subprocess.PIPE)
+        print(f'{"Checking" if exists else "Searching"}: {query}', file=sys.stderr, flush=True)
+        result = subprocess.run(command, cwd=ROOT, text=True,
+                                stdout=subprocess.PIPE if exists else None)
         self.last_finished = time.monotonic()
         if result.returncode:
-            raise RuntimeError(f'Check failed for {query!r} (exit {result.returncode})')
+            raise RuntimeError(f'Search failed for {query!r} (exit {result.returncode})')
+        if not exists:
+            return
         answer = result.stdout.strip()
         if answer not in ('true', 'false'):
             raise RuntimeError(f'Unexpected response for {query!r}: {answer!r}')
         found = answer == 'true'
-        self.answers[query] = found
         return found
+
+    def exists(self, query):
+        if query not in self.answers:
+            self.answers[query] = self.run(query, exists=True)
+        return self.answers[query]
 
 
 def main():
@@ -132,8 +139,7 @@ def main():
             surviving_names.append(found)
         for given, family in itertools.product(itertools.product(*surviving_names), prefixed_surnames):
             query = ' '.join((*given, family))
-            answer = checker.exists(query)
-            print(f'{query}\t{str(answer).lower()}', flush=True)
+            checker.run(query)
         return 0
     except (OSError, ValueError, RuntimeError) as exc:
         print(f'Error: {exc}; stopping', file=sys.stderr)

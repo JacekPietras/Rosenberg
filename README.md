@@ -140,9 +140,9 @@ python3 scripts/archive_search/search_monasterium.py 'Eberhard von Rosenberg' --
 Use `--list-only` to list results without importing them. Use `--limit` to
 restrict the number processed.
 
-Check given-name and surname variants, then test each surviving full-person
-combination. The checker prints each full query and `true` or `false`; progress
-appears on standard error:
+Screen given-name, title and place variants, then run a normal archive search
+for each surviving full-person combination. These searches import records by
+default; progress appears on standard error:
 
 ```text
 python3 scripts/archive_search/check_variations.py monasterium 'Eberhard von Rosenberg'
@@ -157,7 +157,7 @@ checks each surviving place with the prefixes `von`, `v`, `v.`, `von.`,
 and `de`, as well as without a connecting word. Titles also use `zu` and `des`.
 It uses only surviving particle-place pairs in full queries. Unknown names and titles use the
 spelling supplied. It may take a long time because every surviving combination
-is checked with the archive’s normal delays. Successful true and false checks
+is searched with the archive’s normal delays. Successful true and false checks
 are saved by each archive search script, for direct searches and variation checks,
 by archive and exact query in `data/archive_search/ARCHIVE.json`,
 including after an interrupted run. Subsequent runs reuse them without another
