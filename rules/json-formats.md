@@ -342,3 +342,12 @@ Bartenstein"]` and no parent.
 When moving buildings under a new parent, keep their IDs, coordinates,
 categories, descriptions, and sources, and move bare settlement names to the
 parent.
+
+## Archive search existence checks
+
+`data/archive_search/ARCHIVE.json` stores verified catalogue search results for
+reuse and publication. `archive` is the archive search script identifier;
+`queries` maps each exact query string to a Boolean indicating whether the
+archive returned any results. A negative result describes the catalogue search
+at the time it was checked; it is not a historical fact or proof that a person
+is absent from the archive. The variation checker writes entries immediately.

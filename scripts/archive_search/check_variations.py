@@ -3,12 +3,15 @@
 from __future__ import annotations
 
 import argparse
+import fcntl
+import hashlib
 import itertools
 import json
+import os
 import re
-import sqlite3
 import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
@@ -22,7 +25,8 @@ SCRIPTS = {name: Path(__file__).with_name(f'search_{name}.py') for name in (
 )}
 CACHE_ARCHIVES = {'monasterium', 'gda_bayern', 'landesarchiv_nrw', 'regesta_imperii'}
 PREFIXES = ('von', 'v', 'v.', 'von.', 'de')
-RESULTS_CACHE = ROOT / '.cache/archive_search/variation_checks.sqlite3'
+RESULTS_DIR = ROOT / 'data/archive_search'
+LOCK_DIR = ROOT / '.cache/archive_search/variation_locks'
 
 
 def unique(values):
@@ -53,29 +57,32 @@ def surname_variants(surname, places_file):
 
 
 class Checker:
-    def __init__(self, archive, cache_dir=None, results_cache=RESULTS_CACHE):
+    def __init__(self, archive, cache_dir=None, results_file=None):
         self.archive = archive
         self.cache_dir = cache_dir
-        self.results_cache = results_cache
+        self.results_file = results_file or RESULTS_DIR / f'{archive}.json'
         self.last_finished = None
         self.answers = {}
 
     def exists(self, query):
         if query in self.answers:
             return self.answers[query]
-        self.results_cache.parent.mkdir(parents=True, exist_ok=True)
-        with sqlite3.connect(self.results_cache, timeout=300) as db:
-            db.execute('CREATE TABLE IF NOT EXISTS checks ('
-                       'archive TEXT NOT NULL, query TEXT NOT NULL, '
-                       'result INTEGER NOT NULL CHECK (result IN (0, 1)), '
-                       'PRIMARY KEY (archive, query))')
-            # Hold the write lock through the check so concurrent runs cannot
-            # request the same query twice or overwrite each other's results.
-            db.execute('BEGIN IMMEDIATE')
-            row = db.execute('SELECT result FROM checks WHERE archive = ? AND query = ?',
-                             (self.archive, query)).fetchone()
-            if row is not None:
-                self.answers[query] = bool(row[0])
+        self.results_file.parent.mkdir(parents=True, exist_ok=True)
+        LOCK_DIR.mkdir(parents=True, exist_ok=True)
+        lock_name = hashlib.sha256(str(self.results_file.resolve()).encode()).hexdigest() + '.lock'
+        with (LOCK_DIR / lock_name).open('a') as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            if self.results_file.exists():
+                data = json.loads(self.results_file.read_text(encoding='utf-8'))
+                if (not isinstance(data, dict) or data.get('archive') != self.archive
+                        or not isinstance(data.get('queries'), dict)
+                        or any(not isinstance(k, str) or not isinstance(v, bool)
+                               for k, v in data['queries'].items())):
+                    raise ValueError(f'Invalid results file: {self.results_file}')
+            else:
+                data = {'archive': self.archive, 'queries': {}}
+            if query in data['queries']:
+                self.answers[query] = data['queries'][query]
                 return self.answers[query]
             # Some archive clients keep rate-limit timestamps only in their process.
             if self.last_finished is not None and self.archive not in CACHE_ARCHIVES:
@@ -92,8 +99,20 @@ class Checker:
             if answer not in ('true', 'false'):
                 raise RuntimeError(f'Unexpected response for {query!r}: {answer!r}')
             found = answer == 'true'
-            db.execute('INSERT INTO checks (archive, query, result) VALUES (?, ?, ?)',
-                       (self.archive, query, int(found)))
+            data['queries'][query] = found
+            data['queries'] = dict(sorted(data['queries'].items()))
+            # Replace atomically so an interrupted write leaves valid JSON.
+            temp_path = None
+            try:
+                with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8',
+                                                 dir=self.results_file.parent, delete=False) as temp:
+                    temp_path = Path(temp.name)
+                    json.dump(data, temp, ensure_ascii=False, indent=2)
+                    temp.write('\n')
+                os.replace(temp_path, self.results_file)
+            finally:
+                if temp_path is not None:
+                    temp_path.unlink(missing_ok=True)
         self.answers[query] = found
         return found
 
@@ -103,8 +122,8 @@ def main():
     parser.add_argument('archive', choices=SCRIPTS)
     parser.add_argument('name', help='full name in the form "given name von surname"')
     parser.add_argument('--cache-dir', type=Path, help='archive search cache directory (where supported)')
-    parser.add_argument('--results-cache', type=Path, default=RESULTS_CACHE,
-                        help='SQLite file for verified existence results')
+    parser.add_argument('--results-file', type=Path,
+                        help='JSON file for verified existence results')
     args = parser.parse_args()
     if args.cache_dir is not None and args.archive not in CACHE_ARCHIVES:
         parser.error(f'{args.archive} does not support --cache-dir')
@@ -115,9 +134,13 @@ def main():
     try:
         surnames = surname_variants(surname, ROOT / 'data/places.json')
         names = [name_variants(name, ROOT / 'data/names.md') for name in given_names]
-        checker = Checker(args.archive, args.cache_dir, args.results_cache)
+        checker = Checker(args.archive, args.cache_dir, args.results_file)
         surnames = [variant for variant in surnames if checker.exists(variant)]
         if not surnames:
+            return 0
+        prefixed_surnames = [f'{prefix} {family}' for family in surnames for prefix in PREFIXES
+                             if checker.exists(f'{prefix} {family}')]
+        if not prefixed_surnames:
             return 0
         surviving_names = []
         for variants in names:
@@ -125,12 +148,12 @@ def main():
             if not found:
                 return 0
             surviving_names.append(found)
-        for given, prefix, family in itertools.product(itertools.product(*surviving_names), PREFIXES, surnames):
-            query = ' '.join((*given, prefix, family))
+        for given, family in itertools.product(itertools.product(*surviving_names), prefixed_surnames):
+            query = ' '.join((*given, family))
             answer = checker.exists(query)
             print(f'{query}\t{str(answer).lower()}', flush=True)
         return 0
-    except (OSError, ValueError, RuntimeError, sqlite3.Error) as exc:
+    except (OSError, ValueError, RuntimeError) as exc:
         print(f'Error: {exc}; stopping', file=sys.stderr)
         return 1
 

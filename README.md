@@ -151,15 +151,16 @@ python3 scripts/archive_search/search_monasterium.py Rosinberg --exists
 
 The checker accepts a full name with `von`, finds given-name variants in
 `data/names.md` and exact matching place variants in `data/places.json`, and
-tests the prefixes `von`, `v`, `v.`, `von.`, and `de`. Unknown names use the
+checks each surviving surname with the prefixes `von`, `v`, `v.`, `von.`,
+and `de`, then uses only surviving prefix-surname pairs in full names. Unknown names use the
 spelling supplied. It may take a long time because every surviving combination
 is checked with the archive’s normal delays. Successful true and false checks
-are saved by archive and exact query in
-`.cache/archive_search/variation_checks.sqlite3`, including after an interrupted
-run. Subsequent runs reuse them without another request. The cache does not
-expire automatically; delete the file to check again, or use `--results-cache`
-to select a separate cache. The archive scripts may also have their own search
-caches.
+are saved by archive and exact query in `data/archive_search/ARCHIVE.json`,
+including after an interrupted run. Subsequent runs reuse them without another
+request. These files can be committed and published with the rest of the data.
+Results do not expire automatically; remove an entry to check it again, or use
+`--results-file` to select a different results file. Archive scripts may also
+have their own search caches.
 
 All archive search scripts accept `--exists` and print `true` or `false` without
 listing or importing records. They stop once the archive reports whether results

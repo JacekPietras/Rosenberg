@@ -26,7 +26,7 @@ class VariationChecks(unittest.TestCase):
         checked = []
         def exists(_self, query):
             checked.append(query)
-            return query in ('Rosinberg', 'Eberhard', 'Eberhard von Rosinberg')
+            return query in ('Rosinberg', 'von Rosinberg', 'de Rosinberg', 'Eberhard', 'Eberhard von Rosinberg')
         output = io.StringIO()
         with patch.object(module, 'surname_variants', return_value=['Rosenburgk', 'Rosinberg']), \
              patch.object(module, 'name_variants', return_value=['Eberhard', 'Everhard']), \
@@ -34,33 +34,48 @@ class VariationChecks(unittest.TestCase):
              patch('sys.argv', ['check_variations.py', 'monasterium', 'Eberhard von Rosenberg']), \
              contextlib.redirect_stdout(output):
             self.assertEqual(module.main(), 0)
-        self.assertEqual(checked[:4], ['Rosenburgk', 'Rosinberg', 'Eberhard', 'Everhard'])
-        self.assertEqual(len(checked), 9)
+        self.assertEqual(checked, ['Rosenburgk', 'Rosinberg', 'von Rosinberg', 'v Rosinberg',
+                                   'v. Rosinberg', 'von. Rosinberg', 'de Rosinberg',
+                                   'Eberhard', 'Everhard', 'Eberhard von Rosinberg',
+                                   'Eberhard de Rosinberg'])
         self.assertIn('Eberhard von Rosinberg\ttrue', output.getvalue())
         self.assertIn('Eberhard de Rosinberg\tfalse', output.getvalue())
         self.assertNotIn('Rosenburgk\t', output.getvalue())
+        self.assertNotIn('Eberhard v Rosinberg', output.getvalue())
+
+    def test_no_prefixed_surname_skips_given_names(self):
+        checked = []
+        def exists(_self, query):
+            checked.append(query)
+            return query == 'Rosinberg'
+        with patch.object(module, 'surname_variants', return_value=['Rosinberg']), \
+             patch.object(module.Checker, 'exists', exists), \
+             patch('sys.argv', ['check_variations.py', 'monasterium', 'Eberhard von Rosenberg']):
+            self.assertEqual(module.main(), 0)
+        self.assertEqual(checked, ['Rosinberg', 'von Rosinberg', 'v Rosinberg',
+                                   'v. Rosinberg', 'von. Rosinberg', 'de Rosinberg'])
 
     def test_persistent_cache_separates_archives_and_stores_both_answers(self):
         with tempfile.TemporaryDirectory() as directory:
-            cache = Path(directory) / 'checks.sqlite3'
+            cache = Path(directory) / 'checks.json'
             with patch.object(module.subprocess, 'run', side_effect=[
                 subprocess.CompletedProcess([], 0, 'true\n'),
                 subprocess.CompletedProcess([], 0, 'false\n'),
                 subprocess.CompletedProcess([], 0, 'false\n'),
             ]) as run:
-                first = module.Checker('monasterium', results_cache=cache)
+                first = module.Checker('monasterium', results_file=cache)
                 self.assertTrue(first.exists('Rosinberg'))
                 self.assertFalse(first.exists('Rosenburgk'))
-                second = module.Checker('monasterium', results_cache=cache)
+                second = module.Checker('monasterium', results_file=cache)
                 self.assertTrue(second.exists('Rosinberg'))
                 self.assertFalse(second.exists('Rosenburgk'))
-                other = module.Checker('regesta_imperii', results_cache=cache)
+                other = module.Checker('regesta_imperii', results_file=Path(directory) / 'other.json')
                 self.assertFalse(other.exists('Rosinberg'))
                 self.assertEqual(run.call_count, 3)
 
     def test_failures_are_not_cached(self):
         with tempfile.TemporaryDirectory() as directory:
-            cache = Path(directory) / 'checks.sqlite3'
+            cache = Path(directory) / 'checks.json'
             with patch.object(module.subprocess, 'run', side_effect=[
                 subprocess.CompletedProcess([], 1, ''),
                 subprocess.CompletedProcess([], 0, 'unexpected'),
@@ -68,8 +83,8 @@ class VariationChecks(unittest.TestCase):
             ]) as run:
                 for _ in range(2):
                     with self.assertRaises(RuntimeError):
-                        module.Checker('monasterium', results_cache=cache).exists('Rosinberg')
-                self.assertTrue(module.Checker('monasterium', results_cache=cache).exists('Rosinberg'))
+                        module.Checker('monasterium', results_file=cache).exists('Rosinberg')
+                self.assertTrue(module.Checker('monasterium', results_file=cache).exists('Rosinberg'))
                 self.assertEqual(run.call_count, 3)
 
     def test_absent_surnames_skip_all_names(self):
