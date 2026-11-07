@@ -66,8 +66,7 @@ def normalize_date(raw: str) -> str:
     years = re.findall(r"(?<!\d)(\d{4})(?!\d)", value)
     if not years:
         raise ValueError(f"Could not determine a document date from unitDate: {raw!r}")
-    years = list(dict.fromkeys(years))
-    return years[0] if len(years) == 1 else f"{years[0]}-{years[-1]}"
+    return years[0] if len(set(years)) == 1 else f"{years[0]}-{years[-1]}"
 
 
 def description_text(value: object) -> str:
