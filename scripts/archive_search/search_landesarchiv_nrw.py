@@ -104,6 +104,13 @@ def main():
     args = p.parse_args()
     results = ResultsStore('landesarchiv_nrw', args.results_file)
     if not args.query.strip(): p.error('query must not be empty')
+    query = args.query.strip()
+    if '.' in query:
+        undotted = query.replace('.', '')
+        if not args.exists:
+            print(f'Skipping dotted query; use {undotted!r}', file=sys.stderr)
+            return 0
+        query = undotted
     if not math.isfinite(args.delay) or args.delay < 15: p.error('--delay must be at least 15 seconds')
     if args.limit is not None and args.limit < 1: p.error('--limit must be positive')
     args.cache_dir.mkdir(parents=True, exist_ok=True)
@@ -113,7 +120,6 @@ def main():
             print('Another Archive NRW search is running; stopping', file=sys.stderr); return 1
         client = Client(args.delay, args.cache_dir)
         try:
-            query = args.query.strip()
             if not args.exists and results.get(query) is False:
                 print('Skipping search: saved result is empty', file=sys.stderr)
                 return 0

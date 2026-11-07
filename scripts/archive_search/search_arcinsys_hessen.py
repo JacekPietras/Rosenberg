@@ -163,6 +163,12 @@ def main():
     phrase = args.query.strip()
     if phrase.startswith('"') and phrase.endswith('"'):
         phrase = phrase[1:-1].strip()
+    if '.' in phrase:
+        undotted = phrase.replace('.', '')
+        if not args.exists:
+            print(f'Skipping dotted query; use {undotted!r}', file=sys.stderr)
+            return 0
+        phrase = undotted
     if len(phrase) < 2 or '"' in phrase:
         p.error('supply a phrase of at least two characters without embedded double quotes')
     client = Client(args.delay)
