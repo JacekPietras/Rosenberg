@@ -109,22 +109,23 @@ class Checker:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('archive', choices=SCRIPTS)
-    parser.add_argument('name', help='name or title followed by von or zu and a place')
+    parser.add_argument('name', help='optional name or title followed by von or zu and a place')
     parser.add_argument('--cache-dir', type=Path, help='archive search cache directory (where supported)')
     parser.add_argument('--results-file', type=Path,
                         help='JSON file for verified existence results')
     args = parser.parse_args()
     if args.cache_dir is not None and args.archive not in CACHE_ARCHIVES:
         parser.error(f'{args.archive} does not support --cache-dir')
-    parts = re.split(r'\s+(von|zu)\s+', args.name.strip(), flags=re.IGNORECASE)
-    if len(parts) != 3 or not parts[0] or not parts[2]:
-        parser.error('supply a name or title followed by von or zu and a place')
-    preceding, particle, surname = parts
+    match = re.fullmatch(r'(?:(.+?)\s+)?(von|zu)\s+(.+)', args.name.strip(), flags=re.IGNORECASE)
+    if not match:
+        parser.error('supply von or zu and a place, optionally preceded by a name or title')
+    preceding, particle, surname = match.groups()
+    preceding = preceding or ''
     try:
         surnames = surname_variants(surname, ROOT / 'data/places.json')
         whole_title = title_variants(preceding, ROOT / 'data/titles.md')
         title_groups = [title_variants(word, ROOT / 'data/titles.md') for word in preceding.split()]
-        only_titles = bool(whole_title) or all(title_groups)
+        only_titles = bool(whole_title) or (bool(title_groups) and all(title_groups))
         names = ([whole_title] if whole_title else
                  [title or name_variants(word, ROOT / 'data/names.md')
                   for word, title in zip(preceding.split(), title_groups)])

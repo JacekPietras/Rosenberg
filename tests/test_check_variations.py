@@ -57,6 +57,21 @@ class VariationChecks(unittest.TestCase):
         self.assertIn('von Lauda', checked)
         search.assert_called_once_with('Eberhard Lauda')
 
+    def test_place_without_given_name_searches_surviving_variations(self):
+        checked = []
+        def exists(_self, query):
+            checked.append(query)
+            return query in ('Rosenberg', 'Rosinberg', 'von Rosenberg', 'de Rosinberg')
+        with patch.object(module, 'surname_variants', return_value=['Rosenberg', 'Rosinberg']), \
+             patch.object(module.Checker, 'exists', exists), \
+             patch.object(module.Checker, 'run') as search, \
+             patch('sys.argv', ['check_variations.py', 'monasterium', 'von Rosenberg']):
+            self.assertEqual(module.main(), 0)
+        self.assertIn('v. Rosenberg', checked)
+        self.assertIn('von. Rosinberg', checked)
+        self.assertEqual([call.args[0] for call in search.call_args_list],
+                         ['von Rosenberg', 'Rosenberg', 'de Rosinberg', 'Rosinberg'])
+
     def test_multiword_title_variants(self):
         self.assertEqual(module.title_variants('der Rote', module.ROOT / 'data/titles.md'),
                          ['der Rote', 'Rufus'])

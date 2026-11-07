@@ -141,16 +141,17 @@ Use `--list-only` to list results without importing them. Use `--limit` to
 restrict the number processed.
 
 Screen given-name, title and place variants, then run a normal archive search
-for each surviving full-person combination. These searches import new records
+for each surviving combination. These searches import new records
 and skip URLs already saved in `data/documents/`; progress appears on standard error:
 
 ```text
 python3 scripts/archive_search/check_variations.py monasterium 'Eberhard von Rosenberg'
+python3 scripts/archive_search/check_variations.py monasterium 'von Rosenberg'
 python3 scripts/archive_search/check_variations.py monasterium 'Vogt zu Lauda'
 python3 scripts/archive_search/search_monasterium.py Rosinberg --exists
 ```
 
-The checker accepts a name or title followed by `von` or `zu` and a place.
+The checker accepts `von` or `zu` and a place, optionally preceded by a name or title.
 It finds given-name variants in `data/names.md`, title variants in
 `data/titles.md`, and exact matching place variants in `data/places.json`. It
 checks each surviving place with the prefixes `von`, `v`, `v.`, `von.`,
