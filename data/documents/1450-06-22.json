@@ -1,13 +1,15 @@
 {
   "date": "1450-06-22",
+  "place": "Bamberg",
   "label": [
     "to review"
   ],
-  "place": "Bamberg",
   "entries": [
     {
       "source": "BayHStA, Kurpfalz Urkunden 1259",
       "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5cfc5a0d-3c8e-4367-a643-8cbf95c01ce4&parent_id=#Vz______5cfc5a0d-3c8e-4367-a643-8cbf95c01ce4",
+      "german": "Die Bischöfe Gottfried von Würzburg und Sylvester von Chiemsee, Pfalzgraf Friedrich bei Rhein, Hans von Neitperg, Ulrich Riederer, Graf Georg von Henneberg, Georg Fuchs von Schweinshaupten, Hofmeister, Jobst von Venningen, Deutschmeister des Deutschen Ordens, Graf Hesso von Leiningen, Peter von Talheim, Hofmeister, Ulrich von Rosenberg, Marschall, Johann Duster, Dompropst von Breslau, Ott Pienzenauer von Kemnath und Jakob Püterich von Reichertshausen bekunden einen Vergleich zwischen Herzog Albrecht VI. von Österreich und der Stadt Rottweil.",
+      "english": "The bishops Gottfried of Würzburg and Sylvester of Chiemsee, Count Palatine Friedrich by the Rhine, Hans von Neitperg, Ulrich Riederer, Count Georg of Henneberg, Georg Fuchs of Schweinshaupten, court marshal, Jobst von Venningen, Teutonic Order’s Grand Master, Count Hesso of Leiningen, Peter von Talheim, court marshal, Ulrich von Rosenberg, marshal, Johann Duster, provost of Breslau, Ott Pienzenauer of Kemnath, and Jakob Püterich of Reichertshausen attest a settlement between Duke Albrecht VI of Austria and the city of Rottweil.",
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/1fb73345-7910-4f25-b039-47506c46b699/1/full/max/0/default.jpg"
@@ -15,9 +17,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/1fb73345-7910-4f25-b039-47506c46b699/2/full/max/0/default.jpg"
         }
-      ],
-      "german": "Die Bischöfe Gottfried von Würzburg und Sylvester von Chiemsee, Pfalzgraf Friedrich bei Rhein, Hans von Neitperg, Ulrich Riederer, Graf Georg von Henneberg, Georg Fuchs von Schweinshaupten, Hofmeister, Jobst von Venningen, Deutschmeister des Deutschen Ordens, Graf Hesso von Leiningen, Peter von Talheim, Hofmeister, Ulrich von Rosenberg, Marschall, Johann Duster, Dompropst von Breslau, Ott Pienzenauer von Kemnath und Jakob Püterich von Reichertshausen bekunden einen Vergleich zwischen Herzog Albrecht VI. von Österreich und der Stadt Rottweil.",
-      "english": "The bishops Gottfried of Würzburg and Sylvester of Chiemsee, Count Palatine Friedrich by the Rhine, Hans von Neitperg, Ulrich Riederer, Count Georg of Henneberg, Georg Fuchs of Schweinshaupten, court marshal, Jobst von Venningen, Teutonic Order’s Grand Master, Count Hesso of Leiningen, Peter von Talheim, court marshal, Ulrich von Rosenberg, marshal, Johann Duster, provost of Breslau, Ott Pienzenauer of Kemnath, and Jakob Püterich of Reichertshausen attest a settlement between Duke Albrecht VI of Austria and the city of Rottweil."
+      ]
     }
   ]
 }

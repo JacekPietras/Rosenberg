@@ -1,13 +1,15 @@
 {
   "date": "1442-03-06",
+  "place": "Krumau",
   "label": [
     "to review"
   ],
-  "place": "Krumau",
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, Losungamt, 7-farbiges Alphabet, Urkunden 1485",
       "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1B76F11D-E28C-4E34-8E37-81271D057405&parent_id=#Vz______1B76F11D-E28C-4E34-8E37-81271D057405",
+      "german": "Ulrich von Rosenberg übermittelt der Stadt Nürnberg eine Antwort des von Schwannberg, nachdem die Gesandten der Stadt Nürnberg ihm von Prag nach Krumau gefolgt waren.",
+      "english": "Ulrich von Rosenberg conveyed to the city of Nuremberg a reply from von Schwannberg after the city's envoys had followed him from Prague to Krumau.",
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/62251bda-efaf-48bd-93cc-f85f3765ff3b/1/full/max/0/default.jpg"
@@ -15,9 +17,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/62251bda-efaf-48bd-93cc-f85f3765ff3b/2/full/max/0/default.jpg"
         }
-      ],
-      "german": "Ulrich von Rosenberg übermittelt der Stadt Nürnberg eine Antwort des von Schwannberg, nachdem die Gesandten der Stadt Nürnberg ihm von Prag nach Krumau gefolgt waren.",
-      "english": "Ulrich von Rosenberg conveyed to the city of Nuremberg a reply from von Schwannberg after the city's envoys had followed him from Prague to Krumau."
+      ]
     }
   ]
 }

@@ -1,13 +1,15 @@
 {
   "date": "1442-02-28",
+  "place": "Bor",
   "label": [
     "to review"
   ],
-  "place": "Bor",
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, Losungamt, 7-farbiges Alphabet, Urkunden 1484",
       "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++0237D161-E2D0-4A9B-99FD-4F5D2243B223&parent_id=#Vz______0237D161-E2D0-4A9B-99FD-4F5D2243B223",
+      "german": "Hincko Crussina von Schwamberg, Hauptmann des Pilsener Kreises, schreibt dem Ulrich von Rosenberg, dass er den Burggrafen von Tachaw oder vom Freymberg, desgleichen den Herzog Otto von Bayern als Schiedsrichter in seinem Streit mit Nürnberg ablehne und den Landgrafen von Lewtenberg als solchen anerkenne.",
+      "english": "Hincko Crussina von Schwamberg, captain of the Pilsen region, wrote to Ulrich von Rosenberg that he rejected the burgrave of Tachau or Freyberg and Duke Otto of Bavaria as arbitrators in his dispute with Nuremberg, and accepted the Landgrave of Leuchtenberg instead.",
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/0ff0fac3-ca9e-484c-843f-c882dc30f9a4/1/full/max/0/default.jpg"
@@ -15,9 +17,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/0ff0fac3-ca9e-484c-843f-c882dc30f9a4/2/full/max/0/default.jpg"
         }
-      ],
-      "german": "Hincko Crussina von Schwamberg, Hauptmann des Pilsener Kreises, schreibt dem Ulrich von Rosenberg, dass er den Burggrafen von Tachaw oder vom Freymberg, desgleichen den Herzog Otto von Bayern als Schiedsrichter in seinem Streit mit Nürnberg ablehne und den Landgrafen von Lewtenberg als solchen anerkenne.",
-      "english": "Hincko Crussina von Schwamberg, captain of the Pilsen region, wrote to Ulrich von Rosenberg that he rejected the burgrave of Tachau or Freyberg and Duke Otto of Bavaria as arbitrators in his dispute with Nuremberg, and accepted the Landgrave of Leuchtenberg instead."
+      ]
     }
   ]
 }

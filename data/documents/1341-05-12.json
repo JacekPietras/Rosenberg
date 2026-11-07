@@ -1,5 +1,8 @@
 {
   "date": "1341-05-12",
+  "label": [
+    "to review"
+  ],
   "entries": [
     {
       "source": [
@@ -44,8 +47,5 @@
         }
       ]
     }
-  ],
-  "label": [
-    "to review"
   ]
 }

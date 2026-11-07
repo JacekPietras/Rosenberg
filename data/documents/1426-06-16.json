@@ -1,13 +1,15 @@
 {
   "date": "1426-06-16",
+  "place": "Neustadt an der Aisch",
   "label": [
     "to review"
   ],
-  "place": "Neustadt an der Aisch",
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, Losungamt, 35 neue Laden, Urkunden 2052; archival old reference: 89/1",
       "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++F29C2A20-0285-486F-9B73-AA372431254E&parent_id=#Vz______F29C2A20-0285-486F-9B73-AA372431254E",
+      "german": "Wilhelm von Rechberg, Cuntz und Thomas von Rosenberg, Walther von Cronberg, Hanns vom Hirßhorn der Jüngere, Karel und Sigmund von Tungen geloben den von Erzbischof Conrad III. von Mainz und Bischof Johann II. von Würzburg zu Neustadt a. A. zwischen ihnen und der Stadt Nürnberg vermittelten Waffenstillstand zu halten. – Siegler: Cuntz von Rosenberg, Hans von Hirßhorn, Sigmund von Tungen.",
+      "english": "Wilhelm von Rechberg, Cuntz and Thomas von Rosenberg, Walther von Cronberg, Hanns vom Hirschhorn the Younger, Karl and Sigmund von Thüngen pledged to uphold the truce mediated by Archbishop Konrad III of Mainz and Bishop Johann II of Würzburg at Neustadt an der Aisch between them and the city of Nuremberg. Cuntz von Rosenberg, Hans von Hirschhorn, and Sigmund von Thüngen sealed the record.",
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/d868b15a-380e-4d95-8cfd-f60b85c30be0/1/full/max/0/default.jpg"
@@ -15,9 +17,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/d868b15a-380e-4d95-8cfd-f60b85c30be0/2/full/max/0/default.jpg"
         }
-      ],
-      "german": "Wilhelm von Rechberg, Cuntz und Thomas von Rosenberg, Walther von Cronberg, Hanns vom Hirßhorn der Jüngere, Karel und Sigmund von Tungen geloben den von Erzbischof Conrad III. von Mainz und Bischof Johann II. von Würzburg zu Neustadt a. A. zwischen ihnen und der Stadt Nürnberg vermittelten Waffenstillstand zu halten. – Siegler: Cuntz von Rosenberg, Hans von Hirßhorn, Sigmund von Tungen.",
-      "english": "Wilhelm von Rechberg, Cuntz and Thomas von Rosenberg, Walther von Cronberg, Hanns vom Hirschhorn the Younger, Karl and Sigmund von Thüngen pledged to uphold the truce mediated by Archbishop Konrad III of Mainz and Bishop Johann II of Würzburg at Neustadt an der Aisch between them and the city of Nuremberg. Cuntz von Rosenberg, Hans von Hirschhorn, and Sigmund von Thüngen sealed the record."
+      ]
     }
   ]
 }

@@ -34,16 +34,16 @@
           "of": "Anselm von Rosenberg"
         }
       ],
-      "img": [
-        {
-          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1011_116.jpg"
-        }
-      ],
       "guesses": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "death",
           "diedBefore": "1424-04-22"
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1011_116.jpg"
         }
       ]
     }

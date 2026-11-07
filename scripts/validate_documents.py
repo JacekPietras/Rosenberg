@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check document JSON files and warn about entries without English text.
+"""Validate document JSON files, warning and fixing simple document issues.
 
 Examples:
     python3 scripts/validate_documents.py
@@ -9,8 +9,11 @@ Examples:
 import argparse
 import json
 from pathlib import Path
+from urllib.parse import parse_qs, urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+DOCUMENT_FIELDS = ("date", "place", "label", "transcribed", "deleted", "entries")
+ENTRY_FIELDS = ("source", "url", "summary", "german", "latin", "english", "facts", "guesses", "img")
 
 
 def collect_files(paths):
@@ -31,6 +34,57 @@ def display_path(path):
         return str(path.relative_to(ROOT))
     except ValueError:
         return str(path)
+
+
+def canonical_url(value):
+    """Return a comparison key for URLs with known equivalent archive routes."""
+    parts = urlsplit(value.strip())
+    host = parts.hostname.lower() if parts.hostname else ""
+
+    # GDA Bayern serves the same record through archive.xhtml and archive.jsf.
+    # Their `id` parameter identifies the record; parent and fragment values
+    # only control the viewer state.
+    if host == "www.gda.bayern.de" and parts.path in {
+        "/gvl/archive.xhtml",
+        "/gvl/archive.jsf",
+    }:
+        record_id = parse_qs(parts.query).get("id", [None])[0]
+        if record_id is not None:
+            return ("gda.bayern.de", record_id)
+
+    # Ignore fragments and normalize scheme/host casing for ordinary duplicate
+    # links, while retaining paths and query parameters.
+    return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), parts.path, parts.query, ""))
+
+
+def reorder_fields(value, field_order):
+    """Order known fields first, preserving the order of unknown fields."""
+    ordered_keys = [key for key in field_order if key in value]
+    ordered_keys.extend(key for key in value if key not in field_order)
+    return {key: value[key] for key in ordered_keys}
+
+
+def order_document(document):
+    changed = False
+    reordered = reorder_fields(document, DOCUMENT_FIELDS)
+    changed |= list(reordered) != list(document)
+    entries = reordered.get("entries")
+    if isinstance(entries, list):
+        ordered_entries = []
+        for entry in entries:
+            if isinstance(entry, dict):
+                cleaned_entry = dict(entry)
+                for field in ("facts", "guesses"):
+                    if cleaned_entry.get(field) == []:
+                        del cleaned_entry[field]
+                        changed = True
+                ordered_entry = reorder_fields(cleaned_entry, ENTRY_FIELDS)
+                changed |= list(ordered_entry) != list(entry)
+                ordered_entries.append(ordered_entry)
+            else:
+                ordered_entries.append(entry)
+        reordered["entries"] = ordered_entries
+    return reordered, changed
 
 
 def main(argv=None):
@@ -57,6 +111,41 @@ def main(argv=None):
         if isinstance(document, dict) and document.get("deleted") == "true":
             continue
 
+        if isinstance(document, dict):
+            document, reordered = order_document(document)
+            if reordered:
+                try:
+                    original = path.read_text(encoding="utf-8")
+                    trailing_newline = original.endswith("\n")
+                    updated = json.dumps(document, ensure_ascii=False, indent=2)
+                    if trailing_newline:
+                        updated += "\n"
+                    path.write_text(updated, encoding="utf-8")
+                    print(f"{display_path(path)}: reordered document fields")
+                except (OSError, UnicodeError) as exc:
+                    print(f"{display_path(path)}: error: cannot reorder fields: {exc}")
+                    errors += 1
+                    continue
+
+        def warn_abstract(value, location):
+            nonlocal warnings
+            if isinstance(value, dict):
+                for key, child in value.items():
+                    child_location = f"{location}/{key.replace('~', '~0').replace('/', '~1')}"
+                    if key == "abstract":
+                        print(
+                            f"{display_path(path)}#{child_location}: warning: "
+                            "`summary` is expected; consult rules/json-formats.md"
+                        )
+                        warnings += 1
+                    else:
+                        warn_abstract(child, child_location)
+            elif isinstance(value, list):
+                for child_index, child in enumerate(value):
+                    warn_abstract(child, f"{location}/{child_index}")
+
+        warn_abstract(document, "")
+
         entries = document.get("entries") if isinstance(document, dict) else None
         if not isinstance(entries, list):
             print(f"{display_path(path)}: error: expected an entries array")
@@ -68,9 +157,44 @@ def main(argv=None):
                 print(f"{display_path(path)}#/entries/{index}: error: expected an entry object")
                 errors += 1
                 continue
+            urls = entry.get("url")
+            if isinstance(urls, str):
+                urls = [urls]
+            if isinstance(urls, list):
+                seen_urls = set()
+                for url_index, url in enumerate(urls):
+                    if not isinstance(url, str):
+                        continue
+                    key = canonical_url(url)
+                    if key in seen_urls:
+                        print(
+                            f"{display_path(path)}#/entries/{index}/url/{url_index}: "
+                            "warning: URL duplicates an earlier URL in this entry"
+                        )
+                        warnings += 1
+                    else:
+                        seen_urls.add(key)
+
             english = entry.get("english")
             if not isinstance(english, str) or not english.strip():
                 print(f"{display_path(path)}#/entries/{index}/english: warning: missing English text")
+                warnings += 1
+            if "latin" in entry and "german" in entry:
+                print(
+                    f"{display_path(path)}#/entries/{index}: warning: both `latin` and `german` "
+                    "are present; check whether this is intentional"
+                )
+                warnings += 1
+            if "date" in entry:
+                print(
+                    f"{display_path(path)}#/entries/{index}/date: warning: `date` belongs "
+                    "on the document, not the entry"
+                )
+                warnings += 1
+            if "note" in entry:
+                print(
+                    f"{display_path(path)}#/entries/{index}/note: warning: unexpected `note` field"
+                )
                 warnings += 1
 
     print(f"Checked documents: {len(files)} file(s), {warnings} warning(s), {errors} error(s).")

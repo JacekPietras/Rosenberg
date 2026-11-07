@@ -137,10 +137,10 @@ punctuation, and spaces inside the passage remain unchanged.
 
 ```json
 {
-  "date": "1399-02-01",
-  "transcribed": true,
   "label": ["Schenk", "important"],
+  "date": "1399-02-01",
   "place": "Boxberg",
+  "transcribed": true,
   "entries": [
     {
       "source": ["43 Nr. 5290", "Regest Nr. 123"],
