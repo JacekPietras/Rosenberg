@@ -1,7 +1,9 @@
+import contextlib
 import importlib.util
 import io
 import json
 import tempfile
+import sys
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -35,6 +37,29 @@ class ExistenceTests(unittest.TestCase):
             with patch.object(module, 'urlopen') as fetch:
                 self.assertTrue(client.exists('Rosinberg'))
                 fetch.assert_not_called()
+
+    def test_dotted_normal_search_is_skipped(self):
+        with tempfile.TemporaryDirectory() as directory:
+            args = ['search', 'Eberhard von. Rosenberg', '--cache-dir', directory,
+                    '--results-file', str(Path(directory) / 'results.json')]
+            with patch.object(sys, 'argv', args), patch.object(module.Client, 'search') as search, \
+                 contextlib.redirect_stderr(io.StringIO()):
+                self.assertEqual(module.main(), 0)
+            search.assert_not_called()
+            self.assertFalse((Path(directory) / 'results.json').exists())
+
+    def test_dotted_exists_reuses_undotted_result(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'results.json'
+            path.write_text(json.dumps({'archive': 'monasterium', 'queries': {'v Rosinberg': True}}))
+            args = ['search', 'v. Rosinberg', '--exists', '--cache-dir', directory,
+                    '--results-file', str(path)]
+            output = io.StringIO()
+            with patch.object(sys, 'argv', args), patch.object(module.Client, 'exists') as exists, \
+                 contextlib.redirect_stdout(output):
+                self.assertEqual(module.main(), 0)
+            exists.assert_not_called()
+            self.assertEqual(output.getvalue().strip(), 'true')
 
     def test_unrecognized_page_is_an_error(self):
         with tempfile.TemporaryDirectory() as directory:

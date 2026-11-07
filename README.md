@@ -168,6 +168,9 @@ Results do not expire automatically; remove an entry to check it again, or use
 `--results-file` to select a different results file. Archive scripts may also
 have their own search caches.
 
+Monasterium skips normal searches containing a dot, since those duplicate the
+undotted query. For `--exists`, it checks or reuses the undotted query instead.
+
 All archive search scripts accept `--exists` and print `true` or `false` without
 listing or importing records. They stop once the archive reports whether results
 exist, reuse complete cached searches where supported, and observe their normal

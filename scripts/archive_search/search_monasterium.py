@@ -192,7 +192,13 @@ def main():
     args = parser.parse_args()
     results = ResultsStore('monasterium', args.results_file)
     query = args.query.strip()
-    if not query:
+    if '.' in query:
+        undotted = query.replace('.', '')
+        if not args.exists:
+            print(f'Skipping dotted query; use {undotted!r}', file=sys.stderr)
+            return 0
+        query = undotted
+    if not query.strip():
         parser.error('query must not be empty')
     if not math.isfinite(args.delay) or args.delay < 15:
         parser.error('--delay must be at least 15 seconds')
