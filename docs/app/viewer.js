@@ -73,7 +73,8 @@ function synchronizePersonRoute() {
 const route = store?.getState?.().route || { active: 'books' };
 store?.setState(state);
 const GREY_RECORD_LABELS = new Set(['hessen', 'schenk', 'mönch', 'czechia']);
-const MISSING_RECORD_LABEL = 'missing';
+const MISSING_SOURCE_LABEL = 'missing source';
+const MISSING_URL_LABEL = 'missing url';
 let leafletMap = null;
 let mapMode = '1378';
 
@@ -82,8 +83,12 @@ function hasSource(source) {
   return typeof source === 'string' ? source.trim().length > 0 : source !== null && source !== undefined;
 }
 
-function recordHasMissingSourceOrUrl(path) {
-  return (state.documents.get(path)?.entries || []).some((entry) => !hasSource(entry.source) || !hasSource(entry.url));
+function recordHasMissingSource(path) {
+  return (state.documents.get(path)?.entries || []).some((entry) => !hasSource(entry.source));
+}
+
+function recordHasMissingUrl(path) {
+  return (state.documents.get(path)?.entries || []).some((entry) => !hasSource(entry.url));
 }
 
 function clearScreenCaches() {
@@ -1160,15 +1165,16 @@ function recordNeedsTranscription(doc) {
 function visibleRecordPaths(paths) {
   const selected = new Set(state.recordLabels);
   const hidden = new Set((state.hiddenRecordLabels || []).filter((label) => GREY_RECORD_LABELS.has(label)));
-  const transcriptionExcludedLabels = new Set(['hessen', 'schenk', 'mönch', 'czechia']);
+  const transcriptionExcludedLabels = new Set(['hessen', 'schenk', 'mönch', 'czechia', 'to review']);
   return paths.filter((path) => {
     if (state.recordSource && !citationIndex.recordHasSource(path, state.recordSource)) return false;
     if (state.toTranscribe && (!recordNeedsTranscription(state.documents.get(path)) || recordLabelForPath(path).some((label) => transcriptionExcludedLabels.has(label)))) return false;
     if (path === state.navigationRecord) return true;
     const labels = recordLabelForPath(path);
-    const missing = selected.has(MISSING_RECORD_LABEL) && recordHasMissingSourceOrUrl(path);
-    if (labels.some((label) => hidden.has(label)) && !missing) return false;
-    return !selected.size || labels.some((label) => selected.has(label)) || missing;
+    const missingSource = selected.has(MISSING_SOURCE_LABEL) && recordHasMissingSource(path);
+    const missingUrl = selected.has(MISSING_URL_LABEL) && recordHasMissingUrl(path);
+    if (labels.some((label) => hidden.has(label)) && !missingSource && !missingUrl) return false;
+    return !selected.size || labels.some((label) => selected.has(label)) || missingSource || missingUrl;
   });
 }
 
@@ -1185,18 +1191,29 @@ function renderYearSidebar(paths, labelPaths = paths) {
       if (!labels.has(label.toLocaleLowerCase())) labels.set(label.toLocaleLowerCase(), { label, path });
     });
   });
-  const missingPath = labelPaths.find((path) => recordHasMissingSourceOrUrl(path));
-  if (missingPath && !labels.has(MISSING_RECORD_LABEL)) labels.set(MISSING_RECORD_LABEL, { label: MISSING_RECORD_LABEL, path: missingPath });
-  const transcriptionLink = `<a href="#" class="${state.toTranscribe ? 'selected' : ''}" data-sidebar-type="transcribe">to transcribe</a>`;
+  const missingSourceCount = labelPaths.filter(recordHasMissingSource).length;
+  const missingUrlCount = labelPaths.filter(recordHasMissingUrl).length;
+  const missingSourcePath = labelPaths.find(recordHasMissingSource);
+  if (missingSourcePath) labels.set(MISSING_SOURCE_LABEL, { label: MISSING_SOURCE_LABEL, path: missingSourcePath, count: missingSourceCount });
+  const missingUrlPath = labelPaths.find(recordHasMissingUrl);
+  if (missingUrlPath) labels.set(MISSING_URL_LABEL, { label: MISSING_URL_LABEL, path: missingUrlPath, count: missingUrlCount });
+  const transcriptionExcludedLabels = new Set(['hessen', 'schenk', 'mönch', 'czechia', 'to review']);
+  const transcriptionCount = labelPaths.filter((path) => recordNeedsTranscription(state.documents.get(path))
+    && !recordLabelForPath(path).some((label) => transcriptionExcludedLabels.has(label))).length;
+  const transcriptionLink = `<a href="#" class="${state.toTranscribe ? 'selected' : ''}" data-sidebar-type="transcribe">to transcribe (${transcriptionCount})</a>`;
   const labelLinks = [...labels.values()]
     .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: 'base' }))
-    .map(({ label, path }) => {
+    .map(({ label, path, count: specialCount }) => {
       const key = label.toLocaleLowerCase();
+      const count = key === 'to review'
+        ? labelPaths.filter((itemPath) => recordLabelForPath(itemPath).includes(key)).length
+        : specialCount;
       const mode = GREY_RECORD_LABELS.has(key) && state.hiddenRecordLabels.includes(key)
         ? 'exclude' : state.recordLabels.includes(key) ? 'include' : 'neutral';
       const prefix = mode === 'exclude' ? '× ' : mode === 'include' ? '+ ' : '';
       const modeLabel = mode === 'exclude' ? 'excluded' : mode === 'include' ? 'included' : 'neutral';
-      return `<a href="#" class="record-filter record-filter-${mode}" aria-label="${escapeHtml(label)}: ${modeLabel}" title="${escapeHtml(modeLabel)} — click to change" data-sidebar-type="label" data-label="${escapeHtml(key)}" data-path="${escapeHtml(path)}">${escapeHtml(prefix + label)}</a>`;
+      const text = `${prefix + label}${count === undefined ? '' : ` (${count})`}`;
+      return `<a href="#" class="record-filter record-filter-${mode}" aria-label="${escapeHtml(label)}: ${modeLabel}" title="${escapeHtml(modeLabel)} — click to change" data-sidebar-type="label" data-label="${escapeHtml(key)}" data-path="${escapeHtml(path)}">${escapeHtml(text)}</a>`;
     })
     .join('');
   return `${yearLinks ? `<aside class="year-sidebar" aria-label="Documents by year"><nav>${yearLinks}</nav></aside>` : ''}<aside class="label-sidebar" aria-label="Document filters"><nav>${transcriptionLink}${labelLinks}</nav></aside>`;
@@ -1259,7 +1276,9 @@ function setupYearHighlight(paths) {
       if (link.dataset.sidebarType === 'transcribe') return;
       const active = link.dataset.sidebarType === 'year'
         ? link.textContent === year
-        : currentLabels.has(link.dataset.label) || (link.dataset.label === MISSING_RECORD_LABEL && recordHasMissingSourceOrUrl(current.path));
+        : currentLabels.has(link.dataset.label)
+          || (link.dataset.label === MISSING_SOURCE_LABEL && recordHasMissingSource(current.path))
+          || (link.dataset.label === MISSING_URL_LABEL && recordHasMissingUrl(current.path));
       link.classList.toggle('active', active);
       if (active) link.setAttribute('aria-current', 'true');
       else link.removeAttribute('aria-current');
@@ -1423,7 +1442,11 @@ async function loadAllLegacy() {
     collections: (documents.get('data/images/images.json')?.entries || []).filter((item) => imageLabels(item).includes('effigy')),
   };
   state.manifest = manifest; state.documents = documents; state.snapshot = snapshot;
-  if (!recordPaths.some((path) => recordHasMissingSourceOrUrl(path))) state.recordLabels = state.recordLabels.filter((label) => label !== MISSING_RECORD_LABEL);
+  const hasMissingSource = recordPaths.some(recordHasMissingSource);
+  const hasMissingUrl = recordPaths.some(recordHasMissingUrl);
+  state.recordLabels = state.recordLabels.flatMap((label) => label === 'missing'
+    ? [MISSING_SOURCE_LABEL, MISSING_URL_LABEL]
+    : label === MISSING_SOURCE_LABEL && !hasMissingSource || label === MISSING_URL_LABEL && !hasMissingUrl ? [] : [label]);
   if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = [...GREY_RECORD_LABELS];
   state.sealNames = [...new Set(state.sealNames.map(normalizeSealFilter).filter(Boolean))];
   if (state.active === 'books') state.active = manifest.books[0]?.path || 'documents';
@@ -1441,8 +1464,8 @@ const dataLoader = createDataLoader({
   buildPlacePattern,
   buildPersonPattern,
   bookSortYear,
-  recordHasMissingSourceOrUrl,
-  missingRecordLabel: MISSING_RECORD_LABEL,
+  recordHasMissingSource,
+  recordHasMissingUrl,
   greyRecordLabels: GREY_RECORD_LABELS,
   savePreferences,
   renderTabs,

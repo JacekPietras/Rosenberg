@@ -3,17 +3,30 @@
   "queries": {
     "Rosemberch": true,
     "Rosemberg": true,
+    "Rosenbach": true,
     "Rosenberch": true,
     "Rosenberg": true,
     "Rosenberger": true,
     "Rosenbergk": true,
+    "Rosenburg": true,
     "Rosenburgk": true,
+    "Rosenerg": false,
+    "Rosennberg": true,
     "Rosenperg": true,
     "Rosinberg": true,
     "Rosperg": true,
     "Rossberg": true,
     "Rossenberg": true,
     "Roßberg": true,
-    "Roßenberg": true
+    "Roßenberg": true,
+    "de Rosenberg": true,
+    "v Rosenberg": true,
+    "v Rosinberg": false,
+    "v. Rosenberg": true,
+    "v. Rosinberg": false,
+    "von Rosenberg": true,
+    "von Rosinberg": true,
+    "von. Rosenberg": true,
+    "von. Rosinberg": true
   }
 }

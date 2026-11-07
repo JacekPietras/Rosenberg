@@ -113,6 +113,8 @@ def main():
     parser.add_argument('--cache-dir', type=Path, help='archive search cache directory (where supported)')
     parser.add_argument('--results-file', type=Path,
                         help='JSON file for verified existence results')
+    parser.add_argument('--exists-only', action='store_true',
+                        help='check surviving full queries for results without listing or importing records')
     args = parser.parse_args()
     if args.cache_dir is not None and args.archive not in CACHE_ARCHIVES:
         parser.error(f'{args.archive} does not support --cache-dir')
@@ -149,7 +151,10 @@ def main():
             surviving_names.append(found)
         for given, family in itertools.product(itertools.product(*surviving_names), prefixed_surnames):
             query = ' '.join((*given, family))
-            checker.run(query)
+            if args.exists_only:
+                print(f'{query}\t{str(checker.exists(query)).lower()}')
+            else:
+                checker.run(query)
         if checker.failed:
             print('Incomplete searches (HTTP 500): ' + ', '.join(repr(q) for q in checker.failed), file=sys.stderr)
             return 1

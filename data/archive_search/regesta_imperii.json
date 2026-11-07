@@ -1,6 +1,8 @@
 {
   "archive": "regesta_imperii",
   "queries": {
-    "Rosenberg": true
+    "Rosemberg": true,
+    "Rosenberg": true,
+    "Rosinberg": true
   }
 }

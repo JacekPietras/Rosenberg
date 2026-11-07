@@ -10,8 +10,8 @@ export function createDataLoader({
   buildPlacePattern,
   buildPersonPattern,
   bookSortYear,
-  recordHasMissingSourceOrUrl,
-  missingRecordLabel,
+  recordHasMissingSource,
+  recordHasMissingUrl,
   greyRecordLabels,
   savePreferences,
   renderTabs,
@@ -130,7 +130,11 @@ export function createDataLoader({
       state.familyView = state.familyGraph.view;
       if (remapSourcePerson(state, lastVerifiedGraph)) onPersonReassigned();
     }
-    if (!recordPaths.some((path) => recordHasMissingSourceOrUrl(path))) state.recordLabels = state.recordLabels.filter((label) => label !== missingRecordLabel);
+    const hasMissingSource = recordPaths.some(recordHasMissingSource);
+    const hasMissingUrl = recordPaths.some(recordHasMissingUrl);
+    state.recordLabels = state.recordLabels.flatMap((label) => label === 'missing'
+      ? ['missing source', 'missing url']
+      : label === 'missing source' && !hasMissingSource || label === 'missing url' && !hasMissingUrl ? [] : [label]);
     if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = [...greyRecordLabels];
     state.sealNames = [...new Set(state.sealNames.map((label) => label.includes('?') ? 'unknown' : label.toLocaleLowerCase()).filter(Boolean))];
     state.imageRegions = [...new Set((state.imageRegions || []).map((name) => {
