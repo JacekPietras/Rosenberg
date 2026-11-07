@@ -1,8 +1,10 @@
 """Preserve existing document entries while adding downloaded metadata."""
 from __future__ import annotations
 
+import calendar
 import json
 import re
+from datetime import date
 from pathlib import Path
 from urllib.parse import parse_qsl, urlsplit
 
@@ -69,6 +71,49 @@ def texts(entry):
             and (main := text_parts(value)[0]).strip()}
 
 
+def date_span(value):
+    """Return inclusive date bounds for a supported document date."""
+    if not isinstance(value, str):
+        return None
+    value = value.strip()
+    if '--' in value or '/' in value:
+        separator = '--' if '--' in value else '/'
+        start, end = value.split(separator, 1)
+        start_span, end_span = date_span(start), date_span(end)
+        if start_span and end_span:
+            return start_span[0], end_span[1]
+        return None
+    year_range = re.fullmatch(r'(\d{4})-(\d{4})', value)
+    if year_range:
+        return date(int(year_range[1]), 1, 1), date(int(year_range[2]), 12, 31)
+    match = re.fullmatch(r'(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?', value)
+    if not match:
+        return None
+    year, month, day = match.groups()
+    year = int(year)
+    if month is None:
+        return date(year, 1, 1), date(year, 12, 31)
+    month = int(month)
+    if month < 1 or month > 12:
+        return None
+    if day is None:
+        return date(year, month, 1), date(year, month, calendar.monthrange(year, month)[1])
+    try:
+        exact = date(year, month, int(day))
+    except ValueError:
+        return None
+    return exact, exact
+
+
+def compatible_dates(existing, incoming):
+    if existing == incoming:
+        return True
+    existing_span, incoming_span = date_span(existing), date_span(incoming)
+    return bool(existing_span and incoming_span
+                and existing_span[0] <= incoming_span[1]
+                and incoming_span[0] <= existing_span[1])
+
+
 def merge_entry(entry, incoming, transcribed=False):
     for key, new in incoming.items():
         if not new:
@@ -127,6 +172,8 @@ def save_record(record, document_dir: Path):
                     continue
                 existing_urls = {normalized_url(url) for url in values(entry.get('url'))}
                 match = bool(incoming_sources.intersection(values(entry.get('source'))) or incoming_urls.intersection(existing_urls)) if by_source else bool(incoming_texts.intersection(texts(entry)))
+                if not by_source and not compatible_dates(document.get('date'), record.get('date')):
+                    match = False
                 if not match:
                     continue
                 before = json.dumps(document, ensure_ascii=False, sort_keys=True)

@@ -111,8 +111,8 @@ def iso_date(laufzeit: str) -> str:
     years = re.findall(r"(?<!\d)(\d{4})(?!\d)", value)
     if len(years) == 1:
         return years[0]
-    if len(years) == 2:
-        return f"{years[0]}-{years[1]}"
+    if len(years) >= 2:
+        return f"{min(years)}-{max(years)}"
     raise ValueError(f"Could not determine the document date from Laufzeit: {laufzeit!r}")
 
 

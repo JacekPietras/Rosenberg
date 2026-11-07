@@ -259,7 +259,7 @@ def main():
     if args.limit is not None and args.limit < 1:
         parser.error('--limit must be positive')
     client = Client(args.delay, args.cache_dir)
-    count = total = 0
+    count = total = skipped_without_laufzeit = 0
     client.cache_dir.mkdir(parents=True, exist_ok=True)
     lock = (client.cache_dir / 'session.lock').open('a')
     try:
@@ -286,13 +286,25 @@ def main():
                     print(f'Skipping existing URL: {url}', flush=True)
                     continue
                 client.wait()
-                proc = subprocess.run([sys.executable, str(ROOT / 'scripts/archive_records/archive_record_download.py'), url], cwd=ROOT)
+                proc = subprocess.run([sys.executable, str(ROOT / 'scripts/archive_records/archive_record_download.py'), url],
+                                      cwd=ROOT, capture_output=True, text=True)
                 (client.cache_dir / 'last-request').write_text(str(time.time()))
+                if proc.stdout:
+                    print(proc.stdout, end='', flush=True)
                 if proc.returncode:
+                    if proc.stderr:
+                        print(proc.stderr, end='', file=sys.stderr, flush=True)
+                    if 'The GDA page has no Laufzeit field' in proc.stderr:
+                        skipped_without_laufzeit += 1
+                        print(f'Skipping unavailable catalog record without Laufzeit: {url}', file=sys.stderr, flush=True)
+                        continue
                     raise RuntimeError(f'Downloader failed for {url}; stopping (exit {proc.returncode})')
         if count == 0:
             results.record(phrase, False)
-        print(f'Listed {count} of {total} catalogue results' + (' (limited)' if count < total else ''), file=sys.stderr)
+        summary = f'Listed {count} of {total} catalogue results' + (' (limited)' if count < total else '')
+        if skipped_without_laufzeit:
+            summary += f'; skipped {skipped_without_laufzeit} record(s) without Laufzeit'
+        print(summary, file=sys.stderr)
         return 0
     except (OSError, ValueError, RuntimeError) as exc:
         print(f'Error after {count} results: {exc}', file=sys.stderr)
