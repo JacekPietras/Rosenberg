@@ -126,6 +126,10 @@ def main(argv=None):
                     print(f"{display_path(path)}: error: cannot reorder fields: {exc}")
                     errors += 1
                     continue
+            for key in document:
+                if key not in DOCUMENT_FIELDS and key != "abstract":
+                    print(f"{display_path(path)}#/{key}: warning: unexpected document field {key!r}")
+                    warnings += 1
 
         def warn_abstract(value, location):
             nonlocal warnings
@@ -191,11 +195,13 @@ def main(argv=None):
                     "on the document, not the entry"
                 )
                 warnings += 1
-            if "note" in entry:
-                print(
-                    f"{display_path(path)}#/entries/{index}/note: warning: unexpected `note` field"
-                )
-                warnings += 1
+            for key in entry:
+                if key not in ENTRY_FIELDS and key not in {"abstract", "date"}:
+                    print(
+                        f"{display_path(path)}#/entries/{index}/{key}: "
+                        f"warning: unexpected entry field {key!r}"
+                    )
+                    warnings += 1
 
     print(f"Checked documents: {len(files)} file(s), {warnings} warning(s), {errors} error(s).")
     return 1 if errors else 0
