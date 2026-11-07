@@ -39,7 +39,7 @@ Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
 Hans, Johann, Hanemann, Hanse, Johannes, Hanns, Joannes, Iohannes, Johanns
 Hank
 Hartmut
-Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus, Henricus, Hainrich, Heinrici, Heinrico
+Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus, Henricus, Hainrich, Heinrici, Heinrico, Hendrici
 Herbord
 Herman, Hermann
 Hieronymus, Jheronimus

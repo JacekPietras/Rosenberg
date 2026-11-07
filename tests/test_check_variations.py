@@ -110,6 +110,30 @@ class VariationChecks(unittest.TestCase):
             with self.assertRaises(RuntimeError):
                 checker.run('Eberhard Rosinberg')
 
+    def test_http_500_continues_following_final_queries(self):
+        def exists(_self, query):
+            return query in ('Rosinberg', 'von Rosinberg', 'Eberhard')
+        def run(checker, query):
+            if query == 'Eberhard von Rosinberg':
+                checker.failed.append(query)
+        with patch.object(module, 'surname_variants', return_value=['Rosinberg']), \
+             patch.object(module, 'name_variants', return_value=['Eberhard']), \
+             patch.object(module.Checker, 'exists', exists), \
+             patch.object(module.Checker, 'run', autospec=True, side_effect=run) as search, \
+             patch('sys.argv', ['check_variations.py', 'monasterium', 'Eberhard von Rosenberg']), \
+             contextlib.redirect_stderr(io.StringIO()) as errors:
+            self.assertEqual(module.main(), 1)
+        self.assertEqual([call.args[1] for call in search.call_args_list],
+                         ['Eberhard von Rosinberg', 'Eberhard Rosinberg'])
+        self.assertIn('Eberhard von Rosinberg', errors.getvalue())
+
+    def test_http_500_screening_remains_possible(self):
+        checker = module.Checker('monasterium')
+        with patch.object(module.subprocess, 'run', return_value=subprocess.CompletedProcess([], 75, '')), \
+             contextlib.redirect_stderr(io.StringIO()):
+            self.assertTrue(checker.exists('Rosinberg'))
+        self.assertEqual(checker.failed, ['Rosinberg'])
+
     def test_absent_surnames_skip_all_names(self):
         with patch.object(module, 'surname_variants', return_value=['Absent']), \
              patch.object(module.Checker, 'exists', return_value=False) as check, \

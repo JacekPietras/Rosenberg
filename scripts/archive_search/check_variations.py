@@ -67,6 +67,7 @@ class Checker:
         self.results_file = results_file
         self.last_finished = None
         self.answers = {}
+        self.failed = []
 
     def run(self, query, exists=False):
         # Some archive clients keep rate-limit timestamps only in their process.
@@ -83,6 +84,10 @@ class Checker:
         result = subprocess.run(command, cwd=ROOT, text=True,
                                 stdout=subprocess.PIPE if exists else None)
         self.last_finished = time.monotonic()
+        if result.returncode == 75 and self.archive == 'monasterium':
+            self.failed.append(query)
+            print(f'Monasterium returned HTTP 500 for {query!r}; continuing', file=sys.stderr)
+            return True if exists else None
         if result.returncode:
             raise RuntimeError(f'Search failed for {query!r} (exit {result.returncode})')
         if not exists:
@@ -125,7 +130,7 @@ def main():
         checker = Checker(args.archive, args.cache_dir, args.results_file)
         surnames = [variant for variant in surnames if checker.exists(variant)]
         if not surnames:
-            return 0
+            return 1 if checker.failed else 0
         prefixed_surnames = [f'{prefix} {family}' if prefix else family
                              for family in surnames for prefix in prefixes
                              if not prefix or checker.exists(f'{prefix} {family}')]
@@ -135,11 +140,16 @@ def main():
         for variants in names:
             found = [variant for variant in variants if checker.exists(variant)]
             if not found:
-                return 0
+                if checker.failed:
+                    print('Incomplete checks (HTTP 500): ' + ', '.join(repr(q) for q in checker.failed), file=sys.stderr)
+                return 1 if checker.failed else 0
             surviving_names.append(found)
         for given, family in itertools.product(itertools.product(*surviving_names), prefixed_surnames):
             query = ' '.join((*given, family))
             checker.run(query)
+        if checker.failed:
+            print('Incomplete searches (HTTP 500): ' + ', '.join(repr(q) for q in checker.failed), file=sys.stderr)
+            return 1
         return 0
     except (OSError, ValueError, RuntimeError) as exc:
         print(f'Error: {exc}; stopping', file=sys.stderr)

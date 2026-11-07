@@ -15,6 +15,7 @@ import sys
 import time
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.error import HTTPError
 from urllib.parse import urlencode, urljoin, urlsplit
 from urllib.request import Request, urlopen
 
@@ -238,6 +239,9 @@ def main():
                     raise RuntimeError(f'Downloader failed (exit {proc.returncode})')
             print(f'Listed {len(rows)} of {total} catalogue results' + (' (limited)' if len(rows) < total else ''), file=sys.stderr)
             return 0
+        except HTTPError as exc:
+            print(f'Error: {exc}; stopping without retry', file=sys.stderr)
+            return 75 if exc.code == 500 else 1
         except (OSError, ValueError, RuntimeError) as exc:
             print(f'Error: {exc}; stopping without retry', file=sys.stderr)
             return 1

@@ -6,6 +6,7 @@ import tempfile
 import sys
 import unittest
 from pathlib import Path
+from urllib.error import HTTPError
 from unittest.mock import patch
 
 SCRIPT = Path(__file__).resolve().parents[1] / 'scripts/archive_search/search_monasterium.py'
@@ -60,6 +61,23 @@ class ExistenceTests(unittest.TestCase):
                 self.assertEqual(module.main(), 0)
             exists.assert_not_called()
             self.assertEqual(output.getvalue().strip(), 'true')
+
+    def test_http_500_does_not_store_a_negative_result(self):
+        for exists_mode in (True, False):
+            with self.subTest(exists=exists_mode), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                results = root / 'results.json'
+                args = ['search', 'Eberhardi de Rosenperg', '--cache-dir', str(root / 'cache'),
+                        '--results-file', str(results)]
+                if exists_mode:
+                    args.append('--exists')
+                error = HTTPError('https://www.monasterium.net/mom/search', 500, 'Internal Server Error', {}, None)
+                with patch.object(sys, 'argv', args), patch.object(module.Client, 'wait'), \
+                     patch.object(module, 'urlopen', side_effect=error), \
+                     contextlib.redirect_stderr(io.StringIO()):
+                    self.assertEqual(module.main(), 75)
+                self.assertFalse(results.exists())
+                self.assertEqual(list((root / 'cache').glob('*.json')), [])
 
     def test_unrecognized_page_is_an_error(self):
         with tempfile.TemporaryDirectory() as directory:
