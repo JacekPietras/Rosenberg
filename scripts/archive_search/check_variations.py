@@ -20,7 +20,7 @@ SCRIPTS = {name: Path(__file__).with_name(f'search_{name}.py') for name in (
     'landesarchiv_nrw', 'regesta_imperii',
 )}
 CACHE_ARCHIVES = {'monasterium', 'gda_bayern', 'landesarchiv_nrw', 'regesta_imperii'}
-PREFIXES = ('von', 'v', 'v.', 'von.', 'de', '')
+PREFIXES = ('von', 'v', 'v.', 'von.', 'de')
 
 
 def unique(values):
@@ -152,15 +152,12 @@ def main():
         names = ([whole_title] if whole_title else
                  [title or name_variants(word, ROOT / 'data/names.md')
                   for word, title in zip(preceding.split(), title_groups)])
-        prefixes = (*PREFIXES[:-1], 'zu', 'des', '') if only_titles else PREFIXES
+        prefixes = (*PREFIXES, 'zu', 'des') if only_titles else PREFIXES
         checker = Checker(args.archive, args.cache_dir, args.results_file, args.skip_result_id,
                           args.resume_after_result_id)
-        surnames = [variant for variant in surnames if checker.exists(variant)]
-        if not surnames:
-            return 1 if checker.failed else 0
-        prefixed_surnames = [f'{prefix} {family}' if prefix else family
+        prefixed_surnames = [f'{prefix} {family}'
                              for family in surnames for prefix in prefixes
-                             if not prefix or checker.exists(f'{prefix} {family}')]
+                             if checker.exists(f'{prefix} {family}')]
         if not prefixed_surnames:
             return 0
         surviving_names = []

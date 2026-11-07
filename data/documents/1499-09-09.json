@@ -5,8 +5,14 @@
   ],
   "entries": [
     {
-      "source": "München Bayern Deutschland Bayerisches Hauptstaatsarchiv Hochstift Freising 1019, Hochstift Freising Urkunden 1019",
-      "url": "https://www.monasterium.net/mom/DE-BayHStA/HochstiftFreising/Hochstift_Freising_Urkunden_1019/charter",
+      "source": [
+        "München Bayern Deutschland Bayerisches Hauptstaatsarchiv Hochstift Freising 1019, Hochstift Freising Urkunden 1019",
+        "BayHStA, Hochstift Freising Urkunden 1019"
+      ],
+      "url": [
+        "https://www.monasterium.net/mom/DE-BayHStA/HochstiftFreising/Hochstift_Freising_Urkunden_1019/charter",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++45F6C309-955B-4E3D-9457-7C759A5DD19F&parent_id="
+      ],
       "german": "Johann von Lamberg, Domdekan, Ruprecht Auer, Domherr, Michael von Rosenberg, Hofmeister zu Freising, und Warmund von Fraunberg zum Hubenstein, Pfleger, alle vier Regenten und Räte des Pfalzgrafen Philipp, Administrators zu Freising, bestätigen den \"Eyssnern aus dem eyssennärtztt zu Selltzach (= Selzach; Selca)\" die diesem von den drei Bischöfen Albrecht (Albert II.), Nicodemus und Sixtus von Freising verliehenen Privilegien, jedoch vorbehaltlich der jährlich aus ihren Schmieden zu leistenden Dienste und Zinsen an den bischöflichen Kasten zu Lack („Lagk); S 1: Johann von Lamberg; S 2: Ruprecht Auer; S 3: Michael von Rosenberg; S 4: Warmund von Fraunberg zum Hubenstein\n\nSiegel: vier an Presseln anhängende Siegel",
       "img": [
         {
@@ -14,6 +20,12 @@
         },
         {
           "src": "http://images.monasterium.net/img/DE-BayHStA/HochstiftFreising/1ec6872b-273f-4c03-affd-8d9ac358283e/1ec6872b-273f-4c03-affd-8d9ac358283e_0002.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/1ec6872b-273f-4c03-affd-8d9ac358283e/1/full/max/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/1ec6872b-273f-4c03-affd-8d9ac358283e/2/full/max/0/default.jpg"
         }
       ]
     }
