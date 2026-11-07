@@ -21,6 +21,7 @@ from urllib.request import HTTPCookieProcessor, Request, build_opener
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore
+from search_retry import retry_get
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 from archive_record_gda_resolver import SearchForm
 from archive_record_storage import has_url
@@ -94,8 +95,10 @@ class Client:
         headers = {'User-Agent': 'Rosenberg archive research/1.0'}
         if data is not None:
             headers['Faces-Request'] = 'partial/ajax'
-        with self.opener.open(Request(URL, data=data, headers=headers), timeout=60) as response:
-            return response.read().decode('utf-8', 'replace')
+        def read():
+            with self.opener.open(Request(URL, data=data, headers=headers), timeout=60) as response:
+                return response.read().decode('utf-8', 'replace')
+        return retry_get(read, self.delay, self.wait) if data is None else read()
 
     def search(self, phrase, limit=None, exists=False):
         path = self.cache_dir / (hashlib.sha256(phrase.encode()).hexdigest() + '.json')

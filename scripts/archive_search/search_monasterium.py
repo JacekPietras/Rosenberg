@@ -22,6 +22,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore
+from search_retry import retry_get
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 from archive_record_storage import has_url
 
@@ -39,6 +40,11 @@ def open_search(request):
             and system_bundle.is_file()):
         return urlopen(request, timeout=60, context=ssl.create_default_context(cafile=str(system_bundle)))
     return urlopen(request, timeout=60)
+
+
+def read_search(request):
+    with open_search(request) as response:
+        return response.read().decode('utf-8', 'replace')
 
 
 class Results(HTMLParser):
@@ -121,8 +127,7 @@ class Client:
         }
         self.wait()
         request = Request(URL + '?' + urlencode(params), headers={'User-Agent': 'Rosenberg archive research/1.0'})
-        with open_search(request) as response:
-            page = response.read().decode('utf-8', 'replace')
+        page = retry_get(lambda: read_search(request), self.delay, self.wait)
         result = Results(existence_only=True)
         result.feed(page)
         return result.total() > 0
@@ -153,8 +158,7 @@ class Client:
             }
             self.wait()
             request = Request(URL + '?' + urlencode(params), headers={'User-Agent': 'Rosenberg archive research/1.0'})
-            with open_search(request) as response:
-                page = response.read().decode('utf-8', 'replace')
+            page = retry_get(lambda: read_search(request), self.delay, self.wait)
             result = Results()
             result.feed(page)
             count = result.total()
@@ -240,10 +244,10 @@ def main():
             print(f'Listed {len(rows)} of {total} catalogue results' + (' (limited)' if len(rows) < total else ''), file=sys.stderr)
             return 0
         except HTTPError as exc:
-            print(f'Error: {exc}; stopping without retry', file=sys.stderr)
+            print(f'Error: {exc}; stopping', file=sys.stderr)
             return 75 if exc.code == 500 else 1
         except (OSError, ValueError, RuntimeError) as exc:
-            print(f'Error: {exc}; stopping without retry', file=sys.stderr)
+            print(f'Error: {exc}; stopping', file=sys.stderr)
             return 1
 
 

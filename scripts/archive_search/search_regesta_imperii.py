@@ -20,6 +20,7 @@ from urllib.request import Request
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore
+from search_retry import retry_get
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 import archive_record_regesta_imperii as ri
 from archive_record_storage import has_url
@@ -73,8 +74,10 @@ class Client:
         self.wait()
         req = Request(url, headers={'User-Agent': ri.USER_AGENT, 'Accept': 'application/xml,text/xml,text/html,*/*'})
         try:
-            with ri.OPENER.open(req, timeout=60) as response:
-                return response.geturl(), response.read()
+            def read():
+                with ri.OPENER.open(req, timeout=60) as response:
+                    return response.geturl(), response.read()
+            return retry_get(read, self.delay, self.wait)
         except HTTPError as exc:
             body = exc.read()
             if exc.code == 403 and ri.ANUBIS_CHALLENGE_RE.search(body.decode('utf-8', 'replace')):
@@ -168,7 +171,7 @@ def main():
             print(f'Listed {len(rows)} of {total} catalogue results' + (' (limited)' if len(rows) < total else ''), file=sys.stderr)
             return 0
         except (OSError, ValueError, RuntimeError, HTTPError) as exc:
-            print(f'Error: {exc}; stopping without retry', file=sys.stderr); return 1
+            print(f'Error: {exc}; stopping', file=sys.stderr); return 1
 
 if __name__ == '__main__':
     raise SystemExit(main())

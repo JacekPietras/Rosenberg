@@ -15,6 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore
+from search_retry import retry_get
 sys.path.insert(0, str(ROOT / "scripts" / "archive_records"))
 from archive_record_storage import has_url
 from urllib.error import HTTPError
@@ -61,8 +62,10 @@ class Client:
         request = Request(url, data=data, headers={'User-Agent': 'Rosenberg archive research/1.0',
                                                    'X-Requested-With': 'XMLHttpRequest'})
         try:
-            with self.opener.open(request, timeout=60) as response:
-                return response.url, response.read().decode('utf-8', 'replace')
+            def read():
+                with self.opener.open(request, timeout=60) as response:
+                    return response.url, response.read().decode('utf-8', 'replace')
+            return retry_get(read, self.delay, lambda: setattr(self, 'last_request', time.monotonic())) if data is None else read()
         except HTTPError as exc:
             if exc.code in (403, 429, 503):
                 raise RuntimeError(f'Archive returned HTTP {exc.code}; stopping. Retry-After: {exc.headers.get("Retry-After", "not provided")}') from exc
