@@ -93,7 +93,12 @@ class Client:
         path = self.cache / (hashlib.sha256(query.encode()).hexdigest() + '.json')
         if path.exists():
             data = json.loads(path.read_text()); print(f'Using cached search: {path}', file=sys.stderr)
-            if data.get('query') != query or len(data['rows']) != data['total']: raise ValueError('Invalid cached search')
+            available = data.get('available', data.get('total'))
+            if (data.get('query') != query or not isinstance(data.get('rows'), list)
+                    or not isinstance(data.get('total'), int)
+                    or not isinstance(available, int) or available < 0
+                    or available > data['total'] or len(data['rows']) != available):
+                raise ValueError('Invalid cached search')
             return data['rows'][:limit], data['total']
         _, page = ri.fetch(URL)
         form = Form(); form.feed(page.decode('utf-8', 'replace'))
@@ -102,29 +107,35 @@ class Client:
         if urlsplit(action).hostname not in ri.HOSTS: raise ValueError('Unexpected search form host')
         form.fields['tx_hisodat_sources[searchstring]'] = query
         page = self.post(action, form.fields)
-        rows = []; seen = set(); number = 1; total = None
+        rows = []; seen = set(); number = 1; total = None; available = None
         while True:
             result = Results(); result.feed(page.decode('utf-8', 'replace'))
             plain = ' '.join(' '.join(result.text).split())
-            match = re.search(r'Ihre Suche hat\s+([\d.]+)\s+Treffer ergeben', plain)
+            match = re.search(
+                r'Ihre Suche (?:hat\s+([\d.]+)\s+Treffer ergeben|'
+                r'erzielte\s+([\d.]+)\s+Treffer)', plain)
             if not match:
                 raise ValueError('Could not read the result count; stopping')
-            count = int(match[1].replace('.', ''))
+            count = int((match[1] or match[2]).replace('.', ''))
+            selected = re.search(r'ausgewählt wurden die\s+([\d.]+)\s+relevantesten Regesten', plain)
+            page_count = min(count, int(selected[1].replace('.', ''))) if selected else count
             if exists: return [], count
             if total is not None and count != total: raise ValueError('Result count changed')
-            total = count
+            if available is not None and page_count != available:
+                raise ValueError('Available result count changed')
+            total = count; available = page_count
             for row in result.rows:
                 if row['url'] in seen: raise ValueError('Duplicate result')
                 seen.add(row['url']); rows.append(row)
-            if len(rows) >= total or (limit and len(rows) >= limit): break
+            if len(rows) >= available or (limit and len(rows) >= limit): break
             next_url = result.pages.get(number + 1)
             if not next_url or not result.rows: raise ValueError('Missing results or pagination link')
             next_url = urljoin(URL, next_url)
             if urlsplit(next_url).hostname not in ri.HOSTS: raise ValueError('Unexpected pagination host')
             _, page = ri.fetch(next_url); number += 1
-        if len(rows) > total: raise ValueError('Too many results')
-        if len(rows) == total:
-            path.write_text(json.dumps({'query': query, 'total': total, 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
+        if len(rows) > available: raise ValueError('Too many results')
+        if len(rows) == available:
+            path.write_text(json.dumps({'query': query, 'total': total, 'available': available, 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
         return rows[:limit], total
 
 def main():

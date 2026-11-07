@@ -1,10 +1,19 @@
 {
   "archive": "landesarchiv_bw",
   "queries": {
+    "Rosemberch": true,
     "Rosemberg": true,
+    "Rosenberch": true,
     "Rosenberg": true,
+    "Rosenberger": true,
+    "Rosenbergk": true,
+    "Rosenburgk": true,
+    "Rosenperg": true,
     "Rosinberg": true,
+    "Rosperg": true,
+    "Rossberg": true,
     "Rossenberg": true,
+    "Roßberg": true,
     "Roßenberg": true
   }
 }

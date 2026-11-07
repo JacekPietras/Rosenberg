@@ -1,7 +1,16 @@
 {
   "archive": "gda_bayern",
   "queries": {
+    "Rosemberch": true,
+    "Rosemberg": true,
+    "Rosenberch": true,
     "Rosenberg": true,
-    "Rosinberg": false
+    "Rosenburgk": false,
+    "Rosinberg": false,
+    "Rosperg": true,
+    "Rossberg": true,
+    "Rossenberg": true,
+    "Roßberg": true,
+    "Roßenberg": true
   }
 }
