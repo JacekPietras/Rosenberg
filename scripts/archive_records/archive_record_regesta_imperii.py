@@ -85,6 +85,11 @@ def node_text(node: ElementTree.Element | None) -> str:
     return " ".join("".join(node.itertext()).split())
 
 
+def remove_top_index(text: str) -> str:
+    """Drop a standalone leading index number included in some abstracts."""
+    return re.sub(r"^\s*\d+\s*(?:\n+|$)", "", text, count=1)
+
+
 def find_text(root: ElementTree.Element, name: str, under: str | None = None) -> str:
     candidates = list(root.iter())
     if under:
@@ -164,6 +169,7 @@ def parse_cei(xml_bytes: bytes, page_url: str, entered_url: str) -> dict[str, ob
     ) if abstract_node is not None else ""
     if not abstract and abstract_node is not None:
         abstract = node_text(abstract_node)
+    abstract = remove_top_index(abstract)
     if not citation or not abstract:
         raise ValueError("The CEI record has no citation or German abstract")
 
@@ -184,6 +190,7 @@ def parse_cei(xml_bytes: bytes, page_url: str, entered_url: str) -> dict[str, ob
 
 
 def strip_tags(fragment: str) -> str:
+    fragment = re.sub(r"<sup\b[^>]*>.*?</sup\s*>", "", fragment, flags=re.I | re.S)
     fragment = re.sub(r"</?(?:p|br|div|li)\b[^>]*>", " ", fragment)
     return " ".join(html.unescape(re.sub(r"<[^>]+>", "", fragment)).split())
 
@@ -221,7 +228,7 @@ def parse_html(page: bytes, entered_url: str) -> dict[str, object]:
     citation = strip_tags(citation_node.group(1)).split(" - ", 1)[-1] if citation_node else ""
     heading = re.search(r"<h3>(.*?)</h3>", head.group(1), re.S)
     paragraphs = [strip_tags(p) for p in re.findall(r"<p>(.*?)</p>", summary.group(1), re.S)]
-    abstract = "\n\n".join(p for p in paragraphs if p)
+    abstract = remove_top_index("\n\n".join(p for p in paragraphs if p))
     reginfos = re.search(r'<div id="reginfos">(.*?)</div>', text, re.S)
     witnesses = ""
     if reginfos:
