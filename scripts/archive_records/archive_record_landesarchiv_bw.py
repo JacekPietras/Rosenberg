@@ -401,6 +401,7 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         ("Enthält", "enthält"),
         ("Umfang", "umfang"),
         ("Format", "format"),
+        ("Siegelbeschreibung", "siegelbeschreibung"),
     ):
         value = details.fields.get(field)
         if value:
