@@ -102,7 +102,8 @@ def create_record(root: ElementTree.Element, url: str, source_references=(), ima
     seal_description = node_text(first_node(root, 'sealDesc'))
     if seal_description:
         german += f'\n\nSiegel: {seal_description}'
-    entry: dict[str, object] = {"source": citation, "url": url, "german": german}
+    entry: dict[str, object] = {"source": citation, "url": url}
+    entry["german"] = german
     if source_references:
         entry['source'] = list(dict.fromkeys([citation, *source_references]))
         entry['url'] = list(dict.fromkeys([url, *source_references]))
@@ -113,6 +114,22 @@ def create_record(root: ElementTree.Element, url: str, source_references=(), ima
     if graphics:
         entry["img"] = [{"src": image} for image in dict.fromkeys(graphics)]
     record = {"date": date, "label": ["to review"], "entries": [entry]}
+    if fulltext and fulltext != abstract:
+        record["transcribed"] = True
 
     from archive_record_storage import save_record
-    return save_record(record, REPOSITORY_ROOT / "data" / "documents")
+    path, updated = save_record(record, REPOSITORY_ROOT / "data" / "documents")
+    if fulltext and fulltext != abstract and updated:
+        document = json.loads(path.read_text(encoding="utf-8"))
+        for saved_entry in document.get("entries", []):
+            if not isinstance(saved_entry, dict) or url not in (
+                    saved_entry.get("url", []) if isinstance(saved_entry.get("url"), list)
+                    else [saved_entry.get("url")]):
+                continue
+            saved_entry.pop("latin", None)
+            saved_entry.pop("summary", None)
+            saved_entry["german"] = german
+            break
+        document["transcribed"] = True
+        path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return path, updated
