@@ -2,6 +2,7 @@
 """List review documents and show any mention of a Rosenberg place variant."""
 
 import json
+import argparse
 import re
 from pathlib import Path
 
@@ -39,20 +40,33 @@ def rosenberg_patterns(places_file):
     return name_pattern, particle_name_pattern
 
 
-def mention_snippets(document, pattern):
+def mention_snippets(document, pattern, show_context):
     snippets = []
     for value in strings_in(document):
         for match in pattern.finditer(value):
             start = max(0, match.start() - 10)
             end = min(len(value), match.end() + 10)
             excerpt = value[start:end]
-            if "\n" in excerpt or "\r" in excerpt:
+            if show_context and ("\n" in excerpt or "\r" in excerpt):
                 continue
-            snippets.append("..." + excerpt + "...")
+            snippets.append("..." + excerpt + "..." if show_context else match.group(0))
     return snippets
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--context",
+        action="store_true",
+        help="include up to 10 surrounding characters for each standalone mention",
+    )
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="list only review documents with no Rosenberg spelling anywhere",
+    )
+    args = parser.parse_args()
+
     script_dir = Path(__file__).resolve().parent
     repo_root = script_dir.parent
     documents_dir = repo_root / "data" / "documents"
@@ -72,15 +86,17 @@ def main():
         if "to review" not in labels:
             continue
         values = list(strings_in(document))
-        if any(particle_name_pattern.search(value) for value in values):
+        has_any_name = any(name_pattern.search(value) for value in values)
+        has_particle_name = any(particle_name_pattern.search(value) for value in values)
+        if (args.strict and has_any_name) or (not args.strict and has_particle_name):
             continue
 
-        snippets = mention_snippets(document, name_pattern)
+        snippets = mention_snippets(document, name_pattern, args.context)
         print(path.relative_to(repo_root))
         if snippets:
             for snippet in snippets:
                 print(f"    {snippet}")
-        elif not any(name_pattern.search(value) for value in values):
+        elif not args.strict and not has_any_name:
             print("    No Rosenberg")
 
 
