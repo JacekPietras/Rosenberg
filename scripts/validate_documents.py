@@ -97,6 +97,24 @@ def order_document(document):
         for entry in entries:
             if isinstance(entry, dict):
                 cleaned_entry = dict(entry)
+                urls = cleaned_entry.get("url")
+                if isinstance(urls, list):
+                    https_urls = {
+                        urlunsplit(("https", *urlsplit(url)[1:]))
+                        for url in urls
+                        if isinstance(url, str) and urlsplit(url).scheme.lower() == "https"
+                    }
+                    filtered_urls = [
+                        url for url in urls
+                        if not (
+                            isinstance(url, str)
+                            and urlsplit(url).scheme.lower() == "http"
+                            and urlunsplit(("https", *urlsplit(url)[1:])) in https_urls
+                        )
+                    ]
+                    if len(filtered_urls) != len(urls):
+                        cleaned_entry["url"] = filtered_urls
+                        changed = True
                 for field in ("facts", "guesses"):
                     if cleaned_entry.get(field) == []:
                         del cleaned_entry[field]
