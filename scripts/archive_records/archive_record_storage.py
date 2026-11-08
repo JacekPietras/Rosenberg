@@ -25,7 +25,7 @@ def normalized_url(url):
 
 
 SPECIAL_PART = re.compile(
-    r'(?<!\w)(Aussteller|Empfänger|Siegel|Siegler|Laufzeit|Enthält|Umfang|Format)\s*:\s*',
+    r'(?<!\w)(Aussteller|Empfänger|Siegel|Siegler|Zeugen|Laufzeit|Enthält|Umfang|Format)\s*:\s*',
     re.I,
 )
 

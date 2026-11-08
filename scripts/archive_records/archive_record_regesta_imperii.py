@@ -222,6 +222,15 @@ def parse_html(page: bytes, entered_url: str) -> dict[str, object]:
     heading = re.search(r"<h3>(.*?)</h3>", head.group(1), re.S)
     paragraphs = [strip_tags(p) for p in re.findall(r"<p>(.*?)</p>", summary.group(1), re.S)]
     abstract = "\n\n".join(p for p in paragraphs if p)
+    reginfos = re.search(r'<div id="reginfos">(.*?)</div>', text, re.S)
+    witnesses = ""
+    if reginfos:
+        for label, value in re.findall(r"<dt>\s*(.*?)\s*</dt>\s*<dd>(.*?)</dd>", reginfos.group(1), re.S):
+            if strip_tags(label).rstrip(": ").casefold() == "zeugen":
+                witnesses = strip_tags(value)
+                break
+    if witnesses:
+        abstract += f"\n\nZeugen: {witnesses}"
     if not citation or not abstract or not heading:
         raise ValueError("The Regesta Imperii page has no citation, date or abstract")
     heading_text = strip_tags(heading.group(1))

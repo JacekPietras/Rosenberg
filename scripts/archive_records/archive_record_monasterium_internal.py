@@ -92,6 +92,10 @@ def create_record(root: ElementTree.Element, url: str, source_references=(), ima
         raise ValueError("The Monasterium record has no abstract or archival citation")
 
     german = abstract
+    tenor = first_node(root, "tenor")
+    fulltext = node_text(tenor)
+    if fulltext and fulltext != abstract:
+        german += f"\n\n{fulltext}"
     seal = first_node(root, "sigillant")
     if seal is not None and node_text(seal):
         german += f"\n\nSiegler: {node_text(seal)}"

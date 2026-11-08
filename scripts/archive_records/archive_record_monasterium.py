@@ -176,6 +176,14 @@ def add_monasterium_url(path: Path, monasterium_url: str, archive_url: str, root
         # The archive downloader supplies its current image URLs. Monasterium's
         # mirrored links can be obsolete and must not reintroduce broken images.
         merge_entry(entry, {"url": monasterium_url})
+        tenor = next((node for node in root.iter() if local_name(node.tag) == "tenor"), None)
+        fulltext = " ".join("".join(tenor.itertext()).split()) if tenor is not None else ""
+        if fulltext:
+            german = entry.get("german", "")
+            if not isinstance(german, str):
+                german = ""
+            if fulltext not in german:
+                entry["german"] = f"{german.rstrip()}\n\n{fulltext}" if german else fulltext
         path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         return
     raise ValueError(f"The archive downloader did not save an entry for {archive_url}")
