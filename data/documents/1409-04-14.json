@@ -3,7 +3,10 @@
   "entries": [
     {
       "source": "Regesta chronologico-diplomatica Ruperti regis Romanorum",
-      "url": "https://books.google.pl/books?id=zQtlAAAAcAAJ",
+      "url": [
+        "https://books.google.pl/books?id=zQtlAAAAcAAJ",
+        "https://www.digitale-sammlungen.de/en/view/bsb10001855"
+      ],
       "german": "König Rupertus befiehlt der Stadt Schweinfurt, die Steuer dem Arnolt von Rosenberg dem Jungen zu geben. C.",
       "english": "King Ruprecht commands the city of Schweinfurt to give the tax to Arnold von Rosenberg der Jüngere. C.",
       "facts": [

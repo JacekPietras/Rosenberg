@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "Regesta chronologico-diplomatica Ruperti regis Romanorum",
-      "url": "https://books.google.pl/books?id=zQtlAAAAcAAJ",
+      "url": [
+        "https://books.google.pl/books?id=zQtlAAAAcAAJ",
+        "https://www.digitale-sammlungen.de/en/view/bsb10001855"
+      ],
       "german": "König Rupertus weiset die Stadt Schweinfurt zum Gehorsam gegen den von Ihm zum Reichsvogt und Amtmann daselbst ernannten Arnolt von Rosenberg den ältern an, C.",
       "english": "King Ruprecht instructs the city of Schweinfurt to obedience towards Arnold von Rosenberg der Ältere, appointed by him as Imperial Vogt and bailiff there, C.",
       "facts": [
