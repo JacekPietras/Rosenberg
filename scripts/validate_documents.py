@@ -211,6 +211,13 @@ def main(argv=None):
                 for url_index, url in enumerate(urls):
                     if not isinstance(url, str):
                         continue
+                    if urlsplit(url.strip()).hostname and urlsplit(url.strip()).hostname.lower() == "www2.landesarchiv-bw.de":
+                        print(
+                            f"{display_path(path)}#/entries/{index}/url/{url_index}: warning: "
+                            "this is not a Landesarchiv BW permalink; use "
+                            "`http://www.landesarchiv-bw.de/plink/...`"
+                        )
+                        warnings += 1
                     key = canonical_url(url)
                     if key in seen_urls:
                         print(
