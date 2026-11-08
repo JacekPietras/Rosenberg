@@ -236,6 +236,35 @@ def verify_permalink(opener, url: str, aid: str) -> str:
     return f"https://www.landesarchiv-bw.de/plink/?{urlencode({'f': aid})}"
 
 
+def resolve_redirected_catalogue_record(opener, url: str, aid: str) -> str:
+    """Resolve a legacy permalink redirected to a selected catalogue record."""
+    from urllib.parse import parse_qs
+
+    final_url, page = fetch(opener, url)
+    if not isinstance(page, str):
+        raise ValueError("The permalink did not return an HTML catalogue page")
+    final = urlsplit(final_url)
+    if final.hostname not in {"www.landesarchiv-bw.de", "landesarchiv-bw.de", "www2.landesarchiv-bw.de"}:
+        raise ValueError(f"Permalink redirected outside Landesarchiv Baden-Württemberg: {final_url}")
+    if "Zu dieser URL existiert" in page and "keine Ressource" in page:
+        raise ValueError(f"Landesarchiv permalink {url} does not exist")
+
+    query = parse_qs(final.query)
+    record_id = query.get("sprungId", [None])[0]
+    bestand = query.get("bestand", [None])[0]
+    if not record_id or not bestand or not record_id.isdigit() or not bestand.isdigit():
+        raise ValueError(f"Permalink did not resolve to a catalogue record (AID {aid})")
+
+    details_url = "https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?" + urlencode(
+        {"id_titlaufn": record_id, "bestand": bestand}
+    )
+    details = CatalogDetails()
+    details.feed(fetch_page(details_url))
+    if not all(details.fields.get(field) for field in ("bestellsignatur", "laufzeit", "titel")):
+        raise ValueError(f"Redirected catalogue record {record_id} could not be verified (AID {aid})")
+    return details_url
+
+
 def iso_date(value: str) -> str:
     """Convert common Landesarchiv German date labels to the JSON ISO format."""
     value = value.strip()
@@ -365,8 +394,16 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
             url = details_url
             print(f"Warning: {exc}; using the direct catalogue record URL {url}", file=sys.stderr)
     else:
-        url = verify_permalink(opener, url, aid)
-        discovered = discover_viewer(opener, url)
+        try:
+            url = verify_permalink(opener, url, aid)
+        except ValueError as permalink_error:
+            try:
+                details_url = resolve_redirected_catalogue_record(opener, url, aid)
+            except (OSError, ValueError):
+                raise permalink_error
+            discovered = (details_url, "", {}, [], "")
+        else:
+            discovered = discover_viewer(opener, url)
         details_url, viewer_url, fields, page_names, scope_id = discovered
         if page_names:
             images = image_urls(viewer_url, fields, page_names, scope_id)
