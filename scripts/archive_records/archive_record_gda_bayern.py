@@ -19,6 +19,7 @@ REQUEST_TIMEOUT = 60
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
 GDA_HOSTS = {"www.gda.bayern.de", "gda.bayern.de"}
+GDA_DOCUMENT_PATH = re.compile(r"/gvl/document/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})", re.I)
 
 
 class RecordFields(HTMLParser):
@@ -71,6 +72,12 @@ def image_urls(page: str, record_url: str) -> list[str]:
             if href and "/digitalisat/iiif/" in href:
                 urls.append(href.rstrip("/") + "/full/max/0/default.jpg")
     return list(dict.fromkeys(urls))
+
+
+def document_permalink(page: str) -> str | None:
+    """Find the public GDA document permalink exposed by a legacy record page."""
+    match = GDA_DOCUMENT_PATH.search(page)
+    return f"https://www.gda.bayern.de/gvl/document/{match[1]}" if match else None
 
 
 def field_values(parser: RecordFields, label: str) -> list[str]:
@@ -170,7 +177,21 @@ def create_record(url: str) -> tuple[Path, bool]:
     if parsed_url.scheme != "https" or parsed_url.hostname not in GDA_HOSTS or not parsed_url.path.startswith("/gvl/"):
         raise ValueError("Expected an https://www.gda.bayern.de/gvl/ archive record URL")
 
+    # Search results still commonly point at archive.xhtml. That page may
+    # expose a stable /document/<uuid> permalink; prefer it when it resolves
+    # to the same catalog record, and retain the supplied URL otherwise.
     page = fetch(url)
+    permalink = document_permalink(page)
+    if permalink and permalink != url:
+        try:
+            permalink_page = fetch(permalink)
+        except (OSError, ValueError):
+            permalink_page = ""
+        permalink_fields = RecordFields()
+        permalink_fields.feed(permalink_page)
+        if field_values(permalink_fields, "Laufzeit") and field_values(permalink_fields, "Bestellsignatur"):
+            page = permalink_page
+            url = permalink
     parser = RecordFields()
     parser.feed(page)
     laufzeit = field_values(parser, "Laufzeit")
