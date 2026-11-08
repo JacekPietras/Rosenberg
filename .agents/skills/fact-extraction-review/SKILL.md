@@ -1,6 +1,6 @@
 ---
 name: fact-extraction-review
-description: Extract or audit facts in the project's historical source JSON, following the repository fact and schema rules.
+description: When directly asked to extract fact entries from document json
 ---
 
 # Fact extraction and review
