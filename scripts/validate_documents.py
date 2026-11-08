@@ -163,8 +163,14 @@ def main(argv=None):
             errors += 1
             continue
 
-        if isinstance(document, dict) and document.get("deleted") == "true":
-            continue
+        if isinstance(document, dict):
+            if document.get("deleted") in (True, "true"):
+                continue
+            labels = document.get("label", [])
+            if isinstance(labels, str):
+                labels = [labels]
+            if isinstance(labels, list) and {"Czechia", "Schenk", "Mönch"}.intersection(labels):
+                continue
 
         if isinstance(document, dict):
             document, reordered = order_document(document)

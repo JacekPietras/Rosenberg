@@ -80,10 +80,13 @@ def main():
             print(f"Warning: could not read {path}: {error}")
             continue
 
+        if document.get("deleted") is True:
+            continue
+
         labels = document.get("label", [])
         if isinstance(labels, str):
             labels = [labels]
-        if "to review" not in labels:
+        if "to review" not in labels or {"Czechia", "Schenk", "Mönch"}.intersection(labels):
             continue
         values = list(strings_in(document))
         has_any_name = any(name_pattern.search(value) for value in values)
