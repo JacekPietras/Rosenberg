@@ -226,6 +226,7 @@ def create_record(url: str) -> tuple[Path, bool]:
     title = next(iter(fields.fields.get("Titel", [])), "")
     short = next(iter(fields.fields.get("Kurzregest", [])), "")
     full = next(iter(fields.fields.get("(Voll-) Regest", [])), "")
+    formal_description = next(iter(fields.fields.get("Formalbeschreibung", [])), "")
     sealer = next(iter(fields.fields.get("Siegler", [])), "")
     witnesses = fields.fields.get("Zeugen", [])
     included = [
@@ -241,6 +242,8 @@ def create_record(url: str) -> tuple[Path, bool]:
     german_parts = [part for part in (short, full) if part]
     if not german_parts and title:
         german_parts.append(title)
+    if formal_description:
+        german_parts.append(f"Formalbeschreibung: {formal_description}")
     if sealer:
         german_parts.append(f"Siegler: {sealer}")
     if witnesses:
