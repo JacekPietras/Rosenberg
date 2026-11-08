@@ -83,6 +83,21 @@ def reorder_fields(value, field_order):
 def order_document(document):
     changed = False
     reordered = reorder_fields(document, DOCUMENT_FIELDS)
+    if reordered.get("deleted") == "true":
+        reordered["deleted"] = True
+        changed = True
+    entries = reordered.get("entries")
+    if isinstance(entries, list):
+        for entry in entries:
+            if not isinstance(entry, dict):
+                continue
+            images = entry.get("img")
+            if not isinstance(images, list):
+                images = [images] if isinstance(images, dict) else []
+            for image in images:
+                if isinstance(image, dict) and image.get("deleted") == "true":
+                    image["deleted"] = True
+                    changed = True
     if reordered.get("place") in ("....", "o. O."):
         del reordered["place"]
         changed = True
@@ -180,7 +195,7 @@ def main(argv=None):
             continue
 
         if isinstance(document, dict):
-            if document.get("deleted") in (True, "true"):
+            if document.get("deleted") is True:
                 continue
             labels = document.get("label", [])
             if isinstance(labels, str):

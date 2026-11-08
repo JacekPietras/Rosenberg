@@ -34,7 +34,7 @@ export function createSealScreen({
       (document?.entries || []).forEach((entry, entryIndex) => {
         const imageNodes = Array.isArray(entry.img) ? entry.img : [entry.img];
         imageNodes.forEach((node, imageIndex) => {
-          if (node && typeof node === 'object' && node.deleted === 'true') return;
+          if (node && typeof node === 'object' && node.deleted === true) return;
           const seals = node && typeof node === 'object' ? node.seals : imageIndex === 0 ? entry.seals : [];
           if (!Array.isArray(seals) || !seals.length || !node) return;
           seals.forEach((seal) => {

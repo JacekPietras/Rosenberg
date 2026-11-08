@@ -142,7 +142,7 @@ def fact_records(data_dir, people_by_id=None):
                 seen_seals = set()
                 if isinstance(images, list):
                     for image in images:
-                        if not isinstance(image, dict) or image.get("deleted") in (True, "true"):
+                        if not isinstance(image, dict) or image.get("deleted") is True:
                             continue
                         for seal in image.get("seals", []):
                             if not isinstance(seal, dict):

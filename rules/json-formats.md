@@ -162,7 +162,7 @@ punctuation, and spaces inside the passage remain unchanged.
 - Entries keep `source` (the citation) and `url` as either a string or an array
   of strings, when there is one reference/link or several; they also keep their
   text fields and `facts`.
-- `img[]`: `src`; `deleted: "true"` for a removed image (kept so it is not
+- `img[]`: `src`; `deleted: true` for a removed image (kept so it is not
   imported again); optional `tags`, and `regions` (named rectangles with
   normalized `x`, `y`, `width`, `height` from 0 to 1; the first gives the
   preview focus when there is no `focus`).

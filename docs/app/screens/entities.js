@@ -158,7 +158,7 @@ export function createEntityScreens({
       (doc?.entries || []).forEach((entry, index) => {
         const nodes = Array.isArray(entry.img) ? entry.img : [entry.img];
         nodes.forEach((node, imageIndex) => {
-          if (!node || (typeof node === 'object' && node.deleted === 'true')) return;
+          if (!node || (typeof node === 'object' && node.deleted === true)) return;
           const seals = node && typeof node === 'object' ? node.seals : imageIndex === 0 ? entry.seals : [];
           (Array.isArray(seals) ? seals : []).forEach((seal) => {
             if (!matchesPerson(seal?.person, '')) return;

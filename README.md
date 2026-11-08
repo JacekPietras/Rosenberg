@@ -279,6 +279,6 @@ Run `python3 scripts/facts/validate_facts.py` to validate facts in the data.
 ### Document validation
 
 Run `python3 scripts/validate_documents.py` to check document JSON files. Entries
-without English text are reported as warnings; documents marked `"deleted": "true"`
+without English text are reported as warnings; documents marked `"deleted": true`
 are skipped.
 

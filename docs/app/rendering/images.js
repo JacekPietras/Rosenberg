@@ -26,7 +26,7 @@ export function createImageRenderer({ location = window.location, state } = {}) 
     const parts = location.pathname.split('/').filter(Boolean);
     const owner = location.hostname.split('.')[0]; const repository = parts[0];
     const images = nodes.map((node, imageIndex) => {
-      if (node && typeof node === 'object' && node.deleted === 'true') return '';
+      if (node && typeof node === 'object' && node.deleted === true) return '';
       const file = typeof node === 'object' && node !== null ? node.src : node;
       const seals = typeof node === 'object' && node !== null ? node.seals : imageIndex === 0 ? legacySeals : [];
       const fileName = String(file || '').trim(); if (!fileName) return '';

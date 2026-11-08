@@ -966,11 +966,11 @@ function setupImageLightboxLegacy() {
     if (!entry) return;
     if (Array.isArray(entry.img)) {
       const image = entry.img[Number(editingContext.imageIndex)];
-      if (image && typeof image === 'object') image.deleted = 'true';
-      else entry.img[Number(editingContext.imageIndex)] = { src: image, deleted: 'true' };
+      if (image && typeof image === 'object') image.deleted = true;
+      else entry.img[Number(editingContext.imageIndex)] = { src: image, deleted: true };
     } else {
-      if (entry.img && typeof entry.img === 'object') entry.img.deleted = 'true';
-      else entry.img = { src: entry.img, deleted: 'true' };
+      if (entry.img && typeof entry.img === 'object') entry.img.deleted = true;
+      else entry.img = { src: entry.img, deleted: true };
     }
     if (!await saveDocument()) return;
     lightbox.close();
@@ -1025,7 +1025,7 @@ function recordSealEntries() {
     (document?.entries || []).forEach((entry, entryIndex) => {
       const imageNodes = Array.isArray(entry.img) ? entry.img : [entry.img];
       imageNodes.forEach((node, imageIndex) => {
-        if (node && typeof node === 'object' && node.deleted === 'true') return;
+        if (node && typeof node === 'object' && node.deleted === true) return;
         const seals = node && typeof node === 'object' ? node.seals : imageIndex === 0 ? entry.seals : [];
         if (!Array.isArray(seals) || !seals.length || !node) return;
         seals.forEach((seal) => {
@@ -1156,7 +1156,7 @@ function recordNeedsTranscription(doc) {
   return doc?.transcribed !== true && (doc?.entries || []).some((entry) => {
     const images = Array.isArray(entry.img) ? entry.img : [entry.img];
     return images.some((image) => {
-      if (image && typeof image === 'object' && (image.deleted === 'true' || image.deleted === true)) return false;
+      if (image && typeof image === 'object' && image.deleted === true) return false;
       return typeof image === 'string' ? Boolean(image.trim()) : Boolean(typeof image?.src === 'string' && image.src.trim());
     });
   });

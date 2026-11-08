@@ -579,9 +579,9 @@ export function setupImageLightbox({ state, repository, rerender }) {
     if (!entry) return;
     if (Array.isArray(entry.img)) {
       const item = entry.img[Number(context.imageIndex)];
-      if (item && typeof item === 'object') item.deleted = 'true'; else entry.img[Number(context.imageIndex)] = { src: item, deleted: 'true' };
-    } else if (entry.img && typeof entry.img === 'object') entry.img.deleted = 'true';
-    else entry.img = { src: entry.img, deleted: 'true' };
+      if (item && typeof item === 'object') item.deleted = true; else entry.img[Number(context.imageIndex)] = { src: item, deleted: true };
+    } else if (entry.img && typeof entry.img === 'object') entry.img.deleted = true;
+    else entry.img = { src: entry.img, deleted: true };
     if (await save()) { lightbox.close(); await rerender?.(); }
   });
   descriptionClose?.addEventListener('click', () => { if (description) { description.hidden = true; updateDescriptionLayout(); } });
