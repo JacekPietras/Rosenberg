@@ -58,6 +58,18 @@ class LandesarchivSearchTests(unittest.TestCase):
             self.assertIn(title, entry['german'])
             self.assertIn(darin, entry['german'])
 
+    def test_siegelbeschreibung_is_preserved_as_catalogue_metadata(self):
+        description = 'Siegel des Ausstellers (fehlt) und der Zeugen: Conrad von Rosenberg und Wiprecht von Helmstadt.'
+        details = f'''<table><tr><td>Bestellsignatur</td><td>Archive 4037151</td></tr>
+        <tr><td>Laufzeit</td><td>1390 Juni 24</td></tr>
+        <tr><td>Titel</td><td>Document text</td></tr>
+        <tr><td>Siegelbeschreibung</td><td>{description}</td></tr></table>'''
+        with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
+                patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url):
+            path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-4037151')
+            self.assertIn(f'Siegelbeschreibung: {description}', json.loads(path.read_text())['entries'][0]['german'])
+
     def test_existing_year_only_file_is_renamed_when_precise_date_is_found(self):
         for name in ('1418.json', '1418_3.json'):
             with self.subTest(name=name), tempfile.TemporaryDirectory() as directory:
