@@ -87,8 +87,7 @@ class Fields(HTMLParser):
                 value = " ".join("".join(self.current_value).split())
                 if label:
                     self.previous_label = label
-                elif (self.previous_label.casefold().startswith("enthält")
-                      or self.previous_label.casefold().startswith("includes")):
+                elif (self.previous_label.casefold().startswith(("enthält", "includes", "zeugen"))):
                     label = self.previous_label
                 if label and value:
                     self.fields.setdefault(label, []).append(value)
@@ -228,6 +227,7 @@ def create_record(url: str) -> tuple[Path, bool]:
     short = next(iter(fields.fields.get("Kurzregest", [])), "")
     full = next(iter(fields.fields.get("(Voll-) Regest", [])), "")
     sealer = next(iter(fields.fields.get("Siegler", [])), "")
+    witnesses = fields.fields.get("Zeugen", [])
     included = [
         value
         for label, values in fields.fields.items()
@@ -243,6 +243,8 @@ def create_record(url: str) -> tuple[Path, bool]:
         german_parts.append(title)
     if sealer:
         german_parts.append(f"Siegler: {sealer}")
+    if witnesses:
+        german_parts.append("Zeugen: " + "\n".join(witnesses))
     if included:
         german_parts.append("Enthält: " + "\n".join(included))
     german = "\n\n".join(german_parts)
