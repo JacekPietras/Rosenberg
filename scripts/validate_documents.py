@@ -16,6 +16,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCUMENT_FIELDS = ("date", "place", "label", "transcribed", "deleted", "entries")
 ENTRY_FIELDS = ("source", "url", "summary", "german", "latin", "english", "facts", "guesses", "img")
 SOURCE_SUFFIX = " (http://www.klaster.vyssibrod.cz)"
+LANDESARCHIV_BW_HTTP_PREFIX = "http://www.landesarchiv-bw.de/plink/"
+LANDESARCHIV_BW_HTTPS_PREFIX = "https://www.landesarchiv-bw.de/plink/"
 
 
 def collect_files(paths):
@@ -112,7 +114,21 @@ def order_document(document):
                         cleaned_entry["source"] = cleaned_source
                         changed = True
                 urls = cleaned_entry.get("url")
-                if isinstance(urls, list):
+                if isinstance(urls, str) and urls.startswith(LANDESARCHIV_BW_HTTP_PREFIX):
+                    cleaned_entry["url"] = urls.replace(
+                        LANDESARCHIV_BW_HTTP_PREFIX, LANDESARCHIV_BW_HTTPS_PREFIX, 1
+                    )
+                    changed = True
+                elif isinstance(urls, list):
+                    corrected_urls = [
+                        url.replace(LANDESARCHIV_BW_HTTP_PREFIX, LANDESARCHIV_BW_HTTPS_PREFIX, 1)
+                        if isinstance(url, str) and url.startswith(LANDESARCHIV_BW_HTTP_PREFIX)
+                        else url
+                        for url in urls
+                    ]
+                    if corrected_urls != urls:
+                        cleaned_entry["url"] = urls = corrected_urls
+                        changed = True
                     https_urls = {
                         urlunsplit(("https", *urlsplit(url)[1:]))
                         for url in urls
