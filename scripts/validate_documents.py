@@ -157,8 +157,16 @@ def order_document(document):
                             and urlunsplit(("https", *urlsplit(url)[1:])) in https_urls
                         )
                     ]
+                    unique_urls = []
+                    for url in filtered_urls:
+                        if not isinstance(url, str) or url not in unique_urls:
+                            unique_urls.append(url)
+                    filtered_urls = unique_urls
                     if len(filtered_urls) != len(urls):
                         cleaned_entry["url"] = filtered_urls
+                        changed = True
+                    if len(filtered_urls) == 1 and isinstance(filtered_urls[0], str):
+                        cleaned_entry["url"] = filtered_urls[0]
                         changed = True
                 for field in ("facts", "guesses"):
                     if cleaned_entry.get(field) == []:
