@@ -6,7 +6,10 @@
   "entries": [
     {
       "source": "StABa, Hochstift Bamberg, Archiv 819",
-      "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E667C267-B351-483D-88FB-7C81442E0227&parent_id=",
+      "url": [
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E667C267-B351-483D-88FB-7C81442E0227&parent_id=",
+        "https://www.gda.bayern.de/gvl/document/b076bf3c-9165-4e85-8269-7cc43994d66c"
+      ],
       "german": "Berichte und Korrespondenzen zu den Bundestagen des Schwäbischen Bundes; Sammelakt."
     }
   ]

@@ -6,7 +6,10 @@
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, Handschriften 217",
-      "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++FB17C24C-7772-4CF6-A30E-483261F99BDE&parent_id=",
+      "url": [
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++FB17C24C-7772-4CF6-A30E-483261F99BDE&parent_id=",
+        "https://www.gda.bayern.de/gvl/document/d6247418-c3da-4748-ba0d-d71e06d08cf4"
+      ],
       "german": "Handschrift betitelt: Nurmberg. Des heiligen romischen Reichs Statt etc. etc. von bemelter Stat Policeiischen ordnung und Ämtern, iren alten geschlechtn auch derselben verheiratungen, Wappen und Cleinoten etc."
     }
   ]

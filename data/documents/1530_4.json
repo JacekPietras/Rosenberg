@@ -6,7 +6,10 @@
   "entries": [
     {
       "source": "StAN, Eichstätter Archivalien 5181",
-      "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++BDC48289-B4CB-405B-BEBC-89B5A0B4BA7B&parent_id=",
+      "url": [
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++BDC48289-B4CB-405B-BEBC-89B5A0B4BA7B&parent_id=",
+        "https://www.gda.bayern.de/gvl/document/ab8ad4a5-ca51-4904-a658-f64ec3f8a7d7"
+      ],
       "german": "Erwerb der Herrschaft Jettenhofen durch die Brüder von Hürnheim"
     }
   ]

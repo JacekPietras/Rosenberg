@@ -6,7 +6,10 @@
   "entries": [
     {
       "source": "StAWü, Gräflich Ortenburg´sches Schloßarchiv Birkenfeld Akten 2507",
-      "url": "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++DE12BA42-0AAE-4B8D-8323-BFDEA67428DE&parent_id=",
+      "url": [
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++DE12BA42-0AAE-4B8D-8323-BFDEA67428DE&parent_id=",
+        "https://www.gda.bayern.de/gvl/document/1e9dea96-7ca4-4cfa-a17c-d334829f0f7e"
+      ],
       "german": "Das Chur-Pfälzische Haus Selbsten, betreffende Sachen"
     }
   ]
