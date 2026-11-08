@@ -15,6 +15,7 @@ from urllib.parse import parse_qs, urlsplit, urlunsplit
 ROOT = Path(__file__).resolve().parents[1]
 DOCUMENT_FIELDS = ("date", "place", "label", "transcribed", "deleted", "entries")
 ENTRY_FIELDS = ("source", "url", "summary", "german", "latin", "english", "facts", "guesses", "img")
+SOURCE_SUFFIX = " (http://www.klaster.vyssibrod.cz)"
 
 
 def collect_files(paths):
@@ -97,6 +98,19 @@ def order_document(document):
         for entry in entries:
             if isinstance(entry, dict):
                 cleaned_entry = dict(entry)
+                source = cleaned_entry.get("source")
+                if isinstance(source, str) and SOURCE_SUFFIX in source:
+                    cleaned_entry["source"] = source.replace(SOURCE_SUFFIX, "")
+                    changed = True
+                elif isinstance(source, list):
+                    cleaned_source = [
+                        item.replace(SOURCE_SUFFIX, "")
+                        if isinstance(item, str) else item
+                        for item in source
+                    ]
+                    if cleaned_source != source:
+                        cleaned_entry["source"] = cleaned_source
+                        changed = True
                 urls = cleaned_entry.get("url")
                 if isinstance(urls, list):
                     https_urls = {
