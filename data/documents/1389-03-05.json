@@ -3,6 +3,7 @@
   "label": [
     "to review"
   ],
+  "transcribed": true,
   "entries": [
     {
       "source": [
@@ -29,6 +30,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

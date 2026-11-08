@@ -80,6 +80,16 @@ def reorder_fields(value, field_order):
 def order_document(document):
     changed = False
     reordered = reorder_fields(document, DOCUMENT_FIELDS)
+    if reordered.get("place") in ("....", "o. O."):
+        del reordered["place"]
+        changed = True
+    elif isinstance(reordered.get("place"), str):
+        place = reordered["place"]
+        if (place.startswith("(") and place.endswith(")")) or (
+            place.startswith("[") and place.endswith("]")
+        ):
+            reordered["place"] = place[1:-1]
+            changed = True
     changed |= list(reordered) != list(document)
     entries = reordered.get("entries")
     if isinstance(entries, list):
