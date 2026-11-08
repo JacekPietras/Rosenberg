@@ -45,6 +45,7 @@ class Fields(HTMLParser):
         self.in_value = False
         self.in_highlighting_area = False
         self.in_row = False
+        self.previous_label = ""
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         classes = set((dict(attrs).get("class") or "").split())
@@ -84,6 +85,11 @@ class Fields(HTMLParser):
                 self.in_value = False
                 label = " ".join("".join(self.current_label).split()).rstrip(":")
                 value = " ".join("".join(self.current_value).split())
+                if label:
+                    self.previous_label = label
+                elif (self.previous_label.casefold().startswith("enthält")
+                      or self.previous_label.casefold().startswith("includes")):
+                    label = self.previous_label
                 if label and value:
                     self.fields.setdefault(label, []).append(value)
         if tag == "div" and self.in_row:
@@ -222,6 +228,12 @@ def create_record(url: str) -> tuple[Path, bool]:
     short = next(iter(fields.fields.get("Kurzregest", [])), "")
     full = next(iter(fields.fields.get("(Voll-) Regest", [])), "")
     sealer = next(iter(fields.fields.get("Siegler", [])), "")
+    included = [
+        value
+        for label, values in fields.fields.items()
+        if label.casefold().startswith("enthält") or label.casefold().startswith("includes")
+        for value in values
+    ]
     if not date_value or date_value.strip().casefold() in {"ohne datum", "undatiert", "ohne datierung"}:
         raise NonDatedCatalogEntry("Arcinsys catalog entry has no document date")
     if not source or not date_value:
@@ -231,6 +243,8 @@ def create_record(url: str) -> tuple[Path, bool]:
         german_parts.append(title)
     if sealer:
         german_parts.append(f"Siegler: {sealer}")
+    if included:
+        german_parts.append("Enthält: " + "\n".join(included))
     german = "\n\n".join(german_parts)
     images = Images()
     images.feed(page)
