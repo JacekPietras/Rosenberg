@@ -32,7 +32,7 @@
         },
         {
           "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/17fbb954-05f0-4814-8397-4146e12b405d/full/full/0/default.jpg",
-          "deleted": "true"
+          "deleted": true
         }
       ]
     }

@@ -40,7 +40,7 @@
         },
         {
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035235_00002/full/max/0/default.jpg",
-          "deleted": "true"
+          "deleted": true
         },
         {
           "src": "img/1329-krafto-von-uissigheim.png",

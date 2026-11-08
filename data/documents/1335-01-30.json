@@ -43,7 +43,7 @@
         },
         {
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035257_00002/full/max/0/default.jpg",
-          "deleted": "true"
+          "deleted": true
         }
       ]
     }
