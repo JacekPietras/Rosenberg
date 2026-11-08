@@ -196,13 +196,16 @@ def create_record(url: str) -> tuple[Path, bool]:
     parser.feed(page)
     laufzeit = field_values(parser, "Laufzeit")
     citations = field_values(parser, "Bestellsignatur")
-    subjects = field_values(parser, "Betreff")
+    descriptions = list(dict.fromkeys(
+        value for label in ("Betreff", "Enthält-/Darin-Vermerke")
+        for value in field_values(parser, label)
+    ))
     if not laufzeit:
         raise ValueError("The GDA page has no Laufzeit field")
     if not citations:
         raise ValueError("The GDA page has no Bestellsignatur field")
 
-    german = strip_rtf(subjects[0]) if subjects else ""
+    german = "\n\n".join(strip_rtf(value) for value in descriptions)
     date = iso_date(laufzeit[0])
     generated_entry: dict[str, object] = {"source": citations[0], "url": url}
     if german:
