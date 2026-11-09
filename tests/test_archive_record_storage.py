@@ -9,6 +9,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from archive_record_storage import save_record, has_url, merge_text
 
 
+class CatalogSectionMergeTests(unittest.TestCase):
+    def test_preserves_new_catalog_sections(self):
+        for section in ('Enthält u.a.: Details', 'Besiegelung/Beglaubigung: Friedrich'):
+            with self.subTest(section=section):
+                self.assertEqual(merge_text('Text', f'Text\n\n{section}'), f'Text\n\n{section}')
+
+
 class DownloaderStorageTests(unittest.TestCase):
     def test_existing_url_matches_when_citation_and_text_differ(self):
         with tempfile.TemporaryDirectory() as tmp:
