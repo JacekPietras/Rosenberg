@@ -40,6 +40,20 @@ class ResolverTests(unittest.TestCase):
         self.assertEqual(list(dict.fromkeys(field_values(fields, 'Laufzeit'))), ['1341 Mai 12'])
         self.assertEqual(iso_date(field_values(fields, 'Laufzeit')[0]), '1341-05-12')
 
+    def test_import_includes_catalog_notes_with_field_labels(self):
+        url = 'https://www.gda.bayern.de/gvl/document/c42e1677-acf0-4b5a-98eb-bc09812e2f61'
+        page = ('<td data-label="Laufzeit">1660</td>'
+                '<td data-label="Bestellsignatur">StAWü, Akten</td>'
+                '<td data-label="Betreff">Inhalt</td>'
+                + 2 * '<td data-label="Enthält-/Darin-Vermerke">Darin: Abschrift</td>'
+                + 2 * '<td data-label="Vermerke">Rückvermerk</td>')
+        with patch('archive_record_gda_bayern.fetch', return_value=page), \
+             patch('archive_record_gda_bayern.image_urls', return_value=[]), \
+             patch('archive_record_storage.save_record', return_value=(Path('record.json'), False)) as save:
+            create_record(url)
+        self.assertEqual(save.call_args.args[0]['entries'][0]['german'],
+                         'Inhalt\n\nEnthält-/Darin-Vermerke: Darin: Abschrift\n\nVermerke: Rückvermerk')
+
     def test_import_includes_separate_sealing_field_once(self):
         url = 'https://www.gda.bayern.de/gvl/document/1dc4f41a-126d-4b5a-98c3-c02f6bb16ac8'
         page = ('<td data-label="Laufzeit">1521 Februar 6</td>'

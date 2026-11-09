@@ -217,16 +217,16 @@ def create_record(url: str) -> tuple[Path, bool]:
     parser.feed(page)
     laufzeit = field_values(parser, "Laufzeit")
     citations = field_values(parser, "Bestellsignatur")
-    descriptions = list(dict.fromkeys(
-        value for label in ("Betreff", "Enthält-/Darin-Vermerke")
-        for value in field_values(parser, label)
-    ))
+    descriptions = list(dict.fromkeys(field_values(parser, "Betreff")))
     if not laufzeit:
         raise ValueError("The GDA page has no Laufzeit field")
     if not citations:
         raise ValueError("The GDA page has no Bestellsignatur field")
 
     sections = [strip_rtf(value) for value in descriptions]
+    sections.extend(f"{label}: {strip_rtf(value)}"
+                    for label in ("Enthält-/Darin-Vermerke", "Vermerke")
+                    for value in field_values(parser, label))
     sections.extend(section for value in field_values(parser, "Äußere Beschreibung")
                     for section in seal_sections(value))
     sections.extend(f"Besiegelung/Beglaubigung: {strip_rtf(value)}"

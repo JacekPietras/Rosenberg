@@ -11,7 +11,8 @@ from archive_record_storage import save_record, has_url, merge_text
 
 class CatalogSectionMergeTests(unittest.TestCase):
     def test_preserves_new_catalog_sections(self):
-        for section in ('Enthält u.a.: Details', 'Besiegelung/Beglaubigung: Friedrich'):
+        for section in ('Enthält u.a.: Details', 'Besiegelung/Beglaubigung: Friedrich',
+                        'Enthält-/Darin-Vermerke: Darin: Details', 'Vermerke: Rückvermerk'):
             with self.subTest(section=section):
                 self.assertEqual(merge_text('Text', f'Text\n\n{section}'), f'Text\n\n{section}')
 
