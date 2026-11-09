@@ -6,7 +6,10 @@
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 1-J",
-      "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_e430eecf-3396-47fb-b368-b1d722adb3df",
+      "url": [
+        "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_e430eecf-3396-47fb-b368-b1d722adb3df",
+        "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_79277437-9a28-4bc6-817f-01facb2ae515"
+      ],
       "german": "Rosenberg, Arthur Karl"
     }
   ]
