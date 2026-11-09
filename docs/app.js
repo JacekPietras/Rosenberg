@@ -5,11 +5,21 @@ if (localRefresh) {
   fetch('/api/local-server', { cache: 'no-store' }).then((response) => {
     if (response.ok) {
       localRefresh.hidden = false;
-      const heartbeat = () => fetch('/api/heartbeat', { method: 'POST', keepalive: true }).catch(() => {});
+      let heartbeatFailed = false;
+      const heartbeat = () => fetch('/api/heartbeat', { method: 'POST', keepalive: true }).then((result) => {
+        if (!result.ok) throw new Error(`HTTP ${result.status}`);
+        if (heartbeatFailed) console.info('Local server heartbeat recovered.');
+        heartbeatFailed = false;
+      }).catch((error) => {
+        if (!heartbeatFailed) console.error('Local server heartbeat failed:', error);
+        heartbeatFailed = true;
+      });
       heartbeat();
       window.setInterval(heartbeat, 1000);
+    } else {
+      console.error(`Local server heartbeat was not started: server probe returned HTTP ${response.status}.`);
     }
-  }).catch(() => {});
+  }).catch((error) => console.error('Local server heartbeat was not started: server probe failed:', error));
 
   localRefresh.addEventListener('click', async () => {
     localRefresh.disabled = true;

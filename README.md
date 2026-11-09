@@ -39,6 +39,11 @@ verification.
 The viewer is published at <https://jacekpietras.github.io/Rosenberg/> (read-only). 
 For local testing and modifications under <http://localhost:8000/docs/>, run `./server`
 
+The local server appends shutdown reasons and UTC timestamps to `server.log` in
+the repository root. It records heartbeat timeouts, viewer-requested restarts,
+termination signals, and unexpected errors. A forced kill or power loss cannot
+be recorded by the server.
+
 ## Family Graph
 
 ### Reconstruct the family graph

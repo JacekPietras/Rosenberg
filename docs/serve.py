@@ -2,10 +2,12 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import json
 import hashlib
+from datetime import datetime, timezone
 from html.parser import HTMLParser
 import os
 import queue
 import re
+import signal
 import subprocess
 import sys
 import tempfile
@@ -19,11 +21,29 @@ import webbrowser
 ROOT = Path(__file__).resolve().parent.parent
 HEARTBEAT_TIMEOUT = 20
 last_heartbeat = [0.0]
+heartbeat_count = [0]
+last_request = [None, 0.0]
+activity_lock = threading.Lock()
 page_seen = threading.Event()
 stop_watcher = threading.Event()
 family_rebuild_lock = threading.Lock()
 family_rebuild_status = {'active': False, 'stage': ''}
 family_rebuild_status_lock = threading.Lock()
+shutdown_reason = ['server stopped']
+
+
+def record_shutdown(reason):
+    message = f"{datetime.now(timezone.utc).isoformat()} pid={os.getpid()} {reason}"
+    print(f"Server shutdown: {message}", flush=True)
+    try:
+        with (ROOT / 'server.log').open('a', encoding='utf-8') as log:
+            log.write(message + '\n')
+    except OSError as error:
+        print(f"Could not write server shutdown log: {error}", file=sys.stderr, flush=True)
+
+
+class ServerSignal(BaseException):
+    pass
 
 
 class DriveFolderParser(HTMLParser):
@@ -64,6 +84,19 @@ class DriveFolderParser(HTMLParser):
 
 
 class ViewerHandler(SimpleHTTPRequestHandler):
+    def record_activity(self):
+        path = self.path.split("?", 1)[0]
+        now = time.monotonic()
+        with activity_lock:
+            last_request[:] = [f'{self.command} {path}', now]
+            if path in ('/docs/', '/docs/index.html') and self.command == 'GET':
+                last_heartbeat[0] = now
+                page_seen.set()
+            elif path == '/api/heartbeat' and self.command == 'POST':
+                last_heartbeat[0] = now
+                heartbeat_count[0] += 1
+                page_seen.set()
+
     def end_headers(self):
         self.send_header("Cache-Control", "no-store")
         super().end_headers()
@@ -77,9 +110,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
         self.wfile.write(payload)
 
     def do_GET(self):
-        if self.path.split("?", 1)[0] in ("/docs/", "/docs/index.html"):
-            last_heartbeat[0] = time.monotonic()
-            page_seen.set()
+        self.record_activity()
         if self.path.split("?", 1)[0] == "/api/local-server":
             self.send_response(204)
             self.end_headers()
@@ -219,6 +250,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
         super().do_GET()
 
     def do_POST(self):
+        self.record_activity()
         if self.path.split("?", 1)[0] == "/api/rebuild-family-tree":
             status_started = False
             try:
@@ -305,8 +337,6 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 flush=True,
             )
         if self.path.split("?", 1)[0] == "/api/heartbeat":
-            last_heartbeat[0] = time.monotonic()
-            page_seen.set()
             self.send_response(204)
             self.end_headers()
             return
@@ -359,6 +389,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                     stderr=subprocess.DEVNULL,
                     start_new_session=True,
                 )
+                shutdown_reason[0] = 'restart requested by viewer'
                 server.shutdown()
                 server.server_close()
 
@@ -415,12 +446,35 @@ if __name__ == "__main__":
 
     def watch_heartbeat():
         while not stop_watcher.wait(0.25):
-            if page_seen.is_set() and time.monotonic() - last_heartbeat[0] >= HEARTBEAT_TIMEOUT:
+            with activity_lock:
+                now = time.monotonic()
+                timed_out = page_seen.is_set() and now - last_heartbeat[0] >= HEARTBEAT_TIMEOUT
+                if timed_out:
+                    request, request_time = last_request
+                    detail = (f'heartbeats received: {heartbeat_count[0]}; '
+                              f'last request: {request or "none"}'
+                              + (f' ({now - request_time:.1f}s ago)' if request else ''))
+            if timed_out:
                 print(f"No viewer heartbeat for {HEARTBEAT_TIMEOUT}s; stopping server.", flush=True)
+                shutdown_reason[0] = f'no viewer heartbeat for {HEARTBEAT_TIMEOUT}s; {detail}'
                 server.shutdown()
                 return
 
+    def handle_signal(signum, _frame):
+        shutdown_reason[0] = f'received {signal.Signals(signum).name}'
+        raise ServerSignal()
+
+    signal.signal(signal.SIGINT, handle_signal)
+    signal.signal(signal.SIGTERM, handle_signal)
     threading.Thread(target=watch_heartbeat, daemon=True).start()
-    server.serve_forever()
-    stop_watcher.set()
-    server.server_close()
+    try:
+        server.serve_forever()
+    except ServerSignal:
+        pass
+    except BaseException as error:
+        shutdown_reason[0] = f'unexpected {type(error).__name__}: {error}'
+        raise
+    finally:
+        stop_watcher.set()
+        server.server_close()
+        record_shutdown(shutdown_reason[0])
