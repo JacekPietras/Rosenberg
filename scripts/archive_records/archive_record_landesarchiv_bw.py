@@ -194,14 +194,16 @@ class CatalogDetails(HTMLParser):
         elif tag == "td":
             self.in_cell = True
             self.cell = []
+        elif tag == "br" and self.in_cell:
+            self.cell.append("\n")
 
     def handle_data(self, data: str) -> None:
         if self.in_cell:
-            self.cell.append(data)
+            self.cell.append(data.replace("\n", " ").replace("\r", " "))
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "td" and self.in_cell:
-            value = " ".join("".join(self.cell).split())
+            value = "\n".join(" ".join(line.split()) for line in "".join(self.cell).split("\n"))
             self.cells.append(value)
             self.in_cell = False
         elif tag == "tr":
@@ -439,6 +441,8 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         ("Umfang", "umfang"),
         ("Format", "format"),
         ("Siegelbeschreibung", "siegelbeschreibung"),
+        ("Zeugen", "zeugen"),
+        ("Vermerke", "vermerke"),
     ):
         value = details.fields.get(field)
         if value:

@@ -21,6 +21,12 @@ def result_page(record_id, page):
 
 
 class LandesarchivSearchTests(unittest.TestCase):
+    def test_catalogue_line_breaks_are_preserved_without_splitting_inline_text(self):
+        details = downloader.CatalogDetails()
+        details.feed('<table><tr><td>Titel</td><td>Datum<br>Urfehde.<br/>Sr.: Jörg\n von '
+                     '<b>Rosenberg</b><br>Ausf. Pap.</td></tr></table>')
+        self.assertEqual(details.fields['titel'], 'Datum\nUrfehde.\nSr.: Jörg von Rosenberg\nAusf. Pap.')
+
     def test_day_first_german_catalogue_date_keeps_full_precision(self):
         self.assertEqual(downloader.iso_date('25. Apr. 1385'), '1385-04-25')
         self.assertEqual(downloader.iso_date('25. April 1385'), '1385-04-25')
@@ -69,6 +75,30 @@ class LandesarchivSearchTests(unittest.TestCase):
                 patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url):
             path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-4037151')
             self.assertIn(f'Siegelbeschreibung: {description}', json.loads(path.read_text())['entries'][0]['german'])
+
+    def test_zeugen_are_preserved_as_catalogue_metadata(self):
+        witnesses = 'Hans von Ingelheim, Hans von Rosenberg und Philipp von Bettendorff'
+        details = f'''<table><tr><td>Bestellsignatur</td><td>Archive 11</td></tr>
+        <tr><td>Laufzeit</td><td>1500 März 21</td></tr>
+        <tr><td>Titel</td><td>Document text</td></tr>
+        <tr><td>Zeugen</td><td>{witnesses}</td></tr></table>'''
+        with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
+                patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url):
+            path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123')
+            self.assertIn(f'Zeugen: {witnesses}', json.loads(path.read_text())['entries'][0]['german'])
+
+    def test_vermerke_are_preserved_as_catalogue_metadata(self):
+        notes = 'Dabei ein Transfix vom gleichen Tag.'
+        details = f'''<table><tr><td>Bestellsignatur</td><td>Archive 11</td></tr>
+        <tr><td>Laufzeit</td><td>1468 Juli 12</td></tr>
+        <tr><td>Titel</td><td>Document text</td></tr>
+        <tr><td>Vermerke</td><td>{notes}</td></tr></table>'''
+        with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
+                patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url):
+            path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123')
+            self.assertIn(f'Vermerke: {notes}', json.loads(path.read_text())['entries'][0]['german'])
 
     def test_existing_year_only_file_is_renamed_when_precise_date_is_found(self):
         for name in ('1418.json', '1418_3.json'):
