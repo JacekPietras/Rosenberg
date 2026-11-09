@@ -1269,6 +1269,7 @@ function setupYearHighlight(paths) {
       if (target.element.getBoundingClientRect().top + window.scrollY <= marker) current = target;
     });
     state.record = current.path;
+    state.lastRenderedDocumentsYear = documentYear(state.documents.get(current.path));
     savePreferences();
     const year = current.element.id.match(/^year-(\d{4})-/)?.[1];
     const currentLabels = new Set(recordLabelForPath(current.path));
@@ -1283,7 +1284,15 @@ function setupYearHighlight(paths) {
       if (active) link.setAttribute('aria-current', 'true');
       else link.removeAttribute('aria-current');
       if (active && link !== selectedLink) {
-        link.scrollIntoView({ block: 'nearest' });
+        const nav = link.closest('nav');
+        if (nav) {
+          const item = link.getBoundingClientRect();
+          const bounds = nav.getBoundingClientRect();
+          if (item.top < bounds.top) nav.scrollTop -= bounds.top - item.top;
+          else if (item.bottom > bounds.bottom) nav.scrollTop += item.bottom - bounds.bottom;
+          if (item.left < bounds.left) nav.scrollLeft -= bounds.left - item.left;
+          else if (item.right > bounds.right) nav.scrollLeft += item.right - bounds.right;
+        }
         selectedLink = link;
       }
     });
@@ -1302,11 +1311,16 @@ function restoreRecord(paths) {
 }
 
 let entryScrollCleanup = null;
+let scrolledEntryHash = null;
+window.addEventListener('hashchange', () => { scrolledEntryHash = null; });
 function scrollToEntryHash() {
   const hash = decodeURIComponent(location.hash.slice(1));
-  if (!hash) return;
+  if (!hash || hash === scrolledEntryHash) return;
   const target = document.getElementById(hash);
-  if (target) entryScrollCleanup = keepEntryInView(target, $('#content'));
+  if (target) {
+    scrolledEntryHash = hash;
+    entryScrollCleanup = keepEntryInView(target, $('#content'));
+  }
 }
 
 const markupRenderer = createMarkupRenderer({ state });
