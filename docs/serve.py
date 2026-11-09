@@ -22,6 +22,8 @@ ROOT = Path(__file__).resolve().parent.parent
 HEARTBEAT_TIMEOUT = 20
 last_heartbeat = [0.0]
 heartbeat_count = [0]
+last_received_heartbeat = [None, 0.0]
+last_heartbeat_sent = [None]
 last_request = [None, 0.0]
 activity_lock = threading.Lock()
 page_seen = threading.Event()
@@ -32,14 +34,16 @@ family_rebuild_status_lock = threading.Lock()
 shutdown_reason = ['server stopped']
 
 
-def record_shutdown(reason):
+def record_event(reason):
     message = f"{datetime.now(timezone.utc).isoformat()} pid={os.getpid()} {reason}"
-    print(f"Server shutdown: {message}", flush=True)
+    print(f"Server log: {message}", flush=True)
     try:
         with (ROOT / 'server.log').open('a', encoding='utf-8') as log:
             log.write(message + '\n')
+        return True
     except OSError as error:
-        print(f"Could not write server shutdown log: {error}", file=sys.stderr, flush=True)
+        print(f"Could not write server log: {error}", file=sys.stderr, flush=True)
+        return False
 
 
 class ServerSignal(BaseException):
@@ -95,6 +99,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             elif path == '/api/heartbeat' and self.command == 'POST':
                 last_heartbeat[0] = now
                 heartbeat_count[0] += 1
+                last_received_heartbeat[:] = [datetime.now(timezone.utc).isoformat(), now]
                 page_seen.set()
 
     def end_headers(self):
@@ -251,6 +256,21 @@ class ViewerHandler(SimpleHTTPRequestHandler):
 
     def do_POST(self):
         self.record_activity()
+        if self.path.split("?", 1)[0] == "/api/heartbeat-diagnostics":
+            try:
+                length = int(self.headers.get('Content-Length', '0'))
+                if not 0 < length <= 4096:
+                    raise ValueError('Invalid diagnostic size')
+                payload = json.loads(self.rfile.read(length))
+                if not isinstance(payload, dict) or not isinstance(payload.get('message'), str):
+                    raise ValueError('Invalid diagnostic')
+                message = payload['message'].replace('\n', ' ').replace('\r', ' ')[:1000]
+                saved = record_event(f'browser heartbeat diagnostic: {message}')
+                self.send_response(204 if saved else 500)
+                self.end_headers()
+            except (ValueError, TypeError, json.JSONDecodeError):
+                self.send_error(400, 'Invalid diagnostic')
+            return
         if self.path.split("?", 1)[0] == "/api/rebuild-family-tree":
             status_started = False
             try:
@@ -337,6 +357,16 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 flush=True,
             )
         if self.path.split("?", 1)[0] == "/api/heartbeat":
+            try:
+                length = int(self.headers.get('Content-Length', '0'))
+                if 0 < length <= 1024:
+                    payload = json.loads(self.rfile.read(length))
+                    sent_at = payload.get('sentAt') if isinstance(payload, dict) else None
+                    if isinstance(sent_at, str) and len(sent_at) <= 64:
+                        with activity_lock:
+                            last_heartbeat_sent[0] = sent_at.replace('\n', ' ').replace('\r', ' ')
+            except (ValueError, TypeError, json.JSONDecodeError):
+                pass
             self.send_response(204)
             self.end_headers()
             return
@@ -451,7 +481,11 @@ if __name__ == "__main__":
                 timed_out = page_seen.is_set() and now - last_heartbeat[0] >= HEARTBEAT_TIMEOUT
                 if timed_out:
                     request, request_time = last_request
+                    heartbeat_time, heartbeat_monotonic = last_received_heartbeat
                     detail = (f'heartbeats received: {heartbeat_count[0]}; '
+                              f'last heartbeat: {heartbeat_time or "none"}'
+                              + (f' ({now - heartbeat_monotonic:.1f}s ago)' if heartbeat_time else '')
+                              + f'; browser send time of last heartbeat received: {last_heartbeat_sent[0] or "unknown"}; '
                               f'last request: {request or "none"}'
                               + (f' ({now - request_time:.1f}s ago)' if request else ''))
             if timed_out:
@@ -477,4 +511,4 @@ if __name__ == "__main__":
     finally:
         stop_watcher.set()
         server.server_close()
-        record_shutdown(shutdown_reason[0])
+        record_event(shutdown_reason[0])
