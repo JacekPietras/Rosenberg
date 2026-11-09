@@ -5,6 +5,9 @@ if (localRefresh) {
   const diagnosticKey = 'rosenberg-heartbeat-diagnostic';
   const sentKey = 'rosenberg-heartbeat-last-sent';
   const historyKey = 'rosenberg-heartbeat-history';
+  const heartbeatUrl = new URL('/api/heartbeat', window.location.href);
+  if (heartbeatUrl.hostname === 'localhost') heartbeatUrl.hostname = '127.0.0.1';
+  else if (heartbeatUrl.hostname === '127.0.0.1') heartbeatUrl.hostname = 'localhost';
   const saveDiagnostic = (message) => {
     console.error(message);
     try { localStorage.setItem(diagnosticKey, `${new Date().toISOString()} ${message}`); } catch {}
@@ -48,8 +51,8 @@ if (localRefresh) {
           history.push(`${sentAt} ${document.visibilityState}`);
           sessionStorage.setItem(historyKey, JSON.stringify(history.slice(-80)));
         } catch {}
-        return fetch('/api/heartbeat', {
-          method: 'POST', keepalive: true, headers: { 'Content-Type': 'application/json' },
+        return fetch(heartbeatUrl.href, {
+          method: 'POST', keepalive: true, headers: { 'Content-Type': 'text/plain' },
           body: JSON.stringify({ sentAt }),
         }).then((result) => {
         if (!result.ok) throw new Error(`HTTP ${result.status}`);

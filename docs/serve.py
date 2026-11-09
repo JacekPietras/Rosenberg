@@ -373,6 +373,13 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             except (ValueError, TypeError, json.JSONDecodeError):
                 pass
             self.send_response(204)
+            origin = self.headers.get('Origin', '')
+            allowed_origins = {f'http://localhost:{self.server.server_port}',
+                               f'http://127.0.0.1:{self.server.server_port}'}
+            if self.server.server_port == 80:
+                allowed_origins.update(('http://localhost', 'http://127.0.0.1'))
+            if origin in allowed_origins:
+                self.send_header('Access-Control-Allow-Origin', origin)
             self.end_headers()
             return
         if self.path.split("?", 1)[0] == "/api/save-and-push":

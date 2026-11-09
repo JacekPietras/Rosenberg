@@ -130,6 +130,28 @@ Regesta Imperii URLs can be HTML record links, persistent `/id/` links, or CEI
 REST source links. Review the generated entry before using it as a completed
 document record.
 
+### Batch document label triage
+
+`scripts/triage_documents.py` conservatively proposes branch labels from
+explicit personal-name forms in document text. It recognizes Schenk, Mönch,
+Rorschach, and Wok/Vok von Rosenberg attestations, named Rosenberg residences
+at Boxberg, Haltenbergstetten, Schüpf, or Bartenstein, and the modern Orsini-
+Rosenberg house. The last case proposes `deleted: true` and removes only the
+managed family labels. It leaves mixed branch signals and indirect/place-only
+mentions alone. URLs are excluded from matching. The default scans only active
+`to review` documents and prints each candidate; it does not write files.
+
+```text
+python3 scripts/triage_documents.py
+python3 scripts/triage_documents.py --limit 20
+python3 scripts/triage_documents.py --all-labels
+python3 scripts/triage_documents.py --apply
+```
+
+`--apply` writes only the document's `label` and, for the Orsini-Rosenberg
+house, `deleted` field. Review the dry-run candidates first. Remaining records
+are summarized by archive hostname and decade to support further triage.
+
 ### Search archives
 
 Archive search scripts are in `scripts/archive_search/`. For example:
