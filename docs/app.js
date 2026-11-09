@@ -4,6 +4,7 @@ const localRefresh = document.querySelector('#local-refresh');
 if (localRefresh) {
   const diagnosticKey = 'rosenberg-heartbeat-diagnostic';
   const sentKey = 'rosenberg-heartbeat-last-sent';
+  const historyKey = 'rosenberg-heartbeat-history';
   const saveDiagnostic = (message) => {
     console.error(message);
     try { localStorage.setItem(diagnosticKey, `${new Date().toISOString()} ${message}`); } catch {}
@@ -20,24 +21,46 @@ if (localRefresh) {
   };
   const flushDiagnostic = () => flushStored(diagnosticKey);
   const flushLastSent = () => flushStored(sentKey, 'Last heartbeat attempted by browser: ');
+  const flushHistory = async () => {
+    try {
+      const history = sessionStorage.getItem(historyKey);
+      if (!history) return;
+      const response = await fetch('/api/heartbeat-diagnostics', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: `Browser heartbeat attempts (UTC, visibility): ${history}` }),
+      });
+      if (response.ok && sessionStorage.getItem(historyKey) === history) sessionStorage.removeItem(historyKey);
+    } catch {}
+  };
   fetch('/api/local-server', { cache: 'no-store' }).then((response) => {
     if (response.ok) {
       localRefresh.hidden = false;
       flushDiagnostic();
       flushLastSent();
+      flushHistory();
       let heartbeatFailed = false;
+      let lastHeartbeatResponse = performance.now();
       const heartbeat = () => {
         const sentAt = new Date().toISOString();
         try { localStorage.setItem(sentKey, sentAt); } catch {}
+        try {
+          const history = JSON.parse(sessionStorage.getItem(historyKey) || '[]');
+          history.push(`${sentAt} ${document.visibilityState}`);
+          sessionStorage.setItem(historyKey, JSON.stringify(history.slice(-80)));
+        } catch {}
         return fetch('/api/heartbeat', {
           method: 'POST', keepalive: true, headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ sentAt }),
         }).then((result) => {
         if (!result.ok) throw new Error(`HTTP ${result.status}`);
+        const responseGap = performance.now() - lastHeartbeatResponse;
+        lastHeartbeatResponse = performance.now();
+        if (responseGap >= 20000) flushHistory();
         if (heartbeatFailed) {
           console.info('Local server heartbeat recovered.');
           flushDiagnostic();
           flushLastSent();
+          flushHistory();
         }
         heartbeatFailed = false;
       }).catch((error) => {
