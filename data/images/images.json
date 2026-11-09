@@ -2936,7 +2936,7 @@
       "placeId": "muenzesheim-st-martin",
       "source": "https://drive.google.com/file/d/1rQxqwCxGWUKpVjQGjsMN5JjeBlpMDRTU/view — https://commons.wikimedia.org/wiki/File:Kunigunde_Hofwart_v._Kirchheim_geb._v._Rosenberg.jpeg — Historical photograph: Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe, 498-1 Nr. 7305 (1913): https://www.landesarchiv-bw.de/plink/?f=4-1084497",
       "description": "Photograph by Wikimedia Commons user Hofwart, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). The inscription records 1 March 1545.",
-      "url": "https://drive.google.com/thumbnail?id=1rQxqwCxGWUKpVjQGjsMN5JjeBlpMDRTU&sz=w1600",
+      "url": "https://drive.google.com/drive/folders/1usHBja6IOEQSn1-pxLKp7-2Gw9QMNe28",
       "regions": [
         {
           "x": 0.17,
@@ -2960,7 +2960,9 @@
           "diedOn": "1545-03-01",
           "date": "1545-03-01"
         }
-      ]
+      ],
+      "type": "link",
+      "coverImage": "https://drive.google.com/thumbnail?id=1rQxqwCxGWUKpVjQGjsMN5JjeBlpMDRTU&sz=w1600"
     },
     {
       "title": "Bönnigheim Cyriakuskirche, double monument of Albrecht von Liebenstein and Margaretha, born von Rosenberg",
