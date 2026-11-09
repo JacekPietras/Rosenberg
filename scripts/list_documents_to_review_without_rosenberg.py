@@ -96,10 +96,10 @@ def main():
 
         snippets = mention_snippets(document, name_pattern, args.context)
         print(path.relative_to(repo_root))
-        if snippets:
+        if args.context and snippets:
             for snippet in snippets:
                 print(f"    {snippet}")
-        elif not args.strict and not has_any_name:
+        elif args.context and not args.strict and not has_any_name:
             print("    No Rosenberg")
 
 
