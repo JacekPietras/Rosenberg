@@ -8,10 +8,31 @@ SCRIPTS = Path(__file__).resolve().parents[1] / 'scripts'
 sys.path.insert(0, str(SCRIPTS / 'archive_records'))
 sys.path.insert(0, str(SCRIPTS / 'archive_search'))
 from archive_record_gda_resolver import resolve
-from archive_record_gda_bayern import RecordFields, field_values, iso_date
+from archive_record_gda_bayern import RecordFields, create_record, field_values, iso_date, seal_sections
 
 
 class ResolverTests(unittest.TestCase):
+    def test_seal_section_excludes_other_description_fields(self):
+        description = ('Beschreibstoff: Pergament\nSiegler bzw. Siegel: S 1: Bischof, besch.\n'
+                       'S 2: Konrad von Rosenberg, fehlt\nMaße: 20 cm')
+        self.assertEqual(seal_sections(description),
+                         ['Siegler bzw. Siegel: S 1: Bischof, besch.\nS 2: Konrad von Rosenberg, fehlt'])
+        self.assertEqual(seal_sections('Beschreibstoff: Pergament'), [])
+
+    def test_import_includes_duplicate_seal_section_only_once(self):
+        url = 'https://www.gda.bayern.de/gvl/document/6e42910b-9ede-45ce-8f68-9068ba1d1875'
+        description = 'Beschreibstoff: Pergament\nSiegler bzw. Siegel: S 1: Bischof\nS 2: Konrad, fehlt\nMaße: 20 cm'
+        page = ('<td data-label="Laufzeit">1454 Dezember 20</td>'
+                '<td data-label="Bestellsignatur">StAWü, Urkunde</td>'
+                '<td data-label="Betreff">Inhalt</td>'
+                + 2 * f'<td data-label="Äußere Beschreibung">{description}</td>')
+        with patch('archive_record_gda_bayern.fetch', return_value=page), \
+             patch('archive_record_gda_bayern.image_urls', return_value=[]), \
+             patch('archive_record_storage.save_record', return_value=(Path('record.json'), False)) as save:
+            create_record(url)
+        self.assertEqual(save.call_args.args[0]['entries'][0]['german'],
+                         'Inhalt\n\nSiegler bzw. Siegel: S 1: Bischof\nS 2: Konrad, fehlt')
+
     def test_mobile_fields_and_german_date(self):
         fields = RecordFields()
         fields.feed('<td data-label="Laufzeit">1341 Mai <span>12</span></td>'

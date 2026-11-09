@@ -98,6 +98,27 @@ def strip_rtf(value: str) -> str:
     return "\n".join(line.strip() for line in value.splitlines() if line.strip())
 
 
+def seal_sections(value: str) -> list[str]:
+    """Extract seal sections, stopping at the next descriptive subfield."""
+    lines = strip_rtf(value).splitlines()
+    sections: list[str] = []
+    current: list[str] = []
+    for line in lines:
+        if re.match(r"^Siegler(?:\s+bzw\.\s+Siegel)?\s*:|^Siegel\s*:", line, re.I):
+            if current:
+                sections.append("\n".join(current))
+            current = [line]
+        elif re.match(r"^[^:\d]+:\s*", line):
+            if current:
+                sections.append("\n".join(current))
+                current = []
+        elif current:
+            current.append(line)
+    if current:
+        sections.append("\n".join(current))
+    return sections
+
+
 def iso_date(laufzeit: str) -> str:
     """Convert the catalog's common German date forms to ISO precision."""
     value = laufzeit.strip()
@@ -205,7 +226,10 @@ def create_record(url: str) -> tuple[Path, bool]:
     if not citations:
         raise ValueError("The GDA page has no Bestellsignatur field")
 
-    german = "\n\n".join(strip_rtf(value) for value in descriptions)
+    sections = [strip_rtf(value) for value in descriptions]
+    sections.extend(section for value in field_values(parser, "Äußere Beschreibung")
+                    for section in seal_sections(value))
+    german = "\n\n".join(dict.fromkeys(section for section in sections if section))
     date = iso_date(laufzeit[0])
     generated_entry: dict[str, object] = {"source": citations[0], "url": url}
     if german:

@@ -48,6 +48,10 @@ class Fields(HTMLParser):
         self.previous_label = ""
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "br":
+            if self.in_value:
+                self.current_value.append("\n")
+            return
         classes = set((dict(attrs).get("class") or "").split())
         if tag == "div" and "row" in classes:
             self.in_row = True
@@ -73,6 +77,8 @@ class Fields(HTMLParser):
             self.current_value.append(data)
 
     def handle_endtag(self, tag: str) -> None:
+        if tag == "br":
+            return
         if tag == "div" and self.in_highlighting_area:
             self.in_highlighting_area = False
         if self.in_label:
@@ -84,7 +90,7 @@ class Fields(HTMLParser):
             if self.value_depth <= 0:
                 self.in_value = False
                 label = " ".join("".join(self.current_label).split()).rstrip(":")
-                value = " ".join("".join(self.current_value).split())
+                value = "\n".join(" ".join(line.split()) for line in "".join(self.current_value).split("\n")).strip()
                 if label:
                     self.previous_label = label
                 elif (self.previous_label.casefold().startswith(("enthält", "includes", "zeugen"))):

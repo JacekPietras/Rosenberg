@@ -13,6 +13,14 @@ import archive_record_arcinsys_hessen as downloader
 
 
 class SearchTests(unittest.TestCase):
+    def test_detail_field_preserves_html_line_breaks(self):
+        fields = downloader.Fields()
+        fields.feed('<div class="row"><span class="d-none">(Voll-) Regest</span>'
+                    '<div class="highlightingArea">27.) Sifrit von <b>Rosenberg</b><br/>'
+                    '28.) Johann Holzemer<br>  Next line  </div></div>')
+        self.assertEqual(fields.fields['(Voll-) Regest'],
+                         ['27.) Sifrit von Rosenberg\n28.) Johann Holzemer\nNext line'])
+
     def test_dotted_datierung_keeps_day_month_and_year(self):
         self.assertEqual(downloader.iso_date('31.08.1444'), '1444-08-31')
 
