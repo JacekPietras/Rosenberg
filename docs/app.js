@@ -38,6 +38,10 @@ if (localRefresh) {
   fetch('/api/local-server', { cache: 'no-store' }).then((response) => {
     if (response.ok) {
       localRefresh.hidden = false;
+      fetch('/api/heartbeat-diagnostics', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: `Heartbeat URL selected by page ${window.location.origin}: ${heartbeatUrl.href}` }),
+      }).catch(() => {});
       flushDiagnostic();
       flushLastSent();
       flushHistory();

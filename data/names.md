@@ -32,7 +32,7 @@ Franz, Franziskus
 Friedmann
 Friedrich, Friderich, Fridrich, Fridericus, Friderici, Friderico, Fritz, Fritze, Friz, Frize, Frederick
 Frizo
-Georg, Gorg, Jörg
+Georg, Gorg, Jörg, Jorge
 Gerhard, Gerhardus
 Gotfried, Godefrid, Gottfried
 Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
@@ -156,5 +156,5 @@ Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele, Wyklo
 
 # Other
 
-Mönch, Münch, Munch, Mönich, Monich, Münchin, Mönchin // it derives from "Monk"
+Mönch, Münch, Munch, Mönich, Monich, Münchin, Mönchin, Muench // it derives from "Monk"
 Schenk

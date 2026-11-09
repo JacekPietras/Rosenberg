@@ -24,6 +24,7 @@ last_heartbeat = [0.0]
 heartbeat_count = [0]
 last_received_heartbeat = [None, 0.0]
 last_heartbeat_sent = [None]
+heartbeat_hosts = set()
 last_request = [None, 0.0]
 activity_lock = threading.Lock()
 page_seen = threading.Event()
@@ -92,12 +93,17 @@ class ViewerHandler(SimpleHTTPRequestHandler):
         path = self.path.split("?", 1)[0]
         now = time.monotonic()
         gap = None
+        new_heartbeat_host = None
         with activity_lock:
             last_request[:] = [f'{self.command} {path}', now]
             if path in ('/docs/', '/docs/index.html') and self.command == 'GET':
                 last_heartbeat[0] = now
                 page_seen.set()
             elif path == '/api/heartbeat' and self.command == 'POST':
+                host = self.headers.get('Host', '<missing>')
+                if host not in heartbeat_hosts:
+                    heartbeat_hosts.add(host)
+                    new_heartbeat_host = host
                 if last_received_heartbeat[0] and now - last_received_heartbeat[1] >= 20:
                     gap = now - last_received_heartbeat[1]
                 last_heartbeat[0] = now
@@ -106,6 +112,8 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 page_seen.set()
         if gap is not None:
             record_event(f'heartbeat reception resumed after {gap:.1f}s gap')
+        if new_heartbeat_host is not None:
+            record_event(f'heartbeat received at host: {new_heartbeat_host}')
 
     def end_headers(self):
         self.send_header("Cache-Control", "no-store")
