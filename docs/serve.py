@@ -19,6 +19,7 @@ from urllib.request import Request, urlopen
 import webbrowser
 
 ROOT = Path(__file__).resolve().parent.parent
+HEARTBEAT_TIMEOUT = 20
 last_heartbeat = [0.0]
 heartbeat_count = [0]
 last_received_heartbeat = [None, 0.0]
@@ -26,6 +27,7 @@ last_heartbeat_sent = [None]
 last_request = [None, 0.0]
 activity_lock = threading.Lock()
 page_seen = threading.Event()
+stop_watcher = threading.Event()
 family_rebuild_lock = threading.Lock()
 family_rebuild_status = {'active': False, 'stage': ''}
 family_rebuild_status_lock = threading.Lock()
@@ -477,12 +479,32 @@ if __name__ == "__main__":
     if not os.environ.get("ROSENBERG_NO_OPEN"):
         webbrowser.open(url)
 
+    def watch_heartbeat():
+        while not stop_watcher.wait(0.25):
+            with activity_lock:
+                now = time.monotonic()
+                timed_out = page_seen.is_set() and now - last_heartbeat[0] >= HEARTBEAT_TIMEOUT
+                if timed_out:
+                    request, request_time = last_request
+                    heartbeat_time, heartbeat_monotonic = last_received_heartbeat
+                    detail = (f'heartbeats received: {heartbeat_count[0]}; '
+                              f'last heartbeat: {heartbeat_time or "none"}'
+                              + (f' ({now - heartbeat_monotonic:.1f}s ago)' if heartbeat_time else '')
+                              + f'; browser send time of last heartbeat received: {last_heartbeat_sent[0] or "unknown"}; '
+                              f'last request: {request or "none"}'
+                              + (f' ({now - request_time:.1f}s ago)' if request else ''))
+            if timed_out:
+                shutdown_reason[0] = f'no viewer heartbeat for {HEARTBEAT_TIMEOUT}s; {detail}'
+                server.shutdown()
+                return
+
     def handle_signal(signum, _frame):
         shutdown_reason[0] = f'received {signal.Signals(signum).name}'
         raise ServerSignal()
 
     signal.signal(signal.SIGINT, handle_signal)
     signal.signal(signal.SIGTERM, handle_signal)
+    threading.Thread(target=watch_heartbeat, daemon=True).start()
     try:
         server.serve_forever()
     except ServerSignal:
@@ -491,5 +513,6 @@ if __name__ == "__main__":
         shutdown_reason[0] = f'unexpected {type(error).__name__}: {error}'
         raise
     finally:
+        stop_watcher.set()
         server.server_close()
         record_event(shutdown_reason[0])

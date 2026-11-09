@@ -39,10 +39,10 @@ verification.
 The viewer is published at <https://jacekpietras.github.io/Rosenberg/> (read-only). 
 For local testing and modifications under <http://localhost:8000/docs/>, run `./server`
 
-The local server stays running until stopped or restarted. It appends shutdown
-reasons and UTC timestamps to `server.log` in the repository root, including
-viewer-requested restarts, termination signals, and unexpected errors. A forced
-kill or power loss cannot be recorded by the server.
+The local server stops after 20 seconds without a viewer heartbeat. It appends
+shutdown reasons and UTC timestamps to `server.log` in the repository root,
+including heartbeat timeouts, viewer-requested restarts, termination signals,
+and unexpected errors. A forced kill or power loss cannot be recorded by the server.
 
 ## Family Graph
 
