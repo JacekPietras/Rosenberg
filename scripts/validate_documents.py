@@ -18,6 +18,11 @@ ENTRY_FIELDS = ("source", "url", "summary", "german", "latin", "english", "facts
 SOURCE_SUFFIX = " (http://www.klaster.vyssibrod.cz)"
 LANDESARCHIV_BW_HTTP_PREFIX = "http://www.landesarchiv-bw.de/plink/"
 LANDESARCHIV_BW_HTTPS_PREFIX = "https://www.landesarchiv-bw.de/plink/"
+REMOVABLE_GERMAN_BOILERPLATE = re.compile(
+    r"\n\n(?:Formalbeschreibung: Ausfertigung"
+    r"|Besiegelung/Beglaubigung: S anhängend"
+    r"|Format: \d+\s*x\s*\d+\s*cm)(?=\n|$)"
+)
 
 
 def collect_files(paths):
@@ -115,6 +120,12 @@ def order_document(document):
         for entry in entries:
             if isinstance(entry, dict):
                 cleaned_entry = dict(entry)
+                german = cleaned_entry.get("german")
+                if isinstance(german, str):
+                    cleaned_german = REMOVABLE_GERMAN_BOILERPLATE.sub("", german)
+                    if cleaned_german != german:
+                        cleaned_entry["german"] = cleaned_german
+                        changed = True
                 source = cleaned_entry.get("source")
                 if isinstance(source, str) and SOURCE_SUFFIX in source:
                     cleaned_entry["source"] = source.replace(SOURCE_SUFFIX, "")
