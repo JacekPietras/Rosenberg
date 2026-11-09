@@ -229,6 +229,8 @@ def create_record(url: str) -> tuple[Path, bool]:
     sections = [strip_rtf(value) for value in descriptions]
     sections.extend(section for value in field_values(parser, "Äußere Beschreibung")
                     for section in seal_sections(value))
+    sections.extend(f"Besiegelung/Beglaubigung: {strip_rtf(value)}"
+                    for value in field_values(parser, "Besiegelung/Beglaubigung"))
     german = "\n\n".join(dict.fromkeys(section for section in sections if section))
     date = iso_date(laufzeit[0])
     generated_entry: dict[str, object] = {"source": citations[0], "url": url}

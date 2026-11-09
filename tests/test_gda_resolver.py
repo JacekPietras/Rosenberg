@@ -40,6 +40,19 @@ class ResolverTests(unittest.TestCase):
         self.assertEqual(list(dict.fromkeys(field_values(fields, 'Laufzeit'))), ['1341 Mai 12'])
         self.assertEqual(iso_date(field_values(fields, 'Laufzeit')[0]), '1341-05-12')
 
+    def test_import_includes_separate_sealing_field_once(self):
+        url = 'https://www.gda.bayern.de/gvl/document/1dc4f41a-126d-4b5a-98c3-c02f6bb16ac8'
+        page = ('<td data-label="Laufzeit">1521 Februar 6</td>'
+                '<td data-label="Bestellsignatur">StAWü, Urkunde</td>'
+                '<td data-label="Betreff">Inhalt</td>'
+                + 2 * '<td data-label="Besiegelung/Beglaubigung:">Friedrich von Rosenberg, fehlt</td>')
+        with patch('archive_record_gda_bayern.fetch', return_value=page), \
+             patch('archive_record_gda_bayern.image_urls', return_value=[]), \
+             patch('archive_record_storage.save_record', return_value=(Path('record.json'), False)) as save:
+            create_record(url)
+        self.assertEqual(save.call_args.args[0]['entries'][0]['german'],
+                         'Inhalt\n\nBesiegelung/Beglaubigung: Friedrich von Rosenberg, fehlt')
+
     def root(self):
         return ET.fromstring('<cei><archIdentifier>Staatsarchiv Würzburg'
             '<idno>Kloster Urkunden 1341 Mai 12</idno>'
