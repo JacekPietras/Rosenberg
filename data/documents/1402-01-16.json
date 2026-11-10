@@ -9,15 +9,12 @@
       "english": "Cunrat Rorensteter, sitting in judgment at Kallmünz in place of the Ritter Ulreich Lantschad, Vitzthum zu Amberg, renews and confirms for Abbess Elizabeth of St. Paul's a charter according to which Cunrat von Rosenberg, Vitztum zu Amberg, on the Monday after St. Bartholomew's day 1369, pronounced that if anyone were to sell or pledge any of the goods belonging to the house of God of St. Paul's there without the abbess's consent, this should have no force. Given on the Monday before St. Anthony.",
       "facts": [
         {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vitztum zu Amberg"
-          ],
+          vitztum_zu_Heidelberg
           "type": "title",
           "date": "1369-08-27"
         },
         {
-          "person": "Konrad von Rosenberg",
+          "person": "vitztum_zu_Heidelberg",
           "personTitle": [
             "Vitztum zu Amberg"
           ],

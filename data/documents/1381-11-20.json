@@ -8,7 +8,18 @@
       "german": "A1: Ulrich Wolntzhofer, Bürger zu Amberg\nA2: Philipp Reich, Bürger zu Amberg   \nE: Hans der Kastner d. Ä., Bürger zu Amberg\nVerkauf des Fischwassers zu Theuern an der Vils als freies Eigen.\n\nBesiegelung/Beglaubigung: \tS1: A1, S2: A2, S3: Konrad von Rosenberg, Viztum zu Amberg",
       "img": [
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/2971666b-33a4-4f84-9f2e-b388565ba1bf/1/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/2971666b-33a4-4f84-9f2e-b388565ba1bf/1/full/max/0/default.jpg",
+          "seals": [
+            {
+              "person": "vitztum_zu_Heidelberg",
+              "position": "0.4759,0.8361",
+              "size": 0.14400000000000004,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": -16,
+              "type": "full"
+            }
+          ]
         },
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/2971666b-33a4-4f84-9f2e-b388565ba1bf/2/full/max/0/default.jpg",
