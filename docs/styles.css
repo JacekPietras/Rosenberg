@@ -139,7 +139,10 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .record-review-status { color: var(--muted); font-size: .8rem; }
 .record-label-edit { display: inline-grid; width: 1.65rem; height: 1.65rem; place-items: center; padding: .25rem; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
 .record-label-edit:hover, .record-label-edit:focus-visible { color: var(--accent); background: var(--surface-raised); }
+.record-label-edit.record-delete:hover, .record-label-edit.record-delete:focus-visible { color: #d14343; }
+.record-label-edit:disabled { opacity: .55; cursor: wait; }
 .record-label-edit svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.record-delete-status { color: var(--muted); font-size: .8rem; }
 .record-label { padding: .2rem .5rem; color: #fff; background: #b42332; border-radius: 4px; font-size: .68rem; font-weight: 750; letter-spacing: .08em; line-height: 1.2; text-transform: uppercase; white-space: nowrap; }
 .label-sidebar .record-filter { position: relative; }
 .label-sidebar .record-filter-include { color: var(--accent); background: var(--accent-soft); }

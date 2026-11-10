@@ -34,6 +34,28 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
   };
 
   document.addEventListener('click', async (event) => {
+    const deleteDocumentButton = event.target.closest('[data-delete-document]');
+    if (deleteDocumentButton) {
+      const path = deleteDocumentButton.dataset.deleteDocument;
+      const original = state.documents.get(path);
+      if (!original || !state.canEditDocuments || !path.startsWith('data/documents/')) return;
+      const updated = { ...original, deleted: true };
+      const controls = deleteDocumentButton.closest('.document-heading-aside');
+      const status = controls?.querySelector('.record-delete-status');
+      deleteDocumentButton.disabled = true;
+      if (status) status.textContent = 'Saving…';
+      try {
+        const result = await repository.saveDocument(path, updated);
+        state.documents.set(path, updated);
+        markSaved(path, result.version);
+        await rerender();
+      } catch (error) {
+        if (status) status.textContent = `Could not save: ${error.message}`;
+        deleteDocumentButton.disabled = false;
+      }
+      return;
+    }
+
     const reviewButton = event.target.closest('[data-review-action]');
     if (reviewButton) {
       const path = reviewButton.dataset.reviewPath;

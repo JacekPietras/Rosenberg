@@ -73,9 +73,12 @@ export function createDocumentRenderer({
     const labelEditor = state.canEditDocuments && path.startsWith('data/documents/')
       ? `<button class="record-label-edit" type="button" data-edit-record-labels="${escapeHtml(path)}" aria-label="Edit record labels" title="Edit labels"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg></button>`
       : '';
+    const deleteButton = labelEditor
+      ? `<button class="record-label-edit record-delete" type="button" data-delete-document="${escapeHtml(path)}" aria-label="Delete document" title="Delete document"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2m3 0-1 14H6L5 6m4 4v6m6-6v6"/></svg></button>`
+      : '';
     const reviewActions = state.active === 'documents' && state.canEditDocuments && path.startsWith('data/documents/') && labelKeys.includes('to review')
       ? `<div class="record-review-actions"><button type="button" data-review-action="keep" data-review-path="${escapeHtml(path)}">Keep</button><button type="button" data-review-action="delete" data-review-path="${escapeHtml(path)}">Delete</button></div><span class="record-review-status" role="status"></span>` : '';
-    const headingAside = labels.length || date || labelEditor ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => `<span class="record-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}</div>${reviewActions}${date}</div>` : '';
+    const headingAside = labels.length || date || labelEditor ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => `<span class="record-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}${deleteButton}</div>${reviewActions}<span class="record-delete-status" role="status" aria-live="polite"></span>${date}</div>` : '';
     const url = doc.url ? urlMarkup(doc.url) : '';
     const year = documentYear(doc);
     const anchor = year ? ` id="year-${year}-${index}"` : '';
