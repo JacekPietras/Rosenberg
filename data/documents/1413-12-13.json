@@ -1,6 +1,6 @@
 {
   "date": "1413-12-13",
-  "label": "to review",
+  "label": "Franken",
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, Losungamt, 35 neue Laden, Urkunden 2123 (archival old reference: 89/1)",
@@ -22,10 +22,22 @@
       ],
       "img": [
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/300e75a0-ed72-40f3-a13e-ca31276a767c/1/full/4183,/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/300e75a0-ed72-40f3-a13e-ca31276a767c/1/full/4183,/0/default.jpg",
+          "seals": [
+            {
+              "person": "Hans von Rosenberg",
+              "position": "0.6024,0.6470",
+              "size": 0.06449999999999999,
+              "width": 0.23,
+              "wideningRotation": 36,
+              "rotation": -10,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/300e75a0-ed72-40f3-a13e-ca31276a767c/2/full/4183,/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/300e75a0-ed72-40f3-a13e-ca31276a767c/2/full/4183,/0/default.jpg",
+          "deleted": true
         }
       ]
     }

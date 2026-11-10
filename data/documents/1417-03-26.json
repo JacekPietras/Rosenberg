@@ -1,6 +1,6 @@
 {
   "date": "1417-03-26",
-  "label": "to review",
+  "label": "Franken",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 3348",
@@ -8,13 +8,26 @@
       "german": "Götz von Rosenberg, Edelknecht, verkauft an Heinrich Brun von Külsheim, Dechanten des Kapitels Taubergau und Pfarrer zu Werbach, 4 Morgen Äcker und Wiesen in der Au zwischen Hochhausen und Impfingen um 40 Gulden und 25 Tournosen.\n\nLaufzeit: 1417 März 26 (1417 Freitag nach Laetare)",
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001743494%2F04_0001743494_0001_4-1743494-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001743494%2F04_0001743494_0001_4-1743494-1.jpg",
+          "seals": [
+            {
+              "person": "Götz von Rosenberg",
+              "position": "0.3540,0.8123",
+              "size": 0.0715,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001743494%2F04_0001743494_0002_4-1743494-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001743494%2F04_0001743494_0002_4-1743494-2.jpg",
+          "deleted": true
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001743494%2F04_0001743494_0003_4-1743494-3.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001743494%2F04_0001743494_0003_4-1743494-3.jpg",
+          "deleted": true
         }
       ]
     }

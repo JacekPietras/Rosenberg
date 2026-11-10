@@ -1,6 +1,6 @@
 {
   "date": "1439-05-06",
-  "label": "to review",
+  "label": "Franken",
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg B 264 a U 9",
@@ -22,10 +22,22 @@
       ],
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5317&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005317%2Ftitlaufn_0001087421%2F02_0001087421_0001_2-1087421-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5317&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005317%2Ftitlaufn_0001087421%2F02_0001087421_0001_2-1087421-1.jpg",
+          "seals": [
+            {
+              "person": "Eberhard von Rosenberg",
+              "position": "0.4173,0.7779",
+              "size": 0.0855,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5317&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005317%2Ftitlaufn_0001087421%2F02_0001087421_0002_2-1087421-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5317&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005317%2Ftitlaufn_0001087421%2F02_0001087421_0002_2-1087421-2.jpg",
+          "deleted": true
         }
       ]
     }

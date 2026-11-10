@@ -9,10 +9,22 @@
       "english": "Thoman von Rosenberg, Ritter, issued a receipt to the city of Nuremberg for 99 florins awarded to him by Margrave Albrecht of Brandenburg and Ritter Wilhelm von Rechberg as arbitrators.",
       "img": [
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/5d68e398-399a-42f1-9db4-4ac877a7c809/1/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/5d68e398-399a-42f1-9db4-4ac877a7c809/1/full/max/0/default.jpg",
+          "seals": [
+            {
+              "person": "Thomas von Rosenberg",
+              "position": "0.4474,0.4469",
+              "size": 0.071,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": -13,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/5d68e398-399a-42f1-9db4-4ac877a7c809/2/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/5d68e398-399a-42f1-9db4-4ac877a7c809/2/full/max/0/default.jpg",
+          "deleted": true
         }
       ]
     }

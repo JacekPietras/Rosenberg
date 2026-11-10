@@ -1,6 +1,6 @@
 {
   "date": "1437-04-22",
-  "label": "to review",
+  "label": "Czechia",
   "entries": [
     {
       "source": "Hochstift Passau Urkunden, 1646",
@@ -11,7 +11,8 @@
           "src": "https://images.monasterium.net/pics/DE-BayHStA/HUPassau/BayHStA-HUPassau_14370422_01646_r.jpg"
         },
         {
-          "src": "https://images.monasterium.net/pics/DE-BayHStA/HUPassau/BayHStA-HUPassau_14370422_01646_v.jpg"
+          "src": "https://images.monasterium.net/pics/DE-BayHStA/HUPassau/BayHStA-HUPassau_14370422_01646_v.jpg",
+          "deleted": true
         }
       ]
     }
