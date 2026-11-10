@@ -11,13 +11,15 @@
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_24_F_17350801_r.JPG"
         },
         {
-          "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_24_F_17350801_v.JPG"
+          "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_24_F_17350801_v.JPG",
+          "deleted": true
         },
         {
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_24a_F_17350816_r.JPG"
         },
         {
-          "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_24a_F_17350816_v.JPG"
+          "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_24a_F_17350816_v.JPG",
+          "deleted": true
         }
       ]
     }
