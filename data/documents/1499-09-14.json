@@ -28,7 +28,18 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/6adeefaa-c870-462e-8475-a49d75ac3149/1/full/max/0/default.jpg"
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/6adeefaa-c870-462e-8475-a49d75ac3149/2/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/6adeefaa-c870-462e-8475-a49d75ac3149/2/full/max/0/default.jpg",
+          "seals": [
+            {
+              "person": "Michael von Rosenberg",
+              "position": "0.6983,0.3452",
+              "size": 0.08,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/6adeefaa-c870-462e-8475-a49d75ac3149/3/full/max/0/default.jpg"

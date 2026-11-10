@@ -13,10 +13,12 @@
           "src": "https://images.monasterium.net/img/DE-StaASpeyer/1U/StASpeyer_1U_15200208_443_r-1.JPG"
         },
         {
-          "src": "https://images.monasterium.net/img/DE-StaASpeyer/1U/StASpeyer_1U_15200208_443_r-2.JPG"
+          "src": "https://images.monasterium.net/img/DE-StaASpeyer/1U/StASpeyer_1U_15200208_443_r-2.JPG",
+          "deleted": true
         },
         {
-          "src": "https://images.monasterium.net/img/DE-StaASpeyer/1U/StASpeyer_1U_15200208_443_v.JPG"
+          "src": "https://images.monasterium.net/img/DE-StaASpeyer/1U/StASpeyer_1U_15200208_443_v.JPG",
+          "deleted": true
         }
       ]
     }

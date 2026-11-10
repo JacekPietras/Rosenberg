@@ -10,7 +10,18 @@
       "german": "Gegenbrief des Priesters Leonhard Pfeuffer für Herrn Burkhart von Seckendorff Aberdar, DO-Komtur zu Virnnsperg, über die ihm verliehene Pfarrei Ergerssheim. - Siegler: Ritter Asimes von Rosenberg.",
       "img": [
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/db8d17ad-dbb0-4def-835a-745c7ee9c91f/1/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/db8d17ad-dbb0-4def-835a-745c7ee9c91f/1/full/max/0/default.jpg",
+          "seals": [
+            {
+              "person": "Anselm von Rosenberg",
+              "position": "0.4991,0.5771",
+              "size": 0.08,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/db8d17ad-dbb0-4def-835a-745c7ee9c91f/2/full/max/0/default.jpg"

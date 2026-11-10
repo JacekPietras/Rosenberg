@@ -1,8 +1,6 @@
 {
   "date": "1506-03-26",
-  "label": [
-    "to review"
-  ],
+  "label": "new",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 4768",
@@ -10,13 +8,35 @@
       "german": "Elchana von Rosenberg geb. von Riedern stiftet in Erfüllung des letzten Willens ihres verstorbenen Ehemannes Konrad von Rosenberg eine wöchentliche Messe in der Pfarrkirche daselbst und dotiert diese mit Fruchtzinsen von ihrem Hof zu Rosenberg.",
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001781903%2F04_0001781903_0001_4-1781903-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001781903%2F04_0001781903_0001_4-1781903-1.jpg",
+          "seals": [
+            {
+              "person": "?",
+              "position": "0.5049,0.8711",
+              "size": 0.08,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            },
+            {
+              "person": "?",
+              "position": "0.6734,0.8232",
+              "size": 0.08,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001781903%2F04_0001781903_0002_4-1781903-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001781903%2F04_0001781903_0002_4-1781903-2.jpg",
+          "deleted": true
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001781903%2F04_0001781903_0003_4-1781903-3.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001781903%2F04_0001781903_0003_4-1781903-3.jpg",
+          "deleted": true
         }
       ]
     }

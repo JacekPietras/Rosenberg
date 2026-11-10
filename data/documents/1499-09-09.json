@@ -1,8 +1,6 @@
 {
   "date": "1499-09-09",
-  "label": [
-    "to review"
-  ],
+  "label": "new",
   "entries": [
     {
       "source": [
@@ -16,16 +14,30 @@
       "german": "Johann von Lamberg, Domdekan, Ruprecht Auer, Domherr, Michael von Rosenberg, Hofmeister zu Freising, und Warmund von Fraunberg zum Hubenstein, Pfleger, alle vier Regenten und Räte des Pfalzgrafen Philipp, Administrators zu Freising, bestätigen den \"Eyssnern aus dem eyssennärtztt zu Selltzach (= Selzach; Selca)\" die diesem von den drei Bischöfen Albrecht (Albert II.), Nicodemus und Sixtus von Freising verliehenen Privilegien, jedoch vorbehaltlich der jährlich aus ihren Schmieden zu leistenden Dienste und Zinsen an den bischöflichen Kasten zu Lack („Lagk); S 1: Johann von Lamberg; S 2: Ruprecht Auer; S 3: Michael von Rosenberg; S 4: Warmund von Fraunberg zum Hubenstein\n\nSiegel: vier an Presseln anhängende Siegel",
       "img": [
         {
-          "src": "http://images.monasterium.net/img/DE-BayHStA/HochstiftFreising/1ec6872b-273f-4c03-affd-8d9ac358283e/1ec6872b-273f-4c03-affd-8d9ac358283e_0001.jpg"
+          "src": "http://images.monasterium.net/img/DE-BayHStA/HochstiftFreising/1ec6872b-273f-4c03-affd-8d9ac358283e/1ec6872b-273f-4c03-affd-8d9ac358283e_0001.jpg",
+          "seals": [
+            {
+              "person": "Michael von Rosenberg",
+              "position": "0.4623,0.8465",
+              "size": 0.13200000000000003,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "http://images.monasterium.net/img/DE-BayHStA/HochstiftFreising/1ec6872b-273f-4c03-affd-8d9ac358283e/1ec6872b-273f-4c03-affd-8d9ac358283e_0002.jpg"
+          "src": "http://images.monasterium.net/img/DE-BayHStA/HochstiftFreising/1ec6872b-273f-4c03-affd-8d9ac358283e/1ec6872b-273f-4c03-affd-8d9ac358283e_0002.jpg",
+          "deleted": true
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/1ec6872b-273f-4c03-affd-8d9ac358283e/1/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/1ec6872b-273f-4c03-affd-8d9ac358283e/1/full/max/0/default.jpg",
+          "deleted": true
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/1ec6872b-273f-4c03-affd-8d9ac358283e/2/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/1ec6872b-273f-4c03-affd-8d9ac358283e/2/full/max/0/default.jpg",
+          "deleted": true
         }
       ]
     }
