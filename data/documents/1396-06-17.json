@@ -3,15 +3,16 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StiftsA St.Gallen, QQ.1.C.37., 6807.",
-      "url": "https://www.monasterium.net/mom/CSGXI/6807./charter",
-      "german": "Rudolf von Rosenberg stellt dem Abt Rudolf von St.Johann im Thurtal einen Revers aus für vier verpfändete Knechte.\n\nSiegel: Siegel Abb.775.",
+      "source": ["Stiftsarchiv St. Gallen, QQ1 C37", "StiftsA St.Gallen, QQ.1.C.37., 6807."],
+      "url": ["https://www.monasterium.net/mom/CH-StiASG/Urkunden/QQ1_C37/charter","https://www.monasterium.net/mom/CSGXI/6807./charter"],
+      "german": "Rudolf von Rosenberg stellt dem Abt Rudolf von St.Johann im Thurtal einen Revers aus für vier verpfändete Knechte.\n\nSiegel: Siegel Abb.775.\n\nRuedi von Rosenberg erhält von Abt Rudolf von St.Johann vier Knechte in Versatz als Pfand für 4 Pfund Heller.\n\nSiegel: 1 S.",
       "img": [
         {
-          "src": "https://images.monasterium.net/pics/Collections/CSG-XI/StiASG_13960617_QQ1-C37_r.jpg"
+          "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_13960617_QQ1-C37_r.jpg"
         },
         {
-          "src": "https://images.monasterium.net/pics/Collections/CSG-XI/StiASG_13960617_QQ1-C37_v.jpg"
+          "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_13960617_QQ1-C37_v.jpg",
+          "deleted": true
         }
       ]
     }
