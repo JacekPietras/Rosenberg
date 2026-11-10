@@ -1,8 +1,6 @@
 {
   "date": "1535-09-02",
-  "label": [
-    "to review"
-  ],
+  "label": "new",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 3333",
@@ -10,7 +8,27 @@
       "german": "Lorenz von Rosenberg und Hans von Riedern vermitteln einen Vertrag zwischen Heinrich von Pappenheim, Deutsch-Ordens-Komtur zu Mergentheim, und Christoph von Rosenberg wegen streitiger Güter zu Hirschlanden.\n\nLaufzeit: 1535 September 2 (Donnerstag nach Aegidius 1535)",
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001743358%2F04_0001743358_0001_4-1743358-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001743358%2F04_0001743358_0001_4-1743358-1.jpg",
+          "seals": [
+            {
+              "person": "?",
+              "position": "0.3031,0.8370",
+              "size": 0.08,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            },
+            {
+              "person": "?",
+              "position": "0.6845,0.8308",
+              "size": 0.08,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001743358%2F04_0001743358_0002_4-1743358-2.jpg"
