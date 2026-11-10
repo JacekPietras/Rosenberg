@@ -1,8 +1,6 @@
 {
   "date": "1345-07-22",
-  "label": [
-    "to review"
-  ],
+  "label": "Czechia",
   "entries": [
     {
       "source": "Stiftsarchiv Zwettl (http://www.stift-zwettl.at), 1345 VII 22",
@@ -13,7 +11,8 @@
           "src": "https://images.monasterium.net/pics/166/K.._MOM-Bilddateien._%7EZwettljpgweb._%7E1300-1399._%7EStAZ__13450722.jpg"
         },
         {
-          "src": "https://images.monasterium.net/pics/166/K.._MOM-Bilddateien._%7EZwettljpgweb._%7E1300-1399._%7EStAZ__13450722v.jpg"
+          "src": "https://images.monasterium.net/pics/166/K.._MOM-Bilddateien._%7EZwettljpgweb._%7E1300-1399._%7EStAZ__13450722v.jpg",
+          "deleted": true
         }
       ]
     }
