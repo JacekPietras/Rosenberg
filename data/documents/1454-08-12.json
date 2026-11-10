@@ -1,6 +1,6 @@
 {
   "date": "1454-08-12",
-  "label": "to review",
+  "label": "Franken",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 38 Nr. 433",
@@ -8,13 +8,26 @@
       "german": "Gompolt von Giltlingen, Gompolts sel. Sohn, und Els von Rosenberg, seine Stiefmutter, des Hans von Helmstatt, Endris sel. Sohns, eheliche Hausfrau, verkaufen an Markgraf Bernhard II. von Baden ihre zwei Dörfer Wulfrichingen [Wilferdingen] und Darmsbach mit aller Zugehör um 1.765 rhein. Gulden\n\nLaufzeit: 1454 August 12 (Geben uf Montag nach St. Laurentientag 1454)",
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3190&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003190%2Ftitlaufn_0001437372%2F04_0001437372_0001_4-1437372-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3190&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003190%2Ftitlaufn_0001437372%2F04_0001437372_0001_4-1437372-1.jpg",
+          "seals": [
+            {
+              "person": "Els von Rosenberg",
+              "position": "0.3615,0.9037",
+              "size": 0.061499999999999985,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "contrepalle"
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3190&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003190%2Ftitlaufn_0001437372%2F04_0001437372_0002_4-1437372-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3190&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003190%2Ftitlaufn_0001437372%2F04_0001437372_0002_4-1437372-2.jpg",
+          "deleted": true
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3190&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003190%2Ftitlaufn_0001437372%2F04_0001437372_0003_4-1437372-3.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3190&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003190%2Ftitlaufn_0001437372%2F04_0001437372_0003_4-1437372-3.jpg",
+          "deleted": true
         }
       ]
     }

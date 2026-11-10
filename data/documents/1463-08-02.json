@@ -1,6 +1,6 @@
 {
   "date": "1463-08-02",
-  "label": "to review",
+  "label": "Franken",
   "entries": [
     {
       "source": "SALI C 38, I C 38",
@@ -11,7 +11,8 @@
           "src": "https://images.monasterium.net/img/DE-StaALohr/Urkunden/1463_08_02_IC38.jpg"
         },
         {
-          "src": "https://images.monasterium.net/img/DE-StaALohr/Urkunden/1463_08_02_IC38_Rs.jpg"
+          "src": "https://images.monasterium.net/img/DE-StaALohr/Urkunden/1463_08_02_IC38_Rs.jpg",
+          "deleted": true
         }
       ]
     }

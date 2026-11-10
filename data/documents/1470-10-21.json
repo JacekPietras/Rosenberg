@@ -11,7 +11,8 @@
           "src": "https://digitalisate.frankfurt.de:443/isg_ffm/h.06.08/1113/isg_ffm_h.06.08_nr_1113_0001.jpg"
         },
         {
-          "src": "https://digitalisate.frankfurt.de:443/isg_ffm/h.06.08/1113/isg_ffm_h.06.08_nr_1113_0002.jpg"
+          "src": "https://digitalisate.frankfurt.de:443/isg_ffm/h.06.08/1113/isg_ffm_h.06.08_nr_1113_0002.jpg",
+          "deleted": true
         }
       ]
     }

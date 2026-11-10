@@ -18,7 +18,8 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/6e42910b-9ede-45ce-8f68-9068ba1d1875/1/full/max/0/default.jpg"
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/6e42910b-9ede-45ce-8f68-9068ba1d1875/2/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/6e42910b-9ede-45ce-8f68-9068ba1d1875/2/full/max/0/default.jpg",
+          "deleted": true
         }
       ]
     }

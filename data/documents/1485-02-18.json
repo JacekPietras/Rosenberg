@@ -1,6 +1,6 @@
 {
   "date": "1485-02-18",
-  "label": "to review",
+  "label": "Franken",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 2155",
@@ -8,13 +8,44 @@
       "german": "Michael von Rosenberg und seine Ehefrau Agnes bekennen, Philipp Hambrecht, Altaristen zu Grünsfeld, 100 Gulden schuldig zu sein.\n\nLaufzeit: 1485 Februar 18 (Freitag nach Esto Mihi 1485)",
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001744848%2F04_0001744848_0001_4-1744848-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001744848%2F04_0001744848_0001_4-1744848-1.jpg",
+          "seals": [
+            {
+              "person": "?",
+              "position": "0.3272,0.8057",
+              "size": 0.0745,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            },
+            {
+              "person": "?",
+              "position": "0.4365,0.7915",
+              "size": 0.0705,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            },
+            {
+              "person": "?",
+              "position": "0.6465,0.8063",
+              "size": 0.08,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001744848%2F04_0001744848_0002_4-1744848-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001744848%2F04_0001744848_0002_4-1744848-2.jpg",
+          "deleted": true
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001744848%2F04_0001744848_0003_4-1744848-3.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001744848%2F04_0001744848_0003_4-1744848-3.jpg",
+          "deleted": true
         }
       ]
     }
