@@ -10,10 +10,22 @@
       "german": "Prünner Hans, derzeit zu Burgberg bei Crailsheim, verkauft an Heinrich von Ellrichshausen sein Gut (Haus, Garten und 3 Viertel Acker) zu Jagstheim um 20 rheinische Gulden.\n\nLaufzeit: 1473 Januar 30 (Sa v. Lichtmeß)\n\nSiegler: Friedrich von Rosenberg; Linhart von Wollmershausen",
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4892&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000004892%2Ftitlaufn_0002131807%2F02_0002131807_0001_2-2131807-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4892&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000004892%2Ftitlaufn_0002131807%2F02_0002131807_0001_2-2131807-1.jpg",
+          "seals": [
+            {
+              "person": "?",
+              "position": "0.3478,0.8990",
+              "size": 0.08,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4892&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000004892%2Ftitlaufn_0002131807%2F02_0002131807_0002_2-2131807-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4892&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000004892%2Ftitlaufn_0002131807%2F02_0002131807_0002_2-2131807-2.jpg",
+          "deleted": true
         }
       ]
     }
