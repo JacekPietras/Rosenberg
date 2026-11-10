@@ -1,6 +1,6 @@
 {
   "date": "1376-12-13",
-  "label": "to review",
+  "label": "Czechia",
   "entries": [
     {
       "source": "Stiftsarchiv St. Florian (www.stift-st-florian.at), 1376 XII 13",
@@ -11,7 +11,8 @@
           "src": "https://images.monasterium.net/pics/66/K.._MOM-Bilddateien._%7EStFlorianjpgweb._%7EUrkunden._%7E1300-1399._%7EStAStFlorian_13761213.jpg"
         },
         {
-          "src": "https://images.monasterium.net/pics/66/K.._MOM-Bilddateien._%7EStFlorianjpgweb._%7EUrkunden._%7E1300-1399._%7EStAStFlorian_13761213_v.jpg"
+          "src": "https://images.monasterium.net/pics/66/K.._MOM-Bilddateien._%7EStFlorianjpgweb._%7EUrkunden._%7E1300-1399._%7EStAStFlorian_13761213_v.jpg",
+          "deleted": true
         }
       ]
     }
