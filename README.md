@@ -154,6 +154,8 @@ are summarized by archive hostname and decade to support further triage.
 
 ### Exploratory Kev label benchmark
 
+See [KEV.md](KEV.md) for this Mac's setup, startup, API usage, and queue commands.
+
 `scripts/kev_benchmark.py` sends source text from document JSONL cases to a
 local Kev `/v1/systemone` server. Each document is evaluated independently for
 the seven categories `franconian`, `schenk`, `monch`, `rorschach`, `czech`,
@@ -191,6 +193,40 @@ and actual server model configuration still match. Raw responses and model
 cards are retained with request IDs. Confidence figures
 are exploratory and not validated for this corpus. Oversized states and other
 HTTP errors are recorded; source documents are never modified.
+
+The local pilot's frozen prompt, source checks, validation assessment, and
+audit receipts live under the ignored `reports/kev-improvement/` directory.
+Once the validation gate passes, `python3 scripts/kev_process_review_queue.py
+--apply` scores the remaining active review documents locally and applies
+only the enabled family labels. Without `--apply`, it only scores and checks
+proposals. It checks source and frozen artifact hashes, preserves all other
+document fields, and performs no deletions. `backlog-status.json` records the
+current stage and final counts; `backlog-progress.log` records scoring progress.
+The job is resumable. Keep the local Kev server running until it completes.
+
+### Kev family classification
+
+`scripts/kev_classify_documents.py` provides a reusable dry scorer for a single
+nine-way family choice. It accepts scored JSONL cases or, by default, scans only
+active `to review` documents. The model receives date, place, citations, titles,
+and complete German/Latin/English/summary text; labels, facts, guesses, and URLs
+are excluded. It writes resumable, append-only JSONL with source and prompt
+fingerprints, model identity, exact input hash/length, raw response, choice, and
+probabilities. Errors are recorded and retried on a later run. It never applies
+labels.
+
+```text
+python3 scripts/kev_classify_documents.py --cases reports/kev-benchmark/cases-scored.jsonl --config reports/kev-improvement/frozen-config.json --output reports/kev-improvement/results.jsonl
+python3 scripts/kev_classify_documents.py --documents-dir data/documents --limit 20
+```
+
+The frozen prompt and development selection are documented in
+`reports/kev-improvement/selection.md`.
+
+`scripts/kev_apply_labels.py` can consume a parent-approved validation gate
+artifact and classifier JSONL. It defaults to a dry run and writes JSONL audit
+receipts. `--apply` is required to update only eligible top-level document
+labels; source text, facts, and nested fields are checked and preserved.
 
 ### Search archives
 
