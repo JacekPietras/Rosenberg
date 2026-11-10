@@ -1,8 +1,6 @@
 {
   "date": "1489-03-24",
-  "label": [
-    "to review"
-  ],
+  "label": "new",
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg B 207 U 636",
@@ -10,10 +8,22 @@
       "german": "Hans Märsch der Ältere von Einsingen (Insingen) verkauft an den Trißler Georg Werner zu Ulm 9 Jauchert Acker samt der Hecke daselbst um 100 Gulden.\n\nLaufzeit: 1489 März 24 (Aftermontag nach Oculi)\n\nSiegler: Arnold von Rosenberg; Hans von Westernach",
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1236&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001236%2Ftitlaufn_0005342376%2F02_0005342376_0001_2-5342376-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1236&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001236%2Ftitlaufn_0005342376%2F02_0005342376_0001_2-5342376-1.jpg",
+          "seals": [
+            {
+              "person": "Arnold von Rosenberg",
+              "position": "0.3638,0.7817",
+              "size": 0.08,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1236&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001236%2Ftitlaufn_0005342376%2F02_0005342376_0002_2-5342376-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1236&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001236%2Ftitlaufn_0005342376%2F02_0005342376_0002_2-5342376-2.jpg",
+          "deleted": true
         }
       ]
     }

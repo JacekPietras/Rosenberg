@@ -13,10 +13,12 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/94/1970/hstam_94_nr_1970_0001.jpg"
         },
         {
-          "src": "https://digitalisate-he.arcinsys.de/hstam/94/1970/hstam_94_nr_1970_0002.jpg"
+          "src": "https://digitalisate-he.arcinsys.de/hstam/94/1970/hstam_94_nr_1970_0002.jpg",
+          "deleted": true
         },
         {
-          "src": "https://digitalisate-he.arcinsys.de/hstam/94/1970/hstam_94_nr_1970_0003.jpg"
+          "src": "https://digitalisate-he.arcinsys.de/hstam/94/1970/hstam_94_nr_1970_0003.jpg",
+          "deleted": true
         }
       ]
     }
