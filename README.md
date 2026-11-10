@@ -152,6 +152,46 @@ python3 scripts/triage_documents.py --apply
 house, `deleted` field. Review the dry-run candidates first. Remaining records
 are summarized by archive hostname and decade to support further triage.
 
+### Exploratory Kev label benchmark
+
+`scripts/kev_benchmark.py` sends source text from document JSONL cases to a
+local Kev `/v1/systemone` server. Each document is evaluated independently for
+the seven categories `franconian`, `schenk`, `monch`, `rorschach`, `czech`,
+`orsini`, and `unrelated`. The six family categories may overlap; `unrelated`
+means none of those families is substantively relevant and cannot coexist with
+a positive family category. Place or surname mentions alone do not establish
+family relevance. Cases contain
+`path` and `expected` fields, with optional `id`, `note`, and `source_quote`.
+The runner reads source text, citations, and document date/place, never
+existing labels, facts, guesses, or model decisions.
+
+```text
+python3 scripts/kev_benchmark.py --cases /path/to/cases.jsonl
+python3 scripts/kev_benchmark.py --cases /path/to/cases.jsonl --model kev-latest --limit 10
+```
+
+For this local pilot, start `scripts/run_kev_local.sh` from a normal macOS
+Terminal so Kev can access Metal. The isolated runtime and model cache are
+under `/private/tmp/rosenberg-kev` and `/private/tmp/rosenberg-kev-models`;
+temporary directories may be cleared by the operating system. The launcher
+binds only `127.0.0.1:8009` and pins `jaredpalmer/kev-4b@v1.0`.
+
+The prepared 100-case pilot is in the ignored local directory
+`reports/kev-benchmark/cases.jsonl`, with setup provenance in `setup.json`.
+These are Luna-curated reference labels, not human-verified ground truth or
+a representative sample of ambiguous records. Run it with
+`python3 scripts/kev_benchmark.py --cases reports/kev-benchmark/cases.jsonl --output reports/kev-benchmark/results.jsonl`.
+
+The default server is `http://127.0.0.1:8009`; `--output` selects the resumable
+JSONL result file (default `/tmp/rosenberg-kev-benchmark.jsonl`). A sidecar
+`.summary.json` reports accuracy and confusion at 0.5, Brier score, and
+exploratory abstention coverage/error at several thresholds. Results resume
+only when the source fingerprint, full question/reference definition, case ID,
+and actual server model configuration still match. Raw responses and model
+cards are retained with request IDs. Confidence figures
+are exploratory and not validated for this corpus. Oversized states and other
+HTTP errors are recorded; source documents are never modified.
+
 ### Search archives
 
 Archive search scripts are in `scripts/archive_search/`. For example:

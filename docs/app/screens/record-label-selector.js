@@ -7,7 +7,7 @@ function labelsFor(document) {
     .filter(Boolean);
 }
 
-export function setupRecordLabelSelector({ state, repository, rerender, escapeHtml }) {
+export function setupRecordLabelSelector({ state, repository, rerender, escapeHtml, markSaved = () => {} }) {
   let activePath = null;
   let dialog = document.getElementById(SELECTOR_ID);
   if (!dialog) {
@@ -51,9 +51,9 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
       controls.querySelectorAll('[data-review-action]').forEach((button) => { button.disabled = true; });
       status.textContent = 'Saving…';
       try {
-        await repository.saveDocument(path, updated);
+        const result = await repository.saveDocument(path, updated);
         state.documents.set(path, updated);
-        state.snapshot = '';
+        markSaved(path, result.version);
         await rerender();
       } catch (error) {
         status.textContent = `Could not save: ${error.message}`;
@@ -95,9 +95,9 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
     status.classList.remove('error');
     dialog.querySelectorAll('button').forEach((button) => { button.disabled = true; });
     try {
-      await repository.saveDocument(activePath, updated);
+      const result = await repository.saveDocument(activePath, updated);
       state.documents.set(activePath, updated);
-      state.snapshot = '';
+      markSaved(activePath, result.version);
       close();
       await rerender();
     } catch (error) {

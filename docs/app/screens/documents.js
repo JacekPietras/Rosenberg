@@ -26,7 +26,13 @@ export function createDocumentRenderer({
     ...rossenbergSpellings.flatMap((name) => [`Mönch\\s+von(?:\\s|<[^>]*>)*${name}`, `Münch\\s+von(?:\\s|<[^>]*>)*${name}`, `Munch\\s+von(?:\\s|<[^>]*>)*${name}`, `Mönich\\s+von(?:\\s|<[^>]*>)*${name}`, `Monich\\s+von(?:\\s|<[^>]*>)*${name}`]),
   ];
   const targetNamePattern = new RegExp(`(${targetNames.sort((a, b) => b.length - a.length).join('|')})`, 'giu');
-  const highlightTargetNames = (markup) => String(markup).replace(targetNamePattern, (name) => name
+  const rosenbergVariations = ['Rosenberg', 'Rosinberg', 'Rosemberg', 'Rossenberg', 'Rosenbergs', 'Roßenberg', 'Rosenberch', 'Rosemberch', 'Rosenburgk', 'Rossberg', 'Rusenberg', 'Roßberg', 'Rosperg', 'Rosenperg', 'Rosenbergk', 'Rosenberger', 'Rosenburg', 'Rosenerg', 'Rosennberg', 'Rosenbach'];
+  const rosenbergPattern = new RegExp(`(?<![\\p{L}\\p{N}])(${rosenbergVariations.sort((a, b) => b.length - a.length).join('|')})(?![\\p{L}\\p{N}])`, 'giu');
+  const highlightRosenberg = (markup) => String(markup).replace(rosenbergPattern, (name) => name
+    .split(/(<[^>]*>)/g)
+    .map((part) => part.startsWith('<') ? part : `<span class="target-family-name">${part}</span>`)
+    .join(''));
+  const highlightTargetNames = (markup) => String(markup).replace(targetNamePattern, (name) => name.includes('class="target-family-name"') ? name : name
     .split(/(<[^>]*>)/g)
     .map((part) => part.startsWith('<') ? part : `<span class="target-family-name">${part}</span>`)
     .join(''));
@@ -44,7 +50,7 @@ export function createDocumentRenderer({
       inlineMarkup,
       defaultDate,
     }) : '';
-    return highlightTargetNames(`<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}</article>`);
+    return highlightTargetNames(`<article class="entry"${anchor}>${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, (markup, language) => language === 'german' ? highlightRosenberg(markup) : markup) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}</article>`);
   }
 
   function bookSections(entries) {

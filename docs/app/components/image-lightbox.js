@@ -4,7 +4,7 @@ import { positionSealCrop } from './seal-annotations.js';
 
 const SEAL_TYPES = new Set(['contrepalle', 'swans', 'helm', 'full', 'woman']);
 
-export function setupImageLightbox({ state, repository, rerender }) {
+export function setupImageLightbox({ state, repository, rerender, markSaved = () => {} }) {
   const $ = (selector) => document.querySelector(selector);
   const lightbox = $('#image-lightbox');
   const image = $('#image-lightbox-image');
@@ -270,7 +270,7 @@ export function setupImageLightbox({ state, repository, rerender }) {
     const operation = saveQueue.then(async () => {
       const document = state.documents.get(context.path); const entry = document?.entries?.[Number(context.entryIndex)];
       if (entry) (Array.isArray(entry.img) ? entry.img : [entry.img]).forEach((item) => { if (item && typeof item === 'object' && Array.isArray(item.seals) && !item.seals.length) delete item.seals; });
-      try { setStatus('Saving…'); await repository.saveDocument(context.path, document); state.snapshot = ''; setStatus(''); return true; }
+      try { setStatus('Saving…'); const result = await repository.saveDocument(context.path, document); markSaved(context.path, result.version); setStatus(''); return true; }
       catch (error) {
         console.error(`Failed to save image annotations in ${context.path}`, error);
         setStatus(error?.message || String(error), true);
@@ -376,8 +376,8 @@ export function setupImageLightbox({ state, repository, rerender }) {
     collectionLinks.entry.coverImage = source;
     if (editable) try {
       setStatus('Saving cover…');
-      await repository.saveDocument(state.manifest.images, state.documents.get(state.manifest.images));
-      state.snapshot = '';
+      const result = await repository.saveDocument(state.manifest.images, state.documents.get(state.manifest.images));
+      markSaved(state.manifest.images, result.version);
       setStatus('');
     } catch (error) {
       collectionLinks.index = previousIndex;

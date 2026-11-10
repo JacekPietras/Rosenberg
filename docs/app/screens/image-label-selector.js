@@ -3,7 +3,7 @@ import { imageLabels } from '../image-labels.js';
 const SELECTOR_ID = 'image-label-selector';
 const IMAGE_PATH = 'data/images/images.json';
 
-export function setupImageLabelSelector({ state, repository, rerender, escapeHtml }) {
+export function setupImageLabelSelector({ state, repository, rerender, escapeHtml, markSaved = () => {} }) {
   let activeIndex = null;
   let dialog = document.getElementById(SELECTOR_ID);
   if (!dialog) {
@@ -75,9 +75,9 @@ export function setupImageLabelSelector({ state, repository, rerender, escapeHtm
     status.classList.remove('error');
     dialog.querySelectorAll('button').forEach((button) => { button.disabled = true; });
     try {
-      await repository.saveDocument(IMAGE_PATH, updated);
+      const result = await repository.saveDocument(IMAGE_PATH, updated);
       state.documents.set(IMAGE_PATH, updated);
-      state.snapshot = '';
+      markSaved(IMAGE_PATH, result.version);
       close();
       await rerender();
     } catch (error) {

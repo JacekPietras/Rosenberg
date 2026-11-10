@@ -5,8 +5,8 @@ import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=124';
 import { renderActiveScreen } from './screens/router-view.js?v=14';
 import { createDocumentRenderer } from './screens/documents.js?v=10';
-import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=2';
-import { setupImageLabelSelector } from './screens/image-label-selector.js?v=2';
+import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=3';
+import { setupImageLabelSelector } from './screens/image-label-selector.js?v=3';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=88';
 import { createSealScreen } from './screens/seals.js?v=3';
 import { createImageScreen } from './screens/images.js?v=38';
@@ -16,7 +16,7 @@ import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';
 import { createMapScreen } from './screens/map.js?v=85';
-import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=129';
+import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=130';
 import { createMarkupRenderer } from './rendering/markup.js?v=96';
 import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=17';
 import { sortByDate } from './image-date-sort.js?v=2';
@@ -24,6 +24,7 @@ import { documentTitle, documentYear, bookSortYear } from './rendering/document-
 import { createLanguageRenderer } from './rendering/languages.js';
 import { createCitationIndex } from './data/citations.js';
 import { entryAnchor, documentNavigationUrl } from './rendering/navigation.js';
+import { markSavedSnapshot } from './state/snapshot.js';
 import { keepEntryInView } from './components/entry-scroll.js';
 import { hrrBuildWarp as buildMapWarp, hrrBuildInverseWarp as buildInverseMapWarp, hrrCalibrationKeys as mapCalibrationKeys, HRR_MAP_NATIVE_WIDTH as mapNativeWidth, HRR_MAP_NATIVE_HEIGHT as mapNativeHeight } from './map/warp.js';
 
@@ -757,8 +758,8 @@ function setupImageLightboxLegacy() {
       }
       try {
         setSaveStatus('Saving…');
-        await repository.saveDocument(context.path, state.documents.get(context.path));
-        state.snapshot = '';
+        const result = await repository.saveDocument(context.path, state.documents.get(context.path));
+        markSavedSnapshot(state, context.path, result.version);
         return true;
       } catch (error) {
         setSaveStatus(error.message, true);
@@ -1506,9 +1507,9 @@ async function refreshIfChanged() {
 
 setupControls({ state, repository, updateLanguageControl, updateFactsControl, applyTheme, applyMermaidTheme, savePreferences, rerender: renderActive });
 
-setupImageLightboxComponent({ state, repository, rerender: renderActive });
-setupRecordLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
-setupImageLabelSelector({ state, repository, rerender: renderActive, escapeHtml });
+setupImageLightboxComponent({ state, repository, rerender: renderActive, markSaved: (path, version) => markSavedSnapshot(state, path, version) });
+setupRecordLabelSelector({ state, repository, rerender: renderActive, escapeHtml, markSaved: (path, version) => markSavedSnapshot(state, path, version) });
+setupImageLabelSelector({ state, repository, rerender: renderActive, escapeHtml, markSaved: (path, version) => markSavedSnapshot(state, path, version) });
 repository.isLocalServer().then((isLocal) => {
   state.canEditDocuments = isLocal;
   if (isLocal && state.manifest) renderActive();
