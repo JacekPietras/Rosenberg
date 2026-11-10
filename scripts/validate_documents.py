@@ -88,6 +88,10 @@ def reorder_fields(value, field_order):
 def order_document(document):
     changed = False
     reordered = reorder_fields(document, DOCUMENT_FIELDS)
+    labels = reordered.get("label")
+    if isinstance(labels, list) and len(labels) == 1:
+        reordered["label"] = labels[0]
+        changed = True
     if reordered.get("deleted") == "true":
         reordered["deleted"] = True
         changed = True
@@ -220,6 +224,19 @@ def main(argv=None):
             if isinstance(labels, str):
                 labels = [labels]
             if isinstance(labels, list) and {"Czechia", "Schenk", "Mönch"}.intersection(labels):
+                document, reordered = order_document(document)
+                if reordered:
+                    try:
+                        original = path.read_text(encoding="utf-8")
+                        trailing_newline = original.endswith("\n")
+                        updated = json.dumps(document, ensure_ascii=False, indent=2)
+                        if trailing_newline:
+                            updated += "\n"
+                        path.write_text(updated, encoding="utf-8")
+                        print(f"{display_path(path)}: reordered document fields")
+                    except (OSError, UnicodeError) as exc:
+                        print(f"{display_path(path)}: error: cannot reorder fields: {exc}")
+                        errors += 1
                 continue
 
         if isinstance(document, dict):

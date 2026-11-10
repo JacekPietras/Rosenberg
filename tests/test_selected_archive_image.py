@@ -114,6 +114,16 @@ class SelectionTests(unittest.TestCase):
         with self.assertRaises(DownloadError):
             resolve(url, FakeClient(), page=2)
 
+    def test_landesarchiv_nrw_strips_broken_iiif_suffix(self):
+        base = ("https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/"
+                "LAV_NRW_R_AA_0030_00039_0001.jpg")
+        broken = base + "/full/max/0/default.jpg"
+        image = resolve(broken, FakeClient())
+        self.assertEqual(base, image.image_url)
+        self.assertEqual("LAV_NRW_R_AA_0030_00039_0001.jpg", image.filename)
+        with self.assertRaises(DownloadError):
+            resolve(broken, FakeClient(), page=2)
+
     def test_loc_uses_resource_sequence_and_largest_jpeg(self):
         url = "https://www.loc.gov/resource/rbc.2011rosen0017/?sp=2"
         api = "https://www.loc.gov/resource/rbc.2011rosen0017/?fo=json"

@@ -188,6 +188,19 @@ def landesarchiv_bw(url, client, folio, page):
                  notes=[f"Selected catalog image: {selected}"])
 
 
+def landesarchiv_nrw(url, client, folio, page):
+    """Use the direct JPEG; NRW's appended IIIF-style path currently returns 404."""
+    if folio or page is not None:
+        raise DownloadError("Landesarchiv NRW needs the exact selected image URL")
+    parts = urlsplit(url)
+    match = re.fullmatch(r"(.+?\.jpe?g)(?:/full/max/0/default\.jpg)?", parts.path, re.I)
+    if not match or "/data02/" not in match[1]:
+        raise DownloadError("Expected a Landesarchiv NRW data02 image URL")
+    image_url = f"{parts.scheme}://{parts.netloc}{match[1]}"
+    return Image(url, image_url, Path(match[1]).name,
+                 notes=["Uses the direct catalog JPEG; the appended /full/max/0/default.jpg endpoint returns 404."])
+
+
 
 class PageParser(HTMLParser):
     def __init__(self) -> None:
@@ -466,7 +479,8 @@ def loc(url, client, folio, page):
 
 HANDLERS = {"archive.org": archive_org, "digi.vatlib.it": vatican,
             "digital.blb-karlsruhe.de": blb, "dlib.gnm.de": gnm, "loc.gov": loc,
-            "bavarikon.de": bavarikon, "www2.landesarchiv-bw.de": landesarchiv_bw}
+            "bavarikon.de": bavarikon, "www2.landesarchiv-bw.de": landesarchiv_bw,
+            "landesarchiv-nrw.de": landesarchiv_nrw}
 
 
 def resolve(url, client, folio=None, page=None):
