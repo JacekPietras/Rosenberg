@@ -201,6 +201,33 @@ def landesarchiv_nrw(url, client, folio, page):
                  notes=["Uses the direct catalog JPEG; the appended /full/max/0/default.jpg endpoint returns 404."])
 
 
+def e_codices(url, client, folio, page):
+    """Resolve the selected e-codices page from its IIIF viewer data."""
+    if folio or page is not None:
+        raise DownloadError("e-codices needs the exact selected page in the viewer URL")
+    parts = urlsplit(url)
+    match = re.fullmatch(r"/(?:de|en|fr|it)/([a-z0-9]+)/([^/]+)/([^/]+)/?", parts.path)
+    if not match:
+        raise DownloadError("Expected an e-codices /LANG/COLLECTION/SHELF_MARK/PAGE URL")
+    text = client.text(url)
+    title_match = re.search(r"<title>(.*?)</title>", text, re.S | re.I)
+    viewer = re.search(r":viewer-data='(.*?)'", text, re.S)
+    if not viewer:
+        raise DownloadError("e-codices page does not expose viewer data")
+    data = json.loads(html.unescape(viewer[1]))
+    tile_sources = data.get("tileSources")
+    if not isinstance(tile_sources, list) or len(tile_sources) != 1:
+        raise DownloadError("Expected one selected e-codices page image")
+    info_url = tile_sources[0]
+    image_match = re.fullmatch(r"(https://media\.e-codices\.ch/iip/[^/]+/[^/]+/[^/]+\.jp2)/info\.json", info_url)
+    if not image_match:
+        raise DownloadError("e-codices selected page has an unexpected IIIF image URL")
+    page_label = data.get("breadcrumbData", {}).get("primaryManuscript", {}).get("page", {}).get("label", "")
+    name = Path(urlsplit(image_match[1]).path).name.removesuffix(".jp2") + ".jpg"
+    return Image(url, image_match[1] + "/full/max/0/default.jpg", name,
+                 title=plain(title_match[1]) if title_match else "", page=page_label)
+
+
 
 class PageParser(HTMLParser):
     def __init__(self) -> None:
@@ -479,6 +506,7 @@ def loc(url, client, folio, page):
 
 HANDLERS = {"archive.org": archive_org, "digi.vatlib.it": vatican,
             "digital.blb-karlsruhe.de": blb, "dlib.gnm.de": gnm, "loc.gov": loc,
+            "e-codices.unifr.ch": e_codices,
             "bavarikon.de": bavarikon, "www2.landesarchiv-bw.de": landesarchiv_bw,
             "landesarchiv-nrw.de": landesarchiv_nrw}
 

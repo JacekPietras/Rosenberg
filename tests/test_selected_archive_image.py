@@ -32,6 +32,20 @@ class FakeClient:
 
 
 class SelectionTests(unittest.TestCase):
+    def test_e_codices_uses_selected_viewer_tile_source(self):
+        url = "https://www.e-codices.unifr.ch/de/csg/1085/82"
+        viewer = {"tileSources": ["https://media.e-codices.ch/iip/csg/csg-1085/csg-1085_082.jp2/info.json"],
+                  "breadcrumbData": {"primaryManuscript": {"page": {"label": "p. 82"}}}}
+        client = FakeClient({url: "<title>Cod. Sang. 1085 — Wappenbuch</title>"
+                             "<div :viewer-data='" + json.dumps(viewer) + "'></div>"})
+        image = resolve(url, client)
+        self.assertEqual("https://media.e-codices.ch/iip/csg/csg-1085/csg-1085_082.jp2/full/max/0/default.jpg",
+                         image.image_url)
+        self.assertEqual("p. 82", image.page)
+        self.assertEqual("csg-1085_082.jpg", image.filename)
+        with self.assertRaises(DownloadError):
+            resolve(url, FakeClient({url: "<title>Missing viewer data</title>"}))
+
     def test_internet_archive_leaf_zero_and_sequence_conversion(self):
         url = "https://archive.org/details/book/page/n0/mode/1up"
         self.assertEqual("https://archive.org/download/book/page/n0.jpg",
