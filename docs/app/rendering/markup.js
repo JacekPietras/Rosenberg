@@ -43,7 +43,8 @@ export function createMarkupRenderer({ state }) {
   function inlineMarkup(value = '', linkEntities = true) {
     const renderPlainText = (plainText) => {
       const tokens = []; const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
-      let text = escapeHtml(plainText).replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => token(`<a href="${url}" target="_blank" rel="noreferrer">${linkedMarkup(label, linkEntities)}</a>`));
+      let text = escapeHtml(plainText).replace(/!\[([^\]]*)\]\((https?:\/\/[^)]+)\)/g, (_, alt, url) => token(`<img class="inline-title-image" src="${url}" alt="${alt}" loading="lazy" referrerpolicy="no-referrer">`));
+      text = text.replace(/\[\[([^\]]+)\]\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => token(`<a href="${url}" target="_blank" rel="noreferrer">${linkedMarkup(label, linkEntities)}</a>`));
       text = linkedMarkup(text, linkEntities).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
       return text.replace(/\u0000(\d+)\u0000/g, (match, index) => tokens[Number(index)] ?? match);
     };

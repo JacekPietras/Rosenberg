@@ -216,6 +216,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .entry { padding: .9rem 0; }
 .entry:first-of-type { padding-top: 0; }
 .entry-title, .source { margin: 0 0 .55rem; color: var(--muted); font-size: .78rem; font-weight: 650; letter-spacing: .02em; }
+.entry-title .inline-title-image, .document-heading .inline-title-image { width: 1.8rem; height: 1.8rem; object-fit: contain; vertical-align: middle; margin-right: .35rem; }
 .entry-subheading { margin: .8rem 0 .45rem; color: var(--ink); font-size: 1rem; font-weight: 650; }
 .entry-date { margin: -.3rem 0 .55rem; color: var(--faint); font-size: .76rem; }
 .source a { color: inherit; }
