@@ -1,11 +1,15 @@
 {
   "date": "1408-01-01/1411-10-18",
-  "label": ["to review", "Rorschach"],
+  "label": [
+    "to review",
+    "Rorschach"
+  ],
   "entries": [
     {
       "source": "StadtA Winterthur, URK 425., 8055",
       "url": "https://www.monasterium.net/mom/CSGXIII/8055/charter",
-      "german": "Rudolf von Rosenberg beurkundet, dass er anstelle seines verstorbenen Vaters für Abt Kuno und das Kloster St. Gallen Mitschuldner gegenüber Hans von Tengen geworden sei."
+      "german": "Rudolf von Rosenberg beurkundet, dass er anstelle seines verstorbenen Vaters für Abt Kuno und das Kloster St. Gallen Mitschuldner gegenüber Hans von Tengen geworden sei.",
+      "english": "Rudolf von Rosenberg certifies that he has become a co-obligor on behalf of his deceased father for Abbot Kuno and the monastery of St. Gall toward Hans von Tengen."
     }
   ]
 }
