@@ -10,6 +10,7 @@ export function createDocumentRenderer({
   inlineMarkup,
   urlMarkup,
   languageMarkup,
+  treeMarkup,
   imageMarkup,
   diagramMarkup,
   entryAnchor,
@@ -50,7 +51,8 @@ export function createDocumentRenderer({
       inlineMarkup,
       defaultDate,
     }) : '';
-    const content = `${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${subheading && entry.subheading ? `<h3 class="entry-subheading">${markdownLinks(entry.subheading)}</h3>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, (markup, language) => language === 'german' ? highlightRosenberg(markup) : markup) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}`;
+    const listRenderer = treeMarkup;
+    const content = `${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${subheading && entry.subheading ? `<h3 class="entry-subheading">${markdownLinks(entry.subheading)}</h3>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, (markup, language) => language === 'german' ? highlightRosenberg(markup) : markup, listRenderer) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}`;
     if (!content) return '';
     return highlightTargetNames(`<article class="entry"${anchor}>${content}</article>`);
   }

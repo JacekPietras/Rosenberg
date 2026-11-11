@@ -117,6 +117,10 @@ Latin letters as Unicode Fraktur, for example `` `Ebirhardus` `` renders as
 “𝔈𝔟𝔦𝔯𝔥𝔞𝔯𝔡𝔲𝔰”. The stored text keeps the backticks as the marker; digits,
 punctuation, and spaces inside the passage remain unchanged.
 
+For structured family lists, indent nested lines and start each item with `+`
+to display it as a connected tree. Use `*` or `-` for ordinary nested bullet
+lists.
+
 ## Book and notes JSON
 
 ```json

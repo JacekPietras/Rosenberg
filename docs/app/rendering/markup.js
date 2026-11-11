@@ -73,11 +73,46 @@ export function createMarkupRenderer({ state }) {
     closeLists(); return output.join('');
   }
 
+  function treeMarkup(value = '', linkEntities = true) {
+    const roots = [];
+    const stack = [];
+    let hasUnlistedText = false;
+    let hasTreeItems = false;
+    let hasOrdinaryItems = false;
+    String(value).split('\n').forEach((line) => {
+      const match = line.match(/^(\s*)([+*])\s+(.+)$/);
+      if (!match) { if (line.trim()) hasUnlistedText = true; return; }
+      if (match[2] === '+') hasTreeItems = true;
+      else hasOrdinaryItems = true;
+      const indent = match[1].replace(/\t/g, '  ').length;
+      const node = { text: match[3], children: [] };
+      while (stack.length && stack.at(-1).indent >= indent) stack.pop();
+      if (stack.length) stack.at(-1).node.children.push(node);
+      else roots.push(node);
+      stack.push({ indent, node });
+    });
+    if (hasUnlistedText || hasOrdinaryItems || !hasTreeItems) return markdownMarkup(value, linkEntities);
+    if (!roots.length) return markdownMarkup(value, linkEntities);
+    const rows = [];
+    const collect = (nodes, ancestors = [], rootLevel = false) => nodes.forEach((node, index) => {
+      const last = index === nodes.length - 1;
+      const branchClass = last ? 'tree-branch tree-branch-last' : 'tree-branch tree-branch-continues';
+      const branchText = '';
+      const prefix = rootLevel ? '' : `${ancestors.map((hasMore) => `<span class="${hasMore ? 'tree-continuation' : 'tree-empty'}"></span>`).join('')}<span class="${branchClass}">${branchText}</span>`;
+      const prefixDepth = rootLevel ? 0 : ancestors.length + 1;
+      rows.push(`<div class="tree-row" role="listitem" style="--tree-prefix-depth:${prefixDepth}"><span class="tree-prefix" aria-hidden="true">${prefix}</span><span class="tree-label">${inlineMarkup(node.text, linkEntities)}</span></div>`);
+      if (node.children.length) collect(node.children, rootLevel ? [] : [...ancestors, !last]);
+    });
+    collect(roots, [], true);
+    return `<div class="terminal-tree" role="list">${rows.join('')}</div>`;
+  }
+
   return {
     linkedMarkup,
     inlineMarkup,
     personMarkup,
     markdownMarkup,
+    treeMarkup,
     markdownLinks: (value = '') => Array.isArray(value) ? value.map((item) => `<span class="source-line">${inlineMarkup(item)}</span>`).join('') : inlineMarkup(value),
     diagramMarkup: (value = '') => { const source = String(value).replace(/^\s*```mermaid\s*\n?/, '').replace(/\n?\s*```\s*$/, '').trim(); return source ? `<div class="diagram mermaid">${escapeHtml(source)}</div>` : ''; },
   };

@@ -9,10 +9,10 @@ export function createLanguageRenderer({ state, markdownMarkup }) {
     return languages.length ? languages : available.slice(0, 1);
   }
 
-  function languageMarkup(entry, transformText = (markup) => markup) {
+  function languageMarkup(entry, transformText = (markup) => markup, renderMarkdown = markdownMarkup) {
     const displayedLanguages = displayedLanguagesFor(entry);
     if (!displayedLanguages.length) return '';
-    return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text">${transformText(markdownMarkup(entry[language], language === 'english'), language)}</div></div>`).join('')}</div>`;
+    return `<div class="text-grid ${displayedLanguages.length === 1 ? 'single' : ''}">${displayedLanguages.map((language) => `<div class="language"><div class="text">${transformText(renderMarkdown(entry[language], language === 'english'), language)}</div></div>`).join('')}</div>`;
   }
 
   return { displayedLanguagesFor, languageMarkup };

@@ -1336,6 +1336,7 @@ const documentRenderer = createDocumentRenderer({
   inlineMarkup: markupRenderer.inlineMarkup,
   urlMarkup,
   languageMarkup: languageRenderer.languageMarkup,
+  treeMarkup: markupRenderer.treeMarkup,
   imageMarkup: imageRenderer,
   diagramMarkup: markupRenderer.diagramMarkup,
   entryAnchor,

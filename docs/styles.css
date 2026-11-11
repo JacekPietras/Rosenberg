@@ -237,6 +237,17 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .source-list li, .facts li { margin: .3rem 0; padding-left: .15rem; }
 .source-list > li, .facts > li { margin-top: .45rem; }
 .source-list > li:first-child, .facts > li:first-child { margin-top: 0; }
+.terminal-tree { display: grid; gap: .3rem; margin: 1rem 0 0; color: var(--text); font-size: .9rem; }
+.terminal-tree .tree-row { display: grid; grid-template-columns: max-content minmax(0, 1fr); }
+.terminal-tree .tree-prefix { display: flex; align-self: stretch; width: calc(var(--tree-prefix-depth) * 4ch); color: var(--faint); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre; }
+.terminal-tree .tree-continuation, .terminal-tree .tree-empty { position: relative; flex: 0 0 4ch; height: calc(100% + .3rem); }
+.terminal-tree .tree-continuation::before { position: absolute; top: 0; bottom: 0; left: .5ch; border-left: 1px solid var(--faint); content: ''; }
+.terminal-tree .tree-branch { position: relative; flex: 0 0 4ch; align-self: stretch; }
+.terminal-tree .tree-branch::before { position: absolute; top: 0; left: .5ch; border-left: 1px solid var(--faint); content: ''; }
+.terminal-tree .tree-branch::after { position: absolute; top: .7em; left: .5ch; width: 2.5ch; border-top: 1px solid var(--faint); content: ''; }
+.terminal-tree .tree-branch-continues::before { height: calc(100% + .3rem); }
+.terminal-tree .tree-branch-last::before { height: .7em; }
+.terminal-tree .tree-label { min-width: 0; }
 .diagram { margin: 1.25rem 0; padding: 1rem; overflow-x: auto; background: #11161c; border: 1px solid var(--line); border-radius: 7px; }
 .diagram svg { display: block; max-width: none; height: auto; margin: 0 auto; }
 .people-tree-wrap { margin: 1.25rem 0; }
