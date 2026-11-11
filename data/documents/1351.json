@@ -1,11 +1,15 @@
 {
   "date": "1351",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "RI VIII n. 1388",
       "url": "https://www.regesta-imperii.de/id/1351-00-00_1_0_8_0_0_1580_1388",
-      "german": "gebietet den baronen, edeln u. s. w. insonderheit die mutter und brüder des genannten Heinrich von Rosenberg wegen der angegebenen schuld nicht weiter zu verfolgen. Ebendaher."
+      "german": "gebietet den baronen, edeln u. s. w. insonderheit die mutter und brüder des genannten Heinrich von Rosenberg wegen der angegebenen schuld nicht weiter zu verfolgen. Ebendaher.",
+      "english": "He orders the barons, nobles and others in particular not to further pursue the mother and brothers of the aforementioned Heinrich von Rosenberg regarding the specified debt. From the same place."
     }
   ]
 }
