@@ -231,6 +231,14 @@ before label application.
 The frozen prompt and development selection are documented in
 `reports/kev-improvement/selection.md`.
 
+`scripts/kev_label_review_documents.py` runs the single-document classifier for
+each active document whose only label is `to review`. It adds every family label
+whose probability is strictly above 25%, retaining `to review`; `other` is not
+a document label. It applies labels by default and changes only the top-level
+`label` value. Use `--dry-run` to print proposals without changing documents,
+`--limit` to restrict the batch, or `--results PATH` to choose the classifier's
+resumable JSONL results file.
+
 `scripts/kev_apply_labels.py` can consume a parent-approved validation gate
 artifact and classifier JSONL. It defaults to a dry run and writes JSONL audit
 receipts. `--apply` is required to update only eligible top-level document
