@@ -1,11 +1,15 @@
 {
   "date": "1434",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "ISG FFM, H.06.02, 3389",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10596691",
       "german": "Eberhard von Rosenberg und Wiprecht von Helmstadt nehmen die von Regensburg heimkehrenden Frankfurter Gesandten Walter von Schwarzenberg, Jakob Stralenberg und Hug Schelm, sowie Eberhard Löw von Steinfurth, Friedrich von Stein und die Gesandten Aachens und Friedbergs gefangen.",
+      "english": "Eberhard von Rosenberg and Wiprecht von Helmstadt capture the Frankfurt envoys Walter von Schwarzenberg, Jakob Stralenberg, and Hug Schelm returning from Regensburg, as well as Eberhard Löw of Steinfurth, Friedrich von Stein, and the envoys of Aachen and Friedberg.",
       "img": [
         {
           "src": "https://digitalisate.frankfurt.de:443/isg_ffm/h.06.02/3389/isg_ffm_h.06.02_nr_3389_0001.jpg"

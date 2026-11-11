@@ -1,11 +1,15 @@
 {
   "date": "1414-07-10",
-  "label": ["to review", "Rorschach"],
+  "label": [
+    "to review",
+    "Rorschach"
+  ],
   "entries": [
     {
       "source": "St. Gallen, Stadtarchiv der Ortsbürgergemeinde (www.stadtarchiv.ch), SpitalA, D.23.8.",
       "url": "https://www.monasterium.net/mom/CH-StaASG/Urkunden/SpitalA_D.23.8./charter",
-      "german": "Der Vogt von Bischofszell beurkundet, dass Elisabeth von Rosenberg dem Heiliggeistspital St.Gallen ihren Hof in Nideraach verkauft habe."
+      "german": "Der Vogt von Bischofszell beurkundet, dass Elisabeth von Rosenberg dem Heiliggeistspital St.Gallen ihren Hof in Nideraach verkauft habe.",
+      "english": "The Vogt (reeve) of Bischofszell certifies that Elisabeth von Rosenberg has sold her estate in Nideraach to the Hospitaller Hospital of St. Gallen."
     }
   ]
 }

@@ -1,11 +1,15 @@
 {
   "date": "1420-01-02",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 4280",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1773783",
       "german": "Konrad von Weinsberg reversiert gegenüber Konrad von Rosenberg wegen des von diesem vorbehaltenen Wiederkaufs des Zehnten zu (Neckar-) Zimmern und zu Diedesheim.",
+      "english": "Konrad von Weinsberg reverses to Konrad von Rosenberg regarding the repurchase reserved by the latter of the tithe at (Neckar-)Zimmern and at Diedesheim.",
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001773783%2F04_0001773783_0001_4-1773783-1.jpg"

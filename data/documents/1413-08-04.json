@@ -1,11 +1,15 @@
 {
   "date": "1413-08-04",
-  "label": ["to review", "Rorschach"],
+  "label": [
+    "to review",
+    "Rorschach"
+  ],
   "entries": [
     {
       "source": "St. Gallen, Stadtarchiv der Ortsbürgergemeinde (www.stadtarchiv.ch), SpitalA, D.23.7.",
       "url": "https://www.monasterium.net/mom/CH-StaASG/Urkunden/SpitalA_D.23.7./charter",
-      "german": "Abt Heinrich von St.Gallen erneuert Elisabeth, der Frau Rudolfs von Rosenberg, die Lehenschaft über den Hof in Nideraach."
+      "german": "Abt Heinrich von St.Gallen erneuert Elisabeth, der Frau Rudolfs von Rosenberg, die Lehenschaft über den Hof in Nideraach.",
+      "english": "Abbot Heinrich of St. Gallen renews Elisabeth, wife of Rudolf von Rosenberg, in her fiefhold over the estate in Nideraach."
     }
   ]
 }

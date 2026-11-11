@@ -1,11 +1,15 @@
 {
   "date": "1408-08-23",
-  "label": ["to review", "Rorschach"],
+  "label": [
+    "to review",
+    "Rorschach"
+  ],
   "entries": [
     {
       "source": "StadtA St. Gallen, SpitalA, Z,1 (Altes Briefurbar), f.182v., 7828",
       "url": "https://www.monasterium.net/mom/CSGXIII/7828/charter",
-      "german": "Rudolf von Rosenberg auf der alten Ramschwag gibt Eigenleute, die er zu Lehen besass, ans Kloster St. Gallen."
+      "german": "Rudolf von Rosenberg auf der alten Ramschwag gibt Eigenleute, die er zu Lehen besass, ans Kloster St. Gallen.",
+      "english": "Rudolf von Rosenberg at the old Ramschwag gives to the Abbey of St. Gallen the peasants (Eigenleute) that he held as fiefs."
     }
   ]
 }
