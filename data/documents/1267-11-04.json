@@ -1,37 +1,34 @@
 {
   "date": "1267-11-04",
-  "label": "to review",
+  "label": "Kamptal",
+  "transcribed": true,
   "entries": [
     {
       "source": "1267 XI 04",
       "url": "https://www.monasterium.net/mom/AT-StiALi/LilienfeldOCist/1267_XI_04/charter",
       "german": "Herradis de Rosenberch gibt mit Zustimmung ihrer Kinder Chunradus und Gertrudis ihr Eigen in den Dörfern Witslage und Haidpach mit Vogtei und allen Rechten dem Kloster Lilinveld.$$Siegler: Otto de Rastenberch, Hugo de Lichtenuelse, Zeugen: Hadmarus de Otenstain und seine Söhne Otto und Hadmarus, Hugo de Lichtenuels und sein Sohn Hadmarus, Otto de Rastenberch und sein Sohn Otto, Otto iunior de Rastenberch und sein Bruder Albero.",
       "english": "Herradis de Rosenberch, with the consent of her children Chunradus and Gertrudis, grants her own property in the villages of Witslage and Haidpach, with advocacy and all rights, to the monastery of Lilienfeld.$$Seal holders: Otto de Rastenberch, Hugo de Lichtenuelse. Witnesses: Hadmarus de Otenstain and his sons Otto and Hadmarus, Hugo de Lichtenuels and his son Hadmarus, Otto de Rastenberch and his son Otto, Otto iunior de Rastenberch and his brother Albero.",
-      "facts": [
-        {
-          "person": "Herradis von Rosenberg",
-          "type": "generic",
-          "content": "gave her property in Witslage and Haidpach, with advocacy and rights, to Lilienfeld monastery with the consent of her children."
-        },
-        {
-          "person": "Herradis von Rosenberg",
-          "type": "parent",
-          "of": "Konrad"
-        },
-        {
-          "person": "Herradis von Rosenberg",
-          "type": "parent",
-          "of": "Gertrudis"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/124/K.._MOM-Bilddateien._%7EZwettljpgweb._%7E1055-1299._%7EStAZ__12671104_1_2.jpg"
         },
         {
-          "src": "https://images.monasterium.net/pics/124/K.._MOM-Bilddateien._%7EZwettljpgweb._%7E1055-1299._%7EStAZ__12671104v_1_2.jpg"
+          "src": "https://images.monasterium.net/pics/124/K.._MOM-Bilddateien._%7EZwettljpgweb._%7E1055-1299._%7EStAZ__12671104v_1_2.jpg",
+          "deleted": true
         }
       ]
+    },
+    {
+      "source": "Fontes rerum Austriacarum. 2. Abt. Diplomataria et acta, S. 273",
+      "url": "https://archive.org/details/fontesrerumaustr03stuoft/page/273/mode/2up",
+      "latin": "Universis Christi fidelibus tenorem presentium videntibus vel visuris Herradis de Rosenberch salutem in domino sempiternam. Humane saluti providens diuina benignitas infirmitatem delinquentium elemosinarum largitione concessit adiuuari ne maximam generis humani multitudinem vite secularis occasio protrahat ad ruinam. Quoniam igitur molestiis occupata seculi non possum sicut esset expediens per orationum aliorumque bonorum operum studia domino sedulitate debita famulari fratres autem de Lilinvelde cysterciensis ordinis non solum in afflictione corporum, sed in deuotione quoque cordium et alacritate laudis dei iugiter exercentur rebus eos temporalibus promouere disposui quatenus deuotionis eorum cum ipsis fructum percipiam sempiternum.\n\nPro mea ergo salute cunctorumque parentum meorum animarum remedio de voluntate et consensu liberorum meorum Chvnradi et Gedrudis ius proprietatis quod in duabus villis in Voitslage videlicet et in Haidpach habuisse cognoscor et successione hereditaria legitime possedisse cum nemore pratis et pascuis omnibusque ad dictas villas pertinentibus, domui fratrum predictorum contuli libera voluntate abrenuncians aduocatie ac omnibus que ad me pertinverant absolute. Et ne super premissis a quoquam hominvm molestentur presentem litteram eis tradidi, sigillis nobilium dominorum Ottonis de Rastenberch et Hugonis de Liehtenvels, quia proprium sigillum non habui et subscriptis testibus roboratam vt sit collationis mee monimentum perpetuum et contra omnem calumpniam firmamentum evidens et tutela.\n\nTestes vero sunt hij. Hadmarus de Ottenstaine et filij sui. Otto et Hadmarus. Hvgo de Liehtenvels et Hadmarus frater eius. Otto de Rastenberch et Otto filius ipsius. Otto junior de Rastenberch et Albero frater suus et quam plures alij fide digni.\n\nActa sunt hec anno domini m°. cc°. lxvij. ij nonas Novembris.",
+      "english": "To all Christian faithful who see or will see this document, Herradis de Rosenberch sends everlasting greetings in the Lord. Divine goodness, providing for human salvation, has granted that the weakness of sinners be aided by the giving of alms, lest the circumstances of worldly life lead the great multitude of humankind to ruin. Since, therefore, occupied with the burdens of this world, I cannot serve the Lord with the due diligence of prayer and other good works as would be fitting, while the Cistercian brothers of Lilienfeld continually devote themselves not only to bodily hardship but also to devotion of heart and joyful praise of God, I have resolved to advance them with temporal goods, so that I may receive with them the everlasting fruit of their devotion.\n\nTherefore, for my salvation and for the remedy of the souls of all my relatives, with the will and consent of my children Konrad and Gedrudis, I have freely granted to the house of the aforesaid brothers the ownership rights that I am known to have held in two villages, namely Voitslage and Haidpach, and to have lawfully possessed by hereditary succession, together with the woodland, meadows, pastures, and everything belonging to those villages. I absolutely renounce the advocacy and all rights that belonged to me. So that no one may trouble them concerning the foregoing, I have given them this present letter, confirmed by the seals of the noble lords Otto de Rastenberch and Hugo de Liehtenvels, since I had no seal of my own, and strengthened by the witnesses written below, as an everlasting record of my grant and a clear safeguard against every claim.\n\nThe witnesses are: Hadmarus de Ottenstaine and his sons Otto and Hadmarus; Hugo de Liehtenvels and his brother Hadmarus; Otto de Rastenberch and his son Otto; Otto the younger de Rastenberch and his brother Albero; and many other trustworthy men.\n\nThis was done in the year of the Lord 1267, on the second day before the Nones of November [4 November]."
+    },
+    {
+      "source": "Fontes rerum Austriacarum. 2. Abt. Diplomataria et acta, S. 273–274",
+      "url": "https://archive.org/details/fontesrerumaustr03stuoft/page/274/mode/2up",
+      "latin": "Universis Christi fidelibus tenore presentium inspecturis, Herradis dicta de Rosenberch salutem in domino sempiternam. Quia diuina pietas detentos mundi molestiis elemosinarum largitate peccata redimere necnon ad salutis eterne premia pertingere posse clementer indulget peccantium non mortem sed conversionem et uitam desiderans. Ego cum non possim domino curis occupata secularibus sicut esset congruum famulari nec mortalitatis tempus sine culpa transire salutare mihi iudico si contemptorum seculi et deo militantium necessitati temporali succurram subsidio bonum mihi confidens firmiter per hoc apud dominum meritum collocari.\n\nFratribus itaque de domo Lilinvelde cysterciensis ordinis vt deuotione ipsorum qua per spiritualis vite labores et exercicia celesti regi deseruiunt merear adiuuari pro salute mea liberorumque meorum atque pro remedio animarum omnium parentum meorum in rebus temporalibus subuenire statuens, ius proprietatis in duabus villis Voitslage videlicet et in Heydpach quod iuste tenebam et hereditaria successione legitime possidebam cum nemore pratis et pascuis et cum omnibus ad ipsas villas pertinentibus de voluntate et libero consensu meorum heredum Chvnradi et Herdrudis piaque liberalitate fratribus eisdem contuli propter deum. Abrenuncians etiam aduocatie cunctisque que iuris mei fuerant in villis predictis.\n\nNe ergo super hijs quicquam nascatur in futurum molestie fratribus memoratis litteram eis presentem tradidi sigillis nobilium dominorum Ottonis de Rastenberch et Hugonis de Liehtenvels quia proprium sigillum non habui et testibus subscriptis munitam.\n\nSunt autem hij testes. Hadmarus de Ottenstaine et filij sui. Otto et Hadmarus. Hvgo de Liehtenvels et Hadmarus frater eius. Otto de Rastenberch et Otto filius eius. Otto de Rastenberch junior et Albero frater suus alijque quam plures.\n\nActa sunt hec anno domini m°. cc°. lxvij°. ij. non. Novembris.",
+      "english": "To all Christian faithful who inspect this document, Herradis, called de Rosenberch, sends everlasting greetings in the Lord. Since divine mercy graciously grants that those held fast by worldly cares may redeem their sins through generosity in almsgiving and attain the rewards of eternal salvation, desiring not the death of sinners but their conversion and life, I consider it salutary for me—since I cannot serve the Lord as would be fitting, occupied with secular cares, nor pass the time of mortality without sin—to assist the temporal needs of those who have renounced the world and serve God, firmly trusting that through this I will lay up merit with the Lord.\n\nTherefore, wishing to provide temporal support to the brothers of the house of Lilienfeld, of the Cistercian order, so that I may merit their aid through their devotion, by which they serve the heavenly King through the labors and practices of the spiritual life, for the salvation of myself and my children and for the remedy of the souls of all my relatives, I have piously granted to those same brothers, for God’s sake, the ownership rights in two villages, namely Voitslage and Heydpach, which I rightly held and lawfully possessed by hereditary succession, together with the woodland, meadows, pastures, and everything belonging to those villages. I do so by the will and free consent of my heirs Konrad and Herdrudis. I also renounce the advocacy and all rights that were mine in the aforesaid villages.\n\nSo that no trouble may arise in the future for the aforesaid brothers concerning these matters, I have given them this present letter, secured by the seals of the noble lords Otto de Rastenberch and Hugo de Liehtenvels, since I had no seal of my own, and confirmed by the witnesses written below.\n\nThese are the witnesses: Hadmarus de Ottenstaine and his sons Otto and Hadmarus; Hugo de Liehtenvels and his brother Hadmarus; Otto de Rastenberch and his son Otto; Otto the younger de Rastenberch and his brother Albero; and many others.\n\nThis was done in the year of the Lord 1267, on the second day before the Nones of November [4 November]."
     }
   ]
 }
