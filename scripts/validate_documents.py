@@ -66,18 +66,6 @@ def canonical_url(value):
     return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), parts.path, parts.query, ""))
 
 
-def url_domain(value):
-    """Return a normalized hostname for a URL, or None when it has no host."""
-    try:
-        host = urlsplit(value.strip()).hostname
-    except ValueError:
-        return None
-    if not host:
-        return None
-    host = host.lower().rstrip(".")
-    return re.sub(r"^www\d*\.", "", host)
-
-
 def reorder_fields(value, field_order):
     """Order known fields first, preserving the order of unknown fields."""
     ordered_keys = [key for key in field_order if key in value]
@@ -294,7 +282,6 @@ def main(argv=None):
                 urls = [urls]
             if isinstance(urls, list):
                 seen_urls = set()
-                seen_domains = set()
                 for url_index, url in enumerate(urls):
                     if not isinstance(url, str):
                         continue
@@ -321,17 +308,6 @@ def main(argv=None):
                         warnings += 1
                     else:
                         seen_urls.add(key)
-
-                    domain = url_domain(url)
-                    if domain is not None:
-                        if domain in seen_domains:
-                            print(
-                                f"{display_path(path)}#/entries/{index}/url/{url_index}: "
-                                f"warning: multiple sources in this entry use the {domain} domain"
-                            )
-                            warnings += 1
-                        else:
-                            seen_domains.add(domain)
 
             english = entry.get("english")
             if not isinstance(english, str) or not english.strip():
