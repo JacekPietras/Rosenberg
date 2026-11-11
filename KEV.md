@@ -59,7 +59,7 @@ With the local server running, score a document JSON from the repository root:
 python3 scripts/kev_classify_documents.py --document data/documents/1397-04-29.json
 ```
 
-The default classifier chooses among eleven options:
+The default classifier chooses among nine options:
 
 | Choice | Meaning |
 | --- | --- |
@@ -71,35 +71,41 @@ The default classifier chooses among eleven options:
 | `lengenfelder` | Family associated with Rosenberg castle near Sulzbach; Lengenfelder, Lengenfelderin, Lengenfeld, and Lengenvelder name variants |
 | `orsini` | Austrian Orsini/Ursini-Rosenberg house |
 | `brandenburg` | Northern Rosenberg records in Brandenburg/Magdeburg, including the Bredow association; their proposed link to Saale Rosenburg remains unproved |
-| `unrelated` | None of the eight families is substantively represented |
-| `mixed` | Multiple listed families are explicitly represented |
-| `uncertain` | Evidence is insufficient to distinguish a family |
+| `other` | All non-target material: places, castles, addresses, residents, modern surname bearers, and other noble houses |
 
 The prompt incorporates the research review's qualifications, including the
 Mönch namesake warning and the unproved Brandenburg/Rosenburg connection.
 
-A paired local check on 2026-11-11 compared the previous and research-derived
-prompts on 29 documents sampled from the six requested labels. Agreement with
-existing labels increased from 15/29 (51.7%) to 26/29 (89.7%); Franken improved
-from 0/5 to 2/5, with three remaining abstentions. Excluding five examples used
-in the research, agreement increased from 10/24 to 21/24. The separate
-1387-06-22 diagnostic changed from `uncertain` to `franconian`. English was
-excluded in both runs. These are small-sample label-agreement results, not a
-validation of confidence or false-positive rates. The configs, probabilities,
-raw responses and [comparison report](reports/kev-family-comparison-2026-11-11/comparison.md)
-are saved in that ignored report directory. Existing application gates were not
-revalidated by this check.
+A paired check on 2026-11-11 compared the previous eleven-choice prompt with
+these nine defaults. On 45 fresh cases, label agreement improved from 29/45 to
+43/45: Franken from 8/20 to 19/20, the other four tested families remained at
+20/20, and non-target controls improved from 1/5 to 4/5. Including the earlier
+29-case regression set gives 55/74 versus 71/74. These small samples measure
+agreement with provisional labels; one existing Franken label has contrary
+historical evidence. Orsini and Brandenburg were not tested. See the
+[paired report and remaining errors](reports/kev-place-choice-2026-11-11/comparison.md).
+The detailed Bauer research is preserved in the reference, but long Franconian
+summaries were rejected because they caused false Franconian predictions.
+
+There is no `mixed` or `uncertain` answer. If several target families occur,
+the prompt selects the one most directly represented. The scores are relative
+across these choices, not calibrated chances of historical correctness or
+independent probabilities that each family is present. Removing abstention
+categories does not resolve ambiguous evidence. `von`, `de`, and `zu` alone
+do not distinguish noble family membership from origin or residence.
 
 A name or place alone does not establish family relevance. The classifier uses
 German/Latin/summary text, citations, titles, date, and place, excluding English
 translations, existing labels, and facts. Explicit `--document` input is scored regardless of its labels or deleted
 flag. The command prints the proposed choice and its probability and saves all
-eleven probabilities with the raw response in `/tmp/kev-classifications.jsonl`.
+nine probabilities in the `probabilities` field, alongside the raw response in `/tmp/kev-classifications.jsonl`.
 Use `--output PATH` to choose another result file. It does not modify the document.
+The `.summary.json` sidecar reports `scored` successful predictions and `evaluated`
+cases with a usable expected class; a single unlabelled input has `evaluated: 0`.
 
-These eleven choices are the current defaults. `--config` can supply an older
-set of criteria, including the saved nine-choice configuration used by the review
-queue below. The older validation does not validate the new categories. Changes
+These nine choices are the current defaults. `--config` can supply an older
+set of criteria, including the earlier configuration used by the review
+queue below (which has different categories despite also having nine choices). The older validation does not validate the new categories. Changes
 to the classifier also invalidate the queue's saved runner hash; refresh validation
 before applying labels with that workflow.
 

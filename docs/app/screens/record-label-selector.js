@@ -34,6 +34,28 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
   };
 
   document.addEventListener('click', async (event) => {
+    const classifyButton = event.target.closest('[data-classify-document]');
+    if (classifyButton) {
+      const path = classifyButton.dataset.classifyDocument;
+      const status = classifyButton.closest('.document-heading-aside')?.querySelector('.record-classify-status');
+      if (!state.canEditDocuments || !path.startsWith('data/documents/')) return;
+      classifyButton.disabled = true;
+      if (status) status.textContent = 'Classifying…';
+      try {
+        const response = await fetch('/api/classify-document', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path }),
+        });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error || `Classification failed (${response.status})`);
+        if (status) status.textContent = result.result;
+      } catch (error) {
+        if (status) status.textContent = `Could not classify: ${error.message}`;
+      } finally {
+        classifyButton.disabled = false;
+      }
+      return;
+    }
+
     const deleteDocumentButton = event.target.closest('[data-delete-document]');
     if (deleteDocumentButton) {
       const path = deleteDocumentButton.dataset.deleteDocument;

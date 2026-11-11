@@ -207,9 +207,10 @@ The job is resumable. Keep the local Kev server running until it completes.
 ### Kev family classification
 
 `scripts/kev_classify_documents.py` provides a reusable dry scorer for a single
-eleven-way family choice: eight families (`franconian`, `schenk`, `monch`,
-`rorschach`, `czech`, `lengenfelder`, `orsini`, `brandenburg`) plus `unrelated`,
-`mixed`, and `uncertain`. The family definitions are in [KEV.md](KEV.md).
+nine-way family choice: eight families (`franconian`, `schenk`, `monch`,
+`rorschach`, `czech`, `lengenfelder`, `orsini`, `brandenburg`) plus `other` for
+all non-target material, including places, modern people, and other noble houses.
+The family definitions are in [KEV.md](KEV.md).
 It accepts one document with `--document`, scored JSONL cases or, by default, scans only
 active `to review` documents. The model receives date, place, citations, titles,
 and complete German/Latin/summary text; English translations, labels, facts, guesses, and URLs
@@ -225,7 +226,8 @@ python3 scripts/kev_classify_documents.py --documents-dir data/documents --limit
 ```
 
 An explicit `--config` overrides the default criteria and may retain the older
-nine-choice task. The expanded task requires fresh validation before label application.
+task, including its original categories. The current task requires fresh validation
+before label application.
 The frozen prompt and development selection are documented in
 `reports/kev-improvement/selection.md`.
 

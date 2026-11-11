@@ -15,12 +15,19 @@ archive, or document location is weak evidence. People could serve or transact
 far from their family's home territory. The categories are research groupings;
 they do not establish the identity or genealogy of individual people.
 
-The existing eleven-choice design needs particular care with `schenk` and
+The classifier needs particular care with `schenk` and
 `brandenburg`: the research below does not establish every equivalence currently
 assumed in their descriptions. Likewise, Mönch names in Prussian records need
 separate investigation. Do not turn unresolved links into identifying rules.
 
 ## `franconian`: Bauland / Odenwald Herren von Rosenberg
+
+**Repository source base.** The main detailed source for this profile is
+[Bauer, Die Herrn von Rosenberg (1872)](data/books/bauer_1872.json), read in its
+German text. Entries 3 and 5 describe the broad territorial footprint and
+distinguish the ordinary Rosenberg lords from the Münch family. The account is
+a reconstruction with explicit doubts about several pedigrees; classification
+of a family does not require accepting every proposed parent-child connection.
 
 **Core geography and distinction.** The relevant Rosenberg is in today's
 Neckar-Odenwald district, with a later center at Boxberg. EBIDAT distinguishes
@@ -69,6 +76,48 @@ Wildenberg/Wildenburg, his service to Mainz, and revenues around Mudau and the
 Odenwald. This provides another direct name/office/geography combination beyond
 the later Boxberg-centered history.
 [Mainzer Erzbischofsregesten, Otto no. 5820](https://www.ingrossaturbuecher.de/id/source/13998)
+
+**What the original short profile missed.** Bauer's German entries 17–21
+describe Eberhard as Mainz's Vogt at Dürn/Walldürn, connect him with Nagelsberg
+and Archbishop Balduin's affairs at Amöneberg, Geismar and Fritzlar, and
+explicitly call him a Mainz Stiftsvormund in 1347. Entry 94 discusses Konrad
+officeholders at Amberg and Heidelberg, while qualifying their placement in
+the pedigree. Entries 18, 38 and 40 describe recurring fiefs and church rights
+at Boffsheim/Boßheim, Sindolsheim, Burgheim, Schweinberg and other places.
+These are useful family contexts alongside the familiar castles; service or
+transactions outside the core territory do not by themselves imply another house.
+[Bauer, entries 17–21, 38, 40 and 94](data/books/bauer_1872.json)
+
+**Clerics need coverage too.** Bauer's entry 96 mentions Hans/Johann as a
+Würzburg canon and Eberhard as a Mainz cathedral cantor, without resolving their
+positions in his trees; he separately questions whether Hermann Rosenberg was
+bourgeois. Bauer does not name Philipp of Speyer. The latter's office as
+bishop is recorded in Stocker's entry 121, while Biedermann's entry 24 also
+calls him provost of St German. Biedermann's dates differ, so that passage is
+used here for the office/name combination, not its chronology or full pedigree.
+[Bauer](data/books/bauer_1872.json),
+[Stocker (1896), entry 121](data/books/freiburger_dioecesan_archiv_1896_25.json),
+[Biedermann (1751), entry 24](data/books/bidermann_1751.json)
+
+**Book-specific cautions.** Bauer's entry 8 quotes the 1288 style Eberhardus
+de Rosenberg dictus de Ussinkheim; the wider inheritance/branch explanation in
+entries 9–11 is his hypothesis. Entry 53 distinguishes Helmstadt co-owners
+called Rosenberg. The struck-out identification in entry 7 is corrected as
+confusion with Eckard von Rossy. Neither that identification nor uncertain
+pedigree placements should become automatic family matches. In entry 49,
+the construction concerning Ludwig Münch and Johann holding for children
+must not be read as proving that they were Eberhard's sons.
+[Bauer, German source entries 7–11, 49 and 53](data/books/bauer_1872.json)
+
+**A misleading existing label.** The repository's
+[1325-08-13 document](data/documents/1325-08-13.json) is labelled Franken,
+but names Vogt Friedrich called the Frank and Ulrich/Konrad. Regional historical
+research places that exact Burgau-service/wood-rights event with the Voit/Voyt
+of Rosenberg near Sulzbach. The epithet Frank/Franch does not establish the
+Bauland family. This is a label-review finding; the stored document was not
+changed. A precise alternative choice in the eight-family taxonomy is not
+treated here as established.
+[VHVO 43, printed p. 140, Voithenberg family discussion](https://www.heimatforschung-regensburg.de/2792/1/1306233_1306528-1306821_pp_290.pdf)
 
 ## `schenk`: Schenk von Roßberg and Rosenberg renderings
 
@@ -362,7 +411,7 @@ belongs to the Brandenburg/Bredow group.
 [Dieter Heckmann, Amtsträger, PDF pp. 81, 83 and 148](https://hiko-owp.eu/wp-content/uploads/2024/12/Amtstraeger-DO-Preussen.pdf),
 [Zeitschrift des Westpreussischen Geschichtsvereins 24, printed p. 63, note 4](https://dlibra.bibliotekaelblaska.pl/Content/49779/PDF/Heft24.pdf)
 
-## Consequences for the eleven-choice classifier
+## Consequences for the classifier
 
 These are proposed changes to evaluate, not measured accuracy improvements:
 
@@ -373,16 +422,26 @@ These are proposed changes to evaluate, not measured accuracy improvements:
 - Permit Czech and Swiss family members to appear outside their home regions.
 - Separate the historical Orsini ancestry claims from the Austrian family name.
 - Treat explicit Mönch as a name cue whose lineage still depends on context.
-- Use `mixed` only for multiple independently identified target groups;
-  `uncertain` when the evidence cannot distinguish them. These research notes
-  do not determine probability thresholds.
+- Use eight family choices plus one broad `other` category for all non-target
+  material. The user selected this broader category over a place-only option.
+- Retain the full distribution instead of `mixed` or `uncertain` answers.
+  For multiple target families, choose the most directly represented; the scores
+  are not independent family-presence probabilities or calibrated confidence.
+- Do not interpret `von`, `de`, or `zu` alone as family or residence evidence.
 
-The classifier does not automatically read this file. Its default prompt now
-contains a concise research-derived reference. A paired check against the
-previous prompt matched 26/29 existing labels versus 15/29, with three Franken
-abstentions; see [the comparison report](reports/kev-family-comparison-2026-11-11/comparison.md).
-This small positive-only check measures label agreement, not calibrated
-confidence or a validated automatic labeling policy.
+The classifier does not automatically read this file. Its default prompt
+contains a concise research-derived reference. A further investigation read all
+169 German entries of Bauer's book and checked missing offices and clerics.
+Adding long Franconian summaries to the model state caused systematic false
+Franconian predictions, so those variants were rejected. The detailed source
+research above is retained for review rather than injected wholesale.
+
+The selected nine-choice prompt matched 43/45 fresh references versus 29/45 for
+the earlier eleven-choice prompt; Franken improved from 8/20 to 19/20.
+See the [comparison and limitations](reports/kev-place-choice-2026-11-11/comparison.md).
+This measures agreement with provisional references, not calibrated confidence
+or a validated automatic labeling policy. The disputed 1325 Voit record remains
+a model error even though its prediction agrees with the current Franken label.
 
 ## Source review and further research status
 

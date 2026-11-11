@@ -269,6 +269,32 @@ class ViewerHandler(SimpleHTTPRequestHandler):
 
     def do_POST(self):
         self.record_activity()
+        if self.path.split("?", 1)[0] == "/api/classify-document":
+            try:
+                length = int(self.headers.get("Content-Length", "0"))
+                if not 0 < length <= 4096:
+                    raise ValueError("Invalid classification request size")
+                payload = json.loads(self.rfile.read(length))
+                relative_path = payload.get("path") if isinstance(payload, dict) else None
+                if not isinstance(relative_path, str) or not re.fullmatch(r"data/documents/(?:[A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\.json", relative_path):
+                    raise ValueError("Invalid document path")
+                document_path = (ROOT / relative_path).resolve()
+                if not document_path.is_relative_to(ROOT / "data" / "documents") or not document_path.is_file():
+                    raise ValueError("Document not found")
+                command = [sys.executable, str(ROOT / "scripts/kev_classify_documents.py"), "--document", relative_path]
+                result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=240, check=False)
+                match = re.search(r"^.+?:\s+([a-z]+)\s+\(([0-9.]+)\)$", result.stderr, re.MULTILINE)
+                if result.returncode or not match:
+                    self.send_json(422, {"error": result.stderr.strip() or "Classification failed"})
+                else:
+                    self.send_json(200, {"result": f"{match.group(1)} {round(float(match.group(2)) * 100)}%"})
+            except (ValueError, TypeError, json.JSONDecodeError) as error:
+                self.send_json(400, {"error": str(error)})
+            except subprocess.TimeoutExpired:
+                self.send_json(504, {"error": "Classification timed out"})
+            except OSError as error:
+                self.send_json(500, {"error": str(error)})
+            return
         if self.path.split("?", 1)[0] == "/api/heartbeat-diagnostics":
             try:
                 length = int(self.headers.get('Content-Length', '0'))
