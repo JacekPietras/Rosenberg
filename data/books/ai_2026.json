@@ -2,5 +2,59 @@
   "book": "AI [2026]",
   "comment": "This book is built by AI to describe distinct families and castles that share the name Rosenberg or its variations. Keep it concise and brief. Include information about each family, its members, and places related to it. Describe castles named Rosenberg in a separate section. Do not give detailed accounts of events or histories of specific people.",
   "entries": [
+    {
+      "title": "Bauland and Odenwald Lords of Rosenberg",
+      "english": "Existed: <timespan of existence>"
+    },
+    {
+      "english": "A Franconian noble family associated with the Rosenberg near Osterburken and later centered at Boxberg. The family is attested under the Rosenberg name from the late 13th century; its proposed earlier connection with the Uissigheim ministerials is not fully established. Members held Boxberg from 1381 and were connected with Wölchingen, the Schüpfergrund, Unterschüpf, Haltenbergstetten, and Bartenstein. Eberhard and Arnold appear in regional and Mainz or Palatine service, while later members included Albrecht von Rosenberg (died 1572). The Mönch von Rosenberg were a separate family with the same place-name association."
+    },
+    {
+      "subheading": "Estates",
+      "english": "<places with dates in [YYYY-YYYY] in separate lines>"
+    },
+    {
+      "subheading": "Notable members",
+      "english": "<people with dates when they are mentioned in separate lines, dates in [YYYY-YYYY] format>"
+    },
+    {
+      "title": "Schenk von Roßberg / Rosenberg",
+      "english": "The Schenk von Roßberg were a Franconian ministerial family serving the bishops of Würzburg and associated with the castle now called Schenkenschloss. The castle was known as Roßberg until around 1600; records use forms including Roßberg, Rossberg, and Rossenberg. A 1337 record names Wolfram Schenk von Rossberg, his brother Heinrich, and Heinrich's son Berthold. Some sources style Schenk bearers as von Rosenberg, but it remains uncertain how consistently this reflects the same house or how those individuals relate to other Rosenberg families."
+    },
+    {
+      "title": "Mönch / Münch von Rosenberg",
+      "english": "A distinct lower-noble family named Mönch or Münch von Rosenberg is recorded in southwestern Germany from 1251 into the Thirty Years' War. In later centuries, its members held lands or offices connected with Mönchzell, Eberbach, Dallau, Steinsberg, and Kirchardt; some served the counts of Katzenelnbogen. Sources name Lutz, Konrad, Hans, Dieter, Ruprecht, and Peter in different periods, though repeated names do not by themselves establish identity. A Gerlach Mönch von Rosenberg in the Teutonic Order's Prussian records is associated with an Elbing family, and should not automatically be joined to the southwestern line."
+    },
+    {
+      "title": "Rorschach / Rosenberg of Eastern Switzerland",
+      "english": "The eastern Swiss knightly family known as von Rorschach and von Rosenberg served the prince-abbots of St Gallen from the 12th to the 15th centuries. Its centers and holdings included Rorschach, Herisau, Rosenberg, Rosenburg, Urstein, Berneck, and Zuckenriet. Egilolf and Rudolf appear among early members, while later records name Egli von Rosenberg at Bernang in the Rhine Valley; recurring names make individual identifications difficult. Branches are associated with Berneck and Zuckenriet, and some members served away from home, including in the Teutonic Order. A place or surname alone does not settle a person's branch."
+    },
+    {
+      "title": "The South Bohemian Rožmberks",
+      "english": "The Witigon lords of Rožmberk, called Rosenberg in German sources and z Rožmberka in Czech, were a major house based in South Bohemia. Wok I established Rožmberk Castle after 1225 and founded Hohenfurt (Vyšší Brod) Abbey in 1259; the family later inherited the Krumlov holdings and made Český Krumlov its principal seat. Named members include Petr I and his sons Petr II, Jošt I, Oldřich I, and Jan I, followed in later generations by Ulrich II, Wilhelm, and Petr Vok, the last male-line representative. Their lands and activities also reached into the Austrian Mühlviertel. The family's claimed Roman Orsini descent was a later prestige construction, not proof of kinship with the Austrian Orsini-Rosenberg house."
+    },
+    {
+      "title": "Lower Austrian Lords of Rosenberg",
+      "english": "A local ministerial family associated with Rosenberg Castle in the Kamptal, Lower Austria, distinct from both the Bohemian Rožmberks and the later Orsini-Rosenberg house. Gozwin (also written Goczwin or Godezwin) is recorded in 1175; later regional records name Konrad and Hartlieb von Rosenberg. Hans Tietze describes the castle as the seat of this ministerial family and suggests the line ended around the beginning of the 14th century. The evidence supports a local family identification, but does not establish Gozwin's parentage or a genealogical link to other Rosenberg houses. See [Tietze (1911), p. 502](https://diglib.tugraz.at/download.php?id=535df4211d59e&location=browse), [Endl (1892), pp. 53–54](https://upload.wikimedia.org/wikipedia/commons/5/59/Bl%C3%A4tter_%28IA_bub_gb_KQsdAAAAMAAJ%29.pdf), and [Donin (1957), p. 194](https://www.zobodat.at/pdf/Jb-Landeskde-Niederoesterreich_32_0192-0208.pdf)."
+    },
+    {
+      "title": "Rosenberg near Sulzbach: the Lengenfelders",
+      "english": "Records from the 14th century associate bearers styled Lengenvelder, Lengenfelder, Lengfelder, or Lengenfelderin von Rosenberg with Rosenberg near Sulzbach and nearby places. A 1343 record names Chunrad der Lengenvelder and his wife Jeute; records from 1357–1359 mention Konrad and Jeutt, their sons, and Jeutt's brother Ott, a church lord at Gebenbach. Their transactions concern places including Pfeffershoven, Oberklausen, and Sulzbach. These records offer a regional family context, but do not prove that every similarly named person—including an earlier Heinrich—belonged to one continuous line."
+    },
+    {
+      "title": "Austrian Orsini / Ursini-Rosenberg",
+      "english": "A Styrian and Carinthian noble house whose medieval members used Rosenberg forms and whose later name became Ursini or Orsini-Rosenberg. Early Styrian records associate the family with Graz and styles such as de Valle, von dem Graben, and ab dem Rosenberg. In Carinthia, members held estates including Lerchenau, Mageregg, Grafenstein, Maria Loretto, Rosegg, Rottenstein, and Greifenberg. The family rose to the princely rank in 1790; the Ursini name was authorized in 1684. Its claimed Roman ancestry and links to the Bohemian Rožmberks were prestige claims, not established proof of shared medieval descent."
+    },
+    {
+      "title": "Brandenburg Rosenberg bearers",
+      "english": "Medieval Brandenburg records name Johann and Werner Rosenberg bearers in association with the von Bredow family and with properties including Plate, Kutzkow, and Luge. A 1338 agreement places Rosenberg bearers under the protection of Markgraf Ludwig and associates them with the castle of Plate; records from 1400 name Werner and Johann as brothers in property transactions concerning Kutzkow and Luge. These sources establish northern activity and local connections, but do not prove continuity between the groups or identify them with the lords of Saale Rosenburg. Their relationship to other Rosenberg families is also unestablished."
+    },
+    {
+      "title": "Castles named Rosenberg"
+    },
+    {
+      "subheading": "Rosenberg Castle (Rosenburg am Kamp), Lower Austria",
+      "english": "The medieval Rosenberg in the Kamptal, near Horn, later became known as Rosenburg am Kamp. Scholarly monument histories identify it as the seat of the local Herren von Rosenberg, a ministerial family attested from the 12th century; Tietze names Goczwin in 1175 and Konrad subsequently, while Donin also cites Konrad in 1229. The site and its family are distinct from the Bohemian Rožmberk castle and house. See [EBIDAT, Rosenburg am Kamp](https://www.ms-visucom.de/cgi-bin/ebidat.pl?id=1928&m=h), [Tietze (1911), p. 502](https://diglib.tugraz.at/download.php?id=535df4211d59e&location=browse), and [Donin (1957), p. 194](https://www.zobodat.at/pdf/Jb-Landeskde-Niederoesterreich_32_0192-0208.pdf)."
+    }
   ]
 }

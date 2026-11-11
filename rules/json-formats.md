@@ -103,6 +103,7 @@ support. An ID-like string that matches no ID is a warning.
 | --- | --- |
 | `german`, `latin` | Original document text when available; otherwise the German archival abstract when no full transcription is available |
 | `english` | Normalized English translation of the original text, or English translation of the German abstract when the original is not transcribed |
+| `subheading` | Optional lower-level heading displayed within the current entry or book section |
 | `summary` | The abstract provided by the archive webpage, retained only when the document is transcribed (`transcribed: true`) |
 
 The `abstract` field must never be used. Do not put an archive-provided
@@ -124,6 +125,7 @@ punctuation, and spaces inside the passage remain unchanged.
   "entries": [
     {
       "title": "Section or source title",
+      "subheading": "Optional heading within the section",
       "german": "Original German text",
       "english": "English translation",
       "facts": [{"date": "1399-02-01", "type": "generic", "person": "Example person", "content": "witnessed the agreement at Boxberg."}],
