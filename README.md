@@ -207,8 +207,8 @@ The job is resumable. Keep the local Kev server running until it completes.
 ### Kev family classification
 
 `scripts/kev_classify_documents.py` provides a reusable dry scorer for a single
-nine-way family choice: eight families (`franconian`, `schenk`, `monch`,
-`rorschach`, `czech`, `lengenfelder`, `orsini`, `brandenburg`) plus `other` for
+ten-way family choice: nine families (`franconian`, `schenk`, `monch`,
+`rorschach`, `czech`, `lengenfelder`, `orsini`, `brandenburg`, `kamptal`) plus `other` for
 all non-target material, including places, modern people, and other noble houses.
 The family definitions are in [KEV.md](KEV.md).
 It accepts one document with `--document`, scored JSONL cases or, by default, scans only

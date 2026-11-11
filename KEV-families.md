@@ -356,6 +356,21 @@ and Austrian Orsini appropriations; it should prevent a model from interpreting
 the shared claim as proof of one family.
 [Petr Maťa, The false Orsini from over the Alps](https://www.oeaw.ac.at/fileadmin/Institute/INZ/img/menschen/Mata/The_false_Orsini.pdf)
 
+## `kamptal`: Lower Austrian Lords of Rosenberg
+
+The book overview in `data/books/ai_2026.json` distinguishes this local
+ministerial family from the other Rosenberg houses. It places the family at
+Rosenberg Castle (Rosenburg am Kamp) in the Kamptal near Horn, with attestations
+from 1175 to 1290. The named bearers are Gozwin/Goczwin/Godezwin (1175), Konrad
+(1229, in a Zwettl transaction), and Hartlieb (1290). Use the Kamptal/Rosenburg
+am Kamp setting together with a Rosenberg bearer or explicit seat/family
+connection; the common surname or castle name alone is not an attribution.
+
+This is distinct from the Styrian/Carinthian Orsini-Rosenberg house and from
+Rosenberg castles elsewhere. The dates and named members are the book's summary
+of source attestations, not proof of a complete pedigree or of descent between
+these three bearers.
+
 ## `brandenburg`: separate the Brandenburg records from Saale Rosenburg
 
 **Directly inspected 1338 agreement.** CDB II/2, p. 140, document DCCLV,
@@ -422,7 +437,7 @@ These are proposed changes to evaluate, not measured accuracy improvements:
 - Permit Czech and Swiss family members to appear outside their home regions.
 - Separate the historical Orsini ancestry claims from the Austrian family name.
 - Treat explicit Mönch as a name cue whose lineage still depends on context.
-- Use eight family choices plus one broad `other` category for all non-target
+- Use nine family choices plus one broad `other` category for all non-target
   material. The user selected this broader category over a place-only option.
 - Retain the full distribution instead of `mixed` or `uncertain` answers.
   For multiple target families, choose the most directly represented; the scores
@@ -436,7 +451,7 @@ Adding long Franconian summaries to the model state caused systematic false
 Franconian predictions, so those variants were rejected. The detailed source
 research above is retained for review rather than injected wholesale.
 
-The selected nine-choice prompt matched 43/45 fresh references versus 29/45 for
+The selected nine-choice prompt (before `kamptal` was added) matched 43/45 fresh references versus 29/45 for
 the earlier eleven-choice prompt; Franken improved from 8/20 to 19/20.
 See the [comparison and limitations](reports/kev-place-choice-2026-11-11/comparison.md).
 This measures agreement with provisional references, not calibrated confidence

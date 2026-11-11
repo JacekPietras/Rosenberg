@@ -3,7 +3,7 @@
 import argparse, hashlib, json, math, sys, time, urllib.error, urllib.request
 from pathlib import Path
 
-FAMILY_CHOICES = ('franconian', 'schenk', 'monch', 'rorschach', 'czech', 'lengenfelder', 'orsini', 'brandenburg')
+FAMILY_CHOICES = ('franconian', 'schenk', 'monch', 'rorschach', 'czech', 'lengenfelder', 'orsini', 'brandenburg', 'kamptal')
 CHOICES = FAMILY_CHOICES + ("other",)
 TEXT_FIELDS = ("german", "latin", "summary")
 DEFAULT_QUESTION = "Which listed historical family or non-family category best describes this document?"
@@ -19,13 +19,19 @@ REF = (
     "alone does not decide family versus place. Other covers non-target material: settlements, "
     "castles, streets, buildings and addresses called Rosenberg; residents described by origin or "
     "location; modern private individuals with the surname; and positively identified noble houses "
-    "outside the eight targets. Do not infer family membership or place-only relevance from von/de/zu"
+    "outside the nine targets. Do not infer family membership or place-only relevance from von/de/zu"
     " alone. A noble von Rosenberg zu Boxberg remains a target-family participant. Low confidence "
-    "among the eight families is represented by their scores, not by an uncertain or mixed answer. If"
+    "among the nine families is represented by their scores, not by an uncertain or mixed answer. If"
     " several target families participate, select the one most directly represented; other "
     "probabilities may indicate alternatives but are not independent multi-family probabilities. "
     "There is no mixed or uncertain answer; show the distribution over the available substantive "
-    "categories. Northern Rosenbergs with Bredow are not proved identical to Barby/Saale Rosenburg. "
+    "categories. The Brandenburg choice is a record-context grouping, not a proved single lineage: "
+    "recognize either the 1338 Plate/Altenplathow protection record associating Rosenberg bearers "
+    "with Bredow, or the 1400 Kutzkow/Cutzekowe and Luge property records naming Werner and "
+    "Jan/Johann Rosenberg with Brandenburg/Magdeburg lordship. Do not infer continuity between the "
+    "1338 and 1400 groups. Brandenburg geography, Bredow alone, a Rosenberg surname, or Saale "
+    "Rosenburg alone is insufficient. Northern Rosenbergs with Bredow are not proved identical to "
+    "Barby/Saale Rosenburg. "
     "Friedrich Voit/Voyt called der Frank/Franch near Sulzbach is not automatically the Franconian "
     "Bauland house. A Bohemian Orsini ancestry claim alone does not identify the Austrian Orsini "
     "house."
@@ -38,8 +44,9 @@ CRITERIA = {
     "czech": "South Bohemian Rožmberk/Rosenberg dynasty, de Rosis/z Rožmberka: Rožmberk castle, Hohenfurt/Vyšší Brod, Krumau/Český Krumlov, Wittingau/Třeboň, Vltava/Moldau. Wok/Vok, Peter/Petr, Jost/Jodok/Jošt, Ulrich/Oldřich and Johann/Jan; four brothers Peter, Jost, Ulrich, Johann in the 1300s. Passau, Haslach and Upper Austrian or imperial affairs can involve this family.",
     "lengenfelder": "Lengenfelder/Lengenfelderin/Lengenvelder/Lengfelder/von Lengenfeld with Rosenberg near Sulzbach in the Upper Palatinate: Sulzbach/Sultzpach, Kastl/Chastel, Pfeffertshofen, Gebenbach, Voyt/Franch and Löhlein associates. Konrad/Chunrad/Chunrat, Jeute/Jeutt and sons Konrad, Örtel, Heinrich, Friedrich are attested combinations. Bare Lengenfeld can concern unrelated Tirschenreuth or other namesakes.",
     "orsini": "Austrian Styrian/Carinthian Rosenberg, later Orsini/Ursini-Rosenberg: medieval ab dem Rosenberg/Graz/Graben context; later Johann Andreas, Georg Nikolaus, Wolfgang Andreas, Klagenfurt offices, Lerchenau, Grafenstein, Maria Loretto, Rosegg. Orsini double name authorized in 1684; earlier dates and bare Rosenberg do not exclude this house. Distinguish the Czech dynasty's Orsini ancestry claim.",
-    "brandenburg": "Northern Rosenberg bearers in Brandenburg/Magdeburg context: Johann/Jan and Werner/Wernher, Plate/Altenplathow with Bredow in 1338, Kutzkow/Cutzekowe and Brandenburg episcopal/Magdeburg fiefs around 1400. Their home castle and link to Barby/Saale Rosenburg remain unproved; Burchard von Rosenburg alone is not sufficient identification.",
-    "other": "Non-target material: Rosenberg as a village, city, castle, building, street or address; a resident described by that place; modern personal papers or lawsuits of people surnamed Rosenberg; or a known different noble house outside the eight targets, such as the Sulzbach Voit/Voyt. A location particle alone is not decisive.",
+    "brandenburg": "Record-context category for northern Rosenberg bearers, not a proved single lineage. Identify from either (a) the 1338 protection record: Johann and Werner/Wernher Rosenberg bearers with Bredow at Plate/Altenplathow; or (b) the 1400 property records: Werner and Jan/Johann Rosenberg, Kutzkow/Cutzekowe or Luge, with Brandenburg/Magdeburg lordship. Do not assume the two dated groups are continuous or genealogically related. Brandenburg/Magdeburg geography, a Rosenberg surname, Bredow alone, or Saale Rosenburg alone is insufficient. Their home castle and link to Barby/Saale Rosenburg remain unproved; Burchard von Rosenburg alone is not sufficient identification.",
+    "kamptal": "Local ministerial Lords of Rosenberg based at Rosenberg Castle in the Kamptal near Horn, Lower Austria, attested from 1175 to 1290: Gozwin/Goczwin/Godezwin, Konrad (including the 1229 Zwettl transaction context), and Hartlieb. Require identifying Kamptal/Rosenburg am Kamp context together with a Rosenberg bearer or explicit family/castle-seat connection. A bare Rosenberg surname, castle/place mention, or the unrelated Styrian/Carinthian Orsini-Rosenberg house is not sufficient.",
+    "other": "Non-target material: Rosenberg as a village, city, castle, building, street or address; a resident described by that place; modern personal papers or lawsuits of people surnamed Rosenberg; or a known different noble house outside the nine targets, such as the Sulzbach Voit/Voyt. A location particle alone is not decisive.",
 }
 
 def h(x): return hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(",",":")).encode()).hexdigest()

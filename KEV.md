@@ -48,7 +48,7 @@ from each new task; a high probability alone is not proof of correctness.
 
 ## Propose a family for one document
 
-See [KEV-families.md](KEV-families.md) for sourced research on all eight family
+See [KEV-families.md](KEV-families.md) for sourced research on all nine family
 categories and unresolved distinctions, especially Schenk and Brandenburg/Rosenburg.
 The default prompt contains a concise version of the research; the classifier
 does not automatically load the reference file.
@@ -59,7 +59,7 @@ With the local server running, score a document JSON from the repository root:
 python3 scripts/kev_classify_documents.py --document data/documents/1397-04-29.json
 ```
 
-The default classifier chooses among nine options:
+The default classifier chooses among ten options:
 
 | Choice | Meaning |
 | --- | --- |
@@ -70,14 +70,16 @@ The default classifier chooses among nine options:
 | `czech` | South Bohemian Rožmberk dynasty |
 | `lengenfelder` | Family associated with Rosenberg castle near Sulzbach; Lengenfelder, Lengenfelderin, Lengenfeld, and Lengenvelder name variants |
 | `orsini` | Austrian Orsini/Ursini-Rosenberg house |
-| `brandenburg` | Northern Rosenberg records in Brandenburg/Magdeburg, including the Bredow association; their proposed link to Saale Rosenburg remains unproved |
+| `brandenburg` | Record-context grouping for northern Rosenberg bearers: either the 1338 Plate/Altenplathow protection record with Bredow, or the 1400 Kutzkow/Luge property records under Brandenburg/Magdeburg lordship; these records are not proved to describe one continuous lineage, and their link to Saale Rosenburg remains unproved |
+| `kamptal` | Local ministerial Lords of Rosenberg based at Rosenberg Castle in the Kamptal near Horn, Lower Austria (Gozwin, Konrad, Hartlieb; 1175–1290); a bare Rosenberg name or castle mention is insufficient |
 | `other` | All non-target material: places, castles, addresses, residents, modern surname bearers, and other noble houses |
 
 The prompt incorporates the research review's qualifications, including the
-Mönch namesake warning and the unproved Brandenburg/Rosenburg connection.
+Mönch namesake warning, the unproved Brandenburg/Rosenburg connection, and the
+unproven continuity between the 1338 and 1400 Brandenburg record groups.
 
 A paired check on 2026-11-11 compared the previous eleven-choice prompt with
-these nine defaults. On 45 fresh cases, label agreement improved from 29/45 to
+these nine defaults before adding `kamptal`. On 45 fresh cases, label agreement improved from 29/45 to
 43/45: Franken from 8/20 to 19/20, the other four tested families remained at
 20/20, and non-target controls improved from 1/5 to 4/5. Including the earlier
 29-case regression set gives 55/74 versus 71/74. These small samples measure
@@ -98,12 +100,12 @@ A name or place alone does not establish family relevance. The classifier uses
 German/Latin/summary text, citations, titles, date, and place, excluding English
 translations, existing labels, and facts. Explicit `--document` input is scored regardless of its labels or deleted
 flag. The command prints the proposed choice and its probability and saves all
-nine probabilities in the `probabilities` field, alongside the raw response in `/tmp/kev-classifications.jsonl`.
+nine family scores plus `other` in the `probabilities` field, alongside the raw response in `/tmp/kev-classifications.jsonl`.
 Use `--output PATH` to choose another result file. It does not modify the document.
 The `.summary.json` sidecar reports `scored` successful predictions and `evaluated`
 cases with a usable expected class; a single unlabelled input has `evaluated: 0`.
 
-These nine choices are the current defaults. `--config` can supply an older
+These ten choices are the current defaults. `--config` can supply an older
 set of criteria, including the earlier configuration used by the review
 queue below (which has different categories despite also having nine choices). The older validation does not validate the new categories. Changes
 to the classifier also invalidate the queue's saved runner hash; refresh validation
