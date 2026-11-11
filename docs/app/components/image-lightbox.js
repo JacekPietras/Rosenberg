@@ -191,6 +191,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   };
   const currentSeals = () => context?.node?.seals || [];
   const currentRegions = () => context?.node?.regions || context?.entry?.regions || visibleRegions;
+  const isSealImage = () => context?.entry?.label === 'seal';
   const magnifierMaximumSize = () => {
     const imageHeight = annotations.clientHeight;
     const previewHeight = previewCrop?.clientHeight;
@@ -519,7 +520,14 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     const region = drawRegion(regionDrag.start, regionPoint(event));
     regionDrag = null;
     const owner = context?.node || context?.entry;
-    if (owner) { if (!Array.isArray(owner.regions)) owner.regions = []; owner.regions.push({ ...region, name: 'text' }); render(); await save(); }
+    if (owner) {
+      const name = isSealImage() ? 'text' : window.prompt('Name this image region:');
+      if (name?.trim()) {
+        if (!Array.isArray(owner.regions)) owner.regions = [];
+        owner.regions.push({ ...region, name: isSealImage() ? 'text' : name.trim() });
+        render(); await save();
+      }
+    }
     regionMode = false;
     regionDrag = null; ignoreFocusClick = true; updateFocusOverlay();
   });

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" role="img" aria-labelledby="title desc">
+  <title id="title">Lengenfeld arms</title>
+  <desc id="desc">A gold Gothic shield with three red diagonal bars descending from left to right.</desc>
+  <defs>
+    <clipPath id="shield-clip">
+      <path d="M12 12H168V112C168 158 134 192 90 210C46 192 12 158 12 112Z"/>
+    </clipPath>
+  </defs>
+  <path d="M12 12H168V112C168 158 134 192 90 210C46 192 12 158 12 112Z" fill="#e5c76b" stroke="#201b18" stroke-width="5" stroke-linejoin="round"/>
+  <g clip-path="url(#shield-clip)" fill="none" stroke="#a92a2a" stroke-width="16" stroke-linecap="square">
+    <path d="M-12 80L90 182"/>
+    <path d="M16 52L118 154"/>
+    <path d="M44 24L146 126"/>
+  </g>
+</svg>

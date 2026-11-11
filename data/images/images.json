@@ -750,7 +750,16 @@
       "title": "Gelre armorial",
       "page": "Internet Archive leaf n60",
       "source": "https://archive.org/details/gelre_armorial/page/n60/mode/1up",
-      "url": "https://drive.google.com/thumbnail?id=1W37DJMaN2T3GWRU5Uei74aGSYpQfHbFJ&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1W37DJMaN2T3GWRU5Uei74aGSYpQfHbFJ&sz=w1600",
+      "regions": [
+        {
+          "x": 0.1683,
+          "y": 0.6675,
+          "width": 0.1969,
+          "height": 0.3169,
+          "name": "Eligheim"
+        }
+      ]
     },
     {
       "label": "armorial",
