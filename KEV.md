@@ -46,6 +46,63 @@ curl -s http://127.0.0.1:8009/v1/systemone \
 Kev also supports `choice` and `score` questions. Validate accuracy on examples
 from each new task; a high probability alone is not proof of correctness.
 
+## Propose a family for one document
+
+See [KEV-families.md](KEV-families.md) for sourced research on all eight family
+categories and unresolved distinctions, especially Schenk and Brandenburg/Rosenburg.
+The default prompt contains a concise version of the research; the classifier
+does not automatically load the reference file.
+
+With the local server running, score a document JSON from the repository root:
+
+```sh
+python3 scripts/kev_classify_documents.py --document data/documents/1397-04-29.json
+```
+
+The default classifier chooses among eleven options:
+
+| Choice | Meaning |
+| --- | --- |
+| `franconian` | Franconian/Odenwald von Rosenberg family |
+| `schenk` | Working Schenk category; research identifies Schenk von Roßberg and context-dependent Rosenberg renderings |
+| `monch` | Separate Mönch/Münch von Rosenberg family |
+| `rorschach` | Swiss Rorschach/Rosenberg family |
+| `czech` | South Bohemian Rožmberk dynasty |
+| `lengenfelder` | Family associated with Rosenberg castle near Sulzbach; Lengenfelder, Lengenfelderin, Lengenfeld, and Lengenvelder name variants |
+| `orsini` | Austrian Orsini/Ursini-Rosenberg house |
+| `brandenburg` | Northern Rosenberg records in Brandenburg/Magdeburg, including the Bredow association; their proposed link to Saale Rosenburg remains unproved |
+| `unrelated` | None of the eight families is substantively represented |
+| `mixed` | Multiple listed families are explicitly represented |
+| `uncertain` | Evidence is insufficient to distinguish a family |
+
+The prompt incorporates the research review's qualifications, including the
+Mönch namesake warning and the unproved Brandenburg/Rosenburg connection.
+
+A paired local check on 2026-11-11 compared the previous and research-derived
+prompts on 29 documents sampled from the six requested labels. Agreement with
+existing labels increased from 15/29 (51.7%) to 26/29 (89.7%); Franken improved
+from 0/5 to 2/5, with three remaining abstentions. Excluding five examples used
+in the research, agreement increased from 10/24 to 21/24. The separate
+1387-06-22 diagnostic changed from `uncertain` to `franconian`. English was
+excluded in both runs. These are small-sample label-agreement results, not a
+validation of confidence or false-positive rates. The configs, probabilities,
+raw responses and [comparison report](reports/kev-family-comparison-2026-11-11/comparison.md)
+are saved in that ignored report directory. Existing application gates were not
+revalidated by this check.
+
+A name or place alone does not establish family relevance. The classifier uses
+German/Latin/summary text, citations, titles, date, and place, excluding English
+translations, existing labels, and facts. Explicit `--document` input is scored regardless of its labels or deleted
+flag. The command prints the proposed choice and its probability and saves all
+eleven probabilities with the raw response in `/tmp/kev-classifications.jsonl`.
+Use `--output PATH` to choose another result file. It does not modify the document.
+
+These eleven choices are the current defaults. `--config` can supply an older
+set of criteria, including the saved nine-choice configuration used by the review
+queue below. The older validation does not validate the new categories. Changes
+to the classifier also invalidate the queue's saved runner hash; refresh validation
+before applying labels with that workflow.
+
 ## Rosenberg document workflow
 
 In a second Terminal:

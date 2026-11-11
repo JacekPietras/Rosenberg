@@ -3,19 +3,36 @@
 import argparse, hashlib, json, math, sys, time, urllib.error, urllib.request
 from pathlib import Path
 
-CHOICES = ("franconian", "schenk", "monch", "rorschach", "czech", "orsini", "unrelated", "mixed", "uncertain")
-TEXT_FIELDS = ("german", "latin", "english", "summary")
-REF = ("Classify the historical family substantively represented, using only the source text and its citation, date, place, and title. "
-"Do not infer genealogy. A surname or place alone is insufficient; common given names alone are insufficient. Mönch/Münch von Rosenberg explicitly identifies the separate Mönch family even if the document also says Rosenberg. Franconian Rosenberg places count only when attached to a Rosenberg person or activity, never another person's place/title. Schenk titles alone or another Schenk family do not identify Schenk von Rosenberg. Swiss Rorschach includes Eglolf/Egilolf/Egloff, Egli, and stable spelling variants. Czech Rožmberk includes Vok/Wok and brothers Peter, Jost, Ulrich, Johann; do not reject due to a Passau setting. Orsini-Rosenberg includes Wolfgang Andreas and Johann Andreas/Burggraf Klagenfurt irrespective of 17th-century date. A modern surname with no historical family relevance is unrelated. Use mixed only when multiple families are explicitly represented; if evidence is insufficient, choose uncertain. Never invent identity from a familiar name or context.")
+FAMILY_CHOICES = ("franconian", "schenk", "monch", "rorschach", "czech", "lengenfelder", "orsini", "brandenburg")
+CHOICES = FAMILY_CHOICES + ("unrelated", "mixed", "uncertain")
+TEXT_FIELDS = ("german", "latin", "summary")
+REF = (
+"Identify the historical Rosenberg family represented by people in this document. "
+"Use the source text with its citation, date, place and title. The source need not state a modern family category: "
+"a person's styled name together with their holdings, office, relatives or transaction context can identify the family. "
+"Being a witness, guarantor, seller, buyer, spouse or other participant counts as family relevance. "
+"Compare the family descriptions below. They give identifying combinations, not mandatory keywords or exhaustive lists. "
+"A family member may act outside the home region. Historical spelling variants and inflected names are normal. "
+"Do not invent a pedigree or assign people by common given names alone. A place alone, or another person's title, "
+"does not identify a Rosenberg family. Ordinary Schenk offices, other Schenk houses and the verb schenken are not the Schenk family. "
+"Mönch/Münch/Monachus can be a family byname; distinguish southwestern bearers from the Prussian Gerlach namesake. "
+"The Bohemian and Austrian houses both used Roman Orsini ancestry claims; identify them by the actual person and context. "
+"Northern Rosenbergs associated with Bredow are not proven identical to the Barby/Saale Rosenburg lords. "
+"Choose mixed only when people from at least two of the listed Rosenberg families are independently identified; "
+"other surnames, relatives, multiple Rosenberg people, or alternative spellings do not themselves make a document mixed. "
+"Choose unrelated when none of the listed families is represented, and uncertain when the source does not distinguish the relevant family."
+)
 CRITERIA = {
-"franconian":"Primary medieval Franconian/Odenwald von Rosenberg family, with identifying person or activity; named Boxberg, Schüpf, Haltenbergstetten, Bartenstein holdings count only when attached to that family.",
-"schenk":"Separate Schenk von Rosenberg family, explicitly identified; not a title alone or other Schenk family.",
-"monch":"Separate Mönch/Münch von Rosenberg family; explicit Mönch/Münch overrides bare Rosenberg.",
-"rorschach":"Swiss Rorschach/Rosenberg family, including Eglolf/Egilolf/Egloff/Egli variants and its historical context.",
-"czech":"South Bohemian Rožmberk/Rosenberg dynasty, including Vok/Wok and brothers Peter, Jost, Ulrich, Johann; setting may be Passau.",
-"orsini":"Austrian Orsini/Ursini-Rosenberg house, including Wolfgang Andreas or Johann Andreas/Burggraf Klagenfurt.",
-"unrelated":"None of those six families is substantively represented; coincidental modern surname, place or institution is unrelated.",
-"mixed":"Multiple of the six families are explicitly substantively represented.", "uncertain":"Evidence is insufficient to distinguish a historical family."}
+"franconian":"Franconian/Bauland/Odenwald von Rosenberg: people acting around Boxberg, Wölchingen/Wulchingen, Lauda/Luden, Schüpf/Unterschüpf, Haltenbergstetten, Bartenstein, Waldmannshofen, Mudau or Wildenberg. Context includes Würzburg tithes and church affairs, Mainz or Palatine service, Vogt/Amtmann of Lauda or Wildenberg, Vizedom of Heidelberg/Amberg. Eberhard, Konrad, Arnold, Engelhard and Albrecht occur with such context. Distinguish explicit Schenk and Mönch bynames.",
+"schenk":"Schenk von Roßberg/Rossberg/Rossenberg/Rosperg, including Schenk von Rosenberg renderings with matching context: Würzburg cupbearer family, Roßberg/Schenkenschloss, Gadheim, Tauber-area transactions. Examples include Wolfram, Heinrich and Berthold, Eberhard with wife Agnes, Jörg/Georg with Margaretha von Thüngfeld. Not Schenk von Erbach, Limpurg or another Schenk house.",
+"monch":"Southwestern Mönch/Münch/Münich/Monachus von Rosenberg, including München von Rosenberg: Rosenberg near Osterburken, Mönchzell, Katzenelnbogen fiefs, Dallau, Eberbach, Steinsberg, Kirchardt or Palatine court service; Hans, Konrad/Contz, Dieter, Ruprecht, Peter occur in these settings. Gerlach Mönch of Elbing/Bütow/Osterode is not securely assigned to this southwestern lineage.",
+"rorschach":"Eastern Swiss Rorschach/Roschach and Rosenberg family: St Gallen abbey, Herisau, Berneck/Bernang, Zuckenriet, Rosenburg, Urstein, Lake Constance/Rhine valley. Eglolf/Egilolf/Egloff/Egli and Rudolf occur, sometimes as brothers with the same given name. Service abroad is possible, including Teutonic Order contexts with Swiss connections; no rigid branch-end date cutoff.",
+"czech":"South Bohemian Rožmberk/Rosenberg dynasty, de Rosis/z Rožmberka: Rožmberk castle, Hohenfurt/Vyšší Brod, Krumau/Český Krumlov, Wittingau/Třeboň, Vltava/Moldau. Wok/Vok, Peter/Petr, Jost/Jodok/Jošt, Ulrich/Oldřich and Johann/Jan; four brothers Peter, Jost, Ulrich, Johann in the 1300s. Passau, Haslach and Upper Austrian or imperial affairs can involve this family.",
+"lengenfelder":"Lengenfelder/Lengenfelderin/Lengenvelder/Lengfelder/von Lengenfeld with Rosenberg near Sulzbach in the Upper Palatinate: Sulzbach/Sultzpach, Kastl/Chastel, Pfeffertshofen, Gebenbach, Voyt/Franch and Löhlein associates. Konrad/Chunrad/Chunrat, Jeute/Jeutt and sons Konrad, Örtel, Heinrich, Friedrich are attested combinations. Bare Lengenfeld can concern unrelated Tirschenreuth or other namesakes.",
+"orsini":"Austrian Styrian/Carinthian Rosenberg, later Orsini/Ursini-Rosenberg: medieval ab dem Rosenberg/Graz/Graben context; later Johann Andreas, Georg Nikolaus, Wolfgang Andreas, Klagenfurt offices, Lerchenau, Grafenstein, Maria Loretto, Rosegg. Orsini double name authorized in 1684; earlier dates and bare Rosenberg do not exclude this house. Distinguish the Czech dynasty's Orsini ancestry claim.",
+"brandenburg":"Northern Rosenberg bearers in Brandenburg/Magdeburg context: Johann/Jan and Werner/Wernher, Plate/Altenplathow with Bredow in 1338, Kutzkow/Cutzekowe and Brandenburg episcopal/Magdeburg fiefs around 1400. Their home castle and link to Barby/Saale Rosenburg remain unproved; Burchard von Rosenburg alone is not sufficient identification.",
+"unrelated":"None of those eight families is substantively represented; coincidental modern surname, place or institution is unrelated.",
+"mixed":"Multiple of the eight families are explicitly substantively represented.", "uncertain":"Evidence is insufficient to distinguish a historical family."}
 
 def h(x): return hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(",",":")).encode()).hexdigest()
 def state(doc, reference):
@@ -32,7 +49,10 @@ def model_card(url,model,timeout):
     ident={k:c.get(k) for k in ("name","run","base","lora","device","backend","dtype","temperature","release_date")}
     return c,h(ident)
 def cases_from(args):
-    if args.cases:
+    if args.document:
+        p=Path(args.document)
+        yield str(p),p,{}
+    elif args.cases:
         for n,line in enumerate(Path(args.cases).read_text(encoding="utf-8").splitlines(),1):
             if line.strip():
                 c=json.loads(line); yield c.get("id",c.get("path",str(n))),Path(c["path"]),c
@@ -44,7 +64,12 @@ def cases_from(args):
                 yield str(p),p,{}
             except Exception as e: print(f"skip {p}: {e}",file=sys.stderr)
 def main():
-    ap=argparse.ArgumentParser(description=__doc__); ap.add_argument("--cases");ap.add_argument("--documents-dir",default="data/documents");ap.add_argument("--config");ap.add_argument("--output",default="/tmp/kev-classifications.jsonl");ap.add_argument("--base-url",default="http://127.0.0.1:8009");ap.add_argument("--model",default="kev-latest");ap.add_argument("--timeout",type=float,default=180);ap.add_argument("--limit",type=int);ap.add_argument("--threshold",type=float);ap.add_argument("--source-guards",action="store_true",help="also require direct source-text family attribution before accepting a predicted label");a=ap.parse_args()
+    ap=argparse.ArgumentParser(description=__doc__)
+    inputs=ap.add_mutually_exclusive_group()
+    inputs.add_argument("--document",help="score one document JSON regardless of its current labels or deleted flag")
+    inputs.add_argument("--cases")
+    inputs.add_argument("--documents-dir",default="data/documents")
+    ap.add_argument("--config");ap.add_argument("--output",default="/tmp/kev-classifications.jsonl");ap.add_argument("--base-url",default="http://127.0.0.1:8009");ap.add_argument("--model",default="kev-latest");ap.add_argument("--timeout",type=float,default=180);ap.add_argument("--limit",type=int);ap.add_argument("--threshold",type=float);ap.add_argument("--source-guards",action="store_true",help="also require direct source-text family attribution before accepting a predicted label");a=ap.parse_args()
     cfg=json.loads(Path(a.config).read_text()) if a.config else {"reference":REF,"criteria":CRITERIA}
     threshold=a.threshold if a.threshold is not None else cfg.get("acceptance_threshold",.6)
     eligible=cfg.get("eligible_choices",["franconian","schenk","monch","rorschach","czech"])
@@ -77,13 +102,13 @@ def main():
                 row={"status":"ok","case_id":cid,"path":str(path),"source_fingerprint":sf,"input_sha256":hashlib.sha256(rawstate.encode()).hexdigest(),"input_characters":len(rawstate),"prompt_hash":qh,"model":a.model,"model_id":response.get("model"),"model_fingerprint":mf,"model_card":model,"request_id":reqid,"raw_response":response,"prediction":pred,"probabilities":probs,"latency_seconds":time.monotonic()-start}
                 exp=case.get("expected_class",case.get("expected"))
                 if isinstance(exp,dict):
-                    positives=[k for k in CHOICES[:6] if exp.get(k) is True]
+                    positives=[k for k in FAMILY_CHOICES if exp.get(k) is True]
                     exp=positives[0] if len(positives)==1 else ("mixed" if positives else ("unrelated" if exp.get("unrelated") is True else None))
                 row["expected"]=exp
                 with out.open("a",encoding="utf-8") as f:f.write(json.dumps(row,ensure_ascii=False)+"\n")
             exp=case.get("expected_class",case.get("expected"))
             if isinstance(exp,dict):
-                positives=[k for k in CHOICES[:6] if exp.get(k) is True]
+                positives=[k for k in FAMILY_CHOICES if exp.get(k) is True]
                 exp=positives[0] if len(positives)==1 else ("mixed" if positives else ("unrelated" if exp.get("unrelated") is True else None))
             row=dict(row,expected=exp)
             rows.append(row);print(f"{cid}: {row['prediction']} ({row['probabilities'][row['prediction']]:.3f})",file=sys.stderr)

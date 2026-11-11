@@ -207,19 +207,25 @@ The job is resumable. Keep the local Kev server running until it completes.
 ### Kev family classification
 
 `scripts/kev_classify_documents.py` provides a reusable dry scorer for a single
-nine-way family choice. It accepts scored JSONL cases or, by default, scans only
+eleven-way family choice: eight families (`franconian`, `schenk`, `monch`,
+`rorschach`, `czech`, `lengenfelder`, `orsini`, `brandenburg`) plus `unrelated`,
+`mixed`, and `uncertain`. The family definitions are in [KEV.md](KEV.md).
+It accepts one document with `--document`, scored JSONL cases or, by default, scans only
 active `to review` documents. The model receives date, place, citations, titles,
-and complete German/Latin/English/summary text; labels, facts, guesses, and URLs
+and complete German/Latin/summary text; English translations, labels, facts, guesses, and URLs
 are excluded. It writes resumable, append-only JSONL with source and prompt
 fingerprints, model identity, exact input hash/length, raw response, choice, and
 probabilities. Errors are recorded and retried on a later run. It never applies
 labels.
 
 ```text
+python3 scripts/kev_classify_documents.py --document data/documents/1397-04-29.json
 python3 scripts/kev_classify_documents.py --cases reports/kev-benchmark/cases-scored.jsonl --config reports/kev-improvement/frozen-config.json --output reports/kev-improvement/results.jsonl
 python3 scripts/kev_classify_documents.py --documents-dir data/documents --limit 20
 ```
 
+An explicit `--config` overrides the default criteria and may retain the older
+nine-choice task. The expanded task requires fresh validation before label application.
 The frozen prompt and development selection are documented in
 `reports/kev-improvement/selection.md`.
 
