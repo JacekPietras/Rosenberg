@@ -7,6 +7,13 @@
       "url": "https://www.monasterium.net/mom/AT-HHStA/SbgE/AUR_1382.1/charter",
       "german": "Absagebrief von Weyreich von Truchtlingen, Hans von Plaunheim (Plawenheim), Kuntz von Rosenberg, Wilhelm von Huenheim (?) und Ras von Helmstat an Eb Pilgrim.",
       "english": "Letter of denunciation from Weyreich von Truchtlingen, Hans von Plaunheim (Plawenheim), Kuntz von Rosenberg, Wilhelm von Huenheim (?), and Ras von Helmstat to Bishop Pilgrim.",
+      "facts": [
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "sent an Absagebrief with Weyreich von Truchtlingen, Hans von Plaunheim, Wilhelm von Huenheim and Ras von Helmstatt to Archbishop Pilgrim."
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-OeStA-HHStA/AUR-Salzburg-Erzstift/HHSTA_Salzburg_1382_00_00-1-21.jpg"

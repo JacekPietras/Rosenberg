@@ -5,7 +5,38 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamt Creglingen, Urkunden 351",
       "url": "https://www.gda.bayern.de/gvl/document/1ab7a8f1-8e43-42c2-8c4c-b27a00d2d9f6",
-      "german": "Lehenrevers: Asmus und sein Sohn Jeronimus von Rosenberg gegen die Markgrafen Friedrich und Sigmund von Brandenburg um etliche Wiesen zu Waldmannshofen. - Siegler: Asmus, Amtmann zu Uffenheim und Hieronymus, beide von Rosenberg, Ritter."
+      "german": "Lehenrevers: Asmus und sein Sohn Jeronimus von Rosenberg gegen die Markgrafen Friedrich und Sigmund von Brandenburg um etliche Wiesen zu Waldmannshofen. - Siegler: Asmus, Amtmann zu Uffenheim und Hieronymus, beide von Rosenberg, Ritter.",
+      "facts": [
+        {
+          "person": "Asmus von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Amtmann zu Uffenheim"
+          ],
+          "type": "parent",
+          "of": "Hieronymus von Rosenberg",
+          "ofTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Asmus von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Amtmann zu Uffenheim"
+          ],
+          "type": "generic",
+          "content": "with his son Hieronymus acknowledged meadows at Waldmannshofen as fiefs from Margraves Friedrich and Sigmund of Brandenburg."
+        },
+        {
+          "person": "Hieronymus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "with his father Asmus acknowledged meadows at Waldmannshofen as fiefs from Margraves Friedrich and Sigmund of Brandenburg."
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,16 @@
       "source": "Innichen Stiftsarchiv Innichen Urkunden Urk. 548 516, Urk. 548",
       "url": "https://www.monasterium.net/mom/IT-StiAI/Urkunden/548/charter",
       "german": "Die vier Regenten des Bischofs von Freising Philipp Pfalzgraf bei Rhein, Johann von Lamberg (Domdekan zu Freising), Ruprecht Auer (Domherr), Michael von Rosenberg (Hofmeister) und Warmund von Fraunberg zum Huebenstein, verleihen dem Georg von Welsperg den halben Hof zu Zell unter Welsberg, das Halbe Gut zu Winkel hinter der Burg Welsperg und ein Gut zu Toblach als Zinslehen. S: Johann von Lamberg Or. Perg., 1 anh. Siegel",
+      "facts": [
+        {
+          "person": "Michael von Rosenberg",
+          "personTitle": [
+            "Hofmeister"
+          ],
+          "type": "generic",
+          "content": "as a regent of the Bishop of Freising, granted Georg von Welsperg properties at Zell, Winkel and Toblach as a Zinslehen together with the other regents."
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/IT-StiAI/STAI_XXIII_U548_r.jpg"

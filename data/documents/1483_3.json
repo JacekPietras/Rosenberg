@@ -5,7 +5,14 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Historica 196",
       "url": "https://www.gda.bayern.de/gvl/document/54d533dd-6a7e-4927-a54e-5c829d90ffc6",
-      "german": "Berlichingen und Rosenberg: Ein Streit zwischen Conrad von Berlichingen und Jörg von Rosenberg"
+      "german": "Berlichingen und Rosenberg: Ein Streit zwischen Conrad von Berlichingen und Jörg von Rosenberg",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was involved in a dispute with Konrad von Berlichingen."
+        }
+      ]
     }
   ]
 }

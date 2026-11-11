@@ -5,7 +5,14 @@
     {
       "source": "StAN, Reichsstadt Weißenburg, Urkunden gestrichen 340",
       "url": "https://www.gda.bayern.de/gvl/document/1ea71dcb-462e-40a5-b2c3-be5c60b3b91b",
-      "german": "Hanns Amman und Steffan Oder, Bürger zu Weißenburg, bekennen, von dem Bischof Gabriel zu Eystett das Dorf Suffersheim zu Lehen bekommen zu haben als Lehenträger der Stadt Weißenburg. - Siegler: Jeronimus von Rosenberg."
+      "german": "Hanns Amman und Steffan Oder, Bürger zu Weißenburg, bekennen, von dem Bischof Gabriel zu Eystett das Dorf Suffersheim zu Lehen bekommen zu haben als Lehenträger der Stadt Weißenburg. - Siegler: Jeronimus von Rosenberg.",
+      "facts": [
+        {
+          "person": "Hieronymus von Rosenberg",
+          "type": "generic",
+          "content": "sealed the fief acknowledgment by Hans Amman and Stephan Oder for Suffersheim on behalf of Weißenburg."
+        }
+      ]
     }
   ]
 }

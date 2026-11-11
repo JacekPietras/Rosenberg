@@ -5,7 +5,17 @@
     {
       "source": "Staatsarchiv Freiburg T 101/1 Nr. 573",
       "url": "https://www.landesarchiv-bw.de/plink/?f=5-2384176",
-      "german": "Der geistliche Richter des Bischofs von Speyer bestätigt, den Inhalt des Verhörs von Hans von Rosenberg zu Ossingen, der wegen einer Feindschaft nicht selbst erscheinen wollte, durch den Gerichtsschreiber Adam Metzel auf Antrag des Pastors in Nußdorf Niklaus Gammel, des Anwalts von Friedrich von Fleckenstein zu Madenburg, Herrn zu Dagstuhl, folgendermaßen, dass Hans von Rosenberg gesagt hätte, dass die armen Leute in den Gemeinden im Ried Friedrich von Fleckenstein und seine Vorfahren samt ihren Pferden und Hunden bei ihren Jagden verpflegen und zu Dienst sein mussten.\n\nLaufzeit: 1469 Mai 12"
+      "german": "Der geistliche Richter des Bischofs von Speyer bestätigt, den Inhalt des Verhörs von Hans von Rosenberg zu Ossingen, der wegen einer Feindschaft nicht selbst erscheinen wollte, durch den Gerichtsschreiber Adam Metzel auf Antrag des Pastors in Nußdorf Niklaus Gammel, des Anwalts von Friedrich von Fleckenstein zu Madenburg, Herrn zu Dagstuhl, folgendermaßen, dass Hans von Rosenberg gesagt hätte, dass die armen Leute in den Gemeinden im Ried Friedrich von Fleckenstein und seine Vorfahren samt ihren Pferden und Hunden bei ihren Jagden verpflegen und zu Dienst sein mussten.\n\nLaufzeit: 1469 Mai 12",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "zu Ossingen"
+          ],
+          "type": "generic",
+          "content": "testified that the communities in the Ried had to provide provisions and services to Friedrich von Fleckenstein and his ancestors on their hunts."
+        }
+      ]
     }
   ]
 }

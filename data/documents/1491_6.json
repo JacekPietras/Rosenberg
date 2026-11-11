@@ -5,7 +5,19 @@
     {
       "source": "BayHStA, GU Hirschberg (Landgericht) 378",
       "url": "https://www.gda.bayern.de/gvl/document/ca89c57a-abfe-42b3-a4be-9bd2750fac7d",
-      "german": "Lehengegenbrief des Ritters Jeronimus von Rosenberg zu Uttenhofen, Hofmeister zu Eystett, für Herzog Albrecht IV. über 4 Höfe und 2 Sölden zu Obern-Ried bei Uttenhoven in der Seglau bei der Schwarztach.\nVorbesitzer: Wilhelm Schenck von Geyrn."
+      "german": "Lehengegenbrief des Ritters Jeronimus von Rosenberg zu Uttenhofen, Hofmeister zu Eystett, für Herzog Albrecht IV. über 4 Höfe und 2 Sölden zu Obern-Ried bei Uttenhoven in der Seglau bei der Schwarztach.\nVorbesitzer: Wilhelm Schenck von Geyrn.",
+      "facts": [
+        {
+          "person": "Hieronymus von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "zu Uttenhofen",
+            "Hofmeister zu Eichstätt"
+          ],
+          "type": "generic",
+          "content": "acknowledged a fief of farms and Sölden at Obern-Ried from Duke Albrecht IV."
+        }
+      ]
     }
   ]
 }

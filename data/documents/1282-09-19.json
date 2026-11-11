@@ -9,7 +9,17 @@
       "source": "Chartularium Sangallense IV, Nr. 2093, S. 248-249., 1282 IX 19",
       "url": "https://www.monasterium.net/mom/CSGIV/1282_IX_19/charter",
       "german": "Ritter Heinrich II. von (Alt) Aspermont 2 vermacht die Burg Maienfeld 3 seinem Bruder und bestimmt u.a., dass seiner Gemahlin Elisabeth von Rosenberg 170 Mark für ihre Dos zurückerstattet werden (. . . quod de pradictis bonis meis centum septuaginta marcae argenti dominae Elizabeths uxori meae dictae de Rosenberch 4, quae nomine ipsius dotis ad me devenerunt, refundantur, si me supervixerit et superstes fuerit, vel ipsorum iustis a) hasredibus quibuscumque ).",
-      "english": "Knight Heinrich II von (Alt) Aspermont bequeaths the castle of Maienfeld to his brother and determines, among other things, that 170 marks of his goods shall be refunded to his wife Elisabeth von Rosenberg for their dowry (. . . quod de pradictis bonis meis centum septuaginta marcae argenti dominae Elizabeths uxori meae dictae de Rosenberch 4, quae nomine ipsius dotis ad me devenerunt, refundantur, si me supervixerit et superstes fuerit, vel ipsorum iustis a) hereditibus quibuscumque )."
+      "english": "Knight Heinrich II von (Alt) Aspermont bequeaths the castle of Maienfeld to his brother and determines, among other things, that 170 marks of his goods shall be refunded to his wife Elisabeth von Rosenberg for their dowry (. . . quod de pradictis bonis meis centum septuaginta marcae argenti dominae Elizabeths uxori meae dictae de Rosenberch 4, quae nomine ipsius dotis ad me devenerunt, refundantur, si me supervixerit et superstes fuerit, vel ipsorum iustis a) hereditibus quibuscumque ).",
+      "facts": [
+        {
+          "person": "Heinrich von Aspermont",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "spouse",
+          "of": "Elisabeth von Rosenberg"
+        }
+      ]
     }
   ]
 }

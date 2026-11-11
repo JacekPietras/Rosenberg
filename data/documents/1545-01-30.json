@@ -5,7 +5,14 @@
     {
       "source": "StadtA GU, Gross-Umstadt, I/1/12",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=9457252",
-      "german": "Kurfürst Friedrich weist die Zinsen einer Anleihe von 1000 Gulden, die er von Margarete von Helmstatt geb. von Rosenberg aufgenommen hat, auf die Kellerei Umstadt an und bittet die Stadt die Vereinbarung als Bürge mitzusiegeln (Original)"
+      "german": "Kurfürst Friedrich weist die Zinsen einer Anleihe von 1000 Gulden, die er von Margarete von Helmstatt geb. von Rosenberg aufgenommen hat, auf die Kellerei Umstadt an und bittet die Stadt die Vereinbarung als Bürge mitzusiegeln (Original)",
+      "facts": [
+        {
+          "person": "Margaretha von Rosenberg",
+          "type": "generic",
+          "content": "lent money to Elector Friedrich, who assigned the interest to the Kellerei Umstadt."
+        }
+      ]
     }
   ]
 }

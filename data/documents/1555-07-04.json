@@ -6,6 +6,17 @@
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 1336",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1725751",
       "german": "Albrecht von Rosenberg zu Boxberg, Ritter, verkauft auf ewige Zeiten dem Wolf von Hardheim und dessen Erben alle Rechte und Gerechtigkeiten an seinem Viertel des Dorfs Bretzingen um 1.500 Gulden.\n\nLaufzeit: 1555 Juli 4 (Donnerstag nach Peter und Paul 1535)",
+      "facts": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "zu Boxberg"
+          ],
+          "type": "generic",
+          "content": "sold his rights in a quarter of Bretzingen to Wolf von Hardheim and his heirs."
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001725751%2F04_0001725751_0001_4-1725751-1.jpg"

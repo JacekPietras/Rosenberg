@@ -5,7 +5,17 @@
     {
       "source": "ISG FFM, H.06.09, 1907",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10278816",
-      "german": "09.08.1494: Gelübde des Schuldgefangenen Philipp Zink unter Bürgschaft des Junker Friedrich von Rosenberg, sich wieder zu stellen.\n\nSiegler: Wendel von Aluczen/ Alnucze ?, aufgedrücktes Siegel (verloren)"
+      "german": "09.08.1494: Gelübde des Schuldgefangenen Philipp Zink unter Bürgschaft des Junker Friedrich von Rosenberg, sich wieder zu stellen.\n\nSiegler: Wendel von Aluczen/ Alnucze ?, aufgedrücktes Siegel (verloren)",
+      "facts": [
+        {
+          "person": "Friedrich von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ],
+          "type": "generic",
+          "content": "stood surety for the imprisoned debtor Philipp Zink’s promise to return."
+        }
+      ]
     }
   ]
 }

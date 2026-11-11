@@ -5,7 +5,14 @@
     {
       "source": "StAN, Fürstentum Ansbach, Lehenurkunden 1238",
       "url": "https://www.gda.bayern.de/gvl/document/03c4ed20-910f-4fa1-9761-6d152ddb7d85",
-      "german": "Reversbrief des Hieronimus (\"Jeronimus\") von Rosenberg über die Dörfer Burggriesbach und Schmellnricht (\"Schmellenried genannt Niederreut\") und die Wiesmahd im Schwall (\"Swall\")."
+      "german": "Reversbrief des Hieronimus (\"Jeronimus\") von Rosenberg über die Dörfer Burggriesbach und Schmellnricht (\"Schmellenried genannt Niederreut\") und die Wiesmahd im Schwall (\"Swall\").",
+      "facts": [
+        {
+          "person": "Hieronymus von Rosenberg",
+          "type": "generic",
+          "content": "issued a fief acknowledgment for the villages Burggriesbach and Schmellnricht and a meadow in the Schwall."
+        }
+      ]
     }
   ]
 }

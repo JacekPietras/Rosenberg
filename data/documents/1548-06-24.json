@@ -1,11 +1,32 @@
 {
   "date": "1548-06-24",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 69 von Helmstatt U 916",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-2111368",
-      "german": "Margarete geb. von Rosenberg, Witwe Alexanders von Helmstatt, ihr ältester Sohn Alexander sowie Balthasar von Rosenberg und Philipp Euler von Dieburg als Vormünder der Brüder Hans Friedrich, Hans Wolf, Martin und Weiprecht von Helmstatt quittieren Konrad von Helmstatt, Vogt zu Bruchsal, über die Übergabe einer Verschreibung von 500 fl. Die Verschreibung war nach einem Schiedsspruch vom 30. April 1537 (Mo n. Cantate) durch Bischof Philipp von Speyer zwischen den Ausstellern und Konrad von Helmstatt und dessen +Frau Klar Anna, geb. Greck von Kochendorf, in Speyer hinterlegt worden. Die Aussteller verzichten damit auf das Erbe +Weiprechts von Helmstatt.Siegler: Alexander von Helmstatt und die Vormünder\n\nLaufzeit: 1548 (1548 Juni 24 - Johannes baptista)"
+      "german": "Margarete geb. von Rosenberg, Witwe Alexanders von Helmstatt, ihr ältester Sohn Alexander sowie Balthasar von Rosenberg und Philipp Euler von Dieburg als Vormünder der Brüder Hans Friedrich, Hans Wolf, Martin und Weiprecht von Helmstatt quittieren Konrad von Helmstatt, Vogt zu Bruchsal, über die Übergabe einer Verschreibung von 500 fl. Die Verschreibung war nach einem Schiedsspruch vom 30. April 1537 (Mo n. Cantate) durch Bischof Philipp von Speyer zwischen den Ausstellern und Konrad von Helmstatt und dessen +Frau Klar Anna, geb. Greck von Kochendorf, in Speyer hinterlegt worden. Die Aussteller verzichten damit auf das Erbe +Weiprechts von Helmstatt.Siegler: Alexander von Helmstatt und die Vormünder\n\nLaufzeit: 1548 (1548 Juni 24 - Johannes baptista)",
+      "facts": [
+        {
+          "person": "Balthasar von Rosenberg",
+          "type": "generic",
+          "content": "served as guardian of Hans Friedrich, Hans Wolf, Martin and Weiprecht von Helmstatt and acknowledged receipt of a debt instrument from Konrad von Helmstatt."
+        },
+        {
+          "person": "Margaretha von Rosenberg",
+          "type": "spouse",
+          "of": "Alexander von Helmstatt",
+          "ofDeceased": true
+        },
+        {
+          "person": "Margaretha von Rosenberg",
+          "type": "parent",
+          "of": "Alexander von Helmstatt"
+        }
+      ]
     }
   ]
 }

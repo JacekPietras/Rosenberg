@@ -5,7 +5,14 @@
     {
       "source": "Staatsarchiv Freiburg T 101/1 Nr. 480",
       "url": "https://www.landesarchiv-bw.de/plink/?f=5-2382849",
-      "german": "Hans von Rosenberg, Friedrich Zoller von Lutern und Friedrich Brocke von Weybstat bezeugen die Abrechnung über Einnahmen und Ausgaben über die Dörfer im Ried, die Friedrich von Fleckenstein, Hans von Dirmstein und der Schultheiß von Roppenheim gemacht haben.\n\nLaufzeit: 1457 Februar 11"
+      "german": "Hans von Rosenberg, Friedrich Zoller von Lutern und Friedrich Brocke von Weybstat bezeugen die Abrechnung über Einnahmen und Ausgaben über die Dörfer im Ried, die Friedrich von Fleckenstein, Hans von Dirmstein und der Schultheiß von Roppenheim gemacht haben.\n\nLaufzeit: 1457 Februar 11",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "type": "generic",
+          "content": "witnessed the accounting for revenue and expenditure concerning the villages in the Ried."
+        }
+      ]
     }
   ]
 }

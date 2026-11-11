@@ -5,7 +5,19 @@
     {
       "source": "StAN, Hochstift Eichstätt, Kloster Plankstetten, Urkunden 128",
       "url": "https://www.gda.bayern.de/gvl/document/9593d5cc-7a1e-4bb6-8702-1d180d6477fc",
-      "german": "Ritter Jeronimus von Rosenberg (BA. Sulzbach?) zu Uttenhoven (Uttenhofen, Gemeinde Ebenried, BA. Hilpoltstein), Pfleger zu Hirsperg, tauscht mit Abt Matheus von Planckstetten einen Zins aus der zu seinem Schloss gehörigen Weyherwiese, der dem Kloster zusteht, gegen jenen aus einem Hof zu Uttenhofen, auf dem Jorg Anger sitzt. - Anweisung an den Letzteren zur Zinsreichung an das Kloster."
+      "german": "Ritter Jeronimus von Rosenberg (BA. Sulzbach?) zu Uttenhoven (Uttenhofen, Gemeinde Ebenried, BA. Hilpoltstein), Pfleger zu Hirsperg, tauscht mit Abt Matheus von Planckstetten einen Zins aus der zu seinem Schloss gehörigen Weyherwiese, der dem Kloster zusteht, gegen jenen aus einem Hof zu Uttenhofen, auf dem Jorg Anger sitzt. - Anweisung an den Letzteren zur Zinsreichung an das Kloster.",
+      "facts": [
+        {
+          "person": "Hieronymus von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "zu Uttenhofen",
+            "Pfleger zu Hirschberg"
+          ],
+          "type": "generic",
+          "content": "exchanged a rent from the Weyherwiese belonging to his castle with Abbot Matheus of Plankstetten for a rent from a farm at Uttenhofen."
+        }
+      ]
     }
   ]
 }

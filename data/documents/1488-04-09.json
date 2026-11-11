@@ -1,11 +1,26 @@
 {
   "date": "1488-04-09",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamt Crailsheim, Urkunden 365",
       "url": "https://www.gda.bayern.de/gvl/document/e5416959-90f4-4e25-b4a4-85866cfeb151",
-      "german": "Kaufbrief: Ursula von Rosenberg, geb. von Adelsheim, verkauft eine Gült zu Weschartshausen an die S. Johannispfleger der Pfarrkirche zu Crailsheim um 50 Gulden rhein. - Siegler: Ursula von Rosenberg, geb. von Adelsheim."
+      "german": "Kaufbrief: Ursula von Rosenberg, geb. von Adelsheim, verkauft eine Gült zu Weschartshausen an die S. Johannispfleger der Pfarrkirche zu Crailsheim um 50 Gulden rhein. - Siegler: Ursula von Rosenberg, geb. von Adelsheim.",
+      "facts": [
+        {
+          "person": "Ursula von Rosenberg",
+          "type": "generic",
+          "content": "sold a rent at Weschartshausen to the St. Johann administrators of the Crailsheim parish church."
+        },
+        {
+          "person": "Ursula von Rosenberg",
+          "type": "generic",
+          "content": "sealed the sale of a rent at Weschartshausen."
+        }
+      ]
     }
   ]
 }

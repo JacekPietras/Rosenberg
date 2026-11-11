@@ -8,6 +8,24 @@
       "url": "https://www.gda.bayern.de/gvl/document/3b65485e-4665-4704-a4dc-5de7cdf395b7",
       "german": "Fürstbischof Johann zu Würzpurg gibt lehenherrliche Zustimmung dazu, dass Hans Adel von Tottenheim zu Schupffe seiner Ehefrau Margeth von Rosenberg 400 fl auf den halben Teil des Zehnten zu Aletzheym, für den der Vorbesitzer Hans Munich von Heynstat, Wiederkaufsrecht hat, verschrieben hat. - Siegler: Aussteller.",
       "english": "Bishop Johann of Würzburg gave his lordly consent for Hans Adel von Dottenheim of Schüpf to assign 400 florins to his wife, Margeth von Rosenberg, secured on half of the tithe at Aletzheim, which had a right of redemption held by its previous possessor, Hans Munich von Hainstatt.",
+      "facts": [
+        {
+          "person": "Hans Adel von Dottenheim",
+          "personTitle": [
+            "zu Schüpf"
+          ],
+          "type": "spouse",
+          "of": "Margaretha von Rosenberg"
+        },
+        {
+          "person": "Hans Adel von Dottenheim",
+          "personTitle": [
+            "zu Schüpf"
+          ],
+          "type": "generic",
+          "content": "assigned money to his wife Margaretha von Rosenberg secured on half the tithe at Aletzheim, with Bishop Johann of Würzburg’s consent."
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/3b65485e-4665-4704-a4dc-5de7cdf395b7/1/full/max/0/default.jpg"

@@ -11,7 +11,25 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400456000000620001148",
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x03222393989562920210713150716254"
       ],
-      "german": "Friedrich Pfalzgraf bei Rhein und Herzog in Bayern belehnt den Zeyßolf von Rosenberg und seinen Vetter Lorenz von Rosenberg erblich mit einem Viertel der Stadt Aub (Aw), das der gestorbene Ritter Konrad von Rosenberg und seine Voreltern von der Pfalz zu Mannlehen trugen. Hierdurch bleiben seine, seiner Leute und Dritter Rechte unberührt. Die Belehnten haben die üblichen Lehnspflichten zu übernehmen. -Er bestätigt den durch Zeyßolf geleisteten Lehnseid.-\n\nSiegler: der Aussteller.- Dorstags nach trium regum, Heydelberg.\n\nAusf., Perg., Sg. besch. - Nr. 1086.\n\nReg. Nr. 1144"
+      "german": "Friedrich Pfalzgraf bei Rhein und Herzog in Bayern belehnt den Zeyßolf von Rosenberg und seinen Vetter Lorenz von Rosenberg erblich mit einem Viertel der Stadt Aub (Aw), das der gestorbene Ritter Konrad von Rosenberg und seine Voreltern von der Pfalz zu Mannlehen trugen. Hierdurch bleiben seine, seiner Leute und Dritter Rechte unberührt. Die Belehnten haben die üblichen Lehnspflichten zu übernehmen. -Er bestätigt den durch Zeyßolf geleisteten Lehnseid.-\n\nSiegler: der Aussteller.- Dorstags nach trium regum, Heydelberg.\n\nAusf., Perg., Sg. besch. - Nr. 1086.\n\nReg. Nr. 1144",
+      "facts": [
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as an hereditary fief from Pfalzgraf Friedrich together with his Vetter Lorenz von Rosenberg."
+        },
+        {
+          "person": "Lorenz von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as an hereditary fief from Pfalzgraf Friedrich together with his Vetter Zaisolf von Rosenberg."
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "kin",
+          "of": "Lorenz von Rosenberg",
+          "term": "Vetter"
+        }
+      ]
     }
   ]
 }

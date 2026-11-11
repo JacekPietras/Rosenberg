@@ -5,7 +5,17 @@
     {
       "source": "Staatsarchiv Wertheim G-Rep. 102 Nr. 5305",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-379498",
-      "german": "Konrad von Rosenberg, Amtmann zu Karlburg, Heinz Cremer, Gerlach Fledener, Conrad Schrutenbach und Hans Zewloßheim, Bürger in Karlstadt, allesamt Freischöffen der \"heiligen heymlichen achte\", geben bekannt, dass Johann Manhaff, Freigraf der Herrschaft Waldeck, einen Gerichtstag anberaumt hat zwischen Betz Hepfenheim, Bürger in Karlstadt, und Cunz Vogel, Bürger in Lohr \"auf der anderen Seite gegen Gemünden\". Vorausgegangen waren Streitigkeiten über den Gerichtsstand bei einem Streit über Güter in Weinsberg. Die Aussteller haben den Streit nicht schlichten können. Darauf hat Cunz Vogel vorgeschlagen, an das Stadtgericht oder das zentgericht in Lohr zu gehen, während Hepfenheim das Landgericht Würzburg oder einen der Stadträte von Würzburg, Gemünden, Hammelburg oder Karlstadt vorschlug. Ankündigung der Siegel von Heinrich Conrad von Rosenberg, Hans Cremer und Gerlach Fledener.Folgt noch Vermerk der Karlstädter Bürger Hans Koch und Claus Wortwin sowie von Hans Craft zu Mulbach, allesamt rechte Freischöffen \"der heiligen heimlichen achte\", dass sie anwesend waren, als diese Urkunde Betze Hepfenheim bzw. seinem Procurator vorgelesen wurde."
+      "german": "Konrad von Rosenberg, Amtmann zu Karlburg, Heinz Cremer, Gerlach Fledener, Conrad Schrutenbach und Hans Zewloßheim, Bürger in Karlstadt, allesamt Freischöffen der \"heiligen heymlichen achte\", geben bekannt, dass Johann Manhaff, Freigraf der Herrschaft Waldeck, einen Gerichtstag anberaumt hat zwischen Betz Hepfenheim, Bürger in Karlstadt, und Cunz Vogel, Bürger in Lohr \"auf der anderen Seite gegen Gemünden\". Vorausgegangen waren Streitigkeiten über den Gerichtsstand bei einem Streit über Güter in Weinsberg. Die Aussteller haben den Streit nicht schlichten können. Darauf hat Cunz Vogel vorgeschlagen, an das Stadtgericht oder das zentgericht in Lohr zu gehen, während Hepfenheim das Landgericht Würzburg oder einen der Stadträte von Würzburg, Gemünden, Hammelburg oder Karlstadt vorschlug. Ankündigung der Siegel von Heinrich Conrad von Rosenberg, Hans Cremer und Gerlach Fledener.Folgt noch Vermerk der Karlstädter Bürger Hans Koch und Claus Wortwin sowie von Hans Craft zu Mulbach, allesamt rechte Freischöffen \"der heiligen heimlichen achte\", dass sie anwesend waren, als diese Urkunde Betze Hepfenheim bzw. seinem Procurator vorgelesen wurde.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Amtmann zu Karlburg"
+          ],
+          "type": "generic",
+          "content": "reported with fellow Freischöffen an unresolved jurisdictional dispute between Betz Hepfenheim and Kunz Vogel."
+        }
+      ]
     }
   ]
 }

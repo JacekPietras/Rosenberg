@@ -5,7 +5,14 @@
     {
       "source": "StAWü, Lehensachen 7692",
       "url": "https://www.gda.bayern.de/gvl/document/a83498fb-db8b-46da-8bdf-0dcdad374bbd",
-      "german": "Akten des Lehenhofs Würzburg, betrifft Lehenauftragung des Schlosses, der Stadt und des Amtes Grünsfeld durch Dorothea Gräfin von Wertheim, Bewilligung von 1150 fl. jährlich Nutzung auf Schloss, Stadt und Amt Grünsfeld durch den Bischof von Würzburg an Barbara Landgräfin zum Leuchtenberg, Verkauf einer jährlichen Rente von 16 1/2 fl. von der Kellerei zu Grünsfeld durch den Landgrafen Georg zum Leuchtenberg an die Testamentarien des Lorenz Truchseß, Domherrn zu Würzburg, fernere bischöfl. Würzburgische Bewilligungen auf Grünsfeld, Verkauf von 150 fl. jährl. Zins von der Herrschaft und Stadt Grünsfeld durch den Landgrafen Georg Ludwig zum Leuchtenberg an die Vormünder der Regina Kunigunde von Rosenberg; andere derartige Bekenntnisse und Leuchtenbergische Schulden, Lehenserneuerungen, die dem Franz Echter von und zu Mespelbrunn wegen der Zent von Gissigheim verschriebenen und zu Grünsfeld befindlichen Leuchtenbergischen Unterpfänder, Separation des Leuchtenbergischen Eigentums von den Grünsfeldischen Lehengütern"
+      "german": "Akten des Lehenhofs Würzburg, betrifft Lehenauftragung des Schlosses, der Stadt und des Amtes Grünsfeld durch Dorothea Gräfin von Wertheim, Bewilligung von 1150 fl. jährlich Nutzung auf Schloss, Stadt und Amt Grünsfeld durch den Bischof von Würzburg an Barbara Landgräfin zum Leuchtenberg, Verkauf einer jährlichen Rente von 16 1/2 fl. von der Kellerei zu Grünsfeld durch den Landgrafen Georg zum Leuchtenberg an die Testamentarien des Lorenz Truchseß, Domherrn zu Würzburg, fernere bischöfl. Würzburgische Bewilligungen auf Grünsfeld, Verkauf von 150 fl. jährl. Zins von der Herrschaft und Stadt Grünsfeld durch den Landgrafen Georg Ludwig zum Leuchtenberg an die Vormünder der Regina Kunigunde von Rosenberg; andere derartige Bekenntnisse und Leuchtenbergische Schulden, Lehenserneuerungen, die dem Franz Echter von und zu Mespelbrunn wegen der Zent von Gissigheim verschriebenen und zu Grünsfeld befindlichen Leuchtenbergischen Unterpfänder, Separation des Leuchtenbergischen Eigentums von den Grünsfeldischen Lehengütern",
+      "facts": [
+        {
+          "subject": "The guardians of Regina Kunigunde von Rosenberg",
+          "type": "generic",
+          "content": "bought an annual rent from the lordship and town of Grünsfeld from Landgraf Georg Ludwig zu Leuchtenberg."
+        }
+      ]
     }
   ]
 }

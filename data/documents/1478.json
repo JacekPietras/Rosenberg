@@ -8,7 +8,14 @@
         "https://www.landesarchiv-bw.de/plink/?f=2-562870",
         "https://www.monasterium.net/mom/DE-StALB/DOMergentheimDienerschaftI/B_273_I_B%C3%BC_412/charter"
       ],
-      "german": "Verschreibung des Jörg von Rosenberg um ein Dienstgeld für 50 fl.\n\nLaufzeit: 1478\n\nUmfang: 1 Schr. (Perg.)"
+      "german": "Verschreibung des Jörg von Rosenberg um ein Dienstgeld für 50 fl.\n\nLaufzeit: 1478\n\nUmfang: 1 Schr. (Perg.)",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "issued a bond concerning service pay."
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,13 @@
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 1108",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1721397",
       "german": "König Friedrich III. verleiht dem Ulrich von Rosenberg das Gericht im Dorf Berolzheim.\n\nLaufzeit: 1450 April 16",
+      "facts": [
+        {
+          "person": "Ulrich von Rosenberg",
+          "type": "generic",
+          "content": "received the court in the village of Berolzheim from King Friedrich III."
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001721397%2F04_0001721397_0001_4-1721397-1.jpg"

@@ -5,7 +5,20 @@
     {
       "source": "StAN, Fürstentum Ansbach, Brandenburg Literalien 2191",
       "url": "https://www.gda.bayern.de/gvl/document/be297973-967d-4454-bf64-d68cd4db0975",
-      "german": "Das Testament der Margaretha Zobel, Jorgen von Rosenberg hinterlassener Witwe, zu dessen Geschäften sie Kurfürst Albrecht Achilles von Brandenburg eingesetzt hatte. Dat: am sampstag der do was der vierd dag des monden february (...), d.d. Feuchtwangen"
+      "german": "Das Testament der Margaretha Zobel, Jorgen von Rosenberg hinterlassener Witwe, zu dessen Geschäften sie Kurfürst Albrecht Achilles von Brandenburg eingesetzt hatte. Dat: am sampstag der do was der vierd dag des monden february (...), d.d. Feuchtwangen",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "Margaretha Zobel"
+        },
+        {
+          "person": "Margaretha Zobel",
+          "type": "generic",
+          "content": "made a testament and appointed Elector Albrecht Achilles of Brandenburg to execute its affairs."
+        }
+      ]
     }
   ]
 }

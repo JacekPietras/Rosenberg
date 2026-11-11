@@ -6,7 +6,17 @@
       "source": "Amberg, Staatsarchiv, 169",
       "url": "https://www.monasterium.net/mom/DE-StAAm/EnsdorfOSB/169/charter",
       "german": "Gerichtsbrief in der Klage des Klosters um Nutz und Gewere an dem Hof zu Eitlbrunn, auf dem der Mittermaier aufsitzt, und um die Gült, die dem Klosterjährlich davon fallen soll. Mit Insert der Urkunde desHans Sinzenhofer von Stockenfels und seiner Brüder Konrad und Friedrich von 1362 VIII 17 (= Urkunde Nr. 140). Aussteller: A: Konrad von Rosenberg, Viztum zu Amberg Empfänger: KlosterEnsdorf\n\nSiegler: S: LandgerichtAmberg (rückwärtsAufgedrückt; nur Reste erhalten)\n\nSiegel: S: LandgerichtAmberg (rückwärtsAufgedrückt; nur Reste erhalten)",
-      "english": "Court letter in the monastery's claim regarding use and possession of the farm at Eitlbrunn, occupied by the Mittermaier, and regarding the rent due to the monastery annually from it. With insertion of the deed of Hans Sinzenhofer of Stockenfels and his brothers Konrad and Friedrich of 1362 VIII 17 (= Deed No. 140). Issuer: A: Konrad von Rosenberg, Viztum (vicar) of Amberg Recipient: Ensdorf Monastery\n\nSealer: S: District Court Amberg (impressed reverse; only remnants preserved)\n\nSeal: S: District Court Amberg (impressed reverse; only remnants preserved)"
+      "english": "Court letter in the monastery's claim regarding use and possession of the farm at Eitlbrunn, occupied by the Mittermaier, and regarding the rent due to the monastery annually from it. With insertion of the deed of Hans Sinzenhofer of Stockenfels and his brothers Konrad and Friedrich of 1362 VIII 17 (= Deed No. 140). Issuer: A: Konrad von Rosenberg, Viztum (vicar) of Amberg Recipient: Ensdorf Monastery\n\nSealer: S: District Court Amberg (impressed reverse; only remnants preserved)\n\nSeal: S: District Court Amberg (impressed reverse; only remnants preserved)",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Viztum zu Amberg"
+          ],
+          "type": "generic",
+          "content": "issued a court record in Ensdorf Abbey’s lawsuit over possession and revenue from a farm at Eitlbrunn."
+        }
+      ]
     }
   ]
 }

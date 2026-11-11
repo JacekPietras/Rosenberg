@@ -5,7 +5,18 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamt Uffenheim, Urkunden 399",
       "url": "https://www.gda.bayern.de/gvl/document/84d1c290-1e59-4023-b13d-2784aa141c5d",
-      "german": "Kaufbrief: Jörg von Ehenheim zu Geyern und BraunedXXX verkauft dem Abt Endres auf dem Münchsberg und sseinem Konvent seinen dritten Teil der Vogtei zu Welbhausen um 700 Gulden rhein. Währung. - Zeugen: Erasmus von Rosenberg Ritter Amtmann zu Uffenheim, des Verkäufers SchwanserXXX."
+      "german": "Kaufbrief: Jörg von Ehenheim zu Geyern und BraunedXXX verkauft dem Abt Endres auf dem Münchsberg und sseinem Konvent seinen dritten Teil der Vogtei zu Welbhausen um 700 Gulden rhein. Währung. - Zeugen: Erasmus von Rosenberg Ritter Amtmann zu Uffenheim, des Verkäufers SchwanserXXX.",
+      "facts": [
+        {
+          "person": "Erasmus von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Amtmann zu Uffenheim"
+          ],
+          "type": "generic",
+          "content": "witnessed Georg von Ehenheim’s sale of his share of the Vogtei at Welbhausen to Münchsberg monastery."
+        }
+      ]
     }
   ]
 }

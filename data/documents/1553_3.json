@@ -11,7 +11,27 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400456000000620001284",
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x55926012992858820210713150716217"
       ],
-      "german": "Melchior Bischof zu Würzburg, Herzog zu Franken, belehnt Contze von Rosenberg (Roßenbergk) zu Waldmannshofen mit folgenden Lehen des Stifts Würzburg zu Mannlehen: der Hälfte der Kaplanei im Schloß zu Waldmannshofen; zwei Höfen zu Gülchsheim, auf deren einem Jakob Clainschrot sitzt, nachdem zuvor dort Mathes Hertlein ansäßig war, während auf dem anderen Cilians Vogel sitzt, während zuvor dort Lorenz Eck ansäßig war; einer Jahrgülte von 1 fl. und einem Fastnachtshuhn zu Steinach unterhalb von Brauneck (Brauenecke) von einem Gut, auf dem Lorenz Korn sitzt, während zuvor dort Contz Koler ansäßig war; je 4 Ml. Korn und Hafer sowie 4 Sommerhühner von dem Hof zu Geisselheim, auf dem Prosius Ditzel sitzt, während zuvor dort Contze Herpel ansäßig war; dem ganzen Zehnt zu Gülchsheim einschließlich Zubehör. - Rechte und Gewohnheiten des Bischofs, seiner Nachfolger sowie des Stifts Würzburg bleiben hierdurch ebenso unberührt wie die Verschreibung, die Stift Würzburg von dem gestorbenen Ritter Asmus und seinem gestorbenen Bruder Contz von Rosenberg erhielt. -\n\nSiegler: der Aussteller. - Am. dinstag nach s. Lucien tag.\n\nAusf., Perg., Sg. besch. - Nr. 1212.\n\nReg. Nr. 1278"
+      "german": "Melchior Bischof zu Würzburg, Herzog zu Franken, belehnt Contze von Rosenberg (Roßenbergk) zu Waldmannshofen mit folgenden Lehen des Stifts Würzburg zu Mannlehen: der Hälfte der Kaplanei im Schloß zu Waldmannshofen; zwei Höfen zu Gülchsheim, auf deren einem Jakob Clainschrot sitzt, nachdem zuvor dort Mathes Hertlein ansäßig war, während auf dem anderen Cilians Vogel sitzt, während zuvor dort Lorenz Eck ansäßig war; einer Jahrgülte von 1 fl. und einem Fastnachtshuhn zu Steinach unterhalb von Brauneck (Brauenecke) von einem Gut, auf dem Lorenz Korn sitzt, während zuvor dort Contz Koler ansäßig war; je 4 Ml. Korn und Hafer sowie 4 Sommerhühner von dem Hof zu Geisselheim, auf dem Prosius Ditzel sitzt, während zuvor dort Contze Herpel ansäßig war; dem ganzen Zehnt zu Gülchsheim einschließlich Zubehör. - Rechte und Gewohnheiten des Bischofs, seiner Nachfolger sowie des Stifts Würzburg bleiben hierdurch ebenso unberührt wie die Verschreibung, die Stift Würzburg von dem gestorbenen Ritter Asmus und seinem gestorbenen Bruder Contz von Rosenberg erhielt. -\n\nSiegler: der Aussteller. - Am. dinstag nach s. Lucien tag.\n\nAusf., Perg., Sg. besch. - Nr. 1212.\n\nReg. Nr. 1278",
+      "facts": [
+        {
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "zu Waldmannshofen"
+          ],
+          "type": "generic",
+          "content": "received as Mannlehen from Bishop Melchior of Würzburg half the chaplaincy at Schloss Waldmannshofen, farms at Gülchsheim, rents at Steinach and Geisselheim, and the tithe at Gülchsheim."
+        },
+        {
+          "person": "Asmus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "personDeceased": true,
+          "type": "sibling",
+          "of": "Kunz von Rosenberg",
+          "ofDeceased": true
+        }
+      ]
     }
   ]
 }

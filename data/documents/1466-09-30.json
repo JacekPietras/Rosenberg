@@ -5,7 +5,14 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Urfehdeurkunden 37",
       "url": "https://www.gda.bayern.de/gvl/document/6c38e5fc-b88d-4e9d-a878-c61e705809d0",
-      "german": "Urfehde Ekarius von Petstatt, bei seiner Entlassung aus dem Gefängnis auf die gewöhnliche Art ausgestellt. Siegler: Ekarius von Petstatt, Pauls von Absberg, Jeronimus von Rosenberg."
+      "german": "Urfehde Ekarius von Petstatt, bei seiner Entlassung aus dem Gefängnis auf die gewöhnliche Art ausgestellt. Siegler: Ekarius von Petstatt, Pauls von Absberg, Jeronimus von Rosenberg.",
+      "facts": [
+        {
+          "person": "Hieronymus von Rosenberg",
+          "type": "generic",
+          "content": "sealed Ekarius von Petstatt’s Urfehde upon his release from prison."
+        }
+      ]
     }
   ]
 }

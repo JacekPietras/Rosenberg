@@ -6,6 +6,13 @@
       "source": "AT-KLA 213-B-17 St",
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-17_St/charter",
       "german": "Herzog Ernst von Österreich fordert Christoph von Rosenberg auf den Bericht Friedrichs von Flädnitz, seines Hauptmanns in Steiermark, zur Heerfolge auf. Siegler: Aussteller\n\nSiegel: 1 Sig. imp. beschädigt",
+      "facts": [
+        {
+          "person": "Christoph von Rosenberg",
+          "type": "generic",
+          "content": "was called upon by Herzog Ernst von Österreich for military service, following the report of Friedrich von Flädnitz."
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_17_14120221_01.JPG"

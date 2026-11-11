@@ -7,7 +7,17 @@
       "source": "RIplus Regg. EB Mainz 1,2 n. 5555",
       "url": "https://www.regesta-imperii.de/id/ec3bfeda-c7dd-4603-9690-3c509c99208d",
       "german": "Cuone v. Falkenstein (Valkin-) u. Nyclas von dem Steine (Stey-), Kanoniker; Ebirhard v. Rosenberg (-sin-), Johan v. Randeck (-en) u. Johan v. Bellersheim (-dirs), Ritter, Vormünder des Mainzer Stifts, verpfänden mit Zustimmung Erzbischof Heinrichs u. s. Stiftes (!) dem Edelknecht1 Johannes v. dem Hirschhorn (Hirtz-) u. seinen Erben das Dorf Erlenbach (-le-)2 für 350 kl. Guld. die der Johannes an Hofwart (Hovewarte), H. Albrecht Hofwarts (Hove-) Sohn3, für das Stift bezahlt hat. Joh. soll jährlich von dem Dorf 35 kl. Guld. aufheben. Geht mehr ein, so falle der Überschuß an den Kellner zu Scheuerberg (Schur-), Lösung ist jederzeit möglich. Es siegeln der Erzbischof, der Küster Heinrich u. d. Domkapitel, endlich die Vormundschaft.",
-      "english": "Cuone von Falkenstein (Valkin-) and Nyclas von dem Steine (Stey-), canons; Ebirhard von Rosenberg (-sin-), Johan von Randeck (-en), and Johan von Bellersheim (-dirs), knights, guardians of the Mainz foundation, pledge with the consent of Archbishop Heinrich and his foundation (!) to the esquire1 Johannes von dem Hirschhorn (Hirtz-) and his heirs the village of Erlenbach (-le-)2 for 350 small guilders that Johannes has paid to Hofwart (Hovewarte), H. Albrecht Hofwart's (Hove-) son3, on behalf of the foundation. Joh. shall reserve annually from the village 35 small guilders. If more is collected, the surplus shall go to the cellarer at Scheuerberg (Schur-), redemption is possible at any time. The Archbishop, Dean Heinrich and the cathedral chapter, and finally the guardianship seal."
+      "english": "Cuone von Falkenstein (Valkin-) and Nyclas von dem Steine (Stey-), canons; Ebirhard von Rosenberg (-sin-), Johan von Randeck (-en), and Johan von Bellersheim (-dirs), knights, guardians of the Mainz foundation, pledge with the consent of Archbishop Heinrich and his foundation (!) to the esquire1 Johannes von dem Hirschhorn (Hirtz-) and his heirs the village of Erlenbach (-le-)2 for 350 small guilders that Johannes has paid to Hofwart (Hovewarte), H. Albrecht Hofwart's (Hove-) son3, on behalf of the foundation. Joh. shall reserve annually from the village 35 small guilders. If more is collected, the surplus shall go to the cellarer at Scheuerberg (Schur-), redemption is possible at any time. The Archbishop, Dean Heinrich and the cathedral chapter, and finally the guardianship seal.",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "with the other guardians of Mainz pledged the village of Erlenbach to Johannes von dem Hirschhorn and his heirs."
+        }
+      ]
     }
   ]
 }

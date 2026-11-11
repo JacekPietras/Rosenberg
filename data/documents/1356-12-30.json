@@ -6,7 +6,19 @@
       "source": "STA Zürich, C I, 3290.7., 1356 XII 30",
       "url": "https://www.monasterium.net/mom/CSGVII/1356_XII_30/charter",
       "german": "Hermann von Breitenlandenberg und Rudolf von Rosenberg verpflichten sich gegenüber der Stadt Zürich zum Ersatz des Schadens, der ihr nach Bezahlung von 200 Gulden Morgengabe an Elsbeth von Breitenlandenberg aus eventuellen weiteren Ansprachen entstehen sollte.\n\nSiegel: 2 Siegel, 1. Ø 3,5 cm, +S.HERMANI.DE.LANDEBG.MILITIS; 2. Abb. 343.",
-      "english": "Hermann von Breitenlandenberg and Rudolf von Rosenberg obligate themselves to the city of Zurich for compensation of damages that should arise from possible further claims after payment of 200 gold florins as a morning gift to Elsbeth von Breitenlandenberg.\n\nSeals: 2 seals, 1. Ø 3.5 cm, +S.HERMANI.DE.LANDEBG.MILITIS; 2. Fig. 343."
+      "english": "Hermann von Breitenlandenberg and Rudolf von Rosenberg obligate themselves to the city of Zurich for compensation of damages that should arise from possible further claims after payment of 200 gold florins as a morning gift to Elsbeth von Breitenlandenberg.\n\nSeals: 2 seals, 1. Ø 3.5 cm, +S.HERMANI.DE.LANDEBG.MILITIS; 2. Fig. 343.",
+      "facts": [
+        {
+          "person": "Rudolf von Rosenberg",
+          "type": "generic",
+          "content": "undertook with Hermann von Breitenlandenberg to compensate the city of Zürich for possible further claims following payment of Elsbeth von Breitenlandenberg's Morgengabe."
+        },
+        {
+          "person": "Herman von Breitenlandenberg",
+          "type": "generic",
+          "content": "undertook with Rudolf von Rosenberg to compensate the city of Zürich for possible further claims following payment of Elsbeth von Breitenlandenberg's Morgengabe."
+        }
+      ]
     }
   ]
 }

@@ -7,7 +7,22 @@
       "source": "StAN, Historischer Verein für Mittelfranken, Urkunden 191/5",
       "url": "https://www.gda.bayern.de/gvl/document/f2d37f9b-fc1a-4628-b685-1852bc023eb2",
       "german": "Johanns, Bischof zu Würzburg bestätigt den Rotenburgern den Empfang der Schrift des Römischen Königs und der Mitteilungen wegen Hans von Rosenberg, Ritters, Cuntz von Rosenberg und Erckingers von Sawnsheim zu Kottenheim. Die Genannten haben vor langer Zeit am Landgericht Würzburg auf die Rotenburger ervollet, Seinsheim verlangt Achtserklärung; der Bischof will die Sache gütlich beilegen.",
-      "english": "Bishop Johann of Würzburg confirmed to the people of Rothenburg that he had received a letter from the Roman king and related communications concerning Hans von Rosenberg, Ritter, Cuntz von Rosenberg, and Erkinger von Seinsheim of Kottenheim. The catalog says these men had earlier been involved in a matter against the people of Rothenburg before the Würzburg regional court, and that the bishop intended to settle the dispute amicably."
+      "english": "Bishop Johann of Würzburg confirmed to the people of Rothenburg that he had received a letter from the Roman king and related communications concerning Hans von Rosenberg, Ritter, Cuntz von Rosenberg, and Erkinger von Seinsheim of Kottenheim. The catalog says these men had earlier been involved in a matter against the people of Rothenburg before the Würzburg regional court, and that the bishop intended to settle the dispute amicably.",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "was named in communications concerning a dispute with Rothenburg before the Würzburg regional court, which the bishop intended to settle amicably."
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "was named in communications concerning a dispute with Rothenburg before the Würzburg regional court, which the bishop intended to settle amicably."
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,28 @@
     {
       "source": "HStAD, E 12, 193/1",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3978535",
-      "german": "Varia\n\nEnthält: Pasquill auf die altadeligen Geschlechter zu Mainz von Eberhard Windeck 1430, fol. 1-16\nVerzeichnis der von Nese Glauburger und Orth zum Jungen gemeinsam verwahrten Briefe 1482\nStudien-Rechnung des Orth zum Jungen (Sohn) zu Erfurt 1450\nNachlaß des Hen zum Jungen zu Hillenheim mit Leibgedinge der Witwe Anna von Rosenberg 1478"
+      "german": "Varia\n\nEnthält: Pasquill auf die altadeligen Geschlechter zu Mainz von Eberhard Windeck 1430, fol. 1-16\nVerzeichnis der von Nese Glauburger und Orth zum Jungen gemeinsam verwahrten Briefe 1482\nStudien-Rechnung des Orth zum Jungen (Sohn) zu Erfurt 1450\nNachlaß des Hen zum Jungen zu Hillenheim mit Leibgedinge der Witwe Anna von Rosenberg 1478",
+      "facts": [
+        {
+          "person": "Hen",
+          "personTitle": [
+            "zum Jungen"
+          ],
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "Anna von Rosenberg",
+          "date": "1478"
+        },
+        {
+          "person": "Hen",
+          "personTitle": [
+            "zum Jungen"
+          ],
+          "type": "death",
+          "diedBefore": "1479",
+          "date": "1478"
+        }
+      ]
     }
   ]
 }

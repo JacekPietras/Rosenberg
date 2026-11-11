@@ -5,7 +5,14 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamt Uffenheim, Urkunden 143",
       "url": "https://www.gda.bayern.de/gvl/document/cbaeaec6-ccd2-4201-92cd-231659cb51a8",
-      "german": "Lehenauftragung: Asmus von Rosenberg trägt dem Bischof und Stift Würzburg verschiedene Zinsen, Gülten und Gerechtigkeiten in Berchtheim, Martinsheim, Gnodstadt und Gülchsheim zu Lehen auf."
+      "german": "Lehenauftragung: Asmus von Rosenberg trägt dem Bischof und Stift Würzburg verschiedene Zinsen, Gülten und Gerechtigkeiten in Berchtheim, Martinsheim, Gnodstadt und Gülchsheim zu Lehen auf.",
+      "facts": [
+        {
+          "person": "Asmus von Rosenberg",
+          "type": "generic",
+          "content": "made rents, income and rights at Berchtheim, Martinsheim, Gnodstadt and Gülchsheim fiefs of the bishop and foundation of Würzburg."
+        }
+      ]
     }
   ]
 }

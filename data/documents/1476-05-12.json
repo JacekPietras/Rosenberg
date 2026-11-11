@@ -6,6 +6,20 @@
       "source": "Wiener Stadt- und Landesarchiv, 4597",
       "url": "https://www.monasterium.net/mom/AT-WStLA/HAUrk/4597/charter",
       "german": "Michael, des heiligen Romischen Reichs burggrave zu Maidburg, grave zu Hardegk und landmarschalh in Osterreich etc ., bestätigt, dass Bürgermeister, Richter und Rath der Stadt zu Wien ihm und dem Peter Krempl die brief, so weilend frau Percht, geborn von Rosenberg, hern Hannsens von Liechtenstain witib, der Got genedig sei , bei ihnen in ainer gschattl verpetschadt erlegt hat, ausgefolgt haben.\n\nSiegel: Rückwärts aufgedrücktes, beschädigtes Siegel von rothem Wachse.",
+      "facts": [
+        {
+          "person": "Percht von Rosenberg",
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "Hans von Liechtenstein",
+          "ofDeceased": true
+        },
+        {
+          "person": "Percht von Rosenberg",
+          "type": "death",
+          "diedBefore": "1476-05-13"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-WStLA/HA-U/WStLA-HA-Urkunden_04597_r.jpg"

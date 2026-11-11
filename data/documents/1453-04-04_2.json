@@ -5,7 +5,20 @@
     {
       "source": "StAN, Reichsstadt Windsheim, Urkunden nach 1400 201",
       "url": "https://www.gda.bayern.de/gvl/document/f856995d-2981-4581-879d-7674a3de4e99",
-      "german": "Friedbrief: Bischof Gotfried zu Würzburg bekennt, dass er sich mit Heintz von Seckendorff als Vormund Engelharts von Tüngen und Hannssens von Stein, von ihren und ihrer Hausfrauen wegen, als den nächsten Erben Conntzens von Rosenberg selig, wegen Wiedereinräumung des Amts Clingenberg, welches genanntem von Rosenberg auf Wiederkauf verkauft und verschrieben worden, gütlich vereint und vertragen habe."
+      "german": "Friedbrief: Bischof Gotfried zu Würzburg bekennt, dass er sich mit Heintz von Seckendorff als Vormund Engelharts von Tüngen und Hannssens von Stein, von ihren und ihrer Hausfrauen wegen, als den nächsten Erben Conntzens von Rosenberg selig, wegen Wiedereinräumung des Amts Clingenberg, welches genanntem von Rosenberg auf Wiederkauf verkauft und verschrieben worden, gütlich vereint und vertragen habe.",
+      "facts": [
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "death",
+          "diedBefore": "1453-04-05"
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "personDeceased": true,
+          "type": "generic",
+          "content": "had received the Amt Clingenberg by purchase subject to redemption from Gottfried, Bischof zu Würzburg."
+        }
+      ]
     }
   ]
 }

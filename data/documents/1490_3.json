@@ -5,7 +5,14 @@
     {
       "source": "HHStAW, 333, 476",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6942608",
-      "german": "Lehensrevers des Hans von Rosenberg an Erzbischof Berthold von Mainz über 8 Teile am Schüpfe mit Recht und Zubehör."
+      "german": "Lehensrevers des Hans von Rosenberg an Erzbischof Berthold von Mainz über 8 Teile am Schüpfe mit Recht und Zubehör.",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "type": "generic",
+          "content": "acknowledged eight parts of Schüpf as a fief from Archbishop Berthold of Mainz."
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,24 @@
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 1184",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723478",
       "german": "Hans von Aschhausen, Asmus von Rosenberg und Jörg von Rosenberg machen einen Vertrag im Streit zwischen den Vettern Hans und Konrad von Rosenberg über die Schenke zu Bofsheim und den Schaftrieb zu Bronnacker zum Neuen und Dürren Hof und zu Hirschlanden.",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "type": "kin",
+          "of": "Konrad von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Asmus von Rosenberg",
+          "type": "generic",
+          "content": "with Hans von Aschhausen and Georg von Rosenberg made an agreement in the dispute between Hans and Konrad von Rosenberg over the tavern at Bofsheim and sheep grazing rights."
+        },
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "with Hans von Aschhausen and Asmus von Rosenberg made an agreement in the dispute between Hans and Konrad von Rosenberg over the tavern at Bofsheim and sheep grazing rights."
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723478%2F04_0001723478_0001_4-1723478-1.jpg"

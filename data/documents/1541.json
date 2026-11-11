@@ -11,7 +11,84 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400456000000620001100",
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x24775910377502420210713150716246"
       ],
-      "german": "Konrad erwählter und bestätigter Bischof zu Würzburg und Herzog zu Franken belehnt die Gebrüder Wolf, Christoph (-stoffel), Ludwig und Zeysolf von Rosenberg mit der Hälfte der Lehnsstücke zu Baldersheim [gemäß Belehnung von 1537 Februar 21], nachdem ihnen diese Hälfte mit dem Tod ihres Vetters Ritters Zeysolf von Rosenberg zugefallen war, unter der Bedingung [gemäß Belehnung von 1538 März 18].\n\nSiegler: der Aussteller. - Donnerstag nach Sebastiani.\n\nAusf., Perg., Sg. besch.- Vgl. Reg. Nr. 1059, 1071. - Nr. 1043.\n\nReg. Nr. 1096"
+      "german": "Konrad erwählter und bestätigter Bischof zu Würzburg und Herzog zu Franken belehnt die Gebrüder Wolf, Christoph (-stoffel), Ludwig und Zeysolf von Rosenberg mit der Hälfte der Lehnsstücke zu Baldersheim [gemäß Belehnung von 1537 Februar 21], nachdem ihnen diese Hälfte mit dem Tod ihres Vetters Ritters Zeysolf von Rosenberg zugefallen war, unter der Bedingung [gemäß Belehnung von 1538 März 18].\n\nSiegler: der Aussteller. - Donnerstag nach Sebastiani.\n\nAusf., Perg., Sg. besch.- Vgl. Reg. Nr. 1059, 1071. - Nr. 1043.\n\nReg. Nr. 1096",
+      "facts": [
+        {
+          "person": "Wolf von Rosenberg",
+          "type": "generic",
+          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg after the death of his Vetter Zaisolf von Rosenberg."
+        },
+        {
+          "person": "Wolf von Rosenberg",
+          "type": "kin",
+          "of": "Zaisolf von Rosenberg",
+          "ofTitle": [
+            "Ritter"
+          ],
+          "ofDeceased": true,
+          "term": "Vetter"
+        },
+        {
+          "person": "Christoph von Rosenberg",
+          "type": "generic",
+          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg after the death of his Vetter Zaisolf von Rosenberg."
+        },
+        {
+          "person": "Christoph von Rosenberg",
+          "type": "kin",
+          "of": "Zaisolf von Rosenberg",
+          "ofTitle": [
+            "Ritter"
+          ],
+          "ofDeceased": true,
+          "term": "Vetter"
+        },
+        {
+          "person": "Wolf von Rosenberg",
+          "type": "sibling",
+          "of": "Christoph von Rosenberg"
+        },
+        {
+          "person": "Ludwig von Rosenberg",
+          "type": "generic",
+          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg after the death of his Vetter Zaisolf von Rosenberg."
+        },
+        {
+          "person": "Ludwig von Rosenberg",
+          "type": "kin",
+          "of": "Zaisolf von Rosenberg",
+          "ofTitle": [
+            "Ritter"
+          ],
+          "ofDeceased": true,
+          "term": "Vetter"
+        },
+        {
+          "person": "Wolf von Rosenberg",
+          "type": "sibling",
+          "of": "Ludwig von Rosenberg"
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "generic",
+          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg after the death of his Vetter Zaisolf von Rosenberg."
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "kin",
+          "of": "Zaisolf von Rosenberg",
+          "ofTitle": [
+            "Ritter"
+          ],
+          "ofDeceased": true,
+          "term": "Vetter"
+        },
+        {
+          "person": "Wolf von Rosenberg",
+          "type": "sibling",
+          "of": "Zaisolf von Rosenberg"
+        }
+      ]
     }
   ]
 }

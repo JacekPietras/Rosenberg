@@ -7,7 +7,17 @@
       "source": "BayHStA, Kloster Prüll Urkunden 290",
       "url": "https://www.gda.bayern.de/gvl/document/ce74f031-3007-4864-88f5-b36cd48867a3",
       "german": "Conrad von Rosenberg, Vitztum zu Amberg, urkundet, daß Abt Hans von Prüll, von Gericht zu Lengenvelt ein Urteil gegen Conrad den Niezlein erwirkt, nach dem dieser das Gut zu Alling nach des Abts Rat besetzen und den versessenen Zins bezahlen soll. Der obertse Amtmann soll den Abt bei der Durchsetzung des Urteils schützen und schirmen. S: Das Landgericht zu Lengenvelt, aufgedrückt.",
-      "english": "Conrad von Rosenberg, Vicar of Amberg, recorded that Abbot Hans of Prüll had obtained a court judgment against Conrad Niezlein. Niezlein was to occupy the estate at Alling as the abbot directed and pay the overdue rent. The chief official was to protect and support the abbot in enforcing the judgment. The Lengenfeld court seal was applied."
+      "english": "Conrad von Rosenberg, Vicar of Amberg, recorded that Abbot Hans of Prüll had obtained a court judgment against Conrad Niezlein. Niezlein was to occupy the estate at Alling as the abbot directed and pay the overdue rent. The chief official was to protect and support the abbot in enforcing the judgment. The Lengenfeld court seal was applied.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitztum zu Amberg"
+          ],
+          "type": "generic",
+          "content": "recorded a judgment obtained by the abbot of Prüll against Konrad Niezlein concerning property at Alling and unpaid rent."
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,14 @@
     {
       "source": "ISG FFM, H.02.26, 2093",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10352464",
-      "german": "Danksagung und Quittung des Frankfurter, Wetzlarer und Gelnhausener Reisigen Peter Rutzer für ein Geldgeschenk von 22 Gulden nach dem Kriege.\n\nSiegler: Siegel des Siegfried von Rosenberg (Wachs, rund, Rest, an Pergamentpressel)"
+      "german": "Danksagung und Quittung des Frankfurter, Wetzlarer und Gelnhausener Reisigen Peter Rutzer für ein Geldgeschenk von 22 Gulden nach dem Kriege.\n\nSiegler: Siegel des Siegfried von Rosenberg (Wachs, rund, Rest, an Pergamentpressel)",
+      "facts": [
+        {
+          "person": "Siegfried von Rosenberg",
+          "type": "generic",
+          "content": "sealed Peter Rutzer’s thanks and receipt for a postwar gift."
+        }
+      ]
     }
   ]
 }

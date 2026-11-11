@@ -1,11 +1,36 @@
 {
   "date": "1497-03-21",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 818, 564",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5541019",
       "german": "Kurfürst Philipp von der Pfalz bekundet, dass sein Getreuer Philipp Forstmeister von Gelnhausen in seinem Befehl eine Heirat zwischen seinem Getreuen und einspännigen Knecht Michael (Michel) Rosenberger und Margarethe, der Tochter seines Ungelters Hans Dentz zu Heidelberg, beredet hat. Hans soll seinem Schwiegersohn jährlich 5 Gulden von dem Verkaufsstand (krame) unter Hans' Haus geben, den derzeit Jost Koch (Kochs Jost) für 5 Gulden Pacht innehat, bis zu einer Ablösung mit 100 Gulden. Dazu soll er ihnen ein Bett mit Zubehör geben. Das Ehepaar mag die Jahrgülte mit Wissen des Vaters und Schwagers um 100 Gulden versetzen. Dagegen soll der pfalzgräfliche Getreue Michael von Rosenberg seinem Sohn Michael eine Verschreibung über jährlich 5 Gulden bis zur Ablösung mit 100 Gulden ausstellen. Dazu will Michael von Rosenberg dem Ehepaar unverbindlich weitere 100 Gulden reichen, sofern sich Michael nach dem Willen seines Vaters, seines Schwiegervaters und seiner Ehefrau verhält (recht anstell sins sines swehers und siner hußfrauwen willens halten will doch des ungebunden und fry steen). Sterben die Eheleute ohne Leibserben, sollen die eingebrachten Güter wieder an die ursprünglichen Linien fallen.\n\nLaufzeit: 1497 März 21 (uff dinstag nach dem palm tag)\n\nSiegler: Kurfürst Philipp von der Pfalz (aufgedrücktes Sekretsiegel)",
+      "facts": [
+        {
+          "person": "Michael von Rosenberg",
+          "type": "parent",
+          "of": "Michael von Rosenberg"
+        },
+        {
+          "person": "Michael von Rosenberg",
+          "type": "spouse",
+          "of": "Margaretha Dentz"
+        },
+        {
+          "person": "Hans Dentz",
+          "type": "parent",
+          "of": "Margaretha Dentz"
+        },
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "served Elector Philipp of the Palatinate as an einspänniger Knecht."
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005541019%2F04_0005541019_0001_4-5541019-1.jpg"

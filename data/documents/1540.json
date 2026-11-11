@@ -11,7 +11,73 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400456000000620001091",
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x11967927217483520210713150716245"
       ],
-      "german": "Ludwig Pfalzgraf bei Rhein und Herzog in Bayern, Kurfürst, der zugleich seinen Bruder Herzog Friedrich vertritt, belehnt nach dem Tode des Ritters Konrad von Rosenberg den Lorenz von Rosenberg, zugleich für die Gebrüder Wolf, Christof, Ludwig und Zeisolf von Rosenberg, seine Vettern, mit einem Viertel der Stadt Aub im gleichen Umfang wie dies Ritter Konrad und seine Voreltern von der Pfalz zu Mannlehen trugen, nachdem dieses Viertel den Vettern von Rosenberg erblich zufiel. Kurfürst Ludwigs und des mit ihm gemeinsam regierenden Bruders Friedrich Rechte bleiben hierdurch ebenso unberührt wie diejenigen ihrer Leute sowie Dritter. Die Vettern von Rosenberg und ihre Lehnserben haben das Lehen in allen gegebenen Fällen erneut zu Lehen zu nehmen. Fällt das Lehen einem der Pfalzgrafen bei Rhein durch Teilung alleine zu, so haben die Vettern von Rosenberg oder deren Lehnserben das Lehen von dem jeweiligen Lehnsherrn zu Lehen zu nehmen. In jedem Falle sind die üblichen Lehnspflichten zu erfüllen. - Kurfürst Ludwig bestätigt den durch Ludwig, zugleich für seine Vettern, geleisteten Lehnseid. -\n\nSiegler: der Aussteller. - Uff mitwoch nach dem sontag Misericordia domini, Heidelberg.\n\nAusf., Perg., Sg. besch. - Nr. 1035.\n\nReg. Nr. 1087"
+      "german": "Ludwig Pfalzgraf bei Rhein und Herzog in Bayern, Kurfürst, der zugleich seinen Bruder Herzog Friedrich vertritt, belehnt nach dem Tode des Ritters Konrad von Rosenberg den Lorenz von Rosenberg, zugleich für die Gebrüder Wolf, Christof, Ludwig und Zeisolf von Rosenberg, seine Vettern, mit einem Viertel der Stadt Aub im gleichen Umfang wie dies Ritter Konrad und seine Voreltern von der Pfalz zu Mannlehen trugen, nachdem dieses Viertel den Vettern von Rosenberg erblich zufiel. Kurfürst Ludwigs und des mit ihm gemeinsam regierenden Bruders Friedrich Rechte bleiben hierdurch ebenso unberührt wie diejenigen ihrer Leute sowie Dritter. Die Vettern von Rosenberg und ihre Lehnserben haben das Lehen in allen gegebenen Fällen erneut zu Lehen zu nehmen. Fällt das Lehen einem der Pfalzgrafen bei Rhein durch Teilung alleine zu, so haben die Vettern von Rosenberg oder deren Lehnserben das Lehen von dem jeweiligen Lehnsherrn zu Lehen zu nehmen. In jedem Falle sind die üblichen Lehnspflichten zu erfüllen. - Kurfürst Ludwig bestätigt den durch Ludwig, zugleich für seine Vettern, geleisteten Lehnseid. -\n\nSiegler: der Aussteller. - Uff mitwoch nach dem sontag Misericordia domini, Heidelberg.\n\nAusf., Perg., Sg. besch. - Nr. 1035.\n\nReg. Nr. 1087",
+      "facts": [
+        {
+          "person": "Lorenz von Rosenberg",
+          "type": "kin",
+          "of": "Wolf von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Wolf von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg."
+        },
+        {
+          "person": "Lorenz von Rosenberg",
+          "type": "kin",
+          "of": "Christoph von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Christoph von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg."
+        },
+        {
+          "person": "Wolf von Rosenberg",
+          "type": "sibling",
+          "of": "Christoph von Rosenberg"
+        },
+        {
+          "person": "Lorenz von Rosenberg",
+          "type": "kin",
+          "of": "Ludwig von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Ludwig von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg."
+        },
+        {
+          "person": "Wolf von Rosenberg",
+          "type": "sibling",
+          "of": "Ludwig von Rosenberg"
+        },
+        {
+          "person": "Lorenz von Rosenberg",
+          "type": "kin",
+          "of": "Zaisolf von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg."
+        },
+        {
+          "person": "Wolf von Rosenberg",
+          "type": "sibling",
+          "of": "Zaisolf von Rosenberg"
+        },
+        {
+          "person": "Lorenz von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate after the death of Konrad von Rosenberg."
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,17 @@
       "source": "RIplus Regg. EB Mainz 1,2 n. 5762",
       "url": "https://www.regesta-imperii.de/id/d48ebd4a-c3ae-41ec-ac82-b3711a8bb7e0",
       "german": "König Karl verspricht dem Heinrich v. V. der sich nennet Erzbischof zu Mainz; dem Dompropst Cuno v. Falkenstein (-kin-), dem Kanoniker Niklause v. d. Steine (Stey-), den Rittern Ebirhard v. Rosenberg (-sin-), Johann v. Randeck u. Johann v. Bellersheim (-dirs-), Vormündern d. Stifts; dem Küster Heinrich v. Bimbach (Byem-) u. den Kanonikern Conr. v. d. Rietberg (Ritperge), Conr. v. Steckelnberg, Henrich Schetzelin, Frederich Specht, Andreas v. Brauneck (Brunecken) u. Luther v. d. Buches; dem Propst Conrad zu St. Moritz zu Mainz u. Friedrich, Sänger zu Aschaffenburg, u. allen ihren Anhängern innerhalb u. außerhalb von M. falls Erzbischof Gerlach v. Mainz (uns. l. neve u. furste), mit ihnen „criegte oder criegin wolde“, diesem in keiner Weise beholfen zu sein, auch nichts gegen das Stift, Erzbischof Heinrich, die Vormünder u. die gen. Personen zu unternehmen, noch sie zu „irren oder hindirn an irem lybe odir an ihrem gude“.",
-      "english": "King Karl promises to Heinrich von V. who calls himself Archbishop of Mainz; to the Cathedral Provost Cuno von Falkenstein (-kin-), to the Canon Niklause von der Steine (Stey-), to the knights Ebirhard von Rosenberg (-sin-), Johann von Randeck, and Johann von Bellersheim (-dirs-), Guardians of the Archbishopric; to the Custodian Heinrich von Bimbach (Byem-) and the Canons Conr. von der Rietberg (Ritperge), Conr. von Steckelnberg, Henrich Schetzelin, Frederich Specht, Andreas von Brauneck (Brunecken), and Luther von der Buches; to the Provost Conrad of St. Moritz at Mainz and Friedrich, Singer at Aschaffenburg, and all their adherents within and outside of M., if Archbishop Gerlach von Mainz (our dear uncle and prince) \"wages war or would wage war\" against them, that he will in no way assist him, nor undertake anything against the Archbishopric, Archbishop Heinrich, the Guardians, and the aforesaid persons, nor to \"hinder or obstruct them in their body or in their goods.\"."
+      "english": "King Karl promises to Heinrich von V. who calls himself Archbishop of Mainz; to the Cathedral Provost Cuno von Falkenstein (-kin-), to the Canon Niklause von der Steine (Stey-), to the knights Ebirhard von Rosenberg (-sin-), Johann von Randeck, and Johann von Bellersheim (-dirs-), Guardians of the Archbishopric; to the Custodian Heinrich von Bimbach (Byem-) and the Canons Conr. von der Rietberg (Ritperge), Conr. von Steckelnberg, Henrich Schetzelin, Frederich Specht, Andreas von Brauneck (Brunecken), and Luther von der Buches; to the Provost Conrad of St. Moritz at Mainz and Friedrich, Singer at Aschaffenburg, and all their adherents within and outside of M., if Archbishop Gerlach von Mainz (our dear uncle and prince) \"wages war or would wage war\" against them, that he will in no way assist him, nor undertake anything against the Archbishopric, Archbishop Heinrich, the Guardians, and the aforesaid persons, nor to \"hinder or obstruct them in their body or in their goods.\".",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "received with the other Mainz guardians and named supporters a promise from Karl IV that he would not help Gerlach of Mainz wage war against them."
+        }
+      ]
     }
   ]
 }

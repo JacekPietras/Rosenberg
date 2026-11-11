@@ -1,6 +1,9 @@
 {
   "date": "1541",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": [
@@ -11,7 +14,14 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400456000000620001101",
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x58946746587753220210713150716246"
       ],
-      "german": "Konrad erwählter und bestätigter Bischof zu Würzburg und Herzog zu Franken belehnt den Lorenz von Rosenberg mit der Hälfte der Lehnsstücke zu Baldersheim [gemäß Belehnung von 1537 Februar 21]. -\n\nSiegler: der Aussteller. - Schreibervermerk des Kanzlers Dr. Georg Farner. - Am donerstag nach conversionis Pauli.\n\nAusf., Perg., Sg. besch. - Vgl. Reg. Nr. 1059. - Nr. 1044.\n\nReg. Nr. 1097"
+      "german": "Konrad erwählter und bestätigter Bischof zu Würzburg und Herzog zu Franken belehnt den Lorenz von Rosenberg mit der Hälfte der Lehnsstücke zu Baldersheim [gemäß Belehnung von 1537 Februar 21]. -\n\nSiegler: der Aussteller. - Schreibervermerk des Kanzlers Dr. Georg Farner. - Am donerstag nach conversionis Pauli.\n\nAusf., Perg., Sg. besch. - Vgl. Reg. Nr. 1059. - Nr. 1044.\n\nReg. Nr. 1097",
+      "facts": [
+        {
+          "person": "Lorenz von Rosenberg",
+          "type": "generic",
+          "content": "received half the fiefs at Baldersheim from Bishop Konrad of Würzburg."
+        }
+      ]
     }
   ]
 }

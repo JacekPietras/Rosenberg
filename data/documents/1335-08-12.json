@@ -6,7 +6,27 @@
       "source": "HStAD, B 15, NACHWEIS",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5181017",
       "german": "Erzbischof Balduin, geistlicher und weltlicher Vorsteher zu Mainz, erteilt seine Zustimmung dazu, dass Hartmann Groschlag von Dieburg seine Ehefrau Grete, Tochter des Ritters Eberhard von Rosenberg, mit 250 Pfund Heller auf genannte Mainzer Lehen (zu Dieburg) bewittumt oder bemorgengabt, was auch mit Zustimmung von Hartmann Ulner von Dieburg, Henn (Johann) und Oswald Groschlag von Dieburg geschehe. Nach dem Tod der Grete soll die Beleihung oder Morgengabe wieder zurückfallen, im Fall der Veränderung der Grete soll genannte Regelung gelten\n\nSiegler: Aussteller",
-      "english": "Archbishop Balduin, spiritual and secular head of Mainz, gives his consent that Hartmann Groschlag of Dieburg endow his wife Grete, daughter of the knight Eberhard von Rosenberg, with 250 pounds Heller as dowry or morning-gift on the aforementioned Mainze fiefs (at Dieburg), which shall also be done with the consent of Hartmann Ulner of Dieburg, Henn (Johann) and Oswald Groschlag of Dieburg. After Grete's death, the endowment or morning-gift shall revert again; in the event of Grete's remarriage, the aforementioned arrangement shall apply.\n\nSealer: Issuer"
+      "english": "Archbishop Balduin, spiritual and secular head of Mainz, gives his consent that Hartmann Groschlag of Dieburg endow his wife Grete, daughter of the knight Eberhard von Rosenberg, with 250 pounds Heller as dowry or morning-gift on the aforementioned Mainze fiefs (at Dieburg), which shall also be done with the consent of Hartmann Ulner of Dieburg, Henn (Johann) and Oswald Groschlag of Dieburg. After Grete's death, the endowment or morning-gift shall revert again; in the event of Grete's remarriage, the aforementioned arrangement shall apply.\n\nSealer: Issuer",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "parent",
+          "of": "Grete von Rosenberg"
+        },
+        {
+          "person": "Grete von Rosenberg",
+          "type": "spouse",
+          "of": "Hartmann Groschlag von Dieburg"
+        },
+        {
+          "person": "Hartmann Groschlag von Dieburg",
+          "type": "generic",
+          "content": "received Archbishop Balduin’s consent to endow his wife Grete with a widow’s provision or morning gift on Mainz fiefs at Dieburg."
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,17 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 U 34",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74946",
-      "german": "1538 März 18 (Mo n. Reminiscere). Bischof Konrad von Würzburg belehnt Zaisolf von Rosenberg zu Haltenbergstetten nach dem Tod des Konrad von Rosenberg mit der Helfte der Dörfer Neubronn und Oberndorf; Sr.; der A."
+      "german": "1538 März 18 (Mo n. Reminiscere). Bischof Konrad von Würzburg belehnt Zaisolf von Rosenberg zu Haltenbergstetten nach dem Tod des Konrad von Rosenberg mit der Helfte der Dörfer Neubronn und Oberndorf; Sr.; der A.",
+      "facts": [
+        {
+          "person": "Zaisolf von Rosenberg",
+          "personTitle": [
+            "zu Haltenbergstetten"
+          ],
+          "type": "generic",
+          "content": "received half of Neubronn and Oberndorf as fiefs from Bishop Konrad of Würzburg after the death of Konrad von Rosenberg."
+        }
+      ]
     }
   ]
 }

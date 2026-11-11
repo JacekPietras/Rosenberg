@@ -6,6 +6,18 @@
       "source": "61",
       "url": "https://www.monasterium.net/mom/DE-ABSP/Domstift/61/charter",
       "german": "Philip, Pfalzgraf bei Rhein, Herzog in Bayern, Erztruchseß des Heiligen Römischen Reiches und Kurfürst, schlichtet einen Streit zwischen Johan Herrn zu Heideck und Johan von Stettenberg, Domdekan zu Speyer, wegen des Hubhofs in Nußdorf. Der Domdekan hatte den Sohn des Schultheißen von Nußdorf gebannt, weil er sich den Hubhof angeeignet hatte. Der Rat des Pfalzgrafen, Friedrich von Rosenberg, begab sich mit dem Schultheißen zum Domdekan und erreichte, dass dem Sohn des Schultheißen und seiner Ehefrau der Hubhof zugesprochen wurde.",
+      "facts": [
+        {
+          "person": "Friedrich von Rosenberg",
+          "type": "generic",
+          "content": "served as a councillor of the Pfalzgraf."
+        },
+        {
+          "person": "Friedrich von Rosenberg",
+          "type": "generic",
+          "content": "obtained a decision from the cathedral dean of Speyer granting the Hubhof at Nußdorf to the Schultheiß’s son and his wife."
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-ABSP/Domstift/ABSP_Domstift_14820710_61_r.JPG"

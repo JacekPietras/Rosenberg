@@ -5,7 +5,14 @@
     {
       "source": "StAN, Hochstift Eichstätt, Literalien 211",
       "url": "https://www.gda.bayern.de/gvl/document/12c500da-2799-4acc-9bd6-12b9d04aa3b5",
-      "german": "Zins- und Gültregister über die nach Jettenhofen und Burggriesbach gehörigen, von Hieronymus von Rosenberg verkauften Gülten"
+      "german": "Zins- und Gültregister über die nach Jettenhofen und Burggriesbach gehörigen, von Hieronymus von Rosenberg verkauften Gülten",
+      "facts": [
+        {
+          "person": "Hieronymus von Rosenberg",
+          "type": "generic",
+          "content": "had sold rents belonging to Jettenhofen and Burggriesbach."
+        }
+      ]
     }
   ]
 }

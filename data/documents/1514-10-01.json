@@ -5,7 +5,17 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Auswärtige Dokumente 272",
       "url": "https://www.gda.bayern.de/gvl/document/7d568707-d627-4416-a6a5-49dd7b3f2ec8",
-      "german": "Vertrag des Ritters Hans von Seckendorff-Aberdar, Hofmeister, des Linhart von Rosenberg, Amtmann zu Uffenheim, und des Asmus von Ehenheim zu Willanzheim (\"Wielezheim\") über die von Kaspar Schenk von Schenkenstein wegen seiner an Heinz Göldlin begangenen Tötung (\"Entleibung\") nun an dessen Witwe Anna Göldlin und ihre Kinder zu bezahlen habenden 400 Gulden."
+      "german": "Vertrag des Ritters Hans von Seckendorff-Aberdar, Hofmeister, des Linhart von Rosenberg, Amtmann zu Uffenheim, und des Asmus von Ehenheim zu Willanzheim (\"Wielezheim\") über die von Kaspar Schenk von Schenkenstein wegen seiner an Heinz Göldlin begangenen Tötung (\"Entleibung\") nun an dessen Witwe Anna Göldlin und ihre Kinder zu bezahlen habenden 400 Gulden.",
+      "facts": [
+        {
+          "person": "Leonhard von Rosenberg",
+          "personTitle": [
+            "Amtmann zu Uffenheim"
+          ],
+          "type": "generic",
+          "content": "made an agreement with Hans von Seckendorff-Aberdar and Asmus von Ehenheim concerning payment by Kaspar Schenk von Schenkenstein to Anna Göldlin and her children after the killing of Heinz Göldlin."
+        }
+      ]
     }
   ]
 }

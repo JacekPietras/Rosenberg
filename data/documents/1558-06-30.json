@@ -5,7 +5,49 @@
     {
       "source": "U 83",
       "url": "https://www.monasterium.net/mom/DE-StASGD/A02U/U_83/charter",
-      "german": "Friedrich von Aicholzhain an Stelle seiner Hausfrau, geb. von Rosenberg, Konrad und Philipp von Rosenberg, Gebrüder, für sich selbst und an Stelle ihrer ledigen Schwester Helene von Rosenberg, Hans Christoph von Nippenburg für sich selbst und seine Mitgeschwister, Sebastian von Adolzheim für sich selbst, Sigmund Schenhein, Schultheiss von Adolzheim als Bevollmächtigter der Frau Anna von Adolzheim, geb. von Lentnershain, Witwe des Konrad von Adolzheim, und Hans Wolf von Lentershain wegen seiner Frau Ursula von Rosenberg, Erben des Wolf von Rechberg zu Weissenstein, bestätigen Bürgermeister und Rat zu Gmünd, dass sie eine bei ihnen hinterlegte Lade mit Wertsachen richtig zurückerhalten haben. Siegler: Aussteller. \"Geben den letzten junii, nach Christi, unsers lieben heren, geburt gezalt funfzehenhundert funfzig und acht jare.\""
+      "german": "Friedrich von Aicholzhain an Stelle seiner Hausfrau, geb. von Rosenberg, Konrad und Philipp von Rosenberg, Gebrüder, für sich selbst und an Stelle ihrer ledigen Schwester Helene von Rosenberg, Hans Christoph von Nippenburg für sich selbst und seine Mitgeschwister, Sebastian von Adolzheim für sich selbst, Sigmund Schenhein, Schultheiss von Adolzheim als Bevollmächtigter der Frau Anna von Adolzheim, geb. von Lentnershain, Witwe des Konrad von Adolzheim, und Hans Wolf von Lentershain wegen seiner Frau Ursula von Rosenberg, Erben des Wolf von Rechberg zu Weissenstein, bestätigen Bürgermeister und Rat zu Gmünd, dass sie eine bei ihnen hinterlegte Lade mit Wertsachen richtig zurückerhalten haben. Siegler: Aussteller. \"Geben den letzten junii, nach Christi, unsers lieben heren, geburt gezalt funfzehenhundert funfzig und acht jare.\"",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "sibling",
+          "of": "Philipp von Rosenberg"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "sibling",
+          "of": "Helena von Rosenberg"
+        },
+        {
+          "person": "Philipp von Rosenberg",
+          "type": "sibling",
+          "of": "Helena von Rosenberg"
+        },
+        {
+          "person": "Hans Wolf von Lentershain",
+          "type": "spouse",
+          "of": "Ursula von Rosenberg"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "was an heir of Wolf von Rechberg zu Weissenstein."
+        },
+        {
+          "person": "Philipp von Rosenberg",
+          "type": "generic",
+          "content": "was an heir of Wolf von Rechberg zu Weissenstein."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "confirmed the return of a chest of valuables by the mayor and council of Gmünd."
+        },
+        {
+          "person": "Philipp von Rosenberg",
+          "type": "generic",
+          "content": "confirmed the return of a chest of valuables by the mayor and council of Gmünd."
+        }
+      ]
     }
   ]
 }

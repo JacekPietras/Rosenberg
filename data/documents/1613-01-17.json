@@ -5,7 +5,14 @@
     {
       "source": "HStAD, B 15, NACHWEIS",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4489699",
-      "german": "Kaiser Mathias bekundet, dass er dem Wolfgang, dem Wolf Friedrich, dem Eberhard, dem Hans Georg und dem Wolf Dietrich Kämmerer v. Worms gen. v. Dalberg das Blutgericht zu Essingen, wie die Familie v. Dalberg es von Hans Christoph v. Rosenberg erworben hatte, zu einem Reichslehen verliehen habe"
+      "german": "Kaiser Mathias bekundet, dass er dem Wolfgang, dem Wolf Friedrich, dem Eberhard, dem Hans Georg und dem Wolf Dietrich Kämmerer v. Worms gen. v. Dalberg das Blutgericht zu Essingen, wie die Familie v. Dalberg es von Hans Christoph v. Rosenberg erworben hatte, zu einem Reichslehen verliehen habe",
+      "facts": [
+        {
+          "person": "Hans Christoph von Rosenberg",
+          "type": "generic",
+          "content": "had held the Blutgericht at Essingen before the Kämmerer von Worms genannt von Dalberg family acquired it from him."
+        }
+      ]
     }
   ]
 }

@@ -7,7 +7,17 @@
       "source": "[RIplus] Regg. Karl IV. n. 1134",
       "url": "https://www.regesta-imperii.de/id/a93ba883-f85c-4f75-8404-b51bdc4ac716",
       "german": "Karl IV. gelobt in guten Treuen dem Heinrich von Virneburg, der sich nennt Erzbischof von Mainz, dem Kuno von Falkenstein, Dompropst, dem Kanoniker Nikolaus vom Stein, den Rittern und Vormündern des Mainzer Stifts Eberhard von Rosenberg, Johann von Randeck und Johann von Bellersheim, dem Küster Heinrich von Bimbach, den Kanonikern Konrad von Rietburg, Konrad von Steckelberg, Heinrich Schetzel (von Waldeck), Friedrich Specht (von Bubenheim), Andreas von Brauneck und Luther von Büches, dem Propst Konrad von St. Moritz zu Mainz, und dem Kantor Friedrich von Aschaffenburg mit allen Personen inner- und außerhalb von Mainz, die bei ihnen geblieben sind, daß er dem Erzbischof Gerlach von Mainz, wenn der mit ihnen kriegete, nimmer beholfen sein und auch von seinetwegen gegen den Stift, den genannten Heinrich, die Vormünder und die vorgeschriebenen Personen nicht tun wolle.",
-      "english": "Karl IV. promises in good faith to Heinrich von Virneburg, who calls himself Archbishop of Mainz, to Kuno von Falkenstein, Cathedral Provost, to the Canon Nikolaus vom Stein, to the knights and guardians of the Archbishopric of Mainz Eberhard von Rosenberg, Johann von Randeck, and Johann von Bellersheim, to the Custodian Heinrich von Bimbach, to the Canons Konrad von Rietburg, Konrad von Steckelberg, Heinrich Schetzel (von Waldeck), Friedrich Specht (von Bubenheim), Andreas von Brauneck, and Luther von Büches, to the Provost Konrad of St. Moritz at Mainz, and to the Kantor Friedrich of Aschaffenburg with all persons within and outside Mainz who have remained with them, that he shall never assist Archbishop Gerlach of Mainz if he wages war against them, nor on his behalf do anything against the Archbishopric, the aforesaid Heinrich, the Guardians, and the aforementioned persons."
+      "english": "Karl IV. promises in good faith to Heinrich von Virneburg, who calls himself Archbishop of Mainz, to Kuno von Falkenstein, Cathedral Provost, to the Canon Nikolaus vom Stein, to the knights and guardians of the Archbishopric of Mainz Eberhard von Rosenberg, Johann von Randeck, and Johann von Bellersheim, to the Custodian Heinrich von Bimbach, to the Canons Konrad von Rietburg, Konrad von Steckelberg, Heinrich Schetzel (von Waldeck), Friedrich Specht (von Bubenheim), Andreas von Brauneck, and Luther von Büches, to the Provost Konrad of St. Moritz at Mainz, and to the Kantor Friedrich of Aschaffenburg with all persons within and outside Mainz who have remained with them, that he shall never assist Archbishop Gerlach of Mainz if he wages war against them, nor on his behalf do anything against the Archbishopric, the aforesaid Heinrich, the Guardians, and the aforementioned persons.",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "received with the other Mainz guardians and named supporters a promise from Karl IV that he would not help Gerlach of Mainz wage war against them."
+        }
+      ]
     }
   ]
 }

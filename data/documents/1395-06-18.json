@@ -5,7 +5,14 @@
     {
       "source": "StA Freistadt, 1395 VI 18",
       "url": "https://www.monasterium.net/mom/OOEUB/1395_VI_18/charter",
-      "german": "Heinrich von Rosenberg verleiht Hans dem Zinespan, Bürger zu Freistadt, Güter in den Pfarren Reichental und Reinbach.\n\nSiegel: Siegel"
+      "german": "Heinrich von Rosenberg verleiht Hans dem Zinespan, Bürger zu Freistadt, Güter in den Pfarren Reichental und Reinbach.\n\nSiegel: Siegel",
+      "facts": [
+        {
+          "person": "Heinrich von Rosenberg",
+          "type": "generic",
+          "content": "granted Hans Zinespan, a citizen of Freistadt, properties in the parishes of Reichental and Reinbach."
+        }
+      ]
     }
   ]
 }

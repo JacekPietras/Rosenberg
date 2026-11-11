@@ -6,7 +6,17 @@
       "source": "RIplus Regg. EB Mainz 1,2 n. 4760",
       "url": "https://www.regesta-imperii.de/id/a8a9631d-66d3-48e6-a2b9-119d10b97bba",
       "german": "Domdekan Johann und Ritter Konrad von Rüdesheim (Rudis-), Sohn des verst. Conrad, Richter, Rat- und Schiedsleute, sprechen auf Grund der von H. Conrad von Bickenbach, H. Eberhart von Rosenberg und H. Wilderich von Vilmar (-mer), Vitztum zu Aschaffenburg, Ritter, eingezogene Kundschaft dem Konrad, Schenken von Erbach, den sog. „gemeinen wald“1 zu, über den zwischen ihm und Erzbischof Heinrich von Mainz Irrungen entstanden waren.",
-      "english": "Dean Johann and knight Konrad of Rüdesheim (Rudis-), son of the deceased Conrad, judge, counselor and arbitrators, based on the evidence gathered by Lord Conrad of Bickenbach, Lord Eberhart of Rosenberg, and Lord Wilderich of Vilmar (-mer), vicedominus at Aschaffenburg, knights, award to Konrad Schenk of Erbach the so-called \"common forest\" over which disputes had arisen between him and Archbishop Heinrich of Mainz."
+      "english": "Dean Johann and knight Konrad of Rüdesheim (Rudis-), son of the deceased Conrad, judge, counselor and arbitrators, based on the evidence gathered by Lord Conrad of Bickenbach, Lord Eberhart of Rosenberg, and Lord Wilderich of Vilmar (-mer), vicedominus at Aschaffenburg, knights, award to Konrad Schenk of Erbach the so-called \"common forest\" over which disputes had arisen between him and Archbishop Heinrich of Mainz.",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "gathered evidence with Konrad von Bickenbach and Wilderich von Vilmar in the dispute over the common forest between Konrad Schenk von Erbach and the archbishop of Mainz."
+        }
+      ]
     }
   ]
 }

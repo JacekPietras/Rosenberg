@@ -5,7 +5,17 @@
     {
       "source": "Generallandesarchiv Karlsruhe 69 von Helmstatt U 711",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-2111393",
-      "german": "Philipp Preuß, Dechant, und das Kapitel des St. Johann Stifts zum Neumünster in Würzburg verkaufen mit Zustimmung Bischof Melchiors von Würzburg an Zeisolf von Rosenberg zu Haltenbergstetten (\"Halderman-\") gen. Güter und Gefälle in Haltenbergstetten, Vorbachzimmern und Wermutshausen um 4200 fl.Siegler: Aussteller, Bischof Melchior von Würzburg\n\nLaufzeit: 1554 (1554 März 4 - Lätare)"
+      "german": "Philipp Preuß, Dechant, und das Kapitel des St. Johann Stifts zum Neumünster in Würzburg verkaufen mit Zustimmung Bischof Melchiors von Würzburg an Zeisolf von Rosenberg zu Haltenbergstetten (\"Halderman-\") gen. Güter und Gefälle in Haltenbergstetten, Vorbachzimmern und Wermutshausen um 4200 fl.Siegler: Aussteller, Bischof Melchior von Würzburg\n\nLaufzeit: 1554 (1554 März 4 - Lätare)",
+      "facts": [
+        {
+          "person": "Zaisolf von Rosenberg",
+          "personTitle": [
+            "zu Haltenbergstetten"
+          ],
+          "type": "generic",
+          "content": "bought property and dues in Haltenbergstetten, Vorbachzimmern and Wermutshausen from the St. Johann Stift zum Neumünster in Würzburg."
+        }
+      ]
     }
   ]
 }

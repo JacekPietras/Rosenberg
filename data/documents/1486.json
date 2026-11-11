@@ -1,11 +1,21 @@
 {
   "date": "1486",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "HStAM, 94, 1970",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7379063",
       "german": "Zwei Entscheidebriefe zwischen Seifrid von Rosenberg, sodann Caspar Küchenmeister über einen Hof vor dem Schloss zu Neuhof (nur Aktenumschlag, Inhalt fehlt, festgestellt 1944)",
+      "facts": [
+        {
+          "person": "Seifrid von Rosenberg",
+          "type": "generic",
+          "content": "was party with Caspar Küchenmeister to arbitration concerning a farm before Schloss Neuhof."
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/94/1970/hstam_94_nr_1970_0001.jpg"

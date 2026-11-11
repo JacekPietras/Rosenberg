@@ -5,7 +5,17 @@
     {
       "source": "Staatsarchiv Marburg, Urk. 1, Nr. 1128 (Altsignatur: Samtarchiv, Schublade 64, Nr. VI)",
       "url": "https://www.lagis-hessen.de/en/subjects/idrec/sn/lgr/id/13529",
-      "german": "Albrecht von Rosenberg zu Boxberg verzichtet gegenüber den hessischen Räten und Reichstagsabgesandten Heinrich Lersner und Jost Diedamar auf alle Ansprüche an den Landgrafen Philipp von Hessen wegen der von den Bundesverwandten verursachten Schäden in der Stadt Boxberg und den dazugehörigen Gütern. Datum d.d. 7. Juni 1554 (lt. Findbuch)."
+      "german": "Albrecht von Rosenberg zu Boxberg verzichtet gegenüber den hessischen Räten und Reichstagsabgesandten Heinrich Lersner und Jost Diedamar auf alle Ansprüche an den Landgrafen Philipp von Hessen wegen der von den Bundesverwandten verursachten Schäden in der Stadt Boxberg und den dazugehörigen Gütern. Datum d.d. 7. Juni 1554 (lt. Findbuch).",
+      "facts": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ],
+          "type": "generic",
+          "content": "waived claims against Landgraf Philipp of Hessen for damage caused by the confederates in Boxberg and its associated properties."
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,14 @@
     {
       "source": "StAWü, Würzburger Urkunden 4/163 b",
       "url": "https://www.gda.bayern.de/gvl/document/25c6d5e4-7cce-4970-9af0-8b9e239d7ebb",
-      "german": "Arnold von Rosenberg weist die Städte Haßfurt, Volkach und das Dorf \"Keller\" an, die 19 Gulden Gült wieder an den Bischof von Würzburg zu zahlen"
+      "german": "Arnold von Rosenberg weist die Städte Haßfurt, Volkach und das Dorf \"Keller\" an, die 19 Gulden Gült wieder an den Bischof von Würzburg zu zahlen",
+      "facts": [
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "generic",
+          "content": "directed Haßfurt, Volkach and Keller to pay the rent again to the bishop of Würzburg."
+        }
+      ]
     }
   ]
 }

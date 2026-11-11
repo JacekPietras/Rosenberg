@@ -5,7 +5,14 @@
     {
       "source": "HStAD, X 4, 4061",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4904683",
-      "german": "König Maximilian gibt bekannt, dass er dem Grafen Erasmus v. Wertheim die Vollstreckung der über Georg von Rosenberg verhängten Reichsacht übertragen habe."
+      "german": "König Maximilian gibt bekannt, dass er dem Grafen Erasmus v. Wertheim die Vollstreckung der über Georg von Rosenberg verhängten Reichsacht übertragen habe.",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was placed under the Reichsacht, whose enforcement King Maximilian entrusted to Erasmus, Graf von Wertheim."
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,14 @@
       "source": "RIplus Regg. EB Mainz 1,2 n. 3554",
       "url": "https://www.regesta-imperii.de/id/d35af909-d8be-43b6-acd6-a0e40fb88c9b",
       "german": "Nycolaus berichtet dem Rudolf Losse nach Avignon über die Belagerung von Erfurt durch die Anhänger Baldewins (personaliter non fuit – ibi ultra quindene spacium), über die Teilnehmer, auf Mainzer Seite: Dekan von Mainz; Hermann von Lißberg (Lys-); Bertold von Rosenberg; Markgraf von Meißen; Friderich von Wan(gen)heim als superior capitaneus; auf Seiten der Erfurter: der Graf „de Kevernberg“ und der Herr von Blankenheim, über die Verluste der Erfurter, und über den durch die alte Markgräfin von Meißen vermittelten Frieden; ferner über die Feindseligkeiten zwischen dem König von Böhmen und Ludwig d. B. über Armleder und Judenverfolgungen; endlich meldet er, daß Bingen durch einen Brand z. T. vernichtet worden sei, u. a. auch die erzb. Kurie, nichil deportando nisi litteras, vinum, blada, equos.",
-      "english": "Nycolaus reports to Rudolf Losse in Avignon about the siege of Erfurt by the followers of Baldwin (personaliter non fuit – ibi ultra quindene spacium), about the participants, on the Mainze side: Dean of Mainz; Hermann von Lißberg (Lys-); Bertold von Rosenberg; Margrave of Meißen; Friderich von Wan(gen)heim as superior capitaneus; on the side of the Erfurtians: Count \"de Kevernberg\" and the Lord of Blankenheim, about the losses of the Erfurtians, and about the peace mediated by the old Margravine of Meißen; furthermore about the hostilities between the King of Bohemia and Ludwig the Bavarian over the Armleder and persecutions of Jews; finally he reports that Bingen has been partly destroyed by fire, among other things also the archiepiscopal curia, nichil deportando nisi litteras, vinum, blada, equos."
+      "english": "Nycolaus reports to Rudolf Losse in Avignon about the siege of Erfurt by the followers of Baldwin (personaliter non fuit – ibi ultra quindene spacium), about the participants, on the Mainze side: Dean of Mainz; Hermann von Lißberg (Lys-); Bertold von Rosenberg; Margrave of Meißen; Friderich von Wan(gen)heim as superior capitaneus; on the side of the Erfurtians: Count \"de Kevernberg\" and the Lord of Blankenheim, about the losses of the Erfurtians, and about the peace mediated by the old Margravine of Meißen; furthermore about the hostilities between the King of Bohemia and Ludwig the Bavarian over the Armleder and persecutions of Jews; finally he reports that Bingen has been partly destroyed by fire, among other things also the archiepiscopal curia, nichil deportando nisi litteras, vinum, blada, equos.",
+      "facts": [
+        {
+          "person": "Berthold von Rosenberg",
+          "type": "generic",
+          "content": "participated on the Mainz side in the siege of Erfurt by Baldwin’s followers."
+        }
+      ]
     }
   ]
 }

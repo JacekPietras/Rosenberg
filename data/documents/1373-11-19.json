@@ -6,7 +6,14 @@
       "source": "ZEIBIG, Klosterneuburg (=FRA II/10, Wien 1857) S. 454, 1373 XI 19",
       "url": "https://www.monasterium.net/mom/AT-StiAK/KlosterneuburgCanReg/1373_XI_19/charter",
       "german": "Agnes von Rosenberg befiehlt ihren Unterthanen zu Krizendorf, den stiftlichen Zehentnern freien Eingang in die Keller zu gestatten.",
-      "english": "Agnes von Rosenberg orders her subjects in Krizendorf to allow the chapter's tithe collectors free access to the cellars."
+      "english": "Agnes von Rosenberg orders her subjects in Krizendorf to allow the chapter's tithe collectors free access to the cellars.",
+      "facts": [
+        {
+          "person": "Agnes von Rosenberg",
+          "type": "generic",
+          "content": "ordered her subjects at Krizendorf to admit the chapter's tithe collectors freely to the cellars."
+        }
+      ]
     }
   ]
 }

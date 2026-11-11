@@ -5,7 +5,17 @@
     {
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 1662, 155",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5397367",
-      "german": "Ritter Wilhelm von Dottenheim verzichtet, nachdem das Schloss Schüpf, woran er einen Anteil hat, in der Fehde zwischen Erzbischof Adolf von Mainz, Kurfürst Friedrich von der Pfalz und Bischof Rudolf von Würzburg einerseits und Jörg, Arnold und Michael von Rosenberg andererseits erobert und zerstört worden war, auf Forderungen und Ansprüche. Erzbischof Dietrich von Mainz, Kurfürst Philipp von der Pfalz und Bischof Rudolf von Würzburg hatten ihn wieder zu seinem Teil und seinen Nutzungsrechten kommen lassen.\n\nLaufzeit: 1477 August 31 (uff sontag vor sant Egidien tag)\n\nSiegler: Wilhelm von Dottenheim"
+      "german": "Ritter Wilhelm von Dottenheim verzichtet, nachdem das Schloss Schüpf, woran er einen Anteil hat, in der Fehde zwischen Erzbischof Adolf von Mainz, Kurfürst Friedrich von der Pfalz und Bischof Rudolf von Würzburg einerseits und Jörg, Arnold und Michael von Rosenberg andererseits erobert und zerstört worden war, auf Forderungen und Ansprüche. Erzbischof Dietrich von Mainz, Kurfürst Philipp von der Pfalz und Bischof Rudolf von Würzburg hatten ihn wieder zu seinem Teil und seinen Nutzungsrechten kommen lassen.\n\nLaufzeit: 1477 August 31 (uff sontag vor sant Egidien tag)\n\nSiegler: Wilhelm von Dottenheim",
+      "facts": [
+        {
+          "person": "Wilhelm von Dottenheim",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "renounced claims after his share of Schloss Schüpf, captured and destroyed in the feud against Georg, Arnold and Michael von Rosenberg, was restored by the princes of Mainz, the Palatinate and Würzburg."
+        }
+      ]
     }
   ]
 }

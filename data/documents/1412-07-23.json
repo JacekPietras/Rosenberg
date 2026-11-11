@@ -6,7 +6,17 @@
       "source": "StAN, Reichsstadt Nürnberg, Klarenamt, Kloster St. Klara, Urkunden 34",
       "url": "https://www.gda.bayern.de/gvl/document/f44266e6-8191-4ef0-a6dc-20226c85692f",
       "german": "Gerichtsbrief des Schultheiß Hans von Rosenberg und der Schöffen der Stadt zu Nüremberg, inhaltlich dessen Ulrich Pewrl alle ihm zustehenden Rechte an dem Holz, genannt die Altenlach bei Lindelberg, mit den zugehörigen Äckern dem Herman Stör verkaufte, im Einverständnis mit Merkel Pewrl, Cunz Pewrl, Ullrin Pesolt, Fritz Hailner von Swertembach handelnd. - Gerichtszeugen: Heinrich Hutten, Herman Kepfen. - Siegler: das Gericht zu Nürnberg.",
-      "english": "Hans von Rosenberg, mayor of Nuremberg, and the city's aldermen issued a court record concerning Ulrich Pewrl's sale to Herman Stör of his rights in the Altenlach wood near Lindelberg and its associated fields. Merkel Pewrl, Cunz Pewrl, Ullrin Pesolt, and Fritz Hailner of Swertembach consented. Heinrich Hutten and Herman Kepfen were court witnesses; the Nuremberg court sealed the record."
+      "english": "Hans von Rosenberg, mayor of Nuremberg, and the city's aldermen issued a court record concerning Ulrich Pewrl's sale to Herman Stör of his rights in the Altenlach wood near Lindelberg and its associated fields. Merkel Pewrl, Cunz Pewrl, Ullrin Pesolt, and Fritz Hailner of Swertembach consented. Heinrich Hutten and Herman Kepfen were court witnesses; the Nuremberg court sealed the record.",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Schultheiß zu Nürnberg"
+          ],
+          "type": "generic",
+          "content": "issued a court record with the Nuremberg aldermen concerning Ulrich Pewrl’s sale to Herman Stör of rights in the Altenlach wood near Lindelberg and its fields."
+        }
+      ]
     }
   ]
 }

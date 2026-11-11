@@ -11,7 +11,41 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400456000000620001385",
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x95553702116012520210713150716233"
       ],
-      "german": "Friedrich Pfalzgraf bei Rhein etc., Kurfürst, belehnt, nachdem sein Vetter Ottheinrich Pfalzgraf bei Rhein etc., Kurfürst, gestorben ist, den Philipp Jakob von Rosenberg auf Antrag, zugleich für seinen Bruder Konrad von Rosenberg, mit einem Viertel der Stadt Aub und zwar neben deren Vetter Zeisolf (Zeyßolffen) von Rosenberg zu Mannlehen. Hierdurch bleiben seine, seiner Leute (manne) und Dritter Rechte unberührt, soweit sie vom Kurfürstentum der Pfalzgrafschaft bei Rhein rühren. Die Gebrüder von Rosenberg und deren Mannlehenserben haben das Lehen künftig in allen gegebenen Fällen von ihm oder seinen Erben als Pfalzgrafen bei Rhein erneut zu Lehen zu nehmen und die üblich mit der Belehnung verbundenen Pflichten zu erfüllen. Er bestätigt den durch Philipp Jakob, zugleich für seinen Bruder Konrad, geleisteten Lehnseid. - Auf dem Bug: Unterschrift des kurpfälzischen Kanzlers von Minckwitz. -\n\nSiegler: der Aussteller.- Dinstags nach Trium regum, den neundtenn rnonatstag Januarii, Haidelberg.\n\nAusf., Perg., Sg. ab. - Nr. 1306.\n\nReg. Nr. 1376"
+      "german": "Friedrich Pfalzgraf bei Rhein etc., Kurfürst, belehnt, nachdem sein Vetter Ottheinrich Pfalzgraf bei Rhein etc., Kurfürst, gestorben ist, den Philipp Jakob von Rosenberg auf Antrag, zugleich für seinen Bruder Konrad von Rosenberg, mit einem Viertel der Stadt Aub und zwar neben deren Vetter Zeisolf (Zeyßolffen) von Rosenberg zu Mannlehen. Hierdurch bleiben seine, seiner Leute (manne) und Dritter Rechte unberührt, soweit sie vom Kurfürstentum der Pfalzgrafschaft bei Rhein rühren. Die Gebrüder von Rosenberg und deren Mannlehenserben haben das Lehen künftig in allen gegebenen Fällen von ihm oder seinen Erben als Pfalzgrafen bei Rhein erneut zu Lehen zu nehmen und die üblich mit der Belehnung verbundenen Pflichten zu erfüllen. Er bestätigt den durch Philipp Jakob, zugleich für seinen Bruder Konrad, geleisteten Lehnseid. - Auf dem Bug: Unterschrift des kurpfälzischen Kanzlers von Minckwitz. -\n\nSiegler: der Aussteller.- Dinstags nach Trium regum, den neundtenn rnonatstag Januarii, Haidelberg.\n\nAusf., Perg., Sg. ab. - Nr. 1306.\n\nReg. Nr. 1376",
+      "facts": [
+        {
+          "person": "Philipp Jakob von Rosenberg",
+          "type": "sibling",
+          "of": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "kin",
+          "of": "Philipp Jakob von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "kin",
+          "of": "Konrad von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs."
+        },
+        {
+          "person": "Philipp Jakob von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs."
+        }
+      ]
     }
   ]
 }

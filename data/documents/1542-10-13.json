@@ -5,7 +5,14 @@
     {
       "source": "HStAD, B 15, 713",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1495014",
-      "german": "Erw. Erasmus von Straßburg, Landgraf im Elsaß, bekundet, dass er dem Balthasar v. Rosenberg, zugleich für Philipp und Jakob v. Fleckenstein, Söhne des verstorbenen Jakob v. Fleckenstein und seine Ehefrau Barbara v. Ingelheim, für Anna v. Fleckenstein sowie Johann und Philipp v. Helmstadt das Dorf Gerolsheim bei Lambsheim zu einem Mannlehen verliehen habe\n\nSiegler: Aussteller"
+      "german": "Erw. Erasmus von Straßburg, Landgraf im Elsaß, bekundet, dass er dem Balthasar v. Rosenberg, zugleich für Philipp und Jakob v. Fleckenstein, Söhne des verstorbenen Jakob v. Fleckenstein und seine Ehefrau Barbara v. Ingelheim, für Anna v. Fleckenstein sowie Johann und Philipp v. Helmstadt das Dorf Gerolsheim bei Lambsheim zu einem Mannlehen verliehen habe\n\nSiegler: Aussteller",
+      "facts": [
+        {
+          "person": "Balthasar von Rosenberg",
+          "type": "generic",
+          "content": "received Gerolsheim near Lambsheim as a Mannlehen from Erasmus von Straßburg, Landgraf im Elsaß, also on behalf of Philipp and Jakob von Fleckenstein, Anna von Fleckenstein, and Johann and Philipp von Helmstadt."
+        }
+      ]
     }
   ]
 }

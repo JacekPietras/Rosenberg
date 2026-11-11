@@ -11,7 +11,41 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400456000000620001344",
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x99836206436157220210713150716227"
       ],
-      "german": "Ottheinrich Pfalzgraf bei Rhein, Kurfürst etc., belehnt nach dem Tod des Friedrich Pfalzgrafen bei Rhein, Kurfürsten etc., seines Vetters, den Philipp Jakob von Rosenberg auf Antrag, zugleich für dessen Bruder Konrad von Rosenberg, neben dessen Vetter Zaissolff von Rosenberg mit einem Viertel der Stadt Aub, soweit dies von ihm und dem Kurfürstentum der Pfalzgrafschaft bei Rhein zu Lehen geht, zu Mannlehen. Hierdurch bleiben seine, seiner Leute und Dritter Rechte unberührt. Die Gebrüder von Rosenberg und ihre Mannlehnserben haben das Mannlehen künftig in allen gegebenen Fällen von ihm und seinen Erben als Pfalzgrafen und Kurfürsten nerneut zu Lehen zu nehmen. Er bestätigt den durch Philipp Jakob von Rosenberg, zugleich für seinen Bruder Konrad von Rosenberg, geleisteten Lehnseid. - [Auf dem Bug:] Unterschrift des kurpfälzischen Kanzlers Erasmus von Minckwitz. -\n\nSiegler: der Aussteller.\n\nAusf., Perg., Sg. ab. - Nr. 1266.\n\nReg. Nr. 1335"
+      "german": "Ottheinrich Pfalzgraf bei Rhein, Kurfürst etc., belehnt nach dem Tod des Friedrich Pfalzgrafen bei Rhein, Kurfürsten etc., seines Vetters, den Philipp Jakob von Rosenberg auf Antrag, zugleich für dessen Bruder Konrad von Rosenberg, neben dessen Vetter Zaissolff von Rosenberg mit einem Viertel der Stadt Aub, soweit dies von ihm und dem Kurfürstentum der Pfalzgrafschaft bei Rhein zu Lehen geht, zu Mannlehen. Hierdurch bleiben seine, seiner Leute und Dritter Rechte unberührt. Die Gebrüder von Rosenberg und ihre Mannlehnserben haben das Mannlehen künftig in allen gegebenen Fällen von ihm und seinen Erben als Pfalzgrafen und Kurfürsten nerneut zu Lehen zu nehmen. Er bestätigt den durch Philipp Jakob von Rosenberg, zugleich für seinen Bruder Konrad von Rosenberg, geleisteten Lehnseid. - [Auf dem Bug:] Unterschrift des kurpfälzischen Kanzlers Erasmus von Minckwitz. -\n\nSiegler: der Aussteller.\n\nAusf., Perg., Sg. ab. - Nr. 1266.\n\nReg. Nr. 1335",
+      "facts": [
+        {
+          "person": "Philipp Jakob von Rosenberg",
+          "type": "sibling",
+          "of": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "kin",
+          "of": "Philipp Jakob von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "kin",
+          "of": "Konrad von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Ottheinrich of the Palatinate together with the other named Rosenberg heirs."
+        },
+        {
+          "person": "Philipp Jakob von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Ottheinrich of the Palatinate together with the other named Rosenberg heirs."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Ottheinrich of the Palatinate together with the other named Rosenberg heirs."
+        }
+      ]
     }
   ]
 }

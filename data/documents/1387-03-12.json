@@ -12,13 +12,27 @@
       "source": "Regesta Boica 10, p. 206",
       "url": "https://www.bavarikon.de/object/bav:BSB-MDZ-00000BSB10333802",
       "german": "Die Herzoge Stephan, Friedrich und Johann v. Baiern bevollmächtigen den Bischof, Jagstberg und Lauda v. Gerlach v. Hohenlohe für 27.000 fl. einzulösen.",
-      "english": "Dukes Stephan, Friedrich, and Hans of Bavaria authorize Bishop Gerhard of Würzburg to redeem Jagstberg and Lauda from Gerlach von Hohenlohe for 27,000 florins."
+      "english": "Dukes Stephan, Friedrich, and Hans of Bavaria authorize Bishop Gerhard of Würzburg to redeem Jagstberg and Lauda from Gerlach von Hohenlohe for 27,000 florins.",
+      "facts": [
+        {
+          "subject": "Lauda",
+          "type": "generic",
+          "content": "was to be redeemed by the bishop of Würzburg from Gerlach von Hohenlohe under authorization from the dukes of Bayern."
+        }
+      ]
     },
     {
       "source": "Monumenta Boica 45, pp. 491–493, no. 323",
       "url": "https://www.historisches-unterfranken.uni-wuerzburg.de/staedte/staedte-results.php?eintrag=6622",
       "german": "Die Herzöge Stephan, Friedrich und Johann von Bayern besprechen mit dem Würzburger Bischof Gerhard von Schwarzburg ihre Schuldenbegleichung. Dafür müssen sie die Schlösser Jagesperg und Luden an das Hochstift verkaufen sowie ihre herzoglichen Anteile an Rothenfels und Gemünden.",
-      "english": "Dukes Stephan, Friedrich, and Hans of Bavaria discuss the settlement of their debts with Bishop Gerhard of Schwarzburg of Würzburg. To settle them, they are to sell the castles of Jagstberg and Lauda to the bishopric, along with their ducal shares in Rothenfels and Gemünden."
+      "english": "Dukes Stephan, Friedrich, and Hans of Bavaria discuss the settlement of their debts with Bishop Gerhard of Schwarzburg of Würzburg. To settle them, they are to sell the castles of Jagstberg and Lauda to the bishopric, along with their ducal shares in Rothenfels and Gemünden.",
+      "facts": [
+        {
+          "subject": "Lauda",
+          "type": "generic",
+          "content": "was to be sold to the Würzburg church by the dukes of Bayern as part of a debt settlement."
+        }
+      ]
     },
     {
       "source": "Archivportal-D, Fulda: Reichsabtei, Stift, Urk. 75 (reference no. 613)",

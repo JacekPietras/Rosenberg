@@ -5,7 +5,19 @@
     {
       "source": "StAWü, Würzburger Urkunden 4/163 c",
       "url": "https://www.gda.bayern.de/gvl/document/d7058b51-c0c4-4787-b8b4-a58be2db9ac5",
-      "german": "Michael von Rosenberg, Bruder des Arnold von Rosenberg, bestätigt, dass der Guldenzoll zu Edelfingen (?) (\"Ötelfingen\") auf seinen Bruder übergegangen ist"
+      "german": "Michael von Rosenberg, Bruder des Arnold von Rosenberg, bestätigt, dass der Guldenzoll zu Edelfingen (?) (\"Ötelfingen\") auf seinen Bruder übergegangen ist",
+      "facts": [
+        {
+          "person": "Michael von Rosenberg",
+          "type": "sibling",
+          "of": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "confirmed that the Guldenzoll at Ötelfingen had passed to his brother Arnold von Rosenberg."
+        }
+      ]
     }
   ]
 }

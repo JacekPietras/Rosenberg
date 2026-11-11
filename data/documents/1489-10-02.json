@@ -5,7 +5,19 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamt Creglingen, Urkunden 350",
       "url": "https://www.gda.bayern.de/gvl/document/ef24f061-8ae8-407e-aadc-9c967265c93d",
-      "german": "Lehenrevers: Conz von Rosenberg gegen die Markgrafen Friedrich und Sigmuns von Brandenburg um das Schloss zu Waldmannshofen. - Siegler: Cunz von Rosenberg."
+      "german": "Lehenrevers: Conz von Rosenberg gegen die Markgrafen Friedrich und Sigmuns von Brandenburg um das Schloss zu Waldmannshofen. - Siegler: Cunz von Rosenberg.",
+      "facts": [
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "acknowledged a fief of Schloss Waldmannshofen from Margraves Friedrich and Sigmund of Brandenburg."
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "sealed his fief acknowledgment for Schloss Waldmannshofen."
+        }
+      ]
     }
   ]
 }

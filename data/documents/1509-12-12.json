@@ -5,7 +5,14 @@
     {
       "source": "HStAD, A 14, 3753",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5119548",
-      "german": "Graf Georg v. Bitsch bekundet, dass Kaiser Maximilian ihn im Kriegslager vor Padua dem Heer zugeordnet hat, zusammen mit Agapet v. Hutten und Thoman v. Rosenberg."
+      "german": "Graf Georg v. Bitsch bekundet, dass Kaiser Maximilian ihn im Kriegslager vor Padua dem Heer zugeordnet hat, zusammen mit Agapet v. Hutten und Thoman v. Rosenberg.",
+      "facts": [
+        {
+          "person": "Thomas von Rosenberg",
+          "type": "generic",
+          "content": "was assigned to the army with Georg, Graf von Bitsch, and Agapet von Hutten by Kaiser Maximilian at the camp before Padua."
+        }
+      ]
     }
   ]
 }

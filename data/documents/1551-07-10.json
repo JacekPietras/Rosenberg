@@ -1,11 +1,21 @@
 {
   "date": "1551-07-10",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "HStAD, B 15, NACHWEIS",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=880721",
-      "german": "Hans v. Lewenstein, Sohn Friedrichs d. Ä., und dessen Ehefrau Anna geb. v. Zeiskam, und Elisabeth, Tochter des verstorbenen Ulrich Ulner v. Dieburg und dessen Ehefrau Margarethe geb. Kämmerer v. Worms gen. v. Dalberg bekunden, dass ein Ehevertrag abgeschlossen worden sei zwischen ihnen, unter Vermittlung von des ersteren Vater, dem Hans Erhard v. Flörsheim, Vogt im Bruchrain, namens des Bischof Philipp (II. v. Flörsheim) von Speyer, von Karl v. Lewenstein, Johann v. Heppenheim gen. v. Saal, Domdekan zu Speyer, Andres v. Heppenheim gen, v. Saal, Domkustos zu Worms, Balthasar v. Rosenberg, Hans Siegfried v. Oberstein, Heinrich v. Zeiskam und Christoph Bonn v. Wachenheim von seiten des Hans sowie durch Philipp Ulner v. Dieburg, Eberhard und Wolf Kämmerer v. Worms gen. v. Dalberg, Vormünder der Kinder des verstorbenen Ulrich Ulner v. Dieburg, Wilhelm v. Schönberg, Domkantor zu Worms, Ulrich Wolf v. Flehingen, den Kreuznacher Amtmann Johann v. Dienheim, Friedrich d. J. v. Flörsheim, Georg Kämmerer v. Worms gen. v. Dalberg, Reichard Greiffenclau v. Vollrads und Kunz d. J. v. Reckberg. Danach soll Anna 1.500 Gulden, je zu 60 Kreuzer, zahlbar in einer jährlichen Gülte von 75 Gulden, Ehesteuer mitbringen, davon 1.200 Gulden von ihrem elterlichen Erbe, 300 Gulden von Eberhard Kämerer v. Worms gen. v. Dalberg und dessen Ehefrau Ursula geb, v. Hutten. Hans von Lewenstein soll diese Summe mit einem gleichen Betrag widerlegen, versichert durch Gülten u. a. zu Höchstätten; außerdem soll er eine Morgengabe von 200 Gulden leisten. Als Wittum soll er ihr sein und seines Bruders Karl Behausung zu Kreuznach, genannt der Judenhof, oder eine jährliche Gülte von 15 Gulden geben\n\nSiegler: Aussteller 1, Hans Erhard v. Flörsheim, Andres v. Heppenheim, Balthasar v. Rosenberg, Hans Siegfried v. Oberstein, Karl v. Lewenstein, Philipp Ulner v. Dieburg, Eberhard, Wolf und Georg Kämmere v. Worms gen. v. Dalberg, Ulrich Wolf v. Flehingen, Johann v. Dienheim, Reichard Greiffenclau v. Vollrads"
+      "german": "Hans v. Lewenstein, Sohn Friedrichs d. Ä., und dessen Ehefrau Anna geb. v. Zeiskam, und Elisabeth, Tochter des verstorbenen Ulrich Ulner v. Dieburg und dessen Ehefrau Margarethe geb. Kämmerer v. Worms gen. v. Dalberg bekunden, dass ein Ehevertrag abgeschlossen worden sei zwischen ihnen, unter Vermittlung von des ersteren Vater, dem Hans Erhard v. Flörsheim, Vogt im Bruchrain, namens des Bischof Philipp (II. v. Flörsheim) von Speyer, von Karl v. Lewenstein, Johann v. Heppenheim gen. v. Saal, Domdekan zu Speyer, Andres v. Heppenheim gen, v. Saal, Domkustos zu Worms, Balthasar v. Rosenberg, Hans Siegfried v. Oberstein, Heinrich v. Zeiskam und Christoph Bonn v. Wachenheim von seiten des Hans sowie durch Philipp Ulner v. Dieburg, Eberhard und Wolf Kämmerer v. Worms gen. v. Dalberg, Vormünder der Kinder des verstorbenen Ulrich Ulner v. Dieburg, Wilhelm v. Schönberg, Domkantor zu Worms, Ulrich Wolf v. Flehingen, den Kreuznacher Amtmann Johann v. Dienheim, Friedrich d. J. v. Flörsheim, Georg Kämmerer v. Worms gen. v. Dalberg, Reichard Greiffenclau v. Vollrads und Kunz d. J. v. Reckberg. Danach soll Anna 1.500 Gulden, je zu 60 Kreuzer, zahlbar in einer jährlichen Gülte von 75 Gulden, Ehesteuer mitbringen, davon 1.200 Gulden von ihrem elterlichen Erbe, 300 Gulden von Eberhard Kämerer v. Worms gen. v. Dalberg und dessen Ehefrau Ursula geb, v. Hutten. Hans von Lewenstein soll diese Summe mit einem gleichen Betrag widerlegen, versichert durch Gülten u. a. zu Höchstätten; außerdem soll er eine Morgengabe von 200 Gulden leisten. Als Wittum soll er ihr sein und seines Bruders Karl Behausung zu Kreuznach, genannt der Judenhof, oder eine jährliche Gülte von 15 Gulden geben\n\nSiegler: Aussteller 1, Hans Erhard v. Flörsheim, Andres v. Heppenheim, Balthasar v. Rosenberg, Hans Siegfried v. Oberstein, Karl v. Lewenstein, Philipp Ulner v. Dieburg, Eberhard, Wolf und Georg Kämmere v. Worms gen. v. Dalberg, Ulrich Wolf v. Flehingen, Johann v. Dienheim, Reichard Greiffenclau v. Vollrads",
+      "facts": [
+        {
+          "person": "Balthasar von Rosenberg",
+          "type": "generic",
+          "content": "helped mediate the marriage contract of Hans von Lewenstein and Elisabeth Ulner von Dieburg on Hans’s side."
+        }
+      ]
     }
   ]
 }

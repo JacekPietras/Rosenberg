@@ -6,6 +6,18 @@
       "source": "Göttingen, Diplomatischer Apparat App. dipl. 311 A, App. dipl. 311 A",
       "url": "https://www.monasterium.net/mom/DE-GAUnivGoet/AppDipl/App_dipl_311_A_1/charter",
       "german": "Hans von Sorgenloch, genannt Gensfleisch ( Genssfleyssche), weltlicher Richter zu Mainz bekennt, dass vor ihm die Äbtissini Otilia von Rosenberg, Äbtissin der weissen Frauen zu Mainz ( Mentze), für ihr Kloster auf der einen Seite und auf der anderen Seite Wilhelm Schnyder, Schultheiß zu Hilbersheim, Hanss Schnider von Großwinterheim, Hanss Smydt von Großwinterheim, Cuntz Stortzkopp und Steingin von Ingelheim und Anthiss Bart von Oppinheim wegen Dine (Dingen), der Tochter des verstorbenen Hertrich von Großwinterheim, erschienen sind, dass die Äbtissin bekannt habe, dass sie die Dine als Nonne in das Kloster der weissen Frauen auf dem Diepmark zu Mainz aufgenommen hat, dass sie ihr väterliches Erbgut mit in das Kloster bringen soll, dass jedoch zwei Morgen Ackers ihr Bruder Johannes Hertrichen voraus haben soll, dass diese 2 Morgen bei kinderlosem Tode des Johannes dem Kloster anheimfällt, sein übriges Gut aber seinen Verwandten gehören soll; dass jedoch, wenn er Kinder hinterläßt, die 2 Morgen den Kindern anheimfallen; dass Johannes Hertrich seine Zustimmung hierzu gegeben hat. Aussteller: Hans von Sorgenloch, genannt Gensfleisch (Genssfleyssche), weltlicher Richter zu Mainz Empfänger: Äbtissin zu den Weissen Frauen zu Mainz",
+      "facts": [
+        {
+          "person": "Ottilia von Rosenberg",
+          "type": "generic",
+          "content": "was abbess of the White Ladies at Mainz."
+        },
+        {
+          "person": "Ottilia von Rosenberg",
+          "type": "generic",
+          "content": "admitted Dine von Großwinterheim as a nun at the convent of the White Ladies in Mainz."
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-GAUnivGoet/AppDipl/Goettingen_App_Dipl_311A_14810506_r.JPG"

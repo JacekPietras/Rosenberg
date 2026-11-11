@@ -1,11 +1,22 @@
 {
   "date": "1486-07-06",
-  "label": ["to review", "Franken", "Schenk"],
+  "label": [
+    "to review",
+    "Franken",
+    "Schenk"
+  ],
   "entries": [
     {
       "source": "HStAM, Urk. 100, 5279",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7784118",
       "german": "Schlichtung eines Streits zwischen Siegfried von Rosenberg und den Kindern des Otto Küchenmeister\n\nAbt Johann von Fulda schlichtet den Streit zwischen Siegfried von Rosenberg und den Kindern des verstorbenen Otto Küchenmeister, dessen Witwe Rosenberg geheiratet hat, um Herausgabe von Heiratsgut, Morgengabe und Heimsteuer.",
+      "facts": [
+        {
+          "person": "Siegfried von Rosenberg",
+          "type": "generic",
+          "content": "was party to a dispute with the children of the deceased Otto Küchenmeister concerning marriage property, a morning gift and dowry, settled by Abbot Johann of Fulda."
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._100/5279/hstam_urk._100_nr_5279_0000.jpg"

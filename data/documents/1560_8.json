@@ -5,7 +5,17 @@
     {
       "source": "Generallandesarchiv Karlsruhe 72 Nr. 7319",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641777",
-      "german": "Verkauf seiner mainzisch lehnbaren Zinsgüter und Gefälle (sog. Dottenheim'sche Lehen) im Schüpfer Grund an Albrecht von Rosenberg zu Boxberg durch Eberhard Rüdt von Collenberg.\n\nLaufzeit: 1560\n\nEnthält: Enthält nur: Schüpfer-Grund-Vertrag, Abschrift, Papier.\n\nUmfang: 1 Schr."
+      "german": "Verkauf seiner mainzisch lehnbaren Zinsgüter und Gefälle (sog. Dottenheim'sche Lehen) im Schüpfer Grund an Albrecht von Rosenberg zu Boxberg durch Eberhard Rüdt von Collenberg.\n\nLaufzeit: 1560\n\nEnthält: Enthält nur: Schüpfer-Grund-Vertrag, Abschrift, Papier.\n\nUmfang: 1 Schr.",
+      "facts": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ],
+          "type": "generic",
+          "content": "bought Mainz fief rents and dues in the Schüpfer Grund from Eberhard Rüdt von Collenberg."
+        }
+      ]
     }
   ]
 }

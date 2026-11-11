@@ -7,6 +7,16 @@
       "url": "https://www.gda.bayern.de/gvl/document/2971666b-33a4-4f84-9f2e-b388565ba1bf",
       "german": "A1: Ulrich Wolntzhofer, Bürger zu Amberg\nA2: Philipp Reich, Bürger zu Amberg   \nE: Hans der Kastner d. Ä., Bürger zu Amberg\nVerkauf des Fischwassers zu Theuern an der Vils als freies Eigen.\n\nBesiegelung/Beglaubigung: \tS1: A1, S2: A2, S3: Konrad von Rosenberg, Viztum zu Amberg",
       "english": "A1: Ulrich Wolntzhofer, citizen of Amberg\nA2: Philipp Reich, citizen of Amberg\nE: Hans the Kastner Sr., citizen of Amberg\nSale of the fishing rights at Theuern on the Vils as free property (freies Eigen).\n\nSealing/Certification: S1: A1, S2: A2, S3: Konrad von Rosenberg, Viztum of Amberg",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Viztum zu Amberg"
+          ],
+          "type": "generic",
+          "content": "sealed the sale of fishing rights at Theuern on the Vils by Ulrich Wolntzhofer and Philipp Reich to Hans der Kastner der Ältere."
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/2971666b-33a4-4f84-9f2e-b388565ba1bf/1/full/max/0/default.jpg",

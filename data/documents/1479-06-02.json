@@ -1,11 +1,21 @@
 {
   "date": "1479-06-02",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "StAWü, Würzburger Urkunden 4/163 a",
       "url": "https://www.gda.bayern.de/gvl/document/d431c1fe-6036-41da-8197-bd283f740d66",
-      "german": "Arnold von Rosenberg bestätigt, dass er als Erbe des Ulrich von Rosenberg den Anteil von 19 Gulden an den 150 Gulden jährlicher Gült zu Haßfurt, Stadt Volkach und dem Dorf \"Keller\", die Ulrich von Rosenberg und andere 1456 vom Bischof Johann von Würzburg für 3000 Gulden erworben haben, wieder frei gibt"
+      "german": "Arnold von Rosenberg bestätigt, dass er als Erbe des Ulrich von Rosenberg den Anteil von 19 Gulden an den 150 Gulden jährlicher Gült zu Haßfurt, Stadt Volkach und dem Dorf \"Keller\", die Ulrich von Rosenberg und andere 1456 vom Bischof Johann von Würzburg für 3000 Gulden erworben haben, wieder frei gibt",
+      "facts": [
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "generic",
+          "content": "as heir of Ulrich von Rosenberg released his share of the annual rent at Haßfurt, Volkach and Keller, which Ulrich and others had acquired from Bishop Johann of Würzburg in 1456."
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,14 @@
     {
       "source": "HStAM, Urk. 62, 797",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1359048",
-      "german": "Michel von Rosenburg erklärt, daß ihm von Philipp d. J. Grafen von Hanau für verschiedene in dessen Dienst verdorbene Pferde Genüge geschehen sei."
+      "german": "Michel von Rosenburg erklärt, daß ihm von Philipp d. J. Grafen von Hanau für verschiedene in dessen Dienst verdorbene Pferde Genüge geschehen sei.",
+      "facts": [
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "acknowledged that Philipp von Hanau der Jüngere had compensated him for horses ruined in his service."
+        }
+      ]
     }
   ]
 }

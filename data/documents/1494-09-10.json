@@ -5,7 +5,14 @@
     {
       "source": "HStAD, A 13, 96",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2180528",
-      "german": "Jakob Kranich, Hans v. Rosenberg, Jorg Ruschener, Arnolt v. Bohel und Philipp von Rohrbach von wegen Hermann Hunds von Saulheim, Hans von Heymersheim und Gertrud, Schwester des Hermann und Hans, vergleichen sich mit Friedrich Keßler von Sarmsheim und Margarete von Rohrbach, Eheleute, Stiefvater bzw. rechter Mutter von Hermann, Hans und Gertrud über das auf Saulheim und Nierstein angewiesene Wittum der Margarete etc."
+      "german": "Jakob Kranich, Hans v. Rosenberg, Jorg Ruschener, Arnolt v. Bohel und Philipp von Rohrbach von wegen Hermann Hunds von Saulheim, Hans von Heymersheim und Gertrud, Schwester des Hermann und Hans, vergleichen sich mit Friedrich Keßler von Sarmsheim und Margarete von Rohrbach, Eheleute, Stiefvater bzw. rechter Mutter von Hermann, Hans und Gertrud über das auf Saulheim und Nierstein angewiesene Wittum der Margarete etc.",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "type": "generic",
+          "content": "participated in a settlement concerning Margarete von Rohrbach’s Wittum at Saulheim and Nierstein on behalf of Hermann Hund von Saulheim, Hans von Heymersheim and Gertrud."
+        }
+      ]
     }
   ]
 }

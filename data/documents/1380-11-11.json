@@ -7,6 +7,26 @@
       "url": "https://www.monasterium.net/mom/DE-StAW/MIB09/StA_W%C3%BC_MIB_9_fol_225v_%5B01%5D/charter",
       "german": "Erzbischof Adolf von Mainz ist damit einverstanden, dass die Ritter Konrad und Kunz von Rosenberg, Pfandinhaber der Burg Schadeck, das dem Engelhard von Rosenberg verpfändete Drittel der Burg an sich lösen. [Erzbischof] Adolf [von Mainz, Bischof in Speyer] beurkundet, dass Konrad ( Conrad) von Rosenberg, Ritter, Kunz ( Concz) von Rosenberg sowie Engelhard von Rosenberg, die erzbischöfliche Burg ( hus) Schadeck (Schadecke) je zu einem Drittel zu Pfande hatten. Nun haben Konrad und Kunz mit seiner Einwilligung das Drittel des Engelhard an sich gelöst. Der Erzbischof wird zu gegebener Zeit auch diesen Teil von ihnen beiden lösen, was die beiden ihm dann ohne Weiteres zu ermöglichen haben. Die beiden sind dem Erzbischof, seinen Nachkommen und dem Stift mit Burg Schadeck verbunden, gemäß der versiegelten Briefe, die sie darüber haben. - Datum Eltvil in die sancti Martini ... 1380.",
       "english": "Archbishop Adolf of Mainz agrees that the knights Konrad and Kunz von Rosenberg, pledgeholders of Schadeck Castle, may redeem the third of the castle pledged to Engelhard von Rosenberg. [Archbishop] Adolf [of Mainz, Bishop in Speyer] certifies that Konrad (Conrad) von Rosenberg, knight, Kunz (Concz) von Rosenberg, and Engelhard von Rosenberg each held one-third of the archiepiscopal castle (hus) Schadeck (Schadecke) as pledge. Now Konrad and Kunz, with his consent, have redeemed Engelhard's third for themselves. The Archbishop will at the appropriate time also redeem this portion from both of them, which the two must then facilitate for him without difficulty. The two are bound to the Archbishop, his descendants, and the chapter with Schadeck Castle, according to the sealed letters they have regarding this. - Given at Eltvil on St. Martin's Day ... 1380.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "held a third of Burg Schadeck in pledge from Mainz and redeemed Engelhard von Rosenberg’s third together with Kunz von Rosenberg."
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "held a third of Burg Schadeck in pledge from Mainz and redeemed Engelhard von Rosenberg’s third together with Konrad von Rosenberg."
+        },
+        {
+          "person": "Engelhard von Rosenberg",
+          "type": "generic",
+          "content": "held a third of Burg Schadeck in pledge from Mainz, which Konrad and Kunz von Rosenberg redeemed."
+        }
+      ],
       "img": [
         {
           "src": "http://www.ingrossaturbuecher.de/fileadmin/digitalisate/MIB009/440.mib009_225v.jpg"

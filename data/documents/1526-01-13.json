@@ -5,7 +5,14 @@
     {
       "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 334/fol. 50",
       "url": "https://www.gda.bayern.de/gvl/document/68043882-0ee7-4e4a-a01c-af57c6d53c76",
-      "german": "Cunz von Rosenberg an Rothenburg: Fürbitte für Hintersassen zu Ohrenbach."
+      "german": "Cunz von Rosenberg an Rothenburg: Fürbitte für Hintersassen zu Ohrenbach.",
+      "facts": [
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "wrote to Rothenburg interceding for Hintersassen at Ohrenbach."
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,26 @@
     {
       "source": "Generallandesarchiv Karlsruhe D Nr. 421",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3932134",
-      "german": "König Wenzel tut dem Konrad von Rosenberg, Vicedom zu Heidelberg, für dessen treu geleistete Dienste, und dessen Vettern, die mit ihm Gemeiner zu Boxberg sind, die Gnade, dass Leute oder Juden, die in die Stadt Boxberg ziehen und dort wohnhaft werden, aller Freiheiten, Gnaden und Rechte teilhaftig werden sollen, die dieser Stadt zustehen, und bestätigt ihnen das Gericht zu Boxberg sowie alle hergebrachten Privilegien und Rechte"
+      "german": "König Wenzel tut dem Konrad von Rosenberg, Vicedom zu Heidelberg, für dessen treu geleistete Dienste, und dessen Vettern, die mit ihm Gemeiner zu Boxberg sind, die Gnade, dass Leute oder Juden, die in die Stadt Boxberg ziehen und dort wohnhaft werden, aller Freiheiten, Gnaden und Rechte teilhaftig werden sollen, die dieser Stadt zustehen, und bestätigt ihnen das Gericht zu Boxberg sowie alle hergebrachten Privilegien und Rechte",
+      "english": "King Wenzel grants Konrad von Rosenberg, Vitztum at Heidelberg, for his faithful service, and his cousins who share Boxberg with him, the privilege that people or Jews who move to the town of Boxberg and reside there shall enjoy all the liberties, privileges and rights belonging to the town. He also confirms to them the court at Boxberg and all customary privileges and rights.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vicedom zu Heidelberg"
+          ],
+          "type": "generic",
+          "content": "received with his Vettern confirmation from King Wenzel of the court and historic rights at Boxberg."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vicedom zu Heidelberg"
+          ],
+          "type": "generic",
+          "content": "held Boxberg jointly with his Vettern."
+        }
+      ]
     }
   ]
 }

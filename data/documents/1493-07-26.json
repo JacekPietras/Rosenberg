@@ -5,7 +5,17 @@
     {
       "source": "HStAM, Urk. 61, 339",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2673758",
-      "german": "Ritter Georg von Rosenberg verpflichtet sich Johann Grafen von Wertheim, Philipp Grafen von Hanau-Lichtenberg, Michel und Asmus Grafen von Wertheim sechs Jahre zu dienen und sie bei ihren Fehden unter gewissen Ausnahmen zu unterstützen."
+      "german": "Ritter Georg von Rosenberg verpflichtet sich Johann Grafen von Wertheim, Philipp Grafen von Hanau-Lichtenberg, Michel und Asmus Grafen von Wertheim sechs Jahre zu dienen und sie bei ihren Fehden unter gewissen Ausnahmen zu unterstützen.",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "pledged six years of service and support in feuds, subject to exceptions, to Johann and Michel and Asmus, counts of Wertheim, and Philipp, count of Hanau-Lichtenberg."
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,17 @@
       "source": "BayHStA, Hochstift Regensburg Urkunden 491/a",
       "url": "https://www.gda.bayern.de/gvl/document/7ee85366-7231-4091-9907-d38e1d8b90c0",
       "german": "Vlrich [von Ettenstatt] u. Hanns Ettenstatter, derzeit in Smidmüllen ((1)) gesessen, bestätigen ihrem Vetter Heinrich den Ettenstetter von dem Haimbhofe ((2)) die vollständige Übergabe der Burg Heimhof u. bestimmen den Rat der Stadt Amberg ((3)) als Schlichter für gegebenenfalls auftretende Unstimmigkeiten.\nS: Cunrad von Rosenberg, Viztum von Amberg\nA: Ettenstatt, Familie von: Ulrich zu Schmidmühlen\nEttenstatt, Familie von: Johann zu Schmidmühlen",
-      "english": "Ulrich [von Ettenstatt] and Hanns Ettenstatter, currently residing in Schmidmühlen ((1)), confirm to their kinsman Heinrich den Ettenstetter of the Haimbhofe ((2)) the complete transfer of Heimhof Castle and designate the council of the city of Amberg ((3)) as arbitrators for any disputes that may arise.\nS: Cunrad von Rosenberg, Vicar of Amberg\nA: Ettenstatt, family of: Ulrich zu Schmidmühlen\nEttenstatt, family of: Johann zu Schmidmühlen"
+      "english": "Ulrich [von Ettenstatt] and Hanns Ettenstatter, currently residing in Schmidmühlen ((1)), confirm to their kinsman Heinrich den Ettenstetter of the Haimbhofe ((2)) the complete transfer of Heimhof Castle and designate the council of the city of Amberg ((3)) as arbitrators for any disputes that may arise.\nS: Cunrad von Rosenberg, Vicar of Amberg\nA: Ettenstatt, family of: Ulrich zu Schmidmühlen\nEttenstatt, family of: Johann zu Schmidmühlen",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Viztum zu Amberg"
+          ],
+          "type": "generic",
+          "content": "sealed Ulrich and Hans Ettenstatter’s acknowledgement of the transfer of Burg Heimhof to their Vetter Heinrich Ettenstetter."
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,14 @@
     {
       "source": "ISG FFM, H.06.09, 2059",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10278545",
-      "german": "26.10.1508: Verbundbrief des Hans Monche von Schluchtern.\n\nSiegler: S1: Siegfried von Rosenberg (grünes Wachs, Dm 2,6 cm, gut erhalten) an Pergamentpressel.S2: Adam Schelm von Bergen (grünes Wachs, Dm 2,7 cm, gut erhalten) an Pergamentpressel."
+      "german": "26.10.1508: Verbundbrief des Hans Monche von Schluchtern.\n\nSiegler: S1: Siegfried von Rosenberg (grünes Wachs, Dm 2,6 cm, gut erhalten) an Pergamentpressel.S2: Adam Schelm von Bergen (grünes Wachs, Dm 2,7 cm, gut erhalten) an Pergamentpressel.",
+      "facts": [
+        {
+          "person": "Siegfried von Rosenberg",
+          "type": "generic",
+          "content": "sealed the Verbundbrief of Hans Monche von Schluchtern."
+        }
+      ]
     }
   ]
 }

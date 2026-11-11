@@ -5,7 +5,14 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Fehdeakten 55",
       "url": "https://www.gda.bayern.de/gvl/document/0c62b107-4d50-4d76-b17e-ecd4b3771394",
-      "german": "Fehde zwischen Markgraf Albrecht, Kraft und Albrecht Grafen zu Hohenlohe, Hans von Absberg und Georg von Rosenberg an einem Teil, und denen Horneck von Hornberg am anderen Teil, der durch Vermittlung des Markgrafens Jakob von Baden auf einige Monate errichtete Stillstand und Herzogs Albrecht von Österreich dem Markgrafen Albrecht geleistete Hilfe wider die von Horneck und die endliche Beilegung dieser Fehde."
+      "german": "Fehde zwischen Markgraf Albrecht, Kraft und Albrecht Grafen zu Hohenlohe, Hans von Absberg und Georg von Rosenberg an einem Teil, und denen Horneck von Hornberg am anderen Teil, der durch Vermittlung des Markgrafens Jakob von Baden auf einige Monate errichtete Stillstand und Herzogs Albrecht von Österreich dem Markgrafen Albrecht geleistete Hilfe wider die von Horneck und die endliche Beilegung dieser Fehde.",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was party to a feud with the Horneck von Hornberg alongside Markgraf Albrecht, Kraft and Albrecht Grafen zu Hohenlohe, and Hans von Absberg."
+        }
+      ]
     }
   ]
 }

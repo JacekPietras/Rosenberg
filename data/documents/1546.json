@@ -11,7 +11,24 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400456000000620001162",
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x86432039737701420210713150716256"
       ],
-      "german": "Die Statthalter und Räte des Georg Friedrich Markgrafen zu Brandenburg etc., Burggrafen zu Nürnberg, belehnen den Lorenz von Rosenberg mit Schloß, Dorf, Gericht und Vogtei zu Waldmannshofen (Wolckmeßhoven) einschließlich Zubehör im Umfang der Mark (marckhung) und des Zehnten, mit dem Holz zu Schön sowie mit der etwa 6 Tagwerk großen Wiese (wißmat) in dem Swol als Lehen des Burggrafenturns zu Nürnberg zu Mannlehen, nachdem Lorenz die Lehen von seinem gestorbenen Vetter Ritter Konrad von Rosenberg geerbt hat. Die Rechte des Burggrafenturns zu Nürnberg sowie Dritter bleiben hierdurch unberührt. -\n\nSiegler: Georg Friedrich Markgraf zu Brandenburg etc., Burggraf zu Nürnberg. - Am tag Petri cathedra, Onnolzbach.\n\nAusf., Perg., Sg. besch. - Rv.: Presentatum Spirae, 28. Junii anno etc. '604, D. Bodelmann. - Nr. 1100.\n\nReg. Nr. 1158"
+      "german": "Die Statthalter und Räte des Georg Friedrich Markgrafen zu Brandenburg etc., Burggrafen zu Nürnberg, belehnen den Lorenz von Rosenberg mit Schloß, Dorf, Gericht und Vogtei zu Waldmannshofen (Wolckmeßhoven) einschließlich Zubehör im Umfang der Mark (marckhung) und des Zehnten, mit dem Holz zu Schön sowie mit der etwa 6 Tagwerk großen Wiese (wißmat) in dem Swol als Lehen des Burggrafenturns zu Nürnberg zu Mannlehen, nachdem Lorenz die Lehen von seinem gestorbenen Vetter Ritter Konrad von Rosenberg geerbt hat. Die Rechte des Burggrafenturns zu Nürnberg sowie Dritter bleiben hierdurch unberührt. -\n\nSiegler: Georg Friedrich Markgraf zu Brandenburg etc., Burggraf zu Nürnberg. - Am tag Petri cathedra, Onnolzbach.\n\nAusf., Perg., Sg. besch. - Rv.: Presentatum Spirae, 28. Junii anno etc. '604, D. Bodelmann. - Nr. 1100.\n\nReg. Nr. 1158",
+      "facts": [
+        {
+          "person": "Lorenz von Rosenberg",
+          "type": "generic",
+          "content": "received Schloss, village, court and Vogtei of Waldmannshofen, the woodland at Schön and a meadow in the Swol as Mannlehen from the governors and councillors of Margrave Georg Friedrich of Brandenburg after inheriting them from his Vetter Konrad von Rosenberg."
+        },
+        {
+          "person": "Lorenz von Rosenberg",
+          "type": "kin",
+          "of": "Konrad von Rosenberg",
+          "ofTitle": [
+            "Ritter"
+          ],
+          "ofDeceased": true,
+          "term": "Vetter"
+        }
+      ]
     }
   ]
 }

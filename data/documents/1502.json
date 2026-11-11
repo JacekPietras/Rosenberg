@@ -5,7 +5,14 @@
     {
       "source": "HStAM, 2, 315",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4992740",
-      "german": "Beziehungen zu Wertheim: Konflikt des Grafen mit Georg v. Rosenberg, Interzession für einen Leibeigenen"
+      "german": "Beziehungen zu Wertheim: Konflikt des Grafen mit Georg v. Rosenberg, Interzession für einen Leibeigenen",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was in conflict with the count of Wertheim."
+        }
+      ]
     }
   ]
 }

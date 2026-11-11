@@ -5,7 +5,14 @@
     {
       "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 337/fol. 178 ff",
       "url": "https://www.gda.bayern.de/gvl/document/5a151010-beac-44e6-84b9-676920d940a5",
-      "german": "\"Acta Judicialia et extraiudicialia, Zeisolphen von Rosenberg und dessen in der bäuerischen Aufruhr erlittenen schaden betr. 1526\""
+      "german": "\"Acta Judicialia et extraiudicialia, Zeisolphen von Rosenberg und dessen in der bäuerischen Aufruhr erlittenen schaden betr. 1526\"",
+      "facts": [
+        {
+          "person": "Zaisolph von Rosenberg",
+          "type": "generic",
+          "content": "was recorded as having suffered damage during the peasant uprising."
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,18 @@
       "source": "HStAD, A 2, 40/35",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1943274",
       "german": "Ebersheim: Kaufbrief über die von Philipp Forstmeister zu Gelnhusen, Faut zu Heidelberg, Lyse v. Frankenstein, seiner ehelichen Hausfrauen, Diether Landtschad v. Steynach und Agnes v. Rosenberg, seiner ehelichen Hausfrau an das Kloster Dalen verkauften viertzig Malter Korn ewiger Korngülte auf den Höfen und Gütern zu Ebersheim",
+      "facts": [
+        {
+          "person": "Diether Landschad von Steinach",
+          "type": "spouse",
+          "of": "Agnes von Rosenberg"
+        },
+        {
+          "person": "Agnes von Rosenberg",
+          "type": "generic",
+          "content": "sold a perpetual grain rent from the farms and properties at Ebersheim to Dalen monastery together with Diether Landschad von Steinach, Philipp Forstmeister zu Gelnhusen and Lyse von Frankenstein."
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_2/40--35/hstad_a_2_nr_40--35_0001.jpg"

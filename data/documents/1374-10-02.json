@@ -6,7 +6,17 @@
       "source": "StABa, MBKB, GHAP, Urk. Vorl. Nr. 590; RB 9, 319; archival old reference: Urkunden Brandenburg-Bayreuth (Brandenburger Urkunden vor 1401) 590",
       "url": "https://www.gda.bayern.de/gvl/document/6b0afca8-d5a2-471a-8932-387d0ba74e24",
       "german": "Quittung des Viztums von Amberg, Konrad von Rosenberg, über 2500 fl. Darlehen an die Burggrafen von Nürnberg.",
-      "english": "Konrad von Rosenberg, Vicar of Amberg, issued a receipt concerning a 2,500-florin loan to the Burgraves of Nuremberg."
+      "english": "Konrad von Rosenberg, Vicar of Amberg, issued a receipt concerning a 2,500-florin loan to the Burgraves of Nuremberg.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Viztum zu Amberg"
+          ],
+          "type": "generic",
+          "content": "acknowledged a loan to the Burggrafen of Nürnberg."
+        }
+      ]
     }
   ]
 }

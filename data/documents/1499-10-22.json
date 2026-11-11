@@ -5,7 +5,19 @@
     {
       "source": "ISG FFM, H.02.26, 2068",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10352038",
-      "german": "Dienstentlassungsbrief der im [Reichskrieg] gegen die Schweizer oder Eidgenossen angeworbenen Reisigen: Sifridt von Rosenbergk und sein Knecht Hannsen Beyer, Diether Kole, Johan Rutlinger, Hentz Wyszbrot, Hentze Dornick, Johan Rudel und Hans Smit.\n\nSiegler: S 1: Siegel des Sifridt von Rosenbergk (Wachs, rund, an Pergamentpressel); S 2: Siegel des Friderich von Feilsch, Hauptmann zu Frankfurt (Wachs, rund, an Pergamentpressel)"
+      "german": "Dienstentlassungsbrief der im [Reichskrieg] gegen die Schweizer oder Eidgenossen angeworbenen Reisigen: Sifridt von Rosenbergk und sein Knecht Hannsen Beyer, Diether Kole, Johan Rutlinger, Hentz Wyszbrot, Hentze Dornick, Johan Rudel und Hans Smit.\n\nSiegler: S 1: Siegel des Sifridt von Rosenbergk (Wachs, rund, an Pergamentpressel); S 2: Siegel des Friderich von Feilsch, Hauptmann zu Frankfurt (Wachs, rund, an Pergamentpressel)",
+      "facts": [
+        {
+          "person": "Siegfried von Rosenberg",
+          "type": "generic",
+          "content": "was discharged from service after recruitment for the Reichskrieg against the Swiss Confederates."
+        },
+        {
+          "person": "Siegfried von Rosenberg",
+          "type": "generic",
+          "content": "sealed the discharge from service of the recruited Reisigen."
+        }
+      ]
     }
   ]
 }

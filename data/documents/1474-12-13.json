@@ -1,11 +1,24 @@
 {
   "date": "1474-12-13",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg B 177 S U 2035",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2511273",
       "german": "Prior und Konvent des Gmünder Predigerklosters, die von Junker Rudolf von Hürnheim 50 Gulden bar zu zwei Jahrtagen erhalten haben, verpflichten sich zu solchen für die folgenden Personen: die Stifters Eltern Ritter Herdegen von Hürnheim und Elsbeth von Steinheim, des Stifters Brüder Balthasar und Konrad von Hürnheim, beide Domherren zu Augsburg, Martin, Melchior und Jörg von Hürnheim, des Stifters Schwester Barbara von Sontheim, geb. von Hürnheim, den Stifter Selbst und seine erste Hausfrau Gut von Rosenberg sowie seinen alten Knecht Thomas.\n\nLaufzeit: 1474 Dezember 13 (Lucie)\n\nSiegler: Prior des Gmünder Predigerklosters; Konvent des Gmünder Predigerklosters",
+      "facts": [
+        {
+          "person": "Gut von Rosenberg",
+          "type": "spouse",
+          "of": "Rudolf von Hürnheim",
+          "ofTitle": [
+            "Junker"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1183&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001183%2Ftitlaufn_0002511273%2F02_0002511273_0001_2-2511273-1.jpg"

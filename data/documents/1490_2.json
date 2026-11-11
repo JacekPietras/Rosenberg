@@ -5,7 +5,14 @@
     {
       "source": "HHStAW, 333, 475",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6942607",
-      "german": "Lehensrevers des Hans von Rosenberg an Erzbischof Berthold von Mainz über den Hof zu Buchen samt Zubehör"
+      "german": "Lehensrevers des Hans von Rosenberg an Erzbischof Berthold von Mainz über den Hof zu Buchen samt Zubehör",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "type": "generic",
+          "content": "issued a fief acknowledgment to Archbishop Berthold of Mainz concerning the farm at Buchen and its appurtenances."
+        }
+      ]
     }
   ]
 }

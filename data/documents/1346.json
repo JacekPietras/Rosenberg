@@ -1,12 +1,22 @@
 {
   "date": "1346",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "RIplus Regg. EB Mainz 1,2 n. 5526",
       "url": "https://www.regesta-imperii.de/id/e0840f8c-7bbc-4790-8eac-b87622f69ece",
       "german": "Eberhard v. Rosenberg u. Johann v. Randeck quittieren dem Pfzgrn. Ruprecht über eine an sie wegen des Erzbischofs v. Mainz geleistete Zahlung von 1876 Pfd. 5 sol. 4 H.",
-      "english": "Eberhard von Rosenberg and Johann von Randeck acknowledge receipt from Palatine Count Rupert of a payment made to them on behalf of the Archbishop of Mainz in the amount of 1876 pounds 5 solidi 4 Heller."
+      "english": "Eberhard von Rosenberg and Johann von Randeck acknowledge receipt from Palatine Count Rupert of a payment made to them on behalf of the Archbishop of Mainz in the amount of 1876 pounds 5 solidi 4 Heller.",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "generic",
+          "content": "with Johann von Randeck acknowledged payment from Count Palatine Ruprecht on behalf of the archbishop of Mainz."
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,19 @@
       "source": "Wiener Stadt- und Landesarchiv, 4593",
       "url": "https://www.monasterium.net/mom/AT-WStLA/HAUrk/4593/charter",
       "german": "Bertha, geporen von Rosenberg und hern Hannsen von Liechtenstain von Nicolspurg witib, hinterlegt ihr gescheft mitsambt aim geltbrief, lautend von den von Liechtenstain umb 1500 Ungrisch guldein, ain vidimus des gemechtbrief von dem benanten hern Hannsen von Liechtenstain , ihrem gemachl, ainen satzbrief von ihrem aidem hern Jorgen von Potendorf uber das dorf Wilberstorf und ainen gegenbrief, lautend von Jacoben Auer und Margrethen, seiner hausfraun , bei dem Bürgermeister, Richter und Rathe der Stadt hie zu Wienn, mit der Bitte, diese Urkunden im Falle ihres Todes nur dem von Maidburg, landmarschalh in Osterreich, und ihrem vorgenannten Eidam, beziehungsweise dem ersteren allein auszufolgen.\n\nSiegel: Rückwärts aufgedrücktes Siegel von rothem Wachse.",
+      "facts": [
+        {
+          "person": "Bertha von Rosenberg",
+          "type": "spouse",
+          "of": "Hans von Liechtenstein von Nicolspurg",
+          "ofDeceased": true
+        },
+        {
+          "person": "Bertha von Rosenberg",
+          "type": "generic",
+          "content": "deposited her will and related documents with the authorities of Vienna."
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-WStLA/HA-U/WStLA-HA-Urkunden_04593_r.jpg"

@@ -5,7 +5,14 @@
     {
       "source": "Staatsarchiv Freiburg T 101/1 Nr. 625",
       "url": "https://www.landesarchiv-bw.de/plink/?f=5-2384369",
-      "german": "Abt Heinrich von Wissembourg belehnt Friedrich von Rosenberg als Lehensträger Friedrichs von Fleckenstein zu Madenburg, Herrn zu Dagstuhl, mit den Gütern und Einkünften in Heuchelheim (Huchelnheim).\n\nLaufzeit: 1476 Dezember 19"
+      "german": "Abt Heinrich von Wissembourg belehnt Friedrich von Rosenberg als Lehensträger Friedrichs von Fleckenstein zu Madenburg, Herrn zu Dagstuhl, mit den Gütern und Einkünften in Heuchelheim (Huchelnheim).\n\nLaufzeit: 1476 Dezember 19",
+      "facts": [
+        {
+          "person": "Friedrich von Rosenberg",
+          "type": "generic",
+          "content": "received goods and income at Heuchelheim as fief from Abbot Heinrich of Wissembourg as fief holder for Friedrich von Fleckenstein zu Madenburg."
+        }
+      ]
     }
   ]
 }

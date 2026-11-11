@@ -5,7 +5,14 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Kaiserliches Landgericht Nürnberg, Urkunden 232",
       "url": "https://www.gda.bayern.de/gvl/document/45f727e4-2a46-474b-83c1-d95d9659efb0",
-      "german": "Instrument des Notars Johannes Vogt: Domherr Heinrich von Redwitz, Dr. jur. utr. Johann Pirckheymer, Domdechant Wernher Wolfskel und die Domherren Wilhelm von Pfahlheim, Bernhart Adelmann von Adelmannsfelden, Gabriel von Schawmberg, Erasmus von Rosenberg lic. jur. utr., Bernhart Artzt und Wilhelm von Thaun erheben namens des Bischofs Wilhelm von Eystett Berufung an Kaiser Friedrich III. gegen den Ladbrief d. Ä v. Eyb, Landrichter zu Nürnberg, für die eichstättischen Untertanen Endres Peck von Herrieden und Peter Omman zu Armbawr (Ornbau wegen Loy Leutershover's und Jörg Weber's Klage. - Zeugen: Ulrich Steltzer und Johann Karg, Pfründner der Domkirche."
+      "german": "Instrument des Notars Johannes Vogt: Domherr Heinrich von Redwitz, Dr. jur. utr. Johann Pirckheymer, Domdechant Wernher Wolfskel und die Domherren Wilhelm von Pfahlheim, Bernhart Adelmann von Adelmannsfelden, Gabriel von Schawmberg, Erasmus von Rosenberg lic. jur. utr., Bernhart Artzt und Wilhelm von Thaun erheben namens des Bischofs Wilhelm von Eystett Berufung an Kaiser Friedrich III. gegen den Ladbrief d. Ä v. Eyb, Landrichter zu Nürnberg, für die eichstättischen Untertanen Endres Peck von Herrieden und Peter Omman zu Armbawr (Ornbau wegen Loy Leutershover's und Jörg Weber's Klage. - Zeugen: Ulrich Steltzer und Johann Karg, Pfründner der Domkirche.",
+      "facts": [
+        {
+          "person": "Erasmus von Rosenberg",
+          "type": "generic",
+          "content": "joined the appeal on behalf of Bishop Wilhelm of Eichstätt to Emperor Friedrich III against a summons by the Nuremberg Landrichter."
+        }
+      ]
     }
   ]
 }

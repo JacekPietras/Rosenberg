@@ -5,7 +5,14 @@
     {
       "source": "HStAM, Urk. 62, 798",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3377856",
-      "german": "Michel von Rosenburg stellt abermals Bescheinigung darüber aus, daß ihm Philipp Graf zu Hanau d. J. Entschädigung für in seinem Dienst zu Grunde gerichtete Pferde gewährt habe."
+      "german": "Michel von Rosenburg stellt abermals Bescheinigung darüber aus, daß ihm Philipp Graf zu Hanau d. J. Entschädigung für in seinem Dienst zu Grunde gerichtete Pferde gewährt habe.",
+      "facts": [
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "acknowledged that Philipp von Hanau der Jüngere had compensated him for horses ruined in his service."
+        }
+      ]
     }
   ]
 }

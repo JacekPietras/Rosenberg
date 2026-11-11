@@ -6,6 +6,13 @@
       "source": "AUR 1556 VIII 13",
       "url": "https://www.monasterium.net/mom/AT-HHStA/SbgE/AUR_1556_VIII_13/charter",
       "german": "Albrecht von Rosenberg bezeugt, wegen geschehener Einnehmung und Vorenthaltung des Hauses Boxberg (Pochsberg) samt Stadt und Dörfern von Seite des Erzstiftes gänzlich ausgerichtet zu sein.",
+      "facts": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "type": "generic",
+          "content": "acknowledged full satisfaction of his claims against the Erzstift concerning the occupation and withholding of Haus Boxberg, the town and villages."
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-OeStA-HHStA/AUR-Salzburg-Erzstift/HHSTA_Salzburg_1556_08_13-2-2.jpg"

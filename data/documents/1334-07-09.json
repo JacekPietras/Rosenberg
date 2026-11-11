@@ -13,13 +13,6 @@
           "personTitle": [
             "Ritter"
           ],
-          "type": "title"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
           "type": "generic",
           "content": "incurred expenses on Balduin’s business at Amöneburg, Geismar, and Fritzlar."
         }
@@ -29,7 +22,33 @@
       "source": "Landgrafen-Regesten online Nr. 10675",
       "url": "https://www.lagis-hessen.de/en/subjects/idrec/sn/lgr/id/10675",
       "german": "Ritter Eberhard von Rosenberg stellt Rechnung über seine Auslagen im Dienste Baldewins: 1334 Juli 9 kam er nach Amöneburg mit dem Dekan von St. Marien in Erfurt, dem Mainzer Kanoniker Wylhelm von Saulheim und Wernher, dem Kaplan des Erzbischofs Baldewin, und anderen Freunden desselben. Er blieb dort 2 Tage und 2 Nächte mit 26 Pferden. Von da begab er sich nach Geismar und Fritzlar, kehrte aber alsbald nach Amöneburg zurück und blieb dort und in Neustadt 12 Tage und Nächte. Darauf begab er sich mit dem Schultheißen, dem Keller, Ludwig von Seelheim und anderen Freunden des Herrn abermals nach Fritzlar und blieb dort mit 25 Pferden 3 Tage und Nächte, um die mit den Freunden des Landgrafen vereinbarten Waffenstillstände zu bestätigen; darauf ging er nach Wetter und blieb dort drei Mahlzeiten und eine Nacht. Gebraucht wurden 38 Pfund Heller 7 Schillinge 8 Heller. Alle diese Auslagen hat der Kellner Ludwig in Amöneburg im Namen des Herrn von Mainz vollständig ersetzt.",
-      "english": "Knight Eberhard von Rosenberg renders an account of his expenses in the service of Baldwin: On July 9, 1334 he came to Amöneburg with the Dean of St. Mary in Erfurt, the Mainze canon Wylhelm von Saulheim, and Wernher, chaplain to Archbishop Baldwin, and other friends of the lord. He stayed there 2 days and 2 nights with 26 horses. From there he went to Geismar and Fritzlar, but returned immediately to Amöneburg and stayed there and in Neustadt for 12 days and nights. Thereupon he went with the Schultheiss, the cellarer, Ludwig von Seelheim, and other friends of the lord once again to Fritzlar and stayed there with 25 horses for 3 days and nights, to confirm the truces agreed upon with the friends of the Landgrave; thereupon he went to Wetter and stayed there three meals and one night. There were spent 38 pounds Heller 7 shillings 8 Heller. The cellarer Ludwig in Amöneburg fully reimbursed all these expenses in the name of the lord of Mainz."
+      "english": "Knight Eberhard von Rosenberg renders an account of his expenses in the service of Baldwin: On July 9, 1334 he came to Amöneburg with the Dean of St. Mary in Erfurt, the Mainze canon Wylhelm von Saulheim, and Wernher, chaplain to Archbishop Baldwin, and other friends of the lord. He stayed there 2 days and 2 nights with 26 horses. From there he went to Geismar and Fritzlar, but returned immediately to Amöneburg and stayed there and in Neustadt for 12 days and nights. Thereupon he went with the Schultheiss, the cellarer, Ludwig von Seelheim, and other friends of the lord once again to Fritzlar and stayed there with 25 horses for 3 days and nights, to confirm the truces agreed upon with the friends of the Landgrave; thereupon he went to Wetter and stayed there three meals and one night. There were spent 38 pounds Heller 7 shillings 8 Heller. The cellarer Ludwig in Amöneburg fully reimbursed all these expenses in the name of the lord of Mainz.",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "traveled to Amöneburg with the dean of St. Marien in Erfurt, Wylhelm von Saulheim, and Wernher, chaplain to Archbishop Baldewin."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "traveled with Ludwig von Seelheim and others to Fritzlar to confirm truces agreed with the Landgrave’s friends."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "was reimbursed for his expenses by the cellarer Ludwig in Amöneburg on behalf of the lord of Mainz."
+        }
+      ]
     }
   ]
 }

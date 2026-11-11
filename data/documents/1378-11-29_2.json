@@ -6,7 +6,17 @@
       "source": "Amberg, Staatsarchiv, 182",
       "url": "https://www.monasterium.net/mom/DE-StAAm/EnsdorfOSB/182/charter",
       "german": "Gerichtsbrief mit der Erlaubnis, auf dem Rosenhof zu Theuern wegen des dem Kloster zustehenden jährlichen Zinses zu pfänden. Aussteller: A: Konrad von Rosenberg, Viztum zu Amberg Empfänger: Abt des KlostersEnsdorf\n\nSiegler: S: LandgerichtAmberg (fehlt)\n\nSiegel: S: LandgerichtAmberg (fehlt)",
-      "english": "Court letter with permission to seize the Rosenhof at Theuern regarding the annual rent due to the monastery. Issuer: A: Konrad von Rosenberg, Viztum (vicar) of Amberg Recipient: Abbot of Ensdorf Monastery\n\nSealer: S: District Court Amberg (missing)\n\nSeal: S: District Court Amberg (missing)"
+      "english": "Court letter with permission to seize the Rosenhof at Theuern regarding the annual rent due to the monastery. Issuer: A: Konrad von Rosenberg, Viztum (vicar) of Amberg Recipient: Abbot of Ensdorf Monastery\n\nSealer: S: District Court Amberg (missing)\n\nSeal: S: District Court Amberg (missing)",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Viztum zu Amberg"
+          ],
+          "type": "generic",
+          "content": "issued a court record permitting Ensdorf Abbey to distrain the Rosenhof at Theuern for rent owed."
+        }
+      ]
     }
   ]
 }

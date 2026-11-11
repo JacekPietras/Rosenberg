@@ -5,7 +5,17 @@
     {
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 1662, 156",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5397368",
-      "german": "Hans von Dottenheim, Amtmann zu Jagstberg, verzichtet, nachdem das Schloss Schüpf [bei Boxberg], woran er einen Anteil hat, in der Fehde zwischen Erzbischof Adolf von Mainz, Kurfürst Friedrich I. von der Pfalz und Bischof Rudolf von Würzburg einerseits und Jörg, Arnold und Michael von Rosenberg andererseits erobert und zerstört worden war, auf Forderungen und Ansprüche. Erzbischof Diether von Mainz, Kurfürst Philipp von der Pfalz und Bischof Rudolf von Würzburg hatten ihn wieder zu seinem Teil und Nutzungsrechten kommen lassen.\n\nLaufzeit: 1477 August 31 (off sontag vor sant Egidien tag)\n\nSiegler: Hans von Dottenheim"
+      "german": "Hans von Dottenheim, Amtmann zu Jagstberg, verzichtet, nachdem das Schloss Schüpf [bei Boxberg], woran er einen Anteil hat, in der Fehde zwischen Erzbischof Adolf von Mainz, Kurfürst Friedrich I. von der Pfalz und Bischof Rudolf von Würzburg einerseits und Jörg, Arnold und Michael von Rosenberg andererseits erobert und zerstört worden war, auf Forderungen und Ansprüche. Erzbischof Diether von Mainz, Kurfürst Philipp von der Pfalz und Bischof Rudolf von Würzburg hatten ihn wieder zu seinem Teil und Nutzungsrechten kommen lassen.\n\nLaufzeit: 1477 August 31 (off sontag vor sant Egidien tag)\n\nSiegler: Hans von Dottenheim",
+      "facts": [
+        {
+          "person": "Hans von Dottenheim",
+          "personTitle": [
+            "Amtmann zu Jagstberg"
+          ],
+          "type": "generic",
+          "content": "renounced claims after his share of Schloss Schüpf, captured and destroyed in the feud against Georg, Arnold and Michael von Rosenberg, was restored by the princes of Mainz, the Palatinate and Würzburg."
+        }
+      ]
     }
   ]
 }

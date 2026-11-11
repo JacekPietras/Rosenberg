@@ -11,7 +11,41 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400456000000620001387",
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x55012732744216920210713150716233"
       ],
-      "german": "Friedrich Pfalzgraf bei Rhein etc., Kurfürst, belehnt, nachdem sein Vetter Ottheinrich Pfalzgraf bei Rhein etc., Kurfürst, gestorben ist, den Zeisolf (Zaissolffen) von Rosenberg neben dessen Vettern Philipp Jakob und Konrad Gebrüdern von Rosenberg mit einem Viertel der Stadt Aub erblich zu Mannlehen, das der gestorbene Ritter Konrad von Rosenberg und dessen Vorfahren (vorälternn) von der Pfalz zu Mannlehen trugen und das den drei Vettern von Rosenberg erblich zufiel. Hierdurch bleiben seine, seiner Leute und Dritter Rechte unberührt, soweit sie von ihm und der Pfalzgrafschaft bei Rhein rühren. Die Gebrüder und Vettern von Rosenberg oder deren Mannlehnserben haben das Mannlehen künftig in allen gegebenen Fällen von ihm oder seinen Erben als Pfalzgrafen bei Rhein erneut zu Lehen zu nehmen und die mit der Belehnung üblich verbundenen Pflichten zu erfüllen. Er bestätigt den durch Zeisolf geleisteten Lehneid. - Auf dem Bug: Unterschrift des kurpfälzischen Kanzlers Erasmus von Minckwitz.-\n\nSiegler: der Aussteller.\n\nAusf., Perg., Sg. ab. - Nr. 1308.\n\nReg. Nr. 1378"
+      "german": "Friedrich Pfalzgraf bei Rhein etc., Kurfürst, belehnt, nachdem sein Vetter Ottheinrich Pfalzgraf bei Rhein etc., Kurfürst, gestorben ist, den Zeisolf (Zaissolffen) von Rosenberg neben dessen Vettern Philipp Jakob und Konrad Gebrüdern von Rosenberg mit einem Viertel der Stadt Aub erblich zu Mannlehen, das der gestorbene Ritter Konrad von Rosenberg und dessen Vorfahren (vorälternn) von der Pfalz zu Mannlehen trugen und das den drei Vettern von Rosenberg erblich zufiel. Hierdurch bleiben seine, seiner Leute und Dritter Rechte unberührt, soweit sie von ihm und der Pfalzgrafschaft bei Rhein rühren. Die Gebrüder und Vettern von Rosenberg oder deren Mannlehnserben haben das Mannlehen künftig in allen gegebenen Fällen von ihm oder seinen Erben als Pfalzgrafen bei Rhein erneut zu Lehen zu nehmen und die mit der Belehnung üblich verbundenen Pflichten zu erfüllen. Er bestätigt den durch Zeisolf geleisteten Lehneid. - Auf dem Bug: Unterschrift des kurpfälzischen Kanzlers Erasmus von Minckwitz.-\n\nSiegler: der Aussteller.\n\nAusf., Perg., Sg. ab. - Nr. 1308.\n\nReg. Nr. 1378",
+      "facts": [
+        {
+          "person": "Philipp Jakob von Rosenberg",
+          "type": "sibling",
+          "of": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "kin",
+          "of": "Philipp Jakob von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "kin",
+          "of": "Konrad von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Zaisolf von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs."
+        },
+        {
+          "person": "Philipp Jakob von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs."
+        }
+      ]
     }
   ]
 }

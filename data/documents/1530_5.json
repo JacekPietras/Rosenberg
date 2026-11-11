@@ -5,7 +5,24 @@
     {
       "source": "BayHStA, GU Hirschberg (Landgericht) 381",
       "url": "https://www.gda.bayern.de/gvl/document/23daf3aa-db5e-4a70-8612-ec371ed1e430",
-      "german": "Die Brüder Cuntz und Philipp von Rosenberg an Herzog Wilhelm IV bitten, die ihnen erliegen und von ihnen weiterverkauften 4 Höfe und 2 Sölden zu Oberried bei Uttenhoven in der Segelau den Käufer, nämlich den Brüdern Dr. Johann Sebastian, Bern, Walther, Rudolff und Jeronimus von Hürnheym zu verleihen."
+      "german": "Die Brüder Cuntz und Philipp von Rosenberg an Herzog Wilhelm IV bitten, die ihnen erliegen und von ihnen weiterverkauften 4 Höfe und 2 Sölden zu Oberried bei Uttenhoven in der Segelau den Käufer, nämlich den Brüdern Dr. Johann Sebastian, Bern, Walther, Rudolff und Jeronimus von Hürnheym zu verleihen.",
+      "facts": [
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "sibling",
+          "of": "Philipp von Rosenberg"
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "petitioned with his brother Philipp Herzog Wilhelm IV to enfeoff the brothers von Hürnheim with farms and smallholdings at Oberried near Uttenhoven."
+        },
+        {
+          "person": "Philipp von Rosenberg",
+          "type": "generic",
+          "content": "petitioned with his brother Kunz Herzog Wilhelm IV to enfeoff the brothers von Hürnheim with farms and smallholdings at Oberried near Uttenhoven."
+        }
+      ]
     }
   ]
 }

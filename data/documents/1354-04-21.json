@@ -7,7 +7,18 @@
       "source": "RIplus Regg. EB Mainz 2,1 n. 111",
       "url": "https://www.regesta-imperii.de/id/e4332a24-f1ad-4d1c-b4df-1500fb9ef54c",
       "german": "Erzbischof Gerlach ist in Aschaffenburg, wo der durch die Grafen Adolf und Johann von Nassau, Ulrich, Herrn zu Hanau, und den Ritter Konrad Rüdt, Burggrafen zu Starkenburg, am 20. Januar zwischen dem Erzbischof und Ritter Eberhard von Rosenberg, Vogt zu Wildenberg, vereinbarte Vertrag bis zum 24. Juni verlängert wird.",
-      "english": "Archbishop Gerlach is in Aschaffenburg, where the agreement concluded on January 20 between the Archbishop and knight Eberhard von Rosenberg, Vogt of Wildenberg, by the Counts Adolf and Johann von Nassau, Ulrich, Lord of Hanau, and the knight Konrad Rüdt, burgrave of Starkenburg, is extended until June 24."
+      "english": "Archbishop Gerlach is in Aschaffenburg, where the agreement concluded on January 20 between the Archbishop and knight Eberhard von Rosenberg, Vogt of Wildenberg, by the Counts Adolf and Johann von Nassau, Ulrich, Lord of Hanau, and the knight Konrad Rüdt, burgrave of Starkenburg, is extended until June 24.",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Wildenburg"
+          ],
+          "type": "generic",
+          "content": "had an agreement with Archbishop Gerlach of Mainz extended until 24 June."
+        }
+      ]
     }
   ]
 }

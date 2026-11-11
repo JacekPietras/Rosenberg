@@ -7,7 +7,14 @@
       "source": "[RI VII] H. 2 n. 242",
       "url": "https://www.regesta-imperii.de/id/1337-05-26_2_0_7_2_0_240_242",
       "german": "Ks. Ludwig erhöht Eberhard von Rosenberg die Pfandsumme, für die ihm seine und des Reiches Leute in den Dörfern Roigheim, Bödigheim, Eicholzheim, Osterburken und alle anderen Eigenleute, die zu demselben Schultheißenamt gehören, von ihm vormals versetzt und verschrieben wurden1, um 300 Pfund Haller.",
-      "english": "Emperor Ludwig increases the pledge sum for which his and the Empire's men in the villages of Roigheim, Bödigheim, Eicholzheim, Osterburken, and all other serfs belonging to the same bailiff's office were previously pledged and assigned to him by him1, by 300 pounds Heller."
+      "english": "Emperor Ludwig increases the pledge sum for which his and the Empire's men in the villages of Roigheim, Bödigheim, Eicholzheim, Osterburken, and all other serfs belonging to the same bailiff's office were previously pledged and assigned to him by him1, by 300 pounds Heller.",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "generic",
+          "content": "had the pledge sum increased by Emperor Ludwig for the imperial and royal people previously pledged to him in Roigheim, Bödigheim, Eicholzheim and Osterburken and the other Eigenleute of the same Schultheißenamt."
+        }
+      ]
     }
   ]
 }

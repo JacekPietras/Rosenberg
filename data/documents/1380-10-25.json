@@ -6,7 +6,24 @@
       "source": "HHStA Wien (www.oesta.gv.at), 1380 X 25",
       "url": "https://www.monasterium.net/mom/OOEUB/1380_X_25/charter",
       "german": "Ulrich, Johann und Heinrich von Rosenberg, dann Heinrich der ältere von Neuhaus schließen Frieden mit Herzog Albrecht von Österreich bis auf Neujahr.\n\nSiegel: Mit allen vier roten Wachssiegeln",
-      "english": "Ulrich, Johann and Heinrich von Rosenberg, then Heinrich the Elder of Neuhaus conclude peace with Duke Albert of Austria until New Year's.\n\nSeal: With all four red wax seals"
+      "english": "Ulrich, Johann and Heinrich von Rosenberg, then Heinrich the Elder of Neuhaus conclude peace with Duke Albert of Austria until New Year's.\n\nSeal: With all four red wax seals",
+      "facts": [
+        {
+          "person": "Ulrich von Rosenberg",
+          "type": "generic",
+          "content": "concluded peace with Duke Albrecht of Austria until New Year together with the others named in the agreement."
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "type": "generic",
+          "content": "concluded peace with Duke Albrecht of Austria until New Year together with the others named in the agreement."
+        },
+        {
+          "person": "Heinrich von Rosenberg",
+          "type": "generic",
+          "content": "concluded peace with Duke Albrecht of Austria until New Year together with the others named in the agreement."
+        }
+      ]
     }
   ]
 }

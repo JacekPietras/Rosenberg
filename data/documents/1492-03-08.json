@@ -5,7 +5,17 @@
     {
       "source": "StAAm, Staatseigene Urkunden 1390",
       "url": "https://www.gda.bayern.de/gvl/document/8e59e863-a039-4d74-ad84-92b2155bce58",
-      "german": "Lehenbrief des Bischofs Wilhelm von Eichstätt für den Ritter Hieronymus von Rosenberg über das Schloss Uttenhofen.\nSiegler: der Bischof"
+      "german": "Lehenbrief des Bischofs Wilhelm von Eichstätt für den Ritter Hieronymus von Rosenberg über das Schloss Uttenhofen.\nSiegler: der Bischof",
+      "facts": [
+        {
+          "person": "Hieronymus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "received Schloss Uttenhofen as a fief from Bishop Wilhelm of Eichstätt."
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,26 @@
       "source": "StAWü, Urkunden (HV) Urkunden 189; archival old reference: Historischer Verein von Unterfranken 1136",
       "url": "https://www.gda.bayern.de/gvl/document/038b96f5-0245-43c8-a137-3985f943bc1e",
       "german": "Fritz von Stetenberg, Edelknecht, und Konrad, sein Sohn, verkaufen dem Edelknecht Stein von Riedern ihren Hof zu Werbach. Bürgen: Hans von Rosenberg, Ritter, Konrad d. A. von Uissigheim und Albrecht von Stetenberg, Edelknechte. Es siegeln Fritz von Stetenberg und sein Sohn Konrad und die drei Bürgen.",
-      "english": "Fritz von Stetenberg and his son Konrad sold their farm at Werbach to Stein von Riedern. Hans von Rosenberg, Ritter, Konrad der Ältere von Uissigheim, and Albrecht von Stetenberg stood surety; Fritz and Konrad and the three guarantors sealed the deed."
+      "english": "Fritz von Stetenberg and his son Konrad sold their farm at Werbach to Stein von Riedern. Hans von Rosenberg, Ritter, Konrad der Ältere von Uissigheim, and Albrecht von Stetenberg stood surety; Fritz and Konrad and the three guarantors sealed the deed.",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "was surety and sealed the sale of a farm at Werbach by Fritz von Stetenberg and his son Konrad to Stein von Riedern."
+        },
+        {
+          "person": "Konrad von Uissigheim",
+          "personTitle": [
+            "der Ältere",
+            "Edelknecht"
+          ],
+          "type": "generic",
+          "content": "was surety and sealed the sale of a farm at Werbach by Fritz von Stetenberg and his son Konrad to Stein von Riedern."
+        }
+      ]
     }
   ]
 }

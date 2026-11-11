@@ -1,12 +1,22 @@
 {
   "date": "1359-05-18",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 69 von Helmstatt U 628",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-2110900",
       "german": "Johann von Binau (\"Binheim\"), Edelknecht, und seine Frau Ysengret verkaufen Gerung von Helmstatt 3 Morgen Wiesen auf der Au am Bonfeld und 2 Morgen Wiesen auf dem Dromarsfeld am kleinen Bach um 70 fl. Ysengret verspricht, die Wiesen als ihre Morgengabe auf offener Straße zu übergeben. Siegler: Aussteller, Raban und [Gerung] von Helmstatt, die Brüder Ysengrets, Raban von Rosenberg\n\nLaufzeit: 1359 (1359 Mai 18 - Sa v Cantate)",
-      "english": "Johann von Binau (\"Binheim\"), squire, and his wife Ysengret sell Gerung von Helmstatt 3 morgen of meadows on the Au at Bonfeld and 2 morgen of meadows on the Dromarsfeld by the small stream for 70 florins. Ysengret promises to hand over the meadows as her morning gift on an open road. Sealer: The issuers, Raban and [Gerung] von Helmstatt, Ysengret's brothers, Raban von Rosenberg\n\nDuration: 1359 (May 18, 1359 - Saturday before Cantate)"
+      "english": "Johann von Binau (\"Binheim\"), squire, and his wife Ysengret sell Gerung von Helmstatt 3 morgen of meadows on the Au at Bonfeld and 2 morgen of meadows on the Dromarsfeld by the small stream for 70 florins. Ysengret promises to hand over the meadows as her morning gift on an open road. Sealer: The issuers, Raban and [Gerung] von Helmstatt, Ysengret's brothers, Raban von Rosenberg\n\nDuration: 1359 (May 18, 1359 - Saturday before Cantate)",
+      "facts": [
+        {
+          "person": "Raban von Rosenberg",
+          "type": "generic",
+          "content": "sealed the sale of meadows at Bonfeld and Dromarsfeld by Johann von Binau and his wife Ysengret to Gerung von Helmstatt."
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,33 @@
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 5289",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1795219",
       "german": "Michael von Rosenberg, Hans Melchior von Steinkallenfels und seine Ehefrau Elisabeth geb. von Rosenberg sowie Martin von Zeutern und seine Ehefrau Ursula geb. von Rosenberg als Erben Jörg von Rosenbergs verkaufen dem Kurfürsten Friedrich II. von der Pfalz ihren ererbten Anteil an den Bau- und Gülthöfen Gräffingen und Hoffeld am Ahorn bei Boxberg samt Gütern und Zinsen zu Uiffingen um 4.500 Gulden.\n\nLaufzeit: 1544 März 20",
+      "facts": [
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "sold his inherited share in the farms Gräffingen and Hoffeld at the Ahorn near Boxberg and property and dues at Uiffingen, with the other heirs of Jörg von Rosenberg, to Elector Friedrich II of the Palatinate."
+        },
+        {
+          "person": "Hans Melchior von Steinkallenfels",
+          "type": "spouse",
+          "of": "Elisabeth von Rosenberg"
+        },
+        {
+          "person": "Martin von Zeutern",
+          "type": "spouse",
+          "of": "Ursula von Rosenberg"
+        },
+        {
+          "person": "Elisabeth von Rosenberg",
+          "type": "generic",
+          "content": "sold her inherited share in the farms Gräffingen and Hoffeld at the Ahorn near Boxberg and property and dues at Uiffingen, with the other heirs of Jörg von Rosenberg, to Elector Friedrich II of the Palatinate."
+        },
+        {
+          "person": "Ursula von Rosenberg",
+          "type": "generic",
+          "content": "sold her inherited share in the farms Gräffingen and Hoffeld at the Ahorn near Boxberg and property and dues at Uiffingen, with the other heirs of Jörg von Rosenberg, to Elector Friedrich II of the Palatinate."
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001795219%2F04_0001795219_0001_4-1795219-1.jpg"

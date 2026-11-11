@@ -5,7 +5,19 @@
     {
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 1662, 158",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5397370",
-      "german": "Günther von Brandenstein und Gottfried von Stockheim verzichten für sich, ihre Ehefrauen [Kunigunde und Christine von Rosenberg] und Erben, nachdem sie Güter und Nutzungen in der nun zwischen Erzbischof Diether von Mainz, Kurfürst Philipp von der Pfalz und Bischof Rudolf von Würzburg einerseits und Jörg, Arnold und Michael von Rosenberg, Schwäger Günthers und Gottfrieds, andererseits beendeten Fehde verloren haben, auf künftige Forderungen.Günther bittet Konrad von Aufseß (Kunz von Uffsesse) zu Wolkenstein und Hans Rauschner (Ruschner) von Lindenberg, seinen Oheim und Schwager, um die Besiegelung, da sein eigenes Siegel derzeit nicht verfügbar ist.\n\nLaufzeit: 1477 August 14 (am dornstag unser lieben frauwen abent assumptionis genant)\n\nSiegler: Konrad von Aufsess; Hans Rauschner von Lindenberg; Gottfried von Stockheim"
+      "german": "Günther von Brandenstein und Gottfried von Stockheim verzichten für sich, ihre Ehefrauen [Kunigunde und Christine von Rosenberg] und Erben, nachdem sie Güter und Nutzungen in der nun zwischen Erzbischof Diether von Mainz, Kurfürst Philipp von der Pfalz und Bischof Rudolf von Würzburg einerseits und Jörg, Arnold und Michael von Rosenberg, Schwäger Günthers und Gottfrieds, andererseits beendeten Fehde verloren haben, auf künftige Forderungen.Günther bittet Konrad von Aufseß (Kunz von Uffsesse) zu Wolkenstein und Hans Rauschner (Ruschner) von Lindenberg, seinen Oheim und Schwager, um die Besiegelung, da sein eigenes Siegel derzeit nicht verfügbar ist.\n\nLaufzeit: 1477 August 14 (am dornstag unser lieben frauwen abent assumptionis genant)\n\nSiegler: Konrad von Aufsess; Hans Rauschner von Lindenberg; Gottfried von Stockheim",
+      "facts": [
+        {
+          "person": "Günther von Brandenstein",
+          "type": "generic",
+          "content": "renounced claims for themselves, their wives Kunigunde and Christine von Rosenberg, and their heirs after losing property and revenues in the feud involving their Schwäger Georg, Arnold and Michael von Rosenberg and the princes of Mainz, the Palatinate and Würzburg."
+        },
+        {
+          "person": "Gotfried von Stockheim",
+          "type": "generic",
+          "content": "renounced claims for themselves, their wives Kunigunde and Christine von Rosenberg, and their heirs after losing property and revenues in the feud involving their Schwäger Georg, Arnold and Michael von Rosenberg and the princes of Mainz, the Palatinate and Würzburg."
+        }
+      ]
     }
   ]
 }

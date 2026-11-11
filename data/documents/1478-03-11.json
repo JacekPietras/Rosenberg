@@ -5,7 +5,22 @@
     {
       "source": "Generallandesarchiv Karlsruhe {43 Nr. 4765, Verweisung}",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1781901",
-      "german": "Asmus von Rosenberg, Ritter, Hans von Aschhausen und Jörg von Rosenberg vermitteln einen Vergleich zwischen Hans und Konrad von Rosenberg wegen deren Ansprüchen an Schloss Rosenberg und dazugehörige Gebäude und Güter sowie die damit zusammenhängenden Pflichten."
+      "german": "Asmus von Rosenberg, Ritter, Hans von Aschhausen und Jörg von Rosenberg vermitteln einen Vergleich zwischen Hans und Konrad von Rosenberg wegen deren Ansprüchen an Schloss Rosenberg und dazugehörige Gebäude und Güter sowie die damit zusammenhängenden Pflichten.",
+      "facts": [
+        {
+          "person": "Asmus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "mediated with Hans von Aschhausen and Georg von Rosenberg a settlement between Hans and Konrad von Rosenberg concerning Schloss Rosenberg and its appurtenances."
+        },
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "mediated with Asmus von Rosenberg and Hans von Aschhausen a settlement between Hans and Konrad von Rosenberg concerning Schloss Rosenberg and its appurtenances."
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,25 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamt Creglingen, Urkunden 349",
       "url": "https://www.gda.bayern.de/gvl/document/0c817759-23bb-447a-80e8-4ca3aa9c2126",
-      "german": "Lehenrevers: Asmus von Rosenberg gibt Lehenrevers gegen Markgraf Albrecht von Brandenburg um den halben Teil an Schloss, Dorf, Gericht zu Waldmannshofen, mit allen Zugehörungen. - Siegler: Asmus von Rosenberg, Ritter."
+      "german": "Lehenrevers: Asmus von Rosenberg gibt Lehenrevers gegen Markgraf Albrecht von Brandenburg um den halben Teil an Schloss, Dorf, Gericht zu Waldmannshofen, mit allen Zugehörungen. - Siegler: Asmus von Rosenberg, Ritter.",
+      "facts": [
+        {
+          "person": "Asmus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "acknowledged receiving half of Schloss, village and court of Waldmannshofen as a fief from Margrave Albrecht of Brandenburg."
+        },
+        {
+          "person": "Asmus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "sealed his fief acknowledgment for Waldmannshofen."
+        }
+      ]
     }
   ]
 }

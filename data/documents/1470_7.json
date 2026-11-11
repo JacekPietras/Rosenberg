@@ -5,7 +5,14 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Fehdeakten 132",
       "url": "https://www.gda.bayern.de/gvl/document/c68d855a-5795-44e8-988e-4e25d7b77262",
-      "german": "Fragmentum betreffend einer Fehde zwischen Horneck von Hornberg einerseits und denen von Rosenberg und von Tottenheim anderenteils"
+      "german": "Fragmentum betreffend einer Fehde zwischen Horneck von Hornberg einerseits und denen von Rosenberg und von Tottenheim anderenteils",
+      "facts": [
+        {
+          "subject": "The von Rosenberg family",
+          "type": "generic",
+          "content": "was involved with the von Dottenheim family in a feud against Horneck von Hornberg."
+        }
+      ]
     }
   ]
 }

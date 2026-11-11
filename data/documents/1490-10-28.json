@@ -6,6 +6,34 @@
       "source": "Generallandesarchiv Karlsruhe 44 Nr. 8083",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5379531",
       "german": "Michael von Rosenberg reversiert gegenüber Kurfürst Philipp von der Pfalz als Träger für den minderjährigen Sohn seines Vetters Konrad von Rosenberg (+), Lorenz, über das Viertel an Burg und Vorhof zu Rosenberg, das einst Eberhard der Ältere von Rosenberg von Pfalz zu Mannlehen getragen hat.\n\nSiegler: Michael von Rosenberg",
+      "facts": [
+        {
+          "person": "Michael von Rosenberg",
+          "type": "kin",
+          "of": "Konrad von Rosenberg",
+          "ofDeceased": true,
+          "term": "Vetter"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personDeceased": true,
+          "type": "parent",
+          "of": "Lorenz von Rosenberg"
+        },
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "acknowledged as fief holder for the minor Lorenz von Rosenberg a quarter of Burg and Vorhof Rosenberg from Elector Philipp of the Palatinate."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ],
+          "type": "generic",
+          "content": "had held a quarter of Burg and Vorhof Rosenberg as a Mannlehen from the Palatinate."
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001255%2Ftitlaufn_0005379531%2F04_0005379531_0001_4-5379531-1.jpg"

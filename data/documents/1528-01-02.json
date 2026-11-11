@@ -5,7 +5,17 @@
     {
       "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 337/fol. 282",
       "url": "https://www.gda.bayern.de/gvl/document/2d45afdf-081a-4c92-8825-ab241b8d596e",
-      "german": "Rothenburg an Contz von Rosenberg, Amtmann zu Röttingen und Raigelberg: Zehrschulden Rothenburger Bürger zu Röttingen während des Bauernkriegs."
+      "german": "Rothenburg an Contz von Rosenberg, Amtmann zu Röttingen und Raigelberg: Zehrschulden Rothenburger Bürger zu Röttingen während des Bauernkriegs.",
+      "facts": [
+        {
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "Amtmann zu Röttingen und Raigelberg"
+          ],
+          "type": "generic",
+          "content": "was addressed in a letter from Rothenburg about debts incurred by Rothenburg citizens in Röttingen during the Peasants’ War."
+        }
+      ]
     }
   ]
 }

@@ -7,7 +7,17 @@
       "source": "RIplus Regg. EB Mainz 1,2 n. 5589",
       "url": "https://www.regesta-imperii.de/id/fbc9adf0-73e8-4534-8136-c06e72b8b7f1",
       "german": "(Nidda). – Cuone v. Falkenstein (Val-), Schulmeister, u. Nyclas v. d. Steine (Stey-), Kanoniker; Ebirhard v. Rosenberg (-sin-), Johan v. Randeck (-dek) u. Johan v. Bellersheim (-dirs-), Ritter, Vormünder des Stifts zu Mainz, vereinbaren unter Zustimmung des Erzbischofs Heinrich mit Johan v. Hanstein1, daß das Erzstift ihm, solange er zu Salza (Salcza) auf der Burg ist, im gegenwärtigen Kriege vierteljährlich 20 Mk. löt. S. Mühlhäuser Gewichts zu geben, etwaigen Schaden u. Unkosten zu ersetzen u. jedem Mann, den der gen. Johann für den Krieg auf die Burg bringe, vierteljährlich den angemessenen Sold (suld) auszuzahlen sich verpflichtet. Es siegelt der zustimmende Erzbischof Heinrich u. die Vormundschaft.",
-      "english": "(Nidda). – Cuone von Falkenstein (Val-), Scholaster, and Nyclas von der Steine (Stey-), Canon; Ebirhard von Rosenberg (-sin-), Johan von Randeck (-dek), and Johan von Bellersheim (-dirs-), Knights, Guardians of the Archbishopric of Mainz, agree with the consent of Archbishop Heinrich with Johan von Hanstein1 that the Archbishopric commits itself to pay him, as long as he is at Salza (Salcza) in the castle, in the current war quarterly 20 marks of fine silver of Mühlhausen weight, to compensate for any damage and expenses, and to pay each man whom the said Johann brings to the castle for the war his appropriate wage (suld) quarterly. The consenting Archbishop Heinrich and the Guardians seal."
+      "english": "(Nidda). – Cuone von Falkenstein (Val-), Scholaster, and Nyclas von der Steine (Stey-), Canon; Ebirhard von Rosenberg (-sin-), Johan von Randeck (-dek), and Johan von Bellersheim (-dirs-), Knights, Guardians of the Archbishopric of Mainz, agree with the consent of Archbishop Heinrich with Johan von Hanstein1 that the Archbishopric commits itself to pay him, as long as he is at Salza (Salcza) in the castle, in the current war quarterly 20 marks of fine silver of Mühlhausen weight, to compensate for any damage and expenses, and to pay each man whom the said Johann brings to the castle for the war his appropriate wage (suld) quarterly. The consenting Archbishop Heinrich and the Guardians seal.",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "with the other guardians of Mainz agreed to pay Johann von Hanstein for his service at Burg Salza during the current war."
+        }
+      ]
     }
   ]
 }

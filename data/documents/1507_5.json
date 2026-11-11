@@ -5,7 +5,25 @@
     {
       "source": "BayHStA, GU Hirschberg (Landgericht) 379",
       "url": "https://www.gda.bayern.de/gvl/document/608b6e1e-6114-4ae4-b468-0dfcea4020d8",
-      "german": "Lehengegenbrief des Lionhart von Rosenberg zu Uttenhoven für Herzog Albrecht über: 4 Höfe u. 2 Sölden zu Oberried bei Uttenhoven in der Seglau bei der Swartzach.\nVorbesitzer: Ritter Jheronimus von Rosenberg"
+      "german": "Lehengegenbrief des Lionhart von Rosenberg zu Uttenhoven für Herzog Albrecht über: 4 Höfe u. 2 Sölden zu Oberried bei Uttenhoven in der Seglau bei der Swartzach.\nVorbesitzer: Ritter Jheronimus von Rosenberg",
+      "facts": [
+        {
+          "person": "Leonhard von Rosenberg",
+          "personTitle": [
+            "zu Uttenhoven"
+          ],
+          "type": "generic",
+          "content": "issued a fief counterletter to Herzog Albrecht for farms and smallholdings at Oberried near Uttenhoven."
+        },
+        {
+          "person": "Hieronymus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "had previously held the farms and smallholdings at Oberried near Uttenhoven listed in Leonhard von Rosenberg’s fief counterletter."
+        }
+      ]
     }
   ]
 }

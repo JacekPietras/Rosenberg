@@ -8,7 +8,14 @@
         "https://www.gda.bayern.de/gvl/document/a89e1905-9d98-4c9b-a59c-637a5c6609d5",
         "https://www.monasterium.net/mom/DE-StAW/EbrachOCist/Urkunden_1494_Mai_6/charter"
       ],
-      "german": "Der Aussteller befiehlt den Empfängern, dem Johannes Koler (\"Colher\") bei der Inbesitznahme der Pfarrei Katzwang behilflich zu sein. Abt und Konvent des Klosters Ebrach haben bisher die Übertragung der Pfründe an diesen verweigert, obwohl er ihnen dies aufgrund seines Rechts der ersten Bitte befohlen hatte.\nAussteller:  König Maximilian I.\nEmpfänger:  Bischof Rudolf von Würzburg und Bischof Wilhelm von Eichstätt, Markgraf Friedrich von Brandenburg, Michael, Sigmund d. Ä und d. J. sowie Johannes von Schwarzenberg, Erkinger von Seinsheim, Heinrich von Wenkheim, Georg von Rosenberg und alle Untertanen des Reiches in Franken"
+      "german": "Der Aussteller befiehlt den Empfängern, dem Johannes Koler (\"Colher\") bei der Inbesitznahme der Pfarrei Katzwang behilflich zu sein. Abt und Konvent des Klosters Ebrach haben bisher die Übertragung der Pfründe an diesen verweigert, obwohl er ihnen dies aufgrund seines Rechts der ersten Bitte befohlen hatte.\nAussteller:  König Maximilian I.\nEmpfänger:  Bischof Rudolf von Würzburg und Bischof Wilhelm von Eichstätt, Markgraf Friedrich von Brandenburg, Michael, Sigmund d. Ä und d. J. sowie Johannes von Schwarzenberg, Erkinger von Seinsheim, Heinrich von Wenkheim, Georg von Rosenberg und alle Untertanen des Reiches in Franken",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was among the recipients ordered by King Maximilian to help Johannes Koler take possession of the parish of Katzwang."
+        }
+      ]
     }
   ]
 }

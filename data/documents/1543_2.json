@@ -5,7 +5,14 @@
     {
       "source": "HStAD, RKG, NACHWEIS",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1723270",
-      "german": "Abt und Convent zu Bronnbach, Bronnbach ./. Michael von Rosenberg, Wintzingen: Gefälle in Kipperichhausen"
+      "german": "Abt und Convent zu Bronnbach, Bronnbach ./. Michael von Rosenberg, Wintzingen: Gefälle in Kipperichhausen",
+      "facts": [
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "was in a dispute with the abbot and convent of Bronnbach over dues at Kipperichhausen."
+        }
+      ]
     }
   ]
 }

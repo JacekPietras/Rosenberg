@@ -5,7 +5,17 @@
     {
       "source": "Stadtarchiv Schwäbisch Gmünd Alte Signatur: XIX.4, U 948",
       "url": "https://www.monasterium.net/mom/DE-StASGD/A01U/U_948/charter",
-      "german": "Peter Eyßelin und Peter Heldelin, Pfleger des Armen-Siechen-Hauses zu Weißenstein, quittieren den Empfang von 290 Gulden (Hauptgut und verfallene Zinsen), welche ihnen Jörg von Rechberg von Hohenrechberg zu Kronberg und Weißenstein im Namen der Erben des Wolf von Rechberg, des Lorenz von Rosenberg zu Rosenberg, des Hans Marx von Bubenhofen und der Gebrüder Martin und Konrad von Alentzhein zu Alentzhein übergeben hat. Siegler: Hans von Thierberg von der Wilden Thierberg, Vogt zu Geislingen"
+      "german": "Peter Eyßelin und Peter Heldelin, Pfleger des Armen-Siechen-Hauses zu Weißenstein, quittieren den Empfang von 290 Gulden (Hauptgut und verfallene Zinsen), welche ihnen Jörg von Rechberg von Hohenrechberg zu Kronberg und Weißenstein im Namen der Erben des Wolf von Rechberg, des Lorenz von Rosenberg zu Rosenberg, des Hans Marx von Bubenhofen und der Gebrüder Martin und Konrad von Alentzhein zu Alentzhein übergeben hat. Siegler: Hans von Thierberg von der Wilden Thierberg, Vogt zu Geislingen",
+      "facts": [
+        {
+          "person": "Lorenz von Rosenberg",
+          "personTitle": [
+            "zu Rosenberg"
+          ],
+          "type": "generic",
+          "content": "was among the heirs of Wolf von Rechberg on whose behalf Jörg von Rechberg paid the guardians of the Armen-Siechen-Haus at Weißenstein."
+        }
+      ]
     }
   ]
 }

@@ -8,6 +8,16 @@
       "url": "https://www.gda.bayern.de/gvl/document/c233f0a8-52d6-4cce-88fa-9f6f11c33f88",
       "german": "Die Bischöfe Gottfried von Würzburg und Sylvester von Chiemsee, Pfalzgraf Friedrich bei Rhein, Hans von Neitperg, Ulrich Riederer, Graf Georg von Henneberg, Georg Fuchs von Schweinshaupten, Hofmeister, Jobst von Venningen, Deutschmeister des Deutschen Ordens, Graf Hesso von Leiningen, Peter von Talheim, Hofmeister, Ulrich von Rosenberg, Marschall, Johann Duster, Dompropst von Breslau, Ott Pienzenauer von Kemnath und Jakob Püterich von Reichertshausen bekunden einen Vergleich zwischen Herzog Albrecht VI. von Österreich und der Stadt Schaffhausen und anderen Städten, die die Herrschaft Hohenberg pfandweise innehaben.",
       "english": "The bishops Gottfried of Würzburg and Sylvester of Chiemsee, Count Palatine Friedrich by the Rhine, Hans von Neitperg, Ulrich Riederer, Count Georg of Henneberg, Georg Fuchs of Schweinshaupten, court marshal, Jobst von Venningen, Teutonic Order Grand Master, Count Hesso of Leiningen, Peter von Talheim, court marshal, Ulrich von Rosenberg, marshal, Johann Duster, provost of Breslau, Ott Pienzenauer of Kemnath, and Jakob Püterich of Reichertshausen attest a settlement between Duke Albrecht VI of Austria and the city of Schaffhausen and other towns that hold the lordship of Hohenberg as a pledge.",
+      "facts": [
+        {
+          "person": "Ulrich von Rosenberg",
+          "personTitle": [
+            "Marschall"
+          ],
+          "type": "generic",
+          "content": "attested a settlement between Duke Albrecht VI of Austria and Schaffhausen and other towns holding the lordship of Hohenberg in pledge, together with the other named persons."
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/c233f0a8-52d6-4cce-88fa-9f6f11c33f88/1/full/max/0/default.jpg"

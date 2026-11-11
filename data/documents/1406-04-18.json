@@ -5,7 +5,14 @@
     {
       "source": "Haus-, Hof- u. StaatsA Wien, cod. 410, f.33, Nr.98., 7620",
       "url": "https://www.monasterium.net/mom/CSGXIII/7620/charter",
-      "german": "Herzog Friedrich von Österreich verleiht an Clara von Rosenberg die Mühle in Ossingen."
+      "german": "Herzog Friedrich von Österreich verleiht an Clara von Rosenberg die Mühle in Ossingen.",
+      "facts": [
+        {
+          "person": "Clara von Rosenberg",
+          "type": "generic",
+          "content": "received the mill at Ossingen from Friedrich, Herzog von Österreich."
+        }
+      ]
     }
   ]
 }

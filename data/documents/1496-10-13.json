@@ -1,11 +1,24 @@
 {
   "date": "1496-10-13",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 824, 180",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5560103",
       "german": "Kurfürst Philipp von der Pfalz bekundet, dass zwischen seinen Getreuen Hans von Falkenstein und Heinrich Holzapfel (Holtzapffels) Irrungen um das Erbe der Agnes Blick von Lichtenberg (Angnes Plickin) bestehen, das von Hans von Gommersheim (Gomershaim) (+) herrührt. Beide Parteien sind vor seinen Räten am 16.09.1496 (fritags nach exalltationis) gütlich verhört worden, wobei ein endlicher Austrag ausgeblieben ist. Nunmehr haben Kurfürst Philipps Hofmeister und seine Räte beide Seiten wie folgt vertragen: Die Urkunden (brieff), die Friedrich von Rosenberg, Vogt zu Kleeburg (Cleberg), in einer verschlossenen Kiste an die Kanzlei zu Heidelberg überantwortet hat, sollen mit den Schlüsseln auf Kosten der Parteien bis 04.11.1496 (fritags nach Simonis et Jude) an Orendel von Gemmingen, Vogt zu Germersheim, geschickt werden. An diesem Tag sollen die Parteien alle ihre Briefe über das Erbe der Agnes Blick beim Germersheimer Vogt zur Treuhand dazulegen, dieser soll als Obmann mit jeweils zwei Zusätze beider Parteien diesen die ihnen zustehenden Briefe gütlich überantworten. Sind dabei Briefe sein, die beiden Parteien in Gemeinschaft zustehen sollten, sollen diese in gemeinsame Hand gelegt oder glaubwürdige Abschriften (gleuplich vidimus) ausgestellt werden. Bis zum Austrag sollen die fraglichen Briefe in Treuhand verbleiben. Bei ausbleibender gütlicher Einigung sollen die fünf Schiedsleute rechtlich und unter Verzicht auf weitere Rechtsmittel entscheiden. Wegen des unveränderten Pfandbriefs über 4.000 Gulden auf der Gemeinschaft Guttenberg ist beredet worden, dass Heinrich Holzapfel diesen nicht beim Germersheimer Vogt hinterlegen muss, sondern lediglich ein glaubhaftes Vidimus einreichen soll. Die anderen anhängigen Rechtshändel der Parteien zu Weißenburg und andernorts sollen von diesem Vertrag unberührt sein.\n\nLaufzeit: 1496 Oktober 13 (uff dorstag nach Dionisy)\n\nSiegler: Kurfürst Philipp von der Pfalz (aufgedrücktes Sekretsiegel)",
+      "facts": [
+        {
+          "person": "Friedrich von Rosenberg",
+          "personTitle": [
+            "Vogt zu Kleeburg"
+          ],
+          "type": "generic",
+          "content": "delivered documents concerning the inheritance dispute between Hans von Falkenstein and Heinrich Holzapfel to the chancellery at Heidelberg."
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005560103%2F04_0005560103_0001_4-5560103-1.jpg"

@@ -5,7 +5,24 @@
     {
       "source": "ISG FFM, H.06.10, 54",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10686190",
-      "german": "27. November 1486: Kaiser Friedrich erklärt Georg, Arnold und Friedrich von Rosenberg und ihre genannt Helfer, die ohne den Rechtsweg zu beschreiten, dem Bischof Rudolf von Würzburg Fehde angekündigt und denselben überfallen haben, in die Strafe der Goldenen Bulle verfallen und verbietet jegliche Gemeinschaft mit ihnen. Druck, mit einem weiteren Druck vom gleichen Tage allein die von Rosenberg betr. und mit darunter gedruckter Strafe nach der königlichen Reformation.14. Dezember 1486: Bischof Rudolf von Würzburg zeigt an, dass König Friedrich, Georg Arnold und Friedrich von Rosenberg, die wegen Ansprüchen aus dem Erbe ihres Vetters Anselm von Rosenberg gegen Lehens- und Eidverpflichtung dem Bischof und Kapitel mutwillig Fehde angekündigt und dieselben beschädigt haben, in Acht und Aberacht getan hat.Druck.26. Dezember 1487: Bischof Rudolf von Würzburg schickt Abschrift des kaiserlichen Urteils gegen Georg, Arnold und Friedrich von Rosenberg.Original."
+      "german": "27. November 1486: Kaiser Friedrich erklärt Georg, Arnold und Friedrich von Rosenberg und ihre genannt Helfer, die ohne den Rechtsweg zu beschreiten, dem Bischof Rudolf von Würzburg Fehde angekündigt und denselben überfallen haben, in die Strafe der Goldenen Bulle verfallen und verbietet jegliche Gemeinschaft mit ihnen. Druck, mit einem weiteren Druck vom gleichen Tage allein die von Rosenberg betr. und mit darunter gedruckter Strafe nach der königlichen Reformation.14. Dezember 1486: Bischof Rudolf von Würzburg zeigt an, dass König Friedrich, Georg Arnold und Friedrich von Rosenberg, die wegen Ansprüchen aus dem Erbe ihres Vetters Anselm von Rosenberg gegen Lehens- und Eidverpflichtung dem Bischof und Kapitel mutwillig Fehde angekündigt und dieselben beschädigt haben, in Acht und Aberacht getan hat.Druck.26. Dezember 1487: Bischof Rudolf von Würzburg schickt Abschrift des kaiserlichen Urteils gegen Georg, Arnold und Friedrich von Rosenberg.Original.",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was declared subject to the penalty of the Golden Bull by Emperor Friedrich after announcing a feud and attacking Bishop Rudolf of Würzburg."
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "generic",
+          "content": "was declared subject to the penalty of the Golden Bull by Emperor Friedrich after announcing a feud and attacking Bishop Rudolf of Würzburg."
+        },
+        {
+          "person": "Friedrich von Rosenberg",
+          "type": "generic",
+          "content": "was declared subject to the penalty of the Golden Bull by Emperor Friedrich after announcing a feud and attacking Bishop Rudolf of Würzburg."
+        }
+      ]
     }
   ]
 }

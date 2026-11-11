@@ -6,7 +6,17 @@
       "source": "StAAm, Fürstentum Obere Pfalz, Kloster Kastl Urkunden 168/a*",
       "url": "https://www.gda.bayern.de/gvl/document/38d4eb40-d9a2-4422-885d-ed6cf6363798",
       "german": "Cunrad von Rosenberg, Vitztum zu Amberg, gibt dem Nörtweiner als Vertreter des Klosters zu Kastel Brief über das Urteil der Landschranne zu Lengvelt, das dem Kloster gegen Hans und Peter die Ernvelser die Mittermül und die Görenmül bei Wesenacker(1) an der Laber zuspricht. Landgerichtssiegel. Hinweis: (1) O. u. Unterwiesenacker B. Parsberg.",
-      "english": "Cunrad von Rosenberg, vicegerent at Amberg, issues a letter to the Nörtweiner, representing the monastery of Kastel, concerning the judgment of the regional court at Lengvelt. The judgment awards the monastery the Mittermül and Görenmül mills near Wesenacker on the Laber in its dispute with Hans and Peter Ernvelser. With the seal of the regional court. The catalog identifies Wesenacker as Unterwiesenacker near Parsberg."
+      "english": "Cunrad von Rosenberg, vicegerent at Amberg, issues a letter to the Nörtweiner, representing the monastery of Kastel, concerning the judgment of the regional court at Lengvelt. The judgment awards the monastery the Mittermül and Görenmül mills near Wesenacker on the Laber in its dispute with Hans and Peter Ernvelser. With the seal of the regional court. The catalog identifies Wesenacker as Unterwiesenacker near Parsberg.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitztum zu Amberg"
+          ],
+          "type": "generic",
+          "content": "issued the monastery of Kastel a record of the judgment of the Landschranne at Lengfeld awarding it the Mittermül and Görenmül near Wesenacker."
+        }
+      ]
     }
   ]
 }

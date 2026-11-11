@@ -5,7 +5,14 @@
     {
       "source": "Staatsarchiv Ludwigsburg B 189 V Bü 12",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-812498",
-      "german": "Streitigkeiten zwischen dem Heilbronner St. Klarakloster und dem Deutschordensamt Heuchlingen wegen dreier Gülthöfe zu Ödheim\n\nLaufzeit: (1483-1730) 1740-1744\n\nEnthält: Darin: Verkauf eines halben Hofs zu Ödheim (Zittlinger Hof) durch Stefan von Neippeg, Asmus von Rosenberg und Jörg Geyling an das St. Klarakloster zu Heilbronn (1483, Auszug); Lehenbrief über den Klosterhof zu Ödheim für Hans Zittlinger (1488, Auszug); Lehenbrief über den vierten Teil des Zittlinger Hofs (1559, Auszug); Verkauf eines Hofs zu Ödheim (Peter Bomgarten-Hof) durch Johannes Eisenhut, Chorher des Stifts zu Öhringen, an das St. Klarakloster zu Heilbronn (1483, Auszug); Lehenbrief über den Peter-Bomgarten-Hof zu Ödheim für Peter Bomgarten (1488, Auszug); Lagerbuchauszüge über den Zittlingerhof, den Peter-Bomgarten-Hof und den Müllerhof (1513-1730)\n\nUmfang: 1 Bü."
+      "german": "Streitigkeiten zwischen dem Heilbronner St. Klarakloster und dem Deutschordensamt Heuchlingen wegen dreier Gülthöfe zu Ödheim\n\nLaufzeit: (1483-1730) 1740-1744\n\nEnthält: Darin: Verkauf eines halben Hofs zu Ödheim (Zittlinger Hof) durch Stefan von Neippeg, Asmus von Rosenberg und Jörg Geyling an das St. Klarakloster zu Heilbronn (1483, Auszug); Lehenbrief über den Klosterhof zu Ödheim für Hans Zittlinger (1488, Auszug); Lehenbrief über den vierten Teil des Zittlinger Hofs (1559, Auszug); Verkauf eines Hofs zu Ödheim (Peter Bomgarten-Hof) durch Johannes Eisenhut, Chorher des Stifts zu Öhringen, an das St. Klarakloster zu Heilbronn (1483, Auszug); Lehenbrief über den Peter-Bomgarten-Hof zu Ödheim für Peter Bomgarten (1488, Auszug); Lagerbuchauszüge über den Zittlingerhof, den Peter-Bomgarten-Hof und den Müllerhof (1513-1730)\n\nUmfang: 1 Bü.",
+      "facts": [
+        {
+          "person": "Asmus von Rosenberg",
+          "type": "generic",
+          "content": "sold a half farm at Ödheim with Stefan von Neippeg and Georg Geyling to the St. Klara convent in Heilbronn."
+        }
+      ]
     }
   ]
 }

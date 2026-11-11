@@ -5,7 +5,17 @@
     {
       "source": "StAN, Fürstentum Ansbach, Brandenburg Literalien 2022",
       "url": "https://www.gda.bayern.de/gvl/document/54a4775a-a314-403a-a4eb-a9802f79c367",
-      "german": "Schreiben Leonhard von Vestenbergs, Amtmanns zu Uffenheim, an Hans von Seckendorff, Ritter, des Bischofs von Speyer [Philipp I. von Rosenberg] tödlichen Abgang betreffend"
+      "german": "Schreiben Leonhard von Vestenbergs, Amtmanns zu Uffenheim, an Hans von Seckendorff, Ritter, des Bischofs von Speyer [Philipp I. von Rosenberg] tödlichen Abgang betreffend",
+      "facts": [
+        {
+          "person": "Philipp von Rosenberg",
+          "personTitle": [
+            "Bischof von Speyer"
+          ],
+          "type": "death",
+          "diedBefore": "1514"
+        }
+      ]
     }
   ]
 }

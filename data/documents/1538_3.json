@@ -6,6 +6,13 @@
       "source": "HStAM, 3, 2359",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5447200",
       "german": "Akten des Landgrafen Philipp (z.T. gemeinsam mit dem Kurfürsten Johann Friedrich von Sachsen), auch des Kammersekretärs Simon Bing: Briefwechsel mit Bürgermeister und Rat zu Nürnberg, den Losungsherren Christoph Tetzel d.Ä. und Linhart Tucher zu Nürnberg, dem Nürnberger Syndikus Johann Gemel. Quittung von Kämmerer und Rat der Stadt Regensburg. Niederschrift einer Abrede zwischen dem Landgrafen und Albrecht v. Rosenberg. Quittung. Beglaubigungsschreiben. Notizen über die Werbung des Eucharius Huldrich",
+      "facts": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "type": "generic",
+          "content": "made an agreement with Landgraf Philipp."
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/3/2359/hstam_3_nr_2359_0001.jpg"

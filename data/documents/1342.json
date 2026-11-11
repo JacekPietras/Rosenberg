@@ -7,7 +7,17 @@
       "source": "RIplus Regg. EB Mainz 1,2 n. 4785",
       "url": "https://www.regesta-imperii.de/id/c9dac70d-22d4-483e-8d2d-dc1c33009670",
       "german": "Erzbischof Heinrich beurkundet, daß sein Kellner Cunradus in Dürn (Durna) vor ihm über Einnahmen und Ausgaben vom 1. Mai (Walpurgis) 1340 bis zum 22. Februar (cath. Petri) 1342 (incluso eciam ultimo suo recessu) abgerechnet habe und ihm danach noch 32 Pfd. 5 Heller, 112 Mltr. 2 Simmer Roggen (silig.), 65 Mltr. Hafer, 32 Mltr. 5 Simmer Spelt, 250 Hühner schuldet. Ebirhard von Rosenberg, erzb. Vogt in Dürn (Durne), hat von Conrad 40 Mltr. Hafer, 5 1/2 Pfd. 6 1/2 Schilling Heller und 300 Hühner erhalten, de quibus .. cellerarius nullam fecit rationem.",
-      "english": "Archbishop Heinrich certifies that his cellarer Cunradus of Dürn (Durna) has rendered accounts before him for revenues and expenditures from May 1 (Walpurgis) 1340 to February 22 (Cathedral of St. Peter) 1342 (including also his final departure), and that he thereafter still owes him 32 pounds 5 Heller, 112 measures 2 Simmer rye (silig.), 65 measures oats, 32 measures 5 Simmer spelt, 250 chickens. Ebirhard von Rosenberg, archiepiscopal bailiff at Dürn (Durne), has received from Conrad 40 measures oats, 5 1/2 pounds 6 1/2 shillings Heller, and 300 chickens, of which the cellarer rendered no account."
+      "english": "Archbishop Heinrich certifies that his cellarer Cunradus of Dürn (Durna) has rendered accounts before him for revenues and expenditures from May 1 (Walpurgis) 1340 to February 22 (Cathedral of St. Peter) 1342 (including also his final departure), and that he thereafter still owes him 32 pounds 5 Heller, 112 measures 2 Simmer rye (silig.), 65 measures oats, 32 measures 5 Simmer spelt, 250 chickens. Ebirhard von Rosenberg, archiepiscopal bailiff at Dürn (Durne), has received from Conrad 40 measures oats, 5 1/2 pounds 6 1/2 shillings Heller, and 300 chickens, of which the cellarer rendered no account.",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "received oats, money and chickens from Konrad, cellarer at Dürn."
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,14 @@
     {
       "source": "HStAD, A 13, 94",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1487209",
-      "german": "Eheberedung zwischen Jorg Ruschener und Apollonia Hund (Witwe Ludwigs von Sickingen?).\n\nFormalbeschreibung: Original, Pergament, 6 Siegel (Jorg, Apollonia, Friedrich Hund, Hans von Rosenberg, Wilhelm von Mauchenheim, Philipp von Leyen) anhängend"
+      "german": "Eheberedung zwischen Jorg Ruschener und Apollonia Hund (Witwe Ludwigs von Sickingen?).\n\nFormalbeschreibung: Original, Pergament, 6 Siegel (Jorg, Apollonia, Friedrich Hund, Hans von Rosenberg, Wilhelm von Mauchenheim, Philipp von Leyen) anhängend",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "type": "generic",
+          "content": "sealed the marriage agreement between Jorg Ruschener and Apollonia Hund."
+        }
+      ]
     }
   ]
 }

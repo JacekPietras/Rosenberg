@@ -5,7 +5,14 @@
     {
       "source": "Staatsarchiv Freiburg T 101/1 Nr. 670",
       "url": "https://www.landesarchiv-bw.de/plink/?f=5-2384470",
-      "german": "Michel von Rosenberg verspricht, Friedrich von Fleckenstein für seine Bürgschaft gegen die Brüder Hans Konrad und Joachim von Helmstatt schadlos zu halten.\n\nLaufzeit: 1483 Oktober 1"
+      "german": "Michel von Rosenberg verspricht, Friedrich von Fleckenstein für seine Bürgschaft gegen die Brüder Hans Konrad und Joachim von Helmstatt schadlos zu halten.\n\nLaufzeit: 1483 Oktober 1",
+      "facts": [
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "promised to indemnify Friedrich von Fleckenstein for his surety against the brothers Hans Konrad and Joachim von Helmstatt."
+        }
+      ]
     }
   ]
 }

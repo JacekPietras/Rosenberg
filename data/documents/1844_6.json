@@ -7,7 +7,14 @@
     {
       "source": "Generallandesarchiv Karlsruhe 240 Nr. 6758",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3843687",
-      "german": "In Sachen des Johann Baumann von Rosenberg gegen Andreas Albrecht und Genossen von Rosenbergwegen Berichtigung einer Teilung\n\nLaufzeit: 1844"
+      "german": "In Sachen des Johann Baumann von Rosenberg gegen Andreas Albrecht und Genossen von Rosenbergwegen Berichtigung einer Teilung\n\nLaufzeit: 1844",
+      "facts": [
+        {
+          "subject": "A division concerning residents of Rosenberg",
+          "type": "generic",
+          "content": "was the subject of a case brought by Johann Baumann against Andreas Albrecht and associates of Rosenberg seeking its correction."
+        }
+      ]
     }
   ],
   "deleted": true

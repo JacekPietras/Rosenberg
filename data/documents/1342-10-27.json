@@ -9,6 +9,23 @@
       "summary": "Kaiser Ludwig IV. der Bayer urteilt, dass Kunigunde von Lißberg, die Ehefrau des Eberhard von Rosenberg und Mutter des verstorbenen Engelhards von Hirschhorn und des Hans von Hirschhorn die Feste Prachtaue mit Zubehör, die als väterliches Erbteil an sie gekommen ist aufgeben und an Engelhard, Hans und Hermann von Hirschhorn übergeben soll.",
       "german": "Wir Ludwig von gots gnaden Romischer keyser zu allen zeiten merer des Richs Tun kunt offenlichen an diesem brieffe das fur vns kam mit fursprechen da wir zu gerichte saszen zu Wirtzburg ffrauwe Konigunt von Liesburg Eberhardes von Rosenberg eliche wirtin vnd behub rechte vnd redelichen als hern vnd Riter mit gesammeter hant vrteil erteilten Liesburg die veste Brachtauwe die veste vnd was dartzu gehort besucht vnd vnbesucht vnd ander ires vatter erbe das ir von erbeteil zugehort Also das ir bruder Herman das nicht vergeben noch bekomern mag one iren willen vnd wort Darnach gab sie dieselben erbeschafft willeclich vnd vnbetwunglich vor vns vff rechte vnd redelichen als erteilt wart Engelharten Hansen vnd Herman iren Sunen Also das dieselben ire Sune damit thun mogen gentzlich vnd gar was sie wisen das yn nutze vnd gut ist Des zu vrkunde geben wir yn als erteilt ist diesen brieff versiegelt mit vnsers hoffgerichtes Ingesigel Da man zalte von Cristus geburte drutzehenhundert Jare darnach in dem zwey vnd viertzigsten Jare an der heilgen zwolffboten abent Symonis et Jude",
       "english": "We, Ludwig, by the grace of God Roman Emperor, at all times augmenter of the Empire, make known publicly in this letter that there came before us with an advocate, as we sat in judgment at Würzburg, Lady Kunigunde von Liesburg, the wedded wife of Eberhard von Rosenberg, and she obtained rightfully and lawfully, as the lords and Ritter adjudged with unanimous judgment, Liesburg the castle, Brachtauwe the castle, and what belongs thereto, cultivated and uncultivated, and other inheritance of her father that belongs to her by hereditary portion, so that her brother Hermann may not alienate or encumber it without her will and word. Thereafter she gave the same inheritance willingly and without compulsion before us, rightfully and lawfully, as was adjudged, to Engelhard, Hans and Hermann, her sons, so that these her sons may do with it wholly and entirely whatever they know to be useful and good for them. In witness whereof we give them, as was adjudged, this letter sealed with the seal of our Hofgericht, in the year of Christ's birth 1342, on the eve of the holy apostles Simon and Jude (27 October 1342).",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "spouse",
+          "of": "Kunigunde von Lißberg"
+        },
+        {
+          "person": "Kunigunde von Lißberg",
+          "type": "generic",
+          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons."
+        },
+        {
+          "person": "Kunigunde von Lißberg",
+          "type": "generic",
+          "content": "had a brother Hermann."
+        }
+      ],
       "img": [
         {
           "src": "img/1342-HStAD, C 1 A, 16.png"
@@ -22,7 +39,24 @@
         "https://www.regesta-imperii.de/id/dd48e91c-a281-4849-a862-c5f18abd3d59"
       ],
       "german": "Ks. Ludwig bekundet: Als er zu Würzburg zu Gericht gesessen ist, ist vor ihm mit Fürsprech erschienen Frau Kunigunde von Lißberg, Ehefrau des Eberhard von Rosenberg (das fur uns kam mit fursprechen, da wir zu gerichte saßen zu Wirczburg [...]). Mit Gesamturteil der anwesenden Herren und Ritter sind ihr die Festen Lißberg und [Burg] Bracht (Brachtaw) mit allem Zubehör samt anderem Erbe ihres Vaters zugesprochen worden (und behub rechte und redelichen, als hern und riter mit gesammeter hant urteil erteilten), mit der Maßgabe, daß ihr Bruder Hermann dieses Erbe ohne ihren Willen nicht veräußern oder beschweren darf. Daraufhin hat sie diese Erbschaft nach entsprechendem Urteil ihren Söhnen Engelhard, Hans und Hermann [von Hirschhorn] mit allen Rechten übertragen (darnach gab sie dieselben erbeschafft willicklich und unbezwunglich vor uns uff rechte und redelichen, als erteilt wart [...] also, das dieselben ire sune damit thun mogen genczlich und gar, was sie wißen, das yn nucze und gut ist).",
-      "english": "King Ludwig declares: While he was sitting in court in Würzburg, Kunigunde von Lißberg, wife of Eberhard von Rosenberg, appeared before him as his advocate (she came to us as her advocate, as we were sitting in court in Würzburg [...]). By the unanimous judgment of the lords and Ritter present, the fortresses of Lißberg and Bracht with all appurtenances, along with other inheritances of her father, were awarded to her (and granted in a fair and just manner, as the lords and Ritter issued their unanimous judgment), with the proviso that her brother Hermann may not alienate or encumber this inheritance without her consent. Thereupon, she transferred this inheritance, with all rights, to her sons Engelhard, Hans, and Hermann [von Hirschhorn], according to the corresponding judgment (after which she gave the inheritance to us willingly and irrevocably, in good faith and in good faith, as granted [...] so that they may do with it their own free will and exactly what they know is good and useful)."
+      "english": "King Ludwig declares: While he was sitting in court in Würzburg, Kunigunde von Lißberg, wife of Eberhard von Rosenberg, appeared before him as his advocate (she came to us as her advocate, as we were sitting in court in Würzburg [...]). By the unanimous judgment of the lords and Ritter present, the fortresses of Lißberg and Bracht with all appurtenances, along with other inheritances of her father, were awarded to her (and granted in a fair and just manner, as the lords and Ritter issued their unanimous judgment), with the proviso that her brother Hermann may not alienate or encumber this inheritance without her consent. Thereupon, she transferred this inheritance, with all rights, to her sons Engelhard, Hans, and Hermann [von Hirschhorn], according to the corresponding judgment (after which she gave the inheritance to us willingly and irrevocably, in good faith and in good faith, as granted [...] so that they may do with it their own free will and exactly what they know is good and useful).",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "spouse",
+          "of": "Kunigunde von Lißberg"
+        },
+        {
+          "person": "Kunigunde von Lißberg",
+          "type": "generic",
+          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons."
+        },
+        {
+          "person": "Kunigunde von Lißberg",
+          "type": "generic",
+          "content": "had a brother Hermann."
+        }
+      ]
     }
   ]
 }

@@ -9,6 +9,18 @@
         "https://www.monasterium.net/mom/DE-StALB/DOKommendeMergentheimII/B_250_U_112/charter"
       ],
       "german": "Hans von Rosenberg und seine Ehefrau Reytza geborene von Adelsheim (Adelzhaim) beurkunden, daß Walter von Cronberg (Cronnberg), Administrator des Hochmeisteramts und Meister des Deutschen Ordens in deutschen und welschen Landen, ihnen gestattet hat, zwei Jahre lang ein Haus in der Stadt Mergentheim zu bewohnen.\n\nLaufzeit: 1529 November 12 (uff freytag nach sannt Marttins des hailligen bischoffstag)\n\nSiegler: Hans von Rosenberg",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "type": "spouse",
+          "of": "Reytza von Adelsheim"
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "type": "generic",
+          "content": "was permitted with his wife Reytza von Adelsheim by Walter von Cronberg to live in a house at Mergentheim for two years."
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005255%2Ftitlaufn_0001303171%2F02_0001303171_0003_2-1303171-3.jpg"

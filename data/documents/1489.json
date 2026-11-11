@@ -11,7 +11,14 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400456000000620000634",
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x21976709365844720210713150716153"
       ],
-      "german": "Friedrich und Siegmund Gebrüder und Markgrafen zu Brandenburg etc., Burggrafen zu Nürnberg, belehnen den Cunz von Rosenberg zu Mannlehen mit Schloß, Dorf, Gericht und Vogtei zu Waldmannshafen einschließlich Zubehör, soweit die Mark und der Zehnt reichen, dazu mit dem Holz zu Schön (zu der Schoen). Die Belehnung erfolgt gemäß Mannlehnsrecht und -gewohnheit des Burggrafenamts (burgrafthumbs) Nürnberg. -\n\nSiegler: die Aussteller. -Am freitag nach s. Michels tag.\n\nAusf., Perg., Sg. besch. - Rv.: In sacl:!en Rosenberg contra Rosenberg etc. (17. Jh.). - Nr. 592.\n\nReg. Nr. 631"
+      "german": "Friedrich und Siegmund Gebrüder und Markgrafen zu Brandenburg etc., Burggrafen zu Nürnberg, belehnen den Cunz von Rosenberg zu Mannlehen mit Schloß, Dorf, Gericht und Vogtei zu Waldmannshafen einschließlich Zubehör, soweit die Mark und der Zehnt reichen, dazu mit dem Holz zu Schön (zu der Schoen). Die Belehnung erfolgt gemäß Mannlehnsrecht und -gewohnheit des Burggrafenamts (burgrafthumbs) Nürnberg. -\n\nSiegler: die Aussteller. -Am freitag nach s. Michels tag.\n\nAusf., Perg., Sg. besch. - Rv.: In sacl:!en Rosenberg contra Rosenberg etc. (17. Jh.). - Nr. 592.\n\nReg. Nr. 631",
+      "facts": [
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "received Schloss, village, court and Vogtei of Waldmannshofen and the wood at Schön as a Mannlehen from Margraves Friedrich and Sigmund of Brandenburg."
+        }
+      ]
     }
   ]
 }

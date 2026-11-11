@@ -5,7 +5,17 @@
     {
       "source": "Staatsarchiv Freiburg T 101/1 Nr. 626",
       "url": "https://www.landesarchiv-bw.de/plink/?f=5-2384370",
-      "german": "Pfalzgraf Friedrich bei Rhein belehnt Friedrich von Rosenberg, Amtmann zu Madenburg, als Vormund der Kinder des Friedrich von Fleckenstein mit Gütern in Wadern (Waden) und im Burgfrieden zu Dagstuhl.\n\nLaufzeit: 1477 April 29"
+      "german": "Pfalzgraf Friedrich bei Rhein belehnt Friedrich von Rosenberg, Amtmann zu Madenburg, als Vormund der Kinder des Friedrich von Fleckenstein mit Gütern in Wadern (Waden) und im Burgfrieden zu Dagstuhl.\n\nLaufzeit: 1477 April 29",
+      "facts": [
+        {
+          "person": "Friedrich von Rosenberg",
+          "personTitle": [
+            "Amtmann zu Madenburg"
+          ],
+          "type": "generic",
+          "content": "received goods in Wadern and the Burgfrieden of Dagstuhl as fief from Pfalzgraf Friedrich as guardian of the children of Friedrich von Fleckenstein."
+        }
+      ]
     }
   ]
 }

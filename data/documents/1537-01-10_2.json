@@ -5,7 +5,20 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 U 32",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74944",
-      "german": "1537 Jan. 10 (Mi n. Dreikönig). Bischof Konrad von Würzburg belehnt Konrad von Rosenberg nach dem Tod seines Bruder Philipp von Rosenberg mit den Dörfern Neubronn und Oberndorf; Sr.: der A.\n\nLaufzeit: 1537 Jan. 10.\n\nUmfang: Ausf.; Perg., 1 S (besch.)\n\nFormat: Folio cm"
+      "german": "1537 Jan. 10 (Mi n. Dreikönig). Bischof Konrad von Würzburg belehnt Konrad von Rosenberg nach dem Tod seines Bruder Philipp von Rosenberg mit den Dörfern Neubronn und Oberndorf; Sr.: der A.\n\nLaufzeit: 1537 Jan. 10.\n\nUmfang: Ausf.; Perg., 1 S (besch.)\n\nFormat: Folio cm",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "received Neubronn and Oberndorf as fiefs from Bishop Konrad of Würzburg after the death of his brother Philipp."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "sibling",
+          "of": "Philipp von Rosenberg",
+          "ofDeceased": true
+        }
+      ]
     }
   ]
 }

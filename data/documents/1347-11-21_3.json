@@ -7,7 +7,17 @@
       "source": "RI VIII n. 437",
       "url": "https://www.regesta-imperii.de/id/1347-11-21_2_0_8_0_0_569_437",
       "german": "gibt dem edeln manne Kraft von Hohenlohe und dessen erben alle eignen bauern, die dem reich gehören auf dem Orenwald und am Kocher mit namen dieienigen, welche Eberhard von Rosenberg vogt zu Dürn von des reichs wegen inne hatte. Hanselmann Dipl. Beweis 1,449.",
-      "english": "grants to the noble man Kraft von Hohenlohe and his heirs all free peasants who belong to the Empire on the Orenwald and at the Kocher, namely those which Eberhard von Rosenberg held as bailiff of Dürn on behalf of the Empire. Hanselmann Dipl. Beweis 1,449."
+      "english": "grants to the noble man Kraft von Hohenlohe and his heirs all free peasants who belong to the Empire on the Orenwald and at the Kocher, namely those which Eberhard von Rosenberg held as bailiff of Dürn on behalf of the Empire. Hanselmann Dipl. Beweis 1,449.",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "had held imperial dependent peasants in the Odenwald and on the Kocher on behalf of the empire."
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,14 @@
     {
       "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 337/fol. 211",
       "url": "https://www.gda.bayern.de/gvl/document/c2a9de93-bec2-4351-9296-8c7b877e6d89",
-      "german": "Rothenburg an Contz von Rosenberg: Beteiligung des Lutz Kutrolf am Bauernkrieg."
+      "german": "Rothenburg an Contz von Rosenberg: Beteiligung des Lutz Kutrolf am Bauernkrieg.",
+      "facts": [
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "was addressed in a letter from Rothenburg concerning Lutz Kutrolf’s participation in the Peasants’ War."
+        }
+      ]
     }
   ]
 }

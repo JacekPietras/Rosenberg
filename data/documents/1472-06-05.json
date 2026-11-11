@@ -5,7 +5,14 @@
     {
       "source": "HStAD, B 8, 9/43",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2941422",
-      "german": "Stamm v. Schlitz gen. v. Görtz, zugleich für seine Söhne Simon und Ludwig: Verleihung von Gütern zu Pfordt und Hartershausen an Heinz Bamst, den Sohn des verstorbenen Vaters des Ausstellers und der Margarethe v. Rosenberg, nachdem der Aussteller dessen Hof zu Hemmen an den Fuldaer Bürger Klaus Armbruster verkauft hatte\n\nSiegler: Aussteller für Simon und Ludwig v. Schlitz gen. V. Görtz"
+      "german": "Stamm v. Schlitz gen. v. Görtz, zugleich für seine Söhne Simon und Ludwig: Verleihung von Gütern zu Pfordt und Hartershausen an Heinz Bamst, den Sohn des verstorbenen Vaters des Ausstellers und der Margarethe v. Rosenberg, nachdem der Aussteller dessen Hof zu Hemmen an den Fuldaer Bürger Klaus Armbruster verkauft hatte\n\nSiegler: Aussteller für Simon und Ludwig v. Schlitz gen. V. Görtz",
+      "facts": [
+        {
+          "person": "Margaretha von Rosenberg",
+          "type": "parent",
+          "of": "Heinrich Bamst"
+        }
+      ]
     }
   ]
 }

@@ -45,7 +45,33 @@
     {
       "source": "Oberrheinische Stadtrechte. Erste Abteilung: Fränkische Rechte. Sechstes Heft: Ladenburg, Wiesloch, Zuzenhausen, Bretten, Gochsheim, Heidelsheim, Zeutern, Boxberg, Eppingen, bearbeitet von Carl Koehne (Heidelberg, 1902)",
       "url": "https://books.google.pl/books?id=1kgNAAAAIAAJ",
-      "german": "König Wenzel gewährt Conrad von Rosenberg die Gnade, daß alle, welche nach Boxberg ziehen, das Recht der Stadt Lauda haben sollen, und bestätigt ihm und seinen Vettern das Gericht zu Boxberg.\n\n1388, April 6.\n\nWir Wentzlaw von gotes genaden Romischer kunig, zu allen zeiten merer des reichs, und kunig zu Beheim, bekennen und tun kunt offenlichen mit disem brive allen den, die in sehen oder horen lesen, das wir durch getrewer dinste willen, die uns und dem reiche der edel Cunrat von Rosenberg, vitzthum zu Heidelberg, unser lieber getrewer, vor langen zeiten getan hat und furbaß tun sol und mag in kunftigen zeiten, demselben Cunraten und seine vettern, die mit im uf der vesten zu Pochsperg gemeiner seint, dise besunder gnade getan und tun im die von Romischer kuniglicher mechte in craft ditz brives, was leute oder juden in ir stat zu Pochsperg hinder sie ziehen und doselbis wonhafftig werden, das die aller freiheit, gnaden und rechten gebrauchen sollen, als die stat von Lauden. Auch bestetigen wir in das gericht doselbis zu Pochsperg und meinen, das das bei den gnaden bleiben solle als das von alder herkamen ist, unschedlichen doch uns, dem reiche und sust allermeniglich an unsern und iren rechten.\n\nMit urkund ditz brives versigelt mit unserm kuniglichen maiestat insigel. Geben zu Amberg noch Crist geburte dreizehnhundert jar und darnach in dem acht und achtzigistem jare des montages noch sand Ambrosii tage, unser reiche des Behemischen in dem funfundzwenzigisten und des Romischen in dem zwelften jaren.\n\nPer dominum Lampertum Bambergensem episcopum Wlachnico de Weytenmule.\n\nIn verso: R. Bartholomeus de Novacivitate.\n\nOr. (Perg. mit S.) im G.-L.-A. zu Karlsruhe."
+      "german": "König Wenzel gewährt Conrad von Rosenberg die Gnade, daß alle, welche nach Boxberg ziehen, das Recht der Stadt Lauda haben sollen, und bestätigt ihm und seinen Vettern das Gericht zu Boxberg.\n\n1388, April 6.\n\nWir Wentzlaw von gotes genaden Romischer kunig, zu allen zeiten merer des reichs, und kunig zu Beheim, bekennen und tun kunt offenlichen mit disem brive allen den, die in sehen oder horen lesen, das wir durch getrewer dinste willen, die uns und dem reiche der edel Cunrat von Rosenberg, vitzthum zu Heidelberg, unser lieber getrewer, vor langen zeiten getan hat und furbaß tun sol und mag in kunftigen zeiten, demselben Cunraten und seine vettern, die mit im uf der vesten zu Pochsperg gemeiner seint, dise besunder gnade getan und tun im die von Romischer kuniglicher mechte in craft ditz brives, was leute oder juden in ir stat zu Pochsperg hinder sie ziehen und doselbis wonhafftig werden, das die aller freiheit, gnaden und rechten gebrauchen sollen, als die stat von Lauden. Auch bestetigen wir in das gericht doselbis zu Pochsperg und meinen, das das bei den gnaden bleiben solle als das von alder herkamen ist, unschedlichen doch uns, dem reiche und sust allermeniglich an unsern und iren rechten.\n\nMit urkund ditz brives versigelt mit unserm kuniglichen maiestat insigel. Geben zu Amberg noch Crist geburte dreizehnhundert jar und darnach in dem acht und achtzigistem jare des montages noch sand Ambrosii tage, unser reiche des Behemischen in dem funfundzwenzigisten und des Romischen in dem zwelften jaren.\n\nPer dominum Lampertum Bambergensem episcopum Wlachnico de Weytenmule.\n\nIn verso: R. Bartholomeus de Novacivitate.\n\nOr. (Perg. mit S.) im G.-L.-A. zu Karlsruhe.",
+      "english": "King Wenzel grants Konrad von Rosenberg the privilege that all who move to Boxberg shall have the rights of the town of Lauda, and confirms to him and his cousins the court at Boxberg.\n\n6 April 1388.\n\nWe, Wenzel, by the grace of God king of the Romans, ever augmenting the empire, and king of Bohemia, acknowledge and make publicly known by this charter to all who see it or hear it read that, for the faithful services which the noble Konrad von Rosenberg, Vitztum at Heidelberg, our dear faithful subject, has long rendered us and the empire and may and shall render in the future, we have granted and by Roman royal authority and the force of this charter grant to that Konrad and his cousins, who hold shares with him in the fortress at Boxberg, this special privilege: whatever people or Jews move under their protection into their town of Boxberg and become resident there shall enjoy all the liberties, privileges and rights of the town of Lauda. We also confirm to them the court there at Boxberg and intend that it shall remain with the privileges as it has had them from of old, without prejudice to our rights, those of the empire or anyone else’s rights.\n\nIn witness whereof this charter is sealed with our royal seal of majesty. Given at Amberg in the thirteen hundred and eighty-eighth year after Christ’s birth, on the Monday after St. Ambrose’s Day, in the twenty-fifth year of our reign in Bohemia and the twelfth of our reign as king of the Romans.\n\nBy Lord Lampert, bishop of Bamberg: Wlachnico de Weytenmule.\n\nOn the reverse: R. Bartholomeus de Novacivitate.\n\nOriginal (parchment with seal) in the G.-L.-A. at Karlsruhe.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "vitzthum zu Heidelberg",
+            "Edel"
+          ],
+          "type": "generic",
+          "content": "received with his Vettern confirmation from King Wenzel of the court at Boxberg."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "vitzthum zu Heidelberg",
+            "Edel"
+          ],
+          "type": "generic",
+          "content": "held the fortress at Boxberg jointly with his Vettern."
+        },
+        {
+          "subject": "Boxberg",
+          "type": "generic",
+          "content": "was granted the freedoms and rights of Lauda for people or Jews settling in the town."
+        }
+      ]
     }
   ]
 }

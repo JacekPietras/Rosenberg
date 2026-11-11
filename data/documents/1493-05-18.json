@@ -5,7 +5,24 @@
     {
       "source": "Generallandesarchiv Karlsruhe {43 Nr. 5086 Verweisung}",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1787104",
-      "german": "Arnold und Friedrich von Rosenberg, Gebrüder, verbürgen sich für Wolf von Hardheim wegen des von diesem um 400 Gulden an Margarethe, Hans Heußlins von Eußenheim Witwe, geb. von Neideck, unter Vorbehalt des Wiederkaufs verkauften halben Hofs Schwarzenbrunn bei Gerstetten.\n\nLaufzeit: 1493 Mai 18 (Samstag nach Vocem jocunditatis 1493)"
+      "german": "Arnold und Friedrich von Rosenberg, Gebrüder, verbürgen sich für Wolf von Hardheim wegen des von diesem um 400 Gulden an Margarethe, Hans Heußlins von Eußenheim Witwe, geb. von Neideck, unter Vorbehalt des Wiederkaufs verkauften halben Hofs Schwarzenbrunn bei Gerstetten.\n\nLaufzeit: 1493 Mai 18 (Samstag nach Vocem jocunditatis 1493)",
+      "facts": [
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "sibling",
+          "of": "Friedrich von Rosenberg"
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "generic",
+          "content": "stood surety for Wolf von Hardheim’s sale of half of the Schwarzenbrunn farm near Gerstetten to Margarethe von Neideck, widow of Hans Heußlin von Eußenheim."
+        },
+        {
+          "person": "Friedrich von Rosenberg",
+          "type": "generic",
+          "content": "stood surety for Wolf von Hardheim’s sale of half of the Schwarzenbrunn farm near Gerstetten to Margarethe von Neideck, widow of Hans Heußlin von Eußenheim."
+        }
+      ]
     }
   ]
 }

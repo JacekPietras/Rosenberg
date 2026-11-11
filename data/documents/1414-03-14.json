@@ -6,7 +6,17 @@
       "source": "StAN, Reichsstadt Nürnberg, D-Laden, Urkunden 137; archival old reference: S. I. L. 247 Nr. 357",
       "url": "https://www.gda.bayern.de/gvl/document/d4bdd52c-56a8-4dec-831c-1085bee907c3",
       "german": "Hans von Rosenberg, Schultheiß, und die Schöffen der Stadt Nürnberg beurkunden, dass Albrecht Bernolt seiner Muhme Kungunden, der Künnen Holdolin Tochter, vertreten durch Heinrich Gewichtmacher, eine Wiesmahd hinter dem Gostenhof am Espan gelegen und ein Gut zum Hetzels verkauft habe mit der Bedingung, dass die Mutter dieser Güter für ihre Lebzeit genießen solle. Zeugen: Wernherr Lemblein und Seitz Vogel. Siegler: das Gericht.",
-      "english": "Hans von Rosenberg, mayor of Nuremberg, and the city's aldermen recorded that Albrecht Bernolt had sold his cousin Kungund, daughter of Künn Holdolin, represented by Heinrich Gewichtmacher, a meadow behind Gostenhof at Espan and an estate at Hetzels. The sale stipulated that her mother could enjoy the properties for life. Wernherr Lemblein and Seitz Vogel witnessed the deed; the court sealed it."
+      "english": "Hans von Rosenberg, mayor of Nuremberg, and the city's aldermen recorded that Albrecht Bernolt had sold his cousin Kungund, daughter of Künn Holdolin, represented by Heinrich Gewichtmacher, a meadow behind Gostenhof at Espan and an estate at Hetzels. The sale stipulated that her mother could enjoy the properties for life. Wernherr Lemblein and Seitz Vogel witnessed the deed; the court sealed it.",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Schultheiß zu Nürnberg"
+          ],
+          "type": "generic",
+          "content": "recorded with the Nürnberg aldermen Albrecht Bernolt’s sale of a meadow and an estate to Kungund."
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,17 @@
       "source": "Amberg, Staatsarchiv, 195",
       "url": "https://www.monasterium.net/mom/DE-StAAm/EnsdorfOSB/195/charter",
       "german": "Verkauf des Fischwassers zu Theuern an der Vils als freies Eigen. Aussteller: A1: Ulrich Wolntzhofer, Bürger zu Amberg. A2: Philipp Reich, Bürger zu Amberg Empfänger: Hans der Kastner d. Ä., Bürger zu Amberg\n\nSiegler: S1: A1. S2: A2. S3: Konrad von Rosenberg, Viztum zu Amberg\n\nSiegel: S1: A1. S2: A2. S3: Konrad von Rosenberg, Viztum zu Amberg",
-      "english": "Sale of the fishing rights at Theuern on the Vils as free property (freies Eigen). Issuers: A1: Ulrich Wolntzhofer, citizen of Amberg. A2: Philipp Reich, citizen of Amberg Recipient: Hans the Kastner Sr., citizen of Amberg\n\nSealers: S1: A1. S2: A2. S3: Konrad von Rosenberg, Viztum of Amberg\n\nSeal: S1: A1. S2: A2. S3: Konrad von Rosenberg, Viztum of Amberg"
+      "english": "Sale of the fishing rights at Theuern on the Vils as free property (freies Eigen). Issuers: A1: Ulrich Wolntzhofer, citizen of Amberg. A2: Philipp Reich, citizen of Amberg Recipient: Hans the Kastner Sr., citizen of Amberg\n\nSealers: S1: A1. S2: A2. S3: Konrad von Rosenberg, Viztum of Amberg\n\nSeal: S1: A1. S2: A2. S3: Konrad von Rosenberg, Viztum of Amberg",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Viztum zu Amberg"
+          ],
+          "type": "generic",
+          "content": "sealed the sale of fishing rights at Theuern on the Vils by Ulrich Wolntzhofer and Philipp Reich to Hans der Kastner der Ältere."
+        }
+      ]
     }
   ]
 }

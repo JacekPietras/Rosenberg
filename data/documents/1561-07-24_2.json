@@ -5,7 +5,49 @@
     {
       "source": "Generallandesarchiv Karlsruhe 69 von Helmstatt U 268",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-2111429",
-      "german": "Herzog Johann Friedrich d.M. von Sachsen schlichtet den Streit zwischen Kurfürst Friedrich von der Pfalz und Ritter Albrecht von Rosenberg um Boxberg, das von Kurpfalz 1523 gekauft und 1547 von Albrecht von Rosenberg eingenommen worden war:1) Albrecht von Rosenberg liefert Boxberg an Kurpfalz aus sowie \"Wintzingen\", das im Besitz von +Jörg und +Michael von Rosenberg gewesen war; Kurpfalz hält Albrecht gegen deren Agnaten schadlos.2) Kurpfalz hebt die Ungnade gegenüber Albrecht von Rosenberg auf.3) Albrecht von Rosenberg erhält von Kurpfalz 27 000 fl, wobei 7000 fl durch die Abtretung der Dörfer Epplingen (\"Öp-\"), Deinbach und der Hälfte von Sachsenflur, 1500 fl durch die der pfälzischen Rechte an Boffsheim und Sindelsheim verrechnet werden.4) Albrecht von Rosenberg trägt Örlingen, Deinbach und Sachsenflur sowie Eigengüter im Wert von 3000 fl Kurpfalz zu Lehen auf.5) Kurpfalz belehnt Albrecht von Rosenberg wiederum mit Schillingstadt.6) Kurpfalz überläßt Albrecht von Rosenberg den vierten Teil von Rosenberg, den sie mit Zustimmung des Bischofs von Würzburg als Eigentümer vom Stift Mosbach erworben hatte.7) Erlischt der Rosenbergische Mannesstamm, zahlt Kurpfalz den Eigentumserben 5000 fl als Ersatz der heimgefallenen Lehen.8) Irrungen in den gemeinschaftlichen Besitzungen sollen gütlich beglichen, Güter pfälzischer Diener von Albrecht von Rosenberg wieder herausgegeben und Ansprüche bei oder von Boxberger Untertanen befriedigt werden.Siegler: Aussteller, Kurfürst Friedrich, Albrecht von Rosenberg\n\nLaufzeit: 1561 (1561 Juli 24)"
+      "german": "Herzog Johann Friedrich d.M. von Sachsen schlichtet den Streit zwischen Kurfürst Friedrich von der Pfalz und Ritter Albrecht von Rosenberg um Boxberg, das von Kurpfalz 1523 gekauft und 1547 von Albrecht von Rosenberg eingenommen worden war:1) Albrecht von Rosenberg liefert Boxberg an Kurpfalz aus sowie \"Wintzingen\", das im Besitz von +Jörg und +Michael von Rosenberg gewesen war; Kurpfalz hält Albrecht gegen deren Agnaten schadlos.2) Kurpfalz hebt die Ungnade gegenüber Albrecht von Rosenberg auf.3) Albrecht von Rosenberg erhält von Kurpfalz 27 000 fl, wobei 7000 fl durch die Abtretung der Dörfer Epplingen (\"Öp-\"), Deinbach und der Hälfte von Sachsenflur, 1500 fl durch die der pfälzischen Rechte an Boffsheim und Sindelsheim verrechnet werden.4) Albrecht von Rosenberg trägt Örlingen, Deinbach und Sachsenflur sowie Eigengüter im Wert von 3000 fl Kurpfalz zu Lehen auf.5) Kurpfalz belehnt Albrecht von Rosenberg wiederum mit Schillingstadt.6) Kurpfalz überläßt Albrecht von Rosenberg den vierten Teil von Rosenberg, den sie mit Zustimmung des Bischofs von Würzburg als Eigentümer vom Stift Mosbach erworben hatte.7) Erlischt der Rosenbergische Mannesstamm, zahlt Kurpfalz den Eigentumserben 5000 fl als Ersatz der heimgefallenen Lehen.8) Irrungen in den gemeinschaftlichen Besitzungen sollen gütlich beglichen, Güter pfälzischer Diener von Albrecht von Rosenberg wieder herausgegeben und Ansprüche bei oder von Boxberger Untertanen befriedigt werden.Siegler: Aussteller, Kurfürst Friedrich, Albrecht von Rosenberg\n\nLaufzeit: 1561 (1561 Juli 24)",
+      "facts": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "agreed to surrender Boxberg and Winzingen to the Palatinate in a settlement mediated by Duke Johann Friedrich of Saxony."
+        },
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "was to receive Epplingen, Dainbach and half of Sachsenflur from the Palatinate under the settlement."
+        },
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "offered Örlingen, Dainbach, Sachsenflur and freehold property to the Palatinate as fiefs under the settlement."
+        },
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "was to receive Schillingstadt as a fief from the Palatinate under the settlement."
+        },
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "was to receive a quarter of Rosenberg from the Palatinate under the settlement."
+        }
+      ]
     }
   ]
 }

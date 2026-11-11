@@ -39,6 +39,16 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._75/2323/urk.%2075%20reichsabtei%20fulda%201757%20febr.12_15_18%2020._21.seite.jpg"
         }
+      ],
+      "facts": [
+        {
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Domdekan von Würzburg"
+          ],
+          "type": "title",
+          "date": "1662-03-23"
+        }
       ]
     }
   ],

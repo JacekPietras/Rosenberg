@@ -6,6 +6,13 @@
       "source": "ISG FFM, H.06.08, 1113",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10950064",
       "german": "Dr. Ludwig zum Paradies schreibt Frankfurt, dass ihm kein Brief der Stadt zur Besorgung an deren Botschaft am Hof zugekommen sei, sondern nur ein Schreiben des Frankfurter Schultheißen an Georg von Rosenberg, welches er besorgt habe, und meldet einen Sieg der Venetianer über die Türken.",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was addressed in a letter from the Schultheiß of Frankfurt, which Ludwig zum Paradies arranged to deliver."
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate.frankfurt.de:443/isg_ffm/h.06.08/1113/isg_ffm_h.06.08_nr_1113_0001.jpg"

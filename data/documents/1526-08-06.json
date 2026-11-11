@@ -5,7 +5,31 @@
     {
       "source": "HStAD, B 15, 630",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1490989",
-      "german": "Bischof Wilhelm von Straßburg, Landgraf im Elsaß, bekundet, dass er dem Balthasar v. Rosenberg, Amtmann zu Lauterburg, als einem (Lehns)träger seiner Ehefrau Attala v. Ingelheim, der Tochter des verstorbenen Hans v. Ingelheim, das Dorf Gerolsheim bei Lambsheim zu einem Pfandlehen verliehen habe, wie es Balthasar Schmutzel v. Dirmstein, danach Jakob v. Fleckenstein als Träger seiner Ehefrau Barbara v. Ingelheim und ihrer Schwestern Ursula, Elisabeth und Attala innehatte, jedoch vorbehaltlich der Wiederlösung durch das Stift Straßburg\n\nSiegler: Aussteller"
+      "german": "Bischof Wilhelm von Straßburg, Landgraf im Elsaß, bekundet, dass er dem Balthasar v. Rosenberg, Amtmann zu Lauterburg, als einem (Lehns)träger seiner Ehefrau Attala v. Ingelheim, der Tochter des verstorbenen Hans v. Ingelheim, das Dorf Gerolsheim bei Lambsheim zu einem Pfandlehen verliehen habe, wie es Balthasar Schmutzel v. Dirmstein, danach Jakob v. Fleckenstein als Träger seiner Ehefrau Barbara v. Ingelheim und ihrer Schwestern Ursula, Elisabeth und Attala innehatte, jedoch vorbehaltlich der Wiederlösung durch das Stift Straßburg\n\nSiegler: Aussteller",
+      "facts": [
+        {
+          "person": "Balthasar von Rosenberg",
+          "personTitle": [
+            "Amtmann zu Lauterburg"
+          ],
+          "type": "spouse",
+          "of": "Attala von Ingelheim"
+        },
+        {
+          "person": "Hans von Ingelheim",
+          "personDeceased": true,
+          "type": "parent",
+          "of": "Attala von Ingelheim"
+        },
+        {
+          "person": "Balthasar von Rosenberg",
+          "personTitle": [
+            "Amtmann zu Lauterburg"
+          ],
+          "type": "generic",
+          "content": "received the village of Gerolsheim near Lambsheim as a Pfandlehen from Bishop Wilhelm of Strasbourg as Lehenträger for his wife Attala von Ingelheim, subject to redemption."
+        }
+      ]
     }
   ]
 }
