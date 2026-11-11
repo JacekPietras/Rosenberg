@@ -39,7 +39,7 @@ export function createDocumentRenderer({
     .join(''));
   const documentMarkup = (value) => highlightTargetNames(inlineMarkup(value));
 
-  function renderEntry(entry, { title = true, subheading = true, date = true, source = true, path = '', index = null, documentDate = '' } = {}) {
+  function renderEntry(entry, { title = true, subheading = true, date = true, source = true, image = true, path = '', index = null, documentDate = '' } = {}) {
     const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
     const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
     const defaultDate = /^data\/(?:books|notes)\//.test(path) ? '' : Object.hasOwn(entry, 'date') ? entry.date : documentDate;
@@ -52,14 +52,14 @@ export function createDocumentRenderer({
       defaultDate,
     }) : '';
     const listRenderer = treeMarkup;
-    const content = `${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${subheading && entry.subheading ? `<h3 class="entry-subheading">${markdownLinks(entry.subheading)}</h3>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, (markup, language) => language === 'german' ? highlightRosenberg(markup) : markup, listRenderer) : ''}${entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}`;
+    const content = `${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${subheading && entry.subheading ? `<h3 class="entry-subheading">${markdownLinks(entry.subheading)}</h3>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, (markup, language) => language === 'german' ? highlightRosenberg(markup) : markup, listRenderer) : ''}${image && entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}`;
     if (!content) return '';
     return highlightTargetNames(`<article class="entry"${anchor}>${content}</article>`);
   }
 
   function bookSections(entries) {
     return entries.reduce((sections, entry) => {
-      if (entry.title || !sections.length) sections.push({ title: entry.title || '', entries: [] });
+      if (entry.title || !sections.length) sections.push({ title: entry.title || '', titleImage: entry.title ? entry.img : null, entries: [] });
       sections[sections.length - 1].entries.push(entry);
       return sections;
     }, []);
@@ -88,8 +88,9 @@ export function createDocumentRenderer({
     if (path.startsWith('data/books/') || path.startsWith('data/notes/')) {
       return bookSections(entries).map((section, sectionIndex) => {
         const sectionTitle = section.title || (sectionIndex === 0 ? title : 'Untitled section');
-        const sectionContent = section.entries.map((entry) => renderEntry(entry, { title: false, path, index: entries.indexOf(entry) })).join('');
-        return `<article class="document book-document"><div class="document-heading"><div><h2>${markdownLinks(sectionTitle)}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
+        const titleImage = section.titleImage ? imageMarkup(section.titleImage, [], { title: sectionTitle, path, showRegions: false, direct: true }) : '';
+        const sectionContent = section.entries.map((entry, entryIndex) => renderEntry(entry, { title: false, image: !(entryIndex === 0 && section.titleImage), path, index: entries.indexOf(entry) })).join('');
+        return `<article class="document book-document"><div class="document-heading"><div><h2>${titleImage}${escapeHtml(sectionTitle)}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
       }).join('');
     }
     const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');

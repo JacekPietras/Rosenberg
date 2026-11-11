@@ -49,6 +49,8 @@ export function createImageRenderer({ location = window.location, state } = {}) 
                 || (location.hostname.endsWith('github.io') ? `https://drive.google.com/uc?export=download&id=${encodeURIComponent(driveFileId)}` : fileName);
           } else source = fileName;
           if (context.thumbnail && !fallback) fallback = fileName;
+        } else if (context.direct) {
+          source = fileName;
         } else {
         fallback = fileName; const localName = localImageName(fileName, context.path?.startsWith('data/documents/'));
         if (!/\.(?:svg|png|jpe?g|gif|webp)$/i.test(localName)) return '';
@@ -83,13 +85,13 @@ export function createImageRenderer({ location = window.location, state } = {}) 
       const focusAttributes = focus && [focus.x, focus.y, focus.width, focus.height].every((value) => Number.isFinite(Number(value)))
         ? ` data-focus-x="${Number(focus.x)}" data-focus-y="${Number(focus.y)}" data-focus-width="${Number(focus.width)}" data-focus-height="${Number(focus.height)}"`
         : '';
-      const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(alt)}" loading="lazy" referrerpolicy="no-referrer"${finalFallbackAttribute}${focusAttributes}>`;
+      const image = `<img src="${escapeHtml(source)}" alt="${escapeHtml(alt)}" loading="${context.direct ? 'eager' : 'lazy'}" referrerpolicy="no-referrer"${finalFallbackAttribute}${focusAttributes}>`;
       const edit = context.path && context.index !== null && context.index !== undefined ? ` data-document-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${context.imageIndex ?? imageIndex}"` : '';
       const link = `<a class="image-link" href="${escapeHtml(fullSource)}" aria-label="Open image" data-image-src="${escapeHtml(fullSource)}" data-image-fallback="${escapeHtml(fallback)}"${descriptionAttribute}${edit}>${image}</a>`;
       const content = context.crop ? `<span class="seal-crop is-loading" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}" data-seal-width="${context.crop.width ?? 0}" data-seal-widening-rotation="${context.crop.wideningRotation || 0}" data-seal-rotation="${context.crop.rotation || 0}">${link}</span>` : annotations || regions ? `<span class="annotated-image">${link}${annotations}${regions}</span>` : link;
-      return `<figure class="entry-image">${content}</figure>`;
+      return context.direct ? `<span class="title-image">${content}</span>` : `<figure class="entry-image">${content}</figure>`;
     }).filter(Boolean).join('');
-    return images ? `<div class="entry-images">${images}</div>` : '';
+    return images ? context.direct ? images : `<div class="entry-images">${images}</div>` : '';
   };
 }
 

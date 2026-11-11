@@ -130,6 +130,10 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .document:first-child { margin-top: 1.5rem; }
 .document-heading { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; margin-bottom: 1.5rem; }
 .document-heading h2 { margin: 0 0 .25rem; color: var(--ink); font-size: 1.25rem; font-weight: 650; letter-spacing: -.02em; }
+.book-document .document-heading h2 { display: flex; align-items: center; gap: .5rem; }
+.book-document .document-heading h2 .title-image { display: inline-flex; flex: 0 0 auto; }
+.book-document .document-heading h2 .image-link { display: inline-block; }
+.book-document .document-heading h2 .title-image img { display: block; width: 1.8rem; height: 1.8rem; max-height: none; object-fit: contain; }
 .document-heading small { color: var(--muted); font-size: .78rem; white-space: nowrap; }
 .document-heading-aside { display: flex; flex-direction: column; align-items: flex-end; gap: .35rem; }
 .record-labels { display: flex; align-items: center; justify-content: flex-end; gap: .35rem; flex-wrap: wrap; }
@@ -216,7 +220,6 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .entry { padding: .9rem 0; }
 .entry:first-of-type { padding-top: 0; }
 .entry-title, .source { margin: 0 0 .55rem; color: var(--muted); font-size: .78rem; font-weight: 650; letter-spacing: .02em; }
-.entry-title .inline-title-image, .document-heading .inline-title-image { width: 1.8rem; height: 1.8rem; object-fit: contain; vertical-align: middle; margin-right: .35rem; }
 .entry-subheading { margin: .8rem 0 .45rem; color: var(--ink); font-size: 1rem; font-weight: 650; }
 .entry-date { margin: -.3rem 0 .55rem; color: var(--faint); font-size: .76rem; }
 .source a { color: inherit; }

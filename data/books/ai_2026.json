@@ -4,6 +4,7 @@
   "entries": [
     {
       "title": "Bauland and Odenwald Lords of Rosenberg",
+      "img": [{"src": "https://wappenwiki.org/images/4/41/Von_Rosenberg.svg", "name": "Coat of arms of the Baden/Odenwald Rosenbergs"}],
       "english": "Recorded: [1276-1632]"
     },
     {
@@ -49,6 +50,7 @@
     },
     {
       "title": "Rorschach / Rosenberg of Eastern Switzerland",
+      "img": [{"src": "https://wappenwiki.org/images/5/55/Rorschach.svg", "name": "Coat of arms of the Rorschach family"}],
       "english": "Recorded: [1176-1475]"
     },
     {
@@ -64,6 +66,7 @@
     },
     {
       "title": "The South Bohemian Rožmberks",
+      "img": [{"src": "https://wappenwiki.org/images/6/6b/Rosenberg.svg", "name": "Coat of arms of the South Bohemian Rosenbergs"}],
       "english": "Recorded: [1250-1611]"
     },
     {
@@ -109,6 +112,7 @@
     },
     {
       "title": "Austrian Orsini / Ursini-Rosenberg",
+      "img": [{"src": "https://wappenwiki.org/images/b/b8/Orsini-Rosenberg.svg", "name": "Coat of arms of Orsini-Rosenberg"}],
       "english": "Recorded: [1621-1796]"
     },
     {
@@ -139,6 +143,7 @@
     },
     {
       "title": "Baltic (Courland–Prussian) Rosenbergs",
+      "img": [{"src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Rosenberg_baron.png", "name": "Coat of arms of the Baltic Rosenbergs"}],
       "english": "Recorded: [1511-1954]"
     },
     {
@@ -157,43 +162,53 @@
     },
     {
       "subheading": "Rosenberg Castle (Rosenburg am Kamp), Lower Austria",
-      "english": "Medieval castle in the Kamptal near Horn, later known as Rosenburg am Kamp. It served as the seat of local ministerial lords of Rosenberg; Goczwin is recorded in 1175 and Konrad in 1229."
+      "english": "Medieval castle in the Kamptal near Horn, later known as Rosenburg am Kamp. It served as the seat of local ministerial lords of Rosenberg; Goczwin is recorded in 1175 and Konrad in 1229.",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosenburg%20-%20Schloss%20%282%29.JPG"
     },
     {
       "subheading": "Ruine Rosenberg, Herisau, Switzerland",
-      "english": "Ruined hill castle on a Nagelfluh ridge above Burghalden, Herisau. Built in the 13th century, it served as the seat of a branch of the Rorschach-Rosenberg family and was burned during the Appenzell War in 1403; it was not rebuilt."
+      "english": "Ruined hill castle on a Nagelfluh ridge above Burghalden, Herisau. Built in the 13th century, it served as the seat of a branch of the Rorschach-Rosenberg family and was burned during the Appenzell War in 1403; it was not rebuilt.",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruine_Rosenberg.jpg"
     },
     {
       "subheading": "Burgruine Rosenberg, Berneck, Switzerland",
-      "english": "Ruins of a hill castle above Berneck, also called Bernang-Rosenberg. First recorded in 1210, it passed from the Lords of Bernang through the monastery of St Gallen to the Lords of Rosenberg; the castle buildings were sold for demolition in 1811."
+      "english": "Ruins of a hill castle above Berneck, also called Bernang-Rosenberg. First recorded in 1210, it passed from the Lords of Bernang through the monastery of St Gallen to the Lords of Rosenberg; the castle buildings were sold for demolition in 1811.",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Burgruine_Rosenberg_Berneck_1.jpg"
     },
     {
       "subheading": "Rosenburg (Klein Rosenburg), Barby, Saxony-Anhalt",
-      "english": "Castle site on the Saale floodplain near its confluence with the Elbe. The royal estate is recorded in 965 and a castle in 1269; the Counts of Barby held it as a Magdeburg fief from 1306/08. It later became a Renaissance residence; surviving remains include the gate tower, parts of the enclosure, and vaulted cellars."
+      "english": "Castle site on the Saale floodplain near its confluence with the Elbe. The royal estate is recorded in 965 and a castle in 1269; the Counts of Barby held it as a Magdeburg fief from 1306/08. It later became a Renaissance residence; surviving remains include the gate tower, parts of the enclosure, and vaulted cellars.",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/KleinRosenburgBurg_07.JPG"
     },
     {
       "subheading": "Rosenburg, Sulzbach-Rosenberg, Bavaria",
-      "english": "Vanished hilltop castle on the Schlossberg above Rosenberg in the Upper Palatinate. Probably built around 1100, it later became the Hofmark Rosenberg (1410) and declined from the 16th century; the keep stump is incorporated into the town war memorial."
+      "english": "Vanished hilltop castle on the Schlossberg above Rosenberg in the Upper Palatinate. Probably built around 1100, it later became the Hofmark Rosenberg (1410) and declined from the 16th century; the keep stump is incorporated into the town war memorial.",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Suro_rosenburg.jpg"
     },
     {
       "subheading": "Ruine Rosenberg, Rügland, Bavaria",
-      "english": "Hilltop castle ruin above the village of Rosenberg, once held by the Lords of Vestenberg zu Rosenberg. The site retains earthworks, a moat, and a two-storey corner tower of sandstone."
+      "english": "Hilltop castle ruin above the village of Rosenberg, once held by the Lords of Vestenberg zu Rosenberg. The site retains earthworks, a moat, and a two-storey corner tower of sandstone.",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Burg_Rosenberg_R%C3%BCgland.jpg"
     },
     {
       "subheading": "Rosenburg, Riedenburg, Bavaria",
-      "english": "Castle on a ridge above Riedenburg in the Altmühltal, probably built in the mid-12th century and transferred to Duke Ludwig I of Bavaria in 1196. It retains a Romanesque core with later Renaissance buildings and now houses a hunting museum and falconry centre."
+      "english": "Castle on a ridge above Riedenburg in the Altmühltal, probably built in the mid-12th century and transferred to Duke Ludwig I of Bavaria in 1196. It retains a Romanesque core with later Renaissance buildings and now houses a hunting museum and falconry centre.",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20image%20of%20the%20Schloss%20Rosenburg.jpg"
     },
     {
       "subheading": "Rožmberk Castle (Rosenberg), South Bohemia",
-      "english": "Castle above the Vltava founded by Vok I of Rosenberg around the mid-13th century and documented in 1250. The Upper Castle was largely destroyed by fire in 1522; the Lower Castle was rebuilt in Renaissance style and later remodelled by the Buquoy family."
+      "english": "Castle above the Vltava founded by Vok I of Rosenberg around the mid-13th century and documented in 1250. The Upper Castle was largely destroyed by fire in 1522; the Lower Castle was rebuilt in Renaissance style and later remodelled by the Buquoy family.",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Hrad_rozmberk_2.JPG"
     },
     {
       "subheading": "Festung Rosenberg, Kronach, Bavaria",
-      "english": "Bamberg episcopal stronghold first recorded in 1249. Medieval and early modern fortifications gave it a pentagonal form by 1699; the town acquired the fortress in 1888, and it now houses the Franconian Gallery."
+      "english": "Bamberg episcopal stronghold first recorded in 1249. Medieval and early modern fortifications gave it a pentagonal form by 1699; the town acquired the fortress in 1888, and it now houses the Franconian Gallery.",
+      "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Festung%20Rosenberg.JPG"
     },
     {
       "subheading": "Schloss Rosenberg, Rosenberg (Buchen), Baden-Württemberg",
-      "english": "Vanished castle at Schlossplatz in Rosenberg, now part of Buchen. The Mönch von Rosenberg held it in 1251, followed from the late 13th century by the Lords of Rosenberg. After the line ended in 1632, the estate passed to other noble houses; the last above-ground remains disappeared in 1926."
+      "english": "Vanished castle at Schlossplatz in Rosenberg, now part of Buchen. The Mönch von Rosenberg held it in 1251, followed from the late 13th century by the Lords of Rosenberg. After the line ended in 1632, the estate passed to other noble houses; the last above-ground remains disappeared in 1926.",
+      "img": "img/rosenberg-schloss-02.jpg"
     }
   ]
 }

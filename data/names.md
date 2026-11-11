@@ -158,4 +158,4 @@ Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele, Wyklo
 
 Mönch, Münch, Munch, Mönich, Monich, Münchin, Mönchin, Muench // it derives from "Monk"
 Schenk
-Lengenfelder, Lengenfelderin, Lengenfeld, Lengenvelder
+Lengenfelder, Lengenfelderin, Lengenfeld, Lengenvelder, Lengfeld
