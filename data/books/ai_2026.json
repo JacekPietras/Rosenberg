@@ -1,6 +1,6 @@
 {
   "book": "AI [2026]",
-  "comment": "This book is built by AI to describe distinct families and castles that share the name Rosenberg or its variations. Keep it concise and brief. Include information about each family, its members, and places related to it. Describe castles named Rosenberg in a separate section. Do not give detailed accounts of events or histories of specific people.",
+  "comment": "This book is built by AI to describe distinct families and castles that share the name Rosenberg or its variations. Keep it concise and brief. Include information about each family, its members, and places related to it. Describe castles named Rosenberg in a separate section. Do not give detailed accounts of events or histories of specific people. Estates and Notable people keep simple. Dates in [YYYY] or [YYYY-YYYY] format",
   "entries": [
     {
       "title": "Bauland and Odenwald Lords of Rosenberg",
@@ -16,7 +16,7 @@
     },
     {
       "subheading": "Notable members",
-      "english": "Selected life or attestation dates:\nEberhard Rufus von Rosenberg [1285-1305]\nEberhard von Rosenberg, Vogt zu Dürn [1327-1350]\nKonrad von Rosenberg [1300-1327]\nArnold von Rosenberg, Amtmann of Lauda [1401]\nAlbrecht von Rosenberg [1519-1572]\nAlbrecht Christoph von Rosenberg [1632]"
+      "english": "Eberhard Rufus von Rosenberg [1285-1305]\nEberhard von Rosenberg, Vogt zu Dürn [1327-1350]\nKonrad von Rosenberg [1300-1327]\nArnold von Rosenberg, Amtmann of Lauda [1401]\nAlbrecht von Rosenberg [1519-1572]\nAlbrecht Christoph von Rosenberg [1632]"
     },
     {
       "title": "Schenk von Roßberg / Rosenberg",
@@ -32,7 +32,7 @@
     },
     {
       "subheading": "Notable members",
-      "english": "Selected life or attestation dates:\nWolfram Schenk von Rossberg [1337]\nHeinrich Schenk von Rossberg [1337]\nBerthold Schenk von Rossberg [1337]\nEberhard Schenk von Rosenberg [1390]\nJörg Schenk von Rosenberg [1492-1493]\nGeorg Schenk von Roßberg and his son Christoph [1537]"
+      "english": "Wolfram Schenk von Rossberg [1337]\nHeinrich Schenk von Rossberg [1337]\nBerthold Schenk von Rossberg [1337]\nEberhard Schenk von Rosenberg [1390]\nJörg Schenk von Rosenberg [1492-1493]\nGeorg Schenk von Roßberg and his son Christoph [1537]"
     },
     {
       "title": "Mönch / Münch von Rosenberg",
@@ -48,7 +48,7 @@
     },
     {
       "subheading": "Notable members",
-      "english": "Selected life or attestation dates:\nKonrad dictus Monachus de Roseberg [1253]\nKonrad Mönch von Rosenberg [1303-1349]\nLudwig Mönch von Rosenberg [1335-1345]\nLutz / Lutzo Mönch von Rosenberg [1349]\nGerlach Mönch von Rosenberg, commander at Osterode [1392-1397]\nPeter Mönch von Rosenberg, Vogt at Isenburg [1679]"
+      "english": "Konrad dictus Monachus de Roseberg [1253]\nKonrad Mönch von Rosenberg [1303-1349]\nLudwig Mönch von Rosenberg [1335-1345]\nLutz / Lutzo Mönch von Rosenberg [1349]\nGerlach Mönch von Rosenberg, commander at Osterode [1392-1397]\nPeter Mönch von Rosenberg, Vogt at Isenburg [1679]"
     },
     {
       "title": "Rorschach / Rosenberg of Eastern Switzerland",
@@ -64,7 +64,7 @@
     },
     {
       "subheading": "Notable members",
-      "english": "Selected life or attestation dates:\nEgilolf and Rudolf von Rorschach [1176]\nEgilolf the Elder von Rosenberg [1305]\nRudolf and Eglolf von Rorschach / Rosenberg [1350]\nEgli von Rosenberg [1407]\nEglolff von Rosemberg [1455]"
+      "english": "Egilolf and Rudolf von Rorschach [1176]\nEgilolf the Elder von Rosenberg [1305]\nRudolf and Eglolf von Rorschach / Rosenberg [1350]\nEgli von Rosenberg [1407]\nEglolff von Rosemberg [1455]"
     },
     {
       "title": "The South Bohemian Rožmberks",
@@ -80,7 +80,7 @@
     },
     {
       "subheading": "Notable members",
-      "english": "Selected life or attestation dates:\nWok I [1250-1262]\nPetr I [1341-1347]\nJindřich II [1346]\nPetr II [1326-1384]\nJošt I [1369]\nOldřich I [1355-1390]\nJan I [1355-1389]\nUlrich II [1403-1462]\nWilhelm / Vilém [1535-1592]\nPetr Vok [1539-1611]"
+      "english": "Wok I [1250-1262]\nPetr I [1341-1347]\nJindřich II [1346]\nPetr II [1326-1384]\nJošt I [1369]\nOldřich I [1355-1390]\nJan I [1355-1389]\nUlrich II [1403-1462]\nWilhelm / Vilém [1535-1592]\nPetr Vok [1539-1611]"
     },
     {
       "title": "Lower Austrian Lords of Rosenberg",
@@ -95,7 +95,7 @@
     },
     {
       "subheading": "Notable members",
-      "english": "Selected life or attestation dates:\nGozwin / Goczwin / Godezwin von Rosenberg [1175]\nKonrad von Rosenberg [1229]\nHartlieb von Rosenberg [1290]"
+      "english": "Gozwin / Goczwin / Godezwin von Rosenberg [1175]\nKonrad von Rosenberg [1229]\nHartlieb von Rosenberg [1290]"
     },
     {
       "title": "Rosenberg near Sulzbach: the Lengenfelders",
@@ -111,7 +111,7 @@
     },
     {
       "subheading": "Notable members",
-      "english": "Selected life or attestation dates:\nHeinrich der Lengfelder von Rosenberg [1314]\nChunrad der Lengenvelder and wife Jeute [1343]\nKonrad Lengenfelder von Rosenberg [1357-1358]\nJeutt Lengenfelderin von Rosenberg [1359]\nKonrad, Örtel, Heinrich, and Friedrich, sons of Jeutt [1359]\nOtt, church lord at Gebenbach [1359]"
+      "english": "Heinrich der Lengfelder von Rosenberg [1314]\nChunrad der Lengenvelder and wife Jeute [1343]\nKonrad Lengenfelder von Rosenberg [1357-1358]\nJeutt Lengenfelderin von Rosenberg [1359]\nKonrad, Örtel, Heinrich, and Friedrich, sons of Jeutt [1359]\nOtt, church lord at Gebenbach [1359]"
     },
     {
       "title": "Austrian Orsini / Ursini-Rosenberg",
@@ -127,7 +127,7 @@
     },
     {
       "subheading": "Notable members",
-      "english": "Selected life or attestation dates:\nJohann Andreas [1600-1667]\nGeorg Nikolaus [1623-1695]\nWolfgang Andreas [1626-1695]\nFranz Xaver Wolf [1723-1796]"
+      "english": "Johann Andreas [1600-1667]\nGeorg Nikolaus [1623-1695]\nWolfgang Andreas [1626-1695]\nFranz Xaver Wolf [1723-1796]"
     },
     {
       "title": "Brandenburg Rosenberg bearers",
@@ -142,7 +142,7 @@
     },
     {
       "subheading": "Notable members",
-      "english": "Selected life or attestation dates:\nJohann von Rosenberg [1338]\nWerner von Rosenberg [1338]\nWernher von Rosenberg [1338]\nWerner and Jan / Johann von Rosenberg [1400]"
+      "english": "Johann von Rosenberg [1338]\nWerner von Rosenberg [1338]\nWernher von Rosenberg [1338]\nWerner and Jan / Johann von Rosenberg [1400]"
     },
     {
       "title": "Baltic (Courland–Prussian) Rosenbergs",
@@ -158,7 +158,32 @@
     },
     {
       "subheading": "Notable members",
-      "english": "Selected life or attestation dates:\nOtto Rosenberg, Garrosen grant [1558]\nOtto Rosenberg, Ritterbank statement [1620]\nOtto Rosenberg the Younger, Ritterbank entry [1631]\nAndreas (Diederich Arend) von Rosenberg [1739-1813]\nOtto Hieronymus Baron von Rosenberg [1796-1845]\nEduard Viktor Baron von Rosenberg [1878-1954]"
+      "english": "Otto Rosenberg, Garrosen grant [1558]\nOtto Rosenberg, Ritterbank statement [1620]\nOtto Rosenberg the Younger, Ritterbank entry [1631]\nAndreas (Diederich Arend) von Rosenberg [1739-1813]\nOtto Hieronymus Baron von Rosenberg [1796-1845]\nEduard Viktor Baron von Rosenberg [1878-1954]"
+    },
+    {
+      "title": "Barby (Rosenburg branch)",
+      "img": [{"src": "https://wappenwiki.org/images/3/33/Barby.svg", "name": "Coat of arms of the Counts of Barby"}],
+      "english": "This entry covers the Barby branch associated with Rosenburg (Klein Rosenburg), a Magdeburg fief acquired by the Counts of Barby in 1306/08. Its members used the name forms Rosenburg and de Rosenburch; this is the Barby connection to the Rosenberg-named castle."
+    },
+    {
+      "subheading": "Notable members",
+      "english": "Hermann von Barby, styled Hermannus de Barbey dictus de Rosenburch [1315; died 1319]\nBusso von Rosenburg, son of Hermann [died 1330; the cadet branch ended with him]\nWolter (Walter) von Rosenburg and his brothers [1325; Count Albrecht of Barby called Wolter his cousin]\nBurchard von Rosenburg, bailiff of Kulmerland [1338-1340] and Leske [1345]; Mülverstedt tentatively assigned him to this branch, although his exact relationship is unproven and the branch is otherwise said to have ended in 1330."
+    },
+    {
+      "title": "Querfurt (Rosenburg)",
+      "img": [{"src": "https://wappenwiki.org/images/e/e4/Magdeburg-Burggraf.svg", "name": "Arms of the Magdeburg burgraves from the Querfurt house"}],
+      "english": "A later genealogical list calls Burchard von Rosenburg [1297]."
+    },
+    {
+      "english": "After selling the Magdeburg burgraviate in 1269/1270, Burchard von Querfurt retained Rosenburg Castle; a later genealogical list calls him von Rosenburg (1297). The records cited here use the form Rosenburg."
+    },
+    {
+      "subheading": "Rosenburg seat",
+      "english": "Rosenburg Castle, retained by Burchard when the Magdeburg burgraviate was sold [1269/1270]"
+    },
+    {
+      "subheading": "Notable members",
+      "english": "Burchard von Querfurt, called von Rosenburg, Burggraf of Magdeburg [attested 1246-1306; retained Rosenburg Castle in 1269/1270]"
     },
     {
       "title": "Castles named Rosenberg"

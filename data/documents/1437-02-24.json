@@ -1,11 +1,15 @@
 {
   "date": "1437-02-24",
-  "label": ["to review", "Rorschach"],
+  "label": [
+    "to review",
+    "Rorschach"
+  ],
   "entries": [
     {
       "source": "St. Gallen, Stadtarchiv der Ortsbürgergemeinde (www.stadtarchiv.ch), Tr. T.27.14.",
       "url": "https://www.monasterium.net/mom/CH-StaASG/Urkunden/Tr_T.27.14./charter",
-      "german": "Rudolf von Rosenberg bittet Bürgermeister und Rat von St.Gallen, Anna Gerster zu begnadigen."
+      "german": "Rudolf von Rosenberg bittet Bürgermeister und Rat von St.Gallen, Anna Gerster zu begnadigen.",
+      "english": "Rudolf von Rosenberg petitions the Mayor and Council of St. Gallen to show mercy to Anna Gerster."
     }
   ]
 }

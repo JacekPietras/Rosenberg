@@ -1,11 +1,15 @@
 {
   "date": "1437-01-13",
-  "label": ["to review", "Rorschach"],
+  "label": [
+    "to review",
+    "Rorschach"
+  ],
   "entries": [
     {
       "source": "Stiftsarchiv St. Gallen, SS4 A3",
       "url": "https://www.monasterium.net/mom/CH-StiASG/Urkunden/SS4_A3/charter",
-      "german": "Die Brüder Ulrich und Konrad Paier (Payrer), denen Rudolf von Rosenberg, ihr Vetter, seine Vogtei Almensberg (uff dem Albersperg) geschenkt hat, verschreiben ihm dafür, so lange er lebt, \"was da in der obgenamten vogtye gefelt, es sye von freflinen, zwing\n\nSiegel: 1 S."
+      "german": "Die Brüder Ulrich und Konrad Paier (Payrer), denen Rudolf von Rosenberg, ihr Vetter, seine Vogtei Almensberg (uff dem Albersperg) geschenkt hat, verschreiben ihm dafür, so lange er lebt, \"was da in der obgenamten vogtye gefelt, es sye von freflinen, zwing\n\nSiegel: 1 S.",
+      "english": "The brothers Ulrich and Konrad Paier (Payrer), to whom Rudolf von Rosenberg, their kinsman, has granted his bailiwick of Almensberg (upon Albersperg), owe him in return, as long as he lives, \"whatever is lacking in the aforementioned bailiwick, whether from free men, compulsory service\n\nSeal: 1 seal."
     }
   ]
 }

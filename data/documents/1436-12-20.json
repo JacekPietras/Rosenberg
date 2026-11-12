@@ -1,11 +1,15 @@
 {
   "date": "1436-12-20",
-  "label": ["to review", "Rorschach"],
+  "label": [
+    "to review",
+    "Rorschach"
+  ],
   "entries": [
     {
       "source": "Stiftsarchiv St. Gallen, SS4 A2",
       "url": "https://www.monasterium.net/mom/CH-StiASG/Urkunden/SS4_A2/charter",
       "german": "Rudolf von Rosenberg, sesshaft zu Bischofzell (Byschoffzell), gibt den Brüdern Ulrich und Konrad Paier (Payrer), seinen lieben Vettern, zur Vergeltung treuer Freundschaft und erwiesener Dienste \"zu rechter urtät\" seine Vogtei zu Almensberg (Albersperg) mi\n\nSiegel: 1 S.*",
+      "english": "Rudolf von Rosenberg, resident at Bischofzell (Byschoffzell), for the requital of faithful friendship and proven services \"in due measure\", grants to the brothers Ulrich and Konrad Paier (Payrer), his dear kinsmen, his bailiwick at Almensberg (Albersperg) mi\n\nSeal: 1 seal.",
       "img": [
         {
           "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_14361220_SS4-A2_r.jpg"

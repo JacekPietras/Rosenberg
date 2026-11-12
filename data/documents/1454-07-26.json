@@ -1,11 +1,15 @@
 {
   "date": "1454-07-26",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg B 422 U 485",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2060380",
       "german": "Lehenrevers des Jörg von Nippenburg gegen Abt Johann II. zu Ellwangen um 1/6 am Laienzehnten zu Östringen, das er von Konrad von Rosenberg erkauft hat",
+      "english": "Feudal surrender of Jörg von Nippenburg to Abbot Johann II of Ellwangen for one-sixth share of the lay tithe at Östringen, which he purchased from Konrad von Rosenberg",
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1583&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001583%2Ftitlaufn_0002060380%2F02_0002060380_0001_2-2060380-1.jpg"

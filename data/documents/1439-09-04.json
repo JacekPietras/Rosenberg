@@ -1,11 +1,15 @@
 {
   "date": "1439-09-04",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "HStAM, Urk. 62, 525",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5055734",
-      "german": "Arnold, Ulrich, Eberhard und Georg von Rosenberg zeigen Reinhard Grafen von Hanau an, daß sie mit Peter von Stedenberg und Hans Schelme Fehde haben und klagen ihm deswegen ab."
+      "german": "Arnold, Ulrich, Eberhard und Georg von Rosenberg zeigen Reinhard Grafen von Hanau an, daß sie mit Peter von Stedenberg und Hans Schelme Fehde haben und klagen ihm deswegen ab.",
+      "english": "Arnold, Ulrich, Eberhard, and Georg von Rosenberg notify Reinhard Count of Hanau that they are in a feud with Peter von Stedenberg and Hans Schelme and declare it to him for this reason."
     }
   ]
 }
