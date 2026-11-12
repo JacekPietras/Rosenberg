@@ -20,7 +20,7 @@ LABELS = {
     "rorschach": "Rorschach",
     "schenk": "Schenk",
     "orsini": "Orsini",
-    "brandenburg": "Brandenburg",
+    "bredow": "Bredow",
 }
 
 

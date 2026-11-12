@@ -6,6 +6,14 @@
       "source": "StAN, Reichsstadt Nürnberg, Losungamt, 7-farbiges Alphabet, Urkunden 3440",
       "url": "https://www.gda.bayern.de/gvl/document/144d7163-25f5-4bf1-8e4d-c97593a18345",
       "german": "Jörg von Hausen, der wegen der seinem Vater Seyfrid im Markgrafenkrieg zu Jorgen- und Petersgemünd zugefügten Schäden mit der Stadt Nürnberg im Prozess steht, beauftragt mit seiner Stellvertretung den Michel Strasperger vor dem kaiserlichen Kammergericht. - Siegler: der Aussteller, Sigmund von Sebriacu Landeshauptmann in Krain, Arnold von Rosenberg.",
+      "english": "Jörg von Hausen, who is in litigation with the City of Nürnberg over damages inflicted on his father Seyfrid during the Margrave War at Jorgen- and Petersgemünd, appoints Michel Strasperger as his representative before the Imperial Chamber Court. - Sealer: the issuer, Sigmund von Sebriacu, Landeshauptmann in Carniola, Arnold von Rosenberg.",
+      "facts": [
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "generic",
+          "content": "sealed a document appointing Michel Strasperger as representative of Jörg von Hausen before the Imperial Chamber Court."
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/144d7163-25f5-4bf1-8e4d-c97593a18345/1/full/max/0/default.jpg"

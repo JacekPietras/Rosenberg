@@ -5,7 +5,15 @@
     {
       "source": "StAWü, Miscellanea 773",
       "url": "https://www.gda.bayern.de/gvl/document/21fc5252-4744-43ff-b2da-9d7945e76e8b",
-      "german": "Ein fragmentärer Akt (Korrespondenz etc.) aus dem markgräflich ansbach'schen Archiv, betrifft Georg von Rosenberg, Fulda mit Mainz und Würzburg"
+      "german": "Ein fragmentärer Akt (Korrespondenz etc.) aus dem markgräflich ansbach'schen Archiv, betrifft Georg von Rosenberg, Fulda mit Mainz und Würzburg",
+      "english": "A fragmentary file (correspondence etc.) from the Margraviate of Ansbach archive, concerning Georg von Rosenberg, Fulda with Mainz and Würzburg",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was involved in matters concerning Fulda with Mainz and Würzburg."
+        }
+      ]
     }
   ]
 }

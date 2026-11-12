@@ -5,7 +5,20 @@
     {
       "source": "ISG FFM, H.06.02, 5715",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10595111",
-      "german": "Beraubung der vom Kaiser heimkehrenden Frankfurter Hans von Ergersheim, Hartmann Becker und Walter Schwarzenberg durch Georg und Michael von Rosenberg und Hilfegesuch Frankfurts deshalb bei Markgraf Albrecht von Brandenburg"
+      "german": "Beraubung der vom Kaiser heimkehrenden Frankfurter Hans von Ergersheim, Hartmann Becker und Walter Schwarzenberg durch Georg und Michael von Rosenberg und Hilfegesuch Frankfurts deshalb bei Markgraf Albrecht von Brandenburg",
+      "english": "Robbery of the Frankfurt citizens Hans von Ergersheim, Hartmann Becker and Walter Schwarzenberg, returning from the Emperor, by Georg and Michael von Rosenberg, and Frankfurt's subsequent request for aid to Margrave Albrecht of Brandenburg on this account",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "robbed Frankfurt citizens Hans von Ergersheim, Hartmann Becker and Walter Schwarzenberg who were returning from the Emperor."
+        },
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "robbed Frankfurt citizens Hans von Ergersheim, Hartmann Becker and Walter Schwarzenberg who were returning from the Emperor."
+        }
+      ]
     }
   ]
 }

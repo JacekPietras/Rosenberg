@@ -5,7 +5,15 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Urfehdeurkunden 185",
       "url": "https://www.gda.bayern.de/gvl/document/7b50807e-39b7-479b-9a86-ead488e6ae6d",
-      "german": "Urfehde Michel und Fritz Folcks, Gebrüder, wegen unbenannter Verbrechen, bei ihrer Entlassung aus dem Gefängnis zu Onolzbach ausgestellt. Siegler: Arnold von Rosenberg und Ruprecht Gotzmann [Gotsmann]."
+      "german": "Urfehde Michel und Fritz Folcks, Gebrüder, wegen unbenannter Verbrechen, bei ihrer Entlassung aus dem Gefängnis zu Onolzbach ausgestellt. Siegler: Arnold von Rosenberg und Ruprecht Gotzmann [Gotsmann].",
+      "english": "Urfehde (oath of peace) of Michel and Fritz Folck, brothers, for unnamed crimes, issued upon their release from prison at Ansbach. Sealer: Arnold von Rosenberg and Ruprecht Gotzmann [Gotsmann].",
+      "facts": [
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "generic",
+          "content": "sealed the Urfehde of Michel and Fritz Folck, brothers, upon their release from prison at Ansbach."
+        }
+      ]
     }
   ]
 }
