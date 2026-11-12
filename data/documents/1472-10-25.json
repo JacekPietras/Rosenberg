@@ -1,11 +1,15 @@
 {
   "date": "1472-10-25",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "StAWü, Würzburger Urkunden 4/54 b",
       "url": "https://www.gda.bayern.de/gvl/document/c056eb42-5f1b-4c1c-9d38-6fe7d106a986",
-      "german": "Johannes von Heideck und seine Ehefrau Veronika bestätigen, dass der Bischof Rudolf von Würzburg die 50 Gulden Ewiggeld aus der Stadt Röttingen, die Bischof Johann an Ulrich von Rosenberg 1456 verkauft hatte, für 5000 Gulden von ihnen wieder eingelöst hat"
+      "german": "Johannes von Heideck und seine Ehefrau Veronika bestätigen, dass der Bischof Rudolf von Würzburg die 50 Gulden Ewiggeld aus der Stadt Röttingen, die Bischof Johann an Ulrich von Rosenberg 1456 verkauft hatte, für 5000 Gulden von ihnen wieder eingelöst hat",
+      "english": "Johannes von Heideck and his wife Veronika confirm that Bishop Rudolf of Würzburg has redeemed from them for 5,000 florids the perpetual annuity of 50 florins from the city of Röttingen, which Bishop Johann had sold to Ulrich von Rosenberg in 1456"
     }
   ]
 }
