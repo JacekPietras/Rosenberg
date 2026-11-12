@@ -93,15 +93,14 @@ export function createDataLoader({
     ]);
     distinctFamilies.clear();
     distinctFamiliesText.split(/\r?\n/).map((line) => line.replace(/#.*/, '').trim().toLocaleLowerCase()).filter(Boolean).forEach((label) => distinctFamilies.add(label));
-    const legacyDefaults = new Set(['hessen', 'schenk', 'mönch', 'czechia', 'rorschach']);
-    const previousDefaults = new Set(['schenk', 'mönch', 'czechia', 'rorschach']);
     if (Array.isArray(state.hiddenRecordLabels)) {
-      const saved = new Set(state.hiddenRecordLabels);
-      const matchesDefaults = (defaults) => saved.size === defaults.size && [...saved].every((label) => defaults.has(label));
-      if (matchesDefaults(legacyDefaults) || matchesDefaults(previousDefaults) || saved.size === 0) {
-        state.hiddenRecordLabels = [...distinctFamilies];
-      }
+      const excludedDistinct = state.hiddenRecordLabels.some((label) => distinctFamilies.has(label));
+      state.hiddenRecordLabels = state.hiddenRecordLabels.filter((label) => !distinctFamilies.has(label));
+      if (excludedDistinct && !state.hiddenRecordLabels.includes('distinct')) state.hiddenRecordLabels.push('distinct');
     }
+    const selectedDistinct = state.recordLabels.some((label) => distinctFamilies.has(label));
+    state.recordLabels = state.recordLabels.filter((label) => !distinctFamilies.has(label));
+    if (selectedDistinct && !state.recordLabels.includes('distinct')) state.recordLabels.push('distinct');
     state.nobiliaryParticles = particlesText.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
     state.places = parsePlaces(placesText);
     state.calibrationCities = parsePlaces(calibrationCitiesText);
@@ -147,7 +146,7 @@ export function createDataLoader({
     state.recordLabels = state.recordLabels.flatMap((label) => label === 'missing'
       ? ['missing source', 'missing url']
       : label === 'missing source' && !hasMissingSource || label === 'missing url' && !hasMissingUrl ? [] : [label]);
-    if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = [...distinctFamilies];
+    if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = ['distinct'];
     state.sealNames = [...new Set(state.sealNames.map((label) => label.includes('?') ? 'unknown' : label.toLocaleLowerCase()).filter(Boolean))];
     state.imageRegions = [...new Set((state.imageRegions || []).map((name) => {
       const value = String(name).trim().toLocaleLowerCase();

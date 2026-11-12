@@ -4,13 +4,13 @@ import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=124';
 import { renderActiveScreen } from './screens/router-view.js?v=14';
-import { createDocumentRenderer } from './screens/documents.js?v=14';
+import { createDocumentRenderer } from './screens/documents.js?v=15';
 import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=4';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=3';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=88';
 import { createSealScreen } from './screens/seals.js?v=3';
 import { createImageScreen } from './screens/images.js?v=38';
-import { createDataLoader } from './data/loader.js?v=29';
+import { createDataLoader } from './data/loader.js?v=31';
 import { createEntityScreens } from './screens/entities.js?v=116';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
@@ -97,7 +97,7 @@ function clearScreenCaches() {
   state.recordSource = state.navigationRecordSource;
   state.recordLabels = [];
   state.toTranscribe = false;
-  state.hiddenRecordLabels = [...DISTINCT_FAMILIES];
+  state.hiddenRecordLabels = ['distinct'];
   state.sealNames = [];
   state.sealType = null;
   state.lastRenderedDocumentsYear = null;
@@ -1166,16 +1166,19 @@ function recordNeedsTranscription(doc) {
 function visibleRecordPaths(paths) {
   const selected = new Set(state.recordLabels);
   const hidden = new Set(state.hiddenRecordLabels || []);
-  const transcriptionExcludedLabels = new Set(['hessen', 'schenk', 'mönch', 'czechia', 'rorschach', 'to review']);
+  const transcriptionExcludedLabels = new Set(['hessen', 'to review', ...DISTINCT_FAMILIES]);
   return paths.filter((path) => {
     if (state.recordSource && !citationIndex.recordHasSource(path, state.recordSource)) return false;
     if (state.toTranscribe && (!recordNeedsTranscription(state.documents.get(path)) || recordLabelForPath(path).some((label) => transcriptionExcludedLabels.has(label)))) return false;
     if (path === state.navigationRecord) return true;
     const labels = recordLabelForPath(path);
+    const hasDistinctFamily = labels.some((label) => DISTINCT_FAMILIES.has(label));
     const missingSource = selected.has(MISSING_SOURCE_LABEL) && recordHasMissingSource(path);
     const missingUrl = selected.has(MISSING_URL_LABEL) && recordHasMissingUrl(path);
-    if (labels.some((label) => hidden.has(label))) return false;
-    return !selected.size || labels.some((label) => selected.has(label)) || missingSource || missingUrl;
+    if (labels.some((label) => !DISTINCT_FAMILIES.has(label) && hidden.has(label))) return false;
+    if (hasDistinctFamily && hidden.has('distinct')) return false;
+    return !selected.size || labels.some((label) => !DISTINCT_FAMILIES.has(label) && selected.has(label))
+      || (hasDistinctFamily && selected.has('distinct')) || missingSource || missingUrl;
   });
 }
 
@@ -1189,23 +1192,25 @@ function renderYearSidebar(paths, labelPaths = paths) {
   const labels = new Map();
   labelPaths.forEach((path) => {
     recordLabelsForPath(path).forEach((label) => {
-      if (!labels.has(label.toLocaleLowerCase())) labels.set(label.toLocaleLowerCase(), { label, path });
+      if (!DISTINCT_FAMILIES.has(label.toLocaleLowerCase()) && !labels.has(label.toLocaleLowerCase())) labels.set(label.toLocaleLowerCase(), { label, path });
     });
   });
+  const distinctPath = labelPaths.find((path) => recordLabelForPath(path).some((label) => DISTINCT_FAMILIES.has(label)));
+  if (distinctPath) labels.set('distinct', { label: 'Distinct', path: distinctPath });
   const missingSourceCount = labelPaths.filter(recordHasMissingSource).length;
   const missingUrlCount = labelPaths.filter(recordHasMissingUrl).length;
   const missingSourcePath = labelPaths.find(recordHasMissingSource);
   if (missingSourcePath) labels.set(MISSING_SOURCE_LABEL, { label: MISSING_SOURCE_LABEL, path: missingSourcePath, count: missingSourceCount });
   const missingUrlPath = labelPaths.find(recordHasMissingUrl);
   if (missingUrlPath) labels.set(MISSING_URL_LABEL, { label: MISSING_URL_LABEL, path: missingUrlPath, count: missingUrlCount });
-  const transcriptionExcludedLabels = new Set(['hessen', 'schenk', 'mönch', 'czechia', 'to review']);
+  const transcriptionExcludedLabels = new Set(['hessen', 'to review', ...DISTINCT_FAMILIES]);
   const transcriptionCount = labelPaths.filter((path) => recordNeedsTranscription(state.documents.get(path))
     && !recordLabelForPath(path).some((label) => transcriptionExcludedLabels.has(label))).length;
   const transcriptionLink = `<a href="#" class="${state.toTranscribe ? 'selected' : ''}" data-sidebar-type="transcribe">to transcribe (${transcriptionCount})</a>`;
   const labelLinks = [...labels.values()]
     .sort((left, right) => {
-      const leftIsFamily = DISTINCT_FAMILIES.has(left.label.toLocaleLowerCase());
-      const rightIsFamily = DISTINCT_FAMILIES.has(right.label.toLocaleLowerCase());
+      const leftIsFamily = left.label.toLocaleLowerCase() === 'distinct';
+      const rightIsFamily = right.label.toLocaleLowerCase() === 'distinct';
       if (leftIsFamily !== rightIsFamily) return leftIsFamily ? 1 : -1;
       return left.label.localeCompare(right.label, undefined, { sensitivity: 'base' });
     })
@@ -1346,6 +1351,7 @@ const documentRenderer = createDocumentRenderer({
   documentTitle,
   documentYear,
   getPeople: () => state.people,
+  distinctFamilies: DISTINCT_FAMILIES,
 });
 
 const sealScreen = createSealScreen({
@@ -1465,7 +1471,7 @@ async function loadAllLegacy() {
   state.recordLabels = state.recordLabels.flatMap((label) => label === 'missing'
     ? [MISSING_SOURCE_LABEL, MISSING_URL_LABEL]
     : label === MISSING_SOURCE_LABEL && !hasMissingSource || label === MISSING_URL_LABEL && !hasMissingUrl ? [] : [label]);
-  if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = [...DISTINCT_FAMILIES];
+  if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = ['distinct'];
   state.sealNames = [...new Set(state.sealNames.map(normalizeSealFilter).filter(Boolean))];
   if (state.active === 'books') state.active = manifest.books[0]?.path || 'documents';
   if (state.active === 'images' || state.active === 'armorials' || state.active === 'images/armorials' || state.active === 'images/effigies') state.active = 'images/all';

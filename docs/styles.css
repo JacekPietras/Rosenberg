@@ -122,7 +122,6 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .label-sidebar a:hover, .label-sidebar a:focus { color: var(--accent); background: var(--surface-raised); }
 .label-sidebar a.selected { color: var(--accent); background: var(--accent-soft); }
 .label-sidebar a.selected[data-label="important"] { color: #ff9a9a; background: #2b1b1e; }
-.label-sidebar a.selected[data-label="hessen"], .label-sidebar a.selected[data-label="schenk"], .label-sidebar a.selected[data-label="mönch"] { color: #68727d; background: var(--surface-raised); }
 
 .document { scroll-margin-top: 5.5rem; margin: 1.5rem 0; padding: clamp(1.1rem, 2.5vw, 1.75rem); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
 .document.important { background: #2b1b1e; border-color: #63343b; }

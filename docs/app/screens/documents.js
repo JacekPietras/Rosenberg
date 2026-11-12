@@ -18,6 +18,7 @@ export function createDocumentRenderer({
   documentTitle,
   documentYear,
   getPeople,
+  distinctFamilies,
 }) {
   function renderEntry(entry, { title = true, subheading = true, date = true, source = true, image = true, path = '', index = null, documentDate = '' } = {}) {
     const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
@@ -75,7 +76,7 @@ export function createDocumentRenderer({
     }
     const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
     const important = labelKeys.includes('important') ? ' important' : '';
-    const dimmed = labelKeys.some((label) => ['hessen', 'schenk', 'mönch', 'czechia'].includes(label)) ? ' dimmed' : '';
+    const dimmed = labelKeys.some((label) => distinctFamilies.has(label)) ? ' dimmed' : '';
     return `<article class="document${important}${dimmed}"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
   }
 
