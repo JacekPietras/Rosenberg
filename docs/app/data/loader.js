@@ -12,7 +12,7 @@ export function createDataLoader({
   bookSortYear,
   recordHasMissingSource,
   recordHasMissingUrl,
-  greyRecordLabels,
+  distinctFamilies,
   savePreferences,
   renderTabs,
   renderActive,
@@ -82,14 +82,26 @@ export function createDataLoader({
       renderTabs();
       await renderActive();
     }
-    const [placesText, calibrationCitiesText, peopleText, particlesText, namesText, documents] = await Promise.all([
+    const [placesText, calibrationCitiesText, peopleText, particlesText, namesText, distinctFamiliesText, documents] = await Promise.all([
       repository.getText('data/places.json'),
       repository.getText('docs/assets/calibration-cities.json'),
       repository.getText('data/people.json'),
       repository.getText('data/nobiliary_particles.md'),
       repository.getText('data/names.md'),
+      repository.getText('data/distinctFamilies.md'),
       new Map(await Promise.all(paths.map(async (path) => [path, earlyBooks?.has(path) ? earlyBooks.get(path) : await repository.getJson(path)]))),
     ]);
+    distinctFamilies.clear();
+    distinctFamiliesText.split(/\r?\n/).map((line) => line.replace(/#.*/, '').trim().toLocaleLowerCase()).filter(Boolean).forEach((label) => distinctFamilies.add(label));
+    const legacyDefaults = new Set(['hessen', 'schenk', 'mönch', 'czechia', 'rorschach']);
+    const previousDefaults = new Set(['schenk', 'mönch', 'czechia', 'rorschach']);
+    if (Array.isArray(state.hiddenRecordLabels)) {
+      const saved = new Set(state.hiddenRecordLabels);
+      const matchesDefaults = (defaults) => saved.size === defaults.size && [...saved].every((label) => defaults.has(label));
+      if (matchesDefaults(legacyDefaults) || matchesDefaults(previousDefaults) || saved.size === 0) {
+        state.hiddenRecordLabels = [...distinctFamilies];
+      }
+    }
     state.nobiliaryParticles = particlesText.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
     state.places = parsePlaces(placesText);
     state.calibrationCities = parsePlaces(calibrationCitiesText);
@@ -135,7 +147,7 @@ export function createDataLoader({
     state.recordLabels = state.recordLabels.flatMap((label) => label === 'missing'
       ? ['missing source', 'missing url']
       : label === 'missing source' && !hasMissingSource || label === 'missing url' && !hasMissingUrl ? [] : [label]);
-    if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = [...greyRecordLabels];
+    if (!Array.isArray(state.hiddenRecordLabels)) state.hiddenRecordLabels = [...distinctFamilies];
     state.sealNames = [...new Set(state.sealNames.map((label) => label.includes('?') ? 'unknown' : label.toLocaleLowerCase()).filter(Boolean))];
     state.imageRegions = [...new Set((state.imageRegions || []).map((name) => {
       const value = String(name).trim().toLocaleLowerCase();

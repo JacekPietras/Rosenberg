@@ -17,6 +17,7 @@ data/
 ├── tree.json     # Generated family graph and calculation results
 ├── matching.json # Global probability model parameters
 ├── names.md      # Historical given-name variants under # Men / # Women
+├── distinctFamilies.md # Family labels excluded by default in document filters
 ├── titles.md     # Equivalent title words and epithets for matching
 ├── kinship.md    # Tree positions meant by source kinship terms
 └── places.json   # Place-name variants and coordinates
