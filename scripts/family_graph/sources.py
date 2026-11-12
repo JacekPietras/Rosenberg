@@ -11,6 +11,24 @@ from .names import Names
 SOURCE_DIRS = ('books', 'documents', 'notes', 'images')
 
 
+def excluded_document_labels(root):
+    path = root / 'data/distinctFamilies.md'
+    if not path.exists():
+        return set()
+    return {line.strip().casefold() for line in path.read_text(encoding='utf-8').splitlines()
+            if line.strip() and not line.lstrip().startswith('#')}
+
+
+def excluded_document(document, path, labels):
+    if not path.startswith('data/documents/') or not isinstance(document, dict):
+        return False
+    if document.get('deleted') is True:
+        return True
+    value = document.get('label', [])
+    values = [value] if isinstance(value, str) else value if isinstance(value, list) else []
+    return any(isinstance(label, str) and label.casefold() in labels for label in values)
+
+
 def identities(people):
     return [{key: person[key] for key in ('id', 'name') if key in person} for person in people]
 
@@ -20,7 +38,7 @@ def source_paths(root):
 
 
 def input_manifest(root, people=None):
-    paths = source_paths(root) + [root / 'data/names.md', root / 'data/titles.md', root / 'data/kinship.md', root / 'data/places.json', root / 'data/matching.json']
+    paths = source_paths(root) + [root / 'data/names.md', root / 'data/titles.md', root / 'data/kinship.md', root / 'data/places.json', root / 'data/matching.json', root / 'data/distinctFamilies.md']
     manifest = {}
     for path in sorted(set(paths)):
         if not path.exists():
@@ -101,14 +119,18 @@ def load_inputs(root, validate=True):
     if validate:
         validator.load_people(root / 'data/people.json')
     assertions, observations, prose = [], [], {'facts': 0, 'guesses': 0}
+    excluded_labels = excluded_document_labels(root)
     for path in source_paths(root):
-        if validate:
-            validator.validate_file(path)
         try:
             document = json.loads(path.read_text(encoding='utf-8'))
         except (ValueError, OSError) as exc:
             raise ValueError(f'{path}: {exc}') from exc
-        for ref, assertion in walk_assertions(document, path.relative_to(root).as_posix(), include_text=True):
+        relative_path = path.relative_to(root).as_posix()
+        if excluded_document(document, relative_path, excluded_labels):
+            continue
+        if validate:
+            validator.validate_file(path)
+        for ref, assertion in walk_assertions(document, relative_path, include_text=True):
             if isinstance(assertion, Assertion):
                 assertions.append(assertion)
             else:

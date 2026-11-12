@@ -15,10 +15,16 @@ the `tree.json` format is in [`rules/json-formats.md`](../rules/json-formats.md)
 | `data/kinship.md` | Tree positions allowed and excluded by kinship terms |
 | `data/places.json` | Place variants for titles and context |
 | `data/matching.json` | All weights, thresholds and limits |
+| `data/distinctFamilies.md` | Case-insensitive document labels excluded from collection |
 
 The output is one evidence view that includes guesses: nodes (identities),
 relationships, comparisons with their features and blocks, and `possiblySame`
 links. `tree.json` is output only; it is never read back as evidence.
+
+Before validation or collection, the loader skips every document JSON marked
+`"deleted": true` and every document whose top-level `label` contains a
+case-insensitive match from `data/distinctFamilies.md`. Skipped documents add
+no facts, guesses, or prose observations to the reconstruction.
 
 ## Terms
 
