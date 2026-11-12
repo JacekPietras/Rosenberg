@@ -75,6 +75,11 @@ def reorder_fields(value, field_order):
 
 def order_document(document):
     changed = False
+    if "delete" in document:
+        document = dict(document)
+        legacy_deleted = document.pop("delete")
+        document.setdefault("deleted", legacy_deleted)
+        changed = True
     reordered = reorder_fields(document, DOCUMENT_FIELDS)
     labels = reordered.get("label")
     if isinstance(labels, list) and len(labels) == 1:
