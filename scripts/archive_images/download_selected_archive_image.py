@@ -18,7 +18,7 @@ from urllib.parse import parse_qs, quote, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener, urlopen
 
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "archive_utils"))
 from archive_anubis import solve_anubis
 
 BAVARIKON_USER_AGENT = "Mozilla/5.0 (compatible; RosenbergResearch/1.0)"

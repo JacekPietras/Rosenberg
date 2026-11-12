@@ -16,7 +16,7 @@ from urllib.request import HTTPCookieProcessor, Request, build_opener
 from xml.etree import ElementTree
 
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "archive_utils"))
 from archive_anubis import ANUBIS_CHALLENGE_RE, solve_anubis
 
 
