@@ -63,12 +63,13 @@ def canonical_variants():
 def remove_bracketed_variants(text, variants):
     variants, canonicals = variants
     forms = sorted(variants, key=len, reverse=True)
-
-    def replace(match):
+    pieces = []
+    cursor = 0
+    for match in BRACKETED_VARIANT.finditer(text):
         right = (match.group(1) or match.group(2)).strip()
         right_groups = variants.get(right.casefold(), set())
         if not right_groups:
-            return match.group(0)
+            continue
         prefix = text[:match.start()].rstrip()
         for form in forms:
             if prefix.casefold().endswith(form):
@@ -77,10 +78,11 @@ def remove_bracketed_variants(text, variants):
                     shared_groups = variants[form].intersection(right_groups)
                     if shared_groups:
                         canonical = canonicals[sorted(shared_groups)[0]]
-                        return prefix[:start] + canonical
-        return match.group(0)
-
-    return BRACKETED_VARIANT.sub(replace, text)
+                        pieces.extend((text[cursor:start], canonical))
+                        cursor = match.end()
+                        break
+    pieces.append(text[cursor:])
+    return "".join(pieces)
 
 
 def collect_files(paths):
@@ -179,7 +181,10 @@ def order_document(document):
                 for language in ("german", "latin", "english"):
                     text = cleaned_entry.get(language)
                     if isinstance(text, str):
-                        cleaned_text = remove_bracketed_variants(text, variants)
+                        cleaned_text = (
+                            remove_bracketed_variants(text, variants)
+                            if language == "english" else text
+                        )
                         cleaned_text = re.sub(r"\n\n(?:Seal: Seal|Siegel: Siegel)\s*$", "", cleaned_text)
                         cleaned_text = REMOVABLE_BOILERPLATE.sub("", cleaned_text)
                         if cleaned_text != text:
