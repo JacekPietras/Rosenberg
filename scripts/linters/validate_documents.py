@@ -18,11 +18,12 @@ ENTRY_FIELDS = ("source", "url", "subheading", "summary", "german", "latin", "en
 SOURCE_SUFFIX = " (http://www.klaster.vyssibrod.cz)"
 LANDESARCHIV_BW_HTTP_PREFIX = "http://www.landesarchiv-bw.de/plink/"
 LANDESARCHIV_BW_HTTPS_PREFIX = "https://www.landesarchiv-bw.de/plink/"
-REMOVABLE_GERMAN_BOILERPLATE = re.compile(
+REMOVABLE_BOILERPLATE = re.compile(
     r"\n\n(?:Formalbeschreibung: Ausfertigung"
     r"|Besiegelung/Beglaubigung: S anhängend"
-    r"|Format: \d+\s*x\s*\d+\s*cm)(?=\n|$)"
+    r"|Format: \d+[.,]?\d*\s*x\s*\d+[.,]?\d*\s*cm)(?=\n|$)"
 )
+EMPTY_SEAL_DESCRIPTION = re.compile(r"\n\n(?:Seal: Seal|Siegel: Siegel)\s*$")
 
 
 def collect_files(paths):
@@ -117,12 +118,13 @@ def order_document(document):
         for entry in entries:
             if isinstance(entry, dict):
                 cleaned_entry = dict(entry)
-                german = cleaned_entry.get("german")
-                if isinstance(german, str):
-                    cleaned_german = REMOVABLE_GERMAN_BOILERPLATE.sub("", german)
-                    if cleaned_german != german:
-                        cleaned_entry["german"] = cleaned_german
-                        changed = True
+                for language in ("german", "english"):
+                    text = cleaned_entry.get(language)
+                    if isinstance(text, str):
+                        cleaned_text = REMOVABLE_BOILERPLATE.sub("", text)
+                        if cleaned_text != text:
+                            cleaned_entry[language] = cleaned_text
+                            changed = True
                 source = cleaned_entry.get("source")
                 if isinstance(source, str) and SOURCE_SUFFIX in source:
                     cleaned_entry["source"] = source.replace(SOURCE_SUFFIX, "")
@@ -318,6 +320,14 @@ def main(argv=None):
             if not isinstance(english, str) or not english.strip():
                 print(f"{display_path(path)}#/entries/{index}/english: warning: missing English text")
                 warnings += 1
+            for language in ("german", "latin", "english"):
+                text = entry.get(language)
+                if isinstance(text, str) and EMPTY_SEAL_DESCRIPTION.search(text):
+                    print(
+                        f"{display_path(path)}#/entries/{index}/{language}: warning: "
+                        "empty seal description; review `Seal: Seal` / `Siegel: Siegel`"
+                    )
+                    warnings += 1
             if "latin" in entry and "german" in entry:
                 print(
                     f"{display_path(path)}#/entries/{index}: warning: both `latin` and `german` "

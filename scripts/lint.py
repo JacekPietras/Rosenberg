@@ -5,6 +5,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+import json
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -21,6 +22,27 @@ def main():
     failed = False
     issues = 0
     normalized_names = 0
+    for path in sorted((ROOT / "data").rglob("*.json")):
+        duplicates = []
+
+        def reject_duplicate_fields(pairs):
+            fields = set()
+            for field, value in pairs:
+                if field in fields:
+                    duplicates.append(field)
+                fields.add(field)
+            return dict(pairs)
+
+        try:
+            with path.open(encoding="utf-8") as source:
+                json.load(source, object_pairs_hook=reject_duplicate_fields)
+        except (OSError, json.JSONDecodeError):
+            # The schema validators report unreadable or malformed JSON.
+            continue
+        for field in duplicates:
+            print(f"Duplicate JSON field: {path.relative_to(ROOT)}: {field}")
+            issues += 1
+            failed = True
     for check in CHECKS:
         result = subprocess.run(
             [sys.executable, str(LINTERS / check)],
