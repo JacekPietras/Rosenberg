@@ -47,7 +47,7 @@ def ensure_kev_server():
         except Exception:
             pass
         if kev_process[0] is None or kev_process[0].poll() is not None:
-            launcher = ROOT / 'scripts' / 'run_kev_local.sh'
+            launcher = ROOT / 'scripts' / 'kev' / 'run_kev_local.sh'
             kev_process[0] = subprocess.Popen(
                 [str(launcher)], cwd=ROOT, stdin=subprocess.DEVNULL,
                 stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
