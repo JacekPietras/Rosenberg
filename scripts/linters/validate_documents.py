@@ -10,7 +10,13 @@ import argparse
 import json
 import re
 from pathlib import Path
+import sys
 from urllib.parse import parse_qs, urlsplit, urlunsplit
+
+SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SCRIPTS_ROOT))
+from given_names import name_groups
+from place_names import resolve_place_names
 
 ROOT = Path(__file__).resolve().parents[2]
 DOCUMENT_FIELDS = ("date", "place", "label", "transcribed", "deleted", "entries")
@@ -23,6 +29,58 @@ REMOVABLE_BOILERPLATE = re.compile(
     r"|Besiegelung/Beglaubigung: S anhängend"
     r"|Format: \d+[.,]?\d*\s*x\s*\d+[.,]?\d*\s*cm)(?=\n|$)"
 )
+BRACKETED_VARIANT = re.compile(r"\(([^()\n]+)\)|\[([^\[\]\n]+)\]")
+CANONICAL_VARIANTS = None
+
+
+def load_canonical_variants():
+    variants = {}
+    canonicals = {}
+
+    def add_group(group_id, forms):
+        canonical = forms[0]
+        for form in forms:
+            variants.setdefault(form.casefold(), set()).add(group_id)
+        canonicals[group_id] = canonical
+
+    for index, (forms, _) in enumerate(name_groups((ROOT / "data/names.md").read_text(encoding="utf-8"))):
+        add_group(("name", index), forms)
+    places = json.loads((ROOT / "data/places.json").read_text(encoding="utf-8"))
+    for index, place in enumerate(resolve_place_names(places)):
+        forms = place.get("variations", [])
+        if forms:
+            add_group(("place", index), forms)
+    return variants, canonicals
+
+
+def canonical_variants():
+    global CANONICAL_VARIANTS
+    if CANONICAL_VARIANTS is None:
+        CANONICAL_VARIANTS = load_canonical_variants()
+    return CANONICAL_VARIANTS
+
+
+def remove_bracketed_variants(text, variants):
+    variants, canonicals = variants
+    forms = sorted(variants, key=len, reverse=True)
+
+    def replace(match):
+        right = (match.group(1) or match.group(2)).strip()
+        right_groups = variants.get(right.casefold(), set())
+        if not right_groups:
+            return match.group(0)
+        prefix = text[:match.start()].rstrip()
+        for form in forms:
+            if prefix.casefold().endswith(form):
+                start = len(prefix) - len(form)
+                if start == 0 or not (prefix[start - 1].isalnum() or prefix[start - 1] == "_"):
+                    shared_groups = variants[form].intersection(right_groups)
+                    if shared_groups:
+                        canonical = canonicals[sorted(shared_groups)[0]]
+                        return prefix[:start] + canonical
+        return match.group(0)
+
+    return BRACKETED_VARIANT.sub(replace, text)
 
 
 def collect_files(paths):
@@ -74,6 +132,7 @@ def reorder_fields(value, field_order):
 
 
 def order_document(document):
+    variants = canonical_variants()
     changed = False
     if "delete" in document:
         document = dict(document)
@@ -120,7 +179,8 @@ def order_document(document):
                 for language in ("german", "latin", "english"):
                     text = cleaned_entry.get(language)
                     if isinstance(text, str):
-                        cleaned_text = re.sub(r"\n\n(?:Seal: Seal|Siegel: Siegel)\s*$", "", text)
+                        cleaned_text = remove_bracketed_variants(text, variants)
+                        cleaned_text = re.sub(r"\n\n(?:Seal: Seal|Siegel: Siegel)\s*$", "", cleaned_text)
                         cleaned_text = REMOVABLE_BOILERPLATE.sub("", cleaned_text)
                         if cleaned_text != text:
                             cleaned_entry[language] = cleaned_text

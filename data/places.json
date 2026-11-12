@@ -159,6 +159,7 @@
     "id": "wurzburg",
     "variations": [
       "Würzburg",
+      "Wirtzeburg",
       "Wurzburg"
     ],
     "category": "city",
@@ -259,7 +260,8 @@
   },
   {
     "variations": [
-      "Giebelstadt"
+      "Giebelstadt",
+      "Gybelstat"
     ],
     "category": "village",
     "lat": 49.653,
@@ -592,7 +594,8 @@
   {
     "id": "roettingen",
     "variations": [
-      "Röttingen"
+      "Röttingen",
+      "Rotingen"
     ],
     "category": "city",
     "lat": 49.5097555,
@@ -1352,6 +1355,7 @@
     "category": "village",
     "variations": [
       "Niedeck",
+      "Neideck",
       "Nydeck"
     ],
     "showOnMap": false,
