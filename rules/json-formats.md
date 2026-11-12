@@ -111,6 +111,13 @@ in `summary` instead. When no full transcription is available, put the German
 abstract in `german` or `latin` and its normalized English translation in
 `english`; omit `summary` unless the document is marked transcribed.
 
+In `english`, translate and normalize the text for clear, readable English.
+Do not repeat source-language spelling variants or editorial parentheses that
+are already preserved in `german` or `latin` (for example, translate
+`Handschuhsheim (Hentschus-)` as `Handschuhsheim`). Preserve meaningful names,
+titles, and distinctions in the translation; this rule removes redundant
+spelling notes, not historical content.
+
 In book and document text, wrap a passage in single backticks to display its
 Latin letters as Unicode Fraktur, for example `` `Ebirhardus` `` renders as
 “𝔈𝔟𝔦𝔯𝔥𝔞𝔯𝔡𝔲𝔰”. The stored text keeps the backticks as the marker; digits,
