@@ -16,7 +16,7 @@ from pathlib import Path
 from kev_classify_documents import h, state
 from kev_source_guards import accepted_prediction
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 FAMILIES = {
     "franconian": "new",
     "schenk": "Schenk",
@@ -51,8 +51,8 @@ def verify_frozen_files(config: dict, guard_freeze: dict, freeze_path: Path) -> 
     if not artifacts:
         raise ValueError("guard freeze is missing frozen_artifacts")
     expected_files = {
-        "guard_code_sha256": ROOT / "scripts/kev_source_guards.py",
-        "runner_code_sha256": ROOT / "scripts/kev_classify_documents.py",
+        "guard_code_sha256": ROOT / "scripts/kev/kev_source_guards.py",
+        "runner_code_sha256": ROOT / "scripts/kev/kev_classify_documents.py",
         "names_md_sha256": ROOT / "data/names.md",
         "places_json_sha256": ROOT / "data/places.json",
     }

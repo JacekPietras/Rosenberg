@@ -453,7 +453,7 @@ research above is retained for review rather than injected wholesale.
 
 The selected nine-choice prompt (before `kamptal` was added) matched 43/45 fresh references versus 29/45 for
 the earlier eleven-choice prompt; Franken improved from 8/20 to 19/20.
-See the [comparison and limitations](reports/kev-place-choice-2026-11-11/comparison.md).
+See the [comparison and limitations](../../reports/kev-place-choice-2026-11-11/comparison.md).
 This measures agreement with provisional references, not calibrated confidence
 or a validated automatic labeling policy. The disputed 1325 Voit record remains
 a model error even though its prediction agrees with the current Franken label.

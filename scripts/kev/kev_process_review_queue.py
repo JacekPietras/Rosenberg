@@ -10,7 +10,7 @@ import subprocess
 import sys
 import tempfile
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def main():
@@ -37,7 +37,7 @@ def main():
 
     def run(script, arguments, log_name):
         with (work / log_name).open("w") as log:
-            subprocess.run([sys.executable, str(ROOT / "scripts" / script), *arguments],
+            subprocess.run([sys.executable, str(ROOT / "scripts" / "kev" / script), *arguments],
                            cwd=ROOT, stdout=log, stderr=subprocess.STDOUT, check=True)
 
     common = ["--results", str(results), "--config", str(config_path),

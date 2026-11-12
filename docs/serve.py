@@ -330,7 +330,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 document_path = (ROOT / relative_path).resolve()
                 if not document_path.is_relative_to(ROOT / "data" / "documents") or not document_path.is_file():
                     raise ValueError("Document not found")
-                command = [sys.executable, str(ROOT / "scripts/kev_classify_documents.py"), "--document", relative_path]
+                command = [sys.executable, str(ROOT / "scripts/kev/kev_classify_documents.py"), "--document", relative_path]
                 ensure_kev_server()
                 result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=240, check=False)
                 match = re.search(r"^.+?:\s+([a-z]+)\s+\(([0-9.]+)\)$", result.stderr, re.MULTILINE)

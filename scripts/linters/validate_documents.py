@@ -2,8 +2,8 @@
 """Validate document JSON files, warning and fixing simple document issues.
 
 Examples:
-    python3 scripts/validate_documents.py
-    python3 scripts/validate_documents.py data/documents/1397-04-29.json
+    python3 scripts/linters/validate_documents.py
+    python3 scripts/linters/validate_documents.py data/documents/1397-04-29.json
 """
 
 import argparse
@@ -12,7 +12,7 @@ import re
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit, urlunsplit
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DOCUMENT_FIELDS = ("date", "place", "label", "transcribed", "deleted", "entries")
 ENTRY_FIELDS = ("source", "url", "subheading", "summary", "german", "latin", "english", "facts", "guesses", "img")
 SOURCE_SUFFIX = " (http://www.klaster.vyssibrod.cz)"

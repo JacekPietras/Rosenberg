@@ -19,7 +19,7 @@ Inference runs on this Mac and does not use the ChatGPT allowance.
 Run from a **normal macOS Terminal**; the Codex sandbox cannot access Metal:
 
 ```sh
-/Users/jpietras/StudioProjects/Rosenberg/scripts/run_kev_local.sh
+/Users/jpietras/StudioProjects/Rosenberg/scripts/kev/run_kev_local.sh
 ```
 
 Leave that Terminal open. Ready means `Uvicorn running on http://127.0.0.1:8009`.
@@ -56,7 +56,7 @@ does not automatically load the reference file.
 With the local server running, score a document JSON from the repository root:
 
 ```sh
-python3 scripts/kev_classify_documents.py --document data/documents/1397-04-29.json
+python3 scripts/kev/kev_classify_documents.py --document data/documents/1397-04-29.json
 ```
 
 The default classifier chooses among ten options:
@@ -85,7 +85,7 @@ these nine defaults before adding `kamptal`. On 45 fresh cases, label agreement 
 29-case regression set gives 55/74 versus 71/74. These small samples measure
 agreement with provisional labels; one existing Franken label has contrary
 historical evidence. Orsini and Brandenburg were not tested. See the
-[paired report and remaining errors](reports/kev-place-choice-2026-11-11/comparison.md).
+[paired report and remaining errors](../../reports/kev-place-choice-2026-11-11/comparison.md).
 The detailed Bauer research is preserved in the reference, but long Franconian
 summaries were rejected because they caused false Franconian predictions.
 
@@ -119,10 +119,10 @@ In a second Terminal:
 cd /Users/jpietras/StudioProjects/Rosenberg
 
 # Score/check only; does not change document labels.
-python3 scripts/kev_process_review_queue.py
+python3 scripts/kev/kev_process_review_queue.py
 
 # Score and apply labels allowed by the saved validation gate.
-python3 scripts/kev_process_review_queue.py --apply
+python3 scripts/kev/kev_process_review_queue.py --apply
 ```
 
 Run only one queue job at a time. Rerunning resumes matching cached predictions.

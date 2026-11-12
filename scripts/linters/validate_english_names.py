@@ -2,8 +2,8 @@
 """Find non-normalized personal names in English text in documents and books.
 
 Examples:
-    python3 scripts/facts/validate_english_names.py
-    python3 scripts/facts/validate_english_names.py data/documents/1466-10-25.json
+    python3 scripts/linters/validate_english_names.py
+    python3 scripts/linters/validate_english_names.py data/documents/1466-10-25.json
 
 This read-only review tool reports name forms to check; it does not edit JSON.
 """

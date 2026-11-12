@@ -2,9 +2,9 @@
 """Migrate von und zu names and check typed facts and guesses.
 
 Examples:
-    python3 scripts/facts/validate_facts.py
-    python3 scripts/facts/validate_facts.py data/documents/1397-04-29.json
-    python3 scripts/facts/validate_facts.py data/books data/notes
+    python3 scripts/linters/validate_facts.py
+    python3 scripts/linters/validate_facts.py data/documents/1397-04-29.json
+    python3 scripts/linters/validate_facts.py data/books data/notes
 
 The source assertion schema is in rules/json-formats.md. This script does
 not verify source support or historical identity and does not build a graph.
@@ -459,7 +459,7 @@ def main(argv=None):
     paths = [path for path in collect_paths(args.paths or [ROOT / 'data'], validator)
              if validator.read_json(path) is not MISSING]
     if paths:
-        from facts.migrate_von_und_zu import main as migrate_von_und_zu
+        from linters.migrate_von_und_zu import main as migrate_von_und_zu
         migrate_von_und_zu([*(str(path) for path in paths), '--apply'])
     for path in paths:
         clean_facts(path, validator)

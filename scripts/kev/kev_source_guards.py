@@ -10,7 +10,7 @@ import re
 import unicodedata
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 TEXT_FIELDS = ("german", "latin", "english", "summary")
 ELIGIBLE = ("franconian", "schenk", "monch", "rorschach", "czech")
 FAMILY_ALIASES = (
