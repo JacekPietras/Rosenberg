@@ -5,7 +5,8 @@ Examples:
     python3 scripts/linters/validate_english_names.py
     python3 scripts/linters/validate_english_names.py data/documents/1466-10-25.json
 
-This read-only review tool reports name forms to check; it does not edit JSON.
+This tool normalizes unambiguous name variants in English text using
+``data/names.md`` and ``data/places.json``.
 """
 
 import argparse
@@ -113,18 +114,25 @@ def main(argv=None):
             findings += 1
             continue
 
+        changed = False
+
         def visit(value, location):
-            nonlocal findings
+            nonlocal findings, changed
             if isinstance(value, dict):
                 for key, child in value.items():
                     child_location = f'{location}/{key.replace("~", "~0").replace("/", "~1")}'
                     if key == 'english' and isinstance(child, str):
-                        for match in pattern.finditer(child):
+                        def normalize(match):
+                            nonlocal findings, changed
                             suggested = suggested_name(match, given_names, surnames)
                             original = match.group(0)
                             if original != suggested:
-                                print(f'{path}#{child_location}: review: {original!r} -> {suggested!r}')
+                                print(f'{path}#{child_location}: fixed: {original!r} -> {suggested!r}')
                                 findings += 1
+                                changed = True
+                            return suggested
+
+                        value[key] = pattern.sub(normalize, child)
                     else:
                         visit(child, child_location)
             elif isinstance(value, list):
@@ -132,9 +140,16 @@ def main(argv=None):
                     visit(child, f'{location}/{index}')
 
         visit(document, '')
+        if changed:
+            original = path.read_text(encoding='utf-8')
+            trailing_newline = original.endswith('\n')
+            updated = json.dumps(document, ensure_ascii=False, indent=2)
+            if trailing_newline:
+                updated += '\n'
+            path.write_text(updated, encoding='utf-8')
 
-    print(f'Checked English name forms: {findings} finding(s).')
-    return 1 if findings else 0
+    print(f'Normalized {findings} English name form(s).')
+    return 0
 
 
 if __name__ == '__main__':
