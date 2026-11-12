@@ -97,7 +97,7 @@ function clearScreenCaches() {
   state.recordSource = state.navigationRecordSource;
   state.recordLabels = [];
   state.toTranscribe = false;
-  state.hiddenRecordLabels = undefined;
+  state.hiddenRecordLabels = [...DISTINCT_FAMILIES];
   state.sealNames = [];
   state.sealType = null;
   state.lastRenderedDocumentsYear = null;
