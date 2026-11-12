@@ -1,11 +1,15 @@
 {
   "date": "1524-01-03",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "HStAM, Urk. 72, 525",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1130106",
-      "german": "Martin Sutzel von Mergentheim zu Balbach setzt Joachim von Thüngen für 100 fl. vier Worgen Wiesen zu Obern-Kalbach zum Pfande. Mitsiegler: Der Rottinger Amtmann Hans von Rosenberg."
+      "german": "Martin Sutzel von Mergentheim zu Balbach setzt Joachim von Thüngen für 100 fl. vier Worgen Wiesen zu Obern-Kalbach zum Pfande. Mitsiegler: Der Rottinger Amtmann Hans von Rosenberg.",
+      "english": "Martin Sutzel of Mergentheim at Balbach sets four worgen of meadows in Obern-Kalbach as pledge for Joachim von Thüngen for 100 florins. Co-sealer: Hans von Rosenberg, Amtmann of Röttingen."
     }
   ]
 }

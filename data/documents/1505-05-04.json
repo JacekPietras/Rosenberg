@@ -1,11 +1,15 @@
 {
   "date": "1505-05-04",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "StABa, Hochstift Bamberg, Archiv",
       "url": "https://www.gda.bayern.de/gvl/document/505be775-e074-4447-bbab-405fd863ed54",
-      "german": "Mitteilung Arnolts von Rosenberg an Bischof Georg wegen eines ihm durch Johann von Schwarzenberg gesetzten Rechtstags zu Würzburg"
+      "german": "Mitteilung Arnolts von Rosenberg an Bischof Georg wegen eines ihm durch Johann von Schwarzenberg gesetzten Rechtstags zu Würzburg",
+      "english": "Notification from Arnold von Rosenberg to Bishop Georg regarding a court session summoned to Würzburg by Johann von Schwarzenberg."
     }
   ]
 }

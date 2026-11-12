@@ -6,14 +6,15 @@
       "source": "HStAD, B 5, 238",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1470711",
       "german": "Friedberg, Burg: Johann v. Stockheim, Sohn des + Gottfried, bekundet, daß er nach erfolgtem Beweis seiner Abstammung von den adligen und zum Schild geborenen Familien v. Stockheim [auf seiten seines Vaters], v. 'Uben' [auf seiten seiner Großmutter väterlicherseits], v. Rosenberg [auf seiten seiner Mutter] und v. Cronberg [auf seiten seiner Großmutter mütterlicherseits] von Burggraf, Baumeister und Burgmannen der Burg Friedberg als Burgmann aufgenommen wurde und sein Gelübde und Eid geleistet hat.\n\nBurgmannsrevers des Johann von Stockheim, des verstorbenen Gotfridts Sohn. (Vater: einer von Stockheim; Vaters Mutter: eine von Uben; Mutter: eine von Rosenburg; Mutter Mutter: eine von Cronnburg)\n\nSiegler: der Aussteller",
+      "english": "Friedberg Castle: Johann v. Stockheim, son of the late Gottfried, declares that after proving his descent from the noble families born to bear the shield — v. Stockheim [on his father's side], v. 'Uben' [on his paternal grandmother's side], v. Rosenberg [on his mother's side], and v. Cronberg [on his maternal grandmother's side] — he was admitted as a castle man by the burgrave, master builder, and castle men of Friedberg Castle, and has made his vow and sworn his oath.\n\nCastle man's acknowledgment of Johann von Stockheim, son of the late Gotfridt. (Father: a von Stockheim; Father's mother: a von Uben; Mother: a von Rosenburg; Mother's mother: a von Cronnburg)\n\nSealer: the issuer",
       "facts": [
         {
-          "subject": "Johann von Stockheim’s mother",
+          "subject": "Johann von Stockheim's mother",
           "type": "generic",
           "content": "belonged to the noble von Rosenberg family."
         },
         {
-          "subject": "Johann von Stockheim’s maternal grandmother",
+          "subject": "Johann von Stockheim's maternal grandmother",
           "type": "generic",
           "content": "belonged to the von Cronberg family."
         }

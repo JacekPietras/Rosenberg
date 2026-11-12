@@ -1,11 +1,15 @@
 {
   "date": "1500-01-13",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 46 Nr. 1168",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-851908",
-      "german": "Swicker von Schauenburg quittiert dem Markgrafen Christoph den Empfang seines Anteils von 1.600 Gulden an einer Schuld von 2.500 fl., contrahiert 1457 bei Elsen von Rosenberg, deren anderer Teil Swickers Bruder Philipp gehört.\n\nLaufzeit: 1500 Januar 13"
+      "german": "Swicker von Schauenburg quittiert dem Markgrafen Christoph den Empfang seines Anteils von 1.600 Gulden an einer Schuld von 2.500 fl., contrahiert 1457 bei Elsen von Rosenberg, deren anderer Teil Swickers Bruder Philipp gehört.\n\nLaufzeit: 1500 Januar 13",
+      "english": "Swicker von Schauenburg acknowledges receipt from Margrave Christoph of his share of 1,600 gulden from a debt of 2,500 fl., contracted in 1457 with Elsen von Rosenberg, the other portion of which belongs to Swicker's brother Philipp.\n\nTerm: 1500 January 13"
     }
   ]
 }
