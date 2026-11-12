@@ -1,11 +1,14 @@
 {
   "date": "1382-01-24",
-  "label": ["to review", "Czechia"],
+  "label": [
+    "to review",
+    "Czechia"
+  ],
   "entries": [
     {
       "source": "HHStA Wien (www.oesta.gv.at), 1382 I 24",
       "url": "https://www.monasterium.net/mom/OOEUB/1382_I_24/charter",
-      "german": "König Wenzel entscheidet den Streit zwischen Herzog Albrecht von Österreich und Peter, Ulrich und Johann von Rosenberg und Heinrich von Neuhaus.\n\nSiegel: Siegel"
+      "german": "König Wenzel entscheidet den Streit zwischen Herzog Albrecht von Österreich und Peter, Ulrich und Johann von Rosenberg und Heinrich von Neuhaus."
     }
   ]
 }

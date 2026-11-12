@@ -23,7 +23,6 @@ REMOVABLE_BOILERPLATE = re.compile(
     r"|Besiegelung/Beglaubigung: S anhängend"
     r"|Format: \d+[.,]?\d*\s*x\s*\d+[.,]?\d*\s*cm)(?=\n|$)"
 )
-EMPTY_SEAL_DESCRIPTION = re.compile(r"\n\n(?:Seal: Seal|Siegel: Siegel)\s*$")
 
 
 def collect_files(paths):
@@ -118,10 +117,11 @@ def order_document(document):
         for entry in entries:
             if isinstance(entry, dict):
                 cleaned_entry = dict(entry)
-                for language in ("german", "english"):
+                for language in ("german", "latin", "english"):
                     text = cleaned_entry.get(language)
                     if isinstance(text, str):
-                        cleaned_text = REMOVABLE_BOILERPLATE.sub("", text)
+                        cleaned_text = re.sub(r"\n\n(?:Seal: Seal|Siegel: Siegel)\s*$", "", text)
+                        cleaned_text = REMOVABLE_BOILERPLATE.sub("", cleaned_text)
                         if cleaned_text != text:
                             cleaned_entry[language] = cleaned_text
                             changed = True
@@ -320,14 +320,6 @@ def main(argv=None):
             if not isinstance(english, str) or not english.strip():
                 print(f"{display_path(path)}#/entries/{index}/english: warning: missing English text")
                 warnings += 1
-            for language in ("german", "latin", "english"):
-                text = entry.get(language)
-                if isinstance(text, str) and EMPTY_SEAL_DESCRIPTION.search(text):
-                    print(
-                        f"{display_path(path)}#/entries/{index}/{language}: warning: "
-                        "empty seal description; review `Seal: Seal` / `Siegel: Siegel`"
-                    )
-                    warnings += 1
             if "latin" in entry and "german" in entry:
                 print(
                     f"{display_path(path)}#/entries/{index}: warning: both `latin` and `german` "
