@@ -93,7 +93,7 @@ Wenceslaus, Wenzel
 Wernher
 Wilhelm, Wilhem
 Wiprecht, Wibrecht, Wynprecht, Wyprecht, Wipert, Welprecht
-Wok, Woko, Witiko
+Wok, Woko, Witiko, Bocho, Wocco, Wocho, Vok
 Wolf, Wolff
 Wolfgang
 Yttel
