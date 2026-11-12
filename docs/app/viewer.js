@@ -1165,7 +1165,7 @@ function recordNeedsTranscription(doc) {
 
 function visibleRecordPaths(paths) {
   const selected = new Set(state.recordLabels);
-  const hidden = new Set((state.hiddenRecordLabels || []).filter((label) => DISTINCT_FAMILIES.has(label)));
+  const hidden = new Set(state.hiddenRecordLabels || []);
   const transcriptionExcludedLabels = new Set(['hessen', 'schenk', 'mönch', 'czechia', 'rorschach', 'to review']);
   return paths.filter((path) => {
     if (state.recordSource && !citationIndex.recordHasSource(path, state.recordSource)) return false;
@@ -1174,7 +1174,7 @@ function visibleRecordPaths(paths) {
     const labels = recordLabelForPath(path);
     const missingSource = selected.has(MISSING_SOURCE_LABEL) && recordHasMissingSource(path);
     const missingUrl = selected.has(MISSING_URL_LABEL) && recordHasMissingUrl(path);
-    if (labels.some((label) => hidden.has(label)) && !missingSource && !missingUrl) return false;
+    if (labels.some((label) => hidden.has(label))) return false;
     return !selected.size || labels.some((label) => selected.has(label)) || missingSource || missingUrl;
   });
 }
@@ -1214,7 +1214,7 @@ function renderYearSidebar(paths, labelPaths = paths) {
       const count = key === 'to review'
         ? labelPaths.filter((itemPath) => recordLabelForPath(itemPath).includes(key)).length
         : specialCount;
-      const mode = DISTINCT_FAMILIES.has(key) && state.hiddenRecordLabels.includes(key)
+      const mode = state.hiddenRecordLabels.includes(key)
         ? 'exclude' : state.recordLabels.includes(key) ? 'include' : 'neutral';
       const prefix = mode === 'exclude' ? '× ' : mode === 'include' ? '+ ' : '';
       const modeLabel = mode === 'exclude' ? 'excluded' : mode === 'include' ? 'included' : 'neutral';
@@ -1249,11 +1249,8 @@ function setupYearHighlight(paths) {
       const wasIncluded = state.recordLabels.includes(label);
       state.hiddenRecordLabels = state.hiddenRecordLabels.filter((value) => value !== label);
       state.recordLabels = state.recordLabels.filter((value) => value !== label);
-      // Distinct family labels cycle × → neutral → + → ×. Other labels
-      // toggle between neutral and +.
-      const next = DISTINCT_FAMILIES.has(label)
-        ? (wasExcluded ? 'neutral' : wasIncluded ? 'exclude' : 'include')
-        : (wasIncluded ? 'neutral' : 'include');
+      // Every label cycles × → neutral → + → ×.
+      const next = wasExcluded ? 'neutral' : wasIncluded ? 'exclude' : 'include';
       if (next === 'exclude') state.hiddenRecordLabels.push(label);
       if (next === 'include') state.recordLabels.push(label);
       savePreferences();
