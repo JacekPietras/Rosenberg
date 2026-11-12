@@ -65,6 +65,7 @@ Mathern
 Melchior
 Michael , Michel
 Nicolaus, Nicholas, Niklaus, Nikolaus, Claus
+Niklas, Nyclos, Niclas
 Pankraz
 Peter
 Philipp
@@ -159,3 +160,5 @@ Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele, Wyklo
 Mönch, Münch, Munch, Mönich, Monich, Münchin, Mönchin, Muench // it derives from "Monk"
 Schenk
 Lengenfelder, Lengenfelderin, Lengenfeld, Lengenvelder, Lengfeld
+Voit, Voith, Voyt
+Raydenbach
