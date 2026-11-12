@@ -133,7 +133,7 @@ Juliana
 Katharina, Katherina, Katherine, Kathrein, Katerina, Catharina, Catherine
 Kunigunde, Kunnegunt, Kunnigund, Kunegunde, Kunegunt, Kunegunth, Konigunt, Kunigunda, Kunigundis, Cunegunda, Cunigunda, Conegundis
 Kunne
-Margaretha, Margretha, Margarete, Margarethe, Margret, Margareta, Margreth, Margett, Margarethå
+Margaretha, Margretha, Margarete, Margarethe, Margret, Margareta, Margreth, Margett, Margarethå, Margeth
 Magdalena
 Maria
 Osanna
