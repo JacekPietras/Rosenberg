@@ -33,6 +33,55 @@ family_rebuild_lock = threading.Lock()
 family_rebuild_status = {'active': False, 'stage': ''}
 family_rebuild_status_lock = threading.Lock()
 shutdown_reason = ['server stopped']
+kev_process = [None]
+kev_start_lock = threading.Lock()
+KEV_URL = 'http://127.0.0.1:8009'
+
+
+def ensure_kev_server():
+    """Use an existing Kev server, or start one owned by this viewer server."""
+    with kev_start_lock:
+        try:
+            with urlopen(f'{KEV_URL}/v1/models', timeout=2):
+                return
+        except Exception:
+            pass
+        if kev_process[0] is None or kev_process[0].poll() is not None:
+            launcher = ROOT / 'scripts' / 'run_kev_local.sh'
+            kev_process[0] = subprocess.Popen(
+                [str(launcher)], cwd=ROOT, stdin=subprocess.DEVNULL,
+                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                start_new_session=True,
+            )
+        process = kev_process[0]
+        deadline = time.monotonic() + 240
+        while time.monotonic() < deadline:
+            if process.poll() is not None:
+                raise RuntimeError(f'Kev server exited during startup (exit {process.returncode})')
+            try:
+                with urlopen(f'{KEV_URL}/v1/models', timeout=2):
+                    return
+            except Exception:
+                time.sleep(1)
+        raise TimeoutError('Kev server did not become ready within 240 seconds')
+
+
+def stop_owned_kev_server():
+    process = kev_process[0]
+    if process is None or process.poll() is not None:
+        return
+    try:
+        os.killpg(process.pid, signal.SIGTERM)
+    except ProcessLookupError:
+        return
+    try:
+        process.wait(timeout=10)
+    except subprocess.TimeoutExpired:
+        try:
+            os.killpg(process.pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
+        process.wait()
 
 
 def record_event(reason):
@@ -282,6 +331,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 if not document_path.is_relative_to(ROOT / "data" / "documents") or not document_path.is_file():
                     raise ValueError("Document not found")
                 command = [sys.executable, str(ROOT / "scripts/kev_classify_documents.py"), "--document", relative_path]
+                ensure_kev_server()
                 result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=240, check=False)
                 match = re.search(r"^.+?:\s+([a-z]+)\s+\(([0-9.]+)\)$", result.stderr, re.MULTILINE)
                 if result.returncode or not match:
@@ -294,6 +344,8 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 self.send_json(504, {"error": "Classification timed out"})
             except OSError as error:
                 self.send_json(500, {"error": str(error)})
+            except RuntimeError as error:
+                self.send_json(503, {"error": str(error)})
             return
         if self.path.split("?", 1)[0] == "/api/heartbeat-diagnostics":
             try:
@@ -555,5 +607,6 @@ if __name__ == "__main__":
         raise
     finally:
         stop_watcher.set()
+        stop_owned_kev_server()
         server.server_close()
         record_event(shutdown_reason[0])

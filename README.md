@@ -44,6 +44,9 @@ The local server stops after 20 seconds without a viewer heartbeat. It appends
 shutdown reasons and UTC timestamps to `server.log` in the repository root,
 including heartbeat timeouts, viewer-requested restarts, termination signals,
 and unexpected errors. A forced kill or power loss cannot be recorded by the server.
+The document classification (`?`) action starts the local Kev server on demand
+when it is not already available. A Kev process started by the viewer server is
+stopped when that server exits, including after the heartbeat timeout.
 
 ## Family Graph
 
