@@ -1,11 +1,15 @@
 {
   "date": "1566",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 753",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-75686",
-      "german": "Differenzen zwischen Konrad von Rosenberg zu Gnötzheim und Wolf Bartholomäus Wolfskeel zu Reichenberg hauptsächlich wegen des Schaftriebs zu Obermelsendorf."
+      "german": "Differenzen zwischen Konrad von Rosenberg zu Gnötzheim und Wolf Bartholomäus Wolfskeel zu Reichenberg hauptsächlich wegen des Schaftriebs zu Obermelsendorf.",
+      "english": "Differences between Konrad von Rosenberg of Gnötzheim and Wolf Bartholomäus Wolfskeel of Reichenberg, primarily regarding the sheep grazing rights at Obermelsendorf."
     }
   ]
 }

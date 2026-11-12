@@ -9,7 +9,7 @@
       "english": "Elector Friedrich I of the Palatinate issues Wendel von Remchingen, at his request, a certificate regarding the matter of his capture by Jörg von Rosenberg and his failed pledge to present himself at Boxberg. Originally the Rosenberg had taken Wendel captive, during which Wendel had pledged to present himself at Castle Boxberg by the last Easter day [April 22, 1470]. By Maundy Thursday [April 19] Wendel had not appeared. In the Count Palatine's view, Jörg may have unjustly taken Wendel captive, since neither party had rightfully declared war on the other. For his own reasons and not at the request of Wendel or third parties, the Count Palatine himself had Wendel captured on Maundy Thursday by his men on an open road and led to Castle Dilsberg. There he was held until the week after St. Urban's day [May 25] and then brought to Heidelberg. In prison Wendel instructed his trusted associate (gonner und besunder) Melchior von Hirschhorn to release himself from Jörg von Rosenberg at the cost of his own estates. Jörg intended to hand Wendel over to the Count Palatine free of charge. At Wendel's request, the Count Palatine guaranteed safe conduct to Heidelberg for Jörg, Michel and Arnold von Rosenberg. Before Elector Friedrich, his son Philipp, and his counselors — the Hofmeister Dieter von Sickingen, the Ritter and Heidelberg Vogt Simon von Balzhofen, the Schenk Konrad von Lomersheim, and Melchior von Hirschhorn — the three Rosenbergs on December 11, 1470 released Wendel from captivity and his failed appearance at Boxberg. [Here follows Wendel's justification before those present, partly quoted verbatim:] Wendel requests the floor and elaborates in detail that he was obligated to present himself at Boxberg for Easter if Boxberg were not captured; but if Boxberg were taken, he was to follow further instructions... (line truncated to 2000 chars)",
       "facts": [
         {
-          "person": "Jörg von Rosenberg",
+          "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "had taken Wendel von Remchingen captive."
         },
@@ -21,7 +21,7 @@
         {
           "person": "Melchior von Hirschhorn",
           "type": "generic",
-          "content": "acted as Wendel's trusted representative in prison to negotiate his release from Jörg von Rosenberg."
+          "content": "acted as Wendel's trusted representative in prison to negotiate his release from Georg von Rosenberg."
         }
       ]
     }
