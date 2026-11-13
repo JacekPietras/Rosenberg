@@ -660,10 +660,12 @@
       "Dürn",
       "Walldürn",
       "Dürne",
+      "Düren",
       "Dorn",
       "Durne",
       "Durn",
       "Durnen",
+      "Dornne",
       "Dorne",
       "Turne",
       "Duorne"
@@ -1519,6 +1521,17 @@
       "Michelfeld",
       "Michelfelt"
     ],
+    "showOnMap": false
+  },
+  {
+    "id": "ballenberg",
+    "variations": [
+      "Ballenberg",
+      "Ballenburg"
+    ],
+    "category": "city",
+    "lat": 49.40111,
+    "lon": 9.55178,
     "showOnMap": false
   }
 ]

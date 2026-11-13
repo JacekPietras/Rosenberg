@@ -1,7 +1,7 @@
 import { factDate } from '../rendering/facts.js?v=8';
 import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=8';
-import { personRouteName } from '../data/person-name-recognition.js?v=3';
+import { personRouteName } from '../data/person-name-recognition.js?v=4';
 
 export function createDocumentRenderer({
   state,
@@ -49,7 +49,7 @@ export function createDocumentRenderer({
       for (const sourcePattern of patterns) {
         for (const match of text.matchAll(sourcePattern)) {
           const name = match[0];
-          const key = personRouteName(name, state.personNameTitlesText).toLocaleLowerCase();
+          const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText).toLocaleLowerCase();
           if (!found.has(key)) found.set(key, name);
         }
       }

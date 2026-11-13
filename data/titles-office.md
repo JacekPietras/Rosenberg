@@ -3,14 +3,15 @@
 // Age titles are in titles-age.md.
 
 // offices
-Vogt, Voigt, advocatus, Vogtei, Voyt, Foyt, Voit, Voget
-Vizedom, Vicedom, Vitzthum, Vitztum, Viztum, vicedominus, Vicar, Viztums
+Amtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman
+Vogt, Voigt, advocatus, Vogtei, Voyt, Foyt, Voit, Voget, voyd
+Vizedom, Vicedom, Vitzthum, Vizthum, Vitztum, Viztum, Vizdom, vicedominus, Vicar, Viztums
 Keller, Kelner, cellerarius
 Domherr, canonicus, Kanoniker, Kanonikus
 Schultheiß, Schultheiss, scultetus
 
 // ranks
-Ritter, miles, milites, Knight
+Ritter, Ritters, miles, milites, Knight
 Edelknecht, armiger
 Knecht
 

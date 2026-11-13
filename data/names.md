@@ -10,6 +10,7 @@ Anton
 Andreas
 Aplo
 Asinus
+Asmus
 Arnold, Arnolt
 Balthasar
 Batt
@@ -17,6 +18,7 @@ Berngern
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
 Burkhard
+Boppe
 Caspar, Kaspar, Caſpar
 Christoph, Chriftoph, Christpoh, Christof
 Cornelius, Cornelis
@@ -27,7 +29,7 @@ Eberhard, Ebirh, Everard, Everhard, Eberhardi, Ebirhardus, eebhrt, rebhart, Ebha
 Eckhard, Ege, Ekkehart, Eckhart, Ekhart, Ekkehard, Eckehardus, Ekkard
 Engel
 Engelhard, Engelhart, Engelhardus
-Erasmus
+Erasmus, Asmus
 Erhard
 Erkinger
 Ernst, Erinze, Erwin, Ehrenfried

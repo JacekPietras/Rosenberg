@@ -17,6 +17,7 @@ data/
 ├── tree.json     # Generated family graph and calculation results
 ├── matching.json # Global probability model parameters
 ├── names.md      # Historical given-name variants under # Men / # Women
+├── name-connectors.md # Variants of terms introducing an alternate surname
 ├── distinctFamilies.md # Family labels excluded by default in document filters
 ├── titles-age.md     # Younger/older title classes and their forms
 ├── titles-office.md  # Offices, ranks and epithets with equivalent variants

@@ -7,10 +7,15 @@ Read this file when writing a person's name in `english` or in the text of
 The shared recognition logic is
 [`docs/app/data/person-name-recognition.js`](../docs/app/data/person-name-recognition.js);
 its lists are `data/names.md`, `data/nobiliary_particles.md`,
-`data/titles-age.md`, `data/titles-office.md`, and place variations. Look places up with
+`data/name-connectors.md`, `data/titles-age.md`, `data/titles-office.md`, and
+place variations. Look places up with
 `python3 scripts/list_place_variations.py` (`--include-churches` when relevant);
 `scripts/place_names.py` resolves building names against their settlements.
 Do not read `data/places.json` directly; it is very large.
+
+Name connectors such as `genannt`, `called`, and `known as` are comma-separated
+equivalents in `data/name-connectors.md`. The recognizer accepts them before a
+given name or between the given name and its particle.
 
 ## Structure
 
@@ -34,6 +39,7 @@ or between the given names and the particle:
 | Particle | `von`, `de`, `v.`, `van` … from `data/nobiliary_particles.md`, as the source has it; `v.` and `von.` become `von` |
 | Place | A canonical place variation from `list_place_variations.py` (`Ussinkeim` → `Uissigheim`) |
 | `zu <place>` | Optional second place, part of the name when the source attaches it to the person |
+| Name connector | `genannt`, `called`, `known as` and listed forms introduce a designation. In constructions such as `Eberhard genannt von Rosenberg`, the following `von Rosenberg` is the designation, not a surname component. |
 | Simple titles | Single title words and epithets from `data/titles-age.md` (`der Jüngere`, `der Ältere`) and `data/titles-office.md` (`Ritter`, `Vogt`, `der Rote`); the first form of a group is canonical |
 | Full titles | A simple title with an optional `zu <place>` or `an <place>`: `Vogt zu Lauda`, `Vizedom zu Amberg` (source `Vitzthum zu Amberg`); the place is canonical as in the Place row |
 
@@ -92,6 +98,12 @@ Non-canonical, to be recognized and rewritten: `Ritter Arnold von Uissigheim`,
 - Normalize only clear variants from the lists. If a name, title, or place is
   ambiguous or not listed, keep the source form and report it; do not invent
   a standard form, and never unify names only because they look similar.
+- A name connector introduces an alternate designation, not a surname. For
+  example, in `Ritters Eberhard genannt von Rosenberg`, recognize the person
+  mention, but do not treat `von Rosenberg` as Eberhard's surname or rewrite it
+  as `Eberhard von Rosenberg` without independent source evidence. An English
+  rendering such as `a knight called Eberhard von Rosenberg` does not change
+  that distinction.
 - A place after the particle is a place in the name, not a residence;
   generic building names need their parent (see
   [`json-formats.md`](json-formats.md#parents-and-names)).

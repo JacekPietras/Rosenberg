@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildSourcePersonPattern } from './person-name-recognition.js?v=3';
+import { buildSourcePersonPattern } from './person-name-recognition.js?v=4';
 import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=11';
 
 export function createDataLoader({
@@ -67,10 +67,11 @@ export function createDataLoader({
     const showBookEarly = !familyOnly && bookPathsForStartup.length > 0;
     let earlyBooks;
     if (showBookEarly) {
-      const [placesText, peopleText, namesText, particlesText, personNameTitlesText, entries] = await Promise.all([
+      const [placesText, peopleText, namesText, particlesText, personNameTitlesText, nameConnectorsText, entries] = await Promise.all([
         repository.getText('data/places.json'), repository.getText('data/people.json'),
         repository.getText('data/names.md'), repository.getText('data/nobiliary_particles.md'),
         Promise.all(['data/titles-age.md', 'data/titles-office.md'].map((path) => repository.getText(path))).then((texts) => texts.join('\n')),
+        repository.getText('data/name-connectors.md'),
         Promise.all(bookPathsForStartup.map(async (path) => [path, await repository.getJson(path)])),
       ]);
       earlyBooks = new Map(entries);
@@ -79,7 +80,8 @@ export function createDataLoader({
       state.people = parsePeople(peopleText);
       state.personPattern = buildPersonPattern(state.people);
       state.personNameTitlesText = personNameTitlesText;
-      state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places, personNameTitlesText);
+      state.nameConnectorsText = nameConnectorsText;
+      state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places, personNameTitlesText, nameConnectorsText);
       state.buildingPattern = buildPlacePattern(state.places.filter((place) => ['castle', 'church'].includes(place.category)));
       state.placePattern = buildPlacePattern(state.places);
       const ordered = [...bookPathsForStartup].sort((left, right) => bookSortYear(earlyBooks.get(right), right) - bookSortYear(earlyBooks.get(left), left) || left.localeCompare(right));
@@ -91,13 +93,14 @@ export function createDataLoader({
       await renderActive();
     }
     mark('sourcesStart');
-    const [placesText, calibrationCitiesText, peopleText, particlesText, namesText, personNameTitlesText, distinctFamiliesText, documents] = await Promise.all([
+    const [placesText, calibrationCitiesText, peopleText, particlesText, namesText, personNameTitlesText, nameConnectorsText, distinctFamiliesText, documents] = await Promise.all([
       repository.getText('data/places.json'),
       repository.getText('docs/assets/calibration-cities.json'),
       repository.getText('data/people.json'),
       repository.getText('data/nobiliary_particles.md'),
       repository.getText('data/names.md'),
       Promise.all(['data/titles-age.md', 'data/titles-office.md'].map((path) => repository.getText(path))).then((texts) => texts.join('\n')),
+      repository.getText('data/name-connectors.md'),
       repository.getText('data/distinctFamilies.md'),
       new Map(await Promise.all(paths.map(async (path) => [path, earlyBooks?.has(path) ? earlyBooks.get(path) : await repository.getJson(path)]))),
     ]);
@@ -120,7 +123,8 @@ export function createDataLoader({
     state.people = parsePeople(peopleText);
     state.personPattern = buildPersonPattern(state.people);
     state.personNameTitlesText = personNameTitlesText;
-    state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places, personNameTitlesText);
+    state.nameConnectorsText = nameConnectorsText;
+    state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places, personNameTitlesText, nameConnectorsText);
     state.buildingPattern = buildPlacePattern(state.places.filter((place) => ['castle', 'church'].includes(place.category)));
     state.placePattern = buildPlacePattern(state.places);
     const bookPaths = paths
