@@ -22,8 +22,6 @@ a fact; correct the translation or report the difference.
 
 ## Extraction
 
-Do not add facts or guesses to documents labelled `Hessen`.
-
 Read the complete entry first. Extract only what the source states explicitly
 or unambiguously; never infer, interpret, or extrapolate. Each fact is one
 concise, atomic assertion in English, keeping historically meaningful German or
