@@ -21,12 +21,25 @@ export function createDocumentRenderer({
   getPeople,
   distinctFamilies,
 }) {
-  function documentStrings(value) {
-    if (typeof value === 'string') return [value];
-    if (Array.isArray(value)) return value.flatMap(documentStrings);
-    if (!value || typeof value !== 'object') return [];
-    return Object.entries(value).filter(([key]) => !['label', 'deleted', 'url'].includes(key))
-      .flatMap(([, nested]) => documentStrings(nested));
+  function documentStrings(doc) {
+    const texts = [];
+    const peopleById = new Map((state.people || []).filter((person) => person.id).map((person) => [person.id, person.name]));
+    const collectFact = (value) => {
+      if (typeof value === 'string') { texts.push(peopleById.get(value) || value); return; }
+      if (Array.isArray(value)) { value.forEach(collectFact); return; }
+      if (value && typeof value === 'object') Object.values(value).forEach(collectFact);
+    };
+    const visit = (value) => {
+      if (Array.isArray(value)) { value.forEach(visit); return; }
+      if (!value || typeof value !== 'object') return;
+      for (const [key, nested] of Object.entries(value)) {
+        if (key === 'english' && typeof nested === 'string') texts.push(nested);
+        else if (key === 'facts') collectFact(nested);
+        else if (typeof nested === 'object' && nested !== null) visit(nested);
+      }
+    };
+    visit(doc);
+    return texts;
   }
 
   function personMentions(doc) {
@@ -34,8 +47,7 @@ export function createDocumentRenderer({
     const patterns = [state.sourcePersonPattern, ...(state.personPattern || []).map(({ pattern }) => pattern)].filter(Boolean);
     for (const text of documentStrings(doc)) {
       for (const sourcePattern of patterns) {
-        const pattern = new RegExp(sourcePattern.source, sourcePattern.flags);
-        for (const match of text.matchAll(pattern)) {
+        for (const match of text.matchAll(sourcePattern)) {
           const name = match[0];
           const key = personRouteName(name).toLocaleLowerCase();
           if (!found.has(key)) found.set(key, name);
@@ -47,12 +59,21 @@ export function createDocumentRenderer({
 
   let indexedDocuments;
   let mentionsByPath;
+  let documentsByMention;
   function documentMentionIndex() {
-    if (indexedDocuments === state.documents && mentionsByPath) return mentionsByPath;
+    if (indexedDocuments === state.documents && mentionsByPath && documentsByMention) return mentionsByPath;
     indexedDocuments = state.documents;
-    mentionsByPath = new Map([...(state.documents || [])]
-      .filter(([path]) => path.startsWith('data/documents/'))
-      .map(([path, doc]) => [path, personMentions(doc)]));
+    mentionsByPath = new Map();
+    documentsByMention = new Map();
+    for (const [path, doc] of state.documents || []) {
+      if (!path.startsWith('data/documents/')) continue;
+      const mentions = personMentions(doc);
+      mentionsByPath.set(path, mentions);
+      for (const [key, name] of mentions) {
+        if (!documentsByMention.has(key)) documentsByMention.set(key, []);
+        documentsByMention.get(key).push({ path, doc, name });
+      }
+    }
     return mentionsByPath;
   }
 
@@ -60,8 +81,22 @@ export function createDocumentRenderer({
     if (doc?.deleted) return ['deleted'];
     const values = Array.isArray(doc?.label) ? doc.label : [doc?.label];
     const labels = [...new Set(values.map((label) => String(label || '').trim())
-      .filter((label) => label && label.toLocaleLowerCase() !== 'to review'))];
+      .filter((label) => label && !['to review', 'important'].includes(label.toLocaleLowerCase())))];
     return labels.length ? labels : values.some((label) => String(label || '').trim()) ? [] : ['Franken'];
+  }
+
+  function documentYearBounds(date) {
+    const value = String(date || '');
+    const bounds = value.split(/\/|--/);
+    if (bounds.length === 2) {
+      const start = bounds[0].match(/^(\d{4})/)?.[1];
+      const end = bounds[1].match(/^(\d{4})/)?.[1];
+      return start && end ? [Number(start), Number(end)] : null;
+    }
+    const yearRange = value.match(/^(\d{4})-(\d{4})$/);
+    if (yearRange) return [Number(yearRange[1]), Number(yearRange[2])];
+    const year = value.match(/^(\d{4})(?:-\d{2}(?:-\d{2})?)?$/)?.[1];
+    return year ? [Number(year), Number(year)] : null;
   }
 
   function reviewNameLabels(doc, path) {
@@ -70,17 +105,24 @@ export function createDocumentRenderer({
     const index = documentMentionIndex();
     const people = index.get(path) || personMentions(doc);
     if (!people.size) return '';
-    const labelsByName = new Map([...people.keys()].map((key) => [key, new Set()]));
-    for (const [otherPath, otherDoc] of state.documents || []) {
-      if (otherPath === path || !index.has(otherPath)) continue;
-      const otherNames = index.get(otherPath);
-      for (const key of people.keys()) {
-        if (otherNames.has(key)) labelsForMentionedDocument(otherDoc).forEach((label) => labelsByName.get(key).add(label));
+    const labelsByName = new Map([...people.keys()].map((key) => [key, new Map()]));
+    for (const key of people.keys()) {
+      for (const { path: otherPath, doc: otherDoc } of documentsByMention.get(key) || []) {
+        if (otherPath === path) continue;
+        const years = documentYearBounds(otherDoc.date);
+        for (const label of labelsForMentionedDocument(otherDoc)) {
+          const range = labelsByName.get(key).get(label) || { start: Infinity, end: -Infinity };
+          if (years) { range.start = Math.min(range.start, years[0]); range.end = Math.max(range.end, years[1]); }
+          labelsByName.get(key).set(label, range);
+        }
       }
     }
     const rows = [...people].map(([key, name]) => {
-      const labels = [...labelsByName.get(key)].sort((left, right) => left.localeCompare(right, undefined, { sensitivity: 'base' }));
-      return labels.length ? `<div class="review-name-label-row"><span class="review-name">${escapeHtml(name)}</span><span class="review-name-labels">${labels.map((label) => `<span class="record-label">${escapeHtml(label)}</span>`).join('')}</span></div>` : '';
+      const labels = [...labelsByName.get(key)].sort(([left], [right]) => left.localeCompare(right, undefined, { sensitivity: 'base' }));
+      return labels.length ? `<div class="review-name-label-row"><span class="review-name">${escapeHtml(name)}</span><span class="review-name-labels">${labels.map(([label, range]) => {
+        const years = Number.isFinite(range.start) ? range.start === range.end ? `${range.start}` : `${range.start}-${range.end}` : '';
+        return `<span class="record-label">${escapeHtml(label)}${years ? ` [${years}]` : ''}</span>`;
+      }).join('')}</span></div>` : '';
     }).filter(Boolean);
     return rows.length ? `<div class="review-name-mentions" aria-label="Labels in other documents where names are mentioned">${rows.join('')}</div>` : '';
   }
