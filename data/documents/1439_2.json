@@ -1,12 +1,15 @@
 {
   "date": "1439",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Fehdeakten Verweis 42; archival old reference: Fehdeakten (alt) 8 b, page 4 b",
       "url": "https://www.gda.bayern.de/gvl/document/8ab94976-ab72-4893-ab04-2a504d3e8ac6",
       "german": "Fragmenta in Fehde und Abklag-Sachen Peters Stettenberg des Jüngeren wider Arnold und Eberhard von Rosenberg und den beiden letztern assistierenden Markgrafen Friedrich von Brandenburg.",
-      "english": "Fragments concerning the feud and complaint cases brought by Peter Stettenberg the Younger against Arnold and Eberhard von Rosenberg and Margrave Friedrich of Brandenburg, who assisted them."
+      "english": "Fragments concerning the feud and complaint cases brought by Peter Stettenberg the Younger against Arnold von Rosenberg and Eberhard von Rosenberg and Margrave Friedrich of Brandenburg, who assisted them."
     }
   ]
 }
