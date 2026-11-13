@@ -9,9 +9,9 @@
       "english": "Engelhard von Rosenberg, son of the Vogt of Dürn, opens his fortress Mure to the same. Original: Munich, State Archives, Karlsr. Copb. 525a,275.",
       "facts": [
         {
-          "person": "Engelhard von Rosenberg",
-          "type": "generic",
-          "content": "was a son of the Vogt of Dürn."
+          "person": "vogt_zu_Durn",
+          "type": "parent",
+          "of": "Engelhard von Rosenberg"
         },
         {
           "person": "Engelhard von Rosenberg",
