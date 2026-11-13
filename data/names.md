@@ -29,7 +29,7 @@ Eberhard, Ebirh, Everard, Everhard, Eberhardi, Ebirhardus, eebhrt, rebhart, Ebha
 Eckhard, Ege, Ekkehart, Eckhart, Ekhart, Ekkehard, Eckehardus, Ekkard
 Engel
 Engelhard, Engelhart, Engelhardus
-Erasmus, Asmus
+Erasmus
 Erhard
 Erkinger
 Ernst, Erinze, Erwin, Ehrenfried
