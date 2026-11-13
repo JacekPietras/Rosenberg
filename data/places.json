@@ -532,8 +532,6 @@
     "variations": [
       "Bartenstein"
     ],
-    "lat": 49.3559497,
-    "lon": 9.8812253,
     "description": "The von Rosenbergs held Bartenstein as a fief and family seat; their shares there are documented from 1419 into the 1440s. No separate city or village is established here for 1387: LEO-BW describes Bartenstein as the castle and associated buildings before 1688, with settlement development only in the early 18th century and first mention as a town in 1806. Its medieval settlement category is therefore unset and this settlement marker is hidden. Source: https://www.leo-bw.de/detail-gis/-/Detail/details/ORT/labw_ortslexikon/3259/Bartenstein .",
     "showOnMap": false
   },
@@ -1308,15 +1306,12 @@
   },
   {
     "id": "braniewo",
-    "category": "city",
     "showOnMap": false,
     "variations": [
       "Brunsberg",
       "Braniewo",
       "Braunsberg"
-    ],
-    "lat": 54.379713,
-    "lon": 19.820056
+    ]
   },
   {
     "id": "schonau",
@@ -1342,27 +1337,21 @@
   },
   {
     "id": "seckendorff",
-    "category": "village",
     "variations": [
       "Seckendorf",
       "Seckendorff"
     ],
-    "showOnMap": false,
-    "lat": 49.484414,
-    "lon": 10.850534
+    "showOnMap": false
   },
   {
     "id": "niedeck",
-    "category": "village",
     "variations": [
       "Niedeck",
       "Neideck",
       "Nydecke",
       "Nydeck"
     ],
-    "showOnMap": false,
-    "lat": 0.0,
-    "lon": 0.0
+    "showOnMap": false
   },
   {
     "id": "ebrach",

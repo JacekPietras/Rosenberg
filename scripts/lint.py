@@ -12,6 +12,7 @@ import argparse
 ROOT = Path(__file__).resolve().parent.parent
 LINTERS = Path(__file__).resolve().parent / "linters"
 CHECKS = (
+    "normalize_hidden_places.py",
     "validate_documents.py",
     "migrate_von_und_zu.py",
     "validate_english_names.py",
@@ -66,6 +67,10 @@ def main(argv=None):
                 match = re.search(r", (\d+) warning\(s\), (\d+) error\(s\)\.", line)
                 if match:
                     issues += int(match[1]) + int(match[2])
+            elif line.startswith("Checked visible places:"):
+                match = re.search(r": (\d+) error\(s\)\.", line)
+                if match:
+                    issues += int(match[1])
             elif line.startswith("Checked English name forms:"):
                 match = re.search(r": (\d+) finding\(s\)\.", line)
                 if match:
