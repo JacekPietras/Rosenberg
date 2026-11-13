@@ -2,6 +2,7 @@
 
 from dataclasses import asdict
 import json
+import math
 from pathlib import Path
 import sys
 import tempfile
@@ -11,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from family_graph import build, load_inputs
 from family_graph.constraints import cycle_nodes
 from family_graph.dates import date_bounds, death_interval, inherited_date_bounds
-from family_graph.export import apply, serialize, validate_generated
+from family_graph.export import apply, pack_evidence, serialize, unpack_evidence, validate_generated
 from family_graph.model import fingerprint, registry_keys
 from family_graph.names import Names
 from family_graph.policy import OfficeRule
@@ -608,6 +609,26 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertEqual(output, (self.root / 'data/tree.json').read_bytes())
         self.assertNotIn('data/tree.json', tree['inputs'])
         self.assertTrue(all(set(person) == {'id', 'name'} for person in json.loads(before)))
+
+    def test_apply_commits_only_merged_and_ambiguous_comparisons_and_caches_the_rest(self):
+        inputs = self.inputs(facts=[relation('a', 'b')])
+        tree = serialize(inputs, [build(inputs)])
+        view = next(iter(tree['evidence']))
+        graph = tree['evidence'][view]
+        prior = json.loads((self.root / 'data/matching.json').read_text())['priorProbability']
+        template = {'person': graph['nodes'][0]['key'], 'candidate': graph['nodes'][1]['key'], 'probability': prior,
+                    'logOdds': math.log(prior / (1 - prior)), 'features': [], 'usesGuesses': False, 'sources': [graph['sources'][0]],
+                    'stage': 3, 'iteration': 1, 'reason': 'x'}
+        full = unpack_evidence(graph)
+        full['comparisons'] = [{**template, 'status': status} for status in ('merged', 'below-threshold', 'superseded')]
+        tree['evidence'][view] = pack_evidence(full)
+        apply(inputs, tree)
+        saved = json.loads((self.root / 'data/tree.json').read_text())
+        self.assertEqual(['merged'], [c['status'] for c in unpack_evidence(saved['evidence'][view])['comparisons']])
+        self.assertNotIn(b'\n  ', (self.root / 'data/tree.json').read_bytes().strip())
+        debug = json.loads((self.root / '.cache/tree-debug.json').read_text())
+        self.assertEqual(3, len(unpack_evidence(debug['evidence'][view])['comparisons']))
+        self.assertEqual(debug['fingerprint'], saved['fingerprint'])
 
     def test_intervening_tree_edit_prevents_overwriting_it(self):
         inputs = self.inputs(facts=[relation('a', 'b')])

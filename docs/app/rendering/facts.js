@@ -1,5 +1,5 @@
 import { escapeHtml } from './html.js';
-import { personMentionClass } from '../data/person-name-recognition.js?v=5';
+import { personMentionClass } from '../data/person-name-recognition.js?v=6';
 
 const RELATIONS = { parent: 'is parent of', sibling: 'is sibling of', spouse: 'is spouse of' };
 const hasDate = (value) => value && typeof value === 'object' && Object.hasOwn(value, 'date');

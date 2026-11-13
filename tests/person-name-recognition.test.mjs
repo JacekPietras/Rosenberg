@@ -3,8 +3,8 @@ import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { moduleUrl } from './browser-module.mjs';
 
-const { buildSourcePersonPattern, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
-const names = '# Men\nArnold, Arnolt\nKonrad, Conradus\nEberhard\nEbirhart\nHartmut\nHans\nJohann\nWilhelm\nWiprecht';
+const { buildSourcePersonPattern, personMentionClass, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
+const names = '# Men\nArnold, Arnolt\nKonrad, Conradus\nEberhard\nEbirhart\nHartmut\nHans\nJohann\nPeter\nWilhelm\nWiprecht';
 const particles = 'von\nv.\nvon.\nde\nan\nvan';
 const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }, { name: 'Michelsberg', variations: ['Michelsberg'] }, { name: 'Landstein', variations: ['Landstein'] }, { name: 'Helmstadt', variations: ['Helmstadt'] }];
 const titles = '# Younger\nder Jüngere, the Younger\nder Junge\n# Older\nder Ältere, the Elder, the Older\nder Alte\n# Offices and ranks\nAmtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman\nRitter, Ritters, miles, Knight\nVogt, advocatus\nVizedom, Vitzthum, Vizthum, Vitztum, Vizdom\nder Rote, Rufus';
@@ -97,6 +97,16 @@ test('recognizes data-listed English name connectors before the given name', () 
     assert.equal(pattern.exec(phrase)?.[0], phrase);
     assert.equal(personRouteName(phrase, titles, connectors), 'Eberhard von Rosenberg');
   }
+});
+
+test('recognizes a called designation after a person name without absorbing it into the route name', () => {
+  pattern.lastIndex = 0;
+  const sentence = 'Anne von Mauer her son Peter von Helmstadt, called von Rosenberg';
+  assert.equal(pattern.exec(sentence)?.[0], 'Peter von Helmstadt, called von Rosenberg');
+  assert.equal(personRouteName('Peter von Helmstadt, called von Rosenberg', titles, connectors, particles),
+    'Peter von Helmstadt');
+  assert.equal(personMentionClass('Peter von Helmstadt, called von Rosenberg', connectors, particles), 'person-mention');
+  assert.equal(personMentionClass('Peter von Rosenberg', connectors, particles), 'person-mention-blue');
 });
 
 test('does not attach the previous list item title to the next person across a semicolon', () => {

@@ -40,3 +40,6 @@ __pycache__/
 
 # Cached archive search responses
 .cache/archive_search/
+
+# Full comparison detail written with data/tree.json
+.cache/tree-debug.json

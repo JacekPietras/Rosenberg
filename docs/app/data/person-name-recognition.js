@@ -9,8 +9,14 @@ function alternatives(values) {
     .join('|');
 }
 
-export function personMentionClass(name) {
-  return /\b(?:Rosenberg|Uissigheim)\b/iu.test(name)
+export function personMentionClass(name, connectorText = '', particleText = '') {
+  const connectors = alternatives(String(connectorText).split(/\r?\n/)
+    .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
+  const particles = alternatives(String(particleText).split(/\r?\n/).map((line) => line.split('//')[0].trim()));
+  const personName = connectors && particles
+    ? String(name).replace(new RegExp(`[\\s,;]+(?:${connectors})[\\s,;]+(?:${particles})\\s+[^,;]+$`, 'iu'), '')
+    : String(name);
+  return /\b(?:Rosenberg|Uissigheim)\b/iu.test(personName)
     ? 'person-mention-blue'
     : 'person-mention';
 }
@@ -49,13 +55,15 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const nameNote = '(?:\\s*\\(\\s*or\\s+[^)]*\\))?';
   const leadingConnector = connectors ? `(?:(?:${connectors})\\s+)?` : '';
   const namingConnector = connectors ? `(?:\\s+(?:${connectors}))?` : '';
-  return new RegExp(`(?<![\\p{L}\\p{N}])${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}(?![\\p{L}\\p{N}])`, 'giu');
+  const alternateDesignation = connectors ? `(?:[\\s,;]+(?:${connectors})[\\s,;]+${particle}\\s+${placeClause})?` : '';
+  return new RegExp(`(?<![\\p{L}\\p{N}])${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}${alternateDesignation}(?![\\p{L}\\p{N}])`, 'giu');
 }
 
-export function personRouteName(name, titleText = '', connectorText = '') {
+export function personRouteName(name, titleText = '', connectorText = '', particleText = '') {
   const titles = alternatives(parsePersonNameTitles(titleText));
   const connectors = alternatives(String(connectorText).split(/\r?\n/)
     .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
+  const particles = alternatives(String(particleText).split(/\r?\n/).map((line) => line.split('//')[0].trim()));
   const ordinal = '(?:\\s+(?:\\(\\s*[IVXLCDM]+\\s*\\)|\\[\\s*[IVXLCDM]+\\s*\\]|[IVXLCDM]+\\.?))?';
   const titleSequence = titles ? `(?:[\\s,]+(?:${titles}))*` : '';
   return String(name)
@@ -65,6 +73,7 @@ export function personRouteName(name, titleText = '', connectorText = '') {
     .replace(/\s*\(\s*or\s+[^)]*\)/iu, '')
     .replace(new RegExp(`${ordinal}${titleSequence}[\\s,;]+(?=(?:von|v\\.?|van|de|in|der|die|das|des|of)\\b)`, 'iu'), ' ')
     .replace(new RegExp(`[\\s,;]+(?:${titles})(?:\\s+(?:zu|an|of)\\s+[^,;]+)?(?:[\\s,;]+(?:${titles})(?:\\s+(?:zu|an|of)\\s+[^,;]+)?)*$`, 'iu'), '')
+    .replace(new RegExp(`[\\s,;]+(?:${connectors})[\\s,;]+(?:${particles})\\s+[^,;]+$`, 'iu'), '')
     .replace(/\s*\([^)]*\)$/u, '')
     .trim();
 }

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Inspect saved graph connections for a person ID, evidence key, name, or source pointer.
 
-Reads data/tree.json without rebuilding or modifying it. Parent arrows point
+Reads data/tree.json without rebuilding or modifying it. Comparisons that are not
+merged or ambiguous come from the local .cache/tree-debug.json written by --apply. Parent arrows point
 from parent to child; spouse, sibling and kin connections are symmetric.
 """
 from __future__ import annotations
@@ -12,7 +13,7 @@ import json
 from pathlib import Path
 import sys
 
-from family_graph.export import unpack_evidence
+from family_graph.export import DEBUG_CACHE, load_debug_tree, unpack_evidence
 from family_graph.model import fingerprint
 from family_graph.sources import input_manifest
 
@@ -170,7 +171,11 @@ def main(argv=None):
         parser.error('--depth must be positive and --comparison-limit nonnegative')
     try:
         tree = json.loads(args.tree.read_text(encoding='utf-8'))
-        views = tree['evidence']
+        debug = load_debug_tree(args.root / DEBUG_CACHE, tree)
+        if debug is None:
+            print(f'Note: {DEBUG_CACHE} is missing or from another build; only merged and ambiguous '
+                  'comparisons are shown. Run rebuild_family_tree.py --apply to restore it.', file=sys.stderr)
+        views = (debug or tree)['evidence']
         view = args.view or ('with-guesses' if 'with-guesses' in views else next(iter(views)))
         if view not in views:
             raise ValueError(f'Unknown view {view!r}; available: {", ".join(views)}')

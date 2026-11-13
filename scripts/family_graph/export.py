@@ -1,4 +1,4 @@
-"""Validate a generated graph in memory and write only data/tree.json."""
+"""Validate a generated graph in memory and write data/tree.json plus a local debug cache."""
 
 from copy import deepcopy
 import json
@@ -10,6 +10,10 @@ from .model import fingerprint, registry_keys
 from .sources import generic_text, input_manifest
 from .person_names import PersonNameRecognizer
 from .probability import parameters, person_references
+
+
+DEBUG_CACHE = '.cache/tree-debug.json'
+COMMITTED_COMPARISON_STATUSES = {'merged', 'ambiguous'}
 
 
 def resolve_pointer(value, pointer):
@@ -70,6 +74,31 @@ def unpack_evidence(graph):
     for comparison in result.get('comparisons', []):
         comparison['sources'] = [source(index) for index in comparison['sources']]
     return result
+
+
+def committed_tree(tree):
+    """The tree without comparisons that only matter for debugging."""
+    evidence = {}
+    for view, graph in tree['evidence'].items():
+        graph = unpack_evidence(graph)
+        graph['comparisons'] = [c for c in graph['comparisons'] if c['status'] in COMMITTED_COMPARISON_STATUSES]
+        evidence[view] = pack_evidence(graph)
+    return {**tree, 'evidence': evidence}
+
+
+def dump(tree):
+    return (json.dumps(tree, ensure_ascii=False, separators=(',', ':')) + '\n').encode('utf-8')
+
+
+def load_debug_tree(path, tree):
+    """The full tree saved next to `tree`, or None when it is absent or from another build."""
+    try:
+        debug = json.loads(path.read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        return None
+    if not isinstance(debug, dict) or debug.get('fingerprint') != tree.get('fingerprint'):
+        return None
+    return debug
 
 
 def serialize(inputs, results):
@@ -299,7 +328,10 @@ class ConcurrentChange(ValueError):
 def apply(inputs, tree):
     validate_generated(tree, inputs.people, inputs.root)
     path = inputs.root / 'data/tree.json'
-    output = (json.dumps(tree, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
+    committed = committed_tree(tree)
+    validate_generated(committed, inputs.people, inputs.root)
+    output = dump(committed)
+    debug_path = inputs.root / DEBUG_CACHE
     previous = path.read_bytes() if path.exists() else None
     inputs_changed = (inputs.manifest != input_manifest(inputs.root)
                       or (inputs.root / 'data/people.json').read_bytes() != inputs.registry_bytes)
@@ -308,4 +340,6 @@ def apply(inputs, tree):
         raise ConcurrentChange('inputs or tree changed during computation; tree was not written')
     if output != previous:
         path.write_bytes(output)
+    debug_path.parent.mkdir(parents=True, exist_ok=True)
+    debug_path.write_bytes(dump(tree))
     return output

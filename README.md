@@ -61,7 +61,7 @@ python3 scripts/rebuild_family_tree.py
 python3 scripts/rebuild_family_tree.py --explain vogt_zu_Lauda
 ```
 
-Use `--apply` to write `data/tree.json`. The result combines facts and lower-weight guesses. `data/people.json` contains
+Use `--apply` to write `data/tree.json` (compact, with only merged and ambiguous identity comparisons) and the full comparison detail to the gitignored `.cache/tree-debug.json`. The result combines facts and lower-weight guesses. `data/people.json` contains
 only confirmed IDs and full names; reconstruction never changes that registry. The tree includes people found in typed
 source assertions, including people without registry IDs. Source-local family
 groups and contextual links across sources remain distinguishable from fixed
@@ -109,7 +109,7 @@ Accepts a person ID, evidence node key, exact full name, or source JSON pointer
 (optionally ending in `/person` or `/of`). Prints family connections, supporting
 sources, identity comparisons, and possible identity matches. Use `--depth 2`
 for another family hop, `--details --comparison-limit 0` for all comparison
-evidence, or `--json` for the full selected graph. Stale source fingerprints are
+evidence, or `--json` for the full selected graph. Comparisons that were not merged or ambiguous need `.cache/tree-debug.json`; without it a note is printed and they are omitted. Stale source fingerprints are
 reported; evidence keys refer to the saved build and can change after rebuilding.
 
 ## Archives

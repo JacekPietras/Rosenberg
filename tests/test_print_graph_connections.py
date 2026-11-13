@@ -87,6 +87,30 @@ class ConnectionTests(unittest.TestCase):
             self.assertIn('stale', errors.getvalue())
             self.assertEqual(original, path.read_bytes())
 
+    def test_cli_uses_the_matching_debug_cache_and_notes_its_absence(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            kept = graph()
+            full = {**kept, 'comparisons': [*kept['comparisons'], {**kept['comparisons'][0], 'status': 'below-threshold'}]}
+            path = root / 'tree.json'
+            tree = {'evidence': {'with-guesses': pack_evidence(kept)}, 'inputs': {}, 'fingerprint': fingerprint({})}
+            path.write_text(json.dumps(tree))
+            def run():
+                output, errors = io.StringIO(), io.StringIO()
+                with patch('print_graph_connections.input_manifest', return_value={}), redirect_stdout(output), redirect_stderr(errors):
+                    self.assertEqual(0, main(['id', '--tree', str(path), '--root', str(root), '--json']))
+                return len(json.loads(output.getvalue())['comparisons']), errors.getvalue()
+            count, errors = run()
+            self.assertIn('tree-debug.json', errors)
+            (root / '.cache').mkdir()
+            debug = root / '.cache/tree-debug.json'
+            debug.write_text(json.dumps({**tree, 'evidence': {'with-guesses': pack_evidence(full)}}))
+            more, errors = run()
+            self.assertEqual(count + 1, more)
+            self.assertNotIn('tree-debug.json', errors)
+            debug.write_text(json.dumps({**tree, 'fingerprint': 'other', 'evidence': {'with-guesses': pack_evidence(full)}}))
+            self.assertEqual(count, run()[0])
+
 
 if __name__ == '__main__':
     unittest.main()

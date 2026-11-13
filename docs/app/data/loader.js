@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildSourcePersonPattern } from './person-name-recognition.js?v=4';
+import { buildSourcePersonPattern } from './person-name-recognition.js?v=6';
 import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=11';
 
 export function createDataLoader({
@@ -81,6 +81,7 @@ export function createDataLoader({
       state.personPattern = buildPersonPattern(state.people);
       state.personNameTitlesText = personNameTitlesText;
       state.nameConnectorsText = nameConnectorsText;
+      state.nobiliaryParticlesText = particlesText;
       state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places, personNameTitlesText, nameConnectorsText);
       state.buildingPattern = buildPlacePattern(state.places.filter((place) => ['castle', 'church'].includes(place.category)));
       state.placePattern = buildPlacePattern(state.places);
@@ -124,6 +125,7 @@ export function createDataLoader({
     state.personPattern = buildPersonPattern(state.people);
     state.personNameTitlesText = personNameTitlesText;
     state.nameConnectorsText = nameConnectorsText;
+    state.nobiliaryParticlesText = particlesText;
     state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places, personNameTitlesText, nameConnectorsText);
     state.buildingPattern = buildPlacePattern(state.places.filter((place) => ['castle', 'church'].includes(place.category)));
     state.placePattern = buildPlacePattern(state.places);

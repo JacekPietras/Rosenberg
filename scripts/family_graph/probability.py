@@ -433,6 +433,18 @@ class ProbabilityModel:
             if len(parties) == 1:
                 profile.financial_counterparties.setdefault(next(iter(parties)), []).append(evidence)
 
+    def profile_chronology(self, profile, facts_only=False):
+        stamp = (len(profile.mentions), len(profile.derived))
+        slot = '_chronology_facts' if facts_only else '_chronology'
+        cached = profile.__dict__.get(slot)
+        if cached is None or cached[0] != stamp:
+            if facts_only:
+                value = chronology([m for m in profile.mentions if m.assertion.source.kind == 'facts'], self.settings, self.names)
+            else:
+                value = chronology(profile.mentions, self.settings, self.names, profile.derived)
+            cached = profile.__dict__[slot] = stamp, value
+        return cached[1]
+
     def compare(self, left, right):
         p = self.settings
         features, refs = [], {**left.refs, **right.refs}
@@ -449,7 +461,7 @@ class ProbabilityModel:
         blocks, hard = [], []
         # Time distance alone is neutral; only the years a merge adds to the
         # minimum implied age count, and only beyond a comfortable age.
-        own = chronology(left.mentions, p, self.names, left.derived), chronology(right.mentions, p, self.names, right.derived)
+        own = self.profile_chronology(left), self.profile_chronology(right)
         value, age, year, sources, blocked = age_penalty(merge_chronology(*own), p)
         if blocked:
             blocks.append(f'impossible age: at least {age:.0f} years old by {year}')
@@ -482,7 +494,7 @@ class ProbabilityModel:
             if 'birth' in summary and 'last' in summary and (summary['last'][0] - summary['birth'][0]) / YEAR > p['maxAgeYears']:
                 hard.append('impossible age')
                 break
-        factual = [chronology([m for m in side.mentions if m.assertion.source.kind == 'facts'], p, self.names) for side in (left, right)]
+        factual = [self.profile_chronology(side, facts_only=True) for side in (left, right)]
         if death_conflicts(*factual, p)[0]:
             hard.append(death_conflicts(*factual, p)[1])
         span = living_span([*left.mentions, *right.mentions], p, self.names)

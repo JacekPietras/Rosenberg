@@ -18,7 +18,7 @@ import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as 
 import { createMapScreen } from './screens/map.js?v=85';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=130';
 import { createMarkupRenderer } from './rendering/markup.js?v=101';
-import { personMentionClass } from './data/person-name-recognition.js?v=5';
+import { personMentionClass } from './data/person-name-recognition.js?v=6';
 import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=20';
 import { sortByDate } from './image-date-sort.js?v=2';
 import { documentTitle, documentYear, bookSortYear } from './rendering/document-meta.js';
@@ -169,7 +169,7 @@ function linkedMarkup(value = '', linkEntities = true) {
     const resolution = resolvePerson(people, match);
     if (!resolution.person && !resolution.ambiguous) return match;
     const query = encodeURIComponent(match);
-    return token(`<a class="person-link ${personMentionClass(match)}" href="?person=${query}">${match}</a>`);
+    return token(`<a class="person-link ${personMentionClass(match, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${query}">${match}</a>`);
   });
   if (state.placePattern) text = text.replace(state.placePattern, (match) => {
     const place = state.places.find((item) => item.name.toLocaleLowerCase() === match.toLocaleLowerCase());
@@ -1504,11 +1504,14 @@ async function loadAll() {
 }
 
 async function refreshIfChanged() {
+  if (state.active === 'documents' && !state.person && !state.place) return;
   if ($('#image-lightbox')?.open) return;
   try {
     const files = await getRepositoryFiles();
     if ($('#image-lightbox')?.open) return;
-    if (JSON.stringify(files) !== state.snapshot) await loadAll();
+    if (JSON.stringify(files) !== state.snapshot) {
+      await loadAll();
+    }
   } catch (error) {
     // A temporary network failure should not interrupt the next refresh attempt.
     console.warn('Could not check for data updates:', error);

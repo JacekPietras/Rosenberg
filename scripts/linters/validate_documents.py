@@ -145,6 +145,18 @@ def order_document(document):
         changed = True
     reordered = reorder_fields(document, DOCUMENT_FIELDS)
     labels = reordered.get("label")
+    if reordered.get("deleted") is True:
+        if labels == "to review":
+            reordered.pop("label")
+            changed = True
+        elif isinstance(labels, list) and "to review" in labels:
+            labels = [label for label in labels if label != "to review"]
+            if not labels:
+                reordered.pop("label")
+            else:
+                reordered["label"] = labels[0] if len(labels) == 1 else labels
+            changed = True
+            labels = reordered.get("label")
     if isinstance(labels, list) and len(labels) == 1:
         reordered["label"] = labels[0]
         changed = True
@@ -286,6 +298,29 @@ def main(argv=None):
 
         if isinstance(document, dict):
             if not args.all and document.get("deleted") is True:
+                labels = document.get("label")
+                if labels == "to review":
+                    document.pop("label")
+                elif isinstance(labels, list) and "to review" in labels:
+                    labels = [label for label in labels if label != "to review"]
+                    if labels:
+                        document["label"] = labels[0] if len(labels) == 1 else labels
+                    else:
+                        document.pop("label")
+                else:
+                    labels = None
+                if labels is not None:
+                    try:
+                        original = path.read_text(encoding="utf-8")
+                        trailing_newline = original.endswith("\n")
+                        updated = json.dumps(document, ensure_ascii=False, indent=2)
+                        if trailing_newline:
+                            updated += "\n"
+                        path.write_text(updated, encoding="utf-8")
+                        print(f"{display_path(path)}: removed review label from deleted document")
+                    except (OSError, UnicodeError) as exc:
+                        print(f"{display_path(path)}: error: cannot normalize deleted document: {exc}")
+                        errors += 1
                 continue
             labels = document.get("label", [])
             if isinstance(labels, str):

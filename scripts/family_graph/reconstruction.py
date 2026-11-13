@@ -131,11 +131,15 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             key = parent[key]
         return key
 
+    cached_groups = []
+
     def groups():
-        result = defaultdict(list)
-        for key in mentions:
-            result[find(key)].append(key)
-        return result
+        if not cached_groups:
+            result = defaultdict(list)
+            for key in mentions:
+                result[find(key)].append(key)
+            cached_groups.append(result)
+        return cached_groups[0]
 
     def anchor(handles):
         return {mentions[h].reference for h in handles if mentions[h].reference in registry and registry[mentions[h].reference].get('id') == mentions[h].reference}
@@ -143,13 +147,22 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     def name(handle):
         return mention_names[handle]
 
+    given_memo = {}
+
     def given(value):
-        first = value.split()[0]
-        return first[:-1] if len(first) >= 4 and first[-1:] in {'a', 'e'} else first
+        if value not in given_memo:
+            first = value.split()[0]
+            given_memo[value] = first[:-1] if len(first) >= 4 and first[-1:] in {'a', 'e'} else first
+        return given_memo[value]
+
+    compatible_memo = {}
 
     def compatible_names(left, right):
-        a, b = left.split(), right.split()
-        return given(left) == given(right) and (len(a) == 1 or len(b) == 1 or a[1:] == b[1:])
+        key = left, right
+        if key not in compatible_memo:
+            a, b = left.split(), right.split()
+            compatible_memo[key] = given(left) == given(right) and (len(a) == 1 or len(b) == 1 or a[1:] == b[1:])
+        return compatible_memo[key]
 
     def scope(mention):
         return mention_scopes[mention.handle]
@@ -244,32 +257,41 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             parts[find(h)].append(h)
         return different_parent(list(parts.values()))
 
+    relation_assertions = [a for a in assertions if a.original['type'] in RELATIONS and not a.basis]
+    static_memo = {}
+
+    def static_consistent(component):
+        key = tuple(component)
+        if key not in static_memo:
+            static_memo[key] = static_check(component)
+        return static_memo[key]
+
+    def static_check(component):
+        if len(anchor(component)) > 1:
+            return False
+        forms = {name(h) for h in component}
+        if any(not compatible_names(a, b) for a, b in combinations(forms, 2)):
+            return False
+        by_scope = defaultdict(set)
+        for h in component:
+            by_scope[scope(mentions[h])].update(mentions[h].titles)
+        # Different age designations in one passage name different people.
+        return not any(len(titles & AGE_TITLES) > 1 for titles in by_scope.values())
+
     def consistent(components, new=None):
         # Only proposed components are checked for chronology; unchanged
         # identities cannot block unrelated merges.
         mapping = {h: index for index, component in enumerate(components) for h in component}
         for index, component in enumerate(components):
-            if len(anchor(component)) > 1:
+            if not static_consistent(component):
                 return False
-            if (new is None or index < new) and (chronology_conflict(component) or new_different_parent(component)):
-                return False
-            forms = {name(h) for h in component}
-            if any(not compatible_names(a, b) for a, b in combinations(forms, 2)):
-                return False
-            by_scope = defaultdict(set)
-            for h in component:
-                by_scope[scope(mentions[h])].update(mentions[h].titles)
-            # Different age designations in one passage name different people.
-            if any(len(titles & AGE_TITLES) > 1 for titles in by_scope.values()):
-                return False
-            if (new is None or index < new) and (new_passage_conflict(component) or new_too_old(component)):
+            if (new is None or index < new) and (chronology_conflict(component) or new_different_parent(component)
+                                                 or new_passage_conflict(component) or new_too_old(component)):
                 return False
         edges, siblings = [], []
         same_named_parents = defaultdict(set)
         same_named_spouses = defaultdict(set)
-        for assertion in assertions:
-            if assertion.original['type'] not in RELATIONS or assertion.basis:
-                continue
+        for assertion in relation_assertions:
             left, right = [mapping[m.handle] for m in assertion.mentions]
             if left == right:
                 return False
@@ -451,6 +473,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     refs.update(dependencies[key])
                     refs.update(support[key])
                 join_membership(component, current, adjacency, scores)
+                cached_groups.clear()
                 for key in component:
                     parent[key] = root
                 dependencies[root].update(refs)
@@ -469,6 +492,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             by_anchor[mention.reference].append(handle)
     for handles in by_anchor.values():
         for handle in handles[1:]:
+            cached_groups.clear()
             parent[handle] = handles[0]
 
     # Pass 0: normalize kinship variants before grouping relationships.
@@ -1048,6 +1072,11 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             if root not in paths:
                 paths[root] = tree_paths(tree, root, second['maxPathSteps'])
             return paths[root]
+        passage_memo = {}
+        def passage_set(root):
+            if root not in passage_memo:
+                passage_memo[root] = {scope(mentions[x])[:2] for x in current[root]}
+            return passage_memo[root]
         relative_memo = {}
         def relative_block(root, candidate):
             if root not in relative_memo:
@@ -1119,8 +1148,9 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 offset = 1 if 'older' in age_classes else -1 if 'younger' in age_classes else 0
                 if not offset:
                     continue
+                passage = scope(mentions[h])[:2]
                 namesakes = [other for other in buckets[given(root_names[root])] if other not in (root, candidate)
-                             and any(scope(mentions[x])[:2] == scope(mentions[h])[:2] for x in current[other])]
+                             and passage in passage_set(other)]
                 if any(generation(path) == offset for other in namesakes for path in paths_from(other).get(candidate, ())):
                     added.append(('age-title namesake one generation ' + ('below' if offset > 0 else 'above'),
                                   second['ageTitleNamesakeWeight'] * reliability(mentions[h].assertion.source, model.settings),
@@ -1262,6 +1292,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             for h in live[moving]:
                 membership[h] *= share
             top_root = min(left, right)
+            cached_groups.clear()
             parent[left if top_root == right else right] = top_root
             touched.update((left, right))
             refs = {**dependencies[left], **dependencies[right], **{ref.key: ref for ref in record['sources']}}
