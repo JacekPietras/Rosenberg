@@ -5,7 +5,8 @@ of copies of a fact. Source factors are never inferred from catalogue quality.
 """
 
 from copy import deepcopy
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, fields
+from hashlib import blake2b
 from datetime import date
 from itertools import combinations
 from functools import lru_cache
@@ -352,6 +353,7 @@ class ProbabilityModel:
         self.settings, self.names = parameters(settings), names
         self.patterns = place_patterns(resolve_place_names(names.raw_places))
         self.background = {'total': 0.0, 'counts': {}}
+        self.compare_cache = {}
 
     def set_name_frequencies(self, assertions, observations, registry):
         counts, by_source, weights = {}, {}, {}
@@ -375,6 +377,7 @@ class ProbabilityModel:
                 if len(name.split()) >= 2:
                     counts[name] = counts.get(name, 0) + weights[key]
         self.background = {'total': round(sum(counts.values()), 8), 'counts': {name: round(counts[name], 8) for name in sorted(counts)}}
+        self.compare_cache.clear()
 
     def relative_rarity(self, name):
         if self.background['total'] <= 0 or len(name.split()) < 2:
@@ -433,6 +436,11 @@ class ProbabilityModel:
             if len(parties) == 1:
                 profile.financial_counterparties.setdefault(next(iter(parties)), []).append(evidence)
 
+    def profile_living(self, profile):
+        """(first, last) living ordinals over all reliability levels, as `living_span` uses."""
+        level = cumulative(self.profile_chronology(profile), 0)
+        return (level['first'][0], level['alive'][0]) if 'first' in level and 'alive' in level else None
+
     def profile_chronology(self, profile, facts_only=False):
         stamp = (len(profile.mentions), len(profile.derived))
         slot = '_chronology_facts' if facts_only else '_chronology'
@@ -445,7 +453,26 @@ class ProbabilityModel:
             cached = profile.__dict__[slot] = stamp, value
         return cached[1]
 
+    @staticmethod
+    def signature(profile):
+        cached = profile.__dict__.get('_signature')
+        if cached is None:
+            content = repr([getattr(profile, f.name) for f in fields(profile) if f.name != 'mentions'])
+            cached = profile.__dict__['_signature'] = blake2b(content.encode(), digest_size=16).digest(), tuple(profile.mentions)
+        return cached
+
     def compare(self, left, right):
+        """Pure in the two profiles, so an unchanged pair keeps its earlier record."""
+        one, other = self.signature(left), self.signature(right)
+        key = left.key, right.key
+        entry = self.compare_cache.get(key)
+        if (entry is None or entry[0] != one[0] or entry[1] != other[0]
+                or len(entry[2]) != len(one[1]) or any(a is not b for a, b in zip(entry[2], one[1]))
+                or len(entry[3]) != len(other[1]) or any(a is not b for a, b in zip(entry[3], other[1]))):
+            entry = self.compare_cache[key] = one[0], other[0], one[1], other[1], self.compare_uncached(left, right)
+        return {name: list(value) if isinstance(value, list) else value for name, value in entry[4].items()}
+
+    def compare_uncached(self, left, right):
         p = self.settings
         features, refs = [], {**left.refs, **right.refs}
         def add(name, contribution, sources=()):
@@ -497,7 +524,8 @@ class ProbabilityModel:
         factual = [self.profile_chronology(side, facts_only=True) for side in (left, right)]
         if death_conflicts(*factual, p)[0]:
             hard.append(death_conflicts(*factual, p)[1])
-        span = living_span([*left.mentions, *right.mentions], p, self.names)
+        living = [item for item in (self.profile_living(left), self.profile_living(right)) if item]
+        span = (max(item[1] for item in living) - min(item[0] for item in living)) / YEAR if living else 0
         if span > p['bestCandidate']['maxLivingSpanYears']:
             hard.append(f'living mentions span {span:.0f} years')
 

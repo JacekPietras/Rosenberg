@@ -17,7 +17,8 @@ Batt
 Berngern
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
-Burkhard
+Burkhard, Burchard
+Busso
 Boppe
 Caspar, Kaspar, Caſpar
 Christoph, Chriftoph, Christpoh, Christof
@@ -32,6 +33,7 @@ Engelhard, Engelhart, Engelhardus
 Erasmus
 Erhard
 Erkinger
+Egilolf, Egli, Eglolff, Eglolf
 Ernst, Erinze, Erwin, Ehrenfried
 Franz, Franziskus
 Friedmann
@@ -39,11 +41,14 @@ Friedrich, Friderich, Fridrich, Fridericus, Friderici, Friderico, Fritz, Fritze,
 Frizo
 Georg, Gorg, Jörg, Jorge, Jorg, Jorgen, Georgs
 Gerhard, Gerhardus
+Gerlach
 Gotfried, Godefrid, Gottfried
 Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
+Gozwin / Goczwin / Godezwin
 Hans, Johann, Hanemann, Hanse, Johannes, Hanns, Joannes, Iohannes, Johanns
 Hansolf
 Hank
+Hartlieb
 Hoyer
 Hartmut
 Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus, Henricus, Hainrich, Heinrici, Heinrico, Hendrici, Jindrich, Heintz
@@ -57,13 +62,14 @@ Kasimir
 Kilian
 Konrad, Chuonrad, Chuonradus, Chunrat, Conradt, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat, Cunrad, Cunreth, Cunradus, Conrado, Chvnradus
 Kraft, Krafto
+Kurt
 Kuno
 Kunz, Cunz, Konz, Conz, Concz, Contz, Contze, Kontz, Kuntz, Cuntz, Cuncze, Guntz, Kunczen, Conntzen, Cuntzen // are shortened versions of Konrad, but not used as it\! [1401 March 5]
 Leonhard, Leonhart, Lienhart, Leonhardus, Leonardus, Lenhart, Linhard, Linhart
 Leopold, Lupold, Luppold
 Lorenz
 Ludwig, Ludewig
-Lutz
+Lutz, Lutzo
 Lionhart
 Mangold
 Marquard
@@ -100,12 +106,15 @@ Valentin
 Veit
 Weigrecht
 Wenceslaus, Wenzel
-Wernher
+Wernher, Werner
+Werenher
 Wilhelm, Wilhem
 Wiprecht, Wibrecht, Wynprecht, Wyprecht, Wipert, Welprecht, Wipprecht
 Wok, Woko, Witiko, Bocho, Wocco, Wocho, Vok
 Wolf, Wolff
 Wolfgang
+Wolfram, Wolframus
+Walter, Wolter
 Yttel
 Zaisolph, Zeisolf, Seisolph, Zeisolph
 Zeisel
@@ -170,7 +179,7 @@ Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele, Wyklo
 Mönch, Münch, Munch, Mönich, Monich, Münchin, Mönchin, Muench // it derives from "Monk"
 Schenk
 Lengenfelder, Lengenfelderin, Lengenfeld, Lengenvelder, Lengfeld
-Voit, Voith, Voyt
+Voit, Voith, Voyt, Voyth
 Raydenbach
 Stieber, Stiebar, Stiber
 Kemnater, Kempnater
@@ -178,3 +187,4 @@ Schaffner
 Rodel
 Pirchan
 Grabner
+Wirt
