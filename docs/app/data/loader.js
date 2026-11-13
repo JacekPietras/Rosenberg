@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildSourcePersonPattern } from './entities.js?v=88';
+import { buildSourcePersonPattern } from './entities.js?v=89';
 import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=11';
 
 export function createDataLoader({
