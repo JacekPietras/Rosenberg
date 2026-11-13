@@ -37,7 +37,7 @@ repeated extraction adds nothing. The probabilities are uncalibrated.
 | Financial counterparty | 4 | 15 | "was paid/owed … by X" on both sides; replaces the associate weight, same cap |
 | Family | see below | 35 | Total capped at 16 |
 
-Titles are compared by meaning: equivalents from `data/titles.md`, place
+Titles are compared by meaning: equivalents from `data/titles-age.md` and `data/titles-office.md`, place
 variants from `data/places.json`. Office words are `Vogt`, `Amtmann`,
 `Hofmeister`, `Burggraf`, `Domherr`, `Vizedom`, `Komtur`, `Keller`,
 `Schultheiß`. One strongest title per category counts. A title on a

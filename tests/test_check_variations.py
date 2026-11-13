@@ -73,7 +73,7 @@ class VariationChecks(unittest.TestCase):
                          ['von Rosenberg', 'Rosenberg', 'de Rosinberg', 'Rosinberg'])
 
     def test_multiword_title_variants(self):
-        self.assertEqual(module.title_variants('der Rote', module.ROOT / 'data/titles.md'),
+        self.assertEqual(module.title_variants('der Rote', module.ROOT / 'data/titles-office.md'),
                          ['der Rote', 'Rufus'])
 
     def test_screening_and_full_queries(self):

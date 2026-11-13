@@ -6,19 +6,21 @@ from pathlib import Path
 MIN_SCORE = 7
 MIN_MARGIN = 3
 SEARCH_LIMIT = 10000
-def _read_person_name_titles():
-    sections = {'age titles': set(), 'rank titles': set()}
-    section = None
-    path = Path(__file__).resolve().parents[2] / 'data' / 'person-name-titles.md'
+RANK_TITLE_HEADS = frozenset({'Ritter', 'Edelknecht', 'Knecht'})
+
+
+def _read_title_groups(name):
+    path = Path(__file__).resolve().parents[2] / 'data' / name
+    groups = []
     for line in path.read_text(encoding='utf-8').splitlines():
-        if line.startswith('## '):
-            section = line[3:].strip().casefold()
-        elif section in sections and line.startswith('- '):
-            sections[section].add(line[2:].strip())
-    return frozenset(sections['age titles']), frozenset(sections['rank titles'])
+        forms = [form.strip() for form in line.split('//', 1)[0].split(',') if form.strip()]
+        if forms:
+            groups.append(forms)
+    return groups
 
 
-AGE_TITLES, RANK_TITLES = _read_person_name_titles()
+AGE_TITLES = frozenset(form for group in _read_title_groups('titles-age.md') for form in group)
+RANK_TITLES = frozenset(form for group in _read_title_groups('titles-office.md') if group[0] in RANK_TITLE_HEADS for form in group)
 
 
 def title_class(title):

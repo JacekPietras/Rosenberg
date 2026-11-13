@@ -9,8 +9,8 @@ A **passage** is one source entry at one historical date. Two same-name
 mentions of one passage are different people if:
 
 - they are the two participants of one relationship fact;
-- they carry different age titles (`der Ältere`, `der Jüngere`, `der Junge`,
-  `der Alte`);
+- they carry different age titles (`der Jüngere`/`der Junge` versus
+  `der Ältere`/`der Alte`; variants of one title are the same title);
 - one is a knight (`Ritter`, `miles`) and the other a squire (`Edelknecht`,
   `armiger`). `Knecht` alone does not distinguish; a mention with both ranks
   has no rank;

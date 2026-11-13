@@ -64,7 +64,7 @@ export function createDataLoader({
       const [placesText, peopleText, namesText, particlesText, personNameTitlesText, entries] = await Promise.all([
         repository.getText('data/places.json'), repository.getText('data/people.json'),
         repository.getText('data/names.md'), repository.getText('data/nobiliary_particles.md'),
-        repository.getText('data/person-name-titles.md'),
+        Promise.all(['data/titles-age.md', 'data/titles-office.md'].map((path) => repository.getText(path))).then((texts) => texts.join('\n')),
         Promise.all(bookPathsForStartup.map(async (path) => [path, await repository.getJson(path)])),
       ]);
       earlyBooks = new Map(entries);
@@ -90,7 +90,7 @@ export function createDataLoader({
       repository.getText('data/people.json'),
       repository.getText('data/nobiliary_particles.md'),
       repository.getText('data/names.md'),
-      repository.getText('data/person-name-titles.md'),
+      Promise.all(['data/titles-age.md', 'data/titles-office.md'].map((path) => repository.getText(path))).then((texts) => texts.join('\n')),
       repository.getText('data/distinctFamilies.md'),
       new Map(await Promise.all(paths.map(async (path) => [path, earlyBooks?.has(path) ? earlyBooks.get(path) : await repository.getJson(path)]))),
     ]);

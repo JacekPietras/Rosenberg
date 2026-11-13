@@ -75,7 +75,7 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertEqual([], build(inputs).relationships)
 
     def test_titles_normalized_on_ingestion_and_deduplicated_in_tree(self):
-        self.write('data/titles.md', 'Vizedom, Vicedom, Vitzthum\nRitter, miles\nder Rote, Rufus\n')
+        self.write('data/titles-office.md', 'Vizedom, Vicedom, Vitzthum\nRitter, miles\nder Rote, Rufus\n')
         facts = [
             {'type': 'parent', 'person': 'a', 'of': 'b', 'personTitle': ['Vicedom zu Amberg', 'miles', 'Rufus']},
             {'type': 'title', 'person': 'a', 'personTitle': ['Vitzthum in Amberg', 'Ritter', 'der Rote']},

@@ -270,7 +270,7 @@ CONNECTOR = r'(?:von|vom|van|de|zu|ze|zum|zur|in|of|at)'
 
 @lru_cache(maxsize=32768)
 def title_category(title, names=None):
-    """Meaning of a title; equivalents come from data/titles.md and places.json."""
+    """Meaning of a title; equivalents come from data/titles-age.md, data/titles-office.md and places.json."""
     value = normalize(title)
     translate = (lambda text: names.titles.get(text, text)) if names else (lambda text: text)
     place = (lambda text: names.places.get(text, text)) if names else (lambda text: text)

@@ -18,7 +18,8 @@ data/
 ├── matching.json # Global probability model parameters
 ├── names.md      # Historical given-name variants under # Men / # Women
 ├── distinctFamilies.md # Family labels excluded by default in document filters
-├── titles.md     # Equivalent title words and epithets for matching
+├── titles-age.md     # Age titles (der Jüngere, der Ältere) and their variants
+├── titles-office.md  # Offices, ranks and epithets with equivalent variants
 ├── kinship.md    # Tree positions meant by source kinship terms
 └── places.json   # Place-name variants and coordinates
 docs/             # Browser viewer for the dataset
@@ -281,7 +282,7 @@ queries for results without listing or importing records.
 
 The checker accepts `von` or `zu` and a place, optionally preceded by a name or title.
 It finds given-name variants in `data/names.md`, title variants in
-`data/titles.md`, and exact matching place variants in `data/places.json`. It
+`data/titles-age.md`, `data/titles-office.md`, and exact matching place variants in `data/places.json`. It
 checks each surviving place with the prefixes `von`, `v`, `v.`, `von.`,
 and `de`, as well as without a connecting word. Titles also use `zu` and `des`.
 It uses only surviving particle-place pairs in full queries. Unknown names and titles use the
@@ -367,10 +368,11 @@ section gives the gender used by the family-tree reconstruction.
 
 ### Titles
 
-Equivalent title words and epithets used for identity matching (for example
-`Vogt, Voigt, advocatus` or `der Rote, Rufus`) are listed in
-[`data/titles.md`](data/titles.md), one group per line with the canonical form
-first. They are not personal names and do not belong in `data/names.md`.
+Equivalent title words and epithets used for identity matching are listed one
+group per line with the canonical form first: age titles (`der Jüngere, der
+Junge`) in [`data/titles-age.md`](data/titles-age.md), and offices, ranks, and
+epithets (`Vogt, Voigt, advocatus`, `Ritter, miles`, `der Rote, Rufus`) in
+[`data/titles-office.md`](data/titles-office.md). They are not personal names and do not belong in `data/names.md`.
 
 ### Kinship terms
 

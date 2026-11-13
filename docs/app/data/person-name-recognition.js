@@ -10,13 +10,9 @@ function alternatives(values) {
 }
 
 export function parsePersonNameTitles(markdown = '') {
-  const sections = { 'age titles': [], 'rank titles': [] };
-  let section = '';
-  for (const line of String(markdown).split(/\r?\n/)) {
-    if (line.startsWith('## ')) section = line.slice(3).trim().toLocaleLowerCase();
-    else if (sections[section] && line.startsWith('- ')) sections[section].push(line.slice(2).trim());
-  }
-  return [...sections['age titles'], ...sections['rank titles']];
+  return String(markdown).split(/\r?\n/)
+    .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim()))
+    .filter(Boolean);
 }
 
 export function buildSourcePersonPattern(namesText, particlesText, places, titleText = '') {

@@ -12,6 +12,7 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+TITLE_FILES = (ROOT / 'data/titles-age.md', ROOT / 'data/titles-office.md')
 sys.path.insert(0, str(ROOT / 'scripts'))
 from place_names import resolve_place_names
 
@@ -41,13 +42,14 @@ def name_variants(name, names_file):
     return [name]
 
 
-def title_variants(title, titles_file):
-    for line in titles_file.read_text(encoding='utf-8').splitlines():
-        if line.lstrip().startswith('//'):
-            continue
-        variants = unique(line.split(','))
-        if any(title.casefold() == variant.casefold() for variant in variants):
-            return unique([title, *variants])
+def title_variants(title, *titles_files):
+    for titles_file in titles_files:
+        for line in titles_file.read_text(encoding='utf-8').splitlines():
+            if line.lstrip().startswith('//'):
+                continue
+            variants = unique(line.split(','))
+            if any(title.casefold() == variant.casefold() for variant in variants):
+                return unique([title, *variants])
     return []
 
 
@@ -146,8 +148,8 @@ def main():
     preceding = preceding or ''
     try:
         surnames = surname_variants(surname, ROOT / 'data/places.json')
-        whole_title = title_variants(preceding, ROOT / 'data/titles.md')
-        title_groups = [title_variants(word, ROOT / 'data/titles.md') for word in preceding.split()]
+        whole_title = title_variants(preceding, *TITLE_FILES)
+        title_groups = [title_variants(word, *TITLE_FILES) for word in preceding.split()]
         only_titles = bool(whole_title) or (bool(title_groups) and all(title_groups))
         names = ([whole_title] if whole_title else
                  [title or name_variants(word, ROOT / 'data/names.md')

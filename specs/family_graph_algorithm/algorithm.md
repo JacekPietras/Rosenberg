@@ -11,8 +11,8 @@ the `tree.json` format is in [`json-formats.md`](../json-formats.md).
 | `data/{documents,books,notes,images}/**/*.json` | Typed facts and guesses (assertions) and their prose |
 | `data/people.json` | Confirmed registry IDs; fixed, never changed |
 | `data/names.md` | Given-name variants and gender sections |
-| `data/titles.md` | Equivalent title words and epithets |
-| `data/person-name-titles.md` | Age and rank titles used by policy and name recognition |
+| `data/titles-age.md` | Age titles with equivalent variants |
+| `data/titles-office.md` | Offices, ranks, and epithets with equivalent variants; also used by policy and name recognition |
 | `data/kinship.md` | Tree positions allowed and excluded by kinship terms |
 | `data/places.json` | Place variants for titles and context |
 | `data/matching.json` | All weights, thresholds and limits |

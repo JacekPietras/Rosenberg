@@ -38,7 +38,7 @@ def source_paths(root):
 
 
 def input_manifest(root, people=None):
-    paths = source_paths(root) + [root / 'data/names.md', root / 'data/titles.md', root / 'data/kinship.md', root / 'data/places.json', root / 'data/matching.json', root / 'data/distinctFamilies.md']
+    paths = source_paths(root) + [root / 'data/names.md', root / 'data/titles-age.md', root / 'data/titles-office.md', root / 'data/kinship.md', root / 'data/places.json', root / 'data/matching.json', root / 'data/distinctFamilies.md']
     manifest = {}
     for path in sorted(set(paths)):
         if not path.exists():
@@ -140,8 +140,7 @@ def load_inputs(root, validate=True):
     if errors:
         raise ValueError('\n'.join(errors))
     names = (root / 'data/names.md').read_text(encoding='utf-8')
-    titles_path = root / 'data/titles.md'
-    titles = titles_path.read_text(encoding='utf-8') if titles_path.exists() else ''
+    titles = '\n'.join(path.read_text(encoding='utf-8') for path in (root / 'data/titles-age.md', root / 'data/titles-office.md') if path.exists())
     kinship_path = root / 'data/kinship.md'
     kinship = kinship_path.read_text(encoding='utf-8') if kinship_path.exists() else ''
     places = json.loads((root / 'data/places.json').read_text(encoding='utf-8'))

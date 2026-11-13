@@ -15,7 +15,7 @@ function regexEscape(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// Office variants from data/titles.md.
+// Office variants from data/titles-office.md.
 const prominentOffice = /^(?:Vogt|Voigt|advocatus|Vizedom|Vicedom|Vitzthum|Vitztum|Viztum|vicedominus)(?![\p{L}\p{N}])/iu;
 
 function personFacts(person, documentRecords, people) {

@@ -7,7 +7,7 @@ Read this file when writing a person's name in `english` or in the text of
 The shared recognition logic is
 [`docs/app/data/person-name-recognition.js`](../docs/app/data/person-name-recognition.js);
 its lists are `data/names.md`, `data/nobiliary_particles.md`,
-`data/person-name-titles.md`, `data/titles.md`, and place variations. Look places up with
+`data/titles-age.md`, `data/titles-office.md`, and place variations. Look places up with
 `python3 scripts/list_place_variations.py` (`--include-churches` when relevant);
 `scripts/place_names.py` resolves building names against their settlements.
 Do not read `data/places.json` directly; it is very large.
@@ -34,7 +34,7 @@ or between the given names and the particle:
 | Particle | `von`, `de`, `v.`, `van` … from `data/nobiliary_particles.md`, as the source has it; `v.` and `von.` become `von` |
 | Place | A canonical place variation from `list_place_variations.py` (`Ussinkeim` → `Uissigheim`) |
 | `zu <place>` | Optional second place, part of the name when the source attaches it to the person |
-| Simple titles | Single title words and epithets from `data/titles.md` (first form of a group is canonical) and `data/person-name-titles.md` (`Ritter`, `der Ältere`) |
+| Simple titles | Single title words and epithets from `data/titles-age.md` (`der Jüngere`, `der Ältere`) and `data/titles-office.md` (`Ritter`, `Vogt`, `der Rote`); the first form of a group is canonical |
 | Full titles | A simple title with an optional `zu <place>` or `an <place>`: `Vogt zu Lauda`, `Vizedom zu Amberg` (source `Vitzthum zu Amberg`); the place is canonical as in the Place row |
 
 Canonical examples: `Konrad von Rosenberg`, `Konrad von Rosenberg der Ältere`,
@@ -59,7 +59,7 @@ Non-canonical, to be recognized and rewritten: `Ritter Arnold von Uissigheim`,
   `an`), keep it as in the source and report it for the list.
 - Latin or variant forms (`miles`, `armiger`, `v.`) in a name are likewise
   corrected to the German form: titles to the first form of their group in
-  `data/titles.md`; `v.` and `von.` to `von`; other particles stay as in the
+  `data/titles-office.md` or `data/titles-age.md`; `v.` and `von.` to `von`; other particles stay as in the
   source.
 
 ## Titles and position
@@ -69,7 +69,7 @@ Non-canonical, to be recognized and rewritten: `Ritter Arnold von Uissigheim`,
   (see [`facts.md`](facts.md#titles)).
 - A title before the given name or between the given names and the particle is
   not canonical. Matchers and recognizers must still accept it as part of the
-  name, with any `Age titles` and `Rank titles`, and must not treat it as a
+  name, with any title from the two title files, and must not treat it as a
   different person or a part of the given name.
 - When writing or normalizing `english` and fact text, move such titles to the
   canonical position; never drop them.
