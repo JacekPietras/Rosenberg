@@ -9,25 +9,28 @@
         "https://www.monasterium.net/mom/DE-StAAm/EnsdorfOSB/96/charter"
       ],
       "german": "A1: Konrad der Steinlinger\nA2: Heinrich der Steinlinger, Richter zu Sulzbach, Bruder von A1\nE: Heinrich von Rohrenstadt und seine Hausfrau Peters\nVerkauf des Hofes zu \"Obernhag, daz man nennet ze Obernhof\" (Oberhof bei Ursensollen), auf dem der Mayr Albrecht aufsitzt, und von 2 Lehen, die zu demselben Hof gehören und auf welchen Berthold und Ulrich der Wenige aufsitzen, als rechtes freies Eigen um 61 Pfund Regensburger Pfennige und um 20 Pfennige. Bürgen: Herr Friedrich der Vogt von Rosenberg, Konrad der Scharfenberger von Ursensollen, Konrad der junge Scharfenberger und Hermann der Ammerthaler.\nZeugen: Herr Ulrich, Pfarrer zu Ammerthal, Hernant der Steinlinger, Ulrich Rohrenstetter, Gebhard der Reich, Rudger von Weyern, Heinrich Trautenberger, Bürger zu Amberg.\nS1: A1\nS2: A2\nS3: Friedrich der Vogt von Rosenberg\nS4: Konrad der alte Scharfenberger zu Ursensollen",
-      "english": "A1: Konrad the Steinlinger  A2: Heinrich the Steinlinger, judge of Sulzbach, brother of A1  E: Heinrich von Rohrenstadt and his wife Peters Sale of the farm in Obernhag, known as Obernhof (Upper Farm near Ursensollen), on which Mayr Albrecht resides, and of two fiefdoms belonging to the same farm and on which Berthold and Ulrich the Few reside, as legally free property for 61 pounds of Regensburg pennies and 20 pennies. Guarantors: Friedrich, Vogt von Rosenberg, Konrad the Scharfenberger of Ursensollen, Konrad the Young Scharfenberger, and Hermann the Ammerthaler. Witnesses: Lord Ulrich, pastor of Ammerthal, Hernant the Steinlinger, Ulrich Rohrenstetter, Gebhard the Rich, Rudger von Weyern, Heinrich Trautenberger, citizen of Amberg.",
-      "facts": [
-        {
-          "person": "Friedrich von Rosenberg",
-          "personTitle": [
-            "Vogt"
-          ],
-          "type": "generic",
-          "content": "acted as surety for the sale of the Obernhof farm near Ursensollen and its two appurtenant fiefs."
-        }
-      ],
+      "english": "A1: Konrad the Steinlinger  A2: Heinrich the Steinlinger, judge of Sulzbach, brother of A1  E: Heinrich von Rohrenstadt and his wife Peters Sale of the farm in Obernhag, known as Obernhof (Upper Farm near Ursensollen), on which Mayr Albrecht resides, and of two fiefdoms belonging to the same farm and on which Berthold and Ulrich the Few reside, as legally free property for 61 pounds of Regensburg pennies and 20 pennies. Guarantors: Friedrich Voit von Rosenberg, Konrad the Scharfenberger of Ursensollen, Konrad the Young Scharfenberger, and Hermann the Ammerthaler. Witnesses: Lord Ulrich, pastor of Ammerthal, Hernant the Steinlinger, Ulrich Rohrenstetter, Gebhard the Rich, Rudger von Weyern, Heinrich Trautenberger, citizen of Amberg.",
       "img": [
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/4ffaa8ef-9e77-4615-8965-542e9304bc18/1/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/4ffaa8ef-9e77-4615-8965-542e9304bc18/1/full/max/0/default.jpg",
+          "seals": [
+            {
+              "person": "Friedrich Voit von Rosenberg",
+              "position": "0.4835,0.9043",
+              "size": 0.09200000000000001,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": -10,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/4ffaa8ef-9e77-4615-8965-542e9304bc18/2/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/4ffaa8ef-9e77-4615-8965-542e9304bc18/2/full/max/0/default.jpg",
+          "deleted": true
         }
       ]
     }
-  ]
+  ],
+  "label": "Voit"
 }
