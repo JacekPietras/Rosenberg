@@ -1,7 +1,7 @@
 import { escapeHtml } from './html.js';
-import { findPlaceByName } from '../data/entities.js?v=89';
+import { findPlaceByName } from '../data/entities.js?v=90';
 import { resolvePerson } from '../data/relationships.js?v=11';
-import { personRouteName } from '../data/person-name-recognition.js?v=1';
+import { personRouteName } from '../data/person-name-recognition.js?v=2';
 
 export function createMarkupRenderer({ state }) {
   const frakturUpper = [...'𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ'];
@@ -26,11 +26,11 @@ export function createMarkupRenderer({ state }) {
       return person ? token(`<a class="person-link person-id-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>`) : match;
     });
     if (state.sourcePersonPattern) text = text.replace(state.sourcePersonPattern, (match) =>
-      token(`<a class="person-link" href="?person=${encodeURIComponent(personRouteName(match))}">${match}</a>`));
+      token(`<a class="person-link" href="?person=${encodeURIComponent(personRouteName(match, state.personNameTitlesText))}">${match}</a>`));
     for (const { pattern, people } of state.personPattern || []) text = text.replace(pattern, (match) => {
       const { person, ambiguous } = resolvePerson(people, match);
       // Unqualified names use the generic name route; explicit [id] tokens above stay specific.
-      return person || ambiguous ? token(`<a class="person-link" href="?person=${encodeURIComponent(personRouteName(match))}">${match}</a>`) : match;
+      return person || ambiguous ? token(`<a class="person-link" href="?person=${encodeURIComponent(personRouteName(match, state.personNameTitlesText))}">${match}</a>`) : match;
     });
     for (const pattern of [state.buildingPattern, state.placePattern]) {
       if (pattern) text = text.replace(pattern, (match) => {

@@ -1,12 +1,24 @@
 """Versioned heuristics; scores are not calibrated probabilities."""
 
 from dataclasses import dataclass
+from pathlib import Path
 
 MIN_SCORE = 7
 MIN_MARGIN = 3
 SEARCH_LIMIT = 10000
-AGE_TITLES = frozenset({'der Junge', 'der Jüngere', 'der Alte', 'der Ältere'})
-RANK_TITLES = frozenset({'Ritter', 'Edelknecht', 'miles', 'armiger', 'Knecht'})
+def _read_person_name_titles():
+    sections = {'age titles': set(), 'rank titles': set()}
+    section = None
+    path = Path(__file__).resolve().parents[2] / 'data' / 'person-name-titles.md'
+    for line in path.read_text(encoding='utf-8').splitlines():
+        if line.startswith('## '):
+            section = line[3:].strip().casefold()
+        elif section in sections and line.startswith('- '):
+            sections[section].add(line[2:].strip())
+    return frozenset(sections['age titles']), frozenset(sections['rank titles'])
+
+
+AGE_TITLES, RANK_TITLES = _read_person_name_titles()
 
 
 def title_class(title):

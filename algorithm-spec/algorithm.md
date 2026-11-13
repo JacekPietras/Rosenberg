@@ -12,6 +12,7 @@ the `tree.json` format is in [`rules/json-formats.md`](../rules/json-formats.md)
 | `data/people.json` | Confirmed registry IDs; fixed, never changed |
 | `data/names.md` | Given-name variants and gender sections |
 | `data/titles.md` | Equivalent title words and epithets |
+| `data/person-name-titles.md` | Age and rank titles used by policy and name recognition |
 | `data/kinship.md` | Tree positions allowed and excluded by kinship terms |
 | `data/places.json` | Place variants for titles and context |
 | `data/matching.json` | All weights, thresholds and limits |
