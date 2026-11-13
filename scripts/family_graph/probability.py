@@ -15,6 +15,7 @@ import re
 from place_names import resolve_place_names
 from .dates import death_interval
 from .names import normalize
+from .policy import AGE_TITLE_CLASSES
 from .scoring import place_patterns
 
 DEFAULTS = {
@@ -106,7 +107,7 @@ def adult(mention, names=None):
     kind = mention.assertion.original['type']
     if kind == 'spouse' or kind == 'parent' and mention.field == 'person':
         return True
-    return any(title_category(title, names)[0] in {'rank', 'office'} or title_category(title, names) == ('age', 'elder') for title in mention.titles)
+    return any(title_category(title, names)[0] in {'rank', 'office'} or title_category(title, names) == ('age', 'older') for title in mention.titles)
 
 
 def speculative_parent_claim(mention):
@@ -275,8 +276,8 @@ def title_category(title, names=None):
     translate = (lambda text: names.titles.get(text, text)) if names else (lambda text: text)
     place = (lambda text: names.places.get(text, text)) if names else (lambda text: text)
     value = translate(value)
-    if value in {'der junge', 'der jungere', 'der alte', 'der altere'}:
-        return 'age', 'young' if 'jung' in value else 'elder'
+    if value in AGE_TITLE_CLASSES:
+        return 'age', AGE_TITLE_CLASSES[value]
     if value in {'ritter', 'miles', 'edelknecht', 'knecht', 'armiger'}:
         return 'rank', 'ritter' if value in {'ritter', 'miles'} else 'edelknecht'
     words = value.split()
@@ -513,7 +514,7 @@ class ProbabilityModel:
             choices = [weight * min(reliability(x, p), reliability(y, p)) for profile, other in ((left, right), (right, left))
                        for x, dx in profile.titles.get(earlier, []) for y, dy in other.titles.get(later, []) if dx[1] < dy[0]]
             return max(choices, default=0)
-        add('elder title before younger title', -regression(('age', 'elder'), ('age', 'young'), p['opposedAgePenalty']))
+        add('elder title before younger title', -regression(('age', 'older'), ('age', 'younger'), p['opposedAgePenalty']))
         add('Ritter before Edelknecht', -regression(('rank', 'ritter'), ('rank', 'edelknecht'), p['rankRegressionPenalty']))
         # Ritter in one source and Edelknecht in another on the same day.
         conflicts = [(min(reliability(x, p), reliability(y, p)), (x, y))

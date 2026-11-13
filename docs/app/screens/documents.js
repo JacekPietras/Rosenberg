@@ -1,7 +1,7 @@
 import { factDate } from '../rendering/facts.js?v=8';
 import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=8';
-import { personRouteName } from '../data/person-name-recognition.js?v=2';
+import { personRouteName } from '../data/person-name-recognition.js?v=3';
 
 export function createDocumentRenderer({
   state,
@@ -101,7 +101,8 @@ export function createDocumentRenderer({
 
   function reviewNameLabels(doc, path) {
     const reviewLabels = Array.isArray(doc?.label) ? doc.label : [doc?.label];
-    if (!reviewLabels.some((label) => String(label || '').trim().toLocaleLowerCase() === 'to review')) return '';
+    const isToReview = reviewLabels.some((label) => String(label || '').trim().toLocaleLowerCase() === 'to review');
+    if (!isToReview && !state.classifiedDocumentPaths?.has(path)) return '';
     const index = documentMentionIndex();
     const people = index.get(path) || personMentions(doc);
     const documentYears = documentYearBounds(doc.date);

@@ -10,7 +10,7 @@ Domherr, canonicus, Kanoniker, Kanonikus
 Schultheiß, Schultheiss, scultetus
 
 // ranks
-Ritter, miles, milites
+Ritter, miles, milites, Knight
 Edelknecht, armiger
 Knecht
 

@@ -264,6 +264,29 @@ test('review label propositions omit periods over 50 years away and retain the e
   assert.doesNotMatch(html, /Far/);
 });
 
+test('classified non-review documents also show mention label propositions', () => {
+  const path = 'data/documents/target.json';
+  let personScanCount = 0;
+  const documents = new Map([
+    [path, { date: '1300', label: 'Czechia', entries: [{ english: 'Alice appears.' }] }],
+    ['data/documents/other.json', { date: '1305', label: 'Franken', entries: [{ english: 'Alice appears.' }] }],
+  ]);
+  const state = {
+    documents,
+    sourcePersonPattern: { [Symbol.matchAll](text) { personScanCount += 1; return String(text).matchAll(/Alice/g); } },
+    personPattern: [], personNameTitlesText: '', canEditDocuments: false, classifiedDocumentPaths: new Set(),
+  };
+  const { renderDocument } = createDocumentRenderer({
+    state, escapeHtml, inlineMarkup: escapeHtml, languageMarkup: () => '', formatDate: (date) => date,
+    documentTitle: () => 'Document', documentYear: () => '', distinctFamilies: new Set(), getPeople: () => [], entryAnchor: () => '',
+  });
+  assert.doesNotMatch(renderDocument(documents.get(path), path, 0), /Franken \[1305\]/);
+  assert.equal(personScanCount, 0, 'unclassified documents skip person mention scans');
+  state.classifiedDocumentPaths.add(path);
+  assert.match(renderDocument(documents.get(path), path, 0), /Franken \[1305\]/);
+  assert.ok(personScanCount > 0, 'classified documents scan mentions to build propositions');
+});
+
 test('a book publication date is not used as a fact date', () => {
   const { renderDocument } = createDocumentRenderer({
     state: { showFacts: true }, escapeHtml, formatDate: (date) => date, ...options,

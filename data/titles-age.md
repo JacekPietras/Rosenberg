@@ -1,3 +1,6 @@
-// Age titles, one group of equivalent forms per line; the first form is canonical.
-der Jüngere, der Junge
-der Ältere, der Alte
+# Younger
+der Jüngere, the Younger
+der Junge
+# Older
+der Ältere, the Elder, the Older
+der Alte

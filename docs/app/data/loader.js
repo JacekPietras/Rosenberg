@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildSourcePersonPattern } from './person-name-recognition.js?v=2';
+import { buildSourcePersonPattern } from './person-name-recognition.js?v=3';
 import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=11';
 
 export function createDataLoader({
@@ -50,8 +50,14 @@ export function createDataLoader({
   }
 
   async function loadSnapshot({ autoRebuild = true, familyOnly = false } = {}) {
+    const loadStarted = performance.now();
+    const timings = {};
+    const mark = (name) => { timings[name] = performance.now(); };
+    const elapsed = (start, end) => Math.round((timings[end] - timings[start]) * 10) / 10;
     if (state.active === 'tree' && !state.person && !state.place) state.treeLoading = false;
+    mark('filesStart');
     const files = await repository.getRepositoryFiles();
+    mark('filesEnd');
     const paths = files.map((file) => typeof file === 'string' ? file : file.path)
       .filter((path) => /^data\/(books|documents|notes|images)\/.*\.json$/.test(path));
     const snapshot = JSON.stringify(files);
@@ -84,6 +90,7 @@ export function createDataLoader({
       renderTabs();
       await renderActive();
     }
+    mark('sourcesStart');
     const [placesText, calibrationCitiesText, peopleText, particlesText, namesText, personNameTitlesText, distinctFamiliesText, documents] = await Promise.all([
       repository.getText('data/places.json'),
       repository.getText('docs/assets/calibration-cities.json'),
@@ -94,6 +101,8 @@ export function createDataLoader({
       repository.getText('data/distinctFamilies.md'),
       new Map(await Promise.all(paths.map(async (path) => [path, earlyBooks?.has(path) ? earlyBooks.get(path) : await repository.getJson(path)]))),
     ]);
+    mark('sourcesEnd');
+    mark('prepareStart');
     distinctFamilies.clear();
     distinctFamiliesText.split(/\r?\n/).map((line) => line.replace(/#.*/, '').trim().toLocaleLowerCase()).filter(Boolean).forEach((label) => distinctFamilies.add(label));
     if (Array.isArray(state.hiddenRecordLabels)) {
@@ -162,7 +171,19 @@ export function createDataLoader({
     if (!reserved.includes(state.active) && !paths.includes(state.active)) state.active = state.manifest.books[0]?.path || 'documents';
     savePreferences();
     if (!familyOnly) renderTabs();
-    if (!familyOnly) await renderActive();
+    if (!familyOnly) {
+      mark('prepareEnd');
+      mark('renderStart');
+      await renderActive();
+      mark('renderEnd');
+    }
+    if (!familyOnly && state.active === 'documents' && !state.person && !state.place && typeof repository.isLocalServer === 'function' && await repository.isLocalServer()) {
+      const report = `Documents page load: total=${Math.round(performance.now() - loadStarted)}ms; file-list=${elapsed('filesStart', 'filesEnd')}ms; sources=${elapsed('sourcesStart', 'sourcesEnd')}ms (${paths.length} files); prepare=${elapsed('prepareStart', 'prepareEnd')}ms; render=${elapsed('renderStart', 'renderEnd')}ms`;
+      fetch('/api/heartbeat-diagnostics', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: report }), keepalive: true,
+      }).catch(() => {});
+    }
     const treeScreenVisible = state.active === 'tree' && !state.person && !state.place;
     if (treeScreenVisible) {
       // Put the saved graph on screen before fingerprint verification. The

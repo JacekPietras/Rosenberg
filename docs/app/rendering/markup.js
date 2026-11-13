@@ -1,7 +1,7 @@
 import { escapeHtml } from './html.js';
 import { findPlaceByName } from '../data/entities.js?v=90';
 import { resolvePerson } from '../data/relationships.js?v=11';
-import { personRouteName } from '../data/person-name-recognition.js?v=2';
+import { personRouteName } from '../data/person-name-recognition.js?v=3';
 
 export function createMarkupRenderer({ state }) {
   const frakturUpper = [...'𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ'];

@@ -36,6 +36,39 @@ shutdown_reason = ['server stopped']
 kev_process = [None]
 kev_start_lock = threading.Lock()
 KEV_URL = 'http://127.0.0.1:8009'
+KEV_LOG = Path('/private/tmp/rosenberg-kev-server.log')
+classification_status_lock = threading.Lock()
+classification_status = {'state': 'idle', 'path': '', 'started_at': 0.0, 'detail': ''}
+
+
+def set_classification_status(state, path='', detail=''):
+    with classification_status_lock:
+        classification_status.update(state=state, path=path, detail=detail)
+        if state == 'starting':
+            classification_status['started_at'] = time.time()
+
+
+def get_classification_status():
+    with classification_status_lock:
+        status = dict(classification_status)
+    if status['state'] == 'starting':
+        try:
+            lines = KEV_LOG.read_text(errors='replace').splitlines()
+            progress = next((line.strip() for line in reversed(lines) if 'Fetching ' in line), '')
+            if progress:
+                status['detail'] = progress[-200:]
+        except OSError:
+            pass
+    return status
+
+
+def kev_startup_error(exit_code):
+    try:
+        details = '\n'.join(KEV_LOG.read_text(errors='replace').splitlines()[-20:]).strip()
+    except OSError:
+        details = ''
+    message = f'Kev server exited during startup (exit {exit_code})'
+    return f'{message}: {details}' if details else message
 
 
 def ensure_kev_server():
@@ -48,16 +81,23 @@ def ensure_kev_server():
             pass
         if kev_process[0] is None or kev_process[0].poll() is not None:
             launcher = ROOT / 'scripts' / 'kev' / 'run_kev_local.sh'
+            runtime = Path(os.environ.get('KEV_RUNTIME_DIR', '/private/tmp/rosenberg-kev'))
+            python = runtime / '.venv' / 'bin' / 'python'
+            if not python.is_file():
+                raise RuntimeError(f'Kev runtime missing: {python}. See scripts/kev/KEV.md to restore it.')
+            KEV_LOG.write_text('', encoding='utf-8')
+            log_stream = KEV_LOG.open('a', encoding='utf-8')
             kev_process[0] = subprocess.Popen(
                 [str(launcher)], cwd=ROOT, stdin=subprocess.DEVNULL,
-                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                stdout=log_stream, stderr=subprocess.STDOUT,
                 start_new_session=True,
             )
+            log_stream.close()
         process = kev_process[0]
         deadline = time.monotonic() + 240
         while time.monotonic() < deadline:
             if process.poll() is not None:
-                raise RuntimeError(f'Kev server exited during startup (exit {process.returncode})')
+                raise RuntimeError(kev_startup_error(process.returncode))
             try:
                 with urlopen(f'{KEV_URL}/v1/models', timeout=2):
                     return
@@ -186,6 +226,9 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             with family_rebuild_status_lock:
                 status = dict(family_rebuild_status)
             self.send_json(200, status)
+            return
+        if self.path.split("?", 1)[0] == "/api/classify-status":
+            self.send_json(200, get_classification_status())
             return
         if self.path.split("?", 1)[0] == "/api/git-status":
             result = subprocess.run(
@@ -319,6 +362,7 @@ class ViewerHandler(SimpleHTTPRequestHandler):
     def do_POST(self):
         self.record_activity()
         if self.path.split("?", 1)[0] == "/api/classify-document":
+            relative_path = ''
             try:
                 length = int(self.headers.get("Content-Length", "0"))
                 if not 0 < length <= 4096:
@@ -331,20 +375,29 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 if not document_path.is_relative_to(ROOT / "data" / "documents") or not document_path.is_file():
                     raise ValueError("Document not found")
                 command = [sys.executable, str(ROOT / "scripts/kev/kev_classify_documents.py"), "--document", relative_path]
+                set_classification_status('starting', relative_path)
                 ensure_kev_server()
+                set_classification_status('classifying', relative_path)
                 result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=240, check=False)
                 match = re.search(r"^.+?:\s+([a-z]+)\s+\(([0-9.]+)\)$", result.stderr, re.MULTILINE)
                 if result.returncode or not match:
-                    self.send_json(422, {"error": result.stderr.strip() or "Classification failed"})
+                    error = result.stderr.strip() or "Classification failed"
+                    set_classification_status('error', relative_path, error[-500:])
+                    self.send_json(422, {"error": error})
                 else:
-                    self.send_json(200, {"result": f"{match.group(1)} {round(float(match.group(2)) * 100)}%"})
+                    result_text = f"{match.group(1)} {round(float(match.group(2)) * 100)}%"
+                    set_classification_status('complete', relative_path, result_text)
+                    self.send_json(200, {"result": result_text})
             except (ValueError, TypeError, json.JSONDecodeError) as error:
                 self.send_json(400, {"error": str(error)})
             except subprocess.TimeoutExpired:
+                set_classification_status('error', relative_path, 'Classification timed out')
                 self.send_json(504, {"error": "Classification timed out"})
             except OSError as error:
+                set_classification_status('error', relative_path, str(error))
                 self.send_json(500, {"error": str(error)})
             except RuntimeError as error:
+                set_classification_status('error', relative_path, str(error))
                 self.send_json(503, {"error": str(error)})
             return
         if self.path.split("?", 1)[0] == "/api/heartbeat-diagnostics":

@@ -20,7 +20,10 @@ def context_fact(text):
 
 class ProbabilityTests(unittest.TestCase):
     def setUp(self):
-        self.names = Names('Alex\nBea\nChris\n', [{'id': 'north', 'variations': ['North']}], 'Vogt, advocatus\nder Rote, Rufus\n')
+        self.names = Names('Alex\nBea\nChris\n', [{'id': 'north', 'variations': ['North']}],
+                           '# Younger\nder Jüngere, the Younger\nder Junge\n'
+                           '# Older\nder Ältere, the Elder, the Older\nder Alte\n'
+                           'Vogt, advocatus\nder Rote, Rufus\n')
         self.model = ProbabilityModel(None, self.names)
 
     def profile(self, title=None, date='1393', category='documents', kind='facts', death=None):
@@ -48,6 +51,12 @@ class ProbabilityTests(unittest.TestCase):
                 positive = lambda result: sum(f['contribution'] for f in result['features'] if f['contribution'] > 0)
                 self.assertGreater(positive(near), positive(far))
                 self.assertGreater(near['probability'], far['probability'])
+
+    def test_age_title_direction_comes_from_title_data_sections(self):
+        self.assertEqual(('age', 'younger'), title_category('der Jüngere', self.names))
+        self.assertEqual(('age', 'younger'), title_category('der Junge', self.names))
+        self.assertEqual(('age', 'older'), title_category('der Ältere', self.names))
+        self.assertEqual(('age', 'older'), title_category('der Alte', self.names))
 
     def test_titles_are_compared_by_meaning_not_wording(self):
         title = lambda result: [(f['name'], f['contribution']) for f in result['features']]

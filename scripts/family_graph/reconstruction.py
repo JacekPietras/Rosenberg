@@ -983,8 +983,6 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     best_settings = model.settings['bestCandidate']
     second = model.settings['secondPass']
     prior_log_odds = math.log(model.settings['priorProbability'] / (1 - model.settings['priorProbability']))
-    elder = {'der Ältere', 'der Alte'}
-    younger = {'der Jüngere', 'der Junge'}
     widow_claim = re.compile(r'^(?:(?:was|is|remained|became)\s+(?:a\s+)?widow(?:er)?\b|'
                              r'(?:was|is)\s+(?:recorded|described|named|mentioned|listed)\b[^.!?;]*\bas\s+(?:a\s+)?widow(?:er)?\b)', re.I)
     tied_roots = set()
@@ -1101,7 +1099,9 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             # in that passage; the candidate should sit on the other side of it.
             for h in current[root]:
                 titles = set(mentions[h].titles)
-                offset = 1 if titles & elder else -1 if titles & younger else 0
+                age_classes = {title_category(title, names)[1] for title in titles
+                               if title_category(title, names)[0] == 'age'}
+                offset = 1 if 'older' in age_classes else -1 if 'younger' in age_classes else 0
                 if not offset:
                     continue
                 namesakes = [other for other in buckets[given(root_names[root])] if other not in (root, candidate)

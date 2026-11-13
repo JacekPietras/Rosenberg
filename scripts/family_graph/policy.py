@@ -13,6 +13,8 @@ def _read_title_groups(name):
     path = Path(__file__).resolve().parents[2] / 'data' / name
     groups = []
     for line in path.read_text(encoding='utf-8').splitlines():
+        if line.lstrip().startswith('#'):
+            continue
         forms = [form.strip() for form in line.split('//', 1)[0].split(',') if form.strip()]
         if forms:
             groups.append(forms)
@@ -20,6 +22,23 @@ def _read_title_groups(name):
 
 
 AGE_TITLES = frozenset(form for group in _read_title_groups('titles-age.md') for form in group)
+def _read_age_title_classes():
+    from .names import normalize
+    path = Path(__file__).resolve().parents[2] / 'data' / 'titles-age.md'
+    classes, current = {}, None
+    for line in path.read_text(encoding='utf-8').splitlines():
+        stripped = line.strip()
+        if stripped.startswith('#'):
+            current = stripped[1:].strip().casefold()
+            continue
+        if not current:
+            continue
+        forms = [form.strip() for form in line.split('//', 1)[0].split(',') if form.strip()]
+        classes.update({normalize(form): current for form in forms})
+    return classes
+
+
+AGE_TITLE_CLASSES = _read_age_title_classes()
 RANK_TITLES = frozenset(form for group in _read_title_groups('titles-office.md') if group[0] in RANK_TITLE_HEADS for form in group)
 
 

@@ -20,6 +20,8 @@ class Names:
         self.titles = {}
         self.title_display = {}
         for line in titles_text.splitlines():
+            if line.lstrip().startswith('#'):
+                continue
             forms = [item.strip() for item in line.split('//', 1)[0].split(',') if item.strip()]
             for form in forms:
                 self.titles[normalize(form)] = normalize(forms[0])
