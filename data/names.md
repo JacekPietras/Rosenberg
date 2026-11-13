@@ -162,5 +162,5 @@ Schenk
 Lengenfelder, Lengenfelderin, Lengenfeld, Lengenvelder, Lengfeld
 Voit, Voith, Voyt
 Raydenbach
-Stieber, Stiebar
+Stieber, Stiebar, Stiber
 Kemnater, Kempnater
