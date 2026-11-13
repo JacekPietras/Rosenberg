@@ -9,10 +9,10 @@
       "english": "Widow Christina von Wallenstein, née von Rosenberg vs. Eitel von Vilbel (Velwyl) and Eitel von Reimburg: Killing of her husband Werner von Wallenstein within the castle peace at Lindheim",
       "facts": [
         {
-          "person": "Christiana von Rosenberg",
+          "person": "Wernher von Wallenstein",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Werner von Wallenstein",
-          "ofDeceased": true
+          "of": "Christiana von Rosenberg"
         },
         {
           "person": "Christiana von Rosenberg",
