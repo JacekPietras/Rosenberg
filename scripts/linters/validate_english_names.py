@@ -75,6 +75,24 @@ def name_pattern(given_names, surnames):
     )
 
 
+def shared_suffix_pattern(given_names, surnames):
+    """Match two coordinated given names sharing a recognized von-surname."""
+    given = alternatives(given_names)
+    surname = alternatives(surnames)
+    return re.compile(
+        rf'(?<!\w)(?P<first>{given})\s+and\s+(?P<second>{given})'
+        rf'\s+(?P<connector>von|v\.)\s+(?P<place>{surname})(?!\w)',
+        re.IGNORECASE,
+    )
+
+
+def expand_shared_suffix(match, given_names, surnames):
+    first = given_names[match.group('first').casefold()]
+    second = given_names[match.group('second').casefold()]
+    place = surnames[match.group('place').casefold()]
+    return f'{first} von {place} and {second} von {place}'
+
+
 def suggested_name(match, given_names, surnames):
     given = given_names[match.group('given').casefold()]
     middle = match.group('middle')
@@ -104,6 +122,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     given_names, surnames = load_variants()
     pattern = name_pattern(given_names, surnames)
+    shared_pattern = shared_suffix_pattern(given_names, surnames)
     findings = 0
 
     for path in collect_files(args.paths or [ROOT / 'data/documents', ROOT / 'data/books']):
@@ -122,6 +141,18 @@ def main(argv=None):
                 for key, child in value.items():
                     child_location = f'{location}/{key.replace("~", "~0").replace("/", "~1")}'
                     if key == 'english' and isinstance(child, str):
+                        def expand_shared(match):
+                            nonlocal findings, changed
+                            expanded = expand_shared_suffix(match, given_names, surnames)
+                            original = match.group(0)
+                            if original != expanded:
+                                print(f'{path}#{child_location}: fixed: {original!r} -> {expanded!r}')
+                                findings += 1
+                                changed = True
+                            return expanded
+
+                        child = shared_pattern.sub(expand_shared, child)
+
                         def normalize(match):
                             nonlocal findings, changed
                             suggested = suggested_name(match, given_names, surnames)
