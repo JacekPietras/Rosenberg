@@ -31,7 +31,7 @@ Next upload confirmed image to Google Drive, follow
 [google-drive-objects](../google-drive-objects/SKILL.md).
 Check for an existing entry before uploading. Use the uploader's returned cloud
 ID, then make the smallest direct edit to `../../../data/images/images.json` under
-`rules/json-formats.md`. Use `label: "armorial"`, `effigy` or other when requested. Preserve source
+`specs/json-formats.md`. Use `label: "armorial"`, `effigy` or other when requested. Preserve source
 links and supported credits/usage terms; keep folios separate from titles. Do
 not invent a folio or date from a scan index or filename. Validate JSON and
 review the diff. The downloader itself neither uploads nor edits the catalog.

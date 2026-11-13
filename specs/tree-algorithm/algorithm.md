@@ -2,7 +2,7 @@
 
 How `scripts/family_graph/` turns source facts into the family graph in
 `data/tree.json`. The requirements are in [domain-rules.md](domain-rules.md);
-the `tree.json` format is in [`rules/json-formats.md`](../rules/json-formats.md).
+the `tree.json` format is in [`json-formats.md`](../json-formats.md).
 
 ## Inputs and output
 
@@ -55,7 +55,7 @@ no facts, guesses, or prose observations to the reconstruction.
 | Closure | Father from a sibling; same-named relatives merged | [family-closure.md](family-closure.md) |
 | Pass 3 | Pairs above 0.70 merged in rounds, each followed by closure | [pass-3-confident-linking.md](pass-3-confident-linking.md) |
 | Pass 4 | Best unblocked candidate joined in rounds, each followed by closure | [pass-4-best-candidate.md](pass-4-best-candidate.md) |
-| Export | Contradicted inherited fathers withdrawn; nodes, edges, comparisons written | [`rules/json-formats.md`](../rules/json-formats.md) |
+| Export | Contradicted inherited fathers withdrawn; nodes, edges, comparisons written | [`json-formats.md`](../json-formats.md) |
 
 Passes 3 and 4 share the [evidence model](evidence-model.md); its arithmetic is
 worked through in [weight-calculation-examples.md](weight-calculation-examples.md).

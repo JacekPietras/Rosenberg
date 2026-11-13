@@ -6,7 +6,7 @@ Examples:
     python3 scripts/linters/validate_facts.py data/documents/1397-04-29.json
     python3 scripts/linters/validate_facts.py data/books data/notes
 
-The source assertion schema is in rules/json-formats.md. This script does
+The source assertion schema is in specs/json-formats.md. This script does
 not verify source support or historical identity and does not build a graph.
 Every assertion must be typed. Books and notes require explicit historical dates.
 """

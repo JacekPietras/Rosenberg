@@ -50,14 +50,14 @@ If the user corrects a reading afterwards, update the field and everything deriv
 ## 5. English translation
 
 Write `english` as a faithful translation of the stored text:
-- Keep historically meaningful German or Latin terms (`Eigenleute`, `Komtur`, `Vogt zu Dürn`, `Ritter`, `Edelknecht`) and place titles after the full name, per `rules/facts.md`.
+- Keep historically meaningful German or Latin terms (`Eigenleute`, `Komtur`, `Vogt zu Dürn`, `Ritter`, `Edelknecht`) and place titles after the full name, per `specs/facts.md`.
 - Keep family names intact (`von Rosenberg`).
 - Carry over `[…]` for gaps and mark doubtful passages `[?]`. Do not smooth over what the text does not say.
 - Render dates in the usual modern form and keep saint's-day dates literal (for example "on St. Thomas's day, the holy apostle").
 
 ## 6. Improve the facts
 
-Follow `rules/facts.md` and `rules/json-formats.md`, and the `fact-extraction-review` skill if the work is substantial.
+Follow `specs/facts.md` and `specs/json-formats.md`, and the `fact-extraction-review` skill if the work is substantial.
 
 - Verify every existing fact against the German text. Correct or delete unsupported and contradicted facts.
 - Every fact is a typed object. Use `parent`, `sibling`, `spouse`, `kin` and `title` for stated relationships and titles, and `generic` (`person`, optional `personTitle`, `content` starting with the predicate) for the rest.
@@ -74,4 +74,4 @@ Once the document transcription has been completed, set the document-level `tran
 
 - `python3 -c "import json; json.load(open('<file>'))"` and `python3 scripts/lint.py` must report no errors.
 - Review `git diff` of the file. Confirm that only `transcribed`, `summary`, `german`/`latin`, `english` and `facts` changed.
-- Report: the file identified; the uncertain readings; each fact with its supporting quote and status (supported / partially supported / unsupported / contradicted), as in `rules/facts.md`; and open questions such as possible person matches.
+- Report: the file identified; the uncertain readings; each fact with its supporting quote and status (supported / partially supported / unsupported / contradicted), as in `specs/facts.md`; and open questions such as possible person matches.

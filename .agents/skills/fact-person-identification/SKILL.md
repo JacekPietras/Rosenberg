@@ -9,7 +9,7 @@ Use when a fact needs to be linked to a specific person in `data/people.json`, e
 
 ## Evidence review
 
-1. Read `../../../rules/facts.md` and `../../../rules/json-formats.md`. Read the complete source entry, including the German text, date, citation, translation, and relevant image/seal annotations. Treat German as authoritative.
+1. Read `../../../specs/facts.md` and `../../../specs/json-formats.md`. Read the complete source entry, including the German text, date, citation, translation, and relevant image/seal annotations. Treat German as authoritative.
 2. Read `../../../data/people.json` and compare every plausible candidate, including names, titles, dates, spouses, children, and other recorded relationships. Search related source facts and entries for each candidate. Follow connected people and family relations; inspect seal descriptions or linked seal evidence where available.
 3. Weigh independent evidence together: distinctive relationships, places, offices, chronology, transactions, associates, and seals may identify a person. A matching name, family, place, or witness role by itself is not enough. Never infer kinship from proximity or business association.
 4. Validate titles against dated evidence. Titles can change over a person's life: `der Jüngere` may later be `der Ältere`, and `Edelknecht` may later be `Ritter`. Treat these as time-sensitive clues, not automatic contradictions or proof of identity.

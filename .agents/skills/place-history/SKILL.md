@@ -9,7 +9,7 @@ Research and write a historical description for a city, village, church, castle,
 
 ## Research
 
-- Read `../../../rules/json-formats.md`, and the relevant place record in `../../../data/places.json` before editing. Search the canonical name and useful historical spelling variants, plus the place type and specific features.
+- Read `../../../specs/json-formats.md`, and the relevant place record in `../../../data/places.json` before editing. Search the canonical name and useful historical spelling variants, plus the place type and specific features.
 - Browse the web for place-specific evidence. Prefer local history or heritage organizations, municipal and regional historical resources, monument inventories, and scholarly publications. Use Wikipedia as an orientation and cross-checking source; do not rely on it alone when better evidence is available. Consult scientific papers or books when a disputed, specialized, or poorly documented point requires them.
 - Follow sources to the page or publication that supports each claim. Use that evidence to verify the prose, but do not include citations, source lists, or research notes in the `history` value. Do not include claims that are not supported by sources.
 - Distinguish the history of the settlement from that of its church, castle, lordship, or institution. Do not transfer dates or events between them without evidence. Treat legends and uncertain foundation dates as such, or omit them.

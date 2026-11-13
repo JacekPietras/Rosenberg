@@ -334,7 +334,7 @@ def main(argv=None):
                     if key == "abstract":
                         print(
                             f"{display_path(path)}#{child_location}: warning: "
-                            "`summary` is expected; consult rules/json-formats.md"
+                            "`summary` is expected; consult specs/json-formats.md"
                         )
                         warnings += 1
                     else:

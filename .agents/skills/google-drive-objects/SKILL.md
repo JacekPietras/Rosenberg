@@ -28,4 +28,4 @@ source: https://drive.google.com/file/d/FILE_ID/view
 url:    https://drive.google.com/thumbnail?id=FILE_ID&sz=w1600
 ```
 
-`url` is the viewer thumbnail; `source` is the Drive file page. When editing `../../../data/images/images.json`, read `../../../rules/json-formats.md`, preserve its structure, and add only metadata supported by the user or source. Keep the image in Drive unless a repository copy is requested.
+`url` is the viewer thumbnail; `source` is the Drive file page. When editing `../../../data/images/images.json`, read `../../../specs/json-formats.md`, preserve its structure, and add only metadata supported by the user or source. Keep the image in Drive unless a repository copy is requested.

@@ -31,7 +31,7 @@ If the user requests variations, look up given-name variants in `data/names.md`.
 
 When a name contains a nobiliary or territorial prefix, consider variants such as `von`, `v`, `v.`, `von.`, and `de`. Search variants as part of the full person name and report which forms were searched.
 
-Scripts import catalog records to `data/documents/`. Review the results and imported changes: a catalog may match words separately, and a name match does not establish identity. Follow `rules/json-formats.md` for document JSON work and `rules/facts.md` before changing or reviewing facts. Report the archives and queries searched, relevant results and imports, and any unsupported records or incomplete searches.
+Scripts import catalog records to `data/documents/`. Review the results and imported changes: a catalog may match words separately, and a name match does not establish identity. Follow `specs/json-formats.md` for document JSON work and `specs/facts.md` before changing or reviewing facts. Report the archives and queries searched, relevant results and imports, and any unsupported records or incomplete searches.
 
 Avoid rate limits and blocks. Respect script delays and session handling, reuse caches, and do not run concurrent searches against the same site. Stop on rate limits, access blocks, or repeated errors and report the obstacle; do not retry aggressively.
 

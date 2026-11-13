@@ -6,8 +6,8 @@ Read README.md before making structural changes.
 
 - Work with JSON files under `data/`.
 - Preserve the smallest targeted edit, valid JSON, existing structure, source citations, source text, translations, and ISO date precision.
-- Read `rules/json-formats.md` when working with data schemas or JSON structure.
-- Read `rules/facts.md` before adding, changing, reviewing, or removing facts.
+- Read `specs/json-formats.md` when working with data schemas or JSON structure.
+- Read `specs/facts.md` before adding, changing, reviewing, or removing facts.
 
 The linked rules are part of these instructions and should be followed when
 the relevant task requires them.
@@ -17,8 +17,8 @@ Add facts directly to the relevant JSON entry and review the diff.
 
 ## Family reconstruction
 
-- Before changing `scripts/family_graph/` or `data/matching.json`, read `algorithm-spec/`.
-- Keep `algorithm-spec/` in step with the code.
+- Before changing `scripts/family_graph/` or `data/matching.json`, read `specs/tree-algorithm/`.
+- Keep `specs/tree-algorithm/` in step with the code.
 
 ## Images
 
