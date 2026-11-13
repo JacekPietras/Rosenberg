@@ -43,7 +43,9 @@ def generations_consistent(parent_edges, sibling_edges):
     return True
 
 
-def reconstruct(assertions, decisions, registry, names, parameters=None, observations=()):
+def reconstruct(assertions, decisions, registry, names, parameters=None, observations=(), progress=None):
+    progress = progress or (lambda _stage: None)
+    progress('Reconstructing identities and family evidence')
     assertions = list(assertions)
     mentions = {m.handle: m for a in assertions for m in a.mentions}
     parent = {key: key for key in mentions}
@@ -904,17 +906,23 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         withdraw_inferred()
         return shared_fathers() + same_named_relatives()
 
+    progress('Pass 3: closing initially known family relationships')
     family_closure()
     for iteration in range(model.settings['maxRounds']):
         current, profiles, root_names, context_coverage = build_profiles()
+        progress(f'Pass 3 round {iteration + 1}: comparing {len(current)} identities')
         buckets = defaultdict(list)
         for root in current:
             buckets[given(root_names[root])].append(root)
         round_scores, options = {}, defaultdict(list)
+        compared_pairs = 0
         for roots in buckets.values():
             for left, right in combinations(roots, 2):
                 if not all(compatible_names(name(a), name(b)) for a in current[left] for b in current[right]):
                     continue
+                compared_pairs += 1
+                if compared_pairs % 5000 == 0:
+                    progress(f'Pass 3 round {iteration + 1}: compared {compared_pairs:,} compatible identity pairs')
                 record = model.compare(profiles[left], profiles[right])
                 blocks = record.pop('blocks')
                 record.pop('hardBlocks')
@@ -973,6 +981,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             else:
                 round_scores[pair].update(status='incompatible', reason='complete proposed cluster violates identity constraints')
         count += family_closure()
+        progress(f'Pass 3 round {iteration + 1} complete: {count} merges; {len(comparisons)} comparisons recorded')
         if not count:
             break
 
@@ -991,8 +1000,11 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         hull = lambda handles: (min(mentions[h].assertion.bounds[0] for h in handles), max(mentions[h].assertion.bounds[1] for h in handles))
         return gap_years(hull(left), hull(right))
 
+    progress('Pass 4: joining each identity to its best supported candidate')
     for stage_round in range(len(mentions)):
         current, profiles, root_names, context_coverage = build_profiles()
+        if stage_round == 0 or stage_round % 10 == 0:
+            progress(f'Pass 4 round {stage_round + 1}: comparing {len(current)} identities')
         labels = {root: next(iter(anchor(handles)), root_names[root]) for root, handles in current.items()}
         reference = {root for root, handles in current.items() if anchor(handles) or passages(handles) > 1}
         tree, relations, factual_parents = family_tree()
@@ -1047,9 +1059,13 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         for root in sorted(typed):
             buckets[given(root_names[root])].append(root)
         base = {}
+        compared_pairs = 0
         for roots in buckets.values():
             for left, right in combinations(roots, 2):
                 if all(compatible_names(name(a), name(b)) for a in current[left] for b in current[right]):
+                    compared_pairs += 1
+                    if compared_pairs % 5000 == 0:
+                        progress(f'Pass 4 round {stage_round + 1}: compared {compared_pairs:,} compatible identity pairs')
                     base[left, right] = base[right, left] = model.compare(profiles[left], profiles[right])
 
         def score(root, candidate):
@@ -1257,8 +1273,10 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                           'sources': [refs[key].export() for key in sorted(refs)]})
             joined += 1
         joined += family_closure()
+        progress(f'Pass 4 round {stage_round + 1} complete: {joined} merges; {len(comparisons)} comparisons recorded')
         if not joined:
             break
+    progress('Exporting reconstructed identities and relationships')
     withdraw_inferred()
     current = groups()
     keys = {}

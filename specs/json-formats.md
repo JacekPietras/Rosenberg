@@ -60,8 +60,8 @@ start of a relationship.
 
 - **Documents**: facts inherit the entry or document date, including intervals
   (`YYYY-YYYY`, ISO endpoints joined by `/` or `--`), which stay intervals.
-  Generic objects never have `date`; other types have one only when it differs
-  from the inherited date. A fact without an enclosing date needs its own.
+  Facts of any type have their own `date` when it differs from the inherited
+  date. A fact without an enclosing date needs its own.
 - **Books and notes**: every fact and guess has its own `date`.
 
 ### Deaths

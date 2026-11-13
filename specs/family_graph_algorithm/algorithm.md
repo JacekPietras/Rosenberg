@@ -35,6 +35,10 @@ facts only. Prose mentions may support identity matching and contextual links,
 but never create family relationship assertions. See
 [document English recognition](person-name-text-migration.md).
 
+An explicit fact date, including a generic fact's date, overrides the enclosing
+document or entry date for its assertions and fact-text context. Entry English
+text retains the enclosing date.
+
 ## Terms
 
 - **Mention**: one typed participant (`person` or `of`) of one assertion, or a
@@ -122,6 +126,11 @@ same inputs gives a byte-identical `tree.json`.
 
 Tests: `tests/test_probability.py` (features and blocks) and
 `tests/test_family_graph.py` (passes and real-data cases).
+
+The rebuild command emits flushed `PROGRESS:` messages for loading, candidate
+resolution, and reconstruction. Pass 3 and pass 4 report each completed round;
+they also report round starts and compatible-pair counts as comparisons run.
+The local viewer displays the latest progress message while rebuilding.
 
 Name variants before `von` are normalized component by component; for example,
 `Ludwig Münch von Rosenberg` and `Ludwig Mönch von Rosenberg` have the

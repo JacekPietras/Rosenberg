@@ -156,7 +156,9 @@ class FactValidatorTests(unittest.TestCase):
                     del item['date']
                     self.assertTrue(self.errors(self.check(value, relative)))
                 else:
-                    for date in ('1395', '1395-04-12', None):
+                    item['date'] = '1395'
+                    self.assertEqual([], self.check(value, relative).diagnostics)
+                    for date in ('1395-04-12', None):
                         with self.subTest(field=field, relative=relative, date=date):
                             item['date'] = date
                             self.assertTrue(self.errors(self.check(value, relative)))
@@ -184,7 +186,7 @@ class FactValidatorTests(unittest.TestCase):
                       {'subject': []}, {'personTitle': ['Ritter']}, {'personDeceased': True}):
             with self.subTest(extra=extra):
                 self.assertTrue(self.errors(self.check(self.document({**item, **extra}))))
-        self.assertTrue(self.errors(self.check(self.document({**item, 'date': '1395'}))))
+        self.assertEqual([], self.check(self.document({**item, 'date': '1395'})).diagnostics)
         self.assertTrue(self.errors(self.check(self.document(item), 'books/test.json')))
         self.assertEqual([], self.check(self.document({**item, 'date': '1395'}), 'books/test.json').diagnostics)
 

@@ -143,6 +143,17 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertEqual(['unmarked mention after recorded death or impossible age'], [c['reason'] for c in result.conflicts])
         self.assertEqual('anchored', result.relationships[0].derivations[0]['identity'])
 
+    def test_earlier_generic_fact_date_controls_chronology_and_context(self):
+        death = {'type': 'death', 'person': 'a', 'diedOn': '1387'}
+        earlier = {'type': 'generic', 'person': 'a', 'date': '1369-08-27', 'content': 'issued a ruling.'}
+        inputs = self.inputs(facts=[death, earlier])
+        self.assertEqual('1369-08-27', inputs.assertions[1].historical_date)
+        observation = next(o for o in inputs.observations if o.source.pointer.endswith('/facts/1'))
+        self.assertEqual('1369-08-27', observation.historical_date)
+        self.assertFalse(build(inputs).conflicts)
+        del earlier['date']
+        self.assertTrue(build(self.inputs(facts=[death, earlier])).conflicts)
+
     def test_conflicting_factual_deaths_block_affected_edges(self):
         result = build(self.inputs(facts=[{'type': 'death', 'person': 'a', 'diedOn': '1387'}, {'type': 'death', 'person': 'a', 'diedOn': '1388'}, relation('a', 'b'), relation('b', 'c')]))
         self.assertEqual([('b', 'c')], [(edge.person, edge.of) for edge in result.relationships])

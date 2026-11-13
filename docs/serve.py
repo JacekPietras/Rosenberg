@@ -457,13 +457,16 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                             lines.put(None)
                         reader = threading.Thread(target=read_output, daemon=True)
                         reader.start()
-                        deadline = time.monotonic() + 120
+                        # Large source collections can take many minutes to assemble.
+                        # Keep a bounded timeout without aborting normal rebuilds.
+                        rebuild_timeout = 3600
+                        deadline = time.monotonic() + rebuild_timeout
                         finished_reading = False
                         while process.poll() is None or not finished_reading:
                             if time.monotonic() >= deadline:
                                 process.kill()
                                 process.wait()
-                                raise subprocess.TimeoutExpired(command, 120)
+                                raise subprocess.TimeoutExpired(command, rebuild_timeout)
                             try:
                                 line = lines.get(timeout=0.1)
                             except queue.Empty:

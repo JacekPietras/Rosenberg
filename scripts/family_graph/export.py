@@ -204,11 +204,12 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
                         if reference in registry:
                             valid = '[' + reference + ']' in text
                         elif recognizer is not None:
-                            valid = reference in recognizer.find(text)
+                            valid = reference in recognizer.find(text) or reference in person_references(text)
                         else:
                             valid = reference in person_references(text)
                         if not valid:
-                            raise ValueError('invalid reconstructed context participant')
+                            raise ValueError(f"invalid reconstructed context participant {reference!r} at "
+                                             f"{mention['source']['path']}#{mention['source']['pointer']}")
                     named |= reference == node['name']
                 elif field not in {'person', 'of'} or fact is not None and (not isinstance(fact, dict) or field not in fact):
                     raise ValueError('invalid reconstructed participant')

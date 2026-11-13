@@ -137,6 +137,7 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
             for handle in handles:
                 decisions[handle].candidates.append(Candidate(group, [{'name': 'compatible unresolved occurrences; no identity merge', 'score': 0}]))
     evidence = reconstruct(usable, decisions, registry, names, parameters=inputs.matching or None,
-                           observations=[o for o in inputs.observations if include_guesses or o.source.kind != 'guesses'])
+                           observations=[o for o in inputs.observations if include_guesses or o.source.kind != 'guesses'],
+                           progress=progress)
     return BuildResult(view, decisions, edges, conflicts, diagnostics, alternatives, omitted, dict(provisional_groups),
                        {'searchLimit': search_limit, 'probability': parameters(inputs.matching or None)}, evidence)
