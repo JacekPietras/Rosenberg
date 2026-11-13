@@ -1,8 +1,7 @@
 {
   "date": "1950-1951",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, NW 1037 Gen, Nr. 63",
@@ -341,6 +340,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

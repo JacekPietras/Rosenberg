@@ -1,8 +1,7 @@
 {
   "date": "1753",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 229 Nr. 89314",
@@ -572,6 +571,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

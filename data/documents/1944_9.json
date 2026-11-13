@@ -1,14 +1,12 @@
 {
   "date": "1944",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 4-G /, Nr. Best. 4-G / 1220",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_e9c29284-2e48-4956-b2e7-8e227fd8620d",
       "german": "Rosenberg, Georg * 12.06.1922"
     }
-  ],
-  "deleted": true
+  ]
 }

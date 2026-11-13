@@ -1,14 +1,12 @@
 {
   "date": "1954",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Marl, B.04.01 Best. 404, Nr. 101",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A10x64230275154113720260812162909753",
       "german": "Schwedland, Johannes Walter Richard, Sterbedatum: 22.04.1954, Geburtsdatum: 19.02.1875, Geburtsort, Freudenthal, Kreis Rosenberg"
     }
-  ],
-  "deleted": true
+  ]
 }

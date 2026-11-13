@@ -1,14 +1,12 @@
 {
   "date": "1951",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 1-J",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_f4e1aafa-8a7c-40e4-b1e2-06a37e1f0a8f",
       "german": "Rosenberg, Else Ella"
     }
-  ],
-  "deleted": true
+  ]
 }

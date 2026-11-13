@@ -1,14 +1,12 @@
 {
   "date": "1916",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Lemgo, 11 N 01, Nr. D_444",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x35844331979751520200930121713258",
       "german": "Herta Frenkel, geborene Rosenberg, als junges Mädchen\n\nHerta Frenkel, auf einem Stuhl sitzend"
     }
-  ],
-  "deleted": true
+  ]
 }

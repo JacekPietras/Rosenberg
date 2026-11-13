@@ -1,14 +1,12 @@
 {
   "date": "1972",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Marl, B.04.01 Best. 404, Nr. 207",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A10x06021231412887520260818171236062",
       "german": "Mierswa geb. Gaida, Albina, Sterbedatum: 19.03.1972, Geburtsdatum: 28.03.1900, Geburtsort: Trebitschin, Kreis Rosenberg"
     }
-  ],
-  "deleted": true
+  ]
 }

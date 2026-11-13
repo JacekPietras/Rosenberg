@@ -1,8 +1,7 @@
 {
   "date": "1868",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "ISG FFM, H.15.15, 1868-410",
@@ -41,6 +40,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

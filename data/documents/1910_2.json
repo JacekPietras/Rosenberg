@@ -1,14 +1,12 @@
 {
   "date": "1910",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Lemgo, 11 N 01, Nr. D_442",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x05788075923919620200930121713257",
       "german": "Helene und Theodor Rosenberg aus Dedesdorf (Unterweser)\n\nHalbporträt"
     }
-  ],
-  "deleted": true
+  ]
 }

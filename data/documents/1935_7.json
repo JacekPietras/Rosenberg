@@ -1,8 +1,7 @@
 {
   "date": "1935-1937",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Landeskirchliches Archiv der Evangelischen Kirche von Westfalen, 5.1, Nr. 622 Fasc. 2",
@@ -1016,6 +1015,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

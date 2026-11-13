@@ -1,8 +1,7 @@
 {
   "date": "1828-1836",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, M 9 Petershagen, Nr. 339",
@@ -59,6 +58,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1909",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Kleve, Nr. KA Kle S41, 481",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-AR81163",
       "german": "Geldernerstraße in Geldern mit Blick auf das Rathaus und die St. Maria Magdalena Kirche\n\nEmpfänger: Gustav Spamer, Arnswaldstraße, Hannover Absender: Berthold Rosenberg bei S. Kempenich in Geldern Copyright: Cramers Kunstanstalt, Dortmund"
     }
-  ],
-  "deleted": true
+  ]
 }

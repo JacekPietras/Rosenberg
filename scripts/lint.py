@@ -6,6 +6,7 @@ import re
 import subprocess
 import sys
 import json
+import argparse
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -18,7 +19,14 @@ CHECKS = (
 )
 
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="include documents normally skipped by document validation",
+    )
+    args = parser.parse_args(argv)
     failed = False
     issues = 0
     normalized_names = 0
@@ -44,8 +52,11 @@ def main():
             issues += 1
             failed = True
     for check in CHECKS:
+        command = [sys.executable, str(LINTERS / check)]
+        if args.all and check == "validate_documents.py":
+            command.append("--all")
         result = subprocess.run(
-            [sys.executable, str(LINTERS / check)],
+            command,
             cwd=ROOT,
             capture_output=True,
             text=True,

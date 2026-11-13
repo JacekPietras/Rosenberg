@@ -1,14 +1,12 @@
 {
   "date": "1861",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAD, G 28 Ortenberg, F 1803",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3955594",
       "german": "Familienrechtssachen Gelnhaar: Rosenberg Nr. 1-2"
     }
-  ],
-  "deleted": true
+  ]
 }

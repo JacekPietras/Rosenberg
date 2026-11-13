@@ -1,14 +1,12 @@
 {
   "date": "1884",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 233 Nr. 35246",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3783235",
       "german": "Strafsache gegen den Fruchthändler Max Ostheimer von Rosenberg wegen Betrugs\n\nLaufzeit: 1884\n\nUmfang: 1 Faszikel"
     }
-  ],
-  "deleted": true
+  ]
 }

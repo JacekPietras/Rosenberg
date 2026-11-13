@@ -1,14 +1,12 @@
 {
   "date": "1899",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Höxter, Nr. Nr. 114",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_9a52d277-3295-485a-b36a-8ba7cf3ace7e",
       "german": "Amelunxen, Ortsansichten\n\nTotal-Ansicht, Schloss, Geschäftshaus J. Rosenberg, Restauration Aug. Clemens, Elektr. Anlage\n\nLithographie; aufgegeben in Paderborn - gesendet nach Münster"
     }
-  ],
-  "deleted": true
+  ]
 }

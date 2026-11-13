@@ -1,14 +1,12 @@
 {
   "date": "1956-1957",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kommunalarchiv Minden, KMi 50 AfW, Nr. Nr. 1218",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_99f0b091-a932-428e-958f-4400c179cb94",
       "german": "Katzenstein, Gietha (Gitta) * 05.08.1891\n\nAntragstellung der Töchter Elfriede Berliner, geb. Katzenstein und Ruth Rosenberg, geb. Katzenstein"
     }
-  ],
-  "deleted": true
+  ]
 }

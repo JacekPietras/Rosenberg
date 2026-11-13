@@ -1,14 +1,12 @@
 {
   "date": "1970",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 1-J",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_334b2c62-31b7-4460-9eb3-554bc9b13c2f",
       "german": "Rosenberg, Karlheinz"
     }
-  ],
-  "deleted": true
+  ]
 }

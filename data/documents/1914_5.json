@@ -1,14 +1,12 @@
 {
   "date": "1914",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Warendorf, Ahl Stadt S, Nr. 100",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_0c61407b-971a-4ed5-803a-d6f66bfd12d1",
       "german": "Kriegsbedingte Verkürzung der Öffnungszeiten von Geschäften zum Stromsparen\n\nnur: Selbstverpflichtung Ahlener Geschäftsleute, ihre Geschäfte aufgrund des Kriegs abends schon um 8 Uhr zu schließen; Darunter die eigenhändigen Unterschriften von - B.H. Beumer - J. Klostermann - B.H. Seiling - Ferdinand Westhölter - Th. Althoff - Daniel Rosenberg - Philipp Rosenberg - Leo Gumpert - Paul Schöneberg - Rochus Westhölter - E. Freund - Gerhard Blanke - Heinrich Lentrup - Witwe A. Spiegel - H. Nölke - Gebr. Tovar - Gebr. Schönemann - J. Weber - Julius Rollmann"
     }
-  ],
-  "deleted": true
+  ]
 }

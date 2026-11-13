@@ -1,8 +1,7 @@
 {
   "date": "1681",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Vereinigte Adelsarchive im Rheinland e.V., Schönstein Urkunden, Nr. 2827",
@@ -29,6 +28,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

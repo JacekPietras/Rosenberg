@@ -1,14 +1,12 @@
 {
   "date": "1965-1966",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, BR 1052, Nr. 1919",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_1c88b350-a7e0-4636-9160-3f16a36bb95e",
       "german": "Durchführung der Ergänzungsprüfung für evangelische Unterweisung\n\nEnthält u.a.: Kurt Bode (* 19.05.1923) Gisela Buddeberg Robert Fleischer (* 25.07.1922) Renate Mücka, geb. Rosenberg (* 28.09.1930) Hugo Westphal (* 06.11.1925)"
     }
-  ],
-  "deleted": true
+  ]
 }

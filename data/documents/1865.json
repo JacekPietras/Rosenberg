@@ -1,14 +1,12 @@
 {
   "date": "1865",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, Q 429t, Nr. 1140",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_54f0bc17-c0c2-45a7-8e9f-fc6a4debe87e",
       "german": "Rosenberg, Ferdinand, Tagelöhner, Testament, Niederberge"
     }
-  ],
-  "deleted": true
+  ]
 }

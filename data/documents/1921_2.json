@@ -1,8 +1,7 @@
 {
   "date": "1921-1937",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, BR 0001, Nr. 2192",
@@ -1379,6 +1378,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

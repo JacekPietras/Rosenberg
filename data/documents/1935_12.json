@@ -1,14 +1,12 @@
 {
   "date": "1935",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, L 115 E, Nr. 8",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_95e01fa7-24ad-473e-b348-126fb5431d8e",
       "german": "Korrespondenz mit Verlag K. F. Köhler, Leipzig und Verleger Dr. H. v. Hase\n\nbetr.: - Bestellung W. Teudts zum Herausgeber - geplante Übernahme der Schriftleitung durch J. O. Plassmann - Ablehnung der Ura-Linda-Chronik durch Wirth - Tagung des Reichsbundes für deutsche Vorgeschichte und seine Beziehungen zu A. Rosenberg - Verbot \"germanischer\" Monatsnamen durch die Reichspressekammer"
     }
-  ],
-  "deleted": true
+  ]
 }

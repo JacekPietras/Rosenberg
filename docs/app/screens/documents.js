@@ -1,6 +1,7 @@
 import { factDate } from '../rendering/facts.js?v=8';
 import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=8';
+import { personRouteName } from '../data/person-name-recognition.js?v=1';
 
 export function createDocumentRenderer({
   state,
@@ -20,6 +21,70 @@ export function createDocumentRenderer({
   getPeople,
   distinctFamilies,
 }) {
+  function documentStrings(value) {
+    if (typeof value === 'string') return [value];
+    if (Array.isArray(value)) return value.flatMap(documentStrings);
+    if (!value || typeof value !== 'object') return [];
+    return Object.entries(value).filter(([key]) => !['label', 'deleted', 'url'].includes(key))
+      .flatMap(([, nested]) => documentStrings(nested));
+  }
+
+  function personMentions(doc) {
+    const found = new Map();
+    const patterns = [state.sourcePersonPattern, ...(state.personPattern || []).map(({ pattern }) => pattern)].filter(Boolean);
+    for (const text of documentStrings(doc)) {
+      for (const sourcePattern of patterns) {
+        const pattern = new RegExp(sourcePattern.source, sourcePattern.flags);
+        for (const match of text.matchAll(pattern)) {
+          const name = match[0];
+          const key = personRouteName(name).toLocaleLowerCase();
+          if (!found.has(key)) found.set(key, name);
+        }
+      }
+    }
+    return found;
+  }
+
+  let indexedDocuments;
+  let mentionsByPath;
+  function documentMentionIndex() {
+    if (indexedDocuments === state.documents && mentionsByPath) return mentionsByPath;
+    indexedDocuments = state.documents;
+    mentionsByPath = new Map([...(state.documents || [])]
+      .filter(([path]) => path.startsWith('data/documents/'))
+      .map(([path, doc]) => [path, personMentions(doc)]));
+    return mentionsByPath;
+  }
+
+  function labelsForMentionedDocument(doc) {
+    if (doc?.deleted) return ['deleted'];
+    const values = Array.isArray(doc?.label) ? doc.label : [doc?.label];
+    const labels = [...new Set(values.map((label) => String(label || '').trim())
+      .filter((label) => label && label.toLocaleLowerCase() !== 'to review'))];
+    return labels.length ? labels : values.some((label) => String(label || '').trim()) ? [] : ['Franken'];
+  }
+
+  function reviewNameLabels(doc, path) {
+    const reviewLabels = Array.isArray(doc?.label) ? doc.label : [doc?.label];
+    if (!reviewLabels.some((label) => String(label || '').trim().toLocaleLowerCase() === 'to review')) return '';
+    const index = documentMentionIndex();
+    const people = index.get(path) || personMentions(doc);
+    if (!people.size) return '';
+    const labelsByName = new Map([...people.keys()].map((key) => [key, new Set()]));
+    for (const [otherPath, otherDoc] of state.documents || []) {
+      if (otherPath === path || !index.has(otherPath)) continue;
+      const otherNames = index.get(otherPath);
+      for (const key of people.keys()) {
+        if (otherNames.has(key)) labelsForMentionedDocument(otherDoc).forEach((label) => labelsByName.get(key).add(label));
+      }
+    }
+    const rows = [...people].map(([key, name]) => {
+      const labels = [...labelsByName.get(key)].sort((left, right) => left.localeCompare(right, undefined, { sensitivity: 'base' }));
+      return labels.length ? `<div class="review-name-label-row"><span class="review-name">${escapeHtml(name)}</span><span class="review-name-labels">${labels.map((label) => `<span class="record-label">${escapeHtml(label)}</span>`).join('')}</span></div>` : '';
+    }).filter(Boolean);
+    return rows.length ? `<div class="review-name-mentions" aria-label="Labels in other documents where names are mentioned">${rows.join('')}</div>` : '';
+  }
+
   function renderEntry(entry, { title = true, subheading = true, date = true, source = true, image = true, path = '', index = null, documentDate = '' } = {}) {
     const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
     const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
@@ -62,7 +127,8 @@ export function createDocumentRenderer({
       ? `<button class="record-label-edit record-delete" type="button" data-delete-document="${escapeHtml(path)}" aria-label="Delete document" title="Delete document"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2m3 0-1 14H6L5 6m4 4v6m6-6v6"/></svg></button>`
       : '';
     const classifyButton = labelEditor ? `<button class="record-label-edit" type="button" data-classify-document="${escapeHtml(path)}" aria-label="Classify document" title="Classify document"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9a2.5 2.5 0 1 1 4.1 1.9c-1 .8-1.7 1.2-1.7 2.6M12 17h.01"/></svg></button>` : '';
-    const headingAside = labels.length || date || labelEditor ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => `<span class="record-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}${deleteButton}${classifyButton}</div><span class="record-delete-status" role="status" aria-live="polite"></span><span class="record-classify-status" role="status" aria-live="polite"></span>${date}</div>` : '';
+    const mentionLabels = path.startsWith('data/documents/') ? reviewNameLabels(doc, path) : '';
+    const headingAside = labels.length || date || labelEditor || mentionLabels ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => `<span class="record-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}${deleteButton}${classifyButton}</div>${mentionLabels}<span class="record-delete-status" role="status" aria-live="polite"></span><span class="record-classify-status" role="status" aria-live="polite"></span>${date}</div>` : '';
     const url = doc.url ? urlMarkup(doc.url) : '';
     const year = documentYear(doc);
     const anchor = year ? ` id="year-${year}-${index}"` : '';

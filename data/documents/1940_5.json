@@ -1,14 +1,12 @@
 {
   "date": "1940-1944",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, L 113, Nr. 1001",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_4ef7b22d-694b-44b8-bf20-6bd2ab28990f",
       "german": "Bücherspende für die Wehrmacht (Alfred-Rosenberg-Spende, Schriftwechsel mit Gauschulungsleiter, Gauschrifttumsbeauftragtem, Ortsgruppen, Wehrmachtsdienststellen)\n\nEnthält: Sammlungen in den Ortsgruppen; Buchbestellungen und Versand; Bücherverzeichnisse; Versorgung von Lazaretten; Bücherverteilung an Krankenhäuser durch die Staatliche Volksbüchereistelle für das Land Lippe; „Zusammenstellung von Autoren, deren Werke ohne Bedenken für Wehrmachtsbüchereien in Betracht kommen\"; „Ergänzungsliste II\" des Buchversands E. Lumbeck, Bochum. Enthält auch: Ausleihe von Rundfunkgeräten."
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1720-1724",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Vereinigte Adelsarchive im Rheinland e.V., Schönstein Akten, Nr. 7156",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x01267468929290720210713141736529",
       "german": "Das Gut Rosenberg"
     }
-  ],
-  "deleted": true
+  ]
 }

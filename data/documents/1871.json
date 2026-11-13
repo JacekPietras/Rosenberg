@@ -1,14 +1,12 @@
 {
   "date": "1871",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Duisburg, 41, Nr. 293",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x80863273143768320230920095805762",
       "german": "Bericht des Regierungsassessors von Rosenberg-Gruszcynski über eine Arbeiterversammlung in Duisburg"
     }
-  ],
-  "deleted": true
+  ]
 }

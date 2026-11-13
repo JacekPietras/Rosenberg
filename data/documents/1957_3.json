@@ -1,14 +1,12 @@
 {
   "date": "1957",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "StadtA BW, N 2, 475",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7180732",
       "german": "Zeitungsbericht zum 80. Geburtstag von Maria Rosenberg"
     }
-  ],
-  "deleted": true
+  ]
 }

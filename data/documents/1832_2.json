@@ -1,8 +1,7 @@
 {
   "date": "1832-1836",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, M 9 Rahden, Nr. 201",
@@ -116,6 +115,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

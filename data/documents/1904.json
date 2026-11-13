@@ -1,14 +1,12 @@
 {
   "date": "1904-1905",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Krefeld, 72/5, Nr. 72/5/61doppelt",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-ID_8e2d03ab-4373-5a63-9fdc-5a588fc14a8b",
       "german": "Pädagogisches Seminar, Abschlussarbeit Deutsch\n\nRosenberg, Inwieweit können im deutschen Unterricht der Untertertia - entsprechend dem Linnigschen Lesebuche und dem Gedichtkanon der Anstalt - Belehrungen über die persönlichen Verhältnisse der Dichter gegeben werden?"
     }
-  ],
-  "deleted": true
+  ]
 }

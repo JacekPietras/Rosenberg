@@ -1,14 +1,12 @@
 {
   "date": "1931",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "StadtA BW, W 2, B 6729",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6955035",
       "german": "Tankstelle Rosenberg, betr. Vertrag mit der Firma DEROP"
     }
-  ],
-  "deleted": true
+  ]
 }

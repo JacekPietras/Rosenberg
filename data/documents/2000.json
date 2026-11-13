@@ -1,14 +1,12 @@
 {
   "date": "2000-2001",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Viersen, I 6, Nr. 12952",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_50fc8b9b-6cf5-4ff5-b4f0-36d4e1af218a",
       "german": "Jazz-Festival, Verträge, Bands R-Z 2001\n\nAuftrittsverträge zwischen der Stadt Viersen und den Künstlern, Aufstellung zur Berechnung der Ausländersteuer, Korrespondenz mit den Tourmanagern (u.a. über die Auftrittszeiten), Informationsbroschüren über die Künstler (u.a. Jean Toussaint, The Rosenberg Trio, Michael Sagmeister, Joscho Stephan Quartett, Claudius Valk), Anweisungen für die Bühnenauftritte\nFotos der Künstler, Informationsbroschüre zur Objektausstellung der Künstlerin Annette Wimmershoff (ARAG Kunstpreis 1999)"
     }
-  ],
-  "deleted": true
+  ]
 }

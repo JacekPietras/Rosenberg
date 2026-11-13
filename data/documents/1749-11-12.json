@@ -1,8 +1,7 @@
 {
   "date": "1749-11-12",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "1837",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

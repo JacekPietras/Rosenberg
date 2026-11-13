@@ -1,8 +1,7 @@
 {
   "date": "1950",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": [
@@ -1565,6 +1564,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

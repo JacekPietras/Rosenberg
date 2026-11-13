@@ -1,14 +1,12 @@
 {
   "date": "1949",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Archiv des Jugendhauses Düsseldorf, Nr. 02/026 - 13 [RR 050]",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_cb6a368e-bb36-4fc9-88fc-aa080beb80e6",
       "german": "Bundeskonferenz der Führerschaft 1949  - Maria Rosenberg\n\nTagungsunterlagen, Zeitungsbericht"
     }
-  ],
-  "deleted": true
+  ]
 }

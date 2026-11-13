@@ -1,14 +1,12 @@
 {
   "date": "1925",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "AdJb, A 82, 79",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5803086",
       "german": "Fotosammlung Dr. agr. Alwiß Rosenberg (1906-1980)\n\nEnthält: Porträt von Alwiß Rosenberg als Student\nFotos von den Gerbstedter Artamanen mit Adler und Falken 1925\nFoto von Alwiß Rosenberg als Führer der Artamanenschaft Rinkendorf, 1926\nFotos der Artamanenschaft Limbach, 1927\nFoto Alwiß und Andor Rosenberg in der Artamanenschaft Markenthun, 1930\nStudentenausweiß von Alwiß Rosenberg, 1955\nPersonalausweis Alwiß Rosenberg, 1955\nFotos vom verschiedenen Treffen ehemaliger Artamanen in den 1960er und 1970er Jahren"
     }
-  ],
-  "deleted": true
+  ]
 }

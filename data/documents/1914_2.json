@@ -1,8 +1,7 @@
 {
   "date": "1914-1922",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, BR 0101, Nr. 1016",
@@ -938,6 +937,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

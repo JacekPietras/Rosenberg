@@ -1,8 +1,7 @@
 {
   "date": "1831-1871",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, M 9 Bielefeld, Nr. 2427",
@@ -107,6 +106,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1981",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAD, H 59, 637",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6952980",
       "german": "Ausstellung zum Hessentag 1981 / Wanderausstellung: \"Hessische Forscher und Entdecker\" [2/2]\n\nEnthält: Schreiben zum Versand von Mikrofilmaufnahmen von Dokumenten\nExposé; Liste der Exponate zur Ausstellung \"Hessische Entdecker - Forschungsreise in fünf Erdteilen\"\nGesammelte Schreiben u.a. zu Hermann von Rosenberg, Ernst Dieffenbach, Konstantin Reitz, Sibylla Merian, Johann Moritz von Nassau-Siegen, Hans Staden, Wilhelm Ludwig von Eschwege, Friedrich Ludwig Wilhelm Varnhagen, Theodor Koch-Grünberg, Paul Trapp, Fritz Max Hessemer, Eduard Rüppell, Justus Karl Hasskarl, Georg Heinrich von Langsdorff, Damian Freiherr von Schütz zu Holzhausen, Carl Graf von Schlitz gen. von Görtz\nInformation zum Büdinger \"Heuson-Museum im Rathaus\" (1981)"
     }
-  ],
-  "deleted": true
+  ]
 }

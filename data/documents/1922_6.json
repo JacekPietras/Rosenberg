@@ -1,14 +1,12 @@
 {
   "date": "1922",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HHStAW, 676, 4752",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6148202",
       "german": "Rosenberg - Sally Rosenberg OHG"
     }
-  ],
-  "deleted": true
+  ]
 }

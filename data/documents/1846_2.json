@@ -1,14 +1,12 @@
 {
   "date": "1846",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAD, G 28 Darmstadt, F 1644/35",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3979605",
       "german": "HOFMANN, Emilie, geb. von Rosenberg, Ehegattin des Hofgerichtsadvokaten Otto Georg Hermann Conrad Hofmann: Ehevertrag/Erbvertrag 1846, 1848, Sterbfallanzeige 1846, 1848"
     }
-  ],
-  "deleted": true
+  ]
 }

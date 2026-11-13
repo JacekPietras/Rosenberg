@@ -1,14 +1,12 @@
 {
   "date": "1922",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HHStAW, 676, 247",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6148195",
       "german": "Rosenberg - Firma Emma Rosenberg"
     }
-  ],
-  "deleted": true
+  ]
 }

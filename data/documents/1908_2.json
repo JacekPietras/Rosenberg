@@ -1,8 +1,7 @@
 {
   "date": "1908-1916",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Dortmund, 10, Nr. 168",
@@ -1550,6 +1549,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1937-1940",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Dortmund, 113, Nr. 84",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x29797655344009320241001120956092",
       "german": "Ausstellung \"Das deutsche Familienbild\",<lb/>veranstaltet vom \"Amt Rosenberg\" und der NS-Gemeinschaft \"Kraft durch Freude\"\n\nEnthält: Planung der Ausstellung \"Das deutsche Familienbild\"; Nachträge zu den Ausstellungen \"Deutsche Städtebilder\" und \"Der Bauer und sein Land\"; Ausstellung \"Das deutsche Familienbild\" vom 24.4. bis 22.5.1938 im \"Haus der Kunst\" in Dortmund; Pressenotizen und Pressebesprechungen"
     }
-  ],
-  "deleted": true
+  ]
 }

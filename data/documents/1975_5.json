@@ -1,14 +1,12 @@
 {
   "date": "1975",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 1-J",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_c23485bb-fc1c-405f-bfcc-306e2ffbe17a",
       "german": "Rosenberg, Martha Emilie"
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1881",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, Q 522t, Nr. 145",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_ddf01b3f-c09e-4598-8691-ce28f393a8f3",
       "german": "Rosenberg, Johanna, Ehefr. des Lehrers Selig Louis Liepmannssohn, Horn"
     }
-  ],
-  "deleted": true
+  ]
 }

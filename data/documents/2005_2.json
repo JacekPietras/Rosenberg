@@ -1,14 +1,12 @@
 {
   "date": "2005",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Münster, Slg-Plakate, Nr. VII-01361",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x89098268747329720201002105042019",
       "german": "Marianne Rosenberg live mit Band  für immer wie heute\n\nKonzert, 26. April 2005"
     }
-  ],
-  "deleted": true
+  ]
 }

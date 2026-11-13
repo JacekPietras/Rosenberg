@@ -1,14 +1,12 @@
 {
   "date": "1969-1970",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv und Landesgeschichtliche Bibliothek Bielefeld, 130,002/Amt/Stadt Brackw., Nr. D 0856",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x50967258214950520201215085004193",
       "german": "Vorentwurf für die Kanalisation der Häuser am Grenzweg und an der Straße \"Am Rosenberg\""
     }
-  ],
-  "deleted": true
+  ]
 }

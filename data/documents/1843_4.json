@@ -1,14 +1,12 @@
 {
   "date": "1843",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAD, G 28 Darmstadt, F 2544/10",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3973467",
       "german": "ROSENBERG, Jacob, Partikulier: Sterbfallsanzeige"
     }
-  ],
-  "deleted": true
+  ]
 }

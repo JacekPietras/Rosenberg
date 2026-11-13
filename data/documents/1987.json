@@ -1,14 +1,12 @@
 {
   "date": "1987",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Grevenbroich, GV Z 06, Nr. 099",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x73218536376953120231220130932170",
       "german": "Revier und Werk - Zeitschrift für alle Mitarbeiter und Pensionäre des Rheinischen Braunkohlenbergbaus Heft 205\n\nEnthält: Hier wohnen Rheinbraun-Mitarbeiter: Bedburg; Das Landeskabinett in seiner Leitentscheidung: Braunkohle bleibt \"Eckpfeiler der Energiepolitik\"; Sonderteil Garzweiler II: Energie für das dritte Jahrtausend; Jürgen Knepper: Der Kohlenbunker im Tagebau Garzweiler; Otto Maier: Der Horizont soll sich weiten - Dritter Außenspiegel für Lastkraftwagen; Die Werkstatt als der Schwalben-Brutplatz; Werner Koenigs/Heinrich Rosenberg: Wie es damals war...Als die Frontlinie den Tagebau errichtete; Aus der Belegschaft; Hans-Eberhard Becker: Weisweiler: Saubere Lösung für saubere Luft; Hildegard Ziskoven: Majestäten in Dienste der Braunkohle; Wolfgang Trees: Handwerker, die garantiert immer kommen! Rheinbraun haustechnik GmbH; Wolfgang Trees: Die Kohle darf nicht erdrückt werden forderte der 18. Gewerkschaftstag der IGBE; Willi Braun: Arbeitsplatz für über 1000 Azubis; Ende 1988 wird Fortuna stillgelegt - Die 400 RWE-Mitarbeiter werden in den anderen Kraftwerken untergebracht; Regierungsflughafen und Luftfrachtzentrum Köln/Bonn."
     }
-  ],
-  "deleted": true
+  ]
 }

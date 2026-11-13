@@ -136,6 +136,10 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .document-heading small { color: var(--muted); font-size: .78rem; white-space: nowrap; }
 .document-heading-aside { display: flex; flex-direction: column; align-items: flex-end; gap: .35rem; }
 .record-labels { display: flex; align-items: center; justify-content: flex-end; gap: .35rem; flex-wrap: wrap; }
+.review-name-mentions { display: grid; gap: .25rem; max-width: 34rem; color: var(--muted); font-size: .72rem; }
+.review-name-label-row { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: .3rem; }
+.review-name-labels { display: inline-flex; flex-wrap: wrap; gap: .2rem; }
+.review-name-labels .record-label { background: #68727d; }
 .record-label-edit { display: inline-grid; width: 1.65rem; height: 1.65rem; place-items: center; padding: .25rem; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
 .record-label-edit:hover, .record-label-edit:focus-visible { color: var(--accent); background: var(--surface-raised); }
 .record-label-edit.record-delete:hover, .record-label-edit.record-delete:focus-visible { color: #d14343; }

@@ -1,8 +1,7 @@
 {
   "date": "1875",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Historisches Archiv Krupp, FAH 2, Nr. FAH 2/FAH 2 B 265",
@@ -3296,6 +3295,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

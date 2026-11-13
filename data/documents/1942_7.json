@@ -1,14 +1,12 @@
 {
   "date": "1942",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 4-G /, Nr. Best. 4-G / 1221",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_a0a4bb22-70ae-4d0d-b31f-7877f01e2eb7",
       "german": "Rosenberg, Hubert * 01.11.1910"
     }
-  ],
-  "deleted": true
+  ]
 }

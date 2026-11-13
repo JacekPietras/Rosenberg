@@ -1,8 +1,7 @@
 {
   "date": "1928",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, RW Karten, Nr. 6074",
@@ -35,6 +34,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

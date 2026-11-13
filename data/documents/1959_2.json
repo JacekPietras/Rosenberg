@@ -1,8 +1,7 @@
 {
   "date": "1959-1969",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": [
@@ -23,6 +22,5 @@
       ],
       "german": "Neubau des Gemeindezentrums Auf dem Rosenberg\n\nEnthält: Planung des Wohnungsbauvorhabens \"Auf dem Rosenberg\"; Grundstückstausch Kohlleppelsweg/Auf dem Rosenberg, 1968\nDarin: Bebauungsplanentwurf \"Auf dem Rosenberg\", 1963; Bauvorschläge des ev. Gemeindezentrums, 1964\n\nEnthält: Planung des Wohnungsbauvorhabens \"Auf dem Rosenberg\"; Bauplanung für das kirchengemeindeeigene Grundstück \"Auf dem Rosenberg\"\nDarin: Bauzeichnungen, Vorentwürfe; Lagepläne; Presse-Diskussion über die Bebauungspläne für das kirchengemeindeeigene Grundstück \"Auf dem Rosenberg\"\n\nEnthält: geprüfte Bauzeichnungen Heizung, Lüftung, sanitäre Installation\n\nEnthält: geprüfte statische Berechnung\n\nEnthält: Abschlussbericht (ohne Bauzeichnungen und Fotos)"
     }
-  ],
-  "deleted": true
+  ]
 }

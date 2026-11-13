@@ -1,14 +1,12 @@
 {
   "date": "1927",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAD, O 61 Klingelhoeffer, 396",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3650245",
       "german": "Ortswappen und Wimpel Rosenberg (anderes Wappen)"
     }
-  ],
-  "deleted": true
+  ]
 }

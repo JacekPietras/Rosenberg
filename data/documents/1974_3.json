@@ -1,14 +1,12 @@
 {
   "date": "1974-1982",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Landeskirchliches Archiv der Evangelischen Kirche von Westfalen, 4.256, Nr. 372",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_b92bb9c8-8659-4cee-b0e7-4d8cc856306e",
       "german": "Besetzung der 3. Pfarrstelle (Pfarrbezirk Rosenberg)\n\nEnthält u.a.: Urkunde über die Errichtung der 3. Pfarrstelle, 1974\nDarin: Zeitungsausschnitte; Einladung zur Amtseinführung von Walter Schlaefer"
     }
-  ],
-  "deleted": true
+  ]
 }

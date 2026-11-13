@@ -1,8 +1,7 @@
 {
   "date": "1894",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, W 051, Nr. 45767",
@@ -14,6 +13,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

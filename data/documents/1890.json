@@ -1,14 +1,12 @@
 {
   "date": "1890-1898",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Dortmund, 440, Nr. 76",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x78855633735656720241203104138165",
       "german": "Verpachtung der beim Gut Wischlingen gelegenen großen und Kleinen Weide an Seligmann Rosenberg in Dorstfeld"
     }
-  ],
-  "deleted": true
+  ]
 }

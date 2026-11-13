@@ -1,14 +1,12 @@
 {
   "date": "1940-1948",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Höxter, Nr. (B 1 ), Nr. 794",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400271000003620000808",
       "german": "Konvolut von Einzelblättern und Vorgängen\n\nv.a: Grundstück Dillenberg (Stummrigestr. 47, Höxter); Grundstück Max Kirchheimer [Steinheim]; Grundstück Josef und Julius Ikenberg [Nieheim]; Grundstück Fanny Löwendorf (Detmolder Str. [204], Steinheim); Eigentümer-Erklärungen im Rahmen der Wiedergutmachung; Grundstücke der Meta Grünewald in Nieheim; Grundstück der Kathi Rosenberg in Höxter; Grundstücke des Albert Rottenstein (Mauerstr. 263 und Marktstr. 122, Nieheim); Grundstück der Eva Elly Wertheim in Brakel"
     }
-  ],
-  "deleted": true
+  ]
 }

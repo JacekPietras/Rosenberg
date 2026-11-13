@@ -1,14 +1,12 @@
 {
   "date": "1951-1969",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Münster, NL Branse/Hertz, Nr. 208",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x42889100313186620210727132023375",
       "german": "Entschädigungsverfahren Erben Bernhard und Aurelie Rosenberg: Vermögen, Hausrat, Schmuck\n\nEnthält: Anwaltsrechnungen; Teilbescheid und Bescheid der Oberfinanzdirektion Münster auf Grund des Bundesrückerstattungsgesetzes (BrüG) vom 19.07.1957; Urteil des Oberlandesgerichts Hamm; Kostenaufstellung über Gerichtskosten; Zahlungsanweisung der Oberfinanzdirektion Münster; Schreiben der Baronin Gumppenberg;"
     }
-  ],
-  "deleted": true
+  ]
 }

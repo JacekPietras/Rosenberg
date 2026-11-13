@@ -258,6 +258,11 @@ def order_document(document):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="validate documents normally skipped by document validation",
+    )
     parser.add_argument("paths", nargs="*", type=Path, help="document JSON files or directories (default: data/documents)")
     args = parser.parse_args(argv)
 
@@ -278,12 +283,12 @@ def main(argv=None):
             continue
 
         if isinstance(document, dict):
-            if document.get("deleted") is True:
+            if not args.all and document.get("deleted") is True:
                 continue
             labels = document.get("label", [])
             if isinstance(labels, str):
                 labels = [labels]
-            if isinstance(labels, list) and {"Czechia", "Schenk", "Mönch"}.intersection(labels):
+            if not args.all and isinstance(labels, list) and {"Czechia", "Schenk", "Mönch"}.intersection(labels):
                 document, reordered = order_document(document)
                 if reordered:
                     try:

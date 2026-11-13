@@ -1,14 +1,12 @@
 {
   "date": "1895",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, Q 538t, Nr. II Nr. 489",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_27cd4389-4f4d-4de9-88c8-6557fbf3c478",
       "german": "Stern, Moses gent. Moritz und Julie geb. Rosenberg, Eheleute, Hohenlimburg, Kaufmann"
     }
-  ],
-  "deleted": true
+  ]
 }

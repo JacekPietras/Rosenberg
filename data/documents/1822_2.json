@@ -1,8 +1,7 @@
 {
   "date": "1822-1863",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, L 77 A, Nr. 6350",
@@ -431,6 +430,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

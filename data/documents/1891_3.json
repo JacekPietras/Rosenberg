@@ -1,14 +1,12 @@
 {
   "date": "1891",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, Q 544t, Nr. II Nr. 157",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_bfa13bdf-e785-482e-aa76-59777735f2dc",
       "german": "Rosenberg, Simon u. Rosalie geb. Elsöffer, Ehel., Laasphe, Handelsmann"
     }
-  ],
-  "deleted": true
+  ]
 }

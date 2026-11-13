@@ -1,14 +1,12 @@
 {
   "date": "1815",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAM, 261 Zivilakten 1814-1820, 1232",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5219672",
       "german": "Rosenberg gegen die Gemeinde Niedermeiser"
     }
-  ],
-  "deleted": true
+  ]
 }

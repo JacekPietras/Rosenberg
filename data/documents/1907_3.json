@@ -1,8 +1,7 @@
 {
   "date": "1907-1945",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv und Landesgeschichtliche Bibliothek Bielefeld, 300,005/Hgb, Nr. 192",
@@ -137,6 +136,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

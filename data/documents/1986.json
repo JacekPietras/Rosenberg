@@ -1,14 +1,12 @@
 {
   "date": "1986-1995",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Landeskirchliches Archiv der Evangelischen Kirche von Westfalen, 4.256, Nr. 511",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_ebb4e43a-9bfc-4ad7-9ece-46796b17e51c",
       "german": "Besetzung der Hilfspredigerstelle\n\nEnthält u.a.: Errichtung einer ständigen Stelle für den Hilfsdienst im Altenzentrum Rosenberg, 1993"
     }
-  ],
-  "deleted": true
+  ]
 }

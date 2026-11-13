@@ -1,14 +1,12 @@
 {
   "date": "1835",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, V 058, Nr. 762",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_eda9291f-7c04-4ba4-a92e-6085cdaa9b48",
       "german": "K.: Handelsmann Jacob Rosenberg, Soest                  B.: Heinrich Schulte auf der Mehr, Berwicke                  G.: Geldforderung aus Warenlieferung"
     }
-  ],
-  "deleted": true
+  ]
 }

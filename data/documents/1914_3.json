@@ -1,14 +1,12 @@
 {
   "date": "1914-1936",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Warendorf, Fre C, Nr. 284",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_f93ad3ff-849e-492d-86bf-455acd6cc21b",
       "german": "Erteilung von Wandergewerbescheinen\n\nEnthält u.a.: - Wandergewerbeschein für Johanna Rosenberg.\n\nVorl.Nr.: 323"
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,26 +1,24 @@
 {
   "date": "1933",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe H Rosenberg 4",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3347618",
-      "german": "Plan über den Gemeinde-Wald von Rosenberg auf dortiger Gemarkung\n\nLaufzeit: 2. Auflage. Stand vom Jahre 1933\n\nEnthält: Forstgrenzkarte, zwei Walddistrikte auf einem Blatt. Grenzsteine mit Nr., Flurnamen. Flächenübersicht auf der Karte.\n\nFormat: 36 x 52,5 cm",
-      "img": [
-        {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=8284&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000008284%2Ftitlaufn_0003347618%2F04_0003347618_0001_4-3347618-1.jpg"
-        }
-      ],
+      "german": "Plan über den Gemeinde-Wald von Rosenberg auf dortiger Gemarkung\n\nLaufzeit: 2. Auflage. Stand vom Jahre 1933\n\nEnthält: Forstgrenzkarte, zwei Walddistrikte auf einem Blatt. Grenzsteine mit Nr., Flurnamen. Flächenübersicht auf der Karte.",
       "facts": [
         {
           "subject": "Rosenberg",
           "type": "generic",
           "content": "had a municipal forest within its boundaries."
         }
+      ],
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=8284&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000008284%2Ftitlaufn_0003347618%2F04_0003347618_0001_4-3347618-1.jpg"
+        }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

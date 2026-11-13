@@ -1,14 +1,12 @@
 {
   "date": "1871",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAM, 269 Kassel, 154",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2927512",
       "german": "Kaufmann Samuel Rosenberg zu Niedermeiser ./. Kaufmann Hermann Rosenberg zu Kassel: Forderung [aus einer Weizenlieferung]"
     }
-  ],
-  "deleted": true
+  ]
 }

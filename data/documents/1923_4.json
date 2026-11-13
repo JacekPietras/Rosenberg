@@ -1,14 +1,12 @@
 {
   "date": "1923-1924",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Duisburg, 16, Nr. 3908",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A91x99241405725479120180730084513332",
       "german": "Baupolizeiakte: Otto Rosenberg: Autoschuppen Bürgerstraße.\n\nSchriftwechsel der Stadtverwaltung mit Otto Rosenberg (Hamborn) und der Bauunternehmung August Gottlieb GmbH (Walsum); Aktenvermerke; Statische Berechnung; Handzeichnung nach den Katasterkarten; Bauzeichnung."
     }
-  ],
-  "deleted": true
+  ]
 }

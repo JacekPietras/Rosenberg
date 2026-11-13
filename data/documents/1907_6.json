@@ -1,14 +1,12 @@
 {
   "date": "1907-1911",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv und Landesgeschichtliche Bibliothek Bielefeld, 210,040/Velh. & Klasing, Nr. 0676",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x31101930141448920201211134603471",
       "german": "Rosenberg, Adolf: Handbuch der Kunstgeschichte. 2.Aufl, 1901\n\nEnthält u.a: Korrespondenz betr. 2. Auflage"
     }
-  ],
-  "deleted": true
+  ]
 }

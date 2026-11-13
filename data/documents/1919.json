@@ -1,14 +1,12 @@
 {
   "date": "1919-1920",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Dortmund, 3, Nr. 4229",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x15672004222869820230310084548773",
       "german": "Klage des Viehhändlers David Rosenberg gegen die Stadt wegen der Besitzstörung durch Kanalisationsarbeiten"
     }
-  ],
-  "deleted": true
+  ]
 }

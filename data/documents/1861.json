@@ -1,14 +1,12 @@
 {
   "date": "1861",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, V 058, Nr. 4767",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_dbe3a230-2b02-46b3-857a-1d96fc55b356",
       "german": "K.: ./.                  B.: Konditor Wilhelm Bremer, Soest; Kaufmann Julius Schüller, Pferdehändler Levi (?) Meyer; Metzger Benjamin Rosenberg, Soest                  G.: Gestatten von Glücksspielen"
     }
-  ],
-  "deleted": true
+  ]
 }

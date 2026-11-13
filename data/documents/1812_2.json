@@ -1,14 +1,12 @@
 {
   "date": "1812-1814",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, AA 0639, Nr. 1911",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_9fa2fba7-8789-4ad8-b7f8-38ad050581b1",
       "german": "Untersuchung gegen die in Wiesbaden festgenommenen Christian Fürchtegott, Leberecht Baehrens (Apotheker) aus Schwerte, Rosina Rosenberg (Schauspielerin) und Trinette Triesch aus Düsseldorf"
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1902",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 1-J",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_6baca92f-6821-49f3-9210-833da1841553",
       "german": "Rosenberg, Carl Johann"
     }
-  ],
-  "deleted": true
+  ]
 }

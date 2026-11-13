@@ -1,8 +1,7 @@
 {
   "date": "1823-1877",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, M 9 Höxter, Nr. 275",
@@ -1412,6 +1411,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

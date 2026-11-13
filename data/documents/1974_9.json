@@ -1,14 +1,12 @@
 {
   "date": "1974",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Marl, B.04.01 Best. 404, Nr. 349",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A10x34693223237991320260818171235864",
       "german": "Goertz geb. Klawuhn, Grete Olga , Sterbedatum: 22.05.1974, Geburtsdatum: 20.09.1901, Geburtsort: Groß-Peterwitz, Kreis Rosenberg / Schlesien"
     }
-  ],
-  "deleted": true
+  ]
 }

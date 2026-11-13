@@ -1,14 +1,12 @@
 {
   "date": "1887-1911",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Paderborn, Nr. 2300",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x78044271469116220231211124509681",
       "german": "Bau und Unterhaltung der Kreisstraßen\n\nDarin: Broschüre \"Ergebnisse infolge des Beschlusses des 31. Provinziallandtages vom 31.03.1890\" (o.D.), Straßenkarte bzw. Entfernungskarte des Kreises Büren im Maßstab 1:80000 (o.D), Karte \"Kreisstraße von Salzkotten nach Delbrück\" (o.D.), Situationsplan zum Bau eines Stallgebäudes beim Pfarrhaus in Thüle (o.D.), Prospektblätter zu einem Schneeräumgerät und zu Besen (o.D.), Broschüre \"Die Verwendung von Teer beim Straßenbau, Ergebnisse einer Rundfrage (1909), Broschüre \"Der Freibahnzug\" der Gesellschaft für Freibahnbetrieb GmbH in Berlin, Ausgabe Nr. 31 des 26. Jahrgangs der \"Zeitschrift für Transportwesen und Straßenbau (1909), Broschüre \"Der Straßenstaub und seine Bekämpfung\" mit zahlreichen Abbildungen (1910), Prospekt \"Bekämpfung des Straßenstaubs\" der Firma Rosenberg in Leipzig (o.D.)"
     }
-  ],
-  "deleted": true
+  ]
 }

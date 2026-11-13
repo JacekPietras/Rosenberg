@@ -1,8 +1,7 @@
 {
   "date": "1950",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, Gerichte Rep. 0200, Nr. 1935",
@@ -68,6 +67,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

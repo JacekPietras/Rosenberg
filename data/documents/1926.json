@@ -1,14 +1,12 @@
 {
   "date": "1926-1929",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, K 347, Nr. 179",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_f86ad4fa-7c5e-44a5-af18-bf89e73ea6f8",
       "german": "Regelung des Kraftfahrzeugverkehrs, Bd. 3\n\nEnthält u.a.: - Ahndung von Verkehrsdelikten - Entziehung des Führerscheins des Viehhändlers Berthold Rosenberg - Maßnahmen zur Unterdrückung übermäßiger Geräuschentwicklung durch Krafträder - Genehmigung zum Betrieb einer Kraftfahrlinie der Ruhr-Lippe-Kleinbahn AG von Soest nach Ostönnen"
     }
-  ],
-  "deleted": true
+  ]
 }

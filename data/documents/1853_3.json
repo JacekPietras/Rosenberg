@@ -1,8 +1,7 @@
 {
   "date": "1853-1856",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, M 9 Lübbecke, Nr. 1092",
@@ -86,6 +85,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

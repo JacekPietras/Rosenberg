@@ -1,14 +1,12 @@
 {
   "date": "1891-1915",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Hagen, HL1, Nr. 1223",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x17208915948867720250410110842436",
       "german": "Arbeitsordnungen in den Fabriken\n\nu.a. Heft \"Arbeitsordnung der Firma J.F. Rosenberg Hohenlimburg\"; Heft \"Arbeitsordnung für die Fabrik Rudolf Kersberg, Hohenlimburg\"; Heft \"Arbeitsordnung für die Fabrik von Karl Fritzler in Hohenlimburg\"; Heft \"Arbeitsordnung der Firma Winterhager & Romberg Hohenlimburg\"; Heft \"Arbeits-Ordnung für die Fabrik von C.D. Wälzholz in Hohenlimburg\"; Heft Arbeits-Ordnung der Firma Ch.A. Fißmer\"; Heft \"Arbeits-Ordnung der Firma Moritz Ribbert\"; Heft \"Arbeits-Ordnung der Firma Vereinigte Walz- u. Röhrenwerke A.G., vormals Friedr. Boecker Ph¿s Sohn & Co und Friedr. König\"; Heft \"Arbeits-Ordnung für das Eisen- und Stahlwerk Hoesch, Abteilung Limburger Fabrik- und Hüttenverein in Hohenlimburg\""
     }
-  ],
-  "deleted": true
+  ]
 }

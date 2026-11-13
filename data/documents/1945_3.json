@@ -1,14 +1,12 @@
 {
   "date": "1945-1956",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gelsenkirchen, GE 10, Nr. GE 10-186",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-ID_5ae422ec-c669-5ba2-94e8-517c655765a4",
       "german": "Munckelsraße 21, Eigentümer: vormals Eigentum des Deutschen Reichs\n\nBeschlagnahme: 29.10.1945; Freigabe: 30.03.1948 (Unterbringung der Vermögensverwaltung)\nu. a.: Besetzungsbefehl sowie Mitteilung betreffend Freigabe, Möbelmiete für Bewohner Bernhard Abel, Heinrich Flohr, Gottlieb Rosenberg sowie Rudolf Gockschau, Inventarverzeichnisse, Entschädigungsbescheide sowie Zahlungsbescheinigungen betreffend Mobiliarentschädigung, Rechnungen betreffend Instandsetzungsarbeiten,\nRechnungen der Vermögensverwaltung\nStraße zwischenzeitlich in Gerichtsstraße umbenannt, heute wieder Munckelstraße"
     }
-  ],
-  "deleted": true
+  ]
 }

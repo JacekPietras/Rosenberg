@@ -1,14 +1,12 @@
 {
   "date": "1841-1844",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, V 058, Nr. 2023",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_e3b73031-6f73-405c-a643-b2d2abd21027",
       "german": "K.: Kaufmann Aron Spiegel, Hovestadt                  B.: Handelsleute Marcus Rosenberg und Abraham Neukircher, Oestinghausen                  S.: Ackersmann Bernhard Bussmann gen. Twentrop, Nordwald; Witwe Bussmann, Franziska geb. Weringschulte, Mutter des Bernhard                  G.: Geldforderung aus Verkauf von Ackerland"
     }
-  ],
-  "deleted": true
+  ]
 }

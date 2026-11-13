@@ -1,14 +1,12 @@
 {
   "date": "1905",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Lemgo, 11 N 01, Nr. D_443",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x64590358734130820200930121713258",
       "german": "Helene Rosenberg mit ihrer Tochter und ihrem Sohn\n\nBruststück"
     }
-  ],
-  "deleted": true
+  ]
 }

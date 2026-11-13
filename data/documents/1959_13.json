@@ -1,14 +1,12 @@
 {
   "date": "1959-1962",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Bocholt, Nr. 946",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_914da601-20d5-45e3-84a9-1982cececa5a",
       "german": "Wiedergutmachung für politisch Verfolgte des NS-Regimes nach dem Bundesentschädigungsgesetz\n\nenth.: Max Rosenberg wegen Hermann Rosenberg"
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "2007",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv und Landesgeschichtliche Bibliothek Bielefeld, 400,010/Zeitgesch. Samml., Nr. 02525",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x51847112178802420210302114215236",
       "german": "Kultururwald, Am Rosenberg in Bielefeld\n\nEnthält: Programm"
     }
-  ],
-  "deleted": true
+  ]
 }

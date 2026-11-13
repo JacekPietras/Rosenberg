@@ -1,14 +1,12 @@
 {
   "date": "1860",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, Q 332t, Nr. 984",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_932c208a-f238-4a94-8101-e0f4c18f7ffb",
       "german": "Rosenberg, Moses, Kaufmann und Emma, geb. Spiegel, Testament der Eheleute, Limburg an der Lahn"
     }
-  ],
-  "deleted": true
+  ]
 }

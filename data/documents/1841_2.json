@@ -1,14 +1,12 @@
 {
   "date": "1841",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAD, G 28 Ortenberg, F 2858",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6467217",
       "german": "Sterbfallsanzeigen Ortenberg: Buchstabe R\n\nEnthält: Rosenberg, Relgionslehrer\nKatharina Roth, 1862\nMoses Rosenberg 1874\nJette Rosenberg, 1874"
     }
-  ],
-  "deleted": true
+  ]
 }

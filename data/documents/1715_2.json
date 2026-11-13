@@ -1,8 +1,7 @@
 {
   "date": "1715-1747",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Warendorf, Bec Stadt A, Nr. 277",
@@ -77,6 +76,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

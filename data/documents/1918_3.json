@@ -1,14 +1,12 @@
 {
   "date": "1918",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 1-J",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_4b1417f6-ab7c-4fef-94e6-e5cb543a2b33",
       "german": "Rosenberg, Wilhelmine"
     }
-  ],
-  "deleted": true
+  ]
 }

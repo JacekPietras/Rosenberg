@@ -1,14 +1,12 @@
 {
   "date": "1940",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Archiv des Landschaftsverbandes Westfalen-Lippe, 846, Nr. 846/5787",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_B1FC9246-263A-427C-BDF2-3085530A7CBF",
       "german": "Langenau ([Landkreis Rosenberg]): Laubenhaus Rohde <lb/>[Wohnhaus] (Seiten-Ansicht)"
     }
-  ],
-  "deleted": true
+  ]
 }

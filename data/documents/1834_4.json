@@ -1,8 +1,7 @@
 {
   "date": "1834-1853",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, M 204, Nr. 603",
@@ -77,6 +76,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

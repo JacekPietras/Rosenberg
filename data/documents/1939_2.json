@@ -1,14 +1,12 @@
 {
   "date": "1939-1942",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Archiv der sozialen Demokratie der Friedrich-Ebert-Stiftung, Nr. 1/WSAA000045",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400472000009520000041",
       "german": "Home Office - Interned Enemy Aliens Tribunal (Germans und Austrians) N - Sche\n\nKorrespondenz / Aufzeichnungen / Korrespondenz zwischen Interned Enemy Aliens Tribunal (Douglas Lowe), Heinrich Jakubowicz, Labour Party, R. Stiassny, Otto Wollenberg, Willi Derkow, Gerhard Gleissberg, Ernst Fröhlich, Hans Gottfurcht und International Solidarity Fund (Wilhelm Sander) über die Anträge auf Entlassung aus englischen Internierungslagern von Herbert Nachmann, Walter Richard Pally, Irene Rischowski, Kurt Romm, Alfred Richard Rosenbaum, Ludwig Rosenberg, Erich Rosenstock-Roseck, Richard Roth, Günther Rupprecht, Wilhelm Russo, Martin Christian Sander, Irmgard Sattler, Paul Schabacker, Martin Schachmann, Peter Schäffer, Wilhelm Schafer und Kurt Scheer"
     }
-  ],
-  "deleted": true
+  ]
 }

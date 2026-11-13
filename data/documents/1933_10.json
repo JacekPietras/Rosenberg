@@ -1,8 +1,7 @@
 {
   "date": "1933-1941",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Münster, ZB, Nr. 180",
@@ -845,6 +844,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

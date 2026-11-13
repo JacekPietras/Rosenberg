@@ -1,6 +1,7 @@
 {
   "date": "1670",
   "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": [
@@ -23,6 +24,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

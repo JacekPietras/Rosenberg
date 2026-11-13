@@ -1,14 +1,12 @@
 {
   "date": "1955-1965",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kommunalarchiv Minden, KLü 55 KGfE, Nr. Nr. 3179",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_9118d261-fc5a-4714-9c50-f33ff83f1e8b",
       "german": "Rosenberg, Rudolf * 11.12.1909\n\nauch: Antrag auf Gewährung einer zusätzlichen Entschädigung in der Fassung der Bekanntmachung vom 1. September 1964\n\nKriegsgefangenschaft 01.06.1945 Sundern. Entlassung 11.07.1955 Warschau, Polen. Entlassung erfolgte über das Lager Friedland am 15.07.1955."
     }
-  ],
-  "deleted": true
+  ]
 }

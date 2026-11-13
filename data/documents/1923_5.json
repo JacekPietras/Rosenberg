@@ -1,14 +1,12 @@
 {
   "date": "1923",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Duisburg, 61, Nr. 14827",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x47546893358230520240517112200444",
       "german": "Rheinhausen; Ordner A 3; Bild 276\n\nWerthausen Foto Dr. Rosenberg Nassau"
     }
-  ],
-  "deleted": true
+  ]
 }

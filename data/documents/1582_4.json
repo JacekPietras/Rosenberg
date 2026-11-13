@@ -1,8 +1,7 @@
 {
   "date": "1582-1693",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, V 502, Nr. 319",
@@ -464,6 +463,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

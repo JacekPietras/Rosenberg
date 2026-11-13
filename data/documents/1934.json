@@ -1,14 +1,12 @@
 {
   "date": "1934-1938",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, L 113, Nr. 204",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_9edf8d96-9c65-4b4a-bbbe-f46deac02714",
       "german": "Schriftwechsel mit dem Reichsstatthalter\n\nEnthält: Personalangelegenheiten, NS-interne Auseinandersetzungen; Strafverfahren gegen Parteimitglieder; Stellungnahme des Reichsstatthalters zu einer Denkschrift G. Bideaus zum „Fall Rautenkranz\"; Stellenangelegenheiten; Ehrenbürgerschaften (Kurdirektor Horstmann in Bad Salzuflen, die Reichsminister Rust in Oerlinghausen, Kerrl in Barntrup und Rosenberg in Lemgo); Steuerangelegenheiten; Gnadengesuche; Beurlaubung des Ortsgruppenleiters von Oerlinghausen, Meierhans."
     }
-  ],
-  "deleted": true
+  ]
 }

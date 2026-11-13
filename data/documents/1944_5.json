@@ -1,8 +1,7 @@
 {
   "date": "1944",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, Gerichte Rep. 0116, Nr. 437",
@@ -356,6 +355,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

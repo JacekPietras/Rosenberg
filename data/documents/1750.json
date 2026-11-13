@@ -1,14 +1,12 @@
 {
   "date": "1750-1752",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Vereinigte Westfälische Adelsarchive e.V., Abb.A.Ak, Nr. Abb.A.Ak - 627",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_90e00dd0-8ef1-430b-89f6-5dc6fcfc0a6fACTAPRO",
       "german": "Teilung der Feldbüsche auf dem Roßenberg (Rosenberg) zwischen den von Haxthausen zu Dedinghausen und von Haxthausen zu Lippspringe"
     }
-  ],
-  "deleted": true
+  ]
 }

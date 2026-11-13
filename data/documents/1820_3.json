@@ -1,8 +1,7 @@
 {
   "date": "1820-1849",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, M 9 Lübbecke, Nr. 1069",
@@ -179,6 +178,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

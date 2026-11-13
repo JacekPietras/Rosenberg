@@ -1,8 +1,7 @@
 {
   "date": "1764-1768",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, AA 0011, Nr. 1320",
@@ -626,6 +625,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

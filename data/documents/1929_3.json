@@ -1,8 +1,7 @@
 {
   "date": "1929",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAD, R 4, 38379",
@@ -14,6 +13,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

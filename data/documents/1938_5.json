@@ -1,14 +1,12 @@
 {
   "date": "1938-1942",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, L 113, Nr. 517",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_f0947fc1-5359-44ce-8c29-0dd18787479e",
       "german": "Rundschreiben des Vertreters des Beauftragten des Führers für die gesamte geistige und weltanschauliche Erziehung der NSDAP im Gau Westfalen-Nord\n\nEnthält: Organisatorisches; Hinweise auf Literatur und auf Schulungsorgane; Alfred-Rosenberg-Spende; Reichsschulungsabende; weltanschauliche Feierstunde der NSDAP; Weihnachtsfeuer."
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1836",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HHStAW, 310, XIX a 109",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6114433",
       "german": "Unterförster Rosenberg"
     }
-  ],
-  "deleted": true
+  ]
 }

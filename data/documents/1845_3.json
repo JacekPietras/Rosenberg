@@ -1,14 +1,12 @@
 {
   "date": "1845",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, V 058, Nr. 2425",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_f5e9f506-4c7e-420e-a216-767430c8cef1",
       "german": "K.: Colon Anton Bergmann, Stocklarn                  B.: Viehhändler Marcus Rosenberg, Oestinghausen                  G.: Landbeschädigung durch Viehausbruch vom Weidekamp des Klägers, belegen beim [Ritter-]Gut Schweckhausen"
     }
-  ],
-  "deleted": true
+  ]
 }

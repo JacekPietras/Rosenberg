@@ -1,14 +1,12 @@
 {
   "date": "1931-1933",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv und Stadthistorische Bibliothek Bonn, SN093, Nr. 7",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-741842",
       "german": "Einnahmen- und Ausgabennachweise\n\nu.a.: Einnahmen- und Ausgaben-Aufstellung 1931-1933, Scheckkonto (Anlage 1); Kosten der Veranstaltung Erwin Richter, 15.4.1931, Beethovenhalle, weißer Saal (Anlage 3); Kosten der Veranstaltung Sepp Summer, 2.5.1931, Beethovenhalle (Anlage 4); Kosten der Veranstaltung Alfred Rosenberg (Vortrag), 15.7.1931, Beethovenhalle (Anlage 5); Kosten der Veranstaltung Prof. Schultze-Naumburg (Lichtbildvortrag), 14.1.1932, Lese- und Erholungsgesellschaft (Anlage 6); Kosten der Veranstaltung Dr. Rudolf Stampfus (Vortrag), 16.6.1933 (Anlage 7); unerledigte Beitrittserklärungen (Anlage 14)"
     }
-  ],
-  "deleted": true
+  ]
 }

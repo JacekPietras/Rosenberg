@@ -1,14 +1,12 @@
 {
   "date": "1930-1941",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv und Landesgeschichtliche Bibliothek Bielefeld, 250,001/NSDAP, Nr. 079",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x90122944116592420210311094154865",
       "german": "Kritik und Widerstand außerhalb der Kirchen\n\nEnthält u.a.: Kritik an NS-Veranstaltungen (u.a. Hitler-Rede in Bad Salzuflen v. 14. Januar 1933) und Vielweiberei Goebbels; Huntestreik in Oldenburg, 1932; Wandlung der SDAJ zur Schrebergartenjugend, 1933; Kommentar auf Plakat einer Rosenberg-Kundgebung im Landesfinanzamt Münster, 1935; Festnahme von 19 Marxisten wegen staatsfeindlicher Umtriebe; Beschwerden über Übergriffe von Wienern gegen Bürger aus dem \"Altreich\" allgemein und nach einem Fußballspiel zwischen Admira Wien und Schalke 04, Kommentierung einer Aufführung im Kabarett \"Das Wiener Werkel\", 1940; Überwachung ehemaliger politischer Gefangener (u.a. Christoph Stramer, Gronau; Marcel Rosenkiewicz, Recklinghausen)"
     }
-  ],
-  "deleted": true
+  ]
 }

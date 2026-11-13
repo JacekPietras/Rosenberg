@@ -1,14 +1,12 @@
 {
   "date": "1959",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Archiv des Jugendhauses Düsseldorf, Nr. 04/003 - 60 [RR 343]",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_ec44a5a6-1180-4fb8-bd99-cd31a4bc29a0",
       "german": "KFG - Jahreskonferenz 1959 Maria Rosenberg\n\nProtokoll, handschriftliche Notizen, Schriftwechsel"
     }
-  ],
-  "deleted": true
+  ]
 }

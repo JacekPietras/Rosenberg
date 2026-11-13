@@ -1,8 +1,7 @@
 {
   "date": "1931",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, RW 0229, Nr. 34126",
@@ -14,6 +13,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

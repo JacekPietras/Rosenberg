@@ -1,14 +1,12 @@
 {
   "date": "1860",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAD, G 28 Ortenberg, F 3150",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7175382",
       "german": "Familienrechtssachen Wenings: Rosenberg, Rosa, geborene Blumenthal, Nachlass"
     }
-  ],
-  "deleted": true
+  ]
 }

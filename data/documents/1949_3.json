@@ -1,14 +1,12 @@
 {
   "date": "1949",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv und Stadthistorische Bibliothek Bonn, SN101, Nr. 19/69",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-763285",
       "german": "Rosenberg, Gustav Otto (1872-1948), Botaniker"
     }
-  ],
-  "deleted": true
+  ]
 }

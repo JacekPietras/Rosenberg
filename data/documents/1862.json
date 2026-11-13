@@ -1,14 +1,12 @@
 {
   "date": "1862",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HHStAW, 232, 1057/3",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6763121",
       "german": "Rosenberg, Inventar"
     }
-  ],
-  "deleted": true
+  ]
 }

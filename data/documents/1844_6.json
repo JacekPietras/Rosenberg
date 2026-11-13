@@ -1,8 +1,7 @@
 {
   "date": "1844",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 240 Nr. 6758",
@@ -16,6 +15,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

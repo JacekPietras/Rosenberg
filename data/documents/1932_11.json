@@ -1,14 +1,12 @@
 {
   "date": "1932",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Münster, Slg-Plakate, Nr. II-126",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x99611866474151620201002105041525",
       "german": "Boxen - Abschiedskampf Kohlhaas Münster 23 - Rosenberg Emmerich\n\nWerbung für die Austragung eines Boxwettkampfes zwischen Kohlhaas (Münster 23), Deutscher Olympia-Turniersieger und Rosenberg (Emmerich), Niederrheinischer Meister am 2.7.1932 in der Halle Münsterland."
     }
-  ],
-  "deleted": true
+  ]
 }

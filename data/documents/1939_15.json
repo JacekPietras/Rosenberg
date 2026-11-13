@@ -1,14 +1,12 @@
 {
   "date": "1939",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Soest, R 01, Nr. 152",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x52476435899734420250102162721933",
       "german": "Rosenberg, Emma - 22.04.1877 (Soest)\n\nKennnummer: A 00105"
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1934-1938",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Archiv des Landschaftsverbandes Rheinland, 981 Provinzialmuseum, Nr. 22705",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x90878194570541320250916143226373",
       "german": "Zusammenarbeit mit den Obersten Bauleitungen Köln und Essen beim Bau der Reichsautobahnen\n\nHierin: Notgrabung in Leverkusen - Schlebusch, Flur Rosenberg (Bericht) 1936"
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1920",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 1-J",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_9d723822-0be9-4980-b6ea-cc03e62bce81",
       "german": "Rosenberg, Hedwig Johanna Elisabeth"
     }
-  ],
-  "deleted": true
+  ]
 }

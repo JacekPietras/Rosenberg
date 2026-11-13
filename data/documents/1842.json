@@ -1,14 +1,12 @@
 {
   "date": "1842-1844",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, V 058, Nr. 2282",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_866438bd-8867-4521-b7cf-efc44606a346",
       "german": "K.: Bernhard Bussmann gen. Twentropp, Nordwald bzw. Stromberg                  B.: Kaufmann Aron Spiegel, Hovestadt                  S.: Witwe Berhard Bussmann Franziska geb. Weringschulte , Hovestadt; Handelsleute Marcus Rosenberg und Abraham Neukirchen, beide Oestinghausen                  G.: Geldforderung aus Verkauf von Ackerland"
     }
-  ],
-  "deleted": true
+  ]
 }

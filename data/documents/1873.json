@@ -1,14 +1,12 @@
 {
   "date": "1873",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAM, 340 von Buttlar, 2348",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1816543",
       "german": "Verschiedene Drucksachen\n\nEnthält: Allgemeiner Kalender für Hessen und Nassau auf das Jahr 1873\nDie Erstürmung der Düppeler Schanzen. Gedenknummer der Illustrirten Zeitung., o.J.\nZum 27. Januar 1898. Drei Gedichte von Maximilian von Rosenberg, 1898\nCasseler Tageblatt und Anzeiger, Morgenausgabe vom 20.7.1905, u.a.: Drohende Kriegsgefahr zwischen Norwegen und Schweden, 1905\nNeue Preußische Kreuz-Zeitung, Abendausgabe vom 1.8.1898, u.a. Nachruf auf Bismarck, 1898"
     }
-  ],
-  "deleted": true
+  ]
 }

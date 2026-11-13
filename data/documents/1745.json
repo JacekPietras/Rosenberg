@@ -1,8 +1,7 @@
 {
   "date": "1745",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 229 Nr. 89306",
@@ -194,6 +193,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

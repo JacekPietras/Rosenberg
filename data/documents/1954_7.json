@@ -1,8 +1,7 @@
 {
   "date": "1954",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, Gerichte Rep. 0324, Nr. 2334",
@@ -548,6 +547,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

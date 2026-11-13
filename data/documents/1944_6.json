@@ -1,14 +1,12 @@
 {
   "date": "1944-1970",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Bergbau-Archiv Bochum, BBA 80, Nr. 3896",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-DE-Bm56_BBA-80_213522_49a01cc0-c5ab-429b-9063-cf559b3e97b0",
       "german": "Befahrung, Besichtigung und Beschreibung verschiedener Gruben\n\nAuguste Victoria, Ramsbeck, Grund, Lengede, Haverlahwiese, Auerbach, Peine, Kaliwerk Friedrichshall, Fürst Leopold-Baldur, Füsseberg, Königsborn, Diergardt Mevissen, Shamrock, Friedrich der Große, Mühlenbach, Maubacher Bleiberg, Lindenberg, Bergmannsglück, Stein V, Königszug, Sulzbach-Rosenberg, Hilfe Gottes und Rammelsberg, Geologischer Überblick zum Erzbergwerk Grund, Geographische Rundschau März 1958, Broschüre über die Sachtleben AG, Fotos zur Grube Grund, Fotos zur Grube Lengede mit Fotonegativen, Pläne Abteufanlage Grube Füsseberg"
     }
-  ],
-  "deleted": true
+  ]
 }

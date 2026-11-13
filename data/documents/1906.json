@@ -1,14 +1,12 @@
 {
   "date": "1906-1933",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Viersen, U 24, Nr. 1499",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_59ca9116-32c2-4597-98ab-adf5db7d71ce",
       "german": "Einzelne Filialen\n\nAufnahmen von Filialen in Krefeld (Tengelmann), Marburg (Barfüßerstr. 20), Rosenberg (Ring 9), Witten (Bebelstr.)"
     }
-  ],
-  "deleted": true
+  ]
 }

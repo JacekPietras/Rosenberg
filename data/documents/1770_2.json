@@ -1,8 +1,7 @@
 {
   "date": "1770-1858",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Ostwestfalen-Lippe, L 77 A, Nr. 5389",
@@ -1397,6 +1396,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1947",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Lemgo, 11 N 01, Nr. D_441",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x24158471822738620200930121713257",
       "german": "Helene Rosenberg, geb. Heine, in Montreux (Schweiz)\n\nHelene Rosenberg, in einem Stuhl, auf einer Terrasse sitzend"
     }
-  ],
-  "deleted": true
+  ]
 }

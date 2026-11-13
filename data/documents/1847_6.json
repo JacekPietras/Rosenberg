@@ -1,8 +1,7 @@
 {
   "date": "1847",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe H Rosenberg 2",
@@ -21,6 +20,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

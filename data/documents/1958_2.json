@@ -1,14 +1,12 @@
 {
   "date": "1958-1959",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Warendorf, Kr BE SA, Nr. 8",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_14b5d1ea-c932-4161-89ff-ba7af752a840",
       "german": "Rosenberg, Josef (* 22.01.1874, + 25.06.1941), Ahlen;                   Rosenberg, Helene (* 22.01.1878), Ahlen; Antragstellerinnen: Nichten Servos, Ellen (* 25.06.1918) und Servos, Meta (*12.02.1908), beide wohnhaft in Manchester\n\nVerfolgung aus rasseideologischen Gründen (Juden) Vorl.Nr.: 8"
     }
-  ],
-  "deleted": true
+  ]
 }

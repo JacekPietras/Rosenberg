@@ -1,14 +1,12 @@
 {
   "date": "1975-1992",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Landeskirchliches Archiv der Evangelischen Kirche von Westfalen, 4.274, Nr. 2834",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_b2e683f5-74c4-4190-9b7f-b9b787cb1508",
       "german": "Altenzentrum Rosenberg"
     }
-  ],
-  "deleted": true
+  ]
 }

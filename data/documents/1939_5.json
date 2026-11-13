@@ -1,14 +1,12 @@
 {
   "date": "1939-1944",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Höxter, Nr. (B 1 ), Nr. 779",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400271000003620000793",
       "german": "Genehmigte und abgelehnte Übereignungen von jüdischen Grundstücken\n\nv.a: Adolf Lobbenberg, Klosterstr. 1; Flechtheim; Simon Heinemann, Hanekampstr. (Brakel); Bendix Dieckhoff, Lange Str. 91; Heymann; Garten der jüdischen Gemeinde, ”Lehmkuhle“ (Nieheim); May; Julius und Henriette Meyer; Jüdischer Friedhof (Bad Driburg); Eisenstein (Bergheim); Sedanstr. 485 (Steinheim); Gertrud Stein (Lügde); Jüdische Gemeinde [Schule u. Synagoge], Nagelschmiedstr. 8; Berta Kaufmann, Marktstr. 27; Kathi Rosenberg, Corveyer Allee 2 (Höxter); Hauptstr. 31 (Ovenhausen); Ludwig Scheideberg, Erkeln Nr. 17 (Erkeln); Hugo Kleinstraß, Bredenborn Nr. 182 (Bredenborn)"
     }
-  ],
-  "deleted": true
+  ]
 }

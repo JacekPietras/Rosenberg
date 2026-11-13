@@ -1,8 +1,7 @@
 {
   "date": "1803-1813",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, AA 0633, Nr. 2559",
@@ -992,6 +991,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

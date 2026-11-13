@@ -1,14 +1,12 @@
 {
   "date": "1911-1938",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Münster, Stadtreg, Nr. Fach 67 Nr. 584",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x33698606491088820230807071805541",
       "german": "Papenburger Straße\n\nEnthält u.a.: - Kostenvoranschlag für die verlängerte Papenburger Straße (Lageplan) - Baugenehmigung für die Münsterischen Baugesellschaft für einen Neubau - Verlangung zu Straßenbaukosten zulasten Gebrüder Fischer, Witwe Rosenberg, Witwe Wemer, Bauunternehmer Theodor Lappe"
     }
-  ],
-  "deleted": true
+  ]
 }

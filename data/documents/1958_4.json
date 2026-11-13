@@ -1,14 +1,12 @@
 {
   "date": "1958-1959",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Erkelenz, NL 3, Nr. 21/3/22",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x18185716867446820241021100248666",
       "german": "Testament-Eröffnungen durch das Amtsgericht Köln\n\nBertha Maria Antonie Rosenberg aus Köln, gest. 12.2.1958 Gertrud Elbern aus Erkelenz, gest. 24.5.1959"
     }
-  ],
-  "deleted": true
+  ]
 }

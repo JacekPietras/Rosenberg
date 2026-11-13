@@ -1,8 +1,7 @@
 {
   "date": "1933",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": [
@@ -23,6 +22,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

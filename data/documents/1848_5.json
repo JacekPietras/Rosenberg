@@ -1,8 +1,7 @@
 {
   "date": "1848",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, Q 309t, Nr. 146",
@@ -125,6 +124,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

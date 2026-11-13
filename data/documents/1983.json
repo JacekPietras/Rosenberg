@@ -1,14 +1,12 @@
 {
   "date": "1983-2006",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Warendorf, N 220, Nr. 59",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_8854ea01-03f0-4b4a-8fb5-bf647b212e14",
       "german": "Forschung Gummersbach 2\n\nu.a. - Material zu jüdischem Leben in Westfalen - Presseberichte - Korrespondenz, u.a. mit Hannes Heer und Imo Moszkowicz sowie mit Hilde Landsberg (Rio de Janeiro) 1986 - Korrespondenz mit Archiven, u.a. dem Kreisarchiv Warendorf - Brief Grete Untiedts (geb. Rosenberg), Tochter von Albert und Henriette Rosenberg, an Hilde Rosenberg-Landsberg 1946 (Fotokopie und Transkription) - Skript zu \"Vom Ende einer langen Nacht\"/\"Unter Bauern\" - Materialsammlung zu Antisemitismus in Ahlen und Deutschland in den 1980er-Jahren (antisemitische Schmierereien, Briefe, Handzettel)"
     }
-  ],
-  "deleted": true
+  ]
 }

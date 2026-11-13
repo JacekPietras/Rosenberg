@@ -1,14 +1,12 @@
 {
   "date": "1950-1972",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Münster, NL Branse/Hertz, Nr. 110",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x92269545793533320210727132023403",
       "german": "Wiedergutmachungs- und Nachlassverfahren Bernhard und Aurelie Rosenberg\n\nEnthält: Schreiben des Amtsgerichts Münster zur Erbfolge; Korrespondenz mit Lotte Sostmann zum Erbschein; Aufstellung der vom Nachlasskonto Bernhard Rosenberg an die Erbberechtigten geleisteten Zahlungen; Zeugnis und Erbschein Alfred Rosenberg und Aurelie Rosenberg, geb. Klestadt"
     }
-  ],
-  "deleted": true
+  ]
 }

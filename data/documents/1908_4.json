@@ -1,14 +1,12 @@
 {
   "date": "1908",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 1-J",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_62758507-3c43-45f4-bf93-297cd0850b28",
       "german": "Rosenberg, Friedrich"
     }
-  ],
-  "deleted": true
+  ]
 }

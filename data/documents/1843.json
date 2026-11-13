@@ -1,14 +1,12 @@
 {
   "date": "1843-1852",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, V 058, Nr. 3299",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_48921c43-0334-4393-90e9-c4b5f39886cc",
       "german": "K.: Kaufleute Abraham Neukircher; Marcus Rosenberg, Oestinghausen                  B.: Kaufmann Aron Spiegel, Hovestadt                  G.: Geldforderung aus Obligation von 1843"
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,8 +1,7 @@
 {
   "date": "1831",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 233 Nr. 19897",
@@ -21,6 +20,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

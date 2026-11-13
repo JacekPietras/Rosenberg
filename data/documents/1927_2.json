@@ -1,8 +1,7 @@
 {
   "date": "1927",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 1-J",
@@ -12,6 +11,5 @@
       ],
       "german": "Rosenberg, Maria Katharina"
     }
-  ],
-  "deleted": true
+  ]
 }

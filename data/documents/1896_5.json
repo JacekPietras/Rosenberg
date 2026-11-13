@@ -1,14 +1,12 @@
 {
   "date": "1896",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, Q 520t, Nr. II Nr. 1723",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_f3d3849e-035d-4fbd-899f-aeb01d2d050b",
       "german": "Rosenberg, Eduard und Math. geb. Eick, Eheleute, Dortmund, Kaufmann"
     }
-  ],
-  "deleted": true
+  ]
 }

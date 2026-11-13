@@ -1,14 +1,12 @@
 {
   "date": "1913",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 231 Nr. 9771",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1165658",
       "german": "Petition des Eisenbahnkomitees und der Gemeinderäte Merchingen, Bronnacker u. Rosenberg um Erbauung einer Eisenbahn von Rosenberg nach Merchingen\n\nLaufzeit: 1913-1914"
     }
-  ],
-  "deleted": true
+  ]
 }

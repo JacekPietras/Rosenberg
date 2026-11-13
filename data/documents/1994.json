@@ -1,14 +1,12 @@
 {
   "date": "1994",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gütersloh, GB (ZS)",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x77772277593612620230227143328114",
       "german": "Die Stunde der Gemeinde: Predigt des Pfarrers Martin Niemöller am 11. November 1936 in der Martin-Luther-Kirche fand selbst in Berlin Beachtung\n\nenthält u.a.: Wehrkreispfarrer Ludwig Müller, von Bodelschwingh, Hanns Kerrl, Pastor Paul Gronemeyer, Alfred Rosenberg, Wilhelm Florin, Polizeiwachtmeister Schmidt, Else Niemöller, Rechtsanwalt Hans Semler, Wilhelm Niemöller, Pfarrer Droste, Johann Schmidt,\n\nFoto von Martin Niemöller, Abdruck einer Anzeige in der Westfälischen Zeitung zum Evangelischen Gottesdienst vom 6. November 1936, Anzeige zur Evangelischen Woche 1936 mit einer darunter befindlicher Anzeige des jüdischen Viehhändlers Jos. Meinberg, Kopie eines Schriftstückes vom 18. Dezember 1936: festgenommen wurde ein 33jähriger jüdischer Kaufmann wegen Rassenschande mit seiner geschiedenen Ehefrauund der Strafsache Martin Niemöllers wegen seiner Predigt vom 11.11.1936"
     }
-  ],
-  "deleted": true
+  ]
 }

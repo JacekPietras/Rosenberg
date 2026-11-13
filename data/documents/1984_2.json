@@ -1,14 +1,12 @@
 {
   "date": "1984",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Warendorf, N 220, Nr. 25",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_b5887ee7-4c57-457e-a966-b13f4a3970bb",
       "german": "Interview mit Marga Spiegel und Karl Rosenberg, Teil 1"
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1934-1938",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Landeskirchliches Archiv der Evangelischen Kirche von Westfalen, 5.1, Nr. 585 Fasc. 2",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_0c768af0-4ab0-4994-956a-8e8c04cc4e1e",
       "german": "Birger Forell:NSDAP-Staat\n\nRede des Vizekanzlers von Papen vor dem Universitätsbund Marburg, 17.06.1934; Bericht über den Führerkursus für Landerzieher in Deutschland, o.D.; Worte des Führers über Christentum und Kirche (aus \"Mein Kampf\")\nZeitschriften und Periodika betr. / enth. u.a.NS-Schulungen, Reden (i.A.) von Göbbels (u.a. zum Jahrestag der Machtergreifung), Göring, Rosenberg, Schirach (\"Kein Sonderrecht für konfessionelle Gruppenl\"), Hitler (u.a. \"Gebt dem Staat, was dem Staat gehört I\"), Staat und Kirche, aktuelle Tagespolitik im NSDAP-Staat, 01.01.1934 - 28.04.1938"
     }
-  ],
-  "deleted": true
+  ]
 }

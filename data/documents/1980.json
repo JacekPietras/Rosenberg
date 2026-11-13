@@ -1,14 +1,12 @@
 {
   "date": "1980-1996",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Landeskirchliches Archiv der Evangelischen Kirche von Westfalen, 4.256, Nr. 486",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_6bc0ac28-5de9-4bf7-8fac-7b18dd263eb5",
       "german": "Personalangelegenheiten der Gemeindeschwestern\n\nEnthält u.a.: Vorschläge des Presbyteriums zu einer einheitlichen Dienstanweisung für die Gemeindeschwestern der Diakoniestation Auf dem Rosenberg, 1987\nDarin: Fotos der Gemeindeschwester Annette Stein und Kindergärtnerin Annegret Schardien; Zeitungsausschnitt über neue Leiterin des Kindergartens Silke Schwarz, 1996; Todesanzeigen Mathilde Krützberg, 1987 und Sophie Baßfeld, 1997; Fotos der Geburtstagsfeier der Schwester Mathilde, 1987"
     }
-  ],
-  "deleted": true
+  ]
 }

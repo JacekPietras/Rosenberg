@@ -1,14 +1,12 @@
 {
   "date": "1963",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "StadtA HU, K 12, 84",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10060643",
       "german": "Korrespondenz Fritz Rosenberg (S. Regev)"
     }
-  ],
-  "deleted": true
+  ]
 }

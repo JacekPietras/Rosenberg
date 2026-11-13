@@ -1,14 +1,12 @@
 {
   "date": "1949-1967",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Münster, NL Branse/Hertz, Nr. 207",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x98475205898284920210727132023376",
       "german": "Entschädigungsverfahren Erben Bernhard und Aurelie Rosenberg: Besitzungen Jägerstraße 27/29, tom Rinkstraße 22, Münster\n\nEnthält: Claims for restitution of property; Stellungnahme der Rheinisch-Westfälischen-Bank, Münster; Widersprüche der Antragsgegner; Mitteilungen des Zentralamts für Vermögensverwaltung, Bad Nenndorf; Ladung Sühnetermin; Schreiben des Finance (Property Control) Branch, Düsseldorf an Lotte Sostmann; Verfügung des Kreisbeauftragten für gesperrte Vermögen; Bescheide über die einheitliche Schadensfeststellung nach dem Feststellungsgesetz bei Beteiligung mehrerer unmittelbar Geschädigter; Anträge: Zuerkennung des Anspruchs auf Hauptentschädigung nach dem Lastenausgleichsgesetz; Bescheide über die einheitliche Zuerkennung von Hauptentschädigung nach dem Lastenausgleichgesetz bei Beteiligung mehrerer antragsberechtigter Erben; Mitteilung über die Erfüllung des Anspruchs auf Hauptentschädigung durch Auszahlung;"
     }
-  ],
-  "deleted": true
+  ]
 }

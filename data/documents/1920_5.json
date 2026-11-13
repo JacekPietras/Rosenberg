@@ -1,14 +1,12 @@
 {
   "date": "1920-1939",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Viersen, U 24, Nr. 929",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_609a8bd8-09d8-4b89-a825-1bb194323178",
       "german": "Filialen vor dem Zweiten Weltkrieg\n\nAußenansichten der Filialen in Lage (Lange Straße 83), Neuenkirchen bei Rheine (Hauptstraße 33), Swinemünde, Duisburg-Hochfeld (Mannheimer Straße 102), Rees am Rhein, Osnabrück (Johannesstraße 61), Rosenberg in Schlesien (Ring 8), Hagen (Mittelstraße), Wilmersdorf (Berliner Straße 131), Emden (Neutorstraße 23), Berlin (Wilmersdorfer Straße 152, Koloniestraße 1, Beußelstraße 29, Kopernikusstraße 18, Neanderstraße 37), Neubrück, Grabow (Marktstraße 7), Saarbrücken (Eisenbahnstraße 30), Friedland in Mecklenburg (Am Markt), Jüterbog, Hagen (Kaiserstraße 1), Herne (Bahnhofstraße 33 und 63), Essen (Hermann-Göring-Straße 117, Witteringstraße 98, Rüttenscheider Straße 206), Waldniel (Lange Straße 2), Charlottenburg (Berliner Straße 115), Trier (Brodstraße 1), Duisburg, Augsburg (Ludwigsplatz), Luckenwalde, Mönchengladbach (Alter Markt), Viersen (Gladbacher Straße 30), Langenbielau (Ostpr.), Weidenau, Schivelbein (Markt 3), Essen-Altenessen, Berlin Wilmersdorf (Weserstraße 28), Schloßburg, Namslau in Schlesien (Markt 22), Stavenhagen in Mecklenburg (Malchiner Straße 160), Baden-Baden (Lange Straße 32), Stettin, Krefeld, Braunschweig, Düsseldorf (Rethelstraße 174), Süchteln, Blieskastel (Hauptstraße 100), Bitterfeld (Burgstraße 2)"
     }
-  ],
-  "deleted": true
+  ]
 }

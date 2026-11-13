@@ -1,14 +1,12 @@
 {
   "date": "1764-1777",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Vereinigte Westfälische Adelsarchive e.V., Tat.Keu, Nr. Tat.Keu - 215",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_91c9b7ed-e21d-41c2-ab52-dc8e55751de9ACTAPRO",
       "german": "Ausbildung der Brüder Clemens August und Ludwig von Nagel\n\nRechenschaftsberichte und Abrechnungen des Ägidius Neissen S.J. und des Jacob la Chambre S.J. über den Schulaufenthalt seiner Söhne Clemens August und Ludwig in Köln an Josef Marsil von Nagel (1764-1765) Rechenschaftsberichte und Abrechnungen des Rektors Heinrich Kerens S.J. und des Kollators Leopold Steinbacher S.J. über den Schulaufenthalt seiner Söhne Clemens August und Ludwig am Theresianum in Wien an Josef Marsil von Nagel (1766-1769) Reisekostenabrechnung nach Stationen über die Fahrt von Clemens August und Ludwig von Wien nach Brüssel [1769] Rangliste der Kompanie Baron von Rosenberg, auf der Ludwig von Nagel auf Platz 2 als Oberleutnant geführt wird (1777)"
     }
-  ],
-  "deleted": true
+  ]
 }

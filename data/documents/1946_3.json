@@ -1,14 +1,12 @@
 {
   "date": "1946-1962",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Münster, NL Branse/Hertz, Nr. 141",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x89203119277954120210727132023415",
       "german": "Rückerstattungsansprüche der Erben Bernhard und Aurelie Rosenberg\n\nEnthält: Korrespondenz mit Baronin Gumppenberg, Düsseldorf (Cousine von Lotte Sostmann); Korrespondenz mit Lotte Sostmann; Korrespondenz mit dem Zentralamt für Vermögensverwaltung, Bad Nenndorf; Korrespondenz mit dem Wiedergutmachungsamt bzgl. Ansprüche aus Lebensversicherung von Bernhard Rosenberg bei der Provinzial Lebensversicherungsanstalt Westfalen"
     }
-  ],
-  "deleted": true
+  ]
 }

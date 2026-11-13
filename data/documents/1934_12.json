@@ -1,14 +1,12 @@
 {
   "date": "1934",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Gladbeck, 1-J",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_69e53edc-da13-4c07-b012-77af299bd01e",
       "german": "Rosenberg, Anna Martha"
     }
-  ],
-  "deleted": true
+  ]
 }

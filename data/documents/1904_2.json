@@ -1,14 +1,12 @@
 {
   "date": "1904-1925",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Warburg, Nr. D 0436",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_40afea5a-4f5e-4f01-a94d-298dcf7efc60",
       "german": "Personalien der Armenunterstützung\n\nUnterstützungssache Witwe E. Giese Unterstützungssache Witwe A. Peine Unterstützungssache Maria Rosenberg Unterstützungssache Familie Prüfer"
     }
-  ],
-  "deleted": true
+  ]
 }

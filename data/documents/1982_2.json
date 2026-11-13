@@ -1,14 +1,12 @@
 {
   "date": "1982",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Herne, Best. 2201, Nr. 34, Bd. 5/6",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_db93dcc4-9ad0-4b28-a28b-93bb3bd2c2a8",
       "german": "Der Anschnitt\n\nAltägyptischer Hornsteinbergbau im Wadi el-Sheikh. Von Gerd Weisgerber Zur Geschichte des Goldbergbaus in schlesien. Von Gerhard Heinrich Vom Erz zur Münze - Sächsisch-thüringische Bergbaugeschichte im Spiegel einer Ausstellung. Von Paul Arnold / Werner Quellmalz Eine berg- und hüttenmännische Fakultät in Münster? Ein Plan im Widerstreit der Meinungen (1925-1930). Von Evelyn Kroker Die mittelalterlichen Katakombensysteme von Bamberg und ihre kulturhistorischen Zeugnisse. Von Radu Chinta Das Salzmuseum in Bad Sooden-Allendorf. Von Hugo Klepsch Bergbaumedaillen 1981. Von Fritz Spruth 500 Jahre Nordpfälzer Quecksilberbergbau. Von Wilfried Rosenberg Spende für Zeugnisse der Oberharzer Wasserwirtschaft. Von Werner Kroker Förderverein bergbauhistorischer Stätten im südlichen Ruhrgebiet gegründet. Von Werner Korker Rezensionen"
     }
-  ],
-  "deleted": true
+  ]
 }

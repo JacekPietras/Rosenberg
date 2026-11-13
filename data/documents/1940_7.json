@@ -1,14 +1,12 @@
 {
   "date": "1940-1942",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Vereinigte Adelsarchive im Rheinland e.V., NL FGWM, Nr. 187",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x05612152814865120241211132627713",
       "german": "Von Hermann Bunjes zusammengestellte Geheimakte \"Kunstschätze\"\n\nEnthält u.a.: Vermerke und Berichte von Bunjes über \"Sicherstellung\" jüdischen Kunstbesitzes im Louvre, o.D, über Erfassung des Kunstbesitzes, Sept. 1940, über Abschluss der Rosenberg-Aktion, 11. März 1941, über Beschlagnahmung jüdischen Vermögens, 7. Dez. 1941, über seine Tätigkeit beim Kunstschutz, 4. März 1942. - Schriftwechsel, Aktennotizen und Berichte u.a. von Staatsrat Turner, Hans Heinrich Lammers, Carlheinz Pfitzner, Felix Kuetgens, Aug. 1940, sowie Wolff Metternich zu beweglichen Kunstwerken und Aktionen Künsberg bzw. Rosenberg, Sept. 1940. - Hermann Görings Anweisung über Kunstgegenstände im Louvre, 5. Nov. 1940. - Listen über privaten jüdischen Kunstbesitz von Arthur-Georges Veil-Picard, Charles Bloch, Jacques Seligmann, M. M. Bernheim-Jeune, Fernand Halphen, Emil Halphen."
     }
-  ],
-  "deleted": true
+  ]
 }

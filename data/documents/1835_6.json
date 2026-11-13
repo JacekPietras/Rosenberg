@@ -1,14 +1,12 @@
 {
   "date": "1835",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAD, F 21 B, 399/8",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3977119",
       "german": "Notifikationen des Hauses Löwenstein-Wertheim-Rosenberg"
     }
-  ],
-  "deleted": true
+  ]
 }

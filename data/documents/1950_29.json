@@ -1,8 +1,7 @@
 {
   "date": "1950",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, Gerichte Rep. 0200, Nr. 2498",
@@ -464,6 +463,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

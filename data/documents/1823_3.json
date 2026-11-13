@@ -1,8 +1,7 @@
 {
   "date": "1823",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, Q 309t, Nr. 93",
@@ -119,6 +118,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

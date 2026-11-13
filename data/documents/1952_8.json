@@ -1,8 +1,7 @@
 {
   "date": "1952",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, Gerichte Rep. 0200, Nr. 2346",
@@ -65,6 +64,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

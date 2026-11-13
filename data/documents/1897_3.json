@@ -1,14 +1,12 @@
 {
   "date": "1897-1928",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Hagen, HL1, Nr. 370",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x43079769611358620250410110842165",
       "german": "Das Zigeuner-Wesen\n\nu.a. Anzeige gegen den \"Legitimationslosen\", angeblichen Johann Rosenberg; Personalangaben über mehrere angebliche Zigeuner"
     }
-  ],
-  "deleted": true
+  ]
 }

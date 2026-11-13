@@ -1,14 +1,12 @@
 {
   "date": "1948-1965",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Historisches Archiv Krupp, WA 153, Nr. WA 153/1559",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-HAK_e820b1e7-d42c-5cec-97b3-105fbca58d96",
       "german": "Organisation: Organisationspläne, Schriftwechsel, Dienstanweisungen, Personaleinsatz, Büroorganisation, Aufbewahrungsfristen, Vernichtung von Geschäftspapieren, Organisation Gemeinschaftssiedlung Essen Rosenberg\n\nu.a. Organigramme Krupp Wohnungsbau gGmbH sowie Krupp Kleinwohnungsbau gGmbH, Verträge und Vereinbarungen, Besprechungen, Personalangelegenheiten."
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1934-1956",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Münster, NL Branse/Hertz, Nr. 91",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x11777901649475020210727132023393",
       "german": "Rückerstattungsverfahren Baugrundstück Steveninkstraße 15, Münster\n\nEnthält: Grundbucheintrag; Urkunde über den Grundstücksverkauf; Antrag auf Rückerstattung; Widerspruch des Antragsgegners; Stellungnahme der Sparkasse der Stadt Münster; Vergleich Wiedergutmachungsamt; Verfügung des Kreisbeauftragten für gesperrte Vermögen;\nDarin: Anfrage nach dem Verbleib von Anni Rosenberg"
     }
-  ],
-  "deleted": true
+  ]
 }

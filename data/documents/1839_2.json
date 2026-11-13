@@ -1,8 +1,7 @@
 {
   "date": "1839",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": [
@@ -15,6 +14,5 @@
       ],
       "german": "Rosenberg, Joseph David, Testament, Oestinghausen"
     }
-  ],
-  "deleted": true
+  ]
 }

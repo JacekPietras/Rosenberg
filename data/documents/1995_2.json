@@ -1,14 +1,12 @@
 {
   "date": "1995",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Kreisarchiv Steinfurt, PrA Kr St Neg.",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x05802804231643620211105065800504",
       "german": "Verabschiedungen: Frau Esselmann, Herr Beinlich, Herr Meyer, Herr Nicodem, Herr Hooge und Herr Rosenberg\n\nGruppenaufnahme der Jubilare mit Herrn Selker, Herr Kröner, Frau Hallmann, Dez. Meyer, KD Dr. Ballke, Herr Fischer, Herr Bröker, Herr Schulze Elfringhoff vor dem Kreishaus Steinfurt"
     }
-  ],
-  "deleted": true
+  ]
 }

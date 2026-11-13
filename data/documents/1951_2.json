@@ -1,14 +1,12 @@
 {
   "date": "1951-1953",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, NW 0354, Nr. 322",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_35ac7223-7022-4829-bf10-a62c767da0e7",
       "german": "Darlehen aus Bundes- und Landesmitteln für die Stadt Bielefeld\n\nEnthält u.a.: Bau einer Zuführungsleitung vom Pumpwerk Rosenberg zu den städtischen Hochbehältern"
     }
-  ],
-  "deleted": true
+  ]
 }

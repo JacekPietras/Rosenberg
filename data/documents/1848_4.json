@@ -1,14 +1,12 @@
 {
   "date": "1848",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 233 Nr. 18825",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3285153",
       "german": "Die Beschwerde des Advokaten von Engelberg wegen einer Justizverzögerung in Sachen der Erben des Michael Bauer von Rosenberg gegen Heinrich Egner von Merchingen\n\nLaufzeit: 1848\n\nUmfang: 1 Faszikel"
     }
-  ],
-  "deleted": true
+  ]
 }

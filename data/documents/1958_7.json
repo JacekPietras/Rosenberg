@@ -1,14 +1,12 @@
 {
   "date": "1958",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAD, H 12 Darmstadt, 6629",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4666061",
       "german": "Rosenberg, Isaak, New York gegen Land Hessen"
     }
-  ],
-  "deleted": true
+  ]
 }

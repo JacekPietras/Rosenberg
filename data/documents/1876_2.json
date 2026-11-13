@@ -1,14 +1,12 @@
 {
   "date": "1876",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, Q 405t, Nr. 25",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_5ebf0cbe-ac3b-45e9-9a6b-59cf08dc7354",
       "german": "Rosenberg, Johann, Testament, Hülschotten"
     }
-  ],
-  "deleted": true
+  ]
 }

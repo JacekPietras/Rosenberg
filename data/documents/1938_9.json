@@ -1,14 +1,12 @@
 {
   "date": "1938-1959",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Münster, NL Branse/Hertz, Nr. 150",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x24438774585723820210727132023366",
       "german": "Diverse Unterlagen\n\nEnthält: Kontoauszüge Gulden-Conto Arthur Hertz bei der Amsterdamsche Crediet Maatschappij vom Februar und März 1937; Generalvollmacht für Franz Branse von Rosa Hertz vom 12.11.1938; Generalvollmacht für Franz Branse von Erna Rosenberg, geb. Hertz vom 13.12.1952; Aufstellung der an den Oberfinanzpräsidenten Westfalen abgelieferten Hypothekenbriefe, Urkunden, etc. vom 08.09.1942; U.S. Individual Income Tax Return (Rosa Hertz); Kontoinformation der Rheinisch-Westfälischen Bank zum Sperrmarkonto; Schreiben der Landeszentralbank Düsseldorf;"
     }
-  ],
-  "deleted": true
+  ]
 }

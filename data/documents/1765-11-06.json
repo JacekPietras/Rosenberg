@@ -1,8 +1,7 @@
 {
   "date": "1765-11-06",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "AT-KLA 29-B-29 F St",
@@ -20,6 +19,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

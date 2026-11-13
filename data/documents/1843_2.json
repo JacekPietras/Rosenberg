@@ -1,14 +1,12 @@
 {
   "date": "1843",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, Q 333t, Nr. 182",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_76acfa58-a4cc-41c2-972a-d8eeb441522e",
       "german": "Rosenberg, Michael, Testament, Laasphe"
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1966-1970",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Münster, NL Branse/Hertz, Nr. 78",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x43779575824737520210727132023380",
       "german": "Entschädigungsansprüche Adolf Rosenberg\n\nDarin: private Korrespondenz über Kuraufenthalte und Besuche in Europa; Postkarten aus Bad Ragaz (Schweiz), Poststempel August 1964; Bewirtungsbelege;\n\nEnthält: Korrespondenz mit den Eheleuten Rosenberg bzgl. Entschädigungsverfahren, Kuraufenthalt in Bad Ragaz (Schweiz), Vermittlung von Adolf Rosenberg zu einem Spezialisten (Arzt) in Wien; Korrespondenz mit der Firma Ernst Kolb, Nieder-Marsberg bzgl. des Dotter-Aktivmittels „Lutenal“ auf Bitten von Ralph Rosenbergs; Werbeprospekt der Firma Fallek Products Company New York (Ralph Rosenberg); Vergleich der Wiedergutmachungskammer"
     }
-  ],
-  "deleted": true
+  ]
 }

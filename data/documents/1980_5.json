@@ -1,14 +1,12 @@
 {
   "date": "1980",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Marl, B.04.01 Best. 404, Nr. 621",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A10x76819640398025520260911102001786",
       "german": "Rosenberg geb. Hautzel, Pauline Berta Therese, Sterbedatum: 30.08.1980, Geburtsdatum: 25.05.1906, Geburtsort: Wirbelau jetzt Runkel"
     }
-  ],
-  "deleted": true
+  ]
 }

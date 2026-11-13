@@ -1,14 +1,12 @@
 {
   "date": "1883-1894",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv und Landesgeschichtliche Bibliothek Bielefeld, 210,040/Velh. & Klasing, Nr. 0819",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x35091775655746420201211134603487",
       "german": "Autorenkorrespondenz mit Dr. C. Baenitz, Königsberg, Frau A. Müller, Rosenberg, Dr. Krasta, Stettin und W. Petzold, Braunschweig\n\nEnthält u.a.: Vertragsänderung der Autoren des \"Lehrbuches der Geographie\"; Abfindung der Erben Kopkas; Neubearbeitung von Baenitz/Kopka, Lehrbuch der Geographie, 1884; Vertragsentwurf V & K, Bielefeld und Leipzig mit Dr. C. Baenitz und Kopka, Königsberg und Bielefeld, 20. Jan. 1883"
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1939",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HHStAW, 474/3, 1658",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3512046",
       "german": "Strafsache gegen den Julius Rosenberg aus Duisburg wegen Devisenvergehens"
     }
-  ],
-  "deleted": true
+  ]
 }

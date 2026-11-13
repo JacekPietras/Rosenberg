@@ -1,14 +1,12 @@
 {
   "date": "1925",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Dortmund, 3, Nr. 6605",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x66505223512649520230310084549836",
       "german": "Gewerbegericht November 1925\n\nEnthält: Niederschriften der öffentlichen Sitzungen des Gewerbegerichts (überwiegend Kündigungsangelegenheiten) u. a.: Bode gegen Bauer, betreffend Mitglied des Betriebsrates; Spitzer & Genossenschaft gegen Bink, betreffend Vergütung mit Naturalien, z. B. Bier); Schwalbe & Genossenschaft gegen Leipziger & Compagnie, betreffend Tarif bei nicht geregelten Akkorden; Eickelmann & Genossenschaft gegen Schlüter, betreffend Entlassung von Mitgliedern des Betriebsrates bei Betriebsstillegung; Rosenberg & Genossenschaft gegen Dortmunder Union, betreffend Invalidenwerkstatt; Buchner gegen Rübenkamp, betreffend Kündigung trotz Vorsitz im Angestelltenrat."
     }
-  ],
-  "deleted": true
+  ]
 }

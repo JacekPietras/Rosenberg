@@ -1,14 +1,12 @@
 {
   "date": "1969-1987",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Landeskirchliches Archiv der Evangelischen Kirche von Westfalen, 4.274, Nr. 4010",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_ae1cbdc5-94ec-4f19-9b82-89dfa8344e96",
       "german": "Personen P-Q\n\n1-2: Klaus Peters, Pfarrer in Linden, 1982-84 3: Johanne Pfeiffer, Gemeindeschwester 4-6: Franz Ernst Pfisterer, Hilfsprediger in Siegerland, gefallen 1944 7: Peter Philipps, Pfarrer, 1985 8: Erich Pitsch, Pfarrer 9: Giselher Pohl, Pfarrer, 1969 10: Ernst Poensgen (1848-1925), Pfarrer und Superintendent 11: Werner Posner, Pfarrer in Krankenhausseelsorge, 1986 12: Reinhard Quellmann, Heimleiter des Altenzentrums Rosenberg, 1987"
     }
-  ],
-  "deleted": true
+  ]
 }

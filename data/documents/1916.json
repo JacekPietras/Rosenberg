@@ -1,14 +1,12 @@
 {
   "date": "1916",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Lemgo, 11 N 01, Nr. D_440",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x24278903007507320200930121713257",
       "german": "Helene Rosenberg, geb. Heine\n\nHelene Rosenberg, an einem Korbstuhl lehnend"
     }
-  ],
-  "deleted": true
+  ]
 }

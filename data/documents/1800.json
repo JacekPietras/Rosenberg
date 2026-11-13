@@ -1,8 +1,7 @@
 {
   "date": "1800-1850",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "HStAD, D 4, 642/6",
@@ -41,6 +40,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1960-1984",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Stadtarchiv Bocholt, Nr. 1595",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_46b83ff9-4827-401a-a23b-f09e8d8c5765",
       "german": "Zuschüsse zum Bau und Betrieb eines Jugendfreizeitheims der evangelischen Gemeinde am Rosenberg"
     }
-  ],
-  "deleted": true
+  ]
 }

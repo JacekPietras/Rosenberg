@@ -1,14 +1,12 @@
 {
   "date": "1846",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, Q 360t, Nr. 481",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_4c4ab329-d2fe-4b81-a642-51f33fc8c18d",
       "german": "Rosenberg, Caspar, Erbvertrag mit den Eheleuten Mentrop, Jacob und Elisabeth, geb. Brusis, Parsit"
     }
-  ],
-  "deleted": true
+  ]
 }

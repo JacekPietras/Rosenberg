@@ -1,8 +1,7 @@
 {
   "date": "1918",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 338 Nr. 3273",
@@ -16,6 +15,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

@@ -1,8 +1,7 @@
 {
   "date": "1873-1895",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, BR 0101, Nr. 952",
@@ -86,6 +85,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }

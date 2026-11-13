@@ -1,14 +1,12 @@
 {
   "date": "1817-1848",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "deleted": true,
   "entries": [
     {
       "source": "Abteilung Westfalen, V 058, Nr. 2798",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_f467fa10-d2d6-49f5-809f-bdfb401da8f7",
       "german": "K.: Kaufmann Marcus Rosenberg, Oestinghausen                  B.: Colon Friedrich Klauke, Blomenhof                  G.: Geldforderung aus Verkauf von Saatgut"
     }
-  ],
-  "deleted": true
+  ]
 }
