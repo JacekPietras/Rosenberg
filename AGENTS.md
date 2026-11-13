@@ -17,8 +17,8 @@ Add facts directly to the relevant JSON entry and review the diff.
 
 ## Family reconstruction
 
-- Before changing `scripts/family_graph/` or `data/matching.json`, read `specs/tree-algorithm/`.
-- Keep `specs/tree-algorithm/` in step with the code.
+- Before changing `scripts/family_graph/` or `data/matching.json`, read `specs/family_graph_algorithm/`.
+- Keep `specs/family_graph_algorithm/` in step with the code.
 
 ## Images
 
