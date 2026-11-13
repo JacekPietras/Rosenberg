@@ -1,12 +1,15 @@
 {
   "date": "1634",
-  "label": ["to review", "Franken"],
+  "label": [
+    "to review",
+    "Franken"
+  ],
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 72 Nr. 9889",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641654",
-      "german": "Sequestration der heimgefallenen würzburgischen Lehen und Eigengüter der von Rosenberg durch kaiserliche Beauftragte.\n\nLaufzeit: 1634\n\nUmfang: 1 cm",
-      "english": "Sequestration of the escheated Würzburg fiefs and own estates of the von Rosenberg by imperial commissioners.\n\nDuration: 1634\n\nExtent: 1 cm"
+      "german": "Sequestration der heimgefallenen würzburgischen Lehen und Eigengüter der von Rosenberg durch kaiserliche Beauftragte.\n\nLaufzeit: 1634",
+      "english": "Sequestration of the escheated Würzburg fiefs and own estates of the von Rosenberg by imperial commissioners.\n\nDuration: 1634"
     }
   ]
 }

@@ -27,6 +27,8 @@ LANDESARCHIV_BW_HTTPS_PREFIX = "https://www.landesarchiv-bw.de/plink/"
 REMOVABLE_BOILERPLATE = re.compile(
     r"\n\n(?:Formalbeschreibung: Ausfertigung"
     r"|Besiegelung/Beglaubigung: S anhängend"
+    r"|Format: Folio cm"
+    r"|(?:Umfang|Extent|Volume): \d+(?:[.,]\d+)? cm"
     r"|Format: \d+[.,]?\d*\s*x\s*\d+[.,]?\d*\s*cm)(?=\n|$)"
 )
 BRACKETED_VARIANT = re.compile(r"\(([^()\n]+)\)|\[([^\[\]\n]+)\]")
