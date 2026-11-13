@@ -23,7 +23,7 @@ data/
 └── places.json   # Place-name variants and coordinates
 docs/             # Browser viewer for the dataset
 specs/            # Conditional instructions for data work
-  tree-algorithm/ # Family reconstruction rules and algorithm
+  family_graph_algorithm/ # Family reconstruction rules and algorithm
 ```
 
 ## Rules for data work
@@ -84,8 +84,8 @@ impossible age, distinct registry IDs, known relatives, a different father or
 mother); undecided candidates are kept as "possibly the same person". The tree
 stores comparison probabilities, feature contributions, rejected alternatives,
 and provenance; tree and person pages explain them. The rules and passes are
-specified in [specs/tree-algorithm](specs/tree-algorithm/), starting with its
-[domain rules](specs/tree-algorithm/domain-rules.md).
+specified in [specs/family_graph_algorithm](specs/family_graph_algorithm/), starting with its
+[domain rules](specs/family_graph_algorithm/domain-rules.md).
 
 The diagram defaults to parent/child and spouse lines; hovering over or focusing
 a person reveals their sibling and other kin lines as well. Children with the same recorded parents
