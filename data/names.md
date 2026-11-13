@@ -28,19 +28,19 @@ Engelhard, Engelhart, Engelhardus
 Erasmus
 Erhard
 Erkinger
-Ernst
+Ernst, Erinze, Erwin, Ehrenfried
 Franz, Franziskus
 Friedmann
 Friedrich, Friderich, Fridrich, Fridericus, Friderici, Friderico, Fritz, Fritze, Friz, Frize, Frederick, Fridereich
 Frizo
-Georg, Gorg, Jörg, Jorge
+Georg, Gorg, Jörg, Jorge, Jorg
 Gerhard, Gerhardus
 Gotfried, Godefrid, Gottfried
 Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
 Hans, Johann, Hanemann, Hanse, Johannes, Hanns, Joannes, Iohannes, Johanns
 Hank
 Hartmut
-Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus, Henricus, Hainrich, Heinrici, Heinrico, Hendrici, Jindrich
+Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus, Henricus, Hainrich, Heinrici, Heinrico, Hendrici, Jindrich, Heintz
 Herbord
 Herman, Hermann
 Hieronymus, Jheronimus
@@ -52,7 +52,7 @@ Kilian
 Konrad, Chuonrad, Chuonradus, Chunrat, Conradt, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat, Cunrad, Cunreth, Cunradus, Conrado, Chvnradus
 Kraft, Krafto
 Kuno
-Kunz, Cunz, Konz, Conz, Concz, Contz, Contze, Kontz, Kuntz, Cuntz, Cuncze, Guntz, Kunczen // are shortened versions of Konrad, but not used as it\! [1401 March 5]
+Kunz, Cunz, Konz, Conz, Concz, Contz, Contze, Kontz, Kuntz, Cuntz, Cuncze, Guntz, Kunczen, Conntzen // are shortened versions of Konrad, but not used as it\! [1401 March 5]
 Leonhard, Leonhart, Lienhart, Leonhardus, Leonardus, Lenhart, Linhard, Linhart
 Leopold, Lupold, Luppold
 Lorenz
@@ -83,7 +83,7 @@ Seibott
 Senant, Synant
 Siboto
 Siegfried
-Siegmund, Sigmund, Siegemund
+Siegmund, Sigmund, Siegemund, Sigismund
 Stephan, Stefan
 Thame
 Thomas, Thoman
@@ -166,3 +166,6 @@ Voit, Voith, Voyt
 Raydenbach
 Stieber, Stiebar, Stiber
 Kemnater, Kempnater
+Schaffner
+Rodel
+Pirchan
