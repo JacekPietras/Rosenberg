@@ -66,6 +66,7 @@ Melchior
 Michael , Michel
 Nicolaus, Nicholas, Niklaus, Nikolaus, Claus
 Niklas, Nyclos, Niclas
+Otto
 Pankraz
 Peter
 Philipp
@@ -137,7 +138,7 @@ Margaretha, Margretha, Margarete, Margarethe, Margret, Margareta, Margreth, Marg
 Magdalena
 Maria
 Osanna
-Ottilia, Ottilie
+Ottilia, Ottilie, Otilia
 Petrisa, Petrissa
 Regina
 Richtze
