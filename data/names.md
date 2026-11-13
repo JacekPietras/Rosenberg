@@ -14,7 +14,7 @@ Balthasar
 Batt
 Berngern
 Bernhard
-Berthold, Bertold, Bertolt
+Berthold, Bertold, Bertolt, Betzmann
 Burkhard
 Caspar, Kaspar, Caſpar
 Christoph, Chriftoph, Christpoh
