@@ -11,6 +11,7 @@ import argparse
 
 ROOT = Path(__file__).resolve().parent.parent
 LINTERS = Path(__file__).resolve().parent / "linters"
+TRUNCATION_MARKER = "(line truncated to 2000 chars)"
 CHECKS = (
     "normalize_hidden_places.py",
     "validate_documents.py",
@@ -33,6 +34,7 @@ def main(argv=None):
     normalized_names = 0
     for path in sorted((ROOT / "data").rglob("*.json")):
         duplicates = []
+        truncated_fields = []
 
         def reject_duplicate_fields(pairs):
             fields = set()
@@ -42,14 +44,32 @@ def main(argv=None):
                 fields.add(field)
             return dict(pairs)
 
+        def find_truncated_fields(value, field_path="$"):
+            if isinstance(value, dict):
+                for field, child in value.items():
+                    find_truncated_fields(child, f"{field_path}.{field}")
+            elif isinstance(value, list):
+                for index, child in enumerate(value):
+                    find_truncated_fields(child, f"{field_path}[{index}]")
+            elif isinstance(value, str) and TRUNCATION_MARKER in value:
+                truncated_fields.append(field_path)
+
         try:
             with path.open(encoding="utf-8") as source:
-                json.load(source, object_pairs_hook=reject_duplicate_fields)
+                data = json.load(source, object_pairs_hook=reject_duplicate_fields)
         except (OSError, json.JSONDecodeError):
             # The schema validators report unreadable or malformed JSON.
             continue
+        find_truncated_fields(data)
         for field in duplicates:
             print(f"Duplicate JSON field: {path.relative_to(ROOT)}: {field}")
+            issues += 1
+            failed = True
+        for field_path in truncated_fields:
+            print(
+                f"Truncated JSON field: {path.relative_to(ROOT)}: {field_path} "
+                f"contains {TRUNCATION_MARKER}"
+            )
             issues += 1
             failed = True
     for check in CHECKS:
