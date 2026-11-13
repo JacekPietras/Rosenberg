@@ -8,6 +8,7 @@ from .constraints import cycle_nodes
 from .kinship import Kinship
 from .model import fingerprint, registry_keys
 from .sources import generic_text, input_manifest
+from .person_names import PersonNameRecognizer
 from .probability import parameters, person_references
 
 
@@ -138,13 +139,26 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
         raise ValueError('missing reconstructed evidence views')
     cache = {} if cache is None else cache
     resolved = {}
+    recognizer = None
+    if root is not None:
+        names_text = (root / 'data/names.md').read_text(encoding='utf-8')
+        particles_path = root / 'data/nobiliary_particles.md'
+        particles = particles_path.read_text(encoding='utf-8') if particles_path.exists() else ''
+        connectors_path = root / 'data/name-connectors.md'
+        connectors = connectors_path.read_text(encoding='utf-8') if connectors_path.exists() else ''
+        title_parts = [(root / name).read_text(encoding='utf-8') for name in
+                       ('data/titles-age.md', 'data/titles-office.md') if (root / name).exists()]
+        title_text = '\n'.join(title_parts)
+        places = json.loads((root / 'data/places.json').read_text(encoding='utf-8'))
+        recognizer = PersonNameRecognizer(names_text, particles, places, title_text, connectors)
 
     def source(ref, view):
         path, pointer = ref.get('path', ''), ref.get('pointer', '')
         if (set(ref) != {'path', 'pointer', 'fingerprint'} or path not in metadata['inputs']
             or not re.fullmatch(r'data/(books|documents|notes|images)/[^\0]+\.json', path)
             or '..' in path.split('/') or not re.fullmatch(r'sha256:[a-f0-9]{64}', ref.get('fingerprint', ''))
-            or not re.search(r'/(facts|guesses)/[0-9]+$', pointer)
+            or not (re.search(r'/(facts|guesses)/[0-9]+$', pointer)
+                    or path.startswith('data/documents/') and re.search(r'^/entries/[0-9]+/english$', pointer))
             or view == 'facts' and '/guesses/' in pointer):
             raise ValueError('invalid reconstructed source reference')
         if root is None:
@@ -186,9 +200,14 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
                     if not isinstance(reference, str) or not reference:
                         raise ValueError('invalid reconstructed context participant')
                     if fact is not None:
-                        text = generic_text(fact)
-                        if (reference in registry and '[' + reference + ']' not in text
-                            or reference not in registry and reference not in person_references(text)):
+                        text = fact if isinstance(fact, str) else generic_text(fact)
+                        if reference in registry:
+                            valid = '[' + reference + ']' in text
+                        elif recognizer is not None:
+                            valid = reference in recognizer.find(text)
+                        else:
+                            valid = reference in person_references(text)
+                        if not valid:
                             raise ValueError('invalid reconstructed context participant')
                     named |= reference == node['name']
                 elif field not in {'person', 'of'} or fact is not None and (not isinstance(fact, dict) or field not in fact):

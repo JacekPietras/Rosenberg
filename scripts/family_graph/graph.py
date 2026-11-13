@@ -22,7 +22,7 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
     registry, profiles = anchor_profiles(assertions, inputs.people)
     conflicts, blocked, ignored_guesses = [], set(), set()
     for identity, observations in profiles.items():
-        factual = [mention for mention in observations if mention.assertion.source.kind == 'facts']
+        factual = [mention for mention in observations if mention.assertion.source.kind in {'facts', 'text'}]
         if not compatible_deaths(factual):
             blocked.add(identity)
             conflicts.append({'reason': 'conflicting factual death constraints', 'identities': [identity],
@@ -137,6 +137,6 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
             for handle in handles:
                 decisions[handle].candidates.append(Candidate(group, [{'name': 'compatible unresolved occurrences; no identity merge', 'score': 0}]))
     evidence = reconstruct(usable, decisions, registry, names, parameters=inputs.matching or None,
-                           observations=[o for o in inputs.observations if include_guesses or o.source.kind == 'facts'])
+                           observations=[o for o in inputs.observations if include_guesses or o.source.kind != 'guesses'])
     return BuildResult(view, decisions, edges, conflicts, diagnostics, alternatives, omitted, dict(provisional_groups),
                        {'searchLimit': search_limit, 'probability': parameters(inputs.matching or None)}, evidence)

@@ -4,12 +4,12 @@ from collections import defaultdict
 import re
 from place_names import resolve_place_names
 from .dates import compatible_deaths, date_bounds, near
-from .model import Candidate, registry_keys
+from .model import Candidate, registry_keys, passage_key
 from .policy import title_class
 
 
 def passage(mention):
-    return mention.assertion.source.key.rsplit('/' + mention.assertion.source.kind + '/', 1)[0]
+    return passage_key(mention.assertion.source)
 
 
 def place_patterns(places):

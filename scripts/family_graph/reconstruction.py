@@ -12,7 +12,7 @@ import math
 import re
 
 from .constraints import cycle_nodes
-from .model import fingerprint, Assertion, Mention
+from .model import fingerprint, Assertion, Mention, passage_key
 from .policy import AGE_TITLES
 from .kinship import generation, tree_paths
 from .dates import death_interval
@@ -55,14 +55,14 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     # assertions. They can bridge typed family records, but never add edges.
     typed_scopes = defaultdict(list)
     for mention in mentions.values():
-        key = (mention.assertion.source.path, mention.assertion.source.pointer.rsplit('/' + mention.assertion.source.kind + '/', 1)[0])
+        key = passage_key(mention.assertion.source)
         typed_scopes[key].append(mention)
     context_handles = defaultdict(list)
     required = math.log(model.settings['mergeProbability'] / (1 - model.settings['mergeProbability'])) - math.log(model.settings['priorProbability'] / (1 - model.settings['priorProbability']))
     for observation in observations:
         if not observation.bounds:
             continue
-        passage = (observation.source.path, observation.source.pointer.rsplit('/' + observation.source.kind + '/', 1)[0])
+        passage = passage_key(observation.source)
         explicit = {identity for identity, person in registry.items() if person.get('id') == identity and '[' + identity + ']' in observation.text}
         # A typed participant already carries its titles and deceased status.
         # Do not create a second, apparently living occurrence for its context.
@@ -109,8 +109,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     for handle, mention in mentions.items():
         ref = mention.reference
         mention_names[handle] = names.key(registry[ref]['name'] if ref in registry and registry[ref].get('id') == ref else ref)
-        mention_scopes[handle] = (mention.assertion.source.path,
-                                 mention.assertion.source.pointer.rsplit('/' + mention.assertion.source.kind + '/', 1)[0],
+        mention_scopes[handle] = (*passage_key(mention.assertion.source),
                                  mention.assertion.historical_date)
     parents_of_mention = defaultdict(list)
 
@@ -481,7 +480,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         source = mention.assertion.source
         if source.path.startswith('data/documents/'):
             return source.path,
-        return source.path, source.pointer.rsplit('/' + source.kind + '/', 1)[0]
+        return passage_key(source)
 
     def title_key(mention):
         return frozenset(title_category(title, names) for title in mention.titles)
@@ -710,7 +709,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             if not observation or observation.bounds is None:
                 context_coverage['undated'] += 1
                 continue
-            passage = (observation.source.path, observation.source.pointer.rsplit('/' + observation.source.kind + '/', 1)[0])
+            passage = passage_key(observation.source)
             explicit = {identity for identity in ids if '[' + identity + ']' in observation.text}
             text = observation.text
             for identity in sorted(explicit):

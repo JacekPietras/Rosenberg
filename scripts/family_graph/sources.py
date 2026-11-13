@@ -7,6 +7,7 @@ from .dates import date_bounds, inherited_date_bounds
 from .model import Assertion, Inputs, Mention, SourceRef, fingerprint
 from .probability import Observation, parameters
 from .names import Names
+from .person_names import PersonNameRecognizer
 
 SOURCE_DIRS = ('books', 'documents', 'notes', 'images')
 
@@ -38,7 +39,7 @@ def source_paths(root):
 
 
 def input_manifest(root, people=None):
-    paths = source_paths(root) + [root / 'data/names.md', root / 'data/titles-age.md', root / 'data/titles-office.md', root / 'data/kinship.md', root / 'data/places.json', root / 'data/matching.json', root / 'data/distinctFamilies.md']
+    paths = source_paths(root) + [root / 'data/names.md', root / 'data/nobiliary_particles.md', root / 'data/name-connectors.md', root / 'data/titles-age.md', root / 'data/titles-office.md', root / 'data/kinship.md', root / 'data/places.json', root / 'data/matching.json', root / 'data/distinctFamilies.md']
     manifest = {}
     for path in sorted(set(paths)):
         if not path.exists():
@@ -71,6 +72,17 @@ def walk_assertions(document, path, include_text=False):
             current_context = {**(context or {}), **{k: value[k] for k in ('source', 'url', 'book', 'title', 'place') if k in value}}
             for key, child in value.items():
                 location = pointer + '/' + key.replace('~', '~0').replace('/', '~1')
+                if (include_text and key == 'english' and isinstance(child, str)
+                    and path.startswith('data/documents/') and child.strip()):
+                    try:
+                        bounds = inherited_date_bounds(current_date)
+                    except (ValueError, TypeError):
+                        # Some legacy document dates use day 00. Preserve the
+                        # text provenance, but do not invent chronology for it.
+                        bounds = None
+                    ref = SourceRef(path, location, fingerprint(child), 'text',
+                                    json.dumps(current_context.get('source', ''), ensure_ascii=False, sort_keys=True))
+                    yield ref, Observation(ref, child, current_date, bounds, current_context)
                 if key in ('facts', 'guesses'):
                     if not isinstance(child, list):
                         raise ValueError(f'{path}#{location}: expected an array')
@@ -118,7 +130,7 @@ def load_inputs(root, validate=True):
     validator = Validator(root=root)
     if validate:
         validator.load_people(root / 'data/people.json')
-    assertions, observations, prose = [], [], {'facts': 0, 'guesses': 0}
+    assertions, observations, prose = [], [], {'facts': 0, 'guesses': 0, 'text': 0}
     excluded_labels = excluded_document_labels(root)
     for path in source_paths(root):
         try:
@@ -145,6 +157,11 @@ def load_inputs(root, validate=True):
     kinship = kinship_path.read_text(encoding='utf-8') if kinship_path.exists() else ''
     places = json.loads((root / 'data/places.json').read_text(encoding='utf-8'))
     title_names = Names(names, places, titles, kinship)
+    particles_path = root / 'data/nobiliary_particles.md'
+    particles = particles_path.read_text(encoding='utf-8') if particles_path.exists() else ''
+    connectors_path = root / 'data/name-connectors.md'
+    connectors = connectors_path.read_text(encoding='utf-8') if connectors_path.exists() else ''
+    title_names.recognizer = PersonNameRecognizer(names, particles, places, titles, connectors)
     canonical_titles = {}
     for assertion in assertions:
         for mention in assertion.mentions:

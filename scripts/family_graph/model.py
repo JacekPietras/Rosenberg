@@ -53,6 +53,13 @@ class SourceRef:
         return self.path + '#' + self.pointer
 
 
+def passage_key(source):
+    """Entry/document scope shared by typed assertions and prose evidence."""
+    if source.kind == 'text':
+        return source.path, source.pointer.rsplit('/english', 1)[0]
+    return source.path, source.pointer.rsplit('/' + source.kind + '/', 1)[0]
+
+
 @dataclass
 class Mention:
     handle: str

@@ -362,7 +362,7 @@ class ProbabilityModel:
             by_source.setdefault(assertion.source.key, set()).update(found)
             weights[assertion.source.key] = reliability(assertion.source, self.settings)
         for observation in observations:
-            if observation.source.kind != 'facts':
+            if observation.source.kind not in {'facts', 'text'}:
                 continue
             found = self.person_names(observation.text)
             found |= {self.names.key(person['name']) for identity, person in registry.items() if '[' + identity + ']' in observation.text}
@@ -387,7 +387,8 @@ class ProbabilityModel:
 
     @lru_cache(maxsize=None)
     def person_references(self, text):
-        return person_references(text)
+        recognizer = getattr(self.names, 'recognizer', None)
+        return recognizer.find(text) if recognizer else person_references(text)
 
     @lru_cache(maxsize=None)
     def person_names(self, text):

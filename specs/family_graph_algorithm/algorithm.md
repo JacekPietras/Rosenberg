@@ -27,6 +27,14 @@ Before validation or collection, the loader skips every document JSON marked
 case-insensitive match from `data/distinctFamilies.md`. Skipped documents add
 no facts, guesses, or prose observations to the reconstruction.
 
+For included documents, each entry's English text is scanned with the shared
+person-name lists and contributes contextual mentions, with provenance at the
+entry's `/english` pointer. This rule does not apply to books, notes, images,
+or other source types: their contextual name mentions continue to come from
+facts only. Prose mentions may support identity matching and contextual links,
+but never create family relationship assertions. See
+[document English recognition](person-name-text-migration.md).
+
 ## Terms
 
 - **Mention**: one typed participant (`person` or `of`) of one assertion, or a

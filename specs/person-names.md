@@ -5,10 +5,11 @@ Read this file when writing a person's name in `english` or in the text of
 `summary` are copied from the source and never changed.
 
 The shared recognition logic is
-[`docs/app/data/person-name-recognition.js`](../docs/app/data/person-name-recognition.js);
-its lists are `data/names.md`, `data/nobiliary_particles.md`,
+[`docs/app/data/person-name-recognition.js`](../docs/app/data/person-name-recognition.js)
+for the browser and `scripts/family_graph/person_names.py` for family graph
+prose. Both use the lists `data/names.md`, `data/nobiliary_particles.md`,
 `data/name-connectors.md`, `data/titles-age.md`, `data/titles-office.md`, and
-place variations. Look places up with
+place variations. Keep their behavior aligned. Look places up with
 `python3 scripts/list_place_variations.py` (`--include-churches` when relevant);
 `scripts/place_names.py` resolves building names against their settlements.
 Do not read `data/places.json` directly; it is very large.

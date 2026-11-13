@@ -231,7 +231,7 @@ writes it once; input changes during the build prevent the write.
 | Key | Content |
 | --- | --- |
 | `configuration` | `searchLimit`, the bound for registry diagnostics |
-| `inputs` | Path → fingerprint for every source JSON in books/documents/notes/images, `data/names.md`, `titles-age.md`, `titles-office.md`, `kinship.md`, `places.json`, `matching.json`, `distinctFamilies.md`, and the registry (IDs and names only). Scripts and the tree itself are not inputs. |
+| `inputs` | Path → fingerprint for every source JSON in books/documents/notes/images, `data/names.md`, `nobiliary_particles.md`, `name-connectors.md`, `titles-age.md`, `titles-office.md`, `kinship.md`, `places.json`, `matching.json`, `distinctFamilies.md`, and the registry (IDs and names only). Scripts and the tree itself are not inputs. |
 | `fingerprint` | Fingerprint of `inputs` |
 | `evidence` | Graph per view (`with-guesses`) |
 | `matchingBackground` | Per view, factual full-name counts and their weighted total |
@@ -241,9 +241,11 @@ A graph has `sources`, `nodes`, `relationships`, and `comparisons`.
 
 **Sources.** `sources` lists each reference once; elsewhere references are
 integer indexes into it (full objects are also accepted). A reference has
-exactly `path`, `pointer` (RFC 6901, ending in `/facts/N` or `/guesses/N`), and
-`fingerprint` of the assertion. A stale pointer is never relocated to another
-identical assertion.
+exactly `path`, `pointer` (RFC 6901, ending in `/facts/N`, `/guesses/N`, or a
+document entry's `/english` field), and `fingerprint` of the referenced
+assertion or text value. A stale pointer is never relocated to another
+identical assertion. English-text references are contextual evidence and do
+not support relationship assertions.
 
 **Nodes.** `key`, `name`, `titles`, `dates`, `status`, `identityProbability`,
 `mentions`, `identitySources`, optional `possiblySame`.
@@ -253,8 +255,9 @@ identical assertion.
 - `status`: `anchored` (registry person), `contextual` (several passages), or
   `source` (one passage).
 - `mentions[]`: `source`, `field` (`person`, `of`, or `text`), and the resolved
-  `date`. A `text` mention also has `reference`: a literal name from the fact
-  text or an `[id]` present in it. Each occurrence belongs to one node.
+  `date`. A `text` mention also has `reference`: a literal name recognized in
+  its fact text or document English field, or an `[id]` present in the text.
+  Each occurrence belongs to one node.
 - `identityProbability`: 0–1, the lowest membership confidence of the
   mentions; 1 for a registry person or a grouping within one source.
 - `possiblySame`: `[{key, probability}]`, tied or likely candidates not chosen.
