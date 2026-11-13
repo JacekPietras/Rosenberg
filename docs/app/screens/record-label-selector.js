@@ -37,10 +37,15 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
     const classifyButton = event.target.closest('[data-classify-document]');
     if (classifyButton) {
       const path = classifyButton.dataset.classifyDocument;
-      const status = classifyButton.closest('.document-heading-aside')?.querySelector('.record-classify-status');
       if (!state.canEditDocuments || !path.startsWith('data/documents/')) return;
-      classifyButton.disabled = true;
+      state.classifyingDocumentPaths ||= new Set();
+      if (state.classifyingDocumentPaths.has(path)) return;
+      state.classifiedDocumentPaths ||= new Set();
+      state.classifiedDocumentPaths.add(path);
+      state.classifyingDocumentPaths.add(path);
       const startedAt = Date.now();
+      let status;
+      let progressTimer;
       const showProgress = async () => {
         if (!status?.isConnected) return;
         try {
@@ -61,27 +66,30 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
           status.textContent = `Waiting for KEV… ${seconds}s elapsed`;
         }
       };
-      if (status) status.textContent = 'Starting KEV…';
-      const progressTimer = setInterval(showProgress, 1000);
-      showProgress();
       try {
+        await rerender();
+        const currentButton = [...document.querySelectorAll('[data-classify-document]')]
+          .find((button) => button.dataset.classifyDocument === path);
+        if (!currentButton) throw new Error('Document is no longer visible');
+        currentButton.disabled = true;
+        status = currentButton.closest('.document-heading-aside')?.querySelector('.record-classify-status');
+        if (status) status.textContent = 'Starting KEV…';
+        progressTimer = setInterval(showProgress, 1000);
+        showProgress();
         const response = await fetch('/api/classify-document', {
           method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path }),
         });
         const result = await response.json();
         if (!response.ok) throw new Error(result.error || `Classification failed (${response.status})`);
-        state.classifiedDocumentPaths ||= new Set();
-        state.classifiedDocumentPaths.add(path);
-        await rerender();
-        const updatedButton = [...document.querySelectorAll('[data-classify-document]')]
-          .find((button) => button.dataset.classifyDocument === path);
-        const updatedStatus = updatedButton?.closest('.document-heading-aside')?.querySelector('.record-classify-status');
-        if (updatedStatus) updatedStatus.textContent = result.result;
+        if (status?.isConnected) status.textContent = result.result;
       } catch (error) {
-        if (status) status.textContent = `Could not classify: ${error.message}`;
+        if (status?.isConnected) status.textContent = `Could not classify: ${error.message}`;
       } finally {
         clearInterval(progressTimer);
-        classifyButton.disabled = false;
+        state.classifyingDocumentPaths.delete(path);
+        const currentButton = [...document.querySelectorAll('[data-classify-document]')]
+          .find((button) => button.dataset.classifyDocument === path);
+        if (currentButton) currentButton.disabled = false;
       }
       return;
     }

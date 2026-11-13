@@ -41,7 +41,7 @@ or between the given names and the particle:
 | `zu <place>` | Optional second place, part of the name when the source attaches it to the person |
 | Name connector | `genannt`, `called`, `known as` and listed forms introduce a designation. In constructions such as `Eberhard genannt von Rosenberg`, the following `von Rosenberg` is the designation, not a surname component. |
 | Simple titles | Single title words and epithets from `data/titles-age.md` (`der Jüngere`, `der Ältere`) and `data/titles-office.md` (`Ritter`, `Vogt`, `der Rote`); the first form of a group is canonical |
-| Full titles | A simple title with an optional `zu <place>` or `an <place>`: `Vogt zu Lauda`, `Vizedom zu Amberg` (source `Vitzthum zu Amberg`); the place is canonical as in the Place row |
+| Full titles | A simple title with an optional `zu <place>` or `an <place>`: `Vogt zu Lauda`, `Vizedom zu Amberg` (source `Vitzthum zu Amberg`); listed places use the canonical form from the Place row. The recognizer may retain a one-word unlisted place in a recognized title, but it is not normalized; report it for the place list. |
 
 Canonical examples: `Konrad von Rosenberg`, `Konrad von Rosenberg der Ältere`,
 `Arnold von Uissigheim, Ritter`, `Eberhard von Rosenberg, Vogt zu Lauda`.

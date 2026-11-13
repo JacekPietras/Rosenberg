@@ -32,16 +32,18 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
     .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
   if (!names || !particles || !placeNames) return null;
   const romanOrdinal = '(?:\\s+(?:\\(\\s*[IVXLCDM]+\\s*\\)|\\[\\s*[IVXLCDM]+\\s*\\]|[IVXLCDM]+\\.?))?';
-  const titleMatch = titles ? `(?:${titles})(?:\\s+(?:zu|an|of)\\s+(?:${placeNames}))?` : '(?!)';
+  const titlePlace = `(?:${placeNames}|[\\p{L}][\\p{L}'’.-]*)`;
+  const titleMatch = titles ? `(?:${titles})(?:\\s+(?:zu|an|of)\\s+${titlePlace})?` : '(?!)';
   const titleSequence = titles ? `(?:[\\s,;]+${titleMatch})*` : '';
   const leadingTitles = titles ? `(?:${titleMatch}[\\s,]+)*` : '';
   const particle = `(?:${particles}|of)`;
   const placeClause = `(?:${placeNames})(?:\\s+(?:zu|an)\\s+(?:${placeNames}))?`;
   const suffixTitles = `(?:[\\s,;]+${titleMatch})*`;
+  const placeNote = '(?:\\s*\\([^)]*\\))?';
   const nameNote = '(?:\\s*\\(\\s*or\\s+[^)]*\\))?';
   const leadingConnector = connectors ? `(?:(?:${connectors})\\s+)?` : '';
   const namingConnector = connectors ? `(?:\\s+(?:${connectors}))?` : '';
-  return new RegExp(`(?<![\\p{L}\\p{N}])${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}[\\s,]+${particle}\\s+${placeClause}${suffixTitles}(?![\\p{L}\\p{N}])`, 'giu');
+  return new RegExp(`(?<![\\p{L}\\p{N}])${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}(?![\\p{L}\\p{N}])`, 'giu');
 }
 
 export function personRouteName(name, titleText = '', connectorText = '') {
@@ -57,5 +59,6 @@ export function personRouteName(name, titleText = '', connectorText = '') {
     .replace(/\s*\(\s*or\s+[^)]*\)/iu, '')
     .replace(new RegExp(`${ordinal}${titleSequence}[\\s,;]+(?=(?:von|v\\.?|van|de|in|der|die|das|des|of)\\b)`, 'iu'), ' ')
     .replace(new RegExp(`[\\s,;]+(?:${titles})(?:\\s+(?:zu|an|of)\\s+[^,;]+)?(?:[\\s,;]+(?:${titles})(?:\\s+(?:zu|an|of)\\s+[^,;]+)?)*$`, 'iu'), '')
+    .replace(/\s*\([^)]*\)$/u, '')
     .trim();
 }
