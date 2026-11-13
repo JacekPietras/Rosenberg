@@ -218,6 +218,23 @@ class Validator:
             if has_name_variation:
                 self.report(location, f'name {value!r} uses a variation; canonical form is {" ".join(canonical_parts)!r} (data/names.md and/or data/places.json)', 'warning' if canonical_parts[0] == parts[0] and surname_parts == canonical_parts[von_index + 1 if von_index is not None else 1:] else 'error')
 
+    def canonical_person_name(self, value):
+        """Return an unambiguous canonical name, preserving IDs and titles."""
+        if not self.nonblank(value) or value in self.person_ids or '_' in value:
+            return value
+        parts = value.split()
+        von_index = next((index for index, part in enumerate(parts) if part.casefold() == 'von'), None)
+        given_end = von_index if von_index is not None else min(1, len(parts))
+        for index in range(given_end):
+            parts[index] = self.given_name_variants.get(parts[index].casefold(), parts[index])
+        surname_start = von_index + 1 if von_index is not None else 1
+        if surname_start < len(parts):
+            surname = ' '.join(parts[surname_start:])
+            canonical = self.place_name_variants.get(surname.casefold())
+            if canonical:
+                parts[surname_start:] = canonical.split()
+        return ' '.join(parts)
+
     def check_titles(self, value, location):
         if not isinstance(value, list) or not value:
             self.report(location, 'expected a non-empty array of unique non-empty title strings; omit absent titles')
@@ -411,6 +428,12 @@ def clean_facts(path, validator):
             for field in ('facts', 'guesses'):
                 for fact in value.get(field, []) if isinstance(value.get(field), list) else []:
                     if isinstance(fact, dict):
+                        for participant in ('person', 'of'):
+                            name = fact.get(participant)
+                            canonical_name = validator.canonical_person_name(name)
+                            if canonical_name != name:
+                                fact[participant] = canonical_name
+                                print(f'{path}#/{field}/{participant}: fixed: {name!r} -> {canonical_name!r}')
                         if (fact.get('type') in ('spouse', 'sibling')
                                 and validator.gender(fact.get('person')) == 'woman'
                                 and validator.gender(fact.get('of')) == 'man'):
@@ -437,14 +460,14 @@ def clean_facts(path, validator):
             for child in value:
                 clean(child)
 
-    canonical = json.dumps(document, ensure_ascii=False, indent=2) + '\n'
+    canonical = json.dumps(document, ensure_ascii=False, indent=2) + ('\n' if original.endswith('\n') else '')
     clean(document)
     updated = json.dumps(document, ensure_ascii=False, indent=2) + '\n'
     if updated != canonical:
         if original != canonical:
             validator.report(path, 'cannot clean facts in nonstandard JSON formatting')
         else:
-            path.write_text(updated, encoding='utf-8')
+            path.write_text(updated.rstrip('\n') + ('\n' if original.endswith('\n') else ''), encoding='utf-8')
 
 
 def main(argv=None):
