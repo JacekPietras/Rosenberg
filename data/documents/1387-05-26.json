@@ -28,10 +28,10 @@
             "Edelknecht"
           ],
           "type": "spouse",
-          "of": "else_wife_of_arnold"
+          "of": "Elisabeth"
         },
         {
-          "person": "else_wife_of_arnold",
+          "person": "Elisabeth",
           "type": "generic",
           "content": "joined her husband [arnold_brother_of_vogt_zu_Lauda] in selling their share of Boxberg to his brother [vogt_zu_Lauda]."
         },

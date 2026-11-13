@@ -225,6 +225,45 @@ test('document facts inherit the entry or document date while explicit fact date
   assert.equal(doc.entries[0].facts[0].person, 'A');
 });
 
+test('review label propositions merge nearby date ranges but keep distant periods separate', () => {
+  const documents = new Map([
+    ['data/documents/review.json', { label: 'to review', entries: [{ english: 'Alice appears.' }] }],
+    ['data/documents/a.json', { date: '1200', label: 'Franken', entries: [{ english: 'Alice appears.' }] }],
+    ['data/documents/b.json', { date: '1205-1220', label: 'Franken', entries: [{ english: 'Alice appears.' }] }],
+    ['data/documents/c.json', { date: '1150-1180', label: 'Franken', entries: [{ english: 'Alice appears.' }] }],
+    ['data/documents/d.json', { date: '1662', label: 'Franken', entries: [{ english: 'Alice appears.' }] }],
+  ]);
+  const { renderDocument } = createDocumentRenderer({
+    state: { documents, sourcePersonPattern: /Alice/g, personPattern: [], personNameTitlesText: '', canEditDocuments: false },
+    escapeHtml, inlineMarkup: escapeHtml, languageMarkup: () => '', formatDate: (date) => date, documentTitle: () => 'Document', documentYear: () => '',
+    distinctFamilies: new Set(), getPeople: () => [], entryAnchor: () => '',
+  });
+  const html = renderDocument(documents.get('data/documents/review.json'), 'data/documents/review.json', 0);
+  assert.match(html, /class="record-label">Franken \[1150-1180\]/);
+  assert.match(html, /class="record-label">Franken \[1200-1220\]/);
+  assert.match(html, /class="record-label">Franken \[1662\]/);
+});
+
+test('review label propositions omit periods over 50 years away and retain the existing opacity rule', () => {
+  const documents = new Map([
+    ['data/documents/review.json', { date: '1300', label: 'to review', entries: [{ english: 'Alice appears.' }] }],
+    ['data/documents/full.json', { date: '1295', label: 'Full', entries: [{ english: 'Alice appears.' }] }],
+    ['data/documents/near.json', { date: '1289', label: 'Nearby', entries: [{ english: 'Alice appears.' }] }],
+    ['data/documents/cutoff.json', { date: '1250', label: 'Cutoff', entries: [{ english: 'Alice appears.' }] }],
+    ['data/documents/far.json', { date: '1249', label: 'Far', entries: [{ english: 'Alice appears.' }] }],
+  ]);
+  const { renderDocument } = createDocumentRenderer({
+    state: { documents, sourcePersonPattern: /Alice/g, personPattern: [], personNameTitlesText: '', canEditDocuments: false },
+    escapeHtml, inlineMarkup: escapeHtml, languageMarkup: () => '', formatDate: (date) => date, documentTitle: () => 'Document', documentYear: () => '',
+    distinctFamilies: new Set(), getPeople: () => [], entryAnchor: () => '',
+  });
+  const html = renderDocument(documents.get('data/documents/review.json'), 'data/documents/review.json', 0);
+  assert.match(html, /class="record-label">Full \[1295\]/);
+  assert.match(html, /class="record-label is-outside-document-date">Nearby \[1289\]/);
+  assert.match(html, /class="record-label is-outside-document-date">Cutoff \[1250\]/);
+  assert.doesNotMatch(html, /Far/);
+});
+
 test('a book publication date is not used as a fact date', () => {
   const { renderDocument } = createDocumentRenderer({
     state: { showFacts: true }, escapeHtml, formatDate: (date) => date, ...options,

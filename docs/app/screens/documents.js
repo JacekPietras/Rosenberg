@@ -112,18 +112,42 @@ export function createDocumentRenderer({
         if (otherPath === path) continue;
         const years = documentYearBounds(otherDoc.date);
         for (const label of labelsForMentionedDocument(otherDoc)) {
-          const range = labelsByName.get(key).get(label) || { start: Infinity, end: -Infinity };
-          if (years) { range.start = Math.min(range.start, years[0]); range.end = Math.max(range.end, years[1]); }
+          const range = labelsByName.get(key).get(label) || { intervals: [], hasUnknownDate: false };
+          if (years) range.intervals.push(years);
+          else range.hasUnknownDate = true;
           labelsByName.get(key).set(label, range);
         }
       }
     }
     const rows = [...people].map(([key, name]) => {
-      const labels = [...labelsByName.get(key)].sort(([left], [right]) => left.localeCompare(right, undefined, { sensitivity: 'base' }));
-      return labels.length ? `<div class="review-name-label-row"><span class="review-name">${escapeHtml(name)}</span><span class="review-name-labels">${labels.map(([label, range]) => {
-        const years = Number.isFinite(range.start) ? range.start === range.end ? `${range.start}` : `${range.start}-${range.end}` : '';
-        const outsideDate = documentYears && Number.isFinite(range.start)
-          && (range.end < documentYears[0] - 10 || range.start > documentYears[1] + 10);
+      const labels = [...labelsByName.get(key)]
+        .flatMap(([label, range]) => {
+          const intervals = range.intervals.sort((left, right) => left[0] - right[0] || left[1] - right[1])
+            .reduce((merged, interval) => {
+              const previous = merged.at(-1);
+              if (previous && interval[0] - previous[1] <= 10) previous[1] = Math.max(previous[1], interval[1]);
+              else merged.push([...interval]);
+              return merged;
+            }, []);
+          const visibleIntervals = intervals.filter(([start, end]) => {
+            if (!documentYears) return true;
+            const distance = end < documentYears[0]
+              ? documentYears[0] - end
+              : start > documentYears[1] ? start - documentYears[1] : 0;
+            return distance <= 50;
+          });
+          const chips = visibleIntervals.map(([start, end]) => {
+            const distance = !documentYears ? 0 : end < documentYears[0]
+              ? documentYears[0] - end
+              : start > documentYears[1] ? start - documentYears[1] : 0;
+            return { label, years: start === end ? `${start}` : `${start}-${end}`, outsideDate: distance > 10 };
+          });
+          if (range.hasUnknownDate) chips.push({ label, years: '', outsideDate: false });
+          return chips;
+        })
+        .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: 'base' })
+          || left.years.localeCompare(right.years, undefined, { numeric: true }));
+      return labels.length ? `<div class="review-name-label-row"><span class="review-name">${escapeHtml(name)}</span><span class="review-name-labels">${labels.map(({ label, years, outsideDate }) => {
         return `<span class="record-label${outsideDate ? ' is-outside-document-date' : ''}">${escapeHtml(label)}${years ? ` [${years}]` : ''}</span>`;
       }).join('')}</span></div>` : '';
     }).filter(Boolean);

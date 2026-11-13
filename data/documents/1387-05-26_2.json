@@ -28,10 +28,10 @@
             "Edelknecht"
           ],
           "type": "spouse",
-          "of": "else_wife_of_arnold"
+          "of": "Elisabeth"
         },
         {
-          "person": "else_wife_of_arnold",
+          "person": "Elisabeth",
           "type": "generic",
           "content": "joined her husband [arnold_brother_of_vogt_zu_Lauda] in selling their share of Boxberg to [vogt_zu_Lauda]."
         },
@@ -46,7 +46,7 @@
         {
           "person": "vogt_zu_Lauda",
           "type": "kin",
-          "of": "else_wife_of_arnold",
+          "of": "Elisabeth",
           "term": "Schwager"
         },
         {
@@ -89,7 +89,7 @@
             "Edelknecht"
           ],
           "type": "generic",
-          "content": "sold, with his wife [else_wife_of_arnold], their share of Boxberg to his brother and brother-in-law [vogt_zu_Lauda]."
+          "content": "sold, with his wife Elisabeth, their share of Boxberg to his brother and brother-in-law [vogt_zu_Lauda]."
         }
       ],
       "img": [
