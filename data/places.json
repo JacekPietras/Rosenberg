@@ -1379,5 +1379,144 @@
     "category": "village",
     "lat": 49.6658,
     "lon": 10.1471
+  },
+  {
+    "id": "michelsberg",
+    "variations": [
+      "Michelsberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "frankenau",
+    "variations": [
+      "Frankenau",
+      "Frankenowe"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "lissberg",
+    "variations": [
+      "Lißberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "meissen",
+    "variations": [
+      "Meißen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "riedern",
+    "variations": [
+      "Riedern",
+      "Ryederen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "ramschwag",
+    "variations": [
+      "Ramschwag"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "schwarzburg",
+    "variations": [
+      "Schwarzburg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "leuchtenberg",
+    "variations": [
+      "Leuchtenberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "helmstadt",
+    "variations": [
+      "Helmstadt",
+      "Helmstat",
+      "Helmstatt"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "neuhaus",
+    "variations": [
+      "Neuhaus"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "zwingenstein",
+    "variations": [
+      "Zwingenstein"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "biberbach",
+    "variations": [
+      "Biberbach"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "mengershausen",
+    "variations": [
+      "Mengershausen",
+      "Mengerkusen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "wart",
+    "variations": [
+      "Wart"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "landstein",
+    "variations": [
+      "Landstein"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "muenchusen",
+    "variations": [
+      "Münchusen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "harrach",
+    "variations": [
+      "Harrach"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "gemmingen",
+    "variations": [
+      "Gemmingen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "michelfeld",
+    "variations": [
+      "Michelfeld",
+      "Michelfelt"
+    ],
+    "showOnMap": false
   }
 ]

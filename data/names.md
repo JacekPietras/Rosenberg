@@ -118,6 +118,7 @@ Anna, Anne
 Barbara
 Brigitta
 Christiana, Christina, Christine
+Clais
 Dorothea
 Ela
 Elchana
