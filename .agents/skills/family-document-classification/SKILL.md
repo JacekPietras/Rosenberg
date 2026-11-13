@@ -9,10 +9,10 @@ Use when asked which Rosenberg family a document concerns, including requests na
 
 ## Locate and assess the document
 
-1. Resolve the supplied filename under `data/documents/`, or find the document entry whose `source` exactly matches the supplied reference. If there are multiple matches, identify the relevant record from its text and citation; if the target remains ambiguous, report the candidates without editing.
-2. Read the complete record: date, place, every entry's source, German or Latin text, English text, summary, and relevant image/seal annotations. Prefer the original German/Latin evidence over summaries and translations.
+1. Resolve the supplied filename under `data/documents/`, or find document entries whose `source` contains the supplied exact citation. `source` may be a string or an array; compare against each citation string. If multiple documents match, identify the target from its text and citation; if it remains ambiguous, report the candidates without editing.
+2. Read the complete record: date, place, every entry's source, German or Latin text, English text, summary, and relevant image/seal annotations. Prefer original German/Latin text over summaries and translations. Some records contain only an archival abstract/regest; use it as the available evidence, but say that the classification rests on the abstract rather than a full transcription.
 3. Read `data/books/ai_2026.json` for the project's descriptions, estates, and notable members of the competing Rosenberg families. Read `data/distinctFamilies.md` for the permitted distinct-family labels. `Franken` is the label for the Bauland/Odenwald von Rosenberg family.
-4. Search other documents for the named people, places, titles, offices, and distinctive transactions. Use those records to follow recurring associations and disambiguate same-name families. Search books and notes too when useful. Do not treat another record's label as evidence for its classification.
+4. Search other documents for the named people, places, titles, offices, and distinctive transactions. Use those records to follow recurring associations and disambiguate same-name people and places; compare chronology and relationships rather than matching names alone. Search books and notes too when useful. Do not treat another record's label as evidence for its classification.
 5. Search the web for notable people or places when external historical context could distinguish candidates. Prefer reliable archival, scholarly, or official sources; cite links in the report. Web evidence is corroboration and must not override the document's own explicit evidence without explanation.
 
 ## Choose a family
@@ -22,7 +22,9 @@ Compare the document's people, chronology, places, roles, and relationships with
 Choose one label:
 
 - `Franken` for the Bauland/Odenwald von Rosenberg family.
-- For another family, use its family label from `data/distinctFamilies.md` (preserving the established readable capitalization, such as `Schenk` or `Mönch`). Use the corresponding family description in `ai_2026.json` to map records to that label.
+- For another family, use its family label from `data/distinctFamilies.md` (preserving readable capitalization, such as `Schenk`, `Mönch`, `Czechia`, or `Sulzbach`). Use `ai_2026.json` to map the identified family to the permitted label. Some labels intentionally cover multiple families: for example, `Sulzbach` covers the Lengenfelders, Raydenbach, Voit, and Wirt groups. Identify the specific group when the evidence allows, but use the shared permitted label in the proposal.
+
+Classify the family whose affairs the document most directly records, not automatically every family or person mentioned. If two permitted families are equally central and the document does not support choosing one, report the ambiguity and leave the record unchanged. A place name or castle name alone does not establish which family is involved; use evidence linking it to the family.
 
 If the evidence does not support a family from the permitted set, do not invent a label. Explain the ambiguity or mismatch and leave the record unchanged.
 
