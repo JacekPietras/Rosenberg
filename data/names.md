@@ -163,3 +163,4 @@ Lengenfelder, Lengenfelderin, Lengenfeld, Lengenvelder, Lengfeld
 Voit, Voith, Voyt
 Raydenbach
 Stieber, Stiebar
+Kemnater, Kempnater
