@@ -74,7 +74,7 @@ Reichard, Reichart, Richard
 Reinbot
 Reinhard, Reinhart
 Rüdiger, Rüdger
-Rudolf, Rudolph
+Rudolf, Rudolph, Ruodolf
 Ruprecht, Rupert, Rupertus
 Sebastian
 Seibott
