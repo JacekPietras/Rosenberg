@@ -1530,5 +1530,18 @@
       "Ballenburg"
     ],
     "showOnMap": false
+  },
+  {
+    "id": "bischofsheim",
+    "variations": [
+      "Bischofsheim",
+      "Biſchofsheim",
+      "Tauberbischofsheim",
+      "Tauber-Bischofsheim",
+      "[Tauber] Bischofsheim",
+      "[Tauber-]Bischofsheim",
+      "(Tauber-)Bischofsheim"
+    ],
+    "showOnMap": false
   }
 ]
