@@ -9,6 +9,12 @@ function alternatives(values) {
     .join('|');
 }
 
+export function personMentionClass(name) {
+  return /\b(?:Rosenberg|Uissigheim)\b/iu.test(name)
+    ? 'person-mention-blue'
+    : 'person-mention';
+}
+
 export function parsePersonNameTitles(markdown = '') {
   return String(markdown).split(/\r?\n/)
     .filter((line) => !line.trim().startsWith('#'))

@@ -5,7 +5,7 @@ description: Create or review the English translation of a historical document J
 
 # Document translation
 
-Use this skill when asked to translate or review the `english` field of a JSON document under `data/`, for example `1257-01-10_2.json`.
+Use this skill when asked to translate or review the `english` field of a JSON document under `data/`. The user may identify the document by filename (for example, `1257-01-10_2.json`) or by a source citation (for example, `[RI VII] H. 3 n. 3`). When given a citation, search the document entries' `source` fields to locate the matching entry; do not require a filename in the request.
 
 ## Before editing
 
@@ -26,7 +26,7 @@ Keep this place registry maintenance separate from translation: do not rewrite e
 - Write clear, faithful English that preserves the source's claims, qualifications, relationships, names, dates, titles, and meaningful distinctions. Medieval German and Latin may use historical senses or constructions; interpret them in context and do not modernize away their meaning.
 - If `english` is missing, add it to the corresponding entry. If present, review it against the source and correct omissions, mistranslations, or unnecessary literal phrasing. Preserve paragraphing, lists, and other meaningful structure.
 - Keep `german`, `latin`, `summary`, citations, URLs, facts, labels, and all unrelated fields unchanged. Do not add facts or infer historical details that the text does not support.
-- Follow the text-formatting rules in `json-formats.md`, including backticks around source passages intended to display in Fraktur. In the translation, omit redundant spelling variants and editorial spelling parentheses already preserved in the source.
+- Follow the text-formatting rules in `json-formats.md`, including backticks around source passages intended to display in Fraktur. Before finalizing, compare every parenthetical in the translation with the source: omit spelling variants and editorial spelling notes that the source already records, while retaining parentheses only when they carry substantive meaning needed in English. For example, source `Hermann von Lißberg (Lys-)` becomes `Hermann von Lißberg`; do not copy `(Lys-)` into the translation. Also omit unexplained editorial reference markers such as superscript footnote numbers when the corresponding notes are not included in the entry. Do not carry over parenthetical clause numbers used only to enumerate an archival abstract or regest; express the content as clean connected prose while preserving substantive numbers, dates, and quantities.
 - Follow `person-names.md`: retain particles and name-attached titles in German, normalize only clear listed name variants, and place titles in their canonical position. Translate an office or occupation when it is used descriptively in the sentence rather than attached as part of a person's name.
 - When the source clearly refers to two distinct people with exactly the same name and their relationship establishes an older/younger distinction (for example, father and son), distinguish the relevant mentions as `der Ältere` and `der Jüngere`. Apply the distinction consistently wherever needed to make the English translation clear. Do not add either designation based only on a shared name or an uncertain relationship; preserve the ambiguity if the source does not establish which person is older.
 

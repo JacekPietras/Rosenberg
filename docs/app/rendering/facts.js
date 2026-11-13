@@ -1,4 +1,5 @@
 import { escapeHtml } from './html.js';
+import { personMentionClass } from '../data/person-name-recognition.js?v=5';
 
 const RELATIONS = { parent: 'is parent of', sibling: 'is sibling of', spouse: 'is spouse of' };
 const hasDate = (value) => value && typeof value === 'object' && Object.hasOwn(value, 'date');
@@ -77,7 +78,8 @@ export function renderFactText(fact, { people = [], personNames = [], inlineMark
       const person = peopleById.get(value);
       const name = person?.name || String(value || '');
       const title = titles(designations);
-      return `<a class="person-link${person?.id ? ' person-id-link' : ''}" href="?person=${encodeURIComponent(person?.id || name)}">${escapeHtml(name)}</a>${title ? `, ${escapeHtml(title)}` : ''}`;
+      const mentionClass = person?.id ? 'person-id-link' : personMentionClass(name);
+      return `<a class="person-link ${mentionClass}" href="?person=${encodeURIComponent(person?.id || name)}">${escapeHtml(name)}</a>${title ? `, ${escapeHtml(title)}` : ''}`;
     }, (value) => inlineMarkup ? inlineMarkup(String(value ?? '')) : escapeHtml(value));
   }
   return '';

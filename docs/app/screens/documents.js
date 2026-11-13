@@ -1,6 +1,6 @@
-import { factDate } from '../rendering/facts.js?v=8';
+import { factDate } from '../rendering/facts.js?v=9';
 import { dateSortValue } from '../rendering/dates.js';
-import { renderFactsView } from '../components/facts_view.js?v=8';
+import { renderFactsView } from '../components/facts_view.js?v=9';
 import { personRouteName } from '../data/person-name-recognition.js?v=4';
 
 export function createDocumentRenderer({

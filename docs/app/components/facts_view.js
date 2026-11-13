@@ -1,4 +1,4 @@
-import { renderFactText, factDate, isTypedFact } from '../rendering/facts.js?v=8';
+import { renderFactText, factDate, isTypedFact } from '../rendering/facts.js?v=9';
 import { formatDate } from '../rendering/dates.js';
 import { escapeHtml } from '../rendering/html.js';
 
