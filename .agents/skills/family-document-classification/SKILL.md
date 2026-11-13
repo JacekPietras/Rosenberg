@@ -19,6 +19,12 @@ Use when asked which Rosenberg family a document concerns, including requests na
 
 Compare the document's people, chronology, places, roles, and relationships with the descriptions and evidence above. A shared surname or a place called Rosenberg alone is not enough. Account for direct interactions: a record can concern a family even when its principal parties are not members, if its contents directly document that family's estate, rights, or affairs. Keep evidence from separate same-named families distinct.
 
+### Shared regions and overlapping place evidence
+
+Several distinct families appear in the same broad regions, so regional presence narrows the candidates but does not identify a family by itself. The Bauland/Odenwald von Rosenbergs (`Franken`) and the Mönch von Rosenbergs both have Bauland/Odenwald associations. The Schenk von Rosenbergs belong to the wider Franconian/Würzburg area, but their Roßberg/Schenkenschloss and office or service evidence distinguish them. The Lengenfelder, Raydenbach, Voit, and Wirt groups are all associated with Rosenberg near Sulzbach; Odenwald/Franken Rosenbergs can also appear in Sulzbach records, so do not assign `Sulzbach` based on the place alone. Use the specific people, chronology, titles, offices, and transaction to distinguish them.
+
+The Brandenburg entries also cover distinct groups: early lords of Rosenburg, Querfurt, Barby, and Bredow-associated regional Rosenberg bearers. A Brandenburg place or Rosenburg reference does not establish continuity among them. The South Bohemian Rožmberks (`Czechia`) held lands in the Austrian Mühlviertel, while the Orsini-Rosenberg and Kamptal families are separate Austrian houses; an Austria/Czechia setting alone does not decide among these. Use the entry-specific people and historical context in `ai_2026.json`.
+
 Choose one label:
 
 - `Franken` for the Bauland/Odenwald von Rosenberg family.
