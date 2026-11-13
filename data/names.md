@@ -9,6 +9,7 @@ Anselm, Anshelm
 Anton
 Andreas
 Aplo
+Asinus
 Arnold, Arnolt
 Balthasar
 Batt
@@ -18,6 +19,7 @@ Berthold, Bertold, Bertolt, Betzmann
 Burkhard
 Caspar, Kaspar, Caſpar
 Christoph, Chriftoph, Christpoh
+Cornelius, Cornelis
 Diether, Dieter
 Dietrich
 Dietzel
@@ -33,7 +35,7 @@ Franz, Franziskus
 Friedmann
 Friedrich, Friderich, Fridrich, Fridericus, Friderici, Friderico, Fritz, Fritze, Friz, Frize, Frederick, Fridereich
 Frizo
-Georg, Gorg, Jörg, Jorge, Jorg
+Georg, Gorg, Jörg, Jorge, Jorg, Jorgen
 Gerhard, Gerhardus
 Gotfried, Godefrid, Gottfried
 Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
@@ -43,7 +45,7 @@ Hartmut
 Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus, Henricus, Hainrich, Heinrici, Heinrico, Hendrici, Jindrich, Heintz
 Herbord
 Herman, Hermann
-Hieronymus, Jheronimus
+Hieronymus, Jheronimus, Jeronimus
 Jakob, Jacob
 Joachim
 Jost
@@ -58,13 +60,14 @@ Leopold, Lupold, Luppold
 Lorenz
 Ludwig, Ludewig
 Lutz
+Lionhart
 Mangold
 Marquard
 Martin
 Marx
 Mathern
 Melchior
-Michael , Michel
+Michael, Michel, Micheln
 Nicolaus, Nicholas, Niklaus, Nikolaus, Claus
 Niklas, Nyclos, Niclas
 Otto
@@ -82,7 +85,7 @@ Sebastian
 Seibott
 Senant, Synant
 Siboto
-Siegfried
+Siegfried, Sifridt, Seyfried, Seifried, Sifrid
 Siegmund, Sigmund, Siegemund, Sigismund
 Stephan, Stefan
 Thame
@@ -95,7 +98,7 @@ Weigrecht
 Wenceslaus, Wenzel
 Wernher
 Wilhelm, Wilhem
-Wiprecht, Wibrecht, Wynprecht, Wyprecht, Wipert, Welprecht
+Wiprecht, Wibrecht, Wynprecht, Wyprecht, Wipert, Welprecht, Wipprecht
 Wok, Woko, Witiko, Bocho, Wocco, Wocho, Vok
 Wolf, Wolff
 Wolfgang
