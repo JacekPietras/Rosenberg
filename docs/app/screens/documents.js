@@ -123,7 +123,7 @@ export function createDocumentRenderer({
       return labels.length ? `<div class="review-name-label-row"><span class="review-name">${escapeHtml(name)}</span><span class="review-name-labels">${labels.map(([label, range]) => {
         const years = Number.isFinite(range.start) ? range.start === range.end ? `${range.start}` : `${range.start}-${range.end}` : '';
         const outsideDate = documentYears && Number.isFinite(range.start)
-          && (range.end < documentYears[0] || range.start > documentYears[1]);
+          && (range.end < documentYears[0] - 10 || range.start > documentYears[1] + 10);
         return `<span class="record-label${outsideDate ? ' is-outside-document-date' : ''}">${escapeHtml(label)}${years ? ` [${years}]` : ''}</span>`;
       }).join('')}</span></div>` : '';
     }).filter(Boolean);
