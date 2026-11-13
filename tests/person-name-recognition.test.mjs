@@ -4,9 +4,9 @@ import test from 'node:test';
 import { moduleUrl } from './browser-module.mjs';
 
 const { buildSourcePersonPattern, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
-const names = '# Men\nArnold, Arnolt\nKonrad, Conradus\nEberhard\nEbirhart\nHartmut\nJohann\nWilhelm';
+const names = '# Men\nArnold, Arnolt\nKonrad, Conradus\nEberhard\nEbirhart\nHartmut\nHans\nJohann\nWilhelm\nWiprecht';
 const particles = 'von\nv.\nvon.\nde\nan\nvan';
-const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }];
+const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }, { name: 'Michelsberg', variations: ['Michelsberg'] }, { name: 'Landstein', variations: ['Landstein'] }, { name: 'Helmstadt', variations: ['Helmstadt'] }];
 const titles = '# Younger\nder Jüngere, the Younger\nder Junge\n# Older\nder Ältere, the Elder, the Older\nder Alte\n# Offices and ranks\nAmtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman\nRitter, Ritters, miles, Knight\nVogt, advocatus\nVizedom, Vitzthum, Vizthum, Vitztum, Vizdom\nder Rote, Rufus';
 const connectors = await readFile(new URL('../data/name-connectors.md', import.meta.url), 'utf8');
 const pattern = buildSourcePersonPattern(names, particles, places, titles, connectors);
@@ -105,6 +105,24 @@ test('does not attach the previous list item title to the next person across a s
   assert.deepEqual([...sentence.matchAll(pattern)].map((match) => match[0]), [
     'Wilhelm von Thüngen, Ritter',
     'Arnold von Rosenberg the Elder'
+  ]);
+});
+
+test('recognizes separate people around a parenthetical passage', () => {
+  pattern.lastIndex = 0;
+  const sentence = 'Campaign against the lords of Rosenberg and Hans von Michelsberg (who had become entangled in a feud with Wilhelm von Landstein and the Austrian lords of Walsee and Buchheim) and their subjugation';
+  assert.deepEqual([...sentence.matchAll(pattern)].map((match) => match[0]), [
+    'Hans von Michelsberg',
+    'Wilhelm von Landstein'
+  ]);
+});
+
+test('does not attach a preceding comma-separated office title to the next name', () => {
+  pattern.lastIndex = 0;
+  const sentence = 'namely Graf Emicho von Leiningen, the black Reinhard von Sickingen, Konrad von Rosenberg, (all?) Hofmeister, Schwicker von Sickingen, Vogt zu Bretten, Wiprecht von Helmstadt der Jüngere, Siegfried von Vennigen, all Ritter,';
+  assert.deepEqual([...sentence.matchAll(pattern)].map((match) => match[0]), [
+    'Konrad von Rosenberg',
+    'Wiprecht von Helmstadt der Jüngere'
   ]);
 });
 

@@ -35,11 +35,11 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const titlePlace = `(?:${placeNames}|[\\p{L}][\\p{L}'’.-]*)`;
   const titleMatch = titles ? `(?:${titles})(?:\\s+(?:zu|an|of)\\s+${titlePlace})?` : '(?!)';
   const titleSequence = titles ? `(?:[\\s,;]+${titleMatch})*` : '';
-  const leadingTitles = titles ? `(?:${titleMatch}[\\s,]+)*` : '';
+  const leadingTitles = titles ? `(?:${titleMatch}\\s+)*` : '';
   const particle = `(?:${particles}|of)`;
   const placeClause = `(?:${placeNames})(?:\\s+(?:zu|an)\\s+(?:${placeNames}))?`;
   const suffixTitles = `(?:[\\s,;]+${titleMatch})*`;
-  const placeNote = '(?:\\s*\\([^)]*\\))?';
+  const placeNote = '(?:\\s*\\(-?[\\p{L}\\p{N}]+-?\\))?';
   const nameNote = '(?:\\s*\\(\\s*or\\s+[^)]*\\))?';
   const leadingConnector = connectors ? `(?:(?:${connectors})\\s+)?` : '';
   const namingConnector = connectors ? `(?:\\s+(?:${connectors}))?` : '';
