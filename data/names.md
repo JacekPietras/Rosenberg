@@ -30,7 +30,7 @@ Erkinger
 Ernst
 Franz, Franziskus
 Friedmann
-Friedrich, Friderich, Fridrich, Fridericus, Friderici, Friderico, Fritz, Fritze, Friz, Frize, Frederick
+Friedrich, Friderich, Fridrich, Fridericus, Friderici, Friderico, Fritz, Fritze, Friz, Frize, Frederick, Fridereich
 Frizo
 Georg, Gorg, Jörg, Jorge
 Gerhard, Gerhardus
