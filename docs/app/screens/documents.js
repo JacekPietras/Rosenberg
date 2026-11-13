@@ -104,6 +104,7 @@ export function createDocumentRenderer({
     if (!reviewLabels.some((label) => String(label || '').trim().toLocaleLowerCase() === 'to review')) return '';
     const index = documentMentionIndex();
     const people = index.get(path) || personMentions(doc);
+    const documentYears = documentYearBounds(doc.date);
     if (!people.size) return '';
     const labelsByName = new Map([...people.keys()].map((key) => [key, new Map()]));
     for (const key of people.keys()) {
@@ -121,7 +122,9 @@ export function createDocumentRenderer({
       const labels = [...labelsByName.get(key)].sort(([left], [right]) => left.localeCompare(right, undefined, { sensitivity: 'base' }));
       return labels.length ? `<div class="review-name-label-row"><span class="review-name">${escapeHtml(name)}</span><span class="review-name-labels">${labels.map(([label, range]) => {
         const years = Number.isFinite(range.start) ? range.start === range.end ? `${range.start}` : `${range.start}-${range.end}` : '';
-        return `<span class="record-label">${escapeHtml(label)}${years ? ` [${years}]` : ''}</span>`;
+        const outsideDate = documentYears && Number.isFinite(range.start)
+          && (range.end < documentYears[0] || range.start > documentYears[1]);
+        return `<span class="record-label${outsideDate ? ' is-outside-document-date' : ''}">${escapeHtml(label)}${years ? ` [${years}]` : ''}</span>`;
       }).join('')}</span></div>` : '';
     }).filter(Boolean);
     return rows.length ? `<div class="review-name-mentions" aria-label="Labels in other documents where names are mentioned">${rows.join('')}</div>` : '';
