@@ -22,20 +22,36 @@ def normalize(path):
 
     places = json.loads(original, object_pairs_hook=reject_duplicates)
     canonical = json.dumps(places, ensure_ascii=False, indent=2) + "\n"
-    count = 0
+    normalized_variations = 0
+    normalized_hidden = 0
     for place in places:
-        if isinstance(place, dict) and place.get("showOnMap") is False:
+        if not isinstance(place, dict):
+            continue
+        variations = place.get("variations")
+        if isinstance(variations, list):
+            seen = set()
+            unique = []
+            for variation in variations:
+                key = " ".join(variation.split()).casefold() if isinstance(variation, str) else None
+                if key is not None and key in seen:
+                    normalized_variations += 1
+                    continue
+                if key is not None:
+                    seen.add(key)
+                unique.append(variation)
+            place["variations"] = unique
+        if place.get("showOnMap") is False:
             removed = False
             for field in ("lat", "lon", "category"):
                 if field in place:
                     del place[field]
                     removed = True
-            count += removed
-    if count:
+            normalized_hidden += removed
+    if normalized_variations or normalized_hidden:
         if original != canonical:
             raise ValueError(f"{path}: nonstandard JSON formatting; refusing to reformat")
         path.write_text(json.dumps(places, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return count
+    return normalized_variations, normalized_hidden
 
 
 def visible_place_errors(places):
@@ -86,7 +102,9 @@ def duplicate_place_ids(places):
 
 if __name__ == "__main__":
     path = ROOT / "data" / "places.json"
-    print(f"Normalized {normalize(path)} hidden place(s).")
+    variations, hidden = normalize(path)
+    print(f"Removed {variations} duplicate place variation(s).")
+    print(f"Normalized {hidden} hidden place(s).")
     errors = visible_place_errors(json.loads(path.read_text(encoding="utf-8")))
     conflicts = variation_conflicts(json.loads(path.read_text(encoding="utf-8")))
     duplicate_ids = duplicate_place_ids(json.loads(path.read_text(encoding="utf-8")))

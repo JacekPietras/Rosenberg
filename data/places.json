@@ -4,7 +4,6 @@
       "Uissigheim",
       "Ussigheim",
       "Ußinkeim",
-      "Ussinkeim",
       "Uzzinchein",
       "Ussekein",
       "Vssenkeym",
@@ -101,13 +100,11 @@
       "Rossenberg",
       "Rosenbürgk",
       "Rosenbergs",
-      "Roßenberg",
       "Rosenberch",
       "Rosemberch",
       "Rosenburgk",
       "Rossberg",
       "Rusenberg",
-      "Roßberg",
       "Rosperg",
       "Rosenperg",
       "Rosenbergk",
@@ -1345,8 +1342,7 @@
     "category": "village",
     "variations": [
       "Esselbach",
-      "Espelbach",
-      "Eßelbach"
+      "Espelbach"
     ],
     "lat": 49.855278,
     "lon": 9.525833
@@ -1558,6 +1554,20 @@
     "showOnMap": false
   },
   {
+    "id": "limpurg",
+    "variations": [
+      "Limpurg",
+      "Lympurg",
+      "Limperg",
+      "Limpburg",
+      "Lymburg",
+      "Lynburg",
+      "Limburg",
+      "Limpurc"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "ballenberg",
     "variations": [
       "Ballenberg",
@@ -1701,8 +1711,7 @@
   {
     "id": "lichtenstein",
     "variations": [
-      "Lichtenstein",
-      "Lichtenſtein"
+      "Lichtenstein"
     ],
     "showOnMap": false
   },
@@ -1744,7 +1753,6 @@
     "id": "bischofsheim",
     "variations": [
       "Bischofsheim",
-      "Biſchofsheim",
       "Tauberbischofsheim",
       "Tauber-Bischofsheim",
       "[Tauber] Bischofsheim",
