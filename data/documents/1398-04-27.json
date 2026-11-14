@@ -18,7 +18,9 @@
           ],
           "type": "spouse",
           "of": "Elisabeth Rosenberg",
-          "ofTitle": "née Marschalk von Pappenheim"
+          "ofTitle": [
+            "née Marschalk von Pappenheim"
+          ]
         }
       ]
     }
