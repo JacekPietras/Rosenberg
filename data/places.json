@@ -1532,6 +1532,14 @@
     "showOnMap": false
   },
   {
+    "id": "schaunberg",
+    "variations": [
+      "Schaunberg",
+      "Schawnberg"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "bischofsheim",
     "variations": [
       "Bischofsheim",
