@@ -101,7 +101,7 @@ support. An ID-like string that matches no ID is a warning.
 | Field | Content |
 | --- | --- |
 | `german`, `latin` | Original document text when available; otherwise the German archival abstract when no full transcription is available |
-| `english` | Normalized English translation of the original text, or English translation of the German abstract when the original is not transcribed |
+| `english` | Normalized English translation of the original text, or English translation of the German abstract when the original is not transcribed; when a transcribed entry has `summary`, that summary may inform and enrich the English rendering with relevant context |
 | `subheading` | Optional lower-level heading displayed within the current entry or book section |
 | `summary` | The abstract provided by the archive webpage, retained only when the document is transcribed (`transcribed: true`) |
 
@@ -111,7 +111,17 @@ in `summary` instead. When no full transcription is available, put the German
 abstract in `german` or `latin` and its normalized English translation in
 `english`; omit `summary` unless the document is marked transcribed.
 
-In `english`, translate and normalize the text for clear, readable English.
+In `english`, translate and normalize the text for clear, readable English. For
+transcribed documents, base the translation on the original `german` or `latin`
+text. The archive-provided `summary` may also be used as contextual evidence to
+clarify implicit references or include relevant information omitted from the
+transcription, making the English account more informative. Keep a clear
+distinction between the document's wording and context supplied by the summary;
+do not imply that summary-only details were stated in the document, and do not
+add claims unsupported by the source text and summary together. The `summary`
+field itself remains unchanged. When no full transcription is available,
+`english` remains a normalized translation of the German abstract in `german`
+or `latin`.
 Do not repeat source-language spelling variants or editorial parentheses that
 are already preserved in `german` or `latin` (for example, translate
 `Handschuhsheim (Hentschus-)` as `Handschuhsheim`). Preserve meaningful names,
