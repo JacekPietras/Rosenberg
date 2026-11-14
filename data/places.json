@@ -1540,6 +1540,15 @@
     "showOnMap": false
   },
   {
+    "id": "nuremberg",
+    "variations": [
+      "Nuremberg",
+      "Nüremberg",
+      "Nürnberg"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "bischofsheim",
     "variations": [
       "Bischofsheim",
