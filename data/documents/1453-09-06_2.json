@@ -9,7 +9,19 @@
       "source": "Stadtarchiv Rothenburg ob der Tauber, 12_b Repertorium Urkunden, Nr. 1880",
       "url": "https://stadt.rothenburg.de/fileadmin/Stadt_Rothenburg/Stadt/Geschichte/Stadtarchiv/12_b_Repertorium_Urkunden.pdf",
       "german": "Lutzey und Affra Langenmäntlin, Nonnen zu S. Katherinen in Augspurg, treten mit Wissen der Priorin Anna Harscherin und des Konvents ihrem Bruder Hanns alle ihre Rechte an der Verlassenschaft ihrer verstorbenen Schwester von Rosenberg ab. – Ausf. Perg. 3 Siegel anhängend.",
-      "english": "With the consent of the prioress Anna Harscherin and the convent, Lutzey and Affra Langenmäntlin, nuns at St Catherine’s in Augsburg, transfer to their brother Hanns all their rights to the estate of their late sister von Rosenberg. Original, parchment; three seals attached."
+      "english": "With the consent of the prioress Anna Harscherin and the convent, Lutzey and Affra Langenmäntlin, nuns at St Catherine’s in Augsburg, transfer to their brother Hanns all their rights to the estate of their late sister von Rosenberg. Original, parchment; three seals attached.",
+      "facts": [
+        {
+          "person": "Lutzey Langenmentlin",
+          "type": "generic",
+          "content": "transferred her rights in the estate of her late sister von Rosenberg to her brother Hanns."
+        },
+        {
+          "person": "Affra Langenmentlin",
+          "type": "generic",
+          "content": "transferred her rights in the estate of her late sister von Rosenberg to her brother Hanns."
+        }
+      ]
     }
   ]
 }

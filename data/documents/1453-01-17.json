@@ -9,7 +9,14 @@
       "source": "Stadtarchiv Rothenburg ob der Tauber, 12_b Repertorium Urkunden, Nr. 1882",
       "url": "https://stadt.rothenburg.de/fileadmin/Stadt_Rothenburg/Stadt/Geschichte/Stadtarchiv/12_b_Repertorium_Urkunden.pdf",
       "german": "Kopie des vorigen Instruments vom 17. Januar 1453 und dann Kopie des Reverses, den Hans Langmantel wegen einiger goldener Ringe und Kleinode, die er seiner Schwester von Rosenberg entwendet, hat beschwören müssen, donnerstag vor Jacobs tag 1444. – Pap. zwei Foliobogen.",
-      "english": "Copy of the preceding instrument of 17 January 1453, followed by a copy of the bond Hans Langmantel had to swear concerning several gold rings and jewels he took from his sister von Rosenberg, on the Thursday before St James’s Day 1444. Paper, two folio sheets."
+      "english": "Copy of the preceding instrument of 17 January 1453, followed by a copy of the bond Hans Langmantel had to swear concerning several gold rings and jewels he took from his sister von Rosenberg, on the Thursday before St James’s Day 1444. Paper, two folio sheets.",
+      "facts": [
+        {
+          "person": "Hans Langmantel",
+          "type": "generic",
+          "content": "swore a bond concerning gold rings and jewels he had taken from his sister von Rosenberg."
+        }
+      ]
     }
   ]
 }

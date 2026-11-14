@@ -9,7 +9,14 @@
       "source": "Stadtarchiv Rothenburg ob der Tauber, 12_b Repertorium Urkunden, Nr. 1886",
       "url": "https://stadt.rothenburg.de/fileadmin/Stadt_Rothenburg/Stadt/Geschichte/Stadtarchiv/12_b_Repertorium_Urkunden.pdf",
       "german": "Urteilsbrief, vermöge dessen der Reichsrichter zu Rotenburg Hanss Ress nebst dem Urteilsprechern Michel Schlez und Eberhard Nägenlin von Halle, Jörg Büchelberger und Hannss Aur von Dünckelspiel und Chunradt Varembach von Windsheim in des Langmantels Erbschaftsgesuch urteilt, daß die 2 Rotenburger Anwälte schwören sollen, daß die Stadt der von Rosenberg seligen Habe nicht inne habe. – Ausf. Perg. 3 Siegel anhängend, erhalten.",
-      "english": "Judgment in Hans Langmantel’s inheritance petition: the Imperial judge at Rothenburg, Hans Ress, together with the other judges, rules that the two Rothenburg lawyers must swear that the city does not possess the late von Rosenberg’s property. Original, parchment; three seals attached and preserved."
+      "english": "Judgment in Hans Langmantel’s inheritance petition: the Imperial judge at Rothenburg, Hans Ress, together with the other judges, rules that the two Rothenburg lawyers must swear that the city does not possess the late von Rosenberg’s property. Original, parchment; three seals attached and preserved.",
+      "facts": [
+        {
+          "subject": "the late von Rosenberg",
+          "type": "generic",
+          "content": "estate was the subject of Hans Langmantel’s inheritance petition; Rothenburg’s lawyers were ordered to swear that the city did not possess it."
+        }
+      ]
     }
   ]
 }

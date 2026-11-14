@@ -9,7 +9,15 @@
       "source": "Stadtarchiv Rothenburg ob der Tauber, 12_b Repertorium Urkunden, Nr. 1873",
       "url": "https://stadt.rothenburg.de/fileadmin/Stadt_Rothenburg/Stadt/Geschichte/Stadtarchiv/12_b_Repertorium_Urkunden.pdf",
       "german": "Augspurg schreibt an Rotemburg wegen des von der zu Rotemburg verstorbenen Selind von Rosemberg ihren Schwestern, den Klosterfrauen Afer und Lucy Langenmentlin im Kathrinenkloster zu Augspurg hinterlassenen Vermögens. – Ausf. Perg. Siegel rückwärts aufgedrückt.",
-      "english": "Augsburg writes to Rothenburg concerning the property left by Selind von Rosenberg, who died in Rothenburg, to her sisters Afer and Lucy Langenmentlin, nuns at St Catherine’s convent in Augsburg. Original, parchment; seal impressed on the back."
+      "english": "Augsburg writes to Rothenburg concerning the property left by Selind von Rosenberg, who died in Rothenburg, to her sisters Afer and Lucy Langenmentlin, nuns at St Catherine’s convent in Augsburg. Original, parchment; seal impressed on the back.",
+      "facts": [
+        {
+          "person": "Selind von Rosenberg",
+          "personDeceased": true,
+          "type": "generic",
+          "content": "left her estate to her sisters Afer and Lucy Langenmentlin."
+        }
+      ]
     }
   ]
 }

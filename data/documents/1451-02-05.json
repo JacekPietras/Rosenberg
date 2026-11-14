@@ -9,7 +9,14 @@
       "source": "Stadtarchiv Rothenburg ob der Tauber, 12_b Repertorium Urkunden, Nr. 1874",
       "url": "https://stadt.rothenburg.de/fileadmin/Stadt_Rothenburg/Stadt/Geschichte/Stadtarchiv/12_b_Repertorium_Urkunden.pdf",
       "german": "Augspurg ersucht Rotemburg, dem Augspurger Bürger Hans Langmantel, welcher an der Verlassenschaft der Selind von Rosemberg rechtmäßige Ansprüche zu haben meine, einen gütlichen Tag anzusetzen und die Sache freundlich beizulegen. Sollte aber solches nicht geschehen, so werde Langmantel gegen Rotenburg den Rechtsweg einschlagen. – Ausf. Perg. Siegel rückwärts aufgedrückt.",
-      "english": "Augsburg asks Rothenburg to arrange an amicable hearing for its citizen Hans Langmantel, who claims a legitimate right to Selind von Rosenberg’s estate. If this does not happen, Langmantel will pursue the matter in court against Rothenburg. Original, parchment; seal impressed on the back."
+      "english": "Augsburg asks Rothenburg to arrange an amicable hearing for its citizen Hans Langmantel, who claims a legitimate right to Selind von Rosenberg’s estate. If this does not happen, Langmantel will pursue the matter in court against Rothenburg. Original, parchment; seal impressed on the back.",
+      "facts": [
+        {
+          "person": "Hans Langmantel",
+          "type": "generic",
+          "content": "claimed a legitimate right to Selind von Rosenberg’s estate."
+        }
+      ]
     }
   ]
 }

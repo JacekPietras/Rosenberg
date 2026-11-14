@@ -9,7 +9,18 @@
       "source": "Stadtarchiv Rothenburg ob der Tauber, 12_b Repertorium Urkunden, Nr. 1027",
       "url": "https://stadt.rothenburg.de/fileadmin/Stadt_Rothenburg/Stadt/Geschichte/Stadtarchiv/12_b_Repertorium_Urkunden.pdf",
       "german": "Conrat von Rosenberg, Ritter, zu Haldenbergstetten vereinbart mit der Stadt Rotenburg, daß sie ihm statt seines Leibeigenmanns Peter, Contz Beyern Sohn, den Hanns Kle zu Neunstat ob Tauberscheckenbach gibt. – Ausf. Perg. Siegel anhängend, erhalten.",
-      "english": "Konrad von Rosenberg, knight, of Haldenbergstetten agrees with the city of Rothenburg that, in place of his serf Peter, son of Contz Beyer, the city will give him Hanns Kle of Neustatt above Tauberscheckenbach. Original, parchment; seal attached and preserved."
+      "english": "Konrad von Rosenberg, knight, of Haldenbergstetten agrees with the city of Rothenburg that, in place of his serf Peter, son of Contz Beyer, the city will give him Hanns Kle of Neustatt above Tauberscheckenbach. Original, parchment; seal attached and preserved.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "zu Haldenbergstetten"
+          ],
+          "type": "generic",
+          "content": "agreed with Rothenburg to receive Hans Kle in place of his serf Peter, son of Kunz Beyer."
+        }
+      ]
     }
   ]
 }

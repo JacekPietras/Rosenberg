@@ -9,7 +9,25 @@
       "source": "Stadtarchiv Rothenburg ob der Tauber, 12_b Repertorium Urkunden, Nr. 3654",
       "url": "https://stadt.rothenburg.de/fileadmin/Stadt_Rothenburg/Stadt/Geschichte/Stadtarchiv/12_b_Repertorium_Urkunden.pdf",
       "german": "Johans von Rosenberg, Ritter, Heinrich Mulstein und Sifrit Homburg, Bürger zu Rotenburg, bekennen, daß vor ihnen Ritter Luppolt Kuchinmeister von Nortenberg einerseits, Johans von Lindawe, Pfarrer und Komtur zu Rotenburg, und Engelhart von Rosenberg, Komtur zu Wirnsperg, andererseits wegen ihrer Güter zu Tetwang und der Notar erschienen, und entschieden, daß der Notar nicht über die Durchtraufe gehen soll. – Ausf. Perg. 3 Siegel anhängend, erhalten.",
-      "english": "Johans von Rosenberg, knight, Heinrich Mulstein, and Sifrit Homburg, citizens of Rothenburg, declare that the notary appeared before them with Knight Luppolt Kuchinmeister of Nortenberg on one side and Johans von Lindawe, priest and commander at Rothenburg, and Engelhard von Rosenberg, commander at Wirnsberg, on the other, concerning their properties at Tetwang. They ruled that the notary must not extend beyond the eaves line. Original, parchment; three seals attached and preserved."
+      "english": "Johans von Rosenberg, knight, Heinrich Mulstein, and Sifrit Homburg, citizens of Rothenburg, declare that the notary appeared before them with Knight Luppolt Kuchinmeister of Nortenberg on one side and Johans von Lindawe, priest and commander at Rothenburg, and Engelhard von Rosenberg, commander at Wirnsberg, on the other, concerning their properties at Tetwang. They ruled that the notary must not extend beyond the eaves line. Original, parchment; three seals attached and preserved.",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "took part in deciding the dispute over the notary’s conduct concerning the parties’ properties at Tetwang."
+        },
+        {
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Komtur zu Wirnsberg"
+          ],
+          "type": "generic",
+          "content": "appeared as a party in the dispute over the notary’s conduct concerning the parties’ properties at Tetwang."
+        }
+      ]
     }
   ]
 }

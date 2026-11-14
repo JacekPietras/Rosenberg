@@ -9,7 +9,19 @@
       "source": "Stadtarchiv Rothenburg ob der Tauber, 12_b Repertorium Urkunden, Nr. 3390",
       "url": "https://stadt.rothenburg.de/fileadmin/Stadt_Rothenburg/Stadt/Geschichte/Stadtarchiv/12_b_Repertorium_Urkunden.pdf",
       "german": "Jacob Erbtruchseß, Freiherr zu Waltpurg, dessen Vater Georg als Bundeshauptmann in Schwaben gegen Hanns Thomas von Rosenberg feindlich war, von diesem aber gefangen wurde, verspricht bei der Freilassung Frieden. – Ausf. Perg. 4 Siegel anhängend, verloren.",
-      "english": "Jacob, Hereditary Truchsess and Baron of Waldburg, whose father Georg had fought against Hans Thomas von Rosenberg as leader of the Swabian League but was captured by him, promises peace upon his release. Original, parchment; four seals lost."
+      "english": "Jacob, Hereditary Truchsess and Baron of Waldburg, whose father Georg had fought against Hans Thomas von Rosenberg as leader of the Swabian League but was captured by him, promises peace upon his release. Original, parchment; four seals lost.",
+      "facts": [
+        {
+          "person": "Hans Thomas von Rosenberg",
+          "type": "generic",
+          "content": "captured Georg, Hereditary Truchsess and Baron of Waldburg, who had fought against him as leader of the Swabian League."
+        },
+        {
+          "person": "Hans Thomas von Rosenberg",
+          "type": "generic",
+          "content": "received Georg von Waldburg’s promise of peace upon Georg’s release."
+        }
+      ]
     }
   ]
 }

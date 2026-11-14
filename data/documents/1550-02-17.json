@@ -9,7 +9,17 @@
       "source": "Stadtarchiv Rothenburg ob der Tauber, 12_b Repertorium Urkunden, Nr. 2348",
       "url": "https://stadt.rothenburg.de/fileadmin/Stadt_Rothenburg/Stadt/Geschichte/Stadtarchiv/12_b_Repertorium_Urkunden.pdf",
       "german": "Zaisolff von Rosenberg zu Haldermannstetten gestattet, daß Hanns Nörrer zu Wermerzhausen, Thoman Grener zu Neunpen und Kilian Grener zu Wermerzhausen für Martin Grener zu Vorpachzimmern eines Mordes halben an Cuntz Korber, Sattler zu Rottemburg, sich verbürgen. – Ausf. Pap. Siegel aufgedrückt.",
-      "english": "Zaisolff von Rosenberg of Haldermannstetten permits Hanns Nörrer of Wermerzhausen, Thoman Grener of Neunpen, and Kilian Grener of Wermerzhausen to stand surety for Martin Grener of Vorbachzimmern concerning the murder of Cuntz Korber, a tailor in Rothenburg. Original, paper; seal impressed."
+      "english": "Zaisolff von Rosenberg of Haldermannstetten permits Hanns Nörrer of Wermerzhausen, Thoman Grener of Neunpen, and Kilian Grener of Wermerzhausen to stand surety for Martin Grener of Vorbachzimmern concerning the murder of Cuntz Korber, a tailor in Rothenburg. Original, paper; seal impressed.",
+      "facts": [
+        {
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "zu Haldermannstetten"
+          ],
+          "type": "generic",
+          "content": "permitted Hans Nörrer, Thomas Grener, and Kilian Grener to stand surety for Martin Grener in the matter of Kunz Korber’s murder."
+        }
+      ]
     }
   ]
 }

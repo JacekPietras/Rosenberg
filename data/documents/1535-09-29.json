@@ -9,7 +9,14 @@
       "source": "Stadtarchiv Rothenburg ob der Tauber, 12_b Repertorium Urkunden, Nr. 3381",
       "url": "https://stadt.rothenburg.de/fileadmin/Stadt_Rothenburg/Stadt/Geschichte/Stadtarchiv/12_b_Repertorium_Urkunden.pdf",
       "german": "Jacob Sendelbacher von Urba, dessen Vetter Jodeck vom Frauenberg den Städten Danzig und Elbingen wegen Korns, das sie ihm auf der Weissel in 47 Schiffen entwendet haben, vor dem Reichskammergericht entgegentrat, beauftragt den Conrad von Rosenberg, die beiden geächteten Städte anzugreifen. – Ausf. Perg. 2 Siegel verloren",
-      "english": "Jacob Sendelbacher of Urba, whose cousin Jodeck of Frauenberg had sued the cities of Danzig and Elbing before the Imperial Chamber Court over grain they had taken from him on the Vistula in 47 ships, commissions Konrad von Rosenberg to attack the two outlawed cities. Original, parchment; two seals lost."
+      "english": "Jacob Sendelbacher of Urba, whose cousin Jodeck of Frauenberg had sued the cities of Danzig and Elbing before the Imperial Chamber Court over grain they had taken from him on the Vistula in 47 ships, commissions Konrad von Rosenberg to attack the two outlawed cities. Original, parchment; two seals lost.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "was commissioned by Jakob Sendelbacher von Urba to attack Danzig and Elbing."
+        }
+      ]
     }
   ]
 }

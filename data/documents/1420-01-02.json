@@ -23,6 +23,55 @@
           "deleted": true
         }
       ]
+    },
+    {
+      "source": "Zeitschrift für die Geschichte des Oberrheins 11 (1860), Nr. 63",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Zeitschrift_f%C3%BCr_die_Geschichte_des_Oberrheins._Bd._011%2C_1860_%28IA_zeitschriftfurdi1118unse%29.pdf",
+      "german": "Wir Conrad herre zu Winsperg, dez heil. röm. riichs erbcamerer\nbekennen fur uns und alle unser erben, als wir umbe den erbern vesten\nConrad von Rosenberg, zu disen ziten gesessen zu Rötingen, sein teyl\nder zehenden zu Ziemern und zu Dudesheim, gros und cleine, umbe\ndusent gulden gekauft haben uff einen wiederkauf mit willen und wies-\nsen dez hochwirdigen fursten und herren, hern Johansen bischof zu\nWirtzbürg, unsers gnedigen herren, von dem dieselben zehenden zu\nlehen gen, als dann die brief uns von im darüber gegeben uswysen\nund inne halten. also haben wir die vorgenanten zehenden für uns\nund unser erben verkauft und zu kaufen geben dem erbern vesten Vol-\nmar Lemblin, gesessen zu Wympffen, und seinen erben, und geben in\ndie auch zu kaufe in kraft und macht dieß briefes in aller der masse\nund rechten, als wir den gekauft haben nach lute und ußwysunge der\nvorgenanten briefe, die selben brief wir für uns und unser erben dem\nvorgenanten Volmar und seinen erben gegeben haben. Auch haben\nwir uns und unsern erben gen dem vorgenanten Volmar und seinen\nerben gedinget und behalten, wann und zu welcher zit in dem jare wir\nwollen und künnen, daz sie uns die vorgenanten zehenden dann wieder\nzu kaufe geben sollen und auch die brief darüber uns auch wieder geben\nsollen on allen intrag, alle argenliste und geverde ußgescheiden. Wer'\nauch, daz der vorgenante Conrad von Rosenberg oder sein erben die\nzehenden auch wieder keufen wollen, dez wiederkaufes in der vorgenant\nVolmar und sein erben auch gehorsam sein und gestaten sollen nach\nuswysung dez vorgenanten briefes von Conrad von Rosenberg uber\ndie zehend gegeben. Und dez zu urkunde haben wir unser insigel thun\nhencken an diesen brief, der do geben ist in den jaren, als man zalte\nvon unsers herren Cristi geburt vierzehenhundert und darnach in den\nzweintzigisten jaren, an dem nechsten dinstag nach dem heiligen jars\ntag.",
+      "english": "We, Konrad, Herr zu Weinsberg, hereditary chamberlain of the Holy Roman Empire, declare for ourselves and all our heirs that we have bought, subject to repurchase, from the honorable and steadfast Konrad von Rosenberg, at this time resident at Röttingen, his share of the tithes at Zimmern and at Diedesheim, large and small, for a thousand gulden, with the consent and knowledge of the right reverend prince and lord, Lord Johann, Bishop of Würzburg, our gracious lord, from whom the same tithes are held as a fief, as the letters given to us by him about it show and contain. Thus we have sold the aforesaid tithes, for ourselves and our heirs, to the honorable and steadfast Volmar Lemblin, resident at Wimpfen, and his heirs, and give them to him as a purchase by the force and power of this letter, in all the manner and rights in which we bought them according to the wording and terms of the aforesaid letters, which same letters we have given, for ourselves and our heirs, to the aforesaid Volmar and his heirs. We have also stipulated and reserved for ourselves and our heirs, with the aforesaid Volmar and his heirs, that whenever and at whatever time of the year we wish and are able, they shall sell the aforesaid tithes back to us and shall also give back to us the letters concerning them, without any hindrance, all malice and deceit excluded. And should Konrad von Rosenberg or his heirs also wish to buy the tithes back, the aforesaid Volmar and his heirs shall also be obedient and consent to the repurchase according to the terms of the aforesaid letter issued by Konrad von Rosenberg concerning the tithes. And in witness whereof we have had our seal hung on this letter, which was given in the year counted from the birth of our Lord Christ fourteen hundred and twenty, on the next Tuesday after the holy New Year's day.",
+      "facts": [
+        {
+          "person": "Konrad von Weinsberg",
+          "personTitle": [
+            "Herr zu Weinsberg",
+            "Erbkämmerer des Heiligen Römischen Reichs"
+          ],
+          "type": "title"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "resided at Röttingen."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "sold his share of the tithes at Neckarzimmern and Diedesheim to Konrad von Weinsberg with a right of repurchase."
+        },
+        {
+          "person": "Konrad von Weinsberg",
+          "type": "generic",
+          "content": "sold the tithes at Neckarzimmern and Diedesheim to Volmar Lemblin with a right of repurchase."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "or his heirs had a right to repurchase the tithes at Neckarzimmern and Diedesheim, which Volmar Lemblin and his heirs had to allow."
+        },
+        {
+          "person": "Hans",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ],
+          "type": "generic",
+          "content": "was the feudal lord from whom the tithes at Neckarzimmern and Diedesheim were held as a fief."
+        },
+        {
+          "person": "Volmar Lemblin",
+          "type": "generic",
+          "content": "resided at Wimpfen."
+        }
+      ]
     }
   ]
 }
