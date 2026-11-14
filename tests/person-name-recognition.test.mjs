@@ -258,3 +258,12 @@ test('recognizes coordinated brothers under their shared by-name and inherited p
   assert.equal(directRoutes.length, 2);
   assert.equal(directRoutes[1], 'Konrad Marschalk');
 });
+
+test('recognizes a three-person Oxford-comma list with a shared Marschalk surname', () => {
+  const source = 'Chuoncz Rosenkrancz declares that he has reached an amicable settlement with Sigmund, Haubt, and Hainrich Marschalken zu Pappenheim and all the Marschalk zu Pappenheim concerning';
+  assert.deepEqual(coordinatedByNameRouteNames(source, titles, connectors, particles, projectNames, byNames, places), [
+    'Siegmund Marschalk zu Pappenheim',
+    'Haubt Marschalk zu Pappenheim',
+    'Heinrich Marschalk zu Pappenheim'
+  ]);
+});

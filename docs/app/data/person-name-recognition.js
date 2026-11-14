@@ -43,7 +43,8 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
     .map((line) => line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean))
     .filter((forms) => forms.length)
     .flatMap(([canonical, ...forms]) => [canonical, ...forms].map((form) => [form.toLocaleLowerCase(), canonical])));
-  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<first>${names})\\s+and\\s+(?<second>${names})\\s+(?<byName>${byNames})(?:\\s+(?<particle>${particles})\\s+(?<place>${placeNames}))?(?![\\p{L}\\p{N}])`, 'giu');
+  const givenName = `(?:${names})`;
+  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<givenList>${givenName}(?:\\s*,\\s*${givenName})*(?:\\s*,?\\s+and\\s+${givenName}))\\s+(?<byName>${byNames})(?:\\s+(?<particle>${particles})\\s+(?<place>${placeNames}))?(?![\\p{L}\\p{N}])`, 'giu');
   const contextPattern = new RegExp(`(?<byName>${byNames})\\s+(?<particle>${particles})\\s+(?<place>${placeNames})`, 'giu');
   const matches = [];
   for (const match of String(text).matchAll(pattern)) {
@@ -62,7 +63,10 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
       text: match[0],
       start: match.index,
       end: match.index + match[0].length,
-      routes: [match.groups.first, match.groups.second].map((givenName) =>
+      givenList: match.groups.givenList,
+      givenNames: [...match.groups.givenList.matchAll(new RegExp(givenName, 'giu'))].map((givenName) => givenName[0]),
+      surnameText: match[0].slice(match.groups.givenList.length).trim(),
+      routes: [...match.groups.givenList.matchAll(new RegExp(givenName, 'giu'))].map((givenName) => givenName[0]).map((givenName) =>
         personRouteName(`${givenName} ${match.groups.byName} ${suffix}`.trim(),
           titleText, connectorText, particleText, namesText, byNamesText)),
     });

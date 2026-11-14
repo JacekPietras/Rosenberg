@@ -11,3 +11,5 @@ Pirchan
 Grabner
 Wirt
 Marschalk, Marschalken, Marschalkin, Marſchalk, Marschalch
+Rüd, Rude
+Truchsess, truchsessen, Truchseß, Truchſeß, Truchsesen, Truchſeſſen, Truchssess, Truchsezz, Truchsezzen

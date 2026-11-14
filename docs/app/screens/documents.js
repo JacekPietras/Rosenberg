@@ -1,7 +1,7 @@
 import { factDate } from '../rendering/facts.js?v=9';
 import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=9';
-import { coordinatedByNameMatches, personRouteName } from '../data/person-name-recognition.js?v=12';
+import { coordinatedByNameMatches, personRouteName } from '../data/person-name-recognition.js?v=13';
 
 export function createDocumentRenderer({
   state,

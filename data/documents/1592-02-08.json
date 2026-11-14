@@ -8,12 +8,12 @@
       "english": "Hans Georg and Burkard von Berlichingen and Hans Werner von Wolmershausen, acting as guardians of the children of the late Wolf Dietrich Rüd von Collenberg and his widow Felicitas, née von Rosenberg, conclude a marriage agreement between their ward Anna Kunigunda and Jop, son of the late Ludwig Lochinger von Archshouen. The agreement sets out the bride’s dowry, the groom’s morning gift and widow’s provision, and other inheritance arrangements.",
       "facts": [
         {
-          "person": "Wolf Dietrich Rüd von Collenberg",
+          "person": "Wolf Dietrich Rüd von Kollenberg",
           "type": "death",
           "diedBefore": "1592-02-09"
         },
         {
-          "person": "Wolf Dietrich Rüd von Collenberg",
+          "person": "Wolf Dietrich Rüd von Kollenberg",
           "personDeceased": true,
           "type": "spouse",
           "of": "Felicitas von Rosenberg"

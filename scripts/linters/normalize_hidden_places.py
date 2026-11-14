@@ -3,6 +3,7 @@
 
 import json
 from pathlib import Path
+from collections import defaultdict
 
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -47,10 +48,35 @@ def visible_place_errors(places):
     return errors
 
 
+def variation_conflicts(places):
+    """Return variations assigned to more than one distinct place."""
+    owners = defaultdict(set)
+    for index, place in enumerate(places):
+        if not isinstance(place, dict):
+            continue
+        variations = place.get("variations", [])
+        if not isinstance(variations, list):
+            continue
+        owner = place.get("id", f"data/places.json#/{index}")
+        for variation in variations:
+            if isinstance(variation, str) and variation.strip():
+                owners[" ".join(variation.split()).casefold()].add((owner, variation))
+    conflicts = []
+    for matches in owners.values():
+        place_owners = {owner for owner, _ in matches}
+        if len(place_owners) > 1:
+            conflicts.append(sorted(matches, key=lambda match: (match[0], match[1].casefold())))
+    return conflicts
+
+
 if __name__ == "__main__":
     path = ROOT / "data" / "places.json"
     print(f"Normalized {normalize(path)} hidden place(s).")
     errors = visible_place_errors(json.loads(path.read_text(encoding="utf-8")))
+    conflicts = variation_conflicts(json.loads(path.read_text(encoding="utf-8")))
+    for conflict in conflicts:
+        details = "; ".join(f"{variation!r} in {owner}" for owner, variation in conflict)
+        print(f"Warning: conflicting place variation: {details}")
     for error in errors:
         print(error)
     print(f"Checked visible places: {len(errors)} error(s).")

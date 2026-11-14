@@ -44,3 +44,21 @@ test('coordinated by-name mentions link each brother to the inherited place rout
   assert.match(rendered, /href="\?person=Georg%20Marschalk%20zu%20Pappenheim"/u);
   assert.match(rendered, /href="\?person=Konrad%20Marschalk%20zu%20Pappenheim"/u);
 });
+
+test('links all three names in a coordinated Marschalk list', async () => {
+  const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
+  const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files
+    .map((file) => readFile(new URL(`../data/${file}`, import.meta.url), 'utf8')));
+  const places = parsePlaces(placesJson);
+  const titles = `${ageTitles}\n${officeTitles}`;
+  const state = { people: [], places, personPattern: [], personNamesText: names, byNamesText: byNames,
+    nobiliaryParticlesText: particles, nameConnectorsText: connectors, personNameTitlesText: titles,
+    sourcePersonPattern: buildSourcePersonPattern(names, particles, places, titles, connectors, byNames),
+    placePattern: buildPlacePattern(places) };
+  const { inlineMarkup } = createMarkupRenderer({ state });
+  const text = 'Chuoncz Rosenkrancz declares that he has reached an amicable settlement with Sigmund, Haubt, and Hainrich Marschalken zu Pappenheim and all the Marschalk zu Pappenheim concerning';
+  const rendered = inlineMarkup(text);
+  for (const route of ['Siegmund Marschalk zu Pappenheim', 'Haubt Marschalk zu Pappenheim', 'Heinrich Marschalk zu Pappenheim']) {
+    assert.ok(rendered.includes(`href="?person=${encodeURIComponent(route)}"`), route);
+  }
+});

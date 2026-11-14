@@ -124,7 +124,7 @@
   },
   {
     "variations": [
-      "Burg"
+      "Burg Rosenberg"
     ],
     "category": "castle",
     "lat": 49.4562999,
@@ -215,8 +215,19 @@
       "Reichelsburg"
     ],
     "category": "castle",
-    "lat": 49.5465,
-    "lon": 10.0513,
+    "lat": 49.546472,
+    "lon": 10.051056,
+    "parent": "aub"
+  },
+  {
+    "id": "baldersheim",
+    "variations": [
+      "Baldersheim",
+      "Baldershaim"
+    ],
+    "category": "village",
+    "lat": 49.55205,
+    "lon": 10.04247,
     "parent": "aub"
   },
   {
@@ -718,7 +729,7 @@
   {
     "id": "burg-lauda",
     "variations": [
-      "Burg"
+      "Burg Lauda"
     ],
     "category": "castle",
     "lat": 49.5672155,
@@ -740,7 +751,7 @@
   {
     "id": "burg-aub",
     "variations": [
-      "Burg"
+      "Burg Aub"
     ],
     "category": "castle",
     "lat": 49.550971,
@@ -1269,6 +1280,8 @@
     "category": "village",
     "variations": [
       "Thüngen",
+      "Thungen",
+      "Tüngen",
       "Tungen"
     ],
     "lat": 49.94293,
@@ -1568,7 +1581,131 @@
   {
     "id": "seinsheim",
     "variations": [
-      "Seinsheim"
+      "Seinsheim",
+      "Sainsheim",
+      "Sawensheim",
+      "Sovensheim",
+      "Saunsheim"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "hornberg",
+    "variations": [
+      "Hornberg",
+      "Hornburg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "hohenlohe",
+    "variations": [
+      "Hohenlohe"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "weinsberg",
+    "variations": [
+      "Weinsberg",
+      "Winesberg",
+      "Winesperg",
+      "Winsperg",
+      "Winsperc"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "hutten",
+    "variations": [
+      "Hutten",
+      "Huttenus",
+      "Hoten",
+      "Hute",
+      "Huttenicus",
+      "Huti",
+      "Hütten",
+      "Huten"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "herrieden",
+    "variations": [
+      "Herrieden",
+      "Harrariot",
+      "Herreden",
+      "Haserieth"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "wolffskeel",
+    "variations": [
+      "Wolffskeel",
+      "Wolfskeel",
+      "Wolfskehl"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "neuburg",
+    "variations": [
+      "Neuburg",
+      "Neuenburg",
+      "Neubrung",
+      "Neuenbürg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "sickingen",
+    "variations": [
+      "Sickingen",
+      "Sickinger"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "baldersheim",
+    "variations": [
+      "Baldersheim",
+      "Baldershaim"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "kollenberg",
+    "variations": [
+      "Kollenberg",
+      "Kolbenberg",
+      "Kolbenberc",
+      "Collenberg",
+      "Kolleberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "lichtenstein",
+    "variations": [
+      "Lichtenstein",
+      "Lichtenſtein"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "grumbach",
+    "variations": [
+      "Grumbach",
+      "Gruenbach"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "kranberg",
+    "variations": [
+      "Kranberg",
+      "Cranberg"
     ],
     "showOnMap": false
   },

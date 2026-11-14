@@ -1,7 +1,7 @@
 import { escapeHtml } from './html.js';
 import { findPlaceByName } from '../data/entities.js?v=90';
 import { resolvePerson } from '../data/relationships.js?v=11';
-import { coordinatedByNameMatches, personMentionClass, personRouteName } from '../data/person-name-recognition.js?v=12';
+import { coordinatedByNameMatches, personMentionClass, personRouteName } from '../data/person-name-recognition.js?v=13';
 
 export function createMarkupRenderer({ state }) {
   const frakturUpper = [...'𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ'];
@@ -24,10 +24,13 @@ export function createMarkupRenderer({ state }) {
     const coordinated = coordinatedByNameMatches(text, state.personNameTitlesText, state.nameConnectorsText,
       state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places);
     for (const group of coordinated.reverse()) {
-      const parts = group.text.match(/^(\S+)\s+and\s+(\S+)\s+(.+)$/u);
-      if (!parts) continue;
-      const [, first, second, sharedSurname] = parts;
-      const linked = `<a class="person-link ${personMentionClass(first, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(group.routes[0])}">${escapeHtml(first)}</a> and <a class="person-link ${personMentionClass(group.text, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(group.routes[1])}">${escapeHtml(`${second} ${sharedSurname}`)}</a>`;
+      let givenIndex = 0;
+      const givenListPattern = new RegExp(`(?:${group.givenNames.map((name) => name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')).join('|')})`, 'giu');
+      const linkedGivenList = group.givenList.replace(givenListPattern, (givenName) => {
+        const route = group.routes[givenIndex++];
+        return `<a class="person-link ${personMentionClass(route, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(route)}">${escapeHtml(givenName)}</a>`;
+      });
+      const linked = `${linkedGivenList} ${escapeHtml(group.surnameText)}`;
       text = text.slice(0, group.start) + token(linked) + text.slice(group.end);
     }
     text = text.replace(/\[([^\]]+)\]/g, (match, id) => {
