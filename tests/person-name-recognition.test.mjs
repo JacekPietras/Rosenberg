@@ -260,6 +260,12 @@ test('routes spelling variants to the canonical given name and by-name', () => {
     projectNames, byNames), 'Heinrich Marschalk zu Pappenheim');
 });
 
+test('canonicalizes a place variation in a person route', () => {
+  const placeRecords = [{ name: 'Helmstadt', variations: ['Helmstadt', 'Helmstat', 'Helmstatt'] }];
+  assert.equal(personRouteName('Raban von Helmstatt', titles, connectors, particles,
+    projectNames, byNames, placeRecords), 'Raban von Helmstadt');
+});
+
 test('recognizes coordinated brothers under their shared by-name and inherited place', () => {
   const source = 'Hainrich Marschalk zu Pappenheim, also acting for his brothers Goerg and Chuonrat Marschalken, acknowledges that he sold the Pappenheim convent';
   pattern.lastIndex = 0;

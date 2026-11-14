@@ -67,7 +67,7 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
       surnameText,
       routes: [...match.groups.givenList.matchAll(new RegExp(givenName, 'giu'))].map((givenName) => givenName[0]).map((givenName) =>
         personRouteName(`${givenName} ${surnameText}`.trim(),
-          titleText, connectorText, particleText, namesText, byNamesText)),
+          titleText, connectorText, particleText, namesText, byNamesText, places)),
     });
   }
   return matches;
@@ -114,7 +114,7 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   return new RegExp(`(?<![\\p{L}\\p{N}])${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}${surname}(?![\\p{L}\\p{N}])`, 'giu');
 }
 
-export function personRouteName(name, titleText = '', connectorText = '', particleText = '', namesText = '', byNamesText = '') {
+export function personRouteName(name, titleText = '', connectorText = '', particleText = '', namesText = '', byNamesText = '', places = []) {
   const titles = alternatives(parsePersonNameTitles(titleText));
   const connectors = alternatives(String(connectorText).split(/\r?\n/)
     .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
@@ -126,6 +126,13 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     .flatMap(([canonical, ...forms]) => [canonical, ...forms].map((form) => [form.toLocaleLowerCase(), canonical])));
   const canonicalGiven = variantMap(namesText);
   const canonicalByName = variantMap(byNamesText);
+  const canonicalPlaces = new Map(places.flatMap((place) =>
+    (place.variations || [place.name]).filter(Boolean).map((form) => [form.toLocaleLowerCase(), place.name || form])));
+  const placeForms = [...canonicalPlaces.keys()].sort((left, right) => right.length - left.length);
+  const canonicalizePlaces = (value) => placeForms.length
+    ? String(value).replace(new RegExp(`(?<![\\p{L}\\p{N}])(?:${alternatives(placeForms)})(?![\\p{L}\\p{N}])`, 'giu'),
+      (form) => canonicalPlaces.get(form.toLocaleLowerCase()) || form)
+    : String(value);
   const particleForms = String(particleText).split(/\r?\n/).map((line) => line.split('//')[0].trim()).filter(Boolean);
   const normalizeRouteName = (value) => {
     let parts = String(value).trim().split(/\s+/);
@@ -150,11 +157,11 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     const titlePlaceIndex = parts.findIndex((part, index) => index >= surnameStart
       && ['zu', 'zum'].includes(part.toLocaleLowerCase()));
     if (titlePlaceIndex >= 0) parts = parts.slice(0, titlePlaceIndex);
-    return parts.join(' ');
+    return canonicalizePlaces(parts.join(' '));
   };
   const birthName = String(name).match(/^(.*?)[\s,;]+(?:née|nee)[\s,;]+(.+)$/iu);
   if (birthName) {
-    const marriedRoute = personRouteName(birthName[1], titleText, connectorText, particleText, namesText, byNamesText);
+    const marriedRoute = personRouteName(birthName[1], titleText, connectorText, particleText, namesText, byNamesText, places);
     const particleSurname = particles && new RegExp(`[\\s,;]+(?:${particles}|of)\\s+.+$`, 'iu').test(marriedRoute);
     const givenNames = particleSurname
       ? marriedRoute.replace(new RegExp(`[\\s,;]+(?:${particles}|of)\\s+.+$`, 'iu'), '')

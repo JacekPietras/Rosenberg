@@ -21,6 +21,7 @@ Berthold, Bertold, Bertolt, Betzmann
 Boppe
 Burkhard, Burchard
 Busso
+Gerung, Gerunch
 Carl
 Casimir
 Caspar, Caſpar, Kaspar
@@ -167,7 +168,7 @@ Regina
 Richtze
 Rosina
 Rufina, Rofina, Ruffina
-Selende
+Selind, Sieglinde, Siglind, Selende, Selant
 Septia
 Sibylla, Sibyl
 Sophia

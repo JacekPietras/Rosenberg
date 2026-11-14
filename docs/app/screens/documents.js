@@ -1,7 +1,7 @@
 import { factDate } from '../rendering/facts.js?v=9';
 import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=9';
-import { coordinatedByNameMatches, personRouteName } from '../data/person-name-recognition.js?v=18';
+import { coordinatedByNameMatches, personRouteName } from '../data/person-name-recognition.js?v=19';
 
 export function createDocumentRenderer({
   state,
@@ -48,7 +48,7 @@ export function createDocumentRenderer({
     const addPerson = (reference) => {
       if (typeof reference !== 'string') return;
       const name = peopleById.get(reference) || reference;
-      const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText).toLocaleLowerCase();
+      const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places).toLocaleLowerCase();
       if (key && !found.has(key)) found.set(key, name);
     };
     const collectFactPeople = (value) => {
@@ -79,7 +79,7 @@ export function createDocumentRenderer({
           const matchStart = match.index;
           if (coordinatedMatches.some((group) => group.start <= matchStart && matchStart + match[0].length <= group.end)) continue;
           const name = match[0];
-          const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText).toLocaleLowerCase();
+          const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places).toLocaleLowerCase();
           if (!found.has(key)) found.set(key, name);
         }
       }
