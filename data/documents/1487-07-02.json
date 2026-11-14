@@ -1,6 +1,9 @@
 {
   "date": "1487-07-02",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
   "entries": [
     {
       "source": "Lorenz Fries, Hohe Registratur, entry 5721, Standbuch 1012 fol. 445v; citing Recepta 4 Rudolfi f. 19",
@@ -21,6 +24,36 @@
           ],
           "type": "generic",
           "content": "agreed to pay the von Rosenbergs 8,500 Rhenish gold florins in two installments for seized goods at Prosselsheim and Röttingen, including the towns, offices, castles, appurtenances, movable property, other goods, and claims for lost use, costs, and damages."
+        },
+        {
+          "person": "Georg von Rosenberg",
+          "type": "sibling",
+          "of": "Friedrich von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg",
+          "type": "sibling",
+          "of": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Friedrich von Rosenberg",
+          "type": "sibling",
+          "of": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was involved in hostilities with Bishop Rudolf over the von Rosenberg properties."
+        },
+        {
+          "person": "Friedrich von Rosenberg",
+          "type": "generic",
+          "content": "was involved in hostilities with Bishop Rudolf over the von Rosenberg properties."
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "type": "generic",
+          "content": "was involved in hostilities with Bishop Rudolf over the von Rosenberg properties."
         }
       ],
       "img": [

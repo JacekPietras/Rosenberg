@@ -1,0 +1,42 @@
+{
+  "date": "1446-05-02",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "entries": [
+    {
+      "source": "Lorenz Fries, Hohe Registratur, entry 2790, Standbuch 1012, Folio: 461r, Schreiber:",
+      "url": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?eintrag=2790",
+      "german": "An obgemelten Burg Stat vnd ambt Rattingen war Heinrichen von Sickingen ein halb teil, Hans Truchsessen ein virteil vnd Conzen von Rosenberg auch ein virteil vf widerkauff verkauft. Nun brachte Vlrich von Rosenberg sein virteil von obgedachts Heinrich von Sickingen witwe, vnd den anderen virteil von Conzen von Rosenberg vnd also den halben theil an sich, den versazte er furbas Anshelm von Rosenberg rittern. Do versatzt derselbig Anshelm den selben halben teil Pettern von Stettenberg vnd Bernharten von Ehenheim fur 5000 f nemlich eglichs virteil fur 2500 f, derein hat B. Gotfrid von Limpurg vnd sein domcapittel gewilligt, vnd hat als bald der Stat Rottingen einen haisbreiff geben den von Stettenberg vnd Ehenheim zu gewarten an Montag nach Walpurgis Anno 1446 Recepta Contractuum Limpurg fo 63.",
+      "english": "Heinrich von Sickingen held half of the aforesaid castle, town, and Amt Röttingen, and Hans Truchsess and Konrad von Rosenberg each held a quarter, redeemable. Ulrich von Rosenberg acquired one quarter from the widow of the aforementioned Heinrich von Sickingen and the other quarter from Konrad von Rosenberg, thus acquiring half. He then pledged that half to Anselm von Rosenberg, Ritter. Anselm in turn pledged the same half to Peter von Stettenberg and Bernhard von Ehenheim for 5,000 florins, 2,500 for each quarter. Gotfried von Limpurg, Bischof, and his cathedral chapter consented, and he immediately issued a safe-conduct for the town of Röttingen to Stettenberg and Ehenheim. Monday after Walpurgis, 1446. Register of contracts of Limpurg, fol. 63.",
+      "facts": [
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "held a quarter share of the castle, town, and Amt Röttingen, redeemable."
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "transferred his quarter share of the castle, town, and Amt Röttingen to Ulrich von Rosenberg."
+        },
+        {
+          "person": "Ulrich von Rosenberg",
+          "type": "generic",
+          "content": "acquired one quarter of the castle, town, and Amt Röttingen from the widow of Heinrich von Sickingen and another quarter from Kunz von Rosenberg, thereby acquiring half; he pledged that half to Anselm von Rosenberg, Ritter."
+        },
+        {
+          "person": "Anselm von Rosenberg",
+          "type": "generic",
+          "content": "pledged the half share of the castle, town, and Amt Röttingen to Peter von Stettenberg and Bernhard von Ehenheim."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1012_461.jpg"
+        }
+      ]
+    }
+  ]
+}

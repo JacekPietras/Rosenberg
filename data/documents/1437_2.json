@@ -1,0 +1,34 @@
+{
+  "date": "1437",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "entries": [
+    {
+      "source": "Lorenz Fries, Hohe Registratur, entry 1751, Standbuch 1011, Folio: 116r, Schreiber: Lorenz Fries; citing Ferner [gestrichen: hat] entlehet B. Johanns von Brun noch 200 fl von hern Anshelmen so datzumal riter worden [gestrichen: entlehet] vnd [Einfügung: schlug] ime dieseligen zu den vorigen 6000 fl [gestrichen: geschlagen] daruber ist aber kain verschreibung vorhanden, [gestrichen: vnd hat] Vnter solchen [Einfügung: verschrib] er B Johanns im Jare des heren 1437 Petern von Stettenberg Jherlich 80 Gulden vf der bethe zu Bassoldshaim [gestrichen: verschriben] [Nachtragshand am Rand: Keller Volkach], Contractuum Brun 199 Fundort in der Hohen Registratur: Standbuch 1011, Folio: 116r, Schreiber: Lorenz Fries Quellenverweis in der Hohen Registratur: Die angegebenen Quellen und Signaturen beziehen sich auf die archivalische Systematisierung des 16. Jahrhunderts. Diese entsprechen nicht den modernen Signaturen. Liber contractuum Brun f. 199",
+      "url": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?eintrag=1751",
+      "german": "Ferner [gestrichen: hat] entlehet B. Johanns von Brun noch 200 fl von hern Anshelmen so datzumal riter worden [gestrichen: entlehet] vnd [Einfügung: schlug] ime dieseligen zu den vorigen 6000 fl [gestrichen: geschlagen] daruber ist aber kain verschreibung vorhanden, [gestrichen: vnd hat] Vnter solchen [Einfügung: verschrib] er B Johanns im Jare des heren 1437 Petern von Stettenberg Jherlich 80 Gulden vf der bethe zu Bassoldshaim [gestrichen: verschriben] [Nachtragshand am Rand: Keller Volkach], Contractuum Brun 199",
+      "english": "Furthermore, Johann von Brunn, Bischof, borrowed another 200 florins from Anselm von Rosenberg, who had by then become a Ritter, and added that sum to the previous 6,000 florins. No bond survives for this. Under this arrangement, in 1437 Johann von Brunn, Bischof, pledged Peter von Stettenberg 80 florins annually on the rent from Prosselsheim. Liber contractuum Brun, fol. 199.",
+      "facts": [
+        {
+          "person": "Anselm von Rosenberg",
+          "type": "generic",
+          "content": "lent Bishop Johann von Brunn a further 200 florins, which were added to the earlier 6,000-florin sum."
+        },
+        {
+          "person": "Anselm von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "title"
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1011_116.jpg"
+        }
+      ]
+    }
+  ]
+}

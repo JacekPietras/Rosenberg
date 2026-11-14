@@ -1,0 +1,27 @@
+{
+  "date": "1550",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "entries": [
+    {
+      "source": "Lorenz Fries, Hohe Registratur, entry 2377, Standbuch 1012, Folio: 60r, Schreiber:",
+      "url": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?eintrag=2377",
+      "german": "Und diesse verschreibung abgeloest und ain andere mit ihr uffgericht worden anno 1550 uber 50 fl. järlichs zins uff den camergefellen fur 1000 fl., auch zu 15 patzen gerechnet, auch ain virthail jars vor Petri ufftzukunden. Registrata ibidem fol: 341.",
+      "english": "This bond was redeemed and another made with her in 1550 for an annual rent of 50 florins from the chamber revenues for 1,000 florins, also reckoned at 15 batzen per florin and redeemable on a quarter-year’s notice before the Feast of St Peter’s Chair. Recorded in the same place, fol. 341.",
+      "facts": [
+        {
+          "person": "Juliane von Leutzenbronn",
+          "type": "generic",
+          "content": "redeemed the earlier bond and entered a new agreement for an annual rent of 50 florins from the chamber revenues for 1,000 florins."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1012_060.jpg"
+        }
+      ]
+    }
+  ]
+}

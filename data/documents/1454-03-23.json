@@ -1,6 +1,9 @@
 {
   "date": "1454-03-23",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
   "entries": [
     {
       "source": "Lorenz Fries, Hohe Registratur, entry 5719, Standbuch 1012 fol. 445v; citing Recepta 4 Rudolfi f. 191",
@@ -24,6 +27,15 @@
           ],
           "type": "generic",
           "content": "claimed Anselm von Rosenberg’s goods, which the court ruled had fallen to him."
+        },
+        {
+          "person": "Anselm von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "personDeceased": true,
+          "type": "generic",
+          "content": "was to be removed from the castle under the threshold and burned if his body was still present."
         }
       ],
       "img": [

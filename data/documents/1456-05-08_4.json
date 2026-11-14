@@ -1,0 +1,37 @@
+{
+  "date": "1456-05-08",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "entries": [
+    {
+      "source": "Lorenz Fries, Hohe Registratur, entry 3926, Standbuch 1011, Folio: 416v, Schreiber: Lorenz Fries",
+      "url": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?eintrag=3926",
+      "german": "[Am Rand: Hasfurth Volckach, Röttingen] Anno 1456 am Sambstag nach Ascensionis domini hat B Johannsen von Grumbach Vlrichen vnd Haintzen von Rechberg Thoman, Vlrichen vnd Georgen von Rosenberg, hern Hainrichen Zobel riter, Hannsen von Absperg vnd Haintzen von Seckendorf x fl Jerlicher zinse vf den dorff keller verschriben Recepta i Contractuum Rudolfi fo. 1 et 5 Kommentar: Am Rand: Haßfurt ( Hasfurth ), Volkach ( Volckach ), Röttingen ( Röttingen ).",
+      "english": "[Marginal note: Haßfurt, Volkach, Röttingen.] In 1456, on the Saturday after the Ascension of Our Lord, Hans von Grumbach, Bischof, pledged to Ulrich and Heinrich von Rechberg, Thomas, Ulrich, and Georg von Rosenberg, Heinrich Zobel, Ritter, Johann von Absberg, and Heinrich von Seckendorf an annual rent of ten florins on the village of Köhler. Recorded in the first register of Rudolf’s contracts, fols. 1 and 5. The marginal note gives the places Haßfurt, Volkach, and Röttingen.",
+      "facts": [
+        {
+          "person": "Ulrich von Rosenberg",
+          "type": "generic",
+          "content": "received an annual rent secured on the village of Köhler from Bishop Johann von Grumbach."
+        },
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "received an annual rent secured on the village of Köhler from Bishop Johann von Grumbach."
+        },
+        {
+          "person": "Thomas von Rosenberg",
+          "type": "generic",
+          "content": "received an annual rent secured on the village of Köhler from Bishop Johann von Grumbach."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1011_417.jpg"
+        }
+      ]
+    }
+  ]
+}

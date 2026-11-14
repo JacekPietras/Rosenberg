@@ -1,0 +1,32 @@
+{
+  "date": "1542-03-20",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "entries": [
+    {
+      "source": "Lorenz Fries, Hohe Registratur, entry 747, Standbuch 1011, Folio: 85v, Schreiber: xxx",
+      "url": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?eintrag=747",
+      "german": "Anno 1542 Montags pg Letare verschrieben sich die gemaind zu Baldershaim gegen Jorgen von Leutzenbron vnd Julianen von Rosenberg seiner hausfrawen fur 2000 F hauptsumma vnd järlichen 100 F zinß; 2° conract. konr. fol. 126. [Einfügung am Rand: Vide Leutzenbron tom 2 fol. 50.]",
+      "english": "In 1542, on Monday after Laetare Sunday, the community of Baldersheim bound itself to Georg von Leutzenbronn and Juliane von Rosenberg, his wife, for a principal sum of 2,000 florins and annual interest of 100 florins. Second register of Conrad’s contracts, fol. 126. Marginal insertion: see Leutzenbronn, volume 2, fol. 50.",
+      "facts": [
+        {
+          "person": "Georg von Leutzenbronn",
+          "type": "spouse",
+          "of": "Juliana von Rosenberg"
+        },
+        {
+          "person": "Juliana von Rosenberg",
+          "type": "generic",
+          "content": "was named with her husband Georg von Leutzenbronn as a creditor under a bond from the community of Baldersheim for a principal sum and annual interest."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1011_086.jpg"
+        }
+      ]
+    }
+  ]
+}

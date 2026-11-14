@@ -1,0 +1,37 @@
+{
+  "date": "1499/1549/1563-10-28",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "entries": [
+    {
+      "source": "Lorenz Fries, Hohe Registratur, entry 3625, Standbuch 1011, Folio: 375v, Schreiber: Lorenz Fries",
+      "url": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?eintrag=3625",
+      "german": "Graue Crafft von Hohenlohe hat anno 1499 B Lorentzen wider die Swetzer gedienet mit 6 pferden, Omissorum fo. 145 d. [Nachtragshand: Graff Ludwich Casimir von Hoenlohe Ist mit Eber von Stetten zur [unleserlich] von wegen des kauffs Bickenbach so weiland Graf Albrecht von hoenlohe mit Zurchen von Stetten anno 1549 krafft Im lehengericht zu Wirtzburgk gesand Sendt aber die [unleserlich] durch heren Albrechten von Rosenberg Ritteren zu [unleserlich] tractation komen vnd vermogen [unleserlich] zu Newenstein an Simon vnd Jude anno 1563 Recepta in 10 Contractuum friderici fol 106] Kommentar: Die Nachtragshand erwähnt, dass Graf Ludwig Casimir von Hohenlohe ( Ludwich Casimir von Hoenlohe ) und Eber von Stetten ( Eber von Stetten ) wegen des Kaufs von Bickenbach ( Bickenbach ), welchen der verstorbene Grafe Albrecht von Hohenlohe ( Albrecht von hoenlohe ) mit Zürich von Stetten ( Zurch von Stetten ) 1549 im Lehengericht zu Würzburg verhandelt hat, durch Albrecht von Rosenberg ( Albrecht von Rosenberg ) zu Neuenstein ( Newentein ) vertragen werden.",
+      "english": "Kraft von Hohenlohe, Graf, served Lorenz von Bibra, Bischof, against the Swiss in 1499 with six horses, according to the Register of Omissorum, fol. 145d. Later marginal addition: Ludwig Casimir von Hohenlohe, Graf, and Eber von Stetten were sent to Würzburg’s feudal court concerning the purchase of Bickenbach, which the late Albrecht von Hohenlohe, Graf, had negotiated with Zürich von Stetten in 1549. Through Albrecht von Rosenberg, Ritter, the matter was settled at Neuenstein on the Feast of St Simon and Jude in 1563, according to the tenth register of Friedrich’s contracts, fol. 106. The marginal note is by a later hand.",
+      "facts": [
+        {
+          "person": "Kraft von Hohenlohe",
+          "type": "generic",
+          "content": "served Bishop Lorenz against the Swiss with six horses.",
+          "date": "1499"
+        },
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "mediated the settlement at Neuenstein concerning the purchase of Bickenbach.",
+          "date": "1563-10-28"
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1011_376.jpg"
+        }
+      ]
+    }
+  ]
+}

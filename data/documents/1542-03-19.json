@@ -1,0 +1,37 @@
+{
+  "date": "1542-03-19",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "entries": [
+    {
+      "source": "Lorenz Fries, Hohe Registratur, entry 2375, Standbuch 1012, Folio: 60r, Schreiber:",
+      "url": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?eintrag=2375",
+      "german": "Anno 1542 zu Mitfasten verkhaufft B. Conrath von Bibra mit bewilligung seins dombcapituls Jorgen von Lutzenbrun, Julianen seiner ehelichen hausfrawen und ihren ehelichen erben 100 fl. järlichs zins an gutter grober muntz, je 18 patzen oder 15 zwolffer fur 1 fl. gerecet, auß der camern fur 2000 fl. goldt gulden, so hievorn gemelte Juliana geborene von Rosenberg graven Wilhelmen von Hennenberg umb vertzinsung geliehen gehabt, und jetzo an dem kaufgelt fur das ambt Mainberg ihme abgehen sollen; und satzte ihnen eheleuthen B. Conrath im fall der nithaltung darfuer ein des stiffts bethe, rente, zins, gult, nutzungen und einkhommens uff dem dorf Baldershaim, alleß uff widerlöesung und 1 jar vor Letare uffzukunden. Registrata in 2 contractuum Conradi 124. [Einfügung am Rand: vide Baldershaim como 1 fol. 38]",
+      "english": "In 1542, at Mid-Lent, Konrad von Bibra, Bischof, with the consent of his cathedral chapter, sold to Georg von Leutzenbronn, Juliane, his lawful wife, and their lawful heirs an annual rent of 100 florins in good common currency, reckoned at 18 batzen or 15 twelve-pfennig coins per florin, from the chamber revenues, for 2,000 gold florins. Juliane, née von Rosenberg, had previously lent that sum to Wilhelm, Graf von Henneberg at interest; it was now to be deducted from the purchase price of Amt Mainberg. If the payments were not made, Konrad, Bischof, pledged to them the bishopric’s rents, dues, revenues, proceeds, and income from the village of Baldersheim, redeemable on one year’s notice before Laetare. Recorded in the second register of Conrad’s contracts, fol. 124. Marginal note: see Baldersheim, volume 1, fol. 38.",
+      "facts": [
+        {
+          "person": "Georg von Leutzenbronn",
+          "type": "spouse",
+          "of": "Juliana von Rosenberg"
+        },
+        {
+          "person": "Juliana von Rosenberg",
+          "type": "generic",
+          "content": "lent 2,000 florins to Count Wilhelm von Henneberg at interest; the sum was later deducted from the purchase price of Amt Mainberg."
+        },
+        {
+          "person": "Juliana von Rosenberg",
+          "type": "generic",
+          "content": "was granted, with her husband Georg von Leutzenbronn and their heirs, an annual rent of 100 florins from the chamber revenues, secured on the revenues of Baldersheim."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1012_060.jpg"
+        }
+      ]
+    }
+  ]
+}

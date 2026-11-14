@@ -1,0 +1,35 @@
+{
+  "date": "1497-01-03",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "entries": [
+    {
+      "source": "Lorenz Fries, Hohe Registratur, entry 5376, Standbuch 1012, Folio: 308v, Schreiber: Lorenz Fries",
+      "url": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?eintrag=5376",
+      "german": "B. Lorentz het zwischen philipsen hern zu weinsberg dem eltern vnd asmussen riter vnd Lutharten von Rosenberg vatter vnd Sone vertrag gemacht wie sie sich der wegen halben Hasen, Huner vnd hechtrildbrech, auch flachs in die gollach zu legen Jtem des schaftribs halben in die marck zu gulchshaim [gestrichen: vnd] hans Haus laulndorfers halben, vmb dem zerhairen flachs, genomen gantz. Auf zehen des Scheffens vmb schlagung vnd fahnng der knecht vnd anders mer halten sollen actum dinstag nach sant Maryen tag anno 1497 Repta i Contractum conradi fo: 192",
+      "english": "Lorenz von Bibra, Bischof, made an agreement between Philipp, Lord von Weinsberg the Elder, and Erasmus, Ritter, and Luithardt von Rosenberg, father and son, about their dispute concerning half the rabbits, chickens, and [unclear term], and the flax laid in the Gollach; also concerning the sheep drive into the district of Gülchsheim and the matter of Hans Haus Laulndorfer, as well as the damaged flax. The agreement also addressed the shepherds’ right to strike and capture servants and other matters. Done on Tuesday after St Mary’s Day in 1497. Register of Conrad’s contracts, fol. 192.",
+      "facts": [
+        {
+          "person": "Erasmus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "entered an agreement with Philipp von Weinsberg and Luithardt von Rosenberg concerning game, flax, sheep grazing, and related disputes."
+        },
+        {
+          "person": "Luithardt von Rosenberg",
+          "type": "generic",
+          "content": "entered an agreement with Philipp von Weinsberg and Erasmus von Rosenberg concerning game, flax, sheep grazing, and related disputes."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1012_309.jpg"
+        }
+      ]
+    }
+  ]
+}

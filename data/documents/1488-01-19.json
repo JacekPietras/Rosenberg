@@ -1,0 +1,46 @@
+{
+  "date": "1488-01-19",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "entries": [
+    {
+      "source": "Lorenz Fries, Hohe Registratur, entry 5725, Standbuch 1012, Folio: 446r, Schreiber: Lorenz Fries",
+      "url": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?eintrag=5725",
+      "german": "Hieronimus von Rosenberg ritter hette in der obgemelten Rosenbergischen vhede vorderung zu Bischof Rudolfen als solt er der bischof vnd die seinen zu Musdorf schaden zugefugt, vnd 500fl an getraide so er bischof Johansen von Brun geliehen halten solt, die ward durch her Michaeln von Schwartzenburg, Cristof Marschalck rittern vnd Johan Hobach chorhern zum Newenmunster vertragen, das Bischof Rudolf dem von Rosenberg vmb sein spruch vnd vorderung nichts schuldig nach pflichtig sein sol actum Sambstag nach Sant anthonien tagk anno 1488 Recepta 4 contractum Rudolfi folio 47 originale sub ltra R. contractum Kommentar: Genauere Informationen zu der Auseinandersetzung lassen sich in den vorherigen Einträgen nachlesen.",
+      "english": "Hieronymus von Rosenberg, Ritter, had a claim against Rudolf, Bischof, during the aforesaid Rosenberg feud, alleging that the bishop and his men had caused damage to him at Musdorf, and that the bishop should retain 500 florins in grain that Hieronymus had lent to Johann von Brunn, Bischof. The matter was settled by Michael von Schwarzenberg, Herr, Christoph Marschall, Ritter, and Johann Hobach, canon of Neumünster: Rudolf, Bischof, was to owe the von Rosenberg nothing on account of his claim. Done on Saturday after St Anthony’s Day, 1488. Register of the fourth contract of Rudolf, fol. 47; original filed under letter R, contracts. Editorial note: Further details of the dispute appear in the preceding entries.",
+      "facts": [
+        {
+          "person": "Hieronymus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "claimed that Bishop Rudolf and his men had damaged his property at Musdorf."
+        },
+        {
+          "person": "Hieronymus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "claimed 500 florins in grain that he had lent to Bishop Johann von Brunn."
+        },
+        {
+          "person": "Hieronymus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "had his claims against Bishop Rudolf settled by Michael von Schwarzenburg, Christoph Marschall, Ritter, and Johann Hobach; the settlement stated that the bishop owed him nothing."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1012_446.jpg"
+        }
+      ]
+    }
+  ]
+}
