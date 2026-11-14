@@ -1,6 +1,9 @@
 {
   "date": "1402-11-29",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
   "entries": [
     {
       "source": "Regesta Boica 11 (Regesta sive rerum Boicarum autographa ad annum usque MCCC. 11 = Continuatio 7), 29 Nov. 1402",
@@ -12,6 +15,21 @@
           "person": "Hans von Rosenberg",
           "type": "generic",
           "content": "issued a quittance to the Burgraves of Nuremberg for 60 Rhenish gulden."
+        }
+      ]
+    },
+    {
+      "source": [
+        "Monumenta Zollerana 6, Nr. CCXIV",
+        "Mario Müller, Regesten zur Biografie und Herrschaft des Nürnberger Burggrafen und Brandenburger Kurfürsten Friedrich VI. (I.), Nr. 276, p. 342"
+      ],
+      "german": "Hans von Rosenberg beurkundet, dass Friedr. v. Nürnberg alle Schulden ihm gegenüber abgetragen hat.",
+      "english": "Hans von Rosenberg certifies that Friedrich von Nürnberg had repaid all debts owed to him.",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "type": "generic",
+          "content": "certified that Friedrich von Nürnberg had repaid all debts owed to him."
         }
       ]
     }

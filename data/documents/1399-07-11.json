@@ -1,0 +1,30 @@
+{
+  "date": "1399-07-11",
+  "place": "Kitzingen",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "entries": [
+    {
+      "source": [
+        "StAN, Herrschaft Schwarzenberg, Urkunden 56",
+        "Mario Müller, Regesten zur Biografie und Herrschaft des Nürnberger Burggrafen und Brandenburger Kurfürsten Friedrich VI. (I.), Nr. 131, p. 313"
+      ],
+      "german": "Friedr. v. Nürnberg bewilligt als Lehnsherr der Ehefrau Michaels von Seinsheim, Margaretha (geb. von Rosenberg), für ihre Heimsteuer von 600 Gulden die lebenslängliche Nutznießung der Vogtei Astheim cum appertinentiis. Drei Kopien; StAN, Herrschaft Schwarzenberg, Urkunden 56.",
+      "english": "Friedrich von Nürnberg, as liege lord, grants Margaretha, née von Rosenberg, wife of Michael von Seinsheim, lifetime use of the Vogtei Astheim and its appurtenances for her 600-gulden dowry. Three copies; StAN, Herrschaft Schwarzenberg, Urkunden 56.",
+      "facts": [
+        {
+          "person": "Michael von Seinsheim",
+          "type": "spouse",
+          "of": "Margaretha von Rosenberg"
+        },
+        {
+          "person": "Friedrich VI. von Nuremberg",
+          "type": "generic",
+          "content": "granted Margaretha von Rosenberg, wife of Michael von Seinsheim, lifetime use of the Vogtei Astheim and its appurtenances for her dowry."
+        }
+      ]
+    }
+  ]
+}

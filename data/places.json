@@ -1549,6 +1549,13 @@
     "showOnMap": false
   },
   {
+    "id": "seinsheim",
+    "variations": [
+      "Seinsheim"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "bischofsheim",
     "variations": [
       "Bischofsheim",
