@@ -1,6 +1,6 @@
 {
   "date": "1485-06-03",
-  "label": ["to review"],
+  "label": "to review",
   "entries": [
     {
       "source": "ISG FFM, S1-1004-05, 406",
@@ -11,7 +11,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "parent",
-          "of": "Jorgen"
+          "of": "Georg"
         },
         {
           "person": "Hans von Rosenberg",
@@ -19,7 +19,7 @@
           "content": "received the court at Bucheym from Archbishop Bertholt von Mainz as a Mannlehen through his son Jorgen."
         },
         {
-          "person": "Jorgen",
+          "person": "Georg",
           "type": "generic",
           "content": "swore the oath of fealty for the fief of the court at Bucheym."
         }

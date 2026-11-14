@@ -23,7 +23,7 @@ Busso
 Carl
 Casimir
 Caspar, Caſpar, Kaspar
-Christoph, Chriftoph, Christof, Christpoh, Christoff
+Christoph, Chriftoph, Christof, Christoff, Christpoh
 Cornelius, Cornelis
 Diether, Dieter
 Dietrich
@@ -121,7 +121,7 @@ Wolf, Wolff
 Wolfgang
 Wolfram, Wolframus
 Yttel
-Zaisolph, Seisolph, Zeisolf, Zeisolph, Zaisolff, Zeisolff, Zaisolf
+Zaisolph, Seisolph, Zaisolf, Zaisolff, Zeisolf, Zeisolff, Zeisolph
 Zeisel
 
 # Women

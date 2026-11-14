@@ -22,7 +22,7 @@
         {
           "person": "Wolf von Rosenberg",
           "type": "kin",
-          "of": "Zaisolf von Rosenberg",
+          "of": "Zaisolph von Rosenberg",
           "ofTitle": [
             "Ritter"
           ],
@@ -37,7 +37,7 @@
         {
           "person": "Christoph von Rosenberg",
           "type": "kin",
-          "of": "Zaisolf von Rosenberg",
+          "of": "Zaisolph von Rosenberg",
           "ofTitle": [
             "Ritter"
           ],
@@ -57,7 +57,7 @@
         {
           "person": "Ludwig von Rosenberg",
           "type": "kin",
-          "of": "Zaisolf von Rosenberg",
+          "of": "Zaisolph von Rosenberg",
           "ofTitle": [
             "Ritter"
           ],
@@ -70,14 +70,14 @@
           "of": "Ludwig von Rosenberg"
         },
         {
-          "person": "Zaisolf von Rosenberg",
+          "person": "Zaisolph von Rosenberg",
           "type": "generic",
           "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg after the death of his Vetter Zaisolf von Rosenberg."
         },
         {
-          "person": "Zaisolf von Rosenberg",
+          "person": "Zaisolph von Rosenberg",
           "type": "kin",
-          "of": "Zaisolf von Rosenberg",
+          "of": "Zaisolph von Rosenberg",
           "ofTitle": [
             "Ritter"
           ],
@@ -87,7 +87,7 @@
         {
           "person": "Wolf von Rosenberg",
           "type": "sibling",
-          "of": "Zaisolf von Rosenberg"
+          "of": "Zaisolph von Rosenberg"
         }
       ]
     }
