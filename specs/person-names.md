@@ -4,12 +4,14 @@ Read this file when writing a person's name in `english` or in the text of
 `facts` and `guesses` (`content`, `subject`, `term`). `german`, `latin`, and
 `summary` are copied from the source and never changed.
 
-The shared recognition logic is
-[`docs/app/data/person-name-recognition.js`](../docs/app/data/person-name-recognition.js)
-for the browser and `scripts/family_graph/person_names.py` for family graph
-prose. Both use the lists `data/names.md`, `data/nobiliary_particles.md`,
+The browser recognition logic is
+[`docs/app/data/person-name-recognition.js`](../docs/app/data/person-name-recognition.js).
+It uses `data/names.md`, `data/by-names.md`, `data/nobiliary_particles.md`,
 `data/name-connectors.md`, `data/titles-age.md`, `data/titles-office.md`, and
-place variations. Keep their behavior aligned. Look places up with
+place variations. Family-graph prose recognition is implemented separately
+in `scripts/family_graph/person_names.py`; it uses given names, particles,
+titles, connectors, by-names, and place variations. Keep their behavior aligned
+where both recognize the same forms. Look places up with
 `python3 scripts/list_place_variations.py` (`--include-churches` when relevant);
 `scripts/place_names.py` resolves building names against their settlements.
 Do not read `data/places.json` directly; it is very large.
@@ -35,7 +37,8 @@ or between the given names and the particle:
 
 | Part | Rule |
 | --- | --- |
-| Given names | One or more canonical forms from `data/names.md` (`Conradus` → `Konrad`) |
+| Given names | One or more canonical forms from `data/names.md` under `# Men` or `# Women` (`Conradus` → `Konrad`) |
+| By-names | Forms in `data/by-names.md` are never given names. When a listed form directly precedes a Rosenberg particle-place name, it joins that name into the family name: `Hans Schenk von Rosenberg` has given name `Hans` and family name `Schenk von Rosenberg`. A following `zu <place>` is ordinarily a title/place designation, not part of that family name. |
 | Ordinal | Optional roman number after the given names: `II`, `(II)`, `[II]`, `II.` |
 | Particle | `von`, `de`, `v.`, `van` … from `data/nobiliary_particles.md`, as the source has it; `v.` and `von.` become `von` |
 | Place | A canonical place variation from `list_place_variations.py` (`Ussinkeim` → `Uissigheim`) |
@@ -43,6 +46,32 @@ or between the given names and the particle:
 | Name connector | `genannt`, `called`, `known as` and listed forms introduce a designation. In constructions such as `Eberhard genannt von Rosenberg`, the following `von Rosenberg` is the designation, not a surname component. |
 | Simple titles | Single title words and epithets from `data/titles-age.md` (`der Jüngere`, `der Ältere`) and `data/titles-office.md` (`Ritter`, `Vogt`, `der Rote`); the first form of a group is canonical |
 | Full titles | A simple title with an optional `zu <place>` or `an <place>`: `Vogt zu Lauda`, `Vizedom zu Amberg` (source `Vitzthum zu Amberg`); listed places use the canonical form from the Place row. The recognizer may retain a one-word unlisted place in a recognized title, but it is not normalized; report it for the place list. |
+
+For a listed by-name followed by the Rosenberg place, `von Rosenberg` and
+`zu Rosenberg` forms identify the same family name: `Schenk von Rosenberg`
+and `Schenk zu Rosenberg` are equal family-name forms. This equivalence is
+specific to the listed by-name construction; do not generally equate `von`
+and `zu` particle-place names.
+
+By-names are maintained separately from given names because they cannot fill
+the given-name position. A listed by-name used as a person's surname is part
+of the family name even when no Rosenberg place-name follows: `Hans Schenk`
+has given name `Hans` and family name `Schenk`. A listed by-name directly
+before `von Rosenberg` likewise joins that name into the family name: `Hans
+Schenk von Rosenberg` means `Hans` + `Schenk von Rosenberg`. Here `Schenk` is
+a by-name, not a title, and `von Rosenberg` is part of the same family name.
+The source may omit the place-name, or attach `zu <place>` separately as a
+title/place designation. Without a preceding by-name, `zu <place>` remains a
+separate title/place designation when the source attaches it that way, as in
+`Hans von Rosenberg zu Lauda`. Apply these readings only where the listed
+by-name functions as the person's surname in context.
+
+Keep a birth name distinct from a later title or designation. For example,
+in `Elisabeth von Rosenberg, née Marschalk zu Pappenheim`, `von Rosenberg` is
+not her birth family name: `Marschalk zu Pappenheim` is the name introduced
+by `née`, while `von Rosenberg` is the later title/designation and must be
+preserved as such. Do not merge it into her birth name or treat it as a
+by-name construction.
 
 Canonical examples: `Konrad von Rosenberg`, `Konrad von Rosenberg der Ältere`,
 `Arnold von Uissigheim, Ritter`, `Eberhard von Rosenberg, Vogt zu Lauda`.

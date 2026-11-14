@@ -22,6 +22,11 @@ files describe how they are met. When a rule changes, change it here first.
 - Records can only be the same person if their names match: the same given name
   (using the variants in `data/names.md`) and the same surname, or one record
   without a surname.
+- In a source form `<name>, née <birth name>`, the contextual person name uses
+  the given name and birth surname after `née`. The preceding married surname
+  or designation is not part of that name. Thus `Elisabeth von Rosenberg, née
+  Marschalk zu Pappenheim` is recognized as `Elisabeth Marschalk zu
+  Pappenheim`, which can match a typed fact under that birth name.
 - A record without a surname needs family or an identifying title (office,
   designation) to join a full-name record; shared places or associates are not
   enough.

@@ -11,6 +11,7 @@ the `tree.json` format is in [`json-formats.md`](../json-formats.md).
 | `data/{documents,books,notes,images}/**/*.json` | Typed facts and guesses (assertions) and their prose |
 | `data/people.json` | Confirmed registry IDs; fixed, never changed |
 | `data/names.md` | Given-name variants and gender sections |
+| `data/by-names.md` | Historical by-names used when recognizing birth surnames in document prose |
 | `data/titles-age.md` | Age titles with equivalent variants |
 | `data/titles-office.md` | Offices, ranks, and epithets with equivalent variants; also used by policy and name recognition |
 | `data/kinship.md` | Tree positions allowed and excluded by kinship terms |
@@ -30,7 +31,8 @@ case-insensitive match from `data/distinctFamilies.md`. Skipped documents add
 no facts, guesses, or prose observations to the reconstruction.
 
 For included documents, each entry's English text is scanned with the shared
-person-name lists and contributes contextual mentions, with provenance at the
+person-name and by-name lists. Birth-name forms introduced by `née` or `nee`
+contribute contextual mentions under the birth surname, with provenance at the
 entry's `/english` pointer. This rule does not apply to books, notes, images,
 or other source types: their contextual name mentions continue to come from
 facts only. Prose mentions may support identity matching and contextual links,

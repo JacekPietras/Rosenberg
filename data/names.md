@@ -39,16 +39,17 @@ Franz, Franziskus
 Friedmann
 Friedrich, Friderich, Fridrich, Fridericus, Friderici, Friderico, Fritz, Fritze, Friz, Frize, Frederick, Fridereich
 Frizo
-Georg, Gorg, Jörg, Jorge, Jorg, Jorgen, Georgs
+Georg, Gorg, Jörg, Jorge, Jorg, Jorgen, Georgs, Goerg
 Gerhard, Gerhardus
 Gerlach
 Gotfried, Godefrid, Gottfried
 Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
-Gozwin / Goczwin / Godezwin
+Gozwin, Goczwin, Godezwin
 Hans, Johann, Hanemann, Hanse, Johannes, Hanns, Joannes, Iohannes, Johanns, Johans
 Hansolf
 Hank
 Hartlieb
+Haubt
 Hoyer
 Hartmut
 Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus, Henricus, Hainrich, Heinrici, Heinrico, Hendrici, Jindrich, Heintz
@@ -60,7 +61,7 @@ Joachim
 Jost
 Kasimir
 Kilian
-Konrad, Chuonrad, Chuonradus, Chunrat, Conradt, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat, Cunrad, Cunreth, Cunradus, Conrado, Chvnradus
+Konrad, Chuonrad, Chuonradus, Chunrat, Conradt, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat, Cunrad, Cunreth, Cunradus, Conrado, Chvnradus, Chuonrat
 Kraft, Krafto
 Kurt
 Kuno
@@ -173,19 +174,3 @@ Walpurga, Walburga
 Willertraud
 Wiltraut
 Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele, Wyklo
-
-# Other
-
-Mönch, Münch, Munch, Mönich, Monich, Münchin, Mönchin, Muench // it derives from "Monk"
-Schenk
-Lengenfelder, Lengenfelderin, Lengenfeld, Lengenvelder, Lengfeld
-Voit, Voith, Voyt, Voyth
-Raydenbach
-Stieber, Stiebar, Stiber
-Kemnater, Kempnater
-Schaffner
-Rodel
-Pirchan
-Grabner
-Wirt
-Marschalk, Marschalken, Marschalkin, Marſchalk, Marschalch

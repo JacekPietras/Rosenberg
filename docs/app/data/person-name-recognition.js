@@ -28,7 +28,53 @@ export function parsePersonNameTitles(markdown = '') {
     .filter(Boolean);
 }
 
-export function buildSourcePersonPattern(namesText, particlesText, places, titleText = '', connectorText = '') {
+export function coordinatedByNameMatches(text, titleText = '', connectorText = '', particleText = '', namesText = '', byNamesText = '', places = []) {
+  const names = alternatives(String(namesText).split(/\r?\n/)
+    .filter((line) => !line.trim().startsWith('#'))
+    .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
+  const byNames = alternatives(String(byNamesText).split(/\r?\n/)
+    .filter((line) => !line.trim().startsWith('#'))
+    .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
+  const particles = alternatives(String(particleText).split(/\r?\n/).map((line) => line.split('//')[0].trim()));
+  const placeNames = alternatives(places.flatMap((place) => place.variations || [place.name]));
+  if (!names || !byNames || !placeNames) return [];
+  const byNameVariants = new Map(String(byNamesText).split(/\r?\n/)
+    .filter((line) => !line.trim().startsWith('#'))
+    .map((line) => line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean))
+    .filter((forms) => forms.length)
+    .flatMap(([canonical, ...forms]) => [canonical, ...forms].map((form) => [form.toLocaleLowerCase(), canonical])));
+  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<first>${names})\\s+and\\s+(?<second>${names})\\s+(?<byName>${byNames})(?:\\s+(?<particle>${particles})\\s+(?<place>${placeNames}))?(?![\\p{L}\\p{N}])`, 'giu');
+  const contextPattern = new RegExp(`(?<byName>${byNames})\\s+(?<particle>${particles})\\s+(?<place>${placeNames})`, 'giu');
+  const matches = [];
+  for (const match of String(text).matchAll(pattern)) {
+    let suffix = match.groups.particle && match.groups.place
+      ? `${match.groups.particle} ${match.groups.place}`
+      : '';
+    if (!suffix) {
+      const before = String(text).slice(0, match.index);
+      const prior = [...before.matchAll(contextPattern)].at(-1);
+      if (prior && byNameVariants.get(prior.groups.byName.toLocaleLowerCase())
+          === byNameVariants.get(match.groups.byName.toLocaleLowerCase())) {
+        suffix = `${prior.groups.particle} ${prior.groups.place}`;
+      }
+    }
+    matches.push({
+      text: match[0],
+      start: match.index,
+      end: match.index + match[0].length,
+      routes: [match.groups.first, match.groups.second].map((givenName) =>
+        personRouteName(`${givenName} ${match.groups.byName} ${suffix}`.trim(),
+          titleText, connectorText, particleText, namesText, byNamesText)),
+    });
+  }
+  return matches;
+}
+
+export function coordinatedByNameRouteNames(...args) {
+  return coordinatedByNameMatches(...args).flatMap((match) => match.routes);
+}
+
+export function buildSourcePersonPattern(namesText, particlesText, places, titleText = '', connectorText = '', byNamesText = '') {
   const nameForms = String(namesText || '').split(/\r?\n/)
     .filter((line) => !line.trim().startsWith('#'))
     .flatMap((line) => line.split('//')[0].split(',').map((name) => name.trim()).filter(Boolean));
@@ -41,6 +87,9 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const placeNames = alternatives(places.flatMap((place) => place.variations || [place.name]));
   const titles = alternatives(parsePersonNameTitles(titleText));
   const connectors = alternatives(String(connectorText).split(/\r?\n/)
+    .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
+  const byNames = alternatives(String(byNamesText).split(/\r?\n/)
+    .filter((line) => !line.trim().startsWith('#'))
     .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
   if (!names || !particles || !placeNames) return null;
   const romanOrdinal = '(?:\\s+(?:\\(\\s*[IVXLCDM]+\\s*\\)|\\[\\s*[IVXLCDM]+\\s*\\]|[IVXLCDM]+\\.?))?';
@@ -56,19 +105,60 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const leadingConnector = connectors ? `(?:(?:${connectors})\\s+)?` : '';
   const namingConnector = connectors ? `(?:\\s+(?:${connectors}))?` : '';
   const alternateDesignation = connectors ? `(?:[\\s,;]+(?:${connectors})[\\s,;]+${particle}\\s+${placeClause})?` : '';
-  const birthSurname = `[\\s,;]+(?:née|nee)[\\s,;]+(?:von|v\\.?|van|de|in|der|die|das|des|of)\\s+(?:${placeNames})`;
-  const surname = `(?:[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}${alternateDesignation}|${birthSurname})`;
+  const birthSurname = `[\\s,;]+(?:née|nee)[\\s,;]+(?:(?:${names}|${byNames})\\s+)?(?:von|v\\.?|van|de|in|der|die|das|des|of|zu)\\s+(?:${placeNames})`;
+  const byNameSurname = byNames ? `[\\s,]+(?:${byNames})(?:\\s+(?:${particle})\\s+(?:${placeNames}))?${placeNote}${suffixTitles}` : '(?!)';
+  const surname = `(?:${byNameSurname}|[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}${alternateDesignation}(?:${birthSurname})?|${birthSurname}|[\\s,]+(?:${placeNames})${birthSurname}|[\\s,]+(?:${placeNames}))`;
   return new RegExp(`(?<![\\p{L}\\p{N}])${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}${surname}(?![\\p{L}\\p{N}])`, 'giu');
 }
 
-export function personRouteName(name, titleText = '', connectorText = '', particleText = '') {
+export function personRouteName(name, titleText = '', connectorText = '', particleText = '', namesText = '', byNamesText = '') {
   const titles = alternatives(parsePersonNameTitles(titleText));
   const connectors = alternatives(String(connectorText).split(/\r?\n/)
     .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
   const particles = alternatives(String(particleText).split(/\r?\n/).map((line) => line.split('//')[0].trim()));
+  const variantMap = (text) => new Map(String(text).split(/\r?\n/)
+    .filter((line) => line.trim() && !line.trim().startsWith('#'))
+    .map((line) => line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean))
+    .filter((forms) => forms.length > 0)
+    .flatMap(([canonical, ...forms]) => [canonical, ...forms].map((form) => [form.toLocaleLowerCase(), canonical])));
+  const canonicalGiven = variantMap(namesText);
+  const canonicalByName = variantMap(byNamesText);
+  const particleForms = String(particleText).split(/\r?\n/).map((line) => line.split('//')[0].trim()).filter(Boolean);
+  const normalizeRouteName = (value) => {
+    const parts = String(value).trim().split(/\s+/);
+    if (!parts.length) return '';
+    const byNameIndex = parts.findIndex((part, index) => index > 0 && canonicalByName.has(part.toLocaleLowerCase()));
+    const particleIndex = parts.findIndex((part, index) => index > 0 && particleForms.some((particle) => particle.toLocaleLowerCase() === part.toLocaleLowerCase()));
+    const familyIndex = byNameIndex >= 0 ? byNameIndex : particleIndex >= 0 ? particleIndex : 1;
+    for (let index = 0; index < familyIndex; index += 1) {
+      parts[index] = canonicalGiven.get(parts[index].toLocaleLowerCase()) || parts[index];
+    }
+    if (byNameIndex >= 0) parts[byNameIndex] = canonicalByName.get(parts[byNameIndex].toLocaleLowerCase()) || parts[byNameIndex];
+    if (particleIndex >= 0) {
+      const particle = parts[particleIndex].toLocaleLowerCase();
+      if (particle === 'v.' || particle === 'von.') parts[particleIndex] = 'von';
+      if (byNameIndex >= 0 && particleIndex === byNameIndex + 1 && parts[particleIndex + 1]?.toLocaleLowerCase() === 'rosenberg'
+          && ['zu', 'v', 'v.', 'von.'].includes(particle)) parts[particleIndex] = 'von';
+    }
+    return parts.join(' ');
+  };
+  const birthName = String(name).match(/^(.*?)[\s,;]+(?:née|nee)[\s,;]+(.+)$/iu);
+  if (birthName) {
+    const marriedRoute = personRouteName(birthName[1], titleText, connectorText, particleText, namesText, byNamesText);
+    const particleSurname = particles && new RegExp(`[\\s,;]+(?:${particles}|of)\\s+.+$`, 'iu').test(marriedRoute);
+    const givenNames = particleSurname
+      ? marriedRoute.replace(new RegExp(`[\\s,;]+(?:${particles}|of)\\s+.+$`, 'iu'), '')
+      : marriedRoute.replace(/[\s,;]+\S+$/u, '');
+    const canonicalGivenNames = givenNames.replace(/[\p{L}’'-]+/gu,
+      (form) => canonicalGiven.get(form.toLocaleLowerCase()) || form);
+    return normalizeRouteName(`${canonicalGivenNames} ${birthName[2]}`);
+  }
   const ordinal = '(?:\\s+(?:\\(\\s*[IVXLCDM]+\\s*\\)|\\[\\s*[IVXLCDM]+\\s*\\]|[IVXLCDM]+\\.?))?';
   const titleSequence = titles ? `(?:[\\s,]+(?:${titles}))*` : '';
-  return String(name)
+  const byNameForms = [];
+  String(byNamesText).split(/\r?\n/).filter((line) => !line.trim().startsWith('#'))
+    .forEach((line) => line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean).forEach((form) => byNameForms.push(form)));
+  let routeName = String(name)
     .replace(/[\s,;]+(?:née|nee)[\s,;]+/iu, ' ')
     .replace(new RegExp(`^(?:${titles})[\\s,;]+(?:${connectors})[\\s,;]+`, 'iu'), '')
     .replace(new RegExp(`^(?:${titles}(?:\\s+(?:zu|an|of)\\s+[^,]+)?[\\s,;]+)+`, 'iu'), '')
@@ -79,4 +169,9 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     .replace(new RegExp(`[\\s,;]+(?:${connectors})[\\s,;]+(?:${particles})\\s+[^,;]+$`, 'iu'), '')
     .replace(/\s*\([^)]*\)$/u, '')
     .trim();
+  if (byNameForms.length) {
+    const byNamePattern = alternatives(byNameForms);
+    routeName = routeName.replace(new RegExp(`\\b(${byNamePattern})[\\s,;]+(?:zu|von|v\\.?|von\\.)[\\s,;]+(Rosenberg)\\b`, 'iu'), '$1 von $2');
+  }
+  return normalizeRouteName(routeName);
 }

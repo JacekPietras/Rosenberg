@@ -1556,6 +1556,16 @@
     "showOnMap": false
   },
   {
+    "id": "pappenheim",
+    "variations": [
+      "Pappenheim",
+      "Bappenhaim",
+      "Pappenhaim",
+      "Bappenheim"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "seinsheim",
     "variations": [
       "Seinsheim"

@@ -1,7 +1,7 @@
 import { factDate } from '../rendering/facts.js?v=9';
 import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=9';
-import { personRouteName } from '../data/person-name-recognition.js?v=6';
+import { coordinatedByNameMatches, personRouteName } from '../data/person-name-recognition.js?v=12';
 
 export function createDocumentRenderer({
   state,
@@ -48,7 +48,7 @@ export function createDocumentRenderer({
     const addPerson = (reference) => {
       if (typeof reference !== 'string') return;
       const name = peopleById.get(reference) || reference;
-      const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText).toLocaleLowerCase();
+      const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText).toLocaleLowerCase();
       if (key && !found.has(key)) found.set(key, name);
     };
     const collectFactPeople = (value) => {
@@ -68,10 +68,18 @@ export function createDocumentRenderer({
     visitFacts(doc);
     const patterns = [state.sourcePersonPattern, ...(state.personPattern || []).map(({ pattern }) => pattern)].filter(Boolean);
     for (const text of documentStrings(doc)) {
+      const coordinatedMatches = coordinatedByNameMatches(text, state.personNameTitlesText, state.nameConnectorsText,
+        state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places);
+      for (const name of coordinatedMatches.flatMap((match) => match.routes)) {
+        const key = name.toLocaleLowerCase();
+        if (!found.has(key)) found.set(key, name);
+      }
       for (const sourcePattern of patterns) {
         for (const match of text.matchAll(sourcePattern)) {
+          const matchStart = match.index;
+          if (coordinatedMatches.some((group) => group.start <= matchStart && matchStart + match[0].length <= group.end)) continue;
           const name = match[0];
-          const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText).toLocaleLowerCase();
+          const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText).toLocaleLowerCase();
           if (!found.has(key)) found.set(key, name);
         }
       }

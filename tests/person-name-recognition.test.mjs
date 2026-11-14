@@ -3,13 +3,15 @@ import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { moduleUrl } from './browser-module.mjs';
 
-const { buildSourcePersonPattern, personMentionClass, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
-const names = '# Men\nArnold, Arnolt\nAnna\nKonrad, Conradus\nEberhard\nEbirhart\nGeorg\nHans\nHeinrich\nJohann\nMargaretha\nMarschalk\nMichael\nPeter\nWilhelm\nWiprecht\n# Women\nElsbeth';
+const { buildSourcePersonPattern, coordinatedByNameMatches, coordinatedByNameRouteNames, personMentionClass, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
+const names = '# Men\nArnold, Arnolt\nAnna\nKonrad, Conradus\nEberhard\nEbirhart\nGeorg\nHans\nHeinrich\nHartmut\nJohann\nMargaretha\nMichael\nPeter\nWilhelm\nWiprecht\n# Women\nElisabeth, Elsbeth';
 const particles = 'von\nv.\nvon.\nde\nan\nvan\nzu';
 const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }, { name: 'Michelsberg', variations: ['Michelsberg'] }, { name: 'Landstein', variations: ['Landstein'] }, { name: 'Helmstadt', variations: ['Helmstadt'] }, { name: 'Pappenheim', variations: ['Pappenheim'] }, { name: 'Marschalk', variations: ['Marschalk'] }];
 const titles = '# Younger\nder Jüngere, the Younger\nder Junge\n# Older\nder Ältere, the Elder, the Older\nder Alte\n# Offices and ranks\nAmtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman\nRitter, Ritters, miles, Knight\nVogt, advocatus\nVizedom, Vitzthum, Vizthum, Vitztum, Vizdom\nder Rote, Rufus';
 const connectors = await readFile(new URL('../data/name-connectors.md', import.meta.url), 'utf8');
-const pattern = buildSourcePersonPattern(names, particles, places, titles, connectors);
+const projectNames = await readFile(new URL('../data/names.md', import.meta.url), 'utf8');
+const byNames = await readFile(new URL('../data/by-names.md', import.meta.url), 'utf8');
+const pattern = buildSourcePersonPattern(names, particles, places, titles, connectors, byNames);
 
 test('recognizes the documented canonical and reordered name forms', () => {
   for (const form of [
@@ -26,10 +28,55 @@ test('recognizes the documented canonical and reordered name forms', () => {
   }
 });
 
-test('recognizes Elsbeth Rosenberg with her Marschalk birth surname', () => {
-  pattern.lastIndex = 0;
-  assert.equal(pattern.exec('Issuer 2: Elsbeth Rosenberg, née Marschalk von Pappenheim')?.[0],
-    'Elsbeth Rosenberg, née Marschalk von Pappenheim');
+test('recognizes listed by-names alone and as part of Rosenberg family names', () => {
+  for (const form of ['Hans Schenk', 'Hans Schenk von Rosenberg', 'Hans Schenk zu Rosenberg']) {
+    pattern.lastIndex = 0;
+    assert.equal(pattern.exec(form)?.[0], form);
+  }
+  assert.equal(personRouteName('Hans Schenk von Rosenberg', titles, connectors, particles, names, byNames),
+    personRouteName('Hans Schenk zu Rosenberg', titles, connectors, particles, names, byNames));
+  assert.equal(personRouteName('Hans von Rosenberg', titles, connectors, particles, names, byNames),
+    'Hans von Rosenberg');
+  assert.equal(personRouteName('Hans zu Rosenberg', titles, connectors, particles, names, byNames),
+    'Hans zu Rosenberg');
+  assert.notEqual(personRouteName('Hans von Rosenberg', titles, connectors, particles, names, byNames),
+    personRouteName('Hans zu Rosenberg', titles, connectors, particles, names, byNames));
+});
+
+test('recognizes and routes married-name forms by their listed birth surname', () => {
+  for (const form of [
+    'Elsbeth Rosenberg, née Marschalk zu Pappenheim',
+    'Elisabeth von Rosenberg, née Marschalk zu Pappenheim'
+  ]) {
+    pattern.lastIndex = 0;
+    assert.equal(pattern.exec(form)?.[0], form);
+    assert.equal(personRouteName(form, titles, connectors, particles, names, byNames),
+      'Elisabeth Marschalk zu Pappenheim');
+  }
+});
+
+test('recognizes Elsbeth Rosenberg with her Marschalk birth surname as one mention', () => {
+  const phrase = 'Issuer 2: Elsbeth Rosenberg, née Marschalk zu Pappenheim';
+  const noMarschalkPlace = buildSourcePersonPattern(names, particles,
+    places.filter((place) => place.name !== 'Marschalk'), titles, connectors, byNames);
+  noMarschalkPlace.lastIndex = 0;
+  assert.deepEqual([...phrase.matchAll(noMarschalkPlace)].map((match) => match[0]), [
+    'Elsbeth Rosenberg, née Marschalk zu Pappenheim'
+  ]);
+  assert.equal(personRouteName('Elsbeth Rosenberg, née Marschalk zu Pappenheim', titles, connectors, particles, names),
+    'Elisabeth Marschalk zu Pappenheim');
+});
+
+test('recognizes Elisabeth von Rosenberg with her Marschalk birth surname as one mention', () => {
+  const phrase = 'Sealer 2: Elisabeth von Rosenberg, née Marschalk zu Pappenheim';
+  const noMarschalkPlace = buildSourcePersonPattern(names, particles,
+    places.filter((place) => place.name !== 'Marschalk'), titles, connectors, byNames);
+  noMarschalkPlace.lastIndex = 0;
+  assert.deepEqual([...phrase.matchAll(noMarschalkPlace)].map((match) => match[0]), [
+    'Elisabeth von Rosenberg, née Marschalk zu Pappenheim'
+  ]);
+  assert.equal(personRouteName('Elisabeth von Rosenberg, née Marschalk zu Pappenheim', titles, connectors, particles, names),
+    'Elisabeth Marschalk zu Pappenheim');
 });
 
 test('recognizes brothers with their shared Marschalk zu Pappenheim title', () => {
@@ -188,4 +235,26 @@ test('routes title variants to the title-free person name', () => {
   assert.equal(personRouteName('Arnold Ritter von Uissigheim', titles), 'Arnold von Uissigheim');
   assert.equal(personRouteName('Konrad von Rosenberg der Ältere', titles), 'Konrad von Rosenberg');
   assert.equal(personRouteName('Hartmut of Rosenberg the Younger', titles), 'Hartmut of Rosenberg');
+  assert.equal(personRouteName('Hans Schenk zu Rosenberg', titles, connectors, particles, names, byNames),
+    'Hans Schenk von Rosenberg');
+});
+
+test('routes spelling variants to the canonical given name and by-name', () => {
+  assert.equal(personRouteName('Hainrich Marschalken zu Pappenheim', titles, connectors, particles,
+    projectNames, byNames), 'Heinrich Marschalk zu Pappenheim');
+});
+
+test('recognizes coordinated brothers under their shared by-name and inherited place', () => {
+  const source = 'Hainrich Marschalk zu Pappenheim, also acting for his brothers Goerg and Chuonrat Marschalken, acknowledges that he sold the Pappenheim convent';
+  pattern.lastIndex = 0;
+  const directRoutes = [...source.matchAll(buildSourcePersonPattern(projectNames, particles, places, titles, connectors, byNames))]
+    .map((match) => personRouteName(match[0], titles, connectors, particles, projectNames, byNames));
+  const coordinated = coordinatedByNameMatches(source, titles, connectors, particles, projectNames, byNames, places);
+  assert.deepEqual([...directRoutes.slice(0, 1), ...coordinated.flatMap((match) => match.routes)], [
+    'Heinrich Marschalk zu Pappenheim',
+    'Georg Marschalk zu Pappenheim',
+    'Konrad Marschalk zu Pappenheim'
+  ]);
+  assert.equal(directRoutes.length, 2);
+  assert.equal(directRoutes[1], 'Konrad Marschalk');
 });

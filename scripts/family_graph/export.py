@@ -175,11 +175,13 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
         particles = particles_path.read_text(encoding='utf-8') if particles_path.exists() else ''
         connectors_path = root / 'data/name-connectors.md'
         connectors = connectors_path.read_text(encoding='utf-8') if connectors_path.exists() else ''
+        by_names_path = root / 'data/by-names.md'
+        by_names = by_names_path.read_text(encoding='utf-8') if by_names_path.exists() else ''
         title_parts = [(root / name).read_text(encoding='utf-8') for name in
                        ('data/titles-age.md', 'data/titles-office.md') if (root / name).exists()]
         title_text = '\n'.join(title_parts)
         places = json.loads((root / 'data/places.json').read_text(encoding='utf-8'))
-        recognizer = PersonNameRecognizer(names_text, particles, places, title_text, connectors)
+        recognizer = PersonNameRecognizer(names_text, particles, places, title_text, connectors, by_names)
 
     def source(ref, view):
         path, pointer = ref.get('path', ''), ref.get('pointer', '')

@@ -16,12 +16,13 @@ def recognizer():
     names = (ROOT / 'data/names.md').read_text(encoding='utf-8')
     particles = (ROOT / 'data/nobiliary_particles.md').read_text(encoding='utf-8')
     connectors = (ROOT / 'data/name-connectors.md').read_text(encoding='utf-8')
+    by_names = (ROOT / 'data/by-names.md').read_text(encoding='utf-8')
     titles = '\n'.join([
         (ROOT / 'data/titles-age.md').read_text(encoding='utf-8'),
         (ROOT / 'data/titles-office.md').read_text(encoding='utf-8'),
     ])
     places = json.loads((ROOT / 'data/places.json').read_text(encoding='utf-8'))
-    return PersonNameRecognizer(names, particles, places, titles, connectors)
+    return PersonNameRecognizer(names, particles, places, titles, connectors, by_names)
 
 
 class PersonNameRecognitionTests(unittest.TestCase):
@@ -44,6 +45,13 @@ class PersonNameRecognitionTests(unittest.TestCase):
                      if ref.kind == 'text']
         self.assertEqual([('/entries/0/english', 'text')], [(ref.pointer, ref.kind) for ref in document_refs])
         self.assertFalse(book_refs)
+
+    def test_birth_surname_replaces_later_designation_for_context_name(self):
+        names = recognizer().find(
+            'Issuer: Elsbeth Rosenberg, née Marschalk zu Pappenheim. '
+            'Sealer: Elisabeth von Rosenberg, née Marschalk zu Pappenheim.'
+        )
+        self.assertEqual({'Elsbeth Marschalk zu Pappenheim', 'Elisabeth Marschalk zu Pappenheim'}, names)
 
 
 if __name__ == '__main__':

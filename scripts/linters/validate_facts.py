@@ -119,6 +119,14 @@ class Validator:
                     self.given_name_variants[form.casefold()] = forms[0]
                     if gender:
                         self.given_name_genders.setdefault(form.casefold(), set()).add(gender)
+            by_names_path = self.root / 'data/by-names.md'
+            if by_names_path.exists():
+                self.by_name_variants = {
+                    form.strip().casefold()
+                    for line in by_names_path.read_text(encoding='utf-8').splitlines()
+                    for form in line.split('//', 1)[0].split(',')
+                    if form.strip()
+                }
             places = json.loads((self.root / 'data/places.json').read_text(encoding='utf-8'))
             for place in resolve_place_names(places):
                 variations = place.get('variations', [])
@@ -190,6 +198,8 @@ class Validator:
             valid_shape = (
                 re.fullmatch(r'\S+(?:\s+\S+)?', value)
                 or re.fullmatch(r'\S+(?:\s+\S+)*\s+von\s+\S+(?:\s+\S+)*', value)
+                or (len(value.split()) >= 3 and value.split()[1].casefold() in getattr(self, 'by_name_variants', set())
+                    and value.split()[2].casefold() in {'von', 'zu'} and len(value.split()) >= 4)
                 or value in self.person_names
             )
             if not valid_shape:

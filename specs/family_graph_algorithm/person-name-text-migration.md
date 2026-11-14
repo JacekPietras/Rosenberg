@@ -11,7 +11,7 @@ family relationship assertions.
 ## Migration steps
 
 1. Port the recognizer's matching behavior for family graph use, driven by the
-   same names, nobiliary particles, connectors, titles, and place variations as
+   same given names, by-names, nobiliary particles, connectors, titles, and place variations as
    `docs/app/data/person-name-recognition.js`. Keep its rules aligned with
    `specs/person-names.md`.
 2. Collect each document entry's `english` field as a contextual observation;
@@ -35,6 +35,10 @@ family relationship assertions.
   identity still requires an explicit ID or the graph's existing evidence.
 - Repeated occurrences of one recognized name in an entry count as one
   contextual mention.
+- For a form introduced by `née` or `nee`, use the given name and birth name
+  as the contextual name; do not also emit the preceding married surname as a
+  separate contextual person. For example, `Elisabeth von Rosenberg, née
+  Marschalk zu Pappenheim` yields `Elisabeth Marschalk zu Pappenheim`.
 - Distinct namesakes remain separate unless existing typed evidence joins
   them. A name mention alone does not make two people the same person.
 - Text evidence is not a fact or guess and must not affect fact-versus-guess

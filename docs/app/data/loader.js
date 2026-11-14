@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildSourcePersonPattern } from './person-name-recognition.js?v=6';
+import { buildSourcePersonPattern } from './person-name-recognition.js?v=12';
 import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=11';
 
 export function createDataLoader({
@@ -67,11 +67,12 @@ export function createDataLoader({
     const showBookEarly = !familyOnly && bookPathsForStartup.length > 0;
     let earlyBooks;
     if (showBookEarly) {
-      const [placesText, peopleText, namesText, particlesText, personNameTitlesText, nameConnectorsText, entries] = await Promise.all([
+      const [placesText, peopleText, namesText, particlesText, personNameTitlesText, nameConnectorsText, byNamesText, entries] = await Promise.all([
         repository.getText('data/places.json'), repository.getText('data/people.json'),
         repository.getText('data/names.md'), repository.getText('data/nobiliary_particles.md'),
         Promise.all(['data/titles-age.md', 'data/titles-office.md'].map((path) => repository.getText(path))).then((texts) => texts.join('\n')),
         repository.getText('data/name-connectors.md'),
+        repository.getText('data/by-names.md'),
         Promise.all(bookPathsForStartup.map(async (path) => [path, await repository.getJson(path)])),
       ]);
       earlyBooks = new Map(entries);
@@ -81,8 +82,10 @@ export function createDataLoader({
       state.personPattern = buildPersonPattern(state.people);
       state.personNameTitlesText = personNameTitlesText;
       state.nameConnectorsText = nameConnectorsText;
+      state.personNamesText = namesText;
       state.nobiliaryParticlesText = particlesText;
-      state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places, personNameTitlesText, nameConnectorsText);
+      state.byNamesText = byNamesText;
+      state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places, personNameTitlesText, nameConnectorsText, byNamesText);
       state.buildingPattern = buildPlacePattern(state.places.filter((place) => ['castle', 'church'].includes(place.category)));
       state.placePattern = buildPlacePattern(state.places);
       const ordered = [...bookPathsForStartup].sort((left, right) => bookSortYear(earlyBooks.get(right), right) - bookSortYear(earlyBooks.get(left), left) || left.localeCompare(right));
@@ -94,7 +97,7 @@ export function createDataLoader({
       await renderActive();
     }
     mark('sourcesStart');
-    const [placesText, calibrationCitiesText, peopleText, particlesText, namesText, personNameTitlesText, nameConnectorsText, distinctFamiliesText, documents] = await Promise.all([
+    const [placesText, calibrationCitiesText, peopleText, particlesText, namesText, personNameTitlesText, nameConnectorsText, byNamesText, distinctFamiliesText, documents] = await Promise.all([
       repository.getText('data/places.json'),
       repository.getText('docs/assets/calibration-cities.json'),
       repository.getText('data/people.json'),
@@ -102,6 +105,7 @@ export function createDataLoader({
       repository.getText('data/names.md'),
       Promise.all(['data/titles-age.md', 'data/titles-office.md'].map((path) => repository.getText(path))).then((texts) => texts.join('\n')),
       repository.getText('data/name-connectors.md'),
+      repository.getText('data/by-names.md'),
       repository.getText('data/distinctFamilies.md'),
       new Map(await Promise.all(paths.map(async (path) => [path, earlyBooks?.has(path) ? earlyBooks.get(path) : await repository.getJson(path)]))),
     ]);
@@ -125,8 +129,10 @@ export function createDataLoader({
     state.personPattern = buildPersonPattern(state.people);
     state.personNameTitlesText = personNameTitlesText;
     state.nameConnectorsText = nameConnectorsText;
+    state.personNamesText = namesText;
     state.nobiliaryParticlesText = particlesText;
-    state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places, personNameTitlesText, nameConnectorsText);
+    state.byNamesText = byNamesText;
+    state.sourcePersonPattern = buildSourcePersonPattern(namesText, particlesText, state.places, personNameTitlesText, nameConnectorsText, byNamesText);
     state.buildingPattern = buildPlacePattern(state.places.filter((place) => ['castle', 'church'].includes(place.category)));
     state.placePattern = buildPlacePattern(state.places);
     const bookPaths = paths

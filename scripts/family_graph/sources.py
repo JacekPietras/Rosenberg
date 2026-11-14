@@ -39,7 +39,7 @@ def source_paths(root):
 
 
 def input_manifest(root, people=None):
-    paths = source_paths(root) + [root / 'data/names.md', root / 'data/nobiliary_particles.md', root / 'data/name-connectors.md', root / 'data/titles-age.md', root / 'data/titles-office.md', root / 'data/kinship.md', root / 'data/places.json', root / 'data/matching.json', root / 'data/distinctFamilies.md']
+    paths = source_paths(root) + [root / 'data/names.md', root / 'data/by-names.md', root / 'data/nobiliary_particles.md', root / 'data/name-connectors.md', root / 'data/titles-age.md', root / 'data/titles-office.md', root / 'data/kinship.md', root / 'data/places.json', root / 'data/matching.json', root / 'data/distinctFamilies.md']
     manifest = {}
     for path in sorted(set(paths)):
         if not path.exists():
@@ -161,7 +161,9 @@ def load_inputs(root, validate=True):
     particles = particles_path.read_text(encoding='utf-8') if particles_path.exists() else ''
     connectors_path = root / 'data/name-connectors.md'
     connectors = connectors_path.read_text(encoding='utf-8') if connectors_path.exists() else ''
-    title_names.recognizer = PersonNameRecognizer(names, particles, places, titles, connectors)
+    by_names_path = root / 'data/by-names.md'
+    by_names = by_names_path.read_text(encoding='utf-8') if by_names_path.exists() else ''
+    title_names.recognizer = PersonNameRecognizer(names, particles, places, titles, connectors, by_names)
     canonical_titles = {}
     for assertion in assertions:
         for mention in assertion.mentions:

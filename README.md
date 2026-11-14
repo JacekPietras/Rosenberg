@@ -17,6 +17,7 @@ data/
 ├── tree.json     # Generated family graph and calculation results
 ├── matching.json # Global probability model parameters
 ├── names.md      # Historical given-name variants under # Men / # Women
+├── by-names.md   # Historical by-names, never used as given names
 ├── name-connectors.md # Variants of terms introducing an alternate surname
 ├── distinctFamilies.md # Family labels excluded by default in document filters
 ├── titles-age.md     # Younger/older title classes and their forms
@@ -364,8 +365,10 @@ matching fact records mention each place; repeated mentions in one record count 
 
 Straightforward personal-name spelling variations are listed in
 [`data/names.md`](data/names.md), one group per line with the canonical form
-first, sorted under `# Men`, `# Women`, and `# Other` (non-given names). The
-section gives the gender used by the family-tree reconstruction.
+first, sorted under `# Men` and `# Women`. The section gives the gender used
+by the family-tree reconstruction. Historical by-names that cannot be given
+names are listed separately in [`data/by-names.md`](data/by-names.md); their
+surname-boundary rule is in [`specs/person-names.md`](specs/person-names.md).
 
 ### Titles
 

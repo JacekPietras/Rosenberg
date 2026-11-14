@@ -245,7 +245,7 @@ comparison, goes to the gitignored `.cache/tree-debug.json` for
 | Key | Content |
 | --- | --- |
 | `configuration` | `searchLimit`, the bound for registry diagnostics |
-| `inputs` | Path → fingerprint for every source JSON in books/documents/notes/images, `data/names.md`, `nobiliary_particles.md`, `name-connectors.md`, `titles-age.md`, `titles-office.md`, `kinship.md`, `places.json`, `matching.json`, `distinctFamilies.md`, and the registry (IDs and names only). Scripts and the tree itself are not inputs. |
+| `inputs` | Path → fingerprint for every source JSON in books/documents/notes/images, `data/names.md`, `data/by-names.md`, `nobiliary_particles.md`, `name-connectors.md`, `titles-age.md`, `titles-office.md`, `kinship.md`, `places.json`, `matching.json`, `distinctFamilies.md`, and the registry (IDs and names only). Scripts and the tree itself are not inputs. |
 | `fingerprint` | Fingerprint of `inputs` |
 | `evidence` | Graph per view (`with-guesses`) |
 | `matchingBackground` | Per view, factual full-name counts and their weighted total |

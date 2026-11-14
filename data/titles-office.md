@@ -4,7 +4,7 @@
 
 // offices
 Amtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman
-Vogt, Voigt, advocatus, Vogtei, Voyt, Foyt, Voit, Voget, voyd
+Vogt, Voigt, advocatus, Vogtei, Voyt, Foyt, Voit, Voget, voyd, Vogts
 Vizedom, Vicedom, Vitzthum, Vizthum, Vitztum, Viztum, Vizdom, vicedominus, Vicar, Viztums
 Keller, Kelner, cellerarius
 Domherr, canonicus, Kanoniker, Kanonikus

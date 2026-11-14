@@ -4,22 +4,43 @@ import test from 'node:test';
 import { moduleUrl } from './browser-module.mjs';
 
 const { parsePlaces, buildPlacePattern, buildPersonPattern, buildSourcePersonPattern } = await import(await moduleUrl(new URL('../docs/app/data/entities.js', import.meta.url)));
+const { personMentionClass } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
 const { createMarkupRenderer } = await import(await moduleUrl(new URL('../docs/app/rendering/markup.js', import.meta.url)));
 
 test('source names take precedence over places and explicit IDs remain specific', async () => {
-  const [names, particles, placesJson] = await Promise.all(['names.md', 'nobiliary_particles.md', 'places.json']
+  const [names, particles, placesJson, byNames] = await Promise.all(['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md']
     .map((file) => readFile(new URL(`../data/${file}`, import.meta.url), 'utf8')));
   const places = parsePlaces(placesJson);
   const people = [{ id: 'hans_id', name: 'Hans von Rosenberg' }, { id: 'irmtraut', name: 'Irmtraut' }];
   const state = { people, places, personPattern: buildPersonPattern(people),
-    sourcePersonPattern: buildSourcePersonPattern(names, particles, places), placePattern: buildPlacePattern(places) };
+    byNamesText: byNames, personNamesText: names, nobiliaryParticlesText: particles,
+    sourcePersonPattern: buildSourcePersonPattern(names, particles, places, '', '', byNames), placePattern: buildPlacePattern(places) };
   const { inlineMarkup } = createMarkupRenderer({ state });
-  const person = (name) => `<a class="person-link" href="?person=${encodeURIComponent(name)}">${name}</a>`;
+  const person = (name) => `<a class="person-link ${personMentionClass(name)}" href="?person=${encodeURIComponent(name)}">${name}</a>`;
   assert.equal(inlineMarkup('Margaretha von Rosenberg'), person('Margaretha von Rosenberg'));
   assert.equal(inlineMarkup('Hans Mönch von Rosenberg'), person('Hans Mönch von Rosenberg'));
-  assert.equal(inlineMarkup('Margaretha v. Rosenberg'), person('Margaretha v. Rosenberg'));
-  assert.equal(inlineMarkup('[hans_id]'), '<a class="person-link" href="?person=hans_id">Hans von Rosenberg</a>');
+  assert.equal(inlineMarkup('Margaretha v. Rosenberg'),
+    `<a class="person-link ${personMentionClass('Margaretha v. Rosenberg')}" href="?person=${encodeURIComponent('Margaretha von Rosenberg')}">Margaretha v. Rosenberg</a>`);
+  assert.equal(inlineMarkup('[hans_id]'), '<a class="person-link person-id-link" href="?person=hans_id">Hans von Rosenberg</a>');
   assert.equal(inlineMarkup('Irmtraut'), person('Irmtraut'));
   assert.match(inlineMarkup('Rosenberg'), /^<a class="place-link"/);
   assert.doesNotMatch(inlineMarkup('Unknown von Rosenberg'), /class="person-link"/);
+});
+
+test('coordinated by-name mentions link each brother to the inherited place route', async () => {
+  const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
+  const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files
+    .map((file) => readFile(new URL(`../data/${file}`, import.meta.url), 'utf8')));
+  const places = parsePlaces(placesJson);
+  const titles = `${ageTitles}\n${officeTitles}`;
+  const people = [];
+  const state = { people, places, personPattern: [], personNamesText: names, byNamesText: byNames,
+    nobiliaryParticlesText: particles, nameConnectorsText: connectors, personNameTitlesText: titles,
+    sourcePersonPattern: buildSourcePersonPattern(names, particles, places, titles, connectors, byNames),
+    placePattern: buildPlacePattern(places) };
+  const { inlineMarkup } = createMarkupRenderer({ state });
+  const rendered = inlineMarkup('Hainrich Marschalk zu Pappenheim, also acting for his brothers Goerg and Chuonrat Marschalken, acknowledges that he sold the Pappenheim convent');
+  assert.match(rendered, /href="\?person=Heinrich%20Marschalk%20zu%20Pappenheim"/u);
+  assert.match(rendered, /href="\?person=Georg%20Marschalk%20zu%20Pappenheim"/u);
+  assert.match(rendered, /href="\?person=Konrad%20Marschalk%20zu%20Pappenheim"/u);
 });
