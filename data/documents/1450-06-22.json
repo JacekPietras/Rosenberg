@@ -1,7 +1,10 @@
 {
   "date": "1450-06-22",
   "place": "Bamberg",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
   "entries": [
     {
       "source": "BayHStA, Kurpfalz Urkunden 1259",

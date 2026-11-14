@@ -1,6 +1,7 @@
 """Internal evidence records; these are not extensions of source fact objects."""
 
 from dataclasses import dataclass, field
+from functools import cached_property
 from datetime import date
 import hashlib
 import json
@@ -45,10 +46,21 @@ class SourceRef:
     kind: str
     citation: str = ''
 
-    def export(self):
-        return {key: getattr(self, key) for key in ('path', 'pointer', 'fingerprint')}
+    @cached_property
+    def text(self):
+        return f'SourceRef({self.path!r}, {self.pointer!r}, {self.fingerprint!r}, {self.kind!r}, {self.citation!r})'
 
-    @property
+    def __repr__(self):
+        return self.text
+
+    @cached_property
+    def exported(self):
+        return {'path': self.path, 'pointer': self.pointer, 'fingerprint': self.fingerprint}
+
+    def export(self):
+        return self.exported
+
+    @cached_property
     def key(self):
         return self.path + '#' + self.pointer
 

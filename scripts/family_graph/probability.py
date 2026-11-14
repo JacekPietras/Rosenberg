@@ -17,7 +17,7 @@ from place_names import resolve_place_names
 from .dates import death_interval
 from .names import normalize
 from .policy import AGE_TITLE_CLASSES
-from .scoring import place_patterns
+from .scoring import PLACE_PREFIX, PLACE_SUFFIX, place_patterns
 
 DEFAULTS = {
     'model': 'weighted-log-odds-v6', 'calibrated': False,
@@ -168,20 +168,28 @@ def chronology(mentions, settings, names=None, derived=()):
     return levels
 
 
+LATEST_KEYS = frozenset({'deathStart', 'alive', 'last'})
+
+
 def merge_chronology(*summaries):
     result = {}
     for summary in summaries:
         for value, level in summary.items():
             target = result.setdefault(value, {})
             for key, item in level.items():
-                larger = key in {'deathStart', 'alive', 'last'}
-                if key not in target or (item[0] > target[key][0] if larger else item[0] < target[key][0]):
+                if key not in target or (item[0] > target[key][0] if key in LATEST_KEYS else item[0] < target[key][0]):
                     target[key] = item
     return result
 
 
 def cumulative(summary, threshold):
-    return merge_chronology(*({0: level} for value, level in summary.items() if value >= threshold)).get(0, {})
+    result = {}
+    for value, level in summary.items():
+        if value >= threshold:
+            for key, item in level.items():
+                if key not in result or (item[0] > result[key][0] if key in LATEST_KEYS else item[0] < result[key][0]):
+                    result[key] = item
+    return result
 
 
 def age_penalty(summary, settings):
@@ -328,6 +336,19 @@ class Profile:
     children: list = field(default_factory=list)
 
 
+# Non-ASCII characters that a case-insensitive pattern can match to an ASCII letter.
+CASE_FOLD_TO_ASCII = frozenset(
+    ['İ', 'ı', 'ſ'] + [char for char in map(chr, range(128, 0x30000)) if len(char.lower()) == 1 and char.lower().isascii()])
+
+
+def pattern_needle(pattern):
+    """Longest literal word of a place pattern, lowercase ASCII, or None."""
+    body = pattern.pattern.removeprefix(PLACE_PREFIX).removesuffix(PLACE_SUFFIX)
+    words = [re.sub(r'\\(.)', r'\1', word) for word in re.split(r'\\s\+|\\s\*,\\s\*', body)]
+    needle = max(words, key=len, default='').lower()
+    return needle if needle.isascii() and needle else None
+
+
 # Deliberately deterministic; no extraction of relationships from prose.
 PERSON_NAME = re.compile(r'\b[A-ZÄÖÜ][\wÄÖÜäöüß’\'-]*(?:\s+[A-ZÄÖÜ][\wÄÖÜäöüß’\'-]*)?\s+von\s+[A-ZÄÖÜ][\wÄÖÜäöüß’\'-]*')
 
@@ -352,6 +373,7 @@ class ProbabilityModel:
     def __init__(self, settings, names):
         self.settings, self.names = parameters(settings), names
         self.patterns = place_patterns(resolve_place_names(names.raw_places))
+        self.needles = [pattern_needle(pattern) for pattern, _ in self.patterns]
         self.background = {'total': 0.0, 'counts': {}}
         self.compare_cache = {}
 
@@ -397,12 +419,19 @@ class ProbabilityModel:
     def person_names(self, text):
         return frozenset(self.names.key(value) for value in self.person_references(text))
 
+    def candidate_patterns(self, text):
+        """Patterns whose longest ASCII word occurs in the text; others cannot match."""
+        if not CASE_FOLD_TO_ASCII.isdisjoint(text):
+            return self.patterns
+        lowered = text.lower()
+        return [pair for pair, needle in zip(self.patterns, self.needles) if needle is None or needle in lowered]
+
     @lru_cache(maxsize=None)
     def places(self, text):
         if not isinstance(text, str):
             return frozenset()
         matches = {}
-        for pattern, keys in self.patterns:
+        for pattern, keys in self.candidate_patterns(text):
             for match in pattern.finditer(text):
                 matches.setdefault(match.span(), set()).update(keys)
         selected, result = [], set()
@@ -414,27 +443,41 @@ class ProbabilityModel:
                 result.update(keys)
         return frozenset(result)
 
+    @lru_cache(maxsize=None)
+    def context_terms(self, text, issuance, personal_claim):
+        """Text analysis of one context passage; independent of the profile it joins."""
+        # Strip personal names before place matching: a surname is not residence.
+        remaining = PERSON_NAME.sub('', text)
+        role = 'property' if re.search(r'\b(property|properties|estate|estates|fief|held|holds|sold|owned|goods|rent|inherit\w*)\b', remaining, re.I) else 'context'
+        payment = re.match(r'^(?:was|were)\s+(?:paid|owed)\b.*?\bby\s+([^,.;!?]+)', text, re.I) if personal_claim else None
+        return (self.places(issuance), role, self.places(remaining), self.person_names(text),
+                self.person_names(payment[1]) if payment else None)
+
     def add_context(self, profile, source, bounds, text='', issuance='', self_names=(), personal_claim=False):
         if bounds is None:
             return
         evidence = (source, bounds)
         profile.refs[source.key] = source
-        for place in self.places(issuance):
+        issuance_places, role, places, names, payers = self.context_terms(text, issuance, personal_claim)
+        for place in issuance_places:
             profile.places.setdefault(('issuance', place), []).append(evidence)
-        # Strip personal names before place matching: a surname is not residence.
-        remaining = PERSON_NAME.sub('', text)
-        role = 'property' if re.search(r'\b(property|properties|estate|estates|fief|held|holds|sold|owned|goods|rent|inherit\w*)\b', remaining, re.I) else 'context'
-        for place in self.places(remaining):
+        for place in places:
             profile.places.setdefault((role, place), []).append(evidence)
-        for name in self.person_names(text) - set(self_names):
+        for name in names - set(self_names):
             profile.associates.setdefault(name, []).append(evidence)
         # The typed subject is explicitly the recipient/creditor. Do not infer
         # that role for every other actor merely mentioned in the same passage.
-        if personal_claim:
-            payment = re.match(r'^(?:was|were)\s+(?:paid|owed)\b.*?\bby\s+([^,.;!?]+)', text, re.I)
-            parties = self.person_names(payment[1]) - set(self_names) if payment else ()
+        if payers is not None:
+            parties = payers - set(self_names)
             if len(parties) == 1:
                 profile.financial_counterparties.setdefault(next(iter(parties)), []).append(evidence)
+
+    def profile_age_penalty(self, profile):
+        stamp = (len(profile.mentions), len(profile.derived))
+        cached = profile.__dict__.get('_age_penalty')
+        if cached is None or cached[0] != stamp:
+            cached = profile.__dict__['_age_penalty'] = stamp, age_penalty(self.profile_chronology(profile), self.settings)[0]
+        return cached[1]
 
     def profile_living(self, profile):
         """(first, last) living ordinals over all reliability levels, as `living_span` uses."""
@@ -455,10 +498,12 @@ class ProbabilityModel:
 
     @staticmethod
     def signature(profile):
+        """Digest of everything `compare` reads; the cached mentions keep their ids unique."""
         cached = profile.__dict__.get('_signature')
-        if cached is None:
+        if cached is None or cached[1] != len(profile.mentions):
             content = repr([getattr(profile, f.name) for f in fields(profile) if f.name != 'mentions'])
-            cached = profile.__dict__['_signature'] = blake2b(content.encode(), digest_size=16).digest(), tuple(profile.mentions)
+            content += repr([id(mention) for mention in profile.mentions])
+            cached = profile.__dict__['_signature'] = blake2b(content.encode(), digest_size=16).digest(), len(profile.mentions), tuple(profile.mentions)
         return cached
 
     def compare(self, left, right):
@@ -466,10 +511,8 @@ class ProbabilityModel:
         one, other = self.signature(left), self.signature(right)
         key = left.key, right.key
         entry = self.compare_cache.get(key)
-        if (entry is None or entry[0] != one[0] or entry[1] != other[0]
-                or len(entry[2]) != len(one[1]) or any(a is not b for a, b in zip(entry[2], one[1]))
-                or len(entry[3]) != len(other[1]) or any(a is not b for a, b in zip(entry[3], other[1]))):
-            entry = self.compare_cache[key] = one[0], other[0], one[1], other[1], self.compare_uncached(left, right)
+        if entry is None or entry[0] != one[0] or entry[1] != other[0]:
+            entry = self.compare_cache[key] = one[0], other[0], one[2], other[2], self.compare_uncached(left, right)
         return {name: list(value) if isinstance(value, list) else value for name, value in entry[4].items()}
 
     def compare_uncached(self, left, right):
@@ -489,11 +532,12 @@ class ProbabilityModel:
         # Time distance alone is neutral; only the years a merge adds to the
         # minimum implied age count, and only beyond a comfortable age.
         own = self.profile_chronology(left), self.profile_chronology(right)
-        value, age, year, sources, blocked = age_penalty(merge_chronology(*own), p)
+        merged = merge_chronology(*own)
+        value, age, year, sources, blocked = age_penalty(merged, p)
         if blocked:
             blocks.append(f'impossible age: at least {age:.0f} years old by {year}')
         else:
-            value -= max(age_penalty(summary, p)[0] for summary in own)
+            value -= max(self.profile_age_penalty(left), self.profile_age_penalty(right))
             if value > 0:
                 add(f'age: at least {age:.0f} years old by {year}', -value, sources)
         value, label, sources, blocked = death_conflicts(*own, p)
@@ -503,7 +547,6 @@ class ProbabilityModel:
             add(label, -value, sources)
         # A parent's death bounds each child's birth; a merge that moves the
         # death earlier ages the children (posthumousBirthYears allowance).
-        merged = merge_chronology(*own)
         children = [*left.children, *right.children]
         value, age, sources, impossible, documented = child_age(merged, children, p)
         if documented:

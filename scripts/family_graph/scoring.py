@@ -12,13 +12,17 @@ def passage(mention):
     return passage_key(mention.assertion.source)
 
 
+PLACE_PREFIX = r'(?<![^\W_])'
+PLACE_SUFFIX = r'(?![^\W_])'
+
+
 def place_patterns(places):
     patterns = defaultdict(set)
     for index, place in enumerate(places):
         key = place.get('id') or f'@place/{index}'
         for name in place.get('variations', []):
             patterns[name].add(key)
-    return [(re.compile(r'(?<![^\W_])' + re.escape(name).replace(r',\ ', r'\s*,\s*').replace(r'\ ', r'\s+') + r'(?![^\W_])', re.I), keys)
+    return [(re.compile(PLACE_PREFIX + re.escape(name).replace(r',\ ', r'\s*,\s*').replace(r'\ ', r'\s+') + PLACE_SUFFIX, re.I), keys)
             for name, keys in patterns.items()]
 
 

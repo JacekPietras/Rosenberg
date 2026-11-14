@@ -113,10 +113,12 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         mention_names[handle] = names.key(registry[ref]['name'] if ref in registry and registry[ref].get('id') == ref else ref)
         mention_scopes[handle] = (*passage_key(mention.assertion.source),
                                  mention.assertion.historical_date)
+    static_state = {'generation': None, 'members': frozenset(), 'ok': set(), 'lists': [], 'rank': {}, 'seen': {}, 'bad': None, 'tree': None}
     parents_of_mention = defaultdict(list)
 
     def index_parents():
         parents_of_mention.clear()
+        static_state['seen'].clear()
         for assertion in assertions:
             if assertion.original['type'] == 'parent':
                 senior, child = assertion.mentions
@@ -163,6 +165,25 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             a, b = left.split(), right.split()
             compatible_memo[key] = given(left) == given(right) and (len(a) == 1 or len(b) == 1 or a[1:] == b[1:])
         return compatible_memo[key]
+
+    forms_memo = {}
+
+    def name_forms(handles):
+        return tuple(sorted({name(h) for h in handles}))
+
+    def forms_compatible(left, right):
+        key = left, right
+        if key not in forms_memo:
+            forms_memo[key] = all(compatible_names(a, b) for a in left for b in right)
+        return forms_memo[key]
+
+    partial_memo = {}
+
+    def forms_partial(left, right):
+        key = left, right
+        if key not in partial_memo:
+            partial_memo[key] = any((len(a.split()) == 1) != (len(b.split()) == 1) for a in left for b in right)
+        return partial_memo[key]
 
     def scope(mention):
         return mention_scopes[mention.handle]
@@ -228,16 +249,32 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             return False
         return not chronology_conflict(members[x] + members[y]) and chronology_allows((members[x], members[y]))
 
+    def parents_seen(part):
+        seen = defaultdict(dict)
+        for h in part:
+            for sex, handle in parents_of_mention.get(h, ()):
+                seen[sex].setdefault(find(handle), handle)
+        return seen
+
+    def current_generation():
+        generation = groups()
+        if static_state['generation'] is not generation:
+            static_state.update(generation=generation, members={id(handles) for handles in generation.values()}, ok=set(),
+                                lists=list(generation.values()), rank={root: i for i, root in enumerate(generation)}, seen={}, bad=None, tree=None)
+        return static_state
+
     def different_parent(parts):
         """A person has one father and one mother: records whose fathers (or mothers),
         recorded or inherited, cannot be one person are different people."""
         found = []
+        state = current_generation()
         for part in parts:
-            seen = defaultdict(dict)
-            for h in part:
-                for sex, handle in parents_of_mention.get(h, ()):
-                    seen[sex].setdefault(find(handle), handle)
-            found.append(seen)
+            if id(part) in state['members']:
+                if id(part) not in state['seen']:
+                    state['seen'][id(part)] = parents_seen(part)
+                found.append(state['seen'][id(part)])
+            else:
+                found.append(parents_seen(part))
         members = None
         def one_person(left, right):
             nonlocal members
@@ -278,38 +315,87 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         # Different age designations in one passage name different people.
         return not any(len(titles & AGE_TITLES) > 1 for titles in by_scope.values())
 
-    def consistent(components, new=None):
+    relation_facts = [(a.original['type'], a.mentions[0].handle, a.mentions[1].handle,
+                       name(a.mentions[0].handle), name(a.mentions[1].handle)) for a in relation_assertions]
+
+    static_by_group = {}
+
+    def consistent(components, new=None, replaced=None):
+        """Whether the partition into `components` is allowed. With `replaced` (roots
+        of current groups that `components` already contain), every other current
+        group is an unchanged identity and need not be listed."""
         # Only proposed components are checked for chronology; unchanged
         # identities cannot block unrelated merges.
-        mapping = {h: index for index, component in enumerate(components) for h in component}
-        for index, component in enumerate(components):
+        checked = len(components) if new is None or replaced is not None else min(new, len(components))
+        for component in components[:checked]:
             if not static_consistent(component):
                 return False
-            if (new is None or index < new) and (chronology_conflict(component) or new_different_parent(component)
-                                                 or new_passage_conflict(component) or new_too_old(component)):
+            if (chronology_conflict(component) or new_different_parent(component)
+                    or new_passage_conflict(component) or new_too_old(component)):
                 return False
+        state = current_generation()
+        if replaced is not None:
+            if state['bad'] is None:
+                bad = set()
+                for root, handles in state['generation'].items():
+                    key = root, len(handles)
+                    if key not in static_by_group:
+                        static_by_group[key] = static_consistent(handles)
+                    if not static_by_group[key]:
+                        bad.add(root)
+                state['bad'] = bad
+            if not state['bad'].issubset(replaced):
+                return False
+            unchanged = ()
+        else:
+            unchanged = components[checked:]
+            ok = state['ok']
+            if not ok.issuperset(map(id, unchanged)):
+                for component in unchanged:
+                    if id(component) in ok:
+                        continue
+                    if not static_consistent(component):
+                        return False
+                    if id(component) in state['members']:
+                        ok.add(id(component))
+        # Unchanged identities are current groups, so an endpoint outside the
+        # proposed components is located by its group instead of by scanning.
+        mapping = {h: index for index, component in enumerate(components[:checked]) for h in component}
+        if replaced is not None or static_state['members'].issuperset(map(id, unchanged)):
+            rank, lists = static_state['rank'], static_state['lists']
+            def label(handle):
+                index = mapping.get(handle)
+                return checked + rank[find(handle)] if index is None else index
+            def members(index):
+                return components[index] if index < checked else lists[index - checked]
+        else:
+            mapping = {h: index for index, component in enumerate(components) for h in component}
+            label = mapping.__getitem__
+            def members(index):
+                return components[index]
         edges, siblings = [], []
         same_named_parents = defaultdict(set)
         same_named_spouses = defaultdict(set)
-        for assertion in relation_assertions:
-            left, right = [mapping[m.handle] for m in assertion.mentions]
+        for kind, left_handle, right_handle, left_name, right_name in relation_facts:
+            left, right = label(left_handle), label(right_handle)
             if left == right:
                 return False
-            if assertion.original['type'] == 'parent':
+            if kind == 'parent':
                 edges.append((left, right))
                 if new is None or right < new:
-                    same_named_parents[(right, name(assertion.mentions[0].handle))].add(left)
-            elif assertion.original['type'] == 'sibling':
+                    same_named_parents[(right, left_name)].add(left)
+            elif kind == 'sibling':
                 siblings.append((left, right))
-            elif assertion.original['type'] == 'spouse':
-                for own, (other, partner) in ((left, (right, assertion.mentions[1])), (right, (left, assertion.mentions[0]))):
-                    if new is None or own < new:
-                        same_named_spouses[(own, name(partner.handle))].add(other)
+            elif kind == 'spouse':
+                if new is None or left < new:
+                    same_named_spouses[(left, right_name)].add(right)
+                if new is None or right < new:
+                    same_named_spouses[(right, left_name)].add(left)
         # Same-named parents or spouses of one person should be one person; if
         # they cannot be, the merge that gave that person both of them is wrong.
         for relatives in [*same_named_parents.values(), *same_named_spouses.values()]:
             if len(relatives) > 1:
-                union = [h for index in relatives for h in components[index]]
+                union = [h for index in relatives for h in members(index)]
                 if len(anchor(union)) > 1 or chronology_conflict(union):
                     return False
         return not cycle_nodes(edges) and generations_consistent(edges, siblings)
@@ -357,6 +443,12 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             relations[right].append((assertion, b.field, left))
         return tree, relations, factual_parents
 
+    def generation_tree():
+        state = current_generation()
+        if state['tree'] is None:
+            state['tree'] = family_tree()[0]
+        return state['tree']
+
     def relative_blocks(tree, start):
         """Identities reachable from `start` by a path that makes them a different person."""
         blocked = {}
@@ -375,7 +467,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         """Two parts of a proposed identity that the tree already relates as different people."""
         if len(component) < 2:
             return False
-        tree = family_tree()[0]
+        tree = generation_tree()
         return any(other in relative_blocks(tree, key) for key in component for other in component if other != key)
 
     def accept(proposals, reason, scores=None, strict=False):
@@ -411,11 +503,10 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         candidates = []
         for component in components:
             joined = sorted(h for key in component for h in current[key])
-            other = [handles for key, handles in current.items() if key not in component]
             negative_pair = any(round_scores.get(tuple(sorted((a, b))), {}).get('probability', 1) < model.settings['clusterMinimumProbability']
                                 and any(f['contribution'] < 0 for f in round_scores.get(tuple(sorted((a, b))), {}).get('features', []))
                                 for a, b in combinations(component, 2))
-            if not negative_pair and consistent([joined, *other], 1) and not known_relatives(component, current):
+            if not negative_pair and consistent([joined], 1, component) and not known_relatives(component, current):
                 candidates.append(component)
         # Different identity components can jointly create an ancestry cycle.
         # Check all proposed links in each connected source family together,
@@ -533,8 +624,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             fitting = []
             for cluster in clusters:
                 joined = sorted({h for x in (*cluster, handle) for h in current[find(x)]})
-                others = [group for root, group in current.items() if root not in {find(x) for x in (*cluster, handle)}]
-                if (consistent([joined, *others], 1)
+                if (consistent([joined], 1, {find(x) for x in (*cluster, handle)})
                         and not known_relatives({find(x) for x in (*cluster, handle)}, current)
                         and chronology_allows(([h for x in cluster for h in current[find(x)]], current[find(handle)]))):
                     fitting.append(cluster)
@@ -893,6 +983,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     inferred_bases.add(key)
                     sex = names.gender(name(father_mention.handle))
                     parents_of_mention[other.handle].append((sex, father_mention.handle))
+                    static_state['seen'].clear()
                     parents_of[y].append(inferred)
                     added += 1
         return added
@@ -934,15 +1025,17 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     family_closure()
     for iteration in range(model.settings['maxRounds']):
         current, profiles, root_names, context_coverage = build_profiles()
+        forms = {root: name_forms(handles) for root, handles in current.items()}
         progress(f'Pass 3 round {iteration + 1}: comparing {len(current)} identities')
         buckets = defaultdict(list)
         for root in current:
             buckets[given(root_names[root])].append(root)
         round_scores, options = {}, defaultdict(list)
+        pairs_of_root = defaultdict(list)
         compared_pairs = 0
         for roots in buckets.values():
             for left, right in combinations(roots, 2):
-                if not all(compatible_names(name(a), name(b)) for a in current[left] for b in current[right]):
+                if not forms_compatible(forms[left], forms[right]):
                     continue
                 compared_pairs += 1
                 if compared_pairs % 5000 == 0:
@@ -954,6 +1047,9 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     continue
                 pair = tuple(sorted((left, right)))
                 record.update(mentions=list(pair), iteration=iteration, stage=3, status='below-threshold', reason='below merge probability')
+                if pair not in round_scores:
+                    pairs_of_root[pair[0]].append(pair)
+                    pairs_of_root[pair[1]].append(pair)
                 round_scores[pair] = record
                 comparisons[pair] = record
                 if len(anchor([*current[left], *current[right]])) > 1:
@@ -965,8 +1061,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 if blocks:
                     record.update(status='incompatible', reason='blocked: ' + '; '.join(blocks))
                     continue
-                partial_name = any((len(name(a).split()) == 1) != (len(name(b).split()) == 1)
-                                   for a in current[left] for b in current[right])
+                partial_name = forms_partial(forms[left], forms[right])
                 if partial_name and not any(f['contribution'] > 0 and ('family context:' in f['name'] or 'office title:' in f['name'] or 'designation title:' in f['name']) for f in record['features']):
                     record.update(status='incompatible', reason='an omitted surname requires family or identifying-title support; shared geography and associates are insufficient')
                     continue
@@ -990,12 +1085,12 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 selected.add(pair)
                 # Negative and rival evidence can influence selection too.
                 refs = {**profiles[left].refs, **profiles[right].refs, **dependencies[left], **dependencies[right]}
-                for (a, b), comparison in round_scores.items():
-                    if left in (a, b) or right in (a, b):
-                        without_negative = comparison['logOdds'] - sum(min(0, f['contribution']) for f in comparison['features'])
-                        threshold = model.settings['mergeProbability']
-                        if comparison['probability'] >= threshold or without_negative >= math.log(threshold / (1 - threshold)):
-                            refs.update({ref.key: ref for ref in comparison['sources']})
+                threshold = model.settings['mergeProbability']
+                for key in dict.fromkeys([*pairs_of_root[left], *pairs_of_root[right]]):
+                    comparison = round_scores[key]
+                    without_negative = comparison['logOdds'] - sum(min(0, f['contribution']) for f in comparison['features'])
+                    if comparison['probability'] >= threshold or without_negative >= math.log(threshold / (1 - threshold)):
+                        refs.update({ref.key: ref for ref in comparison['sources']})
                 proposals.append((left, right, list(refs.values())))
                 round_scores[pair]['sources'] = [refs[key] for key in sorted(refs)]
         count = accept(proposals, 'weighted probability of source identity')
@@ -1027,6 +1122,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     progress('Pass 4: joining each identity to its best supported candidate')
     for stage_round in range(len(mentions)):
         current, profiles, root_names, context_coverage = build_profiles()
+        forms = {root: name_forms(handles) for root, handles in current.items()}
         if stage_round == 0 or stage_round % 10 == 0:
             progress(f'Pass 4 round {stage_round + 1}: comparing {len(current)} identities')
         labels = {root: next(iter(anchor(handles)), root_names[root]) for root, handles in current.items()}
@@ -1091,11 +1187,30 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         compared_pairs = 0
         for roots in buckets.values():
             for left, right in combinations(roots, 2):
-                if all(compatible_names(name(a), name(b)) for a in current[left] for b in current[right]):
+                if forms_compatible(forms[left], forms[right]):
                     compared_pairs += 1
                     if compared_pairs % 5000 == 0:
                         progress(f'Pass 4 round {stage_round + 1}: compared {compared_pairs:,} compatible identity pairs')
                     base[left, right] = base[right, left] = model.compare(profiles[left], profiles[right])
+
+        age_marks = {}
+        def age_marks_of(root):
+            if root not in age_marks:
+                marks = []
+                for h in current[root]:
+                    age_classes = {title_category(title, names)[1] for title in set(mentions[h].titles)
+                                   if title_category(title, names)[0] == 'age'}
+                    offset = 1 if 'older' in age_classes else -1 if 'younger' in age_classes else 0
+                    if offset:
+                        marks.append((h, offset, scope(mentions[h])[:2]))
+                age_marks[root] = marks
+            return age_marks[root]
+        namesake_cache = {}
+        def namesakes_of(root, passage):
+            if (root, passage) not in namesake_cache:
+                namesake_cache[root, passage] = [other for other in buckets[given(root_names[root])]
+                                                 if other != root and passage in passage_set(other)]
+            return namesake_cache[root, passage]
 
         def score(root, candidate):
             """Directional record: shared evidence plus the root's own kinship positions."""
@@ -1141,16 +1256,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 remaining -= min(value, remaining)
             # An age title implies a same-named relative of another generation
             # in that passage; the candidate should sit on the other side of it.
-            for h in current[root]:
-                titles = set(mentions[h].titles)
-                age_classes = {title_category(title, names)[1] for title in titles
-                               if title_category(title, names)[0] == 'age'}
-                offset = 1 if 'older' in age_classes else -1 if 'younger' in age_classes else 0
-                if not offset:
-                    continue
-                passage = scope(mentions[h])[:2]
-                namesakes = [other for other in buckets[given(root_names[root])] if other not in (root, candidate)
-                             and passage in passage_set(other)]
+            for h, offset, passage in age_marks_of(root):
+                namesakes = [other for other in namesakes_of(root, passage) if other != candidate]
                 if any(generation(path) == offset for other in namesakes for path in paths_from(other).get(candidate, ())):
                     added.append(('age-title namesake one generation ' + ('below' if offset > 0 else 'above'),
                                   second['ageTitleNamesakeWeight'] * reliability(mentions[h].assertion.source, model.settings),
@@ -1214,8 +1321,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 identifying = any('family context:' in f['name'] or 'office title:' in f['name'] or 'designation title:' in f['name']
                                   or f['name'].startswith(('kinship position', 'factual parentage', 'weak attachment'))
                                   for f in positive)
-                partial_name = any((len(name(a).split()) == 1) != (len(name(b).split()) == 1)
-                                   for a in current[root] for b in current[candidate])
+                partial_name = forms_partial(forms[root], forms[candidate])
                 record.update(mentions=list(pair), stage=4, iteration=stage_round)
                 if blocks:
                     record.update(status='incompatible', reason='blocked: ' + '; '.join(blocks))
@@ -1278,9 +1384,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 continue
             live = groups()
             union = sorted(live[left] + live[right])
-            others = [handles for key, handles in live.items() if key not in (left, right)]
-            if (len(anchor(union)) > 1 or relative_blocks(family_tree()[0], left).get(right)
-                    or not consistent([union, *others], 1)):
+            if (len(anchor(union)) > 1 or relative_blocks(generation_tree(), left).get(right)
+                    or not consistent([union], 1, (left, right))):
                 retry()
                 continue
             pair = tuple(sorted((root, candidate)))
