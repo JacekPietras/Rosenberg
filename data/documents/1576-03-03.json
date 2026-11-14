@@ -12,19 +12,12 @@
       "english": "Philips Voit von Rieneck, canon of Würzburg and judge of the Duchy of Franconia, authenticates Sophia von Wirsberg’s renunciation of her paternal and maternal inheritance. Sophia, wife of Christoff Siegmund von Wirsberg, was born von Rosenberg. Original, parchment; regional court seal attached and preserved.",
       "facts": [
         {
-          "person": "Sophia von Wirsberg",
-          "type": "generic",
-          "content": "was born von Rosenberg."
-        },
-        {
           "person": "Christoph Siegmund von Wirsberg",
           "type": "spouse",
-          "of": "Sophia von Wirsberg"
-        },
-        {
-          "person": "Sophia von Wirsberg",
-          "type": "generic",
-          "content": "renounced her paternal and maternal inheritance."
+          "of": "Sophia von Rosenberg",
+          "ofTitle": [
+            "von Wirsberg"
+          ]
         }
       ]
     }
