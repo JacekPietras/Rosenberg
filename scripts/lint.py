@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 LINTERS = Path(__file__).resolve().parent / "linters"
 TRUNCATION_MARKER = "(line truncated to 2000 chars)"
 CHECKS = (
+    "normalize_names.py",
     "normalize_hidden_places.py",
     "validate_documents.py",
     "migrate_von_und_zu.py",
@@ -100,7 +101,7 @@ def main(argv=None):
                 if match:
                     issues += int(match[1]) + int(match[2])
             elif line.startswith("Normalized "):
-                match = re.search(r"Normalized (\d+) English name form\(s\)\.", line)
+                match = re.search(r"Normalized (\d+)", line)
                 if match:
                     normalized_names += int(match[1])
             else:

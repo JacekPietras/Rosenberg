@@ -212,7 +212,9 @@
   {
     "id": "reichelsburg-aub",
     "variations": [
-      "Reichelsburg"
+      "Reichelsburg",
+      "Reigelsberg Castle",
+      "Reigelsberg"
     ],
     "category": "castle",
     "lat": 49.546472,
@@ -392,7 +394,7 @@
   },
   {
     "variations": [
-      "Kirche"
+      "Kirche in Unterschüpf"
     ],
     "category": "church",
     "lat": 49.5138873,
@@ -435,7 +437,7 @@
   },
   {
     "variations": [
-      "Johanniskirche"
+      "Johanniskirche Waldmannshofen"
     ],
     "category": "church",
     "lat": 49.5322268,
@@ -446,7 +448,7 @@
   {
     "id": "waldmannshofen-castle",
     "variations": [
-      "Schloss"
+      "Schloss Waldmannshofen"
     ],
     "category": "castle",
     "lat": 49.5341,
@@ -511,7 +513,7 @@
   {
     "id": "gnoetzheim-st-johannis",
     "variations": [
-      "Johanniskirche"
+      "Johanniskirche Gnötzheim"
     ],
     "category": "church",
     "lat": 49.616619,
@@ -549,7 +551,6 @@
   {
     "id": "schloss-bartenstein",
     "variations": [
-      "Bartenstein",
       "Schloss Bartenstein"
     ],
     "category": "castle",
@@ -637,7 +638,7 @@
   {
     "id": "gnoetzheim-castle",
     "variations": [
-      "Schloss"
+      "Schloss Gnötzheim"
     ],
     "category": "castle",
     "lat": 49.6154951,
@@ -976,7 +977,7 @@
   {
     "id": "oberschuepf-castle",
     "variations": [
-      "Schloss"
+      "Schloss Oberschüpf"
     ],
     "category": "castle",
     "lat": 49.5218062,
@@ -1031,7 +1032,7 @@
   {
     "id": "schuepf-church",
     "variations": [
-      "Kirche"
+      "Kirche in Schüpf"
     ],
     "category": "church",
     "lat": 49.5222468,
@@ -1082,7 +1083,6 @@
   {
     "id": "essingen-st-quirinus",
     "variations": [
-      "Essingen",
       "Essingen St Quirinus",
       "Quirinuskirche Essingen"
     ],
@@ -1153,7 +1153,6 @@
   {
     "id": "essingen-st-wendelinuskapelle",
     "variations": [
-      "Essingen",
       "St. Wendelinuskapelle Essingen"
     ],
     "category": "church",
@@ -1529,6 +1528,29 @@
     "showOnMap": false
   },
   {
+    "id": "rothenburg",
+    "variations": [
+      "Rothenburg",
+      "Rotenburc",
+      "Rotenburg",
+      "Rodenburch",
+      "ROTENBVRCH",
+      "Rotenburch"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "talheim",
+    "variations": [
+      "Rothenburg",
+      "Thalheim",
+      "Taleheim",
+      "Talheim",
+      "Talhaim"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "michelfeld",
     "variations": [
       "Michelfeld",
@@ -1667,14 +1689,6 @@
     "showOnMap": false
   },
   {
-    "id": "baldersheim",
-    "variations": [
-      "Baldersheim",
-      "Baldershaim"
-    ],
-    "showOnMap": false
-  },
-  {
     "id": "kollenberg",
     "variations": [
       "Kollenberg",
@@ -1706,6 +1720,24 @@
     "variations": [
       "Kranberg",
       "Cranberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "brunn",
+    "variations": [
+      "Brunn",
+      "brvne",
+      "Brune",
+      "Brun"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "seldeneck",
+    "variations": [
+      "Seldeneck",
+      "Seldenecke"
     ],
     "showOnMap": false
   },

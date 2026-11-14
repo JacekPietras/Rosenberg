@@ -1,77 +1,78 @@
 # Men
 
-Adel
 Adam
+Adel
 Adolf
 Alban, Albanus
-Albrecht, Albert, Albertus, Adalbrecht, Abbrecht
+Albrecht, Abbrecht, Adalbrecht, Albert, Albertus
+Andreas
 Anselm, Anshelm
 Anton
-Andreas
 Aplo
+Arnold, Arnolt
 Asinus
 Asmus
-Arnold, Arnolt
 Balthasar
 Batt
 Berngern
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
+Boppe
 Burkhard, Burchard
 Busso
-Boppe
-Caspar, Kaspar, Caſpar
-Christoph, Chriftoph, Christpoh, Christof
+Caspar, Caſpar, Kaspar
+Christoph, Chriftoph, Christof, Christpoh
 Cornelius, Cornelis
 Diether, Dieter
 Dietrich
 Dietzel
-Eberhard, Ebirh, Everard, Everhard, Eberhardi, Ebirhardus, eebhrt, rebhart, Ebhart, Eberhardus, Ebhrhard, Eberhardts, Eberhart, Ebirbard, Ebirhardo, Ebirhardz, Ebirhard, Ebirhart, Ebyrhard, Eberhardt, erberhart, Ewerhard, Everhart, Eberharten, Ebirharten, Eberhardum, Ebert, Erhart, Eberh, Eberhards
-Eckhard, Ege, Ekkehart, Eckhart, Ekhart, Ekkehard, Eckehardus, Ekkard
+Eberhard, Eberh, Eberhardi, Eberhards, Eberhardt, Eberhardts, Eberhardum, Eberhardus, Eberhart, Eberharten, Ebert, Ebhart, Ebhrhard, Ebirbard, Ebirh, Ebirhard, Ebirhardo, Ebirhardus, Ebirhardz, Ebirhart, Ebirharten, Ebyrhard, eebhrt, erberhart, Erhart, Everard, Everhard, Everhart, Ewerhard, rebhart
+Eckhard, Eckehardus, Eckhart, Ege, Ekhart, Ekkard, Ekkehard, Ekkehart
+Egilolf, Egli, Eglolf, Eglolff
 Engel
-Engelhard, Engelhart, Engelhardus
+Engelhard, Engelhardus, Engelhart
 Erasmus
 Erhard
 Erkinger
-Egilolf, Egli, Eglolff, Eglolf
-Ernst, Erinze, Erwin, Ehrenfried
+Ernst, Ehrenfried, Erinze, Erwin
 Franz, Franziskus
 Friedmann
-Friedrich, Friderich, Fridrich, Fridericus, Friderici, Friderico, Fritz, Fritze, Friz, Frize, Frederick, Fridereich
+Friedrich, Frederick, Fridereich, Friderich, Friderici, Friderico, Fridericus, Fridrich, Fritz, Fritze, Friz, Frize
 Frizo
-Georg, Gorg, Jörg, Jorge, Jorg, Jorgen, Georgs, Goerg
+Georg, Georgs, Goerg, Gorg, Jorg, Jorge, Jorgen, Jörg
 Gerhard, Gerhardus
 Gerlach
 Gotfried, Godefrid, Gottfried
-Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
 Gozwin, Goczwin, Godezwin
-Hans, Johann, Hanemann, Hanse, Johannes, Hanns, Joannes, Iohannes, Johanns, Johans
-Hansolf
+Götz, Gocze, Goetz, Gotze, Gotzze, Götzze
 Hank
+Hans, Hanemann, Hanns, Hanse, Iohannes, Joannes, Johann, Johannes, Johanns, Johans
+Hansolf
 Hartlieb
-Haubt
-Hoyer
 Hartmut
-Heinrich, Heinz, Heinzen, Heintze, Henrich, Heinricus, Henricus, Hainrich, Heinrici, Heinrico, Hendrici, Jindrich, Heintz
+Haubt
+Heinrich, Hainrich, Heinrici, Heinrico, Heinricus, Heintz, Heintze, Heinz, Heinzen, Hendrici, Henrich, Henricus, Jindrich
 Herbord
 Herman, Hermann
-Hieronymus, Jheronimus, Jeronimus
+Hieronymus, Jeronimus, Jheronimus
+Horneck
+Hoyer
 Jakob, Jacob
 Joachim
 Jost
 Kasimir
 Kilian
-Konrad, Chuonrad, Chuonradus, Chunrat, Conradt, Conradus, Conrads, Conradi, Conrade, Conrad, Conrat, Conratten, Chunrad, Chunradus, Cunrat, Cunrad, Cunreth, Cunradus, Conrado, Chvnradus, Chuonrat
+Konrad, Chunrad, Chunradus, Chunrat, Chuonrad, Chuonradus, Chuonrat, Chvnradus, Conrad, Conrade, Conradi, Conrado, Conrads, Conradt, Conradus, Conrat, Conratten, Cunrad, Cunradus, Cunrat, Cunreth
 Kraft, Krafto
-Kurt
 Kuno
-Kunz, Cunz, Konz, Conz, Concz, Contz, Contze, Kontz, Kuntz, Cuntz, Cuncze, Guntz, Kunczen, Conntzen, Cuntzen // are shortened versions of Konrad, but not used as it\! [1401 March 5]
-Leonhard, Leonhart, Lienhart, Leonhardus, Leonardus, Lenhart, Linhard, Linhart
+Kunz, Concz, Conntzen, Contz, Contze, Conz, Cuncze, Cuntz, Cuntzen, Cunz, Guntz, Kontz, Konz, Kunczen, Kuntz // are shortened versions of Konrad, but not used as it\! [1401 March 5]
+Kurt
+Leonhard, Lenhart, Leonardus, Leonhardus, Leonhart, Lienhart, Linhard, Linhart
 Leopold, Lupold, Luppold
+Lionhart
 Lorenz
 Ludwig, Ludewig
 Lutz, Lutzo
-Lionhart
 Mangold
 Marquard
 Martin
@@ -79,8 +80,8 @@ Marx
 Mathern
 Melchior
 Michael, Michel, Micheln
-Nicolaus, Nicholas, Niklaus, Nikolaus, Claus
-Niklas, Nyclos, Niclas
+Nicolaus, Claus, Nicholas, Niklaus, Nikolaus
+Niklas, Niclas, Nyclos
 Otto
 Pankraz
 Peter
@@ -89,35 +90,35 @@ Raban, Rabanus
 Reichard, Reichart, Richard
 Reinbot
 Reinhard, Reinhart
-Rüdiger, Rüdger
 Rudolf, Rudolph, Ruodolf
 Ruprecht, Rupert, Rupertus
+Rüdiger, Rüdger
 Sebastian
 Seibott
 Senant, Synant
 Siboto
-Siegfried, Sifridt, Seyfried, Seifried, Sifrid
-Siegmund, Sigmund, Siegemund, Sigismund
+Siegfried, Seifried, Seyfried, Sifrid, Sifridt
+Siegmund, Siegemund, Sigismund, Sigmund
 Stephan, Stefan
 Thame
-Thomas, Thoman, Thoma
+Thomas, Thoma, Thoman
 Ulrich, Vlreich
 Urban
 Valentin
 Veit
+Walter, Wolter
 Weigrecht
 Wenceslaus, Wenzel
-Wernher, Werner
 Werenher
+Wernher, Werner
 Wilhelm, Wilhem
-Wiprecht, Wibrecht, Wynprecht, Wyprecht, Wipert, Welprecht, Wipprecht
-Wok, Woko, Witiko, Bocho, Wocco, Wocho, Vok
+Wiprecht, Welprecht, Wibrecht, Wipert, Wipprecht, Wynprecht, Wyprecht
+Wok, Bocho, Vok, Witiko, Wocco, Wocho, Woko
 Wolf, Wolff
 Wolfgang
 Wolfram, Wolframus
-Walter, Wolter
 Yttel
-Zaisolph, Zeisolf, Seisolph, Zeisolph
+Zaisolph, Seisolph, Zeisolf, Zeisolph
 Zeisel
 
 # Women
@@ -138,31 +139,31 @@ Elchana
 Elche
 Elchine, Elchina
 Elichin
-Elisabeth, Elspeth, Elsbet, Else, Els, Eilse, Elsbeth, Elisabet, Elizabet, Elizabeth, Elyzabeth, Elspet
+Elisabeth, Eilse, Elisabet, Elizabet, Elizabeth, Els, Elsbet, Elsbeth, Else, Elspet, Elspeth, Elyzabeth
 Eva
 Felicitas
 Gertraud
 Guda
 Guota
 Helena
-Irmtraut, Irmendrut, Jrmtrudis, Irmentrurt
+Irmtraut, Irmendrut, Irmentrurt, Jrmtrudis
 Jeute
 Johanna
-Jutta, Juta, Guta, Gutta, Gute
 Juliana
-Katharina, Katherina, Katherine, Kathrein, Katerina, Catharina, Catherine
-Kunigunde, Kunnegunt, Kunnigund, Kunegunde, Kunegunt, Kunegunth, Konigunt, Kunigunda, Kunigundis, Cunegunda, Cunigunda, Conegundis
+Jutta, Guta, Gute, Gutta, Juta
+Katharina, Catharina, Catherine, Katerina, Katherina, Katherine, Kathrein
+Kunigunde, Conegundis, Cunegunda, Cunigunda, Konigunt, Kunegunde, Kunegunt, Kunegunth, Kunigunda, Kunigundis, Kunnegunt, Kunnigund
 Kunne
-Margaretha, Margretha, Margarete, Margarethe, Margret, Margareta, Margreth, Margett, Margarethå, Margeth
 Magdalena
+Margaretha, Margareta, Margarete, Margarethe, Margarethå, Margeth, Margett, Margret, Margreth, Margretha
 Maria
 Osanna
-Ottilia, Ottilie, Otilia
+Ottilia, Otilia, Ottilie
 Petrisa, Petrissa
 Regina
 Richtze
-Rufina, Ruffina, Rofina
 Rosina
+Rufina, Rofina, Ruffina
 Selende
 Septia
 Sibylla, Sibyl
@@ -173,4 +174,4 @@ Veronika
 Walpurga, Walburga
 Willertraud
 Wiltraut
-Wyclo, Wyela, Wyle, Wiclo, Wiela, Wiele, Wyklo
+Wyclo, Wiclo, Wiela, Wiele, Wyela, Wyklo, Wyle

@@ -69,14 +69,33 @@ def variation_conflicts(places):
     return conflicts
 
 
+def duplicate_place_ids(places):
+    """Return IDs used by more than one place record, with their indexes."""
+    indexes = defaultdict(list)
+    for index, place in enumerate(places):
+        if isinstance(place, dict):
+            place_id = place.get("id")
+            if isinstance(place_id, str) and place_id.strip():
+                indexes[place_id].append(index)
+    return {
+        place_id: record_indexes
+        for place_id, record_indexes in indexes.items()
+        if len(record_indexes) > 1
+    }
+
+
 if __name__ == "__main__":
     path = ROOT / "data" / "places.json"
     print(f"Normalized {normalize(path)} hidden place(s).")
     errors = visible_place_errors(json.loads(path.read_text(encoding="utf-8")))
     conflicts = variation_conflicts(json.loads(path.read_text(encoding="utf-8")))
+    duplicate_ids = duplicate_place_ids(json.loads(path.read_text(encoding="utf-8")))
     for conflict in conflicts:
         details = "; ".join(f"{variation!r} in {owner}" for owner, variation in conflict)
         print(f"Warning: conflicting place variation: {details}")
+    for place_id, indexes in duplicate_ids.items():
+        records = ", ".join(f"data/places.json#/{index}" for index in indexes)
+        print(f"Warning: duplicate place ID {place_id!r}: {records}")
     for error in errors:
         print(error)
     print(f"Checked visible places: {len(errors)} error(s).")
