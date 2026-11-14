@@ -10,8 +10,7 @@ Anselm, Anshelm
 Anton
 Aplo
 Arnold, Arnolt
-Asinus
-Asmus
+Asmus, Asinus
 Balthasar
 Bartholomäus, Barthel, Barthelme, Barthelmä, Bartholomaeus, Bartholomä, Bartholomê
 Batt
