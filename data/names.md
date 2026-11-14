@@ -18,7 +18,6 @@ Berngern
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
 Boppe
-Raben
 Burkhard, Burchard
 Busso
 Carl
@@ -91,6 +90,7 @@ Pankraz
 Peter
 Philipp, Philips
 Raban, Rabanus
+Raben
 Reichard, Reichart, Richard
 Reinbot
 Reinhard, Reinhart
@@ -146,7 +146,7 @@ Elichin
 Elisabeth, Eilse, Elisabet, Elizabet, Elizabeth, Els, Elsbet, Elsbeth, Else, Elspet, Elspeth, Elyzabeth
 Eva
 Felicitas
-Gertrud, Gertraud, Gerdrud
+Gertrud, Gerdrud, Gertraud
 Guda
 Guota
 Helena
