@@ -1475,6 +1475,13 @@
     "showOnMap": false
   },
   {
+    "id": "leutzenbronn",
+    "variations": [
+      "Leutzenbronn"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "madenburg",
     "variations": [
       "Madenburg",
