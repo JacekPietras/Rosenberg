@@ -1,0 +1,26 @@
+{
+  "date": "1398-04-27",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "entries": [
+    {
+      "source": "StAN, Fürstentum Ansbach, Urkunden vor 1401 2471",
+      "url": "https://www.gda.bayern.de/gvl/document/d859ab00-0dd5-40be-814d-15c06bf46525",
+      "german": "Aussteller 1: Rosenberg, Hans von, Ritter\nAussteller 2: Rosenberg, Elsbeth, geb. Marschalk v. Pappenheim\nSiegler 1: Rosenberg, Hans von, Ritter\nSiegler 2: Rosenberg, Elsbeth, geb. Marschalk v. Pappenheim\n\nBesiegelung/Beglaubigung: Siegel 1: verwischt\nSiegel 2: verwischt",
+      "english": "Issuer 1: Hans von Rosenberg, Ritter\nIssuer 2: Elsbeth Rosenberg, née Marschalk von Pappenheim\nSealer 1: Hans von Rosenberg, Ritter\nSealer 2: Elsbeth Rosenberg, née Marschalk von Pappenheim\n\nSealing/authentication: Seal 1: illegible\nSeal 2: illegible",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "spouse",
+          "of": "Elisabeth Rosenberg",
+          "ofTitle": "née Marschalk von Pappenheim"
+        }
+      ]
+    }
+  ]
+}
