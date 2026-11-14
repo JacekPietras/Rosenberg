@@ -4,9 +4,9 @@ import test from 'node:test';
 import { moduleUrl } from './browser-module.mjs';
 
 const { buildSourcePersonPattern, personMentionClass, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
-const names = '# Men\nArnold, Arnolt\nKonrad, Conradus\nEberhard\nEbirhart\nHartmut\nHans\nJohann\nMargaretha\nMichael\nPeter\nWilhelm\nWiprecht';
-const particles = 'von\nv.\nvon.\nde\nan\nvan';
-const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }, { name: 'Michelsberg', variations: ['Michelsberg'] }, { name: 'Landstein', variations: ['Landstein'] }, { name: 'Helmstadt', variations: ['Helmstadt'] }];
+const names = '# Men\nArnold, Arnolt\nAnna\nKonrad, Conradus\nEberhard\nEbirhart\nGeorg\nHans\nHeinrich\nJohann\nMargaretha\nMarschalk\nMichael\nPeter\nWilhelm\nWiprecht\n# Women\nElsbeth';
+const particles = 'von\nv.\nvon.\nde\nan\nvan\nzu';
+const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }, { name: 'Michelsberg', variations: ['Michelsberg'] }, { name: 'Landstein', variations: ['Landstein'] }, { name: 'Helmstadt', variations: ['Helmstadt'] }, { name: 'Pappenheim', variations: ['Pappenheim'] }, { name: 'Marschalk', variations: ['Marschalk'] }];
 const titles = '# Younger\nder Jüngere, the Younger\nder Junge\n# Older\nder Ältere, the Elder, the Older\nder Alte\n# Offices and ranks\nAmtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman\nRitter, Ritters, miles, Knight\nVogt, advocatus\nVizedom, Vitzthum, Vizthum, Vitztum, Vizdom\nder Rote, Rufus';
 const connectors = await readFile(new URL('../data/name-connectors.md', import.meta.url), 'utf8');
 const pattern = buildSourcePersonPattern(names, particles, places, titles, connectors);
@@ -24,6 +24,40 @@ test('recognizes the documented canonical and reordered name forms', () => {
     pattern.lastIndex = 0;
     assert.equal(pattern.test(form), true, form);
   }
+});
+
+test('recognizes Elsbeth Rosenberg with her Marschalk birth surname', () => {
+  pattern.lastIndex = 0;
+  assert.equal(pattern.exec('Issuer 2: Elsbeth Rosenberg, née Marschalk von Pappenheim')?.[0],
+    'Elsbeth Rosenberg, née Marschalk von Pappenheim');
+});
+
+test('recognizes brothers with their shared Marschalk zu Pappenheim title', () => {
+  for (const [sentence, expectedBrothers] of [
+    ['The brothers Heinrich, Georg, and Konrad Marschalk zu Pappenheim', [
+      'Heinrich Marschalk zu Pappenheim',
+      'Georg Marschalk zu Pappenheim',
+      'Konrad Marschalk zu Pappenheim'
+    ]],
+    ['The brothers Georg and Konrad Marschalk zu Pappenheim', [
+      'Georg Marschalk zu Pappenheim',
+      'Konrad Marschalk zu Pappenheim'
+    ]]
+  ]) {
+    assert.match(sentence, /Marschalk zu Pappenheim/u);
+    for (const expected of expectedBrothers) {
+      pattern.lastIndex = 0;
+      assert.equal(pattern.exec(expected)?.[0], expected);
+    }
+  }
+});
+
+test('recognizes Anna Marschalk and Konrad von Rosenberg separately', () => {
+  const widowSentence = 'In 1394, Anna Marschalk, widow of Konrad von Rosenberg, endowed';
+  pattern.lastIndex = 0;
+  assert.deepEqual([...widowSentence.matchAll(pattern)].map((match) => match[0]), [
+    'Anna Marschalk', 'Konrad von Rosenberg'
+  ]);
 });
 
 test('recognizes translated Knight as a non-canonical title in surrounding prose', () => {
