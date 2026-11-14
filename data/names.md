@@ -18,6 +18,7 @@ Berngern
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
 Boppe
+Raben
 Burkhard, Burchard
 Busso
 Carl
