@@ -5,7 +5,15 @@
     {
       "source": "HStAM, Urk. 67, 204",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1657519",
-      "german": "Balthasar von Hanau beauftragt Georg von Rosenberg, für ihn die Bambergischen Stiftslehen zu empfangen."
+      "german": "Balthasar von Hanau beauftragt Georg von Rosenberg, für ihn die Bambergischen Stiftslehen zu empfangen.",
+      "english": "Balthasar von Hanau commissions Georg von Rosenberg to receive the Bamberg collegiate fiefs on his behalf.",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was commissioned by Balthasar von Hanau to receive the Bamberg collegiate fiefs on his behalf."
+        }
+      ]
     }
   ]
 }

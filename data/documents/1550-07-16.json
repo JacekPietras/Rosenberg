@@ -5,7 +5,15 @@
     {
       "source": "HStAD, B 15, NACHWEIS",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4304123",
-      "german": "Balthasar v. Rosenberg bekundet, dass er nach Satzung und Ordnung gemeiner Rechte, auch nach Landesgewohnheit, dem Georg Kämmerer v. Worms, genannt v. Dalberg, für 200 Gulden, je zu 15 Batzen, den neunten Teil am Weinzehnten und kleinen Zehnten zu Bechtolsheim verkauft habe\n\nSiegler: Aussteller"
+      "german": "Balthasar v. Rosenberg bekundet, dass er nach Satzung und Ordnung gemeiner Rechte, auch nach Landesgewohnheit, dem Georg Kämmerer v. Worms, genannt v. Dalberg, für 200 Gulden, je zu 15 Batzen, den neunten Teil am Weinzehnten und kleinen Zehnten zu Bechtolsheim verkauft habe\n\nSiegler: Aussteller",
+      "english": "Balthasar von Rosenberg certifies that, in accordance with the statutes and ordinances of common law and local custom, he has sold Georg Kämmerer von Worms, called von Dalberg, a ninth share of the wine tithe and the small tithe at Bechtolsheim for 200 Gulden, at 15 Batzen per Gulden. Seal: the issuer.",
+      "facts": [
+        {
+          "person": "Balthasar von Rosenberg",
+          "type": "generic",
+          "content": "sold Georg Kämmerer von Worms, called von Dalberg, a ninth share of the wine tithe and the small tithe at Bechtolsheim for 200 Gulden."
+        }
+      ]
     }
   ]
 }

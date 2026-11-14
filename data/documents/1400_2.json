@@ -1,6 +1,9 @@
 {
   "date": "1400-1500",
-  "label": "to review",
+  "label": [
+    "Franken",
+    "important"
+  ],
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, Handschriften ehem. 453",
