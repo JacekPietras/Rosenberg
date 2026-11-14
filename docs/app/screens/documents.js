@@ -44,6 +44,28 @@ export function createDocumentRenderer({
 
   function personMentions(doc) {
     const found = new Map();
+    const peopleById = new Map((state.people || []).filter((person) => person.id).map((person) => [person.id, person.name]));
+    const addPerson = (reference) => {
+      if (typeof reference !== 'string') return;
+      const name = peopleById.get(reference) || reference;
+      const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText).toLocaleLowerCase();
+      if (key && !found.has(key)) found.set(key, name);
+    };
+    const collectFactPeople = (value) => {
+      if (Array.isArray(value)) { value.forEach(collectFactPeople); return; }
+      if (!value || typeof value !== 'object') return;
+      addPerson(value.person);
+      addPerson(value.of);
+    };
+    const visitFacts = (value) => {
+      if (Array.isArray(value)) { value.forEach(visitFacts); return; }
+      if (!value || typeof value !== 'object') return;
+      for (const [key, nested] of Object.entries(value)) {
+        if (key === 'facts' || key === 'guesses') collectFactPeople(nested);
+        else if (nested && typeof nested === 'object') visitFacts(nested);
+      }
+    };
+    visitFacts(doc);
     const patterns = [state.sourcePersonPattern, ...(state.personPattern || []).map(({ pattern }) => pattern)].filter(Boolean);
     for (const text of documentStrings(doc)) {
       for (const sourcePattern of patterns) {
