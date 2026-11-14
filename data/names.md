@@ -152,7 +152,7 @@ Helena
 Irmtraut, Irmendrut, Irmentrurt, Jrmtrudis
 Jeute
 Johanna
-Juliana
+Juliana, Juliane, Julianen
 Jutta, Guta, Gute, Gutta, Juta
 Katharina, Catharina, Catherine, Katerina, Katherina, Katherine, Kathrein
 Kunigunde, Conegundis, Cunegunda, Cunigunda, Konigunt, Kunegunde, Kunegunt, Kunegunth, Kunigunda, Kunigundis, Kunnegunt, Kunnigund

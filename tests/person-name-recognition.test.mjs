@@ -4,7 +4,7 @@ import test from 'node:test';
 import { moduleUrl } from './browser-module.mjs';
 
 const { buildSourcePersonPattern, coordinatedByNameMatches, coordinatedByNameRouteNames, personMentionClass, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
-const names = '# Men\nArnold, Arnolt\nAnna\nKonrad, Conradus\nEberhard\nEbirhart\nGeorg\nHans\nHeinrich\nHartmut\nJohann\nMargaretha\nMichael\nPeter\nWilhelm\nWiprecht\n# Women\nElisabeth, Elsbeth';
+const names = '# Men\nArnold, Arnolt\nAnna\nKonrad, Conradus\nEberhard\nEbirhart\nGeorg\nHans\nHeinrich\nHartmut\nJohann\nMargaretha\nMichael\nPeter\nWilhelm\nWiprecht\n# Women\nElisabeth, Elsbeth\nJuliane';
 const particles = 'von\nv.\nvon.\nde\nan\nvan\nzu';
 const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }, { name: 'Michelsberg', variations: ['Michelsberg'] }, { name: 'Landstein', variations: ['Landstein'] }, { name: 'Helmstadt', variations: ['Helmstadt'] }, { name: 'Pappenheim', variations: ['Pappenheim'] }, { name: 'Bartenstein', variations: ['Bartenstein'] }, { name: 'Marschalk', variations: ['Marschalk'] }];
 const titles = '# Younger\nder Jüngere, the Younger\nder Junge\n# Older\nder Ältere, the Elder, the Older\nder Alte\n# Offices and ranks\nAmtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman\nRitter, Ritters, miles, Knight\nVogt, advocatus\nVizedom, Vitzthum, Vizthum, Vitztum, Vizdom\nder Rote, Rufus';
@@ -68,6 +68,18 @@ test('recognizes and routes married-name forms by their listed birth surname', (
     assert.equal(pattern.exec(form)?.[0], form);
     assert.equal(personRouteName(form, titles, connectors, particles, names, byNames),
       'Elisabeth Marschalk zu Pappenheim');
+  }
+});
+
+test('recognizes Juliane née von Rosenberg with or without parentheses', () => {
+  for (const [text, expectedMatch] of [
+    ['wife Juliane née von Rosenberg, and their lawful', 'Juliane née von Rosenberg'],
+    ['wife Juliane (née von Rosenberg), and their lawful', 'Juliane (née von Rosenberg)']
+  ]) {
+    pattern.lastIndex = 0;
+    assert.equal(pattern.exec(text)?.[0], expectedMatch);
+    assert.equal(personRouteName(expectedMatch, titles, connectors, particles, names, byNames),
+      'Juliane von Rosenberg');
   }
 });
 
