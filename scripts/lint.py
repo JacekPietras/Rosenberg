@@ -14,6 +14,7 @@ LINTERS = Path(__file__).resolve().parent / "linters"
 TRUNCATION_MARKER = "(line truncated to 2000 chars)"
 CHECKS = (
     "normalize_names.py",
+    "validate_name_variants.py",
     "normalize_hidden_places.py",
     "validate_documents.py",
     "migrate_von_und_zu.py",
@@ -94,6 +95,10 @@ def main(argv=None):
                     issues += int(match[1])
             elif line.startswith("Checked English name forms:"):
                 match = re.search(r": (\d+) finding\(s\)\.", line)
+                if match:
+                    issues += int(match[1])
+            elif line.startswith("Checked name variants:"):
+                match = re.search(r": (\d+) warning\(s\)\.", line)
                 if match:
                     issues += int(match[1])
             elif line.startswith("Checked ") and " facts (" in line:

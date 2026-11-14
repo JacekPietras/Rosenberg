@@ -24,7 +24,13 @@ def normalize(path):
             output.append(line)
             continue
         names, marker, comment = line.partition("//")
-        forms = [form.strip() for form in names.split(",") if form.strip()]
+        forms = []
+        seen_forms = set()
+        for form in names.split(","):
+            form = form.strip()
+            if form and form.lower() not in seen_forms:
+                forms.append(form)
+                seen_forms.add(form.lower())
         if not forms:
             flush_groups()
             output.append(line)

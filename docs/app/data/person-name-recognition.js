@@ -44,19 +44,18 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
     .filter((forms) => forms.length)
     .flatMap(([canonical, ...forms]) => [canonical, ...forms].map((form) => [form.toLocaleLowerCase(), canonical])));
   const givenName = `(?:${names})`;
-  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<givenList>${givenName}(?:\\s*,\\s*${givenName})*(?:\\s*,?\\s+and\\s+${givenName}))\\s+(?<byName>${byNames})(?:\\s+(?<particle>${particles})\\s+(?<place>${placeNames}))?(?![\\p{L}\\p{N}])`, 'giu');
+  const surname = `(?:(?<byName>${byNames})(?:\\s+(?<byNameParticle>${particles})\\s+(?<byNamePlace>${placeNames}))?|(?<particle>${particles})\\s+(?<place>${placeNames}))`;
+  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<givenList>${givenName}(?:\\s*,\\s*${givenName})*(?:\\s*,?\\s+and\\s+${givenName}))\\s+(?<surname>${surname})(?![\\p{L}\\p{N}])`, 'giu');
   const contextPattern = new RegExp(`(?<byName>${byNames})\\s+(?<particle>${particles})\\s+(?<place>${placeNames})`, 'giu');
   const matches = [];
   for (const match of String(text).matchAll(pattern)) {
-    let suffix = match.groups.particle && match.groups.place
-      ? `${match.groups.particle} ${match.groups.place}`
-      : '';
-    if (!suffix) {
+    let surnameText = match.groups.surname;
+    if (match.groups.byName && !match.groups.byNameParticle) {
       const before = String(text).slice(0, match.index);
       const prior = [...before.matchAll(contextPattern)].at(-1);
       if (prior && byNameVariants.get(prior.groups.byName.toLocaleLowerCase())
           === byNameVariants.get(match.groups.byName.toLocaleLowerCase())) {
-        suffix = `${prior.groups.particle} ${prior.groups.place}`;
+        surnameText += ` ${prior.groups.particle} ${prior.groups.place}`;
       }
     }
     matches.push({
@@ -65,9 +64,9 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
       end: match.index + match[0].length,
       givenList: match.groups.givenList,
       givenNames: [...match.groups.givenList.matchAll(new RegExp(givenName, 'giu'))].map((givenName) => givenName[0]),
-      surnameText: match[0].slice(match.groups.givenList.length).trim(),
+      surnameText,
       routes: [...match.groups.givenList.matchAll(new RegExp(givenName, 'giu'))].map((givenName) => givenName[0]).map((givenName) =>
-        personRouteName(`${givenName} ${match.groups.byName} ${suffix}`.trim(),
+        personRouteName(`${givenName} ${surnameText}`.trim(),
           titleText, connectorText, particleText, namesText, byNamesText)),
     });
   }

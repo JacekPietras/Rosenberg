@@ -267,3 +267,13 @@ test('recognizes a three-person Oxford-comma list with a shared Marschalk surnam
     'Heinrich Marschalk zu Pappenheim'
   ]);
 });
+
+test('recognizes a four-person list with a shared von Rosenberg surname', () => {
+  const source = 'Feud of Peter von Stedenberg and Hans Schelme with Arnold, Eberhard, Ulrich, and Georg von Rosenberg';
+  assert.deepEqual(coordinatedByNameRouteNames(source, titles, connectors, particles, projectNames, byNames, places), [
+    'Arnold von Rosenberg',
+    'Eberhard von Rosenberg',
+    'Ulrich von Rosenberg',
+    'Georg von Rosenberg'
+  ]);
+});
