@@ -14,7 +14,7 @@
       "facts": [
         {
           "person": "Konrad von Rosenberg",
-          "personTitle": "zu Bartenstein",
+          "personTitle": ["zu Bartenstein"],
           "type": "generic",
           "content": "held the Fronhof at Gnötzheim as a pledge; the tithe and rent there were exempt until the pledge was redeemed."
         }

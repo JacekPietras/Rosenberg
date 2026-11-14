@@ -21,7 +21,6 @@ Berthold, Bertold, Bertolt, Betzmann
 Boppe
 Burkhard, Burchard
 Busso
-Gerung, Gerunch
 Carl
 Casimir
 Caspar, Caſpar, Kaspar
@@ -46,6 +45,7 @@ Frizo
 Georg, Georgs, Goerg, Gorg, Jorg, Jorge, Jorgen, Jörg
 Gerhard, Gerhardus
 Gerlach
+Gerung, Gerunch
 Gotfried, Godefrid, Gottfried
 Gozwin, Goczwin, Godezwin
 Götz, Gocze, Goetz, Gotze, Gotzze, Götzze
@@ -168,7 +168,7 @@ Regina
 Richtze
 Rosina
 Rufina, Rofina, Ruffina
-Selind, Sieglinde, Siglind, Selende, Selant
+Selind, Selant, Selende, Sieglinde, Siglind
 Septia
 Sibylla, Sibyl
 Sophia
