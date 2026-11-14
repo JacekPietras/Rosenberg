@@ -1467,6 +1467,23 @@
     "showOnMap": false
   },
   {
+    "id": "fleckenstein",
+    "variations": [
+      "Fleckenstein",
+      "fleckenstein",
+      "Fleckstein"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "madenburg",
+    "variations": [
+      "Madenburg",
+      "Mademburg"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "zwingenstein",
     "variations": [
       "Zwingenstein"
