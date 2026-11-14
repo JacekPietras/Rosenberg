@@ -40,7 +40,8 @@
       ],
       "img": [
         {
-          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1012_446.jpg"
+          "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1012_446.jpg",
+          "deleted": true
         }
       ]
     }

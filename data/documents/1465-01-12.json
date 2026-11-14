@@ -1,8 +1,8 @@
 {
   "date": "1465-01-12",
   "label": [
-    "to review",
-    "Proposed: Franken"
+    "Franken",
+    "to review"
   ],
   "entries": [
     {
@@ -24,10 +24,22 @@
       ],
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1192&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001192%2Ftitlaufn_0001930336%2F02_0001930336_0001_2-1930336-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1192&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001192%2Ftitlaufn_0001930336%2F02_0001930336_0001_2-1930336-1.jpg",
+          "seals": [
+            {
+              "person": "Ulrich von Rosenberg",
+              "position": "0.4463,0.8858",
+              "size": 0.08650000000000001,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1192&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001192%2Ftitlaufn_0001930336%2F02_0001930336_0002_2-1930336-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1192&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001192%2Ftitlaufn_0001930336%2F02_0001930336_0002_2-1930336-2.jpg",
+          "deleted": true
         }
       ]
     }

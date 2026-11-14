@@ -2,8 +2,8 @@
   "date": "1450-06-22",
   "place": "Bamberg",
   "label": [
-    "to review",
-    "Proposed: Franken"
+    "Franken",
+    "to review"
   ],
   "entries": [
     {
@@ -23,10 +23,22 @@
       ],
       "img": [
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/c233f0a8-52d6-4cce-88fa-9f6f11c33f88/1/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/c233f0a8-52d6-4cce-88fa-9f6f11c33f88/1/full/max/0/default.jpg",
+          "seals": [
+            {
+              "person": "Ulrich von Rosenberg",
+              "position": "0.5955,0.7387",
+              "size": 0.073,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "full"
+            }
+          ]
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/c233f0a8-52d6-4cce-88fa-9f6f11c33f88/2/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/c233f0a8-52d6-4cce-88fa-9f6f11c33f88/2/full/max/0/default.jpg",
+          "deleted": true
         }
       ]
     }
