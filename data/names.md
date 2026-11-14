@@ -145,7 +145,7 @@ Elichin
 Elisabeth, Eilse, Elisabet, Elizabet, Elizabeth, Els, Elsbet, Elsbeth, Else, Elspet, Elspeth, Elyzabeth
 Eva
 Felicitas
-Gertraud, Gerdrud
+Gertrud, Gertraud, Gerdrud
 Guda
 Guota
 Helena
