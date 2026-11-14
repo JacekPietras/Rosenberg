@@ -1576,15 +1576,31 @@
     "showOnMap": false
   },
   {
+    "id": "bibra",
+    "variations": [
+      "Bibra"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "stein",
+    "variations": [
+      "Stein",
+      "Stain",
+      "Steyn",
+      "lapide",
+      "petra"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "wenkheim",
     "variations": [
-      "Wenkheim",
       "Wenkheim",
       "Wenckhaim",
       "Wencheim",
       "weinckhaim",
       "Wengengheim",
-      "Weinckhaim",
       "Wenckheim",
       "Wengkheim",
       "Wegynckein",

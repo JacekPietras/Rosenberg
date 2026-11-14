@@ -1,7 +1,7 @@
 import { escapeHtml } from './html.js';
 import { findPlaceByName } from '../data/entities.js?v=90';
 import { resolvePerson } from '../data/relationships.js?v=11';
-import { coordinatedByNameMatches, personMentionClass, personRouteName } from '../data/person-name-recognition.js?v=14';
+import { coordinatedByNameMatches, personMentionClass, personRouteName } from '../data/person-name-recognition.js?v=18';
 
 export function createMarkupRenderer({ state }) {
   const frakturUpper = [...'𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ'];
@@ -27,10 +27,12 @@ export function createMarkupRenderer({ state }) {
       let givenIndex = 0;
       const givenListPattern = new RegExp(`(?:${group.givenNames.map((name) => name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')).join('|')})`, 'giu');
       const linkedGivenList = group.givenList.replace(givenListPattern, (givenName) => {
-        const route = group.routes[givenIndex++];
-        return `<a class="person-link ${personMentionClass(route, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(route)}">${escapeHtml(givenName)}</a>`;
+        const routeIndex = givenIndex++;
+        const route = group.routes[routeIndex];
+        const label = routeIndex === group.routes.length - 1 ? `${givenName} ${group.surnameText}` : givenName;
+        return `<a class="person-link ${personMentionClass(route, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(route)}">${escapeHtml(label)}</a>`;
       });
-      const linked = `${linkedGivenList} ${escapeHtml(group.surnameText)}`;
+      const linked = linkedGivenList;
       text = text.slice(0, group.start) + token(linked) + text.slice(group.end);
     }
     text = text.replace(/\[([^\]]+)\]/g, (match, id) => {

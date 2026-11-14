@@ -6,6 +6,7 @@ import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 
 from family_graph.person_names import PersonNameRecognizer
+from family_graph.names import Names
 from family_graph.sources import walk_assertions
 
 
@@ -52,6 +53,16 @@ class PersonNameRecognitionTests(unittest.TestCase):
             'Sealer: Elisabeth von Rosenberg, née Marschalk zu Pappenheim.'
         )
         self.assertEqual({'Elsbeth Marschalk zu Pappenheim', 'Elisabeth Marschalk zu Pappenheim'}, names)
+
+    def test_zum_place_form_is_recognized_and_normalized_like_zu(self):
+        names_text = (ROOT / 'data/names.md').read_text(encoding='utf-8')
+        places_data = json.loads((ROOT / 'data/places.json').read_text(encoding='utf-8'))
+        phrase = 'transferred the said Amt Klingenberg to Konrad von Rosenberg zum Bartenstein and his cousin'
+        found = recognizer().find(phrase)
+        self.assertEqual({'Konrad von Rosenberg'}, found)
+        name_rules = Names(names_text, places_data)
+        self.assertEqual(name_rules.key('Konrad von Rosenberg zu Bartenstein'),
+                         name_rules.key('Konrad von Rosenberg zum Bartenstein'))
 
 
 if __name__ == '__main__':

@@ -63,7 +63,7 @@ test('links all three names in a coordinated Marschalk list', async () => {
   }
 });
 
-test('links all four people sharing a von Rosenberg surname', async () => {
+test('highlights the complete final name in a list ending with von Rosenberg', async () => {
   const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
   const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files
     .map((file) => readFile(new URL(`../data/${file}`, import.meta.url), 'utf8')));
@@ -74,9 +74,44 @@ test('links all four people sharing a von Rosenberg surname', async () => {
     sourcePersonPattern: buildSourcePersonPattern(names, particles, places, titles, connectors, byNames),
     placePattern: buildPlacePattern(places) };
   const { inlineMarkup } = createMarkupRenderer({ state });
-  const text = 'Feud of Peter von Stedenberg and Hans Schelme with Arnold, Eberhard, Ulrich, and Georg von Rosenberg';
+  const text = 'Among those named: Thomas, Anselm, Eberhard, Ulrich, and Georg von Rosenberg.';
   const rendered = inlineMarkup(text);
-  for (const route of ['Arnold von Rosenberg', 'Eberhard von Rosenberg', 'Ulrich von Rosenberg', 'Georg von Rosenberg']) {
-    assert.ok(rendered.includes(`href="?person=${encodeURIComponent(route)}"`), route);
+  assert.ok(rendered.includes(`<a class="person-link person-mention-blue" href="?person=${encodeURIComponent('Georg von Rosenberg')}">Georg von Rosenberg</a>`));
+  for (const name of ['Thomas', 'Anselm', 'Eberhard', 'Ulrich']) {
+    assert.ok(rendered.includes(`href="?person=${encodeURIComponent(`${name} von Rosenberg`)}"`), name);
   }
+});
+
+test('highlights Georg von Rosenberg after an adjacent witness list', async () => {
+  const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
+  const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files
+    .map((file) => readFile(new URL(`../data/${file}`, import.meta.url), 'utf8')));
+  const places = parsePlaces(placesJson);
+  const titles = `${ageTitles}\n${officeTitles}`;
+  const state = { people: [], places, personPattern: [], personNamesText: names, byNamesText: byNames,
+    nobiliaryParticlesText: particles, nameConnectorsText: connectors, personNameTitlesText: titles,
+    sourcePersonPattern: buildSourcePersonPattern(names, particles, places, titles, connectors, byNames),
+    placePattern: buildPlacePattern(places) };
+  const { inlineMarkup } = createMarkupRenderer({ state });
+  const text = 'pledged to Ulrich and Heinrich von Rechberg, Thomas, Ulrich, and Georg von Rosenberg,';
+  const rendered = inlineMarkup(text);
+  assert.ok(rendered.includes(`href="?person=${encodeURIComponent('Georg von Rosenberg')}"`));
+  assert.ok(rendered.includes(`href="?person=${encodeURIComponent('Thomas von Rosenberg')}"`));
+  assert.ok(rendered.includes(`href="?person=${encodeURIComponent('Ulrich von Rosenberg')}"`));
+});
+
+test('routes a trailing zum place as a title rather than part of the name', async () => {
+  const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
+  const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files
+    .map((file) => readFile(new URL(`../data/${file}`, import.meta.url), 'utf8')));
+  const places = parsePlaces(placesJson);
+  const titles = `${ageTitles}\n${officeTitles}`;
+  const state = { people: [], places, personPattern: [], personNamesText: names, byNamesText: byNames,
+    nobiliaryParticlesText: particles, nameConnectorsText: connectors, personNameTitlesText: titles,
+    sourcePersonPattern: buildSourcePersonPattern(names, particles, places, titles, connectors, byNames),
+    placePattern: buildPlacePattern(places) };
+  const { inlineMarkup } = createMarkupRenderer({ state });
+  const rendered = inlineMarkup('transferred the said Amt Klingenberg to Konrad von Rosenberg zum Bartenstein and his cousin');
+  assert.ok(rendered.includes(`href="?person=${encodeURIComponent('Konrad von Rosenberg')}"`));
+  assert.ok(rendered.includes('Konrad von Rosenberg zum Bartenstein'));
 });

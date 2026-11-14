@@ -42,10 +42,10 @@ or between the given names and the particle:
 | Ordinal | Optional roman number after the given names: `II`, `(II)`, `[II]`, `II.` |
 | Particle | `von`, `de`, `v.`, `van` … from `data/nobiliary_particles.md`, as the source has it; `v.` and `von.` become `von` |
 | Place | A canonical place variation from `list_place_variations.py` (`Ussinkeim` → `Uissigheim`) |
-| `zu <place>` | Optional second place, part of the name when the source attaches it to the person |
+| `zu <place>` | Optional second place, part of the name when the source attaches it to the person; contracted `zum <place>` has the same meaning and normalizes to `zu <place>` |
 | Name connector | `genannt`, `called`, `known as` and listed forms introduce a designation. In constructions such as `Eberhard genannt von Rosenberg`, the following `von Rosenberg` is the designation, not a surname component. |
 | Simple titles | Single title words and epithets from `data/titles-age.md` (`der Jüngere`, `der Ältere`) and `data/titles-office.md` (`Ritter`, `Vogt`, `der Rote`); the first form of a group is canonical |
-| Full titles | A simple title with an optional `zu <place>` or `an <place>`: `Vogt zu Lauda`, `Vizedom zu Amberg` (source `Vitzthum zu Amberg`); listed places use the canonical form from the Place row. The recognizer may retain a one-word unlisted place in a recognized title, but it is not normalized; report it for the place list. |
+| Full titles | A simple title with an optional `zu`/`zum <place>` or `an <place>`: `Vogt zu Lauda`, `Vizedom zu Amberg` (source `Vitzthum zu Amberg`); listed places use the canonical form from the Place row. The recognizer may retain a one-word unlisted place in a recognized title, but it is not normalized; report it for the place list. |
 
 For a listed by-name followed by the Rosenberg place, `von Rosenberg` and
 `zu Rosenberg` forms identify the same family name: `Schenk von Rosenberg`
@@ -65,6 +65,14 @@ title/place designation. Without a preceding by-name, `zu <place>` remains a
 separate title/place designation when the source attaches it that way, as in
 `Hans von Rosenberg zu Lauda`. Apply these readings only where the listed
 by-name functions as the person's surname in context.
+
+A trailing `zu` or `zum` place after a complete particle-place surname can be
+a title/designation rather than part of the name. For example,
+`Konrad von Rosenberg zu Bartenstein` is recognized as the mention `Konrad von
+Rosenberg` with the title/designation `zu Bartenstein`; its person-name route
+uses `Konrad von Rosenberg`. The same applies to `Konrad von Rosenberg zum
+Bartenstein`. A listed by-name followed directly by `zu Rosenberg` remains the
+special family-name construction described above.
 
 Keep a birth name distinct from a later title or designation. For example,
 in `Elisabeth von Rosenberg, née Marschalk zu Pappenheim`, `von Rosenberg` is

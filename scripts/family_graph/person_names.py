@@ -42,22 +42,22 @@ class PersonNameRecognizer:
         by_name = alternatives(by_names)
         ordinal = r'(?:\s+(?:\(\s*[IVXLCDM]+\s*\)|\[\s*[IVXLCDM]+\s*\]|[IVXLCDM]+\.?))?'
         leading_titles = rf'(?:(?:{title})[\s,;]+)*' if title else ''
-        title_suffix = rf'(?:[\s,;]+(?:{title})(?:\s+(?:zu|an|of)\s+(?:{place}|[^\W\d_][^\W\d_.-]*))?)*' if title else ''
-        internal_titles = rf'(?:[\s,;]+(?:{title})(?:\s+(?:zu|an|of)\s+(?:{place}|[^\W\d_][^\W\d_.-]*))?)*' if title else ''
+        title_suffix = rf'(?:[\s,;]+(?:{title})(?:\s+(?:zu|zum|an|of)\s+(?:{place}|[^\W\d_][^\W\d_.-]*))?)*' if title else ''
+        internal_titles = rf'(?:[\s,;]+(?:{title})(?:\s+(?:zu|zum|an|of)\s+(?:{place}|[^\W\d_][^\W\d_.-]*))?)*' if title else ''
         lead_connector = rf'(?:(?:{connector})\s+)?' if connector else ''
         middle_connector = rf'(?:\s+(?:{connector}))?' if connector else ''
         self.pattern = re.compile(
             rf'(?<![\w]){leading_titles}{lead_connector}(?P<person>(?:{name})(?:\s+(?:{name}))*{ordinal}'
-            rf'{internal_titles}{middle_connector}[\s,]+(?:{particle})\s+(?:{place})'
-            rf'(?:\s+(?:zu|an)\s+(?:{place}))?)(?:\s*\([^)]*\))?{title_suffix}(?![\w])',
+            rf'{internal_titles}{middle_connector}[\s,]+(?:{particle})\s+(?:{place}))'
+            rf'(?:\s+(?:zu|zum|an)\s+(?:{place}))?(?:\s*\([^)]*\))?{title_suffix}(?![\w])',
             re.IGNORECASE | re.UNICODE,
         )
         birth_parts = []
         if by_name:
-            birth_parts.append(rf'(?:{by_name})(?:\s+(?:{particle})\s+(?:{place})(?:\s+(?:zu|an)\s+(?:{place}))?)?')
-        birth_parts.append(rf'(?:{particle})\s+(?:{place})(?:\s+(?:zu|an)\s+(?:{place}))?')
+            birth_parts.append(rf'(?:{by_name})(?:\s+(?:{particle})\s+(?:{place})(?:\s+(?:zu|zum|an)\s+(?:{place}))?)?')
+        birth_parts.append(rf'(?:{particle})\s+(?:{place})(?:\s+(?:zu|zum|an)\s+(?:{place}))?')
         birth_surname = '|'.join(birth_parts)
-        source_surname = rf'(?:(?:{particle})\s+)?(?:{place}|{by_name})(?:\s+(?:zu|an)\s+(?:{place}))?' if by_name else rf'(?:(?:{particle})\s+)?(?:{place})(?:\s+(?:zu|an)\s+(?:{place}))?'
+        source_surname = rf'(?:(?:{particle})\s+)?(?:{place}|{by_name})(?:\s+(?:zu|zum|an)\s+(?:{place}))?' if by_name else rf'(?:(?:{particle})\s+)?(?:{place})(?:\s+(?:zu|zum|an)\s+(?:{place}))?'
         self.birth_pattern = re.compile(
             rf'(?<![\w]){leading_titles}{lead_connector}(?P<given>(?:{name})(?:\s+(?:{name}))*){ordinal}'
             rf'{internal_titles}{middle_connector}[\s,]+{source_surname}[\s,;]+(?:née|nee)[\s,;]+'
@@ -65,7 +65,7 @@ class PersonNameRecognizer:
             re.IGNORECASE | re.UNICODE,
         )
         self.strip_titles = re.compile(
-            rf'[\s,;]+(?:{title})(?:\s+(?:zu|an|of)\s+(?:{place}|[^\W\d_][^\W\d_.-]*))?',
+            rf'[\s,;]+(?:{title})(?:\s+(?:zu|zum|an|of)\s+(?:{place}|[^\W\d_][^\W\d_.-]*))?',
             re.IGNORECASE | re.UNICODE,
         ) if title else None
         self.strip_connectors = re.compile(rf'\s+(?:{connector})\s+', re.IGNORECASE | re.UNICODE) if connector else None

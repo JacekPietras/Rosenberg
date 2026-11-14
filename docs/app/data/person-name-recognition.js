@@ -44,7 +44,7 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
     .filter((forms) => forms.length)
     .flatMap(([canonical, ...forms]) => [canonical, ...forms].map((form) => [form.toLocaleLowerCase(), canonical])));
   const givenName = `(?:${names})`;
-  const surname = `(?:(?<byName>${byNames})(?:\\s+(?<byNameParticle>${particles})\\s+(?<byNamePlace>${placeNames}))?|(?<particle>${particles})\\s+(?<place>${placeNames}))`;
+  const surname = `(?<byName>${byNames})(?:\\s+(?<byNameParticle>${particles})\\s+(?<byNamePlace>${placeNames}))?|(?<particle>${particles})\\s+(?<place>${placeNames})`;
   const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<givenList>${givenName}(?:\\s*,\\s*${givenName})*(?:\\s*,?\\s+and\\s+${givenName}))\\s+(?<surname>${surname})(?![\\p{L}\\p{N}])`, 'giu');
   const contextPattern = new RegExp(`(?<byName>${byNames})\\s+(?<particle>${particles})\\s+(?<place>${placeNames})`, 'giu');
   const matches = [];
@@ -97,11 +97,11 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   if (!names || !particles || !placeNames) return null;
   const romanOrdinal = '(?:\\s+(?:\\(\\s*[IVXLCDM]+\\s*\\)|\\[\\s*[IVXLCDM]+\\s*\\]|[IVXLCDM]+\\.?))?';
   const titlePlace = `(?:${placeNames}|[\\p{L}][\\p{L}'’.-]*)`;
-  const titleMatch = titles ? `(?:${titles})(?:\\s+(?:zu|an|of)\\s+${titlePlace})?` : '(?!)';
+  const titleMatch = titles ? `(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+${titlePlace})?` : '(?!)';
   const titleSequence = titles ? `(?:[\\s,;]+${titleMatch})*` : '';
   const leadingTitles = titles ? `(?:${titleMatch}\\s+)*` : '';
   const particle = `(?:${particles}|of)`;
-  const placeClause = `(?:${placeNames})(?:\\s+(?:zu|an)\\s+(?:${placeNames}))?`;
+  const placeClause = `(?:${placeNames})(?:\\s+(?:zu|zum|an)\\s+(?:${placeNames}))?`;
   const suffixTitles = `(?:[\\s,;]+${titleMatch})*`;
   const placeNote = '(?:\\s*\\(-?[\\p{L}\\p{N}]+-?\\))?';
   const nameNote = '(?:\\s*\\(\\s*or\\s+[^)]*\\))?';
@@ -128,7 +128,7 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
   const canonicalByName = variantMap(byNamesText);
   const particleForms = String(particleText).split(/\r?\n/).map((line) => line.split('//')[0].trim()).filter(Boolean);
   const normalizeRouteName = (value) => {
-    const parts = String(value).trim().split(/\s+/);
+    let parts = String(value).trim().split(/\s+/);
     if (!parts.length) return '';
     const byNameIndex = parts.findIndex((part, index) => index > 0 && canonicalByName.has(part.toLocaleLowerCase()));
     const particleIndex = parts.findIndex((part, index) => index > 0 && particleForms.some((particle) => particle.toLocaleLowerCase() === part.toLocaleLowerCase()));
@@ -137,12 +137,19 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
       parts[index] = canonicalGiven.get(parts[index].toLocaleLowerCase()) || parts[index];
     }
     if (byNameIndex >= 0) parts[byNameIndex] = canonicalByName.get(parts[byNameIndex].toLocaleLowerCase()) || parts[byNameIndex];
+    parts = parts.map((part) => part.toLocaleLowerCase() === 'zum' ? 'zu' : part);
+    const byNameZuRosenberg = byNameIndex >= 0 && particleIndex === byNameIndex + 1
+      && parts[particleIndex]?.toLocaleLowerCase() === 'zu'
+      && parts[particleIndex + 1]?.toLocaleLowerCase() === 'rosenberg';
+    if (byNameZuRosenberg) parts[particleIndex] = 'von';
     if (particleIndex >= 0) {
       const particle = parts[particleIndex].toLocaleLowerCase();
       if (particle === 'v.' || particle === 'von.') parts[particleIndex] = 'von';
-      if (byNameIndex >= 0 && particleIndex === byNameIndex + 1 && parts[particleIndex + 1]?.toLocaleLowerCase() === 'rosenberg'
-          && ['zu', 'v', 'v.', 'von.'].includes(particle)) parts[particleIndex] = 'von';
     }
+    const surnameStart = particleIndex >= 0 ? particleIndex + 2 : byNameIndex >= 0 ? byNameIndex + 1 : 1;
+    const titlePlaceIndex = parts.findIndex((part, index) => index >= surnameStart
+      && ['zu', 'zum'].includes(part.toLocaleLowerCase()));
+    if (titlePlaceIndex >= 0) parts = parts.slice(0, titlePlaceIndex);
     return parts.join(' ');
   };
   const birthName = String(name).match(/^(.*?)[\s,;]+(?:née|nee)[\s,;]+(.+)$/iu);
@@ -164,11 +171,11 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
   let routeName = String(name)
     .replace(/[\s,;]+(?:née|nee)[\s,;]+/iu, ' ')
     .replace(new RegExp(`^(?:${titles})[\\s,;]+(?:${connectors})[\\s,;]+`, 'iu'), '')
-    .replace(new RegExp(`^(?:${titles}(?:\\s+(?:zu|an|of)\\s+[^,]+)?[\\s,;]+)+`, 'iu'), '')
+    .replace(new RegExp(`^(?:${titles}(?:\\s+(?:zu|zum|an|of)\\s+[^,]+)?[\\s,;]+)+`, 'iu'), '')
     .replace(new RegExp(`^(?:${connectors})\\s+`, 'iu'), '')
     .replace(/\s*\(\s*or\s+[^)]*\)/iu, '')
     .replace(new RegExp(`${ordinal}${titleSequence}[\\s,;]+(?=(?:von|v\\.?|van|de|in|der|die|das|des|of)\\b)`, 'iu'), ' ')
-    .replace(new RegExp(`[\\s,;]+(?:${titles})(?:\\s+(?:zu|an|of)\\s+[^,;]+)?(?:[\\s,;]+(?:${titles})(?:\\s+(?:zu|an|of)\\s+[^,;]+)?)*$`, 'iu'), '')
+    .replace(new RegExp(`[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?(?:[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?)*$`, 'iu'), '')
     .replace(new RegExp(`[\\s,;]+(?:${connectors})[\\s,;]+(?:${particles})\\s+[^,;]+$`, 'iu'), '')
     .replace(/\s*\([^)]*\)$/u, '')
     .trim();

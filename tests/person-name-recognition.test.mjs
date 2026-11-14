@@ -6,7 +6,7 @@ import { moduleUrl } from './browser-module.mjs';
 const { buildSourcePersonPattern, coordinatedByNameMatches, coordinatedByNameRouteNames, personMentionClass, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
 const names = '# Men\nArnold, Arnolt\nAnna\nKonrad, Conradus\nEberhard\nEbirhart\nGeorg\nHans\nHeinrich\nHartmut\nJohann\nMargaretha\nMichael\nPeter\nWilhelm\nWiprecht\n# Women\nElisabeth, Elsbeth';
 const particles = 'von\nv.\nvon.\nde\nan\nvan\nzu';
-const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }, { name: 'Michelsberg', variations: ['Michelsberg'] }, { name: 'Landstein', variations: ['Landstein'] }, { name: 'Helmstadt', variations: ['Helmstadt'] }, { name: 'Pappenheim', variations: ['Pappenheim'] }, { name: 'Marschalk', variations: ['Marschalk'] }];
+const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }, { name: 'Michelsberg', variations: ['Michelsberg'] }, { name: 'Landstein', variations: ['Landstein'] }, { name: 'Helmstadt', variations: ['Helmstadt'] }, { name: 'Pappenheim', variations: ['Pappenheim'] }, { name: 'Bartenstein', variations: ['Bartenstein'] }, { name: 'Marschalk', variations: ['Marschalk'] }];
 const titles = '# Younger\nder Jüngere, the Younger\nder Junge\n# Older\nder Ältere, the Elder, the Older\nder Alte\n# Offices and ranks\nAmtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman\nRitter, Ritters, miles, Knight\nVogt, advocatus\nVizedom, Vitzthum, Vizthum, Vitztum, Vizdom\nder Rote, Rufus';
 const connectors = await readFile(new URL('../data/name-connectors.md', import.meta.url), 'utf8');
 const projectNames = await readFile(new URL('../data/names.md', import.meta.url), 'utf8');
@@ -26,6 +26,22 @@ test('recognizes the documented canonical and reordered name forms', () => {
     pattern.lastIndex = 0;
     assert.equal(pattern.test(form), true, form);
   }
+});
+
+test('recognizes zum as zu before a place and routes it canonically', () => {
+  const phrase = 'Konrad von Rosenberg zum Bartenstein';
+  pattern.lastIndex = 0;
+  assert.equal(pattern.exec(phrase)?.[0], phrase);
+  assert.equal(personRouteName(phrase, titles, connectors, particles, projectNames, byNames),
+    'Konrad von Rosenberg');
+});
+
+test('keeps zu Bartenstein as a title after the Rosenberg family name in context', () => {
+  const phrase = 'transferred the said Amt Klingenberg to Konrad von Rosenberg zu Bartenstein and his cousin';
+  pattern.lastIndex = 0;
+  assert.equal(pattern.exec(phrase)?.[0], 'Konrad von Rosenberg zu Bartenstein');
+  assert.equal(personRouteName('Konrad von Rosenberg zu Bartenstein', titles, connectors, particles,
+    projectNames, byNames), 'Konrad von Rosenberg');
 });
 
 test('recognizes listed by-names alone and as part of Rosenberg family names', () => {
@@ -268,12 +284,14 @@ test('recognizes a three-person Oxford-comma list with a shared Marschalk surnam
   ]);
 });
 
-test('recognizes a four-person list with a shared von Rosenberg surname', () => {
-  const source = 'Feud of Peter von Stedenberg and Hans Schelme with Arnold, Eberhard, Ulrich, and Georg von Rosenberg';
+test('recognizes every person in a coordinated von Rosenberg list', () => {
+  const source = 'Among those named: Thomas, Anselm, Eberhard, Ulrich, and Georg von Rosenberg.';
   assert.deepEqual(coordinatedByNameRouteNames(source, titles, connectors, particles, projectNames, byNames, places), [
-    'Arnold von Rosenberg',
+    'Thomas von Rosenberg',
+    'Anselm von Rosenberg',
     'Eberhard von Rosenberg',
     'Ulrich von Rosenberg',
     'Georg von Rosenberg'
   ]);
 });
+

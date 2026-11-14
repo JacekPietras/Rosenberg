@@ -64,7 +64,7 @@ class Names:
     def key(self, name):
         # Only normalize the given name and the complete surname/place phrase.
         # Münch von Rosenberg therefore cannot become von Rosenberg.
-        parts = normalize(name).split(' ')
+        parts = ['zu' if part == 'zum' else part for part in normalize(name).split(' ')]
         if not parts:
             return ''
         connector = next((i for i, part in enumerate(parts) if part in {'von', 'de'}), None)

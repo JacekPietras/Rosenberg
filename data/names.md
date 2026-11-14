@@ -13,6 +13,7 @@ Arnold, Arnolt
 Asinus
 Asmus
 Balthasar
+Bartholomäus, Barthel, Barthelme, Barthelmä, Bartholomaeus, Bartholomä, Bartholomê
 Batt
 Berngern
 Bernhard
@@ -20,6 +21,8 @@ Berthold, Bertold, Bertolt, Betzmann
 Boppe
 Burkhard, Burchard
 Busso
+Carl
+Casimir
 Caspar, Caſpar, Kaspar
 Christoph, Chriftoph, Christof, Christpoh
 Cornelius, Cornelis
@@ -116,7 +119,6 @@ Wiprecht, Welprecht, Wibrecht, Wipert, Wipprecht, Wynprecht, Wyprecht
 Wok, Bocho, Vok, Witiko, Wocco, Wocho, Woko
 Wolf, Wolff
 Wolfgang
-Bartholomäus, Barthelmä, Bartholomê, Bartholomä, Barthelme, Barthel, Bartholomaeus
 Wolfram, Wolframus
 Yttel
 Zaisolph, Seisolph, Zeisolf, Zeisolph
