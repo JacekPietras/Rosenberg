@@ -164,6 +164,16 @@
     "lon": 9.92937
   },
   {
+    "id": "edelfingen",
+    "variations": [
+      "Edelfingen"
+    ],
+    "category": "village",
+    "lat": 49.51446,
+    "lon": 9.75086,
+    "description": "Edelfingen is a village in Bad Mergentheim, southwest of Würzburg. Settlement coordinates: https://mapcarta.com/de/18212608 . Municipal location: https://www.bad-mergentheim.de/de/verwaltung/stadtteile/bad-mergentheimer-stadtteil-edelfingen-id_432/ ."
+  },
+  {
     "id": "bronnbach",
     "variations": [
       "Bronnbach",
@@ -330,6 +340,9 @@
   },
   {
     "variations": [
+      "Haltenbergstetten",
+      "Haldermannstetten",
+      "Haltmarstetten",
       "Schloss Haltenbergstetten"
     ],
     "category": "castle",
@@ -1463,6 +1476,15 @@
     "id": "neuhaus",
     "variations": [
       "Neuhaus"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "rieneck",
+    "variations": [
+      "Rieneck",
+      "Rineck",
+      "Rienek"
     ],
     "showOnMap": false
   },
