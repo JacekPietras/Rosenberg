@@ -4,7 +4,7 @@ import test from 'node:test';
 import { moduleUrl } from './browser-module.mjs';
 
 const { buildSourcePersonPattern, personMentionClass, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
-const names = '# Men\nArnold, Arnolt\nKonrad, Conradus\nEberhard\nEbirhart\nHartmut\nHans\nJohann\nPeter\nWilhelm\nWiprecht';
+const names = '# Men\nArnold, Arnolt\nKonrad, Conradus\nEberhard\nEbirhart\nHartmut\nHans\nJohann\nMargaretha\nMichael\nPeter\nWilhelm\nWiprecht';
 const particles = 'von\nv.\nvon.\nde\nan\nvan';
 const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }, { name: 'Michelsberg', variations: ['Michelsberg'] }, { name: 'Landstein', variations: ['Landstein'] }, { name: 'Helmstadt', variations: ['Helmstadt'] }];
 const titles = '# Younger\nder Jüngere, the Younger\nder Junge\n# Older\nder Ältere, the Elder, the Older\nder Alte\n# Offices and ranks\nAmtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman\nRitter, Ritters, miles, Knight\nVogt, advocatus\nVizedom, Vitzthum, Vizthum, Vitztum, Vizdom\nder Rote, Rufus';
@@ -86,6 +86,12 @@ test('recognizes the name in the English translation with named before it', () =
   pattern.lastIndex = 0;
   const sentence = 'the sons of a (already deceased) knight named Eberhard von Rosenberg, appear';
   assert.equal(pattern.exec(sentence)?.[0], 'Eberhard von Rosenberg');
+});
+
+test('recognizes a woman by her birth surname in a grant description', () => {
+  pattern.lastIndex = 0;
+  const sentence = 'grants Margaretha, née von Rosenberg, wife of Michael von Seinsheim, lifetime';
+  assert.equal(pattern.exec(sentence)?.[0], 'Margaretha, née von Rosenberg');
 });
 
 test('recognizes data-listed English name connectors before the given name', () => {

@@ -56,7 +56,9 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const leadingConnector = connectors ? `(?:(?:${connectors})\\s+)?` : '';
   const namingConnector = connectors ? `(?:\\s+(?:${connectors}))?` : '';
   const alternateDesignation = connectors ? `(?:[\\s,;]+(?:${connectors})[\\s,;]+${particle}\\s+${placeClause})?` : '';
-  return new RegExp(`(?<![\\p{L}\\p{N}])${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}${alternateDesignation}(?![\\p{L}\\p{N}])`, 'giu');
+  const birthSurname = `[\\s,;]+(?:née|nee)[\\s,;]+(?:von|v\\.?|van|de|in|der|die|das|des|of)\\s+(?:${placeNames})`;
+  const surname = `(?:[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}${alternateDesignation}|${birthSurname})`;
+  return new RegExp(`(?<![\\p{L}\\p{N}])${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}${surname}(?![\\p{L}\\p{N}])`, 'giu');
 }
 
 export function personRouteName(name, titleText = '', connectorText = '', particleText = '') {
@@ -67,6 +69,7 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
   const ordinal = '(?:\\s+(?:\\(\\s*[IVXLCDM]+\\s*\\)|\\[\\s*[IVXLCDM]+\\s*\\]|[IVXLCDM]+\\.?))?';
   const titleSequence = titles ? `(?:[\\s,]+(?:${titles}))*` : '';
   return String(name)
+    .replace(/[\s,;]+(?:née|nee)[\s,;]+/iu, ' ')
     .replace(new RegExp(`^(?:${titles})[\\s,;]+(?:${connectors})[\\s,;]+`, 'iu'), '')
     .replace(new RegExp(`^(?:${titles}(?:\\s+(?:zu|an|of)\\s+[^,]+)?[\\s,;]+)+`, 'iu'), '')
     .replace(new RegExp(`^(?:${connectors})\\s+`, 'iu'), '')
