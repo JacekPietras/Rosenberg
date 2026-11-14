@@ -116,6 +116,7 @@ Wiprecht, Welprecht, Wibrecht, Wipert, Wipprecht, Wynprecht, Wyprecht
 Wok, Bocho, Vok, Witiko, Wocco, Wocho, Woko
 Wolf, Wolff
 Wolfgang
+Bartholomäus, Barthelmä, Bartholomê, Bartholomä, Barthelme, Barthel, Bartholomaeus
 Wolfram, Wolframus
 Yttel
 Zaisolph, Seisolph, Zeisolf, Zeisolph
