@@ -1480,6 +1480,21 @@
     "showOnMap": false
   },
   {
+    "id": "holtzhusen",
+    "variations": [
+      "Holzhausen",
+      "Holtzhausen",
+      "Holtzhüsen",
+      "Holzhusin",
+      "Holczhusin",
+      "Holzhusun",
+      "Holßhusen",
+      "Holzhusen",
+      "Holtzhusen"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "rieneck",
     "variations": [
       "Rieneck",
