@@ -45,7 +45,7 @@ Gerlach
 Gotfried, Godefrid, Gottfried
 Götz, Goetz, Gotze, Gocze, Gotzze, Götzze
 Gozwin / Goczwin / Godezwin
-Hans, Johann, Hanemann, Hanse, Johannes, Hanns, Joannes, Iohannes, Johanns
+Hans, Johann, Hanemann, Hanse, Johannes, Hanns, Joannes, Iohannes, Johanns, Johans
 Hansolf
 Hank
 Hartlieb
@@ -188,3 +188,4 @@ Rodel
 Pirchan
 Grabner
 Wirt
+Marschalk, Marschalken, Marschalkin, Marſchalk, Marschalch
