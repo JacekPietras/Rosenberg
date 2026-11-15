@@ -11,6 +11,7 @@ Domherr, canonicus, Kanoniker, Kanonikus
 Schultheiß, Schultheiss, scultetus
 Bischof, Bischove, Bischofe, Bischofs, Bischofes, Bischoff, Bischoffe, Bischoffs, Bischoffes, Biſchof, Biſchofs, Biſchoff, Biſchoffs, episcopus, episcopi, episcopo, episcopum, Bishop
 Graf, Grafen, Pfalzgraf
+Baron
 
 // ranks
 Ritter, Ritters, miles, milites, Knight

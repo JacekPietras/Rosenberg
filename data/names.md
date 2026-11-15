@@ -21,6 +21,8 @@ Boppe, Bopp
 Burkhard, Burchard, Burkard
 Busso
 Casimir
+Gero
+Eduard
 Caspar, Caſpar, Kaspar
 Christoph, Chriftoph, Christof, Christoff, Christpoh
 Cornelius, Cornelis
@@ -34,6 +36,7 @@ Engel
 Engelhard, Engelhardus, Engelhart
 Erasmus
 Erhard
+Viktor
 Erkinger
 Ernst, Arnest, Ehrenfried, Erinze, Erwin
 Franz, Franziskus

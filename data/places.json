@@ -104,6 +104,7 @@
       "Rosenberch",
       "Rosemberch",
       "Rosenburgk",
+      "Rosenburch",
       "Rossberg",
       "Roßberg",
       "Rusenberg",
@@ -1509,6 +1510,20 @@
     "variations": [
       "Fleckenstein",
       "Fleckstein"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "rorschach",
+    "variations": [
+      "Rorschach"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "barby",
+    "variations": [
+      "Barby"
     ],
     "showOnMap": false
   },
