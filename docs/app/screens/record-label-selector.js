@@ -7,7 +7,11 @@ function labelsFor(document) {
     .filter(Boolean);
 }
 
-export function setupRecordLabelSelector({ state, repository, rerender, escapeHtml, markSaved = () => {} }) {
+function capitalizeFirst(label) {
+  return label ? label[0].toLocaleUpperCase() + label.slice(1) : label;
+}
+
+export function setupRecordLabelSelector({ state, repository, rerender, escapeHtml, distinctFamilies = new Set(), markSaved = () => {} }) {
   let activePath = null;
   let dialog = document.getElementById(SELECTOR_ID);
   if (!dialog) {
@@ -121,11 +125,19 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
       activePath = editButton.dataset.editRecordLabels;
       const current = new Set(labelsFor(state.documents.get(activePath)).map((label) => label.toLocaleLowerCase()));
       const choices = new Map();
+      distinctFamilies.forEach((label) => {
+        choices.set(label.toLocaleLowerCase(), capitalizeFirst(label));
+      });
       state.manifest.documents.forEach((path) => labelsFor(state.documents.get(path)).forEach((label) => {
         if (!choices.has(label.toLocaleLowerCase())) choices.set(label.toLocaleLowerCase(), label);
       }));
       fieldset.innerHTML = `<legend>Labels</legend>${[...choices.values()]
-        .sort((left, right) => left.localeCompare(right, undefined, { sensitivity: 'base' }))
+        .sort((left, right) => {
+          const leftIsDistinctFamily = distinctFamilies.has(left.toLocaleLowerCase());
+          const rightIsDistinctFamily = distinctFamilies.has(right.toLocaleLowerCase());
+          if (leftIsDistinctFamily !== rightIsDistinctFamily) return leftIsDistinctFamily ? 1 : -1;
+          return left.localeCompare(right, undefined, { sensitivity: 'base' });
+        })
         .map((label) => `<label class="record-label-option"><input type="checkbox" value="${escapeHtml(label)}"${current.has(label.toLocaleLowerCase()) ? ' checked' : ''}>${escapeHtml(label)}</label>`)
         .join('')}`;
       status.textContent = '';

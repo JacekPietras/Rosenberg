@@ -5,7 +5,7 @@ import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=124';
 import { renderActiveScreen } from './screens/router-view.js?v=14';
 import { createDocumentRenderer } from './screens/documents.js?v=28';
-import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=4';
+import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=5';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=3';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=90';
 import { createSealScreen } from './screens/seals.js?v=3';
@@ -1523,7 +1523,7 @@ async function refreshIfChanged() {
 setupControls({ state, repository, updateLanguageControl, updateFactsControl, applyTheme, applyMermaidTheme, savePreferences, rerender: renderActive });
 
 setupImageLightboxComponent({ state, repository, rerender: renderActive, markSaved: (path, version) => markSavedSnapshot(state, path, version) });
-setupRecordLabelSelector({ state, repository, rerender: renderActive, escapeHtml, markSaved: (path, version) => markSavedSnapshot(state, path, version) });
+setupRecordLabelSelector({ state, repository, rerender: renderActive, escapeHtml, distinctFamilies: DISTINCT_FAMILIES, markSaved: (path, version) => markSavedSnapshot(state, path, version) });
 setupImageLabelSelector({ state, repository, rerender: renderActive, escapeHtml, markSaved: (path, version) => markSavedSnapshot(state, path, version) });
 repository.isLocalServer().then((isLocal) => {
   state.canEditDocuments = isLocal;
