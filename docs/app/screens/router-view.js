@@ -134,12 +134,12 @@ export async function renderActiveScreen({
   }
   state.deferPersonNameRecognition = previousDeferredPersonRecognition;
   function observeReviewLabelTargets(root) {
-    const targets = root.querySelectorAll('[data-review-label-path]');
+    const targets = [
+      ...(root.matches?.('[data-review-label-path]') ? [root] : []),
+      ...root.querySelectorAll('[data-review-label-path]'),
+    ];
     if (!targets.length) return;
     targets.forEach((target) => {
-      // Document name recognition is deferred on the documents screen. Wait for
-      // that pass to finish so proposal labels use the complete mention index.
-      if (target.closest('[data-person-links-path]')) return;
       const path = target.dataset.reviewLabelPath;
       const doc = state.documents.get(path);
       const placeholder = target.querySelector('[data-review-name-labels]');
