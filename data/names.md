@@ -91,8 +91,7 @@ Otto, Attel
 Pankraz
 Peter
 Philipp, Philips
-Raban, Rabanus
-Raben
+Raban, Rabanus, Rhaban, Rhabanus, Raben, Raven
 Reichard, Reichart, Richard
 Reinbot
 Reinhard, Reinhart
