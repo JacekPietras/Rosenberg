@@ -18,7 +18,7 @@ Berngern
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
 Boppe, Bopp
-Burkhard, Burchard
+Burkhard, Burchard, Burkard
 Busso
 Casimir
 Caspar, Caſpar, Kaspar
@@ -116,6 +116,7 @@ Weigrecht
 Wenceslaus, Wenzel
 Werenher
 Wernher, Werner
+Wernlein, Wirdlin
 Wilhelm, Wilhem, Vilém
 Wiprecht, Welprecht, Wibrecht, Wipert, Wipprecht, Wynprecht, Wyprecht
 Wok, Bocho, Vok, Witiko, Wocco, Wocho, Woko
