@@ -3,9 +3,9 @@ import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=124';
-import { renderActiveScreen } from './screens/router-view.js?v=17';
-import { createDocumentRenderer } from './screens/documents.js?v=30';
-import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=5';
+import { renderActiveScreen } from './screens/router-view.js?v=19';
+import { createDocumentRenderer } from './screens/documents.js?v=34';
+import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=9';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=3';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=90';
 import { createSealScreen } from './screens/seals.js?v=3';
@@ -49,7 +49,7 @@ function savePreferences() {
     darkMode: state.darkMode,
   });
 }
-const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, record: preferences.record, recordSource: null, navigationRecord: null, navigationRecordSource: null, recordLabels: preferences.recordLabels, toTranscribe: preferences.toTranscribe, hiddenRecordLabels: preferences.hiddenRecordLabels, classifiedDocumentPaths: new Set(), sealNames: preferences.sealNames, sealType: preferences.sealType, imageRegions: preferences.imageRegions || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedDocumentsYear: null };
+const state = { manifest: null, active: preferences.active, place: preferences.place, person: preferences.person, record: preferences.record, recordSource: null, navigationRecord: null, navigationRecordSource: null, recordLabels: preferences.recordLabels, toTranscribe: preferences.toTranscribe, hiddenRecordLabels: preferences.hiddenRecordLabels, sealNames: preferences.sealNames, sealType: preferences.sealType, imageRegions: preferences.imageRegions || [], language: preferences.language, showFacts: preferences.showFacts, darkMode: preferences.darkMode, canEditDocuments: false, documents: new Map(), people: [], personRecords: [], places: [], calibrationCities: [], personPattern: null, placePattern: null, snapshot: '', yearHighlightCleanup: null, sealHighlightCleanup: null, sealMarkerCleanup: null, lastRenderedDocumentsYear: null };
 state.familyView = preferences.familyView || 'facts';
 state.familyFocus = preferences.familyFocus || null;
 state.changeFamilyFocus = async (focus) => {
@@ -1375,6 +1375,7 @@ const documentRenderer = createDocumentRenderer({
   getPeople: () => state.people,
   distinctFamilies: DISTINCT_FAMILIES,
 });
+state.renderReviewNameLabels = documentRenderer.reviewNameLabels;
 
 const sealScreen = createSealScreen({
   state,

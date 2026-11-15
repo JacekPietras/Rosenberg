@@ -136,30 +136,17 @@ export async function renderActiveScreen({
   function observeReviewLabelTargets(root) {
     const targets = root.querySelectorAll('[data-review-label-path]');
     if (!targets.length) return;
-    if (typeof IntersectionObserver !== 'undefined') {
-      if (!state.documentReviewLabelObserver) {
-        state.documentReviewLabelObserver = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            state.documentReviewLabelObserver.unobserve(entry.target);
-            const path = entry.target.dataset.reviewLabelPath;
-            const doc = state.documents.get(path);
-            const target = entry.target.querySelector('[data-review-name-labels]');
-            if (doc && target) renderReviewNameLabels(doc, path).then((html) => {
-              if (target.isConnected) target.outerHTML = html;
-            });
-          });
-        }, { rootMargin: '250px 0px' });
-      }
-      targets.forEach((target) => state.documentReviewLabelObserver.observe(target));
-    } else {
-      targets.forEach((target) => {
-        const path = target.dataset.reviewLabelPath;
-        const doc = state.documents.get(path);
-        const placeholder = target.querySelector('[data-review-name-labels]');
-        if (doc && placeholder) renderReviewNameLabels(doc, path).then((html) => { if (placeholder.isConnected) placeholder.outerHTML = html; });
+    targets.forEach((target) => {
+      // Document name recognition is deferred on the documents screen. Wait for
+      // that pass to finish so proposal labels use the complete mention index.
+      if (target.closest('[data-person-links-path]')) return;
+      const path = target.dataset.reviewLabelPath;
+      const doc = state.documents.get(path);
+      const placeholder = target.querySelector('[data-review-name-labels]');
+      if (doc && placeholder) renderReviewNameLabels(doc, path).then((html) => {
+        if (placeholder.isConnected) placeholder.outerHTML = html;
       });
-    }
+    });
   }
   observeReviewLabelTargets(content);
   const personLinkTargets = content.querySelectorAll('[data-person-links-path]');

@@ -1,7 +1,7 @@
+import { findPersonNameMentions, personRouteName } from '../data/person-name-recognition.js?v=23';
 import { factDate } from '../rendering/facts.js?v=9';
 import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=9';
-import { findPersonNameMentions, personRouteName } from '../data/person-name-recognition.js?v=23';
 
 export function createDocumentRenderer({
   state,
@@ -140,13 +140,10 @@ export function createDocumentRenderer({
   }
 
   async function reviewNameLabels(doc, path) {
-    const reviewLabels = Array.isArray(doc?.label) ? doc.label : [doc?.label];
-    const isToReview = reviewLabels.some((label) => String(label || '').trim().toLocaleLowerCase() === 'to review');
-    if (!isToReview && !state.classifiedDocumentPaths?.has(path)) return '';
     const index = await documentMentionIndex();
     const people = index.get(path) || personMentions(doc);
     const documentYears = documentYearBounds(doc.date);
-    if (!people.size) return '';
+    if (!people.size) return '<div class="review-name-mentions" tabindex="-1" aria-label="Label propositions">No label propositions found.</div>';
     const labelsByName = new Map([...people.keys()].map((key) => [key, new Map()]));
     for (const key of people.keys()) {
       for (const { path: otherPath, doc: otherDoc } of documentsByMention.get(key) || []) {
@@ -192,7 +189,7 @@ export function createDocumentRenderer({
         return `<span class="record-label${outsideDate ? ' is-outside-document-date' : ''}">${escapeHtml(label)}${years ? ` [${years}]` : ''}</span>`;
       }).join('')}</span></div>` : '';
     }).filter(Boolean);
-    return rows.length ? `<div class="review-name-mentions" aria-label="Labels in other documents where names are mentioned">${rows.join('')}</div>` : '';
+    return `<div class="review-name-mentions" tabindex="-1" aria-label="Labels in other documents where names are mentioned">${rows.length ? rows.join('') : 'No label propositions found.'}</div>`;
   }
 
   function renderEntry(entry, { title = true, subheading = true, date = true, source = true, image = true, path = '', index = null, documentDate = '' } = {}) {
@@ -236,13 +233,15 @@ export function createDocumentRenderer({
     const deleteButton = labelEditor
       ? `<button class="record-label-edit record-delete" type="button" data-delete-document="${escapeHtml(path)}" aria-label="Delete document" title="Delete document"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2m3 0-1 14H6L5 6m4 4v6m6-6v6"/></svg></button>`
       : '';
-    const classifyButton = labelEditor ? `<button class="record-label-edit" type="button" data-classify-document="${escapeHtml(path)}"${state.classifyingDocumentPaths?.has(path) ? ' disabled' : ''} aria-label="Classify document" title="Classify document"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9a2.5 2.5 0 1 1 4.1 1.9c-1 .8-1.7 1.2-1.7 2.6M12 17h.01"/></svg></button>` : '';
+    const reviewLabelButton = labelEditor
+      ? `<button class="record-label-edit" type="button" data-show-review-labels="${escapeHtml(path)}" aria-label="Show label propositions" title="Show label propositions"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9a2.5 2.5 0 1 1 4.1 1.9c-1 .8-1.7 1.2-1.7 2.6M12 17h.01"/></svg></button>`
+      : '';
     const reviewLabels = Array.isArray(doc?.label) ? doc.label : [doc?.label];
     const hasReviewLabels = reviewLabels.some((label) => String(label || '').trim().toLocaleLowerCase() === 'to review');
-    const needsMentionLabels = path.startsWith('data/documents/') && (hasReviewLabels || state.classifiedDocumentPaths?.has(path));
+    const needsMentionLabels = path.startsWith('data/documents/') && hasReviewLabels;
     const mentionLabels = needsMentionLabels ? `<div class="review-name-mentions" data-review-name-labels="${escapeHtml(path)}" aria-label="Labels in other documents where names are mentioned"></div>` : '';
     const mentionLabelTargets = needsMentionLabels ? ` data-review-label-path="${escapeHtml(path)}"` : '';
-    const headingAside = labels.length || date || labelEditor || mentionLabels ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => `<span class="record-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}${deleteButton}${classifyButton}</div>${mentionLabels}<span class="record-delete-status" role="status" aria-live="polite"></span><span class="record-classify-status" role="status" aria-live="polite"></span>${date}</div>` : '';
+    const headingAside = labels.length || date || labelEditor || mentionLabels ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => `<span class="record-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}${reviewLabelButton}${deleteButton}</div>${mentionLabels}<span class="record-delete-status" role="status" aria-live="polite"></span>${date}</div>` : '';
     const url = doc.url ? urlMarkup(doc.url) : '';
     const year = documentYear(doc);
     const anchor = year ? ` id="year-${year}-${index}"` : '';

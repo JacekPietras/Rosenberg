@@ -38,63 +38,17 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
   };
 
   document.addEventListener('click', async (event) => {
-    const classifyButton = event.target.closest('[data-classify-document]');
-    if (classifyButton) {
-      const path = classifyButton.dataset.classifyDocument;
-      if (!state.canEditDocuments || !path.startsWith('data/documents/')) return;
-      state.classifyingDocumentPaths ||= new Set();
-      if (state.classifyingDocumentPaths.has(path)) return;
-      state.classifiedDocumentPaths ||= new Set();
-      state.classifiedDocumentPaths.add(path);
-      state.classifyingDocumentPaths.add(path);
-      const startedAt = Date.now();
-      let status;
-      let progressTimer;
-      const showProgress = async () => {
-        if (!status?.isConnected) return;
-        try {
-          const response = await fetch('/api/classify-status', { cache: 'no-store' });
-          const progress = await response.json();
-          if (progress.path !== path) {
-            status.textContent = 'Starting KEV…';
-            return;
-          }
-          if (progress.state === 'starting') {
-            status.textContent = progress.detail || 'Starting KEV and loading its model…';
-          } else if (progress.state === 'classifying') {
-            const seconds = Math.floor((Date.now() - startedAt) / 1000);
-            status.textContent = `KEV is analyzing the document… ${seconds}s elapsed`;
-          }
-        } catch {
-          const seconds = Math.floor((Date.now() - startedAt) / 1000);
-          status.textContent = `Waiting for KEV… ${seconds}s elapsed`;
-        }
-      };
-      try {
-        await rerender();
-        const currentButton = [...document.querySelectorAll('[data-classify-document]')]
-          .find((button) => button.dataset.classifyDocument === path);
-        if (!currentButton) throw new Error('Document is no longer visible');
-        currentButton.disabled = true;
-        status = currentButton.closest('.document-heading-aside')?.querySelector('.record-classify-status');
-        if (status) status.textContent = 'Starting KEV…';
-        progressTimer = setInterval(showProgress, 1000);
-        showProgress();
-        const response = await fetch('/api/classify-document', {
-          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ path }),
-        });
-        const result = await response.json();
-        if (!response.ok) throw new Error(result.error || `Classification failed (${response.status})`);
-        if (status?.isConnected) status.textContent = result.result;
-      } catch (error) {
-        if (status?.isConnected) status.textContent = `Could not classify: ${error.message}`;
-      } finally {
-        clearInterval(progressTimer);
-        state.classifyingDocumentPaths.delete(path);
-        const currentButton = [...document.querySelectorAll('[data-classify-document]')]
-          .find((button) => button.dataset.classifyDocument === path);
-        if (currentButton) currentButton.disabled = false;
-      }
+    const reviewLabelsButton = event.target.closest('[data-show-review-labels]');
+    if (reviewLabelsButton) {
+      const path = reviewLabelsButton.dataset.showReviewLabels;
+      const article = reviewLabelsButton.closest('.document');
+      const doc = state.documents.get(path);
+      const aside = article?.querySelector('.document-heading-aside');
+      if (!doc || !aside || !state.renderReviewNameLabels) return;
+      const html = await state.renderReviewNameLabels(doc, path);
+      const target = article.querySelector('.review-name-mentions');
+      if (target) target.outerHTML = html;
+      else aside.insertAdjacentHTML('beforeend', html);
       return;
     }
 
