@@ -3,8 +3,14 @@
   "label": "Czechia",
   "entries": [
     {
-      "source": "Hochstift Passau Urkunden, 2782",
-      "url": "https://www.monasterium.net/mom/DE-BayHStA/HUPassau/2782/charter",
+      "source": [
+        "Hochstift Passau Urkunden, 2782",
+        "BayHStA, Hochstift Passau Urkunden 2782"
+      ],
+      "url": [
+        "https://www.monasterium.net/mom/DE-BayHStA/HUPassau/2782/charter",
+        "https://www.gda.bayern.de/gvl/document/e82f2d59-c2c8-4487-8c10-35b749fcd2c9"
+      ],
       "german": "Peter von Rosenberg und Laslaw von Sternberg auf Weching, oberster Kämmerer des Königreichs Böhmen Fehde des Schmid Mertl und des Tesel gegen Hochstift und Stadt Passau.\n\nSiegler: S: A1-2\n\nSiegel: S: A1-2",
       "img": [
         {
