@@ -9,13 +9,13 @@
       "description": "Reproduction of Georg Helwich's notes on the medieval epitaphs and ancestral arms at Nieder-Saulheim. The associated epitaph identifies Dorothea as the widow of Siegfried von Dienheim and gives her birth family as von Rosenberg. The inscription records her death on 24 January 1524. The cited account notes that the Cronberg arms were included among her maternal ancestors, although her paternal grandmother was a Rüd von Bödigheim.",
       "facts": [
         {
+          "person": "Dorothea von Rosenberg",
           "personTitle": [
             "von Dienheim"
           ],
           "type": "death",
           "diedOn": "1524-01-24",
-          "date": "1524-01-24",
-          "person": "Dorothea von Rosenberg"
+          "date": "1524-01-24"
         }
       ]
     },

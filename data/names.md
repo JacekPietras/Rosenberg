@@ -65,6 +65,7 @@ Horneck
 Hoyer
 Jakob, Jacob
 Joachim
+Josef
 Jost
 Karl, Carl
 Kasimir
@@ -91,7 +92,7 @@ Nicolaus, Claus, Nicholas, Niklaus, Nikolaus
 Niklas, Niclas, Nyclos
 Otto, Attel
 Pankraz
-Peter, Petr
+Peter, Petr, Petrus
 Philipp, Philips
 Raban, Rabanus, Raben, Rafan, Raven, Rhaban, Rhabanus
 Reichard, Reichart, Richard
@@ -109,7 +110,7 @@ Siegmund, Siegemund, Sigismund, Sigmund
 Stephan, Stefan
 Thame
 Thomas, Thoma, Thoman
-Ulrich, Vlreich
+Ulrich, Ulricus, Vlreich
 Urban
 Valentin
 Veit
