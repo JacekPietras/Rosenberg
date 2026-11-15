@@ -36,8 +36,9 @@ function parsePersonNameRouteTitles(markdown = '') {
     if (header) {
       inRouteTitles = header[1].toLocaleLowerCase() === 'route titles';
     } else if (inRouteTitles) {
-      const canonical = line.split('//')[0].split(',')[0].trim().toLocaleLowerCase();
-      if (canonical) routeTitles.add(canonical);
+      for (const form of line.split('//')[0].split(',').map((value) => value.trim()).filter(Boolean)) {
+        routeTitles.add(form.toLocaleLowerCase());
+      }
     }
   }
   return routeTitles;
@@ -137,6 +138,7 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const particles = alternatives(String(particlesText || '').split(/\r?\n/).map((line) => line.split('//')[0].trim()));
   const placeNames = alternatives(places.flatMap((place) => place.variations || [place.name]));
   const titles = alternatives(parsePersonNameTitles(titleText));
+  const routeTitles = alternatives([...parsePersonNameRouteTitles(titleText)]);
   const connectors = alternatives(String(connectorText).split(/\r?\n/)
     .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
   const byNames = alternatives(String(byNamesText).split(/\r?\n/)
@@ -160,7 +162,7 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const birthSurname = `[\\s,;]+\\(?\\s*(?:née|nee)[\\s,;]+(?:(?:${names}|${byNames})\\s+)?(?:von|v\\.?|van|de|in|der|die|das|des|of|zu)\\s+(?:${placeNames})\\s*\\)?`;
   const byNameSurname = byNames ? `[\\s,]+(?:${byNames})(?:\\s+(?:${particle})\\s+(?:${placeNames}))?${placeNote}${suffixTitles}` : '(?!)';
   const surname = `(?:${byNameSurname}|[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}${alternateDesignation}(?:${birthSurname})?|${birthSurname}|[\\s,]+(?:${placeNames})${birthSurname}|[\\s,]+(?:${placeNames}))`;
-  const titledGivenName = titles ? `(?:${titles})\\s+(?:${names})(?![\\p{L}\\p{N}])` : '(?!)';
+  const titledGivenName = routeTitles ? `(?:${routeTitles})\\s+(?:${names})(?![\\p{L}\\p{N}])` : '(?!)';
   return new RegExp(`(?<![\\p{L}\\p{N}])(?:${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}${surname}(?![\\p{L}\\p{N}])|${titledGivenName})`, 'giu');
 }
 

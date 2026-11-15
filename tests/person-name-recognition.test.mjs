@@ -58,6 +58,27 @@ test('recognizes the parties in a pledge debt description, including King Sigmun
     scenarioNames, byNames, places), []);
 });
 
+test('requires surnames after office titles but permits route titles before given names', () => {
+  const scenarioTitles = `${titles}\n${projectTitles}`;
+  const scenarioNames = projectNames;
+  const scenarioPattern = buildSourcePersonPattern(scenarioNames, particles, places,
+    scenarioTitles, connectors, byNames);
+  for (const officeOnly of ['which Vogt Wernher', 'which advocatus Wernher']) {
+    assert.deepEqual([...officeOnly.matchAll(scenarioPattern)].map((match) => match[0]), [], officeOnly);
+  }
+
+  const phrase = 'which Vogt Wernher von Rosenberg (-berch)';
+  assert.deepEqual([...phrase.matchAll(scenarioPattern)].map((match) => match[0]), [
+    'Vogt Wernher von Rosenberg (-berch)'
+  ]);
+  assert.equal(personRouteName('Vogt Wernher von Rosenberg (-berch)', scenarioTitles,
+    connectors, particles, scenarioNames, byNames, places), 'Wernher von Rosenberg');
+
+  for (const routeTitle of ['King Sigmund', 'König Sigmund', 'Koenig Sigmund']) {
+    assert.deepEqual([...routeTitle.matchAll(scenarioPattern)].map((match) => match[0]), [routeTitle], routeTitle);
+  }
+});
+
 test('recognizes zum as zu before a place and routes it canonically', () => {
   const phrase = 'Konrad von Rosenberg zum Bartenstein';
   pattern.lastIndex = 0;
