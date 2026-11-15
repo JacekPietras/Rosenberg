@@ -51,7 +51,7 @@ Gotfried, Godefrid, Gottfried
 Gozwin, Goczwin, Godezwin
 Götz, Gocze, Goetz, Gotze, Gotzze, Götzze
 Hank
-Hans, Hanemann, Hanns, Hanse, Iohannes, Joannes, Johann, Johannes, Johanns, Johans, Jan, Jon
+Hans, Hanemann, Hanns, Hanse, Iohannes, Jan, Joannes, Johann, Johannes, Johanns, Johans, Jon
 Hansolf
 Hartlieb
 Hartmut
