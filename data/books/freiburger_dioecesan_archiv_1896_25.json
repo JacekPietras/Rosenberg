@@ -182,20 +182,20 @@
           "person": "Heinrich von Rosenberg",
           "type": "generic",
           "content": "is said by a tournament book to have attended the second tournament at Rosenberg.",
-          "date": "0942"
+          "date": "942"
         },
         {
           "person": "Anna von Rosenberg",
           "type": "generic",
           "content": "is mentioned at the second tournament at Rosenberg as the widow of Rudolf von Thüngen.",
-          "date": "0942"
+          "date": "942"
         },
         {
           "person": "Rudolf von Thüngen",
           "personDeceased": true,
           "type": "spouse",
           "of": "Anna von Rosenberg",
-          "date": "0942"
+          "date": "942"
         }
       ]
     },
@@ -207,7 +207,7 @@
           "person": "Reichard von Rosenberg",
           "type": "generic",
           "content": "is said by a tournament book to have attended a tournament at Braunschweig.",
-          "date": "0996"
+          "date": "996"
         },
         {
           "person": "Wiltraut von Rosenberg",

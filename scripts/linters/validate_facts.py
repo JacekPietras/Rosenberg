@@ -28,7 +28,7 @@ ROOT = SCRIPTS_ROOT.parent
 RELATIONS = frozenset({'parent', 'sibling', 'spouse', 'kin'})
 TYPES = RELATIONS | {'title', 'death', 'generic'}
 MISSING = object()
-DATE_PATTERN = re.compile(r'[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?\Z')
+DATE_PATTERN = re.compile(r'[0-9]{1,4}(?:-[0-9]{2}(?:-[0-9]{2})?)?\Z')
 
 
 @dataclass(frozen=True, order=True)
@@ -44,7 +44,7 @@ class Diagnostic:
 def date_bounds(value):
     """Validate ISO precision and return comparison bounds without changing it."""
     if not isinstance(value, str) or not DATE_PATTERN.fullmatch(value):
-        raise ValueError('expected YYYY, YYYY-MM, or YYYY-MM-DD')
+        raise ValueError('expected a year (1–4 digits), YYYY-MM, or YYYY-MM-DD')
     parts = [int(part) for part in value.split('-')]
     year, month, day = (parts + [1, 1])[:3]
     start = date(year, month, day)
@@ -187,6 +187,10 @@ class Validator:
                 (inherited_date_bounds if inherited else date_bounds)(value)
             except ValueError as exc:
                 self.report(location, f'invalid date {value!r}: {exc}')
+            else:
+                year = value.split('-', 1)[0] if isinstance(value, str) else ''
+                if year.startswith('0'):
+                    self.report(location, f'date year {year!r} starts with 0', 'warning')
 
     def check_person(self, value, location):
         if not self.nonblank(value):
