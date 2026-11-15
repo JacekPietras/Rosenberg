@@ -1,8 +1,6 @@
 {
   "date": "1437",
-  "label": [
-    "Franken"
-  ],
+  "label": "Franken",
   "entries": [
     {
       "source": "Lorenz Fries, Hohe Registratur, entry 1140, Standbuch 1011",
@@ -13,14 +11,18 @@
       "facts": [
         {
           "person": "Konrad von Rosenberg",
-          "personTitle": ["zu Bartenstein"],
+          "personTitle": [
+            "zu Bartenstein"
+          ],
           "type": "kin",
           "of": "Anselm von Rosenberg",
           "term": "Vetter"
         },
         {
           "person": "Konrad von Rosenberg",
-          "personTitle": ["zu Bartenstein"],
+          "personTitle": [
+            "zu Bartenstein"
+          ],
           "type": "generic",
           "content": "received Amt Klingenberg as a pledge jointly with his cousin Anselm von Rosenberg from Wilhelm von Elm."
         },

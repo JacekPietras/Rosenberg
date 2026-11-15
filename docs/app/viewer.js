@@ -1174,12 +1174,14 @@ function visibleRecordPaths(paths) {
     if (path === state.navigationRecord) return true;
     const labels = recordLabelForPath(path);
     const hasDistinctFamily = labels.some((label) => DISTINCT_FAMILIES.has(label));
-    const missingSource = selected.has(MISSING_SOURCE_LABEL) && recordHasMissingSource(path);
-    const missingUrl = selected.has(MISSING_URL_LABEL) && recordHasMissingUrl(path);
     if (labels.some((label) => !DISTINCT_FAMILIES.has(label) && hidden.has(label))) return false;
     if (hasDistinctFamily && hidden.has('distinct')) return false;
-    return !selected.size || labels.some((label) => !DISTINCT_FAMILIES.has(label) && selected.has(label))
-      || (hasDistinctFamily && selected.has('distinct')) || missingSource || missingUrl;
+    return !selected.size || [...selected].every((filter) => {
+      if (filter === MISSING_SOURCE_LABEL) return recordHasMissingSource(path);
+      if (filter === MISSING_URL_LABEL) return recordHasMissingUrl(path);
+      if (filter === 'distinct') return hasDistinctFamily;
+      return labels.includes(filter);
+    });
   });
 }
 

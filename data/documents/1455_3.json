@@ -1,8 +1,6 @@
 {
   "date": "1455-1466",
-  "label": [
-    "Franken"
-  ],
+  "label": "Franken",
   "entries": [
     {
       "source": "Lorenz Fries, Hohe Registratur, entry 2279, Standbuch 1011",
@@ -13,7 +11,9 @@
       "facts": [
         {
           "person": "Konrad von Rosenberg",
-          "personTitle": ["zu Bartenstein"],
+          "personTitle": [
+            "zu Bartenstein"
+          ],
           "type": "generic",
           "content": "held the Fronhof at Gnötzheim as a pledge; the tithe and rent there were exempt until the pledge was redeemed."
         }

@@ -125,6 +125,7 @@ Wolfram, Wolframus
 Yttel
 Zaisolph, Seisolph, Zaisolf, Zaisolff, Zeisolf, Zeisolff, Zeisolph
 Zeisel
+Ernst, Arnest
 
 # Women
 
