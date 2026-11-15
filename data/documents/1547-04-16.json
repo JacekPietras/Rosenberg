@@ -1,6 +1,9 @@
 {
   "date": "1547-04-16",
-  "label": ["to review", "Czechia"],
+  "label": [
+    "to review",
+    "Czechia"
+  ],
   "entries": [
     {
       "source": "DE-SABautzen Provenienz:, 2075",
@@ -14,7 +17,8 @@
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/2075_1547-04-16_c_2.jpg",
           "deleted": true
         }
-      ]
+      ],
+      "english": "The mayor and council of the city of Zittau confirm to the mayor and council of the city of Bautzen receipt of their letter, which reported on the siege of Dresden and other events of the war. They pass on their information about the course of the war and report the news that the old Lord von Rosenberg has died.\n\nSeal: an impressed seal under paper on the reverse."
     }
   ]
 }
