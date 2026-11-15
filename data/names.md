@@ -17,7 +17,7 @@ Batt
 Berngern
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
-Boppe
+Boppe, Bopp
 Burkhard, Burchard
 Busso
 Casimir
@@ -41,6 +41,7 @@ Franz, Franziskus
 Friedmann
 Friedrich, Frederick, Fridereich, Friderich, Friderici, Friderico, Fridericus, Fridrich, Fritz, Fritze, Friz, Frize
 Frizo
+Fürderer, Furderer, Forderer, Förderer
 Georg, Georgs, Goerg, Gorg, Jorg, Jorge, Jorgen, Jörg
 Gerhard, Gerhardus
 Gerlach
@@ -95,7 +96,7 @@ Raban, Rabanus, Rhaban, Rhabanus, Raben, Raven
 Reichard, Reichart, Richard
 Reinbot
 Reinhard, Reinhart
-Rudolf, Rudolph, Ruodolf
+Rudolf, Rudolph, Ruodolf, Rudolff
 Ruprecht, Rupert, Rupertus
 Rüdiger, Rüdger
 Sebastian
