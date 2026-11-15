@@ -35,13 +35,12 @@ Engelhard, Engelhardus, Engelhart
 Erasmus
 Erhard
 Erkinger
-Ernst, Ehrenfried, Erinze, Erwin
-Ernst, Arnest
+Ernst, Arnest, Ehrenfried, Erinze, Erwin
 Franz, Franziskus
 Friedmann
 Friedrich, Frederick, Fridereich, Friderich, Friderici, Friderico, Fridericus, Fridrich, Fritz, Fritze, Friz, Frize
 Frizo
-Fürderer, Furderer, Forderer, Förderer
+Fürderer, Forderer, Furderer, Förderer
 Georg, Georgs, Goerg, Gorg, Jorg, Jorge, Jorgen, Jörg
 Gerhard, Gerhardus
 Gerlach
@@ -92,11 +91,11 @@ Otto, Attel
 Pankraz
 Peter
 Philipp, Philips
-Raban, Rabanus, Rhaban, Rhabanus, Raben, Raven
+Raban, Rabanus, Raben, Rafan, Raven, Rhaban, Rhabanus
 Reichard, Reichart, Richard
 Reinbot
 Reinhard, Reinhart
-Rudolf, Rudolph, Ruodolf, Rudolff, Ruedi
+Rudolf, Rudolff, Rudolph, Ruedi, Ruodolf
 Ruprecht, Rupert, Rupertus
 Rüdiger, Rüdger
 Sebastian
@@ -146,6 +145,7 @@ Elche
 Elchine, Elchina
 Elichin
 Elisabeth, Eilse, Elisabet, Elizabet, Elizabeth, Els, Elsbet, Elsbeth, Else, Elspet, Elspeth, Elyzabeth
+Ennel, Ennelin
 Eva
 Felicitas
 Gertrud, Gerdrud, Gertraud

@@ -1169,6 +1169,21 @@ function recordNeedsTranscription(doc) {
 }
 
 function visibleRecordPaths(paths) {
+  // The sidebar only offers filters represented by the current source scope.
+  // Drop stale saved filters before applying them, otherwise they can hide
+  // every document while leaving no visible control to clear the filter.
+  const filterPaths = state.recordSource
+    ? paths.filter((path) => citationIndex.recordHasSource(path, state.recordSource))
+    : paths;
+  const availableLabels = new Set(filterPaths.flatMap((path) => recordLabelForPath(path)));
+  if (filterPaths.some((path) => recordLabelForPath(path).some((label) => DISTINCT_FAMILIES.has(label)))) availableLabels.add('distinct');
+  if (filterPaths.some(recordHasMissingSource)) availableLabels.add(MISSING_SOURCE_LABEL);
+  if (filterPaths.some(recordHasMissingUrl)) availableLabels.add(MISSING_URL_LABEL);
+  const selectedBefore = state.recordLabels.length;
+  const hiddenBefore = (state.hiddenRecordLabels || []).length;
+  state.recordLabels = state.recordLabels.filter((label) => availableLabels.has(label));
+  state.hiddenRecordLabels = (state.hiddenRecordLabels || []).filter((label) => availableLabels.has(label));
+  if (state.recordLabels.length !== selectedBefore || state.hiddenRecordLabels.length !== hiddenBefore) savePreferences();
   const selected = new Set(state.recordLabels);
   const hidden = new Set(state.hiddenRecordLabels || []);
   const transcriptionExcludedLabels = new Set(['hessen', 'to review', ...DISTINCT_FAMILIES]);
