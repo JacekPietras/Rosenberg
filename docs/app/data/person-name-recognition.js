@@ -60,8 +60,10 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
     .filter((forms) => forms.length)
     .flatMap(([canonical, ...forms]) => [canonical, ...forms].map((form) => [form.toLocaleLowerCase(), canonical])));
   const givenName = `(?:${names})`;
+  const additionalGivenName = `(?!(?:${byNames}|${particles}|${placeNames})\\b)[\\p{L}][\\p{L}'’.-]*`;
+  const givenItem = `${givenName}(?:\\s+(?:${givenName}|${additionalGivenName}))?`;
   const surname = `(?<byName>${byNames})(?:\\s+(?<byNameParticle>${particles})\\s+(?<byNamePlace>${placeNames}))?|(?<particle>${particles})\\s+(?<place>${placeNames})`;
-  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<givenList>${givenName}(?:\\s*,\\s*${givenName})*(?:\\s*,?\\s+and\\s+${givenName}))\\s+(?<surname>${surname})(?![\\p{L}\\p{N}])`, 'giu');
+  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<givenList>${givenItem}(?:\\s*,\\s*${givenItem})*(?:\\s*,?\\s+and\\s+${givenItem}))\\s+(?<surname>${surname})(?![\\p{L}\\p{N}])`, 'giu');
   const contextPattern = new RegExp(`(?<byName>${byNames})\\s+(?<particle>${particles})\\s+(?<place>${placeNames})`, 'giu');
   const matches = [];
   for (const match of String(text).matchAll(pattern)) {
@@ -80,9 +82,9 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
       start: match.index,
       end: match.index + match[0].length,
       givenList: match.groups.givenList,
-      givenNames: [...match.groups.givenList.matchAll(new RegExp(givenName, 'giu'))].map((givenName) => givenName[0]),
+      givenNames: match.groups.givenList.split(/\s*,\s*(?:and\s+)?|\s+and\s+/iu).map((givenName) => givenName.trim()),
       surnameText,
-      routes: [...match.groups.givenList.matchAll(new RegExp(givenName, 'giu'))].map((givenName) => givenName[0]).map((givenName) =>
+      routes: match.groups.givenList.split(/\s*,\s*(?:and\s+)?|\s+and\s+/iu).map((givenName) => givenName.trim()).map((givenName) =>
         personRouteName(`${givenName} ${surnameText}`.trim(),
           titleText, connectorText, particleText, namesText, byNamesText, places)),
     });

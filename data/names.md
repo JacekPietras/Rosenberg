@@ -15,12 +15,13 @@ Balthasar
 Bartholomäus, Barthel, Barthelme, Barthelmä, Bartholomaeus, Bartholomä, Bartholomê
 Batt
 Berngern
+Hector
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
 Boppe
 Burkhard, Burchard
 Busso
-Carl
+Karl, Carl
 Casimir
 Caspar, Caſpar, Kaspar
 Christoph, Chriftoph, Christof, Christoff, Christpoh
@@ -85,7 +86,7 @@ Melchior
 Michael, Michel, Micheln
 Nicolaus, Claus, Nicholas, Niklaus, Nikolaus
 Niklas, Niclas, Nyclos
-Otto
+Otto, Attel
 Pankraz
 Peter
 Philipp, Philips
@@ -105,7 +106,7 @@ Siegfried, Seifried, Seyfried, Sifrid, Sifridt, Sifrit
 Siegmund, Siegemund, Sigismund, Sigmund
 Stephan, Stefan
 Thame
-Thomas, Thoma, Thoman
+Thomas, Thoma, Thoman, Thoman
 Ulrich, Vlreich
 Urban
 Valentin

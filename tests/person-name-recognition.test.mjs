@@ -343,3 +343,16 @@ test('recognizes every person in a coordinated von Rosenberg list', () => {
   ]);
 });
 
+test('keeps compound given names together in a coordinated von Rosenberg list', () => {
+  const source = 'enfeoffs Adam Hector, Johann Konrad and Hans Dietrich von Rosenberg with houses';
+  const matches = coordinatedByNameMatches(source, projectTitles, connectors, particles,
+    projectNames, byNames, places);
+  assert.equal(matches.length, 1);
+  assert.deepEqual(matches[0].givenNames, ['Adam Hector', 'Johann Konrad', 'Hans Dietrich']);
+  assert.deepEqual(matches[0].routes, [
+    'Adam Hector von Rosenberg',
+    'Hans Konrad von Rosenberg',
+    'Hans Dietrich von Rosenberg'
+  ]);
+});
+
