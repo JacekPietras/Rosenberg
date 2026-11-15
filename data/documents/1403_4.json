@@ -1,0 +1,23 @@
+{
+  "date": "1403",
+  "label": "Mönch",
+  "entries": [
+    {
+      "source": [
+        "Hildebrandt, Ludwig H.: Regesten der Burg Steinsberg bei Sinsheim, ST71"
+      ],
+      "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
+      "german": "Contz Mönch v. Rosenberg ist Vogt auf dem Steinsberg. GEHRIG 1970:86; 1979:30; SCHÄFER 1967:90",
+      "english": "Kunz Mönch von Rosenberg is Vogt on the Steinsberg.",
+      "facts": [
+        {
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt auf dem Steinsberg"
+          ],
+          "type": "title"
+        }
+      ]
+    }
+  ]
+}

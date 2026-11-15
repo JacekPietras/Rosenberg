@@ -70,7 +70,7 @@ Jost
 Karl, Carl
 Kasimir
 Kilian
-Konrad, Chunrad, Chunradus, Chunrat, Chuonrad, Chuonradus, Chuonrat, Chvnradus, Conrad, Conrade, Conradi, Conrado, Conrads, Conradt, Conradus, Conrat, Conratten, Cunrad, Cunradus, Cunrat, Cunreth
+Konrad, Chunrad, Chunradus, Chunrat, Chuonrad, Chuonradus, Chuonrat, Chvnradus, Conrad, Conrade, Conradi, Conrado, Conrads, Conradt, Conradus, Conrat, Conratten, Cunrad, Cunradus, Cunrat, Cunreth, Conradts
 Kraft, Krafto
 Kuno
 Kunz, Concz, Conntzen, Contz, Contze, Conz, Cuncze, Cuntz, Cuntzen, Cunz, Guntz, Kontz, Konz, Kunczen, Kuntz // are shortened versions of Konrad, but not used as it\! [1401 March 5]

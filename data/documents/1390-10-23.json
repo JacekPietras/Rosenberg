@@ -1,0 +1,25 @@
+{
+  "date": "1390-10-23",
+  "place": "Heidelberg",
+  "label": "Mönch",
+  "entries": [
+    {
+      "source": [
+        "Hildebrandt, Ludwig H.: Regesten der Burg Steinsberg bei Sinsheim, ST58"
+      ],
+      "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
+      "german": "Pfalzgraf Ruprecht II. benachrichtigt die vom Stift Fulda gekauften Orte, dass u.a. Contz Mönch (v. Rosenberg) zu Steinsberg die Huldigung einnehmen soll. GLA 67/466:31v; KOCH & WILLE 1894, Nr. 5265; KRIEGER 1905:1086; GEHRIG 1970:86, 1979:30; WÜST 1976:139",
+      "english": "Pfalzgraf Ruprecht II informs the places bought from the Stift Fulda that, among others, Kunz Mönch von Rosenberg zu Steinsberg is to receive the homage.",
+      "facts": [
+        {
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "zu Steinsberg"
+          ],
+          "type": "generic",
+          "content": "was designated by Pfalzgraf Ruprecht II to receive the homage of the places bought from the Stift Fulda."
+        }
+      ]
+    }
+  ]
+}

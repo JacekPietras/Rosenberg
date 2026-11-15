@@ -1,5 +1,6 @@
 {
   "date": "1392-09-13",
+  "label": ["Mönch", "Franken"],
   "entries": [
     {
       "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 466,86r.",
@@ -45,6 +46,26 @@
           ],
           "type": "generic",
           "content": "held Minneberg as security for debts owed by Ruprecht to him and Margarethe von Hirschhorn."
+        }
+      ]
+    },
+    {
+      "source": [
+        "Hildebrandt, Ludwig H.: Regesten der Burg Steinsberg bei Sinsheim, ST64"
+      ],
+      "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
+      "german": "Pfalzgraf Ruprecht bekennt, dass er Konrad v. Rosenberg u.a. 810 Gulden schuldet, die letzterer zur Auslösung der Minneburg von Konrad Münch benutzt hat. KOCH & WILLE 1894, Nr. 5448; WÜST 1976:139",
+      "english": "Pfalzgraf Ruprecht acknowledges that he owes Konrad von Rosenberg and others 810 gulden, which the latter used to redeem the Minneburg from Konrad Mönch von Rosenberg.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "was acknowledged by Pfalzgraf Ruprecht as a creditor, having used the money to redeem the Minneburg from Konrad Mönch von Rosenberg."
+        },
+        {
+          "person": "Konrad Mönch von Rosenberg",
+          "type": "generic",
+          "content": "held the Minneburg before its redemption."
         }
       ]
     }

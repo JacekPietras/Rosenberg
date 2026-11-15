@@ -1,0 +1,24 @@
+{
+  "date": "1404-06-21",
+  "label": "Mönch",
+  "entries": [
+    {
+      "source": [
+        "Hildebrandt, Ludwig H.: Regesten der Burg Steinsberg bei Sinsheim, ST74"
+      ],
+      "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
+      "german": "König Ruprecht verpfändet diversen Räten, u.a. Contz Mönch v. Rosenberg, Vogt zu Steinsberg, Schloß, Stadt und Zoll zu Kaub. GLA 67/871:203; OBERNDORFF 1912, Nr. 3565; WÜST 1976:139; GEHRIG 1979:30",
+      "english": "King Ruprecht pledges the castle, town and toll at Kaub to various councillors, among them Kunz Mönch von Rosenberg, Vogt zu Steinsberg.",
+      "facts": [
+        {
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt zu Steinsberg"
+          ],
+          "type": "generic",
+          "content": "was one of the councillors to whom King Ruprecht pledged the castle, town and toll at Kaub."
+        }
+      ]
+    }
+  ]
+}

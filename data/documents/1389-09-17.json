@@ -1,0 +1,24 @@
+{
+  "date": "1389-09-17",
+  "label": "Mönch",
+  "entries": [
+    {
+      "source": [
+        "Hildebrandt, Ludwig H.: Regesten der Burg Steinsberg bei Sinsheim, ST56"
+      ],
+      "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
+      "german": "U.a. Kunz Monich, Vogt zu Steinsberg, zeugt in einer Urkunde über das Schloss Bönnigheim. ANDERMANN 1994, Nr. 25",
+      "english": "Among others, Kunz Mönch von Rosenberg, Vogt zu Steinsberg, witnesses a document concerning the castle of Bönnigheim.",
+      "facts": [
+        {
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt zu Steinsberg"
+          ],
+          "type": "generic",
+          "content": "witnessed a document concerning the castle of Bönnigheim."
+        }
+      ]
+    }
+  ]
+}
