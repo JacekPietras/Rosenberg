@@ -1,0 +1,26 @@
+{
+  "date": "1429-10-14",
+  "label": "Mönch",
+  "entries": [
+    {
+      "source": [
+        "Die Inschriften der Stadt Mainz von frühmittelalterlicher Zeit bis 1650 (Die deutschen Inschriften, Band 2: Heidelberger Reihe, Band 2), Nr. 224"
+      ],
+      "url": "https://digi.hadw-bw.de/view/di002/0201/image,info",
+      "german": "Grabstein des Johann Mönch von Rosenberg † 16. V. 1487 und des Eberhard Mönch von Rosenberg † 14. X. 1429.\nAuf dem Grabstein waren zwei Personen leicht eingeritzt. Der Prälat auf der rechten Seite trug eine Mitra. Am Rande stand:\n`Anno salutis MCCCCXXIX. pridie jdus octobris † Venerabilis ac nobilis Dominus Eberhardus Mönch de Rosenberg cantor et canonicus hujus Ecclesiae.`\nDie zweite Figur auf der linken Seite stand mit bloßem Kopfe da.\nAbweichungen bei Helwich: Zu 1.) die XIIII. Octobris obiit Venerabilis Dominus Eberhardus Münch de Rosenberg, Cantor huius ecclesiae. Das Datum bei Gamans ebenso.\nBourdon Nr. 20. — Helwich, Annalen I f. 322, III f. 858. — Fragmenta Gamans f. 43 (bringt nur 1). — Gudenus II S. 903 Nr. 167. — Joannis II S. 234, 332, 383 zur Person.",
+      "english": "Gravestone of Johann Mönch von Rosenberg, died 16 May 1487, and of Eberhard Mönch von Rosenberg, died 14 October 1429.\nTwo persons were lightly incised on the gravestone. The prelate on the right side wore a mitre. At the edge it read:\nIn the year of salvation 1429, on the day before the Ides of October [14 October], † the venerable and noble Lord Eberhard Mönch von Rosenberg, cantor and canon of this church.\nThe second figure on the left side stood there bareheaded.\nVariant in Helwich: on the 14th of October died the venerable Lord Eberhard Münch von Rosenberg, cantor of this church. The date is the same in Gamans.\nBourdon no. 20. — Helwich, Annalen I f. 322, III f. 858. — Fragmenta Gamans f. 43 (gives only 1). — Gudenus II p. 903 no. 167. — Joannis II pp. 234, 332, 383 on the person.",
+      "facts": [
+        {
+          "person": "Eberhard Mönch von Rosenberg",
+          "type": "death",
+          "diedOn": "1429-10-14"
+        },
+        {
+          "person": "Eberhard Mönch von Rosenberg",
+          "type": "generic",
+          "content": "was cantor and canon of this church."
+        }
+      ]
+    }
+  ]
+}

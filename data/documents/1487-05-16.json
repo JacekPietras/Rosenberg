@@ -1,0 +1,51 @@
+{
+  "date": "1487-05-16",
+  "label": "Mönch",
+  "entries": [
+    {
+      "source": [
+        "Die Inschriften der Stadt Mainz von frühmittelalterlicher Zeit bis 1650 (Die deutschen Inschriften, Band 2: Heidelberger Reihe, Band 2), Nr. 224"
+      ],
+      "url": "https://digi.hadw-bw.de/view/di002/0201/image,info",
+      "german": "Grabstein des Johann Mönch von Rosenberg † 16. V. 1487 und des Eberhard Mönch von Rosenberg † 14. X. 1429.\nAm Rande stand:\n`Anno Domini MCCCCLXXXVII. die xvii Maji † Venerabilis Dominus Joannes Mönch de Rosenberg Mog. ac Worm. Ecclesiarum Canonicus et jubilarius, quorum animae &c.`\nDie Ahnenwappen an den vier Ecken des Steines bezogen sich nur auf den Johannes Mönch.\nMönch von Rosenberg | Adelsheim\nKalb von Reinheim | .......\nAbweichungen bei Helwich: Zu 2.) die XVI mensis — huius Ecclesiae canonicus et in spiritualibus vicarius, cuius anima requiescat in pace.\nBourdon Nr. 20. — Helwich, Annalen I f. 322, III f. 858. — Fragmenta Gamans f. 43 (bringt nur 1). — Gudenus II S. 903 Nr. 167. — Joannis II S. 234, 332, 383 zur Person.",
+      "english": "Gravestone of Johann Mönch von Rosenberg, died 16 May 1487, and of Eberhard Mönch von Rosenberg, died 14 October 1429.\nIt read at the edge:\nIn the year of the Lord 1487, on the 17th day of May, † the venerable Lord Johannes Mönch von Rosenberg, canon of the churches of Mainz and Worms and jubilarius, whose souls etc.\nThe ancestral arms at the four corners of the stone referred only to Johannes Mönch.\nMönch von Rosenberg | Adelsheim\nKalb von Reinheim | .......\nVariant in Helwich: on the 16th of the month — canon of this church and vicar in spiritual matters, may his soul rest in peace.\nBourdon no. 20. — Helwich, Annalen I f. 322, III f. 858. — Fragmenta Gamans f. 43 (gives only 1). — Gudenus II p. 903 no. 167. — Joannis II pp. 234, 332, 383 on the person.",
+      "facts": [
+        {
+          "person": "Hans Mönch von Rosenberg",
+          "type": "death",
+          "diedOn": "1487-05-16"
+        },
+        {
+          "person": "Hans Mönch von Rosenberg",
+          "type": "generic",
+          "content": "was canon of the churches of Mainz and Worms and jubilarius."
+        },
+        {
+          "subject": "The gravestone of Hans Mönch von Rosenberg",
+          "type": "generic",
+          "content": "bore ancestral arms of Mönch von Rosenberg, Adelsheim and Kalb von Reinheim."
+        }
+      ]
+    },
+    {
+      "source": [
+        "Die Inschriften der Stadt Mainz von frühmittelalterlicher Zeit bis 1650 (Die deutschen Inschriften, Band 2: Heidelberger Reihe, Band 2), Nr. 225"
+      ],
+      "url": "https://digi.hadw-bw.de/view/di002/0201/image,info",
+      "german": "Totenschild des Joh. Mönch von Rosenberg † 16. V. 1487\n`Venerabilis et generosus Dominus Joannes Munch a Rosenberg Can. Mog. et Worm. obiit 1487. 16. Maji`",
+      "english": "Funeral shield of Johann Mönch von Rosenberg, died 16 May 1487.\nThe venerable and noble Lord Johannes Munch von Rosenberg, canon of Mainz and Worms, died on 16 May 1487.",
+      "facts": [
+        {
+          "person": "Hans Mönch von Rosenberg",
+          "type": "death",
+          "diedOn": "1487-05-16"
+        },
+        {
+          "person": "Hans Mönch von Rosenberg",
+          "type": "generic",
+          "content": "was canon of Mainz and Worms."
+        }
+      ]
+    }
+  ]
+}
