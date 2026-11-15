@@ -10,7 +10,9 @@ Keller, Kelner, cellerarius
 Domherr, canonicus, Kanoniker, Kanonikus
 Schultheiß, Schultheiss, scultetus
 Bischof, Bischove, Bischofe, Bischofs, Bischofes, Bischoff, Bischoffe, Bischoffs, Bischoffes, Biſchof, Biſchofs, Biſchoff, Biſchoffs, episcopus, episcopi, episcopo, episcopum, Bishop
-Graf, Grafen, Pfalzgraf
+Graf, Grafen
+Pfalzgraf
+Burggraf
 Baron
 
 // ranks
