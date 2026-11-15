@@ -15,13 +15,11 @@ Balthasar
 Bartholomäus, Barthel, Barthelme, Barthelmä, Bartholomaeus, Bartholomä, Bartholomê
 Batt
 Berngern
-Hector
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
 Boppe
 Burkhard, Burchard
 Busso
-Karl, Carl
 Casimir
 Caspar, Caſpar, Kaspar
 Christoph, Chriftoph, Christof, Christoff, Christpoh
@@ -55,6 +53,7 @@ Hansolf
 Hartlieb
 Hartmut
 Haubt
+Hector
 Heinrich, Hainrich, Heinrici, Heinrico, Heinricus, Heintz, Heintze, Heinz, Heinzen, Hendrici, Henrich, Henricus, Jindrich
 Herbord
 Herman, Hermann, Hermannus
@@ -64,6 +63,7 @@ Hoyer
 Jakob, Jacob
 Joachim
 Jost
+Karl, Carl
 Kasimir
 Kilian
 Konrad, Chunrad, Chunradus, Chunrat, Chuonrad, Chuonradus, Chuonrat, Chvnradus, Conrad, Conrade, Conradi, Conrado, Conrads, Conradt, Conradus, Conrat, Conratten, Cunrad, Cunradus, Cunrat, Cunreth
@@ -102,11 +102,11 @@ Sebastian
 Seibott
 Senant, Synant
 Siboto
-Siegfried, Seifried, Seyfried, Sifrid, Sifridt, Sifrit
+Siegfried, Seifried, Seyfried, Sifrid, Sifridt, Sifrit, Seivfridt
 Siegmund, Siegemund, Sigismund, Sigmund
 Stephan, Stefan
 Thame
-Thomas, Thoma, Thoman, Thoman
+Thomas, Thoma, Thoman
 Ulrich, Vlreich
 Urban
 Valentin
