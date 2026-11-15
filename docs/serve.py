@@ -361,6 +361,30 @@ class ViewerHandler(SimpleHTTPRequestHandler):
 
     def do_POST(self):
         self.record_activity()
+        if self.path.split("?", 1)[0] == "/api/source-data-batch":
+            try:
+                length = int(self.headers.get("Content-Length", "0"))
+                if not 0 < length <= 2_000_000:
+                    raise ValueError("Invalid source batch request size")
+                payload = json.loads(self.rfile.read(length))
+                paths = payload.get("paths") if isinstance(payload, dict) else None
+                if not isinstance(paths, list) or len(paths) > 5000:
+                    raise ValueError("Invalid source path list")
+                result = {}
+                for relative_path in paths:
+                    if not isinstance(relative_path, str) or not re.fullmatch(r"data/(?:books|documents|notes|images)/(?:[A-Za-z0-9_.-]+/)*[A-Za-z0-9_.-]+\.json", relative_path):
+                        raise ValueError("Invalid source path")
+                    source_path = (ROOT / relative_path).resolve()
+                    if not source_path.is_relative_to(ROOT / "data") or not source_path.is_file():
+                        raise ValueError("Source file not found")
+                    with source_path.open(encoding="utf-8") as source_file:
+                        result[relative_path] = json.load(source_file)
+                self.send_json(200, result)
+            except (ValueError, TypeError, json.JSONDecodeError) as error:
+                self.send_json(400, {"error": str(error)})
+            except OSError as error:
+                self.send_json(500, {"error": str(error)})
+            return
         if self.path.split("?", 1)[0] == "/api/classify-document":
             relative_path = ''
             try:

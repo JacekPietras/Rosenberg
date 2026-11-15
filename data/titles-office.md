@@ -14,7 +14,7 @@ Graf, Grafen, Pfalzgraf
 
 // ranks
 Ritter, Ritters, miles, milites, Knight
-Edelknecht, armiger
+Edelknecht, armiger, squire
 Knecht
 
 // epithets

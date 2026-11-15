@@ -107,7 +107,9 @@ export function createDataLoader({
       repository.getText('data/name-connectors.md'),
       repository.getText('data/by-names.md'),
       repository.getText('data/distinctFamilies.md'),
-      new Map(await Promise.all(paths.map(async (path) => [path, earlyBooks?.has(path) ? earlyBooks.get(path) : await repository.getJson(path)]))),
+      repository.getJsonBatch
+        ? repository.getJsonBatch(paths.filter((path) => !earlyBooks?.has(path))).then((batch) => new Map([...(earlyBooks || []), ...batch]))
+        : new Map(await Promise.all(paths.map(async (path) => [path, earlyBooks?.has(path) ? earlyBooks.get(path) : await repository.getJson(path)]))),
     ]);
     mark('sourcesEnd');
     mark('prepareStart');
@@ -190,7 +192,8 @@ export function createDataLoader({
       mark('renderEnd');
     }
     if (!familyOnly && state.active === 'documents' && !state.person && !state.place && typeof repository.isLocalServer === 'function' && await repository.isLocalServer()) {
-      const report = `Documents page load: total=${Math.round(performance.now() - loadStarted)}ms; file-list=${elapsed('filesStart', 'filesEnd')}ms; sources=${elapsed('sourcesStart', 'sourcesEnd')}ms (${paths.length} files); prepare=${elapsed('prepareStart', 'prepareEnd')}ms; render=${elapsed('renderStart', 'renderEnd')}ms`;
+      const renderDetails = JSON.stringify(state.lastDocumentRenderDiagnostics || {});
+      const report = `Documents page load: total=${Math.round(performance.now() - loadStarted)}ms; file-list=${elapsed('filesStart', 'filesEnd')}ms; sources=${elapsed('sourcesStart', 'sourcesEnd')}ms (${paths.length} files); prepare=${elapsed('prepareStart', 'prepareEnd')}ms; render=${elapsed('renderStart', 'renderEnd')}ms; render-details=${renderDetails}`;
       fetch('/api/heartbeat-diagnostics', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: report }), keepalive: true,

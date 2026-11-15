@@ -29,6 +29,18 @@ export function createRepository({ location = window.location, fetchFunction = w
     async getJson(path) {
       return JSON.parse(await getText(path));
     },
+    async getJsonBatch(paths) {
+      if (location.hostname.endsWith('github.io')) {
+        return new Map(await Promise.all(paths.map(async (path) => [path, await this.getJson(path)])));
+      }
+      const response = await fetchFunction('/api/source-data-batch', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ paths }),
+      });
+      if (!response.ok) return new Map(await Promise.all(paths.map(async (path) => [path, await this.getJson(path)])));
+      return new Map(Object.entries(await response.json()));
+    },
     async getFamilyTree() {
       const response = await fetchFunction(`${dataUrl('data/tree.json', location)}?v=${Date.now()}`, { cache: 'no-store' });
       if (response.status === 404) return null;

@@ -32,6 +32,8 @@ export async function renderActiveScreen({
   setupMentionNavigation,
   mermaid,
 }) {
+  const documentRenderTimings = {};
+  const renderPhaseStart = performance.now();
   status.textContent = '';
   status.classList.remove('error');
   if (state.active !== 'tree' && state.sourceLoading && (state.person || state.place || !state.manifest.books.some((book) => book.path === state.active))) {
@@ -85,17 +87,45 @@ export async function renderActiveScreen({
     return;
   }
   const allRecordPaths = state.manifest.documents.filter((path) => state.documents.get(path)?.deleted !== true);
+  const filterStart = performance.now();
   const paths = state.active === 'documents' ? visibleRecordPaths(allRecordPaths) : [state.active];
+  documentRenderTimings.filterMs = Math.round((performance.now() - filterStart) * 10) / 10;
   const selectedYear = documentYear(state.documents.get(state.record));
   const shouldRestoreRecord = state.active === 'documents'
     && selectedYear
     && (state.lastRenderedDocumentsYear === null || selectedYear !== state.lastRenderedDocumentsYear);
   state.yearHighlightCleanup?.();
   state.yearHighlightCleanup = null;
+  const htmlStart = performance.now();
   if (state.active === 'documents') {
-    content.innerHTML = `<div class="documents-layout">${renderYearSidebar(paths, state.recordSource ? paths : allRecordPaths)}<div class="documents-list">${paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('')}</div></div>`;
+    const sidebarStart = performance.now();
+    const sidebarHtml = renderYearSidebar(paths, state.recordSource ? paths : allRecordPaths);
+    documentRenderTimings.sidebarMs = Math.round((performance.now() - sidebarStart) * 10) / 10;
+    const documentHtmlParts = [];
+    let documentHtmlLength = 0;
+    const slowDocuments = [];
+    for (let index = 0; index < paths.length; index++) {
+      const path = paths[index];
+      const documentStart = performance.now();
+      const html = renderDocument(state.documents.get(path), path, index);
+      const duration = performance.now() - documentStart;
+      documentHtmlLength += html.length;
+      documentHtmlParts.push(html);
+      slowDocuments.push({ path, ms: Math.round(duration * 10) / 10, chars: html.length });
+    }
+    const documentHtml = documentHtmlParts.join('');
+    documentRenderTimings.documentHtmlMs = Math.round((performance.now() - htmlStart - documentRenderTimings.sidebarMs) * 10) / 10;
+    documentRenderTimings.documentHtmlChars = documentHtmlLength;
+    documentRenderTimings.slowestDocuments = slowDocuments.sort((left, right) => right.ms - left.ms).slice(0, 5);
+    const domStart = performance.now();
+    content.innerHTML = `<div class="documents-layout">${sidebarHtml}<div class="documents-list">${documentHtml}</div></div>`;
+    documentRenderTimings.domInsertMs = Math.round((performance.now() - domStart) * 10) / 10;
   } else {
-    content.innerHTML = paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('');
+    const documentHtml = paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('');
+    documentRenderTimings.documentHtmlMs = Math.round((performance.now() - htmlStart) * 10) / 10;
+    const domStart = performance.now();
+    content.innerHTML = documentHtml;
+    documentRenderTimings.domInsertMs = Math.round((performance.now() - domStart) * 10) / 10;
   }
   const reviewLabelTargets = content.querySelectorAll('[data-review-label-path]');
   if (reviewLabelTargets.length && typeof IntersectionObserver !== 'undefined') {
@@ -120,6 +150,7 @@ export async function renderActiveScreen({
       if (doc && placeholder) renderReviewNameLabels(doc, path).then((html) => { if (placeholder.isConnected) placeholder.outerHTML = html; });
     });
   }
+  const setupStart = performance.now();
   setupSealAnnotations();
   const diagrams = content.querySelectorAll('.mermaid');
   if (diagrams.length && mermaid) await mermaid.run({ nodes: diagrams });
@@ -129,6 +160,9 @@ export async function renderActiveScreen({
     state.lastRenderedDocumentsYear = documentYear(state.documents.get(state.record));
   }
   scrollToEntryHash();
+  documentRenderTimings.postRenderMs = Math.round((performance.now() - setupStart) * 10) / 10;
+  documentRenderTimings.totalMs = Math.round((performance.now() - renderPhaseStart) * 10) / 10;
+  if (state.active === 'documents') state.lastDocumentRenderDiagnostics = documentRenderTimings;
 
   function setupFamilyControls() {
     content.querySelector('[data-family-focus]')?.addEventListener('change', async (event) => {

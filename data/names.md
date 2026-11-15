@@ -89,7 +89,7 @@ Nicolaus, Claus, Nicholas, Niklaus, Nikolaus
 Niklas, Niclas, Nyclos
 Otto, Attel
 Pankraz
-Peter
+Peter, Petr
 Philipp, Philips
 Raban, Rabanus, Raben, Rafan, Raven, Rhaban, Rhabanus
 Reichard, Reichart, Richard
@@ -116,7 +116,7 @@ Weigrecht
 Wenceslaus, Wenzel
 Werenher
 Wernher, Werner
-Wilhelm, Wilhem
+Wilhelm, Wilhem, Vilém
 Wiprecht, Welprecht, Wibrecht, Wipert, Wipprecht, Wynprecht, Wyprecht
 Wok, Bocho, Vok, Witiko, Wocco, Wocho, Woko
 Wolf, Wolff

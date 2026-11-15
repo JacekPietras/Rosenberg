@@ -1,6 +1,6 @@
 import { createStore } from './state/store.js';
 import { loadPreferences, savePreferences } from './state/preferences.js?v=5';
-import { createRepository } from './data/repository.js?v=8';
+import { createRepository } from './data/repository.js?v=9';
 import { parseRoute } from './state/route.js';
 import { startViewer } from './viewer.js?v=231';
 
