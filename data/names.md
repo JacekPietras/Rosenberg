@@ -36,6 +36,7 @@ Erasmus
 Erhard
 Erkinger
 Ernst, Ehrenfried, Erinze, Erwin
+Ernst, Arnest
 Franz, Franziskus
 Friedmann
 Friedrich, Frederick, Fridereich, Friderich, Friderici, Friderico, Fridericus, Fridrich, Fritz, Fritze, Friz, Frize
@@ -125,7 +126,6 @@ Wolfram, Wolframus
 Yttel
 Zaisolph, Seisolph, Zaisolf, Zaisolff, Zeisolf, Zeisolff, Zeisolph
 Zeisel
-Ernst, Arnest
 
 # Women
 
