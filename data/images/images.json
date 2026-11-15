@@ -2,6 +2,24 @@
   "title": "Images",
   "entries": [
     {
+      "label": "armorial",
+      "title": "Nieder-Saulheim epitaphs and ancestral arms in Georg Helwich's notes",
+      "page": "4",
+      "source": "Anton Neugebauer, Die katholische Kirche St. Bartholomäus in Saulheim, p. 4 (2013), https://bistummainz.de/export/sites/bistum/region-rheinhessen/pfarrei/rheinhessen-mitte/.galleries/dokumente/Saulheim-Kirchenfuehrer.pdf — Augustiner-Chronik, Hessisches Staatsarchiv Darmstadt, Hs. 271, fol. 45; Fragmenta Gamans, fol. 188; Möller, Stammtafeln, pl. 74",
+      "description": "Reproduction of Georg Helwich's notes on the medieval epitaphs and ancestral arms at Nieder-Saulheim. The associated epitaph identifies Dorothea as the widow of Siegfried von Dienheim and gives her birth family as von Rosenberg. The inscription records her death on 24 January 1524. The cited account notes that the Cronberg arms were included among her maternal ancestors, although her paternal grandmother was a Rüd von Bödigheim.",
+      "facts": [
+        {
+          "person": "Dorothea von Rosenberg",
+          "type": "death",
+          "date": "1524-01-24",
+          "diedOn": "1524-01-24",
+          "personTitle": [
+            "von Dienheim"
+          ]
+        }
+      ]
+    },
+    {
       "label": "effigy",
       "title": "Ebrach, Fuchsenkapelle, memorials of Wolf and Sibylla Fuchs",
       "source": "Die Deutschen Inschriften, vol. 18, Landkreis Bamberg (1980), no. 135 and fig. 54 — https://drive.google.com/file/d/1pviVrd0iaVt82DXE47e7D0eBzilsolhY/view",
