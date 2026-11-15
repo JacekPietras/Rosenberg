@@ -102,7 +102,7 @@ Sebastian
 Seibott
 Senant, Synant
 Siboto
-Siegfried, Seifried, Seyfried, Sifrid, Sifridt, Sifrit, Seivfridt
+Siegfried, Seifried, Seivfridt, Seyfried, Sifrid, Sifridt, Sifrit
 Siegmund, Siegemund, Sigismund, Sigmund
 Stephan, Stefan
 Thame
