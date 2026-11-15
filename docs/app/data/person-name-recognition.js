@@ -29,6 +29,7 @@ export function parsePersonNameTitles(markdown = '') {
 }
 
 export function coordinatedByNameMatches(text, titleText = '', connectorText = '', particleText = '', namesText = '', byNamesText = '', places = []) {
+  const titles = alternatives(parsePersonNameTitles(titleText));
   const names = alternatives(String(namesText).split(/\r?\n/)
     .filter((line) => !line.trim().startsWith('#'))
     .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
@@ -49,6 +50,7 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
   const contextPattern = new RegExp(`(?<byName>${byNames})\\s+(?<particle>${particles})\\s+(?<place>${placeNames})`, 'giu');
   const matches = [];
   for (const match of String(text).matchAll(pattern)) {
+    if (titles && new RegExp(`(?:${titles})[\\s,;]+$`, 'iu').test(String(text).slice(0, match.index))) continue;
     let surnameText = match.groups.surname;
     if (match.groups.byName && !match.groups.byNameParticle) {
       const before = String(text).slice(0, match.index);
@@ -98,11 +100,12 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const romanOrdinal = '(?:\\s+(?:\\(\\s*[IVXLCDM]+\\s*\\)|\\[\\s*[IVXLCDM]+\\s*\\]|[IVXLCDM]+\\.?))?';
   const titlePlace = `(?:${placeNames}|[\\p{L}][\\p{L}'’.-]*)`;
   const titleMatch = titles ? `(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+${titlePlace})?` : '(?!)';
-  const titleSequence = titles ? `(?:[\\s,;]+${titleMatch})*` : '';
+  const titleSuffixMatch = titles ? `(?:${titleMatch})(?!\\s+(?:${names})\\b)` : '(?!)';
+  const titleSequence = titles ? `(?:[\\s,;]+${titleSuffixMatch})*` : '';
   const leadingTitles = titles ? `(?:${titleMatch}\\s+)*` : '';
   const particle = `(?:${particles}|of)`;
   const placeClause = `(?:${placeNames})(?:\\s+(?:zu|zum|an)\\s+(?:${placeNames}))?`;
-  const suffixTitles = `(?:[\\s,;]+${titleMatch})*`;
+  const suffixTitles = `(?:[\\s,;]+${titleSuffixMatch})*`;
   const placeNote = '(?:\\s*\\(-?[\\p{L}\\p{N}]+-?\\))?';
   const nameNote = '(?:\\s*\\(\\s*or\\s+[^)]*\\))?';
   const leadingConnector = connectors ? `(?:(?:${connectors})\\s+)?` : '';
@@ -111,7 +114,8 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const birthSurname = `[\\s,;]+\\(?\\s*(?:née|nee)[\\s,;]+(?:(?:${names}|${byNames})\\s+)?(?:von|v\\.?|van|de|in|der|die|das|des|of|zu)\\s+(?:${placeNames})\\s*\\)?`;
   const byNameSurname = byNames ? `[\\s,]+(?:${byNames})(?:\\s+(?:${particle})\\s+(?:${placeNames}))?${placeNote}${suffixTitles}` : '(?!)';
   const surname = `(?:${byNameSurname}|[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}${alternateDesignation}(?:${birthSurname})?|${birthSurname}|[\\s,]+(?:${placeNames})${birthSurname}|[\\s,]+(?:${placeNames}))`;
-  return new RegExp(`(?<![\\p{L}\\p{N}])${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}${surname}(?![\\p{L}\\p{N}])`, 'giu');
+  const titledGivenName = titles ? `(?:${titles})\\s+(?:${names})(?![\\p{L}\\p{N}])` : '(?!)';
+  return new RegExp(`(?<![\\p{L}\\p{N}])(?:${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}${surname}(?![\\p{L}\\p{N}])|${titledGivenName})`, 'giu');
 }
 
 export function personRouteName(name, titleText = '', connectorText = '', particleText = '', namesText = '', byNamesText = '', places = []) {
@@ -125,6 +129,7 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     .filter((forms) => forms.length > 0)
     .flatMap(([canonical, ...forms]) => [canonical, ...forms].map((form) => [form.toLocaleLowerCase(), canonical])));
   const canonicalGiven = variantMap(namesText);
+  const canonicalTitle = variantMap(titleText);
   const canonicalByName = variantMap(byNamesText);
   const canonicalPlaces = new Map(places.flatMap((place) =>
     (place.variations || [place.name]).filter(Boolean).map((form) => [form.toLocaleLowerCase(), place.name || form])));
@@ -159,6 +164,17 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     if (titlePlaceIndex >= 0) parts = parts.slice(0, titlePlaceIndex);
     return canonicalizePlaces(parts.join(' '));
   };
+  const givenNameForms = alternatives(String(namesText).split(/\r?\n/)
+    .filter((line) => !line.trim().startsWith('#'))
+    .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean)));
+  const standaloneTitledGivenName = titles && givenNameForms
+    ? String(name).match(new RegExp(`^(${titles})\\s+(${givenNameForms})$`, 'iu'))
+    : null;
+  if (standaloneTitledGivenName) {
+    const title = canonicalTitle.get(standaloneTitledGivenName[1].toLocaleLowerCase()) || standaloneTitledGivenName[1];
+    const givenName = canonicalGiven.get(standaloneTitledGivenName[2].toLocaleLowerCase()) || standaloneTitledGivenName[2];
+    return `${title} ${givenName}`;
+  }
   const birthName = String(name).match(/^(.*?)[\s,;]+\(?\s*(?:née|nee)[\s,;]+(.+?)\s*\)?$/iu);
   if (birthName) {
     const marriedRoute = personRouteName(birthName[1], titleText, connectorText, particleText, namesText, byNamesText, places);

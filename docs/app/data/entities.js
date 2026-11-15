@@ -72,4 +72,4 @@ export function buildPersonPattern(people) {
     : [];
 }
 
-export { buildSourcePersonPattern } from './person-name-recognition.js?v=19';
+export { buildSourcePersonPattern } from './person-name-recognition.js?v=21';

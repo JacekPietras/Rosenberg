@@ -16,6 +16,7 @@ Graf, Grafen, Pfalzgraf
 Ritter, Ritters, miles, milites, Knight
 Edelknecht, armiger
 Knecht
+König, Koenig, Kunig, künig, künigk, Königk, King
 
 // epithets
 der Rote, Rufus

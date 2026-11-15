@@ -10,6 +10,7 @@ const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissi
 const titles = '# Younger\nder Jüngere, the Younger\nder Junge\n# Older\nder Ältere, the Elder, the Older\nder Alte\n# Offices and ranks\nAmtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman\nRitter, Ritters, miles, Knight\nVogt, advocatus\nVizedom, Vitzthum, Vizthum, Vitztum, Vizdom\nder Rote, Rufus';
 const connectors = await readFile(new URL('../data/name-connectors.md', import.meta.url), 'utf8');
 const projectNames = await readFile(new URL('../data/names.md', import.meta.url), 'utf8');
+const projectTitles = await readFile(new URL('../data/titles-office.md', import.meta.url), 'utf8');
 const byNames = await readFile(new URL('../data/by-names.md', import.meta.url), 'utf8');
 const pattern = buildSourcePersonPattern(names, particles, places, titles, connectors, byNames);
 
@@ -26,6 +27,23 @@ test('recognizes the documented canonical and reordered name forms', () => {
     pattern.lastIndex = 0;
     assert.equal(pattern.test(form), true, form);
   }
+});
+
+test('recognizes the parties in a pledge debt description, including King Sigmund', () => {
+  const scenarioNames = projectNames;
+  const scenarioTitles = `${titles}\n${projectTitles}`;
+  const scenarioPattern = buildSourcePersonPattern(scenarioNames, particles, places, scenarioTitles, connectors, byNames);
+  const sentence = 'pledge debt of 6,100 florins owed to the cousins Siegmund von Thüngen and Balthasar von Thüngen, King Sigmund, and Ulrich von Rosenberg. The charter is not extant.';
+  assert.deepEqual([...sentence.matchAll(scenarioPattern)].map((match) => match[0]), [
+    'Siegmund von Thüngen',
+    'Balthasar von Thüngen',
+    'King Sigmund',
+    'Ulrich von Rosenberg'
+  ]);
+  assert.equal(personRouteName('King Sigmund', scenarioTitles, connectors, particles,
+    scenarioNames, byNames, places), 'König Siegmund');
+  assert.deepEqual(coordinatedByNameRouteNames(sentence, scenarioTitles, connectors, particles,
+    scenarioNames, byNames, places), []);
 });
 
 test('recognizes zum as zu before a place and routes it canonically', () => {

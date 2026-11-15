@@ -56,7 +56,7 @@ Hartmut
 Haubt
 Heinrich, Hainrich, Heinrici, Heinrico, Heinricus, Heintz, Heintze, Heinz, Heinzen, Hendrici, Henrich, Henricus, Jindrich
 Herbord
-Herman, Hermann
+Herman, Hermann, Hermannus
 Hieronymus, Jeronimus, Jheronimus
 Horneck
 Hoyer
@@ -101,7 +101,7 @@ Sebastian
 Seibott
 Senant, Synant
 Siboto
-Siegfried, Seifried, Seyfried, Sifrid, Sifridt
+Siegfried, Seifried, Seyfried, Sifrid, Sifridt, Sifrit
 Siegmund, Siegemund, Sigismund, Sigmund
 Stephan, Stefan
 Thame
