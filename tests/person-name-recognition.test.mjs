@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { moduleUrl } from './browser-module.mjs';
 
-const { buildSourcePersonPattern, coordinatedByNameMatches, coordinatedByNameRouteNames, personMentionClass, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
+const { buildSourcePersonPattern, coordinatedByNameMatches, coordinatedByNameRouteNames, findPersonNameMentions, personMentionClass, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
 const names = '# Men\nArnold, Arnolt\nAnna\nKonrad, Conradus\nEberhard\nEbirhart\nGeorg\nHans\nHeinrich\nHartmut\nJohann\nMargaretha\nMichael\nPeter\nWilhelm\nWiprecht\n# Women\nElisabeth, Elsbeth\nJuliane';
 const particles = 'von\nv.\nvon.\nde\nan\nvan\nzu';
 const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }, { name: 'Michelsberg', variations: ['Michelsberg'] }, { name: 'Landstein', variations: ['Landstein'] }, { name: 'Helmstadt', variations: ['Helmstadt'] }, { name: 'Pappenheim', variations: ['Pappenheim'] }, { name: 'Bartenstein', variations: ['Bartenstein'] }, { name: 'Marschalk', variations: ['Marschalk'] }];
@@ -354,5 +354,28 @@ test('keeps compound given names together in a coordinated von Rosenberg list', 
     'Hans Konrad von Rosenberg',
     'Hans Dietrich von Rosenberg'
   ]);
+});
+
+test('shared person parser returns the same coordinated names for English and German lists', () => {
+  for (const source of [
+    'Adam Hector, Johann Konrad and Hans Dietrich von Rosenberg',
+    'Adam Hector, Johann Konrad und Hans Dietrich von Rosenberg',
+  ]) {
+    const result = findPersonNameMentions(source, titles, connectors, particles,
+      projectNames, byNames, places, /Hans Dietrich von Rosenberg/giu,
+      [{ pattern: /Konrad von Rosenberg/giu, people: [] }]);
+    assert.deepEqual(result.coordinated[0]?.routes, [
+      'Adam Hector von Rosenberg',
+      'Hans Konrad von Rosenberg',
+      'Hans Dietrich von Rosenberg',
+    ]);
+    assert.deepEqual(result.singles, []);
+  }
+});
+
+test('does not attach Rudolf von Rosenberg to the preceding unrelated names', () => {
+  const source = 'Benedikt Francke the Elder, the Council of Bautzen, Andreas Hentzsche, and Rudolf von Rosenberg.';
+  assert.deepEqual(coordinatedByNameRouteNames(source, projectTitles, connectors, particles,
+    projectNames, byNames, places), []);
 });
 

@@ -110,13 +110,13 @@ test('name routes aggregate source identities while person and evidence IDs sele
   state.person = 'hans_1513';
   const identified = renderPersonPage();
   assert.match(identified, /Witness in 1513/);
-  assert.match(identified, /688 source identities|Reconstructed relationships/);
+  assert.doesNotMatch(identified, /688 source identities|Reconstructed relationships/);
   assert.doesNotMatch(identified, /Witness in 1516|Source attestations/);
 
   state.person = '@evidence/hans-0';
   const evidence = renderPersonPage();
-  assert.match(evidence, /Source attestations/);
-  assert.match(evidence, /688 source identities|Reconstructed relationships/);
+  assert.match(evidence, /<h3>Facts<\/h3>/);
+  assert.doesNotMatch(evidence, /688 source identities|Reconstructed relationships/);
   assert.match(evidence, /href="\?person=Hans%20von%20Rosenberg">Hans von Rosenberg<\/a> appeared as a witness in 1359/);
   assert.doesNotMatch(evidence, /Witness in 1513|Witness in 1516/);
 
@@ -182,7 +182,7 @@ test('document facts use the shared view and respect the facts toggle', () => {
   const facts = [{ date: '1383', type: 'spouse', person: 'A', of: 'eberhard' }];
   assert.equal(renderEntry({ facts }), `<article class="entry">${renderFactsView(facts, options)}</article>`);
   state.showFacts = false;
-  assert.equal(renderEntry({ facts }), '<article class="entry"></article>');
+  assert.equal(renderEntry({ facts }), '');
 });
 
 test('document facts and guesses share a chronological list', () => {
@@ -280,6 +280,34 @@ test('review label proposition chips use the title-free canonical person route',
   const html = renderDocument(documents.get(targetPath), targetPath, 0);
   assert.match(html, /<span class="review-name">Hans von Seckendorf<\/span>/);
   assert.doesNotMatch(html, /<span class="review-name">knight Hans von Seckendorf/iu);
+});
+
+test('review label propositions do not parse a fact person reference as a second shorter name', () => {
+  const targetPath = 'data/documents/target.json';
+  const otherPath = 'data/documents/other.json';
+  const fact = { type: 'generic', person: 'Hans Konrad von Rosenberg', content: 'received a fief.' };
+  const documents = new Map([
+    [targetPath, { date: '1601-07-05', label: 'to review', entries: [{
+      english: 'Adam Hector, Johann Konrad and Hans Dietrich von Rosenberg received houses.', facts: [fact],
+    }] }],
+    [otherPath, { date: '1602', label: 'Franken', entries: [{
+      english: 'Konrad von Rosenberg is named.', facts: [fact],
+    }] }],
+  ]);
+  const state = {
+    documents,
+    sourcePersonPattern: null,
+    personPattern: [{ pattern: /(?<![\p{L}\p{N}])Konrad von Rosenberg(?![\p{L}\p{N}])/giu, people: [] }],
+    personNameTitlesText: '',
+    canEditDocuments: false,
+  };
+  const { renderDocument } = createDocumentRenderer({
+    state, escapeHtml, inlineMarkup: escapeHtml, languageMarkup: () => '', formatDate: String,
+    documentTitle: () => 'Document', documentYear: () => '', distinctFamilies: new Set(), getPeople: () => [], entryAnchor: () => '',
+  });
+  const html = renderDocument(documents.get(targetPath), targetPath, 0);
+  assert.match(html, /<span class="review-name">Hans Konrad von Rosenberg<\/span>/);
+  assert.doesNotMatch(html, /<span class="review-name">Konrad von Rosenberg<\/span>/);
 });
 
 test('review label propositions omit periods over 50 years away and retain the existing opacity rule', () => {

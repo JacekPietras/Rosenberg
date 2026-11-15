@@ -1,6 +1,5 @@
 {
   "date": "1677",
-  "label": "to review",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 229 Nr. 89294",
@@ -679,5 +678,6 @@
         }
       ]
     }
-  ]
+  ],
+  "deleted": true
 }

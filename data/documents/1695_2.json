@@ -1,6 +1,5 @@
 {
   "date": "1695-1697",
-  "label": "to review",
   "entries": [
     {
       "source": "Vereinigte Westfälische Adelsarchive e.V., Hin.L.Ak, Nr. Hin.L.Ak - 12",
@@ -8,5 +7,6 @@
       "german": "Akten betreffend einen Rechtsstreit der Gemeinde Sidessen gegen den Flecken Gehrden vor dem fürstlichen Oberamte Dringenberg um die Hude im Stiege und Rosenberg oder Depenthal.",
       "english": "Files concerning a legal dispute between the municipality of Sidessen and the town of Gehrden before the princely supreme office of Dringenberg regarding common pasture rights in Stiege and Rosenberg or Depenthal."
     }
-  ]
+  ],
+  "deleted": true
 }

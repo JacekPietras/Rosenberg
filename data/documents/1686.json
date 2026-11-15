@@ -1,6 +1,5 @@
 {
   "date": "1686",
-  "label": "to review",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 229 Nr. 89295",
@@ -610,5 +609,6 @@
         }
       ]
     }
-  ]
+  ],
+  "deleted": true
 }

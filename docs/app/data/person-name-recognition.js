@@ -60,10 +60,9 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
     .filter((forms) => forms.length)
     .flatMap(([canonical, ...forms]) => [canonical, ...forms].map((form) => [form.toLocaleLowerCase(), canonical])));
   const givenName = `(?:${names})`;
-  const additionalGivenName = `(?!(?:${byNames}|${particles}|${placeNames})\\b)[\\p{L}][\\p{L}'’.-]*`;
-  const givenItem = `${givenName}(?:\\s+(?:${givenName}|${additionalGivenName}))?`;
+  const givenItem = `${givenName}(?:\\s+${givenName})*`;
   const surname = `(?<byName>${byNames})(?:\\s+(?<byNameParticle>${particles})\\s+(?<byNamePlace>${placeNames}))?|(?<particle>${particles})\\s+(?<place>${placeNames})`;
-  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<givenList>${givenItem}(?:\\s*,\\s*${givenItem})*(?:\\s*,?\\s+and\\s+${givenItem}))\\s+(?<surname>${surname})(?![\\p{L}\\p{N}])`, 'giu');
+  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<givenList>${givenItem}(?:\\s*,\\s*${givenItem})*(?:\\s*,?\\s+(?:and|und)\\s+${givenItem}))\\s+(?<surname>${surname})(?![\\p{L}\\p{N}])`, 'giu');
   const contextPattern = new RegExp(`(?<byName>${byNames})\\s+(?<particle>${particles})\\s+(?<place>${placeNames})`, 'giu');
   const matches = [];
   for (const match of String(text).matchAll(pattern)) {
@@ -82,14 +81,44 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
       start: match.index,
       end: match.index + match[0].length,
       givenList: match.groups.givenList,
-      givenNames: match.groups.givenList.split(/\s*,\s*(?:and\s+)?|\s+and\s+/iu).map((givenName) => givenName.trim()),
+      givenNames: match.groups.givenList.split(/\s*,\s*(?:(?:and|und)\s+)?|\s+(?:and|und)\s+/iu).map((givenName) => givenName.trim()),
       surnameText,
-      routes: match.groups.givenList.split(/\s*,\s*(?:and\s+)?|\s+and\s+/iu).map((givenName) => givenName.trim()).map((givenName) =>
+      routes: match.groups.givenList.split(/\s*,\s*(?:(?:and|und)\s+)?|\s+(?:and|und)\s+/iu).map((givenName) => givenName.trim()).map((givenName) =>
         personRouteName(`${givenName} ${surnameText}`.trim(),
           titleText, connectorText, particleText, namesText, byNamesText, places)),
     });
   }
   return matches;
+}
+
+export function findPersonNameMentions(text, titleText = '', connectorText = '', particleText = '', namesText = '', byNamesText = '', places = [], sourcePattern = null, personPatterns = []) {
+  const value = String(text);
+  const coordinated = coordinatedByNameMatches(value, titleText, connectorText,
+    particleText, namesText, byNamesText, places);
+  const singles = [];
+  const explicitIds = [...value.matchAll(/\[[^\]]+\]/gu)].map((match) => [match.index, match.index + match[0].length]);
+  const patterns = [
+    ...(sourcePattern ? [{ kind: 'source', pattern: sourcePattern }] : []),
+    ...(personPatterns || []).map(({ pattern, people }) => ({ kind: 'registry', pattern, people })),
+  ];
+  for (const candidate of patterns) {
+    const { pattern } = candidate;
+    const lastIndex = typeof pattern.lastIndex === 'number' ? pattern.lastIndex : undefined;
+    if (lastIndex !== undefined) pattern.lastIndex = 0;
+    for (const match of value.matchAll(pattern)) {
+      const start = match.index;
+      const end = start + match[0].length;
+      if (coordinated.some((group) => group.start <= start && end <= group.end)) continue;
+      if (explicitIds.some(([idStart, idEnd]) => idStart < end && start < idEnd)) continue;
+      if (singles.some((item) => item.start === start && item.end === end
+          || item.start <= start && end <= item.end)) continue;
+      const route = personRouteName(match[0], titleText, connectorText,
+        particleText, namesText, byNamesText, places);
+      singles.push({ kind: candidate.kind, text: match[0], start, end, route, people: candidate.people });
+    }
+    if (lastIndex !== undefined) pattern.lastIndex = lastIndex;
+  }
+  return { coordinated, singles };
 }
 
 export function coordinatedByNameRouteNames(...args) {

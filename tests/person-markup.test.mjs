@@ -45,6 +45,26 @@ test('coordinated by-name mentions link each brother to the inherited place rout
   assert.match(rendered, /href="\?person=Konrad%20Marschalk%20zu%20Pappenheim"/u);
 });
 
+test('inline links keep the three compound names from the fief list intact', async () => {
+  const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
+  const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files
+    .map((file) => readFile(new URL(`../data/${file}`, import.meta.url), 'utf8')));
+  const places = parsePlaces(placesJson);
+  const titles = `${ageTitles}\n${officeTitles}`;
+  const state = { people: [], places, personPattern: [], personNamesText: names, byNamesText: byNames,
+    nobiliaryParticlesText: particles, nameConnectorsText: connectors, personNameTitlesText: titles,
+    sourcePersonPattern: buildSourcePersonPattern(names, particles, places, titles, connectors, byNames),
+    placePattern: buildPlacePattern(places) };
+  const { inlineMarkup } = createMarkupRenderer({ state });
+  const rendered = inlineMarkup('enfeoffs Adam Hector, Johann Konrad and Hans Dietrich von Rosenberg with houses');
+  for (const route of [
+    'Adam Hector von Rosenberg',
+    'Hans Konrad von Rosenberg',
+    'Hans Dietrich von Rosenberg',
+  ]) assert.ok(rendered.includes(`href="?person=${encodeURIComponent(route)}"`), route);
+  assert.doesNotMatch(rendered, /href="\?person=Konrad%20von%20Rosenberg"/u);
+});
+
 test('links all three names in a coordinated Marschalk list', async () => {
   const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
   const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files

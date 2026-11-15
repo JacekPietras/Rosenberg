@@ -1,7 +1,7 @@
 import { escapeHtml } from './html.js';
 import { findPlaceByName } from '../data/entities.js?v=90';
 import { resolvePerson } from '../data/relationships.js?v=11';
-import { coordinatedByNameMatches, personMentionClass, personRouteName } from '../data/person-name-recognition.js?v=21';
+import { findPersonNameMentions, personMentionClass } from '../data/person-name-recognition.js?v=22';
 
 export function createMarkupRenderer({ state }) {
   const frakturUpper = [...'𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ'];
@@ -21,9 +21,11 @@ export function createMarkupRenderer({ state }) {
     const tokens = []; const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
     let text = String(value);
     const peopleById = new Map((state.people || []).filter((person) => person.id).map((person) => [person.id, person]));
-    const coordinated = coordinatedByNameMatches(text, state.personNameTitlesText, state.nameConnectorsText,
-      state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places);
-    for (const group of coordinated.reverse()) {
+    const { coordinated, singles } = findPersonNameMentions(text, state.personNameTitlesText, state.nameConnectorsText,
+      state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places,
+      state.sourcePersonPattern, state.personPattern);
+    const personReplacements = [];
+    for (const group of coordinated) {
       let givenIndex = 0;
       const givenListPattern = new RegExp(`(?:${group.givenNames.map((name) => name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')).join('|')})`, 'giu');
       const linkedGivenList = group.givenList.replace(givenListPattern, (givenName) => {
@@ -32,19 +34,25 @@ export function createMarkupRenderer({ state }) {
         const label = routeIndex === group.routes.length - 1 ? `${givenName} ${group.surnameText}` : givenName;
         return `<a class="person-link ${personMentionClass(route, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(route)}">${escapeHtml(label)}</a>`;
       });
-      const linked = linkedGivenList;
-      text = text.slice(0, group.start) + token(linked) + text.slice(group.end);
+      personReplacements.push({ start: group.start, end: group.end, markup: linkedGivenList });
+    }
+    for (const mention of singles) {
+      if (mention.kind === 'registry') {
+        const { person, ambiguous } = resolvePerson(mention.people, mention.text);
+        if (!person && !ambiguous) continue;
+      }
+      personReplacements.push({
+        start: mention.start,
+        end: mention.end,
+        markup: `<a class="person-link ${personMentionClass(mention.route, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(mention.route)}">${mention.text}</a>`,
+      });
+    }
+    for (const replacement of personReplacements.sort((left, right) => right.start - left.start)) {
+      text = text.slice(0, replacement.start) + token(replacement.markup) + text.slice(replacement.end);
     }
     text = text.replace(/\[([^\]]+)\]/g, (match, id) => {
       const person = peopleById.get(id);
       return person ? token(`<a class="person-link person-id-link" href="?person=${encodeURIComponent(person.id)}">${escapeHtml(person.name)}</a>`) : match;
-    });
-    if (state.sourcePersonPattern) text = text.replace(state.sourcePersonPattern, (match) =>
-      token(`<a class="person-link ${personMentionClass(match, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(personRouteName(match, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places))}">${match}</a>`));
-    for (const { pattern, people } of state.personPattern || []) text = text.replace(pattern, (match) => {
-      const { person, ambiguous } = resolvePerson(people, match);
-      // Unqualified names use the generic name route; explicit [id] tokens above stay specific.
-      return person || ambiguous ? token(`<a class="person-link ${personMentionClass(match, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(personRouteName(match, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places))}">${match}</a>`) : match;
     });
     for (const pattern of [state.buildingPattern, state.placePattern]) {
       if (pattern) text = text.replace(pattern, (match) => {

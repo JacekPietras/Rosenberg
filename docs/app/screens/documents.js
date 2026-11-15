@@ -1,7 +1,7 @@
 import { factDate } from '../rendering/facts.js?v=9';
 import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=9';
-import { coordinatedByNameMatches, personRouteName } from '../data/person-name-recognition.js?v=21';
+import { findPersonNameMentions, personRouteName } from '../data/person-name-recognition.js?v=22';
 
 export function createDocumentRenderer({
   state,
@@ -27,7 +27,11 @@ export function createDocumentRenderer({
     const collectFact = (value) => {
       if (typeof value === 'string') { texts.push(peopleById.get(value) || value); return; }
       if (Array.isArray(value)) { value.forEach(collectFact); return; }
-      if (value && typeof value === 'object') Object.values(value).forEach(collectFact);
+      if (value && typeof value === 'object') {
+        Object.entries(value).forEach(([key, nested]) => {
+          if (key !== 'person' && key !== 'of') collectFact(nested);
+        });
+      }
     };
     const visit = (value) => {
       if (Array.isArray(value)) { value.forEach(visit); return; }
@@ -67,23 +71,13 @@ export function createDocumentRenderer({
       }
     };
     visitFacts(doc);
-    const patterns = [state.sourcePersonPattern, ...(state.personPattern || []).map(({ pattern }) => pattern)].filter(Boolean);
     for (const text of documentStrings(doc)) {
-      const coordinatedMatches = coordinatedByNameMatches(text, state.personNameTitlesText, state.nameConnectorsText,
-        state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places);
-      for (const name of coordinatedMatches.flatMap((match) => match.routes)) {
+      const { coordinated, singles } = findPersonNameMentions(text, state.personNameTitlesText,
+        state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText,
+        state.byNamesText, state.places, state.sourcePersonPattern, state.personPattern);
+      for (const name of [...coordinated.flatMap((match) => match.routes), ...singles.map((match) => match.route)]) {
         const key = name.toLocaleLowerCase();
         if (!found.has(key)) found.set(key, name);
-      }
-      for (const sourcePattern of patterns) {
-        for (const match of text.matchAll(sourcePattern)) {
-          const matchStart = match.index;
-          if (coordinatedMatches.some((group) => group.start <= matchStart && matchStart + match[0].length <= group.end)) continue;
-          const name = match[0];
-          const routeName = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places);
-          const key = routeName.toLocaleLowerCase();
-          if (!found.has(key)) found.set(key, routeName);
-        }
       }
     }
     return found;
