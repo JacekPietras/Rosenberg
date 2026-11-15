@@ -750,6 +750,8 @@ function setupImageLightboxLegacy() {
     if (!editingContext) return Promise.resolve(true);
     const operation = saveQueue.then(async () => {
       const context = editingContext;
+      const document = state.documents.get(context.path);
+      if (JSON.stringify(document) === context.baseline) return true;
       const entry = state.documents.get(context.path)?.entries?.[Number(context.entryIndex)];
       if (entry) {
         const images = Array.isArray(entry.img) ? entry.img : [entry.img];
@@ -759,8 +761,9 @@ function setupImageLightboxLegacy() {
       }
       try {
         setSaveStatus('Saving…');
-        const result = await repository.saveDocument(context.path, state.documents.get(context.path));
+        const result = await repository.saveDocument(context.path, document);
         markSavedSnapshot(state, context.path, result.version);
+        context.baseline = JSON.stringify(document);
         return true;
       } catch (error) {
         setSaveStatus(error.message, true);
@@ -845,6 +848,7 @@ function setupImageLightboxLegacy() {
     editingContext = editable && entry && node && typeof node === 'object' ? { path, node, entryIndex, imageIndex } : null;
     if (editingContext) {
       if (!Array.isArray(node.seals)) node.seals = [];
+      editingContext.baseline = JSON.stringify(state.documents.get(path));
     }
     selectedIndex = null;
     lightbox.classList.toggle('is-editable', Boolean(editingContext));
