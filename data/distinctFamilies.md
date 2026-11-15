@@ -4,10 +4,9 @@
 # excluded by default and gets a three-state filter.
 schenk
 mönch
-czechia
-rorschach
-barby
-bredow
-kamptal
-sulzbach
 helmstatt
+sulzbach
+czechia
+kamptal
+brandenburg
+rorschach

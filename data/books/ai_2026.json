@@ -4,6 +4,7 @@
   "entries": [
     {
       "title": "Franken, Bauland and Odenwald",
+      "label": "Franken",
       "img": [
         {
           "src": "https://wappenwiki.org/images/4/41/Von_Rosenberg.svg",
@@ -25,6 +26,7 @@
     },
     {
       "title": "Helmstatt, Kraichgau",
+      "label": "Helmstatt",
       "img": "img/Rosenberg-helmstatt.svg",
       "english": "Recorded: [1380-1480]"
     },
@@ -41,6 +43,7 @@
     },
     {
       "title": "Schenk, Würzburg",
+      "label": "Schenk",
       "img": "img/Rosenberg-schenk.svg",
       "english": "Recorded: [1270-1537]"
     },
@@ -57,6 +60,7 @@
     },
     {
       "title": "Mönch, Bauland and Odenwald",
+      "label": "Mönch",
       "img": "img/Rosenberg-munch.svg",
       "english": "Recorded: [1251-1679]"
     },
@@ -73,6 +77,7 @@
     },
     {
       "title": "Lengenfelders, Sulzbach",
+      "label": "Sulzbach",
       "img": "img/Rosenberg-langenfelder.svg",
       "english": "Recorded: [1314-1359]"
     },
@@ -89,6 +94,7 @@
     },
     {
       "title": "Raydenbach, Sulzbach",
+      "label": "Sulzbach",
       "english": "Recorded: [1366-1368]"
     },
     {
@@ -104,6 +110,7 @@
     },
     {
       "title": "Voit, Sulzbach",
+      "label": "Sulzbach",
       "img": "img/Rosenberg-voit.png",
       "english": "Recorded: [1313-1450]"
     },
@@ -120,6 +127,7 @@
     },
     {
       "title": "Wirt, Sulzbach",
+      "label": "Sulzbach",
       "english": "Recorded: [1372-1398]"
     },
     {
@@ -131,6 +139,7 @@
     },
     {
       "title": "Rorschach, Eastern Switzerland",
+      "label": "Rorschach",
       "img": [
         {
           "src": "https://wappenwiki.org/images/5/55/Rorschach.svg",
@@ -152,6 +161,7 @@
     },
     {
       "title": "Rožmberks, South Bohemian",
+      "label": "Czechia",
       "img": [
         {
           "src": "https://wappenwiki.org/images/6/6b/Rosenberg.svg",
@@ -173,6 +183,7 @@
     },
     {
       "title": "Orsini, Austrian",
+      "label": "Orsini",
       "img": [
         {
           "src": "https://wappenwiki.org/images/b/b8/Orsini-Rosenberg.svg",
@@ -194,6 +205,7 @@
     },
     {
       "title": "Kamptal, Lower Austrian",
+      "label": "Kamptal",
       "english": "Recorded: [1175-1290]"
     },
     {
@@ -209,6 +221,7 @@
     },
     {
       "title": "Early Lords of Rosenburg, Brandenburg",
+      "label": "Brandenburg",
       "english": "Recorded: [1156-1180]"
     },
     {
@@ -224,6 +237,7 @@
     },
     {
       "title": "Querfurt, Brandenburg",
+      "label": "Brandenburg",
       "img": [
         {
           "src": "https://wappenwiki.org/images/e/e4/Magdeburg-Burggraf.svg",
@@ -245,6 +259,7 @@
     },
     {
       "title": "Barby, Brandenburg",
+      "label": "Brandenburg",
       "img": [
         {
           "src": "https://wappenwiki.org/images/3/33/Barby.svg",
@@ -259,6 +274,7 @@
     },
     {
       "title": "Bredow, Brandenburg",
+      "label": "Brandenburg",
       "img": [
         {
           "src": "https://familie-von-bredow.org/wp-content/uploads/2024/02/Wappen_Nur-Schild_Dietlind-erstellt_2-2.jpg",
