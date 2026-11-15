@@ -21,8 +21,6 @@ Boppe, Bopp
 Burkhard, Burchard, Burkard
 Busso
 Casimir
-Gero
-Eduard
 Caspar, Caſpar, Kaspar
 Christoph, Chriftoph, Christof, Christoff, Christpoh
 Cornelius, Cornelis
@@ -31,12 +29,12 @@ Dietrich
 Dietzel
 Eberhard, Eberh, Eberhardi, Eberhards, Eberhardt, Eberhardts, Eberhardum, Eberhardus, Eberhart, Eberharten, Ebert, Ebhart, Ebhrhard, Ebirbard, Ebirh, Ebirhard, Ebirhardo, Ebirhardus, Ebirhardz, Ebirhart, Ebirharten, Ebyrhard, eebhrt, erberhart, Erhart, Everard, Everhard, Everhart, Ewerhard, rebhart
 Eckhard, Eckehardus, Eckhart, Ege, Ekhart, Ekkard, Ekkehard, Ekkehart
+Eduard
 Egilolf, Egli, Eglolf, Eglolff
 Engel
 Engelhard, Engelhardus, Engelhart
 Erasmus
 Erhard
-Viktor
 Erkinger
 Ernst, Arnest, Ehrenfried, Erinze, Erwin
 Franz, Franziskus
@@ -47,6 +45,7 @@ Fürderer, Forderer, Furderer, Förderer
 Georg, Georgs, Goerg, Gorg, Jorg, Jorge, Jorgen, Jörg
 Gerhard, Gerhardus
 Gerlach
+Gero
 Gerung, Gerunch
 Gotfried, Godefrid, Gottfried
 Gozwin, Goczwin, Godezwin
@@ -70,7 +69,7 @@ Jost
 Karl, Carl
 Kasimir
 Kilian
-Konrad, Chunrad, Chunradus, Chunrat, Chuonrad, Chuonradus, Chuonrat, Chvnradus, Conrad, Conrade, Conradi, Conrado, Conrads, Conradt, Conradus, Conrat, Conratten, Cunrad, Cunradus, Cunrat, Cunreth, Conradts
+Konrad, Chunrad, Chunradus, Chunrat, Chuonrad, Chuonradus, Chuonrat, Chvnradus, Conrad, Conrade, Conradi, Conrado, Conrads, Conradt, Conradts, Conradus, Conrat, Conratten, Cunrad, Cunradus, Cunrat, Cunreth
 Kraft, Krafto
 Kuno
 Kunz, Concz, Conntzen, Contz, Contze, Conz, Cuncze, Cuntz, Cuntzen, Cunz, Guntz, Kontz, Konz, Kunczen, Kuntz // are shortened versions of Konrad, but not used as it\! [1401 March 5]
@@ -114,13 +113,14 @@ Ulrich, Vlreich
 Urban
 Valentin
 Veit
+Viktor
 Walter, Wolter
 Weigrecht
 Wenceslaus, Wenzel
 Werenher
 Wernher, Werner
 Wernlein, Wirdlin
-Wilhelm, Wilhem, Vilém
+Wilhelm, Vilém, Wilhem
 Wiprecht, Welprecht, Wibrecht, Wipert, Wipprecht, Wynprecht, Wyprecht
 Wok, Bocho, Vok, Witiko, Wocco, Wocho, Woko
 Wolf, Wolff
@@ -178,7 +178,7 @@ Selind, Selant, Selende, Sieglinde, Siglind
 Septia
 Sibylla, Sibyl
 Sophia
-Ursula
+Ursula, Urssel
 Uta, Utha
 Veronika
 Walpurga, Walburga
