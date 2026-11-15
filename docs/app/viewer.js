@@ -3,8 +3,8 @@ import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=124';
-import { renderActiveScreen } from './screens/router-view.js?v=16';
-import { createDocumentRenderer } from './screens/documents.js?v=29';
+import { renderActiveScreen } from './screens/router-view.js?v=17';
+import { createDocumentRenderer } from './screens/documents.js?v=30';
 import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=5';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=3';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=90';
@@ -17,7 +17,7 @@ import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';
 import { createMapScreen } from './screens/map.js?v=85';
 import { setupImageLightbox as setupImageLightboxComponent } from './components/image-lightbox.js?v=130';
-import { createMarkupRenderer } from './rendering/markup.js?v=101';
+import { createMarkupRenderer } from './rendering/markup.js?v=102';
 import { personMentionClass } from './data/person-name-recognition.js?v=23';
 import { createImageRenderer, imageCardMarkup } from './rendering/images.js?v=20';
 import { sortByDate } from './image-date-sort.js?v=2';
@@ -1450,6 +1450,7 @@ async function renderActive() {
     documentYear,
     renderYearSidebar,
     renderDocument: documentRenderer.renderDocument,
+    renderDocumentWithPersonLinks: documentRenderer.renderDocumentWithPersonLinks,
     renderReviewNameLabels: documentRenderer.reviewNameLabels,
     setupSealAnnotations: () => setupImageSealAnnotations({ state }),
     setupSealHighlight: sealScreen.setupSealHighlight,

@@ -23,6 +23,7 @@ export async function renderActiveScreen({
   documentYear,
   renderYearSidebar,
   renderDocument,
+  renderDocumentWithPersonLinks,
   renderReviewNameLabels,
   setupSealAnnotations,
   setupSealHighlight,
@@ -34,6 +35,8 @@ export async function renderActiveScreen({
 }) {
   const documentRenderTimings = {};
   const renderPhaseStart = performance.now();
+  state.documentPersonLinkObserver?.disconnect();
+  state.documentReviewLabelObserver?.disconnect();
   status.textContent = '';
   status.classList.remove('error');
   if (state.active !== 'tree' && state.sourceLoading && (state.person || state.place || !state.manifest.books.some((book) => book.path === state.active))) {
@@ -96,6 +99,8 @@ export async function renderActiveScreen({
     && (state.lastRenderedDocumentsYear === null || selectedYear !== state.lastRenderedDocumentsYear);
   state.yearHighlightCleanup?.();
   state.yearHighlightCleanup = null;
+  const previousDeferredPersonRecognition = state.deferPersonNameRecognition;
+  if (state.active === 'documents') state.deferPersonNameRecognition = true;
   const htmlStart = performance.now();
   if (state.active === 'documents') {
     const sidebarStart = performance.now();
@@ -127,27 +132,71 @@ export async function renderActiveScreen({
     content.innerHTML = documentHtml;
     documentRenderTimings.domInsertMs = Math.round((performance.now() - domStart) * 10) / 10;
   }
-  const reviewLabelTargets = content.querySelectorAll('[data-review-label-path]');
-  if (reviewLabelTargets.length && typeof IntersectionObserver !== 'undefined') {
-    const observer = new IntersectionObserver((entries) => {
+  state.deferPersonNameRecognition = previousDeferredPersonRecognition;
+  function observeReviewLabelTargets(root) {
+    const targets = root.querySelectorAll('[data-review-label-path]');
+    if (!targets.length) return;
+    if (typeof IntersectionObserver !== 'undefined') {
+      if (!state.documentReviewLabelObserver) {
+        state.documentReviewLabelObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            state.documentReviewLabelObserver.unobserve(entry.target);
+            const path = entry.target.dataset.reviewLabelPath;
+            const doc = state.documents.get(path);
+            const target = entry.target.querySelector('[data-review-name-labels]');
+            if (doc && target) renderReviewNameLabels(doc, path).then((html) => {
+              if (target.isConnected) target.outerHTML = html;
+            });
+          });
+        }, { rootMargin: '250px 0px' });
+      }
+      targets.forEach((target) => state.documentReviewLabelObserver.observe(target));
+    } else {
+      targets.forEach((target) => {
+        const path = target.dataset.reviewLabelPath;
+        const doc = state.documents.get(path);
+        const placeholder = target.querySelector('[data-review-name-labels]');
+        if (doc && placeholder) renderReviewNameLabels(doc, path).then((html) => { if (placeholder.isConnected) placeholder.outerHTML = html; });
+      });
+    }
+  }
+  observeReviewLabelTargets(content);
+  const personLinkTargets = content.querySelectorAll('[data-person-links-path]');
+  const hydratePersonLinks = (article) => {
+    if (!article.isConnected) return;
+    const path = article.dataset.personLinksPath;
+    const index = Number(article.dataset.personLinksIndex);
+    const doc = state.documents.get(path);
+    if (!doc) return;
+    const template = document.createElement('template');
+    template.innerHTML = renderDocumentWithPersonLinks(doc, path, index);
+    const renderedArticle = template.content.firstElementChild;
+    if (!renderedArticle) return;
+    article.innerHTML = renderedArticle.innerHTML;
+    article.removeAttribute('data-person-links-path');
+    article.removeAttribute('data-person-links-index');
+    observeReviewLabelTargets(article);
+    const diagrams = article.querySelectorAll('.mermaid');
+    if (diagrams.length && mermaid) mermaid.run({ nodes: diagrams });
+    if (article.querySelector('.annotated-image img, .seal-crop img, img[data-focus-x]')) setupSealAnnotations();
+  };
+  if (personLinkTargets.length && typeof IntersectionObserver !== 'undefined') {
+    state.documentPersonLinkObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        observer.unobserve(entry.target);
-        const path = entry.target.dataset.reviewLabelPath;
-        const doc = state.documents.get(path);
-        const target = entry.target.querySelector('[data-review-name-labels]');
-        if (doc && target) renderReviewNameLabels(doc, path).then((html) => {
-          if (target.isConnected) target.outerHTML = html;
-        });
+        const article = entry.target;
+        state.documentPersonLinkObserver.unobserve(article);
+        const renderWhenIdle = () => hydratePersonLinks(article);
+        if (typeof requestIdleCallback === 'function') requestIdleCallback(renderWhenIdle, { timeout: 1000 });
+        else setTimeout(renderWhenIdle, 0);
       });
     }, { rootMargin: '250px 0px' });
-    reviewLabelTargets.forEach((target) => observer.observe(target));
-  } else if (reviewLabelTargets.length) {
-    reviewLabelTargets.forEach((target) => {
-      const path = target.dataset.reviewLabelPath;
-      const doc = state.documents.get(path);
-      const placeholder = target.querySelector('[data-review-name-labels]');
-      if (doc && placeholder) renderReviewNameLabels(doc, path).then((html) => { if (placeholder.isConnected) placeholder.outerHTML = html; });
+    personLinkTargets.forEach((target) => state.documentPersonLinkObserver.observe(target));
+  } else if (personLinkTargets.length) {
+    personLinkTargets.forEach((article) => {
+      const schedule = window.requestIdleCallback || ((callback) => setTimeout(callback, 0));
+      schedule(() => hydratePersonLinks(article));
     });
   }
   const setupStart = performance.now();

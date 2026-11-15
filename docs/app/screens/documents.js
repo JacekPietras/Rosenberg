@@ -258,8 +258,18 @@ export function createDocumentRenderer({
     const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
     const important = labelKeys.includes('important') ? ' important' : '';
     const dimmed = labelKeys.some((label) => distinctFamilies.has(label)) ? ' dimmed' : '';
-    return `<article class="document${important}${dimmed}"${anchor}${mentionLabelTargets}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
+    const deferredPersonLinks = state.active === 'documents' && path.startsWith('data/documents/')
+      ? ` data-person-links-path="${escapeHtml(path)}" data-person-links-index="${index}"`
+      : '';
+    return `<article class="document${important}${dimmed}"${anchor}${mentionLabelTargets}${deferredPersonLinks}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
   }
 
-  return { renderEntry, renderDocument, reviewNameLabels };
+  function renderDocumentWithPersonLinks(doc, path, index) {
+    const previous = state.deferPersonNameRecognition;
+    state.deferPersonNameRecognition = false;
+    try { return renderDocument(doc, path, index); }
+    finally { state.deferPersonNameRecognition = previous; }
+  }
+
+  return { renderEntry, renderDocument, renderDocumentWithPersonLinks, reviewNameLabels };
 }

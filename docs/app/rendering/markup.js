@@ -21,9 +21,11 @@ export function createMarkupRenderer({ state }) {
     const tokens = []; const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
     let text = String(value);
     const peopleById = new Map((state.people || []).filter((person) => person.id).map((person) => [person.id, person]));
-    const { coordinated, singles } = findPersonNameMentions(text, state.personNameTitlesText, state.nameConnectorsText,
-      state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places,
-      state.sourcePersonPattern, state.personPattern);
+    const { coordinated, singles } = state.deferPersonNameRecognition
+      ? { coordinated: [], singles: [] }
+      : findPersonNameMentions(text, state.personNameTitlesText, state.nameConnectorsText,
+        state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places,
+        state.sourcePersonPattern, state.personPattern);
     const personReplacements = [];
     for (const group of coordinated) {
       let givenIndex = 0;
