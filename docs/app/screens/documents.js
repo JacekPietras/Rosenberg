@@ -201,7 +201,7 @@ export function createDocumentRenderer({
 
   function bookSections(entries) {
     return entries.reduce((sections, entry) => {
-      if (entry.title || !sections.length) sections.push({ title: entry.title || '', titleImage: entry.title ? entry.img : null, entries: [] });
+      if (entry.title || !sections.length) sections.push({ title: entry.title || '', label: entry.label || '', titleImage: entry.title ? entry.img : null, entries: [] });
       sections[sections.length - 1].entries.push(entry);
       return sections;
     }, []);
@@ -233,7 +233,8 @@ export function createDocumentRenderer({
         const sectionTitle = section.title || (sectionIndex === 0 ? title : 'Untitled section');
         const titleImage = section.titleImage ? imageMarkup(section.titleImage, [], { title: sectionTitle, path, showRegions: false, direct: true }) : '';
         const sectionContent = section.entries.map((entry, entryIndex) => renderEntry(entry, { title: false, image: !(entryIndex === 0 && section.titleImage), path, index: entries.indexOf(entry) })).join('');
-        return `<article class="document book-document"><div class="document-heading"><div><h2>${titleImage}${escapeHtml(sectionTitle)}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
+        const label = section.label ? `<span class="record-label">${escapeHtml(section.label)}</span>` : '';
+        return `<article class="document book-document"><div class="document-heading"><div><h2>${titleImage}${escapeHtml(sectionTitle)}${label}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
       }).join('');
     }
     const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
