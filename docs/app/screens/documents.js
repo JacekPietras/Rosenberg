@@ -1,7 +1,7 @@
 import { factDate } from '../rendering/facts.js?v=9';
 import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=9';
-import { findPersonNameMentions, personRouteName } from '../data/person-name-recognition.js?v=22';
+import { findPersonNameMentions, personRouteName } from '../data/person-name-recognition.js?v=23';
 
 export function createDocumentRenderer({
   state,
@@ -86,21 +86,35 @@ export function createDocumentRenderer({
   let indexedDocuments;
   let mentionsByPath;
   let documentsByMention;
+  let indexPromise;
   function documentMentionIndex() {
-    if (indexedDocuments === state.documents && mentionsByPath && documentsByMention) return mentionsByPath;
+    if (indexPromise) return indexPromise;
+    if (indexedDocuments === state.documents && mentionsByPath && documentsByMention) return Promise.resolve(mentionsByPath);
     indexedDocuments = state.documents;
     mentionsByPath = new Map();
     documentsByMention = new Map();
-    for (const [path, doc] of state.documents || []) {
-      if (!path.startsWith('data/documents/')) continue;
-      const mentions = personMentions(doc);
-      mentionsByPath.set(path, mentions);
-      for (const [key, name] of mentions) {
-        if (!documentsByMention.has(key)) documentsByMention.set(key, []);
-        documentsByMention.get(key).push({ path, doc, name });
-      }
-    }
-    return mentionsByPath;
+    const paths = [...(state.documents || [])].filter(([path]) => path.startsWith('data/documents/'));
+    let cursor = 0;
+    indexPromise = new Promise((resolve) => {
+      const schedule = window.requestIdleCallback || ((callback) => window.setTimeout(() => callback({ timeRemaining: () => 8 }), 0));
+      const process = (deadline) => {
+        let processed = 0;
+        while (cursor < paths.length && (processed < 12 || deadline.timeRemaining() > 2)) {
+          const [path, doc] = paths[cursor++];
+          const mentions = personMentions(doc);
+          mentionsByPath.set(path, mentions);
+          for (const [key, name] of mentions) {
+            if (!documentsByMention.has(key)) documentsByMention.set(key, []);
+            documentsByMention.get(key).push({ path, doc, name });
+          }
+          processed++;
+        }
+        if (cursor < paths.length) schedule(process);
+        else resolve(mentionsByPath);
+      };
+      schedule(process);
+    }).finally(() => { indexPromise = null; });
+    return indexPromise;
   }
 
   function labelsForMentionedDocument(doc) {
@@ -125,11 +139,11 @@ export function createDocumentRenderer({
     return year ? [Number(year), Number(year)] : null;
   }
 
-  function reviewNameLabels(doc, path) {
+  async function reviewNameLabels(doc, path) {
     const reviewLabels = Array.isArray(doc?.label) ? doc.label : [doc?.label];
     const isToReview = reviewLabels.some((label) => String(label || '').trim().toLocaleLowerCase() === 'to review');
     if (!isToReview && !state.classifiedDocumentPaths?.has(path)) return '';
-    const index = documentMentionIndex();
+    const index = await documentMentionIndex();
     const people = index.get(path) || personMentions(doc);
     const documentYears = documentYearBounds(doc.date);
     if (!people.size) return '';
@@ -223,7 +237,11 @@ export function createDocumentRenderer({
       ? `<button class="record-label-edit record-delete" type="button" data-delete-document="${escapeHtml(path)}" aria-label="Delete document" title="Delete document"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2m3 0-1 14H6L5 6m4 4v6m6-6v6"/></svg></button>`
       : '';
     const classifyButton = labelEditor ? `<button class="record-label-edit" type="button" data-classify-document="${escapeHtml(path)}"${state.classifyingDocumentPaths?.has(path) ? ' disabled' : ''} aria-label="Classify document" title="Classify document"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9a2.5 2.5 0 1 1 4.1 1.9c-1 .8-1.7 1.2-1.7 2.6M12 17h.01"/></svg></button>` : '';
-    const mentionLabels = path.startsWith('data/documents/') ? reviewNameLabels(doc, path) : '';
+    const reviewLabels = Array.isArray(doc?.label) ? doc.label : [doc?.label];
+    const hasReviewLabels = reviewLabels.some((label) => String(label || '').trim().toLocaleLowerCase() === 'to review');
+    const needsMentionLabels = path.startsWith('data/documents/') && (hasReviewLabels || state.classifiedDocumentPaths?.has(path));
+    const mentionLabels = needsMentionLabels ? `<div class="review-name-mentions" data-review-name-labels="${escapeHtml(path)}" aria-label="Labels in other documents where names are mentioned"></div>` : '';
+    const mentionLabelTargets = needsMentionLabels ? ` data-review-label-path="${escapeHtml(path)}"` : '';
     const headingAside = labels.length || date || labelEditor || mentionLabels ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => `<span class="record-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}${deleteButton}${classifyButton}</div>${mentionLabels}<span class="record-delete-status" role="status" aria-live="polite"></span><span class="record-classify-status" role="status" aria-live="polite"></span>${date}</div>` : '';
     const url = doc.url ? urlMarkup(doc.url) : '';
     const year = documentYear(doc);
@@ -240,8 +258,8 @@ export function createDocumentRenderer({
     const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
     const important = labelKeys.includes('important') ? ' important' : '';
     const dimmed = labelKeys.some((label) => distinctFamilies.has(label)) ? ' dimmed' : '';
-    return `<article class="document${important}${dimmed}"${anchor}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
+    return `<article class="document${important}${dimmed}"${anchor}${mentionLabelTargets}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
   }
 
-  return { renderEntry, renderDocument };
+  return { renderEntry, renderDocument, reviewNameLabels };
 }

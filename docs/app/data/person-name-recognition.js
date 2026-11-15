@@ -109,7 +109,7 @@ export function findPersonNameMentions(text, titleText = '', connectorText = '',
     for (const match of value.matchAll(pattern)) {
       const start = match.index;
       const end = start + match[0].length;
-      if (coordinated.some((group) => group.start <= start && end <= group.end)) continue;
+      if (coordinated.some((group) => group.start < end && start < group.end)) continue;
       if (explicitIds.some(([idStart, idEnd]) => idStart < end && start < idEnd)) continue;
       if (singles.some((item) => item.start === start && item.end === end
           || item.start <= start && end <= item.end)) continue;

@@ -23,6 +23,7 @@ export async function renderActiveScreen({
   documentYear,
   renderYearSidebar,
   renderDocument,
+  renderReviewNameLabels,
   setupSealAnnotations,
   setupSealHighlight,
   restoreRecord,
@@ -95,6 +96,29 @@ export async function renderActiveScreen({
     content.innerHTML = `<div class="documents-layout">${renderYearSidebar(paths, state.recordSource ? paths : allRecordPaths)}<div class="documents-list">${paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('')}</div></div>`;
   } else {
     content.innerHTML = paths.map((path, index) => renderDocument(state.documents.get(path), path, index)).join('');
+  }
+  const reviewLabelTargets = content.querySelectorAll('[data-review-label-path]');
+  if (reviewLabelTargets.length && typeof IntersectionObserver !== 'undefined') {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        observer.unobserve(entry.target);
+        const path = entry.target.dataset.reviewLabelPath;
+        const doc = state.documents.get(path);
+        const target = entry.target.querySelector('[data-review-name-labels]');
+        if (doc && target) renderReviewNameLabels(doc, path).then((html) => {
+          if (target.isConnected) target.outerHTML = html;
+        });
+      });
+    }, { rootMargin: '250px 0px' });
+    reviewLabelTargets.forEach((target) => observer.observe(target));
+  } else if (reviewLabelTargets.length) {
+    reviewLabelTargets.forEach((target) => {
+      const path = target.dataset.reviewLabelPath;
+      const doc = state.documents.get(path);
+      const placeholder = target.querySelector('[data-review-name-labels]');
+      if (doc && placeholder) renderReviewNameLabels(doc, path).then((html) => { if (placeholder.isConnected) placeholder.outerHTML = html; });
+    });
   }
   setupSealAnnotations();
   const diagrams = content.querySelectorAll('.mermaid');
