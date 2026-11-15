@@ -8,7 +8,7 @@ import { moduleUrl } from './browser-module.mjs';
 const { renderFactsView } = await import(await moduleUrl(new URL('../docs/app/components/facts_view.js', import.meta.url)));
 const { createDocumentRenderer } = await import(await moduleUrl(new URL('../docs/app/screens/documents.js', import.meta.url)));
 const { createEntityScreens } = await import(await moduleUrl(new URL('../docs/app/screens/entities.js', import.meta.url)));
-const { buildPersonPattern, buildPlacePattern } = await import(await moduleUrl(new URL('../docs/app/data/entities.js', import.meta.url)));
+const { buildPersonPattern, buildPlacePattern, buildSourcePersonPattern } = await import(await moduleUrl(new URL('../docs/app/data/entities.js', import.meta.url)));
 const { escapeHtml } = await import(await moduleUrl(new URL('../docs/app/rendering/html.js', import.meta.url)));
 globalThis.window = { location: { hostname: 'example.github.io', pathname: '/Rosenberg/docs/' } };
 const { documentNavigationUrl } = await import(await moduleUrl(new URL('../docs/app/rendering/navigation.js', import.meta.url)));
@@ -242,6 +242,44 @@ test('review label propositions merge nearby date ranges but keep distant period
   assert.match(html, /class="record-label">Franken \[1150-1180\]/);
   assert.match(html, /class="record-label">Franken \[1200-1220\]/);
   assert.match(html, /class="record-label">Franken \[1662\]/);
+});
+
+test('review label proposition chips use the title-free canonical person route', async () => {
+  const [names, particles, titles, connectors, byNames] = await Promise.all([
+    readFile(new URL('../data/names.md', import.meta.url), 'utf8'),
+    readFile(new URL('../data/nobiliary_particles.md', import.meta.url), 'utf8'),
+    Promise.all(['../data/titles-age.md', '../data/titles-office.md']
+      .map((path) => readFile(new URL(path, import.meta.url), 'utf8'))).then((parts) => parts.join('\n')),
+    readFile(new URL('../data/name-connectors.md', import.meta.url), 'utf8'),
+    readFile(new URL('../data/by-names.md', import.meta.url), 'utf8'),
+  ]);
+  const places = [{ name: 'Seckendorf', variations: ['Seckendorf', 'Seckendorff'] }];
+  const agreement = 'Agreement by knight Hans von Seckendorf-Aberdar, court master.';
+  const pattern = buildSourcePersonPattern(names, particles, places, titles, connectors, byNames);
+  const targetPath = 'data/documents/target.json';
+  const documents = new Map([
+    [targetPath, { date: '1514-10-01', label: 'to review', entries: [{ english: agreement }] }],
+    ['data/documents/other.json', { date: '1514', label: 'Franken', entries: [{ english: agreement }] }],
+  ]);
+  const state = {
+    documents,
+    sourcePersonPattern: pattern,
+    personPattern: [],
+    personNamesText: names,
+    nobiliaryParticlesText: particles,
+    personNameTitlesText: titles,
+    nameConnectorsText: connectors,
+    byNamesText: byNames,
+    places,
+    canEditDocuments: false,
+  };
+  const { renderDocument } = createDocumentRenderer({
+    state, escapeHtml, inlineMarkup: escapeHtml, languageMarkup: () => '', formatDate: String,
+    documentTitle: () => 'Document', documentYear: () => '', distinctFamilies: new Set(), getPeople: () => [], entryAnchor: () => '',
+  });
+  const html = renderDocument(documents.get(targetPath), targetPath, 0);
+  assert.match(html, /<span class="review-name">Hans von Seckendorf<\/span>/);
+  assert.doesNotMatch(html, /<span class="review-name">knight Hans von Seckendorf/iu);
 });
 
 test('review label propositions omit periods over 50 years away and retain the existing opacity rule', () => {

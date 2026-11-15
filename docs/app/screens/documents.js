@@ -48,8 +48,9 @@ export function createDocumentRenderer({
     const addPerson = (reference) => {
       if (typeof reference !== 'string') return;
       const name = peopleById.get(reference) || reference;
-      const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places).toLocaleLowerCase();
-      if (key && !found.has(key)) found.set(key, name);
+      const routeName = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places);
+      const key = routeName.toLocaleLowerCase();
+      if (key && !found.has(key)) found.set(key, routeName);
     };
     const collectFactPeople = (value) => {
       if (Array.isArray(value)) { value.forEach(collectFactPeople); return; }
@@ -79,8 +80,9 @@ export function createDocumentRenderer({
           const matchStart = match.index;
           if (coordinatedMatches.some((group) => group.start <= matchStart && matchStart + match[0].length <= group.end)) continue;
           const name = match[0];
-          const key = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places).toLocaleLowerCase();
-          if (!found.has(key)) found.set(key, name);
+          const routeName = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places);
+          const key = routeName.toLocaleLowerCase();
+          if (!found.has(key)) found.set(key, routeName);
         }
       }
     }

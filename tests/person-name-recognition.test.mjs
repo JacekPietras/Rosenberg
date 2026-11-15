@@ -42,6 +42,18 @@ test('recognizes the parties in a pledge debt description, including King Sigmun
   ]);
   assert.equal(personRouteName('King Sigmund', scenarioTitles, connectors, particles,
     scenarioNames, byNames, places), 'König Siegmund');
+  assert.equal(personRouteName('Knight Hans von Seckendorf', scenarioTitles, connectors, particles,
+    scenarioNames, byNames, places), 'Hans von Seckendorf');
+  assert.equal(personRouteName('Knight Hans', scenarioTitles, connectors, particles,
+    scenarioNames, byNames, places), 'Hans');
+  const seckendorfPlaces = [{ name: 'Seckendorf', variations: ['Seckendorf', 'Seckendorff'] }];
+  const agreement = 'Agreement by knight Hans von Seckendorf-Aberdar, court master';
+  const agreementPattern = buildSourcePersonPattern(scenarioNames, particles, seckendorfPlaces,
+    scenarioTitles, connectors, byNames);
+  const knightMatch = agreement.match(agreementPattern)?.[0];
+  assert.equal(knightMatch, 'knight Hans von Seckendorf');
+  assert.equal(personRouteName(knightMatch, scenarioTitles, connectors, particles,
+    scenarioNames, byNames, seckendorfPlaces), 'Hans von Seckendorf');
   assert.deepEqual(coordinatedByNameRouteNames(sentence, scenarioTitles, connectors, particles,
     scenarioNames, byNames, places), []);
 });

@@ -28,6 +28,21 @@ export function parsePersonNameTitles(markdown = '') {
     .filter(Boolean);
 }
 
+function parsePersonNameRouteTitles(markdown = '') {
+  let inRouteTitles = false;
+  const routeTitles = new Set();
+  for (const line of String(markdown).split(/\r?\n/)) {
+    const header = line.trim().match(/^\/\/\s*(.*?)\s*$/u);
+    if (header) {
+      inRouteTitles = header[1].toLocaleLowerCase() === 'route titles';
+    } else if (inRouteTitles) {
+      const canonical = line.split('//')[0].split(',')[0].trim().toLocaleLowerCase();
+      if (canonical) routeTitles.add(canonical);
+    }
+  }
+  return routeTitles;
+}
+
 export function coordinatedByNameMatches(text, titleText = '', connectorText = '', particleText = '', namesText = '', byNamesText = '', places = []) {
   const titles = alternatives(parsePersonNameTitles(titleText));
   const names = alternatives(String(namesText).split(/\r?\n/)
@@ -130,6 +145,7 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     .flatMap(([canonical, ...forms]) => [canonical, ...forms].map((form) => [form.toLocaleLowerCase(), canonical])));
   const canonicalGiven = variantMap(namesText);
   const canonicalTitle = variantMap(titleText);
+  const routeTitles = parsePersonNameRouteTitles(titleText);
   const canonicalByName = variantMap(byNamesText);
   const canonicalPlaces = new Map(places.flatMap((place) =>
     (place.variations || [place.name]).filter(Boolean).map((form) => [form.toLocaleLowerCase(), place.name || form])));
@@ -173,7 +189,7 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
   if (standaloneTitledGivenName) {
     const title = canonicalTitle.get(standaloneTitledGivenName[1].toLocaleLowerCase()) || standaloneTitledGivenName[1];
     const givenName = canonicalGiven.get(standaloneTitledGivenName[2].toLocaleLowerCase()) || standaloneTitledGivenName[2];
-    return `${title} ${givenName}`;
+    return routeTitles.has(title.toLocaleLowerCase()) ? `${title} ${givenName}` : givenName;
   }
   const birthName = String(name).match(/^(.*?)[\s,;]+\(?\s*(?:née|nee)[\s,;]+(.+?)\s*\)?$/iu);
   if (birthName) {
