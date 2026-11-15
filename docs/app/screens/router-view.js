@@ -144,7 +144,11 @@ export async function renderActiveScreen({
       const doc = state.documents.get(path);
       const placeholder = target.querySelector('[data-review-name-labels]');
       if (doc && placeholder) renderReviewNameLabels(doc, path).then((html) => {
-        if (placeholder.isConnected) placeholder.outerHTML = html;
+        if (!placeholder.isConnected) return;
+        if (html) {
+          placeholder.outerHTML = html;
+        } else placeholder.remove();
+        target.querySelector('[data-show-review-labels]')?.remove();
       });
     });
   }

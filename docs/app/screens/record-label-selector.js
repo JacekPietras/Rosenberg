@@ -47,8 +47,11 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
       if (!doc || !aside || !state.renderReviewNameLabels) return;
       const html = await state.renderReviewNameLabels(doc, path);
       const target = article.querySelector('.review-name-mentions');
-      if (target) target.outerHTML = html;
-      else aside.insertAdjacentHTML('beforeend', html);
+      if (target) {
+        if (html) target.outerHTML = html;
+        else target.remove();
+      } else if (html) aside.insertAdjacentHTML('beforeend', html);
+      reviewLabelsButton.remove();
       return;
     }
 

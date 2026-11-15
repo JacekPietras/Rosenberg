@@ -143,7 +143,7 @@ export function createDocumentRenderer({
     const index = await documentMentionIndex();
     const people = index.get(path) || personMentions(doc);
     const documentYears = documentYearBounds(doc.date);
-    if (!people.size) return '<div class="review-name-mentions" tabindex="-1" aria-label="Label propositions">No label propositions found.</div>';
+    if (!people.size) return '';
     const labelsByName = new Map([...people.keys()].map((key) => [key, new Map()]));
     for (const key of people.keys()) {
       for (const { path: otherPath, doc: otherDoc } of documentsByMention.get(key) || []) {
@@ -189,7 +189,7 @@ export function createDocumentRenderer({
         return `<span class="record-label${outsideDate ? ' is-outside-document-date' : ''}">${escapeHtml(label)}${years ? ` [${years}]` : ''}</span>`;
       }).join('')}</span></div>` : '';
     }).filter(Boolean);
-    return `<div class="review-name-mentions" tabindex="-1" aria-label="Labels in other documents where names are mentioned">${rows.length ? rows.join('') : 'No label propositions found.'}</div>`;
+    return rows.length ? `<div class="review-name-mentions" tabindex="-1" aria-label="Labels in other documents where names are mentioned">${rows.join('')}</div>` : '';
   }
 
   function renderEntry(entry, { title = true, subheading = true, date = true, source = true, image = true, path = '', index = null, documentDate = '' } = {}) {
