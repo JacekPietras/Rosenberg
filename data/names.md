@@ -89,7 +89,7 @@ Marx
 Mathern
 Melchior
 Michael, Michel, Micheln
-Nicolaus, Claus, Nicholas, Niklaus, Nikolaus
+Nicolaus, Claus, Nicholas, Niklaus, Nikolaus, Nicolaum
 Niklas, Niclas, Nyclos
 Otto, Attel
 Pankraz
@@ -103,7 +103,7 @@ Rudolf, Rudolff, Rudolph, Ruedi, Ruodolf
 Ruprecht, Rupert, Rupertus
 Rüdiger, Rüdger
 Sebastian
-Seman
+Seman, Symon
 Seibott
 Senant, Synant
 Siboto

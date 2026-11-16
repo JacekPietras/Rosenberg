@@ -1127,6 +1127,8 @@
     "id": "boedigheim-kreuzkirche",
     "variations": [
       "Bödigheim",
+      "Botinkey",
+      "Botinkeym",
       "Kreuzkirche Bödigheim"
     ],
     "category": "church",
@@ -1453,6 +1455,14 @@
     "showOnMap": false
   },
   {
+    "id": "waldeck",
+    "variations": [
+      "Waldeck",
+      "Waldecke"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "schwarzburg",
     "variations": [
       "Schwarzburg"
@@ -1584,6 +1594,14 @@
     "id": "zwettl",
     "variations": [
       "Zwettl"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "buchen",
+    "variations": [
+      "Buchen",
+      "Bucheim"
     ],
     "showOnMap": false
   },
@@ -1890,9 +1908,18 @@
     "showOnMap": false
   },
   {
+    "id": "bürgstadt",
+    "variations": [
+      "Bürgstadt",
+      "Burgestad"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "bischofsheim",
     "variations": [
       "Bischofsheim",
+      "Bischoffesheim",
       "Tauberbischofsheim",
       "Tauber-Bischofsheim",
       "[Tauber] Bischofsheim",
