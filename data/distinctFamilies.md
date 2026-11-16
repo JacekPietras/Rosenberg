@@ -10,4 +10,5 @@ czechia
 kamptal
 brandenburg
 rorschach
+triest
 unrelated
