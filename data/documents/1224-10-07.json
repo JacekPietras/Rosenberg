@@ -4,8 +4,8 @@
   "entries": [
     {
       "source": "E. Curzel and G. M. Varanini (eds.), Codex Wangianus. I cartulari della Chiesa trentina, Bologna 2007; Document 45*; also published in Tiroler Urkundenbuch, series I, vol. 2, no. 840",
-      "url": "https://books.fbk.eu/media/pubblicazioni/F_5_Tomo1-2.pdf#page=1207",
-      "latin": "Fe(dericus) de Rosenpacho",
+      "url": "https://books.fbk.eu/media/pubblicazioni/F_5_Tomo1-2.pdf#page=1206",
+      "latin": "Anno Domini Mo d) CC XXIIIIo, indictione XIIe), die lune VII intrante octobref), in Bolzano, in palacio episcopatus, in presentia domini Gotsahicg) Augensis pre- 1154-1284_II-Maior 1206 19-06-2007, 21:23 positush) et dominus Vivianus, Con(radus) de Griffinstayni), Fe(dericus) de Rosenpacho et aliisj). Ibique dominus A(delpretus) comes de Tirol, assessork) domini G(erardi) episcopi, statuit terminum domino Ber(toldo) Suapo presente curator filiorum quondam Massariil), quatenus hinc ad diem crastinam ad XIIII dies r(esponsurus)m) et racionemn) facturus Litoldo filio Videpachi de causa unius decime coram gastaldione dicto domino episcopo in Bolzano. Ego Tridentinus, sacri palacii notarius, de licencia et auctoritate venerabilis patris domini H(enrici), Dei ac sedis apostolice gratia episcopi Tridentini, hoc suprascriptum instrumentum ex breviaturis quondam Peregrini notarii de Bozano, mortificata breviatura ipsius instrumenti, traxi et in publicamo) formam reduxi fideliter et legaliter, nichil addens vel diminuens quod sensum vel sententiam mutet, meum signum apposuip) et me subscripsi.",
       "english": "In Bolzano, a proceeding under the authority of Count Albert of Tyrol involves a summons before the bishop’s judicial official in a tithe dispute. Federicus de Rosenpacho is listed in the charter.",
       "facts": [
         {
@@ -13,7 +13,9 @@
           "type": "generic",
           "content": "is listed in the charter concerning the tithe dispute."
         }
-      ]
+      ],
+      "summary": "In Bolzano, a proceeding under the authority of Count Albert of Tyrol involves a summons before the bishop’s judicial official in a tithe dispute. Federicus de Rosenpacho is listed in the charter."
     }
-  ]
+  ],
+  "transcribed": true
 }

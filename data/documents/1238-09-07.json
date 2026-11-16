@@ -5,7 +5,7 @@
     {
       "source": "E. Curzel and G. M. Varanini (eds.), Codex Wangianus. I cartulari della Chiesa trentina, Bologna 2007; Document 48*; also Tiroler Urkundenbuch, series I, vol. 3, no. 1079",
       "url": "https://books.fbk.eu/media/pubblicazioni/F_5_Tomo1-2.pdf#page=1211",
-      "latin": "Fr(iderici) de Rosenbach",
+      "latin": "Anno Domini millesimo CC XXXVIII, indictione undecima, die martis VII intrante septemb(re), in Bozano, aput albarumb) ad ecclesiam plebis Sancte Marie, in presentia dominic) Husid) canonici de Tridento, domini G(otschalci) de Grias, magistri Bononi medici, domini Co(nradi)e) de Winekof), domini Fr(iderici)g) de h) Rosenbach o , domini Ulricii) vicarii de Tirol, domini Albertini et Bertoletij) fratrum, Ulricik) Loaselinil), Bertoldi notarii, Wilielmim) specialis, Fr(iderici)g) de Nacu, Bonincontrin) et aliorum testium. Ibique dominus Bertoldus Tarantus de Tirol, delegatus domini imperatoris, statuit terminum Comiti de Naccu, presenti ex una parte, et Oberto notario, procuratori domini Martini burseriio) et Iohannis de Wadrilio ex altera, cum voluntate utriusque parcium, hinc ad proximum diem lune et deinde ad XV dies ut sint illa die Bozano coram eo in predicto loco et quod quilibet ibi habeat suum sapientem ad procedendum in causa. Ego Tridentinus, sacri palacii notarius, de licencia et auctoritate venerabilis patris domini H(enrici)p), Dei ac sedis apostolice gratia episcopi Tridentini, hunc suprascriptum instrumentum ex breviaturis condam Iacobi notarii de Bozano traxi et 1154-1284_II-Maior 1211 19-06-2007, 21:23 in publicam formam reduxi fideliter et legaliter, nichil addens vel diminuens quos sensum vel sentenciam mutet, meum signum apposuiq) et me subscripsi.",
       "english": "At Bolzano, Bertold of Taranto, acting in an imperial capacity, fixes a hearing date in a legal dispute concerning the parties from Nago and their representatives. Friedrich von Rosenberg appears among the witnesses.",
       "facts": [
         {
@@ -13,7 +13,9 @@
           "type": "generic",
           "content": "appears among the witnesses to the proceeding."
         }
-      ]
+      ],
+      "summary": "At Bolzano, Bertold of Taranto, acting in an imperial capacity, fixes a hearing date in a legal dispute concerning the parties from Nago and their representatives. Friedrich von Rosenberg appears among the witnesses."
     }
-  ]
+  ],
+  "transcribed": true
 }
