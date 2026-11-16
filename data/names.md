@@ -103,7 +103,6 @@ Rudolf, Rudolff, Rudolph, Ruedi, Ruodolf
 Ruprecht, Rupert, Rupertus
 Rüdiger, Rüdger
 Sebastian
-Seman, Symon
 Seibott
 Senant, Synant
 Siboto
