@@ -121,6 +121,24 @@ test('links only the given names before brothers von Rosenberg', async () => {
   assert.doesNotMatch(rendered, /href="\?person=[^"]*Rosenberg[^"]*">[^<]*von Rosenberg/u);
 });
 
+test('keeps the shared Edelknecht title outside brother links and routes', async () => {
+  const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
+  const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files
+    .map((file) => readFile(new URL(`../data/${file}`, import.meta.url), 'utf8')));
+  const places = parsePlaces(placesJson);
+  const titles = `${ageTitles}\n${officeTitles}`;
+  const state = { people: [], places, personPattern: [], personNamesText: names, byNamesText: byNames,
+    nobiliaryParticlesText: particles, nameConnectorsText: connectors, personNameTitlesText: titles,
+    sourcePersonPattern: buildSourcePersonPattern(names, particles, places, titles, connectors, byNames),
+    placePattern: buildPlacePattern(places) };
+  const { inlineMarkup } = createMarkupRenderer({ state });
+  const rendered = inlineMarkup('Bernger and Heinrich, brothers von Eubigheim, Edelknecht, sell their forest');
+  assert.ok(rendered.includes(`href="?person=${encodeURIComponent('Bernger von Eubigheim')}">Bernger</a>`));
+  assert.ok(rendered.includes(`href="?person=${encodeURIComponent('Heinrich von Eubigheim')}">Heinrich</a>`));
+  assert.match(rendered, /, brothers von Eubigheim, Edelknecht, sell their forest/u);
+  assert.doesNotMatch(rendered, /href="\?person=[^"]*(?:Edelknecht|Eubigheim)[^"]*">[^<]*(?:Edelknecht|Eubigheim)/u);
+});
+
 test('highlights Georg von Rosenberg after an adjacent witness list', async () => {
   const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
   const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files

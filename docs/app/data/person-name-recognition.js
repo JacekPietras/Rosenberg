@@ -63,7 +63,8 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
   const givenName = `(?:${names})`;
   const givenItem = `${givenName}(?:\\s+${givenName})*`;
   const surname = `(?<byName>${byNames})(?:\\s+(?<byNameParticle>${particles})\\s+(?<byNamePlace>${placeNames}))?|(?<particle>${particles})\\s+(?<place>${placeNames})`;
-  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<givenList>${givenItem}(?:\\s*,\\s*${givenItem})*(?:\\s*,?\\s+(?:and|und)\\s+${givenItem}))(?:,?\\s+brothers)?\\s+(?<surname>${surname})(?![\\p{L}\\p{N}])`, 'giu');
+  const sharedTitle = titles ? `(?:[,\\s]+(?<sharedTitle>${titles}))?` : '';
+  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<givenList>${givenItem}(?:\\s*,\\s*${givenItem})*(?:\\s*,?\\s+(?:and|und)\\s+${givenItem}))(?:,?\\s+brothers)?\\s+(?<surname>${surname})${sharedTitle}(?![\\p{L}\\p{N}])`, 'giu');
   const contextPattern = new RegExp(`(?<byName>${byNames})\\s+(?<particle>${particles})\\s+(?<place>${placeNames})`, 'giu');
   const matches = [];
   for (const match of String(text).matchAll(pattern)) {
@@ -86,6 +87,7 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
       brothersAfterList: /\bbrothers\b/iu.test(match[0].slice(match[0].indexOf(match.groups.givenList) + match.groups.givenList.length)),
       givenNames: match.groups.givenList.split(/\s*,\s*(?:(?:and|und)\s+)?|\s+(?:and|und)\s+/iu).map((givenName) => givenName.trim()),
       surnameText,
+      titles: match.groups.sharedTitle ? [match.groups.sharedTitle] : [],
       routes: match.groups.givenList.split(/\s*,\s*(?:(?:and|und)\s+)?|\s+(?:and|und)\s+/iu).map((givenName) => givenName.trim()).map((givenName) =>
         personRouteName(`${givenName} ${surnameText}`.trim(),
           titleText, connectorText, particleText, namesText, byNamesText, places)),
