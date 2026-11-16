@@ -27,7 +27,6 @@ Cornelius, Cornelis
 Diether, Dieter
 Dietrich
 Dietzel
-Steyn, Stein
 Eberhard, Eberh, Eberhardi, Eberhards, Eberhardt, Eberhardts, Eberhardum, Eberhardus, Eberhart, Eberharten, Ebert, Ebhart, Ebhrhard, Ebirbard, Ebirh, Ebirhard, Ebirhardo, Ebirhardus, Ebirhardz, Ebirhart, Ebirharten, Ebyrhard, eebhrt, erberhart, Erhart, Everard, Everhard, Everhart, Ewerhard, rebhart
 Eckhard, Eckehardus, Eckhart, Ege, Ekhart, Ekkard, Ekkehard, Ekkehart
 Eduard
@@ -56,7 +55,7 @@ Hans, Hanemann, Hanns, Hanse, Iohannes, Jan, Joannes, Johann, Johannes, Johanns,
 Hansolf
 Hartlieb
 Hartmut
-Haubt
+Haubt, Haupt
 Hector
 Heinrich, Hainrich, Heinrici, Heinrico, Heinricus, Heintz, Heintze, Heinz, Heinzen, Hendrici, Henrich, Henricus, Jindrich
 Herbord
@@ -89,7 +88,7 @@ Marx
 Mathern
 Melchior
 Michael, Michel, Micheln
-Nicolaus, Claus, Nicholas, Niklaus, Nikolaus, Nicolaum
+Nicolaus, Claus, Nicholas, Nicolaum, Niklaus, Nikolaus
 Niklas, Niclas, Nyclos
 Otto, Attel
 Pankraz
@@ -109,6 +108,7 @@ Siboto
 Siegfried, Seifried, Seivfridt, Seyfried, Sifrid, Sifridt, Sifrit
 Siegmund, Siegemund, Sigismund, Sigmund
 Stephan, Stefan
+Steyn, Stein
 Thame
 Thomas, Thoma, Thoman
 Ulrich, Ulricus, Vlreich

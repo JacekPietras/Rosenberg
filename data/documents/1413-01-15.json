@@ -2,6 +2,7 @@
   "date": "1413-01-15",
   "place": "Worms",
   "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "HStAD, A 2, 255/1105",
@@ -9,18 +10,112 @@
         "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3640029&executionId=eTnbxwOl5s",
         "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3640029"
       ],
-      "german": "Worms (St. Martin): Dielmann Byzlonis von Fritzlar, ks. Notar, beglaubigt, dass vor den Kapitularen von St. Martin und den Zeugen Bobfing Vikar des Katharinenaltars in der Martinskirche, den üblichen und inserierten Eid geleistet hat. - Zeugen: Dieter Bügel, Albert Wolfskehlen, Frank von Heimbach, Heilmann Osterich, Eberhard von Rosenberg",
-      "english": "Worms (St. Martin): Dielmann Byzlonis of Fritzlar, imperial notary, certifies that before the canons of St. Martin and the witnesses, including Bobfing, vicar of the Catherine altar in the church of St. Martin, the customary and inserted oath was sworn. - Witnesses: Diether Bügel, Albrecht Wolfskehlen, Frank von Heimbach, Heilmann Osterich, Eberhard von Rosenberg",
+      "summary": "Worms (St. Martin): Dielmann Byzlonis von Fritzlar, ks. Notar, beglaubigt, dass vor den Kapitularen von St. Martin und den Zeugen Bobfing Vikar des Katharinenaltars in der Martinskirche, den üblichen und inserierten Eid geleistet hat. - Zeugen: Dieter Bügel, Albert Wolfskehlen, Frank von Heimbach, Heilmann Osterich, Eberhard von Rosenberg",
+      "latin": "In nomine domini amen. Per hoc presens publicum instrumentum cunctis ipsum visuris et audituris pateat evidenter quod anno domini M° CCCC° XIII° [?] Indictione sexta pontificatus sanctissimi in Christo\\npatris ac domini nostri domini Gregorii divina providentia pape duodecimi anno suo sexto die quintadecima mensis Januarii hora primarum vel quasi in civitate Wortiensi in loco capitulari hyemali [?]\\necclesie sancti Martini ibidem coram honorabilibus viris et dominis Dythero Bugel Alberto Wolffskeln Francko de Heimbach Heilmano Osterich Eberhardo de Rosenberg\\ncanonicis capitularibus ecclesie predicte ad infrascripta negotia specialiter capitulariter congregatis in mei publici notarii testiumque infrascriptorum presentia personaliter constitutus discretus\\net honestus vir dominus Johannes Bobphinge perpetuus vicarius altaris sancte Katherine in ecclesia sancti Martini Wortiensis ad mandata eorundem dominorum et in manus domini Dytheri\\nBugel predicti loco honorabilis viri domini Arnoldi de Lienstem [?] decani eiusdem ecclesie tunc temporis propter infirmitatem absentis ad sancta dei evangelia per ipsum dominum Johannem\\npredictum manualiter tacta consuetudinum [?] et statutorum ipsius ecclesie sancti Martini predicte solitum et consuetum prestitit iuramentum cuius iuramenti forma sequitur in hec verba\\nEgo Johannes Bobphinge vicarius predictus iuro primo fidelitatem ecclesie sancti Martini et eius personis iuraque eiusdem ecclesie defendam pro meo posse consuetudines\\nstatuta scripta et non scripta ac privilegia litteram Thome [?] aliasque litteras sigillo capituli sigillatas ubicumque locorum reperte fuerint et contenta in eis observabo\\nbona ad beneficium meum pertinencia in structura tenebo et si qua ex eis alienata fuerit recuperabo officia michi commissa fideliter exercebo si que lites discor [?]\\ndie aut dissensiones ex quacumque causa vel modis sint vel fuerint aut orientur in ecclesia sancti Martini inter quascumque personas ipsius ecclesie tunc illa que capitulum\\nvel maior pars eiusdem capituli decreverit eciam a me ipsis conformabo et si aliqua lite questione seu causa versus ecclesiam predictam aut personas ipsius habuero\\netiam si me ab eadem ecclesia recedere contigerit aliqua de causa ante recessum meum suborta tunc super hiis iusticiam quam decanus et capitulum predicti vel maior pars eorum\\naut ille cui iurisdictio de consuetudine ecclesie eiusdem competit dictaverit et promulgaverit recipiam nec ab ea appellabo nullasque conspirationes [?] seu commissione [?]\\ncontra ecclesiam ut eius personas faciam nec in facto consencia [?] et nullius potestatis temporalis [?] contra ecclesiam et eius personas seu personam auxilium invocabo nec fieri procurabo [?]\\neas ut talibus utar quovismodo [?] […] penas venientes de bonis in hospicia mea [?] commissione aliarum personarum dicte ecclesie domino predicto maior\\necclesie Wortiensis facta tenebo concordia de modo contribuendi subsidia legatorum et alia dandi facta nuper inter eosdem [?] dominos capitulares et vicarios eiusdem\\necclesie observabo predictique iuramenti tenorem et formam instrumento publico meis sumptibus et expensis dictis dominis capitularibus infra quindenam presentabo hoc vero\\nut deus me adiuvet et hec sancta dei evangelia insuper dominus Johannes prefatus manibus suis complicatis in manus eiusdem domini Dytheri Bugel locum domini decani\\npredicte ecclesie tenentis solitam et debitam promisit obedientiam in licitis et honestis super quibuscumque et singulis requisierint domini predicti et capitulum me notarium infra-\\nscriptum ut eis unum vel plura quociens oportunum fuerit conficere instrumenta. Acta sunt hec anno indictione pontificatu mense die hora et loco quibus supra presentibus\\ndiscretis viris dominis Johanne Budel et Johanne Flesser [?] vicariis ecclesie sancti Martini et Jacobo Bartholomei campanatore [?] ecclesie eiusdem testibus ad premissa vocatis\\nspecialiter et rogatis\\nEt ego Dylmannus Byzlonis [?] de Fricslaria [?] clericus Maguntinensis dyocesis publicus imperiali auctoritate notarius […]\\n[…] omnibus aliis et singulis predictis dum sic ut premittitur\\nfierent et agerentur una cum prenominatis testibus presens interfui eaque sic fieri vidi et audivi\\nideo hoc presens publicum instrumentum grande [?] confeci quod per alium fidelem me aliis prepedito\\nnegociis conscribi feci hic me subscripsi signoque et nomine meis solitis et consuetis\\nsignavi in fidem et testimonium omnium premissorum legitime requisitus",
+      "english": "In the name of the Lord, amen. Let it be clear to all who will see and hear this public instrument that in the year of the Lord 1413 [?], in the sixth indiction, in the sixth year of the pontificate of the most holy father in Christ and our lord, Lord Gregory XII by divine providence pope, on the fifteenth day of the month of January, at about the hour of prime, in the city of Worms, in the [winter? ] chapter house of the church of St. Martin there, before the honorable men and lords Diether Bugel, Albrecht Wolffskeln, Frank von Heimbach, Heilmann Osterich, Eberhard von Rosenberg, capitular canons of the said church, specially assembled in chapter for the business written below, there appeared in person in the presence of me, the public notary, and of the undersigned witnesses, the discreet and honest man Lord Hans Bobphinge, perpetual vicar of the altar of St. Catherine in the church of St. Martin of Worms. At the command of the same lords and into the hands of Lord Diether Bugel, deputy of the honorable Lord Arnold von Lienstem [?], then dean of the same church, who was absent because of illness, he swore, touching the holy gospels of God with his own hand, the customary oath according to the customs and statutes of the said church of St. Martin, the form of which oath follows in these words: [oath: he swears first fidelity to the church of St. Martin and its persons, to defend its rights, customs, written and unwritten statutes and privileges, and the letters sealed with the chapter's seal wherever found; to keep the goods of his benefice in good repair and recover any alienated; to perform faithfully the offices entrusted to him; in disputes and dissensions to conform to what the chapter or its greater part decides; to accept the justice decided by the dean and chapter or its greater part, or by the person to whom jurisdiction belongs by the church's custom, and not to appeal; not to act against the church or its persons nor to seek the aid of any temporal power against them; to observe the agreement recently made between the lords capitular canons and the vicars on contributing subsidies and gifts; and to present this oath in a public instrument at his own cost to the lords capitular canons within a fortnight; passages marked [?] in the Latin remain uncertain]. So help him God and these holy gospels of God. Moreover the said Lord Hans, with his hands joined in the hands of the same Lord Diether Bugel, deputy of the dean of the said church, promised the customary and due obedience in lawful and honest matters in all and each thing the said lord and the chapter require, and that I, the undersigned notary, should draw up for them one or more instruments as often as needed. This was done in the year, indiction, pontificate, month, day, hour and place stated above, in the presence of the discreet men Lords Hans Budel and Hans Flesser [?], vicars of the church of St. Martin, and Jakob Bartholomei, bell-ringer [?] of the same church, witnesses specially called and asked for the above.\nAnd I, Dielmann Byzlonis [?] of Fritzlar [?], cleric of the diocese of Mainz, public notary by imperial authority, […] was present together with the aforementioned witnesses when all and each of these things were done and took place, and saw and heard them; therefore, being otherwise prevented by other business, I had this public instrument written out by a trustworthy person, subscribed it here with my own hand, and marked it with my customary sign and name, in faith and testimony of all the above, having been duly requested.",
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "canonicus capitularis"
+          ],
           "type": "generic",
-          "content": "witnessed an oath before the canons of St. Martin in Worms."
+          "content": "was one of the capitular canons of the church of St. Martin in Worms, assembled in chapter before whom Hans Bobphinge swore an oath."
+        },
+        {
+          "person": "Diether Bugel",
+          "personTitle": [
+            "canonicus capitularis"
+          ],
+          "type": "generic",
+          "content": "was a capitular canon of the church of St. Martin in Worms, and acted in place of the absent dean Arnold von Lienstem."
+        },
+        {
+          "person": "Albrecht Wolffskeln",
+          "personTitle": [
+            "canonicus capitularis"
+          ],
+          "type": "generic",
+          "content": "was a capitular canon of the church of St. Martin in Worms."
+        },
+        {
+          "person": "Frank von Heimbach",
+          "personTitle": [
+            "canonicus capitularis"
+          ],
+          "type": "generic",
+          "content": "was a capitular canon of the church of St. Martin in Worms."
+        },
+        {
+          "person": "Heilmann Osterich",
+          "personTitle": [
+            "canonicus capitularis"
+          ],
+          "type": "generic",
+          "content": "was a capitular canon of the church of St. Martin in Worms."
+        },
+        {
+          "person": "Hans Bobphinge",
+          "personTitle": [
+            "perpetuus vicarius altaris sancte Katherine"
+          ],
+          "type": "generic",
+          "content": "swore the customary oath to the chapter of St. Martin in Worms, with his hands in those of Diether Bugel."
+        },
+        {
+          "person": "Arnold von Lienstem",
+          "personTitle": [
+            "decanus"
+          ],
+          "type": "generic",
+          "content": "was dean of the church of St. Martin in Worms and absent because of illness."
+        },
+        {
+          "person": "Hans Budel",
+          "personTitle": [
+            "vicarius"
+          ],
+          "type": "generic",
+          "content": "witnessed the oath of Hans Bobphinge in Worms."
+        },
+        {
+          "person": "Hans Flesser",
+          "personTitle": [
+            "vicarius"
+          ],
+          "type": "generic",
+          "content": "witnessed the oath of Hans Bobphinge in Worms."
+        },
+        {
+          "person": "Jakob Bartholomei",
+          "personTitle": [
+            "campanator"
+          ],
+          "type": "generic",
+          "content": "witnessed the oath of Hans Bobphinge in Worms."
+        },
+        {
+          "person": "Dielmann Byzlonis",
+          "personTitle": [
+            "clericus Maguntinensis dyocesis",
+            "publicus imperiali auctoritate notarius"
+          ],
+          "type": "generic",
+          "content": "drew up the notarial instrument on the oath of Hans Bobphinge in Worms."
         }
       ],
       "img": [
         {
-          "src": "https://digitalisate-he.arcinsys.de/hstad/a_2/255--1105/hstad_a_2_nr_255--1105_0001.jpg"
+          "src": "https://digitalisate-he.arcinsys.de/hstad/a_2/255--1105/hstad_a_2_nr_255--1105_0001.jpg",
+          "regions": [
+            {
+              "x": 0.346,
+              "y": 0.1429,
+              "width": 0.5482,
+              "height": 0.6235,
+              "name": "text"
+            }
+          ]
         },
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_2/255--1105/hstad_a_2_nr_255--1105_0002.jpg",
