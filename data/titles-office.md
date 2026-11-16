@@ -12,7 +12,7 @@ Schultheiß, Schultheiss, scultetus
 Bischof, Bischove, Bischofe, Bischofs, Bischofes, Bischoff, Bischoffe, Bischoffs, Bischoffes, Biſchof, Biſchofs, Biſchoff, Biſchoffs, episcopus, episcopi, episcopo, episcopum, Bishop
 Graf, Grafen
 Pfalzgraf
-Burggraf
+Burggraf, Burgrave, Burgrave, Burgraf
 Baron
 
 // ranks

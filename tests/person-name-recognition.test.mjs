@@ -87,6 +87,15 @@ test('recognizes zum as zu before a place and routes it canonically', () => {
     'Konrad von Rosenberg');
 });
 
+test('recognizes Mönch von Rosenberg zu Hainstadt as one person mention', () => {
+  const scenarioPattern = buildSourcePersonPattern(projectNames, particles, places,
+    `${titles}\n${projectTitles}`, connectors, byNames);
+  const phrase = 'Ludwig Mönch von Rosenberg zu Hainstadt';
+  assert.deepEqual([...phrase.matchAll(scenarioPattern)].map((match) => match[0]), [phrase]);
+  assert.equal(personRouteName(phrase, `${titles}\n${projectTitles}`, connectors, particles,
+    projectNames, byNames, places), 'Ludwig Mönch von Rosenberg');
+});
+
 test('keeps zu Bartenstein as a title after the Rosenberg family name in context', () => {
   const phrase = 'transferred the said Amt Klingenberg to Konrad von Rosenberg zu Bartenstein and his cousin';
   pattern.lastIndex = 0;

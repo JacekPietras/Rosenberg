@@ -17,7 +17,7 @@ Batt
 Bernger, Berngern
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
-Boppe, Bopp
+Boppe, Bopp, Boppo
 Burkhard, Burchard, Burkard
 Busso
 Casimir
@@ -27,6 +27,7 @@ Cornelius, Cornelis
 Diether, Dieter
 Dietrich
 Dietzel
+Steyn, Stein
 Eberhard, Eberh, Eberhardi, Eberhards, Eberhardt, Eberhardts, Eberhardum, Eberhardus, Eberhart, Eberharten, Ebert, Ebhart, Ebhrhard, Ebirbard, Ebirh, Ebirhard, Ebirhardo, Ebirhardus, Ebirhardz, Ebirhart, Ebirharten, Ebyrhard, eebhrt, erberhart, Erhart, Everard, Everhard, Everhart, Ewerhard, rebhart
 Eckhard, Eckehardus, Eckhart, Ege, Ekhart, Ekkard, Ekkehard, Ekkehart
 Eduard
@@ -102,6 +103,7 @@ Rudolf, Rudolff, Rudolph, Ruedi, Ruodolf
 Ruprecht, Rupert, Rupertus
 Rüdiger, Rüdger
 Sebastian
+Seman
 Seibott
 Senant, Synant
 Siboto

@@ -263,6 +263,8 @@
   {
     "variations": [
       "Euerbach",
+      "Eurbach",
+      "Ewerbach",
       "Euerbach Saints Cosmas and Damian Church"
     ],
     "category": "church",
@@ -1458,6 +1460,13 @@
     "showOnMap": false
   },
   {
+    "id": "hartheim",
+    "variations": [
+      "Hartheim"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "leuchtenberg",
     "variations": [
       "Leuchtenberg"
@@ -1470,6 +1479,14 @@
       "Helmstadt",
       "Helmstat",
       "Helmstatt"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "hainstadt",
+    "variations": [
+      "Hainstadt",
+      "Heinstadt"
     ],
     "showOnMap": false
   },
@@ -1628,6 +1645,15 @@
     "showOnMap": false
   },
   {
+    "id": "erbach",
+    "variations": [
+      "Erbach",
+      "Erdbach",
+      "Ertbach"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "michelfeld",
     "variations": [
       "Michelfeld",
@@ -1665,13 +1691,9 @@
     "showOnMap": false
   },
   {
-    "id": "stein",
+    "id": "homburg",
     "variations": [
-      "Stein",
-      "Stain",
-      "Steyn",
-      "lapide",
-      "petra"
+      "Homburg"
     ],
     "showOnMap": false
   },

@@ -1,7 +1,10 @@
 {
   "date": "1365-02-22",
   "place": "aschaffenburg",
-  "label": "to review",
+  "label": [
+    "Franken",
+    "Mönch"
+  ],
   "entries": [
     {
       "source": "RIplus Regg. EB Mainz 2,1 n. 1917",
