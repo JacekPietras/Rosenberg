@@ -14,7 +14,7 @@ Asmus, Asinus
 Balthasar
 Bartholomäus, Barthel, Barthelme, Barthelmä, Bartholomaeus, Bartholomä, Bartholomê
 Batt
-Berngern
+Bernger, Berngern
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
 Boppe, Bopp

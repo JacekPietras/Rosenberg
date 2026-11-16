@@ -102,6 +102,25 @@ test('highlights the complete final name in a list ending with von Rosenberg', a
   }
 });
 
+test('links only the given names before brothers von Rosenberg', async () => {
+  const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
+  const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files
+    .map((file) => readFile(new URL(`../data/${file}`, import.meta.url), 'utf8')));
+  const places = parsePlaces(placesJson);
+  const titles = `${ageTitles}\n${officeTitles}`;
+  const state = { people: [], places, personPattern: [], personNamesText: names, byNamesText: byNames,
+    nobiliaryParticlesText: particles, nameConnectorsText: connectors, personNameTitlesText: titles,
+    sourcePersonPattern: buildSourcePersonPattern(names, particles, places, titles, connectors, byNames),
+    placePattern: buildPlacePattern(places) };
+  const { inlineMarkup } = createMarkupRenderer({ state });
+  const rendered = inlineMarkup('confirms to the nobles Peter, Johann, and Ulrich, brothers von Rosenberg, their mutual inheritance');
+  for (const [givenName, route] of [['Peter', 'Peter von Rosenberg'], ['Johann', 'Hans von Rosenberg'], ['Ulrich', 'Ulrich von Rosenberg']]) {
+    assert.ok(rendered.includes(`href="?person=${encodeURIComponent(route)}">${givenName}</a>`), givenName);
+  }
+  assert.match(rendered, /, brothers von Rosenberg, their mutual inheritance/u);
+  assert.doesNotMatch(rendered, /href="\?person=[^"]*Rosenberg[^"]*">[^<]*von Rosenberg/u);
+});
+
 test('highlights Georg von Rosenberg after an adjacent witness list', async () => {
   const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
   const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files

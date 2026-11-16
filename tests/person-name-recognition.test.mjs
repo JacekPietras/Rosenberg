@@ -364,6 +364,20 @@ test('recognizes every person in a coordinated von Rosenberg list', () => {
   ]);
 });
 
+test('recognizes coordinated brothers after the given names before their shared surname', () => {
+  const source = 'confirms to the nobles Peter, Johann, and Ulrich, brothers von Rosenberg, their mutual inheritance';
+  const matches = coordinatedByNameMatches(source, titles, connectors, particles,
+    projectNames, byNames, places);
+  assert.equal(matches.length, 1);
+  assert.deepEqual(matches[0].routes, [
+    'Peter von Rosenberg',
+    'Hans von Rosenberg',
+    'Ulrich von Rosenberg'
+  ]);
+  assert.deepEqual(coordinatedByNameRouteNames(source, titles, connectors, particles,
+    projectNames, byNames, places), matches[0].routes);
+});
+
 test('keeps compound given names together in a coordinated von Rosenberg list', () => {
   const source = 'enfeoffs Adam Hector, Johann Konrad and Hans Dietrich von Rosenberg with houses';
   const matches = coordinatedByNameMatches(source, projectTitles, connectors, particles,

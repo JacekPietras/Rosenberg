@@ -33,10 +33,12 @@ export function createMarkupRenderer({ state }) {
       const linkedGivenList = group.givenList.replace(givenListPattern, (givenName) => {
         const routeIndex = givenIndex++;
         const route = group.routes[routeIndex];
-        const label = routeIndex === group.routes.length - 1 ? `${givenName} ${group.surnameText}` : givenName;
+        const label = routeIndex === group.routes.length - 1 && !group.brothersAfterList
+          ? `${givenName} ${group.surnameText}` : givenName;
         return `<a class="person-link ${personMentionClass(route, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(route)}">${escapeHtml(label)}</a>`;
       });
-      personReplacements.push({ start: group.start, end: group.end, markup: linkedGivenList });
+      personReplacements.push({ start: group.start, end: group.end,
+        markup: `${linkedGivenList}${text.slice(group.givenListEnd, group.end)}` });
     }
     for (const mention of singles) {
       if (mention.kind === 'registry') {
