@@ -45,6 +45,24 @@ test('coordinated by-name mentions link each brother to the inherited place rout
   assert.match(rendered, /href="\?person=Konrad%20Marschalk%20zu%20Pappenheim"/u);
 });
 
+test('does not repeat a coordinated by-name before its trailing residence title', async () => {
+  const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
+  const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files
+    .map((file) => readFile(new URL(`../data/${file}`, import.meta.url), 'utf8')));
+  const places = parsePlaces(placesJson);
+  const titles = `${ageTitles}\n${officeTitles}`;
+  const state = { people: [], places, personPattern: [], personNamesText: names, byNamesText: byNames,
+    nobiliaryParticlesText: particles, nameConnectorsText: connectors, personNameTitlesText: titles,
+    sourcePersonPattern: buildSourcePersonPattern(names, particles, places, titles, connectors, byNames),
+    placePattern: buildPlacePattern(places) };
+  const { inlineMarkup } = createMarkupRenderer({ state });
+  const source = 'Brothers Hans and Lutz Mönch von Rosenberg zu Hainstadt, sell to';
+  const rendered = inlineMarkup(source);
+  assert.equal(rendered.replace(/<[^>]+>/gu, ''), source);
+  assert.match(rendered, /href="\?person=Hans%20M%C3%B6nch%20von%20Rosenberg"/u);
+  assert.match(rendered, /href="\?person=Lutz%20M%C3%B6nch%20von%20Rosenberg"/u);
+});
+
 test('inline links keep the three compound names from the fief list intact', async () => {
   const files = ['names.md', 'nobiliary_particles.md', 'places.json', 'by-names.md', 'name-connectors.md', 'titles-age.md', 'titles-office.md'];
   const [names, particles, placesJson, byNames, connectors, ageTitles, officeTitles] = await Promise.all(files

@@ -37,8 +37,12 @@ export function createMarkupRenderer({ state }) {
           ? `${givenName} ${group.surnameText}` : givenName;
         return `<a class="person-link ${personMentionClass(route, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(route)}">${escapeHtml(label)}</a>`;
       });
+      let suffix = text.slice(group.givenListEnd, group.end);
+      if (!group.brothersAfterList) {
+        suffix = suffix.replace(group.surnameSurface, '').replace(/^\s+/u, '');
+      }
       personReplacements.push({ start: group.start, end: group.end,
-        markup: `${linkedGivenList}${text.slice(group.givenListEnd, group.end)}` });
+        markup: `${linkedGivenList}${suffix}` });
     }
     for (const mention of singles) {
       if (mention.kind === 'registry') {

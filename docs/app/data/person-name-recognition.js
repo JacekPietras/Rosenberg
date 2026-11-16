@@ -87,6 +87,7 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
       brothersAfterList: /\bbrothers\b/iu.test(match[0].slice(match[0].indexOf(match.groups.givenList) + match.groups.givenList.length)),
       givenNames: match.groups.givenList.split(/\s*,\s*(?:(?:and|und)\s+)?|\s+(?:and|und)\s+/iu).map((givenName) => givenName.trim()),
       surnameText,
+      surnameSurface: match.groups.surname,
       titles: match.groups.sharedTitle ? [match.groups.sharedTitle] : [],
       routes: match.groups.givenList.split(/\s*,\s*(?:(?:and|und)\s+)?|\s+(?:and|und)\s+/iu).map((givenName) => givenName.trim()).map((givenName) =>
         personRouteName(`${givenName} ${surnameText}`.trim(),
