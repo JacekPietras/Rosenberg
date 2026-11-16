@@ -5,15 +5,15 @@
     {
       "source": "E. Curzel and G. M. Varanini (eds.), La documentazione dei vescovi di Trento (XI secolo–1218), Bologna 2011; Document 74; original: Archivio di Stato di Trento, APV, Sezione Latina, capsa 2, no. 72",
       "url": "https://books.fbk.eu/media/pubblicazioni/Fonti_11.pdf#page=237",
+      "latin": "per domnum Hainricum de Rosenpah",
       "english": "Bishop Conrad of Trento and the representatives of Tegernsee Abbey exchange real property and vineyards in the Bolzano area. Heinrich de Rosenpah is specifically designated as the intermediary who puts each party into possession of the property received in the exchange. He also appears among persons associated with Weineck.",
       "facts": [
         {
+          "subject": "Heinrich de Rosenpah",
           "type": "generic",
-          "content": "acted as the intermediary who put each party into possession of the property received in the exchange.",
-          "subject": "Heinrich de Rosenpah"
+          "content": "acted as the intermediary who put each party into possession of the property received in the exchange."
         }
-      ],
-      "latin": "per domnum Hainricum de Rosenpah"
+      ]
     }
   ]
 }

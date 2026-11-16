@@ -5,15 +5,15 @@
     {
       "source": "E. Curzel and G. M. Varanini (eds.), Codex Wangianus. I cartulari della Chiesa trentina, Bologna 2007; Document 48*; also Tiroler Urkundenbuch, series I, vol. 3, no. 1079",
       "url": "https://books.fbk.eu/media/pubblicazioni/F_5_Tomo1-2.pdf#page=1211",
-      "english": "At Bolzano, Bertold of Taranto, acting in an imperial capacity, fixes a hearing date in a legal dispute concerning the parties from Nago and their representatives. Friedrich de Rosenbach appears among the witnesses.",
+      "latin": "Fr(iderici) de Rosenbach",
+      "english": "At Bolzano, Bertold of Taranto, acting in an imperial capacity, fixes a hearing date in a legal dispute concerning the parties from Nago and their representatives. Friedrich von Rosenberg appears among the witnesses.",
       "facts": [
         {
+          "subject": "Friedrich de Rosenbach",
           "type": "generic",
-          "content": "appears among the witnesses to the proceeding.",
-          "subject": "Friedrich de Rosenbach"
+          "content": "appears among the witnesses to the proceeding."
         }
-      ],
-      "latin": "Fr(iderici) de Rosenbach"
+      ]
     }
   ]
 }

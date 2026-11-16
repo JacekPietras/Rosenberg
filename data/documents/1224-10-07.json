@@ -5,15 +5,15 @@
     {
       "source": "E. Curzel and G. M. Varanini (eds.), Codex Wangianus. I cartulari della Chiesa trentina, Bologna 2007; Document 45*; also published in Tiroler Urkundenbuch, series I, vol. 2, no. 840",
       "url": "https://books.fbk.eu/media/pubblicazioni/F_5_Tomo1-2.pdf#page=1207",
+      "latin": "Fe(dericus) de Rosenpacho",
       "english": "In Bolzano, a proceeding under the authority of Count Albert of Tyrol involves a summons before the bishop’s judicial official in a tithe dispute. Federicus de Rosenpacho is listed in the charter.",
       "facts": [
         {
+          "subject": "Friedrich de Rosenpacho",
           "type": "generic",
-          "content": "is listed in the charter concerning the tithe dispute.",
-          "subject": "Friedrich de Rosenpacho"
+          "content": "is listed in the charter concerning the tithe dispute."
         }
-      ],
-      "latin": "Fe(dericus) de Rosenpacho"
+      ]
     }
   ]
 }

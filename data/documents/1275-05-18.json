@@ -19,15 +19,15 @@
     {
       "source": "Ausserer, Der Adel des Nonsberges, p. 28 (historical narrative citing the 18 May 1275 Augsburg arrangement)",
       "url": "https://knihovna.archives.cz/arl-zao/en/csg/?key=17570120139&repo=zaorepo",
-      "english": "The historical account calls Erich and Otto von Rosenbach “the two brothers” (den beiden Brüdern Erich und Otto von Rosenbach).",
+      "german": "den beiden Brüdern Erich und Otto von Rosenbach",
+      "english": "The historical account calls Erich and Otto von Rosenberg “the two brothers” (den beiden Brüdern Erich und Otto von Rosenberg).",
       "facts": [
         {
-          "type": "generic",
           "subject": "Erich von Rosenbach and Otto von Rosenbach",
+          "type": "generic",
           "content": "were described as brothers and were to receive the captaincy or administration of Nonsberg together."
         }
-      ],
-      "german": "den beiden Brüdern Erich und Otto von Rosenbach"
+      ]
     }
   ]
 }

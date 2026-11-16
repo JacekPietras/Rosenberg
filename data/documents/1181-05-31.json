@@ -5,15 +5,15 @@
     {
       "source": "E. Curzel and G. M. Varanini (eds.), La documentazione dei vescovi di Trento (XI secolo–1218), Bologna 2011; Document 28, pp. 154–157 (PDF pages 153–156); original: Archivio di Stato di Trento, Archivio Principesco Vescovile (APV), Sezione Latina, capsa 58, no. 1",
       "url": "https://books.fbk.eu/media/pubblicazioni/Fonti_11.pdf#page=156",
+      "latin": "Enricus de Roxenbacco",
       "english": "At Castel Firmiano, Frederick and Henry, counts of Eppan/Appiano, transfer Greifenstein castle and associated lands and rights to Salomone, bishop of Trento, for 1,400 Veronese pounds; the bishop confirms their older fiefs. Enricus de Roxenbacco appears among the witnesses, together with men associated with Weineck.",
       "facts": [
         {
+          "subject": "Heinrich de Roxenbacco",
           "type": "generic",
-          "content": "appears among the witnesses to the conveyance.",
-          "subject": "Heinrich de Roxenbacco"
+          "content": "appears among the witnesses to the conveyance."
         }
-      ],
-      "latin": "Enricus de Roxenbacco"
+      ]
     }
   ]
 }

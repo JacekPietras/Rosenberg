@@ -5,20 +5,20 @@
     {
       "source": "E. Curzel and G. M. Varanini (eds.), Codex Wangianus. I cartulari della Chiesa trentina, Bologna 2007; Document 46*; also Tiroler Urkundenbuch, series I, vol. 3, no. 1076; original: Archivio di Stato di Trento, APV, Sezione Latina, capsa 11, no. 25",
       "url": "https://books.fbk.eu/media/pubblicazioni/F_5_Tomo1-2.pdf#page=1208",
-      "english": "At the Teutonic hospital in Bolzano, Bishop Aldrighetto of Trento invests Ulrich of Haselberg and Conrad of Greifenstein with judicial authority over Bolzano for one year. The witnesses include Friedrich, Heinrich and Reinhard de Rosenbach, explicitly described as brothers.",
+      "latin": "Fr(iderici) et H(enrici) atque R(einhardi) fratrum de Rosenbach",
+      "english": "At the Teutonic hospital in Bolzano, Bishop Aldrighetto of Trento invests Ulrich of Haselberg and Conrad of Greifenstein with judicial authority over Bolzano for one year. The witnesses include Friedrich, Heinrich and Reinhard von Rosenberg, explicitly described as brothers.",
       "facts": [
         {
-          "type": "generic",
           "subject": "Friedrich de Rosenbach, Heinrich de Rosenbach, and Reinhard de Rosenbach",
+          "type": "generic",
           "content": "were explicitly described as brothers."
         },
         {
-          "type": "generic",
           "subject": "Friedrich de Rosenbach, Heinrich de Rosenbach, and Reinhard de Rosenbach",
+          "type": "generic",
           "content": "were named among the witnesses."
         }
-      ],
-      "latin": "Fr(iderici) et H(enrici) atque R(einhardi) fratrum de Rosenbach"
+      ]
     }
   ]
 }

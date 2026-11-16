@@ -5,15 +5,15 @@
     {
       "source": "Otto Stolz, Die Ausbreitung des Deutschtums in Südtirol im Lichte der Urkunden, vol. 3, part 2, Urkundenbeilagen und Nachträge, 1932; Regest no. 13s; cited original: notarial record at Kloster Fiecht archive",
       "url": "https://api.pageplace.de/preview/DT0400.9783486765656_A33487680/preview-9783486765656_A33487680.pdf",
+      "latin": "D. Enricus de Rosenpacho",
       "english": "In Bolzano, the brothers Adelpert and Engelmar of Placedello sell a plot at Campo Polecho, at the place called of der Ade, to St Georgenberg Abbey. Enricus de Rosenpacho is among the witnesses.",
       "facts": [
         {
+          "subject": "Heinrich de Rosenpacho",
           "type": "generic",
-          "content": "appears among the witnesses to the sale.",
-          "subject": "Heinrich de Rosenpacho"
+          "content": "appears among the witnesses to the sale."
         }
-      ],
-      "latin": "D. Enricus de Rosenpacho"
+      ]
     }
   ]
 }
