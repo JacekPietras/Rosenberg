@@ -1,23 +1,36 @@
 {
   "date": "1426-03-04",
-  "label": "to review",
+  "label": "Franken",
+  "transcribed": true,
   "entries": [
     {
       "source": "AUR 1426 III 04",
       "url": "https://www.monasterium.net/mom/AT-HHStA/SbgE/AUR_1426_III_04/charter",
-      "german": "Thomas von Rosenberg und Sigmund von Thungen sagen im Namen ihres Schwagers Walter von Kranberg (Cranberg) dem Erzstift ab.",
-      "english": "Thomas von Rosenberg and Siegmund von Thüngen declare on behalf of their brother-in-law Walter von Kranberg against the archbishopric.",
+      "summary": "Thomas von Rosenberg und Sigmund von Thungen sagen im Namen ihres Schwagers Walter von Kranberg (Cranberg) dem Erzstift ab.",
+      "german": "Wisset hochwirdigister[?] furste und herre her Eberhart ertzebischoff zu Saltzburg daz ich\\nThomas von Rosenberg und Sigmund von Thunge und uns gebroten[?] knecht die wir\\nyczund haben oder hir nach gewynnen mogen euwer und der euwern uz[?] landes und\\nlute fynt wolle sein umb willen Walthers von Cronberg unsers lieben swegers und\\n[?] uns des yn synen fryd und unfryd und wollen wir und unser knecht unser ere\\nan uch und die euwern[?] bewart han geben under mynes Sigmundes von Thungen ingesigel das\\nunder[?] ich mich Thomas von Rosenberg und wir andern bekennen gebrechen halp dez mynen\\nsij[?] diser zijt nach Cristus unsers herren geburt vierzehenhundert jare und dar nach in\\ndem sechsundzwenzigsten[?] jar uff mentag nach dem sontag Reminiscere[?] in der fasten",
+      "english": "Know, most worthy prince and lord, Lord Eberhard, archbishop of Salzburg, that I, Thomas von Rosenberg, and Siegmund von Thüngen, and our [?] Knechte, whom we now have or may acquire hereafter, are enemies of you and of yours, of your land and people, on account of Walter von Cronberg, our dear brother-in-law, [?] and we and our Knechte have preserved our honor against you and yours. Given under the seal of me, Siegmund von Thüngen, which I, Thomas von Rosenberg, and we others [?] for lack of [?] [?] at this time, after the birth of Christ our Lord fourteen hundred years and thereafter in the twenty-sixth year, on Monday after the Sunday Reminiscere in Lent.",
       "facts": [
         {
           "person": "Thomas von Rosenberg",
           "type": "kin",
-          "of": "Walter von Kranberg",
+          "of": "Walter von Cronberg",
+          "term": "Schwager"
+        },
+        {
+          "person": "Siegmund von Thüngen",
+          "type": "kin",
+          "of": "Walter von Cronberg",
           "term": "Schwager"
         },
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "declared a feud against the archbishopric on behalf of his Schwager Walter von Kranberg together with Sigmund von Thüngen."
+          "content": "declared himself an enemy of Archbishop Eberhard of Salzburg, his land and his people, on behalf of Walter von Cronberg, together with Sigmund von Thüngen."
+        },
+        {
+          "person": "Siegmund von Thüngen",
+          "type": "generic",
+          "content": "declared himself an enemy of Archbishop Eberhard of Salzburg, his land and his people, on behalf of Walter von Cronberg, together with Thomas von Rosenberg."
         }
       ],
       "img": [
