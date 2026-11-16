@@ -22,7 +22,16 @@
       ],
       "img": [
         {
-          "src": "https://images.monasterium.net/pics/AT-OeStA-HHStA/AUR-Salzburg-Erzstift/HHSTA_Salzburg_1426_03_04.jpg"
+          "src": "https://images.monasterium.net/pics/AT-OeStA-HHStA/AUR-Salzburg-Erzstift/HHSTA_Salzburg_1426_03_04.jpg",
+          "regions": [
+            {
+              "x": 0.2642,
+              "y": 0.586,
+              "width": 0.4753,
+              "height": 0.218,
+              "name": "text"
+            }
+          ]
         },
         {
           "src": "https://images.monasterium.net/pics/AT-OeStA-HHStA/AUR-Salzburg-Erzstift/HHSTA_Salzburg_1426_03_04v.jpg"
