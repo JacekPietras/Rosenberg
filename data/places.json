@@ -1564,6 +1564,14 @@
     "showOnMap": false
   },
   {
+    "id": "holzhausen",
+    "variations": [
+      "Holzhausen",
+      "Holczhusen"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "berlichingen",
     "variations": [
       "Berlichingen"
