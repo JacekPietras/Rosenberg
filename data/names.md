@@ -89,7 +89,7 @@ Marx
 Mathern
 Melchior
 Michael, Michel, Micheln
-Nicolaus, Claus, Nicholas, Nicolaum, Niklaus, Nikolaus
+Nicolaus, Claus, Nicholas, Nicolaum, Niklaus, Nikolaus, Clais, Claes
 Niklas, Niclas, Nyclos
 Otto, Attel
 Pankraz
@@ -145,7 +145,6 @@ Anna, Anne
 Barbara
 Brigitta
 Christiana, Christina, Christine
-Clais, Claes, Clas
 Clara, Clare, Klara
 Dorothea
 Ela
