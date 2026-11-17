@@ -1573,6 +1573,16 @@
     "showOnMap": false
   },
   {
+    "id": "schwaigern",
+    "variations": [
+      "Schwaigern"
+    ],
+    "category": "village",
+    "lat": 49.14333,
+    "lon": 9.05778,
+    "description": "LEO-BW describes Schwaigern’s development into a town as a long process continuing into the early modern period; it had no formal town charter. The village classification is used for 1387."
+  },
+  {
     "id": "schweigern",
     "variations": [
       "Schweigern"
