@@ -593,6 +593,13 @@
     "showOnMap": false
   },
   {
+    "id": "jungen",
+    "variations": [
+      "zum Jungen"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "frankenau",
     "variations": [
       "Frankenau",

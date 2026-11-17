@@ -6,26 +6,7 @@
       "source": "HStAD, E 12, 193/1",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3978535",
       "german": "Nachlaß des Hen zum Jungen zu Hillenheim mit Leibgedinge der Witwe Anna von Rosenberg 1478",
-      "english": "Estate of Hen zum Jungen of Hillenheim with the widow Anna von Rosenberg's dower 1478",
-      "facts": [
-        {
-          "person": "Hen",
-          "personTitle": [
-            "zum Jungen"
-          ],
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "Anna von Rosenberg"
-        },
-        {
-          "person": "Hen",
-          "personTitle": [
-            "zum Jungen"
-          ],
-          "type": "death",
-          "diedBefore": "1479"
-        }
-      ]
+      "english": "Estate of Hen zum Jungen of Hillenheim with the widow Anna von Rosenberg's dower 1478"
     }
   ]
 }

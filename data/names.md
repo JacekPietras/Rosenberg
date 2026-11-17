@@ -57,6 +57,7 @@ Hartlieb
 Hartmut
 Haubt, Haupt
 Hector
+Hen, Henne
 Heinrich, Hainrich, Heinrici, Heinrico, Heinricus, Heintz, Heintze, Heinz, Heinzen, Hendrici, Henrich, Henricus, Jindrich
 Herbord
 Herman, Hermann, Hermannus
