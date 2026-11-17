@@ -46,7 +46,36 @@
       ],
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129163%2F07_0000129163_0001_7-129163-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129163%2F07_0000129163_0001_7-129163-1.jpg",
+          "seals": [
+            {
+              "person": "Anna von Rosenberg",
+              "position": "0.0612,0.9451",
+              "size": 0.05499999999999998,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "swans"
+            },
+            {
+              "person": "Hans von Rosenberg",
+              "position": "0.2782,0.9416",
+              "size": 0.05749999999999998,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "helm"
+            },
+            {
+              "person": "Eberhard von Rosenberg",
+              "position": "0.5960,0.9038",
+              "size": 0.061999999999999986,
+              "width": 0,
+              "wideningRotation": 0,
+              "rotation": 0,
+              "type": "helm"
+            }
+          ]
         },
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129163%2F07_0000129163_0002_7-129163-2.jpg",

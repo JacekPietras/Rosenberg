@@ -1919,6 +1919,18 @@
     "showOnMap": false
   },
   {
+    "id": "absberg",
+    "variations": [
+      "Absberg",
+      "Appsperg",
+      "Absperg",
+      "Abbsberg",
+      "Asperg",
+      "Apsperg"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "bischofsheim",
     "variations": [
       "Bischofsheim",
