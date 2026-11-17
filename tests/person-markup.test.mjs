@@ -60,7 +60,7 @@ test('does not repeat a coordinated by-name before its trailing residence title'
   const rendered = inlineMarkup(source);
   assert.equal(rendered.replace(/<[^>]+>/gu, ''), source);
   assert.match(rendered, /href="\?person=Hans%20M%C3%B6nch%20von%20Rosenberg"/u);
-  assert.match(rendered, /href="\?person=Lutz%20M%C3%B6nch%20von%20Rosenberg"/u);
+  assert.ok(rendered.includes(`<a class="person-link person-mention-blue" href="?person=${encodeURIComponent('Lutz Mönch von Rosenberg')}">Lutz Mönch von Rosenberg zu Hainstadt</a>`));
 });
 
 test('inline links keep the three compound names from the fief list intact', async () => {

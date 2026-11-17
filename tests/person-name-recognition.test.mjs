@@ -401,13 +401,16 @@ test('retains a shared office title for coordinated brothers without adding it t
 
 test('recognizes brothers Hans and Lutz Mönch von Rosenberg with their shared Hainstadt title', () => {
   const source = 'Brothers Hans and Lutz Mönch von Rosenberg zu Hainstadt, sell to the abbot';
+  const scenarioPlaces = [...places, { name: 'Hainstadt', variations: ['Hainstadt'] }];
   const matches = coordinatedByNameMatches(source, titles, connectors, particles,
-    projectNames, byNames, places);
+    projectNames, byNames, scenarioPlaces);
   assert.equal(matches.length, 1);
+  assert.equal(matches[0].text, 'Hans and Lutz Mönch von Rosenberg zu Hainstadt');
   assert.deepEqual(matches[0].routes, [
     'Hans Mönch von Rosenberg',
     'Lutz Mönch von Rosenberg'
   ]);
+  assert.deepEqual(matches[0].titles, ['zu Hainstadt']);
 });
 
 test('keeps compound given names together in a coordinated von Rosenberg list', () => {

@@ -1,4 +1,4 @@
-import { findPersonNameMentions, personRouteName } from '../data/person-name-recognition.js?v=23';
+import { findPersonNameMentions, personRouteName } from '../data/person-name-recognition.js?v=24';
 import { factDate } from '../rendering/facts.js?v=9';
 import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=9';

@@ -1,7 +1,7 @@
 import { escapeHtml } from './html.js';
 import { findPlaceByName } from '../data/entities.js?v=90';
 import { resolvePerson } from '../data/relationships.js?v=11';
-import { findPersonNameMentions, personMentionClass } from '../data/person-name-recognition.js?v=23';
+import { findPersonNameMentions, personMentionClass } from '../data/person-name-recognition.js?v=24';
 
 export function createMarkupRenderer({ state }) {
   const frakturUpper = [...'𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ'];
@@ -29,17 +29,19 @@ export function createMarkupRenderer({ state }) {
     const personReplacements = [];
     for (const group of coordinated) {
       let givenIndex = 0;
+      const sharedResidenceTitle = group.titles.find((title) => /^(?:zu|zum)\s+/iu.test(title));
       const givenListPattern = new RegExp(`(?:${group.givenNames.map((name) => name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')).join('|')})`, 'giu');
       const linkedGivenList = group.givenList.replace(givenListPattern, (givenName) => {
         const routeIndex = givenIndex++;
         const route = group.routes[routeIndex];
         const label = routeIndex === group.routes.length - 1 && !group.brothersAfterList
-          ? `${givenName} ${group.surnameText}` : givenName;
+          ? `${givenName} ${group.surnameText}${sharedResidenceTitle ? ` ${sharedResidenceTitle}` : ''}` : givenName;
         return `<a class="person-link ${personMentionClass(route, state.nameConnectorsText, state.nobiliaryParticlesText)}" href="?person=${encodeURIComponent(route)}">${escapeHtml(label)}</a>`;
       });
       let suffix = text.slice(group.givenListEnd, group.end);
       if (!group.brothersAfterList) {
         suffix = suffix.replace(group.surnameSurface, '').replace(/^\s+/u, '');
+        if (sharedResidenceTitle) suffix = suffix.replace(sharedResidenceTitle, '').replace(/^\s+/u, '');
       }
       personReplacements.push({ start: group.start, end: group.end,
         markup: `${linkedGivenList}${suffix}` });

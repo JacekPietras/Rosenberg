@@ -79,8 +79,7 @@ Leonhard, Lenhart, Leonardus, Leonhardus, Leonhart, Lienhart, Linhard, Linhart
 Leopold, Lupold, Luppold
 Lionhart
 Lorenz
-Ludwig, Ludewig
-Lutz, Lutzo
+Ludwig, Ludewig, Lutz, Lutzo, Lutzonis, Ludovicus
 Mangold
 Marquard
 Martin

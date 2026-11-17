@@ -63,7 +63,7 @@ export function coordinatedByNameMatches(text, titleText = '', connectorText = '
   const givenName = `(?:${names})`;
   const givenItem = `${givenName}(?:\\s+${givenName})*`;
   const surname = `(?<byName>${byNames})(?:\\s+(?<byNameParticle>${particles})\\s+(?<byNamePlace>${placeNames}))?|(?<particle>${particles})\\s+(?<place>${placeNames})`;
-  const sharedTitle = titles ? `(?:[,\\s]+(?<sharedTitle>${titles}))?` : '';
+  const sharedTitle = titles ? `(?:[,\\s]+(?<sharedTitle>${titles}|(?:zu|zum)\\s+[\\p{L}][\\p{L}'’.-]*))?` : '';
   const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<givenList>${givenItem}(?:\\s*,\\s*${givenItem})*(?:\\s*,?\\s+(?:and|und)\\s+${givenItem}))(?:,?\\s+brothers)?\\s+(?<surname>${surname})${sharedTitle}(?![\\p{L}\\p{N}])`, 'giu');
   const contextPattern = new RegExp(`(?<byName>${byNames})\\s+(?<particle>${particles})\\s+(?<place>${placeNames})`, 'giu');
   const matches = [];
