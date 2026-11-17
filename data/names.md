@@ -49,7 +49,7 @@ Gero
 Gerung, Gerunch
 Gotfried, Godefrid, Gottfried
 Gozwin, Goczwin, Godezwin
-Götz, Gocze, Goetz, Gotze, Gotzze, Götzze, Goczen, Gotzen
+Götz, Gocze, Goczen, Goetz, Gotze, Gotzen, Gotzze, Götzze
 Hank
 Hans, Hanemann, Hanns, Hanse, Iohannes, Jan, Joannes, Johann, Johannes, Johanns, Johans, Jon
 Hansolf
@@ -144,7 +144,8 @@ Anna, Anne
 Barbara
 Brigitta
 Christiana, Christina, Christine
-Clais, Claes, Clas, Clays, Claus
+Clais, Claes, Clas, Claus, Clays
+Clara, Clare, Klara
 Dorothea
 Ela
 Elchana
@@ -176,7 +177,6 @@ Petrisa, Petrissa
 Regina
 Richtze, Reytza, Richeza, Richza
 Rosina
-Clara, Klara, Clare
 Rufina, Rofina, Ruffina
 Selind, Selant, Selende, Sieglinde, Siglind
 Septia
