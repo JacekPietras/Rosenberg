@@ -12,3 +12,5 @@ brandenburg
 rorschach
 triest
 unrelated
+frankfurt
+mainz

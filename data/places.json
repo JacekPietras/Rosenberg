@@ -517,6 +517,8 @@
     "variations": [
       "Essingen",
       "Ossingen",
+      "Vssingen",
+      "Usingen",
       "Oessingen"
     ],
     "category": "village",
@@ -2002,6 +2004,13 @@
     "id": "zwettl",
     "variations": [
       "Zwettl"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "leyen",
+    "variations": [
+      "Leyen"
     ],
     "showOnMap": false
   },
