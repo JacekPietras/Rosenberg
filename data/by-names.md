@@ -9,6 +9,7 @@ Schaffner
 Rodel
 Pirchan
 Grabner
+Presbyter
 Wirt
 Marschalk, Marschalken, Marschalkin, Marſchalk, Marschalch
 Rüd, Rude, Rüdt
