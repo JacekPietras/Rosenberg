@@ -188,12 +188,22 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
   const canonicalPlaces = new Map(places.flatMap((place) =>
     (place.variations || [place.name]).filter(Boolean).map((form) => [form.toLocaleLowerCase(), place.name || form])));
   const placeForms = [...canonicalPlaces.keys()].sort((left, right) => right.length - left.length);
+  const locativePlaceSuffix = (value) => placeForms.find((form) =>
+    /^(?:zu|zum)\s/u.test(form)
+      && String(value).trim().toLocaleLowerCase().endsWith(` ${form}`));
   const canonicalizePlaces = (value) => placeForms.length
     ? String(value).replace(new RegExp(`(?<![\\p{L}\\p{N}])(?:${alternatives(placeForms)})(?![\\p{L}\\p{N}])`, 'giu'),
       (form) => canonicalPlaces.get(form.toLocaleLowerCase()) || form)
     : String(value);
   const particleForms = String(particleText).split(/\r?\n/).map((line) => line.split('//')[0].trim()).filter(Boolean);
   const normalizeRouteName = (value) => {
+    const namedPlace = locativePlaceSuffix(value);
+    if (namedPlace) {
+      const placeStart = String(value).trim().length - namedPlace.length;
+      const personName = String(value).trim().slice(0, placeStart).trim()
+        .replace(/[\p{L}’'-]+/gu, (form) => canonicalGiven.get(form.toLocaleLowerCase()) || form);
+      return `${personName} ${canonicalPlaces.get(namedPlace) || namedPlace}`;
+    }
     let parts = String(value).trim().split(/\s+/);
     if (!parts.length) return '';
     const byNameIndex = parts.findIndex((part, index) => index > 0 && canonicalByName.has(part.toLocaleLowerCase()));
@@ -242,6 +252,7 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
   }
   const ordinal = '(?:\\s+(?:\\(\\s*[IVXLCDM]+\\s*\\)|\\[\\s*[IVXLCDM]+\\s*\\]|[IVXLCDM]+\\.?))?';
   const titleSequence = titles ? `(?:[\\s,]+(?:${titles}))*` : '';
+  const preserveLocativePlaceName = locativePlaceSuffix(name) !== undefined;
   const byNameForms = [];
   String(byNamesText).split(/\r?\n/).filter((line) => !line.trim().startsWith('#'))
     .forEach((line) => line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean).forEach((form) => byNameForms.push(form)));
@@ -252,7 +263,7 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     .replace(new RegExp(`^(?:${connectors})\\s+`, 'iu'), '')
     .replace(/\s*\(\s*or\s+[^)]*\)/iu, '')
     .replace(new RegExp(`${ordinal}${titleSequence}[\\s,;]+(?=(?:von|v\\.?|van|de|in|der|die|das|des|of)\\b)`, 'iu'), ' ')
-    .replace(new RegExp(`[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?(?:[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?)*$`, 'iu'), '')
+    .replace(preserveLocativePlaceName ? /$^/u : new RegExp(`[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?(?:[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?)*$`, 'iu'), '')
     .replace(new RegExp(`[\\s,;]+(?:${connectors})[\\s,;]+(?:${particles})\\s+[^,;]+$`, 'iu'), '')
     .replace(/\s*\([^)]*\)$/u, '')
     .trim();

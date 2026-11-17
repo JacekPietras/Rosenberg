@@ -96,6 +96,17 @@ test('recognizes Mönch von Rosenberg zu Hainstadt as one person mention', () =>
     projectNames, byNames, places), 'Ludwig Mönch von Rosenberg');
 });
 
+test('keeps a complete locative place name in the person route', () => {
+  const scenarioPlaces = [...places, { name: 'zum Jungen', variations: ['zum Jungen'] }];
+  const phrase = 'Hen zum Jungen';
+  const scenarioTitles = `${titles}\n${projectTitles}`;
+  const scenarioPattern = buildSourcePersonPattern(projectNames, particles, scenarioPlaces,
+    scenarioTitles, connectors, byNames);
+  assert.deepEqual([...phrase.matchAll(scenarioPattern)].map((match) => match[0]), [phrase]);
+  assert.equal(personRouteName(phrase, scenarioTitles, connectors, particles,
+    projectNames, byNames, scenarioPlaces), phrase);
+});
+
 test('keeps zu Bartenstein as a title after the Rosenberg family name in context', () => {
   const phrase = 'transferred the said Amt Klingenberg to Konrad von Rosenberg zu Bartenstein and his cousin';
   pattern.lastIndex = 0;
@@ -408,7 +419,7 @@ test('recognizes brothers Hans and Lutz Mönch von Rosenberg with their shared H
   assert.equal(matches[0].text, 'Hans and Lutz Mönch von Rosenberg zu Hainstadt');
   assert.deepEqual(matches[0].routes, [
     'Hans Mönch von Rosenberg',
-    'Lutz Mönch von Rosenberg'
+    'Ludwig Mönch von Rosenberg'
   ]);
   assert.deepEqual(matches[0].titles, ['zu Hainstadt']);
 });
