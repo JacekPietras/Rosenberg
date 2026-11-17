@@ -58,7 +58,8 @@ Hartmut
 Haubt, Haupt
 Hector
 Heinrich, Hainrich, Heinrici, Heinrico, Heinricus, Heintz, Heintze, Heinz, Heinzen, Hendrici, Henrich, Henricus, Jindrich
-Hen, Henne
+Hen, Henne // Hans or Heinrich
+Hennell, Henel, Henil // Hans or Heinrich
 Herbord
 Herman, Hermann, Hermannus
 Hieronymus, Jeronimus, Jheronimus
@@ -144,7 +145,7 @@ Anna, Anne
 Barbara
 Brigitta
 Christiana, Christina, Christine
-Clais, Claes, Clas, Claus, Clays
+Clais, Claes, Clas
 Clara, Clare, Klara
 Dorothea
 Ela
