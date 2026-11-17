@@ -17,7 +17,7 @@ Batt
 Bernger, Berngern
 Bernhard
 Berthold, Bertold, Bertolt, Betzmann
-Boppe, Bopp, Boppo
+Boppe, Bopp, Boppo, Poppo
 Burkhard, Burchard, Burkard
 Busso
 Casimir
@@ -49,7 +49,7 @@ Gero
 Gerung, Gerunch
 Gotfried, Godefrid, Gottfried
 Gozwin, Goczwin, Godezwin
-Götz, Gocze, Goetz, Gotze, Gotzze, Götzze
+Götz, Gocze, Goetz, Gotze, Gotzze, Götzze, Goczen, Gotzen
 Hank
 Hans, Hanemann, Hanns, Hanse, Iohannes, Jan, Joannes, Johann, Johannes, Johanns, Johans, Jon
 Hansolf
@@ -102,7 +102,7 @@ Reinhard, Reinhart
 Rudolf, Rudolff, Rudolph, Ruedi, Ruodolf
 Ruprecht, Rupert, Rupertus
 Rüdiger, Rüdger
-Sebastian
+Sebastian, Bastian
 Seibott
 Senant, Synant
 Siboto
