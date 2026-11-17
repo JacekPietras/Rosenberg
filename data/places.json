@@ -1571,6 +1571,13 @@
     "showOnMap": false
   },
   {
+    "id": "wallenstein",
+    "variations": [
+      "Wallenstein"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "Heideck",
     "variations": [
       "heideck"
