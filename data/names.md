@@ -22,6 +22,7 @@ Burkhard, Burchard, Burkard
 Busso
 Casimir
 Caspar, Caſpar, Kaspar
+Pauls, Paul, Paulus
 Christoph, Chriftoph, Christof, Christoff, Christpoh
 Cornelius, Cornelis
 Diether, Dieter
@@ -73,7 +74,7 @@ Kilian
 Konrad, Chunrad, Chunradus, Chunrat, Chuonrad, Chuonradus, Chuonrat, Chvnradus, Conrad, Conrade, Conradi, Conrado, Conrads, Conradt, Conradts, Conradus, Conrat, Conratten, Cunrad, Cunradus, Cunrat, Cunreth
 Kraft, Krafto
 Kuno
-Kunz, Concz, Conntzen, Contz, Contze, Conz, Cuncze, Cuntz, Cuntzen, Cunz, Guntz, Kontz, Konz, Kunczen, Kuntz // are shortened versions of Konrad, but not used as it\! [1401 March 5]
+Kunz, Concz, Conntzen, Contz, Contze, Conz, Cuncze, Cuntz, Cuntzen, Cunz, Guntz, Kontz, Konz, Kunczen, Kuntz, Conze // are shortened versions of Konrad, but not used as it\! [1401 March 5]
 Kurt
 Leonhard, Lenhart, Leonardus, Leonhardus, Leonhart, Lienhart, Linhard, Linhart
 Leopold, Lupold, Luppold
@@ -173,7 +174,7 @@ Osanna
 Ottilia, Otilia, Ottilie
 Petrisa, Petrissa
 Regina
-Richtze
+Richtze, Reytza, Richza, Richeza
 Rosina
 Rufina, Rofina, Ruffina
 Selind, Selant, Selende, Sieglinde, Siglind
