@@ -1,5 +1,1670 @@
 [
   {
+    "id": "absberg",
+    "variations": [
+      "Absberg",
+      "Appsperg",
+      "Absperg",
+      "Abbsberg",
+      "Asperg",
+      "Apsperg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "adelsheim",
+    "variations": [
+      "Adelsheim"
+    ],
+    "category": "city",
+    "lat": 49.4045499,
+    "lon": 9.3901509,
+    "description": "Von Rosenberg family members held enfeoffments in Adelsheim, including patronage rights and shares of the tithe."
+  },
+  {
+    "variations": [
+      "Amlishagen"
+    ],
+    "category": "village",
+    "lat": 49.2636,
+    "lon": 9.9625,
+    "id": "amlishagen"
+  },
+  {
+    "variations": [
+      "Arnstein",
+      "Arnstein Maria Sondheim"
+    ],
+    "category": "church",
+    "lat": 49.9734,
+    "lon": 9.9627,
+    "id": "arnstein-maria-sondheim"
+  },
+  {
+    "variations": [
+      "Aub"
+    ],
+    "category": "village",
+    "lat": 49.5525,
+    "lon": 10.0656,
+    "id": "aub",
+    "description": "In 1387 Aub was a market settlement, represented as village in the city/village schema. Town rights were granted on 6 January 1404. Source: https://www.stadt-aub.de/stadtportrait/ ."
+  },
+  {
+    "id": "aub-mariae-himmelfahrt",
+    "variations": [
+      "Mariä Himmelfahrt"
+    ],
+    "category": "church",
+    "lat": 49.552428,
+    "lon": 10.0642337,
+    "description": "Aub was partly held by the von Rosenbergs, but the KMZ gives no specific family connection to this church.",
+    "parent": "aub"
+  },
+  {
+    "id": "baldersheim",
+    "variations": [
+      "Baldersheim",
+      "Baldarsheim",
+      "Baldershaim"
+    ],
+    "category": "village",
+    "lat": 49.55205,
+    "lon": 10.04247,
+    "parent": "aub"
+  },
+  {
+    "id": "ballenberg",
+    "variations": [
+      "Ballenberg",
+      "Ballenburg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "barby",
+    "variations": [
+      "Barby"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "bartenstein",
+    "variations": [
+      "Bartenstein"
+    ],
+    "description": "The von Rosenbergs held Bartenstein as a fief and family seat; their shares there are documented from 1419 into the 1440s. No separate city or village is established here for 1387: LEO-BW describes Bartenstein as the castle and associated buildings before 1688, with settlement development only in the early 18th century and first mention as a town in 1806. Its medieval settlement category is therefore unset and this settlement marker is hidden. Source: https://www.leo-bw.de/detail-gis/-/Detail/details/ORT/labw_ortslexikon/3259/Bartenstein .",
+    "showOnMap": false
+  },
+  {
+    "id": "beckstein",
+    "variations": [
+      "Beckstein"
+    ],
+    "category": "village",
+    "lat": 49.5461588,
+    "lon": 9.7039479,
+    "description": "In 1395 Arnold and Eberhard von Rosenberg exchanged meadows at Beckstein for a meadow at Kupprichhausen."
+  },
+  {
+    "id": "berlichingen",
+    "variations": [
+      "Berlichingen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "biberbach",
+    "variations": [
+      "Biberbach"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "bibra",
+    "variations": [
+      "Bibra"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "bickenbach",
+    "variations": [
+      "Bickenbach"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "bischofsheim",
+    "variations": [
+      "Bischofsheim",
+      "Bischoffesheim",
+      "Tauberbischofsheim",
+      "Tauber-Bischofsheim",
+      "[Tauber] Bischofsheim",
+      "[Tauber-]Bischofsheim",
+      "(Tauber-)Bischofsheim"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "bobstadt",
+    "variations": [
+      "Bobstadt",
+      "Baxstatt",
+      "Bogesstatt",
+      "Bostadt",
+      "Babstatt",
+      "Ballstatt"
+    ],
+    "category": "village",
+    "lat": 49.4665786,
+    "lon": 9.6731218,
+    "description": "In 1378 Michael von Rosenberg sold his half of the tithe in Bobstadt to the Teutonic Order."
+  },
+  {
+    "id": "boedigheim-kreuzkirche",
+    "variations": [
+      "Bödigheim",
+      "Botinkey",
+      "Botinkeym",
+      "Kreuzkirche Bödigheim"
+    ],
+    "category": "church",
+    "lat": 49.478584,
+    "lon": 9.315405
+  },
+  {
+    "id": "boennigheim",
+    "variations": [
+      "Bönnigheim"
+    ],
+    "category": "city",
+    "lat": 49.0408,
+    "lon": 9.0939
+  },
+  {
+    "id": "boffsheim",
+    "variations": [
+      "Boffsheim"
+    ],
+    "category": "village",
+    "lat": 49.4701713,
+    "lon": 9.4135756,
+    "description": "The von Rosenbergs held substantial property and tithe rights in Boffsheim, as well as patronage rights over the village church."
+  },
+  {
+    "variations": [
+      "Boxberg",
+      "Boxsberg",
+      "Boßberg",
+      "Bocksberg",
+      "Bockesberg",
+      "Bosberg",
+      "Bocchesberg",
+      "Bokkeberc",
+      "Bonberg",
+      "Bocsberg",
+      "Poxberg",
+      "Poxburg"
+    ],
+    "category": "castle",
+    "lat": 49.4792833,
+    "lon": 9.6415872,
+    "id": "boxberg"
+  },
+  {
+    "id": "braniewo",
+    "showOnMap": false,
+    "variations": [
+      "Brunsberg",
+      "Braniewo",
+      "Braunsberg"
+    ]
+  },
+  {
+    "id": "bretzingen",
+    "variations": [
+      "Bretzingen"
+    ],
+    "category": "village",
+    "lat": 49.5793284,
+    "lon": 9.4865017,
+    "description": "Members of the von Rosenberg family held property and shares in Bretzingen from at least the late 14th century."
+  },
+  {
+    "id": "bronnbach",
+    "variations": [
+      "Bronnbach",
+      "Bronnbach Abbey",
+      "Bronnbach Monastery",
+      "Kloster Bronnbach",
+      "Brunbach"
+    ],
+    "lat": 49.7125,
+    "lon": 9.5472222,
+    "category": "church",
+    "description": "Bronnbach was an important religious center and burial place for the early von Rosenbergs, and the family conducted property transactions there from 1285 through the 14th century."
+  },
+  {
+    "id": "brunn",
+    "variations": [
+      "Brunn",
+      "brvne",
+      "Brune",
+      "Brun"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "buch",
+    "variations": [
+      "Buch"
+    ],
+    "category": "village",
+    "lat": 49.5387097,
+    "lon": 9.5562516,
+    "description": "The von Rosenbergs held shares and rights in Buch, including a quarter of the village with advocacy and court rights in the 14th century."
+  },
+  {
+    "id": "buchen",
+    "variations": [
+      "Buchen",
+      "Bucheim"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "burg-aub",
+    "variations": [
+      "Burg Aub"
+    ],
+    "category": "castle",
+    "lat": 49.550971,
+    "lon": 10.064593,
+    "description": "The KMZ explicitly says this castle did not belong to the von Rosenbergs, though it was besieged in 1523.",
+    "parent": "aub"
+  },
+  {
+    "id": "burg-brattenstein",
+    "variations": [
+      "Burg Brattenstein"
+    ],
+    "category": "castle",
+    "lat": 49.5087394,
+    "lon": 9.965866,
+    "description": "The KMZ gives no separate history for this castle, but records Anselm von Rosenberg holding Röttingen and its castle as a pledge from 1443 to 1454.",
+    "parent": "roettingen"
+  },
+  {
+    "id": "burg-lauda",
+    "variations": [
+      "Burg Lauda"
+    ],
+    "category": "castle",
+    "lat": 49.5672155,
+    "lon": 9.7023678,
+    "description": "The KMZ connects the family with Lauda through Eberhard von Rosenberg’s capture of the town in the 1330s and a later Rosenberg bailiff, but gives no separate history for this castle.",
+    "parent": "lauda"
+  },
+  {
+    "id": "burg-oberlauda",
+    "variations": [
+      "Burg Oberlauda"
+    ],
+    "category": "castle",
+    "lat": 49.5645,
+    "lon": 9.679,
+    "parent": "lauda"
+  },
+  {
+    "id": "burg-schweinberg",
+    "variations": [
+      "Schweinberg",
+      "Burg Schweinberg"
+    ],
+    "category": "castle",
+    "lat": 49.6208,
+    "lon": 9.5206
+  },
+  {
+    "id": "burg-wildenstein",
+    "variations": [
+      "Wildenstein",
+      "Burg Wildenstein",
+      "Burg Ruine Wildenstein"
+    ],
+    "category": "castle",
+    "lat": 49.8284552,
+    "lon": 9.2927009,
+    "description": "The KMZ says the von Rosenbergs destroyed this castle in 1509."
+  },
+  {
+    "id": "burgruine-rosenberg-rugland",
+    "variations": [
+      "Rügland",
+      "Burgruine Rosenberg Rügland"
+    ],
+    "category": "castle",
+    "lat": 49.4029858,
+    "lon": 10.5946718,
+    "description": "Despite its name, this ruin is associated with the Vestenberg family, not the von Rosenbergs of the present study."
+  },
+  {
+    "id": "bürgstadt",
+    "variations": [
+      "Bürgstadt",
+      "Burgestad"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "comburg-stiftskirche",
+    "variations": [
+      "Comburg",
+      "Comburg Stiftskirche"
+    ],
+    "category": "church",
+    "lat": 49.1003,
+    "lon": 9.74974
+  },
+  {
+    "id": "dertingen",
+    "variations": [
+      "Dertingen"
+    ],
+    "category": "village",
+    "lat": 49.7680278,
+    "lon": 9.6159331,
+    "description": "Around 1357 Dertingen was included in a pledge arrangement involving Eberhart von Rosenberg and [margaretha_von_thungen]."
+  },
+  {
+    "category": "village",
+    "variations": [
+      "Dienheim",
+      "Dinem"
+    ],
+    "lat": 49.8372,
+    "lon": 8.34972,
+    "id": "dienheim"
+  },
+  {
+    "id": "dienstadt",
+    "category": "village",
+    "variations": [
+      "Dienstadt",
+      "Distad",
+      "Diehstat"
+    ],
+    "lat": 49.63556,
+    "lon": 9.61083
+  },
+  {
+    "variations": [
+      "Donzdorf",
+      "St Martin Donzdorf"
+    ],
+    "category": "church",
+    "lat": 48.686,
+    "lon": 9.8108,
+    "id": "donzdorf-st-martin"
+  },
+  {
+    "id": "dottenheim",
+    "category": "village",
+    "variations": [
+      "Dottenheim",
+      "Tottenheim",
+      "Tuttenheim"
+    ],
+    "lat": 49.54885,
+    "lon": 10.51564
+  },
+  {
+    "id": "ebrach",
+    "variations": [
+      "Ebrach"
+    ],
+    "category": "village",
+    "lat": 49.8463,
+    "lon": 10.4936
+  },
+  {
+    "id": "edelfingen",
+    "variations": [
+      "Edelfingen"
+    ],
+    "category": "village",
+    "lat": 49.51446,
+    "lon": 9.75086,
+    "description": "Edelfingen is a village in Bad Mergentheim, southwest of Würzburg. Settlement coordinates: https://mapcarta.com/de/18212608 . Municipal location: https://www.bad-mergentheim.de/de/verwaltung/stadtteile/bad-mergentheimer-stadtteil-edelfingen-id_432/ ."
+  },
+  {
+    "id": "eiersheim",
+    "variations": [
+      "Eiersheim",
+      "Yershen"
+    ],
+    "category": "village",
+    "lat": 49.658375,
+    "lon": 9.586552,
+    "description": "Anna von Rosenberg included her rents and interests in Eiersheim in a sale in 1429."
+  },
+  {
+    "id": "eltmann",
+    "category": "city",
+    "variations": [
+      "Eltmann",
+      "Eltmeyn"
+    ],
+    "lat": 49.972771,
+    "lon": 10.657967
+  },
+  {
+    "id": "erbach",
+    "variations": [
+      "Erbach",
+      "Erdbach",
+      "Ertbach"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "erlenbach",
+    "variations": [
+      "Erlenbach",
+      "Erelbach",
+      "Erlebach"
+    ],
+    "category": "village",
+    "lat": 49.173117,
+    "lon": 9.2646937,
+    "description": "In 1408 Arnold von Rosenberg the Younger exchanged his property in Erlenbach with Schöntal Monastery."
+  },
+  {
+    "category": "village",
+    "variations": [
+      "Erligheim",
+      "Erleheim",
+      "Erlikheim",
+      "Erlickheim"
+    ],
+    "lat": 49.0224,
+    "lon": 9.0988,
+    "id": "erligheim"
+  },
+  {
+    "variations": [
+      "Erthalschloss"
+    ],
+    "category": "castle",
+    "lat": 50.1475,
+    "lon": 9.963,
+    "id": "erthalschloss"
+  },
+  {
+    "id": "esselbach",
+    "category": "village",
+    "variations": [
+      "Esselbach",
+      "Espelbach"
+    ],
+    "lat": 49.855278,
+    "lon": 9.525833
+  },
+  {
+    "id": "essingen",
+    "variations": [
+      "Essingen"
+    ],
+    "category": "village",
+    "lat": 49.2355147,
+    "lon": 8.1689512
+  },
+  {
+    "id": "essingen-st-quirinus",
+    "variations": [
+      "Essingen St Quirinus",
+      "Quirinuskirche Essingen"
+    ],
+    "category": "church",
+    "lat": 48.807647,
+    "lon": 10.028267
+  },
+  {
+    "id": "essingen-st-wendelinuskapelle",
+    "variations": [
+      "St. Wendelinuskapelle Essingen"
+    ],
+    "category": "church",
+    "lat": 49.235380076599,
+    "lon": 8.1630885601044
+  },
+  {
+    "id": "eubigheim",
+    "category": "village",
+    "variations": [
+      "Eubigheim",
+      "Úbikein",
+      "Ubenkein"
+    ],
+    "lat": 49.5017605,
+    "lon": 9.5404604
+  },
+  {
+    "variations": [
+      "Euerbach",
+      "Eurbach",
+      "Ewerbach",
+      "Euerbach Saints Cosmas and Damian Church"
+    ],
+    "category": "church",
+    "lat": 50.063,
+    "lon": 10.131,
+    "id": "euerbach-sts-cosmas-damian"
+  },
+  {
+    "id": "euerhausen",
+    "category": "village",
+    "variations": [
+      "Euerhausen",
+      "Vrhusen"
+    ],
+    "lat": 49.6117,
+    "lon": 9.94889
+  },
+  {
+    "id": "fleckenstein",
+    "variations": [
+      "Fleckenstein",
+      "Fleckstein"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "frankenau",
+    "variations": [
+      "Frankenau",
+      "Frankenowe"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "frankenstein",
+    "variations": [
+      "Frankenstein"
+    ],
+    "showOnMap": false
+  },
+  {
+    "variations": [
+      "Fulda",
+      "Fulda Cathedral"
+    ],
+    "category": "church",
+    "lat": 50.5548,
+    "lon": 9.6773,
+    "id": "fulda-cathedral"
+  },
+  {
+    "id": "gauangelloch",
+    "category": "village",
+    "variations": [
+      "Gauangelloch",
+      "Angelach",
+      "Angelloch"
+    ],
+    "lat": 49.34202,
+    "lon": 8.75587
+  },
+  {
+    "id": "gemmingen",
+    "variations": [
+      "Gemmingen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "variations": [
+      "Giebelstadt",
+      "Gybelstat"
+    ],
+    "category": "village",
+    "lat": 49.653,
+    "lon": 9.946,
+    "id": "giebelstadt",
+    "description": "Giebelstadt was a village in 1387 under the Geyer and Zobel families. It received market rights in 1851. Source: https://giebelstadt.de/Eigene_Dateien/download/gie_kultur_deutsch_schrift.pdf , pp. 6-7."
+  },
+  {
+    "id": "gnoetzheim",
+    "variations": [
+      "Gnötzheim"
+    ],
+    "category": "village",
+    "lat": 49.6169427,
+    "lon": 10.1831528,
+    "description": "In 1387 Gnötzheim was a village with market rights, granted in 1352; market rights do not establish city status. Historical status: https://www.martinsheim.de/kultur-freizeit/geschichte/chronik-gnoetzheim.html . Settlement coordinates: https://www.freecountrymaps.com/map/towns/germany/284249395/ ."
+  },
+  {
+    "id": "gnoetzheim-castle",
+    "variations": [
+      "Schloss Gnötzheim"
+    ],
+    "category": "castle",
+    "lat": 49.6154951,
+    "lon": 10.1814995,
+    "description": "The castle belonged to the von Rosenbergs from 1426 to 1632. The KMZ also notes two Rosenberg tombstones in the church.",
+    "parent": "gnoetzheim"
+  },
+  {
+    "id": "gnoetzheim-st-johannis",
+    "variations": [
+      "Johanniskirche Gnötzheim"
+    ],
+    "category": "church",
+    "lat": 49.616619,
+    "lon": 10.182073,
+    "parent": "gnoetzheim"
+  },
+  {
+    "id": "gochsheim-st-michael",
+    "variations": [
+      "Gochsheim",
+      "St. Michael Gochsheim"
+    ],
+    "category": "church",
+    "lat": 50.019696,
+    "lon": 10.282289
+  },
+  {
+    "id": "gommersdorf",
+    "variations": [
+      "Gommersdorf"
+    ],
+    "category": "village",
+    "lat": 49.3686059,
+    "lon": 9.6123514,
+    "description": "The KMZ notes property associated with the Vogt of Lauda but does not identify the holder as a von Rosenberg."
+  },
+  {
+    "id": "grumbach",
+    "variations": [
+      "Grumbach",
+      "Gruenbach"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "hainstadt",
+    "variations": [
+      "Hainstadt",
+      "Heinstadt"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "handschuhsheim",
+    "category": "village",
+    "variations": [
+      "Handschuhsheim",
+      "Håndschuhsheim",
+      "Handschuchsheim"
+    ],
+    "lat": 49.43069,
+    "lon": 8.68318
+  },
+  {
+    "id": "harrach",
+    "variations": [
+      "Harrach"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "hartheim",
+    "variations": [
+      "Hartheim",
+      "Hardheim"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "Heideck",
+    "variations": [
+      "heideck"
+    ],
+    "showOnMap": false
+  },
+  {
+    "variations": [
+      "Heidelberg",
+      "Heydelberg"
+    ],
+    "category": "city",
+    "lat": 49.3988,
+    "lon": 8.6724,
+    "id": "heidelberg"
+  },
+  {
+    "id": "helmstadt",
+    "variations": [
+      "Helmstadt",
+      "Helmstat",
+      "Helmstatt"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "herrieden",
+    "variations": [
+      "Herrieden",
+      "Harrariot",
+      "Herreden",
+      "Haserieth"
+    ],
+    "showOnMap": false
+  },
+  {
+    "variations": [
+      "Hessenthal",
+      "Wallfahrtskirche Hessenthal"
+    ],
+    "category": "church",
+    "lat": 49.929,
+    "lon": 9.284,
+    "id": "hessenthal-wallfahrtskirche"
+  },
+  {
+    "category": "village",
+    "variations": [
+      "Hirschhorn",
+      "Hirczhorn",
+      "Hyrzhorne"
+    ],
+    "lat": 49.4474,
+    "lon": 8.8967,
+    "id": "hirschhorn"
+  },
+  {
+    "id": "hohenlohe",
+    "variations": [
+      "Hohenlohe"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "holtzhusen",
+    "variations": [
+      "Holzhausen",
+      "Holtzhausen",
+      "Holtzhüsen",
+      "Holzhusin",
+      "Holczhusin",
+      "Holzhusun",
+      "Holczhusen",
+      "Holßhusen",
+      "Holzhusen",
+      "Holtzhusen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "homburg",
+    "variations": [
+      "Homburg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "hornberg",
+    "variations": [
+      "Hornberg",
+      "Hornburg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "hutten",
+    "variations": [
+      "Hutten",
+      "Huttenus",
+      "Hoten",
+      "Hute",
+      "Huttenicus",
+      "Huti",
+      "Hütten",
+      "Huten"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "jagstberg",
+    "variations": [
+      "Jagstberg",
+      "Jagstburgk"
+    ],
+    "category": "castle",
+    "lat": 49.3366134,
+    "lon": 9.7947915,
+    "description": "The von Rosenbergs held Jagstberg as a pledge from Würzburg. Eberhard von Rosenberg resided at the castle and acquired court and market rights in 1409."
+  },
+  {
+    "id": "katzenelnbogen",
+    "variations": [
+      "Katzenelnbogen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "kenzingen-st-laurentius",
+    "variations": [
+      "Kenzingen",
+      "St. Laurentius Kenzingen"
+    ],
+    "category": "church",
+    "lat": 48.19156,
+    "lon": 7.770048
+  },
+  {
+    "id": "kirchheim",
+    "variations": [
+      "Kirchheim"
+    ],
+    "category": "village",
+    "lat": 49.6550659,
+    "lon": 9.8581433,
+    "description": "Before 1450, Eberhard von Rosenberg and his wife Wyclo sold property in Kirchheim; Anna von Rosenberg had a dowry assigned there around 1368."
+  },
+  {
+    "id": "kocherstetten-marienkirche",
+    "variations": [
+      "Kocherstetten",
+      "Marienkirche Kocherstetten",
+      "Rocherstetten"
+    ],
+    "category": "church",
+    "lat": 49.266586,
+    "lon": 9.761628
+  },
+  {
+    "id": "koenigheim",
+    "variations": [
+      "Königheim",
+      "Kenninkeim",
+      "Kennenkein"
+    ],
+    "category": "village",
+    "lat": 49.618009,
+    "lon": 9.595606,
+    "description": "Anna von Rosenberg sold her tithes and interests in Königheim in 1429."
+  },
+  {
+    "id": "kollenberg",
+    "variations": [
+      "Kollenberg",
+      "Kolbenberg",
+      "Kolbenberc",
+      "Collenberg",
+      "Kolleberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "kranberg",
+    "variations": [
+      "Kranberg",
+      "Cranberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "kuernbach-michaelskirche",
+    "variations": [
+      "Kürnbach",
+      "Michaelskirche Kürnbach"
+    ],
+    "category": "church",
+    "lat": 49.078301,
+    "lon": 8.845119
+  },
+  {
+    "id": "kupprichhausen",
+    "variations": [
+      "Kupprichhausen"
+    ],
+    "category": "village",
+    "lat": 49.5267268,
+    "lon": 9.6218325,
+    "description": "In 1395 the brothers Arnold and Eberhard von Rosenberg acquired a meadow at Kupprichhausen through an exchange."
+  },
+  {
+    "id": "landstein",
+    "variations": [
+      "Landstein"
+    ],
+    "showOnMap": false
+  },
+  {
+    "variations": [
+      "Lauda",
+      "ludin",
+      "luden",
+      "Lueden",
+      "Lawdaw",
+      "Lawden"
+    ],
+    "category": "city",
+    "lat": 49.5704139,
+    "lon": 9.7028414,
+    "id": "lauda",
+    "history": "- c. 1100: Lauda’s earliest recorded mention dates from around this time and survives in a sixteenth-century copy. Early records do not distinguish the settlement from Oberlauda.\n- 13th century: Under the Counts of Rieneck, wine growing and wine sales helped Lauda acquire economic importance. Its description as an oppidum in 1289 shows that urban development preceded the formal town charter.\n- 1344: On 22 November, Emperor Ludwig IV granted Lauda the rights and customs of Rothenburg ob der Tauber, high criminal jurisdiction, and permission to build walls and ditches. A second charter remitted his taxes for ten years to finance the walls and assigned newcomers’ payments to municipal building works.\n- 1346–1347: Ludwig IV pledged Lauda to Ludwig of Hohenlohe-Uffenheim in successive transactions, beginning a prolonged period of competing territorial interests.\n- 1349: Lauda’s Jewish community suffered persecution. Jewish residents are documented again later in the century.\n- 1351: A Brandenburg instruction described Lauda’s castle and town as a fief held by Ludwig of Hohenlohe, alongside the competing claims to the town.\n- 1354-10-28: Charles IV deferred hearing the Hanau–Hohenlohe dispute over Lauda.\n- 1354-12-31: A Brandenburg debt agreement earmarked money for construction at Lauda and Jagstberg.\n- 1357: The royal court awarded Lauda’s castle and town to Ulrich of Hanau; Hohenlohe nevertheless retained actual possession.\n- 1359: Hohenlohe pledged Lauda to Brandenburg.\n- 1362: The Palatinate obtained judicial recognition as Lauda’s feudal lord.\n- 1363: Charles IV overturned a competing judgment favoring Hohenlohe and awarded Lauda to Ulrich of Hanau as a Palatine fief.\n- 1364: Charles IV ordered Brandenburg to support Hanau against Hohenlohe over Lauda, showing that the earlier judgments had not ended the conflict.\n- 1365: Gerlachsheim monastery sold vineyards on the Buberberg near Lauda.\n- 1365: Pope Urban V authorized a proposed Augustinian monastery in Lauda.\n- 1367: Countess Palatine Margarete, Duchess of Bavaria, conveyed interests including Lauda and its appurtenances to Duke Friedrich, alongside the other competing claims to the town.\n- 1371: The Marian chapel outside the town is documented; the present Marienkirche is a later replacement.\n- 1374: Count Palatine Ruprecht the Elder acknowledged that he held Lauda’s castle and town in pledge from Gerlach of Hohenlohe and promised to return them on repayment. The agreement included an allowance for building works.\n- 1378: A Jewish resident named Endegut is recorded, evidence of renewed Jewish settlement after the mid-century persecution.\n- 1387–1388: The Bavarian Wittelsbachs transferred rights in Lauda to Bishop Gerhard of Würzburg in a debt settlement. Gerhard subsequently assigned interests in Lauda to the bishopric. These transactions concerned competing rights and did not establish uncontested Würzburg control of the whole town.\n- 1388: King Wenceslas allowed newcomers to Konrad von Rosenberg’s town of Boxberg to live under Lauda’s law, demonstrating the influence of Lauda’s municipal privileges beyond the town itself.\n- 1398: Elisabeth of Sponheim released the claim to Lauda securing her marriage portion in exchange for payments charged elsewhere, removing one encumbrance on the Palatine holding.\n- 1400: On 9 August, Count Palatine Ruprecht III transferred the patronage of Lauda’s parish to Heidelberg University as part of an endowment intended to strengthen the university’s finances.\n- 1401: The name Unterluden or Niederluden is recorded, distinguishing the town from Oberlauda.\n- 1406: Hohenlohe transferred its remaining rights in Lauda to Würzburg, adding another layer to the bishopric’s claims.\n- 1410: The partition of the Palatine territories assigned Lauda to the Palatinate-Mosbach line.\n- 1429: Johannes Fuyger was burned at Lauda on 4 July following proceedings against heresy involving a Heidelberg inquisitor.\n- 1449: Jewish residents Johel, Josslin and Löw are recorded in Lauda.\n- 1450: Lauda passed from Palatinate-Mosbach to the Counts of Rieneck.\n- 1489: Lauda passed to the Counts of Wertheim as marriage property.\n- 1496: The Upper Gate was built as part of an extension of the town’s fortifications.\n- 1506: Würzburg acquired Lauda, which became an administrative center of the prince-bishopric.\n- 1585: Lauda acquired its own Zent, or district of high justice, after Mainz relinquished the jurisdiction previously associated with Königshofen.\n- 1608: St. Jakobus was rebuilt while retaining its older choir.\n- 1613: The Marienkirche was erected on older foundations, replacing the medieval chapel.\n- 1694: A fire severely damaged St. Jakobus, requiring extensive rebuilding.\n- 1709: The rebuilt St. Jakobus was reconsecrated.\n- Mid-19th century: Most of the town fortifications were dismantled.\n- Present: Lauda is part of Lauda-Königshofen. Its historic center preserves the outline of the old fortified town, with wall fragments, the Pulverturm and the Upper Gate, the sole surviving town gate. St. Jakobus retains medieval fabric amid substantial later rebuilding, while the Marienkirche is an early modern replacement. The former Jewish quarter lay around today’s Kapellengasse, but the medieval synagogue’s exact site remains uncertain."
+  },
+  {
+    "id": "leuchtenberg",
+    "variations": [
+      "Leuchtenberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "leutzenbronn",
+    "variations": [
+      "Leutzenbronn"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "lichtenstein",
+    "variations": [
+      "Lichtenstein"
+    ],
+    "showOnMap": false
+  },
+  {
+    "variations": [
+      "Liebenstein",
+      "Schloss Liebenstein"
+    ],
+    "category": "castle",
+    "lat": 49.079,
+    "lon": 9.179,
+    "id": "liebenstein-castle"
+  },
+  {
+    "id": "limpurg",
+    "variations": [
+      "Limpurg",
+      "Lympurg",
+      "Limperg",
+      "Limpburg",
+      "Lymburg",
+      "Lynburg",
+      "Limburg",
+      "Limpurc"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "lissberg",
+    "variations": [
+      "Lißberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "madenburg",
+    "variations": [
+      "Madenburg",
+      "Mademburg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "maienfels-castle",
+    "variations": [
+      "Maienfels",
+      "Schloss Maienfels"
+    ],
+    "category": "castle",
+    "lat": 49.1199676,
+    "lon": 9.5126096,
+    "description": "The KMZ notes a possible von Rosenberg co-possession of Maienfels, but says this connection is uncertain."
+  },
+  {
+    "id": "marktbreit",
+    "variations": [
+      "Marktbreit"
+    ],
+    "category": "village",
+    "lat": 49.6658,
+    "lon": 10.1471
+  },
+  {
+    "id": "massbach-st-bartholomaeus",
+    "variations": [
+      "Maßbach",
+      "St. Bartholomäus Maßbach"
+    ],
+    "category": "church",
+    "lat": 50.18483,
+    "lon": 10.2755
+  },
+  {
+    "id": "meeder-st-laurentius",
+    "variations": [
+      "Meeder",
+      "St. Laurentius Meeder"
+    ],
+    "category": "church",
+    "lat": 50.32194444,
+    "lon": 10.90555556
+  },
+  {
+    "id": "meissen",
+    "variations": [
+      "Meißen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "mengershausen",
+    "variations": [
+      "Mengershausen",
+      "Mengerkusen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "michelfeld",
+    "variations": [
+      "Michelfeld",
+      "Michelfelt"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "michelsberg",
+    "variations": [
+      "Michelsberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "minneburg",
+    "variations": [
+      "Minneburg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "variations": [
+      "Mosbach",
+      "St. Juliana, Mosbach"
+    ],
+    "category": "church",
+    "lat": 49.3523891,
+    "lon": 9.1463321,
+    "id": "mosbach-st-juliana"
+  },
+  {
+    "id": "muenchusen",
+    "variations": [
+      "Münchusen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "muenzesheim-st-martin",
+    "variations": [
+      "Münzesheim",
+      "Martinskirche Münzesheim"
+    ],
+    "category": "church",
+    "lat": 49.124061,
+    "lon": 8.71487
+  },
+  {
+    "id": "nagelsberg-castle",
+    "variations": [
+      "Nagelsberg",
+      "Nagelsperg",
+      "Schloss Nagelsberg"
+    ],
+    "category": "castle",
+    "lat": 49.2928487,
+    "lon": 9.6757153,
+    "description": "Eberhard I von Rosenberg held an interest and a fief in Nagelsberg Castle in the 1330s and 1340s; he permitted its redemption by Mainz in 1349."
+  },
+  {
+    "variations": [
+      "Neckarsteinach"
+    ],
+    "category": "city",
+    "lat": 49.407,
+    "lon": 8.843,
+    "id": "neckarsteinach"
+  },
+  {
+    "category": "village",
+    "variations": [
+      "Neipperg",
+      "Niperg",
+      "Nyperg"
+    ],
+    "lat": 49.1055,
+    "lon": 9.0486,
+    "id": "neipperg"
+  },
+  {
+    "id": "neuburg",
+    "variations": [
+      "Neuburg",
+      "Neuenburg",
+      "Neubrung",
+      "Neuenbürg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "neudeck",
+    "variations": [
+      "Neudeck"
+    ],
+    "category": "castle",
+    "lat": 49.206605,
+    "lon": 9.420342,
+    "description": "Adelheid von Neudeck was married to Konrad von Rosenberg around 1327; their son was known as Hans von Neudeck."
+  },
+  {
+    "id": "neuenstadt-lindenanlage",
+    "variations": [
+      "Lindenanlage Neuenstadt am Kocher"
+    ],
+    "category": "city",
+    "lat": 49.2374389,
+    "lon": 9.3310472
+  },
+  {
+    "id": "neuhaus",
+    "variations": [
+      "Neuhaus"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "niedeck",
+    "variations": [
+      "Niedeck",
+      "Neideck",
+      "Nydecke",
+      "Nydeck"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "niederstetten",
+    "variations": [
+      "Niederstetten",
+      "Haldemarstetten",
+      "Zaltenbergstetten",
+      "Haltermannstetten",
+      "Haltenbergsketten"
+    ],
+    "category": "city",
+    "lat": 49.4,
+    "lon": 9.91944,
+    "description": "Niederstetten was a city by 1387: in 1367 Charles IV renewed the privileges associated with Haltenbergstetten and extended them to the settlement below the castle. The settlement was also known as Haltenbergstetten. Historical status and name: https://www.niederstetten.de/stadtinfo-wirtschaft/geschichte . Settlement coordinates: https://www.geonames.org/2862831/niederstetten.html ."
+  },
+  {
+    "id": "niederstetten-friedhofskapelle",
+    "variations": [
+      "Friedhofskapelle"
+    ],
+    "category": "church",
+    "lat": 49.4032655,
+    "lon": 9.9192052,
+    "description": "The KMZ gives no specific von Rosenberg connection to this chapel; the family acquired the lordship of Niederstetten in 1415.",
+    "parent": "niederstetten"
+  },
+  {
+    "id": "niederstetten-st-jakobus",
+    "variations": [
+      "St. Jakobus der Ältere"
+    ],
+    "category": "church",
+    "lat": 49.4009573,
+    "lon": 9.9195736,
+    "description": "The KMZ notes the church’s Romanesque history but gives no specific von Rosenberg connection; the family acquired the lordship of Niederstetten in 1415.",
+    "parent": "niederstetten"
+  },
+  {
+    "id": "nuremberg",
+    "variations": [
+      "Nuremberg",
+      "Nüremberg",
+      "Nürnberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "oberschuepf",
+    "variations": [
+      "Schüpf",
+      "Oberschüpf",
+      "Schipff",
+      "Schipf"
+    ],
+    "category": "village",
+    "lat": 49.52295,
+    "lon": 9.67761,
+    "description": "Oberschüpf, also called Schüpf, was a village in 1387. The municipal history describes its medieval village lordship, divided between Dottenheim and Rosenberg from 1388. Historical status: https://www.boxberg.de/stadt-boxberg/die-stadtteile . Settlement coordinates: https://mapcarta.com/de/18063860 ."
+  },
+  {
+    "id": "oberschuepf-castle",
+    "variations": [
+      "Schloss Oberschüpf"
+    ],
+    "category": "castle",
+    "lat": 49.5218062,
+    "lon": 9.6772055,
+    "description": "The von Rosenbergs acquired part of the lordship of Schüpf in the late 14th century and later controlled Oberschüpf Castle as a secondary family seat; the castle was destroyed in 1470.",
+    "parent": "oberschuepf"
+  },
+  {
+    "variations": [
+      "Oppenheim"
+    ],
+    "category": "city",
+    "lat": 49.854,
+    "lon": 8.36,
+    "id": "oppenheim"
+  },
+  {
+    "id": "pappenheim",
+    "variations": [
+      "Pappenheim",
+      "Bappenhaim",
+      "Pappenhaim",
+      "Bappenhein",
+      "Bappenheim"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "ramschwag",
+    "variations": [
+      "Ramschwag"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "reichelsburg-aub",
+    "variations": [
+      "Reichelsburg",
+      "Reigelsberg Castle",
+      "Reigelsberg"
+    ],
+    "category": "castle",
+    "lat": 49.546472,
+    "lon": 10.051056,
+    "parent": "aub"
+  },
+  {
+    "id": "riedern",
+    "variations": [
+      "Riedern",
+      "Ryederen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "rieneck",
+    "variations": [
+      "Rieneck",
+      "Rineck",
+      "Rienek"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "rinderfeld",
+    "variations": [
+      "Rinderfeld"
+    ],
+    "category": "village",
+    "lat": 49.419378,
+    "lon": 9.9885698,
+    "description": "Anna von Rosenberg sold tithes and rents in Rinderfeld in 1368 and 1429."
+  },
+  {
+    "id": "rodenstein",
+    "variations": [
+      "Rodenstein"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "roettingen",
+    "variations": [
+      "Röttingen",
+      "Rottingen",
+      "Rotingen"
+    ],
+    "category": "city",
+    "lat": 49.5097555,
+    "lon": 9.9681198,
+    "description": "Anselm von Rosenberg held the castle, town, and office of Röttingen as a pledge from 1443 to 1454."
+  },
+  {
+    "id": "roettingen-st-kilian",
+    "variations": [
+      "St. Kilian"
+    ],
+    "category": "church",
+    "lat": 49.5100606,
+    "lon": 9.9677382,
+    "description": "The KMZ gives no specific von Rosenberg connection to St. Kilian; the church is in Röttingen, where Anselm von Rosenberg held the castle, town, and office as a pledge from 1443 to 1454.",
+    "parent": "roettingen"
+  },
+  {
+    "id": "rorschach",
+    "variations": [
+      "Rorschach"
+    ],
+    "showOnMap": false
+  },
+  {
+    "variations": [
+      "Burg Rosenberg"
+    ],
+    "category": "castle",
+    "lat": 49.4562999,
+    "lon": 9.4731434,
+    "id": "rosenberg",
+    "parent": "rosenberg-town"
+  },
+  {
+    "id": "rosenberg-evangelical-church",
+    "variations": [
+      "Evangelische Kirche"
+    ],
+    "category": "church",
+    "lat": 49.45659,
+    "lon": 9.4732739,
+    "description": "The von Rosenbergs held patronage rights over the church at Rosenberg from around the 1270s.",
+    "parent": "rosenberg-town"
+  },
+  {
+    "id": "rosenberg-town",
+    "variations": [
+      "Rosenberg",
+      "Rosinberg",
+      "Rosemberg",
+      "Rossenberg",
+      "Rosenbeg",
+      "Rosenbürgk",
+      "Rosenbergs",
+      "Rosenberch",
+      "Rosemberch",
+      "Rosenburgk",
+      "Rosenburch",
+      "Rossberg",
+      "Rusenberg",
+      "Rosperg",
+      "Rosenperg",
+      "Rosenbergk",
+      "Rosenberger",
+      "Rosenburg",
+      "Rosenerg",
+      "Rosennberg",
+      "Rosenbach"
+    ],
+    "category": "city",
+    "lat": 49.4571,
+    "lon": 9.4738,
+    "description": "Rosenberg had town status in 1387: Thomas Steinmetz dates the elevation of the castle settlement to a town to before 1378. Its present village status must not be projected back to 1387. Historical status: https://www.ebidat.de/cgi-bin/ebidat.pl?id=5773 . Settlement coordinates: https://mapcarta.com/25456984 ."
+  },
+  {
+    "id": "rothenburg",
+    "variations": [
+      "Rothenburg",
+      "Rotenburc",
+      "Rotenburg",
+      "Rodenburch",
+      "ROTENBVRCH",
+      "Rotenburch"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "ruegheim",
+    "variations": [
+      "Rügheim"
+    ],
+    "category": "village",
+    "lat": 50.1109281,
+    "lon": 10.5116126,
+    "description": "In 1359 Engelhard von Rosenberg received half of the tithe in Rügheim as a fief from the Bishop of Würzburg."
+  },
+  {
+    "id": "sailach",
+    "category": "village",
+    "variations": [
+      "Sailach",
+      "Selhech"
+    ],
+    "lat": 49.1403056,
+    "lon": 9.6423889
+  },
+  {
+    "id": "schaunberg",
+    "variations": [
+      "Schaunberg",
+      "Schawnberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "schloss-bartenstein",
+    "variations": [
+      "Schloss Bartenstein"
+    ],
+    "category": "castle",
+    "lat": 49.3558352,
+    "lon": 9.8778418,
+    "description": "Conrad and Kunz von Rosenberg held the fortress as a fief from Hohenlohe in the 1420s and 1430s; the family held shares until about 1440."
+  },
+  {
+    "variations": [
+      "Haltenbergstetten",
+      "Haldermannstetten",
+      "Haltmarstetten",
+      "Schloss Haltenbergstetten"
+    ],
+    "category": "castle",
+    "lat": 49.401,
+    "lon": 9.92,
+    "id": "schloss-haltenbergstetten",
+    "parent": "niederstetten"
+  },
+  {
+    "id": "schoental-monastery",
+    "variations": [
+      "Schöntal",
+      "Schöntal Abbey",
+      "Schöntal Monastery"
+    ],
+    "category": "church",
+    "lat": 49.3291246,
+    "lon": 9.5054929,
+    "description": "Eberhard von Rosenberg sold two mills to Schöntal Monastery in 1327."
+  },
+  {
+    "id": "schonau",
+    "category": "church",
+    "variations": [
+      "Schönau",
+      "Schönau Abbey",
+      "Schönau Monastery"
+    ],
+    "lat": 49.4359,
+    "lon": 8.8094
+  },
+  {
+    "id": "schuepf-church",
+    "variations": [
+      "Kirche in Schüpf"
+    ],
+    "category": "church",
+    "lat": 49.5222468,
+    "lon": 9.6808585,
+    "description": "The KMZ records Rosenberg lordship rights in Schüpf, including half of the Hohenlohe rights by 1413, but gives no separate family connection to this church.",
+    "parent": "oberschuepf"
+  },
+  {
+    "variations": [
+      "Old Burg"
+    ],
+    "category": "castle",
+    "lat": 49.522781,
+    "lon": 9.6725399,
+    "id": "schuepf-old-castle",
+    "parent": "oberschuepf"
+  },
+  {
+    "id": "schwarzburg",
+    "variations": [
+      "Schwarzburg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "schwarzenberg",
+    "variations": [
+      "Schwarzenberg"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "schweigern",
+    "variations": [
+      "Schweigern"
+    ],
+    "category": "village",
+    "lat": 49.4903925,
+    "lon": 9.6695919,
+    "description": "The von Rosenbergs owned the village and held tithe rights. In 1397 King Wenceslas granted Arnold and Eberhard von Rosenberg high-court jurisdiction there."
+  },
+  {
+    "id": "seckendorff",
+    "variations": [
+      "Seckendorf",
+      "Seckendorff"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "seinsheim",
+    "variations": [
+      "Seinsheim",
+      "Sainsheim",
+      "Sawensheim",
+      "Sovensheim",
+      "Saunsheim"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "seldeneck",
+    "variations": [
+      "Seldeneck",
+      "Seldenecke"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "sickingen",
+    "variations": [
+      "Sickingen",
+      "Sickinger"
+    ],
+    "showOnMap": false
+  },
+  {
+    "variations": [
+      "Sindolsheim",
+      "Kirche, Sindolsheim",
+      "Sindolsheim Evangelical Church",
+      "Sindelsheim",
+      "Sündelsheim"
+    ],
+    "category": "church",
+    "lat": 49.4871226,
+    "lon": 9.4519322,
+    "id": "sindolsheim-church"
+  },
+  {
+    "variations": [
+      "Speyer"
+    ],
+    "category": "city",
+    "lat": 49.317,
+    "lon": 8.431,
+    "id": "speyer"
+  },
+  {
+    "variations": [
+      "Stöckenburg",
+      "Martinskirche Stöckenburg"
+    ],
+    "category": "church",
+    "lat": 49.0895,
+    "lon": 9.8815,
+    "id": "stoeckenburg-martinskirche"
+  },
+  {
+    "id": "sugenheim-st-erhard",
+    "variations": [
+      "Sugenheim",
+      "St. Erhard, Sugenheim"
+    ],
+    "category": "church",
+    "lat": 49.602076,
+    "lon": 10.434766
+  },
+  {
+    "id": "talheim",
+    "variations": [
+      "Talheim",
+      "Thalheim",
+      "Taleheim",
+      "Talhaim"
+    ],
+    "showOnMap": false
+  },
+  {
+    "category": "village",
+    "variations": [
+      "Thüngen",
+      "Thungen",
+      "Tüngen",
+      "Tungen"
+    ],
+    "lat": 49.94293,
+    "lon": 9.8568,
+    "id": "thuengen"
+  },
+  {
+    "id": "uiffingen",
+    "variations": [
+      "Uiffingen"
+    ],
+    "category": "village",
+    "lat": 49.5021269,
+    "lon": 9.5935435,
+    "description": "Eberhart von Rosenberg sold the village in 1357; Engelhard von Rosenberg later sold serfs from Uiffingen in 1411."
+  },
+  {
     "variations": [
       "Uissigheim",
       "Ussigheim",
@@ -39,363 +1704,25 @@
     "id": "uissigheim"
   },
   {
+    "id": "uissigheim-st-laurentius",
     "variations": [
-      "Lauda",
-      "ludin",
-      "luden",
-      "Lueden",
-      "Lawdaw",
-      "Lawden"
-    ],
-    "category": "city",
-    "lat": 49.5704139,
-    "lon": 9.7028414,
-    "id": "lauda",
-    "history": "- c. 1100: Lauda’s earliest recorded mention dates from around this time and survives in a sixteenth-century copy. Early records do not distinguish the settlement from Oberlauda.\n- 13th century: Under the Counts of Rieneck, wine growing and wine sales helped Lauda acquire economic importance. Its description as an oppidum in 1289 shows that urban development preceded the formal town charter.\n- 1344: On 22 November, Emperor Ludwig IV granted Lauda the rights and customs of Rothenburg ob der Tauber, high criminal jurisdiction, and permission to build walls and ditches. A second charter remitted his taxes for ten years to finance the walls and assigned newcomers’ payments to municipal building works.\n- 1346–1347: Ludwig IV pledged Lauda to Ludwig of Hohenlohe-Uffenheim in successive transactions, beginning a prolonged period of competing territorial interests.\n- 1349: Lauda’s Jewish community suffered persecution. Jewish residents are documented again later in the century.\n- 1351: A Brandenburg instruction described Lauda’s castle and town as a fief held by Ludwig of Hohenlohe, alongside the competing claims to the town.\n- 1354-10-28: Charles IV deferred hearing the Hanau–Hohenlohe dispute over Lauda.\n- 1354-12-31: A Brandenburg debt agreement earmarked money for construction at Lauda and Jagstberg.\n- 1357: The royal court awarded Lauda’s castle and town to Ulrich of Hanau; Hohenlohe nevertheless retained actual possession.\n- 1359: Hohenlohe pledged Lauda to Brandenburg.\n- 1362: The Palatinate obtained judicial recognition as Lauda’s feudal lord.\n- 1363: Charles IV overturned a competing judgment favoring Hohenlohe and awarded Lauda to Ulrich of Hanau as a Palatine fief.\n- 1364: Charles IV ordered Brandenburg to support Hanau against Hohenlohe over Lauda, showing that the earlier judgments had not ended the conflict.\n- 1365: Gerlachsheim monastery sold vineyards on the Buberberg near Lauda.\n- 1365: Pope Urban V authorized a proposed Augustinian monastery in Lauda.\n- 1367: Countess Palatine Margarete, Duchess of Bavaria, conveyed interests including Lauda and its appurtenances to Duke Friedrich, alongside the other competing claims to the town.\n- 1371: The Marian chapel outside the town is documented; the present Marienkirche is a later replacement.\n- 1374: Count Palatine Ruprecht the Elder acknowledged that he held Lauda’s castle and town in pledge from Gerlach of Hohenlohe and promised to return them on repayment. The agreement included an allowance for building works.\n- 1378: A Jewish resident named Endegut is recorded, evidence of renewed Jewish settlement after the mid-century persecution.\n- 1387–1388: The Bavarian Wittelsbachs transferred rights in Lauda to Bishop Gerhard of Würzburg in a debt settlement. Gerhard subsequently assigned interests in Lauda to the bishopric. These transactions concerned competing rights and did not establish uncontested Würzburg control of the whole town.\n- 1388: King Wenceslas allowed newcomers to Konrad von Rosenberg’s town of Boxberg to live under Lauda’s law, demonstrating the influence of Lauda’s municipal privileges beyond the town itself.\n- 1398: Elisabeth of Sponheim released the claim to Lauda securing her marriage portion in exchange for payments charged elsewhere, removing one encumbrance on the Palatine holding.\n- 1400: On 9 August, Count Palatine Ruprecht III transferred the patronage of Lauda’s parish to Heidelberg University as part of an endowment intended to strengthen the university’s finances.\n- 1401: The name Unterluden or Niederluden is recorded, distinguishing the town from Oberlauda.\n- 1406: Hohenlohe transferred its remaining rights in Lauda to Würzburg, adding another layer to the bishopric’s claims.\n- 1410: The partition of the Palatine territories assigned Lauda to the Palatinate-Mosbach line.\n- 1429: Johannes Fuyger was burned at Lauda on 4 July following proceedings against heresy involving a Heidelberg inquisitor.\n- 1449: Jewish residents Johel, Josslin and Löw are recorded in Lauda.\n- 1450: Lauda passed from Palatinate-Mosbach to the Counts of Rieneck.\n- 1489: Lauda passed to the Counts of Wertheim as marriage property.\n- 1496: The Upper Gate was built as part of an extension of the town’s fortifications.\n- 1506: Würzburg acquired Lauda, which became an administrative center of the prince-bishopric.\n- 1585: Lauda acquired its own Zent, or district of high justice, after Mainz relinquished the jurisdiction previously associated with Königshofen.\n- 1608: St. Jakobus was rebuilt while retaining its older choir.\n- 1613: The Marienkirche was erected on older foundations, replacing the medieval chapel.\n- 1694: A fire severely damaged St. Jakobus, requiring extensive rebuilding.\n- 1709: The rebuilt St. Jakobus was reconsecrated.\n- Mid-19th century: Most of the town fortifications were dismantled.\n- Present: Lauda is part of Lauda-Königshofen. Its historic center preserves the outline of the old fortified town, with wall fragments, the Pulverturm and the Upper Gate, the sole surviving town gate. St. Jakobus retains medieval fabric amid substantial later rebuilding, while the Marienkirche is an early modern replacement. The former Jewish quarter lay around today’s Kapellengasse, but the medieval synagogue’s exact site remains uncertain."
-  },
-  {
-    "variations": [
-      "Wölchingen",
-      "Wolchingen",
-      "Wolching",
-      "Frankendom, Wölchingen",
-      "Wolechingen",
-      "Wollechingen",
-      "Wollichingen",
-      "Wulchingen",
-      "Welchingen"
+      "St. Laurentius"
     ],
     "category": "church",
-    "lat": 49.4848212,
-    "lon": 9.6315974,
-    "id": "wolchingen",
-    "description": "The Knights of St. John held the church and property at Wölchingen before it came to the von Rosenbergs in 1381."
+    "lat": 49.6795332,
+    "lon": 9.5732476,
+    "description": "The KMZ links the site to the von Uissigheim lineage from which the von Rosenbergs branched, and notes a tomb associated with Arnold III von Uissigheim.",
+    "parent": "uissigheim"
   },
   {
-    "variations": [
-      "Boxberg",
-      "Boxsberg",
-      "Boßberg",
-      "Bocksberg",
-      "Bockesberg",
-      "Bosberg",
-      "Bocchesberg",
-      "Bokkeberc",
-      "Bonberg",
-      "Bocsberg",
-      "Poxberg",
-      "Poxburg"
-    ],
-    "category": "castle",
-    "lat": 49.4792833,
-    "lon": 9.6415872,
-    "id": "boxberg"
-  },
-  {
-    "id": "rosenberg-town",
-    "variations": [
-      "Rosenberg",
-      "Rosinberg",
-      "Rosemberg",
-      "Rossenberg",
-      "Rosenbeg",
-      "Rosenbürgk",
-      "Rosenbergs",
-      "Rosenberch",
-      "Rosemberch",
-      "Rosenburgk",
-      "Rosenburch",
-      "Rossberg",
-      "Rusenberg",
-      "Rosperg",
-      "Rosenperg",
-      "Rosenbergk",
-      "Rosenberger",
-      "Rosenburg",
-      "Rosenerg",
-      "Rosennberg",
-      "Rosenbach"
-    ],
-    "category": "city",
-    "lat": 49.4571,
-    "lon": 9.4738,
-    "description": "Rosenberg had town status in 1387: Thomas Steinmetz dates the elevation of the castle settlement to a town to before 1378. Its present village status must not be projected back to 1387. Historical status: https://www.ebidat.de/cgi-bin/ebidat.pl?id=5773 . Settlement coordinates: https://mapcarta.com/25456984 ."
-  },
-  {
-    "variations": [
-      "Burg Rosenberg"
-    ],
-    "category": "castle",
-    "lat": 49.4562999,
-    "lon": 9.4731434,
-    "id": "rosenberg",
-    "parent": "rosenberg-town"
-  },
-  {
-    "id": "oberschuepf",
-    "variations": [
-      "Schüpf",
-      "Oberschüpf",
-      "Schipff",
-      "Schipf"
-    ],
+    "id": "unterbalbach",
     "category": "village",
-    "lat": 49.52295,
-    "lon": 9.67761,
-    "description": "Oberschüpf, also called Schüpf, was a village in 1387. The municipal history describes its medieval village lordship, divided between Dottenheim and Rosenberg from 1388. Historical status: https://www.boxberg.de/stadt-boxberg/die-stadtteile . Settlement coordinates: https://mapcarta.com/de/18063860 ."
-  },
-  {
     "variations": [
-      "Old Burg"
+      "Unterbalbach",
+      "Nydern Balbach"
     ],
-    "category": "castle",
-    "lat": 49.522781,
-    "lon": 9.6725399,
-    "id": "schuepf-old-castle",
-    "parent": "oberschuepf"
-  },
-  {
-    "id": "wurzburg",
-    "variations": [
-      "Würzburg",
-      "Wirtzeburg",
-      "Wurzburg"
-    ],
-    "category": "city",
-    "lat": 49.79441,
-    "lon": 9.92937
-  },
-  {
-    "id": "edelfingen",
-    "variations": [
-      "Edelfingen"
-    ],
-    "category": "village",
-    "lat": 49.51446,
-    "lon": 9.75086,
-    "description": "Edelfingen is a village in Bad Mergentheim, southwest of Würzburg. Settlement coordinates: https://mapcarta.com/de/18212608 . Municipal location: https://www.bad-mergentheim.de/de/verwaltung/stadtteile/bad-mergentheimer-stadtteil-edelfingen-id_432/ ."
-  },
-  {
-    "id": "bronnbach",
-    "variations": [
-      "Bronnbach",
-      "Bronnbach Abbey",
-      "Bronnbach Monastery",
-      "Kloster Bronnbach",
-      "Brunbach"
-    ],
-    "lat": 49.7125,
-    "lon": 9.5472222,
-    "category": "church",
-    "description": "Bronnbach was an important religious center and burial place for the early von Rosenbergs, and the family conducted property transactions there from 1285 through the 14th century."
-  },
-  {
-    "variations": [
-      "Amlishagen"
-    ],
-    "category": "village",
-    "lat": 49.2636,
-    "lon": 9.9625,
-    "id": "amlishagen"
-  },
-  {
-    "variations": [
-      "Arnstein",
-      "Arnstein Maria Sondheim"
-    ],
-    "category": "church",
-    "lat": 49.9734,
-    "lon": 9.9627,
-    "id": "arnstein-maria-sondheim"
-  },
-  {
-    "variations": [
-      "Aub"
-    ],
-    "category": "village",
-    "lat": 49.5525,
-    "lon": 10.0656,
-    "id": "aub",
-    "description": "In 1387 Aub was a market settlement, represented as village in the city/village schema. Town rights were granted on 6 January 1404. Source: https://www.stadt-aub.de/stadtportrait/ ."
-  },
-  {
-    "id": "reichelsburg-aub",
-    "variations": [
-      "Reichelsburg",
-      "Reigelsberg Castle",
-      "Reigelsberg"
-    ],
-    "category": "castle",
-    "lat": 49.546472,
-    "lon": 10.051056,
-    "parent": "aub"
-  },
-  {
-    "id": "baldersheim",
-    "variations": [
-      "Baldersheim",
-      "Baldarsheim",
-      "Baldershaim"
-    ],
-    "category": "village",
-    "lat": 49.55205,
-    "lon": 10.04247,
-    "parent": "aub"
-  },
-  {
-    "variations": [
-      "Donzdorf",
-      "St Martin Donzdorf"
-    ],
-    "category": "church",
-    "lat": 48.686,
-    "lon": 9.8108,
-    "id": "donzdorf-st-martin"
-  },
-  {
-    "variations": [
-      "Erthalschloss"
-    ],
-    "category": "castle",
-    "lat": 50.1475,
-    "lon": 9.963,
-    "id": "erthalschloss"
-  },
-  {
-    "variations": [
-      "Euerbach",
-      "Eurbach",
-      "Ewerbach",
-      "Euerbach Saints Cosmas and Damian Church"
-    ],
-    "category": "church",
-    "lat": 50.063,
-    "lon": 10.131,
-    "id": "euerbach-sts-cosmas-damian"
-  },
-  {
-    "variations": [
-      "Fulda",
-      "Fulda Cathedral"
-    ],
-    "category": "church",
-    "lat": 50.5548,
-    "lon": 9.6773,
-    "id": "fulda-cathedral"
-  },
-  {
-    "variations": [
-      "Giebelstadt",
-      "Gybelstat"
-    ],
-    "category": "village",
-    "lat": 49.653,
-    "lon": 9.946,
-    "id": "giebelstadt",
-    "description": "Giebelstadt was a village in 1387 under the Geyer and Zobel families. It received market rights in 1851. Source: https://giebelstadt.de/Eigene_Dateien/download/gie_kultur_deutsch_schrift.pdf , pp. 6-7."
-  },
-  {
-    "variations": [
-      "Heidelberg",
-      "Heydelberg"
-    ],
-    "category": "city",
-    "lat": 49.3988,
-    "lon": 8.6724,
-    "id": "heidelberg"
-  },
-  {
-    "variations": [
-      "Hessenthal",
-      "Wallfahrtskirche Hessenthal"
-    ],
-    "category": "church",
-    "lat": 49.929,
-    "lon": 9.284,
-    "id": "hessenthal-wallfahrtskirche"
-  },
-  {
-    "variations": [
-      "Mosbach",
-      "St. Juliana, Mosbach"
-    ],
-    "category": "church",
-    "lat": 49.3523891,
-    "lon": 9.1463321,
-    "id": "mosbach-st-juliana"
-  },
-  {
-    "variations": [
-      "Neckarsteinach"
-    ],
-    "category": "city",
-    "lat": 49.407,
-    "lon": 8.843,
-    "id": "neckarsteinach"
-  },
-  {
-    "variations": [
-      "Liebenstein",
-      "Schloss Liebenstein"
-    ],
-    "category": "castle",
-    "lat": 49.079,
-    "lon": 9.179,
-    "id": "liebenstein-castle"
-  },
-  {
-    "variations": [
-      "Haltenbergstetten",
-      "Haldermannstetten",
-      "Haltmarstetten",
-      "Schloss Haltenbergstetten"
-    ],
-    "category": "castle",
-    "lat": 49.401,
-    "lon": 9.92,
-    "id": "schloss-haltenbergstetten",
-    "parent": "niederstetten"
-  },
-  {
-    "variations": [
-      "Oppenheim"
-    ],
-    "category": "city",
-    "lat": 49.854,
-    "lon": 8.36,
-    "id": "oppenheim"
-  },
-  {
-    "variations": [
-      "Sindolsheim",
-      "Kirche, Sindolsheim",
-      "Sindolsheim Evangelical Church",
-      "Sindelsheim",
-      "Sündelsheim"
-    ],
-    "category": "church",
-    "lat": 49.4871226,
-    "lon": 9.4519322,
-    "id": "sindolsheim-church"
-  },
-  {
-    "variations": [
-      "Speyer"
-    ],
-    "category": "city",
-    "lat": 49.317,
-    "lon": 8.431,
-    "id": "speyer"
-  },
-  {
-    "variations": [
-      "Stöckenburg",
-      "Martinskirche Stöckenburg"
-    ],
-    "category": "church",
-    "lat": 49.0895,
-    "lon": 9.8815,
-    "id": "stoeckenburg-martinskirche"
+    "lat": 49.5275,
+    "lon": 9.7472
   },
   {
     "id": "unterschuepf",
@@ -428,14 +1755,33 @@
     "parent": "unterschuepf"
   },
   {
+    "id": "urhausen-castle",
     "variations": [
-      "Wildenberg",
-      "Schloss Wildenberg"
+      "Urhausen",
+      "Schloss Urhausen"
     ],
     "category": "castle",
-    "lat": 49.582,
-    "lon": 9.044,
-    "id": "wildenberg-castle"
+    "lat": 49.358853,
+    "lon": 9.5407804,
+    "description": "Hans and Götz von Rosenberg sold this inherited fortress in 1385; Eberhard von Rosenberg, Vogt of Lauda, guaranteed the sale."
+  },
+  {
+    "id": "waldbuettelbrunn",
+    "variations": [
+      "Waldbüttelbrunn"
+    ],
+    "category": "village",
+    "lat": 49.7871497,
+    "lon": 9.8385754,
+    "description": "Around 1357 the village was transferred to Eberhart von Rosenberg and [margaretha_von_thungen] as part of a pledge arrangement."
+  },
+  {
+    "id": "waldeck",
+    "variations": [
+      "Waldeck",
+      "Waldecke"
+    ],
+    "showOnMap": false
   },
   {
     "id": "waldmannshofen",
@@ -451,16 +1797,6 @@
     "description": "Waldmannshofen was a village by 1387: the local charter chronology describes houses and property in the village in records dated 1347, 1370, 1374, and 1379"
   },
   {
-    "variations": [
-      "Johanniskirche Waldmannshofen"
-    ],
-    "category": "church",
-    "lat": 49.5322268,
-    "lon": 10.0674143,
-    "id": "waldmannshofen-evangelical-church",
-    "parent": "waldmannshofen"
-  },
-  {
     "id": "waldmannshofen-castle",
     "variations": [
       "Schloss Waldmannshofen"
@@ -471,215 +1807,14 @@
     "parent": "waldmannshofen"
   },
   {
-    "id": "wehrkirche-angeltuern",
     "variations": [
-      "Angeltürn",
-      "Wehrkirche, Angeltürn",
-      "Angerthal",
-      "Angelthor",
-      "Angeldarm",
-      "Angelthorn"
+      "Johanniskirche Waldmannshofen"
     ],
     "category": "church",
-    "lat": 49.4877,
-    "lon": 9.5978
-  },
-  {
-    "id": "burg-oberlauda",
-    "variations": [
-      "Burg Oberlauda"
-    ],
-    "category": "castle",
-    "lat": 49.5645,
-    "lon": 9.679,
-    "parent": "lauda"
-  },
-  {
-    "id": "burg-schweinberg",
-    "variations": [
-      "Schweinberg",
-      "Burg Schweinberg"
-    ],
-    "category": "castle",
-    "lat": 49.6208,
-    "lon": 9.5206
-  },
-  {
-    "id": "wirsberg",
-    "variations": [
-      "Wirsberg",
-      "Wiersperg"
-    ],
-    "category": "village",
-    "lat": 50.108061,
-    "lon": 11.607823,
-    "description": "In 1387 Wirsberg was a market settlement, represented as village in the city/village schema. The municipal history documents it as a Markt by the end of the 13th century. Source: https://www.wirsberg.de/buergerservice-rathaus/chronik/ortsgeschichte ."
-  },
-  {
-    "id": "gnoetzheim",
-    "variations": [
-      "Gnötzheim"
-    ],
-    "category": "village",
-    "lat": 49.6169427,
-    "lon": 10.1831528,
-    "description": "In 1387 Gnötzheim was a village with market rights, granted in 1352; market rights do not establish city status. Historical status: https://www.martinsheim.de/kultur-freizeit/geschichte/chronik-gnoetzheim.html . Settlement coordinates: https://www.freecountrymaps.com/map/towns/germany/284249395/ ."
-  },
-  {
-    "id": "gnoetzheim-st-johannis",
-    "variations": [
-      "Johanniskirche Gnötzheim"
-    ],
-    "category": "church",
-    "lat": 49.616619,
-    "lon": 10.182073,
-    "parent": "gnoetzheim"
-  },
-  {
-    "id": "muenzesheim-st-martin",
-    "variations": [
-      "Münzesheim",
-      "Martinskirche Münzesheim"
-    ],
-    "category": "church",
-    "lat": 49.124061,
-    "lon": 8.71487
-  },
-  {
-    "id": "adelsheim",
-    "variations": [
-      "Adelsheim"
-    ],
-    "category": "city",
-    "lat": 49.4045499,
-    "lon": 9.3901509,
-    "description": "Von Rosenberg family members held enfeoffments in Adelsheim, including patronage rights and shares of the tithe."
-  },
-  {
-    "id": "bartenstein",
-    "variations": [
-      "Bartenstein"
-    ],
-    "description": "The von Rosenbergs held Bartenstein as a fief and family seat; their shares there are documented from 1419 into the 1440s. No separate city or village is established here for 1387: LEO-BW describes Bartenstein as the castle and associated buildings before 1688, with settlement development only in the early 18th century and first mention as a town in 1806. Its medieval settlement category is therefore unset and this settlement marker is hidden. Source: https://www.leo-bw.de/detail-gis/-/Detail/details/ORT/labw_ortslexikon/3259/Bartenstein .",
-    "showOnMap": false
-  },
-  {
-    "id": "schloss-bartenstein",
-    "variations": [
-      "Schloss Bartenstein"
-    ],
-    "category": "castle",
-    "lat": 49.3558352,
-    "lon": 9.8778418,
-    "description": "Conrad and Kunz von Rosenberg held the fortress as a fief from Hohenlohe in the 1420s and 1430s; the family held shares until about 1440."
-  },
-  {
-    "id": "neudeck",
-    "variations": [
-      "Neudeck"
-    ],
-    "category": "castle",
-    "lat": 49.206605,
-    "lon": 9.420342,
-    "description": "Adelheid von Neudeck was married to Konrad von Rosenberg around 1327; their son was known as Hans von Neudeck."
-  },
-  {
-    "id": "jagstberg",
-    "variations": [
-      "Jagstberg",
-      "Jagstburgk"
-    ],
-    "category": "castle",
-    "lat": 49.3366134,
-    "lon": 9.7947915,
-    "description": "The von Rosenbergs held Jagstberg as a pledge from Würzburg. Eberhard von Rosenberg resided at the castle and acquired court and market rights in 1409."
-  },
-  {
-    "id": "urhausen-castle",
-    "variations": [
-      "Urhausen",
-      "Schloss Urhausen"
-    ],
-    "category": "castle",
-    "lat": 49.358853,
-    "lon": 9.5407804,
-    "description": "Hans and Götz von Rosenberg sold this inherited fortress in 1385; Eberhard von Rosenberg, Vogt of Lauda, guaranteed the sale."
-  },
-  {
-    "id": "maienfels-castle",
-    "variations": [
-      "Maienfels",
-      "Schloss Maienfels"
-    ],
-    "category": "castle",
-    "lat": 49.1199676,
-    "lon": 9.5126096,
-    "description": "The KMZ notes a possible von Rosenberg co-possession of Maienfels, but says this connection is uncertain."
-  },
-  {
-    "id": "roettingen",
-    "variations": [
-      "Röttingen",
-      "Rottingen",
-      "Rotingen"
-    ],
-    "category": "city",
-    "lat": 49.5097555,
-    "lon": 9.9681198,
-    "description": "Anselm von Rosenberg held the castle, town, and office of Röttingen as a pledge from 1443 to 1454."
-  },
-  {
-    "id": "roettingen-st-kilian",
-    "variations": [
-      "St. Kilian"
-    ],
-    "category": "church",
-    "lat": 49.5100606,
-    "lon": 9.9677382,
-    "description": "The KMZ gives no specific von Rosenberg connection to St. Kilian; the church is in Röttingen, where Anselm von Rosenberg held the castle, town, and office as a pledge from 1443 to 1454.",
-    "parent": "roettingen"
-  },
-  {
-    "id": "burg-brattenstein",
-    "variations": [
-      "Burg Brattenstein"
-    ],
-    "category": "castle",
-    "lat": 49.5087394,
-    "lon": 9.965866,
-    "description": "The KMZ gives no separate history for this castle, but records Anselm von Rosenberg holding Röttingen and its castle as a pledge from 1443 to 1454.",
-    "parent": "roettingen"
-  },
-  {
-    "id": "gnoetzheim-castle",
-    "variations": [
-      "Schloss Gnötzheim"
-    ],
-    "category": "castle",
-    "lat": 49.6154951,
-    "lon": 10.1814995,
-    "description": "The castle belonged to the von Rosenbergs from 1426 to 1632. The KMZ also notes two Rosenberg tombstones in the church.",
-    "parent": "gnoetzheim"
-  },
-  {
-    "id": "boffsheim",
-    "variations": [
-      "Boffsheim"
-    ],
-    "category": "village",
-    "lat": 49.4701713,
-    "lon": 9.4135756,
-    "description": "The von Rosenbergs held substantial property and tithe rights in Boffsheim, as well as patronage rights over the village church."
-  },
-  {
-    "id": "schweigern",
-    "variations": [
-      "Schweigern"
-    ],
-    "category": "village",
-    "lat": 49.4903925,
-    "lon": 9.6695919,
-    "description": "The von Rosenbergs owned the village and held tithe rights. In 1397 King Wenceslas granted Arnold and Eberhard von Rosenberg high-court jurisdiction there."
+    "lat": 49.5322268,
+    "lon": 10.0674143,
+    "id": "waldmannshofen-evangelical-church",
+    "parent": "waldmannshofen"
   },
   {
     "id": "wallduern",
@@ -703,152 +1838,18 @@
     "description": "Eberhard I von Rosenberg served as Mainz’s bailiff (Vogt) in Walldürn from 1334; the KMZ associates this office with the family’s regional influence."
   },
   {
-    "id": "buch",
+    "id": "wallenstein",
     "variations": [
-      "Buch"
+      "Wallenstein"
     ],
-    "category": "village",
-    "lat": 49.5387097,
-    "lon": 9.5562516,
-    "description": "The von Rosenbergs held shares and rights in Buch, including a quarter of the village with advocacy and court rights in the 14th century."
+    "showOnMap": false
   },
   {
-    "id": "bretzingen",
+    "id": "wart",
     "variations": [
-      "Bretzingen"
+      "Wart"
     ],
-    "category": "village",
-    "lat": 49.5793284,
-    "lon": 9.4865017,
-    "description": "Members of the von Rosenberg family held property and shares in Bretzingen from at least the late 14th century."
-  },
-  {
-    "id": "zimmern",
-    "variations": [
-      "Zimmern"
-    ],
-    "category": "village",
-    "lat": 49.5980028,
-    "lon": 9.7848601,
-    "description": "Eberhard von Rosenberg was called “von Zimmern” in 1340, and the KMZ identifies Zimmern as a possible residence of a family branch."
-  },
-  {
-    "id": "kirchheim",
-    "variations": [
-      "Kirchheim"
-    ],
-    "category": "village",
-    "lat": 49.6550659,
-    "lon": 9.8581433,
-    "description": "Before 1450, Eberhard von Rosenberg and his wife Wyclo sold property in Kirchheim; Anna von Rosenberg had a dowry assigned there around 1368."
-  },
-  {
-    "id": "burg-lauda",
-    "variations": [
-      "Burg Lauda"
-    ],
-    "category": "castle",
-    "lat": 49.5672155,
-    "lon": 9.7023678,
-    "description": "The KMZ connects the family with Lauda through Eberhard von Rosenberg’s capture of the town in the 1330s and a later Rosenberg bailiff, but gives no separate history for this castle.",
-    "parent": "lauda"
-  },
-  {
-    "id": "aub-mariae-himmelfahrt",
-    "variations": [
-      "Mariä Himmelfahrt"
-    ],
-    "category": "church",
-    "lat": 49.552428,
-    "lon": 10.0642337,
-    "description": "Aub was partly held by the von Rosenbergs, but the KMZ gives no specific family connection to this church.",
-    "parent": "aub"
-  },
-  {
-    "id": "burg-aub",
-    "variations": [
-      "Burg Aub"
-    ],
-    "category": "castle",
-    "lat": 49.550971,
-    "lon": 10.064593,
-    "description": "The KMZ explicitly says this castle did not belong to the von Rosenbergs, though it was besieged in 1523.",
-    "parent": "aub"
-  },
-  {
-    "id": "bobstadt",
-    "variations": [
-      "Bobstadt",
-      "Baxstatt",
-      "Bogesstatt",
-      "Bostadt",
-      "Babstatt",
-      "Ballstatt"
-    ],
-    "category": "village",
-    "lat": 49.4665786,
-    "lon": 9.6731218,
-    "description": "In 1378 Michael von Rosenberg sold his half of the tithe in Bobstadt to the Teutonic Order."
-  },
-  {
-    "id": "nagelsberg-castle",
-    "variations": [
-      "Nagelsberg",
-      "Nagelsperg",
-      "Schloss Nagelsberg"
-    ],
-    "category": "castle",
-    "lat": 49.2928487,
-    "lon": 9.6757153,
-    "description": "Eberhard I von Rosenberg held an interest and a fief in Nagelsberg Castle in the 1330s and 1340s; he permitted its redemption by Mainz in 1349."
-  },
-  {
-    "id": "niederstetten",
-    "variations": [
-      "Niederstetten",
-      "Haldemarstetten",
-      "Zaltenbergstetten",
-      "Haltermannstetten",
-      "Haltenbergsketten"
-    ],
-    "category": "city",
-    "lat": 49.4,
-    "lon": 9.91944,
-    "description": "Niederstetten was a city by 1387: in 1367 Charles IV renewed the privileges associated with Haltenbergstetten and extended them to the settlement below the castle. The settlement was also known as Haltenbergstetten. Historical status and name: https://www.niederstetten.de/stadtinfo-wirtschaft/geschichte . Settlement coordinates: https://www.geonames.org/2862831/niederstetten.html ."
-  },
-  {
-    "id": "niederstetten-friedhofskapelle",
-    "variations": [
-      "Friedhofskapelle"
-    ],
-    "category": "church",
-    "lat": 49.4032655,
-    "lon": 9.9192052,
-    "description": "The KMZ gives no specific von Rosenberg connection to this chapel; the family acquired the lordship of Niederstetten in 1415.",
-    "parent": "niederstetten"
-  },
-  {
-    "id": "niederstetten-st-jakobus",
-    "variations": [
-      "St. Jakobus der Ältere"
-    ],
-    "category": "church",
-    "lat": 49.4009573,
-    "lon": 9.9195736,
-    "description": "The KMZ notes the church’s Romanesque history but gives no specific von Rosenberg connection; the family acquired the lordship of Niederstetten in 1415.",
-    "parent": "niederstetten"
-  },
-  {
-    "id": "burg-wildenstein",
-    "variations": [
-      "Wildenstein",
-      "Burg Wildenstein",
-      "Burg Ruine Wildenstein"
-    ],
-    "category": "castle",
-    "lat": 49.8284552,
-    "lon": 9.2927009,
-    "description": "The KMZ says the von Rosenbergs destroyed this castle in 1509."
+    "showOnMap": false
   },
   {
     "id": "wasserburg-dietenhofen",
@@ -862,881 +1863,27 @@
     "description": "The KMZ records the water castle as belonging to Kunz von Rosenberg in 1523, when it was burned."
   },
   {
-    "id": "rinderfeld",
+    "id": "wehrkirche-angeltuern",
     "variations": [
-      "Rinderfeld"
-    ],
-    "category": "village",
-    "lat": 49.419378,
-    "lon": 9.9885698,
-    "description": "Anna von Rosenberg sold tithes and rents in Rinderfeld in 1368 and 1429."
-  },
-  {
-    "id": "koenigheim",
-    "variations": [
-      "Königheim",
-      "Kenninkeim",
-      "Kennenkein"
-    ],
-    "category": "village",
-    "lat": 49.618009,
-    "lon": 9.595606,
-    "description": "Anna von Rosenberg sold her tithes and interests in Königheim in 1429."
-  },
-  {
-    "id": "waldbuettelbrunn",
-    "variations": [
-      "Waldbüttelbrunn"
-    ],
-    "category": "village",
-    "lat": 49.7871497,
-    "lon": 9.8385754,
-    "description": "Around 1357 the village was transferred to Eberhart von Rosenberg and [margaretha_von_thungen] as part of a pledge arrangement."
-  },
-  {
-    "id": "erlenbach",
-    "variations": [
-      "Erlenbach",
-      "Erelbach",
-      "Erlebach"
-    ],
-    "category": "village",
-    "lat": 49.173117,
-    "lon": 9.2646937,
-    "description": "In 1408 Arnold von Rosenberg the Younger exchanged his property in Erlenbach with Schöntal Monastery."
-  },
-  {
-    "id": "dertingen",
-    "variations": [
-      "Dertingen"
-    ],
-    "category": "village",
-    "lat": 49.7680278,
-    "lon": 9.6159331,
-    "description": "Around 1357 Dertingen was included in a pledge arrangement involving Eberhart von Rosenberg and [margaretha_von_thungen]."
-  },
-  {
-    "id": "beckstein",
-    "variations": [
-      "Beckstein"
-    ],
-    "category": "village",
-    "lat": 49.5461588,
-    "lon": 9.7039479,
-    "description": "In 1395 Arnold and Eberhard von Rosenberg exchanged meadows at Beckstein for a meadow at Kupprichhausen."
-  },
-  {
-    "id": "eiersheim",
-    "variations": [
-      "Eiersheim",
-      "Yershen"
-    ],
-    "category": "village",
-    "lat": 49.658375,
-    "lon": 9.586552,
-    "description": "Anna von Rosenberg included her rents and interests in Eiersheim in a sale in 1429."
-  },
-  {
-    "id": "uiffingen",
-    "variations": [
-      "Uiffingen"
-    ],
-    "category": "village",
-    "lat": 49.5021269,
-    "lon": 9.5935435,
-    "description": "Eberhart von Rosenberg sold the village in 1357; Engelhard von Rosenberg later sold serfs from Uiffingen in 1411."
-  },
-  {
-    "id": "ruegheim",
-    "variations": [
-      "Rügheim"
-    ],
-    "category": "village",
-    "lat": 50.1109281,
-    "lon": 10.5116126,
-    "description": "In 1359 Engelhard von Rosenberg received half of the tithe in Rügheim as a fief from the Bishop of Würzburg."
-  },
-  {
-    "id": "kupprichhausen",
-    "variations": [
-      "Kupprichhausen"
-    ],
-    "category": "village",
-    "lat": 49.5267268,
-    "lon": 9.6218325,
-    "description": "In 1395 the brothers Arnold and Eberhard von Rosenberg acquired a meadow at Kupprichhausen through an exchange."
-  },
-  {
-    "id": "burgruine-rosenberg-rugland",
-    "variations": [
-      "Rügland",
-      "Burgruine Rosenberg Rügland"
-    ],
-    "category": "castle",
-    "lat": 49.4029858,
-    "lon": 10.5946718,
-    "description": "Despite its name, this ruin is associated with the Vestenberg family, not the von Rosenbergs of the present study."
-  },
-  {
-    "id": "rosenberg-evangelical-church",
-    "variations": [
-      "Evangelische Kirche"
+      "Angeltürn",
+      "Wehrkirche, Angeltürn",
+      "Angerthal",
+      "Angelthor",
+      "Angeldarm",
+      "Angelthorn"
     ],
     "category": "church",
-    "lat": 49.45659,
-    "lon": 9.4732739,
-    "description": "The von Rosenbergs held patronage rights over the church at Rosenberg from around the 1270s.",
-    "parent": "rosenberg-town"
+    "lat": 49.4877,
+    "lon": 9.5978
   },
   {
-    "id": "oberschuepf-castle",
+    "id": "weinsberg",
     "variations": [
-      "Schloss Oberschüpf"
-    ],
-    "category": "castle",
-    "lat": 49.5218062,
-    "lon": 9.6772055,
-    "description": "The von Rosenbergs acquired part of the lordship of Schüpf in the late 14th century and later controlled Oberschüpf Castle as a secondary family seat; the castle was destroyed in 1470.",
-    "parent": "oberschuepf"
-  },
-  {
-    "id": "gommersdorf",
-    "variations": [
-      "Gommersdorf"
-    ],
-    "category": "village",
-    "lat": 49.3686059,
-    "lon": 9.6123514,
-    "description": "The KMZ notes property associated with the Vogt of Lauda but does not identify the holder as a von Rosenberg."
-  },
-  {
-    "id": "wertheim-stiftskirche",
-    "variations": [
-      "Wertheim",
-      "Stiftskirche, Wertheim"
-    ],
-    "category": "church",
-    "lat": 49.7588307,
-    "lon": 9.5177265,
-    "description": "The KMZ flags the church for tombs but does not identify a specific von Rosenberg connection."
-  },
-  {
-    "id": "schoental-monastery",
-    "variations": [
-      "Schöntal",
-      "Schöntal Abbey",
-      "Schöntal Monastery"
-    ],
-    "category": "church",
-    "lat": 49.3291246,
-    "lon": 9.5054929,
-    "description": "Eberhard von Rosenberg sold two mills to Schöntal Monastery in 1327."
-  },
-  {
-    "id": "uissigheim-st-laurentius",
-    "variations": [
-      "St. Laurentius"
-    ],
-    "category": "church",
-    "lat": 49.6795332,
-    "lon": 9.5732476,
-    "description": "The KMZ links the site to the von Uissigheim lineage from which the von Rosenbergs branched, and notes a tomb associated with Arnold III von Uissigheim.",
-    "parent": "uissigheim"
-  },
-  {
-    "id": "schuepf-church",
-    "variations": [
-      "Kirche in Schüpf"
-    ],
-    "category": "church",
-    "lat": 49.5222468,
-    "lon": 9.6808585,
-    "description": "The KMZ records Rosenberg lordship rights in Schüpf, including half of the Hohenlohe rights by 1413, but gives no separate family connection to this church.",
-    "parent": "oberschuepf"
-  },
-  {
-    "id": "kocherstetten-marienkirche",
-    "variations": [
-      "Kocherstetten",
-      "Marienkirche Kocherstetten",
-      "Rocherstetten"
-    ],
-    "category": "church",
-    "lat": 49.266586,
-    "lon": 9.761628
-  },
-  {
-    "id": "sugenheim-st-erhard",
-    "variations": [
-      "Sugenheim",
-      "St. Erhard, Sugenheim"
-    ],
-    "category": "church",
-    "lat": 49.602076,
-    "lon": 10.434766
-  },
-  {
-    "id": "neuenstadt-lindenanlage",
-    "variations": [
-      "Lindenanlage Neuenstadt am Kocher"
-    ],
-    "category": "city",
-    "lat": 49.2374389,
-    "lon": 9.3310472
-  },
-  {
-    "id": "comburg-stiftskirche",
-    "variations": [
-      "Comburg",
-      "Comburg Stiftskirche"
-    ],
-    "category": "church",
-    "lat": 49.1003,
-    "lon": 9.74974
-  },
-  {
-    "id": "essingen-st-quirinus",
-    "variations": [
-      "Essingen St Quirinus",
-      "Quirinuskirche Essingen"
-    ],
-    "category": "church",
-    "lat": 48.807647,
-    "lon": 10.028267
-  },
-  {
-    "id": "meeder-st-laurentius",
-    "variations": [
-      "Meeder",
-      "St. Laurentius Meeder"
-    ],
-    "category": "church",
-    "lat": 50.32194444,
-    "lon": 10.90555556
-  },
-  {
-    "id": "kenzingen-st-laurentius",
-    "variations": [
-      "Kenzingen",
-      "St. Laurentius Kenzingen"
-    ],
-    "category": "church",
-    "lat": 48.19156,
-    "lon": 7.770048
-  },
-  {
-    "id": "boedigheim-kreuzkirche",
-    "variations": [
-      "Bödigheim",
-      "Botinkey",
-      "Botinkeym",
-      "Kreuzkirche Bödigheim"
-    ],
-    "category": "church",
-    "lat": 49.478584,
-    "lon": 9.315405
-  },
-  {
-    "id": "kuernbach-michaelskirche",
-    "variations": [
-      "Kürnbach",
-      "Michaelskirche Kürnbach"
-    ],
-    "category": "church",
-    "lat": 49.078301,
-    "lon": 8.845119
-  },
-  {
-    "id": "massbach-st-bartholomaeus",
-    "variations": [
-      "Maßbach",
-      "St. Bartholomäus Maßbach"
-    ],
-    "category": "church",
-    "lat": 50.18483,
-    "lon": 10.2755
-  },
-  {
-    "id": "gochsheim-st-michael",
-    "variations": [
-      "Gochsheim",
-      "St. Michael Gochsheim"
-    ],
-    "category": "church",
-    "lat": 50.019696,
-    "lon": 10.282289
-  },
-  {
-    "id": "essingen-st-wendelinuskapelle",
-    "variations": [
-      "St. Wendelinuskapelle Essingen"
-    ],
-    "category": "church",
-    "lat": 49.235380076599,
-    "lon": 8.1630885601044
-  },
-  {
-    "id": "dienstadt",
-    "category": "village",
-    "variations": [
-      "Dienstadt",
-      "Distad",
-      "Diehstat"
-    ],
-    "lat": 49.63556,
-    "lon": 9.61083
-  },
-  {
-    "id": "eubigheim",
-    "category": "village",
-    "variations": [
-      "Eubigheim",
-      "Úbikein",
-      "Ubenkein"
-    ],
-    "lat": 49.5017605,
-    "lon": 9.5404604
-  },
-  {
-    "id": "euerhausen",
-    "category": "village",
-    "variations": [
-      "Euerhausen",
-      "Vrhusen"
-    ],
-    "lat": 49.6117,
-    "lon": 9.94889
-  },
-  {
-    "id": "eltmann",
-    "category": "city",
-    "variations": [
-      "Eltmann",
-      "Eltmeyn"
-    ],
-    "lat": 49.972771,
-    "lon": 10.657967
-  },
-  {
-    "id": "unterbalbach",
-    "category": "village",
-    "variations": [
-      "Unterbalbach",
-      "Nydern Balbach"
-    ],
-    "lat": 49.5275,
-    "lon": 9.7472
-  },
-  {
-    "id": "sailach",
-    "category": "village",
-    "variations": [
-      "Sailach",
-      "Selhech"
-    ],
-    "lat": 49.1403056,
-    "lon": 9.6423889
-  },
-  {
-    "id": "zadar",
-    "variations": [
-      "Zadar",
-      "Zara",
-      "Iadra"
-    ],
-    "category": "city",
-    "lat": 44.1194,
-    "lon": 15.2314
-  },
-  {
-    "category": "village",
-    "variations": [
-      "Erligheim",
-      "Erleheim",
-      "Erlikheim",
-      "Erlickheim"
-    ],
-    "lat": 49.0224,
-    "lon": 9.0988,
-    "id": "erligheim"
-  },
-  {
-    "category": "village",
-    "variations": [
-      "Neipperg",
-      "Niperg",
-      "Nyperg"
-    ],
-    "lat": 49.1055,
-    "lon": 9.0486,
-    "id": "neipperg"
-  },
-  {
-    "category": "village",
-    "variations": [
-      "Dienheim",
-      "Dinem"
-    ],
-    "lat": 49.8372,
-    "lon": 8.34972,
-    "id": "dienheim"
-  },
-  {
-    "category": "village",
-    "variations": [
-      "Hirschhorn",
-      "Hirczhorn",
-      "Hyrzhorne"
-    ],
-    "lat": 49.4474,
-    "lon": 8.8967,
-    "id": "hirschhorn"
-  },
-  {
-    "category": "village",
-    "variations": [
-      "Thüngen",
-      "Thungen",
-      "Tüngen",
-      "Tungen"
-    ],
-    "lat": 49.94293,
-    "lon": 9.8568,
-    "id": "thuengen"
-  },
-  {
-    "id": "dottenheim",
-    "category": "village",
-    "variations": [
-      "Dottenheim",
-      "Tottenheim",
-      "Tuttenheim"
-    ],
-    "lat": 49.54885,
-    "lon": 10.51564
-  },
-  {
-    "id": "gauangelloch",
-    "category": "village",
-    "variations": [
-      "Gauangelloch",
-      "Angelach",
-      "Angelloch"
-    ],
-    "lat": 49.34202,
-    "lon": 8.75587
-  },
-  {
-    "id": "handschuhsheim",
-    "category": "village",
-    "variations": [
-      "Handschuhsheim",
-      "Håndschuhsheim",
-      "Handschuchsheim"
-    ],
-    "lat": 49.43069,
-    "lon": 8.68318
-  },
-  {
-    "id": "braniewo",
-    "showOnMap": false,
-    "variations": [
-      "Brunsberg",
-      "Braniewo",
-      "Braunsberg"
-    ]
-  },
-  {
-    "id": "schonau",
-    "category": "church",
-    "variations": [
-      "Schönau",
-      "Schönau Abbey",
-      "Schönau Monastery"
-    ],
-    "lat": 49.4359,
-    "lon": 8.8094
-  },
-  {
-    "id": "esselbach",
-    "category": "village",
-    "variations": [
-      "Esselbach",
-      "Espelbach"
-    ],
-    "lat": 49.855278,
-    "lon": 9.525833
-  },
-  {
-    "id": "seckendorff",
-    "variations": [
-      "Seckendorf",
-      "Seckendorff"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "niedeck",
-    "variations": [
-      "Niedeck",
-      "Neideck",
-      "Nydecke",
-      "Nydeck"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "ebrach",
-    "variations": [
-      "Ebrach"
-    ],
-    "category": "village",
-    "lat": 49.8463,
-    "lon": 10.4936
-  },
-  {
-    "id": "boennigheim",
-    "variations": [
-      "Bönnigheim"
-    ],
-    "category": "city",
-    "lat": 49.0408,
-    "lon": 9.0939
-  },
-  {
-    "id": "marktbreit",
-    "variations": [
-      "Marktbreit"
-    ],
-    "category": "village",
-    "lat": 49.6658,
-    "lon": 10.1471
-  },
-  {
-    "id": "michelsberg",
-    "variations": [
-      "Michelsberg"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "frankenau",
-    "variations": [
-      "Frankenau",
-      "Frankenowe"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "lissberg",
-    "variations": [
-      "Lißberg"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "meissen",
-    "variations": [
-      "Meißen"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "riedern",
-    "variations": [
-      "Riedern",
-      "Ryederen"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "ramschwag",
-    "variations": [
-      "Ramschwag"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "waldeck",
-    "variations": [
-      "Waldeck",
-      "Waldecke"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "schwarzburg",
-    "variations": [
-      "Schwarzburg"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "hartheim",
-    "variations": [
-      "Hartheim",
-      "Hardheim"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "leuchtenberg",
-    "variations": [
-      "Leuchtenberg"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "helmstadt",
-    "variations": [
-      "Helmstadt",
-      "Helmstat",
-      "Helmstatt"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "hainstadt",
-    "variations": [
-      "Hainstadt",
-      "Heinstadt"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "neuhaus",
-    "variations": [
-      "Neuhaus"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "holtzhusen",
-    "variations": [
-      "Holzhausen",
-      "Holtzhausen",
-      "Holtzhüsen",
-      "Holzhusin",
-      "Holczhusin",
-      "Holzhusun",
-      "Holczhusen",
-      "Holßhusen",
-      "Holzhusen",
-      "Holtzhusen"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "rieneck",
-    "variations": [
-      "Rieneck",
-      "Rineck",
-      "Rienek"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "fleckenstein",
-    "variations": [
-      "Fleckenstein",
-      "Fleckstein"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "rorschach",
-    "variations": [
-      "Rorschach"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "barby",
-    "variations": [
-      "Barby"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "leutzenbronn",
-    "variations": [
-      "Leutzenbronn"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "berlichingen",
-    "variations": [
-      "Berlichingen"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "wallenstein",
-    "variations": [
-      "Wallenstein"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "Heideck",
-    "variations": [
-      "heideck"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "madenburg",
-    "variations": [
-      "Madenburg",
-      "Mademburg"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "zwingenstein",
-    "variations": [
-      "Zwingenstein"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "biberbach",
-    "variations": [
-      "Biberbach"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "mengershausen",
-    "variations": [
-      "Mengershausen",
-      "Mengerkusen"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "zwettl",
-    "variations": [
-      "Zwettl"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "buchen",
-    "variations": [
-      "Buchen",
-      "Bucheim"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "wart",
-    "variations": [
-      "Wart"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "landstein",
-    "variations": [
-      "Landstein"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "muenchusen",
-    "variations": [
-      "Münchusen"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "harrach",
-    "variations": [
-      "Harrach"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "gemmingen",
-    "variations": [
-      "Gemmingen"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "rothenburg",
-    "variations": [
-      "Rothenburg",
-      "Rotenburc",
-      "Rotenburg",
-      "Rodenburch",
-      "ROTENBVRCH",
-      "Rotenburch"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "talheim",
-    "variations": [
-      "Talheim",
-      "Thalheim",
-      "Taleheim",
-      "Talhaim"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "erbach",
-    "variations": [
-      "Erbach",
-      "Erdbach",
-      "Ertbach"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "michelfeld",
-    "variations": [
-      "Michelfeld",
-      "Michelfelt"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "limpurg",
-    "variations": [
-      "Limpurg",
-      "Lympurg",
-      "Limperg",
-      "Limpburg",
-      "Lymburg",
-      "Lynburg",
-      "Limburg",
-      "Limpurc"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "ballenberg",
-    "variations": [
-      "Ballenberg",
-      "Ballenburg"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "bibra",
-    "variations": [
-      "Bibra"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "homburg",
-    "variations": [
-      "Homburg"
+      "Weinsberg",
+      "Winesberg",
+      "Winesperg",
+      "Winsperg",
+      "Winsperc"
     ],
     "showOnMap": false
   },
@@ -1759,100 +1906,54 @@
     "showOnMap": false
   },
   {
-    "id": "schaunberg",
+    "id": "wertheim-stiftskirche",
     "variations": [
-      "Schaunberg",
-      "Schawnberg"
+      "Wertheim",
+      "Stiftskirche, Wertheim"
     ],
-    "showOnMap": false
+    "category": "church",
+    "lat": 49.7588307,
+    "lon": 9.5177265,
+    "description": "The KMZ flags the church for tombs but does not identify a specific von Rosenberg connection."
   },
   {
-    "id": "nuremberg",
     "variations": [
-      "Nuremberg",
-      "Nüremberg",
-      "Nürnberg"
+      "Wildenberg",
+      "Schloss Wildenberg"
     ],
-    "showOnMap": false
+    "category": "castle",
+    "lat": 49.582,
+    "lon": 9.044,
+    "id": "wildenberg-castle"
   },
   {
-    "id": "minneburg",
+    "id": "wirsberg",
     "variations": [
-      "Minneburg"
+      "Wirsberg",
+      "Wiersperg"
     ],
-    "showOnMap": false
+    "category": "village",
+    "lat": 50.108061,
+    "lon": 11.607823,
+    "description": "In 1387 Wirsberg was a market settlement, represented as village in the city/village schema. The municipal history documents it as a Markt by the end of the 13th century. Source: https://www.wirsberg.de/buergerservice-rathaus/chronik/ortsgeschichte ."
   },
   {
-    "id": "pappenheim",
     "variations": [
-      "Pappenheim",
-      "Bappenhaim",
-      "Pappenhaim",
-      "Bappenhein",
-      "Bappenheim"
+      "Wölchingen",
+      "Wolchingen",
+      "Wolching",
+      "Frankendom, Wölchingen",
+      "Wolechingen",
+      "Wollechingen",
+      "Wollichingen",
+      "Wulchingen",
+      "Welchingen"
     ],
-    "showOnMap": false
-  },
-  {
-    "id": "seinsheim",
-    "variations": [
-      "Seinsheim",
-      "Sainsheim",
-      "Sawensheim",
-      "Sovensheim",
-      "Saunsheim"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "hornberg",
-    "variations": [
-      "Hornberg",
-      "Hornburg"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "hohenlohe",
-    "variations": [
-      "Hohenlohe"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "weinsberg",
-    "variations": [
-      "Weinsberg",
-      "Winesberg",
-      "Winesperg",
-      "Winsperg",
-      "Winsperc"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "hutten",
-    "variations": [
-      "Hutten",
-      "Huttenus",
-      "Hoten",
-      "Hute",
-      "Huttenicus",
-      "Huti",
-      "Hütten",
-      "Huten"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "herrieden",
-    "variations": [
-      "Herrieden",
-      "Harrariot",
-      "Herreden",
-      "Haserieth"
-    ],
-    "showOnMap": false
+    "category": "church",
+    "lat": 49.4848212,
+    "lon": 9.6315974,
+    "id": "wolchingen",
+    "description": "The Knights of St. John held the church and property at Wölchingen before it came to the von Rosenbergs in 1381."
   },
   {
     "id": "wolffskeel",
@@ -1864,105 +1965,48 @@
     "showOnMap": false
   },
   {
-    "id": "neuburg",
+    "id": "wurzburg",
     "variations": [
-      "Neuburg",
-      "Neuenburg",
-      "Neubrung",
-      "Neuenbürg"
+      "Würzburg",
+      "Wirtzeburg",
+      "Wurzburg"
+    ],
+    "category": "city",
+    "lat": 49.79441,
+    "lon": 9.92937
+  },
+  {
+    "id": "zadar",
+    "variations": [
+      "Zadar",
+      "Zara",
+      "Iadra"
+    ],
+    "category": "city",
+    "lat": 44.1194,
+    "lon": 15.2314
+  },
+  {
+    "id": "zimmern",
+    "variations": [
+      "Zimmern"
+    ],
+    "category": "village",
+    "lat": 49.5980028,
+    "lon": 9.7848601,
+    "description": "Eberhard von Rosenberg was called “von Zimmern” in 1340, and the KMZ identifies Zimmern as a possible residence of a family branch."
+  },
+  {
+    "id": "zwettl",
+    "variations": [
+      "Zwettl"
     ],
     "showOnMap": false
   },
   {
-    "id": "sickingen",
+    "id": "zwingenstein",
     "variations": [
-      "Sickingen",
-      "Sickinger"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "kollenberg",
-    "variations": [
-      "Kollenberg",
-      "Kolbenberg",
-      "Kolbenberc",
-      "Collenberg",
-      "Kolleberg"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "lichtenstein",
-    "variations": [
-      "Lichtenstein"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "grumbach",
-    "variations": [
-      "Grumbach",
-      "Gruenbach"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "kranberg",
-    "variations": [
-      "Kranberg",
-      "Cranberg"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "brunn",
-    "variations": [
-      "Brunn",
-      "brvne",
-      "Brune",
-      "Brun"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "seldeneck",
-    "variations": [
-      "Seldeneck",
-      "Seldenecke"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "bürgstadt",
-    "variations": [
-      "Bürgstadt",
-      "Burgestad"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "absberg",
-    "variations": [
-      "Absberg",
-      "Appsperg",
-      "Absperg",
-      "Abbsberg",
-      "Asperg",
-      "Apsperg"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "bischofsheim",
-    "variations": [
-      "Bischofsheim",
-      "Bischoffesheim",
-      "Tauberbischofsheim",
-      "Tauber-Bischofsheim",
-      "[Tauber] Bischofsheim",
-      "[Tauber-]Bischofsheim",
-      "(Tauber-)Bischofsheim"
+      "Zwingenstein"
     ],
     "showOnMap": false
   }
