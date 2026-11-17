@@ -7,6 +7,8 @@ Stieber, Stiebar, Stiber
 Kemnater, Kempnater
 Schaffner
 Rodel
+Zobel, Zobelin
+Geyer
 Pirchan
 Grabner
 Presbyter
