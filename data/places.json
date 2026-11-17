@@ -1571,6 +1571,13 @@
     "showOnMap": false
   },
   {
+    "id": "Heideck",
+    "variations": [
+      "heideck"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "madenburg",
     "variations": [
       "Madenburg",
