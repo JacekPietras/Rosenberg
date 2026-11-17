@@ -10,6 +10,9 @@
       "facts": [
         {
           "person": "Hans von Rosenberg",
+          "personTitle": [
+            "zu Essingen"
+          ],
           "type": "generic",
           "content": "witnessed the accounting for revenue and expenditure concerning the villages in the Ried."
         }
