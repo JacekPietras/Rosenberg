@@ -3702,23 +3702,23 @@
         {
           "person": "Hans Georg von Seckendorf",
           "type": "parent",
-          "of": "Hans Ludovicus von Seckendorf",
+          "of": "Hans Ludwig von Seckendorf",
           "ofDeceased": true
         },
         {
           "person": "Brigitta von Rosenberg",
           "type": "parent",
-          "of": "Hans Ludovicus von Seckendorf",
+          "of": "Hans Ludwig von Seckendorf",
           "ofDeceased": true
         },
         {
-          "person": "Hans Ludovicus von Seckendorf",
+          "person": "Hans Ludwig von Seckendorf",
           "personDeceased": true,
           "type": "generic",
           "content": "has 16 May 1596 recorded on his epitaph as the earliest possible date."
         },
         {
-          "person": "Hans Ludovicus von Seckendorf",
+          "person": "Hans Ludwig von Seckendorf",
           "type": "death",
           "diedBefore": "1596-09-07",
           "date": "1596"
