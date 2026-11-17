@@ -144,7 +144,7 @@ Anna, Anne
 Barbara
 Brigitta
 Christiana, Christina, Christine
-Clais
+Clais, Claes, Clas, Clays, Claus
 Dorothea
 Ela
 Elchana
@@ -176,6 +176,7 @@ Petrisa, Petrissa
 Regina
 Richtze, Reytza, Richeza, Richza
 Rosina
+Clara, Klara, Clare
 Rufina, Rofina, Ruffina
 Selind, Selant, Selende, Sieglinde, Siglind
 Septia
