@@ -57,8 +57,8 @@ Hartlieb
 Hartmut
 Haubt, Haupt
 Hector
-Hen, Henne
 Heinrich, Hainrich, Heinrici, Heinrico, Heinricus, Heintz, Heintze, Heinz, Heinzen, Hendrici, Henrich, Henricus, Jindrich
+Hen, Henne
 Herbord
 Herman, Hermann, Hermannus
 Hieronymus, Jeronimus, Jheronimus
@@ -80,7 +80,7 @@ Leonhard, Lenhart, Leonardus, Leonhardus, Leonhart, Lienhart, Linhard, Linhart
 Leopold, Lupold, Luppold
 Lionhart
 Lorenz
-Ludwig, Ludewig, Lutz, Lutzo, Lutzonis, Ludovicus
+Ludwig, Ludewig, Ludovicus, Lutz, Lutzo, Lutzonis
 Mangold
 Marquard
 Martin
