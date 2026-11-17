@@ -1519,6 +1519,7 @@
       "Holzhusin",
       "Holczhusin",
       "Holzhusun",
+      "Holczhusen",
       "Holßhusen",
       "Holzhusen",
       "Holtzhusen"
@@ -1560,14 +1561,6 @@
     "id": "leutzenbronn",
     "variations": [
       "Leutzenbronn"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "holzhausen",
-    "variations": [
-      "Holzhausen",
-      "Holczhusen"
     ],
     "showOnMap": false
   },
