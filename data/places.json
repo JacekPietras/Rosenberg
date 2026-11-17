@@ -14,7 +14,8 @@
   {
     "id": "adelsheim",
     "variations": [
-      "Adelsheim"
+      "Adelsheim",
+      "Adelzhaim"
     ],
     "category": "city",
     "lat": 49.4045499,
@@ -1852,6 +1853,14 @@
     "id": "wart",
     "variations": [
       "Wart"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "cronberg",
+    "variations": [
+      "Cronberg",
+      "Cronnberg"
     ],
     "showOnMap": false
   },
