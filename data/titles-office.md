@@ -3,7 +3,7 @@
 // Age titles are in titles-age.md.
 
 // offices
-Amtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman
+Amtmann, Amtman, Ambtman, Ambtmann, Amptman, Amptmann, Ambetman, Amman
 Vogt, Voigt, advocatus, Vogtei, Voyt, Foyt, Voit, Voget, voyd, Vogts, Vauth
 Vizedom, Vicedom, Vitzthum, Vizthum, Vitztum, Viztum, Vizdom, vicedominus, Vicar, Viztums
 Keller, Kelner, cellerarius

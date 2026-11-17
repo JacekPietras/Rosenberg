@@ -36,7 +36,8 @@
           "deleted": true
         },
         {
-          "src": "https://digitalisate.frankfurt.de:443/isg_ffm/h.06.01/12/isg_ffm_h.06.01_nr_12_0006.jpg"
+          "src": "https://digitalisate.frankfurt.de:443/isg_ffm/h.06.01/12/isg_ffm_h.06.01_nr_12_0006.jpg",
+          "deleted": true
         },
         {
           "src": "https://digitalisate.frankfurt.de:443/isg_ffm/h.06.01/12/isg_ffm_h.06.01_nr_12_0007.jpg",
@@ -51,7 +52,16 @@
           "deleted": true
         },
         {
-          "src": "https://digitalisate.frankfurt.de:443/isg_ffm/h.06.01/12/isg_ffm_h.06.01_nr_12_0010.jpg"
+          "src": "https://digitalisate.frankfurt.de:443/isg_ffm/h.06.01/12/isg_ffm_h.06.01_nr_12_0010.jpg",
+          "regions": [
+            {
+              "x": 0.0785,
+              "y": 0.2245,
+              "width": 0.5058,
+              "height": 0.632,
+              "name": "text"
+            }
+          ]
         }
       ]
     }
