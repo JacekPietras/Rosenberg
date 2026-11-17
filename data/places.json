@@ -1564,6 +1564,13 @@
     "showOnMap": false
   },
   {
+    "id": "berlichingen",
+    "variations": [
+      "Berlichingen"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "madenburg",
     "variations": [
       "Madenburg",
