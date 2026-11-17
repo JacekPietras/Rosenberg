@@ -105,7 +105,7 @@ Sebastian
 Seibott
 Senant, Synant
 Siboto
-Siegfried, Seifried, Seivfridt, Seyfried, Sifrid, Sifridt, Sifrit
+Siegfried, Seifried, Seivfridt, Seyfried, Sifrid, Sifridt, Sifrit, Syfrit
 Siegmund, Siegemund, Sigismund, Sigmund
 Stephan, Stefan
 Steyn, Stein
