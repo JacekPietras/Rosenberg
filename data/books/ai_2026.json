@@ -379,21 +379,30 @@
     },
     {
       "title": "Rosenberg Castle (Rosenburg am Kamp), Lower Austria",
-      "english": "Medieval castle in the Kamptal near Horn, later known as Rosenburg am Kamp. It served as the seat of local ministerial lords of Rosenberg; Goczwin is recorded in 1175 and Konrad in 1229."
+      "english": "Medieval castle in the Kamptal near Horn, later known as Rosenburg am Kamp. It served as the seat of local ministerial lords of Rosenberg; Goczwin is recorded in 1175 and Konrad in 1229.",
+      "label": [
+        "Kamptal"
+      ]
     },
     {
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosenburg%20-%20Schloss%20%282%29.JPG"
     },
     {
       "title": "Ruine Rosenberg, Herisau, Switzerland",
-      "english": "Ruined hill castle on a Nagelfluh ridge above Burghalden, Herisau. Built in the 13th century, it served as the seat of a branch of the Rorschach-Rosenberg family and was burned during the Appenzell War in 1403; it was not rebuilt."
+      "english": "Ruined hill castle on a Nagelfluh ridge above Burghalden, Herisau. Built in the 13th century, it served as the seat of a branch of the Rorschach-Rosenberg family and was burned during the Appenzell War in 1403; it was not rebuilt.",
+      "label": [
+        "Rorschach"
+      ]
     },
     {
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruine_Rosenberg.jpg"
     },
     {
       "title": "Burgruine Rosenberg, Berneck, Switzerland",
-      "english": "Ruins of a hill castle above Berneck, also called Bernang-Rosenberg. First recorded in 1210, it passed from the Lords of Bernang through the monastery of St Gallen to the Lords of Rosenberg; the castle buildings were sold for demolition in 1811."
+      "english": "Ruins of a hill castle above Berneck, also called Bernang-Rosenberg. First recorded in 1210, it passed from the Lords of Bernang through the monastery of St Gallen to the Lords of Rosenberg; the castle buildings were sold for demolition in 1811.",
+      "label": [
+        "Rorschach"
+      ]
     },
     {
       "img": "https://commons.wikimedia.org/wiki/Special:FilePath/Burgruine_Rosenberg_Berneck_1.jpg"
@@ -462,4 +471,4 @@
       "english": "The Rosenbach family is attested among the ministeriales of the bishops of Trent at Sibidat, a vanished settlement in Haslach below Weineck, in 1178. The location of a castle called Rosenbach is unknown. An older study proposed that the family was a branch of the Lords of Weineck and placed their castle below Weineck, near the present Holy Sepulchre Church, but this location is not confirmed; a later study explicitly notes that Rosenbach's location is unknown and that the records may refer to two families."
     }
   ]
-    }
+}
