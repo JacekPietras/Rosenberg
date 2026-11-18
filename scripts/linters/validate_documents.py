@@ -20,7 +20,7 @@ from place_names import resolve_place_names
 
 ROOT = Path(__file__).resolve().parents[2]
 DOCUMENT_FIELDS = ("date", "place", "label", "transcribed", "deleted", "entries")
-ENTRY_FIELDS = ("source", "url", "subheading", "summary", "german", "latin", "english", "facts", "guesses", "img")
+ENTRY_FIELDS = ("source", "url", "subheading", "summary", "german", "latin", "english", "mention", "facts", "guesses", "img")
 SOURCE_SUFFIX = " (http://www.klaster.vyssibrod.cz)"
 LANDESARCHIV_BW_HTTP_PREFIX = "http://www.landesarchiv-bw.de/plink/"
 LANDESARCHIV_BW_HTTPS_PREFIX = "https://www.landesarchiv-bw.de/plink/"

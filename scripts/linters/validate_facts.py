@@ -345,7 +345,7 @@ class Validator:
                 allowed.add('personDeceased')
                 required.add('personTitle')
             elif kind == 'generic':
-                allowed |= {'content', 'personDeceased', 'subject'}
+                allowed |= {'content', 'personDeceased', 'subject', 'mention'}
                 required.discard('person')
                 if ('person' in fact) == ('subject' in fact):
                     self.report(location, 'generic facts require exactly one of person or subject')

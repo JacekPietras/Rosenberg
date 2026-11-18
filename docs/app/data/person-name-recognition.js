@@ -284,7 +284,7 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
   let routeName = String(name)
     .replace(/[\s,;]+(?:née|nee)[\s,;]+/iu, ' ')
     .replace(new RegExp(`^(?:${titles})[\\s,;]+(?:${connectors})[\\s,;]+`, 'iu'), '')
-    .replace(new RegExp(`^(?:${titles}(?:\\s+(?:zu|zum|an|of)\\s+[^,]+)?[\\s,;]+)+`, 'iu'), '')
+    .replace(new RegExp(`^(?:(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,]+)?[\\s,;]+)+`, 'iu'), '')
     .replace(new RegExp(`^(?:${connectors})\\s+`, 'iu'), '')
     .replace(/\s*\(\s*or\s+[^)]*\)/iu, '')
     .replace(new RegExp(`${ordinal}${titleSequence}[\\s,;]+(?=(?:von|v\\.?|van|de|in|der|die|das|des|of)\\b)`, 'iu'), ' ')

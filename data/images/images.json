@@ -2555,7 +2555,12 @@
         {
           "person": "Albrecht von Liebenstein",
           "type": "generic",
-          "content": "is commemorated together with Margaretha von Rosenberg."
+          "content": "is commemorated together with Margaretha von Rosenberg.",
+          "mention": [
+            {
+              "person": "Margaretha von Rosenberg"
+            }
+          ]
         }
       ],
       "guesses": []
@@ -3853,12 +3858,22 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "is commemorated on a building memorial alongside Osanna von Rosenberg, née von Eycholtzheim, made in 1493."
+          "content": "is commemorated on a building memorial alongside Osanna von Rosenberg, née von Eycholtzheim, made in 1493.",
+          "mention": [
+            {
+              "person": "Osanna von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Osanna von Rosenberg, née von Eycholtzheim",
           "type": "generic",
-          "content": "is commemorated on a building memorial alongside Jörg von Rosenberg made in 1493."
+          "content": "is commemorated on a building memorial alongside Jörg von Rosenberg made in 1493.",
+          "mention": [
+            {
+              "person": "Georg von Rosenberg"
+            }
+          ]
         },
         {
           "subject": "The rebuilding of Boxberg Castle commemorated by the memorials",

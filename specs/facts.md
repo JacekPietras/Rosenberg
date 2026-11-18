@@ -92,6 +92,13 @@ similar in a title array.
   `Edelknecht` can precede `Ritter`. A first `Ritter` does not date a
   knighting, and a missing title does not prove its absence. Do not infer that
   two people are one from matching titles.
+- Complete a participant's titles from the entry text only when the name
+  identifies one person there. Treat same-name participants as different
+  people when they differ in age title (`der Ältere`/`der Jüngere`), deceased
+  status, or registry ID, or when one fact names them as both `person` and
+  `of`. Then add nothing to a participant lacking such a distinction, and take
+  titles only from mentions that share a title with it. `scripts/linters/enrich_fact_titles.mjs`
+  reports these completions; `--apply` writes them.
 
 In `english` translations, keep family names intact (`von Uissigheim`, not "of
 Uissigheim") and put titles after the full name, attached to each person in a
