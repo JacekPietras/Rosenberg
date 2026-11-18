@@ -16,9 +16,6 @@
         },
         {
           "person": "Albrecht von Rosenberg"
-        },
-        {
-          "person": "Albrecht von Rosenberg"
         }
       ],
       "facts": [
@@ -29,7 +26,12 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "acknowledged payment by Archbishop Michael of Salzburg in settlement of his claims against the Erzstift for withholding Schloss and town Boxberg."
+          "content": "acknowledged payment by Archbishop Michael of Salzburg in settlement of his claims against the Erzstift for withholding Schloss and town Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

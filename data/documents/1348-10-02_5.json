@@ -10,7 +10,13 @@
       "english": "King Charles declares: He had instructed Duke Rudolf of Saxony and his son Rudolf the Younger, Duke John of Mecklenburg, Counts Albert of Anhalt and Albert of Möglin, Lord of Barby, the knight Werner von Anford, Albert von Warburg, and Provost Friedrich of Berlin to conduct investigations into Margrave Woldemar of Brandenburg, whom some had known before he left the land, and to report on his identity (that they should ascertain whether it was truly him). The commissioners learned from princes, lords, knights, servants, and common people that there is indeed identity, and reported this to the King. In view of the Margrave's true identity, of which he has been reliably and without doubt informed by the aforementioned commissioners and other nobles and common people as stated above, and also in view of his divinely granted duty to assist everyone in their rights, he has granted to the said Margrave Woldemar the March of Brandenburg and Landsberg with all utilities and appurtenances. If he or his heirs are hindered in the march, the King will assist them.\n\nWitnesses: Bishop Ernst of Prague, the Bohemian lords Andreas von der Duben, Bodo von Turgow, Tasse von Skorow, Wanige von Wartenberg, Jesko von Michelsberg, Jesko von Wartenberg called von Wessel, Hinko von Sleven, Jost von Rosenberg, Albrecht von Krenowitz and Friedrich von Bieberstein.",
       "mention": [
         {
+          "place": "barby"
+        },
+        {
           "person": "Jost von Rosenberg"
+        },
+        {
+          "place": "michelsberg"
         }
       ]
     }

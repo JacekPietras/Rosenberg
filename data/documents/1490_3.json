@@ -16,7 +16,12 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "acknowledged eight parts of Schüpf as a fief from Archbishop Berthold of Mainz."
+          "content": "acknowledged eight parts of Schüpf as a fief from Archbishop Berthold of Mainz.",
+          "mention": [
+            {
+              "place": "oberschuepf"
+            }
+          ]
         }
       ]
     }

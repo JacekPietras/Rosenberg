@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "rothenburg"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "was addressed in a letter from Rothenburg concerning Lutz Kutrolf’s participation in the Peasants’ War."
+          "content": "was addressed in a letter from Rothenburg concerning Lutz Kutrolf’s participation in the Peasants’ War.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

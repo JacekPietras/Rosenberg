@@ -13,6 +13,12 @@
           "personTitle": [
             "Ritter"
           ]
+        },
+        {
+          "place": "bronnbach"
+        },
+        {
+          "place": "uissigheim"
         }
       ],
       "facts": [
@@ -30,7 +36,15 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "exchanged his Hildbrandzellen fiefs with Bronnbach Abbey for a Hube in the district of Uissigheim, which he took as a fief from Mainz."
+          "content": "exchanged his Hildbrandzellen fiefs with Bronnbach Abbey for a Hube in the district of Uissigheim, which he took as a fief from Mainz.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ]
         },
         {
           "person": "Peter von Mainz",

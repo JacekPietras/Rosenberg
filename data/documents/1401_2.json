@@ -9,6 +9,9 @@
       "english": "A Palatine fief and rent register dated 1401 lists Werner Winter von Alzey among the holders of a castle fief. It records a grant of ten Malter of grain from the lord’s mill by the oak tree in Alzey.\n\nSource excerpt: “Item von myns herren ,mulen zu Altzei by der ychen zehen malter korns.”\n\nSource note: The source gives 1401 as the date of the register, not an exact document date. The original manuscript signature of the oldest fief register has not been verified here.\n\nVerification: Indirectly supported; the underlying fief register was not consulted directly.",
       "mention": [
         {
+          "place": "alzey"
+        },
+        {
           "person": "Wernher Winther von Alzey"
         }
       ]

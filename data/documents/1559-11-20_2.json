@@ -10,10 +10,7 @@
       "english": "At Lauda on 20 November 1559, Hans Ehrstoff von Berlichingen, acting for Bishop Friedrich von Wirsberg, owner and feudal lord of the village and fief of Hohenstadt, made an agreement with Hans vom Haber, Eberhard von Gemmingen der Jüngere, Hans Wolf von Lentersheim, and Valentin von Berlichingen zu Dörzbach. The archive summary identifies Hans Ehrstoff as Hans Christoph von Berlichingen and the Rosenberg Oheims as the brothers and cousins Philipp, Jakob, Konrad, and Hans von Rosenberg. Their sheep and those of their subjects were to remain in their own district and not be driven into Hohenstadt; likewise, Hohenstadt’s sheep were not to be driven onto the others’ lands. Other livestock grazing was to continue according to longstanding custom, and the agreement was not to prejudice either side in other respects. Recorded in the various forms of Friedrich, fol. 35. Editorial note: The entire entry was written by a later hand.",
       "mention": [
         {
-          "person": "Friedrich von Wirsberg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "place": "berlichingen"
         },
         {
           "person": "Eberhard von Gemmingen",
@@ -22,13 +19,16 @@
           ]
         },
         {
-          "person": "Valentin von Berlichingen"
+          "person": "Friedrich von Wirsberg",
+          "personTitle": [
+            "Bishop"
+          ]
         },
         {
           "person": "Hans Christoph von Berlichingen"
         },
         {
-          "person": "Philipp von Rosenberg"
+          "person": "Hans von Rosenberg"
         },
         {
           "person": "Jakob von Rosenberg"
@@ -37,24 +37,48 @@
           "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "lauda"
+        },
+        {
+          "person": "Philipp von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Valentin von Berlichingen"
         }
       ],
       "facts": [
         {
           "person": "Philipp Jakob von Rosenberg",
           "type": "generic",
-          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt."
+          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt."
+          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Hans Oheim von Rosenberg",
           "type": "generic",
-          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt."
+          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ],
       "img": [

@@ -15,16 +15,19 @@
       "english": "King Ruprecht allows the brothers Arnold von Rosenberg and Eberhard von Rosenberg to have a neck court, stocks and gallows in their village of Schweigern.",
       "mention": [
         {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
           ]
         },
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -39,10 +42,16 @@
           "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to have a high court, stocks, and gallows in Schweigern.",
           "mention": [
             {
+              "place": "jagstberg"
+            },
+            {
               "person": "König Ruprecht",
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "schweigern"
             }
           ]
         },
@@ -52,10 +61,16 @@
           "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to have a high court, stocks, and gallows in Schweigern.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "König Ruprecht",
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "schweigern"
             }
           ]
         }
@@ -79,6 +94,12 @@
         },
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -93,10 +114,16 @@
           "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction.",
           "mention": [
             {
+              "place": "jagstberg"
+            },
+            {
               "person": "König Ruprecht",
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "schweigern"
             }
           ]
         },
@@ -106,10 +133,16 @@
           "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "König Ruprecht",
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "schweigern"
             }
           ]
         }

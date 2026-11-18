@@ -9,7 +9,16 @@
       "english": "Niederrimbach, May 25, 1582. Before Christoph Zigler, town scribe of Röttingen and notary, Georg Hindenmeier, Rosenberg's bailiff at Gnötzheim, on behalf of Konrad von Rosenberg of Gnotzheim, protests the removal of a Fraischzeichen (jurisdictional marker) from the dwelling of Georg Weidenmüller at Niederrimbach by Brandenburg officials at Creglingen. Witnesses: Stefan Fuchs, Georg Schmid, both of the court at Neubronn. (Notarial signet of Zigler).",
       "mention": [
         {
+          "place": "gnoetzheim"
+        },
+        {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "roettingen"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -19,7 +28,13 @@
           "content": "served as bailiff at Gnötzheim for the von Rosenberg family and protested on Konrad von Rosenberg’s behalf against the removal of a court sign from Georg Weidenmüller’s house at Niederrimbach.",
           "mention": [
             {
+              "place": "gnoetzheim"
+            },
+            {
               "person": "Konrad von Rosenberg"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         }

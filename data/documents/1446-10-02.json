@@ -9,10 +9,13 @@
       "english": "Ulrich von Rosenberg sells to his brother-in-law, Georg von Hartheim, and his heirs his share of Bretzingen under reservation of repurchase for 1,000 guilders.\n\nPeriod: October 2, 1446 (1446 Sunday after Michael)",
       "mention": [
         {
-          "person": "Ulrich von Rosenberg"
+          "place": "bretzingen"
         },
         {
           "person": "Georg von Hartheim"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
@@ -21,6 +24,9 @@
           "type": "generic",
           "content": "sold his share in Bretzingen to his brother-in-law Georg von Hardheim and his heirs, reserving the right of repurchase.",
           "mention": [
+            {
+              "place": "bretzingen"
+            },
             {
               "person": "Georg von Hardheim"
             }

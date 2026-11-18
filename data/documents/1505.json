@@ -15,9 +15,6 @@
       "english": "Lorenz, Bishop of Würzburg and Duke of Franconia, enfeoffs the knight Hieronymus (Jhero-) von Rosenberg with the following fiefs of the Würzburg foundation as male fiefs, which upon the death of Knight Asmus von Rosenberg fell to his sons Hieronymus and Linhart, but then through partition came to Hieronymus alone: the benefice in the castle chapel at Waldmannshafen (Walthmanshoven); two farms at Gülchsheim, on which Mathes Hertlein and Lorenz Ecke reside respectively. From the latter farm, annual rents of 12 measures of rye, 5 measures of wheat, 8 measures of oats, and 1 measure of peas are due. The farm also includes one-sixth of the small tithe. In addition, the farm delivers annually 6 summer hens and 1 Shrove Tuesday hen. The farm held by Mathes delivers annual rents of 16 measures of rye, 10 measures of oats, and 1 Shrove Tuesday hen. - The enfeoffment also includes: at Steinach an annual rent of 1 florin and 1 Shrove Tuesday hen from a property at Steinach below Brauneck, on which Cuntz Koler resides; at Geiselheim (Geyseln-) 4 measures of rye and oats each, and 4 summer hens, from the farm held by Cuntz Heppel; at Gülchsheim the entire tithe including appurtenances; at Sindalsheim (Sindoltz-) the great and small tithe; at Bofsheim the entire tithe. The enfeoffment is made without prejudice to the feudal rights and customs of the Bishop of Würzburg and the foundation there, and without prejudice to the obligations given to the bishop by the aforementioned deceased knight Asmus as well as by Kunz von Rosenberg.-\n\nSealer: the issuer. On Wednesday after St. John's summer solstice day.\n\nOriginal, parchment, seal described. - Reverse: Note: Jeysolf von Rosenberg has no claim to the goods mentioned herein, but they were assigned to his cousin Lorentz von Rosenberg, belonging to the castle at Waltmanßhofen (16th century). - No. 745\n\nReg. No. 791",
       "mention": [
         {
-          "person": "Lorenz of Würzburg"
-        },
-        {
           "person": "Asmus von Rosenberg",
           "personTitle": [
             "Knight"
@@ -25,6 +22,15 @@
         },
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "person": "Lorenz of Würzburg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
         }
       ]
     }

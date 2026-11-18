@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "rothenburg"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "wrote to Rothenburg interceding for Hintersassen at Ohrenbach."
+          "content": "wrote to Rothenburg interceding for Hintersassen at Ohrenbach.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

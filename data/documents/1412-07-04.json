@@ -12,13 +12,13 @@
       "english": "King Wenceslaus IV once again entrusts his councillor Heinrich von Rosenberg with the protection and administration of Goldenkron Monastery.",
       "mention": [
         {
+          "person": "Heinrich von Rosenberg"
+        },
+        {
           "person": "König Wenceslaus",
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Heinrich von Rosenberg"
         }
       ]
     }

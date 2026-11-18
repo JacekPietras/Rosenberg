@@ -12,6 +12,9 @@
           "person": "Friedrich Zobel von Giebelstadt"
         },
         {
+          "place": "giebelstadt"
+        },
+        {
           "person": "Kunz von Rosenberg"
         },
         {
@@ -29,6 +32,9 @@
           "mention": [
             {
               "person": "Friedrich Zobel von Giebelstadt"
+            },
+            {
+              "place": "giebelstadt"
             }
           ]
         }

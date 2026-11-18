@@ -10,6 +10,15 @@
       "mention": [
         {
           "person": "Hans of Leuchtenberg"
+        },
+        {
+          "place": "leuchtenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -19,7 +28,12 @@
             "Herzog von Österreich"
           ],
           "type": "generic",
-          "content": "was in dispute with the noble von Rosenberg family over Eferdingen, prisoners, and other matters."
+          "content": "was in dispute with the noble von Rosenberg family over Eferdingen, prisoners, and other matters.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Albrecht von Österreich",
@@ -37,6 +51,9 @@
             },
             {
               "person": "Hans vom Leuchtenberg"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         },
@@ -46,7 +63,12 @@
             "Burggraf"
           ],
           "type": "generic",
-          "content": "was chosen as mediator in the disputes between Duke Albrecht of Austria and the von Rosenberg family."
+          "content": "was chosen as mediator in the disputes between Duke Albrecht of Austria and the von Rosenberg family.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Hans von Leuchtenberg",
@@ -54,7 +76,12 @@
             "Landgraf"
           ],
           "type": "generic",
-          "content": "was chosen as mediator in the disputes between Duke Albrecht of Austria and the von Rosenberg family."
+          "content": "was chosen as mediator in the disputes between Duke Albrecht of Austria and the von Rosenberg family.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     }

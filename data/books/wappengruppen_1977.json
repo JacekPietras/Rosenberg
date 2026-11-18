@@ -39,18 +39,42 @@
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "appeared among the witnesses to a matter concerning the parish and tithe at Reicholzheim involving the Bishop of Würzburg and the Counts of Wertheim.",
+          "mention": [
+            {
+              "place": "wertheim-stiftskirche"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1178"
         },
         {
           "person": "Konrad von Uissigheim",
           "type": "generic",
           "content": "appeared among the witnesses to a matter concerning the parish and tithe at Reicholzheim involving the Bishop of Würzburg and the Counts of Wertheim.",
+          "mention": [
+            {
+              "place": "wertheim-stiftskirche"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1178"
         },
         {
           "person": "Herbord von Uissigheim",
           "type": "generic",
           "content": "appeared among the witnesses to a matter concerning the parish and tithe at Reicholzheim involving the Bishop of Würzburg and the Counts of Wertheim.",
+          "mention": [
+            {
+              "place": "wertheim-stiftskirche"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1178"
         },
         {
@@ -67,6 +91,11 @@
           "person": "Martin von Uissigheim",
           "type": "generic",
           "content": "may have been the last member of the von Uissigheim line, which may have ended with him in 1546",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1546"
         }
       ]
@@ -106,10 +135,13 @@
           "content": "may have begun separating by 1285, between the 1260 attestation of Eberhard and Arnold von Uissigheim and Eberhard Rufus’s use of von Rosenberg, as argued in Neumaier [1986] (data/books/neumaier_1986.json#/entries/13).",
           "mention": [
             {
+              "person": "Arnold von Uissigheim"
+            },
+            {
               "person": "Eberhard von Uissigheim"
             },
             {
-              "person": "Arnold von Uissigheim"
+              "place": "rosenberg-town"
             }
           ],
           "date": "1285"
@@ -124,6 +156,11 @@
           "subject": "Four members of the von Rosenberg family",
           "type": "generic",
           "content": "jointly purchased the lordship of Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1381"
         },
         {
@@ -191,6 +228,11 @@
           "person": "Konrad von Schweigern",
           "type": "generic",
           "content": "served as a vassal of the lords of Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1220"
         }
       ]

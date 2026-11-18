@@ -12,6 +12,9 @@
       "english": "Agreement between Goldenkron Monastery and the House of Rosenberg, concluded by Wilhelm von Rosenberg, administrator of the house, and the abbot he had chosen, Johann Milegk, with Abbot Wolfgang of Plass acting as visitor of Goldenkron Monastery.",
       "mention": [
         {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Wilhelm von Rosenberg"
         }
       ]

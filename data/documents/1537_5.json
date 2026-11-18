@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Hans Thomas von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
@@ -17,6 +20,11 @@
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
           "content": "was a party in a matter with the former Swabian League at a Rheinische Einung meeting in Nuremberg.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ],
           "date": "1537-10"
         }
       ],

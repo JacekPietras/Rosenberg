@@ -18,13 +18,16 @@
           ]
         },
         {
-          "person": "Siegmund Marschalk zu Bappenhein"
-        },
-        {
           "person": "Haubt Marschalk zu Bappenhein"
         },
         {
           "person": "Heinrich Marschalk"
+        },
+        {
+          "place": "pappenheim"
+        },
+        {
+          "person": "Siegmund Marschalk zu Bappenhein"
         }
       ],
       "facts": [
@@ -37,10 +40,13 @@
           "content": "arbitrated an agreement between the brothers Sigmund and Haupt Marschalk von Pappenheim concerning the administration and defense of Pappenheim Castle.",
           "mention": [
             {
-              "person": "Siegmund Marschalk von Pappenheim"
+              "person": "Haubt Marschalk von Pappenheim"
             },
             {
-              "person": "Haubt Marschalk von Pappenheim"
+              "place": "pappenheim"
+            },
+            {
+              "person": "Siegmund Marschalk von Pappenheim"
             }
           ]
         }

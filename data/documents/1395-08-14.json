@@ -12,22 +12,19 @@
       "english": "Hans Mönch von Rosenberg pledges a quarter of the third part of Schadeck Castle, which his father Kunz Mönch von Rosenberg had held, and a quarter of the third part, which had been pledged by Eberhard von Rosenberg to his father, to Eberhard von Neipperg, Hans von Hirschhorn, Eberhard von Hirschhorn, and Kunz Mönch von Rosenberg, Vogt zu Steinsberg.",
       "mention": [
         {
-          "person": "Hans Mönch von Rosenberg"
-        },
-        {
-          "person": "Kunz Mönch von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
+          "person": "Eberhard von Hirschhorn"
         },
         {
           "person": "Eberhard von Neipperg"
         },
         {
-          "person": "Hans von Hirschhorn"
+          "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Eberhard von Hirschhorn"
+          "person": "Hans Mönch von Rosenberg"
+        },
+        {
+          "person": "Hans von Hirschhorn"
         },
         {
           "person": "Kunz Mönch von Rosenberg"
@@ -40,22 +37,22 @@
           "content": "pledged to Eberhard von Neipperg, Hans and Eberhard von Hirschhorn, and Kunz Mönch, Vogt zu Steinsberg, a quarter of the third of Schadeck Castle held by his father Kunz Mönch von Rosenberg and a quarter of the third previously pledged by Eberhard von Rosenberg to his father.",
           "mention": [
             {
+              "person": "Eberhard von Hirschhorn"
+            },
+            {
               "person": "Eberhard von Neipperg"
             },
             {
-              "person": "Hans von Hirschhorn"
+              "person": "Eberhard von Rosenberg"
             },
             {
-              "person": "Eberhard von Hirschhorn"
+              "person": "Hans von Hirschhorn"
             },
             {
               "person": "Kunz Mönch"
             },
             {
               "person": "Kunz Mönch von Rosenberg"
-            },
-            {
-              "person": "Eberhard von Rosenberg"
             }
           ]
         }

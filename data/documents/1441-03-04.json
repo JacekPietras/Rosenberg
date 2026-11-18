@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Philipp von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -37,7 +40,12 @@
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "may have been the son of Sinolt von Rosenberg; the archival description itself marks this identification as uncertain."
+          "content": "may have been the son of Sinolt von Rosenberg; the archival description itself marks this identification as uncertain.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     }

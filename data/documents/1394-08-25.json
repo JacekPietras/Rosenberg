@@ -10,13 +10,13 @@
       "english": "King Wenzel of Bohemian declares that he is not hostile toward the brothers Kaspar and Gundakar von Starhemberg regarding his and Heinrich von Rosenberg's detention in Wildberg.",
       "mention": [
         {
+          "person": "Heinrich von Rosenberg"
+        },
+        {
           "person": "König Wenceslaus",
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Heinrich von Rosenberg"
         }
       ]
     },

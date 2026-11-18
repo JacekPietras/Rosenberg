@@ -13,6 +13,9 @@
           "personTitle": [
             "Schultheiß"
           ]
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
@@ -22,7 +25,12 @@
             "Schultheiß zu Nürnberg"
           ],
           "type": "generic",
-          "content": "certified the council’s judgment with the Nuremberg aldermen in the dispute between Albrecht of St. Sebald and Eberhard Quetrer."
+          "content": "certified the council’s judgment with the Nuremberg aldermen in the dispute between Albrecht of St. Sebald and Eberhard Quetrer.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ]
         }
       ]
     }

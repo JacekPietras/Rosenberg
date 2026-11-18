@@ -15,6 +15,9 @@
       "english": "Ruprecht confirms the inheritance bequeathed by Eberhard von Rosenberg to his wife Elisabeth von Erligheim, including property belonging to Boxberg.",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Eberhard von Rosenberg"
         },
         {
@@ -43,7 +46,12 @@
           "person": "vogt_zu_Lauda",
           "personDeceased": true,
           "type": "generic",
-          "content": "had endowed the Wittum with properties belonging to Boxberg."
+          "content": "had endowed the Wittum with properties belonging to Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Ruprecht",
@@ -52,6 +60,9 @@
           "mention": [
             {
               "person": "Elisabeth von Erligheim"
+            },
+            {
+              "place": "lauda"
             }
           ]
         }

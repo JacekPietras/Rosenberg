@@ -15,6 +15,12 @@
       "english": "1405 December 30, Heidelberg (corrected from 1405 May 4). King Ruprecht permits Konrad von Rosenberg der Jüngere to assign his wife Ketterlin, daughter of Cuntz Landschad von Steynach, a widow’s portion of 2,000 florins secured on half his share in Boxberg.",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
@@ -42,7 +48,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "was permitted to assign his wife Ketterlin a 2,000-florin wittum on half his share of Boxberg."
+          "content": "was permitted to assign his wife Ketterlin a 2,000-florin wittum on half his share of Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ]
     }

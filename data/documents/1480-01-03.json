@@ -11,29 +11,67 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ],
       "img": [

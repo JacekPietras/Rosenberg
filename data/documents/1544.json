@@ -10,13 +10,24 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "captured the Nuremberg citizen Baumgartner."
+          "content": "captured the Nuremberg citizen Baumgartner.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ]
         }
       ],
       "img": [

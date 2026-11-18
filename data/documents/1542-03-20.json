@@ -10,10 +10,16 @@
       "english": "In 1542, on Monday after Laetare Sunday, the community of Baldersheim bound itself to Georg von Leutzenbronn and Juliana von Rosenberg, his wife, for a principal sum of 2,000 florins and annual interest of 100 florins. Second register of Conrad’s contracts, fol. 126. Marginal insertion: see Leutzenbronn, volume 2, fol. 50.",
       "mention": [
         {
+          "place": "baldersheim"
+        },
+        {
           "person": "Georg von Leutzenbronn"
         },
         {
           "person": "Juliana von Rosenberg"
+        },
+        {
+          "place": "leutzenbronn"
         }
       ],
       "facts": [
@@ -27,6 +33,9 @@
           "type": "generic",
           "content": "was named with her husband Georg von Leutzenbronn as a creditor under a bond from the community of Baldersheim for a principal sum and annual interest.",
           "mention": [
+            {
+              "place": "baldersheim"
+            },
             {
               "person": "Georg von Leutzenbronn"
             }

@@ -12,19 +12,29 @@
           "person": "Kunz von Rosenberg"
         },
         {
-          "person": "Kunz von Rosenberg"
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "acknowledged a fief of Schloss Waldmannshofen from Margraves Friedrich and Sigmund of Brandenburg."
+          "content": "acknowledged a fief of Schloss Waldmannshofen from Margraves Friedrich and Sigmund of Brandenburg.",
+          "mention": [
+            {
+              "place": "waldmannshofen-castle"
+            }
+          ]
         },
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "sealed his fief acknowledgment for Schloss Waldmannshofen."
+          "content": "sealed his fief acknowledgment for Schloss Waldmannshofen.",
+          "mention": [
+            {
+              "place": "waldmannshofen-castle"
+            }
+          ]
         }
       ]
     }

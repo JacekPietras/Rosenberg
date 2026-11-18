@@ -14,37 +14,46 @@
           "person": "Georg Friedrich von Seckendorf"
         },
         {
+          "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "place": "gnoetzheim"
+        },
+        {
           "person": "Hans Georg von Seckendorf"
         },
         {
-          "person": "Georg Siegmund von Rosenberg"
+          "place": "oberschuepf"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Georg Siegmund von Rosenberg",
           "personTitle": [
-            "zu Waldmannshofen",
-            "zu Haldenbergstetten",
             "zu Gnötzheim",
-            "zu Schüpf"
+            "zu Haldenbergstetten",
+            "zu Schüpf",
+            "zu Waldmannshofen"
           ],
           "type": "sibling",
           "of": "Albrecht Christoph von Rosenberg",
           "ofTitle": [
-            "zu Waldmannshofen",
             "zu Gnötzheim",
+            "zu Rosenberg",
             "zu Schüpf",
-            "zu Rosenberg"
+            "zu Waldmannshofen"
           ]
         },
         {
           "person": "Albrecht Christoph von Rosenberg",
           "personTitle": [
-            "zu Waldmannshofen",
             "zu Gnötzheim",
+            "zu Rosenberg",
             "zu Schüpf",
-            "zu Rosenberg"
+            "zu Waldmannshofen"
           ],
           "type": "generic",
           "content": "served as a guardian for the sons of the late Hans Georg von Seckendorf.",
@@ -57,10 +66,10 @@
         {
           "person": "Georg Siegmund von Rosenberg",
           "personTitle": [
-            "zu Waldmannshofen",
-            "zu Haldenbergstetten",
             "zu Gnötzheim",
-            "zu Schüpf"
+            "zu Haldenbergstetten",
+            "zu Schüpf",
+            "zu Waldmannshofen"
           ],
           "type": "generic",
           "content": "guaranteed the debt that the guardians acknowledged to Lorenz von Münster."

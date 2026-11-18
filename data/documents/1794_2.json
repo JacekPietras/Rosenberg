@@ -9,10 +9,25 @@
       "english": "Files concerning the re-drawing of lots for the castle of Haltenbergstetten (now called Niederstetten) and the village of the same name, sold in 1415 by Konrad Schenk von Limpurg to Kunz von Rosenberg zu Bocksberg under the reservation of an eternal right of repurchase. (The occasion arose at that time from the lapse of the lordship through the extinction of the Hatzfeld male line in the year 1655 in this branch. The plan could not be carried out.)\n\nDuration: 1794-1795\n\nContents: Contains among others: Correspondence with the archivist Wolf at Obersontheim, archivists' reports, drafts and notes for a legal deduction; letters from 1578 and 1694 mentioning Haltenbergstetten; deeds of sale between the Brothers of Hohenlohe concerning this lordship dated April 17 (Thursday after Easter) 1365, February 18 (Monday after Valentine) 1366, and June 10 (Sunday before St. Veit's Day) 1369; a Hohenlohe letter concerning the refutation of a morning-gift on Haltenbergstetten (partly certified copies, paper); copies of documents; register of the acta judicialis in the matter of Hohenlohe-Bartenstein and Schillingsfürst against Mainz-Ansbach and Würzburg, fief courts regarding the lapse of the lordship of Hohenlohe through extinction of the Hatzfeld male line with Count Hermann and transition \"ipso jure\" to Hohenlohe, 1658\n\nExtent: 1 file",
       "mention": [
         {
+          "place": "bartenstein"
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
           "person": "Konrad Schenk von Limpurg"
         },
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "niederstetten"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -26,6 +41,9 @@
           "mention": [
             {
               "person": "Konrad von Limpurg"
+            },
+            {
+              "place": "schloss-haltenbergstetten"
             }
           ],
           "date": "1415"

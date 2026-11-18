@@ -12,16 +12,22 @@
       "english": "1409 June 11, Heidelberg. King Ruprecht enfeoffs Hanmann von Sickingen, Vizedom zu Neuenstadt, and his son Hans von Sickingen with Mure Castle as a proper male fief; they had bought it from Hans von Rosenberg by hereditary and perpetual title. Crossed out, with the note: “Vacated, because it was altered in the great register.”",
       "mention": [
         {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Hans von Sickingen"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
           ]
         },
         {
-          "person": "Hans von Sickingen"
-        },
-        {
-          "person": "Hans von Rosenberg"
+          "place": "sickingen"
         }
       ]
     }

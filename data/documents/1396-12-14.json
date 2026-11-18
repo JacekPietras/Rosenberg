@@ -9,13 +9,22 @@
       "english": "Sigiost, Landgrave of Leuchtenberg and Count of Hals, certifies that Heinrich, Lord von Rosenberg, has transferred to him the market town of Haslach in return for the fortress of Wildenstein, which Heinrich held in pledge from the brothers Peter, Ulrich, and Hans von Rosenberg.\n\nSeal: Five seals.",
       "mention": [
         {
-          "person": "Peter von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
+          "place": "burg-wildenstein"
         },
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "leuchtenberg"
+        },
+        {
+          "person": "Peter von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ]
     }

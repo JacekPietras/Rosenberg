@@ -9,10 +9,16 @@
       "english": "Dispute with Counts Philipp the Elder and the Younger of Rieneck, then with Georg von Rosenberg and Hans von Rosenberg regarding enfeoffment of a farm at Impfingen (town of Tauberbischofsheim, Main-Tauber-Kreis, Baden-Württemberg) and the tithe at \"Marpach\"",
       "mention": [
         {
+          "place": "bischofsheim"
+        },
+        {
           "person": "Georg von Rosenberg"
         },
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "rieneck"
         }
       ],
       "facts": [

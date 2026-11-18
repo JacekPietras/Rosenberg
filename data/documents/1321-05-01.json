@@ -8,10 +8,19 @@
       "english": "Count Rudolf of Wertheim and Rudolf von Wertheim, Canon zu Würzburg, brothers, renounce all their feudal rights to the properties owned by the Order of St. John out of love for their uncle Count Berthold of Henneberg, Prior of the Order of St. John and Commander of Boxberg.\n\nSeal of Count of Wertheim badly damaged, that of Canon Rudolf missing",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Rudolf of Wertheim"
         },
         {
           "person": "Rudolf von Wertheim"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -58,7 +67,12 @@
             "Komtur zu Boxberg"
           ],
           "type": "generic",
-          "content": "led the Johanniter commandery at Boxberg."
+          "content": "led the Johanniter commandery at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Rudolf von Wertheim",
@@ -66,7 +80,15 @@
             "Graf"
           ],
           "type": "generic",
-          "content": "renounced the Wertheim family’s feudal rights over the Johanniter goods at Boxberg in favor of Henneberg."
+          "content": "renounced the Wertheim family’s feudal rights over the Johanniter goods at Boxberg in favor of Henneberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "wertheim-stiftskirche"
+            }
+          ]
         }
       ],
       "img": [

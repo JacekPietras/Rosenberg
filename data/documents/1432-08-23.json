@@ -10,6 +10,9 @@
       "english": "The archive summary identifies Erkinger, whom the transcription calls “Erkinger, Herr zu Schwarzenbach und von Seinsheim,” as Erkinger von Seinsheim. On the eve of St Bartholomew’s Day in 1432, Bishop Hans von Brunn, out of special favor, granted Erkinger von Seinsheim, Herr zu Schwarzenbach, and his sons Hans and Sigmund and their male heirs a proper castle fief: the High House in the castle on Our Lady’s Mount, between the middle tower and the chancery, enclosed by a small garden. Since Erkinger had lent the bishop 1,000 florins, Johann also enfeoffed him with the tithe at Unterntief, one twelfth of the tithe at Westheim, and the annual fair at Eichen, with all their rights, revenues, and appurtenances. These had been held from the bishopric by Hans von Rosenberg, Ritter; Hans’s wife was to retain them for her lifetime at Rothenburg, as set out in the deeds. The bishop reserved the right to redeem these male fiefs for 1,000 florins. Erkinger was to invest that sum in his own properties, make them fiefs, and use them for the castle fief. The archive summary identifies the sons as Johann and Siegmund von Schwarzenberg. Recorded in the second register of Brun’s fiefs, fol. 12. Marginal note: “b”; the number three is written in pencil in the margin.",
       "mention": [
         {
+          "place": "brunn"
+        },
+        {
           "person": "Erkinger von Seinsheim"
         },
         {
@@ -19,9 +22,6 @@
           ]
         },
         {
-          "person": "Erkinger von Seinsheim"
-        },
-        {
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
@@ -29,6 +29,12 @@
         },
         {
           "person": "Hans von Schwarzenberg"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "seinsheim"
         },
         {
           "person": "Siegmund von Schwarzenberg"
@@ -49,7 +55,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was named as the previous holder of the fiefs at Nieder Tief, Westheim, and Eichen; his wife was to hold them for her lifetime at Rothenburg."
+          "content": "was named as the previous holder of the fiefs at Nieder Tief, Westheim, and Eichen; his wife was to hold them for her lifetime at Rothenburg.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ],
       "img": [

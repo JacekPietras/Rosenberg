@@ -10,19 +10,25 @@
       "english": "(Squire) Engelhard, Lord of Weinsberg (Wins-), son of the deceased Conrad the Elder of W., pledges to Archbishop Baldewin of Trier, guardian of Mainz, not to admit Conrad, the son of his deceased brother, to Weinsberg Castle before he has come of age and confirmed the sale of Scheuerberg1 (Schur-) etc. The knights Gerhard von Talheim called von Blankenstein (Blanckensteyn) and Heinrich von Ehrenberg (Eren-), who now hold Weinsberg Castle on his behalf and on that of his uncle, Margrave Hermann of Baden, (of which he owns half and which Engelhard has pledged to him for 700 pounds Heller), guarantee the promise. If the Margrave redeems his portion of the castle, then the two knights shall invest the 700 pounds and \"the assessment thereon of annual revenue, which amounts each year to 80 pounds Heller, in secure annuities and good [lands],\" and this shall serve the Archbishop as pledge for the fulfillment of the promise. If one of the knights dies, then Engelhart von Ebersberg (Ebirsperg or Ebirspach) takes his place or Ebirhart Rüdt (Rudin). If Engelhart breaks his promise, then he himself along with Weinsberg is forfeit to the Foundation. The issuer, the two guarantors, the two substitutes, and the\n\nWitnesses: knights Conrad Schenk von Erbach (-pach), Johan von Riedern (Ri-), Eberhard von Rosenberg (Rosin-), Conrad von Neuenstein (Nuwensteyn), Heinrich von Bieringen (Bi-), Reinhard von Sickingen, and the chaplain Heinrich von Schurberg seal.",
       "mention": [
         {
-          "person": "Gerhard von Talheim"
-        },
-        {
           "person": "Eberhard Rüd"
-        },
-        {
-          "person": "Konrad Schenk von Erbach"
         },
         {
           "person": "Eberhard von Rosenberg"
         },
         {
+          "person": "Gerhard von Talheim"
+        },
+        {
+          "person": "Konrad Schenk von Erbach"
+        },
+        {
           "person": "Reinhard von Sickingen"
+        },
+        {
+          "place": "riedern"
+        },
+        {
+          "place": "weinsberg"
         }
       ],
       "facts": [
@@ -36,6 +42,9 @@
           "mention": [
             {
               "person": "Engelhard von Weinsberg"
+            },
+            {
+              "place": "weinsberg"
             }
           ]
         }

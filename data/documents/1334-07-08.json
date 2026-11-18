@@ -9,10 +9,25 @@
       "english": "Count Heinrich; his son Gerhard; Countess Elsebecht, widow of Count Ludwig the Elder, and their sons Gerhart and Albrecht, Counts of Rieneck (Rynecke), reach an agreement with Archbishop Baldewin of Trier, protector and guardian of the Foundation of Mainz, concerning the house of Rieneck (-e) and whatever belongs to their cousin, the deceased Count Ludwig of Rotenfels (or -vels): \"thus the matter of the aforementioned our lord and of the foundation of Mainz and our matter shall be one matter and one thing.\" What they gain in fortresses, goods, and people, they divide into equal shares; likewise the inheritance of Count Ludwig of Rotenfels, except for Bartenstein Castle (Barthensteyn, or Bartenstein), which remains with Mainz. The castles of the issuers shall be open to Mainz, except against Lutze (or Lucze) of Hohenlohe (-loch), brother of Countess Elsebecht, who in turn must not help her brother against the Archdiocese. Also, the portion of the bailiwick in the city of Aschaffenburg that the deceased Count Ludwig held shall belong to Mainz in advance. The Archdiocese takes the issuers under its protection and opens its castles to them. In case of dispute, a court of arbitration shall decide, whose chairman is the vicomte, or if there is none, the chief bailiff of Aschaffenburg. The Mainze arbitrator is the knight Ebirhart (or Eber-) von Rosenberg, Vogt zu Dürn (Dorne or Duorne); from Rieneck side, the noble squire Heinrich Phal of Grunsfeld (Grunsfelt, or -velt). The Mainze arbitrator shall always be a resident castle man of the Archdiocese above Aschaffenburg. The church patronages at Werbach (-pach) and Affolderbach (Affalder-) become Mainze, those at Lohr (Lare)1 and Bieber (Byberach) Rieneckian, those at Lauda and Althain (-heym, or heim) remain joint, \"so long until we win them from both sides.\" \"When they come into our hand,\" then they shall be divided by the arbitrators within one month. If they become vacant in the meantime, then we, \"when we hold the fiefs from other lords, shall enfeoff the churches\" in agreement with the respective Archbishop or the Dean of Mainz, \"if no bishop exists at Mentze.\" Elsebeth and her sons Gerhart and Albrecht commit themselves for the underage Counts Lucze and Gocze and Elsebeth's other sons. The issuers have a charter of B.'s concerning this, with his seal and that of the Cathedral Chapter. The issuers seal.",
       "mention": [
         {
+          "place": "bartenstein"
+        },
+        {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "knight"
           ]
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "lauda"
+        },
+        {
+          "place": "rieneck"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [
@@ -23,12 +38,22 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "was appointed Mainz arbitrator in the agreement between Baldewin of Trier and the counts of Rieneck."
+          "content": "was appointed Mainz arbitrator in the agreement between Baldewin of Trier and the counts of Rieneck.",
+          "mention": [
+            {
+              "place": "rieneck"
+            }
+          ]
         },
         {
           "subject": "Burg Bartenstein",
           "type": "generic",
-          "content": "was to remain with Mainz under the agreement between Baldewin of Trier and the counts of Rieneck."
+          "content": "was to remain with Mainz under the agreement between Baldewin of Trier and the counts of Rieneck.",
+          "mention": [
+            {
+              "place": "rieneck"
+            }
+          ]
         }
       ]
     }

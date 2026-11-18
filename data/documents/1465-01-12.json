@@ -9,6 +9,9 @@
       "english": "Ulrich von Rosenberg, who has purchased a share of Maienfels, solemnly obligates himself by oath to the [inserted] deed [U 1251].\n\nDate: January 12, 1465 (Saturday after Erhart's Day)\n\nSealer: A.",
       "mention": [
         {
+          "place": "maienfels-castle"
+        },
+        {
           "person": "Ulrich von Rosenberg"
         }
       ],
@@ -16,12 +19,22 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "bought a share of Maienfels."
+          "content": "bought a share of Maienfels.",
+          "mention": [
+            {
+              "place": "maienfels-castle"
+            }
+          ]
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "swore to observe the inserted deed concerning Maienfels."
+          "content": "swore to observe the inserted deed concerning Maienfels.",
+          "mention": [
+            {
+              "place": "maienfels-castle"
+            }
+          ]
         }
       ],
       "img": [

@@ -11,46 +11,67 @@
       "english": "Heinrich von Witzleben, canon of Würzburg and district judge of the Duchy of Franconia, states: The district court appointed Reinbot Streckfuß zu Jagstberg to the usufruct of all the properties of the mayor and all the citizens of Hall in the city, in the villages of Hall, Erlach, Münkheim, Altdorf, Lorenzenzimmern, Eckartshausen, Michelbach, Sontheim and in the Duchy of Franconia, because according to the testimony of his supervisor Reglin von Wiesenbach he had sat for more than three days and six weeks. As his protectors [always with all of this name] are given: Count Heinrich von Henneberg, Count Hans von Wertheim, Count Günter von Schwarzburg, Dietrich von Bickenbach, Ulrich and Friedrich von Hohenlohe, Eberhard Hofwart, Wiprecht Martin, Friedrich von Seinsheim, Burkhard von Seckendorf zu Frankenberg, Hartmut Fuchs, Heinrich Schenk, Wilhelm von Bebenburg, Peter von Stettenberg, Eberhard von Hartheim, Eberhard von Fechenbach, Fritz Huter, Fritz von Gartenhofen, Leopold von Seldeneck, Raban von Neufels, Burkhard von Wollmershausen, Simon von Stetten, the Glistening Wolf von Wunnenstein, Ulrich von Tierbach, Kunz von Ellrichshausen, Friedrich von Riedern, Konrad von Berlichingen, Wilhelm von Helmstadt, Dietrich Rüd, Eberhard von Rosenberg, Hans von Vellberg, Wiprecht Tanner and the mayors of Rothenburg upon the Tauber, Windsheim, Dinkelsbühl, Mergentheim, Tauberbischofsheim, Lauda, Niedernhall, Ingelfingen, Crailsheim, Forchtenberg, Jagstberg, Röttingen, Weikersheim, the justice of the peace and all those who have sworn to the peace.",
       "mention": [
         {
-          "person": "Hans von Wertheim"
-        },
-        {
-          "person": "Dietrich von Bickenbach"
-        },
-        {
-          "person": "Ulrich von Hohenlohe"
-        },
-        {
-          "person": "Friedrich von Hohenlohe"
-        },
-        {
-          "person": "Friedrich von Seinsheim"
+          "place": "bischofsheim"
         },
         {
           "person": "Burkhard von Seckendorf"
         },
         {
-          "person": "Heinrich Schenk"
+          "person": "Dietrich Rüd"
+        },
+        {
+          "person": "Dietrich von Bickenbach"
         },
         {
           "person": "Eberhard von Hartheim"
         },
         {
-          "person": "Leopold von Seldeneck"
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Friedrich von Hohenlohe"
         },
         {
           "person": "Friedrich von Riedern"
         },
         {
+          "person": "Friedrich von Seinsheim"
+        },
+        {
+          "person": "Hans von Wertheim"
+        },
+        {
+          "person": "Heinrich Schenk"
+        },
+        {
+          "place": "jagstberg"
+        },
+        {
           "person": "Konrad von Berlichingen"
+        },
+        {
+          "place": "lauda"
+        },
+        {
+          "person": "Leopold von Seldeneck"
+        },
+        {
+          "place": "roettingen"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "schwarzburg"
+        },
+        {
+          "person": "Ulrich von Hohenlohe"
         },
         {
           "person": "Wilhelm von Helmstadt"
         },
         {
-          "person": "Dietrich Rüd"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
+          "place": "wurzburg"
         }
       ],
       "facts": [

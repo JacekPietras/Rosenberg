@@ -11,7 +11,19 @@
           "person": "Batt Horneck von Hornberg"
         },
         {
+          "place": "bobstadt"
+        },
+        {
+          "place": "boxberg"
+        },
+        {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wolchingen"
         }
       ],
       "facts": [
@@ -32,6 +44,18 @@
           "mention": [
             {
               "person": "Batt Horneck von Hornberg"
+            },
+            {
+              "place": "bobstadt"
+            },
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wolchingen"
             }
           ]
         },
@@ -44,7 +68,19 @@
           "content": "settled disputes between the Mergentheim commandery of the Teutonic Order and the Rosenberg brothers concerning boundaries at Boxberg, Wölchingen, and Bobstadt, the Hesbach forest, and other neighboring matters jointly with Georg von Rosenberg.",
           "mention": [
             {
+              "place": "bobstadt"
+            },
+            {
+              "place": "boxberg"
+            },
+            {
               "person": "Georg von Rosenberg"
+            },
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wolchingen"
             }
           ]
         }

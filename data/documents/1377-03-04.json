@@ -9,10 +9,13 @@
       "english": "Johann, parish priest in Rosenberg, sells the villagers Paul and Swacho, under emphyteutic tenure, the farm in the village of Kwassow for 22 talents of Viennese pennies and in return for an annual rent of two talents in the same coin.\n\nSeals: Three seals hang from parchment strips. a) Damaged, rather large, and in white wax. — St. Nicholas. — + S. Johanni . . . . bani D . . . . enberch. b) and c) The seals of Peter and Hans von Rosenberg in red wax, as in CIV and CXIV.",
       "mention": [
         {
+          "person": "Hans von Rosenberg"
+        },
+        {
           "person": "Peter von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "rosenberg-town"
         }
       ],
       "img": [

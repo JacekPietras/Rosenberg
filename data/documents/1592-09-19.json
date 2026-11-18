@@ -9,19 +9,13 @@
       "english": "Bernhard von Liebenstein zu Liebenstein, Adam Ulrich Schenk von Siman, Bambergh counselor and captain at Kronach, and Reinhard von Gemmingen mediate between the brothers Konrad, Albert Christoph and Georg Siegmund von Rosenberg regarding the division of their inheritance.\n\nSeal: Konrad von Rosenberg; Albrecht Christoph von Rosenberg; Siegmund von Rosenberg; Bernhard von Liebenstein; Reinhard von Gemmingen",
       "mention": [
         {
-          "person": "Bernhard von Liebenstein"
-        },
-        {
           "person": "Adam Ulrich Schenk"
         },
         {
-          "person": "Reinhard von Gemmingen"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "person": "Bernhard von Liebenstein"
         },
         {
           "person": "Georg Siegmund von Rosenberg"
@@ -30,16 +24,10 @@
           "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Albrecht Christoph von Rosenberg"
+          "person": "Reinhard von Gemmingen"
         },
         {
           "person": "Siegmund von Rosenberg"
-        },
-        {
-          "person": "Bernhard von Liebenstein"
-        },
-        {
-          "person": "Reinhard von Gemmingen"
         }
       ],
       "facts": [
@@ -59,10 +47,10 @@
           "content": "settled the division of their inheritance with the mediation of Bernhard von Liebenstein, Adam Ulrich Schenk von Siman and Reinhard von Gemmingen.",
           "mention": [
             {
-              "person": "Bernhard von Liebenstein"
+              "person": "Adam Ulrich Schenk"
             },
             {
-              "person": "Adam Ulrich Schenk"
+              "person": "Bernhard von Liebenstein"
             },
             {
               "person": "Reinhard von Gemmingen"

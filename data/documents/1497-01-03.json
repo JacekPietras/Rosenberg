@@ -10,12 +10,6 @@
       "english": "Bishop Lorenz made an agreement between Philipp von Weinsberg der Ältere and Erasmus von Rosenberg, Ritter, and Luithardt von Rosenberg, identified as father and son. The archive summary supplies the Rosenberg surname for Erasmus. The agreement addressed their dispute concerning hares, chickens, and an unclear item (`hechtrildbrech`), as well as flax placed in the Gollach; the sheep drive into the district of Gülchsheim; and Hans Haus Laulndorfer’s matter concerning damaged flax. The summary reads the source’s reference to `zehen des Scheffens` as the ten Schöffen and connects it with the punishment of servants; the text also mentions beating and apprehending them, among other matters. Done on Tuesday after St Mary’s Day in 1497. Recorded in Conrad’s first register of contracts, fol. 192. The summary identifies Bishop Lorenz as Lorenz von Bibra.",
       "mention": [
         {
-          "person": "Philipp von Weinsberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
           "person": "Erasmus von Rosenberg",
           "personTitle": [
             "Ritter"
@@ -23,6 +17,15 @@
         },
         {
           "person": "Lorenz von Bibra"
+        },
+        {
+          "person": "Philipp von Weinsberg",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -36,6 +39,9 @@
           "mention": [
             {
               "person": "Philipp von Weinsberg"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         },
@@ -45,10 +51,10 @@
           "content": "entered an agreement with Philipp von Weinsberg and Erasmus von Rosenberg concerning game, flax, sheep grazing, and related disputes.",
           "mention": [
             {
-              "person": "Philipp von Weinsberg"
+              "person": "Erasmus von Rosenberg"
             },
             {
-              "person": "Erasmus von Rosenberg"
+              "person": "Philipp von Weinsberg"
             }
           ]
         }

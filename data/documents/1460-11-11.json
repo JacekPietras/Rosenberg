@@ -10,6 +10,12 @@
       "mention": [
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -29,6 +35,9 @@
               "personTitle": [
                 "Ritter"
               ]
+            },
+            {
+              "place": "oberschuepf"
             }
           ]
         }

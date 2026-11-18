@@ -24,22 +24,22 @@
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "knight"
-          ]
-        },
-        {
           "person": "Engelhard von Rosenberg"
         },
         {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "knight"
-          ]
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "lauda"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wolchingen"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -59,7 +59,12 @@
           ],
           "personDeceased": true,
           "type": "generic",
-          "content": "was represented by his wife and sons, who undertook through the parish priest of Wölchingen to pursue the tithe case before the bishop by the next feast of Saint Martin and submit to Church judgment."
+          "content": "was represented by his wife and sons, who undertook through the parish priest of Wölchingen to pursue the tithe case before the bishop by the next feast of Saint Martin and submit to Church judgment.",
+          "mention": [
+            {
+              "place": "wolchingen"
+            }
+          ]
         },
         {
           "person": "vogt_zu_Lauda",
@@ -71,13 +76,13 @@
           "content": "was granted ecclesiastical burial by Bishop Gerhard of Würzburg after his wife and sons undertook to pursue the tithe case and Engelhard von Rosenberg gave further promises.",
           "mention": [
             {
+              "person": "Engelhard von Rosenberg"
+            },
+            {
               "person": "Gerhard of Würzburg",
               "personTitle": [
                 "Bishop"
               ]
-            },
-            {
-              "person": "Engelhard von Rosenberg"
             }
           ]
         },
@@ -91,13 +96,13 @@
           "content": "was accused, together with Konrad von Rosenberg, Arnold von Rosenberg, and another Konrad von Rosenberg, of usurping and continuing to hold the tithes of Wölchingen without just title.",
           "mention": [
             {
-              "person": "Konrad von Rosenberg"
-            },
-            {
               "person": "Arnold von Rosenberg"
             },
             {
               "person": "Konrad von Rosenberg"
+            },
+            {
+              "place": "wolchingen"
             }
           ]
         },

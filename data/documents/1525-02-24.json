@@ -9,13 +9,22 @@
       "english": "Albrecht, Hans, Jörg Bopp, Daniel, and Götz, brothers von Adelsheim, certify that they still owe Ludwig von Schrozberg, son of Hans von Schrozberg, 500 gulden toward the purchase price for Schloss and village Schrozberg. They obligate themselves to pay the sum plus 50 gulden interest by Petri Cathedra 1527 in Rothenburg o.d.Tauber or Crailsheim. Guarantors are Zaisolph von Rosenberg, Hans and Philipp von Berlichingen (the latter currently Amtmann zu Jagstberg), and Wolf von Vellberg.\n\nDuration: 1525 (February 24, 1525 - Friday after Petri Cathedra)",
       "mention": [
         {
-          "person": "Zaisolph von Rosenberg"
+          "place": "adelsheim"
         },
         {
           "person": "Hans von Berlichingen"
         },
         {
+          "place": "jagstberg"
+        },
+        {
           "person": "Philipp von Berlichingen"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -25,7 +34,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "stood surety for the brothers von Adelsheim’s remaining payment for Schloss and village Schrozberg."
+          "content": "stood surety for the brothers von Adelsheim’s remaining payment for Schloss and village Schrozberg.",
+          "mention": [
+            {
+              "place": "adelsheim"
+            }
+          ]
         }
       ],
       "img": [

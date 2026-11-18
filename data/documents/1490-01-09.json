@@ -10,13 +10,24 @@
       "mention": [
         {
           "person": "Erasmus von Rosenberg"
+        },
+        {
+          "place": "herrieden"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
         {
           "person": "Erasmus von Rosenberg",
           "type": "generic",
-          "content": "joined the appeal on behalf of Bishop Wilhelm of Eichstätt to Emperor Friedrich III against a summons by the Nuremberg Landrichter."
+          "content": "joined the appeal on behalf of Bishop Wilhelm of Eichstätt to Emperor Friedrich III against a summons by the Nuremberg Landrichter.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ]
         }
       ]
     }

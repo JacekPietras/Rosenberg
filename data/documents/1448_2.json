@@ -7,6 +7,11 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10596858",
       "german": "Korrespondenz Darmstadts mit Frankfurt, betr. Nichtbeteiligung des More im Dienst derer von Rosenburg bei einem Raub",
       "english": "Correspondence between Darmstadt and Frankfurt, concerning the non-participation of More, in the service of the von Rosenburg, in a robbery",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "subject": "the von Rosenburg",

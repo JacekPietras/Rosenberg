@@ -9,7 +9,19 @@
       "english": "Christoph Rüdt of and to Bödigheim, Collenberg and Eubigheim sells to Konrad von Rosenberg his one-third share of the great and small tithe at Buch am Ahorn.",
       "mention": [
         {
+          "place": "boedigheim-kreuzkirche"
+        },
+        {
+          "place": "buch"
+        },
+        {
           "person": "Christoph Rüd"
+        },
+        {
+          "place": "eubigheim"
+        },
+        {
+          "place": "kollenberg"
         },
         {
           "person": "Konrad von Rosenberg"
@@ -21,6 +33,9 @@
           "type": "generic",
           "content": "bought Christoph Rüdt’s third share of the great and small tithes at Buch am Ahorn.",
           "mention": [
+            {
+              "place": "buch"
+            },
             {
               "person": "Christoph Rüd"
             }

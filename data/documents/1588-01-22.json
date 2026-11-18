@@ -9,23 +9,34 @@
       "english": "Count Palatine Johann Casimir issues a district ordinance for the Office of Boxberg, which Konrad, Albrecht, Christoph and Georg Siegmund von Rosenberg also accept for their five fiefdom villages of Dainbach, Sachsenflur, Epplingen, Bobstatt and Schillingstadt.\n\nCoverage: January 22, 1588",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Albrecht von Rosenberg"
         },
         {
-          "person": "Albrecht von Rosenberg"
+          "place": "boxberg"
         },
         {
           "person": "Christoph von Rosenberg"
         },
         {
           "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "person": "Konrad von Rosenberg"
         }
       ],
       "facts": [
         {
           "subject": "Konrad, Albrecht, Christoph and Georg Siegmund von Rosenberg",
           "type": "generic",
-          "content": "accepted the Zentordnung issued for the Amt Boxberg for their five fief villages of Dainbach, Sachsenflur, Epplingen, Bobstadt and Schillingstadt."
+          "content": "accepted the Zentordnung issued for the Amt Boxberg for their five fief villages of Dainbach, Sachsenflur, Epplingen, Bobstadt and Schillingstadt.",
+          "mention": [
+            {
+              "place": "bobstadt"
+            },
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

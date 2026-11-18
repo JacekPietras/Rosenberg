@@ -8,6 +8,9 @@
       "english": "Elector Ludwig V of the Palatinate sets up a dispute between Georg von Rosenberg and the citizenship of Boxberg because of the wood called the sounds (reverse of the municipality of Boxberg about a controversy emerged in the version of these provisions).",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Georg von Rosenberg"
         }
       ],
@@ -21,6 +24,9 @@
           "content": "settled a dispute with Jörg von Rosenberg and the citizens of Boxberg concerning the woodland called die Klingen.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Georg von Rosenberg"
             }
           ]
@@ -28,7 +34,12 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was party to a dispute with Boxberg over the Klingen woodland that was settled by Elector Ludwig V of the Palatinate."
+          "content": "was party to a dispute with Boxberg over the Klingen woodland that was settled by Elector Ludwig V of the Palatinate.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

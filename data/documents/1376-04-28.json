@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Elisabeth von Rosenberg"
+        },
+        {
+          "place": "leuchtenberg"
         }
       ],
       "facts": [
@@ -43,7 +46,12 @@
         {
           "person": "Elisabeth von Rosenberg",
           "type": "generic",
-          "content": "sold her inherited share in the lordship of Hals to Ulrich and Johann, Landgrafen von Leuchtenberg."
+          "content": "sold her inherited share in the lordship of Hals to Ulrich and Johann, Landgrafen von Leuchtenberg.",
+          "mention": [
+            {
+              "place": "leuchtenberg"
+            }
+          ]
         }
       ]
     }

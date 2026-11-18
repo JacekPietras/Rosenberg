@@ -10,14 +10,20 @@
       "mention": [
         {
           "person": "Hieronymus von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Asmus von Rosenberg",
           "personTitle": [
-            "Ritter",
-            "Amtmann zu Uffenheim"
+            "Amtmann zu Uffenheim",
+            "Ritter"
           ],
           "type": "parent",
           "of": "Hieronymus von Rosenberg",
@@ -28,11 +34,16 @@
         {
           "person": "Asmus von Rosenberg",
           "personTitle": [
-            "Ritter",
-            "Amtmann zu Uffenheim"
+            "Amtmann zu Uffenheim",
+            "Ritter"
           ],
           "type": "generic",
-          "content": "with his son Hieronymus acknowledged meadows at Waldmannshofen as fiefs from Margraves Friedrich and Sigmund of Brandenburg."
+          "content": "with his son Hieronymus acknowledged meadows at Waldmannshofen as fiefs from Margraves Friedrich and Sigmund of Brandenburg.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         },
         {
           "person": "Hieronymus von Rosenberg",
@@ -40,7 +51,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "with his father Asmus acknowledged meadows at Waldmannshofen as fiefs from Margraves Friedrich and Sigmund of Brandenburg."
+          "content": "with his father Asmus acknowledged meadows at Waldmannshofen as fiefs from Margraves Friedrich and Sigmund of Brandenburg.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ]
     }

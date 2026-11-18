@@ -9,10 +9,13 @@
       "english": "Kunz von Rosenberg zu Bartenstein and his wife Elisabeth sold Hans Zobel von Giebelstadt of Gerolzhofen Castle and Giebelstadt residence, where they had been living, including half of the residence formerly held by Wilhelm Geyer as a fief of the Margrave of Brandenburg, several woods, and half of Herchsheim, except for 16½ Morgen of fields held as a fief of Neumünster Abbey. The purchase price was 4,000 Rhenish florins.",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
+          "place": "giebelstadt"
         },
         {
           "person": "Hans Zobel von Giebelstadt"
+        },
+        {
+          "person": "Kunz von Rosenberg"
         },
         {
           "person": "Wilhelm Geyer"
@@ -27,6 +30,9 @@
           "type": "generic",
           "content": "sold Giebelstadt Castle and residence, woods, and half of Herchsheim to Hans Zobel von Gerolzhofen for 4,000 Rhenish florins together with his wife Elisabeth.",
           "mention": [
+            {
+              "place": "giebelstadt"
+            },
             {
               "person": "Hans Zobel"
             }
@@ -45,6 +51,9 @@
           "type": "generic",
           "content": "sold Giebelstadt Castle and residence, woods, and half of Herchsheim to Hans Zobel von Gerolzhofen for 4,000 Rhenish florins together with her husband Kunz von Rosenberg.",
           "mention": [
+            {
+              "place": "giebelstadt"
+            },
             {
               "person": "Hans Zobel"
             },

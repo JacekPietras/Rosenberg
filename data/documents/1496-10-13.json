@@ -10,6 +10,12 @@
       "mention": [
         {
           "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "gemmingen"
+        },
+        {
+          "place": "heidelberg"
         }
       ],
       "facts": [
@@ -19,7 +25,12 @@
             "Vogt zu Kleeburg"
           ],
           "type": "generic",
-          "content": "delivered documents concerning the inheritance dispute between Hans von Falkenstein and Heinrich Holzapfel to the chancellery at Heidelberg."
+          "content": "delivered documents concerning the inheritance dispute between Hans von Falkenstein and Heinrich Holzapfel to the chancellery at Heidelberg.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ]
         }
       ],
       "img": [

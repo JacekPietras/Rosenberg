@@ -10,19 +10,22 @@
       "english": "At the request of the abbess and convent of the Cistercian nunnery of Marienthal near Seifersdorf in the Diocese of Prague, Charles IV, as King of Bohemia, confirms and renews the privileges granted to the monastery by König Wenzel [I] and Johann von Böhmen and inserted here, as well as all its other privileges and rights; forbids secular oppression of the monastery and confirms its exemption from taxes and services. In addition, the inhabitants of the town (opidi) of Ostritz, which the monastery acquired from the Burgraves of Dohna except for the toll, have confirmed the right to brew beer and to sell and buy old beer (antiquam cervisiam), cloth (pannos), and salt freely in their town.\n\nWitnesses: Ernst, Erzbischof von Prag; Dietrich, Bischof von Minden; Peter, Herzog von Bourbon; Bolko, Herzog von Schweidnitz; Przemislaus, Herzog von Teschen; Bolko, Herzog von Falkenberg; Johann, Herzog von Mecklenburg; Konrad, Herzog von Oels; Burkhard, Burggraf von Magdeburg, Kammermeister; Egino, Graf von Freiburg; Salentin, Graf von Sayn; Albrecht, Graf von Anhalt; Heinrich, Graf von Schwarzburg; Johann, Graf von Retz; Rudolf von Wart; Friedrich von Wallsee; Heinrich von Neuhaus; Jesco Wessel von Wartenberg; Jodok von Rosenberg; Ulrich von Rosenberg; Wilhelm von Strakonitz; Sbinco Hase von Hasenburg; Hasco von Sweretitz; Bosco von Wilhartitz, Kammermeister; Lupold von Ortenburg, Küchenmeister; Heinrich Beyer von Boppard.",
       "mention": [
         {
+          "person": "Heinrich von Neuhaus"
+        },
+        {
+          "person": "Heinrich von Schwarzburg"
+        },
+        {
           "person": "König Wenceslaus",
           "personTitle": [
             "König"
           ]
         },
         {
-          "person": "Heinrich von Schwarzburg"
+          "place": "rosenberg-town"
         },
         {
           "person": "Rudolf von Wart"
-        },
-        {
-          "person": "Heinrich von Neuhaus"
         },
         {
           "person": "Ulrich von Rosenberg"

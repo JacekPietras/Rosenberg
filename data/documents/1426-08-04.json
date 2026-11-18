@@ -9,16 +9,13 @@
       "english": "Archbishop Konrad III of Mainz and Bishop Johann II of Würzburg established a truce in the feud between the city of Nuremberg and Wilhelm von Rechberg, Kunz von Rosenberg and Thomas von Rosenberg, Walther von Cronberg, Hans vom Hirschhorn the Younger, and Karl and Siegmund von Thüngen.",
       "mention": [
         {
+          "place": "cronberg"
+        },
+        {
           "person": "Hans of Würzburg",
           "personTitle": [
             "Bishop"
           ]
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Thomas von Rosenberg"
         },
         {
           "person": "Hans vom Hirschhorn",
@@ -30,19 +27,44 @@
           "person": "Karl von Thüngen"
         },
         {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
           "person": "Siegmund von Thüngen"
+        },
+        {
+          "person": "Thomas von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "was named in the feud between Nuremberg and the nobles for which the archbishop of Mainz and the bishop of Würzburg established a truce."
+          "content": "was named in the feud between Nuremberg and the nobles for which the archbishop of Mainz and the bishop of Würzburg established a truce.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         },
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "was named in the feud between Nuremberg and the nobles for which the archbishop of Mainz and the bishop of Würzburg established a truce."
+          "content": "was named in the feud between Nuremberg and the nobles for which the archbishop of Mainz and the bishop of Würzburg established a truce.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

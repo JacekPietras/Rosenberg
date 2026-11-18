@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Christoph von Rosenberg"
+        },
+        {
+          "place": "rinderfeld"
         }
       ],
       "facts": [
         {
           "person": "Christoph von Rosenberg",
           "type": "generic",
-          "content": "settled sheep-grazing and pasture disputes near Ebertsbronn and Rinderfeld with Hans von Finsterlohe zu Laudenbach."
+          "content": "settled sheep-grazing and pasture disputes near Ebertsbronn and Rinderfeld with Hans von Finsterlohe zu Laudenbach.",
+          "mention": [
+            {
+              "place": "rinderfeld"
+            }
+          ]
         }
       ]
     }

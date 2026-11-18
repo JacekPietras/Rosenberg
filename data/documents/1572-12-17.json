@@ -9,7 +9,7 @@
       "english": "At the Imperial Chamber Court, Emperor Maximilian II informs the city of the judgment in the attachment case between Rothenburg and Zaisolph von Rosenberg, arising from the seizure of two imprisoned citizens. The judgment communicates Zaisolph von Rosenberg’s deed of 8 October 1571, by which he promises not to seize or detain any more citizens of Rothenburg. Original, parchment; seal lost.",
       "mention": [
         {
-          "person": "Zaisolph von Rosenberg"
+          "place": "rothenburg"
         },
         {
           "person": "Zaisolph von Rosenberg"
@@ -20,12 +20,22 @@
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
           "content": "promised not to seize or detain any further citizens of Rothenburg.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ],
           "date": "1571-10-08"
         },
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was involved in an Imperial Chamber Court proceeding with Rothenburg over the seizure of two detained citizens."
+          "content": "was involved in an Imperial Chamber Court proceeding with Rothenburg over the seizure of two detained citizens.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

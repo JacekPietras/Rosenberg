@@ -15,7 +15,13 @@
       "english": "Konrad, elected and confirmed Bishop of Würzburg and Duke in Franconia, enfeoffs Lorenz von Rosenberg with half of the fiefs at Baldersheim [according to enfeoffment of February 21, 1537]. -\n\nSeal: the issuer. - Scribe's note by Chancellor Dr. Georg Farner. - On Thursday after Conversion of Paul.\n\nOriginal, parchment, seal appended. Cf. Reg. No. 1059. - No. 1044.\n\nReg. No. 1097",
       "mention": [
         {
+          "place": "baldersheim"
+        },
+        {
           "person": "Lorenz von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -24,6 +30,9 @@
           "type": "generic",
           "content": "received half the fiefs at Baldersheim from Bishop Konrad of Würzburg.",
           "mention": [
+            {
+              "place": "baldersheim"
+            },
             {
               "person": "Konrad of Würzburg",
               "personTitle": [

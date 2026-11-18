@@ -10,7 +10,13 @@
       "english": "Rudolf, Bischof, nevertheless reserved a right against Georg von Rosenberg. The summary identifies Boxberg as the subject of that right. This is recorded in the same book, fol. 89. See Fries, Chronik, vol. 4, pp. 264–267, and Wendehorst, Bischöfe Würzburg, vol. 3, p. 34. Date taken from the copybook.",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [

@@ -15,14 +15,28 @@
       "english": "The notary Paulus Buwman of Oedheim (Odheym) in the diocese of Würzburg (Wirtzpurger), palatinate secretary, vidimizes at the request of Blicker von Gemmingen (Gemmyngen) the Burgfrieden (town peace treaty) of Bönnigheim from June 27, 1390.\n\nTerm: 1500 March 21 (1500, March 21)\n\nWitnesses: Hans von Ingelheim (Ingelnheym), Steward, Hans von Rosenberg zu Essingen, and Philipp von Bettendorff",
       "mention": [
         {
+          "place": "boennigheim"
+        },
+        {
+          "place": "gemmingen"
+        },
+        {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Hans von Rosenberg zu Essingen",
           "type": "generic",
-          "content": "witnessed the vidimus of the Bönnigheim castle peace charter of 1390 June 27."
+          "content": "witnessed the vidimus of the Bönnigheim castle peace charter of 1390 June 27.",
+          "mention": [
+            {
+              "place": "boennigheim"
+            }
+          ]
         }
       ]
     }

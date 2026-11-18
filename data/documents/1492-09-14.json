@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Philipp von Rosenberg"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "received the provostship of St. German in Speyer from Pope Alexander VI."
+          "content": "received the provostship of St. German in Speyer from Pope Alexander VI.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ]
         }
       ],
       "img": [

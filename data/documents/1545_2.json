@@ -15,13 +15,22 @@
       "english": "Friedrich, Count Palatine of the Rhine and Duke in Bavaria, enfeoffs Zeyßolf von Rosenberg and his cousin Lorenz von Rosenberg hereditarily with a quarter of the town of Aub (Aw), which the late knight Konrad von Rosenberg and his ancestors held from the Palatinate as a Mannlehen (vassal fief). Thereby his rights, those of his men, and the rights of third parties remain unaffected. The enfeoffed parties are to assume the customary feudal obligations. -He confirms the feudal oath sworn by Zeyßolf.-\n\nSealer: the issuer.- Thursday after Three Kings, Heidelberg.\n\nIssue, Parchment, Seal attached. - No. 1086.\n\nReg. No. 1144",
       "mention": [
         {
-          "person": "Lorenz von Rosenberg"
+          "place": "aub"
+        },
+        {
+          "place": "heidelberg"
         },
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "knight"
           ]
+        },
+        {
+          "person": "Lorenz von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -30,6 +39,9 @@
           "type": "generic",
           "content": "received a quarter of the town of Aub as an hereditary fief from Pfalzgraf Friedrich together with his Vetter Lorenz von Rosenberg.",
           "mention": [
+            {
+              "place": "aub"
+            },
             {
               "person": "Lorenz von Rosenberg"
             }
@@ -40,6 +52,9 @@
           "type": "generic",
           "content": "received a quarter of the town of Aub as an hereditary fief from Pfalzgraf Friedrich together with his Vetter Zaisolf von Rosenberg.",
           "mention": [
+            {
+              "place": "aub"
+            },
             {
               "person": "Zaisolph von Rosenberg"
             }

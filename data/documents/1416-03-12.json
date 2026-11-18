@@ -9,13 +9,13 @@
       "english": "Konrad von Rosenberg the Elder acknowledges to Konrad von Weinsberg that he agrees with the redemption of the fortress Reigelsberg, which his cousin Konrad von Rosenberg the Younger purchased; Parchment, Seal: Konrad von Rosenberg; Hans Truchseß of Baldersheim; Reinhard von Uissigheim.\n\nDuration: March 12, 1416, without place of issue\n\nExtent: 1 charter",
       "mention": [
         {
+          "person": "Hans Truchsess of Baldersheim"
+        },
+        {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "the Elder"
           ]
-        },
-        {
-          "person": "Konrad von Weinsberg"
         },
         {
           "person": "Konrad von Rosenberg",
@@ -27,7 +27,10 @@
           "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Hans Truchsess of Baldersheim"
+          "person": "Konrad von Weinsberg"
+        },
+        {
+          "place": "reichelsburg-aub"
         },
         {
           "person": "Reinhard von Uissigheim"
@@ -55,13 +58,16 @@
           "content": "agreed with Konrad von Weinsberg to the redemption of Reigelsberg Fortress purchased by his cousin Konrad von Rosenberg der Jüngere.",
           "mention": [
             {
-              "person": "Konrad von Weinsberg"
-            },
-            {
               "person": "Konrad von Rosenberg",
               "personTitle": [
                 "der Jüngere"
               ]
+            },
+            {
+              "person": "Konrad von Weinsberg"
+            },
+            {
+              "place": "reichelsburg-aub"
             }
           ]
         }

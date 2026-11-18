@@ -11,13 +11,7 @@
       "english": "Wiprecht von Riedern, Bailli der Johanniter-Häuser in Franken, and the aforementioned commanders of the individual Franconian houses of the Hospitaller Order, sold the castle and town of Boxberg to Konrad von Rosenberg and Eberhard von Rosenberg as well as to the Edelknecht Arnold von Rosenberg, Ritter for 18,000 guilders.\n\nZeitschrift für die Geschichte des Oberrheins. 24. 1872\n\nBrother Wipprecht von Ryden, Balier der häuser in Franken; Dieß von Cellingen, Commander at Rotenburg; Arnold von Berlichingen, Commander at Hall; Konrad Wolfsdörffer, Commander at Biebelried¹; Hans von Gundelsingen, Commander at Erningen²; Hans Ludener, Commander at Mergentheim; and Brother Hans Merklin, Commander at Würzburg, and the assembly of the convents of the above-named houses of the Order of St. John, sell, by decision of the chapter and with the approval of Brother Konrad von Brunnsperg, Master in German lands—as they are burdened with heavy debts \"among Jews and Christians\"—to Konrad von Rosenberg and Eberhard von Rosenberg and to the Edelknecht Konrad von Rosenberg and Arnold von Rosenberg, Ritter for 18,000 guilders in gold their castle and town at Boxberg, with all rights and appurtenances, furthermore the rights of church patronage at Wölchingen, Schillingstat, Assumstadt, and Bogestat, and the properties of the parish of Wölchingen. The buyers shall, in addition to the payment of the purchase price, give to the lord at the Cathedral in Würzburg 4 Malter of wheat and 10 pounds of Heller in Würzburg currency, and to Engelhard von Rosenberg and his heirs of Grefewinden on St. Martin's Day 20 pounds of Heller, and shall, once and for all, release and free the Order from these two obligations and some other insignificant ones which they have to take over. Given in 1381 on St. Urban the Pope's day. Original on parchment. Of 12 seals (of Master Konrad von Brunšperg, of the Balier, and of the Commanders of the above-named houses and of the houses at Rotenburg, Hall, Erningen, and Mergentheim), only the first has fallen off; 11 are still attached.",
       "mention": [
         {
-          "person": "Wiprecht von Riedern"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
+          "person": "Arnold von Berlichingen"
         },
         {
           "person": "Arnold von Rosenberg",
@@ -27,13 +21,19 @@
           ]
         },
         {
-          "person": "Arnold von Berlichingen"
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
-          "person": "Konrad von Rosenberg"
+          "place": "boxberg"
         },
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Engelhard von Rosenberg"
         },
         {
           "person": "Konrad von Rosenberg",
@@ -42,13 +42,19 @@
           ]
         },
         {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
+          "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Engelhard von Rosenberg"
+          "place": "rothenburg"
+        },
+        {
+          "person": "Wiprecht von Riedern"
+        },
+        {
+          "place": "wolchingen"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -61,6 +67,12 @@
           "content": "purchased Boxberg Castle and town with Konrad von Rosenberg, Ritter, and Konrad and Arnold von Rosenberg, Edelknechte, from the Order of St. John.",
           "mention": [
             {
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "place": "boxberg"
+            },
+            {
               "person": "Konrad von Rosenberg",
               "personTitle": [
                 "Ritter"
@@ -68,9 +80,6 @@
             },
             {
               "person": "Konrad von Rosenberg"
-            },
-            {
-              "person": "Arnold von Rosenberg"
             }
           ]
         },
@@ -83,10 +92,7 @@
           "content": "purchased Boxberg Castle and town with Konrad and Eberhard von Rosenberg, Ritter, and Konrad von Rosenberg, Edelknecht, from the Order of St. John.",
           "mention": [
             {
-              "person": "Konrad von Rosenberg",
-              "personTitle": [
-                "Ritter"
-              ]
+              "place": "boxberg"
             },
             {
               "person": "Eberhard von Rosenberg",
@@ -98,6 +104,12 @@
               "person": "Konrad von Rosenberg",
               "personTitle": [
                 "Edelknecht"
+              ]
+            },
+            {
+              "person": "Konrad von Rosenberg",
+              "personTitle": [
+                "Ritter"
               ]
             }
           ]
@@ -111,7 +123,13 @@
           "content": "undertook, together with the other purchasers, to discharge the rents owed by the Order of St. John to Würzburg Cathedral and Engelhard von Rosenberg from the Boxberg properties.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Engelhard von Rosenberg"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         }

@@ -9,13 +9,16 @@
       "english": "Michael von Rosenberg obligates himself to Elector Philipp of the Palatinate that he will redeem within six years the three fuder of white wine in Tauber (Duber) measure, pledged to his brother-in-law Hans von Adelsheim for 300 gulden, on his half of the wine tithe at Schweigern near Boxberg. After failed redemption, the Count Palatine may take the share into his hands.\n\nDuration: August 9, 1480 (on Wednesday after Ciriaci)\n\nSeal: Michael von Rosenberg",
       "mention": [
         {
-          "person": "Michael von Rosenberg"
+          "place": "boxberg"
         },
         {
           "person": "Hans von Adelsheim"
         },
         {
           "person": "Michael von Rosenberg"
+        },
+        {
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -32,18 +35,31 @@
           "mention": [
             {
               "person": "Hans von Adelsheim"
+            },
+            {
+              "place": "schweigern"
             }
           ]
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "promised Elector Philipp of the Palatinate to redeem the pledged wine tithe at Schweigern within six years."
+          "content": "promised Elector Philipp of the Palatinate to redeem the pledged wine tithe at Schweigern within six years.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "sealed his pledge concerning the wine tithe at Schweigern."
+          "content": "sealed his pledge concerning the wine tithe at Schweigern.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         }
       ],
       "img": [

@@ -9,13 +9,19 @@
       "english": "Elector Ludwig of the Palatinate and his councillors Ludwig von Fleckenstein, Grand Steward, Diether v. Schönburg, Marshal, Hans von Gemmingen, Vogt zu Heidelberg, as well as the professors of law Johannes Fo, Hieronymus Neidhart and Sebastian Hugel attest that they have resolved the disputes between the Alzey official Georg von Rosenberg and the Chamberlain v. Worms called v. Dalberg regarding the contract concluded with a charter of March 17, 1507 (No. 2003) in such a way that the serfs may freely move between the towns of the Chamberlain and the towns of the Palatinate, follow their respective lords as serfs, and be permitted to marry without hindrance, 'so that equality shall be maintained.'\n\nSeal: Issuer 1 (secret seal), Issuers 2–4, Wolf and Friedrich Kämmerer v. Worms called v. Dalberg, the latter Amtmann of Oppenheim",
       "mention": [
         {
-          "person": "Ludwig von Fleckenstein"
+          "place": "alzey"
+        },
+        {
+          "person": "Georg von Rosenberg"
         },
         {
           "person": "Hans von Gemmingen"
         },
         {
-          "person": "Georg von Rosenberg"
+          "person": "Ludwig von Fleckenstein"
+        },
+        {
+          "place": "oppenheim"
         }
       ],
       "facts": [

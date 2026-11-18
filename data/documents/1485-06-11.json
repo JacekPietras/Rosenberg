@@ -9,13 +9,13 @@
       "english": "Elector Philipp of the Palatinate announces the judgment of his court in the dispute between Simon Leibfried (Liffrit) of Heppenheim and Philipp von Bödigheim over the inheritance of Hans von Zwingenberg, whose daughters, deceased at the time of the proceedings, were married to the aforementioned nobles. Disputed matters include, among others: the movable property of Hans von Zwingenberg; the inheritance claims of the child born in wedlock of Leibfried of Heppenheim and his wife von Zwingenberg; and other children of Hans von Zwingenberg, two of whom entered convents at Lobenfeld and Mainz, another married to Heinz Rüdt von Collenberg; abandoned properties at Strümpfelbrunn, Waldkatzenbach, Handschuhsheim and Dossenheim; the interpretation of written land law and customary law in inheritance matters at Handschuhsheim, Dossenheim and along the Bergstraße; and rents from Guntersblum, Uelversheim and \"Ramstatt,\" which were given as marriage stock. The judges and councillors rule that Philipp von Bödigheim owes Simon Leibfried nothing for his claims regarding Hans' possessions and property at Strümpfelbrunn, Waldkatzenbach, Handschuhsheim and Dossenheim; the remaining properties shall be divided according to the custom of the competent courts; and each party bears its own costs. After the judgment was announced, Simon's lawyer Bernhard Holzinger of Weil appealed to \"the imperial majesty\" [Court of Rottweil]. The judges and councillors of the Palatine Count in this matter are: Count Bernhard von Leiningen, chief judge; Hans von Sickingen, knight; Ludwig von Sickingen; Hans von Stettenberg; Hans von Rosenberg of Uissigheim; Jakob von Fleckenstein; Blicker von Gemmingen; and Master Peter Brechtel, licentiate.\n\nDuration: 1485 June 11 (on Saturday after Saint Boniface's Day)\n\nSeal: Elector Philipp of the Palatinate",
       "mention": [
         {
-          "person": "Philipp von Bödigheim"
+          "place": "gemmingen"
         },
         {
-          "person": "Heinrich Rüd von Collenberg"
+          "place": "handschuhsheim"
         },
         {
-          "person": "Philipp von Bödigheim"
+          "person": "Hans von Rosenberg"
         },
         {
           "person": "Hans von Sickingen",
@@ -24,13 +24,19 @@
           ]
         },
         {
-          "person": "Ludwig von Sickingen"
-        },
-        {
-          "person": "Hans von Rosenberg"
+          "person": "Heinrich Rüd von Collenberg"
         },
         {
           "person": "Jakob von Fleckenstein"
+        },
+        {
+          "person": "Ludwig von Sickingen"
+        },
+        {
+          "person": "Philipp von Bödigheim"
+        },
+        {
+          "place": "uissigheim"
         }
       ],
       "facts": [

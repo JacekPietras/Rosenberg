@@ -9,19 +9,34 @@
       "english": "Elect Adolf of Mainz arranges repayment of debts owed to Engelhard von Rosenberg. Adolf [elected Archbishop of Mainz and Bishop of Speyer] acknowledges that he owes his \"loved and faithful one\" Engelhard (Engilhard) von Rosenberg (Rosenb(er)g) and his heirs, on account of the Noble Gerlach von Hohenlohe (Hoenloch), his \"loved uncle,\" 230 gold gulden in Frankfurter (Franckenfurd) currency. Furthermore, he owes him 60 gulden for two horses that Engelhard lost at Rockenhausen (Rockinhusen) in archiepiscopal service. These 290 gulden the Archbishop wishes to pay on the upcoming Feast of Saint Martin [November 11]. In case the Mainz foundation does not pay, the following guarantors are designated: the archiepiscopal \"loved and faithful ones\" Nikolaus (Nicolau(s)) von Grünberg (Grunenberg), archiepiscopal cellarer at Miltenberg (Miltenb(er)g), Eberhard Rüdt (Rude(n)), official at Dürn, Wiprecht Rüdt (Rude(n)), official at Buchen and Eberhard von Grumbach (Grunbach), official at Külsheim (Kulsheim). When these guarantors are summoned orally or in writing by the creditors, they must all appear together, each with one servant and one horse, to Buchen, Adelsheim or Rosenberg (Engelhard decides), and maintain lodging there until Engelhard has received his money. Missing horses and servants must be replaced by the affected guarantor. If a guarantor dies or leaves the country, the Mainz foundation (Mencze) upon summons by the creditors must provide equivalent replacement within 14 days. If this is not done, the other guarantors shall maintain lodging upon summons until fulfilled. If a guarantor refuses performance, Engelhard with the explicit consent of the Archbishop may take Mainz property as long as pledge until the principal money and costs incurred are paid. No guarantor may excuse himself regarding his obligation by referring to another ( The Archbishop promises to release his guarantors from their obligation without requiring them to take an oath and to keep them harmless. The guarantors acknowledge their obligation and state that they will affix their seals beside the Archbishop’s seal. Dated on the feast of Saint John the Baptist, 1378.",
       "mention": [
         {
+          "place": "adelsheim"
+        },
+        {
+          "place": "buchen"
+        },
+        {
+          "person": "Eberhard Rüd"
+        },
+        {
+          "person": "Eberhard von Grumbach"
+        },
+        {
           "person": "Engelhard von Rosenberg"
         },
         {
           "person": "Gerlach von Hohenlohe"
         },
         {
-          "person": "Eberhard Rüd"
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "speyer"
+        },
+        {
+          "place": "wallduern"
         },
         {
           "person": "Wiprecht Rüd"
-        },
-        {
-          "person": "Eberhard von Grumbach"
         }
       ],
       "facts": [

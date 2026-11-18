@@ -9,6 +9,15 @@
       "english": "Knight Konrad von Berlichingen and his son Bernhard sell their aforementioned shares in Schloss and town Widdern to Elector Philipp of the Palatinate and his heirs. A portion had been held by Bernhard, first as a pledge and then purchased from the Echtern; another portion Konrad had acquired from the von Frankenstein and Handschuhsheim families and had jointly possessed with the von Rosenberg and von Seldeneck families. The sale includes all appurtenances, particularly the Kessach stream from Unterkessach to its confluence with the Jagst at Widdern. The purchase price was 300 gulden, hereby acknowledged as received. Everything is freehold and unencumbered property except for the river and fishing rights, which are fiefs of the Würzburg Cathedral Chapter. A portion had been designated as dower for Bernhard's wife [Agatha von Vellberg], which has now been arranged otherwise, and a separate letter has been delivered to the Count Palatine. The sellers promise to cover any encumbrances that may be found and warrant the sale. They direct the Schultheiss, court, community, residents, and outlying inhabitants of Widdern to pay homage to the Count Palatine, and they will release them from their obligations, vows, and oaths toward them. The issuing parties promise to hand over relevant documentation within one month and waive any possible remedies against the sale. Additionally sealing are the summoned Georg von Vellberg the Elder, Knight, and Ernfried von Vellberg the Younger, brothers-in-law of the issuers.\n\nDuration: 1494 March 1 (on Saturday after the Sunday Reminiscere)\n\nSealers: Konrad von Berlichingen; Bernhard von Berlichingen; Georg the Elder von Vellberg; Ernfried the Younger von Vellberg",
       "mention": [
         {
+          "person": "Bernhard von Berlichingen"
+        },
+        {
+          "place": "frankenstein"
+        },
+        {
+          "place": "handschuhsheim"
+        },
+        {
           "person": "Konrad von Berlichingen",
           "personTitle": [
             "Knight"
@@ -18,7 +27,13 @@
           "person": "Konrad von Berlichingen"
         },
         {
-          "person": "Bernhard von Berlichingen"
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "seldeneck"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -29,6 +44,9 @@
           "mention": [
             {
               "person": "Konrad von Berlichingen"
+            },
+            {
+              "place": "seldeneck"
             }
           ]
         }

@@ -18,19 +18,37 @@
           "person": "Friedrich of Nuremberg"
         },
         {
-          "person": "Hans of Leuchtenberg"
-        },
-        {
           "person": "Friedrich of Saunsheim"
         },
         {
           "person": "Friedrich of Seldeneck"
         },
         {
-          "person": "Hans von Rosenberg"
+          "person": "Hans of Leuchtenberg"
         },
         {
           "person": "Hans of Rothenburg"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "leuchtenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "seinsheim"
+        },
+        {
+          "place": "seldeneck"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [

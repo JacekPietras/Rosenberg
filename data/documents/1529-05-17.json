@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "rothenburg"
         }
       ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "interceded on behalf of Lutz Kuttroff in his request to Rothenburg."
+          "content": "interceded on behalf of Lutz Kuttroff in his request to Rothenburg.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

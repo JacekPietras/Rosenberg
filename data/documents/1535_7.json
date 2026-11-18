@@ -9,19 +9,40 @@
       "english": "Files of Landgrave Philipp; the Viceroy and Councillors of Kassel; Chancellor Feige: Correspondence with Elector Ludwig, also jointly with the Archbishop of Trier, with Rudolf Schenck, with the Electoral Palatinate chancellery at Heidelberg\n\nContains: January 1535. Position of the Landgrave regarding a renewal of the Swabian League\nMarch. Payment of subsidies for the Münster war according to the ordinance of Koblenz. The cities refuse to pay their aid money against Münster. The upcoming city diet at Esslingen requires the attention of the Rhine Confederation members. The members of the Rhine Confederation send their councillors to a meeting at Worms. Bavaria and Baden request that Osanna née Eichelheim (of Eicholtzheim), wife of Johann Riedesel of Eisenbach, be heard as a witness. Care of Elector Ludwig for Hesse during the absence of the Landgrave. Recommendation of Florenz v. Venningen, canon of Speyer, a son of the Electoral Palatinate chancellor, for an assessor position at the Imperial Chamber Court. Dispute between the Abbot of Fulda and the Riedesel. See No. 418 and 2954\nMay, June. Dispatch of the Electoral Palatinate Marshal Ludwig von Neipperg with oral instructions to the Landgrave. Consultation on the Sickingen and Cronberg matters. Scheduling of a new circle diet at Worms\nApril 1536. Claim of the Landgrave against Philipp Echter regarding the former imprisonment and taxation of his subject Johann Lauer\nDrafting of an ordinance under Electoral Palatinate mediation at Heidelberg. (In Samtarchiv Vol. IV p. 10 No. 2 and p. 12 No. 3)\nMay - July. Dispatch of Asmus v. Mentzingen, Burggrave of Starkenburg, to the Landgrave regarding the meeting held at Augsburg by the former Swabian League estates on behalf of Hans Thomas von Rosenberg\nIntention of renewing the Swabian League\nMeeting of the members of the Rhine Confederation at Gelnhausen\nAttendance at the upcoming meeting of the Swabian League estates at Augsburg\nInstructions for the envoy. Dispatch of Rudolf Schenck to Elector Ludwig. Correspondence of the Elector and the Landgrave with Maria Queen of Hungary and Bohemia, Viceroy of the Netherlands, regarding a mediation in the dispute between King Christian of Denmark and Count Palatine Friedrich. (See No. 434.) Dispute between Württemberg and Würzburg regarding Möckmühl. Ordinance of the meeting at Augsburg, scheduling a meeting of the Rhine Confederation at Oberwesel. The Elector recommends Margarethe v.d. Leyen to the protection of the Landgrave. No. 2566\nAugust, September. Position of Hesse toward Electoral Palatinate regarding the Boxberg matter. Rhine Confederation meeting at Gelnhausen. Dispute between Württemberg and Würzburg regarding Möckmühl\nOctober, December. Letter from Count Palatine Friedrich on the Danish affair. Dispute between the Abbot of Fulda and the Riedesel of Eisenbach\n(January 1537) May 1537. Concern of Dukes Wilhelm and Ludwig of Bavaria regarding military intentions of Duke Ulrich of Württemberg. (Letter from the Dukes of Bavaria to Elector Ludwig, likely forwarded by him to Landgrave Philipp (copy). See No. 464.) The Landgrave proposes Electoral Palatinate and Electoral Trier that the Electors and other princes mediate between the Emperor and the King of France. Instructions for Jost Rau v. Holzhausen sent to the Elector: admission of Ulm, Augsburg and other Upper Land cities into the Rhine Confederation and separation of the former Swabian League estates. Jost Rau reports on his negotiations with the Württemberg councillors regarding Duke Christoph and the Bavarian matter\nJune - August. Issuance of a new obligation regarding the Palatinate debt of 5,000 gulden. (Copy of the debt deed of July 22 in copy book M 1 folio 243. Letter from the Elector of June 22 and reply letter from the Landgrave of August 1 in Samtarchiv Vol. IV p. 436 for 1538.) No. 480\nOctober. Mediation of the King between Electoral Palatinate and the Swabian League estates regarding Hans Thomas von Rosenberg at a meeting in Vienna, dispatch of a Hessian councillor to the meeting. No. 2098\nDecember. Mediation between the Burggrave of Friedberg and the Counts of Isenburg. Accidental opening of letters addressed to Hesse at Heidelberg",
       "mention": [
         {
-          "person": "Rudolf Schenk"
+          "place": "boxberg"
+        },
+        {
+          "place": "cronberg"
+        },
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "person": "Hans Thomas von Rosenberg"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
+          "place": "holtzhusen"
+        },
+        {
+          "place": "leyen"
         },
         {
           "person": "Ludwig von Neipperg"
         },
         {
-          "person": "Hans Thomas von Rosenberg"
-        },
-        {
           "person": "Rudolf Schenk"
         },
         {
-          "person": "Hans Thomas von Rosenberg"
+          "place": "sickingen"
+        },
+        {
+          "place": "speyer"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -35,6 +56,11 @@
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
           "content": "was the subject of Hesse’s position toward Kurpfalz concerning Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1536-09"
         }
       ],

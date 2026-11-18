@@ -8,16 +8,19 @@
       "english": "King Sigmund allows Arnold von Rosenberg and Eberhard von Rosenberg to appoint mayors and lay judges as well as to exercise high jurisdiction in the village of Schweigern",
       "mention": [
         {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "König Siegmund",
           "personTitle": [
             "King"
           ]
         },
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -27,10 +30,16 @@
           "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [eberhard_jagstberg].",
           "mention": [
             {
+              "place": "jagstberg"
+            },
+            {
               "person": "König Siegmund",
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "schweigern"
             }
           ]
         },
@@ -40,10 +49,16 @@
           "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [arnold_boxberg].",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "König Siegmund",
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "schweigern"
             }
           ]
         }

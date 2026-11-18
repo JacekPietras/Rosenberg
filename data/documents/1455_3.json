@@ -10,6 +10,9 @@
       "english": "Evidence was presented to Hans von Grumbach, Bischof, that the Fronhof at Gnötzheim had been pledged to Konrad von Rosenberg, Herr, for a sum of money, and that the tithe and rent were therefore exempt until redemption. Registered in the first register of contracts, fol. 333.",
       "mention": [
         {
+          "place": "gnoetzheim"
+        },
+        {
           "person": "Hans von Grumbach",
           "personTitle": [
             "Bischof"
@@ -26,7 +29,12 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "held the Fronhof at Gnötzheim as a pledge; the tithe and rent there were exempt until the pledge was redeemed."
+          "content": "held the Fronhof at Gnötzheim as a pledge; the tithe and rent there were exempt until the pledge was redeemed.",
+          "mention": [
+            {
+              "place": "gnoetzheim"
+            }
+          ]
         }
       ],
       "img": [

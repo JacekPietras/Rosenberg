@@ -12,6 +12,12 @@
           "person": "Albrecht von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
+          "place": "bretzingen"
+        },
+        {
           "person": "Wolf of Hardheim"
         }
       ],
@@ -25,6 +31,9 @@
           "type": "generic",
           "content": "sold his rights in a quarter of Bretzingen to Wolf von Hardheim and his heirs.",
           "mention": [
+            {
+              "place": "bretzingen"
+            },
             {
               "person": "Wolf von Hardheim"
             }

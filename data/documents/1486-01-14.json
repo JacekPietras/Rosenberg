@@ -10,6 +10,12 @@
       "mention": [
         {
           "person": "Agnes von Rosenberg"
+        },
+        {
+          "place": "frankenstein"
+        },
+        {
+          "place": "heidelberg"
         }
       ],
       "facts": [
@@ -21,7 +27,12 @@
         {
           "person": "Agnes von Rosenberg",
           "type": "generic",
-          "content": "sold a perpetual grain rent from the farms and properties at Ebersheim to Dalen monastery together with Diether Landschad von Steinach, Philipp Forstmeister zu Gelnhusen and Lyse von Frankenstein."
+          "content": "sold a perpetual grain rent from the farms and properties at Ebersheim to Dalen monastery together with Diether Landschad von Steinach, Philipp Forstmeister zu Gelnhusen and Lyse von Frankenstein.",
+          "mention": [
+            {
+              "place": "frankenstein"
+            }
+          ]
         }
       ],
       "img": [

@@ -10,7 +10,19 @@
       "english": "Cuone von Falkenstein (Valkin-), Scholaster; Nyclaus vom Steine (Stey-), Cathedral Canon; Eberhard von Rosenberg (Roesin-), Johan von Randeck (-e), and Johan von Bellersheim (-ders-), Knights, Guardians of the Archbishopric of Mainz, pledge with the consent of Archbishop He(i)nrich, the Custodian Heinrich, and the common Cathedral Chapter to Hermann, Lord of Lißberg (Lyes-), and his wife Elsen (also: Elseb.) the castle and town Dürn (Duernen) and the town Buchen (Buechein, also: Bucheym) for 7300 small guilders, of which they had borrowed 3500 on castle and town Battenberg (-tinburg), castle Mellnau (Elenhouge), and town Wetter(-e)1, while the remainder is owed to them by the Archbishopric for services. Until redemption, the aforesaid shall receive annually from the Archbishopric on Martin's Day (or before) 10 loads of wine at Bischofsheim (Bischofisheym) or 100 guilders; if this does not happen, 100 guilders shall be struck against the pledge. What the 9 cities in the bailiwick of Aschaffenburg \"pay above their right and usual tax for tribute, as much as then belonged to those of Durnen and Buocheym from the remainder\"2, that shall be invested at the castle and towns. The places remain open to Mainz. If they are lost due to the Archbishopric, compensation shall be paid to the aforesaid; if due to their own matter, they have lost their money. 200 small guilders they shall invest at the moat of the castle at Dürn and strike against the pledge sum. Re-pledging to men of the Archbishopric is permitted, but not to princes or counts. The Archbishop seals; Custodian Heinrich and the Cathedral Chapter with the seal called in Latin ad causas; finally the Guardians.",
       "mention": [
         {
+          "place": "bischofsheim"
+        },
+        {
+          "place": "buchen"
+        },
+        {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "lissberg"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [
@@ -23,7 +35,13 @@
           "content": "with the other guardians of Mainz pledged castle and town Dürn and the town of Buchen to Herman von Lißberg and his wife Elisabeth.",
           "mention": [
             {
+              "place": "buchen"
+            },
+            {
               "person": "Herman von Lißberg"
+            },
+            {
+              "place": "wallduern"
             }
           ]
         }

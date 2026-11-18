@@ -10,10 +10,16 @@
       "english": "Certifies in what manner all discord, dispute and war, which between Wilhelm von Landstein, Eberhard and Heinrich von Waldsee and Albert von Puechheim on one side and Heinrich von Neuhaus, Stephan von Sternberg, Josse von Rosenberg and Jesko von Michelsberg on the other side have existed up to this day, are amicably and lovingly reconciled (reconciled?). Ludewig Reliquiae 4,279.",
       "mention": [
         {
-          "person": "Wilhelm von Landstein"
+          "person": "Heinrich von Neuhaus"
         },
         {
-          "person": "Heinrich von Neuhaus"
+          "place": "michelsberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Wilhelm von Landstein"
         }
       ]
     }

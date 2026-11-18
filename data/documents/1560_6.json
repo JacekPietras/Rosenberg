@@ -12,10 +12,19 @@
           "person": "Albrecht von Rosenberg"
         },
         {
+          "place": "grumbach"
+        },
+        {
           "person": "König Philipp",
           "personTitle": [
             "King"
           ]
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [

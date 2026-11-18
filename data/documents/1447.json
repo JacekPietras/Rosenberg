@@ -12,19 +12,19 @@
       "english": "Draft of an alliance by Albrecht, Margrave of Brandenburg, Kraft von Hohenlohe, Hans von Absberg, Georg von Rosenberg, Götz der Ältere und der Jüngere, Hans von Berlichingen, Simon der Ältere und der Jüngere, Wilhelm Eberhard and Wilhelm von Stetten, Burkhardt von Wolmershausen, Wilhelm and Hans called Gäumann of Crailsheim, Kraft von Enslingen, and Hans Wilhelm and Jörg von Vellberg against Horneck von Hornberg. Dated 1447.",
       "mention": [
         {
-          "person": "Kraft von Hohenlohe"
+          "person": "Georg von Rosenberg"
         },
         {
           "person": "Hans von Absberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
         },
         {
           "person": "Hans von Berlichingen"
         },
         {
           "person": "Horneck von Hornberg"
+        },
+        {
+          "person": "Kraft von Hohenlohe"
         }
       ],
       "facts": [
@@ -58,16 +58,19 @@
       "english": "Mergentheim, Saturday after Epiphany. Margrave Albrecht of Brandenburg, Kraft von Hohenlohe, and the Ritter of the Jagst alliance—Hans von Absberg, Georg von Rosenberg, Götz der Ältere und der Jüngere von Berlichingen, Simon der Ältere und der Jüngere, Wilhelm and Wilhelm Eberhard von Stetten, Burkhardt von Wolmershausen, Wilhelm Heinz, Hans Gaimann of Crailsheim, Kraft von Enslingen, Hans Wilhelm, and Jörg von Vellberg—who were united in hostility against Horneck von Hornberg, form a mutual aid pact against him. Dated 1447.",
       "mention": [
         {
-          "person": "Kraft von Hohenlohe"
-        },
-        {
-          "person": "Hans von Absberg"
+          "place": "berlichingen"
         },
         {
           "person": "Georg von Rosenberg"
         },
         {
+          "person": "Hans von Absberg"
+        },
+        {
           "person": "Horneck von Hornberg"
+        },
+        {
+          "person": "Kraft von Hohenlohe"
         }
       ],
       "facts": [

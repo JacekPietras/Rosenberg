@@ -19,7 +19,15 @@
             "Graf zu Gleichen"
           ],
           "type": "generic",
-          "content": "secured his marriage settlement on properties at Schüpf and Rosenberg that his father had transferred to him."
+          "content": "secured his marriage settlement on properties at Schüpf and Rosenberg that his father had transferred to him.",
+          "mention": [
+            {
+              "place": "oberschuepf"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     }

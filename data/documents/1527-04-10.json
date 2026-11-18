@@ -9,6 +9,9 @@
       "english": "Margrave Casimir settles the dispute between Zaisolph von Rosenberg and Rothenburg concerning damages suffered during the Peasants’ War. Original, parchment; seal attached and preserved.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "settled with Rothenburg over damages suffered during the Peasants’ War."
+          "content": "settled with Rothenburg over damages suffered during the Peasants’ War.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

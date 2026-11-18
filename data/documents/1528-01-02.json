@@ -10,6 +10,12 @@
       "mention": [
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "roettingen"
+        },
+        {
+          "place": "rothenburg"
         }
       ],
       "facts": [
@@ -19,7 +25,15 @@
             "Amtmann zu Röttingen und Reigelberg"
           ],
           "type": "generic",
-          "content": "was addressed in a letter from Rothenburg about debts incurred by Rothenburg citizens in Röttingen during the Peasants' War."
+          "content": "was addressed in a letter from Rothenburg about debts incurred by Rothenburg citizens in Röttingen during the Peasants' War.",
+          "mention": [
+            {
+              "place": "roettingen"
+            },
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

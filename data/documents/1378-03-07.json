@@ -9,7 +9,10 @@
       "english": "Elect Adolf of Mainz authenticates a document showing that the Rüdt villages in the Cent Amorbach are not required to pay emergency levies or taxes to Mainz. Adolf [elected Archbishop of Mainz and Bishop of Speyer] certifies that he has seen a document in which the deceased Konrad von Bickenbach (Bickinbach) and the deceased Eberhard von Rosenberg, knight, then official at Wildenburg (Wildenberg), decided on their oath (zu eyne(n) rechten gesprochen haben) that the Rüdt (Ruden) villages and retainers (poor people) in the Cent of Amorbach (located and settled in the cent of Amerbach) are not obligated to pay emergency levies or taxes to the Archbishop in Mainz (Mencze) or his foundation. What the Archbishop has collected so far from villages and retainers has been done with the consent of the knight Eberhard Rüdt (Ruden), the Archbishop's \"loved and faithful one.\" From now on (furbaz), the Archbishop will not collect any emergency levy or tax from the poor people. - Dated Aschaffenburg ... 1378 on Sunday Invocavit.",
       "mention": [
         {
-          "person": "Konrad von Bickenbach"
+          "person": "Eberhard Rüd",
+          "personTitle": [
+            "knight"
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -18,18 +21,21 @@
           ]
         },
         {
-          "person": "Eberhard Rüd",
-          "personTitle": [
-            "knight"
-          ]
+          "person": "Konrad von Bickenbach"
+        },
+        {
+          "place": "speyer"
+        },
+        {
+          "place": "wildenberg-castle"
         }
       ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "Ritter",
-            "Amtmann zu Wildenburg"
+            "Amtmann zu Wildenburg",
+            "Ritter"
           ],
           "personDeceased": true,
           "type": "generic",

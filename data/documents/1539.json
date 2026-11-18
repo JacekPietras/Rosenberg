@@ -7,11 +7,21 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-4541078",
       "german": "Kopie des Freiheitsbriefs von Uiffingen (1539).",
       "english": "Copy of the charter of liberties for Uiffingen (1539).",
+      "mention": [
+        {
+          "place": "uiffingen"
+        }
+      ],
       "facts": [
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
-          "content": "was the subject of a charter of liberties for Uiffingen."
+          "content": "was the subject of a charter of liberties for Uiffingen.",
+          "mention": [
+            {
+              "place": "uiffingen"
+            }
+          ]
         }
       ],
       "img": [

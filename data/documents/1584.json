@@ -15,16 +15,22 @@
       "english": "Johann Kasimir, Count Palatine of the Rhine, Guardian and Electoral Administrator, etc., after the death of his brother Ludwig, Count Palatine of the Rhine, Elector, etc., as guardian of the minor son Friedrich, Count Palatine of the Rhine, etc., whom he left behind, invests Hans Christoph von Rosenberg at his request, simultaneously on behalf of the three sons Konrad, Albrecht Christoph, and Georg Siegmund left by his deceased kinsman Zaisolph von Rosenberg, with one-quarter of the town of Aub as a male-line fief, which the deceased Knight Konrad von Rosenberg and his ancestors (forebears) of Rosenberg held from the Palatinate as male-line fiefs, and which Hans Christoph and his aforementioned kinsmen inherited. The rights of the Electoral Palatinate, its people, and third parties remain unaffected thereby. The aforementioned von Rosenberg shall henceforth take the fief anew in all applicable cases from the aforementioned guardian or the respective Count Palatine of the Rhine and fulfill the duties customarily associated with it according to feudal law. - He confirms the feudal oath sworn by Hans Christoph.\n\nSealer: the issuer.\n\nOriginal, parchment, seal preserved in wooden capsule. - No. 1763.\n\nReg. No. 1871",
       "mention": [
         {
-          "person": "Hans Christoph von Rosenberg"
+          "place": "aub"
         },
         {
-          "person": "Zaisolph von Rosenberg"
+          "person": "Hans Christoph von Rosenberg"
         },
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -33,6 +39,9 @@
           "type": "generic",
           "content": "received the quarter of Aub as a Mannlehen after inheriting it from the deceased Zeisolf von Rosenberg.",
           "mention": [
+            {
+              "place": "aub"
+            },
             {
               "person": "Zaisolph von Rosenberg"
             }

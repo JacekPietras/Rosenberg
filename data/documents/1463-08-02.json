@@ -9,6 +9,9 @@
       "english": "Konrad (IV. Vogel), Abbot of Bronnbach Monastery 1, and the convent sell to the altar of the Holy Cross in the parish church of Lohr, held by Johannes Vogel (Hans Vögel von Löre born), their own property at Steinfeld, which is held and cultivated by: Heinrich von Rosenberg, who pays 3 measures of wheat annually. Item Kunz Ulrich, pays 1/2 malter of wheat and 2 measures of oats. Item Endres Trener, pays 1/2 malter of wheat and 2 measures of oats. Item the household guarantors 2 (heynburgen) of the village of Steinfeld pay 7 1/2 pennies. They sell revenue and rent for 25 florins of Frankfurt currency, which have been paid to them and which they have invested; they release the buyers from the sum. They give him this \"document and letter,\" until they give him a sealed parchment letter as proper deed. The abbot affixes his seal. Given (1463) on Tuesday before Inventar Day of St. Stephen.\n\nSeal: Embossed, well preserved.",
       "mention": [
         {
+          "place": "bronnbach"
+        },
+        {
           "person": "Heinrich von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Heinrich von Rosenberg",
           "type": "generic",
-          "content": "held and cultivated property at Steinfeld belonging to Bronnbach Abbey and owed the abbey an annual payment in wheat."
+          "content": "held and cultivated property at Steinfeld belonging to Bronnbach Abbey and owed the abbey an annual payment in wheat.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ]
         }
       ],
       "img": [

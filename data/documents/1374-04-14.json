@@ -9,31 +9,25 @@
       "english": "Bishop Hans of Würzburg issues a vidimus on the judgment issued by Schenk Eberhard von Roßberg in the name of Friedrich von Seldeneck, Ritter, and the ten appointed over the Peace of Franconia and Bavaria, in the dispute between Heinrich von Seinsheim zu Gretzheim and the community of Ifelstad regarding the cattle drives taken from Lindelbach and 17 cows taken by the defendants. / Fabian Day Friedrich von Seldeneck, Ritter, and the ten appointed over the Peace of Franconia and Bavaria certify that Heinrich von Seinsheim zu Gretzheim and the community of Ifelstad have filed a lawsuit before the Peace of Nuremberg regarding the cattle drives taken from Lindelbach and 17 cows taken by the defendants. Schenk Eberhard von Roßberg decides in their name the dispute between the plaintiff and the defendant (for whom Gerlach von Hohenlohe acts) by demarcating the grazing rights; The defendants must pay 100 pounds Heller for the 17 cows and guarantee the payment for 36 cows.",
       "mention": [
         {
+          "person": "Friedrich von Seldeneck",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Gerlach von Hohenlohe"
+        },
+        {
           "person": "Hans of Würzburg",
           "personTitle": [
             "Bishop"
           ]
         },
         {
-          "person": "Friedrich von Seldeneck",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Heinrich von Seinsheim"
         },
         {
-          "person": "Friedrich von Seldeneck",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Heinrich von Seinsheim"
-        },
-        {
-          "person": "Gerlach von Hohenlohe"
+          "place": "nuremberg"
         }
       ],
       "img": [

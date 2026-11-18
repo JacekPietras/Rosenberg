@@ -13,6 +13,15 @@
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "dottenheim"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "unterschuepf"
         }
       ],
       "facts": [
@@ -22,7 +31,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "granted his freehold farm properties at Oberschüpf to his subjects Hans Stopf, Wolf Menschel, Michel Krieger and Hans Krieger for an annual rent."
+          "content": "granted his freehold farm properties at Oberschüpf to his subjects Hans Stopf, Wolf Menschel, Michel Krieger and Hans Krieger for an annual rent.",
+          "mention": [
+            {
+              "place": "oberschuepf"
+            }
+          ]
         },
         {
           "person": "Michael Krieger",

@@ -10,19 +10,25 @@
       "english": "Thomas von Rosenberg, Dietrich Geyer, Harthart von Baldersheim, and Fritz Truchseß von Baldersheim witnessed an agreement between Elisabeth von heideck and her two children with her late husband, Hans Truchseß. Elisabeth was to receive 1,500 florins from her children's small and great tithes at Gollhofen until they redeemed the sum. In return, she relinquished her possessions and rights in the castle, town, and district of Aub in favor of her children.",
       "mention": [
         {
-          "person": "Thomas von Rosenberg"
+          "place": "aub"
+        },
+        {
+          "place": "baldersheim"
         },
         {
           "person": "Dietrich Geyer"
         },
         {
-          "person": "Friedrich Truchsess von Baldersheim"
-        },
-        {
           "person": "Elisabeth von heideck"
         },
         {
+          "person": "Friedrich Truchsess von Baldersheim"
+        },
+        {
           "person": "Hans Truchsess"
+        },
+        {
+          "person": "Thomas von Rosenberg"
         }
       ],
       "facts": [
@@ -31,6 +37,9 @@
           "type": "generic",
           "content": "witnessed an agreement by which Elisabeth von Heideck received 1,500 florins from her children’s great and small tithes at Gollhofen until they redeemed the sum, and relinquished her holdings and rights in Aub Castle, town, and district to her children.",
           "mention": [
+            {
+              "place": "aub"
+            },
             {
               "person": "Elisabeth von heideck"
             }

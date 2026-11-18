@@ -15,10 +15,19 @@
       "english": "Konrad, Bishop of Würzburg and Duke of Franconia, enfeoffs the knight Zeysolf von Rosenberg with half of the fief holdings at Baldersheim [in accordance with the enfeoffment of February 21, 1537] as a Mannlehen under the following condition: If Hans von Riedern prevails in the legal dispute he is pursuing with the Würzburg foundation before its feudal court regarding these fief holdings, such that the foundation must hereby enfeoff him or his heirs, then knight Zeysolf shall surrender the fiefs and, including the fief charters and whatever else is adjudicated as right, deliver them without claims for compensation, any legal remedy against this being excluded. -\n\nSeal: The issuer. - Scribe's note by Chancellor Dr. Georg Farner. - On Monday after Reminiscere.\n\nOriginal, parchment (ink faded in places due to mold damage), seal described. - Cf. Reg. No. 1059. - No. 1019.\n\nReg. No. 1071",
       "mention": [
         {
-          "person": "Konrad of Würzburg"
+          "place": "baldersheim"
         },
         {
           "person": "Hans von Riedern"
+        },
+        {
+          "person": "Konrad of Würzburg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -31,13 +40,16 @@
           "content": "received half of the fiefs at Baldersheim as Mannlehen from Bishop Konrad of Würzburg, subject to Hans von Riedern’s pending legal claim.",
           "mention": [
             {
+              "place": "baldersheim"
+            },
+            {
+              "person": "Hans von Riedern"
+            },
+            {
               "person": "Konrad of Würzburg",
               "personTitle": [
                 "Bishop"
               ]
-            },
-            {
-              "person": "Hans von Riedern"
             }
           ]
         }

@@ -10,13 +10,27 @@
       "mention": [
         {
           "person": "Lorenz von Rosenberg"
+        },
+        {
+          "place": "mosbach-st-juliana"
+        },
+        {
+          "place": "zimmern"
         }
       ],
       "facts": [
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "was involved in a tithe dispute with the towns of Mosbach, Diedersheim, and Zimmern."
+          "content": "was involved in a tithe dispute with the towns of Mosbach, Diedersheim, and Zimmern.",
+          "mention": [
+            {
+              "place": "mosbach-st-juliana"
+            },
+            {
+              "place": "zimmern"
+            }
+          ]
         }
       ]
     }

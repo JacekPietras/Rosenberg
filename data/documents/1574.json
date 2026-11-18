@@ -15,10 +15,16 @@
       "english": "Friedrich, Count Palatine of the Rhine etc., declares that he has granted Konrad von Rosenberg at his request on [15]73 December 31 (the last day of December) permission to assign to his wife Kunigunde (Konigundt) von Seckendorff a dower of 2,000 florins on one quarter of the town of Aub, which he holds jointly with his brother and his cousin Philipp Jakob von Rosenberg and Zaisolph von Rosenberg from the Electoral Palatinate (churfurstlicher Pfaltz) as a male fief. Konrad now requests, in view of the improvements made for the fief, that his next heir to the fief be obligated, before taking possession of the fief, after he has died without male legitimate heirs and his wife has died before or after him, to pay his three legitimate daughters as well as the only daughter of his deceased son a total of 2,000 florins in cash as dower income. His rights regarding retainers, feudal obligations, and other rights remain unaffected thereby. -\n\nSeal: the issuer.\n\nOriginal document, parchment, seal attached in wooden capsule - No. 2030.\n\nReg. No. 1653",
       "mention": [
         {
+          "place": "aub"
+        },
+        {
           "person": "Konrad von Rosenberg"
         },
         {
           "person": "Philipp Jakob von Rosenberg"
+        },
+        {
+          "place": "seckendorff"
         },
         {
           "person": "Zaisolph von Rosenberg"
@@ -46,6 +52,9 @@
           "type": "generic",
           "content": "was permitted to secure a 2,000-Gulden Wittum for his wife on the quarter share of Aub held jointly with Philipp Jakob and Zaisolph von Rosenberg.",
           "mention": [
+            {
+              "place": "aub"
+            },
             {
               "person": "Philipp Jakob von Rosenberg"
             },

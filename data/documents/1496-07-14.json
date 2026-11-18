@@ -10,6 +10,9 @@
       "english": "Concerning the sheep drive from Baldersheim into the district of Gülchsheim, the court issued a judgment on Thursday after St Peter and St Paul’s Day, 1496. The archive summary identifies the court’s place, written as Onoltzbach in the transcription, as Ansbach. It ruled that Erasmus von Rosenberg, Ritter, was to have his sheep drive from Baldersheim entered in the district of Gülchsheim under Philipp von Weinsberg. The summary explains that no `pfeich` (an unclear term in the transcription) was to be used and the sheep drive was not to be routed through woodland there; Erasmus could still drive his sheep from Waltershofen into the district according to longstanding custom. Recorded in Conrad’s first register of contracts, fol. 191.",
       "mention": [
         {
+          "place": "baldersheim"
+        },
+        {
           "person": "Erasmus von Rosenberg",
           "personTitle": [
             "Ritter"
@@ -23,7 +26,12 @@
         {
           "person": "Erasmus von Rosenberg",
           "type": "generic",
-          "content": "was permitted by a court judgment to drive his sheep at Baltersheim and in the district of Gülchsheim; he was barred from using sheepfolds or cutting wood in Gülchsheim but could drive sheep there from Waldmannshofen."
+          "content": "was permitted by a court judgment to drive his sheep at Baltersheim and in the district of Gülchsheim; he was barred from using sheepfolds or cutting wood in Gülchsheim but could drive sheep there from Waldmannshofen.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ],
       "img": [

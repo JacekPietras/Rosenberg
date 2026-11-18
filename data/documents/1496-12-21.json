@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Philipp von Rosenberg"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "served as canon of St. German and Mauritius in Speyer and dean of the collegiate foundation at Ettlingen."
+          "content": "served as canon of St. German and Mauritius in Speyer and dean of the collegiate foundation at Ettlingen.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ]
         }
       ],
       "img": [

@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "boxberg"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "was in dispute with the Palatinate over Haus Boxberg."
+          "content": "was in dispute with the Palatinate over Haus Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ]
     }

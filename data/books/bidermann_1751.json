@@ -86,6 +86,11 @@
           "person": "Eberhard von Rosenberg",
           "type": "generic",
           "content": "received the patronage of the churches at Burgheim, Rosenberg, and Bofsheim.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1345"
         },
         {
@@ -158,6 +163,11 @@
           "person": "Eberhard von Rosenberg",
           "type": "generic",
           "content": "received the great and small tithes at Sindolsheim.",
+          "mention": [
+            {
+              "place": "sindolsheim-church"
+            }
+          ],
           "date": "1345"
         },
         {
@@ -170,6 +180,11 @@
           "person": "Eberhard von Rosenberg",
           "type": "generic",
           "content": "received a quarter of the village of Buch with its jurisdiction and bailiwick.",
+          "mention": [
+            {
+              "place": "buch"
+            }
+          ],
           "date": "1345"
         },
         {
@@ -335,6 +350,11 @@
           "person": "Hans von Rosenberg",
           "type": "generic",
           "content": "received his fiefs at Würzburg.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1519"
         },
         {
@@ -456,6 +476,11 @@
           ],
           "type": "generic",
           "content": "captured Hieronymus Paumgärtner der Ältere on his return from the Imperial Diet at Speyer.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ],
           "date": "1544"
         },
         {
@@ -467,6 +492,14 @@
           ],
           "type": "generic",
           "content": "had his castle at Boxberg destroyed by the city of Nuremberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "nuremberg"
+            }
+          ],
           "date": "1523"
         },
         {
@@ -651,6 +684,11 @@
           ],
           "type": "generic",
           "content": "participated in the Würzburg tournament.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1479"
         },
         {
@@ -662,6 +700,11 @@
           ],
           "type": "generic",
           "content": "participated in the Heidelberg tournament.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ],
           "date": "1481"
         },
         {
@@ -672,6 +715,11 @@
           ],
           "type": "generic",
           "content": "attended the Heidelberg tournament.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ],
           "date": "1481"
         },
         {
@@ -774,6 +822,11 @@
           ],
           "type": "generic",
           "content": "attended the Heidelberg tournament.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ],
           "date": "1481"
         },
         {
@@ -829,6 +882,9 @@
           "mention": [
             {
               "person": "Hans von Rosenberg"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ],
           "date": "1512"
@@ -971,6 +1027,11 @@
           ],
           "type": "generic",
           "content": "participated in the Würzburg tournament.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1479"
         },
         {
@@ -1026,6 +1087,11 @@
           ],
           "type": "generic",
           "content": "carried the Rügen shield with Apel von Lichtenstein at Elector Friedrich of Brandenburg’s funeral.",
+          "mention": [
+            {
+              "place": "lichtenstein"
+            }
+          ],
           "date": "1471"
         },
         {
@@ -1037,6 +1103,11 @@
           ],
           "type": "generic",
           "content": "attended the Heidelberg tournament.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ],
           "date": "1481"
         },
         {
@@ -1059,6 +1130,11 @@
           ],
           "type": "generic",
           "content": "was elected and confirmed as bishop of Speyer.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ],
           "date": "1502"
         },
         {
@@ -1070,6 +1146,11 @@
           ],
           "type": "generic",
           "content": "participated in the Heidelberg tournament.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ],
           "date": "1481"
         },
         {
@@ -1317,6 +1398,9 @@
           "mention": [
             {
               "person": "Heinrich von Seckendorf"
+            },
+            {
+              "place": "sindolsheim-church"
             }
           ],
           "date": "1448"
@@ -1330,10 +1414,10 @@
           "content": "stood surety for Konrad von Rosenberg’s purchase from Heinrich von Seckendorf genannt Werdar.",
           "mention": [
             {
-              "person": "Konrad von Rosenberg"
+              "person": "Heinrich von Seckendorf"
             },
             {
-              "person": "Heinrich von Seckendorf"
+              "person": "Konrad von Rosenberg"
             }
           ],
           "date": "1448"
@@ -1344,10 +1428,10 @@
           "content": "stood surety for Konrad von Rosenberg’s purchase from Heinrich von Seckendorf genannt Werdar.",
           "mention": [
             {
-              "person": "Konrad von Rosenberg"
+              "person": "Heinrich von Seckendorf"
             },
             {
-              "person": "Heinrich von Seckendorf"
+              "person": "Konrad von Rosenberg"
             }
           ],
           "date": "1448"
@@ -1358,10 +1442,10 @@
           "content": "stood surety for Konrad von Rosenberg’s purchase from Heinrich von Seckendorf genannt Werdar.",
           "mention": [
             {
-              "person": "Konrad von Rosenberg"
+              "person": "Heinrich von Seckendorf"
             },
             {
-              "person": "Heinrich von Seckendorf"
+              "person": "Konrad von Rosenberg"
             }
           ],
           "date": "1448"
@@ -1373,6 +1457,9 @@
           "mention": [
             {
               "person": "Konrad von Rosenberg"
+            },
+            {
+              "place": "wurzburg"
             }
           ],
           "date": "1541"
@@ -1389,13 +1476,13 @@
           "content": "asked that the fiefs in Neuenbrunn, Oberndorf, and Streichenthal be granted to his cousins Wolf, Christoph, Ludwig, and Zeisolf von Rosenberg.",
           "mention": [
             {
-              "person": "Wolf von Rosenberg"
-            },
-            {
               "person": "Christoph von Rosenberg"
             },
             {
               "person": "Ludwig von Rosenberg"
+            },
+            {
+              "person": "Wolf von Rosenberg"
             },
             {
               "person": "Zaisolph von Rosenberg"
@@ -1602,6 +1689,11 @@
           ],
           "type": "generic",
           "content": "participated in a tournament at Heidelberg.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ],
           "date": "1481"
         },
         {
@@ -1714,6 +1806,11 @@
           ],
           "type": "generic",
           "content": "bought a third of the wine tithe at Haltenbergstetten from Georg Adelmann von Adelmannsfelden.",
+          "mention": [
+            {
+              "place": "schloss-haltenbergstetten"
+            }
+          ],
           "date": "1513"
         },
         {
@@ -1733,6 +1830,14 @@
           ],
           "type": "generic",
           "content": "transferred the castle and market town of Haltenbergstetten to the foundation of Würzburg as a fief.",
+          "mention": [
+            {
+              "place": "schloss-haltenbergstetten"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1520"
         },
         {
@@ -1781,13 +1886,13 @@
           "content": "requested Bishop Konrad of Würzburg to grant his fiefs to his son Hans Kaspar von Rosenberg.",
           "mention": [
             {
+              "person": "Hans Caspar von Rosenberg"
+            },
+            {
               "person": "Konrad of Würzburg",
               "personTitle": [
                 "Bishop"
               ]
-            },
-            {
-              "person": "Hans Caspar von Rosenberg"
             }
           ],
           "date": "1531"
@@ -1822,6 +1927,9 @@
           "content": "received Haltenbergstetten and other property in a division with his brother Wolfgang von Rosenberg.",
           "mention": [
             {
+              "place": "schloss-haltenbergstetten"
+            },
+            {
               "person": "Wolfgang von Rosenberg"
             }
           ],
@@ -1832,6 +1940,9 @@
           "type": "generic",
           "content": "received Haltenbergstetten and other property in a division with his brother Wolfgang von Rosenberg.",
           "mention": [
+            {
+              "place": "schloss-haltenbergstetten"
+            },
             {
               "person": "Wolfgang von Rosenberg"
             }
@@ -1845,12 +1956,22 @@
           ],
           "type": "generic",
           "content": "transferred half the village of Münster and the hamlet of Irmershausen to the foundation of Würzburg as fiefs.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1520"
         },
         {
           "person": "Hans Caspar von Rosenberg",
           "type": "generic",
           "content": "received Würzburg fiefs.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1531"
         },
         {
@@ -1859,10 +1980,10 @@
           "content": "received Gnetsheim, Neubrunn, Oberndorf and Triegelbronn in a division with his brothers Ludwig and Friedrich Zeisolf von Rosenberg.",
           "mention": [
             {
-              "person": "Ludwig von Rosenberg"
+              "person": "Friedrich Zaisolph von Rosenberg"
             },
             {
-              "person": "Friedrich Zaisolph von Rosenberg"
+              "person": "Ludwig von Rosenberg"
             }
           ],
           "date": "1542"
@@ -1980,6 +2101,9 @@
           "mention": [
             {
               "person": "Georg Friedrich von Hohenlohe"
+            },
+            {
+              "place": "schloss-haltenbergstetten"
             }
           ],
           "date": "1631-02-28"

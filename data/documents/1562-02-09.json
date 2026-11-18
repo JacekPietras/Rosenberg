@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "boxberg"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "made an agreement with Elector Friedrich II of the Palatinate to settle disputes over implementation of the 24 July 1561 agreement transferring Boxberg."
+          "content": "made an agreement with Elector Friedrich II of the Palatinate to settle disputes over implementation of the 24 July 1561 agreement transferring Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

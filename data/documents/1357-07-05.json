@@ -10,13 +10,16 @@
       "english": "Charles IV grants Franciscus de Zobolis of Reggio [Emilia] and his heirs a mill in the territory of Mancasale, by the road to Razzolo on the River Navigium; takes him under his special protection and exempts him from all levies imposed by anyone.\n\nWitnesses: Ernst, Erzbischof von Prag; Johann, Bischof von Olmütz; Johann, Bischof von Leitomischl, Kanzler; Dietrich, Bischof von Minden; Rudolf, Herzog von Österreich, Steiermark und Kärnten; Bolko, Herzog von Falkenberg; Bolko, Herzog von Oppeln; Johann, Herzog von Troppau; Albrecht, Graf von Anhalt; Heinrich, Graf von Schwarzburg; Ulrich von Rosenberg; Jodok von Rosenberg; Heinrich von Neuhaus.",
       "mention": [
         {
+          "person": "Heinrich von Neuhaus"
+        },
+        {
           "person": "Heinrich von Schwarzburg"
         },
         {
-          "person": "Ulrich von Rosenberg"
+          "place": "rosenberg-town"
         },
         {
-          "person": "Heinrich von Neuhaus"
+          "person": "Ulrich von Rosenberg"
         }
       ]
     }

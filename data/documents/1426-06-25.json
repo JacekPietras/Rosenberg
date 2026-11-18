@@ -11,6 +11,9 @@
       "english": "Konrad, Elector of Mainz, sells to Eberhard von Rosenberg an annuity of 225 florins from Bischofsheim for 4500 florins. Tuesday after St. John's Day. Frankfurt Register.",
       "mention": [
         {
+          "place": "bischofsheim"
+        },
+        {
           "person": "Eberhard von Rosenberg"
         }
       ],
@@ -18,7 +21,12 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "purchased a 225-florin annuity at Bischofsheim from Konrad, Elector of Mainz, for 4,500 florins."
+          "content": "purchased a 225-florin annuity at Bischofsheim from Konrad, Elector of Mainz, for 4,500 florins.",
+          "mention": [
+            {
+              "place": "bischofsheim"
+            }
+          ]
         }
       ],
       "img": [
@@ -33,6 +41,9 @@
       "german": "Konrad Kurfürst von Mainz verkauft Eberhard von Rosenberg eine jährliche Gülte von 225 fl. zu Bischofsheim um 4500 fl.",
       "english": "Konrad, Elector of Mainz, sells Eberhard von Rosenberg an annual payment of 225 florins from Bischofsheim for 4,500 florins.",
       "mention": [
+        {
+          "place": "bischofsheim"
+        },
         {
           "person": "Eberhard von Rosenberg"
         }

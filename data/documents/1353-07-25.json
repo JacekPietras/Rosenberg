@@ -15,6 +15,9 @@
         },
         {
           "person": "Otto of Zwettl"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -28,6 +31,9 @@
           "mention": [
             {
               "person": "Otto of Zwettl"
+            },
+            {
+              "place": "zwettl"
             }
           ]
         },
@@ -38,6 +44,9 @@
           "mention": [
             {
               "person": "Ludwig von Zwettl"
+            },
+            {
+              "place": "zwettl"
             }
           ]
         },
@@ -48,6 +57,9 @@
           "mention": [
             {
               "person": "Ludwig von Zwettl"
+            },
+            {
+              "place": "zwettl"
             }
           ]
         },
@@ -73,6 +85,9 @@
           "mention": [
             {
               "person": "Ludwig von Zwettl"
+            },
+            {
+              "place": "zwettl"
             }
           ]
         },
@@ -83,6 +98,9 @@
           "mention": [
             {
               "person": "Ludwig von Zwettl"
+            },
+            {
+              "place": "zwettl"
             }
           ]
         },
@@ -92,7 +110,12 @@
             "Burggraf zu Rosenberg"
           ],
           "type": "generic",
-          "content": "pledged his property at Alten Weitra as security to Zwettl for the sold forest fodder."
+          "content": "pledged his property at Alten Weitra as security to Zwettl for the sold forest fodder.",
+          "mention": [
+            {
+              "place": "zwettl"
+            }
+          ]
         },
         {
           "person": "Ludwig von Zwettl",

@@ -19,16 +19,19 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Hans von Rosenberg"
         },
         {
           "person": "Konrad von Rosenberg"
         },
         {
           "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Hans von Rosenberg"
         }
       ],
       "facts": [
@@ -43,7 +46,15 @@
         {
           "person": "Elisabeth",
           "type": "generic",
-          "content": "joined her husband [arnold_brother_of_vogt_zu_Lauda] in selling their share of Boxberg to [vogt_zu_Lauda]."
+          "content": "joined her husband [arnold_brother_of_vogt_zu_Lauda] in selling their share of Boxberg to [vogt_zu_Lauda].",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "lauda"
+            }
+          ]
         },
         {
           "person": "vogt_zu_Lauda",
@@ -65,17 +76,32 @@
             "Vicedom zu Heidelberg"
           ],
           "type": "generic",
-          "content": "served as a co-sealer for the sale of Boxberg."
+          "content": "served as a co-sealer for the sale of Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "served as a co-sealer for the sale of Boxberg."
+          "content": "served as a co-sealer for the sale of Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "served as a co-sealer for the sale of Boxberg."
+          "content": "served as a co-sealer for the sale of Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Ruprecht",
@@ -84,7 +110,12 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "approved the sale of Boxberg as its feudal lord."
+          "content": "approved the sale of Boxberg as its feudal lord.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "arnold_brother_of_vogt_zu_Lauda",
@@ -92,7 +123,15 @@
             "Edelknecht"
           ],
           "type": "generic",
-          "content": "sold, with his wife Elisabeth, their share of Boxberg to his brother and brother-in-law [vogt_zu_Lauda]."
+          "content": "sold, with his wife Elisabeth, their share of Boxberg to his brother and brother-in-law [vogt_zu_Lauda].",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "lauda"
+            }
+          ]
         }
       ],
       "img": [

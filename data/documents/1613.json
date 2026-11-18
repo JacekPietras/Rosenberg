@@ -7,6 +7,11 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1071157",
       "german": "Die kaiserliche Hofkammer erkundigt sich bei Zacharias Geizkofler nach den Reichslehen der Familie von Rosenberg in Franken\n\nLaufzeit: 1613\n\nUmfang: 1 Bü",
       "english": "The Imperial Chamber Court inquires of Zacharias Geizkofler about the imperial fiefs of the von Rosenberg family in Franconia.\n\nDuration: 1613\n\nExtent: 1 file",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "subject": "the von Rosenberg family’s fiefs in Franconia",

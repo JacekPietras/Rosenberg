@@ -8,10 +8,13 @@
       "english": "Hans von Klepsau and his wife Elisabeth sell their part of the tithe to Schweigern by 463 pounds Heller to Margaretha von Thüngen, widow Eberhard von Rosenberg.",
       "mention": [
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Margaretha von Thüngen"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -24,7 +27,12 @@
         {
           "person": "margaretha_von_thungen",
           "type": "generic",
-          "content": "purchased Hans and Elisabeth von Klepsau’s share of the tithe at Schweigern."
+          "content": "purchased Hans and Elisabeth von Klepsau’s share of the tithe at Schweigern.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",

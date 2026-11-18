@@ -9,22 +9,28 @@
       "english": "Knight Wilhelm von Rechberg of Hohenrechberg, chamberlain, Knight Wiprecht the Elder von Helmstadt, Hans von Rotenhan, and Eberhard Rüdt (von Collenberg), Burggraf of Miltenberg, declare that they have concluded a marriage agreement between Ulrich von Rosenberg, son of Arnold, and Anna von Kronberg, daughter of the deceased Walther, with the stipulation that the marital consummation shall take place after Anna reaches the age of 15. Frank the Younger von Kronberg shall give his brother's daughter 3,000 guilders in Frankfurt currency from her paternal inheritance, which Ulrich shall match with an equal sum. Anne shall retain her claim to the 2,000 guilders that Margerethe von Hirschhorn, Anna's mother, has pledged on Heppenheim, and to the 2,400 guilders that have fallen to her from her brothers Hans von Hirschhorn and Philipp von Hirschhorn from their paternal and maternal inheritance.\n\nSealer: Issuer",
       "mention": [
         {
-          "person": "Wiprecht von Helmstadt",
-          "personTitle": [
-            "Knight"
-          ]
-        },
-        {
           "person": "Eberhard Rüd"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         },
         {
           "person": "Hans von Hirschhorn"
         },
         {
+          "place": "hirschhorn"
+        },
+        {
+          "place": "kollenberg"
+        },
+        {
           "person": "Philipp von Hirschhorn"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        },
+        {
+          "person": "Wiprecht von Helmstadt",
+          "personTitle": [
+            "Knight"
+          ]
         }
       ],
       "facts": [

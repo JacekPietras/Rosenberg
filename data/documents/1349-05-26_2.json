@@ -10,13 +10,13 @@
       "english": "King Karl declares: He has promised (that we have pledged and promise in good faith) to Heinrich von Virneburg, who calls himself Archbishop of Mainz, to the Mainz Cathedral Provost Kuno von Falkenstein, to the Mainz Cathedral Canon Nikolaus vom Stein, as well as to the knights Eberhard von Rosenberg, Johann von Randeck, and Johann von Bellersheim as guardians of the Prince-Bishopric of Mainz, then to the Mainz Cathedral Custodian Heinrich von Bimbach, the Mainz Canons Konrad von dem Rietberg, Konrad von Steckelberg, Heinrich Schetzlin, Friedrich Specht, Andreas von Brauneck, and Luther von Büches, the Provost Konrad of St. Moritz at Mainz, the Kantor Friedrich [of the Abbey of St. Peter and Alexander] at Aschaffenburg, and all their adherents that he will in no way assist the Mainz Archbishop Gerlach von Nassau if he wishes to wage war against them (criegete oder criegin wolde), namely neither with words, nor with deeds or letters. He also will not himself undertake anything against the Archbishopric, the aforesaid Heinrich, the Guardians, or the other adherents, and will not hinder them in body or goods.",
       "mention": [
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "König Karl",
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Eberhard von Rosenberg"
         }
       ],
       "facts": [

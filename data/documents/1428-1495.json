@@ -12,7 +12,10 @@
           "person": "Hans von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "rothenburg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -20,6 +23,11 @@
           "person": "Hans von Rosenberg",
           "type": "generic",
           "content": "received the Tauberrettersheim office from Neumünster in Würzburg as a fief in 1428, in return for payments in cash and kind to the provost.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1428"
         },
         {

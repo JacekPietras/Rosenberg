@@ -12,10 +12,13 @@
       "english": "Debt acknowledgment by Hans Leyrer, miller at the middle mill of Rosenberg, and his wife Margarethe for Philipp Kemnater of Hohenkemnath regarding 30 Rhine guilders of unpaid interest and dues on several fields that Kemnater had assigned to them outside the mill, according to the settlement with Kemnater in the presence of Georg Pirckner of Gebertshofen (Gebershoff) and Martin Ludwig von Rosenberg.\nS1: Hans Poppenberger, provincial scribe of Sulzbach; S2: Georg Pirckner of Gerbertshofen (Gebershoff)",
       "mention": [
         {
+          "person": "Martin Ludwig von Rosenberg"
+        },
+        {
           "person": "Philipp Kemnater"
         },
         {
-          "person": "Martin Ludwig von Rosenberg"
+          "place": "rosenberg-town"
         }
       ],
       "img": [

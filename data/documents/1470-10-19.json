@@ -13,13 +13,21 @@
         },
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "madenburg"
         }
       ],
       "facts": [
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "sold Castle Madenburg (-berg) with appurtenances to Elector Friedrich I of the Palatinate."
+          "content": "sold Castle Madenburg (-berg) with appurtenances to Elector Friedrich I of the Palatinate.",
+          "mention": [
+            {
+              "place": "madenburg"
+            }
+          ]
         }
       ]
     }

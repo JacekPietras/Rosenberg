@@ -13,13 +13,16 @@
       "english": "1408 July 15, Heidelberg. King Ruprecht enfeoffs Ulrich von Rosenberg and his heirs in perpetuity with one quarter of Rosenberg Castle and its forecourt. Ulrich von Rosenberg promises never to harm the Palatinate through his share in Rosenberg.",
       "mention": [
         {
+          "place": "heidelberg"
+        },
+        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
           ]
         },
         {
-          "person": "Ulrich von Rosenberg"
+          "place": "rosenberg-town"
         },
         {
           "person": "Ulrich von Rosenberg"
@@ -36,13 +39,21 @@
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "promised not to harm the Palatinate from his share of Rosenberg."
+          "content": "promised not to harm the Palatinate from his share of Rosenberg.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     },
@@ -57,13 +68,16 @@
       "english": "1408 July 15, place not stated. Ulrich von Rosenberg issues a reverse to King Ruprecht concerning his enfeoffment with one quarter of the castle and “forecourt” at Rosenberg.",
       "mention": [
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
           ]
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
@@ -77,6 +91,9 @@
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         }

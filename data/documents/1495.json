@@ -22,14 +22,17 @@
         },
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
         {
           "person": "Asmus von Rosenberg",
           "personTitle": [
-            "Ritter",
-            "Amtmann zu Uffenheim"
+            "Amtmann zu Uffenheim",
+            "Ritter"
           ],
           "type": "parent",
           "of": "Kunz von Rosenberg",
@@ -43,11 +46,16 @@
         {
           "person": "Asmus von Rosenberg",
           "personTitle": [
-            "Ritter",
-            "Amtmann zu Uffenheim"
+            "Amtmann zu Uffenheim",
+            "Ritter"
           ],
           "type": "generic",
-          "content": "received Schloss, village, court and Vogtei of Waldmannshofen and the wood in der Schön as Mannlehen from Margrave Friedrich of Brandenburg after the death of his son Kunz."
+          "content": "received Schloss, village, court and Vogtei of Waldmannshofen and the wood in der Schön as Mannlehen from Margrave Friedrich of Brandenburg after the death of his son Kunz.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ]
     }

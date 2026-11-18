@@ -12,16 +12,25 @@
       "english": "Julius, Bishop of Würzburg and Duke of Franconia, certifies that in the dispute between Heinrich [von Bobenhausen], Administrator of the High Mastership in Prussia and Master of the Teutonic Order in German and Italian lands, on one side, and Philipp Jakob zu Rosenberg, Konrad the Elder of Waldmannshofen (Waldmanßhoven), Konrad the Younger of Haltenbergstetten (Haldenbergstetten) and Gnetzheim, all brothers and kinsmen of Rosenberg, and Philipp Geyer von Giebelstadt zu Giebelstadt, guardian of the children of the deceased Zaisolph von Rosenberg, on the other side, regarding rents and annual payments at Bobstadt (Bobstat), he has rendered the following judgment: The rents and annual payments that Georg Apel, the widow of Georg Weißman, Jobst Aschenbrenner, and Linhart Kayser pay belong to the Hospital at Mergentheim.\n\nCoverage period: December 24, 1583\n\nSealer: Bishop Julius of Würzburg (our secret)",
       "mention": [
         {
-          "person": "Philipp Jakob zu Rosenberg"
-        },
-        {
-          "person": "Konrad of Waldmannshofen"
+          "place": "bobstadt"
         },
         {
           "person": "Konrad of Haltenbergstetten"
         },
         {
+          "person": "Konrad of Waldmannshofen"
+        },
+        {
           "person": "Philipp Geyer von Giebelstadt"
+        },
+        {
+          "person": "Philipp Jakob zu Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
         },
         {
           "person": "Zaisolph von Rosenberg"
@@ -31,7 +40,12 @@
         {
           "subject": "the von Rosenberg brothers and cousins",
           "type": "generic",
-          "content": "were in dispute with the Teutonic Order over rents at Bobstadt; the judgment assigned the rents to Mergentheim Hospital."
+          "content": "were in dispute with the Teutonic Order over rents at Bobstadt; the judgment assigned the rents to Mergentheim Hospital.",
+          "mention": [
+            {
+              "place": "bobstadt"
+            }
+          ]
         }
       ],
       "img": [

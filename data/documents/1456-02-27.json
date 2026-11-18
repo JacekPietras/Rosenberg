@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
@@ -19,7 +22,12 @@
             "Amtmann zu Tauberbischofsheim"
           ],
           "type": "generic",
-          "content": "granted the Nuremberg merchants safe conduct to the Frankfurt Lent fair on behalf of the Archbishop of Mainz."
+          "content": "granted the Nuremberg merchants safe conduct to the Frankfurt Lent fair on behalf of the Archbishop of Mainz.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ]
         }
       ],
       "img": [

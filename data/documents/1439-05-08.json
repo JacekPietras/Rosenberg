@@ -9,13 +9,16 @@
       "english": "Albrecht II urges Ulrich von Rosenberg to require the city of Kaaden to accept Heinrich I von Plauen, Burggraf zu Meißen, as its pledge lord in accordance with the pledge made by König Sigismund and confirmed by Albrecht, “as we have written to our beloved and faithful people of Kaaden.” Given at Preszburg on Friday after St John's Day before the Latin Gate, 1439. By order of the king: Marquardus Brisacher.",
       "mention": [
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
           "person": "König Siegmund",
           "personTitle": [
             "König"
           ]
+        },
+        {
+          "place": "meissen"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ]
     }

@@ -10,10 +10,13 @@
       "english": "The transcription says that Arnsfeld, which belonged to the von Rosenbergs, was where Kunz von Rosenberg received all the properties in the village as a fief from Bishop Johann von Egloffstein in 1406. The archive summary identifies Arnsfeld as Erfeld and Contz as Konrad von Rosenberg. Recorded in the Register of Acquisitions, fol. 187. Marginal insertion: 1406.",
       "mention": [
         {
+          "person": "Konrad von Rosenberg"
+        },
+        {
           "person": "Kunz von Rosenberg"
         },
         {
-          "person": "Konrad von Rosenberg"
+          "place": "rosenberg-town"
         }
       ],
       "facts": [

@@ -10,6 +10,15 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "boxberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
@@ -19,7 +28,12 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "made an agreement with Philipp Jakob, Konrad and Hans Eucharius von Rosenberg concerning their subjects’ sheep drives at Hohenstadt, Rosenberg and Hirschlanden."
+          "content": "made an agreement with Philipp Jakob, Konrad and Hans Eucharius von Rosenberg concerning their subjects’ sheep drives at Hohenstadt, Rosenberg and Hirschlanden.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ],
       "img": [

@@ -9,7 +9,10 @@
       "english": "Erkinger von Sawnsheim, Ritter, arbitrated a dispute between Sigmund, Haubt, and Heinrich Marschalk zu Pappenheim and Ritter Hans von Rosenberg. The parties settled their claims concerning the dowry and counter-dowry of Hans’s late wife, Elßbeth Marschalkin zu Pappenheim. They also agreed to lend each other a Bible for one year on request; after Hans’s death, the Bible was to remain with the Marschalken. The catalog dates the deed to 15 June 1418; its original dating field names St Vitus’s Day.",
       "mention": [
         {
-          "person": "Siegmund Marschalk zu Pappenheim"
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
           "person": "Haubt Marschalk zu Pappenheim"
@@ -18,10 +21,10 @@
           "person": "Heinrich Marschalk zu Pappenheim"
         },
         {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
+          "place": "pappenheim"
+        },
+        {
+          "person": "Siegmund Marschalk zu Pappenheim"
         }
       ],
       "facts": [
@@ -43,13 +46,13 @@
           "content": "settled with Sigmund, Haubt, and Heinrich Marschalk von Pappenheim their mutual claims concerning the dowry and property of his deceased wife Elsbeth, their cousin.",
           "mention": [
             {
-              "person": "Siegmund Marschalk von Pappenheim"
-            },
-            {
               "person": "Haubt Marschalk von Pappenheim"
             },
             {
               "person": "Heinrich Marschalk von Pappenheim"
+            },
+            {
+              "person": "Siegmund Marschalk von Pappenheim"
             }
           ]
         },

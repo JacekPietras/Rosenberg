@@ -15,6 +15,12 @@
       "english": "Melchior, elected and confirmed Bishop of Würzburg and Duke in Franconia, enfeoffs Zeisolf zu Rosenberg with his half of the fiefs at Baldersheim [as on February 21, 1537] under the condition [as on March 18, 1538] as a Mannlehen (vassal fief). -\n\nSealer: the issuer. - Scribe's note by P. E. Klarman.- Friday after the Sunday Judica.\n\nIssue, Parchment, Seal attached.- Cf. Reg. No. 1059, 1071.- No. 1090.\n\nReg. No. 1148",
       "mention": [
         {
+          "place": "baldersheim"
+        },
+        {
+          "place": "wurzburg"
+        },
+        {
           "person": "Zaisolph zu Rosenberg"
         }
       ],
@@ -27,6 +33,9 @@
           "type": "generic",
           "content": "received his half of the fiefs at Baldersheim as Mannlehen from Bishop Melchior of Würzburg.",
           "mention": [
+            {
+              "place": "baldersheim"
+            },
             {
               "person": "Melchior of Würzburg",
               "personTitle": [

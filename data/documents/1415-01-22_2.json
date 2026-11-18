@@ -9,16 +9,19 @@
       "english": "King Sigmund permits the brothers Arnold von Rosenberg and Eberhard von Rosenberg to have a gallows court, stocks, and gallows in their village of Schweigern.\n\nDuration: January 22, 1415 (1415 Vicentius)",
       "mention": [
         {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "König Siegmund",
           "personTitle": [
             "King"
           ]
         },
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -32,6 +35,9 @@
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "schweigern"
             }
           ]
         },
@@ -45,6 +51,9 @@
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "schweigern"
             }
           ]
         }

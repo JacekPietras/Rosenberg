@@ -15,19 +15,25 @@
       "english": "Ludwig, Count Palatine of the Rhine etc., Elector, after the death of Philipp Jakob von Rosenberg, enfeoffs his brother Konrad the Elder von Rosenberg, simultaneously for Konrad the Younger, Albrecht Christof and Georg Sigmund brothers von Rosenberg, sons of his deceased cousin Zaisolph von Rosenberg, with the quarter of the town of Aub that has fallen to them, which the deceased Knight Konrad von Rosenberg and his ancestors already held as a male fief from the Palatinate, as a male fief. Hereby his rights, those of his retainers, and third parties remain unaffected. The von Rosenberg and their fief heirs are henceforth to take the fief anew from the respective Counts Palatine in all applicable cases and fulfill the duties customarily associated with it. —\n\nSealer: The issuer.\n\nOriginal copy; parchment; seal attached. — No. 1697.\n\nReg. No. 1796",
       "mention": [
         {
-          "person": "Philipp Jakob von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
+          "place": "aub"
         },
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Philipp Jakob von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -78,6 +84,9 @@
           "type": "generic",
           "content": "received the quarter of Aub as a Mannlehen after the death of Philipp Jakob von Rosenberg.",
           "mention": [
+            {
+              "place": "aub"
+            },
             {
               "person": "Philipp Jakob von Rosenberg"
             }

@@ -14,7 +14,13 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "beckstein"
+        },
+        {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "kupprichhausen"
         }
       ],
       "facts": [
@@ -26,7 +32,18 @@
         {
           "person": "arnold_boxberg",
           "type": "generic",
-          "content": "exchanged a meadow at Beckstein for a meadow at Kupprichhausen with Raban and Kunz Mertin, residents of Messelhausen, jointly with [eberhard_jagstberg]."
+          "content": "exchanged a meadow at Beckstein for a meadow at Kupprichhausen with Raban and Kunz Mertin, residents of Messelhausen, jointly with [eberhard_jagstberg].",
+          "mention": [
+            {
+              "place": "beckstein"
+            },
+            {
+              "place": "jagstberg"
+            },
+            {
+              "place": "kupprichhausen"
+            }
+          ]
         }
       ],
       "img": [

@@ -43,13 +43,13 @@
       "english": "Eberhard von Rosenberg, Ritter, Vogt zu Dürn, states that on the date of the document he spent 30 Heller shillings at a meeting in Bensheim with friends of Count Palatine Ruprecht, together with Heinrich Bavarus, notary of the Archbishop of Mainz, and other friends of the archbishop. Jakob, the cellarer in Starkenburg, is to pay the expense. Given at Bensheim on the Tuesday after the beheading of John the Baptist.\n\nAlternative English rendering: The knight Eberhard von Rosenberg, Vogt zu Dürn, instructs the cellar Jakob zu Starkenburg (Starkenberg) to pay the costs incurred during the meeting with the Bavarian envoys of Count Palatine Rupert I in Bensheim.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "knight"
           ]
+        },
+        {
+          "person": "Eberhard von Rosenberg"
         }
       ],
       "facts": [

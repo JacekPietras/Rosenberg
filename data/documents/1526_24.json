@@ -9,6 +9,9 @@
       "english": "Zaisolph von Rosenberg to the Lieutenant and Councillors of Ansbach: Certain witnesses do not wish to be examined in Haldermannstetten.",
       "mention": [
         {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "informed the Ansbach governors and councilors that certain witnesses did not want to be examined at Haltenbergstetten."
+          "content": "informed the Ansbach governors and councilors that certain witnesses did not want to be examined at Haltenbergstetten.",
+          "mention": [
+            {
+              "place": "schloss-haltenbergstetten"
+            }
+          ]
         }
       ]
     }

@@ -10,6 +10,15 @@
       "mention": [
         {
           "person": "Friedrich Zobel von Giebelstadt"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "roettingen-st-kilian"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -20,6 +29,9 @@
           "mention": [
             {
               "person": "Friedrich Zobel"
+            },
+            {
+              "place": "oberschuepf"
             }
           ]
         }

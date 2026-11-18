@@ -9,6 +9,9 @@
       "english": "Erasmus von Rosenberg, Knight, acknowledges receipt from Philipp Stumpf of Schweinberg (Schwynßberg) of 200 gulden, which the Count Palatines Ludwig, Ruprecht, and Friedrich had contractually agreed as amicable settlement for the damages Erasmus had suffered through Philipp.\n\nTerm: 1500 December 13 (on St. Lucy's Day)\n\nSealer: Erasmus von Rosenberg (impressed seal)",
       "mention": [
         {
+          "place": "burg-schweinberg"
+        },
+        {
           "person": "Erasmus von Rosenberg",
           "personTitle": [
             "Knight"
@@ -25,7 +28,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "acknowledged receipt from Philipp Stumpf von Schweinberg of the agreed settlement payment for damages."
+          "content": "acknowledged receipt from Philipp Stumpf von Schweinberg of the agreed settlement payment for damages.",
+          "mention": [
+            {
+              "place": "burg-schweinberg"
+            }
+          ]
         }
       ],
       "img": [

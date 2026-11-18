@@ -23,7 +23,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "mediated the settlement at Neuenstein concerning the purchase of Bickenbach."
+          "content": "mediated the settlement at Neuenstein concerning the purchase of Bickenbach.",
+          "mention": [
+            {
+              "place": "bickenbach"
+            }
+          ]
         }
       ],
       "img": [

@@ -10,6 +10,15 @@
       "mention": [
         {
           "person": "Hans Thomas von Rosenberg"
+        },
+        {
+          "place": "katzenelnbogen"
+        },
+        {
+          "place": "leyen"
+        },
+        {
+          "place": "limpurg"
         }
       ],
       "facts": [
@@ -17,6 +26,11 @@
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
           "content": "was associated with a company pursued by Georg von der Leyen over a robbery committed on the Rhine.",
+          "mention": [
+            {
+              "place": "leyen"
+            }
+          ],
           "date": "1532-01"
         }
       ],

@@ -11,6 +11,9 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Friedrich von Rosenberg"
         }
       ],
@@ -28,17 +31,32 @@
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "exchanged the Hofstatt at Boxberg that he and his brother Friedrich had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Friedrich."
+          "content": "exchanged the Hofstatt at Boxberg that he and his brother Friedrich had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Friedrich.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "exchanged the Hofstatt at Boxberg that he and his brother Arnold had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Arnold."
+          "content": "exchanged the Hofstatt at Boxberg that he and his brother Arnold had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Arnold.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "had a Hofhaus at Boxberg above the Hofstatt that his brothers Arnold and Friedrich received in their partition with him."
+          "content": "had a Hofhaus at Boxberg above the Hofstatt that his brothers Arnold and Friedrich received in their partition with him.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

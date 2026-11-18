@@ -16,13 +16,27 @@
       "mention": [
         {
           "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received the inherited Waldmannshofen castle, village, court and Vogtei, as well as woodland at Schön and a meadow in the Schmal, as a Mannlehen from the Burgraviate of Nuremberg."
+          "content": "received the inherited Waldmannshofen castle, village, court and Vogtei, as well as woodland at Schön and a meadow in the Schmal, as a Mannlehen from the Burgraviate of Nuremberg.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            },
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ]
     }

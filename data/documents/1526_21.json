@@ -9,6 +9,12 @@
       "english": "Zaisolph von Rosenberg to Rothenburg: escort for the witnesses to Haldermannstetten.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +22,15 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "asked Rothenburg to provide safe conduct for witnesses traveling to Haltenbergstetten."
+          "content": "asked Rothenburg to provide safe conduct for witnesses traveling to Haltenbergstetten.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            },
+            {
+              "place": "schloss-haltenbergstetten"
+            }
+          ]
         }
       ]
     }

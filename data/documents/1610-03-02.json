@@ -9,6 +9,9 @@
       "english": "Emperor Rudolf II. confirms that he has enfeoffed Wolfgang, Wolf Friedrich, Eberhard, Hans Georg, and Wolf Dietrich Kämmerer von Worms called von Dalberg with the high court of Essingen, which Hans Christoph von Rosenberg had reinstated and sold along with the two villages of Essingen to Elector Wolfgang of Mainz and the von Dalberg family, as a fief of the Holy Roman Empire",
       "mention": [
         {
+          "place": "essingen"
+        },
+        {
           "person": "Hans Christoph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Hans Christoph von Rosenberg",
           "type": "generic",
-          "content": "had restored the blood court at Essingen and sold it with the two villages to Elector Wolfgang of Mainz and the von Dalberg family."
+          "content": "had restored the blood court at Essingen and sold it with the two villages to Elector Wolfgang of Mainz and the von Dalberg family.",
+          "mention": [
+            {
+              "place": "essingen"
+            }
+          ]
         }
       ]
     }

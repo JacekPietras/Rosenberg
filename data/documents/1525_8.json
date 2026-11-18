@@ -9,6 +9,9 @@
       "english": "Rothenburg to Zaisolph von Rosenberg: his complaint regarding damage caused by Rothenburg subjects.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was the subject of his complaint to Rothenburg concerning damage caused by the city’s subjects."
+          "content": "was the subject of his complaint to Rothenburg concerning damage caused by the city’s subjects.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

@@ -9,9 +9,6 @@
       "english": "Michael von Rosenberg promises to indemnify Friedrich von Fleckenstein for the guarantee he gave on Michael’s behalf to the brothers Hans Konrad von Helmstadt and Joachim von Helmstadt.\n\nDuration: 1483 October 1",
       "mention": [
         {
-          "person": "Michael von Rosenberg"
-        },
-        {
           "person": "Friedrich von Fleckenstein"
         },
         {
@@ -19,6 +16,9 @@
         },
         {
           "person": "Joachim von Helmstadt"
+        },
+        {
+          "person": "Michael von Rosenberg"
         }
       ],
       "facts": [

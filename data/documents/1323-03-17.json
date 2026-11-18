@@ -17,31 +17,13 @@
           ]
         },
         {
-          "person": "Arnold von Uissigheim",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Eberhard von Uissigheim"
-        },
-        {
-          "person": "Arnold von Uissigheim",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Eberhard von Uissigheim"
+          "place": "bronnbach"
         },
         {
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Arnold von Uissigheim",
-          "personTitle": [
-            "Ritter"
-          ]
+          "person": "Eberhard von Uissigheim"
         }
       ],
       "facts": [
@@ -115,6 +97,9 @@
           "type": "generic",
           "content": "renounced his rights and claims to the farm at Breitenau and a meadow between Dörlesberg and the Botenmühle, together with his family and Eberhard von Uissigheim and his family, in favor of Bronnbach Abbey.",
           "mention": [
+            {
+              "place": "bronnbach"
+            },
             {
               "person": "Eberhard von Uissigheim"
             }

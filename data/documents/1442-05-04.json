@@ -10,6 +10,12 @@
       "english": "Ulrich von Rosenberg informed the city of Nuremberg that its dispute with von Swamberg had been referred to the Landgrave of Leuchtenberg.",
       "mention": [
         {
+          "place": "leuchtenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
           "person": "Ulrich von Rosenberg"
         }
       ],

@@ -12,27 +12,48 @@
           "person": "Adam Hector von Rosenberg"
         },
         {
-          "person": "Hans Konrad von Rosenberg"
+          "place": "fulda-cathedral"
         },
         {
           "person": "Hans Dietrich von Rosenberg"
+        },
+        {
+          "person": "Hans Konrad von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
         {
           "person": "Adam Hector von Rosenberg",
           "type": "generic",
-          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda."
+          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda.",
+          "mention": [
+            {
+              "place": "fulda-cathedral"
+            }
+          ]
         },
         {
           "person": "Hans Konrad von Rosenberg",
           "type": "generic",
-          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda."
+          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda.",
+          "mention": [
+            {
+              "place": "fulda-cathedral"
+            }
+          ]
         },
         {
           "person": "Hans Dietrich von Rosenberg",
           "type": "generic",
-          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda."
+          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda.",
+          "mention": [
+            {
+              "place": "fulda-cathedral"
+            }
+          ]
         }
       ]
     }

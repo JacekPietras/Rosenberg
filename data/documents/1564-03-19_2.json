@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "boxberg"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "reached a mediated settlement with the Palatinate’s official and cellarer at Boxberg over neighboring disputes."
+          "content": "reached a mediated settlement with the Palatinate’s official and cellarer at Boxberg over neighboring disputes.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

@@ -17,16 +17,16 @@
           "person": "Christiana von Handschuhsheim"
         },
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Reinhard von Uissigheim"
+          "place": "eiersheim"
         },
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "person": "Reinhard von Uissigheim"
         }
       ],
       "facts": [
@@ -41,6 +41,9 @@
           "mention": [
             {
               "person": "Christiana von Handschuhsheim"
+            },
+            {
+              "place": "eiersheim"
             }
           ]
         },

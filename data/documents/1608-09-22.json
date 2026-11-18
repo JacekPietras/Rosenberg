@@ -12,19 +12,28 @@
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
+          "person": "Brigitta von Rosenberg"
+        },
+        {
           "person": "Georg Friedrich von Seckendorf"
         },
         {
-          "person": "Brigitta von Rosenberg"
+          "place": "oberschuepf"
+        },
+        {
+          "place": "sugenheim-st-erhard"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Albrecht Christoph von Rosenberg",
           "personTitle": [
-            "zu Waldmannshofen",
             "zu Knetzgau",
-            "zu Schüpf"
+            "zu Schüpf",
+            "zu Waldmannshofen"
           ],
           "type": "generic",
           "content": "was present with the other guardians when the notary authenticated an inventory of Brigitta’s share of movable goods and jewelry."

@@ -7,6 +7,11 @@
       "url": "https://www.gda.bayern.de/gvl/document/598df0d1-f0f3-42d4-b48d-3907ef13def6",
       "german": "Mortificationsbrief Cunsens von Rosenberg über eine von Burggraf [= Markgraf] Friedrich über Uffenheim gehabte Verschreibung.",
       "english": "Cunsen von Rosenberg issued a letter of cancellation concerning an assignment held by Margrave Friedrich over Uffenheim.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",

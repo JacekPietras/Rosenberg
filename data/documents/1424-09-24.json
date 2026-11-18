@@ -9,13 +9,19 @@
       "english": "Count Johann von Wertheim, at the request of Hans Münch von Rosenberg, releases his estate at Hainstadt, the Zörnlein estate, from the feudal obligations of the County of Wertheim, so that Hans Münch may give it to the church at Hainstadt.",
       "mention": [
         {
-          "person": "Hans von Wertheim"
+          "place": "hainstadt"
+        },
+        {
+          "person": "Hans Mönch"
         },
         {
           "person": "Hans Mönch von Rosenberg"
         },
         {
-          "person": "Hans Mönch"
+          "person": "Hans von Wertheim"
+        },
+        {
+          "place": "wertheim-stiftskirche"
         }
       ]
     }

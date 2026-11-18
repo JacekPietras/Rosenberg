@@ -9,6 +9,9 @@
       "english": "Letter from Wolfgang von Rosenberg, commander at Rothenburg ob der Tauber, to Walther von Kronberg, Grand Master of the Teutonic Order.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Wolfgang von Rosenberg"
         }
       ],
@@ -19,7 +22,12 @@
             "Komtur zu Rothenburg"
           ],
           "type": "generic",
-          "content": "corresponded with Deutschmeister Walther von Kronberg about parish matters at Rothenburg."
+          "content": "corresponded with Deutschmeister Walther von Kronberg about parish matters at Rothenburg.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

@@ -12,10 +12,7 @@
       "english": "Eberhard von Rosenberg, der Alte, and Anna, his wife, promise to release the Wagenbuch tithe (cf. StAWt-R US 1382 February 15), which they had sold to Bronnbach Monastery, from any feudal obligation or to compensate the monastery in some other way.\n\nSeal: Eberhard von Rosenberg der Alte; Anna, his wife; Knebel Stetenberg von Husen, guarantor; Fritz Stetenberg, guarantor; Peter Stetenberg, Fritz's brother, guarantor On the back: \"Wölchingen (!). Reverse of Eberhard von Rosenberg, that if the tithe, which the monastery had bought from him, were to be given to someone as a fief, he would free the same, from the year 1382.\"",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Alte"
-          ]
+          "place": "bronnbach"
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -25,6 +22,9 @@
         },
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "wolchingen"
         }
       ],
       "facts": [
@@ -34,7 +34,12 @@
             "der Alte"
           ],
           "type": "generic",
-          "content": "had sold the Wagenbuch tithe to Bronnbach Monastery jointly with his wife Anna."
+          "content": "had sold the Wagenbuch tithe to Bronnbach Monastery jointly with his wife Anna.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -63,7 +68,12 @@
             "der Alte"
           ],
           "type": "generic",
-          "content": "promised, jointly with his wife Anna, to free the Wagenbuch tithe from any feudal obligation or otherwise compensate Bronnbach Monastery."
+          "content": "promised, jointly with his wife Anna, to free the Wagenbuch tithe from any feudal obligation or otherwise compensate Bronnbach Monastery.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ]
         },
         {
           "person": "Knebel Stetenberg von Husen",

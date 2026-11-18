@@ -10,13 +10,27 @@
       "mention": [
         {
           "person": "Asmus von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Asmus von Rosenberg",
           "type": "generic",
-          "content": "provided a written acknowledgment concerning the Uffenheim hunt in 1491 amid disputes over hunting rights at Waldmannshofen between Brandenburg and Rosenberg."
+          "content": "provided a written acknowledgment concerning the Uffenheim hunt in 1491 amid disputes over hunting rights at Waldmannshofen between Brandenburg and Rosenberg.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ]
     }

@@ -13,6 +13,9 @@
       "mention": [
         {
           "person": "Kunz Mönch von Rosenberg"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [
@@ -22,7 +25,12 @@
             "Vogt zu Steinsberg"
           ],
           "type": "generic",
-          "content": "was one of the arbitrators in the decision between Markgraf Bernhard von Baden and the town of Speyer."
+          "content": "was one of the arbitrators in the decision between Markgraf Bernhard von Baden and the town of Speyer.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ]
         }
       ]
     }

@@ -8,16 +8,13 @@
       "english": "Adolf and Hans, Counts of Nassau, brothers; Ulrich, Lord of Hanau; Konrad Rude, Ritter, Burggraf zu Starkenberg, acknowledge that Lord Gerlach, Archbishop of Mainz, and the stern Eberhard von Rosenberg, Ritter have chosen the noble men Count Rudolf von Wertheim, Lord Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach to investigate the debt certificates which the aforementioned Eberhard claims are due to him from the Chapter of Mainz. Given at Mildenberg on the day of Fabian and Sebastian. (Citation: c. 4 S.)",
       "mention": [
         {
-          "person": "Konrad Rüd"
-        },
-        {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ]
         },
         {
-          "person": "Rudolf von Wertheim"
+          "person": "Konrad Rüd"
         },
         {
           "person": "Konrad von Bickenbach",
@@ -27,6 +24,9 @@
         },
         {
           "person": "Konrad von Erbach"
+        },
+        {
+          "person": "Rudolf von Wertheim"
         }
       ],
       "facts": [
@@ -39,9 +39,6 @@
           "content": "together with Archbishop Gerlach, chose Rudolf von Wertheim, Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach to investigate the debt letters he claimed were owed to him by the Mainz Chapter.",
           "mention": [
             {
-              "person": "Rudolf von Wertheim"
-            },
-            {
               "person": "Konrad von Bickenbach",
               "personTitle": [
                 "der Ältere"
@@ -49,6 +46,9 @@
             },
             {
               "person": "Konrad von Erbach"
+            },
+            {
+              "person": "Rudolf von Wertheim"
             }
           ]
         }
@@ -61,10 +61,22 @@
       "english": "Adolf and Hans, Counts of Nassau, brothers, Ulrich, Lord of Hanau, and Konrad Rüdt, Ritter, Burggraf zu Starkenburg, have agreed with Eberhard von Rosenberg, Ritter, Vogt zu Wildenberg, – who has claimed (misled himself) to have letters from the Mainz cathedral chapter about the archbishopric's debts to him, and has demanded this debt from Archbishop Gerlach – and Archbishop Gerlach, with both their knowledge and consent, that the two have chosen Count Rud[olf] von Wertheim, Lord Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach. These are to take the letters of which Eberhard speaks and then decide by Easter, based on the letters and information that the chapter can provide. If a substitute is needed, the two remaining commissioners shall choose between Eberhard Rüdt, Ritter and Amtmann zu Miltenberg, and Engelhard von Hirschhorn, Ritter. If the archbishop does not do what the three commissioners deem appropriate, the exhibitors must, upon Eberhard's warning, send a servant and a horse each to Frankfurt within 14 days to perform the task. The three shall decide in Aschaffenburg; the archbishop shall request that they do so within the specified time.",
       "mention": [
         {
-          "person": "Konrad Rüd"
+          "person": "Eberhard Rüd",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Engelhard von Hirschhorn",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Konrad Rüd"
         },
         {
           "person": "Konrad von Bickenbach",
@@ -76,16 +88,7 @@
           "person": "Konrad von Erbach"
         },
         {
-          "person": "Eberhard Rüd",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Engelhard von Hirschhorn",
-          "personTitle": [
-            "Ritter"
-          ]
+          "place": "wertheim-stiftskirche"
         }
       ],
       "facts": [
@@ -117,9 +120,6 @@
           "content": "together with Archbishop Gerlach, chose Rudolf von Wertheim, Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach to investigate the debt claims he had made against the Mainz Chapter.",
           "mention": [
             {
-              "person": "Rudolf von Wertheim"
-            },
-            {
               "person": "Konrad von Bickenbach",
               "personTitle": [
                 "der Ältere"
@@ -127,6 +127,9 @@
             },
             {
               "person": "Konrad von Erbach"
+            },
+            {
+              "person": "Rudolf von Wertheim"
             }
           ]
         }

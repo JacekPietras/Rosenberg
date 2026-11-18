@@ -9,6 +9,9 @@
       "english": "Electors Karl Albrecht of Bavaria and Karl Philipp of the Palatinate certify that, by virtue of their imperial vicarage, they have renewed for Hugo Philipp Kämmerer von Worms Freiherr von Dalberg and his relatives (as in No. 2968) the high and blood jurisdiction formerly granted by Emperor Rudolf II to the late Hans Christoph von Rosenberg for the villages of Ober- and Niederessingen, after Essingen had been purchased from the Dalbergs. They also permitted the establishment of stocks and a gallows, as well as the appointment of 10 or 12 men to serve on the court of last resort.\n\nSealer: Issuer (joint imperial vicarage seal)",
       "mention": [
         {
+          "place": "essingen"
+        },
+        {
           "person": "Hans Christoph von Rosenberg"
         }
       ],
@@ -22,7 +25,12 @@
           "person": "Hans Christoph von Rosenberg",
           "personDeceased": true,
           "type": "generic",
-          "content": "had held high and blood jurisdiction over Ober- and Niederessingen before the von Dalberg family bought Essingen."
+          "content": "had held high and blood jurisdiction over Ober- and Niederessingen before the von Dalberg family bought Essingen.",
+          "mention": [
+            {
+              "place": "essingen"
+            }
+          ]
         }
       ]
     }

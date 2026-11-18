@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "pappenheim"
         }
       ],
       "facts": [
@@ -19,10 +22,10 @@
           "content": "served as one of the mediators who settled the legal disputes and claims between Sigmund and Haubt Marschalk von Pappenheim.",
           "mention": [
             {
-              "person": "Siegmund Marschalk von Pappenheim"
+              "person": "Haubt Marschalk von Pappenheim"
             },
             {
-              "person": "Haubt Marschalk von Pappenheim"
+              "person": "Siegmund Marschalk von Pappenheim"
             }
           ]
         }

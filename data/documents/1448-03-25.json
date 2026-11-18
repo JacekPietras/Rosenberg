@@ -19,6 +19,9 @@
         },
         {
           "person": "Margaretha von Seinsheim"
+        },
+        {
+          "place": "sindolsheim-church"
         }
       ],
       "facts": [
@@ -31,10 +34,13 @@
           "content": "and his wife Margarethe von Seinsheim bought Heinz von Seckendorff gen. Aberdar’s quarter of the great tithe and half of the small tithe at Sindolsheim for 400 guilders.",
           "mention": [
             {
+              "person": "Heinrich von Seckendorff"
+            },
+            {
               "person": "Margaretha von Seinsheim"
             },
             {
-              "person": "Heinrich von Seckendorff"
+              "place": "sindolsheim-church"
             }
           ]
         }

@@ -9,6 +9,12 @@
       "english": "Archbishop Adolf I of Mainz regulates the repayment of his debts to the squire Götz von Rosenberg. L(itte)ra data Götz von Rosenberg. [The Archbishop of Mainz] Adolf [I of Nassau, Bishop of Speyer] owes the squire Götz von Rosenberg 50 gulden for a stallion that was damaged during his service, when they were (gese?)s sitting at Rockenhausen (Rockenhusen) and captured it. His dear 'faithful servants' Knight Eberhard Rüdt, archiepiscopal castellan in Wildenburg, and Nikolaus (Nicol(aus)), archiepiscopal cellarist in Miltenberg, have appraised this stallion with him. - Given in the year [13]83.",
       "mention": [
         {
+          "person": "Eberhard Rüd",
+          "personTitle": [
+            "Knight"
+          ]
+        },
+        {
           "person": "Götz von Rosenberg",
           "personTitle": [
             "squire"
@@ -18,16 +24,7 @@
           "person": "Götz von Rosenberg"
         },
         {
-          "person": "Götz von Rosenberg",
-          "personTitle": [
-            "squire"
-          ]
-        },
-        {
-          "person": "Eberhard Rüd",
-          "personTitle": [
-            "Knight"
-          ]
+          "place": "speyer"
         }
       ],
       "facts": [

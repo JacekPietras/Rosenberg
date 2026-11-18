@@ -11,13 +11,13 @@
       "english": "King Ruprecht instructs the city of Schweinfurt to give the next annual tax to Arnold von Rosenberg. C.",
       "mention": [
         {
+          "person": "Arnold von Rosenberg"
+        },
+        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Arnold von Rosenberg"
         }
       ],
       "facts": [
@@ -50,13 +50,13 @@
       "english": "1402 May 9, Amberg. King Rupert orders the city of Schweinfurt to pay the next imperial tax due to Arnold von Rosenberg.",
       "mention": [
         {
+          "person": "Arnold von Rosenberg"
+        },
+        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Arnold von Rosenberg"
         }
       ]
     }

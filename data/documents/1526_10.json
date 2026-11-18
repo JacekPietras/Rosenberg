@@ -9,6 +9,9 @@
       "english": "Herrieden Abbey: The Amtmann of Tauberzell is to testify in the case against Zaisolph von Rosenberg.",
       "mention": [
         {
+          "place": "herrieden"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],

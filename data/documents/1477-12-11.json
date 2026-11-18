@@ -9,7 +9,12 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1477_XII_11/charter"
       ],
       "german": "Punktationen eines Vertrages zwischen Bohuslaw von Schwamberg an Stelle der Herren von Rosenberg und Peter Stupensky von Huzna wegen der Netolitzer Kirche sammt Zubehör, wegen Herschlag etc.",
-      "english": "Articles of agreement between Bohuslaw von Schwamberg, acting on behalf of the Lords von Rosenberg, and Peter Stupensky of Huzna concerning Netolitz Church and its appurtenances, Herschlag, and other matters."
+      "english": "Articles of agreement between Bohuslaw von Schwamberg, acting on behalf of the Lords von Rosenberg, and Peter Stupensky of Huzna concerning Netolitz Church and its appurtenances, Herschlag, and other matters.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

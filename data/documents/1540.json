@@ -15,6 +15,12 @@
       "english": "Ludwig, Count Palatine of the Rhine and Duke in Bavaria, Elector, who at the same time represents his brother Duke Friedrich, after the death of Knight Konrad von Rosenberg, enfeoffs Lorenz von Rosenberg, simultaneously on behalf of the brothers Wolf, Christof, Ludwig von Rosenberg and Zaisolph von Rosenberg, his cousins, with one quarter of the town of Aub in the same extent as Knight Konrad and his ancestors held from the Palatinate as a Mannlehen (feudal tenure), since this quarter fell to the cousins of Rosenberg by inheritance. The rights of Elector Ludwig and of his brother Friedrich who rules jointly with him remain hereby equally undisturbed, as do those of their retainers and of third parties. The cousins of Rosenberg and their feudal heirs are to take possession of the fief anew in all cases that arise. Should the fief fall exclusively to one of the Counts Palatine of the Rhine through division, then the cousins of Rosenberg or their feudal heirs are to take the fief from the respective feudal lord. In every case the customary feudal duties are to be fulfilled. - Elector Ludwig confirms the feudal oath rendered by Ludwig, simultaneously on behalf of his cousins. -\n\nSeal: the issuer. - On Wednesday after the Sunday Misericordia domini, Heidelberg.\n\nOriginal, parchment, seal appended. - No. 1035.\n\nReg. No. 1087",
       "mention": [
         {
+          "place": "aub"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Knight"
@@ -25,6 +31,9 @@
         },
         {
           "person": "Ludwig von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         },
         {
           "person": "Zaisolph von Rosenberg"
@@ -43,6 +52,9 @@
           "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg.",
           "mention": [
             {
+              "place": "aub"
+            },
+            {
               "person": "Lorenz von Rosenberg"
             }
           ]
@@ -58,6 +70,9 @@
           "type": "generic",
           "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg.",
           "mention": [
+            {
+              "place": "aub"
+            },
             {
               "person": "Lorenz von Rosenberg"
             }
@@ -80,6 +95,9 @@
           "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg.",
           "mention": [
             {
+              "place": "aub"
+            },
+            {
               "person": "Lorenz von Rosenberg"
             }
           ]
@@ -101,6 +119,9 @@
           "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg.",
           "mention": [
             {
+              "place": "aub"
+            },
+            {
               "person": "Lorenz von Rosenberg"
             }
           ]
@@ -116,19 +137,22 @@
           "content": "received the quarter of Aub as a fief on behalf of his cousins Wolf, Christoph, Ludwig, and Zaisolph von Rosenberg after the death of Konrad von Rosenberg.",
           "mention": [
             {
-              "person": "Wolf von Rosenberg"
+              "place": "aub"
             },
             {
               "person": "Christoph von Rosenberg"
             },
             {
+              "person": "Konrad von Rosenberg"
+            },
+            {
               "person": "Ludwig von Rosenberg"
             },
             {
-              "person": "Zaisolph von Rosenberg"
+              "person": "Wolf von Rosenberg"
             },
             {
-              "person": "Konrad von Rosenberg"
+              "person": "Zaisolph von Rosenberg"
             }
           ]
         },

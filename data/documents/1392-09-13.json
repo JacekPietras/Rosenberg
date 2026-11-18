@@ -15,10 +15,13 @@
           "person": "Konrad von Rosenberg"
         },
         {
+          "person": "Kunz Mönch"
+        },
+        {
           "person": "Margaretha von Hirschhorn"
         },
         {
-          "person": "Kunz Mönch"
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -70,10 +73,13 @@
       "english": "Pfalzgraf Ruprecht acknowledges that he owes Konrad von Rosenberg and others 810 gulden, which the latter used to redeem the Minneburg from Konrad Mönch von Rosenberg.",
       "mention": [
         {
+          "person": "Konrad Mönch von Rosenberg"
+        },
+        {
           "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Konrad Mönch von Rosenberg"
+          "place": "minneburg"
         }
       ],
       "facts": [
@@ -84,13 +90,21 @@
           "mention": [
             {
               "person": "Konrad Mönch von Rosenberg"
+            },
+            {
+              "place": "minneburg"
             }
           ]
         },
         {
           "person": "Konrad Mönch von Rosenberg",
           "type": "generic",
-          "content": "held the Minneburg before its redemption."
+          "content": "held the Minneburg before its redemption.",
+          "mention": [
+            {
+              "place": "minneburg"
+            }
+          ]
         }
       ]
     }

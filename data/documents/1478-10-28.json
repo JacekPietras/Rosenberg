@@ -9,22 +9,34 @@
       "english": "Elector Philipp of the Palatinate decides a dispute over fiefs and allodial estates in the lordship of Fleckenstein between Friedrich von Fleckenstein of Madenburg, Baron of Dagstuhl, and his sister Anna (Enneln) on the one hand, and their brother Heinrich von Fleckenstein on the other. The minor Heinrich was represented at the hearing in Heidelberg by his maternal grandmother Irmgard von Hunolstein (Honoltstein), widow of Winneburg (Wonnenberg) and Beilstein, who had requested the Count Palatine as territorial lord to appoint guardians. He appointed Hans von Gemmingen, Vogt of Germersheim, and his secretary Balthasar von Weiler (vom Wiler) for this purpose, who then agreed with the other disputing party that the matter be submitted to the Count Palatine and his counselors for decision without further appeal. They have decided: 1. Regarding 2,000 gulden that Friedrich's and Anna's mother, [Genovefa] von Hirschhorn, brought as a dowry and that should accrue to the two children in advance, as well as regarding an inheritance contract between the father and Heinrich's mother [Katharina] von Winneburg-Beilstein, point by point is decided: Friedrich and Anna receive for the 2,000 gulden maternal inheritance one third of the usage rights of the castle fief at Hagenau for life; Friedrich and Heinrich receive the other two thirds equally and also Anna's share after her death. Misdemeanors, revenues, corvée, and grazing rights shall belong exclusively to the brothers. Should Friedrich and Anna die without heirs, the claim on the 2,000 gulden held by Ritter Otto von Hirschhorn and his cousin shall apply. The kinship agreement with von Winneburg is void and whatever Heinrich inherits from his mother shall belong to him alone. [2.] All three siblings shall divide the allodial estates and their revenues into three parts. Rents pledged by the lordship of Fleckenstein, however, shall be paid annually from the usage in advance, whereby the bailiffs shall hand this over to the Count Palatine's tax clerk at Selz to avoid harm to the children. The lordship of castles, villages, poor people, and other assets remains undivided. [3.-5.] Further rules follow regarding the division of poor people, commoners, and fiefs. The latter are divided only among the brothers and initially received by Friedrich, whereby Heinrich shall reimburse him half of the related costs, such as those incurred when issuing letters in the chancery. [6.] Usage rights from this year are divided into thirds or halves. Previous revenues shall be settled accordingly. The castle fief at Hagenau is exempt. [7.] The bailiff Friedrich von Rosenberg is paid by Friedrich and Anna for his four years of service. [8.] Ongoing costs for castles are shared; cannons and defensive material remain undivided on site but may be exchanged among themselves. [9.] The children shall provide their worldly unfit father (who is \"inexperienced in the world\") with food, drink, clothing, and necessities for life. If they do not need Madenburg castle, they shall still support their [there (?)] father. [10.] Letters and registers shall be deposited to common hand so that they may only access them jointly or with knowledge of the siblings. [11.] Misdemeanors and similar revenues shall be divided into thirds or halved in the fiefdoms. Mediation occurs at Christmas and on St. John the Baptist [= June 24]. [12.] The same applies to the castles Lützelhart and Quirstadt as for the aforementioned castles. [13.-16.] Further regulations follow regarding claims against the children, the granting of fiefs, pledges, and corvée and grazing rights. [16.] Count Palatine Philipp reserves for himself and his heirs the quarter at Madenburg, which he holds according to a grant.\n\nDuration: October 28, 1478 (on Saints Simon and Jude, feast day of the holy apostles)\n\nSeal: Elector Philipp of the Palatinate",
       "mention": [
         {
+          "place": "fleckenstein"
+        },
+        {
           "person": "Friedrich von Fleckenstein"
+        },
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "person": "Hans von Gemmingen"
+        },
+        {
+          "place": "heidelberg"
         },
         {
           "person": "Heinrich von Fleckenstein"
         },
         {
-          "person": "Hans von Gemmingen"
+          "place": "hirschhorn"
+        },
+        {
+          "place": "madenburg"
         },
         {
           "person": "Otto von Hirschhorn",
           "personTitle": [
             "Ritter"
           ]
-        },
-        {
-          "person": "Friedrich von Rosenberg"
         }
       ],
       "facts": [
@@ -37,10 +49,10 @@
           "content": "was to be paid by Friedrich and Anna von Fleckenstein for four years of service.",
           "mention": [
             {
-              "person": "Friedrich von Fleckenstein"
+              "person": "Anna von Fleckenstein"
             },
             {
-              "person": "Anna von Fleckenstein"
+              "person": "Friedrich von Fleckenstein"
             }
           ]
         }

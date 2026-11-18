@@ -9,6 +9,9 @@
       "english": "Abbot and Convent of Bronnbach, Bronnbach vs. Michael von Rosenberg, Wintzingen: Dues at Kipperichhausen",
       "mention": [
         {
+          "place": "bronnbach"
+        },
+        {
           "person": "Michael von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "was in a dispute with the abbot and convent of Bronnbach over dues at Kipperichhausen."
+          "content": "was in a dispute with the abbot and convent of Bronnbach over dues at Kipperichhausen.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ]
         }
       ]
     }

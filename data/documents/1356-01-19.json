@@ -22,7 +22,12 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "witnessed Emperor Charles IV's confirmation of privileges for the house at Pillenreut in the Nuremberg forest."
+          "content": "witnessed Emperor Charles IV's confirmation of privileges for the house at Pillenreut in the Nuremberg forest.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ]
         }
       ]
     }

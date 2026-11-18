@@ -38,13 +38,13 @@
           "content": "reached an agreement with Bishop Hans von Brunn for payment of 4,000 florins to her and her son Anselm von Rosenberg by the Feast of St Peter’s Chair in 1427.",
           "mention": [
             {
+              "person": "Anselm von Rosenberg"
+            },
+            {
               "person": "Hans von Brunn",
               "personTitle": [
                 "Bishop"
               ]
-            },
-            {
-              "person": "Anselm von Rosenberg"
             }
           ]
         },

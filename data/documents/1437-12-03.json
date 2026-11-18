@@ -9,6 +9,9 @@
       "english": "Court letter of Bishop Hans of Würzburg concerning litigation between Count Wilhelm of Henneberg-Schleusingen and members of the Bibra family before the episcopal court. Those listed among the judges include Konrad von Rosenberg zu Bartenstein and Eberhard von Schaumberg, Ritter and advocate at the Würzburg court.",
       "mention": [
         {
+          "place": "bibra"
+        },
+        {
           "person": "Hans of Würzburg",
           "personTitle": [
             "Bishop"
@@ -16,6 +19,9 @@
         },
         {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -25,7 +31,12 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "was listed among the judges in litigation before the Würzburg episcopal court."
+          "content": "was listed among the judges in litigation before the Würzburg episcopal court.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

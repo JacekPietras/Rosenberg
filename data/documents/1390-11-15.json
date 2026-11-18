@@ -9,10 +9,13 @@
       "english": "Heinrich von Rosenberg certifies that Bartholomäus, parish priest of Kirchschlag, and his mother Magdalena have transferred to him a farm at Kirchschlag, which they had bought from Wernher, so that it may be entered in the Land Table of Bohemia.\n\nSeals: Seals hanging from parchment ribbons. (1) Heinrich III (V) von Rosenberg; only a fragment of the five-petaled rose remains. (2) Hans von Neuhaus. Brown wax, round, 30/40 mm in diameter. Inscription: “iohannis de nova domo.” Arms: a city wall with a roof and two small towers; a helmet in the gateway, with the five-petaled rose of the Rosenbergs above it. (3) Heinrich von Radhostowicz. Green wax, round, 25/30 mm in diameter. Only “henrici” is legible in the inscription. Arms: an iron helmet.",
       "mention": [
         {
+          "person": "Hans von Neuhaus"
+        },
+        {
           "person": "Heinrich von Rosenberg"
         },
         {
-          "person": "Hans von Neuhaus"
+          "place": "rosenberg-town"
         }
       ],
       "img": [

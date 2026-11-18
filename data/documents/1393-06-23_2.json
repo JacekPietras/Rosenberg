@@ -15,10 +15,16 @@
       "english": "Ruprecht granted Elisabeth von Erligheim, widow of Eberhard von Rosenberg, granted the foundation of a perpetual fair with property belonging to Boxberg Castle for the women's altar in Wölchingen.",
       "mention": [
         {
-          "person": "Elisabeth von Erligheim"
+          "place": "boxberg"
         },
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Elisabeth von Erligheim"
+        },
+        {
+          "place": "wolchingen"
         }
       ],
       "facts": [
@@ -36,12 +42,22 @@
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was authorized by Ruprecht to endow a perpetual Mass at the women’s altar in Wölchingen."
+          "content": "was authorized by Ruprecht to endow a perpetual Mass at the women’s altar in Wölchingen.",
+          "mention": [
+            {
+              "place": "wolchingen"
+            }
+          ]
         },
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was authorized to fund the endowment with properties belonging to Boxberg Castle."
+          "content": "was authorized to fund the endowment with properties belonging to Boxberg Castle.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Ruprecht",
@@ -49,7 +65,13 @@
           "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the women’s altar in Wölchingen with properties belonging to Boxberg Castle.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Elisabeth von Erligheim"
+            },
+            {
+              "place": "wolchingen"
             }
           ]
         }

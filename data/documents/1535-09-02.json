@@ -9,7 +9,7 @@
       "english": "Lorenz von Rosenberg and Hans von Riedern mediate a contract between Heinrich von Pappenheim, Teutonic Order Commander of Mergentheim, and Christoph von Rosenberg regarding disputed properties in Hirschlanden.\n\nDuration: September 2, 1535 (Thursday after Aegidius 1535)",
       "mention": [
         {
-          "person": "Lorenz von Rosenberg"
+          "person": "Christoph von Rosenberg"
         },
         {
           "person": "Hans von Riedern"
@@ -18,7 +18,7 @@
           "person": "Heinrich von Pappenheim"
         },
         {
-          "person": "Christoph von Rosenberg"
+          "person": "Lorenz von Rosenberg"
         }
       ],
       "facts": [
@@ -28,10 +28,10 @@
           "content": "mediated the agreement between Heinrich von Pappenheim and Christoph von Rosenberg concerning disputed properties at Hirschlanden.",
           "mention": [
             {
-              "person": "Heinrich von Pappenheim"
+              "person": "Christoph von Rosenberg"
             },
             {
-              "person": "Christoph von Rosenberg"
+              "person": "Heinrich von Pappenheim"
             }
           ]
         },
@@ -41,13 +41,13 @@
           "content": "entered into an agreement with Heinrich von Pappenheim concerning disputed properties at Hirschlanden, mediated by Lorenz von Rosenberg and Hans von Riedern.",
           "mention": [
             {
+              "person": "Hans von Riedern"
+            },
+            {
               "person": "Heinrich von Pappenheim"
             },
             {
               "person": "Lorenz von Rosenberg"
-            },
-            {
-              "person": "Hans von Riedern"
             }
           ]
         }

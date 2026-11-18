@@ -12,19 +12,25 @@
       "english": "Brigitta, widow of Heinz Kumelman of Wachbach (Wachbacher), submits her farmstead and her house, which lies between the houses of Bastian Fluerer and Hans Beder, to the guardianship and jurisdiction of the Teutonic Order and its house at Mergentheim (Mergenthaim), on the advice of Lorenz Kumelman of Hachtel (Haichtal), Marcus Rester and Hans Rigel, both of Lillstadt (Lulstat), Wendel Ziemen of Wachbach, and Hans Dilling of Hollenbach (Holenbache), and swears to obey the commands and prohibitions of Heinrich von Pappenheim, Hereditary Marshal and Commandant of the Teutonic Order at Mergentheim, Walter von Cronberg, Administrator of the Mastership in Prussia and Master of the Teutonic Order in German and foreign lands, the aforementioned Commandant and the house of Mergentheim as their lordship, and to seek justice in the Order's court at Stuppach. In the preceding agreement mediated by Georg von Rosenberg, Daniel Trautwein, Bailiff at Boxberg (Boxperg), and Johann Heber, Hohenlohe (hohenloscher) secretary, between Wolfgang von Bibra, Commandant of the Teutonic Order at Mergentheim, and Stephan von Adelsheim (Adeltzhaim) of Wachbach, it was established that the said property of Heinz Kumel[man] (Kumelhaintz) is a free holding.\n\nDuration: May 3, 1536 (Wednesday after the Sunday Misericordia Dominy)\n\nSealers: Ulrich von Iglingen; Gregor Spiess, Secretary; Georg Schueller, Secretary",
       "mention": [
         {
-          "person": "Heinrich von Pappenheim"
-        },
-        {
-          "person": "Walter von Cronberg"
+          "place": "boxberg"
         },
         {
           "person": "Georg von Rosenberg"
         },
         {
-          "person": "Wolfgang von Bibra"
+          "person": "Heinrich von Pappenheim"
+        },
+        {
+          "place": "hohenlohe"
         },
         {
           "person": "Stephan von Adelsheim"
+        },
+        {
+          "person": "Walter von Cronberg"
+        },
+        {
+          "person": "Wolfgang von Bibra"
         }
       ],
       "facts": [
@@ -34,10 +40,10 @@
           "content": "helped mediate an agreement between Wolfgang von Bibra and Stephan von Adelsheim concerning a property at Wachbach.",
           "mention": [
             {
-              "person": "Wolfgang von Bibra"
+              "person": "Stephan von Adelsheim"
             },
             {
-              "person": "Stephan von Adelsheim"
+              "person": "Wolfgang von Bibra"
             }
           ]
         }

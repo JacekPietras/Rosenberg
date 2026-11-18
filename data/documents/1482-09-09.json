@@ -9,22 +9,25 @@
       "english": "Count Philipp von Rieneck the Elder and Georg von Rosenberg make an agreement between Wilhelm von Dottenheim, Knight, and Arnold von Rosenberg in a dispute over sheep driving and sheep grazing at Oberschüpf and Sachsenflur.\n\nDuration: 1482 September 9 (Monday after the Nativity of Mary 1482)",
       "mention": [
         {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
           "person": "Philipp von Rieneck",
           "personTitle": [
             "the Elder"
           ]
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "person": "Wilhelm von Dottenheim",
           "personTitle": [
             "Knight"
           ]
-        },
-        {
-          "person": "Arnold von Rosenberg"
         }
       ],
       "facts": [
@@ -34,6 +37,12 @@
           "content": "with Count Philipp von Rieneck der Ältere settled a dispute between Wilhelm von Dottenheim and Arnold von Rosenberg about sheep grazing at Oberschüpf and Sachsenflur.",
           "mention": [
             {
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "place": "oberschuepf"
+            },
+            {
               "person": "Philipp von Rieneck",
               "personTitle": [
                 "der Ältere"
@@ -41,9 +50,6 @@
             },
             {
               "person": "Wilhelm von Dottenheim"
-            },
-            {
-              "person": "Arnold von Rosenberg"
             }
           ]
         }

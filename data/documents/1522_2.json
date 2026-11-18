@@ -10,6 +10,15 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "boxberg"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -21,7 +30,12 @@
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
-          "content": "made a settlement with Kurmainz concerning Sachsenflur and Schloss Oberschüpf."
+          "content": "made a settlement with Kurmainz concerning Sachsenflur and Schloss Oberschüpf.",
+          "mention": [
+            {
+              "place": "oberschuepf-castle"
+            }
+          ]
         }
       ]
     }

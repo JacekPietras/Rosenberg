@@ -9,27 +9,27 @@
       "english": "Count Palatine Ludwig IV. exempts his protonotary Andreas Pellendorfer and his heirs, for rendered faithful service, from specified taxes and duties, particularly military services — excepting however campaigns against \"unbelievers\" and for territorial defense — that are connected with houses and properties in the city and bailiwick of Heidelberg. Furthermore, he exempts them from being summoned against their will before the Heidelberg city court or other city and village courts of the Count Palatine, and places them under the jurisdiction of his own court.\nSeal-request witnesses: Konrad von Rosenberg, Knight and Chamberlain; Hans von Gemmingen, Marshal.\n\nSealers: Count Palatine Ludwig IV.; Konrad von Rosenberg; Hans von Gemmingen",
       "mention": [
         {
+          "person": "Hans von Gemmingen"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Knight"
           ]
         },
         {
-          "person": "Hans von Gemmingen"
-        },
-        {
           "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Hans von Gemmingen"
         }
       ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
-            "Ritter",
-            "Hofmeister"
+            "Hofmeister",
+            "Ritter"
           ],
           "type": "generic",
           "content": "was a seal witness to the Palatine Count’s grant of tax and service exemptions to Andreas Pellendorfer and his heirs."

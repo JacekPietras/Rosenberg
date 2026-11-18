@@ -14,6 +14,15 @@
       "english": "1405 January 30, Heidelberg. King Ruprecht exempts the vineyards and properties that the people of Nydenstein, citizens of Heidelberg, have given to the Church of the Holy Spirit for an perpetual mass and the support of a chaplain from all taxes, contributions, assessments, path wine, and other services and burdens. The vineyards are all in the Rorbach district: half a morgen on the upper slope, adjoining outside the property of Emerich Becker of Heidelberg and inside that of Hersei Widman of Kirchheim; half a morgen on the middle slope, adjoining outside Cuntz Mönch von Rosenberg and inside the people of Schönau; half a morgen on the lower slope, adjoining outside Peter Wyseman of Rorbach and inside Syfrid Meder of Rorbach; one and a half morgen “zum Licht,” adjoining outside the king’s property and inside that of Schellenbuch of Heidelberg; one morgen “zum Schrecker,” adjoining outside Metzei Horneckin of Meckesheim and inside the Augustinians of Heidelberg; a two-part holding below the Umatzenhelden, adjoining Cuntz Landschad above and reaching the fields below; a two-part holding in the Schellkopf, adjoining outside the Rosegartin of Heidelberg and inside Kunber of Blickersfort; three morgen on the Huselberg above Ripolt Sigelman before the forest, adjoining outside the people of Schönau and inside Peter Olsleher of Heidelberg; half a morgen “zum Stelielin,” adjoining outside Cunrad von Venningen and inside Eberhard von Sickingen; and a wine press house in Rorbach village on the upper lane, between Hartmut on one side and Heintze Keyser on the other.",
       "mention": [
         {
+          "person": "Eberhard von Sickingen"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
+          "place": "kirchheim"
+        },
+        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
@@ -23,7 +32,7 @@
           "person": "Kunz Mönch von Rosenberg"
         },
         {
-          "person": "Eberhard von Sickingen"
+          "place": "schonau"
         }
       ]
     }

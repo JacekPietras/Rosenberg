@@ -12,22 +12,25 @@
       "english": "Friedrich Wolfskehl, Ritter, Thomas von Rosenberg, Elisabeth, wife of Friedrich Wolfskehl, Eberhard Wolfskehl, and Jörg Fuchs of Breitbach sell to Konrad and Reinhard von Hartheim the properties and rights at Hardheim, Höpfingen, Bretzingen, Gerichtstetten, and Betzwiesen that had devolved to them from Wernher von Hartheim, for 1,600 Rhenish gulden. Dated 30 October 1435.",
       "mention": [
         {
-          "person": "Friedrich Wolfskehl"
-        },
-        {
-          "person": "Thomas von Rosenberg"
-        },
-        {
-          "person": "Friedrich Wolfskehl"
+          "place": "bretzingen"
         },
         {
           "person": "Eberhard Wolfskehl"
+        },
+        {
+          "person": "Friedrich Wolfskehl"
+        },
+        {
+          "place": "hartheim"
         },
         {
           "person": "Konrad von Hartheim"
         },
         {
           "person": "Reinhard von Hartheim"
+        },
+        {
+          "person": "Thomas von Rosenberg"
         },
         {
           "person": "Wernher von Hartheim"
@@ -40,16 +43,22 @@
           "content": "sold properties and rights at Hardheim, Höpfingen, Bretzingen, Gerichtstetten, and Betzwiesen to Konrad and Reinhard von Hardheim jointly with Friedrich Wolfskehl, Ritter, Else, Eberhard Wolfskehl, and Jörg Fuchs; the properties had devolved to the sellers from Werner von Hardheim.",
           "mention": [
             {
-              "person": "Konrad von Hardheim"
+              "place": "bretzingen"
             },
             {
-              "person": "Reinhard von Hardheim"
+              "person": "Eberhard Wolfskehl"
             },
             {
               "person": "Friedrich Wolfskehl"
             },
             {
-              "person": "Eberhard Wolfskehl"
+              "place": "hartheim"
+            },
+            {
+              "person": "Konrad von Hardheim"
+            },
+            {
+              "person": "Reinhard von Hardheim"
             },
             {
               "person": "Wernher von Hardheim"

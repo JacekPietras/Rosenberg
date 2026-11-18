@@ -9,7 +9,13 @@
       "english": "Kraft von Harrach bequeaths to his cousin Hansen von Harrach several properties, fiefs of the Lords of Rosenberg, in the Reichental parish.\n\nSeal: three seals.",
       "mention": [
         {
+          "place": "harrach"
+        },
+        {
           "person": "Kraft von Harrach"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -19,10 +25,10 @@
           "content": "were the feudal lords of properties in the Reichental parish bequeathed by Kraft von Harrach to Hans von Harrach.",
           "mention": [
             {
-              "person": "Kraft von Harrach"
+              "person": "Hans von Harrach"
             },
             {
-              "person": "Hans von Harrach"
+              "person": "Kraft von Harrach"
             }
           ]
         }

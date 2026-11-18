@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "schweigern"
         }
       ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "granted Kurfürst Ludwig V of the Palatinate perpetual opening rights in his castle at Schweigern."
+          "content": "granted Kurfürst Ludwig V of the Palatinate perpetual opening rights in his castle at Schweigern.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         }
       ],
       "img": [

@@ -15,16 +15,10 @@
           "person": "Eberhard von Hirschhorn"
         },
         {
-          "person": "Wernher Winther von Alzey"
-        },
-        {
           "person": "Katharina von Rosenberg"
         },
         {
           "person": "Wernher Winther von Alzey"
-        },
-        {
-          "person": "Katharina von Rosenberg"
         }
       ]
     },
@@ -45,10 +39,13 @@
           "person": "Eberhard vom Hirschhorn"
         },
         {
-          "person": "Wernher Winther von Alzey"
+          "person": "Katharina von Rosenberg"
         },
         {
-          "person": "Katharina von Rosenberg"
+          "place": "nuremberg"
+        },
+        {
+          "person": "Wernher Winther von Alzey"
         }
       ],
       "facts": [
@@ -58,10 +55,10 @@
           "content": "received permission to sell the imperial fief of the fruit tithe at Heilbronn to Werner Winther von Alzey and Katharina von Rosenberg for 3,000 Rhenish florins.",
           "mention": [
             {
-              "person": "Wernher Winther von Alzey"
+              "person": "Katharina von Rosenberg"
             },
             {
-              "person": "Katharina von Rosenberg"
+              "person": "Wernher Winther von Alzey"
             }
           ]
         }

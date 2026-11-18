@@ -20,12 +20,15 @@
         {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "der Jüngere",
-            "armiger"
+            "armiger",
+            "der Jüngere"
           ]
         },
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "kirchheim"
         },
         {
           "person": "Konrad von Seinsheim"
@@ -35,8 +38,8 @@
         {
           "person": "vogt_zu_Nagelsberg",
           "personTitle": [
-            "der Jüngere",
-            "armiger"
+            "armiger",
+            "der Jüngere"
           ],
           "type": "spouse",
           "of": "Wyclo"
@@ -44,11 +47,16 @@
         {
           "person": "vogt_zu_Nagelsberg",
           "personTitle": [
-            "der Jüngere",
-            "armiger"
+            "armiger",
+            "der Jüngere"
           ],
           "type": "generic",
-          "content": "sold the goods and revenues in Kirchheim to Himmelpforten Abbey with his wife Wyclo."
+          "content": "sold the goods and revenues in Kirchheim to Himmelpforten Abbey with his wife Wyclo.",
+          "mention": [
+            {
+              "place": "kirchheim"
+            }
+          ]
         },
         {
           "person": "Hans von Rosenberg",
@@ -60,6 +68,9 @@
               "personTitle": [
                 "der Jüngere"
               ]
+            },
+            {
+              "place": "kirchheim"
             }
           ]
         },
@@ -76,6 +87,9 @@
               "personTitle": [
                 "der Jüngere"
               ]
+            },
+            {
+              "place": "kirchheim"
             }
           ]
         },
@@ -92,6 +106,9 @@
               "personTitle": [
                 "der Jüngere"
               ]
+            },
+            {
+              "place": "kirchheim"
             }
           ]
         },
@@ -108,6 +125,9 @@
               "personTitle": [
                 "der Jüngere"
               ]
+            },
+            {
+              "place": "kirchheim"
             }
           ]
         },
@@ -124,6 +144,9 @@
               "personTitle": [
                 "der Jüngere"
               ]
+            },
+            {
+              "place": "kirchheim"
             }
           ]
         },
@@ -140,6 +163,9 @@
               "personTitle": [
                 "der Jüngere"
               ]
+            },
+            {
+              "place": "kirchheim"
             }
           ]
         }

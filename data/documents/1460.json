@@ -9,7 +9,19 @@
       "english": "Fief acknowledgment of Ulrich von Rosenberg, son of the late Arnold, to Dieter Archbishop of Mainz regarding half of Schloss Schüpf, the village of Oberschüpf, the village of Hinterschüpf, the village of Upfingen with everything located within the district, 5 morgen of arable land and 5 morgen of meadows between Schweigern and Unterschüpf.",
       "mention": [
         {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "oberschuepf-castle"
+        },
+        {
+          "place": "schweigern"
+        },
+        {
           "person": "Ulrich von Rosenberg"
+        },
+        {
+          "place": "unterschuepf"
         }
       ],
       "facts": [
@@ -22,7 +34,18 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "received a fief from Diether, Archbishop of Mainz, comprising half of Schüpf Castle, half of Oberschüpf, half of Hinterschüpf, Upfingen, and fields and meadows between Schweigern and Unterschüpf."
+          "content": "received a fief from Diether, Archbishop of Mainz, comprising half of Schüpf Castle, half of Oberschüpf, half of Hinterschüpf, Upfingen, and fields and meadows between Schweigern and Unterschüpf.",
+          "mention": [
+            {
+              "place": "oberschuepf"
+            },
+            {
+              "place": "schweigern"
+            },
+            {
+              "place": "unterschuepf"
+            }
+          ]
         }
       ]
     }

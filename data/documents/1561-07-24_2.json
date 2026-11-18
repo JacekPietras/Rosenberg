@@ -18,7 +18,10 @@
           "person": "Albrecht von Rosenberg"
         },
         {
-          "person": "Albrecht von Rosenberg"
+          "place": "boffsheim"
+        },
+        {
+          "place": "boxberg"
         },
         {
           "person": "Georg von Rosenberg"
@@ -27,25 +30,16 @@
           "person": "Michael von Rosenberg"
         },
         {
-          "person": "Albrecht von Rosenberg"
+          "place": "mosbach-st-juliana"
         },
         {
-          "person": "Albrecht von Rosenberg"
+          "place": "rosenberg-town"
         },
         {
-          "person": "Albrecht von Rosenberg"
+          "place": "sindolsheim-church"
         },
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "person": "Albrecht von Rosenberg"
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -55,7 +49,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "agreed to surrender Boxberg and Winzingen to the Palatinate in a settlement mediated by Duke Johann Friedrich of Saxony."
+          "content": "agreed to surrender Boxberg and Winzingen to the Palatinate in a settlement mediated by Duke Johann Friedrich of Saxony.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Albrecht von Rosenberg",
@@ -87,7 +86,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was to receive a quarter of Rosenberg from the Palatinate under the settlement."
+          "content": "was to receive a quarter of Rosenberg from the Palatinate under the settlement.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     }

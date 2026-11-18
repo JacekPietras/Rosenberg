@@ -12,43 +12,31 @@
           "person": "Georg von Rosenberg"
         },
         {
-          "person": "Sebastian Geyer von Giebelstadt"
+          "place": "neuhaus"
         },
         {
-          "person": "Walter von Cronberg"
-        },
-        {
-          "person": "Siegmund Truchsess von Baldersheim"
+          "person": "Philipp Truchsess"
         },
         {
           "person": "Philipp Truchsess von Baldersheim"
         },
         {
-          "person": "Siegmund Truchsess von Baldersheim"
+          "place": "schwaigern"
         },
         {
-          "person": "Philipp Truchsess von Baldersheim"
-        },
-        {
-          "person": "Siegmund Truchsess von Baldersheim"
-        },
-        {
-          "person": "Philipp Truchsess von Baldersheim"
-        },
-        {
-          "person": "Georg von Rosenberg"
+          "place": "schweigern"
         },
         {
           "person": "Sebastian Geyer von Giebelstadt"
-        },
-        {
-          "person": "Walter von Cronberg"
         },
         {
           "person": "Siegmund Truchsess"
         },
         {
-          "person": "Philipp Truchsess"
+          "person": "Siegmund Truchsess von Baldersheim"
+        },
+        {
+          "person": "Walter von Cronberg"
         }
       ],
       "facts": [
@@ -61,10 +49,10 @@
           "content": "settled the tithe dispute between the Teutonic Order and Sigmund and Philipp Truchseß von Baldersheim concerning properties around Üttingshof and Dainbach.",
           "mention": [
             {
-              "person": "Siegmund Truchsess von Baldersheim"
+              "person": "Philipp Truchsess von Baldersheim"
             },
             {
-              "person": "Philipp Truchsess von Baldersheim"
+              "person": "Siegmund Truchsess von Baldersheim"
             }
           ]
         }

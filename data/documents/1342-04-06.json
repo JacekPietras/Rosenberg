@@ -14,7 +14,7 @@
           "person": "Adelheid von Uissigheim"
         },
         {
-          "person": "Adelheid von Uissigheim"
+          "place": "bischofsheim"
         },
         {
           "person": "Engelhard von Rosenberg",
@@ -27,6 +27,9 @@
           "personTitle": [
             "Knecht"
           ]
+        },
+        {
+          "place": "uissigheim"
         }
       ],
       "facts": [

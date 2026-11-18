@@ -18,26 +18,40 @@
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Georg Siegmund von Rosenberg"
-        },
-        {
           "person": "Asmus von Rosenberg",
           "personTitle": [
             "knight"
           ]
         },
         {
+          "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "waldmannshofen"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received his share of Würzburg fiefs, including the Waldmannshofen castle chapel, farms and tithes, after division with his brothers Konrad and Georg Siegmund."
+          "content": "received his share of Würzburg fiefs, including the Waldmannshofen castle chapel, farms and tithes, after division with his brothers Konrad and Georg Siegmund.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         },
         {
           "person": "Albrecht Christoph von Rosenberg",

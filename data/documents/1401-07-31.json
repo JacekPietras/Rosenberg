@@ -12,28 +12,28 @@
       "english": "King Ruprecht acknowledges that he owes Diether von Inseltheim 6000 fl.; the sureties are Hofmeister Emich von Leiningen, Hans Schenk von Erbach, Hans von Hirschhorn, Schwarz Reinhard von Sickingen, Landvogt in Alsace, Herman von Rodenstein, Siegfried von Stein, Wiprecht von Helmstadt der Jüngere, Vogt zu Bretten, Haushofmeister Albrecht von Berwangen, Kunz Mönch von Rosenberg, Vogt zu Steinsberg, and others.",
       "mention": [
         {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "King"
-          ]
-        },
-        {
           "person": "Hans Schenk von Erbach"
         },
         {
           "person": "Hans von Hirschhorn"
         },
         {
-          "person": "Reinhard von Sickingen"
-        },
-        {
           "person": "Herman von Rodenstein"
         },
         {
-          "person": "Wiprecht von Helmstadt"
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
         },
         {
           "person": "Kunz Mönch von Rosenberg"
+        },
+        {
+          "person": "Reinhard von Sickingen"
+        },
+        {
+          "person": "Wiprecht von Helmstadt"
         }
       ],
       "facts": [

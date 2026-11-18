@@ -9,14 +9,25 @@
       "english": "Hans Kressen and Bonifacius von Heidelberg, a carpenter, both from Riedenheim and owners of the Waldenberger Hof there, a fief of the Teutonic Order, made an agreement concerning the construction of an additional farmstead on the property and the hand payment owed to the Order in certain cases. Witness/sealers: Heinrich Marschall von Pappenheim, Commander at Mergentheim, and Konrad von Rosenberg.",
       "mention": [
         {
+          "place": "heidelberg"
+        },
+        {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "pappenheim"
         }
       ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "sealed the agreement by Hans Kressen and Bonifacius von Heidelberg concerning construction at the Waldenberger Hof in Riedenheim."
+          "content": "sealed the agreement by Hans Kressen and Bonifacius von Heidelberg concerning construction at the Waldenberger Hof in Riedenheim.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ]
         }
       ]
     }

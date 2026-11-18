@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -22,7 +25,12 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "promised Kurfürst Ludwig V that he would redeem the half of the wine tithe at Schweigern that he had pledged to his brother-in-law Wolf von Stetten."
+          "content": "promised Kurfürst Ludwig V that he would redeem the half of the wine tithe at Schweigern that he had pledged to his brother-in-law Wolf von Stetten.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         }
       ],
       "img": [

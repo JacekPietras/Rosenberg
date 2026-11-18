@@ -10,10 +10,19 @@
       "english": "Charles IV confirms to Stephan von Reichenbach a contract by which the knight Johann Seckel sold him the hereditary bailiwick of Frankenstein, incorporating the statement given about it by Seckel and Frankenstein on 26 July 1355.\n\nWitnesses: Ernst, Archbishop of Prague; Bertrand, Bishop of Apt; Prothiva, Bishop of Zengg; Heinrich, Abbot of Fulda; Bolko, Duke of Świdnica; Nikolaus, Duke of Troppau; Bolko, Duke of Falkenberg; Przemysl, Duke of Teschen; Wilhelm von Landstein, Burgrave of Prague; Peter von Rosenberg; Jodok von Rosenberg.",
       "mention": [
         {
-          "person": "Wilhelm von Landstein"
+          "place": "frankenstein"
+        },
+        {
+          "place": "fulda-cathedral"
         },
         {
           "person": "Peter von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Wilhelm von Landstein"
         }
       ]
     }

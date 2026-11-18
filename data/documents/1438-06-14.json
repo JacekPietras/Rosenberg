@@ -9,13 +9,16 @@
       "english": "Albrecht II reports to the city of Vienna that he departed from Iglau on 10 June, arrived in Deutsch-Brod that same day and in Czaslau on 11 June, where he was paid homage as King of Bohemia, as he was shortly afterward in Böhmisch-Brod and Kauřim. He reports his friendly reception near Prague on 13 June by a crowd streaming together from all parts of the city along with all the Czechs, who escorted him into the city and intend to pay homage on 15 June. He also reports that the Lords Ulrich von Rosenberg and Meinhart von Neuhaus, with a larger number of other lords, have agreed to crown him on 29 June. He asks the city of Vienna, concerning the loan sought from several Viennese citizens, to follow the instructions of Hans von Schaunberg, Graf, his Hofmeister and Landmarschall, and Ulrich Eizinger, his Hubmeister in Austria. Given at Prague on Saturday before St Vitus's Day, 1438. By the king's own commission. Addressed: “To the honorable and wise, our beloved and faithful mayor, judge, and council of Vienna.”",
       "mention": [
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
           "person": "Hans von Schaunberg",
           "personTitle": [
             "Graf"
           ]
+        },
+        {
+          "place": "neuhaus"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ]
     }

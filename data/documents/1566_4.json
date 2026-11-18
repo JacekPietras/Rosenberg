@@ -18,7 +18,16 @@
           "person": "Albrecht von Rosenberg"
         },
         {
+          "place": "grumbach"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Wilhelm von Grumbach"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -26,6 +35,11 @@
           "person": "Albrecht von Rosenberg",
           "type": "generic",
           "content": "was sentenced to death for participating in the Grumbach disputes and insulting Elector August of Saxony through defamatory writings.",
+          "mention": [
+            {
+              "place": "grumbach"
+            }
+          ],
           "date": "1566-05"
         },
         {

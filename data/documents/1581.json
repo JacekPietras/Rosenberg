@@ -9,15 +9,6 @@
       "english": "Bishop Julius of Würzburg, at the request of Konrad von Rosenberg d.Ä. of Waldmannshofen, confirms a document issued by Bishop Friedrich of Würzburg. Seals: the A.\n\nDate: 1581\n\nContains: Insert: September 19, 1573. Bishop Friedrich of Würzburg permits Konrad von Rosenberg of Waldmannshofen, following the recent death of his two sons, to assign his wife Kunigunde née von Seckendorff and, after her death, his three daughters with 6,000 florins to the aforementioned Würzburg fiefs. Seals: the A.\n\nExtent: Original copy; parchment, 1 page sealed.",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Friedrich of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
-        },
-        {
           "person": "Friedrich of Würzburg",
           "personTitle": [
             "Bishop"
@@ -28,6 +19,12 @@
         },
         {
           "person": "Kunigunde von Seckendorff"
+        },
+        {
+          "place": "waldmannshofen"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -45,6 +42,11 @@
           ],
           "type": "generic",
           "content": "received permission to secure his wife and daughters with 6,000 Gulden from specified Würzburg fiefs after the recent deaths of his two sons.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1573-09-19"
         }
       ]

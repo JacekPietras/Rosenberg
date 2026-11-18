@@ -9,28 +9,28 @@
       "english": "Marriage agreement between Hans von Helmstadt, Amtmann zu Bischofshomburg, and Philipp von Liebenstein, Amtmann zu Kyrburg, for Johann's daughter Katharina and Philipp's son Philipp. The mediator is Johann, Wild- and Rhinegrave, Count of Salm. The dowry amounts to 1,000 florins; in the event of Ritter Philipp Jakob von Helmstadt and his brother Johann dying childless, the bride receives an additional 500 florins and waives all further inheritance. The widow's maintenance of 100 florins is secured with properties of the groom at Freischdorf; the morning gift amounts to 200 florins. If other daughters of Johann receive a larger dowry, Katharina is entitled to an equivalent amount.\nSeal and signature: the mediator, the fathers, and the groom, as well as Ritter Philipp Jakob von Helmstadt, Lord of Dilsberg and Amtmann zu Schauenburg, Ludwig von Fleckenstein, Electoral Palatinate's Grand Steward, Bechtolf von Flersheim, bishop of Speyer's steward, Balthasar von Rosenberg, vogt of Lauterburg, Friedrich zu Eltz, and Heinrich von Sötern on the side of the groom; Johann zu Eltz, Amtmann zu Kaub, Johann von Schauenburg, senior Oberamtmann zu Trarbach, Samson von Liebenstein, and Johann von Warsberg on the side of the bride.\n\nDate range: 1531 (February 9, 1531 - Thursday before Blasius)",
       "mention": [
         {
+          "person": "Balthasar von Rosenberg"
+        },
+        {
           "person": "Hans von Helmstadt"
         },
         {
-          "person": "Philipp von Liebenstein"
-        },
-        {
-          "person": "Philipp Jakob von Helmstadt",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Philipp Jakob von Helmstadt",
-          "personTitle": [
-            "Ritter"
-          ]
+          "place": "liebenstein-castle"
         },
         {
           "person": "Ludwig von Fleckenstein"
         },
         {
-          "person": "Balthasar von Rosenberg"
+          "person": "Philipp Jakob von Helmstadt",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Philipp von Liebenstein"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [

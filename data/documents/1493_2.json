@@ -19,6 +19,9 @@
           "personTitle": [
             "Ritter"
           ]
+        },
+        {
+          "place": "wertheim-stiftskirche"
         }
       ],
       "facts": [
@@ -28,7 +31,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was promised indemnification by Johann, Count of Wertheim; Philipp, Count of Hanau-Lichtenberg; and Michel and Asmus, Counts of Wertheim, for the services he was to perform."
+          "content": "was promised indemnification by Johann, Count of Wertheim; Philipp, Count of Hanau-Lichtenberg; and Michel and Asmus, Counts of Wertheim, for the services he was to perform.",
+          "mention": [
+            {
+              "place": "wertheim-stiftskirche"
+            }
+          ]
         }
       ],
       "img": [

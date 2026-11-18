@@ -11,6 +11,12 @@
       "mention": [
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "erlenbach"
+        },
+        {
+          "place": "hirschhorn"
         }
       ],
       "facts": [
@@ -20,7 +26,15 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "with the other guardians of Mainz pledged the village of Erlenbach to Johannes von dem Hirschhorn and his heirs."
+          "content": "with the other guardians of Mainz pledged the village of Erlenbach to Johannes von dem Hirschhorn and his heirs.",
+          "mention": [
+            {
+              "place": "erlenbach"
+            },
+            {
+              "place": "hirschhorn"
+            }
+          ]
         }
       ]
     }

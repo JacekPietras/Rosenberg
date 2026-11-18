@@ -9,7 +9,16 @@
       "english": "Albrecht von Neuenstein acknowledges that Elect Adolf of Mainz has assigned him 50 gulden in money from the tax of the city of Walldürn. Albrecht von Neuenstein (Nuwenstein) acknowledges that Adolf, elected Archbishop of Mainz (Mencze), Bishop of Speyer (Spire), has assigned to him according to the following document 50 gulden in money from the tax of the city of Walldürn (Du＜o＞rn): Adolf [elected Archbishop of Mainz] acknowledges that he owes the gentleman Albrecht von Neuenstein, his \"loved and faithful one\" and his heirs, on account of the archiepiscopal \"uncle,\" the Noble Gerlach von Hohenlohe (Hoenloche), 495 gulden. Adolf has now with the gentleman Albrecht, with the consent of the schoolmaster Otte von Schönburg (Schonenburg) and the entire chapter of the cathedral at Mainz (Mencze), agreed to have 50 gulden paid from the annual tax of the city of Dürn. The Archbishop accordingly instructs the citizens there, and promises to issue them a separate document regarding this: The amount shall be paid each time on Martini [November 11] until the Archbishop redeems the payment with 495 gulden, which he can do each year in the period 14 days before and 14 days after George's day [April 23]. The 495 gulden shall be paid according to Albrecht's wish at Möckmühl (Megmu<o>ln) or Adelsheim (Aleczheim). If the Dürrner directly hand over the annual payment to Albrecht and obtain a receipt, these receipts shall be recognized as if the money had been delivered directly to the archiepiscopal cellarer. If Albrecht wishes to have his money back after the next two years, which should begin on the upcoming Feast of the Chair of Peter [February 22], the Archbishop shall pay it to him 14 days before or after Martini [November 11] at Möckmühl (Megkemu<p>ln) or Adelsheim. Before the expiration of these 2 years, the Archbishop cannot redeem the annuity if Albrecht does not agree. In case Albrecht wishes to have his money back and Manz does not pay him, the Archbishop’s “faithful ones” are to stand surety: the knight Hans von Rosenberg, Hans von Berlichingen, Eberhard Rüdt der Ältere of Bödigheim, Wiprecht Rüdt der Lange, and Contzin von Witzstad called Hagenbuch. If Albrecht does not receive his money on time after giving notice, or if the annuity has been pledged, each guarantor, with a servant and horse, must appear for lodging in a public inn at Möckmühl or Adelsheim when summoned orally or in writing. A horse that is unavailable must be replaced. If a guarantor dies or leaves the country, the Archbishop must provide a replacement guarantor within 14 days of being asked; otherwise Albrecht may require the remaining guarantors to perform until a replacement is provided. The Archbishop promises to release and indemnify the guarantors. Schoolmaster Otte von Schönburg and the cathedral chapter announce the chapter seal; the guarantors acknowledge their duty and announce that they will affix their seals beside the Archbishop’s. Dated on the feast of Saint John the Baptist, 1378. Albrecht von Neuenstein promises faithfully to observe the foregoing terms.",
       "mention": [
         {
+          "place": "adelsheim"
+        },
+        {
+          "person": "Eberhard Rüd of Bödigheim"
+        },
+        {
           "person": "Gerlach von Hohenlohe"
+        },
+        {
+          "person": "Hans von Berlichingen"
         },
         {
           "person": "Hans von Rosenberg",
@@ -18,10 +27,10 @@
           ]
         },
         {
-          "person": "Hans von Berlichingen"
+          "place": "speyer"
         },
         {
-          "person": "Eberhard Rüd of Bödigheim"
+          "place": "wallduern"
         },
         {
           "person": "Wiprecht Rüd"
@@ -34,7 +43,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was surety for Adolf of Mainz’s debt to Albrecht von Neuenstein secured on the Bede of Dürn."
+          "content": "was surety for Adolf of Mainz’s debt to Albrecht von Neuenstein secured on the Bede of Dürn.",
+          "mention": [
+            {
+              "place": "wallduern"
+            }
+          ]
         }
       ],
       "img": [

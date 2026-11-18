@@ -8,13 +8,16 @@
       "english": "Hans von Rosenberg, Ritter: Mure castle and village and a house in Heidelberg, situated next to Albrecht von Erligheim's house.",
       "mention": [
         {
+          "person": "Albrecht von Erligheim"
+        },
+        {
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ]
         },
         {
-          "person": "Albrecht von Erligheim"
+          "place": "heidelberg"
         }
       ],
       "facts": [
@@ -32,7 +35,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "owned a house in Heidelberg."
+          "content": "owned a house in Heidelberg.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ]
         },
         {
           "person": "Hans von Rosenberg",
@@ -44,6 +52,9 @@
           "mention": [
             {
               "person": "Albrecht von Erligheim"
+            },
+            {
+              "place": "heidelberg"
             }
           ]
         }

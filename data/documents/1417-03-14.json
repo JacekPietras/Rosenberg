@@ -9,13 +9,25 @@
       "english": "Supplementary provisions of the Rittergesellschaft zum Esel (Knights' Society of the Donkey).\n\nDuration: March 14, 1417 (Oculi)\n\nSealers: Hans von Hirschhorn; Hans von Sickingen; Haman von Sickingen, Vitzdom; Reinhard von Sickingen the Younger; Hans von Venningen, the Marshal; Kunz von Rosenberg the Elder; Reinhard Creiß (completed: Reuß); Schwicker von Sickingen the Younger; Herman von Rodenstein the Elder; Herman von Rodenstein the Younger; Eberhard von Hirschhorn; Hans von Helmstadt",
       "mention": [
         {
+          "person": "Eberhard von Hirschhorn"
+        },
+        {
+          "person": "Hans von Helmstadt"
+        },
+        {
           "person": "Hans von Hirschhorn"
         },
         {
           "person": "Hans von Sickingen"
         },
         {
-          "person": "Reinhard von Sickingen",
+          "person": "Herman von Rodenstein",
+          "personTitle": [
+            "the Elder"
+          ]
+        },
+        {
+          "person": "Herman von Rodenstein",
           "personTitle": [
             "the Younger"
           ]
@@ -27,22 +39,13 @@
           ]
         },
         {
-          "person": "Herman von Rodenstein",
-          "personTitle": [
-            "the Elder"
-          ]
-        },
-        {
-          "person": "Herman von Rodenstein",
+          "person": "Reinhard von Sickingen",
           "personTitle": [
             "the Younger"
           ]
         },
         {
-          "person": "Eberhard von Hirschhorn"
-        },
-        {
-          "person": "Hans von Helmstadt"
+          "place": "sickingen"
         }
       ],
       "facts": [

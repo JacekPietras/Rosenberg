@@ -7,11 +7,27 @@
       "url": "https://www.gda.bayern.de/gvl/document/c156038d-4a7e-4518-b7cb-91b69fb339ab",
       "german": "Reversbrief des Kunz (\"Conz\") von Rosenberg zu Gnötzheim (\"Gnetzheim\") über das Schloss, Dorf und Gericht Waldmannshofen.",
       "english": "Acknowledgment letter of Kunz (\"Conz\") von Rosenberg of Gnötzheim (\"Gnetzheim\") regarding the castle, village, and jurisdiction of Waldmannshofen.",
+      "mention": [
+        {
+          "place": "gnoetzheim"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "waldmannshofen"
+        }
+      ],
       "facts": [
         {
           "person": "Kunz von Rosenberg zu Gnötzheim",
           "type": "generic",
-          "content": "issued a feudal acknowledgment concerning Schloss, village, and court of Waldmannshofen."
+          "content": "issued a feudal acknowledgment concerning Schloss, village, and court of Waldmannshofen.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ]
     }

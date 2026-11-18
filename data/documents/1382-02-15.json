@@ -12,6 +12,9 @@
       "english": "Eberhard von Rosenberg der Alte, and Anna, his wife, sold tithes, goods, and interest in Wagenbuch, Höhefeld, and Lindelbach to the Bronnbach Monastery for 80 guilders.\n\nSeal: Eberhard von Rosenberg der Ältere; Anna, his wife; Knebel von Huesen, surety; Fritz Stetenberg, surety; Peter Stetenberg, Fritz's brother, surety",
       "mention": [
         {
+          "place": "bronnbach"
+        },
+        {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Alte"
@@ -31,7 +34,12 @@
             "der Alte"
           ],
           "type": "generic",
-          "content": "sold the named tithes, goods, and rents at Wagenbuch, Höhefeld, and Lindelbach to Bronnbach Monastery jointly with his wife Anna."
+          "content": "sold the named tithes, goods, and rents at Wagenbuch, Höhefeld, and Lindelbach to Bronnbach Monastery jointly with his wife Anna.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",

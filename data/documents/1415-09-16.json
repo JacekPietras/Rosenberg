@@ -9,6 +9,9 @@
       "english": "Rudolf von Rosenberg sells to the Hospitaller Hospital of St. Gallen the Rosenberg estate in Lüchingen and the upper mill in Altstätten.",
       "mention": [
         {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Rudolf von Rosenberg"
         }
       ],

@@ -12,6 +12,9 @@
       "english": "Pfalzgraf Ruprecht II informs the places bought from the Stift Fulda that, among others, Kunz Mönch von Rosenberg zu Steinsberg is to receive the homage.",
       "mention": [
         {
+          "place": "fulda-cathedral"
+        },
+        {
           "person": "Kunz Mönch von Rosenberg"
         }
       ],
@@ -22,7 +25,12 @@
             "zu Steinsberg"
           ],
           "type": "generic",
-          "content": "was designated by Pfalzgraf Ruprecht II to receive the homage of the places bought from the Stift Fulda."
+          "content": "was designated by Pfalzgraf Ruprecht II to receive the homage of the places bought from the Stift Fulda.",
+          "mention": [
+            {
+              "place": "fulda-cathedral"
+            }
+          ]
         }
       ]
     }

@@ -9,6 +9,9 @@
       "english": "Emperor Ludwig pledges to Eberhard von Rosenberg his and the Empire's men in the villages of Roigheim, Bödigheim, Eicholzheim, Osterburken, and all other serfs who belong to the same bailiff's office.",
       "mention": [
         {
+          "place": "boedigheim-kreuzkirche"
+        },
+        {
           "person": "Eberhard von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "received as a pledge from Emperor Ludwig his and the Empire’s people in Roigheim, Bödigheim, Eicholzheim and Osterburken and the other Eigenleute of the same Schultheißenamt."
+          "content": "received as a pledge from Emperor Ludwig his and the Empire’s people in Roigheim, Bödigheim, Eicholzheim and Osterburken and the other Eigenleute of the same Schultheißenamt.",
+          "mention": [
+            {
+              "place": "boedigheim-kreuzkirche"
+            }
+          ]
         }
       ]
     }

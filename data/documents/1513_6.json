@@ -13,6 +13,9 @@
           "person": "Hans von Rosenberg"
         },
         {
+          "place": "lauda"
+        },
+        {
           "person": "Lorenz von Bibra",
           "personTitle": [
             "Bishop"
@@ -23,7 +26,12 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "sold further rights at Lauda."
+          "content": "sold further rights at Lauda.",
+          "mention": [
+            {
+              "place": "lauda"
+            }
+          ]
         }
       ],
       "img": [

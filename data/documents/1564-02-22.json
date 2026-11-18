@@ -10,13 +10,24 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "erbach"
+        },
+        {
+          "place": "eubigheim"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "sealed and signed the court and village ordinance of Eubigheim."
+          "content": "sealed and signed the court and village ordinance of Eubigheim.",
+          "mention": [
+            {
+              "place": "eubigheim"
+            }
+          ]
         }
       ],
       "img": [

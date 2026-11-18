@@ -12,13 +12,13 @@
       "english": "April 21, 1449 (Monday after Quasimodogeniti)\nThe 3 Freischöffen Thomas von Rosenberg, Götz von Dottenheim and Wilhelm von Dottenheim, brothers, issue at the request of Jost von Venningen a vidimus regarding the following document:\nMarch 21, 1449 (Friday before the Annunciation of Our Lady) King Friedrich III. certifies at Vienna-Neustadt that the representative of the 3 commanders has appeared before the Imperial Chamber Court with the document of Bishop Gottfried of Würzburg (see U 11), demonstrating that they have taken their oath of purification in the matter of H. Übelacker and that the royal judgment stands rightful. Original parchment, 3 seals attached\n\nPeriod: April 21, 1449\n\nExtent: 1 document.",
       "mention": [
         {
-          "person": "Thomas von Rosenberg"
+          "person": "Gotfried of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         },
         {
           "person": "Götz von Dottenheim"
-        },
-        {
-          "person": "Wilhelm von Dottenheim"
         },
         {
           "person": "König Friedrich",
@@ -27,10 +27,10 @@
           ]
         },
         {
-          "person": "Gotfried of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "person": "Thomas von Rosenberg"
+        },
+        {
+          "person": "Wilhelm von Dottenheim"
         }
       ],
       "facts": [

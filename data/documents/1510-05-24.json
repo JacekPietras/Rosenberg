@@ -9,10 +9,10 @@
       "english": "Jakob von Fleckenstein the Elder and Hans von Flersheim arrange a marriage agreement between Hans von Helmstadt and Elisabeth, daughter of Hans von Ingelheim. For the dowry of 1,000 Rhenish gulden, the village of Kindsbach (\"Kinst-\") is pledged, which is loaned for 50 gulden interest to Knight Hans von Hirschhorn; counter-dowry of 1,000 gulden and morning gift of 300 gulden are secured with assignments against the collegiate church at Trier. The widow's seat shall be Landau. Elisabeth's parental inheritance of 1,500 gulden shall be offset with her sister Ursel, wife of Ludwig von Fleckenstein. Sealer: 1) and 2) Issuers, 3) Hans von Helmstadt, 4) Heinrich von Helmstadt, Domdekan at Speyer, 5) Hans and 6) Wolf Kämmerer von Worms called von Dalberg, 7) Bechtold von Flersheim, Amtmann zu Lautern (\"Luttern\"), 8) Hans von Ingelheim, 9) Heinrich von Handschuhsheim for Elisabeth von Ingelheim, 10) Karl von Ingelheim, 11) Diether von Handschuhsheim, 12) Ludwig von Fleckenstein, Vogt zu Germersheim, 13) Balthasar von Rosenberg\n\nTerm: 1510 (May 24, 1510 - First Sunday after Pentecost)",
       "mention": [
         {
-          "person": "Jakob von Fleckenstein",
-          "personTitle": [
-            "the Elder"
-          ]
+          "person": "Balthasar von Rosenberg"
+        },
+        {
+          "person": "Diether von Handschuhsheim"
         },
         {
           "person": "Hans von Helmstadt"
@@ -24,25 +24,22 @@
           ]
         },
         {
-          "person": "Ludwig von Fleckenstein"
-        },
-        {
-          "person": "Hans von Helmstadt"
+          "person": "Heinrich von Handschuhsheim"
         },
         {
           "person": "Heinrich von Helmstadt"
         },
         {
-          "person": "Heinrich von Handschuhsheim"
-        },
-        {
-          "person": "Diether von Handschuhsheim"
+          "person": "Jakob von Fleckenstein",
+          "personTitle": [
+            "the Elder"
+          ]
         },
         {
           "person": "Ludwig von Fleckenstein"
         },
         {
-          "person": "Balthasar von Rosenberg"
+          "place": "speyer"
         }
       ]
     }

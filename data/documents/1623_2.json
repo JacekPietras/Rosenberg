@@ -16,13 +16,27 @@
       "mention": [
         {
           "person": "Christoph von Rosenberg"
+        },
+        {
+          "place": "waldmannshofen"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Adolph Christoph von Rosenberg",
           "type": "generic",
-          "content": "received Mannlehen at Waldmannshofen, Gülchsheim, Steinach and Geiselheim from the Bishop of Würzburg."
+          "content": "received Mannlehen at Waldmannshofen, Gülchsheim, Steinach and Geiselheim from the Bishop of Würzburg.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

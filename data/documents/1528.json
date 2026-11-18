@@ -13,6 +13,12 @@
           "personTitle": [
             "the younger"
           ]
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
         }
       ],
       "facts": [
@@ -22,7 +28,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was recorded as holding annual and perpetual rents associated with Haltenbergstetten."
+          "content": "was recorded as holding annual and perpetual rents associated with Haltenbergstetten.",
+          "mention": [
+            {
+              "place": "schloss-haltenbergstetten"
+            }
+          ]
         }
       ]
     }

@@ -10,13 +10,16 @@
       "english": "On the Monday after Quasimodo Sunday in 1513, Bishop Lorenz bought from the brothers Georg, Hans, and Eberhard von Rosenberg, for 600 Rhenish florins, several tithes, rents, properties, and rights in the town of Lauda and its surrounding district, for the bishopric. Recorded in the second register of Lorenz’s contracts, fol. 244d. The archive summary identifies Bishop Lorenz as Lorenz von Bibra.",
       "mention": [
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Georg von Rosenberg"
         },
         {
           "person": "Hans von Rosenberg"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "lauda"
         },
         {
           "person": "Lorenz von Bibra"
@@ -28,6 +31,9 @@
           "type": "generic",
           "content": "sold several tithes, rents, properties, and rights in Lauda and its district to Lorenz von Bibra, Bischof, for the bishopric.",
           "mention": [
+            {
+              "place": "lauda"
+            },
             {
               "person": "Lorenz von Bibra",
               "personTitle": [
@@ -42,6 +48,9 @@
           "content": "sold several tithes, rents, properties, and rights in Lauda and its district to Lorenz von Bibra, Bischof, for the bishopric.",
           "mention": [
             {
+              "place": "lauda"
+            },
+            {
               "person": "Lorenz von Bibra",
               "personTitle": [
                 "Bischof"
@@ -54,6 +63,9 @@
           "type": "generic",
           "content": "sold several tithes, rents, properties, and rights in Lauda and its district to Lorenz von Bibra, Bischof, for the bishopric.",
           "mention": [
+            {
+              "place": "lauda"
+            },
             {
               "person": "Lorenz von Bibra",
               "personTitle": [

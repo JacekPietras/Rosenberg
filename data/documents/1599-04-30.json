@@ -12,13 +12,19 @@
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
+          "person": "Brigitta von Rosenberg"
+        },
+        {
           "person": "Gotfried von Seckendorf"
         },
         {
           "person": "Hans Georg von Seckendorf"
         },
         {
-          "person": "Brigitta von Rosenberg"
+          "place": "sugenheim-st-erhard"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
@@ -62,8 +68,8 @@
         {
           "person": "Albrecht Christoph von Rosenberg",
           "personTitle": [
-            "zu Waldmannshofen",
-            "zu Rosenberg"
+            "zu Rosenberg",
+            "zu Waldmannshofen"
           ],
           "type": "generic",
           "content": "was appointed with Gotfried von Seckendorf and Eberhard von Eltershouen as guardian of Georg Albrecht and Philipp Ludwig, the sons of the late Hans Georg von Seckendorf.",

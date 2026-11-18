@@ -13,6 +13,12 @@
           "personTitle": [
             "Ritter"
           ]
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "pappenheim"
         }
       ],
       "facts": [
@@ -23,7 +29,12 @@
             "Schultheiß zu Nürnberg"
           ],
           "type": "generic",
-          "content": "sealed an agreement between Hans Kircher and Haupt, Marschall von Pappenheim, before whom Hans Kircher bound himself by oath."
+          "content": "sealed an agreement between Hans Kircher and Haupt, Marschall von Pappenheim, before whom Hans Kircher bound himself by oath.",
+          "mention": [
+            {
+              "place": "pappenheim"
+            }
+          ]
         }
       ]
     }

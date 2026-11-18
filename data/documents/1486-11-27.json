@@ -9,22 +9,13 @@
       "english": "November 27, 1486: Emperor Friedrich declares Georg, Arnold von Rosenberg and Friedrich von Rosenberg and their named assistants, who have declared feud against Bishop Rudolf of Würzburg without legal proceedings and attacked him, to have incurred the penalty of the Golden Bull, and forbids any association with them. Print, together with another print from the same day concerning only the von Rosenberg, with the penalty printed beneath following the royal reformation. December 14, 1486: Bishop Rudolf of Würzburg reports that King Friedrich has placed Georg, Arnold von Rosenberg and Friedrich von Rosenberg, who declared feud wantonly against the bishop and chapter due to claims from the inheritance of their uncle Anselm von Rosenberg, contrary to fief and oath obligations, and damaged them, under interdict and outlawry. Print. December 26, 1487: Bishop Rudolf of Würzburg sends a copy of the imperial judgment against Georg, Arnold von Rosenberg and Friedrich von Rosenberg. Original.",
       "mention": [
         {
+          "person": "Anselm von Rosenberg"
+        },
+        {
           "person": "Arnold von Rosenberg"
         },
         {
           "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Rudolf of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
-        },
-        {
-          "person": "Rudolf of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
         },
         {
           "person": "König Friedrich",
@@ -33,25 +24,13 @@
           ]
         },
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Anselm von Rosenberg"
+          "place": "rosenberg-town"
         },
         {
           "person": "Rudolf of Würzburg",
           "personTitle": [
             "Bishop"
           ]
-        },
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
         }
       ],
       "facts": [

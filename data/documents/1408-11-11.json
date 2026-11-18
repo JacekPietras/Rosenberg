@@ -18,7 +18,16 @@
           ]
         },
         {
-          "person": "Christiana von Handschuhsheim"
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "place": "ballenberg"
+        },
+        {
+          "place": "boxberg"
+        },
+        {
+          "place": "buch"
         },
         {
           "person": "Christiana von Handschuhsheim"
@@ -27,16 +36,22 @@
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Arnold von Rosenberg"
+          "place": "erlenbach"
         },
         {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
           ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schoental-monastery"
         }
       ],
       "facts": [
@@ -47,7 +62,12 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "resided at Boxberg."
+          "content": "resided at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "arnold_boxberg",
@@ -65,7 +85,18 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "exchanged goods in Erlenbach and Merchingen with Abbot Heinrich V and the convent of Schöntal Abbey for the abbey’s properties at Buch am Ahorn, See, and Sachsenflur."
+          "content": "exchanged goods in Erlenbach and Merchingen with Abbot Heinrich V and the convent of Schöntal Abbey for the abbey’s properties at Buch am Ahorn, See, and Sachsenflur.",
+          "mention": [
+            {
+              "place": "buch"
+            },
+            {
+              "place": "erlenbach"
+            },
+            {
+              "place": "schoental-monastery"
+            }
+          ]
         },
         {
           "person": "arnold_boxberg",
@@ -74,7 +105,12 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "held the exchanged Rosenberg goods as fiefs from the Electorate of the Palatinate."
+          "content": "held the exchanged Rosenberg goods as fiefs from the Electorate of the Palatinate.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "arnold_boxberg",
@@ -91,13 +127,18 @@
             "zu Jagstberg"
           ],
           "type": "generic",
-          "content": "resided at Jagstberg."
+          "content": "resided at Jagstberg.",
+          "mention": [
+            {
+              "place": "jagstberg"
+            }
+          ]
         },
         {
           "person": "eberhard_jagstberg",
           "personTitle": [
-            "zu Jagstberg",
-            "Edelknecht"
+            "Edelknecht",
+            "zu Jagstberg"
           ],
           "type": "sibling",
           "of": "arnold_boxberg",
@@ -112,13 +153,18 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "resided at Boxberg."
+          "content": "resided at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
-            "zu Boxberg",
-            "Edelknecht"
+            "Edelknecht",
+            "zu Boxberg"
           ],
           "type": "kin",
           "of": "arnold_boxberg",

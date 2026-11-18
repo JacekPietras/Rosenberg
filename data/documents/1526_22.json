@@ -9,6 +9,9 @@
       "english": "Zaisolph von Rosenberg to Rothenburg: request for patience regarding the examination of witnesses.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "asked Rothenburg for patience regarding the witness examination."
+          "content": "asked Rothenburg for patience regarding the witness examination.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

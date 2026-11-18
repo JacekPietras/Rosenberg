@@ -9,13 +9,16 @@
       "english": "The brothers Peter, Ulrich, and Hans von Rosenberg assign to the schoolmaster of Rosenberg, whoever holds the office at the time, a Schock of Prague groschen in annual rent established for him by their brother Jodok on their court at Rosenberg.\n\nSeal: Three small seals in red wax hang from parchment strips; their descriptions are at CIV and CXIV.",
       "mention": [
         {
+          "person": "Hans von Rosenberg"
+        },
+        {
           "person": "Peter von Rosenberg"
         },
         {
-          "person": "Ulrich von Rosenberg"
+          "place": "rosenberg-town"
         },
         {
-          "person": "Hans von Rosenberg"
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "img": [

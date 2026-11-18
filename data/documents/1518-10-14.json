@@ -9,7 +9,13 @@
       "english": "Georg von Rosenberg of Boxberg and Schweigern grants Margraves Casimir and Georg of Brandenburg the right of entry into the castle and village of Schweigern in perpetuity, against all persons, except the Electorate of the Palatinate and the family of Rosenberg, from which he nevertheless excludes his cousins Hans Thomas, Hans Ulrich, and Hans Melchior von Rosenberg due to their ongoing dispute with him.\n\nDate range: October 14, 1518",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Hans Melchior von Rosenberg"
         },
         {
           "person": "Hans Thomas von Rosenberg"
@@ -18,7 +24,10 @@
           "person": "Hans Ulrich von Rosenberg"
         },
         {
-          "person": "Hans Melchior von Rosenberg"
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schweigern"
         }
       ],
       "img": [

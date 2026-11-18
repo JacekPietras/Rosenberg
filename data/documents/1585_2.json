@@ -9,16 +9,19 @@
       "english": "Agreement between Stefan Rüdt von Bödigheim on one side, Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg on the other side on settling disputes concerning driving, grazing, hunting and new tithe on the Sindolsheim boundary",
       "mention": [
         {
-          "person": "Stephan Rüd von Bödigheim"
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "person": "Georg Siegmund von Rosenberg"
         },
         {
           "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Albrecht Christoph von Rosenberg"
+          "place": "sindolsheim-church"
         },
         {
-          "person": "Georg Siegmund von Rosenberg"
+          "person": "Stephan Rüd von Bödigheim"
         }
       ],
       "facts": [
@@ -27,6 +30,9 @@
           "type": "generic",
           "content": "made an agreement with Stefan Rüdt of Bödigheim to settle disputes over livestock passage, grazing, hunting and the new-clearing tithe at Sindolsheim.",
           "mention": [
+            {
+              "place": "sindolsheim-church"
+            },
             {
               "person": "Stephan Rüd of Bödigheim"
             }

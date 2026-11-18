@@ -15,6 +15,9 @@
         },
         {
           "person": "Peter of Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -177,7 +180,12 @@
         {
           "subject": "The monastery of Hohenfurt",
           "type": "generic",
-          "content": "was described as a Cistercian foundation of the brothers von Rosenberg and their forebears."
+          "content": "was described as a Cistercian foundation of the brothers von Rosenberg and their forebears.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Karl IV.",
@@ -187,32 +195,62 @@
         {
           "person": "Busko von Bernharticz",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Wernher von Porzessin",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Przibik von Porzessin",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Nicolaus von Podnawicz",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Jesko von Czekow",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Wlczko von Dobronicz",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Wernher von Porzessin",

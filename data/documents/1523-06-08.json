@@ -12,6 +12,9 @@
       "english": "Hans von Rosenberg, Amtmann (bailiff) of Röttingen, and his wife Richezza certify that they have sold to Dietrich von Cleen, Master of the Teutonic Order in German and Italian lands, and to the Office of Neuhaus (Newenhaus), revenues from properties in Rengershausen, Dörzbach (Dörzbach (Dortzbach) and Laibach ? (Leupach) for 84 1/2 Rhine guilders and 21 pfennigs. In the description of the properties, the places Althausen, Assamstadt (Aszmanstat) and Klepsau (Clepszheim) are mentioned.\n\nDate: June 8, 1523 (on Monday after Our Lord's Feast of Corpus Christi)\n\nSealers: Hans von Rosenberg, Amtmann of Röttingen; Georg von Rosenberg, Amtmann of Reichelsburg (Reigelberg), brother and brother-in-law of Hans von Rosenberg",
       "mention": [
         {
+          "person": "Georg von Rosenberg"
+        },
+        {
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Amtmann"
@@ -21,10 +24,10 @@
           "person": "Hans von Rosenberg"
         },
         {
-          "person": "Georg von Rosenberg"
+          "place": "neuhaus"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "roettingen"
         }
       ],
       "facts": [

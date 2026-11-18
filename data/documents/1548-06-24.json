@@ -9,13 +9,16 @@
       "english": "Margareta née von Rosenberg, widow of Alexander von Helmstatt, her eldest son Alexander, as well as Balthasar von Rosenberg and Philipp Euler of Dieburg as guardians of the brothers Hans Friedrich, Hans Wolf, Martin, and Weiprecht von Helmstatt acknowledge receipt from Konrad von Helmstadt, Vogt of Bruchsal, regarding the transfer of a debt instrument for 500 florins. The debt instrument had been deposited in Speyer by Bishop Philipp of Speyer between the issuers and Konrad von Helmstadt and his +wife Anna Klar, née Greck of Kochendorf, following a verdict rendered on April 30, 1537 (Monday after Cantate). The issuers thereby relinquish their claim to the inheritance of +Weiprecht von Helmstatt. Seals: Alexander von Helmstatt and the guardians\n\nPeriod: 1548 (June 24 – John the Baptist, 1548)",
       "mention": [
         {
-          "person": "Margaretha von Rosenberg"
-        },
-        {
           "person": "Balthasar von Rosenberg"
         },
         {
+          "place": "helmstadt"
+        },
+        {
           "person": "Konrad von Helmstadt"
+        },
+        {
+          "person": "Margaretha von Rosenberg"
         },
         {
           "person": "Philipp of Speyer",
@@ -24,7 +27,7 @@
           ]
         },
         {
-          "person": "Konrad von Helmstadt"
+          "place": "speyer"
         }
       ],
       "facts": [
@@ -33,6 +36,9 @@
           "type": "generic",
           "content": "served as guardian of Hans Friedrich, Hans Wolf, Martin and Weiprecht von Helmstatt and acknowledged receipt of a debt instrument from Konrad von Helmstatt.",
           "mention": [
+            {
+              "place": "helmstadt"
+            },
             {
               "person": "Konrad von Helmstatt"
             }

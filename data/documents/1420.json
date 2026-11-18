@@ -10,13 +10,27 @@
       "mention": [
         {
           "person": "Elisabeth von Erligheim"
+        },
+        {
+          "place": "neuburg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was recorded among the benefactors of Neuburg monastery as a widow born von Rosenberg."
+          "content": "was recorded among the benefactors of Neuburg monastery as a widow born von Rosenberg.",
+          "mention": [
+            {
+              "place": "neuburg"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ],
       "img": [

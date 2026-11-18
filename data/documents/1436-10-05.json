@@ -14,7 +14,13 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Christiana von Handschuhsheim"
+        },
+        {
+          "person": "Georg von Rosenberg"
         },
         {
           "person": "Konrad von Rosenberg",
@@ -24,9 +30,6 @@
         },
         {
           "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
         }
       ],
       "facts": [
@@ -68,13 +71,16 @@
           "content": "sold their quarter of Boxberg to their sons Ulrich and Jörg von Rosenberg together with his wife Christine von Handschuhsheim.",
           "mention": [
             {
-              "person": "Ulrich von Rosenberg"
+              "place": "boxberg"
+            },
+            {
+              "person": "Christiana von Handschuhsheim"
             },
             {
               "person": "Georg von Rosenberg"
             },
             {
-              "person": "Christiana von Handschuhsheim"
+              "person": "Ulrich von Rosenberg"
             }
           ]
         },
@@ -84,13 +90,16 @@
           "content": "sold their quarter of Boxberg to their sons Ulrich and Jörg von Rosenberg together with her husband Arnold von Rosenberg.",
           "mention": [
             {
-              "person": "Ulrich von Rosenberg"
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "place": "boxberg"
             },
             {
               "person": "Georg von Rosenberg"
             },
             {
-              "person": "Arnold von Rosenberg"
+              "person": "Ulrich von Rosenberg"
             }
           ]
         },
@@ -100,13 +109,16 @@
           "content": "had previously bought their quarter of Boxberg from Konrad von Rosenberg, Ritter, together with his wife Christine von Handschuhsheim.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
+              "person": "Christiana von Handschuhsheim"
+            },
+            {
               "person": "Konrad von Rosenberg",
               "personTitle": [
                 "Ritter"
               ]
-            },
-            {
-              "person": "Christiana von Handschuhsheim"
             }
           ]
         },
@@ -116,13 +128,16 @@
           "content": "had previously bought their quarter of Boxberg from Konrad von Rosenberg, Ritter, together with her husband Arnold von Rosenberg.",
           "mention": [
             {
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "place": "boxberg"
+            },
+            {
               "person": "Konrad von Rosenberg",
               "personTitle": [
                 "Ritter"
               ]
-            },
-            {
-              "person": "Arnold von Rosenberg"
             }
           ]
         }

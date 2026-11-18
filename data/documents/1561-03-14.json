@@ -18,7 +18,13 @@
           ]
         },
         {
+          "place": "dottenheim"
+        },
+        {
           "person": "Eberhard Rüd von Collenberg"
+        },
+        {
+          "place": "unterschuepf"
         }
       ],
       "facts": [
@@ -31,7 +37,13 @@
           "content": "granted Jakob Mührien the Dottenheim farmstead at Unterschüpf for an annual rent, having bought it from Eberhard Rüdt von Collenberg.",
           "mention": [
             {
+              "place": "dottenheim"
+            },
+            {
               "person": "Eberhard Rüd von Collenberg"
+            },
+            {
+              "place": "unterschuepf"
             }
           ]
         }

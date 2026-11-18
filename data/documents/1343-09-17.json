@@ -14,10 +14,16 @@
           "person": "Eberhard von Rosenberg"
         },
         {
+          "place": "fulda-cathedral"
+        },
+        {
           "person": "Otto of Würzburg",
           "personTitle": [
             "Bishop"
           ]
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -27,13 +33,13 @@
           "content": "was named as an arbitrator in the dispute between Bishop Otto of Würzburg and Abbot Heinrich of Fulda over goods and rights before the Rhön.",
           "mention": [
             {
+              "person": "Heinrich of Fulda"
+            },
+            {
               "person": "Otto of Würzburg",
               "personTitle": [
                 "Bishop"
               ]
-            },
-            {
-              "person": "Heinrich of Fulda"
             }
           ]
         }

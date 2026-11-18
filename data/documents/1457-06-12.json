@@ -9,13 +9,16 @@
       "english": "Count Philipp of Katzenelnbogen and Dietz and Ulrich von Rosenberg mediate a settlement between Count Diether of Isenburg-Büdingen on one side, and Hans von Wallenstein, Johann von Stockheim, Balthasar Forstmeister [von Gelnhausen] and Philipp von Rödelheim on the other, regarding the pledge of Friedberg. Within 14 days both parties shall petition the Count Palatine for an amicable hearing, to which the mediators will also attend, and where a decision will be made no later than within 6 weeks that the parties must accept. Also included are the feuds of the aforementioned von Wallenstein, von Stockheim, and Forstmeister against Ruprecht von Karben, the Gernants von Windhausen against Johann von Langenau, and Gerlach Hube [von Kressenbach] against Hartmann von Kronberg. The prisoners on both sides shall be released upon oath of peace. If Diether von Isenburg-Büdingen cannot appear in person, he shall send one of his sons with full powers. Each party receives a copy. [Side note: also the feud between Siegfried Löw and Castel Henne shall be settled]. The mediators seal.",
       "mention": [
         {
+          "person": "Hans von Wallenstein"
+        },
+        {
           "person": "Philipp of Katzenelnbogen"
         },
         {
           "person": "Ulrich von Rosenberg"
         },
         {
-          "person": "Hans von Wallenstein"
+          "place": "wallenstein"
         }
       ],
       "facts": [

@@ -9,13 +9,13 @@
       "english": "Hans von Rosenberg acknowledges receipt of 150 gulden from Burgrave Friedrich von Nuremberg. Dated the same day. (With 1 seal.)",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "person": "Friedrich von Nuremberg",
           "personTitle": [
             "Burgrave"
           ]
+        },
+        {
+          "person": "Hans von Rosenberg"
         }
       ],
       "facts": [

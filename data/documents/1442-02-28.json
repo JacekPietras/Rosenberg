@@ -10,6 +10,12 @@
       "english": "Hincko Crussina von Schwamberg, captain of the Pilsen region, wrote to Ulrich von Rosenberg that he rejected the burgrave of Tachau or Freyberg and Duke Otto of Bavaria as arbitrators in his dispute with Nuremberg, and accepted the Landgrave of Leuchtenberg instead.",
       "mention": [
         {
+          "place": "leuchtenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
           "person": "Ulrich von Rosenberg"
         }
       ],
@@ -17,7 +23,12 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "was addressed in a letter from Hincko Crussina von Schwamberg concerning his dispute with Nürnberg and the proposed arbitrators."
+          "content": "was addressed in a letter from Hincko Crussina von Schwamberg concerning his dispute with Nürnberg and the proposed arbitrators.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ]
         }
       ],
       "img": [

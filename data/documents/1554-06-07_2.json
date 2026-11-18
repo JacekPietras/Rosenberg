@@ -12,7 +12,10 @@
           "person": "Albrecht von Rosenberg"
         },
         {
-          "person": "Albrecht von Rosenberg"
+          "place": "boxberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -22,7 +25,12 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "waived claims against Landgraf Philipp of Hessen for damage caused by the confederates in Boxberg and its associated properties."
+          "content": "waived claims against Landgraf Philipp of Hessen for damage caused by the confederates in Boxberg and its associated properties.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

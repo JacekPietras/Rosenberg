@@ -9,16 +9,10 @@
       "english": "Elect Adolf of Mainz arranges repayment of the purchase price for Castle Neudenau to the brothers von Stein. Adolf [elected Archbishop of Mainz and Bishop of Speyer] certifies that he owes the brothers Wolf and Hans von Neuenstein, sons of the deceased elder Wolf von Neuenstein, 1,000 gold gulden. For this sum, he has bought from them, for the Archdiocese of Mainz, their share in Castle Neufels together with its appurtenances. Archbishop Adolf also owes Wolf von Neuenstein 100 gulden, in return for which Wolf shall serve and attend the foundation of Speyer for one year in all its needs. Of these 1,100 gulden, the Archbishop shall pay the brothers or their heirs 400 gulden on the coming White Sunday [7 March] at Heilbronn or Pforzheim, and the remaining 700 gulden there on the following Feast of Saint John the Baptist [24 June]. The Archbishop appoints as their guarantors Hans von Rosenberg; Eberhard Rüdt, Ritter; Wiprecht Rüdt; Eberhard Rüdt von Bödigheim; Götz von Adelsheim; Kunz von Buchen; Kunz Haginbuch; Hans Mönch; Hans von Gemmingen; and Gerhard von Dallau, all Edelknechte; as well as the mayors and judges of the cities of Neckarsulm and Neudenau, his “dear and faithful subjects.” If Mainz defaults on payment, the creditors may summon the guarantors in writing or orally. Within eight days of being summoned, each must send a servant and a horse to Heilbronn or Gundelsheim on the Neckar. The mayors and judges of the two archiepiscopal cities, Neckarsulm and Neudenau, must ride there in person. All the guarantors must lodge in a public tavern designated for them by the von Stein until the money, together with interest and expenses, has been paid. Any horse that fails must be replaced within eight days. If a guarantor dies or leaves the country, Mainz must provide an equivalent replacement guarantor within one month. If Mainz fails to do so, the remaining guarantors must ride in at once. Mainz promises its guarantors to release them from the surety and hold them harmless. Should the guarantors fail in their duty, the brothers may distrain them through ecclesiastical or secular courts, or compel performance even without a court. The guarantors acknowledge their obligation and announce their seals; the mayors and the judge of the two cities likewise announce the cities’ seals. The Archbishop also announces his seal. Dated at Eltville on the day of Saint Agatha, 1378.",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "person": "Eberhard Rüd",
           "personTitle": [
             "Ritter"
           ]
-        },
-        {
-          "person": "Wiprecht Rüd"
         },
         {
           "person": "Eberhard Rüd von Bödigheim"
@@ -27,13 +21,22 @@
           "person": "Götz von Adelsheim"
         },
         {
-          "person": "Kunz von Buchen"
-        },
-        {
           "person": "Hans Mönch"
         },
         {
           "person": "Hans von Gemmingen"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Kunz von Buchen"
+        },
+        {
+          "place": "speyer"
+        },
+        {
+          "person": "Wiprecht Rüd"
         }
       ],
       "facts": [

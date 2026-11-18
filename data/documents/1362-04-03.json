@@ -7,7 +7,12 @@
       "source": "[RIplus] Regg. Karl IV. n. 5641",
       "url": "https://www.regesta-imperii.de/id/db67a912-5c67-4c04-943d-6753f60fd877",
       "german": "Karl IV. erweist als König von Böhmen den Brüdern Peter [II.], Jodok, Ulrich [I.] und Johann (Jesko) von Rosenberg für seine Lebenszeit die Gnade, daß sie ihr Eigengut sowie ihr böhmisches Kronlehen Burg und Stadt Gratzen teilen dürfen und es nach dem erbenlosen Tod eines Bruders oder dessen Erben zu gleichen Teilen an die überlebenden Brüder fallen solle, soweit sie nichts anderes bestimmen, ungeachtet des im Königreich Böhmen geltenden Rechtes, daß erbenlose abgeteilte Güter an den böhmischen König fallen.",
-      "english": "As King of Bohemia, Charles IV grants the brothers Peter [II], Jodok, Ulrich [I], and Johann (Jesko) von Rosenberg, for his lifetime, the right to divide their own property and their Bohemian Crown fief of the castle and town of Gratzen. He provides that, if a brother or his heirs die without heirs, that share is to pass in equal parts to the surviving brothers unless they stipulate otherwise, notwithstanding the law in the Kingdom of Bohemia that ownerless divided estates revert to the King of Bohemia."
+      "english": "As King of Bohemia, Charles IV grants the brothers Peter [II], Jodok, Ulrich [I], and Johann (Jesko) von Rosenberg, for his lifetime, the right to divide their own property and their Bohemian Crown fief of the castle and town of Gratzen. He provides that, if a brother or his heirs die without heirs, that share is to pass in equal parts to the surviving brothers unless they stipulate otherwise, notwithstanding the law in the Kingdom of Bohemia that ownerless divided estates revert to the King of Bohemia.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

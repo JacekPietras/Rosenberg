@@ -19,9 +19,6 @@
         },
         {
           "person": "Wernher Winther von Alzey"
-        },
-        {
-          "person": "Wernher Winther von Alzey"
         }
       ]
     },
@@ -37,18 +34,21 @@
           "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Reinhard von Sickingen"
+          "person": "Diether von Handschuhsheim"
         },
         {
-          "person": "Diether von Handschuhsheim"
+          "place": "nuremberg"
+        },
+        {
+          "person": "Reinhard von Sickingen"
         }
       ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",
           "personTitle": [
-            "der Ältere",
-            "Amtmann zu Lauda"
+            "Amtmann zu Lauda",
+            "der Ältere"
           ],
           "type": "generic",
           "content": "was instructed to comply with the orders of Diether von Handschuhsheim and Contz Landschad, whom King Ruprecht had commissioned to raise and assign money as they saw fit.",
@@ -74,6 +74,12 @@
       "mention": [
         {
           "person": "Herman von Rodenstein"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -99,18 +105,21 @@
       "english": "1401 February 7, Nuremberg. He informs Reinhard von Sickingen der Jüngere, Vogt zu Heidelberg, that he commissioned his marshal Diether von Hentschuchssheim and Contz Landschad to raise money wherever they could and assign it as they saw fit, and orders Reinhart to comply with their instructions. The same letter was sent to Arnold von Rosenberg der Ältere, Amtmann zu Lauda. Copybook 809, fol. 31b; K. R. T. A. V, 15, line 42.",
       "mention": [
         {
-          "person": "Reinhard von Sickingen"
+          "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Arnold von Rosenberg"
+          "place": "nuremberg"
+        },
+        {
+          "person": "Reinhard von Sickingen"
         }
       ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",
           "personTitle": [
-            "der Ältere",
-            "Amtmann zu Lauda"
+            "Amtmann zu Lauda",
+            "der Ältere"
           ],
           "type": "generic",
           "content": "received the same letter, which ordered Reinhart von Sickingen der Jüngere to comply with the orders of Diether von Hentschuchssheim and Contz Landschad, commissioned to raise and assign money as they saw fit.",

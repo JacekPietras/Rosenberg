@@ -16,13 +16,27 @@
       "mention": [
         {
           "person": "Adolf Christoph von Rosenberg"
+        },
+        {
+          "place": "baldersheim"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Adolf Christoph von Rosenberg",
           "type": "generic",
-          "content": "received the specified fiefs at Baldersheim, Baibach and Burgerroth from the Bishop of Würzburg."
+          "content": "received the specified fiefs at Baldersheim, Baibach and Burgerroth from the Bishop of Würzburg.",
+          "mention": [
+            {
+              "place": "baldersheim"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

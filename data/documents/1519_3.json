@@ -9,19 +9,34 @@
       "english": "Various correspondences of Prince-Bishop Konrad von Thüngen (originals and copies).\n\nContains: Letter to the bailiff of Bibra regarding the punishment of Peter Veit from Bassenheim near Koblenz (vassal of Karl Schenk von Limpurg) for the fire damage caused by him; Letter from the seven villages in the office of Seßlach regarding the threatened pillage due to their debts to Wendel and Caspar von Lichtenstein as well as Endres von Stein; Letter from the secular and ecclesiastical princes and other estates of the Swabian League regarding the capture of Jakob Erbtroß of the Holy Roman Empire by Hans Thomas von Rosenberg and his promise of peace and non-aggression; Letter to the commandery of the Teutonic Order in Mergentheim regarding the settlement with the Landgrave of Leuchtenberg concerning the cattle drive; Letter from Kunz Gotsmann, Amtmann zu Königsberg regarding the subjects of Holzhausen; Report on the \"Landsschied\" (regional arbitration) of Count Jörg at the prince-bishop's court Rüdenzell; Declaration of debt by Friedrich Freiherr von Schwarzenberg; Letter from the knights Jörg and Hans von Ebersberg regarding their participation in the Peasants' War; Letter to Count Philipp von Solms regarding neighborhood disputes; Correspondence between Würzburg and Bamberg regarding the journey of the Bamberg coadjutor bishop to Würzburg for the consecration of the cathedral.",
       "mention": [
         {
-          "person": "Konrad von Thüngen",
-          "personTitle": [
-            "Bishop"
-          ]
-        },
-        {
-          "person": "Karl Schenk von Limpurg"
+          "place": "bibra"
         },
         {
           "person": "Caspar von Lichtenstein"
         },
         {
           "person": "Hans Thomas von Rosenberg"
+        },
+        {
+          "place": "holtzhusen"
+        },
+        {
+          "person": "Karl Schenk von Limpurg"
+        },
+        {
+          "person": "Konrad von Thüngen",
+          "personTitle": [
+            "Bishop"
+          ]
+        },
+        {
+          "place": "leuchtenberg"
+        },
+        {
+          "place": "schwarzenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [

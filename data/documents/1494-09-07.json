@@ -9,7 +9,16 @@
       "english": "Elector Philipp of the Palatinate declares that his faithful vassals Count Johann von Wertheim and Jörg Hund (Hundt) [von Wenkheim] have been in discord, feud, and open hostility, which was displeasing to him. At his request, they have reached the following reconciliation: all feud and hostility between the parties and their helpers shall cease, all disputes shall be settled. Neither party shall seek revenge on the other. The prisoners are to be released, assessments, plundering, and unpaid sums are annulled. Count Johann is to restore Jörg to his goods at Urphar (Urferr) and Kembach (Kempach), or give him the tithe share at \"Wergerstetten\" for the yields of Kembach. Regarding their claims, they shall appear before the Count Palatine and his councillors, who will examine the matters within a reasonable time and decide amicably or legally. This peace shall take effect on September 10, 1494 (Wednesday after Nativity) at sunrise. The peace is to be maintained by both parties and their helpers, particularly those of Boxberg (Boxperg) [= von Rosenberg?] and Ripperg (Rieperg) [Rippberg]. Both parties have guaranteed compliance and received a sealed copy of this agreement.\n\nDuration: 1494 September 7 (on Sunday before the feast day of the Exaltation of the Holy Cross)\n\nSealer: Elector Philipp of the Palatinate (secret seal)",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Hans von Wertheim"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wenkheim"
         }
       ],
       "facts": [
@@ -20,6 +29,9 @@
           "mention": [
             {
               "person": "Hans von Wertheim"
+            },
+            {
+              "place": "wenkheim"
             }
           ]
         }
@@ -28,7 +40,12 @@
         {
           "subject": "those of Boxberg named as helpers in the peace agreement",
           "type": "generic",
-          "content": "may refer to the von Rosenberg family, as the archival description itself notes this identification as uncertain."
+          "content": "may refer to the von Rosenberg family, as the archival description itself notes this identification as uncertain.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ],
       "img": [

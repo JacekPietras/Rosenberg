@@ -9,6 +9,7 @@ import { pathToFileURL } from 'node:url';
 import {
   buildSourcePersonPattern, findPersonNameMentions, parsePersonNameTitles, splitPersonNameTitles,
 } from '../../docs/app/data/person-name-recognition.js';
+import { parsePlaces } from '../../docs/app/data/entities.js';
 
 const root = resolve(import.meta.dirname, '../..');
 const check = process.argv.includes('--check');
@@ -17,6 +18,19 @@ const titleText = [await read('data/titles-age.md'), await read('data/titles-off
 const args = [titleText, await read('data/name-connectors.md'), await read('data/nobiliary_particles.md'),
   await read('data/names.md'), await read('data/by-names.md'), JSON.parse(await read('data/places.json'))];
 const pattern = buildSourcePersonPattern(args[3], args[2], args[5], args[0], args[1], args[4]);
+const places = parsePlaces(await read('data/places.json'));
+const placeForms = new Map();
+for (const [index, place] of places.entries()) {
+  const key = place.id || place.name || `@place/${index}`;
+  for (const form of place.variations || []) {
+    if (!placeForms.has(form)) placeForms.set(form, new Set());
+    placeForms.get(form).add(key);
+  }
+}
+const placePatterns = [...placeForms].map(([form, keys]) => ({
+  keys,
+  pattern: new RegExp(`(?<![\\p{L}\\p{N}])${form.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s*,\s*/g, '\\s*,\\s*').replace(/\s+/g, '\\s+')}(?![\\p{L}\\p{N}])`, 'giu'),
+}));
 const knownTitles = parsePersonNameTitles(titleText).sort((left, right) => right.length - left.length);
 const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
 const leadingTitle = knownTitles.length
@@ -32,15 +46,55 @@ function surfaceTitles(text) {
   return [...titles, ...splitPersonNameTitles(rest, titleText).titles];
 }
 
+function recognizePeople(text) {
+  const { coordinated, singles } = findPersonNameMentions(text, ...args, pattern);
+  const spans = [...singles, ...coordinated].map(({ start, end }) => [start, end]);
+  const people = [
+    ...singles.map((item) => ({ person: item.route, titles: surfaceTitles(item.text) })),
+    ...coordinated.flatMap((group) => group.routes.map((person) => ({ person, titles: group.titles }))),
+  ];
+  return { people, spans };
+}
+
+function recognizePlaces(text, spans) {
+  let masked = text;
+  for (const [start, end] of spans) masked = masked.slice(0, start) + ' '.repeat(end - start) + masked.slice(end);
+  const matches = [];
+  for (const { keys, pattern: placePattern } of placePatterns) {
+    for (const match of masked.matchAll(placePattern)) {
+      matches.push({ start: match.index, end: match.index + match[0].length, keys });
+    }
+  }
+  const taken = [];
+  const found = new Set();
+  const byLength = new Map();
+  for (const match of matches) {
+    const key = `${match.start}:${match.end}`;
+    const merged = byLength.get(key) || { ...match, keys: new Set() };
+    match.keys.forEach((value) => merged.keys.add(value));
+    byLength.set(key, merged);
+  }
+  for (const match of [...byLength.values()].sort((a, b) => (b.end - b.start) - (a.end - a.start) || a.start - b.start)) {
+    if (taken.some(([start, end]) => match.start < end && match.end > start)) continue;
+    taken.push([match.start, match.end]);
+    if (match.keys.size === 1) found.add([...match.keys][0]);
+  }
+  return [...found].sort();
+}
+
 export function recognizeMentions(text) {
   if (!pattern || typeof text !== 'string' || !text.trim()) return [];
-  const { coordinated, singles } = findPersonNameMentions(text, ...args, pattern);
-  const found = [
-    ...singles.map((item) => ({ start: item.start, people: [{ person: item.route, titles: surfaceTitles(item.text) }] })),
-    ...coordinated.map((group) => ({ start: group.start, people: group.routes.map((person) => ({ person, titles: group.titles })) })),
-  ].sort((left, right) => left.start - right.start);
-  return found.flatMap((item) => item.people.map(({ person, titles }) => (
-    titles.length ? { person, personTitle: titles } : { person })));
+  const plain = text.replace(/[\[\]]/g, ' ');
+  const { people, spans } = recognizePeople(plain);
+  const items = [
+    ...people.map(({ person, titles }) => (titles.length
+      ? { person, personTitle: [...new Set(titles)].sort() } : { person })),
+    ...recognizePlaces(plain, spans).map((place) => ({ place })),
+  ];
+  const unique = new Map(items.map((item) => [JSON.stringify(item), item]));
+  const name = (item) => item.person ?? item.place;
+  return [...unique.values()].sort((left, right) => name(left).localeCompare(name(right))
+    || JSON.stringify(left).localeCompare(JSON.stringify(right)));
 }
 
 async function jsonFiles(directory) {

@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Asmus von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Asmus von Rosenberg",
           "type": "generic",
-          "content": "made rents, income and rights at Berchtheim, Martinsheim, Gnodstadt and Gülchsheim fiefs of the bishop and foundation of Würzburg."
+          "content": "made rents, income and rights at Berchtheim, Martinsheim, Gnodstadt and Gülchsheim fiefs of the bishop and foundation of Würzburg.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

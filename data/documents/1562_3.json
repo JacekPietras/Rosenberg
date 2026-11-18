@@ -7,11 +7,24 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-4405105",
       "german": "Zwischen Kurpfalz und von Rosenberg strittiges Hagen und Jagen im Ahorn. Gräffingener Schaftrieb auf Gemarkung Buch am Ahorn. Vergleich. Abteilung von Wald und Wiesen im Ahorn\n\nLaufzeit: 1562-1594",
       "english": "Disputed hunting and game rights in the Ahorn between Electoral Palatinate and von Rosenberg. Driving of Gräffingen sheep on the Buch district at Ahorn. Settlement. Division of forest and meadows in the Ahorn\n\nDuration: 1562-1594",
+      "mention": [
+        {
+          "place": "buch"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "subject": "the von Rosenberg family and the Palatinate",
           "type": "generic",
-          "content": "were involved in disputes over hunting and fishing rights in Ahorn and sheep grazing from Gräffingen on Buch am Ahorn land; records also concern a settlement and division of woodland and meadows."
+          "content": "were involved in disputes over hunting and fishing rights in Ahorn and sheep grazing from Gräffingen on Buch am Ahorn land; records also concern a settlement and division of woodland and meadows.",
+          "mention": [
+            {
+              "place": "buch"
+            }
+          ]
         }
       ],
       "img": [

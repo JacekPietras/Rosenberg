@@ -9,6 +9,12 @@
       "english": "The Schultheiss and court of Bobstadt lease the meadows of the Teutonic Order House Mergentheim for six years.\n\nValid period: February 22, 1515 (Cathedra Petri)\n\nSeal description: Seal of Friedrich von Rosenberg of Boxberg",
       "mention": [
         {
+          "place": "bobstadt"
+        },
+        {
+          "place": "boxberg"
+        },
+        {
           "person": "Friedrich von Rosenberg"
         }
       ],

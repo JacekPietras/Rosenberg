@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
@@ -19,7 +22,12 @@
             "Viztum zu Amberg"
           ],
           "type": "generic",
-          "content": "acknowledged a loan to the Burggrafen of Nürnberg."
+          "content": "acknowledged a loan to the Burggrafen of Nürnberg.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ]
         }
       ]
     }

@@ -10,16 +10,18 @@
       "mention": [
         {
           "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "pledged his share of the tithe at Schweigern, held as a fief from the Palatinate, to Hans Schwend for 300 gulden and promised to redeem it within eight years or forfeit it to the Count Palatine."
+          "content": "pledged his share of the tithe at Schweigern, held as a fief from the Palatinate, to Hans Schwend for 300 gulden and promised to redeem it within eight years or forfeit it to the Count Palatine.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         }
       ],
       "img": [

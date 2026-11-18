@@ -9,10 +9,19 @@
       "english": "Settlement of disputes (Commission of the High and German Masters) between Eberhard Rüdt of Collenberg, Hofmeister to Mainz, and Albrecht von Rosenberg of Boxberg regarding authority, jurisdiction, hunting, pasture and cattle drives, wood-gathering rights etc. in the shared villages of Uissigheim, Sachsenflur, Ober- und Unterschüpf.\n\nPeriod: 1549-1560\n\nContains: Contains among others: Commission protocols, listing of incomes, usage rights, properties, and revenues.",
       "mention": [
         {
+          "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "boxberg"
+        },
+        {
           "person": "Eberhard Rüd of Collenberg"
         },
         {
-          "person": "Albrecht von Rosenberg"
+          "place": "uissigheim"
+        },
+        {
+          "place": "unterschuepf"
         }
       ],
       "facts": [
@@ -26,6 +35,9 @@
           "mention": [
             {
               "person": "Eberhard Rüd von Collenberg"
+            },
+            {
+              "place": "unterschuepf"
             }
           ]
         }

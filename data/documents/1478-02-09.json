@@ -12,6 +12,9 @@
           "person": "Georg Arnold von Rosenberg"
         },
         {
+          "place": "kirchheim"
+        },
+        {
           "person": "Michael von Rosenberg"
         }
       ],
@@ -19,7 +22,12 @@
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "was a party to court proceedings brought by the Ritterstift concerning rights in Kirchheim."
+          "content": "was a party to court proceedings brought by the Ritterstift concerning rights in Kirchheim.",
+          "mention": [
+            {
+              "place": "kirchheim"
+            }
+          ]
         }
       ]
     }

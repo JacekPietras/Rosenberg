@@ -11,6 +11,9 @@
       "english": "Among others, Kunz Mönch von Rosenberg, Vogt zu Steinsberg, witnesses a document concerning the castle of Bönnigheim.",
       "mention": [
         {
+          "place": "boennigheim"
+        },
+        {
           "person": "Kunz Mönch von Rosenberg"
         }
       ],
@@ -21,7 +24,12 @@
             "Vogt zu Steinsberg"
           ],
           "type": "generic",
-          "content": "witnessed a document concerning the castle of Bönnigheim."
+          "content": "witnessed a document concerning the castle of Bönnigheim.",
+          "mention": [
+            {
+              "place": "boennigheim"
+            }
+          ]
         }
       ]
     }

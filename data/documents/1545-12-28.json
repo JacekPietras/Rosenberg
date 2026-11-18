@@ -9,13 +9,13 @@
       "english": "1545 Dec. 28 (Mon. after Christmas). Bishop Melchior of Würzburg enfeoffs Lorenz von Rosenberg with half of one quarter of the following fiefs: one-eighth of the tithe at Goßmannsdorf with several men there, one-quarter of the tithe at Hofheim with several men there, one-eighth and half an eighth of the tithe at Niederhohenried and Oberhohenried, one-quarter of the tithe at Junkersdorf with several men there, one-quarter of a quarter of the tithe at Jesserndorf, one-fifth of a quarter of the tithe at Neuses, share of the tithe at Gochsheim, share of the tithe at Goboltzhausen, Poppenhausen and Eurheim, as well as one-third of the tithe at Wachenfeld. The fiefs had fallen to Rosenberg in 1533 by ruling of Bishop Konrad von Thüngen between the brothers Philipp von Rosenberg and Konrad von Rosenberg, Eustachius and Bernhard von Thüngen on one side and Heinz, Balthasar, Joachim and David Truchsesse von Wetzhausen on the other; Sr.: der A.\n\nDate range: 1545 Dec. 28.\n\nExtent: Copy; parchment, 1 p. (verso)",
       "mention": [
         {
-          "person": "Melchior of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "person": "Bernhard von Thüngen"
         },
         {
-          "person": "Lorenz von Rosenberg"
+          "place": "gochsheim-st-michael"
+        },
+        {
+          "person": "Konrad von Rosenberg"
         },
         {
           "person": "Konrad von Thüngen",
@@ -24,13 +24,19 @@
           ]
         },
         {
+          "person": "Lorenz von Rosenberg"
+        },
+        {
+          "person": "Melchior of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
+        },
+        {
           "person": "Philipp von Rosenberg"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Bernhard von Thüngen"
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -39,6 +45,9 @@
           "type": "generic",
           "content": "received half of one quarter of tithes and other fiefs from Bishop Melchior of Würzburg, including tithes at Goßmannsdorf, Hofheim, Niederhohenried, Oberhohenried, Junkersdorf, Jesserndorf, Neuses, Gochsheim, Goboltzhausen, Poppenhausen, Eurheim and Wachenfeld.",
           "mention": [
+            {
+              "place": "gochsheim-st-michael"
+            },
             {
               "person": "Melchior of Würzburg",
               "personTitle": [

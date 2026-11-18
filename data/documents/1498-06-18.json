@@ -12,14 +12,19 @@
           "person": "Philipp von Rosenberg"
         },
         {
-          "person": "Philipp von Rosenberg"
+          "place": "speyer"
         }
       ],
       "facts": [
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "as cathedral cantor of Speyer and patron of the Martinenses’ benefices consented to their rules for rotating administration."
+          "content": "as cathedral cantor of Speyer and patron of the Martinenses’ benefices consented to their rules for rotating administration.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ]
         },
         {
           "person": "Philipp von Rosenberg",

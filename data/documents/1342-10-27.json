@@ -12,6 +12,9 @@
       "mention": [
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -23,7 +26,12 @@
         {
           "person": "Kunigunde von Lißberg",
           "type": "generic",
-          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons."
+          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons.",
+          "mention": [
+            {
+              "place": "lissberg"
+            }
+          ]
         },
         {
           "person": "Kunigunde von Lißberg",
@@ -47,6 +55,18 @@
       "english": "King Ludwig declares: While he was sitting in court in Würzburg, Kunigunde von Lißberg, wife of Eberhard von Rosenberg, appeared before him as his advocate (she came to us as her advocate, as we were sitting in court in Würzburg [...]). By the unanimous judgment of the lords and Ritter present, the fortresses of Lißberg and Bracht with all appurtenances, along with other inheritances of her father, were awarded to her (and granted in a fair and just manner, as the lords and Ritter issued their unanimous judgment), with the proviso that her brother Hermann may not alienate or encumber this inheritance without her consent. Thereupon, she transferred this inheritance, with all rights, to her sons Engelhard, Hans, and Hermann [von Hirschhorn], according to the corresponding judgment (after which she gave the inheritance to us willingly and irrevocably, in good faith and in good faith, as granted [...] so that they may do with it their own free will and exactly what they know is good and useful).",
       "mention": [
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Engelhard von Hirschhorn"
+        },
+        {
+          "person": "Hans von Hirschhorn"
+        },
+        {
+          "person": "Herman von Hirschhorn"
+        },
+        {
           "person": "König Ludwig",
           "personTitle": [
             "King"
@@ -56,7 +76,10 @@
           "person": "Kunigunde von Lißberg"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "lissberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -68,7 +91,12 @@
         {
           "person": "Kunigunde von Lißberg",
           "type": "generic",
-          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons."
+          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons.",
+          "mention": [
+            {
+              "place": "lissberg"
+            }
+          ]
         },
         {
           "person": "Kunigunde von Lißberg",

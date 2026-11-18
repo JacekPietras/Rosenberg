@@ -10,6 +10,12 @@
       "mention": [
         {
           "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "Heideck"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [
@@ -21,7 +27,12 @@
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "obtained a decision from the cathedral dean of Speyer granting the Hubhof at Nußdorf to the Schultheiß’s son and his wife."
+          "content": "obtained a decision from the cathedral dean of Speyer granting the Hubhof at Nußdorf to the Schultheiß’s son and his wife.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ]
         }
       ],
       "img": [

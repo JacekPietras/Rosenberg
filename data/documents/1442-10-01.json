@@ -9,10 +9,13 @@
       "english": "Kunz von Rosenberg of Klingenberg disputed with Selant Langmantlin of Augsburg, widow of his brother Hans von Rosenberg, over a Bible from Hans's estate. The council of Rothenburg ob der Tauber mediated an agreement: Selant was to hand the Bible to Cunz for return on the Feast of the Chair of St Peter; if she died, it would pass to Cunz or his heirs. Cunz sealed the document.",
       "mention": [
         {
+          "person": "Hans von Rosenberg"
+        },
+        {
           "person": "Kunz von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "rothenburg"
         }
       ],
       "facts": [

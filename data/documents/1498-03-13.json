@@ -8,6 +8,9 @@
       "english": "The mayor, Schultheiß and municipality of Boxberg give Georg von Rosenberg, Ritter estates that belong to his farm in Boxberg and which they had bought from him to repurchase and acknowledge 538 guilders.",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Georg von Rosenberg",
           "personTitle": [
             "Ritter"
@@ -25,7 +28,12 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "received back from Boxberg’s mayor, Schultheiß, and community goods belonging to his farm that they had previously bought from him in a transaction valued at 538 guilders."
+          "content": "received back from Boxberg’s mayor, Schultheiß, and community goods belonging to his farm that they had previously bought from him in a transaction valued at 538 guilders.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Georg von Rosenberg",

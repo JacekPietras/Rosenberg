@@ -10,6 +10,9 @@
       "english": "Archbishop Heinrich declares that the priest and cellarer Peter at Bischofsheim has accounted for all income and expenses of his office during the period from December 2, 1340 (Saturday after Andrew) to February 17, 1342 (Dominican Invocavit) with the vogts Eberhard von Rosenberg (-sin-) in Dürn and Cunrad Rüdt (Ruden) in Bischofsheim (-fis-), the cleric Conrad Spigel, vicar of the Aschaffenburg church, and the archiepiscopal notaries Heinrich Beyer and Ludwig of Amöneburg, and that Peter, after considering the final settlement, still owes the archbishop: in money 21 shillings Heller, in wheat 48½ malter, in grain 142½ malter, in barley 32 malter, in spelt 6 malter, in peas ½ malter, in wine 26 fuder 1 ohm (ama), in chickens 18 pieces, in tallow (sepo) 32 talents.",
       "mention": [
         {
+          "place": "bischofsheim"
+        },
+        {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "vogts"
@@ -17,6 +20,9 @@
         },
         {
           "person": "Konrad Rüd"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [
@@ -28,6 +34,9 @@
           "type": "generic",
           "content": "received the accounts of Peter, cellarer at Bischofsheim, with Konrad Rüdt and other officials.",
           "mention": [
+            {
+              "place": "bischofsheim"
+            },
             {
               "person": "Konrad Rüd"
             }

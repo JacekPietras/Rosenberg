@@ -12,22 +12,25 @@
       "english": "Jörg von Ellrichshausen (Elrichßhawsen), Canon of Würzburg (Wirtzpurg) and District Judge of the Duchy of Franconia (Franncken), certifies that before him Johann Mütichin, attorney for Lord Rudolf, Bishop of Würzburg and Duke of Truchseß (Truchssess) of Waldmannshofen (Waltmanßhofen), and Lord Asmus von Rosenberg and the brothers Arnold von Rosenberg and Michael von Rosenberg have taken Wilhelm Sützel into custody and are holding him prisoner, whereby Wilhelm Sützel had previously taken Hans Truchseß captive; furthermore, Johann Mütichin states that Hans Mor of Rotzbach (Retzpach) and Michael von Rosenberg cannot be summoned in this matter, as they have left the country. The District Judge renders a decision in this matter, after the royal Reformation at Frankfurt (Franckfurt) had already taken up the case.\n\nDuration: 1468 August 20 (on Saturday after the Assumption of Mary)\n\nSeal: Jörg von Ellrichshausen, Canon of Würzburg and District Judge of the Duchy of Franconia",
       "mention": [
         {
-          "person": "Rudolf of Würzburg"
-        },
-        {
-          "person": "Asmus von Rosenberg"
-        },
-        {
           "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Michael von Rosenberg"
+          "person": "Asmus von Rosenberg"
         },
         {
           "person": "Hans Truchsess"
         },
         {
           "person": "Michael von Rosenberg"
+        },
+        {
+          "person": "Rudolf of Würzburg"
+        },
+        {
+          "place": "waldmannshofen"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -38,6 +41,9 @@
           "mention": [
             {
               "person": "Hans Truchsess"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         },
@@ -48,6 +54,9 @@
           "mention": [
             {
               "person": "Hans Truchsess"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         },
@@ -58,6 +67,9 @@
           "mention": [
             {
               "person": "Hans Truchsess"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         }

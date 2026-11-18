@@ -10,7 +10,22 @@
       "english": "Furthermore, because Sebastian von Abelsheim, Georg von Rosenberg, and Moritz Zobel held several fiefs from the Palatinate as possessors of the house of Lauda, Philipp, Pfalzgraf, referred them to Bishop Lorenz von Bibra and ordered them henceforth to receive those fiefs from him and his successors. Done on Tuesday after St Lawrence’s Day, 1505. Recorded in the second register of Lorenz’s contracts, fol. 8. The later marginal hand lists additional places, including one written as `Heidpruke`, which remains unidentified here. The archive summary identifies the holdings as including Distelhausen, Großrinderfeld, Königheim, Hardheim, Gerlachsheim (the monastery village), Mützenbrunn, Ober- and Niederwittstadt, Bretzingen, Höpfingen, Waldstetten, Schweinberg, Erfeld, Steinfurt, Dornberg, Vollmersdorf, and Rütschdorf.",
       "mention": [
         {
+          "place": "bretzingen"
+        },
+        {
+          "place": "burg-schweinberg"
+        },
+        {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "hartheim"
+        },
+        {
+          "place": "koenigheim"
+        },
+        {
+          "place": "lauda"
         },
         {
           "person": "Lorenz von Bibra",
@@ -25,6 +40,9 @@
           "type": "generic",
           "content": "held several fiefs from the Palatinate as holder of Haus Lauda and was directed by Pfalzgraf Philipp to receive them from Lorenz von Bibra, Bischof, and his successors.",
           "mention": [
+            {
+              "place": "lauda"
+            },
             {
               "person": "Lorenz von Bibra",
               "personTitle": [

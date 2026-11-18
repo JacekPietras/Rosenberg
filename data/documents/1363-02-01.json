@@ -12,10 +12,16 @@
       "english": "Gotz vom Ryn, Ritter, and his wife Margreth, with the consent of Katherin, Gotz’s daughter by his first wife, sell to Eberhard Schenk von Rosenberg, Ritter, two farms at Retzstadt held in fief from Michelsberg Abbey, a meadow at Thüngen, tallow rents at Stetten and Volkach, and other properties at Retzstadt, for 400 pounds Heller. Guarantors: Konrad von Gattenhofen of Baldersheim, Lutz Truchseß von Baldersheim der Alte, and Hans Truchseß von Baldersheim, all Edelknechte. Original date: the eve of Candlemas.",
       "mention": [
         {
+          "place": "baldersheim"
+        },
+        {
           "person": "Eberhard Schenk von Rosenberg",
           "personTitle": [
             "Ritter"
           ]
+        },
+        {
+          "person": "Hans Truchsess von Baldersheim"
         },
         {
           "person": "Ludwig Truchsess von Baldersheim",
@@ -24,7 +30,10 @@
           ]
         },
         {
-          "person": "Hans Truchsess von Baldersheim"
+          "place": "michelsberg"
+        },
+        {
+          "place": "thuengen"
         }
       ],
       "img": [

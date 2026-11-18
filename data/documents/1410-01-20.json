@@ -11,10 +11,13 @@
       "english": "1410 January 20, place not stated. Hans von Rosenberg and his wife Else Marschalkin von Bappenheim sell their house, courtyard, and associated property with its garden, located in Heidelberg outside the Upper Gate on the Neckar beside Elachhensel’s garden, to Lord Wilhelm, physician to our lord the Roman King, for 145 florins. (See April 23.)",
       "mention": [
         {
+          "person": "Elisabeth Marschalk von Bappenheim"
+        },
+        {
           "person": "Hans von Rosenberg"
         },
         {
-          "person": "Elisabeth Marschalk von Bappenheim"
+          "place": "heidelberg"
         }
       ],
       "facts": [
@@ -25,6 +28,9 @@
           "mention": [
             {
               "person": "Elisabeth Marschalk von Bappenheim"
+            },
+            {
+              "place": "heidelberg"
             }
           ]
         }

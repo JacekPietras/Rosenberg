@@ -10,16 +10,19 @@
       "english": "At Mid-Lent in 1542, Bishop Konrad von Bibra, with the consent of his cathedral chapter, sold Georg von Leutzenbronn, his lawful wife Juliane (née von Rosenberg), and their lawful heirs an annual rent of 100 florins in good common currency, reckoned at 18 batzen or 15 twelve-pfennig coins per florin, from the chamber revenues, for 2,000 gold florins. Juliane had previously lent that sum to Count Wilhelm von Henneberg at interest; the amount was now to be offset against the purchase price of Amt Mainberg. If payment failed, Konrad pledged to the couple the bishopric’s dues, rents, revenues, proceeds, and income from the village of Baldersheim. The pledge was redeemable on one year’s notice before Laetare. Recorded in the second register of Conrad’s contracts, fol. 124. Marginal note: see Baldersheim, volume 1, fol. 38.",
       "mention": [
         {
-          "person": "Konrad von Bibra",
-          "personTitle": [
-            "Bishop"
-          ]
+          "place": "baldersheim"
         },
         {
           "person": "Georg von Leutzenbronn"
         },
         {
           "person": "Juliana von Rosenberg"
+        },
+        {
+          "person": "Konrad von Bibra",
+          "personTitle": [
+            "Bishop"
+          ]
         }
       ],
       "facts": [
@@ -38,6 +41,9 @@
           "type": "generic",
           "content": "was granted, with her husband Georg von Leutzenbronn and their heirs, an annual rent of 100 florins from the chamber revenues, secured on the revenues of Baldersheim.",
           "mention": [
+            {
+              "place": "baldersheim"
+            },
             {
               "person": "Georg von Leutzenbronn"
             }

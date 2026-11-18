@@ -9,9 +9,6 @@
       "english": "Legal dispute between Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg on the one hand and the independent heirs of Konrad von Rosenberg the Elder regarding the village of Bofsheim.",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
@@ -22,6 +19,9 @@
           "personTitle": [
             "the Elder"
           ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
         }
       ],
       "facts": [

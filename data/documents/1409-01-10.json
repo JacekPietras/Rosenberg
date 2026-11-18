@@ -8,10 +8,19 @@
       "english": "Fritze Stumph von Swymburg and Kunne, his wife, sold their estates and land in Schweinberg to Countess Ute von Wertheim, Duchess of Teck, for 240 florins. These lands and lands had been purchased by the deceased father, Heinrich Stumpff von Schweinberg, from Engelhard von Rosenberg and Eberhard von Rosenberg, and which were granted as a fief by the Würzburg Abbey. (see StAWt-G Rep. 5 Lade XI S No. 4)",
       "mention": [
         {
-          "person": "Engelhard von Rosenberg"
+          "place": "burg-schweinberg"
         },
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Engelhard von Rosenberg"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -27,17 +36,28 @@
           "content": "had purchased the estates and revenues at Schweinberg from Engelhard and Eberhard von Rosenberg.",
           "mention": [
             {
-              "person": "Engelhard von Rosenberg"
+              "place": "burg-schweinberg"
             },
             {
               "person": "Eberhard von Rosenberg"
+            },
+            {
+              "person": "Engelhard von Rosenberg"
             }
           ]
         },
         {
           "person": "Friedrich Stumph von Swymburg",
           "type": "generic",
-          "content": "sold estates and revenues at Schweinberg that were held as fiefs from Würzburg Abbey."
+          "content": "sold estates and revenues at Schweinberg that were held as fiefs from Würzburg Abbey.",
+          "mention": [
+            {
+              "place": "burg-schweinberg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ],
       "img": [

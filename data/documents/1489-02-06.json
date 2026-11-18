@@ -9,6 +9,9 @@
       "english": "At the request of the priest Johann, Wok von Rosenberg frees the Rosenberg parish lands from all dues and services burdening them.\n\nSeal: The seal, damaged and made of red wax, hangs from a parchment strip and has already been described above.",
       "mention": [
         {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Wok von Rosenberg"
         }
       ],

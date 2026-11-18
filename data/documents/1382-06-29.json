@@ -9,6 +9,9 @@
       "english": "Letter of repudiation from Weyreich von Truchtlingen, Hans von Plaunheim (Plawenheim), Kunz von Rosenberg, Wilhelm von Huenheim (?), and Ras von Helmstat to Bishop Pilgrim.",
       "mention": [
         {
+          "place": "helmstadt"
+        },
+        {
           "person": "Kunz von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "sent an Absagebrief with Weyreich von Truchtlingen, Hans von Plaunheim, Wilhelm von Huenheim and Ras von Helmstatt to Archbishop Pilgrim."
+          "content": "sent an Absagebrief with Weyreich von Truchtlingen, Hans von Plaunheim, Wilhelm von Huenheim and Ras von Helmstatt to Archbishop Pilgrim.",
+          "mention": [
+            {
+              "place": "helmstadt"
+            }
+          ]
         }
       ],
       "img": [

@@ -13,6 +13,9 @@
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "boxberg"
         }
       ],
       "facts": [
@@ -23,7 +26,12 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "was involved in a dispute with the Swabian League and Kurfürst Friedrich of the Palatinate over Burg and Amt Boxberg."
+          "content": "was involved in a dispute with the Swabian League and Kurfürst Friedrich of the Palatinate over Burg and Amt Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ]
     }

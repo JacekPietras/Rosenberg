@@ -10,19 +10,31 @@
       "english": "Before this, Schloss and Stadt Boxberg, together with other appurtenances, belonged to the chamber office. A struck-out passage says that the lords of Boxberg had received and held the office from the bishopric as chamberlains of the duchy. The transcription then recounts that, after the pope expelled the Templars, their houses and goods were entrusted to the brothers of the Teutonic Order and the Order of St John. It says that the Templars living at Wölchingen near Boxberg were also expelled and the Johanniter installed in their place. Konrad von Boxberg bequeathed Schloss and Stadt Boxberg to them. His son Konrad’s guardians negotiated with Bishop Berthold von Sternberg, who granted Boxberg to the Johanniter and accepted Schloss Schweinberg in exchange as an appurtenance of the chamber office. The transcription contains numerous deletions and insertions. The archive summary identifies Pope Clement V as the pope who suppressed the Templars.\n\nEditorial note: The original is in the State Archives of Würzburg, W.U. 8262–8264. A crossed-out reference to ldf 1 corresponds to Hoffmann, Das älteste Lehenbuch, no. 562, p. 74. Kraft von Hohenlohe, guardian of the brothers Kraft, Gerhard, and Konrad von Boxberg, sold the castle and its suburb to the Johanniter of Wölchingen. They later moved their commandery seat there, but sold Boxberg back to the knights von Rosenberg in 1381. See the LEO-BW local history entry for Boxberg.",
       "mention": [
         {
-          "person": "Konrad von Boxberg"
+          "place": "boxberg"
         },
         {
-          "person": "Kraft von Hohenlohe"
-        },
-        {
-          "person": "Kraft von Boxberg"
+          "place": "burg-schweinberg"
         },
         {
           "person": "Gerhard von Boxberg"
         },
         {
           "person": "Konrad von Boxberg"
+        },
+        {
+          "person": "Kraft von Boxberg"
+        },
+        {
+          "person": "Kraft von Hohenlohe"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wolchingen"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -30,6 +42,14 @@
           "subject": "Boxberg",
           "type": "generic",
           "content": "was sold back to the knights von Rosenberg by the Johanniter of Wölchingen in 1381.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1381"
         }
       ],

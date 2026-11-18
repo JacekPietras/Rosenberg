@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "handschuhsheim"
         }
       ],
       "facts": [
@@ -23,6 +26,9 @@
           "mention": [
             {
               "person": "Friedrich von Handschuhsheim"
+            },
+            {
+              "place": "handschuhsheim"
             },
             {
               "person": "Heinrich von Handschuhsheim"

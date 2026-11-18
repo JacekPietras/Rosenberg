@@ -9,6 +9,12 @@
       "english": "Rothenburg to Herrieden Abbey: Involvement of the abbey's dependents in the damage inflicted upon Zaisolph von Rosenberg during the Peasants' War.",
       "mention": [
         {
+          "place": "herrieden"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +22,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was reportedly harmed by subjects of Stift Herrieden during the Peasants’ War."
+          "content": "was reportedly harmed by subjects of Stift Herrieden during the Peasants’ War.",
+          "mention": [
+            {
+              "place": "herrieden"
+            }
+          ]
         }
       ]
     }

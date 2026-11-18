@@ -9,7 +9,7 @@
       "english": "The dean and chapter of the St. Julian's Canonry at Mosbach and Götz von Berlichingen of Hornberg declare that they have amicably and legally settled their dispute regarding the great and small tithes from the Hof Stockbronn, \"the broad tithe of the goods called broad, located in Zimerer mark,\" regarding the small tithe within Hornberg Castle, and regarding the tithe on everything cultivated at Hornberg Castle or by the peasants on the mountain behind the castle, with the approval of Elector Ludwig [V.] of the Palatinate through Bishop Georg of Speyer, the feudal lord of Hornberg Castle, respectively his counselors. It was proposed that the canonry cede to Berlichingen the disputed tithes and Berlichingen pay the canonry 100 gulden in return. Based on this disposition, following negotiations by Melchior Stangs, citizen of Mosbach, and upon intervention of Berlichingen's wife Dorothea, the following agreement was reached: The canonry cedes to Berlichingen and his heirs all the aforementioned tithes. Additionally, the canonry delivers to Berlichingen the princely contract drawn up in Stuttgart between Konrad Schott, knight, and the Mosbach Canonry, according to which the aforementioned tithes should revert to the canonry after Konrad's death; this contract is henceforth null and void. Götz von Berlichingen pays the canonry 50 gulden; furthermore, he grants the canonry the tithe from his vineyards and fields in Neckarzimmerer territory \"in der Awe,\" as stipulated by the Stuttgart contract. Regarding the tithe from the cleared land converted to vineyards (Egerten), which both sides claimed for themselves, the Elector of the Palatinate, his counselors, or an arbitration court shall decide, \"without prejudice to young Lorentz von Rosenberg, who also holds a share of the wine tithe.\"\n\nDuration: August 28, 1525 (on St. Augustine's Day)\n\nSeals: Dean and chapter with the canonry seal; Götz von Berlichingen",
       "mention": [
         {
-          "person": "Götz von Berlichingen"
+          "place": "berlichingen"
         },
         {
           "person": "Georg of Speyer",
@@ -21,7 +21,13 @@
           "person": "Götz von Berlichingen"
         },
         {
-          "person": "Götz von Berlichingen"
+          "place": "hornberg"
+        },
+        {
+          "place": "mosbach-st-juliana"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -31,10 +37,10 @@
           "content": "held a share in the wine tithe at issue in the settlement between the Stift St. Juliana in Mosbach and Götz von Berlichingen.",
           "mention": [
             {
-              "person": "Juliana in Mosbach"
+              "person": "Götz von Berlichingen"
             },
             {
-              "person": "Götz von Berlichingen"
+              "person": "Juliana in Mosbach"
             }
           ]
         }

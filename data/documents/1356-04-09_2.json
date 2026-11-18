@@ -12,6 +12,9 @@
           "personTitle": [
             "Ritter"
           ]
+        },
+        {
+          "place": "sailach"
         }
       ],
       "facts": [
@@ -37,7 +40,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "pledged his estate at Sailach to the Teutonic House at Mergentheim as security for his service as a Burgmann."
+          "content": "pledged his estate at Sailach to the Teutonic House at Mergentheim as security for his service as a Burgmann.",
+          "mention": [
+            {
+              "place": "sailach"
+            }
+          ]
         },
         {
           "person": "Gotfried von Hanau",

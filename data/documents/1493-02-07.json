@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Philipp von Rosenberg"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "as provost of St. German in Speyer confirmed the endowment of the early Mass at Malsch."
+          "content": "as provost of St. German in Speyer confirmed the endowment of the early Mass at Malsch.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ]
         }
       ]
     }

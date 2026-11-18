@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "rothenburg"
         }
       ],
       "facts": [
@@ -19,7 +22,12 @@
             "Amtmann zu Röttingen und Regelberg"
           ],
           "type": "generic",
-          "content": "interceded with Rothenburg on behalf of his serf Lutz Kutterolf."
+          "content": "interceded with Rothenburg on behalf of his serf Lutz Kutterolf.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

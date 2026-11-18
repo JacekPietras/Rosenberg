@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "surrendered his quarter share of Veste Rosenberg and its forecourt to the Count Palatine as a fief."
+          "content": "surrendered his quarter share of Veste Rosenberg and its forecourt to the Count Palatine as a fief.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     }

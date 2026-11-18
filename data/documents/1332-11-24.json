@@ -11,71 +11,62 @@
       "english": "Arnold von Uissigheim der Ältere, Ritter, Arnold von Uissigheim der Jüngere, Ritter, and Heinrich von Uissigheim and Eberhard von Uissigheim, brothers of Arnold von Uissigheim der Jüngere, have made an agreement with Rudolf IV, Count of Wertheim, with whom Arnold von Uissigheim der Jüngere had been in dispute. Arnold von Uissigheim der Jüngere swears that he will leave the territory by the coming Candlemas for ten years, stay at least forty miles from Wertheim, and not return before the ten years have elapsed without the count’s permission. The four men von Uissigheim swear that they will never obstruct the safe conduct of Count Rudolf and his heirs. If they do, they must enter Wertheim when summoned and remain there until the matter is settled amicably or by law. They and the six men named below swear a ten-year Urfehde. The six are Wilhelme and Konrad der Ältere auf der Niderbusch from Aschhausen, Chunz Rude, son of Sir Wiprecht Rude, Eberhard Rude, son of Sir Eberhard Rude, Konrad von Uissigheim, Ernn Erkinger von Uissigheim, his brother, and Wiprecht von Rosenberg, Knecht. Anyone who breaks the Urfehde must enter Wertheim within eight days when summoned and remain there until the matter is settled. Anyone among the four or six who has a claim against the counts or their people must bring it in Wertheim within one month, where the castle retainers will decide it. The count must carry out the judgment within the following month; otherwise the claimant may seize his property. Witnesses are Johann von Rydern, Eberhard von Rosenberg, Vogt zu Dürn, and Arnold von Rosenberg, Ritter. The four, the six, and the witnesses seal the agreement.",
       "mention": [
         {
-          "person": "Arnold von Uissigheim",
+          "person": "Arnold von Rosenberg",
           "personTitle": [
-            "der Ältere",
             "Ritter"
           ]
         },
         {
           "person": "Arnold von Uissigheim",
           "personTitle": [
-            "der Jüngere",
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Heinrich von Uissigheim"
-        },
-        {
-          "person": "Eberhard von Uissigheim"
-        },
-        {
-          "person": "Arnold von Uissigheim",
-          "personTitle": [
             "der Jüngere"
           ]
         },
         {
           "person": "Arnold von Uissigheim",
           "personTitle": [
-            "der Jüngere"
+            "Ritter",
+            "der Ältere"
           ]
         },
         {
           "person": "Arnold von Uissigheim",
           "personTitle": [
+            "Ritter",
             "der Jüngere"
           ]
-        },
-        {
-          "person": "Wiprecht Rüd"
         },
         {
           "person": "Eberhard Rüd"
-        },
-        {
-          "person": "Eberhard Rüd"
-        },
-        {
-          "person": "Konrad von Uissigheim"
-        },
-        {
-          "person": "Erkinger von Uissigheim"
-        },
-        {
-          "person": "Wiprecht von Rosenberg",
-          "personTitle": [
-            "Knecht"
-          ]
         },
         {
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Arnold von Rosenberg",
+          "person": "Eberhard von Uissigheim"
+        },
+        {
+          "person": "Erkinger von Uissigheim"
+        },
+        {
+          "person": "Heinrich von Uissigheim"
+        },
+        {
+          "person": "Konrad von Uissigheim"
+        },
+        {
+          "place": "uissigheim"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        },
+        {
+          "person": "Wiprecht Rüd"
+        },
+        {
+          "person": "Wiprecht von Rosenberg",
           "personTitle": [
-            "Ritter"
+            "Knecht"
           ]
         }
       ],
@@ -83,21 +74,21 @@
         {
           "person": "Arnold von Uissigheim",
           "personTitle": [
-            "der Ältere",
-            "Ritter"
+            "Ritter",
+            "der Ältere"
           ],
           "type": "parent",
           "of": "Arnold von Uissigheim",
           "ofTitle": [
-            "der Jüngere",
-            "Ritter"
+            "Ritter",
+            "der Jüngere"
           ]
         },
         {
           "person": "Arnold von Uissigheim",
           "personTitle": [
-            "der Jüngere",
-            "Ritter"
+            "Ritter",
+            "der Jüngere"
           ],
           "type": "sibling",
           "of": "Heinrich von Uissigheim"
@@ -105,8 +96,8 @@
         {
           "person": "Arnold von Uissigheim",
           "personTitle": [
-            "der Jüngere",
-            "Ritter"
+            "Ritter",
+            "der Jüngere"
           ],
           "type": "sibling",
           "of": "Eberhard von Uissigheim"
@@ -122,7 +113,15 @@
             "Knecht"
           ],
           "type": "generic",
-          "content": "swore a ten-year Urfehde with the other named participants in the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim."
+          "content": "swore a ten-year Urfehde with the other named participants in the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            },
+            {
+              "place": "wertheim-stiftskirche"
+            }
+          ]
         },
         {
           "person": "vogt_zu_Durn",
@@ -130,7 +129,15 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "witnessed the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim."
+          "content": "witnessed the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            },
+            {
+              "place": "wertheim-stiftskirche"
+            }
+          ]
         },
         {
           "person": "Arnold von Rosenberg",
@@ -138,7 +145,15 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "witnessed the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim."
+          "content": "witnessed the agreement between the men of Uissigheim and Rudolf IV, Count of Wertheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            },
+            {
+              "place": "wertheim-stiftskirche"
+            }
+          ]
         }
       ]
     }

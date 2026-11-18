@@ -11,14 +11,23 @@
       "mention": [
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "mosbach-st-juliana"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "Ritter",
-            "Amtmann zu Dürn"
+            "Amtmann zu Dürn",
+            "Ritter"
           ],
           "type": "generic",
           "content": "was designated with Burchard Sturmfeder to appoint a third arbitrator if Albrecht der Hofwart and Konrad von Helmstad were prevented from acting in a dispute between the people of Ulrich von Wirtemberg and Baldewin of Mainz."

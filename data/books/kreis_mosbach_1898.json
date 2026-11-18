@@ -21,6 +21,11 @@
           "person": "Kraft von Boxberg",
           "type": "generic",
           "content": "made the first donation there to the Hospitallers of Wölchingen.",
+          "mention": [
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1191"
         },
         {
@@ -35,6 +40,11 @@
           "person": "Kraft von Boxberg",
           "type": "generic",
           "content": "may have held Angelthürn as one of the Lords of Boxberg before making the first donation there to the Johanniter in 1191.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1191"
         }
       ]
@@ -48,12 +58,28 @@
           "subject": "The Johanniter of Wölchingen",
           "type": "generic",
           "content": "transferred Bobstadt with Boxberg to the von Rosenberg family.",
+          "mention": [
+            {
+              "place": "bobstadt"
+            },
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1381"
         },
         {
           "subject": "The von Rosenberg family",
           "type": "generic",
           "content": "accepted its half of Bobstadt as a Kurpfalz fief.",
+          "mention": [
+            {
+              "place": "bobstadt"
+            }
+          ],
           "date": "1578"
         },
         {
@@ -74,12 +100,28 @@
           "person": "Heinrich von Boxberg",
           "type": "generic",
           "content": "transferred Boxberg Castle and village to the Würzburg foundation.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1213"
         },
         {
           "person": "Heinrich von Boxberg",
           "type": "generic",
           "content": "received Boxberg Castle and village back as a fief from the Würzburg foundation.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1213"
         },
         {
@@ -89,6 +131,17 @@
           ],
           "type": "generic",
           "content": "acquired Boxberg Castle and town from the Hospitallers of Wölchingen as one of four Rosenberg purchasers.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1381-05-25"
         },
         {
@@ -98,6 +151,17 @@
           ],
           "type": "generic",
           "content": "acquired Boxberg Castle and town from the Hospitallers of Wölchingen as one of four Rosenberg purchasers.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1381-05-25"
         },
         {
@@ -107,6 +171,17 @@
           ],
           "type": "generic",
           "content": "acquired Boxberg Castle and town from the Hospitallers of Wölchingen as one of four Rosenberg purchasers.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1381-05-25"
         },
         {
@@ -116,30 +191,64 @@
           ],
           "type": "generic",
           "content": "acquired Boxberg Castle and town from the Hospitallers of Wölchingen as one of four Rosenberg purchasers.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1381-05-25"
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "held Boxberg when the Palatinate, Mainz, and Würzburg besieged the town and castle.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1470"
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "was restored to the lordship of Boxberg on condition that the damaged fortress not be rebuilt.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1477"
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "began construction of a new castle at Boxberg, whose foundation stone was laid on the Wednesday before Mid-Lent.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1480"
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "had his new castle at Boxberg captured and burned by the Swabian League.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1523-06-14"
         },
         {
@@ -149,6 +258,11 @@
           ],
           "type": "generic",
           "content": "regained possession of the Boxberg property taken from his family despite opposition from the Palatinate.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1547"
         },
         {
@@ -158,12 +272,22 @@
           ],
           "type": "generic",
           "content": "laid the foundation stone of a third castle at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1547"
         },
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
           "content": "ceded Boxberg Castle, town, and district to the Electorate of the Palatinate.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1561"
         },
         {
@@ -180,6 +304,9 @@
           "content": "may have been the wife of the later Konrad von Boxberg; the Comburg donation book records her as the wife of a Konrad around 1100 (Württembergisches Urkundenbuch, I, no. A21).",
           "mention": [
             {
+              "place": "comburg-stiftskirche"
+            },
+            {
               "person": "Konrad von Boxberg"
             }
           ],
@@ -189,6 +316,11 @@
           "person": "Konrad von Rosenberg",
           "type": "generic",
           "content": "may have been a brother of the other three purchasers of Boxberg in 1381; the book gives no documentary basis for this relationship.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1381-05-25"
         },
         {
@@ -267,6 +399,11 @@
           "person": "Rosenberg Castle",
           "type": "generic",
           "content": "may have been the ancestral castle of the von Rosenberg family, which was first attested in 1276.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1276"
         }
       ]
@@ -285,10 +422,13 @@
           "content": "with Jörg von Rosenberg and Arnold Friedrich von Rosenberg granted Boxberg a weekly market to be held on Saturdays.",
           "mention": [
             {
-              "person": "Georg von Rosenberg"
+              "person": "Arnold Friedrich von Rosenberg"
             },
             {
-              "person": "Arnold Friedrich von Rosenberg"
+              "place": "boxberg"
+            },
+            {
+              "person": "Georg von Rosenberg"
             }
           ],
           "date": "1479"
@@ -299,10 +439,13 @@
           "content": "with Michel von Rosenberg and Arnold Friedrich von Rosenberg granted Boxberg a weekly market to be held on Saturdays.",
           "mention": [
             {
-              "person": "Michael von Rosenberg"
+              "person": "Arnold Friedrich von Rosenberg"
             },
             {
-              "person": "Arnold Friedrich von Rosenberg"
+              "place": "boxberg"
+            },
+            {
+              "person": "Michael von Rosenberg"
             }
           ],
           "date": "1479"
@@ -313,10 +456,13 @@
           "content": "with Michel and Jörg von Rosenberg granted Boxberg a weekly market to be held on Saturdays.",
           "mention": [
             {
-              "person": "Michael von Rosenberg"
+              "place": "boxberg"
             },
             {
               "person": "Georg von Rosenberg"
+            },
+            {
+              "person": "Michael von Rosenberg"
             }
           ],
           "date": "1479"
@@ -339,18 +485,33 @@
           "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "began construction of the second castle at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1480"
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "saw the second castle he had begun at Boxberg reduced to ruins by this year.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1523"
         },
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
           "content": "laid the foundation stone of the third castle at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1547"
         },
         {
@@ -479,6 +640,11 @@
           "subject": "The von Rosenberg property at Brehmen",
           "type": "generic",
           "content": "passed to Würzburg.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1640"
         }
       ]
@@ -504,6 +670,11 @@
           "person": "Margaretha von Rosenberg",
           "type": "generic",
           "content": "may have been recorded in the Bronnbach liber mortuorum on 19 May 1418; her epitaph instead gives Wednesday after Pentecost, so the exact day remains uncertain.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ],
           "date": "1418"
         }
       ]
@@ -532,12 +703,22 @@
           ],
           "type": "generic",
           "content": "may have donated the Eulschirben mill to Bronnbach in 1397, according to the Series Abbatum; the book presents this account as conflicting with Kraemer’s account of 1320.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ],
           "date": "1397"
         },
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
           "content": "may have acquired the Eulschirben mill for Bronnbach by exchange, according to Kraemer; the book presents this account as conflicting with the Series Abbatum’s account of 1397.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ],
           "date": "1320"
         }
       ]
@@ -577,6 +758,14 @@
           "person": "Margaretha von Uissigheim",
           "type": "generic",
           "content": "sold the farm she shared with Stephan von der Thann at Uissigheim to Bronnbach Monastery.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1457"
         },
         {
@@ -585,7 +774,13 @@
           "content": "sold the farm he shared with Margaretha von Uissigheim at Uissigheim to Bronnbach Monastery.",
           "mention": [
             {
+              "place": "bronnbach"
+            },
+            {
               "person": "Margaretha von Uissigheim"
+            },
+            {
+              "place": "uissigheim"
             }
           ],
           "date": "1457"
@@ -594,6 +789,14 @@
           "person": "Margaretha von Uissigheim",
           "type": "generic",
           "content": "sold the Uissigheim-area holdings she shared with Stephan von der Thann to Bronnbach Monastery.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1457"
         },
         {
@@ -602,7 +805,13 @@
           "content": "sold the Uissigheim-area holdings he shared with Margaretha von Uissigheim to Bronnbach Monastery.",
           "mention": [
             {
+              "place": "bronnbach"
+            },
+            {
               "person": "Margaretha von Uissigheim"
+            },
+            {
+              "place": "uissigheim"
             }
           ],
           "date": "1457"
@@ -611,18 +820,39 @@
           "subject": "Bronnbach monastery",
           "type": "generic",
           "content": "held property at Uissigheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1165"
         },
         {
           "person": "Ludwig von Rieneck",
           "type": "generic",
           "content": "granted Mainz fief estates at Uissigheim to Bronnbach Monastery.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1223"
         },
         {
           "person": "Veit von Riedern",
           "type": "generic",
           "content": "held tithes at Uissigheim as a fief of Rineck.",
+          "mention": [
+            {
+              "place": "rieneck"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1480"
         },
         {
@@ -711,6 +941,11 @@
           "person": "Götz von Uissigheim",
           "type": "generic",
           "content": "had children whose stone house at Uissigheim was mentioned.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1394"
         },
         {
@@ -720,6 +955,9 @@
           "mention": [
             {
               "person": "Michael von Rineck"
+            },
+            {
+              "place": "uissigheim"
             }
           ],
           "date": "1486"
@@ -731,6 +969,9 @@
           "mention": [
             {
               "person": "Mathern von Grumbach"
+            },
+            {
+              "place": "uissigheim"
             }
           ],
           "date": "1486"
@@ -739,6 +980,11 @@
           "person": "Amalie von Rümrodt",
           "type": "generic",
           "content": "sold the castle and its property at Uissigheim to the Grand Master of the Teutonic Order.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1570"
         },
         {
@@ -749,12 +995,22 @@
           ],
           "type": "generic",
           "content": "acquired the castle and its property at Uissigheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1590"
         },
         {
           "person": "Hartmut von Kronberg",
           "type": "generic",
           "content": "was one of two men of this name who acquired the castle and its property at Uissigheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1592"
         },
         {
@@ -778,6 +1034,11 @@
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "may be the knight on the damaged Uissigheim gravestone, as Gamans transcribed the name, though the identity of the knight is uncertain.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1336"
         },
         {
@@ -787,18 +1048,33 @@
           ],
           "type": "generic",
           "content": "may be the Eberhard on the Uissigheim gravestone, as Gamans’s transcription names him, though the identity of Eberhard is uncertain.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1332"
         },
         {
           "person": "Ritter von Uissigheim",
           "type": "generic",
           "content": "is said by the Erfurt chronicle to have committed anti-Jewish killings in 1343 and to have been captured, executed, and buried at Uissigheim; his identity with the knight on the damaged gravestone is uncertain.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1343"
         },
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
           "content": "may have obtained Uissigheim property through an heiress by 1314.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1314"
         },
         {
@@ -827,6 +1103,11 @@
           ],
           "type": "generic",
           "content": "witnessed a Bronnbach charter together with Bertolt von Mergentheim.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ],
           "date": "1221"
         },
         {
@@ -838,6 +1119,9 @@
           "content": "witnessed a Bronnbach charter together with Siboto von Wölchingen.",
           "mention": [
             {
+              "place": "bronnbach"
+            },
+            {
               "person": "Siboto von Wölchingen"
             }
           ],
@@ -847,6 +1131,14 @@
           "person": "Gotfried von Hohenlohe",
           "type": "generic",
           "content": "was named with Konrad von Krautheim in an agreement identifying Wölchingen as part of the lordship of Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1239"
         },
         {
@@ -855,7 +1147,13 @@
           "content": "was named with Gotfried von Hohenlohe in an agreement identifying Wölchingen as part of the lordship of Boxberg.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Gotfried von Hohenlohe"
+            },
+            {
+              "place": "wolchingen"
             }
           ],
           "date": "1239"
@@ -864,18 +1162,39 @@
           "person": "Kraft von Boxberg",
           "type": "generic",
           "content": "named Wölchingen in his bequest as part of the lordship of Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1245"
         },
         {
           "subject": "The Johanniter",
           "type": "generic",
           "content": "held a court at Wölchingen subject to tithes to Würzburg.",
+          "mention": [
+            {
+              "place": "wolchingen"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1239"
         },
         {
           "subject": "The Johanniter",
           "type": "generic",
           "content": "had a house at Wölchingen.",
+          "mention": [
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1249"
         },
         {
@@ -890,18 +1209,39 @@
           "subject": "The Johanniter",
           "type": "generic",
           "content": "had a Komturei at Wölchingen.",
+          "mention": [
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1284"
         },
         {
           "subject": "The Johanniter",
           "type": "generic",
           "content": "transferred their Wölchingen Komturei to castle Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1313"
         },
         {
           "subject": "Wölchingen",
           "type": "generic",
           "content": "passed with Boxberg to the von Rosenberg family.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1381"
         },
         {
@@ -914,6 +1254,14 @@
           "subject": "The Reformation",
           "type": "generic",
           "content": "was introduced at the church of Wölchingen under von Rosenberg patronage.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1558"
         },
         {
@@ -952,6 +1300,11 @@
           "person": "Johanniter",
           "type": "generic",
           "content": "may have completed the Wölchingen church by about 1210, based on the building’s dating and their property in the area.",
+          "mention": [
+            {
+              "place": "wolchingen"
+            }
+          ],
           "date": "1210"
         }
       ]

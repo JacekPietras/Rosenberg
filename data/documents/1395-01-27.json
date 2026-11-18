@@ -18,7 +18,7 @@
           "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "boxberg"
         },
         {
           "person": "Eberhard von Rosenberg"
@@ -34,10 +34,16 @@
           "content": "authorized [arnold_boxberg] and [eberhard_jagstberg], sons of Eberhard von Rosenberg, to establish a Wittum for their mother Elisabeth von Erligheim on one quarter of Boxberg.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Eberhard von Rosenberg"
             },
             {
               "person": "Elisabeth von Erligheim"
+            },
+            {
+              "place": "jagstberg"
             }
           ]
         },

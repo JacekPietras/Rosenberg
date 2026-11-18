@@ -82,10 +82,10 @@
           "content": "owed an annual annuity to Gotfried von Stockheim as a marriage portion for his sister Christine, together with his brothers Michael and Friedrich von Rosenberg.",
           "mention": [
             {
-              "person": "Michael von Rosenberg"
+              "person": "Friedrich von Rosenberg"
             },
             {
-              "person": "Friedrich von Rosenberg"
+              "person": "Michael von Rosenberg"
             }
           ]
         },
@@ -95,10 +95,10 @@
           "content": "owed an annual annuity to Gotfried von Stockheim as a marriage portion for his sister Christine, together with his brothers Michael and Arnold von Rosenberg.",
           "mention": [
             {
-              "person": "Michael von Rosenberg"
+              "person": "Arnold von Rosenberg"
             },
             {
-              "person": "Arnold von Rosenberg"
+              "person": "Michael von Rosenberg"
             }
           ]
         },
@@ -113,6 +113,9 @@
           "content": "transferred his share in the three lakes and ditches at Boxberg to Michael von Rosenberg.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Michael von Rosenberg"
             }
           ]
@@ -122,6 +125,9 @@
           "type": "generic",
           "content": "transferred his share in the three lakes and ditches at Boxberg to Michael von Rosenberg.",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Michael von Rosenberg"
             }

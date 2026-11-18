@@ -7,6 +7,11 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641660",
       "german": "Eigentumsansprüche der Kurpfalz auf ein Viertel des Schlosses Rosenberg aus Anlaß des von dem gegenwärtigen Besitzer, Graf Heinrich von Hatzfeld, geplanten Neubaus.\n\nLaufzeit: 1678",
       "english": "Property claims by the Electoral Palatinate on a quarter of Rosenberg Castle due to the planned new construction by the current owner, Count Heinrich von Hatzfeld.\n\nPeriod: 1678",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "person": "Heinrich von Hatzfeld",
@@ -14,7 +19,12 @@
             "Graf"
           ],
           "type": "generic",
-          "content": "held Rosenberg Castle."
+          "content": "held Rosenberg Castle.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Heinrich von Hatzfeld",
@@ -22,12 +32,22 @@
             "Graf"
           ],
           "type": "generic",
-          "content": "planned a new building at Rosenberg Castle."
+          "content": "planned a new building at Rosenberg Castle.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "subject": "The Electoral Palatinate",
           "type": "generic",
-          "content": "claimed ownership of a quarter of Rosenberg Castle."
+          "content": "claimed ownership of a quarter of Rosenberg Castle.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     }

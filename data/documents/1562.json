@@ -10,13 +10,36 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "place": "grumbach"
+        },
+        {
+          "place": "oppenheim"
+        },
+        {
+          "place": "pappenheim"
+        },
+        {
+          "place": "speyer"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "pursued a claim against the Elector of Saxony and the Bishop of Würzburg."
+          "content": "pursued a claim against the Elector of Saxony and the Bishop of Würzburg.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

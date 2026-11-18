@@ -9,10 +9,13 @@
       "english": "Michael von Rosenberg, brother of Arnold von Rosenberg, confirms that the gulden toll at Edelfingen (?) (\"Ötelfingen\") has passed to his brother",
       "mention": [
         {
-          "person": "Michael von Rosenberg"
+          "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Arnold von Rosenberg"
+          "place": "edelfingen"
+        },
+        {
+          "person": "Michael von Rosenberg"
         }
       ],
       "facts": [

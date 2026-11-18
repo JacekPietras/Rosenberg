@@ -12,37 +12,34 @@
           "person": "Albrecht of Würzburg"
         },
         {
-          "person": "Gotfried von Hohenlohe"
-        },
-        {
           "person": "Elisabeth von Hohenlohe"
         },
         {
-          "person": "Gotfried von Niedeck"
-        },
-        {
-          "person": "Marquard von heideck"
-        },
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "person": "Erkinger von Seinsheim"
         },
         {
-          "person": "Albrecht of Würzburg"
+          "place": "giebelstadt"
+        },
+        {
+          "person": "Gotfried von Hohenlohe"
         },
         {
           "person": "Gotfried von Niedeck"
         },
         {
-          "person": "Marquard von heideck"
-        },
-        {
           "person": "Hans von Rosenberg"
         },
         {
-          "person": "Erkinger von Seinsheim"
+          "person": "Marquard von heideck"
+        },
+        {
+          "place": "roettingen"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -59,6 +56,9 @@
             },
             {
               "person": "Elisabeth von Hohenlohe"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         }

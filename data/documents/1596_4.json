@@ -7,6 +7,11 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-4503448",
       "german": "Dürrhof (Dörrhof) gehört denen von Rosenberg eigentümlich.\n\nLaufzeit: 1596",
       "english": "Dürrhof (Dörrhof) belongs to the von Rosenberg exclusively.\n\nTerm: 1596",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "subject": "the von Rosenbergs",

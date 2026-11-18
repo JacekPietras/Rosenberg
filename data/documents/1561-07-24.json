@@ -9,14 +9,17 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "boxberg"
         }
       ],
       "facts": [
         {
           "person": "Hans Friedrich",
           "personTitle": [
-            "der Mittlere",
-            "Herzog zu Sachsen"
+            "Herzog zu Sachsen",
+            "der Mittlere"
           ],
           "type": "title"
         },
@@ -40,7 +43,12 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "ceded all his rights and claims to Boxberg and its appurtenances to Elector Friedrich II of the Palatinate in return for payment of 27,000 florins."
+          "content": "ceded all his rights and claims to Boxberg and its appurtenances to Elector Friedrich II of the Palatinate in return for payment of 27,000 florins.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

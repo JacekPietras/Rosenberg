@@ -9,7 +9,16 @@
       "english": "Disputes between Gräffingen and the communities of Uiffingen, Kupprichhausen, and Lengenrieden regarding grazing rights\n\nDuration: 1741-1746\n\nContains: Copy of the deed of purchase from 1544: Michael von Rosenberg, Hans Melchior von Steinkallenfels, and Martin von Zicheren (von Zeutern [?]) (and Elisabetha and Ursula von Rosenberg) sell their share in Gräffingen and Hachthal (Hachtel) on the Ahorn near Boxberg, as well as rents and dues in Uiffingen.",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
+          "place": "kupprichhausen"
+        },
+        {
           "person": "Michael von Rosenberg"
+        },
+        {
+          "place": "uiffingen"
         },
         {
           "person": "Ursula von Rosenberg"
@@ -20,6 +29,11 @@
           "subject": "the Rosenberg sellers and their co-participants",
           "type": "generic",
           "content": "sold their shares in Gräffingen and Hachtel at Ahorn and rents and dues at Uiffingen in a 1544 deed.",
+          "mention": [
+            {
+              "place": "uiffingen"
+            }
+          ],
           "date": "1544"
         }
       ],

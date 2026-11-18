@@ -9,10 +9,13 @@
       "english": "Archbishop Berthold of Mainz announces an arbitration ruling in the dispute between Kunz von Dottenheim and Arnold von Rosenberg over possession of Schloss Schüpf and its appurtenances.\n\nValidity: May 9, 1493 (Thursday after Cantate 1493)",
       "mention": [
         {
+          "person": "Arnold von Rosenberg"
+        },
+        {
           "person": "Kunz von Dottenheim"
         },
         {
-          "person": "Arnold von Rosenberg"
+          "place": "oberschuepf-castle"
         }
       ],
       "facts": [
@@ -23,6 +26,9 @@
           "mention": [
             {
               "person": "Kunz von Dottenheim"
+            },
+            {
+              "place": "oberschuepf-castle"
             }
           ]
         }

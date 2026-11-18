@@ -16,16 +16,7 @@
           "person": "Adelheid of Niedeck"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Adelheid of Niedeck"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
+          "place": "bronnbach"
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -38,6 +29,18 @@
         },
         {
           "person": "Eberhard von Uissigheim"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "uissigheim"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [
@@ -67,32 +70,68 @@
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "donated annual rent from her share of the mill at Rosenberg to Bronnbach Abbey."
+          "content": "donated annual rent from her share of the mill at Rosenberg to Bronnbach Abbey.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "endowed an annual Advent service at Bronnbach for the soul of her late husband."
+          "content": "endowed an annual Advent service at Bronnbach for the soul of her late husband.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ]
         },
         {
           "person": "Heinrich Müller",
           "type": "generic",
-          "content": "lived at the mill at Rosenberg."
+          "content": "lived at the mill at Rosenberg.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "required the pastor of Uissigheim to attend the vigil and anniversary of the Advent service at Bronnbach."
+          "content": "required the pastor of Uissigheim to attend the vigil and anniversary of the Advent service at Bronnbach.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ]
         },
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "reserved the right to buy back the rent from Bronnbach Abbey."
+          "content": "reserved the right to buy back the rent from Bronnbach Abbey.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ]
         },
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "promised to ensure that her son would confirm and surrender the rent to Bronnbach Abbey once of age."
+          "content": "promised to ensure that her son would confirm and surrender the rent to Bronnbach Abbey once of age.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ]
         },
         {
           "person": "vogt_zu_Durn",
@@ -106,7 +145,12 @@
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "appointed [vogt_zu_Durn] as surety for the donation."
+          "content": "appointed [vogt_zu_Durn] as surety for the donation.",
+          "mention": [
+            {
+              "place": "wallduern"
+            }
+          ]
         },
         {
           "person": "vogt_zu_Durn",

@@ -9,16 +9,16 @@
       "english": "This file concerns a dispute between Konrad von Berlichingen and Georg von Rosenberg zu Boxberg over remarks and accusations, settled through the mediation of Margrave Albrecht Achilles of Brandenburg. It also contains a settlement between Georg von Rosenberg zu Boxberg and the Imperial City of Schwäbisch Hall, material on Georg von Rosenberg’s feud with the counts of Hohenlohe (1474–1477), and a tournament planned for Nuremberg in 1483 that was postponed when Margrave Friedrich departed on pilgrimage to Jerusalem.",
       "mention": [
         {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
           "person": "Konrad von Berlichingen"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
+          "place": "nuremberg"
         }
       ],
       "facts": [

@@ -6,6 +6,11 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-4503219",
       "german": "Dorfordnung von Rosenberg. Erneuert 1682\n\nLaufzeit: (1682)",
       "english": "Village ordinance of Rosenberg. Renewed 1682\n\nDuration: (1682)",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "subject": "The village ordinance of Rosenberg",

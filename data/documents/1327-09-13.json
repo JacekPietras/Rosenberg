@@ -10,9 +10,6 @@
       "english": "Rudolf von Rorschach, churchman of Rorschach, grants Ita, wife of Welti des Riemen, the inheritance of Rudolf Azzen's property as a hereditary lease.\n\nI, Herr Ruodolff von Roschach, churchman of Rorschach 1, openly acknowledge with this letter to all who behold or hear this letter read, that I have granted to Frau Itten, wife of Welti des Riemen, the property called Rudolf Azzen's property, as a true hereditary lease with homestead, garden, vineyards, fields, and everything belonging to it, and I have done so with the counsel, good will, and favor of Egilolf von Rosenberg der Ältere and Egilolf von Rosenberg der Jüngere 2. We, the aforementioned Egglolf and Egglolf von Rosenberg, openly declare that the said property has been granted to the aforementioned Frau Itten with our joint favor and consent, on account of that we are advocates over the church of Rorschach, and as the advocate's right yields one pound pfennigs of Konstanz currency, and that the aforesaid property yields and owes sixteen a) shilling pfennigs at the pledge and another property four shillings. And for this to be true and remain steadfast, therefore we, the aforementioned Herr Ruodolff von Roschach, churchman of Rorschach, Egglolf and Egglolf von Rosenberg, grant to the aforementioned Frau Itten this letter sealed with our seals. We Hiltpold of St. Gallen, abbot 3, and the convent jointly of the monastery of St. Gallen, testify in this letter what is written and contained in words in this present letter, that this has been done with our counsel, will, and favor, since the church of Rorschach is a fief from us and from our monastery; wherefore we confirm to the aforementioned Frau Itten the aforesaid hereditary lease, that she shall enjoy and hold it in all rights, as a monastery widow or a monastery man may enjoy and hold his rightful hereditary lease. The aforementioned Frau Itten is also bound to give, or her heirs, to a churchman of Rorschach annually or her heirs, each year to the churchman of Rorschach one hen as a payment in lieu of service, at her choice between St Michael’s Day and St Gall’s Day. To confirm that all this is true and remain unbroken, we issue this letter sealed with our seals. We, the aforementioned Rudolf von Rorschach, Eglolf and Egilolf von Rosenberg, Abbot Hiltpold, and the convent of St Gallen, have granted this favor to Frau Ita because she improved the property by building a house on it, at a cost of ten pounds in Konstanz currency. The letter was issued at St Gallen on the eve of the Holy Cross feast in autumn 1327.",
       "mention": [
         {
-          "person": "Rudolf von Rorschach"
-        },
-        {
           "person": "Egilolf von Rosenberg",
           "personTitle": [
             "der Ältere"
@@ -25,13 +22,16 @@
           ]
         },
         {
+          "person": "Egilolf von Rosenberg"
+        },
+        {
+          "place": "rorschach"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Rudolf von Rorschach"
-        },
-        {
-          "person": "Egilolf von Rosenberg"
-        },
-        {
-          "person": "Egilolf von Rosenberg"
         }
       ]
     }

@@ -9,10 +9,19 @@
       "english": "Sale of all rights in Oberbalbach except the patronage right to Stefan Zobel von Giebelstadt by Konrad von Rosenberg[-Haltenbergstetten] of Gnötzheim and Schüpf, 1596 [no month or day given].",
       "mention": [
         {
-          "person": "Stephan Zobel von Giebelstadt"
+          "place": "gnoetzheim"
         },
         {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
+          "person": "Stephan Zobel von Giebelstadt"
         }
       ],
       "facts": [

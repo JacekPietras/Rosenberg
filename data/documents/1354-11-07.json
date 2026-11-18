@@ -8,10 +8,13 @@
       "english": "Archbishop Gerlach (of Nassau) of Mainz hands over the house and office of Wildenberg to Konrad Rüdt of Collenberg, burgrave zu Starkenburg, until he (Konrad) has received the 700 guilders for which he has redeemed the people and goods in the Odenwald that had been pledged to Eberhard von Rosenberg by the Mainz monastery.",
       "mention": [
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Konrad Rüd of Collenberg"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "wildenberg-castle"
         }
       ],
       "facts": [
@@ -39,7 +42,12 @@
             "Burggraf zu Starkenburg"
           ],
           "type": "generic",
-          "content": "received the castle and office of Wildenberg until he had been repaid 700 guilders for redeeming the pledged assets."
+          "content": "received the castle and office of Wildenberg until he had been repaid 700 guilders for redeeming the pledged assets.",
+          "mention": [
+            {
+              "place": "wildenberg-castle"
+            }
+          ]
         }
       ]
     },
@@ -54,6 +62,9 @@
           "personTitle": [
             "King"
           ]
+        },
+        {
+          "place": "rothenburg"
         }
       ]
     },
@@ -70,10 +81,13 @@
       "english": "Archbishop Gerlach confesses that he has transferred the castle and office of Wildenberg to Konrad Rüdt, his Amtmann zu Starkenburg. Konrad redeemed the Mainz goods and rents, people, and courts in the Odenwald for 700 small guilders, which were pledged to Eberhard von Rosenberg for 800 small guilders. Half of these goods and rents shall go to Konrad, and the other half to Kellner of Amorbach for the archbishop. If the archbishop wishes to remove Konrad from office without paying him the 700 guilders, he must make him pay half of the toll in Miltenberg to collect the 700 guilders. Konrad may therefore not withhold the castle and office from the archbishop for any possible claims (for cost or damage), but must surrender them upon his request. The cathedral chapter (we, the chapter...) also seals with him.",
       "mention": [
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Konrad Rüd"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "wildenberg-castle"
         }
       ],
       "facts": [
@@ -101,7 +115,12 @@
             "Amtmann zu Starkenburg"
           ],
           "type": "generic",
-          "content": "received the castle and office of Wildenberg until the archbishop repaid the 700 guilders he had paid to redeem the pledged assets."
+          "content": "received the castle and office of Wildenberg until the archbishop repaid the 700 guilders he had paid to redeem the pledged assets.",
+          "mention": [
+            {
+              "place": "wildenberg-castle"
+            }
+          ]
         }
       ]
     }

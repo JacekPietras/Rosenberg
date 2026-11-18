@@ -10,6 +10,12 @@
       "mention": [
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "waldmannshofen"
+        },
+        {
+          "place": "weinsberg"
         }
       ],
       "facts": [
@@ -19,7 +25,12 @@
             "zu Waldmannshofen"
           ],
           "type": "generic",
-          "content": "was party to a dispute with Philipp der Ältere, Herr zu Weinsberg, over a Riethwasen near Gülchsheim, decided by Elector Berthold of Mainz."
+          "content": "was party to a dispute with Philipp der Ältere, Herr zu Weinsberg, over a Riethwasen near Gülchsheim, decided by Elector Berthold of Mainz.",
+          "mention": [
+            {
+              "place": "weinsberg"
+            }
+          ]
         }
       ]
     }

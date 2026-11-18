@@ -12,58 +12,34 @@
       "english": "Georg von Rosenberg, Daniel Trautwein, District Administrator of Boxberg (Boxsperg), and Johann Heber, Hohenlohe secretary, mediate in the dispute between Wolfgang von Bibra, Commander of the Teutonic Order at Mergentheim (Mergennthaim) and Würzburg (Wurtzpurg), and Niklas Vehe, acting administrator of the Teutonic Order at Neuhaus (Newenhaws), on one side, and Stephan von Adelsheim (Adeltzhaim) of Wachbach (Wachpach) and Franz Rüdt von Bödigheim (Bödickhaim) on the other, regarding rights in Wachbach. The parties agree to the following disputed points: The German Lords relinquish their claims to the tavern, the bathhouse, and the property of Peter Eberhart, while Stephan von Adelsheim and Franz Rüdt relinquish sovereignty, jurisdiction, and feudal tenure over the property of Philipp Richter, which is also subject to tithes for the morning mass in Wachbach. The Teutonic Order retains all rights to the properties of its dependents in Wachbach, Dörtel (Dürthal), and Hachtel (Hachthal). The property of Heinz Kümel (Kümelhaintz) is a freehold. The property on which Wendel Ulrich resides is sold to Stephan von Adelsheim with the consent of Wolfgang von Bibra. The customary procedure against dependents of one lordship who have committed offenses on the properties of another lordship, thereby being imprisoned and brought before the court of Stuppach, is modified such that future cases will forego imprisonment. Regarding the complaint of Stephan von Adelsheim and Franz Rüdt that the Teutonic Order collects the wine tithe in the Wachbach district, although they hold the tithe as a fief from the Margrave of Brandenburg, and the response of the acting administrator and chaplain of Neuhaus that the Order has agreed that the wine tithe shall remain with the Teutonic Order on all vineyards where it has historically collected it; however, going forward, fields and wastelands converted into vineyards vineyards, and that the six men from Wachbach are to be questioned about whether certain properties held by the Scheissesel and others at Wachbach, which derive as fiefs from the Teutonic Order, owe tithes. Walter von Cronberg, administrator of the Grand Master’s office in Prussia and master of the Teutonic Order in the German and Italian lands, approves the agreement. The House of Mergentheim, the Neuhaus administrative district, and Stephan von Adelsheim and Franz Rüdt each receive a copy of the charter. Date: Friday after the feast of the Conversion of St Paul, January 29, 1535. Seals: Walter von Cronberg; Georg von Rosenberg; Daniel Trautwein, official at Boxberg; Johann Heber, Hohenlohe secretary; Wolfgang von Bibra; Stephan von Adelsheim; Franz Rüdt.",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
+          "place": "boxberg"
         },
         {
-          "person": "Wolfgang von Bibra"
-        },
-        {
-          "person": "Stephan von Adelsheim"
+          "person": "Franz Rüd"
         },
         {
           "person": "Franz Rüd von Bödigheim"
         },
         {
-          "person": "Stephan von Adelsheim"
-        },
-        {
-          "person": "Franz Rüd"
-        },
-        {
-          "person": "Stephan von Adelsheim"
-        },
-        {
-          "person": "Wolfgang von Bibra"
-        },
-        {
-          "person": "Stephan von Adelsheim"
-        },
-        {
-          "person": "Franz Rüd"
-        },
-        {
-          "person": "Walter von Cronberg"
-        },
-        {
-          "person": "Stephan von Adelsheim"
-        },
-        {
-          "person": "Franz Rüd"
-        },
-        {
-          "person": "Walter von Cronberg"
-        },
-        {
           "person": "Georg von Rosenberg"
         },
         {
-          "person": "Wolfgang von Bibra"
+          "place": "hohenlohe"
+        },
+        {
+          "place": "neuhaus"
         },
         {
           "person": "Stephan von Adelsheim"
         },
         {
-          "person": "Franz Rüd"
+          "person": "Walter von Cronberg"
+        },
+        {
+          "person": "Wolfgang von Bibra"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -73,10 +49,10 @@
           "content": "mediated the dispute between the Teutonic Order and Stephan von Adelsheim and Franz Rüdt von Bödigheim concerning rights at Wachbach.",
           "mention": [
             {
-              "person": "Stephan von Adelsheim"
+              "person": "Franz Rüd von Bödigheim"
             },
             {
-              "person": "Franz Rüd von Bödigheim"
+              "person": "Stephan von Adelsheim"
             }
           ]
         }

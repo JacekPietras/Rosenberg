@@ -7,11 +7,27 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1014789",
       "german": "Die Herren von Rosenberg und Adelsheim gegen den Deutschorden in Steuersachen zu Edelfingen\n\nLaufzeit: 1550-1631\n\nUmfang: 1 Heft",
       "english": "The Lords of Rosenberg and Adelsheim versus the Teutonic Order regarding tax matters at Edelfingen\n\nDuration: 1550–1631\n\nExtent: 1 volume",
+      "mention": [
+        {
+          "place": "adelsheim"
+        },
+        {
+          "place": "edelfingen"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "subject": "the lords von Rosenberg and von Adelsheim",
           "type": "generic",
-          "content": "contested taxation matters with the Teutonic Order at Edelfingen."
+          "content": "contested taxation matters with the Teutonic Order at Edelfingen.",
+          "mention": [
+            {
+              "place": "edelfingen"
+            }
+          ]
         }
       ]
     }

@@ -9,7 +9,19 @@
       "english": "The knights Eberhard von Rosenberg, Vogt of Wildenburg, and Erkenger von Saulheim (-wels-) and squire Ebirh. Rüdt (Ruedde) von Bödigheim (Buttenkeim) have concluded a truce between D. provost Cuno von Falkenstein (V-), guardian of the Mainz foundation, on one side, and the knights Heynrich von Turewang and Conr. von Saulsheim (-wels-) on the other side, regarding the overthrowing of Cuno's servants from Külsheim (Cols-) and the servants of H. near Aschaffenburg, for the period until Sunday after Easter. They stipulate that the three aforementioned shall appear on Sunday before \"Mid-Lent\" in the village of Nuwenkirchen on the \"Steig\" between Miltenberg1 and Külsheim (Kols-) to submit to the judgment of a 3- or 5-member arbitration court. Ebirh. von Uissigheim and Dreyz von Bürgstadt (Bürgestad) shall be included in the peace and submit to the judgment of the same judges, yet Erkenger may \"break the oath.\" Whatever Cuno has to bring against von Salza, he shall bring before the arbitrators chosen between the foundation and those von Salza. Seals: Erkenger and Eberhard von R. (Eberhard R. does not have his seal with him). – Counter-signed on Saturday after the twelfth day 1352.\n\nCorrections and additions by Clemm/Kreimes (1975):\n\nSauwelsheim-Seinsheim (Lower Franconia), not Saulheim.",
       "mention": [
         {
+          "place": "boedigheim-kreuzkirche"
+        },
+        {
+          "place": "bürgstadt"
+        },
+        {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "seinsheim"
+        },
+        {
+          "place": "uissigheim"
         }
       ],
       "facts": [
@@ -27,6 +39,9 @@
             },
             {
               "person": "Konrad von Seinsheim"
+            },
+            {
+              "place": "seinsheim"
             }
           ]
         }

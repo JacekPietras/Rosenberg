@@ -9,28 +9,31 @@
       "english": "1538 March 18 (Monday after Reminiscere). Bishop Konrad of Würzburg enfeoffs Zaisolph von Rosenberg of Haltenbergstetten, following the deaths of the brothers Konrad von Rosenberg and Philipp von Rosenberg, with half of a quarter of the following fief holdings: one-eighth of the tithe at Goßmanndorf and several men there; one-quarter of the tithe at Hofheim with several men there; one-eighth and half an eighth of the tithe at Niederhohenried and Oberhohenried; one-quarter of the tithe at Junkersdorf with several men there; one-quarter of a quarter of the tithe at Jesserndorf; one-fifth of a quarter of the tithe at Neuses; part of the tithe at Gochsheim; part of the tithe at Gobetzhausen, Poppenhausen and Eurheim; and one-third of the tithe at Wachenfeld. The fief holdings had fallen to Rosenberg in 1533 through a feudal court ruling between the brothers Philipp von Rosenberg and Konrad von Rosenberg, Eustachius and Bernhard von Thüngen on the one side, and Heinz, Balthasar, Joachim and David Truchsesse zu Wetzhausen on the other; Sr.: der A.",
       "mention": [
         {
+          "person": "Bernhard von Thüngen"
+        },
+        {
+          "place": "gochsheim-st-michael"
+        },
+        {
           "person": "Konrad of Würzburg",
           "personTitle": [
             "Bishop"
           ]
         },
         {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Philipp von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Philipp von Rosenberg"
-        },
-        {
-          "person": "Philipp von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Bernhard von Thüngen"
         }
       ],
       "facts": [
@@ -42,6 +45,9 @@
           "type": "generic",
           "content": "received half of a quarter of specified tithes and other fiefs from Bishop Konrad of Würzburg after the deaths of the brothers Konrad and Philipp von Rosenberg, including tithes at Goßmanndorf, Hofheim, Niederhohenried, Oberhohenried, Junkersdorf, Jesserndorf, Neuses, Gochsheim, Gobetzhausen, Poppenhausen, Eurheim and Wachenfeld.",
           "mention": [
+            {
+              "place": "gochsheim-st-michael"
+            },
             {
               "person": "Konrad of Würzburg",
               "personTitle": [

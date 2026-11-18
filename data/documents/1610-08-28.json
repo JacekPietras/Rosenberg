@@ -9,13 +9,16 @@
       "english": "Older Albrecht von Dienheim sells to Albrecht Christoph and Georg Siegmund von Rosenberg his castle in the village of Unterschüpf for approximately 26,000 guilders.\n\nDuration: August 28, 1610",
       "mention": [
         {
-          "person": "Albrecht von Dienheim"
-        },
-        {
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
+          "person": "Albrecht von Dienheim"
+        },
+        {
           "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "place": "unterschuepf"
         }
       ],
       "facts": [
@@ -29,6 +32,9 @@
               "personTitle": [
                 "the Elder"
               ]
+            },
+            {
+              "place": "unterschuepf"
             }
           ]
         },
@@ -42,6 +48,9 @@
               "personTitle": [
                 "the Elder"
               ]
+            },
+            {
+              "place": "unterschuepf"
             }
           ]
         }

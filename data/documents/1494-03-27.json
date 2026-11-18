@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Philipp von Rosenberg"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "was provost of St. German in Speyer when Margrave Christoph of Baden presented Kaspar Michael Nicolai von Beiertheim to an altar benefice at Knielingen."
+          "content": "was provost of St. German in Speyer when Margrave Christoph of Baden presented Kaspar Michael Nicolai von Beiertheim to an altar benefice at Knielingen.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ]
         }
       ],
       "img": [

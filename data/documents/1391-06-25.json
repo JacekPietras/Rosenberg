@@ -12,6 +12,9 @@
       "mention": [
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "wertheim-stiftskirche"
         }
       ],
       "facts": [
@@ -23,7 +26,12 @@
         {
           "person": "Marquard von Hohenstadt",
           "type": "generic",
-          "content": "had previously held the tithes at Hohenstadt as a fief from the lordship of Wertheim."
+          "content": "had previously held the tithes at Hohenstadt as a fief from the lordship of Wertheim.",
+          "mention": [
+            {
+              "place": "wertheim-stiftskirche"
+            }
+          ]
         }
       ],
       "img": [

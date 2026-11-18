@@ -19,6 +19,12 @@
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -28,7 +34,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was to use the toll at Haltenbergstetten without interference from Eysenheintz, who delivered the documents concerning it to him."
+          "content": "was to use the toll at Haltenbergstetten without interference from Eysenheintz, who delivered the documents concerning it to him.",
+          "mention": [
+            {
+              "place": "schloss-haltenbergstetten"
+            }
+          ]
         },
         {
           "person": "Konrad von Rosenberg",

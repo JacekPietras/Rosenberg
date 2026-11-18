@@ -10,13 +10,19 @@
       "english": "Cuno von Falkenstein (-kin-), archdeacon and guardian of the Mainz foundation, acknowledges that after the accounting he conducted with knight Conrad Rüdt (Rude), burgrave of Starkenburg (-kin-), the archdiocese owes him 1,400 pounds H. Frankfurt weight for losses he suffered in the service of Archbishop Heinrich, Cuno and his co-guardians. He pledges to him with the consent of the Archbishop the town of Amorbach and the villages of Schneeberg (Sneyt-), Buchen (Buo-), Weilbach (Wylen-), Reuental (Ruwen-), Buch, Kirchzell (Celle), Ottorfszell (Odolfcelle), Watterbach (-tenbuch) and Dörnbach (Düring-) without the fishing rights that H. Eberhard von Rosenberg holds by virtue of his office1. Amorbach remains open to M. The damage to his servants Conrad has not yet counted, except 50 pounds for a stallion of Konrad von Niedeck (Nydeke)2 and 35 pounds for a stallion of Rudolf von Böckingen (Bekingin)3 the Elder. If A. is lost in a war of the Archbishop, Conrad shall receive his money a quarter year later; if in his own matter, then he has his money, the foundation the town, should it not be returned in reconciliation. Seals: Archbishop, Cuno, guardianship.",
       "mention": [
         {
+          "place": "buch"
+        },
+        {
+          "place": "buchen"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Konrad Rüd (Rude) of Starkenburg",
           "personTitle": [
             "knight"
           ]
-        },
-        {
-          "person": "Eberhard von Rosenberg"
         },
         {
           "person": "Konrad von Niedeck"

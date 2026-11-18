@@ -9,7 +9,13 @@
       "english": "Ludwig von Fleckenstein, Hofmeister (steward) of the Palatinate, Jakob von Fleckenstein, Vogt (bailiff) of Germersheim, Balthasar von Rosenberg, Amtmann of Lauterberg, and Hans von Helmstadt, Amtmann of Bischofshohenberg, divide among themselves the estate of Hans von Ingenheim and his wife Margareth of Handschuhsheim.\n\nDate: October 7, 1524",
       "mention": [
         {
-          "person": "Ludwig von Fleckenstein"
+          "person": "Balthasar von Rosenberg"
+        },
+        {
+          "place": "handschuhsheim"
+        },
+        {
+          "person": "Hans von Helmstadt"
         },
         {
           "person": "Jakob von Fleckenstein",
@@ -18,10 +24,7 @@
           ]
         },
         {
-          "person": "Balthasar von Rosenberg"
-        },
-        {
-          "person": "Hans von Helmstadt"
+          "person": "Ludwig von Fleckenstein"
         }
       ],
       "facts": [
@@ -31,7 +34,12 @@
             "Amtmann zu Lauterberg"
           ],
           "type": "generic",
-          "content": "joined the division of the estate of Hans von Ingelheim and Margareth von Handschuhsheim."
+          "content": "joined the division of the estate of Hans von Ingelheim and Margareth von Handschuhsheim.",
+          "mention": [
+            {
+              "place": "handschuhsheim"
+            }
+          ]
         }
       ]
     }

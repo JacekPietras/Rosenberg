@@ -12,6 +12,9 @@
       "english": "Niklas von Raydenbach zu Rosenberg sells to Wernlein Wirt von Rosenberg, citizen of Sulzbach, the meadow Smydin, the smith's field, and another acre [near Sulzbach?], which are held as fiefs from the Bishop of Bamberg.\nS:",
       "mention": [
         {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Wernlein Wirt von Rosenberg"
         }
       ],

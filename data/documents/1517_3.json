@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Hans Thomas von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
-          "content": "was the subject of a day set by Kurfürst Ludwig von der Pfalz, about which the Würzburg chancery corresponded."
+          "content": "was the subject of a day set by Kurfürst Ludwig von der Pfalz, about which the Würzburg chancery corresponded.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

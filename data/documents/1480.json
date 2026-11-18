@@ -13,13 +13,21 @@
       "mention": [
         {
           "person": "Michael von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "sold Hans Glaz his eighth share in the tithe at Hohenstadt and his estate at Rosenberg for 200 florins."
+          "content": "sold Hans Glaz his eighth share in the tithe at Hohenstadt and his estate at Rosenberg for 200 florins.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     }

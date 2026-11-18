@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "boxberg"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "acknowledged full satisfaction of his claims against the Erzstift concerning the occupation and withholding of Haus Boxberg, the town and villages."
+          "content": "acknowledged full satisfaction of his claims against the Erzstift concerning the occupation and withholding of Haus Boxberg, the town and villages.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

@@ -9,10 +9,16 @@
       "english": "Count Hesse von Leiningen, Ludwig von Ast, Dean Provost of Worms, Konrad von Rosenberg, Chamberlain, Heinrich von Fleckenstein, Hans Landschad von Steinach, Michael Mosbach and Philipp von Udenheim, Councillors of Count Palatine Ludwig IV., establish a settlement between Count Diether von Isenburg-Büdingen and the city of Gelnhausen regarding all disputes that were submitted to the Count Palatine with a document dated March 4, 1447 (Saturday after Invokavit), as follows: Both parties shall submit their claims and responses to Count Reinhard von Hanau by November 27 (Wednesday after Catherine), who shall summon the parties within 6 weeks and decide by June 1, 1449 (Pentecost). The claims of the people of Gelnhausen and of Gelnhausen citizen Johann von Gründau before the Westphalian courts shall be invalid, as shall the summons of Count Diether before the Roman King [Friedrich III.]. The parties affix seals.",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Heinrich von Fleckenstein"
         },
         {
-          "person": "Heinrich von Fleckenstein"
+          "person": "König Friedrich",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
         },
         {
           "person": "Michael Mosbach"

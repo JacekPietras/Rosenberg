@@ -16,6 +16,18 @@
       "mention": [
         {
           "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "aub"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -27,7 +39,12 @@
         {
           "subject": "the von Rosenberg heirs and the Hatzfeldt family",
           "type": "generic",
-          "content": "transferred the half share of the great and small tithes at Aub to Hatzfeldt, after Albrecht Christoph’s death."
+          "content": "transferred the half share of the great and small tithes at Aub to Hatzfeldt, after Albrecht Christoph’s death.",
+          "mention": [
+            {
+              "place": "aub"
+            }
+          ]
         }
       ]
     }

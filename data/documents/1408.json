@@ -15,6 +15,9 @@
         },
         {
           "person": "Ulrich von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -36,6 +39,9 @@
           "mention": [
             {
               "person": "Ulrich von Rosenberg"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         }

@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "boxberg"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "was the subject of a legal judgment in a case brought by the Boxberg Kellerei."
+          "content": "was the subject of a legal judgment in a case brought by the Boxberg Kellerei.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

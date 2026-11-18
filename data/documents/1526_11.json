@@ -9,6 +9,9 @@
       "english": "Georg Vogler, chief margravial secretary, to Rothenburg: Advice regarding the case against Zaisolph von Rosenberg.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was the subject of advice sent by Georg Vogler to Rothenburg concerning the process against him."
+          "content": "was the subject of advice sent by Georg Vogler to Rothenburg concerning the process against him.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

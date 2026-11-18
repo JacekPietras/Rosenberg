@@ -12,37 +12,52 @@
       "english": "The Archbishop of Mainz Adolf I regulates the repayment of debts that he as guardian of the Speyer chapter owes to Ulrich von Hohenlohe and his heirs. L(itte)ra data Ulrico de Hoenloch sup(er) 1.590 floren(is). [The Archbishop of Mainz] Adolf, as guardian of the Speyer chapter (Spire), owes his 'dear uncle' Ulrich von Hohenlohe (Hoenloch) and his heirs 1,590 gold gulden. Adolf has borrowed and also received this money for the Speyer chapter. The 1,590 gulden shall be paid by him, his successors or the chapter in half on the upcoming St. Martin's Day in winter [November 11], the other half on the following Mid-Lent [March 12, 1385]. The Archbishop provides guarantors as security. If he falls into payment default, Ulrich may summon the guarantors orally or in writing, who then each within eight days must send a servant and a horse to the city of Adelsheim into a public inn assigned to them. There they must maintain billetting (rechte leistunge) until the payment is made on time. Missing servants and horses must be replaced. No guarantor may assume another's performance obligation. If a guarantor dies, enters a monastery or leaves the country for other reasons before the debt is settled, Adolf, his successor in the Speyer chapter or whoever holds the chapter then, upon Ulrich's summons, must within one month appoint equivalent guarantors. If this does not happen, the other guarantors must provide replacement until the missing guarantors are replaced. The guarantors may not do anything against their surety obligation. The Archbishop promises his guarantors to release them amicably, without disadvantages for them, from the surety obligation. The guarantors, Eberhard von Hartheim (Hartzheim), Vogt of Breuberg (Bruberg), Hans von Rosenberg, Hans Monich, Raben Rüdt (Rude), Wiprecht Rüdt (Rude), Marquard von Dürn (Dune), bailiff there, Cuntze von Hardheim, Vogt of Buchen, Gotz von Adelsheim of Bürgstadt, Heinrich Rüdt (Rude), Eberhard von Grumbach, Eberhard Rüdt (Rude), Egen Seman, Vogt of Bischofsheim, Albrecht Stetenberg and Peter Stetenberg [?] acknowledge their obligation and assure to fulfill their duties and not to try to evade them. Archbishop and all guarantors announce their seals. - Given ... 1384 on the next Sunday before our Lord's Ascension Day.",
       "mention": [
         {
-          "person": "Ulrich von Hohenlohe"
+          "place": "adelsheim"
         },
         {
-          "person": "Ulrich von Hohenlohe"
+          "place": "bischofsheim"
         },
         {
-          "person": "Eberhard von Hartheim"
+          "place": "buchen"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "bürgstadt"
         },
         {
-          "person": "Hans Mönch"
-        },
-        {
-          "person": "Raban Rüd"
-        },
-        {
-          "person": "Wiprecht Rüd"
-        },
-        {
-          "person": "Marquard von Dürn"
-        },
-        {
-          "person": "Heinrich Rüd"
+          "person": "Eberhard Rüd"
         },
         {
           "person": "Eberhard von Grumbach"
         },
         {
-          "person": "Eberhard Rüd"
+          "person": "Eberhard von Hartheim"
+        },
+        {
+          "person": "Hans Mönch"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "hartheim"
+        },
+        {
+          "person": "Heinrich Rüd"
+        },
+        {
+          "person": "Marquard von Dürn"
+        },
+        {
+          "person": "Raban Rüd"
+        },
+        {
+          "place": "speyer"
+        },
+        {
+          "person": "Ulrich von Hohenlohe"
+        },
+        {
+          "person": "Wiprecht Rüd"
         }
       ],
       "facts": [
@@ -51,6 +66,9 @@
           "type": "generic",
           "content": "was surety for Adolf of Mainz’s debt to Ulrich von Hohenlohe on behalf of the church of Speyer.",
           "mention": [
+            {
+              "place": "speyer"
+            },
             {
               "person": "Ulrich von Hohenlohe"
             }

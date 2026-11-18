@@ -11,13 +11,25 @@
       "english": "Elector Ruprecht II der Ältere, Count Palatine of the Rhine, grants Elisabeth von Erligheim, widow of Eberhard von Rosenberg, Ritter, the foundation of an Eternal Mass at the altar of St. ULF in the parish of Wölchingen, with the properties in Gommersdorf, Angeltürn, and Wölchingen, which are fiefs of Boxberg Castle and the A. - The A. undertakes not to mislead the Eternal Mass and the respective priest regarding the use of the foundation's properties.",
       "mention": [
         {
-          "person": "Elisabeth von Erligheim"
+          "place": "boxberg"
         },
         {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
           ]
+        },
+        {
+          "person": "Elisabeth von Erligheim"
+        },
+        {
+          "place": "gommersdorf"
+        },
+        {
+          "place": "wehrkirche-angeltuern"
+        },
+        {
+          "place": "wolchingen"
         }
       ],
       "facts": [
@@ -38,25 +50,47 @@
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was authorized by Elector Ruprecht II der Ältere to endow a perpetual Mass at the altar of Our Lady in the parish of Wölchingen."
+          "content": "was authorized by Elector Ruprecht II der Ältere to endow a perpetual Mass at the altar of Our Lady in the parish of Wölchingen.",
+          "mention": [
+            {
+              "place": "wolchingen"
+            }
+          ]
         },
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was authorized to endow the Mass with fiefs from Boxberg Castle at Gommersdorf, Angeltürn, and Wölchingen."
+          "content": "was authorized to endow the Mass with fiefs from Boxberg Castle at Gommersdorf, Angeltürn, and Wölchingen.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "gommersdorf"
+            },
+            {
+              "place": "wehrkirche-angeltuern"
+            },
+            {
+              "place": "wolchingen"
+            }
+          ]
         },
         {
           "person": "Ruprecht",
           "personTitle": [
             "Kurfürst",
-            "der Ältere",
-            "Pfalzgraf bei Rhein"
+            "Pfalzgraf bei Rhein",
+            "der Ältere"
           ],
           "type": "generic",
           "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the altar of Our Lady in Wölchingen using the specified fiefs.",
           "mention": [
             {
               "person": "Elisabeth von Erligheim"
+            },
+            {
+              "place": "wolchingen"
             }
           ]
         }

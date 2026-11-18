@@ -10,13 +10,19 @@
       "english": "Archbishop Heinrich of Mainz, Kraft of Hohenlohe, and Ulrich [II.], Lord of Hanau, establish a court of arbitration to resolve the Rieneck inheritance dispute. The archbishop selects three canons of his cathedral chapter, three of his noblemen, and three other men; likewise the opposing party selects nine arbitrators. To gather evidence, the archbishop has chosen knight Eberhard von Rosenberg, his vogt at Dürn; the other two parties have chosen Johan Hohelin. The fact-finding begins on September 6 (Monday before the Nativity of Mary), and the results are to be reported to the 18 arbitrators at Aschaffenburg on September 28 (Tuesday before Michaelmas). If they have not reached a decision by 14 days after Michaelmas, i.e., October 13 (Wednesday before St. Gall's Day), both parties remain with their current legal position. The status quo is maintained until then.",
       "mention": [
         {
-          "person": "Kraft of Hohenlohe"
-        },
-        {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "knight"
           ]
+        },
+        {
+          "person": "Kraft of Hohenlohe"
+        },
+        {
+          "place": "rieneck"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [
@@ -27,7 +33,12 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "was chosen by Archbishop Heinrich to gather evidence in the Rieneck inheritance dispute and report it to the arbitrators at Aschaffenburg."
+          "content": "was chosen by Archbishop Heinrich to gather evidence in the Rieneck inheritance dispute and report it to the arbitrators at Aschaffenburg.",
+          "mention": [
+            {
+              "place": "rieneck"
+            }
+          ]
         }
       ]
     }

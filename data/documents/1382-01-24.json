@@ -9,6 +9,12 @@
       "english": "King Wenceslaus settles the dispute between Duke Albrecht of Austria and Peter, Ulrich, and Hans von Rosenberg and Heinrich von Neuhaus.",
       "mention": [
         {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Heinrich von Neuhaus"
+        },
+        {
           "person": "König Wenceslaus",
           "personTitle": [
             "King"
@@ -19,12 +25,6 @@
         },
         {
           "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Heinrich von Neuhaus"
         }
       ]
     }

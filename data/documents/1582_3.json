@@ -15,20 +15,34 @@
       "english": "Georg Friedrich, Margrave of Brandenburg etc., Burgrave of Nuremberg, invests Konrad, Albrecht Christoph, and Georg Siegmund von Rosenberg with the fiefs at Waldmannshofen, Schön, and in the Schwal [as February 22, 1546].\n\nSealer: the issuer.\n\nOriginal, parchment, seal preserved. Cf. Reg. No. 1158. - No. 1733.\n\nReg. No. 1847",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
           "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "subject": "the brothers von Rosenberg",
           "type": "generic",
-          "content": "received fiefs at Waldmannshofen, Schön and in the Schwal from the Burgraviate of Nuremberg."
+          "content": "received fiefs at Waldmannshofen, Schön and in the Schwal from the Burgraviate of Nuremberg.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            },
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ]
     }

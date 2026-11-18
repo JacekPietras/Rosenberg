@@ -9,6 +9,9 @@
       "mention": [
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -56,6 +59,12 @@
       "mention": [
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "mosbach-st-juliana"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -76,6 +85,9 @@
           "mention": [
             {
               "person": "Eberhard von Rosenberg"
+            },
+            {
+              "place": "mosbach-st-juliana"
             }
           ]
         }

@@ -22,9 +22,6 @@
           ]
         },
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Ritter"
@@ -32,6 +29,12 @@
         },
         {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -67,6 +70,9 @@
             },
             {
               "person": "Konrad von Rosenberg"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         }

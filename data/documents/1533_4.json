@@ -17,6 +17,11 @@
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
           "content": "was involved in a dispute with Kurpfalz over Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1534-08"
         },
         {

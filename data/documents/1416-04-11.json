@@ -10,6 +10,15 @@
       "english": "Thereafter, in 1416, on the eve of Palm Sunday, Hans von Brunn, Bischof, reached an agreement concerning the purchase of the castle, town, and Amt Röttingen for 10,400 florins, redeemable, with Heinrich von Sickingen, Ritter, Hans Truchsess, and Konrad von Rosenberg. The archive summary identifies Hans Truchsess as Hans Truchsess von Baldersheim. Recorded in the register of contracts of Brun, fol. 22.",
       "mention": [
         {
+          "place": "brunn"
+        },
+        {
+          "person": "Hans Truchsess"
+        },
+        {
+          "person": "Hans Truchsess von Baldersheim"
+        },
+        {
           "person": "Hans von Brunn",
           "personTitle": [
             "Bischof"
@@ -22,16 +31,10 @@
           ]
         },
         {
-          "person": "Hans Truchsess"
-        },
-        {
           "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Hans Truchsess"
-        },
-        {
-          "person": "Hans Truchsess von Baldersheim"
+          "place": "roettingen"
         }
       ],
       "facts": [
@@ -40,6 +43,9 @@
           "type": "generic",
           "content": "entered a redeemable purchase agreement with Bishop Johann von Brunn for the castle, town, and Amt Röttingen, together with Heinrich von Sickingen, Ritter, and Hans Truchsess.",
           "mention": [
+            {
+              "person": "Hans Truchsess"
+            },
             {
               "person": "Hans von Brunn",
               "personTitle": [
@@ -53,7 +59,7 @@
               ]
             },
             {
-              "person": "Hans Truchsess"
+              "place": "roettingen"
             }
           ]
         }

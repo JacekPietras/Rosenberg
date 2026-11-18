@@ -13,13 +13,21 @@
       "mention": [
         {
           "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "was named as sealer of Bernhard and Margarete Schopper’s sale of their rights to two vineyards in Würzburg to the dean and chapter of Neumünster."
+          "content": "was named as sealer of Bernhard and Margarete Schopper’s sale of their rights to two vineyards in Würzburg to the dean and chapter of Neumünster.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ],
       "img": [

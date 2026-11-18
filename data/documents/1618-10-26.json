@@ -12,10 +12,16 @@
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
+          "place": "buch"
+        },
+        {
           "person": "Georg Siegmund von Rosenberg"
         },
         {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -44,7 +50,12 @@
         {
           "subject": "Albrecht Christoph and Georg Siegmund von Rosenberg",
           "type": "generic",
-          "content": "received their deceased brother Konrad’s Würzburg fiefs by inheritance."
+          "content": "received their deceased brother Konrad’s Würzburg fiefs by inheritance.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

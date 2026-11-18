@@ -15,9 +15,6 @@
       "english": "Julius, Bishop of Würzburg, Duke of Franconia, invests Kunz von Rosenberg of Waldmannshofen with the following male fiefs of the Collegiate Foundation of Würzburg: one half of the fief of the chaplaincy at the castle in Waldmannshofen; two farms at Gülchsheim, on one of which Jakob Kleinschrot is currently residing and formerly Mathes Hertle resided, while on the other Kilian Vogel is currently residing and formerly Lorenz Eck resided; 1 florin and a Shrove Tuesday chicken as annual rent from a property at Steinach below Brauneck, on which Lorenz Kan is currently residing and formerly Cunz Kaler resided; 4 measures each of grain and oats plus 4 summer chickens at the farm at Geiselheim, on which Ambrosius (Brosius) Dezel is currently residing and formerly Cunz Heppel resided; the entire tithe at Gülchsheim, in total including respective appurtenances. His rights and customs regarding the fiefs, those of his successors, and those of the Collegiate Foundation of Würzburg remain unaffected hereby, as does the assignment made to him and to the Collegiate Foundation of Würzburg by Ritter Asmus von Rosenberg and Kunz von Rosenberg, both now deceased. -\n\nSeal: the issuer.\n\nOriginal document, parchment, seal preserved in wooden capsule - No. 1573.\n\nReg. No. 1661",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
           "person": "Asmus von Rosenberg",
           "personTitle": [
             "Ritter"
@@ -25,6 +22,12 @@
         },
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "waldmannshofen"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -34,7 +37,15 @@
             "zu Waldmannshofen"
           ],
           "type": "generic",
-          "content": "received Würzburg fiefs including half the castle chapel at Waldmannshofen, farms at Gülchsheim, rents at Steinach and Geiselheim, and the tithe at Gülchsheim."
+          "content": "received Würzburg fiefs including half the castle chapel at Waldmannshofen, farms at Gülchsheim, rents at Steinach and Geiselheim, and the tithe at Gülchsheim.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

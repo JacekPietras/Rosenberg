@@ -24,13 +24,13 @@
           ]
         },
         {
-          "person": "Diether von Gemmingen"
-        },
-        {
-          "person": "Eberhard von Neipperg"
+          "place": "helmstadt"
         },
         {
           "person": "Kunz Mönch von Rosenberg"
+        },
+        {
+          "place": "michelfeld"
         },
         {
           "person": "Peter von Helmstadt"
@@ -74,7 +74,13 @@
           ]
         },
         {
+          "place": "helmstadt"
+        },
+        {
           "person": "Kunz Mönch von Rosenberg"
+        },
+        {
+          "place": "michelfeld"
         },
         {
           "person": "Peter von Helmstadt"

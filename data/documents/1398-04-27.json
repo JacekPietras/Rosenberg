@@ -9,12 +9,6 @@
       "english": "Issuer 1: Hans von Rosenberg, Ritter\nIssuer 2: Elsbeth Rosenberg, née Marschalk zu Pappenheim\nSealer 1: Hans von Rosenberg, Ritter\nSealer 2: Elisabeth von Rosenberg, née Marschalk zu Pappenheim\n\nSealing/authentication: Seal 1: illegible\nSeal 2: illegible",
       "mention": [
         {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Elisabeth Marschalk zu Pappenheim"
         },
         {
@@ -22,9 +16,6 @@
           "personTitle": [
             "Ritter"
           ]
-        },
-        {
-          "person": "Elisabeth Marschalk zu Pappenheim"
         }
       ],
       "facts": [

@@ -18,14 +18,28 @@
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
+          "place": "aub"
+        },
+        {
           "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "subject": "Albrecht Christoph and Georg Siegmund von Rosenberg",
           "type": "generic",
-          "content": "received one quarter of Aub as a Mannlehen from the Bishop of Würzburg."
+          "content": "received one quarter of Aub as a Mannlehen from the Bishop of Würzburg.",
+          "mention": [
+            {
+              "place": "aub"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

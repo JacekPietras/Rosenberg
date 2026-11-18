@@ -10,10 +10,13 @@
       "english": "Karl IV grants to the noble man Kraft von Hohenlohe and his heirs all free peasants who belong to the Empire on the Orenwald and at the Kocher, namely those which Eberhard von Rosenberg held as bailiff of Walldürn on behalf of the Empire.",
       "mention": [
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Kraft von Hohenlohe"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "wallduern"
         }
       ],
       "facts": [

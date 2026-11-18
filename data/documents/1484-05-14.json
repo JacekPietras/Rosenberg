@@ -9,10 +9,16 @@
       "english": "Bernhard and Fritz von Wichsenstein, brothers, renounce on their own behalf and on behalf of Hartung von Egloffstein zum Hertenstein all claims against the Bishopric of Würzburg, after receiving as a fief from Rudolf, Bischof von Würzburg, the fief property at Hainstadt that had fallen vacant upon the death of Ludwig Mönch von Rosenberg.",
       "mention": [
         {
-          "person": "Rudolf von Würzburg"
+          "place": "hainstadt"
         },
         {
           "person": "Ludwig Mönch von Rosenberg"
+        },
+        {
+          "person": "Rudolf von Würzburg"
+        },
+        {
+          "place": "wurzburg"
         }
       ]
     }

@@ -29,6 +29,11 @@
           "person": "Aplo von Rosenberg",
           "type": "generic",
           "content": "donated, together with his wife Adelheid, 2 Morgen of wine in the Schalkberg to Kloster Bronnbach.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ],
           "date": "1278"
         },
         {
@@ -38,6 +43,9 @@
           "mention": [
             {
               "person": "Aplo von Rosenberg"
+            },
+            {
+              "place": "bronnbach"
             }
           ],
           "date": "1278"
@@ -48,6 +56,14 @@
           "person": "Aplo von Rosenberg",
           "type": "generic",
           "content": "belonged to the Würzburg Schenken von Roßberg, not to the Lords of Rosenberg.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1278"
         }
       ]

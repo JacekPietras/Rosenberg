@@ -9,10 +9,13 @@
       "english": "Martin, provost of Schlägl, promises the provincial governor Reinprecht von Wallsee that he will faithfully administer the provostry of Schlägl.\n\nSeals hang from parchment strips: (1) Martin, provost of Schlägl; compare the seal in charter 265 (1413). (2) Svatomir, Abbot of Milevsko; description in charter 278. (3) Heinrich von Rosenberg; compare the seal in charter 214 (1390). (4) Hermann von Pottenstein (?). (5) Andreas, caretaker at Krumau (?). (6) Hans von Harrach, caretaker at Rosenberg (?). (7) Matthias von Weichsel, marshal of the Rosenbergs (?). (8) Peter, steward at Rosenberg (?).",
       "mention": [
         {
+          "person": "Hans von Harrach"
+        },
+        {
           "person": "Heinrich von Rosenberg"
         },
         {
-          "person": "Hans von Harrach"
+          "place": "rosenberg-town"
         }
       ]
     }

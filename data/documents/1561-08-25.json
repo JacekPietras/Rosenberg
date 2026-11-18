@@ -9,16 +9,7 @@
       "english": "Philipp Jakob von Rosenberg zu Rosenberg, Kunz von Rosenberg zu Waldmannshofen, Hans Casimir von Rosenberg zu Rosenberg, Zaisolph von Rosenberg zu Haldenbergstetten, Anna von Rosenberg born. Krantz von Geispitzheim, widow Balthasar von Rosenberg, also Wilhelm Krantz von Geispitzheim and Wolf von Weingarten as convine guardian of the suroned sons Friedrich and Hans Christoph des Balthasar von Rosenberg, give their agnatical consensus on the insurized contract for the Boxberg contract on 24. July 1561. Witnesses and co-sealists: Philipp Soldan, Vogt von Rieneck zu Urspringen; Albrecht von Adelsheim, mainzischer Amtmann zu Krautheim, and Hans von Finsterlohr zu Laudenbach.",
       "mention": [
         {
-          "person": "Philipp Jakob von Rosenberg"
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Hans Casimir von Rosenberg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
+          "person": "Albrecht von Adelsheim"
         },
         {
           "person": "Anna von Rosenberg"
@@ -27,10 +18,22 @@
           "person": "Balthasar von Rosenberg"
         },
         {
-          "person": "Balthasar von Rosenberg"
+          "place": "boxberg"
         },
         {
-          "person": "Albrecht von Adelsheim"
+          "person": "Hans Casimir von Rosenberg"
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "person": "Philipp Jakob von Rosenberg"
+        },
+        {
+          "place": "rieneck"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -45,7 +48,12 @@
             "zu Rosenberg"
           ],
           "type": "generic",
-          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
+          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Kunz von Rosenberg",
@@ -53,7 +61,12 @@
             "zu Waldmannshofen"
           ],
           "type": "generic",
-          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
+          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Hans Casimir von Rosenberg",
@@ -61,7 +74,12 @@
             "zu Rosenberg"
           ],
           "type": "generic",
-          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
+          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Zaisolph von Rosenberg",
@@ -69,7 +87,12 @@
             "zu Haltenbergstetten Niederstetten"
           ],
           "type": "generic",
-          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
+          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Balthasar von Rosenberg",
@@ -80,7 +103,12 @@
         {
           "person": "Anna von Rosenberg geb. Krantz von Geispitzheim",
           "type": "generic",
-          "content": "gave her consent to the inserted agreement transferring Boxberg dated 24 July 1561."
+          "content": "gave her consent to the inserted agreement transferring Boxberg dated 24 July 1561.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Wilhelm Krantz von Geispitzheim",

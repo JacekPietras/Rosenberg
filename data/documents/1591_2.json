@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "aub"
         }
       ],
       "facts": [
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received goods and provisions from Moses of Aub, who kept accounts for him."
+          "content": "received goods and provisions from Moses of Aub, who kept accounts for him.",
+          "mention": [
+            {
+              "place": "aub"
+            }
+          ]
         }
       ]
     }

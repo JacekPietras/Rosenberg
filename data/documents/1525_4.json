@@ -9,6 +9,12 @@
       "english": "Rothenburg to the peasants before Würzburg: damage to Zaisolph von Rosenberg.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
+          "place": "wurzburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +22,15 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was the subject of a report by Rothenburg to the peasantry before Würzburg concerning damage inflicted on him."
+          "content": "was the subject of a report by Rothenburg to the peasantry before Würzburg concerning damage inflicted on him.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

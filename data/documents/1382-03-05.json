@@ -9,6 +9,15 @@
       "english": "The same renew with Stephan, Friedrich and Johann, brothers, dukes in Bavaria, the alliance which Duke Stephan of blessed memory, their father, and they concluded with Count Ulrich von Schaunberg of blessed memory, under which they shall remain for ever with their lands, castles, people and all their power with the dukes' lands and shall assist them therein against everyone, but not against Meinhart, Count of Görz, the Landgraves of Leuchtenberg, and the von Rosenberg, their in-laws. Given at Schaunberg on the Wednesday after Reminiscere.",
       "mention": [
         {
+          "place": "leuchtenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schaunberg"
+        },
+        {
           "person": "Ulrich von Schaunberg"
         }
       ],
@@ -16,7 +25,12 @@
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
-          "content": "were excepted, together with Count Meinhart of Görz and the Landgraves of Leuchtenberg, from the renewed alliance with the Dukes Stephan, Friedrich and Johann of Bavaria, as in-laws (Verschwägerten) of the other parties."
+          "content": "were excepted, together with Count Meinhart of Görz and the Landgraves of Leuchtenberg, from the renewed alliance with the Dukes Stephan, Friedrich and Johann of Bavaria, as in-laws (Verschwägerten) of the other parties.",
+          "mention": [
+            {
+              "place": "leuchtenberg"
+            }
+          ]
         }
       ]
     }

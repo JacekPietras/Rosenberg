@@ -9,31 +9,25 @@
       "english": "Georg Zobel von Giebelstadt renounces claims and demands after Schloss Schüpf, of which he held a share, had been captured and destroyed in the feud between Archbishop Adolf of Mainz, Elector Friedrich I of the Palatinate, and Bishop Rudolf of Würzburg on one side, and Jörg, Arnold, and Michael von Rosenberg on the other. Archbishop Diether of Mainz, Elector Philipp of the Palatinate, and Bishop Rudolf of Würzburg had restored him to his share and usage rights.\n\nTime span: August 31, 1477 (on Sunday before Giles)\n\nSealer: Georg Zobel von Giebelstadt",
       "mention": [
         {
-          "person": "Georg Zobel von Giebelstadt"
-        },
-        {
-          "person": "Rudolf of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "person": "Arnold von Rosenberg"
         },
         {
           "person": "Georg von Rosenberg"
         },
         {
-          "person": "Arnold von Rosenberg"
+          "person": "Georg Zobel von Giebelstadt"
         },
         {
           "person": "Michael von Rosenberg"
+        },
+        {
+          "place": "oberschuepf-castle"
         },
         {
           "person": "Rudolf of Würzburg",
           "personTitle": [
             "Bishop"
           ]
-        },
-        {
-          "person": "Georg Zobel von Giebelstadt"
         }
       ],
       "facts": [
@@ -43,13 +37,19 @@
           "content": "renounced claims after his share of Schloss Schüpf, captured and destroyed in the feud against Georg, Arnold and Michael von Rosenberg, was restored by the princes of Mainz, the Palatinate and Würzburg.",
           "mention": [
             {
-              "person": "Georg von Rosenberg"
-            },
-            {
               "person": "Arnold von Rosenberg"
             },
             {
+              "person": "Georg von Rosenberg"
+            },
+            {
               "person": "Michael von Rosenberg"
+            },
+            {
+              "place": "oberschuepf-castle"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         }

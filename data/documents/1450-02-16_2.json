@@ -8,19 +8,16 @@
       "english": "Eberhard von Rosenberg gives his cousin Ulrich von Rosenberg the part of Boxberg, which his father Eberhard von Rosenberg of Ulrich von Rosenberg and Georg von Rosenberg had received a 3,000 guilder as pledge in order to solve the same sum.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
+          "place": "boxberg"
         },
         {
           "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         },
         {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
@@ -53,6 +50,9 @@
           "content": "transferred to his cousin Ulrich von Rosenberg the Boxberg share that his father had held as a 3,000-guilder pledge, in order to redeem the pledge.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Ulrich von Rosenberg"
             }
           ]
@@ -66,10 +66,13 @@
           "content": "had received the Boxberg share as a 3,000-guilder pledge from Ulrich and Jörg von Rosenberg.",
           "mention": [
             {
-              "person": "Ulrich von Rosenberg"
+              "place": "boxberg"
             },
             {
               "person": "Georg von Rosenberg"
+            },
+            {
+              "person": "Ulrich von Rosenberg"
             }
           ]
         }

@@ -9,10 +9,32 @@
       "english": "Statutes and tournament regulations of the Knightly Order of the Donkey.\n\nValidity: February 2, 1430 (Our Lady)\n\nSealers: Schenk Konrad von Erbach; N. von Sickingen; Eberhard von Gemmingen; Martin von Helmstadt, knight; Wiprecht von Helmstadt; Jörg von Allesheim; Martin Göler; Schenk Philipp, Lord of Erbach; Schwicker von Sickingen, knight; Hans von Helmstadt of Grombach; Hans von Helmstadt of Ussingen; Hans von Ehrenberg; Erasmus von Rosenberg; Konrad von Frankenstein; Konrad von Ehrenberg; Peter von Menzingen; Hans von Helmstadt the Elder, knight; Melchior von Hirschhorn the Younger; Ott von Hirschhorn; Wiprecht von Helmstadt the Younger; Bernhard von Sachsenheim; Hans von Venningen of Hilsbach; N. Erbach; N. Weitershausen; Zeysolf von Aletsheim; Jörg von Velburg; N. Rottenhan; N. Landschad; Martin von Helmstadt; Hans von Helmstadt of Gundelsheim",
       "mention": [
         {
+          "person": "Eberhard von Gemmingen"
+        },
+        {
+          "person": "Erasmus von Rosenberg"
+        },
+        {
+          "place": "erbach"
+        },
+        {
+          "person": "Hans von Helmstadt",
+          "personTitle": [
+            "knight",
+            "the Elder"
+          ]
+        },
+        {
+          "person": "Hans von Helmstadt"
+        },
+        {
+          "place": "hirschhorn"
+        },
+        {
           "person": "Konrad von Erbach"
         },
         {
-          "person": "Eberhard von Gemmingen"
+          "person": "Konrad von Frankenstein"
         },
         {
           "person": "Martin von Helmstadt",
@@ -21,26 +43,7 @@
           ]
         },
         {
-          "person": "Wiprecht von Helmstadt"
-        },
-        {
-          "person": "Hans von Helmstadt"
-        },
-        {
-          "person": "Hans von Helmstadt"
-        },
-        {
-          "person": "Erasmus von Rosenberg"
-        },
-        {
-          "person": "Konrad von Frankenstein"
-        },
-        {
-          "person": "Hans von Helmstadt",
-          "personTitle": [
-            "the Elder",
-            "knight"
-          ]
+          "person": "Martin von Helmstadt"
         },
         {
           "person": "Melchior von Hirschhorn",
@@ -49,16 +52,16 @@
           ]
         },
         {
+          "place": "sickingen"
+        },
+        {
           "person": "Wiprecht von Helmstadt",
           "personTitle": [
             "the Younger"
           ]
         },
         {
-          "person": "Martin von Helmstadt"
-        },
-        {
-          "person": "Hans von Helmstadt"
+          "person": "Wiprecht von Helmstadt"
         }
       ],
       "facts": [

@@ -7,6 +7,11 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1783675",
       "german": "Notariatsinstrument über den Protest der Herren von Rosenberg gegen die Einsetzung eines neuen Pfarrers in Schillingstadt durch Kurpfalz.\n\nLaufzeit: 1588 Juni 10",
       "english": "Notarial instrument regarding the protest of the lords von Rosenberg against the appointment of a new pastor in Schillingstadt by the Electorate Palatinate.\n\nCoverage: June 10, 1588",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "subject": "the lords von Rosenberg",

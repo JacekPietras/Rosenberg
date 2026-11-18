@@ -10,22 +10,13 @@
       "english": "On the Friday before Invocavit in 1419, Hans von Brunn, Bischof, borrowed 5,000 florins from Kunz von Rosenberg, who lived at [place illegible], and in return pledged him the town and Amt Iphofen with all their revenues and uses, reserving the right of access and hereditary homage. In the following year, the bishop redeemed this pledge. He then borrowed 3,000 florins from Hans von Seldeneck der Ältere and his son Hans der Jüngere, pledging the town and Amt Iphofen as security and promising them 300 florins in annual interest; he also provided a surety. The transcription says that this bond did not take effect. The archive summary identifies Contz as Konrad von Rosenberg and gives the Seldeneck names as Hans von Seldeneck der Ältere and Hans von Seldeneck der Jüngere. Recorded in the first register of Brun’s debts, fols. 214 and 255. Marginal addition: Sendelbach, Frankenberg.",
       "mention": [
         {
+          "place": "brunn"
+        },
+        {
           "person": "Hans von Brunn",
           "personTitle": [
             "Bischof"
           ]
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Hans von Seldeneck",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Konrad von Rosenberg"
         },
         {
           "person": "Hans von Seldeneck",
@@ -38,6 +29,15 @@
           "personTitle": [
             "der Jüngere"
           ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "seldeneck"
         }
       ],
       "facts": [

@@ -13,13 +13,21 @@
       "mention": [
         {
           "person": "Clara von Rosenberg"
+        },
+        {
+          "place": "essingen"
         }
       ],
       "facts": [
         {
           "person": "Clara von Rosenberg",
           "type": "generic",
-          "content": "received the mill at Essingen from Friedrich, Herzog von Österreich."
+          "content": "received the mill at Essingen from Friedrich, Herzog von Österreich.",
+          "mention": [
+            {
+              "place": "essingen"
+            }
+          ]
         }
       ]
     }

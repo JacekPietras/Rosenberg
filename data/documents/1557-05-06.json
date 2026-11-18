@@ -13,6 +13,9 @@
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "buch"
         }
       ],
       "facts": [
@@ -22,7 +25,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "planned an exchange of parish patronage rights at Assamstadt and Buch with Abbot Theobald of Amorbach, approved by Archbishop Daniel of Mainz."
+          "content": "planned an exchange of parish patronage rights at Assamstadt and Buch with Abbot Theobald of Amorbach, approved by Archbishop Daniel of Mainz.",
+          "mention": [
+            {
+              "place": "buch"
+            }
+          ]
         }
       ],
       "img": [

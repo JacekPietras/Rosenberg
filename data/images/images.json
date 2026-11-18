@@ -2303,7 +2303,12 @@
         {
           "person": "Ursula von Steinau",
           "type": "generic",
-          "content": "may have been born into the von Rosenberg family, based on the Rosenberg arms shown on the epitaph."
+          "content": "may have been born into the von Rosenberg family, based on the Rosenberg arms shown on the epitaph.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     },
@@ -3461,7 +3466,12 @@
           "person": "Wolf von Hürnheim",
           "personDeceased": true,
           "type": "generic",
-          "content": "was buried at Kenzingen parish church."
+          "content": "was buried at Kenzingen parish church.",
+          "mention": [
+            {
+              "place": "kenzingen-st-laurentius"
+            }
+          ]
         },
         {
           "person": "Wolf von Hürnheim",
@@ -3923,7 +3933,15 @@
         {
           "person": "vitztum_zu_Heidelberg",
           "type": "generic",
-          "content": "may be [vitztum_zu_Heidelberg]: his documented lifetime and Hirschhorn marriage are consistent with a death in 1396, although his wife is named Margarethe in the 1392 record and Adelheid in the monument."
+          "content": "may be [vitztum_zu_Heidelberg]: his documented lifetime and Hirschhorn marriage are consistent with a death in 1396, although his wife is named Margarethe in the 1392 record and Adelheid in the monument.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            },
+            {
+              "place": "hirschhorn"
+            }
+          ]
         },
         {
           "person": "vitztum_zu_Heidelberg",

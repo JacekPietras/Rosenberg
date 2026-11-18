@@ -15,7 +15,13 @@
       "english": "Ludwig, Count Palatine of the Rhine etc.; Elector, after the death of his father Friedrich, Count Palatine of the Rhine etc., Elector, enfeoffs Konrad the Younger von Rosenberg, eldest son of the deceased Zaisolph von Rosenberg, together with his brothers Albrecht Christoph and Georg Sigmund, and also his cousins Philipp Jakob and Konrad the Elder, brothers von Rosenberg, with one quarter of the town of Aub, which is held as a fief from the County Palatine of the Rhine, as inheritable manorial fief. The brothers and cousins von Rosenberg are to fulfill the duties ordinarily associated therewith in accordance with feudal law. He confirms the oath of fealty rendered by Konrad the Younger, together with his brothers and cousins on their behalf.\n\nSeal: the issuer.\n\nOriginal, parchment, seal in wooden capsule heavily damaged. - No. 1662.\n\nReg. No. 1756",
       "mention": [
         {
+          "place": "aub"
+        },
+        {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         },
         {
           "person": "Zaisolph von Rosenberg"
@@ -25,7 +31,12 @@
         {
           "subject": "the von Rosenberg brothers and cousins",
           "type": "generic",
-          "content": "received an inherited Mannlehen share of one quarter of Aub from Count Palatine Ludwig."
+          "content": "received an inherited Mannlehen share of one quarter of Aub from Count Palatine Ludwig.",
+          "mention": [
+            {
+              "place": "aub"
+            }
+          ]
         },
         {
           "person": "Zaisolph von Rosenberg",

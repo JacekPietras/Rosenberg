@@ -9,10 +9,13 @@
       "english": "Provost Heinrich and the convent of Schlägl Abbey, together with Petrus, parish priest of Friedberg, receive confirmation of the Rosenbergs’ earlier donations and new small tithes in Friedberg through the award and decree of Lords Peter and Hans von Rosenberg.\n\nSeals: Seals hanging from parchment strips. (1) Johannes, Archbishop of Prague. Brown wax, high oval, 80 × 56 mm. A bishop’s figure in an elaborate Gothic architectural frame. The inscription is only partly legible; the edges have crumbled away. Reverse: the archbishop’s secret seal, inscribed “secretum sigilli mei.” (2) Heinrich, Provost of Schlägl. Black wax, high oval, 55 × 37 mm. Inscription: “+ HEINRICI PREPOSITI PLAGENSIS.” Arms: Madonna and Child, with a kneeling figure below. (3) The convent of Schlägl Abbey. Black wax, round, 55 mm in diameter. Inscription: “CONVENTVS DOMUS SANCTE MARIE I[N] PLA[GA].” Arms: Madonna and Child on a “baroque” throne. (4) Petrus, parish priest of Friedberg. Brown wax, round, 40 mm in diameter. Inscription: “+ S PETRI PLEBANI IN FRIDBURCH” (text?). Arms: Agnus Dei motif.",
       "mention": [
         {
+          "person": "Hans von Rosenberg"
+        },
+        {
           "person": "Peter von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "rosenberg-town"
         }
       ],
       "img": [

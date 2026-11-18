@@ -12,6 +12,9 @@
           "person": "Albrecht von Adelsheim"
         },
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -19,7 +22,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was involved in a dispute with Rothenburg that Hieronymus Öfner helped settle amicably."
+          "content": "was involved in a dispute with Rothenburg that Hieronymus Öfner helped settle amicably.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

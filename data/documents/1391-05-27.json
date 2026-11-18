@@ -12,13 +12,13 @@
       "english": "Pfalzgraf Ruprecht II permits, among others, Kunz Mönch von Rosenberg, Vogt von Steinsberg, to sell the Veste Streichenberg to Hans von Gemmingen as guardian.",
       "mention": [
         {
+          "person": "Hans von Gemmingen"
+        },
+        {
           "person": "Kunz Mönch von Rosenberg",
           "personTitle": [
             "Vogt"
           ]
-        },
-        {
-          "person": "Hans von Gemmingen"
         }
       ],
       "facts": [

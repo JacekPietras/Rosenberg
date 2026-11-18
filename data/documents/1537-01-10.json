@@ -9,6 +9,12 @@
       "english": "January 10, 1537 (Wednesday after Epiphany). Bishop Konrad of Wurzburg enfeoffs Konrad von Rosenberg, following the death of his brother Philipp von Rosenberg, with a quarter of the following fief holdings: eighth of the tithe at Grossmannsdorf and several men there, quarter of the tithe at Hofheim and several men there, eighth and half an eighth of the tithes at Nieder- and Oberhohenried, quarter of the tithe at Junkersdorf and several men there, quarter of a quarter of the tithe at Jesserndorf, fifth of a quarter of the tithe at Neuses, portion of the tithe at Gochsheim, portion of the tithe at Gobetzhausen, Poppenhausen and Eurheim, and third of the tithe at Wachenfeld. The fief holdings had fallen to Rosenberg through a feudal lord's ruling of 1533 between brothers Philipp von Rosenberg and Konrad von Rosenberg, Eustachius and Bernhard von Thüngen on the one hand, and Heinz, Balthasar, Joachim, and David Truchsess von Wetzhausen on the other; witness: the A.\n\nDuration: January 10, 1537.\n\nExtent: Original copy; parchment, 1 page (recto and verso).",
       "mention": [
         {
+          "person": "Bernhard von Thüngen"
+        },
+        {
+          "place": "gochsheim-st-michael"
+        },
+        {
           "person": "Konrad of Wurzburg",
           "personTitle": [
             "Bishop"
@@ -21,13 +27,7 @@
           "person": "Philipp von Rosenberg"
         },
         {
-          "person": "Philipp von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Bernhard von Thüngen"
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -36,6 +36,9 @@
           "type": "generic",
           "content": "received a quarter of specified tithes and other fiefs from Bishop Konrad of Würzburg after the death of his brother Philipp, including tithes at Großmannsdorf, Hofheim, Niederhohenried, Oberhohenried, Junkersdorf, Jesserndorf, Neuses, Gochsheim, Gobetzhausen, Poppenhausen, Eurheim and Wachenfeld.",
           "mention": [
+            {
+              "place": "gochsheim-st-michael"
+            },
             {
               "person": "Konrad of Würzburg",
               "personTitle": [

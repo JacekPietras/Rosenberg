@@ -8,13 +8,16 @@
       "english": "Archival inventory description: On 3 May 1417, Thomas von Rosenberg and Hans von Rosenberg sold several meadows to Kunz von Rosenberg on behalf of themselves and the hospital at Schüpf. One sheet of the original is preserved and one is missing.",
       "mention": [
         {
-          "person": "Thomas von Rosenberg"
-        },
-        {
           "person": "Hans von Rosenberg"
         },
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "person": "Thomas von Rosenberg"
         }
       ],
       "facts": [
@@ -25,6 +28,9 @@
           "mention": [
             {
               "person": "Kunz von Rosenberg"
+            },
+            {
+              "place": "oberschuepf"
             }
           ]
         },
@@ -35,6 +41,9 @@
           "mention": [
             {
               "person": "Kunz von Rosenberg"
+            },
+            {
+              "place": "oberschuepf"
             }
           ]
         }

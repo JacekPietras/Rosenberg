@@ -9,7 +9,10 @@
       "english": "Castle peace treaty of Reigelsberg, established by Konrad von Weinsberg and Konrad von Rosenberg: Castle Reigelsberg, bridge at the Gollach, Baldersheim, boundary fence, cart road toward Aub to the mill below Aub, path before the wood at Reigelsberg, Wolfgraben, down to the bridge;Parchment,\n\nSeals: Konrad von Weinsberg, Konrad von Rosenberg.\n\nValidity: November 30, 1425, place of issue not stated\n\nExtent: 1 document",
       "mention": [
         {
-          "person": "Konrad von Weinsberg"
+          "place": "aub"
+        },
+        {
+          "place": "baldersheim"
         },
         {
           "person": "Konrad von Rosenberg"
@@ -18,7 +21,7 @@
           "person": "Konrad von Weinsberg"
         },
         {
-          "person": "Konrad von Rosenberg"
+          "place": "reichelsburg-aub"
         }
       ],
       "facts": [
@@ -28,10 +31,13 @@
           "content": "was concluded by Konrad von Weinsberg and Konrad von Rosenberg and covered Reigelsberg Castle and the named surrounding roads, bridge, and boundaries.",
           "mention": [
             {
+              "person": "Konrad von Rosenberg"
+            },
+            {
               "person": "Konrad von Weinsberg"
             },
             {
-              "person": "Konrad von Rosenberg"
+              "place": "reichelsburg-aub"
             }
           ]
         }

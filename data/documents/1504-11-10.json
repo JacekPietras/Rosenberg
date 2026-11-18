@@ -19,13 +19,21 @@
       "mention": [
         {
           "person": "Philipp von Rosenberg"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "was elected Bishop of Speyer."
+          "content": "was elected Bishop of Speyer.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ]
         },
         {
           "person": "Eberhard von Neuhausen",
@@ -34,6 +42,9 @@
           "mention": [
             {
               "person": "Philipp von Rosenberg"
+            },
+            {
+              "place": "speyer"
             }
           ]
         }

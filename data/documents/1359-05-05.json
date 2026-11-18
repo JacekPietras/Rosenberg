@@ -10,18 +10,6 @@
       "english": "At the request of Abbot Kuno, Charles IV confirms to Ellwangen Abbey the inserted charters of King Ludwig dated 8 April 814 and King Friedrich I dated 24 October 1152, concerning the Virgunda Forest.\n\nWitnesses: Ernst, Archbishop of Prague; Johann, Bishop of Olomouc; Johann, Bishop of Leitomischl, chancellor; Dietrich, Bishop of Minden; Maurus, Bishop of Corbavia; Johann, Margrave of Moravia; Rudolf, Duke of Austria, Styria, and Carinthia; Friedrich, Duke of Austria, Styria, and Carinthia; Wenzel, Duke of Saxony; Bolko, Duke of Falkenberg; Johann, Duke of Troppau; Friedrich, Burgrave of Nuremberg; Burkhard, Burgrave of Magdeburg and court steward; Burkhard (Burglinus), Burgrave of Magdeburg; Johann, Burgrave of Magdeburg; Ulrich, Count of Helfenstein; Friedrich, Duke of Teck; Wilhelm von Rechberg; Hans von Rosenberg; Jodok von Rosenberg; Andreas von Duba; Sbinco von Hasenburg; Busco von Wilhartitz; Hoyer von Landstein; Wilhelm von Landstein; Ulrich von Neuhaus der Ältere; Ulrich von Neuhaus der Jüngere; Zdenko von Sternberg; Jaroslaus von Sternberg; Peter von Winterberg; Herscho von Winterberg; Albrecht von Crenewitz; Heinrich von Lipa; Bczko von Kunstat; Jesco von Wilhartitz, marshal; Lupold von Nortenberg, steward; Heinrich von Ziegelheim, steward; Czenko von Pottenstein; Friedrich von Schönburg.",
       "mention": [
         {
-          "person": "König Ludwig",
-          "personTitle": [
-            "King"
-          ]
-        },
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "King"
-          ]
-        },
-        {
           "person": "Friedrich of Nuremberg"
         },
         {
@@ -31,7 +19,19 @@
           "person": "Hoyer von Landstein"
         },
         {
-          "person": "Wilhelm von Landstein"
+          "person": "König Friedrich",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "person": "König Ludwig",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
         },
         {
           "person": "Ulrich von Neuhaus",
@@ -44,6 +44,9 @@
           "personTitle": [
             "der Jüngere"
           ]
+        },
+        {
+          "person": "Wilhelm von Landstein"
         }
       ]
     }

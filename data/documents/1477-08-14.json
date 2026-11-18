@@ -9,19 +9,25 @@
       "english": "Günther von Brandenstein and Gottfried von Stockheim renounce, for themselves, their wives [Kunigunde von Rosenberg and Christiana von Rosenberg], and heirs, after having lost property and revenues in the feud now concluded between Archbishop Diether of Mainz, Elector Philipp of the Palatinate, and Bishop Rudolf of Würzburg on one side, and Jörg, Arnold, and Michael von Rosenberg—brothers-in-law of Günther and Gottfried—on the other side, from future claims.\n\nGünther requests Konrad von Aufseß (Kunz von Uffsesse) of Wolkenstein and Hans Rauschner (Ruschner) of Lindenberg, his uncle and brother-in-law, to seal on his behalf, since his own seal is currently unavailable.\n\nTime span: August 14, 1477 (on Thursday, our Lady's Eve of the Assumption)\n\nSealers: Konrad von Aufsess; Hans Rauschner of Lindenberg; Gottfried von Stockheim",
       "mention": [
         {
-          "person": "Rudolf of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Christiana von Rosenberg"
         },
         {
           "person": "Georg von Rosenberg"
         },
         {
-          "person": "Arnold von Rosenberg"
+          "person": "Kunigunde von Rosenberg"
         },
         {
           "person": "Michael von Rosenberg"
+        },
+        {
+          "person": "Rudolf of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         }
       ],
       "facts": [
@@ -31,7 +37,7 @@
           "content": "renounced claims for themselves, their wives Kunigunde and Christine von Rosenberg, and their heirs after losing property and revenues in the feud involving their Schwäger Georg, Arnold and Michael von Rosenberg and the princes of Mainz, the Palatinate and Würzburg.",
           "mention": [
             {
-              "person": "Kunigunde von Rosenberg"
+              "person": "Arnold von Rosenberg"
             },
             {
               "person": "Christiana von Rosenberg"
@@ -40,10 +46,13 @@
               "person": "Georg von Rosenberg"
             },
             {
-              "person": "Arnold von Rosenberg"
+              "person": "Kunigunde von Rosenberg"
             },
             {
               "person": "Michael von Rosenberg"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         },
@@ -53,7 +62,7 @@
           "content": "renounced claims for themselves, their wives Kunigunde and Christine von Rosenberg, and their heirs after losing property and revenues in the feud involving their Schwäger Georg, Arnold and Michael von Rosenberg and the princes of Mainz, the Palatinate and Würzburg.",
           "mention": [
             {
-              "person": "Kunigunde von Rosenberg"
+              "person": "Arnold von Rosenberg"
             },
             {
               "person": "Christiana von Rosenberg"
@@ -62,10 +71,13 @@
               "person": "Georg von Rosenberg"
             },
             {
-              "person": "Arnold von Rosenberg"
+              "person": "Kunigunde von Rosenberg"
             },
             {
               "person": "Michael von Rosenberg"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         }

@@ -18,10 +18,22 @@
           "person": "Anna von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "burg-schweinberg"
         },
         {
           "person": "Eberhard von Hartheim"
+        },
+        {
+          "place": "eiersheim"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "koenigheim"
+        },
+        {
+          "place": "rinderfeld"
         }
       ],
       "facts": [
@@ -36,7 +48,19 @@
           "content": "sold to Eberhard von Hardheim all rents and interest she held in Königheim, Eiersheim, Rinderfeld, and Schweinberg.",
           "mention": [
             {
+              "place": "burg-schweinberg"
+            },
+            {
               "person": "Eberhard von Hardheim"
+            },
+            {
+              "place": "eiersheim"
+            },
+            {
+              "place": "koenigheim"
+            },
+            {
+              "place": "rinderfeld"
             }
           ]
         }

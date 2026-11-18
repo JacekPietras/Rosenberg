@@ -16,13 +16,27 @@
       "mention": [
         {
           "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "baldersheim"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received the Würzburg fiefs at Baldersheim as Mannlehen."
+          "content": "received the Würzburg fiefs at Baldersheim as Mannlehen.",
+          "mention": [
+            {
+              "place": "baldersheim"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

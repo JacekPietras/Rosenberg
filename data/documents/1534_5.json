@@ -9,22 +9,34 @@
       "english": "Records of Landgrave Philipp, also jointly with Duke Ulrich of Württemberg: Correspondence with Elector Ludwig, Palatine Count Ott Heinrich, and Rudolf Schenck. - Also: Letter from J. Pistor to the chancery clerk Konrad Bunting\n\nContains: 1534 February - April. The Landgrave sends Werner v. Waldenstein to Elector Ludwig: Justification of the Landgrave regarding rumors of war intentions directed against Ferdinand's royal election\nMeeting of Philipp with the King of France\nInstructions and written response for the envoy. The Elector intercedes with Ferdinand for Duke Ulrich of Württemberg. Personal meeting of the Landgrave with the Electors of the Palatinate and Trier at Darmstadt. Transmission of a Palatine letter to Duke Heinrich of Brunswick. Anabaptists in Münster. The Elector sends the burgrave of Starkenburg, Asmus v. Mentzingen, to Duke Ulrich and the Landgrave regarding the answer given to the Elector by King Ferdinand in Ulrich's matter\nDuke Ulrich's response. Württemberg campaign. Refusal of passage through Electoral Palatine territory for royal troops\nRequest to Landgrave Philipp to spare Palatine territory. Further dispatch of Asmus v. Mentzingen to Philipp. Cf. No. 408\nMay. Duke Ulrich and the Landgrave send the land commander Jakob v. Taubenheim and Alexander v.d. Tann to the Elector regarding passage through Palatine territory and provisioning with supplies\nInstructions. The Landgrave's request for transfer of the servant Kitzen is denied by the Elector. The Elector intercedes for Count Friedrich von Löwenstein in connection with the campaign and requests sparing of the city of Heilbronn. Dispatch of Asmus v. Mentzingen to the Landgrave. Skirmishes at Nordheim and Lauffen, wounding of Palatine Count Philipp. Alleged capture of three Hessian supply wagons at a place called Helmstadt. The Landgrave sends his chamber. The Landgrave sends his chamberlain the chamberlain Alexander v.d. Tann to the Elector: surrender of Tübingen; peace negotiations; formation of an alliance between Duke Ulrich and his neighbors or Ulrich’s entry into the Rhenish League; the Elector’s mediation with King Ferdinand; the envoy’s instructions and report. Count Palatine Ott Heinrich sends Nuremberg city physician and surgeon Master Urban Pflaundorfer to Count Palatine Philipp at Asperg. Conference of the Electoral and royal councilors at Gelnhausen. Nos. 338 and 347. June. Elector Ludwig’s mediation with King Ferdinand; capture of Asperg; Philipp von Helmstadt sent to the Landgrave in the Sickingen affair; Asmus v. Mentzingen repeatedly urges peace negotiations; instructions for the envoy and reply to the Elector. Memorandum. Rumor of negotiations in Augsburg between imperial commissioners and the former estates of the Swabian League to form a new league. Mediation by the Elector of Mainz and Duke Georg of Saxony between King Ferdinand and Elector Johann Friedrich of Saxony. Peace mediation by the imperial commissioners and councilors of the former Swabian League estates at Augsburg. July, August. Meeting at Marburg concerning the dispute between the Electoral Palatinate and Hans Thomas von Rosenberg over Boxberg. Instructions for the governor and councilors. Imperial Chamber Court case between the cathedral chapter of Speyer and the city of Esslingen. No. 3060. September. Rudolf Schenck is sent in place of Dr Georg v. Boineburg to Elector Ludwig to obtain his consent to the Treaty of Kaaden; instructions and report of the envoy. October–December. War at Münster; support for the bishop; meeting at Oberwesel; mediation between the Electoral Palatinate and Hans Thomas von Rosenberg; negotiations with the Sickingens concerning restitution of their properties. King Ferdinand summons the former Swabian League estates to meet at Donauwörth on January 6, 1535, to extend the League or negotiate a new one. See Nos. 414, 427, and 2088.",
       "mention": [
         {
+          "place": "absberg"
+        },
+        {
+          "place": "boxberg"
+        },
+        {
+          "person": "Hans Thomas von Rosenberg"
+        },
+        {
           "person": "Heinrich Schenk"
         },
         {
-          "person": "Rudolf Schenk"
+          "place": "helmstadt"
+        },
+        {
+          "place": "nuremberg"
         },
         {
           "person": "Philipp von Helmstadt"
         },
         {
-          "person": "Hans Thomas von Rosenberg"
-        },
-        {
           "person": "Rudolf Schenk"
         },
         {
-          "person": "Hans Thomas von Rosenberg"
+          "place": "sickingen"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [
@@ -32,6 +44,11 @@
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
           "content": "was involved in a dispute with Kurpfalz concerning Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ],
           "date": "1534-08"
         },
         {

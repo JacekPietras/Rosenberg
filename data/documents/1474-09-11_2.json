@@ -12,6 +12,9 @@
           "person": "Diether of Handschuhsheim"
         },
         {
+          "place": "fleckenstein"
+        },
+        {
           "person": "Friedrich von Fleckenstein",
           "personTitle": [
             "Baron"
@@ -19,6 +22,12 @@
         },
         {
           "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "madenburg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [

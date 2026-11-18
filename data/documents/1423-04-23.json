@@ -12,22 +12,19 @@
       "english": "Rüdiger Sützel, Kunz von Ochsenfurt, Kunz von Rosenberg zu Reichelsburg, Kunz von Rosenberg zu Bartenstein, Hans von Dottenheim, Dietrich Geyr, Hartrach Truchszeß and Heinrich Knebel, who, as citizens, have stood in for Reinhard von Uissigheim towards Eberhard von Seinsheim, Master of the Teutonic Order in German and French Lands, for the purchase price of 2,080 guilders for Zimmern Castle, promise to continue to assume the guarantee until the sum is paid, after the aforementioned Eberhard von Seinsheim has extended the payment period by one year.",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Kunz von Rosenberg"
+          "person": "Eberhard von Seinsheim"
         },
         {
           "person": "Hans von Dottenheim"
         },
         {
+          "person": "Kunz von Rosenberg"
+        },
+        {
           "person": "Reinhard von Uissigheim"
         },
         {
-          "person": "Eberhard von Seinsheim"
-        },
-        {
-          "person": "Eberhard von Seinsheim"
+          "place": "zimmern"
         }
       ],
       "facts": [
@@ -40,10 +37,13 @@
           "content": "promised to continue serving as surety for Reinhard von Uissigheim toward Eberhard von Seinsheim for the purchase price of Zimmern Castle until it was paid.",
           "mention": [
             {
+              "person": "Eberhard von Seinsheim"
+            },
+            {
               "person": "Reinhard von Uissigheim"
             },
             {
-              "person": "Eberhard von Seinsheim"
+              "place": "zimmern"
             }
           ]
         },
@@ -56,10 +56,13 @@
           "content": "promised to continue serving as surety for Reinhard von Uissigheim toward Eberhard von Seinsheim for the purchase price of Zimmern Castle until it was paid.",
           "mention": [
             {
+              "person": "Eberhard von Seinsheim"
+            },
+            {
               "person": "Reinhard von Uissigheim"
             },
             {
-              "person": "Eberhard von Seinsheim"
+              "place": "zimmern"
             }
           ]
         },
@@ -73,7 +76,12 @@
         {
           "person": "Eberhard von Seinsheim",
           "type": "generic",
-          "content": "extended the payment deadline for the purchase price of Zimmern Castle by one year."
+          "content": "extended the payment deadline for the purchase price of Zimmern Castle by one year.",
+          "mention": [
+            {
+              "place": "zimmern"
+            }
+          ]
         }
       ],
       "img": [

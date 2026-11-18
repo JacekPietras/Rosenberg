@@ -9,6 +9,9 @@
       "english": "Georg von Hartheim and his wife Walpurga von Rosenberg sell the Fronwiese meadow at Bretzingen to the Chapel of ULF at Dornberg for 300 guilders.\n\nDate: January 10, 1462 (1462 Sunday after Obersten)",
       "mention": [
         {
+          "place": "bretzingen"
+        },
+        {
           "person": "Georg von Hartheim"
         },
         {
@@ -21,6 +24,9 @@
           "type": "generic",
           "content": "sold the Fronwiese at Bretzingen to the chapel of Our Lady at Dornberg with her husband Georg von Hardheim.",
           "mention": [
+            {
+              "place": "bretzingen"
+            },
             {
               "person": "Georg von Hardheim"
             }

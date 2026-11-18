@@ -9,13 +9,16 @@
       "english": "Fief acknowledgment: Asmus von Rosenberg gives fief acknowledgment to Margrave Albrecht of Brandenburg regarding half of the Schloss, village, and court at Waldmannshofen, with all appurtenances. - Seal: Asmus von Rosenberg, knight.",
       "mention": [
         {
-          "person": "Asmus von Rosenberg"
-        },
-        {
           "person": "Asmus von Rosenberg",
           "personTitle": [
             "knight"
           ]
+        },
+        {
+          "person": "Asmus von Rosenberg"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
@@ -25,7 +28,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "acknowledged receiving half of Schloss, village and court of Waldmannshofen as a fief from Margrave Albrecht of Brandenburg."
+          "content": "acknowledged receiving half of Schloss, village and court of Waldmannshofen as a fief from Margrave Albrecht of Brandenburg.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         },
         {
           "person": "Asmus von Rosenberg",
@@ -33,7 +41,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "sealed his fief acknowledgment for Waldmannshofen."
+          "content": "sealed his fief acknowledgment for Waldmannshofen.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ]
     }

@@ -9,6 +9,9 @@
       "mention": [
         {
           "person": "Friedmann Zobel"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -23,10 +26,10 @@
           "content": "exchanged goods at Essfeld and Wolkshausen jointly with her husband Friedmann Zobel and his brother Dietzel Zobel.",
           "mention": [
             {
-              "person": "Friedmann Zobel"
+              "person": "Dietzel Zobel"
             },
             {
-              "person": "Dietzel Zobel"
+              "person": "Friedmann Zobel"
             }
           ]
         },
@@ -47,6 +50,11 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798273",
       "german": "Frideman Zobel und seine Ehewirthin Katherin von Rosenberg vertauschen ihre Güter zu Eygzfelt an Diez Zobel des vorgenannten Bruder gegen etliche Güter zu Wolkzhusen. G. am Samztag vor Peters Tag zu Sunwenden. (c. 2 S.)",
       "english": "Frideman Zobel and his wife Katherin von Rosenberg exchange their goods at Eygzfelt with Diez Zobel, brother of the aforementioned, for certain goods at Wolkzhusen. Given on the Saturday before St. Peter's day at the solstice. (With 2 seals.)",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "person": "Friedmann Zobel",

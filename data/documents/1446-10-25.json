@@ -13,13 +13,7 @@
       "english": "Thomas von Rosenberg, Eberhard von Riedern, Wilhelm von Dottenheim, and Fritz Truchseß, sworn judges of the secret tribunal, issue to Jost von Venningen, commander at Mergentheim, an authenticated copy of a charter of King Frederick III dated 5 September 1446. In it, the king releases several commanders and other persons from the obligation to appear before the free court after the plaintiff, Heinrich Übelacker, failed to appear on three court days despite being summoned, and directs the plaintiff to seek justice at Mergentheim or the superior court at Gelnhausen. Dated 25 October 1446.",
       "mention": [
         {
-          "person": "Thomas von Rosenberg"
-        },
-        {
           "person": "Eberhard von Riedern"
-        },
-        {
-          "person": "Wilhelm von Dottenheim"
         },
         {
           "person": "Friedrich Truchsess"
@@ -29,6 +23,12 @@
           "personTitle": [
             "King"
           ]
+        },
+        {
+          "person": "Thomas von Rosenberg"
+        },
+        {
+          "person": "Wilhelm von Dottenheim"
         }
       ],
       "facts": [

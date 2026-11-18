@@ -10,19 +10,19 @@
       "english": "[Marginal note: Haßfurt, Volkach, Röttingen.] In 1456, on the Saturday after the Ascension of Our Lord, Hans von Grumbach, Bischof, pledged to Ulrich and Heinrich von Rechberg, Thomas, Ulrich, and Georg von Rosenberg, Heinrich Zobel, Ritter, Hans von Absberg, and Heinrich von Seckendorf an annual rent of ten florins on the village of Köhler. Recorded in the first register of Rudolf’s contracts, fols. 1 and 5. The marginal note gives the places Haßfurt, Volkach, and Röttingen.",
       "mention": [
         {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Hans von Absberg"
+        },
+        {
           "person": "Hans von Grumbach",
           "personTitle": [
             "Bischof"
           ]
         },
         {
-          "person": "Thomas von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
+          "person": "Heinrich von Seckendorf"
         },
         {
           "person": "Heinrich Zobel",
@@ -31,10 +31,13 @@
           ]
         },
         {
-          "person": "Hans von Absberg"
+          "place": "roettingen"
         },
         {
-          "person": "Heinrich von Seckendorf"
+          "person": "Thomas von Rosenberg"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [

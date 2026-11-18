@@ -10,14 +10,17 @@
         {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "der Jüngere"
+            "der Ältere"
           ]
         },
         {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "der Ältere"
+            "der Jüngere"
           ]
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -34,6 +37,9 @@
               "personTitle": [
                 "der Ältere"
               ]
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         },
@@ -43,7 +49,12 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "was in dispute with Hans Pfahl over rents from a farm at Rosenberg."
+          "content": "was in dispute with Hans Pfahl over rents from a farm at Rosenberg.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     }

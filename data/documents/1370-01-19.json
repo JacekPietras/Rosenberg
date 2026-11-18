@@ -10,10 +10,16 @@
       "english": "Charles IV confirms the agreement concluded by the brothers Peter, Johann, and Ulrich von Rosenberg with Johann and Sigiost, Landgrafen von Leuchtenberg, under which the latter are to inherit the Rosenberg family's estates if the house of Rosenberg should become extinct.",
       "mention": [
         {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "leuchtenberg"
+        },
+        {
           "person": "Peter von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "rosenberg-town"
         },
         {
           "person": "Ulrich von Rosenberg"

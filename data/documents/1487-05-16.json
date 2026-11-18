@@ -11,16 +11,19 @@
       "english": "Gravestone of Johann Mönch von Rosenberg, died 16 May 1487, and of Eberhard Mönch von Rosenberg, died 14 October 1429.\nIt read at the edge:\nIn the year of the Lord 1487, on the 17th day of May, † the venerable Lord Johannes Mönch von Rosenberg, canon of the churches of Mainz and Worms and jubilarius, whose souls etc.\nThe ancestral arms at the four corners of the stone referred only to Johannes Mönch.\nMönch von Rosenberg | Adelsheim\nKalb von Reinheim | .......\nVariant in Helwich: on the 16th of the month — canon of this church and vicar in spiritual matters, may his soul rest in peace.\nBourdon no. 20. — Helwich, Annalen I f. 322, III f. 858. — Fragmenta Gamans f. 43 (gives only 1). — Gudenus II p. 903 no. 167. — Joannis II pp. 234, 332, 383 on the person.",
       "mention": [
         {
-          "person": "Hans Mönch von Rosenberg"
+          "place": "adelsheim"
         },
         {
           "person": "Eberhard Mönch von Rosenberg"
         },
         {
+          "person": "Hans Mönch"
+        },
+        {
           "person": "Hans Mönch von Rosenberg"
         },
         {
-          "person": "Hans Mönch"
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -37,7 +40,15 @@
         {
           "subject": "The gravestone of Hans Mönch von Rosenberg",
           "type": "generic",
-          "content": "bore ancestral arms of Mönch von Rosenberg, Adelsheim and Kalb von Reinheim."
+          "content": "bore ancestral arms of Mönch von Rosenberg, Adelsheim and Kalb von Reinheim.",
+          "mention": [
+            {
+              "place": "adelsheim"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     },
@@ -49,9 +60,6 @@
       "german": "Totenschild des Joh. Mönch von Rosenberg † 16. V. 1487\n`Venerabilis et generosus Dominus Joannes Munch a Rosenberg Can. Mog. et Worm. obiit 1487. 16. Maji`",
       "english": "Funeral shield of Johann Mönch von Rosenberg, died 16 May 1487.\nThe venerable and noble Lord Johannes Munch von Rosenberg, canon of Mainz and Worms, died on 16 May 1487.",
       "mention": [
-        {
-          "person": "Hans Mönch von Rosenberg"
-        },
         {
           "person": "Hans Mönch von Rosenberg"
         }

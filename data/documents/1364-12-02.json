@@ -14,30 +14,42 @@
           "person": "Eberhard von Schüpf"
         },
         {
+          "person": "Elisabeth von Rosenberg"
+        },
+        {
+          "person": "Götz von Adelsheim"
+        },
+        {
+          "person": "Hans von Berlichingen"
+        },
+        {
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ]
         },
         {
-          "person": "Hans von Berlichingen"
+          "place": "oberschuepf"
         },
         {
-          "person": "Götz von Adelsheim"
+          "person": "Rudolf of Wertheim"
+        },
+        {
+          "person": "Rudolf von Wertheim"
         },
         {
           "person": "Ulrich von Dürn"
         },
         {
-          "person": "Rudolf of Wertheim"
+          "place": "wallduern"
         }
       ],
       "facts": [
         {
           "person": "Konrad von Wittstadt",
           "personTitle": [
-            "gen. Wolper",
-            "Edelknecht"
+            "Edelknecht",
+            "gen. Wolper"
           ],
           "type": "spouse",
           "of": "Elisabeth von Rosenberg"

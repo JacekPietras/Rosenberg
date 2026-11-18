@@ -6,7 +6,12 @@
       "source": "HStAD, E 14 G, 115/15",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1285793",
       "german": "v. REITZENSTEIN: Belehnung mit den Lehen der Mönch v. Rosenberg zu Könchzell (Kraichgau) und Streitigkeiten mit Kurpfalz über das Jagdrecht",
-      "english": "Enfeoffment with the fiefs of the Mönch von Rosenberg family at Könchzell (Kraichgau), and disputes with the Electoral Palatinate over hunting rights."
+      "english": "Enfeoffment with the fiefs of the Mönch von Rosenberg family at Könchzell (Kraichgau), and disputes with the Electoral Palatinate over hunting rights.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

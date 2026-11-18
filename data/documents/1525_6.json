@@ -9,6 +9,9 @@
       "english": "Rothenburg to Zaisolph von Rosenberg at Haldenbergsteten: pillaging by fire of Oberstetten and Wildentierbach.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg zu Haltenbergstetten",
           "type": "generic",
-          "content": "received correspondence from Rothenburg concerning arson damage at Oberstetten and Wildentierbach."
+          "content": "received correspondence from Rothenburg concerning arson damage at Oberstetten and Wildentierbach.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

@@ -12,13 +12,13 @@
       "english": "King Wenceslaus IV orders Heinrich von Rosenberg henceforth to leave Abbot Adam of Goldenkron in peaceful possession of the governance of his monastery.",
       "mention": [
         {
+          "person": "Heinrich von Rosenberg"
+        },
+        {
           "person": "König Wenceslaus",
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Heinrich von Rosenberg"
         }
       ]
     }

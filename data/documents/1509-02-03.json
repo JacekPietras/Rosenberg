@@ -9,19 +9,22 @@
       "english": "Guarantee assignment: Zaisolph von Rosenberg, knight, of Haltenbergstetten, Leonhard von Rosenberg, Amtmann zu Uffenheim, and Steffan von Mentzingen, Amtmann zu Creglingen, guarantee a debt of 1,000 gulden principal and 50 gulden annual interest, which the late Count Gotfried von Hohenlohe had incurred from Linhartt Nordlinger, deceased, and his heirs; following the death of several named guarantors, they now stand as guarantors for Count Hans von Hohenlohe before Carel Nordlinger. - Sealer: the three guarantors.",
       "mention": [
         {
-          "person": "Zaisolph von Rosenberg",
-          "personTitle": [
-            "knight"
-          ]
+          "person": "Gotfried von Hohenlohe"
+        },
+        {
+          "person": "Hans von Hohenlohe"
         },
         {
           "person": "Leonhard von Rosenberg"
         },
         {
-          "person": "Gotfried von Hohenlohe"
+          "place": "schloss-haltenbergstetten"
         },
         {
-          "person": "Hans von Hohenlohe"
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "knight"
+          ]
         }
       ]
     }

@@ -12,7 +12,7 @@
           "person": "Albrecht von Rosenberg"
         },
         {
-          "person": "Albrecht von Rosenberg"
+          "place": "grumbach"
         }
       ],
       "facts": [
@@ -20,6 +20,11 @@
           "person": "Albrecht von Rosenberg",
           "type": "generic",
           "content": "was arrested at the Diet of Augsburg for his involvement in the Grumbach disputes and was later released.",
+          "mention": [
+            {
+              "place": "grumbach"
+            }
+          ],
           "date": "1571"
         }
       ]

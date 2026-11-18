@@ -12,28 +12,31 @@
           "person": "Anna von Hohenlohe"
         },
         {
-          "person": "Wolfgang von Hohenlohe"
-        },
-        {
-          "person": "Philipp von Hohenlohe"
-        },
-        {
           "person": "Friedrich von Hohenlohe"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Philipp Geyer von Giebelstadt"
-        },
-        {
-          "person": "Konrad von Rosenberg"
+          "place": "hohenlohe"
         },
         {
           "person": "Konrad von Rosenberg"
         },
         {
           "person": "Philipp Geyer"
+        },
+        {
+          "person": "Philipp Geyer von Giebelstadt"
+        },
+        {
+          "person": "Philipp von Hohenlohe"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
+          "person": "Wolfgang von Hohenlohe"
         }
       ],
       "facts": [
@@ -43,7 +46,12 @@
             "zu Haltenbergstetten Niederstetten"
           ],
           "type": "generic",
-          "content": "agreed with the Hohenlohe counts on a procedure for collecting tithes, rents and dues disputed before the Imperial Chamber Court while the case remained undecided."
+          "content": "agreed with the Hohenlohe counts on a procedure for collecting tithes, rents and dues disputed before the Imperial Chamber Court while the case remained undecided.",
+          "mention": [
+            {
+              "place": "hohenlohe"
+            }
+          ]
         }
       ]
     }

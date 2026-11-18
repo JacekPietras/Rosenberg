@@ -15,28 +15,31 @@
       "english": "Ludwig, Count Palatine of the Rhine etc., Elector, after the death of Konrad the Elder von Rosenberg, invests Hans Christoph von Rosenberg at his request, simultaneously on behalf of Konrad, Albrecht Christoph, and Georg Siegmund von Rosenberg—the sons of his deceased kinsman Zaisolph von Rosenberg—with one-quarter of the town of Aub, which is held as a fief from the County Palatine of the Rhine, as an inheritable male-line fief, as the deceased Knight Konrad von Rosenberg and his ancestors of Rosenberg previously held from the Palatinate as male-line fiefs. His rights, those of his people, and those of third parties remain unaffected thereby. The vassal and his male-line heirs shall fulfill the obligations associated with the investiture as customary. He confirms the feudal oath sworn by Hans Christoph.\n\nSealer: the issuer (secret seal).\n\nOriginal, parchment, seal preserved in wooden capsule. - No. 1741.\n\nReg. No. 1845",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Hans Christoph von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "aub"
         },
         {
           "person": "Georg Siegmund von Rosenberg"
         },
         {
-          "person": "Zaisolph von Rosenberg"
+          "person": "Hans Christoph von Rosenberg"
         },
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -89,6 +92,9 @@
           "type": "generic",
           "content": "inherited a quarter of Aub as an hereditary Mannlehen after the death of Konrad von Rosenberg the Elder.",
           "mention": [
+            {
+              "place": "aub"
+            },
             {
               "person": "Konrad von Rosenberg",
               "personTitle": [

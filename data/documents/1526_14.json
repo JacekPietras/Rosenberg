@@ -9,6 +9,9 @@
       "english": "Rothenburg to the city scribe Thomas Zweifel: Rothenburg does not permit that the noble witnesses of Zaisolph von Rosenberg be interrogated based only on \"nobleman's oath.\"",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "presented noble witnesses in the process, whose testimony Rothenburg refused to accept solely on an Edelmann’s word."
+          "content": "presented noble witnesses in the process, whose testimony Rothenburg refused to accept solely on an Edelmann’s word.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

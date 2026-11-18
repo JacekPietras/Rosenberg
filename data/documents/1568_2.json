@@ -7,6 +7,11 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=325966",
       "german": "Erlaubnis für Philipp v. Boyneburg zu Laudenbach zur Anweisung eines Wittums für seine Frau, geb. v. Rosenberg",
       "english": "Permission for Philipp v. Boyneburg zu Laudenbach to assign a dower for his wife, née v. Rosenberg",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "subject": "the wife of Philipp von Boyneburg, born von Rosenberg",

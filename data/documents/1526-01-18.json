@@ -9,6 +9,9 @@
       "english": "Margrave Casimir to Rothenburg: court hearing in the dispute between Rothenburg and Zaisolph von Rosenberg.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was involved in a dispute with Rothenburg for which Markgraf Casimir scheduled a court day."
+          "content": "was involved in a dispute with Rothenburg for which Markgraf Casimir scheduled a court day.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

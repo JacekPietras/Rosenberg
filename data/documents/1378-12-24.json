@@ -9,19 +9,22 @@
       "english": "Elect Adolf of Mainz pledges to Götz Vogt von Rieneck, Ritter, for the 4,000 gold gulden that the latter lent him, 333 gulden annually as interest from the revenues of the cellarage at Orb, and appoints him bailiff in Orb.\n\nAdolf [elected Archbishop of Mainz and Bishop of Speyer] pledges by this document to the Ritter Götz Vogt von Rieneck and his heirs, for the 4,000 gold gulden of Frankfurt currency that Götz lent him for the benefit of the Mainz diocese, 333 gulden as interest at 12 gulden per hundred, to be paid annually on St. Martin's Day [11 November] from the revenues of the cellarage at Orb. Should the cellarer of Orb fail to pay on time, Götz and his men may collect the money in the cellarage themselves. The Archbishop may redeem this interest payment with 4,000 gulden, in any year within the period of 14 days before or after Cathedra Petri [22 February], but he must announce this three months in advance. At Götz's wish, the money is to be paid either in Rieneck or in Gemünden. If Götz wants the redemption, the same provisions apply. Afterwards this document is to be returned. The Archbishop further appoints Götz as bailiff in Orb. He may use the revenues of the office and may be removed from the office only after he has first received his money. The Archbishop and the prelates and cathedral canons may make use of Orb, going out of and into it as their own castle, but without harming Götz. Götz, too, may make use of Orb against anyone, going out of it and into the castle without asking. If the town of Orb is lost in wars of the archdiocese, Götz keeps his money; but if Orb is lost in the Archbishop's own wars, he loses office and money, and Mainz loses its castle. If Orb is recovered, however, the debt contract and the bailiff contract revive. The Archbishop provides as guarantors his \"dear confidants and faithful ones\": Gottfried, Graf zu Rieneck, Adolf's \"dear nephew\"; the Mainz cathedral canons Hans von Eberstein, Wilhelm Flach, Claes vom Stein der Jüngere, Hans von Wartenberg, Albrecht Hoffwart and Adolf von Nordecke; further the Ritter Hans von Rosenberg, Werner Colling, and Friedrich von Hutten, as well as Eberhard von Fechenbach, archiepiscopal Vizedom zu Aschaffenburg, Konrad von Uissigheim, Frowin von Hutten, Egen Seman, archiepiscopal Amtmann zu Tauberbischofsheim, Wiprecht Rüdt, archiepiscopal Amtmann zu Buchen, Albrecht Stetenberger, Konrad von Schlüchtern, Friedrich Huttener and Konrad von Fechenbach. In case of breach of contract, the guarantors must, after written or oral summons by the creditors, within one month each send a servant and a horse to Lahr or Gemünden, to a public inn assigned to them, for hostage lodging until the breach of contract is remedied. Horses and servants that drop out are to be replaced. If a guarantor dies or leaves the country, a replacement guarantor of at least equal standing must be provided within one month after summons. If this does not happen, the other guarantors must keep hostage lodging until it is fulfilled. The Archbishop promises his guarantors to release them amicably from the obligation and to keep them free of harm. If the Archbishop obtains for Götz a new document sealed by the cathedral chapter, this document is to be returned. Then the guarantors are also released and free. The guarantors acknowledge their obligations toward Götz and promise to be good guarantors. - Given at Eltville on the eve of the Nativity of the Lord … 1378.",
       "mention": [
         {
-          "person": "Götz von Rieneck",
-          "personTitle": [
-            "Ritter"
-          ]
+          "place": "bischofsheim"
         },
         {
-          "person": "Götz von Rieneck",
-          "personTitle": [
-            "Ritter"
-          ]
+          "place": "buchen"
+        },
+        {
+          "person": "Friedrich von Hutten"
         },
         {
           "person": "Gotfried"
+        },
+        {
+          "person": "Götz von Rieneck",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
           "person": "Hans von Rosenberg",
@@ -30,10 +33,16 @@
           ]
         },
         {
-          "person": "Friedrich von Hutten"
+          "place": "hutten"
         },
         {
           "person": "Konrad von Uissigheim"
+        },
+        {
+          "place": "rieneck"
+        },
+        {
+          "place": "speyer"
         },
         {
           "person": "Wiprecht Rüd"

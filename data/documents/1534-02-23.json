@@ -9,13 +9,16 @@
       "english": "Counter-security by Kunz von Rosenberg for Bishop Konrad of Würzburg regarding the bailiff position at Reigelsberg.",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
           "person": "Konrad of Würzburg",
           "personTitle": [
             "Bishop"
           ]
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "reichelsburg-aub"
         }
       ],
       "facts": [
@@ -29,6 +32,9 @@
               "personTitle": [
                 "Bischof"
               ]
+            },
+            {
+              "place": "reichelsburg-aub"
             }
           ]
         }

@@ -11,13 +11,21 @@
       "mention": [
         {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "captured Johann von Dietzesau while he was travelling under Würzburg safe conduct between Kitzingen and Würzburg and ransomed him."
+          "content": "captured Johann von Dietzesau while he was travelling under Würzburg safe conduct between Kitzingen and Würzburg and ransomed him.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ],
       "img": [

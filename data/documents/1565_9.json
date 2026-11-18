@@ -7,11 +7,24 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-4581046",
       "german": "Präsentationen der Freiherren von Rosenberg und der Grafen von Hatzfeld auf die Pfarrei Uissigheim\n\nLaufzeit: 1565-1646",
       "english": "Presentations of the Barons von Rosenberg and the Counts von Hatzfeld to the parish of Uissigheim\n\nCoverage: 1565-1646",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "uissigheim"
+        }
+      ],
       "facts": [
         {
           "subject": "the Freiherren von Rosenberg",
           "type": "generic",
-          "content": "presented candidates for the parish of Uissigheim between 1565 and 1646."
+          "content": "presented candidates for the parish of Uissigheim between 1565 and 1646.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ]
         }
       ],
       "img": [

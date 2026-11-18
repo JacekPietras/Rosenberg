@@ -9,13 +9,16 @@
       "english": "Count Philipp von Rieneck transfers to Georg von Rosenberg the estate at Impfingen, which formerly belonged to the Stechers family and which Georg von Rosenberg held as a fief from the County of Rieneck, as freehold property, whereupon Jörg enfeoffs him with his quarter of the tithe at Bobstadt.\n\nDuration: 1467 July 28 (Tuesday after St. James 1467)",
       "mention": [
         {
+          "place": "bobstadt"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
           "person": "Philipp von Rieneck"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
+          "place": "rieneck"
         }
       ],
       "facts": [
@@ -24,6 +27,9 @@
           "type": "generic",
           "content": "received the former Stecher estate at Impfingen as freehold from Count Philipp of Rieneck and enfeoffed him with his quarter share of the tithe at Bobstadt.",
           "mention": [
+            {
+              "place": "bobstadt"
+            },
             {
               "person": "Philipp of Rieneck"
             }

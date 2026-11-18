@@ -9,6 +9,9 @@
       "english": "Peace charter: Bishop Gotfried of Würzburg acknowledges that he has amicably reconciled and reached agreement with Heinrich von Seckendorf as guardian of Engelhard von Thüngen and Hannssen von Stein, on behalf of themselves and their wives, as the next heirs of the late Kunz von Rosenberg, regarding the reinstatement of the office of Clingenberg, which had been sold and conveyed to said von Rosenberg subject to redemption.",
       "mention": [
         {
+          "person": "Engelhard von Thüngen"
+        },
+        {
           "person": "Gotfried of Würzburg",
           "personTitle": [
             "Bishop"
@@ -18,10 +21,10 @@
           "person": "Heinrich von Seckendorf"
         },
         {
-          "person": "Engelhard von Thüngen"
+          "person": "Kunz von Rosenberg"
         },
         {
-          "person": "Kunz von Rosenberg"
+          "place": "rosenberg-town"
         }
       ],
       "facts": [

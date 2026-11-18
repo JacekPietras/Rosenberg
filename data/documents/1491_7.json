@@ -13,13 +13,21 @@
       "mention": [
         {
           "person": "Arnold von Rosenberg"
+        },
+        {
+          "place": "buch"
         }
       ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "bought Balthasar Kettel’s share of Buch am Ahorn, including its castle site and a quarter share in the court, for 540 florins."
+          "content": "bought Balthasar Kettel’s share of Buch am Ahorn, including its castle site and a quarter share in the court, for 540 florins.",
+          "mention": [
+            {
+              "place": "buch"
+            }
+          ]
         }
       ]
     }

@@ -8,13 +8,16 @@
       "english": "Engelhard von Rosenberg and Eberhard von Rosenberg and Heinrich Knebel von Bretzenheim acknowledge that they have settled the dispute between Lord Konrad von Hartheim and Götz von Hedekeim concerning a stallion, which Götz had lent to Lord Konrad in the service of the Burgrave of Nuremberg, in such a way that Götz von Hedekeim took his stallion back and Lord Konrad paid him fifteen guilders for it on the most recently past St. Peter's Day \"ad Cathedram.\" Given in the year of the Lord one thousand three hundred ninety-nine, on the very day of Walpurga the virgin.",
       "mention": [
         {
-          "person": "Engelhard von Rosenberg"
-        },
-        {
           "person": "Eberhard von Rosenberg"
         },
         {
+          "person": "Engelhard von Rosenberg"
+        },
+        {
           "person": "Konrad von Hartheim"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
@@ -25,6 +28,9 @@
           "mention": [
             {
               "person": "Konrad von Hartheim"
+            },
+            {
+              "place": "nuremberg"
             }
           ]
         },
@@ -35,6 +41,9 @@
           "mention": [
             {
               "person": "Konrad von Hartheim"
+            },
+            {
+              "place": "nuremberg"
             }
           ]
         }

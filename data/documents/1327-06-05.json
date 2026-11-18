@@ -8,14 +8,28 @@
       "english": "Eberhard von Rosenberg sells to the Bronnbach Monastery two farms at Sindolsheim for 70 pounds of Heller. Given on the Friday in the week of Pentecost. (with seal.)",
       "mention": [
         {
+          "place": "bronnbach"
+        },
+        {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "sindolsheim-church"
         }
       ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "sold two farms at Sindolsheim to Bronnbach Abbey."
+          "content": "sold two farms at Sindolsheim to Bronnbach Abbey.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "sindolsheim-church"
+            }
+          ]
         }
       ]
     }

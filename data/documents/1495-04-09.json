@@ -9,17 +9,25 @@
       "english": "Pope Alexander VI. grants to Philipp von Rosenberg, Doctor of Decretals, the position of Cathedral Cantor at Speyer, which became vacant through the death of Cathedral Cantor Melchior Truchseß.\n\nPeriod: April 9, 1495",
       "mention": [
         {
+          "person": "Melchior Truchsess"
+        },
+        {
           "person": "Philipp von Rosenberg"
         },
         {
-          "person": "Melchior Truchsess"
+          "place": "speyer"
         }
       ],
       "facts": [
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "was appointed cathedral cantor of Speyer by Pope Alexander VI."
+          "content": "was appointed cathedral cantor of Speyer by Pope Alexander VI.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ]
         }
       ],
       "img": [

@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Arnold von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "directed Haßfurt, Volkach and Keller to pay the rent again to the bishop of Würzburg."
+          "content": "directed Haßfurt, Volkach and Keller to pay the rent again to the bishop of Würzburg.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

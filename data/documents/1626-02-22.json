@@ -12,16 +12,25 @@
       "english": "Margaretha von Dienheim, née Ebel, widow, Hans Philipp and Georg Friedrich Eberhard von Dienheim of Angeltürn, and Kunigunde Elisabeth von Dienheim, also acting on behalf of their brother Albrecht, waive all claims to Unterschüpf Castle, which had been sold to the von Rosenberg brothers in 1610. Copy issued at Unterschüpf on 22 February 1626.",
       "mention": [
         {
-          "person": "Margaretha von Dienheim"
+          "person": "Georg Friedrich Eberhard von Dienheim"
         },
         {
           "person": "Hans Philipp von Dienheim"
         },
         {
-          "person": "Georg Friedrich Eberhard von Dienheim"
+          "person": "Kunigunde Elisabeth von Dienheim"
         },
         {
-          "person": "Kunigunde Elisabeth von Dienheim"
+          "person": "Margaretha von Dienheim"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "unterschuepf"
+        },
+        {
+          "place": "wehrkirche-angeltuern"
         }
       ],
       "facts": [
@@ -31,13 +40,19 @@
           "content": "waived all claims to Unterschüpf Castle, which had been sold to the von Rosenberg brothers in 1610, jointly with Hans Philipp, Georg Friedrich Eberhard, and Kunigunde Elisabeth von Dienheim, also on behalf of their brother Albrecht.",
           "mention": [
             {
-              "person": "Hans Philipp von Dienheim"
-            },
-            {
               "person": "Georg Friedrich Eberhard von Dienheim"
             },
             {
+              "person": "Hans Philipp von Dienheim"
+            },
+            {
               "person": "Kunigunde Elisabeth von Dienheim"
+            },
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "unterschuepf"
             }
           ]
         }

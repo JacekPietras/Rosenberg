@@ -9,10 +9,7 @@
       "english": "Archbishop Diether of Mainz, Elector Philipp of the Palatinate, and Bishop Rudolf of Würzburg commit themselves—as recorded in the judgment of Margrave Albrecht of Brandenburg and Bishop Philipp of Bamberg between them on one side and Jörg, Michel, and Arnold von Rosenberg on the other—to return their shares of Schloss Schüpf to the joint heirs (Ganerben) if they renounce claims arising from the capture and destruction of the castle. Furthermore, they commit themselves to support each other against the joint heirs or the Rosenbergs should they fail to comply or break the judgment.\n\nTime span: October 6, 1477 (on Monday after Saint Francis' Day)\n\nSealers: Archbishop Dieter of Mainz; Elector Philipp of the Palatinate; Bishop Rudolf of Würzburg",
       "mention": [
         {
-          "person": "Rudolf of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "person": "Arnold von Rosenberg"
         },
         {
           "person": "Georg von Rosenberg"
@@ -21,7 +18,10 @@
           "person": "Michael von Rosenberg"
         },
         {
-          "person": "Arnold von Rosenberg"
+          "place": "oberschuepf-castle"
+        },
+        {
+          "place": "rosenberg-town"
         },
         {
           "person": "Rudolf of Würzburg",
@@ -37,13 +37,16 @@
           "content": "was to have its shares restored to its Ganerben by the princes of Mainz, the Palatinate and Würzburg if they renounced claims arising from its capture and destruction, under the judgment concerning Georg, Michael and Arnold von Rosenberg.",
           "mention": [
             {
+              "person": "Arnold von Rosenberg"
+            },
+            {
               "person": "Georg von Rosenberg"
             },
             {
               "person": "Michael von Rosenberg"
             },
             {
-              "person": "Arnold von Rosenberg"
+              "place": "wurzburg"
             }
           ]
         }

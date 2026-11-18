@@ -9,14 +9,46 @@
       "english": "Elector Philipp of the Palatinate takes Michael von Rosenberg with his people and goods, namely the farm and sheep farm at Boxberg, half of the village of Schweigern (Sweygern), the Seehof and the hamlet Windischbuch (Buch das wyler da by), Angeltürn (Angeltal), his share of Rosenberg and Bofsheim (Bofftzen) with all appurtenances and his serfs residing around him, under protection for 10 years. The Count Palatine assures to protect and handle them legally, should Michael and his people have recourse before him and his counselors, his court, or the designated instances. Elector Philipp directs his officials, particularly at Weinsberg, Neuenstadt am Kocher and Möckmühl, to observe and secure this protection.\n\nDuration: 1482 January 13 (on Sunday after Saint Erhard's Day)\n\nSealer: Elector Philipp of the Palatinate (secret seal)",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
+          "place": "buch"
+        },
+        {
           "person": "Michael von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schweigern"
+        },
+        {
+          "place": "wehrkirche-angeltuern"
+        },
+        {
+          "place": "weinsberg"
         }
       ],
       "facts": [
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "received protection for ten years from Elector Philipp of the Palatinate for his people and goods, including the farm and sheep farm at Boxberg, half of Schweigern, Seehof, Windischbuch, Angeltürn, and his shares of Rosenberg and Bofsheim."
+          "content": "received protection for ten years from Elector Philipp of the Palatinate for his people and goods, including the farm and sheep farm at Boxberg, half of Schweigern, Seehof, Windischbuch, Angeltürn, and his shares of Rosenberg and Bofsheim.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "schweigern"
+            },
+            {
+              "place": "wehrkirche-angeltuern"
+            }
+          ]
         }
       ],
       "img": [

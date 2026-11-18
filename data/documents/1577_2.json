@@ -15,7 +15,16 @@
       "english": "Ludwig, Count Palatine of the Rhine etc., Elector, confirms to Konrad von Rosenberg, at his request, the consent granted by his deceased father Friedrich, Count Palatine of the Rhine etc., Elector, in accordance with the attached charter of April 6, 1574, to settle a dower for his wife Kunigunde (Königundt), née von Seckendorff, on one quarter of the town of Aub and Baldersheim, which are property of the County Palatine of the Rhine. His and his household's feudal and other rights remain unaffected. -\n\nSeal: the issuer.\n\nOriginal, parchment, seal preserved in wooden capsule. Cf. Reg. No. 1653. - No. 1663.\n\nReg. No. 1757",
       "mention": [
         {
+          "place": "aub"
+        },
+        {
+          "place": "baldersheim"
+        },
+        {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "seckendorff"
         }
       ],
       "facts": [
@@ -27,7 +36,15 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "was permitted to assign his wife a Wittum on a quarter of Aub and property at Baldersheim."
+          "content": "was permitted to assign his wife a Wittum on a quarter of Aub and property at Baldersheim.",
+          "mention": [
+            {
+              "place": "aub"
+            },
+            {
+              "place": "baldersheim"
+            }
+          ]
         }
       ]
     }

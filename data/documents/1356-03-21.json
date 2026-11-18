@@ -9,13 +9,16 @@
       "english": "The brothers Peter, Jodok, Ulrich, and Hans von Rosenberg donate the entire grain tithe from Mauthof to the Church of St. Nicholas in Rosenberg.\n\nSeals: The familiar small seals of the four Rosenberg brothers, all here in red wax, have already been described at CIV. They hang here from parchment strips.",
       "mention": [
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
           "person": "Hans von Rosenberg"
         },
         {
           "person": "Nicolaus in Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "img": [

@@ -9,7 +9,16 @@
       "english": "Count Rudolf (IV.) of Wertheim approves the transfer of the manor at Duttenbrunn, called the Rosenberg Manor, which reverts to him as a fief. Lord Konrad Scherpf, chaplain at Rothenfels, has purchased it from Walther of Hardheim (Harthein) and given it to the new altar at Lohr (Lare), dedicated to St. Catherine the holy virgin. He transfers the charter to the altar established in Lohr in the town (Lare in der Stat), sealed with his seal. Given after the birth of God in the year one thousand three hundred and thirty-nine, on the Tuesday following All Saints' Day.\n\nSeal: Rudolf of Wertheim, attached, s. g. e.",
       "mention": [
         {
+          "place": "hartheim"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Rudolf of Wertheim"
+        },
+        {
+          "place": "wertheim-stiftskirche"
         }
       ],
       "facts": [

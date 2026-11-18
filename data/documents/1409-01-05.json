@@ -11,7 +11,16 @@
       "english": "1409 January 5, place not stated. Hans vom Hirschhorn writes to Ulrich Muhrer von Flugeisberg. A messenger brought Ulrich’s letter of 13 December 1408 to Hans on Christmas Day. Ulrich had claimed that he had long been an enemy of Hans’s uncle, Heupt von Pappenheim der Jüngere, and that his servants captured him without Ulrich’s knowledge. Hans replies that Ulrich von Murach had not formally declared enmity against Heupt von Pappenheim; rather, Ulrich’s servants captured him dishonorably, took him by surprise, and forced him to pledge himself to Ulrich, who then kept him prisoner and ransomed him. At the most recent tournament in Frankfurt, Hans and his brother sent a herald to Ulrich von Murach, who was present, to discuss the wrongful capture and summon him to answer before King Ruprecht, Count Palatine Johann, or three, five, seven, or nine relatives from both sides, and, if found liable, to compensate Heupt von Pappenheim. Ulrich replied that he had already settled matters with Heupt. That night, during the dance, Count Bernhard von Eberstein, Schenk Eberhard and Schenk Konrad von Erbach, Conrad and Philipp, Lords of Frankenstein, Eberhard and Hans von Neipperg, Kunz von Rosenberg, Hans vom Hirschhorn and his brother asked Ulrich to let the princes, lords, knights, and squires present in Frankfurt judge the matter. If he would not, he was to choose knights and squires from Franconia and Swabia, or an arbiter from among Burckhart von Seckendorff zu Franckenberg, Swicker von Gundelfingen, Ulrich von Ahelfingen, or Wernher Nothaft. Alternatively, he could appear before King Ruprecht or Count Palatine Hans and their councillors or a general assembly. Ulrich rejected all these proposals. Hans denies that he had intended to prove Ulrich’s wrongdoing by personal combat. Ulrich had offered to seek justice before Count Palatine Johann when he came to his lands, but now, Hans says, Ulrich merely insults him in his letter and accuses him of lying. Hans again summons Ulrich to appear before King Ruprecht and says that if he refuses, Hans will complain to the king and other princes, lords, knights, and squires. As for Ulrich’s insults, Hans says he does not consider himself such a man that he or any other honorable man should stake life, honor, or property against Ulrich. If Ulrich accuses him after a judgment, Hans will defend his honor. He asks Ulrich not to suppress the letter, since he has a copy to show to princes, lords, knights, and squires.",
       "mention": [
         {
+          "person": "Eberhard von Neipperg"
+        },
+        {
+          "place": "frankenstein"
+        },
+        {
           "person": "Hans vom Hirschhorn"
+        },
+        {
+          "person": "Hans von Neipperg"
         },
         {
           "person": "König Ruprecht",
@@ -23,28 +32,13 @@
           "person": "Konrad von Erbach"
         },
         {
-          "person": "Eberhard von Neipperg"
-        },
-        {
-          "person": "Hans von Neipperg"
-        },
-        {
           "person": "Kunz von Rosenberg"
         },
         {
-          "person": "Hans vom Hirschhorn"
+          "place": "pappenheim"
         },
         {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "King"
-          ]
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "King"
-          ]
+          "place": "seckendorff"
         }
       ]
     }

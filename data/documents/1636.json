@@ -7,6 +7,17 @@
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x21323496103286720210713141736835",
       "german": "Die Verwaltung der Hatzfeldt-Gleichen'schen Ämter in Franken: Haltenbergstetten, Schüpf und Rosenberg (Korrespondenzen).",
       "english": "The administration of the Hatzfeldt-Gleichen estates in Franconia: Haltenbergstetten, Schüpf and Rosenberg (correspondence).",
+      "mention": [
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        }
+      ],
       "facts": [
         {
           "subject": "the former Rosenberg lordships of Haltenbergstetten, Schüpf and Rosenberg",

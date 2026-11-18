@@ -9,13 +9,21 @@
       "mention": [
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "witnessed Emperor Charles IV's grants of privileges to the citizens of Regensburg at Nuremberg."
+          "content": "witnessed Emperor Charles IV's grants of privileges to the citizens of Regensburg at Nuremberg.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ]
         }
       ]
     }

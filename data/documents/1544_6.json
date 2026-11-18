@@ -12,14 +12,19 @@
           "person": "Albrecht von Rosenberg"
         },
         {
-          "person": "Albrecht von Rosenberg"
+          "place": "boxberg"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "complained against the former members of the Swabian League and the Palatinate over the family estate of Boxberg, which had been taken by force from his father in 1523."
+          "content": "complained against the former members of the Swabian League and the Palatinate over the family estate of Boxberg, which had been taken by force from his father in 1523.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ]
     }

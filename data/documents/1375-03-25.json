@@ -9,13 +9,16 @@
       "english": "Brothers Hans and Lutz Mönch von Rosenberg zu Hainstadt, sell to the abbot and convent of the Cistercian monastery in Bronnbach for 200 florins a rent of 18 malters of grain and 1 pound h on their share of the tithes from Dürrhof, Laukenhof, and Winnenden, which the monastery was required to pay to their family annually. They reserve the right to collect an annual tax of 1 malter of monk's cheese derived from the same tithes. If any party proves a feudal claim to rent or tithes, the issuers shall be the feudal holders instead of the purchasers. The purchase is valid for 1,000 years and 1 day. Witnesses: Hans von Rosenberg, Ritter; Konrad von Uissigheim der Ältere; Eberhard von Rosenberg der Ältere; Reinhard von Hartheim",
       "mention": [
         {
-          "person": "Hans Mönch von Rosenberg",
+          "place": "bronnbach"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "zu Hainstadt"
+            "der Ältere"
           ]
         },
         {
-          "person": "Ludwig Mönch von Rosenberg",
+          "person": "Hans Mönch von Rosenberg",
           "personTitle": [
             "zu Hainstadt"
           ]
@@ -33,9 +36,9 @@
           ]
         },
         {
-          "person": "Eberhard von Rosenberg",
+          "person": "Ludwig Mönch von Rosenberg",
           "personTitle": [
-            "der Ältere"
+            "zu Hainstadt"
           ]
         },
         {

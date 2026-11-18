@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "place": "unterschuepf"
         }
       ],
       "facts": [
         {
           "person": "Georg Siegmund von Rosenberg",
           "type": "generic",
-          "content": "sold Jost von Ach the Koppelwiese at Unterschüpf for 300 Gulden."
+          "content": "sold Jost von Ach the Koppelwiese at Unterschüpf for 300 Gulden.",
+          "mention": [
+            {
+              "place": "unterschuepf"
+            }
+          ]
         }
       ],
       "img": [

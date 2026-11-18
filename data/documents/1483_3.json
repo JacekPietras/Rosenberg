@@ -9,10 +9,16 @@
       "english": "Berlichingen and Rosenberg: A dispute between Konrad von Berlichingen and Georg von Rosenberg",
       "mention": [
         {
-          "person": "Konrad von Berlichingen"
+          "place": "berlichingen"
         },
         {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Konrad von Berlichingen"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [

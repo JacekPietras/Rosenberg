@@ -14,10 +14,19 @@
       "english": "Called citizens of (Tauber-) Bischofsheim by the German Order of Wolfgang von Bibra zu Mergentheim and named citizens of Grünsfeld by Georg von Rosenberg as well as mayors, court and municipality in Boxberg, dissolve a dispute over the borders in the wood called the blades between the Teutony and the dispute broken by Rosenberg.",
       "mention": [
         {
-          "person": "Wolfgang von Bibra"
+          "place": "bischofsheim"
+        },
+        {
+          "place": "boxberg"
         },
         {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Wolfgang von Bibra"
         }
       ],
       "facts": [
@@ -34,6 +43,12 @@
           "content": "was represented by named citizens of Tauberbischofsheim in the settlement of a border dispute with Georg von Rosenberg over the woodland called die Klingen, in which Boxberg’s mayor, court, and community also participated.",
           "mention": [
             {
+              "place": "bischofsheim"
+            },
+            {
+              "place": "boxberg"
+            },
+            {
               "person": "Georg von Rosenberg"
             }
           ]
@@ -41,7 +56,12 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was represented by named citizens of Grünsfeld in the settlement of a border dispute with the Teutonic Order over the woodland called die Klingen, in which Boxberg’s mayor, court, and community also participated."
+          "content": "was represented by named citizens of Grünsfeld in the settlement of a border dispute with the Teutonic Order over the woodland called die Klingen, in which Boxberg’s mayor, court, and community also participated.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

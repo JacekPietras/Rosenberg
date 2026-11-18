@@ -9,10 +9,13 @@
       "english": "Feud between Margrave Albrecht, Kraft and Albrecht Counts of Hohenlohe, Hans von Absberg and Georg von Rosenberg on one side, and the Horneck von Hornberg family on the other side; the ceasefire established for several months through the mediation of Margrave Jakob of Baden; and Duke Albert of Austria's assistance rendered to Margrave Albrecht against the von Horneck and the final settlement of this feud.",
       "mention": [
         {
+          "person": "Georg von Rosenberg"
+        },
+        {
           "person": "Hans von Absberg"
         },
         {
-          "person": "Georg von Rosenberg"
+          "place": "hohenlohe"
         },
         {
           "person": "Horneck von Hornberg"
@@ -25,13 +28,13 @@
           "content": "was party to a feud with the Horneck von Hornberg alongside Markgraf Albrecht, Kraft and Albrecht Grafen zu Hohenlohe, and Hans von Absberg.",
           "mention": [
             {
-              "person": "Horneck von Hornberg"
-            },
-            {
               "person": "Albrecht"
             },
             {
               "person": "Hans von Absberg"
+            },
+            {
+              "person": "Horneck von Hornberg"
             }
           ]
         }

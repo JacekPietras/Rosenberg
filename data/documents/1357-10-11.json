@@ -10,10 +10,16 @@
       "english": "Charles IV grants Heinrich, Bischof von Konstanz the privilege of coining Haller in his diocese and appointing a reeve and all secular officials; that the bishop's court, the canons' and clergy's houses in Constance, and the houses of the prelates at Kreuzlingen, Petershausen, and elsewhere shall be free from all taxes, Ungelt, levies, and interference by the council; that the mayor, council, and citizens of Constance who have come of age shall swear allegiance; and that the city of Constance shall impose no Ungelt or new tolls and appoint no council without the bishop's approval and consent, and so forth.\n\nWitnesses: Ernst, Erzbischof von Prag; Johann, Bischof von Olmütz; Johann, Bischof von Leitomischl, Kanzler; Dietrich, Bischof von Minden; Rudolf, Herzog von Sachsen; Friedrich, Markgraf von Meißen; Bolko, Herzog von Falkenberg; Heinrich, Herzog von Sagan; Przemislaus, Herzog von Teschen; Burkhard, Burggraf von Magdeburg; Albrecht, Graf von Anhalt; Rudolf von Wart; Jodok von Rosenberg; Hans von Rosenberg; Sdenko von Sternberg, Hofrichter von Böhmen.",
       "mention": [
         {
-          "person": "Rudolf von Wart"
+          "person": "Hans von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "meissen"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Rudolf von Wart"
         }
       ]
     }

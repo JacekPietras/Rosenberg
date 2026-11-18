@@ -10,16 +10,16 @@
       "english": "In 1456, on the Saturday after the Feast of the Ascension, Hans von Grumbach, Bischof, pledged to Ulrich von Rosenberg and his heirs an annual rent of 1,000 florins on the rent of Röttingen, redeemable, at an interest rate of one florin for every fifty. Register of the first contract of Rudolf, fol. 2. The transcription also records a receipt concerning the castles for 3,000 florins; the archive summary clarifies that these were castles in Anselm von Rosenberg’s possession. Ulrich von Rosenberg’s receipt for 1,000 florins is filed under Röttingen.",
       "mention": [
         {
+          "person": "Anselm von Rosenberg"
+        },
+        {
           "person": "Hans von Grumbach",
           "personTitle": [
             "Bischof"
           ]
         },
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Anselm von Rosenberg"
+          "place": "roettingen"
         },
         {
           "person": "Ulrich von Rosenberg"
@@ -29,7 +29,12 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "received an annual rent secured on the Bede of Röttingen, redeemable."
+          "content": "received an annual rent secured on the Bede of Röttingen, redeemable.",
+          "mention": [
+            {
+              "place": "roettingen"
+            }
+          ]
         }
       ],
       "img": [

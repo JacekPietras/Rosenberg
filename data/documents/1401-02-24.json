@@ -12,15 +12,15 @@
       "english": "King Ruprecht instructs the city of Schweinfurt to obedience towards Arnold von Rosenberg der Ältere, Reichsvogt and Amtmann zu Schweinfurt, appointed by him, C.",
       "mention": [
         {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "King"
-          ]
-        },
-        {
           "person": "Arnold von Rosenberg",
           "personTitle": [
             "der Ältere"
+          ]
+        },
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
           ]
         }
       ],
@@ -28,9 +28,9 @@
         {
           "person": "Arnold von Rosenberg",
           "personTitle": [
-            "der Ältere",
+            "Amtmann zu Schweinfurt",
             "Reichsvogt",
-            "Amtmann zu Schweinfurt"
+            "der Ältere"
           ],
           "type": "generic",
           "content": "was appointed by King Ruprecht.",
@@ -46,9 +46,9 @@
         {
           "person": "Arnold von Rosenberg",
           "personTitle": [
-            "der Ältere",
+            "Amtmann zu Schweinfurt",
             "Reichsvogt",
-            "Amtmann zu Schweinfurt"
+            "der Ältere"
           ],
           "type": "generic",
           "content": "was the subject of King Ruprecht’s order directing Schweinfurt to obey him.",
@@ -79,6 +79,9 @@
       "mention": [
         {
           "person": "Arnold von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
         }
       ]
     }

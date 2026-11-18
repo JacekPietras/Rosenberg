@@ -10,16 +10,22 @@
       "english": "In 1456, on the Saturday after the Ascension, Hans von Grumbach, Bischof, pledged to Ulrich, Ritter, and Heinrich von Rechberg; Thomas, Ritter; Ulrich von Rosenberg and Georg von Rosenberg; Heinrich Zobel, Ritter; Hans von Absberg; and Heinrich von Seckendorf an annual rent of 100 florins on Haßfurt, redeemable for 2,000 florins. Recorded in the first register of Rudolf’s contracts, fols. 1 and 5. [Later addition:] In 1479, on the fourth day after Pentecost, Rudolf, Bischof, redeemed 12½ florins of this annual rent from Arnold von Rosenberg. Recorded in the register of privileges, fol. 151. Marginal additions: Volkach, Ribler, Ottelfingen. Editorial note: The fourth day after Pentecost is counted inclusively; only a few of the named men have been identified, and Thomas’s family name as von Rosenberg is uncertain.",
       "mention": [
         {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Hans von Absberg"
+        },
+        {
           "person": "Hans von Grumbach",
           "personTitle": [
             "Bischof"
           ]
         },
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
+          "person": "Heinrich von Seckendorf"
         },
         {
           "person": "Heinrich Zobel",
@@ -28,13 +34,10 @@
           ]
         },
         {
-          "person": "Hans von Absberg"
+          "place": "rosenberg-town"
         },
         {
-          "person": "Heinrich von Seckendorf"
-        },
-        {
-          "person": "Arnold von Rosenberg"
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [

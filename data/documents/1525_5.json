@@ -9,6 +9,9 @@
       "english": "Zaisolph von Rosenberg to Rothenburg: in the same matter as fol. 540.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "wrote to Rothenburg about the same matter as folio 540."
+          "content": "wrote to Rothenburg about the same matter as folio 540.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

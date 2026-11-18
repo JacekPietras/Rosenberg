@@ -9,7 +9,19 @@
       "english": "Original receipts and powers of attorney from nobles regarding the storage of documents at the Mergentheim Commandery\n\nValidity period: 1454-1538\n\nContains: 1. Power of attorney from Gottling Hünderlin, widow of Eberhard Sturnfeder, on behalf of her brothers Hans and Linhart Hund to receive several documents deposited with the Teutonic Order Komtur at Mergentheim, Sunday after St. Dorothy's Day (February 10), 1454 (Original, paper, with wax seal of Arnold Kreyß, Amtmann zu Grünsfeld); 2. Receipt from Margarethe Zobel, knight Heinrich Zobel, Hans von Absberg, Ulrich von Rosenberg and Georg von Rosenberg to Albrecht von Gebsattel, Teutonic Order Komtur at Mergentheim, regarding the return of documents that Georg von Rosenberg had deposited at the Mergentheim Commandery, Saturday after the Holy Cross Day of Exaltationis (September 15), 1459 (Original, paper, with wax seals of Margarete Zobel, Heinrich Zobel, and Ulrich von Rosenberg); 3. Receipt from Anna Echter, widow of Peter von Stetenberg, and Hammann von Stetenberg, her son, to the Komtur at Mergentheim, Albrecht von Gebsattel, regarding the return of two feudal deeds concerning Gamburg and other Mainz fiefs in the countryside that Peter von Stettenberg had deposited at the Mergentheim Commandery, Monday of the Eve of the Three Kings (January 5), 1461 (Original, paper, with wax seals of both issuers and a dorsal note regarding the return of two further feudal deeds concerning Külsheim and Hundheim); 4. Brothers Heinz and Konz Rüdt von Collenberg and Hans Rüdt von Bödigheim acknowledge to Endris von Grunbach, Teutonic Order Komtur at Mergentheim, the return of a rent deed for 1,400 gulden deposited with him, Saturday after Bartholomew's Day (August 25), 1470 (Original, paper, with 2 wax seals (third seal broken off)); 5. Hans Rüdt von Bödigheim acknowledges to Endris von Grunbach, Teutonic Order Komtur at Mergentheim, the return of a debt instrument for 1,400 gulden deposited with him, Saturday after the Visitation of Our Lady (July 3), 1473 (original, paper, with the issuer’s paper seal); 6. Johann zu Heydeck and Simon von Stetten undertake not to make any claims against the Teutonic Order commandery at Mergentheim if the documents they deposited with Komtur Endris von Grunbach concerning Stetten Castle and the Krautheim district are damaged by fire, water, or otherwise, Saturday after St. Gall’s Day (October 17), 1472 (original, with the remains of the two issuers’ seals); 7. Els, widow of Thomas von Rosenberg, née von Wolfskeel, acknowledges to Komtur Endris von Grunbach the return of a chest containing letters that had been deposited at the Mergentheim commandery, Wednesday before St. Lawrence’s Day (August 6), 1477 (original, paper, with the paper seal of Arnold Kreyß von Lindenfels, Amtmann of Geylichsheim); 8. Ursula von Berlichingen, widow and née von Stettenberg, asks Walther von Cronberg, Grand Master of the Teutonic Order, to issue a receipt for a chest containing several letters deposited with the late Komtur at Würzburg, Wolfgang von Bibra, Sunday after All Saints’ Day (November 3), 1538 (original, paper, with the sender’s paper seal).\n\nExtent: 8 documents.",
       "mention": [
         {
-          "person": "Margaretha Zobel"
+          "place": "cronberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Hans Rüd von Bödigheim"
+        },
+        {
+          "person": "Hans von Absberg"
+        },
+        {
+          "person": "Heinrich Rüd von Collenberg"
         },
         {
           "person": "Heinrich Zobel",
@@ -18,46 +30,28 @@
           ]
         },
         {
-          "person": "Hans von Absberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Margaretha Zobel"
-        },
-        {
           "person": "Heinrich Zobel"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Heinrich Rüd von Collenberg"
         },
         {
           "person": "Kunz Rüd von Collenberg"
         },
         {
-          "person": "Hans Rüd von Bödigheim"
-        },
-        {
-          "person": "Hans Rüd von Bödigheim"
+          "person": "Margaretha Zobel"
         },
         {
           "person": "Thomas von Wolfskeel"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         },
         {
           "person": "Ursula von Berlichingen"
         },
         {
           "person": "Wolfgang von Bibra"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [

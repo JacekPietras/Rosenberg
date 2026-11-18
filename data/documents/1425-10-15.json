@@ -9,16 +9,19 @@
       "english": "Kunz von Rosenberg the Elder issues a receipt for Konrad von Weinsberg for half the share of Reigelsberg Castle for 3,500 gulden, which was redeemed again;Parchment, seal: Konrad von Rosenberg.\n\nValidity: October 15, 1425, place of issue not stated\n\nExtent: 1 document",
       "mention": [
         {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Konrad von Weinsberg"
+        },
+        {
           "person": "Kunz von Rosenberg",
           "personTitle": [
             "the Elder"
           ]
         },
         {
-          "person": "Konrad von Weinsberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
+          "place": "reichelsburg-aub"
         }
       ],
       "facts": [
@@ -32,6 +35,9 @@
           "mention": [
             {
               "person": "Konrad von Weinsberg"
+            },
+            {
+              "place": "reichelsburg-aub"
             }
           ]
         }

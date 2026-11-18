@@ -12,13 +12,21 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "boxberg"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "received an Erblehnrevers from unnamed residents of Boxberg concerning two freeholds granted to them there."
+          "content": "received an Erblehnrevers from unnamed residents of Boxberg concerning two freeholds granted to them there.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

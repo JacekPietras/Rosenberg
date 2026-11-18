@@ -9,13 +9,13 @@
       "english": "Erasmus von Rosenberg acknowledges to Elector Friedrich I. of the Palatinate regarding the quarter share of the castle and outer court at Rosenberg, which Eberhard the Elder von Rosenberg had previously held from the Palatinate as a fief. After the death of Elector Friedrich, the fief shall be received by his son Philipp and their electoral heirs.\n\nDate: September 22, 1460 (on Monday after St. Matthew's Day)\n\nSealer: Erasmus von Rosenberg",
       "mention": [
         {
-          "person": "Erasmus von Rosenberg"
-        },
-        {
           "person": "Eberhard von Rosenberg"
         },
         {
           "person": "Erasmus von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -29,6 +29,9 @@
               "personTitle": [
                 "der Ältere"
               ]
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         }

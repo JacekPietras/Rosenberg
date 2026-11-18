@@ -9,16 +9,16 @@
       "english": "Margrave Albrecht of Brandenburg and Bishop Philipp of Bamberg announce the reconciliation between Archbishop Dieter of Mainz, Elector Philipp of the Palatinate, and Bishop Rudolf of Würzburg on one side, and the brothers Michael and Arnold with their cousin Georg von Rosenberg on the other side, in a feud that had already begun during the time of Archbishop Adolf of Mainz and Elector Friedrich I of the Palatinate.\nThe details are regulated as follows: [1.] That the von Rosenberg shall receive back Schloss and town Boxberg, as well as their share of Schloss Unterschüpf (Schupff) with all appurtenances, but so that they hold these from the three princes as fiefs as before, whereby the quarter that Georg von Rosenberg owned as allodial property at Boxberg also becomes a fief under special provisions; [2.] That the priest Nikolaus Knopf, enfeoffed by the princes with a morning mass at Boxberg, shall exchange within one year for a priest acceptable to the Rosenbergs; [3.] How in future cases the court proceedings before Mainz, Palatinate, and Würzburg courts shall proceed in detail; [4.] That the deeds are considered adjudicated and atoned for, whereby also Michael's and Arnold's brothers, Friedrich von Rosenberg and Georg von Rosenberg, both in the Teutonic Order, are included in this agreement; [5.] That prisoners of both sides shall be released and tributes or similar payments need not be made, whereby special rules apply to Wiprecht Sützel and Sattener at Hauenstein (Hawenstein); [6.] That Johannes von Allendorf, Provost of St. Burkhard in Würzburg, Johann Birnesser, and Georg von Rosenberg shall submit to the judgment of Dietzens von Thüngen for their offenses, and that Georg and others excommunicated in this regard shall be absolved.\n\nRepresented in this matter were Archbishop Dieter of Mainz by his brother Johann von Isenburg, Count of Büdingen, Ludwig von Baunau, and Peter von Eberstein; Count Palatine Philipp by Simon von Balzhofen, Ritter and Vogt zu Heidelberg, and his marshal Erkinger zu Rodenstein; and Bishop Rudolf of Würzburg by Georg von Ellrichshausen and Dr. Kilian von Bibra, both canons of Würzburg, and Konrad von Hutten, Ritter.\n\nDate: August 13, 1477 (the Wednesday after St. Lawrence’s Day).\n\nSealers: Margrave Albrecht of Brandenburg; Bishop Philipp of Bamberg; Archbishop Dieter of Mainz; Elector Philipp of the Palatinate; Bishop Rudolf of Würzburg; Michael von Rosenberg; Arnold von Rosenberg; Georg von Rosenberg.",
       "mention": [
         {
-          "person": "Rudolf of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Georg von Rosenberg"
+          "place": "boxberg"
         },
         {
-          "person": "Georg von Rosenberg"
+          "person": "Burkhard in Würzburg"
+        },
+        {
+          "person": "Erkinger zu Rodenstein"
         },
         {
           "person": "Friedrich von Rosenberg"
@@ -27,19 +27,7 @@
           "person": "Georg von Rosenberg"
         },
         {
-          "person": "Burkhard in Würzburg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Erkinger zu Rodenstein"
-        },
-        {
-          "person": "Rudolf of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "place": "heidelberg"
         },
         {
           "person": "Kilian von Bibra"
@@ -51,19 +39,25 @@
           ]
         },
         {
+          "person": "Michael von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Rudolf of Würzburg",
           "personTitle": [
             "Bishop"
           ]
         },
         {
-          "person": "Michael von Rosenberg"
+          "place": "thuengen"
         },
         {
-          "person": "Arnold von Rosenberg"
+          "place": "unterschuepf"
         },
         {
-          "person": "Georg von Rosenberg"
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -107,7 +101,12 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "had owned a quarter of Boxberg as allodial property, which under the reconciliation was to become a fief."
+          "content": "had owned a quarter of Boxberg as allodial property, which under the reconciliation was to become a fief.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "subject": "Schloss and town Boxberg and the von Rosenberg share of Schloss Unterschüpf",
@@ -115,20 +114,28 @@
           "content": "were to be restored to Michael, Arnold and Georg von Rosenberg as fiefs from the princes of Mainz, the Palatinate and Würzburg.",
           "mention": [
             {
-              "person": "Michael von Rosenberg"
-            },
-            {
               "person": "Arnold von Rosenberg"
             },
             {
               "person": "Georg von Rosenberg"
+            },
+            {
+              "person": "Michael von Rosenberg"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was to submit to the judgment of Dietz von Thüngen along with Johannes von Allendorf and Johann Birnesser concerning their offenses."
+          "content": "was to submit to the judgment of Dietz von Thüngen along with Johannes von Allendorf and Johann Birnesser concerning their offenses.",
+          "mention": [
+            {
+              "place": "thuengen"
+            }
+          ]
         },
         {
           "person": "Michael von Rosenberg",

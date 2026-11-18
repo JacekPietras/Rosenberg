@@ -9,22 +9,37 @@
       "english": "Archbishop Gerlach owes knight Erkenger von Seinsheim (Sawnsheym) and squire Luppolt Küchenmeister (Kuchenmeyster) von Nortenberg on behalf of the heirs of Heinrich von Salza (-cza) from the repurchase of the fortress Gamburg and the castle and town of Külsheim (Kullensheym) 11,250 small gold florins Frankfurt weight, and promises to pay them within 6 years in Würzburg or Mergentheim, each on January 6 (first day) 1,875 small gold florins. If he fails to pay once, then those of his guarantors who are summoned by the creditors shall each send one squire and one horse to Wertheim or Mergentheim; they shall billet there at the archdiocese's expense until the due money is paid. For a departing guarantor the Archbishop shall provide a new one above Miltenberg within 4 weeks after summoning of the creditors, otherwise the remaining guarantors shall billet. \"Provided\" squires and horses must be replaced, and the guarantors released. Furthermore, in the case that the money is not paid within 14 days after January 6 in one year, knight Eberhard Schenk von Roßberg (Rosse-), erzbischöflicher Amtmann zu [Tauber] Bischofsheim, who cannot be removed during the six years, and the citizens there shall hand over the castle and town of Tauberbischofsheim with all rights, revenues and profits to the creditors, who may enjoy them without accounting from the debt until payment. If (is dead) Eberhard, then the Archbishop shall make one of the two knights Konrad von Bickenbach and Konrad Schenk Rauch von Erbach or, if both should have died before, knight Engelhard von Rosenberg bailiff. The citizens of Tauberbischofsheim shall swear to the bailiff to fulfill their obligation. Cathedral dean Rudolf and the cathedral chapter declare their consent and seal with.",
       "mention": [
         {
+          "place": "bischofsheim"
+        },
+        {
           "person": "Eberhard Schenk",
           "personTitle": [
             "knight"
           ]
         },
         {
-          "person": "Konrad von Bickenbach"
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "knight"
+          ]
+        },
+        {
+          "place": "erbach"
         },
         {
           "person": "Konrad Schenk"
         },
         {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "knight"
-          ]
+          "person": "Konrad von Bickenbach"
+        },
+        {
+          "place": "seinsheim"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -36,6 +51,9 @@
           "type": "generic",
           "content": "was designated to become Amtmann at Tauberbischofsheim if Eberhard Schenk von Roßberg and both named replacements had already died.",
           "mention": [
+            {
+              "place": "bischofsheim"
+            },
             {
               "person": "Eberhard Schenk"
             }

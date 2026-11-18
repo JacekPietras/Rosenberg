@@ -9,6 +9,9 @@
       "english": "Count Georg von Bitsch confirms that Emperor Maximilian assigned him to the army at the war camp before Padua, together with Agapet von Hutten and Thomas von Rosenberg.",
       "mention": [
         {
+          "place": "hutten"
+        },
+        {
           "person": "Thomas von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "was assigned to the army with Georg, Graf von Bitsch, and Agapet von Hutten by Kaiser Maximilian at the camp before Padua."
+          "content": "was assigned to the army with Georg, Graf von Bitsch, and Agapet von Hutten by Kaiser Maximilian at the camp before Padua.",
+          "mention": [
+            {
+              "place": "hutten"
+            }
+          ]
         }
       ]
     }

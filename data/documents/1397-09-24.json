@@ -12,6 +12,9 @@
           "person": "Heinrich von Rosenberg"
         },
         {
+          "place": "leuchtenberg"
+        },
+        {
           "person": "Ulrich von Schaunberg"
         }
       ],
@@ -22,7 +25,12 @@
             "Herr zu Rosenberg"
           ],
           "type": "generic",
-          "content": "was named, as \"Sohn und Sweher\" of Johann, Landgrave of Leuchtenberg, among those who may join the alliance between the Landgrave and Johann, Herr of Abensperg."
+          "content": "was named, as \"Sohn und Sweher\" of Johann, Landgrave of Leuchtenberg, among those who may join the alliance between the Landgrave and Johann, Herr of Abensperg.",
+          "mention": [
+            {
+              "place": "leuchtenberg"
+            }
+          ]
         }
       ]
     }

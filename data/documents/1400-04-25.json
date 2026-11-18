@@ -9,10 +9,16 @@
       "english": "April 25, 1400 (Sunday after Easter). Konrad von Weinsberg and his wife Anna née von Hohenlohe, also on behalf of their daughter Margarete, Countess of Schwarzburg née von Brauneck, sell their property at Sechselbach (rent: 12 malter of grain) to the parish, morning mass, and Twelve Apostles at Waldmannshofen for 120 florins. Seals: 1-2. Anna's, 3. Heinrich Count of Schwarzburg. Copy.",
       "mention": [
         {
+          "person": "Anna von Hohenlohe"
+        },
+        {
           "person": "Konrad von Weinsberg"
         },
         {
-          "person": "Anna von Hohenlohe"
+          "place": "schwarzburg"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ]
     }

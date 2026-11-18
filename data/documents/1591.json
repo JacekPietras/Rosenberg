@@ -16,13 +16,24 @@
       "mention": [
         {
           "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received the Waldmannshofen, Schön and Schwal fiefs as Mannlehen after division among the brothers."
+          "content": "received the Waldmannshofen, Schön and Schwal fiefs as Mannlehen after division among the brothers.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ]
     }

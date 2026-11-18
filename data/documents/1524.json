@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "rieneck"
         }
       ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "sealed David Truchseß von Rieneck’s fief grant concerning Sachsenflur."
+          "content": "sealed David Truchseß von Rieneck’s fief grant concerning Sachsenflur.",
+          "mention": [
+            {
+              "place": "rieneck"
+            }
+          ]
         }
       ],
       "img": [

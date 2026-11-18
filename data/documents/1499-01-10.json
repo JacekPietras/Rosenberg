@@ -9,13 +9,10 @@
       "english": "Vinzenz Hans von Brunn declares that he was arrested years ago at Hersbruck (-pruck) with his four riding horses and accused. After a judgment had been rendered in the matter, he has today presented his claims to Elector Philipp of the Palatinate. For these, particularly for the four horses, costs and damages, the prince has paid him 250 gulden, wherefor Vinzenz has released him from all claims and dismissed all demands against those involved in the matter. The issuer requests Nikolaus [Schlick], Lord of Weißkirchen and Elbogen, Friedrich Kessler von Sarmsheim (Keßler von Sarmßheym) as well as Friedrich von Rosenberg, his lords and noblemen, to affix their seals.\n\nDate range: January 10, 1499 (on Thursday after the Three Kings)\n\nSeal: Nikolaus, Lord of Weisskirchen and Elnbogen; Friedrich Kessler von Sarmsheim; Friedrich von Rosenberg",
       "mention": [
         {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
           "person": "Hans von Brunn"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
         }
       ],
       "facts": [
@@ -24,6 +21,9 @@
           "type": "generic",
           "content": "was asked by Vinzenz Johann von Brunn to seal the quittance concerning the settlement of Brunn’s claims against Kurfürst Philipp von der Pfalz.",
           "mention": [
+            {
+              "place": "brunn"
+            },
             {
               "person": "Hans von Brunn"
             }

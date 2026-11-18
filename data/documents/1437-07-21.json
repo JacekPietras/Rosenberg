@@ -10,10 +10,7 @@
       "english": "The transcription records that Konrad von Weinsberg and Kraft von Hohenlohe consented that Bishop Hans von Brunn might assign the Bede levy and tax revenues of Randersacker to Konrad der Ältere and Anselm von Rosenberg. The archive summary identifies the consenting Konrad as Konrad IX von Weinsberg, Kraft as Kraft von Hohenlohe-Weikersheim, and the recipient Konrad der Ältere as Konrad II von Weinsberg. Done on the Sunday before Mary Magdalene’s Day in 1437. Recorded in the register of Omissorum, fol. 231.\n\nLater marginal notes: The toll of Randersacker was pledged to Seitz Fischlein, associated with the Heidingsfeld cellar office. In 1444, the toll book and wine tithe there were pledged to Michael von Wertheim for 3,300 florins, and the receipt belongs to his son Wilhelm.",
       "mention": [
         {
-          "person": "Konrad von Weinsberg"
-        },
-        {
-          "person": "Kraft von Hohenlohe"
+          "person": "Anselm von Rosenberg"
         },
         {
           "person": "Hans von Brunn",
@@ -22,16 +19,10 @@
           ]
         },
         {
-          "person": "Anselm von Rosenberg"
-        },
-        {
           "person": "Konrad von Weinsberg"
         },
         {
           "person": "Kraft von Hohenlohe"
-        },
-        {
-          "person": "Konrad von Weinsberg"
         },
         {
           "person": "Michael von Wertheim"
@@ -44,15 +35,15 @@
           "content": "was designated, together with Konrad von Weinsberg the Elder, to receive the Bede and tax of Randersacker from Bishop Johann von Brunn.",
           "mention": [
             {
-              "person": "Konrad von Weinsberg",
-              "personTitle": [
-                "the Elder"
-              ]
-            },
-            {
               "person": "Hans von Brunn",
               "personTitle": [
                 "Bishop"
+              ]
+            },
+            {
+              "person": "Konrad von Weinsberg",
+              "personTitle": [
+                "the Elder"
               ]
             }
           ]

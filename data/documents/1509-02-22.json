@@ -9,6 +9,9 @@
       "english": "Langhans Lienhard, Bernhard Michel Rottel, and Moritz Regstein of Bobstadt lease the meadows located in the Hessbach from the Teutonic Order at Mergentheim for 30 gulden for a term of six years.\n\nTerm: February 22, 1509 (Cathedra Petri)\n\nSeal description: Seal of Friedrich von Rosenberg",
       "mention": [
         {
+          "place": "bobstadt"
+        },
+        {
           "person": "Friedrich von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "sealed the lease of meadows in the Hessbach to men from Bobstadt by the Teutonic Order at Mergentheim."
+          "content": "sealed the lease of meadows in the Hessbach to men from Bobstadt by the Teutonic Order at Mergentheim.",
+          "mention": [
+            {
+              "place": "bobstadt"
+            }
+          ]
         }
       ],
       "img": [

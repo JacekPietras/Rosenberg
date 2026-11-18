@@ -9,6 +9,9 @@
       "english": "Thomas Zweifel (of Ansbach) to Rothenburg: Report on the negotiations with Zaisolph von Rosenberg.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was the subject of Thomas Zweifel’s report to Rothenburg concerning their negotiations."
+          "content": "was the subject of Thomas Zweifel’s report to Rothenburg concerning their negotiations.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

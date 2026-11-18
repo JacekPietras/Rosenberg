@@ -15,13 +15,13 @@
           ]
         },
         {
-          "person": "Zaisolph von Rosenberg"
+          "place": "schloss-haltenbergstetten"
         },
         {
-          "person": "Melchior of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "place": "wurzburg"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -31,7 +31,15 @@
             "zu Haltenbergstetten"
           ],
           "type": "generic",
-          "content": "bought property and dues in Haltenbergstetten, Vorbachzimmern and Wermutshausen from the St. Johann Stift zum Neumünster in Würzburg."
+          "content": "bought property and dues in Haltenbergstetten, Vorbachzimmern and Wermutshausen from the St. Johann Stift zum Neumünster in Würzburg.",
+          "mention": [
+            {
+              "place": "schloss-haltenbergstetten"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

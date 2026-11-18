@@ -9,16 +9,22 @@
       "english": "Antonius von Rotenhan, provost, Richard von Maßbach, dean, and the Würzburg cathedral chapter acknowledged owing Kunz von Rosenberg zu Bartenstein and his heirs 2,200 Rhenish florins. Rosenberg had used the sum to compensate the brothers Hans von Hirschhorn and Philipp von Hirschhorn for their losses. The chapter pledged its wine and grain tithes at Creglingen as security.",
       "mention": [
         {
-          "person": "Reichard von Maßbach"
+          "person": "Hans von Hirschhorn"
         },
         {
           "person": "Kunz von Rosenberg"
         },
         {
-          "person": "Hans von Hirschhorn"
+          "person": "Philipp von Hirschhorn"
         },
         {
-          "person": "Philipp von Hirschhorn"
+          "person": "Reichard von Maßbach"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -35,6 +41,9 @@
             },
             {
               "person": "Philipp von Hirschhorn"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         }

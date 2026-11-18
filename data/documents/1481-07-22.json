@@ -9,6 +9,9 @@
       "english": "The summary identifies Stephan von Bibra’s service for the bishopric against the von Rosenbergs as participation in the so-called Rosenberg feud. The transcription records that Bishop Rudolf reached an agreement with him on the Sunday after the Division of the Apostles in 1481, compensating him with 400 florins for the loss of seven horses, armor, damages, expenses, and other costs. The database comment notes that the copybook gives the year as 1491.",
       "mention": [
         {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Stephan von Bibra"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Stephan von Bibra",
           "type": "generic",
-          "content": "served the bishopric in fighting against the von Rosenberg family."
+          "content": "served the bishopric in fighting against the von Rosenberg family.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Rudolf von Scherenberg",

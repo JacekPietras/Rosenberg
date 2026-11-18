@@ -11,7 +11,10 @@
       "english": "Eberhard von Rosenberg and his wife Irmtraut sell their mill, called the Hohe Mühle, the mill located next to Rosenberg Castle, and their mill located immediately adjacent to it on the Kirnau (on the same stream) between Sindolsheim and Rosenberg, which was previously held by Eberhard Rüdt, Ritter, to Schöntal Abbey for 90 lb hl.  Guardians: 1) Arnold von Rosenberg, 2) Lord Konrad von Rossriet, 3) Lord Diether von Berlichingen, [all] Ritter, and 4) Herman von Berlichingen  Above the mill, which is called Hohemul, next to the castle of Rosenberg and above the mill located below Sindeltzhein and Rosenberg",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Diether von Berlichingen"
         },
         {
           "person": "Eberhard Rüd",
@@ -20,13 +23,19 @@
           ]
         },
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Diether von Berlichingen"
+          "person": "Eberhard von Rosenberg"
         },
         {
           "person": "Herman von Berlichingen"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schoental-monastery"
+        },
+        {
+          "place": "sindolsheim-church"
         }
       ],
       "facts": [
@@ -38,12 +47,37 @@
         {
           "person": "vogt_zu_Durn",
           "type": "generic",
-          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold the Hohe Mühle beside Rosenberg Castle to Schöntal Abbey."
+          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold the Hohe Mühle beside Rosenberg Castle to Schöntal Abbey.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "schoental-monastery"
+            },
+            {
+              "place": "wallduern"
+            }
+          ]
         },
         {
           "person": "vogt_zu_Durn",
           "type": "generic",
-          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold another mill on the Kirnau between Sindolsheim and Rosenberg to Schöntal Abbey."
+          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold another mill on the Kirnau between Sindolsheim and Rosenberg to Schöntal Abbey.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "schoental-monastery"
+            },
+            {
+              "place": "sindolsheim-church"
+            },
+            {
+              "place": "wallduern"
+            }
+          ]
         },
         {
           "person": "Arnold von Rosenberg",

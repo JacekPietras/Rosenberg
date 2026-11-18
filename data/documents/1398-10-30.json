@@ -15,6 +15,9 @@
           "person": "Friedrich Kemnater von Rosenberg"
         },
         {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Wernlein Wirt von Rosenberg"
         }
       ],
@@ -28,6 +31,9 @@
           "content": "disputed fief properties at Rosenberg with Wernlein Wirt von Rosenberg before the court at Sulzbach.",
           "mention": [
             {
+              "place": "rosenberg-town"
+            },
+            {
               "person": "Wernlein Wirt von Rosenberg"
             }
           ]
@@ -39,6 +45,9 @@
           "mention": [
             {
               "person": "Friedrich Kemnater von Rosenberg"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         }

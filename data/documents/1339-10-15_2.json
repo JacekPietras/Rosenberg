@@ -9,16 +9,25 @@
       "english": "[Aschaffenburg]. – Archbishop Heinrich of Mainz resolves through a reconciliation the dispute with Kraft of Hohenlohe (-loch) and Ulrich, Lord of Hanau, over half of the castle and town of Rieneck (-e) and appurtenances, and Castle Bartenstein, which are fiefs of Mainz. The agreement provides that one half of the aforementioned places shall be held by the archdiocese, while the other half shall be held as a fief from the archdiocese by Kraft (\"because of the bailiwick\" through the daughter of the deceased Count Ludwig) and Ulrich. Wilderich of Vilmar, Mainz's vicedominus at Aschaffenburg (for Mainz), Rudolff of Weren (for Kraft and Ulrich), and Conrad Schenk of Erbach (-pach) as arbitrator shall decide, after investigation, what belongs to the aforementioned lordships. For half of Castle Bartenstein, Kraft and Ulrich shall render services, which are to be determined by Conrad of Bickenbach and Eberhard von Rosenberg (-sin-) (for Mainz), knights Conrad of Tanne and Conrad of Bommersheim (Bom-) (for Kraft and Ulrich), and Count Rudulf of Wert[heim] (-heym) (as arbitrator). Replacement of counselors is done by the respective party; replacement of the arbitrator is done by the counselors, who are to convene for this purpose at Wertheim. The contract is valid only if the cathedral chapter consents. Otherwise, the current reconciliation shall be maintained until Walpurgis Day; thereafter each may act as they please. Castle peace shall prevail on the aforementioned castles and within a quarter mile radius between Mainz, all counts, the women and children of Rieneck (-en), whom the archbishop includes in his reconciliations, and the opposing party. – [Date: given at Aschaffenburg on the Friday before St. Gall's Day 1339.]",
       "mention": [
         {
-          "person": "Kraft of Hohenlohe"
+          "place": "bartenstein"
         },
         {
-          "person": "Konrad Schenk of Erbach"
+          "person": "Eberhard von Rosenberg"
         },
         {
           "person": "Konrad of Bickenbach"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Konrad Schenk of Erbach"
+        },
+        {
+          "person": "Kraft of Hohenlohe"
+        },
+        {
+          "place": "rieneck"
+        },
+        {
+          "place": "wertheim-stiftskirche"
         }
       ],
       "facts": [
@@ -27,6 +36,9 @@
           "type": "generic",
           "content": "was designated with Konrad von Bickenbach for Mainz to determine the services owed by Kraft von Hohenlohe and Ulrich von Hanau for half of Burg Bartenstein.",
           "mention": [
+            {
+              "place": "bartenstein"
+            },
             {
               "person": "Konrad von Bickenbach"
             },

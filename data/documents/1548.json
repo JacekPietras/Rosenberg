@@ -9,16 +9,19 @@
       "english": "Disputes among the joint heirs of Bödigheim regarding properties, usage rights, revenues, authority, and police matters.\n\nPeriod: (1548) 1683-1598\n\nContains: Contains: Wolf Dietrich Rüdt, his widow Felicitas née von Rosenberg, and the guardians of their children (partly also on behalf of some of their subjects in Bödigheim) versus Stephan Rüdt and his son-in-law Hans Georg von Berlichingen regarding differing interpretations of relevant family contracts.",
       "mention": [
         {
-          "person": "Wolf Dietrich Rüd"
+          "place": "boedigheim-kreuzkirche"
         },
         {
           "person": "Felicitas von Rosenberg"
         },
         {
+          "person": "Hans Georg von Berlichingen"
+        },
+        {
           "person": "Stephan Rüd"
         },
         {
-          "person": "Hans Georg von Berlichingen"
+          "person": "Wolf Dietrich Rüd"
         }
       ],
       "facts": [
@@ -34,10 +37,13 @@
           "content": "was involved in a dispute at Bödigheim over goods, revenues, rights and police matters against Stephan Rüdt and Hans Georg von Berlichingen.",
           "mention": [
             {
-              "person": "Stephan Rüd"
+              "place": "boedigheim-kreuzkirche"
             },
             {
               "person": "Hans Georg von Berlichingen"
+            },
+            {
+              "person": "Stephan Rüd"
             }
           ]
         }

@@ -9,13 +9,19 @@
       "english": "Philipp Jakob von Rosenberg and Konrad von Rosenberg zu Rosenberg and Waldmanshoffen, as collators of the parish (Uissigheim) Uissigheim, sell to the monastery (Brunbach) Bronnbach the parsonage house at Uissigheim for 70 gulden.\n\nSeal: Philipp Jakob; Konrad von Rosenberg of Rosenberg and Waldmanshoffen; Konrad Kremer, Dean of the Chapter of Daubergaw Bischoffsheim, Parish Priest of Uissigheim",
       "mention": [
         {
+          "place": "bronnbach"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
           "person": "Philipp Jakob von Rosenberg"
         },
         {
-          "person": "Konrad von Rosenberg"
+          "place": "rosenberg-town"
         },
         {
-          "person": "Konrad von Rosenberg"
+          "place": "uissigheim"
         }
       ],
       "facts": [
@@ -26,7 +32,15 @@
             "zu Waldmannshofen"
           ],
           "type": "generic",
-          "content": "sold the parish benefice house at Uissigheim to Bronnbach Abbey as a patron of the parish."
+          "content": "sold the parish benefice house at Uissigheim to Bronnbach Abbey as a patron of the parish.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ]
         },
         {
           "person": "Konrad von Rosenberg",
@@ -35,7 +49,15 @@
             "zu Waldmannshofen"
           ],
           "type": "generic",
-          "content": "sold the parish benefice house at Uissigheim to Bronnbach Abbey as a patron of the parish."
+          "content": "sold the parish benefice house at Uissigheim to Bronnbach Abbey as a patron of the parish.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ]
         }
       ],
       "img": [

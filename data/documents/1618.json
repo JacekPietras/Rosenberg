@@ -18,10 +18,16 @@
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
+          "person": "Georg Siegmund von Rosenberg"
+        },
+        {
           "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Georg Siegmund von Rosenberg"
+          "place": "waldmannshofen-castle"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -38,7 +44,12 @@
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received the Waldmannshofen chapel, farms and associated rents and tithes as Mannlehen after division with his brothers Konrad and Georg Siegmund."
+          "content": "received the Waldmannshofen chapel, farms and associated rents and tithes as Mannlehen after division with his brothers Konrad and Georg Siegmund.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ]
     }

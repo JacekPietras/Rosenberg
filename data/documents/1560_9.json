@@ -7,6 +7,11 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1710676",
       "german": "Verträge zwischen der Kurpfalz und der Familie von Rosenberg\n\nLaufzeit: 1560-1671",
       "english": "Treaties between the Electoral Palatinate and the von Rosenberg family\n\nTime span: 1560-1671",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "subject": "the von Rosenberg family and the Palatinate",

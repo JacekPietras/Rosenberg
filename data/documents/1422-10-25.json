@@ -8,25 +8,19 @@
       "english": "Sunday before Simon and Jude; Leopold von Seldeneck and Kunz von Rosenberg, both residing in Bartenstein because of a building that Kunz von Rosenberg had built in Bartenstein as an entrance to the chapel of the castle;\n\nseals: Leopold von Seldeneck, Kunz von Rosenberg, Reinhard von Uissigheim and Fritz Truchseß von Baldersheim.",
       "mention": [
         {
-          "person": "Leopold von Seldeneck"
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Leopold von Seldeneck"
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Reinhard von Uissigheim"
+          "place": "bartenstein"
         },
         {
           "person": "Friedrich Truchsess von Baldersheim"
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "person": "Leopold von Seldeneck"
+        },
+        {
+          "person": "Reinhard von Uissigheim"
         }
       ],
       "facts": [
@@ -36,12 +30,22 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "built a structure at Bartenstein as an entrance to the castle chapel."
+          "content": "built a structure at Bartenstein as an entrance to the castle chapel.",
+          "mention": [
+            {
+              "place": "bartenstein"
+            }
+          ]
         },
         {
           "person": "Leopold von Seldeneck",
           "type": "generic",
-          "content": "resided at Bartenstein."
+          "content": "resided at Bartenstein.",
+          "mention": [
+            {
+              "place": "bartenstein"
+            }
+          ]
         },
         {
           "person": "Kunz von Rosenberg",

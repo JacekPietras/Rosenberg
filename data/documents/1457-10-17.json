@@ -9,10 +9,19 @@
       "english": "Ludwig Mönch von Rosenberg, Junker and Friedrich Schriber, parish priest at Hainstadt, settle their dispute over the “Devil’s Estate” at Hainstadt. The priest claims rents from this estate, which the Junker had forbidden him to collect. The parties agree that the Junker is to have the rents paid to the priest, without prejudice to the Junker’s rights in the estate. Because the priest excommunicated the Junker during the dispute, the priest is to go to Würzburg, lift the excommunication, and bring him absolution; the Junker is to pay “whatever it costs.” Witnesses: Hans Rüdt von Bödigheim zu Eubigheim, Junker; the priests Eberhard Waltkem (?) of Altheim, Friedrich Muller of Gersteten, Reichart von Berelthem, and Peter von Breczikem; and Hans Franck of Lauda.",
       "mention": [
         {
-          "person": "Ludwig Mönch von Rosenberg"
+          "place": "hainstadt"
         },
         {
           "person": "Hans Rüd von Bödigheim"
+        },
+        {
+          "place": "lauda"
+        },
+        {
+          "person": "Ludwig Mönch von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ]
     }

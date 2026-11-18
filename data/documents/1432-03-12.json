@@ -12,10 +12,7 @@
       "english": "Kraft von Hohenlohe (Hohennlohe) grants Konrad von Rosenberg the share in Bartenstein Castle, which he had purchased from Hans von Seldeneck, as well as a house and farmstead in [Röttingen], which he had bought from Fritz von Geyselnheim, as a fief. Should the aforementioned Konrad von Rosenberg die without male heirs, his daughters shall be entitled to inheritance. Their sons shall receive the said properties again as a fief.\n\nSealer: Kraft von Hohenlohe\n\nValidity: March 12, 1432 (the nearest Wednesday after Sunday Invocavit)",
       "mention": [
         {
-          "person": "Kraft von Hohenlohe"
-        },
-        {
-          "person": "Konrad von Rosenberg"
+          "place": "bartenstein"
         },
         {
           "person": "Hans von Seldeneck"
@@ -25,6 +22,9 @@
         },
         {
           "person": "Kraft von Hohenlohe"
+        },
+        {
+          "place": "roettingen"
         }
       ],
       "facts": [
@@ -34,7 +34,13 @@
           "content": "received as a man fief from Kraft von Hohenlohe his purchased share in Bartenstein Castle and a house and farmstead in Röttingen.",
           "mention": [
             {
+              "place": "bartenstein"
+            },
+            {
               "person": "Kraft von Hohenlohe"
+            },
+            {
+              "place": "roettingen"
             }
           ]
         },

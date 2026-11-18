@@ -9,10 +9,13 @@
       "english": "Hans von Hartheim sells his share of the castle and outer court at Hardheim to his brother Georg von Hartheim and his wife Walpurga von Rosenberg for 600 guilders.\n\nDate: May 24, 1462 (1462 Monday before Ascension)",
       "mention": [
         {
+          "person": "Georg von Hartheim"
+        },
+        {
           "person": "Hans von Hartheim"
         },
         {
-          "person": "Georg von Hartheim"
+          "place": "hartheim"
         },
         {
           "person": "Walpurga von Rosenberg"
@@ -34,6 +37,9 @@
             },
             {
               "person": "Hans von Hardheim"
+            },
+            {
+              "place": "hartheim"
             }
           ]
         }

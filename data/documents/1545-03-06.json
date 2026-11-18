@@ -9,13 +9,25 @@
       "english": "Settlement between Philipp von Helmstadt, Palatine councillor, Johann and Alexander von Helmstatt, mediated by Alexander's mother Margarete, widow of Alexander von Helmstatt née von Rosenberg, Balthasar von Rosenberg, Vogt zu Lauterburg, Philipp Euler von Dieburg, Electoral Palatinate chambermaster, and Hans von Helmstadt. Alexander relinquishes his one-third share of the Bischofsheim stone house because the stone structure has deteriorated so much that he can no longer maintain his third. In return he receives 80 florins or an annual rent of 4 florins at Martinmas [November 11] from the two other co-owners, and the Schnellergarten. The castle peace remains unaffected, but Alexander is not required to provide any services for it. Seals: Philipp, Johann and Alexander von Helmstatt\n\nDate range: 1545 (1545 Mar 6 - Fri after Reminiscere Heidelberg)",
       "mention": [
         {
-          "person": "Philipp von Helmstadt"
-        },
-        {
           "person": "Balthasar von Rosenberg"
         },
         {
+          "place": "bischofsheim"
+        },
+        {
           "person": "Hans von Helmstadt"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
+          "place": "helmstadt"
+        },
+        {
+          "person": "Philipp von Helmstadt"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -25,7 +37,15 @@
             "Vogt zu Lauterburg"
           ],
           "type": "generic",
-          "content": "mediated a settlement between Philipp, Johann and Alexander von Helmstatt over the Bischofsheim Steinhaus."
+          "content": "mediated a settlement between Philipp, Johann and Alexander von Helmstatt over the Bischofsheim Steinhaus.",
+          "mention": [
+            {
+              "place": "bischofsheim"
+            },
+            {
+              "place": "helmstadt"
+            }
+          ]
         },
         {
           "person": "Margaretha von Rosenberg",

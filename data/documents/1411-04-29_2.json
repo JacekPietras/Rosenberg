@@ -9,16 +9,19 @@
       "english": "The brothers Heinrich, Georg, and Konrad Marschalk zu Pappenheim sold their cousin Sigmund an annual 2-florin share of Pappenheim’s town tax for 56 florins. The buyer was to return the tax share and deed if the sellers later transferred rural properties yielding 2 florins a year. Hans von Rosenberg, their brother-in-law, was named as a sealer; the archive describes the seals as missing.",
       "mention": [
         {
-          "person": "Heinrich Marschalk zu Pappenheim"
+          "person": "Georg Marschalk zu Pappenheim"
         },
         {
-          "person": "Georg Marschalk zu Pappenheim"
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Heinrich Marschalk zu Pappenheim"
         },
         {
           "person": "Konrad Marschalk zu Pappenheim"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "pappenheim"
         }
       ],
       "facts": [
@@ -46,13 +49,16 @@
           "content": "sealed the sale of an annual share of the Pappenheim town tax by Heinrich, Georg and Konrad Marschalk zu Pappenheim to Sigmund Marschalk zu Pappenheim.",
           "mention": [
             {
-              "person": "Heinrich Marschalk zu Pappenheim"
-            },
-            {
               "person": "Georg Marschalk zu Pappenheim"
             },
             {
+              "person": "Heinrich Marschalk zu Pappenheim"
+            },
+            {
               "person": "Konrad Marschalk zu Pappenheim"
+            },
+            {
+              "place": "pappenheim"
             },
             {
               "person": "Siegmund Marschalk zu Pappenheim"

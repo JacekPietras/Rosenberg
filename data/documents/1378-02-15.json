@@ -9,10 +9,13 @@
       "english": "The brothers Peter and Hans von Rosenberg sell the rent from the Kothof to Johann, parish priest of Rosenberg, and the church of Rosenberg for 21 talents of Viennese pennies.\n\nSeals: See CIV and CXIV for the seals.",
       "mention": [
         {
+          "person": "Hans von Rosenberg"
+        },
+        {
           "person": "Peter von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "rosenberg-town"
         }
       ],
       "img": [

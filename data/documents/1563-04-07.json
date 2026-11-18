@@ -19,7 +19,13 @@
           ]
         },
         {
+          "place": "kocherstetten-marienkirche"
+        },
+        {
           "person": "Philipp Jakob von Rosenberg"
+        },
+        {
+          "place": "unterbalbach"
         }
       ],
       "facts": [
@@ -31,6 +37,9 @@
           "type": "generic",
           "content": "decided with Philipp Jakob von Rosenberg zu Rosenberg and Eberhard von Stetten zu Kocherstetten the dispute between brothers Wilhelm and Christoph Sützel over their mills and debts.",
           "mention": [
+            {
+              "place": "kocherstetten-marienkirche"
+            },
             {
               "person": "Philipp Jakob von Rosenberg"
             }

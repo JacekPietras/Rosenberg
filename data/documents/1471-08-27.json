@@ -9,22 +9,28 @@
       "english": "Count Palatine Friedrich confirms that his court, at the request of Ulrich, Dean of Speyer, Niklaus, Dean of Worms, Ludwig, Canon [of Mainz], and Hans von Helmstadt, sons of the late Hans von Helmstadt of Grombach (\"Grum-\"), on the one hand, and the spouses Hans and Else Hoffkursener on the other, has rendered judgment in their dispute over a house in Heidelberg. The plaintiffs, represented by Philipp Mey, Vicar of the Prince-Bishopric of Speyer, demand delivery of the house as heirs. The defendants, represented by the appointed attorney from the Ruggericht, first raise the objection that the heirs are incomplete, since Ritter Asmus von Rosenberg also belongs among them. After this is dismissed, they present the assignment of the late Hans von Helmstadt regarding his and his late brother Ritter Wiprecht's share of the house for Else Kursener, in which the house is transferred to her as wages (\"lidlon\") until her death without heirs. The court rejects the plaintiffs' objection that this assignment was made after their mother's death and is invalid due to being executed with a broken hand. Court: Hans von Gemmingen of Gutenberg, Court Judge, Gottfried von Neunhausen (\"Nünhusen\"), Custor of Wimpfen, Ritter Martin von Helmstadt, Dr. Endres Pellendorfer, Dr. Jakob Wachenheim, Wendel von Remchingen, Heinrich von Handschuhsheim, Hans von Ehrenberg and Eberhard von Gemmingen the Elder. Sealer: Issuer with privy seal\n\nDuration: 1471 (August 27, 1471 — Tuesday before Saint Bartholomew, Heidelberg)",
       "mention": [
         {
-          "person": "Hans von Helmstadt"
-        },
-        {
-          "person": "Hans von Helmstadt"
-        },
-        {
           "person": "Asmus von Rosenberg",
           "personTitle": [
             "Ritter"
           ]
         },
         {
-          "person": "Hans von Helmstadt"
+          "person": "Eberhard von Gemmingen",
+          "personTitle": [
+            "the Elder"
+          ]
         },
         {
           "person": "Hans von Gemmingen"
+        },
+        {
+          "person": "Hans von Helmstadt"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
+          "person": "Heinrich von Handschuhsheim"
         },
         {
           "person": "Martin von Helmstadt",
@@ -33,20 +39,19 @@
           ]
         },
         {
-          "person": "Heinrich von Handschuhsheim"
-        },
-        {
-          "person": "Eberhard von Gemmingen",
-          "personTitle": [
-            "the Elder"
-          ]
+          "place": "speyer"
         }
       ],
       "facts": [
         {
           "person": "Asmus von Rosenberg",
           "type": "generic",
-          "content": "was among the heirs in a dispute over a house in Heidelberg."
+          "content": "was among the heirs in a dispute over a house in Heidelberg.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ]
         }
       ]
     }

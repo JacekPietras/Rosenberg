@@ -12,6 +12,9 @@
       "english": "Report of Dr. Johann Siglin on behalf of the House Commander at Mergentheim to Deutschmeister Walther von Cronberg concerning a letter from the Commander of Virnsberg regarding Kaspar Dorlein (original instrument, with the paper seal of Wolf von Rosenberg, House Commander at Mergentheim)\n\nDate: July 6, 1529\n\nExtent: 1 writing.",
       "mention": [
         {
+          "place": "cronberg"
+        },
+        {
           "person": "Wolf von Rosenberg"
         }
       ],
@@ -22,7 +25,12 @@
             "Hauskomtur zu Mergentheim"
           ],
           "type": "generic",
-          "content": "sealed Johann Siglin’s report to Deutschmeister Walther von Cronberg."
+          "content": "sealed Johann Siglin’s report to Deutschmeister Walther von Cronberg.",
+          "mention": [
+            {
+              "place": "cronberg"
+            }
+          ]
         }
       ]
     }

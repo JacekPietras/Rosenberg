@@ -9,10 +9,13 @@
       "english": "Count Palatine Friedrich I., as guardian of his minor cousin Count Palatine Philipp, enfeoffs Erasmus von Rosenberg with the quarter of the castle and forecourt at Rosenberg, which Eberhard the Elder von Rosenberg had previously held from the Palatinate as a male fief.\n\nPeriod: June 23, 1451 (on the eve of the feast of Corpus Christi)\n\nSealer: Count Palatine Friedrich I.",
       "mention": [
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Erasmus von Rosenberg"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -26,6 +29,9 @@
               "personTitle": [
                 "der Ältere"
               ]
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         }

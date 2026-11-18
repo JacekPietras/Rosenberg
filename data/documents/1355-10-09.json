@@ -10,6 +10,12 @@
       "english": "Citing a charter of Emperor Friedrich I for Duke Vladislav of Bohemia concerning the tithes to be paid by the dukes of Poland and Silesia, with which King Johann later enfeoffed them; King Rudolf’s confirmation that the duchies of Breslau and Silesia belonged to Bohemia; the hereditary pact between King Ottokar II of Bohemia and Duke Heinrich of Breslau; the agreements of King Johann and Emperor Heinrich VII with Duke Heinrich concerning the County of Glatz; the Margraviates of Bautzen and Görlitz, once granted to the Margraves of Brandenburg by Ottokar II and recovered by King Johann; and the overlordship of the kings of Bohemia over the dukes of Silesia and Poland—especially those of Liegnitz, Brieg, Münsterberg, Oels, Glogau, Sagan, Opole, Falkenberg, Strelitz, Teschen, Cosel, Beuthen, Steinau, and Auschwitz, as well as those of Masovia and Plock—Charles IV permanently unites with the Crown of Bohemia the Duchies of Breslau and Silesia, with the cities of Breslau, Neumarkt, Frankenstein, Steinau, Guhrau, part of Glogau, and Namslau, and the Margraviates of Bautzen and Görlitz.\n\nWitnesses: Ernst, Archbishop of Prague; Rudolf der Ältere, Duke of Saxony; Preczlaw, Bishop of Breslau and chancellor; Johann, Bishop of Olomouc; Johann, Bishop of Litomyšl; Dietrich, Bishop of Minden; Heinrich, Bishop of Lebus; Rudolf the Jüngere, Duke of Saxony; Johann, Duke of Troppau; Burkhard, Burgrave of Magdeburg and court steward; Heinrich, Count of Schwarzburg; Johann, Burgrave of Magdeburg; Albrecht, Count of Anhalt; Hans von Rosenberg; Johann von Sternberg; Sbinko von Hasenburg; Bohuslaw von Schwamberg; Bozko von Kunstadt; Davessius von Kempnitz; Ulrich von Usk.",
       "mention": [
         {
+          "place": "frankenstein"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
           "person": "König Hans",
           "personTitle": [
             "King"
@@ -22,19 +28,7 @@
           ]
         },
         {
-          "person": "König Hans",
-          "personTitle": [
-            "King"
-          ]
-        },
-        {
-          "person": "König Hans",
-          "personTitle": [
-            "King"
-          ]
-        },
-        {
-          "person": "Hans von Rosenberg"
+          "place": "schwarzburg"
         }
       ]
     }

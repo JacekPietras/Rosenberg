@@ -15,7 +15,7 @@
       "english": "Rudolf, Bishop of Würzburg (Wirtzburgk) and Duke of Franconia, enfeoffs the knight Asmus von Rosenberg, Amtmann zu Uffenheim, with the following properties as Mannlehen (hereditary fiefs): half of the chapel fief at Schloss Waldmannshofen (Waltmanshoven); two farms at Gülchsheim (Gulichsen), occupied by Mathes Hertlein and Lorenz Ecke respectively; 1 florin and one Shrove Tuesday chicken as annual rent; from Steinach below Brauneck (Steynach unter Brauneck) on a property occupied by Contz Koler; further annual rents of 4 measures each of grain and barley, plus 4 Shrove Tuesday chickens, deliverable from Geiselheim (Geysselheym) from the farm occupied by Contz Heppel; all of this was previously purchased by knight Asmus from our loyal retainer Reinhard Truchseß alone. Bishop Rudolf also enfeoffs knight Asmus with the tithe and all appurtenances at Gülchsheim, which knight Asmus has purchased from brothers Reinhard and Asmus Truchseß. The rights of the foundation of Würzburg remain unaffected by this enfeoffment. -\n\nSeal: the issuer. - On Wednesday after Saint Ulrich's Day.\n\nOriginal, parchment, seal broken. - No. 566.\n\nReg. No. 601",
       "mention": [
         {
-          "person": "Rudolf of Würzburg"
+          "person": "Asmus Truchsess"
         },
         {
           "person": "Asmus von Rosenberg",
@@ -27,22 +27,28 @@
           "person": "Reinhard Truchsess"
         },
         {
-          "person": "Reinhard Truchsess"
+          "person": "Rudolf of Würzburg"
         },
         {
-          "person": "Asmus Truchsess"
+          "place": "waldmannshofen-castle"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Asmus von Rosenberg",
           "personTitle": [
-            "Ritter",
-            "Amtmann zu Uffenheim"
+            "Amtmann zu Uffenheim",
+            "Ritter"
           ],
           "type": "generic",
           "content": "received as Mannlehen from Bishop Rudolf of Würzburg the half of the chapel fief at Schloss Waldmannshofen and property and income at Gülchsheim, Steinach and Geiselheim, previously bought from Reinhard Truchseß.",
           "mention": [
+            {
+              "person": "Reinhard Truchsess"
+            },
             {
               "person": "Rudolf of Würzburg",
               "personTitle": [
@@ -50,30 +56,30 @@
               ]
             },
             {
-              "person": "Reinhard Truchsess"
+              "place": "waldmannshofen-castle"
             }
           ]
         },
         {
           "person": "Asmus von Rosenberg",
           "personTitle": [
-            "Ritter",
-            "Amtmann zu Uffenheim"
+            "Amtmann zu Uffenheim",
+            "Ritter"
           ],
           "type": "generic",
           "content": "received the tithe at Gülchsheim as fief from Bishop Rudolf of Würzburg after buying it from Reinhard and Asmus Truchseß.",
           "mention": [
             {
-              "person": "Rudolf of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
+              "person": "Asmus Truchsess"
             },
             {
               "person": "Reinhard Truchsess"
             },
             {
-              "person": "Asmus Truchsess"
+              "person": "Rudolf of Würzburg",
+              "personTitle": [
+                "Bishop"
+              ]
             }
           ]
         }

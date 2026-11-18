@@ -10,22 +10,22 @@
       "english": "During the aforesaid Rosenberg feud, Hieronymus von Rosenberg, Ritter, asserted a claim against Bishop Rudolf. He alleged that the bishop and his men had damaged him at Musdorf and owed him 500 florins for grain he had lent to Bishop Hans von Brunn. The archive summary identifies Musdorf as Hieronymus’s village and explains the 500-florin amount as a debt he claimed from Rudolf for the grain. Michael von Schwarzenberg, Herr, Christoph Marschall, Ritter, and Johann Hobach, canon of Neumünster, settled the dispute: Rudolf was to owe Hieronymus nothing on account of the claim. The summary identifies the arbiters more fully as Michael III von Schwarzenberg, Christoph von Oberndorf, and Bishop’s secretary Johann Hobach. Done on Saturday after St Anthony’s Day, 1488. Recorded in the fourth register of Rudolf’s contracts, fol. 47; original filed under letter R, contracts. Editorial note: Further details of the dispute appear in the preceding entries.",
       "mention": [
         {
-          "person": "Hieronymus von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Hans von Brunn",
           "personTitle": [
             "Bishop"
           ]
         },
         {
-          "person": "Michael von Schwarzenberg"
+          "person": "Hieronymus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
           "person": "Michael von Schwarzenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [

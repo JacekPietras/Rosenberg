@@ -9,17 +9,34 @@
       "english": "Testimonies of peasants from Oberwörnitz, Ulrichshausen, Oberstetten, Windisch Rockenfeld, Wettringen, Kleinbärenweiler, Wildentierbach, Gammesfeld, Obereichenroth, Enzenweiler, Böhmweiler, Leuzenbronn, Schnepfendorf, Ober- and Unteröstheim, Brunzendorf, Lohr, Winden, (Tauber-)Rockenfeld, Vorbach, Traisdorf, Wolfsbuch (\"Buch where one catches the wolves\"), Schonach, Schwarzenbronn, Finsterlohr, Lichtel, Altenkreuth, Weiler, Adelshofen, Rückershofen, Reichardsroth, Nordenberg, Oberscheckenbach, Lohrbach, Hummersweiler, Brettheim, Taubermühle, Hilgartshausen, Reupach, Weikersholz, ... etc.; all places \"belonging to the Landgrave\", \"belonging to Zainsolf (von Rosenberg)\", \"belonging to Schillingsfürst\", \"Hohenloch\". Inquiries concerning the damages inflicted on Zaisolph von Rosenberg by the citizens of Rothenburg, as well as those by Hohenlohe, Adam von Thüngen, and zu Grünsfeld.",
       "mention": [
         {
-          "person": "Zaisolph von Rosenberg"
+          "person": "Adam von Thüngen"
         },
         {
-          "person": "Adam von Thüngen"
+          "place": "buch"
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was the subject of inquiries into damage inflicted on him by Rothenburg’s citizens during the Peasants’ War."
+          "content": "was the subject of inquiries into damage inflicted on him by Rothenburg’s citizens during the Peasants’ War.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

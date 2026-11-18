@@ -10,13 +10,27 @@
       "mention": [
         {
           "person": "Asmus von Rosenberg"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "schwarzenberg"
         }
       ],
       "facts": [
         {
           "person": "Asmus von Rosenberg",
           "type": "generic",
-          "content": "helped settle the feud between Clausen von Bernheim and Rothenburg together with Johann, Lord of Schwarzenberg, and Hans von Leonrod."
+          "content": "helped settle the feud between Clausen von Bernheim and Rothenburg together with Johann, Lord of Schwarzenberg, and Hans von Leonrod.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            },
+            {
+              "place": "schwarzenberg"
+            }
+          ]
         }
       ]
     }

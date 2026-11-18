@@ -10,10 +10,13 @@
       "english": "Archbishop Heinrich of Mainz enters (for our need and benefit, that of our chapter and land) into a six-year alliance with Bishop Otto of Würzburg and Burgrave Johann of Nürnberg (Nurn-) for mutual assistance (in daily war with 50 men, under certain circumstances also with full force). Booty of every kind is divided \"proportionally\"; captured castles not held as fiefs by any of the allies are to be demolished, or disposition shall be made according to agreement. For \"pacts and other works\" they share costs \"jointly.\" The archbishop exempts: the See of Rome, the Roman Empire, all Electors, his suffragans, the Count Palatines Rudolf, Rupert the Elder, and Rupert the Younger; Margrave Friedrich of Meißen; the Landgrave of Hesse; Counts Gerlach of Nassau, Johan of Sponheim, Ulrich of Württemberg (Wirten-), their lords, men, etc., and all his allies. If a party leaves the land, the bailiff must fulfill everything. The arbitrators designated are: for the archbishop, knight Eberhard von Rosenberg (-sin-), archiepiscopal vogt at Dürn, or the local bailiff; for the bishop, knight Conrad Jemerer, episcopal bailiff at Hohenburg (or his successor); for Johann, Burghard of Seckendorf (-ckin-), his bailiff at Ansbach (Onolds-) or his successor. Count Rudolf of Wertheim shall serve as arbitrator. If necessary, they are to convene at Wertheim. Counts Bertold and Heinrich of Henneberg (-nen-), of Öttingen (Otin-), and Ludwig of Hohenlohe (-loch) may join this alliance before Martinmas.",
       "mention": [
         {
-          "person": "Otto of Würzburg",
+          "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "Bishop"
+            "knight"
           ]
+        },
+        {
+          "person": "Friedrich of Meißen"
         },
         {
           "person": "Hans of Nürnberg",
@@ -22,19 +25,25 @@
           ]
         },
         {
-          "person": "Friedrich of Meißen"
+          "person": "Ludwig of Hohenlohe"
         },
         {
-          "person": "Eberhard von Rosenberg",
+          "person": "Otto of Würzburg",
           "personTitle": [
-            "knight"
+            "Bishop"
           ]
         },
         {
           "person": "Rudolf of Wertheim"
         },
         {
-          "person": "Ludwig of Hohenlohe"
+          "place": "seckendorff"
+        },
+        {
+          "place": "wallduern"
+        },
+        {
+          "place": "wertheim-stiftskirche"
         }
       ],
       "facts": [
@@ -45,7 +54,15 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "was designated arbitrator for the archbishop of Mainz in his alliance with the bishop of Würzburg and the Burggraf of Nürnberg."
+          "content": "was designated arbitrator for the archbishop of Mainz in his alliance with the bishop of Würzburg and the Burggraf of Nürnberg.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

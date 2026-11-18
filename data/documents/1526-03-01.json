@@ -12,6 +12,9 @@
           "person": "Albrecht von Adelsheim"
         },
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -23,6 +26,9 @@
           "mention": [
             {
               "person": "Albrecht von Adelsheim"
+            },
+            {
+              "place": "rothenburg"
             }
           ]
         }

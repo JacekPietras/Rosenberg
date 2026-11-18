@@ -9,10 +9,13 @@
       "english": "Albrecht [Achilles], Margrave of Brandenburg and Burgrave of Nürnberg, declares: He has peacefully settled the feud between Georg von Rosenberg of Boxberg and Klaus Mager on one side, and the mayor, council, and community of Schwäbisch Hall on the other. Prisoners shall be released; claims from taxation, foraging, and plundering are invalid. Georg von Rosenberg shall not take any action against the city for five years, after which he must give one month's notice before declaring a feud. The city shall not take any action against him during this one-month period.\n\nDuration: 1470 January 23 (Tuesday after St. Vincent's Day)\n\nSeal: A.",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
+          "place": "boxberg"
         },
         {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [

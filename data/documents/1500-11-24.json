@@ -13,6 +13,12 @@
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -22,7 +28,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was awarded 200 gulden in compensation from Philipp Stumpf zu Domeneck, payable at Heidelberg by Saint Lucy’s Day."
+          "content": "was awarded 200 gulden in compensation from Philipp Stumpf zu Domeneck, payable at Heidelberg by Saint Lucy’s Day.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ]
         },
         {
           "person": "Erasmus von Rosenberg",

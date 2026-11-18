@@ -17,16 +17,13 @@
           "person": "Kunz Mönch von Rosenberg"
         },
         {
-          "person": "Raban von Helmstadt"
-        },
-        {
-          "person": "Kunz Mönch von Rosenberg"
-        },
-        {
           "person": "Raban von Helmstadt",
           "personTitle": [
             "Edelknecht"
           ]
+        },
+        {
+          "person": "Raban von Helmstadt"
         }
       ],
       "facts": [
@@ -72,8 +69,8 @@
         {
           "person": "Raban von Helmstadt",
           "personTitle": [
-            "der Jüngere",
-            "Edelknecht"
+            "Edelknecht",
+            "der Jüngere"
           ],
           "type": "generic",
           "content": "was appointed arbiter by Abbot Heinrich and the convent of Maulbronn in the dispute with Friedrich von Gundelfingen and those of Horhain."
@@ -87,8 +84,8 @@
           "type": "parent",
           "of": "Raban von Helmstadt",
           "ofTitle": [
-            "der Jüngere",
-            "Edelknecht"
+            "Edelknecht",
+            "der Jüngere"
           ]
         },
         {
@@ -131,8 +128,8 @@
         {
           "person": "Raban von Helmstadt",
           "personTitle": [
-            "der Jüngere",
-            "Edelknecht"
+            "Edelknecht",
+            "der Jüngere"
           ],
           "type": "generic",
           "content": "sealed the arbitration letter."

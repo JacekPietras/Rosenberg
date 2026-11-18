@@ -10,13 +10,16 @@
       "english": "Charles IV confirms to Preczlaus, Bishop of Breslau, and the Breslau cathedral chapter the privileges of their bishopric, granted by King Johann of Bohemia and the dukes of Silesia and Glogau; places them under the protection of the Kings of Bohemia; and exempts them, the secular clergy of the diocese, and their subjects living on church property from all taxes, burdens, and services.\n\nWitnesses: Ernst, Archbishop of Prague; Johann, Bishop of Olomouc; Albrecht, Bishop of Schwerin; Dietrich, Bishop of Minden; Wilhelm, Margrave of Meissen; Bolko, Duke of Schweidnitz; Konrad, Duke of Oels; Wenzel and Ludwig, Dukes of Liegnitz; Przemisaus, Duke of Teschen; Bolko, Duke of Opole; Bolko, Duke of Falkenberg; Burkhard and Johann, Burgraves of Magdeburg; Sbinko von Hasenburg, chief chamberlain; Jodok von Rosenberg; Hans von Rosenberg; Zdenko von Sternberg, court judge (versions A and B).",
       "mention": [
         {
+          "person": "Hans von Rosenberg"
+        },
+        {
           "person": "König Hans",
           "personTitle": [
             "King"
           ]
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "rosenberg-town"
         }
       ]
     }

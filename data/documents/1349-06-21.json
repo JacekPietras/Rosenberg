@@ -7,13 +7,23 @@
       "source": "[RIplus] Regg. Karl IV. n. 1226",
       "url": "https://www.regesta-imperii.de/id/bfbd2eff-3e7e-4e1c-a910-aaa3b7e45ec9",
       "german": "Karl IV. schlägt dem Jodok von Rosenberg und dessen Brüdern und Erben auf die ihnen verpfändeten Geleit und Zoll zwischen Pilsen und Buben ab illa parte mutae ex opposito ecclesiae parochialis 800 Schock Prager Groschen.",
-      "english": "Karl IV offers Jodok von Rosenberg and his brothers and heirs, on the escorted routes and tolls between Pilsen and Buben pledged to them from that side of the mutae opposite the parish church, 800 Schock Prague Groschen."
+      "english": "Karl IV offers Jodok von Rosenberg and his brothers and heirs, on the escorted routes and tolls between Pilsen and Buben pledged to them from that side of the mutae opposite the parish church, 800 Schock Prague Groschen.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     },
     {
       "source": "RI VIII n. 1028",
       "url": "https://www.regesta-imperii.de/id/1349-06-21_4_0_8_0_0_1199_1028",
       "german": "schlägt dem Jodok von Rosenberg und dessen brüdern und erben auf die ihnen verpfändeten geleit und zoll inter civitatem Pilznam usque rubum (l. Buben) ab illa parte mutae ex opposito ecclesiae parochialis 800 schock prager groschen. F. R. Austr. II. 37,399 n. 4 extr.",
-      "english": "Grants to Jodok von Rosenberg and his brothers and heirs, for the escort rights and tolls pledged to them between the city of Pilsen and the boundary stone (l. Buben) on the side of the customs opposite the parish church, 800 Prague groschen. F. R. Austr. II. 37,399 n. 4 extr."
+      "english": "Grants to Jodok von Rosenberg and his brothers and heirs, for the escort rights and tolls pledged to them between the city of Pilsen and the boundary stone (l. Buben) on the side of the customs opposite the parish church, 800 Prague groschen. F. R. Austr. II. 37,399 n. 4 extr.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

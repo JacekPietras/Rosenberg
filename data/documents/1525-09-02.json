@@ -8,6 +8,9 @@
       "english": "Elector Ludwig V of the Palatinate sets up a dispute between Georg von Rosenberg and the citizenship to Boxberg because of the wood called the blades.",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Georg von Rosenberg"
         }
       ],
@@ -20,6 +23,9 @@
           "type": "generic",
           "content": "settled a dispute with Jörg von Rosenberg and the citizens of Boxberg concerning the woodland called die Klingen.",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Georg von Rosenberg"
             }

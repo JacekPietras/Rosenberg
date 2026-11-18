@@ -9,16 +9,22 @@
       "english": "Sigiost, Landgrave of Leuchtenberg and Count of Hals, announces that Heinrich von Rosenberg is transferring some properties at Haslach in return for Wildenstein Castle, which Sigiost had acquired in pledge from the brothers Peter, Ulrich, and Hans von Rosenberg.\n\nSeals: (1) Landgrave Sigiost. (2) Johannes Sigershofer, Sigiost’s steward at Schärding. (3) Ulrich Hauzenperger, official of the Count of Hals. (4) Christian Waltenreuter, steward at Rosenstein. (5) Petrus Tuengast.",
       "mention": [
         {
+          "place": "burg-wildenstein"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
           "person": "Heinrich von Rosenberg"
+        },
+        {
+          "place": "leuchtenberg"
         },
         {
           "person": "Peter von Rosenberg"
         },
         {
           "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Hans von Rosenberg"
         }
       ]
     }

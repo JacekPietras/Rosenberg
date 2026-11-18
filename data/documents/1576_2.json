@@ -9,6 +9,9 @@
       "english": "Legal dispute between Zaisolph von Rosenberg of Haltenbergstetten and the Imperial City of Schwäbisch-Hall regarding the forest at Holz.",
       "mention": [
         {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ]

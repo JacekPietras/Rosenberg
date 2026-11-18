@@ -12,18 +12,18 @@
       "english": "Bishop Matheus of Worms confirms the settlement concluded before King Ruprecht between Anna von Rosenberg on one side and her daughter Ennel and Wiprecht von Helmstadt der Ältere, Ritter on the other, whereby Schwarzach shall fall as a fief of the Worms foundation to Ennel and after her death to Wiprecht or his heirs. The bishop must be provided with a man as fief bearer. Sealers: Issuer\n\nDuration: 1408 (February 28, 1408 - Ash Wednesday)",
       "mention": [
         {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "King"
-          ]
-        },
-        {
           "person": "Anna von Rosenberg"
         },
         {
           "person": "Ennel von Helmstadt",
           "personTitle": [
             "der Ältere"
+          ]
+        },
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
           ]
         },
         {
@@ -45,15 +45,15 @@
           "content": "reached an agreement before King Ruprecht with her daughter Ennel and Wiprecht von Helmstatt der Ältere concerning Schwarzach as a Worms fief.",
           "mention": [
             {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
               "person": "Ennel von Helmstatt",
               "personTitle": [
                 "der Ältere"
+              ]
+            },
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
               ]
             },
             {

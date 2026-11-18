@@ -18,16 +18,13 @@
           ]
         },
         {
+          "person": "Konrad von Rosenberg"
+        },
+        {
           "person": "Kunz von Rosenberg"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -63,6 +60,9 @@
             },
             {
               "person": "Konrad von Rosenberg"
+            },
+            {
+              "place": "schweigern"
             }
           ]
         },

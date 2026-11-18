@@ -9,16 +9,16 @@
       "english": "The brothers Peter, Jodok, Ulrich, and Hans von Rosenberg confirm the sale of the hereditary estate of Bukowa, made by Albert von Hor to the priest Hans von Rosenberg and his successors for thirteen schock of Prague groschen.\n\nSeals: Four small seals in red wax hang from parchment strips. (a) The small seal of Peter von Rosenberg; compare CIV. (b) A shield bearing a rose, with an S on each side. Inscription: Sigillum Jvdoci De Rosenberk; compare CIV. (c) A shield bearing a rose, above it a helmet with a spread wing. Inscription: + Vlrici De Rosenberch; compare CIV. (d) A shield divided into four fields: in the first, a fence woven from willow rods with three stakes (this device might also be called a basket); in the second, a five-petaled rose; in the third, another such rose; and in the fourth, the same fence or basket. Inscription: + Sigillum Johannis Rosenberk; compare CIV.",
       "mention": [
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "person": "Hans von Rosenberg"
         },
         {
           "person": "Peter von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "img": [

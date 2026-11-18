@@ -12,12 +12,6 @@
       "english": "Eberhard Geyer and his wife Guda von Hutten sell their share of the small tithe in Schweigern to Arnold von Rosenberg der Ältere and Arnold von Rosenberg der Jüngere.",
       "mention": [
         {
-          "person": "Eberhard Geyer"
-        },
-        {
-          "person": "Guda von Hutten"
-        },
-        {
           "person": "Arnold von Rosenberg",
           "personTitle": [
             "der Ältere"
@@ -28,6 +22,15 @@
           "personTitle": [
             "der Jüngere"
           ]
+        },
+        {
+          "person": "Eberhard Geyer"
+        },
+        {
+          "person": "Guda von Hutten"
+        },
+        {
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -40,10 +43,16 @@
           "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with [arnold_boxberg].",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Eberhard Geyer"
             },
             {
               "person": "Guda von Hutten"
+            },
+            {
+              "place": "schweigern"
             }
           ]
         },
@@ -56,16 +65,19 @@
           "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with Arnold von Rosenberg der Ältere.",
           "mention": [
             {
+              "person": "Arnold von Rosenberg",
+              "personTitle": [
+                "der Ältere"
+              ]
+            },
+            {
               "person": "Eberhard Geyer"
             },
             {
               "person": "Guda von Hutten"
             },
             {
-              "person": "Arnold von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
+              "place": "schweigern"
             }
           ]
         }

@@ -8,7 +8,13 @@
       "english": "Konrad von Boxberg sells to Hermann Lesch, Landkomtur in Franconia, Komtur in Mergentheim, and the brothers of the German House there, properties in Uiffingen, Schillingstadt, Schwabhausen, Neunstetten, Epplingen and Bobstadt for 304 pounds Heller less 40 Heller.",
       "mention": [
         {
+          "place": "bobstadt"
+        },
+        {
           "person": "Konrad von Boxberg"
+        },
+        {
+          "place": "uiffingen"
         }
       ],
       "img": [

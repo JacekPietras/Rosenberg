@@ -10,13 +10,19 @@
       "english": "In a detailed charter, Charles IV confirms to Abbot Heinrich of Fulda the right that each abbot of Fulda should serve as archchancellor to the Roman empress or queen. This office consists of the abbot removing the crown from her head, holding it, and placing it back on her head whenever a Roman empress or queen is crowned or stands or sits in imperial regalia.\n\nWitnesses: Ernst, Archbishop of Prague; Dietrich, Bishop of Minden; Rudolf, Duke of Saxony; Friedrich, Margrave of Meissen; Bolko, Duke of Falkenberg; Bolko, Duke of Opole; Przemysl, Duke of Teschen; Albrecht, Count of Anhalt; Peter von Rosenberg; Jodok von Rosenberg; Hans von Rosenberg; Zdenko von Lipa; Bohuslaus von Schwanberg.",
       "mention": [
         {
+          "place": "fulda-cathedral"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
           "person": "Heinrich of Fulda"
         },
         {
           "person": "Peter von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "rosenberg-town"
         }
       ]
     }

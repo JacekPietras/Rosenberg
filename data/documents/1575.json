@@ -12,13 +12,22 @@
           "person": "Albrecht von Hohenlohe"
         },
         {
-          "person": "Zaisolph von Rosenberg"
+          "place": "hohenlohe"
         },
         {
           "person": "Konrad von Rosenberg"
         },
         {
+          "place": "niederstetten"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Siegmund von Rosenberg"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -37,6 +46,11 @@
           "subject": "the Rosenberg bailiff",
           "type": "generic",
           "content": "interceded for Keser of Niederstetten in 1587.",
+          "mention": [
+            {
+              "place": "niederstetten"
+            }
+          ],
           "date": "1587"
         },
         {

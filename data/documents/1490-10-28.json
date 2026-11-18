@@ -9,19 +9,19 @@
       "english": "Michael von Rosenberg acknowledges to Elector Philipp of the Palatinate as representative for the minor son of his cousin Konrad von Rosenberg (+), Lorenz, over the quarter of Burg and Vorhof zu Rosenberg that once Eberhard von Rosenberg der Ältere held from the Palatinate as a Mannlehen.\n\nSeal: Michael von Rosenberg",
       "mention": [
         {
-          "person": "Michael von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Ältere"
           ]
         },
         {
+          "person": "Konrad von Rosenberg"
+        },
+        {
           "person": "Michael von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -45,6 +45,9 @@
           "mention": [
             {
               "person": "Lorenz von Rosenberg"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         },
@@ -54,7 +57,12 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "had held a quarter of Burg and Vorhof Rosenberg as a Mannlehen from the Palatinate."
+          "content": "had held a quarter of Burg and Vorhof Rosenberg as a Mannlehen from the Palatinate.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ],
       "img": [

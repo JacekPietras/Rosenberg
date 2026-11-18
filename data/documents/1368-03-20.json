@@ -18,26 +18,39 @@
           "personTitle": [
             "der Jüngere"
           ]
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "der Jüngere",
-            "armiger"
+            "armiger",
+            "der Jüngere"
           ],
           "type": "generic",
-          "content": "jointly presented 400 florins to the commissioner on behalf of the Würzburg Cathedral Chapter for Cardinal Nicolaus."
+          "content": "jointly presented 400 florins to the commissioner on behalf of the Würzburg Cathedral Chapter for Cardinal Nicolaus.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         },
         {
           "person": "Hans von Rosenberg",
           "personTitle": [
-            "der Jüngere",
-            "armiger"
+            "armiger",
+            "der Jüngere"
           ],
           "type": "generic",
-          "content": "jointly presented 400 florins to the commissioner on behalf of the Würzburg Cathedral Chapter for Cardinal Nicolaus."
+          "content": "jointly presented 400 florins to the commissioner on behalf of the Würzburg Cathedral Chapter for Cardinal Nicolaus.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

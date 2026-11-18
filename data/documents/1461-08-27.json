@@ -9,10 +9,16 @@
       "english": "Agreement of Jorg Count and Lord of Henneberg, Johann Count and Lord of Wertheim, Philipps the Elder and Philipps the Younger, both Counts and Lords of Rineck, Dietz Truchsess of Wetzhausen, Konrad von Hutten of Trimberg, Heinrich Zobel von Giebelstatt, Hilprand von Düngen of Buchelt, Hanns Voit of Salzburg and Apell of Lichtenstein of Gemünden, all knights, Hanns and Jorg Truchsessen of Wetzhausen, Eckarius von Helb of Sultzfeld, Peter Truchsess of Wilperg, Hanns von Scha###berg of Tundorf, Jorg and Linharts ### Maspach of Maspach, Heintz and Christoffel Fuchs of Walpurg, Hanns and Jorgs von Rotenhan of Rentmestorff, Hein### von Fulbach of Claustorff, Dietz and H### Marschall of Raugeneck, Balteser von Düngen of Büchelt, Wilhelm von Rechberg of Weikersheim, Bartelmes von Hutten of Arnstein, Hanns Truchsess of Birkefel### , Cunz Zaberkorn of Lore, Pauelz Fuchs of Burgbrietbach, Hans von Wenkheim the Younger of Schweinsfurt, Baltesar von Osthein of Hissige, Thomas Fuchs of Rüdenhausen, Philipps von Tottenheim, Eybe### and Philipps Voit von Rotenfels, Mark### Truchsess of Wacherod, Baltesar Geyer of Gibelstat, Cuntz and Heintz Stei###ruck of Trimberg, Ulrich von Rosenberg, Jorg von Düngen of Lauden, Hanns Truchsess of Aue, Fritz vom Stein of Altenstein, Hans von Bibra of Me###lerstadt, Craft Zobel of Geylesheim and the mayor and council of the city of Schweinfurt, with the knights and men of the lower league in Franconia. - Sealer: Johann Count and Lord of Wertheim, Dietz Truchsess of Wetzhausen, Hilprant von Düngen of Buchelt, Konrad von Hutten of Trimyerg, Heinrich Zobel von Giebelstatt, knight, and Hans von Wenkheim of Sweinsfurt.",
       "mention": [
         {
-          "person": "Konrad von Hutten"
+          "place": "arnstein-maria-sondheim"
         },
         {
-          "person": "Heinrich Zobel von Giebelstatt"
+          "place": "dottenheim"
+        },
+        {
+          "person": "Georg Truchsess"
+        },
+        {
+          "place": "giebelstadt"
         },
         {
           "person": "Hans"
@@ -21,28 +27,10 @@
           "person": "Hans Truchsess"
         },
         {
-          "person": "Georg Truchsess"
-        },
-        {
-          "person": "Peter Truchsess"
-        },
-        {
-          "person": "Hans Truchsess"
-        },
-        {
-          "person": "Hans von Wenkheim"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Hans Truchsess"
-        },
-        {
           "person": "Hans von Bibra"
         },
         {
-          "person": "Konrad von Hutten"
+          "person": "Hans von Wenkheim"
         },
         {
           "person": "Heinrich Zobel von Giebelstatt",
@@ -51,7 +39,28 @@
           ]
         },
         {
-          "person": "Hans von Wenkheim"
+          "person": "Heinrich Zobel von Giebelstatt"
+        },
+        {
+          "place": "hutten"
+        },
+        {
+          "person": "Konrad von Hutten"
+        },
+        {
+          "place": "lichtenstein"
+        },
+        {
+          "person": "Peter Truchsess"
+        },
+        {
+          "place": "rieneck"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        },
+        {
+          "place": "wertheim-stiftskirche"
         }
       ],
       "facts": [

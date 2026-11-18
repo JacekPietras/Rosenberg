@@ -9,7 +9,12 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1375_IV_25/charter"
       ],
       "german": "Markwart von Poreschin Burggraf in Rosenberg, Johann von Bor anders von Ruben, Niklas von Bielcz Schaffner in Rosenberg und Konrad von Trojanow anders von Herschlag mit dem Abte Gerlach von Nepomuk als Obmann entscheiden als von beiden Theilen hiezu erkorene Schiedsleute den Streit zwischen den Klöstern Hohenfurt unter Abt Otto und Goldenkron unter Abt Gerhart, hinsichtlich der beiderseitigen Grenzen und Wälder in der Nachbarschaft des Stift Hohenfurt'schen Marktes Höritz.",
-      "english": "Markwart von Poreschin, burgrave at Rosenberg; Johann von Bor, also called von Ruben; Niklas von Bielcz, steward at Rosenberg; and Konrad von Trojanow, also called von Herschlag, with Abbot Gerlach of Nepomuk as presiding arbitrator, act as arbitrators chosen by both parties and decide the dispute between the monasteries of Hohenfurt, under Abbot Otto, and Goldenkron, under Abbot Gerhard, concerning their respective boundaries and the forests near the market town of Hořice belonging to Hohenfurt Abbey."
+      "english": "Markwart von Poreschin, burgrave at Rosenberg; Johann von Bor, also called von Ruben; Niklas von Bielcz, steward at Rosenberg; and Konrad von Trojanow, also called von Herschlag, with Abbot Gerlach of Nepomuk as presiding arbitrator, act as arbitrators chosen by both parties and decide the dispute between the monasteries of Hohenfurt, under Abbot Otto, and Goldenkron, under Abbot Gerhard, concerning their respective boundaries and the forests near the market town of Hořice belonging to Hohenfurt Abbey.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

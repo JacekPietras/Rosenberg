@@ -9,16 +9,25 @@
       "english": "Records of the Würzburg Fief Court, concerning the enfeoffment of the castle, town, and district of Grünsfeld by Dorothea, Countess of Wertheim; grant by the Bishop of Würzburg to Barbara, Landgravine of Leuchtenberg, of annual revenues of 1,150 florins from the castle, town, and district of Grünsfeld; sale of an annual rent of 16.5 florins from the Grünsfeld bailiwick by Landgraf Georg of Leuchtenberg to the executors of Lorenz Truchseß, canon at Würzburg; further episcopal Würzburg approvals regarding Grünsfeld; sale of 150 florins annual interest from the lordship and town of Grünsfeld by Landgraf Georg Ludwig of Leuchtenberg to the guardians of Regina Kunigunde von Rosenberg; other similar declarations and Leuchtenberg debts; fief renewals concerning the Leuchtenberg pledges in Grünsfeld pledged to Franz Echter of and from Mespelbrunn for the jurisdiction of Gissigheim; separation of the Leuchtenberg property from the Grünsfeld fief holdings",
       "mention": [
         {
+          "person": "Georg Ludwig of Leuchtenberg"
+        },
+        {
           "person": "Georg of Leuchtenberg"
+        },
+        {
+          "place": "leuchtenberg"
         },
         {
           "person": "Lorenz Truchsess"
         },
         {
-          "person": "Georg Ludwig of Leuchtenberg"
+          "person": "Regina Kunigunde von Rosenberg"
         },
         {
-          "person": "Regina Kunigunde von Rosenberg"
+          "place": "wertheim-stiftskirche"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [

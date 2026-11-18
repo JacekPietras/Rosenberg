@@ -9,6 +9,9 @@
       "english": "Adultery case of Gebhard Pruben with Ursula von Rosenberg in Boxberg\n\nValidity period: 1453",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Ursula von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Ursula von Rosenberg",
           "type": "generic",
-          "content": "was involved in an adultery case with Gebhard Pruben at Boxberg."
+          "content": "was involved in an adultery case with Gebhard Pruben at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ]
     }

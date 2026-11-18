@@ -10,7 +10,15 @@
         {
           "subject": "The high-voltage line from Rosenberg to Hardheim",
           "type": "generic",
-          "content": "was the subject of a complaint by property owners in Sindolsheim against Strombezugsverband Buchen concerning its construction."
+          "content": "was the subject of a complaint by property owners in Sindolsheim against Strombezugsverband Buchen concerning its construction.",
+          "mention": [
+            {
+              "place": "buchen"
+            },
+            {
+              "place": "sindolsheim-church"
+            }
+          ]
         }
       ]
     }

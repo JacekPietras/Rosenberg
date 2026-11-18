@@ -11,13 +11,16 @@
       "english": "Reinhard von Uissigheim and his wife Anna Pfal, with the consent of Count Thomas of Rieneck, sell their sixth share of the tithe at Uissigheim to Heinrich Brun, parish priest at Werbach, for the early mass in the parish church there, for 200 guilders.",
       "mention": [
         {
+          "person": "Heinrich Brun"
+        },
+        {
           "person": "Reinhard von Uissigheim"
         },
         {
           "person": "Thomas of Rieneck"
         },
         {
-          "person": "Heinrich Brun"
+          "place": "uissigheim"
         }
       ],
       "facts": [
@@ -36,6 +39,9 @@
             },
             {
               "person": "Thomas of Rieneck"
+            },
+            {
+              "place": "uissigheim"
             }
           ]
         }

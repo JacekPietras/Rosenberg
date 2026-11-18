@@ -9,13 +9,16 @@
       "english": "The provost, dean, and chapter of Würzburg Cathedral owed Konrad von Rosenberg zu Bartenstein 2,200 Rhenish florins, which he had lent them while negotiating with the brothers Hans von Hirschhorn and Philipp von Hirschhorn. The chapter pledged its grain and wine tithes in Creglingen and nearby places as security until repayment, with an annual right to redeem the tithes.",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Hans von Hirschhorn"
         },
         {
+          "person": "Konrad von Rosenberg"
+        },
+        {
           "person": "Philipp von Hirschhorn"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -32,6 +35,9 @@
             },
             {
               "person": "Philipp von Hirschhorn"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         }

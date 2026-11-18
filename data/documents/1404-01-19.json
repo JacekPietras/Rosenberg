@@ -9,13 +9,13 @@
       "english": "Hans von Rosenberg confirms that Vlrich Mittelburger, castellan at Wassertrüdingen, paid him 45 Rhenish florins on behalf of Burgrave Friedrich von Nuremberg.",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "person": "Friedrich von Nuremberg",
           "personTitle": [
             "Burgrave"
           ]
+        },
+        {
+          "person": "Hans von Rosenberg"
         }
       ],
       "facts": [

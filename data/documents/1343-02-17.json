@@ -14,13 +14,21 @@
         },
         {
           "person": "Konrad Rüd"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "witnessed the accounts of Konrad, the Mainz cellarer at Dürn."
+          "content": "witnessed the accounts of Konrad, the Mainz cellarer at Dürn.",
+          "mention": [
+            {
+              "place": "wallduern"
+            }
+          ]
         }
       ]
     }

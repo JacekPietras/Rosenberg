@@ -12,6 +12,9 @@
       "mention": [
         {
           "person": "Kunz Mönch von Rosenberg"
+        },
+        {
+          "place": "minneburg"
         }
       ],
       "facts": [
@@ -21,7 +24,12 @@
             "Vogt zu Steinsberg"
           ],
           "type": "generic",
-          "content": "held the Minneburg in pledge."
+          "content": "held the Minneburg in pledge.",
+          "mention": [
+            {
+              "place": "minneburg"
+            }
+          ]
         }
       ]
     }

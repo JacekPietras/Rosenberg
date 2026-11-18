@@ -53,18 +53,33 @@
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "witnessed a document from Bronnbach.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ],
           "date": "1178"
         },
         {
           "person": "Konrad von Uissigheim",
           "type": "generic",
           "content": "witnessed a document from Bronnbach.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ],
           "date": "1178"
         },
         {
           "person": "Herbord von Uissigheim",
           "type": "generic",
           "content": "served as a Dienstmann of the Counts of Wertheim.",
+          "mention": [
+            {
+              "place": "wertheim-stiftskirche"
+            }
+          ],
           "date": "1178"
         },
         {
@@ -129,12 +144,22 @@
           "person": "Eberhard von Uissigheim",
           "type": "generic",
           "content": "served as a vassal of the Bishop of Würzburg.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1247"
         },
         {
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "served as a vassal of the Bishop of Würzburg.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1247"
         },
         {
@@ -154,6 +179,11 @@
           ],
           "type": "generic",
           "content": "may have given his name to the Würzburg canon’s curia known as Uissigheimer Hof.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1298"
         }
       ]
@@ -269,6 +299,11 @@
           ],
           "type": "generic",
           "content": "may be commemorated by the grave monument preserved in the west wall of the church at Uissigheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1331-12-31"
         },
         {
@@ -432,6 +467,9 @@
           "mention": [
             {
               "person": "Rudolf von Wertheim"
+            },
+            {
+              "place": "wertheim-stiftskirche"
             }
           ],
           "date": "1332-11-24"
@@ -443,6 +481,11 @@
           ],
           "type": "generic",
           "content": "agreed not to approach within forty miles of Wertheim territory during that period without permission from the count or his heirs.",
+          "mention": [
+            {
+              "place": "wertheim-stiftskirche"
+            }
+          ],
           "date": "1332-11-24"
         }
       ]
@@ -585,6 +628,14 @@
           ],
           "type": "generic",
           "content": "may have been the progenitor of a Rosenberg branch of the von Uissigheim family.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1332"
         }
       ]
@@ -617,12 +668,22 @@
           "person": "Nicolaus",
           "type": "generic",
           "content": "wrote to Rudolf Losse that peasants in the Tauberbischofsheim region had chosen a leader called König Armleder.",
+          "mention": [
+            {
+              "place": "bischofsheim"
+            }
+          ],
           "date": "1336-09-24"
         },
         {
           "person": "Nicolaus",
           "type": "generic",
           "content": "reported that the forces of König Armleder besieged Tauberbischofsheim three times without success.",
+          "mention": [
+            {
+              "place": "bischofsheim"
+            }
+          ],
           "date": "1336-09-24"
         },
         {
@@ -641,6 +702,11 @@
           "person": "Nicolaus",
           "type": "generic",
           "content": "reported that the forces of König Armleder killed the Jews of Aub.",
+          "mention": [
+            {
+              "place": "aub"
+            }
+          ],
           "date": "1336-09-24"
         },
         {
@@ -653,6 +719,11 @@
           "person": "Nicolaus",
           "type": "generic",
           "content": "reported that the forces of König Armleder came before Würzburg without success.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1336-09-24"
         }
       ]
@@ -680,6 +751,11 @@
           ],
           "type": "generic",
           "content": "led the uprising that began in Röttingen.",
+          "mention": [
+            {
+              "place": "roettingen"
+            }
+          ],
           "date": "1336-07-29"
         },
         {
@@ -704,6 +780,11 @@
           ],
           "type": "generic",
           "content": "led forces that attacked Jews in Aub.",
+          "mention": [
+            {
+              "place": "aub"
+            }
+          ],
           "date": "1336"
         },
         {
@@ -749,6 +830,11 @@
           ],
           "type": "generic",
           "content": "unsuccessfully attacked Tauberbischofsheim three times.",
+          "mention": [
+            {
+              "place": "bischofsheim"
+            }
+          ],
           "date": "1336"
         }
       ],
@@ -787,6 +873,11 @@
           ],
           "type": "generic",
           "content": "fought an armed force from Würzburg at Kleinochsenfurt.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1336-08"
         },
         {
@@ -796,6 +887,11 @@
           ],
           "type": "generic",
           "content": "led followers, many of whom were killed by the Würzburg force at Kleinochsenfurt.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1336-08"
         },
         {
@@ -805,6 +901,11 @@
           ],
           "type": "generic",
           "content": "led followers, 47 of whom were taken prisoner to Würzburg by the Würzburg force.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1336-08"
         }
       ]
@@ -843,6 +944,11 @@
           ],
           "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have been taken to Röttingen after his capture.",
+          "mention": [
+            {
+              "place": "roettingen"
+            }
+          ],
           "date": "1336"
         },
         {
@@ -852,6 +958,11 @@
           ],
           "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have confessed several times to the dean in Röttingen.",
+          "mention": [
+            {
+              "place": "roettingen"
+            }
+          ],
           "date": "1336"
         },
         {
@@ -881,6 +992,11 @@
           "personDeceased": true,
           "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have been buried in the church at Uissigheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1336"
         }
       ]
@@ -951,6 +1067,14 @@
           ],
           "type": "generic",
           "content": "may have been detained first in Röttingen and then transferred to the Würzburg court in Kitzingen.",
+          "mention": [
+            {
+              "place": "roettingen"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1336"
         }
       ]
@@ -1058,6 +1182,9 @@
           "mention": [
             {
               "person": "Arnold von Uissigheim"
+            },
+            {
+              "place": "uissigheim"
             }
           ],
           "date": "1641"
@@ -1067,6 +1194,11 @@
           "personDeceased": true,
           "type": "generic",
           "content": "was commemorated by a grave monument standing in the middle of the church at Uissigheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1641"
         },
         {
@@ -1074,6 +1206,11 @@
           "personDeceased": true,
           "type": "generic",
           "content": "was commemorated by a grave monument damaged by falling beams during renovation work in the church at Uissigheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1639"
         }
       ]
@@ -1094,6 +1231,11 @@
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "belonged to the lords of Uissigheim, who may have regarded the village church as their family burial place and exercised rights over it.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1336"
         }
       ]

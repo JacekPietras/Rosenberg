@@ -11,25 +11,19 @@
       "english": "Konrad von Uissigheim der Ältere, Eberhard Rude von Böttigheim, and Weigrecht Rude called von Rosenberg state that they heard the named witnesses in a dispute between Bronnbach Abbey and Heinz, son of the late Siegfried Steltzer of Reicholzheim. Sealers: Konrad von Uissigheim der Ältere, Eberhard Rude von Böttigheim, and Weigrecht Rude called von Rosenberg. The reverse note reads “Examinacio testium Heintz Stertzer”. Dated 8 July 1373.",
       "mention": [
         {
+          "place": "bronnbach"
+        },
+        {
+          "person": "Eberhard Rüd"
+        },
+        {
           "person": "Konrad von Uissigheim",
           "personTitle": [
             "der Ältere"
           ]
         },
         {
-          "person": "Eberhard Rüd"
-        },
-        {
-          "person": "Weigrecht Rüd"
-        },
-        {
-          "person": "Konrad von Uissigheim",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Eberhard Rüd"
+          "place": "rosenberg-town"
         },
         {
           "person": "Weigrecht Rüd"
@@ -42,7 +36,12 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "heard the named witnesses in the dispute between Bronnbach Abbey and Heinz, son of the late Siegfried Steltzer of Reicholzheim."
+          "content": "heard the named witnesses in the dispute between Bronnbach Abbey and Heinz, son of the late Siegfried Steltzer of Reicholzheim.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ]
         },
         {
           "person": "Weigrecht Rude",
@@ -50,7 +49,12 @@
             "genannt von Rosenberg"
           ],
           "type": "generic",
-          "content": "heard the named witnesses in the dispute between Bronnbach Abbey and Heinz, son of the late Siegfried Steltzer of Reicholzheim."
+          "content": "heard the named witnesses in the dispute between Bronnbach Abbey and Heinz, son of the late Siegfried Steltzer of Reicholzheim.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ]
         },
         {
           "person": "Konrad von Uissigheim",

@@ -9,6 +9,12 @@
       "english": "Zaisolph von Rosenberg at 'Halmersteten' (= Haldermanstetten, Niederstetten) to Rothenburg: claim for damages,",
       "mention": [
         {
+          "place": "niederstetten"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +22,12 @@
         {
           "person": "Zaisolph von Rosenberg zu Haltenbergstetten",
           "type": "generic",
-          "content": "claimed compensation from Rothenburg."
+          "content": "claimed compensation from Rothenburg.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

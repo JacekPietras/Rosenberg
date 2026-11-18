@@ -10,17 +10,31 @@
       "english": "The transcription says that the aforementioned Herr Zaisolph von Rosenberg immediately gave Bishop Konrad a written undertaking: if it proved that the castle and market of Haltenbergstetten had previously been pledged by the bishopric of Würzburg and were redeemable, Zaisolph or his heirs would repay the bishopric the 1,600 florins it had advanced within one month. The archive summary identifies the bishop as Konrad von Thüngen. Same book, fol. 64.\n\nMarginal addition: Rinderfeld, Wermutshausen, Streichental, Ebertsbronn, Holderbach, and Vorbach. Editorial note: The later hand mentions these places; Holderbach and Vorbach may refer to streams of those names.",
       "mention": [
         {
-          "person": "Zaisolph von Rosenberg"
+          "person": "Konrad von Thüngen"
         },
         {
-          "person": "Konrad von Thüngen"
+          "place": "rinderfeld"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
+          "place": "wurzburg"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "gave Bishop Konrad a reverse, promising that he or his heirs would repay the bishopric if the castle and market of Haltenbergstetten were found to have been previously pledged and redeemable."
+          "content": "gave Bishop Konrad a reverse, promising that he or his heirs would repay the bishopric if the castle and market of Haltenbergstetten were found to have been previously pledged and redeemable.",
+          "mention": [
+            {
+              "place": "schloss-haltenbergstetten"
+            }
+          ]
         }
       ],
       "img": [

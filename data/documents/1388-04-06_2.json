@@ -9,6 +9,12 @@
       "english": "King Wenzel grants Konrad von Rosenberg, Vitztum at Heidelberg, for his faithful service, and his cousins who share Boxberg with him, the privilege that people or Jews who move to the town of Boxberg and reside there shall enjoy all the liberties, privileges and rights belonging to the town. He also confirms to them the court at Boxberg and all customary privileges and rights.",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
           "person": "König Wenceslaus",
           "personTitle": [
             "King"
@@ -31,6 +37,9 @@
           "content": "received with his Vettern confirmation from King Wenzel of the court and historic rights at Boxberg.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "König Wenceslaus",
               "personTitle": [
                 "King"
@@ -44,7 +53,12 @@
             "Vicedom zu Heidelberg"
           ],
           "type": "generic",
-          "content": "held Boxberg jointly with his Vettern."
+          "content": "held Boxberg jointly with his Vettern.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ]
     }

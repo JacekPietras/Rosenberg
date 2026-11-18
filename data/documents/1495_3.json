@@ -9,7 +9,16 @@
       "english": "(Intervening) Plaintiff/Applicant/Intervener: Philipp von Erthal and his nephews Georg and Michael von Erthal, sons of Diez von Erthal (Applicants in 1st instance)\n(Intervening) Defendant/Intervener: Philipp Truchseß von Rieneck of Sachsenflur (Power of attorney also from his wife Petronella Truchseß von Rieneck, née von Tottenheim) (Applicant in 1st instance), as well as the Schultheiss, village master, and communities of the villages of Ober- and Unterleinach (also in the files: Niederleinach)\nProcurator(s) for the Plaintiff: Lic. Christoph Hitzhofer (1494)\nProcurator(s) for the Defendant: Dr. Ambrosius Fuchshart, Lic. Georg Schrötel, and Kunz von Dottenheim (1494);\nDr. Konrad Weygant and Dr. Ambrosius Fuchshart (1495);\nDr. Ulrich Molitor (1501);\nDr. Johann Rehlinger (1508)\nSubject of dispute (contemporary): appellatio or mandatum\nSubject of dispute (modern): Possession dispute over revenues at Ober- and Unterleinach;\nSubject in 1st instance: Both parties agreed to submit their mutual claims for revenues at Ober- and Unterleinach to the Imperial Regional Court of the Duchy of Franconia as an ad hoc arbitral tribunal and to provide guarantors. Philipp, Georg, and Michael von Erthal rejected the guarantors named by Philipp Truchseß von Rieneck, since Georg von Rosenberg, due to his large following and strongly fortified seat at Boxberg, was too powerful and therefore hardly attachable, while Arnold von Rosenberg was under ban. The Imperial Regional Court declared the surety sufficient in 1493. Philipp von Erthal appealed this to Emperor Friedrich III. When he allegedly failed to pursue the appeal in a timely manner, Truchseß von Rieneck apparently obtained regional court judgments in his favor regarding the disputed revenues, pressed for enforcement, and secured the ban against Georg and Michael von Erthal.\nGeorg von Erthal appeals to the RKG (Imperial Chamber Court), which also issues a mandate to the co-defendant communities at the behest of Truchseß d von Rieneck’s efforts, which had caused the defendant communities to stop paying the interest to the plaintiff family and deposit the due amounts at the bridge court in Würzburg, where the opposing party sought their release. Truchseß von Rieneck argued that both parties had allegedly sworn to waive appeals and other legal remedies; that appeals were generally inadmissible in cases submitted to arbitration; that the plaintiff had continued to appear before the Imperial Regional Court even after lodging the appeal; and that the plaintiff had missed deadlines and committed procedural errors. On June 2, 1503, the Imperial Chamber Court rejected the appeal but took up the principal case, requiring the plaintiff party to prove its lawful entitlement to the revenues. The plaintiffs claimed that certain revenues originating with Andreas von Karsbach had been divided by lot among Diez and Philipp von Erthal, Philipp Truchseß von Rieneck, and Hans von Baunach, and that the revenues at Ober- and Unterleinach had fallen to Diez von Erthal and were initially paid to him. Proceedings: first, the Imperial Regional Court of the Duchy of Franconia at Würzburg; then the Imperial Chamber Court, 1495–1508. The Erthal commission file (no. 15) contains witness testimony before an imperial commission in 1495. The Truchseß von Rieneck commission file (no. 16) likewise contains testimony before an imperial commission in 1495. It also includes Petronella Truchseß von Rieneck’s original letter to Georg von Erthal from 1494 (no. 21). Records of an inquiry conducted by the mayors and council of Karlstadt, submitted November 8, 1503, contain a bound account of revenues and rents belonging to the von Erthals, including Hans Beringer of Unterleinach’s original charter recording Andreas von Karsbach’s sale of a farm there to Fritz Sporn in 1470; testimony by Konz Paul of Fuchsstadt, formerly a servant of the Truchseß von Rieneck, before the cent court at Hammelburg in 1494; the 1456 purchase agreement between Konz Burckart, Schultheiss of Oberleinach, and Hans von Karsbach concerning a grain rent from a field at Unterleinach; and witness testimony from 1503.",
       "mention": [
         {
-          "person": "Philipp Truchsess von Rieneck"
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "place": "boxberg"
+        },
+        {
+          "place": "dottenheim"
+        },
+        {
+          "person": "Georg von Rosenberg"
         },
         {
           "person": "Kunz von Dottenheim"
@@ -18,13 +27,10 @@
           "person": "Philipp Truchsess von Rieneck"
         },
         {
-          "person": "Georg von Rosenberg"
+          "place": "rieneck"
         },
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Philipp Truchsess von Rieneck"
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -36,6 +42,9 @@
           "type": "generic",
           "content": "was named as a surety by Philipp Truchseß von Rieneck in an arbitration concerning revenues at Ober- and Unterleinach; the von Erthal parties objected that Georg was powerful and difficult to seize because of his fortified seat at Boxberg.",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Philipp Truchsess von Rieneck"
             }

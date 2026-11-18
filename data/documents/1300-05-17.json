@@ -11,6 +11,9 @@
       "english": "Eberhard and Konrad, sons and other named relatives of the deceased Eberhard von Rosenberg, Ritter, sell to the Bronnbach Abbey a Hube in Uissigheim with an annual yield of 6 malters of grain and 2 malters of wheat for 27 pounds of Heller and provide guarantors for this sale.\n\nSiegler: Konrad von Uissigheim",
       "mention": [
         {
+          "place": "bronnbach"
+        },
+        {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "Ritter"
@@ -18,14 +21,17 @@
         },
         {
           "person": "Konrad von Uissigheim"
+        },
+        {
+          "place": "uissigheim"
         }
       ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "der Ältere",
-            "Ritter"
+            "Ritter",
+            "der Ältere"
           ],
           "personDeceased": true,
           "type": "parent",
@@ -37,8 +43,8 @@
         {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "der Ältere",
-            "Ritter"
+            "Ritter",
+            "der Ältere"
           ],
           "personDeceased": true,
           "type": "parent",
@@ -53,7 +59,13 @@
           "content": "sold a Hube at Uissigheim to Bronnbach Abbey together with Konrad von Rosenberg.",
           "mention": [
             {
+              "place": "bronnbach"
+            },
+            {
               "person": "Konrad von Rosenberg"
+            },
+            {
+              "place": "uissigheim"
             }
           ]
         },
@@ -65,8 +77,8 @@
         {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
-            "der Ältere",
-            "Ritter"
+            "Ritter",
+            "der Ältere"
           ],
           "type": "death",
           "diedBefore": "1300-05-18"

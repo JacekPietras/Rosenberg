@@ -13,11 +13,24 @@
       ],
       "german": "\"Verfassung\" der Streitentscheidung zwischen Rothenburg und von Rosenberg.",
       "english": "\"Instrument\" of the dispute decision between Rothenburg and von Rosenberg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "rothenburg"
+        }
+      ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was involved in a dispute with Rothenburg for which a written decision was prepared."
+          "content": "was involved in a dispute with Rothenburg for which a written decision was prepared.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

@@ -12,24 +12,30 @@
       "english": "1402 January 3, Nuremberg. King Ruprecht acknowledges owing Peter Haberkorn 350 florins (in connection with Count Friedrich of Henneberg’s 350 florins, which he owes him, and 100 florins on the king’s own account), so that they may settle their disputes amicably. The king promises to repay the debt from the next taxes due from him and the imperial city of Schweinfurt over the following two years: half on the coming Martinmas and the other half on Martinmas of the next year. The king will pay from other funds any shortfall in the 350 florins according to the stated calculation. He names Arnold von Rosenberg der Ältere, his Amtmann zu Lauda, and Aphel Fachs as guarantors; they are to perform Einlager in Schweinfurt. The king and the guarantors seal the document.",
       "mention": [
         {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
           ]
         },
         {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
+          "place": "lauda"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",
           "personTitle": [
-            "der Ältere",
-            "Amtmann zu Lauda"
+            "Amtmann zu Lauda",
+            "der Ältere"
           ],
           "type": "generic",
           "content": "served as a guarantor for King Ruprecht in the debt arrangement involving Peter Haberkorn.",
@@ -45,8 +51,8 @@
         {
           "person": "Arnold von Rosenberg",
           "personTitle": [
-            "der Ältere",
-            "Amtmann zu Lauda"
+            "Amtmann zu Lauda",
+            "der Ältere"
           ],
           "type": "generic",
           "content": "was to perform Einlager as a guarantor."

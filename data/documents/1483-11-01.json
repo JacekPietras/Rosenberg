@@ -10,6 +10,9 @@
       "english": "Regest concerning a road from Bohemia to Schlägl and Klaffer and onward to Passau, 1483.\n\n(From the later Rosenberg chronicle of Norbert Hermann:) “In the year of the Lord 1482 (in fact, 1483), in the month of November, Joannes Cardinalis de Aragonia, the papal legate, came to Krumau. Lord Wok von Rosenberg had previously sent about 50 horsemen to meet him as far as the forest called Klaffer, toward the Passau road; they then accompanied him all the way to Krumau.”",
       "mention": [
         {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Wok von Rosenberg"
         }
       ]

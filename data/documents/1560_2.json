@@ -15,10 +15,16 @@
       "english": "Friedrich, Count Palatine of the Rhine etc., Elector, after his cousin Ottheinrich, Count Palatine of the Rhine etc., Elector, has died, enfeoffs Zeisolf (Zaissolffen) von Rosenberg together with his cousins Philipp Jakob and Konrad, the brothers von Rosenberg, with a quarter of the town of Aub as an inheritable Mannlehen (fief), which the late Knight Konrad von Rosenberg and his ancestors had held from the Palatinate as a Mannlehen and which fell to the three cousins von Rosenberg by inheritance. His rights, those of his people, and those of third parties remain unaffected insofar as they derive from him and the County Palatine of the Rhine. The brothers and cousins von Rosenberg or their fief heirs are henceforth to take the Mannlehen anew from him or his heirs as Count Palatine of the Rhine in all cases specified and to fulfill the duties customarily connected with the enfeoffment. He confirms the oath of fealty sworn by Zeisolf. - On the reverse: Signature of the Electoral Palatinate chancellor Erasmus von Minckwitz.\n\nSealer: the issuer.\nIssued as an official copy (Ausf.), parchment, seal missing. - No. 1308.\n\nReg. No. 1378",
       "mention": [
         {
+          "place": "aub"
+        },
+        {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -42,17 +48,41 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs."
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs.",
+          "mention": [
+            {
+              "place": "aub"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Philipp Jakob von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs."
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs.",
+          "mention": [
+            {
+              "place": "aub"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs."
+          "content": "received a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate together with the other named Rosenberg heirs.",
+          "mention": [
+            {
+              "place": "aub"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     }

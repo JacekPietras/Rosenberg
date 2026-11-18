@@ -9,10 +9,19 @@
       "english": "Konrad von Rosenberg, Amtmann zu Karlburg, Heinz Cremer, Gerlach Fledener, Conrad Schrutenbach and Hans Zewloßheim, citizens of Karlstadt, all Freischöffen (free judges) of the \"Holy Vehmic Court\", announce that Johann Manhaff, Free Reeve of the Lordship of Waldeck, has convened a court session between Betz Hepfenheim, citizen of Karlstadt, and Cunz Vogel, citizen of Lohr \"on the other side toward Gemünden\". This followed disputes over jurisdiction in a conflict concerning properties in Weinsberg. The issuers were unable to mediate the dispute. Thereupon Cunz Vogel proposed going to the city court or the cent court in Lohr, while Hepfenheim suggested the territorial court of Würzburg or one of the city councillors of Würzburg, Gemünden, Hammelburg or Karlstadt. Announcement of the seals of Heinrich Konrad von Rosenberg, Hans Cremer and Gerlach Fledener.\n\nFollowed by a note from Karlstadt citizens Hans Koch and Claus Wortwin, as well as Hans Craft of Mulbach, all rightful Freischöffen \"of the Holy Vehmic Court\", stating that they were present when this document was read to Betze Hepfenheim or his procurator.",
       "mention": [
         {
+          "person": "Heinrich Konrad von Rosenberg"
+        },
+        {
           "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Heinrich Konrad von Rosenberg"
+          "place": "waldeck"
+        },
+        {
+          "place": "weinsberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [

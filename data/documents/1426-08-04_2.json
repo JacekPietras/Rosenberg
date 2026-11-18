@@ -9,16 +9,13 @@
       "english": "Archbishop Konrad of Mainz and Bishop Johann of Würzburg issued an arbitration award concerning the attack on Nuremberg merchants near Neustadt an der Aisch by Wilhelm von Rechberg, Kunz von Rosenberg and Thomas von Rosenberg, Walther von Cronberg, Hans vom Hirschhorn the Younger, Karl and Siegmund von Thüngen. They ordered that the compensation be paid at Hans Tuchscherer’s house in Würzburg. The GDA catalog dates the record to 4 August 1426 and notes that it survives as an insert in a vidimus dated 29 November 1426.",
       "mention": [
         {
+          "place": "cronberg"
+        },
+        {
           "person": "Hans of Würzburg",
           "personTitle": [
             "Bishop"
           ]
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Thomas von Rosenberg"
         },
         {
           "person": "Hans vom Hirschhorn",
@@ -27,19 +24,47 @@
           ]
         },
         {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
           "person": "Siegmund von Thüngen"
+        },
+        {
+          "person": "Thomas von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "was named in the dispute over the attack on Nuremberg merchants near Neustadt an der Aisch for which the archbishop of Mainz and the bishop of Würzburg issued an arbitration award."
+          "content": "was named in the dispute over the attack on Nuremberg merchants near Neustadt an der Aisch for which the archbishop of Mainz and the bishop of Würzburg issued an arbitration award.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         },
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "was named in the dispute over the attack on Nuremberg merchants near Neustadt an der Aisch for which the archbishop of Mainz and the bishop of Würzburg issued an arbitration award."
+          "content": "was named in the dispute over the attack on Nuremberg merchants near Neustadt an der Aisch for which the archbishop of Mainz and the bishop of Würzburg issued an arbitration award.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

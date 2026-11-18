@@ -9,9 +9,6 @@
       "english": "The cities of Heidingsfeld and Bernheim undertook to pay Nuremberg annual interest of 305 florins toward redeeming a pledge debt of 6,100 florins owed to the cousins Siegmund von Thüngen and Balthasar von Thüngen, King Sigmund, and Ulrich von Rosenberg. The charter is not extant.",
       "mention": [
         {
-          "person": "Siegmund von Thüngen"
-        },
-        {
           "person": "Balthasar von Thüngen"
         },
         {
@@ -21,6 +18,12 @@
           ]
         },
         {
+          "place": "nuremberg"
+        },
+        {
+          "person": "Siegmund von Thüngen"
+        },
+        {
           "person": "Ulrich von Rosenberg"
         }
       ],
@@ -28,7 +31,12 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "was owed a pledge debt for whose redemption Heidingsfeld and Bernheim undertook to pay interest to Nürnberg."
+          "content": "was owed a pledge debt for whose redemption Heidingsfeld and Bernheim undertook to pay interest to Nürnberg.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ]
         }
       ]
     }

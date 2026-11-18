@@ -9,16 +9,19 @@
       "english": "Konrad von Rosenberg confirms that Konrad von Weinsberg and his wife Anna have sold him the castle of Reigelsberg with Baldersheim, Burgerrode and the hamlet of Buche on condition of repurchase; redemption is to be made for 7,000 gulden. Parchment, Seal: Konrad von Rosenberg; Fritz Truchseß of Baldersheim; Reinhard von Uissigheim.\n\nDuration: January 24, 1416, without place of issue\n\nExtent: 1 charter",
       "mention": [
         {
+          "place": "baldersheim"
+        },
+        {
+          "person": "Friedrich Truchsess of Baldersheim"
+        },
+        {
           "person": "Konrad von Rosenberg"
         },
         {
           "person": "Konrad von Weinsberg"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Friedrich Truchsess of Baldersheim"
+          "place": "reichelsburg-aub"
         },
         {
           "person": "Reinhard von Uissigheim"
@@ -31,7 +34,13 @@
           "content": "confirmed that Konrad von Weinsberg and his wife Anna had sold him Reigelsberg Castle with Baldersheim, Burgerrode, and the hamlet of Buche subject to repurchase for 7,000 gulden.",
           "mention": [
             {
+              "place": "baldersheim"
+            },
+            {
               "person": "Konrad von Weinsberg"
+            },
+            {
+              "place": "reichelsburg-aub"
             }
           ]
         }

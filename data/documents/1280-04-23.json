@@ -9,10 +9,13 @@
       "english": "Rudolf and Egilolf von Rorschach certify that their disputes with the cousins of Rosenberg have been settled by an arbitration award.",
       "mention": [
         {
-          "person": "Rudolf von Rorschach"
+          "person": "Egilolf von Rorschach"
         },
         {
-          "person": "Egilolf von Rorschach"
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Rudolf von Rorschach"
         }
       ]
     }

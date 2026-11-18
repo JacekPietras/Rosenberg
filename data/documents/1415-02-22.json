@@ -14,6 +14,9 @@
         },
         {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
         }
       ],
       "facts": [
@@ -24,6 +27,9 @@
           "mention": [
             {
               "person": "Konrad Schenk von Limpurg"
+            },
+            {
+              "place": "schloss-haltenbergstetten"
             }
           ]
         }

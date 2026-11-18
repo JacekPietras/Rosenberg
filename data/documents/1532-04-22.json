@@ -12,43 +12,16 @@
       "english": "Gregor Spies of Rothenburg ob der Tauber (Rottenburg an der Thauber), cleric in the Diocese of Würzburg (Wurtsburg), notary and secretary to the Administrator, confirms that Wolfgang von Rosenberg, House Commander of the Teutonic Order at Mergentheim, Kilian von Berlichingen, Rider of the Teutonic Order at Mergentheim, Albrecht von Seldeneck, Hereditary Kitchen Master, Michael Farnbach, Schultheiß, Jakob Hoffman and Michael Saffera, both Village Masters, as well as named inhabitants of Rengershausen (Rengerßhausen), appeared before him and the witnesses. That said Albrecht von Seldeneck, whose father Philipp von Seldeneck had sold the village of Rengershausen to Wolfgang von Bibra, Commander of the Teutonic Order at Mergentheim, after reading the verbatim inserted deed of sale as well as the verbatim recorded powers of attorney of Philipp von Seldeneck and Wolfgang von Bibra, handed over the village of Rengershausen to Wolfgang von Rosenberg. And that the present inhabitants thereof have sworn the oath of obedience to said Wolfgang von Rosenberg on behalf of Walter von Cronberg, Administrator of the Office of Grand Master in Prussia and Master of the Teutonic Order in German and Italian lands, as well as on behalf of Wolfgang von Bibra. Furthermore, Albrecht von Seldeneck presented a judgment letter from Bishop Lorenz of Würzburg, which Philipp von Seldeneck had obtained against the Counts of Hohenlohe (Hoenloe) in the dispute over the village of Rengershausen. The community of Rengershausen submitted a document from the Schultheiß and court of Möckmühl (Meckmull), according to which Götz von Berlichingen has no grazing and driving rights on the Rengershausen boundary, and another document containing a settlement regarding sheep husbandry with one who previously resided at Rengershausen. The latter document bears the seal of a von Remchingen, former Rider at Mergentheim.\n\nTime span: April 22, 1532 (Monday after the Sunday Jubilate, which was the twenty-second day of April)",
       "mention": [
         {
-          "person": "Wolfgang von Rosenberg"
+          "person": "Albrecht von Seldeneck"
+        },
+        {
+          "person": "Götz von Berlichingen"
+        },
+        {
+          "place": "hohenlohe"
         },
         {
           "person": "Kilian von Berlichingen"
-        },
-        {
-          "person": "Albrecht von Seldeneck"
-        },
-        {
-          "person": "Albrecht von Seldeneck"
-        },
-        {
-          "person": "Philipp von Seldeneck"
-        },
-        {
-          "person": "Wolfgang von Bibra"
-        },
-        {
-          "person": "Philipp von Seldeneck"
-        },
-        {
-          "person": "Wolfgang von Bibra"
-        },
-        {
-          "person": "Wolfgang von Rosenberg"
-        },
-        {
-          "person": "Wolfgang von Rosenberg"
-        },
-        {
-          "person": "Walter von Cronberg"
-        },
-        {
-          "person": "Wolfgang von Bibra"
-        },
-        {
-          "person": "Albrecht von Seldeneck"
         },
         {
           "person": "Lorenz of Würzburg",
@@ -60,7 +33,19 @@
           "person": "Philipp von Seldeneck"
         },
         {
-          "person": "Götz von Berlichingen"
+          "place": "rothenburg"
+        },
+        {
+          "person": "Walter von Cronberg"
+        },
+        {
+          "person": "Wolfgang von Bibra"
+        },
+        {
+          "person": "Wolfgang von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [

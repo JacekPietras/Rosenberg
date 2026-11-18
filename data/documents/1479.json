@@ -11,69 +11,147 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "uiffingen"
         }
       ],
       "facts": [
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "jointly granted Boxberg a weekly market to be held on Saturdays."
+          "content": "jointly granted Boxberg a weekly market to be held on Saturdays.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "jointly promised free safe conduct to visitors of the weekly market at Boxberg."
+          "content": "jointly promised free safe conduct to visitors of the weekly market at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "jointly ordered their subjects in Hohenstadt, Schillingstadt, Uiffingen, and other villages to attend the weekly market at Boxberg."
+          "content": "jointly ordered their subjects in Hohenstadt, Schillingstadt, Uiffingen, and other villages to attend the weekly market at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "uiffingen"
+            }
+          ]
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "jointly granted Boxberg a weekly market to be held on Saturdays."
+          "content": "jointly granted Boxberg a weekly market to be held on Saturdays.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "jointly promised free safe conduct to visitors of the weekly market at Boxberg."
+          "content": "jointly promised free safe conduct to visitors of the weekly market at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "jointly ordered their subjects in Hohenstadt, Schillingstadt, Uiffingen, and other villages to attend the weekly market at Boxberg."
+          "content": "jointly ordered their subjects in Hohenstadt, Schillingstadt, Uiffingen, and other villages to attend the weekly market at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "uiffingen"
+            }
+          ]
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "jointly granted Boxberg a weekly market to be held on Saturdays."
+          "content": "jointly granted Boxberg a weekly market to be held on Saturdays.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "jointly promised free safe conduct to visitors of the weekly market at Boxberg."
+          "content": "jointly promised free safe conduct to visitors of the weekly market at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "jointly ordered their subjects in Hohenstadt, Schillingstadt, Uiffingen, and other villages to attend the weekly market at Boxberg."
+          "content": "jointly ordered their subjects in Hohenstadt, Schillingstadt, Uiffingen, and other villages to attend the weekly market at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "uiffingen"
+            }
+          ]
         },
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "jointly granted Boxberg a weekly market to be held on Saturdays."
+          "content": "jointly granted Boxberg a weekly market to be held on Saturdays.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "jointly promised free safe conduct to visitors of the weekly market at Boxberg."
+          "content": "jointly promised free safe conduct to visitors of the weekly market at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "jointly ordered their subjects in Hohenstadt, Schillingstadt, Uiffingen, and other villages to attend the weekly market at Boxberg."
+          "content": "jointly ordered their subjects in Hohenstadt, Schillingstadt, Uiffingen, and other villages to attend the weekly market at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "uiffingen"
+            }
+          ]
         }
       ],
       "img": [
@@ -128,13 +206,16 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
+          "place": "buch"
+        },
+        {
           "person": "Friedrich von Rosenberg"
         },
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
+          "place": "rosenberg-town"
         }
       ]
     }

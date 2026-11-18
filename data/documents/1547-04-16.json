@@ -7,6 +7,11 @@
       "url": "https://www.monasterium.net/mom/DE-AVBautzen/Urkunden/2075/charter",
       "german": "Bürgermeister und Rat der Stadt Zittau bestätigen Bürgermeister und Rat der Stadt Bautzen den Empfang ihres Briefes, in dem über die Belagerung Dresdens und weitere Kriegsereignisse berichtet wurde. Sie geben ihre Informationen über das Kriegsgeschehen weiter und berichten über die Meldung, der alte Herr von Rosenberg sei gestorben.\n\nSiegel: Drucksiegel unter Papier auf Rückseite",
       "english": "The mayor and council of the city of Zittau confirm to the mayor and council of the city of Bautzen receipt of their letter, which reported on the siege of Dresden and other events of the war. They pass on their information about the course of the war and report the news that the old Lord von Rosenberg has died.\n\nSeal: an impressed seal under paper on the reverse.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/2075_1547-04-16_c_1.jpg"

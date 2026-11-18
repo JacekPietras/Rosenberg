@@ -9,6 +9,9 @@
       "english": "Zaisolph von Rosenberg to Rothenburg: demands compensation from the Rothenburg dependents for damages suffered during the Peasants' War.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "demanded compensation from Rothenburg’s subjects for damage he suffered during the Peasants’ War."
+          "content": "demanded compensation from Rothenburg’s subjects for damage he suffered during the Peasants’ War.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

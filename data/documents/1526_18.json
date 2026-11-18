@@ -10,6 +10,12 @@
       "mention": [
         {
           "person": "Adam von Thüngen"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "rothenburg"
         }
       ],
       "facts": [
@@ -20,6 +26,9 @@
           "mention": [
             {
               "person": "Adam von Thüngen"
+            },
+            {
+              "place": "rothenburg"
             }
           ]
         }

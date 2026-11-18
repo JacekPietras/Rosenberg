@@ -12,10 +12,7 @@
           "person": "Eberhard Rüd"
         },
         {
-          "person": "Eberhard Rüd"
-        },
-        {
-          "person": "Eberhard Rüd"
+          "place": "kollenberg"
         }
       ],
       "facts": [
@@ -38,8 +35,8 @@
         {
           "person": "Ruprecht",
           "personTitle": [
-            "der Ältere",
-            "Herzog"
+            "Herzog",
+            "der Ältere"
           ],
           "type": "generic",
           "content": "bought the castle Minneberg from Eberhard Rude.",

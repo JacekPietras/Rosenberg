@@ -15,10 +15,7 @@
           "person": "Albrecht of Hohenlohe"
         },
         {
-          "person": "Heinrich Zobel"
-        },
-        {
-          "person": "Wilhelm von Dottenheim"
+          "person": "Arnold von Rosenberg"
         },
         {
           "person": "Friedrich Zobel"
@@ -27,7 +24,13 @@
           "person": "Georg von Rosenberg"
         },
         {
-          "person": "Arnold von Rosenberg"
+          "person": "Heinrich Zobel"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "person": "Wilhelm von Dottenheim"
         }
       ],
       "facts": [
@@ -54,10 +57,13 @@
           "content": "wrote to Georg and Arnold von Rosenberg and the other co-heirs at Schüpf.",
           "mention": [
             {
+              "person": "Arnold von Rosenberg"
+            },
+            {
               "person": "Georg von Rosenberg"
             },
             {
-              "person": "Arnold von Rosenberg"
+              "place": "oberschuepf"
             }
           ]
         }

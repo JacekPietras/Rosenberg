@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -24,7 +27,12 @@
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "lent 130 Reichstaler to Georg Keller and his wife Apollonia, zu Rosenberg, against a pledge of property."
+          "content": "lent 130 Reichstaler to Georg Keller and his wife Apollonia, zu Rosenberg, against a pledge of property.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ],
       "img": [

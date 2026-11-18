@@ -10,13 +10,19 @@
       "english": "On the Feast of St Peter’s Chair in 1411, Hans von Brunn, Bischof, pledged Schloss, Stadt, and Amt Jagstberg to Eberhard von Rosenberg for 3,400 florins, reserving for the bishopric the right of redemption, access, and hereditary homage. The transcription goes on to say that the castle and town had become so dilapidated that damage was feared; Johann therefore permitted Eberhard to spend up to 600 florins on repairs and credited that amount toward the pledge sum. The second transaction was recorded on the Saturday after St Lucy’s Day in 1412. Register of contracts of Brun, fols. 31 and 34.",
       "mention": [
         {
+          "place": "brunn"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Hans von Brunn",
           "personTitle": [
             "Bischof"
           ]
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "jagstberg"
         }
       ],
       "facts": [
@@ -30,6 +36,9 @@
               "personTitle": [
                 "Bishop"
               ]
+            },
+            {
+              "place": "jagstberg"
             }
           ],
           "date": "1411-02-22"

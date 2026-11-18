@@ -10,16 +10,19 @@
       "english": "At Püssensheim, a village in the Amt Prosselsheim, Gotfried Schenk von Limpurg, Bischof, pledged the tithe there to Anselm von Rosenberg, Ritter, for five years on the Friday after Quasimodo Sunday in 1445. Contractuum Limpurg, fol. 27.",
       "mention": [
         {
+          "person": "Anselm von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
           "person": "Gotfried Schenk von Limpurg",
           "personTitle": [
             "Bischof"
           ]
         },
         {
-          "person": "Anselm von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
+          "place": "limpurg"
         }
       ],
       "facts": [

@@ -9,10 +9,10 @@
       "english": "Johannes von Giech, Lord Justice of the Duchy of Franconia, verifies the deed of Hans Rieter, citizen of Nuremberg, of the same day, in which he confirms that Bishop Johannes of Würzburg has sold to him the Würzburg servile tenants, properties, and revenues in the named villages.\n\nJohannes von Giech, canon of Würzburg and Lord Justice of the Duchy of Franconia, verifies the deed of Hans Rieter, citizen of Nuremberg, of the same day, in which he confirms that Bishop Johannes of Würzburg, with the consent of the cathedral chapter, has sold to him the Würzburg servile tenants, properties, and revenues at Burgbernheim, called 'Bischoff weis', with the tithe at Burgbernheim and the tithes at Buch [on the forest], Dornhausen, Lauterbach, Oberndorf, 'Heydenawe', Gunzendorf, Geslau (Geszler), Gereuth, Schwabsroth (Swebröde), and Steinbach; Seal announcement: Peter Rieter, Peter Haller, Burkhard Beszler. The sales deed of Bishop Johannes of Würzburg of the same day (on Monday after St. James's Day) is inserted in full text, and the purchase price is accordingly 'a considerable sum of money'; Seal announcement: Issuer, Würzburg Cathedral Chapter, the guarantors Konrad von Rosenberg of Partenstein, Jörg von Bebenburg, chamberlain, Balthasar von Wenkheim, Hans von Brunn, Hans Schultheiß, Peter Seyel, Schultheiß zu Ochsenfurt, Hans Wilde, Jörg Schamrenberg (?) of Karlstadt, Hans Plesse, Fritz Pfeiffelman, Kunz Same.\n\nSealer: Issuer with lord justice seal",
       "mention": [
         {
-          "person": "Hans of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "person": "Balthasar von Wenkheim"
+        },
+        {
+          "place": "buch"
         },
         {
           "person": "Hans of Würzburg",
@@ -21,19 +21,16 @@
           ]
         },
         {
-          "person": "Hans of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "person": "Hans von Brunn"
         },
         {
           "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Balthasar von Wenkheim"
+          "place": "nuremberg"
         },
         {
-          "person": "Hans von Brunn"
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -50,6 +47,9 @@
               "personTitle": [
                 "Bishop"
               ]
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         }

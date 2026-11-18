@@ -13,6 +13,12 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "boxberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -22,7 +28,12 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "made an agreement with Philipp Jakob, Konrad and Hans Carius von Rosenberg to settle sheep-grazing disputes between the communities of Rosenberg and Hirschlanden and the community of Hohenstadt."
+          "content": "made an agreement with Philipp Jakob, Konrad and Hans Carius von Rosenberg to settle sheep-grazing disputes between the communities of Rosenberg and Hirschlanden and the community of Hohenstadt.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ]
     }

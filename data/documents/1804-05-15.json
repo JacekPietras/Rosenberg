@@ -15,13 +15,22 @@
           ]
         },
         {
+          "place": "dottenheim"
+        },
+        {
           "person": "Eberhard von Leyen"
+        },
+        {
+          "place": "oberschuepf"
         },
         {
           "person": "Reinhard von Dienheim"
         },
         {
           "person": "Rufina von Leyen"
+        },
+        {
+          "place": "uiffingen"
         }
       ],
       "facts": [
@@ -35,6 +44,9 @@
           "mention": [
             {
               "person": "Albrecht von Rosenberg"
+            },
+            {
+              "place": "dottenheim"
             }
           ]
         },
@@ -44,10 +56,13 @@
           "content": "acted as guardian for Eberhard von Leyen’s children, who were named in the inserted charter of 5 February 1578 as heirs of Albrecht von Rosenberg and recipients of Dottenheim fiefs.",
           "mention": [
             {
-              "person": "Eberhard von Leyen"
+              "person": "Albrecht von Rosenberg"
             },
             {
-              "person": "Albrecht von Rosenberg"
+              "place": "dottenheim"
+            },
+            {
+              "person": "Eberhard von Leyen"
             }
           ]
         },
@@ -57,10 +72,13 @@
           "content": "acted as feudal representative for his wife Ruffina von Leyen, who was named in the inserted charter of 5 February 1578 as an heir of Albrecht von Rosenberg and a recipient of Dottenheim fiefs.",
           "mention": [
             {
-              "person": "Rufina von Leyen"
+              "person": "Albrecht von Rosenberg"
             },
             {
-              "person": "Albrecht von Rosenberg"
+              "place": "dottenheim"
+            },
+            {
+              "person": "Rufina von Leyen"
             }
           ]
         },
@@ -79,7 +97,15 @@
             "Freiherr"
           ],
           "type": "generic",
-          "content": "issued a Revers as cantor of Mainz Cathedral concerning the fief grant for properties in the Schüpfergrund, including shares in Schüpf Castle and the village of Uiffingen, listed in the inserted charter of 5 February 1578."
+          "content": "issued a Revers as cantor of Mainz Cathedral concerning the fief grant for properties in the Schüpfergrund, including shares in Schüpf Castle and the village of Uiffingen, listed in the inserted charter of 5 February 1578.",
+          "mention": [
+            {
+              "place": "oberschuepf"
+            },
+            {
+              "place": "uiffingen"
+            }
+          ]
         }
       ]
     }

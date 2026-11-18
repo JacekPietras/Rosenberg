@@ -10,19 +10,7 @@
       "english": "Wilhelm von Rechberg, Kunz von Rosenberg and Thomas von Rosenberg, Walther von Cronberg, Hanns vom Hirschhorn the Younger, Karl and Siegmund von Thüngen pledged to uphold the truce mediated by Archbishop Konrad III of Mainz and Bishop Johann II of Würzburg at Neustadt an der Aisch between them and the city of Nuremberg. Kunz von Rosenberg, Hans von Hirschhorn, and Siegmund von Thüngen sealed the record.",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Thomas von Rosenberg"
-        },
-        {
-          "person": "Hans vom Hirschhorn",
-          "personTitle": [
-            "the Younger"
-          ]
-        },
-        {
-          "person": "Siegmund von Thüngen"
+          "place": "cronberg"
         },
         {
           "person": "Hans of Würzburg",
@@ -31,25 +19,53 @@
           ]
         },
         {
-          "person": "Kunz von Rosenberg"
+          "person": "Hans vom Hirschhorn",
+          "personTitle": [
+            "the Younger"
+          ]
         },
         {
           "person": "Hans von Hirschhorn"
         },
         {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
           "person": "Siegmund von Thüngen"
+        },
+        {
+          "person": "Thomas von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "pledged to observe the truce mediated by the archbishop of Mainz and the bishop of Würzburg between the nobles and the city of Nuremberg."
+          "content": "pledged to observe the truce mediated by the archbishop of Mainz and the bishop of Würzburg between the nobles and the city of Nuremberg.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         },
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "pledged to observe the truce mediated by the archbishop of Mainz and the bishop of Würzburg between the nobles and the city of Nuremberg."
+          "content": "pledged to observe the truce mediated by the archbishop of Mainz and the bishop of Würzburg between the nobles and the city of Nuremberg.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ],
       "img": [

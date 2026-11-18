@@ -9,21 +9,27 @@
       "mention": [
         {
           "person": "Hans of Wertheim"
+        },
+        {
+          "place": "lauda"
         }
       ],
       "facts": [
         {
           "person": "Ruprecht",
           "personTitle": [
-            "der Jüngste",
+            "Herzog in Bayern",
             "Pfalzgraf bei Rhein",
-            "Herzog in Bayern"
+            "der Jüngste"
           ],
           "type": "generic",
           "content": "agreed with Count Hans von Wertheim to exempt their subjects in the Amt Lauda from the death duty until further notice.",
           "mention": [
             {
               "person": "Hans von Wertheim"
+            },
+            {
+              "place": "lauda"
             }
           ]
         }

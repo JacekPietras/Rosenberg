@@ -9,6 +9,9 @@
       "english": "The brothers Heinrich, Go(e)rg, and Cu(o)nrad Marschalk zu Pappenheim sell to their cousins Sigmu(o)nd and Hawpt Marschalk zu Pappenheim their respective thirds of the rights of patronage at the churches of Sufersheim and Theilenhofen, together with seven smallholdings at Theilenhofen, for 1,424 Rhenish florins. They undertake to redeem the seven holdings from Scheffan von Absberg and retain the inn at Theilenhofen. Heinrich, Go(e)rg, and Cu(o)nrad Marschalk, Hans von Rosenberg, Ritter, and Hans von Seckendorf zu Hoheneck seal the deed.",
       "mention": [
         {
+          "place": "absberg"
+        },
+        {
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
@@ -16,6 +19,9 @@
         },
         {
           "person": "Hans von Seckendorf"
+        },
+        {
+          "place": "pappenheim"
         }
       ]
     }

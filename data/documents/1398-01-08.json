@@ -13,6 +13,15 @@
           "personTitle": [
             "King"
           ]
+        },
+        {
+          "place": "lauda"
+        },
+        {
+          "place": "mosbach-st-juliana"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -26,6 +35,9 @@
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "rosenberg-town"
             }
           ]
         }

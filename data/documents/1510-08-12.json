@@ -19,10 +19,7 @@
           "person": "Albrecht von Bibra"
         },
         {
-          "person": "Siegmund von Thüngen",
-          "personTitle": [
-            "Ritter"
-          ]
+          "place": "eubigheim"
         },
         {
           "person": "Georg Truchsess von Baldersheim",
@@ -31,7 +28,25 @@
           ]
         },
         {
+          "place": "herrieden"
+        },
+        {
+          "place": "lauda"
+        },
+        {
           "person": "Leonhard von Rosenberg"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "person": "Siegmund von Thüngen",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [

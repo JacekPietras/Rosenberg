@@ -12,13 +12,21 @@
       "mention": [
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "jagstberg"
         }
       ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "was resident at Jagstberg."
+          "content": "was resident at Jagstberg.",
+          "mention": [
+            {
+              "place": "jagstberg"
+            }
+          ]
         }
       ],
       "img": [

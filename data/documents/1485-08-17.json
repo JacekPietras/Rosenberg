@@ -9,7 +9,7 @@
       "english": "Elector Philipp of the Palatinate announces the ruling of his court in the dispute between Hirsau monastery and the community of Bauerbach. Disputed matters include, among others: a pledge by the convent for 300 guilders as Hungarian aid to Emperor Friedrich III; corvée services; homage; payments of Shrove Tuesday chickens; the sale of monastery properties; and other revenues and rights of the bailiwick. Reference is made, among other things, to contracts between the deceased Abt Bernhard of Hirsau and the community, and legal relations involving Peter von Talheim. The judges and councillors of the Palatine Count in this matter are: Count Bernhard von Leiningen, chief judge; Friedrich von Fleckenstein, knight; Doctor Konrad Aberlin; Diether von Handschuhsheim; Hans von Stetten; Hans von Rosenberg of Uissigheim; Blicker von Gemmingen; and Eucharius von Hirschhorn, licentiate.\n\nDuration: 1485 August 17 (on Wednesday after Our Lady's Day of the Assumption)\n\nSeal: Elector Philipp of the Palatinate (court seal)",
       "mention": [
         {
-          "person": "Peter von Talheim"
+          "person": "Diether von Handschuhsheim"
         },
         {
           "person": "Friedrich von Fleckenstein",
@@ -18,10 +18,19 @@
           ]
         },
         {
-          "person": "Diether von Handschuhsheim"
+          "place": "gemmingen"
         },
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "hirschhorn"
+        },
+        {
+          "person": "Peter von Talheim"
+        },
+        {
+          "place": "uissigheim"
         }
       ],
       "facts": [

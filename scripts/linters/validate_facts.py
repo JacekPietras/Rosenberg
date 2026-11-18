@@ -459,6 +459,7 @@ def clean_facts(path, validator):
         return
     original = path.read_text(encoding='utf-8')
     document = json.loads(original)
+    sort_document_titles = 'documents' in path.resolve().parts
 
     def remove_redundant_titles(value, inherited):
         def attested(fact, date_value):
@@ -498,11 +499,22 @@ def clean_facts(path, validator):
         if isinstance(value, dict):
             inherited = value.get('date', inherited)
             remove_redundant_titles(value, inherited)
+            if sort_document_titles and isinstance(value.get('mention'), list):
+                for mention in value['mention']:
+                    if isinstance(mention, dict):
+                        titles = mention.get('personTitle')
+                        if isinstance(titles, list) and all(isinstance(title, str) for title in titles):
+                            mention['personTitle'] = sorted(titles)
             if value.get('facts') == []:
                 del value['facts']
             for field in ('facts', 'guesses'):
                 for fact in value.get(field, []) if isinstance(value.get(field), list) else []:
                     if isinstance(fact, dict):
+                        if sort_document_titles:
+                            for title_field in ('personTitle', 'ofTitle'):
+                                titles = fact.get(title_field)
+                                if isinstance(titles, list) and all(isinstance(title, str) for title in titles):
+                                    fact[title_field] = sorted(titles)
                         for participant in ('person', 'of'):
                             name = fact.get(participant)
                             canonical_name = validator.canonical_person_name(name)

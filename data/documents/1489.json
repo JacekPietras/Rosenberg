@@ -16,13 +16,27 @@
       "mention": [
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "received Schloss, village, court and Vogtei of Waldmannshofen and the wood at Schön as a Mannlehen from Margraves Friedrich and Sigmund of Brandenburg."
+          "content": "received Schloss, village, court and Vogtei of Waldmannshofen and the wood at Schön as a Mannlehen from Margraves Friedrich and Sigmund of Brandenburg.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ]
     }

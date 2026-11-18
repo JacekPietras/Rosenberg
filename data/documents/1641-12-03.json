@@ -12,7 +12,13 @@
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
+          "place": "gnoetzheim"
+        },
+        {
           "person": "Hans Wolf von Berlichingen"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -23,6 +29,9 @@
           "mention": [
             {
               "person": "Albrecht Christoph von Rosenberg"
+            },
+            {
+              "place": "gnoetzheim"
             }
           ]
         }

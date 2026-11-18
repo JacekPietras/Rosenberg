@@ -16,10 +16,10 @@
           "person": "Hans of Nuremberg"
         },
         {
-          "person": "Heinrich of Schwarzburg"
+          "person": "Hans von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "person": "Heinrich of Schwarzburg"
         }
       ]
     },
@@ -37,6 +37,9 @@
         },
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "schwarzburg"
         }
       ]
     }

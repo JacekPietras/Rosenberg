@@ -10,13 +10,16 @@
       "english": "On Monday after Oculi Sunday in 1490, Georg von Rosenberg and Eberhard Lechner issued an arbitration award concerning Philipp von Weinsberg’s rent and rights in the mill below Reigelsberg near the small grove. It required Georg Truchsess von Baldersheim to pay Philipp 60 Rhenish florins and provide him with a deed of sale. Recorded in Conrad’s first register of contracts, fols. 184–185; see below, fol. 2, ‘mill by the small grove.’",
       "mention": [
         {
+          "person": "Georg Truchsess von Baldersheim"
+        },
+        {
           "person": "Georg von Rosenberg"
         },
         {
           "person": "Philipp von Weinsberg"
         },
         {
-          "person": "Georg Truchsess von Baldersheim"
+          "place": "reichelsburg-aub"
         }
       ],
       "facts": [
@@ -30,6 +33,9 @@
             },
             {
               "person": "Philipp von Weinsberg"
+            },
+            {
+              "place": "reichelsburg-aub"
             }
           ]
         }

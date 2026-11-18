@@ -15,13 +15,31 @@
           "person": "Götz von Hohenlohe"
         },
         {
-          "person": "Götz von Hohenlohe"
-        },
-        {
           "person": "Heinrich von Rieneck"
         },
         {
-          "person": "Eberh(ard) von Rosenberg"
+          "place": "hohenlohe"
+        },
+        {
+          "place": "lauda"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "riedern"
+        },
+        {
+          "place": "rieneck"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "wolffskeel"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -36,6 +54,9 @@
           "mention": [
             {
               "person": "Hans von Riedern"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         },
@@ -49,6 +70,9 @@
           "mention": [
             {
               "person": "Eberhard von Rosenberg"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         },
@@ -59,7 +83,12 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "took Lauda."
+          "content": "took Lauda.",
+          "mention": [
+            {
+              "place": "lauda"
+            }
+          ]
         }
       ]
     }

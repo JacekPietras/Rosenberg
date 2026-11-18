@@ -8,13 +8,16 @@
       "english": "Hohenlohe against Hatzfeldt: An old order written on parchment from Bishop Wolfram of Würzburg to Eberhard von Rosenberg.",
       "mention": [
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
           "person": "Wolfram of Würzburg",
           "personTitle": [
             "Bishop"
           ]
-        },
-        {
-          "person": "Eberhard von Rosenberg"
         }
       ],
       "facts": [

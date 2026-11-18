@@ -12,16 +12,13 @@
           "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
           "person": "Hans of Würzburg",
           "personTitle": [
             "Bishop"
           ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
@@ -31,13 +28,13 @@
           "content": "as heir of Ulrich von Rosenberg released his share of the annual rent at Haßfurt, Volkach and Keller, which Ulrich and others had acquired from Bishop Johann of Würzburg in 1456.",
           "mention": [
             {
-              "person": "Ulrich von Rosenberg"
-            },
-            {
               "person": "Hans of Würzburg",
               "personTitle": [
                 "Bishop"
               ]
+            },
+            {
+              "person": "Ulrich von Rosenberg"
             }
           ]
         }

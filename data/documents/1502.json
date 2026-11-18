@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "wertheim-stiftskirche"
         }
       ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was in conflict with the count of Wertheim."
+          "content": "was in conflict with the count of Wertheim.",
+          "mention": [
+            {
+              "place": "wertheim-stiftskirche"
+            }
+          ]
         }
       ]
     }

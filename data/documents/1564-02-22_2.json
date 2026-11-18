@@ -10,6 +10,12 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "unterschuepf"
         }
       ],
       "facts": [
@@ -19,7 +25,12 @@
             "zu Schüpf"
           ],
           "type": "generic",
-          "content": "increased the income of the Unterschüpf chapel by assigning it specified revenues."
+          "content": "increased the income of the Unterschüpf chapel by assigning it specified revenues.",
+          "mention": [
+            {
+              "place": "unterschuepf"
+            }
+          ]
         }
       ],
       "img": [

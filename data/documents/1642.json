@@ -7,6 +7,11 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6667619",
       "german": "Aufnahme der Professen von Hochstetten und von Rosenberg in das Kapitel",
       "english": "Admission of the professed brothers von Hochstetten and von Rosenberg into the chapter",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/96/169/hstam_96_nr_169_0001.jpg"

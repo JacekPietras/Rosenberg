@@ -10,7 +10,10 @@
       "english": "King Wenceslas confirms to Konrad von Rosenberg and his cousins the court and other rights in their city of Boxberg\n\nZeitschrift für die Geschichte des Oberrheins. 24. 1872\n\nKing Wenceslaus, for the sake of his faithful services, grants to Konrad von Rosenberg, Viztame at Heidelberg, and to his cousins, \"who jointly hold with him the fortress at Boxberg,\" the favor that people or Jews who move to the town of Boxberg and become resident there, shall partake in all liberties, graces, and rights as they appertain to the town; he also confirms to them the court at Boxberg and all graces and rights as they are established of old. Given at Amberg in 1388 on the Monday after St. Ambrose's day, in the 25th year of our Bohemian reign and in the 12th year of our Roman reign. Original on parchment with a damaged seal of majesty. By the lord Lampert, Bishop of Bamberg; Wlachnico de Weytenmule.",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
+          "place": "boxberg"
+        },
+        {
+          "place": "heidelberg"
         },
         {
           "person": "König Wenceslaus",
@@ -32,6 +35,9 @@
           "content": "received King Wenceslaus’s confirmation of the court and other historic rights at Boxberg for himself and his cousins.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "König Wenceslaus",
               "personTitle": [
                 "King"
@@ -45,7 +51,12 @@
             "Viztum zu Heidelberg"
           ],
           "type": "generic",
-          "content": "had cousins who jointly held the fortress at Boxberg with him."
+          "content": "had cousins who jointly held the fortress at Boxberg with him.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "vitztum_zu_Heidelberg",
@@ -64,31 +75,43 @@
       "english": "King Wenzel grants Konrad von Rosenberg the privilege that all who move to Boxberg shall have the rights of the town of Lauda, and confirms to him and his cousins the court at Boxberg.\n\n6 April 1388.\n\nWe, Wenzel, by the grace of God king of the Romans, ever augmenting the empire, and king of Bohemia, acknowledge and make publicly known by this charter to all who see it or hear it read that, for the faithful services which the noble Konrad von Rosenberg, Vitztum at Heidelberg, our dear faithful subject, has long rendered us and the empire and may and shall render in the future, we have granted and by Roman royal authority and the force of this charter grant to that Konrad and his cousins, who hold shares with him in the fortress at Boxberg, this special privilege: whatever people or Jews move under their protection into their town of Boxberg and become resident there shall enjoy all the liberties, privileges and rights of the town of Lauda. We also confirm to them the court there at Boxberg and intend that it shall remain with the privileges as it has had them from of old, without prejudice to our rights, those of the empire or anyone else’s rights.\n\nIn witness whereof this charter is sealed with our royal seal of majesty. Given at Amberg in the thirteen hundred and eighty-eighth year after Christ’s birth, on the Monday after St. Ambrose’s Day, in the twenty-fifth year of our reign in Bohemia and the twelfth of our reign as king of the Romans.\n\nBy Lord Lampert, bishop of Bamberg: Wlachnico de Weytenmule.\n\nOn the reverse: R. Bartholomeus de Novacivitate.\n\nOriginal (parchment with seal) in the G.-L.-A. at Karlsruhe.",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
           "person": "König Wenceslaus",
           "personTitle": [
             "King"
           ]
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Vitztum"
           ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "lauda"
         }
       ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
-            "vitzthum zu Heidelberg",
-            "Edel"
+            "Edel",
+            "vitzthum zu Heidelberg"
           ],
           "type": "generic",
           "content": "received with his Vettern confirmation from King Wenzel of the court at Boxberg.",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "König Wenceslaus",
               "personTitle": [
@@ -100,16 +123,26 @@
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
-            "vitzthum zu Heidelberg",
-            "Edel"
+            "Edel",
+            "vitzthum zu Heidelberg"
           ],
           "type": "generic",
-          "content": "held the fortress at Boxberg jointly with his Vettern."
+          "content": "held the fortress at Boxberg jointly with his Vettern.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "subject": "Boxberg",
           "type": "generic",
-          "content": "was granted the freedoms and rights of Lauda for people or Jews settling in the town."
+          "content": "was granted the freedoms and rights of Lauda for people or Jews settling in the town.",
+          "mention": [
+            {
+              "place": "lauda"
+            }
+          ]
         }
       ]
     }

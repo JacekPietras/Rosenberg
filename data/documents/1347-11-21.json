@@ -9,10 +9,10 @@
       "english": "1347, November 21, Wednesday after Elisabeth - Emperor Charles IV grants Kraft von Hohenlohe the imperial fees held by Eberhard von Rosenberg, Vogt of Dürn",
       "mention": [
         {
-          "person": "Kraft von Hohenlohe"
+          "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Kraft von Hohenlohe"
         }
       ],
       "facts": [
@@ -41,10 +41,10 @@
       "english": "Emperor Charles IV confirms to Count Kraft of Hohenlohe the serfs in the Ohrnwald, which he had acquired from Eberhard von Rosenberg.",
       "mention": [
         {
-          "person": "Kraft of Hohenlohe"
+          "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Kraft of Hohenlohe"
         }
       ],
       "facts": [
@@ -54,7 +54,12 @@
             "Graf"
           ],
           "type": "generic",
-          "content": "acquired serfs in the Ohrnwald from [vogt_zu_Durn]."
+          "content": "acquired serfs in the Ohrnwald from [vogt_zu_Durn].",
+          "mention": [
+            {
+              "place": "wallduern"
+            }
+          ]
         }
       ],
       "img": [
@@ -77,10 +82,10 @@
       "english": "Kraft von Hohenlohe and Eberhard von Rosenberg (original and copy).",
       "mention": [
         {
-          "person": "Kraft von Hohenlohe"
+          "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Kraft von Hohenlohe"
         }
       ],
       "img": [
@@ -99,10 +104,13 @@
       "english": "King Charles IV for Count Kraft of Hohenlohe, concerning the serfs in the Ohrenwald and on the Kocher river, whom Eberhard von Rosenberg had held on behalf of the Empire. Given at Nuremberg on the Wednesday after Saint Elizabeth's Day, 1347.",
       "mention": [
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Kraft of Hohenlohe"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "nuremberg"
         }
       ],
       "facts": [
@@ -124,6 +132,12 @@
           "personTitle": [
             "vogt"
           ]
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [

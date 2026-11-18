@@ -9,22 +9,28 @@
       "english": "Files of Landgrave Philipp: Instructions for the Hessian diet envoy Dr. Melchior Soiter. Correspondence with the League Captain Wilhelm Guß v. Gussenberg and the Swabian League, the Amtmann of Gießen Balthasar von Weitolshausen called Schrautenbach and Chancellor Johann Feige. Nördlingen League resolution of May 17 (copy)\n\nContains: March 1523. Dispatch of Soiter to the diet in Ulm on March 15 regarding joint operations of the League and the Landgrave with his allies Trier and Palatinate against Franz von Sickingen and Hans Thomas von Absberg. Negotiations by Soiter at the diet with the League Captain Guß v. Gussenberg and Christoph Kreß of Nürnberg regarding the campaign, and with Ulrich Arzt of Augsburg regarding Kaspar von Ulm. Setting the joint campaign for June 1 from Dinkelsbühl. Ulmer League resolution of March 15: Appointment of field commanders for the campaign, scheduling a diet in Nördlingen for May 17, deployment of individual league contingents, intention of Elector Ludwig of the Palatinate to join the League, payment of contributions for maintaining the Imperial Regiment and Imperial Chamber Court and for Turkish aid by the league estates, oppressive tolls, coin irregularities in Augsburg, use of Duke Wilhelm of Bavaria for the monastery of Tegernsee damaged by the Imperial Regiment, the League's advocacy for the monastery of Kaisheim and Wilhelm Truchseß Freiherr von Waldburg, disputes of the Counts of Montfort with widow Barbara Marschall, conflict between the von Stotzingen and Ulrich von Schellenberg, expenses of the previous Württemberg war, repayment of the League's loan to Augsburg and Nürnberg, request for aid from the cities of Augsburg and Nürnberg to the League against Hans Melchior von Rosenberg, Philipp v. Rüdigheim and Lorenz Reuschlin.\nApril. Payment of the League aid. League assessment and accounting. Efforts of the Landgrave to be exempted from his league obligations. Meeting between Schrautenbach, Feige, and Dr. Soiter in Gießen to discuss the forthcoming diet in Nördlingen, the war against Franz von Sickingen, and payment of the League's captains, judges, and councillors.\n\nMay. The Landgrave repeatedly petitions the League to remit his League aid. Nördlingen League resolution of May 17: provisions concerning the fiefs and allodial properties that had been seized; disputes between the city and abbey of Augsburg; support for Duke Wilhelm of Bavaria against the Turks; advocacy on behalf of Kaisheim Abbey; voting rights of the newly admitted Elector Palatine and the counts palatine; urgent League assistance; complaints by Dukes Wilhelm and Ludwig of Bavaria before the Imperial Chamber Court; damage to Tegernsee Abbey; disputes between the Bishopric of Würzburg and Ebrach Abbey, between Wilhelm Truchseß, Baron of Waldburg, and his four cities, and between the city of Isny and the Count of Ortenburg; maneuvers by individual Imperial Estates against the League; the burden placed on the League by the Imperial Regiment; the League's accounting; protection of the conquered territories; the League's debts to Augsburg and Nürnberg; and the scheduling of a new diet after Ulm for September 29.",
       "mention": [
         {
+          "place": "ebrach"
+        },
+        {
           "person": "Franz von Sickingen"
-        },
-        {
-          "person": "Hans Thomas von Absberg"
-        },
-        {
-          "person": "Wilhelm Truchsess"
         },
         {
           "person": "Hans Melchior von Rosenberg"
         },
         {
-          "person": "Franz von Sickingen"
+          "person": "Hans Thomas von Absberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "person": "Wilhelm Truchsess"
         },
         {
           "person": "Wilhelm Truchsess of Waldburg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -32,6 +38,11 @@
           "person": "Hans Melchior von Rosenberg",
           "type": "generic",
           "content": "was named in Augsburg and Nürnberg’s request for assistance from the Swabian League in March against him, Philipp von Rüdigheim and Lorenz Reuschlin.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ],
           "date": "1523-03"
         }
       ],

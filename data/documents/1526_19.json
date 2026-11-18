@@ -9,6 +9,9 @@
       "english": "Rothenburg to Zaisolph von Rosenberg: response to his letter of self-justification.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "received Rothenburg’s response to his letter of exculpation."
+          "content": "received Rothenburg’s response to his letter of exculpation.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

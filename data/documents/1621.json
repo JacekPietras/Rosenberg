@@ -9,14 +9,25 @@
       "english": "Petition by von Rosenberg and Hans Christoph von Adelsheim to remove the quartered soldiers from their subjects in Edelfingen and not to harass them with further such quarters\n\nDuration: 1621",
       "mention": [
         {
+          "place": "edelfingen"
+        },
+        {
           "person": "Hans Christoph von Adelsheim"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
         {
           "subject": "the von Rosenberg family and Johann Christoph von Adelsheim",
           "type": "generic",
-          "content": "asked for soldiers quartered at Edelfingen to be removed from their subjects and for their subjects not to be burdened by them."
+          "content": "asked for soldiers quartered at Edelfingen to be removed from their subjects and for their subjects not to be burdened by them.",
+          "mention": [
+            {
+              "place": "edelfingen"
+            }
+          ]
         }
       ]
     }

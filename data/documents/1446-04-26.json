@@ -9,27 +9,6 @@
       "english": "Prohibition letter of the court under Court Judge Count Johann II. von Sulz dated April 26, 1446: Upon complaint of Margaretha von Thüngen (\"Thungen\"), daughter of the deceased Wilhelm von Thüngen, nun at the Augustinian convent Himmelskron in Hochheim near Worms, the following persons were placed under the ban: The knights Thomas von Rosenberg, Eberhard von Rosenberg, Friedrich Wolfskehl (\"Wolffskel\"), Eberhard Wolfskehl, Konrad von Hartheim, as well as Eberhard Rude the Elder, Eberhard Rude the Younger and Konz von Grünbach.\n\nSeal: Oblate seal of the court on the reverse (diameter 7 cm, well preserved)",
       "mention": [
         {
-          "person": "Margaretha von Thüngen"
-        },
-        {
-          "person": "Wilhelm von Thüngen"
-        },
-        {
-          "person": "Thomas von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Friedrich Wolfskehl"
-        },
-        {
-          "person": "Eberhard Wolfskehl"
-        },
-        {
-          "person": "Konrad von Hartheim"
-        },
-        {
           "person": "Eberhard Rüd",
           "personTitle": [
             "the Elder"
@@ -40,6 +19,30 @@
           "personTitle": [
             "the Younger"
           ]
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Eberhard Wolfskehl"
+        },
+        {
+          "person": "Friedrich Wolfskehl"
+        },
+        {
+          "person": "Konrad von Hartheim"
+        },
+        {
+          "person": "Margaretha von Thüngen"
+        },
+        {
+          "person": "Thomas von Rosenberg"
+        },
+        {
+          "place": "thuengen"
+        },
+        {
+          "person": "Wilhelm von Thüngen"
         }
       ],
       "facts": [

@@ -18,17 +18,28 @@
           "person": "Kunz von Rosenberg"
         },
         {
+          "person": "Lorenz von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
           "person": "Philipp Jakob von Rosenberg"
         },
         {
-          "person": "Lorenz von Rosenberg"
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "received his share of fiefs in the court and Vogtei at Waldmannshofen, at Schön and in the Swal as Mannlehen after inheriting them from his father Lorenz and dividing them with his brother Philipp Jakob."
+          "content": "received his share of fiefs in the court and Vogtei at Waldmannshofen, at Schön and in the Swal as Mannlehen after inheriting them from his father Lorenz and dividing them with his brother Philipp Jakob.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         },
         {
           "person": "Lorenz von Rosenberg",

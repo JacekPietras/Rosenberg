@@ -13,14 +13,19 @@
           "person": "Hans von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "lauda"
         }
       ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "sold rights, serfs, and other things at Lauda, Maibach, Königshofen, Herbfeld, and elsewhere to the bishopric."
+          "content": "sold rights, serfs, and other things at Lauda, Maibach, Königshofen, Herbfeld, and elsewhere to the bishopric.",
+          "mention": [
+            {
+              "place": "lauda"
+            }
+          ]
         }
       ],
       "img": [

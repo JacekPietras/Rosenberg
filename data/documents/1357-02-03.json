@@ -8,7 +8,19 @@
       "english": "Eberhard Graf zu Wertheim, grants his wife Katherin the village of Uffingen, which he gave her as a dowry, and later transferred to the honorable people Eberhard von Rosenberg der Jüngere and Margaretha von Thüngen, the former housewives of Eberhard von Rosenberg der Ältere, the villages of Dertingen and Waldbüttelbrunn, so that she will receive 50 Pfennig (Würzburg currency) and 50 Malters of Wertheim grain annually from Dertingen and will own Waldbüttelbrunn with all rights until redemption.\n\nSealers: the Count; Eberhard Rüde; Ulrich Pavey; both knights; Arnold von Talheim; Herman Seman; Walther Kotbuss; noble servants",
       "mention": [
         {
+          "person": "Arnold von Talheim"
+        },
+        {
+          "place": "dertingen"
+        },
+        {
           "person": "Eberhard"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -20,13 +32,13 @@
           "person": "Margaretha von Thüngen"
         },
         {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
+          "place": "waldbuettelbrunn"
         },
         {
-          "person": "Arnold von Talheim"
+          "place": "wertheim-stiftskirche"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -68,7 +80,15 @@
             "Graf zu Wertheim"
           ],
           "type": "generic",
-          "content": "pledged Dertingen and Waldbüttelbrunn to his wife Katherine as substitute properties for Uffingen."
+          "content": "pledged Dertingen and Waldbüttelbrunn to his wife Katherine as substitute properties for Uffingen.",
+          "mention": [
+            {
+              "place": "dertingen"
+            },
+            {
+              "place": "waldbuettelbrunn"
+            }
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",

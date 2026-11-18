@@ -12,6 +12,12 @@
           "person": "Albrecht von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -19,37 +25,93 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "nuremberg"
+            }
+          ]
         },
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "nuremberg"
+            }
+          ]
         },
         {
           "person": "Jakob von Rosenberg",
           "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "nuremberg"
+            }
+          ]
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "nuremberg"
+            }
+          ]
         },
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "nuremberg"
+            }
+          ]
         },
         {
           "person": "Eucharius von Rosenberg",
           "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "nuremberg"
+            }
+          ]
         },
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "nuremberg"
+            }
+          ]
         },
         {
           "person": "Albrecht von Rosenberg",

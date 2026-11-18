@@ -10,13 +10,16 @@
       "english": "King Ludwig pledges to the brothers, knights Eberhard von Rosenberg and Konrad von Rosenberg, for 100 pounds of Haller currency, the people belonging to him and the Empire in the courts of Buchen and Osterburken as well as in the village of Sennfeld, until redeemed by him or his successors in the Empire for the said sum.",
       "mention": [
         {
+          "place": "buchen"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "König Ludwig",
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Eberhard von Rosenberg"
         },
         {
           "person": "Konrad von Rosenberg"
@@ -43,6 +46,9 @@
           "content": "received a pledge from King Ludwig of the imperial people in the courts of Buchen and Osterburken and the village of Sennfeld.",
           "mention": [
             {
+              "place": "buchen"
+            },
+            {
               "person": "König Ludwig",
               "personTitle": [
                 "King"
@@ -58,6 +64,9 @@
           "type": "generic",
           "content": "received a pledge from King Ludwig of the imperial people in the courts of Buchen and Osterburken and the village of Sennfeld.",
           "mention": [
+            {
+              "place": "buchen"
+            },
             {
               "person": "König Ludwig",
               "personTitle": [

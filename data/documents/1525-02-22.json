@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "schweigern"
         }
       ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "sold his half of the village of Schweigern to Kurfürst Ludwig V of the Palatinate."
+          "content": "sold his half of the village of Schweigern to Kurfürst Ludwig V of the Palatinate.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         }
       ],
       "img": [

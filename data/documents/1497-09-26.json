@@ -9,16 +9,19 @@
       "english": "Arbitration award: Bishop Lorenz of Würzburg decides in disputes between Philipp the Elder, Lord of Weinsberg, on one side, and Asmus von Rosenberg, knight, and his son Lienhard on the other side, concerning hunting, regarding laying flax in the Gollach, furthermore concerning driving sheep into the market at Gülchsheim, etc.",
       "mention": [
         {
+          "person": "Asmus von Rosenberg",
+          "personTitle": [
+            "knight"
+          ]
+        },
+        {
           "person": "Lorenz of Würzburg",
           "personTitle": [
             "Bishop"
           ]
         },
         {
-          "person": "Asmus von Rosenberg",
-          "personTitle": [
-            "knight"
-          ]
+          "place": "weinsberg"
         }
       ],
       "facts": [
@@ -36,7 +39,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was party with his son Leonhard to a dispute with Philipp der Ältere, Herr zu Weinsberg, concerning hunting, flax in the Gollach and sheep grazing near Gülchsheim."
+          "content": "was party with his son Leonhard to a dispute with Philipp der Ältere, Herr zu Weinsberg, concerning hunting, flax in the Gollach and sheep grazing near Gülchsheim.",
+          "mention": [
+            {
+              "place": "weinsberg"
+            }
+          ]
         }
       ]
     }

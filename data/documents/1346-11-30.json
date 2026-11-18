@@ -10,13 +10,16 @@
       "english": "The guardians of the foundation at Mainz: Kuone von Falkenstein (Valkensten), schoolmaster, and Nyclas von dem Steine (Stey-), canon; Eberhard von Rosenberg, Johann von Randeck (-cken), and Johann von Bellersheim (Beldirs-), knights, pledge with the consent of Archbishop Heinrich, Custos Heinrich, and the cathedral chapter, to the brothers Hencze, Bertold, and Hans von Grumbach, the foundation's share in the castle and town of Rieneck (Reneke) and half of the castle of Partenstein (B-) for 1600 small guilders. Of this, the foundation owed them 600 small guilders for services, etc.; for the other 1000 they shall redeem the castles of H. Friedrich Schelris and Hans Hohelin1. The foundation may repurchase for 1600 marks, but only after four years have elapsed, with half-year notice. If Count Gerhart von Rieneck's claim to the foundation's share at Rieneck with appurtenances, which he is now making against the foundation, is \"answered,\" then Mainz shall compensate the brothers for any resulting loss. The castles remain open to Mainz. The other usual provisions follow. The Archbishop, the cathedral chapter, and the guardianship seal.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Berthold von Grumbach"
         },
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Hans von Grumbach"
+        },
+        {
+          "place": "rieneck"
         }
       ],
       "facts": [
@@ -29,10 +32,16 @@
           "content": "with the other guardians of Mainz pledged the church’s share of castle and town Rieneck and half of Burg Bartenstein to Hencze, Bertold and Johans von Grumbach.",
           "mention": [
             {
+              "place": "bartenstein"
+            },
+            {
               "person": "Berthold von Grumbach"
             },
             {
               "person": "Hans von Grumbach"
+            },
+            {
+              "place": "rieneck"
             }
           ]
         }

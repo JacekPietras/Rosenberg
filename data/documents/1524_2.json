@@ -7,6 +7,11 @@
       "url": "https://www.gda.bayern.de/gvl/document/1e9dea96-7ca4-4cfa-a17c-d334829f0f7e",
       "german": "Chur-Pfälzische Beschuldigungen contra Herrn von Rosenberg, und deßen Inhaftirung, betreffend, 1524.",
       "english": "Electoral Palatinate accusations against Herren von Rosenberg and his imprisonment, 1524.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
           "subject": "the lord von Rosenberg named in the record",

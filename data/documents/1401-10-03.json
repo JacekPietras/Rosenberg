@@ -15,6 +15,12 @@
       "mention": [
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rothenburg"
         }
       ],
       "facts": [
@@ -47,6 +53,9 @@
           "personTitle": [
             "Ritter"
           ]
+        },
+        {
+          "place": "rothenburg"
         }
       ],
       "facts": [
@@ -63,6 +72,9 @@
               "personTitle": [
                 "King"
               ]
+            },
+            {
+              "place": "rothenburg"
             }
           ]
         }

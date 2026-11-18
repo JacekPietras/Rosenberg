@@ -14,13 +14,21 @@
         },
         {
           "person": "Konrad called Rüd"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "was present for the accounts of Engelhard, the Mainz cellarer at Amorbach, as an official in Dürn."
+          "content": "was present for the accounts of Engelhard, the Mainz cellarer at Amorbach, as an official in Dürn.",
+          "mention": [
+            {
+              "place": "wallduern"
+            }
+          ]
         }
       ]
     }

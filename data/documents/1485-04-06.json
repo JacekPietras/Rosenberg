@@ -10,13 +10,24 @@
       "mention": [
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "oberschuepf-castle"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "received one eighth of Schloss Schüpf as a Mannlehen from Archbishop Berthold of Mainz."
+          "content": "received one eighth of Schloss Schüpf as a Mannlehen from Archbishop Berthold of Mainz.",
+          "mention": [
+            {
+              "place": "oberschuepf-castle"
+            }
+          ]
         },
         {
           "person": "Anselm von Rosenberg",
@@ -25,6 +36,9 @@
           "mention": [
             {
               "person": "Hans von Rosenberg"
+            },
+            {
+              "place": "oberschuepf-castle"
             }
           ]
         }

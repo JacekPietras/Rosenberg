@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "rothenburg"
         }
       ],
       "facts": [
@@ -19,7 +22,12 @@
             "Amtmann zu Röttingen und Reigelberg"
           ],
           "type": "generic",
-          "content": "wrote to Rothenburg interceding for Lutz Kutterolf."
+          "content": "wrote to Rothenburg interceding for Lutz Kutterolf.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

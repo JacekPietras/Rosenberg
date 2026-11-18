@@ -10,13 +10,16 @@
       "english": "As King of Bohemia, Charles IV confirms the inserted charter of the Prague burgher Henslin Meinhard dated 1 August 1356, by which Meinhard sells his estates in Swol and elsewhere to Bishop Mathias of Trebigne, referring to an exchange of estates made with the monastery of Königssaal at Landsberg.\n\nWitnesses: Johann, Bishop of Olomouc; Dietrich, Bishop of Minden; Czenko von Leipa, chief chamberlain of the Kingdom of Bohemia; Peter von Rosenberg; Jodok von Rosenberg; Ulrich von Rosenberg; Andreas von Duba; Heinrich von Neuhaus.",
       "mention": [
         {
+          "person": "Heinrich von Neuhaus"
+        },
+        {
           "person": "Peter von Rosenberg"
         },
         {
-          "person": "Ulrich von Rosenberg"
+          "place": "rosenberg-town"
         },
         {
-          "person": "Heinrich von Neuhaus"
+          "person": "Ulrich von Rosenberg"
         }
       ]
     }

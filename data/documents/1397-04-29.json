@@ -12,6 +12,9 @@
         },
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -23,32 +26,62 @@
         {
           "person": "arnold_boxberg",
           "type": "generic",
-          "content": "was granted by King Wenceslas the right to appoint a Schultheiß and Schöffen in Schweigern."
+          "content": "was granted by King Wenceslas the right to appoint a Schultheiß and Schöffen in Schweigern.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         },
         {
           "person": "arnold_boxberg",
           "type": "generic",
-          "content": "was granted by King Wenceslas the right to hold a Halsgericht and maintain Stock und Galgen in Schweigern."
+          "content": "was granted by King Wenceslas the right to hold a Halsgericht and maintain Stock und Galgen in Schweigern.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         },
         {
           "person": "arnold_boxberg",
           "type": "generic",
-          "content": "was granted by King Wenceslas the right to judge in Schweigern according to customary court practice."
+          "content": "was granted by King Wenceslas the right to judge in Schweigern according to customary court practice.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         },
         {
           "person": "eberhard_jagstberg",
           "type": "generic",
-          "content": "was granted by King Wenceslas the right to appoint a Schultheiß and Schöffen in Schweigern."
+          "content": "was granted by King Wenceslas the right to appoint a Schultheiß and Schöffen in Schweigern.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         },
         {
           "person": "eberhard_jagstberg",
           "type": "generic",
-          "content": "was granted by King Wenceslas the right to hold a Halsgericht and maintain Stock und Galgen in Schweigern."
+          "content": "was granted by King Wenceslas the right to hold a Halsgericht and maintain Stock und Galgen in Schweigern.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         },
         {
           "person": "eberhard_jagstberg",
           "type": "generic",
-          "content": "was granted by King Wenceslas the right to judge in Schweigern according to customary court practice."
+          "content": "was granted by King Wenceslas the right to judge in Schweigern according to customary court practice.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         }
       ]
     }

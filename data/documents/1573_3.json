@@ -10,13 +10,24 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "kocherstetten-marienkirche"
+        },
+        {
+          "place": "unterschuepf"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "owed capital to the Teutonic Order; the file also concerns Georg Eberhard von Stetten’s exchange of a mill at Ailringen for Order property and rents at Ober- and Unterschüpf."
+          "content": "owed capital to the Teutonic Order; the file also concerns Georg Eberhard von Stetten’s exchange of a mill at Ailringen for Order property and rents at Ober- and Unterschüpf.",
+          "mention": [
+            {
+              "place": "unterschuepf"
+            }
+          ]
         }
       ]
     }

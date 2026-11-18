@@ -9,6 +9,9 @@
       "english": "Georg von Rosenberg and his wife Margaretha issued a deed of sale concerning their shares in Eubigheim Castle and village, together with their appurtenances.",
       "mention": [
         {
+          "place": "eubigheim"
+        },
+        {
           "person": "Georg von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "sold his and his wife Margaretha’s shares in Eubigheim Castle and village with their appurtenances."
+          "content": "sold his and his wife Margaretha’s shares in Eubigheim Castle and village with their appurtenances.",
+          "mention": [
+            {
+              "place": "eubigheim"
+            }
+          ]
         }
       ]
     }

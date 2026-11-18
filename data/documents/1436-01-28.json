@@ -12,6 +12,9 @@
       "english": "The transcription states that, on the Saturday after St Paul’s Day, Bishop Johann of Würzburg enfeoffed Konrad von Rosenberg, resident at Bartenstein, with half of the village of Riedbach and its toll. The archive summary describes the same half-village and toll as pledged to Konrad. The bishop’s and cathedral chapter’s seals are missing.",
       "mention": [
         {
+          "place": "bartenstein"
+        },
+        {
           "person": "Hans of Würzburg",
           "personTitle": [
             "Bishop"
@@ -28,7 +31,12 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "received half of Riedbach village and its toll as a fief from the Bishop of Würzburg."
+          "content": "received half of Riedbach village and its toll as a fief from the Bishop of Würzburg.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ],
       "img": [

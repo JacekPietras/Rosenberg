@@ -13,6 +13,9 @@
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "wertheim-stiftskirche"
         }
       ],
       "facts": [
@@ -22,7 +25,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "pledged six years of service and support in feuds, subject to exceptions, to Johann and Michel and Asmus, counts of Wertheim, and Philipp, count of Hanau-Lichtenberg."
+          "content": "pledged six years of service and support in feuds, subject to exceptions, to Johann and Michel and Asmus, counts of Wertheim, and Philipp, count of Hanau-Lichtenberg.",
+          "mention": [
+            {
+              "place": "wertheim-stiftskirche"
+            }
+          ]
         }
       ]
     }

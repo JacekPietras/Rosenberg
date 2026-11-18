@@ -9,10 +9,16 @@
       "english": "Counter-security by Zeysolf von Rosenberg, knight, for Bishop Lorenz of Würzburg concerning the office of Jagstberg.",
       "mention": [
         {
+          "place": "jagstberg"
+        },
+        {
           "person": "Lorenz of Würzburg",
           "personTitle": [
             "Bishop"
           ]
+        },
+        {
+          "place": "rosenberg-town"
         }
       ]
     }

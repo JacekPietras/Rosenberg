@@ -9,6 +9,12 @@
       "english": "Christoffel Zigler, town clerk of Röttingen, makes a notarial instrument concerning the protest raised against the city of Rothenburg by Zaisolph von Rosenberg zu Haldermannstetten over the tithe and other rights there. Original, parchment, with notarial signet.",
       "mention": [
         {
+          "place": "roettingen"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -19,7 +25,15 @@
             "zu Haltenbergstetten Niederstetten"
           ],
           "type": "generic",
-          "content": "protested against Rothenburg over the tithe and other rights at Haldermannstetten."
+          "content": "protested against Rothenburg over the tithe and other rights at Haldermannstetten.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            },
+            {
+              "place": "schloss-haltenbergstetten"
+            }
+          ]
         }
       ]
     }

@@ -9,16 +9,22 @@
       "english": "Michael von Rosenberg, Hans Melchior von Steinkallenfels and his wife Elisabeth née von Rosenberg, as well as Martin von Zeutern and his wife Ursula née von Rosenberg as heirs of Georg von Rosenberg sell to Elector Friedrich II of the Palatinate their inherited share in the farm buildings and tenure farms Gräffingen and Hoffeld at the Ahorn near Boxberg, together with properties and dues at Uiffingen, for 4,500 guilders.\n\nPeriod: March 20, 1544",
       "mention": [
         {
-          "person": "Michael von Rosenberg"
+          "place": "boxberg"
         },
         {
           "person": "Elisabeth von Rosenberg"
         },
         {
-          "person": "Ursula von Rosenberg"
+          "person": "Georg von Rosenberg"
         },
         {
-          "person": "Georg von Rosenberg"
+          "person": "Michael von Rosenberg"
+        },
+        {
+          "place": "uiffingen"
+        },
+        {
+          "person": "Ursula von Rosenberg"
         }
       ],
       "facts": [
@@ -28,7 +34,13 @@
           "content": "sold his inherited share in the farms Gräffingen and Hoffeld at the Ahorn near Boxberg and property and dues at Uiffingen, with the other heirs of Jörg von Rosenberg, to Elector Friedrich II of the Palatinate.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Georg von Rosenberg"
+            },
+            {
+              "place": "uiffingen"
             }
           ]
         },
@@ -48,7 +60,13 @@
           "content": "sold her inherited share in the farms Gräffingen and Hoffeld at the Ahorn near Boxberg and property and dues at Uiffingen, with the other heirs of Jörg von Rosenberg, to Elector Friedrich II of the Palatinate.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Georg von Rosenberg"
+            },
+            {
+              "place": "uiffingen"
             }
           ]
         },
@@ -58,7 +76,13 @@
           "content": "sold her inherited share in the farms Gräffingen and Hoffeld at the Ahorn near Boxberg and property and dues at Uiffingen, with the other heirs of Jörg von Rosenberg, to Elector Friedrich II of the Palatinate.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Georg von Rosenberg"
+            },
+            {
+              "place": "uiffingen"
             }
           ]
         },
@@ -69,6 +93,9 @@
           "mention": [
             {
               "person": "Georg von Rosenberg"
+            },
+            {
+              "place": "uiffingen"
             }
           ]
         },
@@ -79,6 +106,9 @@
           "mention": [
             {
               "person": "Georg von Rosenberg"
+            },
+            {
+              "place": "uiffingen"
             }
           ]
         }

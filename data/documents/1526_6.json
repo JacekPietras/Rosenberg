@@ -9,6 +9,9 @@
       "english": "Rothenburg to (Margrave Casimir): Complaint of Zaisolph von Rosenberg regarding the damages suffered during the Peasants' War.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "complained to Rothenburg about damages he suffered during the Peasants’ War."
+          "content": "complained to Rothenburg about damages he suffered during the Peasants’ War.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

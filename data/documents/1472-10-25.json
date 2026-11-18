@@ -12,6 +12,9 @@
           "person": "Hans von heideck"
         },
         {
+          "place": "roettingen"
+        },
+        {
           "person": "Rudolf of Würzburg",
           "personTitle": [
             "Bishop"
@@ -32,6 +35,9 @@
               "personTitle": [
                 "Bishop"
               ]
+            },
+            {
+              "place": "roettingen"
             }
           ]
         }

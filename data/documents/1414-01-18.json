@@ -9,6 +9,18 @@
       "english": "Bishop Johann of Worms, Bishop Ulrich of Verden, Count Emich von Leiningen, Count Wilhelm von Eberstein, Hans von Hirschhorn, Ritter, Schwarz Reinhard von Sickingen, Ritter, Eberhard vom Hirschhorn, Ritter, Ruprecht Mönch von Rosenberg, and Hans von Beihingen der Jüngere decide, on behalf of Count Palatine Ludwig by Rhine, imperial archsteward and Duke in Bavaria, a dispute between Frau Engeltraut, widow of Ritter Albrecht Göler, and Frau Agnes von Remchingen, wife of Georg von Gemmingen. The former had sued the latter for withholding her paternal property and the inheritance of her cousin Hans von Gemmingen.\n\nTerm: 18 January 1414 (Thursday after St Anthony's day)\n\nSealers: Count Palatine Ludwig by Rhine; Engeltraut, widow of Ritter Albrecht Göler; Agnes von Remchingen, wife of Georg von Gemmingen; Burkhard von Gültlingen, Engeltraut's cousin.",
       "mention": [
         {
+          "person": "Eberhard vom Hirschhorn",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Georg von Gemmingen"
+        },
+        {
+          "person": "Hans von Gemmingen"
+        },
+        {
           "person": "Hans von Hirschhorn",
           "personTitle": [
             "Ritter"
@@ -21,22 +33,7 @@
           ]
         },
         {
-          "person": "Eberhard vom Hirschhorn",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Ruprecht Mönch von Rosenberg"
-        },
-        {
-          "person": "Georg von Gemmingen"
-        },
-        {
-          "person": "Hans von Gemmingen"
-        },
-        {
-          "person": "Georg von Gemmingen"
         }
       ],
       "img": [

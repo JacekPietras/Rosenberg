@@ -15,22 +15,7 @@
       "english": "1403 June 21, Heidelberg. King Ruprecht sells, for 17,500 Rhenish florins with right of redemption, Kaub Castle and town together with the Rhine toll there to his councillors and faithful followers: Schenk Eberhard der Ältere, Lord of Erbach; Friedrich Schenk, Lord of Limburg and captain in Franconia; Wiprecht von Helmstadt der Ältere; Hans vom Hirschhorn; Diether von Gemmingen; Eberhard von Neipperg; Johann Kämmerer, called von Dalburg, Schultheiß zu Oppenheim; Otte Knebel, Burggraf zu Stalberg; Swarz Reinhard von Sickingen, Landvogt in Alsace; Wiprecht von Helmstadt der Jüngere, Vogt zu Bretten; Hans von Helmstadt; Ulrich Landschad, Burggraf zu Alzey; Tham Knebel, the king’s marshal; Cuutze Munich von Rosenberg, Vogt zu Steinsberg; Hanman von Sickingen, Vizedom zu Neustadt; Hennel Wißkreise von Lindenfels; Cuntze Landschad; Wilhelm von Waldeck, Burggraf zu Stal(eck); Hans von Venningen der Ältere; Gerlach Knebel; Wernher Knebel, called Itelknebel; Reinhard von Sickingen der Jüngere, Vogt zu Heidelberg; Reinhard von Helmstadt; Symon Grans; Hanman, Schultheiß von Weinheim; Ulrich Saltzkern; Heinrich von der Huben, court master at Heidelberg; and Wernher von Albich, Burggraf zu Stromberg. The king had presented to the councillors his urgent need concerning a campaign against Lombardy, which, by God’s grace, was well under way, to recover for the Holy Empire cities, castles, and lands wrongfully taken from it; he asked for their help, which they promised. He made the sale so that his castles, rents, and revenues would not have to pass into foreign hands. The king releases all officials and subjects at Kaub from their oaths to the Palatinate; they are to swear to the purchasers, who may also appoint officials, without prejudice to the rights of the current Amtmann at Kaub, Symon Grans. The king is to pay the councillors an annual rent of 116 florins and 8 groschen at Martinmas from the revenues of the Kaub office and toll. These revenues are also to cover the officials, castle guard, toll clerks and other toll employees, and charges already borne by the office and toll before this deed. Any surplus after the annual rent and those expenses is to be accumulated toward redemption of the office and toll. Once 17,500 florins have accumulated, the councillors are to receive the sum and return the pledge and deed unless the king redeems them earlier; he reserves the right to redeem at any time upon one month’s notice. The king promises to honor the deed and seals it with his Palatine seal, since the named castles, offices, and tolls belong to his Palatinate. His sons Ludwig, Johann, Stephan, and Otto confirm and also seal the deed. Note: “Redempta est.”",
       "mention": [
         {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "King"
-          ]
-        },
-        {
-          "person": "Friedrich Schenk"
-        },
-        {
-          "person": "Wiprecht von Helmstadt",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Hans vom Hirschhorn"
+          "place": "alzey"
         },
         {
           "person": "Diether von Gemmingen"
@@ -39,22 +24,55 @@
           "person": "Eberhard von Neipperg"
         },
         {
-          "person": "Reinhard von Sickingen"
+          "place": "erbach"
         },
         {
-          "person": "Wiprecht von Helmstadt"
+          "person": "Friedrich Schenk"
+        },
+        {
+          "person": "Hans vom Hirschhorn"
         },
         {
           "person": "Hans von Helmstadt"
         },
         {
-          "person": "Wilhelm von Waldeck"
+          "place": "heidelberg"
+        },
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "place": "limpurg"
+        },
+        {
+          "place": "oppenheim"
+        },
+        {
+          "person": "Reinhard von Helmstadt"
         },
         {
           "person": "Reinhard von Sickingen"
         },
         {
-          "person": "Reinhard von Helmstadt"
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "sickingen"
+        },
+        {
+          "person": "Wilhelm von Waldeck"
+        },
+        {
+          "person": "Wiprecht von Helmstadt",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "person": "Wiprecht von Helmstadt"
         }
       ]
     }

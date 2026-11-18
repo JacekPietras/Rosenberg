@@ -8,22 +8,25 @@
       "english": "The Siegmund von Thüngen, Ritter and Jörg Truchsess von Baldersheim, as en signatures of Elector Ludwig of the Palatinate, were simply confiscated by causing the disputes between the sons of the late Arnold von Rosenberg and their cousins Friedrich, Georg von Rosenberg and Hans von Rosenberg because of their share in Bastei and the city of Boxberg etc.",
       "mention": [
         {
-          "person": "Siegmund von Thüngen",
-          "personTitle": [
-            "Ritter"
-          ]
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "place": "boxberg"
         },
         {
           "person": "Georg Truchsess von Baldersheim"
-        },
-        {
-          "person": "Arnold von Rosenberg"
         },
         {
           "person": "Georg von Rosenberg"
         },
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Siegmund von Thüngen",
+          "personTitle": [
+            "Ritter"
+          ]
         }
       ],
       "facts": [
@@ -79,6 +82,9 @@
           "mention": [
             {
               "person": "Arnold von Rosenberg"
+            },
+            {
+              "place": "boxberg"
             }
           ]
         },
@@ -92,6 +98,9 @@
           "mention": [
             {
               "person": "Arnold von Rosenberg"
+            },
+            {
+              "place": "boxberg"
             }
           ]
         }

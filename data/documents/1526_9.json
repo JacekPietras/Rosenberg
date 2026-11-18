@@ -9,6 +9,9 @@
       "english": "Margrave Casimir to Rothenburg: Transmission of the damage list of Zaisolph von Rosenberg.",
       "mention": [
         {
+          "place": "rothenburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was the subject of a damages list that Markgraf Casimir sent to Rothenburg."
+          "content": "was the subject of a damages list that Markgraf Casimir sent to Rothenburg.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

@@ -15,6 +15,9 @@
       "english": "Konrad, Bishop of Würzburg and Duke of Franconia, enfeoffs Knight Konrad von Rosenberg in hereditary fief with two houses facing each other (dwelling) at Baldersheim, including barns and other appurtenances, as well as the following pieces of arable land (artacker): 4 Morgen at Medelrieth adjacent to Hans Thoma toward the village and Jorg Pfeufer toward the field; 9 Morgen, called 'ober dem Strick,' adjacent to Hans Thoma toward the village and to Michel and Jorg Lerieder toward the field; 3 Morgen at Gensbrun adjacent to die Beundt toward the village and to the Genswas toward the field; 1 Morgen next to Genswasen adjacent to Hans Berieder toward the village and to Hans Kysling toward the field; 4 Morgen at Gehsamer Weg adjacent to Hans Thoma the Elder toward the village and Hans Thoma the Younger toward the field; 2 Morgen at the Eng adjacent to the smithy toward the village and Michel Thoma toward the field; 1 Morgen at the Enge adjacent to (in front of the boundary) Hans Thoma, Hans Kyßling, and Ull Muller; 2 Morgen at Pfaffenpfadt adjacent to Pauls Maler toward the village and Offel Hess toward the field; 2 1/2 Morgen, called Heydelsacker, adjacent to Ruck Maler toward the village and one von Riethain toward the field; 3 Morgen at Krauthrieth including herb garden and field boundary adjacent to Hans Thoma toward the village and to the Fronhof toward the field; 2 Morgen at Wenigs Weg adjacent to Hans Thoma on both sides; 1 1/2 Morgen at Ketten adjacent to Balthasar Thoma toward the village and Hans Nesser toward the field; 2 Morgen at Lach adjacent to Michel Lerieder toward the village and Hans Lerieder toward the field; 2 Morgen at schwarzen Feld adjacent to Endres Lerieder toward the village and Balthasar Thoma toward the field; 1 1/2 Morgen at Griess adjacent to the Scheffer toward the village and Pauls Maler toward the field; 2 Morgen at Ulrich's mill and a meadow adjacent to Claus Eck toward the village and to the Truchsessen meadow of the Archbishop toward the field; 2 Morgen at Geylgsheimer Feldt adjacent to Hans Lerieder toward the village; 1 Morgen at the Ast, which previously belonged to Hans Holtzman and is located toward the village next to Hans Nespe; 1 Morgen at Rockswinckel adjacent to the Scheffer toward the village and Jakob Maler toward the field; 5 Morgen on Selbet Leidt adjacent to Clingen water and to Hans Thoma toward the village and field; 2 Morgen at Wilschlo adjacent to Hans Thoma toward the village and Hans Lerieder toward the field; 2 Morgen in Hagen adjacent to Jakob Krieger toward the village and Hagen hube toward the field; 2 Morgen adjacent to Balthasar Thoma toward the village and Hans Breuning toward the field; 1/2 Morgen at Ollinger Wegk adjacent to Hans Thoma toward the village and Jakob Krieger toward the field; 2 Morgen at Strass adjacent to Hans Lerider toward the village and Hans Thoma toward the field; 2 Morgen at Kauberstatt adjacent to Klaus Sulleder toward the village and Hans Thoma toward the field; 4 Morgen at Katzengraben adjacent to Martin Lutz toward the village and Hans Lerieder toward the field; 5 Morgen above the old vineyard, consisting of two fields, adjacent to die alt Lutzin toward the field and Balthasar Thoma toward the village; 4 Morgen in Gertzenroth adjacent to Hans Lerieder toward the village and Jorg Pfeuffer toward the field; 4 Morgen at Zerweck adjacent to the Schultheiß toward the village and Hans Lerieder toward the field; 2 Morgen at Zerweg adjacent to Philipp Lehrider toward the village and die alt Lutzin toward the field; 1 Morgen on Haubrun adjacent to a common area on both sides; 1 Morgen at Benoetter Weg adjacent to Balthasar Thoma toward the village and a common area toward the field. - Furthermore, he enfeoffs him with the following meadows: 3 Morgen under dem Holtz adjacent to die Truchsessen toward the village and Hans Dur zu Aue toward the field; 3 Morgen at Wilslohe adjacent to Leonhard Thoma toward the village and Hans Muller toward the field; 3 Morgen at Rockwinckel adjacent to Hans and Jakob Muller toward the village; 1 Morgen at Stampfelbrun adjacent to die Beundt toward the village; 1 Morgen at Clingwisen adjacent to Beyrin toward the village and Hans Thoma toward the field. - Furthermore, he enfeoffs him with the following vineyards: 1 Morgen at Lobesberg adjacent to Klaus Suleder toward the field and Leutzenpruner toward the village; 1 Morgen at Velbersberg adjacent to a common area on both sides; 2 Morgen at the mountain near Vel mule opposite the Lobe; 1 Morgen above meingarten adjacent to Hans Lerider toward the village and Endris Zinck toward the field. - Finally, he enfeoffs him with: 1 Morgen orchard behind the house adjacent to Simeon Brewing toward the field; 1/2 Volt orchard behind Philipp Lerider's house; 1 Fuder of wine from the tithe at Balbach; a small property (gutlein) at Burgerroth (Burgenrode); a vineyard at Altenberg; woodland at Reygelberg opposite Waldmannshofen. - The enfeoffment includes appurtenances and, insofar as it has reverted to the Foundation of Würzburg from the deceased Hans Bacharts as the last of his lineage. The feudal rights, privileges, and customs of the Foundation of Würzburg remain unaffected hereby.\n\nSealer: the issuer. - On Wednesday after Invocavit.\n\nCopy, parchment, seal described. - No. 1007.\n\nReg. No. 1059",
       "mention": [
         {
+          "place": "baldersheim"
+        },
+        {
           "person": "Konrad of Würzburg"
         },
         {
@@ -22,6 +25,12 @@
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "waldmannshofen"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -33,6 +42,9 @@
           "type": "generic",
           "content": "received as Mannlehen from Bishop Konrad of Würzburg two houses, fields, meadows, vineyards and other property at Baldersheim, as well as a wine tithe at Balbach, a property at Burgerroth, a vineyard at Altenberg and woodland at Reygelberg.",
           "mention": [
+            {
+              "place": "baldersheim"
+            },
             {
               "person": "Konrad of Würzburg",
               "personTitle": [

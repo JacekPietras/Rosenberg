@@ -7,11 +7,48 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1637498",
       "german": "Belehnung der Familie von Rosenberg mit Teilen von Schloß und Dorf Oberschüpf, Unterschüpf, Uiffingen, Kupprichhausen, Sachsenflur und Dainbach, Hochhausen sowie einem Hof zu Buch am Ahorn.\n\nLaufzeit: 1438-1631\n\nUmfang: 1 Bd.",
       "english": "Enfeoffment of the von Rosenberg family with parts of the castle and village of Oberschüpf, Unterschüpf, Uiffingen, Kupprichhausen, Sachsenflur and Dainbach, Hochhausen, as well as a farm at Buch am Ahorn.\n\nTime span: 1438-1631\n\nVolume: 1 volume",
+      "mention": [
+        {
+          "place": "buch"
+        },
+        {
+          "place": "kupprichhausen"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "uiffingen"
+        },
+        {
+          "place": "unterschuepf"
+        }
+      ],
       "facts": [
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
-          "content": "received fiefs comprising parts of the castle and villages of Oberschüpf, Unterschüpf, Uiffingen, Kupprichhausen, Sachsenflur, Dainbach, and Hochhausen, as well as an estate at Buch am Ahorn during the period 1438–1631."
+          "content": "received fiefs comprising parts of the castle and villages of Oberschüpf, Unterschüpf, Uiffingen, Kupprichhausen, Sachsenflur, Dainbach, and Hochhausen, as well as an estate at Buch am Ahorn during the period 1438–1631.",
+          "mention": [
+            {
+              "place": "buch"
+            },
+            {
+              "place": "kupprichhausen"
+            },
+            {
+              "place": "oberschuepf"
+            },
+            {
+              "place": "uiffingen"
+            },
+            {
+              "place": "unterschuepf"
+            }
+          ]
         }
       ]
     }

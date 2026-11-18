@@ -9,10 +9,13 @@
       "english": "Files of Landgrave Philipp, also jointly with the Archbishop of Trier, and of the Senior Amtmann of the Upper County of Katzenelnbogen Count von Königstein: Correspondence with Elector Ludwig, the Archbishop of Trier, Quirin v. Cronberg and the Amtmann of Kronberg. - Including: Memorandum note of Johann Feige\n\nContains: January - March 1523. Capture of the son Hans of Franz von Sickingen among others by the Amtmann of Lautern Wilhelm v. Habern. Archduke Ferdinand urges Elector Ludwig (copies) to drop the compensation claim of 25,000 guilders made against Electoral Mainz by Hesse, Palatinate and Trier. Troop recruitment by Georg v. Frundsberg and Wolf Dietrich v. Knoeringen (Knoringen). Nobility assembly in Schweinfurt. New armaments. Meeting of the Electors of Palatinate and Trier and the Landgrave in Frankfurt. Seizure of letters from Hans v. Minckwitz. Siege of Boxberg. Swabian League diet in Ulm. Mediation attempt by Archduke Ferdinand between Sickingen and his opponents, scheduling a meeting at Worms. Quirin v. Cronberg. The allies present complaints against Sickingen to the Imperial Regiment in Nürnberg. Nobility assembly in Cologne. Appropriateness of a request for aid to the Margraves of Brandenburg. The Count Palatine requests the return of properties taken from Konrad von Sickingen at Seeheim. Proposals of the Imperial Regiment regarding Quirin v. Cronberg. Dispatch of cavalry to Mosbach. Assurance of aid to Palatinate in case of attack. Petition of the Electoral Palatinate envoy at the Swabian League diet: Setting the league campaign for June 1.\nDisposition of the Elector to join the League.\nSiege of Boxberg. No. 2946\nApril, May. Repeated request for dispatching cavalry to Mosbach against Boxberg. Provisioning of troops. Hans Melchior von Rosenberg declares feud upon Elector Ludwig. The Elector declares to the Senior Amtmann Count Georg von Königstst Georg von Königstein, the Senior Amtmann appointed by Hesse to the meeting at Worms, declines because the Archduke Ferdinand’s councilors are traveling to Heidelberg for mediation. Measures against Drachenfels and Homburg. A letter from Schweiker v. Sickingen is intercepted. No. 2946. June, July. The Swabian League refuses to release the Landgrave from his League obligations. Dispute with Counts Wilhelm and Friedrich von Fürstenberg and Count Eitel Friedrich von Hohenzollern; mediation by the Bishop of Strasbourg and the city. Judgment of the Imperial Regiment in the Frowin von Hutten case. Philipp v. Rüdigheim. The Bishop of Speyer intercedes for Schweiker v. Sickingen. Dispute with Wolf Kranz. Count Eitel Friedrich von Hohenzollern defends himself against the charge that he supported Schweiker von Sickingen. Disputes with Balthasar Schlör and Hans v. Ehrenberg. Count Friedrich von Fürstenberg declares that he will not support Schweiker von Sickingen. Weirich Pashart v. Thun asks for a truce. Philipp Weise and Frowin von Hutten der Jüngere. Electoral Palatine and Electoral Trier mediation is proposed between the Landgrave and Count Wilhelm of Nassau in the Katzenelnbogen succession dispute; a meeting is scheduled. See nos. 99, 101, and 104. August. Enforcement judgments by the Imperial Regiment in favor of Frowin von Hutten and Quirin v. Cronberg. Mediation in the Katzenelnbogen succession dispute and a meeting scheduled at Frankfurt. The Imperial Regiment’s councilors are recalled. Electoral Mainz pays money. Hartmut von Cronberg seeks action from the Imperial Regiment at Nuremberg; proceedings are brought against him before the Imperial Chamber Court, and a search is made for his summons to the Bohemian nobility. Dispute with Sickingen’s supporters. September. Hartmut von Cronberg is in Bohemia. Copies of letters from Duke Karl of Münsterberg and the cities of Prague, Pilsen, and Mies to the Electoral Palatinate, Electoral Trier, and Hesse. A copy of Hartmut von Cronberg’s summons to the Bohemian nobility. Klaus Haß, Franz von Sickingen’s scribe, is released from custody at the intercession of the Bishop of Augsburg and Count Palatines Friedrich and Ott Heinrich. Proceedings before the Imperial Regiment concerning Frowin v. Hutten; complaints by Philipp Weise and Frowin von Hutten der Jüngere; the Hartmut von Cronberg affair; mediation by Duke Georg of Saxony. The inheritance of Philipp von Cronberg’s daughters Anna and Veronika. October. Chancellor Feige’s memorandum of his negotiations with the Elector Palatine: settlements at Frankfurt and Eberburg; matters concerning Frowin v. Hutten, Philipp Weise, Quirin v. Cronberg, Frowin von Hutten der Jüngere, and Konrad von Sickingen; the Katzenelnbogen succession dispute and the meeting scheduled for November in Frankfurt; Schwertzel’s removal from the Imperial Chamber Court; pledge of Kallenfels. November, December. Treaty of Frankfurt between the Electoral Palatinate, Hesse, and Count Philipp of Hanau concerning Umstadt; half of Umstadt is transferred to the Electoral Palatinate (original on parchment, Samtarchiv, vol. III, p. 34, no. 30; see no. 1923). Archduke Ferdinand mediates in the Frowin v. Hutten and Quirin v. Cronberg affairs (copy). See no. 101.",
       "mention": [
         {
-          "person": "Franz von Sickingen"
+          "place": "boxberg"
         },
         {
-          "person": "Konrad von Sickingen"
+          "place": "cronberg"
+        },
+        {
+          "person": "Franz von Sickingen"
         },
         {
           "person": "Hans Melchior von Rosenberg"
@@ -21,22 +24,34 @@
           "person": "Hartmut von Cronberg"
         },
         {
-          "person": "Hartmut von Cronberg"
+          "place": "heidelberg"
         },
         {
-          "person": "Hartmut von Cronberg"
+          "place": "homburg"
         },
         {
-          "person": "Franz von Sickingen"
+          "place": "hutten"
         },
         {
-          "person": "Hartmut von Cronberg"
+          "place": "katzenelnbogen"
+        },
+        {
+          "person": "Konrad von Sickingen"
+        },
+        {
+          "place": "mosbach-st-juliana"
+        },
+        {
+          "place": "nuremberg"
         },
         {
           "person": "Philipp von Cronberg"
         },
         {
-          "person": "Konrad von Sickingen"
+          "place": "sickingen"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [

@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "schweigern"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "was in dispute with the Palatinate over the lake at Osterloch and irrigation of meadows at Schweigern."
+          "content": "was in dispute with the Palatinate over the lake at Osterloch and irrigation of meadows at Schweigern.",
+          "mention": [
+            {
+              "place": "schweigern"
+            }
+          ]
         }
       ],
       "img": [

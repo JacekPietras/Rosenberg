@@ -10,6 +10,15 @@
       "mention": [
         {
           "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "helmstadt"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -17,6 +26,11 @@
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
           "content": "had his estate divided, with a one-ninth share assigned to the Helmstatt line.",
+          "mention": [
+            {
+              "place": "helmstadt"
+            }
+          ],
           "date": "1648"
         }
       ],

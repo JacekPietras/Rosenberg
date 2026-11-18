@@ -10,6 +10,12 @@
       "mention": [
         {
           "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "limpurg"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
         }
       ],
       "facts": [
@@ -23,6 +29,9 @@
           "mention": [
             {
               "person": "Konrad von Limpurg"
+            },
+            {
+              "place": "schloss-haltenbergstetten"
             }
           ],
           "date": "1415"

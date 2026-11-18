@@ -9,7 +9,16 @@
       "english": "Letter of reconveyance from Georg von Rosenberg of Boxberg (Boxsperg) regarding the estate at Schweigern (Schwaigern) near Boxberg (Boxperg).",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "schwaigern"
+        },
+        {
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -19,7 +28,15 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "issued a feudal acknowledgment concerning his residence at Schweigern near Boxberg."
+          "content": "issued a feudal acknowledgment concerning his residence at Schweigern near Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "schweigern"
+            }
+          ]
         }
       ]
     }

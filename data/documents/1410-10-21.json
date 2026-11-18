@@ -10,16 +10,19 @@
       "english": "Bishop Johann of Würzburg gave his lordly consent for Hans Adel von Dottenheim of Schüpf to assign 400 florins to his wife, Margaretha von Rosenberg, secured on half of the tithe at Aletzheim, which had a right of redemption held by its previous possessor, Hans Munich von Hainstatt.",
       "mention": [
         {
+          "person": "Hans Adel von Dottenheim"
+        },
+        {
           "person": "Hans of Würzburg",
           "personTitle": [
             "Bishop"
           ]
         },
         {
-          "person": "Hans Adel von Dottenheim"
+          "person": "Margaretha von Rosenberg"
         },
         {
-          "person": "Margaretha von Rosenberg"
+          "place": "oberschuepf"
         }
       ],
       "facts": [
@@ -40,13 +43,13 @@
           "content": "assigned money to his wife Margaretha von Rosenberg secured on half the tithe at Aletzheim, with Bishop Johann of Würzburg’s consent.",
           "mention": [
             {
-              "person": "Margaretha von Rosenberg"
-            },
-            {
               "person": "Hans of Würzburg",
               "personTitle": [
                 "Bishop"
               ]
+            },
+            {
+              "person": "Margaretha von Rosenberg"
             }
           ]
         }

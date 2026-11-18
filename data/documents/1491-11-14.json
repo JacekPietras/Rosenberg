@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Arnold von Rosenberg"
+        },
+        {
+          "place": "buch"
         }
       ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "bought Balthasar Kettel’s share of the village Buch, its Burgstall and a quarter of the court there."
+          "content": "bought Balthasar Kettel’s share of the village Buch, its Burgstall and a quarter of the court there.",
+          "mention": [
+            {
+              "place": "buch"
+            }
+          ]
         }
       ],
       "img": [

@@ -9,25 +9,28 @@
       "english": "Elector Friedrich I of the Palatinate issues Wendel von Remchingen, at his request, a certificate in the matter of his capture by Georg von Rosenberg and his missed pledge to present himself at Boxberg. Originally the Rosenberger had captured Wendel, whereupon Wendel had promised to present himself at Boxberg Castle by the last Easter Day [22.04.1470]. By Maundy Thursday [19.04.] Wendel had not appeared. In the Count Palatine's opinion, Georg may have captured Wendel unjustly, since neither had lawfully sent a formal challenge to the other. On his own motives and not at the request of Wendel or of third parties, the Count Palatine had Wendel himself captured by his servants on the open road on Maundy Thursday and taken to Dilsberg Castle. There he was held prisoner until the week after St. Urban's Day [25.05.] and was then brought to Heidelberg. In prison Wendel commissioned his confidant (gonner und besunder) Melchior von Hirschhorn to have him released from Georg von Rosenberg, pledging his possessions. Georg intended to hand Wendel over to the Count Palatine free of charge. At Wendel's request the Count Palatine assured Georg, Michael von Rosenberg and Arnold von Rosenberg safe conduct to Heidelberg. Before Elector Friedrich, his son Philipp and his councillors - the steward Diether von Sickingen, Simon von Balzhofen, Ritter and Vogt zu Heidelberg, Konrad von Lomersheim, Schenk, and Melchior von Hirschhorn - the three Rosenbergers released Wendel on 11.12.1470 from captivity and from his missed appearance at Boxberg. [What follows is Wendel's justification before those present, partly reproduced verbatim:] Wendel asks for permission to speak and explains in more detail that he had been obliged, if Boxberg was not captured, to present himself there at Easter; but if Boxberg were won, he would have to follow the instructions of further letters of summons. Wendel finally set out for Boxberg on Maundy Thursday, but was then captured by the Palatine servants and is still the Count Palatine's prisoner. Since Boxberg was won before Easter and no further summons came from the Rosenbergers to him or to his house or farmstead, he did not present himself, which he would otherwise have done like a pious nobleman. Moreover, not only he but also others of his lineage, his son and his children thought so. Further statements by Wendel on the lawfulness of his conduct follow, notably that he had fallen into captivity through no fault of his own, since he had never acted against Georg and they were not declared enemies. The three lords von Rosenberg confirm that Wendel acted honourably and lawfully in these matters, and release him from captivity and from his pledge. Elector Friedrich declares that this matter shall thereby be ended, that the further affairs of the negotiation now concern himself and Wendel, and announces his seal.",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Melchior von Hirschhorn"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Michael von Rosenberg"
-        },
-        {
           "person": "Arnold von Rosenberg"
+        },
+        {
+          "place": "boxberg"
         },
         {
           "person": "Diether von Sickingen"
         },
         {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
           "person": "Melchior von Hirschhorn"
+        },
+        {
+          "person": "Michael von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -42,13 +45,13 @@
           "content": "was released from captivity by Georg, Michel and Arnold von Rosenberg before Elector Friedrich I of the Palatinate.",
           "mention": [
             {
+              "person": "Arnold von Rosenberg"
+            },
+            {
               "person": "Georg von Rosenberg"
             },
             {
               "person": "Michael von Rosenberg"
-            },
-            {
-              "person": "Arnold von Rosenberg"
             }
           ]
         },

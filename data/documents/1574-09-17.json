@@ -12,6 +12,12 @@
       "english": "During the Margrave War, the collegiate foundation was required to sell tithes and other rights in Niederstetten, Vorbachzimmern, and Wermutshausen to Zaisolph von Rosenberg at the instigation of the Bishop of Würzburg. The purchase price obtained was entrusted to the bishop as a loan. To compensate the holders of the obits (memorial endowments), to which the sold revenues belonged, for their loss of income, the bishop also assigned them a fixed annual quantity of grain and wine. However, this grain and wine were redeemed in the meantime. The issuers therefore decided to compensate the holders of the obits with revenues from the tithe at Höttingen, which the foundation's procurator shall transfer annually to the obit office, so that they can pay the fixed canon for their obits to the foundation's cellar master.\nIssuers: Dean, Senior, Scholaster, and the chapter of the Collegiate Foundation of Neumünster\nRecipient: Collegiate Foundation of Neumünster",
       "mention": [
         {
+          "place": "niederstetten"
+        },
+        {
+          "place": "wurzburg"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -19,7 +25,15 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "bought tithes and other rights at Niederstetten, Vorbachzimmern and Wermutshausen from the Neumünster chapter; the sale proceeds were lent to the Bishop of Würzburg."
+          "content": "bought tithes and other rights at Niederstetten, Vorbachzimmern and Wermutshausen from the Neumünster chapter; the sale proceeds were lent to the Bishop of Würzburg.",
+          "mention": [
+            {
+              "place": "niederstetten"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ],
       "img": [

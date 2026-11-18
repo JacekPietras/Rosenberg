@@ -9,6 +9,9 @@
       "english": "King Wenzel confirms to Konrad von Rosenberg and his cousins the court and other rights in their town of Boxberg.",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "person": "König Wenceslaus",
           "personTitle": [
             "King"
@@ -24,6 +27,9 @@
           "type": "generic",
           "content": "received with his Vettern confirmation from King Wenzel of the court and other rights at Boxberg.",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "König Wenceslaus",
               "personTitle": [

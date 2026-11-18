@@ -11,33 +11,82 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "lauda"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "entered an agreement with members of the von Rosenberg family, their subjects, and the people of Hohenstadt concerning sheep grazing at Lauda."
+          "content": "entered an agreement with members of the von Rosenberg family, their subjects, and the people of Hohenstadt concerning sheep grazing at Lauda.",
+          "mention": [
+            {
+              "place": "lauda"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "entered an agreement with members of the von Rosenberg family, their subjects, and the people of Hohenstadt concerning sheep grazing at Lauda."
+          "content": "entered an agreement with members of the von Rosenberg family, their subjects, and the people of Hohenstadt concerning sheep grazing at Lauda.",
+          "mention": [
+            {
+              "place": "lauda"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Jakob von Rosenberg",
           "type": "generic",
-          "content": "entered an agreement with members of the von Rosenberg family, their subjects, and the people of Hohenstadt concerning sheep grazing at Lauda."
+          "content": "entered an agreement with members of the von Rosenberg family, their subjects, and the people of Hohenstadt concerning sheep grazing at Lauda.",
+          "mention": [
+            {
+              "place": "lauda"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "entered an agreement with members of the von Rosenberg family, their subjects, and the people of Hohenstadt concerning sheep grazing at Lauda."
+          "content": "entered an agreement with members of the von Rosenberg family, their subjects, and the people of Hohenstadt concerning sheep grazing at Lauda.",
+          "mention": [
+            {
+              "place": "lauda"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Hans Charing von Rosenberg",
           "type": "generic",
-          "content": "entered an agreement with members of the von Rosenberg family, their subjects, and the people of Hohenstadt concerning sheep grazing at Lauda."
+          "content": "entered an agreement with members of the von Rosenberg family, their subjects, and the people of Hohenstadt concerning sheep grazing at Lauda.",
+          "mention": [
+            {
+              "place": "lauda"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ],
       "img": [

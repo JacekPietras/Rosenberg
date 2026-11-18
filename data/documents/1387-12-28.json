@@ -9,10 +9,13 @@
       "english": "Ruprecht enfeoffed Elisabeth von Erligheim, widow of Eberhard von Rosenberg, in place of her underage son, with half of Boxberg and other fiefdoms.",
       "mention": [
         {
-          "person": "Elisabeth von Erligheim"
+          "place": "boxberg"
         },
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Elisabeth von Erligheim"
         }
       ],
       "facts": [
@@ -25,13 +28,21 @@
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was enfeoffed with half of Boxberg and other fiefs in place of her underage sons."
+          "content": "was enfeoffed with half of Boxberg and other fiefs in place of her underage sons.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Ruprecht",
           "type": "generic",
           "content": "enfeoffed Elisabeth von Erligheim with half of Boxberg and other fiefs in place of her underage sons.",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Elisabeth von Erligheim"
             }

@@ -9,20 +9,31 @@
       "english": "Inheritance disputes of Philipp Jakob, Konrad von Rosenberg and Zaisolph von Rosenberg for themselves and on behalf of further brothers and cousins with Wolf, Bartholomäus, Hans and Jakob Wolfskeel as the alleged allodial heirs of Hans Carius von Rosenberg.\n\nPeriod: 1576-1580",
       "mention": [
         {
+          "person": "Jakob Wolfskeel"
+        },
+        {
           "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Zaisolph von Rosenberg"
+          "place": "rosenberg-town"
         },
         {
-          "person": "Jakob Wolfskeel"
+          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "subject": "Philipp Jakob, Konrad and Zeisolf von Rosenberg and their brothers and cousins",
           "type": "generic",
-          "content": "were involved in inheritance disputes with the Wolfskeel family, who claimed to be the allodial heirs of Hans Carius von Rosenberg."
+          "content": "were involved in inheritance disputes with the Wolfskeel family, who claimed to be the allodial heirs of Hans Carius von Rosenberg.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wolffskeel"
+            }
+          ]
         }
       ]
     }

@@ -10,10 +10,10 @@
       "english": "For approximately fifteen years, Eberhard von Rosenberg had held Schloss, Stadt, and Amt Jagstberg for the agreed 3,400 florins. In 1426, Horneck von Hornberg and Gerhard von Talheim redeemed Eberhard’s pledge and lent a further 1,600 florins to Bishop Hans von Brunn. In return, the bishop pledged them and their heirs the castle, town, and Amt Jagstberg on the same terms under which Eberhard had held it. A marginal addition gives the combined sum as 999 florins. On the Feast of the Visitation of Mary in 1426, he also granted them and their heirs the right to hunt game in the associated hunting preserve while they held Jagstberg. Recorded in the register of contracts of Brun, fols. 69 and 71d. Editorial note: Fries gives no first name for Horneck von Hornberg.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "brunn"
         },
         {
-          "person": "Horneck von Hornberg"
+          "person": "Eberhard von Rosenberg"
         },
         {
           "person": "Gerhard von Talheim"
@@ -26,6 +26,9 @@
         },
         {
           "person": "Horneck von Hornberg"
+        },
+        {
+          "place": "jagstberg"
         }
       ],
       "facts": [
@@ -35,10 +38,13 @@
           "content": "held Schloss, Stadt, and Amt Jagstberg as a pledge for approximately fifteen years before Horneck von Hornburg and Gerhard von Talheim redeemed it from him.",
           "mention": [
             {
+              "person": "Gerhard von Talheim"
+            },
+            {
               "person": "Horneck von Hornburg"
             },
             {
-              "person": "Gerhard von Talheim"
+              "place": "jagstberg"
             }
           ]
         }

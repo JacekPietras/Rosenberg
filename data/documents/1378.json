@@ -15,16 +15,31 @@
       "english": "Archbishop Adolf I of Mainz arranges the repayment of his debts to Albrecht von Stetenberg. Letter given to Albrecht Stetenberg concerning 1,400 florins - Miltenberg.\n\n[The Archbishop of Mainz] Adolf [I of Nassau, Bishop of Speyer] owes his dear \"faithful one\" Albrecht von Stetenberg and his heirs 1,400 good gold gulden, heavy in weight, as they are current in Frankfurt or Mainz. The Archbishop used this sum, which Albrecht lent him in cash, for his own benefit and that of the diocese. He, his successors in office and the Mainz diocese will have an annuity of 100 gulden in money of the aforementioned currency paid annually on St. Martin's Day in winter [11 November] from the toll and the cellarage in Miltenberg. The Archbishop instructs his cellarer there, Nikolaus, or his successor in office, to pay out the money as agreed until Mainz has redeemed the 1,400 gulden. To secure punctual payment, the Archbishop provides guarantors: Eberhard von Hartheim, Reinhard von Hartheim, Götz von Hartheim, Hans von Rosenberg and Götz von Rosenberg, the archiepiscopal Amtmann zu Külsheim Eberhard von Grumbach and [another] Eberhard von Grumbach, his Amtmann zu Tauberbischofsheim Egen Seman together with his son Götz von Offenkeim, Konrad and Hans von Fechenbach, the Vogt zu Grünsfeld Hans Gundelwin, the Amtmann zu Dürn Marquart, Eberhard Rüdt der Jüngere, Creiß von Bürgstadt, Cuntze Pil [von Aulenbach], Friedrich Pil [von Aulenbach], Hentze von Aulenbach, Eberhard von Rosenberg, and Hans Mönch von Rosenberg zu Hainstadt. If the promised money from Miltenberg does not arrive as agreed, the creditors may summon the guarantors orally, by messenger, by letter or in person. Each of them must then, within 14 days, on Albrecht's instruction, send a servant or a horse to an inn designated by Albrecht in Tauberbischofsheim, Wertheim or Grünsfeld, and keep hostage lodging there, as is the custom for guarantors, until the annual annuity has been paid in full. Servants and horses that drop out must be replaced by equivalent ones by the guarantor concerned within eight days of Albrecht's summons. If a guarantor dies or leaves the country, he must be replaced by an equivalent guarantor within one month of a written or oral summons by Albrecht (by messenger or by letter, at home or at court). If the Archbishop does not do this, the remaining guarantors must provide a replacement. The Archbishop promises the guarantors to release them amicably from the obligation of guarantee, without oath or compulsion of court, and without harm to them. Albrecht and his men may not demand repayment of the 1,400 gulden within the next four years; afterwards they must announce such a wish a quarter of a year before St. Peter's Day, Cathedra [22 February]. The money must then be repaid at the latest 14 days after St. Peter's Day in Wertheim or Grünsfeld. Otherwise the guarantors must enter hostage lodging until the 1,400 gulden and the annual annuity of 100 gulden are paid. If Mainz wants to redeem the annuity by paying the 1,400 gulden, this must likewise be announced a quarter of a year before St. Peter's Day, Cathedra [22 February]. Payment then ceases and this document becomes invalid. If Mainz wants to redeem the annuity, it is to pay him with this the 1,000 [?] gulden for which a third of the castle of Gamburg with its appurtenances is currently pledged to Albrecht by the Archbishop and chapter, and to make the redemption not without the others. The guarantors assure that they will be good guarantors and fulfil their guarantee obligations. [undated] [a]",
       "mention": [
         {
+          "person": "Albrecht in Tauberbischofsheim"
+        },
+        {
+          "place": "bischofsheim"
+        },
+        {
+          "place": "bürgstadt"
+        },
+        {
+          "person": "Eberhard Rüd",
+          "personTitle": [
+            "der Jüngere"
+          ]
+        },
+        {
+          "person": "Eberhard von Grumbach"
+        },
+        {
           "person": "Eberhard von Hartheim"
         },
         {
-          "person": "Reinhard von Hartheim"
+          "person": "Eberhard von Rosenberg"
         },
         {
           "person": "Götz von Hartheim"
-        },
-        {
-          "person": "Hans von Rosenberg"
         },
         {
           "person": "Götz von Rosenberg"
@@ -36,22 +51,22 @@
           ]
         },
         {
-          "person": "Eberhard von Grumbach"
-        },
-        {
-          "person": "Eberhard Rüd",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Hans Mönch von Rosenberg"
         },
         {
-          "person": "Albrecht in Tauberbischofsheim"
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Reinhard von Hartheim"
+        },
+        {
+          "place": "speyer"
+        },
+        {
+          "place": "wallduern"
+        },
+        {
+          "place": "wertheim-stiftskirche"
         }
       ],
       "facts": [

@@ -15,6 +15,9 @@
         },
         {
           "person": "Peter of Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -104,7 +107,12 @@
             "genannt von Kempnycz"
           ],
           "type": "generic",
-          "content": "attested with the brothers von Rosenberg that the relics were donated by the named rulers and prelates."
+          "content": "attested with the brothers von Rosenberg that the relics were donated by the named rulers and prelates.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Peter von Rosenberg",
@@ -141,7 +149,12 @@
             "König von Böhmen"
           ],
           "type": "generic",
-          "content": "donated relics for the relic panel of the von Rosenberg family."
+          "content": "donated relics for the relic panel of the von Rosenberg family.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Ludwig",
@@ -149,7 +162,12 @@
             "König von Ungarn"
           ],
           "type": "generic",
-          "content": "donated relics for the relic panel of the von Rosenberg family."
+          "content": "donated relics for the relic panel of the von Rosenberg family.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Nicolaus",
@@ -157,7 +175,12 @@
             "Patriarch von Aquileia"
           ],
           "type": "generic",
-          "content": "donated relics for the relic panel of the von Rosenberg family."
+          "content": "donated relics for the relic panel of the von Rosenberg family.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Ernst",
@@ -165,7 +188,12 @@
             "Erzbischof von Prag"
           ],
           "type": "generic",
-          "content": "donated relics for the relic panel of the von Rosenberg family."
+          "content": "donated relics for the relic panel of the von Rosenberg family.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         }
       ],
       "img": [

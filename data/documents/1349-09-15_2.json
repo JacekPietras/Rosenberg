@@ -13,16 +13,25 @@
       "english": "Cuno of Falkenstein, Dompropst and guardian of the Mainz foundation, with the consent of Archbishop Heinrich, pledges the Mainz foundation’s half share in the castle of Nagelsberg on the Kocher to the knights Ebirhard of Rosenberg and Ludewig Mönch von Rosenberg zu Hainstadt, and to Konrad von Rosenberg, Knecht, for 500 pounds Heller Frankfurt Weight. The Mainz foundation may make use of the castle. Redemption is available to both parties upon quarter-year notice.\n\nPlace of payment: Buchen; from there the Mainz foundation must be escorted to Rosenberg. If the Mainz foundation does not redeem on demand, the recipients may re-pledge the castle to a man of the foundation.\n\nSealer: Archbishop, Cuno, 5 guardians.",
       "mention": [
         {
-          "person": "Eberhard of Rosenberg"
+          "place": "buchen"
         },
         {
-          "person": "Ludwig Mönch von Rosenberg"
+          "person": "Eberhard of Rosenberg"
         },
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Knecht"
           ]
+        },
+        {
+          "person": "Ludwig Mönch von Rosenberg"
+        },
+        {
+          "place": "nagelsberg-castle"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -35,13 +44,16 @@
           "content": "received the Mainz foundation’s half share in Nagelsberg Castle on the Kocher in pledge together with Ludewig Münch and Konrad von Rosenberg, Knecht.",
           "mention": [
             {
-              "person": "Ludwig Mönch"
-            },
-            {
               "person": "Konrad von Rosenberg",
               "personTitle": [
                 "Knecht"
               ]
+            },
+            {
+              "person": "Ludwig Mönch"
+            },
+            {
+              "place": "nagelsberg-castle"
             }
           ]
         },
@@ -58,6 +70,9 @@
             },
             {
               "person": "Ludwig Mönch"
+            },
+            {
+              "place": "nagelsberg-castle"
             }
           ]
         }

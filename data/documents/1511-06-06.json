@@ -9,13 +9,19 @@
       "english": "Kunz von Dottenheim acknowledges that he has received from Archbishop Vriel of Mainz the following male fiefs and has sworn the feudal oath: half of one eighth of Schloss Schipff, which was inherited from his grandfather Adel von Dottenheim to his father, plus one eighth that belonged to Knight Anßhelm von Rosenberg and passed from him to his father Georg von Dottenheim. The letter of enfeoffment of the same day is inserted.\n\nSealer: A. (missing).",
       "mention": [
         {
-          "person": "Kunz von Dottenheim"
-        },
-        {
           "person": "Adel von Dottenheim"
         },
         {
           "person": "Georg von Dottenheim"
+        },
+        {
+          "person": "Kunz von Dottenheim"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -29,6 +35,9 @@
           "mention": [
             {
               "person": "Georg von Tottenheim"
+            },
+            {
+              "place": "oberschuepf"
             }
           ]
         }

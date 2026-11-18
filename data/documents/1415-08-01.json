@@ -17,12 +17,6 @@
           "person": "Anna Marschalk"
         },
         {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
           "person": "Anna von Sickingen"
         },
         {
@@ -32,22 +26,16 @@
           ]
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Christiana von Handschuhsheim"
         },
         {
-          "person": "Anna Marschalk"
+          "person": "Götz von Berlichingen"
         },
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Anna von Sickingen"
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "der Junge"
-          ]
+          "person": "Götz von Rosenberg"
         },
         {
           "person": "Hans von Rosenberg",
@@ -56,22 +44,34 @@
           ]
         },
         {
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "der Junge"
+          ]
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "lauda"
+        },
+        {
           "person": "Leopold von Seldeneck"
-        },
-        {
-          "person": "Götz von Rosenberg"
-        },
-        {
-          "person": "Thomas von Rosenberg"
         },
         {
           "person": "Reinhard von Uissigheim"
         },
         {
-          "person": "Ulrich von Rosenberg"
+          "person": "Thomas von Rosenberg"
         },
         {
-          "person": "Götz von Berlichingen"
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
@@ -111,13 +111,16 @@
           "content": "sold the quarter of the castle and town of Boxberg to [arnold_boxberg] and his wife Christine von Handschuhsheim, together with his mother Anna Marschalk and his wife Anna von Sickingen.",
           "mention": [
             {
-              "person": "Christiana von Handschuhsheim"
-            },
-            {
               "person": "Anna Marschalk"
             },
             {
               "person": "Anna von Sickingen"
+            },
+            {
+              "place": "boxberg"
+            },
+            {
+              "person": "Christiana von Handschuhsheim"
             }
           ]
         },
@@ -127,6 +130,12 @@
           "content": "sold the quarter of the castle and town of Boxberg to [arnold_boxberg] and his wife Christine von Handschuhsheim, together with her husband Kunz von Rosenberg der Ältere and his mother Anna Marschalk.",
           "mention": [
             {
+              "person": "Anna Marschalk"
+            },
+            {
+              "place": "boxberg"
+            },
+            {
               "person": "Christiana von Handschuhsheim"
             },
             {
@@ -134,9 +143,6 @@
               "personTitle": [
                 "der Ältere"
               ]
-            },
-            {
-              "person": "Anna Marschalk"
             }
           ]
         },
@@ -146,6 +152,12 @@
           "content": "sold the quarter of the castle and town of Boxberg to [arnold_boxberg] and his wife Christine von Handschuhsheim, together with her son Kunz von Rosenberg der Ältere and his wife Anna von Sickingen.",
           "mention": [
             {
+              "person": "Anna von Sickingen"
+            },
+            {
+              "place": "boxberg"
+            },
+            {
               "person": "Christiana von Handschuhsheim"
             },
             {
@@ -153,9 +165,6 @@
               "personTitle": [
                 "der Ältere"
               ]
-            },
-            {
-              "person": "Anna von Sickingen"
             }
           ]
         },
@@ -166,7 +175,12 @@
             "zu Minnenberg"
           ],
           "type": "generic",
-          "content": "had inherited the quarter of the castle and town of Boxberg from his late father."
+          "content": "had inherited the quarter of the castle and town of Boxberg from his late father.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         },
         {
           "person": "Anna Marschalk",
@@ -195,6 +209,9 @@
           "type": "generic",
           "content": "stood surety for the sale of a quarter of Boxberg by Kunz von Rosenberg der Ältere zu Minnenberg to [arnold_boxberg].",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Kunz von Rosenberg"
             }
@@ -216,6 +233,9 @@
           "type": "generic",
           "content": "stood surety for the sale of a quarter of Boxberg by Kunz von Rosenberg der Ältere zu Minnenberg to [arnold_boxberg].",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Kunz von Rosenberg"
             }
@@ -237,6 +257,9 @@
           "type": "generic",
           "content": "stood surety for the sale of a quarter of Boxberg by Kunz von Rosenberg der Ältere zu Minnenberg to [arnold_boxberg].",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Kunz von Rosenberg"
             }
@@ -255,6 +278,9 @@
           "type": "generic",
           "content": "stood surety for the sale of a quarter of Boxberg by Kunz von Rosenberg der Ältere zu Minnenberg to [arnold_boxberg].",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Kunz von Rosenberg"
             }
@@ -270,6 +296,9 @@
           "type": "generic",
           "content": "stood surety for the sale of a quarter of Boxberg by Kunz von Rosenberg der Ältere zu Minnenberg to [arnold_boxberg].",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Kunz von Rosenberg"
             }
@@ -285,6 +314,9 @@
           "type": "generic",
           "content": "stood surety for the sale of a quarter of Boxberg by Kunz von Rosenberg der Ältere zu Minnenberg to [arnold_boxberg].",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Kunz von Rosenberg"
             }
@@ -300,6 +332,9 @@
           "type": "generic",
           "content": "stood surety for the sale of a quarter of Boxberg by Kunz von Rosenberg der Ältere zu Minnenberg to [arnold_boxberg].",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Kunz von Rosenberg"
             }
@@ -315,6 +350,9 @@
           "type": "generic",
           "content": "stood surety for the sale of a quarter of Boxberg by Kunz von Rosenberg der Ältere zu Minnenberg to [arnold_boxberg].",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Kunz von Rosenberg"
             }
@@ -330,6 +368,9 @@
           "type": "generic",
           "content": "stood surety for the sale of a quarter of Boxberg by Kunz von Rosenberg der Ältere zu Minnenberg to [arnold_boxberg].",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Kunz von Rosenberg"
             }
@@ -345,6 +386,9 @@
           "type": "generic",
           "content": "stood surety for the sale of a quarter of Boxberg by Kunz von Rosenberg der Ältere zu Minnenberg to [arnold_boxberg].",
           "mention": [
+            {
+              "place": "boxberg"
+            },
             {
               "person": "Kunz von Rosenberg"
             }

@@ -10,7 +10,12 @@
         {
           "person": "Mathes Graser",
           "type": "generic",
-          "content": "was a miller from Rosenberg."
+          "content": "was a miller from Rosenberg.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ]
         },
         {
           "person": "Mathes Graser",

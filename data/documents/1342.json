@@ -10,10 +10,13 @@
       "english": "Archbishop Heinrich certifies that his cellarer Cunradus of Dürn (Durna) has rendered accounts before him for revenues and expenditures from May 1 (Walpurgis) 1340 to February 22 (Cathedral of St. Peter) 1342 (including also his final departure), and that he thereafter still owes him 32 pounds 5 Heller, 112 measures 2 Simmer rye (silig.), 65 measures oats, 32 measures 5 Simmer spelt, 250 chickens. Eberhard von Rosenberg, archiepiscopal bailiff at Dürn, has received from Conrad 40 measures oats, 5 1/2 pounds 6 1/2 shillings Heller, and 300 chickens, of which the cellarer rendered no account.",
       "mention": [
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Konrad of Dürn"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "wallduern"
         }
       ],
       "facts": [
@@ -23,7 +26,12 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "received oats, money and chickens from Konrad, cellarer at Dürn."
+          "content": "received oats, money and chickens from Konrad, cellarer at Dürn.",
+          "mention": [
+            {
+              "place": "wallduern"
+            }
+          ]
         }
       ]
     }

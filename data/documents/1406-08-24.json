@@ -12,9 +12,24 @@
       "english": "King Ruprecht resolves a dispute between Knight Wiprecht von Helmstadt the Elder and his granddaughter Ennelin on one side and Jakob Wolfsteiner and his wife Anna von Rosenberg on the other side, concerning Anna's dowry and widow's portion; Anna is the widow of Wiprecht's +son Reinhard von Helmstadt the Younger, Ennelin her daughter from this first marriage. Wiprecht pays his daughter-in-law Anna 2500 florins; Ennelin and Wiprecht receive Schwarzach and Schadeck and all properties that +Reinhard and Anna brought together in return, and Wiprecht and his heirs retain these even if Ennelin dies childless. Anna must return a pledge to Wiprecht, as well as all other agreements are rendered void. Sealers: Issuers, Wiprecht von Helmstadt and his sons Wiprecht von Helmstadt and Hans von Helmstadt as well as Anna von Rosenberg, Jakob Wolfsteiner, Swicker von Gundelfingen and Altman Kemnater\n\nDuration: 1406 (August 24, 1406 - St. Bartholomew's Heidelberg)",
       "mention": [
         {
+          "person": "Anna von Rosenberg"
+        },
+        {
+          "person": "Hans von Helmstadt"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
+          ]
+        },
+        {
+          "person": "Reinhard von Helmstadt",
+          "personTitle": [
+            "the Younger"
           ]
         },
         {
@@ -25,25 +40,7 @@
           ]
         },
         {
-          "person": "Anna von Rosenberg"
-        },
-        {
-          "person": "Reinhard von Helmstadt",
-          "personTitle": [
-            "the Younger"
-          ]
-        },
-        {
           "person": "Wiprecht von Helmstadt"
-        },
-        {
-          "person": "Wiprecht von Helmstadt"
-        },
-        {
-          "person": "Hans von Helmstadt"
-        },
-        {
-          "person": "Anna von Rosenberg"
         }
       ]
     },
@@ -59,15 +56,21 @@
       "english": "1406 August 24, Heidelberg. King Ruprecht decides the dispute between Wiprecht von Helmstadt der Ältere, on one side, and his daughter-in-law Anna, widow of Reinhard von Helmstadt der Jüngere and born von Rosenberg, and her second husband Jacob Wolfsteiner, on the other, concerning Anna’s widow’s portion, marriage portion, morning gift, and other property inherited by her. Anna von Rosenberg receives 3,500 florins in cash from her father-in-law Wiprecht von Helmstadt der Ältere; after her death, the money is to remain with the heirs of her second marriage. In return, Schwarzach, Schadeck, and all acquisitions from Anna’s first marriage are to pass to her daughter Anna (Ennel) von Helmstadt and the Helmstatt family. Anna von Rosenberg delivers all deeds concerning these properties to Wiprecht von Helmstadt der Ältere. Seals: King Ruprecht, Wiprecht von Helmstadt der Ältere, Wiprecht von Helmstadt der Jüngere, Hans von Helmstadt, Anna von Rosenberg, Jacob Wolfsteiner, Swicker von Gundelfingen, and Altmaim Kemnater.",
       "mention": [
         {
+          "person": "Anna von Rosenberg"
+        },
+        {
+          "person": "Hans von Helmstadt"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
+          "place": "helmstadt"
+        },
+        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
-          ]
-        },
-        {
-          "person": "Wiprecht von Helmstadt",
-          "personTitle": [
-            "der Ältere"
           ]
         },
         {
@@ -77,28 +80,7 @@
           ]
         },
         {
-          "person": "Anna von Rosenberg"
-        },
-        {
-          "person": "Wiprecht von Helmstadt",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Anna von Rosenberg"
-        },
-        {
-          "person": "Wiprecht von Helmstadt",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "King"
-          ]
+          "place": "rosenberg-town"
         },
         {
           "person": "Wiprecht von Helmstadt",
@@ -111,12 +93,6 @@
           "personTitle": [
             "der Jüngere"
           ]
-        },
-        {
-          "person": "Hans von Helmstadt"
-        },
-        {
-          "person": "Anna von Rosenberg"
         }
       ]
     }

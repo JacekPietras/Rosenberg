@@ -9,6 +9,9 @@
       "english": "Georg von Rosenberg reaches an agreement with his subjects at Buch regarding the corvée labor services they are to perform annually.\n\nPeriod: February 24, 1534 (Tuesday after Invocavit 1534)",
       "mention": [
         {
+          "place": "buch"
+        },
+        {
           "person": "Georg von Rosenberg"
         }
       ],
@@ -16,7 +19,12 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "agreed with his subjects at Buch on the annual labor services they owed."
+          "content": "agreed with his subjects at Buch on the annual labor services they owed.",
+          "mention": [
+            {
+              "place": "buch"
+            }
+          ]
         }
       ],
       "img": [

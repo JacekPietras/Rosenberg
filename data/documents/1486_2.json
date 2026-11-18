@@ -7,11 +7,24 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-512980",
       "german": "Die von einigen von Rosenberg dem Hochstiift Würzburg verkündete und vollführte Fehd und Fremdschaft, hierdurch aber dem Deutschen Orden und dessen Anverwandten zugefügte Beschädigung\n\nLaufzeit: 1486-1487",
       "english": "The feud and hostility proclaimed and carried out by some von Rosenberg against the Prince-Bishopric of Würzburg, and the damage thereby inflicted upon the Teutonic Order and its affiliates\n\nDuration: 1486-1487",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "facts": [
         {
           "subject": "some members of the von Rosenberg family",
           "type": "generic",
-          "content": "declared and carried out a feud against the Bishopric of Würzburg in 1486–1487, causing damage to the Teutonic Order and its dependants."
+          "content": "declared and carried out a feud against the Bishopric of Würzburg in 1486–1487, causing damage to the Teutonic Order and its dependants.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

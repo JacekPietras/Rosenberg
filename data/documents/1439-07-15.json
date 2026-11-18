@@ -9,6 +9,12 @@
       "english": "Albrecht II emphasizes to Ulrich von Rosenberg, referring to an earlier letter, the particular importance to the Kingdom of Bohemia of the meeting planned for 8 September at Bardejov with the Polish king and his brother. After consulting Meinhart von Neuhaus, captain of Bohemia, he asks Ulrich to send representatives of the Bohemian estates: three delegates each from the lords, the knights, and the towns. He asks Ulrich, if possible, to attend in person together with Meinhart, and in any case to ensure the estates' representatives take part in the planned negotiations. Given at Buda on Wednesday after St Margaret's day, in the second year of our reign. By command of the king. Address: To the high-born Oldřich von Rosenberg, our captain and beloved faithful servant.",
       "mention": [
         {
+          "place": "neuhaus"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
           "person": "Ulrich von Rosenberg"
         }
       ]

@@ -9,10 +9,19 @@
       "english": "Charles IV certifies that the noble Wilhelm of Strakonitz, before him, his brother John of Moravia, and the Bohemian barons Jost, chief chamberlain, Hinko Berka of Duba, castellan of Prague, Andreas of Duba, judge, Stephan, canon of Prague and notary, Wilhelm of Landstein, Wanco of Wartenberg, John of Wessel called of Wartenberg, Czenko of Leipa, John of Michelsberg, Busso of Laiticz, Hinko of Sleben, Henry of Neuhaus, John of Slenicz, Jaroslav of Sternberg, and Wilhelm of Scala, declared that he has sold his entire hereditary right to the castle Baworow, the towns Baworow and Strinkowitz, and the villages Hracholutsky, Wietieyowicze, Zyrnoniczie, Nebahow, Swoyniczie, Syechow, Lhota noua, Leskowecz, Blaniczie, Swynieticzie, Budynie, Nettuniczie, Radieiowicze, Kwaskowiczie, Skale, Zaluzie, Miekinczie, Craynisko, Sczethyn, the two Lhote, na Vtisschowie, na Hayku with appurtenances, for 1000 Schock of Prague groschen to the nobles Peter, Jost, Ulrich and John, brothers of Rosenberg.\n\nHe refers thereby to the claims once transferred by his father King John of Bohemia to Peter of Rosenberg for a sum of money, which later fell to Peter's widow Margaret, and approves this sale and grant.",
       "mention": [
         {
-          "person": "Wilhelm of Landstein"
+          "place": "michelsberg"
+        },
+        {
+          "place": "neuhaus"
         },
         {
           "person": "Peter of Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Wilhelm of Landstein"
         }
       ]
     }

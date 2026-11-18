@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was in dispute with the cities of Nuremberg and Windsheim over gambling debts owed by a Nuremberg citizen; Palatine Count Friedrich I issued an arbitration award."
+          "content": "was in dispute with the cities of Nuremberg and Windsheim over gambling debts owed by a Nuremberg citizen; Palatine Count Friedrich I issued an arbitration award.",
+          "mention": [
+            {
+              "place": "nuremberg"
+            }
+          ]
         }
       ],
       "img": [

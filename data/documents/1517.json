@@ -9,16 +9,22 @@
       "english": "Active and passive debts as well as sureties of the lords of Rosenberg and their relatives.\n\nDate range: 1517, 1538-1559, 1574-1584, 1598-1618\n\nContains:\n1. Fol. 4-19 Debt claim of the steward Georg Grösser or his son Christoph Grösser against the heirs of the deceased Konrad von Rosenberg, 1538-1534;\n2. Fol. 20-34 Debt claim of Konrad von Berlichingen against the Rosenberg vassal Stoffel Tremel of Dainbach, 1598-1601;\n3. Fol. 35-66 Co-guaranty by Albrecht Christoph von Rosenberg for a capital borrowed by Dietrich von Ehrenberg from Georg Philipp von Berlichingen, 1599-1601;\n4. Fol. 67-150 Legal dispute before the court at Bütthard (first instance) and the Würzburg regional court (second instance) between Hans Hofmann of Grünsfeld on one side, and Nikolaus Henkel, Rosenberg's bailiff at Gnötzheim, and co-defendants as guardians of the children of Mangold Rumel of Aub on the other side, concerning interest endowed for almsgiving from a property, 1600-1603;\n5. Fol. 158-164 Efforts by Hans Friedrich Schenk von Synaw regarding the inheritance of his brother, Captain Hans Heinrich Schenk von Synaw, who served in Hohenlohe, 1605-1606;\n6. Fol. 165-219 Debt claim of Albrecht Christoph von Rosenberg against Georg Truchseß von Baldersheim of Aub or his heirs, (1597) 1606-1609;\n7. Fol. 220-250 Debt claim of Eva von Hatzfeldt née von Wichtenstein against residents of Epplingen, (1579) 1603-1609;\n8. Fol. 253-318 Inheritance settlement of the deceased Philipp Ernst von Berlichingen of Sennfeld, 1611-1613;\n9. Fol. 319-324 Claims of the von Hutten family against Anna Maria von Heusenstein née von Berlichingen, her debts, her death, and her inheritance, 1618;\n10. Fol. 347-364 Legal dispute before the Würzburg regional court between Dr. Anton Hübner of Würzburg (plaintiff) and Zaisolph von Rosenberg regarding a debt claim, 1555-1559;\n11. Fol. 365-378 Release letters for the lords of Rosenberg when assuming suretyships, 1517, 1549, 1574–1584, and 1607–1609.\n\nExtent: 1 volume, folios 1–378.",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Konrad von Berlichingen"
-        },
-        {
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
+          "place": "aub"
+        },
+        {
+          "place": "berlichingen"
+        },
+        {
           "person": "Georg Philipp von Berlichingen"
+        },
+        {
+          "person": "Georg Truchsess von Baldersheim"
+        },
+        {
+          "place": "gnoetzheim"
         },
         {
           "person": "Hans Friedrich Schenk"
@@ -27,13 +33,25 @@
           "person": "Hans Heinrich Schenk"
         },
         {
-          "person": "Albrecht Christoph von Rosenberg"
+          "place": "hohenlohe"
         },
         {
-          "person": "Georg Truchsess von Baldersheim"
+          "place": "hutten"
+        },
+        {
+          "person": "Konrad von Berlichingen"
+        },
+        {
+          "person": "Konrad von Rosenberg"
         },
         {
           "person": "Philipp Ernst von Berlichingen"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
         },
         {
           "person": "Zaisolph von Rosenberg"

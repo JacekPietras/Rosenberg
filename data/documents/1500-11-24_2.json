@@ -9,10 +9,16 @@
       "english": "Elector Philipp of the Palatinate declares that he has summoned his special envoy Erasmus von Rosenberg, Knight, and his servant Philipp Stumpf [von Schweinberg] of Domeneck to the present day for their grievances. The parties have referred the matter to Elector Philipp's sons, the Count Palatines Ludwig, Ruprecht, and Friedrich, who, at their request, render a decision. The electorial sons decide that Philipp Stumpf shall pay Erasmus or his heirs 200 gulden in cash for damages (beschedigung) by St. Lucy's Day [13.12.] to Heidelberg. The feud and hostility between Erasmus and Siegmund [Gesattel gen.] Rack concerning a dependent (poor person) who had been beaten to death by Erasmus' servant shall be terminated. The parties and their helpers shall be fully settled, all outstanding claims and assessments shall be forgiven, and the prisoners released. The parties accept this decision and receive a duplicate copy.\n\nTerm: 1500 November 24 (on St. Catherine's Eve)\n\nSealer: Elector Philipp of the Palatinate (secret seal)",
       "mention": [
         {
+          "place": "burg-schweinberg"
+        },
+        {
           "person": "Erasmus von Rosenberg",
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "heidelberg"
         }
       ],
       "facts": [
@@ -30,7 +36,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was awarded 200 gulden from Philipp Stumpf or his heirs for damages, payable by Saint Lucy’s Day at Heidelberg."
+          "content": "was awarded 200 gulden from Philipp Stumpf or his heirs for damages, payable by Saint Lucy’s Day at Heidelberg.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ]
         },
         {
           "person": "Erasmus von Rosenberg",

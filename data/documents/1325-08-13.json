@@ -10,19 +10,19 @@
       "english": "King Ludwig grants Friedrich Voit von Rosenberg, his cousins Ulrich von Rosenberg and Konrad von Rosenberg, and their heirs, for past services before Burgau, the unlimited right that the manor at Lobenhof and the properties at Prangershof with the peasant tenants living there may draw building and firewood from the manor at [Großen]falz, in the manner that the properties at [Großen]falz possessed and still possess with the peasants living there.",
       "mention": [
         {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
           "person": "König Ludwig",
           "personTitle": [
             "King"
           ]
         },
         {
-          "person": "Friedrich von Rosenberg"
+          "person": "Konrad von Rosenberg"
         },
         {
           "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
         }
       ]
     }

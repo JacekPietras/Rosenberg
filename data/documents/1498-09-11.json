@@ -9,7 +9,16 @@
       "english": "*Johannes Verwer, chaplain at the St. Margaret altar in Kürnbach (Kurenbach), Diocese of Speyer, sells due to excessive distance with the consent of his feudal lord, the Deutschmeister Endris von Grombach, and referencing the inserted permission of Pope Alexander VI. of November 13, 1495 (see U 5**), which itself references an also-inserted bull of Pope Paul II. of May 11, 1465 (see U 5*), as well as with the consent of the papal commissioners Philipp von Rosenberg, Provost, and Johannes Stoll, Dean of the St. German and Mauritius foundation in Speyer, one third of the great fruit tithe (grain, spelt and oat tithe) in the village and market of Ittlingen ((Ucklingen) to Blycker von Gemmingen, founder and patron of the parish church ULF at Neckarmühlbach (Mulnbach) below Guttenberg Castle. The purchase price of 950 florins has already been paid and invested with Duke Ulrich of Württemberg as an annual rent of 45 florins for the ULF altar. The buyer may use the tithe as freehold property, but he shall be responsible for maintaining the breeding stock and the parsonage at Ittlingen. Seal: Eberhard von Sternenfels (for the issuer), the Deutschmeister and the two papal commissioners#1498 Sept. 11 (Tuesday after our dear lady's day Nativity of Mary)+Original parchment - 4 seals - 1 impressed, 4 in wooden capsule with lid - 2 verso; enclosed: certified copy from 1747 and paper copy without date.\n\nDate range: September 11, 1498\n\nExtent: 1 parchment document",
       "mention": [
         {
+          "place": "gemmingen"
+        },
+        {
+          "place": "kuernbach-michaelskirche"
+        },
+        {
           "person": "Philipp von Rosenberg"
+        },
+        {
+          "place": "speyer"
         }
       ],
       "facts": [
@@ -19,7 +28,12 @@
             "Propst"
           ],
           "type": "generic",
-          "content": "served as a papal commissioner who consented to Johannes Verwer’s sale of a third of the great fruit tithe at Ittlingen to Blycker von Gemmingen."
+          "content": "served as a papal commissioner who consented to Johannes Verwer’s sale of a third of the great fruit tithe at Ittlingen to Blycker von Gemmingen.",
+          "mention": [
+            {
+              "place": "gemmingen"
+            }
+          ]
         }
       ]
     }

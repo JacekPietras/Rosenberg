@@ -9,16 +9,22 @@
       "english": "Kunz von Rosenberg, resident of Röttingen, acknowledges that he has resold the castle of Reigelsberg, which he purchased from Konrad von Weinsberg, to Konrad von Rosenberg the Elder for 7,000 gulden.\n\nDuration: February 22, 1418, without place of issue\n\nExtent: 1 charter",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "the Elder"
+          ]
         },
         {
           "person": "Konrad von Weinsberg"
         },
         {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "the Elder"
-          ]
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "reichelsburg-aub"
+        },
+        {
+          "place": "roettingen"
         }
       ],
       "facts": [
@@ -31,13 +37,16 @@
           "content": "sold Reigelsberg Castle, which he had bought from Konrad von Weinsberg, to Konrad von Rosenberg der Ältere for 7,000 gulden.",
           "mention": [
             {
-              "person": "Konrad von Weinsberg"
-            },
-            {
               "person": "Konrad von Rosenberg",
               "personTitle": [
                 "der Ältere"
               ]
+            },
+            {
+              "person": "Konrad von Weinsberg"
+            },
+            {
+              "place": "reichelsburg-aub"
             }
           ]
         }

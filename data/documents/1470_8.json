@@ -9,14 +9,28 @@
       "english": "A fragmentary file (correspondence etc.) from the Margraviate of Ansbach archive, concerning Georg von Rosenberg, Fulda with Mainz and Würzburg",
       "mention": [
         {
+          "place": "fulda-cathedral"
+        },
+        {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was involved in matters concerning Fulda with Mainz and Würzburg."
+          "content": "was involved in matters concerning Fulda with Mainz and Würzburg.",
+          "mention": [
+            {
+              "place": "fulda-cathedral"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ]
         }
       ]
     }

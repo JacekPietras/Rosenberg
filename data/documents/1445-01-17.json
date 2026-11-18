@@ -13,6 +13,9 @@
           "personTitle": [
             "knight"
           ]
+        },
+        {
+          "place": "rothenburg"
         }
       ],
       "facts": [
@@ -23,7 +26,12 @@
             "zu Haldenbergstetten"
           ],
           "type": "generic",
-          "content": "agreed with Rothenburg to receive Hans Kle in place of his serf Peter, son of Kunz Beyer."
+          "content": "agreed with Rothenburg to receive Hans Kle in place of his serf Peter, son of Kunz Beyer.",
+          "mention": [
+            {
+              "place": "rothenburg"
+            }
+          ]
         }
       ]
     }

@@ -9,58 +9,55 @@
       "english": "Elector Philipp of the Palatinate grants Kilian von Berlichingen an annual rent of 100 gulden for 2,000 gulden received and promises to repay the sum within six years at Hall, Mergentheim, or Rothenburg ob der Tauber. Further provisions follow regarding payment terms and guarantors, who seal the document. The guarantors named are: Engelhard von Neipperg, knight; Georg von Rosenberg, knight; Melchior Sützel of Mergentheim, knight; Orendel von Gemmingen; Reinhard von Helmstadt of Fürfeld; Anselm von Eicholzheim, Vogt of Mosbach; Neidhard Horneck von Hornberg; Philipp [Rüdt] von Bödigheim. Also enclosed are three accompanying paper letters: - Letter from Elector Philipp of the Palatinate to Hermann Boos von Waldeck concerning the provision of 1,401 gulden to redeem the debt of 2,000 gulden, Heidelberg, July 27, 1498. - Margarethe, née von Thüngen and widow of Kilian von Berlichingen, and her sons Philipp and Hans von Berlichingen acknowledge receipt of 2,000 gulden paid by Hans Forstmeister of Gelnhausen on behalf of Elector Philipp of the Palatinate. Impressed seal of Philipp von Berlichingen, July 27, 1498. - Expense account of Hans Forstmeister of Gelnhausen regarding his trip to Heilbronn to redeem the debt obligation, July 27, 1498.\n\nValidity: July 8, 1493 (on St. Kilian's Day)\n\nSealers: Elector Philipp of the Palatinate (1); Engelhard von Neipperg, knight (2); Georg von Rosenberg, knight (3); Melchior Sützel of Mergentheim, knight (4); Orendel von Gemmingen (5); Reinhard von Helmstadt of Fürfeld (6); Anselm von Eicholzheim, Vogt of Mosbach (7); Neidhard Horneck von Hornberg (8); Philipp [Rüdt] von Bödigheim (9)",
       "mention": [
         {
-          "person": "Kilian von Berlichingen"
-        },
-        {
           "person": "Engelhard von Neipperg",
           "personTitle": [
             "knight"
           ]
         },
         {
+          "place": "gemmingen"
+        },
+        {
           "person": "Georg von Rosenberg",
           "personTitle": [
             "knight"
           ]
-        },
-        {
-          "person": "Reinhard von Helmstadt"
-        },
-        {
-          "person": "Horneck von Hornberg"
-        },
-        {
-          "person": "Margaretha von Thüngen"
-        },
-        {
-          "person": "Kilian von Berlichingen"
-        },
-        {
-          "person": "Philipp von Berlichingen"
         },
         {
           "person": "Hans von Berlichingen"
         },
         {
+          "place": "heidelberg"
+        },
+        {
+          "person": "Horneck von Hornberg"
+        },
+        {
+          "person": "Kilian von Berlichingen"
+        },
+        {
+          "person": "Margaretha von Thüngen"
+        },
+        {
+          "place": "mosbach-st-juliana"
+        },
+        {
+          "person": "Philipp Rüd von Bödigheim"
+        },
+        {
           "person": "Philipp von Berlichingen"
-        },
-        {
-          "person": "Engelhard von Neipperg",
-          "personTitle": [
-            "knight"
-          ]
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "knight"
-          ]
         },
         {
           "person": "Reinhard von Helmstadt"
         },
         {
-          "person": "Horneck von Hornberg"
+          "place": "roettingen-st-kilian"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "waldeck"
         }
       ],
       "facts": [

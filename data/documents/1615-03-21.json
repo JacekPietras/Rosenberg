@@ -12,19 +12,41 @@
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
+          "place": "dienheim"
+        },
+        {
           "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "place": "unterschuepf"
         }
       ],
       "facts": [
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received 200 Gulden from the Dienheim widows and daughters, still owed from the sale of Schloss Unterschüpf."
+          "content": "received 200 Gulden from the Dienheim widows and daughters, still owed from the sale of Schloss Unterschüpf.",
+          "mention": [
+            {
+              "place": "dienheim"
+            },
+            {
+              "place": "unterschuepf"
+            }
+          ]
         },
         {
           "person": "Georg Siegmund von Rosenberg",
           "type": "generic",
-          "content": "received 200 Gulden from the Dienheim widows and daughters, still owed from the sale of Schloss Unterschüpf."
+          "content": "received 200 Gulden from the Dienheim widows and daughters, still owed from the sale of Schloss Unterschüpf.",
+          "mention": [
+            {
+              "place": "dienheim"
+            },
+            {
+              "place": "unterschuepf"
+            }
+          ]
         }
       ],
       "img": [

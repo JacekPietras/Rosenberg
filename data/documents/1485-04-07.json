@@ -9,10 +9,13 @@
       "english": "The brothers Wok and Peter von Rosenberg cede to Abbot Thomas and the convent of Hohenfurt, as compensation for the village of Humno, the village of Sstiedrkow.\n\nSeals: Two fairly large, almost identical seals hang from parchment strips, in red wax. Each shows a shield with a rose and, above it, a helmet also bearing a rose. — `Sigilu. Wocconis. De. Rosenberg.` and `Sigillu. Petri. De. Rosenberg.`",
       "mention": [
         {
-          "person": "Wok von Rosenberg"
+          "person": "Peter von Rosenberg"
         },
         {
-          "person": "Peter von Rosenberg"
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Wok von Rosenberg"
         }
       ],
       "img": [

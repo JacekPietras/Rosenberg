@@ -10,13 +10,21 @@
       "mention": [
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "heidelberg"
         }
       ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "had a house in Heidelberg taken from him by Philipp, Kurfürst von der Pfalz."
+          "content": "had a house in Heidelberg taken from him by Philipp, Kurfürst von der Pfalz.",
+          "mention": [
+            {
+              "place": "heidelberg"
+            }
+          ]
         },
         {
           "person": "Hans von Rosenberg",

@@ -9,7 +9,10 @@
       "english": "Jörg von Rechberg zu Hohenrechberg, to Kronburg, Weißenstein, and Kellmünz, for himself, Philipp Jakob von Rosenberg and Konrad von Rosenberg, brothers, on behalf of their deceased father Lorenz von Rosenberg, Sebastian von Adelsheim on behalf of his deceased father Martin von Adelsheim, Hans Christoph and Hans Joachim von Bubenhofen, brothers, on behalf of their deceased father Hans Marx von Bubenhofen, and finally Siegmund Ehenhaimen, Schultheiss of Adelsheim, on behalf of the widow of Hans Konrad von Adelsheim, certify to the mayor and council of the city of Gmünd the return receipt of a sealed chest containing a debt instrument over 10,000 Gulden principal. (Original, paper, 7 seals of the issuers)\n\nDuration: February 22, 1558\nExtent: 1 sheet.",
       "mention": [
         {
-          "person": "Philipp Jakob von Rosenberg"
+          "place": "adelsheim"
+        },
+        {
+          "person": "Hans Konrad von Adelsheim"
         },
         {
           "person": "Konrad von Rosenberg"
@@ -18,13 +21,13 @@
           "person": "Lorenz von Rosenberg"
         },
         {
-          "person": "Sebastian von Adelsheim"
-        },
-        {
           "person": "Martin von Adelsheim"
         },
         {
-          "person": "Hans Konrad von Adelsheim"
+          "person": "Philipp Jakob von Rosenberg"
+        },
+        {
+          "person": "Sebastian von Adelsheim"
         }
       ],
       "facts": [

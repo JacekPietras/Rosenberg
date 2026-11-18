@@ -10,6 +10,9 @@
       "english": "Charles IV, in consideration of the patrons of Bohemia Vitus, Adalbert and Wenceslaus, confirms to Archbishop Ernst of Prague an inserted privilege of King Wenceslaus I of Bohemia of 7 July 1221 concerning the recognition of the freedoms of the Prague Church, which had been disputed between him and Bishop Andreas, through the mediation of Pope Honorius III, and the renewal of the lost charter of freedom thereof.\n\nWitnesses: Rudolf, Duke of Saxony; Burkhard (Preczlaw?), Burgrave of Magdeburg; Wladislaw, Duke of Teschen; Wilhelm von Landstein, Burgrave of Prague; Jost von Rosenberg, Chamberlain; Andreas von Duba, Sudarius; Wanko von Wartenberg, Seneschal of Bohemia; Tobias von Kamenz; Burkhard von Cziburk (Bernhard von Cimburg?); Bozko von Kunstadt; Saskone von Suerzetiez; Busko von Welhartitz",
       "mention": [
         {
+          "person": "Jost von Rosenberg"
+        },
+        {
           "person": "König Wenceslaus",
           "personTitle": [
             "King"
@@ -17,9 +20,6 @@
         },
         {
           "person": "Wilhelm von Landstein"
-        },
-        {
-          "person": "Jost von Rosenberg"
         }
       ]
     }

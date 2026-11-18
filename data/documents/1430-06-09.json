@@ -9,25 +9,28 @@
       "english": "Eberhard von Neuburg, Konrad von Rosenberg, Hans von Gemmingen, and other named issuers confirm that Konrad von Weinsberg, hereditary chamberlain of the Holy Roman Empire, and his wife Anna, née von Hohenlohe, pledged Weikersheim Castle and the places Schäftersheim, Nassach, Rettersheim, Elpersheim, Neubronn, Rinderfeld, Wermutshausen, Streichental, Herbsthausen, Adolzhausen, and Queckbronn to them with the consent of Bishop Johann of Würzburg, their feudal lord.",
       "mention": [
         {
-          "person": "Eberhard von Neuburg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Hans von Gemmingen"
-        },
-        {
-          "person": "Konrad von Weinsberg"
-        },
-        {
           "person": "Anna von Hohenlohe"
+        },
+        {
+          "person": "Eberhard von Neuburg"
         },
         {
           "person": "Hans of Würzburg",
           "personTitle": [
             "Bishop"
           ]
+        },
+        {
+          "person": "Hans von Gemmingen"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Konrad von Weinsberg"
+        },
+        {
+          "place": "rinderfeld"
         }
       ],
       "facts": [
@@ -38,6 +41,9 @@
           "mention": [
             {
               "person": "Konrad von Weinsberg"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         }

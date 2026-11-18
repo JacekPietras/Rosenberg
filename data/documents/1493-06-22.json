@@ -15,14 +15,19 @@
           "person": "Philipp von Seldeneck"
         },
         {
-          "person": "Philipp von Seldeneck"
+          "place": "speyer"
         }
       ],
       "facts": [
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "as canon and provost of St. German and Mauritius in Speyer and vicar of its clergy recorded a settlement between Baden foundation and parish priest Andreas Duchrherer concerning the tithe at Au."
+          "content": "as canon and provost of St. German and Mauritius in Speyer and vicar of its clergy recorded a settlement between Baden foundation and parish priest Andreas Duchrherer concerning the tithe at Au.",
+          "mention": [
+            {
+              "place": "speyer"
+            }
+          ]
         }
       ],
       "img": [

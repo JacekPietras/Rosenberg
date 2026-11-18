@@ -11,6 +11,9 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Margaretha von Dottenheim"
         },
         {
@@ -43,7 +46,12 @@
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "secured his wife Margarethe’s claims under their marriage contract against his property and fiefs at Boxberg."
+          "content": "secured his wife Margarethe’s claims under their marriage contract against his property and fiefs at Boxberg.",
+          "mention": [
+            {
+              "place": "boxberg"
+            }
+          ]
         }
       ],
       "img": [

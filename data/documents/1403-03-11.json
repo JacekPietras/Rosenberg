@@ -13,10 +13,37 @@
       "english": "1403 March 11, Nuremberg. King Ruprecht acknowledges that his councillors lent him 4,800 florins in Mainz currency for the embassy now to be sent to the pope in Rome under Bishop Raban of Speyer. The councillors are Wiprecht von Helmstadt der Ältere; Hans vom Hirschhorn; Diether von Handschuhsheim; Herman von Rodenstein, Landvogt in the Wetterau; Swartz Reinhard von Sickingen, Landvogt in Alsace; Eberhard vom Hirschhorn; Wiprecht von Helmstadt der Jüngere, Vogt zu Bretten; Ulrich Landschad; Hans von Helmstadt; Hannman von Sickingen, Vizedom zu Neustadt; Contze Mönch von Rosenberg, Vogt zu Steinsberg; Cuntz Landschad von Steinach; Albrecht von Berwangen, Hofmeister zu Heidelberg; Hennel Wißkreiß von Lindenfels; Eberhard von Sickingen, Amtmann zu Trifels; Reinhard von Sickingen der Jüngere, Vogt zu Heidelberg; and Henne Werberg, Vogt zu Germersheim. As security, the king pledges to these councillors all his toll revenues at the two toll stations of Bacharach and Kaub until they have received 4,800 florins from those revenues, with interest and costs. He orders the toll clerks Johannes von Laudenburg at Bacharach and Johannes Sure at Kaub to deliver all revenues to the councillors, except payments already promised, annuities already assigned, and the wages of the toll clerks, inspectors, and toll servants. Newly appointed toll clerks are to swear to this debt instrument. As further security, the king pledges Strahlenberg Castle and the town of Schriesheim to his councillors; if they are not paid from the tolls, they are to hold them until satisfied. The officials, stewards, servants, and subjects there are to swear obedience to them. The king promises not to pledge Strahlenberg and Schriesheim further during the pledge and vows faithfully to keep the debt instrument. His sons Ludwig and Hans do likewise. The three princes seal it. Note: “Redempta est.”",
       "mention": [
         {
+          "person": "Diether von Handschuhsheim"
+        },
+        {
+          "person": "Eberhard vom Hirschhorn"
+        },
+        {
+          "person": "Eberhard von Sickingen"
+        },
+        {
+          "person": "Hans vom Hirschhorn"
+        },
+        {
+          "person": "Hans von Helmstadt"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
+          "person": "Herman von Rodenstein"
+        },
+        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
           ]
+        },
+        {
+          "person": "Kunz Mönch von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
         },
         {
           "person": "Raban of Speyer",
@@ -25,40 +52,19 @@
           ]
         },
         {
+          "person": "Reinhard von Sickingen"
+        },
+        {
+          "place": "sickingen"
+        },
+        {
           "person": "Wiprecht von Helmstadt",
           "personTitle": [
             "der Ältere"
           ]
         },
         {
-          "person": "Hans vom Hirschhorn"
-        },
-        {
-          "person": "Diether von Handschuhsheim"
-        },
-        {
-          "person": "Herman von Rodenstein"
-        },
-        {
-          "person": "Reinhard von Sickingen"
-        },
-        {
-          "person": "Eberhard vom Hirschhorn"
-        },
-        {
           "person": "Wiprecht von Helmstadt"
-        },
-        {
-          "person": "Hans von Helmstadt"
-        },
-        {
-          "person": "Kunz Mönch von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Sickingen"
-        },
-        {
-          "person": "Reinhard von Sickingen"
         }
       ]
     }

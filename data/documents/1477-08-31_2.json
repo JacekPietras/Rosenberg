@@ -9,31 +9,28 @@
       "english": "Hans von Dottenheim, Amtmann zu Jagstberg, renounces claims and demands after Schloss Schüpf [near Boxberg], of which he held a share, had been captured and destroyed in the feud between Archbishop Adolf of Mainz, Elector Friedrich I of the Palatinate, and Bishop Rudolf of Würzburg on one side, and Jörg, Arnold, and Michael von Rosenberg on the other. Archbishop Diether of Mainz, Elector Philipp of the Palatinate, and Bishop Rudolf of Würzburg had restored him to his share and usage rights.\n\nTime span: August 31, 1477 (on Sunday before Saint Giles' Day)\n\nSealer: Hans von Dottenheim",
       "mention": [
         {
-          "person": "Hans von Dottenheim"
+          "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Rudolf of Würzburg",
-          "personTitle": [
-            "Bishop"
-          ]
+          "place": "boxberg"
         },
         {
           "person": "Georg von Rosenberg"
         },
         {
-          "person": "Arnold von Rosenberg"
+          "person": "Hans von Dottenheim"
         },
         {
           "person": "Michael von Rosenberg"
+        },
+        {
+          "place": "oberschuepf-castle"
         },
         {
           "person": "Rudolf of Würzburg",
           "personTitle": [
             "Bishop"
           ]
-        },
-        {
-          "person": "Hans von Dottenheim"
         }
       ],
       "facts": [
@@ -46,13 +43,19 @@
           "content": "renounced claims after his share of Schloss Schüpf, captured and destroyed in the feud against Georg, Arnold and Michael von Rosenberg, was restored by the princes of Mainz, the Palatinate and Würzburg.",
           "mention": [
             {
-              "person": "Georg von Rosenberg"
-            },
-            {
               "person": "Arnold von Rosenberg"
             },
             {
+              "person": "Georg von Rosenberg"
+            },
+            {
               "person": "Michael von Rosenberg"
+            },
+            {
+              "place": "oberschuepf-castle"
+            },
+            {
+              "place": "wurzburg"
             }
           ]
         }

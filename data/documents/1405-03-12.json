@@ -9,15 +9,21 @@
       "english": "King Ruprecht permits the lords of Adelsheim to collect tolls at the Adelsheim bridge.\n\n1405, March 12.\n\nWe Ruprecht, by God's grace Roman King, always augmenter of the empire, acknowledge and make known openly with this letter that our beloved faithful Götze the elder, Zeyßolff, Beringer the elder, Götze and Beringer the younger and Albrecht, all of Adoltzheim, have presented to us that the streams and waters, the Kornache¹ and the Seckache², which flow down before Rosenberg³ under Bottekheim⁴ and meet at Adoltzheim, frequently flood and wash away and destroy bridges and roads, so that merchants and travelers who build these roads and travel up and down thereon are often disturbed and hindered by this, and that the aforementioned von Adoltzheim and their poor people at Adoltzheim are not able to make and repair these bridges and roads, as often as this becomes necessary, without help and tax from the merchants and travelers who build these roads, and have humbly invoked and begged us to share our royal mercy with them and to assist therein. We have considered the diligent and honest prayers of the aforementioned von Adoltzheim and also their faithful, grateful and unwearied services, as they have often and frequently usefully, ungrudgingly and willingly shown and done for us and the empire, daily do and should and may further do in future times.\n\n[1.] And therefore with deliberate mind and right wisdom by our special grace we have permitted and granted, permit and grant them with the force of this letter and royal imperial authority¹, that they from all and every horse that draws load past Adoltzheim up or down at the bridge to² Adoltzheim may take and shall take for bridge and road toll from each horse one Heidelberg penny.\n\n[2.] And they shall also apply the same money that they thus collect and gather nowhere else than that they should make and repair with it the bridges and roads, so that merchants and travelers who build these roads may always, when they come there and pay the aforementioned bridge toll, travel and walk over and through unhindered and undisturbed without any hindrance.\n\n[3.] Yet we will that we and our successors on the empire, Roman emperors and kings, may revoke this aforementioned bridge toll whenever we wish, if it should seem to us and our aforementioned successors later that the same bridge toll is not honestly collected and applied or that the merchants and travelers are burdened too much thereby.\n\nOf this letter sealed with our royal majesty's appended seal, given at Heidelberg on the next Thursday before the Sunday when in the holy church they sing reminiscere, after Christ's birth fourteen hundred and then in the fifth year, of our empire in the fifth year.\n\nBy command of the king Johannes Winheim.\n\nOn the back: R. Bertholdus Durlach.\n\nOriginal (Parchment with seal) in the archive of the lordship of Adelsheim (A). Modern copy of a 1650 produced copy, which itself goes back to an old codex, clonda (B).\n\nCf. Weiss, Regesten No. 62 and Chmel, Reg. Ruperti No. 1047, where it is dated according to the chancery register with March 13, 1405.",
       "mention": [
         {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "King"
-          ]
+          "place": "adelsheim"
+        },
+        {
+          "place": "heidelberg"
         },
         {
           "person": "König Hans",
           "personTitle": [
             "king"
+          ]
+        },
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
           ]
         }
       ],
@@ -25,7 +31,12 @@
         {
           "subject": "Rosenberg",
           "type": "generic",
-          "content": "lay by the streams Kornach and Seckach, which flowed toward Adelsheim."
+          "content": "lay by the streams Kornach and Seckach, which flowed toward Adelsheim.",
+          "mention": [
+            {
+              "place": "adelsheim"
+            }
+          ]
         }
       ]
     }

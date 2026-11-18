@@ -13,10 +13,16 @@
       "english": "1409 February 15, Heidelberg. Konrad von Rosenberg der Jüngere acknowledges that 491 florins are owed to him: 300 pounds Heller for the royal tenants pledged by the Empire to his parents and redeemed by the king, 50 florins for oats, and the remainder for his wages from the Lombard campaign, from Nuremberg and Heidelberg, and for other matters and debts. The king promises payment by Martinmas. The king will inquire into and settle Konrad’s claim concerning a farm.",
       "mention": [
         {
+          "place": "heidelberg"
+        },
+        {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "der Jüngere"
           ]
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [

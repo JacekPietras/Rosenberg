@@ -15,6 +15,9 @@
           "person": "Friedrich von Rosenberg"
         },
         {
+          "place": "niedeck"
+        },
+        {
           "person": "Wolf von Hartheim"
         }
       ],
@@ -30,10 +33,10 @@
           "content": "stood surety for Wolf von Hardheim’s sale of half of the Schwarzenbrunn farm near Gerstetten to Margarethe von Neideck, widow of Hans Heußlin von Eußenheim.",
           "mention": [
             {
-              "person": "Wolf von Hardheim"
+              "person": "Margaretha von Neideck"
             },
             {
-              "person": "Margaretha von Neideck"
+              "person": "Wolf von Hardheim"
             }
           ]
         },
@@ -43,10 +46,10 @@
           "content": "stood surety for Wolf von Hardheim’s sale of half of the Schwarzenbrunn farm near Gerstetten to Margarethe von Neideck, widow of Hans Heußlin von Eußenheim.",
           "mention": [
             {
-              "person": "Wolf von Hardheim"
+              "person": "Margaretha von Neideck"
             },
             {
-              "person": "Margaretha von Neideck"
+              "person": "Wolf von Hardheim"
             }
           ]
         }

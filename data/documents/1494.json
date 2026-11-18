@@ -19,29 +19,38 @@
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Asmus von Rosenberg",
           "personTitle": [
-            "Ritter",
-            "Amtmann zu Uffenheim"
+            "Amtmann zu Uffenheim",
+            "Ritter"
           ],
           "type": "parent",
           "of": "Hieronymus von Rosenberg",
           "ofTitle": [
+            "Pfleger zu Hirschberg",
             "Ritter",
-            "zu Uttenhofen",
-            "Pfleger zu Hirschberg"
+            "zu Uttenhofen"
           ]
         },
         {
           "person": "Hieronymus von Rosenberg",
           "personTitle": [
+            "Pfleger zu Hirschberg",
             "Ritter",
-            "zu Uttenhofen",
-            "Pfleger zu Hirschberg"
+            "zu Uttenhofen"
           ],
           "type": "generic",
           "content": "received the Schönwiese near Uttenhofen as a Mannlehen from Margraves Friedrich and Sigmund of Brandenburg."
@@ -49,11 +58,16 @@
         {
           "person": "Asmus von Rosenberg",
           "personTitle": [
-            "Ritter",
-            "Amtmann zu Uffenheim"
+            "Amtmann zu Uffenheim",
+            "Ritter"
           ],
           "type": "generic",
-          "content": "with his son Hieronymus exchanged the Schönwiese near Uttenhofen for allodial meadows at Waldmannshofen with Margraves Friedrich and Sigmund of Brandenburg."
+          "content": "with his son Hieronymus exchanged the Schönwiese near Uttenhofen for allodial meadows at Waldmannshofen with Margraves Friedrich and Sigmund of Brandenburg.",
+          "mention": [
+            {
+              "place": "waldmannshofen"
+            }
+          ]
         }
       ]
     }

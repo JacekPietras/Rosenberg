@@ -27,12 +27,25 @@
           "personDeceased": true,
           "type": "generic",
           "content": "may have founded a separate line at Uissigheim according to Hermann Bauer, who cited the shared arms of the von Uissigheim and von Rosenberg families.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1314"
         },
         {
           "subject": "The later von Uissigheim",
           "type": "generic",
           "content": "may have belonged to the wider Rosenberg family according to Hermann Bauer; their shared arms support this possibility.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1314"
         }
       ]
@@ -45,6 +58,11 @@
           "subject": "The von Rosenberg family",
           "type": "generic",
           "content": "may have originated from the von Uissigheim family.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1285"
         }
       ]
@@ -69,12 +87,22 @@
           "subject": "The von Rosenberg family",
           "type": "generic",
           "content": "held property at Uissigheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1381"
         },
         {
           "subject": "The von Rosenberg family",
           "type": "generic",
           "content": "held the parish patronage at Uissigheim until its extinction in 1632.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1632"
         },
         {
@@ -249,6 +277,9 @@
           "mention": [
             {
               "person": "Boppe von Wertheim"
+            },
+            {
+              "place": "bronnbach"
             }
           ],
           "date": "1178"
@@ -260,6 +291,9 @@
           "mention": [
             {
               "person": "Boppe von Wertheim"
+            },
+            {
+              "place": "bronnbach"
             }
           ],
           "date": "1178"
@@ -271,6 +305,9 @@
           "mention": [
             {
               "person": "Boppe von Wertheim"
+            },
+            {
+              "place": "bronnbach"
             }
           ],
           "date": "1178"
@@ -315,12 +352,22 @@
           "person": "Eberhard von Uissigheim",
           "type": "generic",
           "content": "witnessed the Counts of Rieneck renouncing their claim to build castles in the Spessart before the Archbishopric of Mainz.",
+          "mention": [
+            {
+              "place": "rieneck"
+            }
+          ],
           "date": "1260-07-21"
         },
         {
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "witnessed the Counts of Rieneck renouncing their claim to build castles in the Spessart before the Archbishopric of Mainz.",
+          "mention": [
+            {
+              "place": "rieneck"
+            }
+          ],
           "date": "1260-07-21"
         }
       ],
@@ -377,6 +424,14 @@
           "subject": "The high-free von Uissigheim",
           "type": "generic",
           "content": "may have been related to the Counts of Wertheim, given Wertheim property around Uissigheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            },
+            {
+              "place": "wertheim-stiftskirche"
+            }
+          ],
           "date": "1247"
         }
       ]
@@ -389,12 +444,22 @@
           "person": "Martin von Uissigheim",
           "type": "generic",
           "content": "was the last member of the von Uissigheim line, which died out in 1546.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1546"
         },
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
           "content": "was the last member of the von Rosenberg line, which died out in 1632.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1632"
         },
         {
@@ -404,6 +469,11 @@
           ],
           "type": "generic",
           "content": "used the designation von Rosenberg.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1285"
         }
       ],
@@ -414,10 +484,13 @@
           "content": "may have separated between the 1260 attestation of Eberhard and Arnold von Uissigheim and Eberhard Rufus’s use of von Rosenberg in 1285.",
           "mention": [
             {
+              "person": "Arnold von Uissigheim"
+            },
+            {
               "person": "Eberhard von Uissigheim"
             },
             {
-              "person": "Arnold von Uissigheim"
+              "place": "rosenberg-town"
             }
           ],
           "date": "1285"
@@ -458,6 +531,9 @@
           "content": "witnessed Count Rudolf II von Wertheim’s sale of four farms at Kirschfurt to Bronnbach.",
           "mention": [
             {
+              "place": "bronnbach"
+            },
+            {
               "person": "Rudolf von Wertheim"
             }
           ],
@@ -471,6 +547,9 @@
           "type": "generic",
           "content": "witnessed Count Rudolf II von Wertheim’s sale of four farms at Kirschfurt to Bronnbach.",
           "mention": [
+            {
+              "place": "bronnbach"
+            },
             {
               "person": "Rudolf von Wertheim"
             }
@@ -486,6 +565,9 @@
           "content": "witnessed Count Rudolf II von Wertheim’s sale of four farms at Kirschfurt to Bronnbach.",
           "mention": [
             {
+              "place": "bronnbach"
+            },
+            {
               "person": "Rudolf von Wertheim"
             }
           ],
@@ -496,6 +578,9 @@
           "type": "generic",
           "content": "witnessed Count Rudolf II von Wertheim’s sale of four farms at Kirschfurt to Bronnbach.",
           "mention": [
+            {
+              "place": "bronnbach"
+            },
             {
               "person": "Rudolf von Wertheim"
             }
@@ -510,6 +595,11 @@
           ],
           "type": "generic",
           "content": "was party to a dispute with Seligental Abbey over meadows at Hemsbach, which Abbot Wintherus of Bronnbach settled.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ],
           "date": "1288"
         },
         {
@@ -520,6 +610,9 @@
           "type": "generic",
           "content": "was named in the record of Count Rudolf II von Wertheim’s sale of a mill at Reicholzheim to Bronnbach.",
           "mention": [
+            {
+              "place": "bronnbach"
+            },
             {
               "person": "Rudolf von Wertheim"
             }
@@ -534,6 +627,9 @@
           "type": "generic",
           "content": "was named in the record of Count Rudolf II von Wertheim’s sale of a mill at Reicholzheim to Bronnbach.",
           "mention": [
+            {
+              "place": "bronnbach"
+            },
             {
               "person": "Rudolf von Wertheim"
             }
@@ -550,6 +646,9 @@
           "content": "was named in the record of Count Rudolf II von Wertheim’s sale of a mill at Reicholzheim to Bronnbach.",
           "mention": [
             {
+              "place": "bronnbach"
+            },
+            {
               "person": "Rudolf von Wertheim"
             }
           ],
@@ -563,6 +662,9 @@
           "type": "generic",
           "content": "was named in the record of Count Rudolf II von Wertheim’s sale of a mill at Reicholzheim to Bronnbach.",
           "mention": [
+            {
+              "place": "bronnbach"
+            },
             {
               "person": "Rudolf von Wertheim"
             }
@@ -578,6 +680,11 @@
           ],
           "type": "generic",
           "content": "may be the same person as the Eberhard attested as von Uissigheim, since both documents name him in 1285.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1285"
         }
       ]
@@ -704,6 +811,9 @@
           "content": "sold property at Steinbach to Bronnbach with his brother Konrad von Rosenberg.",
           "mention": [
             {
+              "place": "bronnbach"
+            },
+            {
               "person": "Konrad von Rosenberg"
             }
           ],
@@ -714,6 +824,9 @@
           "type": "generic",
           "content": "sold property at Steinbach to Bronnbach with his brother Eberhard von Rosenberg.",
           "mention": [
+            {
+              "place": "bronnbach"
+            },
             {
               "person": "Eberhard von Rosenberg"
             }
@@ -757,6 +870,11 @@
           ],
           "type": "generic",
           "content": "may be the person recorded in the Bronnbach necrology in 1314.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            }
+          ],
           "date": "1314"
         },
         {
@@ -766,6 +884,9 @@
           "mention": [
             {
               "person": "Adelheid von Neudeck"
+            },
+            {
+              "place": "neudeck"
             }
           ],
           "date": "1327"
@@ -897,6 +1018,11 @@
           "person": "Eberhard von Uissigheim",
           "type": "generic",
           "content": "may have been the vicedominus at Aschaffenburg mentioned in the 1260 Rieneck charter.",
+          "mention": [
+            {
+              "place": "rieneck"
+            }
+          ],
           "date": "1260"
         },
         {
@@ -905,10 +1031,10 @@
           "content": "may have been a third brother of Eberhard and Arnold von Uissigheim.",
           "mention": [
             {
-              "person": "Eberhard von Uissigheim"
+              "person": "Arnold von Uissigheim"
             },
             {
-              "person": "Arnold von Uissigheim"
+              "person": "Eberhard von Uissigheim"
             }
           ],
           "date": "1260"
@@ -1053,6 +1179,14 @@
           "person": "Jutta von Uissigheim",
           "type": "generic",
           "content": "sold property at Uissigheim to Bronnbach with the consent of her brothers Friedrich, Albrecht, and Kraft.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1322-12-28"
         }
       ],
@@ -1087,6 +1221,11 @@
           "subject": "Two von Uissigheim family branches",
           "type": "generic",
           "content": "may have produced the purchasers of Rosenberg.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1260"
         }
       ]
@@ -1112,6 +1251,14 @@
           "person": "Adelheid von Neudeck",
           "type": "generic",
           "content": "sold income from her share in the mill at Rosenberg to Bronnbach.",
+          "mention": [
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1327"
         },
         {
@@ -1139,6 +1286,12 @@
           "mention": [
             {
               "person": "Adelheid von Neudeck"
+            },
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ],
           "date": "1327"
@@ -1154,6 +1307,12 @@
           "mention": [
             {
               "person": "Adelheid von Neudeck"
+            },
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ],
           "date": "1327"
@@ -1165,6 +1324,12 @@
           "mention": [
             {
               "person": "Adelheid von Neudeck"
+            },
+            {
+              "place": "bronnbach"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ],
           "date": "1327"
@@ -1181,6 +1346,11 @@
           "subject": "The Rosenberg family",
           "type": "generic",
           "content": "may have acquired rights in Brehmen and Buch am Ahorn through a family connection.",
+          "mention": [
+            {
+              "place": "buch"
+            }
+          ],
           "date": "1327"
         },
         {
@@ -1215,6 +1385,14 @@
           ],
           "type": "generic",
           "content": "may have been connected to the Rüdt von Bödigheim; his son Wipertus’s name and overlapping property in Bofsheim and Sindolsheim suggest a connection, though proof is lacking.",
+          "mention": [
+            {
+              "place": "boedigheim-kreuzkirche"
+            },
+            {
+              "place": "sindolsheim-church"
+            }
+          ],
           "date": "1327"
         }
       ]
@@ -1227,6 +1405,11 @@
           "person": "Eberhard von Rosenberg",
           "type": "generic",
           "content": "reported to Archbishop Balduin on his presence at the Würzburg episcopal election.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1333-07-30"
         }
       ],
@@ -1235,6 +1418,11 @@
           "person": "Eberhard von Rosenberg",
           "type": "generic",
           "content": "may have captured an opposing episcopal candidate’s stronghold when he took Lauda.",
+          "mention": [
+            {
+              "place": "lauda"
+            }
+          ],
           "date": "1333"
         }
       ]
@@ -1270,6 +1458,12 @@
           "mention": [
             {
               "person": "Eberhard Rüd"
+            },
+            {
+              "place": "wallduern"
+            },
+            {
+              "place": "wildenberg-castle"
             }
           ],
           "date": "1354"
@@ -1344,6 +1538,11 @@
           ],
           "type": "generic",
           "content": "may have helped finance the later acquisition of Rosenberg through his career.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1260"
         }
       ]
@@ -1356,6 +1555,11 @@
           "subject": "The castle and village of Rosenberg",
           "type": "generic",
           "content": "were recorded as fiefs in a Würzburg fief book.",
+          "mention": [
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1380-10-18"
         },
         {
@@ -1364,13 +1568,16 @@
           "content": "purchased the Boxberg commandery from the Franconian Johanniter bailiwick with another Konrad von Rosenberg, Eberhard von Rosenberg and Arnold von Rosenberg.",
           "mention": [
             {
-              "person": "Konrad von Rosenberg"
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "place": "boxberg"
             },
             {
               "person": "Eberhard von Rosenberg"
             },
             {
-              "person": "Arnold von Rosenberg"
+              "person": "Konrad von Rosenberg"
             }
           ],
           "date": "1381-05-25"
@@ -1381,13 +1588,16 @@
           "content": "purchased the Boxberg commandery from the Franconian Johanniter bailiwick with another Konrad von Rosenberg, Eberhard von Rosenberg and Arnold von Rosenberg.",
           "mention": [
             {
-              "person": "Konrad von Rosenberg"
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "place": "boxberg"
             },
             {
               "person": "Eberhard von Rosenberg"
             },
             {
-              "person": "Arnold von Rosenberg"
+              "person": "Konrad von Rosenberg"
             }
           ],
           "date": "1381-05-25"
@@ -1399,6 +1609,12 @@
           "mention": [
             {
               "person": "Arnold von Rosenberg"
+            },
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ],
           "date": "1381-05-25"
@@ -1409,7 +1625,13 @@
           "content": "purchased the Boxberg commandery from the Franconian Johanniter bailiwick with Eberhard von Rosenberg and the two Konrads von Rosenberg.",
           "mention": [
             {
+              "place": "boxberg"
+            },
+            {
               "person": "Eberhard von Rosenberg"
+            },
+            {
+              "place": "rosenberg-town"
             }
           ],
           "date": "1381-05-25"
@@ -1426,6 +1648,14 @@
           "subject": "The enfeoffment of three quarters of Rosenberg",
           "type": "generic",
           "content": "may have helped finance the 1381 purchase of Boxberg, as a quarter of Rosenberg and Boxberg were made fiefs in return for Palatine funding.",
+          "mention": [
+            {
+              "place": "boxberg"
+            },
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1380-10-18"
         }
       ]
@@ -1447,6 +1677,11 @@
           ],
           "type": "generic",
           "content": "may have acquired Rosenberg as allodial property in the 1270s.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1285"
         },
         {
@@ -1468,6 +1703,11 @@
           ],
           "type": "generic",
           "content": "may not have built Rosenberg Castle, since it likely existed when he established himself there",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1285"
         }
       ]
@@ -1483,6 +1723,14 @@
           ],
           "type": "generic",
           "content": "may have bought Rosenberg from the Dürn or one of their ministerial families; this could explain the property’s allodial status.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wallduern"
+            }
+          ],
           "date": "1285"
         }
       ]
@@ -1498,6 +1746,14 @@
           ],
           "type": "generic",
           "content": "may have bought Rosenberg from a Dürn ministerial family; evidence about the distinct Mönch von Rosenberg family supports this possibility.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wallduern"
+            }
+          ],
           "date": "1285"
         }
       ]
@@ -1510,12 +1766,25 @@
           "subject": "The Mönch von Rosenberg family",
           "type": "generic",
           "content": "may have been a separate family, rather than a branch of the von Uissigheim-Rosenberg family; their different arms weigh against that connection.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1251"
         },
         {
           "subject": "The Mönch von Rosenberg family",
           "type": "generic",
           "content": "may have been the original owners of Rosenberg castle and village.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1251"
         }
       ]
@@ -1532,12 +1801,25 @@
           "subject": "The Mönch family",
           "type": "generic",
           "content": "may have left Rosenberg by the early fourteenth century, based on Würzburg fief records.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            },
+            {
+              "place": "wurzburg"
+            }
+          ],
           "date": "1300"
         },
         {
           "subject": "Bronnacker, Gies, and Ensigheim",
           "type": "generic",
           "content": "may have been appurtenances of Rosenberg Castle.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1300"
         }
       ]
@@ -1553,6 +1835,11 @@
           ],
           "type": "generic",
           "content": "likely bought Rosenberg Castle and village from the Mönch, possibly when they were in financial difficulty.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1285"
         }
       ]
@@ -1569,12 +1856,22 @@
           "subject": "The lower-noble von Uissigheim and von Rosenberg",
           "type": "generic",
           "content": "may have shared ancestry, distinct from the high-free von Uissigheim.",
+          "mention": [
+            {
+              "place": "uissigheim"
+            }
+          ],
           "date": "1285"
         },
         {
           "subject": "The Mönch family",
           "type": "generic",
           "content": "may have held Rosenberg castle and village before the property changed hands prior to 1285.",
+          "mention": [
+            {
+              "place": "rosenberg-town"
+            }
+          ],
           "date": "1285"
         },
         {

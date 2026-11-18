@@ -9,10 +9,16 @@
       "english": "Georg von Rosenberg of Schweigern, due to disputes, waives the right of repurchase of the quarter of the grain tithe in Bobstadt that his father Friedrich von Rosenberg sold to the Teutonic Order at Mergentheim, and acknowledges receipt of the 150 gulden already paid for the repurchase.\n\nDuration: April 9, 1535 (Friday after Quasimodogeniti)",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
+          "place": "bobstadt"
         },
         {
           "person": "Friedrich von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "schweigern"
         }
       ],
       "facts": [
@@ -30,7 +36,12 @@
             "zu Schweigern"
           ],
           "type": "generic",
-          "content": "renounced the right to redeem the quarter of the grain tithe at Bobstadt that his father Friedrich had sold to the Teutonic Order."
+          "content": "renounced the right to redeem the quarter of the grain tithe at Bobstadt that his father Friedrich had sold to the Teutonic Order.",
+          "mention": [
+            {
+              "place": "bobstadt"
+            }
+          ]
         },
         {
           "person": "Georg von Rosenberg",
@@ -38,7 +49,12 @@
             "zu Schweigern"
           ],
           "type": "generic",
-          "content": "acknowledged receipt of the money previously paid to redeem the quarter of the grain tithe at Bobstadt."
+          "content": "acknowledged receipt of the money previously paid to redeem the quarter of the grain tithe at Bobstadt.",
+          "mention": [
+            {
+              "place": "bobstadt"
+            }
+          ]
         }
       ],
       "img": [

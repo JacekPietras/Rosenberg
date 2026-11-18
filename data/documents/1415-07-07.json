@@ -11,7 +11,13 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Christiana von Handschuhsheim"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
         },
         {
           "person": "Hans von Rosenberg",
@@ -20,19 +26,10 @@
           ]
         },
         {
+          "place": "jagstberg"
+        },
+        {
           "person": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Christiana von Handschuhsheim"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
         }
       ],
       "facts": [
