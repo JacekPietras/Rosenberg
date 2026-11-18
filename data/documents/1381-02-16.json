@@ -1,19 +1,121 @@
 {
   "date": "1381-02-16",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Aachen"
+  ],
   "entries": [
     {
-      "source": "Abteilung Rheinland, AA 0183, Nr. 228",
-      "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_48ba3101-83d0-49d5-bc6d-8431021aa1bb",
-      "german": "Clais von Rosenberg verkauft der Abtei Burtscheid 7 Morgen Land in dem Broich und bei dem Steinweg zu Wetzauen. Mit 7 Siegeln (Aachener Schöffen).",
-      "english": "Clais von Rosenberg sells to the Abbey of Burtscheid 7 morgen of land in the Broich and on the Steinweg at Wetzauen. With 7 seals (Aachen lay judges).",
+      "source": [
+        "Abteilung Rheinland, AA 0183, Nr. 228",
+        "Quix, Geschichte der ehemaligen Reichsabtei Burtscheid, Urkunde 162, S. 396–398"
+      ],
+      "url": [
+        "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_48ba3101-83d0-49d5-bc6d-8431021aa1bb",
+        "https://archive.org/details/bub_gb_na0DAAAAcAAJ/page/n405/mode/1up"
+      ],
       "facts": [
         {
-          "person": "Clais von Rosenberg",
           "type": "generic",
-          "content": "sold land at Broich and Steinweg in Wetzauen to Burtscheid Abbey."
+          "person": "Nicolaus von Rosenberg",
+          "content": "sold land in the Bruch at Wetzschauwen and by the Steinweg to Hans van den Yseren for Burtscheid Abbey."
+        },
+        {
+          "type": "generic",
+          "person": "Nicolaus von Rosenberg",
+          "content": "renounced all claims to the land at Wetzschauwen and by the Steinweg in favour of Rikarde van Ulpich, Abbess of Burtscheid, and the Burtscheid convent."
+        },
+        {
+          "type": "generic",
+          "person": "Hans van den Yseren",
+          "content": "received land at Wetzschauwen and by the Steinweg from Nicolaus von Rosenberg for Rikarde van Ulpich, Abbess of Burtscheid, and the Burtscheid convent."
+        },
+        {
+          "type": "title",
+          "person": "Rikarde van Ulpich",
+          "personTitle": [
+            "Abbess of Burtscheid"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Hans in den Ziendehoff",
+          "content": "promised to warrant Nicolaus von Rosenberg's sale of land at Wetzschauwen and by the Steinweg to Burtscheid Abbey."
+        },
+        {
+          "type": "generic",
+          "person": "Willem Bendel van Wetzschauwen",
+          "content": "promised to warrant Nicolaus von Rosenberg's sale of land at Wetzschauwen and by the Steinweg to Burtscheid Abbey."
+        },
+        {
+          "type": "generic",
+          "person": "Wilhelm van Raide",
+          "content": "sealed the Aachen court's charter on Nicolaus von Rosenberg's sale of land to Burtscheid Abbey.",
+          "personTitle": [
+            "Richter"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Reynart van Moircken",
+          "content": "sealed the Aachen court's charter on Nicolaus von Rosenberg's sale of land to Burtscheid Abbey.",
+          "personTitle": [
+            "Schöffe"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Hans van Pont",
+          "content": "sealed the Aachen court's charter on Nicolaus von Rosenberg's sale of land to Burtscheid Abbey.",
+          "personTitle": [
+            "Schöffe"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Heinrich van der Linden",
+          "content": "sealed the Aachen court's charter on Nicolaus von Rosenberg's sale of land to Burtscheid Abbey.",
+          "personTitle": [
+            "Schöffe"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Arnold Volmer",
+          "content": "sealed the Aachen court's charter on Nicolaus von Rosenberg's sale of land to Burtscheid Abbey.",
+          "personTitle": [
+            "Schöffe"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Wernher Bertolf",
+          "content": "sealed the Aachen court's charter on Nicolaus von Rosenberg's sale of land to Burtscheid Abbey.",
+          "personTitle": [
+            "Schöffe"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Heynrich Chorus",
+          "content": "sealed the Aachen court's charter on Nicolaus von Rosenberg's sale of land to Burtscheid Abbey.",
+          "personTitle": [
+            "Schöffe"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Gerart Lewe",
+          "content": "sealed the Aachen court's charter on Nicolaus von Rosenberg's sale of land to Burtscheid Abbey.",
+          "personTitle": [
+            "Schöffe"
+          ]
         }
-      ]
+      ],
+      "summary": "Clais von Rosenberg verkauft der Abtei Burtscheid 7 Morgen Land in dem Broich und bei dem Steinweg zu Wetzauen. Mit 7 Siegeln (Aachener Schöffen).",
+      "german": "162) Wir Reichter ind Scheffene des kunnentli-\\nchen Stoels van Aychen der Namen hernae beschr.\\nsteen doen kunt allen Lüden mit diesen Bryeue ind\\nkennen offenbeirlichen dat vür vns komen ind ir-\\nschenen is Cloys van Rosenberch mit sinen gueden\\nVurraide ind Muetwillen jn reichter Zyt doe heit\\nwail doen moichte haidt vurkoicht, ind vürkeuft\\nerfligen ind ommerme johanne van den Yseren in\\nVrber ind in Behueff Vrouwe Rikarden van\\nUlpich der Abdissen zu Burtscheit, jnd des gantzen\\ngemeynen Conuentz van Burtscheit sieuen Morgen\\nLantz, der vünf Morgen Lantz gelegen sint in eyme\\nStücke in den Bruych zu Vetzschauwen by Willem\\nBendels Lantz, die vnden gelden seyszien Penninge\\nind darzu Ziende jnd der sint zween Morgen Lantz\\ngelegen by den Stenentzweich tuyschen des vürß.\\nConuentz Lants van Bürscheit, die nyet me in gel-\\nden dan Ziende, willich vürß. Lantz alzusamen nyet me\\nvnden ingilt noch besweirt in is des joirs dan also als\\nvürschr. steit, als der vürß. Cloys johann in den\\nZiendehoff ind Cloys sine elige Soene ind Willem\\nBendel van Vetzschauwen den vürß. johanne van\\nden Yseren bekant ind geloeft haint in Urber ind\\nin Behueff der vürß. Vrouwe Rikarde ind des\\nvürß. Conuentz van Burtscheit zu weren bynnen\\njoirs ind buyssen joirs ind manlich vür all jnd\\nvür eyne genante Summe Geltz dat is zu wissen,\\nvur zweyhondert ind vünf ind vünfzich Marck eyschs\\nPeymentz die der vürgen. johan van den Yseren\\nden vürschr. Cloys van wegen der vürschr. Vrouwe\\nRikarden ind des Conuentz van Burtscheit genßli-\\nchen ind zemoil wail bezailt haid, ind kent der\\nvürß. Cloys eme dar van vür vns zemoil genüech\\ngeschiet sy jnd also haidt sych der vürß. Cloys van\\nRosenberch vysgedoin Besitzunge ind Gebruychunge\\ndes vürß. Lantz ind alle des Reichtz Aensproich off\\nVorderie des he vurmoils yn dar aen gewan off\\nnoch haidt, jnd haidt dar op claclos ind zemoil\\nverzegen ind verzyt mit Munde ind mit Halme\\nerfligen ind ommerme in Urber ind zu Nütze der\\nvürschr. Vrouwe Rikarden ind des ganzen gemey-\\nnen Conuentz van Bürtscheit vortme kennen ind\\ngeläuen dy vürgen. Cloys johan Clois ind Wilhem\\nden vürß. johanne van den Yseren in Urber ind\\nin Behuef Vrouwe Rikarden vürß. ind des ganzen\\ngemeynen Conuentz van Burtscheit vürß. des vür-\\nschr. Lantz zu weren joir in Dach nae Reicht ind\\nGewoenheit der Stede van Aychen, ind alle reicht\\nAenspraiche dar van afzedoen alle Argelist vysge-\\nscheiden jnd Beheltenis den Leynheren yrs Reichtz\\njnd dis zült eyme Vrkunde der Woirheit so hain\\nwir Wilhem van Raide Richter, Reynart van\\nMoircken, johan van Pont, Heinrich van der Lin-\\nden, Arnolt Volmer, Werner Bertolf, Heynrich\\nChorus ind Gerart Lewe Scheffene des kunnentli-\\nchen Stoels van-Aychen vürschr. vmb Beden wille\\nder vürß. Partien op beiden Syden vnse Siegele\\naen diesen Brieff gehangen, de gegeuen is int joir\\nvns heren doe man schreift nae Goydtz Geburde\\ndusent dryhondert eyn ind eychtzich joir des seyszien-\\nden Daeght in den Moende Spurkille.",
+      "english": "We, the Richter and Schöffen of the venerable court of Aachen, named below, make known to all people with this letter and declare publicly that there appeared before us Nicolaus von Rosenberg, who, of his good intent and free will, in lawful time, when he well could, has sold and sells hereditarily and free of encumbrance to Hans van den Yseren, for the use and benefit of Vrouwe Rikarde van Ulpich, Abbess of Burtscheid, and of the whole convent of Burtscheid, seven morgen of land. Five of these morgen lie in one piece in the Bruch at Wetzschauwen, beside the land of Willem Bendel, and owe below sixteen pennies and in addition the tithe; the other two morgen lie by the Steinweg, between the land of the said convent of Burtscheid, and owe nothing more than the tithe. All this land is burdened or encumbered with nothing more than is stated above. Clais, Hans in den Ziendehoff, Clais his lawful son, and Willem Bendel van Wetzschauwen acknowledged and promised to Hans van den Yseren, for the use and benefit of the said Vrouwe Rikarde and the said convent of Burtscheid, to warrant it within the year and outside the year, and manfully, for a stated sum of money, namely 255 marks of Aachen currency, which Hans van den Yseren has fully and completely paid to Clais on behalf of the said Vrouwe Rikarde and the convent of Burtscheid; and Clais acknowledges before us that he is fully satisfied. Accordingly Nicolaus von Rosenberg has divested himself of possession and use of the said land and of all legal claim or demand that he formerly had or still has to it, and has renounced them without complaint and completely, with mouth and with straw, hereditarily and free of encumbrance, for the use and benefit of Vrouwe Rikarde and of the whole convent of Burtscheid. Furthermore the sureties Clais, Hans, Clais and Wilhem promise Hans van den Yseren, for the use and benefit of Vrouwe Rikarde and the whole convent of Burtscheid, to warrant the land year and day according to the law and custom of the city of Aachen, and to settle all legal claims concerning it, without deceit, saving the rights of the lords of the fief. In witness of the truth we, Wilhem van Raide, Richter, Reynart van Moircken, Hans van Pont, Heinrich van der Linden, Arnold Volmer, Wernher Bertolf, Heynrich Chorus and Gerart Lewe, Schöffen of the said court of Aachen, have, at the request of the parties on both sides, hung our seals on this letter, which was given in the year of our Lord 1381, on the sixteenth day of the month of February. [Editorial note: of the 8 seals, 2 are badly damaged.]"
     }
-  ]
+  ],
+  "transcribed": true
 }
