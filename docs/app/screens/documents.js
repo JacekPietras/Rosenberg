@@ -250,7 +250,9 @@ export function createDocumentRenderer({
         const sectionTitle = section.title || (sectionIndex === 0 ? title : 'Untitled section');
         const titleImage = section.titleImage ? imageMarkup(section.titleImage, [], { title: sectionTitle, path, showRegions: false, direct: true }) : '';
         const sectionContent = section.entries.map((entry, entryIndex) => renderEntry(entry, { title: false, image: !(entryIndex === 0 && section.titleImage), path, index: entries.indexOf(entry) })).join('');
-        const label = section.label ? `<span class="record-label">${escapeHtml(section.label)}</span>` : '';
+        const sectionLabels = (Array.isArray(section.label) ? section.label : [section.label])
+          .map((label) => String(label || '').trim()).filter(Boolean);
+        const label = sectionLabels.map((value) => `<span class="record-label">${escapeHtml(value)}</span>`).join('');
         return `<article class="document book-document"><div class="document-heading"><div><h2>${titleImage}${escapeHtml(sectionTitle)}${label}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
       }).join('');
     }
