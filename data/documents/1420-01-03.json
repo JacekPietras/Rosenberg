@@ -10,6 +10,20 @@
       ],
       "german": "Bischof Johann von Würzburg verleiht Reinhard von Hardheim ein Drittel des Zehnten zu Schweinberg, den er von Eberhard Pfale und dieser von Kunz von Rosenberg, gesessen zu Röttingen, gekauft hat. Rückvermerk: „hartheym“. Datiert 3. Januar 1420.",
       "english": "Bishop Hans of Würzburg grants Reinhard von Hartheim one third of the tithe at Schweinberg, which he had bought from Eberhard Pfale, who had bought it from Kunz von Rosenberg, resident at Röttingen. The reverse bears the note “hartheym”. Dated 3 January 1420.",
+      "mention": [
+        {
+          "person": "Hans of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
+        },
+        {
+          "person": "Reinhard von Hartheim"
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
@@ -22,7 +36,12 @@
         {
           "person": "Eberhard Pfale",
           "type": "generic",
-          "content": "sold one third of the tithe at Schweinberg to Reinhard von Hardheim."
+          "content": "sold one third of the tithe at Schweinberg to Reinhard von Hardheim.",
+          "mention": [
+            {
+              "person": "Reinhard von Hardheim"
+            }
+          ]
         },
         {
           "person": "Hans von Würzburg",
@@ -30,7 +49,12 @@
             "Bischof von Würzburg"
           ],
           "type": "generic",
-          "content": "granted Reinhard von Hardheim one third of the tithe at Schweinberg."
+          "content": "granted Reinhard von Hardheim one third of the tithe at Schweinberg.",
+          "mention": [
+            {
+              "person": "Reinhard von Hardheim"
+            }
+          ]
         }
       ],
       "img": [

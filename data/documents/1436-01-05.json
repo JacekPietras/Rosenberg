@@ -10,6 +10,14 @@
       ],
       "german": "Bischof Johann II. von Würzburg beurkundet die gütliche Entscheidung eines Streits zwischen Abt Heinrich VI. und dem Konvent von Schöntal einerseits und Hans von Adelsheim zu Bieringen andererseits über Rechte und Güter in Bieringen. Konrad Herr von Weinsberg und Konrad von Rosenberg zu Bartenstein hatten die Parteien zur Entscheidung an den Bischof verwiesen. Der Bischof regelt unter anderem Weinschank, Bauvorhaben, Wiesen- und Fischereirechte, Zehnten, Äcker, Waldweide, verschiedene Forderungen sowie die Besetzung der Pfarrei. Die Parteien sind damit geschlichtet. Ausgestellt zu Röttingen am 5. Januar 1436.",
       "english": "Bishop John II of Würzburg records the amicable settlement of a dispute over rights and properties at Bieringen between Abbot Henry VI and Schöntal Abbey on one side and Hans von Adelsheim of Bieringen on the other. Konrad, Lord of Weinsberg, and Konrad von Rosenberg of Bartenstein had referred the parties to the bishop for a decision. The bishop settles, among other matters, wine sales, construction, meadow and fishing rights, tithes, fields, woodland pasture, various claims, and the appointment of the parish priest. The dispute is thereby resolved. Issued at Röttingen on 5 January 1436.",
+      "mention": [
+        {
+          "person": "Hans von Adelsheim"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
@@ -17,7 +25,18 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "referred the dispute between Schöntal Abbey and Hans von Adelsheim over rights and property at Bieringen to Bishop Hans of Würzburg for a decision together with Konrad, Lord of Weinsberg."
+          "content": "referred the dispute between Schöntal Abbey and Hans von Adelsheim over rights and property at Bieringen to Bishop Hans of Würzburg for a decision together with Konrad, Lord of Weinsberg.",
+          "mention": [
+            {
+              "person": "Hans von Adelsheim"
+            },
+            {
+              "person": "Hans of Würzburg",
+              "personTitle": [
+                "Bishop"
+              ]
+            }
+          ]
         }
       ],
       "img": [

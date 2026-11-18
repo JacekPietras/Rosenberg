@@ -10,6 +10,26 @@
       ],
       "german": "Schreiben Graf Albrecht von Hohenlohe an Heinrich Zobel, Wilhelm von Tottenheim, Eberhard von Venningen, Wilhelm Stützel, Fritz Zobel, Jörg und Arnolt von Rosenberg, alle Ganerben zu Schüpf.",
       "english": "Letter from Count Albrecht of Hohenlohe to Heinrich Zobel, Wilhelm von Dottenheim, Eberhard von Venningen, Wilhelm Stützel, Fritz Zobel, Georg von Rosenberg and Arnold von Rosenberg, all co-heirs at Schüpf.",
+      "mention": [
+        {
+          "person": "Albrecht of Hohenlohe"
+        },
+        {
+          "person": "Heinrich Zobel"
+        },
+        {
+          "person": "Wilhelm von Dottenheim"
+        },
+        {
+          "person": "Friedrich Zobel"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Arnold von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
@@ -31,7 +51,15 @@
             "Graf"
           ],
           "type": "generic",
-          "content": "wrote to Georg and Arnold von Rosenberg and the other co-heirs at Schüpf."
+          "content": "wrote to Georg and Arnold von Rosenberg and the other co-heirs at Schüpf.",
+          "mention": [
+            {
+              "person": "Georg von Rosenberg"
+            },
+            {
+              "person": "Arnold von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

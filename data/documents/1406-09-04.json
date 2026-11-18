@@ -9,6 +9,26 @@
       ],
       "german": "Erbbestandsbrief des Arnold von Rosenberg d.J. zu Boxberg und seiner Gemahlin Christina von Handschuhsheim für Cuntz Pfister und Cuntz Fuchs zu Eiersheim über Wiesen, Gülten und Zinsen ober Massenbach.\n\nSiegel: 1) Arnold von Rosenberg, 2) Eberhard von Rosenberg (Bruder), 3, Reinhard von Uessigheim (Vetter, fehlt), 4) Cunz von Rosenberg (Vetter)",
       "english": "Deed of inheritance from Arnold von Rosenberg der Jüngere of Boxberg and his wife Christiana von Handschuhsheim for Kunz Pfister and Kunz Fuchs of Eiersheim regarding meadows, rents, and interest above Massenbach.\n\nSeal: 1) Arnold von Rosenberg, 2) Eberhard von Rosenberg (brother), 3) Reinhard von Uissigheim (kinsman, missing), 4) Kunz von Rosenberg (kinsman)",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Christiana von Handschuhsheim"
+        },
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Reinhard von Uissigheim"
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "arnold_boxberg",
@@ -17,7 +37,12 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "issued an Erbbestandsbrief for Kunz Pfister and Kunz Fuchs of Eiersheim concerning meadows, rents, and dues above Massenbach together with Christina von Handschuhsheim."
+          "content": "issued an Erbbestandsbrief for Kunz Pfister and Kunz Fuchs of Eiersheim concerning meadows, rents, and dues above Massenbach together with Christina von Handschuhsheim.",
+          "mention": [
+            {
+              "person": "Christiana von Handschuhsheim"
+            }
+          ]
         },
         {
           "person": "arnold_boxberg",

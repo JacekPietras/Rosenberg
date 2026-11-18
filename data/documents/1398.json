@@ -6,6 +6,17 @@
       "url": "https://archive.org/details/bub_gb_dnQ-AAAAYAAJ/page/n392/mode/1up",
       "german": "Hans von Rosenberg, ritter: burg und dorf Mure und ein haus zu Heidelberg, gelegen an Albrechts von Erlekeim haus.",
       "english": "Hans von Rosenberg, Ritter: Mure castle and village and a house in Heidelberg, situated next to Albrecht von Erligheim's house.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Albrecht von Erligheim"
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
@@ -29,7 +40,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "had a house in Heidelberg next to Albrecht von Erligheim’s house."
+          "content": "had a house in Heidelberg next to Albrecht von Erligheim’s house.",
+          "mention": [
+            {
+              "person": "Albrecht von Erligheim"
+            }
+          ]
         }
       ]
     }

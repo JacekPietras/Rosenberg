@@ -91,6 +91,11 @@
           ],
           "type": "generic",
           "content": "was banished by Count Rudolf IV von Wertheim from his territory for ten years.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1332-11-24"
         },
         {
@@ -121,42 +126,98 @@
           ],
           "type": "generic",
           "content": "was named in the charter concerning Arnold von Uissigheim der Junge’s banishment.",
+          "mention": [
+            {
+              "person": "Arnold von Uissigheim",
+              "personTitle": [
+                "der Junge"
+              ]
+            }
+          ],
           "date": "1332-11-24"
         },
         {
           "person": "Heinrich von Uissigheim",
           "type": "generic",
           "content": "was named in the charter concerning Arnold von Uissigheim der Junge’s banishment.",
+          "mention": [
+            {
+              "person": "Arnold von Uissigheim",
+              "personTitle": [
+                "der Junge"
+              ]
+            }
+          ],
           "date": "1332-11-24"
         },
         {
           "person": "Eberhard von Uissigheim",
           "type": "generic",
           "content": "was named in the charter concerning Arnold von Uissigheim der Junge’s banishment.",
+          "mention": [
+            {
+              "person": "Arnold von Uissigheim",
+              "personTitle": [
+                "der Junge"
+              ]
+            }
+          ],
           "date": "1332-11-24"
         },
         {
           "person": "Konrad von Uissigheim",
           "type": "generic",
           "content": "was named in the charter concerning Arnold von Uissigheim der Junge’s banishment.",
+          "mention": [
+            {
+              "person": "Arnold von Uissigheim",
+              "personTitle": [
+                "der Junge"
+              ]
+            }
+          ],
           "date": "1332-11-24"
         },
         {
           "person": "Wiprecht von Rosenberg",
           "type": "generic",
           "content": "was named in the charter concerning Arnold von Uissigheim der Junge’s banishment.",
+          "mention": [
+            {
+              "person": "Arnold von Uissigheim",
+              "personTitle": [
+                "der Junge"
+              ]
+            }
+          ],
           "date": "1332-11-24"
         },
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
           "content": "was named in the charter concerning Arnold von Uissigheim der Junge’s banishment.",
+          "mention": [
+            {
+              "person": "Arnold von Uissigheim",
+              "personTitle": [
+                "der Junge"
+              ]
+            }
+          ],
           "date": "1332-11-24"
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
           "content": "was named in the charter concerning Arnold von Uissigheim der Junge’s banishment.",
+          "mention": [
+            {
+              "person": "Arnold von Uissigheim",
+              "personTitle": [
+                "der Junge"
+              ]
+            }
+          ],
           "date": "1332-11-24"
         }
       ]
@@ -185,18 +246,33 @@
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "witnessed the confirmation of an exchange of property between Count Boppo I von Wertheim and Bronnbach.",
+          "mention": [
+            {
+              "person": "Boppe von Wertheim"
+            }
+          ],
           "date": "1178"
         },
         {
           "person": "Konrad von Uissigheim",
           "type": "generic",
           "content": "witnessed the confirmation of an exchange of property between Count Boppo I von Wertheim and Bronnbach.",
+          "mention": [
+            {
+              "person": "Boppe von Wertheim"
+            }
+          ],
           "date": "1178"
         },
         {
           "person": "Herbord von Uissigheim",
           "type": "generic",
           "content": "witnessed the confirmation of an exchange of property between Count Boppo I von Wertheim and Bronnbach.",
+          "mention": [
+            {
+              "person": "Boppe von Wertheim"
+            }
+          ],
           "date": "1178"
         },
         {
@@ -253,12 +329,22 @@
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "may have belonged to the free nobility, based on the position in the 1178 witness list, unlike Herbord von Uissigheim, a ministerial witness.",
+          "mention": [
+            {
+              "person": "Herbord von Uissigheim"
+            }
+          ],
           "date": "1178"
         },
         {
           "person": "Konrad von Uissigheim",
           "type": "generic",
           "content": "may have belonged to the free nobility, based on the position in the 1178 witness list, unlike Herbord von Uissigheim, a ministerial witness.",
+          "mention": [
+            {
+              "person": "Herbord von Uissigheim"
+            }
+          ],
           "date": "1178"
         }
       ]
@@ -326,6 +412,14 @@
           "subject": "The Uissigheim and Rosenberg lines",
           "type": "generic",
           "content": "may have separated between the 1260 attestation of Eberhard and Arnold von Uissigheim and Eberhard Rufus’s use of von Rosenberg in 1285.",
+          "mention": [
+            {
+              "person": "Eberhard von Uissigheim"
+            },
+            {
+              "person": "Arnold von Uissigheim"
+            }
+          ],
           "date": "1285"
         }
       ]
@@ -362,6 +456,11 @@
           ],
           "type": "generic",
           "content": "witnessed Count Rudolf II von Wertheim’s sale of four farms at Kirschfurt to Bronnbach.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1285-01-14"
         },
         {
@@ -371,6 +470,11 @@
           ],
           "type": "generic",
           "content": "witnessed Count Rudolf II von Wertheim’s sale of four farms at Kirschfurt to Bronnbach.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1285-01-14"
         },
         {
@@ -380,12 +484,22 @@
           ],
           "type": "generic",
           "content": "witnessed Count Rudolf II von Wertheim’s sale of four farms at Kirschfurt to Bronnbach.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1285-01-14"
         },
         {
           "person": "Friedrich Stahel",
           "type": "generic",
           "content": "witnessed Count Rudolf II von Wertheim’s sale of four farms at Kirschfurt to Bronnbach.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1285-01-14"
         },
         {
@@ -405,6 +519,11 @@
           ],
           "type": "generic",
           "content": "was named in the record of Count Rudolf II von Wertheim’s sale of a mill at Reicholzheim to Bronnbach.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1285"
         },
         {
@@ -414,6 +533,11 @@
           ],
           "type": "generic",
           "content": "was named in the record of Count Rudolf II von Wertheim’s sale of a mill at Reicholzheim to Bronnbach.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1285"
         },
         {
@@ -424,6 +548,11 @@
           ],
           "type": "generic",
           "content": "was named in the record of Count Rudolf II von Wertheim’s sale of a mill at Reicholzheim to Bronnbach.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1285"
         },
         {
@@ -433,6 +562,11 @@
           ],
           "type": "generic",
           "content": "was named in the record of Count Rudolf II von Wertheim’s sale of a mill at Reicholzheim to Bronnbach.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1285"
         }
       ],
@@ -568,12 +702,22 @@
           ],
           "type": "generic",
           "content": "sold property at Steinbach to Bronnbach with his brother Konrad von Rosenberg.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ],
           "date": "1305-10-25"
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
           "content": "sold property at Steinbach to Bronnbach with his brother Eberhard von Rosenberg.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            }
+          ],
           "date": "1305-10-25"
         },
         {
@@ -619,6 +763,11 @@
           "person": "Hans von Neudeck",
           "type": "generic",
           "content": "may be the person attested between 1340 and 1359 and called von Neudeck in 1355, whom the source presents as Adelheid von Neudeck’s minor son in 1327; his branch may have ended with him.",
+          "mention": [
+            {
+              "person": "Adelheid von Neudeck"
+            }
+          ],
           "date": "1327"
         },
         {
@@ -696,18 +845,42 @@
           "person": "Eberhard",
           "type": "generic",
           "content": "may have been a child of a brother of Eberhard von Rosenberg Rufus; the source term nepotes does not specify the exact relationship.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg",
+              "personTitle": [
+                "Rufus"
+              ]
+            }
+          ],
           "date": "1300-05-17"
         },
         {
           "person": "Arnold",
           "type": "generic",
           "content": "may have been a child of a brother of Eberhard von Rosenberg Rufus; the source term nepotes does not specify the exact relationship.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg",
+              "personTitle": [
+                "Rufus"
+              ]
+            }
+          ],
           "date": "1300-05-17"
         },
         {
           "person": "jutta_wife_of_konrad",
           "type": "generic",
           "content": "may have been a child of a brother of Eberhard von Rosenberg Rufus; the source term nepotes does not specify the exact relationship.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg",
+              "personTitle": [
+                "Rufus"
+              ]
+            }
+          ],
           "date": "1300-05-17"
         }
       ]
@@ -730,6 +903,14 @@
           "person": "Friedrich Stahel",
           "type": "generic",
           "content": "may have been a third brother of Eberhard and Arnold von Uissigheim.",
+          "mention": [
+            {
+              "person": "Eberhard von Uissigheim"
+            },
+            {
+              "person": "Arnold von Uissigheim"
+            }
+          ],
           "date": "1260"
         },
         {
@@ -880,6 +1061,14 @@
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "may have been an additional bearer of this name and an ancestor of Eberhard, [jutta_wife_of_konrad] and Arnold, the nepotes of Eberhard von Rosenberg Rufus.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg",
+              "personTitle": [
+                "Rufus"
+              ]
+            }
+          ],
           "date": "1300-05-17"
         }
       ]
@@ -947,6 +1136,11 @@
           "person": "Konrad von Brehmen",
           "type": "generic",
           "content": "witnessed Adelheid von Neudeck’s sale of income from the Rosenberg mill to Bronnbach.",
+          "mention": [
+            {
+              "person": "Adelheid von Neudeck"
+            }
+          ],
           "date": "1327"
         },
         {
@@ -957,12 +1151,22 @@
           ],
           "type": "generic",
           "content": "witnessed Adelheid von Neudeck’s sale of income from the Rosenberg mill to Bronnbach.",
+          "mention": [
+            {
+              "person": "Adelheid von Neudeck"
+            }
+          ],
           "date": "1327"
         },
         {
           "person": "Eberhard",
           "type": "generic",
           "content": "witnessed Adelheid von Neudeck’s sale of income from the Rosenberg mill to Bronnbach alongside Eberhard der Ältere.",
+          "mention": [
+            {
+              "person": "Adelheid von Neudeck"
+            }
+          ],
           "date": "1327"
         },
         {
@@ -1063,6 +1267,11 @@
           ],
           "type": "generic",
           "content": "may have ended his tenure as Vogt at Walldürn when Eberhard Rüdt was appointed Vogt of Wildenberg.",
+          "mention": [
+            {
+              "person": "Eberhard Rüd"
+            }
+          ],
           "date": "1354"
         },
         {
@@ -1153,24 +1362,56 @@
           "person": "Konrad von Rosenberg",
           "type": "generic",
           "content": "purchased the Boxberg commandery from the Franconian Johanniter bailiwick with another Konrad von Rosenberg, Eberhard von Rosenberg and Arnold von Rosenberg.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            },
+            {
+              "person": "Eberhard von Rosenberg"
+            },
+            {
+              "person": "Arnold von Rosenberg"
+            }
+          ],
           "date": "1381-05-25"
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
           "content": "purchased the Boxberg commandery from the Franconian Johanniter bailiwick with another Konrad von Rosenberg, Eberhard von Rosenberg and Arnold von Rosenberg.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            },
+            {
+              "person": "Eberhard von Rosenberg"
+            },
+            {
+              "person": "Arnold von Rosenberg"
+            }
+          ],
           "date": "1381-05-25"
         },
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
           "content": "purchased the Boxberg commandery from the Franconian Johanniter bailiwick with Arnold von Rosenberg and the two Konrads von Rosenberg.",
+          "mention": [
+            {
+              "person": "Arnold von Rosenberg"
+            }
+          ],
           "date": "1381-05-25"
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
           "content": "purchased the Boxberg commandery from the Franconian Johanniter bailiwick with Eberhard von Rosenberg and the two Konrads von Rosenberg.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            }
+          ],
           "date": "1381-05-25"
         },
         {

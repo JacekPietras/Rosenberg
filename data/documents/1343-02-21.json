@@ -103,7 +103,12 @@
             "der Franch"
           ],
           "type": "generic",
-          "content": "stood surety for Konrad von Rosenberg, der Lengenvelder, in the sale of his farm at Pfeffershoven to Abbot Herman of Kastel."
+          "content": "stood surety for Konrad von Rosenberg, der Lengenvelder, in the sale of his farm at Pfeffershoven to Abbot Herman of Kastel.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Rüdiger von Pfaffenhoven",
@@ -111,7 +116,12 @@
             "der Smid"
           ],
           "type": "generic",
-          "content": "stood surety for Konrad von Rosenberg, der Lengenvelder, in the sale of his farm at Pfeffershoven to Abbot Herman of Kastel."
+          "content": "stood surety for Konrad von Rosenberg, der Lengenvelder, in the sale of his farm at Pfeffershoven to Abbot Herman of Kastel.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Heinrich von Holnstein",
@@ -119,7 +129,12 @@
             "der Truchsess"
           ],
           "type": "generic",
-          "content": "stood surety for Konrad von Rosenberg, der Lengenvelder, in the sale of his farm at Pfeffershoven to Abbot Herman of Kastel."
+          "content": "stood surety for Konrad von Rosenberg, der Lengenvelder, in the sale of his farm at Pfeffershoven to Abbot Herman of Kastel.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Wernher",
@@ -127,7 +142,12 @@
             "der Kegelhaimer"
           ],
           "type": "generic",
-          "content": "stood surety for Konrad von Rosenberg, der Lengenvelder, in the sale of his farm at Pfeffershoven to Abbot Herman of Kastel."
+          "content": "stood surety for Konrad von Rosenberg, der Lengenvelder, in the sale of his farm at Pfeffershoven to Abbot Herman of Kastel.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Hartung von Pfaffenhoven",
@@ -135,7 +155,12 @@
             "der Sweppferman"
           ],
           "type": "generic",
-          "content": "stood surety for Konrad von Rosenberg, der Lengenvelder, in the sale of his farm at Pfeffershoven to Abbot Herman of Kastel."
+          "content": "stood surety for Konrad von Rosenberg, der Lengenvelder, in the sale of his farm at Pfeffershoven to Abbot Herman of Kastel.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ]
         }
       ]
     }

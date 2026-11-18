@@ -1,12 +1,20 @@
 {
   "date": "1496-02-21",
-  "label": ["to review", "Proposed: Czechia"],
+  "label": [
+    "to review",
+    "Proposed: Czechia"
+  ],
   "entries": [
     {
       "source": "Hardegger Urk 0484",
       "url": "https://www.monasterium.net/mom/AT-NOeLA/HA_Seefeld-HardeggerUrk/Hardegger_Urk_0484/charter",
       "german": "Heinrich Prüschenk, Freiherr zu Stettenberg, vermacht seiner Gemahlin Elisabeth, geborene von Rosenberg, das Schloss und die Herrschaft Osterburg an der Pielach. Siegler: der Aussteller, Sigmund Prüschenk und Veit Freiherr von Wolkenstein, kaiserlicher oberster Feldhauptmann\n\nSiegel: 3 Siegel",
       "english": "Heinrich Prüschenk, Freiherr zu Stettenberg, bequeaths to his wife Elisabeth, née von Rosenberg, the castle and lordship of Osterburg on the Pielach. Seals: the issuer, Sigmund Prüschenk, and Veit Freiherr von Wolkenstein, the emperor’s supreme field captain. Three seals.",
+      "mention": [
+        {
+          "person": "Elisabeth von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Heinrich Prüschenk",

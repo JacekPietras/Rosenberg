@@ -11,11 +11,45 @@
       "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
       "german": "1408 april 19 Heidelberg. Kg. Ruprecht gestattet Hans von Rosenberg, bürg und dorf zu Mure, die von der Pfalz zu lehen rühren, an Eberhard vom Hirsshorn und Conrat vom Hirsshorn, sohn Albrecht vom Hirsshorn selig, für 2400 fl. auf wiederkauf zu verkaufen.",
       "english": "1408 April 19, Heidelberg. King Ruprecht permits Hans von Rosenberg to sell, with right of redemption, Mure Castle and village, held as fiefs from the Palatinate, to Eberhard vom Hirschhorn and Conrad vom Hirschhorn, son of the late Albrecht vom Hirschhorn, for 2,400 florins.",
+      "mention": [
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Eberhard vom Hirschhorn"
+        },
+        {
+          "person": "Konrad vom Hirschhorn"
+        },
+        {
+          "person": "Albrecht vom Hirschhorn"
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "was permitted by King Ruprecht to sell Mure Castle and village, held as a fief from the Palatinate, to Eberhard and Konrad von Hirschhorn for 2,400 florins subject to repurchase."
+          "content": "was permitted by King Ruprecht to sell Mure Castle and village, held as a fief from the Palatinate, to Eberhard and Konrad von Hirschhorn for 2,400 florins subject to repurchase.",
+          "mention": [
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
+              ]
+            },
+            {
+              "person": "Eberhard von Hirschhorn"
+            },
+            {
+              "person": "Konrad von Hirschhorn"
+            }
+          ]
         }
       ]
     }

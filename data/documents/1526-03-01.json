@@ -7,11 +7,24 @@
       "url": "https://www.gda.bayern.de/gvl/document/39420708-8bc1-4e83-ac4e-fcf3539c8690",
       "german": "Albrecht von Adelsheim zu Schrozberg bietet seine Vermittlung an im Streit zwischen Rothenburg und Zeisolf von Rosenberg.",
       "english": "Albrecht von Adelsheim of Schrozberg offers his mediation in the dispute between Rothenburg and Zaisolph von Rosenberg.",
+      "mention": [
+        {
+          "person": "Albrecht von Adelsheim"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was involved in a dispute with Rothenburg for which Albrecht von Adelsheim offered mediation."
+          "content": "was involved in a dispute with Rothenburg for which Albrecht von Adelsheim offered mediation.",
+          "mention": [
+            {
+              "person": "Albrecht von Adelsheim"
+            }
+          ]
         }
       ]
     }

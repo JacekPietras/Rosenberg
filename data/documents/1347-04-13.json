@@ -6,6 +6,20 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11215152?page=72,73",
       "german": "mittelst welcher Graf Rudolf zu Wertheim, Gottfried von Bruneck und Ludwig von Hohenloch eine Sühne vermitteln zwischen dem Edeln Mann Kraft von Hohenloch, ihrem l. Oheim und Retter, einerseits, und den vesten erbern Mannen, herrn Eberhard von Rosenberg, Vogt zu Dürn, Eberhard von Rosenberg von Zimmern genannt, Eberhard und Conrad des vorgenannten Vogts Söhnen und Hans von Rosenberg andererseits.",
       "english": "by means of which Count Rudolf of Wertheim, Gotfried of Bruneck and Ludwig of Hohenloch mediate a reconciliation between the nobleman Kraft of Hohenloch, their 1st uncle and savior, on the one hand, and the staunch hereditary men, Lord Eberhard von Rosenberg, Vogt of Dürn, Eberhard von Rosenberg, called von Zimmern, Eberhard and Konrad, the aforementioned Vogt's sons, and Hans von Rosenberg on the other hand.",
+      "mention": [
+        {
+          "person": "Rudolf of Wertheim"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -13,7 +27,15 @@
             "genannt von Zimmern"
           ],
           "type": "generic",
-          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe."
+          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe.",
+          "mention": [
+            {
+              "person": "Rudolf of Wertheim"
+            },
+            {
+              "person": "Ludwig of Hohenlohe"
+            }
+          ]
         },
         {
           "person": "vogt_zu_Durn",
@@ -26,7 +48,15 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe."
+          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe.",
+          "mention": [
+            {
+              "person": "Rudolf of Wertheim"
+            },
+            {
+              "person": "Ludwig of Hohenlohe"
+            }
+          ]
         },
         {
           "person": "vogt_zu_Durn",

@@ -8,6 +8,14 @@
       "summary": "Konrad von Rosenberg zu Bartenstein ( Rosenberg zum Bartenstain ) und dessen Vetter Anselm zahlen Wilhelm von Elm ( Elma ) die Pfandsumme aus und erhalten von diesem das Amt Klingenberg ( Clingenberg ). Außerdem geben sie Bischof Johann von Brunn 1400 Gulden, so dass sich die Gesamtsumme auf 14000 Gulden erhöht, und erhalten diese auf dem Amt Klingenberg verpfändet. Von diesem Geschäft ebenfalls betroffen sind laut Nachtragsschreiber Ober- und Unterspiesheim ( Spieshaim Ober/ Nider ).",
       "german": "Darnach [gestrichen: hat] liesse gedachter Wilhelm v(on) Elma berurt ambt Clingenberg Conraten von Rosenberg zum Bartenstain und seinem veteren Anshelmen zustehn [gestrichen: lassen]. Die [gestrichen: bede gaben] zalten ime seinen pfantschilling [gestrichen: heraus geben, und daruber] bar und gaben ferner [153r] bischofe Johannsen auch 1400 fl. [gestrichen: auch entricht], welche summa zusamen traffen [gestrichen: hat] 14000 fl. Die [gestrichen: hat inen bischof] [Einfügung: verschribe er inen 1437] uff gedachtem ambt Clingenberg [gestrichen: verschriben]. Registrata in eius contractuum fo. 207 d. [Nachtragshand: Spieshaim Ober/ Nider]",
       "english": "After that, the aforementioned Wilhelm von Elm [crossed out: allowed] transferred the said Amt Klingenberg to Konrad von Rosenberg zu Bartenstein and his cousin Anselm. They paid Wilhelm his pledge sum in cash and further gave 1,400 florins to Bishop Johann, bringing the total to 14,000 florins. In 1437, Johann pledged the said Amt Klingenberg to them for that amount. The archive summary identifies the bishop as Hans von Brunn. Registered in his register of contracts, fol. 207d. Marginal addition: Ober- and Nieder-Spiesheim.",
+      "mention": [
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Hans von Brunn"
+        }
+      ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
@@ -24,12 +32,22 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "received Amt Klingenberg as a pledge jointly with his cousin Anselm von Rosenberg from Wilhelm von Elm."
+          "content": "received Amt Klingenberg as a pledge jointly with his cousin Anselm von Rosenberg from Wilhelm von Elm.",
+          "mention": [
+            {
+              "person": "Anselm von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Anselm von Rosenberg",
           "type": "generic",
-          "content": "received Amt Klingenberg as a pledge jointly with his cousin Konrad von Rosenberg zu Bartenstein from Wilhelm von Elm."
+          "content": "received Amt Klingenberg as a pledge jointly with his cousin Konrad von Rosenberg zu Bartenstein from Wilhelm von Elm.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

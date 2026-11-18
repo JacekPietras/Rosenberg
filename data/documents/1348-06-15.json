@@ -9,6 +9,14 @@
       "summary": "Die Brüder Peter, Jodok, Ulrich und Johann von Rosenberg machen sich verbindlich, die dem Stifte zu Hohenfurt von König Karl IV. verliehene Steuerfreiheit stets zu achten und unverbrüchlich zu bewahren.",
       "latin": "Opera pietatis et misericordie sollercia peruigili per nonnullos\nChristi fideles non inmerito sine quouis more dispendio debentur\nimitari, docente beato Paulo apostolo bonum facientes non deficiamus\ntempore enim suo metemus non deficientes. Ergo dum tempus habe-\nmus, operemur bonum ad omnes maxime autem ad domesticos fidei.\nOb quod nos Petrus Jodocus Vlricus et Johannes fratres de Rosen-\nberg ad vniuersorum noticiam tenore presencium volumus peruenire,\nquod attendentes naufragium labentis mundi statum et temporum\nfluxum inconstantem et incertum culmen diuinum vbilibet, prout ex-\npedit augeri, cupientes de consensu et voluntate domine genitricis\nnostre domine Katherine de Rosenberg et de maturo fidelium nostro-\nrum dilectorum conciliariorum, videlicet Buskonis de Bernharticz,\nWernheri et Przibikonis fratrum de Porzessin, Nicolai de Podnawicz,\nJesskonis de Czekow et Wlczkonis de Dobronicz concilio monaste-\nrium in Altouado Cisterciensis ordinis, in quo rex celorum et dominus\ndeuotissime colitur assidue et laudatur, quod nostre et nostrorum\nprogenitorum fundacionis existit, necnon abbatem et conuentum ip-\nsius monasterii quam plurimum nobis dilectos modernos eorumque\nsuccessores circa omnes et singulas gratias, quibus excellentissimus\ndominus noster dominus Karolus serenissimus rex Romanorum et\nBoemie rex ipsum monasterium abbatem et conuentum eorumque ho-\nmines possessiones et bona quecumque a steure regalis solucione,\nque vulgariter berna dicitur, et ab vniuersis et singulis bernis steuris\ncollectis imposicionibus precariis angariis preangariis peticionibus\nvngeltis hospitalitatibus susbsidiis et grauaminibus et oneribus qui-\nbuscumque de liberalitate regia suis patentibus litteris pure propter\ndeum intuitumque nostri obsequii ac in remedium anime domini geni-\ntoris nostri felicis memorie domini Petri de Rosenberg absoluit exe-\nmit quittauit ac perpetuo libertauit. Promittimus firmiter et sincere\nper nos heredes et successores nostros grauaminibus impedimentis\net postergacionibus quibuslibet remotis virtute presentium perpetue\net inuiolabiliter conseruare, nec quidpiam contra huiusmodi donacio-\nnis gratias vllo vmquam tempore venire facere jure siue facto. In\ncuius rei testimonium sigilla nostra et predictorum fidelium nostrorum\nBusskonis de Bernharticz, Wernhardi et Przibiconis de Porzessin,\nNicolai de Podnawitz, Jeskonis de Czekow et Wlczkonis de Dob-\nrouitz duximus appendenda. Datum in Crumbnau anno domini mille-\nsimo trecentesimo quadragesimo octauo die festi penthecostes.",
       "english": "The works of piety and mercy, which some of Christ's faithful are rightly bound to imitate with watchful diligence and without any loss of custom, as the blessed apostle Paul teaches: let us not weary in doing good, for in due time we shall reap if we do not faint. Therefore, while we have time, let us do good to all, but especially to those of the household of faith. For this reason we, Peter, Jodok, Ulrich and Johann, brothers of Rosenberg, wish it to come to the knowledge of all by the tenor of these presents that, mindful of the shipwreck of the sinking world, the unstable course of times and the uncertain summit of divine [things] everywhere, as it is expedient that [they] be increased, and desiring, with the consent and will of our lady mother, lady Katharina of Rosenberg, and on the mature counsel of our beloved faithful counsellors, namely Busko of Bernharticz, the brothers Wernher and Przibik of Porzessin, Nikolaus of Podnawicz, Jesko of Czekow and Wlczko of Dobronicz, the monastery in Altovadum [Hohenfurt] of the Cistercian order, in which the King of heaven and Lord is devoutly and continually worshipped and praised, which is of the foundation of us and our forebears, and also the abbot and convent of that monastery, our very dearly beloved, present ones and their successors, in respect of all and singular graces by which the most excellent lord, our lord Karl, most serene King of the Romans and King of Bohemia, by his open letters, out of royal liberality, purely for God's sake and in consideration of our service and for the remedy of the soul of our lord father of happy memory, lord Peter of Rosenberg, absolved, exempted, released and perpetually freed the said monastery, abbot and convent and their men, possessions and goods whatsoever from the royal tax payment, which is commonly called berna, and from all and singular bernae, taxes, levies, impositions, requests, angariae, preangariae, petitions, ungelts, hospitality dues, subsidies, burdens and charges whatsoever. We promise firmly and sincerely, for ourselves, our heirs and successors, to preserve [this] perpetually and inviolably by virtue of these presents, all burdens, hindrances and postponements removed, and not to cause anything to be done against the graces of this donation at any time, in law or in fact. In witness whereof we have had appended our seals and those of our aforesaid faithful Busko of Bernharticz, Wernhard and Przibik of Porzessin, Nikolaus of Podnawitz, Jesko of Czekow and Wlczko of Dobrouitz. Given at Krumau in the year of the Lord one thousand three hundred forty-eight, on the feast day of Pentecost.",
+      "mention": [
+        {
+          "person": "Katharina of Rosenberg"
+        },
+        {
+          "person": "Peter of Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Peter von Rosenberg",
@@ -92,22 +100,54 @@
         {
           "person": "Peter von Rosenberg",
           "type": "generic",
-          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV."
+          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV.",
+          "mention": [
+            {
+              "person": "König Karl",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         },
         {
           "person": "Jodok von Rosenberg",
           "type": "generic",
-          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV."
+          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV.",
+          "mention": [
+            {
+              "person": "König Karl",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV."
+          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV.",
+          "mention": [
+            {
+              "person": "König Karl",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         },
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV."
+          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV.",
+          "mention": [
+            {
+              "person": "König Karl",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         },
         {
           "person": "Peter von Rosenberg",

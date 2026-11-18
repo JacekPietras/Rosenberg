@@ -7,11 +7,30 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11746847",
       "german": "Hans von Rosenberg quittirt dem Burggrafen Friedrich von Nürnberg 150 Gulden. D. eod. d. (c. 1 S.)",
       "english": "Hans von Rosenberg acknowledges receipt of 150 gulden from Burgrave Friedrich von Nuremberg. Dated the same day. (With 1 seal.)",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Friedrich von Nuremberg",
+          "personTitle": [
+            "Burgrave"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "issued a quittance to Burgrave Friedrich von Nuremberg for 150 gulden."
+          "content": "issued a quittance to Burgrave Friedrich von Nuremberg for 150 gulden.",
+          "mention": [
+            {
+              "person": "Friedrich von Nuremberg",
+              "personTitle": [
+                "Burgrave"
+              ]
+            }
+          ]
         }
       ]
     }

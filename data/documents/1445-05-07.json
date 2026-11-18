@@ -9,7 +9,12 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1445_V_07/charter"
       ],
       "german": "Bischof Leonhart von Passau meldet dem Ulrich von Rosenberg, erst nach seiner Rückkehr von einem Tage zu Braunau den ,Anlass‘ in Betreff des Handels mit dem Puchperger von seinen Räthen verfassen lassen zu wollen.",
-      "english": "Bishop Leonhart of Passau informs Ulrich von Rosenberg that, only after returning from a meeting at Braunau, he will have his councillors draw up the “Anlass” (the terms for arbitration) concerning the dispute with Puchperger."
+      "english": "Bishop Leonhart of Passau informs Ulrich von Rosenberg that, only after returning from a meeting at Braunau, he will have his councillors draw up the “Anlass” (the terms for arbitration) concerning the dispute with Puchperger.",
+      "mention": [
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

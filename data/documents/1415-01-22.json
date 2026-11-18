@@ -6,16 +6,46 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3938715",
       "german": "König Sigmund erlaubt Arnold und Eberhard von Rosenberg die Ernennung von Schultheißen und Schöffen sowie die Ausübung der hohen Gerichtsbarkeit in dem Dorf Schweigern",
       "english": "King Sigmund allows Arnold von Rosenberg and Eberhard von Rosenberg to appoint mayors and lay judges as well as to exercise high jurisdiction in the village of Schweigern",
+      "mention": [
+        {
+          "person": "König Siegmund",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "arnold_boxberg",
           "type": "generic",
-          "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [eberhard_jagstberg]."
+          "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [eberhard_jagstberg].",
+          "mention": [
+            {
+              "person": "König Siegmund",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         },
         {
           "person": "eberhard_jagstberg",
           "type": "generic",
-          "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [arnold_boxberg]."
+          "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [arnold_boxberg].",
+          "mention": [
+            {
+              "person": "König Siegmund",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         }
       ]
     }

@@ -6,6 +6,14 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1724359",
       "german": "Batt Horneck von Hornberg, Amtmann zu Darmstadt, und Georg von Rosenberg, Vogt zu Heidelberg, machen einen Vergleich zwischen der Deutsch-Ordens-Kommende Mergentheim (Komtur Johann Nothaft) und den Brüdern von Rosenberg wegen Streitigkeiten über die Markscheidung zu Boxberg, Wölchingen und Bobstadt sowie über den Wald genannt die Hesbach und andere nachbarliche Streitpunkte.",
       "english": "Batt Horneck von Hornberg, Amtmann zu Darmstadt, and Georg von Rosenberg, Vogt zu Heidelberg, make a comparison between the Teuture Order Mergentheim (Komtur Hans Nothaft) and the Rosenberg brothers about the marrow division to Boxberg, Wölchingen and Bobstadt, as well as over the Wald called the Hesbach and other neighbouring points of dispute.",
+      "mention": [
+        {
+          "person": "Batt Horneck von Hornberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Hans Nothaft",
@@ -20,7 +28,12 @@
             "Vogt zu Heidelberg"
           ],
           "type": "generic",
-          "content": "settled disputes between the Mergentheim commandery of the Teutonic Order and the Rosenberg brothers concerning boundaries at Boxberg, Wölchingen, and Bobstadt, the Hesbach forest, and other neighboring matters jointly with Batt Horneck von Hornberg."
+          "content": "settled disputes between the Mergentheim commandery of the Teutonic Order and the Rosenberg brothers concerning boundaries at Boxberg, Wölchingen, and Bobstadt, the Hesbach forest, and other neighboring matters jointly with Batt Horneck von Hornberg.",
+          "mention": [
+            {
+              "person": "Batt Horneck von Hornberg"
+            }
+          ]
         },
         {
           "person": "Batt Horneck von Hornberg",
@@ -28,7 +41,12 @@
             "Amtmann zu Darmstadt"
           ],
           "type": "generic",
-          "content": "settled disputes between the Mergentheim commandery of the Teutonic Order and the Rosenberg brothers concerning boundaries at Boxberg, Wölchingen, and Bobstadt, the Hesbach forest, and other neighboring matters jointly with Georg von Rosenberg."
+          "content": "settled disputes between the Mergentheim commandery of the Teutonic Order and the Rosenberg brothers concerning boundaries at Boxberg, Wölchingen, and Bobstadt, the Hesbach forest, and other neighboring matters jointly with Georg von Rosenberg.",
+          "mention": [
+            {
+              "person": "Georg von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

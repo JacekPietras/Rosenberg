@@ -10,6 +10,26 @@
       ],
       "german": "1447 ohne Tag Thomas von Rosenberg, Ritter, Götz und Wilhelm von Tottenheim, Gebrüder, alle 3 Freischöffen der heiligen heimlichen beschlossenen Acht, stellen ein Vidimus aus über folgende Urkunde (auf Ansuchen von Jost von Venningen). Orginal Pergament, 3 Siegel anhängend 1447 Mai 4 (Do. nach Jubilate), Mosbach, Pfalzgarf Otto bei Rhein beurkundet, daß die 3 (in U 2a) genannten Deutschordenskomture vor ihm und seinen Räten erschienen sind, den Urteilsbrief König Friedrichs (U 4) vorgewiesen haben und bezeugt haben durch Eid, daß ihr Schaden in Sachen H. Übelacker sich auf 1265 fl belaufe\n\nLaufzeit: 1447\n\nUmfang: 1 U.",
       "english": "1447 without date Thomas von Rosenberg, Knight, Götz von Dottenheim and Wilhelm von Dottenheim, brothers, all 3 Freischöffen of the holy secret sworn eight, issue a vidimus regarding the following document (at the request of Jost von Venningen). Original parchment, 3 seals attached\nMay 4, 1447 (Thursday after Jubilate), Mosbach, Count Palatine Otto of the Rhine certifies that the 3 (in U 2a) named Teutonic Order commanders have appeared before him and his councillors, presented the judgment letter of King Friedrich (U 4) and testified by oath that their damage in the matter of H. Übelacker amounts to 1,265 guilders.\n\nPeriod: 1447\n\nExtent: 1 document.",
+      "mention": [
+        {
+          "person": "Thomas von Rosenberg",
+          "personTitle": [
+            "Knight"
+          ]
+        },
+        {
+          "person": "Götz von Dottenheim"
+        },
+        {
+          "person": "Wilhelm von Dottenheim"
+        },
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "King"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Thomas von Rosenberg",
@@ -17,7 +37,15 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "issued an undated certified copy with Götz and Wilhelm von Tottenheim of a charter recording the Teutonic commanders’ sworn loss of 1,265 florins at Mosbach on 4 May 1447."
+          "content": "issued an undated certified copy with Götz and Wilhelm von Tottenheim of a charter recording the Teutonic commanders’ sworn loss of 1,265 florins at Mosbach on 4 May 1447.",
+          "mention": [
+            {
+              "person": "Götz von Tottenheim"
+            },
+            {
+              "person": "Wilhelm von Tottenheim"
+            }
+          ]
         }
       ],
       "img": [

@@ -6,6 +6,11 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-199338",
       "german": "Ruprecht der Jüngste, Pfalzgraf bei Rhein, Herzog in Bayern urkundet, dass er mit Graf Johann von Wertheim überein gekommen ist, dass ihre Leute im Amt Lauda keine Todesfallabgabe entrichten sollen, bis auf Widerruf.",
       "english": "Ruprecht der Jüngere, Count Palatine of the Rhine and Duke in Bavaria, records that he has reached an agreement with Count Hans of Wertheim that their people in the Lauda district are not to pay a death duty until further notice.",
+      "mention": [
+        {
+          "person": "Hans of Wertheim"
+        }
+      ],
       "facts": [
         {
           "person": "Ruprecht",
@@ -15,7 +20,12 @@
             "Herzog in Bayern"
           ],
           "type": "generic",
-          "content": "agreed with Count Hans von Wertheim to exempt their subjects in the Amt Lauda from the death duty until further notice."
+          "content": "agreed with Count Hans von Wertheim to exempt their subjects in the Amt Lauda from the death duty until further notice.",
+          "mention": [
+            {
+              "person": "Hans von Wertheim"
+            }
+          ]
         }
       ]
     }

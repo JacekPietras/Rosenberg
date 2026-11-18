@@ -10,6 +10,14 @@
       ],
       "german": "Hans Glaßkopf, Bürger zu Mergentheim, der mit Kuntz Beheym, Bürger zu Mergentheim, wegen Meineids und Treulosigkeit gegenüber Ulrich von Lentersheim, Meister des Deutschen Ordens, und dem Komtur zu Mergentheim im Gefängnis saß und nach Vollstreckung des vom Mergentheimer Stadtgericht gefällten Todesurteils an genannten Kuntz Beheym um Verzicht auf die Verhandlung vor dem Stadtgericht gebeten hat und darauf wieder ins Gefängnis gesetzt wurde, schwört nach seiner Entlassung aus demselben Urfehde gegen genannten Meister und Komtur.\n\nLaufzeit: 1468 Juni 7 (auff den heyligen pfingst dinstag)\n\nSiegler: Junker Martin von Uissigheim (Ussikeym); Junker Arnold von Rosenberg",
       "english": "Hans Glaßkopf, citizen of Mergentheim, who was imprisoned with Kuntz Beheym, also a citizen of Mergentheim, for perjury and treachery toward Ulrich von Lentersheim, Master of the Teutonic Order, and the Komtur of Mergentheim, and after execution of the death sentence rendered by the Mergentheim city court on the said Kuntz Beheym, requested exemption from proceedings before the city court and was then returned to prison, swears after his release from it a sworn oath of loyalty (Urfehde) against the said Master and Komtur.\n\nDuration: 1468 June 7 (on Holy Tuesday)\n\nSeal: Junker Martin von Uissigheim; Junker Arnold von Rosenberg",
+      "mention": [
+        {
+          "person": "Martin von Uissigheim"
+        },
+        {
+          "person": "Arnold von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Martin von Uissigheim",
@@ -17,7 +25,12 @@
             "Junker"
           ],
           "type": "generic",
-          "content": "and Arnold von Rosenberg sealed Hans Glaßkopf’s oath of feudlessness after his release from prison at Mergentheim."
+          "content": "and Arnold von Rosenberg sealed Hans Glaßkopf’s oath of feudlessness after his release from prison at Mergentheim.",
+          "mention": [
+            {
+              "person": "Arnold von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Arnold von Rosenberg",

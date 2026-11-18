@@ -7,16 +7,55 @@
       "url": "https://www.gda.bayern.de/gvl/document/217f0b35-ec8a-4d6d-b703-58a9a1df6491",
       "german": "Schiedsbrief des Markgrafen Kasimir von Brandenburg zwischen den Vettern Zeisolf und Lorenz von Rosenberg einerseits und den Brüdern Philipp und Contz von Berlichingen sowie Wolf von Adelsheim andererseits wegen Irrungen",
       "english": "Arbitration letter of Margrave Kasimir of Brandenburg between the cousins Zaisolph von Rosenberg and Lorenz von Rosenberg on one side and the brothers Philipp and Konrad von Berlichingen as well as Wolf von Adelsheim on the other side regarding disputes",
+      "mention": [
+        {
+          "person": "Zaisolph von Rosenberg"
+        },
+        {
+          "person": "Lorenz von Rosenberg"
+        },
+        {
+          "person": "Philipp von Berlichingen"
+        },
+        {
+          "person": "Konrad von Berlichingen"
+        },
+        {
+          "person": "Wolf von Adelsheim"
+        }
+      ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "participated in an arbitration by Markgraf Kasimir of Brandenburg concerning disputes with Philipp and Contz von Berlichingen and Wolf von Adelsheim."
+          "content": "participated in an arbitration by Markgraf Kasimir of Brandenburg concerning disputes with Philipp and Contz von Berlichingen and Wolf von Adelsheim.",
+          "mention": [
+            {
+              "person": "Philipp von Berlichingen"
+            },
+            {
+              "person": "Kunz von Berlichingen"
+            },
+            {
+              "person": "Wolf von Adelsheim"
+            }
+          ]
         },
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "participated in an arbitration by Markgraf Kasimir of Brandenburg concerning disputes with Philipp and Contz von Berlichingen and Wolf von Adelsheim."
+          "content": "participated in an arbitration by Markgraf Kasimir of Brandenburg concerning disputes with Philipp and Contz von Berlichingen and Wolf von Adelsheim.",
+          "mention": [
+            {
+              "person": "Philipp von Berlichingen"
+            },
+            {
+              "person": "Kunz von Berlichingen"
+            },
+            {
+              "person": "Wolf von Adelsheim"
+            }
+          ]
         },
         {
           "person": "Zaisolph von Rosenberg",

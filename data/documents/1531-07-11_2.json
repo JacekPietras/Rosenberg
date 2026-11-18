@@ -7,6 +7,11 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2232460",
       "german": "Es wird quittirt, dach Georg von Rosenberg die Gebühren für den Empfang der Lehen gezahlt hat.",
       "english": "It is certified that Georg von Rosenberg has paid the fees for receiving the fiefs.",
+      "mention": [
+        {
+          "person": "Georg von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Georg von Rosenberg",

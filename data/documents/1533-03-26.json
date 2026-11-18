@@ -6,6 +6,11 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723969",
       "german": "Kurfürst Ludwig V. von der Pfalz schlichtet einen Streit zwischen Jörg von Rosenberg und der Bürgerschaft zu Boxberg wegen des Holzes genannt die Klingen (Revers der Gemeinde Boxberg über eine in Ausführung dieser Bestimmungen entstandene Kontroverse).",
       "english": "Elector Ludwig V of the Palatinate sets up a dispute between Georg von Rosenberg and the citizenship of Boxberg because of the wood called the sounds (reverse of the municipality of Boxberg about a controversy emerged in the version of these provisions).",
+      "mention": [
+        {
+          "person": "Georg von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Ludwig V. von der Pfalz",
@@ -13,7 +18,12 @@
             "Kurfürst"
           ],
           "type": "generic",
-          "content": "settled a dispute with Jörg von Rosenberg and the citizens of Boxberg concerning the woodland called die Klingen."
+          "content": "settled a dispute with Jörg von Rosenberg and the citizens of Boxberg concerning the woodland called die Klingen.",
+          "mention": [
+            {
+              "person": "Georg von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Georg von Rosenberg",

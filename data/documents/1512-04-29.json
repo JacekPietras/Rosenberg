@@ -6,6 +6,14 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723960",
       "german": "Friedrich von Rosenberg übergibt seinen Vettern Jörg Hansen und Eberhart von Rosenberg zu Boxberg all sein Hab und Gut.",
       "english": "Friedrich von Rosenberg hands over all his belongings to his cousin Jörg Hansen and Eberhard von Rosenberg zu Boxberg.",
+      "mention": [
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Georg Hansen",
@@ -25,7 +33,12 @@
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "transferred all his property and possessions to his cousins Jörg Hansen and Eberhard von Rosenberg zu Boxberg."
+          "content": "transferred all his property and possessions to his cousins Jörg Hansen and Eberhard von Rosenberg zu Boxberg.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

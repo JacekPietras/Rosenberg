@@ -8,11 +8,30 @@
       "summary": "Georg von Rosenberg (Jorg von Rosenberg) und Eberhard Lechner (Ebert lechner) entscheiden, dass Herr Philipp von Weinsberg (her philips von Weinsberg) Georg Truchsess von Baldersheim (Jorg truchsessen von Baldershaim) für seine Gült und Gerechtigkeit für die Mühle unter dem Reichelsberg 60 rheinische Gulden geben soll. Der Truchsess soll Philipp von Weinsberg darüber einen Kaufbrief ausstellen.",
       "german": "Anno 1490 montag nach oculi haben Jorg von Rosenberg vnd Ebert lechner ain ausspruch gethan des [gestrichen: Jorg Truchsess von Baldershaim] her philips von Weinsberg Jorg truchsessen von Baldershaim fur sein gult vnd gerechtigkait so er vf der mulen vnter Reigelberg bey dem lohlein gelegen gehabt 60 reinisch gulden geben sol vnd er truchses dem von weinsberg ein kauf brief geben sol, Recepta I Contractum Conradi fol: 184 185 such hernach am 2 blat mul bei dem lole",
       "english": "On Monday after Oculi Sunday in 1490, Georg von Rosenberg and Eberhard Lechner issued an arbitration award concerning Philipp von Weinsberg’s rent and rights in the mill below Reigelsberg near the small grove. It required Georg Truchsess von Baldersheim to pay Philipp 60 Rhenish florins and provide him with a deed of sale. Recorded in Conrad’s first register of contracts, fols. 184–185; see below, fol. 2, ‘mill by the small grove.’",
+      "mention": [
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Philipp von Weinsberg"
+        },
+        {
+          "person": "Georg Truchsess von Baldersheim"
+        }
+      ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "issued an arbitration award with Eberhard Lechner concerning rent and rights in the mill below Reigelsberg; it required Georg Truchsess von Baldersheim to pay Philipp von Weinsberg and provide him with a deed of sale."
+          "content": "issued an arbitration award with Eberhard Lechner concerning rent and rights in the mill below Reigelsberg; it required Georg Truchsess von Baldersheim to pay Philipp von Weinsberg and provide him with a deed of sale.",
+          "mention": [
+            {
+              "person": "Georg Truchsess von Baldersheim"
+            },
+            {
+              "person": "Philipp von Weinsberg"
+            }
+          ]
         }
       ],
       "img": [

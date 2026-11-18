@@ -10,6 +10,20 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-753738",
       "german": "Verkauf des Anteils am großen und kleinen Zehnten und eines Guts zu Kirchhausen an DM Eberhard von Seinsheim durch Eberhard von Angelloch, Ritter, und seine Ehefrau Anna von Rosenberg,",
       "english": "Sale of the share of the large and small tithes and an estate in Kirchhausen to DM Eberhard von Seinsheim by Eberhard von Gauangelloch, Ritter, and his wife Anna von Rosenberg,",
+      "mention": [
+        {
+          "person": "Eberhard von Seinsheim"
+        },
+        {
+          "person": "Eberhard von Gauangelloch",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Anna von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Gauangelloch",
@@ -25,12 +39,28 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "sold their share of the large and small tithes and an estate at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, jointly with his wife Anna von Rosenberg."
+          "content": "sold their share of the large and small tithes and an estate at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, jointly with his wife Anna von Rosenberg.",
+          "mention": [
+            {
+              "person": "Eberhard von Seinsheim"
+            },
+            {
+              "person": "Anna von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Anna von Rosenberg",
           "type": "generic",
-          "content": "sold their share of the large and small tithes and an estate at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, jointly with her husband Eberhard von Gauangelloch."
+          "content": "sold their share of the large and small tithes and an estate at Kirchhausen to Eberhard von Seinsheim, Deutschmeister, jointly with her husband Eberhard von Gauangelloch.",
+          "mention": [
+            {
+              "person": "Eberhard von Seinsheim"
+            },
+            {
+              "person": "Eberhard von Gauangelloch"
+            }
+          ]
         },
         {
           "person": "Eberhard von Seinsheim",

@@ -8,12 +8,28 @@
       "summary": "Bischof Gottfried Schenk von Limpurg lässt alle Güter von Ritter Anselm von Rosenberg ( anselm von Rosenberg ) einnehmen.",
       "german": "daruff liesse Bischof Gotfrid alle des anselm von Rosenbergs gutter einnehmen Kommentar: Die Datumsangabe geht aus dem vorherigen Eintrag hervor. Eine Quellenangabe fehlt.",
       "english": "Thereupon Gotfried Schenk von Limpurg, Bischof, had all the goods of Anselm von Rosenberg seized. Editorial note: The date is inferred from the preceding entry. No source citation is given.",
+      "mention": [
+        {
+          "person": "Gotfried Schenk von Limpurg",
+          "personTitle": [
+            "Bischof"
+          ]
+        },
+        {
+          "person": "Anselm von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Anselm von Rosenberg",
           "personDeceased": true,
           "type": "generic",
-          "content": "had all his goods seized by Gotfried von Limpurg."
+          "content": "had all his goods seized by Gotfried von Limpurg.",
+          "mention": [
+            {
+              "person": "Gotfried von Limpurg"
+            }
+          ]
         }
       ],
       "img": [

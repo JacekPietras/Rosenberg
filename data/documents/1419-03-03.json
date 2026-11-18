@@ -8,17 +8,65 @@
       "summary": "Bischof Johann von Brunn nimmt 5000 Gulden von Konrad von Rosenberg (Contz von Rosenberg) und verschreibt ihm im Gegenzug die Stadt und das Amt Iphofen (Jphouen) mit all seinen Gefällen und Nutzungen. Die Öffnung und die Erbhuldigung sind ausgenommen. Er löst die Verschreibung allerdings schon im nächsten Jahr wieder ab. Dazu leihen ihm Johann von Seldeneck der Ältere (Hanns von Seldenck der elter) und sein Sohn Johann von Seldeneck der Jüngere (Hanns der Junger sein sun) 3000 Gulden. Für diese 3000 Gulden verschreibt ihnen Bischof Johann einen jährlichen Zins von 300 Gulden auf der Stadt und dem Amt Iphofen.",
       "german": "[Nachtragshand am Rand: Senderr Franckenber] Im Jare 1419 am freitag vor Inuocauit name B Johanns von Brun iiiii m fl von Contzen von Rosenberg zu [unleserlich]tingen Wonhafft vnd verschribe ime darfur die stat vnd ambt Jphouen mit allen seinen gefellen vnd nutzungen die offnung, volg Erbhuldung ausgenomen, Recepta in i debitorum Brun fo 214. Aber in dem nechsten Jare hernach löset ime B Johanns wider ab vnd dartzu lihen ime Hanns von Seldenck der elter vnd Hanns der Junger sein sun iii m fl von welchen iii m fl inen B Johanns Jerlich iii c fl zins verschribe Jnen auch derwegen stat vnd ambt Jphouen einsatzt mit burgschafft actum am tag Georgii anno 1420 Recepta in i debitorum Brun fo. 255 diese verschreibung ist nit furgangen",
       "english": "On the Friday before Invocavit in 1419, Hans von Brunn, Bischof, borrowed 5,000 florins from Kunz von Rosenberg, who lived at [place illegible], and in return pledged him the town and Amt Iphofen with all their revenues and uses, reserving the right of access and hereditary homage. In the following year, the bishop redeemed this pledge. He then borrowed 3,000 florins from Hans von Seldeneck der Ältere and his son Hans der Jüngere, pledging the town and Amt Iphofen as security and promising them 300 florins in annual interest; he also provided a surety. The transcription says that this bond did not take effect. The archive summary identifies Contz as Konrad von Rosenberg and gives the Seldeneck names as Hans von Seldeneck der Ältere and Hans von Seldeneck der Jüngere. Recorded in the first register of Brun’s debts, fols. 214 and 255. Marginal addition: Sendelbach, Frankenberg.",
+      "mention": [
+        {
+          "person": "Hans von Brunn",
+          "personTitle": [
+            "Bischof"
+          ]
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "person": "Hans von Seldeneck",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Hans von Seldeneck",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "person": "Hans von Seldeneck",
+          "personTitle": [
+            "der Jüngere"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
           "content": "lent Bishop Johann von Brunn 5,000 florins and received the town and Amt Iphofen as a pledge, with the right of access and hereditary homage excepted.",
+          "mention": [
+            {
+              "person": "Hans von Brunn",
+              "personTitle": [
+                "Bishop"
+              ]
+            }
+          ],
           "date": "1419-03-03"
         },
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
           "content": "had the pledge of the town and Amt Iphofen redeemed by Bishop Johann von Brunn.",
+          "mention": [
+            {
+              "person": "Hans von Brunn",
+              "personTitle": [
+                "Bishop"
+              ]
+            }
+          ],
           "date": "1420-04-23"
         }
       ],

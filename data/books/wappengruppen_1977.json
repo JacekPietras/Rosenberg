@@ -104,6 +104,14 @@
           "subject": "The von Rosenberg branch",
           "type": "generic",
           "content": "may have begun separating by 1285, between the 1260 attestation of Eberhard and Arnold von Uissigheim and Eberhard Rufus’s use of von Rosenberg, as argued in Neumaier [1986] (data/books/neumaier_1986.json#/entries/13).",
+          "mention": [
+            {
+              "person": "Eberhard von Uissigheim"
+            },
+            {
+              "person": "Arnold von Uissigheim"
+            }
+          ],
           "date": "1285"
         }
       ]

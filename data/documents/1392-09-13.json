@@ -10,6 +10,17 @@
       "url": "https://archive.org/details/bub_gb_dnQ-AAAAYAAJ/page/n348/mode/1up",
       "german": "Ruprecht schuldet Conrad von Rosenberg, vitztum zu Heidelberg, und seiner frau Margarethe von Hirschhorn von Ruprecht I her 810 gulden, wofür derselbe Minneberg von Contze Monich, vogt zu Steinsberg, gelöst, 1000 gulden, welche der pfalzgraf des von Rosenberg tochter verschrieben, und 1000 gulden für sich, zusammen 2810 gulden, wofür ihm Minneberg als pfand bleibt.",
       "english": "Ruprecht owes Konrad von Rosenberg, Vitztum zu Heidelberg, and his wife Margaretha von Hirschhorn 810 guilders from Ruprecht I, for which the same Minneberg von Kunz Mönch, bailiff zu Steinsberg, was redeemed, 1000 guilders, which the Count Palatine gave to Rosenberg's daughter, and 1000 guilders for himself, altogether 2810 guilders, for which Minneberg remains as collateral.",
+      "mention": [
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Margaretha von Hirschhorn"
+        },
+        {
+          "person": "Kunz Mönch"
+        }
+      ],
       "facts": [
         {
           "person": "vitztum_zu_Heidelberg",
@@ -41,7 +52,12 @@
             "Vitztum zu Heidelberg"
           ],
           "type": "generic",
-          "content": "held Minneberg as security for debts owed by Ruprecht to him and Margarethe von Hirschhorn."
+          "content": "held Minneberg as security for debts owed by Ruprecht to him and Margarethe von Hirschhorn.",
+          "mention": [
+            {
+              "person": "Margaretha von Hirschhorn"
+            }
+          ]
         }
       ]
     },
@@ -52,11 +68,24 @@
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
       "german": "Pfalzgraf Ruprecht bekennt, dass er Konrad v. Rosenberg u.a. 810 Gulden schuldet, die letzterer zur Auslösung der Minneburg von Konrad Münch benutzt hat. KOCH & WILLE 1894, Nr. 5448; WÜST 1976:139",
       "english": "Pfalzgraf Ruprecht acknowledges that he owes Konrad von Rosenberg and others 810 gulden, which the latter used to redeem the Minneburg from Konrad Mönch von Rosenberg.",
+      "mention": [
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Konrad Mönch von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "was acknowledged by Pfalzgraf Ruprecht as a creditor, having used the money to redeem the Minneburg from Konrad Mönch von Rosenberg."
+          "content": "was acknowledged by Pfalzgraf Ruprecht as a creditor, having used the money to redeem the Minneburg from Konrad Mönch von Rosenberg.",
+          "mention": [
+            {
+              "person": "Konrad Mönch von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Konrad Mönch von Rosenberg",

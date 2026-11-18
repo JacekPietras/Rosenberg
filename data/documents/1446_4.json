@@ -8,11 +8,27 @@
       "summary": "Die verpfändeten Einkünfte der Bede zu Prosselsheim bringt Anselm von Rosenberg durch Tausch an sich und lässt sich dies von Bischof Gottfried Schenk von Limpurg bestätigen.",
       "german": "Dieselbig bethe hat her Anshel wechselsweis auch an sich bracht vnd daruber von B Gotfrieden von Limpurg ain verschreibung genomen Contractuum Limpurg fo 60 Kommentar: Datum aus Kopialbuch",
       "english": "The archive summary identifies the previously mentioned Bede income as revenues pledged at Prosselsheim. The transcription says that Anselm von Rosenberg also acquired this income by exchange and received a written bond confirming it from Gotfried Schenk von Limpurg, Bischof. Contractuum Limpurg, fol. 60. Date taken from the copybook.",
+      "mention": [
+        {
+          "person": "Anselm von Rosenberg"
+        },
+        {
+          "person": "Gotfried Schenk von Limpurg",
+          "personTitle": [
+            "Bischof"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Anselm von Rosenberg",
           "type": "generic",
-          "content": "also acquired the same tax revenue in turn and received a charter for it from Gotfried Schenk von Limpurg."
+          "content": "also acquired the same tax revenue in turn and received a charter for it from Gotfried Schenk von Limpurg.",
+          "mention": [
+            {
+              "person": "Gotfried Schenk von Limpurg"
+            }
+          ]
         }
       ],
       "img": [

@@ -11,7 +11,12 @@
         {
           "subject": "Boxberg",
           "type": "generic",
-          "content": "was discussed at the meeting at Oberwesel in connection with Hans Thoma von Rosenberg."
+          "content": "was discussed at the meeting at Oberwesel in connection with Hans Thoma von Rosenberg.",
+          "mention": [
+            {
+              "person": "Hans Thomas von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Hans Thomas von Rosenberg",

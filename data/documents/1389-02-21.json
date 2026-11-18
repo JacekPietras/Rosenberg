@@ -6,6 +6,14 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-199351",
       "german": "Engelhard von Rosenberg und Anne Ruchs, seine Ehefrau und Eberhard, ihr Sohn, urkunden: die Leibeigenen, die sie zu Hardheim haben, auf die ihnen Eberhard von Hardheim 120 fl. geliehen hat, hat ihnen derselben um 42 Pfd. Heller zu der vorgen. Summe abgekauft.",
       "english": "Engelhard von Rosenberg and Anne Ruchs, his wife and Eberhard, their son, certify: the serfs they have in Hardheim, for whom Eberhard von Hartheim has lent them 120 florins, have been bought from them for 42 pound hellers in addition to the above sum.",
+      "mention": [
+        {
+          "person": "Engelhard von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Hartheim"
+        }
+      ],
       "facts": [
         {
           "person": "Engelhard von Rosenberg",
@@ -30,7 +38,12 @@
         {
           "person": "Engelhard von Rosenberg",
           "type": "generic",
-          "content": "sold, with Anne Ruchs and their son Eberhard, the serfs they held at Hardheim to Eberhard von Hardheim."
+          "content": "sold, with Anne Ruchs and their son Eberhard, the serfs they held at Hardheim to Eberhard von Hardheim.",
+          "mention": [
+            {
+              "person": "Eberhard von Hardheim"
+            }
+          ]
         }
       ],
       "img": [

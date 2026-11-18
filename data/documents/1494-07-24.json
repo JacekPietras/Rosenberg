@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Trebon (Wittingau) (http://www.ceskearchivy.cz/soa-tb/index.php) (?), 1494 VII 24",
       "url": "https://www.monasterium.net/mom/AT-StiASchl/Urkunden/1494_VII_24/charter",
       "german": "Christoph Schachner, Bischof von Passau, erneuert dem Peter von Rosenberg die Lehenschaft über den Markt Haslach.",
-      "english": "Christoph Schachner, Bishop of Passau, renews Peter von Rosenberg’s feudal tenure of the market town of Haslach."
+      "english": "Christoph Schachner, Bishop of Passau, renews Peter von Rosenberg’s feudal tenure of the market town of Haslach.",
+      "mention": [
+        {
+          "person": "Peter von Rosenberg"
+        }
+      ]
     }
   ]
 }

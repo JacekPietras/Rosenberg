@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Ludwigsburg B 503 II Bü 396",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-26059",
       "german": "Enthält u.a.: Öffnungsbrief des Hennell von Angelloch und seiner Ehefrau Betz von Fechenbach gegen Kurfürst Ruprecht von der Pfalz über seinen Teil der Burg Aschhausen, 8. September 1374.",
-      "english": "Contains, among other items: an agreement by Hennell von Gauangelloch and his wife Betz von Fechenbach granting access to his part of Aschhausen Castle to Elector Ruprecht of the Palatinate, 8 September 1374."
+      "english": "Contains, among other items: an agreement by Hennell von Gauangelloch and his wife Betz von Fechenbach granting access to his part of Aschhausen Castle to Elector Ruprecht of the Palatinate, 8 September 1374.",
+      "mention": [
+        {
+          "person": "Hennell von Gauangelloch"
+        }
+      ]
     }
   ]
 }

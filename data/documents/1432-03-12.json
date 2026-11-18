@@ -10,11 +10,33 @@
       ],
       "german": "Kraft von Hohenlohe (Hohennlohe) verleiht Konrad von Rosenberg den Teil an dem Schloß zu Bartenstein, den dieser von Hans von Seldeneck gekauft hatte, sowie ein Haus und eine Hofreite zu [Röttingen], die dieser von Fritz von Geyselnheim gekauft hatte, zu Mannlehen. Sollte erwähnter Konrad von Rosenberg ohne männliche Erben bleiben, sind seine Töchtererbberechtigt. Deren Söhne solln die genannten Güter wieder zu Mannlehen empfangen.\n\nSiegler: Kraft von Hohenlohe\n\nLaufzeit: 1432 März 12 (am nehsten Mitwoch nach dem sontag Invocavit)",
       "english": "Kraft von Hohenlohe (Hohennlohe) grants Konrad von Rosenberg the share in Bartenstein Castle, which he had purchased from Hans von Seldeneck, as well as a house and farmstead in [Röttingen], which he had bought from Fritz von Geyselnheim, as a fief. Should the aforementioned Konrad von Rosenberg die without male heirs, his daughters shall be entitled to inheritance. Their sons shall receive the said properties again as a fief.\n\nSealer: Kraft von Hohenlohe\n\nValidity: March 12, 1432 (the nearest Wednesday after Sunday Invocavit)",
+      "mention": [
+        {
+          "person": "Kraft von Hohenlohe"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Hans von Seldeneck"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Kraft von Hohenlohe"
+        }
+      ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "received as a man fief from Kraft von Hohenlohe his purchased share in Bartenstein Castle and a house and farmstead in Röttingen."
+          "content": "received as a man fief from Kraft von Hohenlohe his purchased share in Bartenstein Castle and a house and farmstead in Röttingen.",
+          "mention": [
+            {
+              "person": "Kraft von Hohenlohe"
+            }
+          ]
         },
         {
           "person": "Konrad von Rosenberg",

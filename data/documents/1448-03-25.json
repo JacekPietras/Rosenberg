@@ -7,6 +7,20 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1791843",
       "german": "Heinz von Seckendorff gen. Aberdar verkauft an Konrad von Rosenberg, Ritter, und dessen Ehefrau Margarethe geb. von Seinsheim sein Viertel am großen Zehnt und die Hälfte des kleinen Zehnten zu Sindolsheim um 400 Gulden.",
       "english": "Heinrich von Seckendorf called Aberdar sells to Konrad von Rosenberg, Knight, and his wife Margarethe née von Seinsheim his quarter of the great tithe and half of the small tithe at Sindolsheim for 400 guilders.",
+      "mention": [
+        {
+          "person": "Heinrich von Seckendorf"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Knight"
+          ]
+        },
+        {
+          "person": "Margaretha von Seinsheim"
+        }
+      ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
@@ -14,7 +28,15 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "and his wife Margarethe von Seinsheim bought Heinz von Seckendorff gen. Aberdar’s quarter of the great tithe and half of the small tithe at Sindolsheim for 400 guilders."
+          "content": "and his wife Margarethe von Seinsheim bought Heinz von Seckendorff gen. Aberdar’s quarter of the great tithe and half of the small tithe at Sindolsheim for 400 guilders.",
+          "mention": [
+            {
+              "person": "Margaretha von Seinsheim"
+            },
+            {
+              "person": "Heinrich von Seckendorff"
+            }
+          ]
         }
       ],
       "img": [

@@ -9,6 +9,17 @@
       ],
       "german": "Eberhard der Jüngere und Konrad, Söhne und andere benannte Verwandte des weiland Ritters Eberhard von Rosenberg (Rosinberg) der Ältere verkaufen an die Abtei Bronnbach eine Hube in Uissigheim (Vssinkeim) mit einem jährlichen Ertrag von 6 Malter Korn und 2 Malter Weizen um 27 Pfund Heller und stellen Bürgen für diesen Verkauf.\n\nSiegler: Konrad von Uissigheim",
       "english": "Eberhard and Konrad, sons and other named relatives of the deceased Eberhard von Rosenberg, Ritter, sell to the Bronnbach Abbey a Hube in Uissigheim with an annual yield of 6 malters of grain and 2 malters of wheat for 27 pounds of Heller and provide guarantors for this sale.\n\nSiegler: Konrad von Uissigheim",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Konrad von Uissigheim"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -39,7 +50,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "sold a Hube at Uissigheim to Bronnbach Abbey together with Konrad von Rosenberg."
+          "content": "sold a Hube at Uissigheim to Bronnbach Abbey together with Konrad von Rosenberg.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Konrad von Uissigheim",

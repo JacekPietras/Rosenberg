@@ -6,6 +6,17 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723959",
       "german": "Arnold von Rosenberg beweist seine Ehefrau Margarethe von Dottenheim wegen ihrer aus dem seinerzeit von Graf Philipp von Rieneck zustande gebrachten Ehevertrag herrührenden Ansprüche auf seine Güter und Lehen zu Boxberg.",
       "english": "Arnold von Rosenberg proves his wife Margaretha von Dottenheim because of their marriage contract, which was concluded by Count Philipp von Rieneck, which was made up of his estates and fiefs in Boxberg.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Margaretha von Dottenheim"
+        },
+        {
+          "person": "Philipp von Rieneck"
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",
@@ -22,7 +33,12 @@
         {
           "person": "Margaretha von Dottenheim",
           "type": "generic",
-          "content": "held claims arising from the marriage contract arranged by Count Philipp von Rieneck."
+          "content": "held claims arising from the marriage contract arranged by Count Philipp von Rieneck.",
+          "mention": [
+            {
+              "person": "Philipp von Rieneck"
+            }
+          ]
         },
         {
           "person": "Arnold von Rosenberg",

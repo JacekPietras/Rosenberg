@@ -10,6 +10,23 @@
       ],
       "german": "Hans von Rosenberg, Amtmann zu Röttingen, und seine Ehefrau Richezza beurkunden, daß sie Dietrich von Cleen, Meister des Deutschen Ordens in deutschen und welschen Landen, und dem Amt Neuhaus (Newenhaus) Einkünfte aus Gütern zu Rengershausen, Dörzbach (Dörzbach (Dortzbach) und Laibach ? (Leupach) um 84 1/2 rheinische Gulden und 21 Pfennig verkauft haben. Bei der Beschreibung der Güter werden die Orte Althausen, Assamstadt (Aszmanstat) und Klepsau (Clepszheim) erwähnt.\n\nLaufzeit: 1523 Juni 8 (uf montag nach unserß hern fronleichnams tag)\n\nSiegler: Hans von Rosenberg, Amtmann zu Röttingen; Jörg von Rosenberg, Amtmann zu Reichelsburg (Reigelberg), Bruder und Schwager des Hans von Rosenberg",
       "english": "Hans von Rosenberg, Amtmann (bailiff) of Röttingen, and his wife Richezza certify that they have sold to Dietrich von Cleen, Master of the Teutonic Order in German and Italian lands, and to the Office of Neuhaus (Newenhaus), revenues from properties in Rengershausen, Dörzbach (Dörzbach (Dortzbach) and Laibach ? (Leupach) for 84 1/2 Rhine guilders and 21 pfennigs. In the description of the properties, the places Althausen, Assamstadt (Aszmanstat) and Klepsau (Clepszheim) are mentioned.\n\nDate: June 8, 1523 (on Monday after Our Lord's Feast of Corpus Christi)\n\nSealers: Hans von Rosenberg, Amtmann of Röttingen; Georg von Rosenberg, Amtmann of Reichelsburg (Reigelberg), brother and brother-in-law of Hans von Rosenberg",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
@@ -56,7 +73,12 @@
             "Amtmann zu Reichelsburg"
           ],
           "type": "generic",
-          "content": "sealed his brother Hans von Rosenberg’s sale of income from properties at Rengershausen, Dörzbach, and Laibach to the Teutonic Order."
+          "content": "sealed his brother Hans von Rosenberg’s sale of income from properties at Rengershausen, Dörzbach, and Laibach to the Teutonic Order.",
+          "mention": [
+            {
+              "person": "Hans von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

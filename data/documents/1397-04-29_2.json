@@ -12,6 +12,14 @@
       ],
       "german": "König Wenzel gestattet den Brüdern Arnold und Eberhard von Rosenberg in ihrem Dorf Schweigern ein Halsgericht, Stock und Galgen zu haben.\n\nLaufzeit: 1397 April 29 (1397 Quasimodogeniti)",
       "english": "King Wencesnzel allows the brothers Arnold von Rosenberg and Eberhard von Rosenberg to have a neck dish, stick and gallows in their village Schweigern.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "arnold_boxberg",

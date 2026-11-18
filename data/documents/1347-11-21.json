@@ -7,6 +7,14 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-210567",
       "german": "1347, November 21. Mittwoch nach Elsbeth - Kaiser Karl IV. verleiht Kraft von Hohenlohe die Reichsgebühren, die Eberhard von Rosenberg, Vogt zu Durne, inne hatte",
       "english": "1347, November 21, Wednesday after Elisabeth - Emperor Charles IV grants Kraft von Hohenlohe the imperial fees held by Eberhard von Rosenberg, Vogt of Dürn",
+      "mention": [
+        {
+          "person": "Kraft von Hohenlohe"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "vogt_zu_Durn",
@@ -14,7 +22,12 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "held imperial dues that Emperor Charles IV granted to Kraft von Hohenlohe."
+          "content": "held imperial dues that Emperor Charles IV granted to Kraft von Hohenlohe.",
+          "mention": [
+            {
+              "person": "Kraft von Hohenlohe"
+            }
+          ]
         }
       ]
     },
@@ -26,6 +39,14 @@
       ],
       "german": "Kaiser Karl IV. bestätigt Graf Kraft von Hohenlohe die leibeigenen Leute auf dem Ohrnwald, die er von Eberhard von Rosenberg erworben hat.",
       "english": "Emperor Charles IV confirms to Count Kraft of Hohenlohe the serfs in the Ohrnwald, which he had acquired from Eberhard von Rosenberg.",
+      "mention": [
+        {
+          "person": "Kraft of Hohenlohe"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Kraft von Hohenlohe",
@@ -54,6 +75,14 @@
       ],
       "german": "Kraft von Hohenlohe und Eberhard von Rosenberg (Original und Abschrift).",
       "english": "Kraft von Hohenlohe and Eberhard von Rosenberg (original and copy).",
+      "mention": [
+        {
+          "person": "Kraft von Hohenlohe"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000188977%2F03_0000188977_0001_3-188977-1.jpg"
@@ -68,6 +97,14 @@
       "url": "https://books.google.com/books?id=7KtAAAAAcAAJ&pg=PA50&vq=Rosenberg",
       "german": "K. Karls IV für Graf Craften von Hohenlohe, über die leib: eigene Leute auf dem Ohrenwald und am Kocher, so Eberhard von Rosenberg von des Reichs wes gen innen gehabt. Geben zu Nürnberg an Mitt: wochen noch sant Elsebethen tag 1347.",
       "english": "King Charles IV for Count Kraft of Hohenlohe, concerning the serfs in the Ohrenwald and on the Kocher river, whom Eberhard von Rosenberg had held on behalf of the Empire. Given at Nuremberg on the Wednesday after Saint Elizabeth's Day, 1347.",
+      "mention": [
+        {
+          "person": "Kraft of Hohenlohe"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "vogt_zu_Durn",
@@ -81,6 +118,14 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10323547?page=490,491",
       "german": "Wir Karl von Gots gnaden Romischer kunig ze allen zeiten merer dez richs und kunig ze Beheim bekennen und tun kunt offenlichen mit disem briefe allen den, die in sehent oder horent lesen, daz wir angesehen haben nüczen und getruwen dienst, den uns der edel unser lieber getruwer Kraft von Hohenloch geton hot und tun sol und mag, haben wir im und sinen erben ingegeben und geben in mit disem briefe alle die eygin gebüre, die uns und daz rich angehorent, die siczen und gesezzen sint uf dem Orenwalde und an dem Kochen, und mit namen alle die gebure, die Eberhart von Rosenberg vogt ze Durn vor von dez richs wegen inne hat gehabt, in welchen zenten die sint gesezzen, wie die geheizzen und genant sint. Die selben vor genanten gebure sol er und sin erben inne haben und niezzen und von unsern wegen schirmen und versprechen on geverde. Dez ze urkunde geben wir im und sinen erben disen brief versigelt mit unserm insigel. Der geben ist zu Nurnberg an mittewuchen nach sant Elsebethen tag, do man zalte noch Cristus geburt dreuczehen hundert jor dor noch in dem sybenden und vierczigstem jar, in dem andern jare unserr riche.",
       "english": "We, Karl, by God's grace Roman king, at all times increaser of the Empire, and king of Bohemia, acknowledge and make known openly with this letter to all who see or hear it read, that we have considered the useful and faithful service that the noble, our dear faithful Kraft von Hohenloch has rendered us and shall and may render; we have given and do give to him and his heirs with this letter all the proper dues that belong to us and the Empire, which are situated and located in the Ohrenwald and on the Kocher, and namely all the dues that Eberhard von Rosenberg, vogt at Dürn, formerly held on behalf of the Empire, in which tithe districts they are located, however they are called and named. He and his heirs shall have and enjoy these same aforementioned dues and shall be protected and warranted by us without deceit. In witness thereof, we give to him and his heirs this letter, sealed with our seal. Which is given at Nuremberg on the Wednesday after St. Elizabeth's day, when one counted after Christ's birth thirteen hundred years and thereafter in the seventh and fortieth year [1347], in the second year of our reign.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "vogt"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "vogt_zu_Durn",
@@ -96,7 +141,12 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "had his imperial serfs in the Ohrenwald and along the Kocher granted to Kraft von Hohenlohe and his heirs by Emperor Charles IV."
+          "content": "had his imperial serfs in the Ohrenwald and along the Kocher granted to Kraft von Hohenlohe and his heirs by Emperor Charles IV.",
+          "mention": [
+            {
+              "person": "Kraft von Hohenlohe"
+            }
+          ]
         }
       ]
     }

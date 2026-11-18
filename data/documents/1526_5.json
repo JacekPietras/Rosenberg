@@ -7,6 +7,14 @@
       "url": "https://www.gda.bayern.de/gvl/document/19266111-7971-4a6d-9339-bbf2ec7e5b33",
       "german": "Hieronymus Öfner an Albrecht von Adeltzheim. Gütlicher Vergleich im Streit zwischen Rothenburg und Zeisolf von Rosenberg.",
       "english": "Hieronymus Öfner to Albrecht von Adelsheim. Amicable settlement in the dispute between Rothenburg and Zaisolph von Rosenberg.",
+      "mention": [
+        {
+          "person": "Albrecht von Adelsheim"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",

@@ -8,6 +8,14 @@
       "summary": "Des Weiteren sind das Schloss und der Markt Haltenbergstetten (Haldenbergstetten) erblich an die von Rosenberg gekommen. Herr Zeisolf von Rosenberg (Zaisolf von Rosenberg) übergibt beides Bischof Konrad von thüngen und dem Stift Würzburg und empfängt es als Lehen zurück.",
       "german": "Furter sein die gemelten schloss vnd marckt Haldenbergstetten erblich an die von Rosenberg komen, vnd hat her Zaisolf von Rosenberg [gestrichen: xvi c fl] von B Conraden des geschlechts von Thungen genomen, vnd die bede dem stiffte W. vfgeben, zu lehen gemacht vnd entpfangen am Montag nach Conuersionis Pauli anno 1520 Recepta in primo feudorum Conradi fo 62. [Nachtragshand am Rand: Munster, Jrmershausen, Treuschwingen hoff, Reihbach hoff, haldenhoff] Kommentar: Die Nachtragshand ergänzt die Orte: Münster ( Munster ), Jrmershausen , Treuschwingen hoff , Reihbach hoff und haldenhoff .",
       "english": "Furthermore, the aforesaid castle and market of Haltenbergstetten had passed hereditarily to the von Rosenbergs. Zaisolph von Rosenberg surrendered both properties to Bishop Konrad and the bishopric of Würzburg, and received them back as fiefs on the Monday after the Conversion of St Paul, 1520. The archive summary identifies the bishop as Konrad von Thüngen. The transcription includes a struck-through amount of 1,600 florins. Recorded in the first register of Conrad’s fiefs, fol. 62. Marginal addition: Münster, Irmershausen, Treuschwingen farm, Reihbach farm, Haldenhof. Editorial note: These place names were added by a later hand.",
+      "mention": [
+        {
+          "person": "Zaisolph von Rosenberg"
+        },
+        {
+          "person": "Konrad von Thüngen"
+        }
+      ],
       "facts": [
         {
           "subject": "von Rosenberg family",
@@ -17,7 +25,15 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "surrendered Schloss and the market of Haltenbergstetten to Bishop Konrad von Thüngen and received them back as a fief."
+          "content": "surrendered Schloss and the market of Haltenbergstetten to Bishop Konrad von Thüngen and received them back as a fief.",
+          "mention": [
+            {
+              "person": "Konrad von Thüngen",
+              "personTitle": [
+                "Bishop"
+              ]
+            }
+          ]
         }
       ],
       "img": [

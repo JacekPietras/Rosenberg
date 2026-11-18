@@ -6,6 +6,11 @@
       "url": "https://archive.org/details/WuerttembergischesAusRoemischenArchiven/page/453/mode/1up",
       "german": "Urban V. reinigt Eberhard von Rosenberg, Kleriker Würzburger Diöcese, von dem Makel, den er sich durch Besitznahme der Pfarrkirche von Kocherthürn (Kochendurren) derselben Diöcese ohne Empfang der Priesterweihe zugezogen hat, legt ihm aber auf, die genannte Kirche zu verlassen. — Avinione, V. non. mart. anno I. — Sedes apostolica.",
       "english": "Urban V cleanses Eberhard von Rosenberg, a cleric of the Würzburg Diocese, of the blemish which he had incurred by taking possession of the parish church of Kocherthürn of the same diocese without having received priestly ordination, but requires him to leave the said church. — Avignon, on the 5th day before the Nones of March in the first year [of his pontificate]. — Apostolic See.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -21,7 +26,12 @@
             "Papst"
           ],
           "type": "generic",
-          "content": "cleansed Eberhard von Rosenberg of the canonical irregularity arising from his taking possession of the parish church of Kocherthürn before ordination."
+          "content": "cleansed Eberhard von Rosenberg of the canonical irregularity arising from his taking possession of the parish church of Kocherthürn before ordination.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Urban V",
@@ -29,7 +39,12 @@
             "Papst"
           ],
           "type": "generic",
-          "content": "ordered Eberhard von Rosenberg to leave the parish church of Kocherthürn."
+          "content": "ordered Eberhard von Rosenberg to leave the parish church of Kocherthürn.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            }
+          ]
         }
       ]
     },
@@ -38,6 +53,11 @@
       "url": "https://archive.org/details/WuerttembergischesAusRoemischenArchiven/page/453/mode/1up",
       "german": "Urban V. beauftragt die Äbte von Sinsheim (Sunsheim) und Amorbach und den Dekan der Kirche in Mosbach, Wormser und Würzburger Diöcese, den Eberhard von Rosenberg, Kleriker Würzburger Diöcese, nachdem er ihn von dem Makel der Besitznahme der Pfarrkirche in Kocherthürn (Kochenduren) derselben Diöcese vor Empfang der Priesterweihe gereinigt hat, in den Besitz der genannten Pfarrkirche einzuführen. — Avinione, V. non. mart. anno I. — Laudabilia probitatis.",
       "english": "Urban V commissions the abbots of Sinsheim and Amorbach and the dean of the church in Mosbach, of the Worms and Würzburg dioceses, to install Eberhard von Rosenberg, a cleric of the Würzburg Diocese, into the possession of the said parish church, after he [the Pope] has cleansed him of the blemish of taking possession of the parish church in Kocherthürn of the same diocese before receiving priestly ordination. — Avignon, on the 5th day before the Nones of March in the first year. — [For his] praiseworthy honesty.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -52,7 +72,12 @@
             "Papst"
           ],
           "type": "generic",
-          "content": "commissioned the abbots of Sinsheim and Amorbach and the dean of Mosbach to install Eberhard von Rosenberg in possession of the parish church of Kocherthürn."
+          "content": "commissioned the abbots of Sinsheim and Amorbach and the dean of Mosbach to install Eberhard von Rosenberg in possession of the parish church of Kocherthürn.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            }
+          ]
         }
       ]
     }

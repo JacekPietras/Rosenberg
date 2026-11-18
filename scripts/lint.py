@@ -138,7 +138,8 @@ def main(argv=None):
             sys.stdout.write(line)
     sys.stdout.write(title_check.stderr)
     failed = failed or title_check.returncode != 0
-    print(f"Lint found {issues} issue(s); normalized {normalized_names} English name form(s).")
+    if issues or normalized_names:
+        print(f"Lint found {issues} issue(s); normalized {normalized_names} English name form(s).")
     return 1 if failed else 0
 
 

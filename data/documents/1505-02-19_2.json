@@ -10,7 +10,12 @@
         {
           "subject": "Lauda",
           "type": "generic",
-          "content": "was sold with its castle, town, office, lordship and appurtenances by Elector Philipp of the Palatinate to Ludwig von Hutten."
+          "content": "was sold with its castle, town, office, lordship and appurtenances by Elector Philipp of the Palatinate to Ludwig von Hutten.",
+          "mention": [
+            {
+              "person": "Ludwig von Hutten"
+            }
+          ]
         }
       ],
       "img": [

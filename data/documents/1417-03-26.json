@@ -7,6 +7,17 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1743494",
       "german": "Götz von Rosenberg, Edelknecht, verkauft an Heinrich Brun von Külsheim, Dechanten des Kapitels Taubergau und Pfarrer zu Werbach, 4 Morgen Äcker und Wiesen in der Au zwischen Hochhausen und Impfingen um 40 Gulden und 25 Tournosen.\n\nLaufzeit: 1417 März 26 (1417 Freitag nach Laetare)",
       "english": "Götz von Rosenberg, squire, sells to Heinrich Brun of Külsheim, dean of the Taubergau chapter and pastor of Werbach, 4 morgens of fields and meadows in the Au between Hochhausen and Impfingen for 40 gulden and 25 tournos.\n\nDuration: March 26, 1417 (1417 Friday after Laetare)",
+      "mention": [
+        {
+          "person": "Götz von Rosenberg",
+          "personTitle": [
+            "squire"
+          ]
+        },
+        {
+          "person": "Heinrich Brun"
+        }
+      ],
       "facts": [
         {
           "person": "Götz von Rosenberg",
@@ -14,7 +25,12 @@
             "Edelknecht"
           ],
           "type": "generic",
-          "content": "sold Heinrich Brun von Külsheim four morgen of fields and meadows in the Au between Hochhausen and Impfingen for 40 gulden and 25 Tournosen."
+          "content": "sold Heinrich Brun von Külsheim four morgen of fields and meadows in the Au between Hochhausen and Impfingen for 40 gulden and 25 Tournosen.",
+          "mention": [
+            {
+              "person": "Heinrich Brun"
+            }
+          ]
         }
       ],
       "img": [

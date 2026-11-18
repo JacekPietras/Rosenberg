@@ -6,7 +6,12 @@
       "source": "HStAD, E 14 G, 2/1 (in)",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1272613",
       "german": "Landgraf Wilhelm belehnt Ruprecht Mönch v. Rosenberg mit Mönchzell, wie er es vom verstorbenen Landgrafen Heinrich III. zu Lehen trug",
-      "english": "Landgrave Wilhelm enfeoffs Ruprecht Mönch von Rosenberg with Mönchzell, which he had held in fief from the late Landgrave Heinrich III."
+      "english": "Landgrave Wilhelm enfeoffs Ruprecht Mönch von Rosenberg with Mönchzell, which he had held in fief from the late Landgrave Heinrich III.",
+      "mention": [
+        {
+          "person": "Ruprecht Mönch von Rosenberg"
+        }
+      ]
     }
   ]
 }

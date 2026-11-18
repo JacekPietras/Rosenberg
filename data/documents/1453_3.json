@@ -8,11 +8,27 @@
       "summary": "Bischof Gottfried Schenk von Limpurg löst das Amt Klingenberg ( Clingenberg ) von Konrad von Rosenbergs ( Rosenberg ) Erben wieder ab und übernimmt zusätzlich die Rückzahlung etlicher Schulden.",
       "german": "In dem jare des Heren 1453 hat B. Gotfrid von Limpurg das ambt Clingenberg von Conraden von Rosenbergs erben wider an stifft gelost und etliche schulde von derselben wegen zubezalen uf sich genomen, ut in contractuum eius fo. 181 et sequentib(us).",
       "english": "In the year 1453, Gotfried Schenk von Limpurg, Bischof, redeemed Amt Klingenberg from the heirs of Konrad von Rosenberg for the bishopric and undertook to pay some of their debts, as recorded in his register of contracts, fol. 181 and following.",
+      "mention": [
+        {
+          "person": "Gotfried Schenk von Limpurg",
+          "personTitle": [
+            "Bischof"
+          ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Gotfried Schenk von Limpurg",
           "type": "generic",
-          "content": "redeemed Amt Klingenberg from the heirs of Konrad von Rosenberg and undertook to pay some of their debts."
+          "content": "redeemed Amt Klingenberg from the heirs of Konrad von Rosenberg and undertook to pay some of their debts.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

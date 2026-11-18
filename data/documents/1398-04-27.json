@@ -7,6 +7,26 @@
       "url": "https://www.gda.bayern.de/gvl/document/d859ab00-0dd5-40be-814d-15c06bf46525",
       "german": "Aussteller 1: Rosenberg, Hans von, Ritter\nAussteller 2: Rosenberg, Elsbeth, geb. Marschalk v. Pappenheim\nSiegler 1: Rosenberg, Hans von, Ritter\nSiegler 2: Rosenberg, Elsbeth, geb. Marschalk v. Pappenheim\n\nBesiegelung/Beglaubigung: Siegel 1: verwischt\nSiegel 2: verwischt",
       "english": "Issuer 1: Hans von Rosenberg, Ritter\nIssuer 2: Elsbeth Rosenberg, née Marschalk zu Pappenheim\nSealer 1: Hans von Rosenberg, Ritter\nSealer 2: Elisabeth von Rosenberg, née Marschalk zu Pappenheim\n\nSealing/authentication: Seal 1: illegible\nSeal 2: illegible",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Elisabeth Marschalk zu Pappenheim"
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Elisabeth Marschalk zu Pappenheim"
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",

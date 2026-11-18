@@ -10,11 +10,51 @@
       ],
       "german": "Friedrich Wolfskehl, Ritter, Thoman von Rosenberg, Else, Ehefrau Friedrich Wolfskehls, Eberhard Wolfskehl und Jörg Fuchs zu Breitbach verkaufen an Konrad und Reinhard von Hardheim die ihnen von Werner von Hardheim zugefallenen Güter und Rechte zu Hardheim, Höpfingen, Bretzingen, Gerichtstetten und Betzwiesen für 1.600 Gulden rheinisch. Datiert 30. Oktober 1435.",
       "english": "Friedrich Wolfskehl, Ritter, Thomas von Rosenberg, Elisabeth, wife of Friedrich Wolfskehl, Eberhard Wolfskehl, and Jörg Fuchs of Breitbach sell to Konrad and Reinhard von Hartheim the properties and rights at Hardheim, Höpfingen, Bretzingen, Gerichtstetten, and Betzwiesen that had devolved to them from Wernher von Hartheim, for 1,600 Rhenish gulden. Dated 30 October 1435.",
+      "mention": [
+        {
+          "person": "Friedrich Wolfskehl"
+        },
+        {
+          "person": "Thomas von Rosenberg"
+        },
+        {
+          "person": "Friedrich Wolfskehl"
+        },
+        {
+          "person": "Eberhard Wolfskehl"
+        },
+        {
+          "person": "Konrad von Hartheim"
+        },
+        {
+          "person": "Reinhard von Hartheim"
+        },
+        {
+          "person": "Wernher von Hartheim"
+        }
+      ],
       "facts": [
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "sold properties and rights at Hardheim, Höpfingen, Bretzingen, Gerichtstetten, and Betzwiesen to Konrad and Reinhard von Hardheim jointly with Friedrich Wolfskehl, Ritter, Else, Eberhard Wolfskehl, and Jörg Fuchs; the properties had devolved to the sellers from Werner von Hardheim."
+          "content": "sold properties and rights at Hardheim, Höpfingen, Bretzingen, Gerichtstetten, and Betzwiesen to Konrad and Reinhard von Hardheim jointly with Friedrich Wolfskehl, Ritter, Else, Eberhard Wolfskehl, and Jörg Fuchs; the properties had devolved to the sellers from Werner von Hardheim.",
+          "mention": [
+            {
+              "person": "Konrad von Hardheim"
+            },
+            {
+              "person": "Reinhard von Hardheim"
+            },
+            {
+              "person": "Friedrich Wolfskehl"
+            },
+            {
+              "person": "Eberhard Wolfskehl"
+            },
+            {
+              "person": "Wernher von Hardheim"
+            }
+          ]
         }
       ],
       "img": [

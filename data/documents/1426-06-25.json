@@ -9,6 +9,11 @@
       ],
       "german": "Conrad Kurfürst von Mainz verkauft an Eberhard von Rosenberg 225 fl. Rente zu Bischofsheim für 4500 fl. Dienstag nach St. Johannstag. Regest frankfurt.",
       "english": "Konrad, Elector of Mainz, sells to Eberhard von Rosenberg an annuity of 225 florins from Bischofsheim for 4500 florins. Tuesday after St. John's Day. Frankfurt Register.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -26,7 +31,12 @@
       "source": "HHStAW, 333, 136",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6928888",
       "german": "Konrad Kurfürst von Mainz verkauft Eberhard von Rosenberg eine jährliche Gülte von 225 fl. zu Bischofsheim um 4500 fl.",
-      "english": "Konrad, Elector of Mainz, sells Eberhard von Rosenberg an annual payment of 225 florins from Bischofsheim for 4,500 florins."
+      "english": "Konrad, Elector of Mainz, sells Eberhard von Rosenberg an annual payment of 225 florins from Bischofsheim for 4,500 florins.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ]
     }
   ]
 }

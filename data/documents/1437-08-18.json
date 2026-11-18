@@ -6,6 +6,17 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1087417",
       "german": "Jörg Balbach und Jörg Otte, gefangengesetzt auf Betreiben des Eberhart von Rosenberg des Alten, schwören nach der auf Fürbitte des Yttel Faut von Ryneck erfolgten Entlassung aus der Haft gegen Jost von Venningen, Komtur zu Mergentheim, Urfehde. Sr.: 1) Arnold Stetenberger, 2) Hans von Tottenheim zu Messelhausen (Messelhusen)",
       "english": "Jörg Balbach and Jörg Otte, imprisoned at the instigation of Eberhard von Rosenberg der Alte, swear a pledge of allegiance to Jost von Venningen, Commander of Mergentheim, after their release from prison at the intercession of Yttel Faut von Ryneck. Sirs: 1) Arnold Stetenberger, 2) Hans von Dottenheim of Messelhausen",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Alte"
+          ]
+        },
+        {
+          "person": "Hans von Dottenheim"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",

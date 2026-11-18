@@ -9,6 +9,20 @@
       ],
       "german": "Eberhard von Rosenberg bittet den Pfalzgrafen Friedrich, seinen Vetter Ulrich von Rosenberg, dem er sein Viertel an Schloss und Stadt Boxberg, das pfälzisches Mannlehen ist, verkauft hat, damit zu belehnen; seine Vettern und Lehnserben Thomas und Jörg von Rosenberg schließen sich dieser Bite an.",
       "english": "Eberhard von Rosenberg asks Count Palatine Frederick, his cousin Ulrich von Rosenberg, to whom he has sold his district to Castle and City Boxberg, which is a Palatinate Manlehen, to sorrow; his cousins and eies Thomas von Rosenberg and Georg von Rosenberg join this bite.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        },
+        {
+          "person": "Thomas von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -31,32 +45,68 @@
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "was named as a Lehnserbe of Eberhard von Rosenberg."
+          "content": "was named as a Lehnserbe of Eberhard von Rosenberg.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was named as a Lehnserbe of Eberhard von Rosenberg."
+          "content": "was named as a Lehnserbe of Eberhard von Rosenberg.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "sold his quarter of Boxberg Castle and town to Ulrich von Rosenberg."
+          "content": "sold his quarter of Boxberg Castle and town to Ulrich von Rosenberg.",
+          "mention": [
+            {
+              "person": "Ulrich von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "asked Count Palatine Friedrich to enfeoff Ulrich von Rosenberg with the quarter of Boxberg Castle and town that he had sold as a Palatine Mannlehen."
+          "content": "asked Count Palatine Friedrich to enfeoff Ulrich von Rosenberg with the quarter of Boxberg Castle and town that he had sold as a Palatine Mannlehen.",
+          "mention": [
+            {
+              "person": "Ulrich von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "joined Eberhard von Rosenberg’s petition for Ulrich von Rosenberg to receive the enfeoffment of the quarter of Boxberg Castle and town."
+          "content": "joined Eberhard von Rosenberg’s petition for Ulrich von Rosenberg to receive the enfeoffment of the quarter of Boxberg Castle and town.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            },
+            {
+              "person": "Ulrich von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "joined Eberhard von Rosenberg’s petition for Ulrich von Rosenberg to receive the enfeoffment of the quarter of Boxberg Castle and town."
+          "content": "joined Eberhard von Rosenberg’s petition for Ulrich von Rosenberg to receive the enfeoffment of the quarter of Boxberg Castle and town.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            },
+            {
+              "person": "Ulrich von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

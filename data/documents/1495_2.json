@@ -7,6 +7,14 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10598719",
       "german": "Beteiligung eines Knechtes des Ritters Georg von Rosenberg bei einem Raub von Dorckelweil",
       "english": "A servant of Ritter Georg von Rosenberg was involved in a robbery at Dorckelweil.",
+      "mention": [
+        {
+          "person": "Georg von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
+      ],
       "facts": [
         {
           "subject": "A servant of Ritter Georg von Rosenberg",

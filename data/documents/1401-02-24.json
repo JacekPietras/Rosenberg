@@ -10,6 +10,20 @@
       ],
       "german": "König Rupertus weiset die Stadt Schweinfurt zum Gehorsam gegen den von Ihm zum Reichsvogt und Amtmann daselbst ernannten Arnolt von Rosenberg den ältern an, C.",
       "english": "King Ruprecht instructs the city of Schweinfurt to obedience towards Arnold von Rosenberg der Ältere, Reichsvogt and Amtmann zu Schweinfurt, appointed by him, C.",
+      "mention": [
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",
@@ -19,7 +33,15 @@
             "Amtmann zu Schweinfurt"
           ],
           "type": "generic",
-          "content": "was appointed by King Ruprecht."
+          "content": "was appointed by King Ruprecht.",
+          "mention": [
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         },
         {
           "person": "Arnold von Rosenberg",
@@ -29,7 +51,15 @@
             "Amtmann zu Schweinfurt"
           ],
           "type": "generic",
-          "content": "was the subject of King Ruprecht’s order directing Schweinfurt to obey him."
+          "content": "was the subject of King Ruprecht’s order directing Schweinfurt to obey him.",
+          "mention": [
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -45,7 +75,12 @@
         "https://www.digitale-sammlungen.de/de/view/bsb00009261"
       ],
       "german": "1401 Februar 24, Nürnberg. Teilt der Stadt Schweinfurt mit, dass er Arnolt von Rosenberg bis auf Widerruf zu seinem und des Reichs Vogt und Amtmann daselbst ernannt hat und befiehlt, diesem zu gehorchen.",
-      "english": "1401 February 24, Nuremberg. He informs the city of Schweinfurt that he has appointed Arnold von Rosenberg as his and the Empire’s Vogt and Amtmann there until revoked, and orders the city to obey him."
+      "english": "1401 February 24, Nuremberg. He informs the city of Schweinfurt that he has appointed Arnold von Rosenberg as his and the Empire’s Vogt and Amtmann there until revoked, and orders the city to obey him.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -13,6 +13,23 @@
       ],
       "german": "Ludwig Pfalzgraf bei Rhein und Herzog in Bayern, Kurfürst, der zugleich seinen Bruder Herzog Friedrich vertritt, belehnt nach dem Tode des Ritters Konrad von Rosenberg den Lorenz von Rosenberg, zugleich für die Gebrüder Wolf, Christof, Ludwig und Zeisolf von Rosenberg, seine Vettern, mit einem Viertel der Stadt Aub im gleichen Umfang wie dies Ritter Konrad und seine Voreltern von der Pfalz zu Mannlehen trugen, nachdem dieses Viertel den Vettern von Rosenberg erblich zufiel. Kurfürst Ludwigs und des mit ihm gemeinsam regierenden Bruders Friedrich Rechte bleiben hierdurch ebenso unberührt wie diejenigen ihrer Leute sowie Dritter. Die Vettern von Rosenberg und ihre Lehnserben haben das Lehen in allen gegebenen Fällen erneut zu Lehen zu nehmen. Fällt das Lehen einem der Pfalzgrafen bei Rhein durch Teilung alleine zu, so haben die Vettern von Rosenberg oder deren Lehnserben das Lehen von dem jeweiligen Lehnsherrn zu Lehen zu nehmen. In jedem Falle sind die üblichen Lehnspflichten zu erfüllen. - Kurfürst Ludwig bestätigt den durch Ludwig, zugleich für seine Vettern, geleisteten Lehnseid. -\n\nSiegler: der Aussteller. - Uff mitwoch nach dem sontag Misericordia domini, Heidelberg.\n\nAusf., Perg., Sg. besch. - Nr. 1035.\n\nReg. Nr. 1087",
       "english": "Ludwig, Count Palatine of the Rhine and Duke in Bavaria, Elector, who at the same time represents his brother Duke Friedrich, after the death of Knight Konrad von Rosenberg, enfeoffs Lorenz von Rosenberg, simultaneously on behalf of the brothers Wolf, Christof, Ludwig von Rosenberg and Zaisolph von Rosenberg, his cousins, with one quarter of the town of Aub in the same extent as Knight Konrad and his ancestors held from the Palatinate as a Mannlehen (feudal tenure), since this quarter fell to the cousins of Rosenberg by inheritance. The rights of Elector Ludwig and of his brother Friedrich who rules jointly with him remain hereby equally undisturbed, as do those of their retainers and of third parties. The cousins of Rosenberg and their feudal heirs are to take possession of the fief anew in all cases that arise. Should the fief fall exclusively to one of the Counts Palatine of the Rhine through division, then the cousins of Rosenberg or their feudal heirs are to take the fief from the respective feudal lord. In every case the customary feudal duties are to be fulfilled. - Elector Ludwig confirms the feudal oath rendered by Ludwig, simultaneously on behalf of his cousins. -\n\nSeal: the issuer. - On Wednesday after the Sunday Misericordia domini, Heidelberg.\n\nOriginal, parchment, seal appended. - No. 1035.\n\nReg. No. 1087",
+      "mention": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Knight"
+          ]
+        },
+        {
+          "person": "Lorenz von Rosenberg"
+        },
+        {
+          "person": "Ludwig von Rosenberg"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Lorenz von Rosenberg",
@@ -23,7 +40,12 @@
         {
           "person": "Wolf von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg."
+          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg.",
+          "mention": [
+            {
+              "person": "Lorenz von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Lorenz von Rosenberg",
@@ -34,7 +56,12 @@
         {
           "person": "Christoph von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg."
+          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg.",
+          "mention": [
+            {
+              "person": "Lorenz von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Wolf von Rosenberg",
@@ -50,7 +77,12 @@
         {
           "person": "Ludwig von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg."
+          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg.",
+          "mention": [
+            {
+              "person": "Lorenz von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Wolf von Rosenberg",
@@ -66,7 +98,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg."
+          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate, represented by Lorenz von Rosenberg.",
+          "mention": [
+            {
+              "person": "Lorenz von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Wolf von Rosenberg",
@@ -76,7 +113,24 @@
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "received the quarter of Aub as a fief on behalf of his cousins Wolf, Christoph, Ludwig, and Zaisolph von Rosenberg after the death of Konrad von Rosenberg."
+          "content": "received the quarter of Aub as a fief on behalf of his cousins Wolf, Christoph, Ludwig, and Zaisolph von Rosenberg after the death of Konrad von Rosenberg.",
+          "mention": [
+            {
+              "person": "Wolf von Rosenberg"
+            },
+            {
+              "person": "Christoph von Rosenberg"
+            },
+            {
+              "person": "Ludwig von Rosenberg"
+            },
+            {
+              "person": "Zaisolph von Rosenberg"
+            },
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Konrad von Rosenberg",

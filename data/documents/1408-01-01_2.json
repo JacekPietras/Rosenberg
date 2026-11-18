@@ -6,7 +6,12 @@
       "source": "StadtA Winterthur, URK 425., 8054",
       "url": "https://www.monasterium.net/mom/CSGXIII/8054/charter",
       "german": "Abt Kuno von St. Gallen verspricht Rudolf von Rosenberg, ihn für Schäden als Mitschuldner gegenüber Hans von Tengen und seiner Gemahlin schadlos zu halten.",
-      "english": "Abbot Kuno of St. Gall promises Rudolf von Rosenberg to hold him harmless for damages as a co-obligor toward Hans von Tengen and his wife."
+      "english": "Abbot Kuno of St. Gall promises Rudolf von Rosenberg to hold him harmless for damages as a co-obligor toward Hans von Tengen and his wife.",
+      "mention": [
+        {
+          "person": "Rudolf von Rosenberg"
+        }
+      ]
     }
   ]
 }

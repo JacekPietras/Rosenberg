@@ -10,6 +10,11 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97876",
       "german": "Balthasar Kettel verkauft an Arnold von Rosenberg für 540 fl. seinen Teil am Dorf Buch am Ahorn mit dem Burgstall und ein Viertel am Gericht daselbst",
       "english": "Balthasar Kettel sells to Arnold von Rosenberg for 540 florins his share of the village Buch am Ahorn with the castle mound and one quarter of the court there",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",

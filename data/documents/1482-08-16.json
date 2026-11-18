@@ -7,16 +7,49 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1702649",
       "german": "Jörg von Rosenberg, Wilhelm Rüdt der Kurze, Kilian von Berlichingen, Jörg Hund und Konrat von Rosenberg schlichten einen Streit zwischen Michael und Arnold von Rosenberg wegen der Erbteilung der Güter zu Schüpf, Schillingstadt, Boxberg, Rosenberg etc.\n\nLaufzeit: 1482 August 16 (off freitag nach assumpcionis Marie)",
       "english": "Georg von Rosenberg, Wilhelm Rüdt der Kurze, Kilian von Berlichingen, Jörg Hund and Konrat von Rosenberg settle a dispute between Michael von Rosenberg and Arnold von Rosenberg regarding the division of inherited property at Schüpf, Schillingstadt, Boxberg, Rosenberg, etc.\n\nDuration: 1482 August 16 (on Friday after Assumption of Mary)",
+      "mention": [
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Wilhelm Rüd"
+        },
+        {
+          "person": "Kilian von Berlichingen"
+        },
+        {
+          "person": "Michael von Rosenberg"
+        },
+        {
+          "person": "Arnold von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "helped settle a dispute between Michael and Arnold von Rosenberg over the division of their inherited property at Schüpf, Schillingstadt, Boxberg, Rosenberg and elsewhere."
+          "content": "helped settle a dispute between Michael and Arnold von Rosenberg over the division of their inherited property at Schüpf, Schillingstadt, Boxberg, Rosenberg and elsewhere.",
+          "mention": [
+            {
+              "person": "Michael von Rosenberg"
+            },
+            {
+              "person": "Arnold von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "helped settle a dispute between Michael and Arnold von Rosenberg over the division of their inherited property at Schüpf, Schillingstadt, Boxberg, Rosenberg and elsewhere."
+          "content": "helped settle a dispute between Michael and Arnold von Rosenberg over the division of their inherited property at Schüpf, Schillingstadt, Boxberg, Rosenberg and elsewhere.",
+          "mention": [
+            {
+              "person": "Michael von Rosenberg"
+            },
+            {
+              "person": "Arnold von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

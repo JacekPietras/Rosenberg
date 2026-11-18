@@ -9,6 +9,26 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723838",
       "german": "Arnold von Rosenberg und seine Ehefrau Christine von Handschuhsheim verkaufen ihr Viertel an Boxberg, das sie von dem Ritter Konrad von Rosenberg gekauft hatten, um 6.500 Gulden an ihre Söhne Ulrich und Jörg von Rosenberg.",
       "english": "Arnold von Rosenberg and his wife Christiana von Handschuhsheim sell their district to Boxberg, which they had bought from Konrad von Rosenberg, Ritter, at 6,500 guilders to their sons Ulrich von Rosenberg and Georg von Rosenberg.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Christiana von Handschuhsheim"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "arnold_boxberg",
@@ -45,22 +65,66 @@
         {
           "person": "arnold_boxberg",
           "type": "generic",
-          "content": "sold their quarter of Boxberg to their sons Ulrich and Jörg von Rosenberg together with his wife Christine von Handschuhsheim."
+          "content": "sold their quarter of Boxberg to their sons Ulrich and Jörg von Rosenberg together with his wife Christine von Handschuhsheim.",
+          "mention": [
+            {
+              "person": "Ulrich von Rosenberg"
+            },
+            {
+              "person": "Georg von Rosenberg"
+            },
+            {
+              "person": "Christiana von Handschuhsheim"
+            }
+          ]
         },
         {
           "person": "Christiana von Handschuhsheim",
           "type": "generic",
-          "content": "sold their quarter of Boxberg to their sons Ulrich and Jörg von Rosenberg together with her husband Arnold von Rosenberg."
+          "content": "sold their quarter of Boxberg to their sons Ulrich and Jörg von Rosenberg together with her husband Arnold von Rosenberg.",
+          "mention": [
+            {
+              "person": "Ulrich von Rosenberg"
+            },
+            {
+              "person": "Georg von Rosenberg"
+            },
+            {
+              "person": "Arnold von Rosenberg"
+            }
+          ]
         },
         {
           "person": "arnold_boxberg",
           "type": "generic",
-          "content": "had previously bought their quarter of Boxberg from Konrad von Rosenberg, Ritter, together with his wife Christine von Handschuhsheim."
+          "content": "had previously bought their quarter of Boxberg from Konrad von Rosenberg, Ritter, together with his wife Christine von Handschuhsheim.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg",
+              "personTitle": [
+                "Ritter"
+              ]
+            },
+            {
+              "person": "Christiana von Handschuhsheim"
+            }
+          ]
         },
         {
           "person": "Christiana von Handschuhsheim",
           "type": "generic",
-          "content": "had previously bought their quarter of Boxberg from Konrad von Rosenberg, Ritter, together with her husband Arnold von Rosenberg."
+          "content": "had previously bought their quarter of Boxberg from Konrad von Rosenberg, Ritter, together with her husband Arnold von Rosenberg.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg",
+              "personTitle": [
+                "Ritter"
+              ]
+            },
+            {
+              "person": "Arnold von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

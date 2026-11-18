@@ -7,11 +7,33 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5532291",
       "german": "Kurfürst Philipp von der Pfalz entscheidet zwischen Johann (Johansen) zu Heideck und Konrad (Cuncze) von Berlichingen im Streit über etliche mündliche und schriftlicher Behauptungen Konrads, mit der dieser zur Zeit des Zwists (handel) mit Georg (Jorg) von Rosenberg den Johann von Heideck, als beide sich im Feld begegneten, an Ehre und Leumund (glimpf) beleidigt haben soll. Konrad hat vor den Räten zu Heidelberg öffentlich bekannt, dass Johann an jenem Tag, an dem Georg von Rosenberg auf sie im Felde stieß, sich tapfer und redlich gehalten und mit dem Schwert verteidigt hat. Von anderen Worten seinerseits wüsste Konrad nichts, schon gar nicht wolle er Johann an Ehre und Leumund verletzen. Damit erachtet der Pfalzgraf Johann als für entschuldigt an und entscheidet, dass keine Verletzung an Ehre und Leumund vorliegt.\n\nLaufzeit: 1477 September 11 (uff dornstag nach nativitatis Marie)\n\nSiegler: Kurfürst Philipp von der Pfalz (aufgedrücktes Hofgerichtsiegel)",
       "english": "Elector Philip of the Palatinate decides the dispute between Johann zu Heideck and Konrad von Berlichingen concerning various oral and written allegations made by Konrad. During the time of the dispute with Georg von Rosenberg, Konrad is said to have insulted Johann's honor and reputation when the two encountered each other in the field. Before the councillors at Heidelberg, Konrad publicly acknowledged that on the day Georg von Rosenberg came upon them in the field, Johann had conducted himself bravely and honorably and defended himself with his sword. Konrad knew of no other words on his part, and certainly did not wish to injure Johann's honor and reputation. The Count Palatine therefore considers Johann exonerated and rules that no injury to his honor and reputation occurred.\n\nDate: 11 September 1477 (Thursday after the Nativity of Mary).\n\nSeal: Elector Philip of the Palatinate (impressed seal of the Court of Justice).",
+      "mention": [
+        {
+          "person": "Hans zu heideck"
+        },
+        {
+          "person": "Konrad von Berlichingen"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "encountered Johann zu Heideck and Konrad von Berlichingen in the field during a dispute."
+          "content": "encountered Johann zu Heideck and Konrad von Berlichingen in the field during a dispute.",
+          "mention": [
+            {
+              "person": "Hans zu heideck"
+            },
+            {
+              "person": "Konrad von Berlichingen"
+            }
+          ]
         }
       ],
       "img": [

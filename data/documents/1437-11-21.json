@@ -7,6 +7,17 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1791842",
       "german": "Ulrich von Rosenberg d. J. verkauft an Hans Rüdt von Bödigheim zu Eberstadt sein Viertel am großen und kleinen Zehnt zu Sindolsheim um 400 Gulden.\n\nLaufzeit: 1437 November 21 (1437 Donnerstag vor Katharina)",
       "english": "Ulrich von Rosenberg the Younger sells to Hans Rüdt von Bödigheim of Eberstadt his quarter share in the great and small tithes at Sindolsheim for 400 guilders.\n\nTime span: November 21, 1437 (1437 Thursday before St. Catherine's Day)",
+      "mention": [
+        {
+          "person": "Ulrich von Rosenberg",
+          "personTitle": [
+            "the Younger"
+          ]
+        },
+        {
+          "person": "Hans Rüd von Bödigheim"
+        }
+      ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
@@ -14,7 +25,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "sold his quarter share in the great and small tithes at Sindolsheim to Hans Rüdt von Bödigheim zu Eberstadt."
+          "content": "sold his quarter share in the great and small tithes at Sindolsheim to Hans Rüdt von Bödigheim zu Eberstadt.",
+          "mention": [
+            {
+              "person": "Hans Rüd von Bödigheim"
+            }
+          ]
         }
       ],
       "img": [

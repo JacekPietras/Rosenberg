@@ -7,6 +7,20 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-114202",
       "german": "Kunz von Rosenberg, gesessen zu Röttingen bekennt, dass er das Schloss Reigelsberg, das er von Konrad von Weinsberg erkauft hat, an Konrad von Rosenberg d.Ä. um 7.000 Gulden weiterverkauft habe.\n\nLaufzeit: 22. Febr. 1418, ohne Ausstellungsort\n\nUmfang: 1 Urkunde",
       "english": "Kunz von Rosenberg, resident of Röttingen, acknowledges that he has resold the castle of Reigelsberg, which he purchased from Konrad von Weinsberg, to Konrad von Rosenberg the Elder for 7,000 gulden.\n\nDuration: February 22, 1418, without place of issue\n\nExtent: 1 charter",
+      "mention": [
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "person": "Konrad von Weinsberg"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "the Elder"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
@@ -14,7 +28,18 @@
             "zu Röttingen"
           ],
           "type": "generic",
-          "content": "sold Reigelsberg Castle, which he had bought from Konrad von Weinsberg, to Konrad von Rosenberg der Ältere for 7,000 gulden."
+          "content": "sold Reigelsberg Castle, which he had bought from Konrad von Weinsberg, to Konrad von Rosenberg der Ältere for 7,000 gulden.",
+          "mention": [
+            {
+              "person": "Konrad von Weinsberg"
+            },
+            {
+              "person": "Konrad von Rosenberg",
+              "personTitle": [
+                "der Ältere"
+              ]
+            }
+          ]
         }
       ]
     }

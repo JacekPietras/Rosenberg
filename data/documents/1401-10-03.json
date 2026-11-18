@@ -12,6 +12,11 @@
       ],
       "german": "1401 Oktober 3, Clusen unter Brixen. Verleiht Hans von Rosenberg den zehenden cleyne und grosse in dem dorffe Lore zuschen Rotenburg an der Tuber und Insingen gelegen, der ledig worden ist. Or. Nürnberg, Kr.-A., München, R.-A. Lehenakten. Copb. 1a, 36b. Wien, RR. B. Chmel, Reg. Rup. nr. 988.",
       "english": "1401 October 3, Clusen below Brixen. He grants Hans von Rosenberg the small and great tithes in the village of Lore, between Rothenburg an der Tauber and Insingen, which had become vacant. Original: Nuremberg, Kreisarchiv, Munich, Reichsarchiv, feudal files; copybook 1a, fol. 36b; Vienna, Reichsregister B; Chmel, Regesta Ruperti no. 988.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
@@ -19,7 +24,15 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "received the small and great tithes in Lohr as a fief from King Ruprecht."
+          "content": "received the small and great tithes in Lohr as a fief from King Ruprecht.",
+          "mention": [
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -28,6 +41,14 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11746847",
       "german": "Ruprecht römischer König belehnt Hans von Rosenberg Ritter, mit dem grossen und kleinen Zehenden in dem Dorfe Lor zwischen Rotenburg an der Tauber und Insingen. G. zu Botzen auf den Donnerstag nach sant Franciscen des heiligen Bichterstag.",
       "english": "Ruprecht, King of the Romans, enfeoffs Hans von Rosenberg, Ritter, with the great and small tithes in the village of Lor between Rothenburg an der Tauber and Insingen. Given at Bolzano on the Thursday after the day of St. Francis the holy confessor.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
@@ -35,7 +56,15 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was enfeoffed by King Ruprecht with the great and small tithes in the village of Lor between Rothenburg an der Tauber and Insingen."
+          "content": "was enfeoffed by King Ruprecht with the great and small tithes in the village of Lor between Rothenburg an der Tauber and Insingen.",
+          "mention": [
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         }
       ]
     }

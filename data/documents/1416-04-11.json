@@ -8,11 +8,54 @@
       "summary": "Bischof Johann von Brunn vergleicht sich mit dem Ritter Heinrich von Sickingen (Hainrich von Sickingen Ritter), Hans Truchsess von Baldersheim (Hansen truchsessen) und Konrad von Rosenberg (Conzen von Rosenberg) über einen Kauf von 10400 Gulden Pfandsumme auf das Amt und die Stadt Röttingen.",
       "german": "Volgend anno 1416 am palm abent hat B. Johans von Brun sich eines Kaufs vmb Burg vnd Stat Rottingen vnd dem ambt mit Hainrich von Sickingen Ritter, Hansen truchsessen vnd Conzen von Rosenberg vmb 10400 f vf widerkauf verglichen Recepta Contractuum Brun fo 22",
       "english": "Thereafter, in 1416, on the eve of Palm Sunday, Hans von Brunn, Bischof, reached an agreement concerning the purchase of the castle, town, and Amt Röttingen for 10,400 florins, redeemable, with Heinrich von Sickingen, Ritter, Hans Truchsess, and Konrad von Rosenberg. The archive summary identifies Hans Truchsess as Hans Truchsess von Baldersheim. Recorded in the register of contracts of Brun, fol. 22.",
+      "mention": [
+        {
+          "person": "Hans von Brunn",
+          "personTitle": [
+            "Bischof"
+          ]
+        },
+        {
+          "person": "Heinrich von Sickingen",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Hans Truchsess"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Hans Truchsess"
+        },
+        {
+          "person": "Hans Truchsess von Baldersheim"
+        }
+      ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "entered a redeemable purchase agreement with Bishop Johann von Brunn for the castle, town, and Amt Röttingen, together with Heinrich von Sickingen, Ritter, and Hans Truchsess."
+          "content": "entered a redeemable purchase agreement with Bishop Johann von Brunn for the castle, town, and Amt Röttingen, together with Heinrich von Sickingen, Ritter, and Hans Truchsess.",
+          "mention": [
+            {
+              "person": "Hans von Brunn",
+              "personTitle": [
+                "Bishop"
+              ]
+            },
+            {
+              "person": "Heinrich von Sickingen",
+              "personTitle": [
+                "Ritter"
+              ]
+            },
+            {
+              "person": "Hans Truchsess"
+            }
+          ]
         }
       ],
       "img": [

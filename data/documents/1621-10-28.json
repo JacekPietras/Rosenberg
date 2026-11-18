@@ -6,6 +6,32 @@
       "url": "https://www.gda.bayern.de/gvl/document/043c888b-a596-49f5-b249-ab2bcbd46248",
       "german": "Die Vormünder Albert Christoph von und zu Rosenberg und Waldtmannshofen und Georg Friedrich von Seckendorff zu Langenfeld sowie die Beistände, darunter Georg Sigmund von Rosenberg zu Haldenbergstetten, treffen eine Heiratsabrede für Philipp Ludwig von Seckendorff und Maria Margareta von Gemmingen. Brigitta geborene von Rosenberg wird als verstorbene Ehefrau von Hans Georg von Seckendorff genannt; Anna Maria von Rosenberg geborene von Gemmingen wird im Zusammenhang mit einer Erbschaft erwähnt.",
       "english": "Guardians Albrecht Christoph von Rosenberg zu Rosenberg und Waldmannshofen and Georg Friedrich von Seckendorf zu Langenfeld, together with the named advisers including Georg Siegmund von Rosenberg zu Haldenbergstetten, made a marriage agreement for Philipp Ludwig von Seckendorf and Maria Margaretha von Gemmingen. Brigitta née von Rosenberg is named as the late wife of Hans Georg von Seckendorf; Anna Maria von Rosenberg née von Gemmingen is mentioned in connection with an inheritance.",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "person": "Georg Friedrich von Seckendorf"
+        },
+        {
+          "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "person": "Philipp Ludwig von Seckendorf"
+        },
+        {
+          "person": "Maria Margaretha von Gemmingen"
+        },
+        {
+          "person": "Brigitta von Rosenberg"
+        },
+        {
+          "person": "Hans Georg von Seckendorf"
+        },
+        {
+          "person": "Anna Maria von Gemmingen"
+        }
+      ],
       "facts": [
         {
           "person": "Brigitta von Rosenberg",
@@ -25,7 +51,15 @@
             "zu Rosenberg"
           ],
           "type": "generic",
-          "content": "served as a guardian in the marriage agreement for Philipp Ludwig von Seckendorf and Maria Margareta von Gemmingen."
+          "content": "served as a guardian in the marriage agreement for Philipp Ludwig von Seckendorf and Maria Margareta von Gemmingen.",
+          "mention": [
+            {
+              "person": "Philipp Ludwig von Seckendorf"
+            },
+            {
+              "person": "Maria Margaretha von Gemmingen"
+            }
+          ]
         },
         {
           "person": "Georg Siegmund von Rosenberg",

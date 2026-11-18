@@ -8,21 +8,59 @@
       "summary": "Bischof Lorenz von Bibra kauft etliche Zehnten, Zinsen, Güter und Rechte in der Stadt Lauda (Lauden) und Umgebung für 600 Gulden von den Brüdern Georg, Hans und Eberhard von Rosenberg (Rosenberg).",
       "german": "Am Motag nach Quasi [hochgestllt: ti] des 1513 Jars hat B Lorentz etliche Zehend, Zins, güetere und gerechtickait, zu Lauden in der stat und in der mark daselbst von Georgen, Hannsen und Eberharten von Rosenberg gebrüderen umb 600 R an stifft erkaufft, Recepta in 2 Contractum Laurenti fo. 244 d",
       "english": "On the Monday after Quasimodo Sunday in 1513, Bishop Lorenz bought from the brothers Georg, Hans, and Eberhard von Rosenberg, for 600 Rhenish florins, several tithes, rents, properties, and rights in the town of Lauda and its surrounding district, for the bishopric. Recorded in the second register of Lorenz’s contracts, fol. 244d. The archive summary identifies Bishop Lorenz as Lorenz von Bibra.",
+      "mention": [
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Lorenz von Bibra"
+        }
+      ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "sold several tithes, rents, properties, and rights in Lauda and its district to Lorenz von Bibra, Bischof, for the bishopric."
+          "content": "sold several tithes, rents, properties, and rights in Lauda and its district to Lorenz von Bibra, Bischof, for the bishopric.",
+          "mention": [
+            {
+              "person": "Lorenz von Bibra",
+              "personTitle": [
+                "Bischof"
+              ]
+            }
+          ]
         },
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "sold several tithes, rents, properties, and rights in Lauda and its district to Lorenz von Bibra, Bischof, for the bishopric."
+          "content": "sold several tithes, rents, properties, and rights in Lauda and its district to Lorenz von Bibra, Bischof, for the bishopric.",
+          "mention": [
+            {
+              "person": "Lorenz von Bibra",
+              "personTitle": [
+                "Bischof"
+              ]
+            }
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "sold several tithes, rents, properties, and rights in Lauda and its district to Lorenz von Bibra, Bischof, for the bishopric."
+          "content": "sold several tithes, rents, properties, and rights in Lauda and its district to Lorenz von Bibra, Bischof, for the bishopric.",
+          "mention": [
+            {
+              "person": "Lorenz von Bibra",
+              "personTitle": [
+                "Bischof"
+              ]
+            }
+          ]
         }
       ],
       "img": [

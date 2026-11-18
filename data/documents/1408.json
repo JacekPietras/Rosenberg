@@ -6,6 +6,17 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641642",
       "german": "Aufsagung seiner würzburgischen Lehen zugunsten seines Sohnes Ulrich durch Eberhard d. Ä. von Rosenberg.",
       "english": "Eberhard von Rosenberg der Ältere renounces his Würzburg fiefdoms in favor of his son Ulrich von Rosenberg.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -21,7 +32,12 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "renounced his Würzburg fiefs in favor of his son Ulrich von Rosenberg."
+          "content": "renounced his Würzburg fiefs in favor of his son Ulrich von Rosenberg.",
+          "mention": [
+            {
+              "person": "Ulrich von Rosenberg"
+            }
+          ]
         }
       ]
     }

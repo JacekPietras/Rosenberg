@@ -7,6 +7,11 @@
       "url": "https://www.regesta-imperii.de/id/1337-05-26_1_0_7_2_0_239_241",
       "german": "Ks. Ludwig verpfändet Eberhard von Rosenberg seine und des Reiches Leute in den Dörfern Roigheim, Bödigheim, Eicholzheim, Osterburken und alle anderen Eigenleute, die zu demselben Schultheißenamt gehören.",
       "english": "Emperor Ludwig pledges to Eberhard von Rosenberg his and the Empire's men in the villages of Roigheim, Bödigheim, Eicholzheim, Osterburken, and all other serfs who belong to the same bailiff's office.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",

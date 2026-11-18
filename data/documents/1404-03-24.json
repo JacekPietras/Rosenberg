@@ -10,6 +10,26 @@
       ],
       "german": "Eberhard Geyer und seine Ehefrau Guda von Hutten verkaufen an Arnold von Rosenberg d. Ä. und Arnold von Rosenberg d. J. ihren Teil des kleinen Zehnten zu Schweigern.",
       "english": "Eberhard Geyer and his wife Guda von Hutten sell their share of the small tithe in Schweigern to Arnold von Rosenberg der Ältere and Arnold von Rosenberg der Jüngere.",
+      "mention": [
+        {
+          "person": "Eberhard Geyer"
+        },
+        {
+          "person": "Guda von Hutten"
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",
@@ -17,7 +37,15 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with [arnold_boxberg]."
+          "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with [arnold_boxberg].",
+          "mention": [
+            {
+              "person": "Eberhard Geyer"
+            },
+            {
+              "person": "Guda von Hutten"
+            }
+          ]
         },
         {
           "person": "arnold_boxberg",
@@ -25,7 +53,21 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with Arnold von Rosenberg der Ältere."
+          "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with Arnold von Rosenberg der Ältere.",
+          "mention": [
+            {
+              "person": "Eberhard Geyer"
+            },
+            {
+              "person": "Guda von Hutten"
+            },
+            {
+              "person": "Arnold von Rosenberg",
+              "personTitle": [
+                "der Ältere"
+              ]
+            }
+          ]
         }
       ],
       "img": [

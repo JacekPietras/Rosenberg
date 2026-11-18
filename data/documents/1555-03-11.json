@@ -7,6 +7,17 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-2111396",
       "german": "Ritter Albrecht von Rosenberg zu Boxberg belehnt Philipp von und zu Neuhaus als Vormund für Philipp von Helmstatt, +Michels Sohn, mit Wagenbach als Mannlehen.Siegler: Aussteller\n\nLaufzeit: 1555 (1555 März 11 - Mo n Reminiscere)",
       "english": "Knight Albrecht von Rosenberg at Boxberg enfeoffs Philipp of and at Neuhaus as guardian for Philipp of Helmstatt, son of deceased Michael, with Wagenbach as a male fief.\nSealer: Issuer\n\nDuration: 1555 (March 11, 1555 - Monday in Reminiscere week)",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Knight"
+          ]
+        },
+        {
+          "person": "Philipp of Helmstatt"
+        }
+      ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
@@ -15,7 +26,15 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "enfeoffed Philipp von Helmstatt with Wagenbach as Mannlehen through his guardian Philipp von Neuhaus zu Neuhaus."
+          "content": "enfeoffed Philipp von Helmstatt with Wagenbach as Mannlehen through his guardian Philipp von Neuhaus zu Neuhaus.",
+          "mention": [
+            {
+              "person": "Philipp von Helmstatt"
+            },
+            {
+              "person": "Philipp von Neuhaus"
+            }
+          ]
         }
       ]
     }

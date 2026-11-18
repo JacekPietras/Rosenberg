@@ -7,11 +7,24 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-115473",
       "german": "Schuldbrief Konrads von Weinsberg gegenüber Konrad von Rosenberg um 500 Gulden (Abschrift).",
       "english": "Debt acknowledgment of Konrad von Weinsberg to Konrad von Rosenberg for 500 guilders (copy).",
+      "mention": [
+        {
+          "person": "Konrad von Weinsberg"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "was owed 500 guilders by Konrad von Weinsberg under a debt instrument."
+          "content": "was owed 500 guilders by Konrad von Weinsberg under a debt instrument.",
+          "mention": [
+            {
+              "person": "Konrad von Weinsberg"
+            }
+          ]
         }
       ]
     }

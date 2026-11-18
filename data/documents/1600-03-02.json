@@ -6,6 +6,14 @@
       "url": "https://www.gda.bayern.de/gvl/document/b44d88ae-97e1-4e33-a311-541216b926a4",
       "german": "Hans Sigmund von Crailsheim zu Altenschönbach quittiert den Vormündern Albrecht Christoph von und zu Rosenberg und Waltmannshofen, Eberhard von Eltershofen und Gottfried von Seckendorf der Kinder des verstorbenen Hans Georg von Seckendorff zu Sugenheim eine Zahlung.",
       "english": "Hans Sigmund von Crailsheim zu Altenschönbach issued a receipt to the guardians of the children of the late Hans Georg von Seckendorf zu Sugenheim, including Albrecht Christoph von Rosenberg zu Rosenberg und Waldmannshofen.",
+      "mention": [
+        {
+          "person": "Hans Georg von Seckendorf"
+        },
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Albrecht Christoph von Rosenberg",
@@ -14,7 +22,12 @@
             "zu Rosenberg"
           ],
           "type": "generic",
-          "content": "served as one of the guardians of the children of the late Hans Georg von Seckendorf."
+          "content": "served as one of the guardians of the children of the late Hans Georg von Seckendorf.",
+          "mention": [
+            {
+              "person": "Hans Georg von Seckendorf"
+            }
+          ]
         }
       ]
     }

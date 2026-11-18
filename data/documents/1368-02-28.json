@@ -10,6 +10,17 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-129163",
       "german": "Kaufbrief der Anna geborene von Rosenberg, Witwe des Johannes Phal zu Grünsfeld, für die Carthause Grünau über den Zehnten zu Großrinderfeld, um 1400 Pfund Heller verkauft.\n\nSiegel 1) Anna geborene von Rosenberg (eine kleine Rose zwischen zwei Schwanenhälsen), 2) Johannes von Rosenberg (Helm mit zwei Schwanenhälsen, in der Mitte eine kleine Rose), 3) Erkanger Zolner (Windhundskopf), 4) Stephan Zolner (abgerissen), 5) Eberhart von Rosenberg (wie ad 2), 6) Friderici de Grumbach (Mannsfigur mit einem Zweig), 7) Edelknechts Heinrich Pfol (wie Zolner ad 3)",
       "english": "Purchase deed of Anna from house von Rosenberg, widow of Hans Phal of Grünsfeld, for the Grünau Carthusian Order, for the tithes of Großrinderfeld, sold for 1,400 pounds of Heller.\n\nSeals: 1) Anna from house von Rosenberg (a small rose between two swan necks), 2) Hans von Rosenberg (helmet with two swan necks, a small rose in the center), 3) Erkanger Zolner (greyhound head), 4) Stephan Zolner (torn off), 5) Eberhard von Rosenberg (as above 2), 6) Friedrich von Grumbach (male figure with a branch), 7) Edelknecht Heinrich Pfol (as above 3)",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Friedrich von Grumbach"
+        }
+      ],
       "facts": [
         {
           "person": "Hans Phal",
@@ -31,12 +42,22 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "sealed Anna von Rosenberg’s sale of tithes at Großrinderfeld."
+          "content": "sealed Anna von Rosenberg’s sale of tithes at Großrinderfeld.",
+          "mention": [
+            {
+              "person": "Anna von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "sealed Anna von Rosenberg’s sale of tithes at Großrinderfeld."
+          "content": "sealed Anna von Rosenberg’s sale of tithes at Großrinderfeld.",
+          "mention": [
+            {
+              "person": "Anna von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

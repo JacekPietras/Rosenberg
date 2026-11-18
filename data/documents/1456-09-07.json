@@ -7,6 +7,23 @@
       "url": "https://www.gda.bayern.de/gvl/document/f969fceb-662f-4154-aaa0-01a6068612c6",
       "german": "Sigmund von Schwarzenberg bestätigt, dass Bischof Johann von Würzburg ihm den halben Teil von Schloss, Stadt und Amt Röttingen, wie davor dem Ritter Anselm von Rosenberg, um 2000 rheinische Gulden auf Wiederkauf in 5 Jahren verpfändet hat, wie in der inserierten Urkunde des Bischofs Johann vom gleichen Datum ausgeführt",
       "english": "Siegmund von Schwarzenberg confirms that Bishop Johann of Würzburg has pledged to him half of the castle, town, and office of Röttingen, previously held by knight Anselm von Rosenberg, for 2,000 Rhenish gulden subject to redemption within 5 years, as set forth in the bishop Johann's inserted document of the same date.",
+      "mention": [
+        {
+          "person": "Siegmund von Schwarzenberg"
+        },
+        {
+          "person": "Hans of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
+        },
+        {
+          "person": "Anselm von Rosenberg",
+          "personTitle": [
+            "knight"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Anselm von Rosenberg",
@@ -14,7 +31,18 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "had previously held the half share of Röttingen Castle, town, and district which Bishop Johann of Würzburg pledged to Sigmund von Schwarzenberg for 2,000 Rhenish guilders, redeemable within five years."
+          "content": "had previously held the half share of Röttingen Castle, town, and district which Bishop Johann of Würzburg pledged to Sigmund von Schwarzenberg for 2,000 Rhenish guilders, redeemable within five years.",
+          "mention": [
+            {
+              "person": "Hans of Würzburg",
+              "personTitle": [
+                "Bishop"
+              ]
+            },
+            {
+              "person": "Siegmund von Schwarzenberg"
+            }
+          ]
         }
       ]
     }

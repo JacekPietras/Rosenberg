@@ -94,6 +94,8 @@ for (const file of (await jsonFiles(resolve(root, 'data')))
   console.log(`${check ? 'Stale mentions' : 'Updated mentions'}: ${relative(root, file)}`);
   if (!check) await writeFile(file, updated, 'utf8');
 }
-console.log(`Checked mentions: ${counter.files} files, ${counter.mentions} mentions, ${counter.stale} ${check ? 'stale' : 'updated'}.`);
+if (counter.stale > 0) {
+  console.log(`Checked mentions: ${counter.files} files, ${counter.mentions} mentions, ${counter.stale} ${check ? 'stale' : 'updated'}.`);
+}
 process.exitCode = check && counter.stale ? 1 : 0;
 }

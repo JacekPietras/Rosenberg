@@ -10,11 +10,24 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97876",
       "german": "Notariatsinstrument über einen Vertrag zwischen Hans und Konrad von Rosenberg über die Beilegung von Streitigkeiten wegen der Schenke zu Bofsheim und des Schaftriebs zu Grünacker",
       "english": "Notarial instrument regarding an agreement between Hans von Rosenberg and Konrad von Rosenberg on settling disputes concerning the inn at Bofsheim and sheep-driving at Grünacker",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "and Konrad von Rosenberg agreed to settle disputes concerning the inn at Bofsheim and sheep-driving at Grünacker."
+          "content": "and Konrad von Rosenberg agreed to settle disputes concerning the inn at Bofsheim and sheep-driving at Grünacker.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ]
         }
       ]
     }

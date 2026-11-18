@@ -14,6 +14,26 @@
       ],
       "german": "König Rupertus erlaubt dem Cuncze von Rosenberg, Sohn des sel. Ritters Conrad von Rosenberg, weiland Vizthums von Amberg, und dem Conrad von Rosenberg, in ihrem Dorfe Hoenstat bei Rosenberg gelegen, Schultheiss, Schöffen und Gericht zu haben, C.",
       "english": "King Ruprecht permits Kunz von Rosenberg (son of the late Konrad von Rosenberg, Ritter, formerly Vitztum zu Amberg) and Konrad von Rosenberg, to have a reeve, aldermen, and a court in their village of Hohenstatt, situated near Rosenberg, C.",
+      "mention": [
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "vitztum_zu_Heidelberg",
@@ -37,7 +57,18 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "received King Ruprecht’s permission jointly with Konrad von Rosenberg to have a reeve, aldermen, and a court in their village of Hohenstatt near Rosenberg."
+          "content": "received King Ruprecht’s permission jointly with Konrad von Rosenberg to have a reeve, aldermen, and a court in their village of Hohenstatt near Rosenberg.",
+          "mention": [
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
+              ]
+            },
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ]
         }
       ]
     }

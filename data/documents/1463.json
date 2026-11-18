@@ -7,11 +7,24 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6933793",
       "german": "Revers des Dietrich von Berlichingen an Diether Erzbischof zu Mainz über die Belehnung mit einem halben Teil, den vorher Anselm von Rosenberg besessen hat.",
       "english": "Acknowledgment of Dietrich von Berlichingen to Diether Archbishop of Mainz regarding enfeoffment with a half share previously possessed by Anselm von Rosenberg.",
+      "mention": [
+        {
+          "person": "Dietrich von Berlichingen"
+        },
+        {
+          "person": "Anselm von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Anselm von Rosenberg",
           "type": "generic",
-          "content": "had previously held the half share for which Dietrich von Berlichingen received a fief from Archbishop Diether of Mainz."
+          "content": "had previously held the half share for which Dietrich von Berlichingen received a fief from Archbishop Diether of Mainz.",
+          "mention": [
+            {
+              "person": "Dietrich von Berlichingen"
+            }
+          ]
         }
       ]
     }

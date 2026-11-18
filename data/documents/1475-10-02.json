@@ -10,6 +10,23 @@
       ],
       "german": "Johann, Herr zu Heydeck, und Dietz von Thüngen zum Russenberg beurkunden den Heiratsvertrag zwischen Elche von Riedern, Tochter des Philipp von Riedern dem Älteren, und Kontz von Rosenberg. Aussteller des Vertrags: Johann von Heydeck und Dietz von Thüngen; Siegel: die Aussteller, Philipp von Riedern und Kontz von Rosenberg. Datiert 2. Oktober 1475.",
       "english": "Hans, Lord of Heydeck, and Dietz von Thüngen zum Russenberg record the marriage contract between Elche von Riedern, daughter of Philipp der Ältere von Riedern, and Kunz von Rosenberg. The contract is sealed by the issuers, Philipp von Riedern, and Kunz von Rosenberg. Dated 2 October 1475.",
+      "mention": [
+        {
+          "person": "Elche von Riedern"
+        },
+        {
+          "person": "Philipp von Riedern"
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "person": "Philipp von Riedern"
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Philipp von Riedern",
@@ -22,7 +39,12 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "entered into a marriage contract with Elche von Riedern."
+          "content": "entered into a marriage contract with Elche von Riedern.",
+          "mention": [
+            {
+              "person": "Elche von Riedern"
+            }
+          ]
         },
         {
           "person": "Kunz von Rosenberg",

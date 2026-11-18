@@ -11,6 +11,20 @@
       "url": "https://www.regesta-imperii.de/id/e11134ea-235a-40f4-a12f-de46a507f1bf",
       "german": "Cuone v. Falkenstein (-kin-), Dompropst u. Vormund d. Mainzer Stifts, verpfändet mit Zustimmung Erzbischof Heinrichs den M. Anteil an Burg Nagelsberg (-gils-) auf dem Kocher (Coche) den Rittern Ebirhard v. Rosenberg (-sin-) u. Ludewig Münch1 u. dem Knecht Conrad v. Rosenberg (-sin-) für 500 Pfd. H. Frankf. W. M. darf sich von der Burg aus behelfen. Lösung steht beiden Parteien bei 1/4} jähr. Kündigung zu. Zahlungsort: Buchen (Buchein); von dort aus muß M. bis Rosenberg (-sin-)2 geleiten. Löst M. auf Verlangen nicht ein, so dürfen die Empfänger die Burg an einen Mann des Stifts weiterverpfänden. Siegler: Erzbischof, Cuno, 5 Vormünder.",
       "english": "Cuno of Falkenstein, Dompropst and guardian of the Mainz foundation, with the consent of Archbishop Heinrich, pledges the Mainz foundation’s half share in the castle of Nagelsberg on the Kocher to the knights Ebirhard of Rosenberg and Ludewig Mönch von Rosenberg zu Hainstadt, and to Konrad von Rosenberg, Knecht, for 500 pounds Heller Frankfurt Weight. The Mainz foundation may make use of the castle. Redemption is available to both parties upon quarter-year notice.\n\nPlace of payment: Buchen; from there the Mainz foundation must be escorted to Rosenberg. If the Mainz foundation does not redeem on demand, the recipients may re-pledge the castle to a man of the foundation.\n\nSealer: Archbishop, Cuno, 5 guardians.",
+      "mention": [
+        {
+          "person": "Eberhard of Rosenberg"
+        },
+        {
+          "person": "Ludwig Mönch von Rosenberg"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Knecht"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -18,7 +32,18 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "received the Mainz foundation’s half share in Nagelsberg Castle on the Kocher in pledge together with Ludewig Münch and Konrad von Rosenberg, Knecht."
+          "content": "received the Mainz foundation’s half share in Nagelsberg Castle on the Kocher in pledge together with Ludewig Münch and Konrad von Rosenberg, Knecht.",
+          "mention": [
+            {
+              "person": "Ludwig Mönch"
+            },
+            {
+              "person": "Konrad von Rosenberg",
+              "personTitle": [
+                "Knecht"
+              ]
+            }
+          ]
         },
         {
           "person": "Konrad von Rosenberg",
@@ -26,7 +51,15 @@
             "Knecht"
           ],
           "type": "generic",
-          "content": "received the Mainz foundation’s half share in Nagelsberg Castle on the Kocher in pledge together with Eberhard von Rosenberg and Ludewig Münch."
+          "content": "received the Mainz foundation’s half share in Nagelsberg Castle on the Kocher in pledge together with Eberhard von Rosenberg and Ludewig Münch.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            },
+            {
+              "person": "Ludwig Mönch"
+            }
+          ]
         }
       ]
     }

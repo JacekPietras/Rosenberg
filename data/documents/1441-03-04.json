@@ -7,6 +7,11 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6046308",
       "german": "Kunz Sinolt von Bessenbach d. J. erhält von Graf Johann v. K. als Vormund seines Vetters Philipp von Rosenbach, Sohn des † Sinolt von Rosenberg (!), als Mannlehen den Sinoltshof zu Überau im oberen Dorf bei Reinheim mit Äckern, Wiesen und allem Zubehör. Lehnsgelöbnis des Ausst. für Philipp, der die Lehen, wenn er mündig (zu synen tagen, mit namen zu 14 iaren ungeverlich kommen) wird, selbst empfangen und tragen soll. Rechtsvorbehalt des Grafen.\n\nSiegler: Siegel des Ausstellers",
       "english": "Kunz Sinolt von Bessenbach the Younger receives from Count Johann v. K. as guardian of his kinsman Philipp von Rosenberg, son of the deceased † Sinolt von Rosenberg (!), as a male fief the Sinolt farm at Überau in the upper village near Reinheim with fields, meadows, and all accessories. Oath of fealty by the issuer for Philipp, who shall receive and hold the fiefs himself when he comes of age (at his time, namely approximately at 14 years). Legal reservation of the Count.\n\nSealer: Seal of the issuer",
+      "mention": [
+        {
+          "person": "Philipp von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Sinolt von Rosenberg",
@@ -20,7 +25,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "received the Sinoltshof at Überau as a fief from Count Johann while serving as guardian of his cousin Philipp von Rosenbach; Philipp was to receive and hold the fief himself upon reaching about fourteen years of age."
+          "content": "received the Sinoltshof at Überau as a fief from Count Johann while serving as guardian of his cousin Philipp von Rosenbach; Philipp was to receive and hold the fief himself upon reaching about fourteen years of age.",
+          "mention": [
+            {
+              "person": "Philipp von Rosenbach"
+            }
+          ]
         }
       ],
       "guesses": [

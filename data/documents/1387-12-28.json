@@ -7,6 +7,14 @@
       "url": "https://www.regesta-imperii.de/id/d632962e-06a0-4b5e-8d06-1402910ce248",
       "german": "Ruprecht belehnt Else von Erlekeim, wittwe Eberhards von Rosenberg, an ihrer unmündigen söhne statt, mit Boxberg halb und andern lehengütern.",
       "english": "Ruprecht enfeoffed Elisabeth von Erligheim, widow of Eberhard von Rosenberg, in place of her underage son, with half of Boxberg and other fiefdoms.",
+      "mention": [
+        {
+          "person": "Elisabeth von Erligheim"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "vogt_zu_Lauda",
@@ -22,7 +30,12 @@
         {
           "person": "Ruprecht",
           "type": "generic",
-          "content": "enfeoffed Elisabeth von Erligheim with half of Boxberg and other fiefs in place of her underage sons."
+          "content": "enfeoffed Elisabeth von Erligheim with half of Boxberg and other fiefs in place of her underage sons.",
+          "mention": [
+            {
+              "person": "Elisabeth von Erligheim"
+            }
+          ]
         },
         {
           "person": "vogt_zu_Lauda",

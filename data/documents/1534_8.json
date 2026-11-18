@@ -7,6 +7,11 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-869416",
       "german": "Schreiben des Komturs zu Rothenburg o. d. Tauber, Wolfgang von Rosenberg, an Deutschmeister Walther von Kronberg.",
       "english": "Letter from Wolfgang von Rosenberg, commander at Rothenburg ob der Tauber, to Walther von Kronberg, Grand Master of the Teutonic Order.",
+      "mention": [
+        {
+          "person": "Wolfgang von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Wolfgang von Rosenberg",

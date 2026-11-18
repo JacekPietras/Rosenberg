@@ -9,6 +9,17 @@
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
       "german": "*Cuntz Munich*, *fogte* zu *Steinsberg*, zeugt bei der Verpfändung eines Teils der Burg Schadeck durch Hans v. Rosenberg an Engelhard v. Rosenberg. RITSERT 1876:300",
       "english": "Kunz Mönch von Rosenberg, Vogt zu Steinsberg, witnesses the pledging of part of Burg Schadeck by Hans von Rosenberg to Engelhard von Rosenberg.",
+      "mention": [
+        {
+          "person": "Kunz Mönch von Rosenberg"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Engelhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Kunz Mönch von Rosenberg",
@@ -16,17 +27,35 @@
             "Vogt zu Steinsberg"
           ],
           "type": "generic",
-          "content": "witnessed the pledging of part of Burg Schadeck by Hans von Rosenberg to Engelhard von Rosenberg."
+          "content": "witnessed the pledging of part of Burg Schadeck by Hans von Rosenberg to Engelhard von Rosenberg.",
+          "mention": [
+            {
+              "person": "Hans von Rosenberg"
+            },
+            {
+              "person": "Engelhard von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "pledged part of Burg Schadeck to Engelhard von Rosenberg."
+          "content": "pledged part of Burg Schadeck to Engelhard von Rosenberg.",
+          "mention": [
+            {
+              "person": "Engelhard von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Engelhard von Rosenberg",
           "type": "generic",
-          "content": "received part of Burg Schadeck in pledge from Hans von Rosenberg."
+          "content": "received part of Burg Schadeck in pledge from Hans von Rosenberg.",
+          "mention": [
+            {
+              "person": "Hans von Rosenberg"
+            }
+          ]
         }
       ]
     }

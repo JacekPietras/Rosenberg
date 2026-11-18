@@ -10,6 +10,14 @@
       ],
       "german": "Schreiben des Eb Michael an den Ritter Albrecht von Rosenberg, dessen Forderungen an den Schwäbischen Bund betreffend.",
       "english": "Letter from Archbishop Michael to Knight Albrecht von Rosenberg, concerning his claims against the Swabian League.",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Knight"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-OeStA-HHStA/AUR-Salzburg-Erzstift/HHSTA_Salzburg_1555_06_14-20-2.jpg"

@@ -7,11 +7,30 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97876",
       "german": "Heinz von Seckendorff gen. Aberdar verkauft für 400 fl. sein Viertel am großen Zehnten zu Sindolsheim, seine Hälften am kleinen Zehnten daselbst und seine Hälften an einem Viertel zu Nettelnheim an Konrad von Rosenberg und seine Ehefrau Margarete geb. von Seinsheim",
       "english": "Heinrich von Seckendorf called Aberdar sells for 400 florins his quarter of the great tithe at Sindolsheim, his halves of the small tithe there and his half of a quarter at Nettelnheim to Konrad von Rosenberg and his wife Margarete née von Seinsheim",
+      "mention": [
+        {
+          "person": "Heinrich von Seckendorf"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Margaretha von Seinsheim"
+        }
+      ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "and his wife Margarete von Seinsheim bought Heinz von Seckendorff gen. Aberdar’s quarter of the great tithe, half of the small tithe at Sindolsheim, and half of a quarter at Nettelnheim for 400 florins."
+          "content": "and his wife Margarete von Seinsheim bought Heinz von Seckendorff gen. Aberdar’s quarter of the great tithe, half of the small tithe at Sindolsheim, and half of a quarter at Nettelnheim for 400 florins.",
+          "mention": [
+            {
+              "person": "Margaretha von Seinsheim"
+            },
+            {
+              "person": "Heinrich von Seckendorff"
+            }
+          ]
         }
       ]
     }

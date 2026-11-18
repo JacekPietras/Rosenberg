@@ -6,13 +6,23 @@
       "source": "OÖUB 3 (Wien 1862), S. 235-237, Nr. 245, 1257 I 10",
       "url": "https://www.monasterium.net/mom/OOEUB/1257_I_10/charter",
       "german": "Wok von Rosenberg urkundet, sich mit Bischof Otto von Passau wegen des Gerichtes zwischen der Donau und Reuschmühel verglichen zu haben.",
-      "english": "Wok of Rosenberg certifies that he has reached an agreement with Bishop Otto of Passau regarding the court between the Danube and Reuschmühle."
+      "english": "Wok of Rosenberg certifies that he has reached an agreement with Bishop Otto of Passau regarding the court between the Danube and Reuschmühle.",
+      "mention": [
+        {
+          "person": "Wok of Rosenberg"
+        }
+      ]
     },
     {
       "source": "Hochstift Passau Urkunden, 105",
       "url": "https://www.monasterium.net/mom/DE-BayHStA/HUPassau/105/charter",
       "german": "Woko von Rosenberg, Marschall von Böhmen, vergleicht sich mit Bischof Otto von Passau wegen des Gerichts zwischen Donau und Reuschmühle.\n\nSiegler: S: S1: H[einrich] von Schaumberg, S2: A, S3: Wernhard von Schaumberg, Bruder des S1\n\nSiegel: S1 Rest, S2 beschädigt, S3 fehlt. S: S1: H[einrich] von Schaumberg, S2: A, S3: Wernhard von Schaumberg, Bruder des S1",
       "english": "Woko of Rosenberg, Marshal of Bohemia, reaches an agreement with Bishop Otto of Passau regarding the court between the Danube and Reuschmühle.\n\nSealer: S: S1: H[einrich] of Schaumberg, S2: A, S3: Wernhard of Schaumberg, brother of S1\n\nSeal: S1 fragment, S2 damaged, S3 missing. S: S1: H[einrich] of Schaumberg, S2: A, S3: Wernhard of Schaumberg, brother of S1",
+      "mention": [
+        {
+          "person": "Wok of Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/DE-BayHStA/HUPassau/BayHStA-HUPassau_12570110_00105_r.jpg"
@@ -26,7 +36,12 @@
       "source": "BayHStA, Hochstift Passau Urkunden 105",
       "url": "https://www.gda.bayern.de/gvl/document/5b5cc50b-9b81-47f6-8c06-e1d2b376dfbd",
       "german": "Woko von Rosenberg, Marschall von Böhmen, vergleicht sich mit Bischof Otto von Passau wegen des Gerichts zwischen Donau und Reuschmühle. - S:  S1: H[einrich] von Schaumberg, S2: A, S3: Wernhard von Schaumberg, Bruder des S1",
-      "english": "Woko of Rosenberg, Marshal of Bohemia, reaches an agreement with Bishop Otto of Passau regarding the court jurisdiction between the Danube and the Reuschmühle. - S:  S1: H[einrich] of Schaumberg, S2: A, S3: Wernhard of Schaumberg, brother of S1"
+      "english": "Woko of Rosenberg, Marshal of Bohemia, reaches an agreement with Bishop Otto of Passau regarding the court jurisdiction between the Danube and the Reuschmühle. - S:  S1: H[einrich] of Schaumberg, S2: A, S3: Wernhard of Schaumberg, brother of S1",
+      "mention": [
+        {
+          "person": "Wok of Rosenberg"
+        }
+      ]
     }
   ]
 }

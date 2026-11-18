@@ -10,6 +10,17 @@
       ],
       "german": "Hans von Rosenberg, Sohn des + Kunz von Rosenberg, quittiert über 6 Pfd. Burggeld, fällig auf vergangenen Martinstag, die ihm im Auftrag von Graf Johann von Wertheim von Rentmeister Eberhard Gysel ausbezahlt wurden.",
       "english": "Hans von Rosenberg, son of the deceased Kunz von Rosenberg, acknowledges receipt of 6 pounds of castle dues, payable on the past Martinmas, which were paid to him by rentmaster Eberhard Gysel on behalf of Count Hans von Wertheim.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "person": "Hans von Wertheim"
+        }
+      ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
@@ -25,7 +36,12 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "received 6 pounds of castle dues from rentmaster Eberhard Gysel on behalf of Count Johann von Wertheim; the dues had fallen due on the preceding Martinmas."
+          "content": "received 6 pounds of castle dues from rentmaster Eberhard Gysel on behalf of Count Johann von Wertheim; the dues had fallen due on the preceding Martinmas.",
+          "mention": [
+            {
+              "person": "Hans von Wertheim"
+            }
+          ]
         }
       ],
       "img": [

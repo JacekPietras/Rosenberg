@@ -15,6 +15,17 @@
       ],
       "german": "Ludwig von Fleckenstein, Hofmeister, Florenz von Venningen, Kanzler, und Wilhelm von Habern, Marschall der Kurpfalz, vermitteln einen Vertrag zwischen Hans von Rosenberg, Keller zu Neckarelz namens des Kurfürsten von der Pfalz, und Lorenz von Rosenberg wegen des Weinzehnten in Neckarelzer und Diedesheimer Gemarkung.\n\nLaufzeit: 1526 Oktober 3 (Mittwoch nach Remigius 1526)",
       "english": "Ludwig von Fleckenstein, Hofmeister; Florenz von Venningen, Chancellor; and Wilhelm von Habern, Marshal of the Electoral Palatinate, mediate an agreement between Hans von Rosenberg, cellar master at Neckarelz on behalf of the Elector of the Palatinate, and Lorenz von Rosenberg regarding the wine tithe in the Neckarelz and Diedesheim districts.\n\nDuration: October 3, 1526 (Wednesday after Remigius 1526)",
+      "mention": [
+        {
+          "person": "Ludwig von Fleckenstein"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Lorenz von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
@@ -22,12 +33,22 @@
             "Keller zu Neckarelz"
           ],
           "type": "generic",
-          "content": "entered into an agreement with Lorenz von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim."
+          "content": "entered into an agreement with Lorenz von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim.",
+          "mention": [
+            {
+              "person": "Lorenz von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "entered into an agreement with Hans von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim."
+          "content": "entered into an agreement with Hans von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim.",
+          "mention": [
+            {
+              "person": "Hans von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

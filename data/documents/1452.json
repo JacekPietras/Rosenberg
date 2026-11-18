@@ -10,11 +10,54 @@
       ],
       "german": "Schreiben des Horneck von Hornberg an Friedrich von Wolfskehl, Anselm von Rosenberg, Conrad von Herrieden, Eberhard Rüd von Kollenberg, Carl von Tüngen, Engelhard von Saunsheim, Heinz von Lichtenstein, Fritz von Grumbach, Barthelmä von Hutten, Hans von Wenkheim und Peter von Seckendorf. Laufzeit 1452.",
       "english": "Letter from Horneck von Hornberg to Friedrich von Wolffskeel, Anselm von Rosenberg, Konrad von Herrieden, Eberhard Rüd von Kollenberg, Karl von Thüngen, Engelhard von Seinsheim, Heinrich von Lichtenstein, Friedrich von Grumbach, Bartholomäus von Hutten, Hans von Wenkheim, and Peter von Seckendorf. Dated 1452.",
+      "mention": [
+        {
+          "person": "Horneck von Hornberg"
+        },
+        {
+          "person": "Friedrich von Wolffskeel"
+        },
+        {
+          "person": "Anselm von Rosenberg"
+        },
+        {
+          "person": "Konrad von Herrieden"
+        },
+        {
+          "person": "Eberhard Rüd von Kollenberg"
+        },
+        {
+          "person": "Karl von Thüngen"
+        },
+        {
+          "person": "Engelhard von Seinsheim"
+        },
+        {
+          "person": "Heinrich von Lichtenstein"
+        },
+        {
+          "person": "Friedrich von Grumbach"
+        },
+        {
+          "person": "Bartholomäus von Hutten"
+        },
+        {
+          "person": "Hans von Wenkheim"
+        },
+        {
+          "person": "Peter von Seckendorf"
+        }
+      ],
       "facts": [
         {
           "person": "Anselm von Rosenberg",
           "type": "generic",
-          "content": "was addressed, with the other named recipients, in a letter from Horneck von Hornberg."
+          "content": "was addressed, with the other named recipients, in a letter from Horneck von Hornberg.",
+          "mention": [
+            {
+              "person": "Horneck von Hornberg"
+            }
+          ]
         }
       ],
       "img": [

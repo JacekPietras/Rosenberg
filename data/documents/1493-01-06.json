@@ -9,7 +9,18 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1493_I_06/charter"
       ],
       "german": "Die Gebrüder Wok, Peter und Ulrich von Rosenberg bekennen sich zu den Bedingungen, unter welchen ihnen von Wladislaw II. die königlichen Gerechtsame auf das Kloster Goldenkron verliehen worden, und zwar unter Einrückung der betreffenden königlichen Verschreibung von demselben Datum.",
-      "english": "The brothers Wok, Peter, and Ulrich von Rosenberg acknowledge the conditions under which Władysław II granted them the royal rights over Goldenkron Monastery, incorporating the royal charter of the same date."
+      "english": "The brothers Wok, Peter, and Ulrich von Rosenberg acknowledge the conditions under which Władysław II granted them the royal rights over Goldenkron Monastery, incorporating the royal charter of the same date.",
+      "mention": [
+        {
+          "person": "Wok von Rosenberg"
+        },
+        {
+          "person": "Peter von Rosenberg"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

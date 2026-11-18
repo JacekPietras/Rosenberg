@@ -7,16 +7,49 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1743358",
       "german": "Lorenz von Rosenberg und Hans von Riedern vermitteln einen Vertrag zwischen Heinrich von Pappenheim, Deutsch-Ordens-Komtur zu Mergentheim, und Christoph von Rosenberg wegen streitiger Güter zu Hirschlanden.\n\nLaufzeit: 1535 September 2 (Donnerstag nach Aegidius 1535)",
       "english": "Lorenz von Rosenberg and Hans von Riedern mediate a contract between Heinrich von Pappenheim, Teutonic Order Commander of Mergentheim, and Christoph von Rosenberg regarding disputed properties in Hirschlanden.\n\nDuration: September 2, 1535 (Thursday after Aegidius 1535)",
+      "mention": [
+        {
+          "person": "Lorenz von Rosenberg"
+        },
+        {
+          "person": "Hans von Riedern"
+        },
+        {
+          "person": "Heinrich von Pappenheim"
+        },
+        {
+          "person": "Christoph von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "mediated the agreement between Heinrich von Pappenheim and Christoph von Rosenberg concerning disputed properties at Hirschlanden."
+          "content": "mediated the agreement between Heinrich von Pappenheim and Christoph von Rosenberg concerning disputed properties at Hirschlanden.",
+          "mention": [
+            {
+              "person": "Heinrich von Pappenheim"
+            },
+            {
+              "person": "Christoph von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Christoph von Rosenberg",
           "type": "generic",
-          "content": "entered into an agreement with Heinrich von Pappenheim concerning disputed properties at Hirschlanden, mediated by Lorenz von Rosenberg and Hans von Riedern."
+          "content": "entered into an agreement with Heinrich von Pappenheim concerning disputed properties at Hirschlanden, mediated by Lorenz von Rosenberg and Hans von Riedern.",
+          "mention": [
+            {
+              "person": "Heinrich von Pappenheim"
+            },
+            {
+              "person": "Lorenz von Rosenberg"
+            },
+            {
+              "person": "Hans von Riedern"
+            }
+          ]
         }
       ],
       "img": [

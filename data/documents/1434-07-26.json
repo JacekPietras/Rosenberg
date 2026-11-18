@@ -6,7 +6,12 @@
       "source": "HHStAW, 120, U 87",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2636115",
       "german": "Peter Münch von Rossenberg quittiert dem Nicolaus von Germersheim, Zollschreiber zu Kaub, über 25 Gulden, die ihm Pfalzgraf Ludwig schuldig gewesen.",
-      "english": "Peter Münch von Rossenberg issues a receipt to Nicolaus von Germersheim, customs clerk at Kaub, for 25 gulden that Ludwig, Pfalzgraf, had owed him."
+      "english": "Peter Münch von Rossenberg issues a receipt to Nicolaus von Germersheim, customs clerk at Kaub, for 25 gulden that Ludwig, Pfalzgraf, had owed him.",
+      "mention": [
+        {
+          "person": "Peter Mönch von Rossenberg"
+        }
+      ]
     }
   ]
 }

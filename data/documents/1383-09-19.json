@@ -6,6 +6,14 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-199842",
       "german": "Verkauf aller Gülten und Güter zu Rötelsee an das DOH Mgh durch Eberhard [VII.] d.Ä. von Rosenberg, 1385 Feb. 19.",
       "english": "Sale of all rents and goods in Rötelsee to the DOH Mgh by Eberhard von Rosenberg der Ältere, 1385 Feb. 19.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",

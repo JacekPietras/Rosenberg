@@ -6,11 +6,24 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-270170",
       "german": "Eberhard von Rosenberg lässt die Gefangenen aus der Fehde mit Graf Johann von Wertheim nach Aushändigung von Urfehde-Briefen frei. Ausgenommen sind Gefangene, die in des Papstes Bann oder des Kaisers Acht stehen.\n\nSiegelankündigung des Ausstellers.",
       "english": "Eberhard von Rosenberg releases the prisoners from the feud with Count Hans von Wertheim after issuing letters of primordial feud. Except for prisoners under the Pope's ban or the Emperor's ban. The issuer's seal confirms this.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Hans von Wertheim"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "released prisoners from his feud with Count Hans von Wertheim after Urfehde letters were delivered."
+          "content": "released prisoners from his feud with Count Hans von Wertheim after Urfehde letters were delivered.",
+          "mention": [
+            {
+              "person": "Hans von Wertheim"
+            }
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",

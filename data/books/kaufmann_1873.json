@@ -35,6 +35,11 @@
           "person": "Adelheid",
           "type": "generic",
           "content": "donated, together with her husband Aplo von Rosenberg, 2 Morgen of wine in the Schalkberg to Kloster Bronnbach.",
+          "mention": [
+            {
+              "person": "Aplo von Rosenberg"
+            }
+          ],
           "date": "1278"
         }
       ],

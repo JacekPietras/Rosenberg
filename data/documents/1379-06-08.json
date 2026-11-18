@@ -6,6 +6,14 @@
       "url": "https://www.gda.bayern.de/gvl/document/7101dcc5-9aa2-4e8e-beba-30c45e058754",
       "german": "Kassierter Schuldbrief über 115 Gulden von Ritter Hans von Seckendorff zu Jochsberg an Frau Elsbet, Witwe des Herman Vorhtel, und ihre Erben ausgestellt. - \n\nSiegler: der Aussteller sowie (2) Konrad von Rosenberg, Vitztum in Amberg, (3) Heinrich der Auerochs, (4) Hans der Muffel, Bürger in Nürnberg. Urkunde durch Tilgungsschnitt kassiert.",
       "english": "Cashed promissory note for 115 guilders issued by Hans von Seckendorf zu Jochsberg, Ritter, to Mrs. Elisabeth, widow of Herman Vorhtel, and her heirs. - \n\nSeal: the issuer and (2) Konrad von Rosenberg, Vicar of Amberg, (3) Heinrich der Auerochs, (4) Hans der Muffel, citizen of Nuremberg. Deed cashed by redemption.",
+      "mention": [
+        {
+          "person": "Hans von Seckendorf"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "vitztum_zu_Heidelberg",
@@ -13,12 +21,22 @@
             "Vitzthum in Amberg"
           ],
           "type": "generic",
-          "content": "sealed the cancelled debt letter issued by Hans von Seckendorf to Elisabeth, widow of Herman Vorhtel."
+          "content": "sealed the cancelled debt letter issued by Hans von Seckendorf to Elisabeth, widow of Herman Vorhtel.",
+          "mention": [
+            {
+              "person": "Hans von Seckendorf"
+            }
+          ]
         },
         {
           "person": "Heinrich Auerochs",
           "type": "generic",
-          "content": "sealed the cancelled debt letter issued by Hans von Seckendorf to Elisabeth, widow of Herman Vorhtel."
+          "content": "sealed the cancelled debt letter issued by Hans von Seckendorf to Elisabeth, widow of Herman Vorhtel.",
+          "mention": [
+            {
+              "person": "Hans von Seckendorf"
+            }
+          ]
         },
         {
           "person": "Hans Muffel",
@@ -26,7 +44,12 @@
             "Bürger in Nürnberg"
           ],
           "type": "generic",
-          "content": "sealed the cancelled debt letter issued by Hans von Seckendorf to Elisabeth, widow of Herman Vorhtel."
+          "content": "sealed the cancelled debt letter issued by Hans von Seckendorf to Elisabeth, widow of Herman Vorhtel.",
+          "mention": [
+            {
+              "person": "Hans von Seckendorf"
+            }
+          ]
         },
         {
           "person": "Herman Vorhtel",

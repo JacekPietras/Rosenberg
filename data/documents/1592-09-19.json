@@ -7,6 +7,41 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-236021",
       "german": "Bernhard von und zu Liebenstein, Adam Ulrich Schenk von Siman, bambergischer Rat und Hauptmann zu Kronach, und Reinhard von Gemmingen vergleichen zwischen den Brüdern Konrad, Albert Christoph und Georg Sigmund von Rosenberg über die Teilung ihres Erbes.\n\nSiegler: Konrad von Rosenberg; Albert Christoph von Rosenberg; Sigmund von Rosenberg; Bernhard von Liebenstein; Reinhard von Gemmingen",
       "english": "Bernhard von Liebenstein zu Liebenstein, Adam Ulrich Schenk von Siman, Bambergh counselor and captain at Kronach, and Reinhard von Gemmingen mediate between the brothers Konrad, Albert Christoph and Georg Siegmund von Rosenberg regarding the division of their inheritance.\n\nSeal: Konrad von Rosenberg; Albrecht Christoph von Rosenberg; Siegmund von Rosenberg; Bernhard von Liebenstein; Reinhard von Gemmingen",
+      "mention": [
+        {
+          "person": "Bernhard von Liebenstein"
+        },
+        {
+          "person": "Adam Ulrich Schenk"
+        },
+        {
+          "person": "Reinhard von Gemmingen"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "person": "Siegmund von Rosenberg"
+        },
+        {
+          "person": "Bernhard von Liebenstein"
+        },
+        {
+          "person": "Reinhard von Gemmingen"
+        }
+      ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
@@ -21,7 +56,18 @@
         {
           "subject": "the brothers Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg",
           "type": "generic",
-          "content": "settled the division of their inheritance with the mediation of Bernhard von Liebenstein, Adam Ulrich Schenk von Siman and Reinhard von Gemmingen."
+          "content": "settled the division of their inheritance with the mediation of Bernhard von Liebenstein, Adam Ulrich Schenk von Siman and Reinhard von Gemmingen.",
+          "mention": [
+            {
+              "person": "Bernhard von Liebenstein"
+            },
+            {
+              "person": "Adam Ulrich Schenk"
+            },
+            {
+              "person": "Reinhard von Gemmingen"
+            }
+          ]
         }
       ],
       "img": [

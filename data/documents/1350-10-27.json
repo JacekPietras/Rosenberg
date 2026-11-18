@@ -7,11 +7,24 @@
       "url": "https://www.monasterium.net/mom/CSGVII/1350_X_27/charter",
       "german": "Ursula von Rosenberg gibt dem Hans Singenberg Adelheid von Ramschwag zur Frau samt deren mütterlichem Erbe.",
       "english": "Ursula von Rosenberg gives Adelheid von Ramschwag in marriage to Hans Singenberg, together with Adelheid’s maternal inheritance.",
+      "mention": [
+        {
+          "person": "Ursula von Rosenberg"
+        },
+        {
+          "person": "Adelheid von Ramschwag"
+        }
+      ],
       "facts": [
         {
           "person": "Ursula von Rosenberg",
           "type": "generic",
-          "content": "gave Adelheid von Ramschwag to Hans Singenberg as wife together with her maternal inheritance."
+          "content": "gave Adelheid von Ramschwag to Hans Singenberg as wife together with her maternal inheritance.",
+          "mention": [
+            {
+              "person": "Adelheid von Ramschwag"
+            }
+          ]
         },
         {
           "person": "Hans Singenberg",

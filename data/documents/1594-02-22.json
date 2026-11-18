@@ -7,11 +7,24 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1726551",
       "german": "Christoph Rüdt von und zu Bödigheim, Collenberg und Eubigheim verkauft an Konrad von Rosenberg sein Drittel am großen und kleinen Zehnt zu Buch am Ahorn.",
       "english": "Christoph Rüdt of and to Bödigheim, Collenberg and Eubigheim sells to Konrad von Rosenberg his one-third share of the great and small tithe at Buch am Ahorn.",
+      "mention": [
+        {
+          "person": "Christoph Rüd"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "bought Christoph Rüdt’s third share of the great and small tithes at Buch am Ahorn."
+          "content": "bought Christoph Rüdt’s third share of the great and small tithes at Buch am Ahorn.",
+          "mention": [
+            {
+              "person": "Christoph Rüd"
+            }
+          ]
         }
       ],
       "img": [

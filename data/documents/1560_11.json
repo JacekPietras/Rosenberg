@@ -10,6 +10,17 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97876",
       "german": "Vertrag zwischen Albrecht von Rosenberg zu Boxberg als Erbherr zu Buch am Ahorn einerseits, Wolfgang von Hartheim, Daniel und Gottfried von Adelsheim als gemeine Dorfsherren zu Gerichtstetten andererseits über die Beilegung von Markungs- und Triebstreitigkeiten ihrer Untertanen zu Buch am Ahorn und Gerichtstetten",
       "english": "Agreement between Albrecht von Rosenberg at Boxberg as hereditary lord at Buch am Ahorn on one side, Wolfgang von Hartheim, Daniel and Gotfried von Adelsheim as common village lords at Gerichtstetten on the other side on settling boundary and driving disputes of their subjects at Buch am Ahorn and Gerichtstetten",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg"
+        },
+        {
+          "person": "Wolfgang von Hartheim"
+        },
+        {
+          "person": "Gotfried von Adelsheim"
+        }
+      ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
@@ -17,7 +28,15 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "made an agreement with Wolfgang von Hartheim, Daniel von Adelsheim and Gottfried von Adelsheim to settle boundary and livestock-passage disputes between their subjects at Buch am Ahorn and Gerichtstetten."
+          "content": "made an agreement with Wolfgang von Hartheim, Daniel von Adelsheim and Gottfried von Adelsheim to settle boundary and livestock-passage disputes between their subjects at Buch am Ahorn and Gerichtstetten.",
+          "mention": [
+            {
+              "person": "Wolfgang von Hartheim"
+            },
+            {
+              "person": "Gotfried von Adelsheim"
+            }
+          ]
         }
       ]
     }

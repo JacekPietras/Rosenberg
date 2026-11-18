@@ -16,7 +16,12 @@
         {
           "person": "Hans Vinczler",
           "type": "generic",
-          "content": "served as Amtmann of the widow of Jost von Rosenberg and sealed the sale of Burgrecht on a vineyard at Chriczendorf to the convent of Sewsenstain."
+          "content": "served as Amtmann of the widow of Jost von Rosenberg and sealed the sale of Burgrecht on a vineyard at Chriczendorf to the convent of Sewsenstain.",
+          "mention": [
+            {
+              "person": "Jost von Rosenberg"
+            }
+          ]
         }
       ]
     }

@@ -7,6 +7,23 @@
       "url": "https://www.gda.bayern.de/gvl/document/fbca7c13-4543-44bb-8acb-c603cb702299",
       "german": "Revers des Mainzer Domsängers Philipp Karl Freiherrn von Hoheneck, der von seinen namentlich angeführten Miterben am sogenannten Dottenheimischen Erblehen im Schüpfergrund zum Lehenträger bestimmt worden war, über die durch Erzbischof, Erzkanzler und Kurfürst Karl erfolgte Belehnung mit jenen Objekten, welche in inserierter Urkunde von 1578 Februar 5 genannt sind. In der inserierten Urkunde belehnt Erzbischof Daniel von Mainz die Erbnehmer des verstorbenen Ritters Albrecht von Rosenberg, nämlich Eberhard von Stetten zu Hochstetten, Ludwig von Sternfels als Vormund der Kinder des Eberhard von Leyen sowie Reinhard von Dienheim als Lehenträger für seine Ehefrau Ruffina von Leyen, mit den Dottenheimischen Lehen im Schüpfergrund, darunter Anteilen am Schloss Schüpf und Dorf Uiffingen sowie Einkünften und Gütern an weiteren Orten.",
       "english": "Reversal by Philipp Karl Freiherr von Hoheneck, cantor of Mainz Cathedral, who had been appointed feudal representative by his named co-heirs in the Dottenheim hereditary fief in the Schüpfergrund, concerning the enfeoffment by Archbishop, Archchancellor, and Elector Karl with properties listed in an incorporated charter dated 5 February 1578. In that charter, Archbishop Daniel of Mainz enfeoffs the heirs of the late Albrecht von Rosenberg, Ritter: Eberhard von Stetten zu Hochstetten; Ludwig von Sternfels as guardian of Eberhard von Leyen’s children; and Reinhard von Dienheim as feudal representative for his wife Rufina von Leyen. The fiefs included shares in Schüpf Castle and the village of Uiffingen, as well as revenues and properties at other places.",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Eberhard von Leyen"
+        },
+        {
+          "person": "Reinhard von Dienheim"
+        },
+        {
+          "person": "Rufina von Leyen"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Stetten",
@@ -14,17 +31,38 @@
             "zu Hochstetten"
           ],
           "type": "generic",
-          "content": "was named in the inserted charter of 5 February 1578 as an heir of the late Albrecht von Rosenberg and a recipient of Dottenheim fiefs."
+          "content": "was named in the inserted charter of 5 February 1578 as an heir of the late Albrecht von Rosenberg and a recipient of Dottenheim fiefs.",
+          "mention": [
+            {
+              "person": "Albrecht von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Ludwig von Sternfels",
           "type": "generic",
-          "content": "acted as guardian for Eberhard von Leyen’s children, who were named in the inserted charter of 5 February 1578 as heirs of Albrecht von Rosenberg and recipients of Dottenheim fiefs."
+          "content": "acted as guardian for Eberhard von Leyen’s children, who were named in the inserted charter of 5 February 1578 as heirs of Albrecht von Rosenberg and recipients of Dottenheim fiefs.",
+          "mention": [
+            {
+              "person": "Eberhard von Leyen"
+            },
+            {
+              "person": "Albrecht von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Reinhard von Dienheim",
           "type": "generic",
-          "content": "acted as feudal representative for his wife Ruffina von Leyen, who was named in the inserted charter of 5 February 1578 as an heir of Albrecht von Rosenberg and a recipient of Dottenheim fiefs."
+          "content": "acted as feudal representative for his wife Ruffina von Leyen, who was named in the inserted charter of 5 February 1578 as an heir of Albrecht von Rosenberg and a recipient of Dottenheim fiefs.",
+          "mention": [
+            {
+              "person": "Rufina von Leyen"
+            },
+            {
+              "person": "Albrecht von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Albrecht von Rosenberg",

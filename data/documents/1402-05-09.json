@@ -9,11 +9,30 @@
       ],
       "german": "König Rupertus weiset die Stadt Schweinfurt an, die nächste Jahressteuer dem Arnolt von Rosenberg zu geben. C.",
       "english": "King Ruprecht instructs the city of Schweinfurt to give the next annual tax to Arnold von Rosenberg. C.",
+      "mention": [
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "person": "Arnold von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "was designated by King Ruprecht to receive Schweinfurt’s next annual tax."
+          "content": "was designated by King Ruprecht to receive Schweinfurt’s next annual tax.",
+          "mention": [
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -28,7 +47,18 @@
         "https://www.digitale-sammlungen.de/de/view/bsb00009261"
       ],
       "german": "1402 Mai 9, Amberg. König Ruprecht befiehlt der Stadt Schweinfurt, die nächste fällige Reichssteuer Arnolt von Rosenberg zu geben.",
-      "english": "1402 May 9, Amberg. King Rupert orders the city of Schweinfurt to pay the next imperial tax due to Arnold von Rosenberg."
+      "english": "1402 May 9, Amberg. King Rupert orders the city of Schweinfurt to pay the next imperial tax due to Arnold von Rosenberg.",
+      "mention": [
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "person": "Arnold von Rosenberg"
+        }
+      ]
     }
   ]
 }

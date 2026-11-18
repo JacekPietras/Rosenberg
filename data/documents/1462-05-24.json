@@ -7,6 +7,17 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1746499",
       "german": "Hans von Hardheim verkauft seinem Bruder Jörg von Hardheim und dessen Ehefrau Walburga von Rosenberg seinen Teil des Schlosses und Vorhofs zu Hardheim um 600 Gulden.\n\nLaufzeit: 1462 Mai 24 (1462 Montag vor Christi Himmelfahrt)",
       "english": "Hans von Hartheim sells his share of the castle and outer court at Hardheim to his brother Georg von Hartheim and his wife Walpurga von Rosenberg for 600 guilders.\n\nDate: May 24, 1462 (1462 Monday before Ascension)",
+      "mention": [
+        {
+          "person": "Hans von Hartheim"
+        },
+        {
+          "person": "Georg von Hartheim"
+        },
+        {
+          "person": "Walpurga von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Georg von Hartheim",
@@ -16,7 +27,15 @@
         {
           "person": "Walpurga von Rosenberg",
           "type": "generic",
-          "content": "bought with her husband Georg von Hardheim his brother Hans von Hardheim’s share of the castle and outer court at Hardheim."
+          "content": "bought with her husband Georg von Hardheim his brother Hans von Hardheim’s share of the castle and outer court at Hardheim.",
+          "mention": [
+            {
+              "person": "Georg von Hardheim"
+            },
+            {
+              "person": "Hans von Hardheim"
+            }
+          ]
         }
       ],
       "img": [

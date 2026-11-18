@@ -9,6 +9,11 @@
       ],
       "german": "Eberhard von Rosenberg, zu Jagstberg gesessen: Schuldsumme.",
       "english": "Eberhard von Rosenberg, resident of Jagstberg: sum owed.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",

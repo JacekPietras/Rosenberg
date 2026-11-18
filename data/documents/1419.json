@@ -9,6 +9,11 @@
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
       "german": "Peter Mönch v. Rosenberg ist Vogt auf dem Steinsberg. GLA 67/1005:40v; WÜST 1976:139; GEHRIG 1979:30",
       "english": "Peter Mönch von Rosenberg is Vogt zu Steinsberg.",
+      "mention": [
+        {
+          "person": "Peter Mönch von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Peter Mönch von Rosenberg",

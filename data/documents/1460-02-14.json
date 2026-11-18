@@ -9,7 +9,18 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1460_II_14/charter"
       ],
       "german": "Vidimus der Urkunde des Königs Johann für Peter von Rosenberg, ddto. Leitmeritz, 17. September, 1333.(N. XLI.)",
-      "english": "Vidimus of the charter of König Johann for Peter von Rosenberg, issued at Leitmeritz on 17 September 1333 (no. XLI)."
+      "english": "Vidimus of the charter of König Johann for Peter von Rosenberg, issued at Leitmeritz on 17 September 1333 (no. XLI).",
+      "mention": [
+        {
+          "person": "König Hans",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "Peter von Rosenberg"
+        }
+      ]
     }
   ]
 }

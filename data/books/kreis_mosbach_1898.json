@@ -178,6 +178,11 @@
           "person": "Guota von Boxberg",
           "type": "generic",
           "content": "may have been the wife of the later Konrad von Boxberg; the Comburg donation book records her as the wife of a Konrad around 1100 (Württembergisches Urkundenbuch, I, no. A21).",
+          "mention": [
+            {
+              "person": "Konrad von Boxberg"
+            }
+          ],
           "date": "1100"
         },
         {
@@ -278,18 +283,42 @@
           "person": "Michael von Rosenberg",
           "type": "generic",
           "content": "with Jörg von Rosenberg and Arnold Friedrich von Rosenberg granted Boxberg a weekly market to be held on Saturdays.",
+          "mention": [
+            {
+              "person": "Georg von Rosenberg"
+            },
+            {
+              "person": "Arnold Friedrich von Rosenberg"
+            }
+          ],
           "date": "1479"
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "with Michel von Rosenberg and Arnold Friedrich von Rosenberg granted Boxberg a weekly market to be held on Saturdays.",
+          "mention": [
+            {
+              "person": "Michael von Rosenberg"
+            },
+            {
+              "person": "Arnold Friedrich von Rosenberg"
+            }
+          ],
           "date": "1479"
         },
         {
           "person": "Arnold Friedrich von Rosenberg",
           "type": "generic",
           "content": "with Michel and Jörg von Rosenberg granted Boxberg a weekly market to be held on Saturdays.",
+          "mention": [
+            {
+              "person": "Michael von Rosenberg"
+            },
+            {
+              "person": "Georg von Rosenberg"
+            }
+          ],
           "date": "1479"
         }
       ]
@@ -554,6 +583,11 @@
           "person": "Stephan von der Thann",
           "type": "generic",
           "content": "sold the farm he shared with Margaretha von Uissigheim at Uissigheim to Bronnbach Monastery.",
+          "mention": [
+            {
+              "person": "Margaretha von Uissigheim"
+            }
+          ],
           "date": "1457"
         },
         {
@@ -566,6 +600,11 @@
           "person": "Stephan von der Thann",
           "type": "generic",
           "content": "sold the Uissigheim-area holdings he shared with Margaretha von Uissigheim to Bronnbach Monastery.",
+          "mention": [
+            {
+              "person": "Margaretha von Uissigheim"
+            }
+          ],
           "date": "1457"
         },
         {
@@ -678,12 +717,22 @@
           "person": "Mathern von Grumbach",
           "type": "generic",
           "content": "sold the castle and its property at Uissigheim to Michel Voit von Rineck.",
+          "mention": [
+            {
+              "person": "Michael von Rineck"
+            }
+          ],
           "date": "1486"
         },
         {
           "person": "Michael Voit von Rieneck",
           "type": "generic",
           "content": "acquired the castle and its property at Uissigheim from Mathern von Grumbach.",
+          "mention": [
+            {
+              "person": "Mathern von Grumbach"
+            }
+          ],
           "date": "1486"
         },
         {
@@ -787,6 +836,11 @@
           ],
           "type": "generic",
           "content": "witnessed a Bronnbach charter together with Siboto von Wölchingen.",
+          "mention": [
+            {
+              "person": "Siboto von Wölchingen"
+            }
+          ],
           "date": "1221"
         },
         {
@@ -799,6 +853,11 @@
           "person": "Konrad von Krautheim",
           "type": "generic",
           "content": "was named with Gotfried von Hohenlohe in an agreement identifying Wölchingen as part of the lordship of Boxberg.",
+          "mention": [
+            {
+              "person": "Gotfried von Hohenlohe"
+            }
+          ],
           "date": "1239"
         },
         {

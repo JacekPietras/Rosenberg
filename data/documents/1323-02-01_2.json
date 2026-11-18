@@ -6,6 +6,15 @@
       "url": "https://www.bavarikon.de/object/bav:AAB-URK-00000BAV80035790?cq=%22von%20Rosenberg%22&lang=en",
       "german": "Ritter Eberhard von Rosenberg, Vogt, Schultheiß und Schöffen von (Tauber-)Bischofsheim beurkunden, dass Heinrich Wernheri und seine Ehefrau Hadewig und beider genannte Töchter und ihr Eidam, Bürger von (Tauber-)Bischofsheim, an Dekan und Kapitel von Aschaffenburg für 60 Pfund Heller aus genannten Weinbergen und Äckern daselbst eine Gült von 5 Pfund Hellern zur Präsenz verkaufen.",
       "english": "Eberhard von Rosenberg, Ritter, Vogt, the mayor, and the aldermen of (Tauber-)Bischofsheim certify that Heinrich Wernheri and his wife Hadewig, their named daughters, and their son-in-law, citizens of (Tauber-)Bischofsheim, sell to the dean and chapter of Aschaffenburg, for 60 pounds Heller, an annual rent of 5 pounds Heller from specified vineyards and fields there for the chapter's common fund.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Vogt"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "vogt_zu_Durn",

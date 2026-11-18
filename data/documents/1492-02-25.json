@@ -9,7 +9,12 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1492_II_25/charter"
       ],
       "german": "König Wladislaw II. gestattet dem Wok von Rosenberg und dessen Brüdern Peter und Ulrich, den dem Kloster Goldenkron von der Stadt Latron in Krummau gebührenden Zins käuflich an sich zu bringen.",
-      "english": "King Władysław II permits Wok von Rosenberg and his brothers Peter and Ulrich to purchase for themselves the rent due to Goldenkron Monastery from the town of Latron in Krumau."
+      "english": "King Władysław II permits Wok von Rosenberg and his brothers Peter and Ulrich to purchase for themselves the rent due to Goldenkron Monastery from the town of Latron in Krumau.",
+      "mention": [
+        {
+          "person": "Wok von Rosenberg"
+        }
+      ]
     }
   ]
 }

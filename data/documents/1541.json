@@ -17,7 +17,18 @@
         {
           "person": "Wolf von Rosenberg",
           "type": "generic",
-          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg after the death of his Vetter Zaisolf von Rosenberg."
+          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg after the death of his Vetter Zaisolf von Rosenberg.",
+          "mention": [
+            {
+              "person": "Konrad of Würzburg",
+              "personTitle": [
+                "Bishop"
+              ]
+            },
+            {
+              "person": "Zaisolph von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Wolf von Rosenberg",
@@ -32,7 +43,18 @@
         {
           "person": "Christoph von Rosenberg",
           "type": "generic",
-          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg after the death of his Vetter Zaisolf von Rosenberg."
+          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg after the death of his Vetter Zaisolf von Rosenberg.",
+          "mention": [
+            {
+              "person": "Konrad of Würzburg",
+              "personTitle": [
+                "Bishop"
+              ]
+            },
+            {
+              "person": "Zaisolph von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Christoph von Rosenberg",
@@ -52,7 +74,18 @@
         {
           "person": "Ludwig von Rosenberg",
           "type": "generic",
-          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg after the death of his Vetter Zaisolf von Rosenberg."
+          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg after the death of his Vetter Zaisolf von Rosenberg.",
+          "mention": [
+            {
+              "person": "Konrad of Würzburg",
+              "personTitle": [
+                "Bishop"
+              ]
+            },
+            {
+              "person": "Zaisolph von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Ludwig von Rosenberg",
@@ -72,7 +105,21 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg as one of the four brothers, after the death of their cousin Zaisolph von Rosenberg, Ritter."
+          "content": "received half of the fiefs at Baldersheim from Bishop Konrad of Würzburg as one of the four brothers, after the death of their cousin Zaisolph von Rosenberg, Ritter.",
+          "mention": [
+            {
+              "person": "Konrad of Würzburg",
+              "personTitle": [
+                "Bishop"
+              ]
+            },
+            {
+              "person": "Zaisolph von Rosenberg",
+              "personTitle": [
+                "Ritter"
+              ]
+            }
+          ]
         },
         {
           "person": "Zaisolph von Rosenberg",

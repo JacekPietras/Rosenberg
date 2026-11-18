@@ -10,6 +10,32 @@
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
       "german": "König Ruprecht bekennt, dass er Dieter v. *Inseltheim* 6000 fl. schuldet; es bürgen Hofmeister Emich v. Leiningen, Hans Schenk v. Erbach, Johann v. Hirschhorn, Schwarz Reinhard v. Sickingen Landvogt im Elsaß, Hermann v. Rodenstein, Siegfried v. Stein, Wiprecht v. Helmstatt d.J. Vogt zu Bretten, Haushofmeister Albrecht v. Berwangen, Cuntz Münch Vogt zu Steinsberg u.a. GLA 67/906:20; OBERNDORFF 1912, Nr. 1234; GEHRIG 1970:86, 1979:30; WÜST 1976:139",
       "english": "King Ruprecht acknowledges that he owes Diether von Inseltheim 6000 fl.; the sureties are Hofmeister Emich von Leiningen, Hans Schenk von Erbach, Hans von Hirschhorn, Schwarz Reinhard von Sickingen, Landvogt in Alsace, Herman von Rodenstein, Siegfried von Stein, Wiprecht von Helmstadt der Jüngere, Vogt zu Bretten, Haushofmeister Albrecht von Berwangen, Kunz Mönch von Rosenberg, Vogt zu Steinsberg, and others.",
+      "mention": [
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "person": "Hans Schenk von Erbach"
+        },
+        {
+          "person": "Hans von Hirschhorn"
+        },
+        {
+          "person": "Reinhard von Sickingen"
+        },
+        {
+          "person": "Herman von Rodenstein"
+        },
+        {
+          "person": "Wiprecht von Helmstadt"
+        },
+        {
+          "person": "Kunz Mönch von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Kunz Mönch von Rosenberg",
@@ -17,7 +43,15 @@
             "Vogt zu Steinsberg"
           ],
           "type": "generic",
-          "content": "stood surety for King Ruprecht's debt to Diether von Inseltheim."
+          "content": "stood surety for King Ruprecht's debt to Diether von Inseltheim.",
+          "mention": [
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         }
       ]
     }

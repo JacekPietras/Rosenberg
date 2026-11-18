@@ -6,6 +6,23 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723974",
       "german": "Michael von Rosenberg tritt den schon von seinem Vater Jörg von dessen Vettern Hans Thomas, Hans Melchior und Hans Ulrich von Rosenberg ererbten Anteil an dem alten Stammlehen, Schloss und Stadt Boxberg, samt Zugehörungen und Gerechtigkeiten, nachdem er sich mit Kurfürst Friedrich II. von der Pfalz mittels eines besondern Vertrags darüber verglichen hat, an den Kurfürsten ab und verzichtet auf alle seine Anrechte.",
       "english": "Michael von Rosenberg, including hearings and justice, after he compared with the Elector of Elector Frederick II of the Palatinate by especially a treaty about it, comes to the Elector, Michael von Rosenberg, already inherited by his father Jörg from his cousin Hans, Hans Melchior and Hans Ulrich von Rosenberg, after he has compared himself with Elector Frederick II of the Palatinate by about it and renounces all his right.",
+      "mention": [
+        {
+          "person": "Michael von Rosenberg"
+        },
+        {
+          "person": "Michael von Rosenberg"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Hans Melchior von Rosenberg"
+        },
+        {
+          "person": "Hans Ulrich von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Friedrich II. von der Pfalz",
@@ -55,7 +72,18 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "inherited a share in the old family fief of Boxberg, including the castle, town, appurtenances, and rights, from his cousins Hans Thomas, Hans Melchior, and Hans Ulrich von Rosenberg."
+          "content": "inherited a share in the old family fief of Boxberg, including the castle, town, appurtenances, and rights, from his cousins Hans Thomas, Hans Melchior, and Hans Ulrich von Rosenberg.",
+          "mention": [
+            {
+              "person": "Hans Thomas von Rosenberg"
+            },
+            {
+              "person": "Hans Melchior von Rosenberg"
+            },
+            {
+              "person": "Hans Ulrich von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

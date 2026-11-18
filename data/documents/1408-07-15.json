@@ -11,11 +11,33 @@
       "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
       "german": "1408 juli 15 Heidelberg. Belehnt Ulrich von Rosenberg und dessen erben auf ewige Zeiten mit 1/4 der veste Rosenberg und mit dem furhoff daselbs. Ulrich von Rosenberg verspricht aus seinem teil an Rosenberg niemals der Pfalz schaden zuzufügen.",
       "english": "1408 July 15, Heidelberg. King Ruprecht enfeoffs Ulrich von Rosenberg and his heirs in perpetuity with one quarter of Rosenberg Castle and its forecourt. Ulrich von Rosenberg promises never to harm the Palatinate through his share in Rosenberg.",
+      "mention": [
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "received one quarter of Rosenberg Fortress and its outer court as a perpetual fief from King Ruprecht."
+          "content": "received one quarter of Rosenberg Fortress and its outer court as a perpetual fief from King Ruprecht.",
+          "mention": [
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         },
         {
           "person": "Ulrich von Rosenberg",
@@ -33,11 +55,30 @@
       "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
       "german": "1408 juli 15 ohne Ort. Ulrich von Rosenberg reversiert kg. Ruprecht über belehnung mit einem viertel am schloss und „furhoff“ zu Rosenberg.",
       "english": "1408 July 15, place not stated. Ulrich von Rosenberg issues a reverse to King Ruprecht concerning his enfeoffment with one quarter of the castle and “forecourt” at Rosenberg.",
+      "mention": [
+        {
+          "person": "Ulrich von Rosenberg"
+        },
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "issued a feudal acknowledgment to King Ruprecht for the grant of one quarter of the castle and outer court at Rosenberg."
+          "content": "issued a feudal acknowledgment to King Ruprecht for the grant of one quarter of the castle and outer court at Rosenberg.",
+          "mention": [
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         }
       ]
     }

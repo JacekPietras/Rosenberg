@@ -103,7 +103,8 @@ def duplicate_place_ids(places):
 if __name__ == "__main__":
     path = ROOT / "data" / "places.json"
     variations, hidden = normalize(path)
-    print(f"Removed {variations} duplicate place variation(s).")
+    if variations:
+        print(f"Removed {variations} duplicate place variation(s).")
     print(f"Normalized {hidden} hidden place(s).")
     errors = visible_place_errors(json.loads(path.read_text(encoding="utf-8")))
     conflicts = variation_conflicts(json.loads(path.read_text(encoding="utf-8")))

@@ -9,7 +9,12 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1457_V_22/charter"
       ],
       "german": "König Ladislaus befiehlt dem Johann von Rosenberg, seinen Vater Ulrich zur Rückstellung der Goldenkroner und Mühlhausner Klostergüter zu vermögen.",
-      "english": "Ladislaus, König orders Hans von Rosenberg to persuade his father Ulrich to restore the monastic estates of Goldenkron and Mühlhausen."
+      "english": "Ladislaus, König orders Hans von Rosenberg to persuade his father Ulrich to restore the monastic estates of Goldenkron and Mühlhausen.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg"
+        }
+      ]
     }
   ]
 }

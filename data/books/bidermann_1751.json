@@ -75,6 +75,11 @@
           "person": "Eckhard von Rosenberg",
           "type": "generic",
           "content": "made an agreement with his brother Eberhard von Rosenberg.",
+          "mention": [
+            {
+              "person": "Eberhard von Rosenberg"
+            }
+          ],
           "date": "1312"
         },
         {
@@ -821,6 +826,11 @@
           ],
           "type": "generic",
           "content": "pledged his share in Rosenberg Castle and town as security for his obligations to Hans von Rosenberg.",
+          "mention": [
+            {
+              "person": "Hans von Rosenberg"
+            }
+          ],
           "date": "1512"
         },
         {
@@ -831,6 +841,14 @@
           ],
           "type": "generic",
           "content": "stood surety for Arnold von Rosenberg’s obligation to Hans von Rosenberg.",
+          "mention": [
+            {
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "person": "Hans von Rosenberg"
+            }
+          ],
           "date": "1512"
         },
         {
@@ -841,6 +859,14 @@
           ],
           "type": "generic",
           "content": "stood surety for Arnold von Rosenberg’s obligation to Hans von Rosenberg.",
+          "mention": [
+            {
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "person": "Hans von Rosenberg"
+            }
+          ],
           "date": "1512"
         },
         {
@@ -850,24 +876,56 @@
           ],
           "type": "generic",
           "content": "stood surety for Arnold von Rosenberg’s obligation to Hans von Rosenberg.",
+          "mention": [
+            {
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "person": "Hans von Rosenberg"
+            }
+          ],
           "date": "1512"
         },
         {
           "person": "Philipp von Uissigheim",
           "type": "generic",
           "content": "stood surety for Arnold von Rosenberg’s obligation to Hans von Rosenberg.",
+          "mention": [
+            {
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "person": "Hans von Rosenberg"
+            }
+          ],
           "date": "1512"
         },
         {
           "person": "Siegmund von Uissigheim",
           "type": "generic",
           "content": "stood surety for Arnold von Rosenberg’s obligation to Hans von Rosenberg.",
+          "mention": [
+            {
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "person": "Hans von Rosenberg"
+            }
+          ],
           "date": "1512"
         },
         {
           "person": "Leonhard von Rosenberg",
           "type": "generic",
           "content": "stood surety for Arnold von Rosenberg’s obligation to Hans von Rosenberg.",
+          "mention": [
+            {
+              "person": "Arnold von Rosenberg"
+            },
+            {
+              "person": "Hans von Rosenberg"
+            }
+          ],
           "date": "1512"
         },
         {
@@ -1256,6 +1314,11 @@
           "person": "Konrad von Rosenberg",
           "type": "generic",
           "content": "bought a quarter of the great tithe and nearly all of the small tithe at Sindolsheim, plus half of a quarter at Mellenheim, from Heinrich von Seckendorf genannt Werdar.",
+          "mention": [
+            {
+              "person": "Heinrich von Seckendorf"
+            }
+          ],
           "date": "1448"
         },
         {
@@ -1265,24 +1328,53 @@
           ],
           "type": "generic",
           "content": "stood surety for Konrad von Rosenberg’s purchase from Heinrich von Seckendorf genannt Werdar.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            },
+            {
+              "person": "Heinrich von Seckendorf"
+            }
+          ],
           "date": "1448"
         },
         {
           "person": "Heinrich von Hohenheim",
           "type": "generic",
           "content": "stood surety for Konrad von Rosenberg’s purchase from Heinrich von Seckendorf genannt Werdar.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            },
+            {
+              "person": "Heinrich von Seckendorf"
+            }
+          ],
           "date": "1448"
         },
         {
           "person": "Wilhelm Zollner von der Hallburg",
           "type": "generic",
           "content": "stood surety for Konrad von Rosenberg’s purchase from Heinrich von Seckendorf genannt Werdar.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            },
+            {
+              "person": "Heinrich von Seckendorf"
+            }
+          ],
           "date": "1448"
         },
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
           "content": "had inherited by this year a half share of Neuenbrunn, Oberndorf, and Streichenthal as a fief from the Würzburg foundation, formerly held by his cousin Konrad von Rosenberg zu Gnetsheim.",
+          "mention": [
+            {
+              "person": "Konrad von Rosenberg"
+            }
+          ],
           "date": "1541"
         },
         {
@@ -1295,6 +1387,20 @@
           "person": "Lorenz von Rosenberg",
           "type": "generic",
           "content": "asked that the fiefs in Neuenbrunn, Oberndorf, and Streichenthal be granted to his cousins Wolf, Christoph, Ludwig, and Zeisolf von Rosenberg.",
+          "mention": [
+            {
+              "person": "Wolf von Rosenberg"
+            },
+            {
+              "person": "Christoph von Rosenberg"
+            },
+            {
+              "person": "Ludwig von Rosenberg"
+            },
+            {
+              "person": "Zaisolph von Rosenberg"
+            }
+          ],
           "date": "1541"
         },
         {
@@ -1673,6 +1779,17 @@
           "person": "Christoph von Rosenberg",
           "type": "generic",
           "content": "requested Bishop Konrad of Würzburg to grant his fiefs to his son Hans Kaspar von Rosenberg.",
+          "mention": [
+            {
+              "person": "Konrad of Würzburg",
+              "personTitle": [
+                "Bishop"
+              ]
+            },
+            {
+              "person": "Hans Caspar von Rosenberg"
+            }
+          ],
           "date": "1531"
         },
         {
@@ -1703,12 +1820,22 @@
           "person": "Ludwig von Rosenberg",
           "type": "generic",
           "content": "received Haltenbergstetten and other property in a division with his brother Wolfgang von Rosenberg.",
+          "mention": [
+            {
+              "person": "Wolfgang von Rosenberg"
+            }
+          ],
           "date": "1542"
         },
         {
           "person": "Friedrich Zaisolph von Rosenberg",
           "type": "generic",
           "content": "received Haltenbergstetten and other property in a division with his brother Wolfgang von Rosenberg.",
+          "mention": [
+            {
+              "person": "Wolfgang von Rosenberg"
+            }
+          ],
           "date": "1542"
         },
         {
@@ -1730,6 +1857,14 @@
           "person": "Wolfgang von Rosenberg",
           "type": "generic",
           "content": "received Gnetsheim, Neubrunn, Oberndorf and Triegelbronn in a division with his brothers Ludwig and Friedrich Zeisolf von Rosenberg.",
+          "mention": [
+            {
+              "person": "Ludwig von Rosenberg"
+            },
+            {
+              "person": "Friedrich Zaisolph von Rosenberg"
+            }
+          ],
           "date": "1542"
         },
         {
@@ -1842,6 +1977,11 @@
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
           "content": "was enfeoffed with the tithe at Haltenbergstetten by Georg Friedrich Graf von Hohenlohe.",
+          "mention": [
+            {
+              "person": "Georg Friedrich von Hohenlohe"
+            }
+          ],
           "date": "1631-02-28"
         },
         {
@@ -1866,6 +2006,14 @@
           ],
           "type": "generic",
           "content": "obtained Bishop Friedrich of Würzburg’s consent to secure property for his wife Anna von der Keer.",
+          "mention": [
+            {
+              "person": "Friedrich of Würzburg",
+              "personTitle": [
+                "Bishop"
+              ]
+            }
+          ],
           "date": "1559"
         },
         {

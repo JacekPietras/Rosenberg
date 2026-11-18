@@ -6,6 +6,23 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723841",
       "german": "Eberhard von Rosenberg gibt seinem Vetter Ulrich von Rosenberg den Teil zu Boxberg, den sein Vater Eberhard von Rosenberg von Ulrich und Jörg von Rosenberg um 3.000 Gulden als Pfandschaft erhalten hatte, um dieselbe Summe wieder zu lösen.",
       "english": "Eberhard von Rosenberg gives his cousin Ulrich von Rosenberg the part of Boxberg, which his father Eberhard von Rosenberg of Ulrich von Rosenberg and Georg von Rosenberg had received a 3,000 guilder as pledge in order to solve the same sum.",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -33,7 +50,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "transferred to his cousin Ulrich von Rosenberg the Boxberg share that his father had held as a 3,000-guilder pledge, in order to redeem the pledge."
+          "content": "transferred to his cousin Ulrich von Rosenberg the Boxberg share that his father had held as a 3,000-guilder pledge, in order to redeem the pledge.",
+          "mention": [
+            {
+              "person": "Ulrich von Rosenberg"
+            }
+          ]
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -41,7 +63,15 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "had received the Boxberg share as a 3,000-guilder pledge from Ulrich and Jörg von Rosenberg."
+          "content": "had received the Boxberg share as a 3,000-guilder pledge from Ulrich and Jörg von Rosenberg.",
+          "mention": [
+            {
+              "person": "Ulrich von Rosenberg"
+            },
+            {
+              "person": "Georg von Rosenberg"
+            }
+          ]
         }
       ],
       "img": [

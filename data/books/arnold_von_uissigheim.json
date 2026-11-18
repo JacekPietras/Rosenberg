@@ -372,6 +372,11 @@
           ],
           "type": "generic",
           "content": "issued an agreement with Count Rudolf von Wertheim.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1332-11-24"
         },
         {
@@ -382,18 +387,33 @@
           ],
           "type": "generic",
           "content": "issued the agreement with Count Rudolf von Wertheim.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1332-11-24"
         },
         {
           "person": "Heinrich von Uissigheim",
           "type": "generic",
           "content": "issued the agreement with Count Rudolf von Wertheim.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1332-11-24"
         },
         {
           "person": "Eberhard von Uissigheim",
           "type": "generic",
           "content": "issued the agreement with Count Rudolf von Wertheim.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1332-11-24"
         }
       ]
@@ -409,6 +429,11 @@
           ],
           "type": "generic",
           "content": "agreed with Count Rudolf von Wertheim to leave the Wertheim territory for ten years beginning on Candlemas, 2 February 1333.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1332-11-24"
         },
         {
@@ -528,6 +553,11 @@
           ],
           "type": "generic",
           "content": "may have been subjected to collective responsibility together with his extended family by Count Rudolf von Wertheim.",
+          "mention": [
+            {
+              "person": "Rudolf von Wertheim"
+            }
+          ],
           "date": "1332-11-24"
         },
         {
@@ -799,6 +829,11 @@
           ],
           "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have been captured by Gotfried von Hohenlohe.",
+          "mention": [
+            {
+              "person": "Gotfried von Hohenlohe"
+            }
+          ],
           "date": "1336"
         },
         {
@@ -1020,6 +1055,11 @@
           "person": "Hans Gamans",
           "type": "generic",
           "content": "recorded the inscription on Arnold von Uissigheim’s grave monument in the church at Uissigheim.",
+          "mention": [
+            {
+              "person": "Arnold von Uissigheim"
+            }
+          ],
           "date": "1641"
         },
         {

@@ -10,11 +10,57 @@
       ],
       "german": "Georg von Rosenberg und Sebastian Geyer von Giebelstadt, Amtmann zu Bütthard (Buthardt), die eine Auseinandersetzung zwischen dem Administrator und Deutschmeister, Walter von Cronberg, und ihren Vettern und Schwägern Sigmund und Philipp Truchsess von Baldersheim (Baldershaim) durch den in der inserierten Urkunde niedergelegten Spruch beigelegt hatten, beurkunden, daß dem Deutschen Orden einerseits und Sigmund und Philipp Truchsess andererseits genannten Vermessung der strittigen Güter der Zehnt von jeweils genannten Gütern zusteht. Beide Parteien erhalten eine Ausfertigung der Urkunden.\n\nLaufzeit: 1535 Oktober 4 (montage nach sand Michaelistage)\n\nSiegler: Georg von Rosenberg; Sebastian Geyer von Giebelstadt, Amtmann zu Bütthard; Walter von Cronberg; Sigmund und Philipp Truchsess von Baldersheim",
       "english": "Georg von Rosenberg and Sebastian Geyer von Giebelstadt, District Administrator of Bütthard (Buthardt), who had settled a dispute between the Administrator and Grand Master Walter von Cronberg and their cousins and brothers-in-law Sigmund and Philipp Truchsess von Baldersheim through the ruling set forth in the attached charter, certify that to the Teutonic Order on one side and Sigmund and Philipp Truchsess on the other side belongs the tithe of each of the disputed properties as determined by the aforementioned survey. Both parties receive a copy of the charter.\n\nDuration: October 4, 1535 (Monday after St. Michael's Day)\n\nSeal: Georg von Rosenberg; Sebastian Geyer von Giebelstadt, District Administrator of Bütthard; Walter von Cronberg; Sigmund and Philipp Truchsess von Baldersheim",
+      "mention": [
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Sebastian Geyer von Giebelstadt"
+        },
+        {
+          "person": "Walter von Cronberg"
+        },
+        {
+          "person": "Siegmund Truchsess von Baldersheim"
+        },
+        {
+          "person": "Philipp Truchsess von Baldersheim"
+        },
+        {
+          "person": "Siegmund Truchsess von Baldersheim"
+        },
+        {
+          "person": "Philipp Truchsess von Baldersheim"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Sebastian Geyer von Giebelstadt"
+        },
+        {
+          "person": "Walter von Cronberg"
+        },
+        {
+          "person": "Siegmund Truchsess von Baldersheim"
+        },
+        {
+          "person": "Philipp Truchsess von Baldersheim"
+        }
+      ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "certified the allocation of tithes between the Teutonic Order and Sigmund and Philipp Truchsess von Baldersheim after the earlier settlement he had helped broker."
+          "content": "certified the allocation of tithes between the Teutonic Order and Sigmund and Philipp Truchsess von Baldersheim after the earlier settlement he had helped broker.",
+          "mention": [
+            {
+              "person": "Siegmund Truchsess von Baldersheim"
+            },
+            {
+              "person": "Philipp Truchsess von Baldersheim"
+            }
+          ]
         }
       ],
       "img": [

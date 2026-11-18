@@ -8,11 +8,24 @@
       "summary": "Konrad Schenk von Limpurg (Schenck Conrad von Limpurg) verkauft Konrad von Rosenberg (Contz von Rosenberg) das halbe Schloss Haltenbergstetten (Haldenbergsteten) mitsamt dem Markt und allen anderen Rechten und Zu- und Einbehörungen für 1500 Gulden auf Widerlosung.",
       "german": "[Nachtragshand: Vnd] Anno 1415 am tag Cathedra Petri hat Schenck Conrad von Limpurg Contzen von Rosenberg den halbentail an dem schloss Haldenbergsteten, sambt dem markt vnd allen anderen rechten gerechtickaiten, zu vnd eingehorungen fur xv c fl vf widerlosung zukauffen geben. Recepta Omissorum fo 417. [Nachtragshand am Rand: Münster kirchsatz] Kommentar: Die Nachtragshand ergänzt: Münster kirchsatz ).",
       "english": "[Later addition:] In 1415, on the Feast of St Peter’s Chair, Konrad Schenk von Limpurg sold Konrad von Rosenberg half of Schloss Haltenbergstetten, together with the market and all other rights and appurtenances, for 1,500 florins, redeemable. Register of Omissorum, fol. 417. Marginal addition: Münster church patronage. Editorial note: The later hand adds ‘Münster church patronage.’",
+      "mention": [
+        {
+          "person": "Konrad Schenk von Limpurg"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "received half of Schloss Haltenbergstetten, together with the market and its other rights and appurtenances, as a redeemable purchase from Konrad Schenk von Limpurg."
+          "content": "received half of Schloss Haltenbergstetten, together with the market and its other rights and appurtenances, as a redeemable purchase from Konrad Schenk von Limpurg.",
+          "mention": [
+            {
+              "person": "Konrad Schenk von Limpurg"
+            }
+          ]
         }
       ],
       "img": [

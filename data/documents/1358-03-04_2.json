@@ -6,7 +6,21 @@
       "source": "OÖUB 7 (Wien 1876), S. 561, Nr. 549, 1358 III 04",
       "url": "https://www.monasterium.net/mom/OOEUB/1358_III_04/charter",
       "german": "Die Brüder Peter, Jost, Ulrich und Johann von Rosenberg versprechen dem Spruche Reinprechts von Wallsee in ihren Streitigkeiten mit Bischof Gottfried von Passau bis auf künftige Pfingsten nachkommen zu wollen.",
-      "english": "The brothers Peter, Jost, Ulrich, and Hans von Rosenberg promise to abide by Reinprecht von Wallsee's ruling in their disputes with Bishop Gottfried of Passau until the coming Pentecost."
+      "english": "The brothers Peter, Jost, Ulrich, and Hans von Rosenberg promise to abide by Reinprecht von Wallsee's ruling in their disputes with Bishop Gottfried of Passau until the coming Pentecost.",
+      "mention": [
+        {
+          "person": "Peter von Rosenberg"
+        },
+        {
+          "person": "Jost von Rosenberg"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        }
+      ]
     }
   ]
 }

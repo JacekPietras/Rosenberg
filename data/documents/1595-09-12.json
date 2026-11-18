@@ -7,6 +7,14 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723479",
       "german": "Die Witwe Amalie von Sickingen geb. von Rosenberg cediert ihre Ansprüche auf das Dorf Bofsheim ihren Schwestern Felicitas Rüdt und Anna Susanna von Wollmershausen.\n\nLaufzeit: 1595 September 12",
       "english": "The widow Amalie von Sickingen née von Rosenberg cedes her claims to the village of Bofsheim to her sisters Felicitas Rüdt and Anna Susanna von Wollmershausen.\n\nDuration: September 12, 1595",
+      "mention": [
+        {
+          "person": "Amalie von Rosenberg"
+        },
+        {
+          "person": "Felicitas Rüd"
+        }
+      ],
       "facts": [
         {
           "person": "Amalie von Sickingen",
@@ -21,7 +29,12 @@
         {
           "person": "Amalie von Sickingen",
           "type": "generic",
-          "content": "ceded her claims to Bofsheim to her sisters Felicitas Rüdt and Anna Susanna von Wollmershausen."
+          "content": "ceded her claims to Bofsheim to her sisters Felicitas Rüdt and Anna Susanna von Wollmershausen.",
+          "mention": [
+            {
+              "person": "Felicitas Rüd"
+            }
+          ]
         }
       ],
       "img": [

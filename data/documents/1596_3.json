@@ -7,6 +7,14 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755775",
       "german": "Verkauf aller Rechte zu Oberbalbach mit Ausnahme des Kirchensatzes an Stefan Zobel von Giebelstadt durch Konrad von Rosenberg[-Haltenbergstetten] zu Gnötzheim und Schüpf, 1596 [o.M. o.T.].",
       "english": "Sale of all rights in Oberbalbach except the patronage right to Stefan Zobel von Giebelstadt by Konrad von Rosenberg[-Haltenbergstetten] of Gnötzheim and Schüpf, 1596 [no month or day given].",
+      "mention": [
+        {
+          "person": "Stephan Zobel von Giebelstadt"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
@@ -15,7 +23,12 @@
             "zu Schüpf"
           ],
           "type": "generic",
-          "content": "sold all his rights at Oberbalbach except the parish patronage to Stefan Zobel von Giebelstadt."
+          "content": "sold all his rights at Oberbalbach except the parish patronage to Stefan Zobel von Giebelstadt.",
+          "mention": [
+            {
+              "person": "Stephan Zobel von Giebelstadt"
+            }
+          ]
         }
       ]
     }

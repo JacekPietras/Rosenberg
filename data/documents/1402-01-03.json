@@ -10,6 +10,20 @@
       "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
       "german": "1402 jan. 3 Nürnberg. Bekennt Peter Haberkorn 350 fl. schuldig zu sein (von wegen grafen Friedrichs von Hennenberg 350 fl., die er diesem schuldet und 100 von unser selbs wegen, umb dez willen, daz sie uns solicher spenne und tzweiunge, als sie von beiden syten mit ein gehabt han gefolgig sint worden, sie mit ein mit der mynne zu richten) und verspricht die schuld bezahlen zu wollen »von solcher sture als von unß und dez heiligen richs stat Swinfurt zu diesen nechsten zwein jaren gefallen wirdet mit namen daz halbe teil off sant Martins tag nebst kompt, vnd daz ander halbteile von demselben sand Martins tag über ein jare nechst darnach, als Wir yme auch yedez jares vnß. versigelte quitancie an dieselben von Swinfurt darüber geben wollen«. Was dem Peter H. nach marczale in dem vorgeschriebenen ziele an den 350 fl. abgeht, bezahlt der könig aus anderm gelde. Als bürgen setzt er: Arnolt von Rosenberg den alten, seinen amtmann zu Lauda (Luden) und Aphel Fachs, die in Schweihfurt das einlager leisten sollen. Der könig und die bürgen siegeln.",
       "english": "1402 January 3, Nuremberg. King Ruprecht acknowledges owing Peter Haberkorn 350 florins (in connection with Count Friedrich of Henneberg’s 350 florins, which he owes him, and 100 florins on the king’s own account), so that they may settle their disputes amicably. The king promises to repay the debt from the next taxes due from him and the imperial city of Schweinfurt over the following two years: half on the coming Martinmas and the other half on Martinmas of the next year. The king will pay from other funds any shortfall in the 350 florins according to the stated calculation. He names Arnold von Rosenberg der Ältere, his Amtmann zu Lauda, and Aphel Fachs as guarantors; they are to perform Einlager in Schweinfurt. The king and the guarantors seal the document.",
+      "mention": [
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",
@@ -18,7 +32,15 @@
             "Amtmann zu Lauda"
           ],
           "type": "generic",
-          "content": "served as a guarantor for King Ruprecht in the debt arrangement involving Peter Haberkorn."
+          "content": "served as a guarantor for King Ruprecht in the debt arrangement involving Peter Haberkorn.",
+          "mention": [
+            {
+              "person": "König Ruprecht",
+              "personTitle": [
+                "King"
+              ]
+            }
+          ]
         },
         {
           "person": "Arnold von Rosenberg",

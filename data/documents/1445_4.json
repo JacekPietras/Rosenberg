@@ -10,6 +10,20 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97876",
       "german": "Lehenbrief des Bischofs Gottfried von Würzburg für Hans von Rosenberg d.J. über ein Drittel am Zehnten zu Osterburken, Teil an Bofsheim, Teil am Schloß Rosenberg und Teil am Dorf Espelbach",
       "english": "Fief letter from Bishop Gottfried of Würzburg to Hans von Rosenberg the Younger regarding one-third of the tithe at Osterburken, share at Bofsheim, share at Rosenberg Castle and share at the village of Espelbach",
+      "mention": [
+        {
+          "person": "Gotfried of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "the Younger"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
@@ -17,7 +31,15 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "received from Bishop Gottfried of Würzburg a fief comprising one third of the tithe at Osterburken, a share in Bofsheim, a share in Rosenberg Castle, and a share in the village of Espelbach."
+          "content": "received from Bishop Gottfried of Würzburg a fief comprising one third of the tithe at Osterburken, a share in Bofsheim, a share in Rosenberg Castle, and a share in the village of Espelbach.",
+          "mention": [
+            {
+              "person": "Gotfried of Würzburg",
+              "personTitle": [
+                "Bishop"
+              ]
+            }
+          ]
         }
       ]
     }
