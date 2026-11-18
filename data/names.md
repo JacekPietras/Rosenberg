@@ -89,7 +89,7 @@ Marx
 Mathern
 Melchior
 Michael, Michel, Micheln
-Nicolaus, Claus, Nicholas, Nicolaum, Niklaus, Nikolaus, Clais, Claes
+Nicolaus, Claes, Clais, Claus, Nicholas, Nicolaum, Niklaus, Nikolaus
 Niklas, Niclas, Nyclos
 Otto, Attel
 Pankraz
