@@ -9,6 +9,7 @@ Vizedom, Vicedom, Vitzthum, Vizthum, Vitztum, Viztum, Vizdom, vicedominus, Vicar
 Keller, Kelner, cellerarius
 Domherr, canonicus, Kanoniker, Kanonikus
 Schultheiß, Schultheiss, scultetus
+Presbyter
 Bischof, Bischove, Bischofe, Bischofs, Bischofes, Bischoff, Bischoffe, Bischoffs, Bischoffes, Biſchof, Biſchofs, Biſchoff, Biſchoffs, episcopus, episcopi, episcopo, episcopum, Bishop
 Graf, Grafen
 Pfalzgraf

@@ -11,7 +11,6 @@ Zobel, Zobelin
 Geyer
 Pirchan
 Grabner
-Presbyter
 Wirt
 Winther, Winter
 Marschalk, Marschalken, Marschalkin, Marſchalk, Marschalch
