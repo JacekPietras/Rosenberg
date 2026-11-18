@@ -11,7 +11,14 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "owed a debt to Hans Carius von Rosenberg for which Wolf von Hardheim stood surety."
+          "content": "owed a debt to Hans Carius von Rosenberg for which Wolf von Hardheim stood surety.",
+          "date": "1559-02-22"
+        },
+        {
+          "person": "Albrecht von Rosenberg",
+          "type": "generic",
+          "content": "owed Friedrich von Rosenberg 1,050 Gulden, for which Wolf von Hardheim stood surety.",
+          "date": "1559-02-22"
         }
       ]
     }

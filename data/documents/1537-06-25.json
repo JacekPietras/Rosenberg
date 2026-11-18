@@ -16,6 +16,17 @@
           "personDeceased": true,
           "type": "parent",
           "of": "Thomas von Rosenberg"
+        },
+        {
+          "person": "Thomas von Rosenberg",
+          "type": "generic",
+          "content": "conveyed the hereditary and jurisdictional rights at Üttingshof to Dietrich von Cleen."
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "personDeceased": true,
+          "type": "generic",
+          "content": "had obtained the hereditary and jurisdictional rights at Üttingshof by a royal court judgment against Hartmann von Stockheim."
         }
       ],
       "img": [

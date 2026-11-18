@@ -113,6 +113,21 @@ def main(argv=None):
                 sys.stdout.write(line)
         sys.stdout.write(result.stderr)
         failed = failed or result.returncode != 0
+    title_check = subprocess.run(
+        ["node", str(LINTERS / "split_person_titles.mjs")],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    for line in title_check.stdout.splitlines(keepends=True):
+        if line.startswith("Checked fact participant names:"):
+            match = re.search(r": (\d+) finding\(s\)", line)
+            if match:
+                issues += int(match[1])
+        else:
+            sys.stdout.write(line)
+    sys.stdout.write(title_check.stderr)
+    failed = failed or title_check.returncode != 0
     print(f"Lint found {issues} issue(s); normalized {normalized_names} English name form(s).")
     return 1 if failed else 0
 

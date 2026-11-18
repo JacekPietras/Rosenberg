@@ -6,7 +6,14 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 15 Nr. 1847",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-115473",
       "german": "Schuldbrief Konrads von Weinsberg gegenüber Konrad von Rosenberg um 500 Gulden (Abschrift).",
-      "english": "Debt acknowledgment of Konrad von Weinsberg to Konrad von Rosenberg for 500 guilders (copy)."
+      "english": "Debt acknowledgment of Konrad von Weinsberg to Konrad von Rosenberg for 500 guilders (copy).",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "was owed 500 guilders by Konrad von Weinsberg under a debt instrument."
+        }
+      ]
     }
   ]
 }

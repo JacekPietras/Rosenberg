@@ -6,7 +6,19 @@
       "source": "Generallandesarchiv Karlsruhe {43 Nr. 4019, Verweisung}",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1767869",
       "german": "Pfalzgraf Ruprecht d. Ä. verpfändet seine Burg Minneberg um 2.810 Gulden an Konrad von Rosenberg und dessen Ehefrau Margarethe von Hirschhorn.",
-      "english": "Palatine Count Rupert the Elder pledges his castle Minneberg for 2,810 gulden to Konrad von Rosenberg and his wife Margaretha von Hirschhorn."
+      "english": "Palatine Count Rupert the Elder pledges his castle Minneberg for 2,810 gulden to Konrad von Rosenberg and his wife Margaretha von Hirschhorn.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "received Minneberg Castle and its appurtenances in pledge from Count Palatine Ruprecht der Ältere together with his wife Margarethe von Hirschhorn."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "spouse",
+          "of": "Margaretha von Hirschhorn"
+        }
+      ]
     }
   ]
 }

@@ -28,6 +28,31 @@ export function parsePersonNameTitles(markdown = '') {
     .filter(Boolean);
 }
 
+// Split only title forms that are listed in the project's title vocabulary.
+// Longest-first matching keeps multiword titles intact.
+export function splitPersonNameTitles(value, titleText = '') {
+  let name = String(value ?? '').trim();
+  const knownTitles = parsePersonNameTitles(titleText)
+    .sort((left, right) => right.length - left.length);
+  const titles = [];
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const title of knownTitles) {
+      const match = name.match(new RegExp(`(?:\\s+|,\\s*)(${escapePattern(title)})$`, 'iu'));
+      if (!match) continue;
+      name = name.slice(0, match.index).trim().replace(/[,;\\s]+$/u, '');
+      titles.unshift(match[1]);
+      changed = true;
+      break;
+    }
+  }
+  // A one-word remainder is usually a surname that happens to match an office
+  // (for example, Georg Keller), not a title attached to a full name.
+  if (titles.length && name.split(/\s+/u).length < 2) return { name: String(value ?? '').trim(), titles: [] };
+  return { name, titles };
+}
+
 function parsePersonNameRouteTitles(markdown = '') {
   let inRouteTitles = false;
   const routeTitles = new Set();

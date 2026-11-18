@@ -6,7 +6,14 @@
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 309",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3586090",
       "german": "Dienerbestallungen unter Bischof Philipp von Rosenberg.\n\nLaufzeit: 1492-1513\n\nEnthält: Waldordnung für die Lusshardt (1493)\n\nUmfang: 76 Blätter",
-      "english": "Appointments of servants under Bishop Philipp von Rosenberg.\n\nValidity: 1492–1513\n\nContains: Forest regulation for the Lusshardt (1493)\n\nExtent: 76 folios"
+      "english": "Appointments of servants under Bishop Philipp von Rosenberg.\n\nValidity: 1492–1513\n\nContains: Forest regulation for the Lusshardt (1493)\n\nExtent: 76 folios",
+      "facts": [
+        {
+          "person": "Philipp von Rosenberg",
+          "type": "generic",
+          "content": "was the bishop under whom servant appointments were made during 1492–1513, including a forest ordinance for Lusshardt in 1493."
+        }
+      ]
     }
   ]
 }

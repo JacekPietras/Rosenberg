@@ -11,7 +11,40 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-400456000000620002631",
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x81040960550308220210713150716447"
       ],
-      "english": "Adolf Hund von Saulheim, Dean, as well as the senior canons and canonists of the St. Burkhard collegiate church near Würzburg, grant to Melchior and Count Hermann of Hatzfeldt and to Johann Adrian, Daniel, Wilhelm Heinrich, Johann Daniel, and Georg brothers and cousins of Hatzfeldt, Lords of Wildenburg, Hatzfeld, and Odenthal, as long as their male line continues, the tithe payable to the collegiate church at Waldmannshofen in the Diocese of Würzburg, on the basis of the 1584 settlement with Konrad, Albrecht [Christoph], and Georg Siegmund von Rosenberg brothers, who have since died after the male line of the von Rosenbergs became extinct. The von Hatzfeldts commit to delivering annually 40 measures of grain, two-thirds wheat/barley and one-third oats, to the collegiate chest in Ochsenfurt, now reduced to 30 measures per year, after the village of Waldmannshofen burned down almost entirely and only 6 tenants remain. -\n\nSeal: Dean, senior, and chapter of the St. Burkhard collegiate church at Würzburg (collegiate seal); Melchior the Elder, Count and Lord of Hatzfeldt (countly seal). -Attached: Copy of the deed of August 5, 1585 with insertion of the deed of August 20, 1584. - Certification note of the copy by the date of the deed by Notary Johannes Stöer, Registrar of the Würzburg Chamber, with his signature and signet. - Princely approval of the contract of March 31, 1637 by Franz [von Hatzfeldt], Bishop of Bamberg and Würzburg, Duke of Franconia, with his signature.-\n\nSeal: Franz [von Hatzfeldt], Bishop of Bamberg and Würzburg etc.\n\nOriginal, parchment (stitched), seals 1-3 preserved. - No. 2465.\n\nReg. No. 2595"
+      "english": "Adolf Hund von Saulheim, Dean, as well as the senior canons and canonists of the St. Burkhard collegiate church near Würzburg, grant to Melchior and Count Hermann of Hatzfeldt and to Johann Adrian, Daniel, Wilhelm Heinrich, Johann Daniel, and Georg brothers and cousins of Hatzfeldt, Lords of Wildenburg, Hatzfeld, and Odenthal, as long as their male line continues, the tithe payable to the collegiate church at Waldmannshofen in the Diocese of Würzburg, on the basis of the 1584 settlement with Konrad, Albrecht [Christoph], and Georg Siegmund von Rosenberg brothers, who have since died after the male line of the von Rosenbergs became extinct. The von Hatzfeldts commit to delivering annually 40 measures of grain, two-thirds wheat/barley and one-third oats, to the collegiate chest in Ochsenfurt, now reduced to 30 measures per year, after the village of Waldmannshofen burned down almost entirely and only 6 tenants remain. -\n\nSeal: Dean, senior, and chapter of the St. Burkhard collegiate church at Würzburg (collegiate seal); Melchior the Elder, Count and Lord of Hatzfeldt (countly seal). -Attached: Copy of the deed of August 5, 1585 with insertion of the deed of August 20, 1584. - Certification note of the copy by the date of the deed by Notary Johannes Stöer, Registrar of the Würzburg Chamber, with his signature and signet. - Princely approval of the contract of March 31, 1637 by Franz [von Hatzfeldt], Bishop of Bamberg and Würzburg, Duke of Franconia, with his signature.-\n\nSeal: Franz [von Hatzfeldt], Bishop of Bamberg and Würzburg etc.\n\nOriginal, parchment (stitched), seals 1-3 preserved. - No. 2465.\n\nReg. No. 2595",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "death",
+          "diedBefore": "1638"
+        },
+        {
+          "person": "Albrecht Christoph von Rosenberg",
+          "type": "death",
+          "diedBefore": "1638"
+        },
+        {
+          "person": "Georg Siegmund von Rosenberg",
+          "type": "death",
+          "diedBefore": "1638"
+        },
+        {
+          "subject": "the von Rosenberg male line",
+          "type": "generic",
+          "content": "had become extinct by 1637."
+        },
+        {
+          "subject": "the von Rosenberg brothers Konrad, Albrecht Christoph and Georg Siegmund",
+          "type": "generic",
+          "content": "had agreed in 1584 to grant the St. Burkhard collegiate church tithe at Waldmannshofen for as long as the Hatzfeldt male line continued.",
+          "date": "1584"
+        },
+        {
+          "subject": "the Hatzfeldt family",
+          "type": "generic",
+          "content": "was required to deliver 40 measures of grain annually for the Waldmannshofen tithe, later reduced to 30 after the village burned and only six tenants remained."
+        }
+      ]
     }
   ]
 }

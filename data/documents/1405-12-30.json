@@ -5,17 +5,6 @@
   "entries": [
     {
       "source": [
-        "Regesten der Pfalzgrafen am Rhein, Band II, Nr. 3877",
-        "Copb. 906, 131b",
-        "K."
-      ],
-      "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
-      "subheading": "Nr. 3877: earlier date and abstract; nr. 4288 corrects the date to 30 December 1405.",
-      "german": "1405 mai 4 Heidelberg. Kg. Ruprecht gestattet Cuntze Lantschaden von Steynach seiner tochter Ketterlin, gattin Cuntzen s von Rosenberg d. j., 1000 fl. zugelts auf die zweiteil am grossen und kleinen zehenden zu Meckessen (Meckesheim) und den hof zu Gemunden (Neckargemünd), die er von der Pfalz zu leben trägt, zu beweisen. Vermerk: Non transivit durchstrichen.",
-      "english": "1405 May 4, Heidelberg. King Ruprecht permits Cuntz Landschad von Steynach to provide his daughter Ketterlin, wife of Kunz von Rosenberg der Jüngere, with a marriage portion of 1,000 florins, secured on the two parts of the great and small tithes at Meckesheim and the farm at Neckargemünd, which he holds as a fief from the Palatinate. Note: “Non transivit” is crossed out."
-    },
-    {
-      "source": [
         "Regesten der Pfalzgrafen am Rhein, Band II, Nr. 4288",
         "Copb. 906, 131b",
         "K."
@@ -23,7 +12,25 @@
       "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
       "subheading": "Corrected date in nr. 4288.",
       "german": "1405 dez. 30 Heidelberg (korrigiert aus 1405 mai 4). Gestattet, dass Conrad von Rosenberg d. j. seiner gattin Ketterlin, toehter Cuiirad Lantschadens von Steynach, 2000 fl. zu wittum auf die hälfte seines antoils an Boeksperg verschreibt.",
-      "english": "1405 December 30, Heidelberg (corrected from 1405 May 4). King Ruprecht permits Konrad von Rosenberg der Jüngere to assign his wife Ketterlin, daughter of Cuntz Landschad von Steynach, a widow’s portion of 2,000 florins secured on half his share in Boxberg."
+      "english": "1405 December 30, Heidelberg (corrected from 1405 May 4). King Ruprecht permits Konrad von Rosenberg der Jüngere to assign his wife Ketterlin, daughter of Cuntz Landschad von Steynach, a widow’s portion of 2,000 florins secured on half his share in Boxberg.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "type": "spouse",
+          "of": "Ketterlin"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ],
+          "type": "generic",
+          "content": "was permitted to assign his wife Ketterlin a 2,000-florin wittum on half his share of Boxberg."
+        }
+      ]
     }
   ]
 }

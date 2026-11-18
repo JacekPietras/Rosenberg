@@ -14,16 +14,6 @@
       "facts": [
         {
           "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
           "type": "generic",
           "content": "served as surety for Archbishop Gerlach’s debt to Hans von Salza."
         },
@@ -34,41 +24,14 @@
           ],
           "type": "generic",
           "content": "served as surety for Archbishop Gerlach’s debt to Hans von Salza."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "title"
         },
         {
           "person": "Eberhard Rüdt",
-          "personTitle": [
-            "Ritter"
-          ],
           "type": "sibling",
           "of": "Konrad Rüdt",
           "ofTitle": [
-            "Ritter",
             "Burggraf zu Wildenberg"
           ]
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "sealed the surety agreement."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "generic",
-          "content": "sealed the surety agreement."
         }
       ]
     }

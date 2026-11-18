@@ -13,6 +13,17 @@
           "personDeceased": true,
           "type": "generic",
           "content": "had been enfeoffed with a share of half the County of Leiningen at the village and court of Gerolsheim on the Palmberg."
+        },
+        {
+          "person": "Balthasar von Rosenberg",
+          "type": "death",
+          "diedBefore": "1569-08-07"
+        },
+        {
+          "person": "Otto von Ingelheim",
+          "type": "spouse",
+          "of": "Balthasar von Rosenberg",
+          "ofDeceased": true
         }
       ]
     }

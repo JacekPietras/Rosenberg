@@ -10,13 +10,11 @@
       "facts": [
         {
           "person": "Georg von Rosenberg",
+          "personTitle": [
+            "Ausfaut zu Alzey"
+          ],
           "type": "generic",
-          "content": "served as Ausfaut of Alzey."
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "disputed with the Kämmerer von Worms genannt von Dalberg over their 1507 agreement."
+          "content": "was involved in a dispute with the Kämmerer von Worms, called von Dalberg, concerning their agreement of 1507 March 17."
         }
       ]
     }

@@ -10,6 +10,12 @@
       "english": "Likewise, Kunigunde Besserer, the legitimate daughter of Anselm von Rosenberg, Ritter, and Hans Besserer, her husband, ratified and confirmed the aforementioned agreement. Done on Wednesday after St Margaret’s Day, 1487. Registered in the fourth register of Rudolf’s contracts, fol. 22. Editorial note: The agreement refers to the preceding entry.",
       "facts": [
         {
+          "person": "Anselm von Rosenberg",
+          "personTitle": ["Ritter"],
+          "type": "parent",
+          "of": "Kunigunde Besserer"
+        },
+        {
           "person": "Hans Besserer",
           "type": "spouse",
           "of": "Kunigunde Besserer"

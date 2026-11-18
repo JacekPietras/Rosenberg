@@ -6,7 +6,14 @@
       "source": "HStAM, 4 f Staaten M, Münster Stift 18 (in)",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2045057",
       "german": "Prozess gegen Albrecht v. Rosenberg am kaiserlichen Hof",
-      "english": "Lawsuit against Albrecht von Rosenberg at the imperial court"
+      "english": "Lawsuit against Albrecht von Rosenberg at the imperial court",
+      "facts": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "type": "generic",
+          "content": "was the subject of a case at the imperial court."
+        }
+      ]
     }
   ]
 }

@@ -90,6 +90,7 @@ class Validator:
         self.people_by_id = {}
         self.given_name_variants = {}
         self.given_name_genders = {}
+        self.particle_variants = set()
         self.place_name_variants = {}
         self.load_name_variants()
 
@@ -119,6 +120,13 @@ class Validator:
                     self.given_name_variants[form.casefold()] = forms[0]
                     if gender:
                         self.given_name_genders.setdefault(form.casefold(), set()).add(gender)
+            particles_path = self.root / 'data/nobiliary_particles.md'
+            self.particle_variants = {
+                form.strip().casefold()
+                for line in particles_path.read_text(encoding='utf-8').splitlines()
+                for form in line.split(',')
+                if form.strip()
+            }
             by_names_path = self.root / 'data/by-names.md'
             if by_names_path.exists():
                 self.by_name_variants = {
@@ -177,6 +185,24 @@ class Validator:
         genders = self.given_name_genders.get(name.split()[0].casefold(), set())
         return next(iter(genders)) if len(genders) == 1 else None
 
+    def has_particle_name_shape(self, value):
+        if not self.particle_variants:
+            return False
+        particles = '|'.join(
+            re.escape(item) for item in sorted(self.particle_variants, key=len, reverse=True)
+        )
+        return bool(re.fullmatch(
+            rf'\S+(?:\s+\S+)*\s+(?:{particles})\s+\S+(?:\s+\S+)*',
+            value,
+            re.IGNORECASE,
+        ))
+
+    def has_multiple_given_names(self, value):
+        parts = value.split()
+        return len(parts) >= 3 and all(
+            part.casefold() in self.given_name_variants for part in parts[:-1]
+        )
+
     def check_date(self, value, location, inherited=False):
         if value is MISSING:
             self.report(location, 'missing historical date; supply a valid historical date')
@@ -201,7 +227,8 @@ class Validator:
                 return
             valid_shape = (
                 re.fullmatch(r'\S+(?:\s+\S+)?', value)
-                or re.fullmatch(r'\S+(?:\s+\S+)*\s+von\s+\S+(?:\s+\S+)*', value)
+                or self.has_particle_name_shape(value)
+                or self.has_multiple_given_names(value)
                 or (len(value.split()) >= 3 and value.split()[1].casefold() in getattr(self, 'by_name_variants', set())
                     and value.split()[2].casefold() in {'von', 'zu'} and len(value.split()) >= 4)
                 or value in self.person_names

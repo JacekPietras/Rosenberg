@@ -10,7 +10,14 @@
       ],
       "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
       "german": "1409 jan. 13 Amberg. Pfgf. Johann verleiht Heintzen Wydeman von Komerssp(r)uch den halben zehenden über die zwen hoff zu Hargenloe, den Marquart von Rosenberg, burger zu Amberg, bisher zu lehen hatte und am heutigen tage aufgegeben hat.",
-      "english": "1409 January 13, Amberg. Count Palatine Johann enfeoffs Heintz Wydeman von Komerssp(r)uch with half the tithe over the two farms at Hargenloe, previously held as a fief by Marquart von Rosenberg, a burgher of Amberg, who surrendered it on that day."
+      "english": "1409 January 13, Amberg. Count Palatine Johann enfeoffs Heintz Wydeman von Komerssp(r)uch with half the tithe over the two farms at Hargenloe, previously held as a fief by Marquart von Rosenberg, a burgher of Amberg, who surrendered it on that day.",
+      "facts": [
+        {
+          "person": "Marquart von Rosenberg",
+          "type": "generic",
+          "content": "had held the half tithe over the two farms at Hargenloe as a fief and surrendered it to Count Palatine Johann, who granted it to Heintz Wydeman von Komerspruck."
+        }
+      ]
     }
   ]
 }

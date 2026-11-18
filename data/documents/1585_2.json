@@ -6,7 +6,14 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 1",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97876",
       "german": "Vertrag zwischen Stefan Rüdt von Bödigheim einerseits, Konrad, Albrecht Christoph und Georg Sigmund von Rosenberg andererseits über die Beilegung von Strietigkeiten wegen Trieb, Weide, Jagd und Neugereutzehnten auf der Markung Sindolsheim",
-      "english": "Agreement between Stefan Rüdt von Bödigheim on one side, Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg on the other side on settling disputes concerning driving, grazing, hunting and new tithe on the Sindolsheim boundary"
+      "english": "Agreement between Stefan Rüdt von Bödigheim on one side, Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg on the other side on settling disputes concerning driving, grazing, hunting and new tithe on the Sindolsheim boundary",
+      "facts": [
+        {
+          "subject": "Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg",
+          "type": "generic",
+          "content": "made an agreement with Stefan Rüdt of Bödigheim to settle disputes over livestock passage, grazing, hunting and the new-clearing tithe at Sindolsheim."
+        }
+      ]
     }
   ]
 }

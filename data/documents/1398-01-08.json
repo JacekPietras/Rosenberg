@@ -6,7 +6,14 @@
       "source": "Generallandesarchiv Karlsruhe D Nr. 446",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3933624",
       "german": "König Wenzel gestattet dem Pfalzgrafen Ruprecht dem Jüngeren, die Königsleute, die zwischen Mosbach und Lauda gesessen sind, von denen von Rosenberg, denen sie von des Reichs wegen verpfändet sind, an sich zu lösen\n\nLaufzeit: 1398 Januar 8",
-      "english": "King Wenceslaus permits Count Palatine Rupert the Younger to redeem the royal subjects who have resided between Mosbach and Lauda, who are pledged to them by the von Rosenberg family on behalf of the Empire.\n\nValidity: January 8, 1398"
+      "english": "King Wenceslaus permits Count Palatine Rupert the Younger to redeem the royal subjects who have resided between Mosbach and Lauda, who are pledged to them by the von Rosenberg family on behalf of the Empire.\n\nValidity: January 8, 1398",
+      "facts": [
+        {
+          "subject": "the royal subjects residing between Mosbach and Lauda",
+          "type": "generic",
+          "content": "were pledged by the Empire to the von Rosenberg family, from whom King Wenceslaus permitted Count Palatine Ruprecht der Jüngere to redeem them."
+        }
+      ]
     }
   ]
 }

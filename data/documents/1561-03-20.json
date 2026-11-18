@@ -15,6 +15,12 @@
           ],
           "type": "generic",
           "content": "granted his freehold farm properties at Oberschüpf to his subjects Hans Stopf, Wolf Menschel, Michel Krieger and Hans Krieger for an annual rent."
+        },
+        {
+          "person": "Michael Krieger",
+          "type": "kin",
+          "of": "Hans Krieger",
+          "term": "Vetter"
         }
       ],
       "img": [

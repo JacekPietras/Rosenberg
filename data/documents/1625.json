@@ -12,7 +12,19 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x76627761125564520210713150716419"
       ],
       "german": "Philipp Adolf [von Ehrenberg], Bischof zu Würzburg etc., belehnt Albrecht Christoph und Georg Siegmund Gebrüder von Rosenberg mit einem Viertel der Stadt Aub zu Mannlehen, das Kaiser Ferdinand II. ihm zu Eigen übertrug, nachdem jene das Viertel zuvor von Kurpfalz zu Mannlehen trugen. -\n\nSiegler: der Aussteller (Sekretsiegel).\n\nAusf., Perg., Sg. erh. -Nr. 2330.\n\nReg. Nr. 2456",
-      "english": "Philipp Adolf [von Ehrenberg], Bishop of Würzburg etc., enfeoffs Albrecht Christoph and Georg Siegmund brothers of Rosenberg with one quarter of the town of Aub as a male fief, which Emperor Ferdinand II transferred to him as his own, after those brothers had previously held the quarter as a male fief from the Electorate of the Palatinate. -\n\nSealer: the issuer (secret seal).\n\nOriginal, parchment, seal attached. -No. 2330.\n\nReg. No. 2456"
+      "english": "Philipp Adolf [von Ehrenberg], Bishop of Würzburg etc., enfeoffs Albrecht Christoph and Georg Siegmund brothers of Rosenberg with one quarter of the town of Aub as a male fief, which Emperor Ferdinand II transferred to him as his own, after those brothers had previously held the quarter as a male fief from the Electorate of the Palatinate. -\n\nSealer: the issuer (secret seal).\n\nOriginal, parchment, seal attached. -No. 2330.\n\nReg. No. 2456",
+      "facts": [
+        {
+          "subject": "Albrecht Christoph and Georg Siegmund von Rosenberg",
+          "type": "generic",
+          "content": "received one quarter of Aub as a Mannlehen from the Bishop of Würzburg after Emperor Ferdinand II transferred it to him."
+        },
+        {
+          "person": "Albrecht Christoph von Rosenberg",
+          "type": "sibling",
+          "of": "Georg Siegmund von Rosenberg"
+        }
+      ]
     }
   ]
 }

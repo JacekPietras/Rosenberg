@@ -6,7 +6,14 @@
       "source": "StAWü, Gräflich Ortenburg´sches Schloßarchiv Birkenfeld Akten 2507",
       "url": "https://www.gda.bayern.de/gvl/document/1e9dea96-7ca4-4cfa-a17c-d334829f0f7e",
       "german": "Chur-Pfälzische Beschuldigungen contra Herrn von Rosenberg, und deßen Inhaftirung, betreffend, 1524.",
-      "english": "Electoral Palatinate accusations against Herren von Rosenberg and his imprisonment, 1524."
+      "english": "Electoral Palatinate accusations against Herren von Rosenberg and his imprisonment, 1524.",
+      "facts": [
+        {
+          "subject": "the lord von Rosenberg named in the record",
+          "type": "generic",
+          "content": "was accused by Kurpfalz and taken into custody."
+        }
+      ]
     }
   ]
 }

@@ -12,7 +12,14 @@
         "https://www.gda.bayern.de/gvl/document/f745d10d-3cbe-49ec-a334-803b7ece62b9"
       ],
       "german": "\"Verfassung\" der Streitentscheidung zwischen Rothenburg und von Rosenberg.",
-      "english": "\"Instrument\" of the dispute decision between Rothenburg and von Rosenberg."
+      "english": "\"Instrument\" of the dispute decision between Rothenburg and von Rosenberg.",
+      "facts": [
+        {
+          "person": "Zaisolph von Rosenberg",
+          "type": "generic",
+          "content": "was involved in a dispute with Rothenburg for which a written decision was prepared."
+        }
+      ]
     }
   ]
 }

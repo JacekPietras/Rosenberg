@@ -76,7 +76,15 @@
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of the town of Aub as a Mannlehen from Elector Ludwig of the Palatinate after the death of Konrad von Rosenberg."
+          "content": "received the quarter of Aub as a fief on behalf of his cousins Wolf, Christoph, Ludwig, and Zaisolph von Rosenberg after the death of Konrad von Rosenberg."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "death",
+          "diedBefore": "1541"
         }
       ]
     }

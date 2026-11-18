@@ -6,7 +6,14 @@
       "source": "Generallandesarchiv Karlsruhe 72 Nr. 9888",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641653",
       "german": "Streitigkeiten zwischen den Erben Konrad d. Ä. von Rosenberg um den Besitz des lehnbaren Dorfs Bofsheim (vgl. Nr. 9886).\n\nLaufzeit: 1608-1684\n\nEnthält: Enthält auch: Zweifel an Umfang und Ausmaß des würzburgischen Obereigentums.",
-      "english": "Disputes among the heirs of Konrad the Elder von Rosenberg over ownership of the fief-holding village of Bofsheim (cf. No. 9886).\n\nDuration: 1608-1684\n\nContains: Also includes: Doubts about the scope and extent of Würzburg's superior ownership."
+      "english": "Disputes among the heirs of Konrad the Elder von Rosenberg over ownership of the fief-holding village of Bofsheim (cf. No. 9886).\n\nDuration: 1608-1684\n\nContains: Also includes: Doubts about the scope and extent of Würzburg's superior ownership.",
+      "facts": [
+        {
+          "subject": "the heirs of Konrad von Rosenberg the Elder",
+          "type": "generic",
+          "content": "disputed ownership of the fief village of Bofsheim."
+        }
+      ]
     }
   ]
 }

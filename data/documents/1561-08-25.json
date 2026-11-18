@@ -40,7 +40,7 @@
         {
           "person": "Zaisolph von Rosenberg",
           "personTitle": [
-            "zu Haldenbergstetten"
+            "zu Haltenbergstetten Niederstetten"
           ],
           "type": "generic",
           "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
@@ -87,20 +87,6 @@
           "personDeceased": true,
           "type": "parent",
           "of": "Hans Christoph von Rosenberg"
-        },
-        {
-          "person": "Philipp Soldan",
-          "personTitle": [
-            "Vogt von Rieneck zu Urspringen"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Albrecht von Adelsheim",
-          "personTitle": [
-            "mainzischer Amtmann zu Krautheim"
-          ],
-          "type": "title"
         },
         {
           "person": "Hans von Finsterlohr",

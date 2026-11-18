@@ -6,7 +6,17 @@
       "source": "Generallandesarchiv Karlsruhe 78 Nr. 26",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-4659755",
       "german": "Der Todesfall des Fürstbischofs Philipp I. von Rosenberg.\n\nLaufzeit: 1513",
-      "english": "The death of Prince-Bishop Philipp I. von Rosenberg.\n\nValid period: 1513"
+      "english": "The death of Prince-Bishop Philipp I. von Rosenberg.\n\nValid period: 1513",
+      "facts": [
+        {
+          "person": "Philipp I. von Rosenberg",
+          "personTitle": [
+            "Fürstbischof"
+          ],
+          "type": "death",
+          "diedOn": "1513"
+        }
+      ]
     }
   ]
 }

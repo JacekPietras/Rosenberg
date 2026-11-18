@@ -6,7 +6,14 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 22 Qu. 73",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755775",
       "german": "Vertrag zwischen Hohenlohe-Langenburg und den Grafen von Hatzfeld: Teilung der 1631 durch das Erlöschen derer von Rosenberg im Mannesstamm an Hohenlohe-Langenburg heimgefallenen Kollatur und des Pfarrlehens Oberbalbach, 1639 Aug. 24/Sept. 3.",
-      "english": "Agreement between Hohenlohe-Langenburg and the Counts of Hatzfeld: division of the patronage and the parish fief of Oberbalbach, which reverted to Hohenlohe-Langenburg in 1631 upon the extinction of the von Rosenberg male line, August 24/September 3, 1639."
+      "english": "Agreement between Hohenlohe-Langenburg and the Counts of Hatzfeld: division of the patronage and the parish fief of Oberbalbach, which reverted to Hohenlohe-Langenburg in 1631 upon the extinction of the von Rosenberg male line, August 24/September 3, 1639.",
+      "facts": [
+        {
+          "subject": "the male line of the von Rosenberg family",
+          "type": "generic",
+          "content": "ended in 1631, after which the Hohenlohe-Langenburg line received the Oberbalbach parish patronage and fief."
+        }
+      ]
     }
   ]
 }
