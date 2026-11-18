@@ -17,7 +17,7 @@
       ],
       "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261?page=38",
       "german": "1401 Februar 7, Nürnberg. Gleiches Schreiben wie Nr. 476 an Arnold von Rosenberg d. Ä., Amtmann zu Lauda. Nr. 476: Teilt Reinhart von Sickingen d. J., Vogt zu Heidelberg, mit, dass der König Diether von Handschuhsheim, seinen Marschall, und Contz Landschad beauftragt hat, Geld zu gewinnen und dieses nach Gutdünken anzuweisen, und befiehlt ihm, sich deren Anordnungen zu fügen.",
-      "english": "1401 February 7, Nuremberg. Same letter as no. 476, addressed to Arnold von Rosenberg der Ältere, Amtmann zu Lauda. No. 476 informs Reinhard von Sickingen der Jüngere, Vogt zu Heidelberg, that the king commissioned Diether von Handschuhsheim, his marshal, and Contz Landschad to raise money and assign it as they saw fit, and ordered him to comply with their instructions.",
+      "english": "1401 February 7, Nuremberg. Same letter as no. 476, addressed to Arnold von Rosenberg der Ältere, Amtmann zu Lauda. No. 476 informs Reinhart von Sickingen der Jüngere, Vogt zu Heidelberg, that the king commissioned Diether von Handschuhsheim, his marshal, and Contz Landschad to raise money and assign it as they saw fit, and ordered him to comply with their instructions.",
       "facts": [
         {
           "person": "Arnold von Rosenberg",
@@ -27,6 +27,36 @@
           ],
           "type": "generic",
           "content": "was instructed to comply with the orders of Diether von Handschuhsheim and Contz Landschad, whom King Ruprecht had commissioned to raise and assign money as they saw fit."
+        }
+      ]
+    },
+    {
+      "source": "Regesten der Pfalzgrafen am Rhein, Band II, Nr. 475",
+      "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
+      "german": "1401 Februar 7, Nürnberg. Bevollmächtigt Diether von Hentschuchssheim, Hermann von Rodenstein, Contze Munich von Rosenberg und Matliis (von Sobernheim) seinen Schreiber, „gelte ußzugewynnen, wo si mögen“ und dasselbe nach Gutdünken anzuweisen; bestätigt im Voraus deren Abmachungen. Copb. 809, 32a. K. R. T. A. V, 15, Zeile 33.",
+      "english": "1401 February 7, Nuremberg. He authorizes Diether von Hentschuchssheim, Hermann von Rodenstein, Contze Munich von Rosenberg, and his clerk Matliis (von Sobernheim) to raise money wherever they can and assign it as they see fit; he confirms their agreements in advance. Copybook 809, fol. 32a; K. R. T. A. V, 15, line 33.",
+      "facts": [
+        {
+          "person": "Kunz Munich von Rosenberg",
+          "type": "generic",
+          "content": "was authorized to raise money and assign it as he saw fit; King Ruprecht confirmed the agreements made by the authorized group in advance."
+        }
+      ]
+    },
+    {
+      "source": "Regesten der Pfalzgrafen am Rhein, Band II, Nr. 479",
+      "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
+      "german": "1401 Februar 7, Nürnberg. Teilt Reinhart von Sickingen d. jungen, vogt zu Heidelberg mit, dass er Diether von Hent-\nschußheim, seinen marschalk und ContzLandschaden beauftragt hat »gelte ußziigewynnen, wo sie das gehaben mö­gen« und dasselbe nach gutdünken anzuweisen und befiehlt ihm, sich deren anordnungen zu fügen. (Erging wohl\nan alle pfälz. Beamten?) Cop. 809, 31b. K. R. T. A. V., 15, zeile 42. Gleiches Schreiben an Arnold von Rosenberg dem Älteren, Amtmann zu Lauda.",
+      "english": "1401 February 7, Nuremberg. He informs Reinhart von Sickingen der Jüngere, Vogt zu Heidelberg, that he commissioned his marshal Diether von Hentschuchssheim and Contz Landschad to raise money wherever they could and assign it as they saw fit, and orders Reinhart to comply with their instructions. The same letter was sent to Arnold von Rosenberg der Ältere, Amtmann zu Lauda. Copybook 809, fol. 31b; K. R. T. A. V, 15, line 42.",
+      "facts": [
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Ältere",
+            "Amtmann zu Lauda"
+          ],
+          "type": "generic",
+          "content": "received the same letter, which ordered Reinhart von Sickingen der Jüngere to comply with the orders of Diether von Hentschuchssheim and Contz Landschad, commissioned to raise and assign money as they saw fit."
         }
       ]
     }

@@ -3,10 +3,16 @@
   "place": "nrnberg",
   "entries": [
     {
-      "source": "Regg. Pfalzgrafen 2 n. 669",
-      "url": "https://www.regesta-imperii.de/regesten/10-0-0-ruprecht/nr/1401-03-18_2_0_10_0_0_669_669.html",
-      "german": "Verleiht als pfalzgraf Conrad von Rosenberg, sohn Conrads von Rosenberg, {vitztums} (zu Amberg) ein viertel an dem schlosse zu Boxberg.",
-      "english": "As Count Palatine, Konrad von Rosenberg, son of Konrad von Rosenberg, grants {vitztums} (in Amberg) a quarter of the castle in Boxberg.",
+      "source": [
+        "Regg. Pfalzgrafen 2 n. 669",
+        "Regesten der Pfalzgrafen am Rhein, Band II, Nr. 669"
+      ],
+      "url": [
+        "https://www.regesta-imperii.de/regesten/10-0-0-ruprecht/nr/1401-03-18_2_0_10_0_0_669_669.html",
+        "https://www.digitale-sammlungen.de/de/view/bsb00009261"
+      ],
+      "german": "1401 März 18, Nürnberg. Verleiht als Pfalzgraf Conrad von Rosenberg, Sohn Conrads von Rosenberg, Vitztum (zu Amberg) ein Viertel an dem Schlosse zu Boxberg. Or. K. Select, D. Kaiser- u. Königsurk. nr. 457a und Copb. 006, 15b.",
+      "english": "1401 March 18, Nuremberg. As Count Palatine, Konrad von Rosenberg, son of Konrad von Rosenberg and Vitztum (in Amberg), grants a quarter of Boxberg Castle. Original: K. Select, D. Kaiser- und Königsurkunden no. 457a and copybook 006, fol. 15b.",
       "facts": [
         {
           "person": "vitztum_zu_Heidelberg",

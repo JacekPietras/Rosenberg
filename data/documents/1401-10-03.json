@@ -2,10 +2,16 @@
   "date": "1401-10-03",
   "entries": [
     {
-      "source": "RIplus Regg. Pfalzgrafen 2 n. 1707",
-      "url": "https://www.regesta-imperii.de/id/1401-10-03_1_0_10_0_0_1707_1707",
-      "german": "Verleiht Hans von Rosenberg den zehenden cleyne und grosse in dem dorne Lore zuschen Rotenburg an der Tuber und Insingen gelegen, der ledig worden ist.",
-      "english": "King Ruprecht grants to Hans von Rosenberg, Ritter the small and the great tithe in the village of Lohr, between Rothenburg an der Tauber and Insingen, which has become vacant. B.",
+      "source": [
+        "RIplus Regg. Pfalzgrafen 2 n. 1707",
+        "Regesten der Pfalzgrafen am Rhein, Band II, Nr. 1707"
+      ],
+      "url": [
+        "https://www.regesta-imperii.de/id/1401-10-03_1_0_10_0_0_1707_1707",
+        "https://www.digitale-sammlungen.de/de/view/bsb00009261"
+      ],
+      "german": "1401 Oktober 3, Clusen unter Brixen. Verleiht Hans von Rosenberg den zehenden cleyne und grosse in dem dorffe Lore zuschen Rotenburg an der Tuber und Insingen gelegen, der ledig worden ist. Or. Nürnberg, Kr.-A., München, R.-A. Lehenakten. Copb. 1a, 36b. Wien, RR. B. Chmel, Reg. Rup. nr. 988.",
+      "english": "1401 October 3, Clusen below Brixen. He grants Hans von Rosenberg the small and great tithes in the village of Lore, between Rothenburg an der Tauber and Insingen, which had become vacant. Original: Nuremberg, Kreisarchiv, Munich, Reichsarchiv, feudal files; copybook 1a, fol. 36b; Vienna, Reichsregister B; Chmel, Regesta Ruperti no. 988.",
       "facts": [
         {
           "person": "Hans von Rosenberg",
