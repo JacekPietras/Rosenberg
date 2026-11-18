@@ -10,7 +10,7 @@ Use this skill when asked to add or review `facts` or `guesses` for an entry in 
 ## Before editing
 
 - Read `../../../specs/facts.md`, `../../../specs/json-formats.md`, and `../../../specs/person-names.md`.
-- Read the complete source entry and its context before extracting or reviewing assertions. `german` or `latin` is the source; a summary is only a finding aid. Never use `english` alone as the source for facts or guesses. If the source text is missing, report that support cannot be verified rather than treating the translation as authoritative.
+- Read the complete source entry and its context before extracting or reviewing assertions. `german` or `latin` is the source; a summary is only a finding aid. When `english` is the entry's only text field, it is the source; otherwise do not use the translation alone as evidence. If the source text is missing, report that support cannot be verified.
 - Preserve the entry's existing structure and unrelated data. Keep facts source-supported and relevant under `facts.md`; put interpretations and assumptions only in `guesses`.
 
 ## Extract and normalize
@@ -23,6 +23,7 @@ Use this skill when asked to add or review `facts` or `guesses` for an entry in 
 
 ## Verify and finish
 
-- For every fact or guess, locate its exact supporting source passage and verify names, dates, titles, places, relationships, and similarly named people. When reviewing existing assertions, report unsupported or contradicted items and correct clear errors; if the source is unavailable or ambiguous, leave the assertion and report the issue.
+- For every fact or guess, locate its exact supporting source passage and verify names, dates, titles, places, relationships, and similarly named people. For a continuation, check connected original passages for the antecedent and report the evidence for continuity; do not equate people on similar names or circumstances alone. A person documented as born into a target family remains relevant under a later married name or designation. If the identification is uncertain, retain the source-supported event under the source's designation where possible and flag the uncertainty.
+- Review the event, identification, and each detail separately. Correct an unsupported detail without deleting a supported event. Report unsupported or contradicted assertions and correct clear errors; if the source is unavailable or ambiguous, leave the assertion and report the issue.
 - Report each reviewed or added assertion with its entry, exact supporting quote (or `NOT FOUND`), status, reasoning, and recommendation, as specified in `facts.md`.
 - After editing, run `python3 scripts/lint.py` and review the diff. Confirm valid JSON, source support, atomicity, relevance, no duplicates, preserved date precision and source fields, and only intended fact/guess changes plus any justified missing place records.
