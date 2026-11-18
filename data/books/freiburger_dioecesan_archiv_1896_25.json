@@ -799,14 +799,6 @@
           "personTitle": [
             "Edelknecht"
           ],
-          "type": "title",
-          "date": "1359"
-        },
-        {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
           "type": "generic",
           "content": "received fiefs at Rugheim.",
           "date": "1359"
@@ -1115,15 +1107,6 @@
           "type": "generic",
           "content": "served as a surety for the sale of Urhausen Castle by Hans and Götz von Rosenberg and Anna von Kronenberg.",
           "date": "1385"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Lauda"
-          ],
-          "type": "title",
-          "date": "1385"
         }
       ],
       "guesses": [
@@ -1379,14 +1362,6 @@
       "german": "1400 iſt Arnold v. R., der alt, ein Fünfer zum Einnehmen einer würzburgiſchen allgemeinen Landſteuer.",
       "english": "In 1400, Arnold von Rosenberg der Ältere was one of five commissioners appointed to collect a general land tax for Würzburg.",
       "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "der Alte"
-          ],
-          "type": "title",
-          "date": "1400"
-        },
         {
           "person": "Arnold von Rosenberg",
           "personTitle": [
@@ -2033,14 +2008,6 @@
           "personTitle": [
             "zu Bartenstein"
           ],
-          "type": "title",
-          "date": "1436"
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ],
           "type": "generic",
           "content": "received the toll at Rippach and half the village from Bishop Hans of Würzburg in recognition of his good service.",
           "date": "1436"
@@ -2139,14 +2106,6 @@
           ],
           "type": "generic",
           "content": "stood surety for Bishop Hans of Würzburg’s debt to Hans von Hirschhorn together with Anselm and Konrad von Rosenberg.",
-          "date": "1439"
-        },
-        {
-          "person": "Anselm von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "title",
           "date": "1439"
         }
       ]
@@ -2297,14 +2256,6 @@
       "german": "1458, 2. Jan., genehmigt Pfalzgraf Friedrich II. einen Tauſch zwiſchen dem Stift Meckmühl und Ulrich v. R., Amtmann daſelbſt.",
       "english": "On January 2, 1458, Count Palatine Friedrich II approved an exchange between Meckmühl Abbey and Ulrich von Rosenberg, its official.",
       "facts": [
-        {
-          "person": "Ulrich von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Möckmühl"
-          ],
-          "type": "title",
-          "date": "1458-01-02"
-        },
         {
           "person": "Ulrich von Rosenberg",
           "personTitle": [
@@ -2493,14 +2444,6 @@
           "personTitle": [
             "der Alte"
           ],
-          "type": "title",
-          "date": "1484"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "der Alte"
-          ],
           "type": "generic",
           "content": "sought justice from the Palatinate against Heinrich Holzapfel concerning a surety, together with Friedrich Hundt von Saulheim.",
           "date": "1484"
@@ -2560,14 +2503,6 @@
           ],
           "type": "generic",
           "content": "had his Rieneck fiefs at Impfingen and Marbach confirmed by Landgrave Hans von Rieneck.",
-          "date": "1489-06-08"
-        },
-        {
-          "person": "Michael von Rosenberg",
-          "personTitle": [
-            "zu Boxberg"
-          ],
-          "type": "title",
           "date": "1489-06-08"
         }
       ]
@@ -3593,14 +3528,6 @@
           ],
           "type": "generic",
           "content": "received Hans Caspar von Herdar’s grain and wine tithes at Sachsenflur as security for a debt.",
-          "date": "1631"
-        },
-        {
-          "person": "Albrecht Christoph von Rosenberg",
-          "personTitle": [
-            "kaiserlicher Rat"
-          ],
-          "type": "title",
           "date": "1631"
         }
       ]

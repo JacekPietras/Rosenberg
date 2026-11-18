@@ -460,8 +460,44 @@ def clean_facts(path, validator):
     original = path.read_text(encoding='utf-8')
     document = json.loads(original)
 
-    def clean(value):
+    def remove_redundant_titles(value, inherited):
+        def attested(fact, date_value):
+            for role in ('person', 'of'):
+                if isinstance(fact.get(role), str) and fact.get(role + 'Title'):
+                    yield (fact[role], date_value, bool(fact.get(role + 'Deceased'))), fact[role + 'Title']
+
+        def effective(fact):
+            return fact.get('date', inherited)
+
+        for field, sources in (('facts', ('facts',)), ('guesses', ('facts', 'guesses'))):
+            items = value.get(field)
+            if not isinstance(items, list):
+                continue
+            covered = {}
+            for source in sources:
+                for fact in value.get(source) if isinstance(value.get(source), list) else []:
+                    if isinstance(fact, dict) and fact.get('type') != 'title':
+                        for key, titles in attested(fact, effective(fact)):
+                            covered.setdefault(key, set()).update(titles)
+            kept = []
+            for fact in items:
+                if (isinstance(fact, dict) and fact.get('type') == 'title'
+                        and isinstance(fact.get('person'), str)
+                        and isinstance(fact.get('personTitle'), list)
+                        and set(fact['personTitle']) <= covered.get(
+                            (fact['person'], effective(fact), bool(fact.get('personDeceased'))), set())):
+                    print(f'{path}#/{field}: removed redundant title fact: {fact["person"]!r} {fact["personTitle"]!r}')
+                    continue
+                kept.append(fact)
+            if len(kept) != len(items):
+                value[field] = kept
+                if not kept:
+                    del value[field]
+
+    def clean(value, inherited=None):
         if isinstance(value, dict):
+            inherited = value.get('date', inherited)
+            remove_redundant_titles(value, inherited)
             if value.get('facts') == []:
                 del value['facts']
             for field in ('facts', 'guesses'):
@@ -494,10 +530,10 @@ def clean_facts(path, validator):
                         fact.clear()
                         fact.update(reordered)
             for child in value.values():
-                clean(child)
+                clean(child, inherited)
         elif isinstance(value, list):
             for child in value:
-                clean(child)
+                clean(child, inherited)
 
     canonical = json.dumps(document, ensure_ascii=False, indent=2) + ('\n' if original.endswith('\n') else '')
     clean(document)

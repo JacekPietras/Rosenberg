@@ -65,13 +65,6 @@
           "personTitle": [
             "Ritter"
           ],
-          "type": "title"
-        },
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Ritter"
-          ],
           "type": "kin",
           "of": "vogt_zu_Lauda",
           "ofTitle": [
@@ -85,13 +78,6 @@
           "personTitle": [
             "armiger"
           ],
-          "type": "title"
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "armiger"
-          ],
           "type": "kin",
           "of": "vogt_zu_Lauda",
           "ofTitle": [
@@ -99,13 +85,6 @@
           ],
           "ofDeceased": true,
           "term": "consanguineos"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "armiger"
-          ],
-          "type": "title"
         },
         {
           "person": "Konrad von Rosenberg",

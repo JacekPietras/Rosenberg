@@ -15,13 +15,6 @@
           "personTitle": [
             "Ritter"
           ],
-          "type": "title"
-        },
-        {
-          "person": "vogt_zu_Lauda",
-          "personTitle": [
-            "Ritter"
-          ],
           "type": "sibling",
           "of": "arnold_brother_of_vogt_zu_Lauda"
         },

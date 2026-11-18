@@ -13,14 +13,6 @@
             "Ritter",
             "Vogt zu Wildenberg"
           ],
-          "type": "title"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Wildenberg"
-          ],
           "type": "parent",
           "of": "Konrad von Rosenberg"
         },
@@ -63,13 +55,6 @@
           "ofTitle": [
             "Domherr zu Würzburg"
           ]
-        },
-        {
-          "person": "hans_domherr_zu_wurzburg",
-          "personTitle": [
-            "Domherr zu Würzburg"
-          ],
-          "type": "title"
         },
         {
           "person": "Engelhard von Rosenberg",

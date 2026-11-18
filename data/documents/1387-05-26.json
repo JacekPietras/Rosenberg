@@ -12,13 +12,6 @@
           "personTitle": [
             "Edelknecht"
           ],
-          "type": "title"
-        },
-        {
-          "person": "arnold_brother_of_vogt_zu_Lauda",
-          "personTitle": [
-            "Edelknecht"
-          ],
           "type": "generic",
           "content": "sold his share of Boxberg to his brother [vogt_zu_Lauda]."
         },
@@ -47,13 +40,6 @@
           "person": "vogt_zu_Lauda",
           "type": "generic",
           "content": "purchased his brother [arnold_brother_of_vogt_zu_Lauda]’s share of Boxberg."
-        },
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vitztum zu Heidelberg"
-          ],
-          "type": "title"
         },
         {
           "person": "vitztum_zu_Heidelberg",

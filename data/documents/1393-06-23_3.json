@@ -21,14 +21,6 @@
         },
         {
           "person": "vogt_zu_Lauda",
-          "personTitle": [
-            "Ritter"
-          ],
-          "personDeceased": true,
-          "type": "title"
-        },
-        {
-          "person": "vogt_zu_Lauda",
           "type": "death",
           "diedBefore": "1393-06-24"
         },

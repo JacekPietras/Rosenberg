@@ -24,14 +24,6 @@
             "Ritter"
           ],
           "personDeceased": true,
-          "type": "title"
-        },
-        {
-          "person": "Heinrich von Erligheim",
-          "personTitle": [
-            "Ritter"
-          ],
-          "personDeceased": true,
           "type": "kin",
           "of": "Elisabeth von Erligheim",
           "term": "Vetter"
@@ -60,14 +52,6 @@
           "person": "Elisabeth von Erligheim",
           "type": "generic",
           "content": "was paid her inherited share and rents from the pledge on Bensheim Castle by Archbishop Adolf von Mainz."
-        },
-        {
-          "person": "Thame Knebel",
-          "personTitle": [
-            "Ritter",
-            "Schultheiß in Oppenheim"
-          ],
-          "type": "title"
         },
         {
           "person": "Thame Knebel",

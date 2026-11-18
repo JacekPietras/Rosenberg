@@ -67,6 +67,24 @@ class FactValidatorTests(unittest.TestCase):
         facts.clean_facts(path, validator)
         self.assertEqual(first, path.read_text())
 
+    def test_cleanup_removes_title_facts_duplicated_by_other_facts(self):
+        validator = facts.Validator()
+        validator.people_by_id = {}
+        titled = {'type': 'parent', 'person': 'Anna', 'personTitle': ['Frau'],
+                  'of': 'Arnold', 'ofTitle': ['Ritter', 'Vogt']}
+        redundant = [
+            {'type': 'title', 'person': 'Anna', 'personTitle': ['Frau'], 'date': '1395-04-12'},
+            {'type': 'title', 'person': 'Arnold', 'personTitle': ['Ritter', 'Vogt']},
+        ]
+        kept = [
+            {'type': 'title', 'person': 'Arnold', 'personTitle': ['Ritter', 'Edel']},
+            {'type': 'title', 'person': 'Anna', 'personTitle': ['Frau'], 'date': '1400'},
+        ]
+        path = self.write('documents/test.json', {'date': '1395-04-12', 'facts': [titled, *redundant, *kept]})
+        path.write_text(json.dumps(json.loads(path.read_text()), ensure_ascii=False, indent=2) + '\n')
+        facts.clean_facts(path, validator)
+        self.assertEqual([titled, *kept], json.loads(path.read_text())['facts'])
+
     def test_supported_types_and_flat_names_or_ids(self):
         items = [self.parent(type=kind) for kind in ('parent', 'sibling', 'spouse')]
         items += [self.parent(type='kin', term='Vetter'), {'type': 'title', 'person': 'known_id', 'personTitle': ['Ritter', 'der Ältere']}]

@@ -20,13 +20,6 @@
           "personTitle": [
             "Edelknecht"
           ],
-          "type": "title"
-        },
-        {
-          "person": "arnold_brother_of_vogt_zu_Lauda",
-          "personTitle": [
-            "Edelknecht"
-          ],
           "type": "spouse",
           "of": "Elisabeth"
         },
@@ -48,13 +41,6 @@
           "type": "kin",
           "of": "Elisabeth",
           "term": "Schwager"
-        },
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vicedom zu Heidelberg"
-          ],
-          "type": "title"
         },
         {
           "person": "vitztum_zu_Heidelberg",

@@ -15,20 +15,6 @@
           "personTitle": [
             "Ritter"
           ],
-          "type": "title"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
           "type": "sibling",
           "of": "Konrad von Rosenberg",
           "ofTitle": [
@@ -58,13 +44,6 @@
             "Ritter"
           ],
           "term": "Schwager"
-        },
-        {
-          "person": "Philipp von Bickenbach",
-          "personTitle": [
-            "Komtur des Deutschen Hauses zu Mergentheim"
-          ],
-          "type": "title"
         },
         {
           "person": "Engelhard von Rosenberg",

@@ -116,15 +116,6 @@
         {
           "person": "Arnold von Uissigheim",
           "personTitle": [
-            "der Junge",
-            "Ritter"
-          ],
-          "type": "title",
-          "date": "1332-11-24"
-        },
-        {
-          "person": "Arnold von Uissigheim",
-          "personTitle": [
             "der Ältere",
             "Ritter"
           ],
@@ -398,22 +389,6 @@
           "date": "1285-01-14"
         },
         {
-          "person": "Eberhard von Uissigheim",
-          "personTitle": [
-            "miles"
-          ],
-          "type": "title",
-          "date": "1285"
-        },
-        {
-          "person": "Friedrich Stahel",
-          "personTitle": [
-            "miles"
-          ],
-          "type": "title",
-          "date": "1285"
-        },
-        {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "miles",
@@ -421,15 +396,6 @@
           ],
           "type": "generic",
           "content": "was party to a dispute with Seligental Abbey over meadows at Hemsbach, which Abbot Wintherus of Bronnbach settled.",
-          "date": "1288"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "dictus von Uissigheim",
-            "miles"
-          ],
-          "type": "title",
           "date": "1288"
         },
         {
