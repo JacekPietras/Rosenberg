@@ -3,7 +3,7 @@
 
 Reads data/tree.json without rebuilding or modifying it. Comparisons that are not
 merged or ambiguous come from the local .cache/tree-debug.json written by --apply. Parent arrows point
-from parent to child; spouse, sibling and kin connections are symmetric.
+from parent to child. Directed kin terms run from their subject to the named relative.
 """
 from __future__ import annotations
 
@@ -122,7 +122,8 @@ def render(report, details=False, comparison_limit=10):
         relation = 'parent of' if edge['type'] == 'parent' else edge['type']
         if edge.get('term'):
             relation += f' ({edge["term"]})'
-        arrow = '-->' if edge['type'] == 'parent' else '<-->'
+        directed = edge['type'] == 'parent' or edge['type'] == 'kin' and report.get('directedKin')
+        arrow = '-->' if directed else '<-->'
         print(f'  {label(edge["person"])} --{relation}{arrow} {label(edge["of"])}')
         for derivation in edge.get('derivations', []):
             print(f'    {derivation["identity"]}; uses guesses: {derivation["usesGuesses"]}; '
@@ -180,7 +181,7 @@ def main(argv=None):
         if view not in views:
             raise ValueError(f'Unknown view {view!r}; available: {", ".join(views)}')
         report = connections(unpack_evidence(views[view]), args.query, args.depth)
-        report.update(tree=str(args.tree), view=view, depth=args.depth)
+        report.update(tree=str(args.tree), view=view, depth=args.depth, directedKin=tree.get('configuration', {}).get('directedKin', False))
         current = input_manifest(args.root)
         stale = tree.get('inputs') != current or tree.get('fingerprint') != fingerprint(tree.get('inputs', {}))
         report['inputStatus'] = 'STALE' if stale else 'current (source fingerprints only)'

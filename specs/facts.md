@@ -20,6 +20,15 @@ When fields disagree, `german`/`latin` wins over a summary, and both win over
 a translated `english`. A claim found only in a summary or a translation is not
 a fact; correct the translation or report the difference.
 
+An entry may be a continuation: its original text can refer back to a person,
+bond, or event in an adjacent passage. Read the connected original passages to
+resolve such references, and report the passages and evidence for continuity.
+The event itself must be supported by the entry in which its fact is stored;
+context can identify its participants, but does not add events or details to it.
+Do not equate people merely because their names or circumstances resemble one
+another. If continuity or identity is uncertain, preserve the source's own
+designation and report the uncertainty instead of asserting an identification.
+
 ## Extraction
 
 Read the complete entry first. Extract only what the source states explicitly
@@ -115,6 +124,13 @@ arbitrator, transaction partner, other participant); or references Boxberg,
 Wölchingen, Uissigheim, Erligheim, Rosenberg, or Bartenstein. Keep relevant
 property and transaction facts even when they are not genealogical.
 
+A person documented as born into a target family remains relevant when later
+sources use a married name or another designation. Establish the identification
+from evidence, not a shared name alone. When the possible connection is
+unresolved, do not discard an existing source-supported assertion merely
+because the later designation does not name the target family; flag it for
+identity review.
+
 Remove facts only about unrelated nobility or clergy, unrelated administration,
 amounts or measurements, or third-party transactions without a target-family
 participant.
@@ -152,6 +168,12 @@ recommendation. Status is **supported** (explicit), **partially supported**
 inference), or **contradicted**. Correct clear errors; remove unsupported and
 contradicted facts. If the source is missing, corrupted, or ambiguous, leave the
 fact and report the issue.
+
+Review the event, participant identification, and each title or other detail
+separately. If the event is supported but a detail is wrong, correct that detail
+without deleting the supported event. If a participant's identity is ambiguous,
+retain the source-supported event under the source's designation where possible
+and report the uncertainty; do not turn an uncertain identity into a fact.
 
 After editing, run `python3 scripts/lint.py`
 (it checks syntax and references, not support), and review the diff: source

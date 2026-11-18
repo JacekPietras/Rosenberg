@@ -163,7 +163,7 @@ def load_inputs(root, validate=True):
     connectors = connectors_path.read_text(encoding='utf-8') if connectors_path.exists() else ''
     by_names_path = root / 'data/by-names.md'
     by_names = by_names_path.read_text(encoding='utf-8') if by_names_path.exists() else ''
-    title_names.recognizer = PersonNameRecognizer(names, particles, places, titles, connectors, by_names)
+    recognizer = PersonNameRecognizer(names, particles, places, titles, connectors, by_names)
     canonical_titles = {}
     for assertion in assertions:
         for mention in assertion.mentions:
@@ -183,4 +183,4 @@ def load_inputs(root, validate=True):
     # Refuse a mixed snapshot if a file changed during ingestion.
     if manifest != initial_manifest or registry_bytes != (root / 'data/people.json').read_bytes():
         raise ValueError('inputs changed during ingestion; rerun reconstruction')
-    return Inputs(root, people, names, places, assertions, manifest, prose, registry_bytes, tree_bytes, matching, observations, titles, kinship)
+    return Inputs(root, people, names, places, assertions, manifest, prose, registry_bytes, tree_bytes, matching, observations, titles, kinship, recognizer)

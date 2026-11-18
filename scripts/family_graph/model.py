@@ -7,6 +7,8 @@ import hashlib
 import json
 import struct
 
+from .person_names import PersonNameRecognizer
+
 
 def canonical(value):
     # Tagged containers and IEEE-754 numbers give Python and JavaScript the
@@ -163,3 +165,4 @@ class Inputs:
     observations: list = field(default_factory=list)
     titles: str = ''
     kinship: str = ''
+    recognizer: PersonNameRecognizer | None = None

@@ -99,6 +99,7 @@ Every merge in every pass is checked on the complete identity it would create
 - two same-named parents or spouses of one person could then not be one person;
 - a relationship would link the identity to itself, create an ancestry cycle,
   or break generations (siblings level, a parent exactly one above a child);
+- recorded kinship would acquire paths all excluded by the source term;
 - the parts are already known relatives through the tree
   ([evidence-model.md](evidence-model.md#known-relatives)).
 
@@ -106,6 +107,9 @@ Conflicts already inside one existing identity are data problems: they are
 reported, and do not block later merges of that identity. Recorded
 relationships are used for the cycle, generation and known-relative checks;
 fathers inherited from a sibling only take part in the one-father rule.
+
+An inconsistent anchored parent/sibling generation is reported. Its connected
+generation component blocks merges there while independent families continue.
 
 All proposals of one round are checked together per connected family, so a
 pair of individually valid merges cannot jointly break a rule.
@@ -129,7 +133,7 @@ same inputs gives a byte-identical `tree.json`.
 | Export and validation | `export.py`, `graph.py` |
 
 Tests: `tests/test_probability.py` (features and blocks) and
-`tests/test_family_graph.py` (passes and real-data cases).
+`tests/test_family_graph.py` (build and export with synthetic source datasets).
 
 The rebuild command emits flushed `PROGRESS:` messages for loading, candidate
 resolution, and reconstruction. Pass 3 and pass 4 report each completed round;

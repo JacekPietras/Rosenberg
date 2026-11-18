@@ -108,6 +108,8 @@ files describe how they are met. When a rule changes, change it here first.
 
 ## Results
 
+- A kinship edge preserves which person bears the source term and which person
+  they are related to. For example, `patruus` identifies the paternal uncle.
 - Results do not depend on the order of the input.
 - Every decision is explainable: features, sources, blocks and alternatives are
   stored in `data/tree.json`.

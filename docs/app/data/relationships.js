@@ -1,3 +1,5 @@
+import { buildSourcePersonPattern, findPersonNameMentions, personRouteName } from './person-name-recognition.js';
+
 // Generated evidence is accepted only after verifying the complete build input.
 const sourcePath = /^data\/(books|documents|notes|images)\/.*\.json$/;
 
@@ -13,10 +15,11 @@ function kinshipCanonicalizer(text) {
     .map((part) => forms.get(normalize(part)) ?? part).join('');
 }
 
-function contextParticipant(fact, reference, people) {
-  if (fact?.type !== 'generic' || typeof fact.content !== 'string' || typeof reference !== 'string' || !reference) return false;
-  const text = (fact.person ? `[${fact.person}] ` : '') + fact.content;
+function contextParticipant(text, reference, people, recognized) {
+  if (typeof text !== 'string' || typeof reference !== 'string' || !reference) return false;
   if (people.some((person) => person.id === reference)) return text.includes(`[${reference}]`);
+  const recognizedName = recognized(text, reference);
+  if (recognizedName !== undefined) return recognizedName;
   const names = text.matchAll(/(?<![\p{L}\p{N}_])[A-ZÄÖÜ][\p{L}\p{N}_’'-]*(?:\s+[A-ZÄÖÜ][\p{L}\p{N}_’'-]*)?\s+von\s+[A-ZÄÖÜ][\p{L}\p{N}_’'-]*/gu);
   const prefixes = new Set(['herr', 'frau', 'graf', 'count', 'sir', 'ritter', 'freiherr', 'markgraf', 'pfalzgraf', 'archbishop', 'bishop', 'erzbischof', 'bischof']);
   for (const [value] of names) {
@@ -107,16 +110,31 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
     if (Object.hasOwn(metadata.inputs, 'data/tree.json')) throw new Error('Generated tree cannot be its own input');
     const sources = Object.keys(metadata.inputs).filter((path) => sourcePath.test(path)).sort();
     if (JSON.stringify(sources) !== JSON.stringify(paths.filter((path) => sourcePath.test(path)).sort())) throw new Error('The source file set changed');
-    let kinshipText = '';
+    const dictionaries = {};
     await Promise.all(Object.entries(metadata.inputs).map(async ([path, expected]) => {
       if (path.split('/').includes('..') || !/^data\/.*\.(json|md)$/.test(path)) throw new Error('Invalid build input path');
       const value = path === 'data/people.json' ? registryIdentities(people)
         : documents.has(path) ? documents.get(path)
           : path.endsWith('.json') ? await repository.getJson(path) : await repository.getText(path);
-      if (path === 'data/kinship.md') kinshipText = value;
+      if (!sourcePath.test(path)) dictionaries[path] = value;
       if (await evidenceFingerprint(value) !== expected) throw new Error(`Build input changed: ${path}`);
     }));
-    const canonicalKinship = kinshipCanonicalizer(kinshipText);
+    const canonicalKinship = kinshipCanonicalizer(dictionaries['data/kinship.md'] || '');
+    const nameArgs = [[dictionaries['data/titles-age.md'], dictionaries['data/titles-office.md']].filter(Boolean).join('\n'),
+      dictionaries['data/name-connectors.md'] || '', dictionaries['data/nobiliary_particles.md'] || '',
+      dictionaries['data/names.md'], dictionaries['data/by-names.md'] || '', dictionaries['data/places.json']];
+    const [titles, connectors, particles, names, byNames, places] = nameArgs;
+    const pattern = buildSourcePersonPattern(names, particles, places, titles, connectors, byNames);
+    const routes = new Map();
+    function recognized(text, reference) {
+      if (!pattern) return undefined;
+      if (!routes.has(text)) {
+        const mentions = findPersonNameMentions(text, ...nameArgs, pattern);
+        routes.set(text, new Set(mentions.singles.map((m) => m.route)));
+      }
+      if (routes.get(text).has(personRouteName(reference, ...nameArgs))) return true;
+      return metadata.configuration.directedKin ? false : undefined;
+    }
     let settings;
     if ((metadata.schema === undefined || metadata.schema >= 4)) {
       if (!Object.hasOwn(metadata.inputs, 'data/matching.json')) throw new Error('Missing global probability configuration');
@@ -148,7 +166,8 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
       const checked = new Map();
       const sourceFact = async (source, view) => {
         if (!sourcePath.test(source.path) || !Object.hasOwn(metadata.inputs, source.path)
-          || !/\/(facts|guesses)\/[0-9]+$/.test(source.pointer)
+          || !(/\/(facts|guesses)\/[0-9]+$/.test(source.pointer)
+            || source.path.startsWith('data/documents/') && /^\/entries\/[0-9]+\/english$/.test(source.pointer))
           || view === 'facts' && source.pointer.includes('/guesses/')) throw new Error('Invalid reconstructed source');
         const key = JSON.stringify(source);
         if (!checked.has(key)) {
@@ -175,9 +194,13 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
             const fact = await sourceFact(mention.source, view);
             let reference;
             if (mention.field === 'text') {
-              if (fact?.type !== 'generic') throw new Error('Invalid reconstructed participant');
+              if (typeof fact === 'string' ? !mention.source.pointer.endsWith('/english') : fact?.type !== 'generic') {
+                throw new Error('Invalid reconstructed participant');
+              }
+              const text = typeof fact === 'string' ? fact : fact?.type === 'generic' && typeof fact.content === 'string'
+                ? (fact.person ? `[${fact.person}] ` : '') + fact.content : null;
               reference = mention.reference;
-              if (!contextParticipant(fact, reference, people)) throw new Error('Invalid reconstructed context participant');
+              if (!contextParticipant(text, reference, people, recognized)) throw new Error('Invalid reconstructed context participant');
             } else {
               if (!fact || !['person', 'of'].includes(mention.field) || typeof fact[mention.field] !== 'string') throw new Error('Invalid reconstructed participant');
               reference = fact[mention.field];
@@ -209,7 +232,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
               }
               if (fact.type !== edge.type || canonicalKinship(fact.term || '') !== (edge.term || '')) continue;
               const expected = [edge.person, edge.of];
-              if (edge.type !== 'parent') { endpoints.sort(); expected.sort(); }
+              if (edge.type !== 'parent' && !(edge.type === 'kin' && metadata.configuration?.directedKin)) { endpoints.sort(); expected.sort(); }
               supported ||= JSON.stringify(endpoints) === JSON.stringify(expected);
             }
             supported ||= [...fathered].some((key) => key !== edge.of && siblings.has(key));
@@ -277,7 +300,7 @@ export function buildRelationshipGraph(people, { tree, view, verification } = {}
   const add = (person, target, type, derivations = [], term = '') => {
     if (!target || person._treeKey === target._treeKey) throw new Error('Invalid or ambiguous relationship endpoint');
     let left = person._treeKey, right = target._treeKey;
-    if (type !== 'parent' && left > right) [left, right] = [right, left];
+    if (['sibling', 'spouse'].includes(type) && left > right) [left, right] = [right, left];
     const key = JSON.stringify([left, right, type, term]);
     if (seen.has(key)) {
       if (generated) throw new Error('Duplicate generated relationship');

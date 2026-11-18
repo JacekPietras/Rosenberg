@@ -96,7 +96,8 @@ def load_debug_tree(path, tree):
         debug = json.loads(path.read_text(encoding='utf-8'))
     except (OSError, ValueError):
         return None
-    if not isinstance(debug, dict) or debug.get('fingerprint') != tree.get('fingerprint'):
+    if (not isinstance(debug, dict) or debug.get('fingerprint') != tree.get('fingerprint')
+        or debug.get('configuration') != tree.get('configuration')):
         return None
     return debug
 
@@ -106,7 +107,7 @@ def serialize(inputs, results):
         raise ValueError('evidence views require the same engine configuration')
     registry = set(registry_keys(inputs.people))
     tree = {
-        'configuration': {'searchLimit': results[0].configuration['searchLimit']},
+        'configuration': {'directedKin': True, 'searchLimit': results[0].configuration['searchLimit']},
         'inputs': inputs.manifest, 'fingerprint': fingerprint(inputs.manifest),
         'evidence': {result.view: pack_evidence(result.evidence_graph) for result in results},
         'matchingBackground': {result.view: result.evidence_graph['nameFrequencies'] for result in results},
@@ -234,8 +235,10 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
                         text = fact if isinstance(fact, str) else generic_text(fact)
                         if reference in registry:
                             valid = '[' + reference + ']' in text
-                        elif recognizer is not None:
-                            valid = reference in recognizer.find(text) or reference in person_references(text)
+                        elif recognizer is not None and recognizer.pattern:
+                            valid = reference in recognizer.find(text)
+                            if not valid and not metadata['configuration'].get('directedKin'):
+                                valid = reference in person_references(text)
                         else:
                             valid = reference in person_references(text)
                         if not valid:
@@ -262,7 +265,8 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
             kind, left, right = edge.get('type'), edge.get('person'), edge.get('of')
             if kind not in {'parent', 'spouse', 'sibling', 'kin'} or left not in nodes or right not in nodes or left == right:
                 raise ValueError('invalid reconstructed relationship endpoint')
-            key = (kind, left, right, edge.get('term', '')) if kind == 'parent' else (kind, *sorted((left, right)), edge.get('term', ''))
+            directed = kind == 'parent' or kind == 'kin' and metadata['configuration'].get('directedKin') is True
+            key = (kind, left, right, edge.get('term', '')) if directed else (kind, *sorted((left, right)), edge.get('term', ''))
             if key in seen or not edge.get('derivations') or kind == 'kin' and not edge.get('term', '').strip():
                 raise ValueError('invalid reconstructed relationship')
             seen.add(key)
@@ -292,7 +296,7 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
                         elif fact.get('type') == 'sibling' and right in pair:
                             siblings.add(pair[1] if pair[0] == right else pair[0])
                     elif fact.get('type') == kind and kinship.canonical(fact.get('term', '')) == edge.get('term', ''):
-                        supported |= pair == [left, right] if kind == 'parent' else sorted(pair, key=str) == sorted([left, right])
+                        supported |= pair == [left, right] if directed else sorted(pair, key=str) == sorted([left, right])
                 supported |= bool(fathered & siblings - {right})
                 if root is not None and not supported:
                     raise ValueError('reconstructed edge has no supporting participant assignment')

@@ -1,11 +1,11 @@
 """Exercise web rebuilds through the real HTTP endpoint and Python engine."""
 
+from itertools import count
 from http.client import HTTPConnection
 from http.server import ThreadingHTTPServer
 import importlib.util
 import json
 from pathlib import Path
-import subprocess
 import sys
 import tempfile
 import threading
@@ -13,6 +13,9 @@ import unittest
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'scripts'))
+from family_graph.probability import DEFAULTS
+
 spec = importlib.util.spec_from_file_location('family_tree_test_server', ROOT / 'docs/serve.py')
 viewer = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(viewer)
@@ -31,7 +34,7 @@ class FamilyTreeServerTests(unittest.TestCase):
         (self.root / 'scripts').symlink_to(ROOT / 'scripts', target_is_directory=True)
         self.write('data/names.md', 'Alex\nBea\n')
         self.write('data/places.json', [])
-        self.write('data/matching.json', json.loads((ROOT / 'data/matching.json').read_text()))
+        self.write('data/matching.json', DEFAULTS)
         self.write('data/people.json', [{'id': 'a', 'name': 'Alex'}, {'id': 'b', 'name': 'Bea'}])
         self.write('data/tree.json', {'views': ['facts', 'with-guesses'], 'configuration': {'searchLimit': 37}})
         self.write('data/documents/test.json', {'date': '1393', 'facts': [
@@ -112,18 +115,28 @@ class FamilyTreeServerTests(unittest.TestCase):
                 self.assertEqual(10000, tree['configuration']['searchLimit'])
 
     def test_timeout_is_reported_as_a_retryable_failure(self):
-        with patch.object(viewer.subprocess, 'run', side_effect=subprocess.TimeoutExpired('rebuild', 120)):
-            self.assertEqual(504, self.post()[0])
-
+        # Use the real endpoint and process loop, with an elapsed deadline.
+        with patch.object(viewer, 'time') as clock:
+            clock.monotonic.side_effect = count(0, 3601)
+            status, result = self.post()
+        self.assertEqual(504, status)
+        self.assertIn('retry', result['error'].lower())
 
     def test_inputs_changed_during_build_are_rebuilt_without_an_error(self):
-        changed = subprocess.CompletedProcess('rebuild', 75, '', 'inputs or tree changed during computation')
-        done = subprocess.CompletedProcess('rebuild', 0, '', '')
-        with patch.object(viewer.subprocess, 'run', side_effect=[changed, done]) as run:
-            self.assertEqual(200, self.post()[0])
-        self.assertEqual(2, run.call_count)
-        with patch.object(viewer.subprocess, 'run', return_value=changed):
-            self.assertEqual(422, self.post()[0])
+        (self.root / 'scripts').unlink()
+        self.write('scripts/rebuild_family_tree.py', """from pathlib import Path
+import sys
+
+attempts = Path('attempts')
+count = int(attempts.read_text()) + 1 if attempts.exists() else 1
+attempts.write_text(str(count))
+sys.exit(75 if count == 1 or Path('always_changed').exists() else 0)
+""")
+        self.assertEqual(200, self.post()[0])
+        self.assertEqual('2', (self.root / 'attempts').read_text())
+        self.write('always_changed', '')
+        self.assertEqual(422, self.post()[0])
+        self.assertEqual('5', (self.root / 'attempts').read_text())
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,4 +1,3 @@
-import json
 from pathlib import Path
 import sys
 import unittest
@@ -10,20 +9,13 @@ from family_graph.names import Names
 from family_graph.sources import walk_assertions
 
 
-ROOT = Path(__file__).resolve().parents[1]
+NAMES = '# Men\nArnold\nEberhard\nKonrad\n# Women\nElisabeth, Elsbeth'
+PLACES = [{'id': place.lower(), 'variations': [place]}
+          for place in ('Uissigheim', 'Lauda', 'Rosenberg', 'Pappenheim', 'Bartenstein')]
 
 
 def recognizer():
-    names = (ROOT / 'data/names.md').read_text(encoding='utf-8')
-    particles = (ROOT / 'data/nobiliary_particles.md').read_text(encoding='utf-8')
-    connectors = (ROOT / 'data/name-connectors.md').read_text(encoding='utf-8')
-    by_names = (ROOT / 'data/by-names.md').read_text(encoding='utf-8')
-    titles = '\n'.join([
-        (ROOT / 'data/titles-age.md').read_text(encoding='utf-8'),
-        (ROOT / 'data/titles-office.md').read_text(encoding='utf-8'),
-    ])
-    places = json.loads((ROOT / 'data/places.json').read_text(encoding='utf-8'))
-    return PersonNameRecognizer(names, particles, places, titles, connectors, by_names)
+    return PersonNameRecognizer(NAMES, 'von\nzu', PLACES, 'Ritter\nVogt', '', 'Marschalk')
 
 
 class PersonNameRecognitionTests(unittest.TestCase):
@@ -55,12 +47,10 @@ class PersonNameRecognitionTests(unittest.TestCase):
         self.assertEqual({'Elsbeth Marschalk zu Pappenheim', 'Elisabeth Marschalk zu Pappenheim'}, names)
 
     def test_zum_place_form_is_recognized_and_normalized_like_zu(self):
-        names_text = (ROOT / 'data/names.md').read_text(encoding='utf-8')
-        places_data = json.loads((ROOT / 'data/places.json').read_text(encoding='utf-8'))
         phrase = 'transferred the said Amt Klingenberg to Konrad von Rosenberg zum Bartenstein and his cousin'
         found = recognizer().find(phrase)
         self.assertEqual({'Konrad von Rosenberg'}, found)
-        name_rules = Names(names_text, places_data)
+        name_rules = Names(NAMES, PLACES)
         self.assertEqual(name_rules.key('Konrad von Rosenberg zu Bartenstein'),
                          name_rules.key('Konrad von Rosenberg zum Bartenstein'))
 

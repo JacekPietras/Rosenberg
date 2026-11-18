@@ -7,6 +7,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from family_graph import build, load_inputs
@@ -15,6 +16,7 @@ from family_graph.dates import date_bounds, death_interval, inherited_date_bound
 from family_graph.export import apply, pack_evidence, serialize, unpack_evidence, validate_generated
 from family_graph.model import fingerprint, registry_keys
 from family_graph.names import Names
+from family_graph.probability import DEFAULTS
 from family_graph.policy import OfficeRule
 from family_graph.sources import input_manifest, walk_assertions
 from family_graph.scoring import place_patterns, places_for
@@ -45,7 +47,7 @@ class FamilyGraphTests(unittest.TestCase):
         self.write('data/names.md', '# Men\n\nArnold\nEberhard, Eberhardi\nKonrad, Conradus\nKunz, Cunz // never expand to Konrad\n\n'
                                     '# Women\n\nElisabeth\nJutta\n\n# Other\n\nMünch, Mönch\n')
         self.write('data/places.json', [])
-        self.write('data/matching.json', json.loads((Path(__file__).resolve().parents[1] / 'data/matching.json').read_text()))
+        self.write('data/matching.json', DEFAULTS)
 
     def write(self, path, value):
         path = self.root / path
@@ -335,73 +337,103 @@ class FamilyGraphTests(unittest.TestCase):
         mention.reference = 'Alex von Essingen'
         self.assertEqual(set(), places_for(mention, patterns))
 
-    def test_real_posthumous_source_and_independently_anchored_parentage(self):
-        root = Path(__file__).resolve().parents[1]
-        inputs = load_inputs(root)
+    def test_posthumous_parent_and_independent_family_survive_export(self):
+        inputs = self.inputs([person(x) for x in ('father', 'son', 'parent2', 'child2')], [
+            {'type': 'death', 'person': 'father', 'diedOn': '1390'},
+            relation('father', 'son', personDeceased=True), relation('parent2', 'child2')])
         result = build(inputs)
-        death_mentions = [d for d in result.decisions.values() if d.mention.assertion.source.path == 'data/documents/1393-06-23_2.json' and d.mention.reference == 'vogt_zu_Lauda']
-        self.assertTrue(death_mentions)
-        self.assertTrue(all(d.identity == 'vogt_zu_Lauda' and d.method == 'anchored' for d in death_mentions))
-        # Unmarked later mentions of a fixed ID are reported for review, not reassigned.
-        self.assertFalse([c for c in result.conflicts if c['reason'] != 'unmarked mention after recorded death or impossible age'])
-        edges = [(e.person, e.of) for e in result.relationships if e.type == 'parent']
-        self.assertIn(('vogt_zu_Lauda', 'arnold_boxberg'), edges)
-        self.assertIn(('vogt_zu_Durn', 'engelhard_son_of_vogt_zu_Durn'), edges)
-        self.assertTrue(any(d.method == 'reviewed' for d in result.decisions.values()))
+        self.assertFalse(result.conflicts)
+        graph = serialize(inputs, [result])['evidence']['facts']
+        self.assertEqual({('father', 'son'), ('parent2', 'child2')},
+                         {(e['person'], e['of']) for e in graph['relationships']})
 
-    def test_real_vogt_zu_lauda_family_has_no_duplicate_konrad_or_arnold(self):
-        inputs = load_inputs(Path(__file__).resolve().parents[1])
-        graph = build(inputs, include_guesses=True).evidence_graph
-        nodes = {node['key']: node for node in graph['nodes']}
-        where = {(m['source']['path'], m['source']['pointer'], m['field']): node['key'] for node in graph['nodes'] for m in node['mentions']}
-        book = 'data/books/'
-        siblings = {edge['person'] if edge['of'] == 'vogt_zu_Lauda' else edge['of'] for edge in graph['relationships']
-                    if edge['type'] == 'sibling' and 'vogt_zu_Lauda' in (edge['person'], edge['of'])}
-        konrads = {key for key in siblings if nodes[key]['name'] == 'Konrad von Rosenberg'}
-        self.assertEqual(2, len(konrads))
-        # Kreis Mosbach's Ritter and Edelknecht are two people; the Ritter is the documented Vitztum.
-        ritter = where[(book + 'kreis_mosbach_1898.json', '/entries/3/guesses/2', 'person')]
-        squire = where[(book + 'kreis_mosbach_1898.json', '/entries/3/guesses/7', 'person')]
-        self.assertNotEqual(ritter, squire)
-        self.assertEqual(ritter, where[('data/documents/1381-05-25_4.json', '/entries/0/facts/2', 'person')])
-        # Bauer 1395: the late father, Arnold der Junge and his brother are three people.
-        bauer = book + 'bauer_1872.json'
-        self.assertEqual(where[(bauer, '/entries/60/facts/1', 'of')], where[(bauer, '/entries/60/facts/2', 'person')])
-        self.assertNotEqual(where[(bauer, '/entries/60/facts/1', 'person')], where[(bauer, '/entries/60/facts/2', 'of')])
-        # Freiburger 1401: the living Vizedom and Anna Marschalk's late husband stay apart.
-        fda = book + 'freiburger_dioecesan_archiv_1896_25.json'
-        self.assertNotEqual(where[(fda, '/entries/65/facts/2', 'person')], where[(fda, '/entries/65/facts/1', 'of')])
+    def test_same_named_brothers_with_opposite_ranks_stay_distinct(self):
+        name = 'Konrad von North'
+        def brother(rank):
+            return relation(name, 'a', 'sibling', personTitle=[rank])
+        self.inputs(facts=[brother('Ritter'), brother('Edelknecht')])
+        self.write('data/documents/confirmation.json', {'date': '1394', 'facts': [brother('Ritter')]})
+        inputs = load_inputs(self.root, validate=False)
+        nodes = serialize(inputs, [build(inputs)])['evidence']['facts']['nodes']
+        self.assertEqual({('Ritter',): 2, ('Edelknecht',): 1},
+                         {tuple(n['titles']): len(n['mentions']) for n in nodes if n['name'] == name})
 
-    def test_real_elisabeth_spouse_and_mother_attestations_form_one_identity(self):
-        inputs = load_inputs(Path(__file__).resolve().parents[1])
-        self.assertFalse(any(person['name'] == 'Elisabeth von Erligheim' for person in inputs.people),
-                         'This regression must exercise automatic identity matching without a registry anchor.')
-        for include_guesses in (False, True):
-            graph = build(inputs, include_guesses=include_guesses).evidence_graph
-            nodes = [node for node in graph['nodes'] if node['name'] == 'Elisabeth von Erligheim']
-            self.assertEqual(1, len(nodes))
-            elisabeth = nodes[0]
-            self.assertNotIn('registry', elisabeth)
-            expected = {(a.source.path, a.source.pointer, m.field) for a in inputs.assertions
-                        if include_guesses or a.source.kind == 'facts'
-                        for m in a.mentions if m.reference == 'Elisabeth von Erligheim'}
-            actual = {(m['source']['path'], m['source']['pointer'], m['field']) for m in elisabeth['mentions'] if m['field'] in {'person', 'of'}}
-            self.assertEqual(expected, actual)
-            relationships = {(edge['type'], edge['person'], edge['of']) for edge in graph['relationships']}
-            self.assertIn(('parent', elisabeth['key'], 'arnold_boxberg'), relationships)
-            self.assertIn(('parent', elisabeth['key'], 'eberhard_jagstberg'), relationships)
-            self.assertTrue(any(edge['type'] == 'spouse' and {edge['person'], edge['of']} == {elisabeth['key'], 'vogt_zu_Lauda'}
-                                for edge in graph['relationships']))
-            self.assertNotEqual(elisabeth['key'], 'else_wife_of_arnold')
-            membership = {(m['source']['path'], m['source']['pointer'], m['field']): node['key']
-                          for node in graph['nodes'] for m in node['mentions'] if m['field'] in {'person', 'of'}}
-            for first, second in [
-                (('data/documents/1358-05-19.json', '/entries/0/facts/4'), ('data/documents/1364-03-10.json', '/entries/0/facts/5')),
-                (('data/books/bauer_1872.json', '/entries/101/facts/0'), ('data/books/freiburger_dioecesan_archiv_1896_25.json', '/entries/52/facts/1')),
-            ]:
-                for field in ('person', 'of'):
-                    self.assertEqual(membership[(*first, field)], membership[(*second, field)])
-            self.assertGreaterEqual(elisabeth['identityProbability'], inputs.matching['mergeProbability'])
+    def test_unanchored_spouse_and_mother_across_sources(self):
+        name = 'Elisabeth von North'
+        self.inputs(facts=[relation(name, 'a', 'spouse'), relation(name, 'b')])
+        self.write('data/documents/second.json', {'date': '1394', 'facts': [relation(name, 'a', 'spouse')],
+                                                  'guesses': [relation(name, 'c')]})
+        inputs = load_inputs(self.root, validate=False)
+        for guesses in (False, True):
+            graph = unpack_evidence(serialize(inputs, [build(inputs, guesses)])['evidence']['with-guesses' if guesses else 'facts'])
+            mother, = [n for n in graph['nodes'] if n['name'] == name]
+            self.assertNotIn('registry', mother)
+            self.assertEqual(3 + guesses, len(mother['mentions']))
+            self.assertEqual({'b', 'c'} if guesses else {'b'},
+                             {e['of'] for e in graph['relationships'] if e['type'] == 'parent' and e['person'] == mother['key']})
+
+    def test_opposite_kin_assertions_keep_direction_through_export(self):
+        self.write('data/kinship.md', 'patruus: PS | S | exact')
+        inputs = self.inputs(facts=[relation('c', 'a', 'kin', term='patruus'), relation('a', 'c', 'kin', term='patruus')])
+        result = build(inputs)
+        tree = serialize(inputs, [result])
+        edges = tree['evidence']['facts']['relationships']
+        self.assertEqual({('c', 'a'), ('a', 'c')}, {(e['person'], e['of']) for e in edges})
+        self.assertEqual(2, len(result.relationships))
+        edges.pop()
+        edges[0]['of'], edges[0]['person'] = edges[0]['person'], edges[0]['of']
+        with self.assertRaises(ValueError):
+            validate_generated(tree, inputs.people, self.root)
+
+    def test_kin_exclusion_applies_before_same_section_merge(self):
+        self.write('data/kinship.md', 'Vetter: PS SC PSC | S | narrow')
+        name = 'Konrad von North'
+        for relative, expected in [('a', 2), ('b', 1)]:
+            inputs = self.inputs(facts=[relation(name, 'a', 'kin', term='Vetter'), relation(name, relative, 'sibling')])
+            nodes = serialize(inputs, [build(inputs)])['evidence']['facts']['nodes']
+            self.assertEqual(expected, sum(n['name'] == name for n in nodes))
+
+    def test_unrelated_generation_conflict_preserves_other_merges(self):
+        inputs = self.inputs(facts=[relation('a', 'b'), relation('a', 'b', 'sibling'),
+                                    relation('Konrad von North', 'c'), relation('Konrad von North', 'c')])
+        result = build(inputs)
+        self.assertIn({'reason': 'inconsistent anchored generations', 'identities': ['a', 'b']}, result.conflicts)
+        nodes = serialize(inputs, [result])['evidence']['facts']['nodes']
+        merged, = [n for n in nodes if n['name'] == 'Konrad von North']
+        self.assertEqual(2, len(merged['mentions']))
+
+    def test_document_birth_name_is_counted_once_and_attached_to_context(self):
+        self.write('data/places.json', [{'id': place.lower(), 'variations': [place]} for place in ('North', 'South', 'Hill')])
+        self.write('data/nobiliary_particles.md', 'von')
+        self.inputs(facts=[relation('Elisabeth von South', 'b'),
+                           {'type': 'generic', 'person': 'Elisabeth von South',
+                            'content': 'held Hill with Konrad von North and Arnold von South.'}])
+        phrase = 'Elisabeth von North, née von South'
+        self.write('data/documents/prose.json', {'date': '1394', 'place': 'Hill', 'entries': [
+            {'english': f'{phrase} held Hill with Konrad von North and Arnold von South. {phrase} witnessed.'}]})
+        inputs = load_inputs(self.root, validate=False)
+        result = build(inputs)
+        tree = serialize(inputs, [result])
+        counts = tree['matchingBackground']['facts']['counts']
+        self.assertEqual(3, counts['elisabeth von south'])
+        self.assertNotIn('elisabeth von north', counts)
+        graph = unpack_evidence(tree['evidence']['facts'])
+        elisabeth, = [n for n in graph['nodes'] if n['name'] == 'Elisabeth von South']
+        english = [m for m in elisabeth['mentions'] if m['source']['pointer'].endswith('/english')]
+        self.assertEqual(['Elisabeth von South'], [m['reference'] for m in english])
+        self.assertEqual(1, len(graph['relationships']))
+
+    def test_incomplete_passage_search_never_commits_first_grouping(self):
+        name = 'Konrad von North'
+        facts = [relation(name, endpoint, 'spouse', personTitle=titles)
+                 for endpoint, titles in [('a', ['Ritter']), ('b', ['Edelknecht']), ('c', [])]]
+        inputs = self.inputs(facts=facts)
+        for limit in ('PASSAGE_SEARCH_LIMIT', 'PASSAGE_PARTITION_LIMIT'):
+            with self.subTest(limit=limit), patch('family_graph.reconstruction.' + limit, 1):
+                result = build(inputs)
+                serialize(inputs, [result])
+                self.assertFalse(any(link['reason'] == 'repeated participant within one dated source passage'
+                                     for link in result.evidence_graph['links']))
 
     def test_unresolved_groups_are_alternatives_without_merging_nodes(self):
         result = build(self.inputs(facts=[relation('Alex', 'b'), relation('Alex', 'c')]))

@@ -361,7 +361,7 @@ test('hover facts use source identity pointers and keep namesakes separate', () 
     renderFactsView([{ ...documents.get(path).entries[0].facts[0], date: '1400' },
       { ...documents.get(path).entries[0].guesses[0], date: '1400', isGuess: true }], { people: [], inlineMarkup, sourceHref }),
     'facts and guesses use the same renderer and styles as source screens');
-  assert.match(templates[0], /class="person-link"/, 'reuse person links');
+  assert.match(templates[0], /class="person-link person-mention" href="\?person=Same%20name"/);
 });
 
 test('hover displays a source person supported only by a guess', () => {

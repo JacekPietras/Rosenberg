@@ -19,6 +19,7 @@ Add facts directly to the relevant JSON entry and review the diff.
 
 - Before changing `scripts/family_graph/` or `data/matching.json`, read `specs/family_graph_algorithm/`.
 - Keep `specs/family_graph_algorithm/` in step with the code.
+- Cover family graph changes with fast integration tests through the build and export entry points. Use self-contained synthetic datasets independent of the saved tree, production documents, and project data files.
 
 ## Images
 

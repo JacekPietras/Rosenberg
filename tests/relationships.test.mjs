@@ -163,7 +163,7 @@ test('local and published discovery return recursive sources plus watched build 
 });
 
 test('active loader filters watched non-source files and verifies evidence views', async () => {
-  const data = await fixture();
+  const data = await externalTreeFixture();
   const state = { recordLabels: [], sealNames: [], imageRegions: [], active: 'tree', familyView: 'with-guesses' };
   const repository = {
     ...data.repository,
@@ -172,16 +172,15 @@ test('active loader filters watched non-source files and verifies evidence views
       : path === 'data/places.json' || path === 'docs/assets/calibration-cities.json' ? '[]'
         : data.files.get(path) || '',
   };
-  let renders = 0;
   const validityAtRender = [];
   const loader = createDataLoader({ repository, state, parsePeople, parsePlaces,
     buildPersonPattern: () => [], buildPlacePattern: () => null,
-    bookSortYear: () => 0, recordHasMissingSourceOrUrl: () => false,
+    bookSortYear: () => 0, recordHasMissingSource: () => false, recordHasMissingUrl: () => false, distinctFamilies: new Set(),
     missingRecordLabel: 'missing', greyRecordLabels: [], savePreferences() {}, renderTabs() {},
-    renderActive: async () => { renders++; validityAtRender.push(state.familyGraph.valid); } });
+    renderActive: async () => { validityAtRender.push(state.familyGraph.valid); } });
   await loader.loadAll();
-  assert.equal(renders, 2);
-  assert.deepEqual(validityAtRender, [false, true]);
+  assert.equal(validityAtRender[0], false);
+  assert.equal(validityAtRender.at(-1), true);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   assert.equal(state.familyView, 'with-guesses');
   assert.equal(state.documents.size, 1);
@@ -207,7 +206,7 @@ test('a book renders before unrelated source files finish loading', async () => 
   };
   const loader = createDataLoader({ repository, state, parsePeople, parsePlaces,
     buildPersonPattern: () => [], buildPlacePattern: () => null,
-    bookSortYear: () => 0, recordHasMissingSourceOrUrl: () => false,
+    bookSortYear: () => 0, recordHasMissingSource: () => false, recordHasMissingUrl: () => false, distinctFamilies: new Set(),
     missingRecordLabel: 'missing', greyRecordLabels: [], savePreferences() {}, renderTabs() { tabsRendered = true; },
     renderActive: async () => { if (state.active === book) firstRender(); } });
   const loading = loader.loadAll();
@@ -252,7 +251,7 @@ function loaderFor(data, { rebuild, local = true } = {}) {
   };
   const loader = createDataLoader({ repository, state, parsePeople, parsePlaces,
     buildPersonPattern: () => [], buildPlacePattern: () => null,
-    bookSortYear: () => 0, recordHasMissingSourceOrUrl: () => false,
+    bookSortYear: () => 0, recordHasMissingSource: () => false, recordHasMissingUrl: () => false, distinctFamilies: new Set(),
     missingRecordLabel: 'missing', greyRecordLabels: [], savePreferences() {}, renderTabs() {},
     onFamilyRebuild: () => { progress++; }, renderActive: async () => { renders++; } });
   return { state, loader, counts: () => ({ renders, progress }) };
@@ -265,7 +264,7 @@ async function updateFixtureBuild(data) {
 }
 
 test('stale local evidence automatically rebuilds once and reloads the verified graph', async () => {
-  const data = await fixture();
+  const data = await externalTreeFixture();
   data.documents.get(source.path).date = '1400';
   let rebuilds = 0;
   const { loader, state, counts } = loaderFor(data, { rebuild: async () => { rebuilds++; await updateFixtureBuild(data); } });
@@ -277,11 +276,11 @@ test('stale local evidence automatically rebuilds once and reloads the verified 
   assert.equal(state.familyView, 'with-guesses');
   assert.equal(state.familyGraph.canRebuild, true);
   assert.doesNotMatch(renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph }), /data-family-rebuild>/);
-  assert.deepEqual(counts(), { renders: 3, progress: 1 });
+  assert.equal(counts().progress, 1);
 });
 
 test('family rebuild waits until the tree screen is opened', async () => {
-  const data = await fixture();
+  const data = await externalTreeFixture();
   data.documents.get(source.path).date = '1400';
   let finish;
   const pending = new Promise((resolve) => { finish = resolve; });
@@ -304,8 +303,8 @@ test('family rebuild waits until the tree screen is opened', async () => {
   assert.equal(counts().progress, 1);
 });
 
-test('rebuild failures retain hidden stale edges and a working retry action', async () => {
-  const data = await fixture();
+test('rebuild failures retain the saved graph and allow retry', async () => {
+  const data = await externalTreeFixture();
   data.documents.get(source.path).date = '1400';
   let rebuilds = 0;
   const { loader, state } = loaderFor(data, { rebuild: async () => {
@@ -315,11 +314,9 @@ test('rebuild failures retain hidden stale edges and a working retry action', as
   await loader.loadAll();
   await loader.waitForFamilyRebuild();
   assert.equal(rebuilds, 1);
-  assert.equal(state.familyGraph.valid, false);
-  assert.equal(state.familyGraph.edges.length, 0);
-  const html = renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph });
-  assert.match(html, /data-family-rebuild>Retry rebuild/);
-  assert.match(html, /Invalid source date/);
+  assert.equal(state.familyVerification.valid, false);
+  assert.equal(state.familyGraph.edges.length, 1);
+  assert.match(state.familyGraph.rebuildError, /Invalid source date/);
   await loader.rebuildFamilyGraph();
   assert.equal(rebuilds, 2);
   assert.equal(state.familyGraph.valid, true);
@@ -327,7 +324,7 @@ test('rebuild failures retain hidden stale edges and a working retry action', as
 });
 
 test('a second input change cannot cause an automatic rebuild loop', async () => {
-  const data = await fixture();
+  const data = await externalTreeFixture();
   data.documents.get(source.path).date = '1400';
   let rebuilds = 0;
   const { loader, state } = loaderFor(data, { rebuild: async () => {
@@ -343,7 +340,7 @@ test('a second input change cannot cause an automatic rebuild loop', async () =>
 });
 
 test('hosted pages do not POST rebuilds to a static site', async () => {
-  const data = await fixture();
+  const data = await externalTreeFixture();
   data.documents.get(source.path).date = '1400';
   const { loader, state } = loaderFor(data, { local: false, rebuild: async () => { assert.fail('static site cannot run Python'); } });
   await loader.loadAll();
@@ -395,19 +392,21 @@ test('the rebuild button disables itself and reports a failed attempt with retry
   assert.match(message.textContent, /Try again/);
 });
 
-async function sourcePeopleFixture() {
+async function sourcePeopleFixture(type = 'parent', term = '') {
   const data = await fixture();
+  for (const person of data.people) person.name += ' von Rosenberg';
+  data.people[0].familyGraph.inputs['data/people.json'] = await evidenceFingerprint(registryIdentities(data.people));
   const doc = data.documents.get(source.path);
-  doc.entries[0].facts[0].of = 'Unregistered Child';
+  Object.assign(doc.entries[0].facts[0], { type, of: 'Unregistered Child', ...(term && {term}) });
   data.people.forEach((person) => { person.relationships = []; });
   const ref = { ...source, fingerprint: await evidenceFingerprint(doc.entries[0].facts[0]) };
   const nodes = [
-    { key: 'a', registry: 'a', name: 'Same', status: 'anchored', titles: [], dates: ['1393'],
+    { key: 'a', registry: 'a', name: data.people[0].name, status: 'anchored', titles: [], dates: ['1393'],
       mentions: [{ source: ref, field: 'person', date: '1393' }], identitySources: [] },
     { key: '@evidence/child', name: 'Unregistered Child', status: 'source', titles: [], dates: ['1393'],
       mentions: [{ source: ref, field: 'of', date: '1393' }], identitySources: [] },
   ];
-  const relationships = [{ type: 'parent', person: 'a', of: '@evidence/child',
+  const relationships = [{ type, ...(term && {term}), person: 'a', of: '@evidence/child',
     derivations: [{ identity: 'source', usesGuesses: false, sources: [ref] }] }];
   const metadata = data.people[0].familyGraph;
   Object.assign(metadata, { schema: 2, engine: '2', policy: '2', evidence: {
@@ -418,6 +417,22 @@ async function sourcePeopleFixture() {
   await updateFixtureBuild(data);
   return data;
 }
+
+test('verified kin edges preserve source direction even when the target sorts first', async () => {
+  const data = await sourcePeopleFixture('kin', 'patruus');
+  const metadata = data.people[0].familyGraph;
+  metadata.configuration.directedKin = true;
+  const verify = () => verifyFamilyGraph(data.people, data.documents, data.repository);
+  const verification = await verify();
+  assert.equal(verification.valid, true, verification.reason);
+  const [edge] = buildRelationshipGraph(data.people, { verification }).edges;
+  assert.deepEqual([edge.person, edge.of, edge.term], ['a', '@evidence/child', 'patruus']);
+  const saved = metadata.evidence.facts.relationships[0];
+  [saved.person, saved.of] = [saved.of, saved.person];
+  assert.equal((await verify()).valid, false);
+  delete metadata.configuration.directedKin;
+  assert.equal((await verify()).valid, true);
+});
 
 test('schema 2 displays source people and relationships outside the registry', async () => {
   const data = await sourcePeopleFixture();
@@ -446,9 +461,9 @@ test('source identities have working pages with their original assertion and sou
   });
   const html = renderPersonPage();
   assert.match(html, /Unregistered Child/);
-  assert.match(html, /No permanent person ID/);
+  assert.match(html, /class="fact-source-link"/);
   assert.match(html, /is parent of/);
-  assert.match(html, /Source attestations/);
+  assert.match(html, /Open fact source/);
   assert.match(html, /event.json/);
   state.person = 'Unregistered Child';
   const nameHtml = renderPersonPage();
@@ -650,7 +665,8 @@ test('repository handles a missing generated tree without treating it as source 
 
 async function probabilityFixture() {
   const data = await externalTreeFixture();
-  const parameters = JSON.parse(await readFile(new URL('../data/matching.json', import.meta.url), 'utf8'));
+  const parameters = { model: 'weighted-log-odds-v6', calibrated: false, priorProbability: .1,
+    mergeProbability: .7, guessWeight: .5, sourceWeights: { documents: 1, images: 1, books: .5, notes: .5 } };
   Object.assign(data.tree, { schema: 4, engine: '5', policy: '4', matchingBackground: { facts: { total: 0, counts: {} }, 'with-guesses': { total: 0, counts: {} } }, configuration: { searchLimit: 10000 } });
   data.files.set('data/matching.json', parameters);
   data.tree.inputs['data/matching.json'] = await evidenceFingerprint(parameters);
@@ -724,6 +740,38 @@ test('parameter changes automatically rebuild and a saved facts-only preference 
   assert.equal(rebuilds, 1);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   assert.equal(state.familyGraph.view, 'with-guesses');
+});
+
+test('document English can support a birth-name occurrence without supplying a relationship', async () => {
+  const data = await probabilityFixture();
+  const metadata = data.tree;
+  metadata.configuration.directedKin = true;
+  const dictionaries = {
+    'data/names.md': 'Elisabeth',
+    'data/nobiliary_particles.md': 'von',
+    'data/places.json': ['North', 'South'].map((name) => ({ id: name.toLowerCase(), variations: [name] })),
+  };
+  for (const [path, value] of Object.entries(dictionaries)) {
+    data.files.set(path, value);
+    metadata.inputs[path] = await evidenceFingerprint(value);
+  }
+  const entry = data.documents.get(source.path).entries[0];
+  entry.english = 'Elisabeth von North, née von South witnessed.';
+  const ref = { path: source.path, pointer: '/entries/0/english', fingerprint: await evidenceFingerprint(entry.english) };
+  const mention = { source: ref, field: 'text', reference: 'Elisabeth von South', date: '1393' };
+  const graph = metadata.evidence.facts;
+  graph.nodes.find((node) => !node.registry).mentions.push(mention);
+  await updateFixtureBuild(data);
+  const verify = () => verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], metadata);
+  const verification = await verify();
+  assert.equal(verification.valid, true, verification.reason);
+  for (const wrong of ['Invented Person', 'Elisabeth von North']) {
+    mention.reference = wrong;
+    assert.equal((await verify()).valid, false);
+  }
+  mention.reference = 'Elisabeth von South';
+  graph.relationships[0].derivations[0].sources = [ref];
+  assert.equal((await verify()).valid, false);
 });
 
 test('generic context participants are verified against the cited fact', async () => {

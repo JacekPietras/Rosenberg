@@ -244,7 +244,7 @@ comparison, goes to the gitignored `.cache/tree-debug.json` for
 
 | Key | Content |
 | --- | --- |
-| `configuration` | `searchLimit`, the bound for registry diagnostics |
+| `configuration` | `searchLimit`, the bound for registry diagnostics, and `directedKin: true` for builds preserving kin term direction |
 | `inputs` | Path → fingerprint for every source JSON in books/documents/notes/images, `data/names.md`, `data/by-names.md`, `nobiliary_particles.md`, `name-connectors.md`, `titles-age.md`, `titles-office.md`, `kinship.md`, `places.json`, `matching.json`, `distinctFamilies.md`, and the registry (IDs and names only). Scripts and the tree itself are not inputs. |
 | `fingerprint` | Fingerprint of `inputs` |
 | `evidence` | Graph per view (`with-guesses`) |
@@ -276,10 +276,10 @@ not support relationship assertions.
   mentions; 1 for a registry person or a grouping within one source.
 - `possiblySame`: `[{key, probability}]`, tied or likely candidates not chosen.
 
-**Relationships.** `type` (directed `parent`; symmetric `spouse`, `sibling`,
-`kin`), `person`, `of` (node keys), `term` for `kin`, and `derivations`. No
+**Relationships.** `type` (directed `parent` and `kin`; symmetric `spouse` and `sibling`), `person`, `of` (node keys), `term` for `kin`, and `derivations`. No
 self-relationships or ancestry cycles; repeated ancestry through different
-branches is allowed. Each derivation has:
+branches is allowed. For a kin edge, `person` bears the `term` in relation to `of`. Earlier builds
+without `directedKin` sorted kin endpoints and require the source for direction. Each derivation has:
 
 - `identity`: `anchored`, `reviewed`, `inferred`, or `source` (correspondence
   still open);

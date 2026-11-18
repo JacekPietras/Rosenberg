@@ -476,8 +476,9 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                                                    stderr=subprocess.STDOUT, text=True, bufsize=1)
                         lines = queue.Queue()
                         def read_output():
-                            for line in process.stdout:
-                                lines.put(line.rstrip())
+                            with process.stdout as stream:
+                                for line in stream:
+                                    lines.put(line.rstrip())
                             lines.put(None)
                         reader = threading.Thread(target=read_output, daemon=True)
                         reader.start()

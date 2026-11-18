@@ -70,14 +70,13 @@ class PersonNameRecognizer:
         ) if title else None
         self.strip_connectors = re.compile(rf'\s+(?:{connector})\s+', re.IGNORECASE | re.UNICODE) if connector else None
 
-    def find(self, text):
+    def occurrences(self, text):
         if not self.pattern or not isinstance(text, str):
-            return frozenset()
-        values = set()
+            return
         birth_spans = []
         for match in self.birth_pattern.finditer(text):
             birth_spans.append(match.span())
-            values.add(f"{match.group('given').strip(' ,;')} {match.group('birth').strip(' ,;')}")
+            yield f"{match.group('given').strip(' ,;')} {match.group('birth').strip(' ,;')}"
         for match in self.pattern.finditer(text):
             if any(start <= match.start() and match.end() <= end for start, end in birth_spans):
                 continue
@@ -86,5 +85,7 @@ class PersonNameRecognizer:
                 value = self.strip_titles.sub('', value)
             if self.strip_connectors:
                 value = self.strip_connectors.sub(' ', value)
-            values.add(value)
-        return frozenset(values)
+            yield value
+
+    def find(self, text):
+        return frozenset(self.occurrences(text))

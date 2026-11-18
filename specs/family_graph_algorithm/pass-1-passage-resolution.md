@@ -27,7 +27,9 @@ mentions of one passage are different people if:
 For each passage, all same-name groups are solved together:
 
 1. Find the groupings into the **fewest people** that pass the merge check
-   (search bounded at 200 000 states).
+   (at most 20 000 partitions per name and size, and 200 000 joint
+   groupings). Exhausting either budget leaves the passage undecided and its
+   competing mentions tied for subsequent tie-breaking.
 2. Score each grouping by title agreement: per pair of parts in one person,
    one point if they share a rank, office, designation or age title, and one
    more if a death record joins an explicitly deceased mention; the total is

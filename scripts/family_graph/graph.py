@@ -9,7 +9,7 @@ from .probability import chronology_blocked, parameters
 from .policy import OFFICE_RULES, SEARCH_LIMIT
 from .resolve import resolve
 from .scoring import anchor_profiles, make_candidates
-from .reconstruction import reconstruct
+from .reconstruction import generation_conflicts, reconstruct
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
@@ -19,6 +19,7 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
     progress('Preparing source identities')
     assertions = [assertion for assertion in inputs.assertions if include_guesses or assertion.source.kind == 'facts']
     names = Names(inputs.names, inputs.places, inputs.titles, inputs.kinship)
+    names.recognizer = inputs.recognizer if inputs.recognizer and inputs.recognizer.pattern else None
     registry, profiles = anchor_profiles(assertions, inputs.people)
     conflicts, blocked, ignored_guesses = [], set(), set()
     for identity, observations in profiles.items():
@@ -70,6 +71,14 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
                           'sources': [a.source.export() for a in rejected_parents]})
     usable = [assertion for assertion in assertions if assertion.source.key not in ignored_guesses
               and not any(mention.reference in blocked for mention in assertion.mentions)]
+    anchored_generations = defaultdict(list)
+    for assertion in usable:
+        kind = assertion.original['type']
+        if kind in {'parent', 'sibling'} and all(m.reference in registry for m in assertion.mentions):
+            anchored_generations[kind].append(tuple(m.reference for m in assertion.mentions))
+    inconsistent = generation_conflicts(anchored_generations['parent'], anchored_generations['sibling'])
+    if inconsistent:
+        conflicts.append({'reason': 'inconsistent anchored generations', 'identities': sorted(inconsistent)})
     # Candidates must be rebuilt after removing incompatible hypothetical
     # constraints so rejected guesses cannot supply positive identity evidence.
     progress('Comparing candidate identities')
@@ -97,7 +106,7 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
         endpoints = [decision.identity if decision.status == 'accepted' else decision.mention.handle for decision in (left, right)]
         if any(endpoint in blocked for endpoint in endpoints):
             continue
-        if kind != 'parent':
+        if kind in {'sibling', 'spouse'}:
             endpoints.sort()
         key = (kind, *endpoints, assertion.original.get('term', ''))
         sources = {source.key: source for source in [assertion.source, *left.sources, *right.sources]}

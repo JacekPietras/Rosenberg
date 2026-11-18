@@ -72,8 +72,7 @@ when later merges made it contradictory:
 - the father and the child became one identity;
 - the child has another father (recorded, or inherited and kept earlier) that
   could not be one person with it;
-- with the recorded relationships it creates a cycle or breaks generations (only
-  checked when the recorded relationships are consistent themselves).
+- with the recorded relationships it creates a cycle or breaks generations in the affected parent/sibling component.
 
 ## Same-named relatives
 

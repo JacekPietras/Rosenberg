@@ -14,6 +14,13 @@ from family_graph.probability import DEFAULTS, ProbabilityModel, Profile, Observ
 from family_graph.export import serialize, validate_generated
 
 
+KINSHIP_TERMS = """Vetter, Vettern: PS SC PSC | S P C Sp | narrow
+Schwager, swager: SpS SSp SpSSp | blood | narrow
+Eidam: CSp | blood | exact
+consanguineus: blood | Sp in-law | broad
+"""
+
+
 def context_fact(text):
     return {"type": "generic", "subject": "The source passage", "content": text}
 
@@ -508,7 +515,7 @@ class ProbabilityTests(unittest.TestCase):
         root = Path(temp.name)
         (root / 'data/documents').mkdir(parents=True)
         (root / 'data/names.md').write_text('Arnold\nEberhard\n')
-        (root / 'data/kinship.md').write_text((Path(__file__).resolve().parents[1] / 'data/kinship.md').read_text())
+        (root / 'data/kinship.md').write_text(KINSHIP_TERMS)
         (root / 'data/places.json').write_text(json.dumps([{'id': 'north', 'variations': ['North']}]))
         (root / 'data/matching.json').write_text(json.dumps(DEFAULTS))
         (root / 'data/people.json').write_text(json.dumps([
@@ -695,7 +702,7 @@ class ProbabilityTests(unittest.TestCase):
 
     def test_kinship_terms_combine_and_invert(self):
         from family_graph.kinship import Kinship, invert
-        kinship = Kinship((Path(__file__).resolve().parents[1] / 'data/kinship.md').read_text())
+        kinship = Kinship(KINSHIP_TERMS)
         self.assertEqual('Schwager', kinship.canonical('swager'))
         self.assertEqual('Vetter und Schwager', kinship.canonical('Vettern und swager'))
         self.assertEqual('unknown word', kinship.canonical('unknown word'))

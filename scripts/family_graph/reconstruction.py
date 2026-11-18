@@ -11,7 +11,6 @@ from itertools import combinations, product
 import math
 import re
 
-from .constraints import cycle_nodes
 from .model import fingerprint, Assertion, Mention, passage_key
 from .policy import AGE_TITLES
 from .kinship import generation, tree_paths
@@ -23,24 +22,44 @@ from .probability import (ProbabilityModel, Profile, PERSON_NAME, YEAR, chronolo
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
 
+PASSAGE_PARTITION_LIMIT = 20_000
+PASSAGE_SEARCH_LIMIT = 200_000
+
+
+class PassageSearchExhausted(Exception):
+    """The remaining groupings could change the passage consensus."""
+
+
+def generation_conflicts(parent_edges, sibling_edges):
+    """Members of families with inconsistent parent/sibling generation offsets."""
+    graph = defaultdict(list)
+    for edges, offset in ((parent_edges, 1), (sibling_edges, 0)):
+        for upper, lower in edges:
+            graph[upper].append((lower, -offset))
+            graph[lower].append((upper, offset))
+    levels, conflicts = {}, set()
+    for start in graph:
+        if start in levels:
+            continue
+        levels[start] = 0
+        pending, family, conflict = [start], [], False
+        while pending:
+            node = pending.pop()
+            family.append(node)
+            for other, step in graph[node]:
+                expected = levels[node] + step
+                if other in levels:
+                    conflict |= levels[other] != expected
+                else:
+                    levels[other] = expected
+                    pending.append(other)
+        if conflict:
+            conflicts.update(family)
+    return conflicts
+
+
 def generations_consistent(parent_edges, sibling_edges):
-    """Siblings share a generation; a parent is exactly one generation above."""
-    root, offset = {}, {}
-    def find(node):
-        root.setdefault(node, node); offset.setdefault(node, 0)
-        if root[node] != node:
-            top, value = find(root[node])
-            offset[node] += value
-            root[node] = top
-        return root[node], offset[node]
-    for (upper, lower), difference in [*((edge, 1) for edge in parent_edges), *((edge, 0) for edge in sibling_edges)]:
-        (a, x), (b, y) = find(upper), find(lower)
-        if a == b:
-            if x - y != difference:
-                return False
-        else:
-            root[a], offset[a] = b, difference + y - x
-    return True
+    return not generation_conflicts(parent_edges, sibling_edges)
 
 
 def reconstruct(assertions, decisions, registry, names, parameters=None, observations=(), progress=None):
@@ -73,8 +92,16 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                                  for m in typed_scopes[passage])}
         literal_references = model.person_references(observation.text)
         normalized_counts = defaultdict(int)
-        for reference in literal_references:
-            normalized_counts[names.key(reference)] += observation.text.count(reference)
+        recognizer = getattr(names, 'recognizer', None)
+        if observation.source.kind == 'text':
+            for reference in literal_references:
+                normalized_counts[names.key(reference)] = 1
+        elif recognizer:
+            for reference in recognizer.occurrences(observation.text):
+                normalized_counts[names.key(reference)] += 1
+        else:
+            for reference in literal_references:
+                normalized_counts[names.key(reference)] += observation.text.count(reference)
         for identity in explicit:
             normalized_counts[names.key(registry[identity]['name'])] += 1
         for reference in literal_references:
@@ -113,7 +140,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         mention_names[handle] = names.key(registry[ref]['name'] if ref in registry and registry[ref].get('id') == ref else ref)
         mention_scopes[handle] = (*passage_key(mention.assertion.source),
                                  mention.assertion.historical_date)
-    static_state = {'generation': None, 'members': frozenset(), 'ok': set(), 'lists': [], 'rank': {}, 'seen': {}, 'bad': None, 'tree': None}
+    static_state = {'generation': None, 'members': frozenset(), 'lists': [], 'rank': {}, 'seen': {}, 'tree': None}
     parents_of_mention = defaultdict(list)
 
     def index_parents():
@@ -259,8 +286,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     def current_generation():
         generation = groups()
         if static_state['generation'] is not generation:
-            static_state.update(generation=generation, members={id(handles) for handles in generation.values()}, ok=set(),
-                                lists=list(generation.values()), rank={root: i for i, root in enumerate(generation)}, seen={}, bad=None, tree=None)
+            static_state.update(generation=generation, members={id(handles) for handles in generation.values()},
+                                lists=list(generation.values()), rank={root: i for i, root in enumerate(generation)}, seen={}, tree=None)
         return static_state
 
     def different_parent(parts):
@@ -318,7 +345,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     relation_facts = [(a.original['type'], a.mentions[0].handle, a.mentions[1].handle,
                        name(a.mentions[0].handle), name(a.mentions[1].handle)) for a in relation_assertions]
 
-    static_by_group = {}
+    kin_constraints = [(names.kinship.position(a, 'person'), a.mentions[0].handle, a.mentions[1].handle)
+                       for a in relation_assertions if a.original['type'] == 'kin']
 
     def consistent(components, new=None, replaced=None):
         """Whether the partition into `components` is allowed. With `replaced` (roots
@@ -327,37 +355,16 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         # Only proposed components are checked for chronology; unchanged
         # identities cannot block unrelated merges.
         checked = len(components) if new is None or replaced is not None else min(new, len(components))
-        for component in components[:checked]:
+        changed = {i for i, group in enumerate(components[:checked]) if len({find(h) for h in group}) > 1}
+        for i in changed:
+            component = components[i]
             if not static_consistent(component):
                 return False
             if (chronology_conflict(component) or new_different_parent(component)
                     or new_passage_conflict(component) or new_too_old(component)):
                 return False
-        state = current_generation()
-        if replaced is not None:
-            if state['bad'] is None:
-                bad = set()
-                for root, handles in state['generation'].items():
-                    key = root, len(handles)
-                    if key not in static_by_group:
-                        static_by_group[key] = static_consistent(handles)
-                    if not static_by_group[key]:
-                        bad.add(root)
-                state['bad'] = bad
-            if not state['bad'].issubset(replaced):
-                return False
-            unchanged = ()
-        else:
-            unchanged = components[checked:]
-            ok = state['ok']
-            if not ok.issuperset(map(id, unchanged)):
-                for component in unchanged:
-                    if id(component) in ok:
-                        continue
-                    if not static_consistent(component):
-                        return False
-                    if id(component) in state['members']:
-                        ok.add(id(component))
+        current_generation()
+        unchanged = () if replaced is not None else components[checked:]
         # Unchanged identities are current groups, so an endpoint outside the
         # proposed components is located by its group instead of by scanning.
         mapping = {h: index for index, component in enumerate(components[:checked]) for h in component}
@@ -374,12 +381,16 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             def members(index):
                 return components[index]
         edges, siblings = [], []
+        projected = defaultdict(set)
         same_named_parents = defaultdict(set)
         same_named_spouses = defaultdict(set)
         for kind, left_handle, right_handle, left_name, right_name in relation_facts:
             left, right = label(left_handle), label(right_handle)
             if left == right:
                 return False
+            if kin_constraints and kind in steps:
+                projected[left].add((steps[kind][0], right))
+                projected[right].add((steps[kind][1], left))
             if kind == 'parent':
                 edges.append((left, right))
                 if new is None or right < new:
@@ -398,7 +409,26 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 union = [h for index in relatives for h in members(index)]
                 if len(anchor(union)) > 1 or chronology_conflict(union):
                     return False
-        return not cycle_nodes(edges) and generations_consistent(edges, siblings)
+        if changed & generation_conflicts(edges, siblings):
+            return False
+        if kin_constraints:
+            limit = model.settings['secondPass']['maxPathSteps']
+            reachable = set(changed)
+            frontier = changed
+            for _ in range(limit):
+                frontier = {other for node in frontier for _, other in projected[node]} - reachable
+                if not frontier:
+                    break
+                reachable.update(frontier)
+            for term, a, b in kin_constraints:
+                left, right = label(a), label(b)
+                if left in reachable and right in reachable:
+                    paths = tree_paths(projected, right, limit).get(left, ())
+                    if paths and all(term.excludes(path) for path in paths):
+                        old = tree_paths(generation_tree(), find(b), limit).get(find(a), ())
+                        if not old or not all(term.excludes(path) for path in old):
+                            return False
+        return True
 
     def passages(handles):
         return len({scope(mentions[h])[:2] for h in handles})
@@ -647,13 +677,15 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         if not anchor([handle]) and mention.field != 'text':
             local[scope(mention)][name(handle)].append(handle)
 
-    def partitions_of(roots, allowed, size, limit=20000):
-        """Partitions into exactly `size` pairwise-compatible blocks (the first `limit` found)."""
+    def partitions_of(roots, allowed, size):
+        """Partitions into exactly `size` pairwise-compatible blocks (raise if the search budget is exhausted)."""
         result = []
         def assign(index, blocks):
-            if len(result) > limit or len(blocks) + len(roots) - index < size:
+            if len(blocks) + len(roots) - index < size:
                 return
             if index == len(roots):
+                if len(result) >= PASSAGE_PARTITION_LIMIT:
+                    raise PassageSearchExhausted
                 result.append([list(block) for block in blocks])
                 return
             root = roots[index]
@@ -667,7 +699,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 assign(index + 1, blocks)
                 blocks.pop()
         assign(0, [])
-        return result[:limit]
+        return result
 
     def agreement_keys(handles):
         keys = set()
@@ -698,7 +730,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 score += bool(plain) + death
         return score * model.settings['passageTitleAgreementWeight']
 
-    def passage_partitions(name_roots, current_local, limit=200000):
+    def passage_partitions(name_roots, current_local):
         involved = {root for roots in name_roots for root in roots}
         others = [group for root, group in current_local.items() if root not in involved]
         fixed = [current_local[root] for roots in name_roots if len(roots) == 1 for root in roots]
@@ -724,8 +756,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 options = [choices(index, size) for index, size in enumerate(sizes)]
                 for combination in product(*options):
                     checked += 1
-                    if checked > limit:
-                        break
+                    if checked > PASSAGE_SEARCH_LIMIT:
+                        raise PassageSearchExhausted
                     blocks = [[h for r in block for h in current_local[r]] for partition in combination for block in partition]
                     if consistent([*blocks, *fixed, *others], len(blocks)):
                         grouping = [set(block) for partition in combination for block in partition]
@@ -743,7 +775,13 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             name_roots = [sorted({find(h) for h in handles}) for _, handles in sorted(by_name.items())]
             if all(len(roots) < 2 for roots in name_roots):
                 continue
-            partitions = passage_partitions(name_roots, current_local)
+            try:
+                partitions = passage_partitions(name_roots, current_local)
+            except PassageSearchExhausted:
+                for roots in name_roots:
+                    if len(roots) > 1:
+                        stage1_tied.update(h for root in roots for h in current_local[root])
+                continue
             for roots in name_roots:
                 for left, right in combinations(roots, 2):
                     together = [any({left, right} <= block for block in partition) for partition in partitions]
@@ -866,8 +904,12 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             if not assertion.basis:
                 profiles[left].distinctions.setdefault(right, []).append(assertion.source)
                 profiles[right].distinctions.setdefault(left, []).append(assertion.source)
+            directed = kind == 'parent'
+            if kind == 'kin':
+                term = names.kinship.position(assertion, 'person')
+                directed = term != term.inverted()
             for own, other, direction, other_mention in ((left, right, 'out', b), (right, left, 'in', a)):
-                role = kind, direction if kind == 'parent' else '', kin_terms[assertion.source.key]
+                role = kind, direction if directed else '', kin_terms[assertion.source.key]
                 relative(own, other, role, [assertion], membership[other_mention.handle])
                 if kind == 'spouse':
                     relative(own, other, ('family context', '', ''), [assertion], membership[other_mention.handle])
@@ -937,18 +979,17 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         def surname(root):
             forms = {tuple(name(h).split()[1:]) for h in current[root]} - {()}
             return next(iter(forms)) if len(forms) == 1 else None
-        def structure():
+        def structure_conflicts():
             edges, siblings = [], []
             for a in assertions:
                 if a.original['type'] in {'parent', 'sibling'}:
                     pair = tuple(find(m.handle) for m in a.mentions)
                     (edges if a.original['type'] == 'parent' else siblings).append(pair)
-            return not cycle_nodes(edges) and generations_consistent(edges, siblings)
+            return generation_conflicts(edges, siblings)
         parents_of = defaultdict(list)
         for a in assertions:
             if a.original['type'] == 'parent':
                 parents_of[find(a.mentions[1].handle)].append(a)
-        valid = structure()
         added = 0
         for sibling in [a for a in assertions if a.original['type'] == 'sibling']:
             for known, other in (sibling.mentions, sibling.mentions[::-1]):
@@ -976,7 +1017,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                     inferred = Assertion(weaker.source, {'type': 'parent', 'person': father_mention.reference, 'of': other.reference},
                                          weaker.historical_date, weaker.bounds, weaker.context, [father_mention, other], (parent, sibling))
                     assertions.append(inferred)
-                    if valid and not structure():
+                    if father in structure_conflicts():
                         assertions.pop()
                         inferred_bases.add(key)
                         continue
@@ -1002,13 +1043,12 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         for a in recorded:
             if a.original['type'] == 'parent' and names.gender(name(a.mentions[0].handle)) == 'man':
                 fathers[find(a.mentions[1].handle)].setdefault(find(a.mentions[0].handle), a.mentions[0].handle)
-        valid = not cycle_nodes(edges) and generations_consistent(edges, siblings)
         withdrawn = set()
         for a in [a for a in assertions if a.basis]:
             pair = father, child = tuple(find(m.handle) for m in a.mentions)
             own = father, a.mentions[0].handle
             if (father == child or not all(could_be_one(own, other, members) for other in fathers[child].items())
-                    or valid and (cycle_nodes([*edges, pair]) or not generations_consistent([*edges, pair], siblings))):
+                    or child in generation_conflicts([*edges, pair], siblings)):
                 withdrawn.add(id(a))
             else:
                 edges.append(pair)
@@ -1445,7 +1485,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         if kind not in RELATIONS:
             continue
         left, right = [keys[m.handle] for m in assertion.mentions]
-        if kind != 'parent' and left > right:
+        if kind in {'sibling', 'spouse'} and left > right:
             left, right = right, left
         key = kind, left, right, kin_terms[assertion.source.key]
         if assertion.basis and (key in edges or left == right):
