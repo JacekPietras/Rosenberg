@@ -15,6 +15,7 @@ import { canonicalTitles } from './title_forms.mjs';
 const root = resolve(import.meta.dirname, '../..');
 const check = process.argv.includes('--check');
 const read = (path) => readFile(resolve(root, path), 'utf8').catch(() => '');
+const registry = new Map(JSON.parse(await read('data/people.json')).map((person) => [person.id, person.name]));
 const titleText = [await read('data/titles-age.md'), await read('data/titles-office.md')].filter(Boolean).join('\n');
 const args = [titleText, await read('data/name-connectors.md'), await read('data/nobiliary_particles.md'),
   await read('data/names.md'), await read('data/by-names.md'), JSON.parse(await read('data/places.json'))];
@@ -173,7 +174,10 @@ const canonTitle = (title) => {
 
 // People already stated by a fact (or its nested facts), with their title sets.
 function statedPeople(value, found = new Map()) {
-  const add = (person, titles) => found.set(person, [...(found.get(person) || []), titles || []]);
+  const add = (person, titles) => {
+    const key = registry.get(person) ?? person;
+    found.set(key, [...(found.get(key) || []), titles || []]);
+  };
   if (Array.isArray(value)) value.forEach((item) => statedPeople(item, found));
   else if (value && typeof value === 'object') {
     if (typeof value.person === 'string') add(value.person, value.personTitle);

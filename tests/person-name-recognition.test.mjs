@@ -220,11 +220,15 @@ test('recognizes a parenthetical given-name variant and translated office title'
   assert.equal(personRouteName(phrase, titles), 'Ebirhart von Rosenberg');
 });
 
-test('recognizes an optional given-name ending and translated Vogt title', () => {
-  pattern.lastIndex = 0;
-  const phrase = 'Eber(hard) von Rosenberg, Vogt of Dürn';
-  assert.equal(pattern.exec(phrase)?.[0], phrase);
-  assert.equal(personRouteName(phrase, titles), 'Eber(hard) von Rosenberg');
+test('removes editorial delimiters from parenthetical and bracketed given-name endings', () => {
+  for (const phrase of [
+    'Eber(hard) von Rosenberg, Vogt of Dürn',
+    'Eber[hard] von Rosenberg, Vogt of Dürn'
+  ]) {
+    pattern.lastIndex = 0;
+    assert.equal(pattern.exec(phrase)?.[0], phrase);
+    assert.equal(personRouteName(phrase, titles), 'Eberhard von Rosenberg');
+  }
 });
 
 test('recognizes an office title in context after the person name', () => {

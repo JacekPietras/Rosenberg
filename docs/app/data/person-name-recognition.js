@@ -163,7 +163,10 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const names = [...new Set([
     ...nameForms.map(escapePattern),
     ...nameForms.filter((name) => /^\p{L}+$/u.test(name)).flatMap((name) =>
-      Array.from({ length: name.length - 1 }, (_, index) => `${escapePattern(name.slice(0, index + 1))}\\(${escapePattern(name.slice(index + 1))}\\)`))
+      Array.from({ length: name.length - 1 }, (_, index) => [
+        `${escapePattern(name.slice(0, index + 1))}\\(${escapePattern(name.slice(index + 1))}\\)`,
+        `${escapePattern(name.slice(0, index + 1))}\\[${escapePattern(name.slice(index + 1))}\\]`,
+      ]).flat())
   ])].sort((left, right) => right.length - left.length).join('|');
   const particles = alternatives(String(particlesText || '').split(/\r?\n/).map((line) => line.split('//')[0].trim()));
   const placeNames = alternatives(places.flatMap((place) => place.variations || [place.name]));
@@ -297,6 +300,11 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     .replace(preserveLocativePlaceName || byNameSurname ? /$^/u : new RegExp(`[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?(?:[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?)*$`, 'iu'), '')
     .replace(new RegExp(`[\\s,;]+(?:${connectors})[\\s,;]+(?:${particles})\\s+[^,;]+$`, 'iu'), '')
     .replace(/\s*\([^)]*\)$/u, '')
+    // Historical names sometimes spell an uncertain ending in parentheses or
+    // square brackets (for example, Eber(hard) / Eber[hard]). These delimiters
+    // are editorial; the enclosed letters belong to the canonical name.
+    .replace(/([\p{L}])\(([\p{L}]+)\)/gu, '$1$2')
+    .replace(/([\p{L}])\[([\p{L}]+)\]/gu, '$1$2')
     .trim();
   if (byNameForms.length) {
     const byNamePattern = alternatives(byNameForms);
