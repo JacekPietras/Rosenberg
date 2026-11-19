@@ -172,6 +172,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   let selectedIndex = null;
   let selectedRegionIndex = null;
   let drag = null;
+  let handleDrag = null;
   let regionDrag = null;
   let regionMode = false;
   let ignoreFocusClick = false;
@@ -247,6 +248,10 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
       marker.style.setProperty('--seal-width', Number(marker.dataset.width) || 0);
       marker.style.setProperty('--seal-widening-rotation', `${Number(marker.dataset.wideningRotation) || 0}deg`);
       marker.style.setProperty('--seal-rotation', `${Number(marker.dataset.rotation) || 0}deg`);
+      const angle = Number(marker.dataset.wideningRotation) || 0;
+      const radius = height * Number(marker.dataset.size) * (1 + (Number(marker.dataset.width) || 0)) / 2;
+      marker.style.setProperty('--seal-handle-x', `${Math.sin(angle * Math.PI / 180) * radius}px`);
+      marker.style.setProperty('--seal-handle-y', `${-Math.cos(angle * Math.PI / 180) * radius}px`);
     });
   };
   const updatePreview = () => {
@@ -270,7 +275,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     const controls = $('#image-lightbox-seal-selected-controls'); const remove = $('#image-lightbox-remove-seal');
     if (controls) controls.hidden = !selected; if (remove) remove.hidden = !selected;
     const removeImage = $('#image-lightbox-remove-image'); if (removeImage) removeImage.hidden = Boolean(context?.entryImage);
-    [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => { const input = $(selector); if (input) { input.disabled = !selected; input.value = String(Number(selected?.[key]) || 0); } });
+    [['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => { const input = $(selector); if (input) { input.disabled = !selected; input.value = String(Number(selected?.[key]) || 0); } });
     document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => { input.disabled = !selected; input.checked = Boolean(selected && SEAL_TYPES.has(selected.type) && selected.type === input.value); });
     if (collectionNavigation) collectionNavigation.hidden = !collectionLinks || collectionLinks.links.length < 2;
     if (collectionPosition) collectionPosition.textContent = collectionLinks ? `${collectionLinks.index + 1} / ${collectionLinks.links.length}` : '';
@@ -285,7 +290,9 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   };
   const render = () => {
     let index = 0;
-    const seals = sealAnnotationMarkup(currentSeals(), escapeHtml, state.personRecords).replace(/class="seal-marker"/g, (match) => `${match} data-seal-index="${index}"${index++ === selectedIndex ? ' data-selected="true"' : ''}`);
+    const seals = sealAnnotationMarkup(currentSeals(), escapeHtml, state.personRecords)
+      .replace(/class="seal-marker"/g, (match) => `${match} data-seal-index="${index}"${index++ === selectedIndex ? ' data-selected="true"' : ''}`)
+      .replace(/(<span class="seal-marker"[^>]*data-selected="true"[^>]*>)/, '$1<span class="seal-marker-adjustment-handle" aria-label="Adjust seal width and widening rotation"></span>');
     const regions = currentRegions().map((region, regionIndex) => {
       const x = Number(region.x), y = Number(region.y), width = Number(region.width), height = Number(region.height);
       if (!region.name || ![x, y, width, height].every(Number.isFinite)) return '';
@@ -311,6 +318,39 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   };
   const close = async () => { if (context && !await save()) return; lightbox.close(); await rerender?.(); };
   const startDrag = (event, index, target) => { const seal = currentSeals()[index]; if (!seal) return; clearTimeout(sealViewTimer); lightbox.classList.add('is-seal-dragging'); const [x, y] = String(seal.position || '').split(',').map(Number); magnifierPoint = { x, y }; magnifierDismissed = false; selectedIndex = index; const p = point(event); drag = { index, pointerId: event.pointerId, offsetX: x - p.x, offsetY: y - p.y }; render(); target.setPointerCapture?.(event.pointerId); event.preventDefault(); };
+  const startHandleDrag = (event, index, target) => {
+    if (!currentSeals()[index]) return;
+    clearTimeout(sealViewTimer);
+    lightbox.classList.add('is-seal-dragging');
+    handleDrag = { index, pointerId: event.pointerId };
+    target.setPointerCapture?.(event.pointerId);
+    event.preventDefault();
+  };
+  const updateHandleDrag = (event) => {
+    if (!handleDrag || event.pointerId !== handleDrag.pointerId) return;
+    const seal = currentSeals()[handleDrag.index];
+    const marker = annotations.querySelector(`.seal-marker[data-seal-index="${handleDrag.index}"]`);
+    if (!seal || !marker) return;
+    const rect = marker.getBoundingClientRect();
+    const dx = event.clientX - (rect.left + rect.width / 2), dy = event.clientY - (rect.top + rect.height / 2);
+    const radius = Math.max(1, rect.width / 2);
+    seal.width = Number(Math.max(0, Math.min(1, Math.hypot(dx, dy) / radius - 1)).toFixed(3));
+    seal.wideningRotation = Number(Math.max(-90, Math.min(90, Math.atan2(dx, -dy) * 180 / Math.PI)).toFixed(1));
+    marker.dataset.width = String(seal.width);
+    marker.dataset.wideningRotation = String(seal.wideningRotation);
+    const handleRadius = marker.offsetWidth / 2 * (1 + seal.width);
+    marker.style.setProperty('--seal-handle-x', `${Math.sin(seal.wideningRotation * Math.PI / 180) * handleRadius}px`);
+    marker.style.setProperty('--seal-handle-y', `${-Math.cos(seal.wideningRotation * Math.PI / 180) * handleRadius}px`);
+    updatePreview();
+    event.preventDefault();
+  };
+  const endHandleDrag = async (event) => {
+    if (!handleDrag || event.pointerId !== handleDrag.pointerId) return;
+    handleDrag = null;
+    lightbox.classList.remove('is-seal-dragging');
+    scheduleSealView();
+    await save();
+  };
   const endSealDrag = () => { if (!drag) return; drag = null; lightbox.classList.remove('is-seal-dragging'); scheduleSealView(); };
   const moveDrag = (event) => { if (!drag || event.pointerId !== drag.pointerId) return; const seal = currentSeals()[drag.index]; if (!seal) return; const p = point(event); seal.position = `${Math.max(0, Math.min(1, p.x + drag.offsetX)).toFixed(4)},${Math.max(0, Math.min(1, p.y + drag.offsetY)).toFixed(4)}`; render(); };
   const regionPoint = (event) => {
@@ -534,9 +574,9 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
-  [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => $(selector)?.addEventListener('input', (event) => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) { seal[key] = Number(event.target.value); render(); } }));
+  [['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => $(selector)?.addEventListener('input', (event) => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) { seal[key] = Number(event.target.value); render(); } }));
   document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => input.addEventListener('change', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal && input.checked) seal.type = input.value; }));
-  annotations.addEventListener('pointerdown', (event) => { const marker = event.target.closest('.seal-marker'); if (context && marker) startDrag(event, Number(marker.dataset.sealIndex), marker); }); annotations.addEventListener('pointermove', moveDrag); annotations.addEventListener('pointerup', endSealDrag); annotations.addEventListener('pointercancel', endSealDrag);
+  annotations.addEventListener('pointerdown', (event) => { const handle = event.target.closest('.seal-marker-adjustment-handle'); if (context && handle) { startHandleDrag(event, Number(handle.parentElement.dataset.sealIndex), handle); return; } const marker = event.target.closest('.seal-marker'); if (context && marker) startDrag(event, Number(marker.dataset.sealIndex), marker); }); annotations.addEventListener('pointermove', (event) => { updateHandleDrag(event); moveDrag(event); }); annotations.addEventListener('pointerup', (event) => { endHandleDrag(event); endSealDrag(); }); annotations.addEventListener('pointercancel', (event) => { endHandleDrag(event); endSealDrag(); });
   regionOverlay?.addEventListener('pointerdown', (event) => {
     if (!regionMode || !regionOverlay.clientWidth || !regionOverlay.clientHeight) return;
     if (regionDrag?.waiting) { regionDrag.pointerId = event.pointerId; regionDrag.waiting = false; regionDrag.secondClick = true; }
