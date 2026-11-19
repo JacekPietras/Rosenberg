@@ -21,12 +21,6 @@
           ]
         },
         {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "place": "boxberg"
         },
         {
@@ -40,9 +34,6 @@
           "personTitle": [
             "Edelknecht"
           ]
-        },
-        {
-          "person": "Konrad von Rosenberg"
         },
         {
           "place": "rothenburg"
@@ -77,9 +68,6 @@
               "personTitle": [
                 "Ritter"
               ]
-            },
-            {
-              "person": "Konrad von Rosenberg"
             }
           ]
         },
@@ -103,12 +91,7 @@
             {
               "person": "Konrad von Rosenberg",
               "personTitle": [
-                "Edelknecht"
-              ]
-            },
-            {
-              "person": "Konrad von Rosenberg",
-              "personTitle": [
+                "Edelknecht",
                 "Ritter"
               ]
             }

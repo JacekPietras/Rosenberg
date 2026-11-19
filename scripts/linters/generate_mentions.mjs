@@ -36,6 +36,49 @@ const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/
 const leadingTitle = knownTitles.length
   ? new RegExp(`^(${knownTitles.map(escape).join('|')})(?:\\s+(?:zu|zum|an|of)\\s+[\\p{L}][\\p{L}'’.-]*)?[\\s,;]+`, 'iu') : null;
 
+
+const ageGroups = [];
+for (const line of (await read('data/titles-age.md')).split(/\r?\n/)) {
+  if (line.trim().startsWith('#')) ageGroups.push(new Set());
+  else if (ageGroups.length) parsePersonNameTitles(line).forEach((form) => ageGroups.at(-1).add(form.toLowerCase()));
+}
+const ageOf = (titles = []) => new Set(titles.flatMap((title) => ageGroups
+  .flatMap((group, index) => (group.has(title.toLowerCase()) ? [index] : []))));
+const sameAge = (left, right) => left.size === right.size && [...left].every((index) => right.has(index));
+
+// People with the same name are one mention unless both carry different age titles.
+function mergePeople(items) {
+  const groups = new Map();
+  const others = [];
+  for (const item of items) {
+    if (item.person === undefined) { others.push(item); continue; }
+    if (!groups.has(item.person)) groups.set(item.person, []);
+    groups.get(item.person).push(item);
+  }
+  const merged = [];
+  for (const [person, list] of groups) {
+    const clusters = [];
+    const plain = [];
+    for (const item of list) {
+      const age = ageOf(item.personTitle);
+      if (!age.size) { plain.push(item); continue; }
+      const cluster = clusters.find((entry) => sameAge(entry.age, age));
+      if (cluster) cluster.titles.push(...item.personTitle);
+      else clusters.push({ age, titles: [...item.personTitle] });
+    }
+    if (clusters.length === 1 || !clusters.length) {
+      if (!clusters.length) clusters.push({ age: new Set(), titles: [] });
+      plain.splice(0).forEach((item) => clusters[0].titles.push(...(item.personTitle || [])));
+    }
+    for (const cluster of clusters) {
+      const titles = [...new Set(cluster.titles)].sort();
+      merged.push(titles.length ? { person, personTitle: titles } : { person });
+    }
+    merged.push(...new Map(plain.map((item) => [JSON.stringify(item), item])).values());
+  }
+  return [...merged, ...others];
+}
+
 function surfaceTitles(text) {
   const titles = [];
   let rest = text;
@@ -91,7 +134,7 @@ export function recognizeMentions(text, { placesOnly = false } = {}) {
       ? { person, personTitle: [...new Set(titles)].sort() } : { person })),
     ...recognizePlaces(plain, spans).map((place) => ({ place })),
   ];
-  const unique = new Map(items.map((item) => [JSON.stringify(item), item]));
+  const unique = new Map(mergePeople(items).map((item) => [JSON.stringify(item), item]));
   const name = (item) => item.person ?? item.place;
   return [...unique.values()].sort((left, right) => name(left).localeCompare(name(right))
     || JSON.stringify(left).localeCompare(JSON.stringify(right)));
@@ -123,7 +166,7 @@ function regenerate(value, file, counter, issuance = []) {
   else if (typeof value.place === 'string' && !isDocument) [anchor, placesOnly] = ['place', true];
   const own = anchor ? recognizeMentions(value[anchor], { placesOnly }) : [];
   const inherited = !isDocument && value.type === undefined ? issuance : [];
-  const unique = new Map([...own, ...inherited].map((item) => [JSON.stringify(item), item]));
+  const unique = new Map(mergePeople([...own, ...inherited]).map((item) => [JSON.stringify(item), item]));
   const name = (item) => item.person ?? item.place;
   const mention = [...unique.values()].sort((left, right) => name(left).localeCompare(name(right))
     || JSON.stringify(left).localeCompare(JSON.stringify(right)));

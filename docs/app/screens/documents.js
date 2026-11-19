@@ -1,7 +1,7 @@
 import { findPersonNameMentions, personRouteName } from '../data/person-name-recognition.js?v=25';
 import { factDate } from '../rendering/facts.js?v=9';
 import { dateSortValue } from '../rendering/dates.js';
-import { renderFactsView } from '../components/facts_view.js?v=9';
+import { renderFactsView } from '../components/facts_view.js?v=10';
 
 export function createDocumentRenderer({
   state,
@@ -203,6 +203,8 @@ export function createDocumentRenderer({
       personNames: state.familyGraph?.valid ? state.familyGraph.records.map((person) => person.name) : [],
       inlineMarkup,
       defaultDate,
+      mention: entry.mention,
+      places: state.places,
     }) : '';
     const listRenderer = treeMarkup;
     const content = `${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${subheading && entry.subheading ? `<h3 class="entry-subheading">${markdownLinks(entry.subheading)}</h3>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, undefined, listRenderer) : ''}${image && entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}`;
