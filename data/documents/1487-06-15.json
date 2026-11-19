@@ -9,14 +9,14 @@
       "english": "Judgment of the Palatine court concerning the inheritance of Hugo vom Stein-Kallenfels.\n\nCount Palatine Philipp at the Rhine certifies that disputes between Konrad von Schweinheim and his wife Anastasia, née vom Stein-Kallenfels, on the one hand, and brothers Friedrich and Wilhelm vom Stein-Kallenfels, on the other, regarding the inheritance of the deceased Hugo vom Stein-Kallenfels were settled before the Palatine court. After both parties had presented their positions, it was decided that Anastasia would be admitted as heir to her brother Hugo. The court included Hans von Walbrom, knight; Hans von Talheim, knight and doctor; Dr. Thomas Dornberg; Dr. Bernhard Fromm; Hans von Stettenberg; Hans von Rosenberg zu Essingen; Hans von Talheim the Elder, Amtmann zu Odernheim; Johann von Morsheim; Eucharius von Hirschhorn; Master Peter Brechtell; Master Peter \"vom Steyn\" of Kreuznach; and Master Peter \"Querch\" (?).\n\nSealer: Palatine court",
       "mention": [
         {
+          "person": "Eucharius von Hirschhorn"
+        },
+        {
           "person": "Hans von Talheim",
           "personTitle": [
             "Amtmann",
             "Ritter"
           ]
-        },
-        {
-          "place": "hirschhorn"
         }
       ],
       "facts": [

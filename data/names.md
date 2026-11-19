@@ -12,7 +12,6 @@ Aplo
 Arnold, Arnolt
 Asmus, Asinus
 Balthasar
-Eucharius, Carius, Cargus
 Bartholomäus, Barthel, Barthelme, Barthelmä, Bartholomaeus, Bartholomä, Bartholomê
 Batt
 Bernger, Berngern
@@ -38,6 +37,7 @@ Erasmus
 Erhard
 Erkinger
 Ernst, Arnest, Ehrenfried, Erinze, Erwin
+Eucharius, Cargus, Carius
 Franz, Franziskus
 Friedmann
 Friedrich, Frederick, Fridereich, Friderich, Friderici, Friderico, Fridericus, Fridrich, Fritz, Fritze, Friz, Frize
