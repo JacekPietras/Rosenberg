@@ -10,6 +10,7 @@ import {
   buildSourcePersonPattern, findPersonNameMentions, parsePersonNameTitles, splitPersonNameTitles,
 } from '../../docs/app/data/person-name-recognition.js';
 import { parsePlaces } from '../../docs/app/data/entities.js';
+import { canonicalTitles } from './title_forms.mjs';
 
 const root = resolve(import.meta.dirname, '../..');
 const check = process.argv.includes('--check');
@@ -133,7 +134,7 @@ export function recognizeMentions(text, { placesOnly = false } = {}) {
   const { people, spans } = placesOnly ? { people: [], spans: [] } : recognizePeople(plain);
   const items = [
     ...people.map(({ person, titles }) => (titles.length
-      ? { person, personTitle: [...new Set(titles)].sort() } : { person })),
+      ? { person, personTitle: canonicalTitles(titles).sort() } : { person })),
     ...recognizePlaces(plain, spans).map((place) => ({ place })),
   ];
   const unique = new Map(mergePeople(items).map((item) => [JSON.stringify(item), item]));

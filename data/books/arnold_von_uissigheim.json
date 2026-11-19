@@ -184,7 +184,7 @@
         {
           "person": "Arnold von Uissigheim",
           "personTitle": [
-            "miles"
+            "Ritter"
           ],
           "type": "title",
           "date": "1317"
@@ -192,7 +192,7 @@
         {
           "person": "Arnold von Uissigheim",
           "personTitle": [
-            "miles"
+            "Ritter"
           ],
           "type": "generic",
           "content": "was a fidelis of the Archbishop of Mainz.",
@@ -1043,16 +1043,6 @@
           "personDeceased": true,
           "type": "generic",
           "content": "died by the sword.",
-          "date": "1336-11-14"
-        },
-        {
-          "person": "Arnold von Uissigheim",
-          "personTitle": [
-            "der Junge",
-            "miles"
-          ],
-          "personDeceased": true,
-          "type": "title",
           "date": "1336-11-14"
         },
         {

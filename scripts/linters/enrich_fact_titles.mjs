@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Complete personTitle/ofTitle of facts with titles the entry's generated
-// `mention` list gives the same person. Run after generate_mentions.mjs; the
+// `mention` list gives the same person, after writing every title in canonical form. Run after generate_mentions.mjs; the
 // mentions are regenerated afterwards. Reports by default; `--apply` writes.
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { relative, resolve } from 'node:path';
@@ -8,6 +8,7 @@ import {
   parsePersonNameTitles, personRouteName,
 } from '../../docs/app/data/person-name-recognition.js';
 import { parsePlaces } from '../../docs/app/data/entities.js';
+import { canonicalTitles } from './title_forms.mjs';
 
 const root = resolve(import.meta.dirname, '../..');
 const apply = process.argv.includes('--apply');
@@ -166,13 +167,34 @@ async function jsonFiles(directory) {
   return results;
 }
 
+function normalizeTitles(value, changes) {
+  if (Array.isArray(value)) value.forEach((item) => normalizeTitles(item, changes));
+  else if (value && typeof value === 'object') {
+    for (const [key, child] of Object.entries(value)) {
+      if ((key === 'personTitle' || key === 'ofTitle') && Array.isArray(child) && child.every((item) => typeof item === 'string')) {
+        const canonical = canonicalTitles(child);
+        if (JSON.stringify(canonical) !== JSON.stringify(child)) {
+          changes.push({ before: child, after: canonical });
+          if (apply) value[key] = canonical;
+        }
+      } else if (key !== 'mention') normalizeTitles(child, changes);
+    }
+  }
+}
+
 let findings = 0;
 for (const file of (await jsonFiles(resolve(root, 'data'))).filter((path) => !/\/(tree|people|places|matching)\.json$/.test(path))) {
   let data;
   try { data = JSON.parse(await readFile(file, 'utf8')); } catch { continue; }
   const report = [];
+  const normalized = [];
+  normalizeTitles(data, normalized);
+  for (const { before, after } of normalized) {
+    console.log(`${relative(root, file)}: ${JSON.stringify(before)} -> ${JSON.stringify(after)}`);
+    findings += 1;
+  }
   visit(data, '', report);
-  if (!report.length) continue;
+  if (!report.length && !normalized.length) continue;
   const grouped = new Map();
   for (const { person, added, pointer } of report) {
     const slot = grouped.get(person.fact) ?? { person, pointer, roles: [] };
