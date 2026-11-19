@@ -12,6 +12,7 @@ Aplo
 Arnold, Arnolt
 Asmus, Asinus
 Balthasar
+Eucharius, Carius, Cargus
 Bartholomäus, Barthel, Barthelme, Barthelmä, Bartholomaeus, Bartholomä, Bartholomê
 Batt
 Bernger, Berngern
