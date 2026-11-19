@@ -5,7 +5,7 @@ export function relationshipControls(graph, { focus } = {}) {
   if (!graph?.generated) return '';
   const coverage = graph.metadata?.coverage?.[graph.view];
   const status = graph.checking ? '' : graph.rebuilding ? 'Rebuilding family relationships…' : graph.rebuildError ? `Could not rebuild relationships. ${escapeHtml(graph.rebuildError)}`
-    : graph.valid ? '' : graph.canRebuild ? 'Relationships need refreshing.'
+    : graph.valid ? '' : graph.canRebuild ? `Relationships need refreshing.${graph.reason ? ` ${escapeHtml(graph.reason)}` : ''}`
       : 'Relationships need refreshing. <a href="http://localhost:8000/docs/?tab=tree">Open the local viewer to rebuild</a>.';
   const families = focus !== undefined && graph.components?.length ? `<label><span class="visually-hidden">Family group</span><select data-family-focus aria-label="Family group"><option value="all"${focus === 'all' ? ' selected' : ''}>All family groups</option>${graph.components.map((component) => `<option value="${escapeHtml(component.key)}"${component.key === focus ? ' selected' : ''}>${escapeHtml(component.label)}</option>`).join('')}</select></label>` : '';
   const counts = graph.valid && !graph.checking && !graph.rebuilding && coverage?.reconstructedPeople !== undefined

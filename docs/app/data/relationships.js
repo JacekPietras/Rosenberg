@@ -95,7 +95,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
       || !Number.isInteger(metadata.configuration?.searchLimit) || metadata.configuration.searchLimit < 1
       || !['data/people.json', 'data/places.json', 'data/names.md'].every((path) => Object.hasOwn(metadata.inputs || {}, path))
       || !metadata.inputs || metadata.fingerprint !== await evidenceFingerprint(metadata.inputs)) throw new Error('Invalid build metadata');
-    if (tree !== undefined && people.some((person) => !person.id || Object.keys(person).some((key) => !['id', 'name'].includes(key)))) throw new Error('Confirmed people support only id and name');
+    if (tree !== undefined && people.some((person) => !person.id || Object.keys(person).some((key) => !['id', 'name', 'title'].includes(key)))) throw new Error('Confirmed people support only id, name and title');
     if (Object.hasOwn(metadata.inputs, 'data/tree.json')) throw new Error('Generated tree cannot be its own input');
     const sources = Object.keys(metadata.inputs).filter((path) => sourcePath.test(path)).sort();
     if (JSON.stringify(sources) !== JSON.stringify(paths.filter((path) => sourcePath.test(path)).sort())) throw new Error('The source file set changed');
