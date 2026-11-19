@@ -2175,11 +2175,6 @@
     {
       "german": "1368 war er Mitvormund der Kinder seiner Niece Anna v. Rosenberg, Johann Pfahls von Grünsfeld Wittwe; Mone, D.Rhein XVIII, 314 f. Ob er der Eberhard v. R. ist, Schwager Bertolds von Zwingenberg, a. 1364, vermögen wir nicht zu sagen; vgl. Hanzselmann II, 100. Ebenso wenig ist uns bis jetzt eine Urkunde vorgekommen, welche angäbe, welches die pueri Eberhards II. a. 1359 gewesen sind. Doch werden wohl die Borberger Urkunden Aufschluß geben. Nach einer schriftlichen, angeblich aus Urkunden geschöpften Notiz von Pfarrer Leutwein zu Schüpf kauften die Herren v. Rosenberg a. 1381 Burg und Stadt Boßberg vom Johanniterorden um 18000 fl. und zwar Eberhard und Arnold, Conrad und Eberhard von Rosenberg. Ganz sicher ist folgende Lehensauftragung (Mone, D.Rhein IX, S. 437.):",
       "english": "In 1368, Eberhard was co-guardian of the children of his niece Anna von Rosenberg, the widow of Hans Pfahl von Grünsfeld; see Mone, D. Rhein XVIII, 314 f. Whether he is the same Eberhard von Rosenberg who was the brother-in-law of Bertold von Zwingenberg in 1364, we cannot say; see Hanzselmann II, 100. Likewise, we have not yet come across a document that indicates who the children of Eberhard II were in 1359. However, the Boxberg documents will likely provide clarification. According to a written note, purportedly derived from documents by Pastor Leutwein of Schüpf, the Lords of Rosenberg purchased the castle and town of Boxberg from the Knights of St. John in 1381 for 18,000 florins, specifically Eberhard, Arnold, Konrad, and Eberhard von Rosenberg. The following enfeoffment is certainly confirmed (Mone, D. Rhein IX, p. 437.):",
-      "mention": [
-        {
-          "person": "Hans Pahl"
-        }
-      ],
       "facts": [
         {
           "person": "Anna von Rosenberg",
@@ -2189,7 +2184,7 @@
           "date": "1368"
         },
         {
-          "person": "Hans Pfahl von Grünsfeld",
+          "person": "Hans Pahl von Grünsfeld",
           "personDeceased": true,
           "type": "spouse",
           "of": "Anna von Rosenberg",
@@ -2202,7 +2197,7 @@
           "date": "1368"
         },
         {
-          "person": "Hans Pfahl von Grünsfeld",
+          "person": "Hans Pahl von Grünsfeld",
           "type": "death",
           "diedBefore": "1369",
           "date": "1368"
@@ -2776,11 +2771,6 @@
     {
       "german": "Von Kindern erhalten wir 1368 eine Kunde. Herrn Johanns v. R., Ritters, Tochter Anna war vermählt gewesen mit dem Ritter Johann Pfol v. Grünsfeld und verkaufte als Wittwe im Februar 1368, unter Mitwirkung der Vormünder ihrer Kinder, der Edelknechte Eberhard v. Rosenberg und Heinrich Pfol, den großen Zehnten zu Großrinderfeld; Mone, D. Rhein XVIII, 314 f. Ihre eigene Morgengabe war auf das Dorf Kirchheim angewiesen l. c. S. 318.",
       "english": "We receive news of children in 1368. Sir Hans von Rosenberg, Ritter, had a daughter, Anna, who had been married to Ritter Hans Pfol von Grünsfeld and, as a widow in February 1368, with the involvement of the guardians of her children, the Edelknechte Eberhard von Rosenberg and Heinrich Pfol, sold the large tithe in Großrinderfeld; see Mone, D. Rhein XVIII, 314 f. Her own dowry had been assigned to the village of Kirchheim, l.c. p. 318.",
-      "mention": [
-        {
-          "person": "Hans Pahl"
-        }
-      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
@@ -2792,7 +2782,7 @@
           "date": "1368"
         },
         {
-          "person": "Hans Pfahl von Grünsfeld",
+          "person": "Hans Pahl von Grünsfeld",
           "personTitle": [
             "Ritter"
           ],
@@ -2816,7 +2806,7 @@
           "date": "1368-02"
         },
         {
-          "person": "Heinrich Pfahl",
+          "person": "Heinrich Pahl",
           "personTitle": [
             "Edelknecht"
           ],
@@ -2825,7 +2815,7 @@
           "date": "1368-02"
         },
         {
-          "person": "Hans Pfahl von Grünsfeld",
+          "person": "Hans Pahl von Grünsfeld",
           "personTitle": [
             "Ritter"
           ],
