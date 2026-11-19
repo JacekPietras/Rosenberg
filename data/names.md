@@ -43,7 +43,7 @@ Friedmann
 Friedrich, Frederick, Fridereich, Friderich, Friderici, Friderico, Fridericus, Fridrich, Fritz, Fritze, Friz, Frize
 Frizo
 Fürderer, Forderer, Furderer, Förderer
-Georg, Georgs, Goerg, Gorg, Jorg, Jorge, Jorgen, Jörg
+Georg, Georgs, Goerg, Gorg, Jorg, Jorge, Jorgen, Jörg, Jörgen
 Gerhard, Gerhardus
 Gerlach
 Gero
