@@ -18,13 +18,6 @@
           "place": "aub"
         },
         {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Knight",
-            "the Elder"
-          ]
-        },
-        {
           "place": "rosenberg-town"
         }
       ],
@@ -32,6 +25,7 @@
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
+            "Ritter",
             "der Ältere"
           ],
           "type": "death",

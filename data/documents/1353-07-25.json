@@ -42,17 +42,26 @@
         {
           "person": "Buhart von Zwettl",
           "type": "sibling",
-          "of": "Ludwig von Zwettl"
+          "of": "Ludwig von Zwettl",
+          "ofTitle": [
+            "Burggraf zu Rosenberg"
+          ]
         },
         {
           "person": "Ludwig von Zwettl",
+          "personTitle": [
+            "Burggraf zu Rosenberg"
+          ],
           "type": "parent",
           "of": "Hans von Zwettl"
         },
         {
           "person": "Elen",
           "type": "spouse",
-          "of": "Ludwig von Zwettl"
+          "of": "Ludwig von Zwettl",
+          "ofTitle": [
+            "Burggraf zu Rosenberg"
+          ]
         },
         {
           "person": "Hans von Zwettl",

@@ -9,12 +9,6 @@
       "english": "Ulrich, Dean of Speyer, Nikolaus, Dean of Worms, Ludwig, Canon of Mainz, Asmus von Rosenberg, Ritter, and Hans von Helmstadt, brothers and brothers-in-law, after the death of their father or father-in-law, reach an agreement with his widow Ennel Hinderofen of Rottweil regarding her dower settlement at Kirchardt and other locations.\n\nDuration: February 25, 1471 (Thursday after Saint Matthias, 1471)",
       "mention": [
         {
-          "person": "Asmus von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Hans von Helmstadt"
         },
         {
@@ -24,6 +18,9 @@
       "facts": [
         {
           "person": "Asmus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "type": "generic",
           "content": "reached an agreement with Ennel Hinderofen of Rottweil regarding her dower settlement at Kirchardt and other locations."
         }

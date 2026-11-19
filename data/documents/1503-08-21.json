@@ -15,12 +15,6 @@
           "place": "herrieden"
         },
         {
-          "person": "Hieronymus von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Kilian Mönch"
         },
         {
@@ -38,6 +32,9 @@
         },
         {
           "person": "Hieronymus von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "type": "generic",
           "content": "joined the prince-bishop’s councillors in settling by agreement the dispute concerning the chapel and dues at Bitz."
         }

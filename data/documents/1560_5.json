@@ -9,18 +9,15 @@
       "english": "Records of Landgrave Philipp, also jointly with Duke Christoph of Württemberg: Correspondence with Elector Friedrich, Konrad Diede, the Senior District Administrator Jost Rau von Holzhausen; the former chancellor Heinrich Lersner; Governor, Marshal at Kassel, and Simon Bing, Knight Albrecht von Rosenberg",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Knight"
-          ]
-        },
-        {
           "place": "holtzhusen"
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "type": "generic",
           "content": "corresponded with Landgraf Philipp and Duke Christoph of Württemberg."
         }

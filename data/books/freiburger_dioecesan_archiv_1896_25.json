@@ -842,11 +842,6 @@
     {
       "german": "1356 verkaufen Engelhard und Konrad v. R., Ritter, Brüder, alle ihre eigenen Leute in Mergentheim.",
       "english": "In 1356, Engelhard von Rosenberg and Konrad von Rosenberg, Ritter and brothers, sold all their own people at Mergentheim.",
-      "mention": [
-        {
-          "person": "Konrad von Rosenberg"
-        }
-      ],
       "facts": [
         {
           "person": "Engelhard von Rosenberg",
@@ -4127,9 +4122,6 @@
       "mention": [
         {
           "person": "Hans Gotfried von Berlichingen"
-        },
-        {
-          "person": "Konrad von Rosenberg"
         },
         {
           "place": "wehrkirche-angeltuern"

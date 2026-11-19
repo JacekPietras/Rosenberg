@@ -10,12 +10,6 @@
       "english": "enters into a treaty of mutual protection of their lands with Archbishop Heinrich of Mainz and the chapter there, particularly against Thuringia, Hesse, and Bavaria, while excluding Emperor Ludwig, Archbishop Baldwin of Trier, Rupert the Elder and Younger, Gerlach of Nassau, and Johann of Sponheim. To prevent disputes among themselves, they appoint counselors: on behalf of the Palatinate, knights Kuno of Reiffenberg and Engelhart of Hirschhorn; on behalf of the archbishop, Eberhard von Rosenberg, vogt at Doirn (?), and Herbort Ring, knight; and as joint arbitrator, Schenk Conrad of Erbach. — Original: Munich, Reichsarchiv. (Communicated by Dr. Schrohe in Mainz.)",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "vogt"
-          ]
-        },
-        {
           "person": "Engelhard of Hirschhorn"
         },
         {
@@ -25,6 +19,9 @@
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ],
           "type": "generic",
           "content": "was appointed a counselor for Archbishop Heinrich of Mainz to prevent disputes under the alliance with the Palatinate."
         }

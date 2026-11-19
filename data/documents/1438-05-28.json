@@ -29,12 +29,6 @@
           ]
         },
         {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "place": "mosbach-st-juliana"
         },
         {
@@ -66,7 +60,8 @@
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
-            "Hofmeister"
+            "Hofmeister",
+            "Ritter"
           ],
           "type": "generic",
           "content": "served as a councilor to Count Palatine Otto and took part in the decision between the von Neipperg family and Heilbronn."

@@ -10,12 +10,6 @@
       "english": "Heinrich von Sickingen held half of the aforesaid castle, town, and Amt Röttingen, and Hans Truchsess and Konrad von Rosenberg each held a quarter, redeemable. The archive summary identifies Hans Truchsess as Hans Truchsess von Baldersheim. Ulrich von Rosenberg acquired one quarter from the widow of the aforementioned Heinrich von Sickingen and the other quarter from Konrad von Rosenberg, thus acquiring half. He then pledged that half to Anselm von Rosenberg, Ritter. Anselm in turn pledged the same half to Peter von Stettenberg and Bernhard von Ehenheim for 5,000 florins, 2,500 for each quarter. Gotfried Schenk von Limpurg, Bischof, and his cathedral chapter consented, and he immediately issued a safe-conduct for the town of Röttingen to Stettenberg and Ehenheim. Monday after Walpurgis, 1446. Register of contracts of Limpurg, fol. 63.",
       "mention": [
         {
-          "person": "Anselm von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Gotfried Schenk von Limpurg",
           "personTitle": [
             "Bischof"
@@ -58,6 +52,9 @@
         },
         {
           "person": "Anselm von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "type": "generic",
           "content": "pledged the half share of the castle, town, and Amt Röttingen to Peter von Stettenberg and Bernhard von Ehenheim."
         }

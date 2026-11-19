@@ -7,17 +7,12 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-398030",
       "german": "Schriften zu den Händeln des Ritters Albrecht von Rosenberg mit Kurfürst August von Sachsen u.a.\n\nLaufzeit: 1560er Jahre\n\nUmfang: Libell, 2,5 cm",
       "english": "Documents concerning the affairs of Knight Albrecht von Rosenberg with Elector August of Saxony and others.\n\nTime span: 1560s\n\nExtent: Libell, 2.5 cm",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Knight"
-          ]
-        }
-      ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
           "type": "generic",
           "content": "was involved in disputes with Elector August of Saxony and others."
         }
