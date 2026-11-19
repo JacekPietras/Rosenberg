@@ -459,6 +459,8 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .image-lightbox.is-editable .seal-marker.selected::before { border-color: #ffd166; }
 .image-lightbox.is-editable.is-seal-focused .seal-marker.selected::before { inset: -4px; box-sizing: border-box; border-width: 2px; border-color: #d9485f; cursor: grab; pointer-events: auto; }
 .image-lightbox.is-editable.is-seal-focused .seal-marker.selected { cursor: grab; }
+.image-lightbox.is-seal-resizing .seal-marker.selected::before,
+.image-lightbox.is-seal-resizing .seal-marker-adjustment-handle { visibility: hidden; pointer-events: none; }
 .image-lightbox.is-seal-focused .seal-marker-label { display: none; }
 .image-lightbox.is-editable .seal-marker.saving::before { border-color: #ffd166; }
 .seal-marker-label { position: absolute; top: calc(100% + .45rem); left: 50%; display: block; padding: .05rem .2rem; color: #fff; background: color-mix(in srgb, #2469b5 88%, transparent); border-radius: 3px; font-size: .5rem; line-height: 1.25; pointer-events: none; white-space: nowrap; transform: translateX(-50%); }

@@ -33,11 +33,11 @@
           "seals": [
             {
               "person": "Erasmus von Rosenberg",
-              "position": "0.4910,0.7144",
-              "size": 0.05349999999999998,
-              "width": 0,
-              "wideningRotation": 0,
-              "rotation": -3,
+              "position": "0.4913,0.7149",
+              "size": 0.05449999999999998,
+              "width": 0.108,
+              "wideningRotation": -30.6,
+              "rotation": -4.5,
               "type": "contrepalle"
             }
           ]

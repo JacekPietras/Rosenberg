@@ -182,6 +182,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   let ignoreSealClick = false;
   let sealView = { x: 0, y: 0, scale: 1 };
   let sealViewTimer = null;
+  let sealResizeTimer = null;
   const MAGNIFIER_SIZE = 0.12;
   const MAGNIFIER_SIZE_STEP = 0.01;
   let magnifierSize = MAGNIFIER_SIZE;
@@ -701,6 +702,9 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     const seal = index === null ? null : currentSeals()[index];
     if (seal && index === selectedIndex) {
       seal.size = Math.max(0.01, Math.min(0.5, Number(seal.size) + (event.deltaY < 0 ? 0.0005 : -0.0005)));
+      lightbox.classList.add('is-seal-resizing');
+      clearTimeout(sealResizeTimer);
+      sealResizeTimer = setTimeout(() => lightbox.classList.remove('is-seal-resizing'), 400);
       render();
     }
   }, { passive: false });
