@@ -18,6 +18,7 @@ CHECKS = (
     "normalize_hidden_places.py",
     "validate_documents.py",
     "migrate_von_und_zu.py",
+    "normalize_fact_names.mjs",
     "validate_english_names.py",
     "validate_facts.py",
 )
@@ -75,7 +76,8 @@ def main(argv=None):
             issues += 1
             failed = True
     for check in CHECKS:
-        command = [sys.executable, str(LINTERS / check)]
+        command = (["node", str(LINTERS / check)] if check.endswith(".mjs")
+                   else [sys.executable, str(LINTERS / check)])
         if args.all and check == "validate_documents.py":
             command.append("--all")
         result = subprocess.run(

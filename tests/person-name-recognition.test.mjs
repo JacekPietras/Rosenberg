@@ -87,6 +87,31 @@ test('recognizes zum as zu before a place and routes it canonically', () => {
     'Konrad von Rosenberg');
 });
 
+test('recognizes a trailing zu-place designation as a person title', () => {
+  const scenarioPlaces = [...places, { name: 'Essingen', variations: ['Essingen'] }];
+  const phrase = 'Hans von Rosenberg zu Essingen';
+  const scenarioPattern = buildSourcePersonPattern(projectNames, particles, scenarioPlaces,
+    `${titles}\n${projectTitles}`, connectors, byNames);
+  const result = findPersonNameMentions(phrase, `${titles}\n${projectTitles}`, connectors,
+    particles, projectNames, byNames, scenarioPlaces, scenarioPattern);
+  assert.equal(result.singles[0]?.route, 'Hans von Rosenberg');
+  assert.deepEqual(result.singles[0]?.titles, ['zu Essingen']);
+});
+
+test('assigns an intervening office title to Konrad without attaching it to Eberhard', () => {
+  const scenarioPlaces = [...places, { name: 'Wildenberg', variations: ['Wildenberg'] }];
+  const scenarioTitles = `${titles}\n${projectTitles}`;
+  const phrase = 'include the knights Konrad Rüdt, Burgrave zu Wildenberg, Eberhard Rüdt,';
+  const scenarioPattern = buildSourcePersonPattern(projectNames, particles, scenarioPlaces,
+    scenarioTitles, connectors, byNames);
+  const result = findPersonNameMentions(phrase, scenarioTitles, connectors, particles,
+    projectNames, byNames, scenarioPlaces, scenarioPattern);
+  assert.deepEqual(result.singles.map(({ route, titles: personTitles }) => ({ route, titles: personTitles })), [
+    { route: 'Konrad Rüd', titles: ['Burggraf zu Wildenberg'] },
+    { route: 'Eberhard Rüd', titles: [] },
+  ]);
+});
+
 test('recognizes Mönch von Rosenberg zu Hainstadt as one person mention', () => {
   const scenarioPattern = buildSourcePersonPattern(projectNames, particles, places,
     `${titles}\n${projectTitles}`, connectors, byNames);
@@ -297,6 +322,18 @@ test('recognizes a called designation after a person name without absorbing it i
     'Peter von Helmstadt');
   assert.equal(personMentionClass('Peter von Helmstadt, called von Rosenberg', connectors, particles), 'person-mention');
   assert.equal(personMentionClass('Peter von Rosenberg', connectors, particles), 'person-mention-blue');
+});
+
+test('recognizes gen. von Rosenberg as the canonical designation of Diether von Helmstadt', () => {
+  const scenarioTitles = `${titles}\n${projectTitles}`;
+  const scenarioPattern = buildSourcePersonPattern(projectNames, particles, places,
+    scenarioTitles, connectors, byNames);
+  const sentence = 'elected Diether von Helmstadt, gen. von Rosenberg, as abbot';
+  const result = findPersonNameMentions(sentence, scenarioTitles, connectors, particles,
+    projectNames, byNames, places, scenarioPattern);
+  assert.deepEqual(result.singles.map(({ route, titles: personTitles }) => ({ route, titles: personTitles })), [
+    { route: 'Diether von Helmstadt', titles: ['genannt von Rosenberg'] },
+  ]);
 });
 
 test('does not attach the previous list item title to the next person across a semicolon', () => {

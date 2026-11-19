@@ -19,16 +19,7 @@
           "place": "bischofsheim"
         },
         {
-          "person": "Eberhard Rüd"
-        },
-        {
           "place": "koenigheim"
-        },
-        {
-          "person": "Konrad Rüd",
-          "personTitle": [
-            "Ritter"
-          ]
         },
         {
           "person": "Konrad von Hartheim"
@@ -76,15 +67,15 @@
           "content": "served as surety for Archbishop Gerlach’s financial arrangements concerning Krautheim."
         },
         {
-          "person": "Eberhard Rüdt",
+          "person": "Eberhard Rüd",
           "personTitle": [
             "Ritter"
           ],
           "type": "sibling",
-          "of": "Konrad Rüdt",
+          "of": "Konrad Rüd",
           "ofTitle": [
-            "Ritter",
-            "erzb. Amtmann zu Wildenberg"
+            "Amtmann zu Wildenberg",
+            "Ritter"
           ]
         },
         {

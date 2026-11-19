@@ -100,7 +100,7 @@ function recognizePeople(text) {
   const { coordinated, singles } = findPersonNameMentions(text, ...args, pattern);
   const spans = [...singles, ...coordinated].map(({ start, end }) => [start, end]);
   const people = [
-    ...singles.map((item) => ({ person: item.route, titles: surfaceTitles(item.text) })),
+    ...singles.map((item) => ({ person: item.route, titles: [...surfaceTitles(item.text), ...(item.titles || [])] })),
     ...coordinated.flatMap((group) => group.routes.map((person) => ({ person, titles: group.titles }))),
   ];
   return { people, spans };

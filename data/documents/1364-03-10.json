@@ -18,9 +18,6 @@
           "person": "Boppe von Adelsheim"
         },
         {
-          "person": "Eberhard Rüd"
-        },
-        {
           "person": "Eberhard Rüd von Bödigheim"
         },
         {
@@ -31,12 +28,6 @@
         },
         {
           "person": "Hans von Riedern"
-        },
-        {
-          "person": "Konrad Rüd",
-          "personTitle": [
-            "Ritter"
-          ]
         },
         {
           "person": "Konrad von Hartheim"
@@ -81,15 +72,15 @@
           "content": "served as surety for Archbishop Gerlach’s purchase of Neudenau."
         },
         {
-          "person": "Eberhard Rüdt",
+          "person": "Eberhard Rüd",
           "personTitle": [
             "Ritter"
           ],
           "type": "sibling",
-          "of": "Konrad Rüdt",
+          "of": "Konrad Rüd",
           "ofTitle": [
-            "Ritter",
-            "erzb. Amtmann zu Wildenberg"
+            "Amtmann zu Wildenberg",
+            "Ritter"
           ]
         },
         {
