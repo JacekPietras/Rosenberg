@@ -10,16 +10,13 @@
       "mention": [
         {
           "person": "Amalie von Rosenberg"
-        },
-        {
-          "person": "Felicitas Rüd"
         }
       ],
       "facts": [
         {
           "person": "Amalie von Sickingen",
           "type": "sibling",
-          "of": "Felicitas Rüdt"
+          "of": "Felicitas Rüd"
         },
         {
           "person": "Amalie von Sickingen",
