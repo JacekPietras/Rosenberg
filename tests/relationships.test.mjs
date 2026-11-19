@@ -173,13 +173,15 @@ test('active loader filters watched non-source files and verifies evidence views
         : data.files.get(path) || '',
   };
   const validityAtRender = [];
+  const checkingAtRender = [];
   const loader = createDataLoader({ repository, state, parsePeople, parsePlaces,
     buildPersonPattern: () => [], buildPlacePattern: () => null,
     bookSortYear: () => 0, recordHasMissingSource: () => false, recordHasMissingUrl: () => false, distinctFamilies: new Set(),
     missingRecordLabel: 'missing', greyRecordLabels: [], savePreferences() {}, renderTabs() {},
-    renderActive: async () => { validityAtRender.push(state.familyGraph.valid); } });
+    renderActive: async () => { validityAtRender.push(state.familyGraph.valid); checkingAtRender.push(Boolean(state.familyGraph.checking)); } });
   await loader.loadAll();
-  assert.equal(validityAtRender[0], false);
+  assert.equal(checkingAtRender[0], true);
+  assert.equal(checkingAtRender.length, validityAtRender.length);
   assert.equal(validityAtRender.at(-1), true);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   assert.equal(state.familyView, 'with-guesses');

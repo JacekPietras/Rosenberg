@@ -94,7 +94,7 @@ export function createDataLoader({
       state.documents = earlyBooks;
       if (state.active === 'books') state.active = ordered[0];
       renderTabs();
-      await renderActive();
+      if (state.active !== 'tree' || state.person || state.place) await renderActive();
     }
     mark('sourcesStart');
     const [placesText, calibrationCitiesText, peopleText, particlesText, namesText, personNameTitlesText, nameConnectorsText, byNamesText, distinctFamiliesText, documents] = await Promise.all([
@@ -185,10 +185,11 @@ export function createDataLoader({
     if (!reserved.includes(state.active) && !paths.includes(state.active)) state.active = state.manifest.books[0]?.path || 'documents';
     savePreferences();
     if (!familyOnly) renderTabs();
+    const treeScreenRendersBelow = state.active === 'tree' && !state.person && !state.place;
     if (!familyOnly) {
       mark('prepareEnd');
       mark('renderStart');
-      await renderActive();
+      if (!treeScreenRendersBelow) await renderActive();
       mark('renderEnd');
     }
     if (!familyOnly && state.active === 'documents' && !state.person && !state.place && typeof repository.isLocalServer === 'function' && await repository.isLocalServer()) {
