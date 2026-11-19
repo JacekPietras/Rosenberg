@@ -265,43 +265,23 @@ async function updateFixtureBuild(data) {
   metadata.fingerprint = await evidenceFingerprint(metadata.inputs);
 }
 
-test('stale local evidence automatically rebuilds once and reloads the verified graph', async () => {
+test('stale local evidence offers a refresh button and rebuilds only on request', async () => {
   const data = await externalTreeFixture();
   data.documents.get(source.path).date = '1400';
   let rebuilds = 0;
   const { loader, state, counts } = loaderFor(data, { rebuild: async () => { rebuilds++; await updateFixtureBuild(data); } });
   await Promise.all([loader.loadAll(), loader.loadAll()]);
-  await loader.waitForFamilyRebuild();
+  assert.equal(rebuilds, 0);
+  assert.equal(state.familyGraph.stale, true);
+  assert.equal(state.familyGraph.edges.length, 1);
+  assert.match(renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph }), /data-family-rebuild[^>]*aria-label="Refresh relationships"/);
+  await loader.rebuildFamilyGraph();
   assert.equal(rebuilds, 1);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
+  assert.equal(state.familyGraph.stale, undefined);
   assert.equal(state.familyGraph.edges.length, 1);
   assert.equal(state.familyView, 'with-guesses');
-  assert.equal(state.familyGraph.canRebuild, true);
-  assert.doesNotMatch(renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph }), /data-family-rebuild>/);
-  assert.equal(counts().progress, 1);
-});
-
-test('family rebuild waits until the tree screen is opened', async () => {
-  const data = await externalTreeFixture();
-  data.documents.get(source.path).date = '1400';
-  let finish;
-  const pending = new Promise((resolve) => { finish = resolve; });
-  const { loader, state, counts } = loaderFor(data, { rebuild: async () => {
-    await pending;
-    await updateFixtureBuild(data);
-  } });
-  state.active = 'documents';
-  await loader.loadAll();
-  assert.equal(counts().renders, 1);
-  assert.equal(state.familyGraph.rebuilding, undefined);
-  assert.equal(counts().progress, 0);
-  state.active = 'tree';
-  await loader.loadAll();
-  assert.equal(state.familyGraph.rebuilding, true);
-  finish();
-  await loader.waitForFamilyRebuild();
-  assert.equal(state.familyGraph.valid, true);
-  assert.equal(state.familyGraph.rebuilding, false);
+  assert.doesNotMatch(renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph }), /data-family-rebuild /);
   assert.equal(counts().progress, 1);
 });
 
@@ -314,31 +294,14 @@ test('rebuild failures retain the saved graph and allow retry', async () => {
     await updateFixtureBuild(data);
   } });
   await loader.loadAll();
-  await loader.waitForFamilyRebuild();
-  assert.equal(rebuilds, 1);
-  assert.equal(state.familyVerification.valid, false);
+  assert.equal(rebuilds, 0);
+  await assert.rejects(loader.rebuildFamilyGraph(), /Invalid source date/);
   assert.equal(state.familyGraph.edges.length, 1);
   assert.match(state.familyGraph.rebuildError, /Invalid source date/);
   await loader.rebuildFamilyGraph();
   assert.equal(rebuilds, 2);
   assert.equal(state.familyGraph.valid, true);
-  assert.doesNotMatch(renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph }), /data-family-rebuild>/);
-});
-
-test('a second input change cannot cause an automatic rebuild loop', async () => {
-  const data = await externalTreeFixture();
-  data.documents.get(source.path).date = '1400';
-  let rebuilds = 0;
-  const { loader, state } = loaderFor(data, { rebuild: async () => {
-    rebuilds++;
-    await updateFixtureBuild(data);
-    data.documents.get(source.path).date = '1401';
-  } });
-  await loader.loadAll();
-  await loader.waitForFamilyRebuild();
-  assert.equal(rebuilds, 1);
-  assert.equal(state.familyGraph.valid, false);
-  assert.equal(state.familyGraph.canRebuild, true);
+  assert.doesNotMatch(renderPeopleTree(state.personRecords, state.documents, { graph: state.familyGraph }), /data-family-rebuild /);
 });
 
 test('hosted pages do not POST rebuilds to a static site', async () => {
@@ -390,7 +353,6 @@ test('the rebuild button disables itself and reports a failed attempt with retry
   await click({ currentTarget: button });
   assert.equal(rebuilds, 1);
   assert.equal(button.disabled, false);
-  assert.equal(button.textContent, 'Retry rebuild');
   assert.match(message.textContent, /Try again/);
 });
 
@@ -582,7 +544,7 @@ test('active loader reads and rebuilds the separate tree without changing regist
     await updateFixtureBuild(data);
   } });
   await loader.loadAll();
-  await loader.waitForFamilyRebuild();
+  await loader.rebuildFamilyGraph();
   assert.equal(rebuilds, 1);
   assert.equal(state.tree, data.tree);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
@@ -596,13 +558,13 @@ test('missing tree.json triggers generation even when the registry has no relati
   let rebuilds = 0;
   const { loader, state } = loaderFor(data, { rebuild: async () => { rebuilds++; data.tree = generated; } });
   await loader.loadAll();
-  await loader.waitForFamilyRebuild();
+  await loader.rebuildFamilyGraph();
   assert.equal(rebuilds, 1);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   assert.equal(state.familyGraph.edges.length, 1);
 });
 
-test('invalid saved build options cannot prevent automatic regeneration', async () => {
+test('invalid saved build options cannot prevent regeneration', async () => {
   for (const invalid of [{ views: {} }, { views: 'facts' }, { views: [] },
     { configuration: { searchLimit: -1 } }, { configuration: { searchLimit: 'bad' } }]) {
     const data = await externalTreeFixture();
@@ -615,7 +577,7 @@ test('invalid saved build options cannot prevent automatic regeneration', async 
       data.tree = generated;
     } });
     await loader.loadAll();
-    await loader.waitForFamilyRebuild();
+    await loader.rebuildFamilyGraph();
     assert.equal(rebuilds, 1);
     assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   }
@@ -726,7 +688,7 @@ test('probability verification rejects altered estimates and effective parameter
   }
 });
 
-test('parameter changes automatically rebuild and a saved facts-only preference cannot omit guesses', async () => {
+test('parameter changes rebuild on request and a saved facts-only preference cannot omit guesses', async () => {
   const data = await probabilityFixture();
   const next = { ...data.files.get('data/matching.json'), mergeProbability: .75 };
   data.files.set('data/matching.json', next);
@@ -738,7 +700,7 @@ test('parameter changes automatically rebuild and a saved facts-only preference 
   } });
   state.familyView = 'facts';
   await loader.loadAll();
-  await loader.waitForFamilyRebuild();
+  await loader.rebuildFamilyGraph();
   assert.equal(rebuilds, 1);
   assert.equal(state.familyGraph.valid, true, state.familyGraph.reason);
   assert.equal(state.familyGraph.view, 'with-guesses');

@@ -37,7 +37,6 @@ export function createDataLoader({
     } finally { worker.terminate(); }
   }
   let lastVerifiedGraph;
-  let backgroundRebuild;
   function rebuildOptions() {
     const metadata = state.tree ?? state.personRecords[0]?.familyGraph;
     const limit = metadata?.configuration?.searchLimit;
@@ -49,7 +48,7 @@ export function createDataLoader({
     if (state.active === 'tree') await renderActive();
   }
 
-  async function loadSnapshot({ autoRebuild = true, familyOnly = false } = {}) {
+  async function loadSnapshot({ familyOnly = false } = {}) {
     const loadStarted = performance.now();
     const timings = {};
     const mark = (name) => { timings[name] = performance.now(); };
@@ -221,48 +220,21 @@ export function createDataLoader({
       state.familyGraph = family.graph;
       state.familyGraph.checking = false;
       state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
-      const shouldRebuild = !state.familyGraph.valid && state.canRebuildFamilyGraph && autoRebuild && !backgroundRebuild;
-      if (shouldRebuild && family.tree) {
-        // Keep displaying the saved graph while its replacement is calculated.
-        // Verification still controls whether we start the rebuild; it should
-        // not blank a usable saved tree during that work.
+      if (!state.familyGraph.valid && state.canRebuildFamilyGraph && family.tree) {
+        // Keep displaying the saved graph; the user decides when to refresh it.
+        const reason = state.familyGraph.reason;
         state.familyGraph = buildRelationshipGraph(state.personRecords, {
           tree: family.tree,
           view: state.familyView,
           verification: { valid: true, reason: '' },
         });
-        state.familyGraph.canRebuild = state.canRebuildFamilyGraph;
+        Object.assign(state.familyGraph, { canRebuild: true, stale: true, reason });
       }
-      state.familyGraph.rebuilding = Boolean((autoRebuild && backgroundRebuild) || shouldRebuild);
       state.treeLoading = false;
       if (remapSourcePerson(state, lastVerifiedGraph)) onPersonReassigned();
-      if (state.familyGraph.valid) lastVerifiedGraph = state.familyGraph;
+      if (state.familyGraph.valid && !state.familyGraph.stale) lastVerifiedGraph = state.familyGraph;
       state.familyView = state.familyGraph.view;
       await renderActive();
-      if (shouldRebuild) {
-        state.familyGraph.rebuildStage = 'Rebuilding relationships; this can take several minutes';
-        await renderActive();
-        onFamilyRebuild();
-        backgroundRebuild = (async () => {
-          try {
-            await repository.rebuildFamilyGraph(rebuildOptions(), reportRebuildProgress);
-            // A refresh may already be loading when the rebuild finishes.
-            await new Promise((resolve) => setTimeout(resolve, 0));
-            if (loading) await loading;
-            await loadAll({ autoRebuild: false, familyOnly: true });
-          } catch (error) {
-            state.familyGraph.rebuilding = false;
-            state.familyGraph.rebuildError = error.message;
-            if (state.active === 'tree') await renderActive();
-          } finally {
-            backgroundRebuild = null;
-            if (state.familyGraph) {
-              state.familyGraph.rebuilding = false;
-              state.familyGraph.rebuildStage = '';
-            }
-          }
-        })();
-      }
     } else if (state.person) {
       await renderActive();
     }
@@ -293,8 +265,8 @@ export function createDataLoader({
       await renderActive();
       throw error;
     }
-    await loadAll({ autoRebuild: false });
+    await loadAll();
   }
 
-  return { loadAll, rebuildFamilyGraph, waitForFamilyRebuild: () => backgroundRebuild };
+  return { loadAll, rebuildFamilyGraph };
 }

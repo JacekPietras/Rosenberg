@@ -3,7 +3,7 @@ import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rende
 import { renderFactsView } from '../components/facts_view.js?v=10';
 import { findPlaceByName } from '../data/entities.js?v=90';
 import { resolvePerson, resolveEvidencePointer } from '../data/relationships.js?v=14';
-import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=10';
+import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=13';
 
 export function createEntityScreens({
   state,

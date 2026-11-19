@@ -1,5 +1,5 @@
 import { buildRelationshipGraph, focusFamilyGraph, resolveEvidencePointer } from '../data/relationships.js?v=14';
-import { relationshipControls } from '../rendering/relationships.js?v=10';
+import { relationshipControls } from '../rendering/relationships.js?v=13';
 import { factText, factPersonMatch, factDate } from '../rendering/facts.js?v=9';
 import { renderFactsView } from '../components/facts_view.js?v=10';
 import { createMarkupRenderer } from '../rendering/markup.js';

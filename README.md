@@ -72,11 +72,11 @@ show original attestations. Counts describe source identities, some of which
 may later prove to be the same person. The diagram displays each identity once,
 including people with multiple spouses or shared descendants. The viewer exposes source
 links, identity uncertainty, and the available evidence modes. The local viewer
-checks for stale relationships when the family tree screen is opened and rebuilds them only if needed, then
+checks for stale relationships when the family tree screen is opened. It keeps showing the saved
+tree and offers a **Refresh** icon button; rebuilding runs only when it is pressed, then the viewer
 reloads and verifies the result, preserving the existing evidence views and
-search configuration. A **Retry rebuild** button appears only if automatic
-rebuilding fails. Restart an already running local server once after updating
-the viewer to enable automatic rebuilding. The published read-only site links to the local
+search configuration. Restart an already running local server once after updating
+the viewer to enable rebuilding. The published read-only site links to the local
 viewer when a rebuild is needed.
 
 The registry and generated tree schemas are documented in [specs/json-formats.md](specs/json-formats.md).
