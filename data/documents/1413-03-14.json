@@ -10,14 +10,11 @@
       "mention": [
         {
           "place": "heidelberg"
-        },
-        {
-          "person": "Wernher Winther von Alzey"
         }
       ],
       "facts": [
         {
-          "person": "Wernher Winter von Alzey",
+          "person": "Wernher Winther von Alzey",
           "type": "spouse",
           "of": "Katharina von Rosenberg"
         },

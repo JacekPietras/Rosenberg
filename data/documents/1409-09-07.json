@@ -9,9 +9,6 @@
       "english": "The brothers Parczifal Zenger and Drißdram Zenger of Swarczenegk acknowledge that they owe Ritter Hans von Rosenberg and his wife Elßbeth, née Marschalk von Pappenheim, 6,000 new Hungarian florins, of good gold and sufficient weight, which he lent them out of affection and friendship. As a pledge they assign the fortress and town of Hiltpoltstain, with all its revenues, rents, services, courts, fines, rights, and appurtenances, as Duke Stephan of Bavaria had pledged it to them. The property is to remain an open castle for the duke in all conflicts, without cost or harm to the Rosenbergs; the pledge holders may use it in conflicts. The Zengers are to represent the pledge holders in legal claims brought by lords or princes against the pledge. If the debt is called in, the Zengers must repay it within two months at Regensburg or Nuremberg, or within four miles of either. Otherwise, they may re-pledge the property for the same sum and terms, with the Rosenbergs’ consent, while preserving the Zengers’ right to redeem it at any time. The Zengers may redeem the pledge two months after notice, receiving any rents then outstanding. If they wish to pledge it for a larger sum, they must first offer it to the Rosenbergs; if the latter do not wish to invest more, the Zengers may pledge it elsewhere after repaying them. The duke’s original pledge deed is to be deposited with a mutually chosen person for the pledge holders’ use. Its loss or transfer does not impair their claim. In any dispute brought by the Zengers against the creditors over these agreements, the creditors are to prevail and the Zengers lose. The same obligation applies to anyone who lawfully holds this deed from the creditors. The Zengers and their guarantors seal the charter; the guarantors are Sweygger von Gundolfingen the Younger and Jacob vom Wolffstain.",
       "mention": [
         {
-          "person": "Elisabeth Marschalk"
-        },
-        {
           "place": "nuremberg"
         },
         {
@@ -31,7 +28,7 @@
           "content": "lent 6,000 Hungarian florins to Parczifal and Drißdram Zenger, who pledged Hiltpoltstein Castle and town with its appurtenances to him and his wife Elsbeth Marschalkin."
         },
         {
-          "person": "Elisabeth Marschalkin",
+          "person": "Elisabeth Marschalk",
           "personTitle": [
             "zu Pappenheim"
           ],
@@ -44,7 +41,7 @@
             "Ritter"
           ],
           "type": "spouse",
-          "of": "Elisabeth Marschalkin",
+          "of": "Elisabeth Marschalk",
           "ofTitle": [
             "zu Pappenheim"
           ]

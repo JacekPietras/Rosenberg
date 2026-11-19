@@ -13,9 +13,6 @@
       "english": "Friedrich von Nuremberg, as liege lord, grants Margaretha, née von Rosenberg, wife of Michael von Seinsheim, lifetime use of the Vogtei Astheim and its appurtenances for her 600-gulden dowry. Three copies; StAN, Herrschaft Schwarzenberg, Urkunden 56.",
       "mention": [
         {
-          "person": "Friedrich von Nuremberg"
-        },
-        {
           "place": "schwarzenberg"
         }
       ],
@@ -26,7 +23,7 @@
           "of": "Margaretha von Rosenberg"
         },
         {
-          "person": "Friedrich VI. von Nuremberg",
+          "person": "Friedrich von Nuremberg",
           "type": "generic",
           "content": "granted Margaretha von Rosenberg, wife of Michael von Seinsheim, lifetime use of the Vogtei Astheim and its appurtenances for her dowry."
         }
