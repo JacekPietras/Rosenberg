@@ -9,7 +9,10 @@
   },
   {
     "id": "vogt_zu_Lauda",
-    "name": "Eberhard von Rosenberg"
+    "name": "Eberhard von Rosenberg",
+    "title": [
+      "Vogt zu Lauda"
+    ]
   },
   {
     "id": "vogt_zu_Nagelsberg",
@@ -17,7 +20,10 @@
   },
   {
     "id": "vogt_zu_Durn",
-    "name": "Eberhard von Rosenberg"
+    "name": "Eberhard von Rosenberg",
+    "title": [
+      "Vogt zu Dürn"
+    ]
   },
   {
     "id": "arnold_boxberg",
@@ -33,7 +39,11 @@
   },
   {
     "id": "vitztum_zu_Heidelberg",
-    "name": "Konrad von Rosenberg"
+    "name": "Konrad von Rosenberg",
+    "title": [
+      "Vizedom zu Heidelberg",
+      "Vizedom zu Amberg"
+    ]
   },
   {
     "id": "arnold_brother_of_vogt_zu_Lauda",

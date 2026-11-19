@@ -88,6 +88,7 @@ class Validator:
         self.person_ids = set()
         self.person_names = set()
         self.people_by_id = {}
+        self.people_by_name = {}
         self.given_name_variants = {}
         self.given_name_genders = {}
         self.particle_variants = set()
@@ -156,8 +157,8 @@ class Validator:
             if not isinstance(person, dict):
                 self.report(loc, 'person record must be an object')
                 continue
-            for field in sorted(set(person) - {'id', 'name'}):
-                self.report(loc + '/' + field, 'confirmed people support only id and name; calculated data belongs in tree.json')
+            for field in sorted(set(person) - {'id', 'name', 'title'}):
+                self.report(loc + '/' + field, 'confirmed people support id, name, and optional title; calculated data belongs in tree.json')
             if 'id' not in person:
                 self.report(loc + '/id', 'confirmed people require an ID')
             name = person.get('name')
@@ -175,6 +176,9 @@ class Validator:
                     self.person_ids.add(person_id)
                     if self.nonblank(name):
                         self.people_by_id[person_id] = name
+                        titles = person.get('title', [])
+                        if isinstance(titles, list):
+                            self.people_by_name.setdefault(name.casefold(), []).append((person_id, {str(title).strip().casefold() for title in titles if self.nonblank(title)}))
         for collision in sorted(self.person_ids & self.person_names):
             self.report(path, f'person ID collides with full name {collision!r}')
 
@@ -275,6 +279,17 @@ class Validator:
             if canonical:
                 parts[surname_start:] = canonical.split()
         return ' '.join(parts)
+
+    def resolve_person_title(self, name, titles):
+        """Resolve a same-name registry person only when a title distinguishes them."""
+        if not self.nonblank(name) or name in self.person_ids or not isinstance(titles, list):
+            return name
+        supplied = {title.strip().casefold() for title in titles if self.nonblank(title)}
+        if not supplied:
+            return name
+        matches = [person_id for person_id, known in self.people_by_name.get(name.casefold(), [])
+                   if known & supplied]
+        return matches[0] if len(matches) == 1 else name
 
     def check_titles(self, value, location):
         if not isinstance(value, list) or not value:
@@ -505,6 +520,12 @@ def clean_facts(path, validator):
                         titles = mention.get('personTitle')
                         if isinstance(titles, list) and all(isinstance(title, str) for title in titles):
                             mention['personTitle'] = sorted(titles)
+                        if isinstance(mention.get('person'), str):
+                            original = mention['person']
+                            resolved = validator.resolve_person_title(original, mention.get('personTitle'))
+                            if resolved != original:
+                                mention['person'] = resolved
+                                print(f'{path}#/mention/person: title match: {original!r} -> {resolved!r}')
             if value.get('facts') == []:
                 del value['facts']
             for field in ('facts', 'guesses'):
@@ -517,6 +538,12 @@ def clean_facts(path, validator):
                                     fact[title_field] = sorted(titles)
                         for participant in ('person', 'of'):
                             name = fact.get(participant)
+                            title_field = participant + 'Title'
+                            resolved = validator.resolve_person_title(name, fact.get(title_field))
+                            if resolved != name:
+                                fact[participant] = resolved
+                                print(f'{path}#/{field}/{participant}: title match: {name!r} -> {resolved!r}')
+                                name = resolved
                             canonical_name = validator.canonical_person_name(name)
                             if canonical_name != name:
                                 fact[participant] = canonical_name

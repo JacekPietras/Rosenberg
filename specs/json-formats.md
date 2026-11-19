@@ -257,12 +257,13 @@ lists.
 ## People JSON
 
 `data/people.json` is the curated registry of confirmed, separate people: a
-non-empty array of objects with **only** `id` and `name`. IDs are unique,
+non-empty array of objects with required `id` and `name`, and optional `title`
+(a list of distinguishing titles). IDs are unique,
 case-sensitive, and never equal to a full name; different people may share a
 name. Only reviewed people are added, and generated files never change it.
 
 ```json
-[{"id": "example_person", "name": "Example person"}]
+[{"id": "example_person", "name": "Example person", "title": ["Vogt zu Lauda"]}]
 ```
 
 ## Tree JSON
