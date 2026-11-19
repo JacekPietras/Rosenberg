@@ -250,8 +250,9 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
       marker.style.setProperty('--seal-rotation', `${Number(marker.dataset.rotation) || 0}deg`);
       const angle = Number(marker.dataset.wideningRotation) || 0;
       const radius = height * Number(marker.dataset.size) * (1 + (Number(marker.dataset.width) || 0)) / 2;
-      marker.style.setProperty('--seal-handle-x', `${Math.sin(angle * Math.PI / 180) * radius}px`);
-      marker.style.setProperty('--seal-handle-y', `${-Math.cos(angle * Math.PI / 180) * radius}px`);
+      const handleAngle = (90 - angle) * Math.PI / 180;
+      marker.style.setProperty('--seal-handle-x', `${Math.sin(handleAngle) * radius}px`);
+      marker.style.setProperty('--seal-handle-y', `${-Math.cos(handleAngle) * radius}px`);
     });
   };
   const updatePreview = () => {
@@ -332,15 +333,20 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     const marker = annotations.querySelector(`.seal-marker[data-seal-index="${handleDrag.index}"]`);
     if (!seal || !marker) return;
     const rect = marker.getBoundingClientRect();
-    const dx = event.clientX - (rect.left + rect.width / 2), dy = event.clientY - (rect.top + rect.height / 2);
+    const [sealX, sealY] = String(seal.position || '').split(',').map(Number);
+    const stageRect = stage.getBoundingClientRect();
+    const centerX = stageRect.left + stage.clientWidth / 2 + (annotations.offsetLeft + sealX * annotations.clientWidth - stage.clientWidth / 2) * sealView.scale + sealView.x;
+    const centerY = stageRect.top + stage.clientHeight / 2 + (annotations.offsetTop + sealY * annotations.clientHeight - stage.clientHeight / 2) * sealView.scale + sealView.y;
+    const dx = event.clientX - centerX, dy = event.clientY - centerY;
     const radius = Math.max(1, rect.width / 2);
     seal.width = Number(Math.max(0, Math.min(1, Math.hypot(dx, dy) / radius - 1)).toFixed(3));
-    seal.wideningRotation = Number(Math.max(-90, Math.min(90, Math.atan2(dx, -dy) * 180 / Math.PI)).toFixed(1));
+    seal.wideningRotation = Number(Math.max(0, Math.min(180, 90 - Math.atan2(dx, -dy) * 180 / Math.PI)).toFixed(1));
     marker.dataset.width = String(seal.width);
     marker.dataset.wideningRotation = String(seal.wideningRotation);
     const handleRadius = marker.offsetWidth / 2 * (1 + seal.width);
-    marker.style.setProperty('--seal-handle-x', `${Math.sin(seal.wideningRotation * Math.PI / 180) * handleRadius}px`);
-    marker.style.setProperty('--seal-handle-y', `${-Math.cos(seal.wideningRotation * Math.PI / 180) * handleRadius}px`);
+    const handleAngle = (90 - seal.wideningRotation) * Math.PI / 180;
+    marker.style.setProperty('--seal-handle-x', `${Math.sin(handleAngle) * handleRadius}px`);
+    marker.style.setProperty('--seal-handle-y', `${-Math.cos(handleAngle) * handleRadius}px`);
     updatePreview();
     event.preventDefault();
   };
