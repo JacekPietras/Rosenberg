@@ -453,7 +453,7 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .seal-marker[data-person-reference]::before { border-color: #3aaf72; }
 .image-lightbox.is-editable .image-lightbox-annotations { pointer-events: auto; }
 .image-lightbox.is-editable .seal-marker { pointer-events: auto; cursor: move; }
-.image-lightbox.is-editable .seal-marker-adjustment-handle { position: absolute; z-index: 4; top: 50%; left: 50%; display: none; width: .25rem; height: .25rem; box-sizing: border-box; border: 1px solid #fff; border-radius: 50%; background: #d9485f; transform: translate(-50%, -50%) translate(var(--seal-handle-x), var(--seal-handle-y)); cursor: crosshair; touch-action: none; }
+.image-lightbox.is-editable .seal-marker-adjustment-handle { position: absolute; z-index: 4; top: 50%; left: 50%; display: none; width: .4rem; height: .4rem; box-sizing: border-box; border: 1px solid #fff; border-radius: 50%; background: #d9485f; transform: translate(-50%, -50%) translate(var(--seal-handle-x), var(--seal-handle-y)); cursor: crosshair; touch-action: none; }
 .image-lightbox.is-editable .seal-marker.selected .seal-marker-adjustment-handle { display: block; }
 .image-lightbox.is-editable .seal-marker.selected::before { border-color: #ffd166; }
 .image-lightbox.is-editable.is-seal-focused .seal-marker::before { border-color: transparent; }
