@@ -44,11 +44,11 @@
           "seals": [
             {
               "person": "Thomas von Rosenberg",
-              "position": "0.3500,0.7350",
+              "position": "0.3487,0.7351",
               "size": 0.04599999999999997,
-              "width": 0,
-              "wideningRotation": 0,
-              "rotation": 0,
+              "width": 0.208,
+              "wideningRotation": -25.9,
+              "rotation": -9.2,
               "type": "full"
             }
           ]

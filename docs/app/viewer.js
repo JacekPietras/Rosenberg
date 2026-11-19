@@ -712,7 +712,7 @@ function setupImageLightboxLegacy() {
     }
     sealTypeControls.forEach((control) => {
       control.disabled = !selected;
-      control.checked = Boolean(selected && sealTypeForSeal(selected) === control.value);
+      control.checked = Boolean(selected && (sealTypeForSeal(selected) || 'unknown') === control.value);
     });
   };
   const updateSelectedModifier = (property, value) => {
@@ -873,7 +873,10 @@ function setupImageLightboxLegacy() {
   sealTypeControls.forEach((control) => {
     control.addEventListener('change', () => {
       const seal = selectedIndex !== null ? currentSeals()[selectedIndex] : null;
-      if (seal && control.checked) seal.type = control.value;
+      if (seal && control.checked) {
+        if (control.value === 'unknown') delete seal.type;
+        else seal.type = control.value;
+      }
     });
   });
   lightboxAnnotations.addEventListener('pointerdown', (event) => {

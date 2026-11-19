@@ -37,13 +37,16 @@
               "position": "0.4264,0.8108",
               "size": 0.08699999999999998,
               "type": "full",
-              "rotation": -27
+              "rotation": -26.8,
+              "width": 0.183,
+              "wideningRotation": -9
             },
             {
               "person": "Thomas von Rosenberg",
               "position": "0.5393,0.7759",
               "size": 0.09800000000000002,
-              "type": "full"
+              "type": "full",
+              "rotation": 7
             }
           ]
         },

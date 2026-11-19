@@ -276,7 +276,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     const controls = $('#image-lightbox-seal-selected-controls'); const remove = $('#image-lightbox-remove-seal');
     if (controls) controls.hidden = !selected; if (remove) remove.hidden = !selected;
     const removeImage = $('#image-lightbox-remove-image'); if (removeImage) removeImage.hidden = Boolean(context?.entryImage);
-    document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => { input.disabled = !selected; input.checked = Boolean(selected && SEAL_TYPES.has(selected.type) && selected.type === input.value); });
+    document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => { input.disabled = !selected; input.checked = Boolean(selected && (SEAL_TYPES.has(selected.type) ? selected.type : 'unknown') === input.value); });
     if (collectionNavigation) collectionNavigation.hidden = !collectionLinks || collectionLinks.links.length < 2;
     if (collectionPosition) collectionPosition.textContent = collectionLinks ? `${collectionLinks.index + 1} / ${collectionLinks.links.length}` : '';
     if (cropButton) cropButton.hidden = !context?.path?.startsWith('data/documents/') || !currentRegions().some((region) => region?.name === 'text');
@@ -599,7 +599,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
-  document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => input.addEventListener('change', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal && input.checked) seal.type = input.value; }));
+  document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => input.addEventListener('change', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal && input.checked) { if (input.value === 'unknown') delete seal.type; else seal.type = input.value; } }));
   annotations.addEventListener('pointerdown', (event) => { const rotationHandle = event.target.closest('.seal-marker-rotation-handle'); if (context && rotationHandle) { startRotationDrag(event, Number(rotationHandle.closest('.seal-marker').dataset.sealIndex), rotationHandle.closest('.seal-marker')); return; } const handle = event.target.closest('.seal-marker-adjustment-handle'); if (context && handle) { startHandleDrag(event, Number(handle.closest('.seal-marker').dataset.sealIndex), handle); return; } const marker = event.target.closest('.seal-marker'); if (context && marker) startDrag(event, Number(marker.dataset.sealIndex), marker); }); annotations.addEventListener('pointermove', (event) => { updateHandleDrag(event); updateRotationDrag(event); moveDrag(event); }); annotations.addEventListener('pointerup', (event) => { endHandleDrag(event); endRotationDrag(event); endSealDrag(); }); annotations.addEventListener('pointercancel', (event) => { endHandleDrag(event); endRotationDrag(event); endSealDrag(); });
   regionOverlay?.addEventListener('pointerdown', (event) => {
     if (!regionMode || !regionOverlay.clientWidth || !regionOverlay.clientHeight) return;

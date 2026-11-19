@@ -70,15 +70,20 @@
           "seals": [
             {
               "person": "Eberhard von Rosenberg",
-              "position": "0.2310,0.6744",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.2279,0.6728",
+              "size": 0.073,
+              "type": "full",
+              "rotation": 7.9,
+              "width": 0.091,
+              "wideningRotation": 84.1
             },
             {
               "person": "?",
-              "position": "0.6520,0.6981",
-              "size": 0.08,
-              "type": "full"
+              "position": "0.6513,0.7013",
+              "size": 0.0715,
+              "type": "full",
+              "width": 0.058,
+              "wideningRotation": -82.2
             },
             {
               "person": "?",
