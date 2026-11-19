@@ -23,10 +23,10 @@
           "seals": [
             {
               "person": "vitztum_zu_Heidelberg",
-              "position": "0.4759,0.8361",
+              "position": "0.4770,0.8391",
               "size": 0.14400000000000004,
-              "width": 0,
-              "wideningRotation": 0,
+              "width": 0.055,
+              "wideningRotation": -83.1,
               "rotation": -16,
               "type": "swans"
             }

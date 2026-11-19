@@ -28,11 +28,11 @@
           "seals": [
             {
               "person": "Götz von Rosenberg",
-              "position": "0.3404,0.7806",
+              "position": "0.3398,0.7815",
               "size": 0.08,
-              "width": 0,
-              "wideningRotation": 0,
-              "rotation": 14,
+              "width": 0.096,
+              "wideningRotation": -60.4,
+              "rotation": 19.6,
               "type": "swans"
             }
           ]

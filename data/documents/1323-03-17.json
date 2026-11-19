@@ -101,10 +101,12 @@
             },
             {
               "person": "Eberhard von Uissigheim",
-              "position": "0.3957,0.6609",
+              "position": "0.3969,0.6625",
               "size": 0.08899999999999994,
               "type": "swans",
-              "rotation": 9
+              "rotation": 14.2,
+              "width": 0.045,
+              "wideningRotation": -49.4
             },
             {
               "person": "Eberhard von Rosenberg",

@@ -31,10 +31,10 @@
           "seals": [
             {
               "person": "Kraft von Uissigheim",
-              "position": "0.3917,0.8342",
+              "position": "0.3912,0.8342",
               "size": 0.0735,
-              "width": 0,
-              "wideningRotation": 0,
+              "width": 0.077,
+              "wideningRotation": -79.5,
               "rotation": 9,
               "type": "swans"
             }
