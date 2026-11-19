@@ -204,7 +204,7 @@ export function createSealScreen({
     const links = [...document.querySelectorAll('.seal-sidebar a')];
     const nameLinks = links.filter((link) => link.dataset.sealName);
     const targets = entries.map((_, index) => document.querySelector(`#seal-${index}`)).filter(Boolean);
-    if (!links.length || !targets.length) return;
+    if (!links.length) return;
     links.forEach((link) => link.addEventListener('click', (event) => {
       event.preventDefault();
       if (link.dataset.sealType) {
@@ -219,6 +219,7 @@ export function createSealScreen({
       savePreferences();
       rerender();
     }));
+    if (!targets.length) return;
     const update = () => {
       const marker = window.scrollY + 160;
       let current = 0;
