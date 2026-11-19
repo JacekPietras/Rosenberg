@@ -9,7 +9,10 @@
       "english": "King Maximilian announces that he has entrusted Count Erasmus von Wertheim with the enforcement of the imperial ban (Reichsacht) imposed on Georg von Rosenberg.",
       "mention": [
         {
-          "person": "Erasmus von Wertheim"
+          "person": "Erasmus von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "facts": [

@@ -54,7 +54,10 @@
           "person": "Reinhard von Helmstadt"
         },
         {
-          "person": "Reinhard von Sickingen"
+          "person": "Reinhard von Sickingen",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "rosenberg-town"
@@ -63,11 +66,15 @@
           "place": "sickingen"
         },
         {
-          "person": "Wilhelm von Waldeck"
+          "person": "Wilhelm von Waldeck",
+          "personTitle": [
+            "Burggraf"
+          ]
         },
         {
           "person": "Wiprecht von Helmstadt",
           "personTitle": [
+            "Vogt",
             "der Ältere"
           ]
         }

@@ -9,7 +9,10 @@
       "english": "Kunz von Rosenberg, Amtmann zu Röttingen and Reigelberg, to Rothenburg: Intercession for Lutz Kutterolf.",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "rothenburg"

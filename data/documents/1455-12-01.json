@@ -12,7 +12,10 @@
           "person": "Georg Mönch von Rosenberg"
         },
         {
-          "person": "Philipp von Katzenelnbogen"
+          "person": "Philipp von Katzenelnbogen",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ]
     }

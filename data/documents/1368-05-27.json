@@ -16,10 +16,16 @@
           "person": "Hans von Rosenberg"
         },
         {
-          "person": "Hans von Wertheim"
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
-          "person": "Heinrich von Schwarzburg"
+          "person": "Heinrich von Schwarzburg",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "leuchtenberg"

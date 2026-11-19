@@ -365,14 +365,14 @@ class ProbabilityModel:
     def person_names(self, people):
         return frozenset(self.names.key(value) for value in people)
 
-    def add_context(self, profile, source, bounds, people=(), places=(), self_names=()):
+    def add_context(self, profile, source, bounds, people=(), places=(), self_names=(), keys=()):
         if bounds is None:
             return
         evidence = (source, bounds)
         profile.refs[source.key] = source
         for place in places:
             profile.places.setdefault(('context', place), []).append(evidence)
-        for name in self.person_names(people) - set(self_names):
+        for name in (self.person_names(people) | set(keys)) - set(self_names):
             profile.associates.setdefault(name, []).append(evidence)
 
     def profile_age_penalty(self, profile):

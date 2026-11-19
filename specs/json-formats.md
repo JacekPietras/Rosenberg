@@ -107,7 +107,7 @@ support. An ID-like string that matches no ID is a warning.
 
 ## Generated `mention` lists
 
-Each entry carries an optional generated `mention` array. Items
+Each entry carries an optional generated `mention` array, which lists the people not already stated by the entry's facts, and places. Items
 are unique and sorted alphabetically; order carries no meaning:
 
 - `{"person": …, "personTitle": […]}`: a recognized person. `person` is the

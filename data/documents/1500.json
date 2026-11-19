@@ -19,7 +19,10 @@
       "english": "Volume 1\n\nContains: Instructions for the bailiff and cellar master at Siegen, [circa 1500]\nPermanent revenues of the bailiffs in the County of Diez, [circa 1500]\nDelivery of a clock from Oppenheim to Dillenburg Castle, 1528\nDiscontinuation of the count's household at Siegen, 1530\nAppointment of Georg von Rosenberg, Amtmann zu Hanau, 1530\nContract with Master Jost of Marburg regarding a stone trough for the castle well at Dillenburg, 1527",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
+          "person": "Georg von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "oppenheim"

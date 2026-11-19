@@ -31,7 +31,10 @@
           ]
         },
         {
-          "person": "Eberhard"
+          "person": "Eberhard",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "person": "Eberhard of Hirschhorn"
@@ -97,7 +100,10 @@
           "person": "Konrad of Hartheim"
         },
         {
-          "person": "Konrad Rüd"
+          "person": "Konrad Rüd",
+          "personTitle": [
+            "Burgrave"
+          ]
         },
         {
           "person": "Konrad Rüd of Wildenberg"

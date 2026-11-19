@@ -17,7 +17,10 @@
           "person": "Eberhard von Riedern"
         },
         {
-          "person": "Erkinger von Seinsheim"
+          "person": "Erkinger von Seinsheim",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
           "person": "Gotfried von Hohenlohe"

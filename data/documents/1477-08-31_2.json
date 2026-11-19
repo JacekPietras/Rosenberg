@@ -18,7 +18,10 @@
           "person": "Georg von Rosenberg"
         },
         {
-          "person": "Hans von Dottenheim"
+          "person": "Hans von Dottenheim",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "person": "Michael von Rosenberg"

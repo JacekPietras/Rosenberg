@@ -11,7 +11,10 @@
           "place": "boxberg"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "vogt"
+          ]
         },
         {
           "person": "Götz von Rosenberg"

@@ -14,7 +14,10 @@
           "person": "Eberhard Rüd"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "uissigheim"

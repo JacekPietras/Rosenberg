@@ -18,7 +18,10 @@
           "place": "aub"
         },
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "the Younger"
+          ]
         },
         {
           "place": "rosenberg-town"

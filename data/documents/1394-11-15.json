@@ -9,7 +9,10 @@
       "english": "Arnold von Rosenberg, Amtmann zu Ballenberg, reverses before Archbishop Konrad of Mainz.\n\nDate range: 1394 November 15",
       "mention": [
         {
-          "person": "Arnold von Rosenberg"
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         }
       ],
       "facts": [

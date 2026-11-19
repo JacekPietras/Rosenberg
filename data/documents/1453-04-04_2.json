@@ -12,7 +12,10 @@
           "person": "Engelhard von Thüngen"
         },
         {
-          "person": "Gotfried"
+          "person": "Gotfried",
+          "personTitle": [
+            "Bischof"
+          ]
         },
         {
           "person": "Gotfried of Würzburg",

@@ -12,7 +12,10 @@
           "person": "Friedrich von Fleckenstein"
         },
         {
-          "person": "Friedrich von Rosenberg"
+          "person": "Friedrich von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         }
       ],
       "facts": [

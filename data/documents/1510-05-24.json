@@ -36,7 +36,10 @@
           ]
         },
         {
-          "person": "Ludwig von Fleckenstein"
+          "person": "Ludwig von Fleckenstein",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "speyer"

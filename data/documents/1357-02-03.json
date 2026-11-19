@@ -14,7 +14,10 @@
           "place": "dertingen"
         },
         {
-          "person": "Eberhard"
+          "person": "Eberhard",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "person": "Margaretha von Thüngen"

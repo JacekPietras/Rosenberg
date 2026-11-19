@@ -9,7 +9,10 @@
       "english": "Jakob Presbyter von Rosenberg, obligates himself to deliver various properties to Prziecho, the pastor of Kirchschlag, over the next three years (lease).",
       "mention": [
         {
-          "person": "Jakob von Rosenberg"
+          "person": "Jakob von Rosenberg",
+          "personTitle": [
+            "Presbyter"
+          ]
         }
       ]
     }

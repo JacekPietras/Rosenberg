@@ -24,7 +24,10 @@
           "person": "Georg von Adelsheim"
         },
         {
-          "person": "Michael von Rieneck"
+          "person": "Michael von Rieneck",
+          "personTitle": [
+            "Voit"
+          ]
         },
         {
           "person": "Ruprecht Mönch von Rosenberg"

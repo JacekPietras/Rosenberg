@@ -11,7 +11,10 @@
           "person": "Eberhard von Neipperg"
         },
         {
-          "person": "Eberhard von Sickingen"
+          "person": "Eberhard von Sickingen",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "handschuhsheim"

@@ -18,19 +18,28 @@
           "place": "eubigheim"
         },
         {
-          "person": "Georg Truchsess of Baldersheim"
+          "person": "Georg Truchsess of Baldersheim",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "herrieden"
         },
         {
-          "person": "Leonhard von Rosenberg"
+          "person": "Leonhard von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "rothenburg"
         },
         {
-          "person": "Siegmund von Thüngen"
+          "person": "Siegmund von Thüngen",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "wurzburg"

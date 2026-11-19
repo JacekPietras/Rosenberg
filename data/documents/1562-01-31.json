@@ -18,7 +18,10 @@
           "person": "Hans of Bischofsheim"
         },
         {
-          "person": "Hans von Helmstatt"
+          "person": "Hans von Helmstatt",
+          "personTitle": [
+            "the Elder"
+          ]
         },
         {
           "place": "liebenstein-castle"

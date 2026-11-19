@@ -35,7 +35,10 @@
           "person": "Raban Truchsess"
         },
         {
-          "person": "Wilhelm von Dottenheim"
+          "person": "Wilhelm von Dottenheim",
+          "personTitle": [
+            "der Junge"
+          ]
         }
       ],
       "facts": [

@@ -13,7 +13,10 @@
           "person": "Heinrich von Neuhaus"
         },
         {
-          "person": "Heinrich von Schwarzburg"
+          "person": "Heinrich von Schwarzburg",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "rosenberg-town"

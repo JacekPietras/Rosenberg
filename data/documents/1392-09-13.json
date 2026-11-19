@@ -12,7 +12,10 @@
       "english": "Ruprecht owes Konrad von Rosenberg, Vitztum zu Heidelberg, and his wife Margaretha von Hirschhorn 810 guilders from Ruprecht I, for which the same Minneberg von Kunz Mönch, bailiff zu Steinsberg, was redeemed, 1000 guilders, which the Count Palatine gave to Rosenberg's daughter, and 1000 guilders for himself, altogether 2810 guilders, for which Minneberg remains as collateral.",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitztum"
+          ]
         },
         {
           "person": "Kunz Mönch"

@@ -9,7 +9,10 @@
       "english": "Altman Kemnater, Landrichter at Lengfeld, confirms to Abbess Anna of Pülnhofen a court letter of Konrad von Rosenberg, Vizthum zu Amberg (dated the Monday before St. Catherine's day 1379), according to which she had established by pursuit, inquiry and judgment that she shall have justice done by her officials in the Landschrann at Lengfeld in minor matters, for his (the Rosenberger's) gracious lord, in respect of his great rights, and that she shall for this be protected by an official at Lengfeld. Given at Kallmünz on the Monday after the solstice (Sunbenden). (With 1 seal.)",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vizthum"
+          ]
         },
         {
           "place": "rosenberg-town"

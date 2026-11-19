@@ -30,13 +30,19 @@
           ]
         },
         {
-          "person": "Kunz Mönch von Rosenberg"
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "person": "Reinhard von Sickingen"
         },
         {
-          "person": "Wiprecht von Helmstadt"
+          "person": "Wiprecht von Helmstadt",
+          "personTitle": [
+            "Vogt"
+          ]
         }
       ],
       "facts": [

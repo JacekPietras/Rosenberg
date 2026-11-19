@@ -11,7 +11,10 @@
       "english": "Kunz Mönch von Rosenberg, Vogt zu Steinsberg, witnesses a settlement between Hans von Sachsenheim and others.",
       "mention": [
         {
-          "person": "Kunz Mönch von Rosenberg"
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         }
       ],
       "facts": [

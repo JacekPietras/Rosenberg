@@ -30,7 +30,7 @@ repeated extraction adds nothing. The probabilities are uncalibrated.
 | Rank (`Ritter`, `Edelknecht`) | 0.75 | 20 | Never enough on its own |
 | Other epithet (`Rufus`) | 1 | 15 | |
 | Place | 2 | 20 | A `place` item of the entry's or fact's `mention` list, including the document's place |
-| Same-fact associate | 2 | 15 | A `person` item of the same `mention` list; total capped at 4 |
+| Entry associate | 2 | 15 | Another person of the same entry's company, using names only (never titles); total capped at 4 |
 | Family | see below | 35 | Total capped at 16 |
 
 Titles are compared by meaning: equivalents from `data/titles-age.md` and `data/titles-office.md`, place

@@ -11,7 +11,10 @@
           "place": "bischofsheim"
         },
         {
-          "person": "Engelhard von Rosenberg"
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         }
       ],
       "facts": [

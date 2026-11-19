@@ -9,7 +9,10 @@
       "english": "The brothers Ludwig and Jakob von Fleckenstein, one Palatine grand court master, the other Vogt von Germersheim, Hans von Helmstadt, Amtmann in Bischofhohenburg [?], and Balthasar von Rosenberg, Amtmann zu Lauterbourg, reach a settlement regarding the estate of their brother-in-law Hans von Ingelheim.\n\nDuration: January 9, 1525",
       "mention": [
         {
-          "person": "Balthasar von Rosenberg"
+          "person": "Balthasar von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "person": "Hans von Helmstadt",

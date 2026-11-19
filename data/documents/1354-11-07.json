@@ -8,7 +8,10 @@
       "english": "Archbishop Gerlach (of Nassau) of Mainz hands over the house and office of Wildenberg to Konrad Rüdt of Collenberg, burgrave zu Starkenburg, until he (Konrad) has received the 700 guilders for which he has redeemed the people and goods in the Odenwald that had been pledged to Eberhard von Rosenberg by the Mainz monastery.",
       "mention": [
         {
-          "person": "Konrad Rüd of Collenberg"
+          "person": "Konrad Rüd of Collenberg",
+          "personTitle": [
+            "burgrave"
+          ]
         },
         {
           "place": "wildenberg-castle"

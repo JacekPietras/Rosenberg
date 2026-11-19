@@ -12,7 +12,10 @@
       "english": "Eberhard von Rosenberg, Ritter, Vogt zu Dürn, testifies that he, together with Heinrich Bavar, notary of the lord of Mainz, and his other friends, on the day of the hearing on behalf of the lord of Mainz with Ruprecht, duke of Bavaria, in Bensheim, had spent 30 Hallenses shillings, to be paid by Jacob, the cellarer in Starkenberg. Given at Bensheim on the Tuesday after the day of the beheading of John the Baptist.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         }
       ],
       "facts": [
@@ -45,6 +48,7 @@
         {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
+            "Vogt",
             "knight"
           ]
         }

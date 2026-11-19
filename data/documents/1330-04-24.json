@@ -16,7 +16,10 @@
           "place": "comburg-stiftskirche"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "nagelsberg-castle"

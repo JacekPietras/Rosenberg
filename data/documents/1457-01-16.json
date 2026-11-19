@@ -9,7 +9,10 @@
       "english": "Georg von Rosenberg, Amtmann zu Bischofsheim, on behalf of his lord the Archbishop of Mainz, grants safe conduct to the Nuremberg merchant community for the Lenten fair in Frankfurt.",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
+          "person": "Georg von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "nuremberg"

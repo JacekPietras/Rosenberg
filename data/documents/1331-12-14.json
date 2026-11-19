@@ -17,7 +17,10 @@
           "place": "buchen"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "hohenlohe"

@@ -24,10 +24,16 @@
           "person": "Hans von Hirschhorn"
         },
         {
-          "person": "Kunz Mönch"
+          "person": "Kunz Mönch",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
-          "person": "Kunz Mönch von Rosenberg"
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         }
       ],
       "facts": [

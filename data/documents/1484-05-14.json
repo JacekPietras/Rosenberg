@@ -15,7 +15,10 @@
           "person": "Ludwig Mönch von Rosenberg"
         },
         {
-          "person": "Rudolf von Würzburg"
+          "person": "Rudolf von Würzburg",
+          "personTitle": [
+            "Bischof"
+          ]
         },
         {
           "place": "wurzburg"

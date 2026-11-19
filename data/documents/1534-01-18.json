@@ -27,7 +27,10 @@
           "place": "schweigern"
         },
         {
-          "person": "Sebastian Geyer von Giebelstadt"
+          "person": "Sebastian Geyer von Giebelstadt",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "person": "Siegmund Truchsess"

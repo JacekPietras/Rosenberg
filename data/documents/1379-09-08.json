@@ -9,7 +9,10 @@
       "english": "Philipp der Entzendorfer, imprisoned by Count Heinrich of Schaunberg, issues a treaty of peace upon his release through the intercession of Bishop Albert of Passau, the Lords of Rosenberg and others.",
       "mention": [
         {
-          "person": "Heinrich"
+          "person": "Heinrich",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "person": "Heinrich of Schaunberg"

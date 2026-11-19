@@ -143,7 +143,10 @@
           "person": "Konrad Schenk von Erbach"
         },
         {
-          "person": "Konrad von Weinsberg"
+          "person": "Konrad von Weinsberg",
+          "personTitle": [
+            "der Ältere"
+          ]
         },
         {
           "person": "Reinhard von Sickingen"

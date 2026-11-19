@@ -9,7 +9,10 @@
       "english": "Hans von Rosenberg, Schultheiß zu Nuremberg, and the city's aldermen recorded that Albrecht Bernolt had sold his cousin Kungund, daughter of Künn Holdolin, represented by Heinrich Gewichtmacher, a meadow behind Gostenhof at Espan and an estate at Hetzels. The sale stipulated that her mother could enjoy the properties for life. Wernherr Lemblein and Seitz Vogel witnessed the deed; the court sealed it.",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Schultheiß"
+          ]
         },
         {
           "place": "nuremberg"

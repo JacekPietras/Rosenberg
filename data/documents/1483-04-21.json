@@ -9,7 +9,10 @@
       "english": "Philipp, Kurfürst von der Pfalz, takes Hans Mönch von Rosenberg, Domherr zu Mainz, under his protection until revoked. The issuer promises to protect Hans and to deal justly with him wherever he is satisfied with legal proceedings before the Count Palatine, his Hofrichter and councillors, or wherever the prince lawfully refers a matter. The issuer instructs his senior and junior officials and his people to observe and secure this protection, for which Hans is to deliver one measure of salt to the court at Heidelberg each year on St. George’s Day [23 April].\n\nTerm: 21 April 1483 (Monday after Jubilate Sunday).\n\nSealer: Philipp, Kurfürst von der Pfalz (secret seal).",
       "mention": [
         {
-          "person": "Hans Mönch von Rosenberg"
+          "person": "Hans Mönch von Rosenberg",
+          "personTitle": [
+            "Domherr"
+          ]
         },
         {
           "place": "heidelberg"

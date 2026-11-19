@@ -12,7 +12,10 @@
           "place": "bartenstein"
         },
         {
-          "person": "Kunz von Rosenberg"
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ]
         },
         {
           "place": "rosenberg-town"

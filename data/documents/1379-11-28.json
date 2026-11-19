@@ -77,7 +77,10 @@
           "place": "helmstadt"
         },
         {
-          "person": "Kunz Mönch von Rosenberg"
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "michelfeld"

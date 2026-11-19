@@ -18,7 +18,10 @@
           "person": "Peter Mönch von Rosenberg"
         },
         {
-          "person": "Raban von Speyer"
+          "person": "Raban von Speyer",
+          "personTitle": [
+            "Bischof"
+          ]
         },
         {
           "place": "speyer"

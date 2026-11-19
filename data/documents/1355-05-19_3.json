@@ -10,7 +10,10 @@
       "english": "Charles IV grants exemption from tolls to those who travel to Perugia for the studium generale.\n\nWitnesses: Ernst, Erzbischof von Prag; Johann, Bischof von Olmütz; Johann, Bischof von Leitomischl; Marquard, Bischof von Augsburg; Gerhard, Bischof von Speyer; Johann, Bischof von Spoleto; Prothiva, Bischof von Zengg; Nikolaus, Herzog von Troppau; Bolko, Herzog von Falkenberg; Johann, Markgraf von Montferrat; Burkhard, Burggraf von Magdeburg; Fenzio, Markgraf von Prato; Bernhard von Cimburg; Hans von Rosenberg; Sdenko von Sternberg.",
       "mention": [
         {
-          "person": "Gerhard von Speyer"
+          "person": "Gerhard von Speyer",
+          "personTitle": [
+            "Bischof"
+          ]
         },
         {
           "person": "Hans von Rosenberg"

@@ -18,12 +18,16 @@
           "person": "Friedrich von Hutten"
         },
         {
-          "person": "Gotfried"
+          "person": "Gotfried",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "person": "Götz von Rieneck",
           "personTitle": [
-            "Ritter"
+            "Ritter",
+            "Vogt"
           ]
         },
         {

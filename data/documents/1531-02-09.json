@@ -12,7 +12,10 @@
           "person": "Balthasar von Rosenberg"
         },
         {
-          "person": "Hans von Helmstadt"
+          "person": "Hans von Helmstadt",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "person": "Katharina von Helmstatt"
@@ -30,7 +33,10 @@
           ]
         },
         {
-          "person": "Philipp von Liebenstein"
+          "person": "Philipp von Liebenstein",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "speyer"

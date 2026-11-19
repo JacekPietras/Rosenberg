@@ -9,7 +9,10 @@
       "english": "Hans von Rosenberg, Schultheiß zu Nuremberg, and the city's aldermen issued a court record concerning Ulrich Pewrl's sale to Herman Stör of his rights in the Altenlach wood near Lindelberg and its associated fields. Merkel Pewrl, Cunz Pewrl, Ullrin Pesolt, and Fritz Hailner of Swertembach consented. Heinrich Hutten and Herman Kepfen were court witnesses; the Nuremberg court sealed the record.",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Schultheiß"
+          ]
         },
         {
           "person": "Heinrich Hutten"

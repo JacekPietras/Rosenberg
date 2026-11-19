@@ -52,10 +52,14 @@ merge pairwise.
 ## Prose context
 
 Prose is not turned into relationships, and the algorithm does not read prose.
-The `mention` list generated for an entry or a fact lists its people and
-places. A `person` item attaches that text's places and associates to a person
-when it resolves to exactly one same-name mention of the passage with an
-overlapping date. An informative prose-only name (one whose places and
+The `mention` list generated for an entry lists the people it names beyond
+its facts' participants, and its places. The entry's company is those people
+united with the typed participants (`person`, `of`) of its facts and, in the
+with-guesses view, guesses. Every typed participant gets the entry's places and
+the rest of the company as associates, except the other participant of its own
+relation fact (already family evidence) and except when the passage holds
+several same-name people with overlapping dates, since their company cannot be
+told apart. An informative prose-only name (one whose places and
 associates could reach the merge threshold) becomes a context mention: it can
 join identities but never creates a family edge. Registry IDs are read only
 from typed fields.

@@ -12,13 +12,19 @@
           "person": "Eberhard Schenk"
         },
         {
-          "person": "Gotfried"
+          "person": "Gotfried",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "person": "Gotfried von Rieneck"
         },
         {
-          "person": "Hans"
+          "person": "Hans",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "person": "Hans von Wertheim"

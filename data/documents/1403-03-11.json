@@ -19,7 +19,10 @@
           "person": "Eberhard vom Hirschhorn"
         },
         {
-          "person": "Eberhard von Sickingen"
+          "person": "Eberhard von Sickingen",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "person": "Hans vom Hirschhorn"
@@ -40,7 +43,10 @@
           ]
         },
         {
-          "person": "Kunz Mönch von Rosenberg"
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "nuremberg"
@@ -52,7 +58,10 @@
           ]
         },
         {
-          "person": "Reinhard von Sickingen"
+          "person": "Reinhard von Sickingen",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "sickingen"
@@ -60,6 +69,7 @@
         {
           "person": "Wiprecht von Helmstadt",
           "personTitle": [
+            "Vogt",
             "der Ältere"
           ]
         }

@@ -76,6 +76,10 @@ function mergePeople(items) {
   return [...merged, ...others];
 }
 
+const innerTitle = knownTitles.length
+  ? new RegExp(`(?<=\\p{L}[\\s,;]+)(${knownTitles.map(escape).join('|')})(?=[\\s,;]+(?:von|v\\.|van|de|zu|vom)\\s)`, 'giu') : null;
+const innerTitles = (text) => (innerTitle ? [...text.matchAll(innerTitle)].map((match) => match[1]) : []);
+
 function surfaceTitles(text) {
   const titles = [];
   let rest = text;
@@ -83,7 +87,8 @@ function surfaceTitles(text) {
     titles.push(match[1]);
     rest = rest.slice(match[0].length);
   }
-  return [...titles, ...splitPersonNameTitles(rest, titleText).titles];
+  const trailing = splitPersonNameTitles(rest, titleText);
+  return [...titles, ...innerTitles(trailing.name ?? rest), ...trailing.titles];
 }
 
 function recognizePeople(text) {

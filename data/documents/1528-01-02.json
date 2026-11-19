@@ -9,7 +9,10 @@
       "english": "Rothenburg to Kunz von Rosenberg, Amtmann zu Röttingen und Raigelberg: debts of Rothenburg citizens in Röttingen incurred during the Peasants' War.",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "roettingen"

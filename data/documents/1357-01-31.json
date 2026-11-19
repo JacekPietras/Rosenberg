@@ -13,7 +13,10 @@
           "place": "buchen"
         },
         {
-          "person": "Eberhard"
+          "person": "Eberhard",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "lauda"

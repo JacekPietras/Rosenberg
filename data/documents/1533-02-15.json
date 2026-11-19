@@ -12,7 +12,10 @@
           "person": "Balthasar von Rosenberg"
         },
         {
-          "person": "Hans von Helmstadt"
+          "person": "Hans von Helmstadt",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "helmstadt"

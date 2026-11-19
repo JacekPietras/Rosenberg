@@ -15,7 +15,10 @@
           "person": "Hans von Hohenlohe"
         },
         {
-          "person": "Leonhard von Rosenberg"
+          "person": "Leonhard von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "schloss-haltenbergstetten"

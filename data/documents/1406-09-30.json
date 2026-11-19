@@ -83,7 +83,10 @@
           "place": "weinsberg"
         },
         {
-          "person": "Wiprecht von Helmstadt"
+          "person": "Wiprecht von Helmstadt",
+          "personTitle": [
+            "Vogt"
+          ]
         }
       ]
     }

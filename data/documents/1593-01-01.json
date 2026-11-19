@@ -15,10 +15,16 @@
           "person": "Georg Wolf von Hartheim"
         },
         {
-          "person": "Hans Christoph von Rieneck"
+          "person": "Hans Christoph von Rieneck",
+          "personTitle": [
+            "Voit"
+          ]
         },
         {
-          "person": "Hans von Rieneck"
+          "person": "Hans von Rieneck",
+          "personTitle": [
+            "Voit"
+          ]
         },
         {
           "place": "hartheim"

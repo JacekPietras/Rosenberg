@@ -17,7 +17,16 @@
           "place": "dienstadt"
         },
         {
-          "person": "Eberhard"
+          "person": "Eberhard",
+          "personTitle": [
+            "Vogt"
+          ]
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "person": "Engelhard von Rosenberg"
@@ -29,7 +38,10 @@
           ]
         },
         {
-          "person": "Hans"
+          "person": "Hans",
+          "personTitle": [
+            "Domherr"
+          ]
         },
         {
           "person": "Ludwig called Mönch"

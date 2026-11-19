@@ -12,7 +12,10 @@
       "english": "Eglolf the Elder von Rosenberg promises Abbot Wilhelm of St. Gallen, upon payment of 50 marks and 6 pounds, to return the Gossau estate and the Sonderleute in the Amt Gossau that were pledged to him.\n\nSeal: Seal attached, Fig. 106.",
       "mention": [
         {
-          "person": "Egilolf von Rosenberg"
+          "person": "Egilolf von Rosenberg",
+          "personTitle": [
+            "the Elder"
+          ]
         }
       ],
       "img": [

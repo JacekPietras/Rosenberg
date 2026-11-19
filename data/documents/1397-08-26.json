@@ -15,7 +15,10 @@
           "place": "heidelberg"
         },
         {
-          "person": "Kunz Mönch von Rosenberg"
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "speyer"

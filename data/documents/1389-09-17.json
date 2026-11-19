@@ -14,7 +14,10 @@
           "place": "boennigheim"
         },
         {
-          "person": "Kunz Mönch von Rosenberg"
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         }
       ],
       "facts": [

@@ -18,7 +18,10 @@
           "person": "Friedrich Zobel"
         },
         {
-          "person": "Hans"
+          "person": "Hans",
+          "personTitle": [
+            "Schultheiß"
+          ]
         },
         {
           "person": "Hans of Würzburg",

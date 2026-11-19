@@ -12,10 +12,16 @@
           "place": "rosenberg-town"
         },
         {
-          "person": "Sebastian Geyer von Giebelstadt"
+          "person": "Sebastian Geyer von Giebelstadt",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
-          "person": "Stephan Zobel von Giebelstadt"
+          "person": "Stephan Zobel von Giebelstadt",
+          "personTitle": [
+            "Amtmann"
+          ]
         }
       ],
       "facts": [

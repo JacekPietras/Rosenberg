@@ -11,7 +11,10 @@
       "english": "The Minneburg is held in pledge by Kunz Mönch von Rosenberg, Vogt zu Steinsberg.",
       "mention": [
         {
-          "person": "Kunz Mönch von Rosenberg"
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "minneburg"

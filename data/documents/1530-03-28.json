@@ -9,7 +9,10 @@
       "english": "MASSENHEIMER Land Book (Stone Book) No. 2 (1530)\n\nContains: Certification notes: Named mention of the Schultheiß Hans Peter of Massenheim as well as the sworn land surveyors and stone markers etc. Sealed by the seal of Georg von Rosenberg, Amtmann zu Hanau.",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
+          "person": "Georg von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         }
       ],
       "facts": [

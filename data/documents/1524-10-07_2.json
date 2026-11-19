@@ -9,7 +9,10 @@
       "english": "Ludwig von Fleckenstein, Palatine court master, and his wife Ursula, née von Ingelheim, his brother Jakob, Vogt (reeve) of Germersheim, and his wife Barbara, née von Ingelheim, Balthasar von Rosenberg, Amtmann zu Lauterburg, and his wife Attela, née von Ingelheim, as well as Hans von Helmstadt, Amtmann zu Bischofshomburg, and his wife Elisabeth, née von Ingelheim, divide the inheritance of Hans von Ingelheim and his wife Margarete, née von Handschuhsheim, following their deaths. The Fleckenstein branch receives Ruppersburg Castle, the Helmstatt branch receives the estates at Handschuhsheim, and the Rosenberg branch receives those at Neustadt an der Hardt, each with the respective appurtenances mentioned. Seals: Ludwig and Jakob von Fleckenstein, Balthasar von Rosenberg, Hans von Helmstadt. Signatures: their wives.\n\nDuration: 1524 (October 7, 1524 - Friday before Remigius)",
       "mention": [
         {
-          "person": "Balthasar von Rosenberg"
+          "person": "Balthasar von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "fleckenstein"
@@ -18,7 +21,10 @@
           "place": "handschuhsheim"
         },
         {
-          "person": "Hans von Helmstadt"
+          "person": "Hans von Helmstadt",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "helmstadt"

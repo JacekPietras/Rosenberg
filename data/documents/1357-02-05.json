@@ -9,11 +9,15 @@
       "english": "Friedrich Voit von Rosenberg and his wife Lanet, with the consent of his mother Elisabeth and her granddaughter Elisabeth, sold Erhart Löhlein of Sulzbach two allodial hides at Eckertsfeld for 42 pounds and 21 florins. The tenants were Prayt and Pühler. Konrad Lengenfelder von Rosenberg, Herwig der Oerlheimer of Oerelheim, and Georg Voit von Rosenberg der Jüngere stood surety at Sulzbach.",
       "mention": [
         {
-          "person": "Friedrich von Rosenberg"
+          "person": "Friedrich von Rosenberg",
+          "personTitle": [
+            "Voit"
+          ]
         },
         {
           "person": "Georg von Rosenberg",
           "personTitle": [
+            "Voit",
             "der Jüngere"
           ]
         },
@@ -30,13 +34,26 @@
       "english": "I, Friedrich Voit von Rosenberg, and Frau Lanet, my lawful wife, and all our heirs declare and make publicly known with this charter to all who see, hear or read it that we, with deliberate mind and the counsel of friends, and also with the will and consent of my dear lady and mother, Frau Elisabeth Voit von Rosenberg, and of Jungfrau Elisabeth, her granddaughter, have sold: to the honourable man Erhart Löhlein of Sulzbach, his lawful wife and all their heirs, our two hides at Eckersfeld, which are free allodial property and on which Prayt and Pühler are at present settled, for forty-two pounds of Haller and twenty-one gulden, which they have already paid and delivered to us in full. We have also given them the aforesaid hides with all uses, rights, customs and appurtenances, wood, field, fields, meadows, water, pasture, stumps and stones, sought and unsought, however named, as we held them and as they came to us until now. We shall also warrant and defend the aforesaid hides in every place, rightfully, against whomever and however often they are challenged, as is the law of allodial property and according to the law of the land, without their loss and without deceit. And for this we have given them as sureties, bound jointly with us, the honourable men and our dear friends Konrad Lengenfelder von Rosenberg, Herwig the Örlheimer of Örlheim, and Georg Voit von Rosenberg den Jungen, on the condition that if any breach of the aforesaid property occurred in one or more articles as written above, they have full power to summon our aforesaid sureties to perform the obligation (Leistung), etc. So that all this remains firm, whole and unbroken, we give them this open charter sealed with the seal of me, the aforesaid Friedrich Voyt, and with the seals of our aforesaid sureties hanging from it. Given on the next Sunday before the day of St. Dorothea the holy virgin, after Christ's birth thirteen hundred and in the fifty-seventh year. (Three seals.)",
       "mention": [
         {
-          "person": "Elisabeth von Rosenberg"
+          "person": "Elisabeth von Rosenberg",
+          "personTitle": [
+            "Voit"
+          ]
         },
         {
           "person": "Friedrich"
         },
         {
-          "person": "Georg von Rosenberg"
+          "person": "Friedrich von Rosenberg",
+          "personTitle": [
+            "Voit",
+            "Voyt"
+          ]
+        },
+        {
+          "person": "Georg von Rosenberg",
+          "personTitle": [
+            "Voit"
+          ]
         },
         {
           "person": "Konrad Lengenfelder von Rosenberg"

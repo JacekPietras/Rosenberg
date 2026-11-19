@@ -567,7 +567,10 @@
           "place": "bronnbach"
         },
         {
-          "person": "Michael von Rineck"
+          "person": "Michael von Rineck",
+          "personTitle": [
+            "Voit"
+          ]
         },
         {
           "place": "rieneck"

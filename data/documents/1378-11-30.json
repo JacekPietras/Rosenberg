@@ -9,7 +9,10 @@
       "english": "Ott der Aderzhauser of Lengenfeld acknowledges receipt of 24 pounds of Regensburg pennies, which were paid to him by Konrad von Rosenberg, Vizdom zu Amberg, for the damages he suffered on behalf of Duke Ruprecht. Dated the same day. (With seal.)",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vizdom"
+          ]
         }
       ],
       "facts": [

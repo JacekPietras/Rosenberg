@@ -29,7 +29,10 @@
           "place": "heidelberg"
         },
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vitztum"
+          ]
         },
         {
           "place": "wertheim-stiftskirche"

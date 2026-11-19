@@ -20,7 +20,10 @@
           "place": "jagstberg"
         },
         {
-          "person": "Ulrich von Rosenberg"
+          "person": "Ulrich von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         }
       ],
       "facts": [

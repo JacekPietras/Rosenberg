@@ -9,7 +9,10 @@
       "english": "Kunz von Rosenberg, Amtmann zu Röttingen and Reigelberg, to Rothenburg: on the same matter as fol. 284.",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
         },
         {
           "place": "rothenburg"

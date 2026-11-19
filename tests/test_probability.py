@@ -219,7 +219,7 @@ class ProbabilityTests(unittest.TestCase):
                                  [context_fact('Alex von South held property at North.', *alex_mention({'place': 'north'}))])
         graph = build(inputs).evidence_graph
         self.assertEqual(1, len([n for n in graph['nodes'] if n['name'] == 'Alex von South']))
-        self.assertEqual(2, graph['contextCoverage']['attached'])
+        self.assertEqual(2, graph['contextCoverage']['total'])
 
     def test_generic_subject_and_context_count_once_and_preserve_deceased_status(self):
         facts = [{'type': 'parent', 'person': 'a', 'of': 'Bea', 'personDeceased': True},

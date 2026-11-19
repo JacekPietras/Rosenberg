@@ -9,7 +9,10 @@
       "english": "Prziecho, pastor of Kirchschlag, confirms having received the contractual properties from the Jakob Presbyter von Rosenberg.",
       "mention": [
         {
-          "person": "Jakob von Rosenberg"
+          "person": "Jakob von Rosenberg",
+          "personTitle": [
+            "Presbyter"
+          ]
         }
       ]
     }

@@ -78,6 +78,13 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     for mention in mentions.values():
         key = passage_key(mention.assertion.source)
         typed_scopes[key].append(mention)
+    # The company of an entry: its typed participants and the extra people its
+    # mention list names. Everyone in it is a co-mention of everyone else.
+    company = defaultdict(set)
+    for passage, scoped in typed_scopes.items():
+        company[passage] |= {names.key(registry[m.reference]['name'] if m.reference in registry else m.reference) for m in scoped}
+    for observation in observations:
+        company[passage_key(observation.source)] |= model.person_names(observation.people)
     context_handles = defaultdict(list)
     required = math.log(model.settings['mergeProbability'] / (1 - model.settings['mergeProbability'])) - math.log(model.settings['priorProbability'] / (1 - model.settings['priorProbability']))
     for observation in observations:
@@ -94,8 +101,8 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             if reference in registry:
                 continue
             profile = Profile([], [])
-            model.add_context(profile, observation.source, observation.bounds, observation.people, observation.places,
-                              self_names={normalized})
+            model.add_context(profile, observation.source, observation.bounds, (), observation.places,
+                              self_names={normalized}, keys=company[passage])
             places = {place: model.settings['placeWeight'] for _, place in profile.places}
             potential = (sum(places.values()) + min(model.settings['associateMaxWeight'], len(profile.associates) * model.settings['associateWeight'])) * reliability(observation.source, model.settings)
             if potential >= required:
@@ -808,10 +815,12 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                       for root, handles in current.items()}
         for root, profile in profiles.items():
             profile.refs.update(dependencies[root])
-        scope_mentions = defaultdict(list)
+        same_name = defaultdict(list)
+        for handle, mention in mentions.items():
+            if mention.field != 'text':
+                same_name[(passage_key(mention.assertion.source), mention_names[handle])].append(handle)
         for handle, mention in mentions.items():
             root = find(handle)
-            scope_mentions[(scope(mention)[:2], name(handle))].append((handle, mention))
             profile = profiles[root]
             ref, bounds = mention.assertion.source, mention.assertion.bounds
             profile.refs[ref.key] = ref
@@ -822,7 +831,13 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 category = title_category(title, names)
                 attested = retrospective(mention) or bounds
                 profile.titles.setdefault(category, []).append((ref, attested))
-            model.add_context(profile, ref, bounds, (), mention.assertion.context.get('places', ()), self_names=(name(handle),))
+            if mention.field != 'text':
+                partners = {mention_names[other.handle] for other in mention.assertion.mentions if other.handle != handle}
+                # Namesakes of one passage cannot tell whose company is whose.
+                namesakes = {find(h) for h in same_name[(passage_key(ref), mention_names[handle])]
+                             if max(mentions[h].assertion.bounds[0], bounds[0]) <= min(mentions[h].assertion.bounds[1], bounds[1])}
+                model.add_context(profile, ref, bounds, (), mention.assertion.context.get('places', ()),
+                                  self_names={name(handle), *partners}, keys=company[passage_key(ref)] if len(namesakes) == 1 else ())
         context_coverage = {'total': len(observations), 'attached': 0, 'undated': 0, 'unattached': 0}
         for observation in observations:
             if not observation or observation.bounds is None:
@@ -830,17 +845,9 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 continue
             passage = passage_key(observation.source)
             attached = {find(handle) for handle in context_handles[observation.source.key]}
-            found = model.person_names(observation.people)
-            for person_name in sorted(found):
-                # Match date intervals, not ISO spelling: 1393 and 1393-05-01
-                # may refer to the same passage participant.
-                candidates = {find(h) for h, m in scope_mentions[(passage, person_name)]
-                              if max(m.assertion.bounds[0], observation.bounds[0]) <= min(m.assertion.bounds[1], observation.bounds[1])}
-                if len(candidates) == 1:
-                    attached.update(candidates)
             for root in sorted(attached):
-                model.add_context(profiles[root], observation.source, observation.bounds, observation.people, observation.places,
-                                  self_names={root_names[root]})
+                model.add_context(profiles[root], observation.source, observation.bounds, (), observation.places,
+                                  self_names={root_names[root]}, keys=company[passage])
             context_coverage['attached' if attached else 'unattached'] += 1
         parents = defaultdict(lambda: defaultdict(list))
         def relative(profile_root, relative_root, role, source_assertions, relative_confidence=1.0, context_refs=()):
