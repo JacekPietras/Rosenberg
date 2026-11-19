@@ -38,7 +38,7 @@ or between the given names and the particle:
 | Part | Rule |
 | --- | --- |
 | Given names | One or more canonical forms from `data/names.md` under `# Men` or `# Women` (`Conradus` → `Konrad`) |
-| By-names | Forms in `data/by-names.md` are never given names. When a listed form directly precedes a Rosenberg particle-place name, it joins that name into the family name: `Hans Schenk von Rosenberg` has given name `Hans` and family name `Schenk von Rosenberg`. A following `zu <place>` is ordinarily a title/place designation, not part of that family name. |
+| By-names | Forms in `data/by-names.md` are never given names. When a listed form directly precedes a Rosenberg particle-place name, it joins that name into the family name: `Hans Schenk von Rosenberg` has given name `Hans` and family name `Schenk von Rosenberg`. A following `zu <place>` is ordinarily a title/place designation, not part of that family name. A by-name that is also a title word (`Voit`, `Voyt`) is a by-name there, never the title `Vogt`: `Friedrich Voit von Rosenberg` is not `Friedrich von Rosenberg, Vogt`. |
 | Ordinal | Optional roman number after the given names: `II`, `(II)`, `[II]`, `II.` |
 | Particle | `von`, `de`, `v.`, `van` … from `data/nobiliary_particles.md`, as the source has it; `v.` and `von.` become `von` |
 | Place | A canonical place variation from `list_place_variations.py` (`Ussinkeim` → `Uissigheim`) |

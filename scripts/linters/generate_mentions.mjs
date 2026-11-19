@@ -79,7 +79,10 @@ function mergePeople(items) {
 
 const innerTitle = knownTitles.length
   ? new RegExp(`(?<=\\p{L}[\\s,;]+)(${knownTitles.map(escape).join('|')})(?=[\\s,;]+(?:von|v\\.|van|de|zu|vom)\\s)`, 'giu') : null;
-const innerTitles = (text) => (innerTitle ? [...text.matchAll(innerTitle)].map((match) => match[1]) : []);
+const byNameForms = new Set(parsePersonNameTitles(await read('data/by-names.md').then((text) => text.split(/\r?\n/)
+  .filter((line) => !line.trim().startsWith('#')).join('\n'))).map((form) => form.toLowerCase()));
+const innerTitles = (text) => (innerTitle ? [...text.matchAll(innerTitle)].map((match) => match[1])
+  .filter((title) => !byNameForms.has(title.toLowerCase())) : []);
 
 function surfaceTitles(text) {
   const titles = [];

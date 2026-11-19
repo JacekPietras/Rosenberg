@@ -460,3 +460,15 @@ test('does not attach Rudolf von Rosenberg to the preceding unrelated names', ()
     projectNames, byNames, places), []);
 });
 
+
+test('a by-name that is also a title stays in the family name', async () => {
+  const officeTitles = `${titles}\n${await readFile(new URL('../data/titles-office.md', import.meta.url), 'utf8')}`;
+  const voitByNames = `${byNames}\nVoit, Voyt`;
+  const voitPattern = buildSourcePersonPattern(projectNames, particles, places, officeTitles, connectors, voitByNames);
+  const routes = (text) => findPersonNameMentions(text, officeTitles, connectors, particles, projectNames, voitByNames, places, voitPattern)
+    .singles.map((single) => single.route);
+  assert.deepEqual(routes('Friedrich Voit von Rosenberg'), ['Friedrich Voit von Rosenberg']);
+  assert.deepEqual(routes('Georg Voit von Rosenberg der Jüngere'), ['Georg Voit von Rosenberg']);
+  assert.deepEqual(routes('Hans Voit zu Rosenberg'), ['Hans Voit von Rosenberg']);
+  assert.deepEqual(routes('Arnold von Rosenberg, Vogt'), ['Arnold von Rosenberg']);
+});

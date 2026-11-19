@@ -1964,10 +1964,7 @@
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "spouse",
-          "of": "Margaretha von Symau",
-          "ofTitle": [
-            "Schenk"
-          ],
+          "of": "Margaretha Schenk von Symau",
           "date": "1582-09-15"
         },
         {
@@ -2009,10 +2006,7 @@
           "date": "1565-03-28"
         },
         {
-          "person": "Margaretha von Symau",
-          "personTitle": [
-            "Schenk"
-          ],
+          "person": "Margaretha Schenk von Symau",
           "type": "generic",
           "content": "was born.",
           "date": "1564-03-16"
@@ -2048,10 +2042,7 @@
           "date": "1632"
         },
         {
-          "person": "Margaretha von Symau",
-          "personTitle": [
-            "Schenk"
-          ],
+          "person": "Margaretha Schenk von Symau",
           "type": "death",
           "diedOn": "1619-05-19",
           "date": "1619-05-19"

@@ -179,7 +179,8 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const titlePlace = `(?:${placeNames}|[\\p{L}][\\p{L}'’.-]*)`;
   const titleMatch = titles ? `(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+${titlePlace})?` : '(?!)';
   const titleSuffixMatch = titles ? `(?:${titleMatch})(?!\\s+(?:${names})\\b)` : '(?!)';
-  const titleSequence = titles ? `(?:[\\s,;]+${titleSuffixMatch})*` : '';
+  const byNameBeforeParticle = byNames ? `(?!(?:${byNames})\\s+(?:${particles}|of)\\s)` : '';
+  const titleSequence = titles ? `(?:[\\s,;]+${byNameBeforeParticle}${titleSuffixMatch})*` : '';
   const leadingTitles = titles ? `(?:${titleMatch}\\s+)*` : '';
   const particle = `(?:${particles}|of)`;
   const placeClause = `(?:${placeNames})(?:\\s+(?:zu|zum|an)\\s+(?:${placeNames}))?`;
@@ -276,7 +277,12 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     return normalizeRouteName(`${canonicalGivenNames} ${birthName[2]}`);
   }
   const ordinal = '(?:\\s+(?:\\(\\s*[IVXLCDM]+\\s*\\)|\\[\\s*[IVXLCDM]+\\s*\\]|[IVXLCDM]+\\.?))?';
-  const titleSequence = titles ? `(?:[\\s,]+(?:${titles}))*` : '';
+  const byNameKeys = new Set(canonicalByName.keys());
+  const middleTitles = alternatives(parsePersonNameTitles(titleText).filter((form) => !byNameKeys.has(form.toLocaleLowerCase())));
+  const titleSequence = middleTitles ? `(?:[\\s,]+(?:${middleTitles}))*` : '';
+  const byNameSurname = givenNameForms && byNameKeys.size
+    ? new RegExp(`^(?:${givenNameForms})(?:\\s+(?:${givenNameForms}))*\\s+(?:${alternatives([...byNameKeys])})${placeForms.length ? `(?:\\s+(?:von|v\\.|von\\.|vom|van|de|zu|zum)\\s+(?:${alternatives(placeForms)}))?` : ''}$`, 'iu').test(String(name).trim())
+    : false;
   const preserveLocativePlaceName = locativePlaceSuffix(name) !== undefined;
   const byNameForms = [];
   String(byNamesText).split(/\r?\n/).filter((line) => !line.trim().startsWith('#'))
@@ -288,7 +294,7 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     .replace(new RegExp(`^(?:${connectors})\\s+`, 'iu'), '')
     .replace(/\s*\(\s*or\s+[^)]*\)/iu, '')
     .replace(new RegExp(`${ordinal}${titleSequence}[\\s,;]+(?=(?:von|v\\.?|van|de|in|der|die|das|des|of)\\b)`, 'iu'), ' ')
-    .replace(preserveLocativePlaceName ? /$^/u : new RegExp(`[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?(?:[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?)*$`, 'iu'), '')
+    .replace(preserveLocativePlaceName || byNameSurname ? /$^/u : new RegExp(`[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?(?:[\\s,;]+(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,;]+)?)*$`, 'iu'), '')
     .replace(new RegExp(`[\\s,;]+(?:${connectors})[\\s,;]+(?:${particles})\\s+[^,;]+$`, 'iu'), '')
     .replace(/\s*\([^)]*\)$/u, '')
     .trim();
