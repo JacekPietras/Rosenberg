@@ -18,18 +18,7 @@
       ],
       "img": [
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/4ffaa8ef-9e77-4615-8965-542e9304bc18/1/full/max/0/default.jpg",
-          "seals": [
-            {
-              "person": "Friedrich Voit von Rosenberg",
-              "position": "0.4835,0.9043",
-              "size": 0.09200000000000001,
-              "width": 0,
-              "wideningRotation": 0,
-              "rotation": -10,
-              "type": "full"
-            }
-          ]
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/4ffaa8ef-9e77-4615-8965-542e9304bc18/1/full/max/0/default.jpg"
         },
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/4ffaa8ef-9e77-4615-8965-542e9304bc18/2/full/max/0/default.jpg",
