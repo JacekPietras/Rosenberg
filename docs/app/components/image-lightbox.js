@@ -279,7 +279,6 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     const controls = $('#image-lightbox-seal-selected-controls'); const remove = $('#image-lightbox-remove-seal');
     if (controls) controls.hidden = !selected; if (remove) remove.hidden = !selected;
     const removeImage = $('#image-lightbox-remove-image'); if (removeImage) removeImage.hidden = Boolean(context?.entryImage);
-    [['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => { const input = $(selector); if (input) { input.disabled = !selected; input.value = String(Number(selected?.[key]) || 0); } });
     document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => { input.disabled = !selected; input.checked = Boolean(selected && SEAL_TYPES.has(selected.type) && selected.type === input.value); });
     if (collectionNavigation) collectionNavigation.hidden = !collectionLinks || collectionLinks.links.length < 2;
     if (collectionPosition) collectionPosition.textContent = collectionLinks ? `${collectionLinks.index + 1} / ${collectionLinks.links.length}` : '';
@@ -354,8 +353,6 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     marker.style.setProperty('--seal-handle-x', `${Math.sin(handleAngle) * radius}px`);
     marker.style.setProperty('--seal-handle-y', `${-Math.cos(handleAngle) * radius}px`);
     updatePreview();
-    const input = $('#image-lightbox-seal-rotation');
-    if (input) input.value = String(Math.round(seal.rotation));
     event.preventDefault();
   };
   const endRotationDrag = async (event) => {
@@ -618,7 +615,6 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   });
   closeButton.addEventListener('click', close);
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
-  [['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => $(selector)?.addEventListener('input', (event) => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) { seal[key] = Number(event.target.value); render(); } }));
   document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => input.addEventListener('change', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal && input.checked) seal.type = input.value; }));
   annotations.addEventListener('pointerdown', (event) => { const handle = event.target.closest('.seal-marker-adjustment-handle'); if (context && handle) { startHandleDrag(event, Number(handle.parentElement.dataset.sealIndex), handle); return; } const marker = event.target.closest('.seal-marker'); if (context && marker) { const rect = marker.getBoundingClientRect(); const radius = Math.min(rect.width, rect.height) / 2; const scale = rect.width / Math.max(marker.offsetWidth, 1); const distance = Math.hypot(event.clientX - (rect.left + rect.width / 2), event.clientY - (rect.top + rect.height / 2)); const originalBorderEdge = radius + 2 * scale; if (Number(marker.dataset.sealIndex) === selectedIndex && distance > originalBorderEdge && distance <= originalBorderEdge + 10) startRotationDrag(event, Number(marker.dataset.sealIndex), marker); else startDrag(event, Number(marker.dataset.sealIndex), marker); } }); annotations.addEventListener('pointermove', (event) => { updateHandleDrag(event); updateRotationDrag(event); moveDrag(event); }); annotations.addEventListener('pointerup', (event) => { endHandleDrag(event); endRotationDrag(event); endSealDrag(); }); annotations.addEventListener('pointercancel', (event) => { endHandleDrag(event); endRotationDrag(event); endSealDrag(); });
   regionOverlay?.addEventListener('pointerdown', (event) => {
