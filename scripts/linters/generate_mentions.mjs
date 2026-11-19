@@ -157,17 +157,37 @@ const factTexts = (entry) => (Array.isArray(entry.facts) ? entry.facts : [])
     : fact?.type === 'death' && typeof fact.circumstances === 'string' ? [fact.circumstances] : []));
 
 
-const personKey = (person, titles) => JSON.stringify([person, [...new Set(titles || [])].sort()]);
+const titleGroups = (await read('data/titles-age.md') + '\n' + await read('data/titles-office.md')).split(/\r?\n/)
+  .filter((line) => line.trim() && !/^\s*(#|\/\/)/u.test(line)).map((line) => parsePersonNameTitles(line));
+const groupOf = new Map(titleGroups.flatMap((group) => group.map((form) => [form.toLowerCase(), group[0].toLowerCase()])));
+const canonTitle = (title) => {
+  const text = title.toLowerCase();
+  const form = [...groupOf.keys()].filter((candidate) => text === candidate || text.startsWith(`${candidate} `))
+    .sort((left, right) => right.length - left.length)[0];
+  return form ? groupOf.get(form) + text.slice(form.length) : text;
+};
 
-// Person+title pairs already stated by a fact (or its nested facts) need no mention.
-function statedPeople(value, found = new Set()) {
+// People already stated by a fact (or its nested facts), with their title sets.
+function statedPeople(value, found = new Map()) {
+  const add = (person, titles) => found.set(person, [...(found.get(person) || []), titles || []]);
   if (Array.isArray(value)) value.forEach((item) => statedPeople(item, found));
   else if (value && typeof value === 'object') {
-    if (typeof value.person === 'string') found.add(personKey(value.person, value.personTitle));
-    if (typeof value.of === 'string') found.add(personKey(value.of, value.ofTitle));
+    if (typeof value.person === 'string') add(value.person, value.personTitle);
+    if (typeof value.of === 'string') add(value.of, value.ofTitle);
     Object.entries(value).forEach(([key, child]) => { if (key !== 'mention') statedPeople(child, found); });
   }
   return found;
+}
+
+// A mention is stated when a fact names the same person with titles covering its own.
+function isStated(item, stated) {
+  const own = new Set((item.personTitle || []).map(canonTitle));
+  const age = ageOf(item.personTitle);
+  return (stated.get(item.person) || []).some((titles) => {
+    const have = new Set(titles.map(canonTitle));
+    const haveAge = ageOf(titles);
+    return [...own].every((title) => have.has(title)) && [...age].every((index) => haveAge.has(index));
+  });
 }
 
 function regenerate(value, file, counter, issuance = []) {
@@ -187,7 +207,7 @@ function regenerate(value, file, counter, issuance = []) {
     const name = (item) => item.person ?? item.place;
     const stated = statedPeople(value.facts ?? (value.type ? value : null));
     const mention = [...unique.values()]
-      .filter((item) => item.person === undefined || !stated.has(personKey(item.person, item.personTitle)))
+      .filter((item) => item.person === undefined || !isStated(item, stated))
       .sort((left, right) => name(left).localeCompare(name(right))
         || JSON.stringify(left).localeCompare(JSON.stringify(right)));
     if (mention.length) {

@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-// Complete personTitle/ofTitle of facts with titles the entry's own text attaches
-// to the same person. Names are recognized in `english`, `german` and `latin`
-// with the browser's person-name recognizer. Reports by default; `--apply` writes.
+// Complete personTitle/ofTitle of facts with titles the entry's generated
+// `mention` list gives the same person. Run after generate_mentions.mjs; the
+// mentions are regenerated afterwards. Reports by default; `--apply` writes.
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { relative, resolve } from 'node:path';
 import {
-  buildSourcePersonPattern, findPersonNameMentions, parsePersonNameTitles, personRouteName,
+  parsePersonNameTitles, personRouteName,
 } from '../../docs/app/data/person-name-recognition.js';
 import { parsePlaces } from '../../docs/app/data/entities.js';
 
@@ -17,7 +17,6 @@ const [names, particles, placesJson, byNames, connectors, ageText, officeText, p
     'titles-age.md', 'titles-office.md', 'people.json'].map(read));
 const titleText = `${ageText}\n${officeText}`;
 const places = parsePlaces(placesJson);
-const pattern = buildSourcePersonPattern(names, particles, places, titleText, connectors, byNames);
 const registry = new Map(JSON.parse(peopleJson).map((person) => [person.id, person.name]));
 const route = (name) => personRouteName(name, titleText, connectors, particles, names, byNames, places);
 
@@ -82,14 +81,19 @@ function participants(entry) {
   return result;
 }
 
+function canonicalTitle(title) {
+  const found = titlesOf(title);
+  if (found.length === 1) return found[0];
+  const place = title.match(/^zu\s+(\S+)$/iu);
+  const canonical = place && placeCanonical.get(lower(place[1]));
+  return canonical ? `zu ${canonical}` : null;
+}
+
 function mentionsOf(entry) {
-  const mentions = [];
-  for (const field of ['english', 'german', 'latin']) {
-    if (typeof entry[field] !== 'string') continue;
-    const { singles } = findPersonNameMentions(entry[field], titleText, connectors, particles, names, byNames, places, pattern);
-    for (const single of singles) mentions.push({ key: single.route, titles: titlesOf(single.text) });
-  }
-  return mentions;
+  return (entry.mention ?? []).filter((item) => typeof item.person === 'string').map((item) => ({
+    key: item.person,
+    titles: (item.personTitle ?? []).map(canonicalTitle).filter(Boolean),
+  }));
 }
 
 const known = (title) => baseOf(title) !== title || title.startsWith('zu ');

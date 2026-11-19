@@ -113,16 +113,30 @@ def main(argv=None):
                 sys.stdout.write(line)
         sys.stdout.write(result.stderr)
         failed = failed or result.returncode != 0
-    mentions = subprocess.run(
-        ["node", str(LINTERS / "generate_mentions.mjs")],
+    def generate_mentions():
+        result = subprocess.run(
+            ["node", str(LINTERS / "generate_mentions.mjs")],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+        sys.stdout.write("".join(
+            line for line in result.stdout.splitlines(keepends=True) if not line.startswith("Updated mentions:")))
+        sys.stdout.write(result.stderr)
+        return result.returncode != 0
+
+    failed = generate_mentions() or failed
+    enrichment = subprocess.run(
+        ["node", str(LINTERS / "enrich_fact_titles.mjs"), "--apply"],
         cwd=ROOT,
         capture_output=True,
         text=True,
     )
     sys.stdout.write("".join(
-        line for line in mentions.stdout.splitlines(keepends=True) if not line.startswith("Updated mentions:")))
-    sys.stdout.write(mentions.stderr)
-    failed = failed or mentions.returncode != 0
+        line for line in enrichment.stdout.splitlines(keepends=True) if not line.startswith("Checked fact titles")))
+    sys.stdout.write(enrichment.stderr)
+    failed = failed or enrichment.returncode != 0
+    failed = generate_mentions() or failed
     title_check = subprocess.run(
         ["node", str(LINTERS / "split_person_titles.mjs")],
         cwd=ROOT,

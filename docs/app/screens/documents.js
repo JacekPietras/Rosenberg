@@ -1,4 +1,4 @@
-import { findPersonNameMentions, personRouteName } from '../data/person-name-recognition.js?v=25';
+import { personRouteName } from '../data/person-name-recognition.js?v=25';
 import { factDate } from '../rendering/facts.js?v=9';
 import { dateSortValue } from '../rendering/dates.js';
 import { renderFactsView } from '../components/facts_view.js?v=10';
@@ -21,63 +21,25 @@ export function createDocumentRenderer({
   getPeople,
   distinctFamilies,
 }) {
-  function documentStrings(doc) {
-    const texts = [];
-    const peopleById = new Map((state.people || []).filter((person) => person.id).map((person) => [person.id, person.name]));
-    const collectFact = (value) => {
-      if (typeof value === 'string') { texts.push(peopleById.get(value) || value); return; }
-      if (Array.isArray(value)) { value.forEach(collectFact); return; }
-      if (value && typeof value === 'object') {
-        Object.entries(value).forEach(([key, nested]) => {
-          if (key !== 'person' && key !== 'of') collectFact(nested);
-        });
-      }
-    };
-    const visit = (value) => {
-      if (Array.isArray(value)) { value.forEach(visit); return; }
-      if (!value || typeof value !== 'object') return;
-      for (const [key, nested] of Object.entries(value)) {
-        if (key === 'english' && typeof nested === 'string') texts.push(nested);
-        else if (key === 'facts') collectFact(nested);
-        else if (typeof nested === 'object' && nested !== null) visit(nested);
-      }
-    };
-    visit(doc);
-    return texts;
-  }
-
   function personMentions(doc) {
     const found = new Map();
     const peopleById = new Map((state.people || []).filter((person) => person.id).map((person) => [person.id, person.name]));
-    const addPerson = (reference) => {
-      if (typeof reference !== 'string') return;
-      const name = peopleById.get(reference) || reference;
-      const routeName = personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places);
+    const add = (routeName) => {
       const key = routeName.toLocaleLowerCase();
       if (key && !found.has(key)) found.set(key, routeName);
     };
-    const collectFactPeople = (value) => {
-      if (Array.isArray(value)) { value.forEach(collectFactPeople); return; }
-      if (!value || typeof value !== 'object') return;
-      addPerson(value.person);
-      addPerson(value.of);
+    const addReference = (reference) => {
+      if (typeof reference !== 'string') return;
+      const name = peopleById.get(reference) || reference;
+      add(personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places));
     };
-    const visitFacts = (value) => {
-      if (Array.isArray(value)) { value.forEach(visitFacts); return; }
-      if (!value || typeof value !== 'object') return;
-      for (const [key, nested] of Object.entries(value)) {
-        if (key === 'facts' || key === 'guesses') collectFactPeople(nested);
-        else if (nested && typeof nested === 'object') visitFacts(nested);
+    for (const entry of doc.entries || []) {
+      for (const item of [...(entry.facts || []), ...(entry.guesses || [])]) {
+        addReference(item?.person);
+        addReference(item?.of);
       }
-    };
-    visitFacts(doc);
-    for (const text of documentStrings(doc)) {
-      const { coordinated, singles } = findPersonNameMentions(text, state.personNameTitlesText,
-        state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText,
-        state.byNamesText, state.places, state.sourcePersonPattern, state.personPattern);
-      for (const name of [...coordinated.flatMap((match) => match.routes), ...singles.map((match) => match.route)]) {
-        const key = name.toLocaleLowerCase();
-        if (!found.has(key)) found.set(key, name);
+      for (const item of entry.mention || []) {
+        if (typeof item?.person === 'string') add(item.person);
       }
     }
     return found;

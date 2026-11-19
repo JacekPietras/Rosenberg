@@ -4,7 +4,7 @@ import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=124';
 import { renderActiveScreen } from './screens/router-view.js?v=24';
-import { createDocumentRenderer } from './screens/documents.js?v=36';
+import { createDocumentRenderer } from './screens/documents.js?v=37';
 import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=12';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=3';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=90';
