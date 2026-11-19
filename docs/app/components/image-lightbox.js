@@ -325,7 +325,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     target.setPointerCapture?.(event.pointerId);
     event.preventDefault();
   };
-  const startRotationDrag = (event, index, target) => {
+  const startRotationDrag = (event, index, target, captureTarget = target) => {
     const seal = currentSeals()[index];
     if (!seal) return;
     clearTimeout(sealViewTimer);
@@ -333,7 +333,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     const rect = target.getBoundingClientRect();
     rotationDrag = { index, pointerId: event.pointerId, centerX: rect.left + rect.width / 2, centerY: rect.top + rect.height / 2, startAngle: Math.atan2(event.clientY - (rect.top + rect.height / 2), event.clientX - (rect.left + rect.width / 2)) * 180 / Math.PI, startRotation: Number(seal.rotation) || 0 };
     selectedIndex = index;
-    target.setPointerCapture?.(event.pointerId);
+    captureTarget.setPointerCapture?.(event.pointerId);
     event.preventDefault();
   };
   const updateRotationDrag = (event) => {
@@ -645,7 +645,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     if (ignoreFocusClick) { ignoreFocusClick = false; return; }
     if (regionMode) event.preventDefault();
   });
-  preview?.addEventListener('pointerdown', (event) => { if (!context || selectedIndex === null || !preview.classList.contains('is-seal-preview')) return; if (event.target.closest('.seal-marker-rotation-handle')) startRotationDrag(event, selectedIndex, previewCrop); else if (event.target.closest('.seal-marker-adjustment-handle')) startHandleDrag(event, selectedIndex, event.target); else if (event.target.closest('.seal-crop')) { const rect = previewCrop.getBoundingClientRect(); const distance = Math.hypot(event.clientX - (rect.left + rect.width / 2), event.clientY - (rect.top + rect.height / 2)); if (distance >= rect.width / 2 - 8) startRotationDrag(event, selectedIndex, previewCrop); else startDrag(event, selectedIndex, preview); } }); preview?.addEventListener('pointermove', (event) => { updateHandleDrag(event); updateRotationDrag(event); moveDrag(event); }); preview?.addEventListener('pointerup', (event) => { endHandleDrag(event); endRotationDrag(event); endSealDrag(event); }); preview?.addEventListener('pointercancel', (event) => { endHandleDrag(event); endRotationDrag(event); endSealDrag(event); });
+  preview?.addEventListener('pointerdown', (event) => { if (!context || selectedIndex === null || !preview.classList.contains('is-seal-preview')) return; if (event.target.closest('.seal-marker-rotation-handle')) startRotationDrag(event, selectedIndex, previewCrop, event.target); else if (event.target.closest('.seal-marker-adjustment-handle')) startHandleDrag(event, selectedIndex, event.target); else if (event.target.closest('.seal-crop')) { const rect = previewCrop.getBoundingClientRect(); const distance = Math.hypot(event.clientX - (rect.left + rect.width / 2), event.clientY - (rect.top + rect.height / 2)); if (distance >= rect.width / 2 - 8) startRotationDrag(event, selectedIndex, previewCrop); else startDrag(event, selectedIndex, preview); } }); preview?.addEventListener('pointermove', (event) => { updateHandleDrag(event); updateRotationDrag(event); moveDrag(event); }); preview?.addEventListener('pointerup', (event) => { endHandleDrag(event); endRotationDrag(event); endSealDrag(event); }); preview?.addEventListener('pointercancel', (event) => { endHandleDrag(event); endRotationDrag(event); endSealDrag(event); });
   stage.addEventListener('click', async (event) => {
     if (!context || lightbox.classList.contains('is-cropping')) return;
     if (ignoreSealClick) { ignoreSealClick = false; event.preventDefault(); event.stopPropagation(); return; }
