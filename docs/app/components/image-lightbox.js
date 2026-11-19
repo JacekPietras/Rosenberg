@@ -177,6 +177,8 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   let ignoreFocusClick = false;
   let magnifierPoint = null;
   let magnifierDismissed = false;
+  let sealView = { x: 0, y: 0, scale: 1 };
+  let sealViewTimer = null;
   const MAGNIFIER_SIZE = 0.12;
   const MAGNIFIER_SIZE_STEP = 0.01;
   let magnifierSize = MAGNIFIER_SIZE;
@@ -202,7 +204,35 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     if (!description || !stage) return;
     stage.style.height = description.hidden ? '' : `calc(100% - ${description.offsetHeight + 16}px)`;
   };
-  const point = (event) => { const rect = annotations.getBoundingClientRect(); return { x: Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)), y: Math.max(0, Math.min(1, (event.clientY - rect.top) / rect.height)) }; };
+  const point = (event) => {
+    const rect = stage.getBoundingClientRect();
+    const x = (event.clientX - rect.left - stage.clientWidth / 2 - sealView.x) / sealView.scale + stage.clientWidth / 2;
+    const y = (event.clientY - rect.top - stage.clientHeight / 2 - sealView.y) / sealView.scale + stage.clientHeight / 2;
+    return { x: Math.max(0, Math.min(1, (x - annotations.offsetLeft) / annotations.offsetWidth)), y: Math.max(0, Math.min(1, (y - annotations.offsetTop) / annotations.offsetHeight)) };
+  };
+  const updateSealView = () => {
+    const selected = selectedIndex === null ? null : currentSeals()[selectedIndex];
+    lightbox.classList.toggle('is-seal-focused', Boolean(selected));
+    const width = stage.clientWidth, height = stage.clientHeight;
+    sealView = { x: 0, y: 0, scale: 1 };
+    if (selected && width && height && annotations.clientHeight) {
+      const [x, y] = String(selected.position || '').split(',').map(Number);
+      const diameter = annotations.clientHeight * (Number(selected.size) || 0.08);
+      const scale = Math.max(1, Math.min(8, Math.min(width, height) / Math.max(diameter * 3, 1)));
+      sealView = { x: (width / 2 - annotations.offsetLeft - x * annotations.clientWidth) * scale, y: (height / 2 - annotations.offsetTop - y * annotations.clientHeight) * scale, scale };
+    }
+    image.style.transformOrigin = 'center';
+    image.style.transform = `translate(${sealView.x}px, ${sealView.y}px) scale(${sealView.scale})`;
+    annotations.style.transformOrigin = `${width / 2 - annotations.offsetLeft}px ${height / 2 - annotations.offsetTop}px`;
+    annotations.style.transform = `translate(${sealView.x}px, ${sealView.y}px) scale(${sealView.scale})`;
+    updatePreview();
+  };
+  const scheduleSealView = () => {
+    clearTimeout(sealViewTimer);
+    if (drag) return;
+    if (selectedIndex === null) { updateSealView(); return; }
+    sealViewTimer = setTimeout(updateSealView, 1000);
+  };
   const updateGeometry = () => {
     if (!image.naturalWidth || !image.naturalHeight) return;
     const scale = Math.min(stage.clientWidth / image.naturalWidth, stage.clientHeight / image.naturalHeight);
@@ -228,7 +258,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     if (!seal && magnifierSize >= magnifierMaximumSize() - 0.0001) { preview.hidden = true; return; }
     preview.hidden = false; preview.classList.toggle('is-seal-preview', Boolean(seal)); preview.classList.toggle('is-magnifier', !seal);
     if (previewName) { previewName.hidden = !seal; previewName.value = seal?.person || ''; }
-    if (seal) { const a = annotations.getBoundingClientRect(); const b = lightbox.getBoundingClientRect(); preview.style.left = `${a.left + x * a.width - b.left}px`; preview.style.top = `${a.top + y * a.height - b.top}px`; }
+    if (seal) { const b = lightbox.getBoundingClientRect(); const s = stage.getBoundingClientRect(); const imageX = annotations.offsetLeft + x * annotations.clientWidth; const imageY = annotations.offsetTop + y * annotations.clientHeight; const px = s.left + stage.clientWidth / 2 + (imageX - stage.clientWidth / 2) * sealView.scale + sealView.x; const py = s.top + stage.clientHeight / 2 + (imageY - stage.clientHeight / 2) * sealView.scale + sealView.y; preview.style.left = `${px - b.left}px`; preview.style.top = `${py - b.top}px`; }
     Object.assign(previewCrop.dataset, { sealX: x, sealY: y, sealSize: size, sealWidth: seal?.width || 0, sealWideningRotation: seal?.wideningRotation || 0, sealRotation: seal?.rotation || 0 });
     if (previewImage.src !== image.src) previewImage.src = image.src;
     if (previewImage.naturalWidth) positionSealCrop(previewImage, previewCrop, x, y, size, Number(seal?.width) || 0, Number(seal?.wideningRotation) || 0, Number(seal?.rotation) || 0);
@@ -264,7 +294,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     annotations.innerHTML = seals + regions;
     annotations.querySelectorAll('.seal-marker').forEach((marker) => marker.classList.toggle('selected', Number(marker.dataset.sealIndex) === selectedIndex));
     if (removeRegionButton) removeRegionButton.hidden = !context || selectedRegionIndex === null || !currentRegions()[selectedRegionIndex];
-    updateGeometry(); updateFocusOverlay(); updatePreview(); updateControls();
+    updateGeometry(); scheduleSealView(); updateFocusOverlay(); updatePreview(); updateControls();
   };
   const save = () => {
     if (!context) { setStatus('Image annotations cannot be saved here.', true); return Promise.resolve(false); }
@@ -280,7 +310,8 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     }); saveQueue = operation.catch(() => {}); return operation;
   };
   const close = async () => { if (context && !await save()) return; lightbox.close(); await rerender?.(); };
-  const startDrag = (event, index, target) => { const seal = currentSeals()[index]; if (!seal) return; const [x, y] = String(seal.position || '').split(',').map(Number); magnifierPoint = { x, y }; magnifierDismissed = false; selectedIndex = index; const p = point(event); drag = { index, pointerId: event.pointerId, offsetX: x - p.x, offsetY: y - p.y }; render(); target.setPointerCapture?.(event.pointerId); event.preventDefault(); };
+  const startDrag = (event, index, target) => { const seal = currentSeals()[index]; if (!seal) return; clearTimeout(sealViewTimer); lightbox.classList.add('is-seal-dragging'); const [x, y] = String(seal.position || '').split(',').map(Number); magnifierPoint = { x, y }; magnifierDismissed = false; selectedIndex = index; const p = point(event); drag = { index, pointerId: event.pointerId, offsetX: x - p.x, offsetY: y - p.y }; render(); target.setPointerCapture?.(event.pointerId); event.preventDefault(); };
+  const endSealDrag = () => { if (!drag) return; drag = null; lightbox.classList.remove('is-seal-dragging'); scheduleSealView(); };
   const moveDrag = (event) => { if (!drag || event.pointerId !== drag.pointerId) return; const seal = currentSeals()[drag.index]; if (!seal) return; const p = point(event); seal.position = `${Math.max(0, Math.min(1, p.x + drag.offsetX)).toFixed(4)},${Math.max(0, Math.min(1, p.y + drag.offsetY)).toFixed(4)}`; render(); };
   const regionPoint = (event) => {
     const rect = regionOverlay.getBoundingClientRect();
@@ -333,7 +364,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     } else cropSources = cropSource ? [cropSource] : [];
     let sourceIndex = 0;
     image.onerror = () => { sourceIndex += 1; if (sourceIndex < sources.length) image.src = sources[sourceIndex]; };
-    image.onload = () => { updateGeometry(); updatePreview(); if (transcriptionZoom > 1) applyTranscriptionZoom(); };
+    image.onload = () => { updateGeometry(); scheduleSealView(); updatePreview(); if (transcriptionZoom > 1) applyTranscriptionZoom(); };
     image.referrerPolicy = 'no-referrer';
     image.alt = link.querySelector('img')?.alt || (typeof item === 'object' ? item?.name : '') || '';
     const imageDescription = (typeof item === 'object' && item?.description) || link.dataset.imageDescription || '';
@@ -398,7 +429,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   };
   collectionPrevious?.addEventListener('click', () => moveCollectionCover(-1));
   collectionNext?.addEventListener('click', () => moveCollectionCover(1));
-  window.addEventListener('resize', () => { updateDescriptionLayout(); updateGeometry(); updatePreview(); if (transcriptionModeActive) applyTranscriptionZoom(); }, { passive: true });
+  window.addEventListener('resize', () => { updateDescriptionLayout(); updateGeometry(); scheduleSealView(); updatePreview(); if (transcriptionModeActive) applyTranscriptionZoom(); }, { passive: true });
   regionButton?.addEventListener('click', () => { regionMode = !regionMode; regionDrag = null; if (regionBox) regionBox.removeAttribute('style'); ignoreFocusClick = false; selectedIndex = null; updateFocusOverlay(); });
   removeRegionButton?.addEventListener('click', async () => {
     const regions = currentRegions();
@@ -505,7 +536,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   previewName?.addEventListener('input', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) seal.person = previewName.value; });
   [['#image-lightbox-seal-width', 'width'], ['#image-lightbox-seal-widening-rotation', 'wideningRotation'], ['#image-lightbox-seal-rotation', 'rotation']].forEach(([selector, key]) => $(selector)?.addEventListener('input', (event) => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal) { seal[key] = Number(event.target.value); render(); } }));
   document.querySelectorAll('input[name="image-lightbox-seal-type"]').forEach((input) => input.addEventListener('change', () => { const seal = selectedIndex === null ? null : currentSeals()[selectedIndex]; if (seal && input.checked) seal.type = input.value; }));
-  annotations.addEventListener('pointerdown', (event) => { const marker = event.target.closest('.seal-marker'); if (context && marker) startDrag(event, Number(marker.dataset.sealIndex), marker); }); annotations.addEventListener('pointermove', moveDrag); annotations.addEventListener('pointerup', () => { drag = null; }); annotations.addEventListener('pointercancel', () => { drag = null; });
+  annotations.addEventListener('pointerdown', (event) => { const marker = event.target.closest('.seal-marker'); if (context && marker) startDrag(event, Number(marker.dataset.sealIndex), marker); }); annotations.addEventListener('pointermove', moveDrag); annotations.addEventListener('pointerup', endSealDrag); annotations.addEventListener('pointercancel', endSealDrag);
   regionOverlay?.addEventListener('pointerdown', (event) => {
     if (!regionMode || !regionOverlay.clientWidth || !regionOverlay.clientHeight) return;
     if (regionDrag?.waiting) { regionDrag.pointerId = event.pointerId; regionDrag.waiting = false; regionDrag.secondClick = true; }
@@ -550,7 +581,7 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
     if (ignoreFocusClick) { ignoreFocusClick = false; return; }
     if (regionMode) event.preventDefault();
   });
-  preview?.addEventListener('pointerdown', (event) => { if (context && selectedIndex !== null && preview.classList.contains('is-seal-preview') && event.target.closest('.seal-crop')) startDrag(event, selectedIndex, preview); }); preview?.addEventListener('pointermove', moveDrag); preview?.addEventListener('pointerup', () => { drag = null; }); preview?.addEventListener('pointercancel', () => { drag = null; });
+  preview?.addEventListener('pointerdown', (event) => { if (context && selectedIndex !== null && preview.classList.contains('is-seal-preview') && event.target.closest('.seal-crop')) startDrag(event, selectedIndex, preview); }); preview?.addEventListener('pointermove', moveDrag); preview?.addEventListener('pointerup', endSealDrag); preview?.addEventListener('pointercancel', endSealDrag);
   stage.addEventListener('click', async (event) => {
     if (!context || lightbox.classList.contains('is-cropping')) return;
     const marker = event.target.closest?.('.seal-marker'); if (marker) { const seal = currentSeals()[Number(marker.dataset.sealIndex)]; if (seal) { const [x, y] = String(seal.position || '').split(',').map(Number); magnifierPoint = { x, y }; } magnifierDismissed = false; selectedIndex = Number(marker.dataset.sealIndex); render(); return; } const old = selectedIndex; selectedIndex = null; const rect = annotations.getBoundingClientRect(); if (event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom) { magnifierPoint = point(event); const box = lightbox.getBoundingClientRect(); if (preview) { preview.style.left = `${event.clientX - box.left}px`; preview.style.top = `${event.clientY - box.top}px`; } } else magnifierPoint = null; magnifierDismissed = true; render(); if (old !== null) await save();
@@ -608,5 +639,5 @@ export function setupImageLightbox({ state, repository, rerender, markSaved = ()
   descriptionClose?.addEventListener('click', () => { if (description) { description.hidden = true; updateDescriptionLayout(); } });
   lightbox.addEventListener('click', (event) => { if (!context && event.target === lightbox) close(); });
   lightbox.addEventListener('cancel', (event) => { event.preventDefault(); if (lightbox.classList.contains('is-cropping')) stopCrop(); else close(); });
-  lightbox.addEventListener('close', () => { stopCrop(); cropSources = []; setTranscriptionMode(false); if (transcriptionButton) { transcriptionButton.textContent = 'Transcription'; transcriptionButton.disabled = false; transcriptionButton.hidden = true; } image.removeAttribute('src'); annotations.replaceChildren(); if (descriptionText) descriptionText.textContent = ''; if (description) description.hidden = true; stage.style.height = ''; if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing', 'has-pointer'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
+  lightbox.addEventListener('close', () => { clearTimeout(sealViewTimer); stopCrop(); cropSources = []; setTranscriptionMode(false); if (transcriptionButton) { transcriptionButton.textContent = 'Transcription'; transcriptionButton.disabled = false; transcriptionButton.hidden = true; } image.removeAttribute('src'); annotations.replaceChildren(); if (descriptionText) descriptionText.textContent = ''; if (description) description.hidden = true; stage.style.height = ''; if (preview) preview.hidden = true; context = null; collectionLinks = null; if (collectionNavigation) collectionNavigation.hidden = true; visibleRegions = []; selectedIndex = null; selectedRegionIndex = null; drag = null; regionDrag = null; regionMode = false; regionOverlay?.classList.remove('is-visible', 'is-editing', 'has-pointer'); magnifierPoint = null; magnifierDismissed = false; lightbox.classList.remove('is-editable'); setStatus(''); });
 }
