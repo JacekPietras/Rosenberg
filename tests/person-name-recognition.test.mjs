@@ -101,15 +101,19 @@ test('recognizes a trailing zu-place designation as a person title', () => {
 test('assigns an intervening office title to Konrad without attaching it to Eberhard', () => {
   const scenarioPlaces = [...places, { name: 'Wildenberg', variations: ['Wildenberg'] }];
   const scenarioTitles = `${titles}\n${projectTitles}`;
-  const phrase = 'include the knights Konrad Rüdt, Burgrave zu Wildenberg, Eberhard Rüdt,';
   const scenarioPattern = buildSourcePersonPattern(projectNames, particles, scenarioPlaces,
     scenarioTitles, connectors, byNames);
-  const result = findPersonNameMentions(phrase, scenarioTitles, connectors, particles,
-    projectNames, byNames, scenarioPlaces, scenarioPattern);
-  assert.deepEqual(result.singles.map(({ route, titles: personTitles }) => ({ route, titles: personTitles })), [
-    { route: 'Konrad Rüd', titles: ['Burggraf zu Wildenberg'] },
-    { route: 'Eberhard Rüd', titles: [] },
-  ]);
+  for (const phrase of [
+    'include the knights Konrad Rüdt, Burgrave zu Wildenberg, Eberhard Rüdt,',
+    'knights Konrad Rüdt, Burgrave of Wildenberg, Eberhard Rüdt',
+  ]) {
+    const result = findPersonNameMentions(phrase, scenarioTitles, connectors, particles,
+      projectNames, byNames, scenarioPlaces, scenarioPattern);
+    assert.deepEqual(result.singles.map(({ route, titles: personTitles }) => ({ route, titles: personTitles })), [
+      { route: 'Konrad Rüd', titles: ['Burggraf zu Wildenberg'] },
+      { route: 'Eberhard Rüd', titles: [] },
+    ], phrase);
+  }
 });
 
 test('recognizes Mönch von Rosenberg zu Hainstadt as one person mention', () => {
@@ -388,6 +392,24 @@ test('canonicalizes a place variation in a person route', () => {
   const placeRecords = [{ name: 'Helmstadt', variations: ['Helmstadt', 'Helmstat', 'Helmstatt'] }];
   assert.equal(personRouteName('Raban von Helmstatt', titles, connectors, particles,
     projectNames, byNames, placeRecords), 'Raban von Helmstadt');
+});
+
+test('uses the first place variation as canonical when records have no name field', () => {
+  const placeRecords = [{ id: 'pappenheim', variations: ['Pappenheim', 'Bappenhein', 'Bappenheim'] }];
+  assert.equal(personRouteName('Haubt Marschalk von Bappenhein', titles, connectors, particles,
+    projectNames, byNames, placeRecords), 'Haubt Marschalk von Pappenheim');
+});
+
+test('recognizes Bishop Wolfram of Würzburg with a canonical route and title', () => {
+  const titleText = `${titles}\n${projectTitles}`;
+  const placeRecords = [{ id: 'wurzburg', variations: ['Würzburg', 'Wirtzeburg', 'Wurzburg'] }];
+  const sourcePattern = buildSourcePersonPattern(projectNames, particles, placeRecords,
+    titleText, connectors, byNames);
+  const { singles } = findPersonNameMentions('from Bishop Wolfram of Würzburg', titleText,
+    connectors, particles, projectNames, byNames, placeRecords, sourcePattern);
+  assert.equal(singles.length, 1);
+  assert.equal(singles[0].route, 'Wolfram zu Würzburg');
+  assert.deepEqual(singles[0].titles, ['Bischof']);
 });
 
 test('recognizes coordinated brothers under their shared by-name and inherited place', () => {

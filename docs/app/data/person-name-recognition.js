@@ -143,13 +143,72 @@ export function findPersonNameMentions(text, titleText = '', connectorText = '',
       if (explicitIds.some(([idStart, idEnd]) => idStart < end && start < idEnd)) continue;
       if (singles.some((item) => item.start === start && item.end === end
           || item.start <= start && end <= item.end)) continue;
-      const route = personRouteName(match[0], titleText, connectorText,
+      let route = personRouteName(match[0], titleText, connectorText,
         particleText, namesText, byNamesText, places);
-      singles.push({ kind: candidate.kind, text: match[0], start, end, route, people: candidate.people });
+      const placeSuffix = match[0].match(/\s+(?:zu|zum)\s+([^\s,;]+)$/iu);
+      const prefix = placeSuffix ? match[0].slice(0, placeSuffix.index).trim() : '';
+      const place = placeSuffix && places.flatMap((item) => item.variations || [item.name])
+        .find((form) => form.toLocaleLowerCase() === placeSuffix[1].toLocaleLowerCase());
+      const prefixHasTitle = prefix && splitPersonNameTitles(prefix, titleText).titles.length > 0;
+      const byNameForms = new Set(String(byNamesText).split(/\r?\n/)
+        .filter((line) => !line.trim().startsWith('#'))
+        .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim().toLocaleLowerCase())));
+      const titleGroups = String(titleText).split(/\r?\n/)
+        .filter((line) => line.trim() && !line.trim().startsWith('#') && !line.trim().startsWith('//'))
+        .map((line) => line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean));
+      const canonicalTitles = new Map(titleGroups.flatMap((group) => group
+        .filter((form) => !byNameForms.has(form.toLocaleLowerCase()))
+        .map((form) => [form.toLocaleLowerCase(), group[0]])));
+      const trailingTitle = titleFormsPattern(canonicalTitles).exec(match[0]);
+      if (trailingTitle) {
+        route = personRouteName(match[0].slice(0, trailingTitle.index).trim(), titleText,
+          connectorText, particleText, namesText, byNamesText, places);
+      }
+      const leadingTitle = new RegExp(`^(${alternatives([...canonicalTitles.keys()])})\\s+`, 'iu').exec(match[0]);
+      const titlePlace = trailingTitle?.[2] && places.flatMap((item) => item.variations || [item.name])
+        .find((form) => form.toLocaleLowerCase() === trailingTitle[2].toLocaleLowerCase());
+      const designation = connectorDesignation(match[0], connectorText, particleText, places);
+      const titles = designation
+        ? [designation]
+        : leadingTitle
+          ? [canonicalTitles.get(leadingTitle[1].toLocaleLowerCase())]
+        : trailingTitle
+        ? [`${canonicalTitles.get(trailingTitle[1].toLocaleLowerCase())}${titlePlace ? ` zu ${titlePlace}` : trailingTitle[2] ? ` zu ${trailingTitle[2]}` : ''}`]
+        : place && !prefixHasTitle
+          && personRouteName(prefix, titleText, connectorText, particleText, namesText, byNamesText, places) === route
+          ? [`zu ${place}`] : [];
+      singles.push({ kind: candidate.kind, text: match[0], start, end, route, titles, people: candidate.people });
     }
     if (lastIndex !== undefined) pattern.lastIndex = lastIndex;
   }
   return { coordinated, singles };
+}
+
+function titleFormsPattern(canonicalTitles) {
+  const titles = [...canonicalTitles.keys()].sort((left, right) => right.length - left.length);
+  return new RegExp(`(?:^|[,;]\\s*|\\s+)(${alternatives(titles)})(?:\\s+(?:zu|zum|an|of)\\s+([\\p{L}][\\p{L}'’.-]*))?$`, 'iu');
+}
+
+function connectorDesignation(text, connectorText, particleText, places) {
+  const groups = String(connectorText).split(/\r?\n/)
+    .filter((line) => line.trim() && !line.trim().startsWith('#'))
+    .map((line) => line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean));
+  const canonical = new Map(groups.flatMap((group) => group.map((form) => [form.toLocaleLowerCase(), group[0]])));
+  const connectors = alternatives([...canonical.keys()]);
+  const particleGroups = String(particleText).split(/\r?\n/)
+    .filter((line) => line.trim() && !line.trim().startsWith('#'))
+    .map((line) => line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean));
+  const particleCanonical = new Map(particleGroups.flatMap((group) => group.map((form) => [form.toLocaleLowerCase(), group[0]])));
+  const particles = alternatives([...particleCanonical.keys()]);
+  const placeForms = [...new Set(places.flatMap((place) => place.variations || [place.name]).filter(Boolean))];
+  if (!connectors || !particles || !placeForms.length) return null;
+  const pattern = new RegExp(`[,;]\\s*(${connectors})\\s+(${particles})\\s+(${alternatives(placeForms)})$`, 'iu');
+  const match = String(text).match(pattern);
+  if (!match) return null;
+  const place = placeForms.find((form) => form.toLocaleLowerCase() === match[3].toLocaleLowerCase());
+  const particle = particleCanonical.get(match[2].toLocaleLowerCase()) || match[2];
+  const canonicalParticle = ['v.', 'von.'].includes(particle.toLocaleLowerCase()) ? 'von' : particle;
+  return `${canonical.get(match[1].toLocaleLowerCase())} ${canonicalParticle} ${place}`;
 }
 
 export function coordinatedByNameRouteNames(...args) {
@@ -215,7 +274,9 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
   const routeTitles = parsePersonNameRouteTitles(titleText);
   const canonicalByName = variantMap(byNamesText);
   const canonicalPlaces = new Map(places.flatMap((place) =>
-    (place.variations || [place.name]).filter(Boolean).map((form) => [form.toLocaleLowerCase(), place.name || form])));
+    (place.variations || [place.name]).filter(Boolean).map((form) => [
+      form.toLocaleLowerCase(), place.name || place.variations?.[0] || form,
+    ])));
   const placeForms = [...canonicalPlaces.keys()].sort((left, right) => right.length - left.length);
   const locativePlaceSuffix = (value) => placeForms.find((form) =>
     /^(?:zu|zum)\s/u.test(form)
@@ -235,6 +296,10 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     }
     let parts = String(value).trim().split(/\s+/);
     if (!parts.length) return '';
+    const englishPlaceParticleIndex = parts.findIndex((part, index) => index > 0
+      && part.toLocaleLowerCase() === 'of'
+      && canonicalPlaces.has(parts[index + 1]?.toLocaleLowerCase()));
+    if (englishPlaceParticleIndex >= 0) parts[englishPlaceParticleIndex] = 'zu';
     const byNameIndex = parts.findIndex((part, index) => index > 0 && canonicalByName.has(part.toLocaleLowerCase()));
     const particleIndex = parts.findIndex((part, index) => index > 0 && particleForms.some((particle) => particle.toLocaleLowerCase() === part.toLocaleLowerCase()));
     const familyIndex = byNameIndex >= 0 ? byNameIndex : particleIndex >= 0 ? particleIndex : 1;
