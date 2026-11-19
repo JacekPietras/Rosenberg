@@ -601,6 +601,13 @@
     "showOnMap": false
   },
   {
+    "id": "grunsfeld",
+    "variations": [
+      "Grünsfeld"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "jungen",
     "variations": [
       "zum Jungen"
