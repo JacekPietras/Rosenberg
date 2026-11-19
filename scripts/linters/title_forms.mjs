@@ -24,7 +24,7 @@ export function canonicalTitle(title) {
   const value = String(title).trim().replace(/\s+/g, ' ');
   const whole = value.match(wholePattern);
   if (whole) return groupOf.get(lower(whole[1]));
-  const located = value.match(new RegExp(`^(?:(${forms})\\s+)?(?:zu|zum|ze)\\s+(.+)$`, 'iu'));
+  const located = value.match(new RegExp(`^(?:(${forms})\\s+)?(?:zu|zum|ze|in)\\s+(.+)$`, 'iu'));
   if (!located) return title;
   const place = located[2];
   return located[1] ? `${groupOf.get(lower(located[1]))} zu ${place}` : `zu ${place}`;
