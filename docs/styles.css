@@ -432,6 +432,7 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .image-lightbox-seal-preview { position: absolute; z-index: 2; right: 1rem; bottom: 1rem; display: block; pointer-events: none; transition: left .35s ease, top .35s ease; }
 .image-lightbox-seal-preview[hidden] { display: none; }
 .image-lightbox-seal-preview.is-magnifier, .image-lightbox-seal-preview.is-seal-preview { right: auto; bottom: auto; transform: translate(-50%, -50%); }
+.image-lightbox-seal-preview.is-seal-preview { transform: translate(-50%, calc(-50% + 1.55rem)); }
 .image-lightbox-seal-preview .seal-crop { width: 18rem; height: 18rem; }
 .image-lightbox-seal-preview.is-seal-preview .seal-crop { border: 2px solid #d9485f; }
 .image-lightbox-seal-preview-name { display: block; width: 18rem; height: 2.75rem; box-sizing: border-box; margin: .35rem auto 0; padding: .25rem .4rem; color: var(--ink); background: var(--surface-raised); border: 1px solid #d9485f; border-radius: 4px; text-align: center; }
