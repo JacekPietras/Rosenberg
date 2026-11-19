@@ -41,11 +41,11 @@
           "seals": [
             {
               "person": "Wolf von Rosenberg",
-              "position": "0.4077,0.7727",
-              "size": 0.05899999999999998,
-              "width": 0,
-              "wideningRotation": 0,
-              "rotation": 0,
+              "position": "0.4082,0.7727",
+              "size": 0.05599999999999998,
+              "width": 0.041,
+              "wideningRotation": -9,
+              "rotation": -13.1,
               "type": "full"
             }
           ]

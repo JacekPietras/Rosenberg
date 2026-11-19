@@ -52,8 +52,8 @@
           "seals": [
             {
               "person": "Martin von Uissigheim",
-              "position": "0.2956,0.8164",
-              "size": 0.062499999999999986,
+              "position": "0.2963,0.8183",
+              "size": 0.05549999999999998,
               "width": 0,
               "wideningRotation": 0,
               "rotation": 0,
@@ -61,11 +61,11 @@
             },
             {
               "person": "Ulrich von Rosenberg",
-              "position": "0.1451,0.8329",
-              "size": 0.05249999999999998,
+              "position": "0.1443,0.8340",
+              "size": 0.048999999999999974,
               "width": 0,
               "wideningRotation": 0,
-              "rotation": 0,
+              "rotation": 23.5,
               "type": "full"
             }
           ],

@@ -42,7 +42,7 @@
             {
               "person": "Arnold? von Rosenberg",
               "position": "0.1509,0.9209",
-              "size": 0.04400000000000001,
+              "size": 0.038500000000000006,
               "type": "full",
               "rotation": -6,
               "width": 0.05,
@@ -50,14 +50,17 @@
             },
             {
               "person": "Arnold? von Rosenberg",
-              "position": "0.2397,0.9240",
-              "size": 0.04199999999999997,
-              "type": "full"
+              "position": "0.2396,0.9240",
+              "size": 0.039999999999999966,
+              "type": "full",
+              "width": 0.079,
+              "wideningRotation": -73.5,
+              "rotation": 2.1
             },
             {
               "person": "Arnold? von Rosenberg",
-              "position": "0.3265,0.8956",
-              "size": 0.04799999999999997,
+              "position": "0.3274,0.8950",
+              "size": 0.04199999999999997,
               "type": "full",
               "rotation": -9
             }

@@ -25,11 +25,11 @@
           "seals": [
             {
               "person": "Konrad von Rosenberg",
-              "position": "0.4180,0.8510",
-              "size": 0.08,
-              "width": 0,
-              "wideningRotation": 0,
-              "rotation": 0,
+              "position": "0.4158,0.8550",
+              "size": 0.071,
+              "width": 0.045,
+              "wideningRotation": -0.8,
+              "rotation": -9.7,
               "type": "full"
             }
           ]

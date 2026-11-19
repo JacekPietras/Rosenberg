@@ -24,20 +24,20 @@
           "seals": [
             {
               "person": "?",
-              "position": "0.5049,0.8711",
-              "size": 0.08,
-              "width": 0,
-              "wideningRotation": 0,
-              "rotation": 0,
+              "position": "0.5065,0.8766",
+              "size": 0.078,
+              "width": 0.118,
+              "wideningRotation": 0.5,
+              "rotation": -9.9,
               "type": "full"
             },
             {
               "person": "?",
-              "position": "0.6734,0.8232",
-              "size": 0.08,
+              "position": "0.6738,0.8248",
+              "size": 0.06749999999999999,
               "width": 0,
               "wideningRotation": 0,
-              "rotation": 0,
+              "rotation": 14.9,
               "type": "full"
             }
           ]

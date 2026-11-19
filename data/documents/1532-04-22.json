@@ -66,8 +66,8 @@
           "seals": [
             {
               "person": "Hans von Rosenberg",
-              "position": "0.4416,0.9255",
-              "size": 0.05649999999999998,
+              "position": "0.4416,0.9243",
+              "size": 0.04699999999999997,
               "width": 0,
               "wideningRotation": 0,
               "rotation": 0,
@@ -80,10 +80,10 @@
           "seals": [
             {
               "person": "Hans von Rosenberg",
-              "position": "0.5435,0.9145",
-              "size": 0.05799999999999998,
-              "width": 0,
-              "wideningRotation": 0,
+              "position": "0.5420,0.9148",
+              "size": 0.05549999999999998,
+              "width": 0.095,
+              "wideningRotation": -0.2,
               "rotation": 89,
               "type": "full"
             }

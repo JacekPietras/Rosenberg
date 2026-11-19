@@ -54,12 +54,12 @@
           "seals": [
             {
               "person": "?",
-              "position": "0.3654,0.8308",
+              "position": "0.3660,0.8313",
               "size": 0.039499999999999966,
               "width": 0,
               "wideningRotation": 0,
-              "rotation": 0,
-              "type": "full"
+              "rotation": -26.5,
+              "type": "contrepalle"
             }
           ]
         },

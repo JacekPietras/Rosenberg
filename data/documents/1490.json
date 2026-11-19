@@ -44,7 +44,9 @@
               "person": "Jörg von Rosenberg",
               "position": "0.2411,0.8866",
               "size": 0.039999999999999966,
-              "type": "full"
+              "type": "full",
+              "width": 0.045,
+              "wideningRotation": 0.7
             }
           ]
         },
