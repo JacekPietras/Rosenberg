@@ -24,28 +24,20 @@
           "person": "Hans von Gemmingen"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Konrad von Weinsberg"
         },
         {
           "place": "rinderfeld"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "was among the issuers who confirmed that Konrad von Weinsberg and his wife Anna had pledged Weikersheim Castle and the named places to them with the consent of the Bishop of Würzburg, their liege lord.",
-          "mention": [
-            {
-              "person": "Konrad von Weinsberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "was among the issuers who confirmed that Konrad von Weinsberg and his wife Anna had pledged Weikersheim Castle and the named places to them with the consent of the Bishop of Würzburg, their liege lord."
         }
       ]
     }

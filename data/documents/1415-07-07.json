@@ -14,16 +14,7 @@
           "place": "boxberg"
         },
         {
-          "person": "Christiana von Handschuhsheim"
-        },
-        {
           "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
         },
         {
           "place": "jagstberg"
@@ -47,12 +38,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "sold their properties in Hochhausen, Werbach, Niklashausen, and Höhefeld to the Grünau Charterhouse together with his wife Christine von Handschuhsheim.",
-          "mention": [
-            {
-              "person": "Christiana von Handschuhsheim"
-            }
-          ]
+          "content": "sold their properties in Hochhausen, Werbach, Niklashausen, and Höhefeld to the Grünau Charterhouse together with his wife Christine von Handschuhsheim."
         },
         {
           "person": "Hans von Rosenberg",

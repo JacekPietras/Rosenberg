@@ -9,9 +9,6 @@
       "mention": [
         {
           "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Margaretha von Hirschhorn"
         }
       ],
       "facts": [
@@ -29,12 +26,7 @@
             "Vitzthum zu Amberg"
           ],
           "type": "generic",
-          "content": "was owed 2,000 florins by Ruprecht for the Zugeld of his wife Margarethe von Hirschhorn.",
-          "mention": [
-            {
-              "person": "Margaretha von Hirschhorn"
-            }
-          ]
+          "content": "was owed 2,000 florins by Ruprecht for the Zugeld of his wife Margarethe von Hirschhorn."
         },
         {
           "person": "vitztum_zu_Heidelberg",

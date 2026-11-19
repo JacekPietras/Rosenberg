@@ -5,7 +5,7 @@ import { escapeHtml } from '../rendering/html.js';
 
 export function renderFactsView(facts, { people = [], personNames = [], inlineMarkup, itemClass = () => '', defaultDate = '', listClass = '', sourceHref = () => '', mention = [], places = [] }) {
   facts = facts.filter(isTypedFact);
-  const mentionRows = renderMentionRows(mention, facts, people, places);
+  const mentionRows = renderMentionRows(mention, places);
   if (!facts.length && !mentionRows) return '';
   const knownNames = [...personNames, ...facts.filter(isTypedFact).flatMap((fact) => [fact.person, fact.of])
     .filter((value) => typeof value === 'string' && !people.some((person) => person.id === value))];
@@ -22,15 +22,15 @@ export function renderFactsView(facts, { people = [], personNames = [], inlineMa
   }).join('')}${mentionRows}</ul>`;
 }
 
-function renderMentionRows(mention, facts, people, places) {
+const titleText = (value) => Array.isArray(value) ? value.filter((title) => typeof title === 'string' && title.trim()).join(', ') : '';
+
+function renderMentionRows(mention, places) {
   if (!Array.isArray(mention) || !mention.length) return '';
-  const inFacts = new Set(facts.flatMap((fact) => [fact.person, fact.of])
-    .filter((value) => typeof value === 'string')
-    .map((value) => (people.find((person) => person.id === value)?.name || value).toLocaleLowerCase()));
   const row = (label, links) => links.length
     ? `<li class="fact-mention"><span class="fact-date" aria-hidden="true"></span><span class="fact-text">${label} ${links.join(', ')}</span></li>` : '';
-  const personLinks = [...new Set(mention.filter((item) => typeof item?.person === 'string' && !inFacts.has(item.person.toLocaleLowerCase())).map((item) => item.person))]
-    .map((name) => `<a class="person-link ${personMentionClass(name)}" href="?person=${encodeURIComponent(name)}">${escapeHtml(name)}</a>`);
+  const personLinks = [...new Map(mention.filter((item) => typeof item?.person === 'string')
+    .map((item) => [`${item.person}\u0000${titleText(item.personTitle)}`, item])).values()]
+    .map(({ person, personTitle }) => `<a class="person-link ${personMentionClass(person)}" href="?person=${encodeURIComponent(person)}">${escapeHtml(person)}</a>${titleText(personTitle) ? `, ${escapeHtml(titleText(personTitle))}` : ''}`);
   const placeLinks = [...new Set(mention.filter((item) => typeof item?.place === 'string').map((item) => places.find((place) => place.id === item.place)?.name || item.place))]
     .map((name) => `<a class="place-link" href="?place=${encodeURIComponent(name)}">${escapeHtml(name)}</a>`);
   return row('Mentions also people:', personLinks) + row('Mentions also places:', placeLinks);

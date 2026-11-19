@@ -15,9 +15,6 @@
           "place": "bretzingen"
         },
         {
-          "person": "Georg von Hartheim"
-        },
-        {
           "person": "Ulrich von Rosenberg"
         }
       ],
@@ -25,18 +22,7 @@
         {
           "person": "Georg von Hartheim",
           "type": "generic",
-          "content": "agreed to allow Anselm von Rosenberg and his heirs to redeem the share of Bretzingen sold to him by Ulrich von Rosenberg for 1,000 guilders.",
-          "mention": [
-            {
-              "person": "Anselm von Rosenberg"
-            },
-            {
-              "place": "bretzingen"
-            },
-            {
-              "person": "Ulrich von Rosenberg"
-            }
-          ]
+          "content": "agreed to allow Anselm von Rosenberg and his heirs to redeem the share of Bretzingen sold to him by Ulrich von Rosenberg for 1,000 guilders."
         }
       ],
       "img": [

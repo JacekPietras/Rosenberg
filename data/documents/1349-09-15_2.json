@@ -19,10 +19,10 @@
           "person": "Eberhard of Rosenberg"
         },
         {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Knecht"
-          ]
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Ludwig Mönch"
         },
         {
           "person": "Ludwig Mönch von Rosenberg"
@@ -41,21 +41,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "received the Mainz foundation’s half share in Nagelsberg Castle on the Kocher in pledge together with Ludewig Münch and Konrad von Rosenberg, Knecht.",
-          "mention": [
-            {
-              "person": "Konrad von Rosenberg",
-              "personTitle": [
-                "Knecht"
-              ]
-            },
-            {
-              "person": "Ludwig Mönch"
-            },
-            {
-              "place": "nagelsberg-castle"
-            }
-          ]
+          "content": "received the Mainz foundation’s half share in Nagelsberg Castle on the Kocher in pledge together with Ludewig Münch and Konrad von Rosenberg, Knecht."
         },
         {
           "person": "Konrad von Rosenberg",
@@ -63,18 +49,7 @@
             "Knecht"
           ],
           "type": "generic",
-          "content": "received the Mainz foundation’s half share in Nagelsberg Castle on the Kocher in pledge together with Eberhard von Rosenberg and Ludewig Münch.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg"
-            },
-            {
-              "person": "Ludwig Mönch"
-            },
-            {
-              "place": "nagelsberg-castle"
-            }
-          ]
+          "content": "received the Mainz foundation’s half share in Nagelsberg Castle on the Kocher in pledge together with Eberhard von Rosenberg and Ludewig Münch."
         }
       ]
     }

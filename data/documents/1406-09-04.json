@@ -14,19 +14,10 @@
           "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Christiana von Handschuhsheim"
-        },
-        {
           "person": "Eberhard von Rosenberg"
         },
         {
           "place": "eiersheim"
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Reinhard von Uissigheim"
         }
       ],
       "facts": [
@@ -37,15 +28,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "issued an Erbbestandsbrief for Kunz Pfister and Kunz Fuchs of Eiersheim concerning meadows, rents, and dues above Massenbach together with Christina von Handschuhsheim.",
-          "mention": [
-            {
-              "person": "Christiana von Handschuhsheim"
-            },
-            {
-              "place": "eiersheim"
-            }
-          ]
+          "content": "issued an Erbbestandsbrief for Kunz Pfister and Kunz Fuchs of Eiersheim concerning meadows, rents, and dues above Massenbach together with Christina von Handschuhsheim."
         },
         {
           "person": "arnold_boxberg",

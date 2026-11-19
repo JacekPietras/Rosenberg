@@ -10,12 +10,12 @@
         {
           "subject": "A division concerning residents of Rosenberg",
           "type": "generic",
-          "content": "was the subject of a case brought by Johann Baumann against Andreas Albrecht and associates of Rosenberg seeking its correction.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was the subject of a case brought by Johann Baumann against Andreas Albrecht and associates of Rosenberg seeking its correction."
+        }
+      ],
+      "mention": [
+        {
+          "place": "rosenberg-town"
         }
       ]
     }

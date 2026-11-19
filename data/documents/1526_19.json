@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "received Rothenburg’s response to his letter of exculpation.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "received Rothenburg’s response to his letter of exculpation."
         }
       ]
     }

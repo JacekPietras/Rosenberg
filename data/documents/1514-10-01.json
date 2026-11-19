@@ -18,6 +18,9 @@
           ]
         },
         {
+          "person": "Hans von Seckendorff"
+        },
+        {
           "person": "Leonhard von Rosenberg"
         }
       ],
@@ -28,15 +31,7 @@
             "Amtmann zu Uffenheim"
           ],
           "type": "generic",
-          "content": "made an agreement with Hans von Seckendorff-Aberdar and Asmus von Ehenheim concerning payment by Kaspar Schenk von Schenkenstein to Anna Göldlin and her children after the killing of Heinz Göldlin.",
-          "mention": [
-            {
-              "person": "Caspar Schenk"
-            },
-            {
-              "person": "Hans von Seckendorff"
-            }
-          ]
+          "content": "made an agreement with Hans von Seckendorff-Aberdar and Asmus von Ehenheim concerning payment by Kaspar Schenk von Schenkenstein to Anna Göldlin and her children after the killing of Heinz Göldlin."
         }
       ]
     }

@@ -17,12 +17,6 @@
           "person": "Eberhard Rüd"
         },
         {
-          "person": "Konrad von Uissigheim",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
           "place": "rosenberg-town"
         },
         {
@@ -36,12 +30,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "heard the named witnesses in the dispute between Bronnbach Abbey and Heinz, son of the late Siegfried Steltzer of Reicholzheim.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            }
-          ]
+          "content": "heard the named witnesses in the dispute between Bronnbach Abbey and Heinz, son of the late Siegfried Steltzer of Reicholzheim."
         },
         {
           "person": "Weigrecht Rude",
@@ -49,12 +38,7 @@
             "genannt von Rosenberg"
           ],
           "type": "generic",
-          "content": "heard the named witnesses in the dispute between Bronnbach Abbey and Heinz, son of the late Siegfried Steltzer of Reicholzheim.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            }
-          ]
+          "content": "heard the named witnesses in the dispute between Bronnbach Abbey and Heinz, son of the late Siegfried Steltzer of Reicholzheim."
         },
         {
           "person": "Konrad von Uissigheim",

@@ -9,9 +9,6 @@
       "english": "Margrave Christoph of Baden presents to Philipp von Rosenberg, provost of the St. German foundation in Speyer, Kaspar Michael Nicolai von Beiertheim (Burthan) for the altar benefice at St. Sebastian in the parish church of Knielingen, which became vacant through the resignation of Johann Suser.\n\nDuration: 1494 March 27",
       "mention": [
         {
-          "person": "Philipp von Rosenberg"
-        },
-        {
           "place": "speyer"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "was provost of St. German in Speyer when Margrave Christoph of Baden presented Kaspar Michael Nicolai von Beiertheim to an altar benefice at Knielingen.",
-          "mention": [
-            {
-              "place": "speyer"
-            }
-          ]
+          "content": "was provost of St. German in Speyer when Margrave Christoph of Baden presented Kaspar Michael Nicolai von Beiertheim to an altar benefice at Knielingen."
         }
       ],
       "img": [

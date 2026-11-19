@@ -9,9 +9,6 @@
       "english": "Fief submission: Asmus von Rosenberg submits to the bishop and foundation of Würzburg various rents, incomes, and rights at Berchtheim, Martinsheim, Gnodstadt and Gülchsheim as fiefs.",
       "mention": [
         {
-          "person": "Asmus von Rosenberg"
-        },
-        {
           "place": "wurzburg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Asmus von Rosenberg",
           "type": "generic",
-          "content": "made rents, income and rights at Berchtheim, Martinsheim, Gnodstadt and Gülchsheim fiefs of the bishop and foundation of Würzburg.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "made rents, income and rights at Berchtheim, Martinsheim, Gnodstadt and Gülchsheim fiefs of the bishop and foundation of Würzburg."
         }
       ]
     }

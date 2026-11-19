@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "hutten"
-        },
-        {
-          "person": "Thomas von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "was assigned to the army with Georg, Graf von Bitsch, and Agapet von Hutten by Kaiser Maximilian at the camp before Padua.",
-          "mention": [
-            {
-              "place": "hutten"
-            }
-          ]
+          "content": "was assigned to the army with Georg, Graf von Bitsch, and Agapet von Hutten by Kaiser Maximilian at the camp before Padua."
         }
       ]
     }

@@ -27,9 +27,6 @@
           ]
         },
         {
-          "person": "Lorenz von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
         }
       ],
@@ -37,28 +34,12 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of the town of Aub as an hereditary fief from Pfalzgraf Friedrich together with his Vetter Lorenz von Rosenberg.",
-          "mention": [
-            {
-              "place": "aub"
-            },
-            {
-              "person": "Lorenz von Rosenberg"
-            }
-          ]
+          "content": "received a quarter of the town of Aub as an hereditary fief from Pfalzgraf Friedrich together with his Vetter Lorenz von Rosenberg."
         },
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of the town of Aub as an hereditary fief from Pfalzgraf Friedrich together with his Vetter Zaisolf von Rosenberg.",
-          "mention": [
-            {
-              "place": "aub"
-            },
-            {
-              "person": "Zaisolph von Rosenberg"
-            }
-          ]
+          "content": "received a quarter of the town of Aub as an hereditary fief from Pfalzgraf Friedrich together with his Vetter Zaisolf von Rosenberg."
         },
         {
           "person": "Zaisolph von Rosenberg",

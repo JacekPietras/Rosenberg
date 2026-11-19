@@ -20,9 +20,6 @@
           "person": "Eberhard"
         },
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Engelhard von Rosenberg"
         },
         {
@@ -84,21 +81,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "sold various rents and dues from properties in Uissigheim, Dienstadt, Brehmen, Sindolsheim, and at the Eulschirbenmühle to Bronnbach Abbey.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            },
-            {
-              "place": "dienstadt"
-            },
-            {
-              "place": "sindolsheim-church"
-            },
-            {
-              "place": "uissigheim"
-            }
-          ]
+          "content": "sold various rents and dues from properties in Uissigheim, Dienstadt, Brehmen, Sindolsheim, and at the Eulschirbenmühle to Bronnbach Abbey."
         }
       ],
       "img": [

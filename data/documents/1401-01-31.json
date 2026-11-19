@@ -8,9 +8,6 @@
       "english": "Eberhard von Rosenberg der Jüngere, son of Eberhard, testifies that he transferred Jagstberg Castle, which was a feudal cedent of the Würzburg Abbey, to his brother-in-law Hans Hofwart in return for 2,000 Rhenish guilders. He received the castle from the Würzburg canon Hans Hofwart for his nephew's daughter, Margaretha, the wife of the exhibitor. Witnesses: Arnold von Rosenberg; Arnold von Rosenberg; Kuno von Rosenberg",
       "mention": [
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
           "person": "Eberhard von Rosenberg",
           "personTitle": [
             "der Jüngere"
@@ -18,9 +15,6 @@
         },
         {
           "place": "jagstberg"
-        },
-        {
-          "person": "Kuno von Rosenberg"
         },
         {
           "place": "wurzburg"
@@ -76,12 +70,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "pledged Jagstberg Castle to his brother-in-law Hans Hofwart for 2,000 Rhenish guilders.",
-          "mention": [
-            {
-              "place": "jagstberg"
-            }
-          ]
+          "content": "pledged Jagstberg Castle to his brother-in-law Hans Hofwart for 2,000 Rhenish guilders."
         },
         {
           "person": "eberhard_jagstberg",
@@ -89,15 +78,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "held Jagstberg Castle as a fief from the Würzburg Abbey.",
-          "mention": [
-            {
-              "place": "jagstberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "held Jagstberg Castle as a fief from the Würzburg Abbey."
         },
         {
           "person": "eberhard_jagstberg",
@@ -105,32 +86,17 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "had received Jagstberg Castle from Hans Hofwart for Margaretha, his niece and his wife.",
-          "mention": [
-            {
-              "place": "jagstberg"
-            }
-          ]
+          "content": "had received Jagstberg Castle from Hans Hofwart for Margaretha, his niece and his wife."
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "witnessed the pledge of Jagstberg Castle.",
-          "mention": [
-            {
-              "place": "jagstberg"
-            }
-          ]
+          "content": "witnessed the pledge of Jagstberg Castle."
         },
         {
           "person": "Kuno von Rosenberg",
           "type": "generic",
-          "content": "witnessed the pledge of Jagstberg Castle.",
-          "mention": [
-            {
-              "place": "jagstberg"
-            }
-          ]
+          "content": "witnessed the pledge of Jagstberg Castle."
         }
       ]
     }

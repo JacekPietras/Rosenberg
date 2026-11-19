@@ -36,6 +36,9 @@
         },
         {
           "place": "sindolsheim-church"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [
@@ -47,37 +50,12 @@
         {
           "person": "vogt_zu_Durn",
           "type": "generic",
-          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold the Hohe Mühle beside Rosenberg Castle to Schöntal Abbey.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "schoental-monastery"
-            },
-            {
-              "place": "wallduern"
-            }
-          ]
+          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold the Hohe Mühle beside Rosenberg Castle to Schöntal Abbey."
         },
         {
           "person": "vogt_zu_Durn",
           "type": "generic",
-          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold another mill on the Kirnau between Sindolsheim and Rosenberg to Schöntal Abbey.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "schoental-monastery"
-            },
-            {
-              "place": "sindolsheim-church"
-            },
-            {
-              "place": "wallduern"
-            }
-          ]
+          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold another mill on the Kirnau between Sindolsheim and Rosenberg to Schöntal Abbey."
         },
         {
           "person": "Arnold von Rosenberg",

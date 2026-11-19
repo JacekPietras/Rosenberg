@@ -16,27 +16,13 @@
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Konrad von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "received with his Vettern confirmation from King Wenzel of the court and other rights at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "König Wenceslaus",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "received with his Vettern confirmation from King Wenzel of the court and other rights at Boxberg."
         }
       ]
     }

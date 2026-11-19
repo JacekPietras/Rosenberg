@@ -48,21 +48,16 @@
         },
         {
           "place": "lauda"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "subject": "Lauda",
           "type": "generic",
-          "content": "was to be redeemed by the bishop of Würzburg from Gerlach von Hohenlohe under authorization from the dukes of Bayern.",
-          "mention": [
-            {
-              "person": "Gerlach von Hohenlohe"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "was to be redeemed by the bishop of Würzburg from Gerlach von Hohenlohe under authorization from the dukes of Bayern."
         }
       ]
     },
@@ -93,12 +88,7 @@
         {
           "subject": "Lauda",
           "type": "generic",
-          "content": "was to be sold to the Würzburg church by the dukes of Bayern as part of a debt settlement.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "was to be sold to the Würzburg church by the dukes of Bayern as part of a debt settlement."
         }
       ]
     },

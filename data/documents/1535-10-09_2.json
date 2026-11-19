@@ -9,9 +9,6 @@
       "english": "Georg von Rosenberg sells to Elector Ludwig V of the Palatinate also the other half of the village of Schweigern together with the castle there, as well as the village of Windischbuch and the Seehof with appurtenances for 12,190 gulden.\n\nPeriod: October 9, 1535",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "schweigern"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "sold the other half of the village of Schweigern, the castle there, Windischbuch, and the Seehof with their appurtenances to Kurfürst Ludwig V of the Palatinate.",
-          "mention": [
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "sold the other half of the village of Schweigern, the castle there, Windischbuch, and the Seehof with their appurtenances to Kurfürst Ludwig V of the Palatinate."
         }
       ],
       "img": [

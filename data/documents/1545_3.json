@@ -18,7 +18,10 @@
           "place": "baldersheim"
         },
         {
-          "person": "Lorenz von Rosenberg"
+          "person": "Melchior of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         },
         {
           "place": "wurzburg"
@@ -28,18 +31,7 @@
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "received half of the fiefs at Baldersheim as Mannlehen from Bishop Melchior of Würzburg.",
-          "mention": [
-            {
-              "place": "baldersheim"
-            },
-            {
-              "person": "Melchior of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received half of the fiefs at Baldersheim as Mannlehen from Bishop Melchior of Würzburg."
         }
       ]
     }

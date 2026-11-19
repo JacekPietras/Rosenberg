@@ -22,6 +22,9 @@
         },
         {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -31,12 +34,7 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "received half of Riedbach village and its toll as a fief from the Bishop of Würzburg.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "received half of Riedbach village and its toll as a fief from the Bishop of Würzburg."
         }
       ],
       "img": [

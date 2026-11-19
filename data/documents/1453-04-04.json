@@ -33,9 +33,6 @@
           "person": "Heinrich von Seckendorf"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
         },
         {
@@ -51,15 +48,7 @@
         {
           "subject": "the heirs of Konrad von Rosenberg",
           "type": "generic",
-          "content": "transferred Amt Klingenberg to Bishop Gottfried of Würzburg, who assumed the heirs’ outstanding debts in return.",
-          "mention": [
-            {
-              "person": "Gotfried of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "transferred Amt Klingenberg to Bishop Gottfried of Würzburg, who assumed the heirs’ outstanding debts in return."
         }
       ]
     }

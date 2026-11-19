@@ -9,9 +9,6 @@
       "english": "Margrave Christoph I of Baden presents to the Canon of St. German and Mauritius in Speyer, Philipp von Rosenberg, as Dean of the Collegiate Foundation at Ettlingen, following the voluntary resignation of Erasmus Clar, Magister Johannes Molitoris.\n\nPeriod: December 21, 1496 (dated on the feast day of Blessed Thomas the Apostle, 1496)",
       "mention": [
         {
-          "person": "Philipp von Rosenberg"
-        },
-        {
           "place": "speyer"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "served as canon of St. German and Mauritius in Speyer and dean of the collegiate foundation at Ettlingen.",
-          "mention": [
-            {
-              "place": "speyer"
-            }
-          ]
+          "content": "served as canon of St. German and Mauritius in Speyer and dean of the collegiate foundation at Ettlingen."
         }
       ],
       "img": [

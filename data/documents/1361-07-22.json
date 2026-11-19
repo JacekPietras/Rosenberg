@@ -14,12 +14,6 @@
           "person": "Götz von Berlichingen"
         },
         {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Kraft von Hohenlohe"
         }
       ],
@@ -30,12 +24,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "examined witnesses concerning the winepress rights claimed by Kraft von Hohenlohe and Boppe von Alotzhein at Rohenkein.",
-          "mention": [
-            {
-              "person": "Kraft von Hohenlohe"
-            }
-          ]
+          "content": "examined witnesses concerning the winepress rights claimed by Kraft von Hohenlohe and Boppe von Alotzhein at Rohenkein."
         },
         {
           "person": "Hans von Rosenberg",
@@ -43,12 +32,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "learned that earlier disputes between Albrecht von Hohenlohe and Boppe’s father over these rights had been settled by Berngern von Urhusen and Wernhern Kornharten.",
-          "mention": [
-            {
-              "person": "Albrecht von Hohenlohe"
-            }
-          ]
+          "content": "learned that earlier disputes between Albrecht von Hohenlohe and Boppe’s father over these rights had been settled by Berngern von Urhusen and Wernhern Kornharten."
         },
         {
           "person": "Hans von Rosenberg",
@@ -62,12 +46,7 @@
           "person": "Bernger von Urhusen",
           "personDeceased": true,
           "type": "generic",
-          "content": "had settled, together with Wernhern Kornharten, the earlier disputes between Albrecht von Hohenlohe and Boppe’s father over the winepress rights.",
-          "mention": [
-            {
-              "person": "Albrecht von Hohenlohe"
-            }
-          ]
+          "content": "had settled, together with Wernhern Kornharten, the earlier disputes between Albrecht von Hohenlohe and Boppe’s father over the winepress rights."
         }
       ]
     }

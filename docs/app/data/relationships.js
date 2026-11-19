@@ -13,10 +13,10 @@ function kinshipCanonicalizer(text) {
     .map((part) => forms.get(normalize(part)) ?? part).join('');
 }
 
-function contextParticipant(text, reference, people, holder) {
-  if (typeof text !== 'string' || typeof reference !== 'string' || !reference) return false;
-  if (people.some((person) => person.id === reference)) return text.includes(`[${reference}]`);
-  return Array.isArray(holder?.mention) && holder.mention.some((item) => item?.person === reference);
+function contextParticipant(mentions, reference, people) {
+  if (!Array.isArray(mentions) || typeof reference !== 'string' || !reference) return false;
+  return !people.some((person) => person.id === reference)
+    && mentions.some((item) => item?.person === reference);
 }
 
 export function registryIdentities(people) {
@@ -140,8 +140,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
       const checked = new Map();
       const sourceFact = async (source, view) => {
         if (!sourcePath.test(source.path) || !Object.hasOwn(metadata.inputs, source.path)
-          || !(/\/(facts|guesses)\/[0-9]+$/.test(source.pointer)
-            || source.path.startsWith('data/documents/') && /^\/entries\/[0-9]+\/english$/.test(source.pointer))
+          || !(/\/(facts|guesses)\/[0-9]+$/.test(source.pointer) || /^\/entries\/[0-9]+\/mention$/.test(source.pointer))
           || view === 'facts' && source.pointer.includes('/guesses/')) throw new Error('Invalid reconstructed source');
         const key = JSON.stringify(source);
         if (!checked.has(key)) {
@@ -168,15 +167,9 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
             const fact = await sourceFact(mention.source, view);
             let reference;
             if (mention.field === 'text') {
-              if (typeof fact === 'string' ? !mention.source.pointer.endsWith('/english') : fact?.type !== 'generic') {
-                throw new Error('Invalid reconstructed participant');
-              }
-              const text = typeof fact === 'string' ? fact : fact?.type === 'generic' && typeof fact.content === 'string'
-                ? (fact.person ? `[${fact.person}] ` : '') + fact.content : null;
+              if (!Array.isArray(fact)) throw new Error('Invalid reconstructed participant');
               reference = mention.reference;
-              const holder = typeof fact === 'string'
-                ? resolveEvidencePointer(documents.get(mention.source.path), mention.source.pointer.replace(/\/[^/]+$/, '')) : fact;
-              if (!contextParticipant(text, reference, people, holder)) throw new Error('Invalid reconstructed context participant');
+              if (!contextParticipant(fact, reference, people)) throw new Error('Invalid reconstructed context participant');
             } else {
               if (!fact || !['person', 'of'].includes(mention.field) || typeof fact[mention.field] !== 'string') throw new Error('Invalid reconstructed participant');
               reference = fact[mention.field];

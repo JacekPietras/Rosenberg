@@ -38,66 +38,28 @@
         },
         {
           "place": "roettingen"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "held a quarter share of the castle, town, and Amt Röttingen, redeemable.",
-          "mention": [
-            {
-              "place": "roettingen"
-            }
-          ]
+          "content": "held a quarter share of the castle, town, and Amt Röttingen, redeemable."
         },
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "transferred his quarter share of the castle, town, and Amt Röttingen to Ulrich von Rosenberg.",
-          "mention": [
-            {
-              "place": "roettingen"
-            },
-            {
-              "person": "Ulrich von Rosenberg"
-            }
-          ]
+          "content": "transferred his quarter share of the castle, town, and Amt Röttingen to Ulrich von Rosenberg."
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "acquired one quarter of the castle, town, and Amt Röttingen from the widow of Heinrich von Sickingen and another quarter from Kunz von Rosenberg, thereby acquiring half; he pledged that half to Anselm von Rosenberg, Ritter.",
-          "mention": [
-            {
-              "person": "Anselm von Rosenberg",
-              "personTitle": [
-                "Ritter"
-              ]
-            },
-            {
-              "person": "Heinrich von Sickingen"
-            },
-            {
-              "person": "Kunz von Rosenberg"
-            },
-            {
-              "place": "roettingen"
-            }
-          ]
+          "content": "acquired one quarter of the castle, town, and Amt Röttingen from the widow of Heinrich von Sickingen and another quarter from Kunz von Rosenberg, thereby acquiring half; he pledged that half to Anselm von Rosenberg, Ritter."
         },
         {
           "person": "Anselm von Rosenberg",
           "type": "generic",
-          "content": "pledged the half share of the castle, town, and Amt Röttingen to Peter von Stettenberg and Bernhard von Ehenheim.",
-          "mention": [
-            {
-              "place": "roettingen"
-            }
-          ]
+          "content": "pledged the half share of the castle, town, and Amt Röttingen to Peter von Stettenberg and Bernhard von Ehenheim."
         }
       ],
       "img": [

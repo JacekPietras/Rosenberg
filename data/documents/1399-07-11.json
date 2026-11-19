@@ -16,12 +16,6 @@
           "person": "Friedrich von Nuremberg"
         },
         {
-          "person": "Margaretha von Rosenberg"
-        },
-        {
-          "person": "Michael von Seinsheim"
-        },
-        {
           "place": "schwarzenberg"
         }
       ],
@@ -34,15 +28,7 @@
         {
           "person": "Friedrich VI. von Nuremberg",
           "type": "generic",
-          "content": "granted Margaretha von Rosenberg, wife of Michael von Seinsheim, lifetime use of the Vogtei Astheim and its appurtenances for her dowry.",
-          "mention": [
-            {
-              "person": "Margaretha von Rosenberg"
-            },
-            {
-              "person": "Michael von Seinsheim"
-            }
-          ]
+          "content": "granted Margaretha von Rosenberg, wife of Michael von Seinsheim, lifetime use of the Vogtei Astheim and its appurtenances for her dowry."
         }
       ]
     }

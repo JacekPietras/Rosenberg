@@ -9,9 +9,6 @@
       "english": "Correspondence of the Deutschmeister with Albrecht von Rosenberg et al., together with appendices, regarding the arrest of Albrecht von Rosenberg at the Imperial Diet in Augsburg due to his involvement in the Grumbach affairs and his release. (Files of the Teutonic Order)\n\nTime span: 1566-1571\n\nContains: Including: Testimony of Margrave Karl II of Baden-Durlach and Johannes Sturm in Strasbourg.",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "grumbach"
         }
       ],
@@ -20,11 +17,6 @@
           "person": "Albrecht von Rosenberg",
           "type": "generic",
           "content": "was arrested at the Diet of Augsburg for his involvement in the Grumbach disputes and was later released.",
-          "mention": [
-            {
-              "place": "grumbach"
-            }
-          ],
           "date": "1571"
         }
       ]

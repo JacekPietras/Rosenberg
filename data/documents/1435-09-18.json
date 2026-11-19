@@ -12,12 +12,6 @@
           "place": "bischofsheim"
         },
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
           "place": "wallduern"
         }
       ],
@@ -46,22 +40,12 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "held castle fiefs at Bischofsheim from Archbishop Dietrich of Mainz.",
-          "mention": [
-            {
-              "place": "bischofsheim"
-            }
-          ]
+          "content": "held castle fiefs at Bischofsheim from Archbishop Dietrich of Mainz."
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "held a fief from Archbishop Dietrich of Mainz consisting of revenue from the cellarer’s office at Dürn.",
-          "mention": [
-            {
-              "place": "wallduern"
-            }
-          ]
+          "content": "held a fief from Archbishop Dietrich of Mainz consisting of revenue from the cellarer’s office at Dürn."
         }
       ]
     }

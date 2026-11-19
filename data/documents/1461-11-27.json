@@ -9,9 +9,6 @@
       "english": "The archive summary identifies the aforementioned Anselm as Anselm von Rosenberg. The transcription says that he hanged himself in Schloss Brassoldshaim during the rule of Bishop Hans von Grumbach; the bishop then took possession of his goods, property, and pledges, and pledged Amt Brassoldshaim to Heinrich Mufflinger, called Candorfer, Ritter, and his wife Bénigne for 3,000 florins on the Friday after St Catherine’s Day in 1461.",
       "mention": [
         {
-          "person": "Anselm von Rosenberg"
-        },
-        {
           "person": "Hans von Grumbach",
           "personTitle": [
             "Bishop"
@@ -31,12 +28,7 @@
             "Bischof"
           ],
           "type": "generic",
-          "content": "took possession of Anselm von Rosenberg’s goods, property, and pledges.",
-          "mention": [
-            {
-              "person": "Anselm von Rosenberg"
-            }
-          ]
+          "content": "took possession of Anselm von Rosenberg’s goods, property, and pledges."
         },
         {
           "person": "Hans von Grumbach",

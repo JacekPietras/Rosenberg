@@ -15,9 +15,6 @@
       "english": "Philipp Adolf [von Ehrenberg], Bishop of Würzburg etc., Duke of Franconia, enfeoffs Adolf Christoph von Rosenberg with the aforementioned fiefdoms at Baldersheim, Baibach and Burgerroth [according to the letter of enfeoffment dated 21 February 1537]. -\n\nSealer: the issuer.\n\nOriginal, parchment, seal attached. Cf. Reg. No. 1059. - No. 2311.\n\nReg. No. 2437",
       "mention": [
         {
-          "person": "Adolf Christoph von Rosenberg"
-        },
-        {
           "place": "baldersheim"
         },
         {
@@ -28,15 +25,7 @@
         {
           "person": "Adolf Christoph von Rosenberg",
           "type": "generic",
-          "content": "received the specified fiefs at Baldersheim, Baibach and Burgerroth from the Bishop of Würzburg.",
-          "mention": [
-            {
-              "place": "baldersheim"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "received the specified fiefs at Baldersheim, Baibach and Burgerroth from the Bishop of Würzburg."
         }
       ]
     }

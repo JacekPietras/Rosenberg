@@ -10,16 +10,7 @@
       "english": "During the rule of Rudolf von Scherenberg, Bischof, many raids and acts of robbery took place in the Odenwald by Georg, Michael, and Arnold von Rosenberg and their accomplices from Boxberg. In particular, Georg captured Weiprecht Sutzel of Mergentheim without declaring a feud, and would neither answer nor acknowledge whether he could honourably claim to have captured and held him. Therefore Adolf, Bischof von Mainz, Friedrich, Pfalzgraf bei Rhein (identified in the summary as Friedrich I), and Rudolf von Scherenberg, Bischof in Würzburg, agreed on the Monday before St Anthony’s Day in 1470 to march against Boxberg and take it, according to the first register of Rudolf’s contracts, fol. 205, and the Register of Acquisitions, fol. 177. Editorial note: The original is in the State Archives of Würzburg, W.U. 47/117b.",
       "mention": [
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
           "place": "boxberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Michael von Rosenberg"
         },
         {
           "place": "wurzburg"
@@ -29,32 +20,17 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "took part in raids and robberies in the Odenwald with his accomplices from Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "took part in raids and robberies in the Odenwald with his accomplices from Boxberg."
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "took part in raids and robberies in the Odenwald with his accomplices from Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "took part in raids and robberies in the Odenwald with his accomplices from Boxberg."
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "took part in raids and robberies in the Odenwald with his accomplices from Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "took part in raids and robberies in the Odenwald with his accomplices from Boxberg."
         },
         {
           "person": "Georg von Rosenberg",
@@ -64,12 +40,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was among those against whom Bishop Rudolf, Pfalzgraf Friedrich, and Bishop Adolf agreed to march on Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "was among those against whom Bishop Rudolf, Pfalzgraf Friedrich, and Bishop Adolf agreed to march on Boxberg."
         }
       ],
       "img": [

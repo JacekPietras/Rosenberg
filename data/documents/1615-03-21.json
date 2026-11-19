@@ -9,13 +9,7 @@
       "english": "Margarethe née Ebel, widow, together with Ruffina, Maria and Kunigunde Elisabeth, mother and daughters of Dienheim, acknowledge receipt from Albrecht Christoph and Georg Siegmund von Rosenberg of 200 gulden that they still had to claim from the sale of Unterschüpf castle.\n\nPeriod: 1615 March 21 (11./21.03.1615)",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
           "place": "dienheim"
-        },
-        {
-          "person": "Georg Siegmund von Rosenberg"
         },
         {
           "place": "unterschuepf"
@@ -25,28 +19,12 @@
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received 200 Gulden from the Dienheim widows and daughters, still owed from the sale of Schloss Unterschüpf.",
-          "mention": [
-            {
-              "place": "dienheim"
-            },
-            {
-              "place": "unterschuepf"
-            }
-          ]
+          "content": "received 200 Gulden from the Dienheim widows and daughters, still owed from the sale of Schloss Unterschüpf."
         },
         {
           "person": "Georg Siegmund von Rosenberg",
           "type": "generic",
-          "content": "received 200 Gulden from the Dienheim widows and daughters, still owed from the sale of Schloss Unterschüpf.",
-          "mention": [
-            {
-              "place": "dienheim"
-            },
-            {
-              "place": "unterschuepf"
-            }
-          ]
+          "content": "received 200 Gulden from the Dienheim widows and daughters, still owed from the sale of Schloss Unterschüpf."
         }
       ],
       "img": [

@@ -9,9 +9,6 @@
       "english": "The capital owed to the Teutonic Order by Albrecht von Rosenberg and the mill exchange at Ailringen on the part of Georg Eberhard von Stetten of Kocherstetten in exchange for properties and rents of the Teutonic Order at Ober- and Unterschüpf\n\nPeriod: 1573-1576\n\nExtent: 1 volume",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "kocherstetten-marienkirche"
         },
         {
@@ -22,12 +19,7 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "owed capital to the Teutonic Order; the file also concerns Georg Eberhard von Stetten’s exchange of a mill at Ailringen for Order property and rents at Ober- and Unterschüpf.",
-          "mention": [
-            {
-              "place": "unterschuepf"
-            }
-          ]
+          "content": "owed capital to the Teutonic Order; the file also concerns Georg Eberhard von Stetten’s exchange of a mill at Ailringen for Order property and rents at Ober- and Unterschüpf."
         }
       ]
     }

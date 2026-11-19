@@ -10,16 +10,13 @@
       "english": "Anselm von Rosenberg, Ritter, hanged himself during the rule of Gotfried Schenk von Limpurg, Bischof, on the Saturday before the Annunciation of Mary in 1454. The summary identifies the privilege referred to in the transcription as the liberty of Emperor Friedrich III. By virtue of this liberty, the bishop took possession of Anselm’s goods and the Amt Prosselsheim that the bishopric had pledged to him. Fries refers to testimony about how Anselm’s body was found (the fourth register of Rudolf’s contracts, fol. 191) and to a settlement between Bishop Rudolf and Anselm’s daughter (the same register, fols. 19, 22, and 39). [Several earlier readings and a reference to a 1461 date are crossed out.] Editorial note: The dispute over the properties continued for decades and was decided only by a privilege of Emperor Friedrich III in 1486, which explains the anachronistic wording.",
       "mention": [
         {
-          "person": "Anselm von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Gotfried Schenk von Limpurg",
           "personTitle": [
             "Bischof"
           ]
+        },
+        {
+          "person": "Gotfried von Limpurg"
         }
       ],
       "facts": [
@@ -39,12 +36,7 @@
           ],
           "personDeceased": true,
           "type": "generic",
-          "content": "had his goods and Amt Brassoldshaim seized by Gotfried von Limpurg after his death; the Amt had been pledged to him by the bishopric.",
-          "mention": [
-            {
-              "person": "Gotfried von Limpurg"
-            }
-          ]
+          "content": "had his goods and Amt Brassoldshaim seized by Gotfried von Limpurg after his death; the Amt had been pledged to him by the bishopric."
         }
       ],
       "img": [

@@ -20,9 +20,6 @@
           "person": "Hans Mönch"
         },
         {
-          "person": "Hans Mönch von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
         }
       ],
@@ -40,15 +37,7 @@
         {
           "subject": "The gravestone of Hans Mönch von Rosenberg",
           "type": "generic",
-          "content": "bore ancestral arms of Mönch von Rosenberg, Adelsheim and Kalb von Reinheim.",
-          "mention": [
-            {
-              "place": "adelsheim"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "bore ancestral arms of Mönch von Rosenberg, Adelsheim and Kalb von Reinheim."
         }
       ]
     },
@@ -59,11 +48,6 @@
       "url": "https://digi.hadw-bw.de/view/di002/0201/image,info",
       "german": "Totenschild des Joh. Mönch von Rosenberg † 16. V. 1487\n`Venerabilis et generosus Dominus Joannes Munch a Rosenberg Can. Mog. et Worm. obiit 1487. 16. Maji`",
       "english": "Funeral shield of Johann Mönch von Rosenberg, died 16 May 1487.\nThe venerable and noble Lord Johannes Munch von Rosenberg, canon of Mainz and Worms, died on 16 May 1487.",
-      "mention": [
-        {
-          "person": "Hans Mönch von Rosenberg"
-        }
-      ],
       "facts": [
         {
           "person": "Hans Mönch von Rosenberg",

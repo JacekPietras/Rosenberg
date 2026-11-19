@@ -13,12 +13,6 @@
         },
         {
           "place": "koenigheim"
-        },
-        {
-          "person": "Kraft von Uissigheim",
-          "personTitle": [
-            "Edelknecht"
-          ]
         }
       ],
       "facts": [
@@ -28,12 +22,7 @@
             "Edelknecht"
           ],
           "type": "generic",
-          "content": "served as guarantor for Konrad von Gebsattel, Mechthild, and their co-heirs in their sale of an annual rent from properties in Königheim to Aschaffenburg Abbey.",
-          "mention": [
-            {
-              "place": "koenigheim"
-            }
-          ]
+          "content": "served as guarantor for Konrad von Gebsattel, Mechthild, and their co-heirs in their sale of an annual rent from properties in Königheim to Aschaffenburg Abbey."
         }
       ],
       "img": [

@@ -18,9 +18,6 @@
           "place": "boedigheim-kreuzkirche"
         },
         {
-          "person": "Hans Christoph von Rosenberg"
-        },
-        {
           "place": "heidelberg"
         },
         {
@@ -37,12 +34,7 @@
         {
           "person": "Hans Christoph von Rosenberg",
           "type": "generic",
-          "content": "served as a guardian and surety for the five children of the late Rudolf von Zeiskam in a sale of an annuity to Ludwig von Hirschhorn zu Hirschhorn.",
-          "mention": [
-            {
-              "person": "Ludwig von Hirschhorn"
-            }
-          ]
+          "content": "served as a guardian and surety for the five children of the late Rudolf von Zeiskam in a sale of an annuity to Ludwig von Hirschhorn zu Hirschhorn."
         }
       ]
     }

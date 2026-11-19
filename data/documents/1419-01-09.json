@@ -12,7 +12,10 @@
       "english": "Johannes, Bishop of Würzburg (Wirtzpurg), permits Kunz von Rosenberg of Röttingen to purchase the toll at Riedbach (Rietbach) from Otto Koch for 48 Rhine gulden.\n\nDuration: January 9, 1419 (on Monday after the holy supreme day)\n\nSealer: Johannes, Bishop of Würzburg",
       "mention": [
         {
-          "person": "Hans of Würzburg"
+          "person": "Hans of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         },
         {
           "person": "Kunz von Rosenberg"
@@ -28,15 +31,7 @@
             "zu Röttingen"
           ],
           "type": "generic",
-          "content": "was permitted by Bishop Johannes of Würzburg to buy the toll at Riedbach from Otto Koch for 48 Rhenish gulden.",
-          "mention": [
-            {
-              "person": "Hans of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "was permitted by Bishop Johannes of Würzburg to buy the toll at Riedbach from Otto Koch for 48 Rhenish gulden."
         }
       ],
       "img": [

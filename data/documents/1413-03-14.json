@@ -12,9 +12,6 @@
           "place": "heidelberg"
         },
         {
-          "person": "Katharina von Rosenberg"
-        },
-        {
           "person": "Wernher Winther von Alzey"
         }
       ],
@@ -27,12 +24,7 @@
         {
           "person": "Katharina von Rosenberg",
           "type": "generic",
-          "content": "received a Wittum from her husband Werner Winter von Alzey in property at Heddesheim and Bergheim and income from the St. Goar toll.",
-          "mention": [
-            {
-              "person": "Wernher Winther von Alzey"
-            }
-          ]
+          "content": "received a Wittum from her husband Werner Winter von Alzey in property at Heddesheim and Bergheim and income from the St. Goar toll."
         }
       ]
     }

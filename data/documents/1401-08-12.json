@@ -15,9 +15,6 @@
       "english": "1401 August 12, place not stated. Hans von Rosenberg acknowledges that King Ruprecht permitted him to sell timber worth 200 florins from the forests belonging to Mynnenberg Castle and use it for his needs. These 200 florins are to be deducted from the pledged sum if the king or his heirs redeem Mynnenberg Castle from the von Rosenbergs. Original: K. 43/147.",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "person": "König Ruprecht",
           "personTitle": [
             "King"
@@ -31,15 +28,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "was permitted by King Ruprecht to sell timber worth 200 florins from the forests belonging to Minneberg Castle and use the proceeds for his needs; the amount was to be deducted from the pledged sum upon redemption.",
-          "mention": [
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "was permitted by King Ruprecht to sell timber worth 200 florins from the forests belonging to Minneberg Castle and use the proceeds for his needs; the amount was to be deducted from the pledged sum upon redemption."
         }
       ],
       "img": [

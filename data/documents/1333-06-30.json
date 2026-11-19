@@ -54,12 +54,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "seized Lauda.",
-          "mention": [
-            {
-              "place": "lauda"
-            }
-          ]
+          "content": "seized Lauda."
         },
         {
           "person": "vogt_zu_Durn",
@@ -67,12 +62,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "attempted to take Werbach, but Hanau and Hohenlohe invoked Balduin’s letter ordering fiefs to remain undisturbed.",
-          "mention": [
-            {
-              "place": "hohenlohe"
-            }
-          ]
+          "content": "attempted to take Werbach, but Hanau and Hohenlohe invoked Balduin’s letter ordering fiefs to remain undisturbed."
         }
       ]
     }

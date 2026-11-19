@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "boedigheim-kreuzkirche"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "received as a pledge from Emperor Ludwig his and the Empire’s people in Roigheim, Bödigheim, Eicholzheim and Osterburken and the other Eigenleute of the same Schultheißenamt.",
-          "mention": [
-            {
-              "place": "boedigheim-kreuzkirche"
-            }
-          ]
+          "content": "received as a pledge from Emperor Ludwig his and the Empire’s people in Roigheim, Bödigheim, Eicholzheim and Osterburken and the other Eigenleute of the same Schultheißenamt."
         }
       ]
     }

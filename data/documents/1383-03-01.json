@@ -18,10 +18,10 @@
           "place": "buchen"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "hartheim"
         },
         {
-          "place": "hartheim"
+          "person": "Kunz von Hardheim"
         },
         {
           "person": "Kunz von Hartheim",
@@ -40,12 +40,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "was surety for Adolf of Mainz’s debt to Kunz von Hardheim.",
-          "mention": [
-            {
-              "person": "Kunz von Hardheim"
-            }
-          ]
+          "content": "was surety for Adolf of Mainz’s debt to Kunz von Hardheim."
         }
       ],
       "img": [

@@ -37,6 +37,12 @@
           "person": "Diether von Handschuhsheim"
         },
         {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
           "place": "nuremberg"
         },
         {
@@ -51,18 +57,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "was instructed to comply with the orders of Diether von Handschuhsheim and Contz Landschad, whom King Ruprecht had commissioned to raise and assign money as they saw fit.",
-          "mention": [
-            {
-              "person": "Diether von Handschuhsheim"
-            },
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "was instructed to comply with the orders of Diether von Handschuhsheim and Contz Landschad, whom King Ruprecht had commissioned to raise and assign money as they saw fit."
         }
       ]
     },
@@ -76,6 +71,12 @@
           "person": "Herman von Rodenstein"
         },
         {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
           "place": "nuremberg"
         },
         {
@@ -86,15 +87,7 @@
         {
           "person": "Kunz Munich von Rosenberg",
           "type": "generic",
-          "content": "was authorized to raise money and assign it as he saw fit; King Ruprecht confirmed the agreements made by the authorized group in advance.",
-          "mention": [
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "was authorized to raise money and assign it as he saw fit; King Ruprecht confirmed the agreements made by the authorized group in advance."
         }
       ]
     },
@@ -111,7 +104,10 @@
           "place": "nuremberg"
         },
         {
-          "person": "Reinhard von Sickingen"
+          "person": "Reinhard von Sickingen",
+          "personTitle": [
+            "der Jüngere"
+          ]
         }
       ],
       "facts": [
@@ -122,15 +118,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "received the same letter, which ordered Reinhart von Sickingen der Jüngere to comply with the orders of Diether von Hentschuchssheim and Contz Landschad, commissioned to raise and assign money as they saw fit.",
-          "mention": [
-            {
-              "person": "Reinhard von Sickingen",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            }
-          ]
+          "content": "received the same letter, which ordered Reinhart von Sickingen der Jüngere to comply with the orders of Diether von Hentschuchssheim and Contz Landschad, commissioned to raise and assign money as they saw fit."
         }
       ]
     }

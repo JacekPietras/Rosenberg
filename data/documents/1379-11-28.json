@@ -81,9 +81,6 @@
         },
         {
           "place": "michelfeld"
-        },
-        {
-          "person": "Peter von Helmstadt"
         }
       ],
       "facts": [
@@ -93,22 +90,12 @@
             "Vogt zu Steinsberg"
           ],
           "type": "generic",
-          "content": "sealed the document of the sale of an annual Gült to Friedrich von Michelfeld.",
-          "mention": [
-            {
-              "person": "Friedrich von Michelfeld"
-            }
-          ]
+          "content": "sealed the document of the sale of an annual Gült to Friedrich von Michelfeld."
         },
         {
           "person": "Peter von Helmstadt",
           "type": "generic",
-          "content": "sealed the document of the sale of an annual Gült to Friedrich von Michelfeld.",
-          "mention": [
-            {
-              "person": "Friedrich von Michelfeld"
-            }
-          ]
+          "content": "sealed the document of the sale of an annual Gült to Friedrich von Michelfeld."
         }
       ]
     }

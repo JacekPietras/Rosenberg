@@ -26,6 +26,13 @@ def context_fact(text, *mention):
     return {**fact, "mention": list(mention)} if mention else fact
 
 
+def hoisted_document(date, facts):
+    """A document whose entry-level mention gathers the mentions given on its facts."""
+    mention = [item for fact in facts if isinstance(fact, dict) for item in fact.get('mention', [])]
+    plain = [{key: value for key, value in fact.items() if key != 'mention'} if isinstance(fact, dict) else fact for fact in facts]
+    return {'date': date, 'facts': plain, **({'mention': mention} if mention else {})}
+
+
 def alex_mention(*extra):
     return [{"person": "Alex von South"}, *extra]
 
@@ -236,7 +243,7 @@ class ProbabilityTests(unittest.TestCase):
         second = [{'type': 'parent', 'person': 'Alex von South', 'of': 'Chris'}, context_fact('Alex von South held property at East with Peter von West.', *alex_mention({'person': 'Peter von West'}, {'place': 'east'}))]
         inputs = self.repository(first, second)
         (inputs.root / 'data/places.json').write_text(json.dumps([{'id': 'north', 'variations': ['North']}, {'id': 'east', 'variations': ['East']}]))
-        (inputs.root / 'data/documents/bridge.json').write_text(json.dumps({'date': '1393', 'facts': [context_fact('Alex von South held property at North and East with Peter von West.', *alex_mention({'person': 'Peter von West'}, {'place': 'east'}, {'place': 'north'}))]}))
+        (inputs.root / 'data/documents/bridge.json').write_text(json.dumps(hoisted_document('1393', [context_fact('Alex von South held property at North and East with Peter von West.', *alex_mention({'person': 'Peter von West'}, {'place': 'east'}, {'place': 'north'}))])))
         # The prose-only occurrence can enrich an existing family identity;
         # its potential evidence is considered, without inventing parentage.
         graph = build(load_inputs(inputs.root, validate=False)).evidence_graph
@@ -260,10 +267,10 @@ class ProbabilityTests(unittest.TestCase):
         # still not the fully named person's identity merely due to shared land.
         root = inputs.root
         (root / 'data/people.json').write_text(json.dumps([{'id': 'a', 'name': 'Alex'}]))
-        path = root / 'data/documents/first.json';document = json.loads(path.read_text())
-        document['facts'] = [{'type': 'spouse', 'person': 'a', 'of': 'Bea von East'}, {'type': 'generic', 'person': 'a', 'content': 'held property at North with Peter von East.',
-                                            'mention': [{'person': 'Peter von East'}, {'place': 'north'}]}]
-        path.write_text(json.dumps(document))
+        path = root / 'data/documents/first.json'
+        path.write_text(json.dumps(hoisted_document('1393', [{'type': 'spouse', 'person': 'a', 'of': 'Bea von East'},
+            {'type': 'generic', 'person': 'a', 'content': 'held property at North with Peter von East.',
+             'mention': [{'person': 'Peter von East'}, {'place': 'north'}]}])))
         graph = build(load_inputs(root, validate=False)).evidence_graph
         self.assertTrue(any(n['name'] == 'Alex von South' and not n.get('registry') for n in graph['nodes']))
         self.assertTrue(any('omitted surname' in c['reason'] for c in graph['comparisons']))
@@ -340,7 +347,7 @@ class ProbabilityTests(unittest.TestCase):
         (root / 'data/people.json').write_text(json.dumps([{'id': 'unrelated', 'name': 'Unrelated'}]))
         (root / 'data/matching.json').write_text(json.dumps(DEFAULTS))
         for filename, date, facts in [('first', '1393', [*first, *extra_first]), ('second', '1394', [*second, *extra_second])]:
-            (root / f'data/documents/{filename}.json').write_text(json.dumps({'date': date, 'facts': facts}))
+            (root / f'data/documents/{filename}.json').write_text(json.dumps(hoisted_document(date, facts)))
         return load_inputs(root, validate=False)
 
     def test_places_and_titles_link_people_without_registry_ids(self):

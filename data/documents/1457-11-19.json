@@ -12,13 +12,7 @@
       "english": "Hans von Rosenberg, son of the deceased Kunz von Rosenberg, acknowledges receipt of 6 pounds of castle dues, payable on the past Martinmas, which were paid to him by rentmaster Eberhard Gysel on behalf of Count Hans von Wertheim.",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "person": "Hans von Wertheim"
-        },
-        {
-          "person": "Kunz von Rosenberg"
         }
       ],
       "facts": [
@@ -36,12 +30,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "received 6 pounds of castle dues from rentmaster Eberhard Gysel on behalf of Count Johann von Wertheim; the dues had fallen due on the preceding Martinmas.",
-          "mention": [
-            {
-              "person": "Hans von Wertheim"
-            }
-          ]
+          "content": "received 6 pounds of castle dues from rentmaster Eberhard Gysel on behalf of Count Johann von Wertheim; the dues had fallen due on the preceding Martinmas."
         }
       ],
       "img": [

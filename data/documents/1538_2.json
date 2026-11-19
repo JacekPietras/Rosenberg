@@ -18,28 +18,17 @@
           "place": "baldersheim"
         },
         {
-          "person": "Konrad of Würzburg"
-        },
-        {
-          "person": "Lorenz von Rosenberg"
+          "person": "Konrad of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         }
       ],
       "facts": [
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "received half of the fiefs at Baldersheim as Mannlehen from Bishop Konrad of Würzburg.",
-          "mention": [
-            {
-              "place": "baldersheim"
-            },
-            {
-              "person": "Konrad of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received half of the fiefs at Baldersheim as Mannlehen from Bishop Konrad of Würzburg."
         }
       ]
     }

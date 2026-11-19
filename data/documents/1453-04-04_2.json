@@ -12,6 +12,9 @@
           "person": "Engelhard von Thüngen"
         },
         {
+          "person": "Gotfried"
+        },
+        {
           "person": "Gotfried of Würzburg",
           "personTitle": [
             "Bishop"
@@ -19,9 +22,6 @@
         },
         {
           "person": "Heinrich von Seckendorf"
-        },
-        {
-          "person": "Kunz von Rosenberg"
         },
         {
           "place": "rosenberg-town"
@@ -37,12 +37,7 @@
           "person": "Kunz von Rosenberg",
           "personDeceased": true,
           "type": "generic",
-          "content": "had received the Amt Clingenberg by purchase subject to redemption from Gottfried, Bischof zu Würzburg.",
-          "mention": [
-            {
-              "person": "Gotfried"
-            }
-          ]
+          "content": "had received the Amt Clingenberg by purchase subject to redemption from Gottfried, Bischof zu Würzburg."
         }
       ]
     }

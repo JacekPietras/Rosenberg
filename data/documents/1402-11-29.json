@@ -9,9 +9,6 @@
       "english": "Hans von Rosenberg acknowledges receipt from the Burgraves of Nuremberg of 60 Rhenish gulden. Given on the Wednesday nearest before St. Nicholas's day. (With 1 seal.)",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "place": "nuremberg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "issued a quittance to the Burgraves of Nuremberg for 60 Rhenish gulden.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            }
-          ]
+          "content": "issued a quittance to the Burgraves of Nuremberg for 60 Rhenish gulden."
         }
       ]
     },
@@ -41,19 +33,14 @@
           "person": "Friedrich von Nuremberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "person": "Friedrich von Nürnberg"
         }
       ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "certified that Friedrich von Nürnberg had repaid all debts owed to him.",
-          "mention": [
-            {
-              "person": "Friedrich von Nürnberg"
-            }
-          ]
+          "content": "certified that Friedrich von Nürnberg had repaid all debts owed to him."
         }
       ]
     }

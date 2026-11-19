@@ -15,16 +15,7 @@
       "english": "Regents and councillors of Georg Friedrich Margrave of Brandenburg etc., Burgrave of Nuremberg, enfeoff Kunz von Rosenberg and his heirs with the fiefs in the court and Vogtei of Waldmannshofen, as well as at Schön and in the Swal [as February 22, 1546], to the extent that this falls solely to Cunz after the division with his brother Philipp Jakob von Rosenberg, having initially inherited it jointly with Philipp Jakob from their father Lorenz von Rosenberg, namely as a male fief (Mannlehen) of the Burgrave's court at Nuremberg.\n\nSeal: Georg Friedrich Margrave of Brandenburg etc. – On Monday after Exaudi Sunday, Ansbach.\n\nCopy, parchment, seal attached. – Cf. Reg. No. 1158. – No. 1201.\n\nReg. No. 1265",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Lorenz von Rosenberg"
-        },
-        {
           "place": "nuremberg"
-        },
-        {
-          "person": "Philipp Jakob von Rosenberg"
         },
         {
           "place": "waldmannshofen"
@@ -34,12 +25,7 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "received his share of fiefs in the court and Vogtei at Waldmannshofen, at Schön and in the Swal as Mannlehen after inheriting them from his father Lorenz and dividing them with his brother Philipp Jakob.",
-          "mention": [
-            {
-              "place": "waldmannshofen"
-            }
-          ]
+          "content": "received his share of fiefs in the court and Vogtei at Waldmannshofen, at Schön and in the Swal as Mannlehen after inheriting them from his father Lorenz and dividing them with his brother Philipp Jakob."
         },
         {
           "person": "Lorenz von Rosenberg",

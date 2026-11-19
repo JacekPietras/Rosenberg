@@ -13,21 +13,13 @@
         },
         {
           "place": "kirchheim"
-        },
-        {
-          "person": "Michael von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "was a party to court proceedings brought by the Ritterstift concerning rights in Kirchheim.",
-          "mention": [
-            {
-              "place": "kirchheim"
-            }
-          ]
+          "content": "was a party to court proceedings brought by the Ritterstift concerning rights in Kirchheim."
         }
       ]
     }

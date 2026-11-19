@@ -13,12 +13,10 @@
           "place": "brunn"
         },
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Hans von Brunn",
           "personTitle": [
-            "Bischof"
+            "Bischof",
+            "Bishop"
           ]
         },
         {
@@ -30,17 +28,6 @@
           "person": "Eberhard von Rosenberg",
           "type": "generic",
           "content": "received Schloss, Stadt, and Amt Jagstberg as a pledge from Bishop Johann von Brunn for 3,400 florins, with the bishopric retaining rights of redemption, access, and hereditary homage.",
-          "mention": [
-            {
-              "person": "Hans von Brunn",
-              "personTitle": [
-                "Bishop"
-              ]
-            },
-            {
-              "place": "jagstberg"
-            }
-          ],
           "date": "1411-02-22"
         },
         {

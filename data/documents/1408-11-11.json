@@ -27,13 +27,13 @@
           "place": "buch"
         },
         {
-          "person": "Christiana von Handschuhsheim"
-        },
-        {
           "person": "Eberhard von Rosenberg"
         },
         {
           "place": "erlenbach"
+        },
+        {
+          "place": "jagstberg"
         },
         {
           "person": "König Ruprecht",
@@ -59,12 +59,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "resided at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "resided at Boxberg."
         },
         {
           "person": "arnold_boxberg",
@@ -82,18 +77,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "exchanged goods in Erlenbach and Merchingen with Abbot Heinrich V and the convent of Schöntal Abbey for the abbey’s properties at Buch am Ahorn, See, and Sachsenflur.",
-          "mention": [
-            {
-              "place": "buch"
-            },
-            {
-              "place": "erlenbach"
-            },
-            {
-              "place": "schoental-monastery"
-            }
-          ]
+          "content": "exchanged goods in Erlenbach and Merchingen with Abbot Heinrich V and the convent of Schöntal Abbey for the abbey’s properties at Buch am Ahorn, See, and Sachsenflur."
         },
         {
           "person": "arnold_boxberg",
@@ -102,12 +86,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "held the exchanged Rosenberg goods as fiefs from the Electorate of the Palatinate.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "held the exchanged Rosenberg goods as fiefs from the Electorate of the Palatinate."
         },
         {
           "person": "arnold_boxberg",
@@ -124,12 +103,7 @@
             "zu Jagstberg"
           ],
           "type": "generic",
-          "content": "resided at Jagstberg.",
-          "mention": [
-            {
-              "place": "jagstberg"
-            }
-          ]
+          "content": "resided at Jagstberg."
         },
         {
           "person": "eberhard_jagstberg",
@@ -150,12 +124,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "resided at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "resided at Boxberg."
         },
         {
           "person": "Konrad von Rosenberg",
@@ -178,12 +147,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "sealed the charter, also for Christina von Handschuhsheim because she was unable to seal.",
-          "mention": [
-            {
-              "person": "Christiana von Handschuhsheim"
-            }
-          ]
+          "content": "sealed the charter, also for Christina von Handschuhsheim because she was unable to seal."
         },
         {
           "person": "eberhard_jagstberg",

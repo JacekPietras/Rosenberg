@@ -42,14 +42,6 @@
           "subject": "Boxberg",
           "type": "generic",
           "content": "was sold back to the knights von Rosenberg by the Johanniter of Wölchingen in 1381.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "wolchingen"
-            }
-          ],
           "date": "1381"
         }
       ],

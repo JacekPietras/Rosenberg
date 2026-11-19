@@ -21,7 +21,8 @@
         {
           "person": "Hans von Brunn",
           "personTitle": [
-            "Bischof"
+            "Bischof",
+            "Bishop"
           ]
         },
         {
@@ -41,27 +42,7 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "entered a redeemable purchase agreement with Bishop Johann von Brunn for the castle, town, and Amt Röttingen, together with Heinrich von Sickingen, Ritter, and Hans Truchsess.",
-          "mention": [
-            {
-              "person": "Hans Truchsess"
-            },
-            {
-              "person": "Hans von Brunn",
-              "personTitle": [
-                "Bishop"
-              ]
-            },
-            {
-              "person": "Heinrich von Sickingen",
-              "personTitle": [
-                "Ritter"
-              ]
-            },
-            {
-              "place": "roettingen"
-            }
-          ]
+          "content": "entered a redeemable purchase agreement with Bishop Johann von Brunn for the castle, town, and Amt Röttingen, together with Heinrich von Sickingen, Ritter, and Hans Truchsess."
         }
       ],
       "img": [

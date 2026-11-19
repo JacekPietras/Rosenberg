@@ -10,12 +10,7 @@
         {
           "subject": "Lauda",
           "type": "generic",
-          "content": "was sold with its castle, town, office, lordship and appurtenances by Elector Philipp of the Palatinate to Ludwig von Hutten.",
-          "mention": [
-            {
-              "person": "Ludwig von Hutten"
-            }
-          ]
+          "content": "was sold with its castle, town, office, lordship and appurtenances by Elector Philipp of the Palatinate to Ludwig von Hutten."
         }
       ],
       "img": [
@@ -24,6 +19,11 @@
         },
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005466269%2F04_0005466269_0002_4-5466269-2.jpg"
+        }
+      ],
+      "mention": [
+        {
+          "person": "Ludwig von Hutten"
         }
       ]
     }

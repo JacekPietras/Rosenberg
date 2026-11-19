@@ -789,9 +789,6 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 proposals.append((left.handle, right.handle, [first.source, second.source]))
     accept(proposals, 'same dated relationship in a specifically cited attestation')
 
-    fact_mentions = {observation.source.key: (observation.people, observation.places)
-                     for observation in observations if observation.source.kind in {'facts', 'guesses'}}
-
     def retrospective(mention):
         """A title of a deceased person describes the years before the death bound."""
         died = death_interval(mention) if mention.assertion.original['type'] == 'death' else None
@@ -825,9 +822,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 category = title_category(title, names)
                 attested = retrospective(mention) or bounds
                 profile.titles.setdefault(category, []).append((ref, attested))
-            people, places = fact_mentions.get(ref.key, ((), ()))
-            model.add_context(profile, ref, bounds, people, {*places, *mention.assertion.context.get('places', ())},
-                              self_names=(name(handle),))
+            model.add_context(profile, ref, bounds, (), mention.assertion.context.get('places', ()), self_names=(name(handle),))
         context_coverage = {'total': len(observations), 'attached': 0, 'undated': 0, 'unattached': 0}
         for observation in observations:
             if not observation or observation.bounds is None:

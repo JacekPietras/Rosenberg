@@ -18,6 +18,9 @@
           "place": "rosenberg-town"
         },
         {
+          "place": "wolffskeel"
+        },
+        {
           "person": "Zaisolph von Rosenberg"
         }
       ],
@@ -25,15 +28,7 @@
         {
           "subject": "Philipp Jakob, Konrad and Zeisolf von Rosenberg and their brothers and cousins",
           "type": "generic",
-          "content": "were involved in inheritance disputes with the Wolfskeel family, who claimed to be the allodial heirs of Hans Carius von Rosenberg.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "wolffskeel"
-            }
-          ]
+          "content": "were involved in inheritance disputes with the Wolfskeel family, who claimed to be the allodial heirs of Hans Carius von Rosenberg."
         }
       ]
     }

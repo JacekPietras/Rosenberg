@@ -26,27 +26,13 @@
         },
         {
           "place": "roettingen"
-        },
-        {
-          "person": "Thomas von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "witnessed an agreement by which Elisabeth von Heideck received sums secured on Röttingen and her children’s tithes at Gollhofen, in return relinquishing holdings and rights in Aub to her children.",
-          "mention": [
-            {
-              "place": "aub"
-            },
-            {
-              "person": "Elisabeth von heideck"
-            },
-            {
-              "place": "roettingen"
-            }
-          ]
+          "content": "witnessed an agreement by which Elisabeth von Heideck received sums secured on Röttingen and her children’s tithes at Gollhofen, in return relinquishing holdings and rights in Aub to her children."
         }
       ]
     }

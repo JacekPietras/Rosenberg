@@ -12,7 +12,16 @@
           "person": "Eberhard von Rosenberg"
         },
         {
+          "person": "Friedrich von Handschuhsheim"
+        },
+        {
           "place": "handschuhsheim"
+        },
+        {
+          "person": "Heinrich von Handschuhsheim"
+        },
+        {
+          "person": "Wilhelm von Handschuhsheim"
         }
       ],
       "facts": [
@@ -22,21 +31,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "with the other guardians of Mainz sold Burg Schauenburg and the villages Handschuhsheim and Dossenheim to Friedrich, Heinrich and Wilhelm von Handschuhsheim with right of redemption.",
-          "mention": [
-            {
-              "person": "Friedrich von Handschuhsheim"
-            },
-            {
-              "place": "handschuhsheim"
-            },
-            {
-              "person": "Heinrich von Handschuhsheim"
-            },
-            {
-              "person": "Wilhelm von Handschuhsheim"
-            }
-          ]
+          "content": "with the other guardians of Mainz sold Burg Schauenburg and the villages Handschuhsheim and Dossenheim to Friedrich, Heinrich and Wilhelm von Handschuhsheim with right of redemption."
         }
       ]
     }

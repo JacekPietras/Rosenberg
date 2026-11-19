@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "essingen"
-        },
-        {
-          "person": "Hans Christoph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Hans Christoph von Rosenberg",
           "type": "generic",
-          "content": "had restored the blood court at Essingen and sold it with the two villages to Elector Wolfgang of Mainz and the von Dalberg family.",
-          "mention": [
-            {
-              "place": "essingen"
-            }
-          ]
+          "content": "had restored the blood court at Essingen and sold it with the two villages to Elector Wolfgang of Mainz and the von Dalberg family."
         }
       ]
     }

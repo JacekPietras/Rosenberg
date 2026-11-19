@@ -9,9 +9,6 @@
       "english": "Philipp von Rosenberg, Provost of St. German in Speyer, grants investiture to Priest Albert Gerstner, presented by Count Bernhard von Eberstein for the parish of Mörsch.\n\nPeriod: November 4, 1496",
       "mention": [
         {
-          "person": "Philipp von Rosenberg"
-        },
-        {
           "place": "speyer"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "as provost of St. German in Speyer invested Albert Gerstner as parish priest of Mörsch.",
-          "mention": [
-            {
-              "place": "speyer"
-            }
-          ]
+          "content": "as provost of St. German in Speyer invested Albert Gerstner as parish priest of Mörsch."
         }
       ],
       "img": [

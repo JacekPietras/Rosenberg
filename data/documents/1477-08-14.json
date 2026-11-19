@@ -28,58 +28,21 @@
           "personTitle": [
             "Bishop"
           ]
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Günther von Brandenstein",
           "type": "generic",
-          "content": "renounced claims for themselves, their wives Kunigunde and Christine von Rosenberg, and their heirs after losing property and revenues in the feud involving their Schwäger Georg, Arnold and Michael von Rosenberg and the princes of Mainz, the Palatinate and Würzburg.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "person": "Christiana von Rosenberg"
-            },
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Kunigunde von Rosenberg"
-            },
-            {
-              "person": "Michael von Rosenberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "renounced claims for themselves, their wives Kunigunde and Christine von Rosenberg, and their heirs after losing property and revenues in the feud involving their Schwäger Georg, Arnold and Michael von Rosenberg and the princes of Mainz, the Palatinate and Würzburg."
         },
         {
           "person": "Gotfried von Stockheim",
           "type": "generic",
-          "content": "renounced claims for themselves, their wives Kunigunde and Christine von Rosenberg, and their heirs after losing property and revenues in the feud involving their Schwäger Georg, Arnold and Michael von Rosenberg and the princes of Mainz, the Palatinate and Würzburg.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "person": "Christiana von Rosenberg"
-            },
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Kunigunde von Rosenberg"
-            },
-            {
-              "person": "Michael von Rosenberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "renounced claims for themselves, their wives Kunigunde and Christine von Rosenberg, and their heirs after losing property and revenues in the feud involving their Schwäger Georg, Arnold and Michael von Rosenberg and the princes of Mainz, the Palatinate and Würzburg."
         }
       ]
     }

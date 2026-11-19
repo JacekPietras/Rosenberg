@@ -54,6 +54,9 @@
           "person": "Konrad von Bickenbach"
         },
         {
+          "person": "Kraft von Hohenlohe"
+        },
+        {
           "place": "lauda"
         },
         {
@@ -73,25 +76,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "witnessed the arbitration in Archbishop Heinrich’s dispute with Kraft von Hohenlohe and Ulrich von Hanau over the Rieneck fiefs.",
-          "mention": [
-            {
-              "person": "Kraft von Hohenlohe"
-            },
-            {
-              "place": "rieneck"
-            }
-          ]
+          "content": "witnessed the arbitration in Archbishop Heinrich’s dispute with Kraft von Hohenlohe and Ulrich von Hanau over the Rieneck fiefs."
         },
         {
           "subject": "Burg Bartenstein and the village below it",
           "type": "generic",
-          "content": "were among the fiefs claimed by Archbishop Heinrich in the dispute over the Rieneck inheritance.",
-          "mention": [
-            {
-              "place": "rieneck"
-            }
-          ]
+          "content": "were among the fiefs claimed by Archbishop Heinrich in the dispute over the Rieneck inheritance."
         }
       ]
     }

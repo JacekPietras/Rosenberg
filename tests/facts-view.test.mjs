@@ -533,13 +533,13 @@ test('non-person subjects render as escaped text without person links', () => {
   assert.equal(factPersonMatch(fact, fact.subject), '');
 });
 
-test('mentions render as people and places lines without repeating fact people', () => {
+test('mentions render as people and places lines including people already in facts', () => {
   const markup = renderFactsView([{ type: 'generic', person: 'Eberhard', content: 'sells.' }], {
     people: [], inlineMarkup: escapeHtml,
-    mention: [{ person: 'Eberhard' }, { person: 'Konrad von Uissigheim' }, { place: 'boxberg' }],
+    mention: [{ person: 'Eberhard' }, { person: 'Konrad von Uissigheim', personTitle: ['knight'] }, { place: 'boxberg' }],
     places: [{ id: 'boxberg', name: 'Boxberg' }],
   });
-  assert.match(markup, /Mentions also people:.*Konrad von Uissigheim/);
-  assert.doesNotMatch(markup, /Mentions also people:[^<]*<a[^>]*>Eberhard/);
+  assert.match(markup, /Mentions also people:.*Konrad von Uissigheim<\/a>, knight/);
+  assert.match(markup, /Mentions also people:[^<]*<a[^>]*>Eberhard/);
   assert.match(markup, /Mentions also places:.*href="\?place=Boxberg"/);
 });

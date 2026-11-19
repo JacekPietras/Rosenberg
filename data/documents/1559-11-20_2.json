@@ -34,9 +34,6 @@
           "person": "Jakob von Rosenberg"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "place": "lauda"
         },
         {
@@ -53,32 +50,17 @@
         {
           "person": "Philipp Jakob von Rosenberg",
           "type": "generic",
-          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt."
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt."
         },
         {
           "person": "Hans Oheim von Rosenberg",
           "type": "generic",
-          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "entered an agreement with the other Rosenbergs and parties concerning sheep grazing at Hohenstadt."
         }
       ],
       "img": [

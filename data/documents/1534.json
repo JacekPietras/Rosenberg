@@ -9,9 +9,6 @@
       "english": "Records of the Hessian League Councilor Rudolf Schenk: Letter from the League Captain Wilhelm v. Knöringen and the governor and counselors in Kassel\n\nContains: 1534 January. Reminder to pay the Hessian league assessment for 1533. Discharge of Jakob Truchsess Freiherr v. Waldburg from custody by Hans Thomas von Rosenberg\nFebruary. Sending of the protocol from the last Augsburg diet and certain deposited letters.",
       "mention": [
         {
-          "person": "Hans Thomas von Rosenberg"
-        },
-        {
           "person": "Jakob Truchsess"
         },
         {
@@ -23,11 +20,6 @@
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
           "content": "released Jakob Truchseß von Waldburg from his custody.",
-          "mention": [
-            {
-              "person": "Jakob Truchsess"
-            }
-          ],
           "date": "1534-01"
         }
       ],

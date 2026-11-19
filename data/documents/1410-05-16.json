@@ -12,10 +12,7 @@
           "person": "Friedrich Schenk von Limpurg"
         },
         {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
+          "person": "Haubt Marschalk von Pappenheim"
         },
         {
           "person": "Haubt Marschalk zu Bappenhein"
@@ -25,6 +22,9 @@
         },
         {
           "place": "pappenheim"
+        },
+        {
+          "person": "Siegmund Marschalk von Pappenheim"
         },
         {
           "person": "Siegmund Marschalk zu Bappenhein"
@@ -37,18 +37,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "arbitrated an agreement between the brothers Sigmund and Haupt Marschalk von Pappenheim concerning the administration and defense of Pappenheim Castle.",
-          "mention": [
-            {
-              "person": "Haubt Marschalk von Pappenheim"
-            },
-            {
-              "place": "pappenheim"
-            },
-            {
-              "person": "Siegmund Marschalk von Pappenheim"
-            }
-          ]
+          "content": "arbitrated an agreement between the brothers Sigmund and Haupt Marschalk von Pappenheim concerning the administration and defense of Pappenheim Castle."
         }
       ]
     }

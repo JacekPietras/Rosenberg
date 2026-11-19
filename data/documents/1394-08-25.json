@@ -28,22 +28,17 @@
       "english": "We, Johann, by the grace of God Margrave of Brandenburg and Lusatia and Duke of Görlitz, send our greetings and willing goodwill at all times to the high-born prince Lord Albrecht, Duke of Austria, Styria, Carinthia, and Carniola, our dear brother-in-law. High-born prince, dear brother-in-law, we earnestly ask your favor concerning the detention at their fortress of Wildberg of the most illustrious prince and lord, Lord Wenceslaus, King of the Romans, ever-augmenter of the Empire, and King of Bohemia, our gracious lord and beloved brother, where the noble Heinrich von Rosenberg was also present, which the noble brothers Caspar and Gundakar von Starhemberg caused. For our sake, forgive them for this, and do not on that account be more hostile to them in word or deed, nor to anyone acting on their behalf. Also give them your letter, for you and your heirs and those under you, and for them and their heirs, just as we have forgiven them and their heirs on behalf of ourselves and our heirs by our letters and words, since we have learned that they are greatly apprehensive about this. Therefore, we trust your love will not refuse us this; in doing so you will show us particular friendship and affection. In witness of this letter, sealed with our impressed seal, given at Pisek on the Tuesday following the feast of Saint Bartholomew the Apostle, in the year 1394 after the birth of Christ.\nBy order of the lord duke, Conrad, etc.",
       "mention": [
         {
-          "person": "Heinrich von Rosenberg"
+          "person": "König Wenceslaus",
+          "personTitle": [
+            "King"
+          ]
         }
       ],
       "facts": [
         {
           "person": "Heinrich von Rosenberg",
           "type": "generic",
-          "content": "was present at Wildberg with King Wenceslaus when the brothers Caspar and Gundakar von Starhemberg detained the king.",
-          "mention": [
-            {
-              "person": "König Wenceslaus",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "was present at Wildberg with King Wenceslaus when the brothers Caspar and Gundakar von Starhemberg detained the king."
         }
       ]
     },
@@ -55,22 +50,17 @@
       "english": "We, Wenceslaus, by the grace of God King of the Romans, ever-augmenter of the Empire, and King of Bohemia, send our grace and every good to all lords, knights, and squires who reside in Austria, or wherever they reside in the lands of the high-born Albrecht, Duke of Austria, Styria, and Carinthia, our beloved brother-in-law and prince. We ask you to forgive them for detaining me at their fortress of Wildberg, where the noble Heinrich von Rosenberg was also present. For our sake, forgive them for this, do not on that account be hostile to them in any way, by word or deed, nor to anyone acting on their behalf. Secure them in this by your letter, for yourselves and your heirs, and for them and their heirs, since we have forgiven them by our letter and word. We trust you will not refuse us this and will grant our request in these matters. Given at Pisek under our impressed seal, on the Tuesday following the feast of Saint Bartholomew, in the year 1394 after the birth of Christ, in the 32nd year of our Bohemian reign and the 19th of our Roman reign.\nBy order of the lord king, Johannes, elected chancellor of Gamynensis.",
       "mention": [
         {
-          "person": "Heinrich von Rosenberg"
+          "person": "König Wenceslaus",
+          "personTitle": [
+            "King"
+          ]
         }
       ],
       "facts": [
         {
           "person": "Heinrich von Rosenberg",
           "type": "generic",
-          "content": "was present at Wildberg with King Wenceslaus when the brothers Caspar and Gundakar von Starhemberg detained the king.",
-          "mention": [
-            {
-              "person": "König Wenceslaus",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "was present at Wildberg with King Wenceslaus when the brothers Caspar and Gundakar von Starhemberg detained the king."
         }
       ]
     },
@@ -82,22 +72,17 @@
       "english": "We, Johann, by the grace of God Margrave of Brandenburg and Lusatia and Duke of Görlitz, send greetings and particular friendship to all lords, knights, and squires who reside in Austria, or wherever they reside in the lands of the high-born prince Lord Albrecht, Duke of Austria, Styria, Carinthia, and Carniola, our beloved brother-in-law. We ask you to forgive them for detaining at their fortress of Wildberg the most illustrious prince and lord, Lord Wenceslaus, King of the Romans and of Bohemia, our gracious lord and beloved brother, where the noble Heinrich von Rosenberg was also present. For our sake, forgive them for this, do not on that account be hostile to them in any way, by word or deed, nor to anyone acting on their behalf. Secure them in this by your letter, for yourselves and your heirs, and for them and their heirs, since our aforesaid lord and brother the king and we have forgiven them by our letters and words. We trust you will not refuse us this and will grant our request in these matters. Sealed with our impressed seal, given at Pisek on the Tuesday following the feast of Saint Bartholomew the Apostle, in the year 1394 after the birth of Christ.\nBy order of the lord duke, etc. Simon, etc.",
       "mention": [
         {
-          "person": "Heinrich von Rosenberg"
+          "person": "König Wenceslaus",
+          "personTitle": [
+            "King"
+          ]
         }
       ],
       "facts": [
         {
           "person": "Heinrich von Rosenberg",
           "type": "generic",
-          "content": "was present at Wildberg with King Wenceslaus when the brothers Caspar and Gundakar von Starhemberg detained the king.",
-          "mention": [
-            {
-              "person": "König Wenceslaus",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "was present at Wildberg with King Wenceslaus when the brothers Caspar and Gundakar von Starhemberg detained the king."
         }
       ]
     },
@@ -109,22 +94,17 @@
       "english": "We, Wenceslaus, by the grace of God King of the Romans, ever-augmenter of the Empire, and King of Bohemia, send our grace and every good to the high-born Albrecht, Duke of Austria, Styria, and Carinthia, our beloved brother-in-law and prince. Dear brother-in-law and prince, we earnestly ask your favor concerning my detention at their fortress of Wildberg, where the noble Heinrich von Rosenberg was also present. For our sake, forgive them for this, do not on that account be more hostile to them in word or deed, nor to anyone acting on their behalf. Also give them your letter, for you and your heirs and those under you, and for them and their heirs, just as we have forgiven them and their heirs on behalf of ourselves and our heirs, for they are greatly apprehensive about this. Therefore, we trust your love will not refuse us this; in doing so you will show us particular affection and friendship. Given at Pisek under our seal, not impressed, on the Tuesday following the feast of Saint Bartholomew, in the year 1394 after the birth of Christ, in the 32nd year of our Bohemian reign and the 19th of our Roman reign.\nBy order of the lord king, Johannes, elected chancellor of Gamynensis.",
       "mention": [
         {
-          "person": "Heinrich von Rosenberg"
+          "person": "König Wenceslaus",
+          "personTitle": [
+            "King"
+          ]
         }
       ],
       "facts": [
         {
           "person": "Heinrich von Rosenberg",
           "type": "generic",
-          "content": "was present at Wildberg with King Wenceslaus when the brothers Caspar and Gundakar von Starhemberg detained the king.",
-          "mention": [
-            {
-              "person": "König Wenceslaus",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "was present at Wildberg with King Wenceslaus when the brothers Caspar and Gundakar von Starhemberg detained the king."
         }
       ]
     }

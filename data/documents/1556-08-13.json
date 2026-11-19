@@ -9,9 +9,6 @@
       "english": "Albrecht von Rosenberg testifies that he has been fully satisfied regarding the occupation and withholding of Haus Boxberg (Pochsberg) together with the town and villages on the part of the Archbishopric.",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "boxberg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "acknowledged full satisfaction of his claims against the Erzstift concerning the occupation and withholding of Haus Boxberg, the town and villages.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "acknowledged full satisfaction of his claims against the Erzstift concerning the occupation and withholding of Haus Boxberg, the town and villages."
         }
       ],
       "img": [

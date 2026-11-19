@@ -9,9 +9,6 @@
       "english": "Count Palatine Friedrich I. delivers his arbitral award in the dispute between the cities of Nürnberg and Windsheim, represented by Wilhelm Löffelholz on one side and Georg von Rosenberg on the other, regarding a sum of gambling money owed by a citizen of Nürnberg and the resulting feud.",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "nuremberg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was in dispute with the cities of Nuremberg and Windsheim over gambling debts owed by a Nuremberg citizen; Palatine Count Friedrich I issued an arbitration award.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            }
-          ]
+          "content": "was in dispute with the cities of Nuremberg and Windsheim over gambling debts owed by a Nuremberg citizen; Palatine Count Friedrich I issued an arbitration award."
         }
       ],
       "img": [

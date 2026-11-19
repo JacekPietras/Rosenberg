@@ -107,7 +107,7 @@ support. An ID-like string that matches no ID is a warning.
 
 ## Generated `mention` lists
 
-Entries and generic facts carry an optional generated `mention` array. Items
+Each entry carries an optional generated `mention` array. Items
 are unique and sorted alphabetically; order carries no meaning:
 
 - `{"person": …, "personTitle": […]}`: a recognized person. `person` is the
@@ -116,10 +116,16 @@ are unique and sorted alphabetically; order carries no meaning:
 - `{"place": …}`: a recognized place, as its ID (or name when it has no ID).
   Text inside a recognized person name or title is not a place.
 
-The recognized text is the entry's `english` (documents), a generic fact's
-`content`, a death fact's `circumstances`, or an entry's `place` (books). Each
-document entry also includes the places of its document's `place`, so the
-document root has no `mention`.
+The recognized text is the entry's `english` (documents), the `content` of its
+generic facts, and the `circumstances` of its death facts; guesses are not
+included, so the facts view never depends on them. Each document entry also
+includes the places of its document's `place`, so the document root has no
+`mention`. Facts never carry `mention`.
+
+Mentions of the same `person` merge into one with the union of their titles,
+unless both carry titles from different groups of `data/titles-age.md`. A
+person already stated by one of the entry's facts (`person`+`personTitle` or
+`of`+`ofTitle` equal) is not listed.
 
 ```json
 "mention": [{"person": "Michael von Rosenberg", "personTitle": ["Ritter"]}, {"place": "boxberg"}]

@@ -12,9 +12,6 @@
           "person": "Albrecht von Dienheim"
         },
         {
-          "person": "Balthasar von Rosenberg"
-        },
-        {
           "place": "hutten"
         },
         {
@@ -22,18 +19,16 @@
         },
         {
           "person": "Ludwig von Fleckenstein"
+        },
+        {
+          "person": "Ursula von Hutten"
         }
       ],
       "facts": [
         {
           "person": "Balthasar von Rosenberg",
           "type": "generic",
-          "content": "served among the mediators of the marriage agreement between Eberhard Kämmerer von Worms, called von Dalberg, and Ursula von Hutten.",
-          "mention": [
-            {
-              "person": "Ursula von Hutten"
-            }
-          ]
+          "content": "served among the mediators of the marriage agreement between Eberhard Kämmerer von Worms, called von Dalberg, and Ursula von Hutten."
         }
       ]
     }

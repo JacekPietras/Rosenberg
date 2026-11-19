@@ -36,9 +36,6 @@
           "person": "Friedrich"
         },
         {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
           "person": "Georg von Rosenberg"
         },
         {
@@ -83,12 +80,7 @@
             "Voyt"
           ],
           "type": "generic",
-          "content": "sold two free allodial hides at Eckersfeld to Erhart Löhlein of Sulzbach, his wife and their heirs, with the consent of his mother Elisabeth Voit von Rosenberg and of Jungfrau Elisabeth.",
-          "mention": [
-            {
-              "person": "Elisabeth von Rosenberg"
-            }
-          ]
+          "content": "sold two free allodial hides at Eckersfeld to Erhart Löhlein of Sulzbach, his wife and their heirs, with the consent of his mother Elisabeth Voit von Rosenberg and of Jungfrau Elisabeth."
         },
         {
           "person": "Friedrich von Rosenberg",
@@ -96,15 +88,7 @@
             "Voyt"
           ],
           "type": "generic",
-          "content": "sealed the charter with his seal and named Konrad Lengenvelder von Rosenberg, Herwig the Örlheimer of Örlheim and Georg Voit von Rosenberg der Jungen, as sureties for the sale.",
-          "mention": [
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Konrad Lengenfelder von Rosenberg"
-            }
-          ]
+          "content": "sealed the charter with his seal and named Konrad Lengenvelder von Rosenberg, Herwig the Örlheimer of Örlheim and Georg Voit von Rosenberg der Jungen, as sureties for the sale."
         },
         {
           "person": "Eberhard Löhlein",
@@ -112,15 +96,7 @@
             "zu Sultzpach"
           ],
           "type": "generic",
-          "content": "bought two free allodial hides at Eckersfeld from Friedrich von Rosenberg, Voyt.",
-          "mention": [
-            {
-              "person": "Friedrich von Rosenberg",
-              "personTitle": [
-                "Voyt"
-              ]
-            }
-          ]
+          "content": "bought two free allodial hides at Eckersfeld from Friedrich von Rosenberg, Voyt."
         },
         {
           "person": "Konrad",
@@ -129,15 +105,7 @@
             "zu Rosenberg"
           ],
           "type": "generic",
-          "content": "stood surety for Friedrich von Rosenberg, Voyt, in the sale of two hides at Eckersfeld to Erhart Löhlein of Sulzbach.",
-          "mention": [
-            {
-              "person": "Friedrich von Rosenberg",
-              "personTitle": [
-                "Voyt"
-              ]
-            }
-          ]
+          "content": "stood surety for Friedrich von Rosenberg, Voyt, in the sale of two hides at Eckersfeld to Erhart Löhlein of Sulzbach."
         },
         {
           "person": "Herwig",
@@ -146,15 +114,7 @@
             "zu Örlheim"
           ],
           "type": "generic",
-          "content": "stood surety for Friedrich von Rosenberg, Voyt, in the sale of two hides at Eckersfeld to Erhart Löhlein of Sulzbach.",
-          "mention": [
-            {
-              "person": "Friedrich von Rosenberg",
-              "personTitle": [
-                "Voyt"
-              ]
-            }
-          ]
+          "content": "stood surety for Friedrich von Rosenberg, Voyt, in the sale of two hides at Eckersfeld to Erhart Löhlein of Sulzbach."
         },
         {
           "person": "Georg",
@@ -163,15 +123,7 @@
             "der Junge"
           ],
           "type": "generic",
-          "content": "stood surety for Friedrich von Rosenberg, Voyt, in the sale of two hides at Eckersfeld to Erhart Löhlein of Sulzbach.",
-          "mention": [
-            {
-              "person": "Friedrich von Rosenberg",
-              "personTitle": [
-                "Voyt"
-              ]
-            }
-          ]
+          "content": "stood surety for Friedrich von Rosenberg, Voyt, in the sale of two hides at Eckersfeld to Erhart Löhlein of Sulzbach."
         }
       ]
     }

@@ -12,12 +12,6 @@
       "english": "Hans von Rosenberg and his wife Reytza, née von Adelsheim, certify that Walter von Cronberg, Administrator of the Office of Deutschmeister and Master of the Teutonic Order in German and Italian lands, has permitted them to live for two years in a house in the town of Mergentheim.\n\nValidity: November 12, 1529 (on Friday after Saint Martin the bishop's day)\n\nSealer: Hans von Rosenberg",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Richtze von Adelsheim"
-        },
-        {
           "person": "Walter von Cronberg"
         }
       ],
@@ -30,15 +24,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "was permitted with his wife Reytza von Adelsheim by Walter von Cronberg to live in a house at Mergentheim for two years.",
-          "mention": [
-            {
-              "person": "Richtze von Adelsheim"
-            },
-            {
-              "person": "Walter von Cronberg"
-            }
-          ]
+          "content": "was permitted with his wife Reytza von Adelsheim by Walter von Cronberg to live in a house at Mergentheim for two years."
         }
       ],
       "img": [

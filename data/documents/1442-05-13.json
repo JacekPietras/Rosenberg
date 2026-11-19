@@ -10,12 +10,6 @@
       "mention": [
         {
           "place": "nuremberg"
-        },
-        {
-          "person": "Thomas von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
         }
       ],
       "facts": [
@@ -25,12 +19,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "acknowledged receipt from the city of Nuremberg of 99 florins awarded to him by Margrave Albrecht of Brandenburg and Ritter Wilhelm von Rechberg as arbitrators.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            }
-          ]
+          "content": "acknowledged receipt from the city of Nuremberg of 99 florins awarded to him by Margrave Albrecht of Brandenburg and Ritter Wilhelm von Rechberg as arbitrators."
         }
       ],
       "img": [

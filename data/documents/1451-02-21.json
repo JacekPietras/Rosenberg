@@ -15,6 +15,9 @@
           "person": "Hans von Helmstadt"
         },
         {
+          "person": "Hans von Helmstatt"
+        },
+        {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Knight"
@@ -34,15 +37,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "and his wife Margarethe von Seinsheim acknowledged receipt from Hans von Helmstatt and Anna Landschad of 2,000 florins in marriage payment for their daughter Margarethe and Konrad’s son Erasmus.",
-          "mention": [
-            {
-              "person": "Hans von Helmstatt"
-            },
-            {
-              "person": "Margaretha von Seinsheim"
-            }
-          ]
+          "content": "and his wife Margarethe von Seinsheim acknowledged receipt from Hans von Helmstatt and Anna Landschad of 2,000 florins in marriage payment for their daughter Margarethe and Konrad’s son Erasmus."
         }
       ]
     }

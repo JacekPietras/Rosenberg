@@ -20,9 +20,6 @@
           ]
         },
         {
-          "person": "Elisabeth von Erligheim"
-        },
-        {
           "place": "gommersdorf"
         },
         {
@@ -50,31 +47,12 @@
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was authorized by Elector Ruprecht II der Ältere to endow a perpetual Mass at the altar of Our Lady in the parish of Wölchingen.",
-          "mention": [
-            {
-              "place": "wolchingen"
-            }
-          ]
+          "content": "was authorized by Elector Ruprecht II der Ältere to endow a perpetual Mass at the altar of Our Lady in the parish of Wölchingen."
         },
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was authorized to endow the Mass with fiefs from Boxberg Castle at Gommersdorf, Angeltürn, and Wölchingen.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "gommersdorf"
-            },
-            {
-              "place": "wehrkirche-angeltuern"
-            },
-            {
-              "place": "wolchingen"
-            }
-          ]
+          "content": "was authorized to endow the Mass with fiefs from Boxberg Castle at Gommersdorf, Angeltürn, and Wölchingen."
         },
         {
           "person": "Ruprecht",
@@ -84,15 +62,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the altar of Our Lady in Wölchingen using the specified fiefs.",
-          "mention": [
-            {
-              "person": "Elisabeth von Erligheim"
-            },
-            {
-              "place": "wolchingen"
-            }
-          ]
+          "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the altar of Our Lady in Wölchingen using the specified fiefs."
         }
       ],
       "img": [

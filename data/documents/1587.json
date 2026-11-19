@@ -18,16 +18,7 @@
           "place": "aub"
         },
         {
-          "person": "Hans Christoph von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -67,15 +58,7 @@
         {
           "subject": "the sons of Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "received the inherited quarter of Aub as a Mannlehen after the death of Hans Christoph von Rosenberg.",
-          "mention": [
-            {
-              "place": "aub"
-            },
-            {
-              "person": "Hans Christoph von Rosenberg"
-            }
-          ]
+          "content": "received the inherited quarter of Aub as a Mannlehen after the death of Hans Christoph von Rosenberg."
         }
       ]
     }

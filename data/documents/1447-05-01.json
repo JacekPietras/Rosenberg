@@ -12,42 +12,13 @@
       "mention": [
         {
           "place": "boxberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Thomas von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "mediated the exchange at Boxberg Castle between Eberhard von Rosenberg der Ältere and the brothers Ulrich and Jörg von Rosenberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Ulrich von Rosenberg"
-            }
-          ]
+          "content": "mediated the exchange at Boxberg Castle between Eberhard von Rosenberg der Ältere and the brothers Ulrich and Jörg von Rosenberg."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -55,18 +26,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "exchanged his stable in the rear part of Boxberg Castle by the fountain above the tower for the brothers Ulrich and Jörg von Rosenberg’s stable and bakery in the front part of the castle.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Ulrich von Rosenberg"
-            }
-          ]
+          "content": "exchanged his stable in the rear part of Boxberg Castle by the fountain above the tower for the brothers Ulrich and Jörg von Rosenberg’s stable and bakery in the front part of the castle."
         },
         {
           "person": "Ulrich von Rosenberg",
@@ -76,12 +36,7 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "paid an additional amount in connection with the exchange together with his brother Jörg von Rosenberg.",
-          "mention": [
-            {
-              "person": "Georg von Rosenberg"
-            }
-          ]
+          "content": "paid an additional amount in connection with the exchange together with his brother Jörg von Rosenberg."
         }
       ],
       "img": [
@@ -137,14 +92,6 @@
       "url": "https://www-p.archivportal-d.de/item/IIRKNX36EYF3NWWNB5F4W4WHKYWUMCEL",
       "german": "Weisungsbrief des Inhalts, dass eine von Ritter Anselm von Rosenberg über seinem Schloss zu Prosselsheim auf dem Klosterhof erbaute Scheuer stehen bleiben und mit diesem Hof von ihm und seiner Ehefrau gegen gewisse Gülten und Zinsen lebenslänglich genutzt werden, nach deren Ableben aber dem Astheimer Kartäuserkloster zufallen soll.",
       "english": "Letter stating that a barn built by Anselm von Rosenberg, Ritter above his castle at Prosselsheim on the monastery farm shall remain standing and that he and his wife may use it and the farm for their lifetimes in return for certain rents and dues; after their deaths, however, it shall pass to the Astheim Carthusian monastery.",
-      "mention": [
-        {
-          "person": "Anselm von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        }
-      ],
       "facts": [
         {
           "person": "Anselm von Rosenberg",

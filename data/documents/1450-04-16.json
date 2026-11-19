@@ -13,24 +13,13 @@
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "received the court in the village of Berolzheim from King Friedrich III.",
-          "mention": [
-            {
-              "person": "König Friedrich",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "received the court in the village of Berolzheim from King Friedrich III."
         }
       ],
       "img": [

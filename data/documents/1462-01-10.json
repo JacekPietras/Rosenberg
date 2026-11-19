@@ -12,25 +12,17 @@
           "place": "bretzingen"
         },
         {
-          "person": "Georg von Hartheim"
+          "person": "Georg von Hardheim"
         },
         {
-          "person": "Walpurga von Rosenberg"
+          "person": "Georg von Hartheim"
         }
       ],
       "facts": [
         {
           "person": "Walpurga von Rosenberg",
           "type": "generic",
-          "content": "sold the Fronwiese at Bretzingen to the chapel of Our Lady at Dornberg with her husband Georg von Hardheim.",
-          "mention": [
-            {
-              "place": "bretzingen"
-            },
-            {
-              "person": "Georg von Hardheim"
-            }
-          ]
+          "content": "sold the Fronwiese at Bretzingen to the chapel of Our Lady at Dornberg with her husband Georg von Hardheim."
         }
       ],
       "img": [

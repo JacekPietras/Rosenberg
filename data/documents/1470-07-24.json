@@ -9,12 +9,6 @@
       "english": "Friedrich von Rosenberg, son of Hans, declares that he had brought Herr Friedrich von Fleckenstein of Madenburg, Freiherr [of Dagstuhl], together with Castle Madenburg, into his custody on account of his mother's inheritance. The captive Friedrich von Fleckenstein and his son Friedrich have accordingly, as compensation, assigned to the Rosenberg their share of Madenburg with the villages of Hambach, Eschbach, Ranschbach and Nußdorf, further named estates, and the tithe at Knittelsheim (Knuttelßheim) and Maikammer pursuant to a charter issued on July 22, 1470 (on the feast day of Saint Mary Magdalene). The letter contains a provision that Friedrich von Rosenberg may sell the castle in its entirety or proportionally together with the estates to any third party for 2,000 gulden, but Friedrich von Fleckenstein and his heirs shall be granted a redemption right after 15 years. Since the possession of the castle is too costly for Friedrich von Rosenberg (for I now recognize that keeping the same castle is heavy and inconvenient in my expenses), he sells it together with the named estates to Elector Friedrich I of the Palatinate and receipts him for 2,000 gulden received. Together with this letter he hands over to the Count Palatine a vidimus of the aforementioned assignment. After the 15 years have expired, Friedrich von Fleckenstein or his heirs may exercise their redemption right by giving notice within one quarter before Martinmas and hand over the 2,000 gulden to the Count Palatine at Germersheim, Speyer or Neustadt. The latter shall then return the estates and rights to them, after collecting all revenues due to him for the year. Friedrich von Rosenberg releases all inhabitants of the places belonging to Madenburg from their oaths and directs them to pay homage and obedience to the Count Palatine. The issuer announces his seal; at his request, Leibfried Nagel of Königsbach (Libfridt Nagel von Koningspach) and Heinrich von Zeiskam also affixes his seal at the issuer’s request.",
       "mention": [
         {
-          "person": "Friedrich von Fleckenstein"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
           "place": "madenburg"
         },
         {
@@ -28,22 +22,12 @@
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "sold Castle Madenburg together with named estates to Elector Friedrich I of the Palatinate for 2,000 gulden.",
-          "mention": [
-            {
-              "place": "madenburg"
-            }
-          ]
+          "content": "sold Castle Madenburg together with named estates to Elector Friedrich I of the Palatinate for 2,000 gulden."
         },
         {
           "person": "Friedrich von Fleckenstein",
           "type": "generic",
-          "content": "was held captive and assigned his share of Madenburg with villages and tithes as compensation.",
-          "mention": [
-            {
-              "place": "madenburg"
-            }
-          ]
+          "content": "was held captive and assigned his share of Madenburg with villages and tithes as compensation."
         }
       ]
     },
@@ -64,15 +48,7 @@
         {
           "subject": "The Burgfrieden of Boxberg",
           "type": "generic",
-          "content": "was established by the Electors Adolf of Mainz, Frederick Palatine Count of the Rhine, and Rudolf Bishop of Würzburg to protect against robbery and secure safe conduct on roads to and from Castle and City Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Rudolf of Würzburg"
-            }
-          ]
+          "content": "was established by the Electors Adolf of Mainz, Frederick Palatine Count of the Rhine, and Rudolf Bishop of Würzburg to protect against robbery and secure safe conduct on roads to and from Castle and City Boxberg."
         }
       ]
     }

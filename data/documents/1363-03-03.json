@@ -29,12 +29,7 @@
             "Papst"
           ],
           "type": "generic",
-          "content": "cleansed Eberhard von Rosenberg of the canonical irregularity arising from his taking possession of the parish church of Kocherthürn before ordination.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg"
-            }
-          ]
+          "content": "cleansed Eberhard von Rosenberg of the canonical irregularity arising from his taking possession of the parish church of Kocherthürn before ordination."
         },
         {
           "person": "Urban V",
@@ -42,12 +37,7 @@
             "Papst"
           ],
           "type": "generic",
-          "content": "ordered Eberhard von Rosenberg to leave the parish church of Kocherthürn.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg"
-            }
-          ]
+          "content": "ordered Eberhard von Rosenberg to leave the parish church of Kocherthürn."
         }
       ]
     },
@@ -81,15 +71,7 @@
             "Papst"
           ],
           "type": "generic",
-          "content": "commissioned the abbots of Sinsheim and Amorbach and the dean of Mosbach to install Eberhard von Rosenberg in possession of the parish church of Kocherthürn.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg"
-            },
-            {
-              "place": "mosbach-st-juliana"
-            }
-          ]
+          "content": "commissioned the abbots of Sinsheim and Amorbach and the dean of Mosbach to install Eberhard von Rosenberg in possession of the parish church of Kocherthürn."
         }
       ]
     }

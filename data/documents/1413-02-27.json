@@ -13,6 +13,9 @@
           "place": "aub"
         },
         {
+          "place": "berlichingen"
+        },
+        {
           "place": "brunn"
         },
         {
@@ -27,11 +30,9 @@
         {
           "person": "Hans von Brunn",
           "personTitle": [
-            "Bischof"
+            "Bischof",
+            "Bishop"
           ]
-        },
-        {
-          "person": "Konrad von Rosenberg"
         },
         {
           "place": "roettingen"
@@ -41,18 +42,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "received another bond from Bishop Johann von Brunn concerning the 8,000 florins, jointly with the Truchsessen and Berlichingen.",
-          "mention": [
-            {
-              "place": "berlichingen"
-            },
-            {
-              "person": "Hans von Brunn",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received another bond from Bishop Johann von Brunn concerning the 8,000 florins, jointly with the Truchsessen and Berlichingen."
         }
       ],
       "img": [

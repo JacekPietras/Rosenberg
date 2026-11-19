@@ -10,7 +10,10 @@
       "english": "Furthermore, the aforesaid castle and market of Haltenbergstetten had passed hereditarily to the von Rosenbergs. Zaisolph von Rosenberg surrendered both properties to Bishop Konrad and the bishopric of Würzburg, and received them back as fiefs on the Monday after the Conversion of St Paul, 1520. The archive summary identifies the bishop as Konrad von Thüngen. The transcription includes a struck-through amount of 1,600 florins. Recorded in the first register of Conrad’s fiefs, fol. 62. Marginal addition: Münster, Irmershausen, Treuschwingen farm, Reihbach farm, Haldenhof. Editorial note: These place names were added by a later hand.",
       "mention": [
         {
-          "person": "Konrad von Thüngen"
+          "person": "Konrad von Thüngen",
+          "personTitle": [
+            "Bishop"
+          ]
         },
         {
           "place": "rosenberg-town"
@@ -20,37 +23,18 @@
         },
         {
           "place": "wurzburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "subject": "von Rosenberg family",
           "type": "generic",
-          "content": "inherited Schloss and the market of Haltenbergstetten.",
-          "mention": [
-            {
-              "place": "schloss-haltenbergstetten"
-            }
-          ]
+          "content": "inherited Schloss and the market of Haltenbergstetten."
         },
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "surrendered Schloss and the market of Haltenbergstetten to Bishop Konrad von Thüngen and received them back as a fief.",
-          "mention": [
-            {
-              "person": "Konrad von Thüngen",
-              "personTitle": [
-                "Bishop"
-              ]
-            },
-            {
-              "place": "schloss-haltenbergstetten"
-            }
-          ]
+          "content": "surrendered Schloss and the market of Haltenbergstetten to Bishop Konrad von Thüngen and received them back as a fief."
         }
       ],
       "img": [

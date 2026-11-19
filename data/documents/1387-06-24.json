@@ -11,6 +11,9 @@
           "person": "Hans of Wertheim"
         },
         {
+          "person": "Hans von Wertheim"
+        },
+        {
           "place": "lauda"
         }
       ],
@@ -23,15 +26,7 @@
             "der Jüngste"
           ],
           "type": "generic",
-          "content": "agreed with Count Hans von Wertheim to exempt their subjects in the Amt Lauda from the death duty until further notice.",
-          "mention": [
-            {
-              "person": "Hans von Wertheim"
-            },
-            {
-              "place": "lauda"
-            }
-          ]
+          "content": "agreed with Count Hans von Wertheim to exempt their subjects in the Amt Lauda from the death duty until further notice."
         }
       ]
     }

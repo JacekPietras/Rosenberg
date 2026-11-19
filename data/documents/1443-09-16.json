@@ -12,9 +12,6 @@
           "person": "Gotfried Schenk von Limpurg"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "place": "niederstetten"
         },
         {
@@ -28,15 +25,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "held patronage rights to the benefice at St. Catherine’s altar in Haltenbergstetten in alternation with the Bishop of Würzburg, as owner of Haltenbergstetten Castle.",
-          "mention": [
-            {
-              "place": "schloss-haltenbergstetten"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "held patronage rights to the benefice at St. Catherine’s altar in Haltenbergstetten in alternation with the Bishop of Würzburg, as owner of Haltenbergstetten Castle."
         }
       ]
     }

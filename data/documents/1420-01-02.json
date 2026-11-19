@@ -42,9 +42,6 @@
           "person": "Hans of Würzburg"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "place": "roettingen"
         },
         {
@@ -66,22 +63,12 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "resided at Röttingen.",
-          "mention": [
-            {
-              "place": "roettingen"
-            }
-          ]
+          "content": "resided at Röttingen."
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "sold his share of the tithes at Neckarzimmern and Diedesheim to Konrad von Weinsberg with a right of repurchase.",
-          "mention": [
-            {
-              "person": "Konrad von Weinsberg"
-            }
-          ]
+          "content": "sold his share of the tithes at Neckarzimmern and Diedesheim to Konrad von Weinsberg with a right of repurchase."
         },
         {
           "person": "Konrad von Weinsberg",

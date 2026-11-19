@@ -27,16 +27,7 @@
           ]
         },
         {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "place": "hutten"
-        },
-        {
-          "person": "Konrad von Uissigheim"
         },
         {
           "place": "rieneck"
@@ -55,22 +46,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was a surety for Adolf of Mainz’s pledge of revenue and office at Orb to Götz Vogt von Rieneck.",
-          "mention": [
-            {
-              "person": "Götz von Rieneck"
-            }
-          ]
+          "content": "was a surety for Adolf of Mainz’s pledge of revenue and office at Orb to Götz Vogt von Rieneck."
         },
         {
           "person": "Konrad von Uissigheim",
           "type": "generic",
-          "content": "was a surety for Adolf of Mainz’s pledge of revenue and office at Orb to Götz Vogt von Rieneck.",
-          "mention": [
-            {
-              "person": "Götz von Rieneck"
-            }
-          ]
+          "content": "was a surety for Adolf of Mainz’s pledge of revenue and office at Orb to Götz Vogt von Rieneck."
         }
       ],
       "img": [

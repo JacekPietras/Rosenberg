@@ -10,9 +10,6 @@
       "english": "The entry says that further rights were bought there from Hans von Rosenberg and recorded in the chamber register, with the original filed under letter R, ‘properties.’ The archive summary supplies the context: the buyer was Bishop Lorenz von Bibra, and the rights were in Lauda and its surrounding district.",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "place": "lauda"
         },
         {
@@ -26,12 +23,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "sold further rights at Lauda.",
-          "mention": [
-            {
-              "place": "lauda"
-            }
-          ]
+          "content": "sold further rights at Lauda."
         }
       ],
       "img": [

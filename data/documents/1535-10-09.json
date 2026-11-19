@@ -9,9 +9,6 @@
       "english": "Elector Ludwig V of the Palatinate sells to Georg von Rosenberg the castle of Winzingen with all appurtenances for 10,250 gulden and assumes 1,990 gulden of the buyer's debt, for which the buyer instead of payment transfers to him the castle of Schweigern together with half the village of Schweigern, the Seehof, and the small village of Windischbuch.\n\nPeriod: October 9, 1535 (Dionysius 1535)",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "schweigern"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "acquired Schloss Winzingen and its appurtenances from Kurfürst Ludwig V of the Palatinate, giving Schloss Schweigern, half the village of Schweigern, the Seehof, and Windischbuch in exchange.",
-          "mention": [
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "acquired Schloss Winzingen and its appurtenances from Kurfürst Ludwig V of the Palatinate, giving Schloss Schweigern, half the village of Schweigern, the Seehof, and Windischbuch in exchange."
         }
       ],
       "img": [

@@ -9,9 +9,6 @@
       "english": "This archival file contains a vidimus, made by Abbot Johann of St Ulrich and Afra in Augsburg, of a 1428 Würzburg cathedral chapter charter granting the office of Tauberrettersheim as a fief to Hans von Rosenberg and his heirs, with the chapter undertaking lifetime payments to Hans and his wife Selande. It also contains later proceedings concerning a claim by Hans Langenmantel and his sisters against the estate of their sister Selena, Hans von Rosenberg’s widow, including a 1454 copy of Rothenburg’s judgment and 1495 correspondence. The catalog describes the file’s date range as 1428–1495.",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "place": "rothenburg"
         },
         {
@@ -23,11 +20,6 @@
           "person": "Hans von Rosenberg",
           "type": "generic",
           "content": "received the Tauberrettersheim office from Neumünster in Würzburg as a fief in 1428, in return for payments in cash and kind to the provost.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ],
           "date": "1428"
         },
         {
@@ -40,22 +32,12 @@
           "person": "Selena",
           "type": "generic",
           "content": "held the life tenancy in the office revenues with her husband Hans von Rosenberg.",
-          "mention": [
-            {
-              "person": "Hans von Rosenberg"
-            }
-          ],
           "date": "1428"
         },
         {
           "person": "Selena",
           "type": "generic",
           "content": "was identified as the widow of Hans von Rosenberg in a later inheritance claim.",
-          "mention": [
-            {
-              "person": "Hans von Rosenberg"
-            }
-          ],
           "date": "1454"
         }
       ]

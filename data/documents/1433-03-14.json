@@ -8,6 +8,9 @@
       "english": "Saturday after St. Gregory; Abbot Gotfried von Comburg grants Kunz von Rosenberg zu Bartenstein all the property that Kunz Lecher had owned;\n\nseal removed.",
       "mention": [
         {
+          "person": "Gotfried of Comburg"
+        },
+        {
           "person": "Gotfried von Comburg"
         },
         {
@@ -21,12 +24,7 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "received from Abbot Gotfried of Comburg all the property formerly held by Kunz Lecher.",
-          "mention": [
-            {
-              "person": "Gotfried of Comburg"
-            }
-          ]
+          "content": "received from Abbot Gotfried of Comburg all the property formerly held by Kunz Lecher."
         }
       ],
       "img": [

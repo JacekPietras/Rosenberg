@@ -19,22 +19,12 @@
         {
           "subject": "Johann von Stockheim's mother",
           "type": "generic",
-          "content": "belonged to the noble von Rosenberg family.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "belonged to the noble von Rosenberg family."
         },
         {
           "subject": "Johann von Stockheim's maternal grandmother",
           "type": "generic",
-          "content": "belonged to the von Cronberg family.",
-          "mention": [
-            {
-              "place": "cronberg"
-            }
-          ]
+          "content": "belonged to the von Cronberg family."
         }
       ]
     }

@@ -12,9 +12,6 @@
           "person": "Friedrich von Fleckenstein"
         },
         {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
           "person": "Hans von Gemmingen"
         }
       ],
@@ -22,12 +19,7 @@
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "represented the children of Friedrich von Fleckenstein in a dispute concerning the people of Forstfeld.",
-          "mention": [
-            {
-              "person": "Friedrich von Fleckenstein"
-            }
-          ]
+          "content": "represented the children of Friedrich von Fleckenstein in a dispute concerning the people of Forstfeld."
         }
       ]
     }

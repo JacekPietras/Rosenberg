@@ -10,9 +10,6 @@
       "english": "The aforementioned Anselm von Rosenberg had a new barn built and placed it at Prosselsheim on a property belonging to the Carthusians of Astheim. When the Carthusians complained, Gotfried Schenk von Limpurg, Bischof, made an agreement between them: the barn could remain there until Anselm and his wife had died, after which it would pass to the Carthusians. The archive summary clarifies that it remained in the couple’s possession during their lifetimes. Register of Various Forms of Bishop Gotfried, fol. 62. Date taken from the copybook.",
       "mention": [
         {
-          "person": "Anselm von Rosenberg"
-        },
-        {
           "person": "Gotfried Schenk von Limpurg",
           "personTitle": [
             "Bischof"
@@ -28,12 +25,7 @@
         {
           "subject": "barn at Prosselsheim",
           "type": "generic",
-          "content": "was to remain on the Carthusians’ property and pass to them after the deaths of Anselm von Rosenberg and his wife.",
-          "mention": [
-            {
-              "person": "Anselm von Rosenberg"
-            }
-          ]
+          "content": "was to remain on the Carthusians’ property and pass to them after the deaths of Anselm von Rosenberg and his wife."
         }
       ],
       "img": [

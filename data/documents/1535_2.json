@@ -12,9 +12,6 @@
           "person": "Götz von Berlichingen"
         },
         {
-          "person": "Hans Thomas von Rosenberg"
-        },
-        {
           "place": "nuremberg"
         },
         {
@@ -28,12 +25,7 @@
         {
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
-          "content": "received safe conduct for the negotiations concerning the Rosenberg matter.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "received safe conduct for the negotiations concerning the Rosenberg matter."
         }
       ],
       "img": [

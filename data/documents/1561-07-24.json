@@ -8,9 +8,6 @@
       "english": "Duke John Frederick the Middle of Saxony brokered a treaty between Elector Frederick II of the Palatinate and Albrecht von Rosenberg, whereby this, against payment of 27,000 guilders, assigns to all his rights and claims from Boxberg and accessories.",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "boxberg"
         }
       ],
@@ -26,12 +23,7 @@
         {
           "person": "Hans Friedrich",
           "type": "generic",
-          "content": "mediated an agreement between Elector Friedrich II of the Palatinate and Albrecht von Rosenberg.",
-          "mention": [
-            {
-              "person": "Albrecht von Rosenberg"
-            }
-          ]
+          "content": "mediated an agreement between Elector Friedrich II of the Palatinate and Albrecht von Rosenberg."
         },
         {
           "person": "Friedrich II. von der Pfalz",
@@ -43,12 +35,7 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "ceded all his rights and claims to Boxberg and its appurtenances to Elector Friedrich II of the Palatinate in return for payment of 27,000 florins.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "ceded all his rights and claims to Boxberg and its appurtenances to Elector Friedrich II of the Palatinate in return for payment of 27,000 florins."
         }
       ],
       "img": [

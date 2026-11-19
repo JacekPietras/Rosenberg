@@ -19,31 +19,10 @@
           "place": "boxberg"
         },
         {
-          "person": "Dietrich Geyer"
-        },
-        {
           "place": "dottenheim"
         },
         {
-          "person": "Friedrich Truchsess"
-        },
-        {
-          "person": "Hans von Dottenheim"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "der Alte"
-          ]
-        },
-        {
           "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
         },
         {
           "person": "Kunz von Rosenberg",
@@ -53,15 +32,6 @@
         },
         {
           "place": "lauda"
-        },
-        {
-          "person": "Reinhard von Uissigheim"
-        },
-        {
-          "person": "Thomas von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
@@ -89,34 +59,12 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "sold, with his wife Elisabeth, their quarter of the castle and town of Boxberg to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "sold, with his wife Elisabeth, their quarter of the castle and town of Boxberg to Arnold von Rosenberg and his wife Christine."
         },
         {
           "person": "Elisabeth",
           "type": "generic",
-          "content": "sold, with her husband Kunz von Rosenberg der Junge, their quarter of the castle and town of Boxberg to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Kunz von Rosenberg",
-              "personTitle": [
-                "der Junge"
-              ]
-            }
-          ]
+          "content": "sold, with her husband Kunz von Rosenberg der Junge, their quarter of the castle and town of Boxberg to Arnold von Rosenberg and his wife Christine."
         },
         {
           "person": "Kunz von Rosenberg",
@@ -125,12 +73,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "sold the quarter of Boxberg with the consent of Ludwig, Pfalzgraf bei Rhein and Herzog in Bayern.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "sold the quarter of Boxberg with the consent of Ludwig, Pfalzgraf bei Rhein and Herzog in Bayern."
         },
         {
           "person": "Kunz von Rosenberg",
@@ -139,12 +82,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "held the quarter of Boxberg as a fief from the Palatinate.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "held the quarter of Boxberg as a fief from the Palatinate."
         },
         {
           "person": "Kunz von Rosenberg",
@@ -153,12 +91,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "had inherited the quarter of Boxberg from his late father.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "had inherited the quarter of Boxberg from his late father."
         },
         {
           "person": "Kunz von Rosenberg",
@@ -167,12 +100,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "stated that his late father had bought the quarter of Boxberg from the Johanniter.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "stated that his late father had bought the quarter of Boxberg from the Johanniter."
         },
         {
           "person": "Kunz von Rosenberg",
@@ -180,59 +108,17 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Kunz von Rosenberg",
-              "personTitle": [
-                "der Junge"
-              ]
-            }
-          ]
+          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Kunz von Rosenberg",
-              "personTitle": [
-                "der Junge"
-              ]
-            }
-          ]
+          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
           "person": "Friedrich Truchsess",
           "type": "generic",
-          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Kunz von Rosenberg",
-              "personTitle": [
-                "der Junge"
-              ]
-            }
-          ]
+          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
           "person": "Hans von Rosenberg",
@@ -240,135 +126,37 @@
             "der Alte"
           ],
           "type": "generic",
-          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Kunz von Rosenberg",
-              "personTitle": [
-                "der Junge"
-              ]
-            }
-          ]
+          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
           "person": "Götz von Dottenheim",
           "type": "generic",
-          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Kunz von Rosenberg",
-              "personTitle": [
-                "der Junge"
-              ]
-            }
-          ]
+          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Kunz von Rosenberg",
-              "personTitle": [
-                "der Junge"
-              ]
-            }
-          ]
+          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
           "person": "Hans von Dottenheim",
           "type": "generic",
-          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Kunz von Rosenberg",
-              "personTitle": [
-                "der Junge"
-              ]
-            }
-          ]
+          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
           "person": "Reinhard von Uissigheim",
           "type": "generic",
-          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Kunz von Rosenberg",
-              "personTitle": [
-                "der Junge"
-              ]
-            }
-          ]
+          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
           "person": "Dietrich Geyer",
           "type": "generic",
-          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Kunz von Rosenberg",
-              "personTitle": [
-                "der Junge"
-              ]
-            }
-          ]
+          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         },
         {
           "person": "Eberhard von Dottenheim",
           "type": "generic",
-          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Kunz von Rosenberg",
-              "personTitle": [
-                "der Junge"
-              ]
-            }
-          ]
+          "content": "stood surety in the sale of the quarter of the castle and town of Boxberg by Kunz von Rosenberg der Junge and his wife Elisabeth to Arnold von Rosenberg and his wife Christine."
         }
       ],
       "img": [

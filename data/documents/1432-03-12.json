@@ -18,9 +18,6 @@
           "person": "Hans von Seldeneck"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Kraft von Hohenlohe"
         },
         {
@@ -31,18 +28,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "received as a man fief from Kraft von Hohenlohe his purchased share in Bartenstein Castle and a house and farmstead in Röttingen.",
-          "mention": [
-            {
-              "place": "bartenstein"
-            },
-            {
-              "person": "Kraft von Hohenlohe"
-            },
-            {
-              "place": "roettingen"
-            }
-          ]
+          "content": "received as a man fief from Kraft von Hohenlohe his purchased share in Bartenstein Castle and a house and farmstead in Röttingen."
         },
         {
           "person": "Konrad von Rosenberg",

@@ -12,6 +12,9 @@
           "person": "Agatha von Helmstadt"
         },
         {
+          "person": "Agatha von Helmstatt"
+        },
+        {
           "person": "Georg Siegmund von Adelsheim"
         },
         {
@@ -28,12 +31,7 @@
         {
           "person": "Hans Carius von Rosenberg",
           "type": "generic",
-          "content": "consented to the sale by local courts and communities of a 220-Gulden annuity to Agatha von Helmstatt.",
-          "mention": [
-            {
-              "person": "Agatha von Helmstatt"
-            }
-          ]
+          "content": "consented to the sale by local courts and communities of a 220-Gulden annuity to Agatha von Helmstatt."
         }
       ]
     }

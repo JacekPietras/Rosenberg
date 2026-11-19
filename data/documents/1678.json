@@ -19,12 +19,7 @@
             "Graf"
           ],
           "type": "generic",
-          "content": "held Rosenberg Castle.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "held Rosenberg Castle."
         },
         {
           "person": "Heinrich von Hatzfeld",
@@ -32,22 +27,12 @@
             "Graf"
           ],
           "type": "generic",
-          "content": "planned a new building at Rosenberg Castle.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "planned a new building at Rosenberg Castle."
         },
         {
           "subject": "The Electoral Palatinate",
           "type": "generic",
-          "content": "claimed ownership of a quarter of Rosenberg Castle.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "claimed ownership of a quarter of Rosenberg Castle."
         }
       ]
     }

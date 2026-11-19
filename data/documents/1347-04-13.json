@@ -8,10 +8,7 @@
       "english": "by means of which Count Rudolf of Wertheim, Gotfried of Bruneck and Ludwig of Hohenloch mediate a reconciliation between the nobleman Kraft of Hohenloch, their 1st uncle and savior, on the one hand, and the staunch hereditary men, Lord Eberhard von Rosenberg, Vogt of Dürn, Eberhard von Rosenberg, called von Zimmern, Eberhard and Konrad, the aforementioned Vogt's sons, and Hans von Rosenberg on the other hand.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Hans von Rosenberg"
+          "person": "Ludwig of Hohenlohe"
         },
         {
           "person": "Rudolf of Wertheim"
@@ -24,15 +21,7 @@
             "genannt von Zimmern"
           ],
           "type": "generic",
-          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe.",
-          "mention": [
-            {
-              "person": "Ludwig of Hohenlohe"
-            },
-            {
-              "person": "Rudolf of Wertheim"
-            }
-          ]
+          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe."
         },
         {
           "person": "vogt_zu_Durn",
@@ -45,15 +34,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe.",
-          "mention": [
-            {
-              "person": "Ludwig of Hohenlohe"
-            },
-            {
-              "person": "Rudolf of Wertheim"
-            }
-          ]
+          "content": "was named among the men on the opposing side in a reconciliation mediated by Count Rudolf of Wertheim, Gotfried of Bruneck, and Ludwig of Hohenlohe."
         },
         {
           "person": "vogt_zu_Durn",

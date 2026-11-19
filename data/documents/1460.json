@@ -18,9 +18,6 @@
           "place": "schweigern"
         },
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
           "place": "unterschuepf"
         }
       ],
@@ -34,18 +31,7 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "received a fief from Diether, Archbishop of Mainz, comprising half of Schüpf Castle, half of Oberschüpf, half of Hinterschüpf, Upfingen, and fields and meadows between Schweigern and Unterschüpf.",
-          "mention": [
-            {
-              "place": "oberschuepf"
-            },
-            {
-              "place": "schweigern"
-            },
-            {
-              "place": "unterschuepf"
-            }
-          ]
+          "content": "received a fief from Diether, Archbishop of Mainz, comprising half of Schüpf Castle, half of Oberschüpf, half of Hinterschüpf, Upfingen, and fields and meadows between Schweigern and Unterschüpf."
         }
       ]
     }

@@ -16,6 +16,9 @@
           "person": "Eberhard von Rosenberg"
         },
         {
+          "person": "Engelhard von Weinsberg"
+        },
+        {
           "person": "Gerhard von Talheim"
         },
         {
@@ -38,15 +41,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "witnessed and sealed Engelhard von Weinsberg’s promise to Archbishop Baldewin concerning Weinsberg Castle.",
-          "mention": [
-            {
-              "person": "Engelhard von Weinsberg"
-            },
-            {
-              "place": "weinsberg"
-            }
-          ]
+          "content": "witnessed and sealed Engelhard von Weinsberg’s promise to Archbishop Baldewin concerning Weinsberg Castle."
         }
       ]
     }

@@ -1,6 +1,6 @@
 import { escapeHtml } from './html.js';
 import { findPlaceByName } from '../data/entities.js?v=90';
-import { resolvePerson } from '../data/relationships.js?v=12';
+import { resolvePerson } from '../data/relationships.js?v=13';
 import { findPersonNameMentions, personMentionClass } from '../data/person-name-recognition.js?v=25';
 
 export function createMarkupRenderer({ state }) {

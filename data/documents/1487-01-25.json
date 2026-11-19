@@ -10,9 +10,6 @@
       "english": "Johann von Dietzesau, parish priest of Straubing, was captured by Georg von Rosenberg while travelling under Würzburg’s safe-conduct between Kitzingen and Würzburg and held for a ransom of 1,000 florins. As a result, Bishop Rudolf had to pay Duke Albrecht 1,500 florins on the Feast of the Conversion of St Paul, 1487. The archive summary identifies the bishop as Rudolf von Scherenberg and the duke as Albrecht IV of Bavaria. Recorded in Rudolf’s third register of contracts, fol. 271.",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "wurzburg"
         }
       ],
@@ -20,12 +17,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "captured Johann von Dietzesau while he was travelling under Würzburg safe conduct between Kitzingen and Würzburg and ransomed him.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "captured Johann von Dietzesau while he was travelling under Würzburg safe conduct between Kitzingen and Würzburg and ransomed him."
         }
       ],
       "img": [

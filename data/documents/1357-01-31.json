@@ -13,16 +13,7 @@
           "place": "buchen"
         },
         {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ]
+          "person": "Eberhard"
         },
         {
           "place": "lauda"
@@ -61,31 +52,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "bought the village of Uffingen jointly with [margaretha_von_thungen] from Eberhard Graf zu Wertheim, and Katherine.",
-          "mention": [
-            {
-              "person": "Eberhard"
-            },
-            {
-              "place": "thuengen"
-            }
-          ]
+          "content": "bought the village of Uffingen jointly with [margaretha_von_thungen] from Eberhard Graf zu Wertheim, and Katherine."
         },
         {
           "person": "margaretha_von_thungen",
           "type": "generic",
-          "content": "bought the village of Uffingen jointly with Eberhard von Rosenberg der Jüngere from Eberhard Graf zu Wertheim, and Katherine.",
-          "mention": [
-            {
-              "person": "Eberhard"
-            },
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            }
-          ]
+          "content": "bought the village of Uffingen jointly with Eberhard von Rosenberg der Jüngere from Eberhard Graf zu Wertheim, and Katherine."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -93,37 +65,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "bought the people and rights at Schweigern jointly with [margaretha_von_thungen] from Eberhard Graf zu Wertheim, and Katherine.",
-          "mention": [
-            {
-              "person": "Eberhard"
-            },
-            {
-              "place": "schweigern"
-            },
-            {
-              "place": "thuengen"
-            }
-          ]
+          "content": "bought the people and rights at Schweigern jointly with [margaretha_von_thungen] from Eberhard Graf zu Wertheim, and Katherine."
         },
         {
           "person": "margaretha_von_thungen",
           "type": "generic",
-          "content": "bought the people and rights at Schweigern jointly with Eberhard von Rosenberg der Jüngere from Eberhard Graf zu Wertheim, and Katherine.",
-          "mention": [
-            {
-              "person": "Eberhard"
-            },
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "bought the people and rights at Schweigern jointly with Eberhard von Rosenberg der Jüngere from Eberhard Graf zu Wertheim, and Katherine."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -131,15 +78,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "bought Schweigern jointly with [margaretha_von_thungen], subject to the sellers’ retained church-patronage and Mannlehen rights.",
-          "mention": [
-            {
-              "place": "schweigern"
-            },
-            {
-              "place": "thuengen"
-            }
-          ]
+          "content": "bought Schweigern jointly with [margaretha_von_thungen], subject to the sellers’ retained church-patronage and Mannlehen rights."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -147,15 +86,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "granted Eberhard Graf zu Wertheim, and Katherine a ten-year right to redeem Uffingen and the Schweigern property.",
-          "mention": [
-            {
-              "person": "Eberhard"
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "granted Eberhard Graf zu Wertheim, and Katherine a ten-year right to redeem Uffingen and the Schweigern property."
         },
         {
           "person": "Eberhard von Wertheim",
@@ -171,22 +102,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "was to hold the purchased property as a fief from Eberhard Graf zu Wertheim, and Katherine.",
-          "mention": [
-            {
-              "person": "Eberhard"
-            }
-          ]
+          "content": "was to hold the purchased property as a fief from Eberhard Graf zu Wertheim, and Katherine."
         },
         {
           "person": "margaretha_von_thungen",
           "type": "generic",
-          "content": "was to hold the purchased property as a fief from Eberhard Graf zu Wertheim, and Katherine.",
-          "mention": [
-            {
-              "person": "Eberhard"
-            }
-          ]
+          "content": "was to hold the purchased property as a fief from Eberhard Graf zu Wertheim, and Katherine."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -194,31 +115,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "agreed with [margaretha_von_thungen] not to exact higher Bede from the people than the Wertheim lordship had customarily demanded.",
-          "mention": [
-            {
-              "place": "thuengen"
-            },
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ]
+          "content": "agreed with [margaretha_von_thungen] not to exact higher Bede from the people than the Wertheim lordship had customarily demanded."
         },
         {
           "person": "margaretha_von_thungen",
           "type": "generic",
-          "content": "agreed with Eberhard von Rosenberg der Jüngere not to exact higher Bede from the people than the Wertheim lordship had customarily demanded.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            },
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ]
+          "content": "agreed with Eberhard von Rosenberg der Jüngere not to exact higher Bede from the people than the Wertheim lordship had customarily demanded."
         },
         {
           "person": "Eberhard von Rosenberg",

@@ -9,12 +9,6 @@
       "mention": [
         {
           "place": "boxberg"
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
         }
       ],
       "facts": [
@@ -28,12 +22,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "received back from Boxberg’s mayor, Schultheiß, and community goods belonging to his farm that they had previously bought from him in a transaction valued at 538 guilders.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "received back from Boxberg’s mayor, Schultheiß, and community goods belonging to his farm that they had previously bought from him in a transaction valued at 538 guilders."
         },
         {
           "person": "Georg von Rosenberg",

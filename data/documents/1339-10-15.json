@@ -14,13 +14,7 @@
           "place": "bartenstein"
         },
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Konrad Schenk von Erbach"
-        },
-        {
-          "person": "Konrad von Bickenbach"
         },
         {
           "person": "Kraft von Hohenlohe"
@@ -42,40 +36,19 @@
         {
           "person": "Konrad von Bickenbach",
           "type": "generic",
-          "content": "served as a councilman for Archbishop Heinrich III of Mainz in the settlement concerning Rieneck and Bartenstein.",
-          "mention": [
-            {
-              "place": "bartenstein"
-            },
-            {
-              "place": "rieneck"
-            }
-          ]
+          "content": "served as a councilman for Archbishop Heinrich III of Mainz in the settlement concerning Rieneck and Bartenstein."
         },
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "served as a councilman for Archbishop Heinrich III of Mainz in the settlement concerning Rieneck and Bartenstein.",
-          "mention": [
-            {
-              "place": "bartenstein"
-            },
-            {
-              "place": "rieneck"
-            }
-          ]
+          "content": "served as a councilman for Archbishop Heinrich III of Mainz in the settlement concerning Rieneck and Bartenstein."
         }
       ],
       "guesses": [
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "is the same Eberhard von Rosenberg who in 1352 declared in a letter that he had no seal of his own (1352-01-07).",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg"
-            }
-          ]
+          "content": "is the same Eberhard von Rosenberg who in 1352 declared in a letter that he had no seal of his own (1352-01-07)."
         }
       ]
     }

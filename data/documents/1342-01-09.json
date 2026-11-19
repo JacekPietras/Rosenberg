@@ -16,6 +16,12 @@
         },
         {
           "person": "Konrad Schenk of Erbach"
+        },
+        {
+          "person": "Konrad Schenk von Erbach"
+        },
+        {
+          "person": "Konrad von Bickenbach"
         }
       ],
       "facts": [
@@ -25,15 +31,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "gathered evidence with Konrad von Bickenbach and Wilderich von Vilmar in the dispute over the common forest between Konrad Schenk von Erbach and the archbishop of Mainz.",
-          "mention": [
-            {
-              "person": "Konrad Schenk von Erbach"
-            },
-            {
-              "person": "Konrad von Bickenbach"
-            }
-          ]
+          "content": "gathered evidence with Konrad von Bickenbach and Wilderich von Vilmar in the dispute over the common forest between Konrad Schenk von Erbach and the archbishop of Mainz."
         }
       ]
     }

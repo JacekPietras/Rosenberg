@@ -12,6 +12,12 @@
           "person": "Balthasar von Rosenberg"
         },
         {
+          "place": "bischofsheim"
+        },
+        {
+          "place": "helmstadt"
+        },
+        {
           "person": "Philipp of Speyer",
           "personTitle": [
             "Bishop"
@@ -28,15 +34,7 @@
             "Vogt zu Lauterburg"
           ],
           "type": "generic",
-          "content": "served as guardian of the children of Alexander von Helmstatt and Margarete in a legal dispute over Bischofsheim fiefs.",
-          "mention": [
-            {
-              "place": "bischofsheim"
-            },
-            {
-              "place": "helmstadt"
-            }
-          ]
+          "content": "served as guardian of the children of Alexander von Helmstatt and Margarete in a legal dispute over Bischofsheim fiefs."
         }
       ]
     }

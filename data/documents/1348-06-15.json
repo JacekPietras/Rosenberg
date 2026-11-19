@@ -14,6 +14,12 @@
           "person": "Katharina of Rosenberg"
         },
         {
+          "person": "König Karl",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
           "person": "Peter of Rosenberg"
         },
         {
@@ -103,54 +109,22 @@
         {
           "person": "Peter von Rosenberg",
           "type": "generic",
-          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV.",
-          "mention": [
-            {
-              "person": "König Karl",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV."
         },
         {
           "person": "Jodok von Rosenberg",
           "type": "generic",
-          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV.",
-          "mention": [
-            {
-              "person": "König Karl",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV."
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV.",
-          "mention": [
-            {
-              "person": "König Karl",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV."
         },
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV.",
-          "mention": [
-            {
-              "person": "König Karl",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "promised for himself, his heirs and successors to uphold the tax exemption granted to the monastery of Hohenfurt by King Karl IV."
         },
         {
           "person": "Peter von Rosenberg",
@@ -180,12 +154,7 @@
         {
           "subject": "The monastery of Hohenfurt",
           "type": "generic",
-          "content": "was described as a Cistercian foundation of the brothers von Rosenberg and their forebears.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was described as a Cistercian foundation of the brothers von Rosenberg and their forebears."
         },
         {
           "person": "Karl IV.",
@@ -195,62 +164,32 @@
         {
           "person": "Busko von Bernharticz",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
         },
         {
           "person": "Wernher von Porzessin",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
         },
         {
           "person": "Przibik von Porzessin",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
         },
         {
           "person": "Nicolaus von Podnawicz",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
         },
         {
           "person": "Jesko von Czekow",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
         },
         {
           "person": "Wlczko von Dobronicz",
           "type": "generic",
-          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was a counsellor of the brothers von Rosenberg and appended his seal to their charter."
         },
         {
           "person": "Wernher von Porzessin",

@@ -16,6 +16,12 @@
           ]
         },
         {
+          "person": "Heinrich von Schaunberg",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
           "place": "leuchtenberg"
         },
         {
@@ -32,18 +38,7 @@
         {
           "subject": "the von Rosenberg",
           "type": "generic",
-          "content": "were excepted as in-laws of the counts of Schaunberg from the alliance renewed by Heinrich von Schaunberg der Ältere and his sons Heinrich and Ulrich with the dukes of Bavaria.",
-          "mention": [
-            {
-              "person": "Heinrich von Schaunberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "place": "schaunberg"
-            }
-          ]
+          "content": "were excepted as in-laws of the counts of Schaunberg from the alliance renewed by Heinrich von Schaunberg der Ältere and his sons Heinrich and Ulrich with the dukes of Bavaria."
         }
       ]
     }

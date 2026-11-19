@@ -18,6 +18,11 @@
     {
       "german": "Aplo a Rosenberg (S. 178) dürfte in der Stammtafel der Herren von Rosenberg zu streichen sein; er gehört den wirzburgischen Schenken von Roßberg an, was sich aus einer bronnbacher Urkunde de a 1278. Fer. VI. ante purif. Mar. ergiebt, worin Aplo de Rosenberg und seine eheliche Hausfrau Adelheid dem Kloster Bronnbach 2 Morgen Wein im Schalkberg (bekannte Weinlage bei Wirzburg) schenken.",
       "english": "Aplo a Rosenberg (p. 178) should probably be struck from the genealogical table of the Lords of Rosenberg; he belongs to the Würzburg Schenken von Roßberg, as results from a Bronnbach charter of 1278, Friday before the Purification of Mary, in which Aplo von Rosenberg and his wedded wife Adelheid give to Kloster Bronnbach 2 Morgen of wine in the Schalkberg (a known vineyard site near Würzburg).",
+      "mention": [
+        {
+          "place": "bronnbach"
+        }
+      ],
       "facts": [
         {
           "person": "Aplo von Rosenberg",
@@ -29,25 +34,12 @@
           "person": "Aplo von Rosenberg",
           "type": "generic",
           "content": "donated, together with his wife Adelheid, 2 Morgen of wine in the Schalkberg to Kloster Bronnbach.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            }
-          ],
           "date": "1278"
         },
         {
           "person": "Adelheid",
           "type": "generic",
           "content": "donated, together with her husband Aplo von Rosenberg, 2 Morgen of wine in the Schalkberg to Kloster Bronnbach.",
-          "mention": [
-            {
-              "person": "Aplo von Rosenberg"
-            },
-            {
-              "place": "bronnbach"
-            }
-          ],
           "date": "1278"
         }
       ],
@@ -56,14 +48,6 @@
           "person": "Aplo von Rosenberg",
           "type": "generic",
           "content": "belonged to the Würzburg Schenken von Roßberg, not to the Lords of Rosenberg.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ],
           "date": "1278"
         }
       ]

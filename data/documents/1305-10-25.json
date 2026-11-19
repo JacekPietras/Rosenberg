@@ -25,6 +25,9 @@
           "person": "Konrad von Uissigheim"
         },
         {
+          "place": "wenkheim"
+        },
+        {
           "place": "wertheim-stiftskirche"
         }
       ],
@@ -87,55 +90,12 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim.",
-          "mention": [
-            {
-              "person": "Arnold von Uissigheim"
-            },
-            {
-              "place": "bronnbach"
-            },
-            {
-              "person": "Eberhard von Uissigheim",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            },
-            {
-              "place": "wenkheim"
-            }
-          ]
+          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim.",
-          "mention": [
-            {
-              "person": "Arnold von Uissigheim"
-            },
-            {
-              "place": "bronnbach"
-            },
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Eberhard von Uissigheim",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            },
-            {
-              "place": "wenkheim"
-            }
-          ]
+          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
         },
         {
           "person": "Eberhard von Uissigheim",
@@ -143,55 +103,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Arnold von Uissigheim.",
-          "mention": [
-            {
-              "person": "Arnold von Uissigheim"
-            },
-            {
-              "place": "bronnbach"
-            },
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            },
-            {
-              "place": "wenkheim"
-            }
-          ]
+          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Arnold von Uissigheim."
         },
         {
           "person": "Arnold von Uissigheim",
           "type": "generic",
-          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Eberhard von Uissigheim der Jüngere.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            },
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Eberhard von Uissigheim",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            },
-            {
-              "place": "wenkheim"
-            }
-          ]
+          "content": "sold the goods in Steinbach near Wenkheim, with the jurisdiction there, to Bronnbach Abbey together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Eberhard von Uissigheim der Jüngere."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -199,24 +116,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim.",
-          "mention": [
-            {
-              "person": "Arnold von Uissigheim"
-            },
-            {
-              "place": "bronnbach"
-            },
-            {
-              "person": "Eberhard von Uissigheim",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            }
-          ]
+          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Konrad von Rosenberg, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -229,27 +129,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim.",
-          "mention": [
-            {
-              "person": "Arnold von Uissigheim"
-            },
-            {
-              "place": "bronnbach"
-            },
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Eberhard von Uissigheim",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            }
-          ]
+          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Eberhard von Uissigheim der Jüngere and Arnold von Uissigheim."
         },
         {
           "person": "Konrad von Rosenberg",
@@ -262,24 +142,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Arnold von Uissigheim.",
-          "mention": [
-            {
-              "person": "Arnold von Uissigheim"
-            },
-            {
-              "place": "bronnbach"
-            },
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            }
-          ]
+          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Arnold von Uissigheim."
         },
         {
           "person": "Eberhard von Uissigheim",
@@ -292,27 +155,7 @@
         {
           "person": "Arnold von Uissigheim",
           "type": "generic",
-          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Eberhard von Uissigheim der Jüngere.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            },
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Eberhard von Uissigheim",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            }
-          ]
+          "content": "undertook to provide warranty (werschaft) for the goods to Bronnbach Abbey for a year and a day together with Eberhard von Rosenberg der Ältere, Konrad von Rosenberg and Eberhard von Uissigheim der Jüngere."
         },
         {
           "person": "Arnold von Uissigheim",

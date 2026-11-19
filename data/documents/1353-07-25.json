@@ -11,13 +11,13 @@
       "english": "I, Ludwig von Zwettl, at this time Burggraf zu Rosenberg, declare and make known to all who see, hear or read this charter, those now living and those to come, that with well-considered mind, of my own and good will, with the good will of my brother Buhart and of my son Hans, and with the good will and favor of all my heirs, at a time when I could well do so, I have sold thirty-six Metzen of forest fodder on thirty-six tenancies [at] dem Otten near Weitra to the honorable spiritual lord Abbot Otto of Zwettl and the convent there and their people at the aforementioned Otten, for thirty-four pounds of pennies and for one pound as Leitkauf [?] to my son Hans and my housewife Frau Elen, of which we are fully and completely paid. And I promise to free and protect them in that same property against all claims according to the law of the land in Austria, and whatever they lose therein, they shall have on all the property that I have at Alten Weitra, whether endowed or unendowed, searched or unsearched. And I give them over this charter, sealed with my seal and the seal of my aforementioned brother Buhart. The charter is given after Christ's birth thirteen hundred years and in the fifty-third year thereafter, on St. James's day.",
       "mention": [
         {
-          "person": "Ludwig von Zwettl"
-        },
-        {
           "person": "Otto of Zwettl"
         },
         {
           "place": "rosenberg-town"
+        },
+        {
+          "place": "zwettl"
         }
       ],
       "facts": [
@@ -27,41 +27,17 @@
             "Burggraf zu Rosenberg"
           ],
           "type": "generic",
-          "content": "sold forest fodder (Forstfutter) from tenancies at dem Otten near Weitra to Abt Otto of Zwettl, the convent of Zwettl and their people at Otten.",
-          "mention": [
-            {
-              "person": "Otto of Zwettl"
-            },
-            {
-              "place": "zwettl"
-            }
-          ]
+          "content": "sold forest fodder (Forstfutter) from tenancies at dem Otten near Weitra to Abt Otto of Zwettl, the convent of Zwettl and their people at Otten."
         },
         {
           "person": "Buhart von Zwettl",
           "type": "generic",
-          "content": "consented to the sale by Ludwig von Zwettl of forest fodder at dem Otten near Weitra to Zwettl.",
-          "mention": [
-            {
-              "person": "Ludwig von Zwettl"
-            },
-            {
-              "place": "zwettl"
-            }
-          ]
+          "content": "consented to the sale by Ludwig von Zwettl of forest fodder at dem Otten near Weitra to Zwettl."
         },
         {
           "person": "Hans von Zwettl",
           "type": "generic",
-          "content": "consented to the sale by Ludwig von Zwettl of forest fodder at dem Otten near Weitra to Zwettl.",
-          "mention": [
-            {
-              "person": "Ludwig von Zwettl"
-            },
-            {
-              "place": "zwettl"
-            }
-          ]
+          "content": "consented to the sale by Ludwig von Zwettl of forest fodder at dem Otten near Weitra to Zwettl."
         },
         {
           "person": "Buhart von Zwettl",
@@ -81,28 +57,12 @@
         {
           "person": "Hans von Zwettl",
           "type": "generic",
-          "content": "received a Leitkauf [?] payment from Ludwig von Zwettl in connection with the sale to Zwettl.",
-          "mention": [
-            {
-              "person": "Ludwig von Zwettl"
-            },
-            {
-              "place": "zwettl"
-            }
-          ]
+          "content": "received a Leitkauf [?] payment from Ludwig von Zwettl in connection with the sale to Zwettl."
         },
         {
           "person": "Elen",
           "type": "generic",
-          "content": "received a Leitkauf [?] payment from Ludwig von Zwettl in connection with the sale to Zwettl.",
-          "mention": [
-            {
-              "person": "Ludwig von Zwettl"
-            },
-            {
-              "place": "zwettl"
-            }
-          ]
+          "content": "received a Leitkauf [?] payment from Ludwig von Zwettl in connection with the sale to Zwettl."
         },
         {
           "person": "Ludwig von Zwettl",
@@ -110,12 +70,7 @@
             "Burggraf zu Rosenberg"
           ],
           "type": "generic",
-          "content": "pledged his property at Alten Weitra as security to Zwettl for the sold forest fodder.",
-          "mention": [
-            {
-              "place": "zwettl"
-            }
-          ]
+          "content": "pledged his property at Alten Weitra as security to Zwettl for the sold forest fodder."
         },
         {
           "person": "Ludwig von Zwettl",
@@ -128,12 +83,7 @@
         {
           "person": "Buhart von Zwettl",
           "type": "generic",
-          "content": "had his seal attached to the charter of Ludwig von Zwettl.",
-          "mention": [
-            {
-              "person": "Ludwig von Zwettl"
-            }
-          ]
+          "content": "had his seal attached to the charter of Ludwig von Zwettl."
         },
         {
           "person": "Otto",
@@ -142,12 +92,7 @@
             "zu Zwettl"
           ],
           "type": "generic",
-          "content": "bought forest fodder at dem Otten near Weitra from Ludwig von Zwettl.",
-          "mention": [
-            {
-              "person": "Ludwig von Zwettl"
-            }
-          ]
+          "content": "bought forest fodder at dem Otten near Weitra from Ludwig von Zwettl."
         }
       ],
       "img": [

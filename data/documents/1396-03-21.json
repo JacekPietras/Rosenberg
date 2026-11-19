@@ -9,12 +9,6 @@
       "english": "Hans von Helmstadt, also known as von Rosenberg, residing at Helmstadt, establishes in the monastery at Wimpfen a memorial service for his deceased mother Anna von Dürn and his deceased siblings, and endows it with a perpetual annuity of 2 malter of grain from his properties in the village and district of Rappenau.\n\nValidity: March 21, 1396 (Tuesday before Palm Sunday 1396)",
       "mention": [
         {
-          "person": "Anna von Dürn"
-        },
-        {
-          "person": "Hans von Helmstadt"
-        },
-        {
           "place": "helmstadt"
         },
         {
@@ -31,22 +25,12 @@
         {
           "person": "Hans von Helmstadt",
           "type": "generic",
-          "content": "was also called von Rosenberg.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was also called von Rosenberg."
         },
         {
           "person": "Hans von Helmstadt",
           "type": "generic",
-          "content": "established a memorial service at the monastery in Wimpfen for his deceased mother Anna von Dürn and his deceased siblings, endowed with a perpetual rent of two malter of grain from his properties in Rappenau.",
-          "mention": [
-            {
-              "person": "Anna von Dürn"
-            }
-          ]
+          "content": "established a memorial service at the monastery in Wimpfen for his deceased mother Anna von Dürn and his deceased siblings, endowed with a perpetual rent of two malter of grain from his properties in Rappenau."
         }
       ],
       "img": [

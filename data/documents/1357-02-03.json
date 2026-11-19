@@ -17,18 +17,6 @@
           "person": "Eberhard"
         },
         {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
           "person": "Margaretha von Thüngen"
         },
         {
@@ -57,22 +45,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "had received the village of Uffingen as a pledge from Eberhard Graf zu Wertheim.",
-          "mention": [
-            {
-              "person": "Eberhard"
-            }
-          ]
+          "content": "had received the village of Uffingen as a pledge from Eberhard Graf zu Wertheim."
         },
         {
           "person": "margaretha_von_thungen",
           "type": "generic",
-          "content": "had received the village of Uffingen as a pledge from Eberhard Graf zu Wertheim.",
-          "mention": [
-            {
-              "person": "Eberhard"
-            }
-          ]
+          "content": "had received the village of Uffingen as a pledge from Eberhard Graf zu Wertheim."
         },
         {
           "person": "Eberhard von Wertheim",
@@ -80,15 +58,7 @@
             "Graf zu Wertheim"
           ],
           "type": "generic",
-          "content": "pledged Dertingen and Waldbüttelbrunn to his wife Katherine as substitute properties for Uffingen.",
-          "mention": [
-            {
-              "place": "dertingen"
-            },
-            {
-              "place": "waldbuettelbrunn"
-            }
-          ]
+          "content": "pledged Dertingen and Waldbüttelbrunn to his wife Katherine as substitute properties for Uffingen."
         },
         {
           "person": "Eberhard von Rosenberg",

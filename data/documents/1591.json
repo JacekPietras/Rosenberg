@@ -15,9 +15,6 @@
       "english": "Margrave Georg Friedrich of Brandenburg etc., Burgrave of Nuremberg, enfeoffs Albrecht Christoph von Rosenberg with the feudal holdings that fell to him through brotherly division at Waldmannshofen, Schön and in the Schwal as a male fief [as on February 22, 1546]. -\n\nSeal: The issuer.\n\nOriginal, parchment, seal preserved in wooden capsule. - Cf. Reg. No. 1158. - No. 1838.\n\nReg. No. 1946",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
           "place": "nuremberg"
         },
         {
@@ -28,12 +25,7 @@
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received the Waldmannshofen, Schön and Schwal fiefs as Mannlehen after division among the brothers.",
-          "mention": [
-            {
-              "place": "waldmannshofen"
-            }
-          ]
+          "content": "received the Waldmannshofen, Schön and Schwal fiefs as Mannlehen after division among the brothers."
         }
       ]
     }

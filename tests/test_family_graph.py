@@ -147,13 +147,11 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertEqual(['unmarked mention after recorded death or impossible age'], [c['reason'] for c in result.conflicts])
         self.assertEqual('anchored', result.relationships[0].derivations[0]['identity'])
 
-    def test_earlier_generic_fact_date_controls_chronology_and_context(self):
+    def test_earlier_generic_fact_date_controls_chronology(self):
         death = {'type': 'death', 'person': 'a', 'diedOn': '1387'}
         earlier = {'type': 'generic', 'person': 'a', 'date': '1369-08-27', 'content': 'issued a ruling.'}
         inputs = self.inputs(facts=[death, earlier])
         self.assertEqual('1369-08-27', inputs.assertions[1].historical_date)
-        observation = next(o for o in inputs.observations if o.source.pointer.endswith('/facts/1'))
-        self.assertEqual('1369-08-27', observation.historical_date)
         self.assertFalse(build(inputs).conflicts)
         del earlier['date']
         self.assertTrue(build(self.inputs(facts=[death, earlier])).conflicts)
@@ -407,8 +405,12 @@ class FamilyGraphTests(unittest.TestCase):
         self.write('data/nobiliary_particles.md', 'von')
         self.inputs(facts=[relation('Elisabeth von South', 'b'),
                            {'type': 'generic', 'person': 'Elisabeth von South',
-                            'content': 'held Hill with Konrad von North and Arnold von South.',
-                            'mention': [{'person': 'Arnold von South'}, {'person': 'Konrad von North'}, {'place': 'hill'}]}])
+                            'content': 'held Hill with Konrad von North and Arnold von South.'}])
+        path = self.root / 'data/documents/test.json'
+        document = json.loads(path.read_text())
+        document['entries'][0]['mention'] = [{'person': 'Arnold von South'}, {'person': 'Elisabeth von South'},
+                                             {'person': 'Konrad von North'}, {'place': 'hill'}]
+        path.write_text(json.dumps(document))
         phrase = 'Elisabeth von North, née von South'
         self.write('data/documents/prose.json', {'date': '1394', 'place': 'Hill', 'entries': [
             {'english': f'{phrase} held Hill with Konrad von North and Arnold von South. {phrase} witnessed.',
@@ -418,11 +420,11 @@ class FamilyGraphTests(unittest.TestCase):
         result = build(inputs)
         tree = serialize(inputs, [result])
         counts = tree['matchingBackground']['facts']['counts']
-        self.assertEqual(3, counts['elisabeth von south'])
+        self.assertEqual(4, counts['elisabeth von south'])
         self.assertNotIn('elisabeth von north', counts)
         graph = unpack_evidence(tree['evidence']['facts'])
         elisabeth, = [n for n in graph['nodes'] if n['name'] == 'Elisabeth von South']
-        english = [m for m in elisabeth['mentions'] if m['source']['pointer'].endswith('/english')]
+        english = [m for m in elisabeth['mentions'] if m['source']['pointer'].endswith('/mention')]
         self.assertEqual(['Elisabeth von South'], [m['reference'] for m in english])
         self.assertEqual(1, len(graph['relationships']))
 

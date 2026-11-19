@@ -10,9 +10,6 @@
       "english": "Emperor Ludwig (1) declares that at the court session in Würzburg before him Kunigunde of Lißberg, wife of Eberhard von Rosenberg, has appeared with advocates and presented her rights (and behub rechte und redelichen), (2) confirms the ensuing judgment rendered jointly by lords and knights, according to which Kunigunde's brother, Hermann [III., called von Bracht], may not receive or alienate the fortress Lißberg, the fortress Bracht with appurtenances, both occupied and unoccupied, nor her inheritance portion from her father [Walter I. of Lißberg] without her consent, and (3) declares that she has immediately transferred this inheritance according to judgment to her sons Engelhard [I.], Hans [III.] and Hermann [of Hirschhorn] for their use and benefit as they see fit.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Herman of Hirschhorn"
         },
         {
@@ -37,12 +34,7 @@
         {
           "person": "Kunigunde von Lißberg",
           "type": "generic",
-          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons.",
-          "mention": [
-            {
-              "place": "lissberg"
-            }
-          ]
+          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons."
         },
         {
           "person": "Kunigunde von Lißberg",

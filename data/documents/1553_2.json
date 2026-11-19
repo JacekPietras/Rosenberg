@@ -21,9 +21,6 @@
           "place": "heidelberg"
         },
         {
-          "person": "Lorenz von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
         }
       ],
@@ -67,12 +64,7 @@
         {
           "person": "Philipp Jakob von Rosenberg",
           "type": "generic",
-          "content": "received together with his brother Konrad half of a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate after the death of their father Lorenz.",
-          "mention": [
-            {
-              "place": "aub"
-            }
-          ]
+          "content": "received together with his brother Konrad half of a quarter of the town of Aub as Mannlehen from Elector Friedrich of the Palatinate after the death of their father Lorenz."
         }
       ]
     }

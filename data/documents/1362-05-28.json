@@ -30,28 +30,12 @@
         {
           "person": "Himmelspforten Monastery",
           "type": "generic",
-          "content": "had acquired properties in Kirchheim from members of the von Rosenberg family.",
-          "mention": [
-            {
-              "place": "kirchheim"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "had acquired properties in Kirchheim from members of the von Rosenberg family."
         },
         {
           "person": "Himmelspforten Monastery",
           "type": "generic",
-          "content": "received annual grain rents from endowed properties in Kirchheim purchased from the von Rosenberg family.",
-          "mention": [
-            {
-              "place": "kirchheim"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "received annual grain rents from endowed properties in Kirchheim purchased from the von Rosenberg family."
         }
       ]
     }

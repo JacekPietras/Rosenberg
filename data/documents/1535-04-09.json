@@ -12,9 +12,6 @@
           "place": "bobstadt"
         },
         {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
           "person": "Georg von Rosenberg"
         },
         {
@@ -36,12 +33,7 @@
             "zu Schweigern"
           ],
           "type": "generic",
-          "content": "renounced the right to redeem the quarter of the grain tithe at Bobstadt that his father Friedrich had sold to the Teutonic Order.",
-          "mention": [
-            {
-              "place": "bobstadt"
-            }
-          ]
+          "content": "renounced the right to redeem the quarter of the grain tithe at Bobstadt that his father Friedrich had sold to the Teutonic Order."
         },
         {
           "person": "Georg von Rosenberg",
@@ -49,12 +41,7 @@
             "zu Schweigern"
           ],
           "type": "generic",
-          "content": "acknowledged receipt of the money previously paid to redeem the quarter of the grain tithe at Bobstadt.",
-          "mention": [
-            {
-              "place": "bobstadt"
-            }
-          ]
+          "content": "acknowledged receipt of the money previously paid to redeem the quarter of the grain tithe at Bobstadt."
         }
       ],
       "img": [

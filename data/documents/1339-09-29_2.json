@@ -28,6 +28,9 @@
           "person": "Ludwig of Hohenlohe"
         },
         {
+          "place": "nuremberg"
+        },
+        {
           "person": "Otto of Würzburg",
           "personTitle": [
             "Bishop"
@@ -44,6 +47,9 @@
         },
         {
           "place": "wertheim-stiftskirche"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -54,15 +60,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "was designated arbitrator for the archbishop of Mainz in his alliance with the bishop of Würzburg and the Burggraf of Nürnberg.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "was designated arbitrator for the archbishop of Mainz in his alliance with the bishop of Würzburg and the Burggraf of Nürnberg."
         }
       ]
     }

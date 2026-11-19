@@ -25,12 +25,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "held imperial dues that Emperor Charles IV granted to Kraft von Hohenlohe.",
-          "mention": [
-            {
-              "person": "Kraft von Hohenlohe"
-            }
-          ]
+          "content": "held imperial dues that Emperor Charles IV granted to Kraft von Hohenlohe."
         }
       ]
     },
@@ -51,6 +46,9 @@
         },
         {
           "place": "nuremberg"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [
@@ -60,12 +58,7 @@
             "Graf"
           ],
           "type": "generic",
-          "content": "acquired serfs in the Ohrnwald from [vogt_zu_Durn].",
-          "mention": [
-            {
-              "place": "wallduern"
-            }
-          ]
+          "content": "acquired serfs in the Ohrnwald from [vogt_zu_Durn]."
         }
       ],
       "img": [
@@ -143,6 +136,9 @@
           ]
         },
         {
+          "person": "Kraft von Hohenlohe"
+        },
+        {
           "place": "nuremberg"
         },
         {
@@ -164,12 +160,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "had his imperial serfs in the Ohrenwald and along the Kocher granted to Kraft von Hohenlohe and his heirs by Emperor Charles IV.",
-          "mention": [
-            {
-              "person": "Kraft von Hohenlohe"
-            }
-          ]
+          "content": "had his imperial serfs in the Ohrenwald and along the Kocher granted to Kraft von Hohenlohe and his heirs by Emperor Charles IV."
         }
       ]
     }

@@ -9,9 +9,6 @@
       "english": "Complaint of Albrecht von Rosenberg against the former members of the Swabian League and the Palatinate over the family estate of Boxberg, which had been taken by force from his father in 1523\n\nPeriod: 1544\n\nContains: Including: Printed pamphlet: 'True Report on what grounds the noble and resolute Albrecht von Rosenberg etc. had to use and intended to use imperial defense against the former eleven-year Swabian League estates'",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "boxberg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "complained against the former members of the Swabian League and the Palatinate over the family estate of Boxberg, which had been taken by force from his father in 1523.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "complained against the former members of the Swabian League and the Palatinate over the family estate of Boxberg, which had been taken by force from his father in 1523."
         }
       ]
     }

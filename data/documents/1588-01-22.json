@@ -12,6 +12,9 @@
           "person": "Albrecht von Rosenberg"
         },
         {
+          "place": "bobstadt"
+        },
+        {
           "place": "boxberg"
         },
         {
@@ -28,15 +31,7 @@
         {
           "subject": "Konrad, Albrecht, Christoph and Georg Siegmund von Rosenberg",
           "type": "generic",
-          "content": "accepted the Zentordnung issued for the Amt Boxberg for their five fief villages of Dainbach, Sachsenflur, Epplingen, Bobstadt and Schillingstadt.",
-          "mention": [
-            {
-              "place": "bobstadt"
-            },
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "accepted the Zentordnung issued for the Amt Boxberg for their five fief villages of Dainbach, Sachsenflur, Epplingen, Bobstadt and Schillingstadt."
         }
       ],
       "img": [

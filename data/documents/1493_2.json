@@ -15,12 +15,6 @@
       "english": "Johann, Count of Wertheim, Philipp, Count of Hanau-Lichtenberg, and Michel and Asmus, Counts of Wertheim, undertake to indemnify Ritter Georg von Rosenberg for the services he is to perform.",
       "mention": [
         {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "place": "wertheim-stiftskirche"
         }
       ],
@@ -31,12 +25,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was promised indemnification by Johann, Count of Wertheim; Philipp, Count of Hanau-Lichtenberg; and Michel and Asmus, Counts of Wertheim, for the services he was to perform.",
-          "mention": [
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ]
+          "content": "was promised indemnification by Johann, Count of Wertheim; Philipp, Count of Hanau-Lichtenberg; and Michel and Asmus, Counts of Wertheim, for the services he was to perform."
         }
       ],
       "img": [

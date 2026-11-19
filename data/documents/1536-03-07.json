@@ -18,9 +18,6 @@
           "place": "boxberg"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "person": "Hans von Adelsheim"
         },
         {
@@ -40,15 +37,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "helped mediate a 1535 agreement between Stephan von Adelsheim and Walter von Cronberg concerning the redemption of a meadow at Wachbach.",
-          "mention": [
-            {
-              "person": "Stephan von Adelsheim"
-            },
-            {
-              "person": "Walter von Cronberg"
-            }
-          ]
+          "content": "helped mediate a 1535 agreement between Stephan von Adelsheim and Walter von Cronberg concerning the redemption of a meadow at Wachbach."
         }
       ],
       "img": [

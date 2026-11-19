@@ -20,13 +20,7 @@
           "place": "boxberg"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
-        },
-        {
-          "person": "Wolfgang von Bibra"
         }
       ],
       "facts": [
@@ -40,28 +34,12 @@
         {
           "person": "Wolfgang von Bibra",
           "type": "generic",
-          "content": "was represented by named citizens of Tauberbischofsheim in the settlement of a border dispute with Georg von Rosenberg over the woodland called die Klingen, in which Boxberg’s mayor, court, and community also participated.",
-          "mention": [
-            {
-              "place": "bischofsheim"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Georg von Rosenberg"
-            }
-          ]
+          "content": "was represented by named citizens of Tauberbischofsheim in the settlement of a border dispute with Georg von Rosenberg over the woodland called die Klingen, in which Boxberg’s mayor, court, and community also participated."
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was represented by named citizens of Grünsfeld in the settlement of a border dispute with the Teutonic Order over the woodland called die Klingen, in which Boxberg’s mayor, court, and community also participated.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "was represented by named citizens of Grünsfeld in the settlement of a border dispute with the Teutonic Order over the woodland called die Klingen, in which Boxberg’s mayor, court, and community also participated."
         }
       ],
       "img": [

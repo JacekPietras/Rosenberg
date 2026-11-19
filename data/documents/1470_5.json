@@ -9,12 +9,6 @@
       "english": "Robbery of the Frankfurt citizens Hans von Ergersheim, Hartmann Becker and Walter Schwarzenberg, returning from the Emperor, by Georg von Rosenberg and Michael von Rosenberg, and Frankfurt's subsequent request for aid to Margrave Albrecht of Brandenburg on this account",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Michael von Rosenberg"
-        },
-        {
           "person": "Walter Schwarzenberg"
         }
       ],
@@ -22,22 +16,12 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "robbed Frankfurt citizens Hans von Ergersheim, Hartmann Becker and Walter Schwarzenberg who were returning from the Emperor.",
-          "mention": [
-            {
-              "person": "Walter Schwarzenberg"
-            }
-          ]
+          "content": "robbed Frankfurt citizens Hans von Ergersheim, Hartmann Becker and Walter Schwarzenberg who were returning from the Emperor."
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "robbed Frankfurt citizens Hans von Ergersheim, Hartmann Becker and Walter Schwarzenberg who were returning from the Emperor.",
-          "mention": [
-            {
-              "person": "Walter Schwarzenberg"
-            }
-          ]
+          "content": "robbed Frankfurt citizens Hans von Ergersheim, Hartmann Becker and Walter Schwarzenberg who were returning from the Emperor."
         }
       ]
     }

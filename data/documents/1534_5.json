@@ -15,9 +15,6 @@
           "place": "boxberg"
         },
         {
-          "person": "Hans Thomas von Rosenberg"
-        },
-        {
           "person": "Heinrich Schenk"
         },
         {
@@ -44,11 +41,6 @@
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
           "content": "was involved in a dispute with Kurpfalz concerning Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ],
           "date": "1534-08"
         },
         {

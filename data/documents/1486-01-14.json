@@ -9,9 +9,6 @@
       "english": "Ebersheim: Deed of sale regarding forty malter of grain perpetual grain rent from farms and properties at Ebersheim, sold by Philipp Forstmeister zu Gelnhusen, Faut of Heidelberg, Lyse von Frankenstein, his lawful wife, Diether Landschad von Steinach, and Agnes von Rosenberg, his lawful wife, to Dalen monastery.",
       "mention": [
         {
-          "person": "Agnes von Rosenberg"
-        },
-        {
           "place": "frankenstein"
         },
         {
@@ -27,12 +24,7 @@
         {
           "person": "Agnes von Rosenberg",
           "type": "generic",
-          "content": "sold a perpetual grain rent from the farms and properties at Ebersheim to Dalen monastery together with Diether Landschad von Steinach, Philipp Forstmeister zu Gelnhusen and Lyse von Frankenstein.",
-          "mention": [
-            {
-              "place": "frankenstein"
-            }
-          ]
+          "content": "sold a perpetual grain rent from the farms and properties at Ebersheim to Dalen monastery together with Diether Landschad von Steinach, Philipp Forstmeister zu Gelnhusen and Lyse von Frankenstein."
         }
       ],
       "img": [

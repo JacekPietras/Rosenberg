@@ -19,6 +19,9 @@
         },
         {
           "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -28,15 +31,7 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "stood surety with Johannsen von Grumbach and Mertein Truchseß for a 2,000-florin debt of the Bishopric of Würzburg to Johannsen von Hirschorn and the children of his late brother Philipp.",
-          "mention": [
-            {
-              "place": "grumbach"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "stood surety with Johannsen von Grumbach and Mertein Truchseß for a 2,000-florin debt of the Bishopric of Würzburg to Johannsen von Hirschorn and the children of his late brother Philipp."
         }
       ]
     }

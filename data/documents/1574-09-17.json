@@ -16,24 +16,13 @@
         },
         {
           "place": "wurzburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "bought tithes and other rights at Niederstetten, Vorbachzimmern and Wermutshausen from the Neumünster chapter; the sale proceeds were lent to the Bishop of Würzburg.",
-          "mention": [
-            {
-              "place": "niederstetten"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "bought tithes and other rights at Niederstetten, Vorbachzimmern and Wermutshausen from the Neumünster chapter; the sale proceeds were lent to the Bishop of Würzburg."
         }
       ],
       "img": [

@@ -12,48 +12,27 @@
           "place": "kupprichhausen"
         },
         {
-          "person": "Michael von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
         },
         {
           "place": "uiffingen"
-        },
-        {
-          "person": "Ursula von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "sold his share in Gräffingen and Hachtel am Ahorn and income properties at Uiffingen.",
-          "mention": [
-            {
-              "place": "uiffingen"
-            }
-          ]
+          "content": "sold his share in Gräffingen and Hachtel am Ahorn and income properties at Uiffingen."
         },
         {
           "person": "Hans Melchior von Steinkallenfels",
           "type": "generic",
-          "content": "sold his share in Gräffingen and Hachtel am Ahorn and income properties at Uiffingen.",
-          "mention": [
-            {
-              "place": "uiffingen"
-            }
-          ]
+          "content": "sold his share in Gräffingen and Hachtel am Ahorn and income properties at Uiffingen."
         },
         {
           "person": "Martin von Zayhern",
           "type": "generic",
-          "content": "sold his share in Gräffingen and Hachtel am Ahorn and income properties at Uiffingen.",
-          "mention": [
-            {
-              "place": "uiffingen"
-            }
-          ]
+          "content": "sold his share in Gräffingen and Hachtel am Ahorn and income properties at Uiffingen."
         },
         {
           "person": "Hans Melchior von Steinkallenfels",

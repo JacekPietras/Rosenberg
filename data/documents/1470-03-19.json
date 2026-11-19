@@ -29,16 +29,7 @@
           "person": "Georg von Dottenheim"
         },
         {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Junker"
-          ]
-        },
-        {
           "person": "Hans von Dottenheim"
-        },
-        {
-          "person": "Michael von Rosenberg"
         },
         {
           "place": "oberschuepf"
@@ -63,12 +54,7 @@
             "Pfalzgraf"
           ],
           "type": "generic",
-          "content": "had declared a feud against Jörg von Rosenberg and several others as part of a campaign against robbery in the Odenwald.",
-          "mention": [
-            {
-              "person": "Georg von Rosenberg"
-            }
-          ]
+          "content": "had declared a feud against Jörg von Rosenberg and several others as part of a campaign against robbery in the Odenwald."
         },
         {
           "person": "Georg von Rosenberg",
@@ -85,12 +71,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "reported that Boxberg had been captured on Thursday night.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "reported that Boxberg had been captured on Thursday night."
         },
         {
           "person": "Georg von Rosenberg",
@@ -98,42 +79,22 @@
             "Junker"
           ],
           "type": "generic",
-          "content": "held a share of Schüpf.",
-          "mention": [
-            {
-              "place": "oberschuepf"
-            }
-          ]
+          "content": "held a share of Schüpf."
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "held the largest share of Schüpf.",
-          "mention": [
-            {
-              "place": "oberschuepf"
-            }
-          ]
+          "content": "held the largest share of Schüpf."
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "was listed among the coheirs of Schüpf on the enclosed slip.",
-          "mention": [
-            {
-              "place": "oberschuepf"
-            }
-          ]
+          "content": "was listed among the coheirs of Schüpf on the enclosed slip."
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "was listed among the coheirs of Schüpf on the enclosed slip.",
-          "mention": [
-            {
-              "place": "oberschuepf"
-            }
-          ]
+          "content": "was listed among the coheirs of Schüpf on the enclosed slip."
         },
         {
           "person": "Friedrich von Rosenberg",
@@ -141,22 +102,12 @@
             "der Junge"
           ],
           "type": "generic",
-          "content": "was listed among the coheirs of Schüpf on the enclosed slip.",
-          "mention": [
-            {
-              "place": "oberschuepf"
-            }
-          ]
+          "content": "was listed among the coheirs of Schüpf on the enclosed slip."
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "was the target of a feud previously declared by the Bishop of Würzburg.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "was the target of a feud previously declared by the Bishop of Würzburg."
         },
         {
           "person": "Eberhard von Württemberg",
@@ -164,12 +115,7 @@
             "Graf"
           ],
           "type": "generic",
-          "content": "had become an ally of Count Palatine Friedrich in the conflict against the Rosenbergs.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "had become an ally of Count Palatine Friedrich in the conflict against the Rosenbergs."
         }
       ]
     }

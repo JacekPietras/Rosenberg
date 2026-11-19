@@ -16,27 +16,13 @@
         },
         {
           "place": "roettingen"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "received from Bishop Johann of Würzburg a redeemable pledge of 50 florins of perpetual rent from the city of Röttingen for 1,000 florins.",
-          "mention": [
-            {
-              "person": "Hans of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            },
-            {
-              "place": "roettingen"
-            }
-          ]
+          "content": "received from Bishop Johann of Würzburg a redeemable pledge of 50 florins of perpetual rent from the city of Röttingen for 1,000 florins."
         }
       ]
     }

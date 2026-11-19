@@ -12,9 +12,6 @@
           "person": "Friedrich von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "place": "uissigheim"
         }
       ],
@@ -38,12 +35,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "had his estate at Barbelroth designated as security for his brother Friedrich von Rosenberg’s widow’s portion.",
-          "mention": [
-            {
-              "person": "Friedrich von Rosenberg"
-            }
-          ]
+          "content": "had his estate at Barbelroth designated as security for his brother Friedrich von Rosenberg’s widow’s portion."
         }
       ],
       "img": [

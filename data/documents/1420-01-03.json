@@ -24,6 +24,9 @@
           "person": "Kunz von Rosenberg"
         },
         {
+          "person": "Reinhard von Hardheim"
+        },
+        {
           "person": "Reinhard von Hartheim"
         },
         {
@@ -37,25 +40,12 @@
             "gesessen zu Röttingen"
           ],
           "type": "generic",
-          "content": "sold one third of the tithe at Schweinberg to Eberhard Pfale.",
-          "mention": [
-            {
-              "place": "burg-schweinberg"
-            }
-          ]
+          "content": "sold one third of the tithe at Schweinberg to Eberhard Pfale."
         },
         {
           "person": "Eberhard Pfale",
           "type": "generic",
-          "content": "sold one third of the tithe at Schweinberg to Reinhard von Hardheim.",
-          "mention": [
-            {
-              "place": "burg-schweinberg"
-            },
-            {
-              "person": "Reinhard von Hardheim"
-            }
-          ]
+          "content": "sold one third of the tithe at Schweinberg to Reinhard von Hardheim."
         },
         {
           "person": "Hans von Würzburg",
@@ -63,15 +53,7 @@
             "Bischof von Würzburg"
           ],
           "type": "generic",
-          "content": "granted Reinhard von Hardheim one third of the tithe at Schweinberg.",
-          "mention": [
-            {
-              "place": "burg-schweinberg"
-            },
-            {
-              "person": "Reinhard von Hardheim"
-            }
-          ]
+          "content": "granted Reinhard von Hardheim one third of the tithe at Schweinberg."
         }
       ],
       "img": [

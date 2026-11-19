@@ -67,68 +67,32 @@
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "donated annual rent from her share of the mill at Rosenberg to Bronnbach Abbey.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "donated annual rent from her share of the mill at Rosenberg to Bronnbach Abbey."
         },
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "endowed an annual Advent service at Bronnbach for the soul of her late husband.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            }
-          ]
+          "content": "endowed an annual Advent service at Bronnbach for the soul of her late husband."
         },
         {
           "person": "Heinrich Müller",
           "type": "generic",
-          "content": "lived at the mill at Rosenberg.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "lived at the mill at Rosenberg."
         },
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "required the pastor of Uissigheim to attend the vigil and anniversary of the Advent service at Bronnbach.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            },
-            {
-              "place": "uissigheim"
-            }
-          ]
+          "content": "required the pastor of Uissigheim to attend the vigil and anniversary of the Advent service at Bronnbach."
         },
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "reserved the right to buy back the rent from Bronnbach Abbey.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            }
-          ]
+          "content": "reserved the right to buy back the rent from Bronnbach Abbey."
         },
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "promised to ensure that her son would confirm and surrender the rent to Bronnbach Abbey once of age.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            }
-          ]
+          "content": "promised to ensure that her son would confirm and surrender the rent to Bronnbach Abbey once of age."
         },
         {
           "person": "vogt_zu_Durn",
@@ -142,12 +106,7 @@
         {
           "person": "alheit_von_neudeck",
           "type": "generic",
-          "content": "appointed [vogt_zu_Durn] as surety for the donation.",
-          "mention": [
-            {
-              "place": "wallduern"
-            }
-          ]
+          "content": "appointed [vogt_zu_Durn] as surety for the donation."
         },
         {
           "person": "vogt_zu_Durn",

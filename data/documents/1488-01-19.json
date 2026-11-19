@@ -16,12 +16,6 @@
           ]
         },
         {
-          "person": "Hieronymus von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Michael von Schwarzenberg"
         },
         {
@@ -43,15 +37,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "claimed 500 florins in grain that he had lent to Bishop Johann von Brunn.",
-          "mention": [
-            {
-              "person": "Hans von Brunn",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "claimed 500 florins in grain that he had lent to Bishop Johann von Brunn."
         },
         {
           "person": "Hieronymus von Rosenberg",

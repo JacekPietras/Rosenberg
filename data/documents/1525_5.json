@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "wrote to Rothenburg about the same matter as folio 540.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "wrote to Rothenburg about the same matter as folio 540."
         }
       ]
     }

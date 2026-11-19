@@ -9,9 +9,6 @@
       "english": "Judgment in the matter of the Boxberg cellar office against Albrecht von Rosenberg.\n\nDuration: March 19, 1564",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "boxberg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "was the subject of a legal judgment in a case brought by the Boxberg Kellerei.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "was the subject of a legal judgment in a case brought by the Boxberg Kellerei."
         }
       ],
       "img": [

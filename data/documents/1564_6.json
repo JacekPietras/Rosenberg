@@ -9,9 +9,6 @@
       "english": "Dispute between Albrecht von Rosenberg and Electoral Palatinate regarding the lake in Osterloch and about meadow irrigation in Schweigern.\n\nDate range: 1564",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "schweigern"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "was in dispute with the Palatinate over the lake at Osterloch and irrigation of meadows at Schweigern.",
-          "mention": [
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "was in dispute with the Palatinate over the lake at Osterloch and irrigation of meadows at Schweigern."
         }
       ],
       "img": [

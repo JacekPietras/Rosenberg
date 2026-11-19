@@ -15,9 +15,6 @@
       "english": "The princely Brandenburg-Ansbach guardianship agrees with Melchior and Count Hermann of Hatzfeldt, as well as with Johann Adrian, Daniel, and Wilhelm Heinrich von Hatzfeldt, Lords of Wildenburg, with Johann Daniel von Hatzfeldt of Hatzfeld, and with Georg von Hatzfeldt, Lord of Odenthal, that they purchase the knight's feudal holding Waldmannshofen for 14,200 Reichstaler plus 2,200 Reichstaler in redemption payments, to the extent that it reverted from the von Rosenbergs, and according to the 1606 April 25 assessment submitted by the late Albrecht Christoph von Rosenberg at the princely Brandenburg feudal court. The enfeoffment as a knight's and manorial fief of the House of Ansbach and the County of Nuremberg below the mountains then takes place according to custom and not, as requested, jointly for the Counts and Lords of Hatzfeldt. The tenants of Waldmannshofen throughout the entire parish remain unaffected in their Evangelical Augsburg Confession faith, as do the pastors regarding attendance at the Brandenburg chapter of Uffenheim. The Counts and Lords of Hatzfeldt may redeem the great and small tithe around the Würzburg town of Aub from the heirs of the Rosenberg estate for 800 florins. The guardianship rejects the request to insert the tithe into the Waldmannshofen enfeoffment deed but permits widow's settlement assignments on the Waldmannshofen estate. The guardianship receives a receipt for the written-down claim of 4,000 florins that Melchior had asserted as Lieutenant General against the guardianship's offices of Werdeck and Bamberg. - Signature note by Johann Christoph Assumb [as Hatzfeld's representative]. Seal note of the guardianship and the representative.\n\nCopy (18th c.), paper. -No. 2464.\n\nReg. No. 2594",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
           "place": "aub"
         },
         {
@@ -43,25 +40,12 @@
           "person": "Albrecht Christoph von Rosenberg",
           "personDeceased": true,
           "type": "generic",
-          "content": "his Waldmannshofen Mannlehen passed to the Hatzfeldt family for 14,200 Reichstaler plus 2,200 Reichstaler in goodwill payment.",
-          "mention": [
-            {
-              "place": "waldmannshofen"
-            }
-          ]
+          "content": "his Waldmannshofen Mannlehen passed to the Hatzfeldt family for 14,200 Reichstaler plus 2,200 Reichstaler in goodwill payment."
         },
         {
           "subject": "the Hatzfeldt family",
           "type": "generic",
-          "content": "could redeem the great and small tithe around Aub from the allodial heirs of the von Rosenberg family for 800 Gulden.",
-          "mention": [
-            {
-              "place": "aub"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "could redeem the great and small tithe around Aub from the allodial heirs of the von Rosenberg family for 800 Gulden."
         }
       ]
     }

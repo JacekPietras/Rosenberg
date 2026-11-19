@@ -12,13 +12,7 @@
       "english": "Purchase deed of Anna from house von Rosenberg, widow of Hans Phal of Grünsfeld, for the Grünau Carthusian Order, for the tithes of Großrinderfeld, sold for 1,400 pounds of Heller.\n\nSeals: 1) Anna from house von Rosenberg (a small rose between two swan necks), 2) Hans von Rosenberg (helmet with two swan necks, a small rose in the center), 3) Erkanger Zolner (greyhound head), 4) Stephan Zolner (torn off), 5) Eberhard von Rosenberg (as above 2), 6) Friedrich von Grumbach (male figure with a branch), 7) Edelknecht Heinrich Pfol (as above 3)",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Friedrich von Grumbach"
-        },
-        {
-          "person": "Hans von Rosenberg"
         },
         {
           "place": "rosenberg-town"
@@ -45,22 +39,12 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "sealed Anna von Rosenberg’s sale of tithes at Großrinderfeld.",
-          "mention": [
-            {
-              "person": "Anna von Rosenberg"
-            }
-          ]
+          "content": "sealed Anna von Rosenberg’s sale of tithes at Großrinderfeld."
         },
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "sealed Anna von Rosenberg’s sale of tithes at Großrinderfeld.",
-          "mention": [
-            {
-              "person": "Anna von Rosenberg"
-            }
-          ]
+          "content": "sealed Anna von Rosenberg’s sale of tithes at Großrinderfeld."
         }
       ],
       "img": [

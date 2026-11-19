@@ -9,9 +9,6 @@
       "english": "Georg von Rosenberg sells his half of the village of Schweigern to Elector Ludwig V of the Palatinate for 4,027 gulden.\n\nDuration: February 22, 1525 (Petri Cathedra)",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "schweigern"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "sold his half of the village of Schweigern to Kurfürst Ludwig V of the Palatinate.",
-          "mention": [
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "sold his half of the village of Schweigern to Kurfürst Ludwig V of the Palatinate."
         }
       ],
       "img": [

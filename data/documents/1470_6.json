@@ -9,9 +9,6 @@
       "english": "Fragments concerning Georg von Rosenberg's feud with Mainz and Würzburg",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "wurzburg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was in feud with Mainz and Würzburg.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "was in feud with Mainz and Würzburg."
         }
       ]
     }

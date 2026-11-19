@@ -13,21 +13,13 @@
         },
         {
           "person": "Franz von Sickingen"
-        },
-        {
-          "person": "Hans Thomas von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
-          "content": "received authority from Franz von Sickingen to represent him at the nobles’ assembly in Schweinfurt.",
-          "mention": [
-            {
-              "person": "Franz von Sickingen"
-            }
-          ]
+          "content": "received authority from Franz von Sickingen to represent him at the nobles’ assembly in Schweinfurt."
         }
       ]
     }

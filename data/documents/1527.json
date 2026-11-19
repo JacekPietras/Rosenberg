@@ -24,13 +24,7 @@
           ]
         },
         {
-          "person": "Gerhard von Rosenberg"
-        },
-        {
           "place": "heidelberg"
-        },
-        {
-          "person": "Kunz von Rosenberg"
         }
       ],
       "facts": [
@@ -43,12 +37,7 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "received one quarter of the city of Aub as a hereditary man fief from Pfalzgraf Ludwig after inheriting it from his deceased father Gerhard.",
-          "mention": [
-            {
-              "place": "aub"
-            }
-          ]
+          "content": "received one quarter of the city of Aub as a hereditary man fief from Pfalzgraf Ludwig after inheriting it from his deceased father Gerhard."
         }
       ]
     }

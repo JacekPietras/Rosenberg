@@ -22,24 +22,13 @@
         },
         {
           "place": "kollenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "bought Christoph Rüdt’s third share of the great and small tithes at Buch am Ahorn.",
-          "mention": [
-            {
-              "place": "buch"
-            },
-            {
-              "person": "Christoph Rüd"
-            }
-          ]
+          "content": "bought Christoph Rüdt’s third share of the great and small tithes at Buch am Ahorn."
         }
       ],
       "img": [

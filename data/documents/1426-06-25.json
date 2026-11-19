@@ -12,21 +12,13 @@
       "mention": [
         {
           "place": "bischofsheim"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "purchased a 225-florin annuity at Bischofsheim from Konrad, Elector of Mainz, for 4,500 florins.",
-          "mention": [
-            {
-              "place": "bischofsheim"
-            }
-          ]
+          "content": "purchased a 225-florin annuity at Bischofsheim from Konrad, Elector of Mainz, for 4,500 florins."
         }
       ],
       "img": [

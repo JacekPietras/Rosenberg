@@ -9,16 +9,7 @@
       "english": "Oct 26, 1618. Bishop Johann Gottfried of Bamberg and Würzburg enfeoffs the brothers Albrecht Christoph and Georg Siegmund von Rosenberg with the Würzburg fiefs that they have inherited from their deceased brother Konrad von Rosenberg: the villages of Neubronn and Oberndorf, tithes at Morelbach and a share of the court at Buch; Sr.; of the A.\n\nTime span: Oct 26, 1618.\n\nExtent: Original; Parchment, 1 p. (detached)",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
           "place": "buch"
-        },
-        {
-          "person": "Georg Siegmund von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
         },
         {
           "place": "wurzburg"
@@ -50,12 +41,7 @@
         {
           "subject": "Albrecht Christoph and Georg Siegmund von Rosenberg",
           "type": "generic",
-          "content": "received their deceased brother Konrad’s Würzburg fiefs by inheritance.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "received their deceased brother Konrad’s Würzburg fiefs by inheritance."
         }
       ]
     }

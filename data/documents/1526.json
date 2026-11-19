@@ -10,9 +10,6 @@
       "mention": [
         {
           "place": "fulda-cathedral"
-        },
-        {
-          "person": "Margaretha von Rosenberg"
         }
       ],
       "facts": [
@@ -25,12 +22,7 @@
         {
           "person": "Margaretha von Rosenberg",
           "type": "generic",
-          "content": "brought a claim in Fulda against Philipp von Eberstein concerning disputed personal property and her dower.",
-          "mention": [
-            {
-              "place": "fulda-cathedral"
-            }
-          ]
+          "content": "brought a claim in Fulda against Philipp von Eberstein concerning disputed personal property and her dower."
         }
       ]
     }

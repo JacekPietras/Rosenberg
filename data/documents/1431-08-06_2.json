@@ -22,21 +22,13 @@
         },
         {
           "person": "Siegmund von Thüngen"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "was owed a pledge debt for whose redemption Heidingsfeld and Bernheim undertook to pay interest to Nürnberg.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            }
-          ]
+          "content": "was owed a pledge debt for whose redemption Heidingsfeld and Bernheim undertook to pay interest to Nürnberg."
         }
       ]
     }

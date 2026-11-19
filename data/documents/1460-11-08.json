@@ -9,6 +9,9 @@
       "english": "Hans von Rosenberg the Younger acknowledges that he has received from the Elect Diether of Mainz one-eighth share of Schloss Schipff, previously held by Knight Anßhelm von Rosenberg and subsequently by A., as a fief and has sworn accordingly. The letter of enfeoffment of the same day is inserted.\n\nSealer: A. (missing).",
       "mention": [
         {
+          "person": "Anselm von Rosenberg"
+        },
+        {
           "person": "Hans von Rosenberg",
           "personTitle": [
             "the Younger"
@@ -28,15 +31,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "received as a male fief from Diether, elected Archbishop of Mainz, an eighth share of Schipff Castle, previously held by Anselm von Rosenberg.",
-          "mention": [
-            {
-              "person": "Anselm von Rosenberg"
-            },
-            {
-              "place": "oberschuepf"
-            }
-          ]
+          "content": "received as a male fief from Diether, elected Archbishop of Mainz, an eighth share of Schipff Castle, previously held by Anselm von Rosenberg."
         }
       ]
     }

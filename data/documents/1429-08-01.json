@@ -15,19 +15,16 @@
       "english": "Anna von Rosenberg, wife of Hans von Rosenberg, sold to Eberhard von Hartheim all the rents and interest that she had previously had in Königheim, Eiersheim, Rinderfeld and Schweinberg.",
       "mention": [
         {
-          "person": "Anna von Rosenberg"
+          "place": "burg-schweinberg"
         },
         {
-          "place": "burg-schweinberg"
+          "person": "Eberhard von Hardheim"
         },
         {
           "person": "Eberhard von Hartheim"
         },
         {
           "place": "eiersheim"
-        },
-        {
-          "person": "Hans von Rosenberg"
         },
         {
           "place": "koenigheim"
@@ -45,24 +42,7 @@
         {
           "person": "Anna von Rosenberg",
           "type": "generic",
-          "content": "sold to Eberhard von Hardheim all rents and interest she held in Königheim, Eiersheim, Rinderfeld, and Schweinberg.",
-          "mention": [
-            {
-              "place": "burg-schweinberg"
-            },
-            {
-              "person": "Eberhard von Hardheim"
-            },
-            {
-              "place": "eiersheim"
-            },
-            {
-              "place": "koenigheim"
-            },
-            {
-              "place": "rinderfeld"
-            }
-          ]
+          "content": "sold to Eberhard von Hardheim all rents and interest she held in Königheim, Eiersheim, Rinderfeld, and Schweinberg."
         }
       ],
       "img": [

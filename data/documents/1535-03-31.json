@@ -13,50 +13,23 @@
         },
         {
           "place": "buch"
-        },
-        {
-          "person": "Georg von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "enfeoffed Hans Schüssel with the Seehof near Boxberg and Buch as an hereditary fief.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "buch"
-            }
-          ]
+          "content": "enfeoffed Hans Schüssel with the Seehof near Boxberg and Buch as an hereditary fief."
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "enfeoffed Burkhard Neß with the Seehof near Boxberg and Buch as an hereditary fief.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "buch"
-            }
-          ]
+          "content": "enfeoffed Burkhard Neß with the Seehof near Boxberg and Buch as an hereditary fief."
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "enfeoffed Hans Wolfhart with the Seehof near Boxberg and Buch as an hereditary fief.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "buch"
-            }
-          ]
+          "content": "enfeoffed Hans Wolfhart with the Seehof near Boxberg and Buch as an hereditary fief."
         }
       ],
       "img": [

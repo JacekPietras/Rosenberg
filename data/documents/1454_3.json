@@ -10,13 +10,13 @@
       "english": "Thereupon Gotfried Schenk von Limpurg, Bischof, had all the goods of Anselm von Rosenberg seized. Editorial note: The date is inferred from the preceding entry. No source citation is given.",
       "mention": [
         {
-          "person": "Anselm von Rosenberg"
-        },
-        {
           "person": "Gotfried Schenk von Limpurg",
           "personTitle": [
             "Bischof"
           ]
+        },
+        {
+          "person": "Gotfried von Limpurg"
         }
       ],
       "facts": [
@@ -24,12 +24,7 @@
           "person": "Anselm von Rosenberg",
           "personDeceased": true,
           "type": "generic",
-          "content": "had all his goods seized by Gotfried von Limpurg.",
-          "mention": [
-            {
-              "person": "Gotfried von Limpurg"
-            }
-          ]
+          "content": "had all his goods seized by Gotfried von Limpurg."
         }
       ],
       "img": [

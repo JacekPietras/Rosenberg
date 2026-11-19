@@ -21,6 +21,9 @@
           "person": "Ludwig von Fleckenstein"
         },
         {
+          "person": "Margaretha von Helmstatt"
+        },
+        {
           "person": "Philipp Jakob von Helmstadt",
           "personTitle": [
             "Knight"
@@ -40,12 +43,7 @@
             "Vogt zu Lauterburg"
           ],
           "type": "generic",
-          "content": "was named among the sealers of the marriage agreement between Margarete von Helmstatt and Johann von Warsberg.",
-          "mention": [
-            {
-              "person": "Margaretha von Helmstatt"
-            }
-          ]
+          "content": "was named among the sealers of the marriage agreement between Margarete von Helmstatt and Johann von Warsberg."
         }
       ]
     }

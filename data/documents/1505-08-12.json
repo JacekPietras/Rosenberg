@@ -16,9 +16,6 @@
           "place": "burg-schweinberg"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "hartheim"
         },
         {
@@ -30,6 +27,7 @@
         {
           "person": "Lorenz von Bibra",
           "personTitle": [
+            "Bischof",
             "Bishop"
           ]
         }
@@ -38,18 +36,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "held several fiefs from the Palatinate as holder of Haus Lauda and was directed by Pfalzgraf Philipp to receive them from Lorenz von Bibra, Bischof, and his successors.",
-          "mention": [
-            {
-              "place": "lauda"
-            },
-            {
-              "person": "Lorenz von Bibra",
-              "personTitle": [
-                "Bischof"
-              ]
-            }
-          ]
+          "content": "held several fiefs from the Palatinate as holder of Haus Lauda and was directed by Pfalzgraf Philipp to receive them from Lorenz von Bibra, Bischof, and his successors."
         }
       ],
       "img": [

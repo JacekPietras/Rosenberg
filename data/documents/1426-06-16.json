@@ -28,44 +28,25 @@
           "person": "Hans von Hirschhorn"
         },
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
           "place": "nuremberg"
         },
         {
           "person": "Siegmund von Thüngen"
         },
         {
-          "person": "Thomas von Rosenberg"
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "pledged to observe the truce mediated by the archbishop of Mainz and the bishop of Würzburg between the nobles and the city of Nuremberg.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "pledged to observe the truce mediated by the archbishop of Mainz and the bishop of Würzburg between the nobles and the city of Nuremberg."
         },
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "pledged to observe the truce mediated by the archbishop of Mainz and the bishop of Würzburg between the nobles and the city of Nuremberg.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "pledged to observe the truce mediated by the archbishop of Mainz and the bishop of Würzburg between the nobles and the city of Nuremberg."
         }
       ],
       "img": [

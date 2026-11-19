@@ -9,15 +9,6 @@
       "english": "December 5, 1623. Philipp Adolph, elected Bishop of Würzburg, enfeoffs the brothers Albrecht Christoph and Georg Siegmund von Rosenberg with the Würzburg fief of the village of Bofsheim, inherited from their deceased brother Konrad von Rosenberg, including the Vogtei jurisdiction and the right of patronage; Signature: the A.\n\nDuration: December 5, 1623.\n\nExtent: Original; parchment, 1 page (sealed)",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "person": "Georg Siegmund von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "place": "wurzburg"
         }
       ],
@@ -47,12 +38,7 @@
         {
           "subject": "Albrecht Christoph and Georg Siegmund von Rosenberg",
           "type": "generic",
-          "content": "received their deceased brother Konrad’s Würzburg fief at Bofsheim, including its Vogtei and jus patronatus.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "received their deceased brother Konrad’s Würzburg fief at Bofsheim, including its Vogtei and jus patronatus."
         }
       ]
     }

@@ -12,9 +12,6 @@
           "person": "Arnold von Seckendorf"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "person": "Hans von Absberg"
         },
         {
@@ -28,33 +25,13 @@
           "personTitle": [
             "Knight"
           ]
-        },
-        {
-          "person": "Thomas von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "served with Heinrich Zobel and Hans von Absberg as guardian of the children of the late Georg von Rosenberg in a dispute concerning the estate of the late Thomas von Rosenberg.",
-          "mention": [
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Hans von Absberg"
-            },
-            {
-              "person": "Heinrich Zobel"
-            },
-            {
-              "person": "Thomas von Rosenberg"
-            }
-          ]
+          "content": "served with Heinrich Zobel and Hans von Absberg as guardian of the children of the late Georg von Rosenberg in a dispute concerning the estate of the late Thomas von Rosenberg."
         },
         {
           "person": "Georg von Rosenberg",

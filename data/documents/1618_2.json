@@ -15,9 +15,6 @@
       "english": "Johann Gottfried [von Aschhausen], Bishop of Bamberg and Würzburg etc. enfeoffs Albrecht Christoph von Rosenberg with life tenure regarding fief holdings at Baldersheim [as Feb 21, 1537].\n\nSealer: the issuer.\n\nOriginal, parchment, seal preserved. Cf. Reg. No. 1059. -No. 2258.\n\nReg. No. 2381",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
           "place": "baldersheim"
         },
         {
@@ -28,15 +25,7 @@
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received the Würzburg fiefs at Baldersheim as Mannlehen.",
-          "mention": [
-            {
-              "place": "baldersheim"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "received the Würzburg fiefs at Baldersheim as Mannlehen."
         }
       ]
     }

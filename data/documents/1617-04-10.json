@@ -9,9 +9,6 @@
       "english": "Jost von Ach of Unterschüpf acknowledges receipt of 300 gulden, which he received from Georg Siegmund von Rosenberg as the purchase price for the so-called Koppelwiese (common pasture) in Unterschüpf.\n\nDate: April 10, 1617",
       "mention": [
         {
-          "person": "Georg Siegmund von Rosenberg"
-        },
-        {
           "place": "unterschuepf"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Georg Siegmund von Rosenberg",
           "type": "generic",
-          "content": "sold Jost von Ach the Koppelwiese at Unterschüpf for 300 Gulden.",
-          "mention": [
-            {
-              "place": "unterschuepf"
-            }
-          ]
+          "content": "sold Jost von Ach the Koppelwiese at Unterschüpf for 300 Gulden."
         }
       ],
       "img": [

@@ -749,7 +749,7 @@ test('document English can support a birth-name occurrence without supplying a r
   const entry = data.documents.get(source.path).entries[0];
   entry.english = 'Elisabeth von North, née von South witnessed.';
   entry.mention = [{ person: 'Elisabeth von South' }];
-  const ref = { path: source.path, pointer: '/entries/0/english', fingerprint: await evidenceFingerprint(entry.english) };
+  const ref = { path: source.path, pointer: '/entries/0/mention', fingerprint: await evidenceFingerprint(entry.mention) };
   const mention = { source: ref, field: 'text', reference: 'Elisabeth von South', date: '1393' };
   const graph = metadata.evidence.facts;
   graph.nodes.find((node) => !node.registry).mentions.push(mention);
@@ -766,18 +766,17 @@ test('document English can support a birth-name occurrence without supplying a r
   assert.equal((await verify()).valid, false);
 });
 
-test('generic context participants are verified against the cited fact', async () => {
+test('context participants are verified against the cited entry mention list', async () => {
   const data = await probabilityFixture();
   const doc = data.documents.get(source.path);
-  const fact = { type: 'generic', subject: 'The source passage', content: '[a] held property at North.' };
-  doc.entries[0].facts.push(fact);
-  const ref = { path: source.path, pointer: '/entries/0/facts/1', fingerprint: await evidenceFingerprint(fact) };
-  const mention = { source: ref, field: 'text', reference: 'a', date: '1393' };
-  data.tree.evidence.facts.nodes.find((node) => node.registry === 'a').mentions.push(mention);
+  doc.entries[0].mention = [{ person: 'Bea von East' }, { place: 'north' }];
+  const ref = { path: source.path, pointer: '/entries/0/mention', fingerprint: await evidenceFingerprint(doc.entries[0].mention) };
+  const mention = { source: ref, field: 'text', reference: 'Bea von East', date: '1393' };
+  data.tree.evidence.facts.nodes.find((node) => !node.registry).mentions.push(mention);
   await updateFixtureBuild(data);
   let verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
   assert.equal(verification.valid, true, verification.reason);
-  for (const reference of ['b', 'North', 'forged']) {
+  for (const reference of ['a', 'north', 'forged']) {
     mention.reference = reference;
     verification = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
     assert.equal(verification.valid, false);

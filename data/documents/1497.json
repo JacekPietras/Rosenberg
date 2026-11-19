@@ -12,9 +12,6 @@
       "english": "Notarial instrument regarding an agreement between Hans von Rosenberg and Konrad von Rosenberg on settling disputes concerning the inn at Bofsheim and sheep-driving at Grünacker",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "person": "Konrad von Rosenberg"
         }
       ],
@@ -22,12 +19,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "and Konrad von Rosenberg agreed to settle disputes concerning the inn at Bofsheim and sheep-driving at Grünacker.",
-          "mention": [
-            {
-              "person": "Konrad von Rosenberg"
-            }
-          ]
+          "content": "and Konrad von Rosenberg agreed to settle disputes concerning the inn at Bofsheim and sheep-driving at Grünacker."
         }
       ]
     }

@@ -10,9 +10,6 @@
       "english": "Hans von Rosenberg sold the bishopric several rights, serfs, and other things at Lauda, Maibach, Königshofen, Herbfeld, and elsewhere. Recorded in the register of contracts; the original is filed under letter R. The editorial comment says that the date assigned to the entry is based on the lifespan of Hans von Rosenberg.",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "place": "lauda"
         }
       ],
@@ -20,12 +17,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "sold rights, serfs, and other things at Lauda, Maibach, Königshofen, Herbfeld, and elsewhere to the bishopric.",
-          "mention": [
-            {
-              "place": "lauda"
-            }
-          ]
+          "content": "sold rights, serfs, and other things at Lauda, Maibach, Königshofen, Herbfeld, and elsewhere to the bishopric."
         }
       ],
       "img": [

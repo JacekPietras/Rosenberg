@@ -9,6 +9,12 @@
       "english": "Hans von heideck and his wife Veronika confirm that Bishop Rudolf of Würzburg has redeemed from them for 5,000 florids the perpetual annuity of 50 florins from the city of Röttingen, which Bishop Johann had sold to Ulrich von Rosenberg in 1456",
       "mention": [
         {
+          "person": "Hans of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
+        },
+        {
           "person": "Hans von heideck"
         },
         {
@@ -19,27 +25,13 @@
           "personTitle": [
             "Bishop"
           ]
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "had the perpetual rent from Röttingen, which Bishop Johann of Würzburg had sold him in 1456, redeemed by Bishop Rudolf.",
-          "mention": [
-            {
-              "person": "Hans of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            },
-            {
-              "place": "roettingen"
-            }
-          ]
+          "content": "had the perpetual rent from Röttingen, which Bishop Johann of Würzburg had sold him in 1456, redeemed by Bishop Rudolf."
         }
       ]
     }

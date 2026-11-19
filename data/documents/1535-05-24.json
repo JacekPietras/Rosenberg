@@ -12,9 +12,6 @@
           "place": "heidelberg"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "place": "pappenheim"
         }
       ],
@@ -22,12 +19,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "sealed the agreement by Hans Kressen and Bonifacius von Heidelberg concerning construction at the Waldenberger Hof in Riedenheim.",
-          "mention": [
-            {
-              "place": "heidelberg"
-            }
-          ]
+          "content": "sealed the agreement by Hans Kressen and Bonifacius von Heidelberg concerning construction at the Waldenberger Hof in Riedenheim."
         }
       ]
     }

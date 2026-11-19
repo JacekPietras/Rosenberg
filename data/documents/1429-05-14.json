@@ -9,12 +9,6 @@
       "english": "The testament of Barbara von Rosenberg, widow and legitimate daughter of the late Engelhard von Rosenberg, appoints her uncle, Ritter Erkinger von Seinsheim (\"Sawesheim\"), to carry out the bequests specified in the document after her death.",
       "mention": [
         {
-          "person": "Barbara von Rosenberg"
-        },
-        {
-          "person": "Engelhard von Rosenberg"
-        },
-        {
           "person": "Erkinger von Seinsheim",
           "personTitle": [
             "Ritter"
@@ -31,12 +25,7 @@
         {
           "person": "Barbara von Rosenberg",
           "type": "generic",
-          "content": "named her uncle Erkinger von Seinsheim to carry out her bequests after her death.",
-          "mention": [
-            {
-              "person": "Erkinger von Seinsheim"
-            }
-          ]
+          "content": "named her uncle Erkinger von Seinsheim to carry out her bequests after her death."
         },
         {
           "person": "Erkinger von Seinsheim",

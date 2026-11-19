@@ -16,12 +16,6 @@
         },
         {
           "person": "Konrad Rüd"
-        },
-        {
-          "person": "Kunz von Uissigheim",
-          "personTitle": [
-            "der Jüngere"
-          ]
         }
       ],
       "facts": [
@@ -31,12 +25,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "gave sworn testimony concerning the failed Mergentheim arbitration between Konrad Rüdt and Mertin.",
-          "mention": [
-            {
-              "person": "Konrad Rüd"
-            }
-          ]
+          "content": "gave sworn testimony concerning the failed Mergentheim arbitration between Konrad Rüdt and Mertin."
         }
       ]
     }

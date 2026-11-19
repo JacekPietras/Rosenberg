@@ -11,7 +11,7 @@
       "english": "We, Ludwig, by the grace of God Roman Emperor, at all times augmenter of the Empire, make known publicly in this letter that there came before us with an advocate, as we sat in judgment at Würzburg, Lady Kunigunde von Liesburg, the wedded wife of Eberhard von Rosenberg, and she obtained rightfully and lawfully, as the lords and Ritter adjudged with unanimous judgment, Liesburg the castle, Brachtauwe the castle, and what belongs thereto, cultivated and uncultivated, and other inheritance of her father that belongs to her by hereditary portion, so that her brother Hermann may not alienate or encumber it without her will and word. Thereafter she gave the same inheritance willingly and without compulsion before us, rightfully and lawfully, as was adjudged, to Engelhard, Hans and Hermann, her sons, so that these her sons may do with it wholly and entirely whatever they know to be useful and good for them. In witness whereof we give them, as was adjudged, this letter sealed with the seal of our Hofgericht, in the year of Christ's birth 1342, on the eve of the holy apostles Simon and Jude (27 October 1342).",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
+          "place": "lissberg"
         },
         {
           "place": "wurzburg"
@@ -26,12 +26,7 @@
         {
           "person": "Kunigunde von Lißberg",
           "type": "generic",
-          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons.",
-          "mention": [
-            {
-              "place": "lissberg"
-            }
-          ]
+          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons."
         },
         {
           "person": "Kunigunde von Lißberg",
@@ -55,9 +50,6 @@
       "english": "King Ludwig declares: While he was sitting in court in Würzburg, Kunigunde von Lißberg, wife of Eberhard von Rosenberg, appeared before him as his advocate (she came to us as her advocate, as we were sitting in court in Würzburg [...]). By the unanimous judgment of the lords and Ritter present, the fortresses of Lißberg and Bracht with all appurtenances, along with other inheritances of her father, were awarded to her (and granted in a fair and just manner, as the lords and Ritter issued their unanimous judgment), with the proviso that her brother Hermann may not alienate or encumber this inheritance without her consent. Thereupon, she transferred this inheritance, with all rights, to her sons Engelhard, Hans, and Hermann [von Hirschhorn], according to the corresponding judgment (after which she gave the inheritance to us willingly and irrevocably, in good faith and in good faith, as granted [...] so that they may do with it their own free will and exactly what they know is good and useful).",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Engelhard von Hirschhorn"
         },
         {
@@ -71,9 +63,6 @@
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Kunigunde von Lißberg"
         },
         {
           "place": "lissberg"
@@ -91,12 +80,7 @@
         {
           "person": "Kunigunde von Lißberg",
           "type": "generic",
-          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons.",
-          "mention": [
-            {
-              "place": "lissberg"
-            }
-          ]
+          "content": "transferred her paternal inheritance, including the fortresses Lißberg and Brachtauwe, to her sons."
         },
         {
           "person": "Kunigunde von Lißberg",

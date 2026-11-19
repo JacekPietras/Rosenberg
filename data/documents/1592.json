@@ -9,10 +9,10 @@
       "english": "Disputes of Albrecht Christoph von Rosenberg zu Rosenberg with Stephan Rüdt von Bödigheim and Collenberg and the Electorate of Mainz regarding one fourth of the tithe revenues from the deserted settlement of Mettelheim.\n\nDate range: 1592-1596\n\nExtent: 3 sheets",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
+          "place": "kollenberg"
         },
         {
-          "place": "kollenberg"
+          "person": "Stephan Rüd"
         },
         {
           "person": "Stephan Rüd von Bödigheim"
@@ -22,12 +22,7 @@
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "was in dispute with Stephan Rüdt and the Archbishopric of Mainz over a quarter of the tithe income from deserted Mettelheim.",
-          "mention": [
-            {
-              "person": "Stephan Rüd"
-            }
-          ]
+          "content": "was in dispute with Stephan Rüdt and the Archbishopric of Mainz over a quarter of the tithe income from deserted Mettelheim."
         }
       ]
     }

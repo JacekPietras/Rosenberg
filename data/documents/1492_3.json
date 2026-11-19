@@ -9,9 +9,6 @@
       "english": "Deed of sale by Arnold von Rosenberg and Margaretha von Dottenheim to Barbara Hundheim, widow of Endris Zobel, concerning properties and tithes at Oberlauda and Langenriet for 100 gulden (copy)\n\nValidity: 1492\n\nExtent: 1 charter",
       "mention": [
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
           "person": "Margaretha von Dottenheim"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "and Margarethe von Dottenheim sold Barbara Hundheim goods and tithes at Oberlauda and Langenriet for 100 gulden.",
-          "mention": [
-            {
-              "person": "Margaretha von Dottenheim"
-            }
-          ]
+          "content": "and Margarethe von Dottenheim sold Barbara Hundheim goods and tithes at Oberlauda and Langenriet for 100 gulden."
         }
       ]
     }

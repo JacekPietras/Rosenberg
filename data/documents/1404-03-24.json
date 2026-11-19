@@ -14,14 +14,11 @@
         {
           "person": "Arnold von Rosenberg",
           "personTitle": [
-            "der Ältere"
+            "der Jüngere"
           ]
         },
         {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ]
+          "place": "boxberg"
         },
         {
           "person": "Eberhard Geyer"
@@ -40,21 +37,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with [arnold_boxberg].",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Eberhard Geyer"
-            },
-            {
-              "person": "Guda von Hutten"
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with [arnold_boxberg]."
         },
         {
           "person": "arnold_boxberg",
@@ -62,24 +45,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with Arnold von Rosenberg der Ältere.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Eberhard Geyer"
-            },
-            {
-              "person": "Guda von Hutten"
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with Arnold von Rosenberg der Ältere."
         }
       ],
       "img": [

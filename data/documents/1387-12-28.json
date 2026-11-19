@@ -15,9 +15,6 @@
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Elisabeth von Erligheim"
-        },
-        {
           "place": "heidelberg"
         }
       ],
@@ -31,25 +28,12 @@
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was enfeoffed with half of Boxberg and other fiefs in place of her underage sons.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "was enfeoffed with half of Boxberg and other fiefs in place of her underage sons."
         },
         {
           "person": "Ruprecht",
           "type": "generic",
-          "content": "enfeoffed Elisabeth von Erligheim with half of Boxberg and other fiefs in place of her underage sons.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Elisabeth von Erligheim"
-            }
-          ]
+          "content": "enfeoffed Elisabeth von Erligheim with half of Boxberg and other fiefs in place of her underage sons."
         },
         {
           "person": "vogt_zu_Lauda",

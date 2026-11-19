@@ -12,6 +12,9 @@
           "place": "edelfingen"
         },
         {
+          "person": "Georg Friedrich of Hohenlohe"
+        },
+        {
           "person": "Georg Friedrich von Hohenlohe"
         },
         {
@@ -22,12 +25,7 @@
         {
           "subject": "the von Rosenberg family’s fourth share of Edelfingen",
           "type": "generic",
-          "content": "was the subject of a planned takeover by Count Georg Friedrich of Hohenlohe-Langenburg after the family became extinct.",
-          "mention": [
-            {
-              "person": "Georg Friedrich of Hohenlohe"
-            }
-          ]
+          "content": "was the subject of a planned takeover by Count Georg Friedrich of Hohenlohe-Langenburg after the family became extinct."
         }
       ]
     }

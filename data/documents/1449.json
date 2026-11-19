@@ -9,9 +9,6 @@
       "english": "Cunz von Bernheim's claim against the von Rothenburg family for damages they inflicted upon him during the war between Margrave Albrecht and the cities, and the resulting feud between Clausen von Bernheim, son of Cunz, and the von Rothenburg family; the imprisonment by said Clausen of several rothenburg citizens under Brandenburg escort and the consequent imprisonment ordered by Margrave Friedrich of Brandenburg of said Klausen and his helper Christof Bogners, and how this feud was settled by Johann Lord of Schwarzenberg, Asmus von Rosenberg and Hans von Leonrod of Leonrod",
       "mention": [
         {
-          "person": "Asmus von Rosenberg"
-        },
-        {
           "place": "rothenburg"
         },
         {
@@ -22,15 +19,7 @@
         {
           "person": "Asmus von Rosenberg",
           "type": "generic",
-          "content": "helped settle the feud between Clausen von Bernheim and Rothenburg together with Johann, Lord of Schwarzenberg, and Hans von Leonrod.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            },
-            {
-              "place": "schwarzenberg"
-            }
-          ]
+          "content": "helped settle the feud between Clausen von Bernheim and Rothenburg together with Johann, Lord of Schwarzenberg, and Hans von Leonrod."
         }
       ]
     }

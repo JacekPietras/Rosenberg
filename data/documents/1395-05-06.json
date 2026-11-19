@@ -11,12 +11,6 @@
       "english": "Kunz Mönch von Rosenberg, Vogt zu Steinsberg, witnesses the pledging of part of Burg Schadeck by Hans von Rosenberg to Engelhard von Rosenberg.",
       "mention": [
         {
-          "person": "Engelhard von Rosenberg"
-        },
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "person": "Kunz Mönch von Rosenberg"
         }
       ],
@@ -27,35 +21,17 @@
             "Vogt zu Steinsberg"
           ],
           "type": "generic",
-          "content": "witnessed the pledging of part of Burg Schadeck by Hans von Rosenberg to Engelhard von Rosenberg.",
-          "mention": [
-            {
-              "person": "Engelhard von Rosenberg"
-            },
-            {
-              "person": "Hans von Rosenberg"
-            }
-          ]
+          "content": "witnessed the pledging of part of Burg Schadeck by Hans von Rosenberg to Engelhard von Rosenberg."
         },
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "pledged part of Burg Schadeck to Engelhard von Rosenberg.",
-          "mention": [
-            {
-              "person": "Engelhard von Rosenberg"
-            }
-          ]
+          "content": "pledged part of Burg Schadeck to Engelhard von Rosenberg."
         },
         {
           "person": "Engelhard von Rosenberg",
           "type": "generic",
-          "content": "received part of Burg Schadeck in pledge from Hans von Rosenberg.",
-          "mention": [
-            {
-              "person": "Hans von Rosenberg"
-            }
-          ]
+          "content": "received part of Burg Schadeck in pledge from Hans von Rosenberg."
         }
       ]
     }

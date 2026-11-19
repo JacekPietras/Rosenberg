@@ -16,9 +16,9 @@
           "place": "heidelberg"
         },
         {
-          "person": "Konrad von Rosenberg",
+          "person": "König Ruprecht",
           "personTitle": [
-            "der Jüngere"
+            "King"
           ]
         },
         {
@@ -32,15 +32,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "was owed 491 florins by King Ruprecht, who promised to pay by Martinmas.",
-          "mention": [
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "was owed 491 florins by King Ruprecht, who promised to pay by Martinmas."
         }
       ]
     }

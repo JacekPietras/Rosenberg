@@ -46,12 +46,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "agreed to surrender Boxberg and Winzingen to the Palatinate in a settlement mediated by Duke Johann Friedrich of Saxony.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "agreed to surrender Boxberg and Winzingen to the Palatinate in a settlement mediated by Duke Johann Friedrich of Saxony."
         },
         {
           "person": "Albrecht von Rosenberg",
@@ -83,12 +78,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was to receive a quarter of Rosenberg from the Palatinate under the settlement.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was to receive a quarter of Rosenberg from the Palatinate under the settlement."
         }
       ]
     }

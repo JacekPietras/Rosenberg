@@ -15,6 +15,9 @@
           "person": "Georg Siegmund von Rosenberg"
         },
         {
+          "person": "Hans Georg von Seckendorf"
+        },
+        {
           "person": "Hans Ludwig von Seckendorf"
         },
         {
@@ -76,12 +79,7 @@
             "zu Schüpf"
           ],
           "type": "generic",
-          "content": "served as a guardian for Hans Georg von Seckendorf in his marriage agreement.",
-          "mention": [
-            {
-              "person": "Hans Georg von Seckendorf"
-            }
-          ]
+          "content": "served as a guardian for Hans Georg von Seckendorf in his marriage agreement."
         },
         {
           "person": "Albrecht Christoph von Rosenberg",
@@ -90,12 +88,7 @@
             "zu Waldmannshofen"
           ],
           "type": "generic",
-          "content": "advised Brigitta von Rosenberg in her marriage agreement.",
-          "mention": [
-            {
-              "person": "Brigitta von Rosenberg"
-            }
-          ]
+          "content": "advised Brigitta von Rosenberg in her marriage agreement."
         },
         {
           "person": "Georg Siegmund von Rosenberg",
@@ -103,12 +96,7 @@
             "zu Haltenbergstetten"
           ],
           "type": "generic",
-          "content": "advised Brigitta von Rosenberg in her marriage agreement.",
-          "mention": [
-            {
-              "person": "Brigitta von Rosenberg"
-            }
-          ]
+          "content": "advised Brigitta von Rosenberg in her marriage agreement."
         }
       ]
     }

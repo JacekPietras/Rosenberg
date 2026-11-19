@@ -20,9 +20,6 @@
           ]
         },
         {
-          "person": "Konrad von Uissigheim"
-        },
-        {
           "place": "uissigheim"
         }
       ],
@@ -56,18 +53,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "sold a Hube at Uissigheim to Bronnbach Abbey together with Konrad von Rosenberg.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            },
-            {
-              "place": "uissigheim"
-            }
-          ]
+          "content": "sold a Hube at Uissigheim to Bronnbach Abbey together with Konrad von Rosenberg."
         },
         {
           "person": "Konrad von Uissigheim",

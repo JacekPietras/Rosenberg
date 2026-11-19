@@ -9,9 +9,6 @@
       "english": "Ulrich von Rechberg, Thomas von Rosenberg, Heinrich Zobel, Hans von Absberg, Ulrich von Rosenberg and Georg von Rosenberg, Heinz von Rechberg, and Heinrich von Seckendorf confirm that Bishop Johann of Würzburg has, with the consent of the cathedral chapter, assigned them 150 Rhenish gulden annual interest from the tax (\"Bete\"), namely 100 from the city of Haßfurt, 40 from the city of Volkach, and 10 from the village of \"Keller,\" for a principal of 3,000 Rhenish gulden.",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "person": "Hans of Würzburg",
           "personTitle": [
             "Bishop"
@@ -25,53 +22,23 @@
         },
         {
           "person": "Heinrich Zobel"
-        },
-        {
-          "person": "Thomas von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders.",
-          "mention": [
-            {
-              "person": "Hans of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders."
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders.",
-          "mention": [
-            {
-              "person": "Hans of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders."
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders.",
-          "mention": [
-            {
-              "person": "Hans of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders."
         }
       ]
     }

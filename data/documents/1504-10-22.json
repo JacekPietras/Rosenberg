@@ -10,21 +10,13 @@
       "mention": [
         {
           "person": "Erasmus von Wertheim"
-        },
-        {
-          "person": "Georg von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was placed under the Reichsacht, whose enforcement King Maximilian entrusted to Erasmus, Graf von Wertheim.",
-          "mention": [
-            {
-              "person": "Erasmus von Wertheim"
-            }
-          ]
+          "content": "was placed under the Reichsacht, whose enforcement King Maximilian entrusted to Erasmus, Graf von Wertheim."
         }
       ]
     }

@@ -12,12 +12,6 @@
           "place": "adelsheim"
         },
         {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "place": "seckendorff"
         },
         {
@@ -31,18 +25,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "arbitrated an inheritance dispute among heirs of the Seckendorf, Thüngen, and Adelsheim families together with five other knights.",
-          "mention": [
-            {
-              "place": "adelsheim"
-            },
-            {
-              "place": "seckendorff"
-            },
-            {
-              "place": "thuengen"
-            }
-          ]
+          "content": "arbitrated an inheritance dispute among heirs of the Seckendorf, Thüngen, and Adelsheim families together with five other knights."
         }
       ]
     }

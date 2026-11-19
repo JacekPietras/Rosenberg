@@ -73,12 +73,7 @@
             "Vitztum zu Heidelberg"
           ],
           "type": "generic",
-          "content": "held a quarter of Boxberg Castle and town as a fief from the three Counts Palatine Ruprecht.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "held a quarter of Boxberg Castle and town as a fief from the three Counts Palatine Ruprecht."
         },
         {
           "person": "vitztum_zu_Heidelberg",
@@ -87,12 +82,7 @@
             "Vitztum zu Heidelberg"
           ],
           "type": "generic",
-          "content": "made his quarter of Boxberg an open house for the three Counts Palatine Ruprecht.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "made his quarter of Boxberg an open house for the three Counts Palatine Ruprecht."
         },
         {
           "person": "vitztum_zu_Heidelberg",
@@ -110,15 +100,7 @@
             "Vitztum zu Heidelberg"
           ],
           "type": "generic",
-          "content": "excepted the Bishop of Würzburg, his brothers-in-law of Hirschhorn, and his kinsmen bearing the same helmet from the open-house grant.",
-          "mention": [
-            {
-              "place": "hirschhorn"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "excepted the Bishop of Würzburg, his brothers-in-law of Hirschhorn, and his kinsmen bearing the same helmet from the open-house grant."
         },
         {
           "person": "vitztum_zu_Heidelberg",
@@ -127,12 +109,7 @@
             "Vitztum zu Heidelberg"
           ],
           "type": "generic",
-          "content": "sealed the Boxberg charter.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "sealed the Boxberg charter."
         },
         {
           "person": "Hans von Hirschhorn",
@@ -140,12 +117,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "co-sealed the Boxberg charter at Konrad’s request.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "co-sealed the Boxberg charter at Konrad’s request."
         }
       ],
       "img": [

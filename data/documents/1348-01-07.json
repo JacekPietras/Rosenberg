@@ -17,12 +17,6 @@
           "person": "Eberhard von Katzenelnbogen"
         },
         {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "place": "fulda-cathedral"
         },
         {
@@ -45,15 +39,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "consented with the other guardians of Mainz to Konrad von Kirkel’s agreement for the service of Johann and Eberhard von Katzenelnbogen.",
-          "mention": [
-            {
-              "person": "Eberhard von Katzenelnbogen"
-            },
-            {
-              "person": "Hans von Katzenelnbogen"
-            }
-          ]
+          "content": "consented with the other guardians of Mainz to Konrad von Kirkel’s agreement for the service of Johann and Eberhard von Katzenelnbogen."
         }
       ],
       "img": [

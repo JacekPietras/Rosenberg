@@ -9,32 +9,22 @@
       "english": "Fief acknowledgment: Kunz von Rosenberg against Margraves Friedrich and Sigmund of Brandenburg regarding the castle at Waldmannshofen. - Sealer: Kunz von Rosenberg.",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
+          "place": "waldmannshofen"
         },
         {
-          "place": "waldmannshofen"
+          "place": "waldmannshofen-castle"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "acknowledged a fief of Schloss Waldmannshofen from Margraves Friedrich and Sigmund of Brandenburg.",
-          "mention": [
-            {
-              "place": "waldmannshofen-castle"
-            }
-          ]
+          "content": "acknowledged a fief of Schloss Waldmannshofen from Margraves Friedrich and Sigmund of Brandenburg."
         },
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "sealed his fief acknowledgment for Schloss Waldmannshofen.",
-          "mention": [
-            {
-              "place": "waldmannshofen-castle"
-            }
-          ]
+          "content": "sealed his fief acknowledgment for Schloss Waldmannshofen."
         }
       ]
     }

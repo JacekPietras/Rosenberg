@@ -12,6 +12,9 @@
           "place": "giebelstadt"
         },
         {
+          "person": "Hans Zobel"
+        },
+        {
           "person": "Hans Zobel von Giebelstadt"
         },
         {
@@ -28,15 +31,7 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "sold Giebelstadt Castle and residence, woods, and half of Herchsheim to Hans Zobel von Gerolzhofen for 4,000 Rhenish florins together with his wife Elisabeth.",
-          "mention": [
-            {
-              "place": "giebelstadt"
-            },
-            {
-              "person": "Hans Zobel"
-            }
-          ]
+          "content": "sold Giebelstadt Castle and residence, woods, and half of Herchsheim to Hans Zobel von Gerolzhofen for 4,000 Rhenish florins together with his wife Elisabeth."
         },
         {
           "person": "Kunz von Rosenberg",
@@ -49,18 +44,7 @@
         {
           "person": "Elisabeth",
           "type": "generic",
-          "content": "sold Giebelstadt Castle and residence, woods, and half of Herchsheim to Hans Zobel von Gerolzhofen for 4,000 Rhenish florins together with her husband Kunz von Rosenberg.",
-          "mention": [
-            {
-              "place": "giebelstadt"
-            },
-            {
-              "person": "Hans Zobel"
-            },
-            {
-              "person": "Kunz von Rosenberg"
-            }
-          ]
+          "content": "sold Giebelstadt Castle and residence, woods, and half of Herchsheim to Hans Zobel von Gerolzhofen for 4,000 Rhenish florins together with her husband Kunz von Rosenberg."
         }
       ]
     }

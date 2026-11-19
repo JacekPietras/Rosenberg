@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "rosenberg-town"
-        },
-        {
-          "person": "Stephan von Bibra"
         }
       ],
       "facts": [
         {
           "person": "Stephan von Bibra",
           "type": "generic",
-          "content": "served the bishopric in fighting against the von Rosenberg family.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "served the bishopric in fighting against the von Rosenberg family."
         },
         {
           "person": "Rudolf von Scherenberg",
@@ -32,12 +24,7 @@
             "Bischof"
           ],
           "type": "generic",
-          "content": "compensated Stefan von Bibra with 400 florins for his losses of seven horses, armor, damages, expenses, and other costs.",
-          "mention": [
-            {
-              "person": "Stephan von Bibra"
-            }
-          ]
+          "content": "compensated Stefan von Bibra with 400 florins for his losses of seven horses, armor, damages, expenses, and other costs."
         },
         {
           "person": "Rudolf von Scherenberg",
@@ -45,12 +32,7 @@
             "Bischof"
           ],
           "type": "generic",
-          "content": "reached the compensation agreement with Stefan von Bibra in 1481, although the copybook gives the year as 1491.",
-          "mention": [
-            {
-              "person": "Stephan von Bibra"
-            }
-          ]
+          "content": "reached the compensation agreement with Stefan von Bibra in 1481, although the copybook gives the year as 1491."
         }
       ]
     }

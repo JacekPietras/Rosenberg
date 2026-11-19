@@ -12,28 +12,20 @@
           "place": "helmstadt"
         },
         {
-          "person": "Raban von Rosenberg"
+          "person": "Raban von Helmstatt"
         },
         {
           "person": "Wiprecht von Helmstadt"
+        },
+        {
+          "person": "Wiprecht von Helmstatt"
         }
       ],
       "facts": [
         {
           "person": "Raban von Rosenberg",
           "type": "generic",
-          "content": "was to receive chickens from Heinz Walthers Sohn under the division of Helmstadt between Wiprecht and Raban von Helmstatt.",
-          "mention": [
-            {
-              "place": "helmstadt"
-            },
-            {
-              "person": "Raban von Helmstatt"
-            },
-            {
-              "person": "Wiprecht von Helmstatt"
-            }
-          ]
+          "content": "was to receive chickens from Heinz Walthers Sohn under the division of Helmstadt between Wiprecht and Raban von Helmstatt."
         }
       ]
     }

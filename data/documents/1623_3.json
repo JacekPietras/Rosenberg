@@ -17,9 +17,6 @@
       "english": "Distribution of the estate of Albrecht Christoph von Rosenberg\n\nDates: (1623) 1630-1644\n\nContains: Includes among other things: sale of the castle and estate of Gnötzheim, summary extract from the Gnötzheim official debt book (1632), \"debt book\" of the brothers Albrecht Christoph and Georg Siegmund von Rosenberg,\n\nDates: (1535-1613) 1632-1641 (1653)\n\nDates: 1632-1651",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
           "person": "Georg Siegmund von Rosenberg"
         },
         {
@@ -31,11 +28,6 @@
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
           "content": "had his estate divided, including the castle and estate at Gnötzheim.",
-          "mention": [
-            {
-              "place": "gnoetzheim"
-            }
-          ],
           "date": "1644"
         }
       ]

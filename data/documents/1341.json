@@ -31,21 +31,7 @@
         {
           "subject": "the copy book of Hatzfeld documents",
           "type": "generic",
-          "content": "contains records concerning properties and rights that passed to the Counts of Hatzfeld following the extinction of the von Rosenberg family, including holdings in Haltenbergstetten, Rosenberg, Schüpf, and Waldmannshofen.",
-          "mention": [
-            {
-              "place": "oberschuepf"
-            },
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "schloss-haltenbergstetten"
-            },
-            {
-              "place": "waldmannshofen"
-            }
-          ]
+          "content": "contains records concerning properties and rights that passed to the Counts of Hatzfeld following the extinction of the von Rosenberg family, including holdings in Haltenbergstetten, Rosenberg, Schüpf, and Waldmannshofen."
         }
       ]
     }

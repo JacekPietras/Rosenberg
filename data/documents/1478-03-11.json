@@ -15,9 +15,6 @@
           ]
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "person": "Hans von Rosenberg"
         },
         {
@@ -34,40 +31,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "mediated with Hans von Aschhausen and Georg von Rosenberg a settlement between Hans and Konrad von Rosenberg concerning Schloss Rosenberg and its appurtenances.",
-          "mention": [
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Hans von Rosenberg"
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "mediated with Hans von Aschhausen and Georg von Rosenberg a settlement between Hans and Konrad von Rosenberg concerning Schloss Rosenberg and its appurtenances."
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "mediated with Asmus von Rosenberg and Hans von Aschhausen a settlement between Hans and Konrad von Rosenberg concerning Schloss Rosenberg and its appurtenances.",
-          "mention": [
-            {
-              "person": "Asmus von Rosenberg"
-            },
-            {
-              "person": "Hans von Rosenberg"
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "mediated with Asmus von Rosenberg and Hans von Aschhausen a settlement between Hans and Konrad von Rosenberg concerning Schloss Rosenberg and its appurtenances."
         }
       ]
     }

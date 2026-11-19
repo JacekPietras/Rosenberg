@@ -2303,12 +2303,7 @@
         {
           "person": "Ursula von Steinau",
           "type": "generic",
-          "content": "may have been born into the von Rosenberg family, based on the Rosenberg arms shown on the epitaph.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "may have been born into the von Rosenberg family, based on the Rosenberg arms shown on the epitaph."
         }
       ]
     },
@@ -2560,15 +2555,15 @@
         {
           "person": "Albrecht von Liebenstein",
           "type": "generic",
-          "content": "is commemorated together with Margaretha von Rosenberg.",
-          "mention": [
-            {
-              "person": "Margaretha von Rosenberg"
-            }
-          ]
+          "content": "is commemorated together with Margaretha von Rosenberg."
         }
       ],
-      "guesses": []
+      "guesses": [],
+      "mention": [
+        {
+          "person": "Margaretha von Rosenberg"
+        }
+      ]
     },
     {
       "title": "Neckarwestheim Schloss Liebenstein, Renaissance bay window with Liebenstein and Rosenberg arms",
@@ -3466,12 +3461,7 @@
           "person": "Wolf von Hürnheim",
           "personDeceased": true,
           "type": "generic",
-          "content": "was buried at Kenzingen parish church.",
-          "mention": [
-            {
-              "place": "kenzingen-st-laurentius"
-            }
-          ]
+          "content": "was buried at Kenzingen parish church."
         },
         {
           "person": "Wolf von Hürnheim",
@@ -3485,6 +3475,11 @@
           "of": "Wolf von Hürnheim",
           "ofDeceased": true,
           "term": "paternal grandmother"
+        }
+      ],
+      "mention": [
+        {
+          "place": "kenzingen-st-laurentius"
         }
       ]
     },
@@ -3868,27 +3863,22 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "is commemorated on a building memorial alongside Osanna von Rosenberg, née von Eycholtzheim, made in 1493.",
-          "mention": [
-            {
-              "person": "Osanna von Rosenberg"
-            }
-          ]
+          "content": "is commemorated on a building memorial alongside Osanna von Rosenberg, née von Eycholtzheim, made in 1493."
         },
         {
           "person": "Osanna von Rosenberg, née von Eycholtzheim",
           "type": "generic",
-          "content": "is commemorated on a building memorial alongside Jörg von Rosenberg made in 1493.",
-          "mention": [
-            {
-              "person": "Georg von Rosenberg"
-            }
-          ]
+          "content": "is commemorated on a building memorial alongside Jörg von Rosenberg made in 1493."
         },
         {
           "subject": "The rebuilding of Boxberg Castle commemorated by the memorials",
           "type": "generic",
           "content": "began in 1480."
+        }
+      ],
+      "mention": [
+        {
+          "person": "Osanna von Rosenberg"
         }
       ]
     },
@@ -3933,15 +3923,7 @@
         {
           "person": "vitztum_zu_Heidelberg",
           "type": "generic",
-          "content": "may be [vitztum_zu_Heidelberg]: his documented lifetime and Hirschhorn marriage are consistent with a death in 1396, although his wife is named Margarethe in the 1392 record and Adelheid in the monument.",
-          "mention": [
-            {
-              "place": "heidelberg"
-            },
-            {
-              "place": "hirschhorn"
-            }
-          ]
+          "content": "may be [vitztum_zu_Heidelberg]: his documented lifetime and Hirschhorn marriage are consistent with a death in 1396, although his wife is named Margarethe in the 1392 record and Adelheid in the monument."
         },
         {
           "person": "vitztum_zu_Heidelberg",

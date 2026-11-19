@@ -53,19 +53,10 @@
           "person": "Konrad von Frankenstein"
         },
         {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
           "person": "Reinhard von Sickingen"
         },
         {
           "place": "sickingen"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         },
         {
           "person": "Wiprecht von Helmstadt",
@@ -78,9 +69,6 @@
           "personTitle": [
             "der Jüngere"
           ]
-        },
-        {
-          "person": "Wiprecht von Helmstadt"
         }
       ],
       "facts": [

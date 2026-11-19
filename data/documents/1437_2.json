@@ -10,15 +10,13 @@
       "english": "Hans von Brunn, Bischof, borrowed a further 200 florins from Anselm von Rosenberg, who had by then become a Ritter, and added that sum to the previous 6,000 florins. The transcription says no bond survives for this additional amount. The archive summary clarifies that the 6,000-florin pledge was secured on Amt Prosselsheim for the von Rosenberg family. In 1437, the bishop pledged Peter von Stettenberg an annual 80 florins from the Bede levy at Prosselsheim. Recorded in the register of Brun’s contracts, fol. 199.",
       "mention": [
         {
-          "person": "Anselm von Rosenberg"
-        },
-        {
           "place": "brunn"
         },
         {
           "person": "Hans von Brunn",
           "personTitle": [
-            "Bischof"
+            "Bischof",
+            "Bishop"
           ]
         },
         {
@@ -29,15 +27,7 @@
         {
           "person": "Anselm von Rosenberg",
           "type": "generic",
-          "content": "lent Bishop Johann von Brunn a further 200 florins, which were added to the earlier 6,000-florin sum.",
-          "mention": [
-            {
-              "person": "Hans von Brunn",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "lent Bishop Johann von Brunn a further 200 florins, which were added to the earlier 6,000-florin sum."
         },
         {
           "person": "Anselm von Rosenberg",

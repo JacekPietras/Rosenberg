@@ -15,28 +15,20 @@
           "person": "Hans Konrad von Helmstadt"
         },
         {
+          "person": "Hans Konrad von Helmstatt"
+        },
+        {
           "person": "Joachim von Helmstadt"
         },
         {
-          "person": "Michael von Rosenberg"
+          "person": "Joachim von Helmstatt"
         }
       ],
       "facts": [
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "promised to indemnify Friedrich von Fleckenstein for his surety against the brothers Hans Konrad and Joachim von Helmstatt.",
-          "mention": [
-            {
-              "person": "Friedrich von Fleckenstein"
-            },
-            {
-              "person": "Hans Konrad von Helmstatt"
-            },
-            {
-              "person": "Joachim von Helmstatt"
-            }
-          ]
+          "content": "promised to indemnify Friedrich von Fleckenstein for his surety against the brothers Hans Konrad and Joachim von Helmstatt."
         }
       ]
     }

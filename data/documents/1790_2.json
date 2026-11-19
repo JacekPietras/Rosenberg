@@ -9,6 +9,9 @@
       "english": "Correspondence between the chanceries of the lordships of Limpurg-Gaildorf-Solms-Assenheim and Limpurg-Sontheim-Schmiedelfeld regarding the half castle and market of Haltenbergstetten, sold in 1415 to Kunz von Rosenberg under the reservation of the right of repurchase or readmission.\n\nDuration: 1790-1795\n\nExtent: 7 handwritten sheets.",
       "mention": [
         {
+          "person": "Konrad von Limpurg"
+        },
+        {
           "person": "Kunz von Rosenberg"
         },
         {
@@ -26,14 +29,6 @@
           ],
           "type": "generic",
           "content": "bought half the castle and market of Haltenbergstetten from Conrad von Limpurg in 1415, retaining repurchase or re-entry rights.",
-          "mention": [
-            {
-              "person": "Konrad von Limpurg"
-            },
-            {
-              "place": "schloss-haltenbergstetten"
-            }
-          ],
           "date": "1415"
         }
       ]

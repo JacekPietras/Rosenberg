@@ -15,9 +15,6 @@
       "english": "Margraves Friedrich and Sigismund of Brandenburg, etc., Burggraves of Nuremberg, enfeoff Kunz von Rosenberg in hereditary fief (Mannlehen) with the castle, village, court, and bailiwick of Waldmannshofen including appurtenances, as far as the margraviate and tithe extend, together with the wood at Schön (zu der Schoen). The enfeoffment is made according to the hereditary fief law and custom of the Burggraviate of Nuremberg. -\n\nSeal: the issuers. - On Friday after St. Michael's day.\n\nExemplar, parchment, seal appended. - Back: In sacello Rosenberg contra Rosenberg etc. (17th century). - No. 592.\n\nReg. No. 631",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
           "place": "nuremberg"
         },
         {
@@ -31,12 +28,7 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "received Schloss, village, court and Vogtei of Waldmannshofen and the wood at Schön as a Mannlehen from Margraves Friedrich and Sigmund of Brandenburg.",
-          "mention": [
-            {
-              "place": "waldmannshofen"
-            }
-          ]
+          "content": "received Schloss, village, court and Vogtei of Waldmannshofen and the wood at Schön as a Mannlehen from Margraves Friedrich and Sigmund of Brandenburg."
         }
       ]
     }

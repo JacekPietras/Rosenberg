@@ -22,21 +22,13 @@
         },
         {
           "place": "rosenberg-town"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "subject": "the von Rosenberg brothers and cousins",
           "type": "generic",
-          "content": "received an inherited Mannlehen share of one quarter of Aub from Count Palatine Ludwig.",
-          "mention": [
-            {
-              "place": "aub"
-            }
-          ]
+          "content": "received an inherited Mannlehen share of one quarter of Aub from Count Palatine Ludwig."
         },
         {
           "person": "Zaisolph von Rosenberg",

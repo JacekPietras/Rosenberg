@@ -12,12 +12,6 @@
       "english": "Eberhard von Rosenberg der Ältere certifies that he sold several of the aforementioned properties and income in Rötelsee to the Komtur and brothers of the Teutonic Order zu Mergentheim for 87 pounds of Heller and 12 shillings of Heller in Mergentheim currency. The guarantors are: Wiprecht Mertin, Ritter, resident of Unterbalbach, Hans Kruppel, and Rüdiger Sützel.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
           "place": "unterbalbach"
         }
       ],
@@ -37,41 +31,17 @@
             "gesessen zu Unterbalbach"
           ],
           "type": "generic",
-          "content": "served as surety for the sale by Eberhard von Rosenberg der Ältere to the Teutonic Order at Mergentheim.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            }
-          ]
+          "content": "served as surety for the sale by Eberhard von Rosenberg der Ältere to the Teutonic Order at Mergentheim."
         },
         {
           "person": "Hans Kruppel",
           "type": "generic",
-          "content": "served as surety for the sale by Eberhard von Rosenberg der Ältere to the Teutonic Order at Mergentheim.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            }
-          ]
+          "content": "served as surety for the sale by Eberhard von Rosenberg der Ältere to the Teutonic Order at Mergentheim."
         },
         {
           "person": "Rüdiger Sützel",
           "type": "generic",
-          "content": "served as surety for the sale by Eberhard von Rosenberg der Ältere to the Teutonic Order at Mergentheim.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            }
-          ]
+          "content": "served as surety for the sale by Eberhard von Rosenberg der Ältere to the Teutonic Order at Mergentheim."
         }
       ],
       "img": [

@@ -14,17 +14,15 @@
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
-            "the Elder"
+            "der Jüngere",
+            "the Younger"
           ]
         },
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
-            "the Younger"
+            "the Elder"
           ]
-        },
-        {
-          "person": "Konrad von Rosenberg"
         },
         {
           "person": "Konrad von Weinsberg"
@@ -55,21 +53,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "agreed with Konrad von Weinsberg to the redemption of Reigelsberg Fortress purchased by his cousin Konrad von Rosenberg der Jüngere.",
-          "mention": [
-            {
-              "person": "Konrad von Rosenberg",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            },
-            {
-              "person": "Konrad von Weinsberg"
-            },
-            {
-              "place": "reichelsburg-aub"
-            }
-          ]
+          "content": "agreed with Konrad von Weinsberg to the redemption of Reigelsberg Fortress purchased by his cousin Konrad von Rosenberg der Jüngere."
         }
       ]
     }

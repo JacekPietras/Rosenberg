@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "boxberg"
-        },
-        {
-          "person": "Ursula von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ursula von Rosenberg",
           "type": "generic",
-          "content": "was involved in an adultery case with Gebhard Pruben at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "was involved in an adultery case with Gebhard Pruben at Boxberg."
         }
       ]
     }

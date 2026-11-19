@@ -18,6 +18,12 @@
           "place": "boxberg"
         },
         {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
           "person": "Konrad von Rosenberg"
         },
         {
@@ -43,18 +49,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "received a quarter of Boxberg Castle from King Ruprecht, acting as Count Palatine.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "received a quarter of Boxberg Castle from King Ruprecht, acting as Count Palatine."
         }
       ]
     }

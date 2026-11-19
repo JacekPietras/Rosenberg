@@ -9,9 +9,6 @@
       "english": "Property holdings of the Lords von Rosenberg and their heirs.\n\nTime span: 1532, 1577-1582, 1594-1602, 1629-1641\n\nContents: Contains: 1. Fol.4 Purchase of the property holdings of the deceased Konrad von Rosenberg (in the district of Rosenberg, Dürrhof) by Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg (copy), 1595; 2. Fol.13 Summary list of Dürrhof's yields, 1602; 3. Fol.22 Purchase of the property holdings of the deceased Hans Eucharius von Rosenberg by Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg (copy), 1582; 4. Fol.37 Lists of the Rosenberg family's property holdings, fiefs, and revenues in the district of Haltenbergstetten, 1638; 5. Fol.51 Purchase of property holdings in Schüpfer Grund of the deceased Konrad von Vellberg by Konrad von Rosenberg, 1594; 6. Fol.55ff., 113ff. Lists of documents and files, primarily concerning legal matters of the Lords von Rosenberg, 1629-1640; 7. Fol.59 Purchase of one third of the tithe at Buch am Ahorn by Konrad von Rosenberg (copy), 1594; 8. Fol.64 Lists of outstanding capital of the Rosenberg property heirs, 1639-1641; 9. Fol.73 Lists of properties and rights claimed as owned by the Rosenberg property heirs in the districts of Rosenberg and Haltenbergstetten, [1638]; 10. Fol.89 Oath of fealty by subjects following the death of Albrecht Christoph von Rosenberg, 1632; 11. Fol.96 Removal of grain from Dürrhof by Mainz officials; Seizure of revenues due to the Rosenberg property heirs by Würzburg, 1636-1640; 12. Fol.133 April 19, 1596, Captain and councilors of the Imperial Knighthood of the Odenwald district borrow 10,000 Reichstaler from Wolf Konrad Greck von Kochendorf Jr.; Originals: copies, extractions, parchment; 20 sheets missing; 13. Aub November 16, 1532, Before Lienhard Eyninger, papal notary, Charel von Hirschlach, Hereditary Cupbearer of the Diocese of Eichstätt acknowledges: Bishop Gabriel of Eichstätt has deprived him of his hereditary cupbearer office and his fiefs. They were reassigned by the Imperial Chamber Court. The Imperial Chamber Court restored the hereditary cupbearer office and fiefs to him, but the bishop refuses to comply with its judgment. Hirschlach grants his hereditary cupbearer office and fiefs, with all rights, to Konrad von Rosenberg. Witnesses: Albrecht von Riedern; Hans Gerner, Schultheiß at Neubronn; Paul Pruckner, Schultheiß; Kilian Zornlen, court juror; Lorenz Marck; Fritz Rup; Jorg Duchscherer; and Hans Ritter, all citizens of Aub. Original, parchment, with notarial signature. 14. Folio 134: Agreement between the fief heirs and allodial-property heirs of the late Albrecht von Rosenberg dividing the fief and allodial properties (copy), 1577; 15. Folio 141: Agreement between the fief heirs and allodial-property heirs of the late Hans Eucharius von Rosenberg postponing the conclusion of the purchase of the allodial properties (copy), 1591; 16. Folio 143: Will of Albrecht Christoph von Rosenberg (copy), 1631 (1632).\n\nExtent: 1 volume, folios 1–173.",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
           "person": "Albrecht von Riedern"
         },
         {
@@ -25,9 +22,6 @@
         },
         {
           "person": "Georg Siegmund von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
         },
         {
           "place": "rosenberg-town"
@@ -44,40 +38,12 @@
           "subject": "the von Rosenberg family",
           "type": "generic",
           "content": "acquired the estate of the late Konrad von Rosenberg in the Amt Rosenberg and at Dürrhof through Konrad, Albrecht Christoph, and Georg Sigmund von Rosenberg.",
-          "mention": [
-            {
-              "person": "Albrecht Christoph von Rosenberg"
-            },
-            {
-              "person": "Georg Siegmund von Rosenberg"
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ],
           "date": "1595"
         },
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
           "content": "acquired the estate of the late Hans Eucharius von Rosenberg through Konrad, Albrecht Christoph, and Georg Sigmund von Rosenberg.",
-          "mention": [
-            {
-              "person": "Albrecht Christoph von Rosenberg"
-            },
-            {
-              "person": "Georg Siegmund von Rosenberg"
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ],
           "date": "1582"
         },
         {
@@ -90,11 +56,6 @@
           "person": "Konrad von Rosenberg",
           "type": "generic",
           "content": "purchased one third of the tithe at Buch am Ahorn.",
-          "mention": [
-            {
-              "place": "buch"
-            }
-          ],
           "date": "1594"
         },
         {
@@ -112,11 +73,6 @@
           "subject": "the von Rosenberg family",
           "type": "generic",
           "content": "divided the fiefs and property inherited from the late Albrecht von Rosenberg.",
-          "mention": [
-            {
-              "person": "Albrecht von Rosenberg"
-            }
-          ],
           "date": "1577"
         }
       ]

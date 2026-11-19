@@ -25,12 +25,6 @@
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ]
         }
       ],
       "facts": [
@@ -48,12 +42,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "was permitted to assign his wife Ketterlin a 2,000-florin wittum on half his share of Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "was permitted to assign his wife Ketterlin a 2,000-florin wittum on half his share of Boxberg."
         }
       ]
     }

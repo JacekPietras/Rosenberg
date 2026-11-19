@@ -14,19 +14,10 @@
           "person": "Eberhard von Schüpf"
         },
         {
-          "person": "Elisabeth von Rosenberg"
-        },
-        {
           "person": "Götz von Adelsheim"
         },
         {
           "person": "Hans von Berlichingen"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
         },
         {
           "place": "oberschuepf"
@@ -57,12 +48,7 @@
         {
           "person": "Elisabeth von Rosenberg",
           "type": "generic",
-          "content": "sold one-third of the large tithe and one-fourth of the small tithe at Oberwittstatt with Konrad von Wittstadt gen. Wolper to Kunz and Gerwig, sons of Eberhard von Schüpf.",
-          "mention": [
-            {
-              "person": "Eberhard von Schüpf"
-            }
-          ]
+          "content": "sold one-third of the large tithe and one-fourth of the small tithe at Oberwittstatt with Konrad von Wittstadt gen. Wolper to Kunz and Gerwig, sons of Eberhard von Schüpf."
         },
         {
           "person": "Hans von Rosenberg",
@@ -70,12 +56,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "served as surety for the sale of tithes at Oberwittstatt by Konrad von Wittstadt gen. Wolper and Elisabeth von Rosenberg.",
-          "mention": [
-            {
-              "person": "Elisabeth von Rosenberg"
-            }
-          ]
+          "content": "served as surety for the sale of tithes at Oberwittstatt by Konrad von Wittstadt gen. Wolper and Elisabeth von Rosenberg."
         },
         {
           "person": "Hans von Rosenberg",

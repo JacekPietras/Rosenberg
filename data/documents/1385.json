@@ -8,18 +8,6 @@
       "english": "Eberhard von Rosenberg der Jüngere settles disputes between Eberhard von Rosenberg der Ältere and Hans Pfahl over the rents of a farm in Rosenberg",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
           "place": "rosenberg-town"
         }
       ],
@@ -30,18 +18,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "settled a dispute between Eberhard von Rosenberg der Ältere and Hans Pfahl over rents from a farm at Rosenberg.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "settled a dispute between Eberhard von Rosenberg der Ältere and Hans Pfahl over rents from a farm at Rosenberg."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -49,12 +26,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "was in dispute with Hans Pfahl over rents from a farm at Rosenberg.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was in dispute with Hans Pfahl over rents from a farm at Rosenberg."
         }
       ]
     }

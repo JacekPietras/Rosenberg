@@ -13,12 +13,6 @@
           "place": "baldersheim"
         },
         {
-          "person": "Georg von Leutzenbronn"
-        },
-        {
-          "person": "Juliana von Rosenberg"
-        },
-        {
           "place": "leutzenbronn"
         }
       ],
@@ -31,15 +25,7 @@
         {
           "person": "Juliana von Rosenberg",
           "type": "generic",
-          "content": "was named with her husband Georg von Leutzenbronn as a creditor under a bond from the community of Baldersheim for a principal sum and annual interest.",
-          "mention": [
-            {
-              "place": "baldersheim"
-            },
-            {
-              "person": "Georg von Leutzenbronn"
-            }
-          ]
+          "content": "was named with her husband Georg von Leutzenbronn as a creditor under a bond from the community of Baldersheim for a principal sum and annual interest."
         }
       ],
       "img": [

@@ -18,7 +18,10 @@
           "place": "baldersheim"
         },
         {
-          "person": "Konrad of Würzburg"
+          "person": "Konrad of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         },
         {
           "person": "Konrad von Rosenberg",
@@ -40,18 +43,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "received as Mannlehen from Bishop Konrad of Würzburg two houses, fields, meadows, vineyards and other property at Baldersheim, as well as a wine tithe at Balbach, a property at Burgerroth, a vineyard at Altenberg and woodland at Reygelberg.",
-          "mention": [
-            {
-              "place": "baldersheim"
-            },
-            {
-              "person": "Konrad of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received as Mannlehen from Bishop Konrad of Würzburg two houses, fields, meadows, vineyards and other property at Baldersheim, as well as a wine tithe at Balbach, a property at Burgerroth, a vineyard at Altenberg and woodland at Reygelberg."
         }
       ]
     }

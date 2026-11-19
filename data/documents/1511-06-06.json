@@ -15,6 +15,9 @@
           "person": "Georg von Dottenheim"
         },
         {
+          "person": "Georg von Tottenheim"
+        },
+        {
           "person": "Kunz von Dottenheim"
         },
         {
@@ -31,15 +34,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "had held an eighth of Schloss Schipff as a man fief, which passed to Jorgen von Tottenheim and later returned to the Archbishopric of Mainz.",
-          "mention": [
-            {
-              "person": "Georg von Tottenheim"
-            },
-            {
-              "place": "oberschuepf"
-            }
-          ]
+          "content": "had held an eighth of Schloss Schipff as a man fief, which passed to Jorgen von Tottenheim and later returned to the Archbishopric of Mainz."
         }
       ]
     }

@@ -18,6 +18,9 @@
           "person": "Konrad Schenk von Limpurg"
         },
         {
+          "person": "Konrad von Limpurg"
+        },
+        {
           "person": "Kunz von Rosenberg"
         },
         {
@@ -38,14 +41,6 @@
           ],
           "type": "generic",
           "content": "bought the castle and village of Haltenbergstetten from Conrad von Limpurg in 1415 subject to a perpetual repurchase right.",
-          "mention": [
-            {
-              "person": "Konrad von Limpurg"
-            },
-            {
-              "place": "schloss-haltenbergstetten"
-            }
-          ],
           "date": "1415"
         },
         {

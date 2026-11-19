@@ -10,9 +10,6 @@
       "mention": [
         {
           "place": "essingen"
-        },
-        {
-          "person": "Hans Christoph von Rosenberg"
         }
       ],
       "facts": [
@@ -25,12 +22,7 @@
           "person": "Hans Christoph von Rosenberg",
           "personDeceased": true,
           "type": "generic",
-          "content": "had held high and blood jurisdiction over Ober- and Niederessingen before the von Dalberg family bought Essingen.",
-          "mention": [
-            {
-              "place": "essingen"
-            }
-          ]
+          "content": "had held high and blood jurisdiction over Ober- and Niederessingen before the von Dalberg family bought Essingen."
         }
       ]
     }

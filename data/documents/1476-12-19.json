@@ -10,21 +10,13 @@
       "mention": [
         {
           "person": "Friedrich von Fleckenstein"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "received goods and income at Heuchelheim as fief from Abbot Heinrich of Wissembourg as fief holder for Friedrich von Fleckenstein zu Madenburg.",
-          "mention": [
-            {
-              "person": "Friedrich von Fleckenstein"
-            }
-          ]
+          "content": "received goods and income at Heuchelheim as fief from Abbot Heinrich of Wissembourg as fief holder for Friedrich von Fleckenstein zu Madenburg."
         }
       ]
     }

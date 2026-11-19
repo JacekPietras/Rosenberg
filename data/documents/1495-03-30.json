@@ -18,9 +18,6 @@
           "place": "frankenstein"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "handschuhsheim"
         },
         {
@@ -33,6 +30,9 @@
           "person": "Peter Rüd"
         },
         {
+          "person": "Peter Rüd von Bödigheim"
+        },
+        {
           "person": "Philipp von Seldeneck"
         }
       ],
@@ -40,18 +40,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "had held a share of Schloss and town Widdern jointly with Konrad von Berlichingen, Philipp von Seldeneck and Peter Rüdt von Bödigheim.",
-          "mention": [
-            {
-              "person": "Konrad von Berlichingen"
-            },
-            {
-              "person": "Peter Rüd von Bödigheim"
-            },
-            {
-              "person": "Philipp von Seldeneck"
-            }
-          ]
+          "content": "had held a share of Schloss and town Widdern jointly with Konrad von Berlichingen, Philipp von Seldeneck and Peter Rüdt von Bödigheim."
         }
       ],
       "img": [

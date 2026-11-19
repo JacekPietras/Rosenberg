@@ -11,9 +11,6 @@
       "english": "Eberhard von Rosenberg, resident of Jagstberg: sum owed.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "place": "jagstberg"
         }
       ],
@@ -21,12 +18,7 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "was resident at Jagstberg.",
-          "mention": [
-            {
-              "place": "jagstberg"
-            }
-          ]
+          "content": "was resident at Jagstberg."
         }
       ],
       "img": [

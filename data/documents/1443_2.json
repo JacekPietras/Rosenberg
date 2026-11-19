@@ -24,6 +24,9 @@
           "place": "nuremberg"
         },
         {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
           "place": "wurzburg"
         }
       ],
@@ -34,12 +37,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was to use the toll at Haltenbergstetten without interference from Eysenheintz, who delivered the documents concerning it to him.",
-          "mention": [
-            {
-              "place": "schloss-haltenbergstetten"
-            }
-          ]
+          "content": "was to use the toll at Haltenbergstetten without interference from Eysenheintz, who delivered the documents concerning it to him."
         },
         {
           "person": "Konrad von Rosenberg",

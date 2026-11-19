@@ -43,18 +43,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "received a pledge from King Ludwig of the imperial people in the courts of Buchen and Osterburken and the village of Sennfeld.",
-          "mention": [
-            {
-              "place": "buchen"
-            },
-            {
-              "person": "König Ludwig",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "received a pledge from King Ludwig of the imperial people in the courts of Buchen and Osterburken and the village of Sennfeld."
         },
         {
           "person": "Konrad von Rosenberg",
@@ -62,18 +51,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "received a pledge from King Ludwig of the imperial people in the courts of Buchen and Osterburken and the village of Sennfeld.",
-          "mention": [
-            {
-              "place": "buchen"
-            },
-            {
-              "person": "König Ludwig",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "received a pledge from King Ludwig of the imperial people in the courts of Buchen and Osterburken and the village of Sennfeld."
         }
       ]
     }

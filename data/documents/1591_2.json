@@ -9,9 +9,6 @@
       "english": "Accounts of Moses, Jew of Aub, for Albrecht Christoph von Rosenberg regarding various goods and provisions",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
           "place": "aub"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received goods and provisions from Moses of Aub, who kept accounts for him.",
-          "mention": [
-            {
-              "place": "aub"
-            }
-          ]
+          "content": "received goods and provisions from Moses of Aub, who kept accounts for him."
         }
       ]
     }

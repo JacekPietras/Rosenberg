@@ -14,10 +14,10 @@
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "person": "Götz von Rosenberg"
         },
         {
-          "person": "Kunz von Rosenberg"
+          "person": "Hans von Rosenberg"
         },
         {
           "place": "urhausen-castle"
@@ -27,15 +27,7 @@
         {
           "person": "hans_brother_of_gotz",
           "type": "generic",
-          "content": "sold Veste Urhausen jointly with his wife Anna von Kronenberg and his brother Götz von Rosenberg.",
-          "mention": [
-            {
-              "person": "Götz von Rosenberg"
-            },
-            {
-              "place": "urhausen-castle"
-            }
-          ]
+          "content": "sold Veste Urhausen jointly with his wife Anna von Kronenberg and his brother Götz von Rosenberg."
         },
         {
           "person": "hans_brother_of_gotz",
@@ -54,32 +46,17 @@
             "Vogt zu Lauda"
           ],
           "type": "generic",
-          "content": "served as surety for the sale of Veste Urhausen.",
-          "mention": [
-            {
-              "place": "urhausen-castle"
-            }
-          ]
+          "content": "served as surety for the sale of Veste Urhausen."
         },
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "resided at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "resided at Boxberg."
         },
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "served as surety for the sale of Veste Urhausen.",
-          "mention": [
-            {
-              "place": "urhausen-castle"
-            }
-          ]
+          "content": "served as surety for the sale of Veste Urhausen."
         }
       ]
     }

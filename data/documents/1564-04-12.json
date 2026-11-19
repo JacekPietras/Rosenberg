@@ -18,6 +18,9 @@
           "person": "Heinrich Schenk von Limpurg"
         },
         {
+          "place": "limpurg"
+        },
+        {
           "place": "oberschuepf"
         }
       ],
@@ -29,12 +32,7 @@
             "zu Schüpf"
           ],
           "type": "generic",
-          "content": "served as chief arbitrator in a hunting-rights dispute between the Schenken of Limpurg and five noble lordships in the Amt Gröningen.",
-          "mention": [
-            {
-              "place": "limpurg"
-            }
-          ]
+          "content": "served as chief arbitrator in a hunting-rights dispute between the Schenken of Limpurg and five noble lordships in the Amt Gröningen."
         }
       ]
     }

@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "complained to Rothenburg about damages he suffered during the Peasants’ War.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "complained to Rothenburg about damages he suffered during the Peasants’ War."
         }
       ]
     }

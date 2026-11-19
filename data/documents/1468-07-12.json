@@ -9,6 +9,9 @@
       "english": "The commoners and co-heirs of Schüpf grant Archbishop Adolf of Mainz and his successors an perpetual opening (access right) in Schüpf Castle, which is held as a fief from the Mainz foundation, and pledge to maintain the castle peace there.\n\nDuration: 1468 July 12 (Tuesday after St. Kilian 1468)\n\nSeal description: 1 of 2 seals\n\nNotes: Along with it a transfix from the same day, with which Fritz Zobel von Giebelstadt, whose share in Schüpf is a pledge of the von Rosenberg family, grants his consent to the above declaration (parchment, original, 1 seal).",
       "mention": [
         {
+          "person": "Friedrich Zobel"
+        },
+        {
           "person": "Friedrich Zobel von Giebelstadt"
         },
         {
@@ -25,15 +28,7 @@
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
-          "content": "held Fritz Zobel von Guttenberg’s share of Schüpf Castle as a pledge when he consented to the castle opening agreement with the Archbishop of Mainz.",
-          "mention": [
-            {
-              "person": "Friedrich Zobel"
-            },
-            {
-              "place": "oberschuepf"
-            }
-          ]
+          "content": "held Fritz Zobel von Guttenberg’s share of Schüpf Castle as a pledge when he consented to the castle opening agreement with the Archbishop of Mainz."
         }
       ],
       "img": [

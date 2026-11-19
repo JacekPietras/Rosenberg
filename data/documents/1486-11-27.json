@@ -12,12 +12,6 @@
           "person": "Anselm von Rosenberg"
         },
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
           "person": "König Friedrich",
           "personTitle": [
             "King"
@@ -37,41 +31,17 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was declared subject to the penalty of the Golden Bull by Emperor Friedrich after announcing a feud and attacking Bishop Rudolf of Würzburg.",
-          "mention": [
-            {
-              "person": "Rudolf of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "was declared subject to the penalty of the Golden Bull by Emperor Friedrich after announcing a feud and attacking Bishop Rudolf of Würzburg."
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "was declared subject to the penalty of the Golden Bull by Emperor Friedrich after announcing a feud and attacking Bishop Rudolf of Würzburg.",
-          "mention": [
-            {
-              "person": "Rudolf of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "was declared subject to the penalty of the Golden Bull by Emperor Friedrich after announcing a feud and attacking Bishop Rudolf of Würzburg."
         },
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "was declared subject to the penalty of the Golden Bull by Emperor Friedrich after announcing a feud and attacking Bishop Rudolf of Würzburg.",
-          "mention": [
-            {
-              "person": "Rudolf of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "was declared subject to the penalty of the Golden Bull by Emperor Friedrich after announcing a feud and attacking Bishop Rudolf of Würzburg."
         }
       ]
     }

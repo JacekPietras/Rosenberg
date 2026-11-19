@@ -9,9 +9,6 @@
       "english": "Dispute between the Electoral Palatinate and Albrecht von Rosenberg over the Boxberg estate\n\nPeriod: 1548-1553",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "boxberg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "was in dispute with the Palatinate over Haus Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "was in dispute with the Palatinate over Haus Boxberg."
         }
       ]
     }

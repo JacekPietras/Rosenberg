@@ -20,21 +20,13 @@
         },
         {
           "place": "roettingen"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "received an annual rent secured on the Bede of Röttingen, redeemable.",
-          "mention": [
-            {
-              "place": "roettingen"
-            }
-          ]
+          "content": "received an annual rent secured on the Bede of Röttingen, redeemable."
         }
       ],
       "img": [

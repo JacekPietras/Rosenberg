@@ -27,6 +27,9 @@
           "person": "Reinhard Truchsess of Baldersheim"
         },
         {
+          "person": "Reinhard Truchsess von Baldersheim"
+        },
+        {
           "place": "waldmannshofen"
         }
       ],
@@ -37,18 +40,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "received half of Schloss, village, court and Vogtei of Waldmannshofen as a fief of the Burggrafschaft Nürnberg from Margrave Albrecht of Brandenburg, having purchased it from Reinhard Truchseß von Baldersheim.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            },
-            {
-              "person": "Reinhard Truchsess von Baldersheim"
-            },
-            {
-              "place": "waldmannshofen"
-            }
-          ]
+          "content": "received half of Schloss, village, court and Vogtei of Waldmannshofen as a fief of the Burggrafschaft Nürnberg from Margrave Albrecht of Brandenburg, having purchased it from Reinhard Truchseß von Baldersheim."
         }
       ]
     }

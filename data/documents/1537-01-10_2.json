@@ -15,25 +15,17 @@
           ]
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Philipp von Rosenberg"
+          "person": "Konrad of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         }
       ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "received Neubronn and Oberndorf as fiefs from Bishop Konrad of Würzburg after the death of his brother Philipp.",
-          "mention": [
-            {
-              "person": "Konrad of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received Neubronn and Oberndorf as fiefs from Bishop Konrad of Würzburg after the death of his brother Philipp."
         },
         {
           "person": "Konrad von Rosenberg",

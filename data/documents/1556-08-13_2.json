@@ -13,6 +13,9 @@
           "personTitle": [
             "Knight"
           ]
+        },
+        {
+          "place": "boxberg"
         }
       ],
       "facts": [
@@ -23,12 +26,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "acknowledged payment by Archbishop Michael of Salzburg in settlement of his claims against the Erzstift for withholding Schloss and town Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "acknowledged payment by Archbishop Michael of Salzburg in settlement of his claims against the Erzstift for withholding Schloss and town Boxberg."
         }
       ],
       "img": [

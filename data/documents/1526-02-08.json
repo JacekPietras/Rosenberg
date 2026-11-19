@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was named as an opponent in a dispute between Rothenburg and the Lochingers, about which the city wrote to Konrad Eberhard, Jörg Bermetter, and town clerk Thomas Zweifel.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "was named as an opponent in a dispute between Rothenburg and the Lochingers, about which the city wrote to Konrad Eberhard, Jörg Bermetter, and town clerk Thomas Zweifel."
         }
       ]
     }

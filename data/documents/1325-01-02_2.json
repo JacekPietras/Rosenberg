@@ -12,9 +12,6 @@
           "place": "cronberg"
         },
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Konrad Rüd"
         },
         {
@@ -28,12 +25,7 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "witnessed Ulrich von Bickenbach’s judgment in the dispute between Mainz and Landgrave Otto.",
-          "mention": [
-            {
-              "person": "Ulrich von Bickenbach"
-            }
-          ]
+          "content": "witnessed Ulrich von Bickenbach’s judgment in the dispute between Mainz and Landgrave Otto."
         }
       ]
     }

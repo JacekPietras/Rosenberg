@@ -15,9 +15,6 @@
           "person": "Friedrich Truchsess of Baldersheim"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Konrad von Weinsberg"
         },
         {
@@ -31,18 +28,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "confirmed that Konrad von Weinsberg and his wife Anna had sold him Reigelsberg Castle with Baldersheim, Burgerrode, and the hamlet of Buche subject to repurchase for 7,000 gulden.",
-          "mention": [
-            {
-              "place": "baldersheim"
-            },
-            {
-              "person": "Konrad von Weinsberg"
-            },
-            {
-              "place": "reichelsburg-aub"
-            }
-          ]
+          "content": "confirmed that Konrad von Weinsberg and his wife Anna had sold him Reigelsberg Castle with Baldersheim, Burgerrode, and the hamlet of Buche subject to repurchase for 7,000 gulden."
         }
       ]
     }

@@ -10,18 +10,6 @@
       "mention": [
         {
           "place": "adelsheim"
-        },
-        {
-          "person": "Michael von Rosenberg"
-        },
-        {
-          "person": "Stephan von Adelsheim"
-        },
-        {
-          "person": "Veit von Mosbach"
-        },
-        {
-          "person": "Zaisolph von Adelsheim"
         }
       ],
       "facts": [
@@ -52,15 +40,7 @@
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "was notified by Stefan von Adelsheim that Stefan, Eberhard, and Tristan von Adelsheim would seek a legal resolution of their feud before the Bamberg regional court if safe conduct were granted.",
-          "mention": [
-            {
-              "place": "adelsheim"
-            },
-            {
-              "person": "Stephan von Adelsheim"
-            }
-          ]
+          "content": "was notified by Stefan von Adelsheim that Stefan, Eberhard, and Tristan von Adelsheim would seek a legal resolution of their feud before the Bamberg regional court if safe conduct were granted."
         }
       ]
     }

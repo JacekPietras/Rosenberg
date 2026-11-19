@@ -9,7 +9,10 @@
       "english": "Albrecht, Bishop of Würzburg, promises with the consent of the foundation and chapter [of Neumünster] in Würzburg to Lady Elisabeth, widow of Gotfried von Hohenlohe (hohenloch), nephew of the bishop, to protect her and all her property until the end of her life, and to pay her specified dues for all revenues and uses in the town and castle of Weikersheim (wiggersheim); furthermore, that the aforementioned Elisabeth von Hohenlohe shall have the right to collect firewood in the forests of Weikersheim or Röttingen, should she reside with her household in Schäftersheim, Weikersheim, or Röttingen; whereby the aforementioned citizens shall render their service in Mergentheim (mergenthein). Guarantors are: Albrecht von Heßberg (Hesseburk), archipresbyter; Gotfried von Niedeck; Marquard von heideck (Heydeck), songmaster (sankmeyster); Hans von Rosenberg (vom Rosemberg); Ernst von Reistenhausen (Rystenhusen), canons of Würzburg; Erkinger von Seinsheim (Sauwenshein) called von Kottenheim (Kottenhein); Heinrich Pfol von Grünsfeld (Grunsvelt); Dietrich Gyr von Giebelstadt, knights; Konrad von Finsterlohr (Vinsterloch); Wiprecht Heubt, esquires.\n\nTerm: August 31, 1346 (on the Thursday before St. Aegidius's day)\n\nSealers: Albrecht, Bishop of Würzburg; Albrecht von Heßberg, archipresbyter; Gotfried von Niedeck; Marquard von heideck, songmaster; Hans von Rosenberg; Ernst von Reistenhausen; Erkinger von Seinsheim, called von Kottenheim; Heinrich Pfol von Grünsfeld; Dietrich Gyr von Giebelstadt, knight; Konrad von Finsterlohr; Wiprecht Heubt, esquire.",
       "mention": [
         {
-          "person": "Albrecht of Würzburg"
+          "person": "Albrecht of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         },
         {
           "person": "Elisabeth von Hohenlohe"
@@ -25,9 +28,6 @@
         },
         {
           "person": "Gotfried von Niedeck"
-        },
-        {
-          "person": "Hans von Rosenberg"
         },
         {
           "person": "Marquard von heideck"
@@ -46,21 +46,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "was a Würzburg canon and surety for Bishop Albrecht of Würzburg’s promises to Elisabeth von Hohenlohe.",
-          "mention": [
-            {
-              "person": "Albrecht of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            },
-            {
-              "person": "Elisabeth von Hohenlohe"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "was a Würzburg canon and surety for Bishop Albrecht of Würzburg’s promises to Elisabeth von Hohenlohe."
         }
       ]
     }

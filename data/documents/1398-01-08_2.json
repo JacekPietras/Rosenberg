@@ -28,18 +28,7 @@
         {
           "subject": "the royal subjects residing between Mosbach and Lauda",
           "type": "generic",
-          "content": "were pledged by the Empire to the von Rosenberg family, from whom King Wenceslaus permitted Count Palatine Ruprecht der Jüngere to redeem them.",
-          "mention": [
-            {
-              "person": "König Wenceslaus",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "were pledged by the Empire to the von Rosenberg family, from whom King Wenceslaus permitted Count Palatine Ruprecht der Jüngere to redeem them."
         }
       ]
     }

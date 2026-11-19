@@ -9,13 +9,13 @@
       "english": "Dispute over the归属 of the villages of the Schüpfer Grund and Dainbach to the Free and Cent Court of Königshofen (arising from the handover of two subjects arrested in Dainbach from Königshofen to the Electoral Palatinate Cellarer in Boxberg)\n\nContains/Includes Notations: Includes: Transfer (copy) of the villages of the Schüpfer Grund to Electoral Mainz by Albrecht von Rosenberg; Settlement (copy) between Electoral Mainz and the von Rosenberg family regarding Sachsenflur and Oberschüpf Castle; Protocol (copy) concerning the establishment of the Königshofen Cent",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "boxberg"
         },
         {
           "place": "oberschuepf"
+        },
+        {
+          "place": "oberschuepf-castle"
         },
         {
           "place": "rosenberg-town"
@@ -30,12 +30,7 @@
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
-          "content": "made a settlement with Kurmainz concerning Sachsenflur and Schloss Oberschüpf.",
-          "mention": [
-            {
-              "place": "oberschuepf-castle"
-            }
-          ]
+          "content": "made a settlement with Kurmainz concerning Sachsenflur and Schloss Oberschüpf."
         }
       ]
     }

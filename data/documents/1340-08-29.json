@@ -20,7 +20,10 @@
           "person": "Engelhard von Rosenberg"
         },
         {
-          "person": "Otto of Würzburg"
+          "person": "Otto of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         },
         {
           "place": "wallduern"
@@ -44,15 +47,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "served as surety for Bishop Otto of Würzburg regarding damages at Meiningen.",
-          "mention": [
-            {
-              "person": "Otto of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "served as surety for Bishop Otto of Würzburg regarding damages at Meiningen."
         },
         {
           "person": "engelhard_son_of_vogt_zu_Durn",
@@ -60,15 +55,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "served as surety for Bishop Otto of Würzburg regarding damages at Meiningen.",
-          "mention": [
-            {
-              "person": "Otto of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "served as surety for Bishop Otto of Würzburg regarding damages at Meiningen."
         }
       ]
     }

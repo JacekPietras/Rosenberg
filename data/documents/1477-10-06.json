@@ -28,27 +28,16 @@
           "personTitle": [
             "Bishop"
           ]
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "subject": "Schloss Schüpf",
           "type": "generic",
-          "content": "was to have its shares restored to its Ganerben by the princes of Mainz, the Palatinate and Würzburg if they renounced claims arising from its capture and destruction, under the judgment concerning Georg, Michael and Arnold von Rosenberg.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Michael von Rosenberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "was to have its shares restored to its Ganerben by the princes of Mainz, the Palatinate and Würzburg if they renounced claims arising from its capture and destruction, under the judgment concerning Georg, Michael and Arnold von Rosenberg."
         }
       ]
     }

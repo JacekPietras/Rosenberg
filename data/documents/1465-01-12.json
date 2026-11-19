@@ -10,31 +10,18 @@
       "mention": [
         {
           "place": "maienfels-castle"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "bought a share of Maienfels.",
-          "mention": [
-            {
-              "place": "maienfels-castle"
-            }
-          ]
+          "content": "bought a share of Maienfels."
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "swore to observe the inserted deed concerning Maienfels.",
-          "mention": [
-            {
-              "place": "maienfels-castle"
-            }
-          ]
+          "content": "swore to observe the inserted deed concerning Maienfels."
         }
       ],
       "img": [

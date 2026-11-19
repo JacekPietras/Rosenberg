@@ -12,10 +12,10 @@
           "person": "Albrecht of Hohenlohe"
         },
         {
-          "person": "Katharina of Hohenlohe"
+          "place": "hohenlohe"
         },
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Katharina of Hohenlohe"
         },
         {
           "person": "Konrad von Weinsberg"
@@ -37,15 +37,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "received five of the seven villages sold by the Counts of Hohenlohe to Konrad von Weinsberg in 1398.",
-          "mention": [
-            {
-              "place": "hohenlohe"
-            },
-            {
-              "person": "Konrad von Weinsberg"
-            }
-          ]
+          "content": "received five of the seven villages sold by the Counts of Hohenlohe to Konrad von Weinsberg in 1398."
         }
       ]
     }

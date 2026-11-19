@@ -33,15 +33,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "was appointed by King Ruprecht.",
-          "mention": [
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "was appointed by King Ruprecht."
         },
         {
           "person": "Arnold von Rosenberg",
@@ -51,15 +43,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "was the subject of King Ruprecht’s order directing Schweinfurt to obey him.",
-          "mention": [
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "was the subject of King Ruprecht’s order directing Schweinfurt to obey him."
         }
       ]
     },

@@ -13,24 +13,13 @@
           "personTitle": [
             "Burgrave"
           ]
-        },
-        {
-          "person": "Hans von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "issued a quittance to Burgrave Friedrich von Nuremberg for 150 gulden.",
-          "mention": [
-            {
-              "person": "Friedrich von Nuremberg",
-              "personTitle": [
-                "Burgrave"
-              ]
-            }
-          ]
+          "content": "issued a quittance to Burgrave Friedrich von Nuremberg for 150 gulden."
         }
       ]
     }

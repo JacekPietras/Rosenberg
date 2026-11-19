@@ -9,25 +9,20 @@
       "english": "The brothers Sigmünd and Haubt, Marshals of the Holy Roman Empire at Pappenheim, declare that, concerning the purchase Haubt made from the Preysingerin and all matters that have arisen between them to date, they submitted to Wirich von Treüchtlingen, Hans von Rosenberg, and Wygeloß Schenk zu Geyrn, respectable and steadfast lords, who reconciled them as follows: neither brother is to revive or contest their legal dispute, Haubt’s purchase from the Preysingerin, or any other claims or matters between them to date. Two copies were made. The parties and arbitrators sealed them.",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
+          "person": "Haubt Marschalk von Pappenheim"
         },
         {
           "place": "pappenheim"
+        },
+        {
+          "person": "Siegmund Marschalk von Pappenheim"
         }
       ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "served as one of the mediators who settled the legal disputes and claims between Sigmund and Haubt Marschalk von Pappenheim.",
-          "mention": [
-            {
-              "person": "Haubt Marschalk von Pappenheim"
-            },
-            {
-              "person": "Siegmund Marschalk von Pappenheim"
-            }
-          ]
+          "content": "served as one of the mediators who settled the legal disputes and claims between Sigmund and Haubt Marschalk von Pappenheim."
         }
       ]
     }

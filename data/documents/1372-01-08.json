@@ -9,12 +9,6 @@
       "english": "Fritz von Stetenberg and his son Konrad sold their farm at Werbach to Steyn von Riedern. Hans von Rosenberg, Ritter, Konrad der Ältere von Uissigheim, and Albrecht von Stetenberg stood surety; Fritz and Konrad and the three guarantors sealed the deed.",
       "mention": [
         {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Konrad von Uissigheim"
         },
         {
@@ -28,12 +22,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was surety and sealed the sale of a farm at Werbach by Fritz von Stetenberg and his son Konrad to Stein von Riedern.",
-          "mention": [
-            {
-              "person": "Steyn von Riedern"
-            }
-          ]
+          "content": "was surety and sealed the sale of a farm at Werbach by Fritz von Stetenberg and his son Konrad to Stein von Riedern."
         },
         {
           "person": "Konrad von Uissigheim",
@@ -42,12 +31,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "was surety and sealed the sale of a farm at Werbach by Fritz von Stetenberg and his son Konrad to Stein von Riedern.",
-          "mention": [
-            {
-              "person": "Steyn von Riedern"
-            }
-          ]
+          "content": "was surety and sealed the sale of a farm at Werbach by Fritz von Stetenberg and his son Konrad to Stein von Riedern."
         }
       ]
     }

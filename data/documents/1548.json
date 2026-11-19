@@ -12,9 +12,6 @@
           "place": "boedigheim-kreuzkirche"
         },
         {
-          "person": "Felicitas von Rosenberg"
-        },
-        {
           "person": "Hans Georg von Berlichingen"
         },
         {
@@ -34,18 +31,7 @@
         {
           "person": "Felicitas von Rosenberg",
           "type": "generic",
-          "content": "was involved in a dispute at Bödigheim over goods, revenues, rights and police matters against Stephan Rüdt and Hans Georg von Berlichingen.",
-          "mention": [
-            {
-              "place": "boedigheim-kreuzkirche"
-            },
-            {
-              "person": "Hans Georg von Berlichingen"
-            },
-            {
-              "person": "Stephan Rüd"
-            }
-          ]
+          "content": "was involved in a dispute at Bödigheim over goods, revenues, rights and police matters against Stephan Rüdt and Hans Georg von Berlichingen."
         }
       ]
     }

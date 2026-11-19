@@ -12,9 +12,6 @@
       "english": "Draft of an alliance by Albrecht, Margrave of Brandenburg, Kraft von Hohenlohe, Hans von Absberg, Georg von Rosenberg, Götz der Ältere und der Jüngere, Hans von Berlichingen, Simon der Ältere und der Jüngere, Wilhelm Eberhard and Wilhelm von Stetten, Burkhardt von Wolmershausen, Wilhelm and Hans called Gäumann of Crailsheim, Kraft von Enslingen, and Hans Wilhelm and Jörg von Vellberg against Horneck von Hornberg. Dated 1447.",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "person": "Hans von Absberg"
         },
         {
@@ -31,12 +28,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "joined the alliance against Horneck von Hornberg.",
-          "mention": [
-            {
-              "person": "Horneck von Hornberg"
-            }
-          ]
+          "content": "joined the alliance against Horneck von Hornberg."
         }
       ],
       "img": [
@@ -61,9 +53,6 @@
           "place": "berlichingen"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "person": "Hans von Absberg"
         },
         {
@@ -77,12 +66,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "joined the mutual aid pact against Horneck von Hornberg.",
-          "mention": [
-            {
-              "person": "Horneck von Hornberg"
-            }
-          ]
+          "content": "joined the mutual aid pact against Horneck von Hornberg."
         }
       ],
       "img": [

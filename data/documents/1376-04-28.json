@@ -9,9 +9,6 @@
       "english": "Lady Elisabeth von Rosenberg sells all her inheritance share after the death of her brother Count Leopold of Hals, regarding the lordship of Hals, to her uncles Ulrich and Johanns, Landgraves of Leuchtenberg.\n\nSeals: All 3 seals * in red wax are hanging: 1. Rose and bar shield. 2. The rose in a five-pas pattern (free). 3. Quartered shield, 1st and 4th palisades, 2nd and 3rd rose.",
       "mention": [
         {
-          "person": "Elisabeth von Rosenberg"
-        },
-        {
           "place": "leuchtenberg"
         }
       ],
@@ -46,12 +43,7 @@
         {
           "person": "Elisabeth von Rosenberg",
           "type": "generic",
-          "content": "sold her inherited share in the lordship of Hals to Ulrich and Johann, Landgrafen von Leuchtenberg.",
-          "mention": [
-            {
-              "place": "leuchtenberg"
-            }
-          ]
+          "content": "sold her inherited share in the lordship of Hals to Ulrich and Johann, Landgrafen von Leuchtenberg."
         }
       ]
     }

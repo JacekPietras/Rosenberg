@@ -16,6 +16,9 @@
         },
         {
           "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -26,21 +29,7 @@
             "Markgraf"
           ],
           "type": "generic",
-          "content": "intervened with Bishop Philipp of Bamberg to obtain the return of Boxberg and Schüpf to the von Rosenberg family from the three princes of Mainz, the Palatinate, and Würzburg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "oberschuepf"
-            },
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "intervened with Bishop Philipp of Bamberg to obtain the return of Boxberg and Schüpf to the von Rosenberg family from the three princes of Mainz, the Palatinate, and Würzburg."
         }
       ],
       "img": [

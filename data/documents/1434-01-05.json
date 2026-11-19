@@ -13,23 +13,6 @@
       ],
       "german": "Dieter von Angelloch d. J., Sohn des verstorbenen Eberhard, und Agnes von Rosenberg, Witwe des Peter von Angelloch, verkaufen an Dieter von Venningen d. Ä. und dessen Ehefrau Else alle ihre Zinse zu Reihen um 20 Pfund 10 Schilling Heller. Ausfertigung auf Pergament mit zwei Siegeln. Datiert 5. Januar 1434.",
       "english": "Diether von Gauangelloch der Jüngere, son of the late Eberhard von Gauangelloch, and Agnes von Rosenberg, widow of Peter von Gauangelloch, sell all their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth for 20 pounds and 10 shillings Heller. Original on parchment with two seals. Dated 5 January 1434.",
-      "mention": [
-        {
-          "person": "Agnes von Rosenberg"
-        },
-        {
-          "person": "Diether von Gauangelloch",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "person": "Eberhard von Gauangelloch"
-        },
-        {
-          "person": "Peter von Gauangelloch"
-        }
-      ],
       "facts": [
         {
           "person": "Peter von Gauangelloch",
@@ -59,15 +42,7 @@
         {
           "person": "Agnes von Rosenberg",
           "type": "generic",
-          "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Diether von Gauangelloch der Jüngere.",
-          "mention": [
-            {
-              "person": "Diether von Gauangelloch",
-              "personTitle": [
-                "der Jüngere"
-              ]
-            }
-          ]
+          "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Diether von Gauangelloch der Jüngere."
         },
         {
           "person": "Diether von Gauangelloch",
@@ -75,12 +50,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Agnes von Rosenberg.",
-          "mention": [
-            {
-              "person": "Agnes von Rosenberg"
-            }
-          ]
+          "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Agnes von Rosenberg."
         }
       ],
       "img": [

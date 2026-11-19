@@ -15,7 +15,13 @@
           "place": "bürgstadt"
         },
         {
+          "person": "Eberhard Rüd von Bödigheim"
+        },
+        {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Konrad von Seinsheim"
         },
         {
           "place": "seinsheim"
@@ -32,18 +38,7 @@
             "Vogt zu Wildenburg"
           ],
           "type": "generic",
-          "content": "with Erkenger von Seinsheim and Eberhard Rüdt von Bödigheim arranged a truce between Kuno von Falkenstein and Heinrich von Turewang and Konrad von Seinsheim.",
-          "mention": [
-            {
-              "person": "Eberhard Rüd von Bödigheim"
-            },
-            {
-              "person": "Konrad von Seinsheim"
-            },
-            {
-              "place": "seinsheim"
-            }
-          ]
+          "content": "with Erkenger von Seinsheim and Eberhard Rüdt von Bödigheim arranged a truce between Kuno von Falkenstein and Heinrich von Turewang and Konrad von Seinsheim."
         }
       ]
     }

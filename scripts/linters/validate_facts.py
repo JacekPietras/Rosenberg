@@ -345,7 +345,7 @@ class Validator:
                 allowed.add('personDeceased')
                 required.add('personTitle')
             elif kind == 'generic':
-                allowed |= {'content', 'personDeceased', 'subject', 'mention'}
+                allowed |= {'content', 'personDeceased', 'subject'}
                 required.discard('person')
                 if ('person' in fact) == ('subject' in fact):
                     self.report(location, 'generic facts require exactly one of person or subject')
@@ -360,7 +360,7 @@ class Validator:
                     else:
                         self.check_text_person_references(fact['content'], location + '/content')
             elif kind == 'death':
-                allowed |= {'diedOn', 'diedBefore', 'circumstances', 'mention'}
+                allowed |= {'diedOn', 'diedBefore', 'circumstances'}
                 death_fields = {'diedOn', 'diedBefore'} & set(fact)
                 if len(death_fields) != 1:
                     self.report(location, "death facts require exactly one of 'diedOn' or 'diedBefore'")

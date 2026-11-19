@@ -17,6 +17,12 @@
           "person": "Hans von Rosenberg"
         },
         {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
+        },
+        {
           "place": "nuremberg"
         },
         {
@@ -30,15 +36,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "received the small and great tithes in Lohr as a fief from King Ruprecht.",
-          "mention": [
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "received the small and great tithes in Lohr as a fief from King Ruprecht."
         }
       ]
     },
@@ -49,9 +47,9 @@
       "english": "Ruprecht, King of the Romans, enfeoffs Hans von Rosenberg, Ritter, with the great and small tithes in the village of Lor between Rothenburg an der Tauber and Insingen. Given at Bolzano on the Thursday after the day of St. Francis the holy confessor.",
       "mention": [
         {
-          "person": "Hans von Rosenberg",
+          "person": "König Ruprecht",
           "personTitle": [
-            "Ritter"
+            "King"
           ]
         },
         {
@@ -65,18 +63,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was enfeoffed by King Ruprecht with the great and small tithes in the village of Lor between Rothenburg an der Tauber and Insingen.",
-          "mention": [
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "was enfeoffed by King Ruprecht with the great and small tithes in the village of Lor between Rothenburg an der Tauber and Insingen."
         }
       ]
     }

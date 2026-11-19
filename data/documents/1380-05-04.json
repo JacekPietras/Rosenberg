@@ -9,6 +9,9 @@
       "english": "Jans der Muerer and his wife Agnes sell with the hand of the Bergmeister Jans der Vinczler of Chriczendorf 2 pounds of Burgrecht on 1/2 Joch of vineyard, which borders in one quarter on Lewpold Walchain's vineyard and from which one serves annually 5 d of Bergrecht to Mistress Josten's widow von Rosenberch, for 16 pounds to the Convent of Sewsenstain, and obligate themselves to serve the 2 pounds annually at St. George's Day. The 2 pounds came from Herr Raimaren, who bequeathed them to the monastery for the salvation of his soul. In the event of the pledging of the service by the issuers, double (specified with the zwischpild) shall be paid according to the service pledge law (versezzens diensts recht) in Austria. $$S.: Jans der Vinczler, Amtmann der Witwe Josts von Rosenberch, Petrein der Stenglein. given on St. Florian's Day.",
       "mention": [
         {
+          "person": "Jost von Rosenberg"
+        },
+        {
           "place": "rosenberg-town"
         }
       ],
@@ -21,12 +24,7 @@
         {
           "person": "Hans Vinczler",
           "type": "generic",
-          "content": "served as Amtmann of the widow of Jost von Rosenberg and sealed the sale of Burgrecht on a vineyard at Chriczendorf to the convent of Sewsenstain.",
-          "mention": [
-            {
-              "person": "Jost von Rosenberg"
-            }
-          ]
+          "content": "served as Amtmann of the widow of Jost von Rosenberg and sealed the sale of Burgrecht on a vineyard at Chriczendorf to the convent of Sewsenstain."
         }
       ]
     }

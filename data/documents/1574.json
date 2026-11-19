@@ -18,16 +18,7 @@
           "place": "aub"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Philipp Jakob von Rosenberg"
-        },
-        {
           "place": "seckendorff"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -50,18 +41,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "was permitted to secure a 2,000-Gulden Wittum for his wife on the quarter share of Aub held jointly with Philipp Jakob and Zaisolph von Rosenberg.",
-          "mention": [
-            {
-              "place": "aub"
-            },
-            {
-              "person": "Philipp Jakob von Rosenberg"
-            },
-            {
-              "person": "Zaisolph von Rosenberg"
-            }
-          ]
+          "content": "was permitted to secure a 2,000-Gulden Wittum for his wife on the quarter share of Aub held jointly with Philipp Jakob and Zaisolph von Rosenberg."
         }
       ]
     }

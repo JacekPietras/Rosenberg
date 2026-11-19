@@ -13,12 +13,6 @@
       "english": "I, Engelhard von Rosenberg, and I, Elisabeth von Bebenburg, the late wife of Eberhard von Rosenberg, resident at Dürn, publicly acknowledge in this letter before everyone, for ourselves and all our heirs, that we have sold, and by the force of this letter do sell, to the honourable spiritual lord Ulrich Wambolt, Komtur at Mergentheim of the Teutonic Order, and to the house there, our Eigenleute who were [?] our fief from God, namely Heinrich Mulner and all his children and his later descendants, and Anne his lawful wife and all her children, formerly resident at Uffingen, for eight Rhenish gulden, which we have received in full from him. We also declare them […] and promise […] the aforementioned property free, unencumbered and without fraud […]. For this we have had our own seal hung on this letter for ourselves and our heirs. Given after Christ's birth fourteen hundred in the eleventh year, on St. Thomas's day, the holy apostle.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Engelhard von Rosenberg"
-        },
-        {
           "place": "wallduern"
         }
       ],
@@ -42,12 +36,7 @@
         {
           "person": "Elisabeth von Bebenburg",
           "type": "generic",
-          "content": "sold their Eigenleute Heinrich Mulner, all his children and descendants, and his lawful wife Anne and all her children, formerly resident at Uffingen, to Ulrich Wambolt and the Teutonic Order house at Mergentheim, jointly with Engelhard von Rosenberg.",
-          "mention": [
-            {
-              "person": "Engelhard von Rosenberg"
-            }
-          ]
+          "content": "sold their Eigenleute Heinrich Mulner, all his children and descendants, and his lawful wife Anne and all her children, formerly resident at Uffingen, to Ulrich Wambolt and the Teutonic Order house at Mergentheim, jointly with Engelhard von Rosenberg."
         },
         {
           "person": "Engelhard von Rosenberg",

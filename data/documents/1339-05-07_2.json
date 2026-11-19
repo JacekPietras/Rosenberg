@@ -22,6 +22,9 @@
           "person": "Rudolf of Wertheim"
         },
         {
+          "person": "Rudolf von Wertheim"
+        },
+        {
           "place": "wallduern"
         }
       ],
@@ -33,18 +36,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "was appointed to arbitrate disputes between Archbishop Heinrich and Bishop Otto of Würzburg alongside Konrad Jemerer, with Count Rudolf von Wertheim as chairman if necessary.",
-          "mention": [
-            {
-              "person": "Otto of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            },
-            {
-              "person": "Rudolf von Wertheim"
-            }
-          ]
+          "content": "was appointed to arbitrate disputes between Archbishop Heinrich and Bishop Otto of Würzburg alongside Konrad Jemerer, with Count Rudolf von Wertheim as chairman if necessary."
         }
       ]
     }

@@ -24,7 +24,10 @@
           "place": "boxberg"
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
           "person": "Engelhard von Rosenberg"
@@ -32,7 +35,8 @@
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
-            "Edelknecht"
+            "Edelknecht",
+            "Ritter"
           ]
         },
         {
@@ -55,21 +59,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "purchased Boxberg Castle and town with Konrad von Rosenberg, Ritter, and Konrad and Arnold von Rosenberg, Edelknechte, from the Order of St. John.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Konrad von Rosenberg",
-              "personTitle": [
-                "Ritter"
-              ]
-            }
-          ]
+          "content": "purchased Boxberg Castle and town with Konrad von Rosenberg, Ritter, and Konrad and Arnold von Rosenberg, Edelknechte, from the Order of St. John."
         },
         {
           "person": "arnold_brother_of_vogt_zu_Lauda",
@@ -77,25 +67,7 @@
             "Edelknecht"
           ],
           "type": "generic",
-          "content": "purchased Boxberg Castle and town with Konrad and Eberhard von Rosenberg, Ritter, and Konrad von Rosenberg, Edelknecht, from the Order of St. John.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Eberhard von Rosenberg",
-              "personTitle": [
-                "Ritter"
-              ]
-            },
-            {
-              "person": "Konrad von Rosenberg",
-              "personTitle": [
-                "Edelknecht",
-                "Ritter"
-              ]
-            }
-          ]
+          "content": "purchased Boxberg Castle and town with Konrad and Eberhard von Rosenberg, Ritter, and Konrad von Rosenberg, Edelknecht, from the Order of St. John."
         },
         {
           "person": "vogt_zu_Lauda",
@@ -103,18 +75,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "undertook, together with the other purchasers, to discharge the rents owed by the Order of St. John to Würzburg Cathedral and Engelhard von Rosenberg from the Boxberg properties.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Engelhard von Rosenberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "undertook, together with the other purchasers, to discharge the rents owed by the Order of St. John to Würzburg Cathedral and Engelhard von Rosenberg from the Boxberg properties."
         }
       ],
       "img": [

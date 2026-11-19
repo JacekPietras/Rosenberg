@@ -9,16 +9,7 @@
       "english": "Fief letter from Archduke Maximilian of Austria for the von Rosenberg family\n\nMaximilian, Archduke of Austria, in his capacity as administrator of the Fulda monastery, enfeoffs Adam Hector, Johann Konrad and Hans Dietrich von Rosenberg with houses, fields and meadows in Berstadt as well as a share of ground rents in Langsdorf (Langendorff).",
       "mention": [
         {
-          "person": "Adam Hector von Rosenberg"
-        },
-        {
           "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
         },
         {
           "place": "rosenberg-town"
@@ -28,32 +19,17 @@
         {
           "person": "Adam Hector von Rosenberg",
           "type": "generic",
-          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda.",
-          "mention": [
-            {
-              "place": "fulda-cathedral"
-            }
-          ]
+          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda."
         },
         {
           "person": "Hans Konrad von Rosenberg",
           "type": "generic",
-          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda.",
-          "mention": [
-            {
-              "place": "fulda-cathedral"
-            }
-          ]
+          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda."
         },
         {
           "person": "Hans Dietrich von Rosenberg",
           "type": "generic",
-          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda.",
-          "mention": [
-            {
-              "place": "fulda-cathedral"
-            }
-          ]
+          "content": "received houses, fields and meadows in Berstadt and a share of ground rents in Langsdorf as a fief from Maximilian, administrator of Fulda."
         }
       ]
     }

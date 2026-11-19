@@ -18,9 +18,6 @@
           "person": "Engelhard von Berlichingen"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "person": "Hans Rüd"
         },
         {
@@ -28,44 +25,23 @@
         },
         {
           "person": "Kilian von Berlichingen"
-        },
-        {
-          "person": "Michael von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "had arranged a marriage with Hans Rüdt von Bödigheim for Hans’s daughter.",
-          "mention": [
-            {
-              "person": "Hans Rüd von Bödigheim"
-            }
-          ]
+          "content": "had arranged a marriage with Hans Rüdt von Bödigheim for Hans’s daughter."
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "was a party to a dispute with Kilian von Berlichingen concerning the proposed marriage, settled by Elector Philipp of the Palatinate.",
-          "mention": [
-            {
-              "person": "Kilian von Berlichingen"
-            }
-          ]
+          "content": "was a party to a dispute with Kilian von Berlichingen concerning the proposed marriage, settled by Elector Philipp of the Palatinate."
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was among the adherents involved in the dispute between Michael von Rosenberg and Kilian von Berlichingen.",
-          "mention": [
-            {
-              "person": "Kilian von Berlichingen"
-            },
-            {
-              "person": "Michael von Rosenberg"
-            }
-          ]
+          "content": "was among the adherents involved in the dispute between Michael von Rosenberg and Kilian von Berlichingen."
         }
       ],
       "img": [

@@ -20,9 +20,6 @@
           "person": "Hans von Rosenberg"
         },
         {
-          "person": "Lorenz von Rosenberg"
-        },
-        {
           "person": "Ludwig von Fleckenstein"
         }
       ],
@@ -33,22 +30,12 @@
             "Keller zu Neckarelz"
           ],
           "type": "generic",
-          "content": "entered into an agreement with Lorenz von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim.",
-          "mention": [
-            {
-              "person": "Lorenz von Rosenberg"
-            }
-          ]
+          "content": "entered into an agreement with Lorenz von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim."
         },
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "entered into an agreement with Hans von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim.",
-          "mention": [
-            {
-              "person": "Hans von Rosenberg"
-            }
-          ]
+          "content": "entered into an agreement with Hans von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim."
         }
       ],
       "img": [

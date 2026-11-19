@@ -11,9 +11,6 @@
           "place": "boxberg"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "schweigern"
         }
       ],
@@ -40,15 +37,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "received from Margraves Kasimir and Georg of Brandenburg a letter of protection for Boxberg, Schweigern, and the Seehof near Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "received from Margraves Kasimir and Georg of Brandenburg a letter of protection for Boxberg, Schweigern, and the Seehof near Boxberg."
         }
       ],
       "img": [

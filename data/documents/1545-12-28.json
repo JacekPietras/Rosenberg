@@ -24,9 +24,6 @@
           ]
         },
         {
-          "person": "Lorenz von Rosenberg"
-        },
-        {
           "person": "Melchior of Würzburg",
           "personTitle": [
             "Bishop"
@@ -43,18 +40,7 @@
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "received half of one quarter of tithes and other fiefs from Bishop Melchior of Würzburg, including tithes at Goßmannsdorf, Hofheim, Niederhohenried, Oberhohenried, Junkersdorf, Jesserndorf, Neuses, Gochsheim, Goboltzhausen, Poppenhausen, Eurheim and Wachenfeld.",
-          "mention": [
-            {
-              "place": "gochsheim-st-michael"
-            },
-            {
-              "person": "Melchior of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received half of one quarter of tithes and other fiefs from Bishop Melchior of Würzburg, including tithes at Goßmannsdorf, Hofheim, Niederhohenried, Oberhohenried, Junkersdorf, Jesserndorf, Neuses, Gochsheim, Goboltzhausen, Poppenhausen, Eurheim and Wachenfeld."
         }
       ]
     }

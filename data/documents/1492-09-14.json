@@ -9,9 +9,6 @@
       "english": "Pope Alexander VI. grants to Philipp von Rosenberg the provostship of St. German in Speyer, which became vacant through the resignation of Provost Otto of Bach.\n\nValidity: September 14, 1492",
       "mention": [
         {
-          "person": "Philipp von Rosenberg"
-        },
-        {
           "place": "speyer"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "received the provostship of St. German in Speyer from Pope Alexander VI.",
-          "mention": [
-            {
-              "place": "speyer"
-            }
-          ]
+          "content": "received the provostship of St. German in Speyer from Pope Alexander VI."
         }
       ],
       "img": [

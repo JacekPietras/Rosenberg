@@ -20,18 +20,16 @@
         },
         {
           "person": "Philipp von Weinsberg"
+        },
+        {
+          "place": "waldmannshofen"
         }
       ],
       "facts": [
         {
           "person": "Erasmus von Rosenberg",
           "type": "generic",
-          "content": "was permitted by a court judgment to drive his sheep at Baltersheim and in the district of Gülchsheim; he was barred from using sheepfolds or cutting wood in Gülchsheim but could drive sheep there from Waldmannshofen.",
-          "mention": [
-            {
-              "place": "waldmannshofen"
-            }
-          ]
+          "content": "was permitted by a court judgment to drive his sheep at Baltersheim and in the district of Gülchsheim; he was barred from using sheepfolds or cutting wood in Gülchsheim but could drive sheep there from Waldmannshofen."
         }
       ],
       "img": [

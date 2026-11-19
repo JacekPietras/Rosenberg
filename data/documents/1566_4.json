@@ -15,9 +15,6 @@
       "english": "Files of Landgrave Philipp: Correspondence with Elector August\n\nContains: 1566 January. The Elector excuses his absence from Landgrave Wilhelm's wedding. Disputes between Dukes Johann Friedrich and Johann Wilhelm of Saxony over the fortresses\nthe counselors of the inheritance allies are to mediate at a meeting in Naumburg\nFebruary. Hilmar v. Münchhausen reports to Eckbrecht v.d. Malsburg about preparations by Duke Erich of Brunswick for a campaign against the Bishop of Würzburg\nMay. Albrecht von Rosenberg sentenced to death for participation in the Grumbach affairs and insulting Elector August with defamatory pamphlets. March of the Emperor to Hungary. He orders Duke Johann Friedrich to enforce the ban on Wilhelm von Grumbach, Wilhelm vom Stein and Ernst v. Mandelsloh, if they are found in his territory\nJune. Duke Heinrich of Brunswick sends news about troop recruitment. Judicial statements about Grumbach's plots against the life of the Elector. Rosenberg in the Emperor's hands. Response of Duke Johann Friedrich to the Emperor and its counter-response by Grumbach. Stance of the Elector Palatine on the Eucharist question\nDiet at Erfurt. The Landgrave promises the Elector aid in case of an attack on Electoral Saxony. The Emperor issues the ban execution mandate against Grumbach and his supporters. Debt claim of Leipzig citizen Andreas Kufener against Hans Rothardt in Marburg. The Elector sends a list of suspicious persons with a request for arrest\nArrest warrant of the Landgrave against them. No. 1575",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "grumbach"
         },
         {
@@ -35,11 +32,6 @@
           "person": "Albrecht von Rosenberg",
           "type": "generic",
           "content": "was sentenced to death for participating in the Grumbach disputes and insulting Elector August of Saxony through defamatory writings.",
-          "mention": [
-            {
-              "place": "grumbach"
-            }
-          ],
           "date": "1566-05"
         },
         {

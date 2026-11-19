@@ -9,9 +9,6 @@
       "english": "Kunz von Rosenberg to Rothenburg: intercession for dependents at Ohrenbach.",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
           "place": "rothenburg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "wrote to Rothenburg interceding for Hintersassen at Ohrenbach.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "wrote to Rothenburg interceding for Hintersassen at Ohrenbach."
         }
       ]
     }

@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "essingen"
-        },
-        {
-          "person": "Hans Christoph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Hans Christoph von Rosenberg",
           "type": "generic",
-          "content": "had held the Blutgericht at Essingen before the Kämmerer von Worms genannt von Dalberg family acquired it from him.",
-          "mention": [
-            {
-              "place": "essingen"
-            }
-          ]
+          "content": "had held the Blutgericht at Essingen before the Kämmerer von Worms genannt von Dalberg family acquired it from him."
         }
       ]
     }

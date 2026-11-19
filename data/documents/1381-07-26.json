@@ -29,13 +29,19 @@
           "place": "eubigheim"
         },
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
           "place": "lauda"
         },
         {
           "person": "Ludwig Truchsess"
+        },
+        {
+          "place": "rosenberg-town"
         },
         {
           "place": "wurzburg"
@@ -69,21 +75,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "bought Boxberg Castle and town with Konrad von Rosenberg, Ritter, and Konrad and Arnold von Rosenberg, Edelknechte, from the Order of St. John.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Konrad von Rosenberg",
-              "personTitle": [
-                "Ritter"
-              ]
-            }
-          ]
+          "content": "bought Boxberg Castle and town with Konrad von Rosenberg, Ritter, and Konrad and Arnold von Rosenberg, Edelknechte, from the Order of St. John."
         },
         {
           "person": "vogt_zu_Lauda",
@@ -91,21 +83,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "undertook, together with the other Rosenberg purchasers, to pay the rents owed by the Order of St. John to Würzburg Cathedral and Engelhard von Rosenberg from the Boxberg properties.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Engelhard von Rosenberg"
-            },
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "undertook, together with the other Rosenberg purchasers, to pay the rents owed by the Order of St. John to Würzburg Cathedral and Engelhard von Rosenberg from the Boxberg properties."
         },
         {
           "person": "Dietrich Gyer",
@@ -113,12 +91,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "served as a surety for the four Rosenberg purchasers.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "served as a surety for the four Rosenberg purchasers."
         }
       ],
       "img": [

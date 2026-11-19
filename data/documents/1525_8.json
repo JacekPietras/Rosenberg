@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was the subject of his complaint to Rothenburg concerning damage caused by the city’s subjects.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "was the subject of his complaint to Rothenburg concerning damage caused by the city’s subjects."
         }
       ]
     }

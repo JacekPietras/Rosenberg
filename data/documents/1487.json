@@ -11,12 +11,6 @@
       "english": "On a day in Mergentheim, Götz von Adelsheim treats Konrad von Berlichingen and Eberhard von Schrozberg for buildings in Schrozberg Castle;\n\nseals Götz von Adelsheim, Georg von Rosenberg, Konrad von Berlichingen, Eberhard and Philipp von Schrozberg.",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Götz von Adelsheim"
-        },
-        {
           "person": "Konrad von Berlichingen"
         }
       ],
@@ -29,12 +23,7 @@
         {
           "person": "Götz von Adelsheim",
           "type": "generic",
-          "content": "settled a dispute with Konrad von Berlichingen and Eberhard von Schrozberg at a meeting in Mergentheim concerning construction at Schrozberg Castle.",
-          "mention": [
-            {
-              "person": "Konrad von Berlichingen"
-            }
-          ]
+          "content": "settled a dispute with Konrad von Berlichingen and Eberhard von Schrozberg at a meeting in Mergentheim concerning construction at Schrozberg Castle."
         }
       ],
       "img": [

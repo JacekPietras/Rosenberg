@@ -9,9 +9,6 @@
       "english": "January 30, 1533 (Thursday after the Conversion of Paul) Pursuant to the marriage agreement dated March 12, 1515 (Monday after Oculi), concluded between the late Hans Georg von Aschhausen and Barbara née von Rosenberg, now wife of Hans von Ehrenberg, and cited with its incipit and explicit, Barbara was to be issued, among other things, a settlement of 1,500 gold guilders each as marriage portion and dowry restitution, the morning gift and a widow's estate, as well as provision that upon Hans Georg's death half of his movable property would accrue to her. Since this never came to pass, on the above-mentioned date Hans von Ehrenberg, on behalf of his wife, demanded from Hans von Berlichingen and Lorenz von Rosenberg, guardians of Hans Götz and Wolf Dietrich, children of the late Hans Georg von Aschhausen, as well as from their relatives, the issuance of the settlement and the handing over of half the movable property. However, in consideration of the welfare of the children, their stepfather Hans von Ehrenberg and the guardians now conclude a arbitration agreement regulating the reduction of the settlement and the inheritance claims of the parties. — This agreement was guaranteed by Lord Zaisolph von Rosenberg, Lord Wilhelm von Schaumberg (Schawenbergk), Lord Konrad von Rosenberg, all three knights, Hans Georg von Thüngen, Christoph von Maßbach (Moßpach), and Philipp von Biberehren (Biberern), and approved on behalf of the children by the aforementioned Lord Konrad von Rosenberg, knight, for the guardians, and on behalf of Barbara von Rosenberg by her husband. — Each party receives a copy of the agreement. Seals: 1)–6) the arbitrators, 7)–8) the guardians, 9) Hans von Ehrenberg Copy parchment. — 9 seals, 1. detached, pressel attached, 2.–9. impressed. — Reverse. Note: According to the finding aid of 1825 p. 48a, received on March 21/22, 1867 from the [branch] Archive Mergentheim [in the Main State Archives Stuttgart]. Provenance: Aschhausen, von\n\nDate range: 1533\n\nExtent: 1 document",
       "mention": [
         {
-          "person": "Barbara von Rosenberg"
-        },
-        {
           "person": "Christoph von Maßbach"
         },
         {
@@ -25,9 +22,6 @@
           "personTitle": [
             "knight"
           ]
-        },
-        {
-          "person": "Lorenz von Rosenberg"
         },
         {
           "person": "Zaisolph von Rosenberg"
@@ -70,12 +64,7 @@
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "served as a guardian of the children of Hans Georg von Aschhausen in the inheritance dispute involving Barbara von Rosenberg.",
-          "mention": [
-            {
-              "person": "Barbara von Rosenberg"
-            }
-          ]
+          "content": "served as a guardian of the children of Hans Georg von Aschhausen in the inheritance dispute involving Barbara von Rosenberg."
         },
         {
           "person": "Zaisolph von Rosenberg",
@@ -83,12 +72,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "served as an arbitrator in the inheritance dispute between Barbara von Rosenberg and the children of her late husband Hans Georg von Aschhausen.",
-          "mention": [
-            {
-              "person": "Barbara von Rosenberg"
-            }
-          ]
+          "content": "served as an arbitrator in the inheritance dispute between Barbara von Rosenberg and the children of her late husband Hans Georg von Aschhausen."
         },
         {
           "person": "Konrad von Rosenberg",

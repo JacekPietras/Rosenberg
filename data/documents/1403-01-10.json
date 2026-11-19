@@ -28,9 +28,6 @@
           ]
         },
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
         }
       ],
@@ -57,21 +54,7 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "received King Ruprecht’s permission jointly with Konrad von Rosenberg to have a reeve, aldermen, and a court in their village of Hohenstatt near Rosenberg.",
-          "mention": [
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "received King Ruprecht’s permission jointly with Konrad von Rosenberg to have a reeve, aldermen, and a court in their village of Hohenstatt near Rosenberg."
         }
       ]
     }

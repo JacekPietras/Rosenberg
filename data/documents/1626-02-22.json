@@ -21,9 +21,6 @@
           "person": "Kunigunde Elisabeth von Dienheim"
         },
         {
-          "person": "Margaretha von Dienheim"
-        },
-        {
           "place": "rosenberg-town"
         },
         {
@@ -37,24 +34,7 @@
         {
           "person": "Margaretha von Dienheim",
           "type": "generic",
-          "content": "waived all claims to Unterschüpf Castle, which had been sold to the von Rosenberg brothers in 1610, jointly with Hans Philipp, Georg Friedrich Eberhard, and Kunigunde Elisabeth von Dienheim, also on behalf of their brother Albrecht.",
-          "mention": [
-            {
-              "person": "Georg Friedrich Eberhard von Dienheim"
-            },
-            {
-              "person": "Hans Philipp von Dienheim"
-            },
-            {
-              "person": "Kunigunde Elisabeth von Dienheim"
-            },
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "unterschuepf"
-            }
-          ]
+          "content": "waived all claims to Unterschüpf Castle, which had been sold to the von Rosenberg brothers in 1610, jointly with Hans Philipp, Georg Friedrich Eberhard, and Kunigunde Elisabeth von Dienheim, also on behalf of their brother Albrecht."
         }
       ],
       "img": [

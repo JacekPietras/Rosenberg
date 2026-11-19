@@ -9,12 +9,6 @@
       "english": "Receipt from Engelhard von Rosenberg and Eberhard von Rosenberg and Heinz Knebel of Pretzeheim regarding a stallion borrowed from and returned by Götz von Hedecheim to Konrad von Hartheim",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Engelhard von Rosenberg"
-        },
-        {
           "person": "Konrad von Hartheim"
         }
       ],
@@ -22,22 +16,12 @@
         {
           "person": "Engelhard von Rosenberg",
           "type": "generic",
-          "content": "issued a receipt concerning a stallion borrowed from Götz von Hedecheim by Konrad von Hartheim and returned to him.",
-          "mention": [
-            {
-              "person": "Konrad von Hartheim"
-            }
-          ]
+          "content": "issued a receipt concerning a stallion borrowed from Götz von Hedecheim by Konrad von Hartheim and returned to him."
         },
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "issued a receipt concerning a stallion borrowed from Götz von Hedecheim by Konrad von Hartheim and returned to him.",
-          "mention": [
-            {
-              "person": "Konrad von Hartheim"
-            }
-          ]
+          "content": "issued a receipt concerning a stallion borrowed from Götz von Hedecheim by Konrad von Hartheim and returned to him."
         }
       ]
     }

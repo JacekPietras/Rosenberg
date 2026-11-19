@@ -9,9 +9,6 @@
       "english": "Files of the Würzburg chancery, concerning correspondence with Elector Ludwig of the Palatinate regarding the scheduled meeting with Hans Thomas von Rosenberg.",
       "mention": [
         {
-          "person": "Hans Thomas von Rosenberg"
-        },
-        {
           "place": "wurzburg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
-          "content": "was the subject of a day set by Kurfürst Ludwig von der Pfalz, about which the Würzburg chancery corresponded.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "was the subject of a day set by Kurfürst Ludwig von der Pfalz, about which the Würzburg chancery corresponded."
         }
       ]
     }

@@ -11,10 +11,13 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Hans von Rosenberg"
+          "place": "jagstberg"
         }
       ],
       "facts": [
@@ -41,12 +44,7 @@
         {
           "person": "eberhard_jagstberg",
           "type": "generic",
-          "content": "borrowed money from his brother [arnold_boxberg].",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "borrowed money from his brother [arnold_boxberg]."
         },
         {
           "person": "Arnold von Rosenberg",
@@ -54,22 +52,12 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "acted as a surety for [eberhard_jagstberg].",
-          "mention": [
-            {
-              "place": "jagstberg"
-            }
-          ]
+          "content": "acted as a surety for [eberhard_jagstberg]."
         },
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "acted as a surety for [eberhard_jagstberg].",
-          "mention": [
-            {
-              "place": "jagstberg"
-            }
-          ]
+          "content": "acted as a surety for [eberhard_jagstberg]."
         }
       ],
       "img": [

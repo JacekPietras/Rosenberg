@@ -9,12 +9,6 @@
       "english": "Archbishop Peter allowed Arnold von Uissigheim, Ritter, to exchange his Mainz fiefdoms at Hildbrandzellen to the Bronnbach Monastery ord. Cist. for a Hufe in the district of the village of Uissigheim, which he took as a fief from Mainz.",
       "mention": [
         {
-          "person": "Arnold von Uissigheim",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "place": "bronnbach"
         },
         {
@@ -36,15 +30,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "exchanged his Hildbrandzellen fiefs with Bronnbach Abbey for a Hube in the district of Uissigheim, which he took as a fief from Mainz.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            },
-            {
-              "place": "uissigheim"
-            }
-          ]
+          "content": "exchanged his Hildbrandzellen fiefs with Bronnbach Abbey for a Hube in the district of Uissigheim, which he took as a fief from Mainz."
         },
         {
           "person": "Peter von Mainz",
@@ -52,12 +38,7 @@
             "Erzbischof von Mainz"
           ],
           "type": "generic",
-          "content": "approved Arnold von Uissigheim’s exchange of fiefs.",
-          "mention": [
-            {
-              "person": "Arnold von Uissigheim"
-            }
-          ]
+          "content": "approved Arnold von Uissigheim’s exchange of fiefs."
         }
       ]
     }

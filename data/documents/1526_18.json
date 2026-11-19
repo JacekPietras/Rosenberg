@@ -22,15 +22,7 @@
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "told Rothenburg that he had not assisted Adam von Thüngen.",
-          "mention": [
-            {
-              "person": "Adam von Thüngen"
-            },
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "told Rothenburg that he had not assisted Adam von Thüngen."
         }
       ]
     }

@@ -12,9 +12,6 @@
       "english": "Michael von Rosenberg sells for 200 florins his one-eighth share of the tithe at Hohenstadt and his farm at Rosenberg to Hans Glaz",
       "mention": [
         {
-          "person": "Michael von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
         }
       ],
@@ -22,12 +19,7 @@
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "sold Hans Glaz his eighth share in the tithe at Hohenstadt and his estate at Rosenberg for 200 florins.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "sold Hans Glaz his eighth share in the tithe at Hohenstadt and his estate at Rosenberg for 200 florins."
         }
       ]
     }

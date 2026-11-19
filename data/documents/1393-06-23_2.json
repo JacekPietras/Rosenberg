@@ -21,9 +21,6 @@
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Elisabeth von Erligheim"
-        },
-        {
           "place": "wolchingen"
         }
       ],
@@ -42,38 +39,17 @@
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was authorized by Ruprecht to endow a perpetual Mass at the women’s altar in Wölchingen.",
-          "mention": [
-            {
-              "place": "wolchingen"
-            }
-          ]
+          "content": "was authorized by Ruprecht to endow a perpetual Mass at the women’s altar in Wölchingen."
         },
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was authorized to fund the endowment with properties belonging to Boxberg Castle.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "was authorized to fund the endowment with properties belonging to Boxberg Castle."
         },
         {
           "person": "Ruprecht",
           "type": "generic",
-          "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the women’s altar in Wölchingen with properties belonging to Boxberg Castle.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Elisabeth von Erligheim"
-            },
-            {
-              "place": "wolchingen"
-            }
-          ]
+          "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the women’s altar in Wölchingen with properties belonging to Boxberg Castle."
         }
       ]
     }

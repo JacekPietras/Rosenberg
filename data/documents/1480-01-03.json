@@ -8,13 +8,7 @@
       "english": "Family contract for Rosenberg's possessions in Boxberg, concluded by Michael, Jörg, Arnold von Rosenberg and Friedrich von Rosenberg.",
       "mention": [
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
           "place": "boxberg"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
         },
         {
           "place": "rosenberg-town"
@@ -24,54 +18,22 @@
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
         },
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "jointly concluded a family agreement concerning the Rosenberg possessions at Boxberg."
         }
       ],
       "img": [

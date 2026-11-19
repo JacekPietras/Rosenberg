@@ -8,16 +8,10 @@
       "english": "Letter of proof by Eberhard von Rosenberg, Ritter, Vogt zu Wildenberg, concerning 60 marks of silver secured on the Bauhof (\"Buhoffe\") at Rosenberg for Elisabeth, daughter of Burkhard von Seckendorf and wife of Konrad von Rosenberg, the issuer's son, as her morning gift. \nSeals: the issuer and his three sons Enhelhart von Rosenberg, Hans von Rosenberg (as an attachment, see below), and Konrad von Rosenberg.\n\nWith an attachment added after 11 February 1350 from Hans von Rosenberg, canon in Würzburg. - Sealer: the issuer Hans von Rosenberg.",
       "mention": [
         {
-          "person": "Burkhard von Seckendorf"
-        },
-        {
           "person": "Eberhard von Rosenberg"
         },
         {
           "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
         },
         {
           "place": "rosenberg-town"
@@ -53,15 +47,7 @@
             "Vogt zu Wildenberg"
           ],
           "type": "generic",
-          "content": "issued a proof letter concerning the Bauhof at Rosenberg securing Elisabeth von Seckendorf’s Morgengabe.",
-          "mention": [
-            {
-              "person": "Elisabeth von Seckendorf"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "issued a proof letter concerning the Bauhof at Rosenberg securing Elisabeth von Seckendorf’s Morgengabe."
         },
         {
           "person": "Eberhard von Rosenberg",

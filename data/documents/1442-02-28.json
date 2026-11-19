@@ -14,21 +14,13 @@
         },
         {
           "place": "nuremberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "was addressed in a letter from Hincko Crussina von Schwamberg concerning his dispute with Nürnberg and the proposed arbitrators.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            }
-          ]
+          "content": "was addressed in a letter from Hincko Crussina von Schwamberg concerning his dispute with Nürnberg and the proposed arbitrators."
         }
       ],
       "img": [

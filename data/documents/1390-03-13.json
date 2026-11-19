@@ -14,13 +14,13 @@
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Elisabeth von Erligheim"
-        },
-        {
           "place": "eubigheim"
         },
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "lauda"
         },
         {
           "place": "roettingen"
@@ -42,18 +42,7 @@
             "zu Rosenberg"
           ],
           "type": "generic",
-          "content": "joined four other lords in ruling in the dispute between Elisabeth von Erligheim, her children and heirs with [vogt_zu_Lauda], and Schöntal Abbey.",
-          "mention": [
-            {
-              "person": "Elisabeth von Erligheim"
-            },
-            {
-              "place": "lauda"
-            },
-            {
-              "place": "schoental-monastery"
-            }
-          ]
+          "content": "joined four other lords in ruling in the dispute between Elisabeth von Erligheim, her children and heirs with [vogt_zu_Lauda], and Schöntal Abbey."
         },
         {
           "person": "vogt_zu_Lauda",
@@ -69,15 +58,7 @@
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "was a party, with her children and heirs with [vogt_zu_Lauda], to the dispute against Schöntal Abbey.",
-          "mention": [
-            {
-              "place": "lauda"
-            },
-            {
-              "place": "schoental-monastery"
-            }
-          ]
+          "content": "was a party, with her children and heirs with [vogt_zu_Lauda], to the dispute against Schöntal Abbey."
         }
       ],
       "img": [

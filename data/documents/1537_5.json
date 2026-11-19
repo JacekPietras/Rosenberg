@@ -9,9 +9,6 @@
       "english": "Records of the Viceroy, Chancellor, and Councillors at Kassel: Overview of messenger dispatches. Correspondence with Landgrave Philipp, letter from Secretary Heinrich Lersner\n\nContains: April 1537. Dispatch of messengers. Sending Ludwig v. Baumbach regarding collection of the pledge for the city of Stuttgart\nJuly. Payment of Württemberg's share of financial aid. Letter of admonition to the city of Soest. Debts of the v. Hanstein. Muster of subjects. Representation at the Day at Worms\nOctober. Dispatch of the Komtur at Marburg (Wolfgang Schutzbar called Milchling) to the Day of the Rhenish Alliance in Nuremberg between the former Swabian League and Hans Thomas von Rosenberg. Letter to the Viceroy of the Electorate of Mainz regarding hunting in the Roterstrauch and am Strang. Customs exemption for Queen Maria. Deposit of the Schmalkaldic League treaty and the 'Constitution for Self-Defense' with the mayor and council at Frankfurt. Seizure of cattle belonging to the Abbot of Bursfelde by the Hessian forester at Reinhardswald",
       "mention": [
         {
-          "person": "Hans Thomas von Rosenberg"
-        },
-        {
           "place": "nuremberg"
         }
       ],
@@ -20,11 +17,6 @@
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
           "content": "was a party in a matter with the former Swabian League at a Rheinische Einung meeting in Nuremberg.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            }
-          ],
           "date": "1537-10"
         }
       ],

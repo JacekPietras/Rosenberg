@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
@@ -19,12 +22,7 @@
             "Schultheiß zu Nürnberg"
           ],
           "type": "generic",
-          "content": "recorded with the Nürnberg aldermen Albrecht Bernolt’s sale of a meadow and an estate to Kungund.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            }
-          ]
+          "content": "recorded with the Nürnberg aldermen Albrecht Bernolt’s sale of a meadow and an estate to Kungund."
         }
       ]
     }

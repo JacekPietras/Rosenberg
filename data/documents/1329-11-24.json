@@ -11,25 +11,17 @@
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Kraft von Hohenlohe"
+          "place": "nagelsberg-castle"
         },
         {
-          "place": "nagelsberg-castle"
+          "place": "wallduern"
         }
       ],
       "facts": [
         {
           "person": "Kraft von Hohenlohe",
           "type": "generic",
-          "content": "concluded a Burgfrieden at Nagelsberg with [vogt_zu_Durn].",
-          "mention": [
-            {
-              "place": "nagelsberg-castle"
-            },
-            {
-              "place": "wallduern"
-            }
-          ]
+          "content": "concluded a Burgfrieden at Nagelsberg with [vogt_zu_Durn]."
         },
         {
           "person": "vogt_zu_Durn",
@@ -37,15 +29,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "concluded a Burgfrieden at Nagelsberg with Kraft von Hohenlohe.",
-          "mention": [
-            {
-              "person": "Kraft von Hohenlohe"
-            },
-            {
-              "place": "nagelsberg-castle"
-            }
-          ]
+          "content": "concluded a Burgfrieden at Nagelsberg with Kraft von Hohenlohe."
         }
       ]
     }

@@ -21,10 +21,10 @@
           ]
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Philipp von Rosenberg"
+          "person": "Konrad of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         },
         {
           "place": "rosenberg-town"
@@ -34,18 +34,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "received a quarter of specified tithes and other fiefs from Bishop Konrad of Würzburg after the death of his brother Philipp, including tithes at Großmannsdorf, Hofheim, Niederhohenried, Oberhohenried, Junkersdorf, Jesserndorf, Neuses, Gochsheim, Gobetzhausen, Poppenhausen, Eurheim and Wachenfeld.",
-          "mention": [
-            {
-              "place": "gochsheim-st-michael"
-            },
-            {
-              "person": "Konrad of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received a quarter of specified tithes and other fiefs from Bishop Konrad of Würzburg after the death of his brother Philipp, including tithes at Großmannsdorf, Hofheim, Niederhohenried, Oberhohenried, Junkersdorf, Jesserndorf, Neuses, Gochsheim, Gobetzhausen, Poppenhausen, Eurheim and Wachenfeld."
         },
         {
           "person": "Konrad von Rosenberg",

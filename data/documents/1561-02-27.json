@@ -33,6 +33,9 @@
           "place": "uiffingen"
         },
         {
+          "place": "unterschuepf"
+        },
+        {
           "place": "wurzburg"
         }
       ],
@@ -44,27 +47,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "bought rights, rents, property and people in Sachsenflur, Unterschüpf, Oberschüpf, Uiffingen, Schweigern, Lengenrieden, Kupprichhausen and Dainbach, including a share of the Oberschüpf Burgstall and the house at Sachsenflur, from Eberhard Rüdt von Collenberg.",
-          "mention": [
-            {
-              "person": "Eberhard Rüd von Collenberg"
-            },
-            {
-              "place": "kupprichhausen"
-            },
-            {
-              "place": "oberschuepf"
-            },
-            {
-              "place": "schweigern"
-            },
-            {
-              "place": "uiffingen"
-            },
-            {
-              "place": "unterschuepf"
-            }
-          ]
+          "content": "bought rights, rents, property and people in Sachsenflur, Unterschüpf, Oberschüpf, Uiffingen, Schweigern, Lengenrieden, Kupprichhausen and Dainbach, including a share of the Oberschüpf Burgstall and the house at Sachsenflur, from Eberhard Rüdt von Collenberg."
         }
       ],
       "img": [

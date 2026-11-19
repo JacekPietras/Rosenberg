@@ -15,9 +15,6 @@
           "person": "Franz von Sickingen"
         },
         {
-          "person": "Hans Melchior von Rosenberg"
-        },
-        {
           "person": "Hans Thomas von Absberg"
         },
         {
@@ -38,11 +35,6 @@
           "person": "Hans Melchior von Rosenberg",
           "type": "generic",
           "content": "was named in Augsburg and Nürnberg’s request for assistance from the Swabian League in March against him, Philipp von Rüdigheim and Lorenz Reuschlin.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            }
-          ],
           "date": "1523-03"
         }
       ],

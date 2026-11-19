@@ -19,6 +19,9 @@
           "person": "Eberhard von Rosenberg"
         },
         {
+          "person": "Herman von Lißberg"
+        },
+        {
           "place": "lissberg"
         },
         {
@@ -32,18 +35,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "with the other guardians of Mainz pledged castle and town Dürn and the town of Buchen to Herman von Lißberg and his wife Elisabeth.",
-          "mention": [
-            {
-              "place": "buchen"
-            },
-            {
-              "person": "Herman von Lißberg"
-            },
-            {
-              "place": "wallduern"
-            }
-          ]
+          "content": "with the other guardians of Mainz pledged castle and town Dürn and the town of Buchen to Herman von Lißberg and his wife Elisabeth."
         }
       ]
     }

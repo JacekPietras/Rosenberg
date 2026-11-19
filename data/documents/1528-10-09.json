@@ -12,9 +12,6 @@
         },
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Wolfgang von Bibra"
         }
       ],
       "facts": [
@@ -28,15 +25,7 @@
         {
           "person": "Wolfgang von Bibra",
           "type": "generic",
-          "content": "requested that Rothenburg’s mayor and council authenticate the charter of 7 April 1516 concerning disputes between the House of Mergentheim and the Rosenberg brothers.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "requested that Rothenburg’s mayor and council authenticate the charter of 7 April 1516 concerning disputes between the House of Mergentheim and the Rosenberg brothers."
         }
       ],
       "img": [

@@ -9,9 +9,6 @@
       "english": "Albrecht von Thüngen, Christoph Wolf Hund von Wenkheim, Hans Philipp Hund von Wenkheim, Philipp Ernst von Berlichingen zu Sennfeld, Albrecht von Rosenberg, Wilhelm Eitel Fuchs von Schweinhausen, Melchior von Thüngen, Lukas von der Thann, Hans Melchior Wolf von Karsbach on one side (for von Hardheim) and Emerich von Hedersdorff, imperial forester of the Spessart, Hans Christoph Voit von Rieneck, Emerich von Karben, Johann von Groredt (?), Hans Voit von Rieneck, Hans von Hedersdorff, Hans Reichardt von Fechenbach on the other side (for von Hedersdorff) certify as treaty witnesses the marriage contract between Wolf von Hartheim and Maria Elisabetha von Hedersdorff. Sealing parties: Georg Wolf von Hartheim and the 16 named persons\n\nDate range: January 1, 1593\n\nExtent: Original, parchment, 17 seals (2-9, 11, 13-17 detached)",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "person": "Albrecht von Thüngen"
         },
         {
@@ -36,6 +33,9 @@
           "place": "wenkheim"
         },
         {
+          "person": "Wolf von Hardheim"
+        },
+        {
           "person": "Wolf von Hartheim"
         }
       ],
@@ -43,12 +43,7 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "served as an arbitrator in the marriage contract between Wolf von Hardheim and Maria Elisabetha von Hedersdorff.",
-          "mention": [
-            {
-              "person": "Wolf von Hardheim"
-            }
-          ]
+          "content": "served as an arbitrator in the marriage contract between Wolf von Hardheim and Maria Elisabetha von Hedersdorff."
         }
       ],
       "img": [

@@ -15,12 +15,6 @@
           "place": "bronnbach"
         },
         {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Alte"
-          ]
-        },
-        {
           "place": "wolchingen"
         }
       ],
@@ -31,12 +25,7 @@
             "der Alte"
           ],
           "type": "generic",
-          "content": "had sold the Wagenbuch tithe to Bronnbach Monastery jointly with his wife Anna.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            }
-          ]
+          "content": "had sold the Wagenbuch tithe to Bronnbach Monastery jointly with his wife Anna."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -65,32 +54,17 @@
             "der Alte"
           ],
           "type": "generic",
-          "content": "promised, jointly with his wife Anna, to free the Wagenbuch tithe from any feudal obligation or otherwise compensate Bronnbach Monastery.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            }
-          ]
+          "content": "promised, jointly with his wife Anna, to free the Wagenbuch tithe from any feudal obligation or otherwise compensate Bronnbach Monastery."
         },
         {
           "person": "Knebel Stetenberg von Husen",
           "type": "generic",
-          "content": "served as surety for Eberhard von Rosenberg and Anna.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg"
-            }
-          ]
+          "content": "served as surety for Eberhard von Rosenberg and Anna."
         },
         {
           "person": "Friedrich Stetenberg",
           "type": "generic",
-          "content": "served as surety for Eberhard von Rosenberg and Anna.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg"
-            }
-          ]
+          "content": "served as surety for Eberhard von Rosenberg and Anna."
         },
         {
           "person": "Peter Stetenberg",
@@ -100,12 +74,7 @@
         {
           "person": "Peter Stetenberg",
           "type": "generic",
-          "content": "served as surety for Eberhard von Rosenberg and Anna.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg"
-            }
-          ]
+          "content": "served as surety for Eberhard von Rosenberg and Anna."
         }
       ],
       "img": [

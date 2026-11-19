@@ -9,9 +9,6 @@
       "english": "Concerning the feud carried out by Georg Arnold von Rosenberg and Friedrich von Rosenberg against Bishop Rudolf of Würzburg.",
       "mention": [
         {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
           "person": "Georg Arnold von Rosenberg"
         },
         {
@@ -25,15 +22,7 @@
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "conducted a feud against Bishop Rudolf of Würzburg with Georg Arnold.",
-          "mention": [
-            {
-              "person": "Rudolf of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "conducted a feud against Bishop Rudolf of Würzburg with Georg Arnold."
         }
       ]
     }

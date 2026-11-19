@@ -20,9 +20,6 @@
           "person": "Eberhard von Grumbach"
         },
         {
-          "person": "Elisabeth von Erligheim"
-        },
-        {
           "place": "erligheim"
         },
         {
@@ -61,15 +58,7 @@
         {
           "person": "Elisabeth von Erligheim",
           "type": "generic",
-          "content": "could require the guarantors to undertake Einlager at Wertheim or Bischofsheim if payment was delayed.",
-          "mention": [
-            {
-              "place": "bischofsheim"
-            },
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ]
+          "content": "could require the guarantors to undertake Einlager at Wertheim or Bischofsheim if payment was delayed."
         }
       ]
     }

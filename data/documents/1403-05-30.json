@@ -8,12 +8,6 @@
       "english": "Albrecht Göler von Ravensburg, Gerhard von Angelbach, and Rabe von Helmstadt for his daughter-in-law Wiprecht von Helmstadt on the one hand, and Ulrich Satzkern, Werner Rost, and Berthold von Massenbach for Hans Sturmfeder and Eberhard von Rosenberg, Ritter on the other, render the following verdicts as arbitrators: 1) The inheritance and debts of Eberhard Hofwart and his wife are to be divided between the parties, 2) The parties must settle their dispute regarding the fiefdoms before the competent fiefdom lords, 3) The dispute must be settled before the Würzburg Regional Court.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "place": "helmstadt"
         },
         {
@@ -54,12 +48,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was involved in a dispute before the Würzburg regional court that the arbitrators directed the parties to pursue there.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "was involved in a dispute before the Würzburg regional court that the arbitrators directed the parties to pursue there."
         }
       ]
     }

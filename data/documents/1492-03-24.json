@@ -9,10 +9,7 @@
       "english": "Johann von Bellersheim, son of the deceased Henne, declares that on the basis of the marriage contract concluded by the brothers Arnold von Rosenberg and Friedrich von Rosenberg as well as Wernher von Wallenstein with Ottilia, daughter of the Imperial Constable Philipp von Seldeneck, his wife, he has pledged to her a counter-payment of 700 gulden and a morning gift of 200 gulden; these sums together with the marriage portion of 700 gulden are to be secured on his half-farm at Wohnbach, his farm at Bellersheim, and his share in the court of Hattenrod.\n\nSealers: Issuer, Georg Hund, and Arnold von Rosenberg",
       "mention": [
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
+          "person": "Ottilia von Seldeneck"
         },
         {
           "person": "Philipp von Seldeneck"
@@ -30,44 +27,17 @@
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "with Friedrich von Rosenberg and Werner von Wallenstein concluded the marriage contract between Johann von Bellersheim and Ottilia von Seldeneck.",
-          "mention": [
-            {
-              "person": "Friedrich von Rosenberg"
-            },
-            {
-              "person": "Ottilia von Seldeneck"
-            },
-            {
-              "person": "Wernher von Wallenstein"
-            }
-          ]
+          "content": "with Friedrich von Rosenberg and Werner von Wallenstein concluded the marriage contract between Johann von Bellersheim and Ottilia von Seldeneck."
         },
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "with Arnold von Rosenberg and Werner von Wallenstein concluded the marriage contract between Johann von Bellersheim and Ottilia von Seldeneck.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "person": "Ottilia von Seldeneck"
-            },
-            {
-              "person": "Wernher von Wallenstein"
-            }
-          ]
+          "content": "with Arnold von Rosenberg and Werner von Wallenstein concluded the marriage contract between Johann von Bellersheim and Ottilia von Seldeneck."
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "sealed Johann von Bellersheim’s settlement of marriage property for Ottilia von Seldeneck.",
-          "mention": [
-            {
-              "person": "Ottilia von Seldeneck"
-            }
-          ]
+          "content": "sealed Johann von Bellersheim’s settlement of marriage property for Ottilia von Seldeneck."
         }
       ]
     }

@@ -12,12 +12,6 @@
           "place": "boxberg"
         },
         {
-          "person": "Hans von Adelsheim"
-        },
-        {
-          "person": "Michael von Rosenberg"
-        },
-        {
           "place": "schweigern"
         }
       ],
@@ -31,35 +25,17 @@
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "pledged wine from his half of the wine tithe at Schweigern to his Schwager Hans von Adelsheim.",
-          "mention": [
-            {
-              "person": "Hans von Adelsheim"
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "pledged wine from his half of the wine tithe at Schweigern to his Schwager Hans von Adelsheim."
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "promised Elector Philipp of the Palatinate to redeem the pledged wine tithe at Schweigern within six years.",
-          "mention": [
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "promised Elector Philipp of the Palatinate to redeem the pledged wine tithe at Schweigern within six years."
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "sealed his pledge concerning the wine tithe at Schweigern.",
-          "mention": [
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "sealed his pledge concerning the wine tithe at Schweigern."
         }
       ],
       "img": [

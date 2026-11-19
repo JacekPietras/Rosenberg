@@ -10,21 +10,13 @@
       "mention": [
         {
           "person": "Georg Truchsess"
-        },
-        {
-          "person": "Hansolf von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Hansolf von Rosenberg",
           "type": "generic",
-          "content": "had a Knecht whose assignment to Jörg Truchseß was the subject of a command by Markgraf Kasimir to the Ansbach councillors.",
-          "mention": [
-            {
-              "person": "Georg Truchsess"
-            }
-          ]
+          "content": "had a Knecht whose assignment to Jörg Truchseß was the subject of a command by Markgraf Kasimir to the Ansbach councillors."
         }
       ]
     }

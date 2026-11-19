@@ -12,9 +12,6 @@
           "person": "Anna von Fleckenstein"
         },
         {
-          "person": "Balthasar von Rosenberg"
-        },
-        {
           "person": "Hans von Helmstadt"
         },
         {
@@ -31,24 +28,7 @@
         {
           "person": "Balthasar von Rosenberg",
           "type": "generic",
-          "content": "received Gerolsheim near Lambsheim as a Mannlehen from Erasmus von Straßburg, Landgraf im Elsaß, also on behalf of Philipp and Jakob von Fleckenstein, Anna von Fleckenstein, and Johann and Philipp von Helmstadt.",
-          "mention": [
-            {
-              "person": "Anna von Fleckenstein"
-            },
-            {
-              "person": "Hans von Helmstadt"
-            },
-            {
-              "person": "Jakob von Fleckenstein"
-            },
-            {
-              "person": "Philipp von Fleckenstein"
-            },
-            {
-              "person": "Philipp von Helmstadt"
-            }
-          ]
+          "content": "received Gerolsheim near Lambsheim as a Mannlehen from Erasmus von Straßburg, Landgraf im Elsaß, also on behalf of Philipp and Jakob von Fleckenstein, Anna von Fleckenstein, and Johann and Philipp von Helmstadt."
         }
       ]
     }

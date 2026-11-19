@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "demanded compensation from Rothenburg’s subjects for damage he suffered during the Peasants’ War.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "demanded compensation from Rothenburg’s subjects for damage he suffered during the Peasants’ War."
         }
       ]
     }

@@ -15,9 +15,6 @@
           "person": "Albrecht von Hohenlohe"
         },
         {
-          "person": "Anselm von Rosenberg"
-        },
-        {
           "person": "Bartholomäus von Hutten"
         },
         {
@@ -49,12 +46,7 @@
         {
           "person": "Anselm von Rosenberg",
           "type": "generic",
-          "content": "was instructed in Albrecht von Hohenlohe’s letter to come to Kitzingen with the other named recipients.",
-          "mention": [
-            {
-              "person": "Albrecht von Hohenlohe"
-            }
-          ]
+          "content": "was instructed in Albrecht von Hohenlohe’s letter to come to Kitzingen with the other named recipients."
         }
       ],
       "img": [

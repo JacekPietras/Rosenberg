@@ -18,10 +18,10 @@
           "place": "bretzingen"
         },
         {
-          "person": "Georg von Hartheim"
+          "person": "Georg von Hardheim"
         },
         {
-          "person": "Ulrich von Rosenberg"
+          "person": "Georg von Hartheim"
         }
       ],
       "facts": [
@@ -33,18 +33,7 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "sold his share of Bretzingen to Georg von Hardheim with the right of repurchase; the 1,000 guilders were to be deducted from the repurchase sum owed to Anselm von Rosenberg.",
-          "mention": [
-            {
-              "person": "Anselm von Rosenberg"
-            },
-            {
-              "place": "bretzingen"
-            },
-            {
-              "person": "Georg von Hardheim"
-            }
-          ]
+          "content": "sold his share of Bretzingen to Georg von Hardheim with the right of repurchase; the 1,000 guilders were to be deducted from the repurchase sum owed to Anselm von Rosenberg."
         }
       ],
       "img": [

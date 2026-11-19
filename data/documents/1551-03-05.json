@@ -9,9 +9,6 @@
       "mention": [
         {
           "place": "boxberg"
-        },
-        {
-          "person": "Michael von Rosenberg"
         }
       ],
       "facts": [
@@ -25,12 +22,7 @@
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "made an Abschied with Elector Friedrich II of the Palatinate concerning Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "made an Abschied with Elector Friedrich II of the Palatinate concerning Boxberg."
         }
       ],
       "img": [

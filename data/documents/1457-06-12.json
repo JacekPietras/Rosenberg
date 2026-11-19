@@ -15,9 +15,6 @@
           "person": "Philipp of Katzenelnbogen"
         },
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
           "place": "wallenstein"
         }
       ],
@@ -25,12 +22,7 @@
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "helped Count Philipp of Katzenelnbogen mediate a settlement between Count Diether of Isenburg-Büdingen and the opposing party in a dispute over the pledge of Friedberg.",
-          "mention": [
-            {
-              "person": "Philipp of Katzenelnbogen"
-            }
-          ]
+          "content": "helped Count Philipp of Katzenelnbogen mediate a settlement between Count Diether of Isenburg-Büdingen and the opposing party in a dispute over the pledge of Friedberg."
         }
       ]
     }

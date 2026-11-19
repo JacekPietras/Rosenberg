@@ -15,9 +15,6 @@
           "person": "Friedrich von Fleckenstein"
         },
         {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
           "place": "heidelberg"
         },
         {
@@ -40,12 +37,7 @@
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "served for four years as Amtmann during which Heinrich von Fleckenstein received no revenues.",
-          "mention": [
-            {
-              "person": "Heinrich von Fleckenstein"
-            }
-          ]
+          "content": "served for four years as Amtmann during which Heinrich von Fleckenstein received no revenues."
         }
       ]
     }

@@ -174,7 +174,7 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
             or not re.fullmatch(r'data/(books|documents|notes|images)/[^\0]+\.json', path)
             or '..' in path.split('/') or not re.fullmatch(r'sha256:[a-f0-9]{64}', ref.get('fingerprint', ''))
             or not (re.search(r'/(facts|guesses)/[0-9]+$', pointer)
-                    or path.startswith('data/documents/') and re.search(r'^/entries/[0-9]+/english$', pointer))
+                    or re.search(r'^/entries/[0-9]+/mention$', pointer))
             or view == 'facts' and '/guesses/' in pointer):
             raise ValueError('invalid reconstructed source reference')
         if root is None:
@@ -216,11 +216,7 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
                     if not isinstance(reference, str) or not reference:
                         raise ValueError('invalid reconstructed context participant')
                     if fact is not None:
-                        if isinstance(fact, str):
-                            holder = resolve_pointer(cache[mention['source']['path']], mention['source']['pointer'].rsplit('/', 1)[0])
-                        else:
-                            holder = fact
-                        valid = reference not in registry and reference in mention_terms(holder.get('mention'), 'mention')[0]
+                        valid = reference not in registry and reference in mention_terms(fact, 'mention')[0]
                         if not valid:
                             raise ValueError(f"invalid reconstructed context participant {reference!r} at "
                                              f"{mention['source']['path']}#{mention['source']['pointer']}")

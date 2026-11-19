@@ -11,9 +11,6 @@
           "place": "bronnbach"
         },
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "place": "sindolsheim-church"
         }
       ],
@@ -21,15 +18,7 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "sold two farms at Sindolsheim to Bronnbach Abbey.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            },
-            {
-              "place": "sindolsheim-church"
-            }
-          ]
+          "content": "sold two farms at Sindolsheim to Bronnbach Abbey."
         }
       ]
     }

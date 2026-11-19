@@ -11,9 +11,6 @@
       "english": "Lehenrevers Eberhard von Rosenberg issued to H. Graf Hans over the male fief the half part of the tithes in Hohenstadt small and large, which until now Marquard von Hohenstadt had borne as a fief from the lordship of Wertheim.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "place": "wertheim-stiftskirche"
         }
       ],
@@ -26,12 +23,7 @@
         {
           "person": "Marquard von Hohenstadt",
           "type": "generic",
-          "content": "had previously held the tithes at Hohenstadt as a fief from the lordship of Wertheim.",
-          "mention": [
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ]
+          "content": "had previously held the tithes at Hohenstadt as a fief from the lordship of Wertheim."
         }
       ],
       "img": [

@@ -14,19 +14,10 @@
           "person": "Eberhard Schenk"
         },
         {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
+          "person": "Eberhard Schenk von Erbach"
         },
         {
           "person": "Konrad von Bickenbach"
-        },
-        {
-          "person": "Senant von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ]
         },
         {
           "person": "Ulrich von Bickenbach"
@@ -39,15 +30,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "served as a mediator between Konrad von Bickenbach and Eberhard Schenk von Erbach.",
-          "mention": [
-            {
-              "person": "Eberhard Schenk von Erbach"
-            },
-            {
-              "person": "Konrad von Bickenbach"
-            }
-          ]
+          "content": "served as a mediator between Konrad von Bickenbach and Eberhard Schenk von Erbach."
         },
         {
           "person": "Senant von Rosenberg",
@@ -55,15 +38,7 @@
             "Edelknecht"
           ],
           "type": "generic",
-          "content": "served as a mediator between Konrad von Bickenbach and Eberhard Schenk von Erbach.",
-          "mention": [
-            {
-              "person": "Eberhard Schenk von Erbach"
-            },
-            {
-              "person": "Konrad von Bickenbach"
-            }
-          ]
+          "content": "served as a mediator between Konrad von Bickenbach and Eberhard Schenk von Erbach."
         },
         {
           "person": "Engelhard von Rosenberg",

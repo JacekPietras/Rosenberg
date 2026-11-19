@@ -9,9 +9,6 @@
       "english": "Balthasar Kettel sells to Arnold von Rosenberg his share of the village of Buch with the motte (Burgstall) and a quarter of the court there for 340 gulden.\n\nPeriod: November 14, 1491 (1491 Monday after Martin's Day)",
       "mention": [
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
           "place": "buch"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "bought Balthasar Kettel’s share of the village Buch, its Burgstall and a quarter of the court there.",
-          "mention": [
-            {
-              "place": "buch"
-            }
-          ]
+          "content": "bought Balthasar Kettel’s share of the village Buch, its Burgstall and a quarter of the court there."
         }
       ],
       "img": [

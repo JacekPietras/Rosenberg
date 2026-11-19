@@ -12,7 +12,13 @@
           "person": "Eberh(ard) von Rosenberg"
         },
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Götz von Hohenlohe"
+        },
+        {
+          "person": "Hans von Riedern"
         },
         {
           "person": "Heinrich von Rieneck"
@@ -50,15 +56,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "rode to Würzburg with Hans von Riedern on Baldewin of Trier’s orders and reported to him on the disputed episcopal election.",
-          "mention": [
-            {
-              "person": "Hans von Riedern"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "rode to Würzburg with Hans von Riedern on Baldewin of Trier’s orders and reported to him on the disputed episcopal election."
         },
         {
           "person": "Hans von Riedern",
@@ -66,15 +64,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "rode to Würzburg with Eberhard von Rosenberg on Baldewin of Trier’s orders and reported to him on the disputed episcopal election.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "rode to Würzburg with Eberhard von Rosenberg on Baldewin of Trier’s orders and reported to him on the disputed episcopal election."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -83,12 +73,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "took Lauda.",
-          "mention": [
-            {
-              "place": "lauda"
-            }
-          ]
+          "content": "took Lauda."
         }
       ]
     }

@@ -15,12 +15,6 @@
         },
         {
           "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Leopold von Seldeneck"
-        },
-        {
-          "person": "Reinhard von Uissigheim"
         }
       ],
       "facts": [
@@ -30,22 +24,12 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "built a structure at Bartenstein as an entrance to the castle chapel.",
-          "mention": [
-            {
-              "place": "bartenstein"
-            }
-          ]
+          "content": "built a structure at Bartenstein as an entrance to the castle chapel."
         },
         {
           "person": "Leopold von Seldeneck",
           "type": "generic",
-          "content": "resided at Bartenstein.",
-          "mention": [
-            {
-              "place": "bartenstein"
-            }
-          ]
+          "content": "resided at Bartenstein."
         },
         {
           "person": "Kunz von Rosenberg",

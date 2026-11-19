@@ -11,12 +11,6 @@
           "person": "Albrecht von Erligheim"
         },
         {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "place": "heidelberg"
         }
       ],
@@ -35,12 +29,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "owned a house in Heidelberg.",
-          "mention": [
-            {
-              "place": "heidelberg"
-            }
-          ]
+          "content": "owned a house in Heidelberg."
         },
         {
           "person": "Hans von Rosenberg",
@@ -48,15 +37,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "had a house in Heidelberg next to Albrecht von Erligheim’s house.",
-          "mention": [
-            {
-              "person": "Albrecht von Erligheim"
-            },
-            {
-              "place": "heidelberg"
-            }
-          ]
+          "content": "had a house in Heidelberg next to Albrecht von Erligheim’s house."
         }
       ]
     }

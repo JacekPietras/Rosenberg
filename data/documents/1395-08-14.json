@@ -21,10 +21,10 @@
           "person": "Eberhard von Rosenberg"
         },
         {
-          "person": "Hans Mönch von Rosenberg"
+          "person": "Hans von Hirschhorn"
         },
         {
-          "person": "Hans von Hirschhorn"
+          "person": "Kunz Mönch"
         },
         {
           "person": "Kunz Mönch von Rosenberg"
@@ -34,27 +34,7 @@
         {
           "person": "Hans Mönch von Rosenberg",
           "type": "generic",
-          "content": "pledged to Eberhard von Neipperg, Hans and Eberhard von Hirschhorn, and Kunz Mönch, Vogt zu Steinsberg, a quarter of the third of Schadeck Castle held by his father Kunz Mönch von Rosenberg and a quarter of the third previously pledged by Eberhard von Rosenberg to his father.",
-          "mention": [
-            {
-              "person": "Eberhard von Hirschhorn"
-            },
-            {
-              "person": "Eberhard von Neipperg"
-            },
-            {
-              "person": "Eberhard von Rosenberg"
-            },
-            {
-              "person": "Hans von Hirschhorn"
-            },
-            {
-              "person": "Kunz Mönch"
-            },
-            {
-              "person": "Kunz Mönch von Rosenberg"
-            }
-          ]
+          "content": "pledged to Eberhard von Neipperg, Hans and Eberhard von Hirschhorn, and Kunz Mönch, Vogt zu Steinsberg, a quarter of the third of Schadeck Castle held by his father Kunz Mönch von Rosenberg and a quarter of the third previously pledged by Eberhard von Rosenberg to his father."
         }
       ]
     }

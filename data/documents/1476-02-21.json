@@ -11,6 +11,12 @@
           "place": "boxberg"
         },
         {
+          "person": "Rudolf of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
+        },
+        {
           "person": "Rudolf von Würzburg",
           "personTitle": [
             "Bishop"
@@ -24,12 +30,7 @@
             "Erzbischof von Mainz"
           ],
           "type": "generic",
-          "content": "promised to uphold the castle peace at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "promised to uphold the castle peace at Boxberg."
         },
         {
           "person": "Friedrich von der Pfalz",
@@ -37,18 +38,7 @@
             "Pfalzgraf"
           ],
           "type": "generic",
-          "content": "concluded the castle peace at Boxberg jointly with Archbishop Adolf of Mainz and Bishop Rudolf of Würzburg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Rudolf of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "concluded the castle peace at Boxberg jointly with Archbishop Adolf of Mainz and Bishop Rudolf of Würzburg."
         }
       ],
       "img": [

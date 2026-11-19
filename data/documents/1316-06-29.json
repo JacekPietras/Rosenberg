@@ -14,9 +14,6 @@
           "person": "Konrad von Helmstadt"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Konrad von Weinsberg"
         },
         {
@@ -27,22 +24,12 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "received the farm at Seilach under an arbitration settlement with Schöntal Abbey.",
-          "mention": [
-            {
-              "place": "schoental-monastery"
-            }
-          ]
+          "content": "received the farm at Seilach under an arbitration settlement with Schöntal Abbey."
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "agreed to reimburse Schöntal Abbey for the purchase price by Shrovetide 1317.",
-          "mention": [
-            {
-              "place": "schoental-monastery"
-            }
-          ]
+          "content": "agreed to reimburse Schöntal Abbey for the purchase price by Shrovetide 1317."
         }
       ],
       "img": [

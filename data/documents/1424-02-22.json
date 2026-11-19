@@ -13,56 +13,23 @@
           "personTitle": [
             "Bishop"
           ]
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "was, together with his wife Jutta, owed 3,500 florins by Bishop Hans von Brunn; repayment was secured by a surety and due on the Feast of St Peter’s Chair in 1424.",
-          "mention": [
-            {
-              "person": "Hans von Brunn",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "was, together with his wife Jutta, owed 3,500 florins by Bishop Hans von Brunn; repayment was secured by a surety and due on the Feast of St Peter’s Chair in 1424."
         },
         {
           "person": "Jutta",
           "type": "generic",
-          "content": "reached an agreement with Bishop Hans von Brunn for payment of 4,000 florins to her and her son Anselm von Rosenberg by the Feast of St Peter’s Chair in 1427.",
-          "mention": [
-            {
-              "person": "Anselm von Rosenberg"
-            },
-            {
-              "person": "Hans von Brunn",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "reached an agreement with Bishop Hans von Brunn for payment of 4,000 florins to her and her son Anselm von Rosenberg by the Feast of St Peter’s Chair in 1427."
         },
         {
           "person": "Jutta",
           "type": "generic",
-          "content": "was to receive Schloss Brassoldshaim, with its appurtenances and revenues, for use with her son Anselm von Rosenberg if Bishop Hans von Brunn failed to pay the agreed 4,000 florins.",
-          "mention": [
-            {
-              "person": "Anselm von Rosenberg"
-            },
-            {
-              "person": "Hans von Brunn",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "was to receive Schloss Brassoldshaim, with its appurtenances and revenues, for use with her son Anselm von Rosenberg if Bishop Hans von Brunn failed to pay the agreed 4,000 florins."
         },
         {
           "person": "Ulrich von Rosenberg",

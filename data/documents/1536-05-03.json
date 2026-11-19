@@ -15,9 +15,6 @@
           "place": "boxberg"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "person": "Heinrich von Pappenheim"
         },
         {
@@ -37,15 +34,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "helped mediate an agreement between Wolfgang von Bibra and Stephan von Adelsheim concerning a property at Wachbach.",
-          "mention": [
-            {
-              "person": "Stephan von Adelsheim"
-            },
-            {
-              "person": "Wolfgang von Bibra"
-            }
-          ]
+          "content": "helped mediate an agreement between Wolfgang von Bibra and Stephan von Adelsheim concerning a property at Wachbach."
         }
       ],
       "img": [

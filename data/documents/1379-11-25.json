@@ -20,12 +20,6 @@
           "person": "Eberhard von Grumbach"
         },
         {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "place": "jagstberg"
         },
         {
@@ -39,12 +33,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "was surety for Adolf of Mainz’s debt to Abraham von Jagstberg and Gottschalk of Mergentheim.",
-          "mention": [
-            {
-              "place": "jagstberg"
-            }
-          ]
+          "content": "was surety for Adolf of Mainz’s debt to Abraham von Jagstberg and Gottschalk of Mergentheim."
         }
       ]
     }

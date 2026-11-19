@@ -15,9 +15,6 @@
         },
         {
           "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
@@ -47,15 +44,7 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "transferred to his cousin Ulrich von Rosenberg the Boxberg share that his father had held as a 3,000-guilder pledge, in order to redeem the pledge.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Ulrich von Rosenberg"
-            }
-          ]
+          "content": "transferred to his cousin Ulrich von Rosenberg the Boxberg share that his father had held as a 3,000-guilder pledge, in order to redeem the pledge."
         },
         {
           "person": "Eberhard von Rosenberg",
@@ -63,18 +52,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "had received the Boxberg share as a 3,000-guilder pledge from Ulrich and Jörg von Rosenberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Ulrich von Rosenberg"
-            }
-          ]
+          "content": "had received the Boxberg share as a 3,000-guilder pledge from Ulrich and Jörg von Rosenberg."
         }
       ],
       "img": [

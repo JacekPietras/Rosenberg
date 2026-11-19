@@ -18,6 +18,9 @@
           "person": "Rudolf of Wertheim"
         },
         {
+          "person": "Rudolf von Wertheim"
+        },
+        {
           "place": "wertheim-stiftskirche"
         }
       ],
@@ -25,12 +28,7 @@
         {
           "subject": "the Rosenberg Manor at Duttenbrunn",
           "type": "generic",
-          "content": "was held as a fief from Count Rudolf von Wertheim and transferred by Konrad Scherpf to the altar of St. Catherine at Lohr.",
-          "mention": [
-            {
-              "person": "Rudolf von Wertheim"
-            }
-          ]
+          "content": "was held as a fief from Count Rudolf von Wertheim and transferred by Konrad Scherpf to the altar of St. Catherine at Lohr."
         }
       ],
       "img": [

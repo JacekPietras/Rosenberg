@@ -9,9 +9,6 @@
       "english": "Eubigheim Court and Village Ordinance.\n\nDuration: February 22, 1564\n\nSeal description: With seal and signature: 1. Albrecht von Rosenberg, 2. Fritz von Rabenstein, 3. Wolf von Habern of Erbach, 4. Wilderich von Walderdorff (guardians of the Rüdt children)",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "erbach"
         },
         {
@@ -22,12 +19,7 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "sealed and signed the court and village ordinance of Eubigheim.",
-          "mention": [
-            {
-              "place": "eubigheim"
-            }
-          ]
+          "content": "sealed and signed the court and village ordinance of Eubigheim."
         }
       ],
       "img": [

@@ -33,31 +33,12 @@
           "person": "Heinrich Stumpff von Schweinberg",
           "personDeceased": true,
           "type": "generic",
-          "content": "had purchased the estates and revenues at Schweinberg from Engelhard and Eberhard von Rosenberg.",
-          "mention": [
-            {
-              "place": "burg-schweinberg"
-            },
-            {
-              "person": "Eberhard von Rosenberg"
-            },
-            {
-              "person": "Engelhard von Rosenberg"
-            }
-          ]
+          "content": "had purchased the estates and revenues at Schweinberg from Engelhard and Eberhard von Rosenberg."
         },
         {
           "person": "Friedrich Stumph von Swymburg",
           "type": "generic",
-          "content": "sold estates and revenues at Schweinberg that were held as fiefs from Würzburg Abbey.",
-          "mention": [
-            {
-              "place": "burg-schweinberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "sold estates and revenues at Schweinberg that were held as fiefs from Würzburg Abbey."
         }
       ],
       "img": [

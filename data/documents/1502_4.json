@@ -12,6 +12,9 @@
           "person": "Georg Ludwig of Leuchtenberg"
         },
         {
+          "person": "Georg Ludwig zu Leuchtenberg"
+        },
+        {
           "person": "Georg of Leuchtenberg"
         },
         {
@@ -34,12 +37,7 @@
         {
           "subject": "The guardians of Regina Kunigunde von Rosenberg",
           "type": "generic",
-          "content": "bought an annual rent from the lordship and town of Grünsfeld from Landgraf Georg Ludwig zu Leuchtenberg.",
-          "mention": [
-            {
-              "person": "Georg Ludwig zu Leuchtenberg"
-            }
-          ]
+          "content": "bought an annual rent from the lordship and town of Grünsfeld from Landgraf Georg Ludwig zu Leuchtenberg."
         }
       ]
     }

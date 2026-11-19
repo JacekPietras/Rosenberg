@@ -34,18 +34,7 @@
             "Vicedom zu Heidelberg"
           ],
           "type": "generic",
-          "content": "received with his Vettern confirmation from King Wenzel of the court and historic rights at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "König Wenceslaus",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "received with his Vettern confirmation from King Wenzel of the court and historic rights at Boxberg."
         },
         {
           "person": "Konrad von Rosenberg",
@@ -53,12 +42,7 @@
             "Vicedom zu Heidelberg"
           ],
           "type": "generic",
-          "content": "held Boxberg jointly with his Vettern.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "held Boxberg jointly with his Vettern."
         }
       ]
     }

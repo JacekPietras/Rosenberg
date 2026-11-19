@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "schloss-haltenbergstetten"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "informed the Ansbach governors and councilors that certain witnesses did not want to be examined at Haltenbergstetten.",
-          "mention": [
-            {
-              "place": "schloss-haltenbergstetten"
-            }
-          ]
+          "content": "informed the Ansbach governors and councilors that certain witnesses did not want to be examined at Haltenbergstetten."
         }
       ]
     }

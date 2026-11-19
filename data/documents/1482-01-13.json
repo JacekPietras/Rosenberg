@@ -15,9 +15,6 @@
           "place": "buch"
         },
         {
-          "person": "Michael von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
         },
         {
@@ -34,21 +31,7 @@
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "received protection for ten years from Elector Philipp of the Palatinate for his people and goods, including the farm and sheep farm at Boxberg, half of Schweigern, Seehof, Windischbuch, Angeltürn, and his shares of Rosenberg and Bofsheim.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "schweigern"
-            },
-            {
-              "place": "wehrkirche-angeltuern"
-            }
-          ]
+          "content": "received protection for ten years from Elector Philipp of the Palatinate for his people and goods, including the farm and sheep farm at Boxberg, half of Schweigern, Seehof, Windischbuch, Angeltürn, and his shares of Rosenberg and Bofsheim."
         }
       ],
       "img": [

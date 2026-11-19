@@ -12,9 +12,6 @@
       "english": "Duke Friedrich of Austria grants to Clara von Rosenberg the mill at Essingen.",
       "mention": [
         {
-          "person": "Clara von Rosenberg"
-        },
-        {
           "place": "essingen"
         }
       ],
@@ -22,12 +19,7 @@
         {
           "person": "Clara von Rosenberg",
           "type": "generic",
-          "content": "received the mill at Essingen from Friedrich, Herzog von Österreich.",
-          "mention": [
-            {
-              "place": "essingen"
-            }
-          ]
+          "content": "received the mill at Essingen from Friedrich, Herzog von Österreich."
         }
       ]
     }

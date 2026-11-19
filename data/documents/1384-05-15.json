@@ -36,9 +36,6 @@
           "person": "Hans Mönch"
         },
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "place": "hartheim"
         },
         {
@@ -64,15 +61,7 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "was surety for Adolf of Mainz’s debt to Ulrich von Hohenlohe on behalf of the church of Speyer.",
-          "mention": [
-            {
-              "place": "speyer"
-            },
-            {
-              "person": "Ulrich von Hohenlohe"
-            }
-          ]
+          "content": "was surety for Adolf of Mainz’s debt to Ulrich von Hohenlohe on behalf of the church of Speyer."
         }
       ],
       "img": [

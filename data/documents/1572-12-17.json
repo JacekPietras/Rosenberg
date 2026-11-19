@@ -10,9 +10,6 @@
       "mention": [
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -20,22 +17,12 @@
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
           "content": "promised not to seize or detain any further citizens of Rothenburg.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ],
           "date": "1571-10-08"
         },
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was involved in an Imperial Chamber Court proceeding with Rothenburg over the seizure of two detained citizens.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "was involved in an Imperial Chamber Court proceeding with Rothenburg over the seizure of two detained citizens."
         }
       ]
     }

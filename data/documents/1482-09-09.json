@@ -12,14 +12,12 @@
           "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "oberschuepf"
         },
         {
           "person": "Philipp von Rieneck",
           "personTitle": [
+            "der Ältere",
             "the Elder"
           ]
         },
@@ -34,24 +32,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "with Count Philipp von Rieneck der Ältere settled a dispute between Wilhelm von Dottenheim and Arnold von Rosenberg about sheep grazing at Oberschüpf and Sachsenflur.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "oberschuepf"
-            },
-            {
-              "person": "Philipp von Rieneck",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Wilhelm von Dottenheim"
-            }
-          ]
+          "content": "with Count Philipp von Rieneck der Ältere settled a dispute between Wilhelm von Dottenheim and Arnold von Rosenberg about sheep grazing at Oberschüpf and Sachsenflur."
         }
       ],
       "img": [

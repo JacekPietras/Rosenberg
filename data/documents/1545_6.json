@@ -18,6 +18,12 @@
           "place": "baldersheim"
         },
         {
+          "person": "Melchior of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
+        },
+        {
           "place": "wurzburg"
         },
         {
@@ -31,18 +37,7 @@
             "zu Rosenberg"
           ],
           "type": "generic",
-          "content": "received his half of the fiefs at Baldersheim as Mannlehen from Bishop Melchior of Würzburg.",
-          "mention": [
-            {
-              "place": "baldersheim"
-            },
-            {
-              "person": "Melchior of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received his half of the fiefs at Baldersheim as Mannlehen from Bishop Melchior of Würzburg."
         }
       ]
     }

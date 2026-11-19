@@ -18,10 +18,16 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Eberhard von Rosenberg"
         },
         {
           "place": "heidelberg"
+        },
+        {
+          "place": "jagstberg"
         },
         {
           "person": "König Ruprecht",
@@ -42,40 +48,12 @@
         {
           "person": "arnold_boxberg",
           "type": "generic",
-          "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to have a high court, stocks, and gallows in Schweigern.",
-          "mention": [
-            {
-              "place": "jagstberg"
-            },
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to have a high court, stocks, and gallows in Schweigern."
         },
         {
           "person": "eberhard_jagstberg",
           "type": "generic",
-          "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to have a high court, stocks, and gallows in Schweigern.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to have a high court, stocks, and gallows in Schweigern."
         }
       ]
     },
@@ -96,10 +74,22 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Eberhard von Rosenberg"
         },
         {
           "place": "heidelberg"
+        },
+        {
+          "place": "jagstberg"
+        },
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "King"
+          ]
         },
         {
           "place": "schweigern"
@@ -114,40 +104,12 @@
         {
           "person": "arnold_boxberg",
           "type": "generic",
-          "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction.",
-          "mention": [
-            {
-              "place": "jagstberg"
-            },
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction."
         },
         {
           "person": "eberhard_jagstberg",
           "type": "generic",
-          "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction."
         }
       ]
     }

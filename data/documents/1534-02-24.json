@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "buch"
-        },
-        {
-          "person": "Georg von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "agreed with his subjects at Buch on the annual labor services they owed.",
-          "mention": [
-            {
-              "place": "buch"
-            }
-          ]
+          "content": "agreed with his subjects at Buch on the annual labor services they owed."
         }
       ],
       "img": [

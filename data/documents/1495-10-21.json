@@ -15,10 +15,13 @@
           "place": "bischofsheim"
         },
         {
-          "person": "Georg von Rosenberg"
+          "person": "Hans Stieber"
         },
         {
-          "person": "Hans Stieber"
+          "person": "Hans Stieber zu Aisch"
+        },
+        {
+          "person": "Hans Stieber zu Aisch."
         },
         {
           "person": "Martin von Sickingen"
@@ -28,31 +31,12 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "mediated a marriage contract between Asmus von Riedern and the daughter of Hans Stiber zu Aisch with Wilhelm von Mergentheim genannt Sützel and Martin von Sickingen.",
-          "mention": [
-            {
-              "person": "Asmus von Riedern"
-            },
-            {
-              "person": "Hans Stieber zu Aisch"
-            },
-            {
-              "person": "Martin von Sickingen"
-            }
-          ]
+          "content": "mediated a marriage contract between Asmus von Riedern and the daughter of Hans Stiber zu Aisch with Wilhelm von Mergentheim genannt Sützel and Martin von Sickingen."
         },
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "sealed the marriage contract between Asmus von Riedern and the daughter of Hans Stiber zu Aisch.",
-          "mention": [
-            {
-              "person": "Asmus von Riedern"
-            },
-            {
-              "person": "Hans Stieber zu Aisch."
-            }
-          ]
+          "content": "sealed the marriage contract between Asmus von Riedern and the daughter of Hans Stiber zu Aisch."
         }
       ],
       "img": [

@@ -12,6 +12,9 @@
           "person": "Eber(hard) von Rosenberg"
         },
         {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
           "person": "Kraft von Hohenlohe"
         },
         {
@@ -28,47 +31,17 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "made a castle peace at Nagelsberg with Kraft von Hohenlohe on behalf of the lord of Mainz.",
-          "mention": [
-            {
-              "person": "Kraft von Hohenlohe"
-            },
-            {
-              "place": "nagelsberg-castle"
-            }
-          ]
+          "content": "made a castle peace at Nagelsberg with Kraft von Hohenlohe on behalf of the lord of Mainz."
         },
         {
           "person": "Arnold von Thierbach",
           "type": "generic",
-          "content": "swore the castle peace at Nagelsberg with Eberhard von Rosenberg and Kraft von Hohenlohe.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg"
-            },
-            {
-              "person": "Kraft von Hohenlohe"
-            },
-            {
-              "place": "nagelsberg-castle"
-            }
-          ]
+          "content": "swore the castle peace at Nagelsberg with Eberhard von Rosenberg and Kraft von Hohenlohe."
         },
         {
           "person": "Otto Lesch",
           "type": "generic",
-          "content": "swore the castle peace at Nagelsberg with Eberhard von Rosenberg and Kraft von Hohenlohe.",
-          "mention": [
-            {
-              "person": "Eberhard von Rosenberg"
-            },
-            {
-              "person": "Kraft von Hohenlohe"
-            },
-            {
-              "place": "nagelsberg-castle"
-            }
-          ]
+          "content": "swore the castle peace at Nagelsberg with Eberhard von Rosenberg and Kraft von Hohenlohe."
         }
       ]
     }

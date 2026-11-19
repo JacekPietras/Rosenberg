@@ -64,15 +64,7 @@
         {
           "subject": "Himmelspforten Abbey",
           "type": "generic",
-          "content": "acquired property at Kirchheim from members of the von Rosenberg family.",
-          "mention": [
-            {
-              "place": "kirchheim"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "acquired property at Kirchheim from members of the von Rosenberg family."
         }
       ]
     }

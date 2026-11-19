@@ -9,9 +9,6 @@
       "english": "Acknowledgment of Dietrich von Berlichingen to Diether Archbishop of Mainz regarding enfeoffment with a half share previously possessed by Anselm von Rosenberg.",
       "mention": [
         {
-          "person": "Anselm von Rosenberg"
-        },
-        {
           "person": "Dietrich von Berlichingen"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Anselm von Rosenberg",
           "type": "generic",
-          "content": "had previously held the half share for which Dietrich von Berlichingen received a fief from Archbishop Diether of Mainz.",
-          "mention": [
-            {
-              "person": "Dietrich von Berlichingen"
-            }
-          ]
+          "content": "had previously held the half share for which Dietrich von Berlichingen received a fief from Archbishop Diether of Mainz."
         }
       ]
     }

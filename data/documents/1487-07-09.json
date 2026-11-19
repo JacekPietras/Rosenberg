@@ -16,6 +16,9 @@
         },
         {
           "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -25,15 +28,7 @@
             "Bischof"
           ],
           "type": "generic",
-          "content": "agreed with the Würzburg cathedral chapter to pay the von Rosenberg family 8,000 florins in two installments.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "agreed with the Würzburg cathedral chapter to pay the von Rosenberg family 8,000 florins in two installments."
         }
       ],
       "img": [

@@ -18,13 +18,7 @@
           "person": "Diether von Sickingen"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "heidelberg"
-        },
-        {
-          "person": "Melchior von Hirschhorn"
         },
         {
           "person": "Michael von Rosenberg"
@@ -42,28 +36,12 @@
         {
           "person": "Wendel von Remchingen",
           "type": "generic",
-          "content": "was released from captivity by Georg, Michel and Arnold von Rosenberg before Elector Friedrich I of the Palatinate.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Michael von Rosenberg"
-            }
-          ]
+          "content": "was released from captivity by Georg, Michel and Arnold von Rosenberg before Elector Friedrich I of the Palatinate."
         },
         {
           "person": "Melchior von Hirschhorn",
           "type": "generic",
-          "content": "acted as Wendel's trusted representative in prison to negotiate his release from Georg von Rosenberg.",
-          "mention": [
-            {
-              "person": "Georg von Rosenberg"
-            }
-          ]
+          "content": "acted as Wendel's trusted representative in prison to negotiate his release from Georg von Rosenberg."
         }
       ]
     }

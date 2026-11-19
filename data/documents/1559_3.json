@@ -9,9 +9,6 @@
       "english": "Letters of indemnity for Wolf von Hartheim zu Hardheim as surety for Albrecht von Rosenberg for a debt of 2,000 guilders to Hans Carius von Rosenberg (February 22, 1559), the same for a debt of 1,050 guilders to Friedrich von Rosenberg, Amtmann in Wertheim (February 22, 1561), and of Eberhard von Stetten for a debt of 700 guilders to Valentin von Berlichingen in Dörzbach (February 22, 1564)\n\nPeriod: 1559-1564\n\nExtent: 3 sheets",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "person": "Friedrich von Rosenberg",
           "personTitle": [
             "Amtmann"
@@ -27,6 +24,9 @@
           "place": "wertheim-stiftskirche"
         },
         {
+          "person": "Wolf von Hardheim"
+        },
+        {
           "person": "Wolf von Hartheim"
         }
       ],
@@ -35,28 +35,12 @@
           "person": "Albrecht von Rosenberg",
           "type": "generic",
           "content": "owed a debt to Hans Carius von Rosenberg for which Wolf von Hardheim stood surety.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "person": "Wolf von Hardheim"
-            }
-          ],
           "date": "1559-02-22"
         },
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
           "content": "owed Friedrich von Rosenberg 1,050 Gulden, for which Wolf von Hardheim stood surety.",
-          "mention": [
-            {
-              "person": "Friedrich von Rosenberg"
-            },
-            {
-              "person": "Wolf von Hardheim"
-            }
-          ],
           "date": "1559-02-22"
         }
       ]

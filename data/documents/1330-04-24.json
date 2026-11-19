@@ -22,6 +22,9 @@
           "place": "nagelsberg-castle"
         },
         {
+          "person": "Wolfram of Würzburg"
+        },
+        {
           "place": "wurzburg"
         }
       ],
@@ -33,15 +36,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "notified Wolfram, Bishop of Würzburg, of his enfeoffment with rights at Nagelsberg Castle.",
-          "mention": [
-            {
-              "place": "nagelsberg-castle"
-            },
-            {
-              "person": "Wolfram of Würzburg"
-            }
-          ]
+          "content": "notified Wolfram, Bishop of Würzburg, of his enfeoffment with rights at Nagelsberg Castle."
         },
         {
           "person": "vogt_zu_Durn",
@@ -50,15 +45,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "received as a fief from Konrad, Abbot of Comburg, the rights that Otto Resche, Ritter, had held at Nagelsberg Castle and in the woods and vineyards he cultivated, except the share belonging to Otto Resche's son.",
-          "mention": [
-            {
-              "place": "comburg-stiftskirche"
-            },
-            {
-              "place": "nagelsberg-castle"
-            }
-          ]
+          "content": "received as a fief from Konrad, Abbot of Comburg, the rights that Otto Resche, Ritter, had held at Nagelsberg Castle and in the woods and vineyards he cultivated, except the share belonging to Otto Resche's son."
         },
         {
           "person": "vogt_zu_Durn",
@@ -67,15 +54,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "received as a fief from Konrad, Abbot of Comburg, the share of Nagelsberg Castle that Arnold von Tierbach had bought from Konrad Flach.",
-          "mention": [
-            {
-              "place": "comburg-stiftskirche"
-            },
-            {
-              "place": "nagelsberg-castle"
-            }
-          ]
+          "content": "received as a fief from Konrad, Abbot of Comburg, the share of Nagelsberg Castle that Arnold von Tierbach had bought from Konrad Flach."
         },
         {
           "person": "vogt_zu_Durn",

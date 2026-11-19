@@ -11,7 +11,13 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "place": "boxberg"
+        },
+        {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "place": "jagstberg"
         },
         {
           "person": "König Siegmund",
@@ -27,40 +33,12 @@
         {
           "person": "arnold_boxberg",
           "type": "generic",
-          "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [eberhard_jagstberg].",
-          "mention": [
-            {
-              "place": "jagstberg"
-            },
-            {
-              "person": "König Siegmund",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [eberhard_jagstberg]."
         },
         {
           "person": "eberhard_jagstberg",
           "type": "generic",
-          "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [arnold_boxberg].",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "König Siegmund",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "received King Sigmund’s permission to appoint reeves and aldermen and exercise high jurisdiction in Schweigern jointly with [arnold_boxberg]."
         }
       ]
     }

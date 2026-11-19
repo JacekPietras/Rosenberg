@@ -9,9 +9,6 @@
       "english": "Philipp von Rosenberg, provost of St. German in Speyer, confirms the endowment of the early Mass at Malsch.\n\nValidity: February 7, 1493",
       "mention": [
         {
-          "person": "Philipp von Rosenberg"
-        },
-        {
           "place": "speyer"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "as provost of St. German in Speyer confirmed the endowment of the early Mass at Malsch.",
-          "mention": [
-            {
-              "place": "speyer"
-            }
-          ]
+          "content": "as provost of St. German in Speyer confirmed the endowment of the early Mass at Malsch."
         }
       ]
     }

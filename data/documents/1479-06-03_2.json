@@ -9,9 +9,6 @@
       "english": "Arnold von Rosenberg directs the cities of Haßfurt, Volkach, and the village of \"Keller\" to pay the 19 gulden rent again to the Bishop of Würzburg",
       "mention": [
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
           "place": "wurzburg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "directed Haßfurt, Volkach and Keller to pay the rent again to the bishop of Würzburg.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "directed Haßfurt, Volkach and Keller to pay the rent again to the bishop of Würzburg."
         }
       ]
     }

@@ -19,15 +19,7 @@
             "Graf"
           ],
           "type": "generic",
-          "content": "held hunting and maintenance rights in the Ämter of Schüpf and Rosenberg.",
-          "mention": [
-            {
-              "place": "oberschuepf"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "held hunting and maintenance rights in the Ämter of Schüpf and Rosenberg."
         },
         {
           "person": "Franz von Hatzfeldt",
@@ -35,15 +27,7 @@
             "Graf von Hatzfeldt und zu Gleichen"
           ],
           "type": "generic",
-          "content": "held hunting and Atzung rights in the Ämter Schüpf and Rosenberg.",
-          "mention": [
-            {
-              "place": "oberschuepf"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "held hunting and Atzung rights in the Ämter Schüpf and Rosenberg."
         },
         {
           "subject": "The Ämter Schüpf and Rosenberg",
@@ -54,6 +38,14 @@
           "subject": "The Ämter Schüpf and Rosenberg",
           "type": "generic",
           "content": "were to provide income to cover the costs of litigation under an agreement by Franz, Heinrich and Sebastian von Hatzfeldt."
+        }
+      ],
+      "mention": [
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ]
     }

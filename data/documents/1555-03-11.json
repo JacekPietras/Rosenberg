@@ -22,6 +22,12 @@
         },
         {
           "person": "Philipp of Helmstatt"
+        },
+        {
+          "person": "Philipp von Helmstatt"
+        },
+        {
+          "person": "Philipp von Neuhaus"
         }
       ],
       "facts": [
@@ -32,15 +38,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "enfeoffed Philipp von Helmstatt with Wagenbach as Mannlehen through his guardian Philipp von Neuhaus zu Neuhaus.",
-          "mention": [
-            {
-              "person": "Philipp von Helmstatt"
-            },
-            {
-              "person": "Philipp von Neuhaus"
-            }
-          ]
+          "content": "enfeoffed Philipp von Helmstatt with Wagenbach as Mannlehen through his guardian Philipp von Neuhaus zu Neuhaus."
         }
       ]
     }

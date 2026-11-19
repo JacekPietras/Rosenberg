@@ -15,13 +15,10 @@
           "person": "Eberhard von Hartheim"
         },
         {
-          "person": "Georg von Hartheim"
+          "person": "Georg von Hardheim"
         },
         {
           "person": "Reinhard von Hartheim"
-        },
-        {
-          "person": "Walpurga von Rosenberg"
         },
         {
           "place": "wurzburg"
@@ -36,22 +33,12 @@
         {
           "person": "Georg von Hartheim",
           "type": "generic",
-          "content": "sold his and his wife Walpurga von Rosenberg’s third of the great and small tithes at Wolferstetten to Claus Frosch and his wife Katherina, subject to a right of repurchase and with the fief lord’s consent.",
-          "mention": [
-            {
-              "person": "Walpurga von Rosenberg"
-            }
-          ]
+          "content": "sold his and his wife Walpurga von Rosenberg’s third of the great and small tithes at Wolferstetten to Claus Frosch and his wife Katherina, subject to a right of repurchase and with the fief lord’s consent."
         },
         {
           "person": "Walpurga von Rosenberg",
           "type": "generic",
-          "content": "sold her and her husband Georg von Hardheim’s third of the great and small tithes at Wolferstetten to Claus Frosch and his wife Katherina, subject to a right of repurchase and with the fief lord’s consent.",
-          "mention": [
-            {
-              "person": "Georg von Hardheim"
-            }
-          ]
+          "content": "sold her and her husband Georg von Hardheim’s third of the great and small tithes at Wolferstetten to Claus Frosch and his wife Katherina, subject to a right of repurchase and with the fief lord’s consent."
         }
       ],
       "img": [

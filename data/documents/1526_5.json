@@ -13,21 +13,13 @@
         },
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was involved in a dispute with Rothenburg that Hieronymus Öfner helped settle amicably.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "was involved in a dispute with Rothenburg that Hieronymus Öfner helped settle amicably."
         }
       ]
     }

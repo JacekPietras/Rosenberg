@@ -21,16 +21,13 @@
           "place": "erbach"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "place": "katzenelnbogen"
         },
         {
           "place": "mosbach-st-juliana"
+        },
+        {
+          "person": "Philipp of Katzenelnbogen"
         },
         {
           "person": "Philipp von Katzenelnbogen"
@@ -45,9 +42,6 @@
           "place": "rosenberg-town"
         },
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
           "place": "wertheim-stiftskirche"
         }
       ],
@@ -55,41 +49,17 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "stood as a hostage securing Count Philipp of Katzenelnbogen’s debt to Anna Riedern, along with the other named guarantors.",
-          "mention": [
-            {
-              "person": "Anna Riedern"
-            },
-            {
-              "person": "Philipp of Katzenelnbogen"
-            }
-          ]
+          "content": "stood as a hostage securing Count Philipp of Katzenelnbogen’s debt to Anna Riedern, along with the other named guarantors."
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "stood as a hostage securing Count Philipp of Katzenelnbogen’s debt to Anna Riedern, along with the other named guarantors.",
-          "mention": [
-            {
-              "person": "Anna Riedern"
-            },
-            {
-              "person": "Philipp of Katzenelnbogen"
-            }
-          ]
+          "content": "stood as a hostage securing Count Philipp of Katzenelnbogen’s debt to Anna Riedern, along with the other named guarantors."
         },
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "stood as a hostage securing Count Philipp of Katzenelnbogen’s debt to Anna Riedern, along with the other named guarantors.",
-          "mention": [
-            {
-              "person": "Anna Riedern"
-            },
-            {
-              "person": "Philipp of Katzenelnbogen"
-            }
-          ]
+          "content": "stood as a hostage securing Count Philipp of Katzenelnbogen’s debt to Anna Riedern, along with the other named guarantors."
         }
       ],
       "img": [

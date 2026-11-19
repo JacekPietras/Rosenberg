@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "eubigheim"
-        },
-        {
-          "person": "Georg von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "sold his and his wife Margaretha’s shares in Eubigheim Castle and village with their appurtenances.",
-          "mention": [
-            {
-              "place": "eubigheim"
-            }
-          ]
+          "content": "sold his and his wife Margaretha’s shares in Eubigheim Castle and village with their appurtenances."
         }
       ]
     }

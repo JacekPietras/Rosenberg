@@ -9,9 +9,6 @@
       "english": "Elector Ludwig V of the Palatinate sells Wolf von Stetten and his wife Anna née von Rosenberg 35 gulden of annual rent from half the wine tithe at Schweigern for 700 gulden.\n\nCoverage: 1540 August 1",
       "mention": [
         {
-          "person": "Anna von Rosenberg"
-        },
-        {
           "place": "schweigern"
         }
       ],
@@ -24,12 +21,7 @@
         {
           "person": "Anna von Rosenberg",
           "type": "generic",
-          "content": "bought an annual rent from the wine tithe at Schweigern with her husband Wolf von Stetten from Elector Ludwig V of the Palatinate.",
-          "mention": [
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "bought an annual rent from the wine tithe at Schweigern with her husband Wolf von Stetten from Elector Ludwig V of the Palatinate."
         }
       ],
       "img": [

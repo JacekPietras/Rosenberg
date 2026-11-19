@@ -18,9 +18,6 @@
           "place": "fulda-cathedral"
         },
         {
-          "person": "Hans Thomas von Rosenberg"
-        },
-        {
           "place": "heidelberg"
         },
         {
@@ -56,11 +53,6 @@
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
           "content": "was the subject of Hesse’s position toward Kurpfalz concerning Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ],
           "date": "1536-09"
         }
       ],

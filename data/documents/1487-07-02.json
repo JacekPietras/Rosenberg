@@ -10,18 +10,6 @@
       "english": "During Bishop Rudolf’s rule, Georg, Friedrich, and Arnold von Rosenberg, brothers, became involved in hostilities with him over properties. They acted on behalf of Kunigunde Besserer, née von Rosenberg, Anselm von Rosenberg’s legitimate surviving daughter; one word identifying her relationship to Anselm is illegible in the transcription. Hermann, Bishop of Cologne, and Margrave Friedrich of Brandenburg mediated a settlement. Bishop Rudolf was to pay the von Rosenbergs 8,500 Rhenish gold florins in two installments for the seized goods at Prosselsheim and Röttingen, including the towns, offices, castles, appurtenances, movable property, other goods, and claims for lost use, costs, and damages. A detailed agreement was drawn up at Nuremberg on the Feast of the Visitation of Mary in 1487. The archive summary identifies Bishop Rudolf as Rudolf von Scherenberg and the Brandenburg margrave as Friedrich II.",
       "mention": [
         {
-          "person": "Anselm von Rosenberg"
-        },
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "nuremberg"
         },
         {
@@ -44,15 +32,7 @@
             "Bischof"
           ],
           "type": "generic",
-          "content": "agreed to pay the von Rosenbergs 8,500 Rhenish gold florins in two installments for seized goods at Prosselsheim and Röttingen, including the towns, offices, castles, appurtenances, movable property, other goods, and claims for lost use, costs, and damages.",
-          "mention": [
-            {
-              "place": "roettingen"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "agreed to pay the von Rosenbergs 8,500 Rhenish gold florins in two installments for seized goods at Prosselsheim and Röttingen, including the towns, offices, castles, appurtenances, movable property, other goods, and claims for lost use, costs, and damages."
         },
         {
           "person": "Georg von Rosenberg",
@@ -72,32 +52,17 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was involved in hostilities with Bishop Rudolf over the von Rosenberg properties.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was involved in hostilities with Bishop Rudolf over the von Rosenberg properties."
         },
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "was involved in hostilities with Bishop Rudolf over the von Rosenberg properties.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was involved in hostilities with Bishop Rudolf over the von Rosenberg properties."
         },
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "was involved in hostilities with Bishop Rudolf over the von Rosenberg properties.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was involved in hostilities with Bishop Rudolf over the von Rosenberg properties."
         }
       ],
       "img": [

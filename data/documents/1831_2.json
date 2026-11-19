@@ -10,17 +10,17 @@
         {
           "person": "Mathes Graser",
           "type": "generic",
-          "content": "was a miller from Rosenberg.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was a miller from Rosenberg."
         },
         {
           "person": "Mathes Graser",
           "type": "generic",
           "content": "requested exemption from a mill rent."
+        }
+      ],
+      "mention": [
+        {
+          "place": "rosenberg-town"
         }
       ]
     }

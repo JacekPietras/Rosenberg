@@ -13,6 +13,9 @@
         },
         {
           "person": "Heinrich von Rosenberg"
+        },
+        {
+          "person": "Heinrich von Schaunberg"
         }
       ],
       "facts": [
@@ -38,22 +41,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "confirmed with his wife Barbara receipt of her marriage portion from her father Heinrich, Graf von Schaunberg.",
-          "mention": [
-            {
-              "person": "Heinrich von Schaunberg"
-            }
-          ]
+          "content": "confirmed with his wife Barbara receipt of her marriage portion from her father Heinrich, Graf von Schaunberg."
         },
         {
           "person": "Barbara von Rosenberg",
           "type": "generic",
-          "content": "renounced with her husband Heinrich der Jüngere von Rosenberg further claims to her paternal inheritance.",
-          "mention": [
-            {
-              "person": "Heinrich von Rosenberg"
-            }
-          ]
+          "content": "renounced with her husband Heinrich der Jüngere von Rosenberg further claims to her paternal inheritance."
         }
       ]
     }

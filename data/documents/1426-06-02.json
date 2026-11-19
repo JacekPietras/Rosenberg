@@ -13,9 +13,6 @@
           "place": "brunn"
         },
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Gerhard von Talheim"
         },
         {
@@ -28,6 +25,9 @@
           "person": "Horneck von Hornberg"
         },
         {
+          "person": "Horneck von Hornburg"
+        },
+        {
           "place": "jagstberg"
         }
       ],
@@ -35,18 +35,7 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "held Schloss, Stadt, and Amt Jagstberg as a pledge for approximately fifteen years before Horneck von Hornburg and Gerhard von Talheim redeemed it from him.",
-          "mention": [
-            {
-              "person": "Gerhard von Talheim"
-            },
-            {
-              "person": "Horneck von Hornburg"
-            },
-            {
-              "place": "jagstberg"
-            }
-          ]
+          "content": "held Schloss, Stadt, and Amt Jagstberg as a pledge for approximately fifteen years before Horneck von Hornburg and Gerhard von Talheim redeemed it from him."
         }
       ],
       "img": [

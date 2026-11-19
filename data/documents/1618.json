@@ -15,13 +15,7 @@
       "english": "Johann Gottfried [von Aschhausen], Bishop of Bamberg and Würzburg etc., enfeoffs Albrecht Christoph von Rosenberg with life tenure: the half chaplaincy at Schloss Waldmannshofen; - aforementioned - 2 farms at Gülchsheim and the tithe there; - aforementioned - revenues from a property at Steinach below Brauneck; - aforementioned - revenues from - aforementioned - farm at Geiselheim. The fiefs had fallen to Christoph Albrecht through the division of July 25, 1586 (O.S.) with his brothers Konrad and Georg Siegmund von Rosenberg.\n\nSealer: the issuer.\n\nOriginal, parchment, seal preserved. -No. 2257.\n\nReg. No. 2380",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "person": "Georg Siegmund von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
+          "place": "waldmannshofen"
         },
         {
           "place": "waldmannshofen-castle"
@@ -44,12 +38,7 @@
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "received the Waldmannshofen chapel, farms and associated rents and tithes as Mannlehen after division with his brothers Konrad and Georg Siegmund.",
-          "mention": [
-            {
-              "place": "waldmannshofen"
-            }
-          ]
+          "content": "received the Waldmannshofen chapel, farms and associated rents and tithes as Mannlehen after division with his brothers Konrad and Georg Siegmund."
         }
       ]
     }

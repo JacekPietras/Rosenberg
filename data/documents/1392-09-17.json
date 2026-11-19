@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1767870",
       "german": "Konrad von Rosenberg, Ritter, Vicedom zu Heidelberg, und seine Ehefrau Margarethe von Hirschhorn beurkunden, dass Pfalzgraf Ruprecht d. Ä. ihnen seine Burg Minneberg mit allem Zubehör um 2.810 Gulden verpfändet habt.",
       "english": "Konrad von Rosenberg, Knight, Vicedom of Heidelberg, and his wife Margaretha von Hirschhorn certify that Palatine Count Rupert the Elder has pledged to them his castle Minneberg with all appurtenances for 2,810 gulden.",
-      "mention": [
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Margaretha von Hirschhorn"
-        }
-      ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
@@ -23,12 +15,7 @@
             "Vizedom zu Heidelberg"
           ],
           "type": "generic",
-          "content": "certified that Count Palatine Ruprecht der Ältere had pledged Minneberg Castle and its appurtenances to him and his wife Margarethe von Hirschhorn for 2,810 gulden.",
-          "mention": [
-            {
-              "person": "Margaretha von Hirschhorn"
-            }
-          ]
+          "content": "certified that Count Palatine Ruprecht der Ältere had pledged Minneberg Castle and its appurtenances to him and his wife Margarethe von Hirschhorn for 2,810 gulden."
         },
         {
           "person": "Konrad von Rosenberg",

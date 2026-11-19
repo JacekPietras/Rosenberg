@@ -21,7 +21,10 @@
           "person": "Hans von Riedern"
         },
         {
-          "person": "Konrad of Würzburg"
+          "person": "Konrad of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         },
         {
           "place": "rosenberg-town"
@@ -37,21 +40,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "received half of the fiefs at Baldersheim as Mannlehen from Bishop Konrad of Würzburg, subject to Hans von Riedern’s pending legal claim.",
-          "mention": [
-            {
-              "place": "baldersheim"
-            },
-            {
-              "person": "Hans von Riedern"
-            },
-            {
-              "person": "Konrad of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received half of the fiefs at Baldersheim as Mannlehen from Bishop Konrad of Würzburg, subject to Hans von Riedern’s pending legal claim."
         }
       ]
     }

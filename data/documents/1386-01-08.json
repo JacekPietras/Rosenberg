@@ -17,9 +17,6 @@
           "person": "Eberhard Schenk"
         },
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "place": "euerhausen"
         },
         {
@@ -99,12 +96,7 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "was named among the Schirmer for the judgment concerning the Johanniter properties, together with other members of the von Rosenberg family.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "was named among the Schirmer for the judgment concerning the Johanniter properties, together with other members of the von Rosenberg family."
         }
       ]
     }

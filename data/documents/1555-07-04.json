@@ -19,6 +19,9 @@
         },
         {
           "person": "Wolf of Hardheim"
+        },
+        {
+          "person": "Wolf von Hardheim"
         }
       ],
       "facts": [
@@ -29,15 +32,7 @@
             "zu Boxberg"
           ],
           "type": "generic",
-          "content": "sold his rights in a quarter of Bretzingen to Wolf von Hardheim and his heirs.",
-          "mention": [
-            {
-              "place": "bretzingen"
-            },
-            {
-              "person": "Wolf von Hardheim"
-            }
-          ]
+          "content": "sold his rights in a quarter of Bretzingen to Wolf von Hardheim and his heirs."
         }
       ],
       "img": [

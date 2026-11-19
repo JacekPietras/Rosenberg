@@ -15,19 +15,14 @@
           ]
         },
         {
-          "person": "Hans von Rosenberg"
+          "person": "Friedrich von Nürnberg"
         }
       ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "acknowledged receiving money from Ulrich Mittelburger, Kastner zu Wassertrüdingen, on behalf of Friedrich, Burggraf von Nürnberg.",
-          "mention": [
-            {
-              "person": "Friedrich von Nürnberg"
-            }
-          ]
+          "content": "acknowledged receiving money from Ulrich Mittelburger, Kastner zu Wassertrüdingen, on behalf of Friedrich, Burggraf von Nürnberg."
         }
       ]
     }

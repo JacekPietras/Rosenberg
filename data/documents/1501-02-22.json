@@ -11,9 +11,6 @@
           "place": "adelsheim"
         },
         {
-          "person": "Elchana von Rosenberg"
-        },
-        {
           "person": "Kunz von Rosenberg"
         }
       ],
@@ -21,15 +18,7 @@
         {
           "person": "Elchana von Rosenberg",
           "type": "generic",
-          "content": "sold her share of the district called Hügelsdorf, between Burken and Adelsheim, to Melchior Schneider of Burken on behalf of herself and Kunz von Rosenberg’s children.",
-          "mention": [
-            {
-              "place": "adelsheim"
-            },
-            {
-              "person": "Kunz von Rosenberg"
-            }
-          ]
+          "content": "sold her share of the district called Hügelsdorf, between Burken and Adelsheim, to Melchior Schneider of Burken on behalf of herself and Kunz von Rosenberg’s children."
         }
       ]
     }

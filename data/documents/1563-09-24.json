@@ -9,10 +9,10 @@
       "english": "Enfeoffment of Albrecht von Rosenberg[-Boxberg] with the patronage right and various rents, revenues, and properties in Oberbalbach by Count Ludwig Kasimir von Hohenlohe[-Neuenstein], September 24, 1563 [regesta].",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
+          "place": "boxberg"
         },
         {
-          "place": "boxberg"
+          "person": "Ludwig Kasimir of Hohenlohe"
         },
         {
           "person": "Ludwig Kasimir von Hohenlohe"
@@ -22,12 +22,7 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "received the church patronage and various rents, annuities and properties at Oberbalbach as a fief from Count Ludwig Kasimir of Hohenlohe.",
-          "mention": [
-            {
-              "person": "Ludwig Kasimir of Hohenlohe"
-            }
-          ]
+          "content": "received the church patronage and various rents, annuities and properties at Oberbalbach as a fief from Count Ludwig Kasimir of Hohenlohe."
         }
       ]
     }

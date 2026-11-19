@@ -9,9 +9,6 @@
       "english": "Debt acknowledgment of Konrad von Weinsberg to Konrad von Rosenberg for 500 guilders (copy).",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "person": "Konrad von Weinsberg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "was owed 500 guilders by Konrad von Weinsberg under a debt instrument.",
-          "mention": [
-            {
-              "person": "Konrad von Weinsberg"
-            }
-          ]
+          "content": "was owed 500 guilders by Konrad von Weinsberg under a debt instrument."
         }
       ]
     }

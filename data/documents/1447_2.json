@@ -15,6 +15,9 @@
           "person": "Götz von Dottenheim"
         },
         {
+          "person": "Götz von Tottenheim"
+        },
+        {
           "person": "König Friedrich",
           "personTitle": [
             "King"
@@ -31,6 +34,9 @@
         },
         {
           "person": "Wilhelm von Dottenheim"
+        },
+        {
+          "person": "Wilhelm von Tottenheim"
         }
       ],
       "facts": [
@@ -40,18 +46,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "issued an undated certified copy with Götz and Wilhelm von Tottenheim of a charter recording the Teutonic commanders’ sworn loss of 1,265 florins at Mosbach on 4 May 1447.",
-          "mention": [
-            {
-              "person": "Götz von Tottenheim"
-            },
-            {
-              "place": "mosbach-st-juliana"
-            },
-            {
-              "person": "Wilhelm von Tottenheim"
-            }
-          ]
+          "content": "issued an undated certified copy with Götz and Wilhelm von Tottenheim of a charter recording the Teutonic commanders’ sworn loss of 1,265 florins at Mosbach on 4 May 1447."
         }
       ],
       "img": [

@@ -26,24 +26,13 @@
         },
         {
           "person": "Hans Truchsess"
-        },
-        {
-          "person": "Thomas von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Thomas von Rosenberg",
           "type": "generic",
-          "content": "witnessed an agreement by which Elisabeth von Heideck received 1,500 florins from her children’s great and small tithes at Gollhofen until they redeemed the sum, and relinquished her holdings and rights in Aub Castle, town, and district to her children.",
-          "mention": [
-            {
-              "place": "aub"
-            },
-            {
-              "person": "Elisabeth von heideck"
-            }
-          ]
+          "content": "witnessed an agreement by which Elisabeth von Heideck received 1,500 florins from her children’s great and small tithes at Gollhofen until they redeemed the sum, and relinquished her holdings and rights in Aub Castle, town, and district to her children."
         }
       ]
     }

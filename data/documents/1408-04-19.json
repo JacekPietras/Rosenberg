@@ -19,7 +19,7 @@
           "person": "Eberhard vom Hirschhorn"
         },
         {
-          "person": "Hans von Rosenberg"
+          "person": "Eberhard von Hirschhorn"
         },
         {
           "place": "heidelberg"
@@ -32,27 +32,16 @@
         },
         {
           "person": "Konrad vom Hirschhorn"
+        },
+        {
+          "person": "Konrad von Hirschhorn"
         }
       ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "was permitted by King Ruprecht to sell Mure Castle and village, held as a fief from the Palatinate, to Eberhard and Konrad von Hirschhorn for 2,400 florins subject to repurchase.",
-          "mention": [
-            {
-              "person": "Eberhard von Hirschhorn"
-            },
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "person": "Konrad von Hirschhorn"
-            }
-          ]
+          "content": "was permitted by King Ruprecht to sell Mure Castle and village, held as a fief from the Palatinate, to Eberhard and Konrad von Hirschhorn for 2,400 florins subject to repurchase."
         }
       ]
     }

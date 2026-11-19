@@ -8,13 +8,7 @@
       "english": "Arnold von Rosenberg and Friedrich von Rosenberg swap the Hofstatt zu Boxberg, located at the top of their brother Michael Hofhaus, who fell to them in the division with it, for the chapel garden belonging to this associated chapel garden at the chapel and Peter Zimmermann's house at the Brunnen Gate.",
       "mention": [
         {
-          "person": "Arnold von Rosenberg"
-        },
-        {
           "place": "boxberg"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
         }
       ],
       "facts": [
@@ -31,32 +25,17 @@
         {
           "person": "Arnold von Rosenberg",
           "type": "generic",
-          "content": "exchanged the Hofstatt at Boxberg that he and his brother Friedrich had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Friedrich.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "exchanged the Hofstatt at Boxberg that he and his brother Friedrich had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Friedrich."
         },
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "exchanged the Hofstatt at Boxberg that he and his brother Arnold had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Arnold.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "exchanged the Hofstatt at Boxberg that he and his brother Arnold had received in a partition with their brother Michael for the chapel garden by the chapel and Peter Zimmermann’s house by the Brunnen Gate, together with Arnold."
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "had a Hofhaus at Boxberg above the Hofstatt that his brothers Arnold and Friedrich received in their partition with him.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "had a Hofhaus at Boxberg above the Hofstatt that his brothers Arnold and Friedrich received in their partition with him."
         }
       ],
       "img": [

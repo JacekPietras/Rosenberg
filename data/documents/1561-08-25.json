@@ -9,13 +9,7 @@
       "english": "Philipp Jakob von Rosenberg zu Rosenberg, Kunz von Rosenberg zu Waldmannshofen, Hans Casimir von Rosenberg zu Rosenberg, Zaisolph von Rosenberg zu Haldenbergstetten, Anna von Rosenberg born. Krantz von Geispitzheim, widow Balthasar von Rosenberg, also Wilhelm Krantz von Geispitzheim and Wolf von Weingarten as convine guardian of the suroned sons Friedrich and Hans Christoph des Balthasar von Rosenberg, give their agnatical consensus on the insurized contract for the Boxberg contract on 24. July 1561. Witnesses and co-sealists: Philipp Soldan, Vogt von Rieneck zu Urspringen; Albrecht von Adelsheim, mainzischer Amtmann zu Krautheim, and Hans von Finsterlohr zu Laudenbach.",
       "mention": [
         {
-          "person": "Albrecht von Adelsheim"
-        },
-        {
           "person": "Anna von Rosenberg"
-        },
-        {
-          "person": "Balthasar von Rosenberg"
         },
         {
           "place": "boxberg"
@@ -48,12 +42,7 @@
             "zu Rosenberg"
           ],
           "type": "generic",
-          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
         },
         {
           "person": "Kunz von Rosenberg",
@@ -61,12 +50,7 @@
             "zu Waldmannshofen"
           ],
           "type": "generic",
-          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
         },
         {
           "person": "Hans Casimir von Rosenberg",
@@ -74,12 +58,7 @@
             "zu Rosenberg"
           ],
           "type": "generic",
-          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
         },
         {
           "person": "Zaisolph von Rosenberg",
@@ -87,12 +66,7 @@
             "zu Haltenbergstetten Niederstetten"
           ],
           "type": "generic",
-          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
         },
         {
           "person": "Balthasar von Rosenberg",
@@ -103,52 +77,27 @@
         {
           "person": "Anna von Rosenberg geb. Krantz von Geispitzheim",
           "type": "generic",
-          "content": "gave her consent to the inserted agreement transferring Boxberg dated 24 July 1561.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "gave her consent to the inserted agreement transferring Boxberg dated 24 July 1561."
         },
         {
           "person": "Wilhelm Krantz von Geispitzheim",
           "type": "generic",
-          "content": "served as guardian for Friedrich von Rosenberg.",
-          "mention": [
-            {
-              "person": "Friedrich von Rosenberg"
-            }
-          ]
+          "content": "served as guardian for Friedrich von Rosenberg."
         },
         {
           "person": "Wilhelm Krantz von Geispitzheim",
           "type": "generic",
-          "content": "served as guardian for Hans Christoph von Rosenberg.",
-          "mention": [
-            {
-              "person": "Hans Christoph von Rosenberg"
-            }
-          ]
+          "content": "served as guardian for Hans Christoph von Rosenberg."
         },
         {
           "person": "Wolf von Weingarten",
           "type": "generic",
-          "content": "served as guardian for Friedrich von Rosenberg.",
-          "mention": [
-            {
-              "person": "Friedrich von Rosenberg"
-            }
-          ]
+          "content": "served as guardian for Friedrich von Rosenberg."
         },
         {
           "person": "Wolf von Weingarten",
           "type": "generic",
-          "content": "served as guardian for Hans Christoph von Rosenberg.",
-          "mention": [
-            {
-              "person": "Hans Christoph von Rosenberg"
-            }
-          ]
+          "content": "served as guardian for Hans Christoph von Rosenberg."
         },
         {
           "person": "Balthasar von Rosenberg",

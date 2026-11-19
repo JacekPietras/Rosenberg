@@ -13,21 +13,13 @@
         },
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was reportedly harmed by subjects of Stift Herrieden during the Peasants’ War.",
-          "mention": [
-            {
-              "place": "herrieden"
-            }
-          ]
+          "content": "was reportedly harmed by subjects of Stift Herrieden during the Peasants’ War."
         }
       ]
     }

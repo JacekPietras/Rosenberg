@@ -13,24 +13,13 @@
         },
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was involved in a dispute with Rothenburg for which Albrecht von Adelsheim offered mediation.",
-          "mention": [
-            {
-              "person": "Albrecht von Adelsheim"
-            },
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "was involved in a dispute with Rothenburg for which Albrecht von Adelsheim offered mediation."
         }
       ]
     }

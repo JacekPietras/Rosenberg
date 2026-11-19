@@ -12,9 +12,6 @@
           "person": "Melchior Truchsess"
         },
         {
-          "person": "Philipp von Rosenberg"
-        },
-        {
           "place": "speyer"
         }
       ],
@@ -22,12 +19,7 @@
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "was appointed cathedral cantor of Speyer by Pope Alexander VI.",
-          "mention": [
-            {
-              "place": "speyer"
-            }
-          ]
+          "content": "was appointed cathedral cantor of Speyer by Pope Alexander VI."
         }
       ],
       "img": [

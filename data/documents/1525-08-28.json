@@ -24,6 +24,9 @@
           "place": "hornberg"
         },
         {
+          "person": "Juliana in Mosbach"
+        },
+        {
           "place": "mosbach-st-juliana"
         },
         {
@@ -34,15 +37,7 @@
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "held a share in the wine tithe at issue in the settlement between the Stift St. Juliana in Mosbach and Götz von Berlichingen.",
-          "mention": [
-            {
-              "person": "Götz von Berlichingen"
-            },
-            {
-              "person": "Juliana in Mosbach"
-            }
-          ]
+          "content": "held a share in the wine tithe at issue in the settlement between the Stift St. Juliana in Mosbach and Götz von Berlichingen."
         }
       ],
       "img": [

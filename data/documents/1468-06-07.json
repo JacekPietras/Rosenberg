@@ -16,12 +16,6 @@
           "personTitle": [
             "Junker"
           ]
-        },
-        {
-          "person": "Martin von Uissigheim",
-          "personTitle": [
-            "Junker"
-          ]
         }
       ],
       "facts": [
@@ -31,12 +25,7 @@
             "Junker"
           ],
           "type": "generic",
-          "content": "and Arnold von Rosenberg sealed Hans Glaßkopf’s oath of feudlessness after his release from prison at Mergentheim.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            }
-          ]
+          "content": "and Arnold von Rosenberg sealed Hans Glaßkopf’s oath of feudlessness after his release from prison at Mergentheim."
         },
         {
           "person": "Arnold von Rosenberg",

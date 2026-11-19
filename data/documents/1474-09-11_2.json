@@ -21,9 +21,6 @@
           ]
         },
         {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
           "place": "madenburg"
         },
         {
@@ -34,12 +31,7 @@
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "was appointed guardian of the adult children of Friedrich von Fleckenstein zu Madenburg by Elector Friedrich I of the Palatinate.",
-          "mention": [
-            {
-              "person": "Friedrich von Fleckenstein"
-            }
-          ]
+          "content": "was appointed guardian of the adult children of Friedrich von Fleckenstein zu Madenburg by Elector Friedrich I of the Palatinate."
         }
       ]
     }

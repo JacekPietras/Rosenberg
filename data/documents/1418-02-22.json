@@ -11,6 +11,7 @@
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [
+            "der Ältere",
             "the Elder"
           ]
         },
@@ -34,21 +35,7 @@
             "zu Röttingen"
           ],
           "type": "generic",
-          "content": "sold Reigelsberg Castle, which he had bought from Konrad von Weinsberg, to Konrad von Rosenberg der Ältere for 7,000 gulden.",
-          "mention": [
-            {
-              "person": "Konrad von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Konrad von Weinsberg"
-            },
-            {
-              "place": "reichelsburg-aub"
-            }
-          ]
+          "content": "sold Reigelsberg Castle, which he had bought from Konrad von Weinsberg, to Konrad von Rosenberg der Ältere for 7,000 gulden."
         }
       ]
     }

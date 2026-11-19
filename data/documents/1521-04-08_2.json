@@ -10,34 +10,18 @@
       "mention": [
         {
           "place": "bobstadt"
-        },
-        {
-          "person": "Hans Melchior von Rosenberg"
-        },
-        {
-          "person": "Hans Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Hans Melchior von Rosenberg",
           "type": "generic",
-          "content": "pledged his half of Bobstadt and the villages of Schwabhausen and Epplingen to Kurfürst Ludwig V and Pfalzgraf Friedrich as security for a loan.",
-          "mention": [
-            {
-              "place": "bobstadt"
-            }
-          ]
+          "content": "pledged his half of Bobstadt and the villages of Schwabhausen and Epplingen to Kurfürst Ludwig V and Pfalzgraf Friedrich as security for a loan."
         },
         {
           "person": "Hans Ulrich von Rosenberg",
           "type": "generic",
-          "content": "pledged his half of Bobstadt and the villages of Schwabhausen and Epplingen to Kurfürst Ludwig V and Pfalzgraf Friedrich as security for a loan.",
-          "mention": [
-            {
-              "place": "bobstadt"
-            }
-          ]
+          "content": "pledged his half of Bobstadt and the villages of Schwabhausen and Epplingen to Kurfürst Ludwig V and Pfalzgraf Friedrich as security for a loan."
         }
       ],
       "img": [

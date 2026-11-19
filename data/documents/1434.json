@@ -9,9 +9,6 @@
       "english": "Eberhard von Rosenberg and Wiprecht von Helmstadt capture the Frankfurt envoys Walter von Schwarzenberg, Jakob Stralenberg, and Hug Schelm returning from Regensburg, as well as Eberhard Löw of Steinfurth, Friedrich von Stein, and the envoys of Aachen and Friedberg.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Walter von Schwarzenberg"
         },
         {
@@ -22,12 +19,7 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "captured the Frankfurt envoys returning from Regensburg, along with Wiprecht von Helmstadt and others named in the record.",
-          "mention": [
-            {
-              "person": "Wiprecht von Helmstadt"
-            }
-          ]
+          "content": "captured the Frankfurt envoys returning from Regensburg, along with Wiprecht von Helmstadt and others named in the record."
         }
       ],
       "img": [

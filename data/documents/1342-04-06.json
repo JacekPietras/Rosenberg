@@ -17,12 +17,6 @@
           "place": "bischofsheim"
         },
         {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "person": "Heinrich von Uissigheim",
           "personTitle": [
             "Knecht"
@@ -39,12 +33,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "sealed Alheit von Uissigheim’s testament.",
-          "mention": [
-            {
-              "person": "Adelheid von Uissigheim"
-            }
-          ]
+          "content": "sealed Alheit von Uissigheim’s testament."
         }
       ],
       "img": [

@@ -12,19 +12,14 @@
           "person": "Hans von Helmstadt"
         },
         {
-          "person": "Michael von Rosenberg"
+          "person": "Hans von Helmstatt"
         }
       ],
       "facts": [
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "was involved in disputes with Hans von Wagenbach and Hans von Helmstatt over the House of Wagenbach, Hans von Wagenbach’s paternal inheritance, during 1493–1495.",
-          "mention": [
-            {
-              "person": "Hans von Helmstatt"
-            }
-          ]
+          "content": "was involved in disputes with Hans von Wagenbach and Hans von Helmstatt over the House of Wagenbach, Hans von Wagenbach’s paternal inheritance, during 1493–1495."
         }
       ]
     }

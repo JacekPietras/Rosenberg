@@ -22,21 +22,13 @@
         },
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was the subject of inquiries into damage inflicted on him by Rothenburg’s citizens during the Peasants’ War.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "was the subject of inquiries into damage inflicted on him by Rothenburg’s citizens during the Peasants’ War."
         }
       ]
     }

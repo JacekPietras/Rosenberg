@@ -67,12 +67,7 @@
             "Komtur zu Boxberg"
           ],
           "type": "generic",
-          "content": "led the Johanniter commandery at Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "led the Johanniter commandery at Boxberg."
         },
         {
           "person": "Rudolf von Wertheim",
@@ -80,15 +75,7 @@
             "Graf"
           ],
           "type": "generic",
-          "content": "renounced the Wertheim family’s feudal rights over the Johanniter goods at Boxberg in favor of Henneberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ]
+          "content": "renounced the Wertheim family’s feudal rights over the Johanniter goods at Boxberg in favor of Henneberg."
         }
       ],
       "img": [

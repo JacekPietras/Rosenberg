@@ -12,9 +12,6 @@
           "place": "hohenlohe"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
           "place": "weinsberg"
         },
         {
@@ -32,12 +29,7 @@
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "owed Johann and Michael, Counts of Wertheim, 3,000 florins each alongside the other named debtors.",
-          "mention": [
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ]
+          "content": "owed Johann and Michael, Counts of Wertheim, 3,000 florins each alongside the other named debtors."
         }
       ],
       "img": [

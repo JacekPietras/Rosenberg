@@ -24,13 +24,7 @@
           ]
         },
         {
-          "person": "Philipp Jakob von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -79,15 +73,7 @@
         {
           "subject": "the von Rosenberg brothers and cousins",
           "type": "generic",
-          "content": "received the quarter of Aub as a Mannlehen after the death of Philipp Jakob von Rosenberg.",
-          "mention": [
-            {
-              "place": "aub"
-            },
-            {
-              "person": "Philipp Jakob von Rosenberg"
-            }
-          ]
+          "content": "received the quarter of Aub as a Mannlehen after the death of Philipp Jakob von Rosenberg."
         }
       ]
     }

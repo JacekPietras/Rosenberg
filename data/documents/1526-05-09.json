@@ -9,9 +9,6 @@
       "english": "Georg von Rosenberg pledges his share of the toll at Schweigern to Elector Ludwig V of the Palatinate as security for a debt of 70 gulden.\n\nDuration: May 9, 1526 (Wednesday after Vocem jocunditatis 1526)",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "schweigern"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "pledged his share of the bede at Schweigern to Kurfürst Ludwig V of the Palatinate as security for a debt.",
-          "mention": [
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "pledged his share of the bede at Schweigern to Kurfürst Ludwig V of the Palatinate as security for a debt."
         }
       ],
       "img": [

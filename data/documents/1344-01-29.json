@@ -10,9 +10,6 @@
       "english": "Archbishop Heinrich declares that his cellarer in Dürn, Conrad, has rendered accounts before him of the revenues and expenditures of his office (in dicto cellerarie officio) for the period from February 17 (Tuesday before Peter's Chair) 1343 to January 29, 1344, including his final settlement. Conrad thereafter remains indebted to the archbishopric: 20 pounds 16 solidi 2 Heller, in rye (siligine) 94 1/2 measures, in oats 710 measures, in spelt 80 1/2 measures, and 454 chickens.\n\nWitnesses: Wildricus, vitztum in Aschaffenburg; Eberhard von Rosenberg; Johannes von Siegburg (Syberg) and Conrad Spiegel, clerics of the Archbishop.",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "place": "wallduern"
         }
       ],
@@ -20,12 +17,7 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "witnessed the accounts of Konrad, the Mainz cellarer at Dürn.",
-          "mention": [
-            {
-              "place": "wallduern"
-            }
-          ]
+          "content": "witnessed the accounts of Konrad, the Mainz cellarer at Dürn."
         }
       ]
     }

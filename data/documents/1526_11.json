@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was the subject of advice sent by Georg Vogler to Rothenburg concerning the process against him.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "was the subject of advice sent by Georg Vogler to Rothenburg concerning the process against him."
         }
       ]
     }

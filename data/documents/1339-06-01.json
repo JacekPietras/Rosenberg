@@ -25,7 +25,13 @@
           "person": "Konrad von Erbach"
         },
         {
+          "person": "Kraft von Hohenlohe"
+        },
+        {
           "person": "Ludwig of Rieneck"
+        },
+        {
+          "person": "Ludwig von Rieneck"
         },
         {
           "place": "rieneck"
@@ -41,15 +47,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "served as a judge in the dispute between Archbishop Heinrich and Kraft von Hohenlohe and Ulrich von Hanau over the fiefs of the deceased Count Ludwig von Rieneck.",
-          "mention": [
-            {
-              "person": "Kraft von Hohenlohe"
-            },
-            {
-              "person": "Ludwig von Rieneck"
-            }
-          ]
+          "content": "served as a judge in the dispute between Archbishop Heinrich and Kraft von Hohenlohe and Ulrich von Hanau over the fiefs of the deceased Count Ludwig von Rieneck."
         }
       ]
     }

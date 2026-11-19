@@ -66,15 +66,12 @@ function mergePeople(items) {
       if (cluster) cluster.titles.push(...item.personTitle);
       else clusters.push({ age, titles: [...item.personTitle] });
     }
-    if (clusters.length === 1 || !clusters.length) {
-      if (!clusters.length) clusters.push({ age: new Set(), titles: [] });
-      plain.splice(0).forEach((item) => clusters[0].titles.push(...(item.personTitle || [])));
-    }
+    if (!clusters.length) clusters.push({ age: new Set(), titles: [] });
+    plain.forEach((item) => clusters[0].titles.push(...(item.personTitle || [])));
     for (const cluster of clusters) {
       const titles = [...new Set(cluster.titles)].sort();
       merged.push(titles.length ? { person, personTitle: titles } : { person });
     }
-    merged.push(...new Map(plain.map((item) => [JSON.stringify(item), item])).values());
   }
   return [...merged, ...others];
 }
@@ -150,6 +147,24 @@ async function jsonFiles(directory) {
   return results;
 }
 
+const factTexts = (entry) => (Array.isArray(entry.facts) ? entry.facts : [])
+  .flatMap((fact) => (fact?.type === 'generic' && typeof fact.content === 'string' ? [fact.content]
+    : fact?.type === 'death' && typeof fact.circumstances === 'string' ? [fact.circumstances] : []));
+
+
+const personKey = (person, titles) => JSON.stringify([person, [...new Set(titles || [])].sort()]);
+
+// Person+title pairs already stated by a fact (or its nested facts) need no mention.
+function statedPeople(value, found = new Set()) {
+  if (Array.isArray(value)) value.forEach((item) => statedPeople(item, found));
+  else if (value && typeof value === 'object') {
+    if (typeof value.person === 'string') found.add(personKey(value.person, value.personTitle));
+    if (typeof value.of === 'string') found.add(personKey(value.of, value.ofTitle));
+    Object.entries(value).forEach(([key, child]) => { if (key !== 'mention') statedPeople(child, found); });
+  }
+  return found;
+}
+
 function regenerate(value, file, counter, issuance = []) {
   if (Array.isArray(value)) {
     value.forEach((item) => regenerate(item, file, counter, issuance));
@@ -158,27 +173,28 @@ function regenerate(value, file, counter, issuance = []) {
   if (!value || typeof value !== 'object') return;
   delete value.mention;
   const isDocument = file.includes('/data/documents/') && Array.isArray(value.entries);
-  let anchor = null;
-  let placesOnly = false;
-  if (typeof value.english === 'string' && file.includes('/data/documents/')) anchor = 'english';
-  else if (value.type === 'generic' && typeof value.content === 'string') anchor = 'content';
-  else if (value.type === 'death' && typeof value.circumstances === 'string') anchor = 'circumstances';
-  else if (typeof value.place === 'string' && !isDocument) [anchor, placesOnly] = ['place', true];
-  const own = anchor ? recognizeMentions(value[anchor], { placesOnly }) : [];
-  const inherited = !isDocument && value.type === undefined ? issuance : [];
-  const unique = new Map(mergePeople([...own, ...inherited]).map((item) => [JSON.stringify(item), item]));
-  const name = (item) => item.person ?? item.place;
-  const mention = [...unique.values()].sort((left, right) => name(left).localeCompare(name(right))
-    || JSON.stringify(left).localeCompare(JSON.stringify(right)));
-  if (mention.length) {
-    const entries = Object.entries(value);
-    for (const key of Object.keys(value)) delete value[key];
-    for (const [key, child] of entries) {
-      value[key] = child;
-      if (key === anchor) value.mention = mention;
+  const hasEnglish = typeof value.english === 'string' && file.includes('/data/documents/');
+  const isEntry = !isDocument && (hasEnglish || Array.isArray(value.facts) || Array.isArray(value.guesses));
+  if (isEntry) {
+    const texts = [...(hasEnglish ? [value.english] : []), ...factTexts(value)];
+    const items = [...texts.flatMap((text) => recognizeMentions(text)), ...issuance];
+    const unique = new Map(mergePeople(items).map((item) => [JSON.stringify(item), item]));
+    const name = (item) => item.person ?? item.place;
+    const stated = statedPeople(value.facts ?? (value.type ? value : null));
+    const mention = [...unique.values()]
+      .filter((item) => item.person === undefined || !stated.has(personKey(item.person, item.personTitle)))
+      .sort((left, right) => name(left).localeCompare(name(right))
+        || JSON.stringify(left).localeCompare(JSON.stringify(right)));
+    if (mention.length) {
+      const entries = Object.entries(value);
+      for (const key of Object.keys(value)) delete value[key];
+      for (const [key, child] of entries) {
+        value[key] = child;
+        if (key === 'english') value.mention = mention;
+      }
+      if (!value.mention) value.mention = mention;
+      counter.mentions += mention.length;
     }
-    if (!('mention' in value)) value.mention = mention;
-    counter.mentions += mention.length;
   }
   const childIssuance = isDocument && typeof value.place === 'string'
     ? recognizeMentions(value.place, { placesOnly: true }) : [];

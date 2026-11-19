@@ -9,12 +9,6 @@
       "english": "Elector Friedrich I. of the Palatinate declares that a dispute had occurred between his faithful servant Hans von Helmstadt, son of Andreas (+), on one side, and Barbara von Rosenberg, widow of Engelhard von Thüngen (+) (Tungen), on the other, regarding a letter that Barbara should hand over to the aforementioned Martin [sic]. After judgment by the palatinate judges and counselors that the document or a credible vidimus shall be delivered to Martin, as also evidenced by a judgment sealed by Bishop Gottfried IV of Würzburg (+) concerning the redemption of the office of Klingenberg dated April 4, 1453, Elector Friedrich certifies the intact judgment (see No. 71 referral 1) on parchment and seal.\n\nDate: August 9, 1463 (on Tuesday before St. Lawrence's Eve)\n\nSealer: Elector Friedrich I. of the Palatinate",
       "mention": [
         {
-          "person": "Barbara von Rosenberg"
-        },
-        {
-          "person": "Engelhard von Thüngen"
-        },
-        {
           "person": "Gotfried of Würzburg",
           "personTitle": [
             "Bishop"
@@ -22,6 +16,9 @@
         },
         {
           "person": "Hans von Helmstadt"
+        },
+        {
+          "person": "Hans von Helmstatt"
         },
         {
           "place": "thuengen"
@@ -37,12 +34,7 @@
         {
           "person": "Barbara von Rosenberg",
           "type": "generic",
-          "content": "was involved in a dispute with Hans von Helmstatt over a document she was ordered to hand over.",
-          "mention": [
-            {
-              "person": "Hans von Helmstatt"
-            }
-          ]
+          "content": "was involved in a dispute with Hans von Helmstatt over a document she was ordered to hand over."
         }
       ]
     }

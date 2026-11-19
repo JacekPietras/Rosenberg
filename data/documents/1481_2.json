@@ -9,19 +9,14 @@
       "english": "Sir Georg von Rosenberg had a dispute with Sir Konrad von Vorlingen, whereupon the members of the Unicorn company, to which Wilwolt also belonged, struck von Vorlingen and set him on the barriers.",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
+          "place": "heidelberg"
         }
       ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "had a dispute with Konrad von Vorlingen at the Heidelberg tournament; members of the Unicorn company struck Vorlingen and set him on the barriers.",
-          "mention": [
-            {
-              "place": "heidelberg"
-            }
-          ]
+          "content": "had a dispute with Konrad von Vorlingen at the Heidelberg tournament; members of the Unicorn company struck Vorlingen and set him on the barriers."
         }
       ]
     }

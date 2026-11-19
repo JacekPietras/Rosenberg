@@ -14,9 +14,6 @@
           "person": "Gotfried von Hohenlohe"
         },
         {
-          "person": "Konrad von Uissigheim"
-        },
-        {
           "person": "Rudolf of Wertheim"
         },
         {
@@ -27,32 +24,17 @@
         {
           "person": "Konrad von Uissigheim",
           "type": "generic",
-          "content": "served as an arbitrator in a dispute between Heinrich, Count of Henneberg, and Rudolf, Count of Wertheim.",
-          "mention": [
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ]
+          "content": "served as an arbitrator in a dispute between Heinrich, Count of Henneberg, and Rudolf, Count of Wertheim."
         },
         {
           "person": "Konrad von Uissigheim",
           "type": "generic",
-          "content": "with the other arbitrators, ruled that Heinrich, Count of Henneberg, must transfer Prozelten and its appurtenances to Rudolf, Count of Wertheim.",
-          "mention": [
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ]
+          "content": "with the other arbitrators, ruled that Heinrich, Count of Henneberg, must transfer Prozelten and its appurtenances to Rudolf, Count of Wertheim."
         },
         {
           "person": "Konrad von Uissigheim",
           "type": "generic",
-          "content": "with the other arbitrators, ruled that Rudolf, Count of Wertheim, must surrender one third of Laudenbach to Heinrich, Count of Henneberg, under fief law.",
-          "mention": [
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ]
+          "content": "with the other arbitrators, ruled that Rudolf, Count of Wertheim, must surrender one third of Laudenbach to Heinrich, Count of Henneberg, under fief law."
         }
       ]
     }

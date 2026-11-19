@@ -9,9 +9,6 @@
       "english": "Rothenburg to Kunz von Rosenberg: Involvement of Lutz Kutrolf in the Peasants' War.",
       "mention": [
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
           "place": "rothenburg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "was addressed in a letter from Rothenburg concerning Lutz Kutrolf’s participation in the Peasants’ War.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "was addressed in a letter from Rothenburg concerning Lutz Kutrolf’s participation in the Peasants’ War."
         }
       ]
     }

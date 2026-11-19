@@ -10,9 +10,6 @@
       "english": "The archive summary identifies the previously mentioned Bede income as revenues pledged at Prosselsheim. The transcription says that Anselm von Rosenberg also acquired this income by exchange and received a written bond confirming it from Gotfried Schenk von Limpurg, Bischof. Contractuum Limpurg, fol. 60. Date taken from the copybook.",
       "mention": [
         {
-          "person": "Anselm von Rosenberg"
-        },
-        {
           "person": "Gotfried Schenk von Limpurg",
           "personTitle": [
             "Bischof"
@@ -26,12 +23,7 @@
         {
           "person": "Anselm von Rosenberg",
           "type": "generic",
-          "content": "also acquired the same tax revenue in turn and received a charter for it from Gotfried Schenk von Limpurg.",
-          "mention": [
-            {
-              "person": "Gotfried Schenk von Limpurg"
-            }
-          ]
+          "content": "also acquired the same tax revenue in turn and received a charter for it from Gotfried Schenk von Limpurg."
         }
       ],
       "img": [

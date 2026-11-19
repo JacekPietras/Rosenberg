@@ -12,15 +12,6 @@
           "person": "Georg Marschalk zu Pappenheim"
         },
         {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Heinrich Marschalk zu Pappenheim"
-        },
-        {
           "person": "Konrad Marschalk zu Pappenheim"
         },
         {
@@ -43,15 +34,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "sealed Heinrich Marschalk zu Pappenheim’s sale of the Widem and Vogtei at Schambach to the Pappenheim convent.",
-          "mention": [
-            {
-              "person": "Heinrich Marschalk zu Pappenheim"
-            },
-            {
-              "place": "pappenheim"
-            }
-          ]
+          "content": "sealed Heinrich Marschalk zu Pappenheim’s sale of the Widem and Vogtei at Schambach to the Pappenheim convent."
         }
       ]
     }

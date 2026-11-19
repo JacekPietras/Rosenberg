@@ -10,9 +10,6 @@
       "english": "King Ludwig (I) confirms to Konrad von Wildenroth, his wife, and heirs the debt of 400 pounds of Augsburg pennies for the purchase of Wildenroth Castle, Konrad having returned to us the letters he had concerning it [...]. He further acknowledges that he owes him: 30 pounds of Munich pennies for standing surety for Konrad von Winchel for the guard duty at Friedberg Castle; 13 pounds of Munich pennies for standing surety for Otto and his brother von Etschlohe for a gelding given to his master of the hunt, Cholben; 15 pounds of Munich pennies for the purchase of a gelding for the man from Wilzhofen; 15 pounds of Augsburg pennies for the purchase of a horse; and 50 pounds of Munich pennies for the purchase of a horse for Seifrid von [Donau]altheim. Konrad has returned the counter-letter he had under our seal. He acknowledges further debts: 60 pounds of Munich pennies owed by his brother for a horse; 30 pounds of Munich pennies for a riding horse his brother bought for Marshal Wilhelm von Biberbach; and 32 pounds of Munich pennies owed by his brother for standing surety for a horse that he gave to Herman von Rosenberg. Konrad has returned our brother's counter-letter concerning this. He confirms the debt of 300 pounds of Munich pennies for Konrad's service at Frankfurt and for his undertaking to serve Ludwig throughout the war with the Duke of Austria with 10 armed horsemen within the land [Upper Bavaria] and 5 outside it, and thereafter to remain forever in Ludwig's and his heirs' service and loyalty. He acknowledges total debts of 450 pounds of Augsburg pennies and 530 pounds of Munich pennies. As security, he pledges to the recipients Wildenroth Castle, with its people, properties, appurtenances and revenues, while reserving for himself and his heirs the right to redeem it for the stated sum within the next 10 years from Candlemas onward, div schierst chvmt. He sets the redemption period from 14 days before to 14 days after Candlemas. He stipulates that the castle and properties shall become the recipients' rightful fief if he or his heirs do not redeem them from the recipients or their heirs within those 10 years.",
       "mention": [
         {
-          "person": "Herman von Rosenberg"
-        },
-        {
           "person": "König Ludwig",
           "personTitle": [
             "King"
@@ -26,15 +23,7 @@
         {
           "person": "Herman von Rosenberg",
           "type": "generic",
-          "content": "received a horse from King Ludwig’s brother.",
-          "mention": [
-            {
-              "person": "König Ludwig",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "received a horse from King Ludwig’s brother."
         }
       ]
     }

@@ -39,12 +39,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "bought the castle Minneberg from Eberhard Rude.",
-          "mention": [
-            {
-              "person": "Eberhard Rüd"
-            }
-          ]
+          "content": "bought the castle Minneberg from Eberhard Rude."
         },
         {
           "person": "Eberhard Rude",
@@ -62,12 +57,7 @@
         {
           "person": "Agnes",
           "type": "generic",
-          "content": "consented to the sale of the castle Minneberg by her husband Eberhard Rude.",
-          "mention": [
-            {
-              "person": "Eberhard Rüd"
-            }
-          ]
+          "content": "consented to the sale of the castle Minneberg by her husband Eberhard Rude."
         },
         {
           "person": "Eberhard Rude",
@@ -80,12 +70,7 @@
         {
           "person": "Agnes",
           "type": "generic",
-          "content": "sealed the charter under the seal of her husband Eberhard Rude.",
-          "mention": [
-            {
-              "person": "Eberhard Rüd"
-            }
-          ]
+          "content": "sealed the charter under the seal of her husband Eberhard Rude."
         }
       ]
     }

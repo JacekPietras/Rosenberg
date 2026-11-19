@@ -18,12 +18,6 @@
           ]
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
           "place": "schweigern"
         }
       ],
@@ -50,31 +44,12 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "received King Ruprecht’s permission jointly with Konrad von Rosenberg to appoint a reeve and aldermen and to hold a high court, stocks, and gallows in Schweigern and its jurisdiction.",
-          "mention": [
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "person": "Konrad von Rosenberg"
-            },
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "received King Ruprecht’s permission jointly with Konrad von Rosenberg to appoint a reeve and aldermen and to hold a high court, stocks, and gallows in Schweigern and its jurisdiction."
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "was identified as a son of a Konrad von Rosenberg whose identity is not established.",
-          "mention": [
-            {
-              "person": "Konrad von Rosenberg"
-            }
-          ]
+          "content": "was identified as a son of a Konrad von Rosenberg whose identity is not established."
         }
       ]
     }

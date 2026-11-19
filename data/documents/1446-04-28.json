@@ -10,9 +10,6 @@
       "english": "[Marginal addition: Prosselsheim, Volkach, Röttingen.] The archive summary identifies Anselm von Rosenberg as Ritter. The transcription records that on the Thursday after St Mark’s Day in 1446, Gotfried Schenk von Limpurg, Bischof, pledged him twenty yearly Bede payments secured on the Bede revenues from Köhler. Register of contracts of Limpurg, fol. 60. The later hand adds the places Prosselsheim, Volkach, and Röttingen.",
       "mention": [
         {
-          "person": "Anselm von Rosenberg"
-        },
-        {
           "person": "Gotfried Schenk von Limpurg",
           "personTitle": [
             "Bischof"
@@ -29,12 +26,7 @@
         {
           "person": "Anselm von Rosenberg",
           "type": "generic",
-          "content": "received from Gotfried Schenk von Limpurg twenty annual rents secured on the tax of Keller.",
-          "mention": [
-            {
-              "person": "Gotfried Schenk von Limpurg"
-            }
-          ]
+          "content": "received from Gotfried Schenk von Limpurg twenty annual rents secured on the tax of Keller."
         }
       ],
       "img": [

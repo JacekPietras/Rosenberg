@@ -9,16 +9,7 @@
       "english": "Copies of various documents:\n1) Bishopric of Würzburg enfeoffment letter for Hans von Rosenberg Jr., concerning 1/3 of the tithe at Burken, a portion at Bofsheim, a portion at Rosenberg Castle, and a portion at Esselbach, 1445;\n2) Palatinate enfeoffment letter for Erasmus von Rosenberg concerning 1/4 at Rosenberg, the fortress and the forecourt, 1451;\n3) Agreement between Electoral Mainz and Albrecht Christoph von Rosenberg regarding hunting and grazing on Hochstetter territory and in this region, March 28, 1596;\n4) Agreement between Hans von Vinsterlohe of Lautenbach and Zaisolph von Rosenberg concerning the sheep drive to Dürrhof, March 20, 1559;\n5) Purchase contract between Balthasar Kettel as seller, and Arnold von Rosenberg as buyer, concerning a portion of the village of Buch including the castle mound and a quarter of the court there (a Wertheim fief), 1491;\n6) Agreement between Hans von Rosenberg and Konrad von Rosenberg regarding the tavern at Bofsheim and the sheep drive at Bronnacker, 1479;\n7) Agreement between Albrecht, Philipp, Jacob and Hanns Carius von Rosenberg concerning the sheep drive at Hohenstadt, Rosenberg and Hirschlanden, November 20, 1559;\n8) Document of Michael von Rosenberg wherein he acknowledges having sold to Hanns Glatz 1/8 of the grain tithe at Hohenstadt and the farm at Rosenberg;\n9) Purchase deed concerning 1/4 of the tithe at Sindolsheim which Ulrich von Rosenberg sold to Hanns Rüdt of Bödigheim at Eberstadt, 1437;\n10) Purchase deed concerning 1/4 of the great tithe at Sindolsheim, and half of the small tithe, then also half of a quarter of the tithe at Mattelnheim, which tithes Heinrich von Seckendorf sold to Konrad von Rosenberg;\n11) Agreement between the von Rosenberg and von Rüdt families regarding hunting, cattle grazing and the tithe of Sindolsheim, November 16, 1585;\n12) Judgment letter of the Würzburg feudal judge on behalf of the von Rosenberg family as heirs to fiefs against the von Wolfskeel family as heirs to ownership of Hans Eucharius von Rosenberg, concerning the separation of the fief from the ownership, December 23, 1579;\n13) Settlement between the von Rosenberg and von Wolfskeel families regarding what was conducted upon granting the proprietary properties at Rosenberg, March 23, 1580;\n14) Compromise between the feudal heirs and the ownership heir of Philipp Jakob von Rosenberg concerning the separation of the fief from the ownership, March 11, 1584;\n15) Receipt of the Rosenberg proprietary heirs to Albrecht Christoph von Rosenberg for 3,000 guilders for proprietary properties at Rosenberg sold to the latter, September 1, 1595;\n16) Purchase deed wherein the deceased daughters and ownership heirs of Konrad von Rosenberg sell to Albrecht Christoph von Rosenberg all properties and revenues that had fallen to them by inheritance and ownership outside Rosenberg for 1,200 guilders, enacted on the Feast of St. Peter 1596;\n17) Antichretic pledge of the tithe at Seckach from Albrecht von Rüdt to Albrecht Christoph von Rosenberg for a loan of 1,667 thalers, February 22, 1628.",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
           "place": "buch"
-        },
-        {
-          "person": "Erasmus von Rosenberg"
         },
         {
           "place": "esselbach"
@@ -27,16 +18,13 @@
           "person": "Hans Rüd of Bödigheim"
         },
         {
-          "person": "Hans von Rosenberg"
+          "person": "Hans Rüd von Bödigheim"
         },
         {
           "person": "Heinrich von Seckendorf"
         },
         {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Michael von Rosenberg"
+          "person": "Heinrich von Seckendorff"
         },
         {
           "person": "Philipp Jakob von Rosenberg"
@@ -48,9 +36,6 @@
           "place": "sindolsheim-church"
         },
         {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
           "place": "wertheim-stiftskirche"
         },
         {
@@ -58,9 +43,6 @@
         },
         {
           "place": "wurzburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
@@ -70,28 +52,12 @@
             "der Jüngere"
           ],
           "type": "generic",
-          "content": "received a fief from the Bishop of Würzburg comprising a third of the tithe at Burken, a share in Bofsheim, a share in Rosenberg Castle, and a share in Esselbach.",
-          "mention": [
-            {
-              "place": "esselbach"
-            },
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "received a fief from the Bishop of Würzburg comprising a third of the tithe at Burken, a share in Bofsheim, a share in Rosenberg Castle, and a share in Esselbach."
         },
         {
           "person": "Erasmus von Rosenberg",
           "type": "generic",
           "content": "received a quarter share of Rosenberg Castle and its forecourt as a Palatinate fief.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ],
           "date": "1451"
         },
         {
@@ -110,195 +76,94 @@
           "person": "Arnold von Rosenberg",
           "type": "generic",
           "content": "bought part of Buch am Ahorn, including the castle site and a quarter share in the court, from Balthasar Kettel as a fief of Wertheim.",
-          "mention": [
-            {
-              "place": "buch"
-            },
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ],
           "date": "1491"
         },
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
           "content": "made an agreement with Konrad von Rosenberg concerning the inn at Bofsheim and sheep driving at Bronnacker.",
-          "mention": [
-            {
-              "person": "Konrad von Rosenberg"
-            }
-          ],
           "date": "1479"
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
           "content": "made an agreement with Hans von Rosenberg concerning the inn at Bofsheim and sheep driving at Bronnacker.",
-          "mention": [
-            {
-              "person": "Hans von Rosenberg"
-            }
-          ],
           "date": "1479"
         },
         {
           "person": "Albrecht Carius von Rosenberg",
           "type": "generic",
           "content": "was party to an agreement concerning sheep driving at Hohenstadt, Rosenberg, and Hirschlanden.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ],
           "date": "1559-11-20"
         },
         {
           "person": "Philipp Carius von Rosenberg",
           "type": "generic",
           "content": "was party to an agreement concerning sheep driving at Hohenstadt, Rosenberg, and Hirschlanden.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ],
           "date": "1559-11-20"
         },
         {
           "person": "Jakob Carius von Rosenberg",
           "type": "generic",
           "content": "was party to an agreement concerning sheep driving at Hohenstadt, Rosenberg, and Hirschlanden.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ],
           "date": "1559-11-20"
         },
         {
           "person": "Hans Carius von Rosenberg",
           "type": "generic",
           "content": "was party to an agreement concerning sheep driving at Hohenstadt, Rosenberg, and Hirschlanden.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ],
           "date": "1559-11-20"
         },
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "acknowledged that he had sold Hanns Glatz an eighth share of the fruit tithe at Hohenstadt and an estate at Rosenberg.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "acknowledged that he had sold Hanns Glatz an eighth share of the fruit tithe at Hohenstadt and an estate at Rosenberg."
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
           "content": "sold Hans Rüdt von Bödigheim zu Eberstadt a quarter share of the tithe at Sindolsheim.",
-          "mention": [
-            {
-              "person": "Hans Rüd von Bödigheim"
-            },
-            {
-              "place": "sindolsheim-church"
-            }
-          ],
           "date": "1437"
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "bought Heinz von Seckendorff’s quarter share of the great tithe, half of the small tithe at Sindolsheim, and half of a quarter share of the tithe at Mattelnheim.",
-          "mention": [
-            {
-              "person": "Heinrich von Seckendorff"
-            },
-            {
-              "place": "sindolsheim-church"
-            }
-          ]
+          "content": "bought Heinz von Seckendorff’s quarter share of the great tithe, half of the small tithe at Sindolsheim, and half of a quarter share of the tithe at Mattelnheim."
         },
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
           "content": "made an agreement with the von Rüdt family concerning hunting, livestock pasture, and the tithe at Sindolsheim.",
-          "mention": [
-            {
-              "place": "sindolsheim-church"
-            }
-          ],
           "date": "1585-11-16"
         },
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
           "content": "as heirs to fiefs litigated the separation of fiefs from allodial property against the von Wolfskeel family, heirs to Hans Eucharius von Rosenberg’s allodial property.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "wolffskeel"
-            }
-          ],
           "date": "1579-12-23"
         },
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
           "content": "settled with the von Wolfskeel family what was to be addressed when the latter received allodial property at Rosenberg.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "wolffskeel"
-            }
-          ],
           "date": "1580-03-23"
         },
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
           "content": "settled a dispute between the fief heirs and the allodial heir of Philipp Jacob von Rosenberg concerning the separation of fiefs from allodial property.",
-          "mention": [
-            {
-              "person": "Philipp Jakob von Rosenberg"
-            }
-          ],
           "date": "1584-03-11"
         },
         {
           "subject": "the von Rosenberg family",
           "type": "generic",
           "content": "acknowledged receipt of 3,000 florins from Albrecht Christoph von Rosenberg for allodial property sold to him at Rosenberg.",
-          "mention": [
-            {
-              "person": "Albrecht Christoph von Rosenberg"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ],
           "date": "1595-09-01"
         },
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
           "content": "bought from the daughters and allodial heirs of the late Konrad von Rosenberg the inherited goods and revenues outside Rosenberg for 1,200 florins.",
-          "mention": [
-            {
-              "person": "Konrad von Rosenberg"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ],
           "date": "1596"
         },
         {

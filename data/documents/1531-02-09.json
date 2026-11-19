@@ -15,6 +15,9 @@
           "person": "Hans von Helmstadt"
         },
         {
+          "person": "Katharina von Helmstatt"
+        },
+        {
           "place": "liebenstein-castle"
         },
         {
@@ -40,15 +43,7 @@
             "Vogt zu Lauterburg"
           ],
           "type": "generic",
-          "content": "served among the mediators and sealers of the marriage agreement between Katharina von Helmstatt and Philipp von Liebenstein.",
-          "mention": [
-            {
-              "person": "Katharina von Helmstatt"
-            },
-            {
-              "person": "Philipp von Liebenstein"
-            }
-          ]
+          "content": "served among the mediators and sealers of the marriage agreement between Katharina von Helmstatt and Philipp von Liebenstein."
         }
       ]
     }

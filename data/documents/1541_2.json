@@ -18,7 +18,10 @@
           "place": "baldersheim"
         },
         {
-          "person": "Lorenz von Rosenberg"
+          "person": "Konrad of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
         },
         {
           "place": "wurzburg"
@@ -28,18 +31,7 @@
         {
           "person": "Lorenz von Rosenberg",
           "type": "generic",
-          "content": "received half the fiefs at Baldersheim from Bishop Konrad of Würzburg.",
-          "mention": [
-            {
-              "place": "baldersheim"
-            },
-            {
-              "person": "Konrad of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ]
+          "content": "received half the fiefs at Baldersheim from Bishop Konrad of Würzburg."
         }
       ]
     }

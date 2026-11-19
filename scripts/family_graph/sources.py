@@ -80,21 +80,20 @@ def walk_assertions(document, path, include_text=False):
             current_date = '' if explicit else value.get('date', inherited)
             current_context = {**(context or {}), **{k: value[k] for k in ('source', 'url', 'book', 'title') if k in value}}
             if 'mention' in value:
-                current_context['places'] = mention_terms(value['mention'], f'{path}#{pointer}')[1]
+                current_context['people'], current_context['places'] = mention_terms(value['mention'], f'{path}#{pointer}')
             for key, child in value.items():
                 location = pointer + '/' + key.replace('~', '~0').replace('/', '~1')
-                if (include_text and key == 'english' and isinstance(child, str)
-                    and path.startswith('data/documents/') and child.strip()):
+                if include_text and key == 'mention' and isinstance(child, list) and child:
                     try:
                         bounds = inherited_date_bounds(current_date)
                     except (ValueError, TypeError):
                         # Some legacy document dates use day 00. Preserve the
-                        # text provenance, but do not invent chronology for it.
+                        # provenance, but do not invent chronology for it.
                         bounds = None
                     ref = SourceRef(path, location, fingerprint(child), 'text',
-                                    json.dumps(current_context.get('source', ''), ensure_ascii=False, sort_keys=True))
-                    yield ref, Observation(ref, child, current_date, bounds, current_context,
-                                           *mention_terms(value.get('mention'), f'{path}#{pointer}'))
+                                    json.dumps(current_context.get('source', current_context.get('book', '')), ensure_ascii=False, sort_keys=True))
+                    yield ref, Observation(ref, '', current_date, bounds, current_context,
+                                           *mention_terms(child, f'{path}#{location}'))
                 if key in ('facts', 'guesses'):
                     if not isinstance(child, list):
                         raise ValueError(f'{path}#{location}: expected an array')
@@ -116,9 +115,6 @@ def walk_assertions(document, path, include_text=False):
                                 assertion.mentions.append(Mention(ref.key + '/' + field, fact[field], field,
                                     tuple(fact.get(field + 'Title', [])), fact.get(field + 'Deceased') is True, assertion))
                         yield ref, assertion
-                        if include_text and fact['type'] == 'generic':
-                            yield ref, Observation(ref, fact['content'], historical_date, bounds, current_context,
-                                               *mention_terms(fact.get('mention'), f'{ref.key}'))
                 else:
                     yield from visit(child, location, current_date, current_context)
         elif isinstance(value, list):

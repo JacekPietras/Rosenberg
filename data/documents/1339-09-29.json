@@ -22,6 +22,9 @@
           ]
         },
         {
+          "place": "nuremberg"
+        },
+        {
           "person": "Otto of Würzburg",
           "personTitle": [
             "Bishop"
@@ -29,6 +32,9 @@
         },
         {
           "place": "wallduern"
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
@@ -39,15 +45,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "was designated as an arbitrator for Archbishop Heinrich of Mainz, or to be replaced by the local Amtmann, in the six-year alliance with the bishop of Würzburg and the Burggraf of Nürnberg.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "was designated as an arbitrator for Archbishop Heinrich of Mainz, or to be replaced by the local Amtmann, in the six-year alliance with the bishop of Würzburg and the Burggraf of Nürnberg."
         }
       ]
     }

@@ -32,25 +32,17 @@
           ]
         },
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Konrad von Weinsberg"
         },
         {
-          "person": "Konrad von Weinsberg"
+          "place": "weinsberg"
         }
       ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "sealed the Weinsberg brothers’ debt agreement with Fürderer von Waldeck.",
-          "mention": [
-            {
-              "person": "Fürderer von Waldeck"
-            },
-            {
-              "place": "weinsberg"
-            }
-          ]
+          "content": "sealed the Weinsberg brothers’ debt agreement with Fürderer von Waldeck."
         }
       ]
     }

@@ -9,9 +9,6 @@
       "english": "Instrument of Notary Johannes Vogt: Canon Heinrich von Redwitz, Dr. jur. utr. Johann Pirckheymer, Archdeacon Wernher Wolfskel and the canons Wilhelm von Pfahlheim, Bernhart Adelmann von Adelmannsfelden, Gabriel von Schawmberg, Erasmus von Rosenberg lic. jur. utr., Bernhart Artzt and Wilhelm von Thaun file on behalf of Bishop Wilhelm of Eichstätt an appeal to Emperor Friedrich III against the summons (Ladbrief) dated by Ä v. Eyb, Landrichter of Nuremberg, for the Eichstätt subjects Endres Peck of Herrieden and Peter Omman of Armbawr (Ornbau) regarding Loy Leutershover's and Jörg Weber's lawsuit. - Witnesses: Ulrich Steltzer and Johann Karg, pensioners of the cathedral church.",
       "mention": [
         {
-          "person": "Erasmus von Rosenberg"
-        },
-        {
           "place": "herrieden"
         },
         {
@@ -22,12 +19,7 @@
         {
           "person": "Erasmus von Rosenberg",
           "type": "generic",
-          "content": "joined the appeal on behalf of Bishop Wilhelm of Eichstätt to Emperor Friedrich III against a summons by the Nuremberg Landrichter.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            }
-          ]
+          "content": "joined the appeal on behalf of Bishop Wilhelm of Eichstätt to Emperor Friedrich III against a summons by the Nuremberg Landrichter."
         }
       ]
     }

@@ -12,9 +12,6 @@
           "place": "berlichingen"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "person": "Konrad von Berlichingen"
         },
         {
@@ -25,12 +22,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "was involved in a dispute with Konrad von Berlichingen.",
-          "mention": [
-            {
-              "person": "Konrad von Berlichingen"
-            }
-          ]
+          "content": "was involved in a dispute with Konrad von Berlichingen."
         }
       ]
     }

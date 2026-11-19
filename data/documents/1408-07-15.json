@@ -23,37 +23,18 @@
         },
         {
           "place": "rosenberg-town"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "received one quarter of Rosenberg Fortress and its outer court as a perpetual fief from King Ruprecht.",
-          "mention": [
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "received one quarter of Rosenberg Fortress and its outer court as a perpetual fief from King Ruprecht."
         },
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "promised not to harm the Palatinate from his share of Rosenberg.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "promised not to harm the Palatinate from his share of Rosenberg."
         }
       ]
     },
@@ -78,27 +59,13 @@
         },
         {
           "place": "rosenberg-town"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Ulrich von Rosenberg",
           "type": "generic",
-          "content": "issued a feudal acknowledgment to King Ruprecht for the grant of one quarter of the castle and outer court at Rosenberg.",
-          "mention": [
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "issued a feudal acknowledgment to King Ruprecht for the grant of one quarter of the castle and outer court at Rosenberg."
         }
       ]
     }

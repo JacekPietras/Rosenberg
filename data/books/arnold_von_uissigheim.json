@@ -32,6 +32,14 @@
     {
       "german": "Urkundlich erscheint der Name Uissigheim erstmals im Jahr 1178. Bis zu ihrem Absterben im Jahr 1546 waren die Uissigheimer Lehnsleute des Mainzer Erzstifts, daneben auch hohenlohische und wertheimische Vasallen, ihre geistlichen Mitglieder Mönche in Bronnbach und Domherrn in Würzburg. Trug der erste nachweisbare Vertreter des Geschlechts den Namen Rupert, so setzte sich bereits unter seinen Söhnen und dann in nahezu jeder späteren Generation Arnold als „Leitname\" durch. So erscheinen bereits 1178 Arnold und Konrad von Uissigheim als Freie {liberi) unter den Zeugen einer Bronnbacher Urkunde. Daneben treten Ministerialen dieses Namens auf: Im gleichen Jahr sind ein Herbord und 1282-88 die Brüder Eberhard und Konrad als Dienstmannen der Wertheimer Grafen, auch Konrads Sohn Eberhard und ein Arnold von Uissigheim als Vasallen der Würzburger Bischöfe bezeugt. Seit 1275 werden Mitglieder der Familie nicht nur liberi und nobiles, sondern auch „Ritter\" genannt.",
       "english": "The name Uissigheim first appears in documents in 1178. Until their death in 1546, the Uissigheim feudal lords of the Mainz Archbishopric, as well as Hohenloh and Wertheim vassals, their spiritual members were monks in Bronnbach and canons in Würzburg. While the first verifiable representative of the family bore the name Ruprecht, Arnold established itself as the \"leading name\" among his sons and then in almost every later generation. As early as 1178, Arnold von Uissigheim and Konrad von Uissigheim appeared as free {liberi) among the witnesses to a Bronnbach document. In addition, ministerials of this name appear: In the same year, a Herbord and 1282-88 the brothers Eberhard and Konrad are attested as servants of the Wertheim counts, and Konrad's son Eberhard and an Arnold von Uissigheim are also attested as vassals of the Würzburg bishops. Since 1275, members of the family have been called not only liberi and nobiles, but also \"Ritter\".",
+      "mention": [
+        {
+          "place": "bronnbach"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Uissigheim",
@@ -53,33 +61,18 @@
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "witnessed a document from Bronnbach.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            }
-          ],
           "date": "1178"
         },
         {
           "person": "Konrad von Uissigheim",
           "type": "generic",
           "content": "witnessed a document from Bronnbach.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            }
-          ],
           "date": "1178"
         },
         {
           "person": "Herbord von Uissigheim",
           "type": "generic",
           "content": "served as a Dienstmann of the Counts of Wertheim.",
-          "mention": [
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ],
           "date": "1178"
         },
         {
@@ -99,6 +92,11 @@
     {
       "german": "„Arnold\" erscheint bei den Uissigheimern neben Heinrich und Eberhard häufig als der Name des Erstgeborenen: Nach 1178 gibt es im Jahr 1219 einen so benannten Uber de Ussenkeim; 1225 werden als Burgherrn der mainzischen Gamburg über dem Taubertal Arnoldus de Ussincheim et filius eius Eberhardus, castellani de Gamburc bezeichnet; im Folgejahr sind ein vir nobilis Arnold und 1247 als Würzburger Vasallen Eberhardus et Arnoldus fratres, nobiles de Ussincheim, fideles Herbipolensis episcopi sowie ein weiterer Träger dieses Namens ist 1298 als canonicus ecclesiae Herbipolensis bezeugt; von diesem leitet möglicherweise die bis ins 20. Jahrhundert bestehende Würzburger Domherrnkurie „Uissigheimer Hof\" ihre Benennung her.",
       "english": "\"Arnold\" often appears among the people of Uissigheim, alongside Heinrich and Eberhard, as the name of the firstborn: after 1178, there is an Uber de Ussenkeim named in this way in 1219; In 1225 Arnoldus de Ussinheim et filius eius Eberhardus, castellani de Gamburc were named as the lords of the Mainz Gamburg above the Taubertal; in the following year a vir nobilis Arnold and in 1247 as Würzburg vassals Eberhardus et Arnoldus fratres, nobiles de Ussinheim, fideles Herbipolensis episcopi and another bearer of this name is attested in 1298 as canonicus ecclesiae Herbipolensis; The Würzburg canon curia “Uissigheimer Hof”, which existed until the 20th century, may have derived its name from this.",
+      "mention": [
+        {
+          "place": "wurzburg"
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Uissigheim",
@@ -144,22 +142,12 @@
           "person": "Eberhard von Uissigheim",
           "type": "generic",
           "content": "served as a vassal of the Bishop of Würzburg.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ],
           "date": "1247"
         },
         {
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "served as a vassal of the Bishop of Würzburg.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ],
           "date": "1247"
         },
         {
@@ -179,11 +167,6 @@
           ],
           "type": "generic",
           "content": "may have given his name to the Würzburg canon’s curia known as Uissigheimer Hof.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ],
           "date": "1298"
         }
       ]
@@ -299,11 +282,6 @@
           ],
           "type": "generic",
           "content": "may be commemorated by the grave monument preserved in the west wall of the church at Uissigheim.",
-          "mention": [
-            {
-              "place": "uissigheim"
-            }
-          ],
           "date": "1331-12-31"
         },
         {
@@ -342,6 +320,11 @@
     {
       "german": "Erst eine Urkunde des Wertheimer Archivs bringt uns näher an die Person „unseres\" Arnold von Uissigheim heran: Unter dem Datum des 24. November 1332 stellten der Ritter Arnold der Altere von Uissigheim, Arnold der Jüngere, Ritter sowie dessen Brüder Heinrich und Eberhard, alle des Erstgenannten Söhne, eine Urkunde aus, die eine Ubereinkunft mit ihrem gnädigen Herrn, dem Grafen Rudolf (IV.) von Wertheim, dokumentierte: Ich Arnolde von Uzzinchein ritter der elter, und wir, Arnolde der junger, ritter, Heinrich und Eberhart, auch von Uzzinchein gebrudere, dez vorgenanten Arnolde von Uzzinchein sune... Mit nicht weniger als 13 anhängenden Siegeln beurkunden Arnold von Uissigheim d. Ä. und seine Söhne, der jüngere Arnold, gleichfalls Ritter, mit dessen Brüdern Heinrich und Eberhard einen Vertrag mit ihrem Landesherrn.",
       "english": "Only a document from the Wertheim archive brings us closer to the person of \"our\" Arnold von Uissigheim: On November 24, 1332, Arnold von Uissigheim der Ältere, Arnold von Uissigheim der Jüngere, Ritter, and his brothers Heinrich and Eberhard, all sons of the former, issued a document that documented an agreement with their gracious master, Count Rudolf (IV.) von Wertheim: I Arnolde von Uzzinchein der Ältere, Ritter, and we, Arnolde von Uzzinchein der Jüngere, Ritter, Heinrich and Eberhard, also von Uzzinchein brother, the aforementioned Arnolde von Uzzinchein sune... With no less than 13 attached seals certify Arnold von Uissigheim der Ältere and his sons, Arnold von Uissigheim der Jüngere, also Ritter, with his brothers Heinrich and Eberhard signed a contract with their sovereign.",
+      "mention": [
+        {
+          "person": "Rudolf von Wertheim"
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Uissigheim",
@@ -407,11 +390,6 @@
           ],
           "type": "generic",
           "content": "issued an agreement with Count Rudolf von Wertheim.",
-          "mention": [
-            {
-              "person": "Rudolf von Wertheim"
-            }
-          ],
           "date": "1332-11-24"
         },
         {
@@ -422,33 +400,18 @@
           ],
           "type": "generic",
           "content": "issued the agreement with Count Rudolf von Wertheim.",
-          "mention": [
-            {
-              "person": "Rudolf von Wertheim"
-            }
-          ],
           "date": "1332-11-24"
         },
         {
           "person": "Heinrich von Uissigheim",
           "type": "generic",
           "content": "issued the agreement with Count Rudolf von Wertheim.",
-          "mention": [
-            {
-              "person": "Rudolf von Wertheim"
-            }
-          ],
           "date": "1332-11-24"
         },
         {
           "person": "Eberhard von Uissigheim",
           "type": "generic",
           "content": "issued the agreement with Count Rudolf von Wertheim.",
-          "mention": [
-            {
-              "person": "Rudolf von Wertheim"
-            }
-          ],
           "date": "1332-11-24"
         }
       ]
@@ -456,6 +419,14 @@
     {
       "german": "Über die Vorgeschichte dieses Pergaments erfahren wir hierbei Ungewöhnliches: Der jüngere Arnold nämlich hat sich in der Vergangenheit im Wertheimer Territorium des Landfriedensbruchs schuldig gemacht, indem er für einen uflauf verantwortlich genannt wird. Daher wird zwischen Graf Rudolf und dem jüngeren Arnold von Uissigheim vereinbart und eidlich beschworen, daß der Letztere zwischen dem Lichtmesstag des folgenden Jahres (1333 II 2) zehn Jahre lang das Wertheimer Territorium verlassen und sich in dieser Zeit diesem ohne Erlaubnis des Grafen und seiner Erben keine vierzig Meilen annähern dürfe. Der Bannkreis dieser Landesverweisung ist mit vierzig Meilen für zeitübliche Verhältnisse außerordentlich hoch; üblich waren in solchen Fällen acht bis zehn Meilen oder die Benennung von vier Flüssen in den entsprechenden Himmelsrichtungen.",
       "english": "We learn something unusual about the history of this parchment: Arnold der Jüngere was guilty of breaching the peace in the Wertheim territory in the past by being named responsible for an uprising. Therefore, it was agreed and sworn by oath between Count Rudolf von Uissigheim and Arnold von Uissigheim der Jüngere that the latter would not be allowed to leave the Wertheim territory for ten years between Candlemas Day of the following year (1333 II 2) and during this time he would not be allowed to approach it forty miles without the permission of the Count and his heirs. The radius of this expulsion from the country is, at forty miles, extraordinarily high by the standards of the time; In such cases, eight to ten miles or the naming of four rivers in the corresponding cardinal points were common.",
+      "mention": [
+        {
+          "person": "Rudolf von Wertheim"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Uissigheim",
@@ -464,14 +435,6 @@
           ],
           "type": "generic",
           "content": "agreed with Count Rudolf von Wertheim to leave the Wertheim territory for ten years beginning on Candlemas, 2 February 1333.",
-          "mention": [
-            {
-              "person": "Rudolf von Wertheim"
-            },
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ],
           "date": "1332-11-24"
         },
         {
@@ -481,11 +444,6 @@
           ],
           "type": "generic",
           "content": "agreed not to approach within forty miles of Wertheim territory during that period without permission from the count or his heirs.",
-          "mention": [
-            {
-              "place": "wertheim-stiftskirche"
-            }
-          ],
           "date": "1332-11-24"
         }
       ]
@@ -596,11 +554,6 @@
           ],
           "type": "generic",
           "content": "may have been subjected to collective responsibility together with his extended family by Count Rudolf von Wertheim.",
-          "mention": [
-            {
-              "person": "Rudolf von Wertheim"
-            }
-          ],
           "date": "1332-11-24"
         },
         {
@@ -628,14 +581,6 @@
           ],
           "type": "generic",
           "content": "may have been the progenitor of a Rosenberg branch of the von Uissigheim family.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            },
-            {
-              "place": "uissigheim"
-            }
-          ],
           "date": "1332"
         }
       ]
@@ -663,27 +608,28 @@
     {
       "german": "Es gibt weitere zeitgenössische Nachrichten: Eilends brachte in der Nacht des 23. auf den 24. September 1336 ein Mann namens Nikolaus verschiedene Notizen zu Papier, eine Aneinanderreihung der letzten Neuigkeiten, die ihm in den vergangenen Tagen zu Ohren gekommen waren. Bereits nach Mitternacht, halbblind vom Schreiben und ohne die Möglichkeit, das Geschriebene nochmals zu überlesen - all dies berichtet der Schreiber in seiner Schlussschrift - beendete Nikolaus seinen Brief an Rudolf Losse, den Boten und notarius des Erzbischofs Balduin von Trier in der damaligen Papstresidenz Avignon. Unter den verschiedenartigsten Nachrichten stößt man auch auf eine Notiz über Ereignisse im Zusammenhang mit einem „rex Armleder\": In Franken, und zwar in der Gegend von Tauberbischofsheim, hätten die Bauern sich einen König mit Namen Armleder erwählt und seien in großer Zahl, zumeist zu Fuß, die wenigsten zu Pferd, gegen Dörfer und Städte gezogen und hätten dort alle Juden niedergemacht. Zuerst töteten sie alle in Kitzingen, in Ochsenfurt, in Aub, in Mergentheim und in weiteren vier Städten. Sie waren auch vor der Stadt Würzburg, hier freilich ohne Erfolg. Dreimal belagerten sie Tauberbischofsheim - vergeblich: dort war man wohlvorbereitet. Im Ganzen sollen 1500 Juden umgekommen sein, wie man glaubhaft versichere. Selbst jenseits des Rheins fürchtete man die Scharen König Armleders: Sogar in Trier rüsteten Bischof, Grafen, Adel, Bürger und Juden täglich gegen ihn und sein Heer in der Furcht, er könnte den Rhein überschreiten, wenn man sich nicht vorsehe.",
       "english": "There is more contemporary news: On the night of September 23rd to 24th, 1336, a man named Nicolaus hastily wrote down various notes on paper, a series of the latest news that had come to his attention in the past few days. Already after midnight, half-blind from writing and without the opportunity to reread what he had written - the scribe reports all of this in his final writing - Nicolaus finished his letter to Rudolf Losse, the messenger and notary of Archbishop Baldwin of Trier in what was then the papal residence in Avignon. Among the most diverse news, one also comes across a note about events in connection with a \"rex Armleder\": In Franconia, in the area of Tauberbischofsheim, the farmers had chosen a king named Armleder and marched in large numbers, mostly on foot, very few on horseback, against villages and towns and massacred all the Jews there. First they killed everyone in Kitzingen, in Ochsenfurt, in Aub, in Mergentheim and in four other cities. They were also in front of the city of Würzburg, although here they were unsuccessful. They besieged Tauberbischofsheim three times - in vain: they were well prepared there. In total, 1,500 Jews are said to have died, as is credibly assured. Even on the other side of the Rhine, people feared King Armleder's troops: even in Trier, bishops, counts, nobility, citizens and Jews prepared daily against him and his army in fear that he would cross the Rhine if they were not careful.",
+      "mention": [
+        {
+          "place": "aub"
+        },
+        {
+          "place": "bischofsheim"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "facts": [
         {
           "person": "Nicolaus",
           "type": "generic",
           "content": "wrote to Rudolf Losse that peasants in the Tauberbischofsheim region had chosen a leader called König Armleder.",
-          "mention": [
-            {
-              "place": "bischofsheim"
-            }
-          ],
           "date": "1336-09-24"
         },
         {
           "person": "Nicolaus",
           "type": "generic",
           "content": "reported that the forces of König Armleder besieged Tauberbischofsheim three times without success.",
-          "mention": [
-            {
-              "place": "bischofsheim"
-            }
-          ],
           "date": "1336-09-24"
         },
         {
@@ -702,11 +648,6 @@
           "person": "Nicolaus",
           "type": "generic",
           "content": "reported that the forces of König Armleder killed the Jews of Aub.",
-          "mention": [
-            {
-              "place": "aub"
-            }
-          ],
           "date": "1336-09-24"
         },
         {
@@ -719,11 +660,6 @@
           "person": "Nicolaus",
           "type": "generic",
           "content": "reported that the forces of König Armleder came before Würzburg without success.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ],
           "date": "1336-09-24"
         }
       ]
@@ -743,6 +679,11 @@
     {
       "german": "Somit stellt sich der Ablauf dieser „Armlederbewegung\" im Uberblick so dar: Übereinstimmend mit den zitierten Zeugnissen berichtet eine gleichzeitige jüdische Quelle, das Martyrologium des Nürnberger Memorbuches, vom Beginn der Erhebung des „gemeinen Mannes\" am 29. Juli 1336 in Röttingen. In den folgenden Tagen und Wochen wüteten die Scharen Armleders zwischen Tauber und unterem Maindreieck, einem relativ begrenzten Raum also, gegen die Juden — und, so ist hinzuzufügen, auch für einen relativ kurzen Zeitraum.",
       "english": "So the overview of the course of this \"arm leather movement\" is as follows: Consistent with the testimonies cited, a simultaneous Jewish source, the Martyrology of the Nuremberg Memoir Book, reports the beginning of the uprising of the \"common man\" on July 29, 1336 in Röttingen. In the days and weeks that followed, Armleder's troops raged against the Jews between Tauber and the Lower Main Triangle, a relatively limited area - and, it should be added, for a relatively short period of time.",
+      "mention": [
+        {
+          "place": "roettingen"
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Uissigheim",
@@ -751,11 +692,6 @@
           ],
           "type": "generic",
           "content": "led the uprising that began in Röttingen.",
-          "mention": [
-            {
-              "place": "roettingen"
-            }
-          ],
           "date": "1336-07-29"
         },
         {
@@ -772,6 +708,14 @@
     {
       "german": "In den folgenden Tagen wurden Aub, Uffenheim, Laudenbach, Krautheim, (Bad) Mergentheim und möglicherweise auch Weikersheim vom Wüten der Scharen Armleders überzogen. Doch bereits im mainzischen Tauberbischofsheim stieß Armleder an die Grenzen seines raschen Erfolgs: dreimal berannte er die Amtsstadt ohne Erfolg. Die daraufhin geänderte Stoßrichtung zeigte nach Nordosten zum Maindreieck hin. Der Haufe, zumeist aus Fußvolk und wohl nur wenigen Berittenen bestehend, bewegte sich nun gegen Ochsenfurt und Iphofen, um in Kitzingen in seinen Aktionen einen blutigen Höhepunkt zu erreichen.",
       "english": "In the following days, Aub, Uffenheim, Laudenbach, Krautheim, (Bad) Mergentheim and possibly Weikersheim were covered by the rampage of Armleder's hordes. But already in Tauberbischofsheim in Mainz, Armleder reached the limits of his rapid success: he ran the official town three times without success. The then changed direction of attack pointed northeast towards the Main Triangle. The group, consisting mostly of infantry and probably only a few mounted men, now moved towards Ochsenfurt and Iphofen, reaching a bloody climax in their actions in Kitzingen.",
+      "mention": [
+        {
+          "place": "aub"
+        },
+        {
+          "place": "bischofsheim"
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Uissigheim",
@@ -780,11 +724,6 @@
           ],
           "type": "generic",
           "content": "led forces that attacked Jews in Aub.",
-          "mention": [
-            {
-              "place": "aub"
-            }
-          ],
           "date": "1336"
         },
         {
@@ -830,11 +769,6 @@
           ],
           "type": "generic",
           "content": "unsuccessfully attacked Tauberbischofsheim three times.",
-          "mention": [
-            {
-              "place": "bischofsheim"
-            }
-          ],
           "date": "1336"
         }
       ],
@@ -865,6 +799,11 @@
     {
       "german": "In Würzburg waren sich alle bewusst, was bevorstand, wenn sich der Zug der Judenschläger nunmehr der Bischofsstadt zuwenden sollte: der bischöfliche Stadtherr wie die Geistlichkeit, Bürger wie Juden. Fries hat rückblickend zwar die Meinung vertreten, die Würzburger Bürger hätten „ihre\" Juden wohl lieber selbst geplündert und besteuert; doch bleibt dies seine subjektive Einschätzung. Sicher scheint hingegen, dass die Stadt Anstrengungen zu ihrer Verteidigung unternahm und ein Kontingent ins südliche Maindreieck nach Kleinochsenfurt entsandte. Dort kam es an einem unbekannten Tag Anfang August zur entscheidenden Auseinandersetzung mit dem „rex Armleder\" und dessen Anhängern. Der Sieg des hochstiftischen und städtischen Aufgebots war deutlich: Viele der Judenschläger wurden in diesem Gefecht getötet, 47 Gefangene nach Würzburg geführt.",
       "english": "In Würzburg everyone was aware of what was to come if the band of Jew thugs turned their attention to the episcopal city: the episcopal city ruler as well as the clergy, citizens as well as Jews. Looking back, Fries expressed the opinion that the citizens of Würzburg would have preferred to plunder and tax \"their\" Jews themselves; but this remains his subjective assessment. What seems certain, however, is that the city made efforts to defend itself and sent a contingent to Kleinochsenfurt in the southern Main Triangle. There, on an unknown day at the beginning of August, there was a decisive confrontation with the \"Rex Armleder\" and his followers. The victory of the cantonal and municipal forces was clear: many of the Jew thugs were killed in this battle and 47 prisoners were taken to Würzburg.",
+      "mention": [
+        {
+          "place": "wurzburg"
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Uissigheim",
@@ -873,11 +812,6 @@
           ],
           "type": "generic",
           "content": "fought an armed force from Würzburg at Kleinochsenfurt.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ],
           "date": "1336-08"
         },
         {
@@ -887,11 +821,6 @@
           ],
           "type": "generic",
           "content": "led followers, many of whom were killed by the Würzburg force at Kleinochsenfurt.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ],
           "date": "1336-08"
         },
         {
@@ -901,11 +830,6 @@
           ],
           "type": "generic",
           "content": "led followers, 47 of whom were taken prisoner to Würzburg by the Würzburg force.",
-          "mention": [
-            {
-              "place": "wurzburg"
-            }
-          ],
           "date": "1336-08"
         }
       ]
@@ -930,11 +854,6 @@
           ],
           "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have been captured by Gotfried von Hohenlohe.",
-          "mention": [
-            {
-              "person": "Gotfried von Hohenlohe"
-            }
-          ],
           "date": "1336"
         },
         {
@@ -944,11 +863,6 @@
           ],
           "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have been taken to Röttingen after his capture.",
-          "mention": [
-            {
-              "place": "roettingen"
-            }
-          ],
           "date": "1336"
         },
         {
@@ -958,11 +872,6 @@
           ],
           "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have confessed several times to the dean in Röttingen.",
-          "mention": [
-            {
-              "place": "roettingen"
-            }
-          ],
           "date": "1336"
         },
         {
@@ -992,11 +901,6 @@
           "personDeceased": true,
           "type": "generic",
           "content": "is reported by the Erfurt chronicle continuator to have been buried in the church at Uissigheim.",
-          "mention": [
-            {
-              "place": "uissigheim"
-            }
-          ],
           "date": "1336"
         }
       ]
@@ -1067,14 +971,6 @@
           ],
           "type": "generic",
           "content": "may have been detained first in Röttingen and then transferred to the Würzburg court in Kitzingen.",
-          "mention": [
-            {
-              "place": "roettingen"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ],
           "date": "1336"
         }
       ]
@@ -1174,19 +1070,16 @@
     {
       "german": "Der heutige Standort ist mit Sicherheit nicht der ursprüngliche. Dies geht hervor aus den Aufzeichnungen des Jesuiten und Geschichtsforschers Johannes Gamans, die dieser bei Gelegenheit seines Besuchs in Uissigheim im Jahr 1641 gemacht hat; sie ermöglichen auch die Rekonstruktion des ursprünglichen Inschriftentextes. Damals war der Grabstein noch mitten in der Kirche aufgestellt und zwar als die Deckplatte eines auf zwei steinernen Sockeln ruhenden Hochgrabs. Gamans fand die Grabplatte bereits damals beschädigt: Zwei bei Renovierungsarbeiten zwei Jahre vorher herabgefallene Balken hatten Teile abgeschlagen. Der Jesuit ließ sie herbeibringen und zeichnete auf, was er zu entziffern vermochte. Gamans hat dabei auch festgehalten, dass die Füße des Ritters ursprünglich auf einem Löwen ruhten.",
       "english": "The current location is certainly not the original one. This emerges from the notes of the Jesuit and historical researcher Hans Gamans, which he made on the occasion of his visit to Uissigheim in 1641; they also enable the reconstruction of the original inscription text. At that time, the gravestone was still placed in the middle of the church as the cover plate of a high grave resting on two stone bases. Gamans found the grave slab damaged back then: two beams that had fallen during renovation work two years earlier had broken off parts. The Jesuit had them brought in and recorded what he could decipher. Gamans also noted that the knight's feet originally rested on a lion.",
+      "mention": [
+        {
+          "place": "uissigheim"
+        }
+      ],
       "facts": [
         {
           "person": "Hans Gamans",
           "type": "generic",
           "content": "recorded the inscription on Arnold von Uissigheim’s grave monument in the church at Uissigheim.",
-          "mention": [
-            {
-              "person": "Arnold von Uissigheim"
-            },
-            {
-              "place": "uissigheim"
-            }
-          ],
           "date": "1641"
         },
         {
@@ -1194,11 +1087,6 @@
           "personDeceased": true,
           "type": "generic",
           "content": "was commemorated by a grave monument standing in the middle of the church at Uissigheim.",
-          "mention": [
-            {
-              "place": "uissigheim"
-            }
-          ],
           "date": "1641"
         },
         {
@@ -1206,11 +1094,6 @@
           "personDeceased": true,
           "type": "generic",
           "content": "was commemorated by a grave monument damaged by falling beams during renovation work in the church at Uissigheim.",
-          "mention": [
-            {
-              "place": "uissigheim"
-            }
-          ],
           "date": "1639"
         }
       ]
@@ -1231,11 +1114,6 @@
           "person": "Arnold von Uissigheim",
           "type": "generic",
           "content": "belonged to the lords of Uissigheim, who may have regarded the village church as their family burial place and exercised rights over it.",
-          "mention": [
-            {
-              "place": "uissigheim"
-            }
-          ],
           "date": "1336"
         }
       ]

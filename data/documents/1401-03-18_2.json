@@ -16,27 +16,13 @@
           "personTitle": [
             "King"
           ]
-        },
-        {
-          "person": "Konrad von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "received one quarter of Boxberg Castle as a fief from King Ruprecht, Count Palatine of the Rhine.",
-          "mention": [
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "König Ruprecht",
-              "personTitle": [
-                "King"
-              ]
-            }
-          ]
+          "content": "received one quarter of Boxberg Castle as a fief from King Ruprecht, Count Palatine of the Rhine."
         }
       ]
     }

@@ -15,7 +15,8 @@
         {
           "person": "Hans von Brunn",
           "personTitle": [
-            "Bischof"
+            "Bischof",
+            "Bishop"
           ]
         },
         {
@@ -34,9 +35,6 @@
           "person": "Konrad von Rosenberg"
         },
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
           "place": "seldeneck"
         }
       ],
@@ -45,28 +43,12 @@
           "person": "Kunz von Rosenberg",
           "type": "generic",
           "content": "lent Bishop Johann von Brunn 5,000 florins and received the town and Amt Iphofen as a pledge, with the right of access and hereditary homage excepted.",
-          "mention": [
-            {
-              "person": "Hans von Brunn",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ],
           "date": "1419-03-03"
         },
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
           "content": "had the pledge of the town and Amt Iphofen redeemed by Bishop Johann von Brunn.",
-          "mention": [
-            {
-              "person": "Hans von Brunn",
-              "personTitle": [
-                "Bishop"
-              ]
-            }
-          ],
           "date": "1420-04-23"
         }
       ],

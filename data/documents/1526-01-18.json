@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "type": "generic",
-          "content": "was involved in a dispute with Rothenburg for which Markgraf Casimir scheduled a court day.",
-          "mention": [
-            {
-              "place": "rothenburg"
-            }
-          ]
+          "content": "was involved in a dispute with Rothenburg for which Markgraf Casimir scheduled a court day."
         }
       ]
     }

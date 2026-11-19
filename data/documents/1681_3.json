@@ -16,27 +16,22 @@
         {
           "subject": "The Amt of Rosenberg",
           "type": "generic",
-          "content": "was separated from the Amt of Haltenbergstetten and pledged to satisfy the claims of the Freiherren von Nesselrode.",
-          "mention": [
-            {
-              "place": "schloss-haltenbergstetten"
-            }
-          ]
+          "content": "was separated from the Amt of Haltenbergstetten and pledged to satisfy the claims of the Freiherren von Nesselrode."
         },
         {
           "subject": "The Ämter Schüpf and Rosenberg",
           "type": "generic",
-          "content": "were to be separated from the Amt Haltenbergstetten under an agreement by Franz, Heinrich and Sebastian von Hatzfeldt.",
-          "mention": [
-            {
-              "place": "schloss-haltenbergstetten"
-            }
-          ]
+          "content": "were to be separated from the Amt Haltenbergstetten under an agreement by Franz, Heinrich and Sebastian von Hatzfeldt."
         },
         {
           "subject": "The Ämter Schüpf and Rosenberg",
           "type": "generic",
           "content": "were to be pledged to satisfy the claims of the Freiherren von Nesselrode under an agreement by Franz, Heinrich and Sebastian von Hatzfeldt."
+        }
+      ],
+      "mention": [
+        {
+          "place": "schloss-haltenbergstetten"
         }
       ]
     }

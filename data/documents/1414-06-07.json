@@ -10,6 +10,9 @@
       "mention": [
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
         }
       ],
       "facts": [
@@ -19,12 +22,7 @@
             "Schultheiß zu Nürnberg"
           ],
           "type": "generic",
-          "content": "issued a court record with the aldermen of Nuremberg awarding Heinrich Rummel the wood rights at Lichtenau claimed against Hans Weiss von Volkersdorf.",
-          "mention": [
-            {
-              "place": "nuremberg"
-            }
-          ]
+          "content": "issued a court record with the aldermen of Nuremberg awarding Heinrich Rummel the wood rights at Lichtenau claimed against Hans Weiss von Volkersdorf."
         }
       ]
     }

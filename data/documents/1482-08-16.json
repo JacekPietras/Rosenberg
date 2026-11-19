@@ -15,9 +15,6 @@
           "place": "boxberg"
         },
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "person": "Kilian von Berlichingen"
         },
         {
@@ -37,46 +34,12 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "helped settle a dispute between Michael and Arnold von Rosenberg over the division of their inherited property at Schüpf, Schillingstadt, Boxberg, Rosenberg and elsewhere.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Michael von Rosenberg"
-            },
-            {
-              "place": "oberschuepf"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "helped settle a dispute between Michael and Arnold von Rosenberg over the division of their inherited property at Schüpf, Schillingstadt, Boxberg, Rosenberg and elsewhere."
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "generic",
-          "content": "helped settle a dispute between Michael and Arnold von Rosenberg over the division of their inherited property at Schüpf, Schillingstadt, Boxberg, Rosenberg and elsewhere.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "place": "boxberg"
-            },
-            {
-              "person": "Michael von Rosenberg"
-            },
-            {
-              "place": "oberschuepf"
-            },
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "helped settle a dispute between Michael and Arnold von Rosenberg over the division of their inherited property at Schüpf, Schillingstadt, Boxberg, Rosenberg and elsewhere."
         }
       ],
       "img": [

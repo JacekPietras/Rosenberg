@@ -15,6 +15,9 @@
           "person": "Georg von Rosenberg"
         },
         {
+          "person": "Michael von Rosenberg"
+        },
+        {
           "person": "Rudolf of Würzburg",
           "personTitle": [
             "Bishop"
@@ -25,18 +28,7 @@
         {
           "person": "Rudolf von Würzburg",
           "type": "generic",
-          "content": "was in feud with Michel, Arnold and Jorge von Rosenberg.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Michael von Rosenberg"
-            }
-          ]
+          "content": "was in feud with Michel, Arnold and Jorge von Rosenberg."
         }
       ]
     }

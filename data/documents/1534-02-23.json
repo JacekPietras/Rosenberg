@@ -15,7 +15,10 @@
           ]
         },
         {
-          "person": "Kunz von Rosenberg"
+          "person": "Konrad von Würzburg",
+          "personTitle": [
+            "Bischof"
+          ]
         },
         {
           "place": "reichelsburg-aub"
@@ -25,18 +28,7 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "issued a feudal acknowledgment to Bischof Konrad von Würzburg concerning the Amtmann office at Reigelsberg.",
-          "mention": [
-            {
-              "person": "Konrad von Würzburg",
-              "personTitle": [
-                "Bischof"
-              ]
-            },
-            {
-              "place": "reichelsburg-aub"
-            }
-          ]
+          "content": "issued a feudal acknowledgment to Bischof Konrad von Würzburg concerning the Amtmann office at Reigelsberg."
         }
       ]
     }

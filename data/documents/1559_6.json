@@ -9,9 +9,6 @@
       "english": "Agreement between Hans von Finsterlohe at Laudenbach and Christoph von Rosenberg on settling sheep-driving and grazing disputes at Ebertsbronn and Rinderfeld",
       "mention": [
         {
-          "person": "Christoph von Rosenberg"
-        },
-        {
           "place": "rinderfeld"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Christoph von Rosenberg",
           "type": "generic",
-          "content": "settled sheep-grazing and pasture disputes near Ebertsbronn and Rinderfeld with Hans von Finsterlohe zu Laudenbach.",
-          "mention": [
-            {
-              "place": "rinderfeld"
-            }
-          ]
+          "content": "settled sheep-grazing and pasture disputes near Ebertsbronn and Rinderfeld with Hans von Finsterlohe zu Laudenbach."
         }
       ]
     }

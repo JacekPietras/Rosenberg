@@ -10,21 +10,13 @@
       "mention": [
         {
           "place": "bronnbach"
-        },
-        {
-          "person": "Michael von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Michael von Rosenberg",
           "type": "generic",
-          "content": "was in a dispute with the abbot and convent of Bronnbach over dues at Kipperichhausen.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            }
-          ]
+          "content": "was in a dispute with the abbot and convent of Bronnbach over dues at Kipperichhausen."
         }
       ]
     }

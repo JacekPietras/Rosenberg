@@ -9,6 +9,9 @@
       "english": "Records of Landgrave Philipp, also jointly with Elector Johann Friedrich of Saxony; of the Steward and Councilors at Kassel: Correspondence with Dukes Ulrich and Christoph; Elector Johann Friedrich of Saxony; Wilhelm von Sternfels; the Senior District Administrator of the Upper County of Katzenelnbogen\n\nContains: (1521) June, July 1536. Duke Ulrich requests a postponement for payment of the due military debt installment and delivery of the marriage ordinance allegedly drawn up by the Landgrave and Elector Johann Friedrich of Saxony. Duke Ulrich sends the advisory opinion on the Anabaptists prepared by the Wurttemberg theologians and scholars with Blaurer's participation, and requests careful attention to the Anabaptists. Plan for a marriage of Count Georg von Wurttemberg with a daughter of Duke Heinrich of Mecklenburg and a meeting in Celle\nUlrich expects advice from Philipp regarding the erection. Dispute between Duke Ulrich and Wurzburg over Mockmuhl, negotiations with Elector Ludwig of the Palatinate for its resolution. Inquiry to the Duke regarding his entry into the Rhine League. Newspapers from England, Geldern, and Denmark. The Landgrave sends a copy of the adjournment at Naumburg between him and Elector Johann Friedrich. Duke Ludwig of Bavaria spreads the rumor that Duke Ulrich had supported Count Wilhelm von Furstenberg in his recruiting for France. Conclusion of a settlement between Elector Johann Friedrich and Duke Georg of Saxony. Negotiations of the Marshal of Count Palatine Ott Heinrich by Wilhelm Georg von Leonrod with the Landgrave. Demand by the estates of the former Swabian League to Duke Ulrich. The Landgrave requests falcons. Dispute of the Duke with some monks who had fled from the monasteries of Adelberg and Bebenhausen\ntheir complaint before the Emperor\nMandates of King Ferdinand to Ulm and Esslingen\nIntercession by the Schmalkaldic League with King Ferdinand and the Emperor for Ulrich. Desc Continuation: their complaint before the Emperor. Mandates of King Ferdinand to Ulm and Esslingen. The Schmalkaldic League intercedes with King Ferdinand and the Emperor on Ulrich’s behalf. December. Duke Christoph reports new developments. The abbots of St Georgen and Maulbronn sue Duke Ulrich before the Imperial Chamber Court over implementation of the Reformation. Renewed tensions between Ulm and Württemberg. The Landgrave advises agreement for the sake of religious unity. News from France. Duke Ulrich’s dispute with Wilhelm v. Sternfels. Mediation between Württemberg and Bavaria. The Duke’s dispute with Würzburg over Möckmühl. The Landgrave offers Duke Ulrich falcons. Heinz v. Lüder has committed a killing in self-defense. Duke Ulrich’s dispute with Esslingen; the Landgrave again advises an amicable settlement for the sake of the Protestant cause. Negotiations with Duke Heinrich of Mecklenburg. The Landgrave advises joining the Rhenish League. Invitation to Duke Ulrich to attend the Schmalkaldic League diet on February 7, 1537, and beforehand to come to Kassel on February 1. (1495) Undated. The assembly at Ingolstadt mentioned in the Landgrave’s letter took place on March 12, 1536. The Duke plans to secure the succession in part of Württemberg for his brother Georg. The Landgrave sends an opinion in causa erectionis with a charter of Emperor Maximilian (1495, copy).",
       "mention": [
         {
+          "place": "boxberg"
+        },
+        {
           "place": "katzenelnbogen"
         },
         {
@@ -19,22 +22,12 @@
         {
           "subject": "Boxberg",
           "type": "generic",
-          "content": "was discussed at the meeting at Oberwesel in connection with Hans Thoma von Rosenberg.",
-          "mention": [
-            {
-              "person": "Hans Thomas von Rosenberg"
-            }
-          ]
+          "content": "was discussed at the meeting at Oberwesel in connection with Hans Thoma von Rosenberg."
         },
         {
           "person": "Hans Thomas von Rosenberg",
           "type": "generic",
           "content": "was the subject of discussions at Oberwesel concerning the dispute over Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ],
           "date": "1536-07"
         }
       ],

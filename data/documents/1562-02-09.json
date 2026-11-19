@@ -9,9 +9,6 @@
       "english": "Agreement between Elector Friedrich II of the Palatinate and Albrecht von Rosenberg to resolve disputes that arose in the execution of the contract of July 24, 1561 regarding the cession of Boxberg.\n\nDuration: February 9, 1562",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
           "place": "boxberg"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "made an agreement with Elector Friedrich II of the Palatinate to settle disputes over implementation of the 24 July 1561 agreement transferring Boxberg.",
-          "mention": [
-            {
-              "place": "boxberg"
-            }
-          ]
+          "content": "made an agreement with Elector Friedrich II of the Palatinate to settle disputes over implementation of the 24 July 1561 agreement transferring Boxberg."
         }
       ],
       "img": [

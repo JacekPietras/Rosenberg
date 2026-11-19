@@ -9,9 +9,6 @@
       "english": "Eberhard von Rosenberg surrenders his quarter-share of the Rosenberg fortress with its forecourt to the Count Palatine to be held as a fief",
       "mention": [
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "place": "heidelberg"
         },
         {
@@ -22,12 +19,7 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "surrendered his quarter share of Veste Rosenberg and its forecourt to the Count Palatine as a fief.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "surrendered his quarter share of Veste Rosenberg and its forecourt to the Count Palatine as a fief."
         }
       ]
     }

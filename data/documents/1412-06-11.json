@@ -9,15 +9,6 @@
       "mention": [
         {
           "place": "bischofsheim"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
         }
       ],
       "facts": [
@@ -46,50 +37,17 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "sold rents at Bischofsheim and Werbachhausen to Hans Fuger and Hans Greyn jointly with Anne von Bebenburg and Kunz von Rosenberg.",
-          "mention": [
-            {
-              "place": "bischofsheim"
-            },
-            {
-              "person": "Kunz von Rosenberg"
-            }
-          ]
+          "content": "sold rents at Bischofsheim and Werbachhausen to Hans Fuger and Hans Greyn jointly with Anne von Bebenburg and Kunz von Rosenberg."
         },
         {
           "person": "Anna von Bebenburg",
           "type": "generic",
-          "content": "sold rents at Bischofsheim and Werbachhausen to Hans Fuger and Hans Greyn jointly with Engelhard von Rosenberg der Ältere and Kunz von Rosenberg.",
-          "mention": [
-            {
-              "place": "bischofsheim"
-            },
-            {
-              "person": "Engelhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Kunz von Rosenberg"
-            }
-          ]
+          "content": "sold rents at Bischofsheim and Werbachhausen to Hans Fuger and Hans Greyn jointly with Engelhard von Rosenberg der Ältere and Kunz von Rosenberg."
         },
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "sold rents at Bischofsheim and Werbachhausen to Hans Fuger and Hans Greyn jointly with Engelhard von Rosenberg der Ältere and Anne von Bebenburg.",
-          "mention": [
-            {
-              "place": "bischofsheim"
-            },
-            {
-              "person": "Engelhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            }
-          ]
+          "content": "sold rents at Bischofsheim and Werbachhausen to Hans Fuger and Hans Greyn jointly with Engelhard von Rosenberg der Ältere and Anne von Bebenburg."
         },
         {
           "person": "Engelhard von Rosenberg",
@@ -97,41 +55,17 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "sealed the charter together with Anne von Bebenburg and Kunz von Rosenberg.",
-          "mention": [
-            {
-              "person": "Kunz von Rosenberg"
-            }
-          ]
+          "content": "sealed the charter together with Anne von Bebenburg and Kunz von Rosenberg."
         },
         {
           "person": "Anna von Bebenburg",
           "type": "generic",
-          "content": "sealed the charter together with Engelhard von Rosenberg der Ältere and Kunz von Rosenberg.",
-          "mention": [
-            {
-              "person": "Engelhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            },
-            {
-              "person": "Kunz von Rosenberg"
-            }
-          ]
+          "content": "sealed the charter together with Engelhard von Rosenberg der Ältere and Kunz von Rosenberg."
         },
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "sealed the charter together with Engelhard von Rosenberg der Ältere and Anne von Bebenburg.",
-          "mention": [
-            {
-              "person": "Engelhard von Rosenberg",
-              "personTitle": [
-                "der Ältere"
-              ]
-            }
-          ]
+          "content": "sealed the charter together with Engelhard von Rosenberg der Ältere and Anne von Bebenburg."
         }
       ],
       "img": [

@@ -30,13 +30,13 @@
           ]
         },
         {
-          "person": "Kunz von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
         },
         {
           "place": "waldmannshofen"
+        },
+        {
+          "place": "waldmannshofen-castle"
         },
         {
           "place": "weinsberg"
@@ -94,18 +94,7 @@
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "held Schloss Waldmannshofen and reached a settlement with Philipp der Ältere, Herr zu Weinsberg, concerning sheep grazing at Buch and other disputes.",
-          "mention": [
-            {
-              "place": "buch"
-            },
-            {
-              "place": "waldmannshofen-castle"
-            },
-            {
-              "place": "weinsberg"
-            }
-          ]
+          "content": "held Schloss Waldmannshofen and reached a settlement with Philipp der Ältere, Herr zu Weinsberg, concerning sheep grazing at Buch and other disputes."
         },
         {
           "person": "Erasmus von Rosenberg",
@@ -113,22 +102,12 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "sealed the settlement with Philipp der Ältere, Herr zu Weinsberg.",
-          "mention": [
-            {
-              "place": "weinsberg"
-            }
-          ]
+          "content": "sealed the settlement with Philipp der Ältere, Herr zu Weinsberg."
         },
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "sealed the settlement with Philipp der Ältere, Herr zu Weinsberg.",
-          "mention": [
-            {
-              "place": "weinsberg"
-            }
-          ]
+          "content": "sealed the settlement with Philipp der Ältere, Herr zu Weinsberg."
         }
       ]
     }

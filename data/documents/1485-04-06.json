@@ -9,9 +9,6 @@
       "english": "Hans von Rosenberg acknowledges that he has received one eighth of Schloss Schüpf as a Mannlehen (hereditary fief) from Archbishop Berthold of Mainz and has sworn an oath regarding it. Previous holders were Anßhelm von Rosenberg and the A. The fief document of the same day is inserted.\n\nSeal: A. (damaged).",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
-        },
-        {
           "place": "oberschuepf-castle"
         },
         {
@@ -22,25 +19,12 @@
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "received one eighth of Schloss Schüpf as a Mannlehen from Archbishop Berthold of Mainz.",
-          "mention": [
-            {
-              "place": "oberschuepf-castle"
-            }
-          ]
+          "content": "received one eighth of Schloss Schüpf as a Mannlehen from Archbishop Berthold of Mainz."
         },
         {
           "person": "Anselm von Rosenberg",
           "type": "generic",
-          "content": "had previously held the eighth of Schloss Schüpf granted to Hans von Rosenberg.",
-          "mention": [
-            {
-              "person": "Hans von Rosenberg"
-            },
-            {
-              "place": "oberschuepf-castle"
-            }
-          ]
+          "content": "had previously held the eighth of Schloss Schüpf granted to Hans von Rosenberg."
         }
       ]
     }

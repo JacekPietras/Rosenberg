@@ -15,6 +15,12 @@
           "place": "bartenstein"
         },
         {
+          "person": "Hans of Würzburg",
+          "personTitle": [
+            "Bishop"
+          ]
+        },
+        {
           "person": "Hans von Adelsheim"
         },
         {
@@ -40,24 +46,7 @@
             "zu Bartenstein"
           ],
           "type": "generic",
-          "content": "referred the dispute between Schöntal Abbey and Hans von Adelsheim over rights and property at Bieringen to Bishop Hans of Würzburg for a decision together with Konrad, Lord of Weinsberg.",
-          "mention": [
-            {
-              "person": "Hans of Würzburg",
-              "personTitle": [
-                "Bishop"
-              ]
-            },
-            {
-              "person": "Hans von Adelsheim"
-            },
-            {
-              "place": "schoental-monastery"
-            },
-            {
-              "place": "weinsberg"
-            }
-          ]
+          "content": "referred the dispute between Schöntal Abbey and Hans von Adelsheim over rights and property at Bieringen to Bishop Hans of Würzburg for a decision together with Konrad, Lord of Weinsberg."
         }
       ],
       "img": [

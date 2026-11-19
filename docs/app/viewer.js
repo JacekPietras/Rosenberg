@@ -1,4 +1,4 @@
-import { buildRelationshipGraph, resolvePerson, remapSourcePerson } from './data/relationships.js?v=12';
+import { buildRelationshipGraph, resolvePerson, remapSourcePerson } from './data/relationships.js?v=13';
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';

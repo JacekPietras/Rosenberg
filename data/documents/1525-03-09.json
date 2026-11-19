@@ -9,9 +9,6 @@
       "english": "Elector Ludwig V of the Palatinate certifies the document of February 22, 1525, by which Georg von Rosenberg sold him his half of the village of Schweigern.\n\nDuration: March 9, 1525 (Thursday after Invocavit 1525)",
       "mention": [
         {
-          "person": "Georg von Rosenberg"
-        },
-        {
           "place": "schweigern"
         }
       ],
@@ -19,12 +16,7 @@
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
-          "content": "had his sale of half the village of Schweigern to Kurfürst Ludwig V authenticated by a vidimus issued by the elector.",
-          "mention": [
-            {
-              "place": "schweigern"
-            }
-          ]
+          "content": "had his sale of half the village of Schweigern to Kurfürst Ludwig V authenticated by a vidimus issued by the elector."
         }
       ],
       "img": [

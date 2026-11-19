@@ -12,16 +12,19 @@
           "place": "bartenstein"
         },
         {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
           "person": "Konrad of Bickenbach"
         },
         {
           "person": "Konrad Schenk of Erbach"
         },
         {
+          "person": "Konrad von Bickenbach"
+        },
+        {
           "person": "Kraft of Hohenlohe"
+        },
+        {
+          "person": "Kraft von Hohenlohe"
         },
         {
           "place": "rieneck"
@@ -34,18 +37,7 @@
         {
           "person": "Eberhard von Rosenberg",
           "type": "generic",
-          "content": "was designated with Konrad von Bickenbach for Mainz to determine the services owed by Kraft von Hohenlohe and Ulrich von Hanau for half of Burg Bartenstein.",
-          "mention": [
-            {
-              "place": "bartenstein"
-            },
-            {
-              "person": "Konrad von Bickenbach"
-            },
-            {
-              "person": "Kraft von Hohenlohe"
-            }
-          ]
+          "content": "was designated with Konrad von Bickenbach for Mainz to determine the services owed by Kraft von Hohenlohe and Ulrich von Hanau for half of Burg Bartenstein."
         }
       ]
     }

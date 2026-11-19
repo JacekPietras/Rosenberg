@@ -13,21 +13,13 @@
         },
         {
           "person": "Friedrich von Fleckenstein"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
         }
       ],
       "facts": [
         {
           "person": "Friedrich von Rosenberg",
           "type": "generic",
-          "content": "was appointed guardian of the minor children of Friedrich von Fleckenstein until revoked, with authority to administer their affairs and protect their subjects.",
-          "mention": [
-            {
-              "person": "Friedrich von Fleckenstein"
-            }
-          ]
+          "content": "was appointed guardian of the minor children of Friedrich von Fleckenstein until revoked, with authority to administer their affairs and protect their subjects."
         }
       ]
     }

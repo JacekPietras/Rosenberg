@@ -11,9 +11,6 @@
       "english": "Eberhard von Rosenberg der Ältere, Ritter, and his wife Irmtraut bequeath to Bronnbach Abbey their estate in Königheim and Dienstadt, together with specified annual revenues, subject to certain conditions.\n\nSealers: the abbot of Bronnbach; Arnold von Uissigheim; and Eberhard von Rosenberg der Ältere, Ritter. Three seals on parchment strips; Eberhard’s seal is detached. The reverse reads “De bonis in Kennenkein et in Diehstat”.",
       "mention": [
         {
-          "person": "Arnold von Uissigheim"
-        },
-        {
           "place": "bronnbach"
         },
         {
@@ -28,6 +25,9 @@
         },
         {
           "place": "koenigheim"
+        },
+        {
+          "place": "wallduern"
         }
       ],
       "facts": [
@@ -47,21 +47,7 @@
             "der Ältere"
           ],
           "type": "generic",
-          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], bequeathed their estate in Königheim and Dienstadt to Bronnbach Abbey.",
-          "mention": [
-            {
-              "place": "bronnbach"
-            },
-            {
-              "place": "dienstadt"
-            },
-            {
-              "place": "koenigheim"
-            },
-            {
-              "place": "wallduern"
-            }
-          ]
+          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], bequeathed their estate in Königheim and Dienstadt to Bronnbach Abbey."
         },
         {
           "person": "Arnold von Uissigheim",

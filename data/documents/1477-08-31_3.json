@@ -15,9 +15,6 @@
           "person": "Georg von Rosenberg"
         },
         {
-          "person": "Georg Zobel von Giebelstadt"
-        },
-        {
           "person": "Michael von Rosenberg"
         },
         {
@@ -28,30 +25,16 @@
           "personTitle": [
             "Bishop"
           ]
+        },
+        {
+          "place": "wurzburg"
         }
       ],
       "facts": [
         {
           "person": "Georg Zobel von Giebelstadt",
           "type": "generic",
-          "content": "renounced claims after his share of Schloss Schüpf, captured and destroyed in the feud against Georg, Arnold and Michael von Rosenberg, was restored by the princes of Mainz, the Palatinate and Würzburg.",
-          "mention": [
-            {
-              "person": "Arnold von Rosenberg"
-            },
-            {
-              "person": "Georg von Rosenberg"
-            },
-            {
-              "person": "Michael von Rosenberg"
-            },
-            {
-              "place": "oberschuepf-castle"
-            },
-            {
-              "place": "wurzburg"
-            }
-          ]
+          "content": "renounced claims after his share of Schloss Schüpf, captured and destroyed in the feud against Georg, Arnold and Michael von Rosenberg, was restored by the princes of Mainz, the Palatinate and Würzburg."
         }
       ]
     }

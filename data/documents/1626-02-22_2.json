@@ -9,9 +9,6 @@
       "english": "Georg Keller and his wife Apollonia zu Rosenberg borrow 130 Reichstaler from Albrecht Christoph von Rosenberg, pledging properties there as security.\n\nTerm: February 22, 1626",
       "mention": [
         {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
           "place": "rosenberg-town"
         }
       ],
@@ -27,12 +24,7 @@
         {
           "person": "Albrecht Christoph von Rosenberg",
           "type": "generic",
-          "content": "lent 130 Reichstaler to Georg Keller and his wife Apollonia, zu Rosenberg, against a pledge of property.",
-          "mention": [
-            {
-              "place": "rosenberg-town"
-            }
-          ]
+          "content": "lent 130 Reichstaler to Georg Keller and his wife Apollonia, zu Rosenberg, against a pledge of property."
         }
       ],
       "img": [
