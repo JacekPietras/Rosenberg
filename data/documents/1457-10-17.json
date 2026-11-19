@@ -12,13 +12,19 @@
           "place": "hainstadt"
         },
         {
-          "person": "Hans Rüd von Bödigheim"
+          "person": "Hans Rüd von Bödigheim",
+          "personTitle": [
+            "Junker"
+          ]
         },
         {
           "place": "lauda"
         },
         {
-          "person": "Ludwig Mönch von Rosenberg"
+          "person": "Ludwig Mönch von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
         },
         {
           "place": "wurzburg"

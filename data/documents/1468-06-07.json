@@ -12,10 +12,16 @@
       "english": "Hans Glaßkopf, citizen of Mergentheim, who was imprisoned with Kuntz Beheym, also a citizen of Mergentheim, for perjury and treachery toward Ulrich von Lentersheim, Master of the Teutonic Order, and the Komtur of Mergentheim, and after execution of the death sentence rendered by the Mergentheim city court on the said Kuntz Beheym, requested exemption from proceedings before the city court and was then returned to prison, swears after his release from it a sworn oath of loyalty (Urfehde) against the said Master and Komtur.\n\nDuration: 1468 June 7 (on Holy Tuesday)\n\nSeal: Junker Martin von Uissigheim; Junker Arnold von Rosenberg",
       "mention": [
         {
-          "person": "Arnold von Rosenberg"
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
         },
         {
-          "person": "Martin von Uissigheim"
+          "person": "Martin von Uissigheim",
+          "personTitle": [
+            "Junker"
+          ]
         }
       ],
       "facts": [

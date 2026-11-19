@@ -7,7 +7,6 @@ import hashlib
 import json
 import struct
 
-from .person_names import PersonNameRecognizer
 
 
 def canonical(value):
@@ -165,4 +164,3 @@ class Inputs:
     observations: list = field(default_factory=list)
     titles: str = ''
     kinship: str = ''
-    recognizer: PersonNameRecognizer | None = None

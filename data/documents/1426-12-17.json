@@ -9,7 +9,10 @@
       "english": "Arbitration award in disputes between Junker Eberhart von Ramswag and the men of Junker Rudolf von Rosenberg in the Kriessern farmstead above the church at Montlingen regarding forest use.\n\nSeal: 2 seals.",
       "mention": [
         {
-          "person": "Rudolf von Rosenberg"
+          "person": "Rudolf von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
         }
       ],
       "img": [

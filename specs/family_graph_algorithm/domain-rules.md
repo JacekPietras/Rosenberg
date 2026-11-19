@@ -99,12 +99,9 @@ files describe how they are met. When a rule changes, change it here first.
 
 ## Special records
 
-- A standalone widow record may join an established family with the same full
-  name that already records her widowhood earlier, unless another person with
-  that name could also be meant.
-- "May have been the father of X" joins a same-named father only when X's
-  parentage is recorded independently as a fact. It never creates a
-  relationship itself.
+- A standalone widow record, a spouse fact whose spouse is deceased, may join
+  an established family with the same full name that already records her
+  widowhood earlier, unless another person with that name could also be meant.
 
 ## Results
 

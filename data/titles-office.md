@@ -18,7 +18,8 @@ Baron
 
 // ranks
 Ritter, Ritters, miles, milites, Knight
-Edelknecht, armiger, squire
+Edelknecht, armiger, squire, Knappe, Knappen
+Junker
 Knecht
 
 // epithets

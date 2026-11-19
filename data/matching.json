@@ -1,5 +1,5 @@
 {
-  "model": "weighted-log-odds-v6",
+  "model": "weighted-log-odds-v7",
   "calibrated": false,
   "priorProbability": 0.1,
   "mergeProbability": 0.7,
@@ -32,15 +32,9 @@
     "rank": 20.0,
     "other": 15.0
   },
-  "placeWeights": {
-    "issuance": 2.0,
-    "property": 4.0,
-    "context": 2.5
-  },
+  "placeWeight": 2.0,
   "placeHalfLifeYears": 20.0,
-  "crossRolePlaceFactor": 0.5,
   "associateWeight": 2.0,
-  "financialCounterpartyWeight": 4.0,
   "associateMaxWeight": 4.0,
   "associateHalfLifeYears": 15.0,
   "familyWeights": {

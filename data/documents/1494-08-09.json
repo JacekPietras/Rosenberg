@@ -9,7 +9,10 @@
       "english": "August 9, 1494: Vow of the imprisoned debtor Philipp Zink under suretyship of Junker Friedrich von Rosenberg to present himself again.\n\nSealer: Wendel von Aluczen/Alnucze ?, impressed seal (lost)",
       "mention": [
         {
-          "person": "Friedrich von Rosenberg"
+          "person": "Friedrich von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
         }
       ],
       "facts": [

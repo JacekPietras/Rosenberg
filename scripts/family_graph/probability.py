@@ -13,14 +13,12 @@ from functools import lru_cache
 import math
 import re
 
-from place_names import resolve_place_names
 from .dates import death_interval
 from .names import normalize
 from .policy import AGE_TITLE_CLASSES
-from .scoring import PLACE_PREFIX, PLACE_SUFFIX, place_patterns
 
 DEFAULTS = {
-    'model': 'weighted-log-odds-v6', 'calibrated': False,
+    'model': 'weighted-log-odds-v7', 'calibrated': False,
     'priorProbability': 0.1, 'mergeProbability': 0.7,
     'ambiguityLogOddsMargin': 1.0, 'clusterMinimumProbability': 0.35,
     'guessWeight': 0.45,
@@ -28,9 +26,8 @@ DEFAULTS = {
     'adultAgeYears': 16.0, 'maxAgeYears': 80.0, 'ageComfortYears': 60.0, 'ageScaleYears': 10.0,
     'titleWeights': {'office': 8.0, 'designation': 6.0, 'age': 3.0, 'territory': 3.0, 'rank': 0.75, 'other': 1.0},
     'titleHalfLivesYears': {'office': 15.0, 'designation': 30.0, 'age': 12.0, 'territory': 15.0, 'rank': 20.0, 'other': 15.0},
-    'placeWeights': {'issuance': 2.0, 'property': 4.0, 'context': 2.5}, 'placeHalfLifeYears': 20.0,
-    'crossRolePlaceFactor': 0.5,
-    'associateWeight': 2.0, 'financialCounterpartyWeight': 4.0,
+    'placeWeight': 2.0, 'placeHalfLifeYears': 20.0,
+    'associateWeight': 2.0,
     'associateMaxWeight': 4.0, 'associateHalfLifeYears': 15.0,
     'familyWeights': {'anchored': 9.0, 'linked': 7.5, 'name': 4.0, 'spouse': 9.0},
     'familyRelationFactors': {'parent': 1.0, 'spouse': 1.0, 'sibling': 0.8, 'kin': 0.5},
@@ -68,8 +65,8 @@ def parameters(value=None):
     for key in ('priorProbability', 'mergeProbability', 'clusterMinimumProbability', 'guessWeight'):
         if not 0 < result[key] < 1:
             raise ValueError(f'matching.{key}: expected a value between zero and one')
-    if result['crossRolePlaceFactor'] > 1 or result['relativeRarityReferenceFrequency'] >= 1:
-        raise ValueError('matching: invalid cross-role factor or rarity reference frequency')
+    if result['relativeRarityReferenceFrequency'] >= 1:
+        raise ValueError('matching: invalid rarity reference frequency')
     if any(value > 1 for value in result['familyRelationFactors'].values()):
         raise ValueError('matching.familyRelationFactors: expected values not above one')
     if not result['adultAgeYears'] < result['ageComfortYears'] < result['maxAgeYears']:
@@ -111,16 +108,6 @@ def adult(mention, names=None):
     return any(title_category(title, names)[0] in {'rank', 'office'} or title_category(title, names) == ('age', 'older') for title in mention.titles)
 
 
-def speculative_parent_claim(mention):
-    """A retrospective hypothesis discusses parentage, not life at its date."""
-    assertion = mention.assertion
-    if (assertion.source.kind != 'guesses' or assertion.original['type'] != 'generic'
-        or mention.field != 'person'):
-        return None
-    return re.match(r'^(?:may|might|could)\s+have\s+been\s+(?:the|a)\s+(?:mother|father|parent)\s+of\s+([^.;]+)',
-                    assertion.original['content'], re.I)
-
-
 def names_relative(mention):
     """Being named as someone's parent or sibling says nothing about being alive then."""
     kind = mention.assertion.original['type']
@@ -146,7 +133,7 @@ def chronology(mentions, settings, names=None, derived=()):
             low, high = alternatives.get(passage, died)
             alternatives[passage] = min(low, died[0]), max(high, died[1])
     for mention in mentions:
-        if mention.field == 'text' or speculative_parent_claim(mention) and not mention.deceased:
+        if mention.field == 'text':
             continue
         source, (start, end) = mention.assertion.source, mention.assertion.bounds
         level = levels.setdefault(reliability(source, settings), {})
@@ -310,6 +297,8 @@ class Observation:
     historical_date: str
     bounds: tuple | None
     context: dict
+    people: tuple = ()
+    places: tuple = ()
 
 
 @dataclass
@@ -320,14 +309,11 @@ class Profile:
     titles: dict = field(default_factory=dict)
     places: dict = field(default_factory=dict)
     associates: dict = field(default_factory=dict)
-    financial_counterparties: dict = field(default_factory=dict)
     relatives: dict = field(default_factory=dict)
     anchored: bool = False
     confidence: float = 1.0
     key: str = ''
     distinctions: dict = field(default_factory=dict)
-    office_scopes: dict = field(default_factory=dict)
-    designation_places: dict = field(default_factory=dict)
     # (rank, source, bounds, passage) for Ritter/miles versus Edelknecht/armiger.
     ranks: list = field(default_factory=list)
     # Latest-birth bounds from a parent's death: (reliability, ordinal, source).
@@ -337,43 +323,9 @@ class Profile:
 
 
 # Non-ASCII characters that a case-insensitive pattern can match to an ASCII letter.
-CASE_FOLD_TO_ASCII = frozenset(
-    ['İ', 'ı', 'ſ'] + [char for char in map(chr, range(128, 0x30000)) if len(char.lower()) == 1 and char.lower().isascii()])
-
-
-def pattern_needle(pattern):
-    """Longest literal word of a place pattern, lowercase ASCII, or None."""
-    body = pattern.pattern.removeprefix(PLACE_PREFIX).removesuffix(PLACE_SUFFIX)
-    words = [re.sub(r'\\(.)', r'\1', word) for word in re.split(r'\\s\+|\\s\*,\\s\*', body)]
-    needle = max(words, key=len, default='').lower()
-    return needle if needle.isascii() and needle else None
-
-
-# Deliberately deterministic; no extraction of relationships from prose.
-PERSON_NAME = re.compile(r'\b[A-ZÄÖÜ][\wÄÖÜäöüß’\'-]*(?:\s+[A-ZÄÖÜ][\wÄÖÜäöüß’\'-]*)?\s+von\s+[A-ZÄÖÜ][\wÄÖÜäöüß’\'-]*')
-
-
-def person_references(text):
-    result = set()
-    for match in PERSON_NAME.finditer(text):
-        value = match.group()
-        first = value.split()[0].casefold()
-        if first in {'the', 'a', 'an', 'family', 'familie'}:
-            continue
-        prefixes = {'herr', 'frau', 'graf', 'count', 'sir', 'ritter', 'freiherr', 'markgraf', 'pfalzgraf', 'archbishop', 'bishop', 'erzbischof', 'bischof'}
-        if first in prefixes and len(value.split()) <= 3:
-            continue
-        if first in prefixes:
-            value = value.split(' ', 1)[1]
-        result.add(value)
-    return frozenset(result)
-
-
 class ProbabilityModel:
     def __init__(self, settings, names):
         self.settings, self.names = parameters(settings), names
-        self.patterns = place_patterns(resolve_place_names(names.raw_places))
-        self.needles = [pattern_needle(pattern) for pattern, _ in self.patterns]
         self.background = {'total': 0.0, 'counts': {}}
         self.compare_cache = {}
 
@@ -388,8 +340,7 @@ class ProbabilityModel:
         for observation in observations:
             if observation.source.kind not in {'facts', 'text'}:
                 continue
-            found = self.person_names(observation.text)
-            found |= {self.names.key(person['name']) for identity, person in registry.items() if '[' + identity + ']' in observation.text}
+            found = self.person_names(observation.people)
             by_source.setdefault(observation.source.key, set()).update(found)
             weights[observation.source.key] = reliability(observation.source, self.settings)
         # A generic fact supplies both its typed subject and textual context.
@@ -411,66 +362,18 @@ class ProbabilityModel:
         return min(self.settings['relativeRarityMaxWeight'], self.settings['relativeRarityWeight'] * value), frequency
 
     @lru_cache(maxsize=None)
-    def person_references(self, text):
-        recognizer = getattr(self.names, 'recognizer', None)
-        return recognizer.find(text) if recognizer else person_references(text)
+    def person_names(self, people):
+        return frozenset(self.names.key(value) for value in people)
 
-    @lru_cache(maxsize=None)
-    def person_names(self, text):
-        return frozenset(self.names.key(value) for value in self.person_references(text))
-
-    def candidate_patterns(self, text):
-        """Patterns whose longest ASCII word occurs in the text; others cannot match."""
-        if not CASE_FOLD_TO_ASCII.isdisjoint(text):
-            return self.patterns
-        lowered = text.lower()
-        return [pair for pair, needle in zip(self.patterns, self.needles) if needle is None or needle in lowered]
-
-    @lru_cache(maxsize=None)
-    def places(self, text):
-        if not isinstance(text, str):
-            return frozenset()
-        matches = {}
-        for pattern, keys in self.candidate_patterns(text):
-            for match in pattern.finditer(text):
-                matches.setdefault(match.span(), set()).update(keys)
-        selected, result = [], set()
-        for (start, end), keys in sorted(matches.items(), key=lambda pair: (-(pair[0][1] - pair[0][0]), pair[0])):
-            if any(start < right and end > left for left, right in selected):
-                continue
-            selected.append((start, end))
-            if len(keys) == 1:
-                result.update(keys)
-        return frozenset(result)
-
-    @lru_cache(maxsize=None)
-    def context_terms(self, text, issuance, personal_claim):
-        """Text analysis of one context passage; independent of the profile it joins."""
-        # Strip personal names before place matching: a surname is not residence.
-        remaining = PERSON_NAME.sub('', text)
-        role = 'property' if re.search(r'\b(property|properties|estate|estates|fief|held|holds|sold|owned|goods|rent|inherit\w*)\b', remaining, re.I) else 'context'
-        payment = re.match(r'^(?:was|were)\s+(?:paid|owed)\b.*?\bby\s+([^,.;!?]+)', text, re.I) if personal_claim else None
-        return (self.places(issuance), role, self.places(remaining), self.person_names(text),
-                self.person_names(payment[1]) if payment else None)
-
-    def add_context(self, profile, source, bounds, text='', issuance='', self_names=(), personal_claim=False):
+    def add_context(self, profile, source, bounds, people=(), places=(), self_names=()):
         if bounds is None:
             return
         evidence = (source, bounds)
         profile.refs[source.key] = source
-        issuance_places, role, places, names, payers = self.context_terms(text, issuance, personal_claim)
-        for place in issuance_places:
-            profile.places.setdefault(('issuance', place), []).append(evidence)
         for place in places:
-            profile.places.setdefault((role, place), []).append(evidence)
-        for name in names - set(self_names):
+            profile.places.setdefault(('context', place), []).append(evidence)
+        for name in self.person_names(people) - set(self_names):
             profile.associates.setdefault(name, []).append(evidence)
-        # The typed subject is explicitly the recipient/creditor. Do not infer
-        # that role for every other actor merely mentioned in the same passage.
-        if payers is not None:
-            parties = payers - set(self_names)
-            if len(parties) == 1:
-                profile.financial_counterparties.setdefault(next(iter(parties)), []).append(evidence)
 
     def profile_age_penalty(self, profile):
         stamp = (len(profile.mentions), len(profile.derived))
@@ -580,18 +483,6 @@ class ProbabilityModel:
                 by_category[category] = value, title, sources
         for category, (value, title, sources) in sorted(by_category.items()):
             add(f'{category} title: {title}', value, sources)
-        # Different offices, or an office and a bare place designation, can
-        # share a place. It is weaker than an exact match and counts once.
-        if 'office' not in by_category and 'designation' not in by_category:
-            territory = p['titleWeights']['territory'], p['titleHalfLivesYears']['territory']
-            scope_values = [(*best(left.office_scopes[place], right.office_scopes[place], *territory), 'shared office scope', place)
-                            for place in sorted(set(left.office_scopes) & set(right.office_scopes))]
-            scope_values += [(*best(one.office_scopes[place], other.designation_places[place], *territory), 'office and designation place', place)
-                             for one, other in ((left, right), (right, left))
-                             for place in sorted(set(one.office_scopes) & set(other.designation_places))]
-            if scope_values:
-                value, sources, label, place = max(scope_values, key=lambda item: (item[0], item[2], item[3]))
-                add(f'{label}: {place}', value, sources)
         # Younger → elder and Edelknecht → Ritter are normal progressions;
         # only the reverse order counts against identity.
         def regression(earlier, later, weight):
@@ -617,11 +508,8 @@ class ProbabilityModel:
             for (right_role, other_place), b in sorted(right.places.items()):
                 if place != other_place:
                     continue
-                weight = min(p['placeWeights'][left_role], p['placeWeights'][right_role])
-                if left_role != right_role:
-                    weight *= p['crossRolePlaceFactor']
-                value, sources = best(a, b, weight, p['placeHalfLifeYears'])
-                role = left_role if left_role == right_role else '/'.join(sorted((left_role, right_role)))
+                value, sources = best(a, b, p['placeWeight'], p['placeHalfLifeYears'])
+                role = 'context'
                 if value > place_values.get(place, (0, '', ()))[0]:
                     place_values[place] = value, role, sources
         for place, (value, role, sources) in sorted(place_values.items()):
@@ -630,17 +518,11 @@ class ProbabilityModel:
         associate_values = []
         for name in sorted(set(left.associates) & set(right.associates)):
             value, sources = best(left.associates[name], right.associates[name], p['associateWeight'], p['associateHalfLifeYears'])
-            label = 'same-fact associate'
-            if name in left.financial_counterparties and name in right.financial_counterparties:
-                financial, support = best(left.financial_counterparties[name], right.financial_counterparties[name],
-                                          p['financialCounterpartyWeight'], p['associateHalfLifeYears'])
-                if financial > value:
-                    value, sources, label = financial, support, 'shared financial counterparty'
-            associate_values.append((value, name, sources, label))
+            associate_values.append((value, name, sources))
         remaining = p['associateMaxWeight']
-        for value, name, sources, label in sorted(associate_values, key=lambda item: (-item[0], item[1])):
+        for value, name, sources in sorted(associate_values, key=lambda item: (-item[0], item[1])):
             value = min(value, remaining)
-            add(f'{label}: {name}', value, sources)
+            add(f'same-fact associate: {name}', value, sources)
             remaining -= value
 
         def best_family(a, b, weight):

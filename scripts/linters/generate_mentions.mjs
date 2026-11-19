@@ -82,10 +82,10 @@ function recognizePlaces(text, spans) {
   return [...found].sort();
 }
 
-export function recognizeMentions(text) {
+export function recognizeMentions(text, { placesOnly = false } = {}) {
   if (!pattern || typeof text !== 'string' || !text.trim()) return [];
   const plain = text.replace(/[\[\]]/g, ' ');
-  const { people, spans } = recognizePeople(plain);
+  const { people, spans } = placesOnly ? { people: [], spans: [] } : recognizePeople(plain);
   const items = [
     ...people.map(({ person, titles }) => (titles.length
       ? { person, personTitle: [...new Set(titles)].sort() } : { person })),
@@ -107,28 +107,42 @@ async function jsonFiles(directory) {
   return results;
 }
 
-function regenerate(value, file, counter) {
+function regenerate(value, file, counter, issuance = []) {
   if (Array.isArray(value)) {
-    value.forEach((item) => regenerate(item, file, counter));
+    value.forEach((item) => regenerate(item, file, counter, issuance));
     return;
   }
   if (!value || typeof value !== 'object') return;
   delete value.mention;
-  const anchor = typeof value.english === 'string' && file.includes('/data/documents/') ? 'english'
-    : value.type === 'generic' && typeof value.content === 'string' ? 'content' : null;
-  if (anchor) {
-    const mention = recognizeMentions(value[anchor]);
-    if (mention.length) {
-      const entries = Object.entries(value);
-      for (const key of Object.keys(value)) delete value[key];
-      for (const [key, child] of entries) {
-        value[key] = child;
-        if (key === anchor) value.mention = mention;
-      }
-      counter.mentions += mention.length;
+  const isDocument = file.includes('/data/documents/') && Array.isArray(value.entries);
+  let anchor = null;
+  let placesOnly = false;
+  if (typeof value.english === 'string' && file.includes('/data/documents/')) anchor = 'english';
+  else if (value.type === 'generic' && typeof value.content === 'string') anchor = 'content';
+  else if (value.type === 'death' && typeof value.circumstances === 'string') anchor = 'circumstances';
+  else if (typeof value.place === 'string' && !isDocument) [anchor, placesOnly] = ['place', true];
+  const own = anchor ? recognizeMentions(value[anchor], { placesOnly }) : [];
+  const inherited = !isDocument && value.type === undefined ? issuance : [];
+  const unique = new Map([...own, ...inherited].map((item) => [JSON.stringify(item), item]));
+  const name = (item) => item.person ?? item.place;
+  const mention = [...unique.values()].sort((left, right) => name(left).localeCompare(name(right))
+    || JSON.stringify(left).localeCompare(JSON.stringify(right)));
+  if (mention.length) {
+    const entries = Object.entries(value);
+    for (const key of Object.keys(value)) delete value[key];
+    for (const [key, child] of entries) {
+      value[key] = child;
+      if (key === anchor) value.mention = mention;
     }
+    if (!('mention' in value)) value.mention = mention;
+    counter.mentions += mention.length;
   }
-  Object.values(value).forEach((child) => regenerate(child, file, counter));
+  const childIssuance = isDocument && typeof value.place === 'string'
+    ? recognizeMentions(value.place, { placesOnly: true }) : [];
+  Object.entries(value).forEach(([key, child]) => {
+    if (key === 'mention') return;
+    regenerate(child, file, counter, key === 'entries' ? childIssuance : []);
+  });
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) await main();

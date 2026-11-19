@@ -26,15 +26,11 @@ repeated extraction adds nothing. The probabilities are uncalibrated.
 | --- | --- | --- | --- |
 | Office title (`Vogt zu Lauda`) | 8 | 15 | Office word and place; connector and prefix ignored |
 | Designation (`genannt X`, `von X`, `zu X`, `dictus de X`) | 6 | 30 | The place or name alone |
-| Shared office place | 3 | 15 | Different offices of one place, or an office and a designation of its place; only without an exact office or designation match |
 | Age title | 3 | 12 | Same age title |
 | Rank (`Ritter`, `Edelknecht`) | 0.75 | 20 | Never enough on its own |
 | Other epithet (`Rufus`) | 1 | 15 | |
-| Property place | 4 | 20 | Text mentions property, fief, rent, sale … |
-| Context place | 2.5 | 20 | |
-| Issuance place | 2 | 20 | Place of the document |
-| Same-fact associate | 2 | 15 | `X von Y` named in the same fact; total capped at 4 |
-| Financial counterparty | 4 | 15 | "was paid/owed … by X" on both sides; replaces the associate weight, same cap |
+| Place | 2 | 20 | A `place` item of the entry's or fact's `mention` list, including the document's place |
+| Same-fact associate | 2 | 15 | A `person` item of the same `mention` list; total capped at 4 |
 | Family | see below | 35 | Total capped at 16 |
 
 Titles are compared by meaning: equivalents from `data/titles-age.md` and `data/titles-office.md`, place

@@ -9,7 +9,10 @@
       "english": "Jorg Megel of Orenbach bequeaths his tavern to Junker Leonhard von Rosenberg of Gintzheim. Original, parchment; seal lost.",
       "mention": [
         {
-          "person": "Leonhard von Rosenberg"
+          "person": "Leonhard von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
         }
       ],
       "facts": [

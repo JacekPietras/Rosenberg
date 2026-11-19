@@ -16,10 +16,7 @@ mentions of one passage are different people if:
   `armiger`). `Knecht` alone does not distinguish; a mention with both ranks
   has no rank;
 - one has an explicit deceased marker and the other is an unmarked living
-  mention. Being named as a parent or sibling, a death fact, and speculative
-  "may have been the parent of" guesses are neither;
-- they are the subjects of two separate `generic` facts with the same content
-  (two "Hans" in one witness list);
+  mention. Being named as a parent or sibling and a death fact are neither;
 - grouping them fails the [merge check](algorithm.md#merge-check).
 
 ## Grouping
@@ -54,10 +51,11 @@ merge pairwise.
 
 ## Prose context
 
-Prose is not turned into relationships. A literal `X von Y` name in a fact's
-text attaches that fact's places and associates to a person when it resolves to
-exactly one same-name mention of the passage with an overlapping date. A
-bracketed registry ID (`[vogt_zu_Lauda]`) attaches directly. An informative
-prose-only name (one whose places and associates could reach the merge
-threshold, and which occurs once in the fact) becomes a context mention: it can
-join identities but never creates a family edge.
+Prose is not turned into relationships, and the algorithm does not read prose.
+The `mention` list generated for an entry or a fact lists its people and
+places. A `person` item attaches that text's places and associates to a person
+when it resolves to exactly one same-name mention of the passage with an
+overlapping date. An informative prose-only name (one whose places and
+associates could reach the merge threshold) becomes a context mention: it can
+join identities but never creates a family edge. Registry IDs are read only
+from typed fields.

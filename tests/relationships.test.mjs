@@ -746,17 +746,9 @@ test('document English can support a birth-name occurrence without supplying a r
   const data = await probabilityFixture();
   const metadata = data.tree;
   metadata.configuration.directedKin = true;
-  const dictionaries = {
-    'data/names.md': 'Elisabeth',
-    'data/nobiliary_particles.md': 'von',
-    'data/places.json': ['North', 'South'].map((name) => ({ id: name.toLowerCase(), variations: [name] })),
-  };
-  for (const [path, value] of Object.entries(dictionaries)) {
-    data.files.set(path, value);
-    metadata.inputs[path] = await evidenceFingerprint(value);
-  }
   const entry = data.documents.get(source.path).entries[0];
   entry.english = 'Elisabeth von North, née von South witnessed.';
+  entry.mention = [{ person: 'Elisabeth von South' }];
   const ref = { path: source.path, pointer: '/entries/0/english', fingerprint: await evidenceFingerprint(entry.english) };
   const mention = { source: ref, field: 'text', reference: 'Elisabeth von South', date: '1393' };
   const graph = metadata.evidence.facts;

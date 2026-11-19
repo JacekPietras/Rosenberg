@@ -8,33 +8,29 @@ continue to contribute contextual mentions from facts only. Recognized prose
 mentions can support identity matching and contextual links, but never create
 family relationship assertions.
 
-## Migration steps
+## Where recognition happens
 
-1. Port the recognizer's matching behavior for family graph use, driven by the
-   same given names, by-names, nobiliary particles, connectors, titles, and place variations as
-   `docs/app/data/person-name-recognition.js`. Keep its rules aligned with
-   `specs/person-names.md`.
-2. Collect each document entry's `english` field as a contextual observation;
-   do not collect book or other non-document prose.
-3. Give each observation stable provenance by pointing to the exact
-   `/entries/N/english` value and fingerprinting that value. Preserve the
-   recognized literal name as the mention reference. Do not store offsets,
-   which become stale after harmless edits.
-4. Feed recognized mentions through existing contextual matching only. Keep
-   typed facts and guesses as the sole source of relationships.
-5. Update source validation, tree schema documentation, and algorithm rules to
-   accept the text pointer and validate it against the current entry text.
-6. Add focused regression coverage for document prose, fact-only behavior in
-   books and other sources, ambiguity, deduplication, provenance, and the
-   absence of prose-derived relationship edges.
-7. Rebuild and review `data/tree.json` after implementation.
+Recognition runs only in the linter. `scripts/linters/generate_mentions.mjs`
+uses `docs/app/data/person-name-recognition.js` and the place list to write a
+`mention` list on each document entry (for its `english` text and the
+document's place) and on each generic fact (for its `content`); see
+`specs/json-formats.md`. The family graph reads those lists and never
+recognizes names or places itself.
+
+- Each observation points at the exact `/entries/N/english` value (or the
+  fact) and fingerprints it. A `person` item is the mention reference. Offsets
+  are never stored.
+- Mentions feed existing contextual matching only. Typed facts and guesses are
+  the sole source of relationships.
+- Browser verification checks that a prose mention's name appears in the stored
+  `mention` list of its entry or fact.
 
 ## Evidence and ambiguity rules
 
 - A prose mention identifies a name form, not a registry identity. Registry
   identity still requires an explicit ID or the graph's existing evidence.
-- Repeated occurrences of one recognized name in an entry count as one
-  contextual mention.
+- A `mention` list is unique, so repeated occurrences of one recognized name
+  count as one contextual mention.
 - For a form introduced by `née` or `nee`, use the given name and birth name
   as the contextual name; do not also emit the preceding married surname as a
   separate contextual person. For example, `Elisabeth von Rosenberg, née

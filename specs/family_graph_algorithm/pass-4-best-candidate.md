@@ -25,8 +25,7 @@ relations are exact positions; an unknown term allows any position.
 | Kinship exclusion: every path is excluded (a `Vetter` who is X's brother) | block |
 | Only candidate: exactly one unblocked candidate sits in an allowed position | `eliminationWeight 1.5 × weakest relation reliability` |
 | Age-title namesake: `der Ältere` (`der Jüngere`) implies a same-named relative in that passage; the candidate is one generation above (below) him | `ageTitleNamesakeWeight 1 × reliability` |
-| Widow: a standalone widow record and a same-full-name family spanning several passages with earlier widowhood | `widowhoodNameWeight 5 × weaker reliability` |
-| Speculative parent: "may have been the father of X", where the same-named candidate is X's recorded factual parent and X is established | `12 × min(source factor, parent fact reliability) × X's confidence` |
+| Widow: a standalone widow record (a spouse fact with a deceased spouse) and a same-full-name family spanning several passages with earlier widowhood | `widowhoodNameWeight 5 × weaker reliability` |
 
 ## Choice
 
@@ -35,7 +34,7 @@ relations are exact positions; an unknown term allows any position.
    included) is at least `bestCandidate.minJoinEvidence` (0.5) from a positive
    feature other than rank, and, for a record without a surname, there is
    identifying support (family, office or designation title, kinship position,
-   corroborated parentage, widow attachment).
+   widow attachment).
 3. Take the best eligible candidate. If others are within
    `bestCandidate.attachmentTieLogOdds` (0.25):
    - prefer the only one with family evidence or a kinship position;

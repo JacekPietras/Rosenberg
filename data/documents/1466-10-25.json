@@ -8,7 +8,10 @@
       "english": "Peter Wiprecht [von Helmstatt] von Hagenbuch to the von Heilbronn family: a year ago he had demanded his armor (krebs) from Christoffel, who had said that they had taken it away from him; he then went to the town hall and they sent out Junker Hans von Rosenberg [It should have been Rosenbach.] and, since the armor was no longer there, had him promise what he himself had paid for it in Heidelberg; he is now demanding 3 guilders 1 place and threatens otherwise to seek advice from his friends [i.e., with feud]. — Undated.",
       "mention": [
         {
-          "person": "Hans von Rosenberg"
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
         },
         {
           "place": "heidelberg"

@@ -12,7 +12,10 @@
           "place": "schloss-haltenbergstetten"
         },
         {
-          "person": "Zaisolph von Rosenberg"
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
         }
       ],
       "facts": [

@@ -9,10 +9,16 @@
       "english": "Oath of the citizens of Mergentheim to the Teutonic Order.\n\nSeals: Six seals on parchment strips: 1. Ytel Mertin; 2. Wiprecht Mertin, missing; both knights; 3. Eberhard von Rosenberg, Junker, missing; 4. Kuntz von Sachsenflur, Junker, missing; 5. Wiprecht Mertin, Junker; 6. Arnold von Rosenberg, Junker.",
       "mention": [
         {
-          "person": "Arnold von Rosenberg"
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
         },
         {
-          "person": "Eberhard von Rosenberg"
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
         }
       ],
       "facts": [

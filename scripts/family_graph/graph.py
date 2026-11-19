@@ -19,7 +19,6 @@ def build(inputs, include_guesses=False, rules=OFFICE_RULES, search_limit=SEARCH
     progress('Preparing source identities')
     assertions = [assertion for assertion in inputs.assertions if include_guesses or assertion.source.kind == 'facts']
     names = Names(inputs.names, inputs.places, inputs.titles, inputs.kinship)
-    names.recognizer = inputs.recognizer if inputs.recognizer and inputs.recognizer.pattern else None
     registry, profiles = anchor_profiles(assertions, inputs.people)
     conflicts, blocked, ignored_guesses = [], set(), set()
     for identity, observations in profiles.items():

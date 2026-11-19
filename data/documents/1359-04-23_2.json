@@ -10,6 +10,9 @@
       "english": "Charles IV. absolves the lords of Rosenberg from their wrongdoing and appoints them as his officials.",
       "mention": [
         {
+          "place": "nuremberg"
+        },
+        {
           "place": "rosenberg-town"
         }
       ],

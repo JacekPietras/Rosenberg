@@ -30,14 +30,13 @@ Before validation or collection, the loader skips every document JSON marked
 case-insensitive match from `data/distinctFamilies.md`. Skipped documents add
 no facts, guesses, or prose observations to the reconstruction.
 
-For included documents, each entry's English text is scanned with the shared
-person-name and by-name lists. Birth-name forms introduced by `née` or `nee`
-contribute contextual mentions under the birth surname, with provenance at the
-entry's `/english` pointer. This rule does not apply to books, notes, images,
-or other source types: their contextual name mentions continue to come from
-facts only. Prose mentions may support identity matching and contextual links,
-but never create family relationship assertions. See
-[document English recognition](person-name-text-migration.md).
+Contextual people and places come from the generated `mention` lists
+(see `specs/json-formats.md`): an entry's list covers its `english` text and the
+document's place, and a generic fact's list covers its `content`. The algorithm
+reads these lists and does not recognize names or places in prose. Provenance
+points at the entry's `/english` pointer or the fact. Mentions may support
+identity matching and contextual links, but never create family relationship
+assertions. See [document English recognition](person-name-text-migration.md).
 
 An explicit fact date, including a generic fact's date, overrides the enclosing
 document or entry date for its assertions and fact-text context. Entry English

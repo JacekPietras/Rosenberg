@@ -50,7 +50,12 @@
           ],
           "type": "death",
           "diedBefore": "1387-06-23",
-          "circumstances": "Slain by his mortal enemies in the field near Lauda while under sentences of excommunication."
+          "circumstances": "Slain by his mortal enemies in the field near Lauda while under sentences of excommunication.",
+          "mention": [
+            {
+              "place": "lauda"
+            }
+          ]
         },
         {
           "person": "vogt_zu_Lauda",

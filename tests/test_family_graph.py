@@ -19,7 +19,7 @@ from family_graph.names import Names
 from family_graph.probability import DEFAULTS
 from family_graph.policy import OfficeRule
 from family_graph.sources import input_manifest, walk_assertions
-from family_graph.scoring import place_patterns, places_for
+from family_graph.scoring import places_for
 from family_graph.scoring import anchor_profiles
 from family_graph.reconstruction import reconstruct
 
@@ -47,6 +47,7 @@ class FamilyGraphTests(unittest.TestCase):
         self.write('data/names.md', '# Men\n\nArnold\nEberhard, Eberhardi\nKonrad, Conradus\nKunz, Cunz // never expand to Konrad\n\n'
                                     '# Women\n\nElisabeth\nJutta\n\n# Other\n\nMünch, Mönch\n')
         self.write('data/places.json', [])
+        self.write('data/nobiliary_particles.md', 'von')
         self.write('data/matching.json', DEFAULTS)
 
     def write(self, path, value):
@@ -327,15 +328,14 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertFalse(candidate.exclusions)
         self.assertEqual(0, candidate.score)
 
-    def test_place_ambiguity_and_surname_geography_supply_no_support(self):
+    def test_places_come_from_the_entry_mention_and_a_death_mention(self):
         inputs = self.inputs(facts=[relation('a', 'b')])
         mention = inputs.assertions[0].mentions[0]
-        mention.assertion.context['place'] = 'Essingen'
-        patterns = place_patterns([{'id': 'one', 'variations': ['Essingen']}, {'id': 'two', 'variations': ['Essingen']}])
-        self.assertEqual(set(), places_for(mention, patterns))
-        mention.assertion.context['place'] = ''
-        mention.reference = 'Alex von Essingen'
-        self.assertEqual(set(), places_for(mention, patterns))
+        self.assertEqual(set(), places_for(mention))
+        mention.assertion.context['places'] = ('essingen',)
+        self.assertEqual({('context', 'essingen')}, places_for(mention))
+        mention.assertion.original.update({'type': 'death', 'mention': [{'person': 'Alex'}, {'place': 'north'}]})
+        self.assertEqual({('context', 'essingen'), ('death-context', 'north')}, places_for(mention))
 
     def test_posthumous_parent_and_independent_family_survive_export(self):
         inputs = self.inputs([person(x) for x in ('father', 'son', 'parent2', 'child2')], [
@@ -407,10 +407,13 @@ class FamilyGraphTests(unittest.TestCase):
         self.write('data/nobiliary_particles.md', 'von')
         self.inputs(facts=[relation('Elisabeth von South', 'b'),
                            {'type': 'generic', 'person': 'Elisabeth von South',
-                            'content': 'held Hill with Konrad von North and Arnold von South.'}])
+                            'content': 'held Hill with Konrad von North and Arnold von South.',
+                            'mention': [{'person': 'Arnold von South'}, {'person': 'Konrad von North'}, {'place': 'hill'}]}])
         phrase = 'Elisabeth von North, née von South'
         self.write('data/documents/prose.json', {'date': '1394', 'place': 'Hill', 'entries': [
-            {'english': f'{phrase} held Hill with Konrad von North and Arnold von South. {phrase} witnessed.'}]})
+            {'english': f'{phrase} held Hill with Konrad von North and Arnold von South. {phrase} witnessed.',
+             'mention': [{'person': 'Arnold von South'}, {'person': 'Elisabeth von South'}, {'person': 'Konrad von North'},
+                         {'place': 'hill'}]}]})
         inputs = load_inputs(self.root, validate=False)
         result = build(inputs)
         tree = serialize(inputs, [result])

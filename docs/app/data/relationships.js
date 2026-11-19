@@ -1,5 +1,3 @@
-import { buildSourcePersonPattern, findPersonNameMentions, personRouteName } from './person-name-recognition.js';
-
 // Generated evidence is accepted only after verifying the complete build input.
 const sourcePath = /^data\/(books|documents|notes|images)\/.*\.json$/;
 
@@ -15,19 +13,10 @@ function kinshipCanonicalizer(text) {
     .map((part) => forms.get(normalize(part)) ?? part).join('');
 }
 
-function contextParticipant(text, reference, people, recognized) {
+function contextParticipant(text, reference, people, holder) {
   if (typeof text !== 'string' || typeof reference !== 'string' || !reference) return false;
   if (people.some((person) => person.id === reference)) return text.includes(`[${reference}]`);
-  const recognizedName = recognized(text, reference);
-  if (recognizedName !== undefined) return recognizedName;
-  const names = text.matchAll(/(?<![\p{L}\p{N}_])[A-ZÄÖÜ][\p{L}\p{N}_’'-]*(?:\s+[A-ZÄÖÜ][\p{L}\p{N}_’'-]*)?\s+von\s+[A-ZÄÖÜ][\p{L}\p{N}_’'-]*/gu);
-  const prefixes = new Set(['herr', 'frau', 'graf', 'count', 'sir', 'ritter', 'freiherr', 'markgraf', 'pfalzgraf', 'archbishop', 'bishop', 'erzbischof', 'bischof']);
-  for (const [value] of names) {
-    const words = value.split(/\s+/), first = words[0].toLowerCase();
-    if (['the', 'a', 'an', 'family', 'familie'].includes(first) || prefixes.has(first) && words.length <= 3) continue;
-    if ((prefixes.has(first) ? value.slice(words[0].length).trimStart() : value) === reference) return true;
-  }
-  return false;
+  return Array.isArray(holder?.mention) && holder.mention.some((item) => item?.person === reference);
 }
 
 export function registryIdentities(people) {
@@ -120,27 +109,12 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
       if (await evidenceFingerprint(value) !== expected) throw new Error(`Build input changed: ${path}`);
     }));
     const canonicalKinship = kinshipCanonicalizer(dictionaries['data/kinship.md'] || '');
-    const nameArgs = [[dictionaries['data/titles-age.md'], dictionaries['data/titles-office.md']].filter(Boolean).join('\n'),
-      dictionaries['data/name-connectors.md'] || '', dictionaries['data/nobiliary_particles.md'] || '',
-      dictionaries['data/names.md'], dictionaries['data/by-names.md'] || '', dictionaries['data/places.json']];
-    const [titles, connectors, particles, names, byNames, places] = nameArgs;
-    const pattern = buildSourcePersonPattern(names, particles, places, titles, connectors, byNames);
-    const routes = new Map();
-    function recognized(text, reference) {
-      if (!pattern) return undefined;
-      if (!routes.has(text)) {
-        const mentions = findPersonNameMentions(text, ...nameArgs, pattern);
-        routes.set(text, new Set(mentions.singles.map((m) => m.route)));
-      }
-      if (routes.get(text).has(personRouteName(reference, ...nameArgs))) return true;
-      return metadata.configuration.directedKin ? false : undefined;
-    }
     let settings;
     if ((metadata.schema === undefined || metadata.schema >= 4)) {
       if (!Object.hasOwn(metadata.inputs, 'data/matching.json')) throw new Error('Missing global probability configuration');
       settings = await repository.getJson('data/matching.json');
       if (await evidenceFingerprint(settings) !== metadata.inputs['data/matching.json']) throw new Error('Probability parameters changed');
-      if (!['weighted-log-odds-v1', 'weighted-log-odds-v2', 'weighted-log-odds-v3', 'weighted-log-odds-v4', 'weighted-log-odds-v5', 'weighted-log-odds-v6'].includes(settings?.model) || settings.calibrated !== false
+      if (!['weighted-log-odds-v1', 'weighted-log-odds-v2', 'weighted-log-odds-v3', 'weighted-log-odds-v4', 'weighted-log-odds-v5', 'weighted-log-odds-v6', 'weighted-log-odds-v7'].includes(settings?.model) || settings.calibrated !== false
         || !(settings.priorProbability > 0 && settings.priorProbability < settings.mergeProbability && settings.mergeProbability < 1)
         || !(settings.guessWeight > 0 && settings.guessWeight < 1)
         || Object.keys(settings.sourceWeights || {}).length !== 4
@@ -200,7 +174,9 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
               const text = typeof fact === 'string' ? fact : fact?.type === 'generic' && typeof fact.content === 'string'
                 ? (fact.person ? `[${fact.person}] ` : '') + fact.content : null;
               reference = mention.reference;
-              if (!contextParticipant(text, reference, people, recognized)) throw new Error('Invalid reconstructed context participant');
+              const holder = typeof fact === 'string'
+                ? resolveEvidencePointer(documents.get(mention.source.path), mention.source.pointer.replace(/\/[^/]+$/, '')) : fact;
+              if (!contextParticipant(text, reference, people, holder)) throw new Error('Invalid reconstructed context participant');
             } else {
               if (!fact || !['person', 'of'].includes(mention.field) || typeof fact[mention.field] !== 'string') throw new Error('Invalid reconstructed participant');
               reference = fact[mention.field];

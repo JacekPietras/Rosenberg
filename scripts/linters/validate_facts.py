@@ -360,7 +360,7 @@ class Validator:
                     else:
                         self.check_text_person_references(fact['content'], location + '/content')
             elif kind == 'death':
-                allowed |= {'diedOn', 'diedBefore', 'circumstances'}
+                allowed |= {'diedOn', 'diedBefore', 'circumstances', 'mention'}
                 death_fields = {'diedOn', 'diedBefore'} & set(fact)
                 if len(death_fields) != 1:
                     self.report(location, "death facts require exactly one of 'diedOn' or 'diedBefore'")

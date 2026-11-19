@@ -9,7 +9,10 @@
       "english": "Acknowledgment of Henne Baumer to the Mayor and Council of the city of Frankfurt regarding his appointment as Schultheiß in Soden.\n\nSealer: Seal of Junker Siegfried von Rosenberg",
       "mention": [
         {
-          "person": "Siegfried von Rosenberg"
+          "person": "Siegfried von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
         }
       ],
       "facts": [
