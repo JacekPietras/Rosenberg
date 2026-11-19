@@ -400,6 +400,7 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .image-lightbox-description .image-lightbox-close { top: .4rem; right: .4rem; }
 .image-lightbox-description[hidden] { display: none; }
 .image-lightbox-annotations { position: absolute; pointer-events: none; transition: transform .35s ease; }
+.image-lightbox.is-seal-focused .image-lightbox-annotations { z-index: 3; }
 .image-lightbox.is-seal-dragging .image-lightbox-stage > img,
 .image-lightbox.is-seal-dragging .image-lightbox-annotations,
 .image-lightbox.is-seal-dragging .image-lightbox-seal-preview { transition: none; }
