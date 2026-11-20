@@ -10,7 +10,10 @@
       "english": "Archbishop Gerlach declares that Johann Schultheize called of Weinheim (Winheym) has loaned him 600 gold florins2 for the redemption of the Mainz castle Bensheim, which long ago was pledged by the five guardians to Count Hans von Katzenelnbogen for 7,000 gold florins and which he has now undertaken to redeem,1 and has levied it on the village of Viernheim (Virn-), which according to two documents of the five guardians and two documents of Cuno von Falkenstein stood until now with all revenues and rights as pledge to Johann for 1,600 gold florins. The Archbishop, with the consent of Dean Rudolf, Custos Heinrich, Schoolmaster Gerhard and the entire cathedral chapter, promises to pay the 2,200 gold florins in the manner specified in the aforementioned four documents concerning the 1,600 gold florins. These documents are included verbatim.3 The cathedral chapter seals with.",
       "mention": [
         {
-          "person": "Hans von Katzenelnbogen"
+          "person": "Hans von Katzenelnbogen",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ]
     }

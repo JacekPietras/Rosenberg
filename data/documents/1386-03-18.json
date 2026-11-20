@@ -9,7 +9,10 @@
       "english": "Count Heinrich of Schaumburg and his son Count Ulrich hand over in trust to Johann der Jüngere, Landgraf zu Leuchtenberg, and Johann of Abensperg the fortress Schaumburg, the Neuhaus on the Danube, Stauf, the market and toll of Aschach, the Swanser court, the court in the Aschacher Winkel, the court in the Danube valley, all of which is unencumbered and unpledged; further the court in the Erleich, the fortress and town of Peuerbach, on which Jobst of Abensperg, son-in-law of Count Heinrich of Schaumburg, may claim 2000 pounds of pennies for his marriage portion; the fortress and town of Eferding, on which the same Count Heinrich's son-in-law Heinrich von Rosenberg may claim 1000 pounds of pennies as marriage portion; and the fortress of Mistelbach, which is pledged to Ekhart the Tanner for 400 pounds of pennies. These properties shall be occupied and vacated by Landgrave Johann of Leuchtenberg and Johann of Abensperg, and after the death of Count Heinrich of Schaumburg returned to his son Count Ulrich, once he has come of age, only after satisfaction of the claims mentioned above; they shall fall as hereditary property in equal shares to the said Leuchtenberg and Abensperg if Count Ulrich of Schaumburg should die before them. Co-sealers: Hans von Rosenberg, father-in-law of Count Heinrich of Schaumburg; Heinrich der Swörzner, administrator at Maidstein; and Reinhart von Czeschlitz, Ritter, servant of Hans von Rosenberg. Given at Krumau on Sunday Reminiscere. (With 5 seals.)",
       "mention": [
         {
-          "person": "Hans zu Leuchtenberg"
+          "person": "Hans",
+          "personTitle": [
+            "Landgraf zu Leuchtenberg"
+          ]
         },
         {
           "place": "leuchtenberg"
@@ -76,7 +79,10 @@
       "english": "Johann der Jüngere, Landgraf zu Leuchtenberg, acknowledges that Count Heinrich of Schaumburg and his son Ulrich handed over in trust to him and his brother-in-law Johann, Herr of Abensperg, the fortress Schaumburg, the Neuhaus on the Danube, Stauf, the market and toll of Aschach, the Swanser court, the court in the Aschacher Winkel, the court in the Danube valley, the court in the Erleich, the fortress and town of Peuerbach, the fortress and town of Eferding and the fortress of Mistelbach; and he vows that, should the said Abensperg die before him, he will assist his heirs in their rights. Co-sealers: Jan and Heinrich, Herren zu Rosenberg. Given at the same place and on the same day. (With 2 seals.)",
       "mention": [
         {
-          "place": "leuchtenberg"
+          "person": "Hans",
+          "personTitle": [
+            "Landgraf zu Leuchtenberg"
+          ]
         },
         {
           "place": "neuhaus"

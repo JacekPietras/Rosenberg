@@ -18,7 +18,10 @@
           "place": "schaunberg"
         },
         {
-          "person": "Ulrich von Schaunberg"
+          "person": "Ulrich von Schaunberg",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "facts": [

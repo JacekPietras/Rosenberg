@@ -16,6 +16,12 @@
         },
         {
           "place": "rieneck"
+        },
+        {
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "zu Haldenbergstetten"
+          ]
         }
       ],
       "facts": [
@@ -51,7 +57,7 @@
         {
           "person": "Zaisolph von Rosenberg",
           "personTitle": [
-            "zu Haltenbergstetten Niederstetten"
+            "zu Haltenbergstetten"
           ],
           "type": "generic",
           "content": "gave his agnatic consent to the inserted agreement transferring Boxberg dated 24 July 1561."
@@ -60,10 +66,16 @@
           "person": "Balthasar von Rosenberg",
           "personDeceased": true,
           "type": "spouse",
-          "of": "Anna von Rosenberg geb. Krantz von Geispitzheim"
+          "of": "Anna Krantz von Geispitzheim",
+          "ofTitle": [
+            "von Rosenberg"
+          ]
         },
         {
-          "person": "Anna von Rosenberg geb. Krantz von Geispitzheim",
+          "person": "Anna Krantz von Geispitzheim",
+          "personTitle": [
+            "von Rosenberg"
+          ],
           "type": "generic",
           "content": "gave her consent to the inserted agreement transferring Boxberg dated 24 July 1561."
         },

@@ -24,7 +24,10 @@
           "place": "koenigheim"
         },
         {
-          "person": "Otto von Mosbach"
+          "person": "Otto von Mosbach",
+          "personTitle": [
+            "Pfalzgraf"
+          ]
         },
         {
           "place": "rinderfeld"

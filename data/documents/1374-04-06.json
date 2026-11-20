@@ -12,7 +12,10 @@
           "person": "Heinrich von Rosenberg"
         },
         {
-          "person": "Heinrich von Schaunberg"
+          "person": "Heinrich von Schaunberg",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "person": "Ulrich von Rosenberg"

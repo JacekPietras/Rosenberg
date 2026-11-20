@@ -24,10 +24,10 @@
           "place": "mosbach-st-juliana"
         },
         {
-          "person": "Philipp von Rieneck"
-        },
-        {
-          "place": "rieneck"
+          "person": "Philipp von Rieneck",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "img": [

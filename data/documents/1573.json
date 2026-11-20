@@ -27,9 +27,6 @@
           ]
         },
         {
-          "person": "Kunigunde von Seckendorf"
-        },
-        {
           "person": "Kunz von Rosenberg"
         },
         {
@@ -52,7 +49,10 @@
             "zu Waldmannshofen"
           ],
           "type": "spouse",
-          "of": "Kunigunde von Rosenberg geb. von Seckendorf"
+          "of": "Kunigunde von Seckendorf",
+          "ofTitle": [
+            "von Rosenberg"
+          ]
         },
         {
           "person": "Konrad von Rosenberg",

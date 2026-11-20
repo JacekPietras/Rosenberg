@@ -193,11 +193,24 @@ export function findPersonNameMentions(text, titleText = '', connectorText = '',
         : null;
       const titlePlace = trailingTitle?.[2] && places.flatMap((item) => item.variations || [item.name])
         .find((form) => form.toLocaleLowerCase() === trailingTitle[2].toLocaleLowerCase());
+      const bishopTitle = [...canonicalTitles.keys()].find((form) => form.toLocaleLowerCase() === 'bischof');
+      const bishopLocative = bishopTitle && places.length
+        ? new RegExp(`^(.*?)\\s+(?:zu|zum)\\s+(${alternatives(places.flatMap((item) => item.variations || [item.name]))})[,;]\\s+(${alternatives([...canonicalTitles.keys()].filter((form) => form.toLocaleLowerCase() === 'bischof'))})$`, 'iu').exec(match[0])
+        : null;
+      const bishopPlaceRecord = bishopLocative && places.find((item) =>
+        (item.variations || [item.name]).some((form) => form.toLocaleLowerCase() === bishopLocative[2].toLocaleLowerCase()));
+      const bishopPlace = bishopPlaceRecord?.name || bishopPlaceRecord?.variations?.[0];
+      if (bishopLocative) {
+        route = personRouteName(bishopLocative[1], titleText, connectorText,
+          particleText, namesText, byNamesText, places);
+      }
       const leadingPlaceRecord = leadingTitleLocative && places.find((item) =>
         (item.variations || [item.name]).some((form) => form.toLocaleLowerCase() === leadingTitleLocative[3].toLocaleLowerCase()));
       const leadingPlace = leadingPlaceRecord?.name || leadingPlaceRecord?.variations?.[0];
       const designation = connectorDesignation(match[0], connectorText, particleText, places);
-      const titles = designation
+      const titles = bishopPlace
+        ? [`${canonicalTitles.get(bishopLocative[3].toLocaleLowerCase())} zu ${bishopPlace}`]
+        : designation
         ? [designation]
         : leadingPlace
           ? [`${canonicalTitles.get(leadingTitleLocative[1].toLocaleLowerCase())} zu ${leadingPlace}`]

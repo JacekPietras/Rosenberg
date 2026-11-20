@@ -13,10 +13,13 @@
           "person": "Engelhard von Hirschhorn"
         },
         {
-          "person": "Hans von Rosenberg"
+          "person": "Hans Ulrich",
+          "personTitle": [
+            "Landgraf zu Leuchtenberg"
+          ]
         },
         {
-          "place": "leuchtenberg"
+          "person": "Hans von Rosenberg"
         },
         {
           "place": "nuremberg"

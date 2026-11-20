@@ -35,7 +35,10 @@
           "person": "Friedrich von Seinsheim"
         },
         {
-          "person": "Hans von Wertheim"
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "person": "Heinrich Schenk"

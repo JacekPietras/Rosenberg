@@ -15,7 +15,10 @@
           "place": "hohenlohe"
         },
         {
-          "person": "Katharina von Hohenlohe"
+          "person": "Katharina von Hohenlohe",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "person": "Konrad von Weinsberg"

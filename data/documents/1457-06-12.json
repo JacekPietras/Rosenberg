@@ -12,10 +12,10 @@
           "person": "Hans von Wallenstein"
         },
         {
-          "person": "Philipp von Katzenelnbogen"
-        },
-        {
-          "person": "Philipp von Katzenelnbogen"
+          "person": "Philipp von Katzenelnbogen",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "wallenstein"

@@ -466,6 +466,18 @@ test('normalizes Bishop Wolfram of Würzburg into a person route and locative ti
   assert.deepEqual(singles[0].titles, ['Bischof zu Würzburg']);
 });
 
+test('recognizes a bishop named before a locative designation', () => {
+  const titleText = `${titles}\n${projectTitles}`;
+  const placeRecords = [{ id: 'wurzburg', variations: ['Würzburg', 'Wirtzeburg', 'Wurzburg'] }];
+  const sourcePattern = buildSourcePersonPattern(projectNames, particles, placeRecords,
+    titleText, connectors, byNames);
+  const { singles } = findPersonNameMentions(' Wolfram zu Würzburg, Bischof', titleText,
+    connectors, particles, projectNames, byNames, placeRecords, sourcePattern);
+  assert.equal(singles.length, 1);
+  assert.equal(singles[0].route, 'Wolfram');
+  assert.deepEqual(singles[0].titles, ['Bischof zu Würzburg']);
+});
+
 test('normalizes Bishop Konrad of Würzburg to Konrad, Bischof zu Würzburg', () => {
   const titleText = `${titles}\n${projectTitles}`;
   const placeRecords = [{ name: 'Würzburg', variations: ['Würzburg', 'Wirtzeburg', 'Wurzburg'] }];

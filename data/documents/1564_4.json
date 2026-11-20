@@ -12,7 +12,10 @@
           "person": "Albrecht von Rosenberg"
         },
         {
-          "person": "Anna von Waldeck"
+          "person": "Anna von Waldeck",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "grumbach"

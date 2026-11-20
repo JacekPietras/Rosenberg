@@ -21,7 +21,10 @@
           "place": "limpurg"
         },
         {
-          "person": "Michael von Wertheim"
+          "person": "Michael von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "rosenberg-town"

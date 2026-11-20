@@ -9,10 +9,22 @@
       "english": "Records of the Würzburg Fief Court concerning: the transfer in fief of the castle, town, and Amt of Grünsfeld by Dorothea, Countess von Wertheim; the Bishop of Würzburg’s grant to Barbara, Landgravine zu Leuchtenberg, of the annual use of 1,150 florins from the castle, town, and Amt of Grünsfeld; the sale by Landgraf Georg zu Leuchtenberg to the executors of Lorenz Truchseß, Domherr zu Würzburg, of an annual rent of 16½ florins from the Grünsfeld treasury; further grants by the Bishop of Würzburg concerning Grünsfeld; the sale by Landgraf Georg Ludwig zu Leuchtenberg to the guardians of Regina Kunigunde von Rosenberg of an annual rent of 150 florins charged on the lordship and town of Grünsfeld; other similar acknowledgments and Leuchtenberg debts; renewals of fiefs; the Leuchtenberg collateral pledges located in Grünsfeld and pledged to Franz Echter von und zu Mespelbrunn for the tithe district of Gissigheim; and the separation of Leuchtenberg property from the Grünsfeld fief holdings.",
       "mention": [
         {
-          "person": "Georg Ludwig zu Leuchtenberg"
+          "person": "Dorothea von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
-          "person": "Georg zu Leuchtenberg"
+          "person": "Georg",
+          "personTitle": [
+            "Landgraf zu Leuchtenberg"
+          ]
+        },
+        {
+          "person": "Georg Ludwig",
+          "personTitle": [
+            "Landgraf zu Leuchtenberg"
+          ]
         },
         {
           "place": "grunsfeld"
@@ -21,13 +33,13 @@
           "place": "leuchtenberg"
         },
         {
-          "person": "Lorenz Truchsess"
+          "person": "Lorenz Truchsess",
+          "personTitle": [
+            "Domherr zu Würzburg"
+          ]
         },
         {
           "person": "Regina Kunigunde von Rosenberg"
-        },
-        {
-          "place": "wertheim-stiftskirche"
         },
         {
           "place": "wurzburg"

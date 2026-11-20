@@ -27,10 +27,16 @@
           "place": "mosbach-st-juliana"
         },
         {
-          "person": "Philipp von Katzenelnbogen"
+          "person": "Philipp von Katzenelnbogen",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
-          "person": "Philipp von Rieneck"
+          "person": "Philipp von Rieneck",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "rieneck"

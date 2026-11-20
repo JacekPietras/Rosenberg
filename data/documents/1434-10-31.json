@@ -8,7 +8,10 @@
       "english": "Eberhard von Rosenberg releases the prisoners from the feud with Count Hans von Wertheim after issuing letters of primordial feud. Except for prisoners under the Pope's ban or the Emperor's ban. The issuer's seal confirms this.",
       "mention": [
         {
-          "person": "Hans von Wertheim"
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "facts": [

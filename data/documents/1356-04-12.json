@@ -13,7 +13,10 @@
           "place": "frankenstein"
         },
         {
-          "place": "fulda-cathedral"
+          "person": "Heinrich",
+          "personTitle": [
+            "Abt zu Fulda"
+          ]
         },
         {
           "person": "Peter von Rosenberg"

@@ -9,7 +9,10 @@
       "english": "Fragment of a mediation agreement: Count Johann von Wertheim is to hand over his captives, except those from Wittstadt, to Mainz in exchange for his men, who have been captured by the one from Eisenburg. The bishops of Mainz and Würzburg must reach an agreement, with Asmus von Rosenberg involved.",
       "mention": [
         {
-          "person": "Hans von Wertheim"
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "wertheim-stiftskirche"

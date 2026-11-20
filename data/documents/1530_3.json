@@ -12,7 +12,10 @@
           "place": "alzey"
         },
         {
-          "person": "Hans von Hohenlohe"
+          "person": "Hans von Hohenlohe",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "heidelberg"

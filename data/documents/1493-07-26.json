@@ -9,6 +9,12 @@
       "english": "Knight Georg von Rosenberg pledges to serve Johann, Graf von Wertheim, Philipp, Count of Hanau-Lichtenberg, Michel and Asmus, Counts of Wertheim, for six years and to support them in their feuds, subject to certain exceptions.",
       "mention": [
         {
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
+        },
+        {
           "place": "wertheim-stiftskirche"
         }
       ],

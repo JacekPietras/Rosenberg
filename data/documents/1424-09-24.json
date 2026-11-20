@@ -18,7 +18,10 @@
           "person": "Hans Mönch von Rosenberg"
         },
         {
-          "person": "Hans von Wertheim"
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "wertheim-stiftskirche"

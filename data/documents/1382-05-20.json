@@ -11,7 +11,10 @@
           "person": "Eberhard von Hartheim"
         },
         {
-          "place": "wertheim-stiftskirche"
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "facts": [

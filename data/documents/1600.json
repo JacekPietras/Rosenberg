@@ -6,7 +6,24 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 178",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-98072",
       "german": "Fol. 67-150 Rechtsstreit vor dem Gericht zu Bütthard erster und vor dem Landgericht Würzburg in zweiter Instanz zwischen Hans Hofmann zu Grünsfeld einerseits und Nikolaus Henkel, rosenbergischer Vogt zu Gnötzheim, und Konsorten als Vormünder der Kinder des Mangold Rumel zu Aub andererseits wegen der dem Almosen gestifteten Zinsen von einem Gut, 1600-1603.",
-      "english": "Folios 67–150: Legal proceedings, first before the court at Bütthard and on appeal before the Würzburg regional court, between Hans Hofmann zu Grünsfeld on one side and Nikolaus Henkel, Vogt zu Gnötzheim of the von Rosenberg, and his associates, acting as guardians of the children of Mangold Rumel zu Aub, on the other, concerning interest from an estate endowed for alms, 1600–1603."
+      "english": "Folios 67–150: Legal proceedings, first before the court at Bütthard and on appeal before the Würzburg regional court, between Hans Hofmann zu Grünsfeld on one side and Nikolaus Henkel, Vogt zu Gnötzheim of the von Rosenberg, and his associates, acting as guardians of the children of Mangold Rumel zu Aub, on the other, concerning interest from an estate endowed for alms, 1600–1603.",
+      "mention": [
+        {
+          "place": "aub"
+        },
+        {
+          "place": "gnoetzheim"
+        },
+        {
+          "place": "grunsfeld"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

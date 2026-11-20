@@ -70,6 +70,7 @@ Jakob, Jacob
 Joachim
 Josef
 Jost
+Hiltpold
 Karl, Carl
 Kasimir
 Kilian

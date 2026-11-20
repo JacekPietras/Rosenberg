@@ -15,7 +15,10 @@
       "english": "Count Eberhard von Wertheim grants the tithe at Großrinderfeld, a fief of the county, which Edelfrau Anna, daughter of Hans von Rosenberg, Ritter, and widow of Hans Phal von Grünsfeld, Ritter, had sold to Grünau Charterhouse. Dated 28 March 1368.",
       "mention": [
         {
-          "person": "Eberhard von Wertheim"
+          "person": "Eberhard von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "grunsfeld"

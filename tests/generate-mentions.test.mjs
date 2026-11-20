@@ -15,7 +15,10 @@ test('keeps an age title and a residence title as separate generated titles', ()
 });
 
 test('keeps a locative landgrave designation out of the person name', () => {
-  assert.deepEqual(recognizeMentions('On June 8, 1489, Hans Landgraf zu Leuchtenberg enfeoffe'), [
+  assert.deepEqual(recognizeMentions('On June 8, 1489, Hans Landgraf zu Leuchtenberg enfeoffed Michael'), [
+    { person: 'Hans', personTitle: ['Landgraf zu Leuchtenberg'] },
+  ]);
+  assert.deepEqual(recognizeMentions('was enfeoffed by Hans, Landgraf zu Leuchtenberg with the farm'), [
     { person: 'Hans', personTitle: ['Landgraf zu Leuchtenberg'] },
   ]);
 });

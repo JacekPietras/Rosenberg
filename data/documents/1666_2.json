@@ -45,7 +45,10 @@
           "place": "fulda-cathedral"
         },
         {
-          "person": "Georg Ludwig von Leuchtenberg"
+          "person": "Georg Ludwig von Leuchtenberg",
+          "personTitle": [
+            "Landgraf"
+          ]
         },
         {
           "person": "Georg von Hohenlohe",

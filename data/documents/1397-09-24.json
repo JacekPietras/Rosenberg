@@ -9,10 +9,16 @@
       "english": "Johann, Landgraf zu Leuchtenberg, allies himself with his brother-in-law Johann, Herr of Abensperg, in such a way that Heinrich von Rosenberg, his son and father-in-law (Sohn und Sweher), and Count Ulrich von Schaunberg, his brother-in-law, may also join this alliance if they wish. Given on the Monday after St. Matthew. (With seal.)",
       "mention": [
         {
-          "place": "leuchtenberg"
+          "person": "Hans",
+          "personTitle": [
+            "Landgraf zu Leuchtenberg"
+          ]
         },
         {
-          "person": "Ulrich von Schaunberg"
+          "person": "Ulrich von Schaunberg",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "facts": [

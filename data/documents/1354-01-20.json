@@ -23,7 +23,10 @@
           "person": "Konrad von Erbach"
         },
         {
-          "person": "Rudolf von Wertheim"
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "facts": [
