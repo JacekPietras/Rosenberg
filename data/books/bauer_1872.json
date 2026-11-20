@@ -4219,7 +4219,10 @@
           "place": "boxberg"
         },
         {
-          "person": "Hans von Leuchtenberg"
+          "person": "Hans",
+          "personTitle": [
+            "Landgraf zu Leuchtenberg"
+          ]
         },
         {
           "place": "schweigern"
