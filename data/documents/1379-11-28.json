@@ -27,13 +27,19 @@
           "place": "helmstadt"
         },
         {
-          "person": "Kunz Mönch von Rosenberg"
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt zu Steinsberg"
+          ]
         },
         {
           "place": "michelfeld"
         },
         {
-          "person": "Peter von Helmstadt"
+          "person": "Peter von Helmstadt",
+          "personTitle": [
+            "genannt von Rosenberg"
+          ]
         }
       ],
       "img": [
@@ -75,12 +81,6 @@
         },
         {
           "place": "helmstadt"
-        },
-        {
-          "person": "Kunz Mönch von Rosenberg",
-          "personTitle": [
-            "Vogt"
-          ]
         },
         {
           "place": "michelfeld"

@@ -30,7 +30,10 @@
           "person": "Eberhard von Grumbach"
         },
         {
-          "person": "Eberhard von Hartheim"
+          "person": "Eberhard von Hartheim",
+          "personTitle": [
+            "Vogt zu Breuberg"
+          ]
         },
         {
           "person": "Hans Mönch"

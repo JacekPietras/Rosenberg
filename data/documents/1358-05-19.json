@@ -18,13 +18,7 @@
           "person": "Boppe von Adelsheim"
         },
         {
-          "person": "Eberhard Rüd"
-        },
-        {
           "person": "Eberhard Rüd von Bödigheim"
-        },
-        {
-          "person": "Konrad Rüd of Wildenberg"
         },
         {
           "person": "Konrad von Hartheim"
@@ -57,12 +51,12 @@
           "content": "served as surety for Archbishop Gerlach's debt to Count Boppo von Eberstein."
         },
         {
-          "person": "Eberhard Rüdt",
+          "person": "Eberhard Rüd",
           "personTitle": [
             "Ritter"
           ],
           "type": "sibling",
-          "of": "Konrad Rüdt",
+          "of": "Konrad Rüd",
           "ofTitle": [
             "Burggraf zu Wildenberg",
             "Ritter"

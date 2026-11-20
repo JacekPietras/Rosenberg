@@ -9,7 +9,10 @@
       "english": "Duke Albert of Austria declares that he has submitted all disputes and conflicts that we have with the noble von Rosenberg concerning the city of Eferdingen, the imprisonment, and all other matters to the highly born and our dear son-in-law Burgrave Friedrich von Nuremberg and the noble and well-born Landgrave Johannsen of Leuchtenberg and Count of Hals, our specially beloved, and accepts their arbitral award, which they will announce orally or in writing between now and the next Sunday after St. John's Day at Sunwenden. Lent on Friday after the Sunday Letare at Mid-Lent.\n\nSeal: Seal missing",
       "mention": [
         {
-          "person": "Friedrich of Nuremberg"
+          "person": "Friedrich",
+          "personTitle": [
+            "Burggraf zu Nuremberg"
+          ]
         },
         {
           "person": "Friedrich von Nuremberg",
@@ -28,7 +31,7 @@
         {
           "subject": "the noble von Rosenberg",
           "type": "generic",
-          "content": "were in a dispute with Duke Albrecht of Austria concerning Eferding, prisoners and other matters, which he submitted to Friedrich, Burggraf of Nuremberg, and Johann, Landgraf of Leuchtenberg and Graf of Hals, for arbitration."
+          "content": "were in a dispute with Duke Albrecht of Austria concerning Eferding, prisoners and other matters, which he submitted to Friedrich, Burggraf zu Nuremberg, and Johann, Landgraf of Leuchtenberg and Graf of Hals, for arbitration."
         }
       ]
     }

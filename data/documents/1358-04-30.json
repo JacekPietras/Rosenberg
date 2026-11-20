@@ -12,13 +12,13 @@
           "place": "helmstadt"
         },
         {
-          "person": "Raban von Helmstatt"
+          "person": "Raban von Helmstadt"
         },
         {
-          "person": "Wiprecht von Helmstadt"
-        },
-        {
-          "person": "Wiprecht von Helmstatt"
+          "person": "Wiprecht von Helmstadt",
+          "personTitle": [
+            "Edelknecht zu Bischofsheim"
+          ]
         }
       ],
       "facts": [

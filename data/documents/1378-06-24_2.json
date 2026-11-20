@@ -12,7 +12,11 @@
           "place": "adelsheim"
         },
         {
-          "person": "Eberhard Rüd of Bödigheim"
+          "person": "Eberhard Rüd",
+          "personTitle": [
+            "der Ältere",
+            "zu Bödigheim"
+          ]
         },
         {
           "person": "Gerlach von Hohenlohe"

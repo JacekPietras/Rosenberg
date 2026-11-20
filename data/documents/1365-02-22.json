@@ -25,7 +25,10 @@
           "person": "Konrad von Hartheim"
         },
         {
-          "person": "Ludwig Mönch von Rosenberg"
+          "person": "Ludwig Mönch von Rosenberg",
+          "personTitle": [
+            "zu Hainstadt"
+          ]
         },
         {
           "place": "riedern"

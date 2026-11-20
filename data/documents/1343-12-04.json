@@ -12,7 +12,10 @@
           "place": "erbach"
         },
         {
-          "person": "Konrad Rüd of Starkenburg"
+          "person": "Konrad Rüd",
+          "personTitle": [
+            "Burggraf zu Starkenburg"
+          ]
         },
         {
           "person": "Konrad von Erbach"

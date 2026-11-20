@@ -36,7 +36,10 @@
           "person": "Kunz von Niedeck"
         },
         {
-          "person": "Ludwig Mönch von Rosenberg"
+          "person": "Ludwig Mönch von Rosenberg",
+          "personTitle": [
+            "zu Hainstadt"
+          ]
         },
         {
           "person": "Steyn von Riedern"
