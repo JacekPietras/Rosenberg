@@ -17,7 +17,6 @@ CHECKS = (
     "validate_name_variants.py",
     "normalize_hidden_places.py",
     "validate_documents.py",
-    "migrate_von_und_zu.py",
     "normalize_fact_names.mjs",
     "validate_english_names.py",
     "validate_facts.py",

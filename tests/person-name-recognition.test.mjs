@@ -87,6 +87,27 @@ test('recognizes zum as zu before a place and routes it canonically', () => {
     'Konrad von Rosenberg');
 });
 
+test('recognizes von und zu, von u. zu, and von and zu surnames as canonical von names', () => {
+  for (const phrase of ['Konrad von und zu Rosenberg', 'Konrad von u. zu Rosenberg', 'Konrad von and zu Rosenberg']) {
+    pattern.lastIndex = 0;
+    assert.equal(pattern.exec(phrase)?.[0], phrase);
+    const result = findPersonNameMentions(phrase, titles, connectors, particles,
+      projectNames, byNames, places, pattern);
+    assert.equal(result.singles[0]?.route, 'Konrad von Rosenberg');
+    assert.deepEqual(result.singles[0]?.titles, ['zu Rosenberg']);
+  }
+  const phrase = 'Eberhard von und zu Rosenberg';
+  const result = findPersonNameMentions(phrase, titles, connectors, particles,
+    projectNames, byNames, places, pattern);
+  assert.equal(result.singles[0]?.route, 'Eberhard von Rosenberg');
+  assert.deepEqual(result.singles[0]?.titles, ['zu Rosenberg']);
+  const englishPhrase = 'Eberhard von and zu Rosenberg';
+  const englishResult = findPersonNameMentions(englishPhrase, titles, connectors, particles,
+    projectNames, byNames, places, pattern);
+  assert.equal(englishResult.singles[0]?.route, 'Eberhard von Rosenberg');
+  assert.deepEqual(englishResult.singles[0]?.titles, ['zu Rosenberg']);
+});
+
 test('recognizes a trailing zu-place designation as a person title', () => {
   const scenarioPlaces = [...places, { name: 'Essingen', variations: ['Essingen'] }];
   const phrase = 'Hans von Rosenberg zu Essingen';

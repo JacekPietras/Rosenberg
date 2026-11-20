@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Migrate von und zu names and check typed facts and guesses.
+"""Check typed facts and guesses.
 
 Examples:
     python3 scripts/linters/validate_facts.py
@@ -592,12 +592,9 @@ def main(argv=None):
     args = parser.parse_args(argv)
     validator = Validator(args.strict_migration)
     validator.load_people(args.people.resolve())
-    # Report unreadable inputs before migration, which assumes parseable JSON.
+    # Skip unreadable inputs; the schema validator reports them.
     paths = [path for path in collect_paths(args.paths or [ROOT / 'data'], validator)
              if validator.read_json(path) is not MISSING]
-    if paths:
-        from linters.migrate_von_und_zu import main as migrate_von_und_zu
-        migrate_von_und_zu([*(str(path) for path in paths), '--apply'])
     for path in paths:
         clean_facts(path, validator)
         validator.validate_file(path)

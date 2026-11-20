@@ -168,6 +168,7 @@ export function findPersonNameMentions(text, titleText = '', connectorText = '',
       const prefix = placeSuffix ? match[0].slice(0, placeSuffix.index).trim() : '';
       const place = placeSuffix && places.flatMap((item) => item.variations || [item.name])
         .find((form) => form.toLocaleLowerCase() === placeSuffix[1].toLocaleLowerCase());
+      const hasVonUndZuName = /\bvon\s+(?:und|u\.|and)\s+zu\s+[^\s,;]+$/iu.test(match[0]);
       const prefixHasTitle = prefix && splitPersonNameTitles(prefix, titleText).titles.length > 0;
       const byNameForms = new Set(String(byNamesText).split(/\r?\n/)
         .filter((line) => !line.trim().startsWith('#'))
@@ -204,6 +205,8 @@ export function findPersonNameMentions(text, titleText = '', connectorText = '',
           ? [canonicalTitles.get(leadingTitle[1].toLocaleLowerCase())]
         : trailingTitle
         ? [`${canonicalTitles.get(trailingTitle[1].toLocaleLowerCase())}${titlePlace ? ` zu ${titlePlace}` : trailingTitle[2] ? ` zu ${trailingTitle[2]}` : ''}`]
+        : place && hasVonUndZuName
+          ? [`zu ${place}`]
         : place && !prefixHasTitle
           && personRouteName(prefix, titleText, connectorText, particleText, namesText, byNamesText, places) === route
           ? [`zu ${place}`] : [];
@@ -279,6 +282,7 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const titleSequence = titles ? `(?:[\\s,;]+${byNameBeforeParticle}${titleSuffixMatch})*` : '';
   const leadingTitles = titles ? `(?:${titleMatch}\\s+)*` : '';
   const particle = `(?:${particles}|of)`;
+  const familyParticle = `(?:${particle}|von\\s+(?:und|u\\.|and)\\s+zu)`;
   const placeClause = `(?:${placeNames})(?:\\s+(?:zu|zum|an)\\s+(?:${placeNames}))?`;
   const suffixTitles = `(?:[\\s,;]+${titleSuffixMatch})*`;
   const placeNote = '(?:\\s*\\(-?[\\p{L}\\p{N}]+-?\\))?';
@@ -289,7 +293,7 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const birthMarkers = alternatives(parseNameConnectorGroups(connectorText, 'birth-name markers').flat());
   const birthSurname = birthMarkers ? `[\\s,;]+\\(?\\s*(?:${birthMarkers})[\\s,;]+(?:(?:${names}|${byNames})\\s+)?(?:von|v\\.?|van|de|in|der|die|das|des|of|zu)\\s+(?:${placeNames})\\s*\\)?` : '(?!)';
   const byNameSurname = byNames ? `[\\s,]+(?:${byNames})(?:\\s+(?:${particle})\\s+(?:${placeNames}))?(?:\\s+(?:zu|zum)\\s+${titlePlace})?${placeNote}${suffixTitles}` : '(?!)';
-  const surname = `(?:${byNameSurname}|[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}${alternateDesignation}(?:${birthSurname})?|${birthSurname}|[\\s,]+(?:${placeNames})${birthSurname}|[\\s,]+(?:${placeNames}))`;
+  const surname = `(?:${byNameSurname}|[\\s,]+${familyParticle}\\s+${placeClause}${placeNote}${suffixTitles}${alternateDesignation}(?:${birthSurname})?|${birthSurname}|[\\s,]+(?:${placeNames})${birthSurname}|[\\s,]+(?:${placeNames}))`;
   const titledGivenName = routeTitles ? `(?:${routeTitles})\\s+(?:${names})(?![\\p{L}\\p{N}])` : '(?!)';
   // Some English catalogues give a person only by their given name and office,
   // e.g. "Eberhard, Bishop of Rosenberg". Keep this form restricted to a
@@ -336,6 +340,11 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     }
     let parts = String(value).trim().split(/\s+/);
     if (!parts.length) return '';
+    const vonUndZuIndex = parts.findIndex((part, index) => index > 0
+      && part.toLocaleLowerCase() === 'von'
+      && ['und', 'u.', 'and'].includes(parts[index + 1]?.toLocaleLowerCase())
+      && parts[index + 2]?.toLocaleLowerCase() === 'zu');
+    if (vonUndZuIndex >= 0) parts.splice(vonUndZuIndex + 1, 2);
     const englishPlaceParticleIndex = parts.findIndex((part, index) => index > 0
       && part.toLocaleLowerCase() === 'of'
       && canonicalPlaces.has(parts[index + 1]?.toLocaleLowerCase()));
