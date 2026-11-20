@@ -12,7 +12,10 @@
           "place": "helmstadt"
         },
         {
-          "person": "Ludwig von Liebenstein"
+          "person": "Ludwig von Liebenstein",
+          "personTitle": [
+            "zu Liebenstein"
+          ]
         },
         {
           "person": "Philipp von Liebenstein"
