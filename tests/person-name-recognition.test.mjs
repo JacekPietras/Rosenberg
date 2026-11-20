@@ -98,6 +98,22 @@ test('recognizes a trailing zu-place designation as a person title', () => {
   assert.deepEqual(result.singles[0]?.titles, ['zu Essingen']);
 });
 
+test('does not treat a coordinated place as a title of Count Boppo von Wertheim', () => {
+  const scenarioPlaces = [...places,
+    { name: 'Wertheim', variations: ['Wertheim'] },
+    { name: 'Bronnbach', variations: ['Bronnbach'] },
+  ];
+  const scenarioTitles = `${titles}\n${projectTitles}`;
+  const phrase = 'between Count Boppo I von Wertheim and Bronnbach in 1178';
+  const scenarioPattern = buildSourcePersonPattern(projectNames, particles, scenarioPlaces,
+    scenarioTitles, connectors, byNames);
+  const result = findPersonNameMentions(phrase, scenarioTitles, connectors, particles,
+    projectNames, byNames, scenarioPlaces, scenarioPattern);
+  assert.equal(result.singles.length, 1);
+  assert.equal(result.singles[0]?.route, 'Boppe von Wertheim');
+  assert.deepEqual(result.singles[0]?.titles, ['Graf']);
+});
+
 test('assigns an intervening office title to Konrad without attaching it to Eberhard', () => {
   const scenarioPlaces = [...places, { name: 'Wildenberg', variations: ['Wildenberg'] }];
   const scenarioTitles = `${titles}\n${projectTitles}`;
