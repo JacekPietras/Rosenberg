@@ -242,6 +242,23 @@ test('recognizes translated Knight as a non-canonical title in surrounding prose
   assert.equal(personRouteName('Knight Eberhard von Rosenberg', titles), 'Eberhard von Rosenberg');
 });
 
+test('recognizes the phrase “which knight Eberhard von Rosenberg, Vogt of Dürn”', () => {
+  const phrase = 'which knight Eberhard von Rosenberg, Vogt of Dürn,';
+  pattern.lastIndex = 0;
+  const match = pattern.exec(phrase);
+  assert.equal(match?.[0], 'knight Eberhard von Rosenberg, Vogt of Dürn');
+  assert.equal(personRouteName(match[0], titles, connectors, particles, names, byNames, places),
+    'Eberhard von Rosenberg');
+  const sourcePattern = buildSourcePersonPattern(names, particles, places,
+    titles, connectors, byNames);
+  const { singles } = findPersonNameMentions(phrase, titles,
+    connectors, particles, names, byNames, places, sourcePattern);
+  assert.equal(singles.length, 1);
+  assert.equal(singles[0].text, 'knight Eberhard von Rosenberg, Vogt of Dürn');
+  assert.equal(singles[0].route, 'Eberhard von Rosenberg');
+  assert.deepEqual(singles[0].titles, ['Ritter', 'Vogt zu Dürn']);
+});
+
 test('recognizes a parenthetical given-name variant and translated office title', () => {
   pattern.lastIndex = 0;
   const phrase = 'knight Ebirhart (or Eber-) von Rosenberg, vogt of Durn';
@@ -421,6 +438,18 @@ test('normalizes Bishop Konrad of Würzburg to Konrad, Bischof zu Würzburg', ()
     connectors, particles, projectNames, byNames, placeRecords, sourcePattern);
   assert.equal(singles.length, 1);
   assert.equal(singles[0].route, 'Konrad');
+  assert.deepEqual(singles[0].titles, ['Bischof zu Würzburg']);
+});
+
+test('recognizes “Bishop Hans zu Würzburg” in surrounding prose', () => {
+  const titleText = `${titles}\n${projectTitles}`;
+  const placeRecords = [{ name: 'Würzburg', variations: ['Würzburg', 'Wirtzeburg', 'Wurzburg'] }];
+  const sourcePattern = buildSourcePersonPattern(projectNames, particles, placeRecords,
+    titleText, connectors, byNames);
+  const { singles } = findPersonNameMentions('for Bishop Hans zu Würzburg was', titleText,
+    connectors, particles, projectNames, byNames, placeRecords, sourcePattern);
+  assert.equal(singles.length, 1);
+  assert.equal(singles[0].route, 'Hans');
   assert.deepEqual(singles[0].titles, ['Bischof zu Würzburg']);
 });
 
