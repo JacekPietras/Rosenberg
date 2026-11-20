@@ -243,7 +243,10 @@
           "place": "nuremberg"
         },
         {
-          "person": "Rudolf von Wertheim"
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "facts": [
@@ -1742,7 +1745,10 @@
           "place": "rosenberg-town"
         },
         {
-          "person": "Ruprecht von Dürn"
+          "person": "Ruprecht von Dürn",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "sindolsheim-church"
@@ -1836,7 +1842,10 @@
       "english": "In a sale to the Gerlachsheim Monastery, Lord Arnold von Rosenberg, son-in-law of \"des Phales,\" acted as guarantor for Count Rudolf von Wertheim in 1321 (Mone, D. Rhein IX, p. 58), so we also know the family of his wife. His sons must be the cousins of Eberhard I's sons—Eberhard (II.), Konrad, and Hans—who were already mentioned above; see Reg. b. VII, 298. This is further confirmed by some enfeoffments.",
       "mention": [
         {
-          "person": "Rudolf von Wertheim"
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "facts": [
@@ -2571,7 +2580,10 @@
           "place": "gommersdorf"
         },
         {
-          "person": "Hans von Wertheim"
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "facts": [
@@ -4014,7 +4026,10 @@
       "english": "In 1480, Georg von Rosenberg received permission to take a loan of 400 florins on his Würzburg fiefs in Rosenberg (Biedermann, Table 406, A.). In 1488, he mediated a dispute between Lord Philipp der Ältere von Weinsberg and the Truchsesses of Baldersheim and others concerning Aub. He was a member of the Society of the Unicorn (Unterfränkisches Archiv XIX, 2, p. 196) and participated in several tournaments of that time. In 1500, he was in a feud with Count Asmus von Wertheim. In 1502, he supported Margrave Casimir against Nuremberg and fought on the Palatine side in the Bavarian Succession War in 1504. In 1509, Osanna, née von Eicholzheim, was referred to as the widow of Lord Georg von Rosenberg zu Boxberg, Ritter; they had no children.",
       "mention": [
         {
-          "person": "Asmus von Wertheim"
+          "person": "Asmus von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "aub"
