@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildSourcePersonPattern } from './person-name-recognition.js?v=25';
+import { buildSourcePersonPattern } from './person-name-recognition.js?v=26';
 import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=14';
 
 export function createDataLoader({

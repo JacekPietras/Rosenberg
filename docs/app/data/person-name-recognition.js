@@ -9,9 +9,28 @@ function alternatives(values) {
     .join('|');
 }
 
+// name-connectors.md groups equivalent forms under section comments. Older
+// callers may still provide a single unsectioned connector list.
+function parseNameConnectorGroups(markdown = '', section = 'alternate surname connectors') {
+  const lines = String(markdown).split(/\r?\n/);
+  const hasSections = lines.some((line) => /^\/\/\s*[^/].*$/u.test(line.trim()));
+  let active = !hasSections && section === 'alternate surname connectors';
+  const groups = [];
+  for (const line of lines) {
+    const header = line.trim().match(/^\/\/\s*(.*?)\s*$/u);
+    if (header) {
+      active = header[1].toLocaleLowerCase() === section;
+      continue;
+    }
+    if (!active) continue;
+    const forms = line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean);
+    if (forms.length) groups.push(forms);
+  }
+  return groups;
+}
+
 export function personMentionClass(name, connectorText = '', particleText = '') {
-  const connectors = alternatives(String(connectorText).split(/\r?\n/)
-    .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
+  const connectors = alternatives(parseNameConnectorGroups(connectorText).flat());
   const particles = alternatives(String(particleText).split(/\r?\n/).map((line) => line.split('//')[0].trim()));
   const personName = connectors && particles
     ? String(name).replace(new RegExp(`[\\s,;]+(?:${connectors})[\\s,;]+(?:${particles})\\s+[^,;]+$`, 'iu'), '')
@@ -208,9 +227,7 @@ function titleFormsPattern(canonicalTitles) {
 }
 
 function connectorDesignation(text, connectorText, particleText, places) {
-  const groups = String(connectorText).split(/\r?\n/)
-    .filter((line) => line.trim() && !line.trim().startsWith('#'))
-    .map((line) => line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean));
+  const groups = parseNameConnectorGroups(connectorText);
   const canonical = new Map(groups.flatMap((group) => group.map((form) => [form.toLocaleLowerCase(), group[0]])));
   const connectors = alternatives([...canonical.keys()]);
   const particleGroups = String(particleText).split(/\r?\n/)
@@ -249,8 +266,7 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const placeNames = alternatives(places.flatMap((place) => place.variations || [place.name]));
   const titles = alternatives(parsePersonNameTitles(titleText));
   const routeTitles = alternatives([...parsePersonNameRouteTitles(titleText)]);
-  const connectors = alternatives(String(connectorText).split(/\r?\n/)
-    .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
+  const connectors = alternatives(parseNameConnectorGroups(connectorText).flat());
   const byNames = alternatives(String(byNamesText).split(/\r?\n/)
     .filter((line) => !line.trim().startsWith('#'))
     .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
@@ -270,7 +286,8 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const leadingConnector = connectors ? `(?:(?:${connectors})\\s+)?` : '';
   const namingConnector = connectors ? `(?:\\s+(?:${connectors}))?` : '';
   const alternateDesignation = connectors ? `(?:[\\s,;]+(?:${connectors})[\\s,;]+${particle}\\s+${placeClause})?` : '';
-  const birthSurname = `[\\s,;]+\\(?\\s*(?:née|nee)[\\s,;]+(?:(?:${names}|${byNames})\\s+)?(?:von|v\\.?|van|de|in|der|die|das|des|of|zu)\\s+(?:${placeNames})\\s*\\)?`;
+  const birthMarkers = alternatives(parseNameConnectorGroups(connectorText, 'birth-name markers').flat());
+  const birthSurname = birthMarkers ? `[\\s,;]+\\(?\\s*(?:${birthMarkers})[\\s,;]+(?:(?:${names}|${byNames})\\s+)?(?:von|v\\.?|van|de|in|der|die|das|des|of|zu)\\s+(?:${placeNames})\\s*\\)?` : '(?!)';
   const byNameSurname = byNames ? `[\\s,]+(?:${byNames})(?:\\s+(?:${particle})\\s+(?:${placeNames}))?(?:\\s+(?:zu|zum)\\s+${titlePlace})?${placeNote}${suffixTitles}` : '(?!)';
   const surname = `(?:${byNameSurname}|[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}${alternateDesignation}(?:${birthSurname})?|${birthSurname}|[\\s,]+(?:${placeNames})${birthSurname}|[\\s,]+(?:${placeNames}))`;
   const titledGivenName = routeTitles ? `(?:${routeTitles})\\s+(?:${names})(?![\\p{L}\\p{N}])` : '(?!)';
@@ -285,8 +302,7 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
 
 export function personRouteName(name, titleText = '', connectorText = '', particleText = '', namesText = '', byNamesText = '', places = []) {
   const titles = alternatives(parsePersonNameTitles(titleText));
-  const connectors = alternatives(String(connectorText).split(/\r?\n/)
-    .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
+  const connectors = alternatives(parseNameConnectorGroups(connectorText).flat());
   const particles = alternatives(String(particleText).split(/\r?\n/).map((line) => line.split('//')[0].trim()));
   const variantMap = (text) => new Map(String(text).split(/\r?\n/)
     .filter((line) => line.trim() && !line.trim().startsWith('#'))
@@ -357,7 +373,8 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     const givenName = canonicalGiven.get(standaloneTitledGivenName[2].toLocaleLowerCase()) || standaloneTitledGivenName[2];
     return routeTitles.has(title.toLocaleLowerCase()) ? `${title} ${givenName}` : givenName;
   }
-  const birthName = String(name).match(/^(.*?)[\s,;]+\(?\s*(?:née|nee)[\s,;]+(.+?)\s*\)?$/iu);
+  const birthMarkers = alternatives(parseNameConnectorGroups(connectorText, 'birth-name markers').flat());
+  const birthName = birthMarkers && String(name).match(new RegExp(`^(.*?)[\\s,;]+\\(?\\s*(?:${birthMarkers})[\\s,;]+(.+?)\\s*\\)?$`, 'iu'));
   if (birthName) {
     const marriedRoute = personRouteName(birthName[1], titleText, connectorText, particleText, namesText, byNamesText, places);
     const particleSurname = particles && new RegExp(`[\\s,;]+(?:${particles}|of)\\s+.+$`, 'iu').test(marriedRoute);
@@ -380,7 +397,7 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
   String(byNamesText).split(/\r?\n/).filter((line) => !line.trim().startsWith('#'))
     .forEach((line) => line.split('//')[0].split(',').map((form) => form.trim()).filter(Boolean).forEach((form) => byNameForms.push(form)));
   let routeName = String(name)
-    .replace(/[\s,;]+(?:née|nee)[\s,;]+/iu, ' ')
+    .replace(birthMarkers ? new RegExp(`[\\s,;]+(?:${birthMarkers})[\\s,;]+`, 'iu') : /$^/u, ' ')
     .replace(new RegExp(`^(?:${titles})[\\s,;]+(?:${connectors})[\\s,;]+`, 'iu'), '')
     .replace(new RegExp(`^(?:(?:${titles})(?:\\s+(?:zu|zum|an|of)\\s+[^,]+)?[\\s,;]+)+`, 'iu'), '')
     .replace(new RegExp(`^(?:${connectors})\\s+`, 'iu'), '')

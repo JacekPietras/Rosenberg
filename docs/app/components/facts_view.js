@@ -1,5 +1,5 @@
 import { renderFactText, factDate, isTypedFact } from '../rendering/facts.js?v=9';
-import { personMentionClass } from '../data/person-name-recognition.js?v=25';
+import { personMentionClass } from '../data/person-name-recognition.js?v=26';
 import { formatDate } from '../rendering/dates.js';
 import { escapeHtml } from '../rendering/html.js';
 
