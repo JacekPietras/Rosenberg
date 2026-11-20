@@ -5,43 +5,8 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 U 4",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74756",
-      "german": "Bischof Julius von Würzburg bestätigt auf Bitten des Konrad von Rosenberg d.Ä. zu Waldmannshofen eine von Bischof Friedrich von Würzburg ausgestellte Urkunde. Sr.: der A.\n\nLaufzeit: 1581\n\nEnthält: Insert: 1573 Sept. 19. Bischof Friedrich von Würzburg erlaubt Konrad von Rosenberg zu Waldmannshofen nach dem kürzlich erfolgten Tod seiner beiden Söhne, seine Ehefrau Kunigunde geb. von Seckendorff und, hach ihrem Tod, seine drei Töchter mit 6000 fl. auf genannte würzburgische Lehen zu verweisen. Sr.: der A.\n\nUmfang: Ausf.; Perg., 1 S. besch.",
-      "english": "Julius zu Würzburg, Bischof, at the request of Konrad von Rosenberg der Ältere zu Waldmannshofen, confirms a document issued by Friedrich zu Würzburg, Bischof. Seals: the A.\n\nDate: 1581\n\nContains: Insert: September 19, 1573. Friedrich zu Würzburg, Bischof permits Konrad von Rosenberg zu Waldmannshofen, following the recent death of his two sons, to assign his wife Kunigunde née von Seckendorff and, after her death, his three daughters with 6,000 florins to the aforementioned Würzburg fiefs. Seals: the A.\n\nExtent: Original copy; parchment, 1 page sealed.",
-      "mention": [
-        {
-          "person": "Friedrich",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Julius",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "spouse",
-          "of": "Kunigunde von Seckendorf",
-          "date": "1573-09-19"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Ältere",
-            "zu Waldmannshofen"
-          ],
-          "type": "generic",
-          "content": "received permission to secure his wife and daughters with 6,000 Gulden from specified Würzburg fiefs after the recent deaths of his two sons.",
-          "date": "1573-09-19"
-        }
-      ]
+      "german": "Bischof Julius von Würzburg bestätigt auf Bitten des Konrad von Rosenberg d.Ä. zu Waldmannshofen eine von Bischof Friedrich von Würzburg ausgestellte Urkunde. Sr.: der A.",
+      "english": "Julius zu Würzburg, Bischof, at the request of Konrad von Rosenberg der Ältere zu Waldmannshofen, confirms a document issued by Friedrich zu Würzburg, Bischof. Seals: the A."
     }
   ]
 }
