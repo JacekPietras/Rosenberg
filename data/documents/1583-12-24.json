@@ -15,6 +15,12 @@
           "place": "bobstadt"
         },
         {
+          "person": "Julius",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "der Ältere",
@@ -42,9 +48,6 @@
         },
         {
           "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
         },
         {
           "person": "Zaisolph von Rosenberg"
