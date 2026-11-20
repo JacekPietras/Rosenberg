@@ -1889,7 +1889,9 @@
       "facts": [
         {
           "person": "Eberhard von Uissigheim",
-          "personTitle": ["genannt von Ranneberg"],
+          "personTitle": [
+            "genannt von Ranneberg"
+          ],
           "type": "death",
           "diedOn": "1332",
           "date": "1332"
@@ -2138,7 +2140,9 @@
       "facts": [
         {
           "person": "Anna von Rosenberg",
-          "personTitle": ["von Hutten"],
+          "personTitle": [
+            "von Hutten"
+          ],
           "type": "death",
           "diedOn": "1528",
           "date": "1528"
@@ -2713,15 +2717,19 @@
         },
         {
           "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "von Rosenberg"
+          ],
           "personDeceased": true,
           "type": "spouse",
           "of": "Rufina Stieber von Buttenheim",
-          "personTitle": ["von Rosenberg"],
           "ofDeceased": true
         },
         {
           "person": "Rufina Stieber von Buttenheim",
-          "personTitle": ["von Rosenberg"],
+          "personTitle": [
+            "von Rosenberg"
+          ],
           "type": "death",
           "diedOn": "1569-08-26",
           "date": "1569-08-26"
@@ -2767,14 +2775,18 @@
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "von Rosenberg"
+          ],
           "type": "spouse",
           "of": "Katharina von Seinsheim",
-          "personTitle": ["von Rosenberg"],
           "ofDeceased": true
         },
         {
           "person": "Katharina von Seinsheim",
-          "personTitle": ["von Rosenberg"],
+          "personTitle": [
+            "von Rosenberg"
+          ],
           "type": "death",
           "diedOn": "1550-04-28",
           "date": "1550-04-28"
@@ -2813,15 +2825,19 @@
         },
         {
           "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "von Rosenberg"
+          ],
           "personDeceased": true,
           "type": "spouse",
           "of": "Anna von Dienheim",
-          "personTitle": ["von Rosenberg"],
           "ofDeceased": true
         },
         {
           "person": "Anna von Dienheim",
-          "personTitle": ["von Rosenberg"],
+          "personTitle": [
+            "von Rosenberg"
+          ],
           "type": "death",
           "diedOn": "1568-11-26",
           "date": "1568-11-26"
@@ -3003,7 +3019,9 @@
       "facts": [
         {
           "person": "Kunigunde Hofwart von Rosenberg",
-          "personTitle": ["von Kirchheim"],
+          "personTitle": [
+            "von Kirchheim"
+          ],
           "type": "death",
           "diedOn": "1545-03-01",
           "date": "1545-03-01"
@@ -3190,7 +3208,9 @@
       "facts": [
         {
           "person": "Anna von Rosenberg",
-          "personTitle": ["von Stetten"],
+          "personTitle": [
+            "von Stetten"
+          ],
           "type": "death",
           "diedOn": "1548",
           "date": "1548"
@@ -3440,12 +3460,11 @@
         {
           "person": "Hans von Sternberg",
           "personTitle": [
-            "zu Schenkenau"
+            "von Sternberg"
           ],
           "personDeceased": true,
           "type": "spouse",
           "of": "Anna von Rosenberg",
-          "personTitle": ["von Sternberg"],
           "date": "1576"
         }
       ]
@@ -3557,10 +3576,12 @@
       "facts": [
         {
           "person": "Christoph von Maßbach",
+          "personTitle": [
+            "von Maßbach"
+          ],
           "personDeceased": true,
           "type": "spouse",
           "of": "Eva von Rosenberg",
-          "personTitle": ["von Maßbach"],
           "ofDeceased": true
         },
         {
@@ -3571,7 +3592,9 @@
         },
         {
           "person": "Eva von Rosenberg",
-          "personTitle": ["von Maßbach"],
+          "personTitle": [
+            "von Maßbach"
+          ],
           "type": "death",
           "diedOn": "1564",
           "date": "1564"
@@ -3610,13 +3633,17 @@
         },
         {
           "person": "Eva von Rosenberg",
-          "personTitle": ["von Maßbach"],
+          "personTitle": [
+            "von Maßbach"
+          ],
           "type": "parent",
           "of": "Philipp von Maßbach"
         },
         {
           "person": "Eva von Rosenberg",
-          "personTitle": ["von Maßbach"],
+          "personTitle": [
+            "von Maßbach"
+          ],
           "type": "parent",
           "of": "Eva von Maßbach"
         }
@@ -3882,7 +3909,9 @@
         },
         {
           "person": "Osanna von Eycholtzheim",
-          "personTitle": ["von Rosenberg"],
+          "personTitle": [
+            "von Rosenberg"
+          ],
           "type": "generic",
           "content": "is commemorated on a building memorial alongside Jörg von Rosenberg made in 1493."
         },
