@@ -15,13 +15,13 @@
           "place": "bartenstein"
         },
         {
-          "person": "Hans von Adelsheim"
+          "person": "Hans",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
         },
         {
-          "person": "Hans zu Würzburg",
-          "personTitle": [
-            "Bischof"
-          ]
+          "person": "Hans von Adelsheim"
         },
         {
           "place": "roettingen"

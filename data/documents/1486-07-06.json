@@ -9,7 +9,10 @@
       "english": "Abbot Johann zu Fulda settled the dispute between Siegfried von Rosenberg and the children of the late Otto Küchenmeister over the return of marriage property, a morning gift, and dowry. Otto’s widow had married Siegfried.",
       "mention": [
         {
-          "person": "Hans von Fulda"
+          "person": "Hans",
+          "personTitle": [
+            "Abt zu Fulda"
+          ]
         }
       ],
       "facts": [

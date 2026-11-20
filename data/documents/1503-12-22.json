@@ -9,10 +9,10 @@
       "english": "Enfeoffment of Philipp von Rosenberg and Hans von Rosenberg with the Fackenmühle on the Haun\n\nAbbot Johann zu Fulda enfeoffs Philipp von Rosenberg and Hans von Rosenberg with the Fackenmühle on the Haun.",
       "mention": [
         {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans zu Fulda"
+          "person": "Hans",
+          "personTitle": [
+            "Abt zu Fulda"
+          ]
         }
       ],
       "facts": [

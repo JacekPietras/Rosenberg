@@ -24,7 +24,10 @@
           "place": "giebelstadt"
         },
         {
-          "person": "Hans Truchsess"
+          "person": "Hans Truchsess",
+          "personTitle": [
+            "zu Wetzhausen"
+          ]
         },
         {
           "person": "Hans Voit"

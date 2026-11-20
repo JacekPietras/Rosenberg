@@ -12,10 +12,19 @@
           "person": "Anna von Hohenlohe"
         },
         {
+          "person": "Heinrich von Schwarzburg",
+          "personTitle": [
+            "Graf"
+          ]
+        },
+        {
           "person": "Konrad von Weinsberg"
         },
         {
-          "place": "schwarzburg"
+          "person": "Margaretha von Schwarzburg",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "waldmannshofen"

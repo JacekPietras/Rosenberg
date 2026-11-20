@@ -19,7 +19,10 @@
           "person": "Heinrich von Neuhaus"
         },
         {
-          "place": "hohenlohe"
+          "person": "Kraft von Hohenlohe",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "rosenberg-town"

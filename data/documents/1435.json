@@ -21,13 +21,13 @@
           "person": "Götz von Berlichingen"
         },
         {
-          "person": "Hans Voit"
+          "person": "Hans",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
         },
         {
-          "person": "Hans zu Würzburg",
-          "personTitle": [
-            "Bischof"
-          ]
+          "person": "Hans Voit"
         },
         {
           "place": "hohenlohe"
@@ -80,13 +80,13 @@
           "person": "Götz von Berlichingen"
         },
         {
-          "person": "Hans Voit"
+          "person": "Hans",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
         },
         {
-          "person": "Hans zu Würzburg",
-          "personTitle": [
-            "Bischof"
-          ]
+          "person": "Hans Voit"
         },
         {
           "place": "hohenlohe"

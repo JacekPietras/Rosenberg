@@ -15,13 +15,13 @@
           "person": "Eberhard von Neuburg"
         },
         {
-          "person": "Hans von Gemmingen"
+          "person": "Hans",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
         },
         {
-          "person": "Hans zu Würzburg",
-          "personTitle": [
-            "Bischof"
-          ]
+          "person": "Hans von Gemmingen"
         },
         {
           "person": "Konrad von Weinsberg"

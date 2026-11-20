@@ -10,7 +10,10 @@
       "english": "Charles IV permits Hans von Leuchtenberg, Landgraf zu Leuchtenberg, to assign 2,500 Schock of Prague groschen to his wife Metze von Rosenberg as a life provision, dowry, and counter-dowry, secured on Bleistein Castle, a fief of the Bohemian Crown.",
       "mention": [
         {
-          "person": "Hans von Leuchtenberg"
+          "person": "Hans von Leuchtenberg",
+          "personTitle": [
+            "Landgraf zu Leuchtenberg"
+          ]
         },
         {
           "place": "rosenberg-town"

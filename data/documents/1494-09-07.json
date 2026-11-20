@@ -12,7 +12,10 @@
           "place": "boxberg"
         },
         {
-          "person": "Hans von Wertheim"
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "rosenberg-town"

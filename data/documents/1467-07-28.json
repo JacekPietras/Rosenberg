@@ -12,10 +12,10 @@
           "place": "bobstadt"
         },
         {
-          "person": "Philipp von Rieneck"
-        },
-        {
-          "person": "Philipp zu Rieneck"
+          "person": "Philipp von Rieneck",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "rieneck"

@@ -14,7 +14,10 @@
           "person": "Heinrich Brunn"
         },
         {
-          "person": "Thomas zu Rieneck"
+          "person": "Thomas von Rieneck",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "uissigheim"

@@ -9,7 +9,10 @@
       "english": "Documents concerning the Neuenhof\n\nAbbot Johann zu Fulda settles the dispute between Siegfried von Rosenberg and the children of the deceased Otto Küchenmeister, whose widow Rosenberg married, regarding the delivery of marriage property, morning gift and dowry. / Abbot Johann zu Fulda, as feudal lord, consents to the transfer of the farm at Schloss Neuenhof by Caspar Küchenmeister and his siblings to their mother Magdalena and her new husband Siegfried von Rosenberg as compensation for marriage property, dowry and morning gift. / Will of Siegfried Rosenberg, armed servant in Frankfurt, in which he bequeaths to his wife Katharina von Rumpenheim, alongside his movable property, the lifelong usufruct of his farm at Neuenhof.",
       "mention": [
         {
-          "person": "Hans zu Fulda"
+          "person": "Hans",
+          "personTitle": [
+            "Abt zu Fulda"
+          ]
         },
         {
           "place": "rosenberg-town"

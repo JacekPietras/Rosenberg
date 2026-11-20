@@ -64,13 +64,14 @@ Hennell, Henel, Henil // Hans or Heinrich
 Herbord
 Herman, Hermann, Hermannus
 Hieronymus, Jeronimus, Jheronimus
+Hiltpold
 Horneck
 Hoyer
 Jakob, Jacob
 Joachim
 Josef
 Jost
-Hiltpold
+Julius
 Karl, Carl
 Kasimir
 Kilian
