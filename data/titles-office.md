@@ -11,10 +11,14 @@ Domherr, canonicus, Kanoniker, Kanonikus
 Schultheiß, Schultheiss, scultetus
 Presbyter
 Bischof, Bischove, Bischofe, Bischofs, Bischofes, Bischoff, Bischoffe, Bischoffs, Bischoffes, Biſchof, Biſchofs, Biſchoff, Biſchoffs, episcopus, episcopi, episcopo, episcopum, Bishop
-Graf, Grafen
-Pfalzgraf
-Burggraf, Burgrave, Burgrave, Burgraf
+Pfalzgraf, Pfalzgrafen, Pfalzgrave, Pfalzgraven, Count Palatine
+Graf, Grafen, Grave, Count, Gräfin, Countess
+Burggraf, Burgrafen, Burgrave, Burgraven, Burgraf, Schlossburggraf
+Landgraf, Landgrafen, Landgrave, Landgraven, Lantgraf
+Marggraf, Marggrafen, Marggrave, Marggraven
 Baron
+Abt, Abbot
+Herzog, Duke
 
 // ranks
 Ritter, Ritters, miles, milites, Knight
