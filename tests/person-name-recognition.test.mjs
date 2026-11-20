@@ -400,7 +400,7 @@ test('uses the first place variation as canonical when records have no name fiel
     projectNames, byNames, placeRecords), 'Haubt Marschalk von Pappenheim');
 });
 
-test('recognizes Bishop Wolfram of Würzburg with a canonical route and title', () => {
+test('normalizes Bishop Wolfram of Würzburg into a person route and locative title', () => {
   const titleText = `${titles}\n${projectTitles}`;
   const placeRecords = [{ id: 'wurzburg', variations: ['Würzburg', 'Wirtzeburg', 'Wurzburg'] }];
   const sourcePattern = buildSourcePersonPattern(projectNames, particles, placeRecords,
@@ -408,8 +408,41 @@ test('recognizes Bishop Wolfram of Würzburg with a canonical route and title', 
   const { singles } = findPersonNameMentions('from Bishop Wolfram of Würzburg', titleText,
     connectors, particles, projectNames, byNames, placeRecords, sourcePattern);
   assert.equal(singles.length, 1);
-  assert.equal(singles[0].route, 'Wolfram zu Würzburg');
-  assert.deepEqual(singles[0].titles, ['Bischof']);
+  assert.equal(singles[0].route, 'Wolfram');
+  assert.deepEqual(singles[0].titles, ['Bischof zu Würzburg']);
+});
+
+test('normalizes Bishop Konrad of Würzburg to Konrad, Bischof zu Würzburg', () => {
+  const titleText = `${titles}\n${projectTitles}`;
+  const placeRecords = [{ name: 'Würzburg', variations: ['Würzburg', 'Wirtzeburg', 'Wurzburg'] }];
+  const sourcePattern = buildSourcePersonPattern(projectNames, particles, placeRecords,
+    titleText, connectors, byNames);
+  const { singles } = findPersonNameMentions('Bishop Konrad of Würzburg', titleText,
+    connectors, particles, projectNames, byNames, placeRecords, sourcePattern);
+  assert.equal(singles.length, 1);
+  assert.equal(singles[0].route, 'Konrad');
+  assert.deepEqual(singles[0].titles, ['Bischof zu Würzburg']);
+});
+
+test('normalizes an office title of a place to zu when no surname is given', () => {
+  const titleText = `${titles}\n${projectTitles}`;
+  const sourcePattern = buildSourcePersonPattern(projectNames, particles,
+    [{ name: 'Rosenberg', variations: ['Rosenberg'] }], titleText, connectors, byNames);
+  const { singles } = findPersonNameMentions('Eberhard, Bishop of Rosenberg', titleText,
+    connectors, particles, projectNames, byNames,
+    [{ name: 'Rosenberg', variations: ['Rosenberg'] }], sourcePattern);
+  assert.equal(singles.length, 1);
+  assert.equal(singles[0].route, 'Eberhard');
+  assert.deepEqual(singles[0].titles, ['Bischof zu Rosenberg']);
+});
+
+test('does not recognize an unlisted title or place in a title-only phrase', () => {
+  const titleText = `${titles}\n${projectTitles}`;
+  const sourcePattern = buildSourcePersonPattern(projectNames, particles, places,
+    titleText, connectors, byNames);
+  assert.deepEqual([...('Eberhard, Governor of Rosenberg'.matchAll(sourcePattern))], []);
+  sourcePattern.lastIndex = 0;
+  assert.deepEqual([...('Eberhard, Bishop of Atlantis'.matchAll(sourcePattern))], []);
 });
 
 test('recognizes coordinated brothers under their shared by-name and inherited place', () => {
