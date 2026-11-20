@@ -66,7 +66,10 @@
       "english": "An indication of their connection may also be seen in their burial place. Both the Uissigheimers and the Rosenbergs, the latter until the first half of the 14th century, found their final resting place in Bronnbach Abbey¹³, although the much closer Schöntal Abbey, near Rosenberg castle and village, would have been a more likely choice. These are admittedly no more than clues, but three other facts must be taken particularly seriously: their shared property in and around Uissigheim—the Rosenbergs still had possessions there in 1381 and held the parish patronage until their line died out in 1632¹⁴—, the frequency of their joint appearances in documents, and especially the combination of names such as de Rosinberg dictus de Uissigheim (von Rosenberg, called von Uissigheim). The awareness of a common descent remained alive for a long time. To give an example: Arnold von Uissigheim der Jüngere, Ritter, was exiled from the territory for ten years by Count Rudolf IV von Wertheim. The relevant document of November 24, 1332¹⁵, lists Arnold von Uissigheim der Ältere, Ritter, his sons Heinrich and Eberhard, and Konrad, all of Uissigheim, but also Wiprecht, Eberhard, and Arnold von Rosenberg.\n\n¹³ References in Hans Kühles: Liber mortuorum monasterii Brunnbacensi. In: Archive of the Historical Association of Lower Franconia and Aschaffenburg 21 (1871). pp. 91-159.\n\n¹⁴ GLA Dept. 229/56 885.\n\n¹⁵ StA Wertheim GXIII 124; see also Klaus Arnold: The Armleder Uprising in Franconia. In: Mainfränkisches Jahrbuch 26 (1974). pp. 35-62, here: pp. 60 ff.",
       "mention": [
         {
-          "person": "Rudolf von Wertheim"
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "uissigheim"
@@ -178,7 +181,10 @@
       "english": "While this problem can be considered solved, another one presents greater difficulties. It lies in the assignment to a specific stratum of the nobility. In the confirmation of a land exchange between Count Boppo I of Wertheim and Bronnbach in 1178, the witness list includes Arnoldus and Konrad, duo filii Ruperti de Ussincheim (Arnold and Konrad, two sons of Ruprecht von Uissigheim)¹⁷. Since a certain Herbordus de Ussencheim also appears among the witnesses of ministerial status, the former must belong to the free nobles. Other mentions say the same¹⁸: in 1219 Arnoldus liber (Arnold the free) and in 1233 Arnoldus vir nobilis (Arnold the noble man), in 1244 Konrad liber (Konrad the free), in 1247 Eberhard et Arnoldus fratres, sons of the nobilis of Uissigheim. When the Counts of Rieneck were forced by the Archbishopric of Mainz on July 21, 1260, to renounce their claim to build castles in the Spessart¹⁹, the list of witnesses contains the names of well-known free nobles such as Boppo, Ruprecht, and Ulrich von Dürn, and Kraft von Boxberg. Clearly separated from them, among others by the Würzburg ministerial Theodoricus Blumelin, appeared Eberhard and Arnoldus fratres de Ussenkeim (the brothers Eberhard von Uissigheim and Arnold von Uissigheim).\n\n¹⁷ Joseph Aschbach: History of the Counts of Wertheim. 1853. No. 15, p. 25.\n\n¹⁸ StA Wertheim Lit. 436 Bronnbach Cartulary fol. 52 seq. (1219), fol. 115 (1233), 115 (1244), fol. 33; further evidence in Helmut Lauf-Otto Uihlein: Uissigheim in the Mirror of its 1200-Year History. 1966. p. 28 ff., where no distinction is made between liberi and ministerials.\n\n¹⁹ V.F. von Gudenus: Codex vol. 1. Göttingen 1743. No. 295, p. 674. Theodor Ruf: The Counts of Rieneck. Genealogy and Territory Formation (Mainfränkische Studien 32, 1984) Part I. p. 152f.",
       "mention": [
         {
-          "person": "Boppe von Wertheim"
+          "person": "Boppe von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "bronnbach"
@@ -365,7 +371,10 @@
           "place": "bronnbach"
         },
         {
-          "person": "Rudolf von Wertheim"
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "facts": [

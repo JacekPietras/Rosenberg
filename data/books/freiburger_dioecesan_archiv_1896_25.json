@@ -506,7 +506,10 @@
           "person": "Diether Rüd"
         },
         {
-          "person": "Kraft von Hohenlohe"
+          "person": "Kraft von Hohenlohe",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "nagelsberg-castle"
@@ -2015,7 +2018,10 @@
           ]
         },
         {
-          "person": "Hans von Wertheim"
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "person": "Ulrich von Rosenberg"
@@ -2972,7 +2978,10 @@
           "place": "oberschuepf"
         },
         {
-          "person": "Philipp von Rieneck"
+          "person": "Philipp von Rieneck",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "person": "Wilhelm von Dottenheim"
@@ -3068,7 +3077,10 @@
       "english": "On June 8, 1489, Landgrave Hans von Rieneck confirmed Michael von Rosenberg of Boxberg’s possession of Rieneck fiefs at Impfingen and Marbach.",
       "mention": [
         {
-          "person": "Hans von Rieneck"
+          "person": "Hans von Rieneck",
+          "personTitle": [
+            "Landgraf"
+          ]
         },
         {
           "place": "rieneck"
@@ -3163,7 +3175,10 @@
       "english": "In 1500, Georg von Rosenberg was at feud with Count Asmus von Wertheim. In 1502, he helped Margrave Casimir against Nuremberg. In 1504, he fought on the Palatine side.",
       "mention": [
         {
-          "person": "Asmus von Wertheim"
+          "person": "Asmus von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "nuremberg"
@@ -3739,7 +3754,10 @@
       "english": "Ninth, all servants and others who had worked in this matter were to be released from all claims, and neither party was to punish them for it. Tenth, all subjects of the Boxberg office were to pay their debts to Rosenberg or his heirs, just as Rosenberg was to pay his debts to the subjects. On November 9, 1562, at Albrecht von Rosenberg’s request, Emperor Ferdinand granted Untereschüpf a weekly market and two annual fairs, as well as a coat of arms and crest. This raised Schüpf to the status of a market town and granted its subjects market and civic liberty, custom, and law. A weekly market and two annual fairs were permitted, on St. Ottilia’s Day and the Monday after Oculi. The coat of arms was described as “a blue shield, in the middle of which appears a man without feet, wearing a close-fitting coat divided lengthwise into six stripes, the first, third, and fifth, including the front sleeves, being red, and the other parts, including the back sleeves, white. In his left hand, by the helmet or shaft, which is yellow, he holds upright a spade or shovel; in his right hand, a rose stem with four roses, one yellow, one blue, one white, and one red. On his head is a red-and-white twisted roll with two ribbons flying backward. Above the shield is a jousting helmet decorated on both sides with red-and-white mantling, from which again emerges a man without feet, dressed as in the shield.” On June 28, 1563, Albrecht von Rosenberg issued an ordinance concerning labor services and other matters. He ruled that the community should receive the excise duty and that the bann wine should be left to it. Regarding labor services, everyone who owned a horse was to pay 1 florin and 30 kreuzers for horse service, and every Häcker was to pay 1 florin for his service as a vine cultivator. Each year the following amounts of firewood were to be delivered to Untereschüpf Castle: Untereschüpf, 20 cords; Obereschüpf, 20; Sachsenflur, 10; Kupprichhausen, 15; Lengenrieden, 15; Oepflingen, 20; and Uiffingen, 30. Labor was also owed for foundation work. The customary services for fishing, hunting, and field work were to be performed for modest compensation. Witnesses: Wolf von Hartheim and Wilhelm Sützel of Mergentheim at Balbach.",
       "mention": [
         {
-          "person": "Eberhard von Hohenlohe"
+          "person": "Eberhard von Hohenlohe",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "edelfingen"
