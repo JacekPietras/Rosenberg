@@ -16,7 +16,10 @@
           "person": "Hans von Rosenberg"
         },
         {
-          "person": "Heinrich von Fulda"
+          "person": "Heinrich",
+          "personTitle": [
+            "Abt zu Fulda"
+          ]
         },
         {
           "person": "Peter von Rosenberg"
