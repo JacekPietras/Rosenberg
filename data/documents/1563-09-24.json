@@ -12,17 +12,17 @@
           "place": "boxberg"
         },
         {
-          "person": "Ludwig Kasimir of Hohenlohe"
-        },
-        {
-          "person": "Ludwig Kasimir von Hohenlohe"
+          "person": "Ludwig Kasimir von Hohenlohe",
+          "personTitle": [
+            "Graf"
+          ]
         }
       ],
       "facts": [
         {
           "person": "Albrecht von Rosenberg",
           "type": "generic",
-          "content": "received the church patronage and various rents, annuities and properties at Oberbalbach as a fief from Count Ludwig Kasimir of Hohenlohe."
+          "content": "received the church patronage and various rents, annuities and properties at Oberbalbach as a fief from Graf Ludwig Kasimir von Hohenlohe."
         }
       ]
     }

@@ -24,7 +24,10 @@
           "person": "Kunz von Rosenberg"
         },
         {
-          "person": "Lorenz of Würzburg"
+          "person": "Lorenz",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
         },
         {
           "place": "rosenberg-town"

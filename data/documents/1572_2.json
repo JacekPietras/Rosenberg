@@ -18,7 +18,10 @@
           "place": "hirschhorn"
         },
         {
-          "person": "Ludwig von Hirschhorn"
+          "person": "Ludwig von Hirschhorn",
+          "personTitle": [
+            "zu Hirschhorn"
+          ]
         }
       ],
       "facts": [

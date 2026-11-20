@@ -12,7 +12,10 @@
           "person": "Bernhard von Hutten"
         },
         {
-          "person": "Georg Siegmund von Adelsheim"
+          "person": "Georg Siegmund von Adelsheim",
+          "personTitle": [
+            "zu Adelsheim"
+          ]
         },
         {
           "person": "Georg Siegmund von Rosenberg"

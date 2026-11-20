@@ -28,7 +28,10 @@
           "place": "fulda-cathedral"
         },
         {
-          "person": "Hans of Würzburg"
+          "person": "Hans",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
         },
         {
           "person": "Hans vom Hutten"

@@ -52,7 +52,10 @@
           "of": "Anna Margaretha"
         },
         {
-          "person": "Hans Georg von Seckendorf zu Sugenheim",
+          "person": "Hans Georg von Seckendorf",
+          "personTitle": [
+            "zu Sugenheim"
+          ],
           "type": "death",
           "diedOn": "1598-12-23"
         },

@@ -30,7 +30,10 @@
           "person": "Otto von Hirschhorn"
         },
         {
-          "person": "Philipp Hans von Gemmingen"
+          "person": "Philipp Hans von Gemmingen",
+          "personTitle": [
+            "Vogt zu Germersheim"
+          ]
         }
       ],
       "facts": [

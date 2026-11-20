@@ -12,7 +12,10 @@
           "person": "Albrecht Christoph von Rosenberg"
         },
         {
-          "person": "Franz of Würzburg"
+          "person": "Franz",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
         },
         {
           "person": "Hans Ulrich Stieber"

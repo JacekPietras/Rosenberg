@@ -16,13 +16,19 @@
         },
         {
           "place": "schloss-haltenbergstetten"
+        },
+        {
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "zu Haldermannstetten"
+          ]
         }
       ],
       "facts": [
         {
           "person": "Zaisolph von Rosenberg",
           "personTitle": [
-            "zu Haltenbergstetten Niederstetten"
+            "zu Haltenbergstetten"
           ],
           "type": "generic",
           "content": "protested against Rothenburg over the tithe and other rights at Haldermannstetten."

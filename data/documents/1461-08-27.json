@@ -30,10 +30,14 @@
           "person": "Hans von Bibra"
         },
         {
-          "person": "Hans von Wenkheim"
+          "person": "Hans von Wenkheim",
+          "personTitle": [
+            "der Jüngere",
+            "zu Schweinsfurt"
+          ]
         },
         {
-          "person": "Heinrich Zobel von Giebelstatt",
+          "person": "Heinrich Zobel von Giebelstadt",
           "personTitle": [
             "Ritter"
           ]

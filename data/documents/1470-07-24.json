@@ -41,7 +41,10 @@
           "place": "boxberg"
         },
         {
-          "person": "Rudolf of Würzburg"
+          "person": "Rudolf",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
         }
       ],
       "facts": [

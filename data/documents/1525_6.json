@@ -10,14 +10,14 @@
       "mention": [
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
-          "person": "Zaisolph von Rosenberg zu Haltenbergstetten",
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "zu Haldenbergsteten"
+          ],
           "type": "generic",
           "content": "received correspondence from Rothenburg concerning arson damage at Oberstetten and Wildentierbach."
         }

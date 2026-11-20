@@ -17,6 +17,9 @@
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "zu Jagstberg"
+          ],
           "type": "generic",
           "content": "was resident at Jagstberg."
         }

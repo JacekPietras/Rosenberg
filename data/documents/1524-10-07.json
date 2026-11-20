@@ -12,7 +12,10 @@
           "place": "handschuhsheim"
         },
         {
-          "person": "Hans von Helmstadt"
+          "person": "Hans von Helmstadt",
+          "personTitle": [
+            "Amtmann zu Bischofshohenberg"
+          ]
         },
         {
           "person": "Jakob von Fleckenstein",

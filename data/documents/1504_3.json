@@ -12,7 +12,10 @@
           "person": "Philipp von Rosenberg"
         },
         {
-          "person": "Rudolf von Frankenstein"
+          "person": "Rudolf von Frankenstein",
+          "personTitle": [
+            "zu Frankenstein"
+          ]
         }
       ]
     }

@@ -12,7 +12,10 @@
           "person": "Adam Ulrich Schenk"
         },
         {
-          "person": "Bernhard von Liebenstein"
+          "person": "Bernhard von Liebenstein",
+          "personTitle": [
+            "zu Liebenstein"
+          ]
         },
         {
           "person": "Reinhard von Gemmingen"

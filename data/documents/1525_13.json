@@ -13,14 +13,14 @@
         },
         {
           "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
         }
       ],
       "facts": [
         {
-          "person": "Zaisolph von Rosenberg zu Haltenbergstetten",
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "zu Halmersteten"
+          ],
           "type": "generic",
           "content": "claimed compensation from Rothenburg."
         }

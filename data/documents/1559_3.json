@@ -24,10 +24,10 @@
           "place": "wertheim-stiftskirche"
         },
         {
-          "person": "Wolf von Hardheim"
-        },
-        {
-          "person": "Wolf von Hartheim"
+          "person": "Wolf von Hartheim",
+          "personTitle": [
+            "zu Hardheim"
+          ]
         }
       ],
       "facts": [

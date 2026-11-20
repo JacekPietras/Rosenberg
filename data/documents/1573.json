@@ -21,7 +21,10 @@
           "place": "baldersheim"
         },
         {
-          "person": "Friedrich of Würzburg"
+          "person": "Friedrich",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
         },
         {
           "person": "Kunigunde von Seckendorf"

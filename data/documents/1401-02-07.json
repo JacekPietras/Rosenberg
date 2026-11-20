@@ -31,12 +31,6 @@
       "english": "1401 February 7, Nuremberg. Same letter as no. 476, addressed to Arnold von Rosenberg der Ältere, Amtmann zu Lauda. No. 476 informs Reinhard von Sickingen der Jüngere, Vogt zu Heidelberg, that the king commissioned Diether von Handschuhsheim, his marshal, and Contz Landschad to raise money and assign it as they saw fit, and ordered him to comply with their instructions.",
       "mention": [
         {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Amtmann"
-          ]
-        },
-        {
           "person": "Diether von Handschuhsheim"
         },
         {
@@ -51,7 +45,7 @@
         {
           "person": "Reinhard von Sickingen",
           "personTitle": [
-            "Vogt"
+            "Vogt zu Heidelberg"
           ]
         }
       ],
@@ -104,18 +98,12 @@
       "english": "1401 February 7, Nuremberg. He informs Reinhard von Sickingen der Jüngere, Vogt zu Heidelberg, that he commissioned his marshal Diether von Hentschuchssheim and Contz Landschad to raise money wherever they could and assign it as they saw fit, and orders Reinhart to comply with their instructions. The same letter was sent to Arnold von Rosenberg der Ältere, Amtmann zu Lauda. Copybook 809, fol. 31b; K. R. T. A. V, 15, line 42.",
       "mention": [
         {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Amtmann"
-          ]
-        },
-        {
           "place": "nuremberg"
         },
         {
           "person": "Reinhard von Sickingen",
           "personTitle": [
-            "Vogt",
+            "Vogt zu Heidelberg",
             "der Jüngere"
           ]
         }

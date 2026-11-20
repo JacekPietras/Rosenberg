@@ -12,7 +12,10 @@
           "place": "eubigheim"
         },
         {
-          "person": "Hans Rüd von Collenberg"
+          "person": "Hans Rüd von Kollenberg",
+          "personTitle": [
+            "zu Eubigheim"
+          ]
         }
       ],
       "facts": [

@@ -9,10 +9,13 @@
       "english": "Elector Friedrich I of the Palatinate declares that he has appointed Friedrich von Rosenberg as guardian (administrator and manager) until revocation for the minor children of Friedrich von Fleckenstein, Baron of Dagstuhl, who has become mentally impaired (his reason restrained and his senses lost). The Count Palatine acts as territorial lord and with the consent of Bishop Reinhart of Worms and Dieter of Handschuhsheim as friends (patrons) of the children. Guardian Friedrich shall manage affairs for the best benefit of the children, render an annual accounting, protect the children's subjects, and conduct all necessary business. Wherever necessary, he shall act on the advice and direction of the aforementioned friends.\n\nTerm: September 11, 1474 (on Sunday after Nativity of Mary)\n\nSealer: Elector Friedrich I of the Palatinate",
       "mention": [
         {
-          "person": "Diether of Handschuhsheim"
+          "person": "Diether zu Handschuhsheim"
         },
         {
-          "person": "Friedrich von Fleckenstein"
+          "person": "Friedrich von Fleckenstein",
+          "personTitle": [
+            "Baron zu Dagstuhl"
+          ]
         }
       ],
       "facts": [

@@ -18,7 +18,10 @@
           "place": "fleckenstein"
         },
         {
-          "person": "Friedrich von Fleckenstein"
+          "person": "Friedrich von Fleckenstein",
+          "personTitle": [
+            "Vogt zu Germersheim"
+          ]
         },
         {
           "person": "Heinrich von Fleckenstein"

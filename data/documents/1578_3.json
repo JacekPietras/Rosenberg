@@ -24,7 +24,10 @@
           "person": "Heinrich von Fleckenstein"
         },
         {
-          "person": "Ludwig von Hirschhorn"
+          "person": "Ludwig von Hirschhorn",
+          "personTitle": [
+            "zu Hirschhorn"
+          ]
         },
         {
           "place": "speyer"

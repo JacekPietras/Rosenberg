@@ -18,7 +18,10 @@
           "person": "Friedrich von Fleckenstein"
         },
         {
-          "person": "Hans von Gemmingen"
+          "person": "Hans von Gemmingen",
+          "personTitle": [
+            "Vogt zu Germersheim"
+          ]
         },
         {
           "place": "heidelberg"

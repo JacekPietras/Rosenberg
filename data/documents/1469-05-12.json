@@ -9,7 +9,10 @@
       "english": "The ecclesiastical judge of the Bishop of Speyer confirms, upon request from Pastor Niklaus Gammel in Nussdorf, attorney for Friedrich von Fleckenstein zu Madenburg, Lord of Dagstuhl, the content of the examination of Hans von Rosenberg zu Essingen, who did not wish to appear in person due to a feud, as recorded by the court clerk Adam Metzel, namely that Hans von Rosenberg stated that the poor people in the communities in the Ried had to provide provisions and services for Friedrich von Fleckenstein and his ancestors along with their horses and dogs during their hunts.\n\nDuration: 1469 May 12",
       "mention": [
         {
-          "person": "Friedrich von Fleckenstein"
+          "person": "Friedrich von Fleckenstein",
+          "personTitle": [
+            "zu Madenburg"
+          ]
         },
         {
           "place": "speyer"

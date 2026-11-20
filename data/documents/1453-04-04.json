@@ -18,13 +18,19 @@
           "person": "Georg von Seinsheim"
         },
         {
-          "person": "Gotfried of Würzburg",
+          "person": "Gotfried",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Gotfried zu Würzburg",
           "personTitle": [
             "Bischof"
           ]
         },
         {
-          "person": "Hans of Würzburg",
+          "person": "Hans zu Würzburg",
           "personTitle": [
             "Bischof"
           ]
