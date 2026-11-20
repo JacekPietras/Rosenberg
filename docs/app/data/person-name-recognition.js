@@ -188,6 +188,16 @@ export function findPersonNameMentions(text, titleText = '', connectorText = '',
         : place && !prefixHasTitle
           && personRouteName(prefix, titleText, connectorText, particleText, namesText, byNamesText, places) === route
           ? [`zu ${place}`] : [];
+      const pairedPlaces = match[0].match(/\s+zu\s+([\p{L}][\p{L}'’.-]*)\s+and\s+([\p{L}][\p{L}'’.-]*)$/iu);
+      if (pairedPlaces && places.some((item) => (item.variations || [item.name])
+        .some((form) => form.toLocaleLowerCase() === pairedPlaces[1].toLocaleLowerCase()))
+        && places.some((item) => (item.variations || [item.name])
+          .some((form) => form.toLocaleLowerCase() === pairedPlaces[2].toLocaleLowerCase()))) {
+        const locativeStart = match[0].search(/\s+zu\s+[\p{L}][\p{L}'’.-]*\s+and\s+[\p{L}][\p{L}'’.-]*$/iu);
+        route = personRouteName(match[0].slice(0, locativeStart).trim(), titleText,
+          connectorText, particleText, namesText, byNamesText, places);
+        titles.splice(0, titles.length, `zu ${pairedPlaces[1]}`, `zu ${pairedPlaces[2]}`);
+      }
       if (leadingTitle && trailingTitle && !leadingPlace) {
         titles.push(`${canonicalTitles.get(trailingTitle[1].toLocaleLowerCase())}${titlePlace ? ` zu ${titlePlace}` : trailingTitle[2] ? ` zu ${trailingTitle[2]}` : ''}`);
       }
@@ -263,7 +273,7 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const titleSequence = titles ? `(?:[\\s,;]+${byNameBeforeParticle}${titleSuffixMatch})*` : '';
   const leadingTitles = titles ? `(?:${titleMatch}\\s+)*` : '';
   const particle = `(?:${particles}|of)`;
-  const placeClause = `(?:${placeNames})(?:\\s+(?:zu|zum|an)\\s+(?:${placeNames}))?`;
+  const placeClause = `(?:${placeNames})(?:\\s+(?:zu|zum|an)\\s+(?:${placeNames}))?(?:\\s+and\\s+(?:${placeNames}))?`;
   const suffixTitles = `(?:[\\s,;]+${titleSuffixMatch})*`;
   const placeNote = '(?:\\s*\\(-?[\\p{L}\\p{N}]+-?\\))?';
   const nameNote = '(?:\\s*\\(\\s*or\\s+[^)]*\\))?';

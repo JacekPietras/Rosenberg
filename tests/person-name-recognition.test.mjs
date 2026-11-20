@@ -98,6 +98,22 @@ test('recognizes a trailing zu-place designation as a person title', () => {
   assert.deepEqual(result.singles[0]?.titles, ['zu Essingen']);
 });
 
+test('recognizes Georg von Rosenberg zu Boxberg and Schweigern', () => {
+  const scenarioPlaces = [...places,
+    { name: 'Boxberg', variations: ['Boxberg'] },
+    { name: 'Schweigern', variations: ['Schweigern'] },
+  ];
+  const scenarioTitles = `${titles}\n${projectTitles}`;
+  const phrase = 'Georg von Rosenberg zu Boxberg and Schweigern';
+  const scenarioPattern = buildSourcePersonPattern(projectNames, particles, scenarioPlaces,
+    scenarioTitles, connectors, byNames);
+  const result = findPersonNameMentions(phrase, scenarioTitles, connectors, particles,
+    projectNames, byNames, scenarioPlaces, scenarioPattern);
+  assert.deepEqual([...phrase.matchAll(scenarioPattern)].map((match) => match[0]), [phrase]);
+  assert.equal(result.singles[0]?.route, 'Georg von Rosenberg');
+  assert.deepEqual(result.singles[0]?.titles, ['zu Boxberg', 'zu Schweigern']);
+});
+
 test('assigns an intervening office title to Konrad without attaching it to Eberhard', () => {
   const scenarioPlaces = [...places, { name: 'Wildenberg', variations: ['Wildenberg'] }];
   const scenarioTitles = `${titles}\n${projectTitles}`;
@@ -161,13 +177,13 @@ test('recognizes listed by-names alone and as part of Rosenberg family names', (
 
 test('recognizes and routes married-name forms by their listed birth surname', () => {
   for (const form of [
-    'Elsbeth Rosenberg, née Marschalk zu Pappenheim',
-    'Elisabeth von Rosenberg, née Marschalk zu Pappenheim'
+    'Elsbeth Rosenberg, née Marschalk von Pappenheim',
+    'Elisabeth von Rosenberg, née Marschalk von Pappenheim'
   ]) {
     pattern.lastIndex = 0;
     assert.equal(pattern.exec(form)?.[0], form);
     assert.equal(personRouteName(form, titles, connectors, particles, names, byNames),
-      'Elisabeth Marschalk zu Pappenheim');
+      'Elisabeth Marschalk von Pappenheim');
   }
 });
 
@@ -184,42 +200,42 @@ test('recognizes Juliane née von Rosenberg with or without parentheses', () => 
 });
 
 test('recognizes Elsbeth Rosenberg with her Marschalk birth surname as one mention', () => {
-  const phrase = 'Issuer 2: Elsbeth Rosenberg, née Marschalk zu Pappenheim';
+  const phrase = 'Issuer 2: Elsbeth Rosenberg, née Marschalk von Pappenheim';
   const noMarschalkPlace = buildSourcePersonPattern(names, particles,
     places.filter((place) => place.name !== 'Marschalk'), titles, connectors, byNames);
   noMarschalkPlace.lastIndex = 0;
   assert.deepEqual([...phrase.matchAll(noMarschalkPlace)].map((match) => match[0]), [
-    'Elsbeth Rosenberg, née Marschalk zu Pappenheim'
+    'Elsbeth Rosenberg, née Marschalk von Pappenheim'
   ]);
-  assert.equal(personRouteName('Elsbeth Rosenberg, née Marschalk zu Pappenheim', titles, connectors, particles, names),
-    'Elisabeth Marschalk zu Pappenheim');
+  assert.equal(personRouteName('Elsbeth Rosenberg, née Marschalk von Pappenheim', titles, connectors, particles, names),
+    'Elisabeth Marschalk von Pappenheim');
 });
 
 test('recognizes Elisabeth von Rosenberg with her Marschalk birth surname as one mention', () => {
-  const phrase = 'Sealer 2: Elisabeth von Rosenberg, née Marschalk zu Pappenheim';
+  const phrase = 'Sealer 2: Elisabeth von Rosenberg, née Marschalk von Pappenheim';
   const noMarschalkPlace = buildSourcePersonPattern(names, particles,
     places.filter((place) => place.name !== 'Marschalk'), titles, connectors, byNames);
   noMarschalkPlace.lastIndex = 0;
   assert.deepEqual([...phrase.matchAll(noMarschalkPlace)].map((match) => match[0]), [
-    'Elisabeth von Rosenberg, née Marschalk zu Pappenheim'
+    'Elisabeth von Rosenberg, née Marschalk von Pappenheim'
   ]);
-  assert.equal(personRouteName('Elisabeth von Rosenberg, née Marschalk zu Pappenheim', titles, connectors, particles, names),
-    'Elisabeth Marschalk zu Pappenheim');
+  assert.equal(personRouteName('Elisabeth von Rosenberg, née Marschalk von Pappenheim', titles, connectors, particles, names),
+    'Elisabeth Marschalk von Pappenheim');
 });
 
-test('recognizes brothers with their shared Marschalk zu Pappenheim title', () => {
+test('recognizes brothers with their shared Marschalk von Pappenheim title', () => {
   for (const [sentence, expectedBrothers] of [
-    ['The brothers Heinrich, Georg, and Konrad Marschalk zu Pappenheim', [
-      'Heinrich Marschalk zu Pappenheim',
-      'Georg Marschalk zu Pappenheim',
-      'Konrad Marschalk zu Pappenheim'
+    ['The brothers Heinrich, Georg, and Konrad Marschalk von Pappenheim', [
+      'Heinrich Marschalk von Pappenheim',
+      'Georg Marschalk von Pappenheim',
+      'Konrad Marschalk von Pappenheim'
     ]],
-    ['The brothers Georg and Konrad Marschalk zu Pappenheim', [
-      'Georg Marschalk zu Pappenheim',
-      'Konrad Marschalk zu Pappenheim'
+    ['The brothers Georg and Konrad Marschalk von Pappenheim', [
+      'Georg Marschalk von Pappenheim',
+      'Konrad Marschalk von Pappenheim'
     ]]
   ]) {
-    assert.match(sentence, /Marschalk zu Pappenheim/u);
+    assert.match(sentence, /Marschalk von Pappenheim/u);
     for (const expected of expectedBrothers) {
       pattern.lastIndex = 0;
       assert.equal(pattern.exec(expected)?.[0], expected);
@@ -402,7 +418,7 @@ test('routes title variants to the title-free person name', () => {
 
 test('routes spelling variants to the canonical given name and by-name', () => {
   assert.equal(personRouteName('Hainrich Marschalken zu Pappenheim', titles, connectors, particles,
-    projectNames, byNames), 'Heinrich Marschalk zu Pappenheim');
+    projectNames, byNames), 'Heinrich Marschalk von Pappenheim');
 });
 
 test('canonicalizes a place variation in a person route', () => {
@@ -475,26 +491,26 @@ test('does not recognize an unlisted title or place in a title-only phrase', () 
 });
 
 test('recognizes coordinated brothers under their shared by-name and inherited place', () => {
-  const source = 'Hainrich Marschalk zu Pappenheim, also acting for his brothers Goerg and Chuonrat Marschalken, acknowledges that he sold the Pappenheim convent';
+  const source = 'Hainrich Marschalk von Pappenheim, also acting for his brothers Goerg and Chuonrat Marschalken, acknowledges that he sold the Pappenheim convent';
   pattern.lastIndex = 0;
   const directRoutes = [...source.matchAll(buildSourcePersonPattern(projectNames, particles, places, titles, connectors, byNames))]
     .map((match) => personRouteName(match[0], titles, connectors, particles, projectNames, byNames));
   const coordinated = coordinatedByNameMatches(source, titles, connectors, particles, projectNames, byNames, places);
   assert.deepEqual([...directRoutes.slice(0, 1), ...coordinated.flatMap((match) => match.routes)], [
-    'Heinrich Marschalk zu Pappenheim',
-    'Georg Marschalk zu Pappenheim',
-    'Konrad Marschalk zu Pappenheim'
+    'Heinrich Marschalk von Pappenheim',
+    'Georg Marschalk von Pappenheim',
+    'Konrad Marschalk von Pappenheim'
   ]);
   assert.equal(directRoutes.length, 2);
   assert.equal(directRoutes[1], 'Konrad Marschalk');
 });
 
 test('recognizes a three-person Oxford-comma list with a shared Marschalk surname', () => {
-  const source = 'Chuoncz Rosenkrancz declares that he has reached an amicable settlement with Sigmund, Haubt, and Hainrich Marschalken zu Pappenheim and all the Marschalk zu Pappenheim concerning';
+  const source = 'Chuoncz Rosenkrancz declares that he has reached an amicable settlement with Sigmund, Haubt, and Hainrich Marschalken zu Pappenheim and all the Marschalk von Pappenheim concerning';
   assert.deepEqual(coordinatedByNameRouteNames(source, titles, connectors, particles, projectNames, byNames, places), [
-    'Siegmund Marschalk zu Pappenheim',
-    'Haubt Marschalk zu Pappenheim',
-    'Heinrich Marschalk zu Pappenheim'
+    'Siegmund Marschalk von Pappenheim',
+    'Haubt Marschalk von Pappenheim',
+    'Heinrich Marschalk von Pappenheim'
   ]);
 });
 
