@@ -10,14 +10,11 @@
       "mention": [
         {
           "place": "kollenberg"
-        },
-        {
-          "person": "Wolf Dietrich Rüd"
         }
       ],
       "facts": [
         {
-          "person": "Wolf Dietrich Rüdt",
+          "person": "Wolf Dietrich Rüd",
           "personDeceased": true,
           "type": "spouse",
           "of": "Felicitas von Rosenberg"
