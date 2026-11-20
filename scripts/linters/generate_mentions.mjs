@@ -71,11 +71,27 @@ function mergePeople(items) {
     if (!clusters.length) clusters.push({ age: new Set(), titles: [] });
     plain.forEach((item) => clusters[0].titles.push(...(item.personTitle || [])));
     for (const cluster of clusters) {
-      const titles = [...new Set(cluster.titles)].sort();
+      const titles = consolidateTitles(cluster.titles).sort();
       merged.push(titles.length ? { person, personTitle: titles } : { person });
     }
   }
   return [...merged, ...others];
+}
+
+// A located office title already carries the office itself. If both forms are
+// extracted from one mention ("Bishop Hans zu Würzburg"), keep the specific
+// title and omit its bare duplicate ("Bischof").
+function consolidateTitles(titles) {
+  const canonical = canonicalTitles([...new Set(titles)]).flatMap((title) => {
+    const located = title.match(/^(.*?)\s+zu\s+(.+)$/iu);
+    const isAgeTitle = located && ageGroups.some((group) => group.has(located[1].toLocaleLowerCase()));
+    return isAgeTitle ? [located[1], `zu ${located[2]}`] : [title];
+  });
+  const locatedBases = new Set(canonical.flatMap((title) => {
+    const match = title.match(/^(.*?)\s+zu\s+/iu);
+    return match ? [match[1].toLocaleLowerCase()] : [];
+  }));
+  return [...new Set(canonical.filter((title) => !locatedBases.has(title.toLocaleLowerCase())))];
 }
 
 const innerTitle = knownTitles.length
@@ -138,7 +154,7 @@ export function recognizeMentions(text, { placesOnly = false } = {}) {
   const { people, spans } = placesOnly ? { people: [], spans: [] } : recognizePeople(plain);
   const items = [
     ...people.map(({ person, titles }) => (titles.length
-      ? { person, personTitle: canonicalTitles(titles).sort() } : { person })),
+      ? { person, personTitle: consolidateTitles(titles).sort() } : { person })),
     ...recognizePlaces(plain, spans).map((place) => ({ place })),
   ];
   const unique = new Map(mergePeople(items).map((item) => [JSON.stringify(item), item]));

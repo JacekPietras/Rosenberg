@@ -7,3 +7,9 @@ test('a locative office title subsumes its bare title in generated mentions', ()
     { person: 'Hans', personTitle: ['Bischof zu Würzburg'] },
   ]);
 });
+
+test('keeps an age title and a residence title as separate generated titles', () => {
+  assert.deepEqual(recognizeMentions('Arnold von Rosenberg der Jüngere of Boxberg'), [
+    { person: 'Arnold von Rosenberg', personTitle: ['der Jüngere', 'zu Boxberg'] },
+  ]);
+});

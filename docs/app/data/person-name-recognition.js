@@ -165,11 +165,22 @@ export function findPersonNameMentions(text, titleText = '', connectorText = '',
           connectorText, particleText, namesText, byNamesText, places);
       }
       const leadingTitle = new RegExp(`^(${alternatives([...canonicalTitles.keys()])})\\s+`, 'iu').exec(match[0]);
+      const givenNamesPattern = alternatives(String(namesText).split(/\r?\n/)
+        .filter((line) => !line.trim().startsWith('#'))
+        .flatMap((line) => line.split('//')[0].split(',').map((form) => form.trim())));
+      const leadingTitleLocative = leadingTitle && places.length
+        ? new RegExp(`^(${alternatives([...canonicalTitles.keys()])})\\s+((?:${givenNamesPattern})(?:\\s+(?:${givenNamesPattern}))*)\\s+(?:of|zu|zum)\\s+(${alternatives(places.flatMap((item) => item.variations || [item.name]))})$`, 'iu').exec(match[0])
+        : null;
       const titlePlace = trailingTitle?.[2] && places.flatMap((item) => item.variations || [item.name])
         .find((form) => form.toLocaleLowerCase() === trailingTitle[2].toLocaleLowerCase());
+      const leadingPlaceRecord = leadingTitleLocative && places.find((item) =>
+        (item.variations || [item.name]).some((form) => form.toLocaleLowerCase() === leadingTitleLocative[3].toLocaleLowerCase()));
+      const leadingPlace = leadingPlaceRecord?.name || leadingPlaceRecord?.variations?.[0];
       const designation = connectorDesignation(match[0], connectorText, particleText, places);
       const titles = designation
         ? [designation]
+        : leadingPlace
+          ? [`${canonicalTitles.get(leadingTitleLocative[1].toLocaleLowerCase())} zu ${leadingPlace}`]
         : leadingTitle
           ? [canonicalTitles.get(leadingTitle[1].toLocaleLowerCase())]
         : trailingTitle
@@ -177,6 +188,13 @@ export function findPersonNameMentions(text, titleText = '', connectorText = '',
         : place && !prefixHasTitle
           && personRouteName(prefix, titleText, connectorText, particleText, namesText, byNamesText, places) === route
           ? [`zu ${place}`] : [];
+      if (leadingTitle && trailingTitle && !leadingPlace) {
+        titles.push(`${canonicalTitles.get(trailingTitle[1].toLocaleLowerCase())}${titlePlace ? ` zu ${titlePlace}` : trailingTitle[2] ? ` zu ${trailingTitle[2]}` : ''}`);
+      }
+      if (leadingPlace) {
+        route = personRouteName(leadingTitleLocative[2], titleText, connectorText,
+          particleText, namesText, byNamesText, places);
+      }
       singles.push({ kind: candidate.kind, text: match[0], start, end, route, titles, people: candidate.people });
     }
     if (lastIndex !== undefined) pattern.lastIndex = lastIndex;
@@ -256,7 +274,13 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
   const byNameSurname = byNames ? `[\\s,]+(?:${byNames})(?:\\s+(?:${particle})\\s+(?:${placeNames}))?(?:\\s+(?:zu|zum)\\s+${titlePlace})?${placeNote}${suffixTitles}` : '(?!)';
   const surname = `(?:${byNameSurname}|[\\s,]+${particle}\\s+${placeClause}${placeNote}${suffixTitles}${alternateDesignation}(?:${birthSurname})?|${birthSurname}|[\\s,]+(?:${placeNames})${birthSurname}|[\\s,]+(?:${placeNames}))`;
   const titledGivenName = routeTitles ? `(?:${routeTitles})\\s+(?:${names})(?![\\p{L}\\p{N}])` : '(?!)';
-  return new RegExp(`(?<![\\p{L}\\p{N}])(?:${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}${surname}(?![\\p{L}\\p{N}])|${titledGivenName})`, 'giu');
+  // Some English catalogues give a person only by their given name and office,
+  // e.g. "Eberhard, Bishop of Rosenberg". Keep this form restricted to a
+  // listed title and place so it does not turn ordinary prose into people.
+  const titleOnlyLocative = titles
+    ? `[\\s,;]+(${titles})\\s+of\\s+(${placeNames})`
+    : '(?!)';
+  return new RegExp(`(?<![\\p{L}\\p{N}])(?:${leadingTitles}${leadingConnector}(?:${names})(?:\\s+(?:${names}))*${nameNote}${romanOrdinal}${titleSequence}${namingConnector}${surname}(?![\\p{L}\\p{N}])|(?:${names})${titleOnlyLocative}(?![\\p{L}\\p{N}])|${titledGivenName})`, 'giu');
 }
 
 export function personRouteName(name, titleText = '', connectorText = '', particleText = '', namesText = '', byNamesText = '', places = []) {
