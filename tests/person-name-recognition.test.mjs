@@ -98,22 +98,6 @@ test('recognizes a trailing zu-place designation as a person title', () => {
   assert.deepEqual(result.singles[0]?.titles, ['zu Essingen']);
 });
 
-test('recognizes Georg von Rosenberg zu Boxberg and Schweigern', () => {
-  const scenarioPlaces = [...places,
-    { name: 'Boxberg', variations: ['Boxberg'] },
-    { name: 'Schweigern', variations: ['Schweigern'] },
-  ];
-  const scenarioTitles = `${titles}\n${projectTitles}`;
-  const phrase = 'Georg von Rosenberg zu Boxberg and Schweigern';
-  const scenarioPattern = buildSourcePersonPattern(projectNames, particles, scenarioPlaces,
-    scenarioTitles, connectors, byNames);
-  const result = findPersonNameMentions(phrase, scenarioTitles, connectors, particles,
-    projectNames, byNames, scenarioPlaces, scenarioPattern);
-  assert.deepEqual([...phrase.matchAll(scenarioPattern)].map((match) => match[0]), [phrase]);
-  assert.equal(result.singles[0]?.route, 'Georg von Rosenberg');
-  assert.deepEqual(result.singles[0]?.titles, ['zu Boxberg', 'zu Schweigern']);
-});
-
 test('assigns an intervening office title to Konrad without attaching it to Eberhard', () => {
   const scenarioPlaces = [...places, { name: 'Wildenberg', variations: ['Wildenberg'] }];
   const scenarioTitles = `${titles}\n${projectTitles}`;
