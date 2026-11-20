@@ -6,7 +6,37 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 U 4",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74756",
       "german": "Bischof Julius von Würzburg bestätigt auf Bitten des Konrad von Rosenberg d.Ä. zu Waldmannshofen eine von Bischof Friedrich von Würzburg ausgestellte Urkunde. Sr.: der A.",
-      "english": "Julius zu Würzburg, Bischof, at the request of Konrad von Rosenberg der Ältere zu Waldmannshofen, confirms a document issued by Friedrich zu Würzburg, Bischof. Seals: the A."
+      "english": "Julius zu Würzburg, Bischof, at the request of Konrad von Rosenberg der Ältere, zu Waldmannshofen, confirms a charter issued by Friedrich zu Würzburg, Bischof. Seal: the issuer.",
+      "mention": [
+        {
+          "person": "Friedrich",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "waldmannshofen"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Julius",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ],
+          "type": "generic",
+          "content": "confirmed a charter issued by Friedrich zu Würzburg, Bischof, at the request of Konrad von Rosenberg der Ältere, zu Waldmannshofen."
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "der Ältere",
+            "zu Waldmannshofen"
+          ],
+          "type": "generic",
+          "content": "requested Julius zu Würzburg, Bischof, to confirm a charter issued by Friedrich zu Würzburg, Bischof."
+        }
+      ]
     }
   ]
 }
