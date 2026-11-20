@@ -25,7 +25,7 @@ files describe how they are met. When a rule changes, change it here first.
 - In a source form `<name>, née <birth name>`, the contextual person name uses
   the given name and birth surname after `née`. The preceding married surname
   or designation is not part of that name. Thus `Elisabeth von Rosenberg, née
-  Marschalk zu Pappenheim` is recognized as `Elisabeth Marschalk zu
+  Marschalk von Pappenheim` is recognized as `Elisabeth Marschalk von
   Pappenheim`, which can match a typed fact under that birth name.
 - A record without a surname needs family or an identifying title (office,
   designation) to join a full-name record; shared places or associates are not
