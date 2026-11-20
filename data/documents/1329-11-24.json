@@ -17,6 +17,9 @@
       "facts": [
         {
           "person": "Kraft von Hohenlohe",
+          "personTitle": [
+            "Graf"
+          ],
           "type": "generic",
           "content": "concluded a Burgfrieden at Nagelsberg with [vogt_zu_Durn]."
         },

@@ -12,7 +12,10 @@
           "person": "Götz von Hohenlohe"
         },
         {
-          "person": "Heinrich von Rieneck"
+          "person": "Heinrich von Rieneck",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "hohenlohe"

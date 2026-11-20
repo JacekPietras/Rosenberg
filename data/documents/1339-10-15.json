@@ -20,7 +20,7 @@
           "person": "Kraft von Hohenlohe"
         },
         {
-          "person": "Ludwig zu Rieneck",
+          "person": "Ludwig von Rieneck",
           "personTitle": [
             "Graf"
           ]
@@ -29,7 +29,10 @@
           "place": "rieneck"
         },
         {
-          "person": "Rudolf von Wertheim"
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "wertheim-stiftskirche"

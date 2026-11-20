@@ -11,7 +11,10 @@
       "english": "I, Ludwig von Zwettl, at this time Burggraf zu Rosenberg, declare and make known to all who see, hear or read this charter, those now living and those to come, that with well-considered mind, of my own and good will, with the good will of my brother Buhart and of my son Hans, and with the good will and favor of all my heirs, at a time when I could well do so, I have sold thirty-six Metzen of forest fodder on thirty-six tenancies [at] dem Otten near Weitra to the honorable spiritual lord Abbot Otto zu Zwettl and the convent there and their people at the aforementioned Otten, for thirty-four pounds of pennies and for one pound as Leitkauf [?] to my son Hans and my housewife Frau Elen, of which we are fully and completely paid. And I promise to free and protect them in that same property against all claims according to the law of the land in Austria, and whatever they lose therein, they shall have on all the property that I have at Alten Weitra, whether endowed or unendowed, searched or unsearched. And I give them over this charter, sealed with my seal and the seal of my aforementioned brother Buhart. The charter is given after Christ's birth thirteen hundred years and in the fifty-third year thereafter, on St. James's day.",
       "mention": [
         {
-          "person": "Otto zu Zwettl"
+          "person": "Otto",
+          "personTitle": [
+            "Abt zu Zwettl"
+          ]
         },
         {
           "place": "rosenberg-town"

@@ -15,7 +15,10 @@
           "place": "rosenberg-town"
         },
         {
-          "person": "Rudolf von Wertheim"
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "wertheim-stiftskirche"

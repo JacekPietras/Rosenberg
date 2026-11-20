@@ -18,16 +18,16 @@
           "person": "Götz von Hohenlohe"
         },
         {
-          "person": "Götz zu Hohenlohe"
-        },
-        {
           "person": "Hans von Riedern",
           "personTitle": [
             "Ritter"
           ]
         },
         {
-          "person": "Heinrich von Rieneck"
+          "person": "Heinrich von Rieneck",
+          "personTitle": [
+            "Graf"
+          ]
         },
         {
           "place": "hohenlohe"

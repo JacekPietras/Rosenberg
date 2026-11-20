@@ -14,7 +14,10 @@
           "place": "fulda-cathedral"
         },
         {
-          "person": "Heinrich zu Fulda"
+          "person": "Heinrich",
+          "personTitle": [
+            "Abt zu Fulda"
+          ]
         },
         {
           "person": "Otto",
