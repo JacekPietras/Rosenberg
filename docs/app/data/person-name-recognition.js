@@ -357,10 +357,10 @@ export function personRouteName(name, titleText = '', connectorText = '', partic
     }
     if (byNameIndex >= 0) parts[byNameIndex] = canonicalByName.get(parts[byNameIndex].toLocaleLowerCase()) || parts[byNameIndex];
     parts = parts.map((part) => part.toLocaleLowerCase() === 'zum' ? 'zu' : part);
-    const byNameZuRosenberg = byNameIndex >= 0 && particleIndex === byNameIndex + 1
+    const byNameZuPlace = byNameIndex >= 0 && particleIndex === byNameIndex + 1
       && parts[particleIndex]?.toLocaleLowerCase() === 'zu'
-      && parts[particleIndex + 1]?.toLocaleLowerCase() === 'rosenberg';
-    if (byNameZuRosenberg) parts[particleIndex] = 'von';
+      && Boolean(parts[particleIndex + 1]);
+    if (byNameZuPlace) parts[particleIndex] = 'von';
     if (particleIndex >= 0) {
       const particle = parts[particleIndex].toLocaleLowerCase();
       if (particle === 'v.' || particle === 'von.') parts[particleIndex] = 'von';

@@ -525,7 +525,6 @@ def clean_facts(path, validator):
                             resolved = validator.resolve_person_title(original, mention.get('personTitle'))
                             if resolved != original:
                                 mention['person'] = resolved
-                                print(f'{path}#/mention/person: title match: {original!r} -> {resolved!r}')
             if value.get('facts') == []:
                 del value['facts']
             for field in ('facts', 'guesses'):
