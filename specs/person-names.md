@@ -75,8 +75,8 @@ Bartenstein`. A listed by-name followed directly by `zu Rosenberg` remains the
 special family-name construction described above.
 
 Keep a birth name distinct from a later title or designation. For example,
-in `Elisabeth von Rosenberg, née Marschalk zu Pappenheim`, `von Rosenberg` is
-not her birth family name: `Marschalk zu Pappenheim` is the name introduced
+in `Elisabeth von Rosenberg, née Marschalk von Pappenheim`, `von Rosenberg` is
+not her birth family name: `Marschalk von Pappenheim` is the name introduced
 by `née`, while `von Rosenberg` is the later title/designation and must be
 preserved as such. Do not merge it into her birth name or treat it as a
 by-name construction.

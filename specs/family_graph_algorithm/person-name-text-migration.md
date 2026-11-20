@@ -34,7 +34,7 @@ recognizes names or places itself.
 - For a form introduced by `née` or `nee`, use the given name and birth name
   as the contextual name; do not also emit the preceding married surname as a
   separate contextual person. For example, `Elisabeth von Rosenberg, née
-  Marschalk zu Pappenheim` yields `Elisabeth Marschalk zu Pappenheim`.
+  Marschalk von Pappenheim` yields `Elisabeth Marschalk von Pappenheim`.
 - Distinct namesakes remain separate unless existing typed evidence joins
   them. A name mention alone does not make two people the same person.
 - Text evidence is not a fact or guess and must not affect fact-versus-guess
