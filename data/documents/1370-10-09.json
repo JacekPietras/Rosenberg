@@ -1,6 +1,6 @@
 {
   "date": "1370-10-09",
-  "label": "to review",
+  "label": "Franken",
   "transcribed": true,
   "entries": [
     {
@@ -18,32 +18,7 @@
       ],
       "facts": [
         {
-          "person": "Friedrich",
-          "personTitle": [
-            "Graf zu Kastel",
-            "Landrichter zu Nürnberg"
-          ],
-          "type": "generic",
-          "content": "heard the suit of Konrad Herrider and Heinrich Wilde against the claims of the Komtur von Rosenberg at Virnsberg and issued the judgment letter, sealed with the seal of the Landgericht."
-        },
-        {
-          "person": "Konrad Herrider",
-          "personTitle": [
-            "zu Winsheim"
-          ],
-          "type": "generic",
-          "content": "sued with Heinrich Wilde before the Landgericht over the inheritance and goods of Mosparcz at Freschendorf, which Mosparcz had pledged to Jews and not redeemed."
-        },
-        {
-          "person": "Heinrich Wilde",
-          "personTitle": [
-            "zu Winsheim"
-          ],
-          "type": "generic",
-          "content": "sued with Konrad Herrider before the Landgericht over the inheritance and goods of Mosparcz at Freschendorf, which Mosparcz had pledged to Jews and not redeemed."
-        },
-        {
-          "person": "von Rosenberg",
+          "person": "Engelhard von Rosenberg",
           "personTitle": [
             "Komtur zu Virnsberg"
           ],
@@ -51,7 +26,7 @@
           "content": "answered through an advocate at the Landgericht the suit of Konrad Herrider and Heinrich Wilde over the goods of Mosparcz at Freschendorf, stating that others had already sued on these goods before his court at Virnsberg."
         },
         {
-          "person": "von Rosenberg",
+          "person": "Engelhard von Rosenberg",
           "personTitle": [
             "Komtur zu Virnsberg"
           ],
@@ -59,28 +34,12 @@
           "content": "was ordered by judgment to prove at the next Landgericht, with the sworn Schöffen of Virnsberg, the earlier claims on the goods of Mosparcz at Freschendorf."
         },
         {
-          "person": "von Rosenberg",
+          "person": "Engelhard von Rosenberg",
           "personTitle": [
             "Komtur zu Virnsberg"
           ],
           "type": "generic",
           "content": "brought the sworn Schöffen Friedrich Snayder and Kunz Karl before the Landgericht and obtained judgment that those who had sued at Virnsberg on the goods of Mosparcz at Freschendorf had precedence over the suit of Konrad Herrider and Heinrich Wilde."
-        },
-        {
-          "person": "Friedrich Snayder",
-          "personTitle": [
-            "Schöffe zu Virnsberg"
-          ],
-          "type": "generic",
-          "content": "swore an oath on the saints before the Landgericht, together with Kunz Karl, that the listed persons had sued at Virnsberg on the goods of Mosparcz at Freschendorf; he came from Obern-Altenbawr."
-        },
-        {
-          "person": "Kunz Karl",
-          "personTitle": [
-            "Schöffe zu Virnsberg"
-          ],
-          "type": "generic",
-          "content": "swore an oath on the saints before the Landgericht, together with Friedrich Snayder, that the listed persons had sued at Virnsberg on the goods of Mosparcz at Freschendorf; he came from Hegelbach."
         }
       ],
       "img": [
