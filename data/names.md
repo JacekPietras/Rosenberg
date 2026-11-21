@@ -16,7 +16,7 @@ Bartholomäus, Barthel, Barthelme, Barthelmä, Bartholomaeus, Bartholomä, Barth
 Batt
 Bernger, Berngern
 Bernhard
-Berthold, Bertold, Bertolt, Betzmann, Bertholt
+Berthold, Bertholt, Bertold, Bertolt, Betzmann
 Boppe, Bopp, Boppo, Poppo
 Burkhard, Burchard, Burkard
 Busso

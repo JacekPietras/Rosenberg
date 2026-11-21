@@ -1344,6 +1344,18 @@
     "showOnMap": false
   },
   {
+    "id": "steinach",
+    "variations": [
+      "Steinach",
+      "Steynach",
+      "Stainach",
+      "Steinache",
+      "Steinahe",
+      "Steinaha"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "ramschwag",
     "variations": [
       "Ramschwag"
