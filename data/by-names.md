@@ -12,7 +12,7 @@ Geyer
 Pirchan
 Grabner
 Wirt
-Pahl, Pfahl
+Pahl, Pfahl, Pfal
 Winther, Winter
 Marschalk, Marschalken, Marschalkin, Marſchalk, Marschalch
 Rüd, Rude, Rüdt
