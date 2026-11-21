@@ -288,7 +288,7 @@ class ProbabilityTests(unittest.TestCase):
     def test_namesake_father_and_son_in_one_passage_are_split_by_generation(self):
         father = lambda child: {'type': 'parent', 'person': 'Alex von South', 'personTitle': ['zu North'], 'of': child}
         brother = lambda other: {'type': 'sibling', 'person': 'Alex von South', 'of': other}
-        for explicit in ([], [{'type': 'parent', 'person': 'Alex von South', 'of': 'Alex von South'}]):
+        for explicit in ([], [{'type': 'parent', 'person': 'Alex von South', 'personTitle': ['zu North'], 'of': 'Alex von South'}]):
             with self.subTest(explicit=bool(explicit)):
                 facts = [*map(father, ('Bea von South', 'Chris von South')), *map(brother, ('Bea von South', 'Chris von South')), *explicit]
                 graph = build(self.repository(facts, [])).evidence_graph
@@ -380,8 +380,8 @@ class ProbabilityTests(unittest.TestCase):
 
     def test_negative_guessed_rival_evidence_remains_in_match_provenance(self):
         title = lambda name: {'type': 'title', 'person': name, 'personTitle': ['Vogt zu North']}
-        inputs = self.repository([title('Alex von South'), {'type': 'death', 'person': 'Alex von South', 'diedOn': '1390'},
-                                  {'type': 'spouse', 'person': 'Alex von South', 'of': 'Bea'}], [])
+        inputs = self.repository([title('Alex von South'), {'type': 'death', 'person': 'Alex von South', 'personTitle': ['Vogt zu North'], 'diedOn': '1390'},
+                                  {'type': 'spouse', 'person': 'Alex von South', 'personTitle': ['Vogt zu North'], 'of': 'Bea'}], [])
         root = inputs.root
         (root / 'data/people.json').write_text(json.dumps([{'id': 'a', 'name': 'Alex von South'}, {'id': 'b', 'name': 'Alex von South'}]))
         (root / 'data/documents/anchors.json').write_text(json.dumps({'date': '1393', 'facts': [title('a'), title('b')],

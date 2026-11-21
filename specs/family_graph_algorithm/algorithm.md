@@ -87,6 +87,8 @@ Every merge in every pass is checked on the complete identity it would create
 - it joins two registry IDs;
 - names are not pairwise compatible;
 - two different age titles occur in one passage;
+- the identities hold same-name mentions with different title sets (or one
+  untitled) in one document file;
 - document facts alone make it chronologically impossible: mention after
   death, death bounds in conflict, or older than `maxAgeYears`;
 - it creates a new same-passage distinction (opposite ranks, deceased and

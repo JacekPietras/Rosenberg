@@ -46,6 +46,9 @@ files describe how they are met. When a rule changes, change it here first.
   shown as "possibly the same person".
 - Within one document file, or one book or notes section, records with the
   same name and the same titles (or both untitled) are one person.
+- Within one document file (not a book or notes section), records with the
+  same name and different title sets (including titled against untitled) are different people, and no
+  later pass may merge them.
 
 ## What makes two records different people
 

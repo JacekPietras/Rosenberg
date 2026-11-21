@@ -356,6 +356,16 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertEqual({('Ritter',): 2, ('Edelknecht',): 1},
                          {tuple(n['titles']): len(n['mentions']) for n in nodes if n['name'] == name})
 
+    def test_same_name_with_different_titles_in_one_document_never_merge(self):
+        name = 'Eberhard von North'
+        def brother(*titles):
+            return relation(name, 'a', 'sibling', **({'personTitle': list(titles)} if titles else {}))
+        self.inputs(facts=[brother('Vogt zu Dürn'), brother('genannt von Zimmern'), brother(), brother('genannt von Zimmern')])
+        inputs = load_inputs(self.root, validate=False)
+        nodes = serialize(inputs, [build(inputs)])['evidence']['facts']['nodes']
+        self.assertEqual({('Vogt zu Dürn',): 1, ('genannt von Zimmern',): 2, (): 1},
+                         {tuple(n['titles']): len(n['mentions']) for n in nodes if n['name'] == name})
+
     def test_unanchored_spouse_and_mother_across_sources(self):
         name = 'Elisabeth von North'
         self.inputs(facts=[relation(name, 'a', 'spouse'), relation(name, 'b')])

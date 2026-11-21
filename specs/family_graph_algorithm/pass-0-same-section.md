@@ -16,7 +16,9 @@ A **section** is one document file, or one entry of a book, notes or images
 file. Typed mentions are grouped by section, normalized name, and the set of
 title meanings (`title_category`): `Vogt in Lauda` and `Vogt zu Lauda` are the
 same title, and two untitled mentions have the same empty set. A titled and an
-untitled mention are not grouped here.
+untitled mention are not grouped here, and they are different people: the
+merge check blocks any later join of identities that hold same-name mentions
+with different title sets in one document file. Prose (`text`) mentions are exempt.
 
 In each group, mentions are taken in date order. A mention joins a cluster only
 if the joined identity passes:

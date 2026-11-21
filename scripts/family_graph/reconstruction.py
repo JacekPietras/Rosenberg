@@ -305,6 +305,37 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             parts[find(h)].append(h)
         return different_parent(list(parts.values()))
 
+    def section(mention):
+        source = mention.assertion.source
+        if source.path.startswith('data/documents/'):
+            return source.path,
+        return passage_key(source)
+
+    def title_key(mention):
+        return frozenset(title_category(title, names) for title in mention.titles)
+
+    def different_titles(parts):
+        """Records with one name in one document file that carry different
+        title sets (also titled against untitled) are different people."""
+        found = []
+        for part in parts:
+            titles = defaultdict(set)
+            for h in part:
+                if mentions[h].field != 'text' and mentions[h].assertion.source.path.startswith('data/documents/'):
+                    titles[section(mentions[h]), name(h)].add(title_key(mentions[h]))
+            found.append(titles)
+        for a, b in combinations(found, 2):
+            for key in a.keys() & b.keys():
+                if any(x != y for x in a[key] for y in b[key]):
+                    return f'different titles in one section: {key[1]}'
+        return None
+
+    def new_different_titles(component):
+        parts = defaultdict(list)
+        for h in component:
+            parts[find(h)].append(h)
+        return different_titles(list(parts.values()))
+
     relation_assertions = [a for a in assertions if a.original['type'] in RELATIONS and not a.basis]
     static_memo = {}
 
@@ -344,7 +375,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             component = components[i]
             if not static_consistent(component):
                 return False
-            if (chronology_conflict(component) or new_different_parent(component)
+            if (chronology_conflict(component) or new_different_parent(component) or new_different_titles(component)
                     or new_passage_conflict(component) or new_too_old(component)):
                 return False
         current_generation()
@@ -605,15 +636,6 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
     # Pass 0: within one document file, or one book, notes or image section,
     # occurrences with the same name and the same titles (or both untitled)
     # are one person, whatever their dates, unless a block separates them.
-    def section(mention):
-        source = mention.assertion.source
-        if source.path.startswith('data/documents/'):
-            return source.path,
-        return passage_key(source)
-
-    def title_key(mention):
-        return frozenset(title_category(title, names) for title in mention.titles)
-
     def chronology_allows(handles):
         left, right = handles
         profiles = [Profile(list(side), [mentions[h] for h in side]) for side in (left, right)]
@@ -1060,7 +1082,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
                 if len(anchor([*current[left], *current[right]])) > 1:
                     record.update(status='incompatible', reason='distinct confirmed registry IDs')
                     continue
-                conflict = different_parent([current[left], current[right]])
+                conflict = different_parent([current[left], current[right]]) or different_titles([current[left], current[right]])
                 if conflict:
                     blocks.append(conflict)
                 if blocks:
@@ -1201,7 +1223,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             record.pop('substantive')
             if len(anchor([*current[root], *current[candidate]])) > 1:
                 blocks.append('distinct confirmed registry IDs')
-            conflict = different_parent([current[root], current[candidate]])
+            conflict = different_parent([current[root], current[candidate]]) or different_titles([current[root], current[candidate]])
             if conflict:
                 blocks.append(conflict)
             known = relative_block(root, candidate)
