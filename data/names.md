@@ -55,8 +55,8 @@ Hank
 Hans, Hanemann, Hanns, Hanse, Iohannes, Jan, Joannes, Johann, Johannes, Johanns, Johans, Jon
 Hansolf
 Hartlieb
-Hartmut
 Hartmann
+Hartmut
 Hartnid, Hartel, Hertel, Hertneid, Härtel
 Haubt, Haupt
 Hector
