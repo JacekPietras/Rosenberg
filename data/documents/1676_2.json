@@ -1,8 +1,6 @@
 {
   "date": "1676",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "HStAD, F 23 B, 35/1",
@@ -12,6 +10,9 @@
       "mention": [
         {
           "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
         }
       ]
     }
