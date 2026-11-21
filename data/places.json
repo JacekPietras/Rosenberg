@@ -1863,6 +1863,13 @@
     "showOnMap": false
   },
   {
+    "id": "vestenberg",
+    "variations": [
+      "Vestenberg"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "waldmannshofen",
     "variations": [
       "Waldmannshofen",

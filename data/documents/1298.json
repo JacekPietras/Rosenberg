@@ -1,9 +1,6 @@
 {
   "date": "1298",
-  "label": [
-    "to review",
-    "Vestenberg"
-  ],
+  "label": "Vestenberg",
   "entries": [
     {
       "source": "Wolfgang Wüst (ed.), Die gute Policey im Reichskreis, vol. 4; Chronik von Rügland",
@@ -19,6 +16,9 @@
         },
         {
           "place": "rosenberg-town"
+        },
+        {
+          "place": "vestenberg"
         }
       ]
     }

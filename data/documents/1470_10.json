@@ -15,7 +15,10 @@
           "place": "burgruine-rosenberg-rugland"
         },
         {
-          "place": "rosenberg-town"
+          "person": "Kraft von Vestenberg",
+          "personTitle": [
+            "zu Rosenberg"
+          ]
         }
       ]
     }

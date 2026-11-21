@@ -12,7 +12,10 @@
       "english": "Kraft von Vestenberg zu Rügland und Rosenberg bought a small property at Berglein from Wolf Tanner, also called Wolf von Thann. In 1432 the seller had inherited it from his brother-in-law Hans von Heltburg, who had previously acquired it from the Posse family zu Flachslanden.",
       "mention": [
         {
-          "place": "burgruine-rosenberg-rugland"
+          "person": "Kraft von Vestenberg",
+          "personTitle": [
+            "zu Rügland"
+          ]
         },
         {
           "place": "rosenberg-town"
